@@ -1,7 +1,7 @@
 ---
 title: AMS를 Adobe Experience Manager as a Cloud Service Dispatcher 구성으로 변환
 description: AMS를 Adobe Experience Manager as a Cloud Service Dispatcher 구성으로 변환
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '1342'
 ht-degree: 95%
@@ -89,7 +89,7 @@ DISP_ID, PUBLISH_FORCE_SSL 또는 PUBLISH_WHITELIST_ENABLED 변수를 참조하�
 
 1. **팜 파일 이름 변경**
 
-   conf.dispatcher.d/enabled_farms의 모든 팜 이름은 *.farm 패턴과 일치하도록 이름을 변경해야 합니다. 따라서 customerX_farm.any라는 팜 파일의 이름을 customerX.farm으로 변경해야 합니다.
+   conf.dispatcher.d/enabled_farms의 모든 팜 이름은 *.farm 패턴과 일치하도록 이름을 변경해야 합니다. 따라서 예를 들어 customerX_farm.any라는 팜 파일의 이름을 customerX.farm으로 변경해야 합니다.
 
 1. **cache 확인**
 

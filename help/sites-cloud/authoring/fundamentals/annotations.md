@@ -5,7 +5,7 @@ exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 source-git-commit: 64d801b108229866394e993811a67f983be5df6c
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -61,9 +61,9 @@ ht-degree: 100%
 
    ![주석 추가](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
-   이 대화 상자에서는 적절한 필드 및/또는 아이콘을 사용하여 다음 작업을 할 수 있습니다.
+   여기에서 적절한 필드 및/또는 아이콘을 사용하여 다음을 수행할 수 있습니다.
 
-   * 주석 텍스트 입력
+   * 주석 텍스트를 입력합니다.
    * 스케치(선과 모양)를 만들어 구성 요소 영역 강조 표시
 
       ![주석 스케치 버튼](/help/sites-cloud/authoring/assets/annotation-sketch.png)

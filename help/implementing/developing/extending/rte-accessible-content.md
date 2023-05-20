@@ -1,6 +1,6 @@
 ---
 title: 액세스 가능한 웹 페이지 및 사이트를 생성하도록 RTE를 구성합니다.
-description: 에서 액세스 가능한 사이트를 생성하도록 리치 텍스트 편집기를 구성하는 방법을 알아봅니다. [!DNL Adobe Experience Manager].
+description: 에서 액세스 가능한 사이트를 만들도록 리치 텍스트 편집기를 구성하는 방법에 대해 알아봅니다. [!DNL Adobe Experience Manager].
 contentOwner: AG
 exl-id: 54050fc9-0348-4033-8e2b-b3897588cb62
 source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
@@ -12,49 +12,49 @@ ht-degree: 1%
 
 # 액세스 가능한 사이트를 생성하도록 RTE 구성 {#configure-rte-accessible-sites}
 
-[!DNL Adobe Experience Manager] 에서는 이미지에 대한 대체 텍스트 및 컨텐츠를 만들 때 액세스할 수 있는 추가 기능과 같은 표준 액세서빌러티 기능을 지원합니다. 컨텐츠 작성자는 리치 텍스트 편집기(RTE)를 사용하는 구성 요소와 함께 이러한 기능을 사용합니다. 기능에는 제목 및 단락 요소를 통해 대체 텍스트, 구조적 정보 추가 등이 포함됩니다.
+[!DNL Adobe Experience Manager] 에서는 이미지의 대체 텍스트와 같은 표준 접근성 기능과 콘텐츠를 만들 때 액세스할 수 있는 추가 기능을 지원합니다. 콘텐츠 작성자는 리치 텍스트 편집기(RTE)를 사용하는 구성 요소와 함께 이러한 기능을 사용합니다. 기능에는 대체 텍스트 추가, 제목 및 단락 요소 등을 통한 구조 정보 등이 포함됩니다.
 
-RTE의 일반적인 구성에 대한 자세한 내용은 [RTE 구성](rich-text-editor.md) 및 [특정 기능에 대한 RTE 플러그인 구성](configure-rich-text-editor-plug-ins.md).
+RTE의 일반적인 구성에 대한 이해는 [rte 구성](rich-text-editor.md) 및 [특정 기능에 대한 RTE 플러그인 구성](configure-rich-text-editor-plug-ins.md).
 
-RTE 플러그인 구성을 사용하여 액세스 가능성 관련 기능을 구성하고 사용자 지정합니다. 예를 들어 `paraformat` 기본 수준 이상으로 지원되는 머리글 수준 수를 확장하는 등 블록 수준 의미 요소를 더 추가하려면 `H1`, `H2` 및 `H3` 기본적으로 제공됩니다. 작성 사용자 인터페이스의 여러 구성 요소를 사용하여 리치 텍스트 편집을 수행할 수 있습니다. 일반적으로 사용되는 구성 요소는 텍스트, 이미지, 다운로드 등입니다.
+RTE 플러그인 구성을 사용하여 접근성 관련 기능을 구성하고 사용자 지정합니다. 예를 들어, `paraformat` 기본 수준 이상으로 지원되는 제목 수준의 수 확장을 포함하여 추가 블록 수준 의미 요소를 추가하려면 `H1`, `H2` 및 `H3` 기본적으로 제공됩니다. 작성 사용자 인터페이스의 여러 구성 요소를 사용하여 리치 텍스트 편집이 가능합니다. 일반적으로 사용되는 구성 요소는 텍스트, 이미지, 다운로드 등입니다.
 
 RTE 기능은 많은 구성 요소에서 사용할 수 있습니다. 기본 구성 요소는 `Text` 구성 요소.
 
-대상 `Text` 구성 요소 [!DNL Experience Manager]다음 스크린샷에는 다음을 포함하여 다양한 플러그인이 활성화된 리치 텍스트 편집기가 표시됩니다 `paraformat`:
+의 경우 `Text` 의 구성 요소 [!DNL Experience Manager], 다음 스크린샷에는 다양한 플러그인이 활성화된 리치 텍스트 편집기가 표시됩니다. `paraformat`:
 
 ![전체 화면 모드의 RTE 텍스트 구성 요소](assets/rte-toolbar-full-screen-mode.png)
 
 ## 플러그인 기능 구성 {#configuring-the-plugin-features}
 
-RTE 구성 지침은 [리치 텍스트 편집기 구성](rich-text-editor.md) 페이지. 이 문서에 포함되는 내용은 다음과 같습니다.
+RTE 구성에 대한 지침은 [리치 텍스트 편집기 구성](rich-text-editor.md) 페이지를 가리키도록 업데이트하는 중입니다. 이 문서에는 다음 내용이 포함됩니다.
 
-* [플러그인 및 기능](rich-text-editor.md#aboutplugins)
+* [플러그인 및 해당 기능](rich-text-editor.md#aboutplugins)
 * [구성 위치](rich-text-editor.md#understand-the-configuration-paths-and-locations)
 * [플러그인 활성화 및 기능 속성 구성](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 * [RTE의 다른 기능 구성](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 
-플러그인에 대한 일부 또는 모든 기능을 활성화하려면 적절한 `rtePlugins` CRXDE Lite의 하위 분기.
+플러그인에 대한 일부 또는 모든 기능을 활성화하려면 적절한 내에서 플러그인을 구성합니다 `rtePlugins` CRXDE Lite의 하위 분기.
 
-![rtePlugin 예를 보여주는 CRXDE Lite](assets/example-rteplugin-crxde-lite.png)
+![rtePlugin 예를 보여 주는 CRXDE Lite](assets/example-rteplugin-crxde-lite.png)
 
-### RTE 선택 필드에서 사용할 수 있는 단락 서식을 지정하는 예 {#example-specifying-paragraph-formats-available-in-rte-selection-field}
+### RTE 선택 필드에서 사용할 수 있는 단락 형식을 지정하는 예제 {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
-새로운 시맨틱 블록 포맷을 선택할 수 있게 되었다.
+새로운 의미 체계 블록 형식을 선택할 수 있습니다.
 
-1. RTE에 따라 [구성 위치](rich-text-editor.md#understand-the-configuration-paths-and-locations).
-1. [단락 선택 필드를 활성화합니다](rich-text-editor.md) by [플러그인 활성화](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
+1. RTE에 따라 을(를) 결정하고 다음으로 이동합니다. [구성 위치](rich-text-editor.md#understand-the-configuration-paths-and-locations).
+1. [단락 선택 필드 활성화](rich-text-editor.md) 작성자: [플러그인 활성화](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
 1. [단락 선택 필드에서 사용할 수 있는 형식을 지정합니다](rich-text-editor.md).
-1. 그런 다음 RTE의 선택 필드에서 컨텐츠 작성자가 단락 형식을 사용할 수 있습니다.
+1. 그런 다음 콘텐츠 작성자는 RTE의 선택 필드에서 단락 형식을 사용할 수 있습니다.
 
-단락 서식 옵션을 통해 RTE에서 사용할 수 있는 구조적 요소를 사용하면 [!DNL Experience Manager] 는 액세스 가능한 컨텐츠를 개발할 적절한 기반을 제공합니다. 컨텐츠 작성자는 RTE를 사용하여 글꼴 크기 또는 색상 또는 기타 관련 속성의 서식을 지정할 수 없으므로 인라인 서식이 생성되지 않습니다. 대신 작성자는 제목 등의 적절한 구조적 요소를 선택하고 스타일 옵션에서 선택한 전역 스타일을 사용하여 고유한 스타일 시트를 찾아보고 올바르게 구조화된 컨텐츠를 찾는 사용자에게 더 큰 옵션과 깨끗한 마크업 및 옵션을 제공할 수 있습니다.
+단락 형식 옵션을 통해 RTE에서 사용할 수 있는 구조 요소 [!DNL Experience Manager] 는 액세스 가능한 컨텐츠를 개발할 수 있는 좋은 기반을 제공합니다. 콘텐츠 작성자는 RTE를 사용하여 글꼴 크기나 색상 또는 기타 관련 특성의 서식을 지정할 수 없으므로 인라인 서식이 생성되지 않습니다. 대신 작성자는 제목과 같은 적절한 구조적 요소를 선택하고 스타일 옵션에서 선택한 전역 스타일을 사용하여 깔끔한 마크업과 스타일 시트와 올바르게 구조화된 콘텐츠를 검색하는 사용자에게 더 큰 옵션을 제공할 수 있습니다.
 
 ## 소스 편집 기능 사용 {#use-of-the-source-edit-feature}
 
-경우에 따라 컨텐츠 작성자는 RTE를 사용하여 만든 HTML 소스 코드를 검사하고 조정해야 합니다. 예를 들어 RTE 내에서 만들어진 컨텐츠는 WCAG 2.0을 준수하기 위해 더 많은 마크업이 필요할 수 있습니다. 이 작업은 를 사용하여 수행할 수 있습니다. [소스 편집](rich-text-editor.md#aboutplugins) RTE의 옵션. 을(를) 지정할 수 있습니다 [`sourceedit` 의 기능 `misctools` 플러그인](rich-text-editor.md#aboutplugins).
+경우에 따라 콘텐츠 작성자는 RTE를 사용하여 만든 HTML 소스 코드를 검사하고 조정할 필요가 있습니다. 예를 들어 RTE 내에서 만들어진 콘텐츠의 한 부분은 WCAG 2.0을 준수하기 위해 더 많은 마크업이 필요할 수 있습니다. 다음을 사용하여 이 작업을 수행할 수 있습니다. [소스 편집](rich-text-editor.md#aboutplugins) RTE 옵션 다음을 지정할 수 있습니다. [`sourceedit` 의 기능 `misctools` 플러그인](rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >
->를 사용하십시오 `sourceedit` 기능을 신중하게 사용하십시오. 모든 입력 오류 및 지원되지 않는 기능으로 인해 문제가 발생할 수 있습니다.
+>사용 `sourceedit` 자세히 살펴보십시오. 모든 입력 오류 및 지원되지 않는 기능으로 인해 문제가 발생할 수 있습니다.
 
 <!--
 TBD ENGREVIEW: Is this only applicable to Classic UI? 

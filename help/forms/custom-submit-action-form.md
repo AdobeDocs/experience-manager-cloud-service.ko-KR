@@ -1,6 +1,6 @@
 ---
-title: 적응형 양식에 대해 사용자 지정 제출 작업을 만드는 방법
-description: 적응형 Forms에 대한 사용자 지정 제출 작업을 만들어 데이터를 rest 종단점에 제출하기 전에 제출 및 처리를 지연하고, 데이터 저장소에 저장하고, 기타 사용자 지정 기능을 수행하는 방법을 알아봅니다.
+title: 적응형 양식에 대한 사용자 지정 제출 액션을 만드는 방법
+description: 적응형 Forms에 대한 사용자 지정 제출 액션을 만들어 데이터를 나머지 끝점에 제출하기 전에 제출을 지연하고 처리하고, 데이터 저장소에 저장하고, 기타 사용자 지정 기능을 수행하는 방법에 대해 알아봅니다.
 feature: Adaptive Forms
 role: User
 level: Intermediate
@@ -12,15 +12,15 @@ ht-degree: 0%
 
 ---
 
-# 적응형 Forms에 대한 사용자 지정 제출 작업 만들기 {#writing-custom-submit-action-for-adaptive-forms}
+# 적응형 Forms에 대한 사용자 지정 제출 액션 만들기 {#writing-custom-submit-action-for-adaptive-forms}
 
-적응형 양식은 여러 전송 작업을 즉시 사용(OOTB)할 수 있도록 제공합니다. 제출 작업은 적응형 양식을 통해 수집된 데이터에 대해 수행할 작업의 세부 사항을 지정합니다. 예를 들어 이메일에 데이터를 보낼 수 있습니다.
+적응형 양식은 즉시 사용할 수 있는(OOTB) 여러 제출 액션을 제공합니다. 제출 액션은 적응형 양식을 통해 수집된 데이터에 대해 수행할 작업의 세부 정보를 지정합니다. (예: 이메일에서 데이터 보내기)
 
-사용자 지정 제출 작업을 만들어 에 포함되지 않은 기능을 추가할 수 있습니다. [즉시 사용 가능한 제출 작업](configuring-submit-actions.md) 또는 단일 OOTB 제출 작업을 통해 지원되지 않습니다. 예를 들어, 워크플로우에 데이터 제출, 데이터 저장소에 데이터 저장, 양식 제출 개인에게 이메일 알림을 보내고, 단일 제출 작업을 통해 승인 및 거부를 위해 제출된 양식을 처리할 책임이 있는 사람에게 이메일을 보냅니다.
+사용자 지정 제출 액션을 만들어 에 포함되지 않은 기능을 추가할 수 있습니다. [즉시 사용 가능한 제출 액션](configuring-submit-actions.md) 또는 단일 OOTB 제출 액션을 통해 지원되지 않습니다. 예를 들어 워크플로우에 데이터 제출, 데이터 저장소에 데이터 저장, 양식 제출자에게 이메일 알림 전송, 단일 제출 액션을 통해 승인 및 거부를 위해 제출된 양식의 처리를 담당하는 사람에게 이메일 전송 등의 작업을 수행할 수 있습니다.
 
 ## XML 데이터 형식 {#xml-data-format}
 
-XML 데이터는 **`jcr:data`** 요청 매개 변수. 작업 제출은 매개 변수에 액세스하여 데이터를 처리할 수 있습니다. 다음 코드는 XML 데이터의 형식을 설명합니다. 양식 모델에 바인딩된 필드가 **`afBoundData`** 섹션을 참조하십시오. 바인딩되지 않은 필드는 `afUnoundData`섹션을 참조하십시오. <!--For more information about the format of the `data.xml` file, see [Introduction to prepopulating Adaptive Form fields](prepopulate-adaptive-form-fields.md).-->
+XML 데이터는 다음을 사용하여 서블릿으로 전송됩니다 **`jcr:data`** 요청 매개 변수. 제출 액션은 매개변수에 액세스하여 데이터를 처리할 수 있습니다. 다음 코드에서는 XML 데이터의 형식을 설명합니다. 양식 모델에 바인딩된 필드가 **`afBoundData`** 섹션. 바인딩되지 않은 필드는 `afUnoundData`섹션. <!--For more information about the format of the `data.xml` file, see [Introduction to prepopulating Adaptive Form fields](prepopulate-adaptive-form-fields.md).-->
 
 ```xml
 <?xml ?>
@@ -44,17 +44,17 @@ XML 데이터는 **`jcr:data`** 요청 매개 변수. 작업 제출은 매개 �
 
 ### 작업 필드 {#action-fields}
 
-제출 작업은 HTML을 사용하여 숨겨진 입력 필드를 추가할 수 있습니다 [입력](https://developer.mozilla.org/en/docs/Web/HTML/Element/Input) 태그)를 클릭하여 렌더링된 양식 HTML에 추가할 수 있습니다. 이러한 숨김 필드에는 양식 제출을 처리하는 동안 필요한 값이 포함될 수 있습니다. 양식을 제출할 때 이러한 필드 값은 제출 작업 시 사용할 수 있는 요청 매개 변수로서 다시 게시됩니다. 입력 필드를 작업 필드라고 합니다.
+제출 액션은 HTML을 사용하여 숨겨진 입력 필드를 추가할 수 있습니다. [입력](https://developer.mozilla.org/en/docs/Web/HTML/Element/Input) 태그)를 클릭하여 렌더링된 양식 HTML에 추가합니다. 이러한 숨겨진 필드에는 양식 제출을 처리하는 동안 필요한 값이 포함될 수 있습니다. 양식을 제출할 때 이러한 필드 값은 제출 작업 시 제출 처리 시 사용할 수 있는 요청 매개 변수로 다시 게시됩니다. 입력 필드를 작업 필드라고 합니다.
 
-예를 들어 양식을 채우는 데 걸린 시간도 캡처하는 제출 작업에서 숨겨진 입력 필드를 추가할 수 있습니다 `startTime` 및 `endTime`.
+예를 들어 양식을 채우는 데 걸린 시간을 캡처하는 제출 동작으로 숨겨진 입력 필드를 추가할 수도 있습니다 `startTime` 및 `endTime`.
 
-스크립트는 `startTime` 및 `endTime` 양식이 렌더링될 때와 양식 제출 전에 각각 필드를 작성합니다. 제출 작업 스크립트 `post.jsp` 그런 다음 요청 매개 변수를 사용하여 이러한 필드에 액세스하고 양식을 채우는 데 필요한 총 시간을 계산할 수 있습니다.
+스크립트는 `startTime` 및 `endTime` 양식을 렌더링할 때와 양식 제출 전 필드를 각각 표시합니다. 제출 액션 스크립트 `post.jsp` 은 요청 매개 변수를 사용하여 이러한 필드에 액세스하고 양식을 채우는 데 필요한 총 시간을 계산할 수 있습니다.
 
-### 파일 첨부 파일 {#file-attachments}
+### 첨부 파일 {#file-attachments}
 
-작업 제출은 첨부 파일 구성 요소를 사용하여 업로드하는 첨부 파일을 사용할 수도 있습니다. 제출 작업 스크립트는 sling을 사용하여 이러한 파일에 액세스할 수 있습니다 [RequestParameter API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html). 다음 [isFormField](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#isFormField()) api의 메서드는 요청 매개 변수가 파일인지 양식 필드인지를 식별하는 데 도움이 됩니다. 제출 작업에서 요청 매개 변수를 반복하여 파일 첨부 매개 변수를 식별할 수 있습니다.
+제출 액션은 첨부 파일 구성 요소를 사용하여 업로드한 첨부 파일을 사용할 수도 있습니다. 작업 제출 스크립트는 Sling을 사용하여 이러한 파일에 액세스할 수 있습니다. [RequestParameter API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html). 다음 [isFormField](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#isFormField()) api 메서드는 요청 매개 변수가 파일인지 양식 필드인지 식별하는 데 도움이 됩니다. 제출 작업에서 요청 매개 변수를 반복하여 파일 첨부 매개 변수를 식별할 수 있습니다.
 
-다음 샘플 코드는 요청에서 첨부 파일을 식별합니다. 그런 다음 를 사용하여 데이터를 파일에 읽습니다. [API 가져오기](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#get()). 마지막으로 데이터를 사용하여 Document 객체를 만들어 목록에 추가합니다.
+다음 샘플 코드는 요청의 첨부 파일을 식별합니다. 그런 다음 를 사용하여 데이터를 파일로 읽습니다. [API 가져오기](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#get()). 마지막으로 데이터를 사용하여 Document 객체를 만들고 목록에 추가합니다.
 
 ```java
 RequestParameterMap requestParameterMap = slingRequest.getRequestParameterMap();
@@ -68,94 +68,94 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 적응형 양식에 파일을 첨부할 때 서버는 적응형 양식 제출 후 첨부 파일의 유효성을 검사하고 다음과 같은 경우 오류 메시지를 반환합니다.
 
-* 파일 첨부 파일에는 (.)로 시작하는 파일 이름이 포함됩니다 문자, \ / : 포함 * ? &quot; &lt; > | ; % $ 문자 또는 Windows 운영 체제용으로 예약된 특수 파일 이름 포함(예: ) `nul`, `prn`, `con`, `lpt`, 또는 `com`.
+* 첨부 파일에는 (.)로 시작하는 파일 이름이 포함됩니다. 문자, 포함 \ / : * ? &quot; &lt; > | ; % $ 문자 또는 에는 다음과 같은 Windows 운영 체제용으로 예약된 특수 파일 이름이 포함되어 있습니다. `nul`, `prn`, `con`, `lpt`, 또는 `com`.
 
 * 첨부 파일의 크기는 0바이트입니다.
 
-* 첨부 파일의 형식은 [지원되는 파일 형식](https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text) 섹션에 이미지 요청을 완전히 채우는 방법을 설명합니다.
+* 파일 첨부 파일의 형식이 [지원되는 파일 유형](https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text) 섹션에 자세히 설명되어 있습니다.
 
 ### 전달 경로 및 리디렉션 URL {#forward-path-and-redirect-url}
 
-필요한 작업을 수행한 후 Submit 서블릿은 요청을 전달 경로에 전달합니다. 작업은 setForwardPath API를 사용하여 Guide Submit 서블릿에 전달 경로를 설정합니다.
+필요한 작업을 수행한 후 제출 서블릿은 요청을 전달 경로로 전달합니다. 작업은 setForwardPath API를 사용하여 안내서 제출 서블릿에 전달 경로를 설정합니다.
 
-작업에서 전달 경로를 제공하지 않으면 제출 서블릿은 리디렉션 URL을 사용하여 브라우저를 리디렉션합니다. 작성자는 적응형 양식 편집 대화 상자에서 감사 인사 페이지 구성을 사용하여 리디렉션 URL을 구성합니다. 또한 Guide Submit 서블릿에서 Submit Action 또는 setRedirectUrl API를 통해 리디렉션 URL을 구성할 수 있습니다. 안내서 제출 서블릿에서 setRedirectParameters API를 사용하여 리디렉션 URL에 전송되는 요청 매개 변수를 구성할 수도 있습니다.
+작업이 전달 경로를 제공하지 않으면 제출 서블릿은 리디렉션 URL을 사용하여 브라우저를 리디렉션합니다. 작성자는 적응형 양식 편집 대화 상자에서 감사 페이지 구성을 사용하여 리디렉션 URL을 구성합니다. 제출 액션 또는 안내서 제출 서블릿의 setRedirectUrl API를 통해 리디렉션 URL을 구성할 수도 있습니다. 안내서 제출 서블릿에서 setRedirectParameters API를 사용하여 리디렉션 URL로 전송된 요청 매개 변수를 구성할 수도 있습니다.
 
 >[!NOTE]
 >
->작성자가 리디렉션 URL(감사 페이지 구성 사용)을 제공합니다. [OOTB 제출 작업](configuring-submit-actions.md) 리디렉션 URL 을 사용하여 전달 경로가 참조하는 리소스에서 브라우저를 리디렉션합니다.
+>작성자는 리디렉션 URL(감사 페이지 구성 사용)을 제공합니다. [OOTB 제출 액션](configuring-submit-actions.md) 리디렉션 URL을 사용하여 전달 경로가 참조하는 리소스에서 브라우저를 리디렉션합니다.
 >
->요청을 리소스 또는 서블릿에 전달하는 사용자 지정 제출 작업을 작성할 수 있습니다. Adobe은 전달 경로에 대해 리소스 처리를 수행하는 스크립트가 처리가 완료되면 요청을 리디렉션 URL로 리디렉션하는 것을 권장합니다.
+>요청을 리소스 또는 서블릿에 전달하는 사용자 지정 제출 액션을 작성할 수 있습니다. Adobe은 전달 경로에 대한 리소스 처리를 수행하는 스크립트가 처리가 완료될 때 요청을 리디렉션 URL로 리디렉션하도록 권장합니다.
 
 ## 제출 동작 {#submit-action}
 
-제출 작업은 다음을 포함하는 sling:Folder입니다.
+제출 액션은 다음을 포함하는 sling:Folder입니다.
 
-* **addfields.jsp**: 이 스크립트는 변환 중에 HTML 파일에 추가되는 작업 필드를 제공합니다. 이 스크립트를 사용하여 post.POST.jsp 스크립트에서 전송하는 동안 필요한 숨겨진 입력 매개 변수를 추가합니다.
-* **dialog.xml**: 이 스크립트는 CQ 구성 요소 대화 상자와 유사합니다. 작성자가 사용자 지정하는 구성 정보를 제공합니다. 제출 작업을 선택하면 적응형 양식 편집 대화 상자의 제출 작업 탭에 필드가 표시됩니다.
-* **post.POST.jsp**: 제출 서블릿은 제출한 데이터와 이전 섹션의 추가 데이터를 사용하여 이 스크립트를 호출합니다. 이 페이지에서 작업을 실행하는 것에 대한 언급은 post.POST.jsp 스크립트를 실행하는 것을 의미합니다. 적응형 양식 편집 대화 상자에 표시할 적응형 Forms에 제출 작업을 등록하려면 이러한 속성을 sling에 추가합니다:Folder:
+* **addfields.jsp**: 이 스크립트는 변환 중에 HTML 파일에 추가되는 작업 필드를 제공합니다. 이 스크립트를 사용하여 post.user.jsp 스크립트에서 제출 중에 필요한 숨겨진 입력 POST을 추가합니다.
+* **dialog.xml**: 이 스크립트는 CQ 구성 요소 대화 상자와 유사합니다. 작성자가 맞춤화하는 구성 정보를 제공합니다. 필드는 제출 액션을 선택하면 적응형 양식 편집 대화 상자의 제출 액션 탭에 표시됩니다.
+* **post.POST.jsp**: 제출 서블릿은 제출한 데이터와 이전 섹션의 추가 데이터로 이 스크립트를 호출합니다. POST 이 페이지에서 작업을 실행하는 것에 대한 언급은 post.user.jsp 스크립트를 실행하는 것을 의미합니다. 제출 액션을 적응형 양식 편집 대화 상자에 표시할 적응형 Forms에 등록하려면 다음 속성을 sling에 추가합니다:Folder:
 
-   * **guideComponentType** 유형 및 값 **fd/af/components/guidesubmittype**
-   * **guideDataModel** Submit 작업을 적용할 수 있는 적응형 양식의 유형을 지정하는 문자열 유형 <!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsd** 은 XSD 기반 응용 Forms에 대해 지원됩니다. **기본** XDP 또는 XSD를 사용하지 않는 응용 Forms에 대해 이 지원됩니다. 여러 유형의 적응형 Forms에 작업을 표시하려면 해당 문자열을 추가합니다. 각 문자열을 쉼표로 구분합니다. 예를 들어 작업을 <!--XFA- and -->XSD 기반 응용 Forms에서 값을 <!--**xfa** and--> **xsd**.
+   * **guideComponentType** 문자열 및 값 유형의 **fd/af/components/guidesubmittype**
+   * **가이드 데이터 모델** 제출 액션을 적용할 수 있는 적응형 양식의 유형을 지정하는 문자열 유형입니다. <!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsd** 는 XSD 기반 적응형 Forms에 대해 지원됩니다. **기본** 는 XDP 또는 XSD를 사용하지 않는 적응형 Forms에 대해 지원됩니다. 여러 유형의 적응형 Forms에 작업을 표시하려면 해당 문자열을 추가합니다. 각 문자열은 쉼표로 구분합니다. 예를 들어에 작업을 표시하도록 하려면 <!--XFA- and -->XSD 기반 적응형 Forms, 값을 다음으로 지정 <!--**xfa** and--> **xsd**.
 
-   * **jcr:description** 유형 String. 이 속성의 값은 적응형 양식 편집 대화 상자의 작업 제출 탭에 있는 제출 작업 목록에 표시됩니다. OOTB 작업은 CRX 저장소의 위치에 있습니다 **/libs/fd/af/components/guidesubmittype**.
+   * **jcr:description** 유형 문자열. 이 속성의 값은 적응형 양식 편집 대화 상자의 제출 액션 탭에 있는 제출 액션 목록에 표시됩니다. OOTB 작업은 해당 위치의 CRX 저장소에 있습니다 **/libs/fd/af/components/guidesubmittype**.
 
-   * **submitService** 유형 String. 자세한 내용은 [사용자 지정 작업에 대한 적응형 양식 제출 예약](#schedule-adaptive-form-submission).
+   * **submitService** 유형 문자열. 자세한 내용은 [사용자 지정 작업에 대한 적응형 양식 제출 예약](#schedule-adaptive-form-submission).
 
-## 사용자 지정 제출 작업 만들기 {#creating-a-custom-submit-action}
+## 사용자 지정 제출 액션 만들기 {#creating-a-custom-submit-action}
 
-다음 단계를 수행하여 CRX 저장소에 데이터를 저장한 다음 이메일을 보내는 사용자 지정 제출 작업을 만듭니다. 적응형 양식에는 CRX 저장소에 데이터를 저장하는 OOTB 제출 작업 저장소 컨텐츠(더 이상 사용되지 않음)가 포함되어 있습니다. 또한 AEM에서는 [메일](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) 이메일을 전송하는 데 사용할 수 있는 API입니다. Mail API를 사용하기 전에 시스템 콘솔을 통해 Day CQ Mail 서비스를 구성합니다. 컨텐츠 저장(더 이상 사용되지 않음) 작업을 다시 사용하여 데이터를 저장소에 저장할 수 있습니다. 컨텐츠 저장(더 이상 사용되지 않음) 작업은 CRX 저장소의 /libs/fd/af/components/guidesubmittype/store 위치에서 사용할 수 있습니다.
+다음 단계를 수행하여 CRX 저장소에 데이터를 저장한 다음 이메일을 보내는 사용자 지정 제출 액션을 만듭니다. 적응형 양식에는 CRX 저장소에 데이터를 저장하는 OOTB 제출 액션 저장소 콘텐츠(더 이상 사용되지 않음)가 포함되어 있습니다. 또한 AEM은 [메일](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) 이메일을 전송하는 데 사용할 수 있는 API입니다. Mail API를 사용하기 전에 시스템 콘솔을 통해 일별 CQ 메일 서비스를 구성합니다. 콘텐츠 저장(더 이상 사용되지 않음) 작업을 다시 사용하여 저장소에 데이터를 저장할 수 있습니다. 콘텐츠 저장(더 이상 사용되지 않음) 작업은 CRX 저장소의 /libs/fd/af/components/guidesubmittype/store에서 사용할 수 있습니다.
 
-1. URL https://에서 CRXDE Lite에 로그인합니다.&lt;server>:&lt;port>/crx/de/index.jsp /apps/custom_submit_action 폴더에 sling:Folder 및 name store_and_mail 속성을 사용하여 노드를 만듭니다. custom_submit_action 폴더가 아직 없는 경우 만듭니다.
+1. URL https://에서 CRXDE Lite에 로그인합니다.&lt;server>:&lt;port>/crx/de/index.jsp입니다. /apps/custom_submit_action 폴더에 sling:Folder 및 name store_and_mail 속성을 사용하여 노드를 만듭니다. custom_submit_action 폴더가 아직 없는 경우 만듭니다.
 
-   ![sling:Folder 속성을 사용하여 노드를 만드는 방법을 설명하는 스크린샷입니다.](assets/step1.png)
+   ![sling:Folder 속성을 사용하여 노드를 생성하는 스크린샷을 보여 줍니다.](assets/step1.png)
 
 1. **필수 구성 필드를 제공합니다.**
 
-   저장 작업에 필요한 구성을 추가합니다. 를 복사합니다. **cq:dialog** /libs/fd/af/components/guidesubmittype/store에서 /apps/custom_submit_action/store_and_email의 작업 폴더로 저장 작업의 노드입니다.
+   스토어 작업에 필요한 구성을 추가합니다. 다음을 복사합니다. **cq:dialog** /libs/fd/af/components/guidesubmittype/store에서 /apps/custom_submit_action/store_and_email의 작업 폴더로 저장 작업의 노드입니다.
 
-   ![작업 폴더에 대화 상자 노드를 복사하는 스크린샷입니다](assets/step2.png)
+   ![대화 상자 노드를 작업 폴더로 복사하는 스크린샷](assets/step2.png)
 
 1. **작성자에게 이메일 구성을 묻는 메시지를 표시하는 구성 필드를 제공합니다.**
 
-   적응형 양식도 사용자에게 이메일을 보내는 이메일 작업을 제공합니다. 요구 사항에 따라 이 작업을 사용자 지정합니다. /libs/fd/af/components/guidesubmittype/email/dialog로 이동합니다. cq:dialog 노드 내의 노드를 제출 작업의 cq:dialog 노드(/apps/custom_submit_action/store_and_email/dialog)에 복사합니다.
+   또한 적응형 양식은 사용자에게 이메일을 보내는 이메일 작업을 제공합니다. 요구 사항에 따라 이 작업을 사용자 지정합니다. /libs/fd/af/components/guidesubmittype/email/dialog로 이동합니다. cq:dialog 노드 내의 노드를 제출 작업의 cq:dialog 노드(/apps/custom_submit_action/store_and_email/dialog)에 복사합니다.
 
    ![이메일 작업 사용자 지정](assets/step3.png)
 
-1. **해당 작업을 적응형 양식 편집 대화 상자에서 사용할 수 있도록 합니다.**
+1. **적응형 양식 편집 대화 상자에서 작업을 사용할 수 있도록 합니다.**
 
    store_and_email 노드에 다음 속성을 추가합니다.
 
    * **guideComponentType** 유형 **문자열** 및 값 **fd/af/components/guidesubmittype**
 
-   * **guideDataModel** 유형 **문자열** 및 값 **<!--xfa, -->xsd, 기본**
+   * **가이드 데이터 모델** 유형 **문자열** 및 값 **<!--xfa, -->xsd, 기본**
 
    * **jcr:description** 유형 **문자열** 및 값 **저장 및 이메일 작업**
 
    * **submitService** 유형 **문자열** 및 값 **저장 및 이메일**. 자세한 내용은 [사용자 지정 작업에 대한 적응형 양식 제출 예약](#schedule-adaptive-form-submission).
 
-1. 적응형 양식을 엽니다. 을(를) 클릭합니다. **편집** 다음 단추 **시작** 열다 **편집** 적응형 양식 컨테이너의 대화 상자. 새 작업은 **작업 제출** 탭. 선택 **저장 및 이메일 작업** 대화 상자 노드에 추가된 구성을 표시합니다.
+1. 적응형 양식을 엽니다. 다음을 클릭합니다. **편집** 단추 옆에 있음 **시작** 을(를) 열려면 **편집** 적응형 양식 컨테이너의 대화 상자. 새 작업이에 표시됩니다. **작업 제출** 탭. 선택 **저장 및 이메일 작업** 대화 상자 노드에 추가된 구성을 표시합니다.
 
-   ![작업 구성 제출 대화 상자](assets/store_and_email_submit_action_dialog.jpg)
+   ![작업 제출 구성 대화 상자](assets/store_and_email_submit_action_dialog.jpg)
 
-1. **작업을 사용하여 작업을 완료합니다.**
+1. **작업을 완료하려면 작업을 사용하십시오.**
 
-   post.POST.jsp 스크립트를 작업에 추가합니다. (/apps/custom_submit_action/store_and_mail/).
+   작업에 post.user.jsp POST을 추가합니다. (/apps/custom_submit_action/store_and_mail/).
 
-   OOTB 저장소 작업(post.POST.jsp 스크립트)을 실행합니다. 를 사용하십시오 [FormsHelper.runAction](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction-java.lang.String-java.lang.String-org.apache.sling.api.resource.Resource-org.apache.sling.api.SlingHttpServletRequest-org.apache.sling.api.SlingHttpServletResponse-)(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) CQ가 코드에서 제공하는 API입니다. JSP 파일에 다음 코드를 추가합니다.
+   OOTB 저장소 작업 실행(post.store.jsp POST) 사용 [FormsHelper.runAction](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction-java.lang.String-java.lang.String-org.apache.sling.api.resource.Resource-org.apache.sling.api.SlingHttpServletRequest-org.apache.sling.api.SlingHttpServletResponse-)(java.lang.String, java.lang.String, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) CQ가 스토어 작업을 실행하기 위해 코드에 제공하는 API. JSP 파일에 다음 코드를 추가합니다.
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 
-   이메일을 보내려면 코드에서 구성에서 수신자의 이메일 주소를 읽습니다. 작업 스크립트에서 구성 값을 가져오려면 다음 코드를 사용하여 현재 리소스의 속성을 읽습니다. 마찬가지로 다른 구성 파일을 읽을 수 있습니다.
+   이메일을 보내기 위해 코드는 구성에서 수신자 이메일 주소를 읽습니다. 작업 스크립트에서 구성 값을 가져오려면 다음 코드를 사용하여 현재 리소스의 속성을 읽으십시오. 마찬가지로 다른 구성 파일을 읽을 수 있습니다.
 
    `ValueMap properties = ResourceUtil.getValueMap(resource);`
 
    `String mailTo = properties.get("mailTo");`
 
-   마지막으로 CQ Mail API를 사용하여 이메일을 보냅니다. 를 사용하십시오 [SimpleEmail](https://commons.apache.org/proper/commons-email/apidocs/org/apache/commons/mail/SimpleEmail.html) 아래 표시된 대로 이메일 개체를 만드는 클래스입니다.
+   마지막으로 CQ Mail API를 사용하여 이메일을 보냅니다. 사용 [SimpleEmail](https://commons.apache.org/proper/commons-email/apidocs/org/apache/commons/mail/SimpleEmail.html) 클래스: 아래에 표시된 대로 이메일 개체를 만들 수 있습니다.
 
    >[!NOTE]
    >
-   >JSP 파일의 이름이 post.POST.jsp인지 확인합니다.
+   >POST JSP 파일에 post.user.jsp라는 이름이 있는지 확인합니다.
 
    ```java
    <%@include file="/libs/fd/af/components/guidesglobal.jsp" %>
@@ -195,13 +195,13 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
    %>
    ```
 
-   적응형 양식에서 작업을 선택합니다. 작업은 이메일을 전송하고 데이터를 저장합니다.
+   적응형 양식에서 작업을 선택합니다. 이 작업은 이메일을 보내고 데이터를 저장합니다.
 
-## 사용자 지정 제출 작업에 submitService 속성 사용 {#submitservice-property}
+## 사용자 지정 제출 액션에 submitService 속성 사용 {#submitservice-property}
 
-사용자 지정 제출 작업을 설정할 때, 여기에는 `submitService` 속성을 설정하면 양식은 [FormSubmitActionService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/service/FormSubmitActionService.html) 제출 시 다음 `FormSubmitActionService` 사용 `getServiceName` 에 대한 값을 검색하는 방법 `submitService` 속성을 사용합니다. 의 값 기준 `submitService` 등록 정보인 서비스는 적절한 제출 메서드를 호출합니다. 다음을 포함합니다 `FormSubmitActionService` 를 업로드하는 사용자 지정 번들로 [!DNL AEM Forms] server.
+다음을 포함하는 사용자 지정 제출 액션을 설정할 때 `submitService` 속성, 폼이 [FormSubmitActionService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/service/FormSubmitActionService.html) 제출 시. 다음 `FormSubmitActionService` 를 사용합니다. `getServiceName` 값을 검색하는 메서드 `submitService` 속성. 의 값을 기반으로 함 `submitService` 등록 정보, 서비스는 적절한 제출 메서드를 호출합니다. 포함 `FormSubmitActionService` 에 업로드하는 사용자 지정 번들에 [!DNL AEM Forms] 서버입니다.
 
-추가 `submitService` 문자열 유형의 속성을 `sling:Folder` 사용자 지정 제출 작업 을 사용하여 [!DNL Adobe Sign] 추가 정보. 을(를) 선택할 수 있습니다 **[!UICONTROL Adobe Sign 활성화]** 옵션 **[!UICONTROL 전자 서명]** 섹션에 대한 값을 설정한 후에만 적응형 양식 컨테이너 속성의 섹션을 `submitService` 사용자 지정 제출 작업의 속성입니다.
+추가 `submitService` 에 대한 문자열 유형의 속성 `sling:Folder` 을(를) 활성화하기 위한 사용자 지정 제출 액션 [!DNL Adobe Sign] 적응형 양식용. 다음을 선택할 수 있습니다. **[!UICONTROL Adobe Sign 활성화]** 의 옵션 **[!UICONTROL 전자 서명]** 섹션에 대한 값을 설정한 후에만 적응형 양식 컨테이너 속성의 섹션 `submitService` 사용자 지정 제출 액션의 속성입니다.
 
 <!--As a result of setting an appropriate value for the `submitService` property and enabling [!DNL Adobe Sign], you can schedule the submission of an Adaptive Form to ensure that all configured signers have taken an action on the form. [!DNL Adobe Sign] Configuration Service keeps polling [!DNL Adobe Sign] server at regular intervals to verify the status of signatures. If all the signers complete signing the form, the Submit Action service is started and the form is submitted.-->
 

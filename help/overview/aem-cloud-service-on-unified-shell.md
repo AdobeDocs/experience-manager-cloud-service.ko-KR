@@ -2,8 +2,8 @@
 title: 통합 셸의 AEM as a Cloud Service
 description: 통합 셸의 AEM as a Cloud Service
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: aeb8244b4da17a0675b86a69727807abf45ca84a
-workflow-type: ht
+source-git-commit: 24ae6187813de801813236f0bbcb2ea51e8fe5e1
+workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 100%
 

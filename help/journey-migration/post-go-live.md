@@ -1,6 +1,6 @@
 ---
 title: Go-Live 후
-description: 문제를 모니터링하고 성능을 향상시키는 방법을 알아봅니다
+description: 문제 모니터링 및 성능 향상 방법 알아보기
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
@@ -18,11 +18,11 @@ ht-degree: 39%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="로그 액세스 및 관리"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 개발 도구"
 
-여정의 마지막 부분이므로 마이그레이션이 완료되면 문제를 모니터링하고 성능을 향상시키는 방법을 알아봅니다. 임시 파일을 정리하고, 지속적인 개발을 위한 우수 사례를 검토하고, 로그를 관리해야 합니다.
+이는 여정의 마지막 부분이므로 마이그레이션이 완료되면 문제를 모니터링하고 성능을 향상시키는 방법에 대해 알아보게 됩니다. 임시 파일을 정리하고, 지속적인 개발을 위한 우수 사례를 검토하고, 로그를 관리해야 합니다.
 
 ## 지금까지의 스토리 {#story-so-far}
 
-여정의 이전 단계에서 마이그레이션 및 [Go-live](/help/journey-migration/go-live.md) 코드와 컨텐츠를 AEM as a Cloud Service으로 이동할 준비가 되면.
+여정의 이전 단계에서는 마이그레이션 및 [실행](/help/journey-migration/go-live.md) 코드와 콘텐츠를 AEM으로 as a Cloud Service으로 이동할 준비가 되었습니다.
 
 ## 목표 {#objective}
 
@@ -34,7 +34,7 @@ ht-degree: 39%
 
 ## 개발자 콘솔 {#developer-console}
 
-AEM as a Cloud Service 개발자 환경을 디버깅하는 방법은 개발자 콘솔에서 개발, 스테이지 및 프로덕션 환경에 사용할 수 있습니다.
+AEM as a Cloud Service 개발자 환경 디버깅은 개발자 콘솔에서 개발, 스테이지 및 프로덕션 환경에 사용할 수 있습니다.
 
 개발 도구에 대한 자세한 내용은 [AEM as a Cloud Service 구현](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools)을 참조하십시오.
 
@@ -43,7 +43,7 @@ AEM as a Cloud Service 개발자 환경을 디버깅하는 방법은 개발자 �
 사용자는 개발 환경에서 CRXDE Lite에 액세스할 수 있지만, 스테이지나 프로덕션 환경에서는 액세스할 수 없습니다.
 
 >[!IMPORTANT]
->같은 변경할 수 없는 저장소에 쓰기 `/libs` 및 `/apps` 런타임 시 오류가 발생합니다. 또한 스테이징 및 프로덕션 환경을 위한 개발자 도구에 액세스할 수 없습니다.
+>다음과 같이 변경할 수 없는 저장소에 쓰기 `/libs` 및 `/apps` 런타임 시 오류가 발생합니다. 또한 스테이징 및 프로덕션 환경을 위한 개발자 도구에 액세스할 수 없습니다.
 
 CRXDE Lite를 사용하여 AEM 애플리케이션을 개발하는 방법에 대해 알아보려면 [CRXDE Lite를 사용한 개발](/help/implementing/developing/tools/crxde.md)을 참조하십시오.
 
@@ -61,24 +61,24 @@ UI를 통해 또는 Cloud Manager를 통해 API에서 로그에 액세스하고 
 >abstract="자세한 설명이 필요하거나 문제를 해결하려면 AEM 지원 팀에 문의하십시오."
 >additional-url="https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud 지원"
 
-Cloud Service 액세스에 대한 질문이 있는 경우 Adobe 담당자에게 문의하거나 [Experience Cloud 지원](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html) 자세한 내용
+Cloud Service 액세스에 대한 질문이 있는 경우 Adobe 담당자에게 문의하거나 [Experience Cloud 지원](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html) 을 참조하십시오.
 
 ## 문서 학습 {#document-learnings}
 
-마이그레이션이 완료되면 이 프로세스 동안 얻은 지식을 문서화해야 합니다. 설명서 프로세스에 도움이 될 수 있는 몇 가지 질문은 다음과 같습니다.
+마이그레이션이 완료되면 이 프로세스 중에 얻은 지식을 문서화해야 합니다. 설명서 프로세스에 도움이 될 수 있는 몇 가지 질문은 다음과 같습니다.
 
-* 무엇이 잘 작동했고 무엇이 그렇지 않았습니까?
-* 가장 큰 통증은 무엇이었습니까?
+* 잘 작동한 것과 그렇지 않은 것은 무엇입니까?
+* 주요 통증 사항은 무엇입니까?
 * 향후 마이그레이션의 경우 Recommendations.
 
-그런 다음 이러한 마이그레이션 후 지식을 조직 내의 이해 관계자 및 팀과 공유해야 합니다.
+그런 다음 이러한 마이그레이션 후 학습 내용을 조직 내의 관련자 및 팀과 공유해야 합니다.
 
 ## 여정 종료 - 종료되었습니까? {#journey-ends}
 
-축하합니다! AEM as a Cloud Service 마이그레이션 여정을 완료했습니다! 다음 방법을 이해해야 합니다.
+축하합니다! AEM as a Cloud Service 마이그레이션 여정을 완료했습니다! 다음 방법을 이해할 수 있어야 합니다.
 
 * AEM as a Cloud Service으로 이동 시작
-* 배포가 AEM as a Cloud Service으로 이동할 준비가 되었는지 확인합니다.
-* 코드 및 컨텐츠 클라우드를 준비합니다.
+* 배포를 AEM as a Cloud Service으로 이동할 준비가 되었는지 확인합니다.
+* 코드 및 콘텐츠 클라우드 준비
 * 마이그레이션 수행
 * 문제 모니터링 및 성능 향상

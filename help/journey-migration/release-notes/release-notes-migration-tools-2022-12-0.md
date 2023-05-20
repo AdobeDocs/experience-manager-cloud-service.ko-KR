@@ -2,7 +2,8 @@
 title: AEM as a Cloud Service 릴리스 2022.12.0의 마이그레이션 도구 릴리스 정보
 description: AEM as a Cloud Service 릴리스 2022.12.0의 마이그레이션 도구 릴리스 정보
 feature: Release Information
-source-git-commit: 5815dacd2806cc7886aa0c7c5c9fd329306b3e1b
+exl-id: e4b6795b-6999-451b-b51f-056a9d2ea652
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '74'
 ht-degree: 22%

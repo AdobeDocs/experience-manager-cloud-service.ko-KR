@@ -5,7 +5,7 @@ exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '1941'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 97%
 
 이 페이지에서는 Experience Manager as a Cloud Service 2020.6.0 일반 릴리스 노트를 간략하게 설명합니다.
 
-## 릴리스 날짜 {#release-date}
+## 릴리스 일자 {#release-date}
 
 [!DNL Experience Manager] as a Cloud Service 2020.6.0의 출시일은 2020년 6월 4일입니다.
 
@@ -23,7 +23,7 @@ AEM as a Cloud Service 릴리스 2020.6.0에 있는 AEM Sites의 새로운 기�
 
 ### 새로운 기능 {#whats-new-2020.6.0}
 
-[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)의 릴리스 2.9.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
+[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)의 릴리스 2.9.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
 
 * [Adobe 클라이언트 데이터 레이어](https://github.com/adobe/adobe-client-data-layer)와 핵심 구성 요소 간의 통합
 * 모든 구성 요소에 대해 구성 가능한 HTML ID 속성
@@ -58,11 +58,11 @@ AEM as a Cloud Service 릴리스 2020.6.0에 있는 Cloud Manager의 새로운 �
 
 ### 새로운 기능 {#what-is-new-cloud-manager}
 
-* Cloud Manager의 *비즈니스 소유자* 역할의 사용자는 이제 랜딩 페이지(프로그램 카드의 빠른 작업 단추)나 프로그램 내에서 샌드박스 프로그램을 삭제할 수 있습니다.
+* Cloud Manager의 *비즈니스 소유자* 역할의 사용자는 이제 랜딩 페이지(프로그램 카드의 빠른 작업 버튼)나 프로그램 내에서 샌드박스 프로그램을 삭제할 수 있습니다.
 
    자세한 내용은 [샌드박스 프로그램 삭제](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)를 참조하십시오.
 
-* Cloud Manager의 *비즈니스 소유자* 또는 *배포 관리자* 역할의 샌드박스 프로그램 사용자는 이제 클라우드 관리자 UI를 통해 프로덕션 및 스테이지 환경 세트를 삭제할 수 있습니다. 이제 **프로그램 개요** 페이지와 **환경** 페이지의 환경 카드 모두에서 삭제 옵션을 사용할 수 있습니다 . 프로덕션 또는 스테이지에서 삭제 옵션을 선택하면 세트에 있는 다른 옵션도 삭제됩니다.
+* Cloud Manager의 *비즈니스 소유자* 또는 *배포 관리자* 역할의 샌드박스 프로그램 사용자는 이제 클라우드 관리자 UI를 통해 프로덕션 및 스테이징 환경 세트를 삭제할 수 있습니다. 이제 **프로그램 개요** 페이지와 **환경** 페이지의 환경 카드 모두에서 삭제 옵션을 사용할 수 있습니다. 프로덕션 또는 스테이지에서 삭제 옵션을 선택하면 세트에 있는 다른 옵션도 삭제됩니다.
 
    자세한 내용은 [샌드박스 프로그램 삭제](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)를 참조하십시오.
 
@@ -70,11 +70,11 @@ AEM as a Cloud Service 릴리스 2020.6.0에 있는 Cloud Manager의 새로운 �
 
 * **프로그램 개요** 페이지의 코치 표시의 내용을 참조하여 Cloud Manager 내의 기본 탐색에 대해 알리고 지시할 수 있습니다.
 
-* 이제 **LEARN** 페이지를 Cloud Manager에서 사용할 수 있으며 위쪽 탐색을 통해 액세스할 수 있습니다. 이 페이지에는 Cloud Manager에서 할당된 역할과 관련하여 가장 자주 사용되는 워크플로우에 대한 사용자 학습을 돕는 리소스가 포함되어 있습니다.
+* 이제 **LEARN** 페이지를 Cloud Manager에서 사용할 수 있으며 위쪽 탐색을 통해 액세스할 수 있습니다. 이 페이지에는 Cloud Manager에서 할당된 역할과 관련하여 가장 자주 사용되는 워크플로에 대한 사용자 학습을 돕는 리소스가 포함되어 있습니다.
 
 * 이제 샌드박스 프로그램은 **프로그램 개요** 페이지의 프로그램 이름 옆에 있을 뿐 아니라 랜딩 페이지의 프로그램 카드에 표시될 **샌드박스** 배지로 식별됩니다.
 
-* 이제 SysAdmin 역할의 사용자는 Cloud Manager에 대한 사용자 역할이나 권한을 관리할 수 있는 Admin Console의 위치에 클릭 한 번으로 액세스할 수 있습니다. 이제 **액세스 관리** 단추를 **프로그램 추가** 단추 옆에 있는 랜딩 페이지에서 사용할 수 있습니다.
+* 이제 SysAdmin 역할의 사용자는 Cloud Manager에 대한 사용자 역할이나 권한을 관리할 수 있는 Admin Console의 위치에 클릭 한 번으로 액세스할 수 있습니다. 이제 **액세스 관리** 버튼을 **프로그램 추가** 버튼 옆에 있는 랜딩 페이지에서 사용할 수 있습니다.
 
    자세한 내용은 [SysAdmin 작업](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks)을 참조하십시오.
 
@@ -82,11 +82,11 @@ AEM as a Cloud Service 릴리스 2020.6.0에 있는 Cloud Manager의 새로운 �
 
    자세한 내용은 [작성자 인스턴스에 대한 액세스 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem)를 참조하십시오.
 
-* 이제 빌드 로그에는 생략된 컨텐츠 패키지를 포함하여 검색된 객체 목록이 포함됩니다.
+* 이제 빌드 로그에는 생략된 콘텐츠 패키지를 포함하여 검색된 객체 목록이 포함됩니다.
 
-* 빌드 단계에서 이제 생성된 모든 컨텐츠 패키지에 이름, 그룹 및 버전과 같은 모든 필수 속성이 포함되어 있는지 확인합니다.
+* 빌드 단계에서 이제 생성된 모든 콘텐츠 패키지에 이름, 그룹 및 버전과 같은 모든 필수 속성이 포함되어 있는지 확인합니다.
 
-* 빌드 단계에서 이제 빌드가 하나 이상의 컨텐츠 패키지를 생성했는지 확인합니다.
+* 빌드 단계에서 이제 빌드가 하나 이상의 콘텐츠 패키지를 생성했는지 확인합니다.
 
 ### 버그 수정 {#bug-fixes-cm}
 
@@ -109,7 +109,7 @@ AEM as a Cloud Service 릴리스 2020.6.0에 있는 Cloud Manager의 새로운 �
 고급 스마트 태그를 사용하면 일반 스마트 태그 외에도 고급 태그 모델 기반의 이미지를 인식할 수 있도록 고급 태그 지정 모델을 교육할 수 있습니다.
 
 이번 릴리스에는 고객별 태그의 세트에 대한 스마트 태그 교육을 설정하고, 자산에 대한 교육을 제공하는 가이드 방식의 새로운 사용자 경험이 포함되어 있으며, 이를 인식하여 향후 태그를 지정해야 합니다. 이제 경험이 보다 직관적이 됩니다.
-고급 스마트 태그를 트레이닝하여 더욱 직관적인 스마트 태그 트레이닝을 받을 수 있습니다. 자세한 내용은 [자산에 스마트 태그를 추가하는 방법](/help/assets/smart-tags.md).
+고급 스마트 태그를 트레이닝하여 더욱 직관적인 스마트 태그 트레이닝을 받을 수 있습니다. 다음을 참조하십시오 [자산에 스마트 태그를 추가하는 방법](/help/assets/smart-tags.md).
 
 **3D 컨텐츠 수집, 미리 보기 및 전달 지원**
 
@@ -189,4 +189,4 @@ AEM as a Cloud Service 릴리스 2020.6.0에 있는 Cloud Manager의 새로운 �
 * 자산을 다운로드할 때 이메일 옵션이 선택되어 있고 유효한 이메일 ID가 제공되더라도 다운로드 옵션을 사용할 수 없습니다. (CQ-4296535)
 * 스마트 컬렉션으로 저장된 사용자 지정 필터는 자산에 제대로 적용되지 않습니다. (CQ-4294942)
 * 여러 검색 및 색인 개선 사항 및 버그 수정을 통해 성능을 향상할 수 있습니다. (CQ-4286373)
-* 자산에서 폴더 속성 탭에 액세스할 수 없으며 500 오류를 반환합니다. (CQ-4295701)
+* Assets에서 폴더 속성 탭에 액세스할 수 없으며 500 오류를 반환합니다. (CQ-4295701)

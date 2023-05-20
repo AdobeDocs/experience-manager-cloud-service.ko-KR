@@ -2,10 +2,10 @@
 title: 페이지 게시
 description: AEM을 사용하여 페이지를 게시 및 게시 취소하는 방법
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '1812'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 작성 환경에서 콘텐츠를 작성 및 검토한 후에는 [공개 웹 사이트(게시 환경)에서 사용할 수 있도록](/help/sites-cloud/authoring/getting-started/concepts.md) 만들어야 합니다.
 
-이를 페이지 게시라고도 합니다. 게시 환경에서 페이지를 제거하려는 경우 게시 취소라고 합니다. 게시 및 게시 취소할 때 작성 환경에서 페이지를 삭제할 때까지 계속 변경할 수 있습니다.
+이를 페이지 게시라고 합니다. 게시 환경에서 페이지를 제거하려는 경우 게시 취소라고 합니다. 페이지를 게시 및 게시 취소할 때는 삭제할 때까지 추가 변경 사항에 대해 작성 환경에서 사용할 수 있습니다.
 
 페이지를 즉시 또는 미래의 미리 정의된 날짜/시간에 게시/게시 취소할 수 있습니다.
 
@@ -37,14 +37,14 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
 ## 페이지 게시 {#publishing-pages-1}
 
-다음 위치에 따라 게시할 수 있습니다.
+위치에 따라 다음을 게시할 수 있습니다.
 
 * [페이지 편집기에서](#publishing-from-the-editor)
 * [사이트 콘솔에서](#publishing-from-the-console)
 
 >[!NOTE]
 >
->특정 페이지 게시에 필요한 권한이 없는 경우:
+>특정 페이지를 게시하는 데 필요한 권한이 없는 경우:
 >
 >* 게시할 요청을 적절한 사람에게 알리도록 워크플로가 트리거됩니다.
 >* 이 워크플로는 개발 팀에서 사용자 정의했을 수 있습니다.
@@ -90,14 +90,14 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
 ### 콘솔에서 게시 {#publishing-from-the-console}
 
-사이트 콘솔에는 게시에 대한 두 가지 옵션이 있습니다.
+사이트 콘솔에는 두 가지 게시 옵션이 있습니다.
 
 * [빠른 게시](#quick-publish)
 * [게시 관리](#manage-publication)
 
 #### 빠른 게시 {#quick-publish}
 
-**빠른 게시**&#x200B;는 간단한 사례에 해당하며 추가적인 상호 작용 없이 선택한 페이지를 즉시 게시합니다. 이로 인해 게시되지 않은 참조도 자동으로 게시됩니다.
+**빠른 게시**&#x200B;는 간단한 사례에 해당하며 추가적인 상호 작용 없이 선택한 페이지를 즉시 게시합니다. 이러한 이유로 게시되지 않은 모든 참조도 자동으로 게시됩니다.
 
 빠른 게시로 페이지를 게시하려면 다음 작업을 수행하십시오.
 
@@ -109,11 +109,11 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
    ![빠른 게시 확인](/help/sites-cloud/authoring/assets/publishing-quick-publish.png)
 
-1. 페이지가 게시되면 게시를 확인하는 알림이 표시됩니다.
+1. 페이지가 게시되면 게시 확인 경고가 표시됩니다.
 
 >[!NOTE]
 >
->빠른 게시는 약식 공개가 아닙니다. 즉, 선택한 페이지만 게시되며 하위 페이지는 게시되지 않습니다.
+>빠른 게시는 약식 게시입니다. 즉, 선택한 페이지만 게시되며 하위 페이지는 게시되지 않습니다.
 
 #### 게시 관리 {#manage-publication}
 
@@ -140,7 +140,6 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
       >[!NOTE]
       >
       >나중에 게시/게시 취소를 취소하려면 [워크플로 콘솔](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)로 이동하여 해당 워크플로를 종료합니다.
-
    ![게시 관리 옵션](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
 1. 계속하려면 **다음**&#x200B;을 클릭하십시오.
@@ -225,7 +224,7 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
 ### 편집기에서 게시 취소 {#unpublishing-from-the-editor}
 
-페이지를 편집할 때 해당 페이지의 게시를 취소하려는 경우 [페이지를 게시](#publishing-from-the-editor)한 만큼 **페이지 정보** 메뉴에서 **페이지 게시 취소**&#x200B;를 선택합니다.
+페이지를 편집할 때 해당 페이지의 게시를 취소하려면 을 선택합니다 **페이지 게시 취소** 다음에서 **페이지 정보** 메뉴, 원하는 대로 [페이지 게시](#publishing-from-the-editor).
 
 >[!NOTE]
 >
@@ -260,8 +259,8 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 사이트 콘솔에서 [게시 관리](#manage-publication) 옵션을 사용하여 이 작업을 수행할 수 있습니다.
 
 1. 사이트 콘솔에서 게시 또는 게시 취소하려는 트리의 루트 페이지를 선택하고 **게시 관리**&#x200B;를 선택합니다.
-1. **게시 관리** 마법사가 시작됩니다. 게시 또는 게시 취소하도록 선택하고 해당 작업이 수행되면 **다음**&#x200B;을 클릭하여 계속 진행합니다.
-1. **범위** 단계에서 루트 페이지를 선택하고 **하위 포함**&#x200B;을 선택합니다.
+1. **게시 관리** 마법사가 시작됩니다. 게시 또는 게시 취소를 선택하고 언제 게시해야 하는지 선택한 다음 **다음** 계속합니다.
+1. 다음에서 **범위** 단계, 루트 페이지를 선택 하 고 선택 **하위 항목 포함**.
 
    ![게시 관리 페이지 선택](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
@@ -286,7 +285,7 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
 페이지의 게시 상태를 확인할 수 있습니다.
 
-* [&#128279;](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)사이트 콘솔의 리소스 개요 정보에서
+* [사이트 콘솔의 리소스 개요 정보](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)에서
 
    ![카드 보기의 게시 상태](/help/sites-cloud/authoring/assets/publishing-status-console-card.png)
 

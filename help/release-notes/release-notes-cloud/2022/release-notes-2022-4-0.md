@@ -5,13 +5,13 @@ exl-id: 6c86838a-cabf-4770-b1ae-618af70193a2
 source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
 workflow-type: tm+mt
 source-wordcount: '570'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
-# 2022.4.0 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2022.4.0 릴리스 정보 {#release-notes}
 
-다음 섹션에서는 2022.4.0 버전 의 기능 릴리스 노트를 간략하게 설명합니다 [!DNL Experience Manager] as a Cloud Service.
+다음 섹션에서는 의 2022.4.0 버전에 대한 기능 릴리스 노트를 간략하게 설명합니다 [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >

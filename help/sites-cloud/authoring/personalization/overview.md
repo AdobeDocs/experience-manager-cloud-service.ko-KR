@@ -3,9 +3,9 @@ title: 개인화 및 콘텐츠 타겟팅
 description: AEM으로 개인화되고 타겟팅된 콘텐츠를 만드는 방법 알아보기
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 source-git-commit: 566cd449c536de4179e32c94df90b46d61e0103a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1056'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -118,7 +118,7 @@ AEM에서는 페이지 요청을 처리하고 표시할 콘텐츠를 결정하�
 [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) 타겟팅 엔진을 사용하면 페이지 방문에서 수집된 정보가 Adobe Target에서 추적됩니다.
 
 * 이 타겟팅 엔진을 사용하는 경우, Adobe Target에서 가져오는 세그먼트를 사용하여 경험의 대상자를 정의합니다.
-* Adobe Target 엔진을 사용하는 활동은 [Target에 동기화](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target)됩니다.
+* Adobe Target 엔진을 사용하는 활동은 다음과 같습니다 [Target에 동기화됨](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
 
 [Adobe Target과 통합](/help/sites-cloud/integrating/integrating-adobe-target.md)한 경우 이 엔진을 사용할 수 있습니다.
 

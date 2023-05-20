@@ -17,4 +17,4 @@ URL 형식은 현재 다음과 같습니다.
 
 * `https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`
 
-AEM 작성자 계층의 사용자 지정 도메인 이름은 지원되지 않습니다.
+AEM 작성자 계층에 대한 사용자 정의 도메인 이름은 지원되지 않습니다.

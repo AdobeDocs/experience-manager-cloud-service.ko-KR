@@ -61,7 +61,6 @@ Beta 프로그램에 등록하려면 [!DNL formscsbeta@adobe.com]에 문의하�
 ### [!DNL Forms]의 베타 기능 {#sep-what-is-new-forms-prerelease}
 
 - **통합 스토리지 커넥터:** 통합 스토리지 커넥터를 사용하여 고객 관리 저장소에서 처리 중인 데이터를 외부화합니다. 예를 들어 민감한 개인 데이터(SPD)가 포함된, 처리 중인 AEM Workflow 데이터(AEM Workflow 변수 데이터)를 고객 관리 저장소에 저장할 수 있습니다.
-
    <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
 - **[!DNL AEM Forms as a Cloud Service - Communications]**: [커뮤니케이션 API](aem-forms-cloud-service-communications.md)를 통해 XDP 템플릿과 XML 데이터를 결합하여 다양한 형식의 인쇄 문서를 생성할 수 있습니다. 이 서비스를 사용하면 동기화 모드에서 문서를 생성할 수 있습니다. API를 사용하면 다음과 같은 기능을 제공하는 애플리케이션을 만들 수 있습니다.

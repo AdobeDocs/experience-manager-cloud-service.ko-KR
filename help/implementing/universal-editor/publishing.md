@@ -1,13 +1,13 @@
 ---
 title: Universal Visual Editor로 콘텐츠 게시
 description: Universal Visual Editor에서 콘텐츠를 게시하는 방법과 앱에서 게시된 콘텐츠를 처리하는 방법에 대해 알아봅니다.
-source-git-commit: 7eeebade0255263a240476bc32f9530574495751
-workflow-type: ht
+exl-id: aee34469-37c2-4571-806b-06c439a7524a
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 100%
 
 ---
-
 
 # Universal Visual Editor로 콘텐츠 게시 {#publishing}
 

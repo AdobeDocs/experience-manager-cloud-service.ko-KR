@@ -1,11 +1,11 @@
 ---
 title: SPA 참조 자료
-description: 단일 페이지 애플리케이션 API 참조 및 소스 코드 리포지토리에 대한 개요입니다
+description: 단일 페이지 애플리케이션 API 참조 및 소스 코드 저장소에 대한 개요입니다
 exl-id: c1cc2bd8-8ff1-406c-a0ce-0af001d66b53
 source-git-commit: cde8552925a6b0ceb2c30694f127233b05dcc73c
 workflow-type: tm+mt
 source-wordcount: '138'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 0%
 * [React 편집 가능한 구성 요소](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 * [Angular 편집 가능한 구성 요소](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
-## 소스 GitHub 저장소 열기 {#github-repositories}
+## 오픈 소스 GitHub 저장소 {#github-repositories}
 
-다음은 SPA 라이브러리를 위한 GitHub의 개방형 소스 리포지토리입니다.
+다음은 SPA 라이브러리용 GitHub의 오픈 소스 저장소입니다.
 
 * [구성 요소 매핑](https://github.com/adobe/aem-spa-component-mapping)
 * [페이지 모델 관리자](https://github.com/adobe/aem-spa-page-model-manager)

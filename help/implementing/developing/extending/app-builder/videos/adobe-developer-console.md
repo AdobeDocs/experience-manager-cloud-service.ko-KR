@@ -1,6 +1,6 @@
 ---
 title: App Builder용 Adobe Developer 콘솔
-description: Adobe Developer 콘솔 및 앱 빌더 프로젝트에 대해 알아봅니다.
+description: Adobe Developer 콘솔 및 App Builder 프로젝트에 대해 알아봅니다.
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -18,24 +18,24 @@ ht-degree: 0%
 
 # App Builder용 Adobe Developer 콘솔
 
-Adobe Developer 콘솔의 정의 및 액세스 및 탐색 방법을 알아봅니다.
+Adobe Developer 콘솔이 무엇인지, 콘솔에 액세스하고 탐색하는 방법을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339162/?quality=12&learn=on)
 
 ## 프로젝트 및 템플릿 작업
 
-Adobe Developer 콘솔의 App Builder 템플릿을 사용하여 App Builder 프로젝트를 만드는 방법을 알아봅니다.
+Adobe Developer Console의 App Builder 템플릿을 사용하여 App Builder 프로젝트를 만드는 방법을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339163/?quality=12&learn=on)
 
 ## 프로젝트 자격 증명
 
-Adobe Developer 콘솔의 자격 증명 메뉴 및 승인 프로세스에서 옵션을 사용하는 방법을 알아봅니다.
+Adobe Developer 콘솔의 자격 증명 메뉴 및 승인 프로세스에 있는 옵션을 사용하는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339164/?quality=12&learn=on)
 
-## 통찰력 및 할당량 사용
+## 인사이트 및 할당량 사용 현황
 
-App Builder 애플리케이션 통찰력 및 할당량 사용에 대해 알아봅니다.
+App Builder 애플리케이션 인사이트 및 할당량 사용에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339165/?quality=12&learn=on)

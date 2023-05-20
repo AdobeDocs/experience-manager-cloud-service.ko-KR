@@ -3,7 +3,7 @@ title: 샌드박스 프로그램 소개
 description: 샌드박스 프로그램이 프로덕션 프로그램과 어떻게 다른지 알아봅니다.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 100%
 

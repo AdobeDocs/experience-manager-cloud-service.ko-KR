@@ -2,10 +2,10 @@
 title: 페이지 작성에 대한 빠른 시작 안내서
 description: 페이지 콘텐츠 작성을 시작하는 데 도움이 되는 빠른 개요 안내서
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 43fe6bdc8534cdc6c9d1b8afee90c647c447bfe1
+source-git-commit: 07702fbebc768ee877d68219eff5551b09c7ff3e
 workflow-type: tm+mt
 source-wordcount: '1585'
-ht-degree: 100%
+ht-degree: 78%
 
 ---
 
@@ -39,7 +39,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 * 링크 탐색
 
-   * **편집** 모드에 있는 경우 **링크를 탐색에 사용할 수 없습니다**. 링크를 사용하여 탐색하려면 다음 중 하나를 사용하여 [페이지 미리보기](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages)를 수행해야 합니다.
+   * **링크를 탐색에 사용할 수 없음** 에 있을 때 **편집** 모드. 링크를 사용하여 탐색하려면 다음 중 하나를 사용하여 [페이지 미리보기](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages)를 수행해야 합니다.
 
       * [미리보기 모드](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)
       * [게시됨으로 보기](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
@@ -68,7 +68,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    ![탐색 표시 드롭다운](/help/sites-cloud/authoring/assets/breadcrumb.png)
 
-1. 페이지를 [검색](/help/sites-cloud/authoring/getting-started/search.md)할 수도 있습니다. 표시된 결과에서 페이지를 선택할 수 있습니다.
+1. 다음을 수행할 수도 있습니다. [검색](/help/sites-cloud/authoring/getting-started/search.md) 페이지. 표시된 결과에서 페이지를 선택할 수 있습니다.
 
    ![검색 필드](/help/sites-cloud/authoring/assets/search.png)
 
@@ -77,17 +77,17 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 [새 페이지를 만들려면](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
 
 1. 새 페이지를 만들 [위치로 이동](#finding-your-page)합니다.
-1. **만들기** 아이콘을 사용한 다음 목록에서 **페이지**&#x200B;를 선택합니다.
+1. 사용 **만들기** 아이콘을 클릭한 다음 선택 **페이지** 목록에서:
 
    ![만들기 버튼](/help/sites-cloud/authoring/assets/create.png)
 
-1. 이렇게 하면 [새 페이지를 만들 때 ](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)필요한 정보를 수집하는 과정을 안내하는 마법사가 열립니다. 화면에 표시되는 안내를 따르십시오.
+1. 다음과 같은 경우에 필요한 정보를 수집하는 과정을 안내하는 마법사가 열립니다 [새 페이지 만들기](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page). 화면에 표시되는 안내를 따르십시오.
 
-### 추가 작업을 수행할 페이지 선택 {#selecting-your-page-for-further-action}
+### 추가 작업을 위한 페이지 선택 {#selecting-your-page-for-further-action}
 
-작업을 수행할 수 있도록 페이지를 선택할 수 있습니다. 페이지를 선택하면 도구 모음이 자동으로 업데이트되면서 해당 리소스와 관련된 작업이 표시됩니다.
+작업을 수행할 수 있도록 페이지를 선택할 수 있습니다. 페이지를 선택하면 도구 모음이 자동으로 업데이트되어 해당 리소스와 관련된 작업이 표시됩니다.
 
-페이지를 선택하는 방법은 콘솔에서 사용 중인 보기에 따라 다음과 같이 달라집니다.
+페이지 선택 방법은 콘솔에서 사용 중인 보기에 따라 다릅니다.
 
 1. 열 보기:
 
@@ -144,19 +144,19 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    * [페이지의](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) 기존 구성 요소 콘텐츠를 편집합니다.
 
-      * 탭하거나 클릭하여 구성 요소 도구 모음을 엽니다. **편집**(연필) 아이콘을 사용하여 대화 상자를 엽니다.
-      * 탭한 상태를 유지하거나 느리게 더블 클릭하여 구성 요소에 대한 즉석 편집기를 엽니다. 사용 가능한 작업이 표시됩니다(일부 구성 요소의 경우 선택이 제한됨).
-      * 사용 가능한 모든 작업을 보려면 다음 아이콘을 사용하여 전체 화면 모드로 들어갑니다.
+      * 탭하거나 클릭하여 구성 요소 도구 모음을 엽니다. 사용 **편집** (연필) 아이콘 을 클릭하여 대화 상자를 엽니다.
+      * 탭한 상태를 유지하거나 느리게 더블 클릭하여 구성 요소에 대한 즉석 편집기를 엽니다. 사용 가능한 작업이 표시됩니다(일부 구성 요소의 경우 제한된 선택).
+      * 사용 가능한 모든 작업을 보려면 다음을 사용하여 전체 화면 모드로 전환합니다.
 
          ![전체 화면 버튼](/help/sites-cloud/authoring/assets/full-screen.png)
    * [기존 구성 요소의 속성 구성](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-edit-dialog)
 
-      * 탭하거나 클릭하여 구성 요소 도구 모음을 엽니다. **구성**(공구모양) 아이콘을 사용하여 대화 상자를 엽니다.
-   * 다음 방법 중 하나로 [구성 요소를 이동](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component)합니다.
+      * 탭하거나 클릭하여 구성 요소 도구 모음을 엽니다. 사용 **구성** (렌치) 아이콘을 클릭하여 대화 상자를 엽니다.
+   * [구성 요소 이동](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component) 다음 중 하나를 수행합니다.
 
-      * 필요한 구성 요소를 새 위치로 끕니다.
+      * 필요한 구성 요소를 새 위치로 드래그합니다.
       * 탭하거나 클릭하여 구성 요소 도구 모음을 엽니다. 필요한 경우 **잘라내기** 및 **붙여넣기** 아이콘을 사용합니다.
-   * 구성 요소 [복사(및 붙여넣기):](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)
+   * [복사(및 붙여넣기)](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) 구성 요소:
 
       * 탭하거나 클릭하여 구성 요소 도구 모음을 엽니다. 필요에 따라 **복사** 및 **붙여넣기** 아이콘을 사용합니다.
    >[!NOTE]
@@ -166,15 +166,15 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
    * 구성 요소 [삭제:](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)
 
       * 탭하거나 클릭하여 구성 요소 도구 모음을 열고 **삭제** 아이콘을 사용합니다.
-   * 페이지에 [주석 추가](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations):
+   * [주석 추가](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations) (으)로 가져왔습니다.
 
-      * **주석** 모드(말풍선 아이콘)를 선택합니다. **주석 추가**(더하기) 아이콘을 사용하여 주석을 추가합니다. 오른쪽 상단의 X를 사용하여 주석 모드를 끝냅니다.
+      * 다음 항목 선택 **주석** 모드(말풍선 아이콘). 를 사용하여 주석 추가 **주석 추가** (더하기) 아이콘. 오른쪽 상단의 X를 사용하여 주석 모드를 끝냅니다.
 
          ![주석 버튼](/help/sites-cloud/authoring/assets/annotations.png)
    * [페이지 미리보기](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)(게시 환경에 표시될 모양 보기)
 
       * 도구 모음에서 **미리보기**&#x200B;를 선택합니다.
-   * **편집** 드롭다운 선택기를 사용하여 편집 모드로 돌아가거나 다른 모드를 선택합니다.
+   * 다음을 사용하여 편집 모드로 돌아가기(또는 다른 모드 선택) **편집** 드롭다운 선택기입니다.
 
    >[!NOTE]
    >
@@ -182,12 +182,12 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 ### 페이지 속성 편집 {#editing-the-page-properties}
 
-[페이지 속성을 편집](/help/sites-cloud/authoring/fundamentals/page-properties.md)하는 방법에는 두 가지(기본) 방법이 있습니다.
+의 두 가지 (주요) 메서드가 있습니다. [페이지 속성 편집](/help/sites-cloud/authoring/fundamentals/page-properties.md):
 
 * **사이트** 콘솔에서:
 
-   1. 게시할 [페이지로 이동](#finding-your-page)합니다.
-   1. 다음 중 하나를 사용하여 **속성** 아이콘을 선택합니다.
+   1. [페이지로 이동](#finding-your-page) 게시하려고 합니다.
+   1. 다음 항목 선택 **속성** 다음 중 하나의 아이콘:
 
       * 적절한 리소스에 대한 [빠른 작업(카드 보기/데스크탑 전용)](#quick-actions-card-view-desktop-only)
       * [페이지를 선택했을 때](#selecting-your-page-for-further-action)의 도구 모음
@@ -197,20 +197,20 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
    1. 페이지 속성이 표시됩니다. 필요에 따라 업데이트한 다음 [저장]을 사용하여 이러한 내용을 유지할 수 있습니다.
 
 
-* [페이지를 편집할 때](#editing-your-page-content):
+* 날짜 [페이지 편집](#editing-your-page-content):
 
-   1. **페이지 정보** 메뉴를 엽니다.
-   1. **속성 열기**&#x200B;를 선택하여 속성을 편집할 수 있는 대화 상자를 엽니다.
+   1. 를 엽니다. **페이지 정보** 메뉴 아래의 제품에서 사용할 수 있습니다.
+   1. 선택 **속성 열기** 속성 편집을 위한 대화 상자를 엽니다.
 
       ![페이지 정보 버튼](/help/sites-cloud/authoring/assets/page-information.png)
 
 ### 페이지 게시(또는 게시 취소) {#publishing-your-page-or-unpublishing}
 
-페이지를 게시 및 게시 취소하는 [방법에는](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) 두 가지 기본 방법이 있습니다.
+의 주요 방법에는 두 가지가 있습니다 [페이지 게시](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) (및 게시 취소):
 
 * **사이트** 콘솔에서:
 
-   1. 게시할 [페이지로 이동](#finding-your-page)합니다.
+   1. [페이지로 이동](#finding-your-page) 게시하려고 합니다.
    1. 다음 중 하나에서 **빠른 게시** 아이콘을 선택합니다.
 
       * 적절한 리소스에 대한 [빠른 작업(카드 보기/데스크탑 전용)](#quick-actions-card-view-desktop-only)
@@ -219,24 +219,24 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
       ![빠른 게시 버튼](/help/sites-cloud/authoring/assets/quick-publish.png)
 
 
-* [페이지를 편집할 때](#editing-your-page-content):
+* 날짜 [페이지 편집](#editing-your-page-content):
 
-   1. **페이지 정보** 메뉴를 엽니다.
-   1. **페이지 게시**&#x200B;를 선택합니다.
+   1. 를 엽니다. **페이지 정보** 메뉴 아래의 제품에서 사용할 수 있습니다.
+   1. 선택 **페이지 게시**.
 
 * **게시 관리** 옵션을 통해서만 콘솔에서 페이지의 게시를 취소할 수 있으며, 이 옵션은 빠른 작업이 아닌 도구 모음에서만 사용할 수 있습니다.
 
    ![게시 관리 버튼](/help/sites-cloud/authoring/assets/manage-publication.png)
 
-   **페이지 게시 취소** 옵션은 편집기의 **페이지 정보** 메뉴를 통해서도 사용할 수 있습니다.
+   다음 **페이지 게시 취소** 옵션은 여전히 다음을 통해 사용할 수 있습니다. **페이지 정보** 를 클릭합니다.
 
-   자세한 내용은 [페이지 게시](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages)를 참조하십시오.
+   다음을 참조하십시오 [페이지 게시](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) 추가 정보.
 
 ### 페이지 이동, 복사 및 붙여넣기 또는 삭제 {#move-copy-and-paste-or-delete-your-page}
 
 이러한 작업은 모두 다음 작업을 수행하여 트리거할 수 있습니다.
 
-1. 이동, 복사 및 붙여넣기 또는 삭제할 [페이지로 이동](#finding-your-page)하십시오.
+1. [페이지로 이동](#finding-your-page) 이동, 복사 및 붙여넣기 또는 삭제하려는 경우
 1. 복사(및 붙여넣기)를 선택하고 필요한 경우 다음 중 하나를 사용하여 아이콘을 이동하거나 삭제합니다.
 
    * 필요한 리소스에 대한 [빠른 작업(카드 보기/데스크탑 전용)](#quick-actions-card-view-desktop-only)
@@ -283,7 +283,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 1. 필요한 참조 유형을 탭하거나 클릭하여 자세한 내용을 표시하고(해당되는 경우) 추가 작업을 수행합니다.
 
-### 페이지 버전 생성 {#creating-a-version-of-your-page}
+### 페이지 버전 만들기 {#creating-a-version-of-your-page}
 
 페이지의 [버전](/help/sites-cloud/authoring/features/page-versions.md)을 생성하려면:
 
@@ -314,4 +314,4 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
       * 버전이 복원됩니다.
    * **차이 표시**
 
-      * 두 버전 간의 차이가 강조 표시된 채로 페이지가 열립니다.
+      * 두 버전 간의 차이점이 강조 표시된 상태로 페이지가 열립니다.

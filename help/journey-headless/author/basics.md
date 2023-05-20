@@ -3,7 +3,7 @@ title: 작성 기본 사항에 대해 알아보기
 description: 콘텐츠 조각을 사용하여 Headless CMS용 콘텐츠를 작성하는 개념 및 메커니즘에 대해 알아봅니다.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1668'
 ht-degree: 100%
 

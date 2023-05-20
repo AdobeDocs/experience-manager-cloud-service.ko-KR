@@ -3,7 +3,7 @@ title: AEM Commerce 콘텐츠 작성자 여정
 description: AEM Commerce 작성을 통한 가이드 여정을 시작해 보십시오.
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 100%
 

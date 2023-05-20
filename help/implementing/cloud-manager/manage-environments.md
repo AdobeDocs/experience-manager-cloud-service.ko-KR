@@ -3,7 +3,7 @@ title: 환경 관리
 description: 만들 수 있는 환경 유형과 Cloud Manager 프로젝트용으로 환경을 만드는 방법에 대해 알아봅니다.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 source-git-commit: 4631ab86ae1b4405e31d8bb8eae8edbbe2272c2c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1826'
 ht-degree: 100%
 

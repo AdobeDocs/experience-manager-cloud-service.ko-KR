@@ -44,7 +44,7 @@ ht-degree: 100%
 
 * 원격 DAM 및 Sites 배포 간의 연결을 구성한 후에는 Sites 배포에서 원격 DAM의 에셋을 사용할 수 있습니다. 이제 원격 DAM 에셋 또는 폴더에서의 [작업을 업데이트하고, 삭제하고, 이름을 바꾸고, 이동](/help/assets/use-assets-across-connected-assets-instances.md)할 수 있습니다. 업데이트는 약간의 지연과 함께 Sites 배포에서 자동으로 사용할 수 있습니다.
 
-## [!DNL Experience Manager Forms] 로서의 [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms]의 새로운 기능 {#what-is-new-forms}
 

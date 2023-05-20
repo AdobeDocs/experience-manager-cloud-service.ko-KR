@@ -3,7 +3,7 @@ title: AEM Headless 콘텐츠 작성자 여정
 description: AEM의 강력하고 유연한 Headless 기능, 각 능력과 프로젝트의 콘텐츠를 작성하는 방법에 대한 가이드 여정을 받으십시오.
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '868'
 ht-degree: 100%
 

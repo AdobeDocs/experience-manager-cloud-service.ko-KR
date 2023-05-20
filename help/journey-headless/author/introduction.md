@@ -3,7 +3,7 @@ title: AEM as a Headless CMS 작성 - 소개
 description: 프로젝트 콘텐츠를 작성하는 Adobe Experience Manager as a Cloud Service as a Headless CMS 기능 사용 소개.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 100%
 

@@ -53,11 +53,11 @@ Cloud Manager 프로그램은 일련의 Cloud Manager 환경을 나타냅니다.
 
    ![Cloud Manager 랜딩 페이지](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. 프로그램 만들기 마법사에서 **샌드박스 설정** 프로그램 이름을 입력하고 탭하거나 클릭합니다 **계속**.
+1. 프로그램 만들기 마법사에서 **샌드박스 설정** 프로그램 이름을 입력하고 탭하거나 클릭합니다. **계속**.
 
    ![프로그램 유형 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
 
-1. 에서 **샌드박스 설정** 대화 상자에서 샌드박스 프로그램에서 활성화할 솔루션을 선택할 수 있습니다. 다음 **Sites** 및 **자산** 솔루션은 항상 샌드박스 프로그램에 포함되며 자동으로 선택됩니다. 온보딩 예제에 충분합니다. **만들기**&#x200B;를 클릭합니다.
+1. 다음에서 **샌드박스 설정** 대화 상자에서 샌드박스 프로그램에서 활성화할 솔루션을 선택할 수 있습니다. 다음 **사이트** 및 **에셋** 솔루션은 항상 샌드박스 프로그램에 포함되며 자동으로 선택됩니다. 이 정도면 온보딩 예제로 충분합니다. **만들기**&#x200B;를 클릭합니다.
 
    ![솔루션 선택](assets/set-up-sandbox-onboarding.png)
 
@@ -73,7 +73,7 @@ Cloud Manager 프로그램은 일련의 Cloud Manager 환경을 나타냅니다.
 
 ## 추가 리소스 {#additional-resources}
 
-다음은 온보딩 여정의 컨텐츠를 벗어나려면 추가 선택적 리소스입니다.
+다음은 온보딩 여정의 콘텐츠를 넘어서고자 하는 경우 선택할 수 있는 추가 리소스입니다.
 
 * [프로그램 및 프로그램 유형](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) - Cloud Manager의 계층 구조와 다양한 유형의 프로그램이 해당 구조에 어떻게 적합하고 어떻게 다른지 알아봅니다.
 * [샌드박스 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) - Cloud Manager를 사용하여 교육, 데모, POC 또는 기타 비프로덕션 목적을 위한 자체 샌드박스 프로그램을 만드는 방법을 알아봅니다.

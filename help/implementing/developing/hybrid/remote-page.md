@@ -1,6 +1,6 @@
 ---
 title: RemotePage 구성 요소
-description: RemotePage 구성 요소는 AEM 내에서 원격 React SPA을 편집하는 사용자 지정 페이지 구성 요소입니다.
+description: RemotePage 구성 요소는 AEM 내에서 원격 React SPA을 편집하기 위한 사용자 지정 페이지 구성 요소입니다.
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
 source-git-commit: d213dd0788e66015237d241caf0f3b5737ce725c
 workflow-type: tm+mt
@@ -11,35 +11,35 @@ ht-degree: 2%
 
 # RemotePage 구성 요소 {#remote-page-component}
 
-결정할 때 [통합 수준](/help/implementing/developing/headful-headless.md) 외부 SPA과 AEM 사이에 두고 싶은 경우, AEM 내에서 SPA을 보고 편집할 수 있어야 하는 경우가 많습니다. RemotePage 구성 요소는 이러한 목적을 위해 사용자 지정 페이지 구성 요소입니다.
+결정 시 [통합 수준](/help/implementing/developing/headful-headless.md) 외부 SPA과 AEM 간에 호환되도록 하려면 AEM 내에서 SPA을 보고 편집할 수 있어야 한다는 것이 명확합니다. RemotePage 구성 요소는 이를 위한 사용자 지정 페이지 구성 요소입니다.
 
 ## 개요 {#overview}
 
-RemotePage 구성 요소는 애플리케이션에서 생성된 모든 필수 자산을 가져옵니다 `asset-manifest.json` 및 은 AEM 내에서 SPA을 렌더링하기 위해 이 플러그인을 사용합니다.
+RemotePage 구성 요소는 생성된 애플리케이션에서 필요한 모든 자산을 가져옵니다 `asset-manifest.json` 및 는 AEM 내에서 SPA을 렌더링하는 데 사용합니다.
 
-* RemotePage를 사용하면 AEM Page 구성 요소의 본문에 SPA의 스크립트 및 스타일시트를 삽입할 수 있습니다.
-* 가상 프런트 엔드 구성 요소를 사용하면 AEM SPA 편집기에서 섹션을 편집 가능으로 표시할 수 있습니다.
-* 함께, 다른 도메인에 호스팅된 SPA을 AEM에서 편집할 수 있습니다.
+* RemotePage를 사용하면 SPA의 스크립트와 스타일시트를 AEM 페이지 구성 요소의 본문에 삽입할 수 있습니다.
+* 가상 프론트엔드 구성 요소를 사용하여 AEM SPA 편집기에서 편집 가능한 섹션으로 표시할 수 있습니다.
+* 다른 도메인에 호스팅된 SPA을 함께 AEM에서 편집할 수 있습니다.
 
-문서를 참조하십시오 [AEM 내에서 외부 SPA 편집](editing-external-spa.md) 편집 가능한 방법에 대한 자세한 내용은 AEM의 외부 SPA을 참조하십시오.
+문서 보기 [AEM 내에서 외부 SPA 편집](editing-external-spa.md) AEM의 편집 가능한 외부 SPA에 대한 자세한 내용을 참조하십시오.
 
 ## 요구 사항 {#requirements}
 
 * 개발 시 CORS 활성화
 * 페이지 속성에서 원격 URL 구성
 * AEM에서 SPA 렌더링
-* 웹 응용 프로그램은 다음 중 하나와 같은 번들러 자산 매니페스트를 사용하고 `asset-manifest.json` 도메인 루트에서 `entrypoints property` 로드할 모든 CSS 및 JS 파일:
+* 웹 응용 프로그램은 다음 중 하나와 같은 bundler 자산 매니페스트를 사용하고 `asset-manifest.json` 에 나열된 도메인 루트에 있는 파일 `entrypoints property` 로드할 모든 CSS 및 JS 파일:
    * https://github.com/shellscape/webpack-manifest-plugin
    * https://github.com/webdeveric/webpack-assets-manifest
    * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
       ![entrypoints 속성 예](assets/asset-manifest-entrypoints.png)
-* 응용 프로그램을 `<div id="root"></div>` 아래의 `body` 요소를 생성하지 않습니다. 앱을 인스턴스화하는 데 다른 마크업이 필요한 경우, 프록시 구성 요소의 HTL 스크립트에서 이 마크업을 적절하게 조정해야 합니다 `sling:resourceSuperType="spa-project-core/components/remotepage`.
+* 응용 프로그램은 다음에서 초기화할 수 있어야 합니다. `<div id="root"></div>` 아래 `body` 요소를 생성하지 않습니다. 앱이 인스턴스화되기 위해 다른 마크업이 필요한 경우 가 있는 프록시 구성 요소의 HTL 스크립트에서 이를 적절하게 조정해야 합니다. `sling:resourceSuperType="spa-project-core/components/remotepage`.
 
 ## 제한 사항 {#limitations}
 
-* RemotePage 구성 요소는 구현에서 다음과 같은 자산 매니페스트를 제공할 것으로 예상됩니다 [여기에서 찾을 수 있습니다.](https://github.com/shellscape/webpack-manifest-plugin) 그러나 RemotePage 구성 요소는 React 프레임워크(및 원격 페이지-다음 구성 요소를 통해 Next.js)에서만 작동하도록 테스트되었으므로 Angular과 같은 다른 프레임워크에서 애플리케이션을 원격으로 로드하는 것을 지원하지 않습니다.
-* AEM에서 원격 렌더링을 수행할 때 애플리케이션의 루트 HTML 파일과 루트 DOM 노드의 인라인 CSS에 정의된 내부 CSS를 사용할 수 없습니다.
+* RemotePage 구성 요소에서는 구현이 자산 매니페스트와 같은 자산 매니페스트를 제공할 것으로 예상합니다 [여기에서 찾을 수 있습니다.](https://github.com/shellscape/webpack-manifest-plugin) 그러나 RemotePage 구성 요소는 React 프레임워크(및 remote-page-next 구성 요소를 통한 Next.js)에서만 작동하도록 테스트되었으므로 Angular과 같은 다른 프레임워크에서 원격으로 애플리케이션을 로드하는 것을 지원하지 않습니다.
+* 애플리케이션의 루트 HTML 파일에 정의된 내부 CSS와 루트 DOM 노드의 인라인 CSS는 AEM에서 원격 렌더링을 수행할 때 사용할 수 없습니다.
 
-## 기술 세부 사항 {#technical-details}
+## 기술 세부 정보 {#technical-details}
 
-AEM SPA 프로젝트의 나머지 부분처럼 RemotePage 구성 요소는 오픈 소스입니다. RemotePage 구성 요소에 대한 전체 기술 세부 정보는 [gitHub 리포지토리를 참조하십시오.](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage)
+AEM SPA 프로젝트의 나머지 부분과 마찬가지로 RemotePage 구성 요소는 오픈 소스입니다. RemotePage 구성 요소에 대한 전체 기술 세부 정보는 [GitHub 저장소를 참조하십시오.](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage)

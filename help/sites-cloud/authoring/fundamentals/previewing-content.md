@@ -3,7 +3,7 @@ title: 콘텐츠 미리보기
 description: AEM 미리보기 서비스를 사용하여 콘텐츠를 시작하기 전에 미리 보는 방법에 대해 알아봅니다.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 source-git-commit: 7b56bb05e31d7a61d7a8fb13e2bd0ff6e4fb301d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 100%
 

@@ -1,6 +1,6 @@
 ---
 title: AEM as a Cloud Service 팀 및 제품 프로필
-description: AEM as a Cloud Service 팀 및 제품 프로필이 라이선스가 부여된 Adobe 솔루션에 대한 액세스 권한을 부여하고 제한하는 방법을 알아봅니다.
+description: AEM as a Cloud Service 팀 및 제품 프로필로 라이선스가 부여된 Adobe 솔루션에 대한 액세스 권한을 부여하고 제한하는 방법에 대해 알아봅니다.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 source-git-commit: 1e3130578b7e36e5ffd5ad7b04cc7981a95bb291
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 75%
 
 # AEM as a Cloud Service 팀 및 제품 프로필 {#product-profiles}
 
-AEM as a Cloud Service 팀 및 제품 프로필이 라이선스가 부여된 Adobe 솔루션에 대한 액세스 권한을 부여하고 제한하는 방법을 알아봅니다.
+AEM as a Cloud Service 팀 및 제품 프로필로 라이선스가 부여된 Adobe 솔루션에 대한 액세스 권한을 부여하고 제한하는 방법에 대해 알아봅니다.
 
 ## 제품 프로필 {#profiles}
 
@@ -33,15 +33,15 @@ AEM as a Cloud Service 팀원은 온보딩 중에 Admin Console을 통해 다음
 >
 >AEM as a Cloud Service 제품 프로필에 할당된 모든 사용자는 **Cloud Manager 사용자** 역할.
 >
->만 사용하는 사용자 **Cloud Manager 사용자** 역할은 Cloud Manager에 로그인하고, AEM 작성 환경(있는 경우)으로 이동하여 **프로그램** 메뉴 옵션. 다음 **Cloud Manager 사용자** 역할이 프로그램 세부 정보에 액세스할 수 없습니다. 이러한 액세스가 필요한 경우, 사용자는 시스템 관리자가 추가 역할을 부여해야 합니다.
+>만 있는 사용자 **Cloud Manager 사용자** 역할은 Cloud Manager에 로그인하고 를 사용하여 AEM 작성자 환경(있는 경우)으로 이동할 수 있습니다. **프로그램** 메뉴 옵션. 다음 **Cloud Manager 사용자** 역할이 부족하여 프로그램 세부 정보에 액세스할 수 없습니다. 이러한 액세스가 필요한 경우 시스템 관리자가 사용자에게 추가 역할을 부여해야 합니다.
 
 >[!WARNING]
 >
->다음 **AEM 관리자** 제품 프로필 이름은 변경할 수 없습니다. 이름 변경 **AEM 관리자** 제품 프로필은 해당 프로필에 할당된 모든 사용자의 관리자 권한을 제거합니다.
+>다음 **AEM 관리자** 제품 프로필 이름을 변경할 수 없습니다. 의 이름 변경 **AEM 관리자** 제품 프로필은 해당 프로필에 할당된 모든 사용자로부터 관리자 권한을 제거합니다.
 
 >[!TIP]
 >
->* AEM 제품 프로필에 대한 자세한 내용은 문서를 참조하십시오 [AEM 제품 프로필 할당.](/help/journey-onboarding/assign-profiles-aem.md)
+>* AEM 제품 프로필에 대한 자세한 내용은 문서를 참조하십시오. [AEM 제품 프로필 할당](/help/journey-onboarding/assign-profiles-aem.md)
 >* [온보딩 프로세스](/help/journey-onboarding/overview.md)에 대한 자세한 내용은 온보딩 여정을 참조하십시오.
 
 
@@ -74,6 +74,6 @@ Cloud Manager 팀에는 최소한 다음 역할이 포함됩니다.
 
 >[!TIP]
 >
->* Cloud Manager 제품 프로필에 대한 자세한 내용은 문서를 참조하십시오 [Cloud Manager 제품 프로필에 팀 구성원 할당.](/help/journey-onboarding/assign-profiles-cloud-manager.md)
+>* Cloud Manager 제품 프로필에 대한 자세한 내용은 문서를 참조하십시오. [Cloud Manager 제품 프로필에 팀원 할당](/help/journey-onboarding/assign-profiles-cloud-manager.md)
 >* [온보딩 프로세스](/help/journey-onboarding/overview.md)에 대한 자세한 내용은 온보딩 여정을 참조하십시오.
 

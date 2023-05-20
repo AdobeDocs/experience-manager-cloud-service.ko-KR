@@ -6,24 +6,24 @@ exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '418'
-ht-degree: 72%
+ht-degree: 76%
 
 ---
 
 # AEM Screens as a Cloud Service {#aem-screens-as-a-cloud-service-guide}
 
-이 페이지는 AEM Screens과 이 디지털 서명 솔루션의 작동 방식에 대한 자세한 내용을 이해하는 데 도움이 됩니다. 자가 진단 리소스를 가져와 새로운 기능에 대해 알아보십시오.
+이 페이지에서는 AEM Screens 및 이 디지털 사이니지 솔루션의 작동 방식에 대해 자세히 이해할 수 있습니다. 자가 진단 리소스를 확보하고 새로운 기능에 대해 알아봅니다.
 
 >[!NOTE]
->AEM 6.5가 포함된 AEM Screens의 경우 [AEM Screens 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=en).
+>AEM 6.5가 있는 AEM Screens의 경우 [AEM Screens 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=ko).
 
 
-## 주요 컨텐츠 및 AEM Screens as a Cloud Service 문서 {#key-articles}
+## 주요 콘텐츠 및 AEM Screens as a Cloud Service 문서 {#key-articles}
 
 * [소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/overview/introduction.html?lang=en)
 * [온보딩](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en)
 * [Screens 서비스 및 콘텐츠 공급자 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)
-* [화면에서 프로젝트 만들기 as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en)
+* [Screens에서 as a Cloud Service으로 프로젝트 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en)
 * [Screens 플레이어 설치](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en)
 
 ## Experience Manager as a Cloud Service 안내서 {#aem-guides}
@@ -32,18 +32,18 @@ ht-degree: 72%
 |---|---|
 | [개요](/help/overview/home.md) | 이 안내서에서는 소개, 용어, 아키텍처 등을 포함하여 Experience Manager as a Cloud Service에 대한 개요를 제공합니다. |
 | [릴리스 노트](/help/release-notes/home.md) | 이 안내서에서는 새로운 기능, 더 이상 사용되지 않거나 제거된 기능 및 알려진 문제 등 Experience Manager as a Cloud Service의 최신 릴리스에 대한 중요 정보를 제공합니다. |
-| [보안 사용 안내서](/help/security/home.md) | Experience Manager as a Cloud Service에 대한 중요 보안 항목에 대해 알아봅니다. |
+| [보안 사용 안내서](/help/security/home.md) | Experience Manager as a Cloud Service 관련 중요 보안 항목에 대해 알아보기. |
 | [온보딩 여정](/help/journey-onboarding/overview.md) | 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service를 시작하는 방법에 대한 요약을 제공합니다. |
 | [사이트 사용 안내서](/help/sites-cloud/home.md) | Experience Manager Sites as a Cloud Service를 관리하는 방법을 이해합니다. |
 | [자산 사용 안내서](/help/assets/home.md) | Experience Manager Assets as a Cloud Service를 관리하는 방법을 이해합니다. |
-| [구현 사용 안내서](/help/implementing/home.md) | 개발 및 배포 항목을 살펴보고 AEM의 강력한 기능을 사용하여 경험을 구축하고 맞춤화하는 방법에 대해 알아봅니다. |
+| [구현 사용 안내서](/help/implementing/home.md) | 개발 및 배포 항목을 살펴보고 AEM의 강력한 기능을 사용하여 경험을 빌드하고 맞춤화하는 방법에 대해 알아봅니다. |
 | [Headless 개발자 여정](/help/journey-headless/developer/overview.md) | AEM의 강력하고 유연한 Headless 기능을 통한 가이드 여정을 살펴보고 귀하의 첫 Headless 프로젝트를 준비하십시오. |
 | [커넥터 사용 안내서](/help/connectors/home.md) | Experience Manager as a Cloud Service에 솔루션을 통합하는 방법을 알아봅니다. |
-| [작업 사용 안내서](/help/operations/home.md) | 색인화 및 유지 관리 작업과 같은 Experience Manager as a Cloud Service가 수행하는 백엔드 작업에 대해 알아봅니다. |
+| [작업 사용 안내서](/help/operations/home.md) | 색인 지정 및 유지관리 작업과 같은 Experience Manager as a Cloud Service의 백엔드 운영 방법 알아보기 |
 
 ## 기타 Experience Manager 리소스 {#other-resources}
 
-* [디스패처 설명서](/help/implementing/dispatcher/overview.md)
+* [Dispatcher 설명서](/help/implementing/dispatcher/overview.md)
 * [HTL 설명서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR)
 * [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
 * [Cloud Manager](/help/onboarding/cloud-manager-introduction.md)

@@ -1,16 +1,16 @@
 ---
-title: GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠 전달 (자산 - 컨텐츠 조각)
-description: GraphQL에서 Headless 콘텐츠 전달을 위해 콘텐츠 조각을 사용하여 AEM Headless CMS를 구현하기 위한 기본 개념을 알아봅니다.
+title: GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠 게재 (에셋 - 콘텐츠 조각)
+description: GraphQL에서 Headless 콘텐츠 게재를 위해 콘텐츠 조각을 사용하여 AEM Headless CMS를 구현하기 위한 기본 개념을 알아봅니다.
 feature: Content Fragments, GraphQL API
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 99%
 
 ---
 
-# GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠 전달 {#headless-content-delivery-using-content-fragments-with-graphQL}
+# GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠 게재 {#headless-content-delivery-using-content-fragments-with-graphQL}
 
 콘텐츠 조각 및 GraphQL API를 통해 Adobe Experience Manager(AEM) as a Cloud Service를 Headless CMS(콘텐츠 관리 시스템)로 사용할 수 있습니다.
 
@@ -111,4 +111,4 @@ AEM GraphQL API 사용에 대한 소개는 [AEM을 통해 GraphQL을 사용하�
 
 ## 튜토리얼 - AEM Headless 및 GraphQL 시작하기
 
-실습형 튜토리얼을 찾고 계십니까? Headless CMS 시나리오에서, AEM의 GraphQL API를 사용하여 콘텐츠를 구축하고 노출하고 외부 앱에서 사용하는 방법을 보여 주는 [AEM Headless 및 GraphQL 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) 엔드투엔드 튜토리얼을 확인하십시오.
+실습형 튜토리얼을 찾고 계십니까? Headless CMS 시나리오에서 AEM의 GraphQL API를 사용하여 콘텐츠를 빌드하고 노출하고 외부 앱에서 사용하는 방법을 보여 주는 [AEM Headless 및 GraphQL 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) 엔드투엔드 튜토리얼을 확인하십시오.

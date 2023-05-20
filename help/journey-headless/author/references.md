@@ -3,7 +3,7 @@ title: 콘텐츠 조각의 참조 사용에 대해 알아보기
 description: 콘텐츠, 다른 조각과 에셋(미디어)의 콘텐츠 조각에서 참조를 사용하는 방법에 대해 알아봅니다. Headless CMS 작성에서 중첩된 조각의 필요성과 메커니즘을 소개합니다.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 100%
 

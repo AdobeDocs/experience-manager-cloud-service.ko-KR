@@ -13,7 +13,7 @@ ht-degree: 94%
 
 이 페이지에서는 [!DNL Experience Manager] as a Cloud Service 2020.4.0 일반 릴리스 노트를 간략하게 설명합니다.
 
-## 릴리스 날짜 {#release-date}
+## 릴리스 일자 {#release-date}
 
 [!DNL Experience Manager] as a Cloud Service 2020.4.0의 출시일은 2020년 4월 9일입니다.
 
@@ -49,24 +49,24 @@ ht-degree: 94%
 >
 >* [Adobe Asset Link에 대하여](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Brand Portal 구성](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
->* [Asset Link를 사용하도록 Experience Manager 구성](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
->* [자산 마이크로서비스를 사용하여 Experience Manager에서 워크플로우 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
+>* [Asset Link를 사용하도록 Experience Manager 구성](https://helpx.adobe.com/kr/enterprise/using/configure-aem-assets-for-asset-link.html)
+>* [에셋 마이크로서비스를 사용하여 Experience Manager에서 워크플로 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 
 ## Cloud Manager의 새로운 기능 {#whats-new-cloud-manager}
 
 * 이제 Cloud Manager UI의 환경 페이지에서 게시자 URL을 사용할 수 있습니다.
-* 사용자가 Cloud Manager 개요 페이지에서 프로그램을 편집, 전환 또는 추가할 수 있도록 탐색 기능 변경.
-* 사용자가 Cloud Manager 랜딩 페이지의 프로그램 카드에서 프로그램을 편집할 수 있도록 변경.
-* 연관된 환경에 대해 새로운 파이프라인 상태 **파이프라인 실행 중**&#x200B;이 표시됨.
-* 파이프라인 실행 페이지 이해도 개선 사항. 여기에는 파이프라인 이름(비프로덕션 파이프라인만) 및 유형 표시와 파이프라인 상태가 진행 중/취소됨/실패인지를 나타내는 배지가 포함됩니다.
-* 프로그램/환경 추가 단추가 비활성화된 이유와 관련한 사용자 환경 및 이해도를 개선하기 위한 도구 설명.
+* 사용자가 Cloud Manager 개요 페이지에서 프로그램을 편집, 전환 또는 추가할 수 있도록 탐색 기능이 변경되었습니다.
+* 사용자가 Cloud Manager 랜딩 페이지의 프로그램 카드에서 프로그램을 편집할 수 있도록 변경되었습니다.
+* 연관된 환경에 대해 새로운 파이프라인 상태 **파이프라인 실행 중**&#x200B;이 표시됩니다.
+* 파이프라인 실행 페이지 이해도가 개선되었습니다. 여기에는 파이프라인 이름(비프로덕션 파이프라인만) 및 유형 표시와 파이프라인 상태가 진행 중/취소됨/실패인지를 나타내는 배지가 포함됩니다.
+* 프로그램/환경 추가 버튼이 비활성화된 이유와 관련한 사용자 경험 및 이해도를 개선하기 위한 도구 설명이 추가되었습니다.
 * 이제 UI 및 API를 통해 실패한 환경을 삭제할 수 있습니다.
 * git 암호를 생성하는 데 사용되는 프로세스가 기본 서비스 계층의 문제에 대해보다 탄력적으로 만들어졌습니다.
 
 ### 버그 수정 {#bug-fixes-cloud-manager}
 
-* 파이프라인 실행 세부 사항 페이지의 스테이지 환경에 대한 링크가 올바른 위치로 일관되게 이동하지 않았습니다.
+* 파이프라인 실행 세부 사항 페이지의 스테이징 환경에 대한 링크가 올바른 위치로 일관되게 이동하지 않았습니다.
 * 환경 생성 프로세스 내의 개별 단계가 필요한 시간보다 빨리 종료되어 프로세스가 실패합니다.
 * 아티팩트 메타데이터를 다운로드할 때 교착 상태를 피하기 위해 빌드 컨테이너에 사용된 Maven 구성을 업데이트했습니다.
 * 일부 경우, 이미지 작성 단계에서 고객 패키지를 제대로 다운로드하지 못했습니다.

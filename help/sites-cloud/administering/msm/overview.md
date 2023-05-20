@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2683'
 ht-degree: 100%
 
@@ -24,8 +24,8 @@ ht-degree: 100%
 
 이 페이지는 MSM을 통한 콘텐츠 재사용에 대한 개요를 제공합니다. 다음 페이지는 관련 문제를 자세히 다룹니다.
 
-* [라이브 카피 생성 및 동기화](creating-live-copies.md)
-* [라이브 카피 개요 콘솔](live-copy-overview.md)
+* [Live Copy 생성 및 동기화](creating-live-copies.md)
+* [Live Copy 개요 콘솔](live-copy-overview.md)
 * [라이브 카피 동기화 구성](live-copy-sync-config.md)
 * [MSM 롤아웃 충돌](rollout-conflicts.md)
 * [MSM 모범 사례](best-practices.md)

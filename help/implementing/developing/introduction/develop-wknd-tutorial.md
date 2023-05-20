@@ -3,7 +3,7 @@ title: AEM Sites 개발 시작하기 - WKND 튜토리얼
 description: AEM 개발이 처음이십니까? 모범 사례에 리프레셔가 필요하십니까? 이 위치에서 시작하세요! 이 멀티 파트 튜토리얼의 목표는 AEM을 처음 사용하는 개발자를 대상으로 최신 표준 기술을 통해 AEM에서 웹 사이트를 구현하는 방법을 교육하는 것입니다.
 exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 100%
 

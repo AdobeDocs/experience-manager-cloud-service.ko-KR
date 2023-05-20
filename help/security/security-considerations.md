@@ -3,13 +3,13 @@ title: AEM as a Cloud Service 보안 고려 사항
 description: AEM as a Cloud Service를 사용할 때 중요한 보안 고려 사항에 대해 알아보겠습니다.
 hidefromtoc: true
 hide: true
-source-git-commit: 39ffd826f5d1e9cea2e6a03a74f39c16647b45fa
-workflow-type: ht
+exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 100%
 
 ---
-
 
 # AEM as a Cloud Service 보안 고려 사항 {#security-considerations}
 

@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.9.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.9.0 릴리스 정보입니다.'
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
 workflow-type: tm+mt
 source-wordcount: '1572'
-ht-degree: 29%
+ht-degree: 38%
 
 ---
 
@@ -21,31 +21,31 @@ ht-degree: 29%
 >
 >릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
 
-## 릴리스 날짜 {#release-date}
+## 릴리스 일자 {#release-date}
 
-의 릴리스 날짜 [!DNL Adobe Experience Manager] 로서의 [!DNL Cloud Service] 현재 릴리스(2021.9.0)는 2021년 10월 6일입니다.
-다음 릴리스(2021.10.0)은 2021년 11월 4일에 있습니다.
+의 릴리스 날짜 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 릴리스(2021.9.0)는 2021년 10월 6일입니다.
+다음 릴리스(2021.10.0) 날짜는 2021년 11월 4일입니다.
 
 ## 릴리스 비디오 {#release-video}
 
-을(를) 보십시오. [2021년 9월 릴리스 개요](https://video.tv.adobe.com/v/337381) 비디오 를 참조하십시오.
+다음을 살펴보십시오. [2021년 9월 릴리스 개요](https://video.tv.adobe.com/v/337381) 추가된 기능에 대한 요약을 보려면 비디오 를 사용하십시오.
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### 의 새로운 기능 [!DNL Sites] 사전 릴리스 채널 {#sites-prerelease-features}
+### 의 새로운 기능 [!DNL Sites] 프리릴리스 채널 {#sites-prerelease-features}
 
-* 이제 컨텐츠 조각 모델은 게시된 후 읽기 전용 상태로 자동 설정되므로, 편집된 모델을 다시 게시한 후 라이브 API 쿼리를 일시적으로 중단하지 않습니다. 게시된 모델을 편집하려고 하면 사용자에게 경고가 표시됩니다. 경고를 수락하면 편집할 수 있습니다.
+* 이제 콘텐츠 조각 모델은 게시된 후 읽기 전용 상태로 자동 설정되므로, 편집된 모델을 다시 게시한 후 라이브 API 쿼리가 의도하지 않게 중단되는 것을 방지할 수 있습니다. 게시된 모델을 편집하려고 할 때 사용자에게 경고 메시지가 표시됩니다. 경고를 수락하면 편집할 수 있습니다.
 
-## [!DNL Experience Manager Assets] 로서의 [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets]의 새로운 기능 {#assets-features}
 
-* 이제 사용자는 열 및 카드 보기에서 검색 결과에 표시된 자산을 정렬할 수 있습니다. 정렬은 이름, 작성, 수정 또는 없음 열에서 작동합니다.
+* 이제 열 및 카드 보기에서 검색 결과에 표시된 에셋을 정렬할 수 있습니다. 정렬은 이름, 생성됨, 수정됨 또는 없음 열에서 작동합니다.
 
-   ![검색 결과 정렬 위치 [!DNL Assets] 열 및 카드 보기에서](/help/assets/assets/sort-searched-assets.png)
-   *그림: 검색 결과 정렬 위치 [!DNL Assets] 열 및 카드 보기에서 다음을 수행합니다.*
+   ![검색 결과 정렬 [!DNL Assets] 열 및 카드 보기에서](/help/assets/assets/sort-searched-assets.png)
+   *그림: 검색 결과 정렬 [!DNL Assets] 열 및 카드 보기에서 다음을 수행합니다.*
 
-* 자산 마이크로서비스를 사용하여 처리를 프로그래밍 방식으로 호출하려면 새 API가 도입됩니다. 이제 개발자는 폴더의 하나 이상의 특정 자산에 기존 폴더 수준 처리 프로필을 적용할 수 있습니다. 처리 프로필은 사용자 지정 메타데이터 속성 업데이트를 기반으로 적용됩니다. 자세한 내용은 `AssetProcessor` 에서 [[!DNL Experience Manager] API 참조](https://www.adobe.io/experience-manager/reference-materials/). 전과 마찬가지로 [사용자 인터페이스에서 자산 마이크로서비스 사용](/help/assets/asset-microservices-configure-and-use.md).
+* 자산 마이크로서비스를 사용하여 처리를 프로그래밍 방식으로 호출하기 위해 새 API가 도입됩니다. 이제 개발자는 폴더에 있는 하나 이상의 특정 에셋에 기존 폴더 수준 처리 프로필을 적용할 수 있습니다. 처리 프로필은 사용자 지정 메타데이터 속성 업데이트를 기반으로 적용됩니다. 다음을 참조하십시오 `AssetProcessor` 다음에서 [[!DNL Experience Manager] API 참조](https://www.adobe.io/experience-manager/reference-materials/). 이전과 마찬가지로 다음 작업을 수행할 수 있습니다. [사용자 인터페이스에서 에셋 마이크로서비스 사용](/help/assets/asset-microservices-configure-and-use.md).
 
 <!-- Leave this commented.
 
@@ -60,7 +60,7 @@ No customer-reported bugs fixed in Sep release.
 CQ-4328183 was not reported on CS so not documented here.
 -->
 
-## [!DNL Experience Manager Forms] 로서의 [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms]의 새로운 기능 {#what-is-new-forms-sep-2021}
 
@@ -70,7 +70,7 @@ CQ-4328183 was not reported on CS so not documented here.
 
 * **AEM Forms를 Microsoft Dynamics 및 Salesforce에 손쉽게 연결**: 이 서비스는 Microsoft Dynamics 및 Salesforce를 위한 즉시 사용 가능한 데이터 소스 구성 및 데이터 모델을 제공하여 [개발자가 Microsoft Dynamics 및 Salesforce를 적응형 양식의 데이터 소스로 더 빠르고 간편하게 구성할 수 있게 해 줍니다](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html?lang=en).
 
-* **DocuSign을 이용한 적응형 양식 전자 서명:** DocuSign을 사용해 적응형 양식에 전자 서명할 수 있습니다. 이 서비스는 적응형 양식에 DocuSign을 사용하는 맞춤형 제출 액션을 제공합니다. 소프트웨어 배포에 있는 패키지를 설치하여 제출 작업을 가져올 수 있습니다.
+* **DocuSign을 이용한 적응형 양식 전자 서명:** DocuSign을 사용해 적응형 양식에 전자 서명할 수 있습니다. 이 서비스는 적응형 양식에 DocuSign을 사용하는 맞춤형 제출 액션을 제공합니다. 소프트웨어 배포에서 사용할 수 있는 패키지를 설치하여 제출 액션을 가져올 수 있습니다.
 
 ### [!DNL Forms]의 베타 기능 {#sep-what-is-new-forms-prerelease}
 
@@ -89,39 +89,39 @@ Beta 프로그램에 등록하려면 [!DNL formscsbeta@adobe.com]에 문의하�
 
 ### 새로운 기능 {#what-is-new-cif}
 
-* 사이트 편집기의 새로운 &quot;관련 전자 상거래 컨텐츠&quot; 탭은 현재 컨텍스트에 대한 관련 AEM 제품 컨텐츠에 빠르게 액세스함으로써 작성자 효율성을 높입니다
+* 사이트 편집기의 새로운 &quot;연결된 상거래 콘텐츠&quot; 탭은 현재 컨텍스트에 대한 관련 AEM 제품 콘텐츠에 빠르게 액세스하여 작성자의 효율성을 높입니다
 
-   ![관련 상거래 콘텐츠](/help/assets/CIF/associated-commerce-content.png)
+   ![연계된 상거래 콘텐츠](/help/assets/CIF/associated-commerce-content.png)
 
-* 제품 선택기 UI를 개선하여 사용자 경험 향상, 효율성 향상 및 복잡한 제품 카탈로그에 대한 지원
+* 향상된 사용자 경험, 향상된 효율성 및 복잡한 제품 카탈로그에 대한 지원을 위해 제품 선택기 UI가 개선되었습니다
 
    ![새 제품 선택기](/help/assets/CIF/product-picker.png)
 
-* 탐색 구성 요소에서 &quot;include_in_menu&quot; 속성을 준수합니다.
+* 탐색 구성 요소에서 &quot;include_in_menu&quot; 속성 준수
 
 ### 버그 수정 {#bug-fixes-cif}
 
 * 메뉴 캐시 플러시가 예상대로 작동하지 않습니다.
 
-* AEM CS 배포 단계 중 및 클라이언트측 구성 요소를 사용하지 않는 경우 JS 오류가 발생합니다
+* AEM CS 배포 단계 중 및 클라이언트측 구성 요소를 사용하지 않는 경우 JS 오류 발생
 
-* sling:configs 노드가 있는 폴더에서 CIF 클라우드 구성을 만들 수 없습니다
+* sling:configs 노드가 있는 폴더에 CIF 클라우드 구성을 만들 수 없음
 
-## [!DNL Experience Manager Screens] 로서의 [!DNL Cloud Service] {#screens}
+## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
 ### 새로운 기능 {#what-is-new-screens}
 
-* 이제 Screens as a Cloud Service에서 기본 재생 모니터링을 지원합니다. 이제 플레이어는 각 ping을 사용하여 다양한 재생 지표를 보고합니다(기본값 30초). 지표를 기반으로 다양한 에지 사례(멈춤 경험, 빈 화면, 예약 문제 등)를 탐지하는 기능을 제공합니다. 이 기능을 사용하면 팀이 플레이어가 제대로 컨텐츠를 재생하는지 원격으로 모니터링할 수 있고, 필드의 빈 화면이나 손상된 경험에 대한 반응성을 개선하며, 최종 사용자에게 손상된 경험을 표시할 위험을 줄일 수 있습니다.
-자세한 내용은 [기본 재생 모니터링](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) 자세한 내용
+* 이제 Screens as a Cloud Service에서 기본 재생 모니터링을 지원합니다. 이제 플레이어는 각 ping으로 다양한 재생 지표를 보고합니다(기본값은 30초). 지표를 기반으로 다양한 극단적 사례(중단 경험, 빈 화면, 일정 문제 등)를 탐지할 수 있는 기능을 제공합니다. 이 기능을 통해 팀은 플레이어가 콘텐츠를 제대로 재생하는지 원격으로 모니터링할 수 있고 필드의 빈 화면이나 깨진 경험에 대한 반응성을 높이고 최종 사용자에게 손상된 경험이 표시될 위험을 줄일 수 있습니다.
+다음을 참조하십시오 [기본 재생 모니터링](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) 을 참조하십시오.
 
-* 의 비디오에 대한 축소판 지원은 이제 Screens에서 as a Cloud Service으로 지원됩니다. 컨텐츠 작성자는 해당 팀이 실제 비디오를 마무리하는 동안 이미지를 자리 표시자로 사용하고 컨텐츠 재생 및 타깃팅을 적절히 테스트할 수 있도록 비디오의 축소판을 정의할 수 있습니다. 비디오를 재생하지 못할 경우에 이미지를 사용할 수도 있습니다.
-자세한 내용은 [비디오에 대한 축소판 지원](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html) 자세한 내용
+* 이제 Screens에서 비디오에 대한 썸네일 지원이 as a Cloud Service으로 제공됩니다. 콘텐츠 작성자는 이미지를 자리 표시자로 사용하고 적절한 팀에서 실제 비디오를 마무리하는 동안 콘텐츠 재생 및 타깃팅을 적절하게 테스트할 수 있도록 비디오의 썸네일을 정의할 수 있습니다. 비디오 재생이 실패할 경우 이미지를 사용할 수도 있습니다.
+다음을 참조하십시오 [비디오에 대한 썸네일 지원](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html) 을 참조하십시오.
 
 ### 버그 수정 {#bug-fixes-screens}
 
-* 플레이어가 포함된 페이지의 콘텐츠를 표시할 수 없으며 이 문제가 해결되었습니다.
+* 플레이어에서 임베드된 페이지의 콘텐츠를 표시할 수 없으며 이 문제가 해결되었습니다.
 
-* 성공적으로 로그인하면 기본 페이지(채널)로 이동한 후 내부 서버 오류 페이지로 끝납니다.
+* 로그인에 성공한 후 기본 페이지(채널)로 이동하면 내부 서버 오류 페이지가 표시됩니다.
 
 * 재생 목록을 제거할 때 연결된 태그 항목이 제거되지 않았습니다.
 
@@ -133,56 +133,56 @@ Beta 프로그램에 등록하려면 [!DNL formscsbeta@adobe.com]에 문의하�
 
 >[!INFO]
 >
->고급 네트워킹 기능은 2021.9.0 릴리스의 일부이며, 10월 중순에 고객이 사용할 수 있도록 제공됩니다.
+>고급 네트워킹 기능은 2021.9.0 릴리스의 일부이며, 10월 중순에 고객에 대해 활성화됩니다.
 
-[!DNL Adobe Experience Manager] 로서의 [!DNL Cloud Service] 이제 다음과 같은 여러 유형의 고급 네트워킹 기능을 제공합니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 는 다음을 포함한 몇 가지 유형의 고급 네트워킹 기능을 제공합니다.
 
-* 비표준 포트에서 트래픽을 내보내기 위한 유연한 포트 송신 이제 Adobe 지원에 문의하지 않고도 가능합니다.
-* 전용 송신 IP 주소 를 사용하여 고유한 IP에서 AEM as a Cloud Service으로 트래픽을 내보내고 이제 모든 포트를 지원합니다.
-* VPN을 통해 인프라와 AEM as a Cloud Service 간의 트래픽을 보호할 수 있습니다.
+* 비표준 포트의 이그레스 트래픽에 대한 유연한 포트 이그레스. 이제 Adobe 지원 센터에 문의하지 않고도 가능합니다.
+* AEM 전용 이그레스 IP 주소에서 고유 IP의 as a Cloud Service 이그레스 트래픽으로 전송되며, 이제 모든 포트를 지원합니다.
+* 인프라와 AEM 간의 트래픽을 as a Cloud Service으로 보호하기 위한 VPN.
 
-다음 문서를 참조하십시오. [설명서](/help/security/configuring-advanced-networking.md) Cloud Manager API를 사용하여 고급 네트워킹을 자체 제공하는 방법 등 자세한 정보를 확인하십시오.
+읽기 [설명서](/help/security/configuring-advanced-networking.md) Cloud Manager API를 사용하여 고급 네트워킹을 자체 프로비저닝하는 방법 등 자세한 내용은 을 참조하십시오.
 
-**인덱스 최적화**
+**색인 최적화**
 
-검색 쿼리 및 색인 생성 성능을 개선하기 위해 전체 텍스트 인덱스 lucene-2는 더 이상 기본 제공 [!DNL Adobe Experience Manager] 로서의 [!DNL Cloud Service] 아래와 같이 변경하는 것을 의미합니다. AEM 고객에 따라 AEM 환경에서 이 전체 텍스트 인덱스를 제거하기 위해 Adobe 엔지니어링 팀은 개별적으로 그리고 적극적으로 고객과 작업하여 Lucene 전체 텍스트 인덱스를 완화하고 지속적으로 제거합니다. 다음 사이트를 방문하십시오. [!DNL Adobe Experience Manager] 로서의 [!DNL Cloud Service] [설명서](/help/operations/indexing.md#index-optimizations) 자세한 내용은 고객 지원 센터에 직접 문의하시기 바랍니다.
+검색 쿼리 및 색인화의 성능을 개선하기 위해 전체 텍스트 색인 lucene-2는 더 이상 기본 제공 도구에서 사용되지 않습니다 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 이번 릴리스에서. AEM 고객에 따라 AEM 환경에서 이 전체 텍스트 색인을 제거하기 위해 Adobe 엔지니어링은 Lucene 전체 텍스트 색인을 부드럽고 지속적으로 제거하기 위해 개인적이며 적극적으로 고객과 협력합니다. 다음을 방문하십시오. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [설명서](/help/operations/indexing.md#index-optimizations) 자세한 내용을 알고 싶으신 분은 당사의 지원 부서에 직접 문의해 주십시오.
 
 ## Cloud Manager {#cloud-manager}
 
-이 섹션에서는 AEM as a Cloud Service 2021.9.0 및 2021.8.0에서 Cloud Manager에 대한 릴리스 노트를 간략하게 설명합니다.
+이 섹션에서는 AEM as a Cloud Service 2021.9.0 및 2021.8.0의 Cloud Manager 릴리스 정보에 대해 간략히 설명합니다.
 
-## 릴리스 날짜 {#release-date-cm-sept}
+## 릴리스 일자 {#release-date-cm-sept}
 
-AEM as a Cloud Service 2021.9.0의 Cloud Manager 릴리스 날짜는 2021년 9월 9일입니다.
+AEM as a Cloud Service 2021.9.0의 Cloud Manager 릴리스 일자는 2021년 9월 9일입니다.
 다음 릴리스는 2021년 10월 7일에 예정되어 있습니다.
 
 ### 새로운 기능 {#what-is-new-cm-sept}
 
-* Cloud Manager에서 사용하는 AEM Project Archetype 버전이 버전 30으로 업데이트되었습니다.
+* Cloud Manager에서 사용하는 AEM Project Archetype이 버전 30으로 업데이트되었습니다.
 
-* Cloud Manager 랜딩 페이지의 프로그램 카드 및 관련 경험이 새로 고침되었습니다.
+* Cloud Manager 랜딩 페이지 및 관련 경험의 프로그램 카드가 새로 고쳐졌습니다.
 
-* 이제 코드 품질 단계 로그에 OakPal 검색 프로세스에 대한 자세한 로깅 정보가 포함됩니다.
+* 코드 품질 단계 로그에는 이제 OakPal 스캔 프로세스에 대한 자세한 로깅 정보가 포함됩니다.
 
-* 이제 활동 페이지 메뉴 옵션에 다음 옵션이 포함됩니다 **다운로드 로그** 코드 생성기 실행을 완료했습니다. 이를 선택하면 빌드 단계의 로그가 다운로드됩니다.
+* 활동 페이지 메뉴 옵션에는 이제 완료된 코드 생성기 실행에 대한 **로그 다운로드** 옵션이 포함됩니다. 이 옵션을 선택하면 빌드 단계의 로그가 다운로드됩니다.
 
-* 프로그램 카드에서 바로 을 클릭하면 이제 Cloud Manager 개요 페이지로 이동합니다.
+* 프로그램 카드를 직접 클릭하면 이제 Cloud Manager 개요 페이지로 이동합니다.
 
 ### 버그 수정 {#bug-fixes-sept}
 
-* 이제 사용자는 구성할 수 있는 최대 허용 IP 허용 목록 수에 도달한 프로그램에서 새 IP 허용 목록을 추가하려고 하면 더 이해할 수 있는 메시지가 표시됩니다.
+* 이제 구성할 수 있는 최대 IP 허용 목록 수에 도달한 프로그램에서 새 IP 허용 목록을 추가하려고 할 때 보다 이해하기 쉬운 메시지가 표시됩니다.
 
 * 저장소 화면에서 URL 복사 메뉴 옵션을 선택할 때 잘못된 URL이 복사되었습니다.
 
 ## Cloud Acceleration Manager {#cam}
 
-### 릴리스 날짜 {#release-date-october-cam}
+### 릴리스 일자 {#release-date-october-cam}
 
-Cloud Acceleration Manager 릴리스 날짜는 2021년 10월 4일입니다.
+Cloud Acceleration Manager 의 릴리스 날짜는 2021년 10월 4일입니다.
 
 ### 새로운 기능 {#what-is-new-cam}
 
-* 이제 Cloud Acceleration Manager에서 BPA 보고서를 인쇄 가능한 미리 보기로 볼 수 있으므로 인쇄하거나 인쇄하여 PDF에 인쇄하여 공유하기 쉽게 할 수 있습니다. 의 6단계 및 7단계를 참조하십시오 [우수 사례 분석 카드 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+* Cloud Acceleration Manager는 이제 인쇄 가능한 미리 보기에서 BPA 보고서를 볼 수 있는 기능을 사용자에게 제공하므로 간단한 인쇄 또는 인쇄를 PDF에 제공하여 쉽게 공유할 수 있습니다. 에서 6단계 및 7단계를 참조하십시오. [Best Practices Analysis 카드 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
 
 ## 콘텐츠 전송 도구 {#content-transfer-tool}
 
@@ -192,24 +192,24 @@ Cloud Acceleration Manager 릴리스 날짜는 2021년 10월 4일입니다.
 
 ### 새로운 기능 {#what-is-new-ctt}
 
-* 아래 나열된 다음 기능을 포함하여 간소화된 사용자 경험을 통해 사용자 매핑이 개선되었습니다. 자세한 내용은 [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
-   * 사용자 매핑을 실행하기 전에 사용자 관리 API에 대한 연결을 테스트합니다
-   * 오류를 올바르게 건너뛰고 사용자 매핑 활동을 계속 진행합니다
+* 아래 나열된 기능을 포함하여 간소화된 사용자 경험으로 사용자 매핑이 개선되었습니다. 자세한 내용은 다음을 참조하십시오. [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
+   * 사용자 매핑을 실행하기 전에 사용자 관리 API에 대한 연결 테스트
+   * 오류를 정상적으로 건너뛰고 사용자 매핑 활동을 계속합니다.
    * 액세스 토큰이 만료된 경우(24시간 후) 사용자 매핑이 더 이상 실패하지 않습니다. 사용자 매핑은 마지막으로 중지된 위치에서 다시 실행할 수 있습니다.
 
-* CTT 견고성을 높이기 위해 컨텐츠를 한 번에 작성자 인스턴스 또는 게시 인스턴스에 수집할 수 있습니다.
+* CTT 견고성을 높이기 위해 콘텐츠를 작성자 인스턴스 또는 게시 인스턴스로 한 번에 수집할 수 있습니다.
 
-* 버전이 포함되면 경로는 `/var/audit` 은 감사 이벤트를 마이그레이션하기 위해 자동으로 포함됩니다.
+* 버전이 포함된 경우 경로 `/var/audit` 감사 이벤트를 마이그레이션할 때 자동으로 포함됩니다.
 
 ## Best Practices Analyzer {#best-practices-analyzer}
 
 ### 릴리스 날짜 {#release-date-bpa-latest}
 
-Best Practices Analyzer v2.1.18 릴리스 날짜는 2021년 9월 2일입니다.
+모범 사례 분석기 v2.1.18의 릴리스 날짜는 2021년 9월 2일입니다.
 
 ### 새로운 기능 {#what-is-new}
 
-* 총 노드 수를 검색하고 보고하는 기능
+* 총 노드 수를 감지하고 보고하는 기능.
 
 * 노드 저장소 유형 및 크기를 감지하고 보고하는 기능.
 

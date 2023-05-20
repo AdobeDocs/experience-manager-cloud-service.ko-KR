@@ -3,7 +3,7 @@ title: Headless 콘텐츠에 대한 번역 커넥터 구성
 description: AEM을 번역 서비스에 연결하는 방법에 대해 알아봅니다.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1234'
 ht-degree: 100%
 

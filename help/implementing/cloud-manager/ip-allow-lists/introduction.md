@@ -19,15 +19,15 @@ ht-degree: 56%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html" text="IP 허용 목록 추가"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/view-update-ip-allow-list.html" text="IP 허용 목록 보기 및 업데이트"
 
-AEM as a cloud service는 기본적으로 인터넷을 통해 액세스할 수 있습니다. 사용자 인증 및 권한 부여를 통해 보안을 처리하는 동안 IP 허용 목록은 신뢰할 수 있는 IP 주소에만 대한 액세스를 제한하는 방법입니다.
+AEM as a cloud service는 기본적으로 인터넷을 통해 액세스할 수 있습니다. 보안은 사용자 인증 및 권한 부여를 통해 처리되지만 IP 허용 목록은 신뢰할 수 있는 IP 주소에 대한 액세스만 제한하는 방법입니다.
 
-Cloud Manager의 IP 허용 목록을 사용하여 그러한 신뢰할 수 있는 IP 주소에만 대한 액세스를 제한하고 제어할 수 있습니다. 적절한 권한이 있는 Cloud Manager 사용자는 [허용 목록 만들기](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) 신뢰할 수 있는 IP 주소 중에서 사이트 사용자가 자신의 AEM 도메인에 액세스할 수 있습니다.
+Cloud Manager의 IP 허용 목록을 사용하여 이러한 신뢰할 수 있는 IP 주소에 대한 액세스를 제한하고 제어할 수 있습니다. 적절한 권한이 있는 Cloud Manager 사용자는 [허용 목록 만들기](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) 사이트 사용자가 AEM 도메인에 액세스할 수 있는 신뢰할 수 있는 IP 주소
 
-추가되면, [IP 허용 목록을 적용/적용할 수 없음](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 환경의 작성자 및/또는 게시자 서비스에 단위 또는 엔티티로서 여러 번.
+추가되면, [IP 허용 목록 적용/적용 취소 가능](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 여러 번 작성자 및/또는 게시자 서비스에 대한 단위 또는 엔티티로.
 
 >[!NOTE]
 >
->IP 허용 목록이 적용되지 않으면 기본적으로 모든 IP 주소가 허용됩니다. IP 허용 목록이 적용되는 즉시 IP 허용 목록에 있는 주소 이외의 IP 주소는 허용되지 않습니다.
+>IP 허용 목록이 적용되지 않으면 기본적으로 모든 IP 주소가 허용됩니다. IP 허용 목록이 적용되는 즉시 IP 허용 목록의 주소 외에는 허용되지 않습니다.
 
 ## 제한 사항 {#limitations}
 

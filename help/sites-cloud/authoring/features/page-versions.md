@@ -1,19 +1,19 @@
 ---
 title: 페이지 버전을 사용하여 작업
-description: 페이지 버전 생성, 비교 및 복원
+description: 페이지 버전 만들기, 비교 및 복원
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 source-git-commit: 2d1b40b8d6f7b6ca5ce112331a7d389816739494
 workflow-type: tm+mt
 source-wordcount: '1521'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
 
 # 페이지 버전을 사용하여 작업 {#working-with-page-versions}
 
-버전 관리를 통해 특정 시점의 페이지 &quot;스냅샷&quot;을 만들 수 있습니다. 버전 관리로 다음과 같은 작업을 수행할 수 있습니다.
+버전 관리는 특정 시점에 페이지의 &quot;스냅샷&quot;을 만듭니다. 버전 관리를 사용하여 다음 작업을 수행할 수 있습니다.
 
-* 페이지의 버전을 생성합니다.
+* 페이지 버전을 만듭니다.
 * 하나 이상의 페이지의 이전 버전을 복원하여 다음과 같은 작업을 수행할 수 있습니다.
    * 페이지에 적용된 변경 내용 실행 취소
    * 삭제된 페이지 복원
@@ -39,8 +39,8 @@ ht-degree: 100%
 
    ![타임라인 레일의 버전](/help/sites-cloud/authoring/assets/versions-timeline-rail.png)
 
-1. **다른 버전으로 저장**&#x200B;을 선택합니다.
-1. 필요한 경우 **레이블** 및 **댓글**&#x200B;을 입력합니다.
+1. 선택 **다른 버전으로 저장**.
+1. 입력 **레이블** 및 **댓글** 필요한 경우.
 
    ![버전에 대한 레이블 추가](/help/sites-cloud/authoring/assets/versions-add-label.png)
 
@@ -52,7 +52,7 @@ ht-degree: 100%
 
 1. 버전을 만들 페이지로 이동하여 표시합니다.
 1. [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)로 페이지를 선택합니다.
-1. 도구 모음에서 **만들기** 옵션을 선택합니다.
+1. 다음 항목 선택 **만들기** 도구 모음의 옵션입니다.
 1. 동일한 대화 상자가 열립니다. 필요한 경우 **레이블** 및 **댓글**&#x200B;을 입력할 수 있습니다.
 1. **만들기**&#x200B;로 새 버전을 확인합니다.
 
@@ -85,8 +85,8 @@ ht-degree: 100%
 >1. 페이지의 버전을 임의로 만듭니다.
 >1. 초기 레이블 및 버전 노드 이름은 1.0, 1.1, 1.2 등이 됩니다.
 >1. 첫 번째 버전 1.0을 복원합니다.
->1. 다시 새 버전을 만듭니다.
->1. 생성된 레이블 및 노드 이름은 이제 1.0.0, 1.0.1, 1.0.2 등이 됩니다.
+>1. 새 버전을 다시 만듭니다.
+>1. 이제 생성된 레이블 및 노드 이름은 1.0.0, 1.0.1, 1.0.2 등이 됩니다.
 
 
 ### 버전으로 되돌리기 {#revert-to-a-version}
@@ -115,6 +115,7 @@ ht-degree: 100%
    >다음 중 하나의 경우:
    >* 하위 페이지가 없는 단일 페이지를 선택함
    >* 폴더에 버전이 있는 페이지가 없음
+
    >
    >해당하는 버전이 없기 때문에 빈 화면이 표시됩니다.
 
@@ -163,7 +164,7 @@ ht-degree: 100%
 1. 비교할 페이지로 이동하여 표시합니다.
 1. [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)로 페이지를 선택합니다.
 1. **타임라인** 열을 연 다음 **모두 표시** 또는 **버전** 중 하나를 선택합니다.
-1. 페이지 버전이 나열됩니다. 미리 볼 버전을 선택합니다.
+1. 페이지 버전이 나열됩니다. 미리 보려는 버전을 선택합니다.
 
    ![버전 미리보기](/help/sites-cloud/authoring/assets/versions-revert.png)
 
@@ -186,7 +187,7 @@ ht-degree: 100%
 
    ![버전 비교](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. **현재와 비교**&#x200B;를 선택합니다. [페이지 차이](/help/sites-cloud/authoring/features/page-diff.md)가 열리고 차이점이 표시됩니다.
+1. 선택 **현재 항목에 비교**. 다음 [페이지 비교](/help/sites-cloud/authoring/features/page-diff.md) 을 열고 차이점을 표시합니다.
 
 ## 타임워프 {#timewarp}
 
@@ -200,16 +201,16 @@ ht-degree: 100%
 
 이를 위해 진행되는 작업:
 
-* 시스템은 선택한 시간에 활성화되어 있던 페이지 버전을 찾습니다.
-* 즉, 표시되는 버전은 Timewarp에서 선택한 시점 *이전에* 생성/활성화되었음을 의미합니다.
+* 시스템은 선택한 시간에 활성화된 페이지 버전을 찾습니다.
+* 이는 표시된 버전이 생성/활성화되었음을 의미합니다. *다음 이전* 타임워프에서 선택한 시점입니다.
 * 삭제된 페이지로 이동하더라도 페이지의 이전 버전이 보관소에서 남아 있어 사용할 수 있는 경우에는 해당 페이지가 렌더링됩니다.
 * 게시된 버전을 찾을 수 없으면 타임워프는 작성 환경의 현재 페이지 상태로 돌아갑니다. 그래야만 더 이상 검색할 수 없음을 의미하는 오류/404 페이지가 나타나지 않기 때문입니다.
 
 ### 타임워프 사용 {#using-timewarp}
 
-타임워프는 페이지 편집기의 [모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)입니다. 이를 시작하려면 다른 모드처럼 전환하면 됩니다.
+타임워프는 [모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 페이지 편집기의 시작하려면 다른 모드와 마찬가지로 전환하면 됩니다.
 
-1. 타임워프를 시작하려는 페이지 편집기를 시작한 다음 [모드 선택]에서 **타임워프**&#x200B;를 선택합니다.
+1. 타임워프를 시작하려는 페이지의 편집기를 시작한 다음 을 선택합니다. **타임워프** 을 선택합니다.
 
    ![타임워프 모드](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 
@@ -217,7 +218,7 @@ ht-degree: 100%
 
    ![타임워프 대상 날짜](/help/sites-cloud/authoring/assets/versions-timewarp-target.png)
 
-1. 이 페이지는 날짜 설정에 따라 표시됩니다. 창 상단에 파란색 상태 표시줄이 표시되면 타임워프 모드입니다. 상태 표시줄의 링크를 사용하여 새 대상 날짜를 선택하거나 타임워프 모드를 종료합니다.
+1. 날짜 설정을 기반으로 페이지가 표시됩니다. 타임워프 모드는 창 상단의 파란색 상태 표시줄을 통해 표시됩니다. 상태 표시줄의 링크를 사용하여 새 대상 날짜를 선택하거나 타임워프 모드를 종료하십시오.
 
    ![타임워프 모드에서](/help/sites-cloud/authoring/assets/versions-timewarp.png)
 

@@ -116,7 +116,7 @@ Universal Editor 서비스에는 편집 중인 앱의 콘텐츠에 대한 올바
 * `<protocol>` - Universal Editor 지속성 서비스의 어떤 지속성 플러그인을 사용할 것인지 나타냅니다. 예: `aem`
 * `<url>` - 변경 사항이 지속되어야 하는 시스템의 URL입니다. 예: `http://localhost:4502`
 
-식별자 `adobe:aem:editor` Adobe 범용 편집기에 대한 연결을 나타냅니다.
+식별자 `adobe:aem:editor` Adobe 유니버설 편집기에 대한 연결을 나타냅니다.
 
 `itemid`는 `urn` 접두사를 사용하여 식별자를 줄입니다.
 

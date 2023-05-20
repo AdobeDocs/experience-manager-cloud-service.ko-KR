@@ -3,7 +3,7 @@ title: 샌드박스 환경 최대 절전 모드 설정 및 해제
 description: 샌드박스 프로그램의 환경이 자동으로 최대 절전 모드로 전환되는 방법과 최대 절전 모드를 해제하는 방법에 대해 알아봅니다.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 100%
 

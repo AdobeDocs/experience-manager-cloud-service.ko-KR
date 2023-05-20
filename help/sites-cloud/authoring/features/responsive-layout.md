@@ -1,26 +1,26 @@
 ---
 title: 반응형 레이아웃
-description: AEM에서는 페이지에 대한 응답형 레이아웃을 실현할 수 있습니다.
+description: AEM을 사용하면 페이지에 대한 응답형 레이아웃을 구현할 수 있습니다
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '1766'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
 # 반응형 레이아웃 {#responsive-layout}
 
-AEM에서는 **레이아웃 컨테이너** 구성 요소를 사용하여 사용자 페이지에 대한 응답형 레이아웃을 보유할 수 있습니다.
+AEM에서는 를 사용하여 페이지에 대한 응답형 레이아웃을 만들 수 있습니다. **레이아웃 컨테이너** 구성 요소.
 
 이 레이아웃은 응답형 격자 내에 구성 요소를 배치할 수 있도록 해 주는 단락 시스템을 제공합니다. 이 격자를 사용하면 디바이스/창 크기 및 형식에 따라 레이아웃을 다시 정렬할 수 있습니다. 구성 요소는 [**레이아웃** 모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)와 함께 사용됩니다. 이 모드에서는 디바이스에 종속적인 응답형 레이아웃을 만들고 편집할 수 있습니다.
 
 레이아웃 컨테이너:
 
-* 구성 요소를 격자에 나란히 배치하고 언제 구성 요소가 축소되거나 리플로우되어야 하는지를 지정하는 기능과 함께, 수평 격자에 맞춤 기능을 제공합니다.
+* 구성 요소를 나란히 격자에 배치하고 언제 축소하거나 리플로우해야 하는지 정의할 수 있는 기능과 함께 격자에 대한 수평 스냅을 제공합니다.
 * 미리 정의된 중단점(예: 전화, 태블릿 등)을 사용하여 관련 디바이스/방향에 대한 필수 동작을 정의할 수 있습니다.
    * 예를 들어 구성 요소 크기나 구성 요소를 특정 디바이스에서 볼 수 있도록 할지 여부를 사용자 정의할 수 있습니다.
-* 열 컨트롤을 사용하도록 중첩될 수 있습니다.
+* 열 제어를 허용하도록 중첩될 수 있습니다.
 
 그러면 사용자는 콘텐츠가 에뮬레이터를 사용하여 어떻게 특정 디바이스에 대해 렌더링될지 알 수 있습니다.
 
@@ -131,14 +131,14 @@ AEM을 사용하면 디바이스의 너비에 따라 레이아웃을 정의할 �
 
 * 다른 구성 요소를 포함합니다.
 * 레이아웃을 정의합니다.
-* 변경에 응답합니다.
+* 변경 사항에 응답합니다.
 
 >[!NOTE]
 >
 >아직 사용할 수 없는 경우에는 **레이아웃 컨테이너**&#x200B;를 단락 시스템/페이지에 대해 확실히 활성화해야 합니다. <!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
 
 1. The **Layout Container** is available as a standard component in the [Components Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). From here you can drag it to the required location on the page after which you will see the **Drag Components here** placeholder.
-1. 그런 다음 구성 요소를 레이아웃 컨테이너에 추가할 수 있습니다. 이러한 구성 요소는 실제 콘텐츠를 담게 됩니다.
+1. 그런 다음 레이아웃 컨테이너에 구성 요소를 추가할 수 있습니다. 이러한 구성 요소는 실제 콘텐츠를 담게 됩니다.
 
    ![레이아웃 컨테이너](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
 
@@ -150,7 +150,7 @@ AEM을 사용하면 디바이스의 너비에 따라 레이아웃을 정의할 �
 >
 >레이아웃 컨테이너가 단락 시스템이므로 구성 요소를 삭제하면 레이아웃 격자와 컨테이너 내의 모든 구성 요소(및 해당 콘텐츠)가 모두 삭제됩니다.
 
-1. 격자 자리표시자에 마우스 커서를 가져다 대거나 탭하면 작업 메뉴가 표시됩니다.
+1. 격자 자리 표시자 위에 마우스를 가져다 대거나 탭하면 작업 메뉴가 표시됩니다.
 
    ![레이아웃 컨테이너에 추가](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 
@@ -158,9 +158,9 @@ AEM을 사용하면 디바이스의 너비에 따라 레이아웃을 정의할 �
 
    ![상위 버튼](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
-1. 레이아웃 구성 요소가 중첩된 경우 **상위** 옵션을 선택하면 드롭다운 선택 사항이 표시되어 중첩된 레이아웃 컨테이너 또는 상위 항목을 선택할 수 있습니다.
+1. 레이아웃 구성 요소가 중첩된 경우 **상위** 옵션은 중첩된 레이아웃 컨테이너 또는 해당 상위 항목을 선택할 수 있는 드롭다운 선택 사항을 제공합니다.
 
-   드롭다운에서 컨테이너 이름 위로 마우스를 이동하면 해당 윤곽이 페이지에 표시됩니다.
+   드롭다운에서 컨테이너 이름 위로 마우스를 가져가면 해당 컨테이너 아웃라인이 페이지에 표시됩니다.
 
    * 가장 낮게 중첩된 레이아웃 컨테이너는 파란색으로 윤곽이 표시됩니다.
    * 연속적인 모든 컨테이너는 파란색 음영으로 표시됩니다.
@@ -182,13 +182,13 @@ AEM을 사용하면 디바이스의 너비에 따라 레이아웃을 정의할 �
 * [도구 모음에서 모드 메뉴](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)를 사용하여 **레이아웃** 모드 선택
    * **편집** 모드나 **타겟팅** 모드로 전환하는 것처럼 **레이아웃** 모드 선택
    * **레이아웃** 모드가 지속적으로 유지되며 모드 선택기를 통해 다른 모드를 선택할 때까지 **레이아웃** 모드를 벗어나지 않습니다.
-* [개별 구성 요소를 편집](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)하는 경우
-   * 구성 요소의 빠른 동작 메뉴에서 **레이아웃** 선택 사항을 사용하여 **레이아웃** 모드로 전환할 수 있습니다.
-   * 구성 요소를 편집하는 동안 **레이아웃** 모드가 지속되며 초점이 다른 구성 요소로 변경되면 **편집** 모드로 되돌아갑니다.
+* 날짜 [개별 구성 요소 편집](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)
+   * 를 사용하여 **레이아웃** 구성 요소의 빠른 작업 메뉴에서 다음 위치로 전환할 수 있습니다. **레이아웃** 모드.
+   * **레이아웃** 모드는 구성 요소를 편집하는 동안 지속되며 로 되돌아갑니다. **편집** 포커스가 다른 구성 요소로 변경되면 모드.
 
-레이아웃 모드에 있는 경우 격자에서 다양한 작업을 수행할 수 있습니다.
+레이아웃 모드에 있는 경우 그리드에서 다양한 작업을 수행할 수 있습니다.
 
-* 파란색 점을 사용하여 콘텐츠 구성 요소 크기를 변경할 수 있습니다. 크기를 변경하면 항상 격자에 맞춰집니다. 크기를 변경하면 배경 격자가 정렬을 돕기 위해 표시됩니다.
+* 파란색 점을 사용하여 콘텐츠 구성 요소 크기를 변경할 수 있습니다. 크기 조정은 항상 격자에 맞춰 조정됩니다. 배경 그리드의 크기를 조정할 때 정렬에 도움이 되도록 다음이 표시됩니다.
 
    ![구성 요소 크기 조정](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
 
@@ -203,9 +203,9 @@ AEM을 사용하면 디바이스의 너비에 따라 레이아웃을 정의할 �
 
    ![구성 요소 숨기기](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* **레이아웃** 모드에서 **구성 요소를 여기로 드래그하십시오.**&#x200B;를 탭/클릭하여 전체 구성 요소를 선택할 수 있습니다. 그러면 이 모드에 대한 도구 모음이 표시됩니다.
+* **레이아웃** 모드에서 **구성 요소를 여기로 드래그하십시오.**&#x200B;를 탭/클릭하여 전체 구성 요소를 선택할 수 있습니다. 이 모드에 대한 도구 모음이 표시됩니다.
 
-   도구 모음은 레이아웃 구성 요소의 상태 및 이에 속하는 구성 요소에 따라 옵션이 달라집니다. 예:
+   도구 모음에는 레이아웃 구성 요소 및 해당 구성 요소에 속하는 구성 요소의 상태에 따라 다른 옵션이 있습니다. 예:
 
    * **상위** - 상위 구성 요소를 선택합니다.
 

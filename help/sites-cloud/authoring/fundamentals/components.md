@@ -5,7 +5,7 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 100%
+ht-degree: 76%
 
 ---
 
@@ -17,15 +17,15 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->이 섹션에서는 표준 AEM 설치 시 기본적으로 사용할 수 있는 구성 요소에 대해서만 설명합니다.
+>이 섹션에서는 표준 AEM 설치에서 즉시 사용할 수 있는 구성 요소에 대해서만 설명합니다.
 >
->사용자 인스턴스에 따라 사용자 요구 사항에 맞게 명시적으로 개발된 구성 요소를 사용자 정의했을 수 있습니다. 이러한 구성 요소는 여기서 설명한 구성 요소 중 일부와 이름이 같을 수도 있습니다.
+>사용자 인스턴스에 따라 사용자 요구 사항에 맞게 명시적으로 개발된 구성 요소를 사용자 정의했을 수 있습니다. 이들은 심지어 여기서 논의되는 구성 요소 중 일부와 동일한 이름을 가질 수 있다.
 
-## 일반 사용법 {#general-usage}
+## 일반 사용 {#general-usage}
 
-구성 요소는 [페이지를 편집할 때](/help/sites-cloud/authoring/fundamentals/editing-content.md) 페이지 편집기의 측면 패널에 있는 **구성 요소** 탭에서 사용할 수 있습니다.
+구성 요소는에서 사용할 수 있습니다. **구성 요소** 다음과 같은 경우 페이지 편집기의 측면 패널에 있는 탭 [페이지 편집](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
-구성 요소를 선택한 다음 페이지에서 필요한 위치로 끌어올 수 있습니다. 그런 뒤에, 다음을 사용하여 편집할 수 있습니다.
+구성 요소를 선택하여 페이지에서 필요한 위치로 드래그할 수 있습니다. 그런 다음 다음을 사용하여 편집할 수 있습니다.
 
 * [속성 구성](/help/sites-cloud/authoring/fundamentals/page-properties.md)
 * [콘텐츠 편집](/help/sites-cloud/authoring/fundamentals/editing-content.md)

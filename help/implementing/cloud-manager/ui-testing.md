@@ -3,7 +3,7 @@ title: UI 테스트
 description: 사용자 정의 UI 테스트는 사용자 정의 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있는 선택적 기능입니다.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: bf3b7286bbf77f5a45884d4d3a40c020fe42411f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2305'
 ht-degree: 100%
 

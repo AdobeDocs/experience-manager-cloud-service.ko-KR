@@ -3,7 +3,7 @@ title: AEM Headless 번역 시작하기
 description: Headless 콘텐츠를 구성하는 방법 및 AEM의 번역 도구의 작동 방식에 대해 알아봅니다.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 100%
 

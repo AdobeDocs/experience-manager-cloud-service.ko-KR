@@ -2,8 +2,8 @@
 title: Cloud Manager 환경 변수
 description: 표준 환경 변수는 Cloud Manager를 통해 구성 및 관리할 수 있으며 OSGi 구성에서 사용할 런타임 환경에 제공됩니다.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: a8a7bd1f892c7c6eeb1753c8a55f884a33b397d4
-workflow-type: ht
+source-git-commit: 774a27e78abf091d96978911deea945ac35b7a44
+workflow-type: tm+mt
 source-wordcount: '1021'
 ht-degree: 100%
 

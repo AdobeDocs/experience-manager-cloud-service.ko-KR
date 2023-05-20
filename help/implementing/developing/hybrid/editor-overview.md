@@ -3,7 +3,7 @@ title: SPA 편집기 개요
 description: 이 문서에서는 SPA 편집기와 구동하는 방법(AEM 내에서 SPA 편집기와 워크플로의 세부 상호 작용 포함)에 대한 포괄적인 개요를 제공합니다.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
 source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1636'
 ht-degree: 100%
 

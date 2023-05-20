@@ -12,15 +12,15 @@ ht-degree: 17%
 
 # 기존 설치에 대해 외부 종속성 제거 {#remove-external-depedencies}
 
-Adobe은 Workfront에 대한 기존 향상된 커넥터 설치에 대한 구성 단계를 실행하여 Hoodo 배포 지점에 대한 종속성을 제거할 것을 권장합니다.
+Adobe은 Workfront에 대해 기존 향상된 커넥터 설치에 대한 구성 단계를 실행하여 Hoodoo 배포 지점에 대한 종속성을 제거할 것을 권장합니다.
 
 >[!NOTE]
 >
->2022년 3월 이전에 Workfront용 enhanced 커넥터를 설치한 경우에만 구성 단계를 실행합니다. 2022년 3월부터 Workfront에 대한 새로운 향상된 커넥터 설치에 대한 Hoodo 배포 포인트에 대한 종속성이 없습니다.
+>2022년 3월 이전에 Workfront용 향상된 커넥터를 설치한 경우에만 구성 단계를 수행하십시오. 2022년 3월부터 Workfront에 새롭게 향상된 커넥터 설치를 위한 Hoodoo 배포 지점에 종속성이 없습니다.
 
-외부 종속성을 제거하려면 다음을 수행하십시오.
+외부 종속성을 제거하려면 다음 작업을 수행하십시오.
 
-1. 상위에서 다음 Hoodo 저장소 구성을 제거합니다 `pom.xml`:
+1. 상위 항목에서 다음 Hoodoo 저장소 구성 제거 `pom.xml`:
 
    ```XML
      <repository>
@@ -30,7 +30,7 @@ Adobe은 Workfront에 대한 기존 향상된 커넥터 설치에 대한 구성 
      </repository>
    ```
 
-1. 다음 서버 구성을 `settings.xml` 파일, 다음 위치에서 사용 가능 `./cloudmanager/maven/settings.xml`:
+1. 에서 다음 서버 구성을 제거합니다. `settings.xml` 파일, 사용 가능한 위치 `./cloudmanager/maven/settings.xml`:
 
    ```XML
          <server>
@@ -46,4 +46,4 @@ Adobe은 Workfront에 대한 기존 향상된 커넥터 설치에 대한 구성 
          </server>
    ```
 
-1. 를 실행합니다 [새 설치 단계](workfront-connector-install.md).
+1. 실행 [새로운 설치 단계](workfront-connector-install.md).

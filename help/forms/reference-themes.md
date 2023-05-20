@@ -1,44 +1,44 @@
 ---
 title: 참조 테마
 seo-title: Reference Themes
-description: AEM Forms은 소프트웨어 배포에서 가져오고 양식 스타일을 지정하는 데 사용할 수 있는 적응형 양식 테마를 제공합니다.
+description: AEM Forms에서는 소프트웨어 배포에서 가져온 적응형 양식 테마를 제공하고 을 사용하여 양식의 스타일을 지정할 수 있습니다.
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
-source-git-commit: 3ca1996ac3a19151c0c05bd972f0aec07edabf69
+exl-id: 03305b4a-d82d-4b8d-8804-249b10bdd358
+source-git-commit: 50d4be07b9563fb5047e9b313ae604cd7633a0e2
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 3%
 
 ---
 
+# Forms용 참조 자산 as a Cloud Service {#reference-themes}
 
-# Forms as a Cloud Service에 대한 참조 자산 {#reference-themes}
-
-를 설치하면 참조 테마, 템플릿 및 양식 데이터 모델을 얻을 수 있습니다 [참조 자산 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). 적응형 Forms 개발을 빠르게 시작하고 가속화하는 데 도움이 됩니다. 다음을 사용할 수 있습니다 [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) 이 패키지를 AEM Forms as a Cloud Service 환경에 배포하려면 다음을 수행하십시오.
+다음을 설치하여 참조 테마, 템플릿 및 양식 데이터 모델을 가져올 수 있습니다. [참조 자산 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). 적응형 Forms 개발을 신속하게 시작하고 가속화하는 데 도움이 됩니다. 다음을 사용할 수 있습니다. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) AEM Forms as a Cloud Service 환경에 이 패키지를 배포합니다.
 
 패키지에 포함된 참조 자산은 다음과 같습니다.
 
 ## 테마 {#themes}
 
-[테마](/help/forms/themes.md) css에 대한 자세한 지식이 없는 경우 양식의 스타일을 지정할 수 있습니다. 다음 주제가 포함되어 있습니다.
+[테마](/help/forms/themes.md) css에 대한 깊은 지식 없이 양식을 스타일링할 수 있습니다. 다음 테마가 포함되어 있습니다.
 
 * 베릴
-* 조용한
+* 고요해
 * 울트라마린
-* Urbane
+* 우르바네
 * 칸바
 
-각 주제에는 사용자에게 쾌적한 적응형 양식을 만드는 데 사용할 수 있는 고유하고 우아한 스타일이 포함되어 있습니다. 여기에는 패널, 텍스트 상자, 숫자 상자, 라디오 단추, 표 및 스위치와 같은 선택기에 대한 고유한 스타일이 포함되어 있습니다. 이러한 테마의 스타일은 요구 사항을 기반으로 합니다. 예를 들어, 특정 시나리오에서는 깨끗한 글꼴이 포함된 미니멀리즘 테마가 필요합니다. Urbane 테마는 그러한 모양을 달성할 수 있도록 해줍니다.
+각 테마에는 사용자를 위한 쾌적한 적응형 양식을 만드는 데 사용할 수 있는 고유하고 우아한 스타일이 포함되어 있습니다. 여기에는 패널, 텍스트 상자, 숫자 상자, 라디오 단추, 테이블 및 스위치와 같은 선택기에 대한 고유한 스타일이 포함되어 있습니다. 이러한 테마의 스타일링은 요구 사항을 기반으로 합니다. 예를 들어 특정 시나리오에서는 깔끔한 글꼴을 사용하는 미니멀리즘 테마가 필요합니다. 도시 테마를 사용하면 이러한 모습을 얻을 수 있습니다.
 
 ![참조 테마](/help/forms/assets/ref-themes.png)
 
-이 패키지에 포함된 테마는 응답형이며, 이러한 테마의 스타일링은 모바일 및 데스크톱 디스플레이에 대해 정의됩니다. 다양한 장치의 최신 브라우저는 이러한 테마 중 하나로 적용된 양식을 간편하게 렌더링할 수 있습니다.
+이 패키지에 포함된 테마는 응답형이며, 이러한 테마의 스타일은 모바일 및 데스크탑 디스플레이에 대해 정의됩니다. 다양한 장치의 최신 브라우저는 이러한 테마 중 하나와 함께 적용된 양식을 번거로움 없이 렌더링할 수 있습니다.
 
-패키지 설치에 대한 자세한 내용은 [패키지 작업 방법](/help/implementing/developing/tools/package-manager.md).
+패키지 설치에 대한 자세한 내용은 [패키지를 사용하여 작업하는 방법](/help/implementing/developing/tools/package-manager.md).
 
 ### 베릴 {#beryl}
 
-We.Gov의 적응형 양식에서 Beryl 테마는 배경 이미지, 투명도 및 큰 평면 아이콘 사용을 강조합니다. 아래 스크린샷에서는 Beryl 테마가 어떻게 생겼고 양식의 스타일을 어떻게 향상시킬 수 있는지 확인할 수 있습니다.
+베릴 테마는 We.Gov 적응형 양식에서 사용되며 배경 이미지, 투명성 및 크고 평평한 아이콘의 사용을 강조합니다. 아래 스크린샷에서는 베릴 테마의 모양과 양식의 스타일을 향상시키는 방법을 확인할 수 있습니다.
 
 ![베릴 테마](/help/forms/assets/beryl.png)
 
@@ -73,26 +73,26 @@ Liberty theme uses a minimalist approach to highlight the important. For example
 ![Liberty theme](/help/forms/assets/liberty.png) -->
 <!--[Click to enlarge](assets/liberty-1.png)-->
 
-### 조용한 {#tranquil}
+### 고요해 {#tranquil}
 
-조용한 테마는 양식의 다른 구성 요소를 강조 표시하는 Tranquil 색상 구성표의 밝고 어두운 색조를 제공합니다. 예를 들어 라디오 단추, 패널 및 탭은 다른 녹색 음영률을 가져옵니다.
+고요한 테마는 고요한 색상 구성표의 밝은 색조와 어두운 색조를 제공하여 양식의 다양한 구성 요소를 강조 표시합니다. 예를 들어 라디오 단추, 패널 및 탭의 녹색 음영이 다릅니다.
 
-![조용한 테마](/help/forms/assets/tranquil.png)
+![고요한 테마](/help/forms/assets/tranquil.png)
 
 <!--[Click to enlarge](assets/tranquil-1.png)-->
 
 ### 울트라마린 {#ultramarine}
 
-Ultramarine 테마는 짙은 파란색 음영을 사용하여 탭, 패널, 텍스트 상자 및 단추와 같은 구성 요소를 강조 표시합니다.
+울트라마린 테마는 진한 파란색 음영을 사용하여 탭, 패널, 텍스트 상자 및 버튼과 같은 구성 요소를 강조 표시합니다.
 
-![초마린 테마](/help/forms/assets/ultramarine.png)
+![울트라마린 테마](/help/forms/assets/ultramarine.png)
 <!--[Click to enlarge](assets/ultramarine-1.png)-->
 
-### Urbane {#urbane}
+### 우르바네 {#urbane}
 
-도시 테마는 간결하고 기능적으로 형태를 강조한다. 양식에 Urbine 테마를 적용하면 구성 요소가 균일하고 있음을 알 수 있습니다. 패널은 얇은 윤곽선을 만들어 현대적인 모양을 만듭니다.
+Urbane theme는 귀하의 양식에 대해 미니멀하고 기능적인 모습을 강조합니다. 양식에 도시 테마를 적용하면 구성 요소가 균일함을 알 수 있습니다. 패널의 윤곽선이 얇아 현대적인 느낌을 줍니다.
 
-![도시 테마](/help/forms/assets/urbane.png)
+![도회 테마](/help/forms/assets/urbane.png)
 <!--[Click to enlarge](assets/urbane-1.png)-->
 
 <!-- ## U.S. Web Design Standards {#u-s-web-design-standards}
@@ -109,24 +109,24 @@ U.S. Web Design Standards theme, as the name suggests, uses typefaces and styles
 
 ### 기본 {#basic}
 
-기본 템플릿은 등록 양식을 빠르게 만드는 데 도움이 됩니다.
+기본 템플릿을 사용하면 등록 양식을 신속하게 만들 수 있습니다.
 
 ![기본 테마](/help/forms/assets/exec.png)
 
 ### 비어 있음 {#blank}
 
-기본 템플릿은 조직에 대한 적응형 양식의 초기 구조를 만들 수 있는 빈 캔버스를 제공합니다.
+기본 템플릿은 조직의 적응형 양식에 대한 초기 구조를 만들 수 있는 빈 캔버스를 제공합니다.
 
 ## 양식 데이터 모델
 
 ### Microsoft® Dynamics 365
 
-Microsoft Dynamics 365 데이터 모델은 Microsoft Dynamics 365를 데이터 소스로 사용하는 데 도움이 됩니다. 또한 Microsoft Dynamics 365 데이터 소스에 데이터를 읽기, 업데이트, 삭제 및 추가할 수 있는 샘플 서비스도 제공합니다.
+Microsoft Dynamics 365 데이터 모델은 Microsoft Dynamics 365를 데이터 소스로 사용하는 데 도움이 됩니다. 또한 Microsoft Dynamics 365 데이터 소스를 읽고, 업데이트하고, 삭제하고, 데이터를 추가할 수 있는 샘플 서비스를 제공합니다.
 
 ![Microsoft® Dynamics 365 양식 데이터 모델](/help/forms/assets/microsoft-dynamic-fdm.png)
 
 ### Salesforce
 
-Salesforce 데이터 모델은 Salesforce를 데이터 소스로 사용하는 데 도움이 됩니다. 또한 Salesforce에 데이터를 읽기, 업데이트, 삭제 및 추가할 수 있는 샘플 서비스를 제공합니다.
+Salesforce 데이터 모델을 사용하면 Salesforce를 데이터 소스로 사용할 수 있습니다. 또한 데이터를 읽고, 업데이트하고, 삭제하고, Salesforce에 추가하는 샘플 서비스를 제공합니다.
 
 ![Salesforce 양식 데이터 모델](/help/forms/assets/salesforce-fdm.png)

@@ -2,8 +2,8 @@
 title: ContextHub를 사용하여 세그먼테이션 구성
 description: ContextHub를 사용하여 세그먼테이션을 구성하는 방법에 대해 알아봅니다.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 43f0c3611f63b3e1ea9085d828d5daab7b361a8e
-workflow-type: ht
+source-git-commit: a278b3925180f4baa3b82af84080c947a72c9844
+workflow-type: tm+mt
 source-wordcount: '1697'
 ht-degree: 100%
 

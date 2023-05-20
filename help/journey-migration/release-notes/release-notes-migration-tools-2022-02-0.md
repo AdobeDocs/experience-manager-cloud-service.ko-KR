@@ -1,6 +1,6 @@
 ---
-title: AEM as a Cloud Service 릴리스 2022.2.0의 마이그레이션 도구에 대한 릴리스 노트
-description: AEM as a Cloud Service 릴리스 2022.2.0의 마이그레이션 도구에 대한 릴리스 노트
+title: AEM as a Cloud Service 릴리스 2022.2.0의 마이그레이션 도구 릴리스 정보
+description: AEM as a Cloud Service 릴리스 2022.2.0의 마이그레이션 도구 릴리스 정보
 feature: Release Information
 exl-id: b1cd871d-c71e-4902-a97e-2c859f6a4da4
 source-git-commit: c497424271ea960d22a30b4a6c66432935ec820d
@@ -10,9 +10,9 @@ ht-degree: 79%
 
 ---
 
-# AEM as a Cloud Service 릴리스 2022.2.0의 마이그레이션 도구에 대한 릴리스 노트 {#release-notes}
+# AEM as a Cloud Service 릴리스 2022.2.0의 마이그레이션 도구 릴리스 정보 {#release-notes}
 
-이 페이지에서는 AEM as a Cloud Service 2022.2.0의 마이그레이션 도구에 대한 릴리스 노트를 간략하게 설명합니다.
+이 페이지에서는 AEM as a Cloud Service 2022.2.0의 마이그레이션 도구 릴리스 정보에 대해 간략히 설명합니다.
 
 ## Best Practices Analyzer {#bpa-release}
 

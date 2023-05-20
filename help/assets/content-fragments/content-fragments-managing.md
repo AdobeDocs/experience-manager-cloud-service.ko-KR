@@ -1,6 +1,6 @@
 ---
-title: 컨텐츠 조각 관리 (자산 - 컨텐츠 조각)
-description: 자산 콘솔을 사용하여 헤드리스 컨텐츠의 기반인 AEM 컨텐츠 조각을 관리하는 방법을 알아봅니다.
+title: 컨텐츠 조각 관리 (에셋 - 콘텐츠 조각)
+description: Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 91%
 
 # 콘텐츠 조각 관리 {#managing-content-fragments}
 
-자산 콘솔을 사용하여 헤드리스 컨텐츠의 기반인 AEM 컨텐츠 조각을 관리하는 방법을 알아봅니다.
+Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
 
 [콘텐츠 조각 모델](#creating-a-content-model)을 정의한 후 이를 사용하여 [콘텐츠 조각을 작성할](#creating-a-content-fragment) 수 있습니다.
 
@@ -35,7 +35,7 @@ ht-degree: 91%
 
 >[!NOTE]
 >
->콘텐츠 조각은 **에셋**&#x200B;으로 저장됩니다. 이제 주로 **[컨텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** 콘솔에서 계속 관리할 수 있지만 **자산** 콘솔. 이 섹션에서는 **자산** 콘솔.
+>콘텐츠 조각은 **에셋**&#x200B;으로 저장됩니다. 이제 를 통해 주로 관리됩니다. **[컨텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** 콘솔에서 관리할 수 있습니다. **에셋** 콘솔. 이 섹션에서는 다음의 관리에 대해 설명합니다. **에셋** 콘솔.
 
 ## 콘텐츠 조각 만들기 {#creating-content-fragments}
 
@@ -51,7 +51,7 @@ ht-degree: 91%
 1. **만들기**&#x200B;를 선택한 후 **컨텐츠 조각**&#x200B;을 선택하여 마법사를 엽니다.
 1. 마법사의 첫 번째 단계에서는 새 조각의 기준을 지정해야 합니다.
 
-   * [모델](/help/assets/content-fragments/content-fragments-models.md) - 구조화된 컨텐츠가 필요한 조각을 만드는 데 사용됩니다. 예 **모험** 모델
+   * [모델](/help/assets/content-fragments/content-fragments-models.md) - 구조화된 컨텐츠가 필요한 조각을 만드는 데 사용됩니다. 예: **모험** 모델
 
       * 사용 가능한 모든 모델이 표시됩니다.
 
@@ -84,9 +84,9 @@ ht-degree: 91%
 1. **만들기**&#x200B;를 선택하여 작업을 완료한 후 편집할 조각을 **열거나** **완료**&#x200B;를 사용하여 콘솔로 돌아갑니다.
 
    >[!NOTE]
-   >in **목록** 콘솔의 모드에서 **설정 보기** 를 **컨텐츠 조각 모델** 열.
+   >위치 **목록** 콘솔의 모드 **설정 보기** 을(를) 활성화하려면 **콘텐츠 조각 모델** 열.
 
-## 자산 콘솔의 컨텐츠 조각에 대한 작업 {#actions-for-a-content-fragment-assets-console}
+## 에셋 콘솔의 콘텐츠 조각에 대한 작업 {#actions-for-a-content-fragment-assets-console}
 
 **자산** 콘솔에서 컨텐츠 조각에 다양한 작업을 사용할 수 있습니다.
 
@@ -352,10 +352,10 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 * [빠른 게시](/help/assets/manage-publication.md#quick-publish)
 * [게시 관리](/help/assets/manage-publication.md#manage-publication)
 
-액세스 가능한 항목:
+다음에 액세스할 수 있습니다.
 
-* 생성 후; 사용 [자산 콘솔에서 사용할 수 있는 작업](#actions-for-a-content-fragment-assets-console).
-* 에서 [컨텐츠 조각 편집기](#toolbar-actions-in-the-content-fragment-editor).
+* 생성 후, 사용 [자산 콘솔에서 사용할 수 있는 작업](#actions-for-a-content-fragment-assets-console).
+* 다음에서 [콘텐츠 조각 편집기](#toolbar-actions-in-the-content-fragment-editor).
 
 또한 [조각을 사용하는 페이지를 게시](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)하면 해당 조각은 페이지 참조에 나열됩니다.
 

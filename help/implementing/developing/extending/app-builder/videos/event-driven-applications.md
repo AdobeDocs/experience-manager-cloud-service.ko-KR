@@ -1,6 +1,6 @@
 ---
 title: 이벤트 기반 App Builder 애플리케이션
-description: 이벤트 기반의 App Builder 애플리케이션을 빌드하는 방법을 알아봅니다.
+description: 이벤트 중심의 App Builder 애플리케이션을 빌드하는 방법에 대해 알아봅니다.
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -24,8 +24,8 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/339244/?quality=12&learn=on)
 
-## 이벤트 기반 App Builder 애플리케이션 제작
+## 이벤트 기반 App Builder 애플리케이션 구축
 
 >[!VIDEO](https://video.tv.adobe.com/v/339245/?quality=12&learn=on)
 
-게시를 빌드하면 App Builder 애플리케이션에서 이벤트를 사용할 수 있는 방법을 알아봅니다.
+게시를 작성하는 방법에 대해 알아보고 App Builder 애플리케이션에서 이벤트를 사용할 수 있습니다.

@@ -3,7 +3,7 @@ title: 콘텐츠 게재 플로우 개요
 description: 콘텐츠 게재 플로우 개요
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 source-git-commit: 60fc1b8f93c93ca427507dbe56511342f285e6bc
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 100%
 

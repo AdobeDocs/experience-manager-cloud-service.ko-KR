@@ -1,13 +1,13 @@
 ---
 title: Universal Visual Editor 소개
 description: Universal Visual Editor(Universal Editor)가 헤드리스 및 헤드풀 환경의 WYSIWYG(what-you-see-is-what-you-get) 편집을 가능하게 하는 방법에 대해 알아봅니다. 콘텐츠 작성자가 탁월한 경험을 제공하고 콘텐츠 속도를 높이며 최신 개발자 경험을 제공하는 데 도움이 되는 방식에 대해 살펴보십시오.
-source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
+exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 100%
 
 ---
-
 
 # Universal Visual Editor 소개 {#introduction}
 

@@ -2,7 +2,7 @@
 title: 라이선스 대시보드
 description: Cloud Manager는 조직 또는 테넌트가 사용할 수 있는 AEMaaCS 제품 권한을 쉽게 볼 수 있도록 대시보드를 제공합니다.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: b5078c849c9fa088546f5df1fcbef1dec59f3cdb
+source-git-commit: d5e0ca924dee50d7dd4f9057010b1a39780b4352
 workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 80%
@@ -55,7 +55,7 @@ Cloud Manager 라이선스 대시보드를 사용하면 다음 정보에 쉽게 
 
 ### 콘텐츠 요청이란? {#what-is-a-content-request}
 
-콘텐츠 요청은 AEM Sites 또는 콘텐츠 전달 네트워크와 같이 고객이 제공하는 캐싱 시스템에 오는 요청이며, 콘텐츠 또는 데이터를 HTML 형식으로 페이지 보기 또는 API 호출로 JSON 형식으로 게재하도록 합니다.
+콘텐츠 요청은 콘텐츠 또는 데이터를 페이지 조회수로 또는 JSON 포맷으로 API 호출로 전달하기 위해 AEM Sites HTML 또는 콘텐츠 전달 네트워크와 같은 고객 제공 캐싱 시스템으로 들어오는 요청입니다.
 
 콘텐츠 요청은 각 페이지 보기 또는 5개의 API 호출마다 계산되며, 콘텐츠 요청을 수신하기 위한 첫 번째 캐싱 시스템의 인그레스에서 측정됩니다. 콘텐츠 요청은 프로덕션 환경에 대해서만 계산됩니다.
 
@@ -63,7 +63,7 @@ Cloud Manager 라이선스 대시보드를 사용하면 다음 정보에 쉽게 
 
 ### Adobe Experience Manager는 콘텐츠 요청을 어떻게 측정합니까? {#how-are-content-requests-measured}
 
-컨텐츠 요청은 AEM as a Cloud Service Edge Server에서 추적됩니다. 원본 트래픽은 콘텐츠 요청에 포함되지 않습니다. AEM에 내장된 CDN은 유효한 HTML 및 JSON 요청을 as a Cloud Service으로 추적합니다.
+콘텐츠 요청은 AEMas a Cloud Service 의 Edge Server에서 추적됩니다. 원본 트래픽은 콘텐츠 요청에 포함되지 않습니다. AEM에 내장된 CDN은 유효한 HTML 및 JSON 요청을 as a Cloud Service으로 추적합니다.
 
 또한 AEM에는 검색 인덱스나 서비스를 새로 고치기 위해 사이트를 정기적으로 방문하는 잘 알려진 서비스를 포함하여 잘 알려진 봇을 제외하는 규칙이 있습니다.
 
@@ -83,10 +83,10 @@ Cloud Manager 라이선스 대시보드를 사용하면 다음 정보에 쉽게 
 | 트래픽 차단 | 브라우저에서 추적기 차단을 사용하면 일부 요청이 추적되지 않도록 옵트아웃할 수 있습니다. |
 | 방화벽 | 방화벽이 Analytics 추적을 차단할 수 있습니다. 이는 회사 방화벽에서 더 자주 발생합니다. |
 
-### 콘텐츠 요청 볼륨에 대해 자세히 알려면 어떻게 합니까? {#current-request-volumes}
+### 콘텐츠 요청 볼륨에 대해 자세히 알아보려면 어떻게 해야 합니까? {#current-request-volumes}
 
-라이센스 대시보드에 표시된 컨텐츠 요청 볼륨에 대한 추가 인사이트를 원하는 경우 Adobe 팀이 컨텐츠 요청의 최상위 볼륨 드라이버를 보여주는 보고서를 제공할 수 있습니다. 최상위 사용량 보고서를 요청하려면 Adobe 팀이나 고객 지원 센터에 문의하십시오.
+라이선스 대시보드에 표시된 콘텐츠 요청 볼륨에 대한 추가 통찰력을 원하는 경우 Adobe 팀이 콘텐츠 요청의 상위 볼륨 드라이버를 보여 주는 보고서를 제공할 수 있습니다. 상위 사용 보고서를 요청하려면 Adobe 팀이나 고객 지원 Adobe에 문의하십시오.
 
 ### 자체 CDN을 사용하는 경우 어떻게 합니까? {#using-own-cdn}
 
-라이선스 대시보드는 Cloud Service CDN에서 추적한 데이터만 표시합니다.  BYOCDN(Your Own Cdn)을 가져오도록 선택하는 경우 계약에 명시된 대로 컨텐츠 요청 볼륨을 Adobe에 매년 다시 보고합니다.
+라이선스 대시보드는 Cloud Service CDN에서 추적한 데이터만 표시합니다.  자체 CDN(BYOCDN)을 가져오기로 선택한 경우 계약에 명시된 대로 연간 컨텐츠 요청 볼륨을 Adobe으로 다시 보고합니다.

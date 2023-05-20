@@ -5,13 +5,13 @@ exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
 source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
 workflow-type: tm+mt
 source-wordcount: '625'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
-# 2022.8.0 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2022.8.0 릴리스 정보 {#release-notes}
 
-다음 섹션에서는 2022.8.0 버전의 기능 릴리스 노트를 간략하게 설명합니다 [!DNL Experience Manager] as a Cloud Service.
+다음 섹션에서는 의 2022.8.0 버전에 대한 기능 릴리스 노트를 간략하게 설명합니다 [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ ht-degree: 95%
 ## 릴리스 일자 {#release-date}
 
 [!DNL Adobe Experience Manager]인 [!DNL Cloud Service]의 현재 릴리스(2022.8.0)의 날짜는 2022년 9월 1일입니다.
-다음 릴리스(2022.10.0)은 2022년 11월 10일에 예정되어 있습니다.
+다음 릴리스(2022.10.0)는 2022년 11월 10일에 예정되어 있습니다.
 
 ## 릴리스 비디오 {#release-video}
 

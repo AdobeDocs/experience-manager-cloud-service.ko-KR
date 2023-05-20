@@ -4,7 +4,7 @@ description: 서드파티 번역 서비스와 통합한 번역 통합 프레임�
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 294743b3ca309cc0de3295cb55679e647bb10756
+source-git-commit: 803a7788cde37fb0026f7cc3582efb33c10e1358
 workflow-type: tm+mt
 source-wordcount: '1523'
 ht-degree: 100%

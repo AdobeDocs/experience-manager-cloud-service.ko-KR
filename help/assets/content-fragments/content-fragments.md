@@ -1,5 +1,5 @@
 ---
-title: 콘텐츠 조각을 사용하여 작업 (자산 - 컨텐츠 조각)
+title: 콘텐츠 조각을 사용하여 작업 (에셋 - 콘텐츠 조각)
 description: Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각을 사용하여 페이지 작성 및 Headless 게재에 이상적인 페이지 독립적 콘텐츠를 디자인하고, 작성하고, 선별하고, 사용하는 방법에 대해 알아봅니다.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 source-git-commit: ca41657057211cb0736a866771253b166fa139b4
@@ -11,7 +11,7 @@ ht-degree: 95%
 
 # 콘텐츠 조각을 사용하여 작업 {#working-with-content-fragments}
 
-Adobe Experience Manager(AEM) as a Cloud Service 컨텐츠 조각을 사용하면 컨텐츠 조각을 디자인, 작성, 조정 및 조정할 수 있습니다 [페이지에 영향을 받지 않는 컨텐츠 게시](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 이를 통해 헤드리스 게재에 이상적인 여러 위치/여러 채널에서 사용할 수 있는 컨텐츠를 준비할 수 있습니다.
+Adobe Experience Manager(AEM) as a Cloud Service으로 콘텐츠 조각을 사용하여 디자인, 만들기, 선별 및 제작 작업을 수행할 수 있습니다. [페이지에 영향을 받지 않는 콘텐츠 게시](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 이를 통해 Headless 게재에 이상적인, 여러 위치/여러 채널에서 사용할 준비가 된 콘텐츠를 준비할 수 있습니다.
 
 콘텐츠 조각에는 구조화된 콘텐츠가 포함되어 있습니다.
 
@@ -34,7 +34,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 
 >[!NOTE]
 >
->콘텐츠 조각은 **에셋**&#x200B;으로 저장됩니다. 이제 주로 **[컨텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** 콘솔에서 계속 관리할 수 있지만 **자산** 콘솔. 이 섹션에서는 **자산** 콘솔.
+>콘텐츠 조각은 **에셋**&#x200B;으로 저장됩니다. 이제 를 통해 주로 관리됩니다. **[컨텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** 콘솔에서 관리할 수 있습니다. **에셋** 콘솔. 이 섹션에서는 다음의 관리에 대해 설명합니다. **에셋** 콘솔.
 
 이 페이지 및 다음 페이지에서는 콘텐츠 조각 생성, 구성, 관리 및 사용을 위한 작업을 다룹니다.
 
@@ -45,7 +45,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) - 조각에 Markdown 구문 사용
 * [관련 콘텐츠 사용](/help/assets/content-fragments/content-fragments-assoc-content.md) - 관련 콘텐츠 추가
 * [메타데이터 - 조각 속성](/help/assets/content-fragments/content-fragments-metadata.md) - 조각 속성 보기 및 편집
-* 사용 [컨텐츠 조각을 GraphQL과 함께 사용하여 컨텐츠를 전달합니다](/help/assets/content-fragments/content-fragments-graphql.md) 을 사용하도록 선택할 수 있습니다. 이 작업에 도움이 되도록 미리 볼 수 있습니다 [JSON 출력](/help/assets/content-fragments/content-fragments-json-preview.md).
+* 사용 [컨텐츠 조각과 GraphQL, 컨텐츠 전달](/help/assets/content-fragments/content-fragments-graphql.md) 애플리케이션에 사용할 수 있습니다. 이를 위해 다음을 미리 볼 수 있습니다. [JSON 출력](/help/assets/content-fragments/content-fragments-json-preview.md).
 
 >[!NOTE]
 >

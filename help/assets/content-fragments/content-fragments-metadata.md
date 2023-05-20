@@ -1,8 +1,8 @@
 ---
-title: 메타데이터 - 조각 속성(자산 - 컨텐츠 조각)
+title: 메타데이터 - 조각 속성(자산 - 콘텐츠 조각)
 description: 콘텐츠 조각의 메타데이터 속성을 보고 편집하는 방법에 대해 알아봅니다.
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 87%
@@ -11,7 +11,7 @@ ht-degree: 87%
 
 # 메타데이터 - 조각 속성 {#metadata-fragment-properties}
 
-AEM에서 컨텐츠 조각에 대한 메타데이터 속성을 보고 편집하여 헤드리스 컨텐츠를 조정하는 방법을 참조하십시오.
+AEM에서 콘텐츠 조각에 대한 메타데이터 속성을 보고 편집하여 Headless 콘텐츠를 조정하는 방법을 참조하십시오.
 
 ## 속성/메타데이터 편집 {#editing-properties-meta-data}
 

@@ -105,7 +105,7 @@ AEM as a Cloud Service는 IMS를 사용하여 AEM과 나머지 Adobe Experience 
 
 ## 추가 리소스 {#additional-resources}
 
-다음은 온보딩 여정의 컨텐츠를 벗어나려면 추가 선택적 리소스입니다.
+다음은 온보딩 여정의 콘텐츠를 넘어서고자 하는 경우 선택할 수 있는 추가 리소스입니다.
 
 * [Admin Console 개요](https://helpx.adobe.com/kr/enterprise/using/admin-console.html) - Admin Console에 대한 포괄적인 개요
 * [Adobe ID 만들기 또는 업데이트](https://helpx.adobe.com/ca/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - Adobe ID를 만들고, 변경하고, 여러 Adobe ID를 관리하는 방법에 대해 알아봅니다.

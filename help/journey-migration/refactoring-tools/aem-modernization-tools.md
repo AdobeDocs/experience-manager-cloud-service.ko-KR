@@ -11,7 +11,7 @@ ht-degree: 77%
 
 # AEM 현대화 도구 {#aem-moderization-tools}
 
-AEM 현대화 도구는 레거시 AEM 기능을 AEM as a Cloud Service의 최신 및 지원되는 기능으로 변환하는 데 사용할 수 있는 유틸리티 세트를 제공합니다.
+AEM 현대화 도구는 이전 AEM 기능을 AEM as a Cloud Service의 현대적이고 지원되는 기능으로 변환하는 데 사용할 수 있는 유틸리티 제품군을 제공합니다.
 
 
 ## 소개 {#introduction}

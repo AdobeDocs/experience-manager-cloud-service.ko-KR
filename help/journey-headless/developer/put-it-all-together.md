@@ -3,7 +3,7 @@ title: 결합 방법 - AEM Headless의 앱과 콘텐츠
 description: 이 AEM Headless 개발자 여정의 부분에서는 콘텐츠 조각, GraphQL 호출, REST API 호출 및 애플리케이션 등 AEM 프로젝트를 가져와 실행을 준비하는 방법에 대해 알아봅니다.
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
 source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1069'
 ht-degree: 100%
 

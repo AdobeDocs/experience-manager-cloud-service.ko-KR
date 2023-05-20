@@ -3,7 +3,7 @@ title: CMS Headless 개발에 대해 알아보기
 description: 이 AEM Headless 개발자 여정의 부분에서는 Headless 기술과 이를 사용하는 이유에 대해 알아봅니다.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
 source-git-commit: 7ded4f891f5ab5c1562044772ea3304fc07b173e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 100%
 

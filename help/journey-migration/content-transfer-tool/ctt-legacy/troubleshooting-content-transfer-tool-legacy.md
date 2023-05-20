@@ -1,5 +1,5 @@
 ---
-title: 문제 해결 컨텐츠 전송 도구(이전)
+title: 컨텐츠 전송 도구 문제 해결(이전)
 description: 콘텐츠 전송 도구 문제 해결
 hide: true
 hidefromtoc: true
@@ -11,7 +11,7 @@ ht-degree: 94%
 
 ---
 
-# 문제 해결 컨텐츠 전송 도구(이전) {#troubleshoot-content-transfer-tool}
+# 컨텐츠 전송 도구 문제 해결(이전) {#troubleshoot-content-transfer-tool}
 
 
 ## Blob ID가 누락됨 {#missing-blobs}

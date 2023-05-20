@@ -1,23 +1,23 @@
 ---
 title: 관련 컨텐츠(자산 - 컨텐츠 조각)
-description: AEM 관련 컨텐츠 기능이 조각과 함께 자산을 선택적으로 사용할 수 있도록 연결을 제공하는 방법을 이해합니다.
+description: AEM 관련 콘텐츠 기능이 연결을 제공하여 조각과 함께 에셋을 선택적으로 사용할 수 있도록 하는 방법을 이해합니다.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
+source-git-commit: 737d4d56312b763a50c2dfad0ea51feb9dbf4dde
 workflow-type: tm+mt
 source-wordcount: '233'
-ht-degree: 55%
+ht-degree: 62%
 
 ---
 
 # 관련 콘텐츠{#associated-content}
 
-AEM 관련 컨텐츠 기능은 조각이 컨텐츠 페이지에 추가될 때 자산을 조각과 함께 필요에 따라 사용할 수 있도록 연결을 제공합니다. 따라서 헤드리스 컨텐츠를 [페이지에서 컨텐츠 조각을 사용할 때 액세스할 수 있는 다양한 자산 제공,](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) 를 사용하여 적절한 자산을 검색하는 데 필요한 시간을 줄일 수도 있습니다.
+AEM 관련 콘텐츠 기능은 조각이 콘텐츠 페이지에 추가될 때 에셋을 조각과 함께 선택적으로 사용할 수 있도록 연결을 제공합니다. Headless 콘텐츠 전달을 위한 유연성 제공 [페이지에서 콘텐츠 조각을 사용할 때 액세스할 수 있는 다양한 에셋 제공](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) 적절한 에셋을 검색하는 데 필요한 시간을 줄이는 데도 도움이 됩니다.
 
 ## 관련 콘텐츠 추가 {#adding-associated-content}
 
 >[!NOTE]
 >
->다음과 같은 여러 가지 방법을 추가합니다 [시각적 자산(예: 이미지)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) 를 눌러 조각 및/또는 페이지로 이동합니다.
+>[시각적 에셋(예: 이미지)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)을 조각 및/또는 페이지에 추가하는 다양한 방법이 있습니다.
 
 연결하려면 먼저 [미디어 에셋을 컬렉션에 추가](/help/assets/manage-collections.md)해야 합니다. 이러한 작업을 마치면 다음과 같은 작업을 수행할 수 있습니다.
 

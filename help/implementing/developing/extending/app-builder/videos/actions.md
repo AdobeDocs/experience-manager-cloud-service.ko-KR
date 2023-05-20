@@ -1,6 +1,6 @@
 ---
 title: App Builder 작업
-description: Adobe 런타임 작업 및 App Builder 응용 프로그램을 사용하는 방법에 대해 알아봅니다.
+description: Adobe 런타임 작업과 이 작업을 App Builder 응용 프로그램에서 사용하는 방법에 대해 알아봅니다.
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -20,19 +20,19 @@ ht-degree: 0%
 
 ## 작업 소개
 
-Adobe I/O Runtime, 작업 및 작업 만들기 방법에 대해 알아봅니다.
+Adobe I/O Runtime, 작업 및 작업을 만드는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339192/?quality=12&learn=on)
 
 ## 활성화, 시퀀스, 트리거 및 규칙
 
-활동, 웹 작업, 트리거 및 규칙과 관련된 작업을 알아봅니다.
+활성화, 웹 작업, 트리거 및 규칙과 관련된 작업을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339193/?quality=12&learn=on)
 
 ## App Builder 애플리케이션의 작업
 
-App Builder 응용 프로그램으로 사용할 수 있는 작업을 만드는 방법을 알아봅니다.
+App Builder 애플리케이션으로 사용할 수 있는 작업을 만드는 방법을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339194/?quality=12&learn=on)
 

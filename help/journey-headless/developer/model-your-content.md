@@ -3,7 +3,7 @@ title: 콘텐츠를 모델링하는 방법
 description: 이 AEM Headless 개발자 여정의 부분에서는 콘텐츠 조각 모델 및 콘텐츠 조각과 함께 콘텐츠 모델링을 사용하여 AEM Headless 게재에 콘텐츠를 모델링하는 방법에 대해 알아봅니다.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 100%
 

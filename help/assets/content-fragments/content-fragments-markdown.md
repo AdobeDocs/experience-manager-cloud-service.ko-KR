@@ -1,10 +1,10 @@
 ---
-title: Markdown(자산 - 컨텐츠 조각)
-description: 컨텐츠 조각 편집기에서 Markdown 구문을 사용하여 헤드리스 컨텐츠를 쉽게 만들 수 있는 방법을 이해합니다.
+title: Markdown(자산 - 콘텐츠 조각)
+description: 콘텐츠 조각 편집기에서 Markdown 구문을 사용하여 Headless 콘텐츠를 쉽게 만들 수 있는 방법을 이해합니다.
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: c15ef1cc9b14466105e5565c8ccc15120346f0f2
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 92%
@@ -13,7 +13,7 @@ ht-degree: 92%
 
 # Markdown {#markdown}
 
-있을 때 [작성](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), 컨텐츠 조각 편집기에서는 을 사용합니다 *markdown* 헤드리스 컨텐츠를 쉽게 작성할 수 있는 구문:
+다음과 같은 경우: [작성](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), 콘텐츠 조각 편집기는 *Markdown* headless 콘텐츠를 쉽게 작성할 수 있는 구문:
 
 ![Markdown 편집기](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
@@ -92,14 +92,14 @@ ht-degree: 92%
 구문은
 
 * 느낌표(!)를 포함합니다.;
-* 뒤에 이미지의 대체 특성 텍스트를 포함하는 대괄호 세트가 옵니다.
-* 뒤에 이미지의 URL 또는 경로를 포함하는 괄호 세트와, 큰따옴표나 작은따옴표로 묶인 선택적 제목 특성이 있습니다.
+* 뒤에 이미지의 대체 속성 텍스트를 포함하는 대괄호 세트가 옵니다.
+* 뒤에 이미지의 URL 또는 경로를 포함하는 괄호 세트와, 큰따옴표나 작은따옴표로 묶인 선택적 제목 속성이 있습니다.
 
 참조 스타일 이미지에는 다음 구문이 있습니다.
 
     `![Alt text][id]`
 
-여기서 &quot;id&quot;는 정의된 이미지 참조의 이름입니다. 이미지 참조는 링크 참조와 동일한 구문을 사용하여 정의됩니다.
+여기서 “id”는 정의된 이미지 참조의 이름입니다. 이미지 참조는 링크 참조와 동일한 구문을 사용하여 정의됩니다.
 
     `[id]: url/to/image "Optional title attribute"`
 

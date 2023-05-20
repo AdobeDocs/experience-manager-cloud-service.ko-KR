@@ -2,7 +2,7 @@
 title: 프로젝트 설정
 description: Maven을 사용하여 AEM 프로젝트를 빌드하는 방법과 자체 프로젝트를 만들 때 준수해야 하는 표준에 대해 알아봅니다.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 100%

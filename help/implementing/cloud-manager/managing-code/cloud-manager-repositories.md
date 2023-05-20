@@ -2,7 +2,7 @@
 title: Cloud Manager 저장소
 description: Cloud Manager에서 git 저장소를 생성, 확인 및 삭제하는 방법을 알아봅니다.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 100%

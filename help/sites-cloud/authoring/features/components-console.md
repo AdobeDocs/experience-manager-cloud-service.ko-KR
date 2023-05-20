@@ -5,7 +5,7 @@ exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '275'
-ht-degree: 100%
+ht-degree: 81%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 ### 구성 요소 세부 정보 {#component-details}
 
-특정 구성 요소에 대한 세부 사항을 보려면 필수 리소스를 탭하거나 클릭합니다. 세 탭에서 다음 정보를 제공합니다.
+특정 구성 요소에 대한 세부 정보를 보려면 필요한 리소스를 탭/클릭하십시오. 세 가지 탭은 다음을 제공합니다.
 
 * **속성**
 
@@ -39,9 +39,9 @@ ht-degree: 100%
 
    * 구성 요소의 일반 속성 확인
       * 구성 요소에 대해 아이콘이나 약어를 정의한 방법을 확인합니다. <!-- View how the [icon or abbreviation has been defined](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) for the component.-->
-      * 아이콘의 소스를 클릭하면 해당 구성 요소로 이동합니다.
-   * 구성 요소에 대한 **리소스 유형** 및 **리소스 슈퍼 유형**(정의된 경우) 확인
-      * [리소스 슈퍼 유형]을 클릭하면 해당 구성 요소로 이동합니다.
+      * 아이콘 소스를 클릭하면 해당 구성 요소로 이동합니다.
+   * 보기 **리소스 유형** 및 **리소스 슈퍼 유형** (정의된 경우).
+      * 리소스 수퍼 유형 을 클릭하면 해당 구성 요소로 이동합니다.
 
    >[!NOTE]
    >

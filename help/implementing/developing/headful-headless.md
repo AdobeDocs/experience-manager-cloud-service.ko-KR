@@ -3,7 +3,7 @@ title: AEM Headful 및 Headless
 description: AEM 프로젝트는 Headful 및 Headless model 모델에서 구현될 수 있지만 양자택일은 아닙니다. AEM은 하나의 프로젝트에서 두 모델의 장점을 모두 활용할 수 있는 유연성을 제공합니다.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 100%
 

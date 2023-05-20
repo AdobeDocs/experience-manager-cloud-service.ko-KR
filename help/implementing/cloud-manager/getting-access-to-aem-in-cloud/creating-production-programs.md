@@ -26,11 +26,11 @@ ht-degree: 82%
 
    ![Cloud Manager 랜딩 페이지](assets/log-in.png)
 
-1. 선택 **프로덕션에 대해 설정** 프로그램 만들기 마법사에서 프로덕션 프로그램을 만들고 프로그램 이름을 제공합니다.
+1. 선택 **프로덕션용 설정** 프로그램 만들기 마법사에서 프로덕션 프로그램을 만들고 프로그램 이름을 제공합니다.
 
    ![프로그램 만들기 마법사](assets/create-production-program.png)
 
-1. 원할 경우 이미지 파일을 로 끌어다 놓아 프로그램에 이미지를 추가할 수 있습니다 **프로그램 이미지 추가** 대상 또는 클릭하여 파일 브라우저에서 이미지를 선택합니다. **계속**&#x200B;을 탭하거나 클릭합니다.
+1. 원할 경우 이미지 파일을 로 드래그 앤 드롭하여 프로그램에 이미지를 추가할 수 있습니다. **프로그램 이미지 추가** 타겟팅하거나 클릭하여 파일 브라우저에서 이미지를 선택합니다. **계속**&#x200B;을 탭하거나 클릭합니다.
 
 1. 강화 보안 권한을 보유한 경우 **향상된 보안** 탭에서 프로덕션 프로그램에 **향상된 보안을 활성화**&#x200B;하는 옵션이 제공됩니다. 필요한 경우 향상된 보안을 활성화하는 옵션을 선택하고 **계속**&#x200B;을 탭하거나 클릭합니다.
 
@@ -41,7 +41,7 @@ ht-degree: 82%
 
 1. **솔루션 및 추가 기능** 탭에서 프로그램에 포함할 솔루션을 선택합니다.
 
-   * 사용 가능한 다양한 솔루션에 대해 하나 이상의 프로그램이 필요한지 확실하지 않은 경우 가장 관심이 많은 프로그램을 선택하십시오. 다음 방법으로 추가 솔루션을 활성화할 수 있습니다. [프로그램 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) 나중에. 자세한 내용은 [프로덕션 프로그램 소개 문서](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) 추가 프로그램 설정 권장 사항
+   * 사용 가능한 다양한 솔루션에 대해 하나 이상의 프로그램이 필요한지 확실하지 않은 경우 가장 관심 있는 프로그램을 선택하십시오. 다음을 수행하여 추가 솔루션을 활성화할 수 있습니다. [프로그램 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) 나중에. 다음을 참조하십시오. [프로덕션 프로그램 소개 문서](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) 추가 프로그램 설정 권장 사항.
    * 이전에 **향상된 보안 활성화**&#x200B;를 선택한 경우 HIPAA 권한을 사용할 수 있는 만큼의 솔루션만 선택할 수 있습니다.
 
    ![솔루션 선택](assets/setup-prod-select.png)

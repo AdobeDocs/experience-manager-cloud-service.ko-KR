@@ -7,7 +7,7 @@ exl-id: 03449606-0fb4-4a9f-9abb-6b17c27a6046
 source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
 workflow-type: tm+mt
 source-wordcount: '1476'
-ht-degree: 14%
+ht-degree: 15%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 14%
 
 컨텐츠 전송 도구를 사용하기 위한 지침과 우수 사례를 이해하려면 아래 섹션을 따르십시오.
 
-* 실행 [개정 정리](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) 및 [데이터 저장소 일관성 검사](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=en) 다음에 있음 **소스** 잠재적인 문제를 식별하고 저장소의 크기를 줄일 수 있습니다.
+* 실행 [개정 정리](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) 및 [데이터 저장소 일관성 검사](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=ko) 다음에 있음 **소스** 잠재적인 문제를 식별하고 저장소의 크기를 줄일 수 있습니다.
 
 * AEM Cloud Author 콘텐츠 전달 네트워크(CDN) 구성이 IP 허용 목록을 포함하도록 구성된 경우 소스 환경 IP도 허용 목록에 추가하다에 추가되었는지 확인하십시오. 이렇게 하면 소스 환경과 AEM Cloud 환경이 서로 통신할 수 있습니다.
 

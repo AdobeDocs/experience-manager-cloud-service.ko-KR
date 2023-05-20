@@ -126,4 +126,4 @@ AEM 빠른 사이트 생성 여정의 한 부분을 완료했으므로,
 * [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Cloud Manager의 기능에 대해 자세히 알아보려면 바로 심화 기술 문서를 참조할 수 있습니다.
 * [역할 기반 권한](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager에는 적절한 권한이 있는 미리 구성된 역할이 있습니다. 이러한 역할 및 이를 관리하는 방법에 대한 자세한 내용은 이 문서를 참조하십시오.
 * [npm](https://www.npmjs.com) - 사이트를 간편하게 구축하기 위해 사용하는 AEM 테마는 npm을 기반으로 합니다.
-* [Webpack](https://webpack.js.org) - 사이트를 간편하게 구축하기 위해 사용하는 AEM 테마는 Webpack을 사용합니다.
+* [Webpack](https://webpack.js.org) - 사이트를 간편하게 빌드하기 위해 사용하는 AEM 테마는 Webpack을 사용합니다.

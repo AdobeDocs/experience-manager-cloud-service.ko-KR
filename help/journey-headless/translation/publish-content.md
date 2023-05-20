@@ -3,7 +3,7 @@ title: 번역된 Headless 콘텐츠 게시
 description: 번역된 콘텐츠를 게시하고 콘텐츠가 업데이트될 때 번역을 업데이트하는 방법에 대해 알아봅니다.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 100%
 

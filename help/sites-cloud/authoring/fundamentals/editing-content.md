@@ -2,10 +2,10 @@
 title: 페이지 콘텐츠 편집
 description: 페이지를 생성하면 콘텐츠를 편집하여 필요한 업데이트를 수행할 수 있습니다.
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 2bfabfc2c12faf6f813ecd5b11b289117724d9ec
-workflow-type: ht
+source-git-commit: 81d58f25af8b023774ce8653154597d92a7ac70b
+workflow-type: tm+mt
 source-wordcount: '3019'
-ht-degree: 100%
+ht-degree: 79%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 100%
 
 ![페이지 도구 모음](/help/sites-cloud/authoring/assets/editing-page-toolbar.png)
 
-도구 모음은 다양한 옵션에 대한 액세스를 제공합니다. 현재 컨텍스트 및 구성에 따라 일부 옵션을 사용하지 못할 수 있습니다.
+도구 모음에서는 다양한 옵션에 액세스할 수 있습니다. 현재 컨텍스트 및 구성에 따라 일부 옵션을 사용할 수 없을 수도 있습니다.
 
 * **사이드 패널 전환**
 
@@ -48,7 +48,7 @@ ht-degree: 100%
 
 * **페이지 정보**
 
-   페이지 정보 보기 및 편집, 페이지 속성 보기, 페이지 게시/게시 취소를 포함하여 페이지에서 수행할 수 있는 페이지 정보 및 작업 등과 같은 [페이지 정보](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) 메뉴에 대한 액세스를 제공합니다.
+   에 대한 액세스 권한 제공 [페이지 정보](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) 메뉴(페이지 세부 사항 및 페이지 정보 보기 및 편집, 페이지 속성 보기, 페이지 게시/게시 취소 등 페이지에서 수행할 수 있는 작업 포함).
 
    ![페이지 정보 버튼](/help/sites-cloud/authoring/assets/page-information-icon.png)
 
@@ -66,7 +66,7 @@ ht-degree: 100%
 
 * **페이지 제목**
 
-   정보 제공용입니다.
+   이는 순전히 정보 제공용입니다.
 
    ![페이지 제목](/help/sites-cloud/authoring/assets/page-title.png)
 
@@ -78,13 +78,13 @@ ht-degree: 100%
 
 * **미리보기**
 
-   [미리보기 모드](#preview-mode)를 활성화합니다. 게시될 때 나타나는 페이지가 표시됩니다.
+   [미리보기 모드](#preview-mode)를 활성화합니다. 이렇게 하면 페이지가 게시될 때 표시되는 것과 같이 표시됩니다.
 
    ![미리보기 버튼](/help/sites-cloud/authoring/assets/preview.png)
 
 * **주석**
 
-   페이지를 검토할 때 페이지에 [주석](/help/sites-cloud/authoring/fundamentals/annotations.md)을 추가할 수 있습니다. 첫 번째 주석 다음에 아이콘이 숫자로 전환하여 페이지에 있는 주석의 수를 가리킵니다.
+   다음을 추가할 수 있습니다. [주석](/help/sites-cloud/authoring/fundamentals/annotations.md) 페이지를 검토할 때 페이지로 이동합니다. 첫 번째 주석 다음에 아이콘은 페이지의 주석 수를 나타내는 숫자로 전환됩니다.
 
    ![주석 버튼](/help/sites-cloud/authoring/assets/annotations.png)
 
@@ -114,7 +114,7 @@ ht-degree: 100%
 
 구성 요소 플레이스홀더는 구성 요소를 놓을 때 배치될 위치를 보여 주는 표시기입니다(현재 마우스로 가리키고 있는 구성 요소 위에 있음).
 
-* 페이지에 새 구성 요소를 추가할 때(구성 요소 브라우저로부터 끌기):
+* 페이지에 새 구성 요소를 추가할 때(구성 요소 브라우저에서 드래그):
 
    ![페이지에 새 구성 요소를 추가할 때의 플레이스홀더](/help/sites-cloud/authoring/assets/editing-component-placeholder.png)
 
@@ -131,11 +131,11 @@ ht-degree: 100%
 1. 페이지가 [**편집** 모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)인지 확인합니다.
 1. [구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)를 엽니다.
 1. 필요한 구성 요소를 [필요한 위치](#component-placeholder)로 드래그합니다.
-1. 구성 요소를 [편집합니다.](#edit-content)
+1. [편집](#edit-content) 구성 요소.
 
 >[!NOTE]
 >
->모바일 디바이스에서 구성 요소 브라우저가 전체 화면을 채웁니다. 구성 요소를 드래그하면 브라우저가 닫히고 구성 요소를 배치할 수 있도록 페이지가 다시 표시됩니다.
+>모바일 디바이스에서 구성 요소 브라우저가 전체 화면을 채웁니다. 구성 요소를 드래그하기 시작하면 브라우저가 닫히고 구성 요소를 배치할 수 있도록 페이지가 다시 표시됩니다.
 
 ### 단락 시스템에서 구성 요소 삽입 {#inserting-a-component-from-the-paragraph-system}
 
@@ -144,7 +144,7 @@ ht-degree: 100%
 1. 페이지가 [**편집** 모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)인지 확인합니다.
 1. 단락 시스템에서 새 구성 요소를 선택하고 추가하는 두 가지 방법이 있습니다.
 
-   * 기존 구성 요소의 도구 모음 또는 **구성 요소를 여기로 드래그하십시오.** 상자에서 **구성 요소 삽입** 옵션(+)을 선택합니다.
+   * 다음 항목 선택 **구성 요소 삽입** 기존 구성 요소의 도구 모음 또는 **여기에 구성 요소 드래그** 상자.
 
       ![구성 요소 삽입](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
@@ -154,7 +154,7 @@ ht-degree: 100%
 
       ![새 구성 요소 삽입 대화 상자](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
-1. 선택한 구성 요소가 페이지 아래쪽에 추가됩니다. 필요에 따라 구성 요소를 [편집합니다.](#edit-content)
+1. 선택한 구성 요소가 페이지 하단에 추가됩니다. [편집](#edit-content) 필요한 구성 요소입니다.
 
 ### 에셋 브라우저를 사용하여 구성 요소 삽입 {#inserting-a-component-using-the-assets-browser}
 
@@ -170,7 +170,7 @@ ht-degree: 100%
 
    에셋 유형에 적절한 구성 요소가 필요한 위치에 만들어지게 됩니다. 여기에 선택한 에셋이 포함됩니다.
 
-1. 필요할 경우 구성 요소를 [편집합니다.](#edit-content)
+1. [편집](#edit-content) 필요한 경우 구성 요소입니다.
 
 >[!NOTE]
 >
@@ -202,34 +202,34 @@ ht-degree: 100%
 
 * **복사**
 
-   그러면 구성 요소가 클립보드로 복사됩니다. 붙여넣기 작업 후에도 원래 구성 요소는 여전히 유지됩니다.
+   구성 요소가 클립보드에 복사됩니다. 붙여넣기 작업 후에는 원래 구성 요소가 유지됩니다.
 
    ![복사 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-copy.png)
 
 * **잘라내기**
 
-   그러면 구성 요소가 클립보드로 복사됩니다. 붙여넣기 작업 후 원래 구성 요소는 제거됩니다.
+   구성 요소가 클립보드에 복사됩니다. 붙여넣기 작업 후 원래 구성 요소가 제거됩니다.
 
    ![잘라내기 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-cut.png)
 
 * **삭제**
 
-   확인과 함께 페이지에서 구성 요소가 삭제됩니다.
+   이 경우 확인 표시가 있는 페이지에서 구성 요소가 삭제됩니다.
 
    ![삭제 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-delete.png)
 
 * **구성 요소 삽입**
 
-   대화 상자가 열려 [새 구성 요소를 추가](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-from-the-paragraph-system)할 수 있습니다.
+   그러면 대화 상자가 열립니다 [새 구성 요소 추가](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-from-the-paragraph-system).
 
    ![삽입 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-insert.png)
 
 * **붙여넣기**
 
-   구성 요소를 클립보드에서 페이지로 붙여넣게 됩니다. 원본이 유지되는지 여부는 사용한 것이 복사인지 잘라내기인지에 따라 다릅니다.
+   구성 요소를 클립보드에서 페이지로 붙여넣게 됩니다. 원본이 남아 있는지 여부는 복사 또는 잘라내기 중 어느 것을 사용했는지 여부에 따라 달라집니다.
 
-   * 같은 페이지나 다른 페이지에 붙여넣을 수 있습니다.
-   * 붙여넣은 항목은 붙여넣기 작업을 선택한 항목 위에 붙여넣게 됩니다.
+   * 동일한 페이지나 다른 페이지에 붙여넣을 수 있습니다.
+   * 붙여넣은 항목은 붙여넣기 작업을 선택한 항목 위에 붙여넣습니다.
    * 클립보드에 콘텐츠가 있는 경우에만 붙여넣기 작업이 표시됩니다.
 
    ![붙여넣기 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
@@ -252,7 +252,7 @@ ht-degree: 100%
 
 * **레이아웃**
 
-   이렇게 하면 선택한 구성 요소의 [레이아웃](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)을 수정할 수 있습니다. 선택한 구성 요소에만 적용되며 전체 페이지의 [레이아웃 모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)는 활성화하지 않습니다.
+   이를 통해 다음을 수정할 수 있습니다. [레이아웃](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) 선택한 구성 요소. 이 기능은 선택한 구성 요소에만 적용되며 [레이아웃 모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 전체 페이지.
 
    ![레이아웃 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
@@ -273,7 +273,7 @@ ht-degree: 100%
 
 [구성 요소 도구 모음의 편집(연필) 아이콘](#component-toolbar)을 사용하여 콘텐츠를 편집할 구성 요소를 열 수 있습니다.
 
-정확한 편집 옵션은 구성 요소에 따라 다릅니다. 일부 구성 요소의 경우 [모든 작업이 전체 화면 모드에서만 사용](#edit-content-full-screen-mode)할 수 있습니다. 예:
+정확한 편집 옵션은 구성 요소에 따라 다릅니다. 일부 구성 요소의 경우 [모든 작업은 전체 화면 모드에서만 사용할 수 있습니다.](#edit-content-full-screen-mode). 예:
 
 * 텍스트 구성 요소
 
@@ -319,7 +319,7 @@ ht-degree: 100%
 
 단락 구성 요소 이동
 
-1. 탭한 상태나 클릭한 상태로 유지하여 이동할 단락을 선택합니다.
+1. 탭한 상태로 유지하거나 클릭앤한 상태로 유지할 단락을 선택합니다.
 1. 단락을 새 위치로 드래그합니다. AEM에서 단락을 둘 수 있는 위치를 보여 줍니다. 단락을 원하는 위치에 놓습니다.
 
    ![구성 요소 이동](/help/sites-cloud/authoring/assets/editing-moving-component.png)
@@ -342,9 +342,9 @@ ht-degree: 100%
 
    ![구성 요소 도구 모음의 레이아웃 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
-1. 레이아웃 작업이 선택되면 다음과 같습니다.
+1. 레이아웃 작업을 선택하면 다음 작업을 수행합니다.
 
-   * 구성 요소 표시의 크기 조정 핸들이 표시됩니다.
+   * 컴포넌트 디스플레이의 크기 조정 핸들.
    * 에뮬레이터 도구 모음이 화면 맨 위에 표시됩니다.
    * 표준 편집 작업 대신 레이아웃 작업이 구성 요소 도구 모음에 표시됩니다.
 
@@ -360,7 +360,7 @@ ht-degree: 100%
 >
 >레이아웃 작업은 선택한 구성 요소의 범위로 제한됩니다. 예를 들어 한 구성 요소의 레이아웃을 편집한 다음 다른 구성 요소를 클릭하면 에뮬레이터 도구 모음이 사라질 뿐 아니라 새롭게 선택한 구성 요소와 크기 조정 핸들에 대해 표준 편집 도구 모음(레이아웃 도구 모음이 아님)이 표시됩니다.
 >
->여러 구성 요소에 영향을 미치는 페이지의 전체 레이아웃을 편집해야 하는 경우 [레이아웃 모드](/help/sites-cloud/authoring/features/responsive-layout.md)로 전환하십시오.
+>여러 구성 요소에 영향을 주면서 페이지의 전체 레이아웃을 편집해야 하는 경우 [레이아웃 모드](/help/sites-cloud/authoring/features/responsive-layout.md).
 
 ## 상속된 구성 요소 {#inherited-components}
 
@@ -395,7 +395,7 @@ ht-degree: 100%
 
 ## Live Copy 상태 {#live-copy-status}
 
-[Live Copy 상태 페이지 모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)를 사용하면 live copy 상태와 상속되었거나 상속되지 않은 구성 요소에 대한 간단한 개요를 알 수 있습니다.
+다음 [라이브 카피 상태 페이지 모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 라이브 카피 상태 및 상속되지 않은 구성 요소에 대한 간략한 개요를 제공합니다.
 
 * 녹색 테두리: 상속됨
 * 분홍색 테두리: 상속이 취소되었습니다.
@@ -406,7 +406,7 @@ ht-degree: 100%
 
 ## 주석 추가 {#adding-annotations}
 
-[주석](/help/sites-cloud/authoring/fundamentals/annotations.md)을 사용하면 검토자와 다른 작성자가 콘텐츠에 대한 피드백을 제공할 수 있습니다. 검토 및 유효성 검사 목적으로도 종종 사용됩니다.
+[주석](/help/sites-cloud/authoring/fundamentals/annotations.md)을 사용하면 검토자와 다른 작성자가 콘텐츠에 대한 피드백을 제공할 수 있습니다. 이러한 지표는 종종 검토 및 유효성 검사 목적으로 사용됩니다.
 
 ## 페이지 미리보기 {#previewing-pages}
 
@@ -440,24 +440,24 @@ ht-degree: 100%
 
 ### 게시됨으로 보기 {#view-as-published}
 
-**게시됨으로 보기** 옵션은 [페이지 정보](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) 메뉴에서 사용할 수 있습니다. 이 옵션은 새 탭에 페이지를 열고, 콘텐츠를 새로 고치고, 게시 환경에 표시되는 대로 페이지를 표시합니다.
+다음 **게시됨으로 보기** 옵션은 다음 위치에서 사용할 수 있습니다. [페이지 정보](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) 메뉴 아래의 제품에서 사용할 수 있습니다. 이 옵션은 새 탭에 페이지를 열고, 콘텐츠를 새로 고치고, 게시 환경에 표시되는 대로 페이지를 표시합니다.
 
 ## 페이지 잠금 {#locking-a-page}
 
 AEM에서는 다른 사람이 콘텐츠를 수정할 수 없도록 페이지를 잠글 수 있습니다. 이 기능은 하나의 특정 페이지에 여러 편집 작업을 수행하거나 잠시 동안 페이지를 동결해야 할 때 유용합니다.
 
-페이지는 다음 중 하나에서 잠글 수 있습니다.
+다음 중 하나에서 페이지를 잠글 수 있습니다.
 
 * **사이트** 콘솔
 
-   1. [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)로 페이지를 선택합니다.
+   1. 다음을 사용하여 페이지 선택 [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
    1. 잠금 아이콘을 선택합니다.
 
       ![잠금 버튼](/help/sites-cloud/authoring/assets/lock.png)
 
 * **페이지 편집기**
 
-   1. **페이지 정보**&#x200B;아이콘을 선택하여 메뉴를 엽니다.
+   1. 다음 항목 선택 **페이지 정보** 아이콘을 클릭하여 메뉴를 엽니다.
    1. **페이지 잠금** 옵션을 선택합니다.
 
 페이지가 잠기면 콘솔 보기 정보가 업데이트되며, 편집 시에는 잠금 기호가 도구 모음에 표시됩니다.
@@ -526,20 +526,20 @@ AEM에는 사용자가 수행한 작업 내역이 순서대로 저장됩니다. 
 
 예를 들어 다음 작업을 수행할 수 있습니다.
 
-* 실행 취소를 사용한 후 페이지를 편집하지 않은 경우 작업을 재실행합니다.
-* 최대 20개의 편집 작업 실행을 취소합니다(기본 설정).
-* 실행 취소 및 재실행용 [키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)를 사용합니다.
+* 실행 취소를 사용한 이후 페이지 편집을 하지 않은 한 작업을 재실행합니다.
+* 최대 20개의 편집 작업을 실행 취소합니다(기본 설정).
+* 사용 [키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) 실행 취소 및 다시 실행의 경우.
 
-다음과 같은 유형의 페이지 변경을 취소하거나 재실행할 수 있습니다.
+다음 유형의 페이지 변경 사항에 대해 실행 취소 및 재실행을 사용할 수 있습니다.
 
-* 단락 추가, 편집, 삭제 및 이동
-* 단락 내용 즉석 편집
-* 페이지 내 항목 복사, 잘라내기 및 붙여넣기
+* 단락 추가, 편집, 제거 및 이동
+* 단락 콘텐츠 즉석 편집
+* 페이지 내에서 항목 복사, 잘라내기 및 붙여넣기
 
 >[!NOTE]
 >
 >* 파일 및 이미지 변경을 취소하거나 재실행하려면 특수 권한이 필요합니다.
->* 파일 및 이미지 변경의 실행 취소 내역은 최소 10시간 동안 유지됩니다. 이 시간이 지나면 변경을 취소하지 못할 수 있습니다. 관리자는 기본 시간인 10시간을 변경할 수 있습니다.
+>* 파일과 이미지에 대한 변경 내역은 최소 10시간 동안 지속됩니다. 그러나 이 시간 이후에는 변경 사항의 실행 취소가 보장되지 않습니다. 관리자는 기본 시간인 10시간을 변경할 수 있습니다.
 >* 시스템 관리자는 인스턴스에 대한 요구 사항에 따라 실행 취소/재실행 기능의 다양한 측면을 구성할 수 있습니다.
+   <!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->
 
-<!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->

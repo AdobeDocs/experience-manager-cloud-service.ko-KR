@@ -49,7 +49,7 @@ AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 C
 
 1. 기본 제공 색인. 예: `/oak:index/cqPageLucene-2`
 1. 기본 제공 색인의 사용자 정의. 이러한 사용자 정의는 고객이 정의합니다. 예: `/oak:index/cqPageLucene-2-custom-1`
-1. 완전히 맞춤화된 색인. 예: `/oak:index/acme.product-1-custom-2`. 이름 지정 충돌을 피하려면 전체 사용자 지정 인덱스에 접두사가 있어야 합니다(예: `acme.`
+1. 완전히 맞춤화된 색인. 예: `/oak:index/acme.product-1-custom-2`. 이름 지정에서 충돌하지 않도록 완전히 맞춤화된 색인에는 접두사(예: )를 사용해야 합니다. `acme.`
 
 기본 제공 색인의 사용자 정의와 완전히 맞춤화된 색인에는 모두 `-custom-`이 포함되어야 합니다. 완전히 맞춤화된 색인만 접두사로 시작합니다.
 
@@ -83,7 +83,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 * 인덱스 정의 자체(예: `/oak:index/ntBaseLucene-custom-1`)
 
-사용자 정의 인덱스 또는 맞춤화된 인덱스를 배포하려면 Git 및 Cloud Manager 배포 프로세스를 통해 `ui.apps`를 통해 인덱스 정의(`/oak:index/definitionname`)를 전달해야 합니다. 예를 들어, FileVault 필터에서 `ui.apps/src/main/content/META-INF/vault/filter.xml`, 각 사용자 지정 및 사용자 지정 인덱스를 개별적으로 나열하십시오(예: ) `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. 이렇게 하면 사용자 정의/맞춤화된 인덱스 정의 자체가 다음과 같이 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml` 파일에 저장됩니다.
+사용자 정의 인덱스 또는 맞춤화된 인덱스를 배포하려면 Git 및 Cloud Manager 배포 프로세스를 통해 `ui.apps`를 통해 인덱스 정의(`/oak:index/definitionname`)를 전달해야 합니다. FileVault 필터(예: `ui.apps/src/main/content/META-INF/vault/filter.xml`, 각 사용자 정의 인덱스 및 맞춤화된 인덱스를 개별적으로 나열합니다. 예를 들면 다음과 같습니다 `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. 이렇게 하면 사용자 정의/맞춤화된 인덱스 정의 자체가 다음과 같이 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml` 파일에 저장됩니다.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -147,16 +147,16 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ### 메모
 
-파일 유효성 검사에서 다음 오류를 확인한 경우 <br>
+Filevault 유효성 검사에서 다음 오류가 발생하는 경우 <br>
 `[ERROR] ValidationViolation: "jackrabbit-nodetypes: Mandatory child node missing: jcr:content [nt:base] inside node with types [nt:file]"` <br>
-그러면 다음 단계 중 하나를 수행하여 문제를 해결할 수 있습니다. <br>
-1. 파일을 버전 1.0.4로 다운그레이드하고 다음을 최상위 pom에 추가합니다.
+그런 다음 다음 다음 단계를 수행하여 문제를 해결할 수 있습니다. - <br>
+1. filevault를 버전 1.0.4로 다운그레이드하고 다음을 최상위 pom에 추가합니다.
 
 ```xml
 <allowIndexDefinitions>true</allowIndexDefinitions>
 ```
 
-다음은 pom에서 위의 구성을 배치할 위치의 예입니다.
+다음은 pom에서 위 구성을 배치할 위치에 대한 예입니다.
 
 ```xml
 <plugin>
@@ -178,13 +178,13 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 </plugin>
 ```
 
-1. nodetype 유효성 검사를 비활성화합니다. filerabbit 플러그인 구성의 jackrabbit-nodetypes 섹션에서 다음 속성을 설정합니다.
+1. 노드 유형 유효성 검사를 비활성화합니다. filevault 플러그인 구성의 jackrabbit-nodetypes 섹션에서 다음 속성을 설정합니다.
 
 ```xml
 <isDisabled>true</isDisabled>
 ```
 
-다음은 pom에서 위의 구성을 배치할 위치의 예입니다.
+다음은 pom에서 위 구성을 배치할 위치에 대한 예입니다.
 
 ```xml
 <plugin>
@@ -272,11 +272,11 @@ Adobe에서 “damAssetLucene” 또는 “cqPageLucene” 같은 기본 제공 
 
 ### 현재 제한 사항 {#current-limitations}
 
-인덱스 관리는 현재 유형 인덱스의 경우에만 지원됩니다 `lucene`, 사용 `compatVersion` 설정 `2`. 내부적으로 다른 인덱스를 구성하여 쿼리에 사용할 수 있습니다(예: Elasticsearch 인덱스). 에 대해 작성된 쿼리 `damAssetLucene` 인덱스는 AEM as a Cloud Service에서 실제로 이 인덱스의 Elasticsearch 버전에 대해 실행될 수 있습니다. 이러한 차이는 응용 프로그램 최종 사용자에게 표시되지 않지만 `explain` 기능이 다른 인덱스를 보고합니다. Lucene과 Elasticsearch 인덱스 간의 차이에 대해서는 [Apache Jackrabbit Oak의 Elasticsearch 설명서](https://jackrabbit.apache.org/oak/docs/query/elastic.html). 고객은 Elasticsearch 인덱스를 직접 구성할 필요가 없고 구성할 필요가 없습니다.
+현재 색인 관리는 색인 유형만 지원됩니다. `lucene`, 포함 `compatVersion` 을 로 설정 `2`. 내부적으로 다른 색인을 구성하고 쿼리에 사용할 수 있습니다(예: Elasticsearch 색인). 다음에 대해 작성된 쿼리 `damAssetLucene` 색인은 AEM에서 as a Cloud Service으로 실행될 수 있으며 실제로 이 색인의 Elasticsearch 버전에 대해 실행됩니다. 애플리케이션 최종 사용자는 이러한 차이점을 볼 수 없지만, `explain` 기능이 다른 색인을 보고합니다. Lucene 색인과 Elasticsearch 색인의 차이에 대해서는 다음을 참조하십시오. [apache Jackrabbit Oak의 Elasticsearch 설명서](https://jackrabbit.apache.org/oak/docs/query/elastic.html). 고객은 Elasticsearch 색인을 직접 구성할 수 없으며 구성할 필요가 없습니다.
 
-내장된 분석기만 지원됩니다(즉, 제품과 함께 제공된 분석기만 지원). 사용자 정의 분석기는 지원되지 않습니다.
+기본 제공 분석기 (즉, 제품과 함께 제공되는 분석기)만 지원됩니다. 사용자 정의 분석기는 지원되지 않습니다.
 
-최상의 운영 성능을 위해 인덱스가 지나치게 크지 않아야 합니다. 모든 인덱스의 총 크기는 가이드로 사용할 수 있습니다. 사용자 정의 인덱스가 추가되고 개발 환경에서 표준 인덱스가 조정된 후 이 값이 100% 이상 증가하면 사용자 지정 인덱스 정의를 조정해야 합니다. AEM as a Cloud Service은 시스템 안정성 및 성능에 부정적인 영향을 주는 인덱스의 배포를 방지할 수 있습니다.
+최상의 운영 성능을 위해서는 인덱스가 너무 커서는 안 됩니다. 모든 인덱스의 총 크기를 안내서로 사용할 수 있습니다. 사용자 정의 인덱스가 추가되고 개발 환경에서 표준 인덱스가 조정된 후 이 크기가 100% 이상 증가하면 사용자 정의 인덱스 정의를 조정해야 합니다. AEM as a Cloud Service으로 인해 시스템 안정성과 성능에 부정적인 영향을 주는 인덱스가 배포되지 않을 수 있습니다.
 
 ### 색인 추가 {#adding-an-index}
 

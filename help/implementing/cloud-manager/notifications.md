@@ -2,7 +2,7 @@
 title: 알림
 description: Adobe Experience Cloud 알림 시스템을 사용하여 파이프라인 배포에 대한 정보를 수신하는 방법을 알아봅니다.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: 451b5a089645004c58c2674fd1fb13afbe1201cf
+source-git-commit: 6f390df560e9eeb76a8c4f1904e500aa5ed2bd65
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 92%
@@ -16,9 +16,9 @@ Cloud Manager가 중요한 이벤트를 알리는 방법에 대해 알아보십�
 
 ## Cloud Manager의 알림 {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager] 프로덕션 배포가 시작될 때 프로덕션 파이프라인이 시작되고 완료(성공 또는 실패)되면 알림을 보냅니다.
+[!UICONTROL Cloud Manager] 는 프로덕션 파이프라인이 시작되고(성공 또는 실패) 프로덕션 배포를 시작할 때 알림을 보냅니다.
 
-이러한 알림은 을 통해 전송됩니다 [!UICONTROL Experience Cloud] 알림 시스템 **비즈니스 소유자**, **프로그램 관리자**, 및 **배포 관리자** 역할.
+이러한 알림은 [!UICONTROL Experience Cloud] 에서 사용자에게 알림 시스템 **비즈니스 소유자**, **프로그램 관리자**, 및 **배포 관리자** 역할.
 
 알림은 [!UICONTROL Cloud Manager] 내 사이드바와 Adobe [!UICONTROL Experience Cloud] 전체에 나타납니다. 새 알림이 있을 때 헤더의 벨 아이콘에 배지가 표시됩니다.
 

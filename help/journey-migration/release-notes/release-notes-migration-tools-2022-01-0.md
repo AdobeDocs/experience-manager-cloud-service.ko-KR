@@ -1,6 +1,6 @@
 ---
-title: AEM as a Cloud Service 릴리스 2022.1.0의 마이그레이션 도구에 대한 릴리스 노트
-description: AEM as a Cloud Service 릴리스 2022.1.0의 마이그레이션 도구에 대한 릴리스 노트
+title: AEM as a Cloud Service 릴리스 2022.1.0의 마이그레이션 도구 릴리스 정보
+description: AEM as a Cloud Service 릴리스 2022.1.0의 마이그레이션 도구 릴리스 정보
 feature: Release Information
 exl-id: cbd0c316-bda3-48fb-89d6-a8f97bad1970
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
@@ -10,20 +10,20 @@ ht-degree: 6%
 
 ---
 
-# AEM as a Cloud Service 릴리스 2022.1.0의 마이그레이션 도구에 대한 릴리스 노트 {#release-notes}
+# AEM as a Cloud Service 릴리스 2022.1.0의 마이그레이션 도구 릴리스 정보 {#release-notes}
 
-이 페이지에서는 AEM as a Cloud Service 2022.1.0의 마이그레이션 도구에 대한 릴리스 노트를 간략하게 설명합니다.
+이 페이지에서는 AEM as a Cloud Service 2022.1.0의 마이그레이션 도구 릴리스 정보에 대해 간략히 설명합니다.
 
 ## 콘텐츠 전송 도구 {#ctt-release}
 
 ### 릴리스 날짜 {#release-date-ctt}
 
-컨텐츠 전송 도구 v1.7.18의 릴리스 날짜는 2022년 1월 18일입니다.
+콘텐츠 전송 도구 v1.7.18의 릴리스 날짜는 2022년 1월 18일입니다.
 
 ### 새로운 기능 {#what-is-new-ctt}
 
-* 사용자가 비활성화할 수 있도록 컨텐츠 전송 도구에서 추출 단계에 추가됨 전환 [사전 복사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 추출 중에 최적의 추출 속도를 위해 작은 마이그레이션 세트에 대해 또는 마지막 추출 이후 몇 개의 블롭만 추가한 경우 추출 중에 사전 복사를 비활성화해야 합니다.
+* 사용자가 비활성화할 수 있도록 콘텐츠 전송 도구 의 추출 단계에 추가된 토글 [사전 복사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 추출 중. 추출 속도를 최적화하려면 작은 마이그레이션 세트에 대해 추출 중 사전 복사를 비활성화하거나 마지막 추출 이후 몇 개의 블롭만 추가된 경우 비활성화해야 합니다.
 
 ### 버그 수정 {#bug-fixes-ctt}
 
-* 추출 중에 실행 시간 초과를 줄이기 위해 기본 구성이 업데이트되었습니다.
+* 추출 중 실행 시간 초과를 줄이기 위해 기본 구성이 업데이트되었습니다.

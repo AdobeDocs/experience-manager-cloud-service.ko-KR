@@ -1,13 +1,13 @@
 ---
 title: 속성 및 유형
 description: Universal Editor에 필요한 데이터 속성 및 유형에 대해 알아봅니다.
-source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
+exl-id: 02795a31-244a-42b4-8297-2649125d7777
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 100%
 
 ---
-
 
 # 속성 및 유형 {#attributes-types}
 

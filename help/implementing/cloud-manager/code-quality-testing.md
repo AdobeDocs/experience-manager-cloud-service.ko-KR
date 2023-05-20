@@ -2,7 +2,7 @@
 title: 코드 품질 테스트
 description: 파이프라인의 코드 품질 테스트가 어떻게 작동하고 배포 품질을 어떻게 개선할 수 있는지 알아봅니다.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
+source-git-commit: ae586cc2f576aa4aee4cc611b5184e2bbda6696c
 workflow-type: tm+mt
 source-wordcount: '1176'
 ht-degree: 100%
@@ -114,7 +114,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 * `all/myco-all-1.0.0-SNAPSHOT.zip` (content-package)
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (skipped-content-package)
-* `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (건너뛴-content-package)
+* `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (skipped-content-package)
 
 `myco-all-1.0.0-SNAPSHOT.zip` 내에 있는 항목만 건너뛴 두 개의 콘텐츠 패키지인 경우 “모든” 콘텐츠 패키지 대신 두 개의 임베드된 패키지가 스캔됩니다.
 

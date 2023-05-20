@@ -13,7 +13,7 @@ ht-degree: 100%
 
 이 페이지에서는 Experience Manager as a Cloud Service 2020.5.0 일반 릴리스 노트를 간략하게 설명합니다.
 
-## 릴리스 날짜 {#release-date}
+## 릴리스 일자 {#release-date}
 
 [!DNL Experience Manager] as a Cloud Service 2020.5.0의 출시일은 2020년 5월 7일입니다.
 

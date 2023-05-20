@@ -4,7 +4,7 @@ description: Cloud Manager의 CI/CD 파이프라인과 이를 사용하여 코�
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1367'
 ht-degree: 100%
 

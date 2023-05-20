@@ -14,7 +14,7 @@ exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
 source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
 source-wordcount: '1696'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 95%
 트랜스크립션은 음성 인식 기술을 사용하여 오디오 또는 비디오 파일의 오디오를 텍스트로 변환(음성 텍스트 변환)하는 프로세스입니다.
 [!DNL Adobe Experience Manager Assets]는 WebVTT (Vtt) 양식의 지원되는 오디오 또는 비디오 파일에서 음성 언어의 텍스트 트랜스크립션을 자동 생성하는 [!DNL Azure Media Services]로 구성되어 있습니다. 오디오 또는 비디오 에셋이 [!DNL Experience Manager Assets]에서 처리되면 트랜스크립션 서비스는 오디오 또는 비디오 에셋의 텍스트 트랜스크립션 렌더링을 자동으로 생성하고 원본 에셋이 있는 Assets 저장소 내의 동일한 위치에 저장합니다. [!DNL Experience Manager Assets] 트랜스크립션 서비스를 통해 마케터는 텍스트 콘텐츠의 검색 기능을 추가하여 오디오 및 비디오 콘텐츠를 효율적으로 관리하고, 접근성 및 현지화 기능을 지원하여 ROI를 높일 수 있습니다.
 
-트랜스크립트는 음성 콘텐츠의 텍스트 버전입니다. 대표적인 사례는 종종 자막이나 캡션이 포함된 OTT 플랫폼에서 시청 중이거나 다른 언어의 콘텐츠를 사용 중인 동영상이거나 마케팅, 학습이나 엔터테인먼트용으로 사용되는 모든 오디오 또는 비디오 파일입니다. 이들 경험은 필요한 경우 서식이 지정되거나 변환되는 트랜스크립션으로 시작됩니다. 수동으로 수행하는 경우 오디오 또는 비디오 기록 프로세스는 시간이 많이 들고 오류를 발생시킵니다. 오디오-비디오 콘텐츠에 대한 요구 사항이 계속 증가하면서 수동 프로세스 조정이 어려워질 수도 있습니다. [!DNL Experience Manager Assets] 에서는 오디오 및 비디오 자산을 대규모로 처리할 수 있고 타임스탬프 세부 사항과 함께 텍스트 스크립트(.vtt 파일)를 생성하는 Azure의 AI 기반 변환을 사용합니다. 에셋과 함께 트랜스크립션 기능도 Dynamic Media에서 지원됩니다.
+트랜스크립트는 음성 콘텐츠의 텍스트 버전입니다. 대표적인 사례는 종종 자막이나 캡션이 포함된 OTT 플랫폼에서 시청 중이거나 다른 언어의 콘텐츠를 사용 중인 동영상이거나 마케팅, 학습이나 엔터테인먼트용으로 사용되는 모든 오디오 또는 비디오 파일입니다. 이들 경험은 필요한 경우 서식이 지정되거나 변환되는 트랜스크립션으로 시작됩니다. 수동으로 수행하는 경우 오디오 또는 비디오 기록 프로세스는 시간이 많이 들고 오류를 발생시킵니다. 오디오-비디오 콘텐츠에 대한 요구 사항이 계속 증가하면서 수동 프로세스 조정이 어려워질 수도 있습니다. [!DNL Experience Manager Assets] 는 대규모 오디오 및 비디오 에셋을 처리하고 타임스탬프 세부 정보와 함께 텍스트 트랜스크립트(.vtt 파일)을 생성하는 Azure의 AI 기반 트랜스크립션을 사용합니다. 에셋과 함께 트랜스크립션 기능도 Dynamic Media에서 지원됩니다.
 
-트랜스크립션 기능은 [!DNL Experience Manager Assets]에서 무상으로 제공됩니다. 그러나 관리자는에서 변환 서비스를 구성하려면 사용자의 Azure 자격 증명이 필요합니다 [!DNL Experience Manager Assets]. Microsoft®에서 직접 [체험판 자격 증명을 획득](https://azure.microsoft.com/en-us/pricing/details/media-services/)하여 에셋의 오디오 또는 비디오 트랜스크립션 기능을 체험할 수도 있습니다.
+트랜스크립션 기능은 [!DNL Experience Manager Assets]에서 무상으로 제공됩니다. 단, 트랜스크립션 서비스를 구성하려면 관리자는 사용자의 Azure 자격 증명이 필요합니다. [!DNL Experience Manager Assets]. Microsoft®에서 직접 [체험판 자격 증명을 획득](https://azure.microsoft.com/en-us/pricing/details/media-services/)하여 에셋의 오디오 또는 비디오 트랜스크립션 기능을 체험할 수도 있습니다.
 
 ## 트랜스크립션 사전 요구 사항 {#prerequisites}
 
@@ -101,7 +101,7 @@ ht-degree: 95%
 >
 >하위 폴더에 다른 프로필이 적용되면 전체 트리의 폴더 작업에 적용되는 처리 프로필을 재정의할 수 있습니다.
 >
->자산을 폴더에 업로드하면 Experience Manager은 포함된 폴더의 속성과 통신하여 처리 프로필을 식별합니다. 프로필이 적용되지 않은 경우 계층 구조의 상위 폴더에서 적용할 처리 프로필을 확인합니다.
+>에셋이 폴더에 업로드되면 Experience Manager은 포함 폴더의 속성과 통신하여 처리 프로필을 식별합니다. 프로필이 적용되지 않은 경우 계층 구조의 상위 폴더에서 적용할 처리 프로필을 확인합니다.
 
 
 ## 오디오 또는 비디오 에셋의 트랜스크립션 생성 {#generate-transcription}
@@ -171,13 +171,13 @@ Experience Manager Assets 인스턴스에 [Dynamic Media가 구성](/help/assets
 
 * [에셋 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [자산 지원 파일 형식](file-format-support.md)
+* [에셋이 지원되는 파일 형식](file-format-support.md)
 * [에셋 검색](search-assets.md)
-* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [연결된 에셋](use-assets-across-connected-assets-instances.md)
 * [에셋 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
 * [에셋 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
-* [벌크 메타데이터 가져오기](metadata-import-export.md)
+* [일괄 메타데이터 가져오기](metadata-import-export.md)

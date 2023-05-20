@@ -3,7 +3,7 @@ title: Headless 애플리케이션 실행 방법
 description: 이 AEM Headless 개발자 여정의 부분에서는 Git에서 로컬 코드를 가져오고 CI/CD 파이프라인용 Cloud Manager Git으로 이동하여 Headless 애플리케이션을 라이브로 배포하는 방법에 대해 알아봅니다.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 source-git-commit: 270eb35023e34eed2cd17674372794c6c2cc7757
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 100%
 

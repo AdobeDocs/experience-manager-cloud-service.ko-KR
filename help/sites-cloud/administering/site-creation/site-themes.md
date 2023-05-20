@@ -4,7 +4,7 @@ description: AEM 사이트 테마를 사용하여 사이트의 스타일 및 디
 feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
-source-git-commit: 62ae8bf09e616135cbd5498d1d083a74bb6b0e2a
+source-git-commit: a77c31ebfce01834325bfdb806793dcd8ba169d4
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 100%

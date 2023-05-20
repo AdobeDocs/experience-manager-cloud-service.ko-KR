@@ -1,13 +1,13 @@
 ---
 title: 미리보기 계층을 위한 OSGi 설정 구성
 description: 콘텐츠를 시작하기 전에 미리보기 위해서 AEM 미리보기 서비스를 구성하는 방법에 대해서 알아봅니다.
-source-git-commit: 7b56bb05e31d7a61d7a8fb13e2bd0ff6e4fb301d
-workflow-type: ht
+exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 100%
 
 ---
-
 
 # 미리보기 계층을 위한 OSGi 설정 구성 {#configure-osgi-preview-tier}
 

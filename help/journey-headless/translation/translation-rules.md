@@ -3,7 +3,7 @@ title: Headless 콘텐츠에 대한 번역 규칙 구성
 description: 번역 규칙을 정의하여 번역할 콘텐츠를 식별하는 방법에 대해 알아봅니다.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 100%
 

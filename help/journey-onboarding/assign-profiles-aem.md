@@ -101,7 +101,7 @@ Admin Console에서 AEM 제품 프로필을 보려면 다음 단계를 따르십
 
 ## 추가 리소스 {#additional-resources}
 
-다음은 온보딩 여정의 컨텐츠를 벗어나려면 추가 선택적 리소스입니다.
+다음은 온보딩 여정의 콘텐츠를 넘어서고자 하는 경우 선택할 수 있는 추가 리소스입니다.
 
 * [Admin Console에서 제품 및 사용자 액세스 관리](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - Admin Console을 사용하여 사용 액세스를 관리하는 방법을 알아봅니다.
 * [AEM에 대한 액세스 구성 설명](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=ko) - Admin Console에서 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필을 구성하는 방법에 대해 알아보려면 이 간략한 설명을 확인합니다.

@@ -386,7 +386,7 @@ ht-degree: 99%
    + [자산 마이크로서비스 개요](/help/assets/asset-microservices-overview.md)
    + [ [!DNL Assets]에서의 접근성](/help/assets/accessibility.md)
    + 디지털 자산 관리 {#manage}
-      + [마이크로 프런트 엔드 자산 선택기](/help/assets/asset-selector.md)
+      + [마이크로 프론트엔드 자산 선택기](/help/assets/asset-selector.md)
       + [자산 공유](/help/assets/share-assets.md)
       + [활동 및 DAM 작업 모니터링](/help/assets/assets-activity-history.md)
       + [자산 마이크로서비스 사용 시작하기](/help/assets/asset-microservices-configure-and-use.md)

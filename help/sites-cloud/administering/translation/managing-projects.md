@@ -7,7 +7,7 @@ exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 source-git-commit: 05723d602362fd8fe8ed2318d42a669f00f79f87
 workflow-type: tm+mt
 source-wordcount: '4086'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -443,8 +443,8 @@ AEM의 번역 프로젝트는 표준 [AEM 프로젝트 콘솔을 사용합니다
 
    ![언어 사본 비교](../assets/language-copy-compare.png)
 
-1. 두 페이지(론치와 소스)가 나란히 열립니다.
-   * 이 기능의 사용에 대한 자세한 내용은 [페이지 비교](/help/sites-cloud/authoring/features/page-diff.md)를 참조하십시오.
+1. 두 페이지(launch 및 source)가 나란히 열립니다.
+   * 이 기능 사용에 대한 전체 정보는 다음을 참조하십시오. [페이지 비교](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## 소스 페이지 이동 또는 이름 바꾸기 {#move-source}
 

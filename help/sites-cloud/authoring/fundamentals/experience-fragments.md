@@ -5,7 +5,7 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: 9c3153efe4aacd1666663cd5eb718f75329202af
 workflow-type: tm+mt
 source-wordcount: '2064'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -22,11 +22,11 @@ Adobe Experience Manager as a Cloud Service 내 경험 조각은
 
 * 경험(페이지)의 일부입니다.
 * 여러 페이지에서 사용할 수 있습니다.
-* 구조 및 구성 요소를 정의하기 위한 템플릿(편집만 가능)을 기반으로 합니다.
+* 구조 및 구성 요소를 정의하기 위한 템플릿(편집 가능 전용)을 기반으로 합니다.
 * 이 템플릿을 사용하여 경험 조각의 *루트 페이지*&#x200B;를 제작할 수 있습니다.
-* 단락 시스템에서 레이아웃이 있는 하나 이상의 구성 요소로 구성되어 있습니다.
+* 하나 이상의 구성 요소로 구성되며, 레이아웃이 단락 시스템에 있습니다.
 * 다른 경험 조각을 포함할 수 있습니다.
-* 다른 조각(다른 경험 조각 포함)과 결합하여 전체 페이지(경험)를 형성할 수 있습니다.
+* 다른 구성 요소(다른 경험 조각 포함)와 결합하여 전체 페이지(경험)를 형성할 수 있습니다.
 * 루트 페이지를 기반으로 하나 이상의 변형을 만들 수 있습니다.
 * 이러한 변형은 콘텐츠 및/또는 구성 요소를 공유할 수 있습니다.
 * 조각의 여러 변형에서 사용할 수 있는 빌딩 블록으로 분할할 수 있습니다.
@@ -57,16 +57,16 @@ Adobe Experience Manager as a Cloud Service 내 경험 조각은
 >
 >문제가 발생하는 경우 시스템 관리자에게 문의하십시오.
 
-## 언제 경험 조각을 사용해야 합니까? {#when-should-you-use-experience-fragments}
+## 경험 조각 은 언제 사용해야 합니까? {#when-should-you-use-experience-fragments}
 
-경험 조각은 다음과 같은 경우 사용해야 합니다.
+경험 조각 은 다음 경우에 사용해야 합니다.
 
 * 경험을 재사용하고자 할 때
    * 경험을 동일하거나 유사한 콘텐츠에서 재사용하고자 할 때
 * 서드파티의 콘텐츠 게재 플랫폼으로 AEM을 사용할 때
    * AEM을 콘텐츠 게재 플랫폼으로 사용하려는 솔루션.
    * 서드파티 터치포인트에 콘텐츠 임베드.
-* 다양한 변형 또는 표현물에 대한 경험이 있는 경우
+* 변형 또는 렌디션이 다른 경험이 있는 경우
    * 채널 또는 컨텍스트별 변형.
    * 그룹에 적절한 경험(예: 채널 간에 다양한 경험이 있는 캠페인).
 * Omnichannel Commerce를 사용하는 경우
@@ -184,7 +184,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 1. **경험 조각**&#x200B;에 대한 **속성**&#x200B;을 입력합니다.
 
-   **제목**&#x200B;은 필수입니다. **이름**&#x200B;을 비워 두면 **제목**&#x200B;에서 파생됩니다.
+   A **제목** 은(는) 필수입니다. 다음과 같은 경우 **이름** 이(가) 비어 있으면 **제목**.
 
    ![경험 조각 속성](/help/sites-cloud/authoring/assets/xf-04.png)
 
@@ -209,7 +209,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 >
 >페이지 편집기 사용 방법에 대한 자세한 내용은 [페이지 콘텐츠 편집](/help/sites-cloud/authoring/fundamentals/editing-content.md)을 참조하십시오.
 
-다음 예제 프로시저는 제품에 대한 티저를 작성하는 방법을 보여 줍니다.
+다음 예제 절차에서는 제품의 티저를 만드는 방법을 보여 줍니다.
 
 1. [구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)에서 필요한 구성 요소를 드래그하여 놓습니다.
 
@@ -227,17 +227,17 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 필요에 따라 경험 조각의 변형을 만들 수 있습니다.
 
-1. [편집](#editing-your-experience-fragment)할 조각을 엽니다.
+1. 조각 열기 [편집](#editing-your-experience-fragment).
 1. **변형** 탭을 엽니다.
 
    ![경험 조각 변형 만들기](/help/sites-cloud/authoring/assets/xf-06.png)
 
-1. **만들기**&#x200B;를 사용하여 다음을 생성할 수 있습니다.
+1. **만들기** 을(를) 통해 다음을 만들 수 있습니다.
 
    * **변형**
    * **변형을 Live Copy로**.
 
-1. 필수 속성을 정의합니다.
+1. 필요한 속성을 정의합니다.
 
    * **템플릿**
    * **제목**
@@ -281,7 +281,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 새 빌딩 블록을 작성하려면 다음 작업을 수행하십시오.
 
-1. 경험 조각 편집기에서 재사용할 구성 요소를 선택합니다.
+1. 경험 조각 편집기에서 다시 사용할 구성 요소를 선택합니다.
 
    ![빌딩 블록용 구성 요소 선택](/help/sites-cloud/authoring/assets/xf-09.png)
 
@@ -299,7 +299,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 #### 빌딩 블록 관리 {#managing-a-building-block}
 
-빌딩 블록은 **빌딩 블록** 탭에서 볼 수 있습니다. 각 블록에서 다음 작업을 수행할 수 있습니다.
+빌딩 블록은에 표시됩니다. **빌딩 블록** 탭. 각 블록에 대해 다음 작업을 사용할 수 있습니다.
 
 * **마스터로 이동**: 새 탭에서 루트 페이지 변형 열기
 * **이름 변경**
@@ -356,11 +356,11 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
    >**개인화** 탭에서 선택한 **ContextHub 경로**&#x200B;는 다음 중 하나여야 합니다.
    >
    >* 조각이 렌더링될 페이지에 대해 구성된 것과 동일한 경로
-   >또는:
+      >또는:
    >* 페이지에 대해 구성된 ContextHub에 정의된 저장소의 하위 집합을 포함하는 경로
+
    >
    > 
-
 **개인화** 탭에서 선택한 **세그먼트 경로**&#x200B;는 다음 중 하나여야 합니다.
    * 조각이 렌더링될 페이지에 대해 구성된 것과 동일한 경로
 또는
@@ -391,8 +391,8 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
    속성은 여러 탭에서 사용할 수 있습니다.
 
    >[!CAUTION]
-   >이러한 탭은 경험 조각 콘솔에서 **속성**&#x200B;을 열면 표시됩니다.
-   >경험 조각을 편집할 때 **속성을 열면** 해당 [페이지 속성](/help/sites-cloud/authoring/fundamentals/page-properties.md)이 표시됩니다.
+   이러한 탭은 경험 조각 콘솔에서 **속성**&#x200B;을 열면 표시됩니다.
+   경험 조각을 편집할 때 **속성을 열면** 해당 [페이지 속성](/help/sites-cloud/authoring/fundamentals/page-properties.md)이 표시됩니다.
 
    ![경험 조각 속성](/help/sites-cloud/authoring/assets/xf-17.png)
 
@@ -421,7 +421,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 URL에서 `.plain.` 선택기를 사용하여 브라우저에서 일반 HTML 렌디션에 액세스할 수 있습니다.
 
 >[!NOTE]
->브라우저에서 직접 사용할 수 있지만 [기본 목적은 다른 애플리케이션(예: 서드파티 웹 앱, 사용자 정의 모바일 구현)이 URL만 사용하여 경험 조각의 콘텐츠에 직접 액세스할 수 있도록 하는 것입니다.](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition)
+브라우저에서 직접 사용할 수 있지만 [기본 목적은 다른 애플리케이션(예: 서드파티 웹 앱, 사용자 정의 모바일 구현)이 URL만 사용하여 경험 조각의 콘텐츠에 직접 액세스할 수 있도록 하는 것입니다.](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition)
 
 ## 경험 조각 게시 {#publishing-experience-fragments}
 
@@ -431,9 +431,9 @@ URL에서 `.plain.` 선택기를 사용하여 브라우저에서 일반 HTML 렌
 
 ## 경험 조각 내보내기 {#exporting-experience-fragments}
 
-기본적으로 경험 조각은 HTML 형식으로 제공됩니다. 이는 AEM과 서드파티 채널에서 모두 동일하게 사용할 수 있습니다.
+기본적으로 경험 조각은 HTML 형식으로 전달됩니다. 이는 AEM과 서드파티 채널에서 모두 동일하게 사용할 수 있습니다.
 
-Adobe Target으로 내보내기 위해 JSON을 사용할 수도 있습니다. 다음을 참조하십시오.
+Adobe Target으로 내보내는 경우 JSON을 사용할 수도 있습니다. 다음을 참조하십시오.
 
 * [Adobe Target과 통합](/help/sites-cloud/integrating/integrating-adobe-target.md)
 * [Adobe Target으로 경험 조각 내보내기](/help/sites-cloud/integrating/experience-fragments-target.md)

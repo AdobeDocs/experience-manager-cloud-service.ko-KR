@@ -1,13 +1,13 @@
 ---
 title: Universal Editor 아키텍처
 description: Universal Editor의 아키텍처 및 해당 서비스와 계층 간에 데이터가 흐르는 방식에 대해 알아봅니다.
-source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
+exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 100%
 
 ---
-
 
 # Universal Editor 아키텍처 {#architecture}
 

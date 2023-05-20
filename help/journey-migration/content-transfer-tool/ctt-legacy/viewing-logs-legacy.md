@@ -1,19 +1,19 @@
 ---
-title: 컨텐츠 전송 도구의 마이그레이션 세트에 대한 로그 보기(이전)
-description: 컨텐츠 전송 도구의 마이그레이션 세트에 대한 로그 보기
+title: 컨텐츠 전송 도구에서 마이그레이션 세트에 대한 로그 보기(이전)
+description: 컨텐츠 전송 도구에서 마이그레이션 세트에 대한 로그 보기
 hide: true
 hidefromtoc: true
 exl-id: 01c8afd3-c594-4a41-b905-8c3a2d74db6f
 source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '181'
-ht-degree: 64%
+ht-degree: 74%
 
 ---
 
 # 마이그레이션 세트에 대한 로그 보기(이전) {#view-logs-content-transfer-tool}
 
-각 단계(추출 및 수집)가 완료되면 로그를 확인하고 오류를 찾습니다.  오류는 보고된 문제를 처리하거나 Adobe 지원에 연락하여 즉시 해결해야 합니다.
+각 단계(추출 및 수집)가 완료되면 로그를 확인하여 오류를 찾습니다.  모든 오류는 보고된 문제를 처리하거나 Adobe 지원 센터에 문의하여 즉시 해결해야 합니다.
 
 ## 로그 보기 단계 {#viewing-logs}
 

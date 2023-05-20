@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 릴리스의 릴리스 노트'
 description: "[!DNL Adobe Experience Manager] 2020.7.0용 as a Cloud Service 릴리스 노트"
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
 workflow-type: tm+mt
 source-wordcount: '1038'
-ht-degree: 76%
+ht-degree: 78%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 76%
 
 다음 섹션에서는 Experience Manager as a Cloud Service 2020.7.0 일반 릴리스 노트를 간략하게 설명합니다.
 
-## 릴리스 날짜 {#release-date}
+## 릴리스 일자 {#release-date}
 
 [!DNL Experience Manager] as a Cloud Service 2020.7.0 릴리스 날짜는 2020년 7월 30일입니다.
 
@@ -33,7 +33,7 @@ ht-degree: 76%
 
 ### [!DNL Assets]의 새로운 기능 {#what-is-new-assets}
 
-* [!DNL Asset Compute Service]는 자산을 처리하는 확장 가능한 서비스입니다. 관리자는 다음을 구성할 수 있습니다 [!DNL Experience Manager] 를 사용하여 만든 사용자 정의 응용 프로그램을 호출하려면 [!DNL Asset Compute Service]. 개발자는 이 서비스를 사용하여 복잡한 사용 사례에 맞는 전문 맞춤형 애플리케이션을 만들 수 있습니다. 이 웹 서비스는 다양한 파일 유형에 대한 축소판 생성, Adobe 파일 형식의 고품질 이미지 렌더링, 비디오 인코딩(미래), 메타데이터 추출, 색인을 생성하기 위한 사전 설정으로 전체 텍스트 추출, 사용 가능한 모든 자산을 통해 자산 실행 등의 작업을 수행할 수 있습니다 [!DNL Sensei] 서비스. 참조 [자산 마이크로서비스 및 처리 프로필 사용](/help/assets/asset-microservices-configure-and-use.md).
+* [!DNL Asset Compute Service]는 자산을 처리하는 확장 가능한 서비스입니다. 관리자는 을 구성할 수 있습니다 [!DNL Experience Manager] 을 사용하여 생성된 사용자 정의 응용 프로그램을 호출하려면 [!DNL Asset Compute Service]. 개발자는 이 서비스를 사용하여 복잡한 사용 사례에 맞는 전문 사용자 정의 애플리케이션을 만들 수 있습니다. 이 웹 서비스는 다양한 파일 유형에 대한 썸네일 생성, Adobe 파일 형식의 고품질 이미지 렌더링, 비디오 인코딩(미래), 메타데이터 추출, 색인을 생성하기 위한 사전 설정으로 전체 텍스트 추출, 사용 가능한 모든 것을 통한 자산 실행 등의 작업을 수행할 수 있습니다 [!DNL Sensei] 서비스. 참조 [자산 마이크로서비스 및 처리 프로필 사용](/help/assets/asset-microservices-configure-and-use.md).
 
 * [!DNL Experience Manager] as a Cloud Service에서 [!DNL Dynamic Media]의 초기 구성이 더욱 강력하게 개선되었습니다. 이제 관리자에게 프로세스 진행 상황을 제공합니다.
 
@@ -41,13 +41,13 @@ ht-degree: 76%
 
 * 클라우드 서비스 배포와 호환되지 않는 워크플로우 단계에는 이제 [!UICONTROL 워크플로우 모델] 편집기에서 경고가 표시됩니다. 또한 클라우드 서비스 환경에서 기존 워크플로우를 실행할 때 호환되지 않는 워크플로우 단계를 건너뜁니다.
 
-* 에 배포되는 고객이 만든 워크플로우 모델 `/conf/global` 의 환경과 연결된 Git 프로젝트에서 [!DNL Cloud Manager] 에 자동으로 배포됩니다. `/var` 따라서 [!DNL Experience Manager]. 고객이 변경한 `/libs`의 제품 워크플로우 모델은 자동으로 `/var`에 배포되지 않습니다.
+* 고객이 생성하여 로 배포되는 워크플로 모델 `/conf/global` 의 환경과 연결된 Git 프로젝트에서 [!DNL Cloud Manager] 자동으로에 배포됩니다. `/var` 따라서 다음에서 사용 가능 [!DNL Experience Manager]. 고객이 변경한 `/libs`의 제품 워크플로우 모델은 자동으로 `/var`에 배포되지 않습니다.
 
-### 해결된 버그 {#assets-bugs-fixed}
+### 수정된 버그 {#assets-bugs-fixed}
 
-* 자산 이동 마법사가 컬렉션에 포함된 자산에 대해 예상대로 로드되지 않습니다. (CQ-4296756)
-* 다음 값 `dam:size` 및 `dam:sha1` XMP 원본에 쓰기 작업에서 제외됩니다. (CQ-4237355)
-* 자산의 일괄 게시를 취소할 때 [!DNL Brand Portal] 요청 URI가 너무 길음을 제안하는 오류를 생성합니다. (CQ-4299474)
+* 에셋 이동 마법사가 컬렉션에 포함된 에셋에 대해 예상대로 로드되지 않습니다. (CQ-4296756)
+* 값: `dam:size` 및 `dam:sha1` XMP 원본에 쓰기에서 제외됩니다. (CQ-4237355)
+* 일괄 에셋 게시를 취소할 때 [!DNL Brand Portal] 은 요청 URI가 너무 길다는 오류를 생성합니다. (CQ-4299474)
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -55,13 +55,13 @@ ht-degree: 76%
 
 이제 Cloud Service에서 AEM Commerce를 사용할 수 있습니다.
 
-을(를) 참조하십시오. [AEM Commerce as a Cloud Service 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) 자세한 내용
+을(를) 참조하십시오 [AEM Commerce 시작하기 as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) 을 참조하십시오.
 
 ## 핵심 구성 요소 {#core-components}
 
 ### 새로운 기능 {#what-is-new-core-components}
 
-[AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)의 릴리스 2.11.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
+[AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)의 릴리스 2.11.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
 
 * 새로운 [PDF 뷰어 구성 요소](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html) 소개
 
@@ -90,10 +90,10 @@ ht-degree: 76%
 
    자세한 내용은 파이프라인 변수를 참조하십시오.
 
-* 이제 인증 바인딩된 Private Maven 리포지토리가 지원됩니다.
+* 이제 인증 바인딩된 비공개 Maven 저장소가 지원됩니다.
 
 * 이제 Cloud Manager 빌드 컨테이너가 Java 8과 Java 11을 모두 지원합니다.
-자세한 내용은 Java 11 지원 사용 을 참조하십시오.
+자세한 내용은 Java 11 지원 사용을 참조하십시오.
 
 ### 버그 수정 {#bug-fixes-cm}
 

@@ -4,8 +4,8 @@ description: Adobe 엔지니어링 및 컨설팅 팀에서 컴파일한 AEM 다�
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '1434'
 ht-degree: 100%
 
@@ -146,7 +146,7 @@ MSM을 사용하면 롤아웃 작업 외에도 롤아웃되는 노드 속성을 
 
 MSM 및 라이브 카피에 대한 자세한 내용은 다음 문서를 참조하십시오.
 
-* [라이브 카피 생성 및 동기화](creating-live-copies.md)
-* [라이브 카피 개요 콘솔](live-copy-overview.md)
+* [Live Copy 생성 및 동기화](creating-live-copies.md)
+* [Live Copy 개요 콘솔](live-copy-overview.md)
 * [라이브 카피 동기화 구성](live-copy-sync-config.md)
 * [MSM 롤아웃 충돌](rollout-conflicts.md)

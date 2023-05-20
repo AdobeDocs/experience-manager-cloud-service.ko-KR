@@ -2,7 +2,7 @@
 title: AEM 커넥터 구현
 description: AEM 커넥터 구현
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 100%
