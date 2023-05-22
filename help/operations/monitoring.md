@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service의 인프라 및 서비스 모니터링
 description: AEM as a Cloud Service의 인프라 및 서비스 모니터링
 exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
-source-git-commit: 34fed4e64b49ab32e7025c9654d930e3fa362a52
+source-git-commit: f55439552e253b8b71b40525454130c6f163e6d4
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '607'
 ht-degree: 5%
 
 ---
@@ -35,7 +35,7 @@ Cloud Manager를 통한 로깅 또는 모니터링과 같은 다른 유형의 �
 
 >[!NOTE]
 >
-> 이 기능은 고급 클라우드 지원을 받는 고객에게만 제공됩니다. 질문이 있는 경우 Admin Console을 통해 지원 사례를 제기하십시오.
+> 이 기능은 다음을 보유한 고객에게만 제공됩니다. [고급 클라우드 지원.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) 질문이 있는 경우 Admin Console을 통해 지원 사례를 제기하십시오.
 
 ## 내부 모듈 모니터링 {#module-monitoring}
 
