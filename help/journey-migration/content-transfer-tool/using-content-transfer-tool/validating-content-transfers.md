@@ -2,9 +2,9 @@
 title: 콘텐츠 전송 확인
 description: 컨텐츠 전송 도구를 사용하여 컨텐츠 전송의 유효성을 검사합니다
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: b6c9d7411e84b18926aa525efe25296002c2d3d2
+source-git-commit: c1f60a1ead466b47694b8918e5b39011041c5f25
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '1070'
 ht-degree: 2%
 
 ---
@@ -77,7 +77,7 @@ If **추출 중 스테이징 컨테이너 덮어쓰기** 이(가) 활성화되�
 수집이 완료되고 유효성 검사가 시작되면 수집 로그에 다음 로그 항목이 기록됩니다.
 
 ```
-Gathering artifacts for migration validation...  
+Gathering artifacts for migration validation...
 ```
 
 유효성 검사에 대한 세부 정보는 이 항목 뒤에 표시됩니다. 아래에서 대규모 마이그레이션의 예를 확인하십시오.
@@ -131,6 +131,24 @@ Migration validation took 0 minutes
 
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
+
+## 주도자 마이그레이션의 유효성을 검사하는 방법 {#how-to-validate-principal-migration}
+
+다음을 참조하십시오 [사용자 매핑 및 사용자 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 주요 마이그레이션에 대한 세부 정보 및 필요한 이유를 읽어 보십시오.
+
+추출 및 수집이 성공적으로 완료되면 주요 마이그레이션에 대한 요약 및 보고서를 사용할 수 있습니다. 이 정보는 어떤 사용자 및 그룹이 성공적으로 마이그레이션되었는지 확인하고, 일부가 마이그레이션되지 않은 이유를 확인하는 데 사용할 수 있습니다.
+
+이 정보를 보려면 Cloud Acceleration Manager 로 이동하십시오. 프로젝트 카드를 클릭하고 컨텐츠 전송 카드를 클릭합니다. 다음으로 이동 **수집 작업** 확인할 수집을 찾습니다. 세 점(**...**)을 클릭하여 해당 수집을 수행합니다. **사용자 요약 보기** 드롭다운에서.
+
+![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
+
+요약 정보가 포함된 대화 상자가 표시됩니다. 도움말 아이콘을 사용하여 자세한 설명을 읽을 수 있습니다. 다음을 클릭합니다. **보고서 다운로드** 단추를 클릭하여 전체 CSV(쉼표로 구분) 보고서를 다운로드합니다.
+
+![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
+
+>[!NOTE]
+>
+>사용자 매핑이 비활성화되면 이 대화 상자의 다른 변형이 표시됩니다. 사용자 매핑이 비활성화되었음을 나타내며 사용자 매핑 값을 제공하는 3개의 필드가 표시되지 않습니다.
 
 ## 문제 해결 {#troubleshooting}
 

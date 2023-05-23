@@ -2,10 +2,10 @@
 title: 사용자 매핑 및 주요 마이그레이션
 description: 사용자 매핑 및 사용자 마이그레이션 개요
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: 25bfcd521e9bbc54bff3b87d17cdeb0f99a68511
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 22%
+source-wordcount: '788'
+ht-degree: 21%
 
 ---
 
@@ -53,3 +53,7 @@ AEM as a Cloud Service의 주요 변경 내용은 작성자 계층 액세스에 
 * 다음과 같은 경우 **수집하기 전에 클라우드 인스턴스의 기존 콘텐츠 지우기** 이(가) 설정되면, Cloud Service 인스턴스에서 이미 전송된 사용자가 기존 저장소 전체와 함께 삭제되고 새 저장소가 생성되어 콘텐츠를 (으)로 수집합니다. 또한 대상 Cloud Service 인스턴스에 대한 권한을 포함한 모든 설정이 재설정되며에 추가된 관리자의 경우 true입니다. **관리자** 그룹입니다. 관리자 사용자를 다음에 다시 추가해야 합니다. **관리자** 그룹: CTT에 대한 액세스 토큰을 검색합니다.
 * 콘텐츠 추가 작업을 수행할 때 이전 전송 이후 변경되지 않아 콘텐츠가 전송되지 않으면 그동안 사용자 및 그룹이 변경되더라도 해당 콘텐츠와 연관된 사용자 및 그룹도 전송되지 않습니다. 사용자 및 그룹이 연결된 콘텐츠와 함께 마이그레이션되기 때문입니다.
 * 대상 AEM Cloud Service 인스턴스에 소스 AEM 인스턴스의 사용자 중 하나와 동일한 이메일 주소를 사용하는 다른 사용자 이름이 있는 경우 사용자 매핑이 활성화되면 오류 메시지가 로그에 기록되고 지정된 이메일 주소를 갖는 한 명의 사용자만 대상 시스템에서 허용되므로 소스 AEM 사용자가 전송되지 않습니다.
+
+## 최종 요약 및 보고서 {#final-report}
+
+추출 및 수집이 완료되면 주체 마이그레이션 세부 사항을 표시하는 보고서가 생성됩니다. 다음을 참조하십시오 [주도자 마이그레이션의 유효성을 검사하는 방법](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md#how-to-validate-principal-migration) 자세한 내용.

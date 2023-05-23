@@ -2,10 +2,10 @@
 title: 컨텐츠 전송 도구 개요
 description: 콘텐츠 전송 도구 개요
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: ac35bbe5ad78e07cc5292e089f3d71c6a8ed6ccc
+source-git-commit: 25bfcd521e9bbc54bff3b87d17cdeb0f99a68511
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 79%
+source-wordcount: '717'
+ht-degree: 78%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 79%
 
 콘텐츠 전송 도구는 Adobe에서 개발한 도구로, 기존 콘텐츠를 소스 AEM 인스턴스(온프레미스 또는 AMS)에서 대상 AEM Cloud Service 인스턴스로 이동하는 데 사용할 수 있습니다.
 
-이 도구는 주체(사용자 또는 그룹)도 자동으로 전송합니다.
+이 도구는 주체(사용자 또는 그룹)도 자동으로 전송합니다.  다음을 참조하십시오 [사용자 매핑 및 사용자 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 추가 정보.
 
 콘텐츠 전송 프로세스를 Cloud Acceleration Manager와 통합하는 콘텐츠 전송 도구의 새 버전이 제공됩니다. 제공되는 모든 이점을 활용하려면 이 새 버전으로 전환하는 것이 좋습니다.
 
