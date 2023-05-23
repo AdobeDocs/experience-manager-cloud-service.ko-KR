@@ -5,7 +5,7 @@ exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
 source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
 source-wordcount: '1111'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -105,7 +105,7 @@ AEM as a Cloud Service는 IMS를 사용하여 AEM과 나머지 Adobe Experience 
 
 ## 추가 리소스 {#additional-resources}
 
-다음은 온보딩 여정의 콘텐츠를 넘어서고자 하는 경우 선택할 수 있는 추가 리소스입니다.
+온보딩 여정의 콘텐츠를 능가하려는 경우 다음은 추가적인 옵션 리소스입니다.
 
 * [Admin Console 개요](https://helpx.adobe.com/kr/enterprise/using/admin-console.html) - Admin Console에 대한 포괄적인 개요
 * [Adobe ID 만들기 또는 업데이트](https://helpx.adobe.com/ca/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - Adobe ID를 만들고, 변경하고, 여러 Adobe ID를 관리하는 방법에 대해 알아봅니다.

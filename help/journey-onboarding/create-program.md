@@ -6,7 +6,7 @@ exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
 source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 87%
 
 Cloud Manager 프로그램은 일련의 Cloud Manager 환경을 나타냅니다. 이러한 프로그램은 일반적으로 사용 허가된 SLA(서비스 수준 계약)에 해당하는 논리적인 비즈니스 이니셔티브 세트를 지원합니다. 예를 들어 한 프로그램은 조직의 글로벌 공개 웹 사이트를 지원하는 AEM 리소스를 나타내고 다른 프로그램은 내부 중앙 DAM을 나타낼 수 있습니다.
 
-여행 관련 미디어를 주로 다루는 테넌트인 이론적 WKND Travel and Adventure Enterprises의 예를 들자면, WKND Magazine 부서를 위한 Sites 프로그램과 WKND Media 부서를 위한 Assets 프로그램이라는 두 가지 프로그램이 있을 수 있습니다. 서로 다른 팀원이 각자의 분업 요구 사항에 따라 서로 다른 프로그램에 액세스할 수 있습니다.
+여행 관련 미디어를 주로 다루는 테넌트인 이론적 WKND Travel and Adventure Enterprises의 예를 들자면 WKND Magazine 부서를 위한 Sites 프로그램과 WKND Media 부서를 위한 Assets 프로그램이라는 두 가지 프로그램이 있을 수 있습니다. 서로 다른 팀원이 각자의 분업 요구 사항에 따라 서로 다른 프로그램에 액세스할 수 있습니다.
 
 프로그램에는 두 가지 유형이 있습니다.
 
@@ -53,11 +53,11 @@ Cloud Manager 프로그램은 일련의 Cloud Manager 환경을 나타냅니다.
 
    ![Cloud Manager 랜딩 페이지](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. 프로그램 만들기 마법사에서 **샌드박스 설정** 프로그램 이름을 입력하고 탭하거나 클릭합니다. **계속**.
+1. 프로그램 만들기 마법사에서 **샌드박스 설정**&#x200B;을 선택하고 프로그램 이름을 제공한 다음 **계속**&#x200B;을 탭하거나 클릭합니다.
 
    ![프로그램 유형 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
 
-1. 다음에서 **샌드박스 설정** 대화 상자에서 샌드박스 프로그램에서 활성화할 솔루션을 선택할 수 있습니다. 다음 **사이트** 및 **에셋** 솔루션은 항상 샌드박스 프로그램에 포함되며 자동으로 선택됩니다. 이 정도면 온보딩 예제로 충분합니다. **만들기**&#x200B;를 클릭합니다.
+1. **샌드박스 설정** 대화 상자에서 샌드박스 프로그램에서 활성화하려는 솔루션을 선택할 수 있습니다. **Sites** 및 **Assets** 솔루션은 샌드박스 프로그램에 항상 포함되고 자동으로 선택됩니다. 이는 온보딩 사례에 충분합니다. **만들기**&#x200B;를 클릭합니다.
 
    ![솔루션 선택](assets/set-up-sandbox-onboarding.png)
 
@@ -73,7 +73,7 @@ Cloud Manager 프로그램은 일련의 Cloud Manager 환경을 나타냅니다.
 
 ## 추가 리소스 {#additional-resources}
 
-다음은 온보딩 여정의 콘텐츠를 넘어서고자 하는 경우 선택할 수 있는 추가 리소스입니다.
+온보딩 여정의 콘텐츠를 능가하려는 경우 다음은 추가적인 옵션 리소스입니다.
 
 * [프로그램 및 프로그램 유형](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) - Cloud Manager의 계층 구조와 다양한 유형의 프로그램이 해당 구조에 어떻게 적합하고 어떻게 다른지 알아봅니다.
 * [샌드박스 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) - Cloud Manager를 사용하여 교육, 데모, POC 또는 기타 비프로덕션 목적을 위한 자체 샌드박스 프로그램을 만드는 방법을 알아봅니다.

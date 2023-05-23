@@ -7,7 +7,7 @@ exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 source-git-commit: 17d828f7813657aaeca49bfc87447c2bc24e712d
 workflow-type: tm+mt
 source-wordcount: '4322'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -139,7 +139,7 @@ ht-degree: 98%
 
    >[!NOTE]
    >
-   >&quot;양식 제출 실패&quot; 메시지와 함께 오류 대화 상자가 나타날 수 있습니다. 이 문제는 네트워크 시간 초과로 인해 발생합니다. 하지만 라이브 카피를 만드는 프로세스는 백그라운드에서 실행 중입니다. 잠시 기다린 후 라이브 카피의 페이지가 올바르게 생성되었는지 확인합니다.
+   >“양식 제출 실패” 메시지와 함께 오류 대화 상자가 나타날 수 있습니다. 네트워크 시간 초과로 인해 오류가 발생합니다. 단, Live Copy 생성 프로세스는 배경에서 실행 중입니다. 몇 분 후에 Live Copy 페이지가 제대로 생성되었는지 확인합니다.
 
 ### 블루프린트 구성으로 사이트의 라이브 카피 만들기 {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
@@ -521,7 +521,7 @@ ht-degree: 98%
 
 상속을 취소하면 속성 값을 변경할 수 있습니다. 끊어진 링크 아이콘은 상속이 취소되었음을 나타냅니다.
 
-![상속되지 않은 페이지](../assets/properties-not-inherited.png)
+![상속되지 않는 속성](../assets/properties-not-inherited.png)
 
 필요한 경우 나중에 상속을 속성에 대해 다시 활성화할 수 있습니다.
 

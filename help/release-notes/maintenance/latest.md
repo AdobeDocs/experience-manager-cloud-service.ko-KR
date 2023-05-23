@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 56eaacc1ad78b47ef90f9c04fa09a4b751bff78d
 workflow-type: tm+mt
 source-wordcount: '197'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -29,10 +29,10 @@ ht-degree: 76%
 
 ### 해결된 문제 {#fixed-issues-11983}
 
-- SITES-13253 - 핵심 구성 요소 v2.22.6의 RecursionTooDeepException 문제가 해결되었습니다.
-- SITES-13256 - 특수 URL 구분 페이지 렌더링으로 구성된 코어 WCM 티저 문제가 수정되었습니다.
-- GRANITE-45462 - 메시징 클라이언트 다중 영역 구성 관련 문제가 해결되었습니다.
-- GRANITE-45562 - 이미지 조합이 404 대신 200을 반환하는 문제가 해결되었습니다.
+- SITES-13253 - 핵심 구성 요소 v2.22.6의 RecursionTooDeepException 관련 문제 해결
+- SITES-13256 - 특수 URL 차단 페이지 렌더링으로 구성된 Core WCM 티저 관련 문제 해결
+- GRANITE-45462 - 클라이언트 다중 지역 구성 메시징 관련 문제 해결
+- GRANITE-45562 - 404 대신 200을 반환하는 이미지 조합 관련 문제 해결
 
 ### 임베드된 기술 {#embedded-tech-11983}
 

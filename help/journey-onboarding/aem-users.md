@@ -7,7 +7,7 @@ exl-id: 86700cce-139f-451e-9c21-b38b6332f773
 source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
 source-wordcount: '581'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -81,7 +81,7 @@ AEM 작성자는 AEM에 로그인해야 콘텐츠 생성을 시작할 수 있습
 
 ## 추가 리소스 {#additional-resources}
 
-다음은 온보딩 여정의 콘텐츠를 넘어서고자 하는 경우 선택할 수 있는 추가 리소스입니다.
+온보딩 여정의 콘텐츠를 능가하려는 경우 다음은 추가적인 옵션 리소스입니다.
 
 [페이지 작성에 대한 빠른 시작 안내서](/help/sites-cloud/authoring/getting-started/quick-start.md) - AEM의 작성 기본 사항에 대한 간략한 개요를 보려면 여기에서 시작하십시오.
 [Headless 제작 여정](/help/journey-headless/author/overview.md) - Headless 콘텐츠를 작성하려면 이 안내서 소개를 따르십시오.

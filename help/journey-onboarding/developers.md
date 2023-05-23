@@ -7,7 +7,7 @@ exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
 source-wordcount: '1419'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -144,7 +144,7 @@ Cloud Manager뿐 아니라 작업 환경, 저장소 및 파이프라인에 대�
 
 ## 추가 리소스 {#additional-resources}
 
-다음은 온보딩 여정의 콘텐츠를 넘어서고자 하는 경우 선택할 수 있는 추가 리소스입니다.
+온보딩 여정의 콘텐츠를 능가하려는 경우 다음은 추가적인 옵션 리소스입니다.
 
 * [저장소 액세스](/help/implementing/cloud-manager/managing-code/accessing-repos.md) - Cloud Manager의 셀프서비스 git 계정 관리를 사용하여 git 저장소에 액세스하고 관리하는 방법을 알아봅니다.
 * [Cloud Manager와 함께 git 사용](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) - Cloud Manager의 git 저장소를 사용하는 방법과 자체 On-Premise 고객 관리 git 저장소를 Cloud Manager와 통합하는 방법을 알아봅니다.
