@@ -1,19 +1,19 @@
 ---
-title: 를 사용하여 자산 자동 태그 지정 [!DNL Adobe Sensei] 스마트 서비스
-description: 상황별 및 설명적 비즈니스 태그를 적용하는 인위적인 지능형 서비스로 자산에 태그를 지정합니다.
+title: AEM에서 자산에 스마트 태그를 추가하는 방법
+description: 상황별 및 설명적 비즈니스 태그를 적용하는 인위적인 지능형 서비스를 사용하여 AEM의 자산에 스마트 태그를 추가합니다.
 contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f8535b9d1b8334bede817714eab469fbb1fcbb03
 workflow-type: tm+mt
-source-wordcount: '2445'
+source-wordcount: '2462'
 ht-degree: 6%
 
 ---
 
 
-# 자산에 스마트 태그를 추가하고 검색 환경을 개선합니다. {#smart-tag-assets-for-faster-search}
+# AEM의 자산에 스마트 태그 추가 {#smart-tags-assets-aem}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -24,13 +24,13 @@ ht-degree: 6%
 
 자연어 어휘와 비교하여 비즈니스 분류법에 따른 태깅은 자산을 회사의 비즈니스에 맞추는 데 도움이 되며 가장 관련성이 높은 자산이 검색에 나타나도록 합니다. 예를 들어 자동차 제조업체는 모델 이름으로 자동차 이미지에 태그를 지정할 수 있으므로 프로모션 캠페인을 디자인하기 위해 검색할 때 관련 이미지만 표시됩니다.
 
-배경에서 기능은 의 인위적인 지능형 프레임워크를 사용합니다. [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) 태그 구조 및 비즈니스 분류에 대한 이미지 인식 알고리즘을 교육합니다. 그런 다음 이 콘텐츠 인텔리전스를 사용하여 다른 에셋 세트에 관련 태그를 적용합니다. [!DNL Experience Manager Assets] 기본적으로 업로드된 에셋에 스마트 태그를 자동으로 적용합니다.
+배경에서 기능은 의 인위적인 지능형 프레임워크를 사용합니다. [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) 태그 구조 및 비즈니스 분류에 대한 이미지 인식 알고리즘을 교육합니다. 그런 다음 이 콘텐츠 인텔리전스를 사용하여 다른 에셋 세트에 관련 태그를 적용합니다. AEM은 기본적으로 업로드된 에셋에 스마트 태그를 자동으로 적용합니다.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-## 지원되는 에셋 유형 {#smart-tags-supported-file-formats}
+## AEM의 스마트 태그에 대해 지원되는 자산 유형 {#smart-tags-supported-file-formats}
 
 다음 유형의 자산에 태그를 지정할 수 있습니다.
 
@@ -59,7 +59,7 @@ ht-degree: 6%
 | image/psd |  |  |
 | image/vnd.adobe.photoshop |  |  |
 
-[!DNL Experience Manager] 기본적으로 스마트 태그를 텍스트 기반 에셋 및 비디오에 자동으로 추가합니다. 이미지에 스마트 태그를 자동으로 추가하려면 다음 작업을 완료하십시오.
+AEM은 기본적으로 스마트 태그를 텍스트 기반 에셋 및 비디오에 자동으로 추가합니다. 이미지에 스마트 태그를 자동으로 추가하려면 다음 작업을 완료하십시오.
 
 * [태그 모델 및 지침 이해](#understand-tag-models-guidelines).
 * [모델 교육](#train-model).
@@ -131,7 +131,7 @@ ht-degree: 6%
    >다음을 기준으로 태그 구조를 오름차순 또는 내림차순으로 정렬할 수 있습니다. **[!UICONTROL 이름]** (알파벳순), **[!UICONTROL 생성됨]** 날짜 또는 **[!UICONTROL 수정됨]** 날짜.
 
 
-1. 다음에서 **[!UICONTROL 에셋 선택]** 대화 상자, 클릭 **[!UICONTROL 에셋 추가]** 각 태그에 대해. DAM 저장소에서 검색하거나 저장소를 탐색하여 최소 10개 이상 최대 50개 이하의 이미지를 선택합니다. 폴더가 아닌 에셋을 선택합니다. 이미지를 선택한 후 **[!UICONTROL 선택]**.
+1. 다음에서 **[!UICONTROL 에셋 선택]** 대화 상자, 클릭 **[!UICONTROL 에셋 추가]** 각 태그에 대해. DAM 저장소에서 검색하거나 저장소를 탐색하여 최소 10개 이상 최대 50개 이하의 이미지를 선택합니다. 폴더가 아닌 에셋을 선택합니다. 이미지를 선택한 후 다음을 클릭합니다. **[!UICONTROL 선택]**.
 
    ![교육 상태 보기](assets/smart-tags-training-status.png)
 
@@ -189,9 +189,9 @@ ht-degree: 6%
 [!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 -->
 
-## 스마트 태그로 자산에 태그 지정 {#tag-assets}
+## AEM에서 스마트 태그로 자산에 태그 지정 {#tag-assets}
 
-지원되는 모든 유형의 자산에 의해 자동으로 태그가 지정됩니다. [!DNL Experience Manager Assets] 업로드 시. 태깅은 기본적으로 활성화되어 있으며 작동합니다. [!DNL Experience Manager] 은 적절한 태그를 실시간에 가깝게 적용합니다. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
+지원되는 모든 유형의 자산에 의해 자동으로 태그가 지정됩니다. [!DNL Experience Manager Assets] 업로드 시. 태깅은 기본적으로 활성화되어 있으며 작동합니다. AEM은 적절한 스마트 태그를 실시간에 가깝게 적용합니다. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
 * 이미지 및 비디오의 경우 스마트 태그는 일부 시각적 측면을 기반으로 합니다.
 
