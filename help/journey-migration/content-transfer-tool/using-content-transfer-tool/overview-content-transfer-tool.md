@@ -2,10 +2,10 @@
 title: 컨텐츠 전송 도구 개요
 description: 콘텐츠 전송 도구 개요
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 25bfcd521e9bbc54bff3b87d17cdeb0f99a68511
+source-git-commit: 8197b4f4e5cda21532c3660c2f0ec4855ba53a6a
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 78%
+source-wordcount: '648'
+ht-degree: 58%
 
 ---
 
@@ -14,24 +14,19 @@ ht-degree: 78%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="개요"
->abstract="콘텐츠 전송 도구는 Adobe에서 개발한 도구로, 기존 콘텐츠를 소스 AEM 인스턴스(온프레미스 또는 AMS)에서 대상 AEM Cloud Service 인스턴스로 이동하는 데 사용할 수 있습니다. 이 도구는 주체(사용자 또는 그룹)도 자동으로 전송합니다."
+>abstract="컨텐츠 전송 도구는 Adobe에서 개발한 도구로, 소스 AEM 인스턴스(온-프레미스 또는 AMS)에서 대상 AEM Cloud Service 인스턴스로 기존 컨텐츠를 마이그레이션하는 데 사용할 수 있습니다. 이 도구는 주체(사용자 또는 그룹)도 자동으로 전송합니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="지침 및 모범 사례"
 
-콘텐츠 전송 도구는 Adobe에서 개발한 도구로, 기존 콘텐츠를 소스 AEM 인스턴스(온프레미스 또는 AMS)에서 대상 AEM Cloud Service 인스턴스로 이동하는 데 사용할 수 있습니다.
+컨텐츠 전송 도구는 Adobe에서 개발한 도구로, 소스 AEM 인스턴스(온-프레미스 또는 AMS)에서 대상 AEM Cloud Service 인스턴스로 기존 컨텐츠를 마이그레이션하는 데 사용할 수 있습니다.
 
 이 도구는 주체(사용자 또는 그룹)도 자동으로 전송합니다.  다음을 참조하십시오 [사용자 매핑 및 사용자 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 추가 정보.
 
-콘텐츠 전송 프로세스를 Cloud Acceleration Manager와 통합하는 콘텐츠 전송 도구의 새 버전이 제공됩니다. 제공되는 모든 이점을 활용하려면 이 새 버전으로 전환하는 것이 좋습니다.
+컨텐츠 전송 도구는 컨텐츠 전송 프로세스를 Cloud Acceleration Manager와 통합합니다. 이를 통해 사용자는 다음과 같은 이점을 얻을 수 있습니다.
 
 * 마이그레이션 세트를 한 번 추출하여 동시에 여러 환경에서 수집하는 셀프서비스 방식
-* 효율적인 로딩 상태, 가드레일 및 오류 처리를 통해 개선된 사용자 경험
+* 로드 상태, 보호 기능 및 오류 처리를 개선하여 사용자 경험 개선
 * 수집 로그는 유지되고 문제 해결에 항시 사용 가능합니다.
-
-새 버전 사용을 시작하려면 도구에 중요한 아키텍처 변경 사항이 있으므로 이전 버전의 콘텐츠 전송 도구를 제거해야 합니다.
-
->[!NOTE]
->
-> 마이그레이션이 이미 진행 중인 상황에서는 마이그레이션이 완료될 때까지 이전 버전의 CTT를 계속 사용할 수 있습니다. 이전 버전의 CTT와 관련된 설명은 [레거시 설명서](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)를 참조하십시오.
+* 검증 및 주도자 마이그레이션 보고서를 검증에 사용할 수 있습니다.
 
 ## 콘텐츠 전송 도구의 단계 {#phases-content-transfer-tool}
 
