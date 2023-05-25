@@ -4,9 +4,9 @@ description: Adobe Sensei AI를 사용하는 스마트 이미징에서 각 사�
 contentOwner: Rick Brough
 feature: Asset Management,Renditions
 role: User
-mini-toc-levels: 3
+mini-toc-levels: null
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 5cc750b3ea9a911355220f8b95f769000be9f41a
+source-git-commit: 2b1030a32733154491aa178f390038ef7d552151
 workflow-type: tm+mt
 source-wordcount: '3630'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # 스마트 이미징 {#smart-imaging}
 
-## &quot;스마트 이미징&quot;이란 무엇입니까? {#what-is-smart-imaging}
++++**&quot;스마트 이미징&quot;이란 무엇입니까?** {#what-is-smart-imaging}
 
 스마트 이미징 기술은 Adobe Sensei AI 기능을 적용하며 기존 &quot;이미지 사전 설정&quot;과 함께 작동합니다. 클라이언트 브라우저 기능을 기반으로 이미지 형식, 크기 및 품질을 자동으로 최적화하여 이미지 제공 성능을 향상시키는 데 사용됩니다.
 
@@ -60,7 +60,9 @@ WebP 및 AVIF를 PNG와 비교하면, WebP의 경우 84%, AVIF의 경우 87%의 
 
 In terms of images, the goal is to serve the best quality images as efficiently as possible. -->
 
-## 최신 스마트 이미징의 주요 이점은 무엇입니까? {#what-are-the-key-benefits-of-smart-imaging}
++++
+
++++## 최신 스마트 이미징의 주요 이점은 무엇입니까? {#what-are-the-key-benefits-of-smart-imaging}
 
 스마트 이미징은 사용 중인 클라이언트 브라우저, 장치 디스플레이 및 네트워크 조건에 따라 이미지 파일 크기를 자동으로 최적화하여 더 나은 이미지 전달 성능을 제공합니다. 이미지는 페이지의 로드 시간 대부분을 구성하므로 성능 향상은 전환율 증가, 사이트에서 보낸 시간 및 사이트 바운스 비율 감소와 같은 비즈니스 KPI에 지대한 영향을 줄 수 있습니다.
 
@@ -72,7 +74,9 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 * 장치 픽셀 비율(`dpr`)
 * 네트워크 대역폭(`network`)
 
-### 브라우저 형식 변환 정보(bfc) {#bfc}
++++
+
+**브라우저 형식 변환 정보(bfc)** {#bfc}
 
 추가를 통해 브라우저 형식 변환 사용 `bfc=on` 이미지 URL을 사용하면 JPEG 및 PNG가 서로 다른 브라우저의 경우 손실 AVIF, 손실 WebP, 손실 JPEGXR, 손실 JPEG2000으로 자동 변환됩니다. 이러한 형식을 지원하지 않는 브라우저의 경우 Smart Imaging에서 JPEG 또는 PNG를 계속 제공합니다. 형식과 함께 스마트 이미징에서 새 형식의 품질이 다시 계산됩니다.
 
@@ -80,7 +84,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 참조: [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=en) Dynamic Media 이미지 제공 및 렌더링 API에서.
 
-### 장치 픽셀 비율(DPR) 최적화 정보 {#dpr}
+**장치 픽셀 비율(dpr) 기본 정보** 최적화 {#dpr}
 
 CSS 픽셀 비율이라고도 하는 디바이스 픽셀 비율(DPR)은 디바이스의 물리적 픽셀과 논리 픽셀 간의 관계입니다. 특히, 망막 스크린의 등장과 함께, 최신 모바일 디바이스의 픽셀 해상도는 빠른 속도로 성장하고 있다.
 
@@ -106,7 +110,7 @@ CSS 픽셀 비율이라고도 하는 디바이스 픽셀 비율(DPR)은 디바�
 
 참조: [이미지 작업 시](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) 및 [스마트 자르기로 작업할 때](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
-### 네트워크 대역폭 최적화 정보 {#network}
+**네트워크 대역폭 최적화 정보** {#network}
 
 네트워크 대역폭을 켜면 실제 네트워크 대역폭에 따라 제공되는 이미지 품질이 자동으로 조정됩니다. 네트워크 대역폭이 낮은 경우 DPR(장치 픽셀 비율) 최적화가 이미 설정되어 있더라도 자동으로 꺼집니다.
 
@@ -118,7 +122,7 @@ CSS 픽셀 비율이라고도 하는 디바이스 픽셀 비율(DPR)은 디바�
 
 DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측 값을 기반으로 합니다. 이러한 값은 때때로 부정확합니다. 예를 들어, DPR=2인 iPhone5 및 DPR=2인 iPhone12는 `dpr=3`, 모두 표시 `dpr=2`. 고해상도 장치의 경우 `dpr=2` 보내는 것보다 나음 `dpr=1`. 그러나 이러한 부정확성을 극복하는 가장 좋은 방법은 클라이언트측 DPR을 사용하여 100% 정확한 값을 제공하는 것입니다. 또한 Apple 또는 출시된 다른 디바이스 등 어떤 디바이스에서도 작동합니다. 다음을 참조하십시오 [클라이언트측 장치 픽셀 비율이 있는 스마트 이미징 사용](/help/assets/dynamic-media/client-side-dpr.md).
 
-### 스마트 이미징의 추가적인 주요 이점
+**스마트 이미징의 추가적인 주요 이점**
 
 * 최신 스마트 이미징을 사용하는 웹 페이지에 대한 Google SEO 등급이 개선되었습니다.
 * 최적화된 컨텐츠를 즉시 제공합니다(런타임 시).
@@ -127,7 +131,9 @@ DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측
 * 이전에는 원본 이미지와 파생 이미지가 모두 캐시되었으며 캐시를 무효화하는 2단계 프로세스였습니다. 최신 스마트 이미징에서는 파생 함수만 캐시되므로 한 단계의 캐시 무효화 프로세스를 사용할 수 있습니다.
 * 규칙 세트에서 사용자 지정 헤더를 사용하는 고객은 이전 버전의 스마트 이미징과 달리 이러한 헤더가 차단되지 않으므로 최신 스마트 이미징의 혜택을 받을 수 있습니다. 예를 들어에 제시된 대로 &quot;Timing Allow Origin&quot;, &quot;X-Robot&quot; [이미지 응답에 사용자 지정 헤더 값 추가|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-## 스마트 이미징과 관련된 라이선스 비용이 있습니까? {#are-there-any-licensing-costs-associated-with-smart-imaging}
++++
+
++++**스마트 이미징과 관련된 라이선스 비용이 있습니까?** {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
 아니요. 스마트 이미징은 기존 라이선스에 포함되어 있습니다. 이 규칙은 Dynamic Media Classic 또는 Experience Manager - Dynamic Media(온프레미스, AMS 및 Experience Manager as a Cloud Service)에 적용됩니다.
 
@@ -135,7 +141,9 @@ DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측
 >
 >Dynamic Media - 하이브리드 고객은 스마트 이미징을 사용할 수 없습니다.
 
-## 스마트 이미징은 어떻게 작동합니까? {#how-does-smart-imaging-work}
++++
+
++++**스마트 이미징은 어떻게 작동합니까?** {#how-does-smart-imaging-work}
 
 소비자가 이미지를 요청하면 스마트 이미징이 사용자 특성을 확인하고 사용 중인 브라우저를 기반으로 적절한 이미지 형식으로 변환한다. 이러한 형식 변환은 시각적 충실도를 저하시키지 않는 방식으로 수행된다. 스마트 이미징은 다음과 같은 방식으로 브라우저 기능에 따라 이미지를 다른 형식으로 자동으로 변환합니다.
 
@@ -147,6 +155,8 @@ DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측
 * 이러한 형식을 지원하지 않는 브라우저의 경우 원래 요청한 이미지 형식이 제공됩니다.
 
 원본 이미지 크기가 Smart Imaging에서 생성하는 크기보다 작으면 원본 이미지가 제공됩니다.
+
++++
 
 ## 지원되는 이미지 형식은 무엇입니까? {#what-image-formats-are-supported}
 
