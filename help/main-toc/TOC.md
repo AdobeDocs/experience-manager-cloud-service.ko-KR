@@ -8,10 +8,10 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b4aa3495538eebc2e87383e1490bc60403025fb0
+source-git-commit: f9e05b8d8fa6286c121f32e1e1f390a149471921
 workflow-type: tm+mt
-source-wordcount: '4012'
-ht-degree: 99%
+source-wordcount: '4011'
+ht-degree: 100%
 
 ---
 
@@ -462,7 +462,7 @@ ht-degree: 99%
       + [일괄 처리 집합 사전 설정](/help/assets/dynamic-media/batch-set-presets-dm.md)
       + [Dynamic Media의 방식으로 CDN 캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
       + [Dynamic Media Classic의 방식으로 CDN 캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
-      + [스마트 이미징 FAQ](/help/assets/dynamic-media/imaging-faq.md)
+      + [스마트 이미징](/help/assets/dynamic-media/imaging-faq.md)
       + [클라이언트측 디바이스 픽셀 비율을 갖는 스마트 이미징](/help/assets/dynamic-media/client-side-dpr.md)
       + [Dynamic Media 자산 전송](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Dynamic Media의 핫링크 보호 활성화](/help/assets/dynamic-media/hotlink-protection.md)
