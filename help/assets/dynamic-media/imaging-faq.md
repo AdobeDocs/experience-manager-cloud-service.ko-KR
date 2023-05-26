@@ -1,21 +1,21 @@
 ---
-title: 스마트 이미징 FAQ
+title: 스마트 이미징
 description: Adobe Sensei AI를 사용하는 스마트 이미징에서 각 사용자의 고유한 보기 특성을 적용하여 경험에 최적화된 적합한 이미지를 자동으로 제공하여 향상된 성능과 참여를 제공하는 방법에 대해 알아봅니다.
 contentOwner: Rick Brough
 feature: Asset Management,Renditions
 role: User
 mini-toc-levels: null
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: b5c887d6a6ad1db5094609a8bc1b738c9ba5e8d6
+source-git-commit: fca1da512c4015e77c1a982a551db354a0b1cace
 workflow-type: tm+mt
-source-wordcount: '3541'
+source-wordcount: '3531'
 ht-degree: 1%
 
 ---
 
 # 스마트 이미징 FAQ {#smart-imaging}
 
-+++**&quot;스마트 이미징&quot;이란 무엇입니까?**
+## 스마트 이미징 기본 정보
 
 스마트 이미징 기술은 Adobe Sensei AI 기능을 적용하며 기존 &quot;이미지 사전 설정&quot;과 함께 작동합니다. 클라이언트 브라우저 기능을 기반으로 이미지 형식, 크기 및 품질을 자동으로 최적화하여 이미지 제공 성능을 향상시키는 데 사용됩니다.
 
@@ -60,9 +60,7 @@ WebP 및 AVIF를 PNG와 비교하면, WebP의 경우 84%, AVIF의 경우 87%의 
 
 In terms of images, the goal is to serve the best quality images as efficiently as possible. -->
 
-+++
-
-+++**최신 스마트 이미징의 주요 이점은 무엇입니까?**
+**스마트 이미징의 이점**
 
 스마트 이미징은 사용 중인 클라이언트 브라우저, 장치 디스플레이 및 네트워크 조건에 따라 이미지 파일 크기를 자동으로 최적화하여 더 나은 이미지 전달 성능을 제공합니다. 이미지는 페이지의 로드 시간 대부분을 구성하므로 성능 향상은 전환율 증가, 사이트에서 보낸 시간 및 사이트 바운스 비율 감소와 같은 비즈니스 KPI에 지대한 영향을 줄 수 있습니다.
 
@@ -70,11 +68,11 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 * 이제에서 차세대 AVIF 형식을 지원합니다.
 * PNG에서 WebP로의 변환 및 AVIF는 이제 손실 변환을 지원합니다. PNG가 무손실 포맷이므로, 이전 WebP 및 AVIF가 전달되지 않았습니다.
-* 브라우저 형식 변환(`bfc`)
-* 장치 픽셀 비율(`dpr`)
-* 네트워크 대역폭(`network`)
+* [브라우저 형식 변환](#bfc)
+* [장치 픽셀 비율](#dpr)
+* [네트워크 대역폭](#bandwidth)
 
-**브라우저 형식 변환 정보(bfc)**
+### 브라우저 형식 변환 정보 {#bfc}
 
 추가를 통해 브라우저 형식 변환 사용 `bfc=on` 이미지 URL을 사용하면 JPEG 및 PNG가 서로 다른 브라우저의 경우 손실 AVIF, 손실 WebP, 손실 JPEGXR, 손실 JPEG2000으로 자동 변환됩니다. 이러한 형식을 지원하지 않는 브라우저의 경우 Smart Imaging에서 JPEG 또는 PNG를 계속 제공합니다. 형식과 함께 스마트 이미징에서 새 형식의 품질이 다시 계산됩니다.
 
@@ -82,7 +80,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 참조: [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=en) Dynamic Media 이미지 제공 및 렌더링 API에서.
 
-**장치 픽셀 비율(dpr) 기본 정보** 최적화
+### 장치 픽셀 비율 최적화에 대한 정보입니다** {#dpr}
 
 CSS 픽셀 비율이라고도 하는 디바이스 픽셀 비율(DPR)은 디바이스의 물리적 픽셀과 논리 픽셀 간의 관계입니다. 특히, 망막 스크린의 등장과 함께, 최신 모바일 디바이스의 픽셀 해상도는 빠른 속도로 성장하고 있다.
 
@@ -108,7 +106,7 @@ CSS 픽셀 비율이라고도 하는 디바이스 픽셀 비율(DPR)은 디바�
 
 참조: [이미지 작업 시](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) 및 [스마트 자르기로 작업할 때](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
-**네트워크 대역폭 최적화 정보**
+### 네트워크 대역폭 최적화 정보 {#bandwidth}
 
 네트워크 대역폭을 켜면 실제 네트워크 대역폭에 따라 제공되는 이미지 품질이 자동으로 조정됩니다. 네트워크 대역폭이 낮은 경우 DPR(장치 픽셀 비율) 최적화가 이미 설정되어 있더라도 자동으로 꺼집니다.
 
@@ -128,8 +126,6 @@ DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측
 * TTL(Time To Live) 독립적. 이전에는 스마트 이미징이 작동하려면 최소 TTL이 12시간 이상이어야 했습니다.
 * 이전에는 원본 이미지와 파생 이미지가 모두 캐시되었으며 캐시를 무효화하는 2단계 프로세스였습니다. 최신 스마트 이미징에서는 파생 함수만 캐시되므로 한 단계의 캐시 무효화 프로세스를 사용할 수 있습니다.
 * 규칙 세트에서 사용자 지정 헤더를 사용하는 고객은 이전 버전의 스마트 이미징과 달리 이러한 헤더가 차단되지 않으므로 최신 스마트 이미징의 혜택을 받을 수 있습니다. 예를 들어에 제시된 대로 &quot;Timing Allow Origin&quot;, &quot;X-Robot&quot; [이미지 응답에 사용자 지정 헤더 값 추가|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
-
-+++
 
 +++**스마트 이미징과 관련된 라이선스 비용이 있습니까?**
 
@@ -153,6 +149,26 @@ DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측
 * 이러한 형식을 지원하지 않는 브라우저의 경우 원래 요청한 이미지 형식이 제공됩니다.
 
 원본 이미지 크기가 Smart Imaging에서 생성하는 크기보다 작으면 원본 이미지가 제공됩니다.
+
++++
+
++++**요청에 대해 스마트 이미징을 끌 수 있습니까?**
+
+예. 다음 수정자를 추가하여 스마트 이미징을 끌 수 있습니다.
+
+* `bfc=off` 을 클릭하여 브라우저 형식 전환을 해제합니다. 참조: [브라우저 형식 변환](#bfc).
+* `dpr=off` 장치 픽셀 비율을 해제합니다. 참조: [장치 픽셀 비율](#dpr).
+* `network=off` 네트워크 대역폭을 끕니다. 참조: [네트워크 대역폭](#network).
+
++++
+
++++**스마트 이미징을 &quot;튜닝&quot;할 수 있습니까?**
+
+예. 스마트 이미징에는 활성화 또는 비활성화할 수 있는 세 가지 옵션이 있습니다.
+
+* [브라우저 형식 변환](#bfc)
+* [장치 픽셀 비율](#dpr)
+* [네트워크 대역폭](#network)
 
 +++
 
@@ -338,26 +354,6 @@ WebP에서 스마트 이미징을 이미 활성화했지만 위에 나열된 다
 +++**스마트 이미징에서 AVIF 최적화를 비활성화할 수 있습니까?**
 
 예. 기본적으로 WebP를 제공하는 것으로 다시 전환하려면 동일한 것에 대한 지원 사례를 만듭니다. 평소대로 매개 변수를 추가하여 스마트 이미징을 끌 수 있습니다 `bfc=off` 를 이미지의 URL에 추가합니다. 그러나 스마트 이미징의 URL 수정자에서 WebP 또는 AVIF는 선택할 수 없습니다. 이 기능은 회사 계정 수준에서 유지됩니다.
-
-+++
-
-+++**요청에 대해 스마트 이미징을 끌 수 있습니까?**
-
-예. 다음 수정자를 추가하여 스마트 이미징을 끌 수 있습니다.
-
-* `bfc=off` 을 클릭하여 브라우저 형식 전환을 해제합니다. 참조: [브라우저 형식 변환](#bfc).
-* `dpr=off` 장치 픽셀 비율을 해제합니다. 참조: [장치 픽셀 비율](#dpr).
-* `network=off` 네트워크 대역폭을 끕니다. 참조: [네트워크 대역폭](#network).
-
-+++
-
-+++**스마트 이미징을 &quot;튜닝&quot;할 수 있습니까?**
-
-예. 스마트 이미징에는 활성화 또는 비활성화할 수 있는 세 가지 옵션이 있습니다.
-
-* [브라우저 형식 변환](#bfc)
-* [장치 픽셀 비율](#dpr)
-* [네트워크 대역폭](#network)
 
 +++
 
