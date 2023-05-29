@@ -1,51 +1,51 @@
 ---
-title: 에셋 선택기 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
-description: 에셋 선택기를 사용하여 애플리케이션 내에서 에셋의 메타데이터 및 렌디션을 검색, 찾기 및 검색합니다.
+title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선택기'
+description: 자산 선택기를 사용하여 애플리케이션 내에서 자산의 메타데이터와 렌디션을 검색하고 찾을 수 있습니다.
 contentOwner: Adobe
 role: Admin,User
 source-git-commit: af36101d8fecd7fab2300f93d40bba4c92f8eafe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2378'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 
 # 마이크로 프론트엔드 자산 선택기 {#Overview}
 
-Micro-Frontend 자산 선택기는 와 쉽게 통합되는 사용자 인터페이스를 제공합니다. [!DNL Experience Manager Assets as a Cloud Service] 저장소에서 사용 가능한 디지털 에셋을 찾아보거나 검색하여 애플리케이션 작성 환경에서 사용할 수 있도록 해줍니다.
+마이크로 프론트엔드 자산 선택기는 [!DNL Experience Manager Assets as a Cloud Service] 저장소와 간편하게 통합하는 사용자 인터페이스를 제공하므로 사용자는 해당 저장소에서 사용 가능한 디지털 자산을 탐색 또는 검색하고 애플리케이션 작성 경험에 사용할 수 있습니다.
 
-Micro-Frontend 사용자 인터페이스는 자산 선택기 패키지를 사용하여 애플리케이션 환경에서 사용할 수 있습니다. 패키지에 대한 모든 업데이트를 자동으로 가져오고 배포된 최신 자산 선택기가 애플리케이션 내에 자동으로 로드됩니다.
+자산 선택기 패키지를 사용하여 마이크로 프론트엔드 사용자 인터페이스를 애플리케이션 경험에 사용할 수 있습니다. 이렇게 하면 패키지에 대한 모든 업데이트를 자동으로 가져오고 최근 배포된 자산 선택기가 애플리케이션 내에서 자동으로 로드됩니다.
 
 ![개요](assets/overview.png)
 
-에셋 선택기는 다음과 같은 많은 이점을 제공합니다.
+자산 선택기는 다음과 같은 많은 이점을 제공합니다.
 
-* Vanilla JavaScript 라이브러리를 사용하여 Adobe 또는 비 Adobe 애플리케이션과 쉽게 통합할 수 있습니다.
-* Assets Selector 패키지에 대한 업데이트가 애플리케이션에서 사용할 수 있는 Asset Selector에 자동으로 배포되므로 유지 관리가 쉽습니다. 최신 수정 사항을 로드하는 데 필요한 업데이트가 애플리케이션 내에 없습니다.
-* 애플리케이션 내에서 에셋 선택기 표시를 제어하는 속성을 사용할 수 있으므로 쉽게 사용자 지정할 수 있습니다.
+* Vanilla JavaScript 라이브러리를 사용하여 Adobe 애플리케이션 또는 Adobe 이외의 애플리케이션과 쉽게 통합할 수 있습니다.
+* 자산 선택기 패키지에 대한 업데이트가 애플리케이션에서 사용할 수 있는 자산 선택기에 자동으로 배포되므로 유지 관리가 간편합니다. 최신 수정 사항을 로드하기 위해 애플리케이션 내에서 업데이트를 수행하지 않아도 됩니다.
+* 애플리케이션 내에서 자산 선택기 표시를 제어하는 속성을 통해 손쉽게 사용자 정의할 수 있습니다.
 
-* 전체 텍스트 검색, 기본 제공 및 맞춤화된 필터를 통해 작성 환경 내에서 사용할 에셋으로 빠르게 이동할 수 있습니다.
+* 전체 텍스트 검색, 기본 제공 및 사용자 정의 필터를 통해 작성 경험 내에서 사용할 자산을 빠르게 탐색할 수 있습니다.
 
-* 에셋 선택을 위해 IMS 조직 내에서 저장소를 전환하는 기능입니다.
+* IMS 조직 내에서 저장소를 전환하여 자산을 선택할 수 있습니다.
 
-* 이름, 차원 및 크기별로 에셋을 정렬하고 목록, 그리드, 갤러리 또는 폭포 보기에서 보는 기능.
+* 자산을 이름, 차원 및 크기별로 정렬하고 목록 보기, 격자 보기, 갤러리 보기 또는 워터폴 보기로 볼 수 있습니다.
 
-이 문서의 범위는 와 함께 자산 선택기를 사용하는 방법을 보여 줍니다. [!DNL Adobe] 통합 셸의 응용 프로그램 또는 인증을 위해 이미 imsToken이 생성된 경우. 이 문서에서는 이러한 워크플로를 SUSI 이외의 흐름이라고 합니다.
+이 문서는 통합 셸에서 [!DNL Adobe] 애플리케이션과 함께 자산 선택기를 사용하는 방법과 인증용으로 생성된 imsToken을 이미 보유한 경우에 대해 다룹니다. 이 문서에서는 이러한 워크플로를 SUSI 외 흐름이라고 합니다.
 
-다음 작업을 수행하여 와 자산 선택기를 통합하고 사용합니다. [!DNL Experience Manager Assets as a Cloud Service] 저장소:
+[!DNL Experience Manager Assets as a Cloud Service] 저장소와 자산 선택기를 통합하고 사용하려면 다음 작업을 수행하십시오.
 
-* [Vanilla JS를 사용한 자산 선택기 통합](#integration-with-vanilla-js)
+* [Vanilla JS를 사용하여 자산 선택기 통합](#integration-with-vanilla-js)
 * [자산 선택기 표시 속성 정의](#asset-selector-properties)
 * [자산 선택기 사용](#using-asset-selector)
 
-## Vanilla JS를 사용한 자산 선택기 통합 {#integration-with-vanilla-js}
+## Vanilla JS를 사용하여 자산 선택기 통합 {#integration-with-vanilla-js}
 
-다음을 통합할 수 있습니다. [!DNL Adobe] 또는 을 사용하는 비 Adobe 애플리케이션 [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 애플리케이션 내에서 에셋을 저장하고 선택합니다.
+모든 [!DNL Adobe] 또는 Adobe 이외의 애플리케이션을 [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 저장소와 통합하고 애플리케이션 내에서 자산을 선택할 수 있습니다.
 
-통합은 에셋 선택기 패키지를 가져와서 Vanilla JavaScript 라이브러리를 사용하여 에셋 as a Cloud Service으로 연결하는 방식으로 수행됩니다. 다음을 편집해야 합니다. `index.html` 또는 애플리케이션 내의 적절한 파일을 사용하여
+이러한 통합은 자산 선택기 패키지를 가져온 다음 Vanilla JavaScript 라이브러리를 사용하여 Assets as a Cloud Service에 연결하여 수행할 수 있습니다. `index.html` 또는 애플리케이션 내의 적절한 파일을 편집하여 다음 작업을 수행해야 합니다.
 * 인증 세부 정보 정의
-* Assets as a Cloud Service 저장소에 액세스
+* Assets as a Cloud Service 저장소 액세스
 * 자산 선택기 표시 속성 구성
 
 <!--
@@ -59,10 +59,10 @@ You can perform authentication without defining some of the IMS properties, such
 Accessing [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository without defining `imsScope` or `imsClientID` IMS properties is referred to as a non-SUSI flow in this article.
 -->
 
-다음과 같은 경우 IMS 속성 중 일부를 정의하지 않고 인증을 수행할 수 있습니다.
+다음과 같은 경우 일부 IMS 속성을 정의하지 않고 인증을 수행할 수 있습니다.
 
-* 다음을 통합하고 있습니다. [!DNL Adobe] 다음에 대한 애플리케이션: [통합 쉘](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
-* 인증을 위해 이미 생성된 IMS 토큰이 있습니다.
+* [통합 셸](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=ko)에서 [!DNL Adobe] 애플리케이션을 통합하는 경우
+* 인증용으로 생성된 IMS 토큰을 이미 보유하고 있는 경우
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -72,10 +72,10 @@ If your application requires user based authentication, out-of-the-box Asset Sel
 You can use properties such as `imsScope` or `imsClientID` to retrieve `imsToken` automatically. You can use SUSI (Sign Up Sign In) flow and IMS properties. Also, you can obtain your own imsToken and pass it to Asset Selector by integrating within [!DNL Adobe] application on Unified Shell or if you already have an imsToken obtained via other methods (for example, using technical account). Accessing [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository without defining IMS properties (For example, `imsScope` and `imsClientID`) is referred to as a non-SUSI flow.
 -->
 
-에서 전제 조건 정의 `index.html` 에 액세스하기 위한 인증 세부 정보를 정의하는 데 사용할 파일 또는 애플리케이션 구현 내의 유사한 파일 [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 리포지토리. 사전 요구 사항은 다음과 같습니다.
+`index.html` 파일 또는 애플리케이션 구현 내에 있는 유사한 파일의 사전 요구 사항을 정의하여 [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 저장소에 액세스하기 위한 인증 세부 정보를 정의합니다. 사전 요구 사항에는 다음이 포함됩니다.
 * imsOrg
 * imsToken
-* api 키
+* apikey
 
 <!--
 The prerequisites vary if you are authenticating using a SUSI flow or a non-SUSI flow.
@@ -101,9 +101,9 @@ For more information on these properties, refer to [Example for the SUSI flow](#
 
 ## 설치 {#installation}
 
-Assets 선택기는 두 ESM CDN을 통해 사용할 수 있습니다(예: [esm.sh](https://esm.sh/)/[잠복](https://www.skypack.dev/)) 및 [UMD](https://github.com/umdjs/umd) 버전.
+자산 선택기는 ESM CDN(예: [esm.sh](https://esm.sh/)/[Skypack](https://www.skypack.dev/)) 및 [UMD](https://github.com/umdjs/umd) 버전을 통해 사용할 수 있습니다.
 
-를 사용하는 브라우저에서 **UMD 버전** (권장):
+**UMD 버전**&#x200B;을 사용하는 브라우저의 경우(권장됨):
 
 ```
 <script src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js"></script>
@@ -113,7 +113,7 @@ Assets 선택기는 두 ESM CDN을 통해 사용할 수 있습니다(예: [esm.s
 </script>
 ```
 
-을 사용하는 브라우저에서 `import maps` 다음을 사용하여 지원 **ESM CDN 버전**:
+**ESM CDN 버전**&#x200B;을 사용하며 `import maps`가 지원되는 브라우저의 경우:
 
 ```
 <script type="module">
@@ -121,15 +121,15 @@ Assets 선택기는 두 ESM CDN을 통해 사용할 수 있습니다(예: [esm.s
 </script>
 ```
 
-Deno/Webpack 모듈 페더레이션에서 **ESM CDN 버전**:
+**ESM CDN 버전**&#x200B;을 사용하는 Deno/Webpack Module Federation의 경우:
 
 ```
 import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
 ```
 
-### 선택한 자산 유형 {#selected-asset-type}
+### 선택된 자산 유형 {#selected-asset-type}
 
-선택한 에셋 유형은 를 사용할 때 에셋 정보가 포함된 객체의 배열입니다. `handleSelection`, `handleAssetSelection`, 및 `onDrop` 함수.
+선택된 자산 유형은 `handleSelection`, `handleAssetSelection` 및 `onDrop` 기능을 사용할 때 자산 정보를 포함하는 오브젝트의 배열입니다.
 
 **스키마 구문**
 
@@ -161,35 +161,35 @@ interface SelectedAsset {
 }
 ```
 
-다음 표에서는 선택한 에셋 객체의 중요한 속성 중 일부를 설명합니다.
+다음 표에서는 선택한 자산 오브젝트의 몇 가지 중요한 속성에 대해 설명합니다.
 
 | 속성 | 유형 | 설명 |
 |---|---|---|
-| *repo:repositoryId* | 문자열 | 에셋이 저장되는 저장소의 고유 식별자입니다. |
-| *repo:id* | 문자열 | 에셋의 고유 식별자입니다. |
-| *repo:assetClass* | 문자열 | 에셋의 분류(예: 이미지 또는 비디오, 문서)입니다. |
-| *repo:name* | 문자열 | 파일 확장명을 포함한 에셋의 이름입니다. |
-| *repo:size* | 개수 | 에셋의 크기입니다(바이트). |
-| *저장소:경로* | 문자열 | 저장소 내 에셋의 위치입니다. |
-| *리포지토리:상위 항목* | `Array<string>` | 저장소의 에셋에 대한 상위 항목의 배열입니다. |
-| *repo:state* | 문자열 | 저장소에 있는 에셋의 현재 상태(예: 활성, 삭제됨 등)입니다. |
-| *repo:createdBy* | 문자열 | 에셋을 만든 사용자 또는 시스템입니다. |
-| *repo:createDate* | 문자열 | 에셋이 생성된 날짜 및 시간입니다. |
-| *repo:modifiedBy* | 문자열 | 에셋을 마지막으로 수정한 사용자 또는 시스템입니다. |
-| *repo:modifyDate* | 문자열 | 에셋을 마지막으로 수정한 날짜 및 시간입니다. |
-| *dc:format* | 문자열 | 파일 유형(예: JPEG, PNG 등)과 같은 에셋의 형식입니다. |
-| *tiff:imageWidth* | 개수 | 에셋의 폭입니다. |
-| *tiff:imageLength* | 개수 | 에셋의 높이입니다. |
-| *computedMetadata* | `Record<string, any>` | 모든 종류의 모든 에셋 메타데이터(저장소, 애플리케이션 또는 임베드된 메타데이터)에 대한 버킷을 나타내는 객체입니다. |
-| *링크(_l)* | `Record<string, any>` | 연결된 자산에 대한 하이퍼미디어 링크입니다. 메타데이터 및 렌디션과 같은 리소스에 대한 링크를 포함합니다. |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition* | `Array<Object>` | 에셋 렌디션에 대한 정보가 포함된 객체 배열입니다. |
+| *repo:repositoryId* | 문자열 | 자산이 저장된 저장소의 고유 식별자입니다. |
+| *repo:id* | 문자열 | 자산의 고유 식별자입니다. |
+| *repo:assetClass* | 문자열 | 자산의 분류입니다(예: 이미지 또는 비디오, 문서). |
+| *repo:name* | 문자열 | 파일 확장명을 포함한 자산의 이름입니다. |
+| *repo:size* | 숫자 | 자산의 크기입니다(바이트). |
+| *repo:path* | 문자열 | 저장소 내 자산의 위치입니다. |
+| *repo:ancestors* | `Array<string>` | 저장소에 있는 자산의 상위 항목 배열입니다. |
+| *repo:state* | 문자열 | 저장소에 있는 자산의 현재 상태입니다(예: 활성, 삭제됨 등). |
+| *repo:createdBy* | 문자열 | 자산을 생성한 사용자 또는 시스템입니다. |
+| *repo:createDate* | 문자열 | 자산이 생성된 날짜 및 시간입니다. |
+| *repo:modifiedBy* | 문자열 | 마지막으로 자산을 수정한 사용자 또는 시스템입니다. |
+| *repo:modifyDate* | 문자열 | 자산이 마지막으로 수정된 날짜 및 시간입니다. |
+| *dc:format* | 문자열 | 파일 유형과 같은 자산의 형식입니다(예: JPEG, PNG 등). |
+| *tiff:imageWidth* | 숫자 | 자산의 폭입니다. |
+| *tiff:imageLength* | 숫자 | 자산의 높이입니다. |
+| *computedMetadata* | `Record<string, any>` | 모든 종류의 모든 자산 메타데이터(저장소, 애플리케이션 또는 임베드된 메타데이터)에 대한 버킷을 나타내는 오브젝트입니다. |
+| *_links* | `Record<string, any>` | 관련 자산에 대한 하이퍼미디어 링크입니다. 메타데이터 및 렌디션과 같은 리소스에 대한 링크가 포함됩니다. |
+| *_links.http://ns.adobe.com/adobecloud/rel/rendition* | `Array<Object>` | 자산의 렌디션에 대한 정보가 포함된 오브젝트 배열입니다. |
 | *_links.http://ns.adobe.com/adobecloud/rel/rendition[].href* | 문자열 | 렌디션에 대한 URI입니다. |
 | *_links.http://ns.adobe.com/adobecloud/rel/rendition[].type* | 문자열 | 렌디션의 MIME 유형입니다. |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].&#39;repo:size&#39;* | 개수 | 렌디션의 크기(바이트)입니다. |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].width* | 개수 | 렌디션의 폭입니다. |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].height* | 개수 | 렌디션의 높이입니다. |
+| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].&#39;repo:size&#39;* | 숫자 | 렌디션의 크기입니다(바이트). |
+| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].width* | 숫자 | 렌디션의 폭입니다. |
+| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].height* | 숫자 | 렌디션의 높이입니다. |
 
-속성의 전체 목록과 자세한 예를 보려면 다음을 방문하십시오. [자산 선택기 코드 예](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+전체 속성 목록과 자세한 예를 보려면 [자산 선택기 코드 예](https://github.com/adobe/aem-assets-selectors-mfe-examples)를 방문하십시오.
 
 <!--
 ### ImsAuthProps {#ims-auth-props}
@@ -220,13 +220,13 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 | `refreshToken`| Refreshes the authentication token for the currently signed-in user, preventing it from expiring and ensuring uninterrupted access to protected resources. Returns a new authentication token that can be used for subsequent requests. |
 -->
 
-### 비SUSI 흐름의 예 {#non-susi-vanilla}
+### SUSI 외 흐름 예 {#non-susi-vanilla}
 
-이 예에서는 를 실행할 때 SUSI가 아닌 플로우에 자산 선택기를 사용하는 방법을 보여 줍니다. [!DNL Adobe] 통합 셸의 응용 프로그램 또는 `imsToken` 인증을 위해 생성되었습니다.
+이 예는 통합 셸에서 [!DNL Adobe] 애플리케이션을 실행할 때 SUSI 외 흐름을 통해 자산 선택기를 사용하는 방법과 인증용으로 생성된 `imsToken`을 이미 보유한 경우에 대해 설명합니다.
 
-를 사용하여 코드에 에셋 선택기 패키지 포함 `script` 태그로 표시 _라인 6~15_ 아래 예제 참조. 스크립트가 로드되면 `PureJSSelectors` 전역 변수를 사용할 수 있습니다. 자산 선택기 정의 [속성](#asset-selector-properties) 에 보여진 것처럼 _라인 16~23_. 다음 `imsOrg` 및 `imsToken` 비 SUSI 흐름에서 인증을 위해서는 속성이 모두 필요합니다. 다음 `handleSelection` 속성은 선택한 자산을 처리하는 데 사용됩니다. 자산 선택기를 렌더링하려면 `renderAssetSelector` 에서 언급된 함수 _라인 17_. 에셋 선택기가 `<div>` 에 표시된 컨테이너 요소 _라인 21 및 22_.
+아래 예의 _6~15행_&#x200B;에 표시된 대로 `script` 태그를 사용하여 코드에 자산 선택기 패키지를 포함합니다. 스크립트가 로드되면 `PureJSSelectors` 전역 변수를 사용할 수 있습니다. _16~23행_&#x200B;에 표시된 대로 자산 선택기 [속성](#asset-selector-properties)을 정의합니다. SUSI 외 흐름 인증에는 `imsOrg` 및 `imsToken` 속성이 모두 필요합니다. `handleSelection` 속성은 선택한 자산을 처리하는 데 사용됩니다. 자산 선택기를 렌더링하려면 _17행_&#x200B;에서 언급한 대로 `renderAssetSelector` 기능을 호출합니다. _21~22행_&#x200B;에 표시된 대로 `<div>` 컨테이너 요소에 자산 선택기가 표시됩니다.
 
-다음 단계에 따라 의 SUSI가 아닌 플로우에 자산 선택기를 사용할 수 있습니다. [!DNL Adobe] 응용 프로그램.
+다음 단계를 따르면 [!DNL Adobe] 애플리케이션에서 SUSI 외 흐름과 함께 자산 선택기를 사용할 수 있습니다.
 
 ```html {line-numbers="true"}
 <!DOCTYPE html>
@@ -257,7 +257,7 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 </html>
 ```
 
-자세한 예를 보려면 다음을 방문하십시오 [자산 선택기 코드 예](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+자세한 예를 보려면 [자산 선택기 코드 예](https://github.com/adobe/aem-assets-selectors-mfe-examples)를 방문하십시오.
 
 <!--
 ### Example for the SUSI flow {#susi-vanilla}
@@ -357,43 +357,43 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 
 ## 자산 선택기 속성 사용 {#asset-selector-properties}
 
-에셋 선택기 속성을 사용하여 에셋 선택기가 렌더링되는 방식을 사용자 지정할 수 있습니다. 다음 표에는 자산 선택기를 사용자 정의하고 사용하는 데 사용할 수 있는 속성이 나열되어 있습니다.
+자산 선택기 속성을 사용하여 자산 선택기가 렌더링되는 방식을 사용자 정의할 수 있습니다. 다음 표에는 자산 선택기를 사용자 정의하고 사용하는 데 사용할 수 있는 속성이 나열되어 있습니다.
 
 | 속성 | 유형 | 필수 | 기본값 | 설명 |
 |---|---|---|---|---|
-| *레일* | 부울 | 아니요 | false | 표시된 경우 `true`, 자산 선택기가 왼쪽 레일 보기에서 렌더링됩니다. 표시된 경우 `false`, 자산 선택기가 모달 보기에서 렌더링됩니다. |
-| *imsOrg* | 문자열 | 예 |  | 프로비저닝 중에 할당된 IMS(Identity Management 시스템) ID Adobe [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 을 참조하십시오. 다음 `imsOrg` 액세스하려는 조직이 Adobe IMS에 속해 있는지 여부를 인증하려면 키가 필요합니다. |
-| *imsToken* | 문자열 | 아니요 |  | 인증에 사용되는 IMS 전달자 토큰. `imsToken` 비SUSI 흐름을 사용하는 경우 필수입니다. |
-| *apiKey* | 문자열 | 아니요 |  | AEM Discovery 서비스 액세스에 사용되는 API 키. `apiKey` 비SUSI 흐름을 사용하는 경우 필수입니다. |
-| *루트 경로* | 문자열 | 아니요 | /content/dam/ | 에셋 선택기에 에셋이 표시되는 폴더 경로입니다. `rootPath` 캡슐화 형태로 사용할 수도 있습니다. 예를 들어 다음 경로가 지정된 경우 `/content/dam/marketing/subfolder/`, 에셋 선택기를 사용하면 상위 폴더를 통과할 수 없지만 하위 폴더만 표시됩니다. |
-| *경로* | 문자열 | 아니요 |  | 자산 선택기가 렌더링될 때 자산의 특정 디렉토리로 이동하는 데 사용되는 경로입니다. |
-| *filterSchema* | 배열 | 아니요 |  | 필터 속성을 구성하는 데 사용되는 모델입니다. 이 기능은 자산 선택기에서 특정 필터 옵션을 제한하려는 경우 유용합니다. |
-| *filterFormProps* | 오브젝트 | 아니요 |  | 검색을 구체화하는 데 사용해야 하는 필터 속성을 지정합니다. 예: MIME 유형 JPG, PNG, GIF. |
-| *selectedAssets* | 배열 `<Object>` | 아니요 |  | 자산 선택기가 렌더링될 때 선택한 자산을 지정합니다. 자산의 ID 속성을 포함하는 오브젝트 배열이 필요합니다. 예를 들어, `[{id: 'urn:234}, {id: 'urn:555'}]` 자산은 현재 디렉토리에서 사용할 수 있어야 합니다. 다른 디렉터리를 사용해야 하는 경우 다음 값을 제공합니다. `path` 속성도 마찬가지입니다. |
-| *acvConfig* | 오브젝트 | 아니요 |  | 기본값을 재정의하기 위한 사용자 지정 구성이 포함된 개체를 포함하는 자산 컬렉션 보기 속성입니다. |
-| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | 아니요 |  | OOTB 번역이 애플리케이션의 요구 사항에 충분하지 않은 경우 인터페이스를 노출하여 사용자 지정 지역화된 값을 `i18nSymbols` 속성. 이 인터페이스를 통해 값을 전달하면 제공된 기본 번역이 무시되고 대신 자체 번역이 사용됩니다.  재정의를 수행하려면 유효한 을 전달해야 합니다 [메시지 설명자](https://formatjs.io/docs/react-intl/api/#message-descriptor) 의 키에 대한 오브젝트 `i18nSymbols` 재정의할 수 있습니다. |
-| *국제* | 오브젝트 | 아니요 |  | 자산 선택기는 기본 OOTB 번역을 제공합니다. 를 통해 유효한 로케일 문자열을 제공하여 번역 언어를 선택할 수 있습니다. `intl.locale` 속성. 예: `intl={{ locale: "es-es" }}` </br></br> 지원되는 로케일 문자열은 [ISO 639 - 코드](https://www.iso.org/iso-639-language-codes.html) 언어 이름 표시 표준. </br></br> 지원되는 로케일 목록: 영어 - &#39;en-us&#39;(기본값) 스페인어 - &#39;es-es&#39; 독일어 - &#39;de-de&#39; 프랑스어 - &#39;fr-fr&#39; 이탈리아어 - &#39;it-it&#39; 일본어 - &#39;ja-jp&#39; 한국어 - &#39;ko-kr&#39; 포르투갈어 - &#39;pt-br&#39; 중국어(번체) - &#39;zh-cn&#39; 중국어(대만) - &#39;zh-tw&#39; |
-| *repositoryId* | 문자열 | 아니요 | &#39;&#39; | 에셋 선택기가 콘텐츠를 로드하는 저장소입니다. |
-| *additionalAemSolutions* | `Array<string>` | 아니요 | [ ] | 추가 AEM 저장소 목록을 추가할 수 있습니다. 이 속성에 정보가 제공되지 않으면 미디어 라이브러리 또는 AEM Assets 저장소만 고려됩니다. |
-| *트리 탐색 숨기기* | 부울 | 아니요 |  | 자산 트리 탐색 사이드바를 표시할지 또는 숨길지 여부를 지정합니다. 모달 보기에서만 사용되므로 레일 보기에서는 이 속성의 효과가 없습니다. |
-| *onDrop* | 함수 | 아니요 |  | 속성을 사용하면 에셋의 삭제 기능을 사용할 수 있습니다. |
-| *dropOptions* | `{allowList?: Object}` | 아니요 |  | &#39;허용 목록&#39;를 사용하여 드롭 옵션을 구성합니다. |
-| *색상 구성표* | 문자열 | 아니요 |  | 테마 구성 (`light` 또는 `dark`)을 참조하십시오. |
-| *handleSelection* | 함수 | 아니요 |  | 에셋을 선택하고 `Select` 모달의 단추를 클릭합니다. 이 함수는 모달 보기에서만 호출됩니다. 레일 보기의 경우 `handleAssetSelection` 또는 `onDrop` 함수. 예: <pre>handleSelection=(assets: Asset[])=> {..}</pre> 다음을 참조하십시오 [선택한 자산 유형](#selected-asset-type) 을 참조하십시오. |
-| *handleAssetSelection* | 함수 | 아니요 |  | 에셋이 선택 또는 선택 취소될 때 항목 배열과 함께 호출됩니다. 이 기능은 사용자가 자산을 선택할 때 자산을 수신 대기하려는 경우에 유용합니다. 예: <pre>handleSelection=(assets: Asset[])=> {..}</pre> 다음을 참조하십시오 [선택한 자산 유형](#selected-asset-type) 을 참조하십시오. |
-| *onClose* | 함수 | 아니요 |  | 다음과 같은 경우에 호출됩니다. `Close` 모달 보기의 단추를 누릅니다. 이 호출은에서 만 합니다. `modal` 보기 및 무시 `rail` 보기. |
+| *레일* | 부울 | 아니요 | false | `true`가 확인 표시되어 있는 경우 자산 선택기가 왼쪽 레일 보기에서 렌더링됩니다. `false`가 확인 표시되어 있는 경우에는 자산 선택기가 모달 보기에서 렌더링됩니다. |
+| *imsOrg* | 문자열 | 예 |  | 조직에 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]를 프로비저닝하는 중에 할당된 Adobe IMS(Identity Management System)입니다. 액세스하려는 조직이 Adobe IMS에 속해 있는지 여부를 인증하려면 `imsOrg` 키가 필요합니다. |
+| *imsToken* | 문자열 | 아니요 |  | 인증에 사용되는 IMS 전달자 토큰입니다. SUSI 외 흐름을 사용하는 경우 `imsToken`이 필요합니다. |
+| *apiKey* | 문자열 | 아니요 |  | AEM Discovery 서비스에 액세스하는 데 사용되는 API 키입니다. SUSI 외 흐름을 사용하는 경우 `apiKey`가 필요합니다. |
+| *rootPath* | 문자열 | 아니요 | /content/dam/ | 자산 선택기에 자산이 표시되는 폴더 경로입니다. 캡슐화된 형태로도 `rootPath`를 사용할 수 있습니다. 예를 들어 `/content/dam/marketing/subfolder/`라는 경로가 주어지면 자산 선택기에서는 상위 폴더로 이동할 수 없으며 하위 폴더만 표시됩니다. |
+| *path* | 문자열 | 아니요 |  | 자산 선택기가 렌더링될 때 자산의 특정 디렉터리로 이동하는 데 사용되는 경로입니다. |
+| *filterSchema* | 배열 | 아니요 |  | 필터 속성을 구성하는 데 사용되는 모델입니다. 자산 선택기에서 특정 필터 옵션을 제한하려는 경우에 유용합니다. |
+| *filterFormProps* | 오브젝트 | 아니요 |  | 검색을 세분화하는 데 사용해야 하는 필터 속성을 지정합니다. 예를 들어 MIME 유형을 JPG, PNG, GIF로 지정할 수 있습니다. |
+| *selectedAssets* | 배열 `<Object>` | 아니요 |  | 자산 선택기가 렌더링될 때 선택된 자산을 지정합니다. 자산의 ID 속성을 포함하는 오브젝트 배열이 필요합니다. 그 예로는 `[{id: 'urn:234}, {id: 'urn:555'}]` 등이 있습니다. 또한 현재 디렉터리에서 자산을 사용할 수 있어야 합니다. 다른 디렉터리를 사용해야 하는 경우 `path` 속성 값도 제공하십시오. |
+| *acvConfig* | 오브젝트 | 아니요 |  | 기본값을 재정의하기 위한 사용자 지정 구성을 포함하는 오브젝트가 포함된 자산 컬렉션 보기 속성입니다. |
+| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | 아니요 |  | OOTB 번역이 애플리케이션 요구 사항을 제대로 충족하지 않는 경우 `i18nSymbols` 속성을 통해 현지화된 사용자 지정 값을 전달할 수 있는 인터페이스를 노출할 수 있습니다. 이 인터페이스를 통해 값을 전달하면 제공된 기본 번역이 재정의되며 사용자 고유의 번역이 대신 사용됩니다.  재정의를 수행하려면 유효한 재정의하려는 `i18nSymbols`의 키에 [메시지 설명자](https://formatjs.io/docs/react-intl/api/#message-descriptor) 오브젝트를 전달해야 합니다. |
+| *intl* | 오브젝트 | 아니요 |  | 자산 선택기는 기본 OOTB 번역을 제공합니다. `intl.locale` 속성을 통해 유효한 로케일 문자열을 제공하여 번역 언어를 선택할 수 있습니다. 예를 들어 `intl={{ locale: "es-es" }}`의 경우 </br></br> 지원되는 로케일 문자열은 언어 표준의 이름을 표현하기 위해 [ISO 639 - 코드](https://www.iso.org/iso-639-language-codes.html)를 따릅니다. </br></br> 지원되는 로케일 목록: 영어 - “en-us”(기본값) 스페인어 - “es-es” 독일어 - “de-de” 프랑스어 - “fr-fr” 이탈리아어 - “it-it” 일본어 - “ja-jp” 한국어 - “ko-kr” 포르투갈어 - “pt-br” 중국어(번체) - “zh-cn” 중국어(대만) - “zh-tw” |
+| *repositoryId* | 문자열 | 아니요 | &#39;&#39; | 자산 선택기가 콘텐츠를 로드하는 저장소입니다. |
+| *additionalAemSolutions* | `Array<string>` | 아니요 | [ ] | AEM 저장소 목록을 추가할 수 있습니다. 이 속성에 정보를 제공하지 않으면 미디어 라이브러리 또는 AEM Assets 저장소만 고려됩니다. |
+| *hideTreeNav* | 부울 | 아니요 |  | 자산 트리 탐색 사이드바를 표시할지 또는 숨길지 지정합니다. 모달 보기에서만 사용되므로 레일 보기에서는 이 속성이 영향을 미치지 않습니다. |
+| *onDrop* | 함수 | 아니요 |  | 이 속성은 자산의 드롭 기능을 허용합니다. |
+| *dropOptions* | `{allowList?: Object}` | 아니요 |  | “allowList”를 사용하여 드롭 옵션을 구성합니다. |
+| *colorScheme* | 문자열 | 아니요 |  | 자산 선택기에 대한 테마를 구성합니다(`light` 또는 `dark`). |
+| *handleSelection* | 함수 | 아니요 |  | 자산을 선택하고 모달의 `Select` 버튼을 클릭하면 자산 항목 배열과 함께 호출됩니다. 이 함수는 모달 보기에서만 호출됩니다. 레일 보기의 경우 `handleAssetSelection` 또는 `onDrop` 함수를 사용하십시오. 예: <pre>handleSelection=(assets: Asset[])=> {...}</pre> 자세한 내용은 [선택된 자산 유형](#selected-asset-type)을 참조하십시오. |
+| *handleAssetSelection* | 함수 | 아니요 |  | 자산을 선택하거나 선택 취소할 때 항목 배열과 함께 호출됩니다. 이 속성은 사용자가 자산을 선택할 때 자산을 수신하려는 경우에 유용합니다. 예: <pre>handleSelection=(assets: Asset[])=> {...}</pre> 자세한 내용은 [선택된 자산 유형](#selected-asset-type)을 참조하십시오. |
+| *onClose* | 함수 | 아니요 |  | 모달 보기에서 `Close` 버튼을 누르면 호출됩니다. 이 속성은 `modal` 보기에서만 호출되며 `rail` 보기에서는 무시됩니다. |
 | *onFilterSubmit* | 함수 | 아니요 |  | 사용자가 다른 필터 조건을 변경할 때 필터 항목과 함께 호출됩니다. |
-| *selectionType* | 문자열 | 아니요 | 단일 | 구성 대상 `single` 또는 `multiple` 한 번에 에셋 선택. |
+| *selectionType* | 문자열 | 아니요 | 단일 | 한 번에 `single` 자산을 선택할지 또는 `multiple` 자산을 선택할지에 대한 구성입니다. |
 
 ## 자산 선택기 속성 사용 예 {#usage-examples}
 
-에셋 선택기를 정의할 수 있습니다 [속성](#asset-selector-properties) 다음에서 `index.html` 애플리케이션 내에서 에셋 선택기 표시를 사용자 지정하는 파일입니다.
+`index.html` 파일에서 자산 선택기 [속성](#asset-selector-properties)을 정의하여 애플리케이션 내 자산 선택기 표시를 사용자 정의할 수 있습니다.
 
-### 예제 1: 레일 보기의 자산 선택기
+### 예 1: 레일 보기의 자산 선택기
 
-![레일-뷰-예](assets/rail-view-example-vanilla.png)
+![레일-보기-예](assets/rail-view-example-vanilla.png)
 
-AssetSelector 값이 `rail` 이(가) (으)로 설정됨 `false` 또는 는 속성에 언급되지 않으며, 자산 선택기는 기본적으로 모달 보기에 표시됩니다.
+AssetSelector `rail` 값이 `false`로 설정되어 있거나 속성에 언급되어 있지 않는 경우 자산 선택기는 기본적으로 모달 보기에 표시됩니다.
 
 <!--
 ### Example 2: Use selectedAssets property in addition to the path property
@@ -403,18 +403,18 @@ Use the `path` property to define the folder name that displays automatically wh
    ![selected-assets-example](assets/selected-assets-example-vanilla.png)
 -->
 
-### 예제 2: 메타데이터 팝오버
+### 예 2: 메타데이터 팝오버
 
-정보 아이콘을 사용하여 보려는 에셋의 메타데이터를 정의하려면 다양한 속성을 사용하십시오. 정보 팝오버는 제목, 차원, 수정 날짜, 위치 및 에셋 설명을 포함하여 에셋 또는 폴더에 대한 정보 컬렉션을 제공합니다. 아래 예에서는 다양한 속성을 사용하여 에셋의 메타데이터를 표시합니다. 예를 들면 다음과 같습니다. `repo:path` 속성은 자산의 위치를 지정합니다. <!--`repo` represents the repository from where the asset is showing, whereas, `path` represents the route from where the asset or folder is rendered.-->
+다양한 속성을 통해 정보 아이콘을 사용하여 보려는 자산의 메타데이터를 정의합니다. 정보 팝오버는 자산의 제목, 차원, 수정일, 위치 및 설명을 포함하여 자산 또는 폴더에 대한 정보 모음을 제공합니다. 아래 예에서는 자산의 메타데이터를 표시하는 데 다양한 속성이 사용됩니다. 예를 들어 `repo:path` 속성은 자산의 위치를 지정합니다. <!--`repo` represents the repository from where the asset is showing, whereas, `path` represents the route from where the asset or folder is rendered.-->
 
-![metadata-popover-예제](assets/metadata-popover.png)
+![메타데이터-팝오버-예](assets/metadata-popover.png)
 
 
-### 예제 3: 레일 보기의 사용자 지정 필터 속성
+### 예 3: 레일 보기의 사용자 정의 필터 속성
 
-패싯된 검색 외에도 에셋 선택기를 사용하여 다양한 속성을 사용자 정의하여 검색 범위를 구체화할 수 있습니다 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 응용 프로그램. 애플리케이션에 사용자 지정된 검색 필터를 추가하려면 다음 코드를 추가해야 합니다. 아래 예에서는 `Type Filter` 이미지, 문서 또는 비디오 중에서 자산 유형 또는 검색을 위해 추가한 필터 유형을 필터링하는 검색.
+세분화된 검색 외에도 자산 선택기를 사용하면 다양한 속성을 사용자 정의하여 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 애플리케이션에서의 검색을 세분화할 수 있습니다. 애플리케이션에 사용자 정의된 검색 필터를 추가하려면 다음 코드를 추가해야 합니다. 아래 예의 이미지, 문서 또는 비디오 중에서 자산 유형을 필터링하는 `Type Filter` 검색 또는 검색을 위해 추가한 필터 유형
 
-![사용자 정의 필터-예제-바닐라](assets/custom-filter-example-vanilla.png)
+![사용자-정의-필터-예-바닐라](assets/custom-filter-example-vanilla.png)
 
 <!--
 
@@ -483,21 +483,21 @@ interface SelectedAsset {
 For the detailed example of Object Schema, click 
 -->
 
-## 개체 스키마를 사용하여 에셋 선택 처리 {#handling-selection}
+## 오브젝트 스키마를 사용한 자산 선택 처리 {#handling-selection}
 
-다음 `handleSelection` 속성은 에셋 선택기에서 에셋의 단일 또는 다중 선택을 처리하는 데 사용됩니다. 아래 예제는 사용 구문을 설명합니다. `handleSelection`.
+`handleSelection` 속성은 자산 선택기에서 단일 또는 다중 자산 선택을 처리하는 데 사용됩니다. 아래 예는 `handleSelection`의 사용 구문을 나타냅니다.
 
-![handle-selection](assets/handling-selection.png)
+![선택-처리](assets/handling-selection.png)
 
-## 자산 선택기 사용 {#using-asset-selector}
+## 자산 선택기 사용하기 {#using-asset-selector}
 
-자산 선택기가 설정되고 와 함께 자산 선택기를 사용하도록 인증되었습니다. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 응용 프로그램에서 에셋을 선택하거나 다른 다양한 작업을 수행하여 저장소 내에서 에셋을 검색할 수 있습니다.
+자산 선택기를 설정하고 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]와 자산 선택기를 사용하도록 인증되면 자산을 선택하거나 다른 다양한 작업을 수행하여 저장소 내에 있는 자산을 검색할 수 있습니다.
 
-![asset-selector 사용](assets/using-asset-selector.png)
+![자산-선택기-사용](assets/using-asset-selector.png)
 
 * **A**: [패널 숨기기/표시](#hide-show-panel)
 * **B**: [저장소 전환기](#repository-switcher)
-* **C**: [에셋](#repository)
+* **C**: [자산](#repository)
 * **D**: [필터](#filters)
 * **E**: [검색 창](#search-bar)
 * **F**: [정렬](#sorting)
@@ -506,53 +506,53 @@ For the detailed example of Object Schema, click
 
 ### 패널 숨기기/표시 {#hide-show-panel}
 
-왼쪽 탐색에서 폴더를 숨기려면 **[!UICONTROL 폴더 숨기기]** 아이콘. 변경 내용을 취소하려면 **[!UICONTROL 폴더 숨기기]** 아이콘을 다시 클릭합니다.
+왼쪽 탐색 영역에서 폴더를 숨기려면 **[!UICONTROL 폴더 숨기기]** 아이콘을 클릭합니다. 변경 내용을 실행 취소하려면 **[!UICONTROL 폴더 숨기기]** 아이콘을 다시 클릭합니다.
 
 ### 저장소 전환기 {#repository-switcher}
 
-에셋 선택기 를 사용하면 에셋 선택을 위한 저장소를 전환할 수도 있습니다. 왼쪽 패널의 사용 가능한 드롭다운에서 원하는 저장소를 선택할 수 있습니다. 드롭다운 목록에서 사용할 수 있는 저장소 옵션은 `repositoryId` 에 정의된 속성 `index.html` 파일. 로그인한 사용자가 액세스하는 선택한 IMS 조직의 환경을 기반으로 합니다. 소비자는 선호를 전달할 수 있습니다. `repositoryID` 이 경우 자산 선택기는 저장소 전환기 렌더링을 중단하고 지정된 저장소에서만 자산을 렌더링합니다.
+자산 선택기를 사용하면 자산 선택을 위해 저장소를 전환할 수도 있습니다. 왼쪽 패널에 있는 드롭다운에서 원하는 저장소를 선택할 수 있습니다. 드롭다운 목록에서 사용할 수 있는 저장소 옵션은 `index.html` 파일에 정의된 `repositoryId` 속성을 기반으로 하며, 이 속성은 로그인한 사용자가 액세스하는 선택된 IMS 조직의 환경을 기반으로 합니다. 소비자는 기본 `repositoryID`를 전달할 수 있으며 이 경우 자산 선택기는 저장소 전환기 렌더링을 중지하고 주어진 저장소의 자산만 렌더링합니다.
 <!--
 It is based on the `imsOrg` that is provided in the application. If you want to see the list of repositories, then `repositoryId` is required to view those specific repositories in your application.
 -->
 
-### 에셋 저장소
+### 자산 저장소
 
-작업을 수행하는 데 사용할 수 있는 에셋 폴더의 컬렉션입니다.
+작업을 수행하는 데 사용할 수 있는 자산 폴더 모음입니다.
 
 ### 기본 제공 필터 {#filters}
 
-또한 Asset Selector는 검색 결과를 구체화할 수 있는 기본 필터 옵션을 제공합니다. 다음 필터를 사용할 수 있습니다.
+자산 선택기에는 검색 결과를 세분화할 수 있는 기본 필터 옵션도 제공됩니다. 사용 가능한 필터는 다음과 같습니다.
 
-* `File type`: 폴더, 파일, 이미지, 문서 또는 비디오를 포함합니다
+* `File type`: 폴더, 파일, 이미지, 문서 또는 비디오 포함
 * `MIME type`: JPG, GIF, PPTX, PNG, MP4, DOCX, TIFF, PDF, XLSX 포함
-* `Image Size`: 이미지의 최소/최대 너비, 최소/최대 높이를 포함합니다
+* `Image Size`: 이미지 최소/최대 폭, 최소/최대 높이 포함
 
-![레일-뷰-예](assets/filters-asset-selector.png)
+![레일-보기-예](assets/filters-asset-selector.png)
 
 ### 사용자 정의 검색
 
-전체 텍스트 검색 외에도 에셋 선택기를 사용하여 사용자 지정된 검색을 사용하여 파일 내에서 에셋을 검색할 수 있습니다. 모달 보기와 레일 보기 모드 모두에서 사용자 지정 검색 필터를 사용할 수 있습니다.
+전체 텍스트 검색 외에도 자산 선택기를 사용하면 사용자 정의 검색을 사용하여 파일 내의 자산을 검색할 수 있습니다. 모달 보기 및 레일 보기 모드 모두에서 사용자 정의 검색 필터를 사용할 수 있습니다.
 
-![사용자 정의 검색](assets/custom-search.png)
+![사용자 정의-검색](assets/custom-search.png)
 
-기본 검색 필터를 만들어 자주 검색하는 필드를 저장하고 나중에 사용할 수도 있습니다. 에셋에 대한 사용자 지정 검색을 만들려면 다음을 사용할 수 있습니다. `filterSchema` 속성.
+자주 검색하는 필드를 저장하고 나중에 사용할 수 있도록 기본 검색 필터를 생성할 수도 있습니다. 자산에 대한 사용자 정의 검색을 만들기 위해 `filterSchema` 속성을 사용할 수 있습니다.
 
 ### 검색 창 {#search-bar}
 
-에셋 선택기를 사용하면 선택한 저장소 내에서 에셋의 전체 텍스트 검색을 수행할 수 있습니다. 예를 들어, 키워드를 입력하는 경우 `wave` 검색 창에서 `wave` 메타데이터 속성에 언급된 키워드가 표시됩니다.
+자산 선택기를 사용하면 선택한 저장소 내에서 자산의 전체 텍스트 검색을 수행할 수 있습니다. 예를 들어 검색 창에 `wave` 키워드를 입력하면 메타데이터 속성에 언급된 것 중 `wave` 키워드가 있는 모든 자산이 표시됩니다.
 
 ### 정렬 {#sorting}
 
-에셋의 이름, 차원 또는 크기별로 에셋을 에셋 선택기에서 정렬할 수 있습니다. 에셋을 오름차순 또는 내림차순으로 정렬할 수도 있습니다.
+자산 선택기에서 자산의 이름, 차원 또는 크기별로 자산을 정렬할 수 있습니다. 자산을 오름차순 또는 내림차순으로 정렬할 수도 있습니다.
 
 ### 보기 유형 {#types-of-view}
 
-에셋 선택기를 사용하여 에셋을 다음 네 가지 보기로 볼 수 있습니다.
+자산 선택기를 사용하면 네 가지 다른 보기에서 자산을 볼 수 있습니다.
 
-* **![목록 보기](assets/do-not-localize/list-view.png) [!UICONTROL 목록 보기]**: 목록 보기에는 스크롤할 수 있는 파일과 폴더가 한 열에 표시됩니다.
-* **![격자 보기](assets/do-not-localize/grid-view.png) [!UICONTROL 격자 보기]**: 그리드 보기에는 스크롤할 수 있는 파일과 폴더가 행 및 열 그리드에 표시됩니다.
-* **![갤러리 보기](assets/do-not-localize/gallery-view.png) [!UICONTROL 갤러리 보기]**: 갤러리 보기에서 가운데 잠금 가로 목록에 파일이나 폴더가 표시됩니다.
-* **![waterfall 보기](assets/do-not-localize/waterfall-view.png) [!UICONTROL Waterfall 보기]**: waterfall 보기에 파일 또는 폴더가 Bridge 형태로 표시됩니다.
+* **![목록 보기](assets/do-not-localize/list-view.png) [!UICONTROL 목록 보기]**: 목록 보기에는 스크롤 가능한 파일과 폴더가 단일 열에 표시됩니다.
+* **![격자 보기](assets/do-not-localize/grid-view.png) [!UICONTROL 격자 보기]**: 격자 보기에는 스크롤 가능한 파일과 폴더가 행과 열의 격자로 표시됩니다.
+* **![갤러리 보기](assets/do-not-localize/gallery-view.png) [!UICONTROL 갤러리 보기]**: 갤러리 보기에는 파일 또는 폴더가 중앙이 잠긴 가로 목록으로 표시됩니다.
+* **![워터폴 보기](assets/do-not-localize/waterfall-view.png) [!UICONTROL 워터폴 보기]**: 워터폴 보기에는 파일 또는 폴더가 Bridge 형태로 표시됩니다.
 
 <!--
 ### Modes to view Asset Selector
