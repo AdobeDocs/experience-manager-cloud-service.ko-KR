@@ -5,14 +5,19 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
 workflow-type: tm+mt
-source-wordcount: '1041'
-ht-degree: 18%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # XMP 메타데이터 {#xmp-metadata}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html) |
+| AEM as a Cloud Service | 이 문서 |
 
 XMP(Extensible Metadata Platform)은 모든 메타데이터 관리를 위해 Experience Manager Assets에서 사용하는 메타데이터 표준입니다. XMP은 다양한 애플리케이션에 대한 메타데이터를 생성하고, 처리하고, 교환할 수 있는 표준 포맷을 제공합니다.
 

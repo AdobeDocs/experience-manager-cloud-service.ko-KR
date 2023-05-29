@@ -4,14 +4,19 @@ description: 구성 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 109f07c7273cc9a4890e41bf29a1509f738d130b
+source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # 구성 [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-configure.html) |
+| AEM as a Cloud Service | 이 문서 |
 
 에서 관리자 액세스 권한이 있는 사용자 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 향상된 커넥터를 설치한 후 구성합니다. 설치에 대한 지침은 [커넥터 설치](/help/assets/workfront-integrations.md).
 
@@ -124,14 +129,14 @@ Adobe Workfront 문서와 에셋 간의 메타데이터 매핑은 AEM 메타데�
    * AEM 속성입니다. 이 참조는 워크플로우 페이로드에 상대적이어야 합니다.
    * 명명된 값입니다. 이러한 요소는 괄호로 묶어야 합니다.
    * 위의 3개 항목의 연결입니다. 다음을 사용하여 지정 `{+}`.
-   * 값을 로 둘러싸서 위의 3개 항목 변경 `{replace(<value>,”old-char”,”new-char”)}`.
+   * 값을 로 둘러싸서 위의 3개 항목 변경 `{replace(<value>,"old-char","new-char")}`.
 
 * 예를 들면 다음과 같습니다.
 
    * `status="INP"`
    * `DE:Asset Type=jcr:content/metadata/assetType`
    * `DE:Path={path}`
-   * `URL=”https://my-aem-author/assets.html”{+}{path}`
+   * `URL="https://my-aem-author/assets.html"{+}{path}`
 
 ![속성을 매핑하는 구성](/help/assets/assets/wf-map-property-config.png)
 

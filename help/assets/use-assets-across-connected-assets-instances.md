@@ -6,15 +6,20 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
 workflow-type: tm+mt
-source-wordcount: '3796'
-ht-degree: 16%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # 연결된 에셋을 사용하여에서 DAM 에셋 공유 [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html) |
+| AEM as a Cloud Service | 이 문서 |
 
 대기업에서는 웹 사이트를 구축하는 데 필요한 인프라를 배포할 수 있습니다. 이러한 웹 사이트를 만드는 데 사용되는 웹 사이트 제작 기능과 디지털 자산이 서로 다른 배포에 있을 수 있습니다. 함께 작업하는 데 필요한 기존 배포가 지리적으로 분산되는 이유 중 하나가 될 수 있습니다. 다른 이유는 다른 것을 포함하여, 이종 인프라로 이어지는 취득일 수 있다 [!DNL Experience Manager] 상위 회사가 함께 사용하려는 버전입니다.
 

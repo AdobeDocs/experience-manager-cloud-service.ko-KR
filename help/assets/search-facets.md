@@ -4,14 +4,19 @@ description: 이 문서에서는 Experience Manager에서 검색 패싯을 만�
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
 workflow-type: tm+mt
-source-wordcount: '2425'
-ht-degree: 21%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # 검색 패싯 {#search-facets}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html) |
+| AEM as a Cloud Service | 이 문서 |
 
 Adobe Experience Manager Assets의 전사적 배포는 많은 에셋을 저장할 수 있습니다. 경우에 따라 Experience Manager의 일반 검색 기능만 사용하는 경우 적합한 에셋을 찾는 것이 고되고 시간이 오래 걸릴 수 있습니다.
 

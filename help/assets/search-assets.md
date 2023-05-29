@@ -6,14 +6,19 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 33baeea93c1fa2b74946699e53d2f428e77aee77
+source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
 workflow-type: tm+mt
-source-wordcount: '4934'
-ht-degree: 7%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # AEM에서 자산 검색 {#search-assets-in-aem}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html) |
+| AEM as a Cloud Service | 이 문서 |
 
 [!DNL Adobe Experience Manager Assets] 는 더 높은 컨텐츠 속도를 달성하는 데 도움이 되는 강력한 자산 검색 방법을 제공합니다. 기본 기능과 사용자 지정 방법을 사용하여 매끄럽고 지능적인 에셋 검색 환경을 구축하여 출시 시간을 단축할 수 있습니다. 자산 검색 기능은 크리에이티브의 추가 사용, 비즈니스 사용자 및 마케터의 강력한 자산 관리 또는 DAM 관리자의 관리를 위한 디지털 자산 관리 시스템 사용의 중심입니다. 를 통해 수행할 수 있는 간단한 고급 사용자 정의 검색 [!DNL Assets] 사용자 인터페이스 또는 기타 앱 및 표면이 이러한 사용 사례를 충족하도록 도와줍니다.
 

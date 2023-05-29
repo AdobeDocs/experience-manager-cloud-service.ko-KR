@@ -5,14 +5,19 @@ contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
 exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # 의 개인 폴더 [!DNL Adobe Experience Manager Assets] {#private-folder}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/private-folder.html?lang=en) |
+| AEM as a Cloud Service | 이 문서 |
 
 에서 개인 폴더를 만들 수 있습니다. [!DNL Adobe Experience Manager Assets] 귀하만 사용할 수 있는 사용자 인터페이스입니다. 이 개인 폴더를 다른 사용자에게 공유하고 다양한 권한을 할당할 수 있습니다. 사용자가 지정한 권한 수준에 따라 폴더에서 다양한 작업(예: 폴더 내 에셋 보기 또는 에셋 편집)을 수행할 수 있습니다.
 
