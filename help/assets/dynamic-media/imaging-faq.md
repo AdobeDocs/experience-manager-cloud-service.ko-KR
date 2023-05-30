@@ -4,11 +4,11 @@ description: Adobe Sensei AI를 사용하는 스마트 이미징에서 각 사�
 contentOwner: Rick Brough
 feature: Asset Management,Renditions
 role: User
-mini-toc-levels: null
+mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: fca1da512c4015e77c1a982a551db354a0b1cace
+source-git-commit: c7555ef31d7657b4a90764224f4c8c58a6228157
 workflow-type: tm+mt
-source-wordcount: '3531'
+source-wordcount: '3539'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 1%
 >
 >Dynamic Media을 사용하여 Dynamic Media 이미지 수정자 및 스마트 이미징의 이점을 알아보십시오 [_스냅샷_](https://snapshot.scene7.com/).
 >
-> 스냅샷은 Dynamic Media의 최적화된 동적 이미지 제공 기능을 보여 주기 위해 설계된 시각적 데모 도구입니다. 테스트 이미지 또는 Dynamic Media URL로 테스트하여 다양한 Dynamic Media 이미지 수정자의 출력을 시각적으로 관찰하고 다음에 대한 스마트 이미징 최적화를 수행합니다.
+> 스냅숏은 Dynamic Media의 최적화된 동적 이미지 제공 기능을 보여 주도록 설계된 시각적 데모 도구입니다. 테스트 이미지 또는 Dynamic Media URL로 테스트하여 다양한 Dynamic Media 이미지 수정자의 출력을 시각적으로 관찰하고 다음에 대한 스마트 이미징 최적화를 수행합니다.
 >* 파일 크기(WebP 및 AVIF 게재 포함)
 >* 네트워크 대역폭
 >* DPR(장치 픽셀 비율)
@@ -80,7 +80,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 참조: [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=en) Dynamic Media 이미지 제공 및 렌더링 API에서.
 
-### 장치 픽셀 비율 최적화에 대한 정보입니다** {#dpr}
+### 장치 픽셀 비율 최적화 정보 {#dpr}
 
 CSS 픽셀 비율이라고도 하는 디바이스 픽셀 비율(DPR)은 디바이스의 물리적 픽셀과 논리 픽셀 간의 관계입니다. 특히, 망막 스크린의 등장과 함께, 최신 모바일 디바이스의 픽셀 해상도는 빠른 속도로 성장하고 있다.
 
@@ -127,17 +127,7 @@ DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측
 * 이전에는 원본 이미지와 파생 이미지가 모두 캐시되었으며 캐시를 무효화하는 2단계 프로세스였습니다. 최신 스마트 이미징에서는 파생 함수만 캐시되므로 한 단계의 캐시 무효화 프로세스를 사용할 수 있습니다.
 * 규칙 세트에서 사용자 지정 헤더를 사용하는 고객은 이전 버전의 스마트 이미징과 달리 이러한 헤더가 차단되지 않으므로 최신 스마트 이미징의 혜택을 받을 수 있습니다. 예를 들어에 제시된 대로 &quot;Timing Allow Origin&quot;, &quot;X-Robot&quot; [이미지 응답에 사용자 지정 헤더 값 추가|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-+++**스마트 이미징과 관련된 라이선스 비용이 있습니까?**
-
-아니요. 스마트 이미징은 기존 라이선스에 포함되어 있습니다. 이 규칙은 Dynamic Media Classic 또는 Experience Manager - Dynamic Media(온프레미스, AMS 및 Experience Manager as a Cloud Service)에 적용됩니다.
-
->[!IMPORTANT]
->
->Dynamic Media - 하이브리드 고객은 스마트 이미징을 사용할 수 없습니다.
-
-+++
-
-+++**스마트 이미징은 어떻게 작동합니까?**
+## 스마트 이미징 작동 방식**
 
 소비자가 이미지를 요청하면 스마트 이미징이 사용자 특성을 확인하고 사용 중인 브라우저를 기반으로 적절한 이미지 형식으로 변환한다. 이러한 형식 변환은 시각적 충실도를 저하시키지 않는 방식으로 수행된다. 스마트 이미징은 다음과 같은 방식으로 브라우저 기능에 따라 이미지를 다른 형식으로 자동으로 변환합니다.
 
@@ -149,6 +139,30 @@ DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측
 * 이러한 형식을 지원하지 않는 브라우저의 경우 원래 요청한 이미지 형식이 제공됩니다.
 
 원본 이미지 크기가 Smart Imaging에서 생성하는 크기보다 작으면 원본 이미지가 제공됩니다.
+
+## 스마트 이미징에서 지원되는 이미지 형식
+
+스마트 이미징에 지원되는 이미지 형식은 다음과 같습니다.
+
+* JPEG
+* PNG
+
+JPEG 이미지 파일 형식의 경우 스마트 이미징에서 새 형식의 품질이 다시 계산됩니다.
+
+PNG와 같이 투명성을 지원하는 이미지 파일 형식의 경우 손실 AVIF 및 WebP를 전달하도록 스마트 이미징을 구성할 수 있습니다. 손실 형식 변환의 경우, 스마트 이미징은 이미지의 URL에서 언급된 품질을 사용하거나 Dynamic Media 회사 계정에 구성된 품질을 사용합니다.
+
+## 스마트 이미징에서 무시되고 지원되는 이미지 제공 명령
+
+스마트 이미징에서 무시되는 유일한 이미지 제공 명령은 다음과 같습니다 `fmt` 및 `qlt`. 나머지 모든 명령은 지원됩니다.
+
+
++++**스마트 이미징과 관련된 라이선스 비용이 있습니까?**
+
+아니요. 스마트 이미징은 기존 라이선스에 포함되어 있습니다. 이 규칙은 Dynamic Media Classic 또는 Experience Manager - Dynamic Media(온프레미스, AMS 및 Experience Manager as a Cloud Service)에 적용됩니다.
+
+>[!IMPORTANT]
+>
+>Dynamic Media - 하이브리드 고객은 스마트 이미징을 사용할 수 없습니다.
 
 +++
 
@@ -169,19 +183,6 @@ DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측
 * [브라우저 형식 변환](#bfc)
 * [장치 픽셀 비율](#dpr)
 * [네트워크 대역폭](#network)
-
-+++
-
-+++**지원되는 이미지 형식은 무엇입니까?**
-
-스마트 이미징에 지원되는 이미지 형식은 다음과 같습니다.
-
-* JPEG
-* PNG
-
-JPEG 이미지 파일 형식의 경우 스마트 이미징에서 새 형식의 품질이 다시 계산됩니다.
-
-PNG와 같이 투명성을 지원하는 이미지 파일 형식의 경우 손실 AVIF 및 WebP를 전달하도록 스마트 이미징을 구성할 수 있습니다. 손실 형식 변환의 경우, 스마트 이미징은 이미지의 URL에서 언급된 품질을 사용하거나 Dynamic Media 회사 계정에 구성된 품질을 사용합니다.
 
 +++
 
@@ -390,12 +391,6 @@ WebP에서 스마트 이미징을 이미 활성화했지만 위에 나열된 다
 +++**스마트 이미징에서 품질 출력 비율 설정을 조정합니까?**
 
 예. 스마트 이미징은 품질 비율을 자동으로 조정합니다. 이 품질 비율은 Adobe이 개발한 머신 러닝 알고리즘을 사용하여 결정됩니다. 이 비율은 범위에 특정하지 않습니다.
-
-+++
-
-+++**지원되는 이미지 제공 명령 또는 무시되는 이미지 제공 명령은 무엇입니까?**
-
-무시되는 유일한 명령은 다음과 같습니다 `fmt` 및 `qlt`. 나머지 모든 명령은 지원됩니다.
 
 +++
 
