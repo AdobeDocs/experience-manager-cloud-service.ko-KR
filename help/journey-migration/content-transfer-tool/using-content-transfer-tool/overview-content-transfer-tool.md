@@ -5,7 +5,7 @@ exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 source-git-commit: 8197b4f4e5cda21532c3660c2f0ec4855ba53a6a
 workflow-type: tm+mt
 source-wordcount: '648'
-ht-degree: 58%
+ht-degree: 63%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 58%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="개요"
->abstract="컨텐츠 전송 도구는 Adobe에서 개발한 도구로, 소스 AEM 인스턴스(온-프레미스 또는 AMS)에서 대상 AEM Cloud Service 인스턴스로 기존 컨텐츠를 마이그레이션하는 데 사용할 수 있습니다. 이 도구는 주체(사용자 또는 그룹)도 자동으로 전송합니다."
+>abstract="콘텐츠 전송 도구는 Adobe에서 개발한 도구로, 기존 콘텐츠를 소스 AEM 인스턴스(온프레미스 또는 AMS)에서 대상 AEM Cloud Service 인스턴스로 마이그레이션하는 데 사용할 수 있습니다. 이 도구는 주체(사용자 또는 그룹)도 자동으로 전송합니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="지침 및 모범 사례"
 
 컨텐츠 전송 도구는 Adobe에서 개발한 도구로, 소스 AEM 인스턴스(온-프레미스 또는 AMS)에서 대상 AEM Cloud Service 인스턴스로 기존 컨텐츠를 마이그레이션하는 데 사용할 수 있습니다.
