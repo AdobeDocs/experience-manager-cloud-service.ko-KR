@@ -6,10 +6,10 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: dbc6b5c0f11e52b45981cab36381258edcf6c167
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3829'
+ht-degree: 16%
 
 ---
 
@@ -316,6 +316,7 @@ Experience Manager에 `expired` 사이트 작성자가 사이트 페이지에서
 ## 제한 사항 및 우수 사례 {#tip-and-limitations}
 
 * 자산 사용에 대한 통찰력을 얻으려면 다음을 구성하십시오. [Assets Insight](/help/assets/assets-insights.md) 에 대한 기능 [!DNL Sites] 인스턴스.
+* 구성 요소 작성의 경로 브라우저 사용은 연결된 자산에서 지원되지 않습니다.
 
 ### 권한 및 자산 관리 {#permissions-and-managing-assets}
 
