@@ -6,16 +6,16 @@ feature: Asset Management,Renditions
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: c48885dc11b0162f0288962a53e1d95574a3d406
+source-git-commit: 6f9ddcf31a1869bb8bebb566d05c371e996fe354
 workflow-type: tm+mt
-source-wordcount: '3536'
+source-wordcount: '3535'
 ht-degree: 1%
 
 ---
 
-# 스마트 이미징 FAQ {#smart-imaging}
+# 스마트 이미징 {#smart-imaging}
 
-## 스마트 이미징 기본 정보
+## 스마트 이미징 기본 정보{#about-smart-imaging}
 
 스마트 이미징 기술은 Adobe Sensei AI 기능을 적용하며 기존 &quot;이미지 사전 설정&quot;과 함께 작동합니다. 클라이언트 브라우저 기능을 기반으로 이미지 형식, 크기 및 품질을 자동으로 최적화하여 이미지 제공 성능을 향상시키는 데 사용됩니다.
 
@@ -29,7 +29,7 @@ ht-degree: 1%
 >
 >Dynamic Media을 사용하여 Dynamic Media 이미지 수정자 및 스마트 이미징의 이점을 알아보십시오 [_스냅샷_](https://snapshot.scene7.com/).
 >
-> 스냅숏은 Dynamic Media의 최적화된 동적 이미지 제공 기능을 보여 주도록 설계된 시각적 데모 도구입니다. 테스트 이미지 또는 Dynamic Media URL로 테스트하여 다양한 Dynamic Media 이미지 수정자의 출력을 시각적으로 관찰하고 다음에 대한 스마트 이미징 최적화를 수행합니다.
+> 스냅샷은 Dynamic Media의 최적화된 동적 이미지 제공 기능을 보여 주기 위해 설계된 시각적 데모 도구입니다. 테스트 이미지 또는 Dynamic Media URL로 테스트하여 다양한 Dynamic Media 이미지 수정자의 출력을 시각적으로 관찰하고 다음에 대한 스마트 이미징 최적화를 수행합니다.
 >* 파일 크기(WebP 및 AVIF 게재 포함)
 >* 네트워크 대역폭
 >* DPR(장치 픽셀 비율)
@@ -127,7 +127,7 @@ DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측
 * 이전에는 원본 이미지와 파생 이미지가 모두 캐시되었으며 캐시를 무효화하는 2단계 프로세스였습니다. 최신 스마트 이미징에서는 파생 함수만 캐시되므로 한 단계의 캐시 무효화 프로세스를 사용할 수 있습니다.
 * 규칙 세트에서 사용자 지정 헤더를 사용하는 고객은 이전 버전의 스마트 이미징과 달리 이러한 헤더가 차단되지 않으므로 최신 스마트 이미징의 혜택을 받을 수 있습니다. 예를 들어에 제시된 대로 &quot;Timing Allow Origin&quot;, &quot;X-Robot&quot; [이미지 응답에 사용자 지정 헤더 값 추가|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-## 스마트 이미징 작동 방식
+## 스마트 이미징 작동 방식{#how-smart-imaging-works}
 
 소비자가 이미지를 요청하면 스마트 이미징이 사용자 특성을 확인하고 사용 중인 브라우저를 기반으로 적절한 이미지 형식으로 변환한다. 이러한 형식 변환은 시각적 충실도를 저하시키지 않는 방식으로 수행된다. 스마트 이미징은 다음과 같은 방식으로 브라우저 기능에 따라 이미지를 다른 형식으로 자동으로 변환합니다.
 
@@ -140,7 +140,7 @@ DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측
 
 원본 이미지 크기가 Smart Imaging에서 생성하는 크기보다 작으면 원본 이미지가 제공됩니다.
 
-## 스마트 이미징에서 이미지 형식 지원
+## 스마트 이미징에서 이미지 형식 지원{#image-format-support}
 
 스마트 이미징에 지원되는 이미지 형식은 다음과 같습니다.
 
@@ -151,11 +151,11 @@ JPEG 이미지 파일 형식의 경우 스마트 이미징에서 새 형식의 �
 
 PNG와 같이 투명성을 지원하는 이미지 파일 형식의 경우 손실 AVIF 및 WebP를 전달하도록 스마트 이미징을 구성할 수 있습니다. 손실 형식 변환의 경우, 스마트 이미징은 이미지의 URL에서 언급된 품질을 사용하거나 Dynamic Media 회사 계정에 구성된 품질을 사용합니다.
 
-## 스마트 이미징에서 이미지 제공 명령 지원
+## 스마트 이미징에서 이미지 제공 명령 지원{#imaging-serving-command-support}
 
 이미지 제공 명령 `fmt` 및 `qlt` 은 지원되지 않으며 나머지 모든 명령은 지원됩니다.
 
-## 스마트 이미징에 대한 FAQ
+## 스마트 이미징에 대한 FAQ{#smart-imaging-faq}
 
 +++**스마트 이미징과 관련된 라이선스 비용이 있습니까?**
 
