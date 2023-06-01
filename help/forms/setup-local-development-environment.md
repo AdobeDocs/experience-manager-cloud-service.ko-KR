@@ -2,10 +2,10 @@
 title: Adobe Experience Manager Forms as a Cloud Service을 위한 로컬 개발 환경 설정
 description: Adobe Experience Manager Forms as a Cloud Service을 위한 로컬 개발 환경 설정
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a1b186fec2d6de0934ffebc96967d36a967c044e
+source-git-commit: 7dc36220c1f12177037aaa79d864c1ec2209a301
 workflow-type: tm+mt
-source-wordcount: '3042'
-ht-degree: 4%
+source-wordcount: '2818'
+ht-degree: 2%
 
 ---
 
@@ -329,201 +329,11 @@ Experience Manager Forms에 대한 Dispatcher 캐시를 as a Cloud Service으로
 
 로컬 개발 환경이 준비되었습니다.
 
-## 기존 AEM Archetype 기반 프로젝트에 대해 적응형 Forms 핵심 구성 요소 활성화 {#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project}
+## AEM Forms as a Cloud Service 및 로컬 개발 환경에서 적응형 Forms 핵심 구성 요소 활성화
 
-AEM Forms as a Cloud Service으로 AEM Archetype 버전 40 이상 기반 프로그램을 사용하는 경우 환경에 대해 핵심 구성 요소가 자동으로 활성화됩니다. 환경에 대해 핵심 구성 요소를 활성화하면 **적응형 양식 (핵심 구성 요소)** 템플릿 및 캔버스 테마가 해당 환경에 추가됩니다. 적응형 양식 핵심 구성 요소는 2023.02.0 릴리스 이전의 프리릴리스 일부로 제공되었으므로 사용 중인 AEM SDK 버전이 2023.02.0 이전 버전이라면 [해당 환경에서 `prerelease` 플래그가 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features)되어 있어야 합니다.
+AEM Forms as a Cloud Service에서 적응형 Forms 핵심 구성 요소를 활성화하면 AEM Forms Cloud Service 인스턴스를 사용하여 적응형 Forms 및 Headless Forms 기반의 핵심 구성 요소를 만들고, 게시하고, 여러 채널에 전달할 수 있습니다. Headless 적응형 Forms을 사용하려면 적응형 Forms 핵심 구성 요소 사용 환경이 필요합니다.
 
-이전 버전의 Archetype을 기반으로 하는 AEM Forms as a Cloud Service 환경에 대해 적응형 Forms 핵심 구성 요소를 활성화하려면 프로젝트에 WCM 핵심 구성 요소 예 아티팩트와 Forms 핵심 구성 요소 아티팩트(예 포함)를 모두 포함하십시오.
-
-1. 일반 텍스트 코드 편집기에서 AEM Archetype 프로젝트 폴더를 엽니다. 예: VS 코드.
-
-1. 상위 수준 열기 `.pom` 로컬 환경에서 AEM Archetype 프로젝트의 파일(상위 pom)이 파일에 다음 속성을 추가하고 저장합니다.
-
-   ```XML
-   <properties>
-       <core.forms.components.version>2.0.4</core.forms.components.version> <!-- Replace the version with the latest released version at https://github.com/adobe/aem-core-forms-components/tags -->
-       <core.wcm.components.version>2.21.2</core.wcm.components.version>
-   </properties>
-   ```
-
-   최신 버전의 경우 `core.forms.components` 및 `core.wcm.components`, 확인 [핵심 구성 요소 설명서](https://github.com/adobe/aem-core-forms-components).
-
-1. 최상위 수준(상위)의 종속성 섹션 `pom.xml` 파일에서 다음 종속성을 추가합니다.
-
-   ```XML
-       <!-- WCM Core Component Examples Dependencies -->
-           <dependency>
-               <groupId>com.adobe.cq</groupId>
-               <artifactId>core.wcm.components.examples.ui.apps</artifactId>
-               <type>zip</type>
-               <version>${core.wcm.components.version}</version>
-           </dependency>
-           <dependency>
-               <groupId>com.adobe.cq</groupId>
-               <artifactId>core.wcm.components.examples.ui.content</artifactId>
-               <type>zip</type>
-               <version>${core.wcm.components.version}</version>
-           </dependency>
-           <dependency>
-               <groupId>com.adobe.cq</groupId>
-               <artifactId>core.wcm.components.examples.ui.config</artifactId>
-               <version>${core.wcm.components.version}</version>
-               <type>zip</type>
-           </dependency>    
-           <!-- End of WCM Core Component Examples Dependencies -->
-            <!-- Forms Core Component Dependencies -->
-           <dependency>
-               <groupId>com.adobe.aem</groupId>
-               <artifactId>core-forms-components-core</artifactId>
-               <version>${core.forms.components.version}</version>
-           </dependency>
-           <dependency>
-               <groupId>com.adobe.aem</groupId>
-               <artifactId>core-forms-components-apps</artifactId>
-               <version>${core.forms.components.version}</version>
-               <type>zip</type>
-           </dependency>
-           <dependency>
-               <groupId>com.adobe.aem</groupId>
-               <artifactId>core-forms-components-af-core</artifactId>
-               <version>${core.forms.components.version}</version>
-           </dependency>
-           <dependency>
-               <groupId>com.adobe.aem</groupId>
-               <artifactId>core-forms-components-af-apps</artifactId>
-               <version>${core.forms.components.version}</version>
-               <type>zip</type>
-           </dependency>
-           <dependency>
-               <groupId>com.adobe.aem</groupId>
-               <artifactId>core-forms-components-examples-apps</artifactId>
-               <type>zip</type>
-               <version>${core.forms.components.version}</version>
-           </dependency>
-           <dependency>
-               <groupId>com.adobe.aem</groupId>
-               <artifactId>core-forms-components-examples-content</artifactId>
-               <type>zip</type>
-               <version>${core.forms.components.version}</version>
-           </dependency>
-     <!-- End of AEM Forms Core Component Dependencies -->
-   ```
-
-1. 를 엽니다. `all/pom.xml` 을(를) 파일화하고에 다음 종속성을 추가합니다. `embedded` 적응형 Forms 핵심 구성 요소 아티팩트를 AEM Archetype 프로젝트에 추가하는 섹션:
-
-   ```XML
-       <!-- WCM Core Component Examples Dependencies -->
-   
-           <!-- inside plugin config of filevault-package-maven-plugin -->  
-           <!-- embed wcm core components examples artifacts -->
-   
-           <embedded>
-           <groupId>com.adobe.cq</groupId>
-           <artifactId>core.wcm.components.examples.ui.apps</artifactId>
-           <type>zip</type>
-           <target>/apps/${appId}-vendor-packages/content/install</target>
-           </embedded>
-           <embedded>
-           <groupId>com.adobe.cq</groupId>
-           <artifactId>core.wcm.components.examples.ui.content</artifactId>
-           <type>zip</type>
-           <target>/apps/${appId}-vendor-packages/content/install</target>
-            </embedded>
-           <embedded>
-           <groupId>com.adobe.cq</groupId>
-           <artifactId>core.wcm.components.examples.ui.config</artifactId>
-           <type>zip</type>
-           <target>/apps/${appId}-vendor-packages/content/install</target>
-           </embedded>
-           <!-- embed forms core components artifacts -->
-           <embedded>
-           <groupId>com.adobe.aem</groupId>
-           <artifactId>core-forms-components-af-apps</artifactId>
-           <type>zip</type>
-           <target>/apps/${appId}-vendor-packages/application/install</target>
-            </embedded>
-           <embedded>
-           <groupId>com.adobe.aem</groupId>
-           <artifactId>core-forms-components-af-core</artifactId>
-           <target>/apps/${appId}-vendor-packages/application/install</target>
-            </embedded>
-           <embedded>
-           <groupId>com.adobe.aem</groupId>
-           <artifactId>core-forms-components-examples-apps</artifactId>
-           <type>zip</type>
-           <target>/apps/${appId}-vendor-packages/content/install</target>
-           </embedded>
-           <embedded>
-           <groupId>com.adobe.aem</groupId>
-           <artifactId>core-forms-components-examples-content</artifactId>
-           <type>zip</type>
-           <target>/apps/${appId}-vendor-packages/content/install</target>
-           </embedded>
-   ```
-
-   >[!NOTE]
-   ${appId}을(를) Archetype의 appId로 바꿉니다.
-
-1. 의 종속성 섹션에서 다음을 수행합니다 `all/pom.xml` 파일에서 다음 종속성을 추가합니다.
-
-   ```XML
-       <!-- Other existing dependencies -->
-       <!-- wcm core components examples dependencies -->
-        <dependency>
-        <groupId>com.adobe.cq</groupId>
-        <artifactId>core.wcm.components.examples.ui.apps</artifactId>
-        <type>zip</type>
-       </dependency>
-       <dependency>
-        <groupId>com.adobe.cq</groupId>
-        <artifactId>core.wcm.components.examples.ui.config</artifactId>
-        <type>zip</type>
-        </dependency>
-       <dependency>
-        <groupId>com.adobe.cq</groupId>
-        <artifactId>core.wcm.components.examples.ui.content</artifactId>
-        <type>zip</type>
-       </dependency>
-        <!-- forms core components dependencies -->
-       <dependency>
-        <groupId>com.adobe.aem</groupId>
-        <artifactId>core-forms-components-af-apps</artifactId>
-        <type>zip</type>
-       </dependency>
-       <dependency>
-        <groupId>com.adobe.aem</groupId>
-        <artifactId>core-forms-components-examples-apps</artifactId>
-        <type>zip</type>
-       </dependency>
-        <dependency>
-        <groupId>com.adobe.aem</groupId>
-        <artifactId>core-forms-components-examples-content</artifactId>
-        <type>zip</type>
-       </dependency>
-   ```
-
-1. 포함 `af-core bundle` 의 종속성 `ui.apps/pom.xml`
-
-   ```XML
-        <dependency>
-       <groupId>com.adobe.aem</groupId>
-       <artifactId>core-forms-components-af-core</artifactId>
-       </dependency>
-   ```
-
-   >[!NOTE]
-   다음 적응형 Forms 핵심 구성 요소 아티팩트가 프로젝트에 포함되지 않았는지 확인합니다.
-   `<dependency>`
-   `<groupId>com.adobe.aem</groupId>`
-   `<artifactId>core-forms-components-apps</artifactId>`
-   `</dependency>`
-   및
-   `<dependency>`
-   `<groupId>com.adobe.aem</groupId>`
-   `<artifactId>core-forms-components-core</artifactId>`
-   `</dependency>`
-
-1. [파이프라인 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html). 파이프라인이 성공적으로 실행되면 환경에 대해 적응형 Forms 핵심 구성 요소가 활성화됩니다. 또한 적응형 Forms(핵심 구성 요소) 템플릿 및 캔버스 테마가 Forms as a Cloud Service 환경에 추가됩니다.
+자세한 내용은 [AEM Forms as a Cloud Service 및 로컬 개발 환경에서 적응형 Forms 핵심 구성 요소 활성화](/help/forms/enable-adaptive-forms-core-components.md)
 
 
 ## 로컬 개발 환경 업그레이드 {#upgrade-your-local-development-environment}

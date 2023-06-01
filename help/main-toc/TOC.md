@@ -8,10 +8,10 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: f9e05b8d8fa6286c121f32e1e1f390a149471921
+source-git-commit: 7dc36220c1f12177037aaa79d864c1ec2209a301
 workflow-type: tm+mt
-source-wordcount: '4011'
-ht-degree: 100%
+source-wordcount: '4027'
+ht-degree: 99%
 
 ---
 
@@ -509,6 +509,7 @@ ht-degree: 100%
    + 설정 및 마이그레이션 {#setup-configure-migrate}
       + [Cloud Service 환경에 온보드](/help/forms/setup-forms-cloud-service.md)
       + [로컬 개발 환경 설정](/help/forms/setup-local-development-environment.md)
+      + [AEM Forms as a Cloud Service 및 로컬 개발 환경에서 적응형 Forms 핵심 구성 요소 활성화](/help/forms/enable-adaptive-forms-core-components.md)
       + [통합 스토리지 커넥터 구성](/help/forms/configure-unified-storage-connector.md)
       + [ [!DNL AEM 6.5 Forms] 이하 버전에서 [!DNL AEM Forms] as a Cloud Service로 마이그레이션](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [그룹 및 권한](/help/forms/forms-groups-privileges-tasks.md)
@@ -970,3 +971,4 @@ ht-degree: 100%
    + [Universal Editor 아키텍처](/help/implementing/universal-editor/architecture.md)
    + [속성 및 유형](/help/implementing/universal-editor/attributes-types.md)
    + [Universal Editor 인증](/help/implementing/universal-editor/authentication.md)
+
