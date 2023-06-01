@@ -4,14 +4,19 @@ description: 클라우드 리소스를 구성한 후에는 AEM 제품 프로필�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+source-git-commit: fd14d9f88fed4ef0f90b5dd0c92c53b1a298bd76
 workflow-type: tm+mt
-source-wordcount: '788'
-ht-degree: 100%
+source-wordcount: '805'
+ht-degree: 98%
 
 ---
 
 # AEM 제품 프로필 할당 {#assign-profiles-aem}
+
+>[!CONTEXTUALHELP]
+>id="assets_user_entitlements"
+>title="AEM 제품 프로필 할당"
+>abstract="Experience Manager Assets을 사용할 권한이 없습니다. 관리자에게 문의하십시오."
 
 이 [온보딩 여정](overview.md) 부분에서는 AEM 제품 프로필을 사용하여 팀에 AEM 액세스 권한을 부여하는 방법을 배웁니다.
 
