@@ -4,9 +4,9 @@ description: 설치  [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: d0d89c3905b2bf357de8a7599245c9360444e53b
+source-git-commit: 21f33c0b8710dd9d9db30543defff7dae9942c06
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '655'
 ht-degree: 2%
 
 ---
@@ -33,26 +33,11 @@ ht-degree: 2%
 
 커넥터를 설치하기 전에 다음 사전 설치 단계를 따르십시오.
 
-1. AEM as a Cloud Service 프로그램에서 고급 네트워킹을 구성하고 IP 허용 목록을 활성화한 경우 이벤트 구독 및 다양한 API 호출이 AEM으로 전달되도록 허용하려면 이 허용 목록에 Workfront IP를 추가해야 합니다.
+1. [방화벽 구성](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html). 의 IP 클러스터를 알기 위해 [!DNL Workfront], 다음으로 이동 [!UICONTROL 설정] > [!UICONTROL 시스템] > [!UICONTROL 고객 정보].
 
-   * [Workfront 클러스터 IP](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/get-started-administration/configure-your-firewall.html?lang=en#ip-addresses-to-allow-for-clusters-1-2-3-5-7-8-and-9). 의 IP 클러스터를 알기 위해 [!DNL Workfront], 다음으로 이동 **[!UICONTROL 설정]** > **[!UICONTROL 시스템]** > **[!UICONTROL 고객 정보]**.
+1. Dispatcher에서 다음 HTTP 헤더를 허용합니다. `authorization`, `username`, 및 `apikey`. 허용 `GET`, `POST`, 및 `PUT` 에 대한 요청 `/bin/workfront-tools`.
 
-   * [Workfront 이벤트 구독 API IP](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html)
-   >[!IMPORTANT]
-   >
-   >* 프로그램에 대해 고급 네트워킹이 구성되어 있고 IP 허용 목록을 사용하는 경우 고급 Workfront 커넥터 아키텍처의 제한으로 인해 Cloud Manager의 허용 목록에 프로그램 이그레스 IP를 추가해야 합니다.
-   >
-   >* p{PROGRAM_ID}.external.adobeaemcloud.com
-   >
-   >* 프로그램의 IP를 찾으려면 터미널 창을 열고 다음과 같은 명령을 실행합니다.
-
-      >
-      >    ```TXT
-      >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
-      >
-      >    ```
-
-1. 다음 오버레이가 없는지 확인합니다. [!DNL Experience Manager] 리포지토리. 이러한 경로에 기존 오버레이가 있는 경우 오버레이를 제거하거나 둘 사이의 변경 사항 델타를 병합해야 합니다.
+1. 다음 경로가에 없는지 확인합니다. [!DNL Experience Manager] 저장소:
 
    * `/apps/dam/gui/coral/components/admin/schemaforms/formbuilder`
    * `/apps/dam/gui/coral/components/admin/folderschemaforms/formbuilder`
