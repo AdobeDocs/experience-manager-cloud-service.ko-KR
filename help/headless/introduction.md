@@ -4,7 +4,7 @@ description: 상세한 설명서와 Headless 여정의 결합을 통해 Adobe Ex
 landing-page-description: Adobe Experience Manager as a Cloud Service에서 Headless를 사용하고 관리하는 방법을 이해합니다.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 source-git-commit: e03c067f4337bbf0e98cb4015b9be4fc99fc17c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '699'
 ht-degree: 100%
 
