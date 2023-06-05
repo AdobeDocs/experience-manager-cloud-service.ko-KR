@@ -2,9 +2,8 @@
 title: AEM as a Cloud Service용 대상 선택기
 description: AEM 대상 선택기 를 사용하여 원본 에셋의 사본으로 사용할 수 있는 에셋을 표시하고 선택합니다.
 contentOwner: Adobe
-feature: destination selector
 role: Admin,User
-source-git-commit: fc156b95ebbdb0546f9fb334b0cb6f599f5f2692
+source-git-commit: d6ea74834f73ad90f5df929a2806cd1ed53af0aa
 workflow-type: tm+mt
 source-wordcount: '1907'
 ht-degree: 38%

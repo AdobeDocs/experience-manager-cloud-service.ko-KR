@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 493a2bae1d97424b4a1664e9f421d3f19b0cb477
+source-git-commit: d6ea74834f73ad90f5df929a2806cd1ed53af0aa
 workflow-type: tm+mt
-source-wordcount: '4027'
+source-wordcount: '4030'
 ht-degree: 99%
 
 ---
@@ -374,6 +374,7 @@ ht-degree: 99%
    + [ [!DNL Assets]에서의 접근성](/help/assets/accessibility.md)
    + 디지털 자산 관리 {#manage}
       + [마이크로 프론트엔드 자산 선택기](/help/assets/asset-selector.md)
+      + [마이크로 프론트엔드 대상 선택기](/help/assets/destination-selector.md)
       + [자산 공유](/help/assets/share-assets.md)
       + [활동 및 DAM 작업 모니터링](/help/assets/assets-activity-history.md)
       + [자산 마이크로서비스 사용 시작하기](/help/assets/asset-microservices-configure-and-use.md)
