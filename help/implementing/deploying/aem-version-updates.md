@@ -3,7 +3,7 @@ title: AEM 버전 업데이트
 description: AEM에서 최신 버전에서 프로젝트를 유지하기 위해 as a Cloud Service에서 CI/CD(지속적 통합 및 제공)를 사용하는 방법에 대해 알아봅니다.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 7cdc7bb56565cccc04a2dcb74a6c8088ed4e7847
+source-git-commit: dd1560aa4d260320f565ad993a8b3650c3ee5288
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 23%
@@ -49,8 +49,8 @@ AEM 업데이트는 여러 단계를 포함하는 강력하고 완전히 자동�
 
 ## 복합 노드 저장소 {#composite-node-store}
 
-노드 클러스터인 작성 인스턴스를 포함하여 대부분의 경우 업데이트로 인해 다운타임이 발생하지 않습니다. 다음 이유로 인해 롤링 업데이트가 가능합니다. [oak의 복합 노드 저장소 기능입니다.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
+대부분의 경우 업데이트는 노드 클러스터인 작성 인스턴스를 포함하여 중단 없이 이루어집니다. 다음 이유로 인해 롤링 업데이트가 가능합니다. [oak의 복합 노드 저장소 기능입니다.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
 
-이 기능을 사용하면 AEM에서 여러 저장소를 동시에 참조할 수 있습니다. 롤링 중 [파란색-녹색 배포,](/help/implementing/deploying/overview.md#how-rolling-deployments-work) 새 녹색 AEM 버전에는 자체 버전이 포함되어 있습니다. `/libs` (TarMK 기반 변경 불가능한 저장소), 이전 파란색 AEM 버전과 구별되지만 둘 다 와 같은 영역이 포함된 공유 DocumentMK 기반 변경 가능한 저장소를 참조합니다. `/content` , `/conf` , `/etc` 외.
+이 기능을 사용하면 AEM에서 여러 저장소를 동시에 참조할 수 있습니다. 다음 기간 [순환 배포,](/help/implementing/deploying/overview.md#how-rolling-deployments-work) 새 AEM 버전에는 자체 버전이 포함됩니다 `/libs` (TarMK 기반 변경 불가능한 저장소), 이전 AEM 버전과 구별되지만 둘 다 와 같은 영역을 포함하는 공유 DocumentMK 기반 변경 가능한 저장소를 참조합니다. `/content` , `/conf` , `/etc` 외.
 
-왜냐하면 파란색과 녹색 모두 `/libs`, 두 기능은 모두 롤링 업데이트 중에 활성화될 수 있으며, 파란색이 완전히 녹색으로 대체될 때까지 둘 다 트래픽을 처리합니다.
+이전 버전과 새 버전 모두 의 자체 버전이 있으므로 `/libs`, 두 기능은 모두 롤링 업데이트 중에 활성화될 수 있으며, 이전 기능이 새 기능으로 완전히 대체될 때까지 둘 다 트래픽을 처리할 수 있습니다.
