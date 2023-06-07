@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 아키텍처 소개
 description: Adobe Experience Manager as a Cloud Service 아키텍처 소개.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: c67be5b7f5dc454511753faa16bc46b10e72dde4
+source-git-commit: 1e9ca4f18c3698dbf4bbc0f104559e14f429e28e
 workflow-type: tm+mt
-source-wordcount: '1807'
-ht-degree: 100%
+source-wordcount: '1827'
+ht-degree: 97%
 
 ---
 
@@ -124,7 +124,15 @@ AEM 프로그램은 다음을 포함하는 컨테이너입니다.
       * 에셋 통합 및 처리에서는 전용 Assets Compute Service를 사용합니다.
    * 미리보기 계층은 단일 미리보기 노드로 구성되어 있습니다. 게시 계층에 게시하기 전 콘텐츠의 품질 보증에 사용됩니다.
 
-   * 게시 계층은 단일 게시 팜 내에 있는 두 개 이상의 노드로 구성됩니다. 이 노드들은 서로 독립적으로 작동할 수 있습니다. 각 노드는 AEM Publisher와 AEM Dispatcher 모듈이 장착된 웹 서버로 구성되며, 사이트 트래픽 요구 사항에 따라 크기가 자동으로 조정됩니다.
+   * 게시 계층은 단일 게시 팜 내에 있는 두 개 이상의 노드로 구성됩니다.
+
+      * 노드들은 서로 독립적으로 동작할 수 있다.
+
+      * 각 노드는 AEM Publisher와 AEM Dispatcher 모듈이 장착된 웹 서버로 구성되며, 
+
+      * 사이트 트래픽 요구 사항에 따라 크기가 자동으로 조정됩니다.
+
+      * 그러나 기본적으로 기본 영역에는 단일 게시 팜이 있습니다 [추가 게시 영역](/help/operations/additional-publish-regions.md) 라이센스가 부여될 수 있습니다.
 
       * 최종 사용자 또는 사이트 방문자는 AEM 게시 서비스를 통해 웹 사이트를 방문합니다.
 

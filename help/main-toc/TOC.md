@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d6ea74834f73ad90f5df929a2806cd1ed53af0aa
+source-git-commit: 344013ed479f72b7097177cce911fc683f1dbed9
 workflow-type: tm+mt
-source-wordcount: '4030'
+source-wordcount: '4033'
 ht-degree: 99%
 
 ---
@@ -510,7 +510,7 @@ ht-degree: 99%
    + 설정 및 마이그레이션 {#setup-configure-migrate}
       + [Cloud Service 환경에 온보드](/help/forms/setup-forms-cloud-service.md)
       + [로컬 개발 환경 설정](/help/forms/setup-local-development-environment.md)
-      + [AEM Forms as a Cloud Service 및 로컬 개발 환경에서 적응형 Forms 핵심 구성 요소 활성화](/help/forms/enable-adaptive-forms-core-components.md)
+      + [AEM Forms as a Cloud Service 및 로컬 개발 환경에서 적응형 양식 핵심 구성 요소 활성화](/help/forms/enable-adaptive-forms-core-components.md)
       + [통합 스토리지 커넥터 구성](/help/forms/configure-unified-storage-connector.md)
       + [ [!DNL AEM 6.5 Forms] 이하 버전에서 [!DNL AEM Forms] as a Cloud Service로 마이그레이션](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [그룹 및 권한](/help/forms/forms-groups-privileges-tasks.md)
@@ -523,11 +523,11 @@ ht-degree: 99%
          + [Microsoft Power Automate와 적응형 양식 통합](/help/forms/forms-microsoft-power-automate-integration.md)
          + [AEM Sites 페이지에 적응형 양식 임베드](/help/forms/embed-adaptive-form-aem-sites.md)
       + 양식 데이터 모델 {#use-form-data-model}
-         + [데이터 소스를 클라우드 서비스에 연결](/help/forms/data-integration.md)
+         + [데이터 소스를 Cloud Service에 연결](/help/forms/data-integration.md)
          + [데이터 소스 구성](/help/forms/configure-data-sources.md)
          + [ [!DNL Microsoft Dynamics] OData 구성](/help/forms/ms-dynamics-odata-configuration.md)
          + [ [!DNL Azure] 스토리지 구성](/help/forms/configure-azure-storage.md)
-         + [ [!DNL Microsoft Dynamics 365] 및 [!DNL Salesforce] 클라우드 서비스 구성](/help/forms/configure-msdynamics-salesforce.md)
+         + [ [!DNL Microsoft Dynamics 365] 및 [!DNL Salesforce] Cloud Service 구성](/help/forms/configure-msdynamics-salesforce.md)
          + [양식 데이터 모델 만들기](/help/forms/create-form-data-models.md)
          + [양식 데이터 모델을 사용하여 작업](/help/forms/work-with-form-data-model.md)
          + [양식 데이터 모델 사용](/help/forms/using-form-data-model.md)
@@ -593,11 +593,11 @@ ht-degree: 99%
       + [Forms Designer 설치 및 구성](/help/forms/installing-configuring-designer.md)
       + [Forms Designer를 사용하여 템플릿 만들기](/help/forms/use-forms-designer.md)
       + [PDF 문서에서 사용자 정의 글꼴 사용하기](/help/forms/use-custom-fonts.md)
-      + [알려진 문제, 모범 사례 및 FAQ](/help/forms/communications-known-issues-limitations.md)
+      + [알려진 문제, 모범 사례 및 자주 묻는 질문](/help/forms/communications-known-issues-limitations.md)
    + 개발자 API 참조 {#aem-forms-developer-api-reference}
-      + [AEM Forms 클라우드 서비스 커뮤니케이션 API 참조](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
-      + [AEM Forms 클라우드 서비스 JavaScript API 참조](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
-      + [AEM Forms 클라우드 서비스 Java API 참조](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
+      + [AEM Forms Cloud Service 커뮤니케이션 API 참조](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
+      + [AEM Forms Cloud Service JavaScript API 참조](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
+      + [AEM Forms Cloud Service Java API 참조](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
    + 문제 해결 {#troubleshooting-aem-forms-cloud-service}
       + [설치 및 구성](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher 및 CDN 캐싱](/help/forms/troubleshooting-caching-performance.md)
@@ -946,9 +946,10 @@ ht-degree: 99%
    + [AEM 커넥터 유지 관리](/help/connectors/maintain.md)
 + 작업 {#operations}
    + [AEM as a Cloud Service에서의 작업 및 유지 관리](/help/operations/home.md)
-   + [작업 센터](/help/operations/actions-center.md)
+   + [액션 센터](/help/operations/actions-center.md)
    + [콘텐츠 검색 및 색인화](/help/operations/indexing.md)
    + [콘텐츠 복제 서비스](/help/operations/replication.md)
+   + [추가 게시 지역](/help/operations/additional-publish-regions.md)
    + [AEM as a Cloud Service의 인프라 및 서비스 모니터링](/help/operations/monitoring.md)
    + [유지 관리 작업](/help/operations/maintenance.md)
    + [백업 및 복원](/help/operations/backup.md)
@@ -972,4 +973,3 @@ ht-degree: 99%
    + [Universal Editor 아키텍처](/help/implementing/universal-editor/architecture.md)
    + [속성 및 유형](/help/implementing/universal-editor/attributes-types.md)
    + [Universal Editor 인증](/help/implementing/universal-editor/authentication.md)
-

@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service에 대한 고급 네트워킹 구성
 description: AEM as a Cloud Service에 대해 VPN 또는 유연한/전용 이그레스 IP 주소와 같은 고급 네트워킹 기능을 구성하는 방법에 대해 알아봅니다.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 67e801cc22adfbe517b769e829e534eadb1806f5
+source-git-commit: 7d74772bf716e4a818633a18fa17412db5a47199
 workflow-type: tm+mt
-source-wordcount: '3053'
-ht-degree: 100%
+source-wordcount: '3595'
+ht-degree: 84%
 
 ---
 
@@ -537,3 +537,34 @@ Header always set Cache-Control private
 > 이 절차를 사용하면 삭제와 재생성 사이에 고급 네트워킹 서비스의 가동이 중단될 수 있습니다.
 
 가동 중단으로 인해 심각한 비즈니스 영향이 발생하는 경우 고객 지원 센터에 문의하여 이미 생성된 내용과 변경 이유를 설명하십시오.
+
+## 추가 게시 영역에 대한 고급 네트워킹 구성 {#advanced-networking-configuration-for-additional-publish-regions}
+
+이미 고급 네트워킹이 구성된 환경에 추가 영역이 추가되면 고급 네트워킹 규칙과 일치하는 추가 게시 영역의 트래픽이 기본적으로 기본 영역을 통해 라우팅됩니다. 그러나 기본 영역을 사용할 수 없게 되면 추가 영역에서 고급 네트워킹이 활성화되지 않은 경우 고급 네트워킹 트래픽이 삭제됩니다. 지역 중 하나가 중단되는 경우 지연을 최적화하고 가용성을 높이려면 추가 게시 지역에 대해 고급 네트워킹을 활성화해야 합니다. 다음 섹션에서는 두 가지 다른 시나리오에 대해 설명합니다.
+
+>[!NOTE]
+>
+>모든 지역이 동일한 [환경 고급 네트워킹 구성](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration)따라서 트래픽이 역진하는 영역을 기반으로 다른 대상에 트래픽을 라우팅할 수 없습니다.
+
+### 전용 이그레스 IP 주소 {#additional-publish-regions-dedicated-egress}
+
+#### 기본 영역에서 고급 네트워킹이 이미 활성화되었습니다. {#already-enabled}
+
+기본 영역에서 고급 네트워킹 구성이 이미 활성화되어 있으면 다음 단계를 따르십시오.
+
+1. 전용 AEM IP 주소를 허용 목록에 추가할 수 있도록 인프라를 잠근 경우 해당 인프라에서 거부 규칙을 일시적으로 비활성화하는 것이 좋습니다. 이 작업이 수행되지 않으면 새 지역의 IP 주소에서 발생하는 요청이 자체 인프라에 의해 거부되는 기간이 짧아집니다. FQDN(정규화된 도메인 이름)을 통해 인프라를 잠근 경우에는 필요하지 않습니다. (`p1234.external.adobeaemcloud.com`(예: 모든 AEM 지역 이후부터 동일한 FQDN의 고급 네트워킹 트래픽
+1. 고급 네트워킹 설명서에 설명된 대로 Cloud Manager 네트워크 인프라 만들기 API에 대한 POST 호출을 통해 보조 지역에 대한 프로그램 범위의 네트워킹 인프라를 만듭니다. 기본 영역에 대한 페이로드의 JSON 구성의 유일한 차이는 영역 속성입니다.
+1. AEM 트래픽을 허용하기 위해 IP로 인프라를 잠가야 하는 경우 일치하는 IP를 추가합니다 `p1234.external.adobeaemcloud.com`. 지역별로 하나씩 있어야 합니다.
+
+#### 어떤 지역에서도 고급 네트워킹이 아직 구성되지 않음 {#not-yet-configured}
+
+이 절차는 대부분 이전 지침과 유사합니다. 그러나 프로덕션 환경이 아직 고급 네트워킹에 대해 활성화되지 않은 경우 먼저 스테이징 환경에서 활성화하여 구성을 테스트할 기회가 있습니다.
+
+1. 에 대한 POST 호출을 통해 모든 지역의 네트워킹 인프라 만들기 [Cloud Manager 네트워크 인프라 API 만들기](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). 기본 영역에 대한 페이로드의 JSON 구성의 유일한 차이는 영역 속성입니다.
+1. 스테이징 환경의 경우 를 실행하여 환경 범위의 고급 네트워킹을 활성화하고 구성합니다. `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. 자세한 내용은 API 설명서를 참조하십시오. [여기](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
+1. 필요한 경우 외부 인프라를 잠급니다(예: FQDN). `p1234.external.adobeaemcloud.com`). 그렇지 않으면 IP 주소로 수행할 수 있습니다
+1. 스테이징 환경이 예상대로 작동하는 경우 프로덕션에 대해 환경 범위의 고급 네트워킹 구성을 활성화하고 구성합니다.
+
+#### VPN {#vpn-regions}
+
+이 절차는 전용 이그레스 IP 주소 지침과 거의 동일합니다. 유일한 차이점은 지역 속성이 기본 지역과 다르게 구성된 것 외에도 `connections.gateway` 선택적으로 조직에서 운영하는 다른 VPN 끝점으로 라우팅하도록 필드를 구성할 수 있습니다. 지리적으로 새 지역에 더 가까울 수 있습니다.
