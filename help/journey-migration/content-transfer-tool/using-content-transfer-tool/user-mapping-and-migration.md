@@ -2,10 +2,10 @@
 title: 사용자 매핑 및 주요 마이그레이션
 description: 사용자 매핑 및 사용자 마이그레이션 개요
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 91a13f8b23136298e0ccf494e51fccf94fa1e0b4
+source-git-commit: caa04391077d594a828a42a1a5a6a03daa107168
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 12%
+source-wordcount: '832'
+ht-degree: 11%
 
 ---
 
@@ -25,9 +25,13 @@ Adobe Experience Manager(AEM) as a Cloud Service으로 전환 여정의 일부�
 
 AEM as a Cloud Service의 주요 변경 내용은 작성자 계층 액세스에 대한 Adobe ID 사용이 완전히 통합된다는 것입니다. 이 프로세스에는 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html) 사용자 및 사용자 그룹 관리. 사용자 프로필 정보는 모든 Adobe 클라우드 애플리케이션에서 단일 사인온을 제공하는 IMS(Adobe Identity Management System)에서 중앙 집중화됩니다. 자세한 내용은 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management)를 참조하십시오. 이러한 변경 사항으로 인해 Cloud Service 작성자 인스턴스에서 중복 사용자를 방지하려면 기존 사용자를 해당 IMS ID에 매핑해야 합니다. 기존 AEM의 그룹은 IMS의 그룹과 근본적으로 다르므로 그룹은 매핑되지 않지만 마이그레이션이 완료된 후에는 두 그룹 세트를 조정해야 합니다.
 
-## 사용자 매핑 및 마이그레이션 세부 정보 {#user-mapping-detail}
+## 사용자 마이그레이션 세부 정보 {#user-migration-detail}
 
-컨텐츠 전송 도구 및 Cloud Acceleration Manager 는 마이그레이션되는 컨텐츠와 관련된 모든 사용자를 마이그레이션합니다. 이 매핑은 자동으로 수행되며, 추출이 시작되기 전에 토글을 통해 매핑 여부를 제어할 수 있습니다. 추출을 시작할 때 사용자가 토글의 기본 설정을 재정의할 수 있습니다.
+컨텐츠 전송 도구 및 Cloud Acceleration Manager 는 마이그레이션 중인 컨텐츠와 관련된 모든 사용자를 클라우드 시스템으로 마이그레이션합니다.
+
+## 사용자 매핑 세부 정보 {#user-mapping-detail}
+
+AEM 사용자는 동일한 이메일 주소로 해당 Adobe IMS 사용자에게 매핑될 수 있습니다.  이 매핑은 CTT에서 자동으로 수행할 수 있으며, 추출을 시작하기 전에 전환을 통해 매핑 여부를 제어할 수 있습니다. 추출을 시작할 때 사용자가 토글의 기본 설정을 재정의할 수 있습니다.
 
 * 소스 시스템이 작성자 인스턴스인 경우 기본적으로 매핑을 수행하기 위한 선택은 입니다. _날짜_, 이는 권장되는 프로세스이기 때문입니다.
 * 소스 시스템이 게시 인스턴스인 경우 기본적으로 매핑을 수행하기 위한 선택은 입니다. _끔_, 사용자가 일반적으로 마이그레이션되거나 게시 인스턴스에서 사용되지 않기 때문입니다.
