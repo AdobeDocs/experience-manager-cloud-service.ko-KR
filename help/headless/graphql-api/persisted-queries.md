@@ -3,10 +3,10 @@ title: 지속 GraphQL 쿼리
 description: 성능을 최적화하기 위해 Adobe Experience Manager as a Cloud Service에서 GraphQL 쿼리를 지속하는 방법을 알아봅니다. HTTP GET 메서드를 사용하여 클라이언트 애플리케이션에서 지속 쿼리를 요청할 수 있으며 응답을 Dispatcher 및 CDN 계층에서 캐시할 수 있으므로 궁극적으로 클라이언트 애플리케이션의 성능이 향상됩니다.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 0cac51564468c414866d29c8f0be82f77625eaeb
+source-git-commit: c3d7cd591bce282bb4d3b5b5d0ee2e22fd337a83
 workflow-type: tm+mt
-source-wordcount: '1541'
-ht-degree: 100%
+source-wordcount: '1687'
+ht-degree: 90%
 
 ---
 
@@ -355,7 +355,11 @@ curl -u admin:admin -X POST \
 
 >[!NOTE]
 >
->OSGi 구성은 게시 인스턴스에만 적합합니다. 구성은 작성자 인스턴스에 존재하지만 무시됩니다.
+>캐시 제어의 경우 OSGi 구성은 게시 인스턴스에만 적합합니다. 구성은 작성자 인스턴스에 존재하지만 무시됩니다.
+
+>[!NOTE]
+>
+>다음 **지속 쿼리 서비스 구성** 다음 용도로도 사용됩니다. [쿼리 응답 코드 구성](#configuring-query-response-code).
 
 게시 인스턴스에 대한 기본 OSGi 구성:
 
@@ -371,6 +375,26 @@ curl -u admin:admin -X POST \
    {style="table-layout:auto"}
 
 * 사용할 수 없는 경우 OSGi 구성은 [게시 인스턴스에 대한 기본값](#publish-instances)을 사용합니다.
+
+## 쿼리 응답 코드 구성 {#configuring-query-response-code}
+
+기본적으로 `PersistedQueryServlet` 다음 전송: `200` 실제 결과와 상관없이 쿼리를 실행할 때의 응답입니다.
+
+다음을 수행할 수 있습니다. [osgI 설정 구성](/help/implementing/deploying/configuring-osgi.md) 대상: **지속 쿼리 서비스 구성** 에서 반환되는 상태 코드를 `/execute.json/persisted-query` 끝점: 지속 쿼리에 오류가 있는 경우.
+
+>[!NOTE]
+>
+>다음 **지속 쿼리 서비스 구성** 다음 용도로도 사용됩니다. [캐시 관리](#cache-osgi-configration).
+
+필드 `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`)는 필요에 따라 정의할 수 있습니다.
+
+* `false` (기본값): 지속 쿼리의 성공 여부는 중요하지 않습니다. 다음 `/execute.json/persisted-query` 상태 코드를 반환합니다. `200` 및 `Content-Type` 반환된 헤더는 다음과 같습니다. `application/json`.
+
+* `true`: 끝점이 다음을 반환합니다. `400` 또는 `500` 지속 쿼리를 실행할 때 오류가 발생하는 경우 적절히 수정하십시오. 반환된 `Content-Type` 다음이 됨: `application/graphql-response+json`.
+
+   >[!NOTE]
+   >
+   >자세한 내용은 https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes 을 참조하십시오.
 
 ## 앱에서 사용할 쿼리 URL 인코딩 {#encoding-query-url}
 

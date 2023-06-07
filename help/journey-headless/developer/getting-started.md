@@ -2,10 +2,10 @@
 title: AEM Headless as a Cloud Service 시작하기
 description: 이 AEM Headless 개발자 여정의 부분에서는 AEM Headless 사전 요구 사항에 대해 알아봅니다.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 28ed228d02e09f273fa8713bad0f7194e1e25cf0
 workflow-type: tm+mt
-source-wordcount: '3058'
-ht-degree: 100%
+source-wordcount: '3090'
+ht-degree: 98%
 
 ---
 
@@ -45,6 +45,10 @@ AEM 내에서 Headless 프로젝트를 정의하기 전에 몇 가지 기본 AEM
 ### 게시 인스턴스 {#publish}
 
 작성자 인스턴스에 생성된 콘텐츠는 다른 서비스에 게시되어야 사용할 수 있게 됩니다. 게시 인스턴스에는 게시된 모든 콘텐츠가 포함됩니다.
+
+### 미리보기 서비스 {#preview}
+
+게시 인스턴스에 게시하기 전에 콘텐츠 조각을 **미리보기 서비스** 테스트 및 검토용. 이 작업은 다음에서 수행됩니다. **컨텐츠 조각** 콘솔.
 
 ### 복제 {#replication}
 

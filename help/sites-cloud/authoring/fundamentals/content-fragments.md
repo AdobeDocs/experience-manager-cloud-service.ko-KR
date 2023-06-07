@@ -2,7 +2,7 @@
 title: 콘텐츠 조각
 description: Adobe Experience Manager as a Cloud Service 콘텐츠 조각을 사용하면 페이지 독립적 콘텐츠를 디자인, 작성, 조정 및 사용할 수 있습니다.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 7ce05d282d553c5552cd828d08aaf6b7b5fb4e05
+source-git-commit: 3f7c9240a81062c335c33b0e59971de43cacf87b
 workflow-type: tm+mt
 source-wordcount: '1227'
 ht-degree: 100%
@@ -183,7 +183,7 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
 
 게시된 웹 페이지에서 조각을 사용할 수 있도록 조각을 게시해야 합니다.
 
-* [콘텐츠 조각 콘솔에서 조각을 만든](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment) 후에 조각을 게시할 수 있습니다.
+* [콘텐츠 조각 콘솔에서 조각을 만든](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment) 후에 조각을 게시할 수 있습니다.
 * *게시 취소된 조각*&#x200B;을 게시 중인 페이지에서 사용하는 경우 그때 조각이 게시될 수도 있습니다.
 
 ## 콘텐츠 조각 내보내기 {#exporting-content-fragments}

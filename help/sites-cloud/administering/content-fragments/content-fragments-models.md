@@ -4,10 +4,10 @@ description: 콘텐츠 조각 모델이 AEM에서 콘텐츠 조각의 기반 역
 feature: Content Fragments
 role: User
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
-source-git-commit: f1a97c4bbb07accb33aa449a07ced0c0ac255b9e
+source-git-commit: d452690b03ed32701030476572c5db9ddb1fbc2c
 workflow-type: tm+mt
-source-wordcount: '2898'
-ht-degree: 100%
+source-wordcount: '2939'
+ht-degree: 98%
 
 ---
 
@@ -78,7 +78,6 @@ AEM의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/sites-cloud/administe
          >데이터 유형의 **속성 이름** 속성을 수동으로 업데이트할 때에는 이름에 A-Z, a-z, 0-9 및 밑줄(_)만 포함해야 합니다.
          >
          >이전 버전의 AEM에서 만든 모델에 잘못된 문자가 포함되어 있는 경우 해당 문자를 제거하거나 업데이트하십시오.
-
       예:
 
       ![필드 속성](assets/cfm-models-05.png)
@@ -182,6 +181,10 @@ AEM의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/sites-cloud/administe
    >
    >변형은 동일한 조각의 변형과 동일한 *고유* 값을 가질 수 있지만, 다른 조각의 변형에 사용되는 것과 동일한 값을 가질 수는 없습니다.
 
+   >[!CAUTION]
+   >
+   >MSM(콘텐츠 조각의 복사본 생성)을 사용하려면 다음을 수행합니다. **고유** 해당 콘텐츠 조각 모델에 사용되는 모든 데이터 유형에서 제약 조건을 제거해야 합니다. 콘텐츠 조각용 MSM은 **에셋** 콘솔.
+
 * 특정 데이터 유형 및 그 속성에 대한 자세한 내용은 **[콘텐츠 참조](#content-reference)**&#x200B;를 참조하십시오.
 
 * 특정 데이터 유형 및 그 속성에 대한 자세한 내용은 **[조각 참조(중첩된 조각)](#fragment-reference-nested-fragments)**&#x200B;를 참조하십시오.
@@ -230,10 +233,10 @@ AEM의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/sites-cloud/administe
 >AEM은 다음에 대한 재발 방지 기능을 제공합니다.
 >
 >* 콘텐츠 참조
->  따라서 사용자가 현재 조각에 대한 참조를 추가할 수 없습니다. 이로 인해 빈 조각 참조 선택기 대화 상자가 나타날 수 있습니다.
+   >  따라서 사용자가 현재 조각에 대한 참조를 추가할 수 없습니다. 이로 인해 빈 조각 참조 선택기 대화 상자가 나타날 수 있습니다.
 >
 >* GraphQL의 조각 참조
->  서로 참조하는 여러 콘텐츠 조각을 반환하는 복합 쿼리를 만들면 첫 번째 발생 시 null을 반환합니다.
+   >  서로 참조하는 여러 콘텐츠 조각을 반환하는 복합 쿼리를 만들면 첫 번째 발생 시 null을 반환합니다.
 
 
 ### 콘텐츠 참조 {#content-reference}

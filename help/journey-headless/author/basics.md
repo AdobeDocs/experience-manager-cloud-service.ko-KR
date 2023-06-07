@@ -2,10 +2,10 @@
 title: 작성 기본 사항에 대해 알아보기
 description: 콘텐츠 조각을 사용하여 Headless CMS용 콘텐츠를 작성하는 개념 및 메커니즘에 대해 알아봅니다.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
+source-git-commit: 37a2afca3131acceebbd7732844fa5953a7fd4fc
 workflow-type: tm+mt
-source-wordcount: '1668'
-ht-degree: 100%
+source-wordcount: '1711'
+ht-degree: 95%
 
 ---
 
@@ -28,16 +28,19 @@ ht-degree: 100%
 
 콘텐츠 조각을 파악하기 전에 AEM 사용에 대한 (매우) 빠른 소개를 제공합니다.하지만 시스템에 로그인하고 시스템을 사용하려는 경험은 실제로 대체할 수 없습니다.
 
-### 작성 및 게시 {#author-preview-publish}
+### 작성, 미리보기 및 게시 {#author-preview-publish}
 
-AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
+AEM 설치는 일반적으로 다음 세 가지 환경으로 구성됩니다.
 
 * 작성
 * 게시
+* 미리보기
 
 작성 환경에 로그인하고 작성 환경을 사용하여 콘텐츠를 생성합니다. 준비가 되면 콘텐츠를 일반적으로 사용할 수 있도록 게시합니다. Headless는 기타 애플리케이션에 게시하고, 웹 페이지는 웹에서 독자에게 게시합니다.
 
 자세한 내용은 작성 개념을 참조하십시오.
+
+다음에서 **컨텐츠 조각** 콘솔 을 사용하여 **미리보기 서비스**&#x200B;테스트 및 미리보기를 위해 게시 전에 를 참조하십시오. 조각 게시 및 미리보기 를 참조하십시오.
 
 ### 로그인 {#signing-in}
 
@@ -263,9 +266,13 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 조각이 완료되면 Headless 애플리케이션에서 사용할 수 있도록 **게시**&#x200B;해야 합니다.
 
-게시 액션은 편집기에서(또는 **콘텐츠 조각** 콘솔 또는 **에셋** 콘솔 도구 모음에서) 사용할 수 있습니다.
+게시 작업은 편집기에서 사용할 수 있습니다.
 
 ![콘텐츠 조각 편집기 - 내 조각](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
+
+>[!NOTE]
+>
+>다음 중 하나에서 조각을 게시할 수도 있습니다. **에셋** 또는 **컨텐츠 조각** 콘솔.
 
 ## 다음 단계 {#whats-next}
 
@@ -289,21 +296,26 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
    * [레일 선택기](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 
-   * 게시
-
-      * [빠른 게시](/help/assets/manage-publication.md#quick-publish)
-
-      * [게시 관리](/help/assets/manage-publication.md#manage-publication)
-
 * [콘텐츠 조각을 사용하여 작업](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 
    * [콘텐츠 조각 관리](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
 
-      * [에셋 폴더에 구성 적용](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+   * [에셋 폴더에 구성 적용](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [콘텐츠 조각 만들기](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+   * [콘텐츠 조각 만들기](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+
    * [변형 - 콘텐츠 조각 작성](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
+   * 게시
+
+      * 편집기에서 또는 **에셋** 콘솔
+
+         * [빠른 게시](/help/assets/manage-publication.md#quick-publish)
+
+         * [게시 관리](/help/assets/manage-publication.md#manage-publication)
+      * 다음에서 **컨텐츠 조각** 콘솔
+
+         * [콘텐츠 조각 게시 및 미리보기](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)
    * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
       * [콘텐츠 조각 모델 - 데이터 형식](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
@@ -311,6 +323,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
       * [콘텐츠 조각 모델 - 속성](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
       * [콘텐츠 조각 모델 - 에셋 폴더에서 콘텐츠 조각 모델 허용](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+
 
 
 * 시작 안내서

@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: ca58b4df232dc658d7843ede2386710c4da43fcb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '5094'
+ht-degree: 7%
 
 ---
 
@@ -411,6 +411,10 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 * 하나 이상의 자산을 다운로드합니다.
 * 데스크탑 작업을 사용하여 데스크탑 앱에서 이러한 자산을 엽니다.
 * 스마트 컬렉션을 만듭니다.
+* 버전 만들기
+* 워크플로 시작
+* 에셋 연결 또는 연결 해제
+* 검색을 수행한 후 자동으로 표시되는 필터 패널을 사용하여 필터를 적용하여 검색 결과의 범위를 좁힐 수 있습니다.
 
 ### 검색 결과 정렬 {#sort}
 
@@ -450,6 +454,18 @@ To check the comments on an asset or version history of an asset, click the asse
 * 검색 기준에 따라 컬렉션의 에셋을 채우는 동적 목록(스마트 컬렉션)입니다.
 
 You can create smart collections based on the search criteria. From the **[!UICONTROL Filters]** panel, select **[!UICONTROL Files]** and click **[!UICONTROL Save Smart Collection]**. See [manage collections](/help/assets/manage-collections.md).
+
+### 버전 만들기 {#create-version}
+
+검색 결과에 표시되는 에셋의 버전을 만듭니다. 에셋을 선택하고 **[!UICONTROL 만들기]** > **[!UICONTROL 버전]**. 선택적 레이블 또는 댓글을 추가하고 **[!UICONTROL 만들기]**. 여러 에셋을 선택하고 해당 에셋의 버전을 동시에 만들 수도 있습니다.
+
+### 워크플로우 만들기 {#create-workflow}
+
+버전 만들기 기능과 마찬가지로 검색 결과에 표시되는 에셋에 대한 워크플로우를 만들 수도 있습니다. 에셋을 선택하고 **[!UICONTROL 만들기]** > **[!UICONTROL 워크플로]**. 워크플로 모델을 선택하고 워크플로의 제목을 지정한 다음 **[!UICONTROL 시작]**.
+
+### 에셋 연결 및 연결 해제 {#relate-unrelate-assets}
+
+검색 결과에 표시되는 에셋의 관계를 지정하거나 관계를 해제합니다. 에셋을 선택하고 **[!UICONTROL 관계 설정]** 또는 **[!UICONTROL 관계 해제]**.
 
 ## 예기치 않은 검색 결과 및 문제 {#unexpected-results}
 

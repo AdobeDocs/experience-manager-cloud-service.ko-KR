@@ -3,10 +3,10 @@ title: AEM에서 GraphiQL IDE 사용
 description: Adobe Experience Manager에서 GraphiQL IDE를 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 4f2b5fa59d3c68dd1244fa5b2a8dc30d848ba4a4
+source-git-commit: 6063c587c1d65587c44e551f3a5c2f3c34ced011
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 100%
+source-wordcount: '1147'
+ht-degree: 87%
 
 ---
 
@@ -23,7 +23,6 @@ ht-degree: 100%
 >[!NOTE]
 >GraphiQL IDE를 사용하기 전에 [구성 브라우저](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)에서 [엔드포인트를 구성](/help/headless/graphql-api/graphql-endpoint.md)해야 합니다.
 
-
 **GraphiQL** 도구를 통해 다음 작업을 수행하여 GraphQL 쿼리를 테스트하고 디버그할 수 있습니다.
 * 쿼리에 사용하려는 Sites 구성에 적합한 **엔드포인트**&#x200B;를 선택합니다.
 * 새 쿼리 직접 입력
@@ -31,7 +30,7 @@ ht-degree: 100%
 * 바로 결과를 조회하기 위해 쿼리 실행
 * **쿼리 변수** 관리
 * **지속 쿼리** 저장 및 관리
-* **지속 쿼리** 게시 또는 게시 취소 (예: `dev-publish`에/에서)
+* 게시 또는 게시 취소 **지속 쿼리**, 다음 중 하나로 **게시** 또는 **미리 보기** 서비스(예: 부터/부터) `dev-publish`
 * 이전 쿼리의 **내역** 참조
 * **설명서 탐색기**&#x200B;를 사용하여 설명서에 액세스합니다. 이를 통해 사용 가능한 방법을 쉽게 배우고 이해할 수 있습니다.
 
@@ -131,13 +130,27 @@ max-age와 동일하지만 특히 프록시 캐시에 적용됩니다.
 
 1. 변경 내용을 유지하려면 **저장**&#x200B;을 선택하십시오.
 
-## 지속 쿼리 게시 {#publishing-persisted-queries}
+## 지속 쿼리 게시 및 미리 보기 {#publishing-previewing-persisted-queries}
 
-목록(왼쪽 패널)에서 지속 쿼리를 선택하면 **게시** 및 **게시 취소** 액션을 사용할 수 있습니다. 테스트할 때 애플리케이션에서 간편하게 액세스할 수 있도록 게시 환경(예: `dev-publish`)에 맞게 액션을 활성화합니다.
+목록(왼쪽 패널)에서 지속 쿼리를 선택하면 **게시** 작업.
+
+이렇게 하면 선택한 환경에 대한 쿼리가 활성화됩니다. 다음 중 하나를 선택할 수 있습니다 **게시** 환경(예: `dev-publish`), 또는 **미리 보기** 테스트할 때 애플리케이션에서 간편하게 액세스할 수 있는 환경입니다.
+
+![GraphiQL - 게시된 지속 쿼리](assets/cfm-graphiql-publish.png "GraphiQL - 지속 쿼리 게시")
 
 >[!NOTE]
 >
 >지속 쿼리의 캐시 `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} 기본값은 2시간(7,200초)입니다.
+
+## 지속 쿼리 게시 취소 {#unpublishing-persisted-queries}
+
+게시 시와 마찬가지로 목록(왼쪽 패널)에서 지속 쿼리를 선택하면 **게시 취소** 작업.
+
+이렇게 하면 선택한 환경에서 쿼리가 비활성화됩니다. **게시** 환경 또는 **미리 보기** 환경.
+
+>[!NOTE]
+>
+>또한 잠재적인 문제를 방지하기 위해 클라이언트 애플리케이션에 필요한 변경 작업을 수행했는지 확인해야 합니다.
 
 ## URL을 복사하여 쿼리에 직접 액세스합니다. {#copy-url}
 

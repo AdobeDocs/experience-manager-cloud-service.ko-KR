@@ -2,10 +2,10 @@
 title: 컨텐츠 조각 모델(자산 - 컨텐츠 조각)
 description: 콘텐츠 조각 모델이 AEM에서 Headless 콘텐츠의 기반 역할을 하는 방법과 구조화된 콘텐츠로 콘텐츠 조각을 만드는 방법에 대해 알아봅니다.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: f1a97c4bbb07accb33aa449a07ced0c0ac255b9e
+source-git-commit: d452690b03ed32701030476572c5db9ddb1fbc2c
 workflow-type: tm+mt
-source-wordcount: '2887'
-ht-degree: 98%
+source-wordcount: '2917'
+ht-degree: 97%
 
 ---
 
@@ -178,6 +178,10 @@ AEM의 콘텐츠 조각 모델은 의 콘텐츠 구조를 정의합니다. [콘�
    >[!NOTE]
    >
    >변형은 동일한 조각의 변형과 동일한 *고유* 값을 가질 수 있지만, 다른 조각의 변형에 사용되는 것과 동일한 값을 가질 수는 없습니다.
+
+   >[!CAUTION]
+   >
+   >MSM(콘텐츠 조각의 복사본 생성)을 사용하려면 다음을 수행합니다. **고유** 해당 콘텐츠 조각 모델에 사용되는 모든 데이터 유형에서 제약 조건을 제거해야 합니다.
 
 * 특정 데이터 유형 및 그 속성에 대한 자세한 내용은 **[콘텐츠 참조](#content-reference)**&#x200B;를 참조하십시오.
 

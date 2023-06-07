@@ -4,10 +4,10 @@ description: AEM의 강력한 라이브 카피 및 다중 사이트 관리자 �
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: e99522cb6221285b5b4de5f026dcc4d925035ec1
 workflow-type: tm+mt
-source-wordcount: '2683'
-ht-degree: 100%
+source-wordcount: '2710'
+ht-degree: 99%
 
 ---
 
@@ -29,6 +29,10 @@ ht-degree: 100%
 * [라이브 카피 동기화 구성](live-copy-sync-config.md)
 * [MSM 롤아웃 충돌](rollout-conflicts.md)
 * [MSM 모범 사례](best-practices.md)
+
+>[!NOTE]
+>
+>MSM은 콘텐츠 조각을 포함한 에셋에도 사용할 수 있습니다. 자세한 내용은 을 참조하십시오. [에셋용 MSM을 사용하여 콘텐츠 조각 재사용](/help/assets/reuse-assets-using-msm.md) (자산 콘솔을 통해서만 사용할 수 있습니다.)
 
 ## 가능한 시나리오 {#possible-scenarios}
 

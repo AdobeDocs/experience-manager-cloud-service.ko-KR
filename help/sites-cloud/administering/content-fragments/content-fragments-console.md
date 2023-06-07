@@ -5,10 +5,10 @@ landing-page-description: Headless 사용 사례에 대한 콘텐츠 조각에 �
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: cdc86e5661ec90f96f670e777a9c98b3dcd4a7ac
+source-git-commit: b6205858f3129cb7488b55192088ec0442a28716
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 100%
+source-wordcount: '1106'
+ht-degree: 95%
 
 ---
 
@@ -102,11 +102,11 @@ ht-degree: 100%
 ![콘텐츠 조각 콘솔 - 선택한 조각에 대한 도구 모음](assets/cfc-fragment-toolbar.png)
 
 * **열기**
-* **게시** (및 **게시 취소**)
+* **[게시](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)** (및 **[게시 취소](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#unpublishing-a-fragment)**)
 * **복사**
 * **이동**
 * **이름 변경**
-* **삭제**
+* **[삭제](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#deleting-a-fragment)**
 
 >[!NOTE]
 >
@@ -125,6 +125,11 @@ ht-degree: 100%
 폴더 이름에 마우스를 가져다 대면 JCR 경로가 표시됩니다.
 * **상태**
    * 정보만
+* **미리보기**
+   * 정보만:
+      * **동기화 중**: 콘텐츠 조각이 동기화됨 **작성자** 및 **미리 보기** 서비스.
+      * **동기화되지 않음**: 콘텐츠 조각이 동기화되지 않음 **작성자** 및 ****미리 보기** 서비스. 다음을 수행해야 합니다. **게시** 끝 **미리 보기** 두 인스턴스가 동기화 상태로 돌아가는지 확인합니다.
+      * 비어 있음: 콘텐츠 조각이 **미리 보기** 서비스.
 * **수정됨**
    * 정보만
 * **수정한 사람**

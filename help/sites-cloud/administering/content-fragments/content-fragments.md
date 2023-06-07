@@ -4,10 +4,10 @@ description: Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조�
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 448851bdbcdf626ef1b8cf2765ba54bb0576bec8
+source-git-commit: e99522cb6221285b5b4de5f026dcc4d925035ec1
 workflow-type: tm+mt
-source-wordcount: '2058'
-ht-degree: 100%
+source-wordcount: '2127'
+ht-degree: 96%
 
 ---
 
@@ -59,6 +59,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 >* [콘텐츠 조각 렌더링용 구성 요소 구성](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [AEM Assets HTTP API의 콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
+>* [에셋용 MSM을 사용하여 콘텐츠 조각 재사용](/help/assets/reuse-assets-using-msm.md) (다음을 통해서만 사용 가능: **에셋** console)
 
 
 커뮤니케이션 채널의 수는 매년 증가하고 있습니다. 일반적으로 채널은 다음 중 하나로서 게재 메커니즘을 나타냅니다.
@@ -112,6 +113,16 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 >[!NOTE]
 >
 >AEM은 조각 콘텐츠 번역도 지원합니다. 자세한 내용은 [에셋 번역](/help/assets/translate-assets.md)을 참조하십시오.
+
+## 게시 및 미리보기 {#publish-and-preview}
+
+모든 콘텐츠와 마찬가지로 콘텐츠 조각을 **[서비스 게시](/help/overview/architecture.md#runtime-architecture)**.
+
+그 전에 다음을 수행하여 콘텐츠 조각을 사용하여 제공된 경험을 미리 볼 수도 있습니다. [콘텐츠 조각 게시](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md##publishing-and-previewing-a-fragment) AEM에 **[미리보기 서비스](/help/overview/architecture.md#runtime-architecture)**.
+
+>[!CAUTION]
+>
+>에 게시 **미리보기 서비스** 은(는) 다음에서만 사용할 수 있습니다. **컨텐츠 조각** 콘솔.
 
 ## 콘텐츠 유형 {#content-type}
 

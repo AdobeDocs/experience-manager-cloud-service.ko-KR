@@ -1,21 +1,20 @@
 ---
 title: 게시 관리
 description: Experience Manager Assets, Dynamic Media 및 Brand Portal에 자산 게시 또는 게시 취소
-contentOwner: Vishabh Gupta
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 8466595f988d3a10806d4654885c14a622d14057
 workflow-type: tm+mt
-source-wordcount: '1465'
-ht-degree: 10%
+source-wordcount: '1630'
+ht-degree: 6%
 
 ---
 
 # Experience Manager Assets에서 게시 관리 {#manage-publication-in-aem}
 
-(으)로 [!DNL Adobe Experience Manager Assets] 관리자: 작성자 인스턴스의 에셋 및 에셋이 포함된 폴더를 [!DNL Experience Manager Assets], [!DNL Dynamic Media], 및 [!DNL Brand Portal]. 자산이나 폴더의 게시 워크플로우를 나중 날짜나 시간으로 예약할 수도 있습니다. 게시되면 사용자는 에셋에 액세스하고 다른 사용자에게 에셋을 추가로 배포할 수 있습니다. 기본적으로 에셋 및 폴더를 게시할 수 있습니다. [!DNL Experience Manager Assets]. 그러나 다음을 구성할 수 있습니다. [!DNL Experience Manager Assets] 에 게시를 활성화하려면 [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html) 및 [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
+(으)로 [!DNL Adobe Experience Manager Assets] 관리자: 작성자 인스턴스의 에셋 및 에셋이 포함된 폴더를 [!DNL Experience Manager Assets], [!DNL Dynamic Media], 및 [!DNL Brand Portal]. 나중에 에셋 또는 폴더를 게시하도록 예약할 수도 있습니다. 게시되면 사용자는 에셋에 액세스하고 다른 사용자에게 에셋을 추가로 배포할 수 있습니다. 기본적으로 에셋 및 폴더를 게시할 수 있습니다. [!DNL Experience Manager Assets]. 그러나 다음을 구성할 수 있습니다. [!DNL Experience Manager Assets] 에 게시를 활성화하려면 [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html) 및 [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
 
 다음 중 하나를 사용하여 에셋 또는 폴더 수준에서 에셋을 게시하거나 게시를 취소할 수 있습니다 **[!UICONTROL 빠른 게시]** 또는 **[!UICONTROL 게시 관리]** 옵션이에서 사용할 수 있음 [!DNL Experience Manager Assets] 인터페이스. 의 원본 에셋 또는 폴더를 추가로 수정하는 경우 [!DNL Experience Manager Assets]에서 다시 게시할 때까지 변경 사항이 게시 인스턴스에 반영되지 않습니다 [!DNL Experience Manager Assets]. 진행 중인 작업 변경 사항을 게시 인스턴스에서 사용할 수 없도록 합니다. 관리자가 게시한 승인된 변경 사항만 게시 인스턴스에서 사용할 수 있습니다.
 
@@ -24,6 +23,7 @@ ht-degree: 10%
 * [나중에 자산 게시](#publish-assets-later)
 * [Dynamic Media에 자산 게시](#publish-assets-to-dynamic-media)
 * [자산을 Brand Portal에 게시](#publish-assets-to-brand-portal)
+* [발행 요청](#request-publication)
 * [제한 사항 및 팁](#limitations-and-tips)
 
 ## 빠른 게시를 사용하여 자산 게시 {#quick-publish}
@@ -105,7 +105,7 @@ Only the selected folder content and references are published.
 | 게시 | 선택적 게시 | `AEM` | 에셋 및 폴더 |
 | 게시 | 즉시 | `AEM` 및 `Dynamic Media` | 에셋 및 폴더 |
 | 게시 | 활성화 시 | `AEM` 및 `Dynamic Media` | 에셋 및 폴더 |
-| Dynamic Media | 선택적 게시 | `Dynamic Media` | Assets |
+| Dynamic Media | 선택적 게시 | `Dynamic Media` | 자산 |
 | Dynamic Media | 즉시 | `None` | 자산을 게시할 수 없음 |
 | Dynamic Media | 활성화 시 | `None` | 자산을 게시할 수 없음 |
 
@@ -177,24 +177,27 @@ Only the selected folder content and references are published.
 * [폴더를 Brand Portal에 게시](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-folders-to-brand-portal)
 * [컬렉션을 Brand Portal에 게시](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-collections-to-brand-portal)
 
+## 발행 요청 {#request-publication}
+
+다음 `Request Publication` 옵션은에 게시하기 전에 자산의 워크플로를 인증하는 데 도움이 됩니다. [!DNL AEM] 에셋 환경. [!DNL AEM] 는 다양한 사용자에게 다양한 수준의 권한을 제공합니다. 다음을 수행할 수 있습니다. *참여자* 에셋을 업로드하고 있지만 업로드가 확인되면 게시할 수 있습니다. 또한 다음과 같습니다. *관리자* 에셋의 워크플로를 읽고 쓸 수 있도록 관리할 수 있습니다.
+
+게시 요청 옵션은 다음 사용자가 사용할 수 있습니다.
+* **참여자:** 다음을 기여할 수 있는 사용자인 경우 [!DNL AEM] 에셋을 선택한 경우 [!DNL AEM] 에셋 워크플로. `Manage publication` 버튼이 숨겨져 있습니다. 기여자는 에셋을 추가하여 기여할 수만 있고 게시할 수 없으며 워크플로우에 대한 읽기 액세스 권한이 없습니다.
+
+* **워크플로 사용자:** 이 사용자는 자산을 게시할 수 없지만 워크플로우에 대한 읽기 액세스 권한이 있습니다. 워크플로 사용자는 다음과 같은 작업을 수행할 수 있습니다.
+   * 발행 요청
+   * 보기 `Manage publication` 단추
+   * 워크플로우를 예약하고 옵션을 확인합니다. `schedule now` 및 `schedule later`
+
+* **관리자:** 사용자의 관리 유형으로 에셋에 대한 전체 워크플로우 단계를 관리할 수 있습니다. `Manage publication` 버튼이 표시됩니다. 대상이 다음과 같은 경우 `publish` 이(가) 선택되면 나중에 워크플로우 단계에 대한 자산을 예약할 수 있습니다.
+
+>[!NOTE]
+>
+>If [!DNL Dynamic Media] 이(가) 대상으로 선택된 경우 워크플로 단계가 비활성화됨 **워크플로 사용자** 및 **admin** 사용자.
+
 ## 제한 사항 및 팁 {#limitations-and-tips}
 
-* 다음에 대한 옵션: [!UICONTROL 게시 관리] 복제 권한이 있는 사용자 계정만 사용할 수 있습니다.
+* `Manage publication` 은 워크플로우에 대해 최소 읽기 권한이 있는 사용자가 사용할 수 있습니다.
 * 빈 폴더는 게시되지 않습니다.
 * 처리 중인 자산을 게시하는 경우 원래 콘텐츠만 게시됩니다. 렌디션이 누락되었습니다. 처리가 완료될 때까지 기다린 다음 처리가 완료되면 자산을 게시하거나 다시 게시합니다.
 * 복잡한 에셋의 게시를 취소하는 동안 에셋만 게시 취소합니다. 게시된 다른 에셋에서 참조할 수 있으므로 참조 게시를 취소하지 마십시오.
-
-**추가 참조**
-
-* [에셋 번역](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [에셋이 지원되는 파일 형식](file-format-support.md)
-* [에셋 검색](search-assets.md)
-* [연결된 에셋](use-assets-across-connected-assets-instances.md)
-* [에셋 보고서](asset-reports.md)
-* [메타데이터 스키마](metadata-schemas.md)
-* [에셋 다운로드](download-assets-from-aem.md)
-* [메타데이터 관리](manage-metadata.md)
-* [검색 패싯](search-facets.md)
-* [컬렉션 관리](manage-collections.md)
-* [일괄 메타데이터 가져오기](metadata-import-export.md)

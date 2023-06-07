@@ -2,10 +2,10 @@
 title: 콘텐츠 조각을 사용하여 작업 (에셋 - 콘텐츠 조각)
 description: Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각을 사용하여 페이지 작성 및 Headless 게재에 이상적인 페이지 독립적 콘텐츠를 디자인하고, 작성하고, 선별하고, 사용하는 방법에 대해 알아봅니다.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: ca41657057211cb0736a866771253b166fa139b4
+source-git-commit: d452690b03ed32701030476572c5db9ddb1fbc2c
 workflow-type: tm+mt
-source-wordcount: '2063'
-ht-degree: 95%
+source-wordcount: '2135'
+ht-degree: 92%
 
 ---
 
@@ -46,6 +46,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 * [관련 콘텐츠 사용](/help/assets/content-fragments/content-fragments-assoc-content.md) - 관련 콘텐츠 추가
 * [메타데이터 - 조각 속성](/help/assets/content-fragments/content-fragments-metadata.md) - 조각 속성 보기 및 편집
 * 사용 [컨텐츠 조각과 GraphQL, 컨텐츠 전달](/help/assets/content-fragments/content-fragments-graphql.md) 애플리케이션에 사용할 수 있습니다. 이를 위해 다음을 미리 볼 수 있습니다. [JSON 출력](/help/assets/content-fragments/content-fragments-json-preview.md).
+* [에셋용 MSM을 사용하여 콘텐츠 조각 재사용](#reusing-content-fragments-with-msm-assets)
 
 >[!NOTE]
 >
@@ -109,6 +110,16 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 >[!NOTE]
 >
 >AEM은 조각 콘텐츠 번역도 지원합니다. 자세한 내용은 [에셋 번역](/help/assets/translate-assets.md)을 참조하십시오.
+
+## MSM을 통해 에셋용 콘텐츠 조각 재사용 {#reusing-content-fragments-with-msm-assets}
+
+를 통해 액세스할 때 **에셋** 콘솔에서는 MSM을 사용하고 조각에 대한 라이브 카피를 만들 수 있습니다.
+
+자세한 내용은 을 참조하십시오. [에셋용 MSM을 사용하여 콘텐츠 조각 재사용](/help/assets/reuse-assets-using-msm.md).
+
+>[!CAUTION]
+>
+>MSM(콘텐츠 조각의 복사본 생성)을 사용하려면 다음을 수행합니다. **고유** 각 데이터 세트에 사용된 모든 데이터 유형에서 제약 조건을 제거해야 합니다 [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md).
 
 ## 콘텐츠 유형 {#content-type}
 
