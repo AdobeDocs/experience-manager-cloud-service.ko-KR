@@ -3,10 +3,10 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud Service에서 Headless 콘텐츠 게재를 위해 콘텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 9c4d416b37be684aae37d42a02cc86dfa87fbc2f
+source-git-commit: 7e6a42f5804ddef918df859811ba48f27ebbf19a
 workflow-type: tm+mt
-source-wordcount: '4769'
-ht-degree: 100%
+source-wordcount: '4934'
+ht-degree: 96%
 
 ---
 
@@ -134,12 +134,16 @@ GraphQL은 GET 요청도 지원하지만 이러한 요청은 지속 쿼리를 �
 
 [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)를 사용하여 GraphQL 쿼리를 테스트하고 디버그할 수 있습니다.
 
-## Author 및 Publish 환경의 사용 사례 {#use-cases-author-publish-environments}
+## 작성자, 미리보기 및 게시에 대한 사용 사례 {#use-cases-author-preview-publish}
 
 사용 사례는 AEM as a Cloud Service 환경 유형에 따라 달라질 수 있습니다.
 
 * Publish 환경, 다음과 같은 작업을 수행하는 데 사용됨:
    * JS 애플리케이션용 쿼리 데이터 (표준 사용 사례)
+
+* 미리보기 환경, 다음을 수행하는 데 사용됨:
+   * 게시 환경에 배포하기 전에 쿼리 미리 보기
+      * JS 애플리케이션용 쿼리 데이터 (표준 사용 사례)
 
 * Author 환경, 다음과 같은 작업을 수행하는 데 사용됨:
    * “콘텐츠 관리 목적”용 쿼리 데이터:
@@ -932,6 +936,13 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
 
 
 
+
+* 필터 `includeVariations` 다음에 포함됩니다. `List` 및 `Paginated` 쿼리 유형.  쿼리 결과에서 콘텐츠 조각 변형을 검색하려면 `includeVariations` 필터를 다음으로 설정해야 함: `true`.
+
+   * 다음을 참조하십시오 [주어진 모델의 여러 콘텐츠 조각 및 해당 변형에 대한 샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
+   >[!CAUTION]
+   >필터 `includeVariations` 및 시스템 생성 필드 `_variation` 동일한 쿼리 정의에서 함께 사용할 수 없습니다.
+
 * 논리적 OR을 사용하려는 경우:
    * ` _logOp: OR` 사용
    * [샘플 쿼리 - 이름이 “Jobs” 또는 “Smith”인 모든 사람](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)을 참조하십시오
@@ -961,6 +972,10 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
          >
          >지정된 변형이 콘텐츠 조각에 존재하지 않는 경우 마스터 변형은 (대체) 기본값으로 반환됩니다.
 
+         >[!CAUTION]
+         >
+         >시스템 생성 필드 `_variation` 은(는) 필터와 함께 사용할 수 없습니다 `includeVariations`.
+
          * [샘플 쿼리 - 이름이 붙은 변형이 있는 모든 도시](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)를 참조하십시오
    * [이미지 게재](#image-delivery):
 
@@ -973,6 +988,17 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
          * [전체 매개변수가 포함된 이미지 게재를 위한 샘플 쿼리](#image-delivery-full-parameters)
 
          * [지정된 단일 매개변수가 있는 이미지 게재를 위한 샘플 쿼리](#image-delivery-single-specified-parameter)
+   * `_tags` : 태그가 포함된 콘텐츠 조각 또는 변형의 ID를 표시합니다. 이 배열은 `cq:tags` 식별자.
+
+      * 다음을 참조하십시오 [샘플 쿼리 - 구/군/시 구분으로 태그가 지정된 모든 구의 이름](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
+      * 다음을 참조하십시오 [특정 태그가 첨부된 특정 모델의 콘텐츠 조각 변형에 대한 샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
+      * 다음을 참조하십시오 [태그 ID로 필터링하고 변형을 제외한 샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+      * 다음을 참조하십시오 [_tags ID로 필터링하고 변형을 포함한 샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
+
+      >[!NOTE]
+      >
+      >콘텐츠 조각의 메타데이터를 나열하여 태그를 쿼리할 수도 있습니다.
+
    * 작업:
 
       * `_operator`: 특정 연산자 적용 - `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
@@ -982,6 +1008,7 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
          * [샘플 쿼리 - 적어도 한 번은 발생해야 하는 항목이 있는 배열 필터링](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)을 참조하십시오
       * `_ignoreCase`: 쿼리할 때 대소문자 무시
          * [샘플 쿼리 - 대소문자에 관계없이 이름에 SAN이 있는 모든 도시](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)를 참조하십시오
+
 
 
 
