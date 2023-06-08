@@ -4,9 +4,9 @@ description: 용 Adobe Acrobat Sign을 구성하는 방법 알아보기 [!DNL AE
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 5801063c9c4c1c6b9f9e7f55ad4d66bb563e0eef
+source-git-commit: 4d32a1768a97505ec2e7288904dde0c9120041a7
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1932'
 ht-degree: 31%
 
 ---
@@ -81,6 +81,7 @@ ht-degree: 31%
    1. 다음에 대해 구성된 애플리케이션 선택 [!DNL AEM Forms], 및 탭 **[!UICONTROL 애플리케이션에 대한 OAuth 구성]**.
    1. 다음에서 **[!UICONTROL 리디렉션 URL]** 상자에서 이전 단계(8단계)에서 복사한 URL을 추가하고 을 클릭합니다. **[!UICONTROL 저장]**.
    1. 에 대해 다음 범위 활성화 [!DNL Adobe Acrobat Sign] 애플리케이션 및 클릭 **[!UICONTROL 저장]**.
+
    * [!DNL aggrement_read]
    * [!DNL aggrement_write]
    * [!DNL aggrement_send]
@@ -109,6 +110,9 @@ ht-degree: 31%
 이제 다음을 수행할 수 있습니다. [적응형 양식에 Adobe Acrobat Sign 필드 추가 사용](working-with-adobe-sign.md). Cloud Service에 사용되는 구성 컨테이너를 [!DNL Adobe Acrobat Sign]을 위해 활성화하고자 하는 모든 적응형 양식에 추가해야 합니다. 적응형 양식의 속성에서 구성 컨테이너를 지정할 수 있습니다.
 
 ## AEM Forms과 Adobe Acrobat Sign Solutions for Government 연결 {#adobe-acrobat-sign-for-government}
+
+|주의|[!BADGE 프리릴리스 설명서]{type=Caution tooltip="노란색 상태"}
+<span class="preview"> 이 섹션에는 프리릴리스 설명서와 변경될 수 있는 사항이 포함되어 있습니다.</span>
 
 AEM Forms과 Adobe Acrobat Sign Solutions for Government를 연결하는 것은 여러 단계로 구성됩니다. 여기에는 다음이 포함됩니다.
 

@@ -4,15 +4,18 @@ description: 적응형 양식을 손쉽게 만들거나 AEM Sites 페이지에 �
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
+source-git-commit: 4d32a1768a97505ec2e7288904dde0c9120041a7
 workflow-type: tm+mt
-source-wordcount: '3182'
+source-wordcount: '3196'
 ht-degree: 31%
 
 ---
 
 
 # 적응형 양식을 만들거나 AEM Sites 페이지에 추가 {#create-or-add-an-adaptive-form-to-aem-sites-page}
+
+|주의|[!BADGE 프리릴리스 설명서]{type=Caution tooltip="노란색 상태"}
+<span class="preview"> 이 설명서는 프리릴리스 설명서이며 변경될 수 있습니다.</span>
 
 AEM Forms를 사용하여 적응형 양식을 웹 페이지에 원활하게 통합할 수 있습니다. 이를 통해 방문자는 현재 페이지를 떠나지 않고 편리하게 양식을 작성하고 제출할 수 있습니다. 이렇게 하면 방문자는 양식과 상호 작용하면서 웹 사이트의 다른 요소에 지속적으로 관심을 가질 수 있습니다.
 
@@ -122,7 +125,7 @@ AEM Forms는 적응형 양식 컨테이너와 적응형 양식 – 임베드 구
 
 +++
 
-+++ **[!UICONTROL 적응형 양식 컨테이너] 활성화
++++ 적응형 Forms 컨테이너 활성화
 
 템플릿의 정책에서 [!UICONTROL 적응형 양식 컨테이너] 구성 요소를 활성화하려면 다음 절차를 수행해야 합니다.
 
@@ -246,7 +249,7 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
 
 ### Forms 포털 초안 미리 채우기 서비스 사용 {#forms-portal-prefill-service}
 
-Forms 포털 초안 미리 채우기 서비스를 사용하여 저장된 적응형 양식의 초안을 사용하여 양식의 필드를 미리 채울 수 있습니다. Forms 포털 초안 미리 채우기 서비스를 사용하기 전에 다음을 확인하십시오 [적응형 Forms 포털 구성 요소가 활성화되고 구성됨 ](configure-forms-portal.md#configure-azure-storage-for-adaptive-forms-configure-azure-storage-adaptive-forms) 을 참조하십시오.
+Forms 포털 초안 미리 채우기 서비스를 사용하여 저장된 적응형 양식의 초안을 사용하여 양식의 필드를 미리 채울 수 있습니다. Forms 포털 초안 미리 채우기 서비스를 사용하기 전에 다음을 확인하십시오. [적응형 Forms 포털 구성 요소가 활성화되고 구성됨](configure-forms-portal.md#configure-azure-storage-for-adaptive-forms-configure-azure-storage-adaptive-forms) 을 참조하십시오.
 
 1. 적응형 양식이 포함된 AEM Sites 페이지 편집기 또는 경험 조각을 엽니다.
 1. 페이지의 속성을 열고 클라우드 구성을 구성합니다.
@@ -267,7 +270,7 @@ Forms 포털 초안 미리 채우기 서비스를 사용하여 저장된 적응�
 1. 적응형 양식 컨테이너 속성을 클릭합니다 ![적응형 양식 컨테이너 속성](/help/forms/assets/configure-icon.svg) 아이콘. 데이터 모델을 구성하는 적응형 양식 컨테이너 대화 상자가 열립니다.
 1. 를 엽니다. **[!UICONTROL 제출]** 탭.
 
-   * 리디렉션 URL을 구성하려면 제출 시 옵션에서 URL로 리디렉션 옵션을 선택하고 임시 주소 또는 AEM Sites 페이지의 리디렉션 URL 또는 상대 경로를 제공합니다.
+   * 리디렉션 URL을 구성하려면 제출 시 옵션에서 URL로 리디렉션 옵션을 선택하고 절대 주소 또는 AEM Sites 페이지의 리디렉션 URL 또는 상대 경로를 제공합니다.
 
    * 사용자 정의 메시지 또는 감사 메시지를 구성하려면 제출 시 옵션에서 메시지 표시 옵션을 선택하고 메시지 콘텐츠 상자에 메시지를 제공합니다. 서식 있는 텍스트 상자입니다. 전체 화면 옵션을 사용하여 사용 가능한 모든 서식 있는 텍스트 항목을 볼 수 있습니다.
 
