@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 66c77dd90fb220993e113fb3c4cfbaec879c1dee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '181'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -29,8 +29,8 @@ ht-degree: 85%
 
 ### 해결된 문제 {#fixed-issues-12142}
 
-- SITES-13636 - 이미지의 clientlib 종속성 및 슬라이드 사이트 clientlib 누락 문제가 수정되었습니다.
-- SITES-13475 - 2.22.10 코어 구성 요소 버전의 PanelContainer.js에 대한 이전 버전과의 호환성 문제가 해결되었습니다.
+- SITES-13636 - 이미지의 clientlib 종속성과 캐러셀 사이트 clientlib 누락 관련 문제가 해결되었습니다.
+- SITES-13475 - 2.22.10 핵심 구성 요소 버전으로 PanelContainer.js에 대한 이전 호환성 중단 문제가 해결되었습니다.
 
 ### 임베드된 기술 {#embedded-tech-12142}
 
