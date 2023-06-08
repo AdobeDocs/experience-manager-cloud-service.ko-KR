@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.6.0 릴
 description: AEM as a Cloud Service의 Cloud Manager 2023.6.0 릴리스 정보입니다.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 80a5f58119dc304161d324491cd65c50e981ccd4
+source-git-commit: 6dac8611cba8d924eb4509e699350be5b159e3d2
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 37%
+source-wordcount: '238'
+ht-degree: 33%
 
 ---
 
@@ -25,6 +25,7 @@ AEM as a Cloud Service의 Cloud Manager 2023.6.0 릴리스 날짜는 2023년 6�
 
 ## 새로운 기능 {#what-is-new}
 
+* 고객은 운영 지역 외에 추가 보조 게시 지역을 구매할 수 있으므로 지연 시간 단축 및 가용성 향상과 관련된 이점이 있습니다. 참고: 특정 제한 사항이 적용될 수 있습니다.
 * 새 항목 생성 시 [프로그램 또는 환경,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) 이제 이름에는 영숫자와 제한된 특수 문자 집합만 사용할 수 있습니다.
 * 다시 시작할 때 [프로덕션 파이프라인,](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 이제 승인 단계에서 확인 대화 상자가 표시됩니다.
 * 의 경우 **[고객 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)** 및 **[사용자 정의 UI 테스트](/help/implementing/cloud-manager/ui-testing.md)** 파이프라인 단계, 새로운 기능 `INCOMPLETE` 이제 상태가 가능해졌으며, 이는 이러한 테스트가 존재하지 않았으므로 수행되지 않았음을 나타냅니다.
