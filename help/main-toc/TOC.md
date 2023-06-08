@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 7823f35e0b78584cfb17f0efed7f36e3a2cb408d
+source-git-commit: 0ef684cde1fe4fa47214fddf2c2a75d1743943e2
 workflow-type: tm+mt
-source-wordcount: '4049'
+source-wordcount: '4055'
 ht-degree: 99%
 
 ---
@@ -203,6 +203,9 @@ ht-degree: 99%
       + Best Practices Analyzer {#best-practices-analyzer}
          + [개요](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
          + [Best Practices Analyzer 사용](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
+      + 콘텐츠 변환기 {#content-transformer}
+         + [개요](/help/journey-migration/content-transformer/overview.md)
+         + [컨텐츠 변환기 사용](/help/journey-migration/content-transformer/using.md)
       + 콘텐츠 전송 도구 {#content-transfer-tool}
          + [개요](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
          + [콘텐츠 전송 도구 사전 요구 사항](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
