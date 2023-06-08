@@ -2,7 +2,7 @@
 title: 테마 만들기 및 사용
 description: 테마를 사용하여 핵심 구성 요소를 사용하여 적응형 양식에 스타일을 지정하고 시각적 ID를 제공할 수 있습니다. 여러 적응형 Forms에서 테마를 공유할 수 있습니다.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 5%
@@ -49,6 +49,7 @@ ht-degree: 5%
 * 다음 항목이 있어야 합니다. [git에 대한 기본 지식](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git) 및 Cloud Service Git 리포지토리입니다.
 
 캔버스 테마를 사용자 지정하려면 다음을 수행하십시오.
+
 1. [캔버스 테마 복제](#1-download-canvas-theme-download-canvas-theme)
 1. [테마의 구조 이해](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
 1. [package.json 및 package_lock.json의 이름 변경](#changename-packagelock-packagelockjson)

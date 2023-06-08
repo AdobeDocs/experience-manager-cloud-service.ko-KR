@@ -2,7 +2,7 @@
 title: Experience Manager Sites 페이지에서 Forms 포털을 만드는 방법
 description: AEM Sites 페이지에서 Forms 포털을 만들고 기본 핵심 구성 요소를 사용하는 방법을 알아봅니다.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: a243664302c75fcb3125d68838353bd87cf24de3
+source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
 workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 1%
@@ -39,8 +39,11 @@ AEM Forms은 다음과 같은 포털 구성 요소를 즉시 제공합니다.
 * 링크: 이 구성 요소를 사용하여 페이지의 어디에서든 양식에 대한 링크를 만들 수 있습니다.
 
 다음을 수행할 수 있습니다. [즉시 사용 가능한 Forms 포털 구성 요소 가져오기](#import-forms-portal-components-aem-archetype) AEM Project Archetype. 가져온 후 다음 구성을 수행합니다.
+
 * [외부 스토리지 구성](#configure-azure-storage-adaptive-forms)
+
 * [Forms 포털 구성 요소 활성화](#enable-forms-portal-components)
+
 * [Forms 포털 구성 요소 구성](#configure-forms-portal-components)
 
 ## Forms 포털 구성 요소 가져오기 {#import-forms-portal-components-aem-archetype}
