@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3a17f02b6544669e07adabfd4f50905eb6afd51e
+source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 42%
+source-wordcount: '1049'
+ht-degree: 41%
 
 ---
 
@@ -74,26 +74,23 @@ ht-degree: 42%
 
 * **[적응형 양식을 Microsoft SharePoint 및 Microsoft OneDrive에 제출](/help/forms/configuring-submit-actions.md)**: 비즈니스 사용자 민첩성을 개선하여 새로운 양식을 빠르게 시작하고, Microsoft SharePoint 사이트 또는 OneDrive 폴더와 같이 일상적으로 사용하는 도구에 제출된 데이터를 저장합니다.
 
-![적응형 양식을 Microsoft SharePoint 및 Microsoft OneDrive에 제출](/help/forms/assets/onedrive-and-sharepoint.jpg)
-
-
 ### [!DNL Forms] 프리릴리스의 기능 {#prerelease-features-forms}
 
-* 향상된 Adobe Acrobat Sign 통합 및 규정 준수: 이제 AEM Forms을 Adobe Acrobat Sign for Government와 통합하여 정부 관련 계정(정부 부서 및 기관)에 대한 적응형 양식 제출을 통해 전자 서명에 대한 고급 규정 준수 및 보안을 제공합니다.
+* [향상된 Adobe Acrobat Sign 통합 및 규정 준수](/help/forms/adobe-sign-integration-adaptive-forms.md): 이제 AEM Forms을 Adobe Acrobat Sign for Government와 통합하여 정부 관련 계정(정부 부서 및 기관)에 대한 적응형 양식 제출을 통해 전자 서명에 대한 고급 수준의 규정 준수 및 보안을 제공합니다.
 
-Adobe Acrobat Sign for Government와의 통합을 통해 파트너와 정부 고객은 적응형 Forms의 전자 서명을 사용하여 가장 미션 크리티컬하고 민감한 업무 라인을 수행할 수 있습니다. 이러한 추가적인 보안 계층을 통해 모든 전자 서명은 FedRAMP Moderate 규정을 완벽하게 준수할 수 있으므로 정부 고객이 안심할 수 있습니다.
+   Adobe Acrobat Sign for Government와의 통합을 통해 파트너와 정부 고객은 적응형 Forms의 전자 서명을 사용하여 가장 미션 크리티컬하고 민감한 업무 라인을 수행할 수 있습니다. 이러한 추가적인 보안 계층을 통해 모든 전자 서명은 FedRAMP Moderate 규정을 완벽하게 준수할 수 있으므로 정부 고객이 안심할 수 있습니다.
 
-* AEM Sites 편집기 내의 적응형 Forms: 이제 AEM Sites 편집기를 사용하여 여러 양식을 신속하게 만들고 사이트 페이지에 추가할 수 있습니다. 이 기능을 통해 콘텐츠 작성자는 동적 동작, 유효성 검사, 데이터 통합, 기록 문서 생성 및 비즈니스 프로세스 자동화를 비롯한 적응형 양식 구성 요소의 기능을 사용하여 Sites 페이지 내에서 매끄러운 데이터 캡처 경험을 만들 수 있습니다. 다음과 같은 작업을 수행할 수 있습니다.
+* [AEM Sites 편집기 내의 적응형 Forms](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): 이제 AEM Sites 편집기를 사용하여 여러 양식을 신속하게 만들고 사이트 페이지에 추가할 수 있습니다. 이 기능을 통해 콘텐츠 작성자는 동적 동작, 유효성 검사, 데이터 통합, 기록 문서 생성 및 비즈니스 프로세스 자동화를 비롯한 적응형 양식 구성 요소의 기능을 사용하여 Sites 페이지 내에서 매끄러운 데이터 캡처 경험을 만들 수 있습니다. 다음과 같은 작업을 수행할 수 있습니다.
 
-   * 양식 구성 요소를 AEM Sites 편집기의 적응형 Forms 컨테이너 구성 요소로 끌어다 놓아 적응형 양식을 만드십시오.
+   * 양식 구성 요소를 AEM Sites 편집기 또는 경험 조각의 적응형 Forms 컨테이너 구성 요소로 끌어다 놓아 적응형 양식을 만드십시오.
    * AEM Sites 편집기 내의 적응형 Forms 마법사를 사용하여 임의의 Sites 페이지와 독립적인 양식을 만들 수 있으므로 여러 페이지에서 그러한 양식을 자유롭게 재사용할 수 있습니다.
    * 사이트 페이지에 여러 양식을 추가하여 사용자 경험을 간소화하고 유연성을 높일 수 있습니다.
 
-   >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
+      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
 * 규칙 편집기의 사용자 지정 오류 처리기를 사용하여 오류 처리 개선: 이제 외부 서비스에서 반환된 오류에 대한 응답으로 사용자 지정 함수(클라이언트 라이브러리 사용)를 호출하고 최종 사용자에게 맞춤 응답을 제공하거나 서비스에서 반환된 오류에 대해 특정 작업을 수행할 수 있습니다. 예를 들어 특정 오류 코드에 대해 백엔드에서 사용자 지정 워크플로우를 호출하거나 서비스가 중단되었음을 고객에게 알릴 수 있습니다.
 
-이렇게 하면 OOTB 오류 핸들러와 역호환되며 유연성과 제어력이 향상된 표준 기반 오류 응답을 도입하여 전반적인 오류 처리 기능을 향상시킬 수 있습니다.
+   이렇게 하면 OOTB 오류 핸들러와 역호환되며 유연성과 제어력이 향상된 표준 기반 오류 응답을 도입하여 전반적인 오류 처리 기능을 향상시킬 수 있습니다.
 
 ## Headless 적응형 양식 얼리 어답터 프로그램 {#forms-early-adopter}
 

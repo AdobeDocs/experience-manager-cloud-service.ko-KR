@@ -4,9 +4,9 @@ description: 적응형 양식을 손쉽게 만들거나 AEM Sites 페이지에 �
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
+source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
 workflow-type: tm+mt
-source-wordcount: '3186'
+source-wordcount: '3182'
 ht-degree: 31%
 
 ---
@@ -277,4 +277,4 @@ Forms 포털 초안 미리 채우기 서비스를 사용하여 저장된 적응�
 * [적응형 Forms 기반의 핵심 구성 요소 스타일 지정](using-themes-in-core-components.md)
 * [규칙 편집기를 사용하여 적응형 Forms에 동적 동작 추가](rule-editor.md)
 * [적응형 양식의 레이아웃 변경](/help/sites-cloud/authoring/features/responsive-layout.md)
-* [기록 문서 생성](generate-document-of-record-core-components.md)
+

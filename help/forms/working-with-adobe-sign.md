@@ -5,9 +5,9 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 5801063c9c4c1c6b9f9e7f55ad4d66bb563e0eef
+source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
 workflow-type: tm+mt
-source-wordcount: '3073'
+source-wordcount: '3097'
 ht-degree: 1%
 
 ---
@@ -194,11 +194,7 @@ Adobe Sign 계약에 대해 한 명 또는 여러 명의 수신자가 있을 수
       >
       >첫 번째 수신자 또는 유일한 수신자(단일 수신자가 있는 경우)의 이메일 주소가 와 동일하지 않은지 확인합니다. [!DNL Adobe Sign] aem 클라우드 서비스 구성에 사용되는 계정입니다.
 
-   * **[!UICONTROL 수신자 인증 방법]:** Adobe Sign 계약을 열기 전에 수신자를 인증하는 방법을 지정하십시오. 전화, 기술 자료, 소셜 ID 기반 인증 및 [정부 ID](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html) 대상 [!DNL Adobe Acrobat Sign].
-
-      <!-- 
-      For [!DNL Adobe Acrobat Sign for Government] you can choose between phone and knowledge-based authentication.
-      -->
+   * **[!UICONTROL 수신자 인증 방법]:** Adobe Sign 계약을 열기 전에 수신자를 인증하는 방법을 지정하십시오. 전화, 기술 자료, 소셜 ID 기반 인증 및 [정부 ID](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html) 대상 [!DNL Adobe Acrobat Sign]. 대상 [!DNL Adobe Acrobat Sign for Government] 전화와 지식 기반 인증 중에서 선택할 수 있습니다.
    >[!NOTE]
    >
    >    * 기본적으로 소셜 ID 기반 인증은 Facebook, Google 및 LinkedIn을 사용하여 인증할 수 있는 옵션을 제공합니다. 다음으로 문의할 수 있습니다 [!DNL Adobe Sign] 다른 소셜 인증 공급자를 활성화하도록 지원합니다.
@@ -314,11 +310,9 @@ Adobe Sign 계약 ID(agreementId)는 적응형 양식의 제출 데이터에 포
    * 클라우드 서명: [디지털 ID](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) 트러스트 서비스 공급자가 호스팅합니다.
    * Adobe Acrobat 또는 Reader: Adobe Acrobat 또는 Reader으로 문서를 다운로드하여 열고 스마트 카드, USB 토큰 또는 파일 기반 디지털 ID를 사용하여 서명합니다.
 
-      <!-- 
       >[!NOTE]
       >
-      > * [!DNL Adobe Acrobat Sign for Government] can use Digitial Signature but can not use Cloud Signatures in the current version.
-      -->
+      > 디지털 서명은 다음 대상에도 적용됩니다. [!DNL Adobe Acrobat Sign for Government] 그러나 클라우드 서명을 사용하여 적용할 수 없습니다.
    클라우드 서명 필드를 적응형 양식에 추가한 후 다음 단계를 수행하여 구성 프로세스를 완료합니다.
 
    * [적응형 양식에 Adobe Sign 활성화](#enableadobsignforanadaptiveform)
