@@ -4,9 +4,9 @@ description: 용 Adobe Acrobat Sign을 구성하는 방법 알아보기 [!DNL AE
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 4d32a1768a97505ec2e7288904dde0c9120041a7
+source-git-commit: d9c5934c03b9c5aa91bafa09569d441fc7868937
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '1931'
 ht-degree: 31%
 
 ---
@@ -111,7 +111,7 @@ ht-degree: 31%
 
 ## AEM Forms과 Adobe Acrobat Sign Solutions for Government 연결 {#adobe-acrobat-sign-for-government}
 
-|주의|[!BADGE 프리릴리스 설명서]{type=Caution tooltip="노란색 상태"}
+[!BADGE 프리릴리스 설명서]{type=Caution tooltip="노란색 상태"}
 <span class="preview"> 이 섹션에는 프리릴리스 설명서와 변경될 수 있는 사항이 포함되어 있습니다.</span>
 
 AEM Forms과 Adobe Acrobat Sign Solutions for Government를 연결하는 것은 여러 단계로 구성됩니다. 여기에는 다음이 포함됩니다.
