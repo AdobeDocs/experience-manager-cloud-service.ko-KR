@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service에 대한 OSGi 구성
 description: 비밀 값 및 환경별 값이 있는 OSGi 구성
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
+source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
 workflow-type: tm+mt
-source-wordcount: '3312'
+source-wordcount: '3323'
 ht-degree: 1%
 
 ---
@@ -136,7 +136,7 @@ Adobe Experience Manager as a Cloud Service과 함께 사용할 수 있는 세 �
 
 OSGi에 대한 일반적인 사례는 인라인 OSGi 구성 값을 사용합니다. 환경별 구성은 개발 환경 간에 값이 다른 특정 사용 사례에만 사용됩니다.
 
-![](assets/choose-configuration-value-type_res1.png)
+![적절한 구성 값 유형을 사용하는 방법에 대한 의사 결정 트리](assets/choose-configuration-value-type_res1.png)
 
 환경별 구성은 인라인 값을 포함하는 기존의 정적으로 정의된 OSGi 구성을 확장하여 Cloud Manager API를 통해 OSGi 구성 값을 외부에서 관리하는 기능을 제공합니다. 값을 환경별 구성으로 추상화하는 대신 인라인 값을 정의하고 Git에 저장하는 일반적이고 전통적인 접근 방식을 사용해야 하는 시기를 이해하는 것이 중요합니다.
 
@@ -265,8 +265,7 @@ use $[secret:SECRET_VAR_NAME]
 >1. 고객은 접두사가 있는 변수를 참조해서는 안 됩니다. `INTERNAL_` 또는 `ADOBE_` 둘 중 하나.
 >
 >1. 접두사가 있는 환경 변수 `AEM_` 는 고객이 사용하고 설정할 공개 API로 제품에 의해 정의됩니다.
-   >   반면 고객은 접두사로 시작하는 환경 변수를 사용하고 설정할 수 있습니다 `AEM_` 이 접두사로 자체 변수를 정의하면 안 됩니다.
-
+>   반면 고객은 접두사로 시작하는 환경 변수를 사용하고 설정할 수 있습니다 `AEM_` 이 접두사로 자체 변수를 정의하면 안 됩니다.
 
 ### 기본값 {#default-values}
 
@@ -317,7 +316,7 @@ OSGi 속성에 작성자와 게시에 대해 다른 값이 필요한 경우:
 * 별개 `config.author` 및 `config.publish` 에 설명된 대로 OSGi 폴더를 사용해야 합니다. [실행 모드 해상도 섹션](#runmode-resolution).
 * 사용해야 하는 독립 변수 이름을 만드는 두 가지 옵션이 있습니다.
    * 첫 번째 옵션, 권장됨: 모든 OSGi 폴더 내(예: `config.author` 및 `config.publish`) 다른 값을 정의하기 위해 선언되었습니다. 동일한 변수 이름을 사용하십시오. 예
-      `$[env:ENV_VAR_NAME;default=<value>]`, 여기서 기본값은 해당 계층(작성자 또는 게시)의 기본값에 해당합니다. 를 통해 환경 변수를 설정할 때 [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) 또는 클라이언트를 통해 이 설명에 따라 &quot;service&quot; 매개 변수를 사용하여 계층을 구별합니다 [API 참조 설명서](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/). &quot;service&quot; 매개 변수는 변수의 값을 적절한 OSGi 계층에 바인딩합니다. &quot;author&quot; 또는 &quot;publish&quot; 또는 &quot;미리보기&quot;가 될 수 있습니다.
+     `$[env:ENV_VAR_NAME;default=<value>]`, 여기서 기본값은 해당 계층(작성자 또는 게시)의 기본값에 해당합니다. 를 통해 환경 변수를 설정할 때 [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) 또는 클라이언트를 통해 이 설명에 따라 &quot;service&quot; 매개 변수를 사용하여 계층을 구별합니다 [API 참조 설명서](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/). &quot;service&quot; 매개 변수는 변수의 값을 적절한 OSGi 계층에 바인딩합니다. &quot;author&quot; 또는 &quot;publish&quot; 또는 &quot;미리보기&quot;가 될 수 있습니다.
    * 두 번째 옵션은 와 같은 접두사를 사용하여 개별 변수를 선언하는 것입니다. `author_<samevariablename>` 및 `publish_<samevariablename>`
 
 ### 구성 예 {#configuration-examples}

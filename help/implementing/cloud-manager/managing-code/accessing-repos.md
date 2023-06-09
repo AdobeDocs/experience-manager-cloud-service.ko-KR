@@ -2,10 +2,10 @@
 title: 저장소 액세스
 description: Cloud Manager의 셀프서비스 git 계정 관리를 사용하여 git 저장소에 액세스하고 관리하는 방법을 알아봅니다.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
-source-git-commit: 4729574eb31e01077f0d2a35efcef6d134f6aa5c
+source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
 workflow-type: tm+mt
-source-wordcount: '229'
-ht-degree: 100%
+source-wordcount: '232'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ Cloud Manager를 사용하면 파이프라인 카드에 있는 **저장소 정�
    * git 사용자 이름
    * git 암호. 이 값은 **암호 생성** 버튼을 클릭할 때 표시됩니다.
 
-   ![](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
+   ![저장소 정보 보기](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
 
 사용자는 이러한 자격 증명을 사용하여 저장소의 로컬 복사본을 복제하고 해당 로컬 저장소를 변경할 수 있으며 준비가 되면 Cloud Manager의 원격 코드 저장소에 코드 변경 사항을 다시 커밋할 수 있습니다.
 

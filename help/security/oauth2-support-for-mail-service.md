@@ -2,10 +2,10 @@
 title: 메일 서비스에 대한 OAuth2 지원
 description: Adobe Experience Manager as a Cloud Service의 메일 서비스에 대한 Oauth2 지원
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 4997c506e1cd467255fe11cb596fb64d74a511af
+source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 100%
+source-wordcount: '695'
+ht-degree: 99%
 
 ---
 
@@ -23,7 +23,7 @@ AEM as a Cloud Service 메일 서비스에 대한 자세한 내용은 [이메일
 1. 검색창에서 **Azure Active Directory**&#x200B;를 검색한 다음 결과를 클릭합니다. 또는 [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)에서 바로 검색할 수 있습니다.
 1. **앱 등록** - **신규 등록**&#x200B;을 클릭합니다.
 
-   ![](assets/oauth-outlook1.png)
+   ![앱 등록 프로세스 시작](assets/oauth-outlook1.png)
 
 1. 요구 사항에 따라 정보를 입력한 다음 **등록**&#x200B;을 클릭합니다.
 1. 새로 생성된 앱으로 이동하여 **API 권한**&#x200B;을 선택합니다.
@@ -134,8 +134,7 @@ AEM측의 OAuth 구성을 진행하기에 앞서 아래 절차에 따라 accessT
    * `offline_access`
    * `email`
    * `profile`
-1. 다음 구문을 사용하여 OSGi 속성 파일 `called com.day.cq.mailer.DefaultMailService.cfg.json`을 
-`/apps/<my-project>/osgiconfig/config` 아래에 생성합니다.
+1. 다음 구문을 사용하여 OSGi 속성 파일 `called com.day.cq.mailer.DefaultMailService.cfg.json`을 `/apps/<my-project>/osgiconfig/config` 아래에 생성합니다.
 
    ```
    {

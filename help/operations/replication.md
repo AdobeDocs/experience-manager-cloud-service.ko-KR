@@ -2,9 +2,9 @@
 title: 복제
 description: 배포 및 복제 문제 해결
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 91a13f8b23136298e0ccf494e51fccf94fa1e0b4
+source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1341'
 ht-degree: 44%
 
 ---
@@ -53,7 +53,7 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
 
 **도구 - 워크플로 - 모델**&#x200B;을 선택한 다음 아래와 같이 기본 워크플로 모델의 **콘텐츠 트리 게시**&#x200B;를 복사하여 트리 복제를 트리거할 수 있습니다.
 
-![](/help/operations/assets/publishcontenttreeworkflow.png)
+![콘텐츠 트리 게시 워크플로 카드](/help/operations/assets/publishcontenttreeworkflow.png)
 
 원본 모델을 수정하거나 호출하지 마십시오. 대신 먼저 모델을 복사한 다음 해당 복사본을 수정하거나 호출해야 합니다.
 
