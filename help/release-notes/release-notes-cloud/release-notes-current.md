@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3209b3098544275bd31ee19842bef0eb2e7a29d8
+source-git-commit: d4d44f452406e452372e409c6594ef4a256b9682
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 41%
+source-wordcount: '1095'
+ht-degree: 32%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 41%
 
 >[!NOTE]
 >
->여기에서 2021, 2022 버전 등 이전 버전의 릴리스 정보로 이동할 수 있습니다.
+>여기에서 2021 또는 2022와 같은 이전 버전의 릴리스 정보로 이동할 수 있습니다.
 >
 >[!DNL Experience Manager] as a Cloud Service의 향후 기능 활성화에 대해 알아보려면 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ko-KR)을 살펴보십시오.
 
@@ -54,43 +54,47 @@ ht-degree: 41%
 * [향상된 검색 경험](/help/assets/search-assets.md#aftersearch) - 이제 검색 결과에 표시되는 에셋에서 다음 작업을 빠르게 수행할 수 있습니다.
 
    * 워크플로우 만들기
-   * 새 버전 만들기
+   * 버전 만들기
    * 에셋 연결 또는 연결 해제
 
      이러한 작업을 수행하기 위해 에셋 위치로 이동하여 에셋 위치의 속성을 볼 필요가 없습니다.
 
 * 색상 검색 패싯 유용성 개선 사항 - 이제 색상 값에 대한 입력 필드를 편집할 수 있으며 색상 피커를 종료할 때만 검색 결과가 업데이트됩니다.
 
-* 새로운 프로토콜(DASH - Dynamic Adaptive Streaming over HTTP)이 Dynamic Media 비디오 게재(CMAF 활성화)에서 적응형 스트리밍을 위해 시작되었습니다.
+* Dynamic Media 비디오 게재(CMAF가 활성화됨)에서 적응형 스트리밍을 위한 새로운 프로토콜 지원 시작(DASH - HTTP를 통한 동적 적응형 스트리밍):
    * 적응형 스트리밍(DASH/HLS)은 비디오에 대한 더 나은 최종 사용자 시청 경험 보장
    * DASH는 적응형 비디오 스트리밍을 위한 국제 표준 프로토콜이며 업계에서 널리 채택되고 있음
    * 지원 티켓을 통해 모든 지역에서 사용 가능
 
-* Dynamic Media _스냅샷_ - 테스트 이미지 또는 Dynamic Media URL을 실험하여 다양한 이미지 수정자의 출력을 확인하고, 파일 크기(WebP 및 AVIF 전달), 네트워크 대역폭 및 장치 픽셀 비율에 대해 스마트 이미징을 최적화합니다. 다음을 참조하십시오 [Dynamic Media 스냅샷](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
+* Dynamic Media _스냅샷_ - 테스트 이미지 또는 Dynamic Media URL을 실험하여 다양한 이미지 수정자의 출력을 확인하고 파일 크기(WebP 및 AVIF 전달), 네트워크 대역폭 및 장치 픽셀 비율에 대한 스마트 이미징 최적화를 평가합니다. 다음을 참조하십시오 [Dynamic Media 스냅샷](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
+
+### 의 기능 [!DNL Assets] 프리릴리스 {#prerelease-feature-assets}
+
+* Dynamic Media - 이제 이미지 프로필의 일부 스마트 자르기 관련 필드에 대한 사용자 인터페이스가 스마트 자르기 정의에 대한 현재 지침을 반영하도록 업데이트됩니다. 다음을 참조하십시오 [자르기 옵션](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en#crop-options).
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms] 프리릴리스에서 사용 가능한 새로운 기능 {#new-features-available-in-channel}
 
-* **[적응형 양식을 Microsoft SharePoint 및 Microsoft OneDrive에 제출](/help/forms/configuring-submit-actions.md)**: 비즈니스 사용자 민첩성을 개선하여 새로운 양식을 빠르게 시작하고, Microsoft SharePoint 사이트 또는 OneDrive 폴더와 같이 일상적으로 사용하는 도구에 제출된 데이터를 저장합니다.
+* **[Microsoft® SharePoint 및 Microsoft® OneDrive에 적응형 Forms 제출](/help/forms/configuring-submit-actions.md)**: 새로운 양식을 신속하게 시작하고 제출된 데이터를 Microsoft® SharePoint 사이트 또는 OneDrive 폴더와 같은 일상적인 도구에 저장할 수 있도록 비즈니스 사용자 민첩성을 향상시킵니다.
 
 ### [!DNL Forms] 프리릴리스의 기능 {#prerelease-features-forms}
 
 * [AEM 페이지 편집기 내의 적응형 Forms](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): 이제 AEM 페이지 편집기를 사용하여 여러 양식을 신속하게 만들고 사이트 페이지에 추가할 수 있습니다. 이 기능을 통해 콘텐츠 작성자는 동적 동작, 유효성 검사, 데이터 통합, 기록 문서 생성 및 비즈니스 프로세스 자동화를 비롯한 적응형 양식 구성 요소의 기능을 사용하여 Sites 페이지 내에서 매끄러운 데이터 캡처 경험을 만들 수 있습니다. 다음과 같은 작업을 수행할 수 있습니다.
 
    * 양식 구성 요소를 AEM Sites 편집기 또는 경험 조각의 적응형 Forms 컨테이너 구성 요소로 끌어다 놓아 적응형 양식을 만드십시오.
-   * AEM Sites 편집기 내의 적응형 Forms 마법사를 사용하여 임의의 Sites 페이지와 독립적인 양식을 만들 수 있으므로 여러 페이지에서 그러한 양식을 자유롭게 재사용할 수 있습니다.
+   * AEM Sites 편집기 내의 적응형 Forms 마법사를 사용하여 모든 Sites 페이지와 독립적인 양식을 만들 수 있으므로 여러 페이지에서 이러한 양식을 자유롭게 재사용할 수 있습니다.
    * 사이트 페이지에 여러 양식을 추가하여 사용자 경험을 간소화하고 유연성을 높일 수 있습니다.
 
      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
-* [향상된 Adobe Acrobat Sign 통합 및 규정 준수](/help/forms/adobe-sign-integration-adaptive-forms.md): 이제 AEM Forms을 Adobe Acrobat Sign for Government와 통합하여 정부 관련 계정(정부 부서 및 기관)에 대한 적응형 양식 제출을 통해 전자 서명에 대한 고급 수준의 규정 준수 및 보안을 제공합니다.
+* [향상된 Adobe Acrobat Sign 통합 및 규정 준수](/help/forms/adobe-sign-integration-adaptive-forms.md): 이제 AEM Forms을 Adobe Acrobat Sign for Government와 통합합니다. 이 통합은 정부 관련 계정(정부 부서 및 기관)에 대한 적응형 양식 제출을 통해 전자 서명에 대한 고급 수준의 규정 준수 및 보안을 제공합니다.
 
-  Adobe Acrobat Sign for Government와의 통합을 통해 파트너와 정부 고객은 적응형 Forms의 전자 서명을 사용하여 가장 미션 크리티컬하고 민감한 업무 라인을 수행할 수 있습니다. 이러한 추가적인 보안 계층을 통해 모든 전자 서명은 FedRAMP Moderate 규정을 완벽하게 준수할 수 있으므로 정부 고객이 안심할 수 있습니다.
+  Adobe Acrobat Sign for Government와의 통합을 통해 Adobe 파트너 및 정부 고객은 적응형 Forms에서 전자 서명을 사용하여 가장 미션 크리티컬하고 민감한 비즈니스 제품군 중 일부를 수행할 수 있습니다. 이러한 추가적인 보안 계층을 통해 모든 전자 서명은 FedRAMP Moderate 규정을 완벽하게 준수할 수 있으므로 Adobe 정부 고객에게 안심할 수 있습니다.
 
-* 규칙 편집기의 사용자 지정 오류 처리기를 사용하여 오류 처리 개선: 이제 외부 서비스에서 반환된 오류에 대한 응답으로 사용자 지정 함수(클라이언트 라이브러리 사용)를 호출하고 최종 사용자에게 맞춤 응답을 제공하거나 서비스에서 반환된 오류에 대해 특정 작업을 수행할 수 있습니다. 예를 들어 특정 오류 코드에 대해 백엔드에서 사용자 지정 워크플로우를 호출하거나 서비스가 중단되었음을 고객에게 알릴 수 있습니다.
+* 규칙 편집기의 사용자 지정 오류 처리기로 오류 처리가 개선되었습니다. 이제 외부 서비스에서 반환한 오류에 대한 응답으로 사용자 지정 함수(클라이언트 라이브러리 사용)를 호출하고 최종 사용자에게 맞춤 응답을 제공할 수 있습니다. 또는 서비스에서 반환한 오류에 대해 특정 작업을 수행할 수 있습니다. 예를 들어 특정 오류 코드에 대해 백엔드에서 사용자 지정 워크플로우를 호출하거나 서비스가 중단되었음을 고객에게 알릴 수 있습니다.
 
-  이렇게 하면 OOTB 오류 핸들러와 역호환되며 유연성과 제어력이 향상된 표준 기반 오류 응답을 도입하여 전반적인 오류 처리 기능을 향상시킬 수 있습니다.
+  이 기능은 OOTB 오류 핸들러와 역호환되며 유연성과 제어력이 향상된 표준 기반 오류 응답을 도입하여 전반적인 오류 처리 기능을 개선하는 데 도움이 됩니다.
 
 ### Headless 적응형 양식 얼리 어답터 프로그램 {#forms-early-adopter}
 
@@ -99,7 +103,7 @@ Headless 적응형 양식을 사용하여 개발자가 기존의 그래픽 사�
 * 선택한 프로그래밍 언어로 고품질 다중 채널 양식 작성
 * 양식을 데스크탑 및 모바일 앱, 웹 사이트 및 채팅 애플리케이션에 기본적으로 통합
 * 양식 애플리케이션과 함께 독점 UI 구성 요소 재사용
-* Adobe Experience Manager Forms의 기능 활용
+* Adobe Experience Manager Forms의 기능 사용
 
 다음으로 이메일을 보낼 수 있습니다. `aem-forms-headless@adobe.com` 얼리어답터 프로그램에 참여하려면 공식 이메일 ID에서 을(를) 전송하십시오.
 
@@ -107,7 +111,7 @@ Headless 적응형 양식을 사용하여 개발자가 기존의 그래픽 사�
 
 ### 새로운 기능 {#what-is-new-foundation}
 
-* 추가 게시 영역: 사이트 고객은 기본 영역 외에 최대 3개의 게시 영역에 라이선스를 부여할 수 있습니다. 트래픽이 추가 게시 팜으로 라우팅되므로 특정 요청에 대한 지연 시간이 줄어들고 지역 중단에 대한 복원력이 향상됩니다. 라이선싱에 대한 자세한 내용은 Adobe 계정 관리자에게 문의하십시오 [추가 게시 영역](/help/operations/additional-publish-regions.md) 을 참조하십시오.
+* 추가 게시 영역: 사이트 고객은 기본 영역 외에 최대 3개의 게시 영역에 라이선스를 부여할 수 있습니다. 트래픽이 추가 게시 팜으로 라우팅되므로 특정 요청에 대한 지연 시간이 단축되고 지역 중단에 대한 복원력이 향상됩니다. 라이선싱에 대한 자세한 내용은 Adobe 계정 관리자에게 문의하십시오 [추가 게시 영역](/help/operations/additional-publish-regions.md) 을 참조하십시오.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
