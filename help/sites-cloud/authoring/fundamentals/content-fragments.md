@@ -3,7 +3,7 @@ title: 콘텐츠 조각
 description: Adobe Experience Manager as a Cloud Service 콘텐츠 조각을 사용하면 페이지 독립적 콘텐츠를 디자인, 작성, 조정 및 사용할 수 있습니다.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 source-git-commit: 3f7c9240a81062c335c33b0e59971de43cacf87b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1227'
 ht-degree: 100%
 
@@ -73,7 +73,6 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
    >* [응답형 레이아웃](/help/sites-cloud/authoring/features/responsive-layout.md)
    >* [페이지 콘텐츠 편집](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
-
 ### 요소 또는 변형 선택 {#selecting-the-element-or-variation}
 
 조각의 **구성** 대화 상자를 열어 현재 페이지에서 사용할 조각을 구성합니다. 이 대화 상자는 사용된 구성 요소에 따라 달라질 수 있습니다.
@@ -92,9 +91,9 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
 * **요소**
    * 선택한 항목은 사용된 모델에 따라 사용할 수 있습니다.
 
-   >[!NOTE]
-   >
-   >사용할 수 있는 요소는 사용된 모델에 따라 다릅니다.
+  >[!NOTE]
+  >
+  >사용할 수 있는 요소는 사용된 모델에 따라 다릅니다.
 
 * **변형**
    * The default **Master** will always be available.
@@ -146,7 +145,6 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
 >
 >  중간 단락은 옆에 배치된(조각) 단락과 문맥적 관계가 없으므로 상대적 위치가 변경된 것처럼 보일 수 있습니다.
 >* 두 단락 구조가 충돌하지 않는 경우에는 중간 콘텐츠가 내부에 여전히 있어도 표시되지 않습니다.
-
 
 ### 관련 콘텐츠 사용 {#using-associated-content}
 
