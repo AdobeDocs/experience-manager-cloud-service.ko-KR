@@ -4,10 +4,10 @@ description: 적응형 양식을 손쉽게 만들거나 AEM Sites 페이지에 �
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: d9c5934c03b9c5aa91bafa09569d441fc7868937
+source-git-commit: 3209b3098544275bd31ee19842bef0eb2e7a29d8
 workflow-type: tm+mt
-source-wordcount: '3061'
-ht-degree: 27%
+source-wordcount: '3073'
+ht-degree: 24%
 
 ---
 
@@ -136,14 +136,15 @@ AEM 페이지 편집기에서 적응형 양식 컨테이너를 사용하면 동�
 
 ## 적응형 양식 만들기 {#create-an-adaptive-form-in-sites-editor-or-experience-fragment}
 
-처음부터 완전히 새로운 양식을 만들어 AEM Sites 페이지 또는 경험 조각에서 바로 요구 사항 및 디자인 환경 설정에 맞게 특별히 조정할 수 있습니다. 일회용 양식을 사용하는 경우 AEM Sites 페이지에 직접 작성하는 것이 좋으며, 경험 조각은 웹 사이트의 여러 페이지에서 재사용해야 하는 양식에 적합합니다.
+AEM Sites 페이지 또는 경험 조각에서 직접 요구 사항 및 디자인 환경 설정에 맞게 맞춤화하여 처음부터 새로운 양식을 만들 수 있습니다. 일회성 양식의 경우 AEM Sites 페이지로 직접 작성하는 것이 좋지만 경험 조각은 웹 사이트의 여러 페이지에서 재사용해야 하는 양식에 이상적입니다.
 
 * [AEM Sites 페이지에서 양식 만들기](#create-an-adaptive-form-in-sites-editor)
 * [경험 조각에서 양식 만들기](#create-an-adaptive-form-in-experience-fragment)
+* [AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment)
 
 ### AEM Sites 페이지에서 양식 만들기 {#create-an-adaptive-form-in-sites-editor}
 
-AEM Sites 편집기에서 적응형 양식 컨테이너 구성 요소를 사용하여 맞춤형 양식을 만들 수 있습니다. 구성 요소를 사용하여 양식 구성 요소를 드래그 앤 드롭하여 양식을 만들 수 있습니다. 양식 구성 요소는 핵심 구성 요소를 기반으로 합니다. 조직의 요구 사항에 따라 손쉽게 사용자 정의할 수 있습니다.
+AEM 페이지 편집기에서 적응형 양식 컨테이너 구성 요소를 사용하여 사용자 정의 양식을 만들 수 있습니다. 구성 요소를 사용하여 양식 구성 요소를 드래그 앤 드롭하여 양식을 만들 수 있습니다. 양식 구성 요소는 핵심 구성 요소를 기반으로 합니다. 조직의 요구 사항에 따라 손쉽게 사용자 정의할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
@@ -169,7 +170,7 @@ Sites 페이지에서 적응형 양식을 만들려면:
 
 다음, [제출 액션 설정](#configure-submit-action-for-form) 및 고급 속성입니다.
 
-### AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환
+### AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환 {#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment}
 
 Sites 페이지 편집기의 기존 적응형 양식을 경험 조각으로 변환하여 여러 페이지 또는 사이트에서 양식을 재사용할 수 있습니다.
 

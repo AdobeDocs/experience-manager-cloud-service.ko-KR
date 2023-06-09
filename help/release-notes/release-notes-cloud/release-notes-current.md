@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: d9c5934c03b9c5aa91bafa09569d441fc7868937
+source-git-commit: 3209b3098544275bd31ee19842bef0eb2e7a29d8
 workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 41%
@@ -76,10 +76,6 @@ ht-degree: 41%
 
 ### [!DNL Forms] 프리릴리스의 기능 {#prerelease-features-forms}
 
-* [향상된 Adobe Acrobat Sign 통합 및 규정 준수](/help/forms/adobe-sign-integration-adaptive-forms.md): 이제 AEM Forms을 Adobe Acrobat Sign for Government와 통합하여 정부 관련 계정(정부 부서 및 기관)에 대한 적응형 양식 제출을 통해 전자 서명에 대한 고급 수준의 규정 준수 및 보안을 제공합니다.
-
-  Adobe Acrobat Sign for Government와의 통합을 통해 파트너와 정부 고객은 적응형 Forms의 전자 서명을 사용하여 가장 미션 크리티컬하고 민감한 업무 라인을 수행할 수 있습니다. 이러한 추가적인 보안 계층을 통해 모든 전자 서명은 FedRAMP Moderate 규정을 완벽하게 준수할 수 있으므로 정부 고객이 안심할 수 있습니다.
-
 * [AEM 페이지 편집기 내의 적응형 Forms](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): 이제 AEM 페이지 편집기를 사용하여 여러 양식을 신속하게 만들고 사이트 페이지에 추가할 수 있습니다. 이 기능을 통해 콘텐츠 작성자는 동적 동작, 유효성 검사, 데이터 통합, 기록 문서 생성 및 비즈니스 프로세스 자동화를 비롯한 적응형 양식 구성 요소의 기능을 사용하여 Sites 페이지 내에서 매끄러운 데이터 캡처 경험을 만들 수 있습니다. 다음과 같은 작업을 수행할 수 있습니다.
 
    * 양식 구성 요소를 AEM Sites 편집기 또는 경험 조각의 적응형 Forms 컨테이너 구성 요소로 끌어다 놓아 적응형 양식을 만드십시오.
@@ -87,6 +83,10 @@ ht-degree: 41%
    * 사이트 페이지에 여러 양식을 추가하여 사용자 경험을 간소화하고 유연성을 높일 수 있습니다.
 
      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
+
+* [향상된 Adobe Acrobat Sign 통합 및 규정 준수](/help/forms/adobe-sign-integration-adaptive-forms.md): 이제 AEM Forms을 Adobe Acrobat Sign for Government와 통합하여 정부 관련 계정(정부 부서 및 기관)에 대한 적응형 양식 제출을 통해 전자 서명에 대한 고급 수준의 규정 준수 및 보안을 제공합니다.
+
+  Adobe Acrobat Sign for Government와의 통합을 통해 파트너와 정부 고객은 적응형 Forms의 전자 서명을 사용하여 가장 미션 크리티컬하고 민감한 업무 라인을 수행할 수 있습니다. 이러한 추가적인 보안 계층을 통해 모든 전자 서명은 FedRAMP Moderate 규정을 완벽하게 준수할 수 있으므로 정부 고객이 안심할 수 있습니다.
 
 * 규칙 편집기의 사용자 지정 오류 처리기를 사용하여 오류 처리 개선: 이제 외부 서비스에서 반환된 오류에 대한 응답으로 사용자 지정 함수(클라이언트 라이브러리 사용)를 호출하고 최종 사용자에게 맞춤 응답을 제공하거나 서비스에서 반환된 오류에 대해 특정 작업을 수행할 수 있습니다. 예를 들어 특정 오류 코드에 대해 백엔드에서 사용자 지정 워크플로우를 호출하거나 서비스가 중단되었음을 고객에게 알릴 수 있습니다.
 
