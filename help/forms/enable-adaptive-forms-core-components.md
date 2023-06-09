@@ -189,12 +189,11 @@ AEM Forms as a Cloud Service 환경에 맞게 적응형 양식 핵심 구성 요
    >[!NOTE]
    >
    >
-   >  `${appId}`을(를) appId로 바꿉니다.
+   >  `${appId}`를 appId로 바꿉니다.
    >
-   >  `[AEM Repository Folder]/all/pom.xml` 파일에서 `${appId}`(을)를 찾으려면 `-packages/application/install` 용어를 검색합니다. `-packages/application/install` 용어 앞의 텍스트는 `${appId}`입니다. 예: 다음 코드 `myheadlessform`은(는) `${appId}`입니다.
+   >  `[AEM Repository Folder]/all/pom.xml` 파일에서 `${appId}`를 찾으려면 `-packages/application/install` 용어를 검색합니다. `-packages/application/install` 용어 앞의 텍스트는 `${appId}`입니다. 예: 다음 코드 `myheadlessform`은 `${appId}`입니다.
    >
-   >   
-   ```
+   >   ```
    >             <embedded>
    >                     <groupId>com.myheadlessform</groupId>
    >                     <artifactId>myheadlessform.ui.apps<artifactId>
@@ -241,7 +240,7 @@ AEM Forms as a Cloud Service 환경에 맞게 적응형 양식 핵심 구성 요
            </dependency>
    ```
 
-1. 편집할 `[AEM Repository Folder]/ui.apps/pom.xml`을(를) 엽니다. `af-core bundle` 종속성을 추가하고 파일을 저장합니다.
+1. 편집할 `[AEM Repository Folder]/ui.apps/pom.xml`을 엽니다. `af-core bundle` 종속성을 추가하고 파일을 저장합니다.
 
    ```XML
        <dependency>
@@ -303,7 +302,7 @@ AEM Forms as a Cloud Service 환경에 맞게 적응형 양식 핵심 구성 요
 ### AEM Forms as a Cloud Service 환경에서 업데이트된 코드 빌드 및 배포 {#core-components-on-aem-forms-cs}
 
 1. 터미널 또는 명령 프롬프트를 엽니다.
-1. `[AEM Repository Folder]`(으)로 이동하고 나열된 순서대로 다음 명령을 실행합니다.
+1. `[AEM Repository Folder]`로 이동하고 나열된 순서대로 다음 명령을 실행합니다.
 
    ```Shell
     git add pom.xml
@@ -326,7 +325,7 @@ AEM Forms as a Cloud Service 환경에 맞게 적응형 양식 핵심 구성 요
 
 ### 핵심 구성 요소를 활성화하는 경우 추가되는 모든 기능은 무엇입니까? {#core-components-capabilities}
 
-내 환경에 맞는 적응형 양식 핵심 구성 요소가 활성화되면 빈 핵심 구성 요소 기반 적응형 양식 템플릿 및 Canvas 3.0 테마가 해당 환경에 추가됩니다. 내 환경에 맞는 적응형 양식 핵심 구성 요소가 활성화되면 다음을 수행할 수 있습니다.
+내 환경에 맞는 적응형 양식 핵심 구성 요소가 활성화되면 빈 핵심 구성 요소 기반 적응형 양식 템플릿 및 Canvas 3.0 테마가 해당 환경에 추가됩니다. 내 환경에 맞는 적응형 양식 핵심 구성 요소가 활성화되면 다음과 같은 작업을 수행할 수 있습니다.
 
 * [핵심 구성 요소 기반 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md).
 * [핵심 구성 요소 기반 적응형 양식 템플릿 만들기](/help/forms/template-editor.md).

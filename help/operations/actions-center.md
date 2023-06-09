@@ -68,7 +68,7 @@ AEM as a Cloud Service에는 여러 유형의 알림이 있지만 아래 그림�
 |---|---|---|---|
 | 운영 인시던트 | 즉각적인 조치가 필요한 중대 인시던트 | “인시던트 알림 - Cloud Service” 제품 프로필에 할당된 사용자 | X |
 | 사전 알림 추천 | 계획을 수립해야 하는 최적화 | “사전 알림 - Cloud Service” 제품 프로필에 할당된 사용자 | X |
-| Cloud Manager 파이프라인 상태 | 파이프라인 상태에 대한 정보 | 비즈니스 소유자 역할, 프로그램 관리자 역할 또는 배포 관리자 역할이 주어진 사용자, [Experience Cloud 환경 설정](https://experience.adobe.com/preferences)에서 선택한 “기타” 확인란, [여기에 설명된](/help/implementing/cloud-manager/notifications.md) 바와 같이. |  |
+| Cloud Manager 파이프라인 상태 | 파이프라인 상태에 대한 정보 | 비즈니스 소유자 역할, 프로그램 관리자 역할 또는 배포 관리자 역할이 주어진 사용자, [Experience Cloud 환경 설정](https://experience.adobe.com/preferences)에서 선택한 “기타” 확인란, [여기에 설명된](/help/implementing/cloud-manager/notifications.md) 바와 같이. |   |
 
 ## 지원되는 알림 유형 {#supported-notification-types}
 
