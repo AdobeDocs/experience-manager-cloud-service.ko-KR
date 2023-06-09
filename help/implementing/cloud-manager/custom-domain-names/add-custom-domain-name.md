@@ -2,10 +2,10 @@
 title: 사용자 정의 도메인 이름 추가
 description: Cloud Manager를 사용하여 사용자 정의 도메인 이름을 추가하는 방법을 알아봅니다.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 0febf4b4a59617e6cc4f8414963c4a91fcf8765e
+source-git-commit: 21496a52fbe3caa08c606ddaeb85481a9d416b3d
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 100%
+source-wordcount: '577'
+ht-degree: 98%
 
 ---
 
@@ -82,11 +82,11 @@ CDN 배포에는 유효한 SSL 인증서와 성공적인 TXT 확인이 필요합
    1. 드롭다운 목록에서 이 이름과 연결된 SSL 인증서를 선택합니다.
    1. **+추가**&#x200B;를 클릭합니다.
 
-   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
+   ![사용자 정의 도메인 이름 추가](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 
 1. **도메인 이름 추가** 대화 상자에서 선택한 값을 확인하고 **계속**&#x200B;을 클릭합니다.
 
-   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
+   ![도메인 이름 창](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
 
    >[!NOTE]
    >

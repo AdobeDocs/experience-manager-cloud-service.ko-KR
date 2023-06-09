@@ -2,9 +2,9 @@
 title: Adobe Target과 통합할 때 사용되는 IMS 구성
 description: Adobe Target과 통합할 때 사용되는 IMS 구성 알아보기
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 21496a52fbe3caa08c606ddaeb85481a9d416b3d
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '863'
 ht-degree: 100%
 
 ---
@@ -72,9 +72,9 @@ Adobe Developer Console을 열고 AEM이 사용할 Adobe Target을 사용하여 
 1. 보유 중인 모든 프로젝트가 표시됩니다. **새 프로젝트 만들기**&#x200B;를 선택합니다. 위치 및 사용량은 다음에 따라 달라집니다.
 
    * 보유 중인 프로젝트가 없는 경우 **새 프로젝트 만들기**는 중앙 하단에 표시됩니다.
-      ![새 프로젝트 만들기 - 첫 번째 프로젝트](assets/integration-target-ims-02.png)
+     ![새 프로젝트 만들기 - 첫 번째 프로젝트](assets/integration-target-ims-02.png)
    * 기존 프로젝트가 있는 경우 이들 프로젝트가 나열되며 **새 프로젝트 만들기**는 오른쪽 상단에 표시됩니다.
-      ![새 프로젝트 만들기 - 여러 프로젝트](assets/integration-target-ims-03.png)
+     ![새 프로젝트 만들기 - 여러 프로젝트](assets/integration-target-ims-03.png)
 
 
 1. **프로젝트에 추가**&#x200B;를 선택한 다음 **API**&#x200B;를 선택합니다.
@@ -87,7 +87,7 @@ Adobe Developer Console을 열고 AEM이 사용할 Adobe Target을 사용하여 
    >
    >Adobe Target을 구독하지만 나열되지 않는 경우 [사전 요구 사항](#prerequisites)을 확인해야 합니다.
 
-   ![](assets/integration-target-ims-12.png)
+   ![Adobe Target](assets/integration-target-ims-12.png)을 선택합니다
 
 1. **공개 키를 업로드**&#x200B;한 다음 완료되면 **다음**&#x200B;을 사용하여 계속합니다.
 
@@ -105,7 +105,6 @@ Adobe Developer Console을 열고 AEM이 사용할 Adobe Target을 사용하여 
    >
    >* Adobe Target Standard - **기본 작업 영역**&#x200B;만 사용할 수 있습니다.
    >* Adobe Target Premium - 아래와 같이 사용할 수 있는 모든 작업 영역이 나열됩니다.
-
 
    ![제품 프로필 선택 및 구성된 API 저장](assets/integration-target-ims-16.png)
 
@@ -185,7 +184,6 @@ AEM으로 돌아가 Target용 IMS 통합에서 필요한 값을 추가하여 IMS
    예:
 
    * `https://localhost:4502/libs/cq/adobeims-configuration/content/configurations.html`
-
 
 1. 구성을 선택합니다.
 1. 도구 모음에서 **상태 확인**&#x200B;을 선택한 다음 **확인**&#x200B;을 선택합니다.
