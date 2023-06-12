@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service 개발에 대한 지침과 AMS의 AEM On-Premise 및 AEM과 다른 중요한 방식에 대해 알아봅니다.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
+source-git-commit: 6a26006a20ed2f1d18ff376863b3c8b149de1157
 workflow-type: tm+mt
-source-wordcount: '2591'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -71,9 +71,11 @@ Adobe은 제공된 를 사용할 것을 권장합니다 [Apache HttpComponents C
 
 AEM as a Cloud Service은 타사 고객 코드에 대한 Touch UI만 지원합니다. 클래식 UI는 사용자 지정할 수 없습니다.
 
-## 기본 바이너리 방지 {#avoid-native-binaries}
+## 기본 바이너리 또는 기본 라이브러리 없음 {#avoid-native-binaries}
 
-코드는 런타임 시 바이너리를 다운로드하거나 수정할 수 없습니다. 예를 들어 압축을 풀 수 없습니다 `jar` 또는 `tar` 파일.
+기본 바이너리 및 라이브러리는 클라우드 환경에 배포하거나 설치할 수 없습니다.
+
+또한 코드는 런타임 시 네이티브 바이너리 또는 네이티브 Java 확장 프로그램(예: JNI)을 다운로드하지 않아야 합니다.
 
 ## AEM as a Cloud Service으로 스트리밍 바이너리 없음 {#no-streaming-binaries}
 
@@ -128,7 +130,11 @@ AEM as a Cloud Service은 타사 고객 코드에 대한 Touch UI만 지원합�
 
 항상 다음 위치에 기록하는 것이 바람직한 경우 실행 모드 기반 OSGi 구성 타겟팅을 사용하여 다양한 AEM 환경에 대해 개별 로그 수준을 설정할 수 있습니다. `DEBUG` 개발 중. 예:
 
-| 환경 | 실행 모드별 OSGi 구성 위치 | `org.apache.sling.commons.log.level` 속성 값 | | - | - | - | | 개발 | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~예제.cfg.json | 디버그 | | 스테이지 | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~예제.cfg.json | 경고 | | 프로덕션 | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | 오류 |
+| 환경 | 실행 모드별 OSGi 구성 위치 | `org.apache.sling.commons.log.level` 속성 값 |
+| - | - | - |
+| 개발 | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | 디버그 |
+| 스테이징 | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | 경고 |
+| 프로덕션 | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | 오류 |
 
 디버그 파일의 행은 일반적으로 DEBUG로 시작한 다음 로그 수준, 설치 관리자 작업 및 로그 메시지를 제공합니다. 예:
 
