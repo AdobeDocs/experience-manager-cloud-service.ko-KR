@@ -3,10 +3,10 @@ title: AEM as a Cloud Service에 배포
 description: AEM as a Cloud Service에 배포
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: a70bd2ffddcfb729812620743ead7f57860457f3
+source-git-commit: 3dd65a9bd67a0a029483d580dd819fb7ac2a10be
 workflow-type: tm+mt
-source-wordcount: '3541'
-ht-degree: 89%
+source-wordcount: '3542'
+ht-degree: 88%
 
 ---
 
@@ -115,7 +115,7 @@ AEM as a Cloud Service 애플리케이션용으로 작성된 콘텐츠 패키지
 >[!NOTE]
 >모든 환경 유형(개발/단계/프로덕션)에 콘텐츠 패키지를 배포합니다. 배포를 특정 환경으로 제한할 수 없습니다. 이 제한은 자동화된 실행의 테스트 실행 옵션을 보장하기 위해 적용됩니다. 환경에 고유한 콘텐츠는 [패키지 관리자](/help/implementing/developing/tools/package-manager.md)를 통해 수동으로 설치해야 합니다.
 
-또한 변경 가능한 콘텐츠 패키지 변경 사항을 적용하고 나서 롤백할 수 있는 메커니즘은 없습니다. 고객이 문제를 감지하는 경우 다음 코드 릴리스에서 문제를 해결하거나 마지막 수단으로 전체 시스템을 배포하기 전 시점으로 복원하도록 선택할 수 있습니다.
+또한 변경 가능한 콘텐츠 패키지 변경 사항이 적용된 후 해당 변경 사항을 롤백하는 메커니즘이 없습니다. 고객이 문제를 감지하는 경우 다음 코드 릴리스에서 문제를 해결하거나 마지막 수단으로 전체 시스템을 배포하기 전 시점으로 복원하도록 선택할 수 있습니다.
 
 포함된 모든 서드파티 패키지는 호환 가능한 AEM as a Cloud Service로 유효성을 확인해야 합니다. 그렇지 않으면 해당 패키지가 포함되어 결국 배포가 실패할 수 있습니다.
 
@@ -130,9 +130,9 @@ AEM as a Cloud Service 애플리케이션용으로 작성된 콘텐츠 패키지
 * 사용자 만들기/삭제
 * ACL 추가
 
-   >[!NOTE]
-   >
-   >ACL을 정의하려면 노드 구조가 이미 있어야 합니다. 따라서 선행하는 경로 만들기 명령문이 필요할 수 있습니다.
+  >[!NOTE]
+  >
+  >ACL을 정의하려면 노드 구조가 이미 있어야 합니다. 따라서 선행하는 경로 만들기 명령문이 필요할 수 있습니다.
 
 * 경로 추가 (예: 루트 폴더 구조)
 * CND 추가 (노드 유형 정의)
