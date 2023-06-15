@@ -4,10 +4,10 @@ description: 클라우드 리소스를 구성한 후에는 AEM 제품 프로필�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: fd14d9f88fed4ef0f90b5dd0c92c53b1a298bd76
+source-git-commit: e5142052423abee7a2e2ed64affb2b04a93bf0d1
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 100%
+source-wordcount: '899'
+ht-degree: 94%
 
 ---
 
@@ -37,7 +37,12 @@ AEM을 사용하려면 팀원이 하나 이상의 AEM 제품 프로필에 할당
 * `AEM Users` - 이 그룹에는 일상적인 콘텐츠 작성 작업을 수행하는 일반 사용자가 포함됩니다.
 * `AEM Administrators` - 이 그룹에는 고급 기능 또는 AEM을 담당하는 사용자가 포함됩니다.
 
-AEM 제품 프로필에 할당된 모든 사용자는 Cloud Manager에 대한 읽기 전용 액세스 권한도 갖게 됩니다. Cloud Manager에 대한 쓰기 액세스 권한은 다른 제품 프로필을 통해 부여될 수 있습니다.
+>[!NOTE]
+>
+>AEM as a Cloud Service 제품 프로필에 할당된 모든 사용자는 **Cloud Manager 사용** 역할을 통해 Cloud Manager에 대한 읽기 전용 액세스 권한이 있습니다.
+>
+>을(를) 가진 사용자 **Cloud Manager** 사용자 역할은 Cloud Manager에 로그인한 다음 프로그램 메뉴 옵션을 사용하여 AEM 작성자 환경(있는 경우)으로 이동할 수만 있습니다. **Cloud Manager 사용** 역할은 프로그램 세부 정보에 액세스하기에 충분하지 않습니다. 이러한 액세스 권한이 필요한 경우 사용자는 시스템 관리자로부터 추가 역할을 부여받아야 합니다.
+>다음을 참조하십시오. [아래 추가 리소스 섹션](#additional-resources) cloud Manager 사용자 역할에 대한 자세한 내용은 을 참조하십시오.
 
 >[!CAUTION]
 >
@@ -108,6 +113,7 @@ Admin Console에서 AEM 제품 프로필을 보려면 다음 단계를 따르십
 
 온보딩 여정의 콘텐츠를 능가하려는 경우 다음은 추가적인 옵션 리소스입니다.
 
+* [AEM as a Cloud Service 팀 및 제품 프로필](/help/onboarding/aem-cs-team-product-profiles.md) - AEM as a Cloud Service 팀 및 제품 프로필로 라이선스가 부여된 Adobe 솔루션에 대한 액세스 권한을 부여하고 제한하는 방법에 대해 알아봅니다.
 * [Admin Console에서 제품 및 사용자 액세스 관리](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - Admin Console을 사용하여 사용 액세스를 관리하는 방법을 알아봅니다.
-* [AEM에 대한 액세스 구성 설명](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=ko) - Admin Console에서 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필을 구성하는 방법에 대해 알아보려면 이 간략한 설명을 확인합니다.
+* [AEM에 대한 액세스 구성 설명](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html) - Admin Console에서 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필을 구성하는 방법에 대해 알아보려면 이 간략한 설명을 확인합니다.
 
