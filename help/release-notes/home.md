@@ -3,7 +3,7 @@ title: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 정보
 description: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 정보
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 source-git-commit: 2d36f00c7fd9b3abcfe45b605f001cc7bc6522e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '643'
 ht-degree: 100%
 
@@ -53,7 +53,7 @@ ht-degree: 100%
 | [보안 사용 안내서](/help/security/home.md) | Experience Manager as a Cloud Service 관련 중요 보안 항목에 대해 알아보기. |
 | [온보딩 여정](/help/journey-onboarding/overview.md) | 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service를 시작하는 방법에 대한 요약을 제공합니다. |
 | [사이트 사용 안내서](/help/sites-cloud/home.md) | Experience Manager Sites as a Cloud Service를 통한 작성 및 관리 방법 이해. |
-| [에셋 사용 안내서](/help/assets/home.md) | Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다. |
+| [자산 사용 안내서](/help/assets/home.md) | Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다. |
 | [AEM as a Cloud Service로 이동](/help/journey-migration/getting-started.md) | 클라우드 서비스로의 전환 여정을 이해합니다. |
 | [구현 사용 안내서](/help/implementing/home.md) | 개발 및 배포 항목을 살펴보고 AEM의 강력한 기능을 사용하여 경험을 빌드하고 맞춤화하는 방법에 대해 알아봅니다. |
 | [Headless 개발자 여정](/help/journey-headless/developer/overview.md) | AEM의 강력하고 유연한 Headless 기능을 통한 가이드 여정을 살펴보고 귀하의 첫 Headless 프로젝트를 준비하십시오. |
