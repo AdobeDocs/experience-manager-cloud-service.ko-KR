@@ -4,9 +4,9 @@ description: AEM으로 GraphQL을 사용하여 샘플 콘텐츠 및 쿼리 탐�
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 063d8a23c0634de7c5c25b4e617cc536c2dc3a3b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1760'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,6 @@ AEM으로 GraphQL을 사용하여 샘플 콘텐츠 및 쿼리 탐색을 통해 �
 >* [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 >* [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 >* [콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
-
 
 GraphQL 쿼리를 시작하고 이들 쿼리가 AEM 콘텐츠 조각과 함께 작동하는 방법을 알아보려면 몇 가지 실제 사례를 살펴보는 것이 도움이 됩니다.
 
@@ -48,7 +47,6 @@ GraphQL 쿼리를 시작하고 이들 쿼리가 AEM 콘텐츠 조각과 함께 �
 >
 >* **도구** -> **일반** -> **GraphQL 쿼리 편집기**
 >* 직접 (예: `http://localhost:4502/aem/graphiql.html`)
-
 
 >[!NOTE]
 >
@@ -364,14 +362,14 @@ query {
 }
 ```
 
-### 샘플 쿼리 - 모든 도시의 이름 City Break로 태그 지정됨 {#sample-names-all-cities-tagged-city-breaks}
+### 샘플 쿼리 - 모든 도시의 이름 City Break로 태그됨 {#sample-names-all-cities-tagged-city-breaks}
 
-다음과 같은 경우:
+다음 작업을 수행하는 경우:
 
-* 다음과 같은 다양한 태그를 만듭니다. `Tourism` : `Business`, `City Break`, `Holiday`
-* 다양한 유형의 기본 변형에 할당 `City` 인스턴스
+* `Tourism` : `Business`, `City Break`, `Holiday`(이)라는 이름의 다양한 태그를 생성하고
+* 다양한 `City` 인스턴스의 변형에 할당
 
-그런 다음 쿼리를 사용하여 `name` 및 `tags`의 모든 게시물에 도시 브레이크로 태그가 지정됨 `city`스키마.
+그러면 쿼리를 사용하여 `city`스키마에서 City Break로 태그된 모든 항목에 대한 `name` 및 `tags`의 세부 정보를 반환할 수 있습니다.
 
 **샘플 쿼리**
 
@@ -1157,12 +1155,11 @@ query {
 이러한 샘플 쿼리는 WKND 프로젝트를 기반으로 합니다. 여기에는 다음이 있습니다.
 
 * 콘텐츠 조각 모델은 다음에서 사용할 수 있습니다.
-   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+  `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
 * 콘텐츠 조각(및 기타 콘텐츠)은 다음에서 사용할 수 있습니다.
-   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
-
-   `http://<hostname>:<port>/assets.html/content/dam/wknd-shared/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd-shared/en`
 
 >[!NOTE]
 >
@@ -1585,11 +1582,11 @@ query {
 }
 ```
 
-### 주어진 모델의 여러 콘텐츠 조각 및 해당 변형에 대한 샘플 쿼리 {#sample-wknd-multiple-fragment-variations-given-model}
+### 주어진 모델의 복수 콘텐츠 조각과 변형에 대한 샘플 쿼리 {#sample-wknd-multiple-fragment-variations-given-model}
 
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
-* 유형의 콘텐츠 조각 `article` 및 모든 변형
+* `article` 유형과 모든 변형의 콘텐츠 조각
 
 **샘플 쿼리**
 
@@ -1612,11 +1609,11 @@ query {
 }
 ```
 
-### 특정 태그가 첨부된 특정 모델의 콘텐츠 조각 변형에 대한 샘플 쿼리{#sample-wknd-fragment-variations-given-model-specific-tag}
+### 특정 태그가 첨부된 주어진 모델의 콘텐츠 조각 변형에 대한 샘플 쿼리{#sample-wknd-fragment-variations-given-model-specific-tag}
 
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
-* 유형의 콘텐츠 조각 `article` 하나 이상의 변형 포함(태그 포함) `WKND : Activity / Hiking`
+* 태그가 있는 하나 이상의 변형이 포함된 `article` 유형의 콘텐츠 조각 `WKND : Activity / Hiking`
 
 **샘플 쿼리**
 
@@ -1720,11 +1717,11 @@ query {
 }
 ```
 
-### 태그 ID로 필터링하고 변형을 제외한 샘플 쿼리 {#sample-filtering-tag-not-variations}
+### _태그 ID별로 필터링하고 변형을 제외하는 샘플 쿼리 {#sample-filtering-tag-not-variations}
 
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
-* 유형의 콘텐츠 조각 `vehicle` 태그 있음 `big-block`
+* `vehicle` 유형의 콘텐츠 조각 - 태그가 있고 `big-block`
 * 변형 제외
 
 **샘플 쿼리**
@@ -1755,11 +1752,11 @@ query {
 } 
 ```
 
-### _tags ID로 필터링하고 변형을 포함한 샘플 쿼리 {#sample-filtering-tag-with-variations}
+### _태그 ID별로 필터링하고 변형을 포함하는 샘플 쿼리 {#sample-filtering-tag-with-variations}
 
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
-* 유형의 콘텐츠 조각 `vehicle` 태그 있음 `big-block`
+* `vehicle` 유형의 콘텐츠 조각 - 태그가 있고 `big-block`
 * 변형 포함
 
 **샘플 쿼리**
@@ -1822,7 +1819,7 @@ query {
 
 | 필드 이름 | 데이터 형식 | 참조 |
 |--- |--- |--- |
-| 회사 이름 | 한 줄 텍스트 |  |
+| 회사 이름 | 한 줄 텍스트 | |
 | CEO | 조각 참조 (단일) | [개인](#model-person) |
 | 직원 | 조각 참조 (다중 필드) | [개인](#model-person) |
 
@@ -1832,8 +1829,8 @@ query {
 
 | 필드 이름 | 데이터 형식 | 참조 |
 |--- |--- |--- |
-| 이름 | 한 줄 텍스트 |  |
-| 이름 | 한 줄 텍스트 |  |
+| 이름 | 한 줄 텍스트 | |
+| 이름 | 한 줄 텍스트 | |
 | 상 | 조각 참조 (다중 필드) | [상](#model-award) |
 
 #### 상 {#model-award}
@@ -1842,8 +1839,8 @@ query {
 
 | 필드 이름 | 데이터 형식 | 참조 |
 |--- |--- |--- |
-| 단축키/ID | 한 줄 텍스트 |  |
-| 제목 | 한 줄 텍스트 |  |
+| 단축키/ID | 한 줄 텍스트 | |
+| 제목 | 한 줄 텍스트 | |
 
 #### 도시 {#model-city}
 
@@ -1851,10 +1848,10 @@ query {
 
 | 필드 이름 | 데이터 형식 | 참조 |
 |--- |--- |--- |
-| 이름 | 한 줄 텍스트 |  |
-| 국가 | 한 줄 텍스트 |  |
-| 인구 | 숫자 |  |
-| 범주 | 태그 |  |
+| 이름 | 한 줄 텍스트 | |
+| 국가 | 한 줄 텍스트 | |
+| 인구 | 숫자 | |
+| 범주 | 태그 | |
 
 ### 샘플 콘텐츠 조각 {#sample-content-fragments}
 
@@ -1872,14 +1869,14 @@ query {
 
 | 이름 | 이름 | 상 |
 |--- |--- |--- |
-| Lincoln | Abe |  |
-| Smith | Adam |  |
+| Lincoln | Abe | |
+| Smith | Adam | |
 | Slade | Cutter | Gameblitz<br>Gamestar |
-| Marsh | Duke |  |
-| Smith | Joe |  |
+| Marsh | Duke | |
+| Smith | Joe | |
 | Croft | Lara | Gamestar |
 | Caulfield | Max | Gameblitz |
-| Jobs | Steve |  |
+| Jobs | Steve | |
 
 #### 상 {#fragment-award}
 
