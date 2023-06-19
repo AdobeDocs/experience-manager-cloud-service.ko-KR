@@ -3,7 +3,7 @@ title: Adobe Target과 통합할 때 사용되는 IMS 구성
 description: Adobe Target과 통합할 때 사용되는 IMS 구성 알아보기
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
 source-git-commit: 21496a52fbe3caa08c606ddaeb85481a9d416b3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '863'
 ht-degree: 100%
 
@@ -87,7 +87,7 @@ Adobe Developer Console을 열고 AEM이 사용할 Adobe Target을 사용하여 
    >
    >Adobe Target을 구독하지만 나열되지 않는 경우 [사전 요구 사항](#prerequisites)을 확인해야 합니다.
 
-   ![Adobe Target](assets/integration-target-ims-12.png)을 선택합니다
+   ![Adobe Target 선택](assets/integration-target-ims-12.png)
 
 1. **공개 키를 업로드**&#x200B;한 다음 완료되면 **다음**&#x200B;을 사용하여 계속합니다.
 
