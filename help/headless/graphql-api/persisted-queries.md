@@ -4,9 +4,9 @@ description: 성능을 최적화하기 위해 Adobe Experience Manager as a Clou
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: c3d7cd591bce282bb4d3b5b5d0ee2e22fd337a83
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1687'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -39,9 +39,9 @@ ht-degree: 90%
 예를 들어 Sites 구성 `my-conf`의 모델 `my-model`을 사용하는 `my-query`라는 특정 쿼리가 있는 경우:
 
 * `my-conf` 특정 엔드포인트를 사용하여 쿼리를 만들 수 있으며 쿼리는 다음과 같이 저장됩니다.
-   `/conf/my-conf/settings/graphql/persistentQueries/my-query`
+  `/conf/my-conf/settings/graphql/persistentQueries/my-query`
 * `global` 엔드포인트를 사용하여 동일한 쿼리를 생성할 수 있지만 쿼리는 다음과 같이 저장됩니다.
-   `/conf/global/settings/graphql/persistentQueries/my-query`
+  `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
 >
@@ -355,46 +355,48 @@ curl -u admin:admin -X POST \
 
 >[!NOTE]
 >
->캐시 제어의 경우 OSGi 구성은 게시 인스턴스에만 적합합니다. 구성은 작성자 인스턴스에 존재하지만 무시됩니다.
+>캐시 제어 시 OSGi 구성은 게시 인스턴스에만 적합합니다. 구성은 작성자 인스턴스에 존재하지만 무시됩니다.
 
 >[!NOTE]
 >
->다음 **지속 쿼리 서비스 구성** 다음 용도로도 사용됩니다. [쿼리 응답 코드 구성](#configuring-query-response-code).
+>**지속 쿼리 서비스 구성**&#x200B;은 [쿼리 응답 코드 구성](#configuring-query-response-code)에서도 사용됩니다.
 
 게시 인스턴스에 대한 기본 OSGi 구성:
 
 * 사용 가능한 경우 Cloud Manager 변수를 읽습니다.
 
-   | OSGi 구성 속성 | 다음을 읽기 | Cloud Manager 변수 |
-   |--- |--- |--- |
-   | `cacheControlMaxAge` | 읽기 | `graphqlCacheControl` |
-   | `surrogateControlMaxAge` | 읽기 | `graphqlSurrogateControl` |
-   | `surrogateControlStaleWhileRevalidate` | 읽기 | `graphqlStaleWhileRevalidate` |
-   | `surrogateControlStaleIfError` | 읽기 | `graphqlStaleIfError` |
+  | OSGi 구성 속성 | 다음을 읽기 | Cloud Manager 변수 |
+  |--- |--- |--- |
+  | `cacheControlMaxAge` | 읽기 | `graphqlCacheControl` |
+  | `surrogateControlMaxAge` | 읽기 | `graphqlSurrogateControl` |
+  | `surrogateControlStaleWhileRevalidate` | 읽기 | `graphqlStaleWhileRevalidate` |
+  | `surrogateControlStaleIfError` | 읽기 | `graphqlStaleIfError` |
 
-   {style="table-layout:auto"}
+  {style="table-layout:auto"}
 
 * 사용할 수 없는 경우 OSGi 구성은 [게시 인스턴스에 대한 기본값](#publish-instances)을 사용합니다.
 
 ## 쿼리 응답 코드 구성 {#configuring-query-response-code}
 
-기본적으로 `PersistedQueryServlet` 다음 전송: `200` 실제 결과와 상관없이 쿼리를 실행할 때의 응답입니다.
+기본적으로 `PersistedQueryServlet`은 실제 결과에 관계없이 쿼리를 실행할 때 `200` 응답을 보냅니다.
 
-다음을 수행할 수 있습니다. [osgI 설정 구성](/help/implementing/deploying/configuring-osgi.md) 대상: **지속 쿼리 서비스 구성** 에서 반환되는 상태 코드를 `/execute.json/persisted-query` 끝점: 지속 쿼리에 오류가 있는 경우.
+**지속 쿼리 서비스 구성**&#x200B;에 대한 [OSGi 설정을 구성](/help/implementing/deploying/configuring-osgi.md)하여 지속 쿼리에 오류가 발생하면 `/execute.json/persisted-query` 엔드포인트에서 반환되는 상태 코드를 제어할 수 있습니다.
 
 >[!NOTE]
 >
->다음 **지속 쿼리 서비스 구성** 다음 용도로도 사용됩니다. [캐시 관리](#cache-osgi-configration).
+>**지속 쿼리 서비스 구성**&#x200B;은 [캐시 관리](#cache-osgi-configration)에서도 사용됩니다.
 
-필드 `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`)는 필요에 따라 정의할 수 있습니다.
+필드`Respond with application/graphql-response+json`(`responseContentTypeGraphQLResponseJson`)은 필요에 따라 정의할 수 있습니다.
 
-* `false` (기본값): 지속 쿼리의 성공 여부는 중요하지 않습니다. 다음 `/execute.json/persisted-query` 상태 코드를 반환합니다. `200` 및 `Content-Type` 반환된 헤더는 다음과 같습니다. `application/json`.
+* `false`(기본값):
+지속 쿼리의 성공 여부는 상관없습니다. `/execute.json/persisted-query`는 상태 코드 `200`을 반환하고 반환되는 `Content-Type` 헤더는 `application/json`입니다.
 
-* `true`: 끝점이 다음을 반환합니다. `400` 또는 `500` 지속 쿼리를 실행할 때 오류가 발생하는 경우 적절히 수정하십시오. 반환된 `Content-Type` 다음이 됨: `application/graphql-response+json`.
+* `true`:
+엔드포인트는 지속 쿼리 실행 시 오류가 발생하면 `400` 또는 `500`을 적절하게 반환합니다. 또한 반환되는 `Content-Type`은 `application/graphql-response+json`입니다.
 
-   >[!NOTE]
-   >
-   >자세한 내용은 https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes 을 참조하십시오.
+  >[!NOTE]
+  >
+  >자세한 내용은 https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes 참조
 
 ## 앱에서 사용할 쿼리 URL 인코딩 {#encoding-query-url}
 
