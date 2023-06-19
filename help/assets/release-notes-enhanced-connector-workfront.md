@@ -2,9 +2,9 @@
 title: 릴리스 정보 [!DNL Workfront for Experience Manager enhanced connector]
 description: 릴리스 정보 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 3a00faaf285be693243e3fb55159149520293610
+source-git-commit: 0cc57a144b69799cfabc8baae2051e9ac8701d49
 workflow-type: tm+mt
-source-wordcount: '1113'
+source-wordcount: '1167'
 ht-degree: 1%
 
 ---
@@ -15,18 +15,22 @@ ht-degree: 1%
 
 ## 릴리스 일자 {#release-date}
 
-최신 버전 1.9.10의 릴리스 날짜 [!DNL Workfront for Experience Manager enhanced connector] 은 2023년 5월 18일입니다.
+의 최신 버전 1.9.11에 대한 릴리스 날짜 [!DNL Workfront for Experience Manager enhanced connector] 는 2023년 6월 19일입니다.
 
 ## 릴리스 특징 {#release-highlights}
 
 의 최신 버전 [!DNL Workfront for Experience Manager enhanced connector] 에는 다음 업데이트가 포함됩니다.
 
-* Workfront은 Experience Manager에서 Workfront으로의 REST 호출을 기반으로 중복 이벤트 가입에 대한 409 HTTP 응답을 반환하며, 이로 인해 null 포인터 예외가 발생합니다.
+* 고급 네트워킹을 구성했으면 Adobe WorkfrontAEM 에서 as a Cloud Service으로 콘텐츠를 전송하는 동안 문제가 발생합니다.
+
+>[!NOTE]
+>
+>AEM 6.4는 확장 지원이 종료되었습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/?lang=en).
 
 
 >[!IMPORTANT]
 >
->Adobe은 다음을 권장합니다. [최신 1.9.10 버전으로 업그레이드](../assets/update-workfront-enhanced-connector.md) / [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe은 다음을 권장합니다. [최신 1.9.11 버전으로 업그레이드](../assets/update-workfront-enhanced-connector.md) / [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 알려진 문제 {#known-issues}
 
@@ -35,6 +39,10 @@ ht-degree: 1%
 * 클래식 Workfront 환경을 사용하는 경우 **[!UICONTROL 전송 대상]** 옵션이에서 사용할 수 있음 **[!UICONTROL 자세히]** 드롭다운 목록에서는 Experience Manager 내의 대상 을 선택할 수 없습니다. 다음 **[!UICONTROL 전송 대상]** 옵션은 **[!UICONTROL 문서 작업]** 드롭다운 목록입니다. 다음 **[!UICONTROL 전송 대상]** 옵션이에 대해 올바르게 작동합니다. **[!UICONTROL 자세히]** 드롭다운 목록과 **[!UICONTROL 문서 작업]** 새로운 Workfront 경험에서 사용할 수 있는 드롭다운 목록입니다.
 
 ## 이전 릴리스 {#previous-releases}
+
+### 2023년 5월 릴리스 {#may-2023-release}
+
+* Workfront은 Experience Manager에서 Workfront으로의 REST 호출을 기반으로 중복 이벤트 가입에 대한 409 HTTP 응답을 반환하며, 이로 인해 null 포인터 예외가 발생합니다.
 
 ### 2023년 4월 릴리스 {#april-2023-release}
 
@@ -95,7 +103,7 @@ ht-degree: 1%
 
 * 활성화 **[!UICONTROL Brand Portal에 자산 게시]** Workfront 강화 커넥터 구성 페이지의 옵션이 잘못된 이벤트를 생성합니다. 옵션을 비활성화한 후에도 이벤트가 삭제되지 않습니다.
 
-   문제를 해결하려면:
+  문제를 해결하려면:
 
    1. 향상된 커넥터 버전 1.9.5로 업그레이드하십시오.
 
@@ -123,9 +131,9 @@ ht-degree: 1%
       1. 잘못된 이벤트 구독을 삭제합니다. API 호출 삭제 `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>`
 
          `200` 응답 코드가 잘못된 이벤트 구독을 성공적으로 삭제했음을 의미하므로
-   >[!NOTE]
-   >
-   >이 절차에서 언급된 단계를 실행하기 전에 잘못된 이벤트 구독을 이미 삭제한 경우 이 절차의 마지막 단계를 건너뛸 수 있습니다.
+  >[!NOTE]
+  >
+  >이 절차에서 언급된 단계를 실행하기 전에 잘못된 이벤트 구독을 이미 삭제한 경우 이 절차의 마지막 단계를 건너뛸 수 있습니다.
 
 ### 2022년 10월 릴리스 {#october-2022-release}
 
@@ -164,7 +172,7 @@ ht-degree: 1%
 
 * 자산에 대해 작업 만들기 워크플로우를 실행할 때 로그 메시지에 Null 포인터 예외가 표시됩니다.
 
-* 을(를) 활성화하면 `Replace Spaces with DASH` Experience Manager의 고급 설정 아래에 있는 구성 옵션으로 인해 Workfront에서 중복 폴더가 만들어집니다.
+* 을(를) 활성화하면 `Replace Spaces with DASH` Experience Manager의 고급 설정 아래에 있는 구성 옵션을 사용하면 Workfront에서 중복 폴더가 만들어집니다.
 
 ### 2022년 6월 릴리스 {#june-2022-release}
 
@@ -189,4 +197,3 @@ ht-degree: 1%
 >[!MORELIKETHIS]
 >
 >* [통합 [!DNL Workfront for Experience Manager enhanced connector] Experience Manager 6.5 사용](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=en)
-
