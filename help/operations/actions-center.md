@@ -5,9 +5,9 @@ hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 source-git-commit: 9302220536e7a541d44d96626c65de94ee5d64c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '705'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ AEM as Cloud Service는 최적화에 즉각적인 조치와 사전 알림 추천
 
 ## 자세한 사용자 흐름 {#detailed-user-flow}
 
-이메일을 클릭하면 작업 센터로 이동합니다. 이때 클릭한 알림에 대한 컨텍스트를 보여주는 팝업과 경우에 따라 수정 조치를 취하는 방법을 설명하는 추가 정보에 대한 링크가 함께 표시됩니다.
+이메일을 클릭하면 클릭한 알림에 대한 컨텍스트를 표시하는 팝업과 경우에 따라 수정 조치를 취하는 방법을 설명하는 추가 정보 링크가 있는 액션 센터로 이동합니다.
 
 ![인시던트 세부 정보](/help/operations/assets/incident-details.png)
 
@@ -56,7 +56,7 @@ AEM as Cloud Service는 최적화에 즉각적인 조치와 사전 알림 추천
 
 ![지원에 문의 2](/help/operations/assets/contact-support2.png)
 
-모든 지원 티켓과 마찬가지로 지원 티켓이 [Adobe Admin Console의 지원 사례 탭](https://helpx.adobe.com/kr/enterprise/using/support-for-enterprise.html)에 나타나며, 여기에서 지원 티켓을 추적하고 추가 설명을 추가할 수 있습니다.
+모든 지원 티켓과 마찬가지로 지원 티켓이 [Adobe Admin Console의 지원 사례 탭](https://helpx.adobe.com/kr/enterprise/using/support-for-enterprise.html)에 나타나며, 여기에서 지원 티켓을 추적하고 댓글을 추가할 수 있습니다.
 
 ![Admin Console 지원](/help/operations/assets/admin-console-support.png)
 
@@ -64,7 +64,7 @@ AEM as Cloud Service는 최적화에 즉각적인 조치와 사전 알림 추천
 
 AEM as a Cloud Service에는 여러 유형의 알림이 있지만 아래 그림과 같이 액션 센터에는 하위 집합만 표시됩니다.
 
-| 알림 유형 | 설명 | 구성하는 방법 | 작업 센터에 표시 |
+| 알림 유형 | 설명 | 구성하는 방법 | 액션 센터에 표시 |
 |---|---|---|---|
 | 운영 인시던트 | 즉각적인 조치가 필요한 중대 인시던트 | “인시던트 알림 - Cloud Service” 제품 프로필에 할당된 사용자 | X |
 | 사전 알림 추천 | 계획을 수립해야 하는 최적화 | “사전 알림 - Cloud Service” 제품 프로필에 할당된 사용자 | X |
