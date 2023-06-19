@@ -3,9 +3,9 @@ title: 저장소 액세스
 description: Cloud Manager의 셀프서비스 git 계정 관리를 사용하여 git 저장소에 액세스하고 관리하는 방법을 알아봅니다.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '232'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
