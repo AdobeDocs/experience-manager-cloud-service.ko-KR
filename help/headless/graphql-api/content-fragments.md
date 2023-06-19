@@ -4,9 +4,9 @@ description: AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud 
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 7e6a42f5804ddef918df859811ba48f27ebbf19a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4934'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -30,22 +30,21 @@ AEM에서 GraphQL API를 사용하면 Headless CMS 구현에서 JavaScript 클�
 >* [AEM Commerce는 GraphQL을 통해 상거래 플랫폼의 데이터를 사용합니다](/help/commerce-cloud/integrating/magento.md).
 >* AEM 콘텐츠 조각은 AEM GraphQL API(표준 GraphQL 기반의 맞춤화된 구현)와 함께 작동하여 애플리케이션에서 사용할 구조화된 콘텐츠를 제공합니다.
 
-
 ## GraphQL API {#graphql-api}
 
 GraphQL은
 
 * “*...API용 쿼리 언어 및 기존 데이터로 이러한 쿼리를 수행하기 위한 런타임입니다. GraphQL은 API의 데이터에 대한 완전하고 이해하기 쉬운 설명을 제공하고, 클라이언트가 필요로 하는 것을 정확히 요청할 수 있는 권한을 주고, 시간이 지남에 따라 API를 더 쉽게 발전시킬 수 있으며, 강력한 개발자 도구를 지원합니다.*”.
 
-   [GraphQL.org](https://graphql.org)를 참조하십시오.
+  [GraphQL.org](https://graphql.org)를 참조하십시오.
 
 * “*...유연한 API 계층을 위한 오픈 사양입니다. 기존 백엔드에 GraphQL을 추가하여 그 어느 때보다 빠르게 제품을 빌드할 수 있습니다.*”
 
-   [GraphQL 살펴보기](https://www.graphql.com)를 참조하십시오.
+  [GraphQL 살펴보기](https://www.graphql.com)를 참조하십시오.
 
 * *“...2015년에 오픈 소스로 공개되기 전에 2012년 Facebook에서 내부적으로 개발한 데이터 쿼리 언어 및 사양입니다. 개발자 생산성을 높이고 전송되는 데이터 양을 최소화할 목적으로 REST 기반 아키텍처에 대한 대안을 제공합니다. GraphQL은 규모에 관계없이 수백 개의 조직에서 프로덕션에 사용됩니다.”*
 
-   [GraphQL Foundation](https://foundation.graphql.org/)을 참조하십시오.
+  [GraphQL Foundation](https://foundation.graphql.org/)을 참조하십시오.
 
 <!--
 "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
@@ -125,7 +124,6 @@ GraphQL은 GET 요청도 지원하지만 이러한 요청은 지속 쿼리를 �
 >* `ENABLE_GRAPHQL_ENDPOINT`라는 [Cloud Manager 환경 변수](/help/implementing/cloud-manager/environment-variables.md) 생성
 >* (`true` 값 포함)
 
-
 >[!NOTE]
 >
 >직접 쿼리를 수행하는 기능은 향후의 어느 시점에서 더 이상 사용되지 않을 수 있습니다.
@@ -134,15 +132,15 @@ GraphQL은 GET 요청도 지원하지만 이러한 요청은 지속 쿼리를 �
 
 [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)를 사용하여 GraphQL 쿼리를 테스트하고 디버그할 수 있습니다.
 
-## 작성자, 미리보기 및 게시에 대한 사용 사례 {#use-cases-author-preview-publish}
+## 작성, 미리보기 및 게시의 사용 사례 {#use-cases-author-preview-publish}
 
 사용 사례는 AEM as a Cloud Service 환경 유형에 따라 달라질 수 있습니다.
 
-* Publish 환경, 다음과 같은 작업을 수행하는 데 사용됨:
+* 게시 환경, 다음과 같은 작업을 수행하는 데 사용됨:
    * JS 애플리케이션용 쿼리 데이터 (표준 사용 사례)
 
-* 미리보기 환경, 다음을 수행하는 데 사용됨:
-   * 게시 환경에 배포하기 전에 쿼리 미리 보기
+* 미리보기 환경, 다음과 같은 작업을 수행하는 데 사용됨:
+   * 게시 환경에 배포하기 전 미리보기 쿼리
       * JS 애플리케이션용 쿼리 데이터 (표준 사용 사례)
 
 * Author 환경, 다음과 같은 작업을 수행하는 데 사용됨:
@@ -154,7 +152,7 @@ GraphQL은 GET 요청도 지원하지만 이러한 요청은 지속 쿼리를 �
 
 권한은 Assets에 액세스하는 데 필요한 권한입니다.
 
-GraphQL 쿼리는 기본 요청의 AEM 사용자 권한으로 실행됩니다. 사용자에게 일부 조각(에셋으로 저장됨)에 대한 읽기 액세스 권한이 없는 경우 이들 조각은 결과 세트의 일부가 되지 않습니다.
+GraphQL 쿼리는 기본 요청의 AEM 사용자 권한으로 실행됩니다. 사용자에게 일부 조각(자산으로 저장됨)에 대한 읽기 액세스 권한이 없는 경우 이들 조각은 결과 세트의 일부가 되지 않습니다.
 
 또한 GraphQL 쿼리를 실행할 수 있으려면 사용자가 GraphQL 엔드포인트에 대한 액세스 권한을 보유해야 합니다.
 
@@ -233,7 +231,7 @@ Sites GraphQL 서비스는 콘텐츠 조각 모델에 대한 수정 사항을 �
 
 * 귀하가 생성하는 필드입니다.
 
-   다양한 [데이터 유형](#Data-types)은 콘텐츠 조각 모델을 구성하는 방법을 기반으로 필드를 만드는 데 사용됩니다. 필드 이름은 **데이터 유형** 탭의 **속성 이름** 필드에서 가져옵니다.
+  다양한 [데이터 유형](#Data-types)은 콘텐츠 조각 모델을 구성하는 방법을 기반으로 필드를 만드는 데 사용됩니다. 필드 이름은 **데이터 유형** 탭의 **속성 이름** 필드에서 가져옵니다.
 
    * 사용자가 특정 데이터 유형을 구성할 때 고려해야 하는 **렌더링 형식** 설정도 있습니다. 예를 들어 드롭다운에서 `multifield`를 선택하여 여러 개의 한 줄 텍스트를 포함하도록 한 줄 텍스트 필드를 구성할 수 있습니다.
 
@@ -252,7 +250,7 @@ AEM용 GraphQL은 유형 목록을 지원합니다. 지원되는 모든 콘텐�
 | 날짜 및 시간 | `Calendar` | ISO 8601 형식으로 날짜와 시간을 표시하는 데 사용됨. 선택한 유형에 따라 AEM GraphQL에서 세 가지 버전(`onlyDate`, `onlyTime`, `dateTime`)을 사용할 수 있습니다. |
 | 열거 | `String` | 모델 생성 시 정의된 옵션 목록에서 옵션을 표시하는 데 사용됨 |
 | 태그 | `[String]` | AEM에서 사용되는 태그를 나타내는 문자열 목록을 표시하는 데 사용됨 |
-| 콘텐츠 참조 | `String`, `[String]` | AEM에서 다른 에셋에 대한 경로를 표시하는 데 사용됨 |
+| 콘텐츠 참조 | `String`, `[String]` | AEM에서 다른 자산에 대한 경로를 표시하는 데 사용됨 |
 | 조각 참조 |  *모델 유형* <br><br>단일 필드:`Model` - 모델 유형, 직접 참조 <br><br> 하나의 참조 유형이 있는 다중 필드:`[Model]` - 유형의 배열`Model`, 배열에서 직접 참조됨 <br><br> 다중 참조 유형이 있는 다중 필드:`[AllFragmentModels]` - 공용 유형의 배열에서 참조되는 모든 모델 유형의 배열 |  모델이 생성될 때 정의된 특정 모델 유형의 다른 콘텐츠 조각을 하나 이상 참조하는 데 사용됨 |
 
 {style="table-layout:auto"}
@@ -265,7 +263,7 @@ AEM용 GraphQL은 유형 목록을 지원합니다. 지원되는 모든 콘텐�
 
 #### 경로 {#path}
 
-경로 필드는 AEM GraphQL에서 식별자로 사용됩니다. AEM 저장소 내 콘텐츠 조각 에셋의 경로를 나타냅니다. 다음과 같은 이유로 콘텐츠 조각의 식별자로 선택되었습니다.
+경로 필드는 AEM GraphQL에서 식별자로 사용됩니다. AEM 저장소 내 콘텐츠 조각 자산의 경로를 나타냅니다. 다음과 같은 이유로 콘텐츠 조각의 식별자로 선택되었습니다.
 
 * AEM 내에서 고유합니다.
 * 쉽게 가져올 수 있습니다.
@@ -670,7 +668,6 @@ query {
 >
 >* 오프셋이 높을수록 전체 JCR 쿼리 결과 세트에서 항목을 건너뛰는 데 더 많은 시간이 소요됩니다. 대용량 결과 세트에 대한 대체 솔루션은 페이지가 매겨진 쿼리를 `first` 및 `after` 메서드와 함께 사용하는 것입니다.
 
-
 ### 페이지 매김된 쿼리 - 첫 번째 및 그 다음 페이지 {#paginated-first-after}
 
 `...Paginated` 쿼리 유형은 대부분의 `...List` 쿼리 유형 기능(필터링, 정렬)을 재사용하지만, `offset`/`limit` 인수를 사용하는 대신 [GraphQL 커서 연결 사양](https://relay.dev/graphql/connections.htm)에 정의된 대로 `first`/`after` 인수를 사용합니다. [GraphQL 소개](https://graphql.org/learn/pagination/#pagination-and-edges)에서 좀 더 친숙한 느낌의 소개를 찾을 수 있습니다.
@@ -708,7 +705,6 @@ query {
 >
 >* 내부 기술적 제한으로 인해 중첩된 필드에 정렬 및 필터링을 적용하면 성능이 저하됩니다. 따라서 루트 수준에서 저장된 필터/정렬 필드를 사용하는 것이 좋습니다. 페이지가 매겨진 대용량 결과 세트를 쿼리하려는 경우에도 권장되는 방법입니다.
 
-
 ## GraphQL 쿼리에서 웹에 최적화된 이미지 게재 {#web-optimized-image-delivery-in-graphql-queries}
 
 웹에 최적화된 이미지 게재를 통해 Graphql 쿼리를 사용하여 다음과 같은 작업을 수행할 수 있습니다.
@@ -717,9 +713,9 @@ query {
 
 * 이미지의 특정 렌디션이 자동으로 생성되고 반환되도록 쿼리와 함께 매개변수 전달
 
-   >[!NOTE]
-   >
-   >지정된 변환은 AEM Assets에 저장되지 않습니다. 렌디션이 생성되어 짧은 기간 동안 캐시에 보관됩니다.
+  >[!NOTE]
+  >
+  >지정된 변환은 AEM Assets에 저장되지 않습니다. 렌디션이 생성되어 짧은 기간 동안 캐시에 보관됩니다.
 
 * JSON 게재의 일부로 URL 반환
 
@@ -888,17 +884,17 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 
    * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic-url-x;seoName=xxx`
 
-      응답은 다음과 같이 표시됩니다.
+     응답은 다음과 같이 표시됩니다.
 
-      ![매개변수를 사용한 이미지 게재](assets/cfm-graphiql-sample-image-delivery.png "매개변수를 사용한 이미지 게재")
+     ![매개변수를 사용한 이미지 게재](assets/cfm-graphiql-sample-image-delivery.png "매개변수를 사용한 이미지 게재")
 
 * [다중 매개변수](#dynamic-image-delivery-multiple-specified-parameters), 이름이 `dynamic`인 지속 쿼리
 
    * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic;seoName=billiboy;format=GIF;`
 
-      >[!CAUTION]
-      >
-      >후행 `;`은 매개변수 목록을 완전히 종료하려면 필수입니다.
+     >[!CAUTION]
+     >
+     >후행 `;`은 매개변수 목록을 완전히 종료하려면 필수입니다.
 
 ### 이미지 게재의 제한 사항 {#image-delivery-limitations}
 
@@ -922,26 +918,26 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
    * 모델 이름에 `List`를 추가하십시오. 예: `cityList`
    * [샘플 쿼리 - 모든 도시에 대한 모든 정보](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)를 참조하십시오
 
-   이후에 다음과 같은 작업을 수행할 수 있습니다.
+  이후에 다음과 같은 작업을 수행할 수 있습니다.
 
    * [결과 정렬](#sorting)
 
       * `ASC`: 오름차순
       * `DESC`: 내림차순
+
    * 다음 중 하나를 사용하여 결과 페이지를 반환합니다.
 
       * [오프셋 및 제한이 포함된 목록 쿼리](#list-offset-limit)
       * [첫 번째 및 그 다음 페이지가 포함된 페이지 매김된 쿼리](#paginated-first-after)
+
    * [샘플 쿼리 - 모든 도시에 대한 모든 정보](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)를 참조하십시오
 
+* 필터 `includeVariations`은 `List` 및 `Paginated` 쿼리 유형에 포함되어 있습니다.  쿼리 결과에서 콘텐츠 조각 변형을 검색하려면 `includeVariations` 필터를 `true`로 설정해야 합니다.
 
+   * [주어진 모델의 복수 콘텐츠 조각과 변형에 대한 샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model) 참조
 
-
-* 필터 `includeVariations` 다음에 포함됩니다. `List` 및 `Paginated` 쿼리 유형.  쿼리 결과에서 콘텐츠 조각 변형을 검색하려면 `includeVariations` 필터를 다음으로 설정해야 함: `true`.
-
-   * 다음을 참조하십시오 [주어진 모델의 여러 콘텐츠 조각 및 해당 변형에 대한 샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
-   >[!CAUTION]
-   >필터 `includeVariations` 및 시스템 생성 필드 `_variation` 동일한 쿼리 정의에서 함께 사용할 수 없습니다.
+  >[!CAUTION]
+  >필터 `includeVariations` 및 시스템 생성 필드 `_variation`은 동일한 쿼리 정의에서 함께 사용할 수 없습니다.
 
 * 논리적 OR을 사용하려는 경우:
    * ` _logOp: OR` 사용
@@ -958,25 +954,31 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
 
       * `_locale`: 언어 표시, 언어 관리자 기반
          * [주어진 로케일의 복수 콘텐츠 조각에 대한 샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-given-locale)를 참조하십시오
+
       * `_metadata`: 조각에 대한 메타데이터 표시
          * [메타데이터에 대한 샘플 쿼리 - GB라는 제목의 상에 대한 메타데이터 나열](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)을 참조하십시오
+
       * `_model`: 콘텐츠 조각 모델에 대한 쿼리 허용 (경로 및 제목)
          * [모델의 콘텐츠 조각 모델에 대한 샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-wknd-content-fragment-model-from-model)를 참조하십시오
+
       * `_path`: 저장소 내의 콘텐츠 조각에 대한 경로
          * [샘플 쿼리 - 단일 특정 도시 조각](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)을 참조하십시오
+
       * `_reference`: 참조 표시, 서식 있는 텍스트 편집기에 인라인 참조 포함
          * [프리페치된 참조가 포함된 복수 콘텐츠 조각에 대한 샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-prefetched-references)를 참조하십시오
+
       * `_variation`: 콘텐츠 조각 내 특정 변형 표시
 
-         >[!NOTE]
-         >
-         >지정된 변형이 콘텐츠 조각에 존재하지 않는 경우 마스터 변형은 (대체) 기본값으로 반환됩니다.
+        >[!NOTE]
+        >
+        >지정된 변형이 콘텐츠 조각에 존재하지 않는 경우 마스터 변형은 (대체) 기본값으로 반환됩니다.
 
-         >[!CAUTION]
-         >
-         >시스템 생성 필드 `_variation` 은(는) 필터와 함께 사용할 수 없습니다 `includeVariations`.
+        >[!CAUTION]
+        >
+        >시스템 생성 필드 `_variation`은 필터 `includeVariations`과 함께 사용할 수 없습니다.
 
          * [샘플 쿼리 - 이름이 붙은 변형이 있는 모든 도시](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)를 참조하십시오
+
    * [이미지 게재](#image-delivery):
 
       * `ImageRef`: `_dynamicUrl` 참조
@@ -988,36 +990,29 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
          * [전체 매개변수가 포함된 이미지 게재를 위한 샘플 쿼리](#image-delivery-full-parameters)
 
          * [지정된 단일 매개변수가 있는 이미지 게재를 위한 샘플 쿼리](#image-delivery-single-specified-parameter)
-   * `_tags` : 태그가 포함된 콘텐츠 조각 또는 변형의 ID를 표시합니다. 이 배열은 `cq:tags` 식별자.
 
-      * 다음을 참조하십시오 [샘플 쿼리 - 구/군/시 구분으로 태그가 지정된 모든 구의 이름](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
-      * 다음을 참조하십시오 [특정 태그가 첨부된 특정 모델의 콘텐츠 조각 변형에 대한 샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
-      * 다음을 참조하십시오 [태그 ID로 필터링하고 변형을 제외한 샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
-      * 다음을 참조하십시오 [_tags ID로 필터링하고 변형을 포함한 샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
+   * `_tags`: 태그가 포함된 콘텐츠 조각 ID 또는 변형 표시, `cq:tags` 식별자 배열,
 
-      >[!NOTE]
-      >
-      >콘텐츠 조각의 메타데이터를 나열하여 태그를 쿼리할 수도 있습니다.
+      * [샘플 쿼리 - City Break로 태그된 모든 도시의 이름](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks) 참조
+      * [특정 태그가 첨부된 주어진 모델의 콘텐츠 조각 변형에 대한 샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag) 참조
+      * [태그 ID별로 필터링하고 변형을 제외하는 샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations) 참조
+      * [태그 ID별로 필터링하고 변형을 포함하는 샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations) 참조
+
+     >[!NOTE]
+     >
+     >콘텐츠 조각의 메타데이터를 나열하여 태그를 쿼리할 수도 있습니다.
 
    * 작업:
 
       * `_operator`: 특정 연산자 적용 - `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
          * [샘플 쿼리 - 이름이 “Jobs”가 아닌 모든 사람](/help/headless/graphql-api/sample-queries.md#sample-all-persons-not-jobs)을 참조하십시오
          * [샘플 쿼리 - `_path`가 특정 접두사로 시작하는 모든 모험](/help/headless/graphql-api/sample-queries.md#sample-wknd-all-adventures-cycling-path-filter)을 참조하십시오
+
       * `_apply`: 특정 조건 적용. 예: `AT_LEAST_ONCE`
          * [샘플 쿼리 - 적어도 한 번은 발생해야 하는 항목이 있는 배열 필터링](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)을 참조하십시오
+
       * `_ignoreCase`: 쿼리할 때 대소문자 무시
          * [샘플 쿼리 - 대소문자에 관계없이 이름에 SAN이 있는 모든 도시](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)를 참조하십시오
-
-
-
-
-
-
-
-
-
-
 
 * GraphQL 공용 구조체 형식이 지원됩니다.
 
