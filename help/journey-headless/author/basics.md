@@ -3,9 +3,9 @@ title: 작성 기본 사항에 대해 알아보기
 description: 콘텐츠 조각을 사용하여 Headless CMS용 콘텐츠를 작성하는 개념 및 메커니즘에 대해 알아봅니다.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: 37a2afca3131acceebbd7732844fa5953a7fd4fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1711'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 95%
 
 ### 작성, 미리보기 및 게시 {#author-preview-publish}
 
-AEM 설치는 일반적으로 다음 세 가지 환경으로 구성됩니다.
+AEM 설치는 일반적으로 세 개의 환경으로 구성됩니다.
 
 * 작성
 * 게시
@@ -40,7 +40,7 @@ AEM 설치는 일반적으로 다음 세 가지 환경으로 구성됩니다.
 
 자세한 내용은 작성 개념을 참조하십시오.
 
-다음에서 **컨텐츠 조각** 콘솔 을 사용하여 **미리보기 서비스**&#x200B;테스트 및 미리보기를 위해 게시 전에 를 참조하십시오. 조각 게시 및 미리보기 를 참조하십시오.
+**콘텐츠 조각** 콘솔에서 게시하기 전에 테스트 및 검토하기 위해 **미리보기 서비스**&#x200B;에 게시할 수도 있습니다. 조각 게시 및 미리보기를 참조하십시오.
 
 ### 로그인 {#signing-in}
 
@@ -56,7 +56,7 @@ AEM 설치는 일반적으로 다음 세 가지 환경으로 구성됩니다.
 
 작은 온라인 튜토리얼에 처음 로그인하면 사용자 인터페이스의 주요 기능 중 일부가 강조 표시됩니다.
 
-그런 다음 탐색 패널을 사용하여 AEM의 주요 영역에 액세스할 수 있습니다. 콘텐츠 조각의 경우 **콘텐츠 조각** 콘솔을 사용합니다(일부 액션의 경우 **에셋** 콘솔을 사용하기도 함).
+그런 다음 탐색 패널을 사용하여 AEM의 주요 영역에 액세스할 수 있습니다. 콘텐츠 조각의 경우 **콘텐츠 조각** 콘솔을 사용합니다(일부 액션의 경우 **자산** 콘솔을 사용하기도 함).
 
 왼쪽 상단의 Adobe 아이콘과 작은 나침반 아이콘을 차례로 선택하여 탐색 패널을 열 수 있습니다.
 
@@ -67,7 +67,7 @@ The Navigation Panel can be opened by selecting Adobe icon at the top left, foll
 -->
 
 >[!NOTE]
->콘텐츠 조각은 AEM **Sites**&#x200B;의 일부 기능이지만 **에셋**&#x200B;으로 저장됩니다. 이는 영향을 미치지 않지만 알아두면 유용한 기술 세부 사항입니다.
+>콘텐츠 조각은 AEM **Sites**&#x200B;의 일부 기능이지만 **자산**&#x200B;으로 저장됩니다. 이는 영향을 미치지 않지만 알아두면 유용한 기술 세부 사항입니다.
 
 콘솔 내 왼쪽 패널에서 폴더를 선택하여 콘텐츠 조각으로 이동할 수 있습니다. 필터링 및/또는 검색할 수도 있습니다.
 
@@ -79,7 +79,7 @@ The Navigation Panel can be opened by selecting Adobe icon at the top left, foll
 
 <!-- ![Console actions](assets/cfm-managing-cf-console-01.png) -->
 
-* **에셋에서 열기**
+* **자산에서 열기**
 * **만들기**
 * **참조자** 열은 해당 조각의 모든 상위 참조를 표시하는 직접 링크도 제공합니다. 여기에는 콘텐츠 조각, 경험 조각 및 페이지 참조가 포함됩니다.
 * 폴더 이름에 마우스를 가져다 대면 JCR 경로가 표시됩니다.
@@ -131,7 +131,7 @@ You can view additional information about items using the Rail Selector. This al
 
 #### 폴더 만들기 {#creating-folder}
 
-**에셋** 콘솔의 **파일** 섹션에서 일련의 폴더를 만들어 이 작업을 수행할 수 있습니다. **만들기** 옵션(오른쪽 상단)을 선택한 다음 **폴더**&#x200B;를 선택합니다.
+**자산** 콘솔의 **파일** 섹션에서 일련의 폴더를 만들어 이 작업을 수행할 수 있습니다. **만들기** 옵션(오른쪽 상단)을 선택한 다음 **폴더**&#x200B;를 선택합니다.
 
 ![폴더 만들기 옵션](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
@@ -151,7 +151,7 @@ You can view additional information about items using the Rail Selector. This al
 
 >[!NOTE]
 >
->콘텐츠 조각 모델 - 에셋 폴더에서 콘텐츠 조각 모델 허용에 대한 자세한 내용을 읽을 수 있습니다.
+>콘텐츠 조각 모델 - 자산 폴더에서 콘텐츠 조각 모델 허용에 대한 자세한 내용을 읽을 수 있습니다.
 
 그리고 해당 폴더를 탐색하여 콘텐츠 조각을 만들고 편집합니다.
 
@@ -165,7 +165,7 @@ You can view additional information about items using the Rail Selector. This al
 
 >[!NOTE]
 >
->에셋 폴더에 구성 적용에 대한 자세한 내용을 읽을 수 있습니다.
+>자산 폴더에 구성 적용에 대한 자세한 내용을 읽을 수 있습니다.
 
 ### 콘텐츠 조각 만들기 {#creating-fragment}
 
@@ -201,7 +201,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 ### 조각 편집 {#editing-fragment}
 
-조각을 만든 직후에 또는 콘텐츠 조각 콘솔에서(에셋 콘솔에서도) 선택하여 조각을 열 수 있습니다.
+조각을 만든 직후에 또는 콘텐츠 조각 콘솔에서(자산 콘솔에서도) 선택하여 조각을 열 수 있습니다.
 
 편집기가 처음 열리면 다음을 확인할 수 있습니다.
 
@@ -215,11 +215,11 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 * 특정 유형의 정보를 포함하여 정보의 여러 부분만 필요로 하는 조각입니다. Headless 콘텐츠의 경우 여정 후반부에서 주요 참조에 대해 알아봅니다.
 
-   ![콘텐츠 조각 편집기 - 내 조각](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
+  ![콘텐츠 조각 편집기 - 내 조각](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
 * 긴 텍스트 섹션을 작성할 수 있는 조각입니다. 추가 옵션으로 텍스트를 관리하고 서식을 지정할 수 있습니다. 전체 화면 편집기에서 개별 텍스트 필드를 열 수도 있습니다(오른쪽 작은 화면 모양의 아이콘 사용).
 
-   ![콘텐츠 조각 편집기 - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
+  ![콘텐츠 조각 편집기 - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
 >[!NOTE]
 >
@@ -239,26 +239,26 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 * **콘텐츠 조각 모델**
 
-   조각 이름 바로 아래 편집기 상단에 콘텐츠 조각 모델 이름이 표시됩니다. 이는 모델 편집기로 이동하는 링크이기도 합니다.
+  조각 이름 바로 아래 편집기 상단에 콘텐츠 조각 모델 이름이 표시됩니다. 이는 모델 편집기로 이동하는 링크이기도 합니다.
 콘텐츠 조각 모델은 사용하는 구조를 정의하므로 실제로 콘텐츠 조각에 핵심적인 요소입니다. 하지만 조각을 만들고 편집하는 것은 (일반적으로) 다른 담당자인 콘텐츠 설계자가 해야 하는 일입니다.
 
-   >[!NOTE]
-   >
-   >자세히 알아보려면 AEM Headless 콘텐츠 설계자 여정을 참조하십시오.
+  >[!NOTE]
+  >
+  >자세히 알아보려면 AEM Headless 콘텐츠 설계자 여정을 참조하십시오.
 
 * **관련 콘텐츠**
 
-   이 콘텐츠는 분명히 편집기의 탭입니다.
+  이 콘텐츠는 분명히 편집기의 탭입니다.
 
-   상당수의 AEM 버전에서 콘텐츠 조각을 사용할 수 있습니다. 페이지를 작성할 때 원래는 “기존” 용도로 사용할 수 있도록 제작되었습니다.여전히 이 컨텍스트에서 사용됩니다. 조각에는 임베드되지 않지만 페이지를 작성할 때 작성자가 사용할 수 있는 에셋(예: 이미지) 연결이 여기에 포함될 수 있습니다.
+  상당수의 AEM 버전에서 콘텐츠 조각을 사용할 수 있습니다. 페이지를 작성할 때 원래는 “기존” 용도로 사용할 수 있도록 제작되었습니다.여전히 이 컨텍스트에서 사용됩니다. 조각에는 임베드되지 않지만 페이지를 작성할 때 작성자가 사용할 수 있는 자산(예: 이미지) 연결이 여기에 포함될 수 있습니다.
 
 * **미리보기**
 
-   이는 편집기의 다른 탭으로 주로 개발자용 기술 보기가 제공됩니다.
+  이는 편집기의 다른 탭으로 주로 개발자용 기술 보기가 제공됩니다.
 
 * **페이지 참조 업데이트**
 
-   이 액션은 **...**(줄임표) 드롭다운에서 사용할 수 있습니다. 이는 페이지 작성과 관련이 있으므로 Headless 작성자는 별 관심이 없습니다.
+  이 액션은 **...**(줄임표) 드롭다운에서 사용할 수 있습니다. 이는 페이지 작성과 관련이 있으므로 Headless 작성자는 별 관심이 없습니다.
 
 ### 게시 {#publishing}
 
@@ -266,13 +266,13 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 조각이 완료되면 Headless 애플리케이션에서 사용할 수 있도록 **게시**&#x200B;해야 합니다.
 
-게시 작업은 편집기에서 사용할 수 있습니다.
+게시 액션은 편집기에서 사용할 수 있습니다.
 
 ![콘텐츠 조각 편집기 - 내 조각](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
 >[!NOTE]
 >
->다음 중 하나에서 조각을 게시할 수도 있습니다. **에셋** 또는 **컨텐츠 조각** 콘솔.
+>**자산** 또는 **콘텐츠 조각** 콘솔 중 하나에서 조각을 게시할 수도 있습니다.
 
 ## 다음 단계 {#whats-next}
 
@@ -282,7 +282,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 * [작성 개념](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md) - 이 페이지는 주로 **Sites** 콘솔을 기반으로 하지만 여러/대부분의 기능은 **에셋** 콘솔에서의 **콘텐츠 조각** 작성과 관련성이 있기도 합니다.
+* [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md) - 이 페이지는 주로 **Sites** 콘솔을 기반으로 하지만 여러/대부분의 기능은 **자산** 콘솔에서의 **콘텐츠 조각** 작성과 관련성이 있기도 합니다.
 
    * [탐색 패널](/help/sites-cloud/authoring/getting-started/basic-handling.md#navigation-panel)
 
@@ -300,7 +300,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
    * [콘텐츠 조각 관리](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
 
-   * [에셋 폴더에 구성 적용](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+   * [자산 폴더에 구성 적용](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
    * [콘텐츠 조각 만들기](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
 
@@ -308,26 +308,26 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
    * 게시
 
-      * 편집기에서 또는 **에셋** 콘솔
+      * 편집기 또는 **자산** 콘솔에서
 
          * [빠른 게시](/help/assets/manage-publication.md#quick-publish)
 
          * [게시 관리](/help/assets/manage-publication.md#manage-publication)
-      * 다음에서 **컨텐츠 조각** 콘솔
+
+      * **콘텐츠 조각** 콘솔에서
 
          * [콘텐츠 조각 게시 및 미리보기](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)
+
    * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
       * [콘텐츠 조각 모델 - 데이터 형식](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
       * [콘텐츠 조각 모델 - 속성](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
-      * [콘텐츠 조각 모델 - 에셋 폴더에서 콘텐츠 조각 모델 허용](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
-
-
+      * [콘텐츠 조각 모델 - 자산 폴더에서 콘텐츠 조각 모델 허용](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
 * 시작 안내서
-   * [에셋 폴더 만들기 Headless 설정](/help/headless/setup/create-assets-folder.md)
+   * [자산 폴더 만들기 Headless 설정](/help/headless/setup/create-assets-folder.md)
 
 * AEM Headless 콘텐츠 설계자 여정
 
