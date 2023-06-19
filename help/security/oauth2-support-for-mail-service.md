@@ -2,10 +2,10 @@
 title: 메일 서비스에 대한 OAuth2 지원
 description: Adobe Experience Manager as a Cloud Service의 메일 서비스에 대한 Oauth2 지원
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
+source-git-commit: 57667c1dda50b2a6a4ac2fccc428f5ccb252563c
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 99%
+source-wordcount: '723'
+ht-degree: 95%
 
 ---
 
@@ -134,15 +134,15 @@ AEM측의 OAuth 구성을 진행하기에 앞서 아래 절차에 따라 accessT
    * `offline_access`
    * `email`
    * `profile`
-1. 다음 구문을 사용하여 OSGi 속성 파일 `called com.day.cq.mailer.DefaultMailService.cfg.json`을 `/apps/<my-project>/osgiconfig/config` 아래에 생성합니다.
+1. 다음 구문을 사용하여 OSGi 속성 파일 `called com.day.cq.mailer.DefaultMailService.cfg.json`을 `/apps/<my-project>/osgiconfig/config` (아래 구문 포함) smtp.host 및 smtp.port 값은 다음에 설명된 대로 고급 네트워킹 구성을 반영합니다. [이메일 서비스 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=en).
 
    ```
    {
-    "smtp.host": "<smtp hostname>"
+    "smtp.host": "$[env:AEM_PROXY_HOST;default=proxy.tunnel]",
     "smtp.user": "<user account that logged into get the oauth tokens>",
     "smtp.password": "value not used",
-    "smtp.port": 587,
-    "from.address": "<from address used for sending>"
+    "smtp.port": 30465,
+    "from.address": "<from address used for sending>",
     "smtp.ssl": false,
     "smtp.starttls": true,
     "smtp.requiretls": true,
