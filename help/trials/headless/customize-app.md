@@ -4,10 +4,10 @@ description: 샘플 React 앱을 사용하여 AEM as a Cloud Service로 설정�
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
+source-git-commit: 469ebc7c3cae6dbfc38077e841db3c61ca16c680
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 100%
+source-wordcount: '1038'
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 1. 편집기 화면의 오른쪽 상단에서 **미리보기** 버튼을 탭하거나 클릭합니다.
 
-1. 데모 앱이 새 탭에서 열립니다. 해당 앱은 가상의 WKND 아웃도어 라이프스타일 브랜드를 위한 앱입니다. 주변을 클릭하여 샘플 콘텐츠를 탐색합니다.
+1. 데모 앱이 새 탭에서 열립니다. 해당 앱은 가상의 WKND 아웃도어 라이프스타일 브랜드를 위한 앱입니다. 페이지를 아래로 스크롤하여 샘플 콘텐츠를 탐색합니다.
 
 1. 계속하려면 콘텐츠 조각 편집기의 브라우저 탭으로 돌아갑니다.
 
