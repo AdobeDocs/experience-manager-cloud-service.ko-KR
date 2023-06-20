@@ -2,10 +2,10 @@
 title: 페이지 비교
 description: 페이지 비교 기능을 사용하면 두 페이지를 둘 사이의 차이점이 강조 표시된 상태로 편리하게 나란히 비교할 수 있습니다.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 64%
+source-wordcount: '618'
+ht-degree: 56%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 64%
 
 >[!NOTE]
 >
->이 기능을 사용하려면 사용자에게 **노드에 대한**&#x200B;수정/만들기/삭제`/content/versionhistory` 권한이 있어야 합니다.
+>사용자에게 다음이 있어야 합니다. **수정/만들기/삭제** 노드에 대한 권한 `/content/versionhistory` 을 클릭하여 기능을 사용하십시오.
 >
 >이 기능에 대한 자세한 내용은 [개발 및 페이지 비교](/help/implementing/developing/introduction/page-diff.md#operation-details)를 참조하십시오.
 
@@ -65,7 +65,7 @@ ht-degree: 64%
 
 ### 전체 화면 및 종료 {#fullscreen-and-exiting}
 
-특정 콘텐츠에 집중할 수 있도록 병렬 비교의 어느 &quot;한 쪽&quot;에 대한 전체 화면 아이콘을 클릭하여 전체 브라우저 창으로 확대할 수 있습니다.
+특정 컨텐츠에 집중할 수 있도록 병렬 비교의 어느 &quot;한 쪽&quot;에 대한 전체 화면 아이콘을 클릭하여 전체 브라우저 창으로 확대할 수 있습니다.
 
 ![전체 화면 버튼](/help/sites-cloud/authoring/assets/versions-full-screen.png)
 

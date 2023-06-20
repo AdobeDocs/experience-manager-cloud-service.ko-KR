@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: aa7b9daba4242965baf20a77af356952cd7bc279
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1092'
 ht-degree: 3%
 
 ---
@@ -41,7 +41,7 @@ CIF 추가 기능 및 [AEM CIF 핵심 구성 요소](https://github.com/adobe/ae
 - GraphQL은 AEM CIF 핵심 구성 요소 및 고객 프로젝트 구성 요소에서 사용하는 일부 공통 공유 가능한 GraphQl 클라이언트를 통해 AEM에서 상거래 백엔드로 호출을 수행합니다.
 - 변수가 설정된 각 AEM 환경에서 GraphQL 프록시 URL을 설정합니다 `/api/graphql`. AEM commerce 작성 도구(CIF 추가 기능) 및 CIF 클라이언트측 구성 요소에서 사용됩니다.
 
-각 AEM as a Cloud Service 환경에 대해 다른 GraphQL 엔드포인트 URL을 사용할 수 있습니다. 이 방법으로 프로젝트는 AEM 스테이징 환경을 상거래 스테이징 시스템 및 AEM 프로덕션 환경과 상거래 프로덕션 시스템을 연결할 수 있습니다. GraphQL 끝점을 공개적으로 사용할 수 있어야 하며 개인 VPN 또는 로컬 연결이 지원되지 않습니다. 선택적으로, 인증이 필요한 추가 CIF 기능을 사용하기 위해 인증 헤더가 제공될 수 있다.
+각 AEM as a Cloud Service 환경에 대해 다른 GraphQL 엔드포인트 URL을 사용할 수 있습니다. 이 방법으로 프로젝트는 AEM 스테이징 환경을 상거래 스테이징 시스템 및 AEM 프로덕션 환경과 상거래 프로덕션 시스템을 연결할 수 있습니다. GraphQL 끝점을 공개적으로 사용할 수 있어야 하며 개인 VPN 또는 로컬 연결이 지원되지 않습니다. 선택적으로, 인증이 필요한 추가 CIF 기능을 사용하도록 인증 헤더를 제공할 수 있다.
 
 선택 사항으로 Adobe Commerce Enterprise/Cloud에만 CIF 추가 기능이 추가되어 AEM 작성자를 위한 준비된 카탈로그 데이터 사용을 지원합니다. 인증 헤더를 구성하는 데 필요합니다. 이 헤더는 보안상의 이유로 AEM 작성자 인스턴스에서만 사용할 수 있습니다. AEM 게시 인스턴스는 준비된 데이터를 표시할 수 없습니다.
 
@@ -120,17 +120,17 @@ CIF 추가 기능 및 [CIF 핵심 구성 요소](https://github.com/adobe/aem-co
 - GraphQL 클라이언트 - commerce 백엔드 통신용으로 구성된 GraphQL 클라이언트를 선택합니다. 이 옵션은 일반적으로 기본값으로 유지되어야 합니다.
 - 스토어 뷰 - 스토어 뷰 식별자. 비어 있는 경우 기본 스토어 보기가 사용됩니다.
 - GraphQL 프록시 경로 - AEM의 GraphQL 프록시가 상거래 백엔드 GraphQL 엔드포인트에 대한 요청을 프록시하는 데 사용하는 URL 경로.
-   >[!NOTE]
-   >
-   > 대부분의 설정에서 기본값 `/api/graphql` 은(는) 변경할 수 없습니다. 제공된 GraphQL 프록시를 사용하지 않는 고급 설정만 이 설정을 변경해야 합니다.
+  >[!NOTE]
+  >
+  > 대부분의 설정에서 기본값 `/api/graphql` 은(는) 변경할 수 없습니다. 제공된 GraphQL 프록시를 사용하지 않는 고급 설정만 이 설정을 변경해야 합니다.
 - 카탈로그 UID 지원 활성화 - 상거래 백엔드 GraphQL 호출에서 ID 대신 UID를 지원합니다.
-   >[!NOTE]
-   >
-   > UID에 대한 지원은 Adobe Commerce 2.4.2에서 도입되었습니다. 상거래 백엔드가 버전 2.4.2 이상의 GraphQL 스키마를 지원하는 경우에만 활성화하십시오.
+  >[!NOTE]
+  >
+  > UID에 대한 지원은 Adobe Commerce 2.4.2에서 도입되었습니다. 상거래 백엔드가 버전 2.4.2 이상의 GraphQL 스키마를 지원하는 경우에만 활성화하십시오.
 - 카탈로그 루트 범주 식별자 - 스토어 카탈로그 루트의 식별자(UID 또는 ID)
-   >[!CAUTION]
-   >
-   > CIF 코어 구성 요소 버전 2.0.0부터 `id` 을(를) 제거하고 로 대체함 `uid`. 프로젝트에서 CIF 코어 구성 요소 버전 2.0.0을 사용하는 경우 카탈로그 UID 지원을 활성화하고 유효한 범주 UID를 &quot;카탈로그 루트 범주 식별자&quot;로 사용해야 합니다.
+  >[!CAUTION]
+  >
+  > CIF 코어 구성 요소 버전 2.0.0부터 `id` 을(를) 제거하고 로 대체함 `uid`. 프로젝트에서 CIF 코어 구성 요소 버전 2.0.0을 사용하는 경우 카탈로그 UID 지원을 활성화하고 유효한 범주 UID를 &quot;카탈로그 루트 범주 식별자&quot;로 사용해야 합니다.
 
 위에 표시된 구성은 참조용입니다. 프로젝트는 자체 구성을 제공해야 합니다.
 

@@ -3,10 +3,10 @@ title: 쿼리 및 색인화 모범 사례
 description: Adobe의 모범 사례 가이드라인에 기반하여 색인 및 쿼리를 최적화하는 방법에 대해 알아봅니다.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: afeff7cfb8606eb58126a4ca62ce9e6e58c44215
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1563'
-ht-degree: 100%
+source-wordcount: '1558'
+ht-degree: 95%
 
 ---
 
@@ -32,7 +32,7 @@ AEM as a Cloud Service에서는 색인화와 관련된 모든 운영 측면이 �
 
 ### 노드 트래버스 {#traversing-nodes}
 
-필요한 데이터의 위치에 대한 사전 정보가 이용 가능하도록 저장소를 디자인한 경우, 쿼리를 통해 이 데이터를 찾을 필요 없이 필요 경로로부터 이 데이터를 가져오는 코드를 배포할 수 있습니다.
+필요한 데이터의 위치에 대한 사전 지식이 가능한 방식으로 저장소를 디자인한 경우 쿼리를 실행하여 찾을 필요 없이 필요한 경로에서 이 데이터를 검색하는 코드를 배포할 수 있습니다.
 
 예를 들어 특정 카테고리에 부합하는 콘텐츠를 렌더링하는 경우가 있습니다. 한 가지 접근법은 카테고리에서 항목을 표시하는 구성 요소를 채우도록 쿼리할 수 있는 카테고리 속성을 가진 콘텐츠를 구성하는 것입니다.
 
@@ -77,7 +77,7 @@ AEM as a Cloud Service는 효율적인 쿼리 구현을 보조하도록 디자�
 
 모든 쿼리는 최적의 성능을 제공하기 위해 색인을 사용해야 합니다. 대다수의 경우 기존의 기본 제공 색인으로 충분히 쿼리를 처리할 수 있습니다.
 
-가끔은 기존 색인에 사용자 정의 속성을 추가하여, 색인을 사용해 추가적인 제한을 쿼리할 수 있습니다. 자세한 내용은 [콘텐츠 검색 및 색인화](/help/operations/indexing.md#changing-an-index) 문서를 참조하십시오. 본 문서의 [JCR 쿼리 치트시트](#jcr-query-cheatsheet) 섹션은 특정 쿼리 유형을 지원하기 위한 색인의 속성 정의는 어떤 형태인지 설명합니다.
+가끔은 기존 색인에 사용자 정의 속성을 추가하여, 색인을 사용해 추가적인 제한을 쿼리할 수 있습니다. 자세한 내용은 [콘텐츠 검색 및 색인화](/help/operations/indexing.md#changing-an-index) 문서를 참조하십시오. 다음 [JCR 쿼리 치트시트](#jcr-query-cheatsheet) 이 문서의 섹션에서는 특정 쿼리 유형을 지원하기 위해 색인의 속성 정의를 찾는 방법에 대해 설명합니다.
 
 ### 올바른 기준 사용 {#use-the-right-criteria}
 

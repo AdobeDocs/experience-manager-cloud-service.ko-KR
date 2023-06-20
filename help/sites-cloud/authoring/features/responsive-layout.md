@@ -2,9 +2,9 @@
 title: 반응형 레이아웃
 description: AEM을 사용하면 페이지에 대한 응답형 레이아웃을 구현할 수 있습니다
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1766'
+source-wordcount: '1764'
 ht-degree: 86%
 
 ---
@@ -28,11 +28,11 @@ AEM에서는 메커니즘을 조합하여 페이지에 대한 응답형 레이�
 
 * [**레이아웃 컨테이너**](#adding-a-layout-container-and-its-content-edit-mode) 구성 요소
 
-   이 구성 요소는 [구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)에서 사용할 수 있으며, 응답형 그리드 내에 구성 요소를 추가 및 배치할 수 있도록 해 주는 그리드 단락 시스템을 제공합니다. 또한 페이지에서 기본 단락 시스템으로 설정할 수도 있습니다.
+  이 구성 요소는 [구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)에서 사용할 수 있으며, 응답형 그리드 내에 구성 요소를 추가 및 배치할 수 있도록 해 주는 그리드 단락 시스템을 제공합니다. 또한 페이지에서 기본 단락 시스템으로 설정할 수도 있습니다.
 
 * [**레이아웃 모드**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
 
-   레이아웃 컨테이너를 페이지에 배치하면 **레이아웃** 모드를 사용하여 콘텐츠를 응답형 그리드 내에 배치할 수 있습니다.
+  레이아웃 컨테이너를 페이지에 배치하면 **레이아웃** 모드를 사용하여 콘텐츠를 응답형 그리드 내에 배치할 수 있습니다.
 
 * [**에뮬레이터**](#selecting-a-device-to-emulate) 
 에뮬레이터를 사용하면 구성 요소의 크기를 대화 방식으로 변경하여 디바이스/창 크기에 따라 레이아웃을 다시 정렬하는 응답형 웹 사이트를 만들고 편집할 수 있습니다. 사용자는 콘텐츠가 에뮬레이터를 사용하여 어떻게 렌더링될지 알 수 있습니다.
@@ -124,7 +124,6 @@ AEM을 사용하면 디바이스의 너비에 따라 레이아웃을 정의할 �
    * 에뮬레이션 중인 디바이스의 높이가 화면 크기보다 높을 경우 접힌 부분의 선이 표시되지 않습니다.
    * 접힌 부분은 작성자의 편의를 위해 표시되며 게시된 페이지에는 표시되지 않습니다.
 
-
 ## 레이아웃 컨테이너 및 해당 콘텐츠 추가(편집 모드) {#adding-a-layout-container-and-its-content-edit-mode}
 
 **레이아웃 컨테이너**&#x200B;는 다음과 같은 단락 시스템입니다.
@@ -160,7 +159,7 @@ AEM을 사용하면 디바이스의 너비에 따라 레이아웃을 정의할 �
 
 1. 레이아웃 구성 요소가 중첩된 경우 **상위** 옵션은 중첩된 레이아웃 컨테이너 또는 해당 상위 항목을 선택할 수 있는 드롭다운 선택 사항을 제공합니다.
 
-   드롭다운에서 컨테이너 이름 위로 마우스를 가져가면 해당 컨테이너 아웃라인이 페이지에 표시됩니다.
+   드롭다운에서 컨테이너 이름을 마우스로 가리키면 컨테이너 아웃라인이 페이지에 표시됩니다.
 
    * 가장 낮게 중첩된 레이아웃 컨테이너는 파란색으로 윤곽이 표시됩니다.
    * 연속적인 모든 컨테이너는 파란색 음영으로 표시됩니다.
@@ -190,53 +189,53 @@ AEM을 사용하면 디바이스의 너비에 따라 레이아웃을 정의할 �
 
 * 파란색 점을 사용하여 콘텐츠 구성 요소 크기를 변경할 수 있습니다. 크기 조정은 항상 격자에 맞춰 조정됩니다. 배경 그리드의 크기를 조정할 때 정렬에 도움이 되도록 다음이 표시됩니다.
 
-   ![구성 요소 크기 조정](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
+  ![구성 요소 크기 조정](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
 
-   >[!NOTE]
-   >
-   >**이미지**&#x200B;와 같은 구성 요소의 크기가 변경될 때 상대적인 비율 및 비는 유지됩니다.
+  >[!NOTE]
+  >
+  >구성 요소(예: )가 **이미지** 크기가 조정됩니다.
 
 * 콘텐츠 구성 요소를 클릭/탭합니다. 도구 모음에서는 다음 작업을 수행할 수 있습니다.
    * **상위** - 전체적으로 작업을 수행할 전체 레이아웃 컨테이너 구성 요소를 선택할 수 있습니다.
    * **새 라인으로 이동** - 그리드 내에서 사용할 수 있는 공간에 따라 구성 요소가 새 라인으로 이동됩니다.
    * **구성 요소 숨기기** - 구성 요소가 보이지 않게 됩니다(레이아웃 컨테이너의 도구 모음에서 복원 가능).
 
-   ![구성 요소 숨기기](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
+  ![구성 요소 숨기기](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
 * **레이아웃** 모드에서 **구성 요소를 여기로 드래그하십시오.**&#x200B;를 탭/클릭하여 전체 구성 요소를 선택할 수 있습니다. 이 모드에 대한 도구 모음이 표시됩니다.
 
-   도구 모음에는 레이아웃 구성 요소 및 해당 구성 요소에 속하는 구성 요소의 상태에 따라 다른 옵션이 있습니다. 예:
+  도구 모음에는 레이아웃 구성 요소 및 해당 구성 요소에 속하는 구성 요소의 상태에 따라 다른 옵션이 있습니다. 예:
 
    * **상위** - 상위 구성 요소를 선택합니다.
 
-      ![상위 버튼](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
+     ![상위 버튼](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
    * **숨겨진 구성 요소 표시** - 모든 또는 개별 구성 요소를 표시합니다. 숫자는 현재 숨겨진 구성 요소 수를 표시합니다. 카운터는 몇 개의 구성 요소가 숨겨져 있는지 표시합니다.
 
-      ![숨겨진 구성 요소 표시 버튼](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
+     ![숨겨진 구성 요소 표시 버튼](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
 
    * **중단점 레이아웃 되돌리기** - 기본 레이아웃으로 되돌립니다. 이는 사용자 정의된 레이아웃이 적용되지 않음을 의미합니다.
 
-      ![중단점 레이아웃 되돌리기 버튼](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
+     ![중단점 레이아웃 되돌리기 버튼](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
 
    * **새 라인으로 이동** - 공간이 있으면 구성 요소를 위로 이동합니다.
 
-      ![새 라인으로 이동 버튼](/help/sites-cloud/authoring/assets/responsive-layout-float-button.png)
+     ![새 라인으로 이동 버튼](/help/sites-cloud/authoring/assets/responsive-layout-float-button.png)
 
    * **구성 요소 숨기기** - 현재 구성 요소를 숨깁니다.
 
-      ![구성 요소 숨기기 버튼](/help/sites-cloud/authoring/assets/responsive-layout-hide-button.png)
-   >[!NOTE]
-   >
-   >위의 예에서 이동 및 숨기기 동작은 레이아웃 컨테이너가 상위 레이아웃 컨테이너 내에서 중첩되기 때문에 가능한 것입니다.
+     ![구성 요소 숨기기 버튼](/help/sites-cloud/authoring/assets/responsive-layout-hide-button.png)
 
-   * **구성 요소 표시**
-상위 구성 요소를 선택하고 
-**숨겨진 구성 요소 표시** 옵션을 사용하여 작업 도구 모음을 표시합니다. 이 예시에는 두 개의 구성 요소가 숨겨져 있습니다.
+  >[!NOTE]
+  >
+  >위의 예에서 이동 및 숨기기 동작은 레이아웃 컨테이너가 상위 레이아웃 컨테이너 내에서 중첩되기 때문에 가능한 것입니다.
 
-      ![구성 요소 숨기기 취소](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
-   **숨겨진 구성 요소 표시** 옵션을 선택하면 원래 위치에서 현재 숨겨진 구성 요소가 파란색으로 표시됩니다.
+   * **구성 요소 숨김 취소** 상위 구성 요소를 선택하여 **숨겨진 구성 요소 표시** 옵션과 함께 작업 도구 모음을 표시할 수 있습니다. 이 예시에는 두 개의 구성 요소가 숨겨져 있습니다.
 
-   ![모두 복원 버튼](/help/sites-cloud/authoring/assets/responsive-layout-restore-all.png)
+     ![구성 요소 숨기기 취소](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
 
-   **모두 복원**&#x200B;을 선택하면 숨겨진 모든 구성 요소가 숨김 취소됩니다.
+  **숨겨진 구성 요소 표시** 옵션을 선택하면 원래 위치에서 현재 숨겨진 구성 요소가 파란색으로 표시됩니다.
+
+  ![모두 복원 버튼](/help/sites-cloud/authoring/assets/responsive-layout-restore-all.png)
+
+  **모두 복원**&#x200B;을 선택하면 숨겨진 모든 구성 요소가 숨김 취소됩니다.

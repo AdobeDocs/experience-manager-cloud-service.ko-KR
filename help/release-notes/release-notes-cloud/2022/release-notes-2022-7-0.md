@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.7.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.7.0 릴리스 정보입니다.'
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '955'
-ht-degree: 98%
+source-wordcount: '953'
+ht-degree: 86%
 
 ---
 
@@ -39,9 +39,9 @@ ht-degree: 98%
 
 * [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)은 이제 [키보드 단축키](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)를 지원합니다.
 
-* AEM as Cloud Service의 [웹 최적화 이미지 게재](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html)는 WebP와 같은 형식을 제공함으로써 페이지 속도를 향상시킬 수 있습니다. 또한 이 새로운 서비스는 보다 유연한 이미지 크기 조정 및 변환 옵션을 제공합니다. 모든 버전의 [핵심 이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)에서, 이 서비스를 사용하여 이미지 구성 요소 정책에서 옵션을 클릭하는 것으로 WebP로 이미지를 게재할 수 있습니다.
+* Cloud Service의 AEM [웹에 최적화된 이미지 제공](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) 에서는 WebP와 같은 형식을 제공함으로써 페이지 속도를 크게 향상시킬 수 있습니다. 또한 이 새로운 서비스는 보다 유연한 이미지 크기 조정 및 변환 옵션을 제공합니다. 의 모든 버전 [핵심 이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 이미지 구성 요소 정책에서 옵션을 클릭하여 이 서비스를 사용하고 이미지를 WebP로 게재할 수 있습니다.
 
-* AEM 개인화 활동에서 이제 레거시 오퍼 대신 경험 조각을 사용할 수 있습니다. 이 기능은 다음의 특징을 포함합니다.
+* AEM 개인화 활동은 이제 레거시 오퍼 대신 경험 조각을 사용할 수 있습니다. 이 기능은 다음의 특징을 포함합니다.
    * 레거시 라이브러리가 아닌 AEM 콘텐츠가 경험 조각 오퍼를 촉진하는 마이그레이션 경로를 통해 향후 규모에 맞는 개인화에 적합한 스타일의 콘텐츠를 제공할 수 있습니다.
    * 콘텐츠 작성자가 사이트에서 스타일이 지정되지 않은 콘텐츠를 실수로 제공하는 것을 방지합니다.
    * 모든 구성 요소의 타겟팅 모드를 편집 가능한 템플릿을 사용하는 경험 조각(JSON 및 HTML 유형 모두)으로 변환할 수 있습니다.
@@ -102,7 +102,7 @@ ht-degree: 98%
 ### 새로운 기능 {#what-is-new-foundation}
 
 * 이제 [저장소 브라우저](/help/implementing/developing/tools/repository-browser.md)에 경로 입력 필드가 있으므로 저장소 계층의 특정 폴더로 직접 이동할 수 있습니다.
-* Sling 콘텐츠 배포(SCD)는 이제 해당 콘텐츠가 게시되지 않은 콘텐츠를 무효화하기 위해 명시적인 &quot;무효화&quot; 작업을 지원합니다. 자세한 내용은 [AEM as a Cloud Service의 캐싱](/help/implementing/dispatcher/caching.md#explicit-invalidation)을 참조하십시오.
+* Sling 콘텐츠 배포(SCD)는 이제 해당 콘텐츠가 게시되지 않은 콘텐츠를 무효화하는 명시적인 &quot;무효화&quot; 작업을 지원합니다. 자세한 내용은 [AEM as a Cloud Service의 캐싱](/help/implementing/dispatcher/caching.md#explicit-invalidation)을 참조하십시오.
 * 이제 AEM as a Cloud Service에서 mod_macro를 이용할 수 있습니다. 지원되는 Apache 모듈의 목록은 [이 표](/help/implementing/dispatcher/disp-overview.md)를 참조하십시오.
 
 ### AEM as a Cloud Service SDK Dispatcher 도구 개선 사항 {#dispatcher-tools-enhancements}

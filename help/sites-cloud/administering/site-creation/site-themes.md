@@ -4,10 +4,10 @@ description: AEM 사이트 테마를 사용하여 사이트의 스타일 및 디
 feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
-source-git-commit: a77c31ebfce01834325bfdb806793dcd8ba169d4
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 100%
+source-wordcount: '353'
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ AEM 사이트 템플릿을 통해 생성되는 사이트를 사용하면 테마�
 
 >[!NOTE]
 >
->AEM 사이트 테마를 [AEM 사이트 템플릿과 혼동하면 안 됩니다.](site-templates.md) AEM 사이트 테마는 AEM 사이트에 대한 스타일 정보만 포함합니다. AEM 사이트 템플릿은 사이트 구조 및 최초 콘텐츠를 정의하며 [빠른 사이트 생성](create-site.md)을 위한 AEM 사이트 테마를 포함합니다.
+>AEM 사이트 테마를 [AEM 사이트 템플릿과 혼동하면 안 됩니다.](site-templates.md) AEM 사이트 테마는 AEM 사이트에 대한 스타일 정보만 포함합니다. AEM 사이트 템플릿은 사이트 구조 및 초기 콘텐츠를 정의하며 다음을 허용하는 AEM 사이트 테마를 포함합니다. [빠른 사이트 생성.](create-site.md)
 
 ## 사이트 테마 사용 {#using-themes}
 

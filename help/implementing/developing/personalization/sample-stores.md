@@ -2,9 +2,9 @@
 title: 샘플 ContextHub 저장소 후보
 description: ContextHub는 솔루션에서 사용할 수 있는 몇 가지 샘플 저장소 후보를 제공합니다
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '464'
 ht-degree: 2%
 
 ---
@@ -103,7 +103,7 @@ aem.segmentation 저장소 후보가 확장됨 [`ContextHub.Store.PersistedJSONP
 
 >[!NOTE]
 >
->Chrome 50.x에 도입된 보안 정책을 사용하려면 모든 지리적 위치 관련 호출이 보안 연결을 통해 수행되어야 합니다. 따라서 AEM은 https에서도 AEM이 실행 중인 경우 지리적 위치 API 호출에 https 사용을 강제합니다. 그렇지 않으면 동일한 출처의 정책을 준수하기 위해 http가 사용됩니다.
+>Chrome 50.x에 도입된 보안 정책을 사용하려면 모든 지리적 위치 관련 호출이 보안 연결을 통해 수행되어야 합니다. 따라서 AEM은 https에서도 AEM이 실행 중인 경우 지리적 위치 API 호출에 https 사용을 강제합니다. 그렇지 않으면 http를 사용하여 동일한 출처의 정책을 준수합니다.
 >
 >다음을 참조하십시오 [이 Google 블로그 게시물](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) chrome의 변경 사항에 대한 자세한 내용은 를 참조하십시오.
 

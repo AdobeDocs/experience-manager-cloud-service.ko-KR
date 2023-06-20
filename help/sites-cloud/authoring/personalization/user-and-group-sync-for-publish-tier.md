@@ -2,10 +2,10 @@
 title: 등록, 로그인 및 사용자 프로필
 description: AEM as a Cloud Service의 등록, 로그인, 사용자 데이터 및 그룹 동기화에 대해 알아봅니다.
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 100%
+source-wordcount: '1170'
+ht-degree: 95%
 
 ---
 
@@ -83,7 +83,7 @@ AEM의 SSO 인증 처리기 서비스 사용에 대한 자세한 내용은 [SSO(
 
 ### 고정 세션 및 압축된 토큰 {#sticky-sessions-and-encapsulated-tokens}
 
-AEM as a Cloud Service에서는 쿠키 기반의 고정 세션이 활성화되어 있으므로, 최종 사용자는 각 요청에 대해 동일한 게시 노드에 라우팅됩니다. 성능 향상을 위해 기본적으로 압축된 토큰 기능이 활성화되어 있으므로 각 요청에 대해 저장소의 사용자 레코드를 참조하지 않아도 됩니다. 최종 사용자가 선호하는 게시 노드가 교체된 경우, 아래 데이터 동기화 섹션에 설명된 것처럼 새 게시 노드에서 사용자 ID 레코드를 사용할 수 있습니다.
+AEM as a Cloud Service에서는 쿠키 기반의 고정 세션이 활성화되어 있으므로, 최종 사용자는 각 요청에 대해 동일한 게시 노드에 라우팅됩니다. 성능 향상을 위해 기본적으로 압축된 토큰 기능이 활성화되어 있으므로 각 요청에서 저장소의 사용자 레코드를 참조할 필요가 없습니다. 최종 사용자가 선호하는 게시 노드가 교체된 경우, 아래 데이터 동기화 섹션에 설명된 것처럼 새 게시 노드에서 사용자 ID 레코드를 사용할 수 있습니다.
 
 ## 사용자 프로필 {#user-profile}
 

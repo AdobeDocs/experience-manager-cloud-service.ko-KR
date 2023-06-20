@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2308'
 ht-degree: 3%
@@ -24,7 +24,7 @@ CSS 및 LESS 프레임워크에 대한 지식.
 
 ## 사용자 정의 가능한 사항 {#what-can-be-customized}
 
-이 문서에는 적응형 Forms의 공개적으로 사용 가능한 css 클래스가 나열되어 있습니다. 이러한 클래스를 활용하여 적응형 양식의 다양한 구성 요소에 스타일을 지정할 수 있습니다. 경고를 표시하는 대화 상자 및 상태 표시줄과 같은 작성 구성 요소의 스타일은 이 문서의 범위를 벗어납니다. 다음 스타일 구문을 사용하여 구성 요소의 스타일을 지정할 수 없는 경우에만 스타일을 만듭니다(CSS 또는 그 이하 사용). [테마 편집기](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
+이 문서에는 적응형 Forms의 공개적으로 사용 가능한 css 클래스가 나열되어 있습니다. 이러한 클래스를 사용하여 적응형 양식의 다양한 구성 요소에 스타일을 지정할 수 있습니다. 경고를 표시하는 대화 상자 및 상태 표시줄과 같은 작성 구성 요소의 스타일은 이 문서의 범위를 벗어납니다. 다음 스타일 구문을 사용하여 구성 요소의 스타일을 지정할 수 없는 경우에만 스타일을 만듭니다(CSS 또는 그 이하 사용). [테마 편집기](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
 
 ## 적응형 Forms에서 스타일 맞춤화 {#customizing-styles-in-adaptive-forms}
 

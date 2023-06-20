@@ -2,10 +2,10 @@
 title: 번역된 Headless 콘텐츠 게시
 description: 번역된 콘텐츠를 게시하고 콘텐츠가 업데이트될 때 번역을 업데이트하는 방법에 대해 알아봅니다.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 100%
+source-wordcount: '1392'
+ht-degree: 98%
 
 ---
 
@@ -78,7 +78,7 @@ AEM Headless 번역 여정의 이전 문서인 [콘텐츠 번역](configure-conn
 
 >[!TIP]
 >
->게시할 때 여러 항목(예: 여러 언어 폴더)를 선택하여 여러 번역을 한 번에 게시할 수 있습니다.
+>게시할 때 여러 항목(즉, 여러 언어 폴더)을 선택하여 여러 번역을 한 번에 게시할 수 있습니다.
 
 콘텐츠를 게시할 때에는 게시 시간 예약과 같이 이 여정에서 다루지 않는 추가 옵션을 사용할 수 있습니다. 자세한 내용은 이 문서 끝에 있는 [추가 리소스](#additional-resources) 섹션을 참조하십시오.
 

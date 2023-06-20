@@ -2,10 +2,10 @@
 title: 받은 편지함
 description: 받은 편지함에서 작업 관리
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 80%
+source-wordcount: '909'
+ht-degree: 78%
 
 ---
 
@@ -30,7 +30,6 @@ ht-degree: 80%
 >* [프로젝트](/help/sites-cloud/authoring/projects/overview.md)
 >* [프로젝트 - 작업](/help/sites-cloud/authoring/projects/tasks.md)
 >* [워크플로](/help/sites-cloud/authoring/workflows/overview.md)
-
 
 ## 헤더의 받은 편지함 {#inbox-in-the-header}
 
@@ -86,26 +85,26 @@ AEM 알림 받은 편지함 열기
 
 * **캘린더 보기**
 
-   대상 **달력 보기** 다음을 구성할 수 있습니다.
+  대상 **달력 보기** 다음을 구성할 수 있습니다.
 
    * **그룹화 기준**
    * **예약** 또는 **없음**
    * **카드 크기**
 
-   ![받은 편지함 달력 보기 설정](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
+  ![받은 편지함 달력 보기 설정](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
 
 * **목록 보기**
 
-   대상 **목록 보기** 정렬 메커니즘을 구성할 수 있습니다.
+  대상 **목록 보기** 정렬 메커니즘을 구성할 수 있습니다.
 
    * **정렬 기준**
    * **정렬 순서**
 
-   ![받은 편지함 목록 보기 설정](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
+  ![받은 편지함 목록 보기 설정](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-   다른 사용자에게 달력을 위임할 수 있을 뿐만 아니라 다른 사용자로부터의 위임을 요청하고 위임을 관리할 수도 있습니다.
+  다른 사용자에게 달력을 위임할 수 있을 뿐만 아니라 다른 사용자로부터의 위임을 요청하고 위임을 관리할 수도 있습니다.
 
-   ![받은 편지함 목록 보기 위임 설정](/help/sites-cloud/authoring/assets/inbox-delegation.png)
+  ![받은 편지함 목록 보기 위임 설정](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
 ## 항목에 대한 작업 수행 {#taking-action-on-an-item}
 
@@ -126,6 +125,7 @@ AEM 알림 받은 편지함 열기
       * 항목 속성 표시
       * 추가 작업을 위해 적절한 대시보드 또는 마법사 열기
       * 관련 문서 열기
+
    * 이전 단계로 **돌아갑니다**
    * 워크플로에 대한 페이로드를 확인합니다
    * 항목에서 프로젝트를 생성합니다
@@ -135,7 +135,6 @@ AEM 알림 받은 편지함 열기
    >자세한 내용은 다음을 참조하십시오.
    >
    >* 워크플로 항목 - [워크플로에 참여](/help/sites-cloud/authoring/workflows/participating.md)
-
 
 2. 선택한 항목에 따라 작업이 시작됩니다. 예를 들면 다음과 같습니다.
 
@@ -152,7 +151,6 @@ AEM 알림 받은 편지함 열기
    * 적절한 작업을 확인합니다(예: 재지정).
    * 작업을 취소합니다
    * 뒤로 화살표를 선택하여 받은 편지함으로 돌아갑니다. 예를 들어 작업 마법사나 문서 페이지가 열려 있으면 받은 편지함으로 돌아갈 수 있습니다.
-
 
 ## 작업 만들기 {#creating-a-task}
 
@@ -176,7 +174,7 @@ AEM 알림 받은 편지함 열기
 
    * **고급**
 
-      * **이름**: URL을 구성하는 데 사용됩니다. 공백이 있는 경우 **제목**&#x200B;을 기준으로 합니다.
+      * **이름**: URL을 구성하는 데 사용되며 비어 있는 경우 **제목**.
 
    ![받은 편지함 추가 작업 고급 옵션](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
@@ -205,9 +203,11 @@ AEM 알림 받은 편지함 열기
       * **시작 날짜**
       * **기한**
       * **사용자** 및 역할
+
    * **고급**
 
       * **이름**
+
    >[!NOTE]
    >
    >다음을 참조하십시오 [프로젝트 만들기](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) 전체 정보.

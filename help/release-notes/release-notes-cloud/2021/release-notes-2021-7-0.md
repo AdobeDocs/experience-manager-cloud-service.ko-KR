@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.7.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.7.0 릴리스 정보입니다.'
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1315'
 ht-degree: 50%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 50%
 
 ### 새로운 기능 {#what-is-new-foundation}
 
-* 보다 유연한 Dispatcher 구성: 프로젝트를 보다 쉽게 구성할 수 있습니다. 예를 들어 이제 사이트 구조를 반영하는 여러 재작성 규칙 파일을 포함할 수 있습니다. [다음에 대해 알아보기](/help/implementing/dispatcher/disp-overview.md#validation-debug) 이 유연한 모드는 이를 활용하기 위해 dispatcher 구성을 구성하는 방법을 포함합니다.
+* 보다 유연한 Dispatcher 구성: 프로젝트를 보다 쉽게 구성할 수 있습니다. 예를 들어 이제 사이트 구조를 반영하는 여러 재작성 규칙 파일을 포함할 수 있습니다. [다음에 대해 알아보기](/help/implementing/dispatcher/disp-overview.md#validation-debug) 이 유연한 모드는 활용할 수 있도록 dispatcher 구성을 구성하는 방법을 포함합니다.
 * 복제 에이전트의 &quot;배포&quot; 탭 아래에 있는 트리 복제 UI는 더 이상 사용되지 않는 것으로 간주되어 9월 30일 이후에 제거될 예정입니다. [다음에 대해 알아보기](/help/operations/replication.md#tree-activation) 대체 복제 전략
 * 번들 `org.apache.sling.datasource-1.0.4.jar` sling 데이터 소스 지원은 기능이 뒤쳐지고 고객이 사용하지 않기 때문에 제거되었습니다.
 
@@ -42,23 +42,23 @@ ht-degree: 50%
 
 ### [!DNL Assets]의 새로운 기능 {#assets-features}
 
-* 콘텐츠 자동화 기능을 통해 다음과 같은 작업을 수행할 수 있습니다 [!DNL Experience Manager Assets] 활용 [!DNL Adobe Creative Cloud] 규모에 맞게 에셋 제작을 자동화하는 API입니다. 동일한 에셋의 변형을 만드는 데 소요되는 시간과 필요한 반복을 크게 줄여 콘텐츠 속도를 향상시킵니다. 이 기능은 프로그래밍이 필요하지 않으며 DAM 내에서 작동합니다. 다음을 참조하십시오 [Creative Cloud 통합을 사용하여 에셋 변형 생성](/help/assets/cc-api-integration.md).
+* 콘텐츠 자동화 기능을 통해 다음과 같은 작업을 수행할 수 있습니다 [!DNL Experience Manager Assets] 사용 [!DNL Adobe Creative Cloud] 규모에 맞게 에셋 제작을 자동화하는 API입니다. 동일한 에셋의 변형을 만드는 데 소요되는 시간과 필요한 반복을 크게 줄여 콘텐츠 속도를 향상시킵니다. 이 기능은 프로그래밍이 필요하지 않으며 DAM 내에서 작동합니다. 다음을 참조하십시오 [Creative Cloud 통합을 사용하여 에셋 변형 생성](/help/assets/cc-api-integration.md).
 
-* [!DNL Experience Manager Assets] 다음을 포함: [!DNL Document Cloud] PDF 뷰어를 사용하여 PDF 문서를 기본적으로 미리 볼 수 있습니다. 이 기능을 사용하면 다중 페이지 PDF 파일을 파일 처리 또는 변환 없이 미리 볼 수 있습니다. 이 기능은 를 사용하여 패리티를 향상시킵니다. [!DNL Experience Manager] 6.5. 뷰어에서 사용할 수 있는 컨트롤에는 확대/축소, 페이지로 이동, 컨트롤 분리 및 전체 화면으로 보기가 포함됩니다. 사용자 사례에서도 페이지를 미리 보고 페이지 및 책갈피로 이동합니다. 파일 자체에 대한 댓글이 지원되며 PDF 파일 내에 댓글 달기 및 콘텐츠에 대한 주석은 향후 릴리스에 추가됩니다.
+* [!DNL Experience Manager Assets] 다음을 포함: [!DNL Document Cloud] PDF 뷰어를 사용하여 PDF 문서를 기본적으로 미리 볼 수 있습니다. 이 기능을 사용하면 다중 페이지 PDF 파일을 파일 처리 또는 변환 없이 미리 볼 수 있습니다. 이 기능은 를 사용하여 패리티를 향상시킵니다. [!DNL Experience Manager] 6.5. 뷰어에서 사용할 수 있는 컨트롤에는 확대/축소, 페이지로 이동, 컨트롤 분리 및 전체 화면으로 보기가 포함됩니다. 사용자 사례에서도 페이지를 미리 보고 페이지 및 책갈피로 이동합니다. 파일 자체에 대한 댓글이 지원됩니다. PDF 파일 내에 있는 콘텐츠에 대한 댓글 달기 및 주석 기능은 향후 릴리스에 추가됩니다.
 
-   ![에서 PDF 파일 미리 보기 [!DNL Experience Manager] PDF 뷰어 사용](/help/assets/assets/preview-pdf-file-viewer.png)
+  ![에서 PDF 파일 미리 보기 [!DNL Experience Manager] PDF 뷰어 사용](/help/assets/assets/preview-pdf-file-viewer.png)
 
 * Linkshare 다운로드 기능은 다운로드 속도를 향상시키는 비동기 다운로드를 사용합니다. 다음을 참조하십시오 [링크 공유를 사용하여 공유된 에셋 다운로드](/help/assets/download-assets-from-aem.md#link-share-download).
 
-   ![받은 편지함 다운로드](/help/assets/assets/download-inbox.png)
+  ![받은 편지함 다운로드](/help/assets/assets/download-inbox.png)
 
 * 사용자가 기본 보기와 기본 정렬 매개 변수를 선택할 수 있도록 보기 설정이 개선되었습니다.
 
-   ![에서 기본 보기 설정 [!UICONTROL 설정 보기]](/help/assets/assets/view-settings-for-defaults.png)
+  ![에서 기본 보기 설정 [!UICONTROL 설정 보기]](/help/assets/assets/view-settings-for-defaults.png)
 
 * 사용자는 속성 술어에 따라 폴더를 검색하고 필터링할 수 있습니다.
 
-   ![검색 술어를 사용하여 검색 폴더 필터링](/help/assets/assets/search-folders-via-predicates.png)
+  ![검색 술어를 사용하여 검색 폴더 필터링](/help/assets/assets/search-folders-via-predicates.png)
 
 ### 에서 사용할 수 있는 새로운 기능 [!DNL Assets] 프리릴리스 채널 {#assets-prerelease-features}
 

@@ -4,9 +4,9 @@ description: 구성 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1712'
 ht-degree: 0%
 
 ---
@@ -30,10 +30,9 @@ ht-degree: 0%
 >
 >* 다음을 참조하십시오 [Workfront for Experience Manager Assets 강화 커넥터에 대한 파트너 인증 시험](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). 시험에 대한 자세한 내용은 [시험 안내서](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
-
 ## 이벤트 구독 구성 {#event-subscriptions}
 
-이벤트 구독은에서 발생하는 이벤트를 AEM에 알리는 데 사용됩니다. [!DNL Adobe Workfront]. 세 개 있습니다 [!DNL Workfront for Experience Manager enhanced connector] 작동하기 위해 이벤트 구독이 필요한 기능은 다음과 같습니다.
+이벤트 구독은에서 발생하는 이벤트를 AEM에 알리는 데 사용됩니다. [!DNL Adobe Workfront]. 세 개 있습니다 [!DNL Workfront for Experience Manager enhanced connector] 작업에 이벤트 구독이 필요한 기능은 다음과 같습니다.
 
 * 프로젝트 연결 폴더의 자동 생성.
 * Workfront 문서 사용자 정의 양식 값의 변경 내용을 AEM 에셋 메타데이터에 동기화.
@@ -45,7 +44,7 @@ ht-degree: 0%
 * 다음 항목 선택 [!UICONTROL Workfront 사용자 정의 통합] 섹션 6에서 을(를) 만들었습니다.
 * 클릭 [!UICONTROL Workfront 이벤트 구독 활성화].
 
-   ![이벤트 구독](/help/assets/assets/event-subs.png)
+  ![이벤트 구독](/help/assets/assets/event-subs.png)
 
 ## 연결된 폴더 구성 {#linked-folders}
 
@@ -60,11 +59,11 @@ ht-degree: 0%
 1. 클라우드 서비스의 프로젝트 연결 폴더 탭으로 이동합니다.
 1. 연결된 폴더 상위 경로: 연결된 폴더를 만들려는 DAM의 폴더를 선택합니다. 비워 두면 기본값은 /content/dam으로 설정됩니다. Workfront 도구 메타데이터 스키마 및 Workfront 연결된 폴더 메타데이터 스키마가 선택한 폴더에 적용되었는지 확인합니다.
 1. 연결된 폴더 구조: 쉼표로 구분된 값을 입력합니다. 각 값은 다음과 같아야 합니다 `DE:<some-project-custom-form-field>`, Portfolio, 프로그램, 연도, 이름 또는 일부 &quot;리터럴 문자열 값&quot;(따옴표가 있는 마지막 값). 현재 Portfolio,프로그램,연도,DE:프로젝트 유형,이름으로 설정되어 있습니다.
-1. Workfront의 폴더 제목에 구조의 모든 폴더가 포함되어야 하는 경우 폴더 구조 이름 확인란을 사용하여 Workfront에서 연결된 폴더 제목을 작성해야 합니다. 그렇지 않으면 마지막 폴더의 제목이 됩니다.
+1. Workfront의 폴더 제목에 구조의 모든 폴더가 포함되어야 하는 경우 폴더 구조 이름 확인란을 사용하여 Workfront에서 연결된 폴더 제목을 작성해야 합니다. 그렇지 않으면 마지막 폴더의 제목입니다.
 1. 하위 폴더 다중 필드를 사용하면 연결된 폴더의 하위 폴더로 만들어야 하는 폴더 목록을 지정할 수 있습니다.
 1. 프로젝트 상태: 연결된 폴더를 만들기 위해 프로젝트를 설정해야 하는 상태를 선택합니다.
-1. 포트폴리오가 있는 프로젝트에서 연결된 폴더 만들기: 연결된 폴더를 만들기 위해 프로젝트가 속해야 하는 Portfolio 목록입니다. 모든 프로젝트 포트폴리오에 대해 연결된 폴더를 만들려면 이 목록을 비워 두십시오.
-1. 사용자 정의 양식 필드가 있는 프로젝트에 연결된 폴더를 만듭니다. 사용자 정의 양식 필드 및 연결된 폴더를 만들기 위해 프로젝트에 있어야 하는 해당 값. 비워 두면 이 구성이 무시됩니다. 선택 `CUSTOM FORMS: Create DAM Linked Folder` 필드 및 입력 `Yes` 을 누릅니다.
+1. 포트폴리오가 있는 프로젝트에 연결된 폴더를 만듭니다. 연결된 폴더를 만들 수 있도록 프로젝트가 속해야 하는 Portfolio 목록입니다. 모든 프로젝트 포트폴리오에 대해 연결된 폴더를 만들려면 이 목록을 비워 두십시오.
+1. 사용자 정의 양식 필드가 있는 프로젝트에 연결된 폴더를 만듭니다. 사용자 정의 양식 필드 및 연결된 폴더를 만들 수 있도록 프로젝트에 있어야 하는 해당 값. 비워 두면 이 구성은 무시됩니다. 선택 `CUSTOM FORMS: Create DAM Linked Folder` 필드 및 입력 `Yes` 을 누릅니다.
 1. 연결된 폴더의 자동 생성 활성화를 클릭합니다. 이벤트 구독 탭으로 돌아가면 이제 이벤트 만들기가 한 개 있습니다.
 
 ![연결된 폴더 구성](/help/assets/assets/wf-linked-folder-config.png)

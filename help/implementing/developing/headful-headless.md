@@ -2,10 +2,10 @@
 title: AEM Headful 및 Headless
 description: AEM 프로젝트는 Headful 및 Headless model 모델에서 구현될 수 있지만 양자택일은 아닙니다. AEM은 하나의 프로젝트에서 두 모델의 장점을 모두 활용할 수 있는 유연성을 제공합니다.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1009'
-ht-degree: 100%
+source-wordcount: '1007'
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Headless 모델에서 콘텐츠는 AEM 저장소에서 관리되지만 REST와 G
 
 ## 웹 샵 예 {#web-shop-example}
 
-회사에 대한 기존 웹 샵이 SPA로서 존재하고 있다고 가정해 보겠습니다. 여기에 모든 제품 세부 정보와 이미지가 있습니다. 그런 다음 AEM을 소개하고 프로모션 사이트, 블로그와 캠페인 콘텐츠 등 마케팅 활동을 홍보합니다. 두 가지를 통합하려면 어떻게 합니까? AEM은 옵션 스펙트럼을 활성화합니다.
+회사에 대한 기존 웹 샵이 SPA로서 존재하고 있다고 가정해 보겠습니다. 여기에 모든 제품 세부 정보와 이미지가 있습니다. 그런 다음 AEM을 소개하여 홍보 사이트, 블로그 및 캠페인 콘텐츠와 같은 마케팅 활동을 강화합니다. 두 가지를 통합하려면 어떻게 합니까? AEM은 옵션 스펙트럼을 활성화합니다.
 
 * **시스템은 서로 독립적으로 작동할 수 있습니다.**
 * **GraphQL을 통해 AEM의 제한된 콘텐츠를 웹 샵에 제공합니다.** 콘텐츠는 작성자에 의해 AEM에서 생성할 수 있지만 웹 샵 SPA를 통해서만 볼 수 있습니다.

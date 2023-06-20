@@ -1,8 +1,8 @@
 ---
 title: 이미지 편집기
-description: 이미지 편집기는 AEM의 핵심 부분이며 구성 요소에서 활용하여 콘텐츠 작성자가 이미지를 쉽게 조작할 수 있습니다.
+description: 이미지 편집기는 AEM의 핵심 조각으로, 콘텐츠 작성자가 이미지를 쉽게 조작할 수 있도록 구성 요소에서 사용할 수 있습니다.
 exl-id: c8ae4f59-75b1-49b4-8dd4-957d2e33000b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 10%
@@ -11,7 +11,7 @@ ht-degree: 10%
 
 # 이미지 편집기 {#image-editor}
 
-이미지 편집기는 AEM의 핵심 부분이며 구성 요소에서 활용하여 콘텐츠 작성자가 이미지를 쉽게 조작할 수 있습니다.
+이미지 편집기는 AEM의 핵심 조각으로, 콘텐츠 작성자가 이미지를 쉽게 조작할 수 있도록 구성 요소에서 사용할 수 있습니다.
 
 ## 이미지 맵의 상대 단위 {#relative-units-for-image-map}
 

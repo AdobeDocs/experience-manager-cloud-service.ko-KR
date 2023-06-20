@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1562'
 ht-degree: 3%
 
 ---
@@ -65,7 +65,7 @@ A [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) 는 �
 * `parent`: 상위 폴더에 대한 링크입니다.
 * `thumbnail`: (선택 사항) 폴더 썸네일 이미지에 대한 링크입니다.
 
-### Assets {#assets}
+### 자산 {#assets}
 
 위치 [!DNL Experience Manager] 자산에는 다음 요소가 포함되어 있습니다.
 
@@ -294,4 +294,3 @@ API 호출이 실패하고 `500` 제공된 경로의 상위 노드가 없는 경
 >[!MORELIKETHIS]
 >
 >* [의 개발자 참조 문서 [!DNL Assets]](/help/assets/developer-reference-material-apis.md)
-

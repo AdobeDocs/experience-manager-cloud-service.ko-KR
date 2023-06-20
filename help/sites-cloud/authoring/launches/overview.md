@@ -2,10 +2,10 @@
 title: 론치
 description: 론치를 사용하여 향후 릴리스용 콘텐츠를 효율적으로 개발할 수 있습니다. 현재 페이지를 유지하면서 나중에 게시할 수 있도록 변경할 수 있습니다
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 65%
+source-wordcount: '906'
+ht-degree: 63%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 65%
    * The top-level source pages are known as **Production**.
       * 소스 페이지는 여러 (개별) 분기에서 가져올 수 있습니다.
 
-   ![론치 작업 순서](/help/sites-cloud/authoring/assets/launches-order.png)
+  ![론치 작업 순서](/help/sites-cloud/authoring/assets/launches-order.png)
 
 * 론치 구성을 편집합니다.
    * 론치에/에서 페이지 및/또는 분기를 추가하거나 제거합니다.
@@ -65,22 +65,22 @@ ht-degree: 65%
       * **론치**(**라이브**) **날짜** 필드: 론치를 만들거나 편집할 때 설정할 수 있습니다.
       * 다음 **프로덕션 준비** 플래그: 론치를 편집할 때만 설정할 수 있습니다.
       * **프로덕션 준비** 플래그를 설정하면 론치가 지정된 **론치**(**라이브**) **날짜**&#x200B;의 프로덕션 페이지로 자동 홍보됩니다. 홍보 이후 프로덕션 페이지는 자동으로 게시됩니다.\
-         날짜를 설정하지 않았다면 플래그가 적용되지 않습니다.
+        날짜를 설정하지 않았다면 플래그가 적용되지 않습니다.
 * 소스 페이지와 론치 페이지 동시 업데이트:
    * 소스 페이지 변경 내용은 론치 사본(상속을 통해, 즉 라이브 카피로 설정된 경우)에서 자동으로 구현됩니다.
    * 론치 사본에 대한 변경은 이 자동 업데이트 또는 소스 페이지를 중단하지 않고 수행할 수 있습니다.
 
-   ![동시 작업](/help/sites-cloud/authoring/assets/launches-parallel.png)
+  ![동시 작업](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
 * [중첩 론치 만들기](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) - 론치 내의 론치:
    * 소스가 기존 론치입니다.
    * 다음을 수행할 수 있습니다. [중첩 론치 홍보](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) 대상: 상위 론치 또는 최상위 소스 페이지(프로덕션)일 수 있습니다.
 
-   ![중첩 론치 만들기](/help/sites-cloud/authoring/assets/launches-nested.png)
+  ![중첩 론치 만들기](/help/sites-cloud/authoring/assets/launches-nested.png)
 
-   >[!CAUTION]
-   >
-   >론치를 삭제하면 론치 자체 및 모든 하위 중첩 론치가 제거됩니다.
+  >[!CAUTION]
+  >
+  >론치를 삭제하면 론치 자체 및 모든 하위 중첩 론치가 제거됩니다.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ ht-degree: 65%
 
    ![Sites 콘솔의 론치 참조](/help/sites-cloud/authoring/assets/launches-references.png)
 
-1. 적절한 론치를 탭/클릭합니다. 가능한 작업 목록이 표시됩니다.
+1. 적절한 론치를 탭/클릭하면 가능한 작업 목록이 표시됩니다.
 
    ![Sites 콘솔의 론치에 대해 수행하는 작업](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 
@@ -108,11 +108,11 @@ ht-degree: 65%
 
 * **참조** 레일의 **론치** 섹션 하단에 있는 **론치 콘솔**(Sites 콘솔에서 소스 콘텐츠 검색 시)
 
-   ![Sites 콘솔의 론치 참조에 있는 론치 콘솔](/help/sites-cloud/authoring/assets/launches-references.png)
+  ![Sites 콘솔의 론치 참조에 있는 론치 콘솔](/help/sites-cloud/authoring/assets/launches-references.png)
 
 * 오른쪽 상단의 **론치 버튼**(Sites 콘솔에서 론치 콘텐츠 검색 시):
 
-   ![Sites 콘솔의 론치 옵션](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+  ![Sites 콘솔의 론치 옵션](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
 
 * 또는 직접
-   `https://<host>:<port>/libs/launches/content/launches.html`
+  `https://<host>:<port>/libs/launches/content/launches.html`

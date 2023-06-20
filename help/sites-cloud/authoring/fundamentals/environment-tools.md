@@ -2,9 +2,9 @@
 title: 작성 환경 및 도구
 description: AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2157'
+source-wordcount: '2154'
 ht-degree: 77%
 
 ---
@@ -60,21 +60,21 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 * **모바일 디바이스(예: iPad)**
 
-   구성 요소 브라우저는 편집되는 페이지를 완전히 포함합니다.
+  구성 요소 브라우저는 편집되는 페이지를 완전히 포함합니다.
 
-   페이지에 구성 요소를 추가하려면 필요한 구성 요소를 길게 누른 상태에서 오른쪽으로 이동합니다. 구성 요소 브라우저가 닫히고 페이지가 다시 표시됩니다. 이 위치에서 구성 요소를 배치할 수 있습니다.
+  페이지에 구성 요소를 추가하려면 필요한 구성 요소를 길게 누른 상태에서 오른쪽으로 이동합니다. 구성 요소 브라우저가 닫히고 페이지가 다시 표시됩니다. 이 위치에서 구성 요소를 배치할 수 있습니다.
 
-   ![모바일의 구성 요소 브라우저](/help/sites-cloud/authoring/assets/component-browser-mobile.png)
+  ![모바일의 구성 요소 브라우저](/help/sites-cloud/authoring/assets/component-browser-mobile.png)
 
 * **데스크탑 디바이스**
 
-   창의 왼쪽에 구성 요소 브라우저가 열립니다.
+  창의 왼쪽에 구성 요소 브라우저가 열립니다.
 
-   페이지에 구성 요소를 추가하려면 필요한 구성 요소를 클릭하고 필요한 위치로 끕니다.
+  페이지에 구성 요소를 추가하려면 필요한 구성 요소를 클릭하고 필요한 위치로 끕니다.
 
-   ![데스크탑의 구성 요소 브라우저](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
+  ![데스크탑의 구성 요소 브라우저](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
 
-   구성 요소는 로 표시됩니다.
+  구성 요소는 로 표시됩니다.
 
    * 구성 요소 이름
    * 구성 요소 그룹(회색)
@@ -82,16 +82,16 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
       * 표준 구성 요소의 아이콘은 모노크롬입니다.
       * 약어는 항상 구성 요소 이름의 첫 번째 두 문자입니다.
 
-   **구성 요소** 브라우저의 맨 위 도구 모음에서 다음 작업을 수행할 수 있습니다.
+  **구성 요소** 브라우저의 맨 위 도구 모음에서 다음 작업을 수행할 수 있습니다.
 
    * 구성 요소를 이름별로 필터링합니다.
    * 드롭다운 선택을 사용하여 표시를 특정 그룹으로 제한합니다.
 
-   구성 요소에 대한 자세한 설명은 **구성 요소** 브라우저에서 구성 요소 옆에 있는 정보 아이콘을 클릭하거나 탭하여 확인할 수 있습니다(사용 가능한 경우). 예를 들어 **콘텐츠 조각**&#x200B;의 경우 다음과 같습니다.
+  구성 요소에 대한 자세한 설명은 **구성 요소** 브라우저에서 구성 요소 옆에 있는 정보 아이콘을 클릭하거나 탭하여 확인할 수 있습니다(사용 가능한 경우). 예를 들어 **콘텐츠 조각**&#x200B;의 경우 다음과 같습니다.
 
-   ![구성 요소 브라우저 정보](/help/sites-cloud/authoring/assets/component-browser-information.png)
+  ![구성 요소 브라우저 정보](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
-   사용 가능한 구성 요소에 대한 자세한 내용은 [구성 요소 콘솔](/help/sites-cloud/authoring/features/components-console.md)을 참조하십시오.
+  사용 가능한 구성 요소에 대한 자세한 내용은 [구성 요소 콘솔](/help/sites-cloud/authoring/features/components-console.md)을 참조하십시오.
 
 >[!NOTE]
 >
@@ -136,19 +136,19 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 * **모바일 디바이스**
 
-   에셋 브라우저는 편집되는 페이지를 완전히 포함합니다.
+  에셋 브라우저는 편집되는 페이지를 완전히 포함합니다.
 
-   에셋을 페이지에 추가하려면 필요한 에셋을 길게 터치하고 오른쪽으로 이동합니다. 에셋 브라우저가 닫히고 페이지가 다시 표시되어 필요한 구성 요소에 에셋을 추가할 수 있습니다.
+  에셋을 페이지에 추가하려면 필요한 에셋을 길게 터치하고 오른쪽으로 이동합니다. 에셋 브라우저가 닫히고 페이지가 다시 표시되어 필요한 구성 요소에 에셋을 추가할 수 있습니다.
 
-   ![모바일의 에셋 브라우저](/help/sites-cloud/authoring/assets/assets-browser-mobile.png)
+  ![모바일의 에셋 브라우저](/help/sites-cloud/authoring/assets/assets-browser-mobile.png)
 
 * **데스크탑 디바이스**
 
-   창의 왼쪽에 에셋 브라우저가 열립니다.
+  창의 왼쪽에 에셋 브라우저가 열립니다.
 
-   에셋을 페이지에 추가하려면 필요한 에셋을 클릭하고 필요한 구성 요소 또는 위치로 드래그합니다.
+  에셋을 페이지에 추가하려면 필요한 에셋을 클릭하고 필요한 구성 요소 또는 위치로 드래그합니다.
 
-   ![데스크탑의 에셋 브라우저](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
+  ![데스크탑의 에셋 브라우저](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
 
 >[!NOTE]
 >
@@ -182,13 +182,13 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 * 예를 들어 기본 페이지는 다음과 같습니다.
 
-   ![강조 표시된 콘텐츠 트리](/help/sites-cloud/authoring/assets/content-tree-highlighted.png)
+  ![강조 표시된 콘텐츠 트리](/help/sites-cloud/authoring/assets/content-tree-highlighted.png)
 
-   기본 페이지의 구성 요소에는 일반적인 옵션이 있습니다.
+  기본 페이지의 구성 요소에는 일반적인 옵션이 있습니다.
 
-   트리에서 클릭하는 구성 요소를 편집할 수 있는 경우 이름 오른쪽에 렌치 아이콘이 표시됩니다. 이 아이콘을 클릭하면 구성 요소에 대한 편집 대화 상자가 바로 시작됩니다.
+  트리에서 클릭하는 구성 요소를 편집할 수 있는 경우 이름 오른쪽에 렌치 아이콘이 표시됩니다. 이 아이콘을 클릭하면 구성 요소에 대한 편집 대화 상자가 바로 시작됩니다.
 
-   ![콘텐츠 트리 편집 버튼](/help/sites-cloud/authoring/assets/content-tree-edit.png)
+  ![콘텐츠 트리 편집 버튼](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
 * 다른 페이지에서 구성 요소가 상속되는 [라이브 카피](/help/sites-cloud/administering/msm/overview.md)의 일부인 페이지입니다.
 
@@ -285,7 +285,6 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 >* [키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)(`Ctrl-Shift-M`)를 사용하여 **미리보기**&#x200B;와 현재 선택한 모드(예: **편집**, **레이아웃** 등) 간에 전환합니다.
 >
 
-
 ## 경로 선택 {#path-selection}
 
 작성 시 다른 페이지 또는 리소스에 대한 링크를 정의하거나 이미지를 선택할 때와 같이 다른 리소스를 선택해야 하는 경우가 종종 있습니다. 패스를 쉽게 선택하려면 [경로 필드](#path-fields) 오퍼 자동 완성 및 [경로 브라우저](#path-browser) 를 사용하면 보다 강력한 선택이 가능합니다.
@@ -316,7 +315,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 * 언제든지 대화 상자 상단의 검색 필드를 사용할 수 있습니다. 다음을 클릭합니다. **X** 을 클릭하여 검색을 지웁니다.
 * 검색 범위를 좁히려면 필터 옵션을 표시하고 특정 경로에 따라 결과를 필터링할 수 있습니다.
 
-   ![필터 옵션](/help/sites-cloud/authoring/assets/filters-option.png)
+  ![필터 옵션](/help/sites-cloud/authoring/assets/filters-option.png)
 
 ## 키보드 단축키 {#keyboard-shortcuts}
 

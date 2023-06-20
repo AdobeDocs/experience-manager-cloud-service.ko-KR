@@ -2,9 +2,9 @@
 title: 게시 인스턴스에서 콘텐츠 전송 도구 실행
 description: 게시 인스턴스에서 콘텐츠 전송 도구 실행
 exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
-source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '252'
 ht-degree: 11%
 
 ---
@@ -28,8 +28,7 @@ CTT(컨텐츠 전송 도구)는 소스 인스턴스에서 대상 인스턴스로
 
 * 게시하기 위해 수집하는 동안 게시 계층은 작성자와 달리 축소되지 않습니다.
 
-   >[!IMPORTANT]
-   >예방 조치로 다음과 같은 사용자가 시작한 쓰기 작업을 피하십시오.
-   > * 해당 환경에서 AEM as a Cloud Service 작성자에서 게시로 콘텐츠 배포
-   > * 게시 인스턴스 간 사용자 동기화
-
+  >[!IMPORTANT]
+  >예방 조치로 다음과 같은 사용자가 시작한 쓰기 작업을 피하십시오.
+  > * 해당 환경에서 AEM as a Cloud Service 작성자에서 게시로 콘텐츠 배포
+  > * 게시 인스턴스 간 사용자 동기화

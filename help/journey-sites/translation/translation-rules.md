@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 100%
+source-wordcount: '789'
+ht-degree: 98%
 
 ---
 
@@ -67,7 +67,7 @@ AEM은 모든 콘텐츠에 대한 번역 규칙을 자동으로 생성합니다.
 
    ![번역 규칙 편집기](assets/translation-rules-editor.png)
 
-1. 번역할 페이지 속성은 목록의 **일반** 섹션 아래에 위치합니다. 번역에 명시적으로 포함하고자 하는 기존 속성 이름을 추가하거나 업데이트할 수 있습니다.
+1. 번역되는 페이지 속성은 **일반** 목록의 섹션입니다. 번역에 명시적으로 포함하고자 하는 기존 속성 이름을 추가하거나 업데이트할 수 있습니다.
    1. **새 속성** 필드에 속성 이름을 입력합니다.
    1. **번역** 및 **상속** 옵션은 자동으로 선택되어 있습니다.
    1. **추가**&#x200B;를 탭하거나 클릭합니다.

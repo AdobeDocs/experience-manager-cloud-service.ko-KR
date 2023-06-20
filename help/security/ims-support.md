@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service에 대한 IMS 지원
 description: Adobe Experience Manager as a Cloud Service에 대한 IMS 지원
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 1e3130578b7e36e5ffd5ad7b04cc7981a95bb291
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2054'
-ht-degree: 100%
+source-wordcount: '2035'
+ht-degree: 80%
 
 ---
 
@@ -31,14 +31,14 @@ AEM as a Cloud Service에서는 작성자, 관리자 및 개발자 사용자에 
 
 * Admin Console은 고객을 IMS 조직으로, 환경에 있는 작성 및 게시 인스턴스를 제품 컨텍스트 인스턴스로 표시합니다. 이렇게 하면 시스템 및 제품 관리자가 인스턴스에 대한 액세스를 관리할 수 있습니다.
 * Admin Console의 제품 프로필이 사용자가 액세스할 수 있는 인스턴스를 결정합니다.
-* 고객은 SSO(Single Sign-On)에 대해 자체 SAML 2 호환 ID 공급자(IDP)를 사용할 수 있습니다.
-* 고객 SSO(Single Sign-On)에 대한 Enterprise ID 또는 Federated ID만 지원되며 개인 Adobe ID는 지원되지 않습니다.
+* 고객은 단일 사인온에 대해 자체 SAML 2 호환 ID 공급자(IDP)를 사용할 수 있습니다.
+* 고객 단일 사인온에 대한 Enterprise ID 또는 Federated ID만 지원되며 개인 Adobe ID는 지원되지 않습니다.
 
 ## 아키텍처 {#architecture}
 
 IMS 인증은 AEM과 Adobe IMS 엔드포인트 간 OAuth 프로토콜을 사용하여 작동합니다. 사용자가 IMS에 추가되고 Adobe ID가 있으면 IMS 자격 증명을 사용하여 AEM 작성자 서비스 인스턴스에 로그인할 수 있습니다.
 
-사용자 로그인 흐름은 아래에 표시되어 있고, 사용자는 IMS로 리디렉션되고, 원할 경우 SSO용 고객 IDP로 리디렉션된 다음 AEM으로 다시 리디렉션됩니다.
+사용자 로그온 흐름은 아래에 표시되어 있고, 사용자는 IMS로 리디렉션되고, 원할 경우 SSO용 고객 IDP로 리디렉션된 다음 AEM으로 다시 리디렉션됩니다.
 
 ![IMS 아키텍처](/help/security/assets/ims1.png)
 
@@ -50,7 +50,7 @@ Adobe Admin Console에 대한 고객 온보딩은 AEM 인증에 Adobe IMS를 사
 
 첫 번째 단계로, 고객은 Adobe IMS에서 조직이 프로비저닝되어 있어야 합니다. Adobe Enterprise 고객은 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)에서 IMS 조직으로 표시됩니다. 이는 Adobe 고객이 사용자 및 그룹에 대한 제품 권한을 관리하는 데 사용하는 포털입니다.
 
-AEM 고객은 이미 조직이 프로비저닝되어 있어야 하며 IMS 프로비저닝의 일부로서 고객 인스턴스는 사용자 권한 및 액세스를 관리하기 위해 Admin Console에서 사용할 수 있게 됩니다.
+AEM 고객은 이미 조직이 프로비저닝되어 있어야 하며 IMS 프로비저닝의 일부로서, 고객 인스턴스는 사용자 권한 및 액세스를 관리하기 위해 Admin Console에서 사용할 수 있게 됩니다.
 
 고객이 IMS 조직으로 존재하면 아래 요약된 대로 시스템을 구성해야 합니다.
 
@@ -59,7 +59,7 @@ AEM 고객은 이미 조직이 프로비저닝되어 있어야 하며 IMS 프로
 1. 지정된 시스템 관리자는 Cloud Manager에 로그인하라는 초대를 받습니다. Cloud Manager에 로그인한 후 시스템 관리자는 AEM 프로그램 및 환경을 프로비저닝하거나 관리 작업을 위해 Admin Console로 이동하는 것을 선택할 수 있습니다.
 1. 시스템 관리자는 도메인을 요청하여 해당 도메인의 소유권을 확인합니다(예: acme.com).
 1. 시스템 관리자가 사용자 디렉터리를 설정합니다.
-1. 시스템 관리자는 SSO(Single Sign-On)를 설정하기 위해 Admin Console에서 IDP 구성을 수행합니다.
+1. 시스템 관리자는 Admin Console에서 IDP 구성을 수행하여 단일 사인온을 설정합니다.
 1. AEM 관리자는 평소대로 로컬 그룹 및 권한을 관리합니다.
 
 IDP 구성을 비롯한 Adobe Identity Management 기본 사항은 [여기에서](https://helpx.adobe.com/kr/enterprise/using/set-up-identity.html) 다룹니다.
@@ -84,9 +84,9 @@ IDP 구성을 비롯한 Adobe Identity Management 기본 사항은 [여기에서
 
 **사용자 동기화 도구**
 
-UST(사용자 동기화 도구)를 사용하면 기업 고객은 Active Directory를 활용하여 Adobe 사용자를 만들고 관리할 수 있습니다. 이는 다른 테스트된 OpenLDAP 디렉터리 서비스에도 적용됩니다. 타겟 사용자는 도구를 설치 및 구성할 수 있는 IT ID 관리자(Enterprise Directory 또는 시스템 관리자)입니다. 오픈소스 도구는 고객이 특정 요구 사항에 맞게 수정할 수 있도록 사용자 정의할 수 있습니다.
+UST(사용자 동기화 도구)를 사용하면 기업 고객은 Active Directory를 활용하여 Adobe 사용자를 만들고 관리할 수 있습니다. 이는 다른 테스트된 OpenLDAP 디렉터리 서비스에도 적용됩니다. 대상 사용자는 도구를 설치 및 구성할 수 있는 IT ID 관리자(Enterprise Directory 또는 시스템 관리자)입니다. 오픈소스 도구는 고객이 특정 요구 사항에 맞게 수정할 수 있도록 사용자 정의할 수 있습니다.
 
-사용자 동기화가 실행되면 이 기능은 조직의 Active Directory의 사용자 목록을 가져와서 Admin Console 내의 사용자 목록과 비교합니다. 그런 다음 Adobe User Management API를 호출하여 Admin Console이 조직의 디렉터리와 동기화되도록 합니다. 변화 흐름은 완전히 한 가지 방향입니다. Admin Console에서 편집한 내용은 디렉터리에 푸시되지 않습니다.
+User Sync가 실행되면 조직의 Active Directory에서 사용자 목록을 가져와서 Admin Console 내 사용자 목록과 비교합니다.  그런 다음 Adobe 사용자 관리 API를 호출하여 Admin Console이 조직의 디렉터리와 동기화되도록 합니다. 변화 흐름은 완전히 한 가지 방향입니다. Admin Console에서 편집한 내용은 디렉터리에 푸시되지 않습니다.
 
 시스템 관리자는 이 도구를 사용하여 고객 디렉터리에 있는 사용자 그룹을 Admin Console의 제품 구성 및 사용자 그룹과 매핑할 수 있습니다.
 
@@ -120,7 +120,7 @@ Adobe I/O 콘솔 설명서는 [여기에서](https://www.adobe.io/apis/cloudplat
 >
 >필요한 AEM IMS 구성은 AEM 환경 및 인스턴스가 프로비저닝될 때 자동으로 구성됩니다. 그러나 관리자는 [여기에서](/help/implementing/deploying/overview.md) 설명하는 방법을 사용하여 필요한 대로 수정할 수 있습니다.
 
-필요한 AEM IMS 구성은 AEM 환경 및 인스턴스가 프로비저닝될 때 자동으로 구성됩니다. 고객 관리자는 요구 사항에 따라 구성 일부를 수정할 수 있습니다.
+필요한 AEM IMS 구성은 AEM 환경 및 인스턴스가 프로비저닝될 때 자동으로 구성됩니다.  고객 관리자는 요구 사항에 따라 구성 일부를 수정할 수 있습니다.
 
 전반적인 접근 방식은 Adobe IMS를 OAuth 공급자로 구성하는 것입니다. **Apache Jackrabbit Oak Default Sync Handler**&#x200B;는 LDAP 동기화의 경우처럼 수정할 수 있습니다.
 
@@ -140,11 +140,11 @@ Adobe I/O 콘솔 설명서는 [여기에서](https://www.adobe.io/apis/cloudplat
 
 ![인스턴스 로그인2](/help/security/assets/ims7.png)
 
-각 제품 컨텍스트 인스턴스에는 프로덕션, 스테이지 또는 개발 환경 등을 포함하여 작성자 또는 게시 서비스에 걸친 인스턴스가 있습니다. 각 인스턴스는 제품 프로필 또는 Cloud Manager 역할과 연계됩니다. 이러한 제품 프로필은 필요한 권한을 갖춘 사용자 및 그룹에게 액세스를 할당하는 데 사용됩니다.
+각 제품 컨텍스트 인스턴스에는 프로덕션, 스테이지 또는 개발 환경 전반의 작성자 또는 게시 서비스에 걸친 인스턴스가 있습니다. 각 인스턴스는 제품 프로필 또는 Cloud Manager 역할과 관련되어 있습니다. 이러한 제품 프로필은 필요한 권한을 갖춘 사용자 및 그룹에게 액세스를 할당하는 데 사용됩니다.
 
-**AEM Administrator_xxx** 프로필은 연결된 AEM 인스턴스에서 관리자 권한을 부여하는 데 사용되고 **AEM User_xxx** 프로필은 일반 사용자를 추가하는 데 사용됩니다.
+다음 **AEM Administrators_xxx** 프로필은 연결된 AEM 인스턴스에서 관리자 권한을 부여하는 데 사용됩니다. **AEM Users_xxx** 프로필은 일반 사용자를 추가하는 데 사용됩니다.
 
-이 제품 프로필로 추가된 모든 사용자와 그룹은 아래 예와 같이 해당 특정 인스턴스에 로그인할 수 있습니다.
+이 제품 프로필에 추가된 모든 사용자 및 그룹은 아래 예와 같이 특정 인스턴스에 로그온할 수 있습니다.
 
 ![제품 프로필](/help/security/assets/ims8.png)
 
@@ -241,7 +241,7 @@ Cloud Manager의 특정 기능의 가용성을 제어하는 사용자 역할에 
 >[!IMPORTANT]
 >AEM as a Cloud Service로 인스턴스에 대한 액세스 권한을 부여하기 전에 위의 섹션에 언급된 단계가 이미 완료되었어야 합니다.
 
-**관리 콘솔** 내에서 AEM 인스턴스에 액세스하려면 **Admin Console**&#x200B;의 제품 목록에 있는 프로그램 내에 Cloud Manager 프로그램 및 환경이 표시되어야 합니다.
+내에서 AEM 인스턴스에 액세스하려면 **Admin Console**, 의 제품 목록에 Cloud Manager 프로그램 및 프로그램 내 환경이 표시되어야 합니다. **Admin Console**.
 
 예를 들어 아래 스크린샷에는 *개발 작성자*&#x200B;와 *게시*&#x200B;라는 두 가지 사용 가능한 환경이 표시됩니다.
 

@@ -2,7 +2,7 @@
 title: 적응형 양식 템플릿을 만드는 방법
 description: 템플릿 편집기를 사용하여 기본 구조와 초기 콘텐츠를 정의하는 적응형 양식 템플릿을 만드십시오.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: c101ed97388b06dc71edfc9e13fac8a3e889c249
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '2017'
 ht-degree: 1%
@@ -48,7 +48,7 @@ Experience Manager은 템플릿을 구성할 수 있는 전역 폴더를 제공�
 
    * **사이드 패널 전환**: 사이드바를 표시하거나 숨길 수 있습니다.
    * **페이지 정보**: 게시/게시 취소 시간, 썸네일, 클라이언트측 라이브러리, 페이지 정책 및 페이지 디자인 클라이언트측 라이브러리와 같은 정보를 지정할 수 있습니다.
-      <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
+     <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
    * **모드 선택기:** 모드를 변경할 수 있습니다.다음을 선택할 수 있습니다 **[!UICONTROL 구조]** 모드, **[!UICONTROL 초기 컨텐츠]**, **[!UICONTROL 레이아웃 제어]** 모드. 구조 모드에서는 머리글과 바닥글을 추가하고 사용자 정의할 수 있습니다. 초기 컨텐츠 모드에서는 양식 컨텐츠를 사용자 정의할 수 있습니다.
    * **미리 보기:** 템플릿을 게시할 때 템플릿이 어떻게 표시되는지 미리 볼 수 있습니다. [레이어 선택기] 및 [미리 보기]를 사용하여 편집 모드와 미리 보기 모드를 전환할 수 있습니다.
 * **사이드바:** 콘텐츠, 속성, 에셋 및 구성 요소 브라우저를 제공합니다.
@@ -156,7 +156,6 @@ Experience Manager은 템플릿을 구성할 수 있는 전역 폴더를 제공�
 > * 다음을 구성할 수도 있습니다 [!UICONTROL 기록 문서] 적응형 양식 편집기 또는 적응형 양식 템플릿 편집기에서 바로 템플릿을 사용할 수 있습니다. 자세한 내용은 [적응형 Forms을 위한 기록 문서 생성](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
 
-
 ## 양식 데이터 모델 스키마를 템플릿에 연결 {#associating-form-data-model-schema-in-template}
 
 작성자가 [!UICONTROL 양식 데이터 모델 스키마] 템플릿 편집기의 적응형 양식 템플릿을 참조하십시오. 이를 통해 작성자는 템플릿 편집기에서 스키마를 선택할 수 있습니다. 스키마를 템플릿에 연결하면 양식 작성자가 템플릿을 기반으로 양식을 만들 때 양식에 대해 스키마가 미리 선택됩니다. 양식 작성자가 스키마 사용을 규제하고 양식 작성자의 시간도 절약할 수 있습니다. 템플릿 편집기에서 양식 데이터 모델 스키마를 선택하려면 다음을 수행하십시오.
@@ -191,7 +190,7 @@ Perform the following steps to show and hide templates:
 1. Locate and open the **FormsManager Configuration** settings:
 
     * To show or hide out of the box Adaptive Forms template, check or uncheck the **Include Out of the box AF and AD Templates** option.
-    * To show or hide out of the box Adaptive Form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates** option. If this option is checked, in order to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
+    * To show or hide out of the box Adaptive Form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates** option. If this option is checked, and you want it to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
 
 1. Click **Save**. The display options for the out of the box templates are changed. -->
 

@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 100%
+source-wordcount: '931'
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ AEM의 강력한 번역 도구를 사용하여 AEM Sites 콘텐츠 번역을 통
 
 ## 소개 {#introduction}
 
-AEM Sites는 디지털 환경 제작 및 관리를 위한 강력한 도구 세트입니다. 콘텐츠 작성자는 사이트 편집기를 사용하여 디지털 환경을 손쉽게 제작하고 Sites 콘솔을 사용하여 콘텐츠를 구성할 수 있으며, 모든 콘텐츠가 AEM을 통해 서로 다른 채널의 대상자에게 전달되므로 콘텐츠를 라이브로 확인할 수 있습니다.
+AEM Sites는 디지털 환경 제작 및 관리를 위한 강력한 도구 세트입니다. 콘텐츠 작성자는 사이트 편집기를 사용하여 디지털 환경을 손쉽게 제작하고 사이트 콘솔을 사용하여 콘텐츠를 구성할 수 있으며, 모든 콘텐츠가 AEM을 통해 여러 채널의 대상자에게 전달되므로 콘텐츠를 라이브로 확인할 수 있습니다.
 
 AEM은 콘텐츠 번역을 위한 강력한 도구를 제공하므로 다른 지역 또는 로케일의 대상자에게 번역된 콘텐츠를 최대한 신속하게 전달할 수 있습니다. 이 설명서 여정에서는 AEM에서 콘텐츠를 만들고 관리하는 방법을 이해할 수 있는 작성 도구를 소개하고 나만의 번역 프로젝트를 관리하기 위해 알아야 할 사항을 안내합니다.
 
@@ -75,6 +75,6 @@ AEM의 강력한 기능들이 함께 작동하는 방법에 대한 자세한 내
 
 * [Headless 작성 여정](/help/journey-headless/author/overview.md) - AEM의 강력하고 유연한 Headless 기능과 각각의 능력, 그리고 사용자의 첫 Headless 프로젝트에서 콘텐츠를 모델링하는 방법에 대한 가이드 여정을 시작해 보십시오.
 * [Headless 설계자 여정](/help/journey-headless/architect/overview.md) - 여기에서 Adobe Experience Manager as a Cloud Service의 강력하고 유연한 Headless 기능을 접해 보고 프로젝트 콘텐츠를 모델링하는 방법을 알아보십시오.
-* [AEM Headless 개발자 여정](/help/journey-headless/developer/overview.md) - 여기에서 AEM의 강력하고 유연한 Headless 기능과 각각의 능력, 그리고 사용자의 첫 개발 프로젝트에서 이들 기능을 활용하는 방법에 대한 가이드 여정을 시작해 보십시오.
+* [AEM Headless 개발자 여정](/help/journey-headless/developer/overview.md) - 여기에서 AEM의 강력하고 유연한 Headless 기능과 각각의 능력, 그리고 귀하의 첫 개발 프로젝트에서 이들 기능을 사용하는 방법에 대한 가이드 여정을 시작해 보십시오.
 * [AEM as a Cloud Service 기술 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - AEM 및 Headless 기술에 대해 확실히 이해하고 있다면 바로 심화 기술 문서를 참조할 수 있습니다.
 * [AEM Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 직접 해보면서 배우는 것을 선호하고 기술 관련 소양을 갖추고 있다면 API 및 프레임워크로 구성된 실습형 튜토리얼을 사용하여 AEM Headless에 구축된 애플리케이션을 만들고 사용해 보십시오.

@@ -2,9 +2,9 @@
 title: 경험 조각 개요
 description: Adobe Experience Manager as a Cloud Service 경험 조각을 확장합니다.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 5968554ec221b1fe9969b131ccf0b08ffb7f6494
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '1648'
 ht-degree: 1%
 
 ---
@@ -85,8 +85,7 @@ HTML 렌디션은 Sling 재작성기 파이프라인을 사용하여 생성됩�
 
    1. 그리고 템플릿 이름은 다음으로 시작해야 합니다.
       `experience-fragments`
-이를 통해 사용자는 /content/experience-fragments에서 경험 조각을 로 만들 수 있습니다. 
-`cq:allowedTemplates` 이 폴더의 속성에는 다음으로 시작하는 이름이 있는 모든 템플릿이 포함됩니다. `experience-fragment`. 고객은 이 속성을 업데이트하여 자체 명명 구성표 또는 템플릿 위치를 포함할 수 있습니다.
+이를 통해 사용자는 /content/experience-fragments에서 경험 조각을 로 만들 수 있습니다. `cq:allowedTemplates` 이 폴더의 속성에는 다음으로 시작하는 이름이 있는 모든 템플릿이 포함됩니다. `experience-fragment`. 고객은 이 속성을 업데이트하여 자체 명명 구성표 또는 템플릿 위치를 포함할 수 있습니다.
 
 1. [허용된 템플릿](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) 경험 조각 콘솔에서 구성할 수 있습니다.
 
@@ -160,7 +159,7 @@ HTML 페이지를 생성한 후 Sling 재작성기 파이프라인이 출력을 
    >
    >대부분의 경우 HTML의 내부 링크는 상대 링크이지만 사용자 지정 구성 요소가 HTML에 전체 URL을 제공하는 경우가 있을 수 있습니다. 기본적으로 AEM은 이러한 완전한 URL을 무시하고 수정하지 않습니다.
 
-   이러한 속성의 링크는 AEM 링크 외부화를 통해 실행됩니다 `publishLink()` 게시된 인스턴스에 있는 것처럼 URL을 다시 만들기 위해 공개적으로 사용할 수 있습니다.
+   이러한 속성의 링크는 AEM 링크 외부화를 통해 실행됩니다 `publishLink()` 게시된 인스턴스에 있는 것처럼 URL을 다시 만들고 공개적으로 사용할 수 있도록 합니다.
 
 기본 구현을 사용하는 경우 위에 설명된 프로세스로 경험 조각에서 Target 오퍼를 생성한 다음 Adobe Target으로 내보내기에 충분해야 합니다. 그러나 이 프로세스에서 설명되지 않는 사용 사례는 다음과 같습니다.
 
@@ -201,7 +200,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 인터페이스를 사용하려면 먼저 링크 재작성기 공급자 인터페이스를 구현하는 새 서비스 구성 요소가 포함된 번들을 만들어야 합니다.
 
-이 서비스는 다양한 링크에 액세스할 수 있도록 경험 조각 내보내기를 Target 재작성으로 연결하는 데 사용됩니다.
+이 서비스는 다양한 링크에 액세스할 수 있도록 경험 조각 내보내기를 Target 재작성에 연결하는 데 사용됩니다.
 
 예, `ComponentService`:
 
@@ -266,7 +265,7 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 * `href` 속성만
 
 * 특정 경험 조각:
-   `/content/experience-fragment/master`
+  `/content/experience-fragment/master`
 
 Target으로 내보내기 시스템을 통과한 다른 경험 조각은 무시되며 이 서비스에서 구현한 변경 사항의 영향을 받지 않습니다.
 
@@ -279,8 +278,7 @@ Target으로 내보내기 시스템을 통과한 다른 경험 조각은 무시�
 이 메서드는 를 입력할 때 매개 변수를 수신합니다.
 
 * `link`
-다음 
-`String` 현재 처리 중인 링크의 표현입니다. 일반적으로 작성자 인스턴스의 리소스를 가리키는 상대 URL입니다.
+다음 `String` 현재 처리 중인 링크의 표현입니다. 일반적으로 작성자 인스턴스의 리소스를 가리키는 상대 URL입니다.
 
 * `tag`
 현재 처리 중인 HTML 요소의 이름입니다.

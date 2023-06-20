@@ -1,11 +1,11 @@
 ---
 title: AEM 버전 업데이트
-description: AEM에서 최신 버전에서 프로젝트를 유지하기 위해 as a Cloud Service에서 CI/CD(지속적 통합 및 제공)를 사용하는 방법에 대해 알아봅니다.
+description: AEM에서 as a Cloud Service으로 CI/CD(지속적 통합 및 배포)를 사용하여 프로젝트를 최신 버전으로 유지하는 방법을 알아봅니다.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: dd1560aa4d260320f565ad993a8b3650c3ee5288
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '479'
 ht-degree: 23%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 23%
 
 # AEM 버전 업데이트 {#aem-version-updates}
 
-AEM에서 최신 버전에서 프로젝트를 유지하기 위해 as a Cloud Service에서 CI/CD(지속적 통합 및 제공)를 사용하는 방법에 대해 알아봅니다.
+AEM에서 as a Cloud Service으로 CI/CD(지속적 통합 및 배포)를 사용하여 프로젝트를 최신 버전으로 유지하는 방법을 알아봅니다.
 
 ## CI/CD {#ci-cd}
 

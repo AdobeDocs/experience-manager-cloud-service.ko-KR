@@ -4,10 +4,10 @@ description: 액션 센터를 활용하여 인시던트 및 기타 중요한 정
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 9302220536e7a541d44d96626c65de94ee5d64c3
-workflow-type: ht
-source-wordcount: '705'
-ht-degree: 100%
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+workflow-type: tm+mt
+source-wordcount: '703'
+ht-degree: 94%
 
 ---
 
@@ -46,7 +46,7 @@ AEM as Cloud Service는 최적화에 즉각적인 조치와 사전 알림 추천
 
 사용자는 **자세히 알아보기** 링크를 클릭하여 이 문서로 이동합니다. 아래에서 [지원되는 알림 유형 표](#supported-notification-types)와 같이 알림 유형을 참조할 수 있으며, 이 표는 어떤 조치를 취해야 하는지 지침을 제공합니다.
 
-액션 센터에서 다른 최근 알림 목록을 볼 수 있습니다. 조직이 작업을 인식하고 있음을 Adobe에 알리고, 나중에 수정 조치가 취해졌을 때 알림을 해결하기 위해 작업 목록을 사용하여 알림을 확인하는 것이 좋습니다.
+액션 센터에서 다른 최근 알림 목록을 볼 수 있습니다. [작업] 목록을 사용하면 조직에서 작업을 인식하고 있음을 Adobe에게 알리는 알림을 확인하고 나중에 해결 조치가 취해진 경우 알림을 해결하는 것이 좋습니다.
 
 ![알림 목록](/help/operations/assets/notification-list.png)
 

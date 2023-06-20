@@ -2,9 +2,9 @@
 title: 받은 편지함용 검색 필터를 구성하는 방법
 description: 받은 편지함 항목에 대한 검색 필터를 구성하는 방법을 알아봅니다.
 exl-id: 0e82d7ad-7a82-4d67-8eb8-9af6936652d8
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '1000'
 ht-degree: 1%
 
 ---

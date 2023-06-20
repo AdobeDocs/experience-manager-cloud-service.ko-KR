@@ -2,9 +2,9 @@
 title: Adobe 컨텐츠 패키지 Maven 플러그인
 description: Content Package Maven 플러그인을 사용하여 AEM 애플리케이션 배포
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: ba4e2427873fc9f5d91ee4f520df01018000a4c7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1847'
 ht-degree: 6%
 
 ---
@@ -29,14 +29,13 @@ Adobe Content Package Maven 플러그인을 사용하여 패키지 배포 및 �
 >* 다음 `content-package-maven-plugin` 는 더 이상 릴리스 1.0.2의 패키징을 지원하지 않습니다.
 >* 이 문서에서는 **배포** AEM에 대해 구성된 패키지 중 은 Adobe Content Package Maven 플러그인에 의해 수행됩니다.
 
-
 ## 패키지 및 AEM 프로젝트 구조 {#aem-project-structure}
 
 AEM은 최신 AEM Project Archetype으로 구현된 패키지 관리 및 프로젝트 구조에 대한 최신 모범 사례를 as a Cloud Service으로 준수합니다.
 
 >[!TIP]
 >
->자세한 내용은 [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEM as a Cloud Service 설명서의 문서와 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 설명서를 참조하십시오. 둘 다 AEM 6.5에 대해 완전히 지원됩니다.
+>자세한 내용은 [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEM as a Cloud Service 설명서의 문서와 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko-KR) 설명서를 참조하십시오. 둘 다 AEM 6.5에 대해 완전히 지원됩니다.
 
 ## 콘텐츠 패키지 Maven 플러그인 가져오기 {#obtaining-the-content-package-maven-plugin}
 
@@ -182,7 +181,7 @@ rm 목표의 모든 매개변수는 [일반 매개 변수](#common-parameters) �
 | `prefix` | `java.lang.String` | 아니요 | 없음 |  |
 | `project` | `org.apache.maven.project.MavenProject` | 예 | 없음 | Maven 프로젝트 |
 | `properties` | `java.util.Map` | 아니요 | 없음 | 이러한 매개 변수는 다음에서 설정할 수 있는 추가 속성을 정의합니다 `properties.xml` 파일. 이러한 속성은 다음과 같은 사전 정의된 속성을 덮어쓸 수 없습니다. `group` (사용 `group` 설정할 매개 변수), `name` (사용 `name` 설정할 매개 변수), `version` (사용 `version` 설정할 매개 변수), `description` (프로젝트 설명에서 설정됨), `groupId` (`groupId` Maven 프로젝트 설명자), `artifactId` (`artifactId` Maven 프로젝트 설명자), `dependencies` (사용 `dependencies` 설정할 매개 변수), `createdBy` (값: `user.name` 시스템 속성), `created` (현재 시스템 시간), `requiresRoot` (사용 `requiresRoot` 설정할 매개 변수), `packagePath` (그룹 및 패키지 이름에서 자동으로 생성됨) |
-| `requiresRoot` | `boolean` | 예 | false | 패키지에 루트가 필요한지 여부를 정의합니다. 이 경우 다음이 됩니다. `requiresRoot` 의 속성 `properties.xml` 파일. |
+| `requiresRoot` | `boolean` | 예 | false | 패키지에 루트가 필요한지 여부를 정의합니다. 이(가) `requiresRoot` 의 속성 `properties.xml` 파일. |
 | `subPackages` | `java.util.List` | 아니요 | 없음 |  |
 | `version` | `java.lang.String` | 예 | Maven 프로젝트에 정의된 버전 | 콘텐츠 패키지의 버전 |
 | `workDirectory` | `java.io.File` | 예 | Maven 프로젝트에 정의된 디렉터리(빌드 단계) | 패키지에 포함할 콘텐츠가 포함된 디렉토리 |
@@ -268,4 +267,4 @@ rm 목표의 모든 매개변수는 [일반 매개 변수](#common-parameters) �
 
 >[!TIP]
 >
->자세한 내용은 [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEM as a Cloud Service 설명서의 문서와 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 설명서를 참조하십시오. 둘 다 AEM 6.5에 대해 완전히 지원됩니다.
+>자세한 내용은 [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEM as a Cloud Service 설명서의 문서와 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko-KR) 설명서를 참조하십시오. 둘 다 AEM 6.5에 대해 완전히 지원됩니다.

@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service에서의 유지 관리 작업
 description: AEM as a Cloud Service에서의 유지 관리 작업
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: d4d1e97df58f8bd0951f0d5b0bf46e118b163457
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 65%
+source-wordcount: '1105'
+ht-degree: 60%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 65%
 
 >[!CAUTION]
 >
->Adobe는 성능 저하 등의 문제를 완화하기 위해 고객의 유지 관리 작업 구성 설정을 오버라이드할 수 있는 권한을 보유합니다.
+>Adobe은 성능 저하와 같은 문제를 완화하기 위해 고객의 유지 관리 작업 구성 설정을 재정의할 권한을 보유합니다.
 
 다음 표는 AEM as a Cloud Service 릴리스 당시 이용 가능한 유지 관리 작업을 설명합니다.
 

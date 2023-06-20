@@ -2,9 +2,9 @@
 title: AEM 프로젝트 구조
 description: Adobe Experience Manager Cloud Service에 배포할 패키지 구조를 정의하는 방법에 대해 알아봅니다.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2931'
+source-wordcount: '2927'
 ht-degree: 12%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 12%
 
 >[!TIP]
 >
->기본 사항 숙지 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)및 [FileVault Content Maven 플러그인](/help/implementing/developing/tools/maven-plugin.md) 이 문서는 이러한 학습과 개념을 기반으로 합니다.
+>기본 사항 숙지 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko-KR)및 [FileVault Content Maven 플러그인](/help/implementing/developing/tools/maven-plugin.md) 이 문서는 이러한 학습과 개념을 기반으로 합니다.
 
 이 문서에서는 변경 가능한 컨텐츠와 변경할 수 없는 컨텐츠 분리를 사용하여 Adobe Experience Manager AEM Maven 프로젝트에 필요한 변경 사항을 as a Cloud Service으로 호환되도록 설명하고, 상충되는 배포가 없도록 종속성을 설정하고, 배포 가능한 구조로 패키지되어 있다는 점을 설명합니다.
 
@@ -74,7 +74,7 @@ Oak 색인(`/oak:index`)는 특히 AEM as a Cloud Service 배포 프로세스에
 
 >[!NOTE]
 >
->모든 환경에 동일한 코드를 배포해야 합니다. 이는 스테이징 환경에서 신뢰도 검증이 프로덕션에 포함될 수 있도록 하기 위해 필요합니다. 자세한 내용은 다음 섹션 을 참조하십시오 [실행 모드](/help/implementing/deploying/overview.md#runmodes).
+>모든 환경에 동일한 코드를 배포해야 합니다. 이 코드는 스테이징 환경에서 신뢰도 유효성 검사 수준도 프로덕션에 있는지 확인하는 데 필요합니다. 자세한 내용은 다음 섹션 을 참조하십시오 [실행 모드](/help/implementing/deploying/overview.md#runmodes).
 
 
 ### 컨텐츠 패키지
@@ -93,11 +93,11 @@ Oak 색인(`/oak:index`)는 특히 AEM as a Cloud Service 배포 프로세스에
 
 + 다음 `all` 패키지는 배포 가능한 아티팩트, OSGI 번들 Jar 파일, `ui.apps`, `ui.config` 및 `ui.content` embed로 패키지 다음 `all` 패키지에는 다음이 없어야 합니다. **모든 콘텐츠 또는 코드** 모든 배포를 하위 패키지 또는 OSGi 번들 Jar 파일로 리포지토리에 위임합니다.
 
-   이제 Maven을 사용하여 패키지가 포함됩니다 [FileVault 패키지 Maven 플러그인의 임베디드 구성](#embeddeds), 대신 `<subPackages>` 구성.
+  이제 Maven을 사용하여 패키지가 포함됩니다 [FileVault 패키지 Maven 플러그인의 임베디드 구성](#embeddeds), 대신 `<subPackages>` 구성.
 
-   복잡한 Experience Manager 배포의 경우 여러 개를 만드는 것이 바람직할 수 있습니다 `ui.apps`, `ui.config` 및 `ui.content` AEM의 특정 사이트 또는 테넌트를 나타내는 프로젝트/패키지 이 작업을 수행하는 경우 변경할 수 있는 콘텐츠와 변경할 수 없는 콘텐츠 간의 분할이 준수되는지 확인하고 필수 콘텐츠 패키지와 OSGi 번들 Jar 파일이 의 하위 패키지로 임베드되는지 확인하십시오. `all` 컨테이너 컨텐츠 패키지.
+  복잡한 Experience Manager 배포의 경우 여러 개를 만드는 것이 바람직할 수 있습니다 `ui.apps`, `ui.config` 및 `ui.content` AEM의 특정 사이트 또는 테넌트를 나타내는 프로젝트/패키지 이 작업을 수행하는 경우 변경할 수 있는 콘텐츠와 변경할 수 없는 콘텐츠 간의 분할이 준수되는지 확인하고 필수 콘텐츠 패키지와 OSGi 번들 Jar 파일이 의 하위 패키지로 임베드되는지 확인하십시오. `all` 컨테이너 컨텐츠 패키지.
 
-   예를 들어 복잡한 배포 콘텐츠 패키지 구조는 다음과 같을 수 있습니다.
+  예를 들어 복잡한 배포 콘텐츠 패키지 구조는 다음과 같을 수 있습니다.
 
    + `all` 콘텐츠 패키지는 단일 배포 아티팩트를 만들기 위해 다음 패키지를 임베드합니다
       + `common.ui.apps` 에 필요한 코드 배포 **모두** 사이트 A 및 사이트 B
@@ -231,12 +231,12 @@ AEM 작성자, AEM 게시 또는 둘 다를 타깃팅하기 위해 패키지는 
    + `/apps/my-other-app-packages`
    + `/apps/vendor-packages`
 
-   >[!WARNING]
-   >
-   >By convention, sub-package embedded folders are named with the suffix of `-packages`. This ensures that the deployment code and content packages are **not** deployed the target folder(s) of any sub-package `/apps/<app-name>/...`  which results in destructive and cyclic installation behavior.
+  >[!WARNING]
+  >
+  >By convention, sub-package embedded folders are named with the suffix of `-packages`. This ensures that the deployment code and content packages are **not** deployed the target folder(s) of any sub-package `/apps/<app-name>/...`  which results in destructive and cyclic installation behavior.
 
 + 세 번째 수준 폴더는 다음 중 하나여야 합니다
-   `application`, `content` 또는 `container`
+  `application`, `content` 또는 `container`
    + 다음 `application` 폴더에 코드 패키지가 있음
    + 다음 `content` 폴더에 컨텐츠 패키지가 보관됨
    + 다음 `container` 폴더에 모든 저장 [추가 애플리케이션 패키지](#extra-application-packages) AEM 애플리케이션에 포함될 수 있습니다.
@@ -549,7 +549,7 @@ In the `all` project&#39;s `filter.xml` (`all/src/main/content/jcr_root/META-INF
 
 >[!WARNING]
 >
->추가적인 Maven 저장소에 종속성이 있는지 확인되므로 Maven 저장소를 추가하면 Maven 빌드 시간이 연장될 수 있습니다.
+>추가적인 Maven 저장소에서 종속성을 확인하므로 Maven 저장소를 추가하면 Maven 빌드 시간이 연장될 수 있습니다.
 
 원자로 프로젝트에서 `pom.xml`필요한 타사 공개 Maven 저장소 지시문을 추가합니다. 전체 `<repository>` 구성은 서드파티 저장소 공급자에서 사용할 수 있어야 합니다.
 

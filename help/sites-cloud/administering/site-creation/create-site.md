@@ -4,10 +4,10 @@ description: AEM을 통해 사이트 템플릿을 사용하여 사이트를 만�
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '788'
-ht-degree: 100%
+source-wordcount: '786'
+ht-degree: 98%
 
 ---
 
@@ -71,7 +71,7 @@ AEM 빠른 사이트 생성 도구를 사용하면 개발자가 아닌 사용자
 
    ![템플릿 선택](../assets/select-site-template.png)
 
-1. 사이트의 제목을 입력합니다. 사이트 이름을 입력하거나 생략할 수 있으며, 생략할 경우 자동으로 제목에서 생성됩니다.
+1. 사이트의 제목을 입력합니다. 생략할 경우 제목에서 사이트 이름을 입력하거나 생성할 수 있습니다.
 
    * 브라우저의 제목 표시줄에 사이트 제목이 표시됩니다.
    * 사이트 이름은 URL의 일부가 됩니다.

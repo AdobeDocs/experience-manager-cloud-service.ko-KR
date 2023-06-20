@@ -2,10 +2,10 @@
 title: Admin Console 액세스
 description: 온보딩에 필요한 준비와 AEMaaCS 구조의 기본 사항을 이해했으면 처음으로 Admin Console에 로그인할 준비가 된 것입니다.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 100%
+source-wordcount: '1109'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ Adobe Admin Console은 Adobe 제품 라이선스 및 사용자를 관리하는 �
 
 Admin Console에 로그인하려면 Adobe ID가 필요합니다. Adobe ID는 AEM as a Cloud Service 또는 Adobe 솔루션에 로그인하고 액세스하는 데 필요한 특정 이메일 주소에 연결된 계정입니다. Adobe ID를 사용하면 단일 계정과 연결된 모든 Adobe 플랜 및 제품을 유지할 수 있습니다.
 
-시스템 관리자가 Admin Console에서 팀을 설정할 때 Adobe ID로 사용할 이메일 주소를 지정합니다.
+시스템 관리자가 Admin Console에서 팀을 설정하면 Adobe ID으로 사용되는 이메일 주소를 지정합니다.
 
 Adobe ID에는 세 가지 유형이 있습니다.
 

@@ -2,7 +2,7 @@
 title: 적응형 양식 표현식
 seo-title: Adaptive Form Expressions
 description: 적응형 Forms 표현식을 사용하여 자동 유효성 검사, 계산을 추가하고 섹션의 가시성을 켜거나 끕니다.
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2696'
 ht-degree: 0%
@@ -237,7 +237,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
      gb.connect(function (){
 
-        //this function will be called after Adaptive Form is initialized
+        //this function is called after Adaptive Form is initialized
 
      })
 
@@ -275,7 +275,7 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 1. 작성된 노드의 속성 탭을 엽니다. 예를 들어 의 속성 탭을 엽니다. `textboxpatterns`. 추가 `guideComponentType` 속성을 이 노드로 설정하고 값을 로 설정합니다. *fd/af/components/formatter/guideTextBox*.
 
 1. 이 속성의 값은 패턴을 정의하려는 필드에 따라 달라집니다. 숫자 필드의 경우 값 `guideComponentType` 속성은 입니다. *fd/af/components/formatter/guideNumericBox*. Datepicker 필드의 값은 *fd/af/components/formatter/guideDatepicker*. &quot;
-1. 에 속성을 할당하여 사용자 지정 패턴을 추가할 수 있습니다. `textboxpatterns` 노드. 이름이 있는 속성 추가(예: `pattern1`)을 클릭하고 값을 추가하려는 패턴으로 설정합니다. 예를 들어 속성을 추가합니다 `pattern1` (Fax=text{99-999-9999999}) 값을 가진 경우 패턴은 적응형 Forms에서 사용하는 모든 텍스트 상자에 사용할 수 있습니다.
+1. 에 속성을 할당하여 사용자 지정 패턴을 추가할 수 있습니다. `textboxpatterns` 노드. 이름이 있는 속성 추가(예: `pattern1`)을 클릭하고 값을 추가하려는 패턴으로 설정합니다. 예를 들어 속성을 추가합니다 `pattern1` (값: 팩스=text{99-999-)9999999}. 패턴은 적응형 Forms에서 사용하는 모든 텍스트 상자에 사용할 수 있습니다.
 
    ![CrxDe의 필드에 대한 사용자 정의 패턴 만들기](assets/creating-custom-patterns.png)
 

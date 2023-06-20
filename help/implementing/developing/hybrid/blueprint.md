@@ -1,10 +1,10 @@
 ---
 title: SPA 블루프린트
-description: 이 문서에서는 SPA 프레임워크가 AEM 내에서 편집 가능한 SPA 구성 요소를 구현하기 위해 이행해야 하는 일반적인 프레임워크 독립적인 계약에 대해 설명합니다.
+description: 이 문서에서는 AEM 내에서 편집 가능한 SPA 구성 요소를 구현할 수 있도록 모든 SPA 프레임워크가 이행해야 하는 일반적인 프레임워크 독립적인 계약에 대해 설명합니다.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2057'
+source-wordcount: '2056'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 ## 소개 {#introduction}
 
-이 문서에서는 AEM 내에서 편집 가능한 SPA 구성 요소를 구현하기 위해 모든 SPA 프레임워크가 이행해야 하는 일반 계약(즉, AEM 지원 계층의 종류)에 대해 설명합니다.
+이 문서에서는 AEM 내에서 편집 가능한 SPA 구성 요소를 구현할 수 있도록 모든 SPA 프레임워크가 이행해야 하는 일반 계약(즉, AEM 지원 계층의 종류)에 대해 설명합니다.
 
 작성자가 AEM 페이지 편집기를 사용하여 단일 페이지 애플리케이션 프레임워크에 의해 노출된 데이터를 편집할 수 있도록 하려면 프로젝트가 AEM 저장소 내의 애플리케이션에 대해 저장된 데이터의 의미론적 의미를 나타내는 모델 구조를 해석할 수 있어야 합니다. 이 목표를 달성하기 위해 두 개의 프레임워크 독립적인 라이브러리가 제공됩니다. `PageModelManager` 및 `ComponentMapping`.
 
@@ -67,7 +67,7 @@ SPA 구성 요소는 페이지 모델과 동기화되어야 하며 그에 따라
 
 ### 메타 필드 {#meta-fields}
 
-페이지 모델은 를 기반으로 하는 JSON 모델 내보내기를 활용합니다. [Sling 모델](https://sling.apache.org/documentation/bundles/models.html) API. 내보내기 가능한 슬링 모델은 기본 라이브러리가 데이터 모델을 해석할 수 있도록 다음 필드 목록을 표시합니다.
+페이지 모델은 를 기반으로 하는 JSON 모델 내보내기를 사용합니다. [Sling 모델](https://sling.apache.org/documentation/bundles/models.html) API. 내보내기 가능한 슬링 모델은 기본 라이브러리가 데이터 모델을 해석할 수 있도록 다음 필드 목록을 표시합니다.
 
 * `:type`: AEM 리소스 유형(기본값 = 리소스 유형)
 * `:children`: 현재 리소스의 계층 구조 하위 항목입니다. 하위 항목은 현재 리소스의 내부 콘텐츠에 속하지 않습니다(페이지를 나타내는 항목에서 찾을 수 있음)
@@ -175,7 +175,6 @@ SPA 구성 요소는 반응형 그리드 등의 그래픽 컨테이너에 매핑
 >* `"aem-Grid-newComponent"`: 레이아웃 작성을 위한 구성 요소를 표준화합니다.
 >
 
-
 #### 구성 요소 매핑 {#component-mapping}
 
 기본 [`Component Mapping`](#componentmapping) 라이브러리 및 해당 `MapTo` 현재 구성 요소 클래스와 함께 제공되는 편집 구성과 관련된 기능을 제공하도록 기능을 캡슐화하고 확장할 수 있습니다.
@@ -204,7 +203,7 @@ MapTo('component/resource/path')(MyComponent, EditConfig);
 
 ```javascript
 /**
- * Configuration object in charge of providing the necessary data expected by the page editor to initiate the authoring. The provided data will be decorating the associated component
+ * Configuration object in charge of providing the necessary data expected by the page editor to initiate the authoring. The provided data is decorating the associated component
  *
  * @typedef {{}} EditConfig
  * @property {String} [dragDropName]       If defined, adds a specific class name enabling the drag and drop functionality

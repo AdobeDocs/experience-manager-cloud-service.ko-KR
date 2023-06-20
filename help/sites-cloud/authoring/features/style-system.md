@@ -2,10 +2,10 @@
 title: 스타일 시스템
 description: 스타일 시스템을 사용하여 템플릿 작성자는 페이지에서 구성 요소를 편집할 때 콘텐츠 작성자가 선택할 수 있도록 구성 요소의 콘텐츠 정책에 스타일 클래스를 정의할 수 있습니다. 이러한 스타일은 보다 유연하게 사용할 수 있도록 구성 요소를 시각적으로 변형한 대체물일 수 있습니다.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1327'
-ht-degree: 80%
+source-wordcount: '1320'
+ht-degree: 75%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 80%
 스타일 시스템은 템플릿 작성자 및 콘텐츠 작성자 요구 사항을 둘 다 충족할 수 있는 통합된 솔루션을 제공합니다.
 
 * 템플릿 작성자는 구성 요소의 콘텐츠 정책에 스타일 클래스를 정의할 수 있습니다.
-* 그러면 콘텐츠 작성자가 페이지에서 구성 요소를 편집할 때 해당 스타일을 적용하기 위해 드롭다운에서 이러한 클래스를 선택할 수 있습니다.
+* 그런 다음 콘텐츠 작성자는 페이지에서 구성 요소를 편집할 때 해당 스타일을 적용할 수 있도록 드롭다운 목록에서 이러한 클래스를 선택할 수 있습니다.
 
 그런 다음 구성 요소의 장식 래퍼 요소에 스타일 클래스가 삽입되므로 구성 요소 개발자는 CSS 규칙을 제공하는 것 외에 스타일 처리에 신경 쓸 필요가 없습니다.
 
@@ -104,7 +104,7 @@ ht-degree: 80%
 
 >[!CAUTION]
 >
->구성 요소 정책의 스타일 속성으로 구성된 CSS 클래스(필요한 Javascript 포함)는 [클라이언트 라이브러리](/help/implementing/developing/introduction/clientlibs.md)로 배포해야 적용됩니다.
+>구성 요소 정책의 스타일 속성으로 구성된 CSS 클래스 및 필요한 Javascript를 다음과 같이 배포해야 합니다. [클라이언트 라이브러리](/help/implementing/developing/introduction/clientlibs.md) 일 때문에.
 
 ## 설정 {#setup}
 
@@ -120,7 +120,7 @@ ht-degree: 80%
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->이는 [Sling 리소스 합병](/help/implementing/developing/introduction/overlays.md)을 통해 [오버레이](/help/implementing/developing/introduction/sling-resource-merger.md)를 사용합니다.
+이는 [Sling 리소스 합병](/help/implementing/developing/introduction/overlays.md)을 통해 [오버레이](/help/implementing/developing/introduction/sling-resource-merger.md)를 사용합니다.
 
 구성 요소를 구성하면 페이지 작성자가 구성한 스타일이 AEM에서 편집 가능한 모든 구성 요소를 자동으로 감싸는 데코레이션 요소에 AEM에서 자동으로 삽입됩니다. 구성 요소 자체는 이 작업을 수행하기 위해 다른 작업을 수행할 필요가 없습니다.
 
@@ -134,11 +134,11 @@ ht-degree: 80%
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->이는 [Sling 리소스 합병](/help/implementing/developing/introduction/overlays.md)을 통해 [오버레이](/help/implementing/developing/introduction/sling-resource-merger.md)를 사용합니다.
+이는 [Sling 리소스 합병](/help/implementing/developing/introduction/overlays.md)을 통해 [오버레이](/help/implementing/developing/introduction/sling-resource-merger.md)를 사용합니다.
 
 >[!NOTE]
 >
->편집 대화 상자의 스타일 탭은 기본적으로 활성화되어 있지 않습니다.
+편집 대화 상자의 스타일 탭은 기본적으로 활성화되어 있지 않습니다.
 
 ### 요소 이름을 갖는 스타일 {#styles-with-element-names}
 
@@ -150,15 +150,13 @@ ht-degree: 80%
 
 >[!CAUTION]
 >
->결합할 수 있는 스타일에 대한 요소 이름을 정의하지 마십시오. 여러 요소 이름이 정의된 경우 우선순위는 다음과 같습니다.
+결합할 수 있는 스타일에 대한 요소 이름을 정의하지 마십시오. 여러 요소 이름이 정의된 경우 우선순위는 다음과 같습니다.
 >
->1. HTL이 모든 것에 우선합니다. `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
->1. 그런 다음 여러 활성 스타일 중에서 구성 요소의 정책에 구성된 스타일 목록의 첫 번째 스타일이 적용됩니다.
->1. 마지막으로 구성 요소의 `cq:htmlTag`/ `cq:tagName`은 폴백 값으로 간주됩니다.
-
+1. HTL이 모든 것에 우선합니다. `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
+1. 그런 다음 여러 활성 스타일 중에서 구성 요소의 정책에 구성된 스타일 목록의 첫 번째 스타일이 적용됩니다.
+1. 마지막으로 구성 요소의 `cq:htmlTag`/ `cq:tagName`은 폴백 값으로 간주됩니다.
 >
 
-
-스타일 이름을 정의하는 기능은 레이아웃 컨테이너 또는 콘텐츠 조각 구성 요소와 같은 매우 일반적인 구성 요소에 추가적인 의미를 제공할 때 유용합니다.
+스타일 이름을 정의하는 기능은 레이아웃 컨테이너 또는 콘텐츠 조각 구성 요소와 같은 일반 구성 요소에 추가적인 의미를 제공하는 데 유용합니다.
 
 예를 들어 레이아웃 컨테이너에 `<main>`, `<aside>`, `<nav>` 등과 같은 의미 체계를 부여할 수 있습니다.

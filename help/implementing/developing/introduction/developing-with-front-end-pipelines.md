@@ -2,9 +2,9 @@
 title: 프론트엔드 파이프라인으로 Sites 개발
 description: 프론트엔드 파이프라인을 사용하면 프론트엔드 개발자에게 더 많은 독립성을 부여하고 개발 프로세스를 가속화할 수 있습니다. 이 문서에서는 제공되어야 하는 프론트엔드 빌드 프로세스의 몇 가지 특정 고려 사항에 대해 설명합니다.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: a6b228023d7bd2a40e4db3a1d2c3900a5c24031c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1154'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # 프론트엔드 파이프라인으로 Sites 개발 {#developing-site-with-front-end-pipeline}
 
-[프론트엔드 파이프라인을 사용하면](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) 프론트엔드 개발자에게 더 많은 독립성이 부여되며 개발 프로세스가 상당한 속도를 낼 수 있습니다. 이 문서에서는 이 프로세스의 잠재력을 최대한 활용하기 위해 알아야 할 몇 가지 고려 사항과 함께 이 프로세스가 작동하는 방식을 설명합니다.
+[프론트엔드 파이프라인을 사용하면](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) 프론트엔드 개발자에게 더 많은 독립성이 부여되며 개발 프로세스가 상당한 속도를 낼 수 있습니다. 이 문서에서는 이 프로세스의 잠재력을 최대한 활용할 수 있도록 몇 가지 고려 사항과 함께 이 프로세스가 작동하는 방식을 설명합니다.
 
 >[!TIP]
 >
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 와 유사 [전체 스택 빌드 환경,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 프론트엔드 파이프라인에는 자체 환경이 있습니다. 개발자는 다음 프론트엔드 빌드 계약이 준수되는 한 이 파이프라인에서 어느 정도 유연성이 있습니다.
 
-프론트엔드 파이프라인을 사용하려면 프론트엔드 Node.js 프로젝트가 `build` 프론트엔드 파이프라인에서 배포할 빌드를 생성하는 스크립트 지시문입니다. 즉, Cloud Manager는 명령을 사용합니다 `npm run build` 에 배포 가능한 프로젝트를 생성하려면 `dist` 폴더를 삭제합니다.
+프론트엔드 파이프라인을 사용하려면 프론트엔드 Node.js 프로젝트가 `build` 프론트엔드 파이프라인에서 배포되는 빌드를 생성하는 스크립트 지시문입니다. 즉, Cloud Manager는 명령을 사용합니다 `npm run build` 에 배포 가능한 프로젝트를 생성하려면 `dist` 폴더를 삭제합니다.
 
 의 콘텐츠 `dist` 폴더는 궁극적으로 Cloud Manager 파이프라인에서 AEM에 as a Cloud Service으로 배포되는 것입니다.
 
@@ -68,7 +68,7 @@ ht-degree: 1%
    1. 평소대로, 로컬에서 개발하기 위해:
       1. 다음 `npx aem-site-theme-builder proxy` 프론트엔드 모듈 내에서 실행된 명령은 프론트엔드 모듈의 CSS 및 JS 파일을 로컬의 CSS 및 JS 파일로 대체하면서 AEM 환경에서 콘텐츠를 요청하는 프록시 서버를 시작합니다 `dist` 폴더를 삭제합니다.
       1. 구성 `AEM_URL` 숨겨진 변수의 변수 `.env` 파일을 사용하면 로컬 프록시 서버가 콘텐츠를 사용하는 AEM 환경을 제어할 수 있습니다.
-      1. 값 변경 `AEM_URL` 따라서 에서는 CSS와 JS가 두 환경에 모두 맞도록 조정하기 위해 프로덕션 환경과 개발 환경 간을 전환할 수 있습니다.
+      1. 값 변경 `AEM_URL` 따라서 프로덕션 환경과 개발 환경 간을 전환하여 두 환경에 모두 적합하도록 CSS와 JS를 조정할 수 있습니다.
       1. 새 출력을 렌더링하는 개발 환경과 이전 출력을 렌더링하는 프로덕션 환경에서 작업해야 합니다.
    1. 업데이트된 프론트엔드 모듈이 두 환경 모두에서 작동하고 두 환경에 배포되면 프론트엔드 작업이 완료됩니다.
 1. 그러면 백엔드 팀은 전체 스택 파이프라인을 통해 새 HTML 및/또는 JSON 출력을 렌더링하는 코드를 배포하여 프로덕션 환경을 업데이트할 수 있습니다.

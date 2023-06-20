@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.10.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.10.0 릴리스 정보입니다.'
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 98%
+source-wordcount: '842'
+ht-degree: 92%
 
 ---
 
@@ -50,14 +50,14 @@ ht-degree: 98%
 
 * 이제 Experience Manager Assets를 사용하여 지원되는 다른 형식 유형의 문서를 업로드할 수 있으며[ 포함된 Document Cloud 뷰어를 사용하여 미리보기](/help/assets/manage-pdf-documents.md)가 가능합니다. 지원되는 형식 유형은 TXT, RTF, DOC, DOCX, PPT, PPTX, XLS, XLSX입니다.
 
-   ![다른 형식의 PDF 렌디션](/help/release-notes/assets/multi-page-other-formats.png)
+  ![다른 형식의 PDF 렌디션](/help/release-notes/assets/multi-page-other-formats.png)
 
 
 ### [!DNL Assets] 프리릴리스의 새로운 기능 {#prerelease-features-assets}
 
 * Experience Manager Assets는 이제 이미지 스마트 태그에 대해 향상된 인공 지능 프레임워크를 사용합니다. 이 콘텐츠 인텔리전스는 수집 시 모든 이미지 에셋에 사용할 수 있는 스마트 태그의 관련성과 정확성을 향상시킵니다. 또한 `cq:tags`에 방향 정보가 채워지므로 방향 필터를 사용하여 더 나은 검색 결과를 얻을 수 있습니다.
 
-   Beta 참여에 관심이 있는 경우 11월 14일까지 [이 양식을 작성](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u)하시기 바랍니다.
+  Beta 참여에 관심이 있는 경우 11월 14일까지 [이 양식을 작성](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u)하시기 바랍니다.
 
 * 이제 Experience Manager Assets는 일괄 가져오기 도구를 사용하여 에셋을 수집하기 위해 Azure Blob Storage 데이터 소스에 연결할 때 인증에 액세스 키 외에 [SAS 토큰을 지원](/help/assets/add-assets.md#asset-bulk-ingestor)합니다.
 
@@ -87,7 +87,7 @@ ht-degree: 98%
 
 * 이제 AEM as a Cloud Service(작성자 서비스)가 통합 셸과 통합되어 사용자 경험을 개선하고 다른 모든 Experience Cloud 애플리케이션과 통합합니다. 자세한 내용은 [통합 셸의 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)를 참조하십시오.
 
-* 앞서 릴리스 정보에서 언급한 바와 같이, 10MB 이상의 콘텐츠 패키지(속성이 있는 노드, 바이너리를 포함하지 않음)를 배포하기 위해 복제 에이전트 관리 화면 또는 복제 API를 사용하는 방법은 더 이상 사용되지 않으며 향후 시행될 예정입니다. 이러한 대용량 콘텐츠 패키지를 복제하는 데 대한 권장 접근 방식은 [게시 관리](/help/operations/replication.md#manage-publication) 또는 [콘텐츠 트리 게시 워크플로](/help/operations/replication.md#publish-content-tree-workflow)를 참조하십시오.
+* 앞서 릴리스 정보에서 언급한 바와 같이, 이제 10MB 이상의 콘텐츠 패키지(속성이 있는 노드, 바이너리를 포함하지 않음)를 배포하기 위해 복제 에이전트 관리 화면 또는 복제 API를 사용하는 방법은 더 이상 사용되지 않으며 적용됩니다. 다음을 참조하십시오 [게시 관리](/help/operations/replication.md#manage-publication) 또는 [콘텐츠 트리 워크플로 게시](/help/operations/replication.md#publish-content-tree-workflow) 이러한 대용량 콘텐츠 패키지를 복제하는 데 대한 권장 접근 방식.
 
 * 이제 Dispatcher 구성은 일반적인 마케팅 캠페인 쿼리 매개변수를 나열하는 파일을 참조합니다. 고객은 원하는 경우 자신과 관련된 매개변수의 주석을 해제할 수 있으므로 더 나은 캐싱이 가능합니다. 자세한 내용은 [마케팅 캠페인 매개변수](/help/implementing/dispatcher/caching.md#marketing-parameters)를 참조하십시오.
 

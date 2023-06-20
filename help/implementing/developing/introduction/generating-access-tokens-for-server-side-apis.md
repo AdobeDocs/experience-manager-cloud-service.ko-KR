@@ -2,9 +2,9 @@
 title: 서버측 API용 액세스 토큰 생성
 description: 보안 JWT 토큰을 생성하여 타사 서버와 AEM as a Cloud Service 간의 통신을 용이하게 하는 방법을 알아봅니다
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: dd869397feca593f93ee8ed5030828e01cc45c4d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2132'
+source-wordcount: '2123'
 ht-degree: 1%
 
 ---
@@ -67,7 +67,7 @@ AEMAEM 을 호출하는 애플리케이션은 as a Cloud Service 자격 증명�
 
 ### JWT 토큰을 생성하고 액세스 토큰으로 교환 {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
-24시간 동안 유효한 액세스 토큰을 검색하기 위해 자격 증명을 사용하여 Adobe의 IMS 서비스 호출에 JWT 토큰을 생성합니다.
+자격 증명을 사용하여 24시간 동안 유효한 액세스 토큰을 검색하기 위해 Adobe의 IMS 서비스 호출에 JWT 토큰을 생성합니다.
 
 AEM CS 서비스 자격 증명은 이를 위해 설계된 클라이언트 라이브러리를 사용하여 액세스 토큰으로 교환될 수 있습니다. 클라이언트 라이브러리는 다음에서 사용할 수 있습니다. [Adobe의 공개 GitHub 저장소](https://github.com/adobe/aemcs-api-client-lib): 더 자세한 지침과 최신 정보가 포함되어 있습니다.
 
@@ -162,7 +162,7 @@ API를 호출하면 제품 프로필이 AEM as a Cloud Service 작성자 인스�
 
 <u>**적절한 그룹 권한 설정**</u>
 
-마지막으로, API를 적절하게 호출하거나 잠그기 위해 필요한 적절한 권한으로 그룹을 구성합니다. 다음을 통해 이 작업을 수행할 수 있습니다.
+마지막으로 API를 적절하게 호출하거나 잠그는 데 필요한 적절한 권한으로 그룹을 구성합니다. 다음을 통해 이 작업을 수행할 수 있습니다.
 
 1. 적절한 작성자 인스턴스에 로그인하고 다음으로 이동 **설정** - **보안** - **권한**
 1. 왼쪽 창에서 제품 프로필에 해당하는 그룹 이름(이 경우 읽기 전용 API)을 검색하고 클릭합니다.
@@ -217,7 +217,7 @@ API를 호출하면 제품 프로필이 AEM as a Cloud Service 작성자 인스�
 
 * 사용 **인증서 추가** 아래에 있는 단추 **통합** - **기술 계정** 아래 표시된 대로 Developer Console에서
 
-   ![자격 증명 새로 고침](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
+  ![자격 증명 새로 고침](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
 
 * 버튼을 누르면 새 인증서를 포함하는 자격 증명 세트가 생성됩니다. 오프 AEM 서버에 새 자격 증명을 설치하고 이전 자격 증명을 제거하지 않고 연결이 예상대로 이루어지도록 하십시오 
 * 액세스 토큰을 생성할 때 이전 자격 증명 대신 새 자격 증명을 사용해야 합니다
@@ -229,7 +229,7 @@ API를 호출하면 제품 프로필이 AEM as a Cloud Service 작성자 인스�
 
 다음 단계를 따라 이 작업을 수행할 수 있습니다.
 
-1. 먼저 새 키를 추가합니다. 이렇게 하면 새 개인 키 및 새 인증서가 있는 자격 증명이 생성됩니다. 새 개인 키가 UI에 다음으로 표시됩니다. **현재** 앞으로 이 기술 계정의 모든 새 자격 증명에 사용됩니다. 이전 개인 키와 연결된 자격 증명은 해지될 때까지 계속 유효합니다. 이렇게 하려면 세 점(**...**) 현재 기술 계정 아래에서 **새 개인 키 추가**:
+1. 먼저 새 키를 추가합니다. 이 키는 새 개인 키 및 새 인증서를 사용하여 자격 증명을 생성합니다. 새 개인 키가 UI에 다음으로 표시됨 **현재** 앞으로 이 기술 계정의 모든 새 자격 증명에 사용됩니다. 이전 개인 키와 연결된 자격 증명은 해지될 때까지 계속 유효합니다. 이렇게 하려면 세 점(**...**) 현재 기술 계정 아래에서 **새 개인 키 추가**:
 
    ![새 개인 키 추가](/help/implementing/developing/introduction/assets/s2s-addnewprivatekey.png)
 
@@ -237,7 +237,7 @@ API를 호출하면 제품 프로필이 AEM as a Cloud Service 작성자 인스�
 
    ![새 개인 키 추가 확인](/help/implementing/developing/introduction/assets/s2s-addprivatekeyconfirm.png)
 
-   새 대상이 있는 새 찾아보기 탭이 열리고 UI가 업데이트되어 두 개인 키가 모두 표시되며 새 개인 키가 다음으로 표시됩니다. **현재**:
+   새 자격 증명이 포함된 새 찾아보기 탭이 열리고 사용자 인터페이스가 새 개인 키가 로 표시된 두 개인 키를 모두 표시하도록 업데이트됩니다. **현재**:
 
    ![UI의 개인 키](/help/implementing/developing/introduction/assets/s2s-twokeys.png)
 

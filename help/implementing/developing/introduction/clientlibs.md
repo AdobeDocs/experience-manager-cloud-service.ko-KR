@@ -2,9 +2,9 @@
 title: AEM에서 클라이언트측 라이브러리 as a Cloud Service 사용
 description: AEM은 클라이언트측 코드(clientlib)를 저장소에 저장하고, 카테고리로 구성하고, 각 코드 카테고리가 클라이언트에 제공되는 시기와 방법을 정의할 수 있는 클라이언트측 라이브러리 폴더를 제공합니다
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 906fbefdbd100a7874b6f58ef23b7aaa46ac4ba3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2567'
+source-wordcount: '2562'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ AEM은 사이트의 CSS와 Javascript를 중앙 위치의 단일 파일로 수�
 
 ## 클라이언트측 라이브러리 폴더 만들기 {#creating-clientlib-folders}
 
-클라이언트 라이브러리는 다음 위치에 있어야 합니다. `/apps`. 이는 콘텐츠 및 구성에서 코드를 더 잘 분리하기 위한 것입니다.
+클라이언트 라이브러리는 다음 위치에 있어야 합니다. `/apps`. 이 규칙은 콘텐츠 및 구성에서 코드를 더 잘 분리하는 데 필요합니다.
 
 클라이언트 라이브러리의 경우 `/apps` 액세스하기 위해 프록시 서블릿 이 사용됩니다. ACL은 여전히 클라이언트 라이브러리 폴더에 적용되지만 서블릿을 통해 콘텐츠를 읽을 수 있습니다. `/etc.clientlibs/` 다음과 같은 경우 `allowProxy` 속성이 로 설정되어 있습니다. `true`.
 
@@ -185,7 +185,7 @@ AEM의 클라이언트 라이브러리 폴더에서 지원하는 다양한 기�
 추가 폴더 속성에는 종속성 및 임베드를 제어할 수 있는 기능이 포함되어 있지만 일반적으로 더 이상 필요하지 않으며 사용하지 않습니다.
 
 * `dependencies`: 이 라이브러리 폴더가 종속된 다른 클라이언트 라이브러리 범주 목록입니다. 예를 들어, 다음 두 가지를 고려할 경우 `cq:ClientLibraryFolder` 노드 `F` 및 `G`에 파일이 있는 경우 `F` 에는 다른 파일이 필요합니다. `G` 제대로 작동하려면 다음 중 하나 이상을 `categories` / `G` 다음 중 하나여야 합니다. `dependencies` / `F`.
-* `embed`: 다른 라이브러리의 코드를 포함하는 데 사용됩니다. 노드 `F` 노드 포함 `G` 및 `H`를 반환하면 결과 HTML은 노드의 콘텐츠 연결입니다 `G` 및 `H`.
+* `embed`: 다른 라이브러리의 코드를 포함하는 데 사용됩니다. 노드 `F` 노드 포함 `G` 및 `H`: 결과 HTML은 노드의 콘텐츠 연결입니다 `G` 및 `H`.
 
 ### 종속성에 연결 {#linking-to-dependencies}
 

@@ -2,10 +2,10 @@
 title: AEM 커넥터 구현
 description: AEM 커넥터 구현
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 100%
+source-wordcount: '966'
+ht-degree: 93%
 
 ---
 
@@ -28,7 +28,7 @@ AEM은 혁신적인 웹 경험 관리 솔루션으로, 다양한 잠재적 통�
 * 사용자 정의 UI 구성 요소 구성 및 렌더링 예: 작성자가 비디오 구성 요소를 드래그하여 놓고 특정 비디오를 라이브 사이트에서 재생하도록 구성할 수 있도록 허용
 * 파트너 서비스를 통해 에셋을 사용하여 작업 예: 페이지가 게시될 때 에셋을 비디오 플랫폼에 전송
 * AEM 관리 콘솔의 사이트, 페이지 또는 에셋 분석 예: 기존 또는 게시되지 않은 페이지에 대한 SEO 권장 사항 작성
-* 외부 서비스에 의해 유지되는 사용자 데이터에 대한 페이지 수준 액세스 예: 인구학적 정보를 활용하여 사이트 경험 개인 맞춤화 컨텍스트 데이터를 저장하고, 조정하고, 나타낼 수 있는 프레임워크인 ContextHub에 대해 살펴보십시오.
+* 외부 서비스에 의해 유지되는 사용자 데이터에 대한 페이지 수준 액세스 예를 들어 인구 통계학적 정보를 사용하여 사이트 경험을 개인화할 수 있습니다. 컨텍스트 데이터를 저장하고, 조정하고, 나타낼 수 있는 프레임워크인 ContextHub에 대해 살펴보십시오.
 * 사이트 사본 또는 에셋 메타데이터 번역 권장 번역 커넥터 구현인 AEM 번역 프레임워크를 사용하는 샘플 코드에 대해 알아보려면 [AEM 번역 프레임워크 Bootstrap 커넥터](https://github.com/Adobe-Marketing-Cloud/aem-translation-framework-bootstrap-connector)를 참조하십시오.
 
 
@@ -52,7 +52,7 @@ Experience Manager as a Cloud Service [설명서](../overview/introduction.md)�
 패키지 구조 규칙
 -----------------------
 
-지속적인 배포를 지원하기 위해 AEM as a Cloud Service 패키지(예: 커넥터)는 “변경 불가능한” 콘텐츠와 “변경 가능한” 콘텐츠를 엄격하게 분리하여 사용합니다. 패키지는 다음을 포함하는 패키지와 명확히 구분되어야 합니다.
+AEM 롤링 배포를 지원하기 위해 as a Cloud Service 패키지 중 커넥터가 예이며, &quot;변경 불가능한&quot; 콘텐츠와 &quot;변경 가능한&quot; 콘텐츠를 엄격하게 구분합니다. 패키지는 다음을 포함하는 패키지와 명확히 구분되어야 합니다.
 
 * `/apps`
 * `/content` 및 `/conf`
@@ -74,7 +74,7 @@ Experience Manager as a Cloud Service [설명서](../overview/introduction.md)�
 컨텍스트 인식 구성
 -----------------------------
 
-[컨텍스트 인식 구성](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)을 사용하면 `/libs`, `/apps`, `/conf` 및 `/conf` 아래의 하위 폴더 등 서로 다른 폴더 간 구성에 레이어를 적용할 수 있습니다. 상속이 지원되므로 고객은 각 마이크로사이트의 특정 내용을 변경하는 동시에 전역 구성을 구성할 수 있습니다. 클라우드 서비스 구성에 이 기능을 활용할 수 있으므로, 커넥터 코드는 특정 구성 노드를 참조하는 대신 컨텍스트 인식 구성 API를 사용하는 구성을 참조해야 합니다.
+[컨텍스트 인식 구성](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)을 사용하면 `/libs`, `/apps`, `/conf` 및 `/conf` 아래의 하위 폴더 등 서로 다른 폴더 간 구성에 레이어를 적용할 수 있습니다. 상속이 지원되므로 고객은 각 마이크로사이트의 특정 내용을 변경하는 동시에 전역 구성을 구성할 수 있습니다. Cloud Services 구성에 이 기능을 사용할 수 있으므로, 커넥터 코드는 특정 구성 노드를 참조하는 대신 컨텍스트 인식 구성 API를 사용하는 구성을 참조해야 합니다.
 
 수정된 구성을 커넥터에 사용하는 경우 커넥터를 커넥터 제공 기본 구성에 대한 향후 업데이트 및 고객 구성의 포함/병합을 처리할 수 있도록 설계하십시오. 맞춤화된(고객에 의해 변경된) 콘텐츠 또는 구성을 고객 경고 또는 동의 없이 변경하면 커넥터에 오류가 발생하거나 예기치 않은 동작이 발생할 수 있습니다.
 

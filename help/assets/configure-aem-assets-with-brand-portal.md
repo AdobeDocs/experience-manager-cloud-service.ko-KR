@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 42927eec458553121f70b74a54f0f26eb616a13e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2530'
+source-wordcount: '2529'
 ht-degree: 19%
 
 ---
@@ -61,7 +61,7 @@ Experience Manager Assets as a에 대한 프로덕션 환경을 만드는 동안
 >
 >Brand Portal은 as a Experience Manager Assets과 동일한 IMS 조직에서 활성화되어야 합니다. [!DNL Cloud Service] 인스턴스.
 >
->기존 Brand Portal 클라우드 구성이 있는 경우([Adobe Developer 콘솔을 사용하여 수동으로 구성](#manual-configuration)) IMS 조직(org1-existing) 및 Experience Manager Assets as a [!DNL Cloud Service] 인스턴스가 다른 IMS 조직(org2-new)에 대해 구성되었습니다. Cloud Manager에서 Brand Portal을 활성화하면 Brand Portal IMS 조직이 로 재설정됩니다. `org2-new`. 에 수동으로 구성된 클라우드 구성이지만 `org1-existing` 은 Experience Manager Assets 작성자 인스턴스에 표시되지만 Cloud Manager에서 Brand Portal을 활성화하면 더 이상 사용되지 않습니다.
+>기존 Brand Portal 클라우드 구성이 있는 경우([Adobe Developer 콘솔을 사용하여 수동으로 구성](#manual-configuration)) IMS 조직(org1-existing) 및 Experience Manager Assets as a [!DNL Cloud Service] 인스턴스가 다른 IMS 조직(org2-new)에 대해 구성되었습니다. Cloud Manager에서 Brand Portal을 활성화하면 Brand Portal IMS 조직이 로 재설정됩니다. `org2-new`. 에 수동으로 구성된 클라우드 구성이지만 `org1-existing` 은 Experience Manager Assets 작성자 인스턴스에 표시되지만 Cloud Manager에서 Brand Portal을 활성화한 후에는 더 이상 사용되지 않습니다.
 >
 >기존 Brand Portal 클라우드 구성 및 Experience Manager Assets as a [!DNL Cloud Service] 인스턴스가 동일한 IMS 조직(org1)을 사용하고 있습니다. Cloud Manager에서 Brand Portal만 활성화하면 됩니다.
 >
@@ -116,6 +116,7 @@ Brand Portal URL을 잘 모를 경우 다음 단계를 수행하십시오.
    * **processing-queue**: Brand Portal에 자산 배포용.
 
    * **error-queue**: 배포가 실패한 에셋입니다.
+
    >[!NOTE]
    >
    >실패를 검토하고 다음을 지우는 것이 좋습니다. **error-queue** 정기적으로
@@ -339,7 +340,7 @@ Adobe Developer 콘솔에서 프로젝트 및 API는 Brand Portal 테넌트(조�
 
 1. Navigate to **[!UICONTROL JWT]** tab, and copy the **[!UICONTROL JWT payload]**.
 
-   The API Key, Client Secret key, and JWT payload information will be used to create IMS account configuration.
+   The API Key, Client Secret key, and JWT payload information is used to create IMS account configuration.
 
 -->
 

@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.2.0 릴리스 정보입니다.'
 description: "[!DNL Adobe Experience Manager] 2021.2.0용 as a Cloud Service 릴리스 노트"
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1237'
-ht-degree: 35%
+source-wordcount: '1234'
+ht-degree: 33%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 35%
 
 * [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 은(는) 사전 구성된 을(를) 가질 수 있습니다 [!DNL Brand Portal] 인스턴스. 다음 [!DNL Cloud Manager] 사용자가 활성화 가능 [!DNL Brand Portal] 날짜 [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. 다음을 참조하십시오 [Brand Portal 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=ko-KR).
 
-* 이제 기업은 다음을 사용하여 자산을 소싱할 수 있습니다. [!DNL Brand Portal]. 에셋 소싱 기능 활용 [!DNL Brand Portal] 고객이 에이전시 사용자와 협력하여 새로운 마케팅 캠페인, 사진 촬영 및 프로젝트에 대한 에셋을 소싱할 수 있도록 지원합니다. 다음을 참조하십시오 [에서 에셋 소싱 [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
+* 이제 기업은 다음을 사용하여 자산을 소싱할 수 있습니다. [!DNL Brand Portal]. 에셋 소싱 기능 사용 [!DNL Brand Portal] 고객이 에이전시 사용자와 협력하여 새로운 마케팅 캠페인, 사진 촬영 및 프로젝트에 대한 에셋을 소싱할 수 있도록 지원합니다. 다음을 참조하십시오 [에서 에셋 소싱 [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
 
 * 다음 [!DNL Brand Portal] 이제 사용량 보고서에 활성 사용자만 표시됩니다. 비활성 사용자는 현재 표시되지 않습니다. 활성 사용자는에서 제품 프로필에 계정이 할당된 사용자입니다. [!DNL Admin Console]. 다음을 참조하십시오 [[!DNL Brand Portal] 보고서](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
 
@@ -101,7 +101,7 @@ AEM as a Cloud Service 2021.2.0의 Cloud Manager 릴리스 일자는 2021년 2�
 
 * Cloud Manager UI는 연결된 환경에 실행 중인 파이프라인이 연결되어 있거나 현재 승인 단계를 기다리고 있기 때문에 일시적으로 도메인 이름을 추가/업데이트할 수 없는 사용자에게 알립니다.
 
-* sonar 접두사가 붙은 고객 `pom.xml` 파일에 설정된 속성은 이제 빌드 및 품질 스캔 실패를 방지하기 위해 동적으로 제거됩니다.
+* 고객에 설정된 속성 `pom.xml` 이제 sonar 접두사가 붙은 파일은 빌드 및 품질 스캔 실패를 방지하기 위해 동적으로 제거됩니다.
 
 * Cloud Manager UI는 현재 배포 중인 도메인 이름에서 SSL 인증서를 사용 중이기 때문에 일시적으로 SSL 인증서를 선택할 수 없는 사용자에게 알립니다.
 

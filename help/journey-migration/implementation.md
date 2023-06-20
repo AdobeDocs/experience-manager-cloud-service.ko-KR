@@ -2,9 +2,9 @@
 title: 구현 단계
 description: 코드 및 콘텐츠를 클라우드로 마이그레이션할 준비가 되었는지 확인
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: fedaa9b8a7baf707c71acd0535ad890254b6793a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2353'
+source-wordcount: '2337'
 ht-degree: 9%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 9%
 
 * AEM as a Cloud Service으로 코드를 배포하는 데 사용되는 Cloud Manager, AEM 연속 통합 및 게재 프레임워크를 소개합니다
 * 콘텐츠 전송 도구를 통해 최신 정보 제공
-* AEM as a Cloud Service으로 코드를 현대화하기 위해 사용해야 하는 코드 리팩터링 도구에 대해 설명합니다
+* AEM as a Cloud Service으로 코드를 현대화할 수 있도록 사용해야 하는 코드 리팩터링 도구에 대해 설명합니다.
 
 ## Cloud Manager 사용 {#using-cloud-manager}
 
@@ -49,7 +49,7 @@ Cloud Service으로 전환하는 정확한 단계는 구입한 시스템과 사�
 
 ![이미지](/help/journey-migration/assets/exec-image1.png)
 
-이를 위해 아래 단원에서 사용해야 하는 도구에 대해 자세히 설명하겠습니다.
+아래 단원에서 이를 수행할 수 있도록 사용해야 하는 도구에 대한 세부 사항을 설명하겠습니다.
 
 ## 콘텐츠 마이그레이션 {#content-migration}
 
@@ -67,10 +67,10 @@ Cloud Service으로 전환하는 정확한 단계는 구입한 시스템과 사�
 
 이제 Cloud Services과 호환될 수 있도록 기존 기능을 리팩터링할 때입니다.
 
-이렇게 하려면 코드 리팩터링을 시작해야 하는 기본 도구에 대해 자세히 설명하는 설명서를 살펴야 합니다.
+먼저 기본 도구에 대해 자세히 설명하는 설명서를 살펴보고 코드 리팩터링을 시작합니다.
 
 
-* 계획 중에 AEM as a Cloud Service과 호환되도록 리팩터링해야 하는 영역 목록을 갖는 것이 좋습니다. 다음을 검토할 수 있습니다. [개발 지침](/help/implementing/developing/introduction/development-guidelines.md) Cloud Service을 위해 코드를 리팩터링하고 최적화하는 방법에 대한 자세한 내용.
+* 계획 시 AEM as a Cloud Service과 호환되도록 리팩터링해야 하는 영역 목록을 갖는 것이 좋습니다. 다음을 검토할 수 있습니다. [개발 지침](/help/implementing/developing/introduction/development-guidelines.md) Cloud Service을 위해 코드를 리팩터링하고 최적화하는 방법에 대한 자세한 내용.
 * 방법 자세히 알아보기 [구성 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=en#what-is-a-configuration) AEM에서 as a Cloud Service.
 * 를 다운로드하여 로컬 개발 환경을 설정하는 방법에 대해 알아봅니다. [AEM AS A CLOUD SERVICE SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en)
 * 마지막으로, 다음을 숙지하십시오. [AEM as a Cloud Service Java API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
@@ -79,11 +79,11 @@ Cloud Service으로 전환하는 정확한 단계는 구입한 시스템과 사�
 
 * 이 비디오를 통해 로컬에서 Dispatcher SDK를 설치하는 방법을 알아보십시오.
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30601)
+  >[!VIDEO](https://video.tv.adobe.com/v/30601)
 
 * Dispatcher SDK를 구성하는 방법을 이해하려면 이 비디오를 시청하십시오.
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30602)
+  >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
 ### 마음가짐의 변화 {#a-change-in-mindset}
 
@@ -100,7 +100,7 @@ AEM Maven 프로젝트가 클라우드와 호환되려면 특정 변경 사항�
 
 ### 클라우드 마이그레이션 도구 {#cloud-migration-tools}
 
-Adobe은 일부 코드 리팩터링 작업을 가속화하는 데 도움이 되는 몇 가지 도구를 제공합니다. 이러한 툴과 툴이 해결하는 문제를 이해하면 마이그레이션 복잡성과 시간이 줄어듭니다.
+Adobe은 일부 코드 리팩터링 작업을 가속화하는 데 도움이 되는 몇 가지 도구를 제공합니다. 이러한 툴과 이러한 툴이 해결할 수 있는 문제를 이해하면 마이그레이션의 복잡성과 시간을 줄일 수 있습니다.
 
 * [자산 워크플로우 마이그레이션](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md): 자산 처리 워크플로우를 자동으로 마이그레이션하는 데 사용되는 도구입니다
 * [Dispatcher 변환기](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md): 기존 Dispatcher 구성을 AEM as a Cloud Service으로 사용할 수 있는 형식으로 변환하는 도구입니다.
@@ -163,7 +163,7 @@ Cloud Manager 파이프라인은 스테이지 환경에 대해 실행되는 테�
 
 <!-- Alexandru: hiding this for now
 
-One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, since it will be added to the overall extraction timeline and it may not be required to run it during top-ups.
+One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, because it is added to the overall extraction timeline and it may not be required to run it during top-ups.
 
 -->
 
@@ -177,8 +177,8 @@ One more important datapoint is the amount of time it takes to complete the [use
 
 | 마이그레이션 반복 | 시작 날짜 | 예상 종료 일자 | 종속성 | 예상 기간(일) | 추가 세부 정보/작업 항목 |
 |---|---|---|---|---|---|
-| PRDCLONE-AUTHOR-INITIAL-USRMAP-CSSTAGE-AUTHOR |  |  |  |  |  |
-| PRDCLONE-PUBLISH-TOPUP-CSSTAGE-AUTHOR |  |  |  |  |  |
+| PRDCLONE-AUTHOR-INITIAL-USRMAP-CSSTAGE-AUTHOR |   |   |   |   |   |
+| PRDCLONE-PUBLISH-TOPUP-CSSTAGE-AUTHOR |   |   |   |   |   |
 
 위의 표에서 볼 수 있듯이 특정 이름 지정 형식을 따라 마이그레이션 반복을 식별하는 것이 유용합니다. 예를 들면 다음과 같습니다. **PRDCLONE** 소스 AEM 환경용 **작성자/게시** AEM as a Cloud Service 환경의 경우 **CSSTAGE-AUTHOR** AEM as a Cloud Service 인스턴스 등등.
 
@@ -209,7 +209,7 @@ One more important datapoint is the amount of time it takes to complete the [use
 
 | 소스(환경/인스턴스/URL) | 대상(환경/인스턴스/URL) | 마이그레이션 세트 이름, 유형(초기 또는 추가) | 마이그레이션 세트 크기(MB) | 사용자 매핑 (예 / 아니요) | 추출 기간(시작, 종료, 소요 시간) | 수집 기간(시작, 종료, 소요 시간) | 문제 / 해결 방법 / 세부 정보 |
 |---|---|---|---|---|---|---|---|
-|  |  |  |  |  |  |  |  |
+|   |   |   |   |   |   |   |   |
 
 ## 컨텐츠 마이그레이션 전략 및 타임라인 {#content-strategyand-timeline}
 
@@ -241,7 +241,7 @@ One more important datapoint is the amount of time it takes to complete the [use
    * 동일한 네트워크 영역에 있음
    * 사용자 및 그룹과 같은 프로덕션 콘텐츠를 제공합니다.
    * 작성자 및 게시 복제 - 클러스터 또는 게시 팜의 경우 각각 하나의 노드
-* 다음과 같이 마이그레이션할 콘텐츠의 하위 집합을 선택하십시오.
+* 다음과 같이 마이그레이션되는 콘텐츠의 하위 집합을 선택하십시오.
    * 사용 가능한 모든 콘텐츠 유형이 혼합되어 있습니다
    * 모든 사용자 및 그룹 포함
 * 컨텐츠의 25% 또는 최대 1TB의 컨텐츠 중 더 적은 것을 포함합니다.

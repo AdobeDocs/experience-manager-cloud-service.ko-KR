@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4378'
+source-wordcount: '4377'
 ht-degree: 12%
 
 ---
@@ -30,7 +30,6 @@ ht-degree: 12%
 >
 >* 유형의 에셋 폴더 공유 `sling:OrderedFolder`은(는) Experience Cloud에 공유할 때 지원되지 않습니다. 폴더를 공유하려면 선택하지 마십시오. [!UICONTROL 주문됨] 폴더를 만들 때.
 >* Experience Manager에서 사용을 허용하지 않음 `subassets` word를 폴더 이름으로 사용합니다. 조합 자산에 대한 하위 자산을 포함하는 노드용으로 예약된 키워드입니다
-
 
 1. 디지털 자산 폴더에서 새 폴더를 만들 위치로 이동합니다. 메뉴에서 다음을 클릭합니다. **[!UICONTROL 만들기]**. 선택 **[!UICONTROL 새 폴더]**.
 1. 다음에서 **[!UICONTROL 제목]** 필드에 폴더 이름을 입력합니다. 기본적으로 DAM은 사용자가 제공한 제목을 폴더 이름으로 사용합니다. 폴더가 만들어지면 기본값을 재정의하고 다른 폴더 이름을 지정할 수 있습니다.
@@ -184,11 +183,11 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
    * 에셋을 이동한 후 에셋의 이름을 지정합니다. 그런 다음 탭/클릭 **[!UICONTROL 다음]** 계속합니다.
 
    * 탭/클릭 **[!UICONTROL 취소]** 프로세스를 중지합니다.
+
    >[!NOTE]
    >
    >* 새 위치에 해당 이름을 가진 에셋이 없는 경우 에셋에 동일한 이름을 지정할 수 있습니다. 그러나 에셋을 같은 이름의 에셋이 있는 위치로 이동하는 경우에는 다른 이름을 사용해야 합니다. 동일한 이름을 사용하는 경우 이름 변형이 자동으로 생성됩니다. 예를 들어 에셋의 이름이 Square인 경우 시스템에서는 해당 복사본에 대한 이름 Square1을 생성합니다.
    >* 이름을 바꿀 때 파일 이름에 공백이 허용되지 않습니다.
-
 
 1. 다음에서 **[!UICONTROL 대상 선택]** 대화 상자에서 다음 중 하나를 수행합니다.
 
@@ -317,7 +316,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 ## 폐쇄된 사용자 그룹 {#closed-user-group}
 
-CUG(폐쇄형 사용자 그룹)는에서 게시된 특정 에셋 폴더에 대한 액세스를 제한하는 데 사용됩니다 [!DNL Experience Manager]. 폴더에 대한 CUG를 생성하는 경우 폴더(폴더 에셋 및 하위 폴더 포함)에 대한 액세스는 할당된 구성원 또는 그룹으로만 제한됩니다. 폴더에 액세스하려면 보안 자격 증명을 사용하여 로그인해야 합니다.
+CUG(폐쇄형 사용자 그룹)는에서 게시된 특정 에셋 폴더에 대한 액세스를 제한하는 데 사용됩니다 [!DNL Experience Manager]. 폴더에 대한 CUG를 생성하는 경우 폴더(폴더 자산 및 하위 폴더 포함)에 대한 액세스는 할당된 구성원 또는 그룹으로만 제한됩니다. 폴더에 액세스하려면 보안 자격 증명을 사용하여 로그인해야 합니다.
 
 CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더의 로그인 페이지를 구성할 수도 있습니다.
 
@@ -652,7 +651,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 [!DNL Experience Manager] 데스크탑 앱을 사용하면 Windows 또는 Mac 데스크탑에서 DAM 저장소에 액세스할 수 있습니다. Adobe 에셋 링크를 사용하면 지원되는 내에서 에셋에 액세스할 수 있습니다. [!DNL Creative Cloud] 데스크탑 애플리케이션.
 
-내에서 에셋을 검색할 때 [!DNL Experience Manager] 사용자 인터페이스에서는 만료된 에셋이 표시되지 않습니다. 관리자는 데스크탑 앱 및 Asset Link에서 자산을 검색할 때 만료된 자산을 보고 검색하고 가져오지 않도록 다음 구성을 수행할 수 있습니다. 이 구성은 관리자 권한과 관계없이 모든 사용자에 대해 작동합니다.
+내에서 에셋을 검색할 때 [!DNL Experience Manager] 사용자 인터페이스에서는 만료된 에셋이 표시되지 않습니다. 관리자는 데스크탑 앱 및 Asset Link에서 자산을 검색할 때 만료된 자산을 보고 검색하고 가져오지 않도록 다음 구성을 수행할 수 있습니다. 이 구성은 관리자 권한에 관계없이 모든 사용자에 대해 작동합니다.
 
 다음 CURL 명령을 실행합니다. 에 대한 읽기 액세스 권한 확인 `/conf/global/settings/dam/acpapi/` 에셋에 액세스하는 사용자용입니다. 에 속한 사용자 `dam-user` 기본적으로 그룹에 권한이 있습니다.
 

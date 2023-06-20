@@ -2,7 +2,7 @@
 title: Adobe Analytics와 통합할 때 사용되는 IMS 구성
 description: Adobe Analytics와 통합할 때 사용되는 IMS 구성 알아보기
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 100%
@@ -74,9 +74,9 @@ Adobe Developer Console을 열고 AEM이 사용할 Adobe Analytics를 사용하�
 1. 보유 중인 모든 프로젝트가 표시됩니다. **새 프로젝트 만들기**&#x200B;를 선택합니다. 위치 및 사용량은 다음에 따라 달라집니다.
 
    * 보유 중인 프로젝트가 없는 경우 **새 프로젝트 만들기**는 중앙 하단에 표시됩니다.
-      ![새 프로젝트 만들기 - 첫 번째 프로젝트](assets/integration-analytics-ims-02.png)
+     ![새 프로젝트 만들기 - 첫 번째 프로젝트](assets/integration-analytics-ims-02.png)
    * 기존 프로젝트가 있는 경우 이들 프로젝트가 나열되며 **새 프로젝트 만들기**는 오른쪽 상단에 표시됩니다.
-      ![새 프로젝트 만들기 - 여러 프로젝트](assets/integration-analytics-ims-03.png)
+     ![새 프로젝트 만들기 - 여러 프로젝트](assets/integration-analytics-ims-03.png)
 
 
 1. **프로젝트에 추가**&#x200B;를 선택한 다음 **API**&#x200B;를 선택합니다.
@@ -176,7 +176,6 @@ AEM으로 돌아가 Analytics용 IMS 통합에서 필요한 값을 추가하여 
 
    * `https://localhost:4502/libs/cq/adobeims-configuration/content/configurations.html`
 
-
 1. 구성을 선택합니다.
 1. 도구 모음에서 **상태 확인**&#x200B;을 선택한 다음 **확인**&#x200B;을 선택합니다.
 
@@ -198,7 +197,7 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 
    The **Create Configuration** dialog will open.
 
-1. Enter a **Title** and, if you want, a **Name** (if left blank this will be generated from the title).
+1. Enter a **Title** and, if you want, a **Name** (if left blank, it is generated from the title).
 
    You can also select the required template (if more than one is available).
 

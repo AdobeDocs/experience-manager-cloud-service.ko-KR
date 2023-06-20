@@ -2,10 +2,10 @@
 title: 구성 만들기 - Headless 설정
 description: AEM as a Cloud Service에서 Headless를 시작하기 위한 첫 번째 단계로 구성을 만듭니다.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 100%
+source-wordcount: '327'
+ht-degree: 92%
 
 ---
 
@@ -28,8 +28,8 @@ AEM에서 Headless 콘텐츠 관리의 맥락에서 구성을 미래 콘텐츠 �
 1. AEM as a Cloud Service에 로그인하고 메인 메뉴에서 **도구 -> 일반 -> 구성 브라우저**&#x200B;을 선택합니다.
 1. 구성의 **제목** 및 **이름**&#x200B;을 입력합니다.
    * **제목**&#x200B;은 설명적이어야 합니다.
-   * **이름**&#x200B;은 저장소의 노드 이름이 됩니다.
-      * 제목을 기반으로 자동으로 생성되고 [AEM 명명 규칙](/help/implementing/developing/introduction/naming-conventions.md)에 따라 조정됩니다.
+   * 다음 **이름** 는 저장소의 노드 이름이 됩니다.
+      * 제목을 기반으로 자동으로 생성되고 이에 따라 조정됩니다 [AEM 이름 지정 규칙입니다.](/help/implementing/developing/introduction/naming-conventions.md)
       * 필요한 경우 조정할 수 있습니다.
 1. 다음 옵션을 확인하십시오.
    * **콘텐츠 조각 모델**

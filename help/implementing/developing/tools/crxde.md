@@ -2,9 +2,9 @@
 title: CRXDE Lite 사용
 description: CRXDE Lite은 AEM 빠른 시작의 일부이며 브라우저 내에서 로컬 개발 환경의 저장소에 액세스하고 수정할 수 있습니다.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1694'
+source-wordcount: '1689'
 ht-degree: 1%
 
 ---
@@ -88,6 +88,7 @@ CRXDE Lite의 사용자 인터페이스는 많은 부분을 가지고 있고 많
 * **유효 액세스 제어 정책** - 현재 선택 항목에 적용된 현재 정책으로서, 로컬로 설정되거나 상위 노드에서 상속될 수 있습니다.
 
 >[!NOTE]
+>
 액세스 제어 정보를 보려면 CRXDE Lite에 로그인한 사용자에게 ACL 항목을 읽을 수 있는 권한이 있어야 합니다.
 
 ### 복제 탭 {#replication-tab}
@@ -188,7 +189,9 @@ CRXDE Lite으로 노드를 만들려면 다음 작업을 수행하십시오.
 이제 속성을 수정하거나 새 노드를 만들어 노드를 필요에 맞게 조정할 수 있습니다.
 
 >[!NOTE]
+>
 대부분의 편집 작업 **노드 만들기**&#x200B;는 모든 변경 사항을 메모리에 유지하며 저장 시 저장소에만 저장합니다( 사용). [**모두 저장 단추**](#save-all-button)). 그러나 이동과 같은 일부 작업은 자동으로 지속됩니다.
+>
 새로 생성된 노드가 상위 노드의 노드 유형에 의해 허용되는지 여부와 관련된 검증은 변경 사항을 저장할 때 저장소에서도 수행됩니다. 노드를 저장하는 동안 오류 메시지가 표시되는 경우 콘텐츠 구조가 유효한지 확인하십시오(예: 다음을 만들 수 없음). `nt:unstructured` 다음 중 1차 하위 구성요소로서의 노드 `nt:folder` node).
 
 ## 속성 만들기 {#creating-a-property}

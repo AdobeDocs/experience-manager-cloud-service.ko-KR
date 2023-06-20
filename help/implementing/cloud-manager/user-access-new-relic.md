@@ -2,10 +2,10 @@
 title: New Relic One
 description: AEM as a Cloud Service를 위한 New Relic One APM(Application Performance Monitoring) 서비스에 대한 정보와 액세스하는 방법에 대해 알아봅니다.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 6a633881be57b79ee167c3a16d514b903bc460ad
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1603'
-ht-degree: 100%
+source-wordcount: '1595'
+ht-degree: 92%
 
 ---
 
@@ -64,7 +64,7 @@ AEM as a Cloud Service용 New Relic One APM에는 많은 기능이 있습니다.
 
 >[!NOTE]
 >
->New Relic One 사용자를 관리하는 경우 액세스 권한을 얻으려면 자신을 사용자로 추가해야 합니다. **비즈니스 소유자** 또는 **배포 관리자**&#x200B;가 되는 것만으로는 New Relic One에 액세스할 수 없습니다. 자신을 사용자로 만들어야 합니다.
+>New Relic One 사용자를 관리하는 경우 자신을 사용자로 추가하여 액세스 권한도 부여해야 합니다. **비즈니스 소유자** 또는 **배포 관리자**&#x200B;가 되는 것만으로는 New Relic One에 액세스할 수 없습니다. 자신을 사용자로 만들어야 합니다.
 
 ## New Relic One 사용자 계정 활성화 {#activate-account}
 
@@ -147,7 +147,7 @@ New Relic에서 이메일을 받지 못한 경우 다음 작업을 수행하십�
 New Relic One에 사용자를 추가하는 경우 다음 제한이 적용됩니다.
 
 * 최대 30명의 사용자를 추가할 수 있습니다. 최대 사용자 수에 도달한 경우 새 사용자를 추가할 수 있도록 사용자를 제거하십시오.
-* New Relic에 추가된 사용자는 **제한됨** 유형이 됩니다. 자세한 내용은 [New Relic 설명서를 참조하십시오.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)을 따르지 않는 경우입니다
+* New Relic에 추가된 사용자의 유형은 다음과 같습니다 **제한됨**, 참조 [자세한 내용은 New Relic 설명서 를 참조하십시오.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)
 * AEM as a Cloud Service는 New Relic One APM 솔루션만 제공하며 경고, 로깅 또는 API 통합에 대한 지원은 제공하지 않습니다.
 
 AEM as a Cloud Service 프로그램용 New Relic One에 대한 추가 도움말 또는 추가 지침을 보려면 [AEM 지원 포털](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)을 통해 지원 티켓을 엽니다.
@@ -184,7 +184,7 @@ New Relic One은 New Relic의 새로운 관찰 가능성 플랫폼으로, 여기
 
 New Relic One은 액세스 권한이 있는 모든 계정을 검색하고 모든 서비스 및 호스트의 데이터를 하나의 보기에서 시각화할 수 있는 기능을 사용자에게 제공합니다.
 
-Adobe 지원에서 서비스의 일부로 New Relic One 및 기타 사내 도구를 사용하여 AEM as a Cloud Service 애플리케이션을 모니터링하는 동안 귀하의 팀은 New Relic을 On-Premise 호스팅 서비스 및 인프라에 계속 활용할 수 있습니다. Adobe New Relic One 계정과 고객이 관리하는 New Relic 계정의 데이터를 시각화할 수 있습니다.
+Adobe AEM 지원에서 서비스의 일부로 New Relic One 및 기타 사내 도구를 사용하여 as a Cloud Service 애플리케이션을 모니터링하는 동안 귀하의 팀은 온프레미스 호스팅 서비스 및 인프라에 New Relic을 계속 사용할 수 있습니다. Adobe New Relic One 계정과 고객 관리 New Relic 계정의 데이터를 시각화할 수 있습니다.
 
 >[!NOTE]
 >

@@ -2,9 +2,9 @@
 title: 편집기 제한 사항
 description: 터치 지원 UI의 편집기는 오버레이를 사용하여 iframe에 한정된 컨텐츠와 상호 작용합니다. 이러한 상호 작용은 편집자와 개발자의 사용에 모두 제한을 만듭니다.
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '315'
 ht-degree: 10%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 10%
 
 페이지의 본문 요소에서는 100% 높이가 지원되지 않습니다.
 
-* 바디 요소를 다음과 같이 &quot;스트레칭&quot;하여 전체 화면 바디를 구현하기 위해 해결 방법이 가능합니다.
+* 다음과 같이 본문 요소를 &quot;스트레칭&quot;하여 전체 화면 본문을 구현할 수 있습니다.
 
 ```xml
 body {

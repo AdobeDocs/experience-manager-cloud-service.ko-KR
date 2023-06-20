@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '6679'
+source-wordcount: '6666'
 ht-degree: 7%
 
 ---
@@ -132,7 +132,7 @@ Experience Cloud 계정이 Adobe Analytics for Audio and Video 사용을 구독�
 
 ## Dynamic Media 뷰어 확장 사용 {#using-the-dynamic-media-viewers-extension}
 
-에서 언급된대로 [통합에 대한 사용 사례](#use-cases-for-the-integration), Experience Manager Sites의 새로운 Experience Platform 태그 통합으로 포함 코드를 사용하여 Dynamic Media 뷰어를 추적할 수 있습니다.
+에서 언급된 바와 같이 [통합에 대한 사용 사례](#use-cases-for-the-integration), Experience Manager Sites의 새로운 Experience Platform 태그 통합으로 포함 코드를 사용하여 Dynamic Media 뷰어를 추적할 수 있습니다.
 
 ### Experience Manager Sites에서 Dynamic Media 뷰어 추적 {#tracking-dynamic-media-viewers-in-aem-sites}
 
@@ -292,7 +292,7 @@ For example, referencing `%event.detail.dm.LOAD.asset%` returns the correct asse
    <td><code>%event.detail.dm.timeStamp%</code></td>
   </tr>
   <tr>
-   <td><code>BANNER</code> </td>
+   <td><code>BANNER</code><br /> </td>
    <td><code>%event.detail.dm.BANNER.asset%</code></td>
   </tr>
   <tr>
@@ -748,7 +748,7 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
    * **[!UICONTROL 제목]** - 설명 계정 제목을 입력합니다.
    * **[!UICONTROL 인증 서버]** - 이전에 연 통합 세부 정보 페이지로 돌아갑니다. 다음 항목 선택 **[!UICONTROL JWT]** 탭. 아래 강조 표시된 대로 경로 없이 서버 이름을 복사합니다.
 
-(예제 서버 이름은 설명용으로만 사용됩니다.)   Return to the **[!UICONTROL Account]** page, then paste the name into the respective field.
+   Return to the **[!UICONTROL Account]** page, then paste the name into the respective field.
 예를 들어, `https://ims-na1.adobelogin.com/`
 (예제 서버 이름은 설명용으로만 사용됩니다.)
 

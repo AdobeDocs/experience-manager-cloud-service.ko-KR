@@ -1,17 +1,17 @@
 ---
 title: AEM as a Cloud Service에 대한 로깅
-description: 중앙 로깅 서비스에 대한 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 구성하기 위해 AEM용 로깅 을 as a Cloud Service으로 사용하는 방법에 대해 알아봅니다.
+description: AEM용 로깅을 as a Cloud Service으로 사용하여 중앙 로깅 서비스의 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 9e67b4f68fe450e80249c3959e3517c6cba3275d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2382'
+source-wordcount: '2376'
 ht-degree: 3%
 
 ---
 
 # AEM as a Cloud Service에 대한 로깅 {#logging-for-aem-as-a-cloud-service}
 
-AEM as a Cloud Service은 고객이 자신의 고객 기반을 위해 고유한 경험을 만들 수 있도록 사용자 지정 코드를 포함하는 플랫폼입니다. 이를 고려하여, 로깅 서비스는 로컬 개발 및 클라우드 환경, 특히 AEMas a Cloud Service 의 개발 환경에서 코드 실행을 디버깅하고 이해하기 위해 중요한 기능입니다.
+AEM as a Cloud Service은 고객이 자신의 고객 기반을 위해 고유한 경험을 만들 수 있도록 사용자 지정 코드를 포함하는 플랫폼입니다. 이러한 점을 고려하여 로깅 서비스는 로컬 개발 및 클라우드 환경, 특히 AEMas a Cloud Service 의 개발 환경에서 코드 실행을 디버깅하고 이해하는 데 중요한 기능입니다.
 
 AEM as a Cloud Service 로깅 설정 및 로그 수준은 Git에서 AEM 프로젝트의 일부로 저장되고 Cloud Manager를 통해 AEM 프로젝트의 일부로 배포되는 구성 파일에서 관리됩니다. AEM as a Cloud Service으로 로그인하면 두 개의 논리 세트로 나뉠 수 있습니다.
 
@@ -94,7 +94,7 @@ ERROR 로깅이 활성화되면 실패를 나타내는 문만 기록됩니다. �
 
 Java 로깅은 다른 여러 수준의 로깅 세부기간을 지원하지만 AEMas a Cloud Service 에서는 위에 설명된 세 가지 수준을 사용하는 것이 좋습니다.
 
-AEM 로그 수준은 OSGi 구성을 통해 환경 유형별로 설정되며, OSGi 구성은 Git에 커밋되고 Cloud Manager를 통해 AEM as a Cloud Service으로 배포됩니다. 따라서 업데이트된 로그 수준 구성으로 애플리케이션을 다시 배포하지 않고도 AEM as Cloud Service을 통해 사용할 수 있는 로그를 최적의 로그 수준에서 사용할 수 있도록 하려면 로그 문을 일관되게 유지하고 환경 유형에 대해 잘 알고 있는 것이 가장 좋습니다.
+AEM 로그 수준은 OSGi 구성을 통해 환경 유형별로 설정되며, OSGi 구성은 Git에 커밋되고 Cloud Manager를 통해 AEM as a Cloud Service으로 배포됩니다. 따라서 업데이트된 로그 수준 구성으로 애플리케이션을 다시 배포하지 않고도 AEM as Cloud Service을 통해 사용할 수 있는 로그를 최적의 로그 수준에서 사용할 수 있도록 로그 문을 일관되게 유지하고 환경 유형에 대해 잘 알려진 상태로 유지하는 것이 가장 좋습니다.
 
 **로그 출력 예**
 
@@ -545,7 +545,7 @@ AEM 이 작업은 가능하지만 Git의 구성 파일에 있는 로그 수준�
 
 ## Splunk 로그 {#splunk-logs}
 
-Splunk 계정이 있는 고객은 고객 지원 티켓을 통해 AEM Cloud Service 로그가 적절한 색인에 전달되도록 요청할 수 있습니다. 로깅 데이터는 Cloud Manager 로그 다운로드를 통해 사용할 수 있는 것과 동일하지만 고객은 Splunk 제품에서 사용할 수 있는 쿼리 기능을 활용하는 것이 편리할 수 있습니다.
+Splunk 계정이 있는 고객은 고객 지원 티켓을 통해 AEM Cloud Service 로그가 적절한 색인에 전달되도록 요청할 수 있습니다. 로깅 데이터는 Cloud Manager 로그 다운로드를 통해 사용할 수 있는 것과 동일하지만 고객은 Splunk 제품에서 사용할 수 있는 쿼리 기능을 사용하는 것이 편리할 수 있습니다.
 
 Splunk로 전송된 로그와 관련된 네트워크 대역폭은 고객의 네트워크 I/O 사용의 일부로 간주됩니다.
 

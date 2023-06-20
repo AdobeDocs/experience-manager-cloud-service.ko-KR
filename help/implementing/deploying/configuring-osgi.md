@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service에 대한 OSGi 구성
 description: 비밀 값 및 환경별 값이 있는 OSGi 구성
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3323'
+source-wordcount: '3318'
 ht-degree: 1%
 
 ---
@@ -187,7 +187,7 @@ AEM SDK Quickstart Jar의 AEM 웹 콘솔 을 사용하여 OSGi 구성 요소를 
 
 >[!NOTE]
 >
->AEM 웹 콘솔의 구성 UI가 `.cfg.json` 파일을 저장소에 저장합니다. 따라서 AEM Project에서 정의한 OSGi 구성이 생성된 구성과 다를 수 있는 경우 로컬 개발 중에 발생할 수 있는 예기치 않은 동작을 방지하기 위해 이 점을 유의하십시오.
+>AEM 웹 콘솔의 구성 UI가 `.cfg.json` 파일을 저장소에 저장합니다. 따라서 AEM Project에서 정의한 OSGi 구성이 생성된 구성과 다를 수 있는 경우 로컬 개발 중에 발생할 수 있는 예기치 않은 동작을 방지하기 위해 이 워크플로우를 알고 있어야 합니다.
 
 1. 에서 AEM SDK Quickstart Jar의 AEM 웹 콘솔에 로그인합니다. `https://<host>:<port>/system/console` 관리 사용자로
 1. 다음으로 이동 **OSGi** > **구성**
@@ -260,7 +260,7 @@ use $[secret:SECRET_VAR_NAME]
 >
 >변수 이름에는 특정 접두사 사용과 관련된 규칙이 있습니다.
 >
->1. 변수 이름 접두사 `INTERNAL_`, `ADOBE_`, 또는 `CONST_` Adobe으로 예약되어 있습니다. 이러한 접두사로 시작하는 고객 설정 변수는 무시됩니다.
+>1. 변수 이름 접두사 `INTERNAL_`, `ADOBE_`, 또는 `CONST_` Adobe으로 예약되어 있습니다. 이러한 접두사로 시작하는 모든 고객 세트 변수는 무시됩니다.
 >
 >1. 고객은 접두사가 있는 변수를 참조해서는 안 됩니다. `INTERNAL_` 또는 `ADOBE_` 둘 중 하나.
 >

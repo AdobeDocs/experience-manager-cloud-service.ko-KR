@@ -2,10 +2,10 @@
 title: Universal Editor 아키텍처
 description: Universal Editor의 아키텍처 및 해당 서비스와 계층 간에 데이터가 흐르는 방식에 대해 알아봅니다.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '662'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -15,7 +15,7 @@ Universal Editor의 아키텍처 및 해당 서비스와 계층 간에 데이터
 
 ## 아키텍처 빌딩 블록 {#building-blocks}
 
-Universal Editor를 구성하는 네 가지 필수 빌딩 블록의 상호 작용을 통해 콘텐츠 작성자가 모든 구현에서 콘텐츠의 모든 측면을 편집할 수 있기 때문에 뛰어난 경험을 제공하고, 콘텐츠 속도를 높이고, 최신 개발자 경험을 제공할 수 있습니다.
+범용 편집기는 상호 작용하는 4개의 필수 구성 요소로 구성되며, 이를 통해 콘텐츠 작성자는 모든 구현에서 콘텐츠의 모든 측면을 편집할 수 있으므로 탁월한 경험을 제공하고 콘텐츠 속도를 높이며 최신 개발자 경험을 제공할 수 있습니다.
 
 1. [편집기](#editors)
 1. [원격 앱](#remote-app)
@@ -77,7 +77,7 @@ Universal Editor는 모든 콘텐츠 변경 사항을 Universal Editor 서비스
 
 Universal Editor에 대해 자세히 알아보려면 다음 문서를 참조하십시오.
 
-* [Universal Editor 소개](introduction.md) - Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면을 편집할 수 있기 때문에 뛰어난 경험을 제공하고, 콘텐츠 속도를 높이고, 최신 개발자 경험을 제공할 수 있다는 점에 대해 알아봅니다.
+* [유니버설 편집기 소개](introduction.md) - Universal Editor를 통해 모든 구현에서 콘텐츠의 모든 측면을 편집할 수 있으므로 탁월한 경험을 제공하고 콘텐츠 속도를 높이며 최신 개발자 경험을 제공할 수 있습니다.
 * [Universal Editor로 콘텐츠 작성](authoring.md) - 콘텐츠 작성자가 Universal Editor를 사용하여 콘텐츠를 만드는 것이 얼마나 쉽고 직관적인지 알아봅니다.
 * [Universal Editor로 콘텐츠 게시](publishing.md) - Universal Visual Editor에서 콘텐츠를 게시하는 방법과 앱에서 게시된 콘텐츠를 처리하는 방법에 대해 알아봅니다.
 * [AEM에서 Universal Editor 시작하기](getting-started.md) - Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 알아봅니다.

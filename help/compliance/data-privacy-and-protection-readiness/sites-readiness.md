@@ -2,10 +2,10 @@
 title: 데이터 보호 및 데이터 개인정보 보호 규정 - Adobe Experience Manager as a Cloud Service Sites 준비
 description: EU 일반 데이터 보호 규정(GDPR), 캘리포니아 소비자 개인정보 보호법 및 새 AEM as a Cloud Service 프로젝트 구현 시 이들 규정을 준수하는 방법을 포함하여 다양한 데이터 보호 및 데이터 개인정보 보호 규정에 대한 Adobe Experience Manager as a Cloud Service Sites 지원에 대해 알아봅니다.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1031'
-ht-degree: 100%
+source-wordcount: '1028'
+ht-degree: 93%
 
 ---
 
@@ -60,11 +60,12 @@ Adobe Experience Manager의 경우 사용자에 대한 옵트인/옵트아웃 �
 
    * 이 사이트 방문에 대한 데이터 집계 및 분석을 옵트아웃하려면 브라우저에 쿠키를 설치해야 합니다. 이 쿠키는 사용자가 옵트아웃했는지 여부를 식별합니다.
 
-      옵트아웃 쿠키를 삭제하는 경우 또는 컴퓨터나 웹 브라우저를 변경하는 경우 다시 옵트아웃해야 합니다.
+     옵트아웃 쿠키를 삭제하는 경우 또는 컴퓨터나 웹 브라우저를 변경하는 경우 다시 옵트아웃해야 합니다.
 
-      옵트아웃 - 방문자 세션 집계 및 분석에서 본인 제외(`amcglobal.sc.omtrdc.net` 옵트아웃 쿠키를 설치하십시오) - 여기를 클릭합니다.
+     옵트아웃 - 방문자 세션 집계 및 분석에서 본인 제외(`amcglobal.sc.omtrdc.net` 옵트아웃 쿠키를 설치하십시오) - 여기를 클릭합니다.
 
-      옵트인 - 방문자 세션 집계 및 분석에서 본인 포함(`amcglobal.sc.omtrdc.net` 옵트아웃 쿠키를 설치하지 마십시오) - 여기를 클릭합니다.
+     옵트인 - 방문자 세션 집계 및 분석에서 본인 포함(`amcglobal.sc.omtrdc.net` 옵트아웃 쿠키를 설치하지 마십시오) - 여기를 클릭합니다.
+
    위 단계를 따라 실제 링크에 액세스하십시오.
 
    >[!NOTE]
@@ -108,22 +109,22 @@ AEM에서는 ContextHub와 관련하여 선택적 데이터 계층을 제공합�
 
 * 사이트 방문자가 사이트의 약관에 동의하면 ContextHub 옵트아웃 쿠키가 제거됩니다.
 
-   ```
-   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
-   ```
+  ```
+  ContextHub.Utils.Cookie.removeItem('cq-opt-out');
+  ```
 
 * 사이트 방문자가 사이트의 약관에 동의하지 않으면 ContextHub 옵트아웃 쿠키가 설정됩니다.
 
-   ```
-   ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
-   ```
+  ```
+  ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
+  ```
 
 * ContextHub가 옵트아웃 모드에서 실행되고 있는지 확인하려면 브라우저의 콘솔에서 다음 호출을 수행해야 합니다.
 
-   ```
-   var isOptedOut = ContextHub.isOptedOut(true) === true;
-   // if isOptedOut is true, ContextHub is running in opt-out mode
-   ```
+  ```
+  var isOptedOut = ContextHub.isOptedOut(true) === true;
+  // if isOptedOut is true, ContextHub is running in opt-out mode
+  ```
 
 ### ContextHub의 지속성 미리보기 {#previewing-persistence-of-contexthub}
 
@@ -138,6 +139,7 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
          * Local Storage > (웹 사이트) > ContextHubPersistence
          * Session Storage > (웹 사이트) > ContextHubPersistence
          * Cookies > (웹 사이트) > SessionPersistence
+
    * Firefox:
 
       * Developer Tools > Storage를 엽니다.
@@ -145,6 +147,7 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
          * Local Storage > (웹 사이트) > ContextHubPersistence
          * Session Storage > (웹 사이트) > ContextHubPersistence
          * Cookies > (웹 사이트) > SessionPersistence
+
    * Safari:
 
       * 메뉴 막대에서 Preferences > Advanced > Show Develop 메뉴를 엽니다.
@@ -153,6 +156,7 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
          * Console > Storage > Local Storage > (웹 사이트) > ContextHubPersistence
          * Console > Storage > Session Storage > (웹 사이트) > ContextHubPersistence
          * Console > Storage > Cookies > (웹 사이트) > ContextHubPersistence
+
    * Internet Explorer:
 
       * 개발자 도구 > 콘솔을 엽니다.
@@ -160,9 +164,6 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
          * `localStorage.getItem('ContextHubPersistence')`
          * `sessionStorage.getItem('ContextHubPersistence')`
          * `document.cookie`
-
-
-
 
 * 브라우저 콘솔에서 ContextHub API 사용.
 
@@ -173,8 +174,7 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-      ContextHub 저장소는 사용할 지속성 계층을 정의하므로 현재 지속성 상태를 보려면 모든 계층을 검사해야 합니다.
-
+     ContextHub 저장소는 사용되는 지속성 계층을 정의하므로 현재 지속성 상태를 보려면 모든 계층을 검사해야 합니다.
 
 예를 들어 localStorage에 저장된 데이터를 보려는 경우
 
@@ -187,12 +187,12 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
       * Local Storage > (웹 사이트) > ContextHubPersistence
       * Session Storage > (웹 사이트) > ContextHubPersistence
       * Cookies > (웹 사이트) > SessionPersistence
+
    * Firefox - Developer Tools > Storage 열기:
 
       * Local Storage > (웹 사이트) > ContextHubPersistence
       * Session Storage > (웹 사이트) > ContextHubPersistence
       * Cookies > (웹 사이트) > SessionPersistence
-
 
 * 브라우저 콘솔에서 ContextHub API 사용.
 
@@ -203,8 +203,7 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-      ContextHub 저장소는 사용할 지속성 계층을 정의하므로 현재 지속성 상태를 보려면 모든 계층을 검사해야 합니다.
-
+     ContextHub 저장소는 사용되는 지속성 계층을 정의하므로 현재 지속성 상태를 보려면 모든 계층을 검사해야 합니다.
 
 예를 들어 localStorage에 저장된 데이터를 보려는 경우
 
@@ -219,27 +218,27 @@ ContextHub 지속성 지우기:
 
 * 현재 로드된 저장소의 지속성을 지우려면
 
-   ```
-   // in order to be able to fully access persistence layer, Opt-Out must be turned off
-   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
-   
-   // following call asks all currently loaded stores to clear their data
-   ContextHub.cleanAllStores();
-   
-   // following call asks all currently loaded stores to set back default values (provided in their configs)
-   ContextHub.resetAllStores();
-   ```
+  ```
+  // to be able to fully access persistence layer, Opt-Out must be turned off
+  ContextHub.Utils.Cookie.removeItem('cq-opt-out');
+  
+  // following call asks all currently loaded stores to clear their data
+  ContextHub.cleanAllStores();
+  
+  // following call asks all currently loaded stores to set back default values (provided in their configs)
+  ContextHub.resetAllStores();
+  ```
 
 * 특정 지속성 계층을 지우려면(예: sessionStorage):
 
-   ```
-   var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
-   storage.setItem('/store', null);
-   storage.setItem('/_', null);
-   
-   // to confirm that nothing is stored:
-   console.log(storage.getTree());
-   ```
+  ```
+  var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
+  storage.setItem('/store', null);
+  storage.setItem('/_', null);
+  
+  // to confirm that nothing is stored:
+  console.log(storage.getTree());
+  ```
 
 * 모든 ContextHub 지속성 계층을 지우려면 모든 레이어에 대해 적절한 코드를 호출해야 합니다.
 

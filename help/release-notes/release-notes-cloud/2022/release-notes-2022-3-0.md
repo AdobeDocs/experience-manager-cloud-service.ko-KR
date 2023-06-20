@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.3.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.3.0 릴리스 정보입니다.'
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1150'
-ht-degree: 96%
+ht-degree: 88%
 
 ---
 
@@ -91,13 +91,13 @@ ht-degree: 96%
 
 ### 새로운 기능 {#what-is-new-foundation}
 
-* Cloud 환경에서 사용자 지정 기능 문제를 보다 효율적으로 해결하기 위해 새 개발자 도구인 [저장소 브라우저](/help/implementing/developing/tools/repository-browser.md)가 출시되었습니다. 간단한 읽기 전용 HTML 브라우저로서 Developer Console에서 실행할 수 있습니다. 게시자, 작성자 및 미리보기 계층과 프로덕션, 스테이징 및 개발 등 모든 환경에서 콘텐츠 저장소에 대한 가시성을 확보합니다. 콘텐츠 구조를 검색하고, 속성을 확인하고 바이너리를 미리 보고 다운로드합니다.
+* Cloud 환경에서 사용자 정의 기능 문제를 보다 효율적으로 해결하기 위해 새 개발자 도구인 [저장소 브라우저](/help/implementing/developing/tools/repository-browser.md). 간단한 읽기 전용 HTML 브라우저로서 Developer Console에서 실행할 수 있습니다. 게시자, 작성자 및 미리보기 계층과 프로덕션, 스테이징 및 개발 등 모든 환경에서 콘텐츠 저장소에 대한 가시성을 확보합니다. 콘텐츠 구조를 검색하고, 속성을 확인하고 바이너리를 미리 보고 다운로드합니다.
 
-   ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
+  ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
 * Developer Console에서 셀프서비스 방식으로 만료되기 전에 서버 간 API 호출 인증에 사용되는 자격 증명(예: GraphQL API 요청의 경우)을 새로 고칠 수 있습니다. 자세한 내용은 [설명서](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)를 참조하십시오.
 
-* 이전에 활성화되지 않은 버전 제거 및 감사 로그 제거 유지 관리 작업이 새 환경에서 활성화될 수 있습니다. [유지 관리 작업](/help/operations/maintenance.md) 문서에서 관련된 값을 참조하십시오.
+* 이전에 활성화되지 않은 버전 제거 및 감사 로그 제거 유지 관리 작업이 이제 새 환경에서 활성화됩니다. [유지 관리 작업](/help/operations/maintenance.md) 문서에서 관련된 값을 참조하십시오.
 
 * 이제 AEM as a Cloud Service SDK Dispatcher는 M1 칩이 내장된 Mac 컴퓨터를 지원합니다.
 
@@ -113,7 +113,7 @@ ht-degree: 96%
 
 ### 새로운 기능 {#what-is-new-ctt}
 
-* 점검 크기 가드레일 - 콘텐츠 전송 도구 점검 크기 기능을 사용하여 콘텐츠 전송 실패율을 줄일 수 있습니다.  점검 크기 기능을 사용하여 1) 추출하기 전에 `crx-quickstart` 하위 디렉터리에 디스크 공간이 충분한지 결정하고, 2) 마이그레이션 세트 크기를 예측하고 현재 지원되는지 확인할 수 있습니다. 점검 사항 중 하나 또는 두 개 모두 위반한 경우 CTT UI에 경고가 표시됩니다. 이 가드레일을 사용하여 콘텐츠 전송 실패를 방지하고, Adobe 고객 지원 센터와 주도적으로 마이그레이션 옵션에 대해 논의할 수 있습니다. 자세한 내용은 [마이그레이션 세트 크기 및 디스크 공간 확인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ko#migration-set-size)을 참조하십시오.
+* 점검 크기 가드레일 - 콘텐츠 전송 도구 점검 크기 기능을 사용하여 콘텐츠 전송 실패율을 줄일 수 있습니다.  Check Size 기능을 사용하여 1) 사용자에게 디스크 공간이 충분한지 여부를 `crx-quickstart` 추출하기 전에 하위 디렉터리, 2) 마이그레이션 세트 크기를 예측하고 지원되는지 확인합니다. 점검 사항 중 하나 또는 두 개 모두 위반한 경우 CTT UI에 경고가 표시됩니다. 이 가드레일을 사용하여 콘텐츠 전송 실패를 방지하고, Adobe 고객 지원 센터와 주도적으로 마이그레이션 옵션에 대해 논의할 수 있습니다. 자세한 내용은 [마이그레이션 세트 크기 및 디스크 공간 확인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ko#migration-set-size)을 참조하십시오.
 
 ## Best Practices Analyzer {#bpa-release}
 

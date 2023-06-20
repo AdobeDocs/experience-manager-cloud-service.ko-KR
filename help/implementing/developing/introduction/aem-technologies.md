@@ -2,9 +2,9 @@
 title: AEM 기술 재단
 description: AEM이 구조화되고 JCR, Sling 및 OSGi와 같은 기본 기술이 포함된 AEM의 기술 기반에 대한 개요입니다.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2191'
+source-wordcount: '2180'
 ht-degree: 1%
 
 ---
@@ -113,7 +113,7 @@ URL 분해의 원칙 사용:
 * 매핑은 요청에서 추출된 콘텐츠 경로를 사용하여 리소스를 찾습니다.
 * 적절한 리소스가 있으면 sling 리소스 유형이 추출되고, 콘텐츠 렌더링에 사용할 스크립트를 찾는 데 사용됩니다.
 
-다음 그림은 사용된 메커니즘을 보여 줍니다. 이에 대해서는 다음 섹션에서 자세히 설명합니다.
+다음 그림은 사용된 메커니즘을 보여 줍니다. 이 메커니즘에 대해서는 다음 섹션에서 자세히 설명합니다.
 
 ![URL 매핑 메커니즘](assets/url-mapping.png)
 
@@ -166,7 +166,7 @@ Sling을 사용하여 특정 엔티티를 렌더링하는 스크립트를 지정
    * 선택기가 있는 프린터에 친숙한 버전을 보면 `print`에서와 같이 `../content/corporate/jobs/developer.print.html`
    * 스크립트는 `/apps/hr/jobs/jobs.print.esp`; 선택기가 스크립트 이름에 추가됩니다.
 * 없는 경우 `sling:resourceType` 이(가) 정의된 이후:
-   * 콘텐츠 경로는 적절한 스크립트를 검색하는 데 사용됩니다(경로가 기반으로 하는 경우). `ResourceTypeProvider` 활성).
+   * 콘텐츠 경로는 적절한 스크립트를 검색하는 데 사용됩니다(경로가 기반으로 하는 경우) `ResourceTypeProvider` 활성).
    * 예를 들어 다음 스크립트 `../content/corporate/jobs/developer.html` 에서 검색을 생성합니다. `/apps/content/corporate/jobs/`.
    * 기본 노드 유형이 사용됩니다.
 * 스크립트가 전혀 없으면 기본 스크립트가 사용됩니다.

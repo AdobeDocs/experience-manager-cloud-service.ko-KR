@@ -7,10 +7,10 @@ topic-tags: develop
 hide: true
 hidefromtoc: true
 exl-id: e1eb0812-c92e-4a18-aabb-5a70b9e6fc7d
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3360'
-ht-degree: 100%
+source-wordcount: '3359'
+ht-degree: 99%
 
 ---
 
@@ -62,7 +62,7 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
 
 1. 브라우저를 열고 Cloud Service 작성자 환경의 URL을 입력합니다.
 
-1. Cloud Service 작성자 환경에 로그인합니다. 작성자 환경의 로그인 자격 증명은 랩 시간 중에 공유됩니다.
+1. Cloud Service 작성자 환경에 로그인합니다. 작성자 환경에 대한 로그인 자격 증명은 실습 중에 사용자와 공유됩니다.
 
 1. 로그인한 후 AEM Forms UI로 이동합니다. **Forms**&#x200B;를 클릭합니다.
 
@@ -267,7 +267,6 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
    > * `npm notice Run npm nstall -g npm@9.6.0` 명령을 통해 npm을 업데이트하라는 메시지가 표시되면 메시지를 무시합니다.
    > * 통합 문서에서 지시하지 않는 한 다른 npm 명령은 실행하지 않습니다.
 
-
 1. 이제 다음 명령을 실행하여 양식을 미리 봅니다.
 
    ```Shell
@@ -366,7 +365,7 @@ React 스타터 프로젝트를 사용하여 로컬 저장소 설정:
 
    * **AEM_FORM_PATH**: 이전 수업에서 만든 적응형 양식의 경로를 지정합니다. 예, `/content/forms/af/registration/`
 
-      ![](/help/forms/assets/screenshot202023-03-0820at202.49.1820pm.png)
+     ![](/help/forms/assets/screenshot202023-03-0820at202.49.1820pm.png)
 
 1. 명령 창을 열고 현재 위치가 react-starter-kit-aem-headless-forms 디렉터리인지 확인한 후 다음 명령을 실행합니다.
 
@@ -516,7 +515,7 @@ Material UI 스타터 프로젝트를 사용하여 로컬 저장소 설정:
 
    * **AEM_FORM_PATH**: 이전 수업에서 만든 적응형 양식의 경로를 지정합니다. 예: /content/forms/af/registration/
 
-      ![](/help/forms/assets/screenshot2028126929.png)
+     ![](/help/forms/assets/screenshot2028126929.png)
 
 1. 명령 창을 열고 현재 위치가 **react-starter-kit-aem-headless-forms** 디렉터리인지 확인한 후 다음 명령을 실행합니다.
 

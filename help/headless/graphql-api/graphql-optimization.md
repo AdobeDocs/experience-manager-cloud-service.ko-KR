@@ -2,10 +2,10 @@
 title: GraphQL 쿼리 최적화
 description: Headless 콘텐츠 게재를 위해 Adobe Experience Manager as a Cloud Service에서 콘텐츠 조각을 필터링, 페이징 및 정렬할 때 GraphQL 쿼리를 최적화하는 방법을 알아봅니다.
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1192'
-ht-degree: 100%
+source-wordcount: '1193'
+ht-degree: 96%
 
 ---
 
@@ -40,7 +40,7 @@ JCR 필터(쿼리 제한 형식)를 적용한 후에 AEM 필터링을 위해 결
 
 >[!NOTE]
 >
->기술적인 이유로(예: 유연성, 조각 중첩) AEM은 전체 필터링을 JCR에 위임할 수 없습니다.
+>기술적인 이유(예: 유연성, 조각 중첩)로 인해 AEM은 전체 필터링을 JCR에 위임할 수 없습니다.
 
 이 기법에서는 GraphQL 필터의 유연성을 유지하면서 최대한 많은 필터링을 JCR에 위임합니다.
 
@@ -49,21 +49,20 @@ JCR 필터(쿼리 제한 형식)를 적용한 후에 AEM 필터링을 위해 결
 AEM에서 GraphQL은 2가지 유형의 페이지 매김을 지원합니다.
 
 * [제한/오프셋 기반 페이지 매김](/help/headless/graphql-api/content-fragments.md#list-offset-limit)
-목록 쿼리에 사용됩니다. 이 페이지 매김은 
-`List`로 끝납니다(예: `articleList`).
+목록 쿼리에 사용됩니다. 이 페이지 매김은 `List`로 끝납니다(예: `articleList`).
 이 페이지 매김을 사용하려면 반환할 첫 번째 항목의 위치(`offset`)와 반환할 항목 수(`limit` 또는 페이지 크기)를 제공해야 합니다.
 
 * [커서 기반 페이지 매김](/help/headless/graphql-api/content-fragments.md#paginated-first-after)(`first` 및 `after`로 표시)
 각 항목에 대한 고유 ID(커서라고도 함)를 제공합니다.
 쿼리에서 사용자가 이전 페이지 마지막 항목의 커서와 페이지 크기(반환할 최대 항목 수)를 지정합니다.
 
-   커서 기반 페이지 매김은 목록 기반 쿼리의 데이터 구조에 맞지 않기 때문에 AEM은 `Paginated` 쿼리 유형(예: `articlePaginated`)을 도입했습니다. 사용되는 데이터 구조 및 매개변수는 [GraphQL 커서 연결 사양](https://relay.dev/graphql/connections.htm)을 따릅니다.
+  커서 기반 페이지 매김은 목록 기반 쿼리의 데이터 구조에 맞지 않기 때문에 AEM은 `Paginated` 쿼리 유형(예: `articlePaginated`)을 도입했습니다. 사용되는 데이터 구조 및 매개변수는 [GraphQL 커서 연결 사양](https://relay.dev/graphql/connections.htm)을 따릅니다.
 
-   >[!NOTE]
-   >
-   >AEM은 현재 정방향 페이징(`after`/`first` 매개변수 사용)을 지원합니다.
-   >
-   >역방향 페이징(`before`/`last` 매개변수 사용)은 지원되지 않습니다.
+  >[!NOTE]
+  >
+  >AEM은 현재 정방향 페이징(`after`/`first` 매개변수 사용)을 지원합니다.
+  >
+  >역방향 페이징(`before`/`last` 매개변수 사용)은 지원되지 않습니다.
 
 ## 정렬 {#sorting}
 
@@ -130,7 +129,7 @@ GraphQL 쿼리에도 이 접근 방식을 적용해야 합니다.
 
 ### 필터 표현식의 논리 연산 {#logical-operations-in-filter-expressions}
 
-중첩 조각을 필터링하는 경우 `AND` 연산자를 사용하여 결합된 최상위 필드에 동반 필터를 제공하여 JCR 필터링을 계속 활용할 수 있습니다.
+중첩된 조각에서 필터링하는 경우 를 사용하여 결합되는 최상위 수준 필드에 관련 필터를 제공하여 JCR 필터링을 적용할 수 있습니다. `AND` 연산자.
 
 일반적인 사용 사례는 최상위 수준 조각의 `_path` 필드에 필터를 사용하여 쿼리 범위를 제한한 다음 최상위 수준 또는 중첩된 조각에 있을 수 있는 추가 필드를 필터링하는 것입니다.
 

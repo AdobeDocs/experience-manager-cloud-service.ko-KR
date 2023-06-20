@@ -2,9 +2,9 @@
 title: AEM에서 외부 SPA 편집
 description: 이 문서에서는 독립 실행형 SPA을 AEM 인스턴스에 업로드하고, 편집 가능한 콘텐츠 섹션을 추가하고, 저작을 활성화하는 권장 단계에 대해 설명합니다.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: b06e734fd6874946323cdc71073ecb1c50945845
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2456'
+source-wordcount: '2447'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 * AEM 인스턴스가 로컬에서 실행 중인지 확인하십시오.
 * 다음을 사용하여 기본 AEM SPA 프로젝트 만들기 [AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties)
-   * 이렇게 하면 외부 SPA을 포함하도록 업데이트되는 AEM 프로젝트의 기초가 됩니다.
+   * Forms은 외부 SPA을 포함하도록 업데이트되는 AEM 프로젝트의 기초입니다.
    * 이 문서의 샘플에 대해서는 의 시작점을 사용하고 있습니다. [wknd SPA 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor)
 * 즉시 통합하고자 하는 작동 중인 외부 React SPA이 있습니다.
 
@@ -81,7 +81,7 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
 ### AEM Authorable Leaf 구성 요소 {#authorable-leaf-components}
 
-1. 작성 가능한 React 구성 요소가 생성될 AEM 구성 요소를 생성/식별합니다. 이 예제에서는 WKND 프로젝트의 텍스트 구성 요소를 사용하고 있습니다.
+1. 작성 가능한 React 구성 요소가 생성된 AEM 구성 요소를 생성/식별합니다. 이 예제에서는 WKND 프로젝트의 텍스트 구성 요소를 사용하고 있습니다.
 
    ![WKND 텍스트 구성 요소](assets/external-spa-text-component.png)
 
@@ -237,7 +237,7 @@ mvn clean install -PautoInstallSinglePackage
 >
 >다음을 확인합니다. `AEMText` 구성 요소에 해당 `resourceType` 이 기능을 활성화하려면 구성을 설정하십시오.
 
-이제 섹션의 단계에 따라 변경 사항을 AEM에 배포할 수 있습니다 [AEM에서 텍스트 컨텐츠 편집을 확인합니다.](#verify-text-edit) 현재 존재하지 않는 자리표시자가 표시됩니다. `text_20` 노드.
+이제 섹션의 단계에 따라 변경 사항을 AEM에 배포할 수 있습니다 [AEM에서 텍스트 컨텐츠 편집을 확인합니다.](#verify-text-edit) 현재 존재하지 않는 자리표시자가 표시됩니다 `text_20` 노드.
 
 ![aem의 text_20 노드](assets/external-spa-text20-aem.png)
 
@@ -282,7 +282,7 @@ AEM에서 이 구성 요소가 포함된 페이지를 편집할 때 작성자가
 
 ![JCR의 콘텐츠가 있는 컨테이너](assets/container-with-content-jcr.png)
 
-작성자가 필요로 하므로 이제 더 많은 구성 요소와 콘텐츠를 컨테이너에 추가할 수 있으며 변경 사항은 지속됩니다.
+작성자가 요구하고 변경 사항이 유지되므로 이제 더 많은 구성 요소 및 콘텐츠를 컨테이너에 추가할 수 있습니다.
 
 #### 요구 사항 및 제한 사항 {#container-limitations}
 
@@ -351,9 +351,8 @@ AEM에서 이 구성 요소가 포함된 페이지를 편집할 때 작성자가
       * 라우팅에 필요한 경로
       * SPA이 편집되는 AEM 인스턴스의 원본 URL
       * 첫 번째 단계에서 결정된 대로 AEM의 프로젝트 루트
+
    * 이러한 값은 보다 유연하게 사용할 수 있도록 환경 변수로 설정할 수 있습니다.
-
-
 
 1. AEM에서 페이지 편집을 확인합니다.
 
@@ -368,7 +367,7 @@ RemotePage 구성 요소에서는 구현이 자산 매니페스트와 같은 자
 다음 참조 자료가 AEM의 컨텍스트에서 SPA을 이해하는 데 도움이 될 수 있습니다.
 
 * [AEM Headful 및 Headless](/help/implementing/developing/headful-headless.md)
-* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko-KR)
 * [WKND SPA 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=ko-KR)
 * [React를 사용하여 AEM에서 SPA 시작하기](/help/implementing/developing/hybrid/getting-started-react.md)
 * [SPA 참조 자료(API 참조)](/help/implementing/developing/hybrid/reference-materials.md)

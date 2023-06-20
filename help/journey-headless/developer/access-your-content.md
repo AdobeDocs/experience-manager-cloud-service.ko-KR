@@ -2,10 +2,10 @@
 title: AEM 게재 API를 통해 콘텐츠에 액세스하는 방법
 description: 이 AEM Headless 개발자 여정의 부분에서는 GraphQL 쿼리를 통해 콘텐츠 조각의 콘텐츠에 액세스하는 방법을 대해 알아봅니다.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 100%
+source-wordcount: '1358'
+ht-degree: 99%
 
 ---
 
@@ -181,7 +181,7 @@ So for example, if you:
 
 1. Install a package containing `Content-Fragment-Model-1` and `Content-Fragment-Model-2`:
  
-   1. GraphQL types for `Model-1` and `Model-2` will be generated.
+   1. GraphQL types for `Model-1` and `Model-2` are generated.
 
 1. Then modify `Content-Fragment-Model-2`:
 
@@ -260,7 +260,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 
 이처럼 CEO 및 직원 필드는 개인 조각을 참조합니다.
 
-조각 모델을 사용합니다.
+조각 모델이 사용됩니다.
 
 * 콘텐츠 조각 편집기에서 콘텐츠를 만드는 경우
 * 쿼리할 GraphQL 스키마를 생성하는 경우

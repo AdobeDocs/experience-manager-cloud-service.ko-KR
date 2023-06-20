@@ -2,9 +2,9 @@
 title: 빠른 사이트 생성 및 프론트엔드 맞춤화
 description: 빠른 사이트 생성 도구가 사이트 템플릿, 테마 및 프론트엔드 파이프라인을 사용하여 새로운 사이트를 빠르게 배포하고 프론트엔드 개발을 분리하는 방법을 알아봅니다.
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '328'
 ht-degree: 5%
 
 ---
@@ -29,8 +29,8 @@ AEM 이를 위해 빠른 사이트 생성 도구는 다음과 같은 몇 가지 
 
 ## 추가 리소스 {#additional-resources}
 
-빠른 사이트 생성 도구는 많은 AEM 기능을 활용하므로 이러한 추가 리소스가 도움이 될 수 있습니다.
+빠른 사이트 생성 도구는 많은 AEM 기능을 사용하므로 이러한 추가 리소스가 도움이 될 수 있습니다.
 
 * [사이트 템플릿](/help/sites-cloud/administering/site-creation/site-templates.md) - AEM 사이트 템플릿을 사용하여 사이트 구조 및 초기 콘텐츠를 미리 정의하여 새 사이트를 빠르게 만들 수 있는 방법에 대해 알아봅니다.
 * [사이트 테마](/help/sites-cloud/administering/site-creation/site-themes.md) - AEM 사이트 테마를 사용하여 사이트의 스타일 및 디자인을 맞춤화하는 방법에 대해 알아봅니다.
-* [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - 프론트엔드 파이프라인을 사용하면 프론트엔드 개발자에게 더 많은 독립성을 부여하고 개발 프로세스를 가속화할 수 있습니다. 이 문서에서는 이 프로세스의 잠재력을 최대한 활용하기 위해 알아 두어야 할 몇 가지 고려 사항을 설명합니다.
+* [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - 프론트엔드 파이프라인을 사용하면 프론트엔드 개발자에게 더 많은 독립성을 부여하고 개발 프로세스를 가속화할 수 있습니다. 이 문서에서는 이 프로세스의 잠재력을 최대한 활용하기 위해 알아 두어야 할 몇 가지 고려 사항에 대해 설명합니다.

@@ -2,10 +2,10 @@
 title: 엔터프라이즈 DevOps
 description: 배포를 지우고 공동 작업을 간소화하는 데 필요한 프로세스, 방법 및 커뮤니케이션에 대해 알아봅니다.
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 100%
+source-wordcount: '1000'
+ht-degree: 96%
 
 ---
 
@@ -86,7 +86,7 @@ Adobe Experience Manager (AEM) as a Cloud Service는 일반적으로 서로 다�
 
 활성화된 콘텐츠는 패키지화되어 작성자 환경의 복제 큐에 배치됩니다. 그런 다음 복제 프로세스는 해당 콘텐츠를 게시 환경에 전송합니다.
 
-게시 환경에 생성된 데이터를 다시 작성자 환경으로 복제하려면 작성자 환경의 복제 리스너가 게시 환경을 폴링하고, 게시 환경의 역방향 복제 출력소에서 해당 콘텐츠를 검색합니다.
+게시 환경에 생성된 데이터를 다시 작성자 환경으로 복제하려면 작성자 환경의 복제 리스너가 게시 환경을 폴링하고, 게시 환경의 역방향 복제 출력소에서 해당 컨텐츠를 검색합니다.
 
 #### 게시 {#publish}
 

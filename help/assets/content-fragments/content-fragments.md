@@ -2,10 +2,10 @@
 title: 콘텐츠 조각을 사용하여 작업 (에셋 - 콘텐츠 조각)
 description: Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각을 사용하여 페이지 작성 및 Headless 게재에 이상적인 페이지 독립적 콘텐츠를 디자인하고, 작성하고, 선별하고, 사용하는 방법에 대해 알아봅니다.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: d452690b03ed32701030476572c5db9ddb1fbc2c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2135'
-ht-degree: 92%
+source-wordcount: '2132'
+ht-degree: 91%
 
 ---
 
@@ -34,7 +34,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 
 >[!NOTE]
 >
->콘텐츠 조각은 **에셋**&#x200B;으로 저장됩니다. 이제 를 통해 주로 관리됩니다. **[컨텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** 콘솔에서 관리할 수 있습니다. **에셋** 콘솔. 이 섹션에서는 다음의 관리에 대해 설명합니다. **에셋** 콘솔.
+>콘텐츠 조각은 **자산**&#x200B;으로 저장됩니다. 이제 를 통해 주로 관리됩니다. **[컨텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** 콘솔에서 관리할 수 있습니다. **에셋** 콘솔. 이 섹션에서는 다음의 관리에 대해 설명합니다. **에셋** 콘솔.
 
 이 페이지 및 다음 페이지에서는 콘텐츠 조각 생성, 구성, 관리 및 사용을 위한 작업을 다룹니다.
 
@@ -58,7 +58,6 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 >* [AEM Assets HTTP API의 콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
 
-
 커뮤니케이션 채널의 수는 매년 증가하고 있습니다. 일반적으로 채널은 다음 중 하나로서 게재 메커니즘을 나타냅니다.
 
 * 물리적 채널 - 예: 데스크탑, 모바일
@@ -72,7 +71,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 * 채널 중립적인 에디토리얼 콘텐츠를 만들고 관리할 수 있습니다.
 * 다양한 채널을 위한 콘텐츠 풀을 빌드할 수 있습니다.
 * 특정 채널에 맞는 콘텐츠 변형을 디자인할 수 있습니다.
-* 에셋(혼합 미디어 조각)을 삽입하여 텍스트에 이미지를 추가합니다.
+* 자산(혼합 미디어 조각)을 삽입하여 텍스트에 이미지를 추가합니다.
 * 데이터의 복잡성을 반영하도록 중첩된 콘텐츠를 만듭니다.
 
 그런 다음 이러한 콘텐츠 조각을 취합하여 다양한 채널에서 경험을 제공할 수 있습니다.
@@ -109,7 +108,7 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 
 >[!NOTE]
 >
->AEM은 조각 콘텐츠 번역도 지원합니다. 자세한 내용은 [에셋 번역](/help/assets/translate-assets.md)을 참조하십시오.
+>AEM은 조각 콘텐츠 번역도 지원합니다. 자세한 내용은 [자산 번역](/help/assets/translate-assets.md)을 참조하십시오.
 
 ## MSM을 통해 에셋용 콘텐츠 조각 재사용 {#reusing-content-fragments-with-msm-assets}
 
@@ -145,21 +144,21 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 
 * 게재 메커니즘(즉, 페이지, 채널)에 독립적입니다.
 
-### 시각적 에셋이 있는 조각 {#fragments-with-visual-assets}
+### 시각적 자산이 있는 조각 {#fragments-with-visual-assets}
 
 작성자가 콘텐츠를 더 잘 제어할 수 있도록 이미지를 콘텐츠 조각에 추가하거나 콘텐츠 조각과 통합할 수 있습니다.
 
-에셋은 각각 고유한 장점이 있는 여러 가지 방법으로 콘텐츠 조각에 사용할 수 있습니다.
+자산은 각각 고유한 장점이 있는 여러 가지 방법으로 콘텐츠 조각에 사용할 수 있습니다.
 
-* 조각에 **에셋 삽입**(혼합 미디어 조각)
+* 조각에 **자산 삽입**(혼합 미디어 조각)
 
    * 조각의 필수 부분입니다([콘텐츠 조각의 구성 성분 부분](#constituent-parts-of-a-content-fragment) 참조).
-   * 에셋의 위치를 정의합니다.
-   * 자세한 내용은 조각 편집기에서 [조각에 에셋 삽입](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)을 참조하십시오.
+   * 자산의 위치를 정의합니다.
+   * 자세한 내용은 조각 편집기에서 [조각에 자산 삽입](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)을 참조하십시오.
 
-   >[!NOTE]
-   >
-   >콘텐츠 조각 자체에 삽입된 시각적 에셋은 선행하는 단락에 첨부됩니다. 조각을 페이지에 추가하면 이러한 에셋이 중간적 콘텐츠가 추가될 때 해당 단락과 관련하여 이동됩니다.
+  >[!NOTE]
+  >
+  >콘텐츠 조각 자체에 삽입된 시각적 자산은 선행하는 단락에 첨부됩니다. 조각을 페이지에 추가하면 이러한 자산이 중간적 콘텐츠가 추가될 때 해당 단락과 관련하여 이동됩니다.
 
 * **관련 콘텐츠**
 
@@ -168,16 +167,16 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
    * 페이지에서 조각을 사용할 때(중간적 콘텐츠로서) 쉽게 사용할 수 있습니다.
    * 자세한 내용은 [관련 콘텐츠](/help/assets/content-fragments/content-fragments-assoc-content.md)를 참조하십시오.
 
-* 페이지 편집기의 **에셋 브라우저**&#x200B;에서 사용할 수 있는 에셋
+* 페이지 편집기의 **자산 브라우저**&#x200B;에서 사용할 수 있는 자산
 
-   * 에셋을 유연하게 선택할 수 있습니다.
+   * 자산을 유연하게 선택할 수 있습니다.
    * 위치에 대해 어느 정도 유연합니다.
    * 특정 조각에 대해 동의되는 개념을 제공하지 않습니다.
-   * 자세한 내용은 [에셋 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)를 참조하십시오.
+   * 자세한 내용은 [자산 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)를 참조하십시오.
 
 ### 콘텐츠 조각을 구성하는 부분 {#constituent-parts-of-a-content-fragment}
 
-콘텐츠 조각 에셋은 다음 부분으로 구성됩니다(직접 또는 간접적으로).
+콘텐츠 조각 자산은 다음 부분으로 구성됩니다(직접 또는 간접적으로).
 
 * **조각 요소**
 
@@ -192,9 +191,9 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 
    * 페이지 작성 중 콘텐츠를 제어할 수 있도록 해 줍니다.
 
-* **조각에 삽입된 에셋(혼합 미디어 조각)**
+* **조각에 삽입된 자산(혼합 미디어 조각)**
 
-   * 실제 조각에 삽입되고 조각의 내부 콘텐츠로 사용된 에셋 (이미지)
+   * 실제 조각에 삽입되고 조각의 내부 콘텐츠로 사용된 자산 (이미지)
    * 조각의 단락 시스템에 임베드됩니다.
    * [페이지에서 조각을 사용/참조](/help/sites-cloud/authoring/fundamentals/content-fragments.md)할 때 형식을 지정할 수 있습니다.
    * 조각 편집기를 사용해야 조각에 추가, 조각에서 삭제 또는 조각 내에서 이동할 수 있습니다. 페이지 편집기에서는 이러한 작업을 수행할 수 없습니다.
@@ -202,27 +201,27 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
    * 여러 줄 텍스트 요소(임의의 조각 유형)에만 추가할 수 있습니다.
    * 선행하는 텍스트(단락)에 첨부됩니다.
 
-      >[!CAUTION]
-      >
-      >에셋을 일반 텍스트 형식으로 전환하여 (실수로) 조각에서 제거할 수 있습니다.
+     >[!CAUTION]
+     >
+     >자산을 일반 텍스트 형식으로 전환하여 (실수로) 조각에서 제거할 수 있습니다.
 
-      >[!NOTE]
-      >
-      >에셋은 페이지에서 조각을 사용할 때 [추가적인(중간적) 콘텐츠](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)로도 추가할 수 있습니다. 이때 에셋은 관련 콘텐츠를 사용하거나 에셋 브라우저의 에셋을 사용합니다.
+     >[!NOTE]
+     >
+     >자산은 페이지에서 조각을 사용할 때 [추가적인(중간적) 콘텐츠](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)로도 추가할 수 있습니다. 이때 자산은 관련 콘텐츠를 사용하거나 자산 브라우저의 자산을 사용합니다.
 
 * **관련 콘텐츠**
 
-   * 조각의 외부 콘텐츠지만 조각에 대한 에디토리얼 관련 연관성이 있는 콘텐츠입니다. 일반적으로 이미지, 비디오 또는 기타 조각입니다.
-   * 컬렉션 내의 개별 에셋은 페이지에 추가될 때 페이지 편집기에서 조각에 사용할 수 있습니다. 이는 특정 채널의 요구 사항에 따라 이러한 에셋을 선택할 수 있음을 의미합니다.
-   * 에셋은 [컬렉션을 통해 조각에 연결](/help/assets/content-fragments/content-fragments-assoc-content.md)됩니다. 연결된 컬렉션은 작성자가 페이지를 작성할 때 사용할 에셋을 결정할 수 있도록 해 줍니다.
+   * 조각의 외부 콘텐츠이지만 조각에 대한 에디토리얼 관련 연관성이 있는 콘텐츠입니다. 일반적으로 이미지, 비디오 또는 기타 조각입니다.
+   * 컬렉션 내의 개별 자산은 페이지에 추가될 때 페이지 편집기에서 조각에 사용할 수 있습니다. 이는 특정 채널의 요구 사항에 따라 이러한 자산을 선택할 수 있음을 의미합니다.
+   * 자산은 [컬렉션을 통해 조각에 연결](/help/assets/content-fragments/content-fragments-assoc-content.md)됩니다. 연결된 컬렉션은 작성자가 페이지를 작성할 때 사용할 자산을 결정할 수 있도록 해 줍니다.
 
       * 컬렉션은 기본 콘텐츠로 조각과 연결되거나 작성자에 의해 조각 작성 도중 조각과 연결될 수 있습니다.
-      * [에셋(DAM) 컬렉션](/help/assets/manage-collections.md)은 조각과 관련된 콘텐츠의 기초입니다.
+      * [자산(DAM) 컬렉션](/help/assets/manage-collections.md)은 조각과 관련된 콘텐츠의 기초입니다.
    * 원할 경우 조각 자체를 컬렉션에 추가하여 추적을 지원할 수도 있습니다.
 
 * **조각 메타데이터**
 
-   * [에셋 메타데이터 스키마](/help/assets/metadata-schemas.md)를 사용합니다.
+   * [자산 메타데이터 스키마](/help/assets/metadata-schemas.md)를 사용합니다.
    * 다음 경우에 태그를 만들 수 있습니다.
 
       * 조각을 만들고 작성할 때
@@ -231,9 +230,9 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
          * 콘솔에서 조각 **속성**&#x200B;을 보거나/편집하여
          * 조각 편집기에 있을 때 **메타데이터**&#x200B;를 편집하여
 
-   >[!CAUTION]
-   >
-   >메타데이터 처리 프로필은 콘텐츠 조각에 적용되지 않습니다.
+  >[!CAUTION]
+  >
+  >메타데이터 처리 프로필은 콘텐츠 조각에 적용되지 않습니다.
 
 * **마스터**
 
@@ -241,9 +240,9 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 
       * 모든 콘텐츠 조각에는 하나의 마스터 인스턴스가 있습니다.
       * 마스터는 삭제할 수 없습니다.
+
    * 마스터는 **[변형](/help/assets/content-fragments/content-fragments-variations.md)** 아래의 조각 편집기에서 액세스할 수 있습니다.
    * 마스터는 그러한 변형이 아니라 모든 변형의 기초입니다.
-
 
 * **변형**
 
@@ -263,7 +262,7 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 * 페이지에서 조각을 사용/참조한 후 [조각의 플로우 내에 추가된 추가적인 콘텐츠](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-in-between-content)입니다.
 * [콘텐츠 조각을 사용하여 작업할 때 페이지 편집기](/help/sites-cloud/authoring/fundamentals/content-fragments.md)에서 사용할 수 있습니다.
 * 중간적 콘텐츠는 어떤 조각에든 추가할 수 있으며, 이 경우 요소는 하나만 표시됩니다.
-* 연결된 콘텐츠는 적절한 브라우저에서 에셋 및/또는 구성 요소처럼 사용할 수 있습니다.
+* 연결된 콘텐츠는 적절한 브라우저에서 자산 및/또는 구성 요소처럼 사용할 수 있습니다.
 
 >[!CAUTION]
 >
@@ -296,7 +295,7 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 
 ## 사용 예 {#example-usage}
 
-요소 및 변형을 포함한 조각을 사용하여 여러 채널용의 일관된 콘텐츠를 만들 수 있습니다. 조각을 디자인할 때에는 어디에 사용될 것인지 고려해야 합니다.
+요소 및 변형을 포함한 조각을 사용하여 여러 채널용의 일관된 콘텐츠를 만들 수 있습니다. 조각을 디자인할 때 사용되는 항목과 위치를 고려합니다.
 
 ### WKND 샘플 {#wknd-sample}
 
@@ -305,7 +304,7 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 WKND 프로젝트에는 다음이 포함되어 있습니다.
 
 * 콘텐츠 조각 모델은 다음에서 사용할 수 있습니다.
-   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+  `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
 * 콘텐츠 조각(및 기타 콘텐츠)은 다음에서 사용할 수 있습니다.
-   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd/en`

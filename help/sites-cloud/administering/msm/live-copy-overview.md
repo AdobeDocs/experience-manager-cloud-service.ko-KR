@@ -1,13 +1,13 @@
 ---
-title: 라이브 카피 개요 콘솔
-description: 콘텐츠 동기화를 위해 라이브 카피 상태를 신속하게 이해할 수 있도록 라이브 카피 개요 콘솔의 기본 사항에 대해 알아봅니다.
+title: Live Copy 개요 콘솔
+description: 콘텐츠를 동기화할 라이브 카피의 상태를 빠르게 이해할 수 있는 라이브 카피 개요 콘솔의 기본 사항에 대해 알아봅니다.
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 100%
+source-wordcount: '731'
+ht-degree: 92%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 100%
 블루프린트 페이지 속성을 볼 때 **라이브 카피 개요**&#x200B;를 열 수 있습니다.
 
 1. 적절한 블루프린트 페이지에 대한 **속성**&#x200B;을 엽니다.
-1. **블루프린트** 탭을 열면 **라이브 카피 개요** 옵션이 상단 도구 모음에 표시됩니다.
+1. 를 엽니다. **블루프린트** 탭 - **라이브 카피 개요** 옵션이 맨 위 도구 모음에 표시됩니다.
 
    ![블루프린트 속성 탭](../assets/live-copy-blueprint-tab.png)
 
@@ -72,7 +72,7 @@ ht-degree: 100%
 **라이브 카피 개요**&#x200B;를 사용하여 라이브 카피에서 작업을 수행할 수도 있습니다.
 
 1. **라이브 카피 개요**&#x200B;를 엽니다.
-1. 필요한 블루프린트 또는 라이브 카피 페이지를 선택하면 도구 모음이 업데이트되어 사용할 수 있는 작업을 표시합니다. 사용할 수 있는 [작업](overview.md#terms-used)은 [블루프린트](#actions-for-a-blueprint-page) 페이지를 선택했는지 또는 [라이브 카피](#actions-for-a-live-copy-page) 페이지를 선택했는지 여부에 따라 달라집니다.
+1. 필요한 블루프린트 또는 라이브 카피 페이지를 선택하면 도구 모음이 업데이트되어 사용 가능한 작업을 표시합니다. 사용할 수 있는 [작업](overview.md#terms-used)은 [블루프린트](#actions-for-a-blueprint-page) 페이지를 선택했는지 또는 [라이브 카피](#actions-for-a-live-copy-page) 페이지를 선택했는지 여부에 따라 달라집니다.
 
 ### 블루프린트 페이지에 대한 작업 {#actions-for-a-blueprint-page}
 

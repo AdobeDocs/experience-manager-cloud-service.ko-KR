@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.5.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.5.0 릴리스 정보입니다.'
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1355'
-ht-degree: 50%
+source-wordcount: '1352'
+ht-degree: 48%
 
 ---
 
@@ -47,19 +47,19 @@ ht-degree: 50%
 
 * 링크 공유 기능을 사용하여 공유된 에셋을 다운로드할 수 있습니다. 이 다운로드는 이제 매우 큰 다운로드의 경우에도 빠르고 중단 없는 다운로드를 제공하는 비동기 서비스를 사용합니다. 다음을 참조하십시오 [에셋 다운로드](/help/assets/download-assets-from-aem.md#link-share-download).
 
-   ![받은 편지함 다운로드](/help/assets/assets/download-inbox.png)
+  ![받은 편지함 다운로드](/help/assets/assets/download-inbox.png)
 
 ### 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#what-is-new-assets-prerelease}
 
 * 메타데이터 스키마는 폴더 속성에 직접 적용할 수 있습니다.
 
-   ![폴더 속성에서 메타데이터 스키마 추가](/help/assets/assets/metadata-schema-folder-properties.png)
+  ![폴더 속성에서 메타데이터 스키마 추가](/help/assets/assets/metadata-schema-folder-properties.png)
 
 * 일괄 에셋 수집기 도구를 사용하면 일괄 수집 중에 메타데이터를 추가할 수 있습니다.
 
 * 사용자 경험이 개선되어 폴더에 있는 에셋의 수가 표시됩니다. 폴더에 있는 에셋이 1000개가 넘는 경우 [!DNL Assets] 1000+를 표시합니다.
 
-   ![폴더에 있는 에셋 수가 인터페이스에 표시됨](/help/assets/assets/browse-folder-number-of-assets.png)
+  ![폴더에 있는 에셋 수가 인터페이스에 표시됨](/help/assets/assets/browse-folder-number-of-assets.png)
 
 ### [!DNL Assets]의 수정된 버그 {#assets-bugs-fixed}
 
@@ -110,7 +110,7 @@ AEM as a Cloud Service 2021.5.0의 Cloud Manager 릴리스 일자는 2021년 5�
 
 * 이제 공개 API의 저장소 끝점에 Git URL이 포함됩니다.
 
-* Cloud Manager 사용자가 다운로드한 배포 로그는 보다 통찰력이 있으며 이제 실패 및 성공 시나리오에 대한 세부 정보를 포함합니다.
+* Cloud Manager 사용자가 다운로드한 배포 로그는 보다 통찰력이 있으며 실패 및 성공 시나리오에 대한 세부 정보를 포함합니다.
 
 * 이제 Adobe git에 코드를 푸시하는 동안 발생하는 간헐적인 오류가 해결되었습니다.
 
@@ -148,7 +148,7 @@ AEM as a Cloud Service 2021.5.0의 Cloud Manager 릴리스 일자는 2021년 5�
 
 * 사용자에게 Java 실행 파일에 대한 실행 권한이 없는 경우 새 logging 문이 빠른 시작의 오류 로그에 추가되었습니다.
 
-* 사용자가 추출이 수행된 CTT UI에서 마이그레이션 세트를 삭제하는 경우 `tmp` 공간을 절약하기 위해 해당 마이그레이션 세트와 연결된 폴더가 삭제됩니다.
+* 사용자가 추출이 수행된 CTT 사용자 인터페이스에서 마이그레이션 세트를 삭제하는 경우 `tmp` 공간을 절약하기 위해 해당 마이그레이션 세트와 연결된 폴더가 삭제됩니다.
 
 ### 버그 수정 {#bug-fixes-ctt-latest}
 

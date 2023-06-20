@@ -2,10 +2,10 @@
 title: 사용자 정의 도메인 이름 추가
 description: Cloud Manager를 사용하여 사용자 정의 도메인 이름을 추가하는 방법을 알아봅니다.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 21496a52fbe3caa08c606ddaeb85481a9d416b3d
-workflow-type: ht
-source-wordcount: '577'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '574'
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ Cloud Manager의 두 위치에서 사용자 정의 도메인 이름을 추가할
 
 >[!NOTE]
 >
->Cloud Manager에서 사용자 정의 도메인 이름을 추가하려면 사용자에게 **비즈니스 소유자** 또는 **배포 관리자** 역할이 있어야 합니다.
+>사용자에게 다음이 있어야 합니다. **비즈니스 소유자** 또는 **배포 관리자** cloud Manager에서 사용자 정의 도메인 이름을 추가할 역할
 
 ## 도메인 설정 페이지에서 사용자 정의 도메인 이름 추가 {#adding-cdn-settings}
 
@@ -42,7 +42,7 @@ Cloud Manager의 두 위치에서 사용자 정의 도메인 이름을 추가할
    >
    >도메인을 입력할 때 `http://`, `https://` 또는 공백을 포함하지 마십시오.
 
-1. 서비스를 도메인 이름과 연결할 **환경**&#x200B;을 선택합니다.
+1. 다음 항목 선택 **환경** 도메인 이름과 연결된 서비스를 포함합니다.
 
 1. **게시** 또는 **미리보기** 서비스를 선택합니다.
 

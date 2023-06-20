@@ -9,10 +9,10 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
-exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 9c25d9991b41a5a714df3f07e84946162e5495c0
+exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2211'
+source-wordcount: '2197'
 ht-degree: 4%
 
 ---
@@ -49,11 +49,11 @@ ht-degree: 4%
 
 의 경우 [Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia):
 
-* `{{page}}` 이(가) (으)로 대체됩니다. `/content/venia/us/en/products/product-page`
-* `{{sku}}` 은 제품의 sku로 교체됩니다(예: ). `VP09`
+* `{{page}}` 이(가) (으)로 대체됨 `/content/venia/us/en/products/product-page`
+* `{{sku}}` 는 제품의 sku로 대체됩니다(예: ). `VP09`
 * `{{url_key}}` 이(가) 제품의 (으)로 대체됩니다. `url_key` 속성(예: ) `lenora-crochet-shorts`
 * `{{url_path}}` 이(가) 제품의 (으)로 대체됩니다. `url_path`, 예: `venia-bottoms/venia-pants/lenora-crochet-shorts`
-* `{{variant_sku}}` 은(는) 현재 선택한 변형으로 대체됩니다(예: ). `VP09-KH-S`
+* `{{variant_sku}}` 는 현재 선택한 변형(예: )으로 대체됩니다. `VP09-KH-S`
 
 다음 이후 `url_path` 더 이상 사용되지 않는 경우 사전 정의된 제품 URL 형식은 `url_rewrites` 다음과 같은 경우 대안으로 가장 많은 경로 세그먼트가 있는 세그먼트를 선택합니다. `url_path` 을(를) 사용할 수 없습니다.
 
@@ -68,9 +68,9 @@ ht-degree: 4%
 
 의 경우 [Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia):
 
-* `{{page}}` 이(가) (으)로 대체됩니다. `/content/venia/us/en/products/category-page`
-* `{{url_key}}` 은(는) 범주의 `url_key` 속성
-* `{{url_path}}` 은(는) 범주의 `url_path`
+* `{{page}}` 이(가) (으)로 대체됨 `/content/venia/us/en/products/category-page`
+* `{{url_key}}` 이(가) 범주의 `url_key` 속성
+* `{{url_path}}` 이(가) 범주의 `url_path`
 
 위의 예제 데이터를 사용하면 기본 URL 형식을 사용하여 형식이 지정된 카테고리 페이지 URL이 다음과 같이 표시됩니다 `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html`.
 
@@ -205,7 +205,7 @@ CIF 구성에서 편집기는 대체 제품 또는 카테고리 페이지 URL �
 
 ### Sling 매핑과 결합 {#sling-mapping}
 
-이외에도 `UrlProvider`를 설정하는 것도 가능합니다. [Sling 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) URL을 다시 작성하고 처리합니다. AEM Archetype 프로젝트에서는 [예제 구성](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) 포트 4503(게시) 및 80(dispatcher)에 대해 일부 Sling 매핑을 구성합니다.
+이외에도 `UrlProvider`를 설정하는 것도 가능합니다. [Sling 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) 를 클릭하여 URL을 다시 작성하고 처리합니다. AEM Archetype 프로젝트에서는 [예제 구성](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) 포트 4503(게시) 및 80(dispatcher)에 대해 일부 Sling 매핑을 구성합니다.
 
 ### AEM Dispatcher와 결합 {#dispatcher}
 
@@ -229,7 +229,7 @@ _**URL 길이와 인코딩된 정보 간의 균형.**_
 
 카탈로그 크기, 특히 카테고리 트리의 크기 및 깊이에 따라, 전체를 인코딩하는 것은 합리적이지 않을 수 있다 `url_path` URL에 포함할 수 있습니다. 이 경우 범주의 만 포함하여 URL 길이를 줄일 수 있습니다. `url_key` 대신, 카테고리를 사용할 때 사용할 수 있는 대부분의 기능을 지원합니다 `url_path`.
 
-또한 다음을 사용합니다. [Sling 매핑](#sling-mapping) sku를 제품과 결합 `url_key`. 대부분의 전자 상거래 시스템에서 sku는 특정 형식을 따르며, 다음과 sku를 구분합니다. `url_key` 수신 요청의 경우 쉽게 가능합니다. 이를 염두에 두고 제품 페이지 URL을 다음과 같이 다시 작성할 수 있어야 합니다 `/p/{{category}}/{{sku}}-{{url_key}}.html`, 범주 URL `/c/{{url_key}}.html` 존경심을 가지고. 다음 `/p` 및 `/c` 제품 및 카테고리 페이지를 다른 컨텐츠 페이지와 구분하려면 여전히 접두사가 필요합니다.
+또한 다음을 사용합니다. [Sling 매핑](#sling-mapping) sku를 제품과 결합 `url_key`. 대부분의 전자 상거래 시스템에서 sku는 특정 형식을 따르며, 다음과 sku를 구분합니다. `url_key` 수신 요청의 경우 쉽게 가능합니다. 이를 염두에 두고 제품 페이지 URL을 다음과 같이 다시 작성할 수 있어야 합니다 `/p/{{category}}/{{sku}}-{{url_key}}.html`, 범주 URL `/c/{{url_key}}.html` 존경심을 가지고. 다음 `/p` 및 `/c` 제품 및 카테고리 페이지를 다른 컨텐츠 페이지와 구분하는 데 여전히 접두사가 필요합니다.
 
 ### 새 URL 형식으로 마이그레이션 {#migrate-url-formats}
 

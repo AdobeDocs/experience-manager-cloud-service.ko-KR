@@ -2,10 +2,10 @@
 title: Maven 프로젝트 버전 처리
 description: AEM as a Cloud Service의 스테이징 및 프로덕션 배포의 경우 Cloud Manager는 고유한 증분 버전을 생성합니다.
 exl-id: 658bcbed-0733-45da-a3e3-9a5f817099c5
-source-git-commit: 21607fadf33dac038c7f794b933b92f60b8e20a9
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 100%
+source-wordcount: '266'
+ht-degree: 91%
 
 ---
 

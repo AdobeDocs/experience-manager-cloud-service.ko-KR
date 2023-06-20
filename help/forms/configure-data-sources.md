@@ -5,7 +5,7 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: ac525d2500177229221a5d6f79d2a8feeefe3f06
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2195'
 ht-degree: 2%
@@ -78,7 +78,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 1. Go to [!DNL Experience Manager] web console at `https://[server]:[port]/system/console/configMgr`.
 1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and tap to open the configuration in edit mode.
-1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties will be available for use in form data model. Use the following format to specify user profile properties:
+1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model. Use the following format to specify user profile properties:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
 
@@ -134,7 +134,8 @@ RESTful 웹 서비스는 [Swagger 사양](https://swagger.io/specification/v2/) 
       * 체계: REST API에서 사용하는 전송 프로토콜입니다. 드롭다운 목록에 표시되는 구성표 유형의 수는 [!DNL Swagger] 소스.
       * 호스트: REST API를 제공하는 호스트의 도메인 이름 또는 IP 주소입니다. 필수 필드입니다.
       * 기본 경로: 모든 API 경로의 URL 접두어. 선택 필드입니다.\
-         필요한 경우 이러한 필드에 대해 미리 채워진 값을 편집합니다.
+        필요한 경우 이러한 필드에 대해 미리 채워진 값을 편집합니다.
+
    * 인증 유형 선택 — 없음, OAuth2.0([인증 코드](https://oauth.net/2/grant-types/authorization-code/), [클라이언트 자격 증명](https://oauth.net/2/grant-types/client-credentials/)), 기본 인증, API 키 또는 사용자 지정 인증 — RESTful 서비스에 액세스하고 그에 따라 인증에 대한 세부 정보를 제공합니다.
 
    다음을 선택하는 경우 **[!UICONTROL API 키]** 인증 유형으로 API 키 값을 지정합니다. API 키는 요청 헤더 또는 쿼리 매개 변수로 전송될 수 있습니다. 다음에서 다음 옵션 중 하나를 선택합니다 **[!UICONTROL 위치]** 드롭다운 목록을 나열하고 헤더 이름 또는 쿼리 매개 변수를 **[!UICONTROL 매개 변수 이름]** 필드입니다.
@@ -232,10 +233,10 @@ SOAP 기반 웹 서비스는 다음을 사용하여 설명합니다. [WSDL(웹 �
    * 서비스 엔드포인트. WSDL에 언급된 서비스 끝점을 재정의하려면 이 필드에 값을 지정하십시오.
    * 인증 유형 선택 — 없음, OAuth2.0([인증 코드](https://oauth.net/2/grant-types/authorization-code/), [클라이언트 자격 증명](https://oauth.net/2/grant-types/client-credentials/)), 기본 인증 또는 사용자 지정 인증 - SOAP 서비스에 액세스하여 인증에 대한 세부 정보를 제공합니다.
 
-      <!--If you select **[!UICONTROL X509 Token]** as the Authentication type, configure the X509 certificate. For more information, see [Set up certificates](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).-->
-      <!--Specify the KeyStore alias for the X509 certificate in the **[!UICONTROL Key Alias]** field. Specify the time, in seconds, until the authentication request remains valid, in the **[!UICONTROL Time To Live]** field. Optionally, select to sign the message body or timestamp header or both.-->
+     <!--If you select **[!UICONTROL X509 Token]** as the Authentication type, configure the X509 certificate. For more information, see [Set up certificates](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).-->
+     <!--Specify the KeyStore alias for the X509 certificate in the **[!UICONTROL Key Alias]** field. Specify the time, in seconds, until the authentication request remains valid, in the **[!UICONTROL Time To Live]** field. Optionally, select to sign the message body or timestamp header or both.-->
 
-      <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
+     <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
 1. 누르기 **[!UICONTROL 만들기]** 를 클릭하여 SOAP 웹 서비스에 대한 클라우드 구성을 만듭니다.
 
@@ -277,6 +278,7 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. 에서 OData 서비�
    다음을 선택하는 경우 **[!UICONTROL API 키]** 인증 유형으로 API 키 값을 지정합니다. API 키는 요청 헤더 또는 쿼리 매개 변수로 전송될 수 있습니다. 다음에서 다음 옵션 중 하나를 선택합니다 **[!UICONTROL 위치]** 드롭다운 목록을 나열하고 헤더 이름 또는 쿼리 매개 변수를 **[!UICONTROL 매개 변수 이름]** 필드입니다.
 
    >[!NOTE]
+   >
    연결할 OAuth 2.0 인증 유형을 선택해야 합니다. [!DNL Microsoft® Dynamics] 서비스 루트로 OData 끝점을 사용하는 서비스입니다.
 
 1. 누르기 **[!UICONTROL 만들기]** 를 클릭하여 OData 서비스에 대한 클라우드 구성을 만듭니다.

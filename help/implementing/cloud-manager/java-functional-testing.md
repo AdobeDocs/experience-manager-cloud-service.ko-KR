@@ -2,10 +2,10 @@
 title: Java 기능 테스트
 description: AEM as a Cloud Service를 위한 Java 기능 테스트를 작성하는 방법을 알아봅니다.
 exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
-source-git-commit: cda1f51c89a98cfb75d63f8bd9b54e76ee745aa7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 100%
+source-wordcount: '848'
+ht-degree: 94%
 
 ---
 
@@ -91,7 +91,7 @@ Adobe가 제품 기능 테스트를 작성하는 데 사용하는 것과 동일�
 
 ### 사전 요구 사항 {#prerequisites}
 
-1. Cloud Manager의 테스트는 기술 관리 사용자를 통해 실행됩니다.
+1. Cloud Manager의 테스트는 기술 관리자 사용자를 사용하여 실행됩니다.
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ Adobe가 제품 기능 테스트를 작성하는 데 사용하는 것과 동일�
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU | 0.5 | 테스트 실행당 예약된 CPU 시간 |
 | 메모리 | 0.5Gi | 테스트에 할당된 메모리 양, 값(기비바이트) |
-| 시간 초과 | 30m | 테스트가 종료되기까지의 기간입니다. |
+| 시간 초과 | 30m | 테스트가 종료되는 기간입니다. |
 | 권장 기간 | 15m | 이 시간보다 오래 걸리지 않도록 테스트를 작성하는 것이 좋습니다. |
 
 >[!NOTE]
@@ -120,7 +120,7 @@ Cloud Manager 파이프라인에서 기능 테스트를 활성화하기 전에 [
 
 테스트 클래스는 JUnit 테스트이므로 Eclipse, IntelliJ, NetBeans와 같은 주요 Java IDE에서 실행할 수 있습니다. 제품 기능 테스트와 사용자 정의 기능 테스트는 모두 동일한 기술을 기반으로 하므로 둘 다 제품 테스트를 사용자 정의 테스트에 복사하여 로컬로 실행할 수 있습니다.
 
-단, 이러한 테스트를 실행할 때 `aem-testing-clients`(및 기본 Sling 테스트 클라이언트) 라이브러리에서 예상하는 다양한 시스템 속성을 설정해야 합니다.
+그러나 이러한 테스트를 실행할 때 `aem-testing-clients` (및 기본 Sling 테스트 클라이언트) 라이브러리.
 
 시스템 속성은 다음과 같습니다.
 
@@ -130,11 +130,11 @@ Cloud Manager 파이프라인에서 기능 테스트를 활성화하기 전에 [
 | `sling.it.instance.url.1` | 작성자 URL로 설정해야 합니다. | `http://localhost:4502` |
 | `sling.it.instance.runmode.1` | 첫 번째 인스턴스의 실행 모드를 `author`으로 설정해야 합니다. | `author` |
 | `sling.it.instance.adminUser.1` | 작성자 관리 사용자로 설정해야 합니다. | `admin` |
-| `sling.it.instance.adminPassword.1` | 작성자 관리 암호로 설정해야 합니다. |  |
+| `sling.it.instance.adminPassword.1` | 작성자 관리 암호로 설정해야 합니다. |                         |
 | `sling.it.instance.url.2` | 게시 URL로 설정해야 합니다. | `http://localhost:4503` |
 | `sling.it.instance.runmode.2` | 두 번째 인스턴스의 실행 모드를 `publish`으로 설정해야 합니다. | `publish` |
 | `sling.it.instance.adminUser.2` | 게시 관리 사용자로 설정해야 합니다. | `admin` |
-| `sling.it.instance.adminPassword.2` | 게시 관리 암호로 설정해야 합니다. |  |
+| `sling.it.instance.adminPassword.2` | 게시 관리 암호로 설정해야 합니다. |                         |
 
 
 

@@ -3,9 +3,9 @@ title: 워크플로우에서 다른 사용자에게 워크플로우를 할당하
 description: Forms 중심 워크플로를 사용하면 적응형 Forms 기반 워크플로를 신속하게 구축할 수 있습니다. Adobe Sign을 사용하여 문서에 전자 서명하고, 양식 기반 비즈니스 프로세스를 만들고, 데이터를 검색하여 여러 데이터 소스로 보내고, 전자 메일 알림을 보낼 수 있습니다
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '7190'
+source-wordcount: '7189'
 ht-degree: 1%
 
 ---
@@ -60,7 +60,7 @@ Forms 중심 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 작�
 
 
 * **[!UICONTROL 적응형 양식 사용]**: 입력 적응형 양식을 찾는 방법을 지정합니다. 이 옵션은 유형 드롭다운 목록에서 적응형 양식 또는 읽기 전용 적응형 양식을 선택하는 경우 사용할 수 있습니다. 워크플로우에 제출된 적응형 양식을 사용하거나, 절대 경로에서 사용하거나, 변수의 경로에서 사용할 수 있습니다. String 유형의 변수를 사용하여 경로를 지정할 수 있습니다.\
-   여러 적응형 Forms을 워크플로우와 연결할 수 있습니다. 따라서 사용 가능한 입력 방법을 사용하여 런타임에 적응형 양식을 지정할 수 있습니다.
+  여러 적응형 Forms을 워크플로우와 연결할 수 있습니다. 따라서 사용 가능한 입력 방법을 사용하여 런타임에 적응형 양식을 지정할 수 있습니다.
 
 <!-- 
 
@@ -80,7 +80,7 @@ Forms 중심 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 작�
    * **[!UICONTROL 다음을 사용하여 입력 데이터 파일 선택]**: 입력 데이터 파일 경로(.json, .xml, .doc 또는 양식 데이터 모델). 페이로드에 상대적인 경로를 사용하여 입력 데이터 파일을 검색하거나 문서, XML 또는 JSON 데이터 유형의 변수에 저장된 파일을 검색할 수 있습니다. 예를 들어 파일에는 AEM 받은 편지함 애플리케이션을 통해 양식에 대해 제출된 데이터가 포함되어 있습니다. 경로의 예는 다음과 같습니다. [Payload_Directory]/workflow/data.
    * **[!UICONTROL 다음을 사용하여 입력 첨부 파일 선택]**: 해당 위치에서 사용할 수 있는 첨부 파일이 작업과 연결된 양식에 첨부됩니다. 경로는 페이로드에 상대적이거나 문서의 변수에 저장된 첨부 파일을 검색할 수 있습니다. 경로의 예는 다음과 같습니다. [Payload_Directory]/attachments/. 페이로드를 기준으로 배치되는 첨부 파일을 지정하거나 문서 유형(배열 목록 > 문서) 변수를 사용하여 적응형 양식에 대한 입력 첨부 파일을 지정할 수 있습니다.
 
-   <!-- 
+  <!-- 
     
     * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
@@ -92,7 +92,7 @@ Forms 중심 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 작�
 
    * **[!UICONTROL 속성 매핑 요청]**: 요청 속성 매핑 섹션을 사용하여 [요청 속성 이름 및 값](work-with-form-data-model.md#bindargument). 요청에 지정된 속성 이름 및 값을 기반으로 데이터 소스에서 세부 정보를 검색합니다. String 데이터 형식의 변수 또는 리터럴 값을 사용하여 요청 속성 값을 정의할 수 있습니다.
 
-   <!--  
+  <!--  
      
      The prefill service and request attribute mapping options are available only if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. 
      
@@ -104,7 +104,7 @@ Forms 중심 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 작�
    * **[!UICONTROL 다음을 사용하여 첨부 파일 저장]**: 작업에 제공된 양식 첨부 파일을 저장합니다. 페이로드에 상대적인 경로를 사용하여 첨부 파일을 저장하거나 문서 데이터 유형의 배열 목록에 저장할 수 있습니다.
    * **[!UICONTROL 다음을 사용하여 기록 문서 저장]**: 기록 문서 파일을 저장하는 경로입니다. 예를 들어, [Payload_Directory]/DocumentofRecord/credit-card.pdf입니다. 페이로드에 상대적인 경로를 사용하여 기록 문서를 저장하거나 문서 데이터 유형의 변수에 저장할 수 있습니다. 다음을 선택하는 경우 **[!UICONTROL 페이로드 관련]** 옵션을 선택하면 경로 필드를 비워 두면 기록 문서가 생성되지 않습니다. 이 옵션은 유형 드롭다운 목록에서 적응형 양식을 선택하는 경우에만 사용할 수 있습니다.
 
-   <!-- 
+  <!-- 
     
     * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
     * **[!UICONTROL Save PDF document using]**: Save the PDF document using a path that is relative to the payload or store it in a variable of Document data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
@@ -122,7 +122,7 @@ Forms 중심 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 작�
 * **[!UICONTROL 인수]**: 참가자 선택기 필드에서 RandomParticipantChoose 스크립트 이외의 스크립트를 선택하면 이 필드를 사용할 수 있습니다. 이 필드에서는 참가자 선택기 필드에서 선택한 스크립트에 대해 쉼표로 구분된 인수 목록을 제공할 수 있습니다.
 
 * **[!UICONTROL 사용자 또는 그룹]**: 작업이 선택한 사용자 또는 그룹에 할당됩니다. 옵션은 다음과 같은 경우에 사용할 수 있습니다. **[!UICONTROL 특정 사용자 또는 그룹 옵션으로]** 다음에서 선택됨: **[!UICONTROL 할당 옵션]** 필드. 필드에는 의 모든 사용자 및 그룹이 나열됩니다. [!DNL workflow-users] 그룹입니다.\
-   다음 **[!UICONTROL 사용자 또는 그룹]** 드롭다운 메뉴에는 로그인한 사용자가 액세스할 수 있는 사용자 및 그룹이 나열됩니다. 사용자 이름 표시는 다음에 대한 액세스 권한이 있는지에 따라 다릅니다. **[!UICONTROL 사용자]** 특정 사용자에 대한 crx-repository의 노드.
+  다음 **[!UICONTROL 사용자 또는 그룹]** 드롭다운 메뉴에는 로그인한 사용자가 액세스할 수 있는 사용자 및 그룹이 나열됩니다. 사용자 이름 표시는 다음에 대한 액세스 권한이 있는지에 따라 다릅니다. **[!UICONTROL 사용자]** 특정 사용자에 대한 crx-repository의 노드.
 
 * **[!UICONTROL 알림 이메일 보내기]**: 피할당자에게 이메일 알림을 전송하려면 이 옵션을 선택합니다. 이러한 알림은 작업이 사용자 또는 그룹에 할당되면 전송됩니다. 다음을 사용할 수 있습니다. **[!UICONTROL 수신자 이메일 주소]** 이메일 주소를 검색하는 메커니즘을 지정하는 옵션입니다.
 
@@ -135,7 +135,7 @@ Forms 중심 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 작�
    * 다음의 경우 **[!UICONTROL 피할당자가 받은 편지함 공유를 통해 공유하도록 허용]** 옵션이 선택되어 있고 사용자가 받은 편지함 항목을 공유하거나 다른 사용자가 받은 편지함 항목에 액세스할 수 있도록 허용합니다. 이전에 언급된 옵션이 활성화된 작업만 다른 사용자와 공유됩니다.
    * 다음의 경우 **[!UICONTROL 피할당자가 &#39;부재 중&#39; 설정을 사용하여 위임하도록 허용]** 이(가) 선택되어 있습니다. 피할당자는 다른 부재 중 옵션과 함께 다른 사용자에게 작업을 위임하는 옵션을 활성화할 수 있습니다. 부재 중 사용자에게 할당된 새 작업은 부재 중 설정에 언급된 사용자에게 자동으로 위임(할당)됩니다.
 
-   부재 중이어서 할당된 작업을 수행할 수 없는 동안 다른 사용자가 할당자 작업을 선택할 수 있습니다.
+  부재 중이어서 할당된 작업을 수행할 수 없는 동안 다른 사용자가 할당자 작업을 선택할 수 있습니다.
 
 * **[!UICONTROL 작업]** > **[!UICONTROL 기본 작업]**: 즉시 제출, 저장 및 재설정 작업을 사용할 수 있습니다. 모든 기본 작업은 기본적으로 활성화되어 있습니다.
 * **[!UICONTROL 경로 변수]**: 경로 변수의 이름입니다. 경로 변수는 사용자가 AEM 받은 편지함에서 선택한 사용자 지정 작업을 캡처합니다.
@@ -354,7 +354,7 @@ DDX 호출 단계에는 다음 속성이 있습니다.
 
    * **[!UICONTROL 페이로드 관련]**: 페이로드 관련 경로에 저장된 첨부 파일을 검색하려면 옵션을 사용합니다. 옵션을 선택하고 첨부 파일을 포함하는 폴더 이름을 지정하거나 텍스트 상자에 첨부 파일 이름을 지정합니다.
 
-      예를 들어 CRX 저장소의 페이로드 관련 폴더에 `attachment\attachment-folder` 위치, 지정 `attachment\attachment-folder` 을(를) 선택한 후 텍스트 상자에서 **[!UICONTROL 페이로드 관련]** 옵션을 선택합니다.
+     예를 들어 CRX 저장소의 페이로드 관련 폴더에 `attachment\attachment-folder` 위치, 지정 `attachment\attachment-folder` 을(를) 선택한 후 텍스트 상자에서 **[!UICONTROL 페이로드 관련]** 옵션을 선택합니다.
 
    * **[!UICONTROL JSON 점 표기법]**: 사용할 값이 JSON 파일에 있는 경우 옵션을 사용합니다. 예: insurance.customerDetails.emailAddress. JSON 점 표기법 옵션은 입력 JSON의 입력 필드 매핑 옵션을 선택한 경우에만 사용할 수 있습니다.
    * **[!UICONTROL 입력 JSON의 입력 필드 매핑]**: JSON 파일의 경로를 지정하여 JSON 파일에서 일부 서비스 인수의 입력 값을 가져옵니다. JSON 파일의 경로는 페이로드에 상대적이거나 절대 경로이거나 JSON 또는 양식 데이터 모델 유형의 변수를 사용하여 입력 JSON 문서를 선택할 수 있습니다.
@@ -387,7 +387,7 @@ DDX 호출 단계에는 다음 속성이 있습니다.
 * **[!UICONTROL 미리 알림 이메일 빈도]**: 일별 또는 주별 간격으로 미리 알림 이메일을 보낼 수 있습니다. 주는 문서화된 사용자가 서명에 할당된 날로부터 계산됩니다.
 * **[!UICONTROL 서명 프로세스]**: 문서에 순차적 또는 병렬 방식으로 서명하도록 선택할 수 있습니다. 서명자 한 사람이 서명할 문서를 한 번에 순차적으로 받습니다. 첫 번째 서명자가 문서 서명을 완료한 후 문서가 두 번째 서명자에게 전송되는 방식입니다. 여러 서명자가 문서에 한 번에 서명할 수 있습니다.
 * **[!UICONTROL 리디렉션 URL]**: 리디렉션 URL을 지정합니다. 문서에 서명한 후 피할당자를 URL로 리디렉션할 수 있습니다. 일반적으로 이 URL에는 감사 메시지나 추가 지침이 포함되어 있습니다.
-* **[!UICONTROL 워크플로 단계]**: 워크플로우에는 여러 단계가 있을 수 있습니다. 이러한 단계는 AEM 받은 편지함에 표시됩니다. 모델 속성에서 이러한 단계를 정의할 수 있습니다( **[!UICONTROL 사이드 킥]** > **[!UICONTROL 페이지]** > **[!UICONTROL 페이지 속성]** > **[!UICONTROL 단계]**).
+* **[!UICONTROL 워크플로 단계]**: 워크플로우에는 여러 단계가 있을 수 있습니다. 이러한 단계는 AEM 받은 편지함에 표시됩니다. 모델 속성에서 이러한 단계를 정의할 수 있습니다( **[!UICONTROL Sidekick]** > **[!UICONTROL 페이지]** > **[!UICONTROL 페이지 속성]** > **[!UICONTROL 단계]**).
 * **[!UICONTROL 서명자 선택]**: 문서에 대한 서명자를 선택하는 방법을 지정합니다. 워크플로우를 사용자 또는 그룹에 동적으로 할당하거나 서명자의 세부 정보를 수동으로 추가할 수 있습니다.
 * **[!UICONTROL 서명자 선택을 위한 스크립트 또는 서비스]**: 서명자 선택 필드에서 동적으로 옵션을 선택한 경우에만 옵션을 사용할 수 있습니다. ECMAScript 또는 서비스를 지정하여 문서에 대한 서명자 및 확인 옵션을 선택할 수 있습니다.
 * **[!UICONTROL 서명자 세부 정보]**: 서명자 선택 필드에서 수동으로 옵션을 선택한 경우에만 옵션을 사용할 수 있습니다. 이메일 주소를 지정하고 선택적 확인 메커니즘을 선택합니다. 2단계 확인 메커니즘을 선택하기 전에 구성된 항목에 대해 해당 확인 옵션이 활성화되어 있는지 확인하십시오 [!DNL Adobe Sign] 계정입니다. 문자열 데이터 유형의 변수를 사용하여 전자 메일, 국가 코드 및 전화 번호 필드에 대한 값을 정의할 수 있습니다. 국가 코드 및 전화 번호 필드는 2단계 확인 드롭다운 목록에서 전화 확인을 선택한 경우에만 표시됩니다.
@@ -526,7 +526,7 @@ Send a document directly to a printer. It supports the following printing access
 
 * **[!UICONTROL 다음을 사용하여 콘텐츠 루트 위치 선택]**: 콘텐츠 루트는 양식 디자인에 사용된 상대 에셋을 검색할 URI, 절대 참조 또는 저장소 위치를 지정하는 문자열 값입니다. 예를 들어 양식 디자인이 상대적으로 이미지를 참조하는 경우 `../myImage.gif`, `myImage.gif` 은(는) 다음 위치에 있어야 합니다. `repository://`. 기본값은 입니다. `repository://`저장소의 루트 수준을 가리킵니다.
 
-   애플리케이션에서 자산을 선택하는 경우 컨텐츠 루트 URI 경로의 구조가 올바른지 확인하십시오. 예를 들어 SampleApp이라는 응용 프로그램에서 폼을 선택하고 `SampleApp/1.0/forms/Test.xdp`, 콘텐츠 루트 URI를 다음으로 지정해야 합니다. `repository://administrator@password/Applications/SampleApp/1.0/forms/`, 또는 `repository:/Applications/SampleApp/1.0/forms/` (권한이 null인 경우). 컨텐츠 루트 URI를 이러한 방식으로 지정하면 양식에서 참조된 모든 자산의 경로가 이 URI에 대해 확인됩니다.
+  애플리케이션에서 자산을 선택하는 경우 컨텐츠 루트 URI 경로의 구조가 올바른지 확인하십시오. 예를 들어 SampleApp이라는 응용 프로그램에서 폼을 선택하고 `SampleApp/1.0/forms/Test.xdp`, 콘텐츠 루트 URI를 다음으로 지정해야 합니다. `repository://administrator@password/Applications/SampleApp/1.0/forms/`, 또는 `repository:/Applications/SampleApp/1.0/forms/` (권한이 null인 경우). 컨텐츠 루트 URI가 이러한 방식으로 지정되면 양식의 모든 참조된 에셋의 경로가 이 URI에 대해 확인됩니다.
 
 * **[!UICONTROL 다음을 사용하여 XCI 파일 선택]**: XCI 파일은 양식 디자인 요소에 사용되는 글꼴 및 기타 속성을 설명하는 데 사용됩니다. 페이로드에 상대적인 XCI 파일을 절대 경로에 두거나 문서 데이터 유형의 변수를 사용할 수 있습니다.
 
@@ -544,7 +544,7 @@ Send a document directly to a printer. It supports the following printing access
 
 ## 비대화형 PDF 출력 단계 생성   {#generatePDFdocuments}
 
-1. 사이드 킥의 Forms Workflow 탭 아래에 있는 비대화형 PDF 출력 생성 워크플로우를 드래그합니다.
+1. Sidekick의 Forms Workflow 탭 아래에 있는 비대화형 PDF 출력 생성 워크플로우를 드래그합니다.
 1. 추가된 워크플로 단계를 두 번 클릭하여 구성 요소를 편집합니다.
 1. 구성 요소 편집 대화 상자에서 입력 문서, 출력 문서 및 추가 매개 변수를 구성하고 **[!UICONTROL 확인]**.
 

@@ -2,10 +2,10 @@
 title: Universal Editor로 콘텐츠 작성
 description: 콘텐츠 작성자가 Universal Editor를 사용하여 얼마나 쉽고 직관적으로 콘텐츠를 만들 수 있는지 알아봅니다.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 100%
+source-wordcount: '1147'
+ht-degree: 84%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ## 소개 {#introduction}
 
-Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면을 편집할 수 있기 때문에 뛰어난 경험을 제공하고, 콘텐츠 속도를 높이고, 최신 개발자 경험을 제공할 수 있습니다.
+범용 편집기를 사용하면 모든 구현에서 콘텐츠의 모든 측면을 편집할 수 있으므로 탁월한 경험을 제공하고 콘텐츠 속도를 높이며 최신 개발자 경험을 제공할 수 있습니다.
 
 이를 위해 제공되는 직관적인 UI는 콘텐츠 작성자가 최소한의 교육만 받으면 사용할 수 있어 바로 부담 없이 콘텐츠 편집을 시작할 수 있습니다.
 
@@ -29,7 +29,7 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 
 ## 앱 준비 {#prepare-app}
 
-Universal Editor를 사용하여 앱의 콘텐츠를 작성하려면 개발자가 앱을 계측하여 편집기를 지원해야 합니다.
+범용 편집기를 사용하여 앱의 콘텐츠를 작성하려면 개발자가 앱을 계측하여 편집기를 지원해야 합니다.
 
 >[!TIP]
 >
@@ -39,7 +39,7 @@ Universal Editor를 사용하여 앱의 콘텐츠를 작성하려면 개발자�
 
 Universal Editor와 함께 작동하도록 앱이 구성되었으면 Universal Editor에 로그인해야 합니다. 로그인하고 [Universal Editor에 액세스하려면](getting-started.md#request-access) Adobe ID가 필요합니다.
 
-로그인한 후 [주소 표시줄에 편집하려는 페이지의 URL을 입력하여](#address-bar)[콘텐츠 편집](#edit-content)을 시작할 수 있습니다.
+로그인한 후 편집할 페이지의 URL을 [주소 표시줄.](#address-bar) 시작할 수 있도록 [콘텐츠 편집.](#edit-content)
 
 ## UI 이해 {#ui}
 
@@ -84,7 +84,7 @@ Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Clou
 
 #### 알림 {#notifications}
 
-이 아이콘에는 현재 할당된 불완전 [알림](/help/implementing/cloud-manager/notifications.md) 수가 배지로 지정됩니다.
+이 아이콘에는 현재 할당된 미완료 항목 수가 배지로 지정되어 있습니다. [알림입니다.](/help/implementing/cloud-manager/notifications.md)
 
 ![알림](assets/notifications.png)
 
@@ -132,7 +132,7 @@ Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바�
 
 #### 게시 {#publish}
 
-독자가 사용할 수 있도록 콘텐츠 변경 사항을 실시간으로 게시하려면 게시 버튼을 탭하거나 클릭합니다.
+게시 버튼을 탭하거나 클릭하여 독자가 사용할 수 있도록 콘텐츠 라이브에 변경 사항을 게시할 수 있습니다.
 
 ![게시 버튼](assets/publish.png)
 
@@ -172,7 +172,7 @@ Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바�
 
 ## 콘텐츠 편집 {#editing-content}
 
-콘텐츠 편집은 간단하고 직관적입니다. [편집 모드](#edit-mode)에서 편집기의 콘텐츠 위로 마우스를 가져가면 편집 가능한 콘텐츠가 파란색 상자로 강조 표시됩니다.
+콘텐츠 편집은 간단하고 직관적입니다. 위치 [편집 모드,](#edit-mode) 편집기에서 콘텐츠 위로 마우스를 가져가면 편집 가능한 콘텐츠가 파란색 상자로 강조 표시됩니다.
 
 ![편집 가능한 콘텐츠는 파란색 상자로 강조 표시됩니다](assets/editable-content.png)
 
@@ -192,7 +192,7 @@ Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바�
 
 Universal Editor에 대해 자세히 알아보려면 다음 문서를 참조하십시오.
 
-* [Universal Editor 소개](introduction.md) - Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면을 편집할 수 있기 때문에 뛰어난 경험을 제공하고, 콘텐츠 속도를 높이고, 최신 개발자 경험을 제공할 수 있다는 점에 대해 알아봅니다.
+* [유니버설 편집기 소개](introduction.md) - Universal Editor를 통해 모든 구현에서 콘텐츠의 모든 측면을 편집할 수 있으므로 탁월한 경험을 제공하고 콘텐츠 속도를 높이며 최신 개발자 경험을 제공할 수 있습니다.
 * [Universal Editor로 콘텐츠 게시](publishing.md) - Universal Visual Editor에서 콘텐츠를 게시하는 방법과 앱에서 게시된 콘텐츠를 처리하는 방법에 대해 알아봅니다.
 * [AEM에서 Universal Editor 시작하기](getting-started.md) - Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 알아봅니다.
 * [Universal Editor 아키텍처](architecture.md) - Universal Editor의 아키텍처 및 해당 서비스와 계층 간에 데이터가 흐르는 방식에 대해 알아봅니다.

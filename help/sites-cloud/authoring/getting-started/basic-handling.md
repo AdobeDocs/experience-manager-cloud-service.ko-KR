@@ -2,9 +2,9 @@
 title: 기본 처리
 description: AEM 탐색 및 기본 사용 방법 익히기
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2994'
+source-wordcount: '2993'
 ht-degree: 78%
 
 ---
@@ -17,7 +17,6 @@ ht-degree: 78%
 >
 >* 일부 기능은 일부 콘솔에서 사용할 수 없으며, 추가 기능은 일부 콘솔에서 사용할 수 있습니다. 개별 콘솔 및 관련 기능에 대한 특정 정보는 다른 페이지에서 더 자세히 다룹니다.
 >* AEM 전체에서 키보드 단축키를 사용할 수 있습니다. 특히 [콘솔을 사용하고](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) [페이지를 편집할 때 ](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)이러한 키보드 단축키를 사용할 수 있습니다.
-
 
 ## 터치 지원 UI {#a-touch-enabled-ui}
 
@@ -89,79 +88,79 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
 * [전역 탐색](#global-navigation)
 
-   콘솔 간에 탐색하려면 **Adobe Experience Manager** 링크를 선택합니다.
+  콘솔 간에 탐색하려면 **Adobe Experience Manager** 링크를 선택합니다.
 
-   ![전역 탐색](/help/sites-cloud/authoring/assets/global-navigation.png)
+  ![전역 탐색](/help/sites-cloud/authoring/assets/global-navigation.png)
 
 * [검색](/help/sites-cloud/authoring/getting-started/search.md)
 
-   ![검색 아이콘](/help/sites-cloud/authoring/assets/search-icon.png)
+  ![검색 아이콘](/help/sites-cloud/authoring/assets/search-icon.png)
 
-   [단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/`(슬래시)를 사용하여 모든 콘솔에서 검색을 호출할 수도 있습니다.
+  [단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/`(슬래시)를 사용하여 모든 콘솔에서 검색을 호출할 수도 있습니다.
 
 * [솔루션](https://www.adobe.com/kr/experience-cloud.html)
 
-   ![솔루션 버튼](/help/sites-cloud/authoring/assets/solutions.png)
+  ![솔루션 버튼](/help/sites-cloud/authoring/assets/solutions.png)
 
 * [도움말](#accessing-help)
 
-   ![도움말 버튼](/help/sites-cloud/authoring/assets/help.png)
+  ![도움말 버튼](/help/sites-cloud/authoring/assets/help.png)
 
 * [알림](/help/sites-cloud/authoring/getting-started/inbox.md)
 
-   ![알림 버튼](/help/sites-cloud/authoring/assets/notifications.png)
+  ![알림 버튼](/help/sites-cloud/authoring/assets/notifications.png)
 
-   이 아이콘에는 현재 할당된 불완전 알림 수가 배지로 지정됩니다.
+  이 아이콘에는 현재 할당된 불완전 알림 수가 배지로 지정됩니다.
 
 * [사용자 속성](/help/sites-cloud/authoring/getting-started/account-environment.md)
 
-   ![사용자 속성 버튼](/help/sites-cloud/authoring/assets/user-properties.png)
+  ![사용자 속성 버튼](/help/sites-cloud/authoring/assets/user-properties.png)
 
 * [레일 선택기](#rail-selector)
 
-   ![레일 선택기 버튼](/help/sites-cloud/authoring/assets/rail-selector.png)
+  ![레일 선택기 버튼](/help/sites-cloud/authoring/assets/rail-selector.png)
 
-   제공된 옵션은 현재 콘솔에 따라 다릅니다. 예를 들어 **Sites**&#x200B;에서 콘텐츠 전용(기본값), 타임라인, 참조 또는 필터 사이드 패널을 선택할 수 있습니다.
+  제공된 옵션은 현재 콘솔에 따라 다릅니다. 예를 들어 **Sites**&#x200B;에서 콘텐츠 전용(기본값), 타임라인, 참조 또는 필터 사이드 패널을 선택할 수 있습니다.
 
-   ![레일 선택기의 예](/help/sites-cloud/authoring/assets/rail-selector-example.png)
+  ![레일 선택기의 예](/help/sites-cloud/authoring/assets/rail-selector-example.png)
 
 * 탐색 표시
 
-   ![탐색 막대의 탐색 표시](/help/sites-cloud/authoring/assets/breadcrumbs-navigation.png)
+  ![탐색 막대의 탐색 표시](/help/sites-cloud/authoring/assets/breadcrumbs-navigation.png)
 
-   레일의 중간에 위치하며 항상 현재 선택된 항목에 대한 설명을 표시하는 [탐색 표시]를 사용하면 특정 콘솔 내에서 탐색할 수 있습니다. **Sites** 콘솔에서는 웹 사이트 수준을 탐색할 수 있습니다.
+  레일의 중간에 위치하며 항상 현재 선택된 항목에 대한 설명을 표시하는 [탐색 표시]를 사용하면 특정 콘솔 내에서 탐색할 수 있습니다. **Sites** 콘솔에서는 웹 사이트 수준을 탐색할 수 있습니다.
 
-   이동 경로 텍스트를 클릭하면 현재 선택한 항목의 계층 구조 수준을 나열하는 드롭다운이 표시됩니다. 해당 위치로 이동하려면 항목을 클릭하십시오.
+  이동 경로 텍스트를 클릭하면 현재 선택한 항목의 계층 구조 수준을 나열하는 드롭다운이 표시됩니다. 해당 위치로 이동하려면 항목을 클릭하십시오.
 
-   ![확장된 탐색 표시의 예](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
+  ![확장된 탐색 표시의 예](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
 
 * **만들기** 버튼
 
-   ![만들기 버튼](/help/sites-cloud/authoring/assets/create.png)
+  ![만들기 버튼](/help/sites-cloud/authoring/assets/create.png)
 
-   클릭하면 콘솔/컨텍스트에 해당하는 옵션이 표시됩니다.
+  클릭하면 콘솔/컨텍스트에 해당하는 옵션이 표시됩니다.
 
 * [보기](#viewing-and-selecting-resources)
 
-   보기 아이콘은 AEM 도구 모음의 맨 오른쪽에 있습니다. 또한 현재 뷰를 나타내므로 변경됩니다. 예를 들어 기본 보기인 **열 보기**&#x200B;에서 다음이 표시됩니다.
+  보기 아이콘은 AEM 도구 모음의 맨 오른쪽에 있습니다. 또한 현재 뷰를 나타내므로 변경됩니다. 예를 들어 기본 보기인 **열 보기**&#x200B;에서 다음이 표시됩니다.
 
-   ![보기 버튼](/help/sites-cloud/authoring/assets/views-button.png)
+  ![보기 버튼](/help/sites-cloud/authoring/assets/views-button.png)
 
-   열 보기, 카드 보기 및 목록 보기 간에 전환할 수 있습니다. 목록 보기에서 보기 설정도 표시됩니다.
+  열 보기, 카드 보기 및 목록 보기 간에 전환할 수 있습니다. 목록 보기에서 보기 설정도 표시됩니다.
 
-   ![보기](/help/sites-cloud/authoring/assets/view.png)
+  ![보기](/help/sites-cloud/authoring/assets/view.png)
 
-   >[!NOTE]
-   >
-   >**보기 설정** 옵션은 **목록 보기** 모드에서만 사용할 수 있습니다.
+  >[!NOTE]
+  >
+  >**보기 설정** 옵션은 **목록 보기** 모드에서만 사용할 수 있습니다.
 
 * 키보드 탐색
 
-   키보드만 사용하여 웹 사이트를 탐색할 수 있습니다. 여기서는 **Tab** 키(또는 **opt+tab**)의 표준 브라우저 기능을 사용하여 초점을 맞출 수 있는 페이지의 요소 간에 이동합니다.
+  키보드만 사용하여 웹 사이트를 탐색할 수 있습니다. 여기서는 **Tab** 키(또는 **opt+tab**)의 표준 브라우저 기능을 사용하여 초점을 맞출 수 있는 페이지의 요소 간에 이동합니다.
 
-   **사이트** 콘솔에는 **주 콘텐츠로 이동**&#x200B;하는 옵션이 추가되었습니다. 이 옵션은 헤더 옵션을 탭할 때 표시되며, (제품) 도구 모음에서 표준 요소를 건너뛰고 주 콘텐츠로 바로 이동할 수 있도록 하여 탐색 시간을 단축할 수 있습니다.
+  **사이트** 콘솔에는 **주 콘텐츠로 이동**&#x200B;하는 옵션이 추가되었습니다. 이 옵션은 헤더 옵션을 탭할 때 표시되며, (제품) 도구 모음에서 표준 요소를 건너뛰고 주 콘텐츠로 바로 이동할 수 있도록 하여 탐색 시간을 단축할 수 있습니다.
 
-   ![주 콘텐츠로 이동](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
+  ![주 콘텐츠로 이동](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
 
 ## 도움말 액세스 {#accessing-help}
 
@@ -169,42 +168,41 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
 * **콘솔 도구 모음**
 
-   위치에 따라 **도움말** 아이콘을 클릭하면 적절한 리소스가 열립니다.
+  위치에 따라 **도움말** 아이콘을 클릭하면 적절한 리소스가 열립니다.
 
-   ![도움말 아이콘](/help/sites-cloud/authoring/assets/help-console.png)
+  ![도움말 아이콘](/help/sites-cloud/authoring/assets/help-console.png)
 
 * **탐색**
 
-   시스템을 처음 탐색하면 [일련의 슬라이드가 표시되면서 AEM 탐색 기능을 소개](#product-navigation)합니다.
+  시스템을 처음 탐색하면 [일련의 슬라이드가 표시되면서 AEM 탐색 기능을 소개](#product-navigation)합니다.
 
-   ![튜토리얼](/help/sites-cloud/authoring/assets/tutorial.png)
+  ![튜토리얼](/help/sites-cloud/authoring/assets/tutorial.png)
 
 * **페이지 편집기**
 
-   페이지를 처음 편집할 때 일련의 슬라이드가 페이지 편집기에 도입됩니다.
+  페이지를 처음 편집할 때 일련의 슬라이드가 페이지 편집기에 도입됩니다.
 
-   ![편집기 튜토리얼](/help/sites-cloud/authoring/assets/editor-tutorial.png)
+  ![편집기 튜토리얼](/help/sites-cloud/authoring/assets/editor-tutorial.png)
 
-   모든 콘솔에 처음 액세스할 때 [제품 탐색 개요](#product-navigation)와 마찬가지로 이 개요를 탐색합니다.
+  모든 콘솔에 처음 액세스할 때 [제품 탐색 개요](#product-navigation)와 마찬가지로 이 개요를 탐색합니다.
 
-   [**페이지 정보** 메뉴에서 **도움말**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help)&#x200B;을 선택하여 언제든지 이 페이지를 다시 볼 수 있습니다.
+  [**페이지 정보** 메뉴에서 **도움말**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help)&#x200B;을 선택하여 언제든지 이 페이지를 다시 볼 수 있습니다.
 
 * **도구 콘솔**
 
-   다음에서 **도구** 콘솔 또한 외부에 액세스할 수 있습니다 **리소스**:
+  다음에서 **도구** 콘솔 또한 외부에 액세스할 수 있습니다 **리소스**:
 
    * **설명서** - 웹 경험 관리 설명서 보기
    * **개발자 리소스** - 개발자 리소스 및 다운로드
 
-   >[!NOTE]
-   >
-   >콘솔에서 있을 때에는 핫키 `?`(물음표)를 사용하여 사용 가능한 단축키 개요를 언제든지 볼 수 있습니다.
-   >
-   >모든 키보드 단축키에 대한 개요는 다음 설명서를 참조하십시오.
-   >
-   >* [페이지 편집을 위한 키보드 단축키](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-   >* [콘솔용 키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-
+  >[!NOTE]
+  >
+  >콘솔에서 있을 때에는 핫키 `?`(물음표)를 사용하여 사용 가능한 단축키 개요를 언제든지 볼 수 있습니다.
+  >
+  >모든 키보드 단축키에 대한 개요는 다음 설명서를 참조하십시오.
+  >
+  >* [페이지 편집을 위한 키보드 단축키](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
+  >* [콘솔용 키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 ## 작업 도구 모음 {#actions-toolbar}
 
@@ -311,7 +309,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
    * 선택한 리소스의 세부 정보가 마지막 열에 표시됩니다.
    * 작업 도구 모음을 사용할 수 있게 됩니다.
 
-   열 보기에서 페이지를 선택하면 선택한 페이지가 다음 세부 정보와 함께 최종 열에 표시됩니다.
+  열 보기에서 페이지를 선택하면 선택한 페이지가 다음 세부 정보와 함께 최종 열에 표시됩니다.
 
    * 페이지 제목
    * 페이지 이름(페이지 URL의 일부)
@@ -319,7 +317,6 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
    * 수정 세부 정보
    * 페이지 언어
    * 게시 및 세부 정보 미리보기
-
 
 ### 카드 보기 {#card-view}
 
@@ -336,7 +333,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
 * [빠른 작업](#quick-actions) 이 보기에서는 선택 및 편집과 같은 일반적인 작업도 사용할 수 있습니다.
 
-   ![빠른 작업](/help/sites-cloud/authoring/assets/quick-actions.png)
+  ![빠른 작업](/help/sites-cloud/authoring/assets/quick-actions.png)
 
 * 카드를 탭하거나 클릭하여 트리 아래를 탐색하거나(빠른 작업이 발생하지 않도록 주의) [헤더에서 탐색 표시](#the-header)를 사용하여 트리 위로 다시 탐색할 수 있습니다.
 
@@ -348,16 +345,16 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 * 리소스 이름을 탭/클릭하여 트리를 탐색하고 [헤더에서 [탐색 표시]](#the-header)를 사용하여 백업할 수 있습니다.
 * 목록에서 모든 항목을 간편하게 선택하려면 목록의 왼쪽 상단에 있는 확인란을 사용합니다.
 
-   ![목록 보기 모두 선택](/help/sites-cloud/authoring/assets/list-view-select-all.png)
+  ![목록 보기 모두 선택](/help/sites-cloud/authoring/assets/list-view-select-all.png)
 
    * 목록의 모든 항목을 선택하면 이 확인란이 선택된 상태로 표시됩니다.
 
       * 확인란을 클릭하거나 탭하면 모든 항목이 선택 해제됩니다.
+
    * 일부 항목만 선택하면 빼기 기호가 표시됩니다.
 
       * 확인란을 클릭하거나 탭하여 모두 선택합니다.
       * 확인란을 다시 클릭하거나 탭하면 모든 항목이 선택 해제됩니다.
-
 
 * [보기] 버튼 아래에 있는 **보기 설정** 옵션을 사용하여 표시할 열을 선택합니다. 다음 열을 표시할 수 있습니다.
 
@@ -371,20 +368,21 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
    * **고유 방문자 수**
    * **페이지에서 보낸 시간**
 
-      ![열 선택](/help/sites-cloud/authoring/assets/select-columns.png)
-   기본적으로 페이지 URL 부분을 구성하는 **이름** 열이 표시됩니다. 일부 경우에는 작성자가 다른 언어로 된 페이지에 액세스해야 하며 작성자가 페이지의 언어를 모르는 경우 페이지 이름(일반적으로 변경되지 않음)을 확인하면 도움이 될 수 있습니다.
+     ![열 선택](/help/sites-cloud/authoring/assets/select-columns.png)
+
+  기본적으로 페이지 URL 부분을 구성하는 **이름** 열이 표시됩니다. 일부 경우에는 작성자가 다른 언어로 된 페이지에 액세스해야 하며 작성자가 페이지의 언어를 모르는 경우 페이지 이름(일반적으로 변경되지 않음)을 확인하면 도움이 될 수 있습니다.
 
 * 목록에서 각 항목의 맨 오른쪽에 있는 점선 세로 막대를 사용하여 항목 순서를 변경합니다.
 
-   >[!NOTE]
-   >
-   >순서 변경은 `jcr:primaryType` 값이 `sling:OrderedFolder`인 순서가 지정된 폴더 내에서만 작동합니다.
+  >[!NOTE]
+  >
+  >순서 변경은 `jcr:primaryType` 값이 `sling:OrderedFolder`인 순서가 지정된 폴더 내에서만 작동합니다.
 
-   ![열 순서](/help/sites-cloud/authoring/assets/column-order.png)
+  ![열 순서](/help/sites-cloud/authoring/assets/column-order.png)
 
-   수직 선택 막대를 클릭하거나 탭하고 항목을 목록의 새 위치로 드래그합니다.
+  수직 선택 막대를 클릭하거나 탭하고 항목을 목록의 새 위치로 드래그합니다.
 
-   ![목록 순서 지정](/help/sites-cloud/authoring/assets/order-list.png)
+  ![목록 순서 지정](/help/sites-cloud/authoring/assets/order-list.png)
 
 ## 레일 선택기 {#rail-selector}
 

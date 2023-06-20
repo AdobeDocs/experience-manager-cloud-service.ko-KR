@@ -2,9 +2,9 @@
 title: 확장 [!DNL Adobe Experience Manager] Adobe Developer App Builder as a Cloud Service 사용.
 description: 확장 [!DNL Adobe Experience Manager] Adobe Developer App Builder as a Cloud Service 사용.
 exl-id: 50d82745-5deb-4bfa-961b-714842403601
-source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ App Builder는 Adobe Experience Manager을 확장하는 사용자 지정 경험�
 
 App Builder는 고객이 다양한 사용 사례에서 Adobe Experience Manager을 쉽게 확장할 수 있는 방법을 제공합니다.
 
-* 미들웨어 확장성 - 사용자 정의 커넥터를 구축하는 Adobe 애플리케이션과 외부 시스템을 연결하거나 사전 구축된 통합 세트를 활용합니다.
+* 미들웨어 확장성 - 사용자 정의 커넥터를 빌드하는 Adobe 애플리케이션과 외부 시스템을 연결하거나 사전 설치된 통합 세트를 사용합니다.
 * 핵심 서비스 확장성 - 사용자 정의 기능 및 비즈니스 논리를 통해 기본 동작을 확장하여 핵심 애플리케이션 기능을 확장합니다.
 * 사용자 경험 확장성 - 핵심 경험을 확장하여 비즈니스 요구 사항을 지원하거나 고객별 디지털 속성, 상점 및 백오피스 앱을 빌드합니다.
 
@@ -27,7 +27,7 @@ App Builder는 2020년 여름부터 개발자 미리보기를 통해 기업 고�
 
 >[!NOTE]
 >
-> App Builder를 활용하려는 AEM 6.5 고객의 경우 다음 위치로 이동하십시오. [Adobe Developer App Builder를 사용하여 Adobe Experience Manager 6.5 확장](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
+> App Builder를 사용하려는 AEM 6.5 고객의 경우 다음을 참조하십시오. [Adobe Developer App Builder를 사용하여 Adobe Experience Manager 6.5 확장](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
 
 ## 아키텍처 {#architecture}
 
@@ -38,7 +38,7 @@ Adobe Developer App Builder는 기본 솔루션 대신 AEM과 같은 Adobe 클�
 * 서비스 — 서버리스 플랫폼에서 인프라를 호스팅하기 위한 I/O 런타임 및 이벤트 기반 통합을 위한 I/O 이벤트. 또한 데이터 및 파일 저장을 위한 기본 지원을 제공합니다.
 * Adobe Experience Cloud — 개발자는 Experience Cloud 조직 내에 게시할 확장 및 통합을 제출할 수 있습니다. 그런 다음 시스템 관리자는 이러한 확장을 검토, 관리 및 승인할 수 있습니다. 게시되면 사용자 지정 App Builder 확장 및 도구를 다른 Adobe Experience Cloud 앱과 함께 찾을 수 있습니다.
 
-다음 다이어그램은 App Builder에 구축된 표준 애플리케이션이 이러한 기능을 활용하는 방법을 보여 줍니다.
+다음 다이어그램은 App Builder에 구축된 표준 애플리케이션이 이러한 기능을 사용하는 방법을 보여 줍니다.
 
 ![아키텍처](/help/implementing/developing/extending/assets/appbuilder-architecture.jpg)
 

@@ -2,10 +2,10 @@
 title: 환경 관리
 description: 만들 수 있는 환경 유형과 Cloud Manager 프로젝트용으로 환경을 만드는 방법에 대해 알아봅니다.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: e5142052423abee7a2e2ed64affb2b04a93bf0d1
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2336'
-ht-degree: 98%
+source-wordcount: '2325'
+ht-degree: 93%
 
 ---
 
@@ -157,7 +157,7 @@ Cloud Manager는 AEM as a Cloud Service 환경에 미리보기 서비스(추가 
 
 ![미리보기 서비스 및 해당 허용 목록](assets/preview-ip-allow.png)
 
-필요한 권한이 있는 사용자는 미리보기 서비스 URL을 공유하기 전에 다음 단계를 완료해야 이 URL에 정상적으로 액세스할 수 있습니다.
+필요한 권한이 있는 사용자는 미리보기 서비스 URL을 공유하기 전에 다음 단계를 완료하여 해당 URL에 액세스할 수 있어야 합니다.
 
 1. 적절한 IP 허용 목록을 만들어 미리보기 서비스에 적용하고 `Preview Default [<envId>]` 허용 목록을 즉시 적용 취소합니다.
 
@@ -216,7 +216,7 @@ Cloud Manager는 파이프라인과 함께 마지막으로 배포된 버전보�
 
 ## 개발 환경 삭제 {#deleting-environment}
 
-필요한 권한이 있는 사용자는 개발 환경을 삭제할 수 있습니다.
+필수 권한이 있는 사용자는 개발 환경을 삭제할 수 있습니다.
 
 **환경** 카드에 있는 프로그램의 **개요** 화면에서 삭제하려는 개발 환경의 줄임표 버튼을 클릭합니다.
 
@@ -290,9 +290,9 @@ IP 허용 목록을 관리하려면 프로그램 **개요** 페이지에 있는 
 
 ### IP 허용 목록 적용 {#apply-ip-allow-list}
 
-IP 허용 목록을 적용하면 허용 목록 정의에 포함된 모든 IP 범위가 환경의 작성자 또는 게시 서비스와 연결됩니다. IP 허용 목록을 적용하려면 **비즈니스 소유자** 또는 **배포 관리자** 역할이 있는 사용자가 로그인해야 합니다.
+IP 허용 목록을 적용하면 허용 목록 정의에 포함된 모든 IP 범위가 환경의 작성자 또는 게시 서비스와 연결됩니다. 의 사용자 **비즈니스 소유자** 또는 **배포 관리자** ip 역할을 적용하려면 허용 목록이 로그인해야 합니다.
 
-환경에 IP 허용 목록을 적용하려면 Cloud Manager에 IP 허용 목록이 있어야 합니다. Cloud Manager의 IP 허용 목록에 대한 자세한 내용은 [Cloud Manager의 IP 허용 목록 소개](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) 문서를 참조하십시오.
+IP 허용 목록을 환경에 적용하려면 Cloud Manager에 IP 환경이 있어야 합니다. Cloud Manager의 IP 허용 목록에 대한 자세한 내용은 [Cloud Manager의 IP 허용 목록 소개](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) 문서를 참조하십시오.
 
 다음 단계를 따라 IP 허용 목록을 적용하십시오.
 
@@ -302,7 +302,7 @@ IP 허용 목록을 적용하면 허용 목록 정의에 포함된 모든 IP 범
 
 ### IP 허용 목록 적용 취소 {#unapply-ip-allow-list}
 
-IP 허용 목록의 적용을 취소하면 환경의 작성자 또는 게시자 서비스에서 허용 목록 정의에 포함된 모든 IP 범위의 연결이 해제됩니다. IP 허용 목록을 적용 취소하려면 **비즈니스 소유자** 또는 **배포 관리자** 역할이 있는 사용자가 로그인해야 합니다.
+IP 허용 목록의 적용을 취소하면 환경의 작성자 또는 게시자 서비스에서 허용 목록 정의에 포함된 모든 IP 범위의 연결이 해제됩니다. 의 사용자 **비즈니스 소유자** 또는 **배포 관리자** ip 허용 목록을 적용 취소하려면 역할이 로그인해야 합니다.
 
 다음 단계를 따라 IP 허용 목록을 적용 취소하십시오.
 

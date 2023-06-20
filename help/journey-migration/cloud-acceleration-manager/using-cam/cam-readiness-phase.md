@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager의 준비 단계
 description: 이 페이지에서는 Cloud Acceleration Manager의 준비 단계에 대한 개요를 제공합니다.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1057'
+source-wordcount: '1055'
 ht-degree: 5%
 
 ---
@@ -83,7 +83,6 @@ Cloud Acceleration Manager에서 프로젝트를 생성했으면 이제 준비 �
    >* 옵션 **PDF으로 저장** 는 위의 기능에 대해 권장되고 지원됩니다.
    >* 브라우저의 인쇄 버튼을 사용하면 한 페이지만 인쇄됩니다.
 
-
    ![이미지](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 ### 추세선 보기 사용 {#trendline-view-cam}
@@ -121,7 +120,6 @@ Cloud Acceleration Manager에서 프로젝트를 생성했으면 이제 준비 �
    >다음 트렌드를 표시하는 두 개의 그래프가 표시됩니다.
    >1. **보고서 결과 트렌드**
    >1. **사용자 지정 구성 요소 및 템플릿 트렌드**
-
    >
    >아래 그림과 같이 드롭다운을 통해 그래픽 보기를 추가하거나 변경할 수 있습니다.
    >![이미지](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
@@ -138,7 +136,6 @@ Cloud Acceleration Manager에서 프로젝트를 생성했으면 이제 준비 �
 >* 각 카드를 클릭하여 관련 탭을 엽니다.
 >* 공유 또는 나중에 검색할 수 있도록 모든 보고서 탭(필터링 포함)을 책갈피로 지정
 >* 세부 정보 아이콘을 사용하여 각 보고서 검색 결과의 세부 정보를 볼 수 있습니다
-
 
 #### 보고서 속성 {#report-properties}
 
@@ -183,7 +180,7 @@ Cloud Acceleration Manager에서 프로젝트를 생성했으면 이제 준비 �
 * 평가
 * 콘텐츠 마이그레이션 고려 사항
 
-   ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
+  ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## Planning 및 설정 카드 사용 {#planning-setup}
 

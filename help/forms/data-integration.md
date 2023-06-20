@@ -3,14 +3,14 @@ title: 데이터베이스를 연결하는 방법 [!DNL AEM Forms] as a Cloud Ser
 seo-title: AEM Forms Data Integration
 description: 에서 RESTful 웹 서비스, SOAP 기반 웹 서비스 및 OData 서비스에 데이터를 검색하고 저장할 수 있습니다. [!DNL AEM Forms] as a Cloud Service. 이 서비스는 데이터를 검색, 테스트, 유효성 검사 및 다양한 유형의 데이터 소스로 전송하는 전용 도구를 제공합니다.
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 1%
 
 ---
 
-# 데이터 소스를 클라우드 서비스에 연결 {#aem-forms-data-integration}
+# 데이터 소스를 Cloud Service에 연결 {#aem-forms-data-integration}
 
 ![데이터 통합](do-not-localize/data-integeration.png)
 
@@ -40,7 +40,7 @@ ht-degree: 1%
 
 ## 데이터 통합 시작 {#get-started-with-data-integration}
 
-데이터 통합을 구현하는 첫 번째 단계는 적응형 Forms 및 대화형 통신 사용 사례에서 활용할 정보를 저장하는 데이터 소스를 식별하고 구성하는 것입니다. 그런 다음 하나 이상의 데이터 소스에서 데이터 모델 개체, 속성 및 서비스를 사용하는 양식 데이터 모델을 만듭니다. 대화형 통신의 적응형 양식 필드 또는 자리 표시자가 각 데이터 소스 속성에 바인딩되는 양식 데이터 모델을 기반으로 적응형 Forms 및 대화형 커뮤니케이션을 만들 수 있습니다.
+데이터 통합을 구현하는 첫 번째 단계는 적응형 Forms 및 대화형 통신 사용 사례에서 사용할 정보를 저장하는 데이터 소스를 식별하고 구성하는 것입니다. 그런 다음 하나 이상의 데이터 소스에서 데이터 모델 개체, 속성 및 서비스를 사용하는 양식 데이터 모델을 만듭니다. 대화형 통신의 적응형 양식 필드 또는 자리 표시자가 각 데이터 소스 속성에 바인딩되는 양식 데이터 모델을 기반으로 적응형 Forms 및 대화형 커뮤니케이션을 만들 수 있습니다.
 
 [!DNL AEM Forms] 또한 데이터 소스와 독립적인 양식 데이터 모델을 만들고 나중에 양식 데이터 모델의 데이터 모델 개체 및 속성을 데이터 소스와 연결하거나 바인딩할 수 있습니다. 양식 데이터 모델을 사용하는 동안 데이터 소스에 대한 종속성을 제거합니다.
 

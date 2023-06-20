@@ -2,16 +2,16 @@
 title: 메일 서비스에 대한 OAuth2 지원
 description: Adobe Experience Manager as a Cloud Service의 메일 서비스에 대한 Oauth2 지원
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 57667c1dda50b2a6a4ac2fccc428f5ccb252563c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 95%
+source-wordcount: '717'
+ht-degree: 85%
 
 ---
 
 # 메일 서비스에 대한 OAuth2 지원 {#oauth2-support-for-the-mail-service}
 
-AEM as a Cloud Service는 조직의 이메일 요구 사항 보호 준수를 위해 통합 메일 서비스에 대한 OAuth2 지원을 제공합니다.
+AEM as a Cloud Service은 조직이 이메일 요구 사항을 준수할 수 있도록 통합 메일 서비스에 대한 OAuth2 지원을 제공합니다.
 
 여러 이메일 공급자에 대해 OAuth를 구성할 수 있습니다. 다음은 Microsoft Office 365 Outlook과 함께 OAuth2를 통해 인증할 AEM 메일 서비스를 구성하는 방법에 대한 단계별 지침입니다. 다른 공급업체가 유사한 방식으로 구성될 수 있습니다.
 
@@ -46,15 +46,15 @@ AEM as a Cloud Service 메일 서비스에 대한 자세한 내용은 [이메일
 
 재점검하려면 AEM측의 메일 서비스에 대한 OAuth2 구성에 대한 다음 정보가 필요합니다.
 
-* 테넌트 ID로 구성되는 인증 URL 형식: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
-* 테넌트 ID로 구성되는 토큰 URL 형식: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
-* 테넌트 ID로 구성되는 새로 고침 URL 형식: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* 테넌트 ID로 구성되는 인증 URL. 형식: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
+* 테넌트 ID로 구성되는 토큰 URL. 형식: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* 테넌트 ID로 구성되는 새로 고침 URL. 형식: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
 * 클라이언트 ID
 * 클라이언트 보안
 
 ### 새로 고침 토큰 생성 {#generating-the-refresh-token}
 
-그런 다음 후속 단계에서 OSGi 구성의 일부가 되는 새로 고침 토큰을 생성해야 합니다.
+그런 다음 후속 단계에서 OSGi 구성의 일부인 새로 고침 토큰을 생성해야 합니다.
 
 다음 단계를 따라 이 작업을 수행할 수 있습니다.
 

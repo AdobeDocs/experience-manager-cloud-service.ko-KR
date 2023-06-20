@@ -1,10 +1,10 @@
 ---
 title: 준비 단계
-description: AEM 설치를 클라우드로 이동할 준비가 되었는지 확인하기 위해 수행해야 하는 단계에 대해 알아봅니다
+description: AEM 설치를 클라우드로 이동할 준비가 되었는지 확인할 수 있도록 수행해야 하는 단계에 대해 알아봅니다
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2074'
 ht-degree: 8%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 8%
 
 ## 지금까지의 스토리 {#story-so-far}
 
-이전 문서, [AEM으로 이동 as a Cloud Service 시작하기](/help/journey-migration/getting-started.md)는 AEM as a Cloud Service으로 마이그레이션하기 위해 수행해야 하는 단계 목록과 이러한 단계의 이점을 설명합니다.
+이전 문서, [AEM으로 이동 as a Cloud Service 시작하기](/help/journey-migration/getting-started.md)는 AEM as a Cloud Service으로 마이그레이션할 수 있도록 수행해야 하는 단계 목록과 함께 그 이점을 설명합니다.
 
 ## 목표 {#objective}
 
-이 문서는 AEM 설치를 클라우드로 이동할 준비가 되었는지 확인하기 위해 고려해야 하는 요소를 이해하는 데 도움이 됩니다.
+이 문서는 AEM 설치를 클라우드로 이동할 준비가 되었는지 확인할 수 있도록 고려해야 하는 요소를 이해하는 데 도움이 됩니다.
 
 * 주목할 만한 변경 사항 및 사용되지 않는 기능에 대해 알아봅니다
 * AEM as a Cloud Service으로의 마이그레이션을 계획하는 방법 이해
@@ -90,7 +90,7 @@ AEM as a Cloud Service는 AEM 프로젝트 관리를 위한 많은 새로운 기
   <tr>
     <td>비동기 작업으로 전환</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/asynchronous-jobs.html?lang=en#configuring-asynchronous-msm-operations">비동기 작업 구성</a></td>
-    <td>환경의 전체 성능을 개선하기 위해 특정 작업은 비동기 모드에서 실행됩니다. 시스템 리소스를 사용할 수 있을 때 비동기 작업이 큐에 추가되고 실행됩니다.</td>
+    <td>환경의 전체 성능을 개선하기 위해 특정 작업은 비동기 모드에서 실행됩니다. 비동기 작업은 시스템 리소스를 사용할 수 있을 때 큐에 추가되어 실행됩니다.</td>
   </tr>
   <tr>
     <td>토큰 기반 인증 및 통합 전략</td>
@@ -150,7 +150,7 @@ AEM as a Cloud Service는 AEM 프로젝트 관리를 위한 많은 새로운 기
   <tr>
     <td>인증 변경 사항</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=ko-KR">AEM as a Cloud Service에 대한 IMS 지원</td>
-    <td>Cloud Service으로 이동하기 전에 작성자 및 게시 모두에서 SAML 2.0 통합을 이전에 사용 중이었던 경우 주요 변경 사항은 AEM as a Cloud Service Author가 Adobe IMS와만 통합된다는 것입니다. 그러나 AEM as a Cloud Service 게시 계층은 여전히 SAML 또는 기타 인증 통합을 활용할 수 있습니다. AEM as a Cloud Service에서는 작성자, 관리자 및 개발자 사용자에 대해서만 IMS 인증 지원 서비스를 제공합니다. IMS 인증은 사이트 방문자와 같은 고객 사이트의 외부 최종 사용자를 지원하지 않습니다.</td>
+    <td>Cloud Service으로 이동하기 전에 작성자 및 게시 모두에서 SAML 2.0 통합을 이전에 사용 중이었던 경우 주요 변경 사항은 AEM as a Cloud Service Author가 Adobe IMS와만 통합된다는 것입니다. 그러나 AEM as a Cloud Service 게시 계층은 여전히 SAML 또는 기타 인증 통합을 사용할 수 있습니다. AEM as a Cloud Service에서는 작성자, 관리자 및 개발자 사용자에 대해서만 IMS 인증 지원 서비스를 제공합니다. IMS 인증은 사이트 방문자와 같은 고객 사이트의 외부 최종 사용자를 지원하지 않습니다.</td>
   </tr>
 </tbody>
 </table>
@@ -163,7 +163,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 
 ## AEM 설치 검토 계획 {#review-planning}
 
-AEM as a Cloud Service으로 도입된 변경 사항에 익숙해졌다면 클라우드로 이동하는 데 필요한 변경 사항의 수준을 측정하기 위해 기존 설치에 대한 검토 계획을 시작해야 합니다.
+AEM as a Cloud Service으로 도입된 변경 사항을 숙지한 후에는 기존 설치에 대한 검토 계획을 시작할 수 있습니다. 이렇게 하면 클라우드로 이동하는 데 필요한 변경 사항의 수준을 측정하는 데 도움이 됩니다.
 
 다음 그림은 검토 단계 중에 포함된 주요 단계를 보여줍니다.
 
@@ -173,7 +173,7 @@ AEM as a Cloud Service으로 도입된 변경 사항에 익숙해졌다면 클�
 
 ### 클라우드 서비스 준비 평가 {#assess-cloud-readiness}
 
-첫 번째 단계는 기존 AEM 버전에서 Cloud Service으로 이동할 준비를 평가하고 AEM as a Cloud Service과 호환되도록 리팩터링이 필요한 영역을 결정하는 것입니다.
+첫 번째 단계는 기존 AEM 버전에서 Cloud ServiceAEM 로 이동할 준비를 평가하고 리팩터링이 as a Cloud Service과 호환되어야 하는 영역을 결정하는 것입니다.
 
 주요 변경 사항 및 더 이상 사용되지 않는 기능에 대해 현재 AEM 소스 코드에 대한 포괄적인 평가를 수행하여 전환 여정에서 예상되는 작업 수준을 결정해야 합니다.
 
@@ -198,7 +198,7 @@ AEM as a Cloud Service으로 도입된 변경 사항에 익숙해졌다면 클�
 
 **보고서 사회화**
 
-모범 사례 분석기 보고서가 완료되면 관련 팀과 공유하여 결과를 확인하고 다음 단계를 계획합니다. 환경 설정에 따라 를 사용하여 인쇄된 버전의 보고서를 배포할 수도 있습니다. [인쇄 미리 보기](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#print-preview-cam).
+모범 사례 분석기 보고서가 완료되면 관련 팀과 공유하여 결과를 확인하고 다음 단계를 계획할 수 있습니다. 환경 설정에 따라 를 사용하여 인쇄된 버전의 보고서를 배포할 수도 있습니다. [인쇄 미리 보기](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#print-preview-cam).
 
 ### 리소스 계획 검토 {#review-resource-planning}
 

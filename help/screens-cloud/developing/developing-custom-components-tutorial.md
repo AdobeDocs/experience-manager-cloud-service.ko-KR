@@ -2,9 +2,9 @@
 title: Screens as a Cloud Service에 대한 사용자 정의 구성 요소 개발
 description: 다음 자습서에서는 AEM Screens에 대한 사용자 지정 구성 요소를 만드는 단계를 안내합니다. AEM Screens은 다른 AEM 제품의 많은 기존 디자인 패턴과 기술을 재사용합니다. 이 튜토리얼에서는 AEM Screens용 을 개발할 때 차이점과 특별한 고려 사항을 강조 표시합니다.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2115'
+source-wordcount: '2106'
 ht-degree: 3%
 
 ---
@@ -69,7 +69,7 @@ Screens 프로젝트의 소스 코드는 일반적으로 다중 모듈 Maven 프
 
    CRXDE Lite의 ui.apps 코드 표현
 
-   다음 **태양계** 구성 요소는 현재 자리 표시자에 불과합니다. 자습서 과정 중에 작성자가 구성 요소에서 표시하는 메시지를 업데이트할 수 있는 기능이 추가됩니다.
+   다음 **태양계** 구성 요소는 현재 자리 표시자에 불과합니다. 자습서 과정에서 작성자가 구성 요소에서 표시하는 메시지를 업데이트할 수 있는 기능이 추가되었습니다.
 
 1. 다음 **screens-weretail-run.ui.content** 패키지 설치 코드:
 
@@ -184,7 +184,7 @@ AEM Screens에는 기존 WCM Sites 구성 요소에 대해 반드시 true가 아
 
    위의 는 Hello World 구성 요소에 대한 편집 마크업입니다. 대화 상자 메시지가 채워진 경우 첫 번째 블록에는 구성 요소의 편집 버전이 표시됩니다.
 
-   두 번째 블록은 대화 메시지를 입력하지 않은 경우 렌더링됩니다. 다음 `cq-placeholder` 및 `data-emptytext` 레이블 렌더링 ***헬로 월드*** 그 경우에 장소 보유자로서. 레이블의 문자열은 여러 로케일에서 작성을 지원하기 위해 i18n을 사용하여 국제화할 수 있습니다.
+   두 번째 블록은 대화 메시지를 입력하지 않은 경우 렌더링됩니다. 다음 `cq-placeholder` 및 `data-emptytext` 레이블 렌더링 ***헬로 월드*** 그 경우에 장소 보유자로서. 레이블의 문자열은 i18n을 사용하여 다국어로 구성하여 여러 로케일에서 작성할 수 있습니다.
 
 1. **Hello World 구성 요소에 사용할 Screens 이미지 대화 상자 복사**
 
@@ -242,7 +242,7 @@ AEM Screens에는 기존 WCM Sites 구성 요소에 대해 반드시 true가 아
                                    jcr:primaryType="nt:unstructured"
                                    sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
                                    defaultValue=""
-                                   fieldDescription="Amount of time the image will be shown in the sequence, in milliseconds"
+                                   fieldDescription="Amount of time the image is shown in the sequence, in milliseconds"
                                    fieldLabel="Duration (ms)"
                                    min="0"
                                    name="./duration"/>
@@ -255,7 +255,7 @@ AEM Screens에는 기존 WCM Sites 구성 요소에 대해 반드시 true가 아
    </jcr:root>
    ```
 
-   메시지의 텍스트 필드가 다음 속성에 저장됩니다. `message` 기간 필드의 숫자 필드가 `duration`. 이 두 속성은에서 모두 참조됩니다 `/apps/weretail-run/components/content/helloworld/production.html` HTL별 `${properties.message}` 및 `${properties.duration}`.
+   메시지의 텍스트 필드는 이름이 인 속성에 저장됩니다. `message` 기간 동안 number 필드가 `duration`. 이 두 속성은에서 모두 참조됩니다 `/apps/weretail-run/components/content/helloworld/production.html` HTL별 `${properties.message}` 및 `${properties.duration}`.
 
    ![Hello World - 완료된 대화 상자](/help/screens-cloud/developing/assets/2018-04-29_at_5_21pm.png)
 
@@ -265,7 +265,7 @@ AEM Screens에는 기존 WCM Sites 구성 요소에 대해 반드시 true가 아
 
 클라이언트측 라이브러리는 AEM 구현에 필요한 CSS 및 JavaScript 파일을 구성하고 관리하는 메커니즘을 제공합니다.
 
-AEM Screens 구성 요소는 편집 모드와 미리 보기/프로덕션 모드에서 다르게 렌더링됩니다. 두 개의 클라이언트 라이브러리가 생성되며, 하나는 편집 모드용이고 다른 하나는 미리보기/프로덕션용입니다.
+AEM Screens 구성 요소는 편집 모드와 미리보기/프로덕션 모드에서 다르게 렌더링됩니다. 두 개의 클라이언트 라이브러리가 만들어집니다. 하나는 편집 모드용이고 하나는 미리보기/프로덕션용입니다.
 
 1. Hello World 구성 요소의 클라이언트측 라이브러리에 대한 폴더를 만듭니다.
 
@@ -337,7 +337,7 @@ AEM Screens 구성 요소는 편집 모드와 미리 보기/프로덕션 모드�
 
    이렇게 하면 미리 보기/프로덕션 모드일 때만 스타일이 로드됩니다.
 
-   ![/apps/weretail-run/components/content/helloworld/clientlibs/production에 대한 속성](/help/screens-cloud/developing/assets/2018-04-30_at_5_04pm.png)
+   ![/apps/weretail-run/components/content/helloworld/clientlibs/production용 속성](/help/screens-cloud/developing/assets/2018-04-30_at_5_04pm.png)
 
    /apps/weretail-run/components/content/helloworld/clientlibs/production용 속성
 
@@ -411,6 +411,7 @@ Hello World 구성 요소는 시퀀스 채널에서 사용하기 위한 것입�
 1. 템플릿 단계 - 선택 **시퀀스 채널**
 
    1. 속성 단계
+
    * 기본 탭 > 제목 = **유휴 채널**
    * 채널 탭 > 확인 **온라인으로 채널 만들기**
 
@@ -446,7 +447,7 @@ Hello World 구성 요소는 시퀀스 채널에서 사용하기 위한 것입�
 
 사용자 지정 구성 요소가 에셋(이미지, 비디오, 글꼴, 아이콘 등), 특정 에셋 표현물 또는 클라이언트측 라이브러리(css, js 등)와 같은 외부 리소스를 사용하는 경우 기본적으로 HTML 마크업만 번들로 제공하므로 이러한 리소스는 오프라인 구성에 자동으로 추가되지 않습니다.
 
-플레이어에 다운로드되는 정확한 에셋을 맞춤화하고 최적화할 수 있도록 하기 위해 사용자 지정 구성 요소가 Screens의 오프라인 캐싱 논리에 종속성을 노출하도록 하는 확장 메커니즘을 제공합니다.
+플레이어에 다운로드되는 정확한 에셋을 맞춤화하고 최적화할 수 있도록 사용자 지정 구성 요소가 Screens의 오프라인 캐싱 논리에 종속성을 노출하도록 하는 확장 메커니즘을 제공합니다.
 
 아래 섹션에서는 사용자 지정 오프라인 리소스 핸들러에 대한 템플릿과 `pom.xml` 특정 프로젝트에 사용할 수 있습니다.
 

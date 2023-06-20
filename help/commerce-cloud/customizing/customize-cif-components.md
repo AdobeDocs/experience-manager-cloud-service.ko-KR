@@ -11,9 +11,9 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: d054f960f13b7308dbf42556ef60a971e880197e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2598'
+source-wordcount: '2594'
 ht-degree: 2%
 
 ---
@@ -436,7 +436,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
 
 이 시점에서 을(를) 표시할 시기에 대한 논리입니다 **환경 친화적** 배지가 작동하지만 일반 텍스트에서 일부 스타일을 사용할 수 있습니다. 그런 다음 아이콘과 스타일을 `ui.frontend` 구현을 완료하는 모듈입니다.
 
-1. 다운로드 [eco_friendly.svg](../assets/customize-cif-components/eco_friendly.svg) 파일. 이 이름은 로 사용됩니다. **환경 친화적** 배지.
+1. 다운로드 [eco_friendly.svg](../assets/customize-cif-components/eco_friendly.svg) 파일. 이 변수는 다음으로 사용됩니다. **환경 친화적** 배지.
 1. IDE로 돌아가서 `ui.frontend` 폴더를 삭제합니다.
 1. 추가 `eco_friendly.svg` 에 파일 `ui.frontend/src/main/resources/images` 폴더:
 
@@ -496,7 +496,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
 
 ## 추가 리소스 {#additional-resources}
 
-- [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+- [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko-KR)
 - [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)
 - [AEM CIF 핵심 구성 요소 맞춤화](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
 - [핵심 구성 요소 사용자 정의](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)

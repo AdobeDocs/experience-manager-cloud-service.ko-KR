@@ -2,9 +2,9 @@
 title: Eclipse용 AEM 개발자 도구
 description: Eclipse용 AEM 개발자 도구
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1190'
+source-wordcount: '1184'
 ht-degree: 3%
 
 ---
@@ -34,7 +34,7 @@ AEM 개발자 도구를 사용하기 전에 다음을 수행해야 합니다.
 
 >[!NOTE]
 >
->macOS에서 을(를) 마우스 오른쪽 버튼으로 클릭해야 합니다. **Eclipse.app** 다음을 선택합니다. **패키지 내용 표시** 을(를) 찾으려면 `eclipse.ini`**.**
+>macOS에서 을(를) 마우스 오른쪽 버튼으로 클릭해야 합니다. **Eclipse.app**&#x200B;을 선택한 다음 을 선택합니다 **패키지 내용 표시** 를 찾으려면 `eclipse.ini`**.**
 
 ## Eclipse용 AEM 개발자 도구를 설치하는 방법 {#how-to-install-the-aem-developer-tools-for-eclipse}
 
@@ -104,7 +104,7 @@ _Eclipse용 Experience Manager 개발 도구_ AEM 프로젝트 및 인스턴스�
 
 1. 그런 다음 Eclipse가 연결할 AEM 서버를 구성합니다.
 
-   디버거 기능을 사용하려면 디버그 모드에서 AEM을 시작해야 합니다. 이 모드는 명령줄에 다음을 추가하여 수행할 수 있습니다.
+   디버거 기능을 사용하려면 명령줄에 다음을 추가하여 수행할 수 있는 디버그 모드에서 AEM을 시작해야 합니다.
 
    ```text
        -nofork -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=10123
@@ -165,27 +165,27 @@ _Eclipse용 Experience Manager 개발 도구_ AEM 프로젝트 및 인스턴스�
    1. 의 콘텐츠 바꾸기 `<workspaceFilter>` 로 시작하는 패키지 규칙이 있는 요소 `/apps` 및 `/etc`
       * 예:
 
-         ```xml
-         <?xml version="1.0" encoding="UTF-8"?>
-         <workspaceFilter version="1.0">
-            <filter root="/apps/foo"/>
-            <filter root="/apps/foundation/components/bar"/>
-            <filter root="/etc/designs/foo"/>
-         </workspaceFilter>
-         ```
+        ```xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <workspaceFilter version="1.0">
+           <filter root="/apps/foo"/>
+           <filter root="/apps/foundation/components/bar"/>
+           <filter root="/etc/designs/foo"/>
+        </workspaceFilter>
+        ```
+
    1. 그런 다음 열기 `PROJECT.ui.content/src/main/content/META-INF/filter.xml`.
    1. 다음으로 시작하는 패키지로 규칙을 바꿉니다. `/content`.
       * 예:
 
-         ```xml
-         <?xml version="1.0" encoding="UTF-8"?>
-         <workspaceFilter version="1.0">
-            <filter root="/content/foo"/>
-            <filter root="/content/dam/foo"/>
-            <filter root="/content/usergenerated/content/foo"/>
-         </workspaceFilter>
-         ```
-
+        ```xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <workspaceFilter version="1.0">
+           <filter root="/content/foo"/>
+           <filter root="/content/dam/foo"/>
+           <filter root="/content/usergenerated/content/foo"/>
+        </workspaceFilter>
+        ```
 
 1. 모든 변경 사항을 저장해야 합니다. 이제 해당 새 콘텐츠를 AEM 인스턴스와 동기화할 수 있습니다.
 

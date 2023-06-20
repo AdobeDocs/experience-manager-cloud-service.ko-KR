@@ -2,10 +2,10 @@
 title: 프로젝트 설정
 description: Maven을 사용하여 AEM 프로젝트를 빌드하는 방법과 자체 프로젝트를 만들 때 준수해야 하는 표준에 대해 알아봅니다.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 100%
+source-wordcount: '1404'
+ht-degree: 85%
 
 ---
 
@@ -119,7 +119,7 @@ Cloud Manager 내에서 암호로 보호된 Maven 저장소를 사용하려면 �
 
 Cloud Manager 빌드 프로세스가 시작되면 다음 작업을 수행하십시오.
 
-* 이 파일의 `<servers>` 요소는 Cloud Manager에서 제공하는 기본 `settings.xml` 파일에 병합됩니다.
+* 다음 `<servers>` 이 파일의 요소는 기본값으로 병합됩니다. `settings.xml` cloud Manager에서 제공한 파일입니다.
    * `adobe` 및 `cloud-manager`로 시작하는 서버 ID는 예약된 것으로 간주되며 사용자 정의 서버에서 사용해서는 안 됩니다.
    * 이러한 접두사 중 하나와 일치하지 않는 서버 ID 또는 기본 ID `central`은 Cloud Manager에서 미러링되지 않습니다.
 * 이 파일이 있는 경우 서버 ID는 `pom.xml` 파일 내의 `<repository>` 및/또는 `<pluginRepository>` 요소 내부에서 참조됩니다.
@@ -240,9 +240,9 @@ Maven 저장소에 이진과 함께 전체 프로젝트 소스를 배포하는 �
 
 ## 콘텐츠 패키지 건너뛰기 {#skipping-content-packages}
 
-Cloud Manager에서 빌드는 콘텐츠 패키지를 원하는 수만큼 생성할 수 있습니다. 여러 가지 이유로, 콘텐츠 패키지를 생성하지만 배포하지 않는 것이 바람직할 수 있습니다. 예를 들어 테스트용으로만 사용되거나 빌드 프로세스의 다른 단계에서 다시 패키징될 콘텐츠 패키지를 빌드할 때(예: 다른 패키지의 하위 패키지로)를 들 수 있습니다.
+Cloud Manager에서 빌드는 콘텐츠 패키지를 원하는 수만큼 생성할 수 있습니다. 여러 가지 이유로, 콘텐츠 패키지를 생성하지만 배포하지 않는 것이 바람직할 수 있습니다. 예를 들어 테스트용으로만 사용되거나 빌드 프로세스의 다른 단계에서 다시 패키징되는 콘텐츠 패키지를 빌드할 때 사용할 수 있습니다. 즉, 다른 패키지의 하위 패키지입니다.
 
-이러한 시나리오를 수용하기 위해 Cloud Manager는 빌드된 콘텐츠 패키지의 속성에서 `cloudManagerTarget`이라는 속성을 찾습니다. 이 속성을 `none`으로 설정하면 패키지를 건너뛰고 배포되지 않습니다.
+이러한 시나리오를 수용하기 위해 Cloud Manager는 라는 속성을 찾습니다 `cloudManagerTarget` 을 참조하십시오. 이 속성이 로 설정된 경우 `none`, 패키지를 건너뛰고 배포되지 않습니다.
 
 이 속성을 설정하는 메커니즘은 빌드가 콘텐츠 패키지를 생성하는 방식에 따라 다릅니다. 예를 들어 `filevault-maven-plugin`을 사용하여 다음과 같이 플러그인을 구성합니다.
 
@@ -322,7 +322,7 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 1. 개발 파이프라인은 `foo`를 빌드하고 실행합니다.
 1. 결과적으로 프로덕션 파이프라인은 `bar`를 빌드하고 실행합니다.
 
-이 경우 동일한 커밋 해시가 식별되었으므로 `foo`의 아티팩트가 프로덕션 파이프라인에 재사용됩니다.
+이 경우, 의 아티팩트는 `foo` 동일한 커밋 해시가 식별되었으므로 프로덕션 파이프라인에 재사용됩니다.
 
 ### 옵트아웃 {#opting-out}
 

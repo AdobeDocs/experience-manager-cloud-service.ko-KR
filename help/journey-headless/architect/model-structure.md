@@ -2,10 +2,10 @@
 title: AEM에서의 콘텐츠 조각 모델 만들기에 대해 알아보기
 description: 콘텐츠 조각 모델을 사용하여 Headless CMS용 콘텐츠를 모델링하는 개념 및 메커니즘에 대해 알아봅니다.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 100%
+source-wordcount: '685'
+ht-degree: 92%
 
 ---
 
@@ -45,7 +45,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 이를 선택하면 모델 위치로 이동하고 **만들기**&#x200B;를 선택합니다. 여기에서 여러 주요 세부 정보를 입력할 수 있습니다.
 
-**모델 활성화** 옵션은 기본적으로 활성화됩니다. 즉, 모델은 저장하는 즉시 사용할 수 있습니다(콘텐츠 조각 생성 시). 필요한 경우 비활성화할 수 있음. 나중에 기존 모델을 활성화(또는 비활성화)할 수 있는 기회가 있습니다.
+**모델 활성화** 옵션은 기본적으로 활성화됩니다. 즉, 모델을 저장하는 즉시 (콘텐츠 조각 만들기에서) 사용할 수 있습니다. 필요한 경우 비활성화할 수 있음. 나중에 기존 모델을 활성화(또는 비활성화)할 수 있는 기회가 있습니다.
 
 ![콘텐츠 조각 모델 만들기](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
 
@@ -96,7 +96,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 >[!NOTE]
 >
->작성자가 모델이 아직 게시되지 않은 콘텐츠 조각을 게시하려는 경우 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
+>작성자가 모델이 아직 게시되지 않은 콘텐츠 조각을 게시하려고 하면 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
 
 모델이 게시되는 즉시 작성자의 읽기 전용 모드로 *잠깁니다*. 목표는 특히 게시 환경에서 기존 GraphQL 스키마 및 쿼리에 오류를 발생시킬 수 있는 변경 사항을 방지하는 것입니다. 콘솔에 **잠김**&#x200B;으로 표시됩니다.
 

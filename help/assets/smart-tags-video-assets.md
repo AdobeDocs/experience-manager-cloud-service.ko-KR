@@ -4,7 +4,7 @@ description: Experience Manager은 을 사용하여 상황에 맞는 설명 스�
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1213'
 ht-degree: 3%
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ## 업로드 시 스마트 태깅 비디오 {#smart-tag-assets-on-ingestion}
 
-다음을 수행하는 경우 [비디오 자산 업로드](add-assets.md#upload-assets) 끝 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service], 비디오가 처리됩니다. 처리가 완료되면 다음을 참조하십시오 [!UICONTROL 기본] 에셋 탭 [!UICONTROL 속성] 페이지를 가리키도록 업데이트하는 중입니다. 스마트 태그는 아래의 비디오에 자동으로 추가됩니다 [!UICONTROL 스마트 태그]. 에셋 마이크로서비스 활용 [!DNL Adobe Sensei] 을 클릭하여 이러한 스마트 태그를 만듭니다.
+다음을 수행하는 경우 [비디오 자산 업로드](add-assets.md#upload-assets) 끝 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service], 비디오가 처리됩니다. 처리가 완료되면 다음을 참조하십시오 [!UICONTROL 기본] 에셋 탭 [!UICONTROL 속성] 페이지를 가리키도록 업데이트하는 중입니다. 스마트 태그는 아래의 비디오에 자동으로 추가됩니다 [!UICONTROL 스마트 태그]. 자산 마이크로서비스 사용 [!DNL Adobe Sensei] 을 클릭하여 이러한 스마트 태그를 만듭니다.
 
 ![스마트 태그가 비디오에 추가되고 에셋 속성의 기본 탭에 표시됩니다](assets/smart-tags-added-to-videos.png)
 
@@ -153,4 +153,3 @@ DAM에 이미 있는 비디오 자산은 자동으로 스마트 태그가 지정
 >
 >* [스마트 태그 및 자산 검색 관리](smart-tags.md#manage-smart-tags-and-searches)
 >* [스마트 태그 서비스 교육 및 이미지에 태그 지정](smart-tags.md)
-

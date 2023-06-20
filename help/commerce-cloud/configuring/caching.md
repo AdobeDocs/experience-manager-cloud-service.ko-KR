@@ -1,10 +1,10 @@
 ---
 title: 캐싱 및 성능
 description: GraphQL 및 콘텐츠 캐싱을 활성화하여 상거래 구현의 성능을 최적화하는 데 사용할 수 있는 다양한 구성에 대해 알아봅니다.
-exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f0
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '844'
 ht-degree: 2%
 
 ---
@@ -53,7 +53,7 @@ venia/components/structure/navigation:true:10:600
 
 AEM Dispatcher에서 제한된 시간 동안 CIF 페이지를 캐시할 수 있도록 하려면 를 사용하는 것이 좋습니다. [시간 기반 캐시 무효화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) AEM Dispatcher에서 CIF 페이지를 캐싱할 때 TTL 기반 캐싱이라고도 합니다. 이 기능은 추가 기능을 사용하여 AEM에서 구성할 수 있습니다 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) 패키지.
 
-TTL 기반 캐싱을 사용하여 개발자는 일반적으로 선택한 AEM 페이지에 대해 하나 이상의 캐싱 기간을 정의합니다. 이렇게 하면 AEM Dispatcher에서 CIF 페이지가 구성된 기간까지 캐시되고 콘텐츠가 자주 업데이트됩니다.
+TTL 기반 캐싱을 사용하여 개발자는 일반적으로 선택한 AEM 페이지에 대해 하나 이상의 캐싱 기간을 정의합니다. 이렇게 하면 CIF 페이지가 구성된 기간까지 AEM Dispatcher에서 캐시되고 콘텐츠가 자주 업데이트됩니다.
 
 >[!NOTE]
 >

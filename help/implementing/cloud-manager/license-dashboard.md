@@ -2,10 +2,10 @@
 title: 라이선스 대시보드
 description: Cloud Manager는 조직 또는 테넌트가 사용할 수 있는 AEMaaCS 제품 권한을 쉽게 볼 수 있도록 대시보드를 제공합니다.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: d5e0ca924dee50d7dd4f9057010b1a39780b4352
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 80%
+source-wordcount: '875'
+ht-degree: 77%
 
 ---
 
@@ -79,7 +79,7 @@ Cloud Manager 라이선스 대시보드를 사용하면 다음 정보에 쉽게 
 | 보고서 세트 | 동일한 AEM 인스턴스 및 도메인에 속한 페이지는 데이터를 서로 다른 Analytics 보고서 세트로 전송할 수 있습니다. |
 | 서드파티 모니터링 및 보안 도구 | 모니터링 및 보안 검색 도구는 Analytics 보고서에서 추적되지 않는 AEM에 대한 콘텐츠 요청을 생성할 수 있습니다. |
 | 프리페치 요청 | 프리페치 서비스를 사용하여 페이지를 미리 로드하여 속도를 높이면 콘텐츠 요청 트래픽이 크게 증가할 수 있습니다. |
-| DDOS | Adobe는 DDOS 공격의 트래픽을 자동으로 감지하고 필터링하기 위해 모든 노력을 기울이고 있지만 모든 DDOS 공격을 감지한다고 보장할 수는 없습니다. |
+| DDOS | Adobe은 DDOS 공격의 트래픽을 자동으로 감지하고 필터링하기 위해 모든 노력을 기울이고 있지만 모든 DDOS 공격을 감지한다는 보장은 없습니다 |
 | 트래픽 차단 | 브라우저에서 추적기 차단을 사용하면 일부 요청이 추적되지 않도록 옵트아웃할 수 있습니다. |
 | 방화벽 | 방화벽이 Analytics 추적을 차단할 수 있습니다. 이는 회사 방화벽에서 더 자주 발생합니다. |
 

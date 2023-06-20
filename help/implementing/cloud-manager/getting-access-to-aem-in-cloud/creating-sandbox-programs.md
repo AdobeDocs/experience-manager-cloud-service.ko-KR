@@ -2,10 +2,10 @@
 title: 샌드박스 프로그램 만들기
 description: Cloud Manager를 사용하여 교육, 데모, POC 또는 기타 비프로덕션 목적을 위한 자체 샌드박스 프로그램을 만드는 방법을 알아봅니다.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 100%
+source-wordcount: '462'
+ht-degree: 95%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 100%
 
    ![프로그램 개요 액세스](assets/program-overview-sandbox.png)
 
-1. 프로젝트 만들기 단계가 완료되면 **저장소 정보 액세스** 링크에 액세스하여 git 저장소를 사용할 수 있습니다.
+1. 프로젝트 만들기 단계가 완료되면 **저장소 정보 액세스** git 저장소를 사용할 수 있는 링크입니다.
 
    ![프로그램 구성](assets/create-program4.png)
 

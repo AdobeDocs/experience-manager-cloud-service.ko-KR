@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에서 캐싱
 description: AEM as a Cloud Service에서 캐싱
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 6bca307dcf41b138b5b724a8eb198ac35e2d906e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2832'
+source-wordcount: '2819'
 ht-degree: 2%
 
 ---
@@ -33,56 +33,56 @@ Define DISABLE_DEFAULT_CACHING
 * 를 정의하여 모든 HTML/텍스트 컨텐츠에 대해 재정의할 수 있습니다. `EXPIRATION_TIME` 의 변수 `global.vars` AEM as a Cloud Service SDK Dispatcher 도구 사용.
 * 다음 Apache를 사용하여 CDN 및 브라우저 캐시를 독립적으로 제어하는 등 보다 세분화된 수준에서 재정의할 수 있습니다 `mod_headers` 지시문:
 
-   ```
-   <LocationMatch "^/content/.*\.(html)$">
-        Header set Cache-Control "max-age=200"
-        Header set Surrogate-Control "max-age=3600"
-        Header set Age 0
-   </LocationMatch>
-   ```
+  ```
+  <LocationMatch "^/content/.*\.(html)$">
+       Header set Cache-Control "max-age=200"
+       Header set Surrogate-Control "max-age=3600"
+       Header set Age 0
+  </LocationMatch>
+  ```
 
-   >[!NOTE]
-   >Surrogate-Control 헤더는 Adobe 관리 CDN에 적용됩니다. 를 사용하는 경우 [고객 관리 CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN): CDN 공급자에 따라 다른 헤더가 필요할 수 있습니다.
+  >[!NOTE]
+  >Surrogate-Control 헤더는 Adobe 관리 CDN에 적용됩니다. 를 사용하는 경우 [고객 관리 CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN): CDN 공급자에 따라 다른 헤더가 필요할 수 있습니다.
 
-   전역 캐시 제어 헤더나 넓은 정규 표현식과 일치하는 헤더를 설정하여 비공개로 유지해야 하는 콘텐츠에 적용되지 않도록 할 때 주의하십시오. 규칙이 세분화된 방식으로 적용되도록 하려면 여러 지시문을 사용하는 것이 좋습니다. 이를 통해 AEM은 Dispatcher 설명서에 설명된 대로 Dispatcher에서 캐시할 수 없다고 감지한 항목에 적용되었음을 감지하면 캐시 헤더를 as a Cloud Service으로 제거합니다. AEM에서 항상 캐싱 헤더를 적용하도록 하려면 다음을 추가할 수 있습니다. **항상** 옵션은 다음과 같습니다.
+  전역 캐시 제어 헤더나 넓은 정규 표현식과 일치하는 헤더를 설정하여 비공개로 유지해야 하는 콘텐츠에 적용되지 않도록 할 때 주의하십시오. 규칙이 세분화된 방식으로 적용되도록 하려면 여러 지시문을 사용하는 것이 좋습니다. 이를 통해 AEM은 Dispatcher 설명서에 설명된 대로 Dispatcher에서 캐시할 수 없다고 감지한 항목에 적용되었음을 감지하면 캐시 헤더를 as a Cloud Service으로 제거합니다. AEM에서 항상 캐싱 헤더를 적용하도록 하려면 다음을 추가할 수 있습니다. **항상** 옵션은 다음과 같습니다.
 
-   ```
-   <LocationMatch "^/content/.*\.(html)$">
-        Header unset Cache-Control
-        Header unset Expires
-        Header always set Cache-Control "max-age=200"
-        Header set Age 0
-   </LocationMatch>
-   ```
+  ```
+  <LocationMatch "^/content/.*\.(html)$">
+       Header unset Cache-Control
+       Header unset Expires
+       Header always set Cache-Control "max-age=200"
+       Header set Age 0
+  </LocationMatch>
+  ```
 
-   아래에 파일이 있는지 확인해야 합니다. `src/conf.dispatcher.d/cache` 에는 (기본 구성에 있는) 다음 규칙이 있습니다.
+  아래에 파일이 있는지 확인해야 합니다. `src/conf.dispatcher.d/cache` 에는 (기본 구성에 있는) 다음 규칙이 있습니다.
 
-   ```
-   /0000
-   { /glob "*" /type "allow" }
-   ```
+  ```
+  /0000
+  { /glob "*" /type "allow" }
+  ```
 
 * 특정 콘텐츠가 캐시되지 않도록 하려면 **CDN에서**, Cache-Control 헤더를 로 설정합니다. *비공개*. 예를 들어, 다음은 라는 디렉터리에 있는 html 콘텐츠를 금지합니다 **secure** 이 CDN에서 캐시되는 경우:
 
-   ```
-      <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
-      Header unset Cache-Control
-      Header unset Expires
-      Header always set Cache-Control "private"
-     </LocationMatch>
-   ```
+  ```
+     <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
+     Header unset Cache-Control
+     Header unset Expires
+     Header always set Cache-Control "private"
+    </LocationMatch>
+  ```
 
 * 전용으로 설정된 HTML 콘텐츠는 CDN에서 캐시되지 않지만 다음과 같은 경우 Dispatcher에서 캐시될 수 있습니다. [권한 구분 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ko-KR) 권한이 있는 사용자만 콘텐츠를 제공할 수 있도록 가 구성되어 있습니다.
 
-   >[!NOTE]
-   >다음을 포함한 기타 방법 [dispatcher-ttl AEM ACS Commons 프로젝트](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)는 값을 성공적으로 재정의하지 않습니다.
+  >[!NOTE]
+  >다음을 포함한 기타 방법 [dispatcher-ttl AEM ACS Commons 프로젝트](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)는 값을 성공적으로 재정의하지 않습니다.
 
-   >[!NOTE]
-   >Dispatcher는 자체 콘텐츠에 따라 콘텐츠를 계속 캐시할 수 있습니다 [캐싱 규칙](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). 콘텐츠를 정말로 비공개로 만들려면 Dispatcher가 캐시하지 않았는지 확인해야 합니다.
+  >[!NOTE]
+  >Dispatcher는 자체 콘텐츠에 따라 콘텐츠를 계속 캐시할 수 있습니다 [캐싱 규칙](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). 콘텐츠를 정말로 비공개로 만들려면 Dispatcher가 캐시하지 않았는지 확인해야 합니다.
 
 ### 클라이언트측 라이브러리(js,css) {#client-side-libraries}
 
-* AEM 클라이언트 측 라이브러리 프레임워크를 사용하는 경우 모든 변경 사항이 고유한 경로를 가진 새 파일로 매니페스트되므로 브라우저에서 무기한 캐시할 수 있는 방식으로 JavaScript 및 CSS 코드가 생성됩니다.  즉, 클라이언트 라이브러리를 참조하는 HTML이 필요에 따라 생성되므로 고객은 게시된 대로 새로운 콘텐츠를 경험할 수 있습니다. 캐시 제어는 &quot;immutable&quot; 또는 &quot;immutable&quot; 값을 준수하지 않는 오래된 브라우저에 대해 30일로 설정됩니다.
+* AEM 클라이언트 측 라이브러리 프레임워크를 사용하는 경우 모든 변경 사항이 고유한 경로를 가진 새 파일로 매니페스트되므로 브라우저에서 무기한 캐시할 수 있는 방식으로 JavaScript 및 CSS 코드가 생성됩니다.  즉, 클라이언트 라이브러리를 참조하는 HTML은 필요에 따라 생성되므로 고객은 게시된 대로 새로운 콘텐츠를 경험할 수 있습니다. 캐시 제어는 &quot;immutable&quot; 또는 &quot;immutable&quot; 값을 준수하지 않는 오래된 브라우저에 대해 30일로 설정됩니다.
 * 섹션 보기 [클라이언트 측 라이브러리 및 버전 일관성](#content-consistency) 추가 세부 정보.
 
 ### 이미지 및 Blob 저장소에 저장될 만큼 큰 모든 콘텐츠 {#images}
@@ -142,68 +142,68 @@ AEM 레이어는 기본적으로 Blob 콘텐츠를 캐시하지 않습니다.
 
    * 12시간 및 12시간 후 백그라운드 새로 고침을 위해 변경 가능한 클라이언트 라이브러리 리소스를 캐시합니다.
 
-      ```
-      <LocationMatch "^/etc\.clientlibs/.*\.(?i:json|png|gif|webp|jpe?g|svg)$">
-         Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200,public" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/etc\.clientlibs/.*\.(?i:json|png|gif|webp|jpe?g|svg)$">
+        Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200,public" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * 변경 불가능한 클라이언트 라이브러리 리소스를 장기간(30일) 캐시하고 백그라운드 새로 고침을 통해 MISS를 방지합니다.
 
-      ```
-      <LocationMatch "^/etc\.clientlibs/.*\.(?i:js|css|ttf|woff2)$">
-         Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/etc\.clientlibs/.*\.(?i:js|css|ttf|woff2)$">
+        Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * HTML 페이지를 5분 동안 캐시합니다(브라우저: 1시간, CDN: 12시간). 캐시 제어 헤더가 항상 추가되므로 /content/* 아래의 일치하는 html 페이지가 public이 되도록 하는 것이 중요합니다. 그렇지 않은 경우 보다 구체적인 정규 표현식을 사용하는 것이 좋습니다.
 
-      ```
-      <LocationMatch "^/content/.*\.html$">
-         Header unset Cache-Control
-         Header always set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
-         Header always set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/content/.*\.html$">
+        Header unset Cache-Control
+        Header always set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+        Header always set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * 콘텐츠 서비스/Sling 모델 익스포터 json 응답을 5분 동안 캐시합니다(브라우저는 1시간 이내, CDN은 12시간 이내).
 
-      ```
-      <LocationMatch "^/content/.*\.model\.json$">
-         Header set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
-         Header set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/content/.*\.model\.json$">
+        Header set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+        Header set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * 기록 누락을 방지하기 위해 핵심 이미지 구성 요소에서 변경할 수 없는 URL을 장기간(30일) 캐시합니다.
 
-      ```
-      <LocationMatch "^/content/.*\.coreimg.*\.(?i:jpe?g|png|gif|svg)$">
-         Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/content/.*\.coreimg.*\.(?i:jpe?g|png|gif|svg)$">
+        Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * DAM에서 변경 가능한 리소스(예: 이미지 및 비디오)를 24시간 동안 캐시하고 12시간 후 백그라운드 새로 고침을 통해 MISS 방지)
 
-      ```
-      <LocationMatch "^/content/dam/.*\.(?i:jpe?g|gif|js|mov|mp4|png|svg|txt|zip|ico|webp|pdf)$">
-         Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/content/dam/.*\.(?i:jpe?g|gif|js|mov|mp4|png|svg|txt|zip|ico|webp|pdf)$">
+        Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
 ### HEAD 요청 동작 {#request-behavior}
 
-Adobe CDN에서 다음과 같은 리소스에 대한 HEAD 요청을 받는 경우 **아님** 캐시되면 요청이 변환되어 Dispatcher 및/또는 AEM 인스턴스에 의해 GET 요청으로 수신됩니다. 응답을 캐시할 수 있는 경우 후속 HEAD 요청이 CDN에서 제공됩니다. 응답을 캐시할 수 없는 경우 후속 HEAD 요청은 다음에 의존하는 기간 동안 Dispatcher 및/또는 AEM 인스턴스로 전달됩니다. `Cache-Control` TTL
+Adobe CDN에서 다음과 같은 리소스에 대한 HEAD 요청을 받는 경우 **아님** 캐시되면 요청이 변환되어 Dispatcher 및/또는 AEM 인스턴스에 의해 GET 요청으로 수신됩니다. 응답을 캐시할 수 있는 경우 후속 HEAD 요청이 CDN에서 제공됩니다. 응답을 캐시할 수 없는 경우 후속 HEAD 요청은 다음에 의존하는 기간 동안 Dispatcher 또는 AEM 인스턴스 또는 둘 다에 전달됩니다. `Cache-Control` TTL
 
 ### 마케팅 캠페인 매개변수 {#marketing-parameters}
 
-웹 사이트 URL에는 캠페인의 성공을 추적하는 데 사용되는 마케팅 캠페인 매개 변수가 자주 포함됩니다. Dispatcher 캐시를 효과적으로 사용하려면 의 Dispatcher 구성을 구성하는 것이 좋습니다. `ignoreUrlParams` 다음으로 속성: [여기에 문서화됨](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+웹 사이트 URL에는 캠페인의 성공을 추적하는 데 사용되는 마케팅 캠페인 매개 변수가 자주 포함됩니다. Dispatcher 캐시를 효과적으로 사용하려면 Dispatcher 구성 을 `ignoreUrlParams` 다음으로 속성: [여기에 문서화됨](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
 
 다음 `ignoreUrlParams` 섹션은 주석 처리를 취소해야 하며 파일을 참조해야 합니다. `conf.dispatcher.d/cache/marketing_query_parameters.any`. 마케팅 채널과 관련된 매개 변수에 해당하는 라인의 주석을 해제하여 파일을 수정할 수 있습니다. 다른 매개 변수도 추가할 수 있습니다.
 
@@ -454,7 +454,7 @@ The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushe
 
 ## 클라이언트 측 라이브러리 및 버전 일관성 {#content-consistency}
 
-페이지는 HTML, Javascript, CSS 및 이미지로 구성됩니다. 고객은 다음을 활용하는 것이 좋습니다 [클라이언트측 라이브러리(clientlibs) 프레임워크](/help/implementing/developing/introduction/clientlibs.md) js 라이브러리 간의 종속성을 고려하여 Javascript 및 CSS 리소스를 HTML 페이지로 가져옵니다.
+페이지는 HTML, Javascript, CSS 및 이미지로 구성됩니다. 고객은 다음을 사용하는 것이 좋습니다 [클라이언트측 라이브러리(clientlibs) 프레임워크](/help/implementing/developing/introduction/clientlibs.md) js 라이브러리 간의 종속성을 고려하여 Javascript 및 CSS 리소스를 HTML 페이지로 가져옵니다.
 
 clientlibs 프레임워크는 자동 버전 관리를 제공합니다. 즉, 개발자는 소스 제어에서 JS 라이브러리에 대한 변경 사항을 체크인할 수 있고 고객이 릴리스를 푸시할 때 최신 버전을 사용할 수 있습니다. 이렇게 하지 않으면 개발자는 라이브러리의 새 버전에 대한 참조를 사용하여 HTML을 수동으로 변경해야 합니다. 특히 많은 HTML 템플릿이 동일한 라이브러리를 공유하는 경우 이 문제가 발생합니다.
 

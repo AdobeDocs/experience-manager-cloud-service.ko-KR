@@ -2,9 +2,9 @@
 title: 사용자 정의 HTTP 헤더
 description: 사용자 지정 HTTP 헤더 구성
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '268'
 ht-degree: 5%
 
 ---
@@ -18,6 +18,7 @@ ht-degree: 5%
 >[!NOTE]
 >
 >개발자는 항상 GraphQL 클라이언트 구성을 사용하여 사용자 지정 HTTP 헤더를 구성할 수 있습니다.
+>
 
 ## 구성 {#configuration}
 

@@ -4,9 +4,9 @@ description: HTTP2 콘텐츠 전달에 대해 알아봅니다.
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '794'
 ht-degree: 1%
 
 ---
@@ -46,9 +46,9 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
 * Adobe 번들로 제공되는 CDN(Content Delivery Network)을 Dynamic Media Classic 라이선스의 일부로 사용합니다.
 * 전용 도메인 사용(즉, `images.company.com` 또는 `mycompany.scene7.com`), 일반 Dynamic Media 도메인(즉, `s7d1.scene7.com`, `s7d2.scene7.com`, 또는 `s7d13.scene7.com`).
 
-   도메인을 찾으려면 [Dynamic Media Classic 데스크탑 애플리케이션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 클릭한 다음 계정에 로그인합니다.
+  도메인을 찾으려면 [Dynamic Media Classic 데스크탑 애플리케이션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 클릭한 다음 계정에 로그인합니다.
 
-   다음으로 이동 **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**. 레이블이 지정된 필드를 찾습니다. **게시된 서버 이름**. 현재 일반 Dynamic Media 도메인을 사용 중인 경우, 이 전환의 일부로 사용자 정의 도메인으로의 이동을 요청할 수 있습니다.
+  다음으로 이동 **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**. 레이블이 지정된 필드를 찾습니다. **게시된 서버 이름**. 현재 일반 Dynamic Media 도메인을 사용 중인 경우, 이 전환의 일부로 사용자 정의 도메인으로의 이동을 요청할 수 있습니다.
 
 ## 내 Dynamic Media 계정에 대해 HTTP/2를 활성화하는 프로세스는 무엇입니까? {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
@@ -74,8 +74,6 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
    1. 고객 지원 팀은 요청이 제출된 순서에 따라 사용자를 HTTP/2 고객 대기자 명단에 추가합니다.
    1. Adobe이 요청을 처리할 준비가 되면 고객 지원 팀에서 연락하여 전환을 조정하고 목표 날짜를 설정합니다.
    1. 완료 후 알림이 전송되며 HTTP2로의 성공적인 전환을 확인할 수 있습니다.
-
-
 
 ## 언제 HTTP/2로 전환할 수 있습니까? {#when-can-i-expect-to-be-transitioned-over-to-http}
 

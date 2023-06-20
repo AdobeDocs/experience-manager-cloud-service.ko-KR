@@ -2,10 +2,10 @@
 title: 콘텐츠 조각 만들기 - Headless 설정
 description: Headless 전달을 위해 AEM의 콘텐츠 조각을 사용하여 페이지 독립적 콘텐츠를 디자인하고 만들고 선별하고 사용하는 방법을 알아봅니다.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 100%
+source-wordcount: '347'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ Headless 전달을 위해 AEM의 콘텐츠 조각을 사용하여 페이지 독�
 
 ## 콘텐츠 조각을 만드는 방법 {#how-to-create-a-content-fragment}
 
-콘텐츠 작성자는 자신이 만드는 콘텐츠를 표시하기 위해 콘텐츠 조각을 원하는 수만큼 만듭니다. 이것이 AEM에서 작성자의 주요 작업이 될 것입니다. 이 시작 안내서에서는 하나만 만들면 됩니다.
+콘텐츠 작성자는 자신이 만드는 콘텐츠를 표시하기 위해 콘텐츠 조각을 원하는 수만큼 만듭니다. 이것은 AEM에서 그들의 주요 작업입니다. 이 시작 안내서에서는 하나만 만들면 됩니다.
 
 1. AEM as a Cloud Service에 로그인하고 메인 메뉴에서 **탐색** -> **콘텐츠 조각**&#x200B;을 선택합니다.
 

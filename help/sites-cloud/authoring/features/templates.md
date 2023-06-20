@@ -2,10 +2,10 @@
 title: 페이지 템플릿 만들기
 description: 템플릿은 결과 페이지의 구조를 정의하며 템플릿 편집기를 사용하여 템플릿을 만들고 유지 관리하는 작업은 더 이상 개발자 전용 작업이 아닙니다
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4596'
-ht-degree: 73%
+source-wordcount: '4595'
+ht-degree: 72%
 
 ---
 
@@ -91,7 +91,7 @@ With the **Template Editor**, creating and maintaining templates is no longer a 
 >
 >국제화해야 하는 정보는 템플릿에 입력하지 마십시오. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->로컬라이제이션해야 하는 머리글 및 바닥글과 같은 템플릿 요소의 경우 [핵심 구성 요소의 로컬라이제이션 기능](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)을 활용하십시오.
+>로컬라이제이션해야 하는 머리글 및 바닥글과 같은 템플릿 요소의 경우 [핵심 구성 요소의 현지화 기능.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
 
 ### 템플릿 폴더 만들기 - 관리자 {#creating-a-template-folder-admin}
 
@@ -202,7 +202,7 @@ With the **Template Editor**, creating and maintaining templates is no longer a 
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
 
-   경로의 순서는 관련이 없으며, 모든 경로를 스캔하고 템플릿을 검색합니다.
+   경로의 순서는 관련이 없습니다. 모든 경로가 스캔되고 템플릿이 검색됩니다.
 
    >[!NOTE]
    >
@@ -513,18 +513,18 @@ This includes unlocking container components so that further components can be a
 
 * 편집에 사용할 수 있는 잠금 해제된 구성 요소가 표시됩니다. 선택한 경우 파란색 테두리가 있습니다.
 
-   ![초기 콘텐츠 모드](/help/sites-cloud/authoring/assets/templates-initial-content-mode.png)
+  ![초기 콘텐츠 모드](/help/sites-cloud/authoring/assets/templates-initial-content-mode.png)
 
 * 잠금 해제된 구성 요소에는 콘텐츠를 편집하고 구성할 수 있는 도구 모음이 있습니다.
 
-   ![잠금 해제된 구성 요소](/help/sites-cloud/authoring/assets/templates-unlocked-components.png)
+  ![잠금 해제된 구성 요소](/help/sites-cloud/authoring/assets/templates-unlocked-components.png)
 
 * 컨테이너 구성 요소의 잠금이 해제된 경우(**구조** 모드에서) 새 구성 요소를 컨테이너에 추가할 수 있습니다(**초기 콘텐츠** 모드). **초기 콘텐츠** 모드에서 추가한 구성 요소는 결과 페이지에서 이동하거나 삭제할 수 있습니다.
 
-   해당 컨테이너의 도구 모음에서 **구성 요소를 여기로 드래그하십시오.** 영역 또는 **새 구성 요소 삽입** 옵션을 사용하여 구성 요소를 추가할 수 있습니다.
+  해당 컨테이너의 도구 모음에서 **구성 요소를 여기로 드래그하십시오.** 영역 또는 **새 구성 요소 삽입** 옵션을 사용하여 구성 요소를 추가할 수 있습니다.
 
-   ![구성 요소 추가](/help/sites-cloud/authoring/assets/templates-add-component.png)
-   ![구성 요소 추가](/help/sites-cloud/authoring/assets/templates-add-component-dialog.png)
+  ![구성 요소 추가](/help/sites-cloud/authoring/assets/templates-add-component.png)
+  ![구성 요소 추가](/help/sites-cloud/authoring/assets/templates-add-component-dialog.png)
 
 * 페이지가 템플릿을 기준으로 작성된 후에 템플릿의 초기 콘텐츠가 업데이트될 경우 해당 페이지에는 템플릿의 초기 콘텐츠에 대한 변경 사항이 적용되지 않습니다.
 
@@ -566,24 +566,24 @@ This includes unlocking container components so that further components can be a
 
 * **정책 선택** 드롭다운에서 페이지에 대한 기존 정책을 선택할 수 있습니다.
 
-   ![정책 선택기](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
+  ![정책 선택기](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-   **정책 선택** 드롭다운 옆에 있는 추가 버튼을 선택하여 새 정책을 추가할 수 있습니다. 이후 **정책 제목** 필드에 새 제목을 지정해야 합니다.
+  **정책 선택** 드롭다운 옆에 있는 추가 버튼을 선택하여 새 정책을 추가할 수 있습니다. 이후 **정책 제목** 필드에 새 제목을 지정해야 합니다.
 
-   ![정책 추가 버튼](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
+  ![정책 추가 버튼](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-   **정책 선택** 드롭다운에서 선택한 기존 정책은 드롭다운 옆에 있는 복사 버튼을 사용하여 새 정책으로서 복사할 수 있습니다. 이후 **정책 제목** 필드에 새 제목을 지정해야 합니다. 기본적으로 복사된 정책 제목은 **X의 사본**&#x200B;으로 지정됩니다. 여기서 X는 복사된 정책의 제목입니다.
+  **정책 선택** 드롭다운에서 선택한 기존 정책은 드롭다운 옆에 있는 복사 버튼을 사용하여 새 정책으로서 복사할 수 있습니다. 이후 **정책 제목** 필드에 새 제목을 지정해야 합니다. 기본적으로 복사된 정책 제목은 **X의 사본**&#x200B;으로 지정됩니다. 여기서 X는 복사된 정책의 제목입니다.
 
-   ![정책 복사 버튼](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
+  ![정책 복사 버튼](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
 * **정책 제목** 필드에 정책의 제목을 정의합니다. **정책 선택** 드롭다운에서 정책을 쉽게 선택하려면 정책에 제목이 있어야 합니다.
 
-   ![정책 제목](/help/sites-cloud/authoring/assets/templates-policy-title.png)
+  ![정책 제목](/help/sites-cloud/authoring/assets/templates-policy-title.png)
 
 * **정책 설명** 필드에서 정책에 대한 설명은 선택 사항입니다.
 * **선택한 정책을 사용하는 다른 템플릿** 섹션에서 **정책 선택** 드롭다운에서 선택한 정책을 사용하는 다른 템플릿을 쉽게 확인할 수 있습니다.
 
-   ![정책 사용](/help/sites-cloud/authoring/assets/templates-policy-use.png)
+  ![정책 사용](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
 #### 페이지 속성 {#page-properties}
 
@@ -593,17 +593,17 @@ This includes unlocking container components so that further components can be a
 
 * 이 템플릿으로 작성된 페이지에 적용할 클라이언트측 라이브러리를 지정합니다. **클라이언트측 라이브러리** 섹션의 텍스트 필드에 라이브러리 이름을 입력합니다.
 
-   ![클라이언트측 라이브러리](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
+  ![클라이언트측 라이브러리](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
 
 * 여러 라이브러리가 필요한 경우 추가 버튼을 클릭하여 라이브러리 이름에 대한 추가 텍스트 필드를 추가합니다.
 
-   ![추가 버튼](/help/sites-cloud/authoring/assets/templates-add-button.png)
+  ![추가 버튼](/help/sites-cloud/authoring/assets/templates-add-button.png)
 
-   클라이언트측 라이브러리에 필요한 수만큼 텍스트 필드를 추가합니다.
+  클라이언트측 라이브러리에 필요한 수만큼 텍스트 필드를 추가합니다.
 
 * 끌기 핸들을 사용하여 필드를 끌어 필요에 따라 라이브러리의 상대 위치를 정의합니다.
 
-   ![드래그 핸들](/help/sites-cloud/authoring/assets/templates-drag-handle.png)
+  ![드래그 핸들](/help/sites-cloud/authoring/assets/templates-drag-handle.png)
 
 >[!NOTE]
 >
@@ -633,13 +633,16 @@ This includes unlocking container components so that further components can be a
 
       * 이러한 변경 사항은 결과 페이지에 즉시 적용됩니다.
       * 방문자가 변경 사항을 보려면 변경된 템플릿을 게시해야 합니다.
+
    * 콘텐츠 정책 및 디자인 구성 변경 사항:
 
       * 이러한 사항은 결과 페이지에 즉시 적용됩니다.
       * 방문자가 변경 사항을 보려면 변경 사항을 게시해야 합니다.
+
    * 초기 콘텐츠에 대한 변경 사항:
 
       * 이는 템플릿 변경 후 생성된 페이지에만 적용됩니다.
+
    * 레이아웃에 대한 변경 사항은 수정된 구성 요소가 다음에 속하는지 여부에 따라 달라집니다.
 
       * 구조 전용 - 즉시 적용

@@ -3,10 +3,10 @@ title: 지속 GraphQL 쿼리
 description: 성능을 최적화하기 위해 Adobe Experience Manager as a Cloud Service에서 GraphQL 쿼리를 지속하는 방법을 알아봅니다. HTTP GET 메서드를 사용하여 클라이언트 애플리케이션에서 지속 쿼리를 요청할 수 있으며 응답을 Dispatcher 및 CDN 계층에서 캐시할 수 있으므로 궁극적으로 클라이언트 애플리케이션의 성능이 향상됩니다.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: c3d7cd591bce282bb4d3b5b5d0ee2e22fd337a83
-workflow-type: ht
-source-wordcount: '1687'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '1681'
+ht-degree: 96%
 
 ---
 
@@ -38,9 +38,9 @@ ht-degree: 100%
 
 예를 들어 Sites 구성 `my-conf`의 모델 `my-model`을 사용하는 `my-query`라는 특정 쿼리가 있는 경우:
 
-* `my-conf` 특정 엔드포인트를 사용하여 쿼리를 만들 수 있으며 쿼리는 다음과 같이 저장됩니다.
+* 다음을 사용하여 쿼리를 만들 수 있습니다. `my-conf` 특정 끝점을 입력하면 쿼리가 다음과 같이 저장됩니다.
   `/conf/my-conf/settings/graphql/persistentQueries/my-query`
-* `global` 엔드포인트를 사용하여 동일한 쿼리를 생성할 수 있지만 쿼리는 다음과 같이 저장됩니다.
+* 를 사용하여 동일한 쿼리를 생성할 수 있습니다. `global` 끝점이지만 쿼리는 다음과 같이 저장됩니다.
   `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
@@ -389,10 +389,10 @@ curl -u admin:admin -X POST \
 필드`Respond with application/graphql-response+json`(`responseContentTypeGraphQLResponseJson`)은 필요에 따라 정의할 수 있습니다.
 
 * `false`(기본값):
-지속 쿼리의 성공 여부는 상관없습니다. `/execute.json/persisted-query`는 상태 코드 `200`을 반환하고 반환되는 `Content-Type` 헤더는 `application/json`입니다.
+지속 쿼리의 성공 여부는 상관없습니다. 다음 `/execute.json/persisted-query` 상태 코드 반환 `200` 및 `Content-Type` 반환된 헤더는 입니다. `application/json`.
 
 * `true`:
-엔드포인트는 지속 쿼리 실행 시 오류가 발생하면 `400` 또는 `500`을 적절하게 반환합니다. 또한 반환되는 `Content-Type`은 `application/graphql-response+json`입니다.
+엔드포인트는 지속 쿼리 실행 시 오류가 발생하면 `400` 또는 `500`을 적절하게 반환합니다. 또한 반환된 `Content-Type` 은(는) `application/graphql-response+json`.
 
   >[!NOTE]
   >
@@ -442,7 +442,7 @@ URL은 다음과 같은 부분들로 나눌 수 있습니다.
 1. **패키지 만들기**&#x200B;를 탭하여 새 패키지를 만듭니다. 이렇게 하면 패키지를 정의하는 대화 상자가 열립니다.
 1. 패키지 정의 대화 상자에서 **일반**&#x200B;에 “wknd-persistent-queries”와 같은 **이름**&#x200B;을 입력합니다.
 1. “1.0”과 같은 버전 번호를 입력합니다.
-1. **필터** 아래에 새 **필터**&#x200B;를 추가합니다. 경로 파인더를 사용하여 구성 아래에서 `persistentQueries` 폴더를 선택합니다. 예를 들어 `wknd` 구성의 경우 전체 경로는 `/conf/wknd/settings/graphql/persistentQueries`입니다.
+1. **필터** 아래에 새 **필터**&#x200B;를 추가합니다. 경로 파인더를 사용하여 구성 아래에서 `persistentQueries` 폴더를 선택합니다. 예: `wknd` 구성, 전체 경로는 `/conf/wknd/settings/graphql/persistentQueries`.
 1. **저장**&#x200B;을 탭하여 새 패키지 정의를 저장하고 대화 상자를 닫습니다.
 1. 새로 생성된 패키지 정의에 있는 **빌드** 버튼을 탭합니다.
 

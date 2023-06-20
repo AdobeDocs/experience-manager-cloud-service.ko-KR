@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Release Information,Asset Processing
 role: Architect,Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '850'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 # 에셋 마이크로서비스를 이용한 에셋 수집 및 처리에 대한 개요 {#asset-microservices-overview}
 
-Adobe Experience Manager as a [!DNL Cloud Service]는 클라우드 기반의 Experience Manager 애플리케이션 및 기능 활용 방법을 제공합니다. 이 새 아키텍처의 핵심 요소 중 하나는 에셋 마이크로서비스에서 제공하는 에셋 수집 및 처리입니다. 에셋 마이크로서비스는 클라우드 서비스를 사용하여 확장 가능하고 탄력적인 에셋 처리 워크플로를 제공합니다. Adobe는 다양한 에셋 유형 및 옵션을 최적으로 처리할 수 있는 클라우드 서비스를 관리합니다. 클라우드 기반 에셋 마이크로서비스의 주요 이점은 다음과 같습니다.
+Adobe Experience Manager as a [!DNL Cloud Service] 는 Experience Manager 애플리케이션 및 기능을 사용하는 클라우드 기반 방법을 제공합니다. 이 새 아키텍처의 핵심 요소 중 하나는 에셋 마이크로서비스에서 제공하는 에셋 수집 및 처리입니다. 에셋 마이크로서비스는 클라우드 서비스를 사용하여 확장 가능하고 탄력적인 에셋 처리 워크플로를 제공합니다. Adobe는 다양한 에셋 유형 및 옵션을 최적으로 처리할 수 있는 클라우드 서비스를 관리합니다. 클라우드 기반 에셋 마이크로서비스의 주요 이점은 다음과 같습니다.
 
 * 리소스 집약적인 작업을 원활하게 처리할 수 있는 확장 가능한 아키텍처입니다.
 * Experience Manager 환경의 성능에 영향을 주지 않는 효율적인 인덱싱 및 텍스트 추출 기능입니다.
@@ -98,4 +98,3 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 >* [Adobe Asset Link](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)
 >* [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [다이렉트 바이너리 액세스에 대한 Apache Oak 설명서](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
-

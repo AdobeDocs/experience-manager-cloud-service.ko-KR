@@ -2,10 +2,10 @@
 title: 미리보기 계층을 위한 OSGi 설정 구성
 description: 콘텐츠를 시작하기 전에 미리보기 위해서 AEM 미리보기 서비스를 구성하는 방법에 대해서 알아봅니다.
 exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '222'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -40,7 +40,7 @@ AEM은 개발자 및 콘텐츠 작성자가 웹 사이트의 최종 결과물이
 
 ## Developer Console을 사용하여 미리보기 디버깅 {#debugging-preview-using-the-developer-console}
 
-다음 단계에 따라 Developer Console을 사용하여 미리보기 계층을 디버그하십시오.
+Developer Console을 사용하여 미리보기 계층을 디버깅할 수 있도록 다음 단계를 수행합니다.
 
 * [Developer Console](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools)에서 **-- 모두 미리보기 --** 또는 이름에 **prev**&#x200B;가 포함된 프로덕션 환경을 선택합니다.
 * 미리보기 인스턴스에 대한 관련 정보 생성

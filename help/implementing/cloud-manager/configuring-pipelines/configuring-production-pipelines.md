@@ -3,10 +3,10 @@ title: 프로덕션 파이프라인 구성
 description: 코드를 빌드하고 프로덕션 환경에 배포하기 위해 프로덕션 파이프라인을 구성하는 방법을 알아봅니다.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1520'
-ht-degree: 100%
+source-wordcount: '1513'
+ht-degree: 91%
 
 ---
 
@@ -73,6 +73,7 @@ ht-degree: 100%
 1. **소스 코드** 탭에서 다음 옵션을 정의해야 합니다.
 
    * **저장소** - 이 옵션은 파이프라인에서 코드를 검색해야 하는 git 저장소를 정의합니다.
+
    >[!TIP]
    > 
    >Cloud Manager에서 저장소를 추가하고 관리하는 방법은 [저장소 추가 및 관리](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) 문서를 참조하십시오.
@@ -101,6 +102,7 @@ ht-degree: 100%
 1. **소스 코드** 탭에서 다음 옵션을 정의해야 합니다.
 
    * **저장소** - 이 옵션은 파이프라인에서 코드를 검색해야 하는 git 저장소를 정의합니다.
+
    >[!TIP]
    > 
    >Cloud Manager에서 저장소를 추가하고 관리하는 방법은 [저장소 추가 및 관리](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) 문서를 참조하십시오.
@@ -124,7 +126,7 @@ ht-degree: 100%
 
    ![경험 감사의 경로 정의](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
 
-1. **페이지 추가**&#x200B;를 클릭하면 환경 주소를 사용하여 경로가 자동으로 완료되고 경로 테이블에 추가됩니다.
+1. 클릭 **페이지 추가** 환경 주소를 사용하여 경로가 자동으로 완료되고 경로 테이블에 추가됩니다.
 
    ![표에 경로 저장](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
 
@@ -148,6 +150,7 @@ ht-degree: 100%
 1. **소스 코드** 탭에서 다음 옵션을 정의해야 합니다.
 
    * **저장소** - 이 옵션은 파이프라인에서 코드를 검색해야 하는 git 저장소를 정의합니다.
+
    >[!TIP]
    > 
    >Cloud Manager에서 저장소를 추가하고 관리하는 방법은 [저장소 추가 및 관리](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) 문서를 참조하십시오.
@@ -174,7 +177,7 @@ ht-degree: 100%
 
 프론트엔드 파이프라인을 사용하면 프론트엔드 개발자에게 더 많은 독립성을 부여하고 개발 프로세스를 가속화할 수 있습니다.
 
-이 프로세스의 잠재력을 최대한 활용하기 위해 알아야 할 몇 가지 고려 사항과 함께 이 프로세스가 작동하는 방식에 대한 자세한 내용은 [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 문서를 참조하십시오.
+문서를 참조하십시오 [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 이 프로세스의 전체 잠재력을 활용하기 위해 알아야 할 몇 가지 고려 사항과 함께 이 프로세스가 작동하는 방식에 대한 정보입니다.
 
 ## Dispatcher 패키지 건너뛰기 {#skip-dispatcher-packages}
 

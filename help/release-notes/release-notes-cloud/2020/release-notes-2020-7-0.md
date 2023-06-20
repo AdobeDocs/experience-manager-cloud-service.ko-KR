@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 릴리스의 릴리스 노트'
 description: "[!DNL Adobe Experience Manager] 2020.7.0용 as a Cloud Service 릴리스 노트"
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1038'
-ht-degree: 78%
+ht-degree: 76%
 
 ---
 
@@ -61,7 +61,7 @@ ht-degree: 78%
 
 ### 새로운 기능 {#what-is-new-core-components}
 
-[AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)의 릴리스 2.11.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
+[AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)의 릴리스 2.11.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
 
 * 새로운 [PDF 뷰어 구성 요소](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html) 소개
 
@@ -88,7 +88,7 @@ ht-degree: 78%
 
 * 이제 Cloud Manager 파이프라인이 고객 설정 변수 및 암호를 지원합니다.
 
-   자세한 내용은 파이프라인 변수를 참조하십시오.
+  자세한 내용은 파이프라인 변수를 참조하십시오.
 
 * 이제 인증 바인딩된 비공개 Maven 저장소가 지원됩니다.
 
@@ -121,7 +121,7 @@ ht-degree: 78%
 
 ### 새로운 기능 {#what-is-new-foundations}
 
-* [로그를 Splunk 계정에 전달하여](/help/implementing/developing/introduction/logging.md#splunk-logs) 조직에서 해당 Splunk 투자를 활용하게 할 수 있습니다.
+* [로그를 Splunk 계정에 전달할 수 있습니다.](/help/implementing/developing/introduction/logging.md#splunk-logs)를 통해 조직에서 Splunk 투자를 사용할 수 있습니다.
 
 * [정적 전용 송신 IP 주소](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address)를 Java 코드로 프로그래밍된 아웃바운드 트래픽에 할당할 수 있으며 이는 일부 통합에 유용합니다.
 
@@ -137,7 +137,7 @@ ht-degree: 78%
 
 * AEM(Adobe Experience Manager) 6.1에서 이전 버전의 CRA를 실행할 수 없습니다. 관리자 그룹의 사용자를 허용하는 명시적 지원이 추가되었습니다.
 
-   자세한 내용은 [AEM 6.1에 CRA 설치](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61)를 참조하십시오.
+  자세한 내용은 [AEM 6.1에 CRA 설치](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61)를 참조하십시오.
 
 * 요약 보고서에 표시되는 만료 타임스탬프가 잘못되었습니다.
 

@@ -1,10 +1,10 @@
 ---
 title: 페이지 템플릿
-description: 페이지 템플릿은 새 페이지의 기반으로 사용할 페이지를 만들 때 사용됩니다
+description: 페이지 템플릿은 새 페이지의 기반으로 사용되는 페이지를 만들 때 사용됩니다
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: f5aa9229ff06fdcff5474594269ebcf9daf09e41
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3300'
+source-wordcount: '3293'
 ht-degree: 5%
 
 ---
@@ -67,6 +67,7 @@ ht-degree: 5%
    * 콘텐츠 정책은 구성 요소의 디자인 속성을 정의합니다.
 
       * 예를 들어 사용 가능한 구성 요소 또는 최소/최대 차원이 있습니다.
+
    * 템플릿과 템플릿으로 만든 페이지에 적용할 수 있습니다.
 
    템플릿 작성자가 정책을 정의하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
@@ -424,7 +425,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * **이름**: `jcr:title`
 * **이름**: `status`
-   * ``**유형**: `String`
+   * &quot;**유형**: `String`
    * **값**: `draft`, `enabled` 또는 `disabled`
 
 ### 구조 {#structure}
@@ -435,8 +436,8 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 * 구조에 대한 변경 사항은 템플릿으로 만든 모든 페이지에 반영됩니다.
 * 다음 `root` ( `structure/jcr:content/root`) 노드는 결과 페이지에서 사용할 수 있는 구성 요소 목록을 정의합니다.
    * 템플릿 구조에 정의된 구성 요소는 결과 페이지에서 이동하거나 삭제할 수 없습니다.
-   * 구성 요소 잠금이 해제되면 `editable` 속성이 로 설정되어 있습니다. `true`.
-   * 이미 콘텐츠를 포함하고 있는 구성 요소의 잠금이 해제되면 이 콘텐츠는 `initial` 분기입니다.
+   * 구성 요소 잠금이 해제된 후 `editable` 속성이 로 설정되어 있습니다. `true`.
+   * 이미 콘텐츠가 포함된 구성 요소의 잠금이 해제된 후 이 콘텐츠가 로 이동됩니다. `initial` 분기입니다.
 
 * 다음 `cq:responsive` 노드는 응답형 레이아웃에 대한 정의를 보관합니다.
 
@@ -461,13 +462,13 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 콘텐츠 정책은 구성 요소의 디자인 속성을 정의합니다. 예를 들어 사용 가능한 구성 요소 또는 최소/최대 차원이 있습니다. 템플릿과 템플릿으로 만든 페이지에 적용할 수 있습니다. 템플릿 편집기에서 컨텐츠 정책을 만들고 선택할 수 있습니다.
 
 * 속성 `cq:policy`, `root` 노드
-   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
+  `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 페이지의 단락 시스템에 대한 콘텐츠 정책에 대한 상대 참조를 제공합니다.
 
 * 속성 `cq:policy`, 구성 요소 명시적 노드 `root`개별 구성 요소에 대한 정책 링크를 제공합니다.
 
 * 실제 정책 정의는 아래에 저장됩니다.
-   `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
+  `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
 
 >[!NOTE]
 >
@@ -488,7 +489,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
    * 에서 상태 속성 설정 `jcr:content` 노드.
 
       * 예를 들어,
-         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
+        `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * 속성을 정의합니다.
 
@@ -500,9 +501,9 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
    * [에서 허용되는 템플릿 경로 정의 **페이지 속성**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) 하위 분기의 적절한 페이지 또는 루트 페이지
    * 속성을 설정합니다.
-      `cq:allowedTemplates`
-다음에서 
-`jcr:content` 필요한 분기의 노드입니다.
+     `cq:allowedTemplates`
+다음에서 `jcr:content` 필요한 분기의 노드입니다.
+
    예를 들어, 값이 다음과 같은 경우:
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
@@ -532,7 +533,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * **템플릿**:
 
-   * 다음 `cq:template` 속성 `jcr:content` 해당 페이지에 해당되는 템플릿에 액세스하기 위해 노드가 참조됩니다.
+   * 다음 `cq:template` 속성 `jcr:content` 해당 페이지에 해당하는 템플릿에 액세스하기 위해 노드가 참조됩니다.
 
 * **구성 요소**:
 

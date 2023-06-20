@@ -2,10 +2,10 @@
 title: AEM Commerce 콘텐츠 작성자 여정
 description: AEM Commerce 작성을 통한 가이드 여정을 시작해 보십시오.
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 100%
+source-wordcount: '457'
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ Adobe가 AEM을 통해 AEM 관련 사이트 비즈니스 사례를 해결하는 
 
 이 여정은 AEM Commerce 콘텐츠 작성자를 위해 설계되었습니다. 이 여정은 카탈로그 페이지, 템플릿 및 전체 제품 경험을 시작하고 관리하기 위한 요구 사항, 단계 및 접근 방식을 제시합니다.
 
-이 여정에서 제공하는 정보는 다른 담당자에게 유용하지만, 일부 정보는 특정 역할에 불필요할 수 있습니다. 추가 역할을 다루는 다가오는 여정은 추후에 업데이트될 예정입니다.
+이 여정의 정보는 물론 다른 담당자에게 유용할 수 있지만 일부 정보는 특정 역할에게 불필요합니다. 추가 역할을 다루는 다가오는 여정은 추후에 업데이트될 예정입니다.
 
 ## 여정 {#the-journey}
 

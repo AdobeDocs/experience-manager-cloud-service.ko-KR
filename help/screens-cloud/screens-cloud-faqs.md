@@ -2,7 +2,7 @@
 title: Screens as a Cloud Service FAQ
 description: 이 페이지에서는 Screens as a Cloud Service FAQ에 대해 설명합니다.
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
-source-git-commit: 02c9cbff56399ea2ca1baad7d2289d5d4c17c1c5
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 2%
@@ -43,7 +43,7 @@ scripts=[
 
 ## 개발자 모드(온라인)의 채널이 AEM Screens Player에서 렌더링되지 않는 경우 어떻게 해야 합니까?{#screens-cloud-online-channel-blank-iframe}
 
-AEM Screens 캐싱 기능을 활용하는 것이 좋지만 개발자 모드에서 채널을 실행해야 하고 AEM Screens Player에 빈 화면이 표시되는 경우 플레이어의 개발자 도구를 확인하고 `X-Frame-Options` 또는 `frame-ancestors` 오류. 해결 방법은 iFrame에서 실행되는 콘텐츠를 허용하도록 Dispatcher를 구성하는 것입니다. 일반적으로 다음 구성이 작동합니다.
+AEM Screens 캐싱 기능을 사용하는 것이 좋지만, 개발자 모드에서 채널을 실행해야 하고 AEM Screens Player에 빈 화면이 표시되는 경우 플레이어의 개발자 도구를 확인하고 다음을 찾습니다 `X-Frame-Options` 또는 `frame-ancestors` 오류. 해결 방법은 iFrame에서 실행되는 콘텐츠를 허용하도록 Dispatcher를 구성하는 것입니다. 일반적으로 다음 구성이 작동합니다.
 
 ```
 Header set Content-Security-Policy "frame-ancestors ‘self’ file: localhost:*;"

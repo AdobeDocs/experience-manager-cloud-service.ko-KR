@@ -2,10 +2,10 @@
 title: 대형 콘텐츠 저장소 처리
 description: 이 섹션에서는 대용량 콘텐츠 저장소 처리에 대해 설명합니다
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: cf09c7774b633ae2cf1c5b28fee2bd8191d80bb3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1846'
-ht-degree: 8%
+source-wordcount: '1837'
+ht-degree: 6%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_precopy"
 >title="대형 콘텐츠 저장소 처리"
->abstract="콘텐츠 전송 활동의 추출 및 수집 단계를 크게 가속화하여 콘텐츠를 AEM as a Cloud Service로 이동하기 위해 CTT는 선택 사항인 사전 복사 단계로 AzCopy를 활용할 수 있습니다. 이 사전 단계가 구성되면 추출 단계에서 AzCopy는 Amazon S3 또는 Azure Blob 저장소에서 마이그레이션 세트 Blob 저장소로 Blob을 복사합니다. 수집 단계에서 AzCopy는 마이그레이션 세트 Blob 저장소의 Blob을 대상 AEM as a Cloud Service Blob 저장소로 복사합니다."
+>abstract="컨텐츠 전송 활동의 추출 및 수집 단계 속도를 크게 향상시켜 컨텐츠를 AEM as a Cloud Service으로 이동하도록 CTT는 AzCopy를 선택적 사전 복사 단계로 사용할 수 있습니다. 이 사전 단계가 구성되면 추출 단계에서 AzCopy는 Amazon S3 또는 Azure Blob 저장소에서 마이그레이션 세트 Blob 저장소로 Blob을 복사합니다. 수집 단계에서 AzCopy는 마이그레이션 세트 Blob 저장소의 Blob을 대상 AEM as a Cloud Service Blob 저장소로 복사합니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html#setting-up-pre-copy-step" text="사전 복사 단계로 AzCopy 시작"
 
 CTT(콘텐츠 전송 도구)를 사용하여 많은 수의 Blob를 복사하는 데 여러 날이 걸릴 수 있습니다.
-컨텐츠 전송 활동의 추출 및 수집 단계 속도를 크게 향상시켜 컨텐츠를 AEM as a Cloud Service으로 이동하려면 CTT를 활용할 수 있습니다 [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) 선택적 사전 복사 단계입니다. 이 사전 복사 단계는 소스 AEM 인스턴스가 Amazon S3, Azure Blob Storage 데이터 저장소 또는 파일 데이터 저장소를 사용하도록 구성된 경우 사용할 수 있습니다. 사전 복사 단계는 첫 번째 전체 추출 및 수집에 가장 효과적입니다. 그러나 전체 프로세스에 시간이 추가될 수 있으므로 후속 추가 작업에 사전 복사를 사용하지 않는 것이 좋습니다(추가 크기가 200GB 미만인 경우). 이 사전 단계가 구성되면 추출 단계에서 AzCopy는 Amazon S3, Azure Blob Storage 또는 파일 데이터 저장소의 Blob을 마이그레이션 세트 Blob 저장소로 복사합니다. 수집 단계에서 AzCopy는 마이그레이션 세트 Blob 저장소의 Blob을 대상 AEM as a Cloud Service Blob 저장소로 복사합니다.
+컨텐츠 전송 활동의 추출 및 수집 단계 속도를 크게 향상시켜 컨텐츠를 AEM as a Cloud Service으로 이동하려면 CTT에서 다음을 사용할 수 있습니다 [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) 선택적 사전 복사 단계입니다. 이 사전 복사 단계는 소스 AEM 인스턴스가 Amazon S3, Azure Blob Storage 데이터 저장소 또는 파일 데이터 저장소를 사용하도록 구성된 경우 사용할 수 있습니다. 사전 복사 단계는 첫 번째 전체 추출 및 수집에 가장 효과적입니다. 그러나 전체 프로세스에 시간이 추가될 수 있으므로 후속 추가 작업에 사전 복사를 사용하지 않는 것이 좋습니다(추가 크기가 200GB 미만인 경우). 이 사전 단계가 구성되면 추출 단계에서 AzCopy는 Amazon S3, Azure Blob Storage 또는 파일 데이터 저장소의 Blob을 마이그레이션 세트 Blob 저장소로 복사합니다. 수집 단계에서 AzCopy는 마이그레이션 세트 Blob 저장소의 Blob을 대상 AEM as a Cloud Service Blob 저장소로 복사합니다.
 
 ## 시작하기 전에 고려해야 할 중요한 사항 {#important-considerations}
 
@@ -40,7 +40,7 @@ CTT(콘텐츠 전송 도구)를 사용하여 많은 수의 Blob를 복사하는 
 
 ### 소스 AEM 인스턴스가 Amazon S3 또는 Azure Blob 저장 공간 데이터 저장소를 사용하도록 구성된 경우 추가 고려 사항 {#additional-considerations-amazons3-azure}
 
-* Amazon S3 및 Azure Blob Storage 모두에서 데이터를 전송하는 것과 관련된 비용이 있으므로 전송 비용은 기존 저장소 컨테이너의 총 데이터 양(AEM에서 참조되는지 여부)에 상대적입니다. 을(를) 참조하십시오 [Amazon](https://aws.amazon.com/s3/pricing/) 및 [Azure Blob 저장소](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) 을 참조하십시오.
+* Amazon S3 및 Azure Blob Storage 모두에서 데이터를 전송하는 것과 관련된 비용이 있기 때문에 전송 비용은 기존 저장소 컨테이너의 총 데이터 양(AEM에서 참조되었는지 여부)에 상대적입니다. 을(를) 참조하십시오 [Amazon](https://aws.amazon.com/s3/pricing/) 및 [Azure Blob 저장소](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) 을 참조하십시오.
 
 * 기존 소스 Amazon S3 버킷에 대한 액세스 키 및 비밀 키 쌍 또는 기존 소스 Azure Blob 스토리지 컨테이너에 대한 SAS URI가 필요합니다(읽기 전용 액세스는 사용 가능).
 
@@ -81,10 +81,10 @@ Azure 포털의 기존 컨테이너 속성 페이지에서 **크기 계산** 컨
 #### 파일 데이터 저장소 {#file-data-store-determine-size}
 
 * mac, UNIX 시스템의 경우 데이터 저장소 디렉토리에서 du 명령을 실행하여 크기를 가져옵니다.
-   `du -sh [path to datastore on the instance]`을 따르지 않는 경우입니다. 예를 들어 데이터 저장소가에 있는 경우 `/mnt/author/crx-quickstart/repository/datastore`, 다음 명령을 실행하면 크기가 표시됩니다. `du -sh /mnt/author/crx-quickstart/repository/datastore`.
+  `du -sh [path to datastore on the instance]`을 따르지 않는 경우입니다. 예를 들어 데이터 저장소가에 있는 경우 `/mnt/author/crx-quickstart/repository/datastore`, 다음 명령을 실행하면 크기가 표시됩니다. `du -sh /mnt/author/crx-quickstart/repository/datastore`.
 
 * Windows의 경우 데이터 저장소 디렉토리에서 dir 명령을 사용하여 해당 크기를 가져옵니다.
-   `dir /a/s [location of datastore]`.
+  `dir /a/s [location of datastore]`.
 
 ### 1. AzCopy 설치 {#install-azcopy}
 
@@ -109,7 +109,7 @@ Amazon S3, Azure Blob Storage 및 파일 데이터 저장소에 대한 AzCopy �
 소스 AEM 인스턴스의 `crx-quickstart/cloud-migration`, 라는 새 파일을 만듭니다. `azcopy.config`.
 
 >[!NOTE]
->이 구성 파일의 내용은 소스 AEM 인스턴스가 Azure 또는 Amazon S3 데이터 저장소를 사용하는지 또는 파일 데이터 저장소를 사용하는지에 따라 달라집니다.
+>이 구성 파일의 내용은 소스 AEM 인스턴스가 Azure 또는 Amazon S3 데이터 저장소를 사용하는지 또는 파일 데이터 저장소를 사용하는지에 따라 다릅니다.
 
 #### Azure Blob 저장소 데이터 저장소 {#azure-blob-storage-data}
 
@@ -152,7 +152,7 @@ repository.home=/mnt/crx/author/crx-quickstart/repository/datastore
 
 azCopyPath 속성은 azCopy 명령줄 도구가 소스 AEM 인스턴스에 설치된 위치의 전체 경로를 포함해야 합니다. azCopyPath 속성이 없으면 Blob 사전 복사 단계가 수행되지 않습니다.
 
-If `repository.home` 속성이 azcopy.config에 없으면 기본 데이터 저장소 위치가 누락됩니다. `/mnt/crx/author/crx-quickstart/repository/datastore` 는 사전 복사를 수행하는 데 사용됩니다.
+If `repository.home` 속성이 azcopy.config에 없으면 기본 데이터 저장소 위치가 누락됩니다. `/mnt/crx/author/crx-quickstart/repository/datastore` 사전 복사를 수행하는 데 사용됩니다.
 
 ### 4. AzCopy로 추출 {#extracting-azcopy}
 
@@ -172,7 +172,7 @@ c.a.g.s.m.commons.ContentExtractor - *************** Beginning AzCopy Pre-Copy p
 
 축하합니다! 이 로그 항목은 구성이 유효한 것으로 간주되었으며 AzCopy가 현재 소스 컨테이너의 모든 블롭을 마이그레이션 컨테이너로 복사하고 있음을 의미합니다.
 
-AzCopy의 로그 항목은 추출 로그에 표시되고 접두사로 c.a.g.s.m.c.azcopy.AzCopyBlobPreCopy - [AzCopy 사전 복사]
+AzCopy의 로그 항목은 추출 로그에 표시되며, 접두사로 c.a.g.s.m.c.azcopy.AzCopyBlobPreCopy - [AzCopy 사전 복사]
 
 >[!CAUTION]
 >
@@ -189,7 +189,7 @@ AzCopy의 로그 항목은 추출 로그에 표시되고 접두사로 c.a.g.s.m.
 
 AzCopy에 문제가 발생하면 추출이 즉시 실패하고 추출 로그에 실패에 대한 세부 정보가 포함됩니다.
 
-오류 이전에 복사된 모든 블롭은 후속 실행 시 AzCopy에서 자동으로 건너뛰므로 다시 복사할 필요가 없습니다.
+오류 이전에 복사된 모든 블롭은 후속 실행 시 AzCopy에 의해 자동으로 건너뛰므로 다시 복사할 필요가 없습니다.
 
 #### 파일 데이터 저장소용 {#file-data-store-extract}
 

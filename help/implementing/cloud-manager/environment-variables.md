@@ -2,10 +2,10 @@
 title: Cloud Manager 환경 변수
 description: 표준 환경 변수는 Cloud Manager를 통해 구성 및 관리할 수 있으며 OSGi 구성에서 사용할 런타임 환경에 제공됩니다.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 774a27e78abf091d96978911deea945ac35b7a44
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1021'
-ht-degree: 100%
+source-wordcount: '1016'
+ht-degree: 96%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->환경 변수를 추가하거나 수정하려면 [**배포 관리자** 역할](/help/onboarding/cloud-manager-introduction.md#role-based-premissions)의 멤버여야 합니다.
+>의 멤버여야 합니다. [**배포 관리자** 역할](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) 을 클릭하여 환경 변수를 추가하거나 수정합니다.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Adobe Cloud Manager에 로그인합니다.
 1. Cloud Manager에 사용할 수 있는 다양한 프로그램이 나열됩니다. 관리하고자 하는 프로그램을 선택합니다.
@@ -59,7 +59,7 @@ ht-degree: 100%
 
 1. 변수를 유지하려면 **저장**&#x200B;을 선택합니다.
 
-업데이트 중 상태의 표시기가 표 상단과 새로 추가된 변수 옆에 표시되어 구성에 맞게 환경이 **업데이트 중**&#x200B;임을 나타냅니다. 완료되면 새 환경 변수가 표에 표시됩니다.
+업데이트 중 상태의 표시기가 표 상단과 새로 추가된 변수 옆에 표시되어 구성에 맞게 환경이 **업데이트 중**&#x200B;임을 나타냅니다. 완료 후 새 환경 변수가 표에 표시됩니다.
 
 ![변수 업데이트](assets/updating-variables.png)
 
@@ -90,7 +90,7 @@ ht-degree: 100%
 
 1. 필요한 구성을 모두 변경했으면 **저장**&#x200B;을 선택합니다.
 
-[변수를 추가할 때와 마찬가지로](#add-variables) **업데이트 중** 상태의 표시기가 표 상단과 새로 업데이트된 변수 옆에 표시되어 구성을 통해 환경이 업데이트되고 있음을 나타냅니다. 완료되면 업데이트된 환경 변수가 표에 표시됩니다.
+[변수를 추가할 때와 마찬가지로](#add-variables) **업데이트 중** 상태의 표시기가 표 상단과 새로 업데이트된 변수 옆에 표시되어 구성을 통해 환경이 업데이트되고 있음을 나타냅니다. 완료 후 업데이트된 환경 변수가 표에 표시됩니다.
 
 >[!TIP]
 >

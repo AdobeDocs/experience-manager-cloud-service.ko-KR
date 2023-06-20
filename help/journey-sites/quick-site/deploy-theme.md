@@ -2,10 +2,10 @@
 title: 맞춤화된 테마 배포
 description: 파이프라인을 사용하여 사이트 테마를 배포하는 방법에 대해 알아봅니다.
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '1027'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -117,4 +117,4 @@ AEM은 강력한 도구로서 다양한 추가 옵션을 제공합니다. 이 �
 * [온보딩 여정](/help/journey-onboarding/overview.md) - 이 가이드는 팀이 구성되어 AEM as a Cloud Service에 액세스할 수 있도록 하는 출발점이 됩니다.
 * [Adobe Experience Manager Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) - Cloud Manager의 기능에 대한 자세한 내용은 Cloud Manager 설명서를 살펴보십시오.
 * [사이트 관리 설명서](/help/sites-cloud/administering/site-creation/create-site.md) - 빠른 사이트 생성 도구의 기능에 대한 자세한 내용은 사이트 생성에 대한 기술 문서를 확인하십시오.
-* [프론트엔드 파이프라인을 사용하여 사이트 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - 이 문서에서는 프론트엔드 파이프라인을 사용하여 프론트엔드 개발 프로세스의 잠재력을 최대한 활용하기 위해 알아 두어야 할 몇 가지 고려 사항을 설명합니다.
+* [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - 이 문서에서는 프론트엔드 파이프라인을 사용하여 프론트엔드 개발 프로세스의 잠재력을 최대한 활용할 수 있도록 몇 가지 고려해야 할 사항에 대해 설명합니다.

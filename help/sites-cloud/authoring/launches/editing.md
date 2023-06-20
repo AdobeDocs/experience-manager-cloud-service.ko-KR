@@ -2,10 +2,10 @@
 title: 론치 편집
 description: 페이지(또는 페이지 세트)에 대한 론치를 만들면 페이지의 론치 카피에서 콘텐츠를 편집할 수 있습니다.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 66%
+source-wordcount: '553'
+ht-degree: 70%
 
 ---
 
@@ -27,7 +27,6 @@ ht-degree: 66%
 >론치 내에서 페이지를 이동할 수 없습니다. 이 작업을 시도하면 다음과 같은 경고 메시지가 트리거됩니다.
 >
 >* 경고: 이 페이지는 론치 소스입니다. 페이지를 이동할 수 없습니다.
-
 
 ### 라이브 카피에 따른 론치 페이지 편집 {#editing-launch-pages-subject-to-a-live-copy}
 
@@ -55,9 +54,9 @@ ht-degree: 66%
 
    ![론치를 소스와 비교](/help/sites-cloud/authoring/assets/launches-compare.png)
 
-1. 두 페이지(launch 및 source)가 나란히 열립니다.
+1. 두 페이지(론치와 소스)가 나란히 열립니다.
 
-   이 기능 사용에 대한 전체 정보는 다음을 참조하십시오. [페이지 비교](/help/sites-cloud/authoring/features/page-diff.md).
+   이 기능의 사용에 대한 자세한 내용은 [페이지 비교](/help/sites-cloud/authoring/features/page-diff.md)를 참조하십시오.
 
 ## 사용된 소스 페이지 변경 {#changing-the-source-pages-used}
 

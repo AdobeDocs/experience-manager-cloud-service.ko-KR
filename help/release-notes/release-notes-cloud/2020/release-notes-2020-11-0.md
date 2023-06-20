@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2020.11.0 릴리스 정보입니다.'
 description: "[!DNL Adobe Experience Manager] 2020.11.0의 as a Cloud Service 릴리스 노트"
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1265'
-ht-degree: 18%
+source-wordcount: '1264'
+ht-degree: 17%
 
 ---
 
@@ -32,15 +32,15 @@ ht-degree: 18%
 
 ### 의 새로운 기능 [!DNL Assets] 및 [!DNL Dynamic Media] {#what-is-new-assets}
 
-* **일괄 에셋 수집**: 고객에게 다음과 같은 이점을 제공하는 확장 가능한 클라우드 기반 수집 서비스 [!DNL Experience Manager] 자산 마이크로서비스를 포함한 as a Cloud Service 아키텍처. 주요 사용 사례에는 모니터링, 보고 및 예약을 통한 대규모 수집이 포함되며, 일반적인 클라우드 업로드 도구를 사용하여 에셋을 클라우드 데이터 저장소로 초기 전송할 수 있습니다. 다음을 참조하십시오 [일괄 에셋 수집기 도구](/help/assets/add-assets.md#asset-bulk-ingestor).
+* **일괄 에셋 수집**: 를 사용하는 확장 가능한 클라우드 기반 수집 서비스를 고객에게 제공합니다. [!DNL Experience Manager] 자산 마이크로서비스를 포함한 as a Cloud Service 아키텍처. 주요 사용 사례에는 모니터링, 보고 및 예약을 통한 대규모 수집이 포함되며, 일반적인 클라우드 업로드 도구를 사용하여 에셋을 클라우드 데이터 저장소로 초기 전송할 수 있습니다. 다음을 참조하십시오 [일괄 에셋 수집기 도구](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-   이 도구는 시스템 관리자, 컨설턴트 또는 구현 파트너 담당자를 위한 것입니다. 이 기능은 대량의 수집을 허용하며 초기 수집 또는 가끔 대량의 수집 중에 이상적으로 사용됩니다. 소규모 수집 작업의 경우 [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) 또는 [자산 사용자 인터페이스를 사용하여 업로드](/help/assets/add-assets.md#upload-assets).
+  이 도구는 시스템 관리자, 컨설턴트 또는 구현 파트너 담당자를 위한 것입니다. 이 기능은 대량의 수집을 허용하며 초기 수집 또는 가끔 대량의 수집 중에 이상적으로 사용됩니다. 소규모 수집 작업의 경우 [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) 또는 [자산 사용자 인터페이스를 사용하여 업로드](/help/assets/add-assets.md#upload-assets).
 
-   ![대량 가져오기 구성](/help/assets/assets/bulk-import-config-low-res.png)
+  ![대량 가져오기 구성](/help/assets/assets/bulk-import-config-low-res.png)
 
 * 이제 카드 및 열 보기에서 디지털 에셋을 정렬할 수 있습니다.
 
-   ![자산 정렬](/help/assets/assets/asset-sort-options.png)
+  ![자산 정렬](/help/assets/assets/asset-sort-options.png)
 
 * 의 액세스 가능성을 위해 다음과 같이 개선되었습니다. [!DNL Experience Manager Assets] 이 릴리스에서. 자세한 내용은 [의 접근성 기능 [!DNL Assets]](/help/assets/accessibility.md).
 
@@ -54,7 +54,7 @@ ht-degree: 18%
 
 * **Dynamic Media의 일괄처리 집합 사전 설정**: 이제 에셋 파일을 폴더에 개별적으로 또는 대량 수집을 사용하여 업로드할 때 이미지 세트 또는 스핀 세트에서 여러 에셋을 자동으로 생성하고 구성할 수 있습니다.
 
-   다음을 참조하십시오 [일괄처리 집합 사전 설정 정보](/help/assets/dynamic-media/batch-set-presets-dm.md).
+  다음을 참조하십시오 [일괄처리 집합 사전 설정 정보](/help/assets/dynamic-media/batch-set-presets-dm.md).
 
 * 이제에서 다음과 같은 액세스 가능성이 개선되었습니다. [!DNL Dynamic Media]:
 
@@ -67,7 +67,7 @@ ht-degree: 18%
    * 키보드 및 화면 판독기 사용자는 자르기 기능을 사용할 수 있습니다.
    * 키보드 사용자는 핫스팟을 더 잘 관리할 수 있습니다.
 
-   다음을 참조하십시오 [에서의 접근성 [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md).
+  다음을 참조하십시오 [에서의 접근성 [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 

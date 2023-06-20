@@ -2,9 +2,9 @@
 title: 일반 Lucene 인덱스 제거
 description: 일반 Lucene 색인의 제거 계획과 영향을 받는 방법에 대해 알아봅니다.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ AEM에서 전체 텍스트 쿼리는 다음 함수를 사용하는 쿼리입니�
 
 이러한 쿼리는 색인을 사용하지 않으면 결과를 반환할 수 없습니다. 경로 또는 속성 제한만 포함하는 쿼리와 달리, 인덱스를 찾을 수 없는 전체 텍스트 제한(따라서 순회가 수행됨)이 포함된 쿼리는 항상 0개의 결과를 반환합니다.
 
-일반 Lucene 인덱스(`/oak:index/lucene-*`)은 AEM 6.0 / Oak 1.0 이후 존재하여 다음과 같은 일부 경로가 있지만 대부분의 저장소 계층 구조에서 전체 텍스트 검색을 제공하기 위해 존재했습니다. `/jcr:system` 및 `/var` 이 항목에서 항상 제외되었습니다. 그러나 이 색인은 주로 더 구체적인 노드 유형에 대한 색인으로 대체되었습니다(예: `damAssetLucene-*` 대상: `dam:Asset` 전체 텍스트와 속성 검색을 모두 지원하는 노드 유형)
+일반 Lucene 인덱스(`/oak:index/lucene-*`)는 AEM 6.0 / Oak 1.0 이후 존재하여 다음과 같은 일부 경로가 있지만 대부분의 저장소 계층 구조에서 전체 텍스트 검색을 제공합니다. `/jcr:system` 및 `/var` 이 항목에서 항상 제외되었습니다. 그러나 이 색인은 주로 더 구체적인 노드 유형에 대한 색인으로 대체되었습니다(예: `damAssetLucene-*` 대상: `dam:Asset` 전체 텍스트와 속성 검색을 모두 지원하는 노드 유형)
 
 AEM 6.5에서 일반 Lucene 색인은 더 이상 사용되지 않는 것으로 표시되어 이후 버전에서 제거됨을 나타냅니다. 이후 다음 로그 스니펫에서 설명한 대로 색인이 사용되면 WARN이 기록됩니다.
 
@@ -38,30 +38,30 @@ org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is
 //*[jcr:contains(., '"/content/dam/mysite"')]
 ```
 
-대규모 고객 데이터 볼륨을 지원하기 위해 Adobe은 더 이상 새로운 AEM as a Cloud Service 환경에서 일반 Lucene 인덱스를 만들지 않습니다. 또한 Adobe은 기존 저장소에서 색인 제거를 시작합니다. [타임라인 보기](#timeline) 자세한 내용은 이 문서 끝에 있습니다.
+대규모 고객 데이터 볼륨을 지원하기 위해 Adobe은 더 이상 새로운 AEM as a Cloud Service 환경에서 일반 Lucene 인덱스를 만들지 않습니다. 또한 Adobe은 기존 저장소에서 인덱스를 제거합니다. [타임라인 보기](#timeline) 자세한 내용은 이 문서 끝에 있습니다.
 
 Adobe은 이미 다음을 통해 색인 비용을 조정했습니다. `costPerEntry` 및 `costPerExecution` 속성을 사용하여 다음과 같은 다른 색인을 확인합니다. `/oak:index/pathreference` 는 가능한 한 우선적으로 사용됩니다.
 
-여전히 이 색인에 의존하는 쿼리를 사용하는 고객 애플리케이션은 다른 기존 색인을 활용하도록 즉시 업데이트해야 하며, 필요한 경우 이를 사용자 정의할 수 있습니다. 또는 고객 애플리케이션에 새로운 사용자 정의 인덱스를 추가할 수 있습니다. AEM as a Cloud Service의 색인 관리에 대한 전체 지침은 [인덱싱 문서.](/help/operations/indexing.md)
+여전히 이 색인에 의존하는 쿼리를 사용하는 고객 애플리케이션은 다른 기존 색인을 사용하도록 즉시 업데이트해야 하며, 필요한 경우 이를 사용자 정의할 수 있습니다. 또는 고객 애플리케이션에 새로운 사용자 정의 인덱스를 추가할 수 있습니다. AEM as a Cloud Service의 색인 관리에 대한 전체 지침은 [인덱싱 문서.](/help/operations/indexing.md)
 
 ## 영향을 받습니까? {#are-you-affected}
 
-다른 전체 텍스트 인덱스로 쿼리를 처리할 수 없는 경우 일반 Lucene 인덱스가 현재 대체 항목으로 사용됩니다. 더 이상 사용되지 않는 이 색인을 사용하면 다음과 같은 메시지가 WARN 수준에서 기록됩니다.
+다른 전체 텍스트 인덱스로 쿼리를 처리할 수 없는 경우 일반 Lucene 인덱스가 현재 대체 항목으로 사용됩니다. 더 이상 사용되지 않는 이 색인을 사용하면 다음과 유사한 메시지가 WARN 수준에서 기록됩니다.
 
 ```text
 org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*). Please change the query or the index definitions.
 ```
 
-경우에 따라 Oak가 다른 전체 텍스트 인덱스(예: `/oak:index/pathreference`) 전체 텍스트 쿼리를 지원하지만 쿼리 문자열이 인덱스 정의의 정규 표현식과 일치하지 않으면 메시지가 WARN 수준에서 기록되고 쿼리가 결과를 반환하지 않을 수 있습니다.
+경우에 따라 Oak가 다른 전체 텍스트 인덱스(예: `/oak:index/pathreference`) 전체 텍스트 쿼리를 지원하지만 쿼리 문자열이 인덱스 정의의 정규 표현식과 일치하지 않으면 메시지가 WARN 수준에서 기록되며 쿼리가 결과를 반환하지 않을 수 있습니다.
 
 ```text
 org.apache.jackrabbit.oak.query.QueryImpl Potentially improper use of index /oak:index/pathReference with queryFilterRegex (["']|^)/ to search for value "test"
 ```
 
-일반 Lucene 색인이 제거되면, 전체 텍스트 쿼리에서 적절한 색인 정의를 찾을 수 없는 경우 아래에 표시된 것처럼 메시지가 WARN 수준에서 기록됩니다.
+일반 Lucene 색인이 제거되면, 전체 텍스트 쿼리에서 적절한 색인 정의를 찾을 수 없는 경우 아래에 표시된 것처럼 메시지가 경고 수준으로 기록됩니다.
 
 ```text
-org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results will be returned
+org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results are returned
 ```
 
 >[!IMPORTANT]
@@ -157,7 +157,6 @@ AEM에는 Sling 리소스 유형으로 사용자 지정 대화 상자 구성 요
 > * 현재는 이러한 작업에서 노드 유형을 지정하지 않고 쿼리를 수행하므로 일반 Lucene 인덱스 사용으로 인해 WARN이 기록됩니다.
 > * 이러한 구성 요소의 인스턴스는 곧 자동으로 사용을 기본값으로 설정합니다. `cq:Page` 및 `dam:Asset` 추가적인 고객 조치 없이 노드 유형.
 > * 다음 `nodeTypes` 속성을 추가하여 이러한 기본 노드 유형을 재정의할 수 있습니다.
-
 
 ## 일반 Lucene 제거 타임라인 {#timeline}
 

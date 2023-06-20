@@ -2,10 +2,10 @@
 title: 오퍼 생성 및 관리(오퍼 콘솔)
 description: 오퍼 콘솔을 사용하여 활동 경험에서 사용할 수 있는 오퍼를 생성하십시오.
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: c27870c39da80d664f208d658994eec83a19589f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1393'
-ht-degree: 56%
+source-wordcount: '1392'
+ht-degree: 55%
 
 ---
 
@@ -51,7 +51,6 @@ ht-degree: 56%
 >
 >* **오퍼** 콘솔을 더 이상 사용할 수 없습니다.
 >* 영향을 받는 다른 구성 요소의 도구 모음에 있는 타겟 아이콘이 더 이상 나타나지 않습니다.
-
 
 1. 편집할 오퍼가 포함된 페이지를 엽니다.
 
@@ -102,7 +101,7 @@ ht-degree: 56%
 >
 >따라서 권장 옵션은 이 옵션이 아닌 경험 조각을 사용하는 것입니다.
 
-기존 레거시 오퍼가 있는 고객의 경우 경험 조각이 **아닌** 구성 요소를 타겟팅할 때 **오퍼 템플릿 사용** 옵션이 표시됩니다.
+기존 레거시 오퍼가 있는 고객의 경우 **오퍼 템플릿 사용** 다음과 같은 구성 요소를 타겟팅할 때 옵션이 표시됩니다. **아님** 경험 조각:
 
 ![경험 조각 변형으로 변환 대화 상자](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
 

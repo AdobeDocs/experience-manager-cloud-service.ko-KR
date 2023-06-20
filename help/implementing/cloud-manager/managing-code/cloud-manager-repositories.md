@@ -2,10 +2,10 @@
 title: Cloud Manager 저장소
 description: Cloud Manager에서 git 저장소를 생성, 확인 및 삭제하는 방법을 알아봅니다.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 100%
+source-wordcount: '580'
+ht-degree: 96%
 
 ---
 
@@ -51,7 +51,7 @@ Cloud Manager에서 만들어진 저장소는 파이프라인을 추가하거나
 저장소를 삭제하면 다음 결과가 발생합니다.
 
 * 나중에 새 저장소를 만들 때 삭제된 저장소 이름을 사용할 수 없습니다.
-   * 이러한 경우 `Repository name should be unique within organization.` 오류 메시지가 표시됩니다.
+   * 오류 메시지 `Repository name should be unique within organization.` 에는 가 표시됩니다.
 * 삭제된 저장소를 Cloud Manager에서 사용하거나 파이프라인에 연결할 수 없습니다.
 
 Cloud Manager에서 저장소를 삭제하려면 다음을 따르십시오.

@@ -2,10 +2,10 @@
 title: API 요청 만들기 - Headless 설정
 description: 콘텐츠 조각 콘텐츠의 Headless 전달을 위해 GraphQL API를 사용하는 방법과 콘텐츠 조각을 관리하기 위해 AEM의 에셋 REST API를 사용하는 방법을 알아봅니다.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 100%
+source-wordcount: '673'
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ GraphQL 끝점 활성화에 대한 자세한 내용은 [여기](/help/headless/g
 
 ## GraphiQL로 GraphQL을 사용하여 콘텐츠 쿼리
 
-정보 설계자는 콘텐츠를 전달하기 위해 채널 끝점에 대한 쿼리를 설계해야 합니다. 일반적으로 이러한 쿼리는 모델당 끝점당 한 번만 고려하면 됩니다. 이 시작 안내서에서는 하나만 만들면 됩니다.
+정보 설계자는 콘텐츠를 전달할 채널 끝점에 대한 쿼리를 설계해야 합니다. 일반적으로 이러한 쿼리는 모델당 끝점당 한 번만 고려하면 됩니다. 이 시작 안내서에서는 하나만 만들면 됩니다.
 
 GraphiQL은 AEM 환경에 포함된 IDE입니다. [끝점을 구성](#enable-graphql-endpoint)한 다음 액세스/볼 수 있습니다.
 

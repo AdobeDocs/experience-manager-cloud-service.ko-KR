@@ -1,10 +1,10 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.2.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.2.0 릴리스 정보입니다.'
-source-git-commit: 937921e0310a659f52803de3d6895db8fcac4d2b
-workflow-type: ht
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
 source-wordcount: '732'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### [!DNL Experience Manager Sites]의 새로운 기능 프리릴리스 {#prerelease-sites}
+### [!DNL Experience Manager Sites] 프리릴리스의 새로운 기능 {#prerelease-sites}
 
 * 콘텐츠 조각을 JSON 오퍼로 AEM as a Cloud Service에서 Adobe Target으로 내보냅니다.
 * 내부 캐싱 향상과 함께 GraphQL 페이지 매김 및 정렬에 대한 지원은 이제 복잡한 GraphQL 쿼리 및 필터를 사용하여 AEM에서 대규모 콘텐츠 세트를 가져올 때 분리된 클라이언트 애플리케이션의 성능을 개선하는 데 도움이 됩니다.
@@ -86,7 +86,7 @@ Headless 적응형 양식을 사용하여 개발자가 기존의 그래픽 사�
 * 선택한 프로그래밍 언어로 고품질 다중 채널 양식 작성
 * 양식을 데스크탑 및 모바일 앱, 웹 사이트 및 채팅 애플리케이션에 기본적으로 통합
 * 양식 애플리케이션과 함께 독점 UI 구성 요소 재사용
-* Adobe Experience Manager Forms의 기능 활용
+* Adobe Experience Manager Forms의 기능 사용
 
 공식 이메일 ID에서 aem-forms-headless@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여할 수 있습니다.
 

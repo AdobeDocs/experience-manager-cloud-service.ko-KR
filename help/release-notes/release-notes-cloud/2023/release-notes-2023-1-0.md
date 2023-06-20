@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.1.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.1.0 릴리스 정보입니다.'
 exl-id: f134fdbc-224b-404c-b20f-44cae8bad681
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 100%
+source-wordcount: '976'
+ht-degree: 97%
 
 ---
 
@@ -43,9 +43,9 @@ ht-degree: 100%
 
 ### [!DNL Assets]의 새로운 기능 {#assets-features}
 
-* 에셋 보고서에는 이제 관리자가 Experience Manager Assets as a Cloud Service 배포에서 [에셋 다운로드 보고서를 생성](/help/assets/asset-reports.md)할 수 있는 기능이 포함됩니다. 관리자가 이 데이터를 사용하여 기업 내부에서 또는 고객에 의해 에셋 채택률을 측정하려면 주요 성공 지표에서 인사이트를 도출해야 합니다.
+* 에셋 보고서에는 이제 관리자가 Experience Manager Assets as a Cloud Service 배포에서 [에셋 다운로드 보고서를 생성](/help/assets/asset-reports.md)할 수 있는 기능이 포함됩니다. 이 데이터는 관리자가 주요 성공 지표에서 통찰력을 도출하여 기업 내 및 고객에 의한 Assets의 채택률을 측정할 수 있도록 합니다.
 
-   ![다른 형식의 PDF 렌디션](/help/release-notes/assets/choose_report.png)
+  ![다른 형식의 PDF 렌디션](/help/release-notes/assets/choose_report.png)
 
 * 이제 Experience Manager Assets는 일괄 가져오기 도구를 사용하여 에셋을 수집하기 위해 Azure Blob Storage 데이터 소스에 연결할 때 인증에 액세스 키 외에 [SAS 토큰을 지원](/help/assets/add-assets.md#asset-bulk-ingestor)합니다.
 
@@ -82,17 +82,17 @@ ht-degree: 100%
 
 * [신속한 개발 환경](/help/implementing/developing/introduction/rapid-development-environments.md) - RDE를 사용하여 개발자는 신속하게 문제를 해결하고 AEM as a Cloud Service의 새로운 기능을 배포할 수 있습니다.
 
-   신속한 개발 환경은 로컬에서 작동하는 코드가 클라우드에서도 예상대로 작동하는지 빠르고 일관적이고 확장 가능한 방식으로 검증하는 새로운 유형의 클라우드 환경입니다. 명령줄 도구를 사용하여 RDE에 콘텐츠 패키지, 번들, 콘텐츠 파일, OSGi 구성 또는 Dispatcher 구성을 빠르게 “동기화”합니다. 아래 비디오에서 실제로 확인하십시오.
+  신속한 개발 환경은 로컬에서 작동하는 코드가 클라우드에서도 예상대로 작동하는지 빠르고 일관적이고 확장 가능한 방식으로 검증하는 새로운 유형의 클라우드 환경입니다. 명령줄 도구를 사용하여 RDE에 콘텐츠 패키지, 번들, 콘텐츠 파일, OSGi 구성 또는 Dispatcher 구성을 빠르게 “동기화”합니다. 아래 비디오에서 실제로 확인하십시오.
 
-   >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
+  >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
 
-   RDE에서 코드를 성공적으로 검증한 후 프로덕션 파이프라인을 통해 스테이징 및 프로덕션 환경에 배포하기 전에 클라우드 개발 환경에 배포하여 Cloud Manager 품질 게이트를 실행하는 것이 좋습니다.
+  RDE에서 코드를 성공적으로 검증한 후 프로덕션 파이프라인을 통해 스테이징 및 프로덕션 환경에 배포하기 전에 클라우드 개발 환경에 배포하여 Cloud Manager 품질 게이트를 실행하는 것이 좋습니다.
 
-   각 프로그램에는 한 개의 RDE가 포함되어 더 많은 프로그램에 라이선스가 부여될 수 있습니다.
+  각 프로그램에는 한 개의 RDE가 포함되어 더 많은 프로그램에 라이선스가 부여될 수 있습니다.
 
-   >[!NOTE]
-   >
-   >RDE는 앞으로 몇 주에 걸쳐 점진적으로 출시될 예정입니다. aemcs-rde-support@adobe.com로 이메일을 전송하여 가장 먼저 확인해 볼 수 있습니다.
+  >[!NOTE]
+  >
+  >RDE는 앞으로 몇 주에 걸쳐 점진적으로 출시될 예정입니다. aemcs-rde-support@adobe.com로 이메일을 전송하여 가장 먼저 확인해 볼 수 있습니다.
 
 * [서버측 API 액세스 토큰에 대한 확장 지원](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) – 이제 API 특성이 서로 다른 시나리오에 유용한 여러 자격 증명을 생성할 수 있습니다. 이제 셀프서비스 방식으로 자격 증명을 취소할 수도 있습니다.
 

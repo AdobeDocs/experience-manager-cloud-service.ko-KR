@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1362'
-ht-degree: 100%
+source-wordcount: '1361'
+ht-degree: 98%
 
 ---
 
@@ -81,7 +81,7 @@ AEM Sites 번역 여정의 이전 문서인 [콘텐츠 번역](configure-connect
 
 >[!TIP]
 >
->게시할 때 여러 항목(예: 여러 언어 폴더)를 선택하여 여러 번역을 한 번에 게시할 수 있습니다.
+>여러 번역을 한 번에 게시하기 위해 게시할 때 여러 항목(즉, 여러 언어 폴더)을 선택할 수 있습니다.
 
 콘텐츠를 게시할 때에는 게시 시간 예약과 같이 이 여정에서 다루지 않는 추가 옵션을 사용할 수 있습니다. 자세한 내용은 이 문서 끝에 있는 [추가 리소스](#additional-resources) 섹션을 참조하십시오.
 

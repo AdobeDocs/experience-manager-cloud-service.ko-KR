@@ -2,10 +2,10 @@
 title: 기능 테스트
 description: 코드의 품질과 신뢰성을 보장하기 위해 AEM as a Cloud Service 배포 프로세스에 내장된 세 가지 유형의 기능 테스트에 대해 알아봅니다.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 7d15440159a8e24314753acd5b37fcd2c5e8ec4c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 100%
+source-wordcount: '551'
+ht-degree: 88%
 
 ---
 
@@ -52,7 +52,7 @@ AEM as a Cloud Service의 기능 테스트에는 세 가지 유형이 있습니�
 
 ### 사용자 정의 기능 테스트 {#custom-functional-testing}
 
-제품 기능 테스트는 Adobe에 의해 정의되지만 자체 애플리케이션에 대한 자체 품질 테스트를 작성할 수 있습니다. 이는 애플리케이션 품질을 보장하기 위해 [프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)의 일부이거나 선택적으로 [비프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)의 일부인 사용자 정의 기능 테스트로 실행됩니다.
+제품 기능 테스트는 Adobe에 의해 정의되지만 자체 애플리케이션에 대한 자체 품질 테스트를 작성할 수 있습니다. 의 일부로 사용자 정의 기능 테스트로 실행됩니다. [프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 또는 선택적으로 [비프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 을 참조하십시오.
 
 사용자 정의 기능 테스트는 사용자 정의 코드 배포와 푸시 업그레이드 모두에 대해 실행되므로 AEM 코드 변경으로 인해 애플리케이션 코드가 손상되지 않도록 우수한 기능 테스트를 작성하는 것이 특히 중요합니다. 사용자 정의 기능 테스트 단계는 항상 존재하며 건너뛸 수 없습니다.
 
@@ -61,7 +61,7 @@ AEM as a Cloud Service의 기능 테스트에는 세 가지 유형이 있습니�
 
 ### 사용자 정의 UI 테스트 {#custom-ui-testing}
 
-사용자 정의 UI 테스트는 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있는 선택적 기능입니다. UI 테스트는 Java 및 Maven, Node 및 WebDriver.io 또는 Selenium을 기반으로 빌드된 기타 프레임워크와 기술 등의 언어 및 프레임워크에서 다양한 선택을 허용하도록 도커 이미지에 패키징된 Selenium 기반 테스트입니다.
+사용자 정의 UI 테스트는 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있는 선택적 기능입니다. UI 테스트는 Java 및 Maven, Node 및 WebDriver.io 또는 Selenium을 기반으로 구축된 기타 프레임워크 및 기술과 같은 언어 및 프레임워크를 다양하게 선택할 수 있도록 도커 이미지에 패키징된 Selenium 기반 테스트입니다.
 
 자세한 내용은 [사용자 정의 UI 테스트](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)를 참조하십시오.
 

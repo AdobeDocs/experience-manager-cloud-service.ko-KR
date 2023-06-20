@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service SDK
 description: AEM as a Cloud Service 소프트웨어 개발 키트 개요
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1176'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ AEM as a Cloud Service SDK는 사용자 지정 코드를 빌드하고 배포하�
 1. 로컬 개발 테스트 콘텐츠는 Cloud Manager 파이프라인 빌드의 일부로 배포되지 않도록 별도로 저장해야 합니다. 지역 발전을 위해서만 활용하면 되기 때문이다
 1. 현재 실행 중인 빠른 시작 중지
 1. 이동 `crx-quickstart` 안전한 보관을 위해 다른 폴더로 폴더 이동
-1. Cloud Manager에 기록된 새 AEM 버전을 확인합니다(이 버전은 다음에 추가로 다운로드할 새 QuickStart Jar 버전을 식별하는 데 사용됨).
+1. Cloud Manager에 기록된 새 AEM 버전을 확인합니다(이후에 다운로드할 새 QuickStart Jar 버전을 식별하는 데 사용됨).
 1. 소프트웨어 배포 포털에서 프로덕션 AEM 버전과 일치하는 버전이 있는 QuickStart JAR 다운로드
 1. 새 폴더를 만들고 새 QuickStart Jar 를 내부에 넣습니다.
 1. 원하는 실행 모드(파일 이름 변경 또는 를 통한 실행 모드 전달)로 새 빠른 시작을 시작합니다. `-r`).
@@ -83,7 +83,7 @@ AEM as a Cloud Service SDK는 사용자 지정 코드를 빌드하고 배포하�
 
 SDK를 자주 업데이트(예: 격주)하고 전체 로컬 상태를 매일 삭제하여 애플리케이션의 상태 저장 데이터에 실수로 의존하지 않도록 하는 것이 좋습니다.
 
-CryptoSupport에 의존하는 경우([AEM에서 Cloudservices 또는 SMTP 메일 서비스의 자격 증명을 구성하거나 애플리케이션에서 CryptoSupport API를 사용합니다](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/crypto/CryptoSupport.html))에서 암호화된 속성은 AEM 환경의 첫 번째 시작 시 자동으로 생성되는 키에 의해 암호화됩니다. cloudsetup은 환경별 CryptoKey를 자동으로 재사용하지만, 로컬 개발 환경에 CryptoKey를 주입해야 합니다.
+CryptoSupport에 의존하는 경우([AEM에서 Cloudservices 또는 SMTP 메일 서비스의 자격 증명을 구성하거나 애플리케이션에서 CryptoSupport API를 사용합니다](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/crypto/CryptoSupport.html))에서 암호화된 속성은 AEM 환경의 첫 번째 시작 시 자동으로 생성되는 키로 암호화됩니다. cloudsetup은 환경별 CryptoKey를 자동으로 재사용하지만, 로컬 개발 환경에 CryptoKey를 주입해야 합니다.
 
 기본적으로 AEM은 폴더의 데이터 폴더 내에 키 데이터를 저장하도록 구성되지만 개발에서 쉽게 재사용할 수 있도록 AEM 프로세스를 처음 시작할 때 &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. 이 경우 &quot; 위치에 암호화 데이터가 생성됩니다.`/etc/key`&quot;.
 
@@ -91,5 +91,5 @@ CryptoSupport에 의존하는 경우([AEM에서 Cloudservices 또는 SMTP 메일
 
 * 로컬 quickstart.jar를 처음 시작할 때 아래 매개 변수를 추가해야 합니다. &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. 항상 추가하는 것이 좋지만 선택 사항입니다.
 * 인스턴스를 처음 시작할 때 루트 &quot;&quot;에 대한 필터가 포함된 패키지를 만듭니다.`/etc/key`&quot;. 이렇게 하면 암호를 재사용할 모든 환경에서 암호를 재사용할 수 있습니다
-* 비밀을 포함하는 변경 가능한 콘텐츠를 내보내거나 를 통해 암호화된 값을 조회합니다. `/crx/de` 을 추가하여 패키지에서 재사용할 수 있습니다.
-* 새 인스턴스로 회전(새 버전으로 교체 또는 테스트를 위한 자격 증명을 여러 개발 환경에서 공유해야 함)할 때마다 2단계와 3단계에서 생성된 패키지를 설치하여 수동으로 재구성할 필요 없이 콘텐츠를 재사용할 수 있습니다. 이는 이제 암호 키가 동기화되기 때문입니다.
+* 비밀을 포함하는 변경 가능한 콘텐츠를 내보내거나 `/crx/de` 을 추가하여 여러 설치에서 재사용되는 패키지에 추가할 수 있습니다
+* 새 인스턴스로 회전(새 버전으로 교체 또는 테스트를 위한 자격 증명을 여러 개발 환경에서 공유해야 함)할 때마다 2단계와 3단계에서 생성된 패키지를 설치하여 수동으로 재구성할 필요 없이 콘텐츠를 재사용할 수 있습니다. 이 이유는 이제 암호 키가 동기화되기 때문입니다.

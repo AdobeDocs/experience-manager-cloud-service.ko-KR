@@ -2,10 +2,10 @@
 title: 코드 품질 테스트
 description: 파이프라인의 코드 품질 테스트가 어떻게 작동하고 배포 품질을 어떻게 개선할 수 있는지 알아봅니다.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: ae586cc2f576aa4aee4cc611b5184e2bbda6696c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1176'
-ht-degree: 100%
+source-wordcount: '1175'
+ht-degree: 97%
 
 ---
 
@@ -116,7 +116,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (skipped-content-package)
 * `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (skipped-content-package)
 
-`myco-all-1.0.0-SNAPSHOT.zip` 내에 있는 항목만 건너뛴 두 개의 콘텐츠 패키지인 경우 “모든” 콘텐츠 패키지 대신 두 개의 임베드된 패키지가 스캔됩니다.
+안에 있는 항목만 `myco-all-1.0.0-SNAPSHOT.zip` 는 건너뛴 두 개의 콘텐츠 패키지입니다. 그런 다음 &quot;모든&quot; 콘텐츠 패키지 대신 임베드된 두 개의 패키지가 스캔됩니다.
 
 수십 개의 임베드된 패키지를 생성하는 프로젝트의 경우, 이 최적화는 파이프라인 실행당 10분 이상 절약되는 것으로 나타났습니다.
 
@@ -126,4 +126,3 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 >
 >* 이 최적화는 AEM에 배포된 패키지에 영향을 주지 않습니다.
 >* 임베드된 콘텐츠 패키지와 건너뛴 콘텐츠 패키지 간의 일치는 파일 이름을 기반으로 하므로 여러 건너뛴 콘텐츠 패키지의 파일 이름이 정확히 동일하거나 임베드하는 동안 파일 이름이 변경된 경우에는 이 최적화를 수행할 수 없습니다.
-

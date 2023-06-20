@@ -1,10 +1,10 @@
 ---
 title: 신속한 개발 환경
-description: 클라우드 환경에서 신속한 개발 반복을 위해 신속한 개발 환경을 활용하는 방법에 대해 알아봅니다.
+description: 클라우드 환경에서 신속한 개발 반복을 위해 빠른 개발 환경을 사용하는 방법에 대해 알아봅니다.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: 5bfa5a1df940b8903acd08f4c3cb7443adb897d8
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3325'
+source-wordcount: '3317'
 ht-degree: 5%
 
 ---
@@ -50,7 +50,7 @@ RDE는 코드, 콘텐츠 및 Apache 또는 Dispatcher 구성에 사용할 수 �
 
    * **환경 추가** 옵션은 **환경** 탭에서도 사용할 수 있습니다.
 
-      ![환경 탭](/help/implementing/cloud-manager/assets/environments-tab.png)
+     ![환경 탭](/help/implementing/cloud-manager/assets/environments-tab.png)
 
    * 사용 권한이 없거나 사용 허가된 리소스에 따라 **환경 추가** 옵션이 비활성화될 수 있습니다.
 
@@ -94,7 +94,7 @@ Cloud Manager를 사용하여 프로그램에 대한 RDE를 추가한 후에는 
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   및 를 사용하여 영숫자 문자열을 자체 조직 ID로 바꾸고, 이를 전략을 사용하여 조회할 수 있습니다 [여기](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
+   및 를 사용하여 영숫자 문자열을 자체 조직 ID로 바꿉니다. 이 ID는 전략을 사용하여 조회할 수 있습니다 [여기](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
 
 1. 다음으로 프로그램 ID를 구성합니다.
 
@@ -128,8 +128,7 @@ Cloud Manager를 사용하여 프로그램에 대한 RDE를 추가한 후에는 
    >
    >다음 항목이 표시되면 `Warning: cloudmanager:list-programs is not a aio command.` 오류, 다음을 설치해야 합니다. [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) 아래 명령을 실행하여 다음을 수행합니다.
    >
-   >
-   ```
+   >```
    >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
    >```
 
@@ -148,11 +147,11 @@ Adobe은 새 기능을 개발하기 위해 다음 워크플로를 권장합니�
 
 * AEM as a Cloud Service SDK를 사용하여 중간 이정표에 도달하고 로컬에서 성공적으로 유효성을 검사하면 git에 커밋은 선택 사항이지만 아직 기본 줄의 일부가 아닌 git 기능 분기에 코드를 커밋해야 합니다. &#39;중간 이정표&#39;를 구성하는 것은 팀 습관에 따라 다르다. 예를 들면 몇 개의 새로운 코드 줄, 반나절 작업 또는 하위 기능 완료가 있습니다.
 
-* 다른 기능에서 RDE를 사용했으며 다음 작업을 수행하려는 경우 RDE를 재설정합니다. [기본 상태로 재설정](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->재설정하는 데 몇 분 정도 소요되며 기존의 모든 콘텐츠와 코드가 삭제됩니다. RDE status 명령을 사용하여 RDE가 준비되었는지 확인할 수 있습니다. RDE에 최신 AEM 릴리스 버전이 표시됩니다.
+* 다른 기능에서 RDE를 사용했으며 다음 작업을 수행하려는 경우 RDE를 재설정합니다. [기본 상태로 재설정](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->재설정하는 데 몇 분이 소요되며 기존의 모든 콘텐츠 및 코드가 삭제됩니다. RDE status 명령을 사용하여 RDE가 준비되었는지 확인할 수 있습니다. RDE에 최신 AEM 릴리스 버전이 표시됩니다.
 
-   >[!IMPORTANT]
-   >
-   > 스테이징 및 프로덕션 환경이 자동 AEM 릴리스 업데이트를 받지 못하고 가장 최근의 AEM 릴리스 버전보다 훨씬 뒤처진 경우 RDE에서 실행되는 코드가 스테이징 및 프로덕션에서 코드가 작동하는 방식과 일치하지 않을 수 있습니다. 이 경우 코드를 프로덕션에 배포하기 전에 스테이징에서 철저한 테스트를 수행하는 것이 특히 중요합니다.
+  >[!IMPORTANT]
+  >
+  > 스테이징 및 프로덕션 환경이 자동 AEM 릴리스 업데이트를 받지 못하고 가장 최근의 AEM 릴리스 버전보다 훨씬 뒤처진 경우 RDE에서 실행되는 코드가 스테이징 및 프로덕션에서 코드가 작동하는 방식과 일치하지 않을 수 있습니다. 이 경우 코드를 프로덕션에 배포하기 전에 스테이징에서 철저한 테스트를 수행하는 것이 특히 중요합니다.
 
 
 * RDE 명령줄 인터페이스를 사용하여 로컬 코드를 RDE에 동기화합니다. 옵션에는 Apache/Dispatcher 구성의 콘텐츠 패키지, 특정 번들, OSGI 구성 파일, 콘텐츠 파일 및 zip 파일 설치가 포함됩니다. 원격 콘텐츠 패키지를 참조할 수도 있습니다. 다음을 참조하십시오. [RDE 명령줄 도구](#rde-cli-commands) 섹션에 자세히 설명되어 있습니다. status 명령을 사용하여 배포가 성공했는지 확인할 수 있습니다. 필요한 경우 패키지 관리자를 사용하여 콘텐츠 패키지를 설치합니다.
@@ -185,11 +184,11 @@ RDE는 한 번에 하나의 프로젝트를 지원합니다. 코드는 로컬 �
 
 * 명령 목록을 보려면 다음을 입력합니다.
 
-   `aio aem:rde`
+  `aio aem:rde`
 
 * 명령에 대한 자세한 도움말을 보려면 다음과같이 입력합니다.
 
-   `aio aem rde <command> --help`
+  `aio aem rde <command> --help`
 
 ### RDE에 배포 {#deploying-to-rde}
 
@@ -366,17 +365,17 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 
 ## 재설정 {#reset-rde}
 
-RDE를 재설정하면 작성자 및 게시 인스턴스 모두에서 모든 사용자 지정 코드, 구성 및 콘텐츠가 제거됩니다. 이 기능은 예를 들어 RDE가 특정 기능을 테스트하는 데 사용된 경우 다른 기능을 테스트하기 위해 기본 상태로 재설정하려는 경우 유용합니다.
+RDE를 재설정하면 작성자 및 게시 인스턴스 모두에서 모든 사용자 지정 코드, 구성 및 콘텐츠가 제거됩니다. 이 재설정은 예를 들어 RDE가 특정 기능을 테스트하는 데 사용되었고 다른 기능을 테스트할 수 있도록 기본 상태로 재설정하려는 경우 유용합니다.
 
 재설정하면 RDE가 가장 최근에 사용할 수 있는 AEM 버전으로 설정됩니다.
 
 <!-- Alexandru: hiding for now, please don't delete
 
-Resetting can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code will be deleted from the RDE.
+Resetting can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code is deleted from the RDE.
 
 >[NOTE!]
 >
->You must be assigned the Cloud Manager Developer role in order to be able to use the reset feature. If not, a reset action will result in an error.
+>You must be assigned the Cloud Manager Developer role to use the reset feature. If not, a reset action results in an error.
 
 ### Reset the RDE via Command Line {#reset-the-rde-command-line}
 
@@ -400,7 +399,7 @@ Cloud Manager를 사용하여 아래 단계에 따라 RDE를 재설정할 수 �
 
    * 또는 **환경** 카드에서 **모두 표시** 버튼을 클릭하여 **환경** 탭으로 직접 이동합니다.
 
-      ![모두 표시 옵션](/help/implementing/cloud-manager/assets/environment-showall.png)
+     ![모두 표시 옵션](/help/implementing/cloud-manager/assets/environment-showall.png)
 
 1. 다음 **환경** 창이 열리고 프로그램에 대한 모든 환경이 나열됩니다.
 
@@ -464,7 +463,7 @@ OSGi 구성을 수정하여 로그 수준을 설정할 수 있습니다. 다음 
 
 ## RDE는 클라우드 개발 환경과 어떻게 다릅니까? {#how-are-rds-different-from-cloud-development-environments}
 
-RDE는 여러 가지 면에서 클라우드 개발 환경과 유사하지만 코드를 빠르게 동기화할 수 있도록 일부 사소한 아키텍처 차이점이 있습니다. RDE에 코드를 가져오는 메커니즘은 다릅니다. RDE의 경우 로컬 개발 환경에서 코드를 동기화하지만 클라우드 개발 환경의 경우 Cloud Manager를 통해 코드를 배포합니다.
+RDE는 여러 가지 면에서 클라우드 개발 환경과 유사하지만 코드를 빠르게 동기화할 수 있는 일부 사소한 아키텍처 차이점이 있습니다. RDE에 코드를 가져오는 메커니즘은 다릅니다. RDE의 경우 로컬 개발 환경에서 코드를 동기화하지만 클라우드 개발 환경의 경우 Cloud Manager를 통해 코드를 배포합니다.
 
 이러한 이유로 RDE 환경에서 코드를 확인한 후 비프로덕션 파이프라인을 사용하여 클라우드 개발 환경에 코드를 배포하는 것이 좋습니다. 마지막으로 프로덕션 파이프라인으로 배포하기 전에 코드를 테스트합니다.
 

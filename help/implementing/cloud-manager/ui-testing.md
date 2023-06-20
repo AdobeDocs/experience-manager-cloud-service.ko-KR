@@ -2,10 +2,10 @@
 title: UI 테스트
 description: 사용자 정의 UI 테스트는 사용자 정의 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있는 선택적 기능입니다.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 84b2648fe06b556534b53023769abaa69ef1ec2b
-workflow-type: ht
-source-wordcount: '2411'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '2401'
+ht-degree: 94%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="UI 테스트"
->abstract="사용자 정의 UI 테스트는 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있는 선택적 기능입니다. UI 테스트는 언어 및 프레임워크(예: Java 및 Maven, Node 및 WebDriver.io 또는 Selenium을 기반으로 빌드된 기타 프레임워크 및 기술)에서 다양한 선택을 허용하도록 Docker 이미지에 패키징된 Selenium 기반 테스트입니다."
+>abstract="사용자 정의 UI 테스트는 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있는 선택적 기능입니다. UI 테스트는 언어 및 프레임워크(예: Java 및 Maven, Node 및 WebDriver.io 또는 Selenium을 기반으로 구축된 기타 프레임워크 및 기술)에서 다양한 선택을 허용하도록 도커 이미지에 패키징된 Selenium 기반 테스트입니다."
 
 사용자 정의 UI 테스트는 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있는 선택적 기능입니다.
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 AEM은 사용자 정의 애플리케이션에 대한 원활한 업데이트를 보장하기 위해 통합된 [Cloud Manager 품질 게이트](/help/implementing/cloud-manager/custom-code-quality-rules.md) 제품군을 제공합니다 특히 IT 테스트 게이트는 이미 AEM API를 사용한 사용자 정의 테스트의 만들기 및 자동화를 지원합니다.
 
-UI 테스트는 언어 및 프레임워크(예: Cypress, Selenium, Java 및 Maven, JavaScript)에서 다양한 선택을 허용하도록 Docker 이미지에 패키징되어 있습니다. 또한 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko-KR)을 사용하여 UI 테스트 프로젝트를 쉽게 생성할 수 있습니다.
+UI 테스트는 언어 및 프레임워크(예: Cypress, Selenium, Java 및 Maven, JavaScript)에서 다양한 선택을 허용하도록 도커 이미지에 패키징됩니다. 또한 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko-KR)을 사용하여 UI 테스트 프로젝트를 쉽게 생성할 수 있습니다.
 
 Adobe는 실시간 리로딩 및 자동 대기 기능을 제공하여 테스트 중 시간을 절약하고 생산성을 향상시키는 데 도움이 되는 Cypress의 사용을 권장합니다. 또한 Cypress는 간단하고 직관적인 구문을 제공하므로 테스트를 처음 접하는 사용자도 쉽게 배우고 사용할 수 있습니다.
 
@@ -47,9 +47,9 @@ Java로 작성된 HTTP 테스트인 사용자 정의 기능 테스트와 달리 
 
    * JavaScript 및 WDIO의 경우 Cloud Manager 저장소의 `ui.tests` 폴더에서 자동으로 생성되는 샘플 코드를 사용합니다.
 
-      >[!NOTE]
-      >
-      >Cloud Manager가 자동으로 `ui.tests` 폴더를 생성하기 전에 사용자 저장소가 생성되었다면 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)을 사용해서 최신 버전도 생성할 수 있습니다.
+     >[!NOTE]
+     >
+     >Cloud Manager가 자동으로 `ui.tests` 폴더를 생성하기 전에 사용자 저장소가 생성되었다면 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)을 사용해서 최신 버전도 생성할 수 있습니다.
 
    * Java 및 WebDriver의 경우 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)에 있는 샘플 코드를 사용하십시오.
 
@@ -191,13 +191,13 @@ Adobe에서 제공하는 샘플을 사용하는 경우 다음을 참조하십시
 
 * [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)으로 생성된 JavaScript 기반 `ui.tests` 폴더의 경우 아래 명령을 실행하여 필요한 구성을 추가할 수 있습니다.
 
-   ```shell
-   echo "ui-tests.version=1" > testing.properties
-   
-   if ! grep -q "testing.properties" "assembly-ui-test-docker-context.xml"; then
-     awk -v line='                <include>testing.properties</include>' '/<include>wait-for-grid.sh<\/include>/ { printf "%s\n%s\n", $0, line; next }; 1' assembly-ui-test-docker-context.xml > assembly-ui-test-docker-context.xml.new && mv assembly-ui-test-docker-context.xml.new assembly-ui-test-docker-context.xml
-   fi
-   ```
+  ```shell
+  echo "ui-tests.version=1" > testing.properties
+  
+  if ! grep -q "testing.properties" "assembly-ui-test-docker-context.xml"; then
+    awk -v line='                <include>testing.properties</include>' '/<include>wait-for-grid.sh<\/include>/ { printf "%s\n%s\n", $0, line; next }; 1' assembly-ui-test-docker-context.xml > assembly-ui-test-docker-context.xml.new && mv assembly-ui-test-docker-context.xml.new assembly-ui-test-docker-context.xml
+  fi
+  ```
 
 * Adobe에서 제공하는 Cypress 및 Java Selenium 테스트 샘플에는 이미 옵트인 플래그가 설정되어 있습니다.
 
@@ -207,7 +207,7 @@ Adobe에서 제공하는 샘플을 사용하는 경우 다음을 참조하십시
 
 ### 환경 변수 {#environment-variables}
 
-다음 환경 변수는 프레임워크에 따라 런타임 시 Docker 이미지로 전달됩니다.
+프레임워크에 따라 다음 환경 변수가 런타임에 도커 이미지에 전달됩니다.
 
 | 변수 | 예 | 설명 | 테스트 프레임워크 |
 |---|---|---|---|
@@ -242,7 +242,7 @@ Docker 이미지가 다른 프로그래밍 언어 또는 테스트 실행자로 
 
 ### 사전 요구 사항 {#prerequisites}
 
-* Cloud Manager의 테스트는 기술 관리 사용자를 통해 실행됩니다.
+* Cloud Manager의 테스트는 기술 관리자 사용자를 사용하여 실행됩니다.
 
 >[!NOTE]
 >
@@ -254,7 +254,7 @@ Docker 이미지가 다른 프로그래밍 언어 또는 테스트 실행자로 
 |----------------------|-------|-----------------------------------------------------------------------|
 | CPU | 2.0 | 테스트 실행당 예약된 CPU 시간 |
 | 메모리 | 1Gi | 테스트에 할당된 메모리 양, 기비바이트 값 |
-| 시간 초과 | 30m | 테스트가 종료되기까지의 기간입니다. |
+| 시간 초과 | 30m | 테스트가 종료되는 기간입니다. |
 | 권장 기간 | 15m | 이 시간보다 오래 걸리지 않도록 테스트를 작성하는 것이 좋습니다. |
 
 >[!NOTE]
@@ -343,7 +343,7 @@ Cloud Manager 파이프라인에서 UI 테스트를 활성화하기 전에 [AEM 
 
 >[!NOTE]
 >
->로그 파일은 저장소의 `target/` 폴더에 저장됩니다.
+>로그 파일은 `target/` 저장소의 폴더입니다.
 >
 >자세한 내용은 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md)를 참고하십시오.
 
@@ -390,6 +390,6 @@ Cloud Manager 파이프라인에서 UI 테스트를 활성화하기 전에 [AEM 
 
 >[!NOTE]
 >
->로그 파일은 저장소의 `target/reports` 폴더에 저장됩니다.
+>로그 파일은 `target/reports` 저장소의 폴더입니다.
 >
 >자세한 내용은 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)를 참고하십시오.

@@ -2,9 +2,9 @@
 title: Query Builder의 사용자 지정 설명 평가기 구현
 description: AEM의 Query Builder는 사용자 정의가 가능한 간편한 방법으로 콘텐츠 저장소를 쿼리합니다
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '668'
 ht-degree: 2%
 
 ---
@@ -38,7 +38,6 @@ ht-degree: 2%
 >
 >* [GitHub에서 aem-search-custom-predicate-evaluator 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
 >* 다음으로 프로젝트 다운로드 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)
-
 
 >[!NOTE]
 >
@@ -106,7 +105,7 @@ replic.action=Activate
 
 >[!NOTE]
 >
->의 범위 `cq-search` 종속성이 다음으로 설정됨 `provided` 이유 `cq-search` 은(는) 다음을 통해 제공합니다. `OSGi` 컨테이너.
+>의 범위 `cq-search` 종속성이 다음으로 설정됨 `provided` 이유 `cq-search` 에서 제공합니다. `OSGi` 컨테이너.
 
 다음 코드 조각은 의 차이점을 보여 줍니다. `pom.xml` 파일, 위치 [통합 비교 형식](https://en.wikipedia.org/wiki/Diff#Unified_format)
 

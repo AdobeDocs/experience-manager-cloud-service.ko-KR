@@ -2,10 +2,10 @@
 title: Headless 애플리케이션 실행 방법
 description: 이 AEM Headless 개발자 여정의 부분에서는 Git에서 로컬 코드를 가져오고 CI/CD 파이프라인용 Cloud Manager Git으로 이동하여 Headless 애플리케이션을 라이브로 배포하는 방법에 대해 알아봅니다.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: 270eb35023e34eed2cd17674372794c6c2cc7757
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1070'
-ht-degree: 100%
+source-wordcount: '1067'
+ht-degree: 96%
 
 ---
 
@@ -50,7 +50,7 @@ AEM Headless 애플리케이션을 실행할 수 있도록 준비하려면 아�
    * 가능하면 지속 쿼리를 사용합니다.
    * CDN에서 캐싱하려면 CDN TTL을 600초 이상 제공합니다.
    * AEM은 모델 변경이 기존 쿼리에 미치는 영향을 계산할 수 있습니다.
-* 클라이언트 트래픽을 CDN으로 축소하고 더 높은 TTL을 할당하려면 JSON 파일/GraphQL 쿼리를 높고 낮은 콘텐츠 변경률 사이로 분할합니다. 원본 서버로 CDN을 최소화하여 JSON의 유효성을 다시 확인합니다.
+* 낮은 콘텐츠 변경률과 높은 콘텐츠 변경률 사이에서 JSON 파일/GraphQL 쿼리를 분할함으로써 클라이언트 트래픽을 CDN으로 줄이고 더 높은 TTL을 할당할 수 있습니다. 원본 서버로 CDN을 최소화하여 JSON의 유효성을 다시 확인합니다.
 * CDN의 콘텐츠를 효과적으로 무효화하려면 Soft Purge를 사용합니다. 이렇게 하면 CDN은 캐시 누락 없이 콘텐츠를 다시 다운로드할 수 있습니다.
 
 ## Headless 콘텐츠 다운로드 시간 개선 {#improve-download-time}
@@ -101,7 +101,7 @@ AEM Headless 애플리케이션을 실행할 수 있도록 준비하려면 아�
 
 ### 지원을 통해 버그 로깅 {#logging-a-bug-with-support}
 
-추가 지원이 필요한 경우 지원을 통해 버그를 효율적으로 로깅하려면 다음 단계를 따릅니다.
+추가 지원이 필요한 경우 지원 팀에 버그를 효율적으로 기록하려면 다음을 수행하십시오.
 
 * 문제 발생 시 필요한 경우 스크린샷 찍기
 * 문제를 재현하는 방식 문서화

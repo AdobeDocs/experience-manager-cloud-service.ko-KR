@@ -2,9 +2,9 @@
 title: SPA 및 서버측 렌더링
 description: SPA에서 SSR(서버측 렌더링)을 사용하면 페이지의 초기 로드를 가속화한 다음 추가적인 렌더링을 클라이언트에 전달할 수 있습니다.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: a9eb03d4db478a4db8e6d2436bd06dcde70a3eeb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1498'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 단일 페이지 애플리케이션(SPA)은 종종 기본 애플리케이션처럼 익숙한 방식으로 반응하고 작동하는 풍부하고 동적인 경험을 사용자에게 제공할 수 있습니다. [이는 클라이언트에 의존하여 콘텐츠를 맨 앞에 로드한 다음 사용자 상호 작용을 처리하는 대규모 작업을 수행함으로써 수행됩니다](introduction.md#how-does-a-spa-work) 따라서 클라이언트와 서버 사이에 필요한 통신량을 최소화하여 앱의 반응성을 높입니다.
 
-그러나 SPA의 크기가 크고 컨텐츠가 풍부한 경우 특히 초기 로드 시간이 길어질 수 있습니다. 로드 시간을 최적화하기 위해 일부 컨텐츠를 서버측에서 렌더링할 수 있습니다. SSR(서버측 렌더링)을 사용하면 페이지의 초기 로드를 가속화한 다음 추가적인 렌더링을 클라이언트에 전달할 수 있습니다.
+그러나 SPA의 크기가 크고 컨텐츠가 풍부한 경우 특히 초기 로드 시간이 길어질 수 있습니다. 로드 시간을 최적화하기 위해 일부 콘텐츠를 서버측에서 렌더링할 수 있습니다. SSR(서버측 렌더링)을 사용하면 페이지의 초기 로드를 가속화한 다음 추가적인 렌더링을 클라이언트에 전달할 수 있습니다.
 
 ## SSR 사용 시기 {#when-to-use-ssr}
 
@@ -59,7 +59,7 @@ AEM은 원격으로 렌더링된 콘텐츠를 검색할 수 있는 위치를 알
 
 구성에 사용할 수 있는 필드는 다음과 같습니다.
 
-* **컨텐츠 경로 패턴** - 필요한 경우 콘텐츠의 일부를 일치시키기 위한 정규 표현식
+* **컨텐츠 경로 패턴** - 필요한 경우 컨텐츠의 일부와 일치하는 정규 표현식
 * **원격 끝점 URL** - 콘텐츠 생성을 담당하는 엔드포인트의 URL
    * 로컬 네트워크에 없는 경우 보안 HTTPS 프로토콜을 사용합니다.
 * **추가 요청 헤더** - 원격 끝점으로 전송된 요청에 추가할 추가 헤더
@@ -136,9 +136,9 @@ SPA에 대한 서버측 렌더링을 구현할 때 필요한 앱 부분을 검�
 
 ## SSR을 사용하여 SPA 개발 {#developing-an-spa-using-ssr}
 
-SPA 구성 요소는 클라이언트(브라우저에서) 또는 서버측에서 렌더링할 수 있습니다. 서버측에서 렌더링될 때 창 크기 및 위치와 같은 브라우저 속성이 없습니다. 따라서 SPA 구성 요소는 렌더링될 위치에 대해 가정하지 않고 동형이어야 합니다.
+SPA 구성 요소는 클라이언트(브라우저에서) 또는 서버측에서 렌더링할 수 있습니다. 서버측에서 렌더링될 때 창 크기 및 위치와 같은 브라우저 속성이 없습니다. 따라서 SPA 구성 요소는 렌더링되는 위치에 대한 가정을 하지 않고 동형이어야 합니다.
 
-SSR을 활용하려면 AEM과 서버측 렌더링을 담당하는 Adobe I/O Runtime에 코드를 배포해야 합니다. 대부분의 코드는 동일하지만 서버별 작업은 다릅니다.
+SSR을 사용하려면 서버측 렌더링을 담당하는 AEM 및 Adobe I/O Runtime에서 코드를 배포해야 합니다. 대부분의 코드는 동일하지만 서버별 작업은 다릅니다.
 
 ## AEM의 SPA용 SSR {#ssr-for-spas-in-aem}
 
@@ -160,7 +160,7 @@ AEM이 Angular 및 React SPA 프레임워크를 기본적으로 지원하는 것
 
 ### RemoteContentRendererRequestHandlerServlet {#remotecontentrendererrequesthandlerservlet}
 
-다음 `RemoteContentRendererRequestHandlerServlet` 를 사용하여 프로그래밍 방식으로 요청 구성을 설정할 수 있습니다. `DefaultRemoteContentRendererRequestHandlerImpl`제공된 기본 요청 처리기 구현을 사용하면 콘텐츠 구조의 위치를 원격 끝점에 매핑하기 위해 여러 OSGi 구성을 만들 수 있습니다.
+다음 `RemoteContentRendererRequestHandlerServlet` 를 사용하여 프로그래밍 방식으로 요청 구성을 설정할 수 있습니다. `DefaultRemoteContentRendererRequestHandlerImpl`제공된 기본 요청 처리기 구현에서는 콘텐츠 구조의 위치를 원격 끝점에 매핑할 수 있도록 여러 OSGi 구성을 만들 수 있습니다.
 
 사용자 지정 요청 핸들러를 추가하려면 `RemoteContentRendererRequestHandler` 인터페이스. 다음을 설정하십시오. `Constants.SERVICE_RANKING` 구성 요소 속성을 100보다 큰 정수로 지정합니다. 이 값은 `DefaultRemoteContentRendererRequestHandlerImpl`.
 
@@ -194,4 +194,4 @@ public class CustomRemoteContentRendererRequestHandlerImpl implements RemoteCont
 
 ### 요구 사항 {#requirements}
 
-서블릿은 슬링 모델 익스포터를 활용하여 구성 요소 데이터를 직렬화합니다. 기본적으로 `com.adobe.cq.export.json.ContainerExporter` 및 `com.adobe.cq.export.json.ComponentExporter` 슬링 모델 어댑터로 지원됩니다. 필요한 경우 요청을 조정할 클래스를 추가할 수 있습니다. `RemoteContentRendererServlet` 및 구현 `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses`. 추가 클래스는 `ComponentExporter`.
+서블릿은 슬링 모델 익스포터를 사용하여 구성 요소 데이터를 직렬화합니다. 기본적으로 `com.adobe.cq.export.json.ContainerExporter` 및 `com.adobe.cq.export.json.ComponentExporter` 슬링 모델 어댑터로 지원됩니다. 필요한 경우 요청을 조정할 클래스를 추가할 수 있습니다. `RemoteContentRendererServlet` 및 구현 `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses`. 추가 클래스는 `ComponentExporter`.

@@ -1,8 +1,8 @@
 ---
 title: API 참조 자료
-description: AEM에는 디지털 경험 프로젝트에 활용할 수 있는 광범위하고 강력한 API가 있습니다.
+description: AEM에는 디지털 경험 프로젝트에 사용할 수 있는 광범위하고 강력한 API가 있습니다.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 9%
@@ -11,7 +11,7 @@ ht-degree: 9%
 
 # API 참조 자료 {#api-reference-materials}
 
-AEM(Adobe Experience Manager)은 애플리케이션 개발 및 AEM 확장을 위한 다양한 API를 제공합니다. AEM은 다양한 오픈 소스 기술 위에 구축되어 있어 활용도도 높일 수 있습니다.
+AEM(Adobe Experience Manager)은 애플리케이션 개발 및 AEM 확장을 위한 다양한 API를 제공합니다. AEM은 다양한 오픈 소스 기술을 기반으로 구축되었으며, 이 기술을 사용할 수도 있습니다.
 
 ## AEM 코어 API {#core-aem-apis}
 
@@ -61,7 +61,7 @@ AEM은 사용자 지정 가능한 구성 요소 및 컨텐츠 전달 옵션을 �
 
 | 특별 포함 | 설명 |
 |---|---|
-| [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) | AEM용 표준화된 웹 콘텐츠 관리(WCM) 구성 요소로 개발 시간을 단축하고 웹 사이트의 유지 관리 비용을 절감합니다. |
+| [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) | AEM용 표준화된 웹 콘텐츠 관리(WCM) 구성 요소로 개발 시간을 단축하고 웹 사이트의 유지 관리 비용을 절감합니다. |
 | [JSON 내보내기](/help/implementing/developing/components/json-exporter.md) | 모든 AEM 페이지의 콘텐츠를 JSON 데이터 모델 형식으로 전달 |
 | [구성 요소에 대해 JSON 내보내기 활성화](/help/implementing/developing/components/enabling-json-exporter.md) | 모델러 프레임워크를 기반으로 구성 요소 콘텐츠의 JSON 내보내기 생성 |
 | [Assets API](/help/assets/mac-api-assets.md) | 바이너리, 메타데이터, 렌디션 및 주석을 포함하여 에셋에서 CRUD(create-read-update-delete) 작업을 수행할 수 있습니다. AEM Assets HTTP API 를 참조하십시오 |

@@ -2,10 +2,10 @@
 title: 장식 태그
 description: 웹 페이지의 구성 요소를 렌더링할 때 HTML 요소를 생성하여 자체에 렌더링된 구성 요소를 둘러쌀 수 있습니다. 개발자를 위해 AEM에서는 포함된 구성 요소를 감싸는 데코레이션 태그를 제어하는 분명하고 단순한 로직을 제공합니다.
 exl-id: a90fd619-eff6-466f-9178-90374f988b5d
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 10%
+source-wordcount: '787'
+ht-degree: 11%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 10%
 * **`cq:htmlTag`노드 :** 이 노드는 구성 요소 아래에 추가할 수 있으며 다음과 같은 속성을 가질 수 있습니다.
    * **`cq:tagName {String}`:** 기본 DIV 요소 대신 구성 요소를 래핑하는 데 사용할 사용자 지정 HTML 태그를 지정하는 데 사용할 수 있습니다.
    * **`class {String}`:** 래퍼에 추가할 css 클래스 이름을 지정하는 데 사용할 수 있습니다.
-   * 다른 속성 이름은 제공된 것과 동일한 문자열 값을 가진 HTML 속성으로 추가됩니다.
+   * 다른 속성 이름은 제공된 것과 동일한 String 값을 가진 HTML 속성으로 추가됩니다.
 
 ## 스크립트 컨트롤 {#script-controls}
 

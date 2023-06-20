@@ -4,9 +4,9 @@ seo-title: Manage [!DNL AEM Forms] metadata
 description: 메타데이터를 사용하면 에셋을 보다 쉽게 분류하고 구성할 수 있으며 특정 에셋을 찾는 사용자에게 도움이 됩니다.
 seo-description: Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1658'
 ht-degree: 2%
 
 ---
@@ -178,9 +178,9 @@ ht-degree: 2%
 
    * 다음을 클릭합니다. **[!UICONTROL 속성]** ![속성](assets/Smock_Info_18_N.svg) 아이콘을 클릭합니다.
 
-      >[!NOTE]
-      >
-      >빠른 작업은 마우스를 가져가면 썸네일 위에 표시되는 작업 항목입니다.
+     >[!NOTE]
+     >
+     >빠른 작업은 마우스를 가져가면 썸네일 위에 표시되는 작업 항목입니다.
 
    * 양식을 선택하고 **[!UICONTROL 속성]** ![속성](assets/Smock_Info_18_N.svg) 아이콘: 도구 모음에 표시됩니다.
    * 선택 모드에 있지 않을 때 양식 썸네일을 클릭하여 양식 세부 정보 페이지로 이동합니다. 이제 ![속성](assets/Smock_Info_18_N.svg) 오른쪽 상단에 있는 눈 모양 아이콘을 클릭한 다음 아래 목록에서 속성 을 클릭합니다.
@@ -234,7 +234,6 @@ ht-degree: 2%
 >* 새 이미지가 업로드되거나 생성되면 썸네일이 이 이미지로 대체되며 이전 이미지로 재설정할 수 없습니다.
 >
 
-
 ## 사용자 지정 메타데이터 추가 {#add-custom-metadata}
 
 기본 제공되는 메타데이터 외에도 [!DNL AEM Forms] 는 새 사용자 지정 메타데이터를 지원합니다.
@@ -285,11 +284,11 @@ ht-degree: 2%
 1. 방금 드래그한 구성 요소를 클릭합니다. 오른쪽 패널에 열리는 설정 탭에서 다음 필드에 대한 정보를 입력합니다.
 
    1. 스키마에 배치된 필드 위에 표시 이름으로 사용할 필드 레이블 지정(예: 부서)
-   1. 속성에 매핑 필드에서 미리 채워진 값을 볼 수 있습니다 **&#39;./jcr:content/metadata/default&#39;**. &#39; 변경&#x200B;**기본값**&#x200B;원하는 속성 이름으로, crx 저장소에 속성을 저장하는 데 사용됩니다(예: &#39;)./jcr:content/metadata/department&#39;)
+   1. 속성에 매핑 필드에서 미리 채워진 값을 볼 수 있습니다 **&#39;./jcr:content/metadata/default&#39;**. &#39; 변경&#x200B;**기본값** crx 저장소에 속성을 저장하는 데 사용되는 원하는 속성 이름으로 &#39; &#39;를 입력합니다(예: &#39;)./jcr:content/metadata/department&#39;)
 
       >[!NOTE]
       >
-      >접두사 &#39; 을 변경하지 마십시오./jcr:content/metadata/&#39; 속성을 저장하는 경로를 정의합니다.
+      >접두사 &#39;(을)를 변경하지 마십시오./jcr:content/metadata/&#39; 속성을 저장하는 경로를 정의합니다.
       >
       >또한 저장소의 동일한 위치에 두 개 이상의 속성에 대한 값을 쓰지 않도록 하려면 속성 이름이 고유해야 합니다. 따라서 &#39;default&#39; 값을 변경하는 것이 좋습니다.
 

@@ -4,10 +4,10 @@ description: GraphQL에서 Headless 콘텐츠 게재를 위해 콘텐츠 조각�
 feature: Content Fragments, GraphQL API
 role: User
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 100%
+source-wordcount: '730'
+ht-degree: 97%
 
 ---
 
@@ -25,14 +25,12 @@ ht-degree: 100%
 >
 >* [Headless 및 AEM](/help/headless/introduction.md): AEM Sites as a Cloud Service용 Headless 개발을 소개합니다.
 
-
 >[!NOTE]
 >
 >GraphQL은 현재 Adobe Experience Manager(AEM) as a Cloud Service의 두 가지 (별도) 시나리오에서 사용됩니다.
 >
 >* [AEM Commerce는 GraphQL을 통해 상거래 플랫폼의 데이터를 사용합니다](/help/commerce-cloud/integrating/magento.md).
 >* [AEM 콘텐츠 조각은 AEM GraphQL API(표준 GraphQL 기반의 맞춤화된 구현)와 함께 작동하여 애플리케이션에서 사용할 구조화된 콘텐츠를 제공합니다](/help/headless/graphql-api/content-fragments.md).
-
 
 ## Headless CMS {#headless-cms}
 
@@ -50,7 +48,7 @@ GraphQL은
 
 * “*...API용 쿼리 언어 및 기존 데이터로 이러한 쿼리를 수행하기 위한 런타임입니다.*”
 
-   [GraphQL.org](https://graphql.org)를 참조하십시오.
+  [GraphQL.org](https://graphql.org)를 참조하십시오.
 
 [AEM GraphQL API](#aem-graphql-api)를 사용하면 [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md)에서 (복잡한) 쿼리를 수행할 수 있습니다(각 쿼리는 특정 모델 유형에 따라 다름). 그런 다음 반환된 콘텐츠를 애플리케이션에서 사용할 수 있습니다.
 

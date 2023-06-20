@@ -2,10 +2,10 @@
 title: 온보딩 준비
 description: 온보딩 프로세스가 시작되기 전에 시스템 관리자가 시스템에 로그인하기 위해 이해해야 하는 몇 가지 준비 단계가 있습니다.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 100%
+source-wordcount: '766'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ AEM as a Cloud Service는 다양한 솔루션, 추가 기능 및 배포 모델�
 * 해당 약정이 온보딩 프로세스에 미치는 영향
 * 온보딩 통화를 준비하는 방법
 
-이 페이지에 사용된 모든 용어에 익숙하지 않더라도 걱정하지 마십시오. 여정의 다음 부분에서 설명될 것입니다.
+이 페이지에 사용된 모든 용어에 익숙하지 않더라도 걱정하지 마십시오. 이 용어는 여정의 다음 부분에 설명되어 있습니다.
 
 ## 비디오 {#video}
 
@@ -60,7 +60,7 @@ AEM as a Cloud Service에 대한 온보딩은 조직과 Adobe 간에 서명된 �
 * 기술 실무자
 * 구현 파트너
 
-Adobe에서는 다음과 같은 역할이 대표로 참석합니다.
+Adobe은 다음과 같이 표시됩니다.
 
 * 온보딩 전문가
 * 기술 계정 관리자 (해당되는 경우)

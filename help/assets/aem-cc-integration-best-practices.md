@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '3495'
 ht-degree: 16%
@@ -140,7 +140,7 @@ Adobe Stock의 자산이 라이선스가 부여되고 Experience Manager에 저�
 
 ### 자산이 DAM에 저장되는 이유 {#why-assets-are-stored-in-dam}
 
-DAM에 에셋을 저장하면 에셋에 쉽게 액세스하고 검색할 수 있습니다. 파트너, 고객 등을 포함하여 조직 또는 생태계 전반에 걸쳐 수많은 사용자가 에셋을 활용할 수 있도록 합니다.
+DAM에 에셋을 저장하면 에셋에 쉽게 액세스하고 검색할 수 있습니다. 파트너, 고객 등을 포함하여 조직 또는 생태계 전반에 걸쳐 수많은 사용자가 에셋을 사용할 수 있도록 합니다.
 
 대부분의 조직은 다운스트림 마케팅/LOB 프로세스와 관련된 자산만 저장하도록 선택합니다(Experience Manager Sites을 통해 웹 채널과 같은 채널에 게시하거나 Adobe Experience Cloud에서 제공하는 기타 채널(Marketing Cloud, Advertising Cloud 및 Analytics Cloud에서 측정하며 사용자/파트너에게 제공하는 채널 등). 또한 조직에서는 검토/승인 프로세스가 수행될 수 있는 에셋을 DAM에 저장합니다. 이처럼 DAM은 활용 가능성이 높은 자산을 대부분 저장하고, 유휴 자산의 저장을 회피한다.
 
@@ -222,7 +222,7 @@ Experience Manager 데스크탑 앱은 기본 앱에서 연 에셋에 대한 네
 
 이 설명은 데스크탑 사용자의 워크플로의 일반적인 일부로서, 작동적으로(예: 매주 또는 모든 사진 촬영 시) 파일을 업로드하는 것을 말합니다. 대규모 자산 마이그레이션은 여기에서 다루지 않습니다.
 
-다음 업로드 기능을 활용할 수 있습니다.
+다음과 같은 업로드 기능을 사용할 수 있습니다.
 
 * 대형/계층 폴더를 일괄 업로드하려면 다음을 제공하는 Experience Manager 데스크탑 앱을 사용하십시오. [폴더 업로드](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#bulk-upload-assets) 기능. 계층적 폴더 구조를 업로드할 수도 있습니다. 에셋은 백그라운드에서 업로드되므로 웹 브라우저 세션에 연결되어 있지 않습니다
 * 단일 폴더에서 몇 가지 파일을 업로드하려면 파일을 웹 인터페이스로 직접 드래그하거나 Experience Manager Assets 웹 인터페이스의 만들기 옵션을 사용합니다.

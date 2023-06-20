@@ -4,10 +4,10 @@ description: Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조�
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: e99522cb6221285b5b4de5f026dcc4d925035ec1
-workflow-type: ht
-source-wordcount: '2127'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '2121'
+ht-degree: 99%
 
 ---
 
@@ -68,7 +68,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 
 그러나 대개 모든 채널에 대해 동일한 콘텐츠를 사용하고 싶지 않을 것이므로 특정 채널에 따라 콘텐츠를 최적화해야 합니다.
 
-콘텐츠 조각을 사용하면
+컨텐츠 조각을 사용하면 다음 작업을 수행할 수 있습니다.
 
 * 다양한 채널에서 효율적으로 타겟 대상자에게 도달하는 방법을 고려할 수 있습니다.
 * 채널 중립적인 에디토리얼 콘텐츠를 만들고 관리할 수 있습니다.
@@ -300,7 +300,7 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 
 ## 사용 예 {#example-usage}
 
-요소 및 변형을 포함한 조각을 사용하여 여러 채널용의 일관된 콘텐츠를 만들 수 있습니다. 조각을 디자인할 때에는 어디에 사용될 것인지 고려해야 합니다.
+요소 및 변형을 포함한 조각을 사용하여 여러 채널용의 일관된 콘텐츠를 만들 수 있습니다. 조각을 디자인할 때 어디에 사용했는지 고려합니다.
 
 ### WKND 샘플 {#wknd-sample}
 

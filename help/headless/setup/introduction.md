@@ -2,10 +2,10 @@
 title: Headless 설정
 description: 이 빠른 시작 안내서를 통해 콘텐츠 모델, 콘텐츠 조각, GraphQL API와 같은 AEM as a Cloud Service의 강력한 Headless기능의 핵심을 배웁니다.
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
-source-git-commit: d35b60810a1624390d3d9c82c2a364140ea37536
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 100%
+source-wordcount: '286'
+ht-degree: 94%
 
 ---
 
@@ -30,12 +30,11 @@ ht-degree: 100%
 >* [Headless 콘텐츠 작성 여정](/help/journey-headless/author/overview.md)
 >* [Headless 번역 여정](/help/journey-headless/translation/overview.md).
 
-
 ## 대상자 {#audience}
 
 설명된 작업은 AEM의 Headless 기능에 대한 기본적인 엔드투엔드 데모에 필요합니다. 테스트 AEM 인스턴스에 대한 관리자 액세스 권한이 있는 사람은 누구나 AEM의 Headless 게재를 이해하기 위해 이 안내서를 따를 수 있지만, 그중에서도 개발자 경험이 있는 사람이 이상적입니다.
 
-그러나 프로덕션 상황에서는 여러 가상 사용자에 의해 여러 번 작업이 수행됩니다. 예:
+그러나 프로덕션 상황에서는 서로 다른 가상 사용자에 의해 여러 번 작업이 수행됩니다. 예:
 
 * **관리자**&#x200B;는 콘텐츠에 대한 초기 구성 및 폴더 구조를 일반적으로 한 번만 또는 가끔 설정해야 합니다.
 * **정보 설계자**&#x200B;는 일반적으로 조직의 요구 사항이 발전함에 따라 새로운 모델을 추가합니다.

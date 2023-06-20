@@ -2,10 +2,10 @@
 title: AEM용 SPA 개발
 description: 이 문서에서는 프론트엔드 개발자에게 AEM용 SPA을 개발하도록 요청할 때 고려해야 할 중요한 질문을 제시하고 AEM에서 개발된 SPA을 배포할 때 AEM과 관련된 SPA의 아키텍처에 대한 개요를 제공합니다.
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2076'
-ht-degree: 13%
+source-wordcount: '2072'
+ht-degree: 12%
 
 ---
 
@@ -17,14 +17,14 @@ SPA(단일 페이지 애플리케이션)는 웹 사이트 사용자에게 적합
 
 ## AEM용 SPA 개발 원칙 {#spa-development-principles-for-aem}
 
-AEM을 통해 단일 페이지 애플리케이션을 개발하면 프론트엔드 개발자가 SPA를 제작하는 도중 표준 모범 사례를 준수하는 것으로 간주됩니다. 프론트엔드 개발자로서 이러한 일반적인 모범 사례와 몇 가지 AEM 관련 원칙을 따르는 경우 SPA은에서 작동합니다. [AEM 및 컨텐츠 작성 기능](introduction.md#content-editing-experience-with-spa).
+AEM을 통해 단일 페이지 애플리케이션을 개발하면 프론트엔드 개발자가 SPA를 제작하는 도중 표준 모범 사례를 준수하는 것으로 간주됩니다. 프론트엔드 개발자가 이러한 일반적인 모범 사례와 몇 가지 AEM 관련 원칙을 따르는 경우 SPA은 [AEM 및 컨텐츠 작성 기능](introduction.md#content-editing-experience-with-spa).
 
 * **[이동성](#portability)** - 모든 구성 요소와 마찬가지로 구성 요소는 최대한 이동할 수 있도록 빌드해야 합니다. SPA는 이동 및 재사용할 수 있는 구성 요소로 빌드해야 합니다.
 * **[AEM 실행 사이트 구조](#aem-drives-site-structure)** - 프론트엔드 개발자는 구성 요소를 만들고 내부 구조를 가지고 있지만 AEM을 사용하여 사이트의 콘텐츠 구조를 정의할 수 있습니다.
 * **[동적 렌더링](#dynamic-rendering)** - 모든 렌더링은 동적이어야 합니다.
 * **[동적 라우팅](#dynamic-routing)** - SPA는 라우팅을 담당하고 이에 따라 AEM은 라우팅을 수신하고 가져옵니다. 모든 라우팅 또한 동적이어야 합니다.
 
-SPA을 개발할 때 이러한 원칙을 염두에 둔다면 지원되는 모든 AEM 작성 기능을 활성화하면서 가능한 한 유연하고 향후 증빙될 수 있습니다.
+SPA을 개발할 때 이러한 원칙을 염두에 두면 지원되는 모든 AEM 작성 기능을 활성화하면서 가능한 한 유연하고 향후 증명이 됩니다.
 
 AEM 작성 기능을 지원하지 않아도 되는 경우에는 다른 사항을 고려해야 할 수도 있습니다 [SPA 디자인 모델](#spa-design-models).
 
@@ -54,7 +54,7 @@ SPA은 컨텐츠의 동적 렌더링에만 의존해야 합니다. AEM이 콘텐
 
 ## AEM Project Archetype {#aem-project-archetype}
 
-AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 활용해야 합니다.
+모든 AEM 프로젝트는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko-KR)React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 사용하는 입니다.
 
 ## SPA 디자인 모델 {#spa-design-models}
 
@@ -72,7 +72,7 @@ AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하
   <tr>
    <td>AEM은 를 사용하지 않고 Headless CMS로 사용됩니다. <a href="/help/implementing/developing/hybrid/reference-materials.md">SPA Editor SDK 프레임워크.</a></td>
    <td>프론트엔드 개발자가 앱을 완벽하게 제어합니다.</td>
-   <td><p>콘텐츠 작성자는 AEM 콘텐츠 작성 경험을 활용할 수 없습니다.</p> <p>정적 참조 또는 라우팅이 포함된 코드는 이식 가능하거나 재사용할 수 없습니다.</p> <p>템플릿 편집기의 사용을 허용하지 않으므로 프론트엔드 개발자는 JCR을 통해 편집 가능한 템플릿을 유지 관리해야 합니다.</p> </td>
+   <td><p>콘텐츠 작성자는 AEM 콘텐츠 작성 환경을 사용할 수 없습니다.</p> <p>정적 참조 또는 라우팅이 포함된 코드는 이식 가능하거나 재사용할 수 없습니다.</p> <p>템플릿 편집기의 사용을 허용하지 않으므로 프론트엔드 개발자는 JCR을 통해 편집 가능한 템플릿을 유지 관리해야 합니다.</p> </td>
   </tr>
   <tr>
    <td>프론트엔드 개발자는 SPA Editor SDK 프레임워크를 사용하지만 콘텐츠 작성자에게 일부 영역만 엽니다.</td>
@@ -80,7 +80,7 @@ AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하
    <td><p>콘텐츠 작성자는 제한된 AEM 콘텐츠 작성 경험 세트로 제한됩니다.</p> <p>이 코드에 정적 참조 또는 라우팅이 포함되어 있으면 코드를 이동할 수 없거나 다시 사용할 수 없습니다.</p> <p>템플릿 편집기의 사용을 허용하지 않으므로 프론트엔드 개발자는 JCR을 통해 편집 가능한 템플릿을 유지 관리해야 합니다.</p> </td>
   </tr>
   <tr>
-   <td>프로젝트는 SPA Editor SDK를 완전히 활용하며 프론트엔드 구성 요소는 라이브러리로 개발되고 앱의 콘텐츠 구조는 AEM에 위임됩니다.</td>
+   <td>프로젝트는 SPA Editor SDK를 완전히 사용하며 프론트엔드 구성 요소는 라이브러리로 개발되고 앱의 콘텐츠 구조는 AEM에 위임됩니다.</td>
    <td><p>이 앱은 재사용이 가능하며 휴대가 가능합니다.</p> <p>콘텐츠 작성자는 AEM 콘텐츠 작성 경험을 사용하여 앱을 편집할 수 있습니다.<br /> </p> <p>SPA은 템플릿 편집기와 호환됩니다.</p> </td>
    <td><p>개발자가 앱의 구조 및 AEM에 위임된 콘텐츠 부분을 제어할 수 없습니다.</p> <p>개발자는 AEM을 사용하여 작성되지 않은 콘텐츠에 대해 앱 영역을 계속 예약할 수 있습니다.</p> </td>
   </tr>
@@ -119,7 +119,7 @@ AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하
 
 1. **구성 요소 구현 `render()` 방법**
 
-   프론트엔드 개발자는 `render()` 메서드를 사용하여 조건에 맞는 `cqModel` 속성. 이렇게 하면 페이지에 삽입할 DOM과 HTML 조각이 출력됩니다. React에서 앱을 빌드하는 표준 방법입니다.
+   프론트엔드 개발자는 `render()` 메서드를 사용하여 조건에 맞는 `cqModel` 속성. 이렇게 하면 페이지에 삽입된 DOM과 HTML 조각이 출력됩니다. React에서 앱을 빌드하는 표준 방법입니다.
 
 1. **다음을 통해 구성 요소를 AEM 리소스 유형에 매핑`MapTo()`**
 
@@ -154,7 +154,7 @@ AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하
 
 ![AEM 불가지론적 접근 방식](assets/aem-agnostic.png)
 
-다음 `MapTo` helper는 백엔드 및 프론트엔드 구성 요소를 함께 연결할 수 있는 &quot;접착제&quot;입니다.
+다음 `MapTo` helper는 백엔드 및 프론트엔드 구성 요소를 함께 찾을 수 있는 &quot;접착제&quot;입니다.
 
 * JS 컨테이너 (또는 JS 단락 시스템)에 JSON에 있는 각 구성 요소를 렌더링하기 위해 JS 구성 요소가 무엇인지를 알려줍니다.
 * JS 구성 요소가 렌더링하는 HTML에 HTML 데이터 속성을 추가하므로 SPA 편집기는 구성 요소를 편집할 때 작성자에게 표시할 대화 상자를 알 수 있습니다.
@@ -172,16 +172,16 @@ AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하
 
 * **빌드 환경**
 
-   SPA 애플리케이션 소스 및 구성 요소 소스의 소스가 체크아웃되는 위치입니다.
+  SPA 애플리케이션 소스 및 구성 요소 소스의 소스가 체크아웃되는 위치입니다.
 
    * NPM clientlib 생성기는 SPA 프로젝트에서 클라이언트 라이브러리를 생성합니다.
    * 해당 라이브러리는 Maven에서 가져오고 구성 요소와 함께 Maven Build 플러그인에 의해 AEM 작성자에게 배포됩니다.
 
 * **AEM Author**
 
-   SPA 작성을 포함하여 AEM 작성자에 콘텐츠가 작성됩니다.
+  SPA 작성을 포함하여 AEM 작성자에 콘텐츠가 작성됩니다.
 
-   작성 환경에서 SPA 편집기를 사용하여 SPA을 편집하는 경우:
+  작성 환경에서 SPA 편집기를 사용하여 SPA을 편집하는 경우:
 
    1. SPA이 외부 HTML을 요청합니다.
    1. CSS가 로드되었습니다.
@@ -191,11 +191,11 @@ AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하
 
 * **AEM 게시**
 
-   여기에서 SPA 애플리케이션 아티팩트, clientlib 및 구성 요소를 비롯한 작성된 컨텐츠 및 컴파일된 라이브러리가 공용으로 게시됩니다.
+  여기에서 SPA 애플리케이션 아티팩트, clientlib 및 구성 요소를 비롯한 작성된 컨텐츠 및 컴파일된 라이브러리가 공용으로 게시됩니다.
 
 * **Dispatcher / CDN**
 
-   Dispatcher는 사이트 방문자를 위한 AEM의 캐싱 레이어 역할을 합니다.
+  Dispatcher는 사이트 방문자를 위한 AEM의 캐싱 레이어 역할을 합니다.
    * 요청은 AEM 작성자에 있는 것과 유사하게 처리되지만 편집기에만 필요하므로 페이지 정보에 대한 요청은 없습니다.
    * Javascript, CSS, JSON 및 HTML이 캐시되어 빠른 전송을 위해 페이지가 최적화됩니다.
 

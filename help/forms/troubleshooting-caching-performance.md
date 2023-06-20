@@ -5,10 +5,10 @@ description: 캐싱 성능 문제 해결
 seo-description: Troubleshooting caching performance
 contentOwner: khsingh
 exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -35,7 +35,7 @@ Cloud Service 환경에서 적응형 Forms 캐시를 구성하거나 사용하�
 문제를 해결하려면 다음 단계를 수행하십시오.
 
 1. Experience Manager 프로젝트를 엽니다.
-1. 를 엽니다. `dispatcher/scr/conf.d/rewrites/rewrite.rules` 편집할 수 있습니다.
+1. 편집할 `dispatcher/scr/conf.d/rewrites/rewrite.rules`을 엽니다.
 1. 를 엽니다. `conf.d/httpd-dispatcher.conf` 또는 런타임 시 로드되도록 구성된 기타 모든 구성 파일입니다.
 1. 다음 코드를 파일에 추가하고 저장합니다. 샘플 코드이며 환경에 맞게 수정합니다.
 
@@ -49,7 +49,7 @@ Cloud Service 환경에서 적응형 Forms 캐시를 구성하거나 사용하�
     RewriteRule "^/content/forms/af/(.*)[.](.*).html$" "/content/forms/af/$1.$2.html" [PT]
 
     # Handle selector based redirection basded on browser language
-    # The Rewrite Condition is looking for the Accept-Language header and if found takes the first two character which most likely will be the desired language selector.
+    # The Rewrite Condition is looking for the Accept-Language header and if found takes the first two characters which most likely are the desired language selector.
     RewriteCond %{HTTP:Accept-Language} ^(..).*$ [NC]
     RewriteRule "^/content/forms/af/(.*).html$" "/content/forms/af/$1.%1.html" [R]
     RewriteRule "^/content/forms/af/(.*).html$" "/content/forms/af/$1.%1.html" [R]

@@ -2,9 +2,9 @@
 title: Screens에서 디스플레이 제작 및 관리 as a Cloud Service
 description: 이 페이지에서는 Screens as a Cloud Service으로 디스플레이를 만들고 관리하는 방법에 대해 설명합니다.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: 9e0ab778e97658bc8d7669b1f582f3bcddd47915
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '663'
 ht-degree: 3%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 채널을 게시했으면 이제 Screens Services Provider에 디스플레이를 만들 차례입니다.
 
-디스플레이는 일반적으로 서로 옆에 배치된 화면의 가상 그룹입니다. 디스플레이는 일반적으로 설치와 관련하여 영구적입니다. 이는 콘텐츠 작성자가 함께 작업하고 항상 물리적 카운터 부분이 아닌 논리적 표시로 를 참조하는 개체가 됩니다.
+디스플레이는 일반적으로 서로 옆에 배치된 화면의 가상 그룹입니다. 디스플레이는 일반적으로 설치와 관련하여 영구적입니다. 이 개체 콘텐츠는 작성자가 실제 카운터 부분이 아닌 논리 표시로 작업하고 항상 를 참조하는 개체입니다.
 
 ## 목표 {#objective}
 
@@ -128,7 +128,7 @@ Screens Services Provider에서 디스플레이를 삭제할 수 있습니다.
 
 1. 인벤토리 보기에서 삭제할 하위 폴더를 선택하고 비어 있는지 확인합니다.
 
-1. 다음을 클릭합니다. **삭제** 작업 선택 작업 모음 폴더가 비어 있지 않으면 작업이 비활성화됩니다.
+1. 클릭 **삭제** 작업 선택 작업 모음 폴더가 비어 있지 않으면 작업이 비활성화됩니다.
 
 
 ## 다음 단계 {#whats-next}

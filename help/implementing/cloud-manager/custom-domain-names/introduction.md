@@ -2,10 +2,10 @@
 title: 사용자 정의 도메인 이름 소개
 description: Cloud Manager의 UI를 사용하면 사용자 정의 도메인을 추가하여 셀프서비스 방식을 사용하여 사이트를 고유한 브랜드 이름으로 식별할 수 있습니다.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: 1862ae2d0d60ac9ed89a4ba3da82dcf8f032ee65
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 100%
+source-wordcount: '768'
+ht-degree: 94%
 
 ---
 
@@ -40,7 +40,7 @@ AEM as a Cloud Service는 내장된 콘텐츠 게재 네트워크(CDN) 서비스
 * AEM 관리 CDN에 설치된 사용자 정의 도메인의 이름(및 인증서)은 Cloud Manager를 통해 관리됩니다.
 * 자체 CDN에 설치된 사용자 정의 도메인의 이름(및 인증서)은 해당 특정 CDN을 통해 관리됩니다.
 
-자체 CDN에서 관리되는 도메인은 Cloud Manager를 통해 설치할 필요가 없습니다. 도메인은 X-Forwarded-Host를 통해 AEM에 제공되면 Dispatcher에 정의된 가상 호스트와 일치합니다. [자세한 내용은 CDN 설명서를 참조하십시오.](/help/implementing/dispatcher/cdn.md)
+자체 CDN에서 관리되는 도메인은 Cloud Manager를 통해 설치할 필요가 없습니다. X-Forwarded-Host를 통해 AEM에서 사용할 수 있도록 하고 Dispatcher에 정의된 vhost를 일치시킵니다. 다음을 참조하십시오. [CDN 설명서](/help/implementing/dispatcher/cdn.md).
 
 하나의 환경에서 두 도메인을 AEM 관리 CDN과 자체 CDN에 설치할 수 있습니다.
 

@@ -3,10 +3,10 @@ title: AEM에서 GraphQL 끝점 관리
 description: Headless 콘텐츠 전달용 Adobe Experience Manager as a Cloud Service에서 GraphQL 끝점을 관리하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 100%
+source-wordcount: '514'
+ht-degree: 97%
 
 ---
 
@@ -33,7 +33,7 @@ AEM에는 두 가지 유형의 끝점이 있습니다.
 >
 >콘텐츠 조각 편집기는 한 Sites 구성의 콘텐츠 조각이 다른 Sites 구성의 콘텐츠 조각을 참조하도록 허용할 수 있습니다(정책을 통해).
 >
->이러한 경우 Sites 구성 특정 끝점을 사용하여 모든 콘텐츠를 검색할 수 있는 것은 아닙니다.
+>이러한 경우 Sites 구성 특정 끝점을 사용하여 일부 콘텐츠를 검색할 수 있는 것은 아닙니다.
 >
 >콘텐츠 작성자가 이 시나리오를 제어해야 합니다. 예를 들어 공유 콘텐츠 조각 모델을 전역 Sites 구성 아래에 두는 것이 유용할 수 있습니다.
 
@@ -71,7 +71,6 @@ GraphQL 끝점을 활성화하려면 먼저 적절한 구성이 필요합니다.
    >다음 경고가 대화 상자에 표시됩니다.
    >
    >* *GraphQL 엔드포인트는 신중하게 관리하지 않을 경우 데이터 보안 및 성능 문제를 초래할 수 있습니다. 엔드포인트를 만든 후 적절한 사용 권한을 설정했는지 확인하십시오.*
-
 
 1. **만들기**&#x200B;를 사용하여 확인합니다.
 1. **다음 단계** 대화 상자는 보안 콘솔에 대한 직접 링크를 제공하므로 새로 생성된 끝점에 적절한 권한이 있는지 확인할 수 있습니다.

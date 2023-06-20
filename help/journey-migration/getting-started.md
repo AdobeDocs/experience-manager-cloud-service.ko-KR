@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service로의 마이그레이션 여정 시작하기
 description: AEM as a Cloud Service로의 전환에 대한 기본 사항을 숙지하여 마이그레이션 여정 시작
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
-source-git-commit: 595eff9c259208754ac62ea27dfc6be7d74b79d3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '587'
-ht-degree: 100%
+source-wordcount: '585'
+ht-degree: 91%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 이 문서는 AEM의 클라우드 기반 버전을 사용해야 하는 이유와 AEM as a Cloud Service으로 마이그레이션하는 여러 단계를 이해하는 데 도움이 됩니다. 문서를 읽고 나면
 
 * AEM as a Cloud Service로 이동하여 얻을 수 있는 이점을 이해할 수 있습니다.
-* 클라우드로 전환하기 위해 수행해야 하는 광범위한 단계를 숙지합니다.
+* 클라우드로 전환할 수 있도록 수행해야 하는 광범위한 단계를 숙지하십시오
 
 ## AEM as a Cloud Service로 이동하여 얻을 수 있는 이점 {#benefits-of-moving-to-aem-as-a-cloud-service}
 
@@ -30,9 +30,9 @@ AEM as a Cloud Service를 사용하면 팀이 제품 업그레이드를 계획�
 
 Cloud Service로의 마이그레이션 여정에는 다음 단계가 포함됩니다.
 
-* [준비 단계](/help/journey-migration/readiness.md)를 통해 배포를 AEM as a Cloud Service로 이동할 준비가 되었는지 확인하는 것부터 시작합니다. 이 단계에서는 AEM as a Cloud Service에 도입된 변경 사항도 숙지해야 합니다.
-* 다음으로 [구현 단계](/help/journey-migration/implementation.md)에서 코드와 콘텐츠 클라우드를 준비합니다. 이 단계에서는 클라우드로의 전환을 용이하게 하기 위해 Adobe에서 제공하는 도구를 탐색합니다.
-* 모든 작업이 완료되면 [실행 단계](/help/journey-migration/go-live.md)를 통해 마이그레이션을 수행할 수 있습니다.
+* [준비 단계](/help/journey-migration/readiness.md)를 통해 배포를 AEM as a Cloud Service로 이동할 준비가 되었는지 확인하는 것부터 시작합니다. 이 단계에서는 AEM as a Cloud Service에 도입된 변경 사항도 숙지해야 합니다..
+* 다음으로 [구현 단계](/help/journey-migration/implementation.md)에서 코드와 콘텐츠 클라우드를 준비합니다. 이 단계에서는 클라우드로 간편하게 이동할 수 있도록 Adobe이 제공하는 도구 를 살펴봅니다.
+* 모든 것이 준비되면 [Go-Live 단계](/help/journey-migration/go-live.md).
 * 마지막으로, 마이그레이션이 완료되면 [실행 이후 단계](/help/journey-migration/post-go-live.md)에서 문제를 모니터링하고 성능을 개선해야 합니다.
 
 아래 그림은 권장되는 AEM as a Cloud Service로의 전환 과정을 개략적으로 보여줍니다.

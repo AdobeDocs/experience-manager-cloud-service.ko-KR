@@ -9,10 +9,10 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
-exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30b
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '384'
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ AEM 사이트 및 AEM CIF 핵심 구성 요소를 전용 스토어 보기에 연
    * 만든 기본 구성 선택
    * 위의 지점 2에 설명된 단계를 사용하여 새 구성을 생성 합니다
 
-   이 새 구성은 기본 구성의 하위 구성으로 만들어집니다. 이제 도구 -> 일반 -> 구성 브라우저로 이동하여 구성 설정을 만들 수 있습니다.
+   이 새 구성은 기본 구성의 하위 구성으로 작성됩니다. 이제 도구 -> 일반 -> 구성 브라우저로 이동하여 구성 설정을 만들 수 있습니다.
 
    >[!TIP]
    >

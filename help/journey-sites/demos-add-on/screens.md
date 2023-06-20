@@ -2,10 +2,10 @@
 title: 데모 사이트에 대해 AEM Screens 활성화
 description: 제작한 데모 사이트에서 전체 AEM Screens as a Cloud Service 환경을 활성화하기 위한 단계에 대해 알아봅니다.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: 8ee3de944290a917c320ad9aa4205b28ad1620bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2699'
-ht-degree: 100%
+source-wordcount: '2696'
+ht-degree: 98%
 
 ---
 
@@ -90,7 +90,7 @@ We.Cafe 지점의 레이아웃은 다음과 같습니다.
 
 ## 데모 Screens 프로젝트 배포 {#deploy-project}
 
-[프로그램 제작](create-program.md) 단계에서 생성한 샌드박스의 데모 콘텐츠를 사용하려면 템플릿을 기반으로 사이트를 만들어야 합니다.
+에서 만든 샌드박스의 데모 콘텐츠를 사용하려면 [프로그램 제작](create-program.md) 단계: 템플릿을 기반으로 사이트를 만들어야 합니다.
 
 아직 We.Cafe 데모 사이트를 만들지 않았다면 [데모 사이트 만들기](create-site.md) 섹션에 기재된 것과 동일한 단계를 따르십시오. 템플릿을 선택할 때에는 **We.Cafe 웹 사이트 템플릿**&#x200B;을 선택하면 됩니다.
 
@@ -207,7 +207,7 @@ API 키를 사용하여 Google Sheets 데이터 교환을 허용하려면 Google
    }
    ```
 
-AEM Screens는 이렇게 동일한 서비스를 사용하여 시뮬레이션된 날씨 데이터에 액세스할 수 있습니다. 이는 다음 단계에서 구성하게 됩니다.
+AEM Screens은 이와 동일한 서비스를 사용하여 다음 단계에서 구성된 시뮬레이션된 날씨 데이터에 액세스할 수 있습니다.
 
 ### ContextHub 구성 {#configure-contexthub}
 

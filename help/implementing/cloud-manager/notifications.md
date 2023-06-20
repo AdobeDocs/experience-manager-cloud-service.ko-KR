@@ -2,10 +2,10 @@
 title: 알림
 description: Adobe Experience Cloud 알림 시스템을 사용하여 파이프라인 배포에 대한 정보를 수신하는 방법을 알아봅니다.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: 6f390df560e9eeb76a8c4f1904e500aa5ed2bd65
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 92%
+source-wordcount: '558'
+ht-degree: 88%
 
 ---
 
@@ -60,7 +60,7 @@ Cloud Manager가 중요한 이벤트를 알리는 방법에 대해 알아보십�
 
 ### 우선 순위 {#priority}
 
-우선 순위 경고는 **높음** 태그로 표시되며 경고로만 수신되도록 구성할 수 있습니다. **우선 순위** 섹션에서 우선 순위 알림에 적합한 범주를 정의할 수 있습니다.
+우선 순위 경고는 다음으로 표시됨 **높음** 태그를 지정하고 경고로만 받도록 구성할 수 있습니다. **우선 순위** 섹션에서 우선 순위 알림에 적합한 범주를 정의할 수 있습니다.
 
 ![알림 우선 순위](assets/notifications-priority.png)
 

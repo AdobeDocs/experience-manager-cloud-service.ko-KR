@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 프리릴리스 채널
 description: 프리릴리스 채널을 사용하여 AEM as a Cloud Service에 대한 예정된 기능을 미리 보는 방법에 대해 알아보십시오.
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: a66814c0f7f8dbdf794ff1867c7a4d7fdc2956cf
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 100%
+source-wordcount: '1305'
+ht-degree: 91%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Adobe Experience Manager as a Cloud Service는 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)에 따라 정기적으로 새로운 기능을 제공합니다.
 
-다음 기능 릴리스에서 실행할 예정인 기능에 익숙해지려면 개발 환경 또는 원하는 샌드박스 환경을 구성하여 액세스할 수 있는 프리릴리스 채널을 구독하면 됩니다. AEM UI를 통해 변경 내용을 미리 볼 수 있으며 새 프리릴리스 API에 대해 코드를 작성할 수 있습니다.
+다음 기능 릴리스로 예정된 기능에 익숙해지려면 개발 환경 또는 샌드박스 환경을 구성하여 액세스할 수 있는 프리릴리스 채널을 구독하면 됩니다. AEM UI를 통해 변경 내용을 미리 볼 수 있으며 새 프리릴리스 API에 대해 코드를 작성할 수 있습니다.
 
 지정된 기능 릴리스에 대한 프리릴리스 기능 목록은 [릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)에 게시됩니다.
 
@@ -31,7 +31,7 @@ AEM as a Cloud Service에는 두 가지 유형의 릴리스가 있습니다.
 
 이러한 패턴으로 서비스 중단 없이 지속적인 릴리스가 이루어집니다.
 
-프리릴리스 채널을 사용하면 다가오는 기능 릴리스에 예정된 기능을 미리 확인하여 예정된 기능을 평가하고 프로젝트에 대해 가능한 구현을 계획할 수 있습니다. 이를 통해 다음 기능 릴리스를 미리 계획할 수 있습니다.
+프리릴리스 채널을 사용하면 예정된 기능 릴리스에 예정된 기능을 미리 볼 수 있으므로 예정된 기능을 평가하고 프로젝트에 대해 가능한 구현을 계획할 수 있습니다. 이를 통해 다음 기능 릴리스를 미리 계획할 수 있습니다.
 
 예를 들어 지금이 5월이고 프리릴리스 채널을 구독 중인 경우 다가오는 6월 릴리스의 기능을 미리 평가할 수 있습니다.
 
@@ -97,22 +97,22 @@ Cloud Manager API 및 CLI를 사용하여 환경 변수를 업데이트할 수�
 
 * [Cloud Manager API의 환경 변수 엔드포인트](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables)를 사용하여 `AEM_RELEASE_CHANNEL` 환경 변수를 `prerelease` 값으로 설정합니다.
 
-   ```text
-   PATCH /program/{programId}/environment/{environmentId}/variables
-   [
-           {
-                   "name" : "AEM_RELEASE_CHANNEL",
-                   "value" : "prerelease",
-                   "type" : "string"
-           }
-   ]
-   ```
+  ```text
+  PATCH /program/{programId}/environment/{environmentId}/variables
+  [
+          {
+                  "name" : "AEM_RELEASE_CHANNEL",
+                  "value" : "prerelease",
+                  "type" : "string"
+          }
+  ]
+  ```
 
 * [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)를 사용할 수도 있습니다.
 
-   ```shell
-   aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease
-   ```
+  ```shell
+  aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL "prerelease
+  ```
 
 환경을 정기적인(비 프리릴리스) 채널의 비헤이비어로 복원하고자 하는 경우 변수를 삭제하거나 다른 값으로 다시 설정할 수 있습니다.
 
@@ -157,7 +157,7 @@ JavaDoc은 Maven Central에 게시됩니다.
      </dependency>
    ```
 
-   프리릴리스 SDK를 변경하려면 아래의 설명처럼 `com.adobe.aem:aem-sdk-api`에서 `com.adobe.aem:aem-prerelease-sdk-api`로 종속성을 변경하기만 하면 됩니다.
+   프리릴리스 SDK를 변경하려면 다음에서 종속성을 변경하면 됩니다. `com.adobe.aem:aem-sdk-api` 끝 `com.adobe.aem:aem-prerelease-sdk-api` 아래에 명시된 대로:
 
    ```
    <dependencyManagement>
@@ -189,7 +189,7 @@ JavaDoc은 Maven Central에 게시됩니다.
 
 ## 사용자 교육 {#train-users}
 
-프리릴리스 채널에서 새로운 기능을 테스트하고 이를 프로젝트에 활용하기로 결정했다면 사용자를 교육해야 합니다.
+프리릴리스 채널에서 새로운 기능을 테스트하고 이를 프로젝트에서 사용하기로 결정했다면 사용자를 교육해야 합니다.
 
 Adobe Experience League는 AEMaaCS에 대해 알아볼 수 있는 많은 리소스를 제공합니다.
 

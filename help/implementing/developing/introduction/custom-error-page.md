@@ -2,9 +2,9 @@
 title: 사용자 정의 오류 페이지
 description: AEM에는 사용자 지정할 수 있는 HTTP 오류를 처리하기 위한 표준 오류 핸들러가 포함되어 있습니다.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: b20d40a9f5f4bda51c67cda1164d0c4d74943aa1
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '572'
 ht-degree: 2%
 
 ---
@@ -29,7 +29,7 @@ AEM에는 HTTP 오류를 처리하기 위한 표준 오류 처리기가 함께 �
 
 ## 오류 핸들러로 표시된 페이지를 사용자 지정하는 방법 {#how-to-customize-pages-shown-by-the-error-handler}
 
-자체 스크립트를 개발하여 오류가 발생했을 때 오류 핸들러에서 표시하는 페이지를 사용자 지정할 수 있습니다. 이렇게 하려면 다음을 활용합니다 [AEM 표준 오버레이 메커니즘](/help/implementing/developing/introduction/overlays.md) 따라서 맞춤화된 페이지는에 생성됩니다 `/apps` 아래에 있는 기본 페이지를 오버레이합니다. `/libs`.
+자체 스크립트를 개발하여 오류가 발생했을 때 오류 핸들러에서 표시하는 페이지를 사용자 지정할 수 있습니다. 이렇게 하려면 다음을 사용합니다 [AEM 표준 오버레이 메커니즘](/help/implementing/developing/introduction/overlays.md) 따라서 맞춤화된 페이지는에 생성됩니다 `/apps` 아래에 있는 기본 페이지를 오버레이합니다. `/libs`.
 
 1. 저장소에서 기본 스크립트를 복사합니다.
 

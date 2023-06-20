@@ -2,10 +2,10 @@
 title: 사용자 정의 코드 품질 규칙
 description: 이 페이지에서는 코드 품질 테스트의 일부로 Cloud Manager에서 실행되는 사용자 정의 코드 품질 규칙에 대해 설명합니다. 이 규칙은 Adobe Experience Manager Engineering의 모범 사례를 기반으로 합니다.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 288faf39a86411bb96d781a320abfa47538b2066
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '3508'
-ht-degree: 100%
+source-wordcount: '3504'
+ht-degree: 98%
 
 ---
 
@@ -811,7 +811,7 @@ Experience Manager as a Cloud Service의 [릴리스 정보](/help/release-notes/
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
-Experience Manager 클라이언트 라이브러리에는 이미지 및 글꼴과 같은 정적 리소스가 포함될 수 있습니다. [프로세서 사용](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) 문서에 설명된 대로 프록시가 활성화된 클라이언트 라이브러리를 사용할 때 게시 인스턴스에서 효과적으로 참조하려면 이러한 정적 리소스가 `resources`라는 하위 폴더에 포함되어 있어야 합니다.
+Experience Manager 클라이언트 라이브러리에는 이미지 및 글꼴과 같은 정적 리소스가 포함될 수 있습니다. 문서에 설명된 대로 [전처리기 사용,](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) 프록시화된 클라이언트 라이브러리를 사용할 때 이러한 정적 리소스는 라는 하위 폴더에 포함되어 있어야 합니다. `resources` 게시 인스턴스에서 효과적으로 참조됩니다.
 
 #### 비준수 코드 {#non-compliant-proxy-enabled}
 

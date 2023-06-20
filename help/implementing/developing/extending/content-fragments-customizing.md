@@ -2,9 +2,9 @@
 title: 콘텐츠 조각 맞춤화 및 확장
 description: 컨텐츠 조각은 표준 자산을 확장합니다.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1811'
+source-wordcount: '1808'
 ht-degree: 2%
 
 ---
@@ -32,13 +32,13 @@ Adobe Experience Manager as a Cloud Service 내에서 컨텐츠 조각은 표준
 * 모델은 데이터 유형을 기반으로 합니다.
 * 새 변형 등을 추가하는 함수는 적절하게 조각을 업데이트해야 합니다.
 
-   >[!NOTE]
-   >
-   >콘텐츠 조각을 표시/렌더링하려면 계정에 다음이 있어야 합니다. `read` 모델에 대한 권한.
+  >[!NOTE]
+  >
+  >콘텐츠 조각을 표시/렌더링하려면 계정에 다음이 있어야 합니다. `read` 모델에 대한 권한.
 
-   >[!CAUTION]
-   >
-   >기존 콘텐츠 조각 모델을 변경하면 종속된 조각이 영향을 받을 수 있습니다. 이로 인해 해당 조각에서 고립 속성이 발생할 수 있습니다.
+  >[!CAUTION]
+  >
+  >기존 콘텐츠 조각 모델을 변경하면 종속된 조각이 영향을 받을 수 있습니다. 이로 인해 해당 조각에서 고립 속성이 발생할 수 있습니다.
 
 ### Sites와 자산 통합 {#integration-of-sites-with-assets}
 
@@ -61,15 +61,14 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 * 모든 콘텐츠는 아래에 저장됩니다. `jcr:content/data` 에셋의 노드:
 
    * 요소 데이터는 마스터 하위 노드 아래에 저장됩니다.
-      `jcr:content/data/master`
+     `jcr:content/data/master`
 
    * 변형은 변형의 이름을 전달하는 하위 노드 아래에 저장됩니다. 예: `jcr:content/data/myvariation`
 
    * 각 요소의 데이터는 각 하위 노드에 요소 이름(예: 요소의 콘텐츠)을 갖는 속성으로 저장됩니다 `text` 속성으로 저장됩니다. `text` 날짜 `jcr:content/data/master`
 
 * 메타데이터 및 관련 콘텐츠는 아래에 저장됩니다. `jcr:content/metadata`
-기존 메타데이터로 간주되지 않고 에 저장되는 제목과 설명을 제외하고 
-`jcr:content`
+기존 메타데이터로 간주되지 않고 에 저장되는 제목과 설명을 제외하고 `jcr:content`
 
 #### 자산 위치 {#asset-location}
 
@@ -121,7 +120,7 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 >
 >페이지에서 콘텐츠 조각을 사용하면 그 기반이 되는 콘텐츠 조각 모델이 참조됩니다.
 >
->즉, 페이지를 게시할 때 모델이 게시되지 않은 경우 여기에 플래그가 지정되고 모델이 페이지와 함께 게시할 리소스에 추가됩니다.
+>즉, 페이지를 게시할 때 모델이 게시되지 않은 경우 이에 플래그가 지정되고 모델이 페이지와 함께 게시할 리소스에 추가됩니다.
 
 ### 다른 프레임워크와 통합 {#integration-with-other-frameworks}
 
@@ -129,24 +128,25 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 
 * **번역**
 
-   콘텐츠 조각은 [AEM 번역 워크플로](/help/sites-cloud/administering/translation/overview.md). 아키텍처 수준에서 이는 다음을 의미합니다.
+  콘텐츠 조각은 [AEM 번역 워크플로](/help/sites-cloud/administering/translation/overview.md). 아키텍처 수준에서 이는 다음을 의미합니다.
 
    * 컨텐츠 조각의 개별 번역은 실제로 별도의 조각입니다. 예를 들면 다음과 같습니다.
 
       * 이러한 언어 루트는 서로 다른 언어 루트 아래에 있지만 관련 언어 루트 아래에 있는 동일한 상대 경로를 공유합니다.
 
-         `/content/dam/<path>/en/<to>/<fragment>`
+        `/content/dam/<path>/en/<to>/<fragment>`
 
-         및
+        및
 
-         `/content/dam/<path>/de/<to>/<fragment>`
+        `/content/dam/<path>/de/<to>/<fragment>`
+
    * 규칙 기반 경로 외에, 콘텐츠 조각의 서로 다른 언어 버전 간에는 더 이상 연결되지 않습니다. UI에서 언어 변형 사이를 이동하는 수단을 제공하긴 하지만, 두 개의 개별 조각으로 처리됩니다.
-   >[!NOTE]
-   >
-   >AEM 번역 워크플로우는 `/content`:
-   >
-   >* 콘텐츠 조각 모델 위치 `/conf`, 이러한 번역은 포함되지 않습니다. UI 문자열을 국제화할 수 있습니다.
 
+  >[!NOTE]
+  >
+  >AEM 번역 워크플로우는 `/content`:
+  >
+  >* 콘텐츠 조각 모델 위치 `/conf`, 이러한 번역은 포함되지 않습니다. UI 문자열을 국제화할 수 있습니다.
 
 * **메타데이터 스키마**
 
@@ -154,9 +154,9 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 
    * CFM은 고유한 특정 스키마를 제공합니다.
 
-      `/libs/dam/content/schemaeditors/forms/contentfragment`
+     `/libs/dam/content/schemaeditors/forms/contentfragment`
 
-      필요한 경우 이 기능을 확장할 수 있습니다.
+     필요한 경우 이 기능을 확장할 수 있습니다.
 
    * 각 스키마 양식은 조각 편집기와 통합됩니다.
 
@@ -176,9 +176,9 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 
 * **컨텐츠 조각** ([ContentFragment](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
-   이 인터페이스를 사용하면 추상적인 방식으로 콘텐츠 조각을 사용하여 작업할 수 있습니다.
+  이 인터페이스를 사용하면 추상적인 방식으로 콘텐츠 조각을 사용하여 작업할 수 있습니다.
 
-   인터페이스는 다음과 같은 수단을 제공합니다.
+  인터페이스는 다음과 같은 수단을 제공합니다.
 
    * 기본 데이터 관리(예: 이름 가져오기, 제목/설명 가져오기/설정)
    * 메타데이터 액세스
@@ -189,6 +189,7 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
       * 새 요소 만들기(참조) [주의 사항](#caveats))
 
       * 요소 데이터 액세스(참조) `ContentElement`)
+
    * 조각에 대해 정의된 목록 변형
    * 전체적으로 새 변형 만들기
    * 관련 콘텐츠 관리:
@@ -196,9 +197,10 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
       * 컬렉션 나열
       * 컬렉션 추가
       * 컬렉션 제거
+
    * 조각의 모델에 액세스
 
-   조각의 주요 요소를 나타내는 인터페이스는 다음과 같습니다.
+  조각의 주요 요소를 나타내는 인터페이스는 다음과 같습니다.
 
    * **컨텐츠 요소** ([ContentElement](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
@@ -211,24 +213,20 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
          * 새 변형 만들기(참조) [주의 사항](#caveats))
          * 변형 제거(참조) [주의 사항](#caveats))
          * 변형 데이터 액세스(참조) `ContentVariation`)
+
       * 변형 해결을 위한 바로 가기(지정된 변형을 요소에 사용할 수 없는 경우 구현별 추가 폴백 논리 적용)
+
    * **컨텐츠 변형** ([ContentVariation](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * 기본 데이터(이름, 제목, 설명) 가져오기
       * 콘텐츠 가져오기/설정
       * 마지막으로 수정된 정보를 기반으로 한 간단한 동기화
 
-   세 가지 인터페이스 모두( `ContentFragment`, `ContentElement`, `ContentVariation`) 확장 `Versionable` 컨텐츠 조각에 필요한 버전 관리 기능을 추가하는 인터페이스:
+  세 가지 인터페이스 모두( `ContentFragment`, `ContentElement`, `ContentVariation`) 확장 `Versionable` 컨텐츠 조각에 필요한 버전 관리 기능을 추가하는 인터페이스:
 
    * 요소의 새 버전 만들기
    * 요소의 목록 버전
    * 버전이 지정된 요소의 특정 버전 콘텐츠 가져오기
-
-
-
-
-
-
 
 ### 적응 - adaptTo() 사용 {#adapting-using-adaptto}
 
@@ -274,7 +272,7 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 
 * `filter.xml`
 
-   다음 `filter.xml` 의 콘텐츠 조각 관리는 에셋 핵심 콘텐츠 패키지와 겹치지 않도록 구성됩니다.
+  다음 `filter.xml` 의 콘텐츠 조각 관리는 에셋 핵심 콘텐츠 패키지와 겹치지 않도록 구성됩니다.
 
 ## 세션 편집 {#edit-sessions}
 

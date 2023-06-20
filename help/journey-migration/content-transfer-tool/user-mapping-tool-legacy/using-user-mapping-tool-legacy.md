@@ -4,9 +4,9 @@ description: 사용자 매핑 도구 사용(기존)
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: 8a258c2c929f9af84a1cde99072291a3e7f6cfc3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '831'
 ht-degree: 3%
 
 ---
@@ -61,17 +61,17 @@ ht-degree: 3%
 
    * **조직 ID**: 사용자가 마이그레이션되는 조직의 IMS(Identity Management 시스템) Adobe 조직 ID를 입력합니다.
 
-      >[!NOTE]
-      >조직 ID를 가져오려면 [Admin Console](https://adminconsole.adobe.com/) 둘 이상에 속해 있는 경우 오른쪽 상단 영역에서 조직을 선택합니다. 조직 ID는 과 같은 형식으로 해당 페이지의 URL에 저장됩니다. `xx@AdobeOrg`여기서 xx는 IMS 조직 ID입니다.  또는 조직 ID를에서 찾을 수 있습니다. [Adobe Developer 콘솔](https://console.adobe.io) 액세스 토큰을 생성하는 페이지입니다.
+     >[!NOTE]
+     >조직 ID를 가져오려면 [Admin Console](https://adminconsole.adobe.com/) 둘 이상에 속해 있는 경우 오른쪽 상단 영역에서 조직을 선택합니다. 조직 ID는 과 같은 형식으로 해당 페이지의 URL에 저장됩니다. `xx@AdobeOrg`여기서 xx는 IMS 조직 ID입니다.  또는 조직 ID를에서 찾을 수 있습니다. [Adobe Developer 콘솔](https://console.adobe.io) 액세스 토큰을 생성하는 페이지입니다.
 
    * **클라이언트 ID**: 설정 단계에서 저장한 클라이언트 ID를 입력합니다.
 
    * **액세스 토큰**: 설정 단계에서 저장한 액세스 토큰을 입력합니다.
 
-      >[!NOTE]
-      >액세스 토큰은 24시간마다 만료되며 새 액세스 토큰을 만들어야 합니다. 새 토큰을 만들려면 로 돌아갑니다. [Adobe Developer 콘솔](https://console.adobe.io), 프로젝트를 선택하고, 클릭 **사용자 관리 API** 상자에 동일한 개인 키를 붙여 넣습니다.
+     >[!NOTE]
+     >액세스 토큰은 24시간마다 만료되며 새 액세스 토큰을 만들어야 합니다. 새 토큰을 만들려면 로 돌아갑니다. [Adobe Developer 콘솔](https://console.adobe.io)프로젝트를 선택하고 **사용자 관리 API**&#x200B;을 클릭하고 상자에 동일한 개인 키를 붙여 넣습니다.
 
-1. 필드를 채운 후 을(를) 클릭합니다 **구성 테스트** 를 클릭하여 User Management API 서비스에 대한 연결을 테스트합니다. 연결에 성공하면 을(를) 클릭할 수 있습니다. **저장** 구성을 저장합니다.
+1. 필드를 채운 후 **구성 테스트** 를 클릭하여 User Management API 서비스에 대한 연결을 테스트합니다. 연결에 성공하면 **저장** 구성을 저장합니다.
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access4.png)
 
@@ -88,13 +88,12 @@ ht-degree: 3%
    ![이미지](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-start1.png)
 
 
-1. 사용자 매핑이 완료되면 을 클릭합니다. **결과** 요약 보기.
+1. 사용자 매핑이 완료되면 다음을 클릭하십시오. **결과** 요약 보기.
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
 
    >[!IMPORTANT]
    >* 사용자 매핑이 완료되면 이동 경로를 사용하여 콘텐츠 마이그레이션 페이지로 다시 이동할 수 있습니다. 사용자 매핑 카드에 상태와 타임스탬프가 표시됩니다. 클릭 **컨텐츠 전송** 마이그레이션 세트를 만들어 추출을 실행합니다. 을(를) 참조하십시오 [컨텐츠 전송 도구 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) 을 참조하십시오.
-
 
 ### 사용자 매핑 프로세스 다시 시작 {#resume-user-mapping-process}
 
@@ -104,8 +103,8 @@ ht-degree: 3%
 * 액세스 토큰이 프로세스 중에 만료되었거나,
 * 다른 이유
 
-   >[!NOTE]
-   >진행률은 프로세스가 중지된 위치에서 저장됩니다.
+  >[!NOTE]
+  >진행률은 프로세스가 중지된 위치에서 저장됩니다.
 
 사용자 매핑 프로세스를 재개하려면 아래 단계를 따르십시오.
 
@@ -113,7 +112,7 @@ ht-degree: 3%
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping1.png)
 
-1. 을(를) 클릭합니다 **사용자 매핑 시작** 단추를 다시 클릭하여 꺼진 위치에서 다시 시작합니다.
+1. 클릭 **사용자 매핑 시작** 단추를 다시 클릭하여 꺼진 위치에서 다시 시작합니다.
 
    >[!NOTE]
    >다시 시작하기 전에 액세스 토큰이 여전히 유효한지 또는 새로 고쳐졌는지 확인하십시오.

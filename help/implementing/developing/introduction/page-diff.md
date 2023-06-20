@@ -2,9 +2,9 @@
 title: 개발 및 페이지 비교
 description: 페이지 비교 기능의 작동 방식과 개발자에게 영향을 미치는 방식을 이해합니다
 exl-id: 03c08616-2203-4b90-bed6-4836266e2507
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '334'
 ht-degree: 5%
 
 ---

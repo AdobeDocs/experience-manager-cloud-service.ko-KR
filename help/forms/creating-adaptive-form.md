@@ -5,7 +5,7 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1498'
 ht-degree: 3%
@@ -44,7 +44,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
    It is an ideal form model if you have investments in XFA-based or XDP forms. It provides a direct way to convert your XFA-based forms into Adaptive Forms. Any existing XFA rules are retained in the associated Adaptive Forms. The resulting Adaptive Forms support XFA constructs, such as validations, events, properties, and patterns. 
 
 * **Using an XML Schema Definition (XSD) or a JSON Schema**
-   XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema will be available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
+   XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema are available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
 
 * **Using none or without a form model**
    Adaptive Forms created with this option don't use any form model. The data XML generated from such forms has flat structure with fields and corresponding values. -->
@@ -61,7 +61,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
    * **편집 가능한 템플릿**: 다음 작업을 수행할 수 있습니다 [새로 만들기](template-editor.md) 또는 [편집 가능한 기존 템플릿 가져오기](migrate-to-forms-as-a-cloud-service.md). 를 배포할 수도 있습니다. [최신 Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java 기반%20integration%20tests.) 몇 가지 샘플 편집 가능한 템플릿을 가져올 수 있습니다.
 
-   * **정적 템플릿**: 기존 템플릿이며, Adobe Managed Services(AMS) 및 온프레미스 AEM Forms 설치(AEM 6.5 Forms 또는 이전 버전)에서 마이그레이션하는 고객에게만 권장됩니다. 이를 통해 정적 템플릿에 대한 기존 투자를 계속 활용할 수 있습니다. 새 적응형 양식을 만들 때 편집 가능한 템플릿을 사용하는 것이 좋습니다.
+   * **정적 템플릿**: 기존 템플릿이며, Adobe Managed Services(AMS) 및 온프레미스 AEM Forms 설치(AEM 6.5 Forms 또는 이전 버전)에서 마이그레이션하는 고객에게만 권장됩니다. 이를 통해 정적 템플릿에 대한 기존 투자를 계속 사용할 수 있습니다. 새 적응형 양식을 만들 때 편집 가능한 템플릿을 사용하는 것이 좋습니다.
 
 
 
@@ -78,9 +78,9 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
    * 편집 가능한 템플릿을 선택하면 템플릿에 지정된 테마 및 제출 액션이 자동으로 선택되고 **[!UICONTROL 만들기]** 버튼이 활성화되었습니다. 다음 페이지로 이동할 수 있습니다. **[!UICONTROL 스타일]** 또는 **[!UICONTROL 제출]** 탭을 사용하여 다른 테마를 선택하거나 작업을 제출할 수 있습니다. 선택한 편집 가능 템플릿이 테마를 지정하지 않으면 만들기 버튼이 비활성화됩니다. 다음 페이지로 이동할 수 있습니다. **[!UICONTROL 스타일]** 탭을 사용하여 테마를 수동으로 선택할 수 있습니다.
 
-      >[!NOTE]
-      >
-      > 다음을 만들 수도 있습니다. [!UICONTROL 기록 문서] 적응형 Forms 편집기를 사용하는 템플릿. 자세한 내용은 [적응형 양식 편집기의 기록 지원 문서](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+     >[!NOTE]
+     >
+     > 다음을 만들 수도 있습니다. [!UICONTROL 기록 문서] 적응형 Forms 편집기를 사용하는 템플릿. 자세한 내용은 [적응형 양식 편집기의 기록 지원 문서](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
    * 정적 템플릿을 선택하면 데이터, 스타일, 제출, 전달 및 미리 보기 옵션을 사용할 수 없습니다. 새 적응형 양식을 만들 때 편집 가능한 템플릿을 사용하는 것이 좋습니다.
 

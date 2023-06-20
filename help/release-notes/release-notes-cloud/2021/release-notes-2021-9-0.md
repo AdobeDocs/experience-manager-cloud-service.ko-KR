@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.9.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.9.0 릴리스 정보입니다.'
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1570'
 ht-degree: 38%
 
 ---
@@ -42,8 +42,8 @@ ht-degree: 38%
 
 * 이제 열 및 카드 보기에서 검색 결과에 표시된 에셋을 정렬할 수 있습니다. 정렬은 이름, 생성됨, 수정됨 또는 없음 열에서 작동합니다.
 
-   ![검색 결과 정렬 [!DNL Assets] 열 및 카드 보기에서](/help/assets/assets/sort-searched-assets.png)
-   *그림: 검색 결과 정렬 [!DNL Assets] 열 및 카드 보기에서 다음을 수행합니다.*
+  ![검색 결과 정렬 [!DNL Assets] 열 및 카드 보기에서](/help/assets/assets/sort-searched-assets.png)
+  *그림: 검색 결과 정렬 [!DNL Assets] 열 및 카드 보기에서 다음을 수행합니다.*
 
 * 자산 마이크로서비스를 사용하여 처리를 프로그래밍 방식으로 호출하기 위해 새 API가 도입됩니다. 이제 개발자는 폴더에 있는 하나 이상의 특정 에셋에 기존 폴더 수준 처리 프로필을 적용할 수 있습니다. 처리 프로필은 사용자 지정 메타데이터 속성 업데이트를 기반으로 적용됩니다. 다음을 참조하십시오 `AssetProcessor` 다음에서 [[!DNL Experience Manager] API 참조](https://www.adobe.io/experience-manager/reference-materials/). 이전과 마찬가지로 다음 작업을 수행할 수 있습니다. [사용자 인터페이스에서 에셋 마이크로서비스 사용](/help/assets/asset-microservices-configure-and-use.md).
 
@@ -91,11 +91,11 @@ Beta 프로그램에 등록하려면 [!DNL formscsbeta@adobe.com]에 문의하�
 
 * 사이트 편집기의 새로운 &quot;연결된 상거래 콘텐츠&quot; 탭은 현재 컨텍스트에 대한 관련 AEM 제품 콘텐츠에 빠르게 액세스하여 작성자의 효율성을 높입니다
 
-   ![연계된 상거래 콘텐츠](/help/assets/CIF/associated-commerce-content.png)
+  ![연계된 상거래 콘텐츠](/help/assets/CIF/associated-commerce-content.png)
 
 * 향상된 사용자 경험, 향상된 효율성 및 복잡한 제품 카탈로그에 대한 지원을 위해 제품 선택기 UI가 개선되었습니다
 
-   ![새 제품 선택기](/help/assets/CIF/product-picker.png)
+  ![새 제품 선택기](/help/assets/CIF/product-picker.png)
 
 * 탐색 구성 요소에서 &quot;include_in_menu&quot; 속성 준수
 

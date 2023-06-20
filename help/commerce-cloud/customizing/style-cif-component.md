@@ -10,10 +10,10 @@ audience: developer
 feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
-exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34,75df606f-b22f-4f7e-bd8a-576d215f72bc
-source-git-commit: d054f960f13b7308dbf42556ef60a971e880197e
+exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2550'
+source-wordcount: '2544'
 ht-degree: 3%
 
 ---
@@ -178,7 +178,7 @@ Storefront의 테마/스타일을 렌더링하는 CSS 및 JavaScript는 AEM에�
 
    이러한 클라이언트 라이브러리는 `ui.frontend` 모듈. 대신 이러한 클라이언트 라이브러리에는 Adobe에서 제공하는 CSS 및 JavaScript 종속성이 포함됩니다. 이러한 클라이언트 라이브러리에 대한 정의는 `.content.xml` 각 폴더 아래에 있는 파일입니다.
 
-   **clientlib-base** - 다음의 필요한 종속성을 임베드하는 빈 클라이언트 라이브러리입니다. [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko). 범주는 다음과 같습니다 `venia.base`.
+   **clientlib-base** - 다음의 필요한 종속성을 임베드하는 빈 클라이언트 라이브러리입니다. [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 범주는 다음과 같습니다 `venia.base`.
 
    **clientlib-cif** - 또한 이 라이브러리는 필요한 종속성을 임베드하는 빈 클라이언트 라이브러리입니다. [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components). 범주는 다음과 같습니다 `venia.cif`.
 
@@ -192,7 +192,7 @@ Storefront의 테마/스타일을 렌더링하는 CSS 및 JavaScript는 AEM에�
 
    >[!NOTE]
    >
-   > 기본 라이브러리만 페이지 스크립트의 일부로 &quot;하드 코딩&quot;됩니다. `venia.site` 는 이러한 파일에 포함되지 않고 대신 유연성을 높이기 위해 페이지 템플릿의 일부로 포함됩니다. 이것은 나중에 점검할 것입니다.
+   > 기본 라이브러리만 페이지 스크립트의 일부로 &quot;하드 코딩&quot;됩니다. `venia.site` 는 이러한 파일에 포함되지 않고 대신 유연성을 높이기 위해 페이지 템플릿의 일부로 포함됩니다. 이 프로세스는 나중에 검사됩니다.
 
 1. 터미널에서 AEM의 로컬 인스턴스에 전체 프로젝트를 빌드 및 배포합니다.
 
@@ -284,7 +284,7 @@ Storefront의 테마/스타일을 렌더링하는 CSS 및 JavaScript는 AEM에�
 
    다른 템플릿에서도 동일한 정책을 사용합니다. **컨텐츠 페이지**, **랜딩 페이지**&#x200B;등.. 동일한 정책을 다시 사용하면 동일한 클라이언트 라이브러리가 모든 페이지에 포함되도록 할 수 있습니다.
 
-   템플릿 및 페이지 정책을 사용하여 클라이언트 라이브러리 포함을 관리할 수 있는 이점은 템플릿별로 정책을 변경할 수 있다는 것입니다. 예를 들어 동일한 AEM 인스턴스 내에서 두 개의 다른 브랜드를 관리하는 것일 수 있습니다. 각 브랜드는 고유한 스타일을 갖거나 *테마* 그러나 기본 라이브러리와 코드는 동일합니다. 또 다른 예로, 특정 페이지에만 표시하려는 클라이언트 라이브러리가 더 큰 경우 해당 템플릿에 대해서만 고유한 페이지 정책을 만들 수 있습니다.
+   템플릿 및 페이지 정책을 사용하여 클라이언트 라이브러리 포함을 관리할 수 있는 이점은 템플릿별로 정책을 변경할 수 있다는 것입니다. 예를 들어 동일한 AEM 인스턴스 내에서 두 개의 다른 브랜드를 관리하는 것일 수 있습니다. 각 브랜드는 고유한 스타일 또는 *테마* 그러나 기본 라이브러리와 코드는 동일합니다. 또 다른 예로, 특정 페이지에만 표시하려는 클라이언트 라이브러리가 더 큰 경우 해당 템플릿에 대해서만 고유한 페이지 정책을 만들 수 있습니다.
 
 ## 로컬 Webpack 개발 {#local-webpack-development}
 
@@ -317,7 +317,7 @@ Webpack-dev-server는 AEM의 로컬 인스턴스에서 이미지 및 CSS/JavaScr
    </body>
    ```
 
-   이러한 구성 요소는에 의해 생성된 CSS 및 JavaScript의 컴파일된 버전을 나타내므로 제거됩니다. `ui.frontend` 모듈. 다른 클라이언트 라이브러리는 실행 중인 AEM 인스턴스에서 프록시되므로 그대로 둡니다.
+   이러한 구성 요소는에 의해 생성된 CSS 및 JavaScript의 컴파일된 버전을 나타내므로 제거됩니다. `ui.frontend` 모듈. 실행 중인 AEM 인스턴스에서 프록싱할 다른 클라이언트 라이브러리를 그대로 둡니다.
 
 1. 새 터미널 창을 열고 `ui.frontend` 폴더를 삭제합니다. 명령 실행 `npm start`:
 
@@ -340,7 +340,7 @@ Webpack-dev-server는 AEM의 로컬 인스턴스에서 이미지 및 CSS/JavaScr
 
 ## 제품 티저에 대한 카드 스타일 구현 {#update-css-product-teaser}
 
-다음으로 의 Sass 파일을 수정합니다. `ui.frontend` 모듈 : 제품 티저에 대해 카드와 유사한 스타일을 구현합니다. Webpack-dev-server를 사용하면 변경 사항을 신속하게 확인할 수 있습니다.
+다음으로 의 Sass 파일을 수정합니다. `ui.frontend` 모듈 : 제품 티저에 대해 카드와 유사한 스타일을 구현합니다. webpack-dev-server는 변경 사항을 빠르게 확인하는 데 사용됩니다.
 
 IDE 및 생성된 프로젝트로 돌아갑니다.
 
@@ -455,7 +455,7 @@ IDE 및 생성된 프로젝트로 돌아갑니다.
 
    ![업데이트된 제품 티저 스타일](../assets/style-cif-component/product-teaser-new-style.png)
 
-1. 추가 제품 티저를 추가하여 실험합니다. 여러 티저를 한 행에 표시하려면 레이아웃 모드 를 사용하여 구성 요소의 너비와 오프셋을 변경합니다.
+1. 추가 제품 티저를 추가하여 실험합니다. 여러 티저를 한 행에 표시하도록 구성 요소의 너비와 오프셋을 변경하려면 레이아웃 모드 를 사용합니다.
 
    ![여러 제품 티저](../assets/style-cif-component/multiple-teasers-final.png)
 

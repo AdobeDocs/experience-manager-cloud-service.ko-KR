@@ -2,9 +2,9 @@
 title: Screens에서 비디오 표현물 as a Cloud Service 만들기
 description: 이 페이지에서는 Screens as a Cloud Service으로 비디오 렌디션을 만드는 방법에 대해 설명합니다.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -48,10 +48,10 @@ Screens Content Provider에서 as a Cloud Service으로 비디오 렌디션을 �
    ![](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
-   >&quot;screens-&quot;로 시작하는 인코딩 이름을 사용해야 합니다. 이러한 비디오 렌디션만 Screens에서 비디오 경험을 as a Cloud Service으로 재생하는 것으로 간주됩니다. 비디오를 작동하는 비트율을 입력합니다(720px 비디오의 경우 2500kbps, 1080px의 경우 5000kbps).
+   >&quot;screens-&quot;로 시작하는 인코딩 이름을 사용해야 하며, 이러한 비디오 렌디션만 Screens에서 비디오 경험을 as a Cloud Service으로 재생하는 것으로 간주됩니다. 비디오를 작동하는 비트율을 입력합니다(720px 비디오의 경우 2500kbps, 1080px의 경우 5000kbps).
 
    >[!NOTE]
-   >다양한 폭/높이/비트율로 여러 비디오 표현물을 추가하여 비디오를 작동할 수 있습니다. 장치에서 비디오 렌디션만 재생하더라도 모든 스크린 렌디션은 스크린 장치에서 다운로드됩니다.
+   >다양한 폭/높이/비트율로 여러 비디오 표현물을 추가하여 비디오를 작동할 수 있습니다. 모든 화면, 렌디션은 장치가 비디오 렌디션만 재생하더라도 Screens 장치에 의해 다운로드됩니다.
 
 1. 클릭 **저장**.
 
@@ -66,4 +66,3 @@ Screens Content Provider에서 as a Cloud Service으로 비디오 렌디션을 �
    >[!NOTE]
    >* 여러 처리 프로필을 만들고 해당 폴더에 적용하여 해당 폴더의 비디오가 특정 비디오 렌디션을 가져오도록 할 수 있습니다.
    >* 처리 프로필이 적용되는 폴더에 비디오를 업로드하면 비디오가 처리되고 구성된 렌디션이 만들어지며, 이 렌디션은 Screens 디바이스에서 비디오를 재생하는 데 추가로 사용됩니다.
-

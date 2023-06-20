@@ -2,10 +2,10 @@
 title: 적합한 사람, 적합한 역할
 description: 적합한 사람, 적합한 역할
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '825'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -77,4 +77,4 @@ Adobe Experience Manager Assets 구현을 성공적으로 실행하기 위해 �
 
 >[!TIP]
 >
-> [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)에서 Adobe Experience Cloud 및 활용 리소스에 대한 자세한 내용을 살펴보고 [Adobe 디지털 학습](https://learning.adobe.com/certification.html)을 통해 인증을 받으십시오.
+> Adobe Experience Cloud에 대해 자세히 알아보고 의 리소스를 사용합니다. [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) 인증 받기 [Adobe 디지털 학습](https://learning.adobe.com/certification.html).

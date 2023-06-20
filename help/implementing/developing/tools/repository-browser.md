@@ -4,9 +4,9 @@ seo-title: Repository Browser
 description: 저장소 브라우저는 작성자, 게시 및 미리보기 계층의 모든 환경에 대해 저장소에 읽기 전용 보기를 제공합니다.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: 43429562ea4292f38d3459e03185270ec950a58a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '885'
 ht-degree: 2%
 
 ---
@@ -29,14 +29,14 @@ Developer Console에서 액세스할 수 있으며, 선택한 환경의 작성�
 
 ### 사전 요구 사항 액세스 {#access-prerequisites}
 
-Developer Console 또는 저장소 브라우저에 액세스하려면 다음 조건을 충족해야 합니다
+개발자 콘솔 또는 저장소 브라우저에 액세스하려면 다음 조건을 충족해야 합니다
 
 Developer Console에 액세스하려면:
 
 * 프로덕션 프로그램의 경우 사용자는 **Cloud Manager - 개발자 역할** Admin Console 내
 * 샌드박스 프로그램의 경우 AEM에 as a Cloud Service으로 액세스할 수 있도록 하는 제품 프로필을 가진 모든 사용자가 사용할 수 있습니다.
 
-저장소 브라우저에 액세스하려면:
+저장소 브라우저에 액세스하려면 다음을 수행하십시오.
 
 * 사용자에게 다음이 있어야 합니다. **Cloud Manager - 개발자** 작성자 및 게시 인스턴스를 볼 Admin Console의 역할입니다.
 * 또한 작성자의 경우 AEM 사용자 제품 프로필을 가진 사용자는 최소한의 읽기 권한으로 저장소 브라우저를 볼 수 있습니다. 저장소를 탐색할 때는 사용자의 권한이 유지됩니다. AEM 관리자 제품 프로필이 있는 사용자는 전체 읽기 액세스 권한이 있는 저장소 브라우저를 볼 수 있습니다.
@@ -76,7 +76,7 @@ Developer Console에 액세스하려면:
 
 게시의 경우 기본적으로 저장소 브라우저에 공개 컨텐츠만 표시되므로 특정 폴더는 다음과 같습니다 `/conf` 또는 `/home` 표시되지 않습니다.
 
-이러한 위치를 표시하려면 아래 절차를 따라야 합니다.
+이러한 위치를 표시하려면 다음을 수행합니다.
 
 1. 선택한 환경 옆에 있는 세 점을 클릭하고 을(를) 선택합니다 **액세스 관리**
 

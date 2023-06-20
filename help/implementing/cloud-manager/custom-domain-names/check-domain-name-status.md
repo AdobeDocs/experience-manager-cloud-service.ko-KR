@@ -2,10 +2,10 @@
 title: 도메인 이름 상태 확인
 description: Cloud Manager에서 사용자 정의 도메인 이름이 성공적으로 인증되었는지 확인하는 방법을 알아봅니다.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 357c1b9c29b3a79ee7322f7f2176b6ae41fc9c2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 74%
+source-wordcount: '662'
+ht-degree: 67%
 
 ---
 
@@ -82,7 +82,7 @@ Cloud Manager는 TXT 값을 통해 도메인 소유권을 확인하고 다음 �
 
 ## 사용자 정의 도메인 이름에 대한 기존 CDN 구성 {#pre-existing-cdn}
 
-사용자 정의 도메인 이름에 대한 기존 CDN 구성이 있는 경우 Cloud Manager에서 UI를 통해 보고 구성할 수 있도록 이러한 구성을 추가하라는 정보 메시지가 **사용자 정의 도메인 이름** 및 **환경** 페이지에 표시됩니다.
+사용자 정의 도메인 이름에 대한 기존 CDN 구성이 있는 경우 **사용자 정의 도메인 이름** 및 **환경** 페이지 - UI를 통해 이러한 구성을 추가하여 Cloud Manager에서 보고 구성할 수 있도록 권장합니다.
 
 UI를 사용하여 모든 기존 환경 구성이 마이그레이션되면 메시지가 사라집니다. 메시지가 사라지는 데는 영업일 기준 1~2일이 소요될 수 있습니다.
 

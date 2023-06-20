@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2020.8.0 릴리스 정보입니다.'
 description: "[!DNL Adobe Experience Manager] 2020.8.0용 as a Cloud Service 릴리스 노트"
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 39%
+source-wordcount: '1041'
+ht-degree: 33%
 
 ---
 
@@ -76,13 +76,13 @@ ht-degree: 39%
 
 ### 새로운 기능 {#what-is-new-cloud-manager}
 
-* 콘텐츠 감사는 Cloud Manager Sites 프로덕션 파이프라인에서 활성화된 기능입니다. 이제 Sites가 있는 프로그램의 프로덕션 파이프라인 구성에 **콘텐츠 감사**&#x200B;라는 세 번째 탭이 포함됩니다. 프로덕션 파이프라인이 실행될 때마다 성능, SEO(검색 엔진 최적화), 접근성, 모범 사례 및 PWA(점진적 웹 앱)를 포함한 여러 차원에 대해 사이트를 평가하는 사용자 정의 기능 테스트 후 새로운 콘텐츠 감사 단계가 파이프라인에 포함됩니다.
+* 콘텐츠 감사는 Cloud Manager Sites 프로덕션 파이프라인에서 활성화된 기능입니다. 이제 Sites가 있는 프로그램의 프로덕션 파이프라인 구성에 **콘텐츠 감사**&#x200B;라는 세 번째 탭이 포함됩니다. 프로덕션 파이프라인이 실행될 때마다 성능, SEO(검색 엔진 최적화), 접근성, 모범 사례 및 PWA(점진적 웹 앱)을 포함한 여러 차원에 대해 사이트를 평가하는 사용자 정의 기능 테스트 후 새로운 콘텐츠 감사 단계가 파이프라인에 포함됩니다.
 
 
-   >[!NOTE]
-   >이후 콘텐츠 감사는 경험 감사로 이름이 변경되었습니다.
+  >[!NOTE]
+  >이후 콘텐츠 감사는 경험 감사로 이름이 변경되었습니다.
 
-   자세한 내용은 [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-testing.md)를 참조하십시오.
+  자세한 내용은 [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-testing.md)를 참조하십시오.
 
 * Assets 프로그램에서 새로 만들어진 환경은 이제 스마트 콘텐츠 서비스로 자동 구성됩니다.
 

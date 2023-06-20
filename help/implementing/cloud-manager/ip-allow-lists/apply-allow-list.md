@@ -2,10 +2,10 @@
 title: IP 허용 목록 적용 및 적용 취소
 description: 환경에 IP 허용 목록을 적용 및 적용 취소하는 방법을 알아봅니다.
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
-source-git-commit: 7632a9fef71e95238d149ec5318903757bb2a326
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 100%
+source-wordcount: '269'
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ IP 허용 목록을 적용할 때 목록의 정의에 포함된 모든 IP 범위
 1. **개요** 페이지에서 **환경** 화면으로 이동합니다.
 1. **환경** 화면에서 특정 환경 세부 정보 페이지로 이동하고 **IP 허용 목록** 표로 이동합니다.
 1. 표 상단의 입력 필드를 사용하여 IP 허용 목록과 이를 적용할 작성자 또는 게시 서비스를 선택합니다.
-   * IP 허용 목록을 적용하려면 Cloud Manager에 IP 허용 목록이 있어야 합니다.
+   * IP 허용 목록을 적용하려면 Cloud Manager에 IP 인스턴스가 있어야 합니다.
 1. **적용**&#x200B;을 클릭하여 제출을 확인합니다.
 
 ## 허용 목록 적용 취소 {#un-applying}

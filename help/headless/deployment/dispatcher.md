@@ -3,10 +3,10 @@ title: AEM Headless으로 Dispatcher 구성
 description: Dispatcher는 Adobe Experience Manager Publish 환경 앞에 있는 캐싱 및 보안 계층입니다. Headless 애플리케이션에 대한 GraphQL 끝점을 여는 데 여러 구성이 사용됩니다.
 feature: Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
-source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 100%
+source-wordcount: '232'
+ht-degree: 93%
 
 ---
 
@@ -28,7 +28,7 @@ AEM Project의 일부로 Dispatcher에 대한 구성이 포함된 Dispatcher 모
 /0060 { /type "allow" /method '(POST|OPTIONS)' /url "/content/_cq_graphql/*/endpoint.json" }
 ```
 
-`*` 와일드 카드는 AEM 인스턴스에서 여러 끝점을 엽니다. GraphQL 끝점을 사용한 쿼리는 `POST`를 사용하여 이루어지고 응답은 캐시되지 **않습니다**.
+`*` 와일드 카드는 AEM 인스턴스에서 여러 끝점을 엽니다. GraphQL 끝점을 사용한 쿼리는 다음을 사용하여 수행됩니다. `POST` 그리고 응답은 **아님** 캐시됩니다.
 
 ## GraphQL 지속 쿼리
 

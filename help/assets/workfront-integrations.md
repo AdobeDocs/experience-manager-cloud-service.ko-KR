@@ -4,9 +4,9 @@ description: 간 통합 소개 [!DNL Assets] 및 [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: e8607f5dfc9ad5fd5ababec47b4933bee131e566
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1317'
 ht-degree: 4%
 
 ---
@@ -58,7 +58,7 @@ Adobe 대상 [통합 [!DNL Workfront] 및 [!DNL Adobe Experience Manager Assets]
 |----|----|----|-----|-----|
 | 배포 메서드 | 다음에 적합 [!DNL Assets] 제공. | Assets Essentials | Adobe Managed Services, 온-프레미스 | 클라우드 서비스 |
 | **일반** |
-| 에서 디지털 파일 보내기 [!DNL Workfront] 끝 [!DNL Assets] | 최신 버전의 WF 문서를 AEM Assets에 업로드하여 새 버전의 문서로 연결할 수 있습니다. | ✓ | ✓ | ✓ |
+| 에서 디지털 파일 보내기 [!DNL Workfront] 끝 [!DNL Assets] | WF 문서의 최신 버전은 문서의 새 버전으로 연결된 AEM Assets에 업로드할 수 있습니다. | ✓ | ✓ | ✓ |
 | 수동으로 AEM 폴더에 Workfront 개체 연결 | 기존 AEM 폴더는 Workfront 폴더로 연결되고 하위 자산은 새 Workfront 문서로 연결됩니다. | ✓ | ✓ | ✓ |
 | 링크 [!DNL Assets] Workfront 개체로 | AEM의 기존 에셋을 새 Workfront 문서에 연결하거나 기존 문서의 새 버전으로 연결할 수 있습니다. | ✓ | ✓ | ✓ |
 | 연결된 폴더에 추가된 에셋은 자동으로 AEM으로 전송됩니다. | 연결된 폴더에 문서가 추가되면 연결된 에셋이 자동으로 새 에셋으로 AEM Assets에 업로드됩니다. | ✓ | ✓ | ✓ |
@@ -77,7 +77,7 @@ Adobe 대상 [통합 [!DNL Workfront] 및 [!DNL Adobe Experience Manager Assets]
 | 단일 AEM 환경에 연결하는 여러 Workfront 환경 지원 | 여러 Workfront 환경의 사용자는 단일 AEM 환경에 연결할 수 있습니다. | ✓ | 아니요 | ✓ |
 | 단일 Workfront 환경에 연결하는 여러 AEM 환경 지원 | 단일 Workfront 환경 내의 사용자는 여러 AEM 환경 간에 에셋을 전송하거나 연결할 수 있습니다. | ✓ | ✓ | ✓ |
 | **메타데이터** |
-| Workfront 에셋 메타데이터를 AEM Assets에 매핑 | Workfront 개체 및 사용자 지정 양식 속성이 AEM 에셋 메타데이터 속성에 매핑될 수 있습니다. 값은 초기 업로드/링크 시 푸시됩니다. | ✓ | ✓ | ✓ |
+| Workfront 에셋 메타데이터를 AEM Assets에 매핑 | Workfront 개체 및 사용자 지정 양식 속성이 AEM 에셋 메타데이터 속성에 매핑될 수 있습니다. 값은 초기 업로드/링크에서 푸시됩니다. | ✓ | ✓ | ✓ |
 | Workfront에서 자동으로 문서 사용자 지정 Forms 만들기 | AEM 워크플로우를 사용하여 Workfront 문서, 작업 및 문제에 사용자 정의 양식을 첨부합니다. | 아니요 | ✓ | 아니요 |
 | AEM Assets과 Workfront 간 메타데이터의 양방향 자동 업데이트 | AEM Assets과 Workfront 간에 메타데이터를 자동으로 업데이트합니다. 에셋은 처음에 Workfront에서 AEM으로 푸시해야 하며 양방향 메타데이터 업데이트가 제대로 작동하려면 Workfront 에셋 메타데이터를 AEM assets에 매핑해야 합니다. | 아니요 | ✓ | 아니요 |
 | AEM에 매핑된 메타데이터에 대한 Workfront의 실시간 보기 | Workfront 문서 세부 정보 및 문서 요약 패널에서 AEM에 대해 업데이트된 매핑된 메타데이터를 봅니다. | ✓ | 아니요 | ✓ |

@@ -2,10 +2,10 @@
 title: AEM as a Headless CMS용 콘텐츠 모델링 - 소개
 description: 프로젝트 콘텐츠를 모델링하는 Adobe Experience Manager as a Cloud Service as a Headless CMS 기능 사용 소개.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '721'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 ## 전체 콘텐츠 게재 {#full-stack}
 
-사용하기 쉬운 대규모 콘텐츠 관리 시스템(CMS)이 부상하면서 조직은 이를 중앙 위치로 활용하여 메시지, 브랜딩 및 커뮤니케이션을 관리합니다. CMS를 경험 관리의 중심점으로 사용하면 효율성이 개선되어 서로 다른 시스템에서 작업을 복제할 필요가 없습니다.
+사용이 간편한 대규모 CMS(콘텐츠 관리 시스템)가 등장한 이후 조직에서는 메시지, 브랜딩 및 커뮤니케이션을 관리하는 중앙 위치로 CMS를 사용해 왔습니다. CMS를 경험 관리의 중심점으로 사용하면 효율성이 개선되어 서로 다른 시스템에서 작업을 복제할 필요가 없습니다.
 
 ![클래식 전체 스택 CMS](/help/journey-headless/developer/assets/full-stack.png)
 

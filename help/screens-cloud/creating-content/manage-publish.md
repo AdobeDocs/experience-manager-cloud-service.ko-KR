@@ -2,9 +2,9 @@
 title: Screens에서 채널 as a Cloud Service 게시
 description: 이 페이지에서는 Screens에 as a Cloud Service으로 채널을 게시하는 방법에 대해 설명합니다.
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
-source-git-commit: 9f6afc7bfe4f92a49e50dcf491347112e95e494d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '300'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 AEM Screens에서 콘텐츠를 게시할 수 있습니다. 게시 관리 기능을 사용하면 작성자에서 플레이어로 게시하는 컨텐츠 업데이트를 전달할 수 있습니다. 전체 AEM Screens 프로젝트에 대한 콘텐츠 또는 채널, 위치, 플레이어 또는 애플리케이션 중 하나에 대한 콘텐츠만 게시 또는 게시 취소할 수 있습니다.
 
 >[!IMPORTANT]
->프로젝트에서 채널을 만들면 AEM Screens Services Provider의 인벤토리 목록 보기에서 채널/채널을 표시하려면 채널을 게시해야 합니다.
+>프로젝트에서 채널을 만든 후에는 AEM Screens Services Provider의 인벤토리 목록 보기에서 채널/채널을 표시하도록 채널을 게시해야 합니다.
 
 ## 목표 {#objective}
 
@@ -40,7 +40,7 @@ AEM Screens에서 콘텐츠를 게시할 수 있습니다. 게시 관리 기능�
    ![](/help/screens-cloud/assets/create-content/managepub-2.png)
 
    >[!NOTE]
-   >클릭 **+ 하위 항목 포함** 작업 표시줄에서 모든 옵션을 선택 취소하고 프로젝트의 모든 모듈을 게시한 다음 Add to publish를 클릭합니다. 기본적으로 모든 확인란이 선택되며 프로젝트의 모든 모듈을 게시하려면 확인란의 선택을 수동으로 취소해야 합니다.
+   >클릭 **하위 항목 포함** 작업 표시줄에서 모든 옵션을 선택 취소하고 프로젝트의 모든 모듈을 게시한 다음 Add to publish를 클릭합니다. 기본적으로 모든 상자가 선택되어 있으므로 프로젝트의 모든 모듈을 게시하려면 수동으로 상자의 선택을 해제해야 합니다.
 
 1. 에서 채널 선택 후 **게시 관리** 마법사, 클릭 **게시** 채널을 게시합니다.
 

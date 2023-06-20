@@ -1,13 +1,13 @@
 ---
 title: 콘텐츠 조각 - 구성 브라우저
-description: 구성 브라우저에서 콘텐츠 조각 및 GraphQL 기능을 활성화하여 AEM Headless 게재 기능을 활용하는 방법에 대해 알아봅니다.
+description: 구성 브라우저에서 콘텐츠 조각 및 GraphQL 기능을 활성화하여 AEM Headless 게재 기능을 사용하는 방법에 대해 알아봅니다.
 feature: Content Fragments
 role: User
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 100%
+source-wordcount: '362'
+ht-degree: 88%
 
 ---
 
@@ -28,7 +28,6 @@ ht-degree: 100%
 >
 >* 새 모델을 만들 때 **만들기** 옵션을 사용할 수 없습니다.
 >* [사이트 구성을 선택하여 관련 끝점을 생성](/help/headless/graphql-api/graphql-endpoint.md)할 수 없습니다.
-
 
 콘텐츠 조각 기능 활성화하려면 다음 작업을 수행해야 합니다.
 
@@ -57,21 +56,19 @@ ht-degree: 100%
 >* 지속 쿼리는 상위(루트) 구성과 관련하여 저장됩니다.
 
 
-
 1. **도구**, **일반**&#x200B;으로 이동한 다음 **구성 브라우저**&#x200B;를 엽니다.
 
 1. **만들기**&#x200B;를 사용하여 대화 상자를 열고 여기에서
 
    1. **제목**&#x200B;을 지정합니다.
-   1. **이름**&#x200B;은 저장소의 노드 이름이 됩니다.
-      * 제목을 기반으로 자동으로 생성되고 [AEM 명명 규칙](/help/implementing/developing/introduction/naming-conventions.md)에 따라 조정됩니다.
+   1. 다음 **이름** 는 저장소의 노드 이름이 됩니다.
+      * 제목을 기반으로 자동으로 생성되고 이에 따라 조정됩니다. [AEM 이름 지정 규칙입니다.](/help/implementing/developing/introduction/naming-conventions.md)
       * 필요한 경우 조정할 수 있습니다.
    1. 사용을 활성화하려면 다음을 선택합니다.
       * **콘텐츠 조각 모델**
       * **GraphQL 지속 쿼리**
 
       ![구성 정의](assets/cfm-conf-01.png)
-
 
 1. **만들기**&#x200B;를 선택하여 정의를 저장합니다.
 

@@ -3,9 +3,9 @@ title: Dispatcher 도구를 사용하여 확인 및 디버깅
 description: Dispatcher 도구를 사용하여 확인 및 디버깅
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: a56b0ed1efff7b8d04e65921ee9dd25ae7030dbd
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2865'
+source-wordcount: '2859'
 ht-degree: 1%
 
 ---
@@ -92,17 +92,17 @@ ServerAlias와 일치하는 가상 호스트를 항상 하나 이상 사용할 �
 
 ```
 <VirtualHost *:80>
-	ServerName	"example.com"
-	# Put names of which domains are used for your published site/content here
-	ServerAlias	 "*example.com" "\*.local" "localhost" "127.0.0.1" "*.adobeaemcloud.net" "*.adobeaemcloud.com"
-	# Use a document root that matches the one in conf.dispatcher.d/default.farm
-	DocumentRoot "${DOCROOT}"
-	# URI dereferencing algorithm is applied at Sling's level, do not decode parameters here
-	AllowEncodedSlashes NoDecode
-	# Add header breadcrumbs for help in troubleshooting which vhost file is chosen
-	<IfModule mod_headers.c>
-		Header add X-Vhost "publish-example-com"
-	</IfModule>
+    ServerName    "example.com"
+    # Put names of which domains are used for your published site/content here
+    ServerAlias     "*example.com" "\*.local" "localhost" "127.0.0.1" "*.adobeaemcloud.net" "*.adobeaemcloud.com"
+    # Use a document root that matches the one in conf.dispatcher.d/default.farm
+    DocumentRoot "${DOCROOT}"
+    # URI dereferencing algorithm is applied at Sling's level, do not decode parameters here
+    AllowEncodedSlashes NoDecode
+    # Add header breadcrumbs for help in troubleshooting which vhost file is chosen
+    <IfModule mod_headers.c>
+        Header add X-Vhost "publish-example-com"
+    </IfModule>
   ...
 </VirtualHost>
 ```
@@ -262,7 +262,7 @@ Cloud Manager 배포 중 `httpd -t` 구문 검사도 실행되고 모든 오류�
 
 지시문이 허용 목록에추가된이 아닌 경우 이 도구는 오류를 기록하고 0이 아닌 종료 코드를 반환합니다. 또한 패턴을 사용하여 모든 파일을 추가로 스캔합니다 `conf.dispatcher.d/enabled_farms/*.farm` 및 이(가) 다음을 확인합니다.
 
-* 를 통해 허용을 사용하는 필터 규칙이 없습니다. `/glob` (참조 [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957) 을 참조하십시오.
+* 를 통해 허용을 사용하는 필터 규칙이 없습니다. `/glob` (참조 [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957))를 참조하십시오.
 * 관리 기능이 노출되지 않았습니다. 예를 들어 다음과 같은 경로에 액세스할 수 있습니다 `/crx/de or /system/console`.
 
 유효성 검사 도구는 허용 목록에추가된이 아닌 Apache 지시문의 금지된 사용만 보고합니다. 이 정보는 실행 중인 환경의 Apache 모듈에서만 사용할 수 있으므로 Apache 구성과 관련된 구문 또는 의미 상의 문제는 보고하지 않습니다.
@@ -392,7 +392,7 @@ Windows 탐색기에서 경로를 복사하여 붙여넣은 다음 명령 프롬
 
 ### 단계 2 {#second-phase}
 
-이 단계에서는 Docker 컨테이너에서 Apache HTTPD를 시작하여 Apache 구문을 확인합니다. Docker를 로컬에 설치해야 하지만 AEM이 실행될 필요는 없습니다.
+이 단계에서는 Docker 컨테이너에서 Apache HTTPD를 시작하여 Apache 구문을 확인합니다. Docker를 로컬에 설치해야 하지만 AEM을 실행할 필요는 없습니다.
 
 >[!NOTE]
 >
@@ -401,7 +401,7 @@ Windows 탐색기에서 경로를 복사하여 붙여넣은 다음 명령 프롬
 
 이 단계는 `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
 
-Cloud Manager 배포 중 `httpd -t` 구문 검사가 실행되며 모든 오류가 Cloud Manager 이미지 빌드 단계 오류 로그에 포함됩니다.
+Cloud Manager 배포 중 `httpd -t` 구문 검사도 실행되며 모든 오류는 Cloud Manager 빌드 이미지 단계 오류 로그에 포함됩니다.
 
 ### 단계 3 {#third-phase}
 
@@ -531,7 +531,7 @@ Dispatcher 구성에서 동일한 환경 변수를 사용할 수 있습니다. �
 }
 ```
 
-또는 환경 비밀은 아니지만 httpd/dispatcher 구성에서 Cloud Manager 환경 변수를 사용할 수 있습니다. 프로그램에 여러 개발 환경이 있고 이러한 개발 환경 중 일부에 httpd/dispatcher 구성에 대한 값이 다른 경우 이 방법이 특히 중요합니다. 위의 예와 동일한 ${VIRTUALHOST} 구문이 사용되지만, 위의 변수 파일에서 Define 선언은 사용되지 않습니다. 읽기 [Cloud Manager 설명서](/help/implementing/cloud-manager/environment-variables.md) Cloud Manager 환경 변수 구성에 대한 지침.
+또는 환경 비밀은 아니지만 httpd/dispatcher 구성에서 Cloud Manager 환경 변수를 사용할 수 있습니다. 프로그램에 여러 개발 환경이 있고 이러한 개발 환경 중 일부에 httpd/dispatcher 구성에 대한 값이 다른 경우 이 방법이 특히 중요합니다. 동일한 ${VIRTUALHOST} 구문은 위의 예제와 같이 사용되지만 위의 변수 파일에서 Define 선언은 사용되지 않습니다. 읽기 [Cloud Manager 설명서](/help/implementing/cloud-manager/environment-variables.md) Cloud Manager 환경 변수 구성에 대한 지침.
 
 구성을 로컬에서 테스트할 때 변수를 전달하여 다양한 환경 유형을 시뮬레이션할 수 있습니다 `DISP_RUN_MODE` (으)로 `docker_run.sh` 직접 스크립트:
 
@@ -574,7 +574,6 @@ Cloud Manager 2021.7.0 릴리스를 통해 새로운 Cloud Manager 프로그램�
    * 파일 커밋 `opt-in/USE_SOURCES_DIRECTLY` 비프로덕션 파이프라인에서 클라우드 개발 환경으로 배포되는 git 분기에
    * Cloud Manager를 사용하여 클라우드 개발 환경에 배포합니다.
    * 철저히 테스트해 보십시오. 상위 환경에 변경 사항을 배포하기 전에 Apache 및 Dispatcher 구성이 예상대로 작동하는지 확인하는 것이 중요합니다. 사용자 지정 구성과 관련된 모든 동작을 확인합니다! 배포된 Dispatcher 구성이 사용자 지정 구성을 반영하지 않는다고 판단되는 경우 고객 지원 티켓을 제출합니다.
-
    >[!NOTE]
    >
    >유연한 모드에서는 절대 경로 대신 상대 경로를 사용해야 합니다.

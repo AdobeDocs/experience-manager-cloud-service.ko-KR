@@ -2,10 +2,10 @@
 title: 차이점 및 새로운 기능 - Adobe Experience Manager as a Cloud Service
 description: 차이점 및 새로운 기능 - Adobe Experience Manager(AEM) as a Cloud Service
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 6c06df453a2c9116889c25b1d1198df2dbf26f88
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1903'
-ht-degree: 100%
+source-wordcount: '1899'
+ht-degree: 97%
 
 ---
 
@@ -192,7 +192,7 @@ AEM as a Cloud Service에서는 OSGi 번들 및 관련 구성이 관리되는 �
 
 ### 로컬 개발 {#aem-as-a-cloud-service-developing-local-development}
 
-신속한 반복 및 개발 지원을 위해 AEM as a Cloud Service 컨텍스트 외부에서 AEM 애플리케이션을 개발할 수도 있습니다. 이러한 목적으로 개발자는 다음과 같은 아티팩트를 사용할 수 있습니다.
+신속한 반복 및 개발을 지원하기 위해 AEM as a Cloud Service 컨텍스트 외부에서 AEM 애플리케이션을 개발할 수도 있습니다. 이러한 목적으로 개발자는 다음과 같은 아티팩트를 사용할 수 있습니다.
 
 * AEM as a Cloud Service 빠른 시작: 동일한 기능 및 API 영역을 갖춘 최신 AEM 코드 베이스의 `.jar` 기반 독립형 설치 관리자
 

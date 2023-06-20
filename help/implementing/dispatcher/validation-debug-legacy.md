@@ -4,9 +4,9 @@ description: Dispatcher 도구를 사용하여 확인 및 디버깅(이전)
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 33dfe795140f2780f7f2cf876f3ebc725310214d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2345'
+source-wordcount: '2337'
 ht-degree: 1%
 
 ---
@@ -218,10 +218,10 @@ Phase 3 finished
 스크립트는 다음을 수행합니다.
 
 1. 유효성 검사기를 실행합니다. 구성이 올바르지 않으면 스크립트가 실패합니다.
-2. 다음을 실행합니다. `httpd -t` apache httpd가 시작할 수 있도록 구문이 올바른지 테스트하는 명령입니다. 성공하면 구성을 배포할 준비가 되어 있어야 합니다.
+2. 실행 `httpd -t` apache httpd가 시작할 수 있도록 구문이 올바른지 테스트하는 명령입니다. 성공하면 구성을 배포할 준비가 되어 있어야 합니다.
 3. 에 설명된 대로 변경할 수 없도록 설계된 Dispatcher SDK 구성 파일의 하위 집합이 있는지 확인합니다. [파일 구조 섹션](##legacy-mode-file-structure)은(는) 수정되지 않았습니다. Dispatcher 도구 버전 2.0.36도 포함하는 AEM SDK 버전 v2021.1.4738에서 도입된 새로운 확인입니다. 이 업데이트 이전에는 고객이 변경 불가능한 파일의 로컬 SDK 수정 사항이 클라우드 환경에도 적용된다고 잘못 가정했을 수 있습니다.
 
-Cloud Manager 배포 중 `httpd -t` 구문 검사도 실행되고 모든 오류가 Cloud Manager에 포함됩니다 `Build Images step failure` 로그합니다.
+Cloud Manager 배포 중 `httpd -t` 구문 검사도 실행되며 모든 오류가 Cloud Manager에 포함됩니다 `Build Images step failure` 로그합니다.
 
 ### 단계 1 {#first-phase}
 
@@ -349,14 +349,14 @@ Windows 탐색기에서 경로를 복사하여 붙여넣은 다음 명령 프롬
 
 ### 단계 2 {#second-phase}
 
-이 단계에서는 이미지에서 도커를 시작하여 Apache 구문을 확인합니다. Docker를 로컬에 설치해야 하지만 AEM이 실행될 필요는 없습니다.
+이 단계에서는 이미지에서 도커를 시작하여 Apache 구문을 확인합니다. Docker를 로컬에 설치해야 하지만 AEM을 실행할 필요는 없습니다.
 
 >[!NOTE]
 >Windows 사용자는 Windows 10 Professional 또는 Docker를 지원하는 기타 배포를 사용해야 합니다. 로컬 컴퓨터에서 Dispatcher를 실행하고 디버깅하기 위한 전제 조건입니다.
 
 이 단계는 `validator full -d out src/dispatcher`: 다음 명령에 필요한 out 디렉터리를 생성합니다. `bin/docker_run.sh out host.docker.internal:4503 8080`.
 
-Cloud Manager 배포 중 `httpd -t` 구문 검사가 실행되며 모든 오류가 Cloud Manager 이미지 빌드 단계 오류 로그에 포함됩니다.
+Cloud Manager 배포 중 `httpd -t` 구문 검사가 실행되고 모든 오류가 Cloud Manager 이미지 빌드 단계 오류 로그에 포함됩니다.
 
 ### 단계 3 {#third-phase}
 

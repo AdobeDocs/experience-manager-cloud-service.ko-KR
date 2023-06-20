@@ -2,10 +2,10 @@
 title: 콘텐츠 전송 도구 사전 요구 사항
 description: 콘텐츠 전송 도구 사전 요구 사항
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
-source-git-commit: eb633db8fe64a62661c094b88f0ce8d9950ed6d7
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 15%
+source-wordcount: '543'
+ht-degree: 16%
 
 ---
 

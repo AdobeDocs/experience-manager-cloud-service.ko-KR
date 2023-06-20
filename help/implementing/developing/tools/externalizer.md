@@ -2,9 +2,9 @@
 title: URL 표면화
 description: 외부화는 프로그래밍 방식으로 리소스 경로를 외부 및 절대 URL로 변환할 수 있는 OSGi 서비스입니다.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '660'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,8 @@ AEM as a Cloud Service 인스턴스는 외부에 표시되는 URL을 알 수 없
    * **`scheme`** 는 일반적으로 http 또는 https이지만 다른 프로토콜일 수 있습니다.
 
       * https 링크를 적용하려면 https를 사용하는 것이 좋습니다.
-      * URL의 외부화를 요청할 때 클라이언트 코드가 스키마를 재정의하지 않는 경우 사용됩니다.
+      * URL의 외부화를 요청할 때 클라이언트 코드가 스키마를 재정의하지 않는 경우에 사용됩니다.
+
    * **`server`** 는 호스트 이름(도메인 이름 또는 ip 주소)입니다.
    * **`port`** (선택 사항) 은 포트 번호입니다.
    * **`contextpath`** (선택 사항) AEM이 다른 컨텍스트 경로 아래에 웹 앱으로 설치된 경우에만 설정됩니다.
@@ -102,11 +103,11 @@ AEM as a Cloud Service 인스턴스는 외부에 표시되는 URL을 알 수 없
 
 * **&#39;게시&#39; 도메인으로 경로를 외부화하려면:**
 
-   ```java
-   String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";
-   ```
+  ```java
+  String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";
+  ```
 
-   도메인 매핑 가정:
+  도메인 매핑 가정:
 
    * `publish https://www.website.com`
 
@@ -116,11 +117,11 @@ AEM as a Cloud Service 인스턴스는 외부에 표시되는 URL을 알 수 없
 
 * **&quot;작성자&quot; 도메인으로 경로를 외부화하려면:**
 
-   ```java
-   String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";
-   ```
+  ```java
+  String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";
+  ```
 
-   도메인 매핑 가정:
+  도메인 매핑 가정:
 
    * `author https://author.website.com`
 
@@ -130,11 +131,11 @@ AEM as a Cloud Service 인스턴스는 외부에 표시되는 URL을 알 수 없
 
 * **&#39;로컬&#39; 도메인으로 경로를 외부화하려면:**
 
-   ```java
-   String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";
-   ```
+  ```java
+  String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";
+  ```
 
-   도메인 매핑 가정:
+  도메인 매핑 가정:
 
    * `local https://publish-3.internal`
 

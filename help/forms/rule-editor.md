@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: e64e15c9096f837daa7fff5c64b8394736297579
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '6346'
+source-wordcount: '6321'
 ht-degree: 0%
 
 ---
@@ -60,11 +60,11 @@ forms-power-users 그룹에 추가된 사용자는 스크립트를 만들고 기
 
 * 규칙을 작성할 때 일반적으로 경험하는 규칙은 규칙을 작성하는 객체의 컨텍스트에서 생각하는 것입니다. 필드 A에서 사용자가 지정하는 값에 따라 필드 B를 숨기거나 표시하려고 한다고 가정합니다. 이 경우 필드 A에서 조건을 평가하고 반환되는 값을 기반으로 필드 B에서 작업을 트리거합니다.
 
-   따라서 필드 B(조건을 평가하는 객체)에 규칙을 작성하는 경우 조건-작업 구문 또는 시기 규칙 유형을 사용합니다. 마찬가지로 필드 A에서 작업 조건 구문 또는 표시 또는 숨기기 규칙 유형을 사용합니다.
+  따라서 필드 B(조건을 평가하는 객체)에 규칙을 작성하는 경우 조건-작업 구문 또는 시기 규칙 유형을 사용합니다. 마찬가지로 필드 A에서 작업 조건 구문 또는 표시 또는 숨기기 규칙 유형을 사용합니다.
 
 * 한 가지 조건을 기반으로 여러 작업을 수행해야 하는 경우가 있습니다. 이러한 경우 조건-작업 구문을 사용하는 것이 좋습니다. 이 구문에서는 한 번 조건을 평가하고 여러 작업 문을 지정할 수 있습니다.
 
-   예를 들어, 사용자가 필드 A에 지정한 값을 확인하는 조건에 따라 필드 B, C 및 D를 숨기려면 조건-작업 구문 또는 필드 A에 규칙 유형을 입력할 때 하나의 규칙을 작성하고 필드 B, C 및 D의 가시성을 제어하는 작업을 지정합니다. 그렇지 않으면 필드 B, C 및 D에 세 개의 별도 규칙이 필요합니다. 여기서 각 규칙은 조건을 확인하고 해당 필드를 표시하거나 숨깁니다. 이 예제에서는 3개의 객체에 대한 규칙 유형 표시 또는 숨기기보다 When 규칙 유형을 하나의 객체에 작성하는 것이 더 효율적입니다.
+  예를 들어, 사용자가 필드 A에 지정한 값을 확인하는 조건에 따라 필드 B, C 및 D를 숨기려면 조건-작업 구문 또는 필드 A에 규칙 유형을 입력할 때 하나의 규칙을 작성하고 필드 B, C 및 D의 가시성을 제어하는 작업을 지정합니다. 그렇지 않으면 필드 B, C 및 D에 세 개의 별도 규칙이 필요합니다. 여기서 각 규칙은 조건을 확인하고 해당 필드를 표시하거나 숨깁니다. 이 예제에서는 3개의 객체에 대한 규칙 유형 표시 또는 숨기기보다 When 규칙 유형을 하나의 객체에 작성하는 것이 더 효율적입니다.
 
 * 여러 조건을 기반으로 작업을 트리거하려면 작업 조건 구문을 사용하는 것이 좋습니다. 예를 들어 필드 B, C 및 D에서 조건을 평가하여 필드 A를 표시하거나 숨기려면 필드 A에서 규칙 유형 표시 또는 숨기기를 사용합니다.
 * 규칙에 한 조건에 대한 한 가지 작업이 포함된 경우 조건-작업 또는 작업 조건 구문을 사용합니다.
@@ -497,7 +497,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 >
 >또는, 값 설정 규칙을 사용하여 배우자 임금 필드를 표시-숨기기 위해 생성한 시기 규칙에서 대출 자격을 계산할 수 있습니다. 혼인 상태가 싱글인 경우 결합된 결과 규칙은 규칙 편집기에 다음과 같이 표시됩니다.
 >
->마찬가지로 혼합 규칙을 작성하여 배우자 임금 필드의 가시성을 통제하고 결혼 상태가 기혼인 경우 대출 자격을 계산할 수 있습니다.
+>마찬가지로 혼합 규칙을 작성하여 배우자 임금 필드의 가시성을 통제하고 혼인 상태가 기혼인 경우 대출 자격을 계산할 수 있습니다.
 
 ![write-rules-visual-editor-18](assets/write-rules-visual-editor-18.png)
 
@@ -537,71 +537,71 @@ While writing JavaScript code in the rule editor, the following visual cues help
 지원됨 `jsdoc` 태그:
 
 * **비공개**
-구문: 개인 함수는 사용자 지정 함수로 포함되지 않습니다.`@private`
+구문: `@private`
 비공개 함수는 사용자 지정 함수로 포함되지 않습니다.
 
 * **이름**
-구문: 또는 `@name funcName <Function Name>`
+구문: `@name funcName <Function Name>`
 또는 `,` 다음을 사용할 수 있습니다. `@function funcName <Function Name>` **또는** `@func` `funcName <Function Name>`.
-   `funcName` 는 함수 이름입니다(공백은 허용되지 않음).
-   `<Function Name>` 는 함수의 표시 이름입니다.
+  `funcName` 는 함수 이름입니다(공백은 허용되지 않음).
+  `<Function Name>` 는 함수의 표시 이름입니다.
 
 * **멤버**
-구문: 네임스페이스를 함수에 연결합니다.`@memberof namespace`
+구문: `@memberof namespace`
 네임스페이스를 함수에 연결합니다.
 
 * **매개 변수**
-구문: 또는 다음을 사용할 수 있습니다. `@param {type} name <Parameter Description>`
+구문: `@param {type} name <Parameter Description>`
 또는 다음을 사용할 수 있습니다. `@argument` `{type} name <Parameter Description>` **또는** `@arg` `{type}` `name <Parameter Description>`.
 함수에서 사용하는 매개 변수를 표시합니다. 함수는 여러 매개 변수 태그를 가질 수 있으며, 발생 순서로 각 매개 변수에 대해 하나의 태그가 있습니다.
-   `{type}` 매개 변수 유형을 나타냅니다. 허용되는 매개 변수 유형은 다음과 같습니다.
+  `{type}` 매개 변수 유형을 나타냅니다. 허용되는 매개 변수 유형은 다음과 같습니다.
 
    1. 문자열
-   1. 개수
+   1. 숫자
    1. 부울
    1. 범위
 
-   범위는 적응형 양식의 필드를 나타냅니다. 양식에서 소극적 로드를 사용하는 경우 `scope` 을 클릭하여 필드에 액세스합니다. 필드가 로드될 때 또는 필드가 전역으로 표시될 때 필드에 액세스할 수 있습니다.
+  범위는 적응형 양식의 필드를 나타냅니다. 양식에서 소극적 로드를 사용하는 경우 `scope` 을 클릭하여 필드에 액세스합니다. 필드가 로드될 때 또는 필드가 전역으로 표시될 때 필드에 액세스할 수 있습니다.
 
-   모든 매개변수 유형은 위의 유형 중 하나에 분류됩니다. 지원되지 않습니다. 위의 유형 중 하나를 선택해야 합니다. 유형은 대/소문자를 구분하지 않습니다. 매개 변수에는 공백을 사용할 수 없습니다. `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
+  모든 매개변수 유형은 위의 유형 중 하나에 분류됩니다. 지원되지 않습니다. 위의 유형 중 하나를 선택해야 합니다. 유형은 대/소문자를 구분하지 않습니다. 매개 변수에는 공백을 사용할 수 없습니다. `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
 * **반환 유형**
-구문: 또는 다음을 사용할 수 있습니다 `@return {type}`
+구문: `@return {type}`
 또는 다음을 사용할 수 있습니다 `@returns {type}`.
 함수 목적 등 함수에 대한 정보를 추가합니다.
-{type}은(는) 함수의 반환 유형을 나타냅니다. 허용되는 반환 유형은 다음과 같습니다.
+{type} 함수의 반환 형식을 나타냅니다. 허용되는 반환 유형은 다음과 같습니다.
 
    1. 문자열
-   1. 개수
+   1. 숫자
    1. 부울
 
-   다른 모든 반환 유형은 위의 한 가지 유형에 따라 분류됩니다. 지원되지 않습니다. 위의 유형 중 하나를 선택해야 합니다. 반환 유형은 대/소문자를 구분하지 않습니다.
+  다른 모든 반환 유형은 위의 한 가지 유형에 따라 분류됩니다. 지원되지 않습니다. 위의 유형 중 하나를 선택해야 합니다. 반환 유형은 대/소문자를 구분하지 않습니다.
 
    * **이**
-구문: 
-`@this currentComponent`
-   규칙@this 작성된 적응형 양식 구성 요소를 참조하려면 AEM을 사용하십시오.
+구문: `@this currentComponent`
 
-   다음 예제는 필드 값을 기반으로 합니다. 다음 예에서 규칙은 양식의 필드를 숨깁니다. 다음 `this` 부분 `this.value` 는 규칙이 기록되는 기본 적응형 양식 구성 요소를 참조합니다.
+  규칙@this 작성된 적응형 양식 구성 요소를 참조하려면 AEM을 사용하십시오.
 
-   ```
-      /**
-      * @function myTestFunction
-      * @this currentComponent
-      * @param {scope} scope in which code inside function will be executed.
-      */
-      myTestFunction = function (scope) {
-         if(this.value == "O"){
-               scope.age.visible = true;
-         } else {
-            scope.age.visible = false;
-         }
-      }
-   ```
+  다음 예제는 필드 값을 기반으로 합니다. 다음 예에서 규칙은 양식의 필드를 숨깁니다. 다음 `this` 부분 `this.value` 는 규칙이 기록되는 기본 적응형 양식 구성 요소를 참조합니다.
 
-   >[!NOTE]
-   >
-   >사용자 지정 함수 이전의 댓글은 요약에 사용됩니다. 요약은 태그가 발견될 때까지 여러 줄로 확장할 수 있습니다. 규칙 빌더에서 간단한 설명을 보려면 크기를 하나로 제한하십시오.
+  ```
+     /**
+     * @function myTestFunction
+     * @this currentComponent
+     * @param {scope} scope in which code inside function is run.
+     */
+     myTestFunction = function (scope) {
+        if(this.value == "O"){
+              scope.age.visible = true;
+        } else {
+           scope.age.visible = false;
+        }
+     }
+  ```
+
+  >[!NOTE]
+  >
+  >사용자 지정 함수 이전의 댓글은 요약에 사용됩니다. 요약은 태그가 발견될 때까지 여러 줄로 확장할 수 있습니다. 규칙 빌더에서 간단한 설명을 보려면 크기를 하나로 제한하십시오.
 
 **사용자 지정 함수 추가**
 

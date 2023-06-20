@@ -2,10 +2,10 @@
 title: 여러 저장소 사용
 description: Cloud Manager로 작업할 때 여러 git 저장소를 관리하는 방법을 알아봅니다.
 exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
-source-git-commit: 5ea5c3f03642ae2f7471165d4d0ee33c2cc31b6b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 100%
+source-wordcount: '756'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ Cloud Manager로 작업할 때 여러 git 저장소를 관리하는 방법을 �
 
 다음은 두 고객 소유 git 저장소용 샘플 `pom.xml` 파일입니다.
 
-* 첫 번째 프로젝트는 `project-a`라는 디렉터리에 저장됩니다.
+* 첫 번째 프로젝트는 라는 디렉터리에 저장됩니다. `project-a`.
 * 두 번째 프로젝트는 `project-b`라는 디렉터리에 저장됩니다.
 
 ```xml

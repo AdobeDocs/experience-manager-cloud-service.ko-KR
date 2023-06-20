@@ -1,10 +1,10 @@
 ---
 title: 추가 게시 지역
 description: AEM as a Cloud Service가 추가 게시 지역을 지원하여 가용성을 높이고 지연 시간을 줄이는 방법에 대해 알아봅니다.
-source-git-commit: 9fccc1672aad243b648115e657396be1ce4ed614
-workflow-type: ht
-source-wordcount: '547'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '545'
+ht-degree: 96%
 
 ---
 
@@ -38,7 +38,7 @@ AEM Sites로 설정된 프로그램에서 추가 게시 지역에 라이선스�
 
 ## 고급 네트워킹 고려 사항 {#advanced-networking-considerations}
 
-추가 게시 지역이 고급 네트워킹이 이미 구성된 환경에서 활성화되면 고급 네트워킹 규칙과 일치하는 추가 게시 지역의 트래픽이 기본 지역을 통해 기본적으로 라우팅합니다. 높은 가용성을 활용하려면 추가 지역에서 고급 네트워킹을 활성화하는 것이 좋습니다.
+추가 게시 지역이 고급 네트워킹이 이미 구성된 환경에서 활성화되면 고급 네트워킹 규칙과 일치하는 추가 게시 지역의 트래픽이 기본 지역을 통해 기본적으로 라우팅합니다. 향상된 가용성을 활용하려면 추가 지역에서 고급 네트워킹을 활성화하는 것이 좋습니다.
 
 자세한 내용은 연결 손실을 발생시키지 않고도 추가 지역에 고급 네트워킹 구성을 추가하는 방법 등 고급 네트워킹 설명서의 [추가 게시 지역에 대한 고급 네트워킹 구성](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions) 섹션을 참조하십시오.
 

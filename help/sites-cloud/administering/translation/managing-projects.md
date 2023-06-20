@@ -4,10 +4,10 @@ description: AEM에서 기계 번역 및 사람 번역을 만들고 관리하는
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: d3194e646b326009dc204838ac74fc880952f286
-workflow-type: ht
-source-wordcount: '4086'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '4085'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->콘텐츠 번역이 처음이라면 AEM의 강력한 번역 도구를 사용한 AEM Sites 콘텐츠 번역을 안내하며 AEM이 없거나 번역 경험이 없는 사용자에게 최적화된 [사이트 번역 여정](/help/journey-sites/translation/overview.md)을 참조하십시오.
+>콘텐츠 번역이 처음이라면 다음을 참조하십시오. [사이트 번역 여정,](/help/journey-sites/translation/overview.md) 는 AEM 강력한 번역 도구를 사용한 AEM Sites 콘텐츠 번역을 안내하며 AEM 또는 번역 경험이 없는 사용자에게 이상적입니다.
 
 리소스가 번역 프로젝트에 추가되면 해당 리소스에 대한 번역 작업이 생성됩니다. 작업은 리소스에서 실행되는 사람 번역 및 기계 번역 워크플로 관리에 사용하는 명령 및 상태 정보를 제공합니다.
 
@@ -374,7 +374,7 @@ AEM의 번역 프로젝트는 표준 [AEM 프로젝트 콘솔을 사용합니다
 
 1. 프로젝트 콘솔에서 번역 프로젝트를 선택합니다.
 1. 도구 모음에서 **번역 작업 시작**&#x200B;을 탭하거나 클릭합니다.
-1. 대화 상자에서 시작할 작업 목록을 검토한 다음 **시작**&#x200B;을 선택하여 확인하거나 **취소**&#x200B;를 선택하여 중단합니다.
+1. 대화 상자에서 시작된 작업 목록을 검토한 다음 다음을 사용하여 확인합니다. **시작** 또는 를 사용하여 중단 **취소**.
 
 ### 번역 작업 취소 {#canceling-a-translation-job}
 
@@ -443,7 +443,7 @@ AEM의 번역 프로젝트는 표준 [AEM 프로젝트 콘솔을 사용합니다
 
    ![언어 사본 비교](../assets/language-copy-compare.png)
 
-1. 두 페이지(론치와 소스)가 나란히 열립니다.
+1. 두 페이지(launch 및 source)가 나란히 열립니다.
    * 이 기능의 사용에 대한 자세한 내용은 [페이지 비교](/help/sites-cloud/authoring/features/page-diff.md)를 참조하십시오.
 
 ## 소스 페이지 이동 또는 이름 바꾸기 {#move-source}

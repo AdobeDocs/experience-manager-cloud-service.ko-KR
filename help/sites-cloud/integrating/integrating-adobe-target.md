@@ -4,10 +4,10 @@ description: Adobe Target과 통합
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 588825f910b3b9ad6a491c57322971200cea1d15
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 100%
+source-wordcount: '1046'
+ht-degree: 98%
 
 ---
 
@@ -62,7 +62,6 @@ Adobe Target 테넌트 ID 및 Adobe Target 클라이언트 코드 필드를 구�
 > 1. 테넌트 ID를 다시 입력합니다.
 > 2. Target에 다시 연결합니다.
 > 3. 구성을 저장합니다.
-
 
 ### Target 구성 편집 {#edit-target-configuration}
 
@@ -157,4 +156,4 @@ AEM은 Experience Platform Launch와의 획기적인 통합 기능을 제공합�
 
 >[!NOTE]
 >
->레거시 구성은 기존 고객에 대해 여전히 지원됩니다. 새 구성을 편집하거나 만드는 옵션은 포함되지 않습니다. 레거시 구성은 VSTS를 사용하는 고객이 업로드한 콘텐츠 패키지의 일부입니다.
+>레거시 구성은 기존 고객에 대해 여전히 지원됩니다. 새 구성을 편집하거나 만드는 옵션은 포함되지 않습니다. 레거시 구성은 고객이 VSTS를 사용하여 업로드한 콘텐츠 패키지의 일부입니다.

@@ -4,10 +4,10 @@ description: AEM 사이트 템플릿을 통해 사이트 구조 및 초기 콘�
 feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 100%
+source-wordcount: '572'
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,7 @@ AEM 사이트 템플릿을 통해 사이트 구조 및 초기 콘텐츠를 미�
 >
 >AEM 사이트 템플릿을 [페이지 템플릿과 혼동하면 안 됩니다.](/help/sites-cloud/authoring/features/templates.md) 사이트 템플릿은 사이트의 전반적인 구조를 정의하는 역할을 합니다. 페이지 템플릿은 개별 페이지의 구조 및 초기 콘텐츠를 정의합니다.
 >
->AEM 사이트 템플릿을 [AEM 사이트 테마와 혼동하면 안 됩니다.](site-themes.md) AEM 사이트 테마는 AEM 사이트에 대한 스타일 정보만 포함합니다. AEM 사이트 템플릿은 사이트 구조 및 최초 콘텐츠를 정의하며 [빠른 사이트 생성](create-site.md)을 위한 AEM 사이트 테마를 포함합니다.
+>AEM 사이트 템플릿을 [AEM 사이트 테마와 혼동하면 안 됩니다.](site-themes.md) AEM 사이트 테마는 AEM 사이트에 대한 스타일 정보만 포함합니다. AEM 사이트 템플릿은 사이트 구조 및 초기 콘텐츠를 정의하며 다음을 허용하는 AEM 사이트 테마를 포함합니다. [빠른 사이트 생성.](create-site.md)
 
 ## AEM에 사이트 템플릿 추가 {#adding}
 

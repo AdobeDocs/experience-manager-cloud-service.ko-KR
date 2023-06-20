@@ -6,7 +6,7 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: dbc6b5c0f11e52b45981cab36381258edcf6c167
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '3829'
 ht-degree: 16%
@@ -31,7 +31,7 @@ ht-degree: 16%
 
 ## 연결된 자산 개요 {#overview-of-connected-assets}
 
-에서 페이지 편집 시 [!UICONTROL 페이지 편집기] 작성자는 타겟 대상으로 다른 에셋의 에셋을 원활하게 검색, 탐색 및 포함할 수 있습니다 [!DNL Assets] 자산 소스 역할을 하는 배포. 관리자는 의 배포를 한 번만 통합합니다 [!DNL Experience Manager] 포함 [!DNL Sites] 의 다른 배포를 통한 기능 [!DNL Experience Manager] 포함 [!DNL Assets] 기능. 연결된 에셋을 통해 사이트의 웹 페이지에서 Dynamic Media 이미지를 사용하고 스마트 자르기 및 이미지 사전 설정과 같은 Dynamic Media 기능을 활용할 수도 있습니다.
+에서 페이지 편집 시 [!UICONTROL 페이지 편집기] 작성자는 타겟 대상으로 다른 에셋의 에셋을 원활하게 검색, 탐색 및 포함할 수 있습니다 [!DNL Assets] 자산 소스 역할을 하는 배포. 관리자는 의 배포를 한 번만 통합합니다 [!DNL Experience Manager] 포함 [!DNL Sites] 의 다른 배포를 통한 기능 [!DNL Experience Manager] 포함 [!DNL Assets] 기능. 연결된 에셋을 통해 사이트의 웹 페이지에서 Dynamic Media 이미지를 사용하고 스마트 자르기 및 이미지 사전 설정과 같은 Dynamic Media 기능을 사용할 수도 있습니다.
 
 의 경우 [!DNL Sites] 작성자는 원격 자산을 읽기 전용 로컬 자산으로 사용할 수 있습니다. 이 기능은 사이트 편집기에서 원격 자산을 원활하게 검색하고 액세스할 수 있도록 지원합니다. Sites에서 전체 에셋 코퍼스를 사용할 수 있어야 하는 기타 사용 사례의 경우 연결된 에셋을 활용하는 대신 에셋을 일괄적으로 마이그레이션하는 것이 좋습니다.
 
@@ -42,11 +42,11 @@ ht-degree: 16%
 * 사용자는 각 배포에서 적절한 사용자 그룹에 속합니다.
 * 대상 [!DNL Adobe Experience Manager] 배포 유형, 지원되는 기준 중 하나가 충족됩니다. [!DNL Experience Manager] as a Cloud Service [!DNL Assets] 와 함께 작업 [!DNL Experience Manager] 6.5. 이 기능의 작동 방식에 대한 자세한 정보 [!DNL Experience Manager] 6.5, 참조 [의 연결된 자산 [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
 
-   |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] AMS에서 | [!DNL Experience Manager] 6.5 [!DNL Sites] 온-프레미스 |
-   |---|---|---|---|
-   | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | 지원됨 | 지원됨 | 지원됨 |
-   | **[!DNL Experience Manager]6.5 [!DNL Assets] AMS에서** | 지원됨 | 지원됨 | 지원됨 |
-   | **[!DNL Experience Manager]6.5 [!DNL Assets] 온-프레미스** | 지원되지 않음 | 지원되지 않음 | 지원되지 않음 |
+  | | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] AMS에서 | [!DNL Experience Manager] 6.5 [!DNL Sites] 온-프레미스 |
+  |---|---|---|---|
+  | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | 지원됨 | 지원됨 | 지원됨 |
+  | **[!DNL Experience Manager]6.5 [!DNL Assets] AMS에서** | 지원됨 | 지원됨 | 지원됨 |
+  | **[!DNL Experience Manager]6.5 [!DNL Assets] 온-프레미스** | 지원되지 않음 | 지원되지 않음 | 지원되지 않음 |
 
 ### 지원되는 파일 형식 {#mimetypes}
 
@@ -144,7 +144,7 @@ An [!DNL Experience Manager] 관리자가 이 통합을 만들 수 있습니다.
 ## Dynamic Media 에셋 사용 {#dynamic-media-assets}
 
 
-연결된 에셋을 사용하여에서 처리한 이미지 에셋을 사용할 수 있습니다 [!DNL Dynamic Media] 사이트 페이지의 원격 DAM 배포에서 스마트 자르기 및 이미지 사전 설정과 같은 Dynamic Media 기능을 활용합니다.
+연결된 에셋을 사용하여에서 처리한 이미지 에셋을 사용할 수 있습니다 [!DNL Dynamic Media] 및 에서는 스마트 자르기 및 이미지 사전 설정과 같은 Dynamic Media 기능을 사용합니다.
 
 사용 [!DNL Dynamic Media] 연결된 자산:
 
@@ -250,7 +250,7 @@ An [!DNL Experience Manager] 관리자가 이 통합을 만들 수 있습니다.
 
 Experience Manager에 `expired` 사이트 작성자가 사이트 페이지에서 에셋을 사용하지 못하도록 원격 에셋 콘텐츠 파인더의 에셋에 대한 상태 시각적 표시기. 에셋에 을 사용하는 경우 `expired` 상태 사이트 페이지의 경우 에셋이 Experience Manager 게시 인스턴스에 표시되지 않습니다.
 
-## FAQ {#frequently-asked-questions}
+## 자주 묻는 질문 {#frequently-asked-questions}
 
 +++**에서 사용할 수 있는 자산을 사용해야 하는 경우 연결된 자산을 구성해야 합니까? [!DNL Sites] 배포?**
 
@@ -344,7 +344,7 @@ Experience Manager에 `expired` 사이트 작성자가 사이트 페이지에서
 *  `Image` 구성 요소를 통해 지원되는 편집과 원본에 영향을 주지 않는 간단한 편집은 가져온 자산에서 수행할 수 있습니다. 자산은 읽기 전용입니다.
 * 자산을 다시 가져오는 유일한 방법은 페이지에서 자산을 드래그하는 것입니다. API 지원 또는 업데이트할 에셋을 다시 가져오는 다른 방법은 없습니다.
 * 자산이 DAM에서 서비스 해제된 경우에도 계속 사용할 수 있습니다 [!DNL Sites] 페이지.
-* 자산의 원격 참조 항목을 비동기식으로 가져옵니다. 참조와 총 횟수는 실시간으로 계산되지 않으며 [!DNL Sites] 작성자는 DAM 사용자가 참조를 보는 동안 에셋을 사용합니다. DAM 사용자는 페이지를 새로 고치고 몇 분 후에 다시 시도하여 총 수를 가져올 수 있습니다.
+* 자산의 원격 참조 항목을 비동기식으로 가져옵니다. 참조와 총 횟수는 실시간으로 계산되지 않으며 [!DNL Sites] 작성자는 DAM 사용자가 참조를 보는 동안 에셋을 사용합니다. DAM 사용자는 페이지를 새로 고치고 몇 분 후에 다시 시도하여 총 개수를 가져올 수 있습니다.
 
 ## 문제 해결 {#troubleshoot}
 
@@ -356,11 +356,11 @@ Experience Manager에 `expired` 사이트 작성자가 사이트 페이지에서
 
 * 로컬에서 원격 DAM 배포에 액세스할 수 없는 경우 [!DNL Sites] 배포, 사이트 간 쿠키가 허용되는지 확인 및 [동일 사이트 쿠키 지원](/help/security/same-site-cookie-support.md) 이(가) 구성되었습니다. 사이트 간 쿠키가 다음의 배포를 차단하는 경우 [!DNL Experience Manager] 인증할 수 없습니다. 예를 들어, [!DNL Google Chrome] 시크릿 모드에서 서드파티 쿠키를 차단할 수 있습니다. 에서 쿠키를 허용하려면 [!DNL Chrome] 브라우저에서 주소 표시줄의 &#39;눈&#39; 아이콘을 클릭하고 다음 위치로 이동합니다. **사이트가 작동하지 않음** > **차단됨**&#x200B;를 클릭하고 원격 DAM URL을 선택한 다음 로그인 토큰 쿠키를 허용합니다. 또는 을 참조하십시오. [서드파티 쿠키를 활성화하는 방법](https://support.google.com/chrome/answer/95647).
 
-   ![시크릿 모드의 Chrome 브라우저에서 쿠키 오류 발생](assets/chrome-cookies-incognito-dialog.png)
+  ![시크릿 모드의 Chrome 브라우저에서 쿠키 오류 발생](assets/chrome-cookies-incognito-dialog.png)
 
 * 원격 참조가 검색되지 않고 오류 메시지가 표시되는 경우 다음을 확인하십시오. [!DNL Sites] 배포를 사용할 수 있으며, 네트워크 연결 문제가 있는지 확인합니다. 확인하려면 나중에 다시 시도하십시오. [!DNL Assets] 배포는 와 연결을 설정하려고 두 번 시도합니다. [!DNL Sites] 배포 후 오류를 보고합니다.
 
-   ![자산 원격 참조를 검색하지 못했습니다.](assets/reference-report-failure.png)
+  ![자산 원격 참조를 검색하지 못했습니다.](assets/reference-report-failure.png)
 
 **추가 참조**
 

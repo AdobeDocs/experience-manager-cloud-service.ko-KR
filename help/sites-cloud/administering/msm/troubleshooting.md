@@ -4,10 +4,10 @@ description: 가장 일반적인 MSM 관련 문제를 해결하는 방법을 찾
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: 7c0be1a7bdc9ccb788ba41eb6ee83b89df94f500
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 100%
+source-wordcount: '762'
+ht-degree: 88%
 
 ---
 
@@ -27,12 +27,12 @@ MSM은 리소스 URL의 선택기를 통해 요청할 수 있는 여러 서블�
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * 블루프린트 페이지에서 이를 사용하여 연결된 모든 Live Copy 목록을 추가 Live Copy 상태 정보와 함께 가져올 수 있습니다.
    * 예:
-      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
+     `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
 
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * Live Copy 페이지에서 이를 사용하여 블루프린트 페이지와의 연결에 대한 고급 정보를 가져올 수 있습니다. 페이지가 Live Copy가 아닌 경우 아무것도 반환되지 않습니다.
    * 예:
-      `http://localhost:4502/content/wknd/ca/en.msm.json`
+     `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 이들 서블릿은 `com.day.cq.wcm.msm` 로거를 통해 유용하게 사용할 수 있는 디버그 로그 메시지를 생성합니다.
 
@@ -55,7 +55,7 @@ MSM은 리소스 URL의 선택기를 통해 요청할 수 있는 여러 서블�
 
 이러한 속성에 있는 정보는 UI에 반영되어야 하지만 문제 해결 시 MSM 작업이 발생할 때 저장소에서 직접 MSM 동작을 관찰하는 것이 도움이 될 수 있습니다.
 
-이러한 속성에 대해 알고 있는 것은 저장소를 쿼리하고 특정 상태에 있는 페이지 세트를 찾는 데에도 유용할 수 있습니다. 예:
+이러한 속성을 알고 있는 것도 저장소를 쿼리하고 특정 상태에 있는 페이지 집합을 찾는 데 유용할 수 있습니다. 예:
 
 * `select * from cq:LiveSync`는 모든 Live Copy 루트 페이지를 반환합니다.
 
@@ -82,9 +82,9 @@ AEM 주체(사용자 또는 그룹)에 대해 삭제하거나 제거할 수 있�
 
 블루프린트 페이지가 롤아웃되면 해당 Live Copy 페이지가 업데이트되거나 아직 존재하지 않는 경우(예: 처음 롤아웃되었거나 Live Copy 페이지가 수동으로 삭제된 경우) 새 Live Copy 페이지가 생성됩니다.
 
-단, 후자의 경우 같은 이름의 `cq:LiveRelationship` 속성이 없는 페이지가 존재하면 Live Copy 페이지가 생성되기 전에 이 페이지의 이름이 그에 따라 변경됩니다.
+그러나 이 후자의 경우 페이지에 `cq:LiveRelationship` 속성이 동일한 이름으로 존재하므로 라이브 카피 페이지가 생성되기 전에 이 페이지의 이름이 그에 따라 변경됩니다.
 
-기본적으로 롤아웃되면 블루프린트 업데이트에 연결된 Live Copy 페이지가 롤아웃되거나, 페이지가 없거나, Live Copy 페이지가 생성됩니다.
+기본적으로 롤아웃에는 블루프린트 업데이트에 연결된 라이브 카피 페이지가 롤아웃되거나, 페이지가 없거나, 라이브 카피 페이지가 생성됩니다.
 
 “독립형” 페이지가 있는 경우 MSM은 이 페이지의 이름을 변경한 다음 별도의 연결된 Live Copy 페이지를 생성합니다.
 

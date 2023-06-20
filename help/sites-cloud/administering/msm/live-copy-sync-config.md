@@ -4,10 +4,10 @@ description: 사용할 수 있는 강력한 라이브 카피 동기화 옵션 �
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2337'
-ht-degree: 90%
+source-wordcount: '2335'
+ht-degree: 89%
 
 ---
 
@@ -69,7 +69,7 @@ If the installed rollout configuration actions do not meet your requirements, yo
 | `contentDelete` | 이 작업은 소스에 존재하지 않는 라이브 카피의 노드를 삭제합니다. [**CQ MSM 콘텐츠 삭제 작업** 서비스](#excluding-properties-and-node-types-from-synchronization)를 구성하여 제외할 노드 유형, 단락 항목 및 페이지 속성을 지정합니다. |  |
 | `contentUpdate` | 이 작업은 라이브 카피 콘텐츠를 소스의 변경 내용으로 업데이트합니다. [**CQ MSM 콘텐츠 업데이트 작업** 서비스](#excluding-properties-and-node-types-from-synchronization)를 구성하여 제외할 노드 유형, 단락 항목 및 페이지 속성을 지정합니다. |  |
 | `editProperties` | 이 작업은 라이브 카피의 속성을 편집합니다. `editMap` 속성은 편집할 속성 및 해당 값을 결정합니다. `editMap` 속성 값은 다음 형식을 사용해야 합니다. <br>`[property_name_n]#[current_value]#[new_value]`<br>`current_value` 및 `new_value`(정규 표현식) `n`(증분 정수)<br>예를 들어 `editMap`에 대한 다음 값을 고려해 보겠습니다.<br>`sling:resourceType#/(contentpage`‖`homepage)#/mobilecontentpage,cq:template#/contentpage#/mobilecontentpage`<br>이 값은 라이브 카피 노드의 속성을 다음과 같이 편집합니다.<br>`contentpage` 또는 `homepage`로 설정되어 있는 `sling:resourceType` 속성은 `mobilecontentpage`로 설정됩니다.<br>`contentpage`로 설정되어 있는 `cq:template` 속성은 `mobilecontentpage`로 설정됩니다. | `editMap: (String)`은 속성, 현재 값 및 새 값을 식별합니다. 자세한 내용은 설명서를 참조하십시오. |
-| `notify` | 이 작업은 페이지가 롤아웃되었다는 페이지 이벤트를 전송합니다. 알림을 받으려면 먼저 롤아웃 이벤트를 구독해야 합니다. |  |
+| `notify` | 이 작업은 페이지가 롤아웃되었다는 페이지 이벤트를 전송합니다. 알림을 받으려면 먼저 롤아웃 이벤트에 가입해야 합니다. |  |
 | `orderChildren` | 이 작업은 블루프린트의 순서를 기반으로 하위 노드의 순서를 지정합니다. |  |
 | `referencesUpdate` | 이 동기화 작업은 라이브 카피의 참조를 업데이트합니다.<br>라이브 카피에서 블루프린트 내 리소스를 나타내는 경로를 검색합니다. 경로를 찾으면 라이브 카피 내에서 관련 리소스를 나타내는 경로를 업데이트합니다. 대상이 블루프린트 외부에 있는 참조는 변경되지 않습니다. <br>[**CQ MSM 참조 업데이트 작업** 서비스](#excluding-properties-and-node-types-from-synchronization)를 구성하여 제외할 노드 유형, 단락 항목 및 페이지 속성을 지정합니다. |  |
 | `targetVersion` | 이 작업은 라이브 카피의 버전을 생성합니다.<br>이 작업은 롤아웃 구성에 포함된 유일한 동기화 작업이어야 합니다. |  |

@@ -2,16 +2,16 @@
 title: 구성 요소 참조 안내서
 description: 구성 요소 및 해당 구조에 대한 세부 사항에 대한 개발자 참조 안내서
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 36d42ec1a273e4b910340ca0cd15ac6ffc57454e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3659'
+source-wordcount: '3649'
 ht-degree: 2%
 
 ---
 
 # 구성 요소 참조 안내서 {#components-reference-guide}
 
-구성 요소는 AEM에서 경험을 구축하는 핵심입니다. 다음 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 준비된 강력한 구성 요소 도구 세트를 간단하게 시작할 수 있습니다. 다음 [WKND 자습서](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 개발자는 이러한 도구를 사용하는 방법과 새 AEM 사이트를 만들기 위해 사용자 지정 구성 요소를 만드는 방법을 안내합니다.
+구성 요소는 AEM에서 경험을 구축하는 핵심입니다. 다음 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 준비된 강력한 구성 요소 도구 세트를 간단하게 시작할 수 있습니다. 다음 [WKND 자습서](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 개발자는 이러한 도구를 사용하는 방법과 사용자 지정 구성 요소를 빌드하여 AEM 사이트를 만드는 방법을 안내합니다.
 
 >[!TIP]
 >
@@ -55,7 +55,7 @@ Sling 리소스 병합을 사용하고 속성을 정의하는 구성 요소 대�
 
 ### 컨텐츠 논리 및 렌더링 마크업  {#content-logic-and-rendering-markup}
 
-구성 요소는 다음으로 렌더링됩니다. [HTML.](https://www.w3schools.com/htmL/html_intro.asp) 구성 요소는 작성자와 게시 환경 모두에서 필요한 콘텐츠를 가져온 다음 필요에 따라 렌더링하는 데 필요한 HTML을 정의해야 합니다.
+구성 요소가 [HTML](https://www.w3schools.com/htmL/html_intro.asp). 구성 요소는 작성자와 게시 환경 모두에서 필요한 콘텐츠를 가져온 다음 필요에 따라 렌더링하는 데 필요한 HTML을 정의해야 합니다.
 
 마크업 및 렌더링을 담당하는 코드는 구성 요소의 콘텐츠를 선택하는 데 사용되는 논리를 제어하는 코드와 별도로 유지하는 것이 좋습니다.
 
@@ -108,7 +108,7 @@ AEM 구성 요소의 구조는 강력하고 유연합니다. 주요 부분은 �
    * 섹션 보기 [구성 요소 아이콘](#component-icon) (세부 사항)
 * **중요한 하위 노드**:
    * `cq:editConfig (cq:EditConfig)` - 구성 요소의 편집 속성을 정의하고 구성 요소를 구성 요소 브라우저에 표시할 수 있습니다.
-      * 구성 요소에 대화 상자가 있으면 cq:editConfig가 없어도 구성 요소 브라우저 또는 사이드 킥에 자동으로 표시됩니다.
+      * 구성 요소에 대화 상자가 있으면 cq:editConfig가 없어도 구성 요소 브라우저 또는 Sidekick에 자동으로 표시됩니다.
    * `cq:childEditConfig (cq:EditConfig)` - 자체 구성 요소를 정의하지 않는 하위 구성 요소에 대한 작성자 UI 측면을 제어합니다. `cq:editConfig`.
    * `cq:dialog (nt:unstructured)` - 이 구성 요소에 대한 대화 상자 사용자가 구성 요소를 구성 및/또는 콘텐츠를 편집할 수 있는 인터페이스를 정의합니다.
    * `cq:design_dialog (nt:unstructured)` - 이 구성 요소의 디자인 편집
@@ -272,7 +272,7 @@ Content not found
 
 ## 구성 요소 사용 {#using-components}
 
-구성 요소를 만든 후 사용하려면 활성화해야 합니다. 이를 사용하여 구성 요소 구조가 저장소의 결과 콘텐츠 구조와 어떻게 연관되어 있는지 보여 줍니다.
+구성 요소를 만든 후 사용할 수 있도록 활성화해야 합니다. 이를 사용하여 구성 요소 구조가 저장소의 결과 콘텐츠 구조와 어떻게 연관되어 있는지 보여 줍니다.
 
 ### 템플릿에 구성 요소 추가 {#adding-your-component-to-the-template}
 
@@ -415,7 +415,6 @@ Adobe 반복을 방지하기 위해 구성 요소 구현자는 이러한 자리 
 >
 >* `aftermove`
 >* `aftercopy`
-
 
 이벤트 처리기는 사용자 지정 구현으로 구현할 수 있습니다. 예(여기서 `project.customerAction` 은 정적 메서드입니다).
 

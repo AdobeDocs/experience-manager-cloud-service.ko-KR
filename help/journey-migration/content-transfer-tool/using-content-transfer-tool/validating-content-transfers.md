@@ -2,9 +2,9 @@
 title: 콘텐츠 전송 확인
 description: 컨텐츠 전송 도구를 사용하여 컨텐츠 전송의 유효성을 검사합니다
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: c1f60a1ead466b47694b8918e5b39011041c5f25
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1062'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 2%
 
 소스 AEM 환경에서 마이그레이션 유효성 검사를 활성화한 상태에서 추출을 시작합니다.
 
-If **추출 중 스테이징 컨테이너 덮어쓰기** 이(가) 활성화되면 추출과 관련된 모든 노드가 추출 경로 다이제스트에 기록됩니다. 이 설정을 사용할 때는 를 활성화해야 합니다. **수집하기 전에 클라우드 인스턴스의 기존 콘텐츠 지우기** 수집 중에 를 설정합니다. 그렇지 않으면 수집 다이제스트에서 누락된 노드가 있을 수 있습니다. 이는 이전 수집에서 대상에 이미 존재하는 노드입니다.
+If **추출 중 스테이징 컨테이너 덮어쓰기** 가 활성화되면 추출과 관련된 모든 노드가 추출 경로 다이제스트에 기록됩니다. 이 설정을 사용할 때는 를 활성화해야 합니다. **수집하기 전에 클라우드 인스턴스의 기존 콘텐츠 지우기** 수집 중에 를 설정합니다. 그렇지 않으면 수집 다이제스트에서 누락된 노드가 있을 수 있습니다. 이는 이전 수집에서 대상에 이미 존재하는 노드입니다.
 
 이에 대한 그래픽 예시는 아래 예를 참조하십시오.
 
@@ -44,31 +44,31 @@ If **추출 중 스테이징 컨테이너 덮어쓰기** 이(가) 활성화되�
 
 * **추출(덮어쓰기)**
 
-   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+  ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
 
 * **수집(지우기)**
 
-   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
+  ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
 
 * **메모**
 
-   이러한 &quot;덮어쓰기&quot;와 &quot;지우기&quot;의 조합은 반복되는 수집에도 일관된 유효성 검사 결과를 가져옵니다.
+  이러한 &quot;덮어쓰기&quot;와 &quot;지우기&quot;의 조합은 반복되는 수집에도 일관된 유효성 검사 결과를 가져옵니다.
 
 ### 예 2 {#example-2}
 
 * **추출**
 
-   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+  ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
 
 * **수집**
 
-   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
+  ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
 
 * **메모**
 
-   이렇게 &quot;덮어쓰기&quot;와 &quot;지우기&quot;를 조합하면 초기 수집에 대해 일관성 있는 유효성 검사 결과가 생성됩니다.
+  이렇게 &quot;덮어쓰기&quot;와 &quot;지우기&quot;를 조합하면 초기 수집에 대해 일관성 있는 유효성 검사 결과가 생성됩니다.
 
-   수집이 반복되면 수집 다이제스트가 비어 있고 유효성 검사가 실패한 것으로 표시됩니다. 이 추출의 모든 노드가 대상에 이미 존재하므로 수집 다이제스트가 비어 있습니다.
+  수집이 반복되면 수집 다이제스트가 비어 있고 유효성 검사가 실패한 것으로 표시됩니다. 이 추출의 모든 노드가 대상에 이미 존재하므로 수집 다이제스트가 비어 있습니다.
 
 추출이 완료되면 수집을 시작합니다.
 

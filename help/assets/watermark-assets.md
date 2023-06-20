@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '296'
+ht-degree: 15%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 0%
    >다음을 사용하여 시스템 워터마킹 프로필을 구성한 경우 `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` Adobe 구성 파일(OSGi 구성)은 계속 사용할 수 있지만 새 메서드를 사용하는 것이 좋습니다.
 
 
-1. [처리 프로필 만들기](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) 자산 마이크로서비스 를 활용하여 워터마크를 적용합니다.
+1. [처리 프로필 만들기](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) 자산 마이크로서비스 를 사용하여 워터마크를 적용합니다.
 
    ![워터마크를 만드는 자산 처리 프로필](assets/watermark-processing-profile.png)
 
@@ -75,4 +75,3 @@ ht-degree: 0%
 >
 >* [에셋 마이크로서비스 개요](/help/assets/asset-microservices-overview.md).
 >* [처리 프로필에서 자산 마이크로서비스 사용](/help/assets/asset-microservices-configure-and-use.md).
-

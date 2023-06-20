@@ -2,9 +2,9 @@
 title: 론치 홍보
 description: 게시 전에 콘텐츠를 소스(프로덕션)로 다시 이동하려면 론치 페이지를 홍보해야 합니다.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '816'
 ht-degree: 55%
 
 ---
@@ -40,7 +40,6 @@ ht-degree: 55%
 >* [론치 - 이벤트 순서](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) 자동 홍보 및 게시에 대한 자세한 내용은 을 참조하십시오.
 >
 
-
 다음 중 하나에서 론치를 승격할 수 있습니다. **사이트** 콘솔 또는 **론치** 콘솔:
 
 1. 열기:
@@ -65,13 +64,13 @@ ht-degree: 55%
       * **현재 페이지 홍보**
       * **현재 페이지 및 하위 페이지 홍보**
 
-      예를 들어 수정된 페이지만 홍보하도록 선택하는 경우:
+     예를 들어 수정된 페이지만 홍보하도록 선택하는 경우:
 
-      ![론치 홍보](/help/sites-cloud/authoring/assets/launches-promote.png)
+     ![론치 홍보](/help/sites-cloud/authoring/assets/launches-promote.png)
 
-      >[!NOTE]
-      >
-      >중첩 론치가 있는 경우 단일 론치를 포함합니다. [중첩 론치 홍보](#promoting-a-nested-launch).
+     >[!NOTE]
+     >
+     >중첩 론치가 있는 경우 단일 론치를 포함합니다. [중첩 론치 홍보](#promoting-a-nested-launch).
 1. 선택 **다음** 계속합니다.
 1. 홍보할 페이지를 검토할 수 있습니다. 이는 선택한 페이지 범위에 따라 달라집니다.
 
@@ -119,7 +118,7 @@ ht-degree: 55%
    >
    >나열된 페이지는 다음에 따라 다릅니다. **범위** 가 정의되었으며 실제로 편집된 페이지일 수 있습니다.
 
-1. 변경 사항이 프로모션되고 다음에 반영됩니다. **론치** 콘솔:
+1. 변경 사항이 프로모션되고 반영됩니다. **론치** 콘솔:
 
    ![론치 콘솔에서](/help/sites-cloud/authoring/assets/launches-console.png)
 

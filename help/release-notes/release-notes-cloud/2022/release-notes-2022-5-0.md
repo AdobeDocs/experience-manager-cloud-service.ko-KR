@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.5.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.5.0 릴리스 정보입니다.'
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 98%
+source-wordcount: '795'
+ht-degree: 87%
 
 ---
 
@@ -60,7 +60,7 @@ Experience Manager Assets는 Adobe Sensei AI 기능을 사용하여 이제 [이�
 
 * **적응형 양식 만들기 마법사**: 비즈니스 사용자에게 친숙한 마법사를 사용하여 적응형 양식을 신속하게 작성할 수 있습니다. 마법사는 미리 구성된 템플릿, 스타일, 필드 및 제출 옵션을 손쉽게 선택하여 적응형 양식을 만들 수 있는 빠른 탭 탐색 기능을 제공합니다.
 
-   ![적응형 양식 만들기 마법사](/help/release-notes/assets/wizard.png)
+  ![적응형 양식 만들기 마법사](/help/release-notes/assets/wizard.png)
 
 ## CIF 추가 기능 {#cloud-services-cif}
 
@@ -68,30 +68,30 @@ Experience Manager Assets는 Adobe Sensei AI 기능을 사용하여 이제 [이�
 
 * 제품 관리실에 대한 빠른 액세스: 사이트 편집기에서 한 번의 클릭으로 전체 세부 제품 정보에 쉽게 액세스할 수 있습니다.
 
-   ![위시리스트 사용](/help/assets/CIF/enable-wishlist.png)
+  ![위시리스트 사용](/help/assets/CIF/enable-wishlist.png)
 
 * 추가 마케팅 상거래 구성 요소에 대한 지원: 장바구니에 추가 및 위시리스트 콜 투 액션을 표시하도록 구성 요소를 구성할 수 있습니다.
 
-   ![제품 관리실에 대한 사이트 편집기 단축키](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
+  ![제품 관리실에 대한 사이트 편집기 단축키](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### 새로운 기능 {#what-is-new-foundation}
 
-* 이전에 더 이상 사용되지 않는 것으로 발표되었던 복제 에이전트 관리 화면의 **배포 탭** 아래에 있는 “트리 추가” 옵션은 2022년 6월 20일 또는 그 이후에 곧 제거될 예정입니다. 콘텐츠 트리 계층이 있는 패키지는 대신 [게시 관리](/help/operations/replication.md#manage-publication) 또는 [콘텐츠 트리 게시 워크플로](/help/operations/replication.md#publish-content-tree-workflow)를 사용하여 복제해야 합니다.
+* 복제 에이전트 관리 화면의 &quot;트리 추가&quot; 옵션 **배포 탭**&#x200B;이전에 더 이상 사용되지 않는 것으로 발표되었던 는 2022년 6월 20일 또는 그 이후에 곧 제거되었습니다. 콘텐츠 트리 계층이 있는 패키지는 대신 [게시 관리](/help/operations/replication.md#manage-publication) 또는 [콘텐츠 트리 게시 워크플로](/help/operations/replication.md#publish-content-tree-workflow)를 사용하여 복제해야 합니다.
 
-* 10MB 이상의 콘텐츠 패키지(속성이 있는 노드, 바이너리를 포함하지 않음)를 배포하기 위해 복제 에이전트 관리 화면 또는 복제 API를 사용하는 방법은 더 이상 사용되지 않으며 2022년 9월 12일 또는 그 이후에 곧 적용될 예정입니다. 대신 이러한 대용량 콘텐츠 패키지를 복제하려면 [게시 관리](/help/operations/replication.md#manage-publication) 또는 [콘텐츠 트리 게시 워크플로](/help/operations/replication.md#publish-content-tree-workflow)를 사용해야 합니다. 7월에는 이러한 대용량 콘텐츠 패키지를 복제하려는 경우 복제 에이전트 관리 화면의 **복제 탭**&#x200B;에 경고 메시지가 표시되며, 이는 복제 API를 사용하여 이러한 대형 콘텐츠 패키지를 복제할 때마다 AEM 오류 로그에도 표시됩니다. 9월에는 경고가 오류로 대체됩니다. 그에 따라 프로세스를 조정하시기 바랍니다.
+* 10MB 이상의 콘텐츠 패키지(속성이 있는 노드, 바이너리를 포함하지 않음)를 배포하기 위해 복제 에이전트 관리 화면 또는 복제 API를 사용하는 방법은 더 이상 사용되지 않으며 2022년 9월 12일 또는 그 이후에 곧 시행됩니다. 대신 이러한 대용량 콘텐츠 패키지를 복제하려면 [게시 관리](/help/operations/replication.md#manage-publication) 또는 [콘텐츠 트리 게시 워크플로](/help/operations/replication.md#publish-content-tree-workflow)를 사용해야 합니다. 7월에는 이러한 대용량 콘텐츠 패키지를 복제하려는 경우 복제 에이전트 관리 화면의 **복제 탭**&#x200B;에 경고 메시지가 표시되며, 이는 복제 API를 사용하여 이러한 대형 콘텐츠 패키지를 복제할 때마다 AEM 오류 로그에도 표시됩니다. 9월에 경고가 오류로 대체되었습니다. 그에 따라 프로세스를 조정합니다.
 
 ### [!DNL Experience Manager] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-foundation}
 
-* 이제 AEM as a Cloud Service가 통합 쉘과 통합되어 사용자 경험을 개선하고 다른 모든 Experience Cloud 애플리케이션과 통합합니다. 자세한 내용은 [통합 쉘의 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)를 참조하십시오.
+* 이제 AEM as a Cloud Service가 통합 쉘과 통합되어 사용자 경험을 개선하고 다른 모든 Experience Cloud 애플리케이션과 통합합니다. 다음을 참조하십시오 [통합 쉘의 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 을 참조하십시오.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation 보안 {#foundation-security}
 
 ### TLS 1.0, 1.1 사용 중단
 
-2022년 6월 30일부터 Experience Manager as a Cloud Service는 보다 안전한 네트워크 통신 및 사용자 시스템과의 데이터 교환을 필요로 합니다. AEM은 TLS(전송 계층 보안), 1.2 프로토콜만 사용합니다. 이전 TLS 버전 1.0 및 1.1은 더 이상 사용되지 않습니다.
+2022년 6월 30일부터 Experience Manager as a Cloud Service는 보다 안전한 네트워크 통신 및 사용자 시스템과의 데이터 교환을 필요로 합니다. AEM은 TLS(전송 계층 보안), 1.2 프로토콜만 사용합니다. 이전 TLS 버전 1.0 및 1.1은 이제 더 이상 사용되지 않습니다.
 
 이전 버전의 TLS를 1.0, 1.1로 계속 사용하는 경우 Experience Manager as a Cloud Service에 대한 액세스 권한을 잃을 수 있습니다.
 

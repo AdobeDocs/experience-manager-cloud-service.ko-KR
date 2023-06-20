@@ -2,9 +2,9 @@
 title: 제품 경험 빌드
 description: 제품 경험을 구축하는 방법을 알아봅니다.
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1154'
 ht-degree: 4%
 
 ---
@@ -27,7 +27,7 @@ AEM Content and Commerce 여정의 이전 문서에서는 [단계적 제품 카�
 
 AEM에서 다양한 유형의 콘텐츠를 만들고 제품 카탈로그에 연결할 수 있습니다. 연관된 콘텐츠를 쉽게 검색하고 사용할 수 있으므로 생산성이 높습니다.
 
-### Assets {#assets}
+### 자산 {#assets}
 
 높은 수준에서 제품과 관련된 자산에는 두 가지 유형이 있습니다. 제품 자산은 일반적으로 판매자가 관리하며 제품 표시(대부분 중립적인 배경 앞)에 중점을 둡니다. 자산은 상거래 솔루션 또는 AEM Assets(commerce / pim 솔루션에 대한 자산 통합 포함)에서 관리됩니다.
 

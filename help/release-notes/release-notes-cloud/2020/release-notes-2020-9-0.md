@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2020.9.0 릴리스 정보입니다.'
 description: "[!DNL Adobe Experience Manager] 2020.9.0용 as a Cloud Service 릴리스 노트"
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 20%
+source-wordcount: '723'
+ht-degree: 18%
 
 ---
 
@@ -74,7 +74,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 * 콘텐츠 감사가 경험 감사로 이름이 변경되었습니다.
 * 빌드 프로세스가 세 개의 별도 Maven 명령으로 분리되었습니다.
-* Git 저장소 복제에 실패한 경우 최대 3번까지 재시도합니다.
+* Git 저장소 복제에 실패한 경우 최대 3번까지 다시 시도합니다.
 
 ### 버그 수정 {#bug-fixes-cm}
 
@@ -118,8 +118,8 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 * AIO-CLI 플러그인은 Repository Modernizer를 지원하며 사용자는 플러그인을 사용하여 도구를 실행할 수 있습니다.
 
-   을(를) 참조하십시오 [Git 리소스: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 을 참조하십시오.
+  을(를) 참조하십시오 [Git 리소스: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 을 참조하십시오.
 
 * Repository Modernizer 유틸리티를 사용하여 기존 프로젝트 패키지를 AEMas a Cloud Service 용으로 정의된 프로젝트 구조와 호환되는 패키지로 재구성할 수 있습니다.
 
-   을(를) 참조하십시오 [Git 리소스: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 을 참조하십시오.
+  을(를) 참조하십시오 [Git 리소스: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 을 참조하십시오.

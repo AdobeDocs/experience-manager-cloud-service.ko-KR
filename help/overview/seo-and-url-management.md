@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service를 위한 SEO 및 URL 관리 모범 사례
 description: Adobe Experience Manager as a Cloud Service를 위한 SEO 및 URL 관리 모범 사례
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3714'
-ht-degree: 100%
+source-wordcount: '3709'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ URL에 허용되는 몇 가지 모범 사례들이 있습니다.
 
 AEM 프로젝트에서 URL을 평가할 때에는 다음 사항을 자문해 보십시오.
 
-*“사용자가 이 URL은 보고 페이지에 있는 콘텐츠는 보지 못하는 경우 이 페이지의 내용을 설명할 수 있습니까?”*
+*&quot;사용자가 이 URL은 보고 페이지에 있는 콘텐츠는 보지 못하는 경우 이 페이지의 내용을 설명할 수 있습니까?&quot;*
 
 답변이 예라면 검색 엔진에서 URL이 제대로 작동할 가능성이 높습니다.
 
@@ -46,8 +46,7 @@ AEM 프로젝트에서 URL을 평가할 때에는 다음 사항을 자문해 보
    * 페이지에서 선택기를 사용하는 경우 의미론적 가치를 제공하는 선택기가 선호됩니다.
    * 사람이 읽을 수 없는 URL은 검색 엔진도 읽을 수 없습니다.
    * 예:
-      `mybrand.com/products/product-detail.product-category.product-name.html`이 권장됩니다. 
-`mybrand.com/products/product-detail.1234.html`
+     `mybrand.com/products/product-detail.product-category.product-name.html`이 `mybrand.com/products/product-detail.1234.html`보다 선호됩니다.
 
 * 검색 엔진이 사이트의 SEO 값을 조각화하여 하위 도메인을 다른 엔티티로 취급하므로 가능하면 하위 도메인을 사용하면 안 됩니다.
 
@@ -77,9 +76,9 @@ AEM 프로젝트에서 URL을 평가할 때에는 다음 사항을 자문해 보
 
 * 각 페이지가 하나의 프로토콜에서만 제공되어야 합니다.
 
-   * 경우에 따라 사이트는 사용자가 체크아웃이나 로그인 양식 등이 있는 페이지에 도달하기 전까지 `http`를 통해 제공되고, 이러한 페이지에 도달하면 `https`로 전환됩니다. 이 페이지에서 연결할 때 사용자가 `http` 페이지로 돌아가서 `https`를 통해 액세스하는 경우 검색 엔진은 해당 페이지를 두 개의 개별 페이지로 추적합니다.
+   * 때때로 사이트가 제공됩니다. `http` 사용자가 체크아웃 또는 로그인 양식 등이 있는 페이지에 도달하기 전까지 해당 페이지는 다음으로 전환됩니다. `https`. 이 페이지에서 연결할 때 사용자가 `http` 페이지로 돌아가서 `https`를 통해 액세스하는 경우 검색 엔진은 해당 페이지를 두 개의 개별 페이지로 추적합니다.
 
-   * 현재 Google에서는 `http` 페이지보다 `https` 페이지를 선호합니다. 따라서 전체 사이트를 `https`로 제공하는 것이 모든 사용자의 생활을 편리하게 만드는 경우가 많습니다.
+   * 현재 Google에서는 `http` 페이지보다 `https` 페이지를 선호합니다. 이러한 이유로 전체 사이트를 제공하는 것이 대개 더 편리합니다 `https`.
 
 ### 서버 구성 {#server-configuration}
 
@@ -150,7 +149,7 @@ String myParam = req.getParameter("myParam");
 이 유형의 서블릿에 대한 SCR 주석은 다음과 같은 모습입니다.
 
 ```
-@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json”, methods=”GET”)
+@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json", methods="GET")
 ```
 
 이 경우 URL이 주소를 지정하는 리소스(`myPageType` 리소스의 인스턴스)는 서블릿에서 자동으로 액세스할 수 있습니다. 액세스하려면 다음 내용을 호출하십시오.
@@ -185,20 +184,20 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
 번역 콘텐츠 사용자에게 현지화된 페이지 이름을 표시할 수 있습니다. 예:
 
 * 스페인어 사용자를 다음 페이지로 이동하게 하는 것보다는
-   `www.mydomain.com/es/home.html`
+  `www.mydomain.com/es/home.html`
 
 * 다음과 같은 URL을 사용하는 것이 좋습니다.
-   `www.mydomain.com/es/casa.html`.
+  `www.mydomain.com/es/casa.html`.
 
-페이지 이름을 현지화하는 데 있어 어려움은 AEM 플랫폼에서 사용할 수 있는 많은 현지화 도구가 지속적인 콘텐츠 동기화를 위해 로케일 간 페이지 이름을 일치시켜야 한다는 것입니다.
+페이지 이름을 현지화하는 데 있어 어려움은 AEM 플랫폼에서 사용할 수 있는 많은 현지화 도구가 지속적인 컨텐츠 동기화를 위해 로케일 간 페이지 이름을 일치시켜야 한다는 것입니다.
 
 `sling:alias` 속성을 사용하면 문제를 해결할 수 있습니다. `sling:alias`를 리소스에 속성으로 추가하여 리소스에 별칭을 허용할 수 있습니다. 앞의 예에서
 
 * JCR의 페이지를 만든 위치:
-   `…/es/home`
+  `…/es/home`
 
 * 페이지를 만든 후 속성을 추가함:
-   `sling:alias` = `casa`
+  `sling:alias` = `casa`
 
 이렇게 하면 다중 사이트 관리 프로그램과 같은 AEM 번역 도구는 다음 두 항목 간에 관계를 계속 유지할 수 있습니다.
 
@@ -217,12 +216,11 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
 표준 AEM 설치에서
 
 * OSGi 구성
-   **Apache Sling Resource Resolver Factory**
-( 
-`org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
+  **Apache Sling Resource Resolver Factory**
+(`org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)의 경우
 
 * 속성
-   **매핑 위치**(`resource.resolver.map.location`)의
+  **매핑 위치**(`resource.resolver.map.location`)의
 
 * 기본값은 `/etc/map`입니다.
 
@@ -251,8 +249,8 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
    웹 콘솔(예: localhost:4502/system/console/configMgr)을 사용하여 Sling Resource Resolver를 구성할 수 있습니다.
 
    * **Apache Sling Resource Resolver Factory**
+     `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
-      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
    URL을 정규식으로 단축하는 데 필요한 매핑을 빌드한 후 빌드에 포함된 OsgiConfignode인 `config.publish`에서 이러한 구성을 정의하는 것이 좋습니다.
 
    매핑을 `/etc/map`에서 정의하지 않고 속성 **URL 매핑**(`resource.resolver.mapping`)에 바로 지정할 수 있습니다.
@@ -314,7 +312,7 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
 두 페이지 모두 페이지 헤드에 다음 태그를 적용합니다.
 
 ```xml
-<link rel=”canonical” href=”my-brand/my-page.html”/>
+<link rel="canonical" href="my-brand/my-page.html"/>
 ```
 
 `href`는 상대적이거나 절대적일 수 있습니다. 페이지 마크업에 코드가 포함되어야 페이지의 정식 URL을 확인하고 이 태그를 출력할 수 있습니다.
@@ -372,7 +370,7 @@ Apache Sling 사이트맵 모듈은 최상위 수준의 사이트맵과 중첩�
 
 기본 구성에서 [페이지 속성] 대화 상자는 페이지를 사이트맵 루트로 표시하여 위에서 설명한 대로 사이트맵과 그 하위 항목을 생성하는 옵션을 표시합니다. 해당 비헤이비어는 `SitemapGenerator` 인터페이스의 구현을 통해 구현되며, 대체 구현 추가를 통해 확장될 수 있습니다. 단, XML 사이트맵 재생성 빈도가 콘텐츠 작성 워크플로 및 워크로드에 따라 크게 변동되기 때문에 제품에는 `SitemapScheduler` 구성이 제공되지 않습니다. 이를 통해 기능을 효과적으로 옵트인할 수 있습니다.
 
-XML 사이트맵을 생성하는 백그라운드 작업을 활성화하려면 `SitemapScheduler`를 구성해야 합니다. 이렇게 하려면 PID `org.apache.sling.sitemap.impl.SitemapScheduler`에 대해 OSGi 구성을 생성합니다. 스케줄러 표현식 `0 0 0 * * ?`을(를) 시작점으로 사용하여 매일 자정에 모든 XML 사이트맵을 다시 생성할 수 있습니다.
+XML 사이트맵을 생성하는 백그라운드 작업을 활성화하려면 `SitemapScheduler` 을(를) 구성해야 합니다. 이렇게 하려면 PID `org.apache.sling.sitemap.impl.SitemapScheduler`에 대해 OSGi 구성을 생성합니다. 스케줄러 표현식 `0 0 0 * * ?`을(를) 시작점으로 사용하여 매일 자정에 모든 XML 사이트맵을 다시 생성할 수 있습니다.
 
 ![Apache Sling 사이트맵 - 스케줄러](assets/sling-sitemap-scheduler.png)
 

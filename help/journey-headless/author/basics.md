@@ -2,10 +2,10 @@
 title: 작성 기본 사항에 대해 알아보기
 description: 콘텐츠 조각을 사용하여 Headless CMS용 콘텐츠를 작성하는 개념 및 메커니즘에 대해 알아봅니다.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 37a2afca3131acceebbd7732844fa5953a7fd4fc
-workflow-type: ht
-source-wordcount: '1711'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '1708'
+ht-degree: 97%
 
 ---
 
@@ -44,7 +44,7 @@ AEM 설치는 일반적으로 세 개의 환경으로 구성됩니다.
 
 ### 로그인 {#signing-in}
 
-대부분의 시스템과 마찬가지로 로그인해야 합니다. 다음 사항이 작성자에게 제공됩니다.
+대부분의 시스템과 마찬가지로 로그온해야 합니다. 작성자는 다음과 같은 혜택을 누릴 수 있습니다.
 
 * 사용자 (계정) 이름
 * 암호
@@ -56,7 +56,7 @@ AEM 설치는 일반적으로 세 개의 환경으로 구성됩니다.
 
 작은 온라인 튜토리얼에 처음 로그인하면 사용자 인터페이스의 주요 기능 중 일부가 강조 표시됩니다.
 
-그런 다음 탐색 패널을 사용하여 AEM의 주요 영역에 액세스할 수 있습니다. 콘텐츠 조각의 경우 **콘텐츠 조각** 콘솔을 사용합니다(일부 액션의 경우 **자산** 콘솔을 사용하기도 함).
+그런 다음 탐색 패널을 사용하여 AEM의 주요 영역에 액세스할 수 있습니다. 콘텐츠 조각의 경우 다음을 사용합니다. **컨텐츠 조각** 콘솔(일부 작업의 경우 **에셋** console).
 
 왼쪽 상단의 Adobe 아이콘과 작은 나침반 아이콘을 차례로 선택하여 탐색 패널을 열 수 있습니다.
 
@@ -188,7 +188,7 @@ Creating a Content Fragment is very similar - you just use the **Content Fragmen
 
 ![Create Content Fragment option](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
 
-This time a wizard opens. The first step is to select the Content Fragment Model that your fragment will be based on:
+This time a wizard opens. The first step is to select the Content Fragment Model that your fragment is based on:
 
 ![Create Content Fragment - select Model](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
 

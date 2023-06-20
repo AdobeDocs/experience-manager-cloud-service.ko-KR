@@ -2,9 +2,9 @@
 title: 쿼리 빌더 API
 description: Asset Share 쿼리 빌더의 기능은 Java API 및 REST API를 통해 노출됩니다.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2040'
+source-wordcount: '2033'
 ht-degree: 0%
 
 ---
@@ -279,7 +279,7 @@ property.3_value=Whistler Mountain Biking
 
 ## 반환 항목 구체화 {#refining-what-is-returned}
 
-기본적으로 QueryBuilder JSON 서블릿은 검색 결과의 각 노드에 대한 기본 속성 집합(예: 경로, 이름, 제목 등)을 반환합니다. 반환되는 속성을 제어하기 위해 다음 중 하나를 수행할 수 있습니다.
+기본적으로 QueryBuilder JSON 서블릿은 검색 결과의 각 노드에 대한 기본 속성 집합(예: 경로, 이름 및 제목)을 반환합니다. 반환되는 속성을 제어하기 위해 다음 중 하나를 수행할 수 있습니다.
 
 지정
 

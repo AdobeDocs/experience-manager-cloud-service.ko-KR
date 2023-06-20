@@ -2,10 +2,10 @@
 title: DNS 설정 구성
 description: DNS 설정 구성
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
-source-git-commit: 60b496024b3d012033309632999851c08f43c5d7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 100%
+source-wordcount: '330'
+ht-degree: 87%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 `CNAME` 또는 A 레코드가 프로비저닝되면 도메인의 모든 인터넷 트래픽이 지정된 위치로 라우팅됩니다. 해당 위치가 트래픽을 처리할 수 있도록 프로비저닝되지 않은 경우 중단이 발생합니다. 테스트를 거치지 않은 경우 콘텐츠에 오류가 발생할 수 있습니다. 따라서 이 단계는 항상 테스트가 완료되고 실행 준비가 된 후에 수행됩니다.
 
-이러한 설정을 구성하려면 사용자 정의 도메인 이름이 Cloud Manager 도메인 이름을 가리키도록 `CNAME` 또는 Apex 레코드를 구성해야 하는지 여부를 결정해야 합니다. 다음 섹션에서는 DNS 구성에 적합한 레코드 유형을 결정하는 데 도움이 되는 정보를 제공합니다.
+이러한 설정을 구성하려면 다음을 결정해야 합니다. `CNAME` 또는 사용자 정의 도메인 이름이 Cloud Manager 도메인 이름을 가리키도록 Apex 레코드를 구성해야 합니다. 다음 섹션에서는 DNS 구성에 적합한 레코드 유형을 결정하는 데 도움이 되는 정보를 제공합니다.
 
 >[!NOTE]
 >
