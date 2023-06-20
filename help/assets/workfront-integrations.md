@@ -4,7 +4,7 @@ description: 간 통합 소개 [!DNL Assets] 및 [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5568be57db4e270fcee22e637fc40f07529e0ecd
 workflow-type: tm+mt
 source-wordcount: '1317'
 ht-degree: 4%
@@ -34,13 +34,14 @@ Adobe 대상 [통합 [!DNL Workfront] 및 [!DNL Adobe Experience Manager Assets]
 
 다음을 참조하십시오. [비교를 위해 아래에서 지원되는 기능](#feature-parity-matrix) 기본 통합 또는 두 솔루션 간에 커넥터를 사용하는 통합 중에서 선택할 수 있습니다.
 
-
+>[!IMPORTANT]
+>
+>2022년 6월 현재, Adobe은 Workfront과 Adobe Experience Manager Assets as a Cloud Service 연결을 위한 새로운 기본 통합을 발표했습니다. 이 통합은 이 두 솔루션을 연결하는 데 필요한 방법이 되었습니다. Workfront과 AEM Assets as a Cloud Service을 연결하기 위한 향상된 커넥터(1.9.8 이상)의 향후 새로운 구현은 차단됩니다. 이 통합을 설정하는 방법에 대한 자세한 내용은 [Experience Manager Assets as a Cloud Service 통합 구성](workfront-connector-configure.md).
+>
 
 플랫폼 지원 및 [향상된 커넥터에 대한 사전 요구 사항](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
 >[!IMPORTANT]
->
->* 2022년 6월 현재, Adobe은 Workfront과 Adobe Experience Manager Assets as a Cloud Service 연결을 위한 새로운 기본 통합을 발표했습니다. 이 통합은 이 두 솔루션을 연결하는 데 필요한 방법이 되었습니다. Workfront과 AEM Assets as a Cloud Service을 연결하기 위한 향상된 커넥터(1.9.8 이상)의 향후 새로운 구현은 차단됩니다. 이 통합을 설정하는 방법에 대한 자세한 내용은 [Experience Manager Assets as a Cloud Service 통합 구성](workfront-connector-configure.md).
 >
 >* Adobe을 사용하려면 [!DNL Adobe Workfront for Experience Manager enhanced connector] 인증된 파트너를 통해서만 또는 [!DNL Adobe Professional Services]. 공인 파트너 없이 구축 및 구성된 경우 또는 [!DNL Adobe Professional Services], Adobe에서 지원되지 않습니다.
 >
