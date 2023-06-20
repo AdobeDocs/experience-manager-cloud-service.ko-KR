@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: beb6ac3dbb036559510e6a2e2700b28c433ef98d
+source-git-commit: 26178edc3308801e0273aca67b7cd82180131483
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 38%
+source-wordcount: '372'
+ht-degree: 37%
 
 ---
 
@@ -27,6 +27,7 @@ ht-degree: 38%
 
 - ASSETS-25729 - 전환기 보기 메뉴가 잘림
 - ASSETS-25728 - 검색 보기에서 자산 재처리 옵션을 사용할 수 없음
+- ASSETS-22603 - 일부 다운로드 유형 에셋 보고서 열은 UI에 &quot;null&quot; 값을 표시합니다. 다운로드 가능한 CSV는 영향을 받지 않습니다.
 
 ### 해결된 문제 {#fixed-issues-12255}
 
