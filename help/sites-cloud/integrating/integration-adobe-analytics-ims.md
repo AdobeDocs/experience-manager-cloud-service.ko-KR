@@ -3,7 +3,7 @@ title: Adobe Analytics와 통합할 때 사용되는 IMS 구성
 description: Adobe Analytics와 통합할 때 사용되는 IMS 구성 알아보기
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '894'
 ht-degree: 100%
 
