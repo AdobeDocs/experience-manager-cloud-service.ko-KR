@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '3523'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -174,7 +174,7 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="패키지 관리자 - 변경 가능한 콘텐츠 패키지 마이그레이션"
->abstract="프로덕션 문제를 디버깅하기 위해 프로덕션에서 스테이징으로 특정 콘텐츠를 가져오고, 소규모 콘텐츠 패키지를 온프레미스 환경에서 AEM Cloud 환경으로 전송하는 등의 작업을 포함하는 &#39;일회성&#39;으로 콘텐츠 패키지를 설치해야 하는 사용 사례에 대한 패키지 관리자 사용을 살펴봅니다."
+>abstract="온프레미스 환경에서 AEM Cloud 환경 등으로 소형 콘텐츠 패키지를 이전하면서 프로덕션 문제를 디버깅하기 위해 프로덕션에서 스테이징으로 특정 콘텐츠 가져오기 등 콘텐츠 패키지를 “일회성”으로 설치해야 하는 사용 사례에서 패키지 관리자 사용에 대해 알아봅니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ko#cloud-migration" text="콘텐츠 전송 도구"
 
 콘텐츠 패키지를 “일회성”으로 설치해야 하는 사용 사례가 있습니다. 예를 들어 프로덕션 문제를 디버깅하기 위해 프로덕션에서 스테이징으로 특정 콘텐츠를 가져옵니다. 해당 시나리오의 경우 [패키지 관리자](/help/implementing/developing/tools/package-manager.md)를 AEM as a Cloud Service 환경으로 사용할 수 있습니다.
