@@ -4,10 +4,10 @@ description: 이전에 만든 콘텐츠 조각 모델을 사용하여 페이지 
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
 source-wordcount: '659'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 100%
 
 1. 콘솔의 오른쪽 상단에서 **만들기** 버튼을 탭하거나 클릭합니다.
 
-1. 새 콘텐츠 조각을 만들기를 시작할 수 있는 **새 콘텐츠 조각** 대화 상자가 열립니다. **위치**&#x200B;는 새 콘텐츠가 저장될 위치로 자동으로 채워집니다.
+1. 다음 **새 콘텐츠 조각** 새 콘텐츠 조각 만들기를 시작할 수 있는 대화 상자가 열립니다. **위치** 는 새 콘텐츠가 저장되는 위치로 자동으로 채워집니다.
 
 1. **콘텐츠 조각 모델** 드롭다운에서 이전에 만든 **모험** 콘텐츠 조각 모델을 선택합니다.
 
@@ -62,7 +62,7 @@ ht-degree: 100%
 1. 다음 텍스트를 붙여넣기 하여 조각에 대한 **설명**&#x200B;을 입력합니다.
 
    ```text
-   Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms. Your efforts on the climbs of Italy's rolling hills during this tour will be rewarded with sunny Mediterranean landscapes and unmatched Italian hospitality.  Tuscany’s natural wonders have always been a well of inspiration for arts and culture. Find out why as you explore the Italian countryside and coastline on bicycle.
+   Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms. Your efforts on the climbs of Italy's rolling hills during this tour are rewarded with sunny Mediterranean landscapes and unmatched Italian hospitality. Tuscany's natural wonders have always been a well of inspiration for arts and culture. Find out why as you explore the Italian countryside and coastline on bicycle.
    ```
 
 1. `$700`을(를) 입력하여 조각에 **가격**&#x200B;을 부여합니다.

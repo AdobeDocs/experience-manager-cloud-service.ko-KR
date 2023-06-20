@@ -2,10 +2,10 @@
 title: 작성 환경 및 도구
 description: AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2154'
-ht-degree: 77%
+source-wordcount: '2153'
+ht-degree: 75%
 
 ---
 
@@ -270,7 +270,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 * [타임워프](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - 특정 시점의 페이지 상태를 볼 수 있습니다.
 * [Live Copy 상태](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) - 라이브 카피 상태 및 상속되지 않은 구성 요소에 대해 간략한 개요를 제공합니다.
 * [개발자 모드](/help/implementing/developing/tools/developer-mode.md)
-* [미리보기](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - 페이지가 게시 환경에 표시될 상태로 해당 페이지를 보거나 콘텐츠의 링크를 사용하여 탐색하는 데 사용됩니다.
+* [미리 보기](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - 게시 환경에 표시된 대로 페이지를 보거나 콘텐츠의 링크를 사용하여 탐색하는 데 사용됩니다.
 * [주석](/help/sites-cloud/authoring/fundamentals/annotations.md) - 페이지에서 주석을 추가하거나 보는 데 사용됩니다.
 
 오른쪽 상단의 아이콘을 사용하여 다음 화면에 액세스할 수 있습니다. 실제 아이콘은 현재 사용 중인 모드를 반영하도록 변경됩니다.

@@ -2,16 +2,16 @@
 title: 페이지 템플릿 만들기
 description: 템플릿은 결과 페이지의 구조를 정의하며 템플릿 편집기를 사용하여 템플릿을 만들고 유지 관리하는 작업은 더 이상 개발자 전용 작업이 아닙니다
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '4595'
-ht-degree: 72%
+source-wordcount: '4579'
+ht-degree: 68%
 
 ---
 
 # 페이지 템플릿 만들기 {#creating-page-templates}
 
-페이지를 만들 때 템플릿을 선택해야 합니다. 이 템플릿은 새 페이지를 만드는 데 기초로 사용됩니다. 템플릿은 결과 페이지의 구조, 초기 콘텐츠 및 사용할 수 있는 구성 요소를 정의합니다.
+페이지를 만들 때 새 페이지를 만들 때 기준으로 사용되는 템플릿을 선택해야 합니다. 템플릿은 결과 페이지의 구조, 초기 콘텐츠 및 사용할 수 있는 구성 요소를 정의합니다.
 
 With the **Template Editor**, creating and maintaining templates is no longer a developer-only task. A type of power-user, who is called a **template author**, can be involved too. Developers are still required to setup the environment, create client libraries, and create the components to be used, but once these basics are in place the **template author** has the flexibility to create and configure templates without a development project.
 
@@ -120,7 +120,7 @@ With the **Template Editor**, creating and maintaining templates is no longer a 
    * **템플릿 이름**
    * **설명**
 
-1. **만들기**&#x200B;를 선택합니다. 확인이 표시되면 **열기**&#x200B;를 선택하여 템플릿 편집을 시작하거나, **완료**&#x200B;를 선택하여 템플릿 콘솔로 돌아갑니다.
+1. **만들기**&#x200B;를 선택합니다. 확인이 표시되면 다음을 선택합니다. **열기** 템플릿 편집을 시작하려면 또는 **완료** 템플릿 콘솔로 돌아갑니다.
 
    >[!NOTE]
    >
@@ -163,7 +163,7 @@ With the **Template Editor**, creating and maintaining templates is no longer a 
 1. 썸네일을 업로드할지 또는 템플릿 콘텐츠에서 생성할지를 선택합니다.
    * 썸네일을 업로드하려면 를 클릭하거나 탭합니다 **이미지 업로드**
    * 썸네일을 생성하려면 **미리보기 생성**&#x200B;을 클릭하거나 탭합니다.
-1. 두 방법 모두, 썸네일의 미리보기가 표시됩니다.
+1. 두 방법 모두 썸네일의 미리보기가 표시됩니다.
    * 만족스럽지 않은 경우 클릭 또는 탭합니다 **지우기** 다른 이미지를 업로드하거나 썸네일을 다시 생성합니다.
 1. 썸네일에 만족하면 을 클릭하거나 탭합니다 **저장 및 닫기**.
 
@@ -180,7 +180,7 @@ With the **Template Editor**, creating and maintaining templates is no longer a 
 
 >[!CAUTION]
 >
->템플릿을 활성화하면 템플릿 작성자가 템플릿을 추가로 업데이트하기 시작할 때 경고가 표시됩니다. 이는 템플릿을 참조할 수 있음을 사용자에게 알려 주기 위한 것으로, 변경 사항은 템플릿을 참조하는 페이지에 영향을 줄 수 있습니다.
+>템플릿을 활성화한 후 템플릿 작성자가 템플릿을 추가로 업데이트하기 시작하면 경고가 표시됩니다. 이는 템플릿을 참조할 수 있음을 사용자에게 알려 주기 위한 것으로, 변경 사항은 템플릿을 참조하는 페이지에 영향을 줄 수 있습니다.
 
 1. **템플릿 콘솔**&#x200B;에서 템플릿을 선택합니다.
 1. 도구 모음에서 **활성화** 또는 **비활성화**&#x200B;를 선택하고 다시 확인 대화 상자에서 선택한 옵션을 다시 선택합니다.
@@ -262,7 +262,7 @@ With the **Template Editor**, creating and maintaining templates is no longer a 
 
 #### 초기 콘텐츠 {#template-initial-content}
 
-구성 요소 잠금이 해제된 경우 템플릿에서 만든 결과 페이지에 복사할 [초기 콘텐츠](#editing-a-template-initial-content-author)를 정의할 수 있습니다. 잠금이 해제된 이러한 구성 요소는 결과 페이지에서 편집할 수 있습니다.
+구성 요소 잠금이 해제된 경우 [초기 컨텐츠](#editing-a-template-initial-content-author) 템플릿에서 생성된 결과 페이지에 복사됩니다. 잠금이 해제된 이러한 구성 요소는 결과 페이지에서 편집할 수 있습니다.
 
 >[!NOTE]
 >
@@ -368,7 +368,7 @@ With the **Template Editor**, creating and maintaining templates is no longer a 
 
 ![정책 추가 버튼](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-**정책 선택** 드롭다운에서 선택한 기존 정책은 드롭다운 옆에 있는 복사 버튼을 사용하여 새 정책으로서 복사할 수 있습니다. 이후 **정책 제목** 필드에 새 제목을 지정해야 합니다. 기본적으로 복사된 정책 제목은 **X의 사본**&#x200B;으로 지정됩니다. 여기서 X는 복사된 정책의 제목입니다.
+**정책 선택** 드롭다운에서 선택한 기존 정책은 드롭다운 옆에 있는 복사 버튼을 사용하여 새 정책으로서 복사할 수 있습니다. 이후 **정책 제목** 필드에 새 제목을 지정해야 합니다. 기본적으로 복사된 정책 제목은 다음과 같습니다 **X 사본**&#x200B;여기서 X는 복사된 정책의 제목입니다.
 
 ![정책 복사 버튼](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
@@ -485,7 +485,7 @@ Select a component in the list and click or tap **Add type** to add an additiona
 
 ![구성 요소 잠금 버튼](/help/sites-cloud/authoring/assets/templates-unlock-component.png)
 
-This includes unlocking container components so that further components can be added, either in **Initial Content** mode or on resulting pages. If you have already added components/content to the container before unlocking it, then these will no longer be shown when in **Structure** mode but they will be shown in **Initial Content** mode. **구조 모드**&#x200B;에서는 컨테이너 구성 요소 자체만 **허용된 구성 요소** 목록과 함께 표시됩니다.
+This includes unlocking container components so that further components can be added, either in **Initial Content** mode or on resulting pages. 잠금 해제하기 전에 구성 요소/콘텐츠를 컨테이너에 이미 추가한 경우 다음과 같을 때 더 이상 표시되지 않습니다. **구조** 모드이지만 다음 위치에 표시됩니다. **초기 컨텐츠** 모드. 위치 **구조 모드**: 컨테이너 구성 요소 자체만 목록과 함께 표시됩니다. **허용된 구성 요소**.
 
 ![허용된 구성 요소](/help/sites-cloud/authoring/assets/templates-allowed-components.png)
 
@@ -540,7 +540,7 @@ This includes unlocking container components so that further components can be a
 
 >[!NOTE]
 >
->레이아웃에 대한 변경 사항은 **초기 콘텐츠** 모드에서 반영되지만, **구조** 모드에서는 표시되지 않습니다.
+>레이아웃에 대한 변경 사항이에 반영됩니다. **초기 컨텐츠** 모드는 변경되지않음 **구조** 모드.
 
 ![템플릿 레이아웃 편집](/help/sites-cloud/authoring/assets/templates-edit-layout.png)
 
@@ -572,7 +572,7 @@ This includes unlocking container components so that further components can be a
 
   ![정책 추가 버튼](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-  **정책 선택** 드롭다운에서 선택한 기존 정책은 드롭다운 옆에 있는 복사 버튼을 사용하여 새 정책으로서 복사할 수 있습니다. 이후 **정책 제목** 필드에 새 제목을 지정해야 합니다. 기본적으로 복사된 정책 제목은 **X의 사본**&#x200B;으로 지정됩니다. 여기서 X는 복사된 정책의 제목입니다.
+  **정책 선택** 드롭다운에서 선택한 기존 정책은 드롭다운 옆에 있는 복사 버튼을 사용하여 새 정책으로서 복사할 수 있습니다. 이후 **정책 제목** 필드에 새 제목을 지정해야 합니다. 기본적으로 복사된 정책 제목은 다음과 같습니다 **X 사본**&#x200B;여기서 X는 복사된 정책의 제목입니다.
 
   ![정책 복사 버튼](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
@@ -653,7 +653,7 @@ This includes unlocking container components so that further components can be a
    * 활성화된 템플릿에서 구성 요소 잠금 또는 잠금 해제
    * 기존 페이지에서 이미 해당 구성 요소를 사용하고 있을 수 있으므로 부작용이 있을 수 있습니다. 일반적으로
 
-      * 잠긴 구성 요소 잠금 해제가 기존 페이지에서 누락됩니다.
+      * 잠긴 구성 요소 잠금 해제가 기존 페이지에서 누락되었습니다.
       * 구성 요소(편집 가능)를 잠그면 해당 콘텐츠가 페이지에 표시되지 않고 숨겨집니다.
 
    >[!NOTE]

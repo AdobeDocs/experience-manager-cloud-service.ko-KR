@@ -2,10 +2,10 @@
 title: 타겟팅 모드를 사용하여 타겟팅된 콘텐츠 작성
 description: 타겟팅 모드 및 타겟 구성 요소는 경험을 위한 콘텐츠를 만드는 도구를 제공합니다.
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 41027653bffb064b3c313d6512b0314336f6c8dc
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '5414'
-ht-degree: 77%
+source-wordcount: '5412'
+ht-degree: 76%
 
 ---
 
@@ -151,7 +151,7 @@ AEM의 타겟팅 모드를 사용하여 타겟팅된 콘텐츠를 작성하십�
 
 >[!CAUTION]
 >
->작성자 인스턴스에서 이미 타겟팅된 구성 요소에 대한 타겟팅을 비활성화할 때는 주의하십시오. 각 활동이 게시 인스턴스에서도 자동으로 삭제됩니다.
+>작성자 인스턴스에서 이미 타겟팅된 구성 요소에 대한 타겟팅을 비활성화할 때는 주의하십시오. 각 활동은 게시 인스턴스에서도 자동으로 삭제됩니다.
 
 >[!NOTE]
 >
@@ -262,7 +262,7 @@ When an experience is selected and the targeted component does not include an of
 
    ![타겟팅 버튼](../assets/targeted-target-button.png)
 
-   구성 요소 콘텐츠는 기본값 경험을 위한 오퍼입니다. 구성 요소를 타겟팅하면 이 구성 요소의 기본 노드가 각 경험에 대해 복제됩니다. 이러한 복제는 경험별 작성 중에 올바른 콘텐츠 노드를 편집하는 데 필요합니다. 기본값이 아닌 이러한 경험에 대해 [사용자 정의 오퍼를 추가](#adding-a-custom-offer)하거나 [라이브러리 오퍼를 추가](#adding-an-offer-from-an-offer-library)하십시오.
+   구성 요소 콘텐츠는 기본값 경험을 위한 오퍼입니다. 구성 요소를 타겟팅하면 해당 기본 노드가 각 경험에 대해 복제됩니다. 이러한 복제는 경험별 작성 중에 올바른 콘텐츠 노드를 편집하는 데 필요합니다. 기본값이 아닌 이러한 경험에 대해 [사용자 정의 오퍼를 추가](#adding-a-custom-offer)하거나 [라이브러리 오퍼를 추가](#adding-an-offer-from-an-offer-library)하십시오.
 
 #### 타겟 구성 요소를 추가하여 오퍼 생성 {#creating-an-offer-by-adding-a-target-component}
 

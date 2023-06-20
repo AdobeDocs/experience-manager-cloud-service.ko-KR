@@ -2,10 +2,10 @@
 title: ContextHub를 사용하여 세그먼테이션 구성
 description: ContextHub를 사용하여 세그먼테이션을 구성하는 방법에 대해 알아봅니다.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: a278b3925180f4baa3b82af84080c947a72c9844
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1697'
-ht-degree: 100%
+source-wordcount: '1694'
+ht-degree: 95%
 
 ---
 
@@ -71,7 +71,7 @@ AEM을 통해 손쉽게 사용자의 경험을 개인화할 수 있습니다. �
 >
 >따라서 [세그먼트를 작성](#creating-a-new-segment)할 때 비교되는 값의 유형을 알 때마다 **데이터 유형**&#x200B;을 선택해야 합니다. 예:
 >
->속성 `profile/age`를 비교할 때, 귀하는 이미 비교되는 유형이 **숫자**&#x200B;임을 알고 있으므로 `profile/age`가 설정되지 않았더라도 30 이하의 비교 `profile/age`는 예상대로 **false**&#x200B;를 반환하게 됩니다.
+>속성을 비교할 때 `profile/age`, 비교되는 유형이 이라는 것은 이미 알고 있습니다. **숫자**, 따라서 `profile/age` 가 설정되지 않음, 비교 `profile/age` 30 미만이 반환됩니다 **false**&#x200B;예상대로 입니다.
 
 ### 참조 {#references}
 
@@ -199,8 +199,8 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 1. 폴더의 **제목** 및 **이름**&#x200B;을 입력합니다.
    * **제목**&#x200B;은 설명적이어야 합니다.
-   * **이름**&#x200B;은 저장소의 노드 이름이 됩니다.
-      * 제목을 기반으로 자동으로 생성되고 [AEM 명명 규칙](/help/implementing/developing/introduction/naming-conventions.md)에 따라 조정됩니다.
+   * 다음 **이름** 는 저장소의 노드 이름이 됩니다.
+      * 제목을 기반으로 자동으로 생성되고 이에 따라 조정됩니다 [AEM 이름 지정 규칙입니다.](/help/implementing/developing/introduction/naming-conventions.md)
       * 필요한 경우 조정할 수 있습니다.
 
    ![폴더 만들기](../assets/contexthub-create-folder.png)
@@ -212,7 +212,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. 폴더가 세그먼트 목록에 나타납니다.
    * 열 정렬 방식은 목록 내에 새 폴더가 나타나는 위치에 영향을 미칩니다.
    * 열 제목을 탭하거나 클릭하여 정렬을 조정할 수 있습니다.
-      ![새 폴더](../assets/contexthub-folder.png)
+     ![새 폴더](../assets/contexthub-folder.png)
 
 ### 기존 폴더 수정 {#modify-folders}
 

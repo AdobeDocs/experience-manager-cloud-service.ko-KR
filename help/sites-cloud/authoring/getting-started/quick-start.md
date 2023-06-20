@@ -2,10 +2,10 @@
 title: 페이지 작성에 대한 빠른 시작 안내서
 description: 페이지 콘텐츠 작성을 시작하는 데 도움이 되는 빠른 개요 안내서
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1578'
-ht-degree: 74%
+source-wordcount: '1572'
+ht-degree: 70%
 
 ---
 
@@ -90,11 +90,11 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 1. 열 보기:
 
-   * 필요한 리소스에 대한 썸네일을 탭/클릭합니다. 썸네일 위에 확인 표시가 나타나 페이지가 선택되었음을 나타냅니다.
+   * 필요한 리소스에 대한 썸네일을 탭/클릭합니다. 썸네일 위에 확인 표시가 나타나 썸네일이 선택되었음을 나타냅니다.
 
 1. 목록 보기:
 
-   * 필요한 리소스에 대한 썸네일을 탭/클릭합니다. 썸네일 위에 확인 표시가 나타나 페이지가 선택되었음을 나타냅니다.
+   * 필요한 리소스에 대한 썸네일을 탭/클릭합니다. 썸네일 위에 확인 표시가 나타나 썸네일이 선택되었음을 나타냅니다.
 
 1. 카드 보기:
 
@@ -103,7 +103,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
       * 모바일 디바이스에서: 카드를 길게 탭
       * 데스크탑 디바이스에서: 확인 표시 아이콘으로 표시되는 [빠른 작업](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) 사용
 
-   * 카드 위에 확인 표시가 나타나 페이지가 선택되었음을 나타냅니다.
+   * 카드가 틱 마크로 오버레이되어 페이지가 선택되었음을 나타냅니다.
 
    ![카드 예](/help/sites-cloud/authoring/assets/card.png)
 
@@ -259,7 +259,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    * [삭제](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):
 
-      * 작업을 확인하는 메시지가 나타납니다.
+      * 작업을 확인하라는 메시지가 표시됩니다.
 
    >[!NOTE]
    >

@@ -2,10 +2,10 @@
 title: 워크플로에 참여
 description: 워크플로는 일반적으로 페이지나 에셋에 대해 사람이 활동을 수행해야 하는 단계를 포함합니다.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1545'
-ht-degree: 68%
+source-wordcount: '1542'
+ht-degree: 66%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 68%
 
 * 사용자 [알림](/help/sites-cloud/authoring/getting-started/inbox.md) 표시기(도구 모음)가 증가합니다.
 
-   ![알림 도구 모음](/help/sites-cloud/authoring/assets/workflows-notifications.png)
+  ![알림 도구 모음](/help/sites-cloud/authoring/assets/workflows-notifications.png)
 
-* 항목이 [받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)의 알림에 나열됩니다.
+* 항목이 알림에 나열됩니다 [받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md):
 
-   ![받은 편지함의 알림](/help/sites-cloud/authoring/assets/workflows-inbox.png)
+  ![받은 편지함의 알림](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
 * 페이지 편집기를 사용하는 경우 상태 표시줄에 다음이 표시됩니다.
    * 페이지에 적용되는 워크플로의 이름: 예를 들어 활성화 요청.
@@ -39,18 +39,18 @@ ht-degree: 68%
       * 왼쪽/오른쪽 화살표를 사용하여 다양한 워크플로의 상태 정보를 탐색할 수 있습니다.
       * 실제 숫자를 클릭/탭하여 적용 가능한 모든 워크플로가 있는 드롭다운 목록을 연 다음, 상태 표시줄에 표시할 워크플로를 선택할 수 있습니다.
 
-   ![여러 워크플로가 있는 페이지](/help/sites-cloud/authoring/assets/workflows-multiple.png)
+  ![여러 워크플로가 있는 페이지](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
-   >[!NOTE]
-   >
-   >상태 표시줄은 워크플로 권한이 있는 사용자(예: `workflow-users` 그룹의 멤버)에게만 표시됩니다.
-   >
-   >
-   >현재 사용자가 워크플로의 현재 단계와 직접적으로 관련이 있으면 작업이 표시됩니다.
+  >[!NOTE]
+  >
+  >상태 표시줄은 워크플로 권한이 있는 사용자(예: `workflow-users` 그룹의 멤버)에게만 표시됩니다.
+  >
+  >
+  >현재 사용자가 워크플로의 현재 단계와 직접적으로 관련이 있으면 작업이 표시됩니다.
 
-* 리소스에 대해 **타임라인**&#x200B;이 열려 있으면 워크플로 단계가 표시됩니다. 경고 배너를 클릭/탭하면 사용 가능한 작업도 표시됩니다.
+* 날짜 **타임라인** 리소스에 대해 이 열려 있으면 워크플로 단계가 표시됩니다. 경고 배너를 클릭/탭하면 사용 가능한 작업도 표시됩니다.
 
-   ![타임라인의 워크플로](/help/sites-cloud/authoring/assets/workflows-timeline.png)
+  ![타임라인의 워크플로](/help/sites-cloud/authoring/assets/workflows-timeline.png)
 
 ### 참가자 단계 완료 {#completing-a-participant-step}
 
@@ -219,19 +219,19 @@ ht-degree: 68%
 
 * **작업 항목** 탭:
 
-   ![작업 항목 탭](/help/sites-cloud/authoring/assets/workflows-work-item.png)
+  ![작업 항목 탭](/help/sites-cloud/authoring/assets/workflows-work-item.png)
 
 * **워크플로 정보** 탭:
 
-   ![워크플로 탭](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
+  ![워크플로 탭](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
 
-   모델에 대해 워크플로 단계가 구성된 경우 <!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->에 따라 진행률을 확인할 수 있습니다.
+  모델에 대해 워크플로 단계가 구성된 경우 <!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->에 따라 진행률을 확인할 수 있습니다.
 
-   ![워크플로 단계](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
+  ![워크플로 단계](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
 
 * **주석** 탭:
 
-   ![주석 탭](/help/sites-cloud/authoring/assets/workflows-comments.png)
+  ![주석 탭](/help/sites-cloud/authoring/assets/workflows-comments.png)
 
 다음 중 하나에서 작업 항목 세부 정보를 열 수 있습니다.
 

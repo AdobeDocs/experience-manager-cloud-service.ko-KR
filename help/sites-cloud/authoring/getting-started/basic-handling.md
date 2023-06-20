@@ -2,10 +2,10 @@
 title: 기본 처리
 description: AEM 탐색 및 기본 사용 방법 익히기
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2993'
-ht-degree: 78%
+source-wordcount: '2986'
+ht-degree: 77%
 
 ---
 
@@ -110,7 +110,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
   ![알림 버튼](/help/sites-cloud/authoring/assets/notifications.png)
 
-  이 아이콘에는 현재 할당된 불완전 알림 수가 배지로 지정됩니다.
+  이 아이콘에는 현재 할당된 미완료 알림 수가 배지로 표시됩니다.
 
 * [사용자 속성](/help/sites-cloud/authoring/getting-started/account-environment.md)
 

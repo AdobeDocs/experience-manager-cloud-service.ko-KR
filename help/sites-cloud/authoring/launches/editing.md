@@ -2,10 +2,10 @@
 title: 론치 편집
 description: 페이지(또는 페이지 세트)에 대한 론치를 만들면 페이지의 론치 카피에서 콘텐츠를 편집할 수 있습니다.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 70%
+source-wordcount: '552'
+ht-degree: 69%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 70%
 
    ![론치를 소스와 비교](/help/sites-cloud/authoring/assets/launches-compare.png)
 
-1. 두 페이지(론치와 소스)가 나란히 열립니다.
+1. 두 페이지(launch 및 source)가 나란히 열립니다.
 
    이 기능의 사용에 대한 자세한 내용은 [페이지 비교](/help/sites-cloud/authoring/features/page-diff.md)를 참조하십시오.
 

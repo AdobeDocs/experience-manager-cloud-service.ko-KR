@@ -2,10 +2,10 @@
 title: 페이지 콘텐츠 편집
 description: 페이지를 생성하면 콘텐츠를 편집하여 필요한 업데이트를 수행할 수 있습니다.
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 81d58f25af8b023774ce8653154597d92a7ac70b
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '3019'
-ht-degree: 79%
+source-wordcount: '3004'
+ht-degree: 75%
 
 ---
 
@@ -42,51 +42,51 @@ ht-degree: 79%
 
 * **사이드 패널 전환**
 
-   [에셋 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser), [구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) 및 [콘텐츠 트리](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree)를 보유하는 사이드 패널을 열고 닫습니다.
+  [에셋 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser), [구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) 및 [콘텐츠 트리](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree)를 보유하는 사이드 패널을 열고 닫습니다.
 
-   ![사이드 패널 전환](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
+  ![사이드 패널 전환](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
 * **페이지 정보**
 
-   에 대한 액세스 권한 제공 [페이지 정보](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) 메뉴(페이지 세부 사항 및 페이지 정보 보기 및 편집, 페이지 속성 보기, 페이지 게시/게시 취소 등 페이지에서 수행할 수 있는 작업 포함).
+  에 대한 액세스 권한 제공 [페이지 정보](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) 메뉴(페이지 세부 사항 및 페이지 정보 보기 및 편집, 페이지 속성 보기, 페이지 게시/게시 취소 등 페이지에서 수행할 수 있는 작업 포함).
 
-   ![페이지 정보 버튼](/help/sites-cloud/authoring/assets/page-information-icon.png)
+  ![페이지 정보 버튼](/help/sites-cloud/authoring/assets/page-information-icon.png)
 
 * **에뮬레이터**
 
-   다른 디바이스에서 페이지의 디자인을 에뮬레이트하는 데 사용되는 [에뮬레이터 도구 모음](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate)을 전환합니다. 이는 레이아웃 모드에서 자동으로 전환됩니다.
+  다른 디바이스에서 페이지의 디자인을 에뮬레이트하는 데 사용되는 [에뮬레이터 도구 모음](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate)을 전환합니다. 이는 레이아웃 모드에서 자동으로 전환됩니다.
 
-   ![에뮬레이터 버튼](/help/sites-cloud/authoring/assets/emulator.png)
+  ![에뮬레이터 버튼](/help/sites-cloud/authoring/assets/emulator.png)
 
 * **ContextHub**
 
-   [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)를 엽니다. [미리보기 모드]에서만 사용 가능합니다.
+  [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)를 엽니다. [미리보기 모드]에서만 사용 가능합니다.
 
-   ![Context Hub 버튼](/help/sites-cloud/authoring/assets/context-hub.png)
+  ![Context Hub 버튼](/help/sites-cloud/authoring/assets/context-hub.png)
 
 * **페이지 제목**
 
-   이는 순전히 정보 제공용입니다.
+  이는 순전히 정보 제공용입니다.
 
-   ![페이지 제목](/help/sites-cloud/authoring/assets/page-title.png)
+  ![페이지 제목](/help/sites-cloud/authoring/assets/page-title.png)
 
 * **모드 선택기**
 
-   현재 [모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)를 표시하고 편집, 레이아웃, 타임워프 또는 타겟팅과 같은 다른 모드를 선택할 수 있습니다.
+  현재 [모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)를 표시하고 편집, 레이아웃, 타임워프 또는 타겟팅과 같은 다른 모드를 선택할 수 있습니다.
 
-   ![모드 선택기 버튼](/help/sites-cloud/authoring/assets/mode-selector.png)
+  ![모드 선택기 버튼](/help/sites-cloud/authoring/assets/mode-selector.png)
 
 * **미리보기**
 
-   [미리보기 모드](#preview-mode)를 활성화합니다. 이렇게 하면 페이지가 게시될 때 표시되는 것과 같이 표시됩니다.
+  [미리보기 모드](#preview-mode)를 활성화합니다. 이렇게 하면 페이지가 게시될 때 표시되는 것과 같이 표시됩니다.
 
-   ![미리보기 버튼](/help/sites-cloud/authoring/assets/preview.png)
+  ![미리보기 버튼](/help/sites-cloud/authoring/assets/preview.png)
 
 * **주석**
 
-   다음을 추가할 수 있습니다. [주석](/help/sites-cloud/authoring/fundamentals/annotations.md) 페이지를 검토할 때 페이지로 이동합니다. 첫 번째 주석 다음에 아이콘은 페이지의 주석 수를 나타내는 숫자로 전환됩니다.
+  다음을 추가할 수 있습니다. [주석](/help/sites-cloud/authoring/fundamentals/annotations.md) 페이지를 검토할 때 페이지로 이동합니다. 첫 번째 주석 다음에 아이콘은 페이지의 주석 수를 나타내는 숫자로 전환됩니다.
 
-   ![주석 버튼](/help/sites-cloud/authoring/assets/annotations.png)
+  ![주석 버튼](/help/sites-cloud/authoring/assets/annotations.png)
 
 ### 상태 알림 {#status-notification}
 
@@ -112,21 +112,21 @@ ht-degree: 79%
 
 ## 구성 요소 플레이스홀더 {#component-placeholder}
 
-구성 요소 플레이스홀더는 구성 요소를 놓을 때 배치될 위치를 보여 주는 표시기입니다(현재 마우스로 가리키고 있는 구성 요소 위에 있음).
+구성 요소 자리 표시자는 구성 요소를 놓을 때 현재 마우스로 가리키고 있는 구성 요소 위에 있는 위치를 보여 주는 표시기입니다.
 
 * 페이지에 새 구성 요소를 추가할 때(구성 요소 브라우저에서 드래그):
 
-   ![페이지에 새 구성 요소를 추가할 때의 플레이스홀더](/help/sites-cloud/authoring/assets/editing-component-placeholder.png)
+  ![페이지에 새 구성 요소를 추가할 때의 플레이스홀더](/help/sites-cloud/authoring/assets/editing-component-placeholder.png)
 
 * 기존 구성 요소를 이동할 때:
 
-   ![페이지에서 기존 구성 요소를 이동할 때의 플레이스홀더](/help/sites-cloud/authoring/assets/editing-component-placeholder-existing.png)
+  ![페이지에서 기존 구성 요소를 이동할 때의 플레이스홀더](/help/sites-cloud/authoring/assets/editing-component-placeholder-existing.png)
 
 ## 구성 요소 삽입 {#inserting-a-component}
 
 ### 구성 요소 브라우저에서 구성 요소 삽입 {#inserting-a-component-from-the-components-browser}
 
-[구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)를 사용하여 새 구성 요소를 추가할 수 있습니다. [구성 요소 플레이스홀더](#component-placeholder)는 구성 요소가 위치할 곳을 보여 줍니다.
+[구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)를 사용하여 새 구성 요소를 추가할 수 있습니다. 다음 [구성 요소 플레이스홀더](#component-placeholder) 구성 요소가 있는 위치를 보여 줍니다.
 
 1. 페이지가 [**편집** 모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)인지 확인합니다.
 1. [구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)를 엽니다.
@@ -146,13 +146,13 @@ ht-degree: 79%
 
    * 다음 항목 선택 **구성 요소 삽입** 기존 구성 요소의 도구 모음 또는 **여기에 구성 요소 드래그** 상자.
 
-      ![구성 요소 삽입](/help/sites-cloud/authoring/assets/editing-insert-component.png)
+     ![구성 요소 삽입](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
    * 데스크탑 디바이스를 사용하는 경우 **구성 요소를 여기로 드래그하십시오.** 상자를 더블 클릭합니다.
 
    * 필수 구성 요소를 선택할 수 있는 **새 구성 요소 삽입** 대화 상자가 열립니다.
 
-      ![새 구성 요소 삽입 대화 상자](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
+     ![새 구성 요소 삽입 대화 상자](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
 1. 선택한 구성 요소가 페이지 하단에 추가됩니다. [편집](#edit-content) 필요한 구성 요소입니다.
 
@@ -166,9 +166,9 @@ ht-degree: 79%
 
 1. 페이지가 [**편집** 모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)인지 확인합니다.
 1. [에셋 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)를 엽니다.
-1. 필요한 에셋을 필요한 위치로 끕니다. [구성 요소 플레이스홀더](#component-placeholder)는 구성 요소가 위치할 곳을 보여 줍니다.
+1. 필요한 에셋을 필요한 위치로 드래그합니다. 다음 [구성 요소 플레이스홀더](#component-placeholder) 구성 요소가 있는 위치를 보여 줍니다.
 
-   에셋 유형에 적절한 구성 요소가 필요한 위치에 만들어지게 됩니다. 여기에 선택한 에셋이 포함됩니다.
+   에셋 유형에 적절한 구성 요소가 필요한 위치에 만들어집니다. 이 구성 요소에는 선택한 에셋이 들어 있습니다.
 
 1. [편집](#edit-content) 필요한 경우 구성 요소입니다.
 
@@ -184,83 +184,83 @@ ht-degree: 79%
 
 구성 요소를 선택하면 도구 모음이 열립니다. 이 도구 모음에서는 구성 요소에서 수행할 수 있는 다양한 작업에 액세스할 수 있습니다.
 
-사용자가 사용할 수 있는 실제 작업은 상황에 따라 적절히 표시되며 일부 작업은 여기에서 설명되지 않을 수 있습니다.
+사용자가 사용할 수 있는 실제 작업은 적절히 표시되며 일부 작업은 여기에서 설명되지 않을 수 있습니다.
 
 ![구성 요소 도구 모음](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 
 * **편집**
 
-   [편집 구성 요소 유형에 따라](/help/sites-cloud/authoring/fundamentals/components.md) [구성 요소의 콘텐츠를 편집](#edit-content)할 수 있게 됩니다. 종종 도구 모음이 제공됩니다.
+  [구성 요소 유형에 따라 다름](/help/sites-cloud/authoring/fundamentals/components.md), 이렇게 하면 다음 작업을 수행할 수 있습니다. [구성 요소의 콘텐츠 편집](#edit-content). 종종 도구 모음이 제공됩니다.
 
-   ![편집 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-edit.png)
+  ![편집 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-edit.png)
 
 * **구성**
 
-   [구성 요소 유형에 따라](/help/sites-cloud/authoring/fundamentals/components.md) 구성 요소의 속성을 편집 및 구성할 수 있게 됩니다. 종종 대화 상자가 열립니다.
+  [구성 요소 유형에 따라 다름](/help/sites-cloud/authoring/fundamentals/components.md)를 통해 구성 요소의 속성을 편집하고 구성할 수 있습니다. 종종 대화 상자가 열립니다.
 
-   ![구성 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-configure.png)
+  ![구성 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-configure.png)
 
 * **복사**
 
-   구성 요소가 클립보드에 복사됩니다. 붙여넣기 작업 후에는 원래 구성 요소가 유지됩니다.
+  구성 요소가 클립보드에 복사됩니다. 붙여넣기 작업 후에는 원래 구성 요소가 유지됩니다.
 
-   ![복사 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-copy.png)
+  ![복사 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-copy.png)
 
 * **잘라내기**
 
-   구성 요소가 클립보드에 복사됩니다. 붙여넣기 작업 후 원래 구성 요소가 제거됩니다.
+  구성 요소가 클립보드에 복사됩니다. 붙여넣기 작업 후 원래 구성 요소가 제거됩니다.
 
-   ![잘라내기 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-cut.png)
+  ![잘라내기 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-cut.png)
 
 * **삭제**
 
-   이 경우 확인 표시가 있는 페이지에서 구성 요소가 삭제됩니다.
+  이 경우 확인 표시가 있는 페이지에서 구성 요소가 삭제됩니다.
 
-   ![삭제 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-delete.png)
+  ![삭제 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-delete.png)
 
 * **구성 요소 삽입**
 
-   그러면 대화 상자가 열립니다 [새 구성 요소 추가](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-from-the-paragraph-system).
+  그러면 대화 상자가 열립니다 [새 구성 요소 추가](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-from-the-paragraph-system).
 
-   ![삽입 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-insert.png)
+  ![삽입 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-insert.png)
 
 * **붙여넣기**
 
-   구성 요소를 클립보드에서 페이지로 붙여넣게 됩니다. 원본이 남아 있는지 여부는 복사 또는 잘라내기 중 어느 것을 사용했는지 여부에 따라 달라집니다.
+  구성 요소를 클립보드에서 페이지로 붙여넣게 됩니다. 원본이 남아 있는지 여부는 복사 또는 잘라내기 중 어느 것을 사용했는지 여부에 따라 달라집니다.
 
    * 동일한 페이지나 다른 페이지에 붙여넣을 수 있습니다.
    * 붙여넣은 항목은 붙여넣기 작업을 선택한 항목 위에 붙여넣습니다.
    * 클립보드에 콘텐츠가 있는 경우에만 붙여넣기 작업이 표시됩니다.
 
-   ![붙여넣기 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
+  ![붙여넣기 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
 
-   >[!NOTE]
-   >
-   >잘라내기/복사 작업 전에 이미 열려 있는 다른 페이지에 붙여넣으면 해당 페이지를 새로 고쳐 붙여넣은 콘텐츠를 볼 수 있습니다.
+  >[!NOTE]
+  >
+  >잘라내기/복사 작업 전에 이미 열려 있는 다른 페이지에 붙여넣으면 해당 페이지를 새로 고쳐 붙여넣은 콘텐츠를 볼 수 있습니다.
 
 * **그룹**
 
-   여러 구성 요소를 한 번에 선택할 수 있도록 해 줍니다. **Control+Click** 또는 **Command+Click**&#x200B;하여 데스크탑 디바이스에서도 동일한 작업을 수행할 수 있습니다.
+  여러 구성 요소를 한 번에 선택할 수 있도록 해 줍니다. **Control+Click** 또는 **Command+Click**&#x200B;하여 데스크탑 디바이스에서도 동일한 작업을 수행할 수 있습니다.
 
-   ![그룹 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-group.png)
+  ![그룹 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-group.png)
 
 * **상위**
 
-   선택한 구성 요소의 상위 구성 요소를 선택할 수 있습니다.
+  선택한 구성 요소의 상위 구성 요소를 선택할 수 있습니다.
 
-   ![상위 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
+  ![상위 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
 
 * **레이아웃**
 
-   이를 통해 다음을 수정할 수 있습니다. [레이아웃](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) 선택한 구성 요소. 이 기능은 선택한 구성 요소에만 적용되며 [레이아웃 모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 전체 페이지.
+  이를 통해 다음을 수정할 수 있습니다. [레이아웃](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) 선택한 구성 요소. 이 기능은 선택한 구성 요소에만 적용되며 [레이아웃 모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 전체 페이지.
 
-   ![레이아웃 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
+  ![레이아웃 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
 * **경험 조각 변형으로 변환**
 
-   이 작업에서는 선택한 구성 요소에서 새 [경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)을 생성하거나 기존 경험 조각에 추가할 수 있습니다.
+  이 작업에서는 선택한 구성 요소에서 새 [경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)을 생성하거나 기존 경험 조각에 추가할 수 있습니다.
 
-   ![경험 조각 변형으로 변환 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
+  ![경험 조각 변형으로 변환 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 
 ## 콘텐츠 편집 {#edit-content}
 
@@ -277,23 +277,23 @@ ht-degree: 79%
 
 * 텍스트 구성 요소
 
-   ![텍스트 구성 요소의 도구 모음](/help/sites-cloud/authoring/assets/editing-text-component-toolbar.png)
+  ![텍스트 구성 요소의 도구 모음](/help/sites-cloud/authoring/assets/editing-text-component-toolbar.png)
 
 * 이미지 구성 요소
 
-   ![이미지 구성 요소의 도구 모음](/help/sites-cloud/authoring/assets/editing-image-component-toolbar.png)
+  ![이미지 구성 요소의 도구 모음](/help/sites-cloud/authoring/assets/editing-image-component-toolbar.png)
 
-   >[!NOTE]
-   >
-   >빈 이미지 구성 요소에서는 편집기가 작동하지 않습니다.
-   >
-   >편집을 시작할 수 있으려면 먼저 이미지를 구성 요소에 드래그하거나 업로드해야 합니다.
+  >[!NOTE]
+  >
+  >빈 이미지 구성 요소에서는 편집기가 작동하지 않습니다.
+  >
+  >편집을 시작할 수 있으려면 먼저 이미지를 구성 요소에 드래그하거나 업로드해야 합니다.
 
 * 이미지 구성 요소 - 전체 화면
 
-   [Entering full screen mode](#edit-content-full-screen-mode) for the image component allows for more space to edit the image as well as showing extra editing options such as **Launch Map** and **Reset Zoom**. In addition, full screen allows for crop presets to be selected.
+  [Entering full screen mode](#edit-content-full-screen-mode) for the image component allows for more space to edit the image as well as showing extra editing options such as **Launch Map** and **Reset Zoom**. In addition, full screen allows for crop presets to be selected.
 
-   ![이미지 구성 요소의 전체 화면 모드](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
+  ![이미지 구성 요소의 전체 화면 모드](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
 * 두 개 이상의 기본 구성 요소에서 만들어진 구성 요소는 우선 원하는 편집 옵션 세트를 확인할 것을 사용자에게 요구합니다.
 
@@ -377,15 +377,15 @@ ht-degree: 79%
 
 * 상속 취소
 
-   ![상속 취소 버튼](/help/sites-cloud/authoring/assets/editing-cancel-inheritance.png)
+  ![상속 취소 버튼](/help/sites-cloud/authoring/assets/editing-cancel-inheritance.png)
 
 * 상속 재활성화(상속이 이미 취소된 경우)
 
-   ![상속 재활성화 버튼](/help/sites-cloud/authoring/assets/editing-reenable-inheritance.png)
+  ![상속 재활성화 버튼](/help/sites-cloud/authoring/assets/editing-reenable-inheritance.png)
 
 * 롤라웃 작업은 블루프린트 또는 Live Copy 소스에서도 사용 가능합니다.
 
-   ![롤아웃 버튼](/help/sites-cloud/authoring/assets/editing-rollout.png)
+  ![롤아웃 버튼](/help/sites-cloud/authoring/assets/editing-rollout.png)
 
 ## 페이지 템플릿 편집 {#editing-the-page-template}
 
@@ -420,7 +420,6 @@ ht-degree: 79%
 >* 콘텐츠에 있는 링크는 볼 수는 있지만 편집 모드에서 액세스할 수는 없습니다.
 >* 링크를 사용하여 탐색하려는 경우 미리보기 옵션 중 하나를 사용합니다.
 >* [키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M`을 사용하여 미리보기와 마지막에 선택한 모드 간에 전환할 수 있습니다.
-
 
 >[!NOTE]
 >
@@ -511,7 +510,6 @@ AEM에서는 다른 사람이 콘텐츠를 수정할 수 없도록 페이지를 
 >* [키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Z`를 사용하여 페이지 편집 작업을 취소할 수 있습니다.
 >* 또한 키보드 단축키 `Ctrl-Y`를 사용하여 페이지 편집 작업을 재실행할 수 있습니다.
 
-
 >[!NOTE]
 >
 >페이지 편집 내용을 실행 취소하거나 재실행할 때 가능한 사항에 대한 모든 세부 사항은 [페이지 편집 실행 취소 및 재실행 - 이론](#undoing-and-redoing-page-edits-the-theory)을 참조하십시오.
@@ -541,5 +539,4 @@ AEM에는 사용자가 수행한 작업 내역이 순서대로 저장됩니다. 
 >* 파일 및 이미지 변경을 취소하거나 재실행하려면 특수 권한이 필요합니다.
 >* 파일과 이미지에 대한 변경 내역은 최소 10시간 동안 지속됩니다. 그러나 이 시간 이후에는 변경 사항의 실행 취소가 보장되지 않습니다. 관리자는 기본 시간인 10시간을 변경할 수 있습니다.
 >* 시스템 관리자는 인스턴스에 대한 요구 사항에 따라 실행 취소/재실행 기능의 다양한 측면을 구성할 수 있습니다.
-   <!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->
-
+<!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->

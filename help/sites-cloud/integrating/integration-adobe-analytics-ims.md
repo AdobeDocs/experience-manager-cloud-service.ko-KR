@@ -2,10 +2,10 @@
 title: Adobe Analytics와 통합할 때 사용되는 IMS 구성
 description: Adobe Analytics와 통합할 때 사용되는 IMS 구성 알아보기
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '894'
-ht-degree: 100%
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+workflow-type: tm+mt
+source-wordcount: '887'
+ht-degree: 92%
 
 ---
 
@@ -55,7 +55,7 @@ Analytics Standard API를 통해 Adobe Experience Manager as a Cloud Service(AEM
 
    >[!CAUTION]
    >
-   >[AEM에서 IMS 구성을 완료](#completing-the-ims-configuration-in-aem)할 때 다시 필요하므로 이 구성을 열어 두십시오.
+   >이 구성을 열어 두십시오. 다음 경우에 다시 필요합니다. [AEM에서 IMS 구성 완료](#completing-the-ims-configuration-in-aem).
 
    ![인증서 다운로드](assets/integrate-analytics-ims-02.png)
 
@@ -73,9 +73,9 @@ Adobe Developer Console을 열고 AEM이 사용할 Adobe Analytics를 사용하�
 
 1. 보유 중인 모든 프로젝트가 표시됩니다. **새 프로젝트 만들기**&#x200B;를 선택합니다. 위치 및 사용량은 다음에 따라 달라집니다.
 
-   * 보유 중인 프로젝트가 없는 경우 **새 프로젝트 만들기**는 중앙 하단에 표시됩니다.
+   * 아직 프로젝트가 없는 경우 **새 프로젝트 만들기** 가운데, 아래쪽
      ![새 프로젝트 만들기 - 첫 번째 프로젝트](assets/integration-analytics-ims-02.png)
-   * 기존 프로젝트가 있는 경우 이들 프로젝트가 나열되며 **새 프로젝트 만들기**는 오른쪽 상단에 표시됩니다.
+   * 기존 프로젝트가 있는 경우 이들 프로젝트가 나열되고 **새 프로젝트 만들기** 오른쪽 위에 있습니다.
      ![새 프로젝트 만들기 - 여러 프로젝트](assets/integration-analytics-ims-03.png)
 
 
@@ -107,7 +107,7 @@ Adobe Developer Console을 열고 AEM이 사용할 Adobe Analytics를 사용하�
 
    ![필요한 제품 프로필 선택](assets/integration-analytics-ims-16.png)
 
-1. 구성이 확인됩니다.
+1. 구성이 확인되었습니다.
 
 ### 통합에 권한 할당 {#assigning-privileges-to-the-integration}
 
@@ -219,5 +219,5 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 
 1. Complete other parameters as required, followed by **OK** on the dialog to confirm the configuration.
 
-1. You can now proceed to [Adding an Analytics Framework](/help/sites-administering/adobeanalytics-connect.md) to configure parameters that will be sent to Adobe Analytics. 
+1. You can now proceed to [Adding an Analytics Framework](/help/sites-administering/adobeanalytics-connect.md) to configure parameters that are sent to Adobe Analytics. 
 -->

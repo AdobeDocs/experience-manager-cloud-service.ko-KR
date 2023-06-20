@@ -2,10 +2,10 @@
 title: 론치 만들기
 description: 론치를 만들어 향후 활성화할 수 있도록 기존 웹 페이지의 새 버전 업데이트를 활성화할 수 있습니다.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 68%
+source-wordcount: '1042'
+ht-degree: 66%
 
 ---
 
@@ -28,7 +28,6 @@ Optionally, you can specify the **Launch Date** (and time) to define when the la
 >이들 페이지는 편집할 수 없습니다. 다음과 같은 메시지가 표시됩니다.
 >
 >* **이 페이지는 론치의 일부가 아닙니다. 프로덕션 페이지로 이동하십시오.**
-
 
 ## 론치 만들기 {#creating-a-launch}
 
@@ -80,7 +79,7 @@ Optionally, you can specify the **Launch Date** (and time) to define when the la
 1. 마법사의 **속성** 단계에서 다음을 지정할 수 있습니다.
 
    * **론치 제목**: 론치의 이름입니다. 작성자에게는 이름이 의미 있어야 합니다.
-   * **기존 콘텐츠 사용**: 원래 콘텐츠가 론치를 만드는 데 사용됩니다.
+   * **기존 콘텐츠 사용**: 론치를 만드는 데 원본 콘텐츠를 사용합니다.
    * **새 템플릿을 사용하여 페이지 바꾸기**: 자세한 내용은 [새 템플릿을 사용하여 론치 만들기](#create-launch-with-new-template)를 참조하십시오.
    * **소스 페이지의 라이브 데이터 상속**: 이 옵션을 선택하면 소스 페이지를 변경할 때 론치 페이지 콘텐츠가 자동으로 업데이트됩니다. 이 옵션은 론치를 [라이브 카피](/help/sites-cloud/administering/msm/overview.md)로 만들어 이 작업을 수행합니다. 기본적으로 이 옵션은 선택되어 있습니다.-->
    * **론치 날짜**: 론치 카피가 활성화될 날짜 및 시간입니다(**프로덕션 준비** 플래그에 따라 다름). [론치 - 이벤트 순서](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)를 참조하십시오.
@@ -113,7 +112,7 @@ Optionally, you can specify the **Launch Date** (and time) to define when the la
 
 >[!CAUTION]
 >
->다른 템플릿을 사용하면 새 페이지가 비어 있습니다. 다른 페이지 구조로 인해 콘텐츠가 복사되지 않습니다.
+>다른 템플릿이 사용되면 새 페이지가 비어 있습니다. 다른 페이지 구조로 인해 콘텐츠가 복사되지 않습니다.
 >
 >이 메커니즘을 사용하면 [기존 페이지](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)의 템플릿을 변경할 수 있습니다. 단, 콘텐츠 손실을 고려해야 합니다.
 

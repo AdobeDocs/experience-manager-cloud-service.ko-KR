@@ -2,16 +2,16 @@
 title: Adobe Target과 통합
 description: Adobe Target과 통합
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: f40a2db6616aeaaf13f8ae19ab429a7301e6c05a
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 100%
+source-wordcount: '726'
+ht-degree: 97%
 
 ---
 
 # Adobe Target과 통합{#integrating-with-adobe-target}
 
-Adobe Marketing Cloud의 일부인 [Adobe Target](https://www.adobe.com/kr/solutions/testing-targeting/testandtarget.html)을 사용하여 모든 채널에 걸친 타겟팅 및 측정을 통해 콘텐츠 관련성을 높일 수 있습니다. 마케터는 Adobe Target을 사용하여 온라인 테스트를 디자인 및 실행하고, 즉석으로 대상자 세그먼트를 만들고(행동 기반), 콘텐츠 및 온라인 경험의 타겟팅을 자동화합니다. AEM as a Cloud Service는 Adobe Target Standard에서 사용하는 타겟팅 워크플로를 채택했습니다. Target을 사용하면 AEM as a Cloud Service의 편집 환경 타겟팅에 잘 알게 될 수 있습니다.
+Adobe Marketing Cloud의 일부인 [Adobe Target](https://www.adobe.com/kr/solutions/testing-targeting/testandtarget.html)을 사용하여 모든 채널에 걸친 타겟팅 및 측정을 통해 콘텐츠 관련성을 높일 수 있습니다. 마케터는 Adobe Target을 사용하여 온라인 테스트를 디자인 및 실행하고, 즉석으로 대상자 세그먼트를 만들고(행동 기반), 콘텐츠 및 온라인 경험의 타겟팅을 자동화합니다. AEM as a Cloud Service는 Adobe Target Standard에서 사용하는 타겟팅 워크플로를 채택했습니다. TargetAEM 를 사용하는 경우 as a Cloud Service의 타깃팅 편집 환경에 익숙할 것입니다.
 
 AEM 사이트와 Adobe Target을 통합함으로써 페이지의 콘텐츠를 개인화하여 다음과 같은 작업을 수행할 수 있습니다.
 
@@ -54,7 +54,6 @@ Target과 통합하려면 다음과 같은 작업을 수행해야 합니다.
 >* 4.x은(는) [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)로 구성됩니다.
 >
 
-
 >[!CAUTION]
 >
 >일반 사용자가 액세스할 수 없도록 게시 인스턴스에서 활동 설정 노드 **cq:ActivitySettings**&#x200B;를 보호해야 합니다. 활동 설정 노드는 Adobe Target에 대한 활동 동기화를 처리하는 서비스에만 액세스할 수 있어야 합니다.
@@ -83,4 +82,3 @@ AEM as a Cloud Service와 Adobe Target을 통합하려면 Adobe Target, AEM 활�
 >* 2,000개 경험
 >* 50개 지표
 >* 50개 보고 세그먼트
-

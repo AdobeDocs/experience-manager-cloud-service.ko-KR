@@ -2,10 +2,10 @@
 title: 콘텐츠 조각
 description: Adobe Experience Manager as a Cloud Service 콘텐츠 조각을 사용하면 페이지 독립적 콘텐츠를 디자인, 작성, 조정 및 사용할 수 있습니다.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 97%
+source-wordcount: '1222'
+ht-degree: 92%
 
 ---
 
@@ -62,7 +62,7 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
    >
    >다른 방법은 특정 콘텐츠 조각을 페이지로 직접 드래그하는 것입니다. 이 경우 관련 구성 요소(콘텐츠 조각)가 자동으로 만들어집니다.
 
-4. 처음에는 **주** 요소 및 **마스터**(변형)의 콘텐츠가 표시됩니다. 필요에 따라 [다른 요소 및/또는 변형을 선택](#selecting-the-element-or-variation)할 수 있습니다.
+4. 처음에는 의 콘텐츠 **기본** 요소 및 **기본** (변형)이 표시됩니다. 필요에 따라 [다른 요소 및/또는 변형을 선택](#selecting-the-element-or-variation)할 수 있습니다.
 
    ![에셋 브라우저의 콘텐츠 조각](/help/sites-cloud/authoring/assets/content-fragments.png)
 
@@ -96,8 +96,8 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
   >사용할 수 있는 요소는 사용된 모델에 따라 다릅니다.
 
 * **변형**
-   * The default **Master** will always be available.
-   * 조각에 대해 변형을 만든 경우 선택이 가능합니다.
+   * 기본값 **기본** 는 항상 사용할 수 있습니다.
+   * 조각에 대해 변형을 만든 경우 선택 항목을 사용할 수 있습니다.
 
 * **ID**
 
@@ -160,7 +160,7 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
 
 관련 콘텐츠가 있는 조각을 페이지에 추가하면 새 탭(**관련 콘텐츠**)이 사이드 패널에서 열립니다.
 
-여기서 에셋을 필요한 위치(기존 구성 요소 또는 해당 구성 요소를 만들 필수 위치)로 드래그할 수 있습니다.
+여기에서 에셋을 필요한 위치(기존 구성 요소 또는 해당 구성 요소를 만드는 필요한 위치)로 드래그할 수 있습니다.
 
 ![이미지 삽입](/help/sites-cloud/authoring/assets/content-fragments-image.png)
 

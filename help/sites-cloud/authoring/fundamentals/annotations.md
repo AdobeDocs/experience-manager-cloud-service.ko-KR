@@ -2,10 +2,10 @@
 title: 페이지 주석 추가
 description: 주석 모드를 사용해 콘텐츠 검토 프로세스를 지원하기 위해 스티커 메모를 사용하듯이 페이지에 주석 및 스케치를 남깁니다.
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 64d801b108229866394e993811a67f983be5df6c
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 97%
+source-wordcount: '698'
+ht-degree: 94%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 97%
 
 1. 주석 추가를 시작하려면 추석 추가 아이콘(도구 모음 왼쪽의 더하기 기호)을 클릭하거나 탭합니다.
 
-1. 필요한 구성 요소(파란색 테두리로 강조 표시되고 주석을 추가할 수 있는 구성 요소)를 클릭하거나 탭하여 주석을 추가하고 대화 상자를 엽니다.
+1. 필요한 구성 요소(파란색 테두리로 강조 표시되어 주석을 추가할 수 있는 구성 요소)를 클릭하거나 탭하여 주석을 추가하고 대화 상자를 엽니다.
 
    ![주석 추가](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
@@ -66,13 +66,13 @@ ht-degree: 97%
    * 주석 텍스트를 입력합니다.
    * 스케치(선과 모양)를 만들어 구성 요소 영역 강조 표시
 
-      ![주석 스케치 버튼](/help/sites-cloud/authoring/assets/annotation-sketch.png)
+     ![주석 스케치 버튼](/help/sites-cloud/authoring/assets/annotation-sketch.png)
 
-      스케치를 만들 때 커서는 십자 모양으로 바뀝니다. 서로 구분되는 여러 선을 그릴 수 있습니다. 스케치 선은 주석 색상을 반영하며 화살표, 원 또는 타원 중 하나일 수 있습니다.
+     스케치를 만들 때 커서는 십자 모양으로 바뀝니다. 서로 구분되는 여러 선을 그릴 수 있습니다. 스케치 선은 주석 색상을 반영하며 화살표, 원 또는 타원 중 하나일 수 있습니다.
 
    * 색상을 선택 또는 변경합니다.
 
-      ![주석 색상 견본 버튼](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
+     ![주석 색상 견본 버튼](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
 
 1. 대화 상자 외부를 클릭하거나 탭하면 주석 대화 상자를 닫을 수 있습니다. 스케치와 함께 주석의 잘린 보기가 표시됩니다.
 

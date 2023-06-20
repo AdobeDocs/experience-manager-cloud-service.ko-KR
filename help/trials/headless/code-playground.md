@@ -4,10 +4,10 @@ description: CodePen 예제 앱 및 JavaScript용 AEM Headless 클라이언트�
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 1949ee211b4f816e05aa779deb9e287347f006ad
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 100%
+source-wordcount: '986'
+ht-degree: 98%
 
 ---
 
@@ -81,7 +81,7 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
 
 ## 지속 쿼리에서 데이터 가져오기 {#use-persisted-query}
 
-25행에서는 앱이 데이터를 가져와야 하는 GraphQL 지속 쿼리를 나타냅니다. 지속 쿼리 이름은 엔드포인트의 이름(예: `your-project` 또는 `aem-demo-assets`), 빗금 그리고 쿼리 이름의 조합입니다. 이전 모듈의 지침을 정확히 따르면 생성한 지속 쿼리가 `your-project` 엔드포인트에 있게 됩니다.
+25행에서는 앱이 데이터를 가져와야 하는 GraphQL 지속 쿼리를 나타냅니다. 지속 쿼리 이름은 엔드포인트의 이름(예: `your-project` 또는 `aem-demo-assets`), 빗금 그리고 쿼리 이름의 조합입니다. 이전 모듈 지침을 정확히 따랐다면 만든 지속 쿼리가 `your-project` 엔드포인트.
 
 1. `persistedQueryName` 변수를 업데이트하여 이전 모듈에서 생성한 지속 쿼리를 사용합니다. 이름 지정 제안을 정확히 따랐다면 `your-project` 엔드포인트에서 `adventure-list`로 명명된 지속 쿼리가 생성되고 `persistedQueryName` 변수를 `your-project/adventure-list`로 설정할 것입니다.
 

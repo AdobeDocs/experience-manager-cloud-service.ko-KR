@@ -2,10 +2,10 @@
 title: 스타일 시스템
 description: 스타일 시스템을 사용하여 템플릿 작성자는 페이지에서 구성 요소를 편집할 때 콘텐츠 작성자가 선택할 수 있도록 구성 요소의 콘텐츠 정책에 스타일 클래스를 정의할 수 있습니다. 이러한 스타일은 보다 유연하게 사용할 수 있도록 구성 요소를 시각적으로 변형한 대체물일 수 있습니다.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1320'
-ht-degree: 75%
+source-wordcount: '1319'
+ht-degree: 74%
 
 ---
 
@@ -154,7 +154,7 @@ ht-degree: 75%
 >
 1. HTL이 모든 것에 우선합니다. `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 1. 그런 다음 여러 활성 스타일 중에서 구성 요소의 정책에 구성된 스타일 목록의 첫 번째 스타일이 적용됩니다.
-1. 마지막으로 구성 요소의 `cq:htmlTag`/ `cq:tagName`은 폴백 값으로 간주됩니다.
+1. 마지막으로 구성 요소는 `cq:htmlTag`/ `cq:tagName` 는 폴백 값으로 간주됩니다.
 >
 
 스타일 이름을 정의하는 기능은 레이아웃 컨테이너 또는 콘텐츠 조각 구성 요소와 같은 일반 구성 요소에 추가적인 의미를 제공하는 데 유용합니다.

@@ -4,10 +4,10 @@ description: Adobe Target과 통합
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 98%
+source-wordcount: '1042'
+ht-degree: 91%
 
 ---
 
@@ -51,7 +51,7 @@ Adobe Target 테넌트 ID 및 Adobe Target 클라이언트 코드 필드를 구�
 
 * 기본적으로 클라이언트 코드(먼저 추가된 경우)도 테넌트 ID 필드에 자동으로 복사됩니다.
 * 기본 테넌트 ID 설정을 변경할 수 있는 옵션이 있습니다.
-* 이렇게 하면 Target에 대한 백엔드 호출은 테넌트 ID를 기반으로 하고 Target에 대한 클라이언트측 호출은 클라이언트 코드를 기반으로 하게 됩니다.
+* 따라서 Target에 대한 백엔드 호출은 테넌트 ID를 기반으로 하고 Target에 대한 클라이언트측 호출은 클라이언트 코드를 기반으로 합니다.
 
 앞서 설명된 바와 같이 AEM as a Cloud Service에서는 첫 번째 경우가 가장 일반적입니다. 어느 경우든 두 가지 필드 **모두**&#x200B;에 요구 사항에 따라 올바른 정보가 포함되어 있는지 확인하십시오.
 
@@ -112,7 +112,7 @@ AEM은 Experience Platform Launch와의 획기적인 통합 기능을 제공합�
 3. **구성** 버튼을 선택합니다. 가져온 Target 계정 자격 증명이 포함된 구성 창 및 이 확장 기능에 대한 at.js 버전이 표시됩니다.
 4. **저장**&#x200B;을 선택하여 Launch 속성에 Target 확장 기능을 추가합니다. **설치된 확장 기능** 목록에 나열된 Target 확장 기능을 확인할 수 있습니다.
    ![확장 기능 저장](assets/configure_extension1.png "확장 기능 저장")
-5. 위의 단계를 반복하여 **Adobe ContextHub** 확장 기능을 검색하고 설치하십시오. 이는 타겟팅이 수행될 ContextHub 매개변수와의 통합에 필요합니다.
+5. 위의 단계를 반복하여 을 검색합니다. **Adobe ContextHub** 확장 및 설치(타깃팅이 수행되는 contexthub 매개 변수와의 통합에 필요).
 
 ### 데이터 요소 만들기 {#data-element}
 
@@ -130,7 +130,7 @@ AEM은 Experience Platform Launch와의 획기적인 통합 기능을 제공합�
 
 1. 스크린샷의 예시처럼 액션 세트를 추가합니다.
    ![액션](assets/rules1.png "액션")
-2. [모든 mbox에 매개변수 추가]에서 이전에 구성한 데이터 요소(위 데이터 요소 참조)를 mbox 호출에서 전송될 매개변수에 추가합니다.
+2. 모든 Mbox에 매개 변수 추가에서 이전에 구성된 데이터 요소(위의 데이터 요소 참조)를 mbox 호출에서 전송되는 매개 변수에 추가합니다.
    ![mbox](assets/map_data1.png "액션")
 
 ### 빌드 및 게시 {#build-publish}
