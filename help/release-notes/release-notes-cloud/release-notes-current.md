@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: d4d44f452406e452372e409c6594ef4a256b9682
 workflow-type: tm+mt
 source-wordcount: '1095'
-ht-degree: 32%
+ht-degree: 62%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 32%
 
 ## 릴리스 일자 {#release-date}
 
-의 릴리스 날짜 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 기능 릴리스(2023.4.0)는 2023년 6월 7일입니다. 다음 기능 릴리스(2023.6.0)는 2023년 6월 29일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 기능 릴리스(2023.4.0)의 릴리스 날짜는 2023년 6월 7일입니다. 다음 기능 릴리스(2023.6.0)는 2023년 6월 29일에 예정되어 있습니다.
 
 ## 릴리스 비디오 {#release-video}
 
-2023년 4월 릴리스 개요 비디오를 통해 2023.4.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오:
+2023년 4월 릴리스 개요 비디오를 통해 2023.4.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418681/?quality=12)
 
@@ -41,32 +41,32 @@ ht-degree: 32%
 * 콘텐츠 조각을 JSON 오퍼로 AEM as a Cloud Service에서 Adobe Target으로 내보냅니다.
 * 내부 캐싱 향상과 함께 GraphQL 페이지 매김 및 정렬에 대한 지원은 이제 복잡한 GraphQL 쿼리 및 필터를 사용하여 AEM에서 대규모 콘텐츠 세트를 가져올 때 분리된 클라이언트 애플리케이션의 성능을 개선하는 데 도움이 됩니다.
 
-### 의 새로운 기능 [!DNL Experience Manager Sites] 전치사 {#prerelease-sites}
+### [!DNL Experience Manager Sites] 프리릴리스의 새로운 기능 {#prerelease-sites}
 
-* 이제 콘텐츠 조각 및 해당 참조를 게시자에 게시할 수 있습니다. [AEM 미리보기 서비스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#access-preview-service) 사용 [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en)를 활성화하면 사용자가 라이브로 전환되기 전에 분리된 미리보기 애플리케이션에서 최종 경험을 미리 볼 수 있습니다.
+* 이제 [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=ko)을 사용하여 콘텐츠 조각 및 해당 참조를 [AEM 미리보기 서비스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=ko#access-preview-service)에 게시하게 되면 사용자는 시작하기 전에 분리된 미리보기 애플리케이션을 통해 최종 경험을 미리 볼 수 있습니다.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets]의 새로운 기능 {#assets-features}
 
-* WebP 이미지에 대한 지원이 추가되어 자동으로 메타데이터를 추출하고 썸네일 및 사용자 정의 렌디션을 생성합니다. 이제 이러한 파일에 대해 스마트 태그 기능도 지원됩니다. Dynamic Media 기능은 WebP에서 입력 형식으로 지원되지 않습니다.
+* WebP 이미지에 대한 지원이 추가되어 자동으로 메타데이터를 추출하고 썸네일 및 사용자 정의 렌디션을 생성합니다. 이제 이러한 파일에 대해 스마트 태그 기능도 지원됩니다. Dynamic Media 기능은 WebP에 대해 입력 포맷으로 지원되지 않습니다.
 
-* [향상된 검색 경험](/help/assets/search-assets.md#aftersearch) - 이제 검색 결과에 표시되는 에셋에서 다음 작업을 빠르게 수행할 수 있습니다.
+* [검색 환경 개선 사항](/help/assets/search-assets.md#aftersearch) - 이제 검색 결과에 표시되는 자산에 대해 다음 작업을 빠르게 수행할 수 있습니다.
 
-   * 워크플로우 만들기
+   * 워크플로 만들기
    * 버전 만들기
-   * 에셋 연결 또는 연결 해제
+   * 자산 연결 또는 연결 해제
 
-     이러한 작업을 수행하기 위해 에셋 위치로 이동하여 에셋 위치의 속성을 볼 필요가 없습니다.
+     해당 작업을 수행하기 위해 자산 위치로 이동하여 자산 속성을 볼 필요가 없습니다.
 
-* 색상 검색 패싯 유용성 개선 사항 - 이제 색상 값에 대한 입력 필드를 편집할 수 있으며 색상 피커를 종료할 때만 검색 결과가 업데이트됩니다.
+* 색상 검색 패싯 유용성 개선 사항 - 이제 색상 값 입력 필드를 편집할 수 있고, 색상 피커를 종료할 때만 검색 결과를 업데이트합니다.
 
 * Dynamic Media 비디오 게재(CMAF가 활성화됨)에서 적응형 스트리밍을 위한 새로운 프로토콜 지원 시작(DASH - HTTP를 통한 동적 적응형 스트리밍):
    * 적응형 스트리밍(DASH/HLS)은 비디오에 대한 더 나은 최종 사용자 시청 경험 보장
    * DASH는 적응형 비디오 스트리밍을 위한 국제 표준 프로토콜이며 업계에서 널리 채택되고 있음
-   * 지원 티켓을 통해 모든 지역에서 사용 가능
+   * 모든 지역에서 사용 가능, 지원 티켓을 통해 활성화
 
-* Dynamic Media _스냅샷_ - 테스트 이미지 또는 Dynamic Media URL을 실험하여 다양한 이미지 수정자의 출력을 확인하고 파일 크기(WebP 및 AVIF 전달), 네트워크 대역폭 및 장치 픽셀 비율에 대한 스마트 이미징 최적화를 평가합니다. 다음을 참조하십시오 [Dynamic Media 스냅샷](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
+* Dynamic Media _스냅샷_ - 테스트 이미지 또는 Dynamic Media URL을 실험하여 다양한 이미지 수정자의 출력을 확인하고 파일 크기(WebP 및 AVIF 전달), 네트워크 대역폭 및 장치 픽셀 비율에 대한 스마트 이미징 최적화를 평가합니다. [Dynamic Media 스냅샷](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html)을 참조하십시오.
 
 ### 의 기능 [!DNL Assets] 프리릴리스 {#prerelease-feature-assets}
 
@@ -80,11 +80,11 @@ ht-degree: 32%
 
 ### [!DNL Forms] 프리릴리스의 기능 {#prerelease-features-forms}
 
-* [AEM 페이지 편집기 내의 적응형 Forms](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): 이제 AEM 페이지 편집기를 사용하여 여러 양식을 신속하게 만들고 사이트 페이지에 추가할 수 있습니다. 이 기능을 통해 콘텐츠 작성자는 동적 동작, 유효성 검사, 데이터 통합, 기록 문서 생성 및 비즈니스 프로세스 자동화를 비롯한 적응형 양식 구성 요소의 기능을 사용하여 Sites 페이지 내에서 매끄러운 데이터 캡처 경험을 만들 수 있습니다. 다음과 같은 작업을 수행할 수 있습니다.
+* [AEM 페이지 편집기 내 적응형 양식](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): 이제 AEM 페이지 편집기를 사용하여 여러 양식을 빠르게 만들고 사이트 페이지에 추가할 수 있습니다. 이 기능을 통해 콘텐츠 작성자는 동적 비헤이비어, 유효성 검사, 데이터 통합, 기록 문서 생성 및 비즈니스 프로세스 자동화 등 적응형 양식 구성 요소의 기능을 사용하여 Sites 페이지에서 원활한 데이터 캡처 경험을 만들 수 있습니다. 다음과 같은 작업을 수행할 수 있습니다.
 
-   * 양식 구성 요소를 AEM Sites 편집기 또는 경험 조각의 적응형 Forms 컨테이너 구성 요소로 끌어다 놓아 적응형 양식을 만드십시오.
+   * AEM Sites 편집기 또는 경험 조각에서 양식 구성 요소를 적응형 양식 컨테이너 구성 요소로 드래그 앤 드롭하여 적응형 양식을 만듭니다.
    * AEM Sites 편집기 내의 적응형 Forms 마법사를 사용하여 모든 Sites 페이지와 독립적인 양식을 만들 수 있으므로 여러 페이지에서 이러한 양식을 자유롭게 재사용할 수 있습니다.
-   * 사이트 페이지에 여러 양식을 추가하여 사용자 경험을 간소화하고 유연성을 높일 수 있습니다.
+   * Sites 페이지에 여러 양식을 추가하여 사용자 경험을 간소화하고 더 많은 유연성을 제공합니다.
 
      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
@@ -105,13 +105,13 @@ Headless 적응형 양식을 사용하여 개발자가 기존의 그래픽 사�
 * 양식 애플리케이션과 함께 독점 UI 구성 요소 재사용
 * Adobe Experience Manager Forms의 기능 사용
 
-다음으로 이메일을 보낼 수 있습니다. `aem-forms-headless@adobe.com` 얼리어답터 프로그램에 참여하려면 공식 이메일 ID에서 을(를) 전송하십시오.
+공식 이메일 ID에서 `aem-forms-headless@adobe.com`으로 이메일을 보내 얼리 어답터 프로그램에 참여할 수 있습니다.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### 새로운 기능 {#what-is-new-foundation}
 
-* 추가 게시 영역: 사이트 고객은 기본 영역 외에 최대 3개의 게시 영역에 라이선스를 부여할 수 있습니다. 트래픽이 추가 게시 팜으로 라우팅되므로 특정 요청에 대한 지연 시간이 단축되고 지역 중단에 대한 복원력이 향상됩니다. 라이선싱에 대한 자세한 내용은 Adobe 계정 관리자에게 문의하십시오 [추가 게시 영역](/help/operations/additional-publish-regions.md) 을 참조하십시오.
+* 추가 게시 지역: Sites 고객은 기본 지역 외에 최대 3개의 게시 지역을 라이선싱할 수 있습니다. 트래픽이 추가 게시 팜으로 라우팅되므로 특정 요청에 대한 지연 시간이 단축되고 지역 중단에 대한 복원력이 향상됩니다. 프로그램의 [추가 게시 지역](/help/operations/additional-publish-regions.md) 라이선싱에 대한 자세한 내용은 Adobe 계정 관리자에게 문의하십시오.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 

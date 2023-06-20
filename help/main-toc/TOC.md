@@ -206,9 +206,9 @@ ht-degree: 99%
       + Best Practices Analyzer {#best-practices-analyzer}
          + [개요](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
          + [Best Practices Analyzer 사용](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
-      + 콘텐츠 변환기 {#content-transformer}
+      + 콘텐츠 트랜스포머 {#content-transformer}
          + [개요](/help/journey-migration/content-transformer/overview.md)
-         + [컨텐츠 변환기 사용](/help/journey-migration/content-transformer/using.md)
+         + [콘텐츠 트랜스포머 사용](/help/journey-migration/content-transformer/using.md)
       + 콘텐츠 전송 도구 {#content-transfer-tool}
          + [개요](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
          + [콘텐츠 전송 도구 사전 요구 사항](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
@@ -338,7 +338,7 @@ ht-degree: 99%
          + [MSM 및 번역](/help/sites-cloud/administering/msm-and-translation.md)
          + 다중 사이트 관리자 {#msm}
             + [MSM 및 Live Copy 개요](/help/sites-cloud/administering/msm/overview.md)
-            + [Live Copy 동기화 구성](/help/sites-cloud/administering/msm/live-copy-sync-config.md)
+            + [라이브 카피 동기화 구성](/help/sites-cloud/administering/msm/live-copy-sync-config.md)
             + [Live Copy 생성 및 동기화](/help/sites-cloud/administering/msm/creating-live-copies.md)
             + [Live Copy 개요 콘솔](/help/sites-cloud/administering/msm/live-copy-overview.md)
             + [롤아웃 충돌](/help/sites-cloud/administering/msm/rollout-conflicts.md)
@@ -775,7 +775,7 @@ ht-degree: 99%
       + 코드 관리 {#managing-code}
          + [Maven 프로젝트 버전 처리](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Cloud Manager의 저장소](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
-         + [저장소에 액세스](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+         + [저장소 액세스](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Cloud Manager와 함께 git 사용](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [여러 저장소 사용](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [엔터프라이즈 개발 팀 설정](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
