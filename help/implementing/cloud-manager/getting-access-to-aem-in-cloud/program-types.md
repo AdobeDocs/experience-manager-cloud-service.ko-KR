@@ -3,7 +3,7 @@ title: 프로그램 및 프로그램 유형
 description: Cloud Manager의 계층 구조와 다양한 유형의 프로그램이 해당 구조에 어떻게 적합하고 어떻게 다른지 알아봅니다.
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '531'
 ht-degree: 100%
 
