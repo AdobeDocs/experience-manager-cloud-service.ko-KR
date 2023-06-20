@@ -2,10 +2,10 @@
 title: 콘텐츠 전송 도구 시작하기
 description: 콘텐츠 전송 도구 시작하기
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: ea5d86e1a43bb7ae0c7608fc0625983cf2bf273f
 workflow-type: tm+mt
-source-wordcount: '1396'
-ht-degree: 22%
+source-wordcount: '1439'
+ht-degree: 21%
 
 ---
 
@@ -52,6 +52,8 @@ SSL/TLS 연결 문제를 이해하는 것은 때때로 어려울 수 있습니�
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
 
+>[!NOTE]
+>이 플래그는 SSL 문제 디버깅에만 사용됩니다. 추출을 실행하기 전에 많은 양의 디스크 공간이 필요할 수 있으므로 플래그가 비활성화되어 있는지 확인하십시오. 이로 인해 드라이브 용량이 채워지고 추출 프로세스가 실패할 수 있습니다.
 
 ## 컨텐츠 전송 도구 실행 {#running-tool}
 
