@@ -2,9 +2,9 @@
 title: AEM Workflow 단계에서 변수를 추가하는 방법
 description: 변수를 만들고 변수 값을 설정하고에서 사용하는 방법을 알아봅니다. [!DNL AEM Forms] 워크플로우 단계.
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '2059'
+source-wordcount: '2061'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ArrayList 데이터 유형을 사용하여 변수 컬렉션을 생성합니다. 
 
 변수를 생성하려면 다음을 수행합니다.
 
-1. AEM 인스턴스에서 도구로 이동합니다 ![](assets/hammer-icon.svg) > 워크플로우 > 모델.
+1. AEM 인스턴스에서 도구로 이동합니다 ![망치 아이콘](assets/hammer-icon.svg) > 워크플로우 > 모델.
 1. 누르기 **[!UICONTROL 만들기]** 워크플로우 모델의 제목과 선택적 이름을 지정합니다. 모델을 선택하고 을 누릅니다. **[!UICONTROL 편집]**.
 1. 워크플로우 모델의 사이드 킥에서 사용할 수 있는 변수 아이콘을 탭한 다음 을 누릅니다 **[!UICONTROL 변수 추가]**.
 
@@ -270,7 +270,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 변수를 삭제하기 전에 워크플로우에서 변수의 모든 참조를 제거합니다. 변수가 워크플로우에서 사용되지 않는지 확인합니다.
 
-변수를 삭제하려면 다음을 수행하십시오.
+변수를 삭제하려면 다음 작업을 수행하십시오.
 
 1. 워크플로 편집 페이지에서 워크플로 모델의 사이드 킥에 있는 변수 아이콘을 탭합니다. 왼쪽 창의 변수 섹션에는 기존 변수가 모두 표시됩니다.
 1. 삭제하려는 변수 이름 옆에 있는 삭제 아이콘을 탭합니다.

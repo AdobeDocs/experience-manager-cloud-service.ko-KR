@@ -2,9 +2,9 @@
 title: 적합한 사람, 적합한 역할
 description: 적합한 사람, 적합한 역할
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '829'
 ht-degree: 97%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 97%
 
 <br>
 
-![](assets/team_involvement.png)
+![구현을 위한 역할 검토](assets/team_involvement.png)
 
 **구현 팀과 함께 이 목록을 검토**&#x200B;하고 각 역할에 대해 관련 자격 조건을 갖춘 인력이 있는지 확인하십시오. Adobe Experience Cloud에 익숙하지 않은 팀 멤버는 [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) 학습 리소스를 사용하여 [Adobe 디지털 학습](https://learning.adobe.com/certification.html)을 통해 인증을 받을 수 있습니다.
 

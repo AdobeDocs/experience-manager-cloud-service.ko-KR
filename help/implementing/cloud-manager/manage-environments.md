@@ -2,9 +2,9 @@
 title: 환경 관리
 description: 만들 수 있는 환경 유형과 Cloud Manager 프로젝트용으로 환경을 만드는 방법에 대해 알아봅니다.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 5311ba7f001201fc94c73fa52bc7033716c1ba78
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '2271'
+source-wordcount: '2276'
 ht-degree: 48%
 
 ---
@@ -245,7 +245,7 @@ Cloud Manager는 파이프라인과 함께 마지막으로 배포된 버전보�
 
 **환경** 카드에 있는 환경의 줄임표 메뉴에서 **Developer Console**&#x200B;을 선택합니다. 새 탭이 브라우저에 열리고 페이지에 대한 로그온 페이지가 표시됩니다. **개발자 콘솔**.
 
-![](assets/environ-devconsole.png)
+![Developer Console 로그인](assets/environ-devconsole.png)
 
 을(를) 가진 사용자만 **개발자** 역할에 다음에 대한 액세스 권한 있음: **개발자 콘솔**. 단, 샌드박스 프로그램의 경우 샌드박스 프로그램에 대한 액세스 권한이 있는 모든 사용자는에 액세스할 수 있습니다. **개발자 콘솔**.
 

@@ -3,9 +3,9 @@ title: 화면의 비디오에 대한 썸네일 as a Cloud Service 지원
 description: 이 페이지에서는 Screens의 비디오에 대한 썸네일 지원을 as a Cloud Service으로 추가하는 방법에 대해 설명합니다.
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '503'
 ht-degree: 1%
 
 ---
@@ -42,19 +42,19 @@ ht-degree: 1%
 
 1. 채널을 선택하고 을 클릭합니다. **편집** 작업 표시줄에서 을 클릭하여 편집기를 엽니다.
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
+   ![편집기 열기](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
 
 1. 아래 그림과 같이 기존 비디오 구성 요소를 추가하거나 편집합니다.
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
+   ![구성 요소 편집](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
 
 1. 비디오를 선택하고 *렌치* 아이콘을 클릭하여 비디오 속성을 엽니다.
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
+   ![렌치를 클릭합니다.](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
 
 1. 다음 **비디오** 대화 상자가 열리고 여기서 를 볼 수 있습니다 **축소판** 놓기 영역.
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+   ![썸네일 보기](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
 
 1. 자산 선택기에서 다음으로 이미지를 끌어다 놓기 **축소판** 놓기 영역 및 클릭 **완료**.
 
