@@ -2,10 +2,10 @@
 title: 메일 서비스에 대한 OAuth2 지원
 description: Adobe Experience Manager as a Cloud Service의 메일 서비스에 대한 Oauth2 지원
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 162974b2d6f0efb247f98236d7a2cd996a2e27c9
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 85%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ AEM as a Cloud Service 메일 서비스에 대한 자세한 내용은 [이메일
 1. 새로 생성된 앱으로 이동하여 **API 권한**&#x200B;을 선택합니다.
 1. **권한 추가** - **그래프 권한** - **위임된 권한**&#x200B;으로 이동합니다.
 1. 아래의 앱에 대한 권한을 선택한 다음 **권한 추가**&#x200B;를 클릭합니다.
-   * `https://graph.microsoft.com/SMTP.Send`
+   * `https://outlook.office.com/SMTP.Send`
    * `https://graph.microsoft.com/Mail.Read`
    * `https://graph.microsoft.com/Mail.Send`
    * `https://graph.microsoft.com/User.Read`
@@ -58,7 +58,7 @@ AEM as a Cloud Service 메일 서비스에 대한 자세한 내용은 [이메일
 
 다음 단계를 따라 이 작업을 수행할 수 있습니다.
 
-1. `clientID` 및 `tenantID`를 계정과 관련된 값으로 바꾼 후 브라우저에서 다음 URL을 엽니다. `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize?client_id=<clientId>&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://graph.microsoft.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access&state=12345`
+1. `clientID` 및 `tenantID`를 계정과 관련된 값으로 바꾼 후 브라우저에서 다음 URL을 엽니다. `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize?client_id=<clientId>&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access&state=12345`
 1. 메시지가 표시되면 권한을 허용합니다.
 1. 해당 URL은 다음 형식으로 구성된 새 위치로 리디렉션합니다. `http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`
 1. 위 예의 `<code>` 값을 복사합니다.
@@ -69,7 +69,7 @@ AEM as a Cloud Service 메일 서비스에 대한 자세한 내용은 [이메일
    --header 'Content-Type: application/x-www-form-urlencoded' \
    --header 'Cookie: buid=0.ARgAep0nU49DzUGmoP2wnvyIkcQjsx26HEpOnvHS0akqXQgYAAA.AQABAAEAAAD--DLA3VO7QrddgJg7Wevry9XPJSKbGVlPt5NWYxLtTl3K1W0LwHXelrffApUo_K02kFrkvmGm94rfBT94t25Zq4bCd5IM3yFOjWb3V22yDM7-rl112sLzbBQBRCL3QAAgAA; esctx=AQABAAAAAAD--DLA3VO7QrddgJg7Wevr4a8wBjYcNbBXRievdTOd15caaeAsQdXeBAQA3tjVQaxmrOXFGkKaE7HBzsJrzA-ci4RRpor-opoo5gpGLh3pj_iMZuqegQPEb1V5sUVQV8_DUEbBv5YFV2eczS5EAhLBAwAd1mHx6jYOL8LwZNDFvd2-MhVXwPd6iKPigSuBxMogAA; x-ms-gateway-slice=estsfd; stsservicecookie=estsfd; fpc=Auv6lTuyAP1FuOOCfj9w0U_5vR5dAQAAALDXP9gOAAAAwIpkkQEAAACT2T_YDgAAAA' \
    --data-urlencode 'client_id=<clientID>' \
-   --data-urlencode 'scope=https://graph.microsoft.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access' \
+   --data-urlencode 'scope=https://outlook.office.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access' \
    --data-urlencode 'redirect_uri=http://localhost' \
    --data-urlencode 'grant_type=authorization_code' \
    --data-urlencode 'client_secret=<clientSecret>' \
@@ -89,7 +89,7 @@ AEM측의 OAuth 구성을 진행하기에 앞서 아래 절차에 따라 accessT
    --header 'Content-Type: application/x-www-form-urlencoded' \
    --header 'Cookie: buid=0.ARgAep0nU49DzUGmoP2wnvyIkcQjsx26HEpOnvHS0akqXQgYAAA.AQABAAEAAAD--DLA3VO7QrddgJg7Wevry9XPJSKbGVlPt5NWYxLtTl3K1W0LwHXelrffApUo_K02kFrkvmGm94rfBT94t25Zq4bCd5IM3yFOjWb3V22yDM7-rl112sLzbBQBRCL3QAAgAA; esctx=AQABAAAAAAD--DLA3VO7QrddgJg7Wevr4a8wBjYcNbBXRievdTOd15caaeAsQdXeBAQA3tjVQaxmrOXFGkKaE7HBzsJrzA-ci4RRpor-opoo5gpGLh3pj_iMZuqegQPEb1V5sUVQV8_DUEbBv5YFV2eczS5EAhLBAwAd1mHx6jYOL8LwZNDFvd2-MhVXwPd6iKPigSuBxMogAA; x-ms-gateway-slice=estsfd; stsservicecookie=estsfd; fpc=Auv6lTuyAP1FuOOCfj9w0U_IezHLAQAAAPeNSdgOAAAA' \
    --data-urlencode 'client_id=<client_id>' \
-   --data-urlencode 'scope=https://graph.microsoft.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access' \
+   --data-urlencode 'scope=https://outlook.office.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access' \
    --data-urlencode 'redirect_uri=http://localhost' \
    --data-urlencode 'grant_type=refresh_token' \
    --data-urlencode 'client_secret=<client_secret>' \
@@ -126,7 +126,7 @@ AEM측의 OAuth 구성을 진행하기에 앞서 아래 절차에 따라 accessT
 
 1. 이전 섹션에 설명된 바와 같이 `authUrl`, `tokenUrl` 및 `refreshURL`을 구성하여 입력합니다.
 1. 구성에 다음 범위를 추가합니다.
-   * `https://graph.microsoft.com/SMTP.Send`
+   * `https://outlook.office.com/SMTP.Send`
    * `https://graph.microsoft.com/Mail.Read`
    * `https://graph.microsoft.com/Mail.Send`
    * `https://graph.microsoft.com/User.Read`
