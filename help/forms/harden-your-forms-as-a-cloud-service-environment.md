@@ -4,9 +4,9 @@ seo-title: Secure your [!DNL AEM Forms] as a Cloud Service environment
 description: 보안 유지 [!DNL AEM Forms] as a Cloud Service 환경
 seo-description: Secure your [!DNL AEM Forms] as a Cloud Service environment
 contentOwner: khsingh
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f0edd0e3deeba89dcbd2dc1a07859138b24e2220
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '113'
 ht-degree: 0%
 
 ---
@@ -14,4 +14,4 @@ ht-degree: 0%
 
 # 강화 [!DNL AEM Forms] as a Cloud Service 환경 {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
 
-Lorem Ipsum은 단순히 인쇄 및 조판 산업의 더미 텍스트입니다. 로렘 입섬은 1500년대 이후로 업계의 표준 더미 텍스트였다. 당시 알려지지 않은 프린터가 활자를 가져와서 이를 뒤섞어 활자 표본 책을 만들었다. 그것은 5 세기 뿐만 아니라 전자 조형물로의 도약에도 살아남았고, 본질적으로 변하지 않았습니다. 1960 년대 로렘 Ipsum 구절을 포함하는 Letraset 시트, 그리고 더 최근에는 Lorem Ipsum 버전을 포함하는 Aldus PageMaker과 같은 데스크톱 게시 소프트웨어로 대중화되었습니다.
+구문 *로렘 입숨* 는 인쇄 및 조판 산업의 넌센스 자리 표시자 텍스트입니다. *로렘 입숨* 르네상스 시대 이래로 이 산업에서 표준 더미 텍스트가 되어왔는데, 당시 알려지지 않은 프린터가 활자를 가져와서 그것을 뒤섞어 활자 표본 책을 만들었던 것이다. 500년 동안 지속되었을 뿐 아니라, 전자 조형물로의 도약에도 변함이 없었다. 그것은 1960 년대 Letraset 시트의 출시에 의해 대중화되었습니다 *로렘 입숨* Lorem Ipsum 버전을 포함한 Aldus PageMaker과 같은 데스크톱 게시 소프트웨어를 사용하는 것이 더 최근 문제입니다.

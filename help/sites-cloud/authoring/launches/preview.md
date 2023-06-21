@@ -1,11 +1,11 @@
 ---
 title: 론치를 사용하여 향후 상태 미리보기
-description: 타임워프를 사용하여 론치를 기반으로 하는 콘텐츠를 볼 수 있습니다.
+description: 타임워프를 사용하면 론치를 기반으로 하는 콘텐츠를 볼 수 있습니다.
 exl-id: 3e19f11c-53cc-491b-8d9b-1e82745caebc
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: f0edd0e3deeba89dcbd2dc1a07859138b24e2220
 workflow-type: tm+mt
 source-wordcount: '97'
-ht-degree: 56%
+ht-degree: 45%
 
 ---
 
