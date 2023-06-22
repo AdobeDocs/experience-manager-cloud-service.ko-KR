@@ -1,10 +1,10 @@
 ---
 title: AMS를 Adobe Experience Manager as a Cloud Service Dispatcher 구성으로 변환
 description: AMS를 Adobe Experience Manager as a Cloud Service Dispatcher 구성으로 변환
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
 workflow-type: tm+mt
-source-wordcount: '1342'
-ht-degree: 95%
+source-wordcount: '1275'
+ht-degree: 44%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 95%
 이 섹션에서는 AMS 구성을 변환하는 방법에 대한 단계별 지침을 제공합니다.
 
 >[!NOTE]
->이 섹션에서는 사용자가 [Dispatcher 구성 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)에 설명된 것과 유사한 구조를 갖는 아카이브를 사용한다고 가정합니다.
+>이 섹션에서는 사용자가 [Dispatcher 구성 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/dispatcher-configurations.html)에 설명된 것과 유사한 구조를 갖는 아카이브를 사용한다고 가정합니다.
 
 ## AMS를 AEM as a Cloud Service Dispatcher 구성으로 변환하는 단계
 
 1. **아카이브 추출 및 최종 접두사 제거**
 
-   아카이브를 폴더에 추출하고, 직속 하위 폴더가 conf, conf.d, conf.dispatcher.d 및 conf.modules.d로 시작하는지 확인합니다. 이들로 시작하지 않으면 해당 하위 폴더를 계층 구조에서 위로 이동합니다.
+   아카이브를 폴더에 추출하고, 직속 하위 폴더가 conf, conf.d, conf.dispatcher.d 및 conf.modules.d로 시작하는지 확인합니다. 그렇지 않으면 계층 구조에서 위로 이동합니다.
 
-1. **사용하지 않는 하위 폴더와 파일 제거**
+1. **사용하지 않는 하위 폴더 및 파일 제거**
 
    conf, conf.modules.d 하위 폴더 및 conf.d/*.conf와 일치하는 파일을 제거합니다.
 
@@ -51,7 +51,7 @@ ht-degree: 95%
 
    * 이제 conf.d/rewrite에 단일 파일이 포함되어 있는 경우 이름을 rewrite.rules로 변경하고, 가상 호스트 파일에서도 이 파일을 참조하는 Include 문을 수정해야 합니다.
 
-   * 하지만 폴더에 가상 호스트 특정 파일이 여러 개 있는 경우 해당 컨텐츠를 가상 호스트 파일에서 해당 파일을 참조하는 Include 문에 복사해야 합니다.
+   * 그러나 폴더에 가상 호스트별 파일이 여러 개 있는 경우 해당 컨텐츠를 가상 호스트 파일에서 해당 파일을 참조하는 Include 문에 복사해야 합니다.
 
 1. **변수 확인**
 
@@ -61,7 +61,7 @@ ht-degree: 95%
 
    1. 이제 conf.d/variables에 단일 파일이 포함되어 있는 경우 이름을 custom.vars로 변경하고, 가상 호스트 파일에서도 이 파일을 참조하는 Include 문을 수정해야 합니다.
 
-   1. 하지만 폴더에 가상 호스트 특정 파일이 여러 개 있는 경우 해당 컨텐츠를 가상 호스트 파일에서 해당 파일을 참조하는 Include 문에 복사해야 합니다.
+   1. 그러나 폴더에 가상 호스트별 파일이 여러 개 있는 경우 해당 컨텐츠를 가상 호스트 파일에서 해당 파일을 참조하는 Include 문에 복사해야 합니다.
 
 1. **허용 목록 제거**
 
@@ -76,10 +76,10 @@ DISP_ID, PUBLISH_FORCE_SSL 또는 PUBLISH_WHITELIST_ENABLED 변수를 참조하�
 
 1. **검사기를 실행하여 상태 확인**
 
-   httpd 하위 명령을 사용하여 디렉토리에서 dispatcher 검사기를 실행합니다.
+   httpd 하위 명령을 사용하여 디렉토리에서 Dispatcher 검사기를 실행합니다.
 
    `$ validator httpd`
-누락된 포함 파일에 대한 오류가 표시되면 해당 파일의 이름을 올바르게 변경했는지 확인합니다.
+누락된 &quot;include&quot; 파일에 대한 오류가 표시되면 해당 파일의 이름을 올바르게 변경했는지 확인합니다.
 
    허용 목록에 포함되지 않은 Apache 지시문이 표시되면 제거합니다.
 
@@ -89,21 +89,21 @@ DISP_ID, PUBLISH_FORCE_SSL 또는 PUBLISH_WHITELIST_ENABLED 변수를 참조하�
 
 1. **팜 파일 이름 변경**
 
-   conf.dispatcher.d/enabled_farms의 모든 팜 이름은 *.farm 패턴과 일치하도록 이름을 변경해야 합니다. 따라서 예를 들어 customerX_farm.any라는 팜 파일의 이름을 customerX.farm으로 변경해야 합니다.
+   conf.dispatcher.d/enabled_farms의 모든 팜 이름은 *.farm 패턴과 일치하도록 이름을 변경해야 합니다. 예를 들어, 이름 바꾸기 `customerX_farm.any` 끝 `customerX.farm`.
 
 1. **cache 확인**
 
    directory conf.dispatcher.d/cache를 입력합니다.
 
-   ams_ 접두어가 있는 파일을 모두 제거합니다.
+   `ams_` 접두어가 있는 파일을 모두 제거합니다.
 
-   이제 conf.dispatcher.d/cache가 비어 있으면 표준 Dispatcher 구성에서 이 폴더로 conf.dispatcher.d/cache/rules.any 파일을 복사합니다. 표준 Dispatcher 구성은 이 SDK의 src 폴더에서 확인할 수 있습니다. 팜 파일에서 ams_*_cache.any 규칙 파일을 참조하는 $include 문을 수정하는 것도 잊지 마십시오.
+   이제 conf.dispatcher.d/cache가 비어 있으면 파일을 복사합니다. `conf.dispatcher.d/cache/rules.any` 표준 Dispatcher 구성에서 이 폴더로. 표준 Dispatcher 구성은 이 SDK의 src 폴더에서 확인할 수 있습니다. 다음을 참조하는 $include 문을 수정하는 것을 잊지 마십시오. `ams_*_cache.any` 팜 파일의 규칙 파일도 참조하십시오.
 
-   이제 conf.dispatcher.d/cache에 _cache.any 접미어가 있는 단일 파일이 포함되어 있는 경우 이름을 rules.any로 변경하고, 팜 파일에서도 이 파일을 참조하는 $include 문을 수정해야 합니다.
+   이제 conf.dispatcher.d/cache에 접미사가 포함된 단일 파일이 있습니다 `_cache.any`, 이름을 로 변경해야 합니다. `rules.any`. 팜 파일에서도 이 파일을 참조하는 $include 문을 수정해야 합니다.
 
-   하지만 폴더에 이 패턴의 팜 특정 파일이 여러 개 있는 경우 해당 컨텐츠를 팜 파일에서 이를 참조하는 $include 문에 복사해야 합니다.
+   그러나 폴더에 이 패턴의 팜 특정 파일이 여러 개 있는 경우 해당 컨텐츠를 팜 파일에서 이를 참조하는 $include 문에 복사해야 합니다.
 
-   _invalidate_allowed.any 접미어가 있는 파일을 제거합니다.
+   접미사가 있는 모든 파일 제거 `_invalidate_allowed.any`.
 
    기본 Dispatcher 구성에서 conf.dispatcher.d/cache/default_invalidate_any 파일을 해당 위치에 복사합니다.
 
@@ -115,15 +115,15 @@ DISP_ID, PUBLISH_FORCE_SSL 또는 PUBLISH_WHITELIST_ENABLED 변수를 참조하�
 
    directory conf.dispatcher.d/clientheaders를 입력합니다.
 
-   ams_ 접두어가 있는 파일을 모두 제거합니다.
+   `ams_` 접두어가 있는 파일을 모두 제거합니다.
 
-   이제 conf.dispatcher.d/clientheaders에 _clientheaders.any 접미어가 있는 단일 파일이 포함되어 있는 경우 이름을 clientheaders.any로 변경하고, 팜 파일에서도 이 파일을 참조하는 $include 문을 수정해야 합니다.
+   conf.dispatcher.d/clientheaders에 접미사가 있는 단일 파일이 포함된 경우 `_clientheaders.any`, 이름을 로 바꿉니다. `clientheaders.any`. 팜 파일에서도 이 파일을 참조하는 $include 문을 수정해야 합니다.
 
-   하지만 폴더에 이 패턴의 팜 특정 파일이 여러 개 있는 경우 해당 컨텐츠를 팜 파일에서 이를 참조하는 $include 문에 복사해야 합니다.
+   그러나 폴더에 이 패턴의 팜 특정 파일이 여러 개 있는 경우 해당 컨텐츠를 팜 파일에서 이를 참조하는 $include 문에 복사해야 합니다.
 
-   기본 Dispatcher 구성에서 conf.dispatcher/clientheaders/default_clientheaders.any 파일을 해당 위치에 복사합니다.
+   파일 복사 `conf.dispatcher/clientheaders/default_clientheaders.any` 기본 Dispatcher 구성에서 해당 위치로
 
-   각 팜 파일에서 다음과 같은 clientheader 포함 문을
+   각 팜 파일에서 `clientheader` &quot;include&quot; 문은 다음과 같이 표시됩니다.
 
    `$include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_publish_clientheaders.any"`
 
@@ -137,20 +137,20 @@ DISP_ID, PUBLISH_FORCE_SSL 또는 PUBLISH_WHITELIST_ENABLED 변수를 참조하�
 
    * directory conf.dispatcher.d/filters를 입력합니다.
 
-   * ams_ 접두어가 있는 파일을 모두 제거합니다.
+   * `ams_` 접두어가 있는 파일을 모두 제거합니다.
 
-   * 이제 conf.dispatcher.d/filters에 단일 파일이 포함되어 있는 경우 이름을 filters.any로 변경하고, 팜 파일에서도 이 파일을 참조하는 $include 문을 수정해야 합니다.
+   * 이제 conf.dispatcher.d/filters에 단일 파일이 포함되어 있는 경우 이름을 로 바꾸십시오. `filters.any`. 팜 파일에서도 이 파일을 참조하는 $include 문을 수정해야 합니다.
 
-   * 하지만 폴더에 이 패턴의 팜 특정 파일이 여러 개 있는 경우 해당 컨텐츠를 팜 파일에서 이를 참조하는 $include 문에 복사해야 합니다.
+   * 그러나 폴더에 이 패턴의 팜 특정 파일이 여러 개 있는 경우 해당 컨텐츠를 팜 파일에서 이를 참조하는 $include 문에 복사해야 합니다.
 
-   * 기본 Dispatcher 구성에서 conf.dispatcher/filters/default_filters.any 파일을 해당 위치에 복사합니다.
+   * 파일 복사 `conf.dispatcher/filters/default_filters.any` 기본 Dispatcher 구성에서 해당 위치로
 
-   * 각 팜 파일에서 다음과 같은 filter 포함 문을
+   * 각 팜 파일에서 다음과 같이 표시되는 filter &quot;include&quot; 문을 모두 바꿉니다.
 
    * $include `"/etc/httpd/conf.dispatcher.d/filters/ams_publish_filters.any"`
 다음과 같이 바꿉니다.
 
-      `$include "../filters/default_filters.any"`
+     `$include "../filters/default_filters.any"`
 
 1. **renders 확인**
 
@@ -158,11 +158,11 @@ DISP_ID, PUBLISH_FORCE_SSL 또는 PUBLISH_WHITELIST_ENABLED 변수를 참조하�
 
    * 해당 폴더의 파일을 모두 제거합니다.
 
-   * 기본 Dispatcher 구성에서 conf.dispatcher.d/renders/default_renders.any 파일을 해당 위치에 복사합니다.
+   * 파일 복사 `conf.dispatcher.d/renders/default_renders.any` 기본 Dispatcher 구성에서 해당 위치로
 
    * 각 팜 파일에서 renders 섹션의 내용을 제거하고 다음과 같이 바꿉니다.
 
-      `$include "../renders/default_renders.any"`
+     `$include "../renders/default_renders.any"`
 
 1. **virtualhosts 확인**
 
@@ -170,27 +170,27 @@ DISP_ID, PUBLISH_FORCE_SSL 또는 PUBLISH_WHITELIST_ENABLED 변수를 참조하�
 
    * `ams_` 접두어가 있는 파일을 모두 제거합니다.
 
-   * 이제 conf.dispatcher.d/virtualhosts에 단일 파일이 포함되어 있는 경우 이름을 virtualhosts.any로 변경하고, 팜 파일에서도 이 파일을 참조하는 $include 문을 수정해야 합니다.
+   * 이제 conf.dispatcher.d/virtualhosts에 단일 파일이 포함되어 있는 경우 이름을 로 바꿉니다 `virtualhosts.any`. 팜 파일에서도 이 파일을 참조하는 $include 문을 수정해야 합니다.
 
-   * 하지만 폴더에 이 패턴의 팜 특정 파일이 여러 개 있는 경우 해당 컨텐츠를 팜 파일에서 이를 참조하는 $include 문에 복사해야 합니다.
+   * 그러나 폴더에 이 패턴의 팜 특정 파일이 여러 개 있는 경우 해당 컨텐츠를 팜 파일에서 이를 참조하는 $include 문에 복사해야 합니다.
 
-   * 기본 Dispatcher 구성에서 conf.dispatcher/virtualhosts/default_virtualhosts.any 파일을 해당 위치에 복사합니다.
+   * 파일 복사 `conf.dispatcher/virtualhosts/default_virtualhosts.any` 기본 Dispatcher 구성에서 해당 위치로
 
-   * 각 팜 파일에서 다음과 같은 filter 포함 문을
+   * 각 팜 파일에서 다음과 같이 표시되는 filter &quot;include&quot; 문을 모두 바꿉니다.
 
-      `$include "/etc/httpd/conf.dispatcher.d/vhosts/ams_publish_vhosts.any"`
+     `$include "/etc/httpd/conf.dispatcher.d/vhosts/ams_publish_vhosts.any"`
 다음 문으로 바꿉니다.
 
-      `$include "../virtualhosts/default_virtualhosts.any"`
+     `$include "../virtualhosts/default_virtualhosts.any"`
 
 
 1. **검사기를 실행하여 상태 확인**
 
-   * dispatcher 하위 명령을 사용하여 디렉토리에서 dispatcher 검사기를 실행합니다.
+   * Dispatcher 하위 명령을 사용하여 디렉토리에서 Dispatcher 유효성 검사기를 실행합니다.
 
-      `$ validator dispatcher`
+     `$ validator dispatcher`
 
-   * 누락된 포함 파일에 대한 오류가 표시되면 해당 파일의 이름을 올바르게 변경했는지 확인합니다.
+   * 누락된 &quot;include&quot; 파일에 대한 오류가 표시되면 해당 파일의 이름을 올바르게 변경했는지 확인합니다.
 
    * 정의되지 않은 변수 `PUBLISH_DOCROOT`와 관련된 오류가 표시되면 이름을 `DOCROOT`로 바꿀 수 있습니다.
 
@@ -204,18 +204,18 @@ DISP_ID, PUBLISH_FORCE_SSL 또는 PUBLISH_WHITELIST_ENABLED 변수를 참조하�
 
 Dispatcher SDK에서 `docker_run.sh` 스크립트를 사용하여 구성에 배포에만 표시되는 다른 오류가 없는지 테스트할 수 있습니다.
 
-1. 유효성 검사기를 사용하여 배포 정보 생성
+1. 유효성 검사기를 사용하여 배포 정보 생성.
 
    `validator full -d out`
 전체 구성을 확인하고 배포 정보를 생성합니다.
 
-1. 해당 배포 정보를 사용하여 Docker 이미지에서 Dispatcher 시작
+1. 해당 배포 정보를 사용하여 도커 이미지에서 Dispatcher를 시작합니다.
 
    macOS 컴퓨터에서 실행 중인 AEM 게시 서버를 사용하여 포트 4503에서 수신 대기하면 다음과 같이 해당 서버 앞에서 Dispatcher를 시작할 수 있습니다.
 
    `$ docker_run.sh out docker.for.mac.localhost:4503 8080`
 
-   그러면 컨테이너가 시작되고 로컬 포트 8080에 Apache가 표시됩니다.
+   컨테이너를 시작하고 로컬 포트 8080에서 Apache를 표시합니다.
 
 ## 새 Dispatcher 구성 사용 {#using-dispatcher-config}
 
