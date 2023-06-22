@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 26178edc3308801e0273aca67b7cd82180131483
+source-git-commit: 46f0f8ba51b328bef1061d574b0d378a510fcf38
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 37%
+source-wordcount: '382'
+ht-degree: 31%
 
 ---
 
@@ -17,17 +17,11 @@ ht-degree: 37%
 
 다음은 2023년 6월 13일에 공개적으로 릴리스된 유지 보수 릴리스 12255에 대한 지속적인 개선 사항을 요약했습니다. 이 유지 관리 릴리스는 이전 유지 관리 릴리스 12142의 업데이트입니다.
 
-이 유지 관리 릴리스에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [최신 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)를 참조하십시오.
+이 유지 관리 릴리스에 대한 기능 활성화는 기능 활성화 2023.6.0과 함께 전체 기능 세트를 제공합니다. 다음을 참조하십시오. [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ko-KR) 추가 정보.
 
 ### 향상된 기능 {#enhancements-12255}
 
 없음.
-
-### 알려진 문제 {#known-issues-12255}
-
-- ASSETS-25729 - 전환기 보기 메뉴가 잘림
-- ASSETS-25728 - 검색 보기에서 자산 재처리 옵션을 사용할 수 없음
-- ASSETS-22603 - 일부 다운로드 유형 에셋 보고서 열은 UI에 &quot;null&quot; 값을 표시합니다. 다운로드 가능한 CSV는 영향을 받지 않습니다.
 
 ### 해결된 문제 {#fixed-issues-12255}
 
@@ -49,6 +43,12 @@ ht-degree: 37%
 - ASSETS-23981 - 컬렉션 링크에서 작동하지 않는 제목의 정렬 기능
 - ASSETS-24723 - 게시된 에셋이 사용자 개입 없이 다시 처리되었습니다.
 - GRANITE-45385 - 워크플로우 대신 sling 작업을 사용하도록 트리 활성화 마이그레이션
+
+### 알려진 문제 {#known-issues-12255}
+
+- ASSETS-25729 - 전환기 보기 메뉴가 잘림
+- ASSETS-25728 - 검색 보기에서 자산 재처리 옵션을 사용할 수 없음
+- ASSETS-22603 - 일부 다운로드 유형 에셋 보고서 열은 UI에 &quot;null&quot; 값을 표시합니다. 다운로드 가능한 CSV는 영향을 받지 않습니다.
 
 ### 임베드된 기술 {#embedded-tech-12255}
 
