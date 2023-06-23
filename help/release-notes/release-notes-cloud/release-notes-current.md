@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ca4046a94301cebae9e7a46e055977419fedd14e
+source-git-commit: 060956eee5136924263e4df5bd756670384e8365
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 62%
+source-wordcount: '1172'
+ht-degree: 57%
 
 ---
 
@@ -38,12 +38,14 @@ ht-degree: 62%
 
 ### [!DNL Experience Manager Sites]의 새로운 기능 {#sites-features}
 
-* 콘텐츠 조각을 JSON 오퍼로 AEM as a Cloud Service에서 Adobe Target으로 내보냅니다.
+* AEMas a Cloud Service 에서 JSON 형식으로 Adobe Target으로 컨텐츠 조각을 내보내고 Target에서 해당 JSON 오퍼를 만듭니다.
 * 내부 캐싱 향상과 함께 GraphQL 페이지 매김 및 정렬에 대한 지원은 이제 복잡한 GraphQL 쿼리 및 필터를 사용하여 AEM에서 대규모 콘텐츠 세트를 가져올 때 분리된 클라이언트 애플리케이션의 성능을 개선하는 데 도움이 됩니다.
 
 ### [!DNL Experience Manager Sites] 프리릴리스의 새로운 기능 {#prerelease-sites}
 
 * 이제 [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=ko)을 사용하여 콘텐츠 조각 및 해당 참조를 [AEM 미리보기 서비스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=ko#access-preview-service)에 게시하게 되면 사용자는 시작하기 전에 분리된 미리보기 애플리케이션을 통해 최종 경험을 미리 볼 수 있습니다.
+* 이제 AEM GraphQL을 사용하여 Headless 시나리오에서 이미지를 웹 게재에 동적으로 최적화할 수 있습니다. [쿼리 변수](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=en#query-variables) 는 GraphQL 쿼리에서 정의하여 분리된 클라이언트 애플리케이션 요청이 AEM에서 최적화된 이미지를 제공하도록 할 수 있습니다.
+* 태그: [컨텐츠 조각 변형](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=en) 는 이제 AEM GraphQL 콘텐츠 게재 API를 사용하여 JSON으로 출력할 수 있습니다.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
