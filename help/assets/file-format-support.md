@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1030'
 ht-degree: 10%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 10%
 * 키 [Adobe 파일 형식](#adobe-formats) Adobe 애플리케이션 및 서비스에 의해 만들어짐: [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension], 및 [!DNL Adobe Acrobat] 또는 PDF.
 * 키 [이미징 파일 형식](#image-formats).
 * [Camera Raw 파일 형식](#camera-raw-formats) Canon, Nikon, Fujifilm, Olympus 및 기타 제조업체(Adobe Camera Raw 제공)를 비롯한 다양한 카메라
-* 공통 [문서 형식](#document-formats)Microsoft Office 및 열린 문서 형식 포함.
+* 공통 [문서 형식](#document-formats), Microsoft® Office 및 Open Document 형식 포함.
 * Wide range of [video](#video-formats) and [audio](#audio-formats) formats.
 
 다음 범례에서는 각 형식에 대한 지원 수준을 설명합니다.
@@ -41,6 +41,7 @@ ht-degree: 10%
 | AI | ✓ | - | ✓ | ✓ |
 | 콜라주 | - | - | ✓ | - |
 | DN | ✓ | - | ✓ | ✓ |
+| SBSAR | ✓ | - | ✓ | ✓ |
 | 아이디어 | - | - | ✓ | - |
 | INDD | ✓ | - | ✓ | ✓ * |
 | INDT | - | - | ✓ | - |
@@ -50,7 +51,7 @@ ht-degree: 10%
 | PSD | ✓ | - | ✓ | ✓ |
 | XD | ✓ | - | ✓ | ✓ |
 
-\* 대상 [!DNL Adobe InDesign] 파일(INDD), 렌디션 크기는 INDD 파일에 포함된 미리보기에 의해 결정됩니다. 에서 환경 설정 구성 [!DNL InDesign] (**[!UICONTROL 환경 설정 > 파일 처리 > 항상 미리보기 이미지를 문서와 함께 저장, 미리보기 크기]**)를 클릭하여 큰 렌디션을 포함합니다.
+\* 대상 [!DNL Adobe InDesign] 파일(INDD), 렌디션 크기는 INDD 파일에 포함된 미리보기에 의해 결정됩니다. 에서 환경 설정 구성 [!DNL InDesign] (**[!UICONTROL 환경 설정 > 파일 처리 > 항상 미리보기 이미지를 문서와 함께 저장, 미리보기 크기]**)를 클릭하여 더 큰 렌디션을 포함할 수 있습니다.
 
 ## 이미지 형식 {#image-formats}
 
@@ -63,7 +64,7 @@ ht-degree: 10%
 | PNG | ✓ | ✓ | ✓ | ✓ |
 | RGB | ✓ | ✓ | ✓ | ✓ |
 | RGBA | ✓ | ✓ | ✓ | ✓ |
-| SGI | ✓ | ✓ | ✓ | ✓ |
+| SGI™ | ✓ | ✓ | ✓ | ✓ |
 | SVG | ✓ | - | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
 | 웹P | ✓ | ✓ | ✓ | ✓ |
@@ -77,13 +78,16 @@ ht-degree: 10%
 | 형식 | 스토리지 | 버전 관리 | 워크플로 | 게시 | 액세스 제어 | 썸네일 미리보기 | 3D 미리 보기 | Dynamic Media 게재 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
-| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | gLTF | ✓ | ✓ | ✓ | - | ✓ | - | ✓ | - |
-| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
+| FBX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| 3DS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| SBSAR | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
 
-## [!DNL Camera RAW] 형식 {#camera-raw-formats}
+## [!DNL Camera Raw] 형식 {#camera-raw-formats}
 
 | 파일 형식 | 썸네일 생성 | 메타데이터 추출 | 너비/높이 |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -181,20 +185,20 @@ ht-degree: 10%
 * Windows Media Video(WMV)/ASF(.wmv, .asf)
 * AVI(압축되지 않은 8비트/10비트)(.avi)
 * MP4(.mp4, .m4a, .m4v)
-* Microsoft 디지털 비디오 녹화(DVR-MS) (.dvr-ms)
+* Microsoft® 디지털 비디오 녹화(DVR-MS) (.dvr-ms)
 * Matroska/WebM(.mkv)
 * WAVE/WAV(.wav)
 * QuickTime(.mov)
 
 ## 팁 및 제한 사항 {#limitations-and-tips}
 
-* 현재 메타데이터 추출을 위한 파일 크기 제한은 약 15GB입니다. 매우 큰 에셋을 업로드할 때 메타데이터 추출 작업이 실패하는 경우가 있습니다.
+* 현재 메타데이터 추출을 위한 파일 크기 제한은 약 15GB입니다. 큰 에셋을 업로드할 때 메타데이터 추출 작업이 실패하는 경우가 있습니다.
 
 ## Dynamic Media - 코드 변환에 지원되는 입력 비디오 형식 {#video-dynamic-media-transcoding}
 
 | 비디오 파일 확장명 | 컨테이너 | 권장 비디오 코덱 | 지원되지 않는 비디오 코덱 |
 | --- | --- | --- | --- |
-| AVI | A/V 인터리브 | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
+| AVI | A/V 인터리브 | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3(IV30), MJPEG, Microsoft® 비디오 1(MS-CRAM) |
 | FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF(벡터 애니메이션 파일) |
 | M4V | Apple iTunes | H264/AVC | − |
 | MKV | 마트로스카 | H264/AVC | − |
@@ -202,9 +206,9 @@ ht-degree: 10%
 | MP4 | - | H264/AVC(모든 프로필) | − |
 | MPG, VOB, M2V, MP2 | - | - | − |
 | MXF ‡ | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | − |
-| OGV, OGG | Ogg | Theora, VP3, Dirac | − |
+| OGV, OGG | OGG | Theora, VP3, Dirac | − |
 | WebM | WebM | Google V8 | − |
-| WMV | 윈도 미디어 | WMV3(v9), WMV2(v8), WMV1(v7), GoToMeeting(G2M2, G2M3, G2M4) | Microsoft 화면(MSS2), Microsoft 사진 스토리(WVP2) |
+| WMV | 윈도 미디어 | WMV3(v9), WMV2(v8), WMV1(v7), GoToMeeting(G2M2, G2M3, G2M4) | Microsoft® 화면(MSS2), Microsoft® 사진 스토리(WVP2) |
 
 ‡ 이 비디오 형식은 아직 Dynamic Media의 대화형 비디오와 함께 사용하거나 Experience Manager Assets의 주석과 함께 사용할 수 없습니다.
 
@@ -237,7 +241,7 @@ ht-degree: 10%
 
 ## Dynamic Media - 지원되지 않는 래스터 이미지 형식 {#unsupported-raster-image-formats-dm}
 
-다음과 같은 래스터 이미지 파일 형식의 하위 유형은 *아님* 지원 위치 [!DNL Dynamic Media]:
+래스터 이미지 파일 형식의 다음과 같은 하위 유형 *아님* 지원 위치 [!DNL Dynamic Media]:
 
 * IDAT 청크 크기가 100MB보다 큰 PNG 파일입니다.
 * PSB 파일
@@ -253,9 +257,9 @@ ht-degree: 10%
 | 3D 파일 확장명 | 파일 형식 | MIME 유형 | 메모 |
 |---|---|---|---|
 | GLB | 이진 GL 전송 | model/gltf-binary | 재료 및 텍스처를 단일 자산으로 포함합니다. |
-| OBJ | WaveFront 3D 개체 파일 | application/x-tgif |  |
-| STL | 스테레오리소그래피 | application/vnd.ms-pki.stl |  |
-| USDZ | 범용 장면 설명 Zip 아카이브 | model/vnd.usdz+zip | *수집 전용 지원으로, 보기 또는 상호 작용을 사용할 수 없습니다.* USDZ는 Safari 또는 iOS에서 기본적으로 볼 수 있는 독점 3D 포맷입니다. |
+| OBJ | WaveFront 3D 개체 파일 | application/x-tgif | |
+| STL | 스테레오리소그래피 | application/vnd.ms-pki.stl | |
+| USDZ | 범용 장면 설명 Zip 아카이브 | model/vnd.usdz+zip | *수집 및 썸네일 생성 지원. 3D 미리보기는 아직 지원되지 않습니다.* USDZ는 Safari 또는 iOS에서 기본적으로 볼 수 있는 3D 형식입니다. |
 
 **추가 참조**
 
@@ -275,4 +279,3 @@ ht-degree: 10%
 >
 >* [자산 마이크로서비스를 사용한 자산 처리](asset-microservices-overview.md)
 >* [텍스트 기반 에셋의 스마트 태그 지정에 지원되는 파일 형식](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
-

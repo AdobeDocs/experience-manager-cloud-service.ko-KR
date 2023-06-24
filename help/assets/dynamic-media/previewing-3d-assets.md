@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '631'
+ht-degree: 6%
 
 ---
 
@@ -19,15 +19,27 @@ ht-degree: 0%
 | AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/previewing-3d-assets.html?lang=ko-KR) |
 | AEM as a Cloud Service | 이 문서 |
 
-Experience Manager은 작성 프로세스의 일부로 3D 에셋의 업로드, 전달 및 대화형 미리 보기를 지원합니다.
+Experience Manager Assets은 3D 에셋의 수집, 관리, 미리보기 및 전달을 지원합니다.
 
-대화형 3D 뷰어는 Experience Manager의 에셋 세부 사항 페이지에서 사용할 수 있습니다. 이 뷰어에는 3D 에셋을 궤도를 따라 이동하고, 확대/축소하고, 패닝할 수 있는 대화형 카메라 컨트롤 컬렉션이 포함되어 있습니다.
+자동으로 생성된 축소판 렌디션이나 대화형 3D 뷰어로 3D 에셋을 미리 볼 수 있습니다. 대화형 3D 뷰어는 Experience Manager의 에셋 세부 사항 페이지에서 사용할 수 있습니다. 뷰어에는 3D 장면 주위로 회전, 확대/축소 및 패닝할 수 있는 대화형 카메라 컨트롤 컬렉션이 포함되어 있습니다.
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## Experience Manager에서 3D 미리 보기에 대해 지원되는 형식{#supported-3d-previewing-assets}
+## Experience Manager에서 썸네일 미리 보기에 대해 지원되는 형식{#supported-thumbnail-previewing-assets}
 
-Experience Manager의 대화형 3D 미리 보기는 다음 파일 형식을 지원합니다.
+Experience Manager은 기본적으로 다음 파일 형식에 대한 썸네일을 생성합니다.
+
+| 3D 파일 확장명 | 파일 형식 | MIME 유형 | 메모 |
+|---|---|---|---|
+| GLB | 이진 GL 전송 | model/gltf-binary |  |
+| FBX | 오토데스크 FBX | application/octet-stream |  |
+| OBJ | WaveFront 3D 개체 파일 | application/x-tgif |  |
+| 3DS | 3D Studio 모델 | application/x-3ds |  |
+| USDz | 범용 장면 설명 | model/vnd.usdz+zip |  |
+
+## Experience Manager에서 대화형 3D 미리 보기에 대해 지원되는 형식{#supported-3d-previewing-assets}
+
+Experience Manager은 기본적으로 다음 파일 형식에 대해 대화형 3D 미리 보기를 지원합니다.
 
 | 3D 파일 확장명 | 파일 형식 | MIME 유형 | 메모 |
 |---|---|---|---|
@@ -35,8 +47,7 @@ Experience Manager의 대화형 3D 미리 보기는 다음 파일 형식을 지�
 | GLTF | GL 전송 형식 | model/gltf+json | 다음을 참조하십시오. **참고** 아래요. |
 | OBJ | WaveFront 3D 개체 파일 | application/x-tgif |  |
 | STL | 스테레오리소그래피 | application/vnd.ms-pki.stl |  |
-| DN | Adobe Dimension | model/x-adobe-dn | 수집만 지원합니다. 미리 보기를 사용할 수 없습니다. |
-| USDZ | 범용 장면 설명 Zip 아카이브 | model/vnd.usdz+zip | 수집만 지원합니다. 미리 보기를 사용할 수 없습니다. |
+
 
 >[!NOTE]
 >
@@ -80,7 +91,7 @@ Experience Manager의 대화형 3D 미리 보기는 다음 파일 형식을 지�
    | **카메라 회전** | 보기를 왼쪽, 오른쪽, 위쪽 또는 아래쪽으로 회전합니다. | 마우스 오른쪽 단추를 클릭하고 드래그하십시오. | 두 손가락으로 + 드래그. |
    | **카메라 확대/축소** | 3D 장면의 영역 안과 밖으로 이동합니다. | 스크롤 휠입니다. | 손가락 두 개 조입니다. |
    | **카메라를 가운데로 다시 맞춤** | 카메라를 3D 장면의 개체에 있는 점에 다시 가운데로 맞춥니다. | 두 번 클릭합니다. | 두 번 탭합니다. |
-   | **재설정** | 페이지의 오른쪽 하단 모서리 근처에서 재설정 아이콘을 선택하여 보기 대상 지점을 3D 에셋의 가운데로 복원합니다. 또한 재설정을 사용하면 카메라를 더 가깝게 또는 더 멀리 이동하여 에셋을 전체적으로 적절한 보기 크기로 표시할 수 있습니다. |  |  |
-   | **전체 화면 모드** | 전체 화면 모드로 전환하려면 페이지의 오른쪽 아래 모서리에서 전체 화면 아이콘을 선택합니다. |  |  |
+   | **재설정** | 페이지의 오른쪽 하단 모서리 근처에서 재설정 아이콘을 선택하여 보기 대상 지점을 3D 에셋의 가운데로 복원합니다. 또한 재설정을 사용하면 카메라를 더 가깝게 또는 더 멀리 이동하여 에셋을 전체적으로 적절한 보기 크기로 표시할 수 있습니다. |   |   |
+   | **전체 화면 모드** | 전체 화면 모드로 전환하려면 페이지의 오른쪽 아래 모서리에서 전체 화면 아이콘을 선택합니다. |   |   |
 
 1. 완료되면 페이지의 오른쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 닫기]**.
