@@ -1,19 +1,19 @@
 ---
 title: AEM 프로젝트 저장소 구조 패키지
-description: Adobe Experience Manager as a Cloud Service Maven 프로젝트에는 프로젝트의 코드 하위 패키지가 배포되는 JCR 저장소 루트를 정의하는 것이 유일한 목적인 저장소 구조 하위 패키지 정의가 필요합니다.
+description: Adobe Experience Manager as a Cloud Service의 Maven 프로젝트에는 프로젝트의 코드 하위 패키지가 배포되는 JCR 저장소 루트를 정의하는 것이 유일한 목적인 저장소 구조 하위 패키지 정의가 필요합니다.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 9%
+source-wordcount: '535'
+ht-degree: 8%
 
 ---
 
 # AEM 프로젝트 저장소 구조 패키지
 
-Adobe Experience Manager as a Cloud Service용 Maven 프로젝트에는 프로젝트의 코드 하위 패키지가 배포되는 JCR 저장소 루트를 정의하는 것이 유일한 목적인 저장소 구조 하위 패키지 정의가 필요합니다. 이렇게 하면 Experience Manager as a Cloud Service으로 패키지 설치가 JCR 리소스 종속성에 의해 자동으로 순서가 지정됩니다. 종속성이 없으면 하위 구조가 상위 구조보다 먼저 설치되고 예기치 않게 제거되어 배포가 중단되는 시나리오가 발생할 수 있습니다.
+Adobe Experience Manager as a Cloud Service용 Maven 프로젝트에는 프로젝트의 코드 하위 패키지가 배포되는 JCR 저장소 루트를 정의하는 것이 유일한 목적인 저장소 구조 하위 패키지 정의가 필요합니다. 이 방법을 사용하면 Experience Manager as a Cloud Service으로 패키지 설치가 JCR 리소스 종속성에 의해 자동으로 순서가 지정됩니다. 종속성이 없으면 하위 구조가 상위 구조보다 먼저 설치되고 예기치 않게 제거되어 배포가 중단되는 시나리오가 발생할 수 있습니다.
 
-If your code package deploys into a location **not covered** by the code package, then any ancestor resources (JCR resources closer to the JCR root) must be enumerated in the repository structure package to establish these dependencies.
+If your code package deploys into a location **not covered** by the code package, then any ancestor resources (JCR resources closer to the JCR root) must be enumerated in the repository structure package. 이 프로세스는 이러한 종속성을 설정하는 데 필요합니다.
 
 ![저장소 구조 패키지](./assets/repository-structure-packages.png)
 
@@ -25,11 +25,11 @@ If your code package deploys into a location **not covered** by the code package
 + `/apps/cq/...`, `/apps/dam/...`, `/apps/wcm/...`, 및 `/apps/sling/...` 다음에 대한 공통 오버레이를 제공합니다. `/libs`.
 + `/apps/settings` 공유 컨텍스트 인식 구성 루트 경로입니다
 
-이 하위 패키지는 **이(가) 다음을 포함하지 않음** 모든 콘텐츠가 `pom.xml` 필터 루트 정의.
+이 하위 패키지 **이(가) 다음을 포함하지 않음** 모든 콘텐츠가 `pom.xml` 필터 루트 정의.
 
 ## 저장소 구조 패키지 생성
 
-Maven 프로젝트에 대한 저장소 구조 패키지를 생성하려면 다음을 사용하여 빈 Maven 하위 프로젝트를 새로 만듭니다 `pom.xml`: 상위 Maven 프로젝트와 일치하도록 프로젝트 메타데이터 업데이트
+Maven 프로젝트에 대한 저장소 구조 패키지를 생성하려면 다음을 사용하여 빈 Maven 하위 프로젝트를 만듭니다 `pom.xml`: 상위 Maven 프로젝트와 일치하도록 프로젝트 메타데이터 업데이트
 
 업데이트 `<filters>` 로 배포하는 코드 패키지의 모든 JCR 저장소 경로 루트를 포함합니다.
 
@@ -162,7 +162,7 @@ Maven 프로젝트에 대한 저장소 구조 패키지를 생성하려면 다�
 + 코드 패키지 A가에 배포 `/apps/a`
 + 코드 패키지 B가에 배포 `/apps/a/b`
 
-코드 패키지 A의 코드 패키지 B에서 패키지 수준 종속성이 설정되지 않은 경우 코드 패키지 B가 먼저 로 배포될 수 있습니다. `/apps/a`뒤에 코드 패키지 B가 나오는데, 이 패키지는에 배포됩니다. `/apps/a`를 활성화하면 이전에 설치된 가 제거됩니다 `/apps/a/b`.
+코드 패키지 A의 코드 패키지 B에서 패키지 수준 종속성이 설정되지 않은 경우 코드 패키지 B가 먼저 로 배포될 수 있습니다. `/apps/a`. 그런 다음 뒤에 배포되는 코드 패키지 B가 옵니다. `/apps/a`. 그 결과 이전에 설치된 가 제거됩니다 `/apps/a/b`.
 
 이 경우:
 
@@ -178,7 +178,7 @@ Maven 프로젝트에 대한 저장소 구조 패키지를 생성하려면 다�
 Filter root's ancestor '/apps/some/path' is not covered by any of the specified dependencies.
 ```
 
-이는 브레이킹 코드 패키지에 `<repositoryStructurePackage>` 목록 `/apps/some/path` 필터 목록에 있습니다.
+이 오류는 브레이킹 코드 패키지에 `<repositoryStructurePackage>` 목록 `/apps/some/path` 필터 목록에 있습니다.
 
 ## 추가 리소스
 

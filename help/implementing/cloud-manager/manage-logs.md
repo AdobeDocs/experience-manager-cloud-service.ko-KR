@@ -2,10 +2,10 @@
 title: 로그 액세스 및 관리
 description: AEM as a Cloud Service에서 개발 프로세스를 지원하기 위해 로그에 액세스하고 관리하는 방법을 알아봅니다.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 91%
+source-wordcount: '266'
+ht-degree: 69%
 
 ---
 
@@ -18,7 +18,7 @@ AEM as a Cloud Service에서 개발 프로세스를 지원하기 위해 로그�
 
 ## 로그 다운로드 {#download-logs}
 
-로그를 다운로드하려면 다음 단계를 따르십시오.
+로그를 다운로드하려면 다음을 수행하십시오.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
@@ -48,13 +48,13 @@ UI를 통해 로그를 다운로드하는 것 외에도 API 및 명령줄 인터
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-명령줄 인터페이스를 통해 로그를 추적할 수도 있습니다.
+또한 명령줄 인터페이스를 통해 로그를 추적할 수 있습니다.
 
 ```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-다음 명령을 사용하여 환경 ID(이 예에서는 1884)와 사용 가능한 서비스 또는 로그 이름 옵션을 가져올 수 있습니다.
+환경 ID(이 예에서는 1884)와 사용 가능한 서비스 또는 로그 이름 옵션을 가져오려면 다음 명령을 사용할 수 있습니다.
 
 ```shell
 $ aio cloudmanager:list-environments
@@ -79,7 +79,7 @@ Environment Id Service    Name
 
 ### 추가 리소스 {#resources}
 
-Cloud Manager API 및 Adobe I/O CLI에 대한 자세한 내용은 다음 추가 리소스를 참조하십시오.
+Cloud Manager API 및 Adobe Developer CLI에 대한 자세한 내용은 다음 추가 리소스를 참조하십시오.
 
-* [Cloud Manager API 설명서](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+* [Cloud Manager API 설명서](https://developer.adobe.com/experience-cloud/cloud-manager/)
+* [ADOBE DEVELOPER CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
