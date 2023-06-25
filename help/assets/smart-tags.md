@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: f8535b9d1b8334bede817714eab469fbb1fcbb03
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2463'
 ht-degree: 6%
 
 ---
@@ -51,8 +51,8 @@ ht-degree: 6%
 | image/x-portable-graymap | SRT |  |
 | image/x-portable-pixmap | TXT |  |
 | image/x-rgb | VTT |  |
-| image/x-xbitmap |  |  |
-| image/x-xpixmap |  |  |
+| image/x-xbitmap | |  |
+| image/x-xpixmap | |  |
 | image/x-icon |  |  |
 | image/photoshop |  |  |
 | image/x-photoshop |  |  |
@@ -82,7 +82,7 @@ AEM은 기본적으로 스마트 태그를 텍스트 기반 에셋 및 비디오
 
 ![교육 지침을 설명하는 예제 이미지](assets/do-not-localize/coherence.png)
 
-**적용 범위**: 교육에 있는 이미지의 다양성이 충분해야 합니다. 아이디어는 몇 가지 하지만 합리적으로 다양한 예를 제공하여 [!DNL Experience Manager] 바른 일에 집중하는 법을 배웁니다. 시각적으로 다른 이미지에 동일한 태그를 적용하는 경우에는 각 종류의 예제를 5개 이상 포함하십시오. (예: 태그) *모델 다운 포즈*&#x200B;에는 태깅 중에 유사한 이미지를 더 정확하게 식별할 수 있도록 아래 강조 표시된 이미지와 유사한 교육 이미지가 더 포함됩니다.
+**적용 범위**: 교육에 있는 이미지의 다양성이 충분해야 합니다. 아이디어는 몇 가지 하지만 합리적으로 다양한 예를 제공하여 [!DNL Experience Manager] 바른 일에 집중하는 법을 배웁니다. 시각적으로 다른 이미지에 동일한 태그를 적용하는 경우 각 종류의 예제를 5개 이상 포함하십시오. (예: 태그) *모델 다운 포즈*&#x200B;에는 태깅 중에 유사한 이미지를 더 정확하게 식별할 수 있도록 아래 강조 표시된 이미지와 유사한 교육 이미지가 더 포함됩니다.
 
 ![교육 지침을 설명하는 예제 이미지](assets/do-not-localize/coverage_1.png)
 
@@ -131,7 +131,7 @@ AEM은 기본적으로 스마트 태그를 텍스트 기반 에셋 및 비디오
    >다음을 기준으로 태그 구조를 오름차순 또는 내림차순으로 정렬할 수 있습니다. **[!UICONTROL 이름]** (알파벳순), **[!UICONTROL 생성됨]** 날짜 또는 **[!UICONTROL 수정됨]** 날짜.
 
 
-1. 다음에서 **[!UICONTROL 에셋 선택]** 대화 상자, 클릭 **[!UICONTROL 에셋 추가]** 각 태그에 대해. DAM 저장소에서 검색하거나 저장소를 탐색하여 최소 10개 이상 최대 50개 이하의 이미지를 선택합니다. 폴더가 아닌 에셋을 선택합니다. 이미지를 선택한 후 다음을 클릭합니다. **[!UICONTROL 선택]**.
+1. 다음에서 **[!UICONTROL 에셋 선택]** 대화 상자, 클릭 **[!UICONTROL 에셋 추가]** 각 태그에 대해. DAM 저장소에서 검색하거나 저장소를 탐색하여 최소 10개 이상 최대 50개 이하의 이미지를 선택합니다. 폴더가 아닌 에셋을 선택합니다. 이미지를 선택한 후 **[!UICONTROL 선택]**.
 
    ![교육 상태 보기](assets/smart-tags-training-status.png)
 
@@ -277,4 +277,3 @@ AEM은 기본적으로 스마트 태그를 텍스트 기반 에셋 및 비디오
 >
 >* [스마트 태그가 디지털 파일 관리에 어떻게 도움이 되는지 이해하기](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
 >* [비디오에 스마트 태그 사용](smart-tags-video-assets.md)
-

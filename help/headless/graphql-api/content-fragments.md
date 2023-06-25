@@ -3,9 +3,9 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud Service에서 Headless 콘텐츠 게재를 위해 콘텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '4925'
+source-wordcount: '4924'
 ht-degree: 95%
 
 ---
@@ -751,7 +751,7 @@ GraphQL의 솔루션으로 다음과 같은 작업을 수행할 수 있습니다
    * `height`: 차원의 높이
 * `rotation`: 지원되는 모든 회전의 열거형: R90, R180, R270
 * `flip`: HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL의 열거형
-* `quality`: 이미지 품질의 백분율을 나타내는 1에서 100 사이의 정수
+* `quality`: 이미지 품질의 백분율을 표시하는 1-100 범위의 정수
 * `width`: 출력 이미지의 폭을 정의하지만 이미지 생성기에서 무시하는 정수입니다
 * `preferWebp`: webp가 선호되는지 여부를 나타내는 부울(기본값은 false)
 

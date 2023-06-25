@@ -2,10 +2,10 @@
 title: 작성 기본 사항에 대해 알아보기
 description: 콘텐츠 조각을 사용하여 Headless CMS용 콘텐츠를 작성하는 개념 및 메커니즘에 대해 알아봅니다.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1708'
-ht-degree: 97%
+source-wordcount: '1709'
+ht-degree: 95%
 
 ---
 
@@ -141,7 +141,7 @@ You can view additional information about items using the Rail Selector. This al
 
 #### 경로 및 태그를 사용하여 폴더에 제공되는 콘텐츠 조각 모델 제한 {#tags-paths-for-models-in-folder}
 
-다소 개선된 고급 섹션입니다. 조각은 작업을 시작하고 시도하면 실제로 필요하지 않지만 조각이 많으면 *매우* 유용합니다. 그래서 조각을 아직 사용하지 않더라도 알아두면 좋습니다.
+다소 개선된 고급 섹션입니다. 여러분이 단지 시작하고 일을 시도하고 있다면 여러분은 정말로 그것이 필요하지 않지만, 그것은 그렇습니다 *매우* 조각이 많을 때 유용합니다. 따라서 아직 사용하지 않더라도 알아 두면 좋습니다.
 
 콘텐츠 설계자는 현재 프로젝트와 일부 다른 프로젝트에도 필요한 모든 콘텐츠 조각 모델을 생성했습니다. 사용자와 다른 작성자의 작업을 간단하게 유지할 수 있도록 특정 폴더에 제공되는 모델 목록을 제한할 수 있습니다.
 

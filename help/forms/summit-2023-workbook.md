@@ -7,9 +7,9 @@ topic-tags: develop
 hide: true
 hidefromtoc: true
 exl-id: e1eb0812-c92e-4a18-aabb-5a70b9e6fc7d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3359'
+source-wordcount: '3358'
 ht-degree: 99%
 
 ---
@@ -237,7 +237,7 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
 
    ![](/help/forms/assets/screenshot2028116229.png)
 
-1. 클라우드 서비스 게시 환경에서 호스팅되는 양식을 렌더링하려면 `env_template` 파일의 이름을 바꿉니다.  파일 이름을 바꾸려면 **env_template** 파일을 마우스 오른쪽 버튼으로 클릭하고 **이름 바꾸기** 옵션을 선택합니다.
+1. 클라우드 서비스 게시 환경에서 호스팅되는 양식을 렌더링하려면 `env_template` 파일의 이름을 바꿉니다.  파일 이름을 바꾸려면 **env_template** 파일 및 선택 **이름 바꾸기** 옵션을 선택합니다.
 
    ![](/help/forms/assets/screenshot2028116429.png)
 

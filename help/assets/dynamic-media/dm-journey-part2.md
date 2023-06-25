@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 9202cf44595070c98ca3d21887dff257bcd88b87
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2878'
+source-wordcount: '2875'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ _그는 &quot;큰 손이 4개를 가리키고 작은 손이 1을 가리키면 �
 ![운영 파일 접근 방식](/help/assets/dynamic-media/assets/dm-onefile.png)
 _가장 좋은 방법: 다음과 같은 이미지 사전 설정을 사용하여 즉석에서 여러 표현물이 생성되는 하나의 파일 `Search_Grid` 및 `Thumbnail`._
 
-| **이미지 사전 설정을 사용하는 이유** |  |
+| **이미지 사전 설정을 사용하는 이유** | |
 |---|---|
 | 표준 | 이미지 사전 설정은 요청된 이미지에 표준 이미지 처리 처리를 적용합니다. |
 | 변경 관리 | 이미지 처리를 변경해야 하는 경우 기존 이미지 사전 설정의 매개 변수를 편집하면 됩니다. 업데이트된 정의는 자동으로 모든 요청에 전파됩니다. |
@@ -199,7 +199,7 @@ _다음 `Running` 플라이아웃 뷰어가 적용된 이미지 세트입니다.
 
 소비자로 살거나 일상적인 역할을 하면서, 또 다른 웹 사이트로 이동하면, 이와 같은 것들을 보게 됩니다. 이를 어떻게 수행하고 있으며, 자체 작업과 회사 웹 사이트에서 Dynamic Media의 기능을 어떻게 사용할 수 있는지 생각해 보십시오.
 
-이미지 세트와 뷰어에 대해 약간 읽어보셨을 겁니다. 두 명의 다른 시청자를 보고 단일 자산에 대해 시도해 보겠습니다. 뷰어를 재설정하려면 **[!UICONTROL 새로 고침]** 왼쪽 아래에 있는 단추입니다.
+이미지 세트와 뷰어에 대해 읽어보십시오. 두 명의 다른 시청자를 보고 단일 자산에 대해 시도해 보겠습니다. 뷰어를 재설정하려면 **[!UICONTROL 새로 고침]** 왼쪽 아래에 있는 단추입니다.
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 

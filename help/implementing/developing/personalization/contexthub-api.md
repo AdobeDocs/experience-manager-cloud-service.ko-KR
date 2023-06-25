@@ -2,7 +2,7 @@
 title: ContextHub Javascript API 참조
 description: ContextHub 구성 요소를 페이지에 추가하면 ContextHub Javascript API를 스크립트에 사용할 수 있습니다
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '4620'
 ht-degree: 2%
@@ -347,7 +347,7 @@ A `string` 참조된 키를 나타내는 값입니다. 참조가 확인되지 �
 
 저장소에 키/값 쌍을 추가합니다.
 
-트리거 `data` 이벤트 는 키에 대한 값이 현재 키에 대해 저장된 값과 다른 경우에만 발생합니다. 필요한 경우 의 트리거를 방지할 수 있습니다. `data` 이벤트.
+트리거 `data` 이벤트 는 키에 대한 값이 현재 키에 저장된 값과 다른 경우에만 발생합니다. 필요한 경우 의 트리거를 방지할 수 있습니다. `data` 이벤트.
 
 이벤트 데이터에는 저장소 이름, 키, 이전 값, 새 값 및 의 작업 유형이 포함됩니다. `set`.
 

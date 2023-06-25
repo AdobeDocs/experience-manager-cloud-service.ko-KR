@@ -2,7 +2,7 @@
 title: AEM 프로젝트 구조
 description: Adobe Experience Manager Cloud Service에 배포할 패키지 구조를 정의하는 방법에 대해 알아봅니다.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '2927'
 ht-degree: 12%
@@ -223,7 +223,7 @@ AEM 작성자, AEM 게시 또는 둘 다를 타깃팅하기 위해 패키지는 
 
 `/apps/<app-name>-packages/(content|application|container)/install(.author|.publish)?`
 
-이 폴더 구조 분류:
+이 폴더 구조를 분류합니다.
 
 + 첫 번째 수준 폴더 **은(는) 다음과 같아야 합니다.** `/apps`.
 + 두 번째 수준 폴더는 `-packages` 폴더 이름에 대한 사후 수정되었습니다. 모든 하위 패키지가 임베드되는 두 번째 수준 폴더는 하나만 있는 경우가 많지만 두 번째 수준 폴더를 여러 개 만들어 애플리케이션의 논리 구조를 가장 잘 나타낼 수 있습니다.

@@ -3,9 +3,9 @@ title: 콘텐츠를 작성할 리치 텍스트 편집기 구성 [!DNL Adobe Expe
 description: 콘텐츠를 작성할 리치 텍스트 편집기 구성 [!DNL Adobe Experience Manager] as a Cloud Service.
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: e6ab7ba91b52d3479a85870e8ffa8e8d2f1e303e
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1875'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,7 @@ RTE의 기본 기능은 의 값에 따라 활성화되거나 비활성화됩니�
 | 이미지 | `image` | 기본 이미지 지원(콘텐츠 또는 콘텐츠 파인더에서 드래그). 브라우저에 따라 작성자에 대한 지원 동작이 다릅니다 |
 | 키 | - | 이 값을 정의하려면 다음을 참조하십시오 [탭 크기](configure-rich-text-editor-plug-ins.md#tabsize). |
 | 양쪽 맞춤 | `justifyleft`, `justifycenter`, `justifyright` | 단락 정렬. |
-| 링크 | `modifylink`, `unlink`, `anchor` | [하이퍼링크 및 앵커](configure-rich-text-editor-plug-ins.md#linkstyles). |
+| links | `modifylink`, `unlink`, `anchor` | [하이퍼링크 및 앵커](configure-rich-text-editor-plug-ins.md#linkstyles). |
 | 목록 | `ordered`, `unordered`, `indent`, `outdent` | 이 플러그인은 두 가지 작업을 모두 제어합니다. [들여쓰기 및 목록](configure-rich-text-editor-plug-ins.md#indentmargin); 중첩된 목록 포함. |
 | misctools | `specialchars`, `sourceedit` | 기타 도구를 사용하면 작성자가 입력할 수 있습니다. [특수 문자](configure-rich-text-editor-plug-ins.md#spchar) 또는 HTML 소스를 편집합니다. 또한 다음을 추가할 수 있습니다 [특수 문자 범위](configure-rich-text-editor-plug-ins.md#definerangechar) 고유한 목록을 정의하려는 경우 |
 | Paraformat | `paraformat` | 기본 단락 형식은 단락, 제목 1, 제목 2 및 제목 3 입니다(`<p>`, `<h1>`, `<h2>`, 및 `<h3>`). 다음을 수행할 수 있습니다. [더 많은 단락 형식 추가](configure-rich-text-editor-plug-ins.md#paraformats) 또는 목록을 확장합니다. |
@@ -282,4 +282,3 @@ RTE 도구 모음에 표시되는 Coral 아이콘과 사용 가능한 명령 간
 >* [RTE 플러그인 구성](configure-rich-text-editor-plug-ins.md)
 >* [작성을 위해 리치 텍스트 편집기 사용](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
 >* [액세스 가능한 사이트에 대한 RTE 구성](rte-accessible-content.md)
-

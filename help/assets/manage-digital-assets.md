@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '4377'
+source-wordcount: '4376'
 ht-degree: 12%
 
 ---
@@ -651,7 +651,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 [!DNL Experience Manager] 데스크탑 앱을 사용하면 Windows 또는 Mac 데스크탑에서 DAM 저장소에 액세스할 수 있습니다. Adobe 에셋 링크를 사용하면 지원되는 내에서 에셋에 액세스할 수 있습니다. [!DNL Creative Cloud] 데스크탑 애플리케이션.
 
-내에서 에셋을 검색할 때 [!DNL Experience Manager] 사용자 인터페이스에서는 만료된 에셋이 표시되지 않습니다. 관리자는 데스크탑 앱 및 Asset Link에서 자산을 검색할 때 만료된 자산을 보고 검색하고 가져오지 않도록 다음 구성을 수행할 수 있습니다. 이 구성은 관리자 권한에 관계없이 모든 사용자에 대해 작동합니다.
+내에서 에셋을 검색할 때 [!DNL Experience Manager] 사용자 인터페이스에서는 만료된 에셋이 표시되지 않습니다. 관리자는 데스크탑 앱 및 Asset Link에서 자산을 검색할 때 만료된 자산을 보고 검색하고 가져오지 않도록 다음 구성을 수행할 수 있습니다. 이 구성은 관리자 권한과 관계없이 모든 사용자에 대해 작동합니다.
 
 다음 CURL 명령을 실행합니다. 에 대한 읽기 액세스 권한 확인 `/conf/global/settings/dam/acpapi/` 에셋에 액세스하는 사용자용입니다. 에 속한 사용자 `dam-user` 기본적으로 그룹에 권한이 있습니다.
 

@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2642'
+source-wordcount: '2646'
 ht-degree: 25%
 
 ---
@@ -146,7 +146,6 @@ Adobe Experience Manager Assets에서 다국어 자산은 폴더에 포함되며
    >* 태그나 메타데이터에 대한 항목을 삭제하면 어떤 에셋에 대해서도 태그나 메타데이터가 번역되지 않습니다.
    >* 기계 번역을 사용하는 경우 에셋 바이너리는 번역되지 않습니다.
    >* 번역 작업에 추가하는 에셋에 하위 에셋이 포함된 경우, 하위 에셋을 선택하고 이를 제거하여 결함 없이 번역을 진행합니다.
-
 
 1. 에셋에 대한 번역을 시작하려면 의 화살표를 클릭/탭합니다. **[!UICONTROL 번역 작업]** 타일 및 선택 **[!UICONTROL 시작]** 목록에서 삭제할 수 있습니다. 번역 작업이 시작되었음을 알리는 메시지가 표시됩니다.
 1. 번역 작업의 상태를 보려면 아래 줄임표를 클릭/탭합니다. **[!UICONTROL 번역 작업]** 타일. <!-- For more details, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->

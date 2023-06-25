@@ -2,10 +2,10 @@
 title: Headless 애플리케이션 실행 방법
 description: 이 AEM Headless 개발자 여정의 부분에서는 Git에서 로컬 코드를 가져오고 CI/CD 파이프라인용 Cloud Manager Git으로 이동하여 Headless 애플리케이션을 라이브로 배포하는 방법에 대해 알아봅니다.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1067'
-ht-degree: 96%
+source-wordcount: '1065'
+ht-degree: 94%
 
 ---
 
@@ -42,7 +42,7 @@ AEM Headless 애플리케이션을 실행할 수 있도록 준비하려면 아�
 
 * 15kb 이상의 JSON(gzip 압축)을 출력하는 쿼리를 만드는 것을 피하십시오. 긴 JSON 파일은 리소스 집약으로 클라이언트 애플리케이션이 구문 분석할 수 있습니다.
 * 중첩된 조각 계층 수준이 5단계를 초과하지 않도록 하십시오. 수준이 추가되면 콘텐츠 작성자는 변경 사항이 미치는 영향을 고려할 수 없습니다.
-* 모델 내 종속성 계층이 있는 쿼리를 모델링하는 대신 여러 오브젝트 쿼리를 사용합니다. 이를 통해 콘텐츠를 많이 변경하지 않고도 보다 길고 유연하게 JSON 출력을 재구성할 수 있습니다.
+* 모델 내 종속성 계층이 있는 쿼리를 모델링하는 대신 여러 오브젝트 쿼리를 사용합니다. 따라서 장기간 동안 많은 콘텐츠 변경 작업을 수행하지 않고도 JSON 출력을 재구성할 수 있습니다.
 
 ## CDN 캐시 적중률 최대화 {#maximize-cdn}
 

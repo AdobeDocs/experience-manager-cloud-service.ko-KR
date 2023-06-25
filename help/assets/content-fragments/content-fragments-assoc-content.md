@@ -2,10 +2,10 @@
 title: 관련 컨텐츠(자산 - 컨텐츠 조각)
 description: AEM 관련 콘텐츠 기능이 연결을 제공하여 조각과 함께 에셋을 선택적으로 사용할 수 있도록 하는 방법을 이해합니다.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 56%
+source-wordcount: '230'
+ht-degree: 53%
 
 ---
 
@@ -28,7 +28,7 @@ AEM 관련 콘텐츠 기능은 조각이 콘텐츠 페이지에 추가될 때 �
 1. 컬렉션이 이미 연결되어 있는지 여부에 따라 다음 중 하나를 선택합니다.
 
    * **콘텐츠 연결** - 첫 번째 연결된 컬렉션입니다.
-   * **컬렉션 연결** - 연결된 컬렉션이 이미 구성되어 있는 경우 이 옵션을 선택합니다.
+   * **컬렉션 연결** - 연결된 컬렉션이 이미 구성되었습니다.
 
 1. 필요한 컬렉션을 선택합니다.
 

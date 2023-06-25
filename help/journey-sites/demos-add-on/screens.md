@@ -2,10 +2,10 @@
 title: 데모 사이트에 대해 AEM Screens 활성화
 description: 제작한 데모 사이트에서 전체 AEM Screens as a Cloud Service 환경을 활성화하기 위한 단계에 대해 알아봅니다.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2696'
-ht-degree: 98%
+source-wordcount: '2694'
+ht-degree: 97%
 
 ---
 
@@ -63,7 +63,7 @@ We.Cafe 커피숍은 미국 내 세 개의 위치에 있는 세 개의 커피숍
 >
 >키오스크는 현재 데모 버전에 포함되지 않습니다. 이후 버전에 포함될 예정입니다.
 
-뉴욕 지점은 다음과 같은 특징을 가진 공간이 많지 않은 작은 상점에 있다고 가정해 보겠습니다.
+뉴욕 지점은 다음과 같이 공간이 많지 않은 작은 상점에 있다고 가정해 보겠습니다.
 
 * 메뉴판은 두 개의 수직 패널로만 구성되어 있습니다(샌프란시스코 및 산호세 지점의 메뉴판은 세 개의 수직 패널로 구성되어 있음).
 * 입구 디스플레이는 수평적이 아니라 수직적으로 배치되어 있습니다.

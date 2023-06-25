@@ -2,10 +2,10 @@
 title: 점진적 웹 앱 기능 활성화
 description: 콘텐츠 작성자는 AEM Sites를 사용하여 코딩이 아닌 간단한 구성을 통해 모든 사이트에 대해 점진적 웹 앱 기능을 활성화할 수 있습니다.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 94%
+source-wordcount: '1998'
+ht-degree: 93%
 
 ---
 
@@ -217,7 +217,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 AEM 핵심 구성 요소의 이미지 구성 요소는 프론트엔드에서 가져올 최적의 렌디션을 결정합니다. 이 메커니즘에는 해당 리소스의 마지막 수정 시간에 해당하는 타임스탬프도 포함됩니다. 이 메커니즘은 PWA 사전 캐싱 구성을 더욱 복잡하게 만듭니다.
 
-사전 캐싱을 구성할 때 사용자는 가져올 수 있는 모든 경로 변형을 나열해야 합니다. 이러한 변형은 품질 및 너비와 같은 매개변수로 구성되어 있습니다. 이들 변형의 수를 최대 3개(작음, 중간, 큼)으로 줄이는 것이 좋습니다. 이러한 작업은 [이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)의 콘텐츠 정책 대화 상자를 통해 수행할 수 있습니다.
+사전 캐싱을 구성할 때 사용자는 가져올 수 있는 모든 경로 변형을 나열해야 합니다. 이러한 변형은 품질 및 너비와 같은 매개변수로 구성되어 있습니다. 이러한 변형의 수를 최대 3개(작음, 중간, 큼)으로 줄이는 것이 좋습니다. 이러한 작업은 [이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)의 콘텐츠 정책 대화 상자를 통해 수행할 수 있습니다.
 
 신중하게 구성하지 않으면 메모리 및 네트워크 소모가 PWA 성능에 심각한 영향을 줄 수 있습니다. 또한 50개의 이미지를 사전 캐싱하고자 하고 이미지당 너비가 3개라고 가정하면 사이트를 관리하는 사용자는 페이지 속성의 PWA 사전 캐싱 섹션에서 최대 150개의 항목 목록을 관리해야 합니다.
 

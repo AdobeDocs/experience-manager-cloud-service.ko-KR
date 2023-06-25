@@ -4,7 +4,7 @@ seo-title: Manage [!DNL AEM Forms] metadata
 description: 메타데이터를 사용하면 에셋을 보다 쉽게 분류하고 구성할 수 있으며 특정 에셋을 찾는 사용자에게 도움이 됩니다.
 seo-description: Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '1658'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 [!DNL AEM Forms]는 기본적으로 각 에셋 유형에 대해 정의된 메타데이터 세트를 제공합니다. 기본 메타데이터 외에도 각 에셋 유형에 사용자 지정 메타데이터를 추가할 수 있습니다. [!DNL AEM Forms] 또한 에서는 양식에 대해 이러한 모든 메타데이터를 효율적으로 생성, 관리 및 교환할 수 있는 적절한 수단을 제공합니다.
 
-<!-- If you're a developer or a site owner, you can customize Forms Portal, the end-user interface for [!DNL AEM Forms] to reflect the metadata you're using in your organization. For more information abouts Forms Portal, see [Introduction to publishing forms on a portal](introduction-publishing-forms.md). -->
+<!-- If you are a developer or a site owner, you can customize Forms Portal, the end-user interface for [!DNL AEM Forms] to reflect the metadata you are using in your organization. For more information abouts Forms Portal, see [Introduction to publishing forms on a portal](introduction-publishing-forms.md). -->
 
 ## [!DNL AEM Forms]의 메타데이터 {#metadata-in-aem-forms}
 

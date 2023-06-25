@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3495'
+source-wordcount: '3496'
 ht-degree: 16%
 
 ---
@@ -208,7 +208,7 @@ Adobe 에셋 링크는 이 사용 사례에 대한 유용한 지원을 제공합
 * 또한 에셋은 Creative Cloud 계정에 있으므로 사용자가 보유할 수 있는 다른 장치에서도 사용할 수 있으며(예: 전용 Creative Cloud 모바일 앱에서 열거나 편집할 수 있음), 공동 작업 목적으로 다른 Creative Cloud 사용자와 공유할 수 있습니다.
 * 크리에이티브 사용자가 변경을 완료하면 Creative Cloud 애플리케이션에서 선택적 주석을 사용하여 해당 파일에 대한 체크 인 작업을 실행할 수 있습니다. Experience Manager의 해당 에셋에 대한 버전이 관리되고 새 바이너리로 업데이트됩니다. 마케터 또는 LOB 사용자와 같은 Experience Manager 사용자는 Experience Manager 에셋 타임라인 UI를 통해 주요 에셋 변경 사항 또는 이정표에 액세스할 수 있습니다.
 
-Experience Manager 데스크탑 앱은 기본 앱에서 연 에셋에 대한 네트워크 공유를 제공합니다. 기본적으로 로컬에서 수행된 모든 변경 사항은 잠시 후 자동으로 Experience Manager에 업로드됩니다. 이러한 구성을 통해 진행 중인 작업 단계 동안 빈번하게 저장되는 작업이 모두 Experience Manager에 업로드되고 버전이 관리되므로 많은 네트워크 트래픽이 발생하고 잠재적인 확장성 문제가 발생할 수 있습니다. 뿐만 아니라 Experience Manager에서 불필요한 버전도 발생할 수 있습니다.
+Experience Manager 데스크탑 앱은 기본 앱에서 연 에셋에 대한 네트워크 공유를 제공합니다. 기본적으로 로컬에서 수행된 모든 변경 사항은 잠시 후 자동으로 Experience Manager에 업로드됩니다. 이러한 구성을 통해 진행 중인 작업 단계 동안 빈번하게 저장되는 작업이 모두 Experience Manager에 업로드되고 버전이 관리되므로 대량의 네트워크 트래픽이 발생하고 잠재적인 확장성 문제가 발생할 수 있으며, Experience Manager에서 불필요한 버전은 말할 것도 없습니다.
 
 여기에서 권장되는 접근 방법은 Experience Manager 데스크탑 앱의 옵션을 사용하여 자동 업데이트를 끄고, 자산에 대한 변경 사항을 업로드하여 앱의 자산 상태 UI에 있는 Experience Manager 변경 작업을 활용하여 수동으로 업로드하는 것입니다.
 

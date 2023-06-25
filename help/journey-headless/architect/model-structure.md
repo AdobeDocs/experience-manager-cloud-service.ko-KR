@@ -2,10 +2,10 @@
 title: AEM에서의 콘텐츠 조각 모델 만들기에 대해 알아보기
 description: 콘텐츠 조각 모델을 사용하여 Headless CMS용 콘텐츠를 모델링하는 개념 및 메커니즘에 대해 알아봅니다.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 92%
+source-wordcount: '686'
+ht-degree: 89%
 
 ---
 
@@ -59,7 +59,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 그럼 어떤 작업을 수행해야 합니까?
 
-**데이터 유형** 인스턴스를 왼쪽 공간으로 드래그하여 모델을 미리 정의할 수 있습니다.
+의 인스턴스를 드래그할 수 있습니다 **데이터 유형** 왼쪽 공간으로 이동합니다. 이미 모델을 정의하고 있습니다.
 
 ![필드 정의](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 

@@ -2,10 +2,10 @@
 title: ContextHub를 사용하여 세그먼테이션 구성
 description: ContextHub를 사용하여 세그먼테이션을 구성하는 방법에 대해 알아봅니다.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1694'
-ht-degree: 95%
+source-wordcount: '1695'
+ht-degree: 94%
 
 ---
 
@@ -101,7 +101,7 @@ AEM을 통해 손쉽게 사용자의 경험을 개인화할 수 있습니다. �
    * 최솟값: `0`
    * 최댓값: `1000000`
 
-1. 세그먼트 콘솔에서 새로 작성한 세그먼트를 편집하여 세그먼트 편집기에서 엽니다.
+1. 세그먼트 콘솔에서 새로 만든 세그먼트를 편집하여 세그먼트 편집기에서 엽니다.
 1. 비교 또는 참조를 세그먼트 편집기로 드래그하면 기본 AND 컨테이너에 표시됩니다.
 1. 새 참조 또는 세그먼트의 구성 옵션을 더블 클릭하거나 탭하여 특정 매개변수를 편집합니다. 이 예제에서는 스위스 바젤의 사람들을 테스트하고 있습니다.
 

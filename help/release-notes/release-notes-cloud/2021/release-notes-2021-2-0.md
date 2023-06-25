@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.2.0 릴리스 정보입니다.'
 description: "[!DNL Adobe Experience Manager] 2021.2.0용 as a Cloud Service 릴리스 노트"
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1234'
-ht-degree: 33%
+source-wordcount: '1232'
+ht-degree: 32%
 
 ---
 
@@ -78,7 +78,7 @@ ht-degree: 33%
 
 * 연결된 콘텐츠로 빠르게 이동하는 작업을 포함하여 연결된 에셋 및 경험 조각을 표시하도록 제품 콘솔 속성을 확장했습니다.
 
-* 최신 CIF 코어 구성 요소 버전 v1.8.0이 포함된 CIF Venia 참조 사이트 - 2021.02.24가 릴리스되었습니다. 을(를) 참조하십시오 [CIF Venia 참조 사이트](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) 을 참조하십시오.
+* 최신 CIF 코어 구성 요소 버전 v1.8.0이 포함된 CIF Venia 참조 사이트 - 2021.02.24가 릴리스되었습니다. 다음을 참조하십시오 [CIF Venia 참조 사이트](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) 을 참조하십시오.
 
 * CIF 코어 구성 요소 v1.8.0이 릴리스되었습니다. 을(를) 참조하십시오 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) 을 참조하십시오.
 

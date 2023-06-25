@@ -4,10 +4,10 @@ description: AEM을 통해 사이트 템플릿을 사용하여 사이트를 만�
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 98%
+source-wordcount: '787'
+ht-degree: 96%
 
 ---
 
@@ -31,7 +31,7 @@ AEM 빠른 사이트 생성 도구를 사용하면 개발자가 아닌 사용자
 
 >[!TIP]
 >
->[WKND 참조 사이트](https://wknd.site)는 완전한 기능을 갖춘 야외 활동 브랜드 웹 사이트의 모범 사례 구현을 제공합니다. 이를 살펴보고 잘 구축된 AEM 사이트를 구성하는 방법을 확인하십시오.
+>[WKND 참조 사이트](https://wknd.site) 는 완전한 기능을 갖춘 야외 활동 브랜드 웹 사이트의 모범 사례 구현을 제공합니다. 이를 살펴보고 잘 구축된 AEM 사이트를 구성하는 방법을 확인하십시오.
 
 ## 사이트 템플릿 {#site-templates}
 

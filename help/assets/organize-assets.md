@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '930'
 ht-degree: 5%
 
 ---
@@ -48,7 +48,7 @@ You can limit who can access certain folders in Assets by making the folder part
 
 ## Use tags to organize assets {#use-tags-to-organize-assets}
 
-You can use folders or tags or both to organize assets. Adding tags to assets makes them more easy to retrieve during a search. To add tags to an asset, follow these steps:
+You can use folders or tags or both to organize assets. Adding tags to assets makes them easier to retrieve during a search. To add tags to an asset, follow these steps:
 
 1. In the Digital Asset Manager, double-click the asset to open it.
 1. In the **Tags** area, open the menu to reveal the available tags. Select tags as appropriate. To delete a tag, hover the pointer over the tag and click `X` to delete it.
@@ -79,7 +79,7 @@ Date24/08/2021
 
 ## 태그를 사용하여 에셋 구성 {#use-tags-to-organize-assets}
 
-자산에 태그를 추가하면 검색 중에 쉽게 검색하고, 검색 결과를 사용하여 컬렉션을 만들고, 일부 자산에 대한 검색 등급을 높이고, 자산 검색을 위해 Adobe Sensei의 AI 알고리즘을 적용할 수 있습니다.
+자산에 태그를 추가하면 검색 중에 더 쉽게 검색하고, 검색 결과를 사용하여 컬렉션을 만들고, 일부 자산에 대한 검색 등급을 높이고, 자산 검색을 위해 Adobe Sensei의 AI 알고리즘을 적용할 수 있습니다.
 
 [!DNL Adobe Experience Manager Assets] 는 자체 학습 알고리즘을 사용하여 몇 번의 클릭만으로 적합한 자산을 찾을 수 있도록 해 주는 매우 설명적인 태그를 만듭니다. 스마트 태깅은 Adobe Sensei, 인공 지능 및 머신 러닝 프레임워크를 사용하며, 이를 통해 표준 및 비즈니스별 태그를 모두 인식하고 이미지에 적용할 수 있습니다. 스마트 태그는 컨텐츠, 개별 단어 또는 구를 식별하고 설명 태그를 자산에 자동으로 적용할 수도 있습니다.
 
@@ -136,5 +136,4 @@ Date24/08/2021
 >* [메타데이터 프로필](metadata-profiles.md)
 >* [비디오 프로필](/help/assets/dynamic-media/video-profiles.md)
 >* [Dynamic Media 이미지 프로필](/help/assets/dynamic-media/image-profiles.md)
-
 

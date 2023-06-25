@@ -4,10 +4,10 @@ description: 가장 일반적인 MSM 관련 문제를 해결하는 방법을 찾
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 88%
+source-wordcount: '763'
+ht-degree: 87%
 
 ---
 
@@ -61,7 +61,7 @@ MSM은 리소스 URL의 선택기를 통해 요청할 수 있는 여러 서블�
 
 ## FAQ {#faq}
 
-다음은 MSM 및 Live Copy와 관련하여 자주 묻는 몇 가지 질문입니다.
+다음은 MSM 및 라이브 카피와 관련하여 자주 묻는 몇 가지 질문입니다.
 
 ### 일부 속성(예: 제목, 주석)이 MSM 롤아웃 도중 업데이트되지 않는 이유는 무엇입니까? {#missing-properties}
 

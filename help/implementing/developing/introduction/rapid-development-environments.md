@@ -2,9 +2,9 @@
 title: 신속한 개발 환경
 description: 클라우드 환경에서 신속한 개발 반복을 위해 빠른 개발 환경을 사용하는 방법에 대해 알아봅니다.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3317'
+source-wordcount: '3318'
 ht-degree: 5%
 
 ---
@@ -94,7 +94,7 @@ Cloud Manager를 사용하여 프로그램에 대한 RDE를 추가한 후에는 
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   및 를 사용하여 영숫자 문자열을 자체 조직 ID로 바꿉니다. 이 ID는 전략을 사용하여 조회할 수 있습니다 [여기](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
+   및 를 사용하여 영숫자 문자열을 자체 조직 ID로 바꾸고, 이를 전략을 사용하여 조회할 수 있습니다 [여기](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
 
 1. 다음으로 프로그램 ID를 구성합니다.
 
@@ -104,7 +104,7 @@ Cloud Manager를 사용하여 프로그램에 대한 RDE를 추가한 후에는 
 
    `aio config:set cloudmanager_environmentid 123456`
 
-1. 플러그인 구성이 완료되면 다음을 수행하여 로그인합니다.
+1. 플러그인 구성을 완료한 후 다음을 수행하여 로그인합니다.
 
    `aio login`
 

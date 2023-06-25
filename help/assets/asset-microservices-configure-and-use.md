@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2932'
+source-wordcount: '2933'
 ht-degree: 3%
 
 ---
@@ -75,7 +75,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 1. 관리자 액세스 **[!UICONTROL 도구]** > **[!UICONTROL 에셋]** > **[!UICONTROL 처리 프로필]**. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 1. 폴더에 적용할 때 프로필을 고유하게 식별하는 데 도움이 되는 이름을 제공합니다.
-1. FPO 렌디션을 생성하려면 **[!UICONTROL 이미지]** 탭, 활성화 **[!UICONTROL FPO 렌디션 만들기]**. 입력 a **[!UICONTROL 품질]** 1과 100 사이의 값입니다.
+1. FPO 렌디션을 생성하려면 **[!UICONTROL 이미지]** 탭, 활성화 **[!UICONTROL FPO 렌디션 만들기]**. 입력 a **[!UICONTROL 품질]** 1-100 사이의 값입니다.
 1. 다른 변환을 생성하려면 다음을 클릭합니다. **[!UICONTROL 새로 추가]** 다음 정보를 입력하십시오.
 
    * 각 렌디션의 파일 이름.
@@ -101,7 +101,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## 사용자 지정 프로필 및 사용 사례 {#custom-config}
 
-다음 [!DNL Asset Compute Service] 는 기본 처리, Photoshop 파일과 같은 Adobe 특정 형식 처리, 사용자 지정 또는 조직별 처리 구현 등 다양한 사용 사례를 지원합니다. 과거에 필요한 DAM 자산 업데이트 워크플로우 사용자 지정은 자동으로 또는 처리 프로필 구성을 통해 처리됩니다. Adobe 이러한 처리 옵션으로 비즈니스 요구 사항을 충족하지 않으면 를 개발 및 사용하는 것이 좋습니다 [!DNL Asset Compute Service] 기본 기능을 확장합니다. 개요를 보려면 다음을 참조하십시오. [확장성 및 사용 시기 이해](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
+다음 [!DNL Asset Compute Service] 는 기본 처리, Photoshop 파일과 같은 Adobe 특정 형식 처리, 사용자 지정 또는 조직별 처리 구현 등 다양한 사용 사례를 지원합니다. 과거에 필요한 DAM 자산 업데이트 워크플로우 사용자 지정은 자동으로 또는 프로필 구성 처리를 통해 처리됩니다. Adobe 이러한 처리 옵션으로 비즈니스 요구 사항을 충족하지 않으면 를 개발 및 사용하는 것이 좋습니다 [!DNL Asset Compute Service] 기본 기능을 확장합니다. 개요를 보려면 다음을 참조하십시오. [확장성 및 사용 시기 이해](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
 
 >[!NOTE]
 >
@@ -262,7 +262,7 @@ OSGi 구성을 배포하는 방법은 다음을 참조하십시오. [배포 대�
 
 ## 우수 사례 및 제한 사항 {#best-practices-limitations-tips}
 
-* 워크플로우를 디자인할 때 모든 유형의 표현물에 대한 요구 사항을 고려합니다. 나중에 렌디션이 필요할 것으로 예상되지 않으면 워크플로우에서 렌디션 만들기 단계를 제거합니다. 렌디션은 이후에 일괄 삭제할 수 없습니다. 원하지 않는 렌디션은 을 장기간 사용한 후 많은 저장 공간을 차지할 수 있습니다. [!DNL Experience Manager]. 개별 에셋의 경우 사용자 인터페이스에서 렌디션을 수동으로 제거할 수 있습니다. 여러 에셋의 경우 다음 중 하나를 사용자 정의할 수 있습니다 [!DNL Experience Manager] 특정 렌디션을 삭제하거나 에셋을 삭제한 다음 다시 업로드합니다.
+* 워크플로우를 디자인할 때 모든 유형의 표현물에 대한 요구 사항을 고려합니다. 나중에 렌디션이 필요할 것으로 예상되지 않으면 워크플로우에서 렌디션 만들기 단계를 제거합니다. 렌디션은 이후에 일괄 삭제할 수 없습니다. 원하지 않는 렌디션은 을 장기간 사용한 후 많은 양의 저장 공간을 차지할 수 있습니다. [!DNL Experience Manager]. 개별 에셋의 경우 사용자 인터페이스에서 렌디션을 수동으로 제거할 수 있습니다. 여러 에셋의 경우 다음 중 하나를 사용자 정의할 수 있습니다 [!DNL Experience Manager] 특정 렌디션을 삭제하거나 에셋을 삭제한 다음 다시 업로드합니다.
 * 현재, 지원은 렌디션 생성으로 제한됩니다. 새 자산 생성은 지원되지 않습니다.
 * 현재 메타데이터 추출을 위한 파일 크기 제한은 약 15GB입니다. 매우 큰 에셋을 업로드할 때 메타데이터 추출 작업이 실패하는 경우가 있습니다.
 

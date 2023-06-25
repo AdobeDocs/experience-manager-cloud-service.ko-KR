@@ -2,10 +2,10 @@
 title: 콘텐츠 복사 도구
 description: 콘텐츠 복사 도구를 사용하면 사용자가 필요에 따라 AEM as a Cloud Service 프로덕션 환경에서 더 낮은 환경으로 테스트 목적으로 변경 가능한 콘텐츠를 복사할 수 있습니다.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1223'
-ht-degree: 56%
+source-wordcount: '1221'
+ht-degree: 55%
 
 ---
 

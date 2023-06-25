@@ -2,7 +2,7 @@
 title: 쿼리 빌더 API
 description: Asset Share 쿼리 빌더의 기능은 Java API 및 REST API를 통해 노출됩니다.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '2033'
 ht-degree: 0%
@@ -254,7 +254,7 @@ type=cq:Page
 
 ### 여러 속성 값 검색 {#search-for-multiple-property-values}
 
-속성의 여러 값을 검색하려는 경우 큰 그룹을 피하려면 (`"A" or "B" or "C"`)에 여러 값을 제공할 수 있습니다. `property` 조건자:
+속성의 여러 값을 검색하려는 경우 큰 그룹을 사용하지 않으려면 (`"A" or "B" or "C"`)에 여러 값을 제공할 수 있습니다. `property` 조건자:
 
 `http://<host>:<port>/bin/querybuilder.json?property=jcr%3atitle&property.1_value=Cycling%20Tuscany&property.2_value=Ski%20Touring&property.3_value=Whistler%20Mountain%20Biking`
 

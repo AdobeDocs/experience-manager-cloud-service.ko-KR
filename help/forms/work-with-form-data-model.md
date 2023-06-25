@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '4121'
+source-wordcount: '4120'
 ht-degree: 0%
 
 ---
@@ -195,10 +195,9 @@ Forms 데이터 통합을 처음 사용하지만 데이터 소스를 구성하�
    >[!NOTE]
    >
    > * 정적 템플릿을 사용하는 경우 다음 위치에 head.jsp를 오버레이합니다.
-      >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+   >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
    > * 편집 가능한 템플릿을 사용하는 경우 다음 위치에 aftemplatedpage.jsp를 오버레이합니다.
-      >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
-
+   >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 1. 설정 [!DNL paramMap] 요청 속성에 대해 설명합니다. 예를 들어 apps 폴더의 .jsp 파일에 다음 코드를 포함합니다.
 
@@ -292,7 +291,8 @@ Forms 데이터 통합을 처음 사용하지만 데이터 소스를 구성하�
    * **[!UICONTROL 속성]**: 속성의 유형, 하위 유형 및 형식을 지정합니다. 선택한 속성이 데이터 모델 개체의 기본 키인지 여부를 지정할 수도 있습니다.
    * **[!UICONTROL 서비스]**: 서비스의 입력 모델 개체, 출력 유형 및 인수를 지정합니다. Get 서비스의 경우 배열을 반환할지 여부를 지정할 수 있습니다.
 
-      ![edit-properties-service](assets/edit-properties-service.png)
+     ![edit-properties-service](assets/edit-properties-service.png)
+
    get 서비스의 속성 편집 대화 상자
 
 1. 누르기 **[!UICONTROL 완료]** 속성을 저장한 다음 **[!UICONTROL 저장]** 을 클릭하여 양식 데이터 모델을 저장합니다.
@@ -518,7 +518,7 @@ operationOptions.setValidationOptions(ValidationOptions.FULL);
  </tbody> 
 </table>
 
-이 예제에서 입력 데이터는 Swagger 파일에 정의된 최대, 최소 및 필수 제약 조건을 기준으로 검증됩니다. 입력 데이터는 주문 ID가 있고 해당 값이 1과 10 사이인 경우에만 유효성 검사 기준을 충족합니다.
+이 예제에서 입력 데이터는 Swagger 파일에 정의된 최대, 최소 및 필수 제약 조건을 기준으로 검증됩니다. 입력 데이터는 주문 ID가 있고 해당 값이 1-10인 경우에만 유효성 검사 기준을 충족합니다.
 
 ```json
    parameters: [

@@ -1,18 +1,18 @@
 ---
 title: Cloud Manager FAQ
-description: AEM as a Cloud Service의 Cloud Manager에 대해 가장 자주 묻는 질문에 대한 답변을 살펴보십시오.
+description: Cloud Manager에 대해 가장 자주 묻는 질문에 대한 답변을 AEM에서 as a Cloud Service으로 찾아보십시오.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 698ea704d821d26067e29a89b562388d7517772e
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 100%
+source-wordcount: '991'
+ht-degree: 91%
 
 ---
 
 
 # Cloud Manager FAQ {#cloud-manager-faqs}
 
-이 문서에서는 AEM as a Cloud Service의 Cloud Manager에 대해 가장 자주 묻는 질문에 대한 답변을 살펴봅니다.
+AEM 이 문서에서는 Cloud Manager에 대해 가장 자주 묻는 질문에 대한 답변을 as a Cloud Service으로 제공합니다.
 
 ## Cloud Manager 빌드와 함께 Java 11을 사용할 수 있습니까? {#java-11-cloud-manager}
 
@@ -22,9 +22,9 @@ ht-degree: 100%
 
 예를 들어 [wknd 프로젝트 샘플 프로젝트 코드](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)를 참조하십시오.
 
-## Java 8에서 Java 11로 전환한 후 maven-scr-plugin에 대한 오류와 함께 빌드가 실패합니다. 어떻게 해야 합니까? {#build-fails-maven-scr-plugin}
+## Java 8에서 Java 11을 통해 전환한 후 maven-scr-plugin에 대한 오류와 함께 빌드가 실패합니다. 어떻게 해야 합니까? {#build-fails-maven-scr-plugin}
 
-빌드를 Java 8에서 11로 전환하려고 하면 AEM Cloud Manager 빌드가 실패할 수 있습니다. 다음 오류가 발생하면 `maven-scr-plugin`을 제거하고 모든 OSGi 주석을 OSGi R6 주석으로 변환해야 합니다.
+Java 8에서 11까지 빌드를 전환하려고 하면 AEM Cloud Manager 빌드가 실패할 수 있습니다. 다음 오류가 발생하면 `maven-scr-plugin`을 제거하고 모든 OSGi 주석을 OSGi R6 주석으로 변환해야 합니다.
 
 ```text
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 이 플러그인을 제거하는 방법에 대한 지침은 [여기](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/)를 참조하십시오.
 
-## Java 8에서 Java 11로 전환한 후 RequireJavaVersion에 대한 오류와 함께 빌드가 실패합니다. 어떻게 해야 합니까? {#build-fails-requirejavaversion}
+## Java 8에서 Java 11을 통해 전환한 후 RequireJavaVersion에 대한 오류와 함께 빌드가 실패합니다. 어떻게 해야 합니까? {#build-fails-requirejavaversion}
 
 Cloud Manager 빌드의 경우 `maven-enforcer-plugin`이 실패하고 이러한 오류가 표시될 수 있습니다.
 

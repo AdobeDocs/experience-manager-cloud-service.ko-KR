@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2020.12.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2020.12.0 릴리스 정보입니다.'
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
-source-git-commit: aeee895e4a4b959125d08091619988d0ffa09ace
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 20%
+source-wordcount: '691'
+ht-degree: 17%
 
 ---
 
@@ -48,9 +48,9 @@ AEM as a Cloud Service 2020.12.0의 Cloud Manager 릴리스 일자는 2020년 12
 
 ### [!DNL Cloud Manager]의 새로운 기능 {#what-is-new-cm}
 
-* [SSL 인증서](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) 및 [사용자 정의 도메인 이름](/help/implementing/cloud-manager/custom-domain-names/introduction.md)의 셀프서비스 관리.
+* 의 셀프서비스 관리 [SSL 인증서](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) 및 [사용자 정의 도메인 이름](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
-* [IP 허용 목록](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)의 셀프서비스 관리.
+* 의 셀프서비스 관리 [IP 허용 목록](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 * 업데이트된 **환경** 세부 사항 페이지에서 이제 사용자가 해당 환경의 사용자 정의 도메인 이름 및 IP 허용 목록을 관리할 수 있습니다.
 

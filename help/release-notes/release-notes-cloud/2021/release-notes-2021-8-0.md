@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.8.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.8.0 릴리스 정보입니다.'
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1028'
 ht-degree: 51%
 
 ---
@@ -36,24 +36,24 @@ ht-degree: 51%
 
 * 디지털 에셋을 링크로 공유할 때 사용자는 URL을 클립보드에 바로 복사할 수 있습니다. 향상된 기능을 통해 에셋을 보다 빠르고 편리한 방법으로 공유할 수 있습니다. 이 기능을 사용하면 에셋을 보다 빠르고 편리하게 공유할 수 있습니다.
 
-   ![자산을 링크로 공유할 때 URL 복사 옵션](/help/assets/assets/link-share-copy-URL-option.png)
-   *그림: 자산을 링크로 공유할 때 이제 URL을 복사하여 별도로 공유할 수 있습니다.*
+  ![자산을 링크로 공유할 때 URL 복사 옵션](/help/assets/assets/link-share-copy-URL-option.png)
+  *그림: 자산을 링크로 공유할 때 이제 URL을 복사하여 별도로 공유할 수 있습니다.*
 
 * TXT 파일을 업로드할 때 에셋 마이크로서비스가 자동으로 썸네일을 생성합니다. PNG 썸네일은 사용자가 파일을 열지 않고도 내용이나 파일을 어느 정도 식별할 수 있도록 도와주는 TXT 파일의 렌디션입니다. 이 기능은 구성이 필요하지 않으며 기본적으로 작동합니다.
 
-   ![TXT 파일의 렌디션은 [!DNL Assets] PNG 형식](/help/assets/assets/thumbnail-rendition-txt-file.png)
-   *그림: TXT 파일의 렌디션은 파일을 열지 않고도 식별하는 데 도움이 되도록 자동으로 생성됩니다.*
+  ![TXT 파일의 렌디션은 [!DNL Assets] PNG 형식](/help/assets/assets/thumbnail-rendition-txt-file.png)
+  *그림: TXT 파일의 렌디션은 파일을 열지 않고도 식별하는 데 도움이 되도록 자동으로 생성됩니다.*
 
 ### 의 새로운 기능 [!DNL Assets] 프리릴리스 채널 {#assets-prerelease-features}
 
 * 이제 열 및 카드 보기에서 검색 결과에 표시된 에셋을 정렬할 수 있습니다. 정렬은 이름, 생성됨, 수정됨 또는 없음 열에서 작동합니다.
 
-   ![검색 결과 정렬 [!DNL Assets] 열 및 카드 보기에서](/help/assets/assets/sort-searched-assets.png)
-   *그림: 검색 결과 정렬 [!DNL Assets] 열 및 카드 보기에서 다음을 수행합니다.*
+  ![검색 결과 정렬 [!DNL Assets] 열 및 카드 보기에서](/help/assets/assets/sort-searched-assets.png)
+  *그림: 검색 결과 정렬 [!DNL Assets] 열 및 카드 보기에서 다음을 수행합니다.*
 
 ### [!DNL Assets]의 수정된 버그 {#assets-bugs-fixed}
 
-* 기여자 그룹의 구성원이 로 이동할 때 [!DNL Assets] 콘솔, 추가 `POST` 컬렉션을 시도하고 만들기 위한 요청이 생성됩니다. 이 요청은 필수가 아니며, 권한 문제로 인해 실패하고, 로그에 많은 오류를 생성합니다. (CQ-4328856)
+* 기여자 그룹의 구성원이 로 이동할 때 [!DNL Assets] 콘솔, 추가 `POST` 컬렉션을 만들기 위한 요청이 생성됩니다. 이 요청은 필수가 아닙니다. 권한 문제로 인해 실패하고 로그에 많은 오류가 생성됩니다. (CQ-4328856)
 * 사용자가 에셋을 보고 선택할 때 [!UICONTROL 타임라인] 왼쪽 패널의 팝업 메뉴에서 오류가 표시됩니다. 잘못된 쿼리로 인해 로그에 많은 경고가 기록됩니다. (CQ-4328919)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -80,7 +80,7 @@ ht-degree: 51%
 
 * 향상된 사용자 경험, 향상된 효율성 및 복잡한 제품 카탈로그에 대한 더 나은 지원을 위한 새로운 카테고리 선택기 UI
 
-   ![새 범주 선택기](/help/assets/CIF/category-picker.png)
+  ![새 범주 선택기](/help/assets/CIF/category-picker.png)
 
 * CIF 핵심 구성 요소에 대한 A11Y 지원 개선
 

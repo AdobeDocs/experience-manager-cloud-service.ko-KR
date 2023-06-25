@@ -2,10 +2,10 @@
 title: 페이지 콘텐츠 편집
 description: 페이지를 생성하면 콘텐츠를 편집하여 필요한 업데이트를 수행할 수 있습니다.
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3004'
-ht-degree: 75%
+source-wordcount: '3002'
+ht-degree: 73%
 
 ---
 
@@ -443,7 +443,7 @@ ht-degree: 75%
 
 ## 페이지 잠금 {#locking-a-page}
 
-AEM에서는 다른 사람이 콘텐츠를 수정할 수 없도록 페이지를 잠글 수 있습니다. 이 기능은 하나의 특정 페이지에 여러 편집 작업을 수행하거나 잠시 동안 페이지를 동결해야 할 때 유용합니다.
+AEM을 사용하면 다른 사람이 컨텐츠를 편집할 수 없도록 페이지를 잠글 수 있습니다. 이 잠금은 하나의 특정 페이지를 여러 번 편집하거나 잠시 페이지를 동결해야 할 때 유용합니다.
 
 다음 중 하나에서 페이지를 잠글 수 있습니다.
 

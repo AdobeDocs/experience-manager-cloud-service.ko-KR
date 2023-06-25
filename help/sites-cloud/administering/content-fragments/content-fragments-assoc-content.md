@@ -4,10 +4,10 @@ description: 콘텐츠 조각의 관련 콘텐츠 기능이 연결을 제공하�
 feature: Content Fragments
 role: User
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 95%
+source-wordcount: '239'
+ht-degree: 92%
 
 ---
 
@@ -30,7 +30,7 @@ AEM의 관련 콘텐츠 기능은 [페이지에서 콘텐츠 조각을 사용할
 1. 컬렉션이 이미 연결되어 있는지 여부에 따라 다음 중 하나를 선택합니다.
 
    * **콘텐츠 연결** - 첫 번째 연결된 컬렉션
-   * **컬렉션 연결** - 연결된 컬렉션이 이미 구성되어 있는 경우 이 옵션을 선택합니다.
+   * **컬렉션 연결** - 연결된 컬렉션이 이미 구성되었습니다.
 
 1. 필요한 컬렉션을 선택합니다.
 
