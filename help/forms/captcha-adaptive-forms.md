@@ -10,9 +10,9 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 0c303439c879605f1ab0927cf79b132dbb448af5
+source-git-commit: 1633e02fc6b79a45582b919863662bc1d1b49b42
 workflow-type: tm+mt
-source-wordcount: '1415'
+source-wordcount: '1433'
 ht-degree: 3%
 
 ---
@@ -29,12 +29,11 @@ CAPTCHA(Complete Automated Public Turning test to tell Computers and Humans Apar
 >* 적응형 Forms의 CAPTCHA는의 오프라인 모드에서 지원되지 않습니다. [!DNL AEM Forms] 앱.
 >
 
-
-## Google에서 ReCAPTCHA 서비스 구성 {#google-recaptcha}
+## Google에서 reCAPTCHA 서비스 구성 {#google-reCAPTCHA}
 
 양식 작성자는 Google의 reCAPTCHA 서비스를 사용하여 적응형 Forms에서 CAPTCHA를 구현할 수 있습니다. 사이트를 보호하기 위한 고급 CAPTCHA 기능을 제공합니다. reCAPTCHA 작동 방식에 대한 자세한 내용은 [Google recaptcha](https://developers.google.com/recaptcha/).
 
-![Recaptcha](assets/recaptcha_new.png)
+![reCAPTCHA](assets/recaptcha_new.png)
 
 에서 reCAPTCHA 서비스를 구현하려면 [!DNL AEM Forms]:
 
@@ -49,10 +48,10 @@ CAPTCHA(Complete Automated Public Turning test to tell Computers and Humans Apar
 
       1. 구성 속성 대화 상자에서 다음을 활성화합니다 **[!UICONTROL 클라우드 구성]**.
       1. 누르기 **[!UICONTROL 저장 및 닫기]** 구성을 저장하고 대화 상자를 종료합니다.
+
    1. 구성 브라우저에서 **[!UICONTROL 만들기]**.
    1. 구성 만들기 대화 상자에서 폴더의 제목을 지정하고 을 활성화합니다 **[!UICONTROL 클라우드 구성]**.
    1. 누르기 **[!UICONTROL 만들기]** 을 클릭하여 클라우드 서비스 구성에 대해 활성화된 폴더를 만듭니다.
-
 
 1. reCAPTCHA에 대한 클라우드 서비스를 구성합니다.
 
@@ -85,14 +84,14 @@ CAPTCHA(Complete Automated Public Turning test to tell Computers and Humans Apar
 
 1. 추가한 Captcha 구성 요소를 선택하고 을 누릅니다 ![cmppr](assets/configure-icon.svg) 속성을 편집합니다.
 1. CAPTCHA 위젯의 제목을 지정합니다. 기본값은 입니다. **[!UICONTROL Captcha]**. 선택 **[!UICONTROL 제목 숨기기]** 제목을 표시하지 않으려는 경우
-1. 다음에서 **[!UICONTROL Captcha 서비스]** 드롭다운, 선택 **[!UICONTROL reCaptcha]** 에 설명된 대로 구성한 경우 reCAPTCHA 서비스를 활성화하려면 다음을 수행하십시오 [Google의 ReCAPTCHA 서비스](#google-recaptcha). 설정 드롭다운에서 구성을 선택합니다.
+1. 다음에서 **[!UICONTROL Captcha 서비스]** 드롭다운, 선택 **[!UICONTROL reCAPT차]** 에 설명된 대로 구성한 경우 reCAPTCHA 서비스를 활성화하려면 다음을 수행하십시오 [Google의 reCAPTCHA 서비스](#google-reCAPTCHA). 설정 드롭다운에서 구성을 선택합니다.
 1. 다음으로 유형 선택 **[!UICONTROL 기본]** 또는 **[!UICONTROL 콤팩트]** reCAPTCHA 위젯용 다음을 선택할 수도 있습니다. **[!UICONTROL 숨김]** 의심되는 활동이 있는 경우에만 CAPTCHA 문제를 표시하는 옵션입니다. 아래에 표시된 reCAPTCHA로 보호된 배지는 보호된 양식에 표시됩니다.
 
    ![reCAPTCHA 배지로 보호된 Google](assets/google-recaptcha-v2.png)
 
    >[!NOTE]
    >
-   >선택 안 함 **[!UICONTROL 기본값]** 기본 Experience Manager CAPTCHA 서비스가 더 이상 사용되지 않으므로 CAPTCHA 서비스 드롭다운에서 을 사용하십시오.
+   >* 선택 안 함 **[!UICONTROL 기본값]** 기본 Experience Manager CAPTCHA 서비스가 더 이상 사용되지 않으므로 CAPTCHA 서비스 드롭다운에서 을 사용하십시오.
 
 1. 속성을 저장합니다.
 
@@ -107,6 +106,10 @@ reCAPTCHA 서비스가 적응형 양식에서 활성화됩니다. 양식을 미�
 탭 **[!UICONTROL 통화 값]** 양식에 필드를 입력하고 다음 규칙을 만듭니다.
 
 ![규칙 표시 또는 숨기기](assets/rules-show-hide-captcha.png)
+
+>[!NOTE]
+>
+>* 크기가 다음과 같은 reCAPTCHA v2 구성을 선택하는 경우 [!UICONTROL 숨김] 그런 다음 표시/숨기기 옵션은 적용할 수 없습니다.
 
 ### CAPTCHA 유효성 검사 {#validate-captcha}
 
@@ -206,7 +209,7 @@ public interface GuideCaptchaValidator {
 
 `userResponseToken` 은(는) `g_recaptcha_response` 폼에서 CAPTCHA를 푼 후에 생성됩니다.
 
-### reCAPTCHA 서비스 도메인 편집 {#recaptcha-service-domain}
+### reCAPTCHA 서비스 도메인 편집 {#reCAPTCHA-service-domain}
 
 reCAPTCHA 서비스는 `https://www.recaptcha.net/` 을 기본 도메인으로 설정합니다. 설정할 설정을 수정할 수 있습니다 `https://www.google.com/` 또는 reCAPTCHA 서비스 로드, 렌더링 및 유효성 검사를 위한 사용자 지정 도메인 이름입니다.
 
