@@ -10,7 +10,7 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 1633e02fc6b79a45582b919863662bc1d1b49b42
+source-git-commit: a16da1b11cfe18910b2e57c0b6b668543dba46e3
 workflow-type: tm+mt
 source-wordcount: '1433'
 ht-degree: 3%
@@ -70,17 +70,14 @@ CAPTCHA(Complete Automated Public Turning test to tell Computers and Humans Apar
 
    >[!NOTE]
    >
-   >적응형 양식을 만들 때 선택한 구성 컨테이너에 reCAPTCHA 클라우드 서비스가 포함되어 있는지 확인합니다. 적응형 양식 속성을 편집하여 양식과 연결된 구성 컨테이너를 변경할 수도 있습니다.
+   > 적응형 양식을 만들 때 선택한 구성 컨테이너에 reCAPTCHA 클라우드 서비스가 포함되어 있는지 확인합니다. 적응형 양식 속성을 편집하여 양식과 연결된 구성 컨테이너를 변경할 수도 있습니다.
 
 1. 구성 요소 브라우저에서 **[!UICONTROL Captcha]** 구성 요소를 적응형 양식에 추가합니다.
 
    >[!NOTE]
    >
-   >적응형 양식에서 Captcha 구성 요소를 두 개 이상 사용하는 것은 지원되지 않습니다. 또한 소극적 로드로 표시된 패널 또는 조각에서는 CAPTCHA를 사용하지 않는 것이 좋습니다.
-
-   >[!NOTE]
-   >
-   >Captcha는 시간에 민감하며 약 1분 후에 만료됩니다. 따라서 적응형 양식에서 Captcha 구성 요소를 제출 단추 바로 앞에 배치하는 것이 좋습니다.
+   > * 적응형 양식에서 Captcha 구성 요소를 두 개 이상 사용하는 것은 지원되지 않습니다. 또한 소극적 로드로 표시된 패널 또는 조각에서는 CAPTCHA를 사용하지 않는 것이 좋습니다.
+   > * Captcha는 시간에 민감하며 약 1분 후에 만료됩니다. 따라서 적응형 양식에서 Captcha 구성 요소를 제출 단추 바로 앞에 배치하는 것이 좋습니다.
 
 1. 추가한 Captcha 구성 요소를 선택하고 을 누릅니다 ![cmppr](assets/configure-icon.svg) 속성을 편집합니다.
 1. CAPTCHA 위젯의 제목을 지정합니다. 기본값은 입니다. **[!UICONTROL Captcha]**. 선택 **[!UICONTROL 제목 숨기기]** 제목을 표시하지 않으려는 경우
@@ -91,7 +88,7 @@ CAPTCHA(Complete Automated Public Turning test to tell Computers and Humans Apar
 
    >[!NOTE]
    >
-   >* 선택 안 함 **[!UICONTROL 기본값]** 기본 Experience Manager CAPTCHA 서비스가 더 이상 사용되지 않으므로 CAPTCHA 서비스 드롭다운에서 을 사용하십시오.
+   > 선택 안 함 **[!UICONTROL 기본값]** 기본 Experience Manager CAPTCHA 서비스가 더 이상 사용되지 않으므로 CAPTCHA 서비스 드롭다운에서 을 사용하십시오.
 
 1. 속성을 저장합니다.
 
@@ -109,7 +106,7 @@ reCAPTCHA 서비스가 적응형 양식에서 활성화됩니다. 양식을 미�
 
 >[!NOTE]
 >
->* 크기가 다음과 같은 reCAPTCHA v2 구성을 선택하는 경우 [!UICONTROL 숨김] 그런 다음 표시/숨기기 옵션은 적용할 수 없습니다.
+> 크기가 다음과 같은 reCAPTCHA v2 구성을 선택하는 경우 [!UICONTROL 숨김] 그런 다음 표시/숨기기 옵션은 적용할 수 없습니다.
 
 ### CAPTCHA 유효성 검사 {#validate-captcha}
 
