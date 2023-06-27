@@ -1,13 +1,13 @@
 ---
-title: 사용자 매핑 도구 개요 (기존)
+title: 사용자 매핑 도구 개요(이전)
 description: 사용자 매핑 도구 개요(이전)
 exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
 hide: true
 hidefromtoc: true
-source-git-commit: e84b9e5403ee937b689e312fb06a2464b89fffe6
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 88%
+source-wordcount: '305'
+ht-degree: 22%
 
 ---
 
@@ -32,13 +32,13 @@ NOTE: "LEGACY" for user mapping includes everything before (i.e. not including) 
 
 ## 소개 {#introduction}
 
-Adobe Experience Manager(AEM) as a Cloud Service로의 전환 여정의 일부로 사용자 및 그룹을 기존 AEM 시스템에서 AEM as a Cloud Service로 이동해야 합니다. 이는 콘텐츠 전송 도구를 통해 수행됩니다.
+Adobe Experience Manager(AEM) as a Cloud Service으로 전환 여정의 일부로 기존 AEM AEM 시스템의 사용자와 그룹을 as a Cloud Service으로 이동해야 합니다. 이 마이그레이션은 콘텐츠 전송 도구에 의해 수행됩니다.
 
-AEM as a Cloud Service의 주요 변경 내용은 작성자 계층 액세스에 대한 Adobe ID 사용이 완전히 통합된다는 것입니다.  이를 위해서는 사용자 및 사용자 그룹 관리에 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)을 사용해야 합니다. 사용자 프로필 정보는 Adobe Identity Management System(IMS)에서 중앙 집중식으로 관리되어 모든 Adobe 클라우드 애플리케이션에 SSO(Single Sign-On)를 제공할 수 있습니다. 자세한 내용은 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management)를 참조하십시오. 해당 변경으로 인해 기존 사용자 및 그룹을 해당 IMS ID에 매핑하여 Cloud Service 작성자 인스턴스의 사용자 및 그룹 중복을 방지해야 합니다.
+AEM as a Cloud Service의 주요 변경 내용은 작성자 계층 액세스에 대한 Adobe ID 사용이 완전히 통합된다는 것입니다. 이 통합에는 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html) 사용자 및 사용자 그룹 관리. 사용자 프로필 정보는 모든 Adobe 클라우드 애플리케이션에서 단일 사인온을 제공하는 IMS(Adobe Identity Management System)에서 중앙 집중화됩니다. 자세한 내용은 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=en#identity-management). 이러한 변경 사항으로 인해 Cloud Service 작성자 인스턴스에서 기존 사용자 및 그룹을 중복하지 않도록 기존 사용자 및 그룹을 해당 IMS ID에 매핑해야 합니다.
 
 ## 사용자 매핑 도구 {#mapping-tool}
 
-콘텐츠 전송 도구(사용자 매핑 없음)는 마이그레이션되는 콘텐츠와 연결된 모든 사용자 및 그룹을 마이그레이션합니다. 사용자 매핑 도구는 콘텐츠 전송 도구의 일부이고 사용자를 수정하여 AEM as a Cloud Service에서 사용하는 SSO(Single Sign-On) 기능인 IMS로 사용자를 올바르게 인식할 수 있도록 하기 위한 목적으로만 사용됩니다. 수정 작업이 완료되면 콘텐츠 전송 도구는 평소와 같이 지정된 콘텐츠 사용자 및 그룹을 마이그레이션합니다.
+콘텐츠 전송 도구 (사용자 매핑 없음)는 마이그레이션되는 콘텐츠와 관련된 모든 사용자 및 그룹을 마이그레이션합니다. 사용자 매핑 도구는 컨텐츠 전송 도구의 일부입니다. 유일한 목적은 AEM as a Cloud Service에서 사용하는 단일 사인온 기능인 IMS에서 사용자를 올바르게 인식하도록 편집하는 것입니다. 이러한 수정이 완료되면, 콘텐츠 전송 도구는 지정된 콘텐츠의 사용자 및 그룹을 평소대로 마이그레이션합니다.
 
 ### 다음 단계 {#whats-next}
 

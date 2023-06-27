@@ -2,9 +2,9 @@
 title: 저장소 현대화 도구
 description: 저장소 현대화 도구
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '301'
 ht-degree: 6%
 
 ---
@@ -15,7 +15,7 @@ Repository Modernizer 는 Adobe Experience Manager as a Cloud Service에 대해 
 
 ## 소개 {#introduction}
 
-Adobe Experience Manager as a Cloud Service은 AEM 프로젝트에 많은 새로운 기능과 가능성을 제공합니다. 그러나 Adobe Experience Manager Maven 프로젝트가 AEM Cloud Service과 호환되도록 하려면 몇 가지 변경이 필요합니다. 높은 수준에서 AEM은 **콘텐츠** 및 **코드** 변경할 수 있는 컨텐츠와 변경할 수 없는 컨텐츠 간의 분할을 준수하도록 개별 하위 패키지로 변환합니다. 다음을 참조하십시오. [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 를 참조하십시오. Cloud Service을 위한 새 AEM 프로젝트 구조.
+Adobe Experience Manager as a Cloud Service은 AEM 프로젝트에 많은 새로운 기능과 가능성을 제공합니다. 그러나 Adobe Experience Manager Maven 프로젝트가 AEM Cloud Service과 호환되도록 하려면 몇 가지 변경이 필요합니다. 높은 수준에서 AEM은 **콘텐츠** 및 **코드** 변경할 수 있는 컨텐츠와 변경할 수 없는 컨텐츠 간의 분할을 준수하도록 개별 하위 패키지로 변환합니다. 다음을 참조하십시오 [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html) 를 참조하십시오. Cloud Service을 위한 새 AEM 프로젝트 구조.
 
 Repository Modernizer는 다음과 같은 배포 구조를 생성하여 호환되는 AEM Cloud Service 프로젝트 구조를 만듭니다.
 
@@ -32,14 +32,14 @@ Repository Modernizer는 다음과 같은 배포 구조를 생성하여 호환�
 
 >[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
 
-* Adobe I/O CLI 를 통해 : 다음을 통해 Repository Modernizer를 사용하는 것이 좋습니다. `aio-cli-plugin-aem-cloud-service-migration` (Adobe I/O CLI용 AEM as a Cloud Service 코드 리팩터링 플러그인).
+* Adobe Developer CLI의 방법 : 를 통해 Repository Modernizer를 사용하는 것이 좋습니다. `aio-cli-plugin-aem-cloud-service-migration` (Adobe Developer CLI용 AEM as a Cloud Service 코드 리팩터링 플러그인).
 
-   을(를) 참조하십시오 **[Git 리소스: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** 을(를) 사용하여 플러그인을 설치하고 사용하는 방법을 알아봅니다.
+  다음을 참조하십시오 **[Git 리소스: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** 따라서 플러그인을 설치하고 사용하는 방법을 배울 수 있습니다.
 
 * 독립형 유틸리티로서 : Repository Modernizer를 독립형 유틸리티로 실행할 수도 있습니다.
 
-   을(를) 참조하십시오 **[Git 리소스: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** 을(를) 사용하여 이 도구를 사용하는 방법을 알아봅니다.
+  다음을 참조하십시오 **[Git 리소스: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** 이 도구를 사용하는 방법을 배울 수 있습니다.
 
-   >[!NOTE]
-   >
-   >Repository Modernizer 는 NodeJS 를 사용하여 개발되었습니다. NodeJS 10.0+를 설치하는 것이 좋습니다.
+  >[!NOTE]
+  >
+  >Repository Modernizer 는 NodeJS 를 사용하여 개발되었습니다. NodeJS 10.0+를 설치하는 것이 좋습니다.
