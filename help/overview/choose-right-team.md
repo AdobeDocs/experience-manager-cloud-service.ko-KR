@@ -5,7 +5,7 @@ exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '829'
-ht-degree: 80%
+ht-degree: 82%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 80%
 >id="aemcloud_chooseteam"
 >title="적합한 팀 선택"
 >abstract="Adobe Experience Manager 배포를 성공적으로 이끌 수 있도록 적합한 인력을 배치하십시오."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=ko-kr" text="KPI 정렬"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=ko-kr" text="KPI 평가"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="KPI 정렬"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=en" text="KPI 평가"
 
 조직 내 여러 부서에서 디지털 환경의 다양한 측면을 보일 수 있습니다. 거버넌스를 갖추지 않으면 끝없는 논쟁과 내분, 혼란의 상황이 발생할 것입니다.
 
@@ -77,4 +77,4 @@ Adobe Experience Manager Assets 구현을 성공적으로 실행하기 위해 �
 
 >[!TIP]
 >
-> Adobe Experience Cloud에 대해 자세히 알아보고 의 리소스를 사용합니다. [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) 인증 받기 [Adobe 디지털 학습](https://learning.adobe.com/certification.html).
+> [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)에서 Adobe Experience Cloud 및 사용 리소스에 대한 자세한 내용을 살펴보고 [Adobe 디지털 학습](https://learning.adobe.com/certification.html)을 통해 인증을 받으십시오.

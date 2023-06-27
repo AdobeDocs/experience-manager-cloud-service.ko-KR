@@ -5,7 +5,7 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ AEM as a Cloud Service는 내장된 콘텐츠 게재 네트워크(CDN) 서비스
 * AEM 관리 CDN에 설치된 사용자 정의 도메인의 이름(및 인증서)은 Cloud Manager를 통해 관리됩니다.
 * 자체 CDN에 설치된 사용자 정의 도메인의 이름(및 인증서)은 해당 특정 CDN을 통해 관리됩니다.
 
-자체 CDN에서 관리되는 도메인은 Cloud Manager를 통해 설치할 필요가 없습니다. X-Forwarded-Host를 통해 AEM에서 사용할 수 있도록 하고 Dispatcher에 정의된 vhost를 일치시킵니다. 다음을 참조하십시오. [CDN 설명서](/help/implementing/dispatcher/cdn.md).
+자체 CDN에서 관리되는 도메인은 Cloud Manager를 사용하여 설치할 필요가 없습니다. 도메인은 X-Forwarded-Host로 AEM에 제공되면 Dispatcher에 정의된 가상 호스트와 일치합니다. [CDN 설명서](/help/implementing/dispatcher/cdn.md)를 참조하십시오.
 
 하나의 환경에서 두 도메인을 AEM 관리 CDN과 자체 CDN에 설치할 수 있습니다.
 
@@ -62,7 +62,7 @@ AEM as a Cloud Service는 내장된 콘텐츠 게재 네트워크(CDN) 서비스
 
 >[!TIP]
 >
->AEM as a Cloud Service를 사용하여 사용자 정의 도메인 이름을 설정하는 것은 일반적으로 간단한 프로세스입니다. 그러나 경우에 따라 도메인 위임 문제가 발생할 수 있으며 해결하는 데 영업일 기준 1~2일이 소요될 수 있습니다. 이러한 이유로 활성화 날짜 이전에 도메인을 설치하는 것이 좋습니다. 자세한 내용은 [도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 문서를 참조하십시오.
+>AEM as a Cloud Service를 사용하여 사용자 정의 도메인 이름을 설정하는 것은 일반적으로 간단한 프로세스입니다. 그러나 경우에 따라 도메인 위임 문제가 발생할 수 있으며 해결하는 데 영업일 기준 1~2일이 소요될 수 있습니다. 이러한 이유로 Go-Live 날짜 이전에 도메인을 설치하는 것이 좋습니다. 자세한 내용은 [도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 문서를 참조하십시오.
 
 ## 제한 사항 {#limitations}
 

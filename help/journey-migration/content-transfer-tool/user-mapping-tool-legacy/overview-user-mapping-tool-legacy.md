@@ -34,7 +34,7 @@ NOTE: "LEGACY" for user mapping includes everything before (i.e. not including) 
 
 Adobe Experience Manager(AEM) as a Cloud Service으로 전환 여정의 일부로 기존 AEM AEM 시스템의 사용자와 그룹을 as a Cloud Service으로 이동해야 합니다. 이 마이그레이션은 콘텐츠 전송 도구에 의해 수행됩니다.
 
-AEM as a Cloud Service의 주요 변경 내용은 작성자 계층 액세스에 대한 Adobe ID 사용이 완전히 통합된다는 것입니다. 이 통합에는 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html) 사용자 및 사용자 그룹 관리. 사용자 프로필 정보는 모든 Adobe 클라우드 애플리케이션에서 단일 사인온을 제공하는 IMS(Adobe Identity Management System)에서 중앙 집중화됩니다. 자세한 내용은 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=en#identity-management). 이러한 변경 사항으로 인해 Cloud Service 작성자 인스턴스에서 기존 사용자 및 그룹을 중복하지 않도록 기존 사용자 및 그룹을 해당 IMS ID에 매핑해야 합니다.
+AEM as a Cloud Service의 주요 변경 내용은 작성자 계층 액세스에 대한 Adobe ID 사용이 완전히 통합된다는 것입니다. 이 통합에는 [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html) 사용자 및 사용자 그룹 관리. 사용자 프로필 정보는 모든 Adobe 클라우드 애플리케이션에서 단일 사인온을 제공하는 IMS(Adobe Identity Management System)에서 중앙 집중화됩니다. 자세한 내용은 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=en#identity-management). 이러한 변경 사항으로 인해 Cloud Service 작성자 인스턴스에서 기존 사용자 및 그룹을 중복하지 않도록 기존 사용자 및 그룹을 해당 IMS ID에 매핑해야 합니다.
 
 ## 사용자 매핑 도구 {#mapping-tool}
 

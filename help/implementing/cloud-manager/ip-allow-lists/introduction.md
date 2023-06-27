@@ -16,8 +16,8 @@ ht-degree: 33%
 >id="aemcloud_golive_ipallowlist"
 >title="IP 허용 목록 관리"
 >abstract="AEM as a Cloud Service는 인터넷을 통해 액세스할 수 있으며 사용자 인증 및 권한 부여를 통해 보호됩니다. Cloud Manager의 IP 허용 목록은 신뢰할 수 있는 IP 주소에 대한 액세스를 제한하고 제어하는 데만 사용할 수 있습니다. 적절한 권한이 있는 Cloud Manager 사용자는 사이트 사용자가 AEM 도메인에 액세스할 수 있는 신뢰할 수 있는 IP 주소의 허용 목록을 만들 수 있습니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html" text="IP 허용 목록 추가"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/managing-ip-allow-lists.html" text="IP 허용 목록 보기 및 업데이트"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html?lang=ko-KR" text="IP 허용 목록 추가"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/managing-ip-allow-lists.html?lang=ko-KR" text="IP 허용 목록 보기 및 업데이트"
 
 AEM as a cloud service는 기본적으로 인터넷을 통해 액세스할 수 있습니다. 보안은 사용자 인증 및 권한 부여를 통해 처리되지만 IP 허용 목록은 신뢰할 수 있는 IP 주소에 대한 액세스만 제한하는 방법입니다.
 

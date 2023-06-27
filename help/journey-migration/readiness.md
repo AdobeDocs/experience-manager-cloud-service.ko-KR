@@ -15,7 +15,7 @@ ht-degree: 8%
 >id="aemcloud_cam_planning"
 >title="전환 계획"
 >abstract="클라우드 서비스로 전환 여정을 시작하기 전에 먼저 AEM as a Cloud Service를 숙지하고, 이에 대한 주목할 만한 변경 사항을 검토하고, 교체되거나 더 이상 사용되지 않는 기능을 검토해야 합니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="Best Practices Analyzer"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=ko-KR" text="Best Practices Analyzer"
 
 이 AEM as a Cloud Service 마이그레이션 여정 단계에서는 AEM을 숙지하고, as a Cloud Service에서 도입한 주목할 만한 변경 사항을 검토하고, 클라우드로의 성공적인 마이그레이션을 계획하는 데 필요한 사항을 이해합니다.
 

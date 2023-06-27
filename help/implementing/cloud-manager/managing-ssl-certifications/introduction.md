@@ -5,7 +5,7 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 79%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="SSL 인증서 보기, 업데이트 및 바꾸기"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="SSL 인증서 상태 확인"
 
-Cloud Manager는 SSL 인증서를 설치하고 관리하는 셀프서비스 도구를 제공하므로 사용자의 사이트를 보호할 수 있습니다. Cloud Manager는 플랫폼 TLS 서비스를 사용하여 고객이 소유하고 Let&#39;s Encrypt와 같은 서드파티 인증 기관에서 얻은 SSL 인증서 및 개인 키를 관리합니다.
+Cloud Manager는 SSL 인증서를 설치하고 관리하는 셀프서비스 도구를 제공하여 사용자의 사이트를 보호합니다. Cloud Manager는 플랫폼 TLS 서비스를 사용하여 고객이 소유하고 Let’s Encrypt와 같은 서드파티 인증 기관에서 얻은 SSL 인증서 및 개인 키를 관리합니다.
 
 ## 인증서 소개 {#certificates}
 
 기업은 웹 사이트를 보호하고 고객이 웹 사이트를 신뢰할 수 있도록 하기 위해 SSL 인증서를 사용합니다. SSL 프로토콜을 사용하려면 웹 서버에서 SSL 인증서를 사용해야 합니다.
 
-엔티티가 인증 기관에 인증서를 요청하면 CA가 확인 프로세스를 완료합니다. 이는 도메인 이름 제어 확인에서 회사 등록 문서 및 구독자 계약서 수집에 이르기까지 다양합니다. 엔티티의 정보가 확인되면 CA는 CA의 개인 키를 사용하여 공개 키에 서명합니다. 모든 주요 인증 기관은 웹 브라우저에 루트 인증서를 가지고 있으므로 엔티티의 인증서는 *신뢰 체인* 웹 브라우저는 이를 신뢰할 수 있는 인증서로 인식합니다.
+엔티티가 인증 기관에 인증서를 요청하면 CA가 확인 프로세스를 완료합니다. 이는 도메인 이름 제어 확인에서 회사 등록 문서 및 구독자 계약서 수집에 이르기까지 다양합니다. 엔티티의 정보가 확인되면 CA는 CA의 개인 키를 사용하여 공개 키에 서명합니다. 모든 주요 인증 기관은 웹 브라우저에 루트 인증서를 가지고 있기 때문에, 엔티티의 인증서는 *신뢰 체인*&#x200B;을 통해 연결되고 웹 브라우저는 이를 신뢰할 수 있는 인증서로 인식합니다.
 
 >[!IMPORTANT]
 >

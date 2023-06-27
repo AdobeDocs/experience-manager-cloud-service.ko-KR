@@ -6,7 +6,7 @@ exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 98%
 
 Adobe Experience Manager Headless CMS를 처음 사용하는 개발자용 설명서를 시작합니다.
 
-강력하고 유연한 Headless 기능과 각각의 능력, 그리고 귀하의 첫 Headless 개발 프로젝트에서 이들 기능을 사용하는 방법에 대해 알아보십시오. 이 여정은 첫 번째 Headless 애플리케이션 개발에 필요한 모든 정보를 제공합니다.
+강력하고 유연한 Headless 기능 및 개별 기능과 첫 번째 Headless 개발 프로젝트에서 기능을 사용하는 방법에 대해 알아봅니다. 이 여정은 첫 번째 Headless 애플리케이션 개발에 필요한 모든 정보를 제공합니다.
 
 {{headless-trials-promotion}}
 
@@ -81,7 +81,7 @@ AEM의 Headless에 대한 기본 지식을 제공하는 다양한 주제는 이 
 원하는 속도로 학습하시겠습니까? 다음 옵션 확인:
 
 * **Headless 개념 및 AEM의 Headless 기술**&#x200B;에 대해 계속 알아보려면 다음 문서인 [콘텐츠를 AEM 콘텐츠 모델로 모델링하는 방법](model-your-content.md)을 검토하여 권장하는 AEM Headless 여정을 계속하는 것이 좋습니다(AEM의 콘텐츠 구조를 모델링하는 방법에 대해 알아보는 경우).
-* **직접 해보면서 배우는 것**&#x200B;을 선호하면 [AEM Headless 실습 튜토리얼 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ko-KR)로 이동할 수 있습니다(AEM Headless 콘텐츠를 노출하는 간단한 프로젝트를 구현하여 AEM Headless 개발로 직접 이동하는 경우).
+* **직접 해보면서 배우는 것**&#x200B;을 선호하면 [AEM Headless 실습 튜토리얼 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)로 이동할 수 있습니다(AEM Headless 콘텐츠를 노출하는 간단한 프로젝트를 구현하여 AEM Headless 개발로 직접 이동하는 경우).
 
 ## 추가 리소스 {#additional-resources}
 

@@ -15,8 +15,8 @@ ht-degree: 21%
 >id="aemcloud_migration_overview"
 >title="AEM as a Cloud Service로 마이그레이션"
 >abstract="고객을 다양한 Experience Manager 배포에서 Experience Manager as a Cloud Service로 전환하고, 기존 고객이 연결된 경험을 지속적으로 제공할 수 있도록 지원하는 단계적 접근 방식에 대해 설명합니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html" text="새로운 기능 및 차이점은?"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html" text="AEM as a Cloud Service 소개."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=ko-KR" text="새로운 기능 및 차이점은?"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html?lang=ko-KR" text="AEM as a Cloud Service 소개."
 
 AEM as a Cloud Service(Adobe Experience Manager)은 Experience Manager 기반 인프라, API 기반 개발 및 가이드 DevOps 프로세스를 기반으로 구축된 컨테이너용 재설계 기반을 제공하여 마케터와 개발자가 항상 고객 경험 관리의 혁신을 주도할 수 있도록 합니다.
 
@@ -58,7 +58,7 @@ Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에
 | <ol><li>리뷰 [ADOBE EXPERIENCE MANAGER SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en) 설명서에서 자세히 알아보십시오.</li><li>시청 [Dispatcher SDK 설치](https://video.tv.adobe.com/v/30601) dispatcher SDK 설치 방법을 이해하려면</li><li>시청 [Dispatcher SDK 구성](https://video.tv.adobe.com/v/30602) dispatcher SDK 구성 방법을 이해하려면</li><li>리뷰 [로컬 개발 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en#local-development-environment-set-up) 설명서 를 참조하십시오.</li><li>Experience Manager에 대한 액세스 구성 [연습](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en#accessing)</li></ol> | <ol><li>[개발 기본 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en)</li><li>[개발 지침](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en)</li><li>[Experience Manager 프로젝트 구조 이해](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=en)</li><li>[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)</li><li>[Digital Foundation 블루프린트](https://solutionpartners.adobe.com/content/dam/solution/en/spp_assets/restricted/community/community_31/digital_foundation_best_practices_and_documentation.zip)</li><li>[스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=en)</li><li>[오버레이](/help/implementing/developing/introduction/overlays.md)</li><li>[Experience Manager as a Cloud Service API 참조](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/)</li></ol> |
 
 >[!TIP]
-> 방법에 대한 튜토리얼 보기 [로컬 Experience Manager SDK에서 WKND 개발 및 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)
+> 방법에 대한 튜토리얼 보기 [로컬 Experience Manager SDK에서 WKND 개발 및 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 ### 배포
 
@@ -81,7 +81,7 @@ AEM as a Cloud Service 환경을 구성하고 배포하는 방법에 대해서�
    * [백업 및 복원](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html?lang=en)
 
 >[!TIP]
-> 방법에 대한 튜토리얼 보기 [Experience Manager Cloud Service에 WKND 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)
+> 방법에 대한 튜토리얼 보기 [Experience Manager Cloud Service에 WKND 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 ### 도움말 및 리소스
 
