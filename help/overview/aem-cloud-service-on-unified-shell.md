@@ -2,10 +2,10 @@
 title: 통합 셸의 AEM as a Cloud Service
 description: 통합 셸의 AEM as a Cloud Service
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: 24ae6187813de801813236f0bbcb2ea51e8fe5e1
+source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 100%
+source-wordcount: '395'
+ht-degree: 81%
 
 ---
 
@@ -19,7 +19,7 @@ AEM as a Cloud Service(작성자 서비스)가 통합 셸과 통합되어 사용
 
 이에 대한 이점은 다음과 같습니다.
 
-* 모든 Experience Cloud 애플리케이션 간 SSO(Single Sign-On)
+* 모든 Experience Cloud 애플리케이션에서 단일 사인온
 * 간편한 조직 간 전환 또는 다른 애플리케이션으로의 전환
 * 제품 도움말 개선
 * 문제를 보고하거나 Adobe와 아이디어를 공유할 수 있는 간편한 제품 내 피드백 버튼
@@ -32,19 +32,19 @@ AEM as a Cloud Service(작성자 서비스)가 통합 셸과 통합되어 사용
 >[!NOTE]
 >관리 권한이 있는 계정에서만 통합 셸을 비활성화할 수 있습니다.
 
-1. **도구 - 클라우드 서비스**&#x200B;로 이동합니다.
+1. 클릭 **도구 > Cloud Services**.
 
    관리자는 아래와 같이 통합 셸 구성 카드를 볼 수 있습니다.
 
    ![이미지](/help/overview/assets/unifiedshell2.png)
 
-1. **통합 셸 구성**&#x200B;을 클릭합니다. 그런 다음 아래 표시된 확인란을 선택 해제하여 통합 셸을 비활성화합니다.
+1. 클릭 **통합 쉘 구성**. 그런 다음 아래 표시된 확인란을 선택 해제하여 통합 셸을 비활성화합니다.
 
    ![이미지](/help/overview/assets/unifiedshell3.png)
 
 ## 어두운 테마로 변경 {#changing-to-dark-theme}
 
-어두운 테마로 변경하려면 프로필 아이콘을 클릭합니다. 아래와 같이 팝업이 표시됩니다. 토글을 사용하여 통합 셸의 어두운 테마로 전환할 수 있습니다.
+어두운 테마로 변경하려면 프로필 아이콘을 클릭합니다. 이 작업은 아래와 같이 팝오버를 표시합니다. 토글을 사용하여 통합 셸의 어두운 테마로 전환할 수 있습니다.
 
 >[!INFO]
 >
@@ -60,7 +60,7 @@ AEM as a Cloud Service는 프로덕션, 스테이징 및 개발의 세 가지 �
 
 ## AEM 받은 편지함 액세스 {#accessing-the-aem-inbox}
 
-AEM 받은 편지함은 통합 셸에서 벨 아이콘을 클릭하여 액세스할 수 있습니다.
+통합 쉘에서 벨 아이콘을 클릭하여 AEM 받은 편지함에 액세스할 수 있습니다.
 
 >[!INFO]
 >
@@ -68,6 +68,6 @@ AEM 받은 편지함은 통합 셸에서 벨 아이콘을 클릭하여 액세스
 
 ![이미지](/help/overview/assets/unifiedshell5.png)
 
-팝업에서 [받은 편지함] 버튼을 클릭하여 AEM 받은 편지함으로 이동합니다.
+AEM 받은 편지함으로 이동할 수 있도록 팝오버에서 받은 편지함 버튼을 클릭합니다.
 
 ![이미지](/help/overview/assets/unifiedshell6.png)
