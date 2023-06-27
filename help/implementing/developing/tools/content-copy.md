@@ -2,9 +2,9 @@
 title: 콘텐츠 복사 도구
 description: 컨텐츠 복사 도구를 사용하면 사용자가 필요에 따라 변화하는 컨텐츠를 AEM의 프로덕션 환경에서 테스트 목적으로 낮은 환경으로 as a Cloud Service으로 복사할 수 있습니다.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: f08048b2378b150210a3fd1168206f4efb0c4f8e
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1203'
 ht-degree: 41%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 41%
 
 ## 소개 {#introduction}
 
-현재의 실제 데이터는 테스트, 검증 및 사용자 승인 목적에 유용합니다. 콘텐츠 복사 도구를 사용하면 프로덕션 AEM 환경에서 스테이징, 개발 또는 [신속한 개발 환경(RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) 이러한 테스트를 위한 환경입니다.
+현재의 실제 데이터는 테스트, 검증 및 사용자 승인 목적에 유용합니다. AEM 콘텐츠 복사 도구를 사용하면 프로덕션 as a Cloud Service 환경에서 스테이징, 개발 또는 [신속한 개발 환경(RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) 이러한 테스트를 위한 환경입니다.
 
 복사할 콘텐츠는 콘텐츠 세트에 의해 정의됩니다. 콘텐츠 세트는 동일한 Cloud Manager 프로그램 내에서 소스 작성 서비스 환경에서 타겟 작성 서비스 환경으로 복사할 수 있는 변경 가능한 콘텐츠가 포함된 JCR 경로 목록으로 구성됩니다. 콘텐츠 세트에서 허용되는 경로는 다음과 같습니다.
 
