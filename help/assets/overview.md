@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f075c6032edb23f9cf52ad53ae2a628915e76ec2
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 100%
+source-wordcount: '738'
+ht-degree: 68%
 
 ---
 
@@ -37,6 +37,22 @@ Adobe Experience Manager Assets as a [!DNL Cloud Service]는 클라우드 기반
 * **지속적인 모니터링**: 시스템 모니터링은 자동화되어 있고, 기본 제공 검사와 트리거는 성능, 가용성 및 전반적인 견고성을 유지하는 데 도움이 됩니다.
 * **간편한 배포**: Experience Manager in the Cloud 작업은 완전히 자동화되어 수동 개입이 필요하지 않습니다. 배포를 자동화하는 경우 Cloud Manager(CM) 구성 요소는 사용자 지정 코드가 포함된 배포 가능한 Docker 이미지의 빌드를 자동화합니다.
 
+## 사용 가능한 사용자 기반 경험
+
+Adobe는 디지털 에셋을 최대한 활용할 수 있는 강력한 DAM(디지털 에셋 관리) 솔루션을 제공합니다. Adobe Experience Manager Assets에는 동일한 Cloud Services 저장소를 사용하는 두 개의 별도 경험이 있습니다.
+
+* **관리자 보기**: 기존 Assets as a Cloud Service 사용자 인터페이스. 통합, 워크플로우, 콘텐츠 자동화, 게시 등을 포함한 모든 고급 에셋 관리 기능에 대해 관리 보기를 사용합니다.
+
+* **자산 보기**: 디지털 에셋을 저장하고, 관리하고, 검색하고, 사용할 수 있는 Adobe의 간단한 에셋 관리 경험입니다. 필수 에셋 관리 기능이 포함된 간소화된 사용자 인터페이스입니다. 업로드, 메타데이터 관리, 검색, 다운로드 및 공유에 중점을 둔 경량 DAM 사용자를 위해 설계되었습니다.
+
+관리자 보기에 대한 액세스 권한이 있는 사용자는 에셋 보기에 액세스할 수도 있습니다. 에셋 보기는 간소화된 사용자 인터페이스를 제공하여 디지털 에셋을 쉽게 관리, 검색 및 배포할 수 있도록 합니다. 크리에이티브, 마케팅 및 사업 부문 팀을 비롯한 다양한 기능의 광범위한 사용자가 에셋에 대해 공동 작업을 수행하고 필요한 시간과 장소에서 올바른 승인된 에셋에 액세스할 수 있습니다. 많은 일반 DAM 사용자는 기능의 하위 집합만 포함하므로 에셋 보기를 선호합니다. 이 경험은 크리에이티브, 읽기 전용 에셋 소비자 및 경량 DAM 사용자를 대상으로 합니다.
+
+DAM 라이브러리 관리자, 개발자 및 슈퍼 사용자는 필요에 따라 관리자 보기를 계속 사용하거나 사용자 인터페이스 간을 전환할 수 있습니다. 역할에 가장 적합한 경험을 선택할 수 있습니다.
+
+![태그 추가](assets/newui-overview.svg)
+
+자산 보기에 액세스하는 방법과 관리자 보기에서 제공하는 몇 가지 간단한 기능에 대한 자세한 내용은 자산 보기를 참조하십시오.
+
 ## 새 에셋 기능 {#whats-new-assets}
 
 주요한 새 기능은 다음과 같습니다.
@@ -46,14 +62,14 @@ Adobe Experience Manager Assets as a [!DNL Cloud Service]는 클라우드 기반
 
 **추가 참조**
 
-* [에셋 번역](translate-assets.md)
+* [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [에셋이 지원되는 파일 형식](file-format-support.md)
-* [에셋 검색](search-assets.md)
-* [연결된 에셋](use-assets-across-connected-assets-instances.md)
-* [에셋 보고서](asset-reports.md)
+* [자산이 지원되는 파일 형식](file-format-support.md)
+* [자산 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [자산 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
-* [에셋 다운로드](download-assets-from-aem.md)
+* [자산 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
