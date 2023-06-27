@@ -4,7 +4,7 @@ description: AEM의 콘텐츠 조각 모델을 사용하여 모든 Headless 콘�
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: e507b409e4d2382b1eac54b11a9ad68fd965db4b
 workflow-type: tm+mt
 source-wordcount: '993'
 ht-degree: 34%
@@ -43,7 +43,7 @@ ht-degree: 34%
    * **모델 제목** - 모델에 대한 간략한 레이블이며 일반적으로 모델의 용도를 나타냅니다. 새 모델을 호출할 수 있습니다 `Adventure`.
    * **모델 활성화** - 이 옵션은 기본적으로 선택되어 있으며 이 모델을 기반으로 콘텐츠 조각을 만들 수 있도록 선택해야 합니다.
 
-1. 필수 필드가 채워지면 **만들기** 왼쪽 상단에서 모델을 생성합니다.
+1. 필수 필드가 채워지면 **만들기** 오른쪽 상단에서 모델을 만듭니다.
 
 1. 다음 **성공** 대화 상자에서 모델이 생성되었음을 확인합니다. 클릭 **열기** 새 콘텐츠 조각 모델 을 편집기에서 새 탭에서 열 수 있는 대화 상자. 그런 다음 다음 단계로 계속하여 모델에 데이터 필드를 추가합니다.
 
