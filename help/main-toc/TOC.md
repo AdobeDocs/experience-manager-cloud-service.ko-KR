@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 663dae5785c13d74524054287869310d1fce5bd6
+source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
 workflow-type: tm+mt
-source-wordcount: '4079'
+source-wordcount: '4081'
 ht-degree: 99%
 
 ---
@@ -279,13 +279,13 @@ ht-degree: 99%
          + [프로젝트 관리](/help/sites-cloud/authoring/projects/managing.md)
          + [작업](/help/sites-cloud/authoring/projects/tasks.md)
          + [프로젝트 워크플로를 사용하여 작업](/help/sites-cloud/authoring/projects/workflows.md)
-      + 런치 {#launches}
-         + [런치를 사용하여 작업](/help/sites-cloud/authoring/launches/overview.md)
-         + [런치 만들기](/help/sites-cloud/authoring/launches/creating.md)
-         + [런치 페이지 관리](/help/sites-cloud/authoring/launches/managing-pages.md)
-         + [런치 편집](/help/sites-cloud/authoring/launches/editing.md)
-         + [타임워프를 사용하여 런치 미리보기](/help/sites-cloud/authoring/launches/preview.md)
-         + [런치 홍보](/help/sites-cloud/authoring/launches/promoting.md)
+      + 론치 {#launches}
+         + [론치를 사용하여 작업](/help/sites-cloud/authoring/launches/overview.md)
+         + [론치 만들기](/help/sites-cloud/authoring/launches/creating.md)
+         + [론치 페이지 관리](/help/sites-cloud/authoring/launches/managing-pages.md)
+         + [론치 편집](/help/sites-cloud/authoring/launches/editing.md)
+         + [타임워프를 사용하여 론치 미리보기](/help/sites-cloud/authoring/launches/preview.md)
+         + [론치 홍보](/help/sites-cloud/authoring/launches/promoting.md)
       + 워크플로 {#workflows}
          + [워크플로를 사용하여 작업](/help/sites-cloud/authoring/workflows/overview.md)
          + [페이지에 워크플로 적용](/help/sites-cloud/authoring/workflows/applying.md)
@@ -338,7 +338,7 @@ ht-degree: 99%
          + [MSM 및 번역](/help/sites-cloud/administering/msm-and-translation.md)
          + 다중 사이트 관리자 {#msm}
             + [MSM 및 Live Copy 개요](/help/sites-cloud/administering/msm/overview.md)
-            + [라이브 카피 동기화 구성](/help/sites-cloud/administering/msm/live-copy-sync-config.md)
+            + [Live Copy 동기화 구성](/help/sites-cloud/administering/msm/live-copy-sync-config.md)
             + [Live Copy 생성 및 동기화](/help/sites-cloud/administering/msm/creating-live-copies.md)
             + [Live Copy 개요 콘솔](/help/sites-cloud/administering/msm/live-copy-overview.md)
             + [롤아웃 충돌](/help/sites-cloud/administering/msm/rollout-conflicts.md)
@@ -530,7 +530,6 @@ ht-degree: 99%
          + [Adobe Analytics와 AEM Forms as a Cloud Service 통합](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [Microsoft Power Automate와 적응형 양식 통합](/help/forms/forms-microsoft-power-automate-integration.md)
          + [AEM Sites 페이지에 적응형 양식 임베드](/help/forms/embed-adaptive-form-aem-sites.md)
-         + [적응형 양식을 만들거나 AEM Sites 페이지에 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + 양식 데이터 모델 {#use-form-data-model}
          + [데이터 소스를 Cloud Service에 연결](/help/forms/data-integration.md)
          + [데이터 소스 구성](/help/forms/configure-data-sources.md)
@@ -541,13 +540,14 @@ ht-degree: 99%
          + [양식 데이터 모델을 사용하여 작업](/help/forms/work-with-form-data-model.md)
          + [양식 데이터 모델 사용](/help/forms/using-form-data-model.md)
    + 적응형 양식 {#adaptive-forms-authoring}
+      + [AEM Sites 페이지 또는 경험 조각에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + 적응형 양식 작성 - 핵심 구성 요소 {#authoring-adaptive-forms-core-components}
          + 적응형 양식 만들기 {#create-an-adaptive-form-on-forms-cs}
             + [적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md)
             + [적응형 양식의 테마 만들기 - 핵심 구성 요소](/help/forms/using-themes-in-core-components.md)
             + [적응형 양식의 기록 문서 생성](/help/forms/generate-document-of-record-core-components.md)
             + [AEM Sites 페이지에 적응형 양식 - 핵심 구성 요소 생성](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
-            + [기계 번역 또는 사람 번역을 사용하여 적응형 양식 번역](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+            + [기계 번역 또는 인간 번역을 사용하여 적응형 양식 번역](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [리디렉션 페이지 또는 감사 메시지 구성](/help/forms/configure-redirect-page-or-thank-you-message.md)
       + 적응형 양식 작성 - 기초 구성 요소 {#authoring-adaptive-forms-foundation-components}
          + PDF 양식을 적응형 양식으로 변환 {#afcs}

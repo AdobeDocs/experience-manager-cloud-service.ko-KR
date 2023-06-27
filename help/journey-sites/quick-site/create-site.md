@@ -2,10 +2,10 @@
 title: 템플릿으로 사이트 생성
 description: 사이트 템플릿을 사용하여 간편하게 새 AEM 사이트를 만드는 방법에 대해 알아봅니다.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
 workflow-type: tm+mt
-source-wordcount: '1485'
-ht-degree: 99%
+source-wordcount: '1513'
+ht-degree: 98%
 
 ---
 
@@ -85,7 +85,7 @@ AEM 빠른 사이트 생성 여정의 이전 문서인 [Cloud Manager 이해 및
 
    ![템플릿 선택](assets/select-site-template.png)
 
-1. 사이트의 제목을 입력합니다. 생략할 경우 제목에서 사이트 이름을 입력하거나 생성할 수 있습니다.
+1. 사이트의 제목을 입력합니다. 사이트 이름을 입력하거나 생략할 수 있으며, 생략할 경우 자동으로 제목에서 생성됩니다.
 
    * 브라우저의 제목 표시줄에 사이트 제목이 표시됩니다.
    * 사이트 이름은 URL의 일부가 됩니다.
@@ -184,3 +184,4 @@ AEM 빠른 사이트 생성 여정의 한 부분을 완료했으므로,
 * [페이지 생성 및 관리](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - 템플릿으로 AEM 사이트를 만든 다음 추가로 맞춤화하고자 하는 경우 여기에서 AEM 사이트의 페이지를 관리하는 방법에 대한 내용을 살펴볼 수 있습니다.
 * [패키지를 사용하여 작업하는 방법](/help/implementing/developing/tools/package-manager.md) - 패키지를 사용하여 저장소 콘텐츠를 가져오고 내보낼 수 있습니다. 이 문서에서는 AEM 6.5의 패키지를 사용하여 작업하는 방법에 대해 설명합니다(AEMaaCS에도 적용됨).
 * [사이트 관리 설명서](/help/sites-cloud/administering/site-creation/create-site.md) - 빠른 사이트 생성 도구의 기능에 대한 자세한 내용은 사이트 생성에 대한 기술 문서를 확인하십시오.
+* [AEM Sites 페이지에 양식 만들기 또는 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) - 양식을 웹 사이트에 통합하고 디지털 경험을 최적화하여 효과를 극대화하기 위한 단계별 기술과 모범 사례에 대해 알아봅니다.

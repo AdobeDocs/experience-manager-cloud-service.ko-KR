@@ -2,10 +2,10 @@
 title: 구성 요소
 description: 구성 요소는 AEM에서 콘텐츠 페이지의 기본적인 작성 빌딩 블록입니다.
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 76%
+source-wordcount: '349'
+ht-degree: 67%
 
 ---
 
@@ -42,6 +42,8 @@ ht-degree: 76%
 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)는 페이지를 작성하는 데 필요한 콘텐츠 유형을 제공하는 유연하고 다양한 작성 기능을 제공합니다.
 
 이 구성 요소는 AEM 우수 사례를 사용하여 빌드하며 AEM 작성 환경의 기반입니다. 코어 구성 요소는 특정 프로젝트 요구 사항을 충족하도록 개발자가 쉽게 확장할 수 있습니다.
+
+WCM 코어 구성 요소와 함께 다음을 사용할 수도 있습니다. [적응형 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). 이러한 핵심 구성 요소는 다음과 같은 표준 및 간편한 방법을 제공합니다. [AEM Sites 페이지에 양식 만들기 또는 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
 
 ### 템플릿 구성 {#configuring-templates}
 
