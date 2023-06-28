@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '1113'
+source-wordcount: '1118'
 ht-degree: 3%
 
 ---
@@ -63,15 +63,15 @@ CIF 추가 기능 및 [AEM CIF 핵심 구성 요소](https://github.com/adobe/ae
 
 ![CM 환경 정보](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
-### Adobe Developer CLI를 통해  {#adobe-cli}
+### ADOBE I/O CLI  {#adobe-cli}
 
-Adobe Developer CLI를 통해 AEM을 상거래 솔루션과 연결하려면 다음 단계를 따르십시오.
+Adobe I/O CLI를 통해 AEM을 상거래 솔루션과 연결하려면 다음 단계를 따르십시오.
 
-1. Cloud Manager 플러그인으로 Adobe Developer CLI 가져오기
+1. Cloud Manager 플러그인으로 Adobe I/O CLI 가져오기
 
-   다음 확인: [Adobe Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) 을 다운로드, 설정 및 사용하는 방법에 대해 설명합니다. [ADOBE DEVELOPER CLI](https://github.com/adobe/aio-cli) (으)로 [Cloud Manager CLI 플러그인](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+   다음 확인: [Adobe Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) 을 다운로드, 설정 및 사용하는 방법에 대해 설명합니다. [ADOBE I/O CLI](https://github.com/adobe/aio-cli) (으)로 [Cloud Manager CLI 플러그인](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
-2. AEM as a Cloud Service 프로그램으로 Adobe Developer CLI 인증
+2. as a Cloud Service 프로그램으로 Adobe I/O AEM CLI 인증
 
 3. 설정 `COMMERCE_ENDPOINT` Cloud Manager의 변수
 

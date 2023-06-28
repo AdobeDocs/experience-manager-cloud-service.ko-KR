@@ -2,10 +2,10 @@
 title: AEM 프로젝트 구조
 description: Adobe Experience Manager Cloud Service에 배포할 패키지 구조를 정의하는 방법에 대해 알아봅니다.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '2927'
-ht-degree: 12%
+source-wordcount: '2918'
+ht-degree: 4%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 12%
 
 >[!TIP]
 >
->기본 사항 숙지 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko-KR)및 [FileVault Content Maven 플러그인](/help/implementing/developing/tools/maven-plugin.md) 이 문서는 이러한 학습과 개념을 기반으로 합니다.
+>기본 사항 숙지 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)및 [FileVault Content Maven 플러그인](/help/implementing/developing/tools/maven-plugin.md) 이 문서는 이러한 학습과 개념을 기반으로 합니다.
 
-이 문서에서는 변경 가능한 컨텐츠와 변경할 수 없는 컨텐츠 분리를 사용하여 Adobe Experience Manager AEM Maven 프로젝트에 필요한 변경 사항을 as a Cloud Service으로 호환되도록 설명하고, 상충되는 배포가 없도록 종속성을 설정하고, 배포 가능한 구조로 패키지되어 있다는 점을 설명합니다.
+이 문서에서는 변경 가능한 콘텐츠와 변경 불가능한 콘텐츠의 분할을 준수하도록 하여 Adobe Experience Manager AEM Maven 프로젝트에 as a Cloud Service 호환이 필요한 변경 사항에 대해 설명합니다. 또한 종속성이 설정되어 충돌하지 않고 결정론적 배포를 만들고 배포 가능한 구조로 패키지됩니다.
 
 AEM 애플리케이션 배포는 단일 AEM 패키지로 구성되어야 합니다. 이 패키지에는 코드, 구성 및 지원하는 모든 기본 콘텐츠를 포함하여 애플리케이션이 기능하는 데 필요한 모든 것을 구성하는 하위 패키지가 포함되어야 합니다.
 
@@ -27,11 +27,11 @@ The package structure outlined in this document is compatible with **both** loca
 >
 >이 문서에 설명된 구성은 [AEM Project Maven Archetype 24 이상](https://github.com/adobe/aem-project-archetype/releases).
 
-## 저장소의 변경 가능한 영역과 변경 불가능한 영역 비교 {#mutable-vs-immutable}
+## 저장소의 변경 가능한 영역과 변경 불가능한 영역 {#mutable-vs-immutable}
 
-`/apps` 및 `/libs`**는 AEM이 시작된 후(예: 런타임 시) 변경(만들기, 업데이트, 삭제)할 수 없으므로 AEM에서 변경할 수 없는 영역으로 간주됩니다.** 런타임 시 변경할 수 없는 영역을 변경하려고 하면 오류가 발생합니다.
+다음 `/apps` 및 `/libs` AEM 영역이 고려됩니다 **불변** AEM이 시작된 후에는(즉, 런타임 시) 변경(만들기, 업데이트, 삭제)할 수 없기 때문입니다. 런타임 시 변경할 수 없는 영역을 변경하려고 하면 실패합니다.
 
-저장소에 있는 모든 항목 `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `/system`, `/tmp`등 모두 **변하기 쉬워** 즉, 런타임 시 변경할 수 있습니다.
+저장소에 있는 모든 항목 `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `/system`, `/tmp`등, 모두 **변하기 쉬워** 즉, 런타임 시 변경할 수 있습니다.
 
 >[!WARNING]
 >
@@ -39,13 +39,13 @@ The package structure outlined in this document is compatible with **both** loca
 
 ### Oak 색인 {#oak-indexes}
 
-Oak 색인(`/oak:index`)는 특히 AEM as a Cloud Service 배포 프로세스에 의해 관리됩니다. Cloud Manager는 새 코드 이미지로 전환하기 전에 새 색인이 배포되고 완전히 다시 색인화될 때까지 기다려야 하기 때문입니다.
+Oak 색인(`/oak:index`)는 AEM as a Cloud Service 배포 프로세스에서 관리됩니다. Cloud Manager는 새 코드 이미지로 전환하기 전에 새 색인이 배포되고 완전히 다시 색인화될 때까지 기다려야 하기 때문입니다.
 
 따라서 Oak 색인은 런타임에 변경할 수 있지만, 변경 가능한 패키지를 설치하기 전에 설치할 수 있도록 코드로 배포해야 합니다. 따라서 `/oak:index` 구성은 콘텐츠 패키지의 일부가 아니라 코드 패키지의 일부입니다 [아래에 기술한 바와 같이](#recommended-package-structure).
 
 >[!TIP]
 >
->AEM as a Cloud Service 색인화에 대한 자세한 내용은 문서를 참조하십시오. [콘텐츠 검색 및 색인화](/help/operations/indexing.md).
+>AEMas a Cloud Service 의 색인화에 대한 자세한 내용은 [콘텐츠 검색 및 색인화](/help/operations/indexing.md).
 
 ## 권장 패키지 구조 {#recommended-package-structure}
 
@@ -60,12 +60,12 @@ Oak 색인(`/oak:index`)는 특히 AEM as a Cloud Service 배포 프로세스에
 + OSGi 번들 Jar 파일이 생성되며 모든 프로젝트에 직접 포함됩니다.
 
 + 다음 `ui.apps` 패키지에는 배포할 모든 코드가 포함되어 있으며 `/apps`. 의 일반적인 요소 `ui.apps` 패키지에는 다음이 포함되지만 이에 국한되지 않습니다.
-   + [구성 요소 정의 및 HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR) 스크립트
+   + [구성 요소 정의 및 HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) 스크립트
       + `/apps/my-app/components`
    + JavaScript 및 CSS(를 통해 [클라이언트 라이브러리](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
    + [오버레이](/help/implementing/developing/introduction/overlays.md) / `/libs`
-      + `/apps/cq`, `/apps/dam/`등
+      + `/apps/cq`, `/apps/dam/`등.
    + 대체 컨텍스트 인식 구성
       + `/apps/settings`
    + ACL(권한)
@@ -74,7 +74,7 @@ Oak 색인(`/oak:index`)는 특히 AEM as a Cloud Service 배포 프로세스에
 
 >[!NOTE]
 >
->모든 환경에 동일한 코드를 배포해야 합니다. 이 코드는 스테이징 환경에서 신뢰도 유효성 검사 수준도 프로덕션에 있는지 확인하는 데 필요합니다. 자세한 내용은 다음 섹션 을 참조하십시오 [실행 모드](/help/implementing/deploying/overview.md#runmodes).
+>모든 환경에 동일한 코드를 배포해야 합니다. 이 코드는 스테이지 환경의 유효성 검사도 프로덕션에 있다는 신뢰 수준을 보장합니다. 자세한 내용은 다음 섹션 을 참조하십시오 [실행 모드](/help/implementing/deploying/overview.md#runmodes).
 
 
 ### 컨텐츠 패키지
@@ -82,20 +82,20 @@ Oak 색인(`/oak:index`)는 특히 AEM as a Cloud Service 배포 프로세스에
 + 다음 `ui.content` 패키지에는 모든 콘텐츠 및 구성이 포함됩니다. 콘텐츠 패키지에는에 없는 모든 노드 정의가 포함되어 있습니다 `ui.apps` 또는 `ui.config` 패키지 또는 다른 말로 다음에 없는 모든 `/apps` 또는 `/oak:index`. 의 일반적인 요소 `ui.content` 패키지에는 다음이 포함되지만 이에 국한되지 않습니다.
    + 컨텍스트 인식 구성
       + `/conf`
-   + 필요한 복잡한 콘텐츠 구조(예: 저장소 초기화에 정의된 기준 콘텐츠 구조를 기반으로 하고 이를 지나 확장하는 콘텐츠 빌드-아웃)
-      + `/content`, `/content/dam`등
+   + 필요한 복잡한 콘텐츠 구조(즉, 저장소 초기화에 정의된 기준선 콘텐츠 구조를 기반으로 하고 이를 지나 확장하는 콘텐츠 빌드-아웃)입니다.
+      + `/content`, `/content/dam`등.
    + 관리되는 태그 지정 분류
       + `/content/cq:tags`
-   + 레거시 etc 노드(이상적으로는 비/etc 위치로 마이그레이션함)
+   + 레거시 etc 노드(이상적으로 이러한 노드를 비/etc 위치로 마이그레이션)
       + `/etc`
 
 ### 컨테이너 패키지
 
-+ 다음 `all` 패키지는 배포 가능한 아티팩트, OSGI 번들 Jar 파일, `ui.apps`, `ui.config` 및 `ui.content` embed로 패키지 다음 `all` 패키지에는 다음이 없어야 합니다. **모든 콘텐츠 또는 코드** 모든 배포를 하위 패키지 또는 OSGi 번들 Jar 파일로 리포지토리에 위임합니다.
++ 다음 `all` 패키지는 배포 가능한 아티팩트, OSGI 번들 Jar 파일, `ui.apps`, `ui.config`, 및 `ui.content` embed로 패키지 다음 `all` 패키지에는 다음이 없어야 합니다. **모든 콘텐츠 또는 코드** 모든 배포를 하위 패키지 또는 OSGi 번들 Jar 파일로 리포지토리에 위임합니다.
 
   이제 Maven을 사용하여 패키지가 포함됩니다 [FileVault 패키지 Maven 플러그인의 임베디드 구성](#embeddeds), 대신 `<subPackages>` 구성.
 
-  복잡한 Experience Manager 배포의 경우 여러 개를 만드는 것이 바람직할 수 있습니다 `ui.apps`, `ui.config` 및 `ui.content` AEM의 특정 사이트 또는 테넌트를 나타내는 프로젝트/패키지 이 작업을 수행하는 경우 변경할 수 있는 콘텐츠와 변경할 수 없는 콘텐츠 간의 분할이 준수되는지 확인하고 필수 콘텐츠 패키지와 OSGi 번들 Jar 파일이 의 하위 패키지로 임베드되는지 확인하십시오. `all` 컨테이너 컨텐츠 패키지.
+  복잡한 Experience Manager 배포의 경우 여러 개를 만드는 것이 바람직할 수 있습니다 `ui.apps`, `ui.config`, 및 `ui.content` AEM의 특정 사이트 또는 테넌트를 나타내는 프로젝트/패키지 이 접근 방식이 수행되면 변경 가능한 콘텐츠와 변경 불가능한 콘텐츠 사이의 분할이 준수되는지, 그리고 필수 콘텐츠 패키지와 OSGi 번들 Jar 파일이 의 하위 패키지로 임베드되는지 확인하십시오. `all` 컨테이너 컨텐츠 패키지.
 
   예를 들어 복잡한 배포 콘텐츠 패키지 구조는 다음과 같을 수 있습니다.
 
@@ -130,7 +130,7 @@ Oak 색인(`/oak:index`)는 특히 AEM as a Cloud Service 배포 프로세스에
 
 자체 코드 및 컨텐츠 패키지로 구성된 다른 AEM 프로젝트를 AEM 배포에서 사용하는 경우 해당 컨테이너 패키지는 프로젝트의 `all` 패키지.
 
-예를 들어, 2개의 공급업체 AEM 애플리케이션을 포함하는 AEM 프로젝트는 다음과 같을 수 있습니다.
+예를 들어 두 개의 공급업체 AEM 애플리케이션을 포함하는 AEM 프로젝트는 다음과 같을 수 있습니다.
 
 + `all` 콘텐츠 패키지는 단일 배포 아티팩트를 만들기 위해 다음 패키지를 임베드합니다
    + `core` AEM 애플리케이션에 필요한 OSGi 번들 Jar
@@ -157,7 +157,7 @@ Oak 색인(`/oak:index`)는 특히 AEM as a Cloud Service 배포 프로세스에
 
 ## Adobe Cloud Manager에서 배포할 패키지 표시 {#marking-packages-for-deployment-by-adoube-cloud-manager}
 
-By default, Adobe Cloud Manager harvests all packages produced by the Maven build, however since the container (`all`) package is the singular deployment artifact that contains all code and content packages, we must ensure **only** the  container (`all`) package is deployed. To ensure this, other Packages the Maven build generates must be marked with the FileVault Content Package Maven Plug-In configuration of `<properties><cloudManagerTarget>none</cloudManageTarget></properties>`.
+Adobe 기본적으로 Maven Cloud Manager는 Maven 빌드에서 생성된 모든 패키지를 수집합니다. 그러나 그 이유는 컨테이너(`all`) package 는 모든 코드 및 컨텐츠 패키지를 포함하는 단일 배포 아티팩트입니다. **전용** 컨테이너(`all`) 패키지가 배포되었습니다. To ensure this, other Packages the Maven build generates must be marked with the FileVault Content Package Maven Plug-In configuration of `<properties><cloudManagerTarget>none</cloudManageTarget></properties>`.
 
 >[!TIP]
 >
@@ -167,7 +167,7 @@ By default, Adobe Cloud Manager harvests all packages produced by the Maven buil
 
 Repo Init는 폴더 트리와 같은 일반적인 노드 구조에서 사용자, 서비스 사용자, 그룹 및 ACL 정의에 이르기까지 JCR 구조를 정의하는 지침 또는 스크립트를 제공합니다.
 
-Repo Init의 주요 이점은 스크립트로 정의된 모든 작업을 수행할 수 있는 암시적 권한이 있고 배포 수명 주기 초기에 호출되어 코드가 실행될 때까지 모든 필수 JCR 구조가 존재한다는 것입니다.
+Repo Init의 주요 이점은 스크립트가 정의한 모든 작업을 수행할 수 있는 암시적 권한이 있다는 것입니다. 또한 이러한 스크립트는 배포 라이프사이클 초기에 호출되어 모든 필수 JCR 구조가 시간 코드가 실행될 때까지 존재하도록 합니다.
 
 Repo Init 스크립트 자체는 `ui.config` 프로젝트 를 스크립트로, 다음과 같은 변경 가능한 구조를 정의하는 데 사용할 수 있으며 사용해야 합니다.
 
@@ -177,15 +177,15 @@ Repo Init 스크립트 자체는 `ui.config` 프로젝트 를 스크립트로, �
 + 그룹
 + ACL
 
-저장소 초기화 스크립트는 다음과 같이 저장됩니다. `scripts` 다음의 항목 `RepositoryInitializer` OSGi 팩토리 구성이므로 실행 모드에 의해 암시적으로 타깃팅될 수 있으므로 AEM 작성자와 AEM Publish 서비스의 Repo Init 스크립트 간 또는 환경(개발, 스테이지 및 프로덕션) 간의 차이점을 허용할 수 있습니다.
+저장소 초기화 스크립트는 다음과 같이 저장됩니다. `scripts` 다음의 항목 `RepositoryInitializer` OSGi 출하 시 구성. 따라서 실행 모드에 의해 암묵적으로 타겟팅될 수 있으므로 AEM 작성자와 AEM Publish Services의 Repo Init 스크립트 간 또는 환경(개발, 스테이지 및 프로덕션) 간에 차이가 발생할 수 있습니다.
 
 저장소 초기 OSGi 구성은 다음에서 가장 잘 작성됩니다. [`.config` OSGi 구성 형식](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-config-1) 여러 줄을 지원하므로 를 사용하는 우수 사례에 대해 예외입니다 [`.cfg.json` OSGi 구성을 정의하려면](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 
-사용자 및 그룹을 정의할 때 그룹만 응용 프로그램의 일부로 간주되며 여기에 해당 기능에 대한 필수 요소를 정의해야 합니다. 조직 사용자 및 그룹은 AEM의 런타임 시 계속 정의해야 합니다. 예를 들어, 사용자 정의 워크플로가 이름이 지정된 그룹에 작업을 할당하는 경우 해당 그룹은 AEM 애플리케이션에서 Repo Init를 통해 정의해야 하지만, 그룹화가 &quot;Wendy&#39;s Team&quot; 및 &quot;Sean&#39;s Team&quot;과 같은 단순한 조직인 경우 AEM에서 런타임 시 가장 잘 정의되고 관리되어야 합니다.
+사용자 및 그룹을 정의할 때 그룹만 응용 프로그램의 일부로 간주되며 그 기능에 필수적입니다. AEM에서 런타임 시 조직 사용자 및 그룹을 정의할 수 있습니다. 예를 들어 사용자 정의 워크플로우가 이름이 지정된 그룹에 작업을 할당하는 경우, AEM 애플리케이션에서 보고서 초기화를 통해 해당 그룹을 정의합니다. 그러나 그룹화가 &quot;Wendy&#39;s Team&quot; 및 &quot;Sean&#39;s Team&quot;과 같이 조직적인 것에 불과한 경우 이러한 그룹은 AEM에서 런타임에 가장 잘 정의되고 관리됩니다.
 
 >[!TIP]
 >
->저장소 초기화 스크립트 *필수* 인라인으로 정의되어야 합니다. `scripts` 필드 및 `references` 구성이 작동하지 않습니다.
+>저장소 초기화 스크립트 *필수* 인라인으로 정의되어야 합니다. `scripts` 필드 또는 `references` 구성이 작동하지 않습니다.
 
 Repo Init 스크립트에 대한 전체 어휘는 [Apache Sling 보고서 초기화 설명서](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language).
 
@@ -197,11 +197,11 @@ Repo Init 스크립트에 대한 전체 어휘는 [Apache Sling 보고서 초기
 
 코드 패키지를 참조하려면 FileVault Maven 플러그인의 구성을 구성해야 합니다. `<repositoryStructurePackage>` 이를 통해 구조적 종속성을 수정할 수 있습니다(한 코드 패키지가 다른 코드 패키지에 설치되지 않도록 함). 다음을 수행할 수 있습니다. [프로젝트에 대한 고유한 저장소 구조 패키지 만들기](repository-structure-package.md).
 
-This is **only required** for Code packages, meaning any Package marked with `<packageType>application</packageType>`.
+**필수 항목만** 코드 패키지의 경우, 즉 로 표시된 모든 패키지 `<packageType>application</packageType>`.
 
 애플리케이션에 대한 저장소 구조 패키지를 만드는 방법에 대해 알아보려면 다음을 참조하십시오. [저장소 구조 패키지 개발](repository-structure-package.md).
 
-콘텐츠 패키지(`<packageType>content</packageType>`) **금지** 이 저장소 구조 패키지가 필요합니다.
+콘텐츠 패키지 (`<packageType>content</packageType>`) **금지** 이 저장소 구조 패키지가 필요합니다.
 
 >[!TIP]
 >
@@ -209,7 +209,7 @@ This is **only required** for Code packages, meaning any Package marked with `<p
 
 ## 컨테이너 패키지에 하위 패키지 임베드{#embeddeds}
 
-AEM AEM 컨텐츠 또는 코드 패키지는 특별한 &quot;side-car&quot; 폴더에 배치되며 FileVault Maven 플러그인의 `<embeddeds>` 구성. 다음 사항에 주의하십시오. `<subPackages>` 구성을 사용하면 안 됩니다.
+AEM AEM 컨텐츠 또는 코드 패키지는 특별한 &quot;side-car&quot; 폴더에 배치되며 FileVault Maven 플러그인의 `<embeddeds>` 구성. 를 사용하지 마십시오. `<subPackages>` 구성.
 
 일반적인 사용 사례는 다음과 같습니다.
 
@@ -219,32 +219,32 @@ AEM AEM 컨텐츠 또는 코드 패키지는 특별한 &quot;side-car&quot; 폴�
 
 ![패키지 포함](assets/embeddeds.png)
 
-AEM 작성자, AEM 게시 또는 둘 다를 타깃팅하기 위해 패키지는 `all` 다음 형식의 특수 폴더 위치에 있는 컨테이너 패키지:
+AEM 작성자, AEM 게시 또는 둘 다를 타깃팅하려면 패키지가 `all` 다음 형식의 특수 폴더 위치에 있는 컨테이너 패키지:
 
 `/apps/<app-name>-packages/(content|application|container)/install(.author|.publish)?`
 
 이 폴더 구조를 분류합니다.
 
 + 첫 번째 수준 폴더 **은(는) 다음과 같아야 합니다.** `/apps`.
-+ 두 번째 수준 폴더는 `-packages` 폴더 이름에 대한 사후 수정되었습니다. 모든 하위 패키지가 임베드되는 두 번째 수준 폴더는 하나만 있는 경우가 많지만 두 번째 수준 폴더를 여러 개 만들어 애플리케이션의 논리 구조를 가장 잘 나타낼 수 있습니다.
++ 두 번째 수준 폴더는 `-packages` 폴더 이름에 대한 사후 수정되었습니다. 대부분의 경우 모든 하위 패키지가 임베드된 하나의 두 번째 수준 폴더만 있지만 애플리케이션의 논리 구조를 가장 잘 표현하기 위해 원하는 수의 두 번째 수준 폴더를 만들 수 있습니다.
    + `/apps/my-app-packages`
    + `/apps/my-other-app-packages`
    + `/apps/vendor-packages`
 
   >[!WARNING]
   >
-  >By convention, sub-package embedded folders are named with the suffix of `-packages`. This ensures that the deployment code and content packages are **not** deployed the target folder(s) of any sub-package `/apps/<app-name>/...`  which results in destructive and cyclic installation behavior.
+  >규칙에 따라 하위 패키지 포함 폴더는 접미사 로 이름이 지정됩니다. `-packages`. 이 이름을 지정하면 배포 코드 및 콘텐츠 패키지가 **아님** 모든 하위 패키지의 대상 폴더를 배포했습니다. `/apps/<app-name>/...`  이를 통해 파괴적이고 순환적인 설치 동작이 발생합니다.
 
 + 세 번째 수준 폴더는 다음 중 하나여야 합니다
   `application`, `content` 또는 `container`
    + 다음 `application` 폴더에 코드 패키지가 있음
    + 다음 `content` 폴더에 컨텐츠 패키지가 보관됨
    + 다음 `container` 폴더에 모든 저장 [추가 애플리케이션 패키지](#extra-application-packages) AEM 애플리케이션에 포함될 수 있습니다.
-이 폴더 이름은 [패키지 유형](#package-types) 포함된 패키지 중
-+ The 4th-level folder contains the sub-packages, and must be one of:
-   + `install` to install on **both** AEM author and AEM publish
-   + `install.author` to **only** install on AEM author
-   + `install.publish` 끝 **전용** AEM 게시에서 설치 참고 `install.author` 및 `install.publish` 는 지원되는 타겟입니다. Other run modes **are not** supported.
+이 폴더 이름은 [패키지 유형](#package-types) 포함된 패키지 중 일부.
++ 네 번째 수준 폴더는 하위 패키지를 포함하며 다음 중 하나여야 합니다.
+   + `install` 설치 위치: **모두** AEM 작성자 및 AEM 게시
+   + `install.author` 설치 **전용** AEM 작성자
+   + `install.publish` 설치 **전용** AEM 게시에만 `install.author` 및 `install.publish` 는 지원되는 타겟입니다. Other run modes **are not** supported.
 
 예를 들어 AEM 작성자 및 게시 특정 패키지를 포함하는 배포는 다음과 같을 수 있습니다.
 
@@ -260,7 +260,7 @@ AEM 작성자, AEM 게시 또는 둘 다를 타깃팅하기 위해 패키지는 
 
 ### 컨테이너 패키지의 필터 정의 {#container-package-filter-definition}
 
-컨테이너 패키지에 코드 및 컨텐츠 하위 패키지가 포함되어 있으므로 포함된 대상 경로를 컨테이너 프로젝트의 `filter.xml` 빌드할 때 임베드된 패키지가 컨테이너 패키지에 포함되도록 할 수 있습니다.
+컨테이너 패키지에 코드 및 컨텐츠 하위 패키지가 포함되어 있으므로 포함된 대상 경로를 컨테이너 프로젝트의 `filter.xml`. 이렇게 하면 빌드될 때 임베드된 패키지가 컨테이너 패키지에 포함됩니다.
 
 간단히 추가 `<filter root="/apps/<my-app>-packages"/>` 배포할 하위 패키지가 포함된 모든 두 번째 수준 폴더의 항목입니다.
 
@@ -270,15 +270,15 @@ AEM 작성자, AEM 게시 또는 둘 다를 타깃팅하기 위해 패키지는 
 
 ## 서드파티 패키지 포함 {#embedding-3rd-party-packages}
 
-모든 패키지는 다음을 통해 사용할 수 있어야 합니다. [Adobe의 공개 Maven 아티팩트 저장소](https://repo1.maven.org/maven2/com/adobe/) 또는 액세스 가능한 공개, 참조 가능한 타사 Maven 아티팩트 리포지토리입니다.
+모든 패키지는 다음을 통해 사용할 수 있어야 합니다. [Adobe의 공개 Maven 아티팩트 저장소](https://repo1.maven.org/maven2/com/adobe/) 또는 액세스 가능하고 참조 가능한 타사 Maven 아티팩트 저장소입니다.
 
-If the 3rd party packages are in **Adobe&#39;s public Maven artifact repository**, no further configuration is needed for Adobe Cloud Manager to resolve the artifacts.
+서드파티 패키지가 있는 경우 **Adobe의 공개 Maven 아티팩트 저장소**&#x200B;를 설치한 후 Adobe Cloud Manager에서 아티팩트를 확인하는 데 더 이상 구성이 필요하지 않습니다.
 
-If the 3rd party packages are in a **public 3rd party Maven artifact repository**, this repository must be registered in the project&#39;s `pom.xml` and embedded following the method [outlined above](#embeddeds).
+서드파티 패키지가 **공개 타사 Maven 아티팩트 저장소**, 이 저장소는 프로젝트의 `pom.xml` 메서드에 따라 및 포함됨 [윤곽선 표시](#embeddeds).
 
-서드파티 애플리케이션/커넥터는 를 사용하여 임베드해야 합니다. `all` 프로젝트 컨테이너의 컨테이너로 패키지(`all`) 패키지.
+서드파티 애플리케이션/커넥터는 를 사용하여 내장되어야 합니다. `all` 프로젝트 컨테이너의 컨테이너로 패키지(`all`) 패키지.
 
-Maven 종속성 추가는 표준 Maven 사례를 따르며 타사 아티팩트(코드 및 콘텐츠 패키지) 포함은 다음과 같습니다 [윤곽선 표시](#embedding-3rd-party-packages).
+Maven 종속성 추가는 표준 Maven 사례를 따르며 서드파티 아티팩트(코드 및 콘텐츠 패키지) 포함은 다음과 같습니다 [윤곽선 표시](#embedding-3rd-party-packages).
 
 >[!TIP]
 >
@@ -290,7 +290,7 @@ Maven 종속성 추가는 표준 Maven 사례를 따르며 타사 아티팩트(�
 
 일반 규칙은 변경 가능한 콘텐츠(`ui.content`)는 변경할 수 없는 코드( )에 따라 다릅니다.`ui.apps`) 변경 가능한 콘텐츠의 렌더링 및 사용을 지원합니다.
 
-이 일반 규칙에서 주목할 만한 예외는 변경할 수 없는 코드 패키지(`ui.apps` 또는 기타), __전용__ osgI 번들을 포함합니다. 이 경우 어떤 AEM 패키지도 종속성을 선언해서는 안 됩니다. 이것은 변경할 수 없는 코드 패키지이기 때문입니다 __전용__ 포함된 OSGi 번들이 AEM에 등록되지 않음 [패키지 관리자,](/help/implementing/developing/tools/package-manager.md) 따라서 종속된 모든 AEM 패키지는 충족되지 않은 종속성을 가지므로 설치하지 못합니다.
+이 일반 규칙에서 주목할 만한 예외는 변경할 수 없는 코드 패키지(`ui.apps` 또는 기타), __전용__ osgI 번들을 포함합니다. 이 경우 어떤 AEM 패키지도 종속성을 선언해서는 안 됩니다. 그 이유는 변경할 수 없는 코드 패키지가 __전용__ AEM에 등록되지 않은 OSGi 번들을 포함합니다. [패키지 관리자](/help/implementing/developing/tools/package-manager.md). 따라서 종속된 모든 AEM 패키지에 충족되지 않은 종속성이 있으며 설치하지 못합니다.
 
 >[!TIP]
 >
@@ -327,7 +327,7 @@ Maven 종속성 추가는 표준 Maven 사례를 따르며 타사 아티팩트(�
 
 ### 패키지 유형 {#xml-package-types}
 
-Code and content packages, which are deployed as sub-packages, must declare a package type of **application** or **content**, depending on what they contain.
+하위 패키지로 배포되는 코드 및 콘텐츠 패키지는 패키지 유형을 **애플리케이션** 또는 **콘텐츠**, 포함된 내용에 따라 다릅니다.
 
 #### 컨테이너 패키지 유형 {#container-package-types}
 
@@ -459,7 +459,7 @@ scripts=["
 
 ### 컨테이너 패키지에 하위 패키지 임베드 {#xml-embeddeds}
 
-다음에서 `all/pom.xml`를 클릭하고 다음을 추가합니다 `<embeddeds>` 에 대한 지시문 `filevault-package-maven-plugin` plugin 선언. 기억해, **금지** 사용 `<subPackages>` 다음과 같은 구성의 하위 패키지가 포함됨 `/etc/packages` 보다 `/apps/my-app-packages/<application|content|container>/install(.author|.publish)?`.
+다음에서 `all/pom.xml`를 클릭하고 다음을 추가합니다 `<embeddeds>` 에 대한 지시문 `filevault-package-maven-plugin` plugin 선언. 기억해, **금지** 사용 `<subPackages>` 구성. 그 이유는 여기에 하위 패키지가 포함되기 때문입니다. `/etc/packages` 보다 `/apps/my-app-packages/<application|content|container>/install(.author|.publish)?`.
 
 ```xml
 ...
@@ -537,7 +537,7 @@ scripts=["
 
 ### 컨테이너 패키지의 필터 정의 {#xml-container-package-filters}
 
-In the `all` project&#39;s `filter.xml` (`all/src/main/content/jcr_root/META-INF/vault/definition/filter.xml`), **include** any `-packages` folders that contain sub-packages to deploy:
+다음에서 `all` 프로젝트 `filter.xml` (`all/src/main/content/jcr_root/META-INF/vault/definition/filter.xml`), **include** 임의 `-packages` 배포할 하위 패키지가 포함된 폴더:
 
 ```xml
 <filter root="/apps/my-app-packages"/>
@@ -600,7 +600,7 @@ In the `all` project&#39;s `filter.xml` (`all/src/main/content/jcr_root/META-INF
 
 ### 컨테이너 프로젝트의 Target 폴더 정리 {#xml-clean-container-package}
 
-다음에서 `all/pom.xml` 추가 `maven-clean-plugin` Maven 빌드 전에 대상 디렉터리를 정리하는 플러그인입니다.
+다음에서 `all/pom.xml`, 추가 `maven-clean-plugin` Maven 빌드 전에 대상 디렉터리를 정리하는 플러그인입니다.
 
 ```xml
 <plugins>

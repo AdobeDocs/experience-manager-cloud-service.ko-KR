@@ -2,10 +2,10 @@
 title: 로그 액세스 및 관리
 description: AEM as a Cloud Service에서 개발 프로세스를 지원하기 위해 로그에 액세스하고 관리하는 방법을 알아봅니다.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 69%
+source-wordcount: '268'
+ht-degree: 77%
 
 ---
 
@@ -79,7 +79,7 @@ Environment Id Service    Name
 
 ### 추가 리소스 {#resources}
 
-Cloud Manager API 및 Adobe Developer CLI에 대한 자세한 내용은 다음 추가 리소스를 참조하십시오.
+Cloud Manager API 및 Adobe I/O CLI에 대한 자세한 내용은 다음 추가 리소스를 참조하십시오.
 
 * [Cloud Manager API 설명서](https://developer.adobe.com/experience-cloud/cloud-manager/)
-* [ADOBE DEVELOPER CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+* [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)

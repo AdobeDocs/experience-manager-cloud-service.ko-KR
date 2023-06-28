@@ -1,28 +1,28 @@
 ---
 title: AEM을 통해 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐츠 및 쿼리
-description: AEM으로 GraphQL을 사용하여 샘플 콘텐츠 및 쿼리 탐색을 통해 콘텐츠를 Headless 방식으로 제공하는 방법을 배웁니다.
+description: 샘플 콘텐츠 및 쿼리를 탐색하여 headless로 콘텐츠를 제공할 수 있도록 AEM과 함께 GraphQL을 사용하는 방법에 대해 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 063d8a23c0634de7c5c25b4e617cc536c2dc3a3b
-workflow-type: ht
-source-wordcount: '1760'
-ht-degree: 100%
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+workflow-type: tm+mt
+source-wordcount: '1752'
+ht-degree: 80%
 
 ---
 
 # AEM을 통해 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐츠 및 쿼리 {#learn-graphql-with-aem-sample-content-queries}
 
-AEM으로 GraphQL을 사용하여 샘플 콘텐츠 및 쿼리 탐색을 통해 콘텐츠를 Headless 방식으로 제공하는 방법을 배웁니다.
+샘플 콘텐츠 및 쿼리를 탐색하여 headless로 콘텐츠를 제공할 수 있도록 AEM과 함께 GraphQL을 사용하는 방법에 대해 알아봅니다.
 
 >[!NOTE]
 >
->이 페이지는 다음과 함께 읽어야 합니다.
+>다음과 함께 이 페이지를 읽으십시오.
 >
 >* [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 >* [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 >* [콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
 
-GraphQL 쿼리를 시작하고 이들 쿼리가 AEM 콘텐츠 조각과 함께 작동하는 방법을 알아보려면 몇 가지 실제 사례를 살펴보는 것이 도움이 됩니다.
+GraphQL 쿼리를 시작하고 쿼리가 AEM 콘텐츠 조각과 함께 작동하는 방식을 살펴보려면 몇 가지 실제 사례를 살펴보는 것이 좋습니다.
 
 도움이 필요하면 다음을 참조하십시오.
 
@@ -41,7 +41,7 @@ GraphQL 쿼리를 시작하고 이들 쿼리가 AEM 콘텐츠 조각과 함께 �
 
 >[!NOTE]
 >
->인스턴스에 따라 쿼리를 제출하고 테스트하기 위해 [AEM GraphQL API에 포함되어 있는 GraphiQL 인터페이스](/help/headless/graphql-api/graphiql-ide.md)에 직접 액세스할 수 있습니다.
+>인스턴스에 따라 [AEM GraphQL API에 포함된 GraphiQL 인터페이스](/help/headless/graphql-api/graphiql-ide.md) 쿼리 제출 및 테스트용.
 >
 >다음 중 하나에서 쿼리 편집기에 액세스할 수 있습니다.
 >
@@ -54,7 +54,7 @@ GraphQL 쿼리를 시작하고 이들 쿼리가 AEM 콘텐츠 조각과 함께 �
 
 ### 샘플 쿼리 - 사용 가능한 모든 스키마 및 데이터 형식 {#sample-all-schemes-datatypes}
 
-사용 가능한 모든 스키마에 대한 모든 `types`이 반환됩니다.
+모두 반환 `types` 사용 가능한 모든 스키마.
 
 **샘플 쿼리**
 
@@ -147,7 +147,7 @@ GraphQL 쿼리를 시작하고 이들 쿼리가 AEM 콘텐츠 조각과 함께 �
 
 ### 샘플 쿼리 - 모든 도시에 대한 모든 정보 {#sample-all-information-all-cities}
 
-모든 도시에 대한 모든 정보를 검색하려면 다음과 같은 매우 기본적인 쿼리를 사용하면 됩니다.
+모든 도시에 대한 모든 정보를 검색하려면 다음 기본 쿼리를 사용하면 됩니다.
 **샘플 쿼리**
 
 ```graphql
@@ -158,7 +158,7 @@ GraphQL 쿼리를 시작하고 이들 쿼리가 AEM 콘텐츠 조각과 함께 �
 }
 ```
 
-실행되면 시스템은 모든 필드를 포함하도록 쿼리를 자동으로 확장합니다.
+실행 시 시스템은 모든 필드를 포함하도록 쿼리를 자동으로 확장합니다.
 
 ```graphql
 {
@@ -230,7 +230,7 @@ GraphQL 쿼리를 시작하고 이들 쿼리가 AEM 콘텐츠 조각과 함께 �
 
 ### 샘플 쿼리 - 모든 도시의 이름 {#sample-names-all-cities}
 
-`city` 스키마에 있는 모든 항목의 `name`을 반환하는 간단한 쿼리입니다.
+다음을 반환하는 간단한 쿼리 `name`의 모든 항목 `city`스키마.
 
 **샘플 쿼리**
 
@@ -321,7 +321,7 @@ query {
 
 ### 샘플 쿼리 - 이름이 붙은 변형이 있는 모든 도시 {#sample-cities-named-variation}
 
-`city` Berlin에 대해 “Berlin Centre”(`berlin_centre`)라는 이름이 붙은 새 변형을 만드는 경우 쿼리를 사용하여 변형의 세부 정보를 반환할 수 있습니다.
+&quot;Berlin Center&quot;라는 이름의 변형을 만드는 경우(`berlin_centre`), `city` 그러면 쿼리를 사용하여 변형의 세부 정보를 반환할 수 있습니다.
 
 **샘플 쿼리**
 
@@ -366,8 +366,8 @@ query {
 
 다음 작업을 수행하는 경우:
 
-* `Tourism` : `Business`, `City Break`, `Holiday`(이)라는 이름의 다양한 태그를 생성하고
-* 다양한 `City` 인스턴스의 변형에 할당
+* 이름이 인 다양한 태그 만들기 `Tourism` : `Business`, `City Break`, `Holiday`
+* 다양한 유형의 기본 변형에 할당 `City` 인스턴스
 
 그러면 쿼리를 사용하여 `city`스키마에서 City Break로 태그된 모든 항목에 대한 `name` 및 `tags`의 세부 정보를 반환할 수 있습니다.
 
@@ -544,7 +544,7 @@ query {
 
 ### 샘플 쿼리 - 이름이 “Jobs” 또는 “Smith”인 모든 사람 {#sample-all-persons-jobs-smith}
 
-이름이 `Jobs` 또는 `Smith`인 모든 `persons`가 필터링됩니다.
+모두 필터링하는 쿼리 `persons` 를 나타내는 모든 단어 `Jobs`또는 `Smith`.
 
 **샘플 쿼리**
 
@@ -598,7 +598,7 @@ query {
 
 ### 샘플 쿼리 - 이름이 “Jobs”가 아닌 모든 사람 {#sample-all-persons-not-jobs}
 
-이름이 `Jobs` 또는 `Smith`인 모든 `persons`가 필터링됩니다.
+모두 필터링하는 쿼리 `persons` 를 나타내는 모든 단어 `Jobs`또는 `Smith`.
 
 **샘플 쿼리**
 
@@ -708,9 +708,9 @@ query {
 }
 ```
 
-### 샘플 쿼리 - 독일 또는 스위스에 위치한 인구 400000~999999의 모든 도시 {#sample-all-cities-d-ch-population}
+### 샘플 쿼리 - 독일 또는 스위스의 인구 400000~999999 사이의 모든 도시 {#sample-all-cities-d-ch-population}
 
-여기에서는 필드를 조합하여 필터링됩니다. An `AND`(묵시적)는 `population`범위를 선택하는 데 사용되며, `OR`(명시적)는 필요한 도시를 선택하는 데 사용됩니다.
+여기에서는 필드 조합이 필터링됩니다. An `AND`(묵시적)는 `population`범위를 선택하는 데 사용되며, `OR`(명시적)는 필요한 도시를 선택하는 데 사용됩니다.
 
 **샘플 쿼리**
 
@@ -1152,7 +1152,7 @@ query {
 
 ## WKND 프로젝트를 사용하는 샘플 쿼리 {#sample-queries-using-wknd-project}
 
-이러한 샘플 쿼리는 WKND 프로젝트를 기반으로 합니다. 여기에는 다음이 있습니다.
+이러한 샘플 쿼리는 WKND 프로젝트를 기반으로 합니다. 여기에는 다음과 같은 항목이 있습니다.
 
 * 콘텐츠 조각 모델은 다음에서 사용할 수 있습니다.
   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
@@ -1163,7 +1163,7 @@ query {
 
 >[!NOTE]
 >
->결과가 광범위해질 수 있으므로 여기에서 재현하지는 않습니다.
+>결과가 광범위할 수 있으므로 여기서는 재현하지 않습니다.
 
 ### 지정된 속성을 가진 특정 모델의 모든 콘텐츠 조각에 대한 샘플 쿼리 {#sample-wknd-all-model-properties}
 
@@ -1256,7 +1256,7 @@ query {
 이 샘플 쿼리는 다음에 대한 정보를 얻습니다.
 
 * 특정 경로에서 `article` 유형의 단일 콘텐츠 조각
-   * 그 안에 있는 모든 형식의 콘텐츠:
+   * 해당 조각 내의 모든 컨텐츠 형식은 다음과 같습니다.
       * HTML
       * Markdown
       * 일반 텍스트
@@ -1315,7 +1315,7 @@ query {
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
 * 특정 경로에서 `article` 유형의 단일 콘텐츠 조각
-   * 그 안에 있는 참조된(중첩된) 조각의 경로 및 작성자
+   * 해당 조각 내에서 참조된(중첩된) 조각의 경로 및 작성자
 
 >[!NOTE]
 >
@@ -1446,7 +1446,7 @@ query {
 
 #### 첨부 파일이 포함된 복수 콘텐츠 조각에 대한 샘플 쿼리 {#sample-wknd-multiple-fragments-attachments}
 
-다음 쿼리는 `content-reference` 유형의 특정 필드(하위 그룹)인 모든 `attachments`을 반환합니다.
+다음 쿼리는 모두 반환합니다 `attachments` - 유형의 특정 필드(하위 그룹) `content-reference`:
 
 >[!NOTE]
 >
@@ -1538,7 +1538,7 @@ query {
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
 * 특정 경로에서 `author` 유형의 단일 콘텐츠 조각
-   * 그 안에 있는 변형: `another`과 관련된 데이터
+   * 해당 조각 내에서 변형과 관련된 데이터는 다음과 같습니다. `another`
 
 **샘플 쿼리**
 
@@ -1564,7 +1564,7 @@ query {
 
 >[!NOTE]
 >
->지정된 이름의 [변형](/help/headless/graphql-api/content-fragments.md#variations)이 없는 콘텐츠 조각에 대한 폴백을 보여 줍니다.
+>이 쿼리는 이 없는 콘텐츠 조각에 대한 폴백을 보여 줍니다. [변형](/help/headless/graphql-api/content-fragments.md#variations) 을 참조하십시오.
 
 **샘플 쿼리**
 
@@ -1717,7 +1717,7 @@ query {
 }
 ```
 
-### _태그 ID별로 필터링하고 변형을 제외하는 샘플 쿼리 {#sample-filtering-tag-not-variations}
+### 태그 ID로 필터링하고 변형을 제외한 샘플 쿼리 {#sample-filtering-tag-not-variations}
 
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
@@ -1752,7 +1752,7 @@ query {
 } 
 ```
 
-### _태그 ID별로 필터링하고 변형을 포함하는 샘플 쿼리 {#sample-filtering-tag-with-variations}
+### _tags ID로 필터링하고 변형을 포함한 샘플 쿼리 {#sample-filtering-tag-with-variations}
 
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
@@ -1805,7 +1805,7 @@ query {
 
 ### 샘플 콘텐츠 조각 모델 (스키마) {#sample-content-fragment-models-schemas}
 
-샘플 쿼리의 경우 다음 콘텐츠 모델 및 해당 상호 관계를 사용합니다(참조 ->):
+샘플 쿼리의 경우 다음 콘텐츠 모델 및 해당 상호 관계를 사용합니다(참조 ->).
 
 * [회사](#model-company)
 -> [사람](#model-person)
