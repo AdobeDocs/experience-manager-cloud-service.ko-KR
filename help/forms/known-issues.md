@@ -6,10 +6,10 @@ role: User, Developer
 level: Intermediate
 topic: Administration
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
-source-git-commit: 94825e3b60d970fec5bf696d932ca66bb83fd2f3
+source-git-commit: 63f6e7c6df7404062aa0d209496506bdabcf564c
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 11%
+source-wordcount: '358'
+ht-degree: 10%
 
 ---
 
@@ -31,8 +31,9 @@ ht-degree: 11%
 
 * AEM Forms as a Cloud Service은 XDP 및 JSON 스키마 파일에 대한 썸네일을 생성하지 않습니다. 서비스는 썸네일 대신 기본 아이콘을 표시합니다.
 
-   ![Forms 썸네일 알려진 문제](/help/forms/assets/forms-tumbnail-known-issue.png)
+  ![Forms 썸네일 알려진 문제](/help/forms/assets/forms-tumbnail-known-issue.png)
 
+* 반복 가능한 요소가 포함된 스키마를 사용하여 적응형 양식 기반의 핵심 구성 요소를 만드는 경우 적응형 Forms 편집기의 데이터 모델 트리에서 반복 가능한 요소를 드래그 앤 드롭하는 옵션이 작동하지 않습니다.
 
 ## 제한 사항 {#limitations}
 
