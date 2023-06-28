@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 69c6ca6104e5360e2db4c3ba9f34b3cddb2269ab
+source-git-commit: 66c7b30b8b66bc86d7b83e57e02ed61d426553a2
 workflow-type: tm+mt
-source-wordcount: '4085'
+source-wordcount: '4094'
 ht-degree: 99%
 
 ---
@@ -576,6 +576,7 @@ ht-degree: 99%
             + [개별 적응형 양식 구성 요소에 인라인 CSS 스타일 적용](/help/forms/inline-style-adaptive-forms.md)
          + 적응형 양식에 규칙 추가 및 표현식 사용 {#add-rules-and-use-expressions-in-an-adaptive-form}
             + [적응형 양식에 규칙 추가](/help/forms/rule-editor.md)
+            + [규칙 편집기의 호출 서비스를 사용하여 사용자 지정 오류 처리기 추가](/help/forms/add-custom-error-handler-adaptive-forms.md)
          + [!DNL Adobe Sign] 사용 {#use-adobe-sign}
             + [Adobe Sign을 사용하여 적응형 양식에 전자 서명](/help/forms/working-with-adobe-sign.md)
          + 제출 액션 및 메타데이터 제출 구성 {#configure-submit-actions-and-metadata-submission}
