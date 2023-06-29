@@ -4,9 +4,9 @@ description: 용 Adobe Acrobat Sign을 구성하는 방법 알아보기 [!DNL AE
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: d9c5934c03b9c5aa91bafa09569d441fc7868937
+source-git-commit: 09ed1ae61e7748da2cc182b005a9dd26853cb3f7
 workflow-type: tm+mt
-source-wordcount: '1931'
+source-wordcount: '1918'
 ht-degree: 31%
 
 ---
@@ -110,9 +110,6 @@ ht-degree: 31%
 이제 다음을 수행할 수 있습니다. [적응형 양식에 Adobe Acrobat Sign 필드 추가 사용](working-with-adobe-sign.md). Cloud Service에 사용되는 구성 컨테이너를 [!DNL Adobe Acrobat Sign]을 위해 활성화하고자 하는 모든 적응형 양식에 추가해야 합니다. 적응형 양식의 속성에서 구성 컨테이너를 지정할 수 있습니다.
 
 ## AEM Forms과 Adobe Acrobat Sign Solutions for Government 연결 {#adobe-acrobat-sign-for-government}
-
-[!BADGE 프리릴리스 설명서]{type=Caution tooltip="노란색 상태"}
-<span class="preview"> 이 섹션에는 프리릴리스 설명서와 변경될 수 있는 사항이 포함되어 있습니다.</span>
 
 AEM Forms과 Adobe Acrobat Sign Solutions for Government를 연결하는 것은 여러 단계로 구성됩니다. 여기에는 다음이 포함됩니다.
 

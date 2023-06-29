@@ -7,9 +7,9 @@ keywords: 사용자 지정 오류 핸들러 추가, 기본 오류 핸들러 추�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 66c7b30b8b66bc86d7b83e57e02ed61d426553a2
+source-git-commit: 09ed1ae61e7748da2cc182b005a9dd26853cb3f7
 workflow-type: tm+mt
-source-wordcount: '1979'
+source-wordcount: '1981'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 | AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html) |
 | AEM as a Cloud Service | 이 문서 |
 
-AEM Forms은 양식 제출을 위해 기본 성공 및 오류 핸들러를 제공합니다. 또한 오류 처리기 함수를 사용자 지정하는 기능도 제공합니다. 예를 들어, 특정 오류 코드의 백엔드에서 사용자 정의 워크플로를 호출하거나 서비스가 중단되었음을 고객에게 알려 줄 수 있습니다. 핸들러는 서버 응답을 기반으로 실행되는 클라이언트측 함수입니다. API를 사용하여 외부 서비스를 호출하면 유효성 검사를 위해 데이터가 서버로 전송되며, 이 데이터는 제출에 대한 성공 또는 오류 이벤트에 대한 정보와 함께 클라이언트에 응답을 반환합니다. 정보는 관련 핸들러에 매개 변수로 전달되어 함수를 실행합니다. 오류 처리기는 발생한 오류 또는 유효성 검사 문제를 관리하고 표시하는 데 도움이 됩니다.
+AEM Forms은 양식 제출을 위해 기본 성공 및 오류 핸들러를 제공합니다. 또한 오류 처리기 함수를 사용자 지정하는 기능도 제공합니다. 예를 들어 특정 오류 코드의 백엔드에서 사용자 정의 워크플로를 호출하거나 서비스가 중단되었음을 고객에게 알려 줄 수 있습니다. 핸들러는 서버 응답을 기반으로 실행되는 클라이언트측 함수입니다. API를 사용하여 외부 서비스를 호출하면 유효성 검사를 위해 데이터가 서버로 전송되며, 이 데이터는 제출에 대한 성공 또는 오류 이벤트에 대한 정보와 함께 클라이언트에 응답을 반환합니다. 정보는 관련 핸들러에 매개 변수로 전달되어 함수를 실행합니다. 오류 처리기는 발생한 오류 또는 유효성 검사 문제를 관리하고 표시하는 데 도움이 됩니다.
 
 ![양식에 사용자 지정 오류 핸들러를 추가하는 방법을 이해하는 오류 핸들러 워크플로](/help/forms/assets/error-handler-workflow.png)
 
@@ -119,9 +119,7 @@ AEM Forms 버전의 기능 및 후속 업데이트의 개선으로, 기존 오�
 
 오류 응답을 표시하는 옵션 중 일부는 다음과 같습니다.
 
-+++
-
-+++  적응형 양식 필드 이름 기반
++++  적응형 양식 fieldName 속성 기반
 
 
 * **`Header:`** `content-type:application/problem+json`
@@ -148,7 +146,7 @@ AEM Forms 버전의 기능 및 후속 업데이트의 개선으로, 기존 오�
 +++
 
 
-+++ 적응형 양식 데이터 참조 기반
++++ 적응형 양식 dataRef 속성 기반
 
 * **`Header:`** `content-type:application/problem+json`
 * **`Response:`**
@@ -171,8 +169,8 @@ AEM Forms 버전의 기능 및 후속 업데이트의 개선으로, 기존 오�
 
 에서 dataRef의 값을 볼 수 있습니다. **[!UICONTROL 속성]** 양식 구성 요소 창
 
-
 +++
+
 
 ## 규칙 편집기를 사용하여 오류 처리기 추가 {#add-error-handler-using-rule-editor}
 
