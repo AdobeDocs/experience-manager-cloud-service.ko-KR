@@ -3,9 +3,9 @@ title: 데이터 보호 및 데이터 개인정보 보호 규정 - Adobe Experie
 description: EU 일반 데이터 보호 규정(GDPR), 캘리포니아 소비자 개인정보 보호법 및 새 AEM as a Cloud Service 프로젝트 구현 시 이들 규정을 준수하는 방법을 포함하여 다양한 데이터 보호 및 데이터 개인정보 보호 규정에 대한 Adobe Experience Manager as a Cloud Service Sites 지원에 대해 알아봅니다.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1028'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -174,7 +174,7 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-     ContextHub 저장소는 사용되는 지속성 계층을 정의하므로 현재 지속성 상태를 보려면 모든 계층을 검사해야 합니다.
+     ContextHub 저장소는 사용할 지속성 계층을 정의하므로 현재 지속성 상태를 보려면 모든 계층을 검사해야 합니다.
 
 예를 들어 localStorage에 저장된 데이터를 보려는 경우
 
@@ -203,7 +203,7 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-     ContextHub 저장소는 사용되는 지속성 계층을 정의하므로 현재 지속성 상태를 보려면 모든 계층을 검사해야 합니다.
+     ContextHub 저장소는 사용할 지속성 계층을 정의하므로 현재 지속성 상태를 보려면 모든 계층을 검사해야 합니다.
 
 예를 들어 localStorage에 저장된 데이터를 보려는 경우
 
