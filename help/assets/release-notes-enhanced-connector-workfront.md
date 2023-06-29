@@ -2,9 +2,9 @@
 title: 릴리스 정보 [!DNL Workfront for Experience Manager enhanced connector]
 description: 릴리스 정보 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 0cc57a144b69799cfabc8baae2051e9ac8701d49
+source-git-commit: 87aeebad2576e91472530a2617b23bece4cd453f
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1158'
 ht-degree: 1%
 
 ---
@@ -30,13 +30,13 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Adobe은 다음을 권장합니다. [최신 1.9.11 버전으로 업그레이드](../assets/update-workfront-enhanced-connector.md) / [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe은 다음을 권장합니다. [최신 1.9.11 버전으로 업그레이드](/help/assets/workfront-connector-install.md) / [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 알려진 문제 {#known-issues}
 
 * AEM 6.4로 프로젝트 연결 폴더를 구성하는 동안 Experience Manager에 대한 값이 저장되지 않습니다. **[!UICONTROL 하위 폴더]** 및 **[!UICONTROL 포트폴리오를 사용하여 프로젝트에 연결된 폴더 만들기]** 필드. 에 대한 값 **[!UICONTROL 하위 폴더]** 에 대한 필드 업데이트 **[!UICONTROL 정의되지 않음]** 및 의 값 **[!UICONTROL 포트폴리오를 사용하여 프로젝트에 연결된 폴더 만들기]** 에 대한 필드 업데이트 **[!UICONTROL 기본 Portfolio]** 구성을 저장한 후 자동으로 이동합니다.
 
-* 클래식 Workfront 환경을 사용하는 경우 **[!UICONTROL 전송 대상]** 옵션이에서 사용할 수 있음 **[!UICONTROL 자세히]** 드롭다운 목록에서는 Experience Manager 내의 대상 을 선택할 수 없습니다. 다음 **[!UICONTROL 전송 대상]** 옵션은 **[!UICONTROL 문서 작업]** 드롭다운 목록입니다. 다음 **[!UICONTROL 전송 대상]** 옵션이에 대해 올바르게 작동합니다. **[!UICONTROL 자세히]** 드롭다운 목록과 **[!UICONTROL 문서 작업]** 새로운 Workfront 경험에서 사용할 수 있는 드롭다운 목록입니다.
+* 클래식 Workfront 환경을 사용하는 경우 **[!UICONTROL 전송 대상]** 옵션이에서 사용할 수 있음 **[!UICONTROL 자세히]** 드롭다운 목록에서는 Experience Manager 내의 대상 을 선택할 수 없습니다. 다음 **[!UICONTROL 전송 대상]** 옵션은 **[!UICONTROL 문서 작업]** 드롭다운 목록입니다. 다음 **[!UICONTROL 전송 대상]** 옵션이에 대해 올바르게 작동합니다. **[!UICONTROL 자세히]** 드롭다운 목록 및 **[!UICONTROL 문서 작업]** 새로운 Workfront 경험에서 사용할 수 있는 드롭다운 목록입니다.
 
 ## 이전 릴리스 {#previous-releases}
 
@@ -147,7 +147,7 @@ ht-degree: 1%
 
 [!DNL Workfront for Experience Manager enhanced connector] 9월 16일에 릴리스된 버전 1.9.3에는 다음 업데이트가 포함됩니다.
 
-* 크기가 8GB를 초과하는 파일을 업로드할 수 없습니다.
+* 8GB를 초과하는 파일을 업로드할 수 없습니다.
 * Workfront에서 AEM으로 전송된 자산을 자동 게시하는 동안 문제가 발생합니다.
 * 기본 메타데이터 스키마 양식을 편집하는 동안 태그 필드에 루트 경로 필드를 사용할 수 없습니다.
 * AEM 워크플로우를 사용하여 Workfront에서 새 버전을 추가하는 동안 문제가 발생합니다.
