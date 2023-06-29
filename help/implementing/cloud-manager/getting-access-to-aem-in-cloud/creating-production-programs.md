@@ -3,9 +3,9 @@ title: 프로덕션 프로그램 만들기
 description: Cloud Manager를 사용하여 라이브 트래픽을 호스팅하는 자체 프로덕션 프로그램을 만드는 방법을 알아봅니다.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '581'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 96%
 1. **솔루션 및 추가 기능** 탭에서 프로그램에 포함할 솔루션을 선택합니다.
 
    * 사용 허가된 여러 솔루션에 대해 하나 이상의 프로그램이 필요한지 확실하지 않은 경우 가장 관심이 있는 프로그램을 선택합니다. 나중에 [프로그램을 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)하여 추가 솔루션을 활성화할 수 있습니다. 프로그램 설정 권장 사항에 대한 자세한 내용은 [프로덕션 프로그램 소개 문서](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)를 참조하십시오.
-   * 다음을 선택한 경우 **향상된 보안 활성화** 이전에는 HIPAA 권한을 사용할 수 있는 만큼의 솔루션만 선택할 수 있었습니다.
+   * 이전에 **향상된 보안 활성화**&#x200B;를 선택한 경우, HIPAA 권한을 사용할 수 있는 만큼의 솔루션만 선택할 수 있습니다.
 
    ![솔루션 선택](assets/setup-prod-select.png)
 
