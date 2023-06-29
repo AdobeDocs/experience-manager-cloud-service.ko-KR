@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5096cd6141e70f40b5145389ca4db3cc65ea1e66
 workflow-type: tm+mt
-source-wordcount: '2527'
-ht-degree: 19%
+source-wordcount: '2558'
+ht-degree: 18%
 
 ---
 
@@ -101,11 +101,11 @@ Brand Portal URL을 잘 모를 경우 다음 단계를 수행하십시오.
 
 1. 다음에서 **도구** 패널, 다음으로 이동 **[!UICONTROL 배포]** > **[!UICONTROL 배포]**.
 
-   ![](assets/test-bpconfig1.png)
+   ![Brand Portal을 사용하여 AEM Assets as a Cloud Service 구성](assets/test-bpconfig1.png)
 
    Brand Portal 배포 에이전트(**[!UICONTROL bpdistributionagent0]**)은 아래에 생성됩니다. **[!UICONTROL Brand Portal에 게시]**.
 
-   ![](assets/test-bpconfig2.png)
+   ![분배 에이전트 만들기](assets/test-bpconfig2.png)
 
 
 1. 클릭 **[!UICONTROL Brand Portal에 게시]** 배포 에이전트를 엽니다.
@@ -121,11 +121,11 @@ Brand Portal URL을 잘 모를 경우 다음 단계를 수행하십시오.
    >
    >실패를 검토하고 다음을 지우는 것이 좋습니다. **error-queue** 정기적으로
 
-   ![](assets/test-bpconfig3.png)
+   ![자산 배포에 대한 처리 큐](assets/test-bpconfig3.png)
 
 1. Experience Manager Assets as a 간 연결을 확인하려면 [!DNL Cloud Service] Brand Portal에서 **[!UICONTROL 연결 테스트]** 아이콘.
 
-   ![](assets/test-bpconfig4.png)
+   ![AEM과 Brand Portal 간 연결 확인](assets/test-bpconfig4.png)
 
    다음과 같은 메시지가 나타납니다. *테스트 패키지가 정상적으로 전달되었습니다.*.
 
@@ -156,7 +156,7 @@ Experience Manager Assets as a 간 연결을 확인하려면 [!DNL Cloud Service
 1. 에 표시된 대로 1~4의 단계를 수행합니다. **연결 테스트** 섹션을 참조하고 분배 에이전트 페이지로 이동합니다.
 1. 클릭 **[!UICONTROL 로그]** 처리 및 오류 로그를 확인합니다.
 
-   ![](assets/test-bpconfig5.png)
+   ![처리 및 오류 로그](assets/test-bpconfig5.png)
 
 분배 에이전트가 다음 로그를 생성했습니다.
 
