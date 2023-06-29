@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: f6698dd8-3e2a-44ac-b00f-df578aa85ffe
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '469'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ AEM에서 콘텐츠 조각 삭제 정책을 정의하기 전에 이러한 중요
 >
 >콘텐츠 조각을 편집/업데이트하는 데 필요한 삭제 권한은 사용자 및/또는 그룹 관리를 통해 할당된 삭제 권한에 포함되어 있습니다. <!-- The delete permissions, required to edit/update a Content Fragment, are included in the Delete permission [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
-조각을 편집/업데이트하는 데 필요한 권한은 콘텐츠 조각을 포함하는 노드나 적절한 상위 노드(`/content/dam` 하의 어떤 하위 수준이든)에 적용되어야 합니다. 이러한 상위 노드에 지정되면 해당 분기 내의 모든 노드에 권한이 적용됩니다.
+조각을 편집/업데이트하는 데 필요한 권한은 콘텐츠 조각을 포함하는 노드나 적절한 상위 노드(`/content/dam` 하의 어떤 하위 수준이든)에 적용되어야 합니다. 권한은 이러한 상위 노드에 지정되면 해당 분기 내의 모든 노드에 적용됩니다.
 
 예를 들어 다음과 같은 모든 콘텐츠 조각을 포함하는 폴더:
 
@@ -61,7 +61,7 @@ AEM에서 콘텐츠 조각 삭제 정책을 정의하기 전에 이러한 중요
 >
 >모든 콘텐츠 조각이 `/content/dam`에 저장되므로 여기에 대한 권한을 설정할 수도 있습니다.
 >
->하지만 이 작업을 수행하면 다른 *모든* 에셋 유형에도 동일한 삭제 권한이 적용됩니다.
+>하지만 이 작업을 수행하면 다른 *모든* 자산 유형에도 동일한 삭제 권한이 적용됩니다.
 
 특정 사용자 및/또는 그룹이 콘텐츠 조각을 편집/업데이트할 수 있도록 허용하기 위한 권한 전제 조건은 다음과 같습니다.
 
