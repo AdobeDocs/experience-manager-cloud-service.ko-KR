@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 32fb0942b8007aeee8afa6378a9293eecd7d7700
+source-git-commit: 25689621ab24b6e14e7e865451ae53947a67d8d1
 workflow-type: tm+mt
-source-wordcount: '1385'
-ht-degree: 44%
+source-wordcount: '1427'
+ht-degree: 45%
 
 ---
 
@@ -131,11 +131,13 @@ ht-degree: 44%
 
 * [양식 데이터 모델을 위한 향상된 인증 방법](/help/forms/configure-data-sources.md): AEM Forms을 호환 가능한 데이터 소스와 연결하기 위한 클라이언트 자격 증명 기반 인증이 도입되어 보안이 강화되었습니다. 이 향상된 기능을 통해 가장 또는 사용자 로그인이 필요 없으므로 데이터 보호가 강화됩니다.
 
-* 적응형 Forms 섹션을 반복 가능하게 만들기: 이제 다음을 수행할 수 있습니다. [어코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [패널](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), 및 [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 적응형 양식의 구성 요소 반복 가능.
+* [반복 가능한 섹션이 포함된 적응형 Forms](/help/forms/create-forms-repeatable-sections.md): 이제 다음을 수행할 수 있습니다. [어코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [패널](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), 및 [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 핵심 구성 요소 기반 적응형 양식의 구성 요소를 사용하여 반복 가능한 섹션 만들기
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 
   이러한 반복 가능한 섹션을 사용하면 고정 필드 개수 없이 항목의 수를 무제한으로 제공할 수 있습니다. 이 메서드는 필요한 데이터 인스턴스를 미리 알 수 없는 경우에 유용합니다. Forms 사용자는 섹션을 쉽게 추가하거나 제거할 수 있으므로 양식이 다양한 데이터 입력 시나리오에 맞게 조정될 수 있으며 동일한 데이터가 여러 번 발생하는 경우 간편하게 수집할 수 있습니다.
+
+* **[적응형 양식을 Microsoft® SharePoint 및 Microsoft® OneDrive에 제출](/help/forms/configuring-submit-actions.md)**: 비즈니스 사용자 민첩성을 개선하여 새로운 양식을 빠르게 시작하고, Microsoft® SharePoint 사이트 또는 OneDrive 폴더와 같이 일상적으로 사용하는 도구에 제출된 데이터를 저장합니다.
 
 ### Headless 적응형 양식 얼리 어답터 프로그램 {#forms-early-adopter}
 
