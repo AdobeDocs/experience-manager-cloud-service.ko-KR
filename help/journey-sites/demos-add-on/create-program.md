@@ -3,9 +3,9 @@ title: 프로그램 제작
 description: 새 프로그램 및 파이프라인을 설정하여 추가 기능을 배포하는 방법에 대해 알아봅니다.
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
 source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '713'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 97%
 
 새 프로그램 및 파이프라인을 설정하여 추가 기능을 배포하는 방법에 대해 알아봅니다.
 
-## 지금까지의 이야기 {#story-so-far}
+## 지금까지의 스토리 {#story-so-far}
 
 AEM 참조 데모 추가 기능 여정의 이전 문서인 [참조 데모 추가 기능 설치 이해](installation.md)에서는 서로 다른 부분이 함께 작동하며 참조 데모 추가 기능의 설치 프로세스를 이루는 방법에 대해 알아보았습니다. 이제
 
@@ -37,7 +37,7 @@ Cloud Manager에 로그인한 후 테스트 및 데모용으로 새 샌드박스
 
 >[!NOTE]
 >
->사용자는 다음 구성원의 구성원이어야 합니다. **비즈니스 소유자** 프로그램을 만들 조직의 Cloud Manager 역할입니다.
+>프로그램을 제작하려면 사용자는 귀사의 Cloud Manager에서 **사업주** 역할의 멤버여야 합니다.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Adobe Cloud Manager에 로그인합니다.
 
