@@ -1,43 +1,43 @@
 ---
-title: 에셋 폴더 만들기 - Headless 설정
+title: 자산 폴더 만들기 - Headless 설정
 description: AEM 콘텐츠 조각 모델을 사용하여 Headless 콘텐츠의 기반이 되는 콘텐츠 조각의 구조를 정의합니다.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 93%
+source-wordcount: '381'
+ht-degree: 88%
 
 ---
 
-# 에셋 폴더 만들기 - Headless 설정 {#creating-an-assets-folder}
+# 자산 폴더 만들기 - Headless 설정 {#creating-an-assets-folder}
 
-AEM 콘텐츠 조각 모델을 사용하여 Headless 콘텐츠의 기반이 되는 콘텐츠 조각의 구조를 정의합니다. 그런 다음 콘텐츠 조각은 에셋 폴더에 저장됩니다.
+AEM 콘텐츠 조각 모델을 사용하여 Headless 콘텐츠의 기반이 되는 콘텐츠 조각의 구조를 정의합니다. 그런 다음 콘텐츠 조각은 자산 폴더에 저장됩니다.
 
-## 에셋 폴더란 무엇입니까? {#what-is-an-assets-folder}
+## 자산 폴더란 무엇입니까? {#what-is-an-assets-folder}
 
 미래의 콘텐츠 조각을 위해 원하는 구조를 정의하는 [콘텐츠 조각 모델을 만들었으므로](create-content-model.md) 이제 일부 조각을 만들고 싶을 것입니다.
 
-그러나 먼저 에셋을 저장할 에셋 폴더를 만들어야 합니다.
+그러나 먼저 자산을 저장할 자산 폴더를 만들어야 합니다.
 
-에셋 폴더는 콘텐츠 조각뿐만 아니라 이미지 및 비디오와 같은 [기존 콘텐츠 에셋](/help/assets/manage-digital-assets.md)을 구성하는 데 사용됩니다.
+에셋 폴더는 [기존 콘텐츠 자산 구성](/help/assets/manage-digital-assets.md) 이미지, 비디오 및 콘텐츠 조각과 같은 작업을 수행합니다.
 
-## 에셋 폴더를 만드는 방법 {#how-to-create-an-assets-folder}
+## 자산 폴더를 만드는 방법 {#how-to-create-an-assets-folder}
 
 관리자는 콘텐츠가 만들어질 때 콘텐츠를 구성하기 위해 가끔씩만 폴더를 만들면 됩니다. 이 시작 안내서에서는 폴더를 하나만 만들면 됩니다.
 
-1. AEM as a Cloud Service에 로그인하고 메인 메뉴에서 **탐색 -> 에셋 -> 파일**&#x200B;을 선택합니다.
+1. AEM as a Cloud Service에 로그인하고 메인 메뉴에서 **탐색 -> 자산 -> 파일**&#x200B;을 선택합니다.
 1. **만들기 -> 폴더**&#x200B;를 탭하거나 클릭합니다.
 1. 폴더의 **제목** 및 **이름**&#x200B;을 입력합니다.
    * **제목**&#x200B;은 설명적이어야 합니다.
-   * 다음 **이름** 는 저장소의 노드 이름이 됩니다.
-      * 제목을 기반으로 자동으로 생성되고 이에 따라 조정됩니다 [AEM 이름 지정 규칙입니다.](/help/implementing/developing/introduction/naming-conventions.md)
+   * **이름**&#x200B;은 저장소의 노드 이름이 됩니다.
+      * 제목을 기반으로 자동으로 생성되고 이에 따라 조정됩니다 [AEM 이름 지정 규칙](/help/implementing/developing/introduction/naming-conventions.md).
       * 필요한 경우 조정할 수 있습니다.
 
    ![폴더 만들기](../assets/assets-folder-create.png)
-1. 마우스를 가져가서 확인 표시를 눌러 방금 만든 폴더를 선택합니다. 그런 다음 도구 모음에서&#x200B;**속성**&#x200B;을 선택합니다(또는 `p` [키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)사용).
+1. 마우스를 가져가서 확인 표시를 눌러 방금 만든 폴더를 선택합니다. 그런 다음 을 선택합니다 **속성** 도구 모음에서 (또는 를 사용하여) `p` [키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)).
 1. **속성** 창에서 **Cloud Services** 탭을 선택합니다.
 1. **클라우드 구성**&#x200B;의 경우 [이전에 생성한 구성](create-configuration.md)을 선택합니다.
-   ![에셋 폴더 구성](../assets/assets-folder-configure.png)
+   ![자산 폴더 구성](../assets/assets-folder-configure.png)
 1. **저장 및 닫기**&#x200B;를 탭하거나 클릭합니다.
 1. 확인 창에서 **확인**&#x200B;을 탭하거나 클릭합니다.
 

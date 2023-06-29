@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 릴리스 2022.2.0의 마이그레이션 도구 �
 description: AEM as a Cloud Service 릴리스 2022.2.0의 마이그레이션 도구 릴리스 정보
 feature: Release Information
 exl-id: b1cd871d-c71e-4902-a97e-2c859f6a4da4
-source-git-commit: c497424271ea960d22a30b4a6c66432935ec820d
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 79%
+source-wordcount: '249'
+ht-degree: 75%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 79%
 
 ### 새로운 기능 {#what-is-new-ctt}
 
-* 콘텐츠 유효성 검사 - 사용자는 콘텐츠 전송 도구에서 추출한 모든 콘텐츠가 대상 인스턴스에 성공적으로 수집되었는지 확인할 수 있습니다. 이 기능을 사용하려면 소스 AEM 환경의 `System Console`에서 활성화해야 합니다. 자세한 내용은 [콘텐츠 전송 확인 - 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=ko-KR#getting-started)를 참조하십시오.
+* 콘텐츠 유효성 검사 - 사용자는 콘텐츠 전송 도구에서 추출한 모든 콘텐츠가 대상 인스턴스에 성공적으로 수집되었는지 확인할 수 있습니다. 이 기능을 사용하려면 소스 AEM 환경의 `System Console`에서 활성화해야 합니다. 다음을 참조하십시오 [컨텐츠 전송 확인 - 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=ko-KR#getting-started) 을 참조하십시오.
 
 ### 버그 수정 {#bug-fixes-ctt}
 

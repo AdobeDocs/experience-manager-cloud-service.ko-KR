@@ -2,9 +2,9 @@
 title: Screens에 처음 as a Cloud Service 로그인
 description: 이 페이지에서는 Screens as a Cloud Service 시작의 첫 번째 단계에 대해 설명합니다.
 exl-id: d3a6aa5d-226b-484d-97ea-0b8312c7a0fd
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '203'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ## Adobe Admin Console에 사용자 추가 {#admin-console}
 
-Adobe IMS(Identity Management System) 조직 ID로 프로비저닝되면 이제 액세스할 수 있습니다 [Adobe Admin Console](https://adminconsole.adobe.com/). 을(를) 참조하십시오 [Adobe Admin Console 사용자](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html) Admin Console에 사용자를 추가하는 방법에 대해 자세히 알아보십시오.
+Adobe IMS(Identity Management System) 조직 ID로 프로비저닝되면 이제 액세스할 수 있습니다 [Adobe Admin Console](https://adminconsole.adobe.com/). 다음을 참조하십시오 [Adobe Admin Console 사용자](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html) Admin Console에 사용자를 추가하는 방법에 대해 자세히 알아보십시오.
 
 >[!NOTE]
 >사용자는 AEM Cloud Service 또는 Federated ID을 사용하여 AEM에 로그인할 수 있도록 Adobe ID 제품 프로필에 액세스할 수 있습니다.

@@ -2,9 +2,9 @@
 title: AEM에서 외부 SPA 편집
 description: 이 문서에서는 독립 실행형 SPA을 AEM 인스턴스에 업로드하고, 편집 가능한 콘텐츠 섹션을 추가하고, 저작을 활성화하는 권장 단계에 대해 설명합니다.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2420'
+source-wordcount: '2421'
 ht-degree: 2%
 
 ---
@@ -360,14 +360,14 @@ AEM에서 이 구성 요소가 포함된 페이지를 편집할 때 작성자가
 
 ## 프레임워크 제한 사항 {#framework-limitations}
 
-RemotePage 구성 요소에서는 구현이 자산 매니페스트와 같은 자산 매니페스트를 제공할 것으로 예상합니다 [여기에서 찾음](https://github.com/shellscape/webpack-manifest-plugin). 그러나 RemotePage 구성 요소는 React 프레임워크(및 remote-page-next 구성 요소를 통한 Next.js)에서만 작동하도록 테스트되었으므로 Angular과 같은 다른 프레임워크에서 원격으로 애플리케이션을 로드하는 것을 지원하지 않습니다.
+RemotePage 구성 요소에서는 구현이 자산 매니페스트와 같은 자산 매니페스트를 제공할 것으로 예상합니다 [여기에서 찾음](https://github.com/shellscape/webpack-manifest-plugin). 그러나 RemotePage 구성 요소는 React 프레임워크(및 remote-page-next 구성 요소를 통한 Next.js)에서만 작동하도록 테스트되었으므로 Angular과 같은 다른 프레임워크에서 원격으로 응용 프로그램을 로드할 수 없습니다.
 
 ## 추가 리소스 {#additional-resources}
 
 다음 참조 자료가 AEM의 컨텍스트에서 SPA을 이해하는 데 도움이 될 수 있습니다.
 
 * [AEM Headful 및 Headless](/help/implementing/developing/headful-headless.md)
-* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko-KR)
+* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 * [WKND SPA 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=ko-KR)
 * [React를 사용하여 AEM에서 SPA 시작하기](/help/implementing/developing/hybrid/getting-started-react.md)
 * [SPA 참조 자료(API 참조)](/help/implementing/developing/hybrid/reference-materials.md)

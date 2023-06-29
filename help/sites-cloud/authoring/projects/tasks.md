@@ -2,10 +2,10 @@
 title: 작업
 description: 작업은 콘텐츠에 대해 수행할 일의 항목들을 나타내며 프로젝트에서 현재 작업의 완료 수준을 판별하는 데 사용됩니다
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: fef0aef0d440eaedbf1a88cba0640e1f98e85e3e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 47%
+source-wordcount: '576'
+ht-degree: 44%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 47%
 
 * **Task List:** When clicking the Task tile, a list of tasks is displayed. This list has detailed information about all the tasks related to the project.
 
-두 목록에는 모두 **작업** 타일에서 직접 생성하는 작업뿐만 아니라 워크플로 작업도 표시합니다.
+두 목록에는 모두 워크플로에서 직접 생성하는 작업과 작업이 나열되어 있습니다. **작업** 타일.
 
 ### 작업 타일 {#task-tile}
 

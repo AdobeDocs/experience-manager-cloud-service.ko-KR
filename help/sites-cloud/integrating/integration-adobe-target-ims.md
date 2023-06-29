@@ -2,10 +2,10 @@
 title: Adobe Target과 통합할 때 사용되는 IMS 구성
 description: Adobe Target과 통합할 때 사용되는 IMS 구성 알아보기
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 92%
+source-wordcount: '855'
+ht-degree: 91%
 
 ---
 
@@ -43,7 +43,7 @@ Target Standard API를 통해 AEM과 Adobe Target을 통합하려면 Adobe IMS(I
 1. AEM에서 **도구** 메뉴를 엽니다.
 1. **보안** 섹션에서 **Adobe IMS 구성**&#x200B;을 선택합니다.
 1. **만들기**&#x200B;를 선택하여 **Adobe IMS 기술 계정 구성**&#x200B;을 엽니다.
-1. **클라우드 구성** 아래의 드롭다운을 사용하여 **Adobe Target**&#x200B;을 선택합니다.
+1. 아래의 드롭다운 사용 **클라우드 구성**, 선택 **Adobe Target**.
 1. **새 인증서 만들기**&#x200B;를 활성화한 다음 새 별칭을 입력합니다.
 1. **인증서 만들기**&#x200B;를 사용하여 확인합니다.
 
@@ -271,7 +271,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
 With [Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md), the Client Code field had been added to the Target configuration window.
 
-When configuring the Tenant ID and Client Code fields, please be aware of that for most customers, the **Tenant ID** and the **Client Code** are the same. This means that both fields contain the same information and are identical. Make sure you enter the Tenant ID in both fields.
+When configuring the Tenant ID and Client Code fields, be aware of that for most customers, the **Tenant ID** and the **Client Code** are the same. This means that both fields contain the same information and are identical. Make sure you enter the Tenant ID in both fields.
 
 >[!NOTE]
 >

@@ -2,10 +2,10 @@
 title: 사용자 매핑 및 주요 마이그레이션
 description: 사용자 매핑 및 사용자 마이그레이션 개요
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: caa04391077d594a828a42a1a5a6a03daa107168
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 11%
+source-wordcount: '831'
+ht-degree: 10%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 11%
 
 Adobe Experience Manager(AEM) as a Cloud Service으로 전환 여정의 일부로 기존 AEM AEM 시스템의 사용자와 그룹을 as a Cloud Service으로 이동해야 합니다. 이 작업은 콘텐츠 전송 도구에서 수행합니다.
 
-AEM as a Cloud Service의 주요 변경 내용은 작성자 계층 액세스에 대한 Adobe ID 사용이 완전히 통합된다는 것입니다. 이 프로세스에는 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html) 사용자 및 사용자 그룹 관리. 사용자 프로필 정보는 모든 Adobe 클라우드 애플리케이션에서 단일 사인온을 제공하는 IMS(Adobe Identity Management System)에서 중앙 집중화됩니다. 자세한 내용은 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management)를 참조하십시오. 이러한 변경 사항으로 인해 Cloud Service 작성자 인스턴스에서 중복 사용자를 방지하려면 기존 사용자를 해당 IMS ID에 매핑해야 합니다. 기존 AEM의 그룹은 IMS의 그룹과 근본적으로 다르므로 그룹은 매핑되지 않지만 마이그레이션이 완료된 후에는 두 그룹 세트를 조정해야 합니다.
+AEM as a Cloud Service의 주요 변경 내용은 작성자 계층 액세스에 대한 Adobe ID 사용이 완전히 통합된다는 것입니다. 이 프로세스에는 [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html) 사용자 및 사용자 그룹 관리. 사용자 프로필 정보는 모든 Adobe 클라우드 애플리케이션에서 단일 사인온을 제공하는 IMS(Adobe Identity Management System)에서 중앙 집중화됩니다. 자세한 내용은 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). 이러한 변경 사항으로 인해 Cloud Service 작성자 인스턴스에서 중복 사용자를 방지하려면 기존 사용자를 해당 IMS ID에 매핑해야 합니다. 기존 AEM의 그룹은 IMS의 그룹과 근본적으로 다르므로 그룹은 매핑되지 않지만 마이그레이션이 완료된 후에는 두 그룹 세트를 조정해야 합니다.
 
 ## 사용자 마이그레이션 세부 정보 {#user-migration-detail}
 

@@ -2,10 +2,10 @@
 title: 점진적 웹 앱 기능 활성화
 description: 콘텐츠 작성자는 AEM Sites를 사용하여 코딩이 아닌 간단한 구성을 통해 모든 사이트에 대해 점진적 웹 앱 기능을 활성화할 수 있습니다.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1998'
-ht-degree: 93%
+source-wordcount: '1997'
+ht-degree: 91%
 
 ---
 
@@ -50,7 +50,7 @@ PWA를 사용하면 사이트의 로컬 사본이 제공되어 사용자는 인�
 
 ### 핵심 구성 요소 사용 {#adjust-components}
 
-핵심 구성 요소 릴리스 2.15.0 이상 버전은 AEM 사이트의 PWA 기능을 완전히 지원합니다. AEMaaCS에는 항상 핵심 구성 요소의 최신 버전이 포함되어 있으므로 PWA 기능을 즉시 사용할 수 있습니다. AEMaaCS 프로젝트는 이 요구 사항을 자동으로 충족합니다.
+핵심 구성 요소 릴리스 2.15.0 이상 버전은 AEM 사이트의 PWA 기능을 완전히 지원합니다. AEMaaCS는 항상 핵심 구성 요소의 최신 버전을 포함하므로 PWA 기능을 즉시 사용할 수 있습니다. AEMaaCS 프로젝트는 이 요구 사항을 자동으로 충족합니다.
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ The developer will also need to add the following link to the `customfooterlibs.
 
 ### Dispatcher 조정 {#adjust-dispatcher}
 
-PWA 기능은 `/content/<sitename>/manifest.webmanifest` 파일을 생성하고 사용합니다. 기본적으로 [Dispatcher](/help/implementing/dispatcher/overview.md)는 이러한 파일들을 노출하지 않습니다. 이들 파일을 노출하려면 개발자는 사이트 프로젝트에 다음과 같은 구성을 추가해야 합니다.
+PWA 기능은 `/content/<sitename>/manifest.webmanifest` 파일을 생성하고 사용합니다. 기본적으로, [dispatcher](/help/implementing/dispatcher/overview.md) 는 이러한 파일을 노출하지 않습니다. 이들 파일을 노출하려면 개발자는 사이트 프로젝트에 다음과 같은 구성을 추가해야 합니다.
 
 ```text
 File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filters.any >
@@ -160,20 +160,20 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
    * **최소 UI** - 브라우저는 기본 앱처럼 대부분 숨겨져 있지만 기본 내비게이션 컨트롤은 노출되어 있습니다.
    * **전체 화면** - 브라우저는 기본 앱처럼 사용자에게 완전히 표시되지 않지만 전체 화면 모드에서는 렌더링됩니다.
       * 이 옵션을 사용하면 브라우저의 내비게이션 컨트롤을 사용하지 않고도 사이트 페이지의 링크 및 구성 요소를 사용하여 콘텐츠를 통해 앱을 완전히 탐색할 수 있습니다.
-* **화면 방향** - 로컬 앱과 마찬가지로 PWA를 사용하려면 [디바이스 방향](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation)을 처리하는 방법에 대해 알아 두어야 합니다.
+* **화면 방향** - 로컬 앱에서는 PWA이 처리 방법을 알고 있어야 합니다. [디바이스 방향](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation).
    * **임의** - 앱이 사용자 디바이스의 방향에 맞게 조정됩니다. 이 값은 기본값입니다.
    * **세로** - 사용자 디바이스의 방향에 관계없이 앱이 세로 레이아웃으로 열립니다.
    * **기로** - 사용자 디바이스의 방향에 관계없이 앱이 가로 레이아웃으로 열립니다.
 * **테마 색상** - 로컬 사용자의 운영 체제에 기본 UI 도구 모음 및 내비게이션 컨트롤이 표시되는 방법에 영향을 주는 [앱 색상](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color)을 정의합니다. 브라우저에 따라 다른 앱 프레젠테이션 요소에도 영향을 줄 수 있습니다.
    * 색상 팝업을 사용하여 색상을 선택합니다.
    * 이 색상은 16진수 또는 RGB 값으로 정의될 수도 있습니다.
-* **배경색** - 앱이 로드될 때 표시되는 [앱의 배경색](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color)을 정의합니다.
+* **배경색** - 다음을 정의합니다. [앱의 배경색](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color): 앱이 로드될 때 표시됩니다.
    * 색상 팝업을 사용하여 색상을 선택합니다.
    * 이 색상은 16진수 또는 RGB 값으로 정의될 수도 있습니다.
    * 특정 브라우저는 앱 이름, 배경색 및 아이콘으로부터 [자동으로 스플래시 화면을 빌드](https://developer.mozilla.org/en-US/docs/Web/Manifest#Splash_screens)합니다.
 * **아이콘** - 사용자 디바이스에서 앱을 표시하는 [아이콘](https://developer.mozilla.org/en-US/docs/Web/Manifest/icons)을 정의합니다.
    * 이 아이콘은 512x512픽셀의 png 파일이어야 합니다.
-   * 이 아이콘은 [DAM에 저장](/help/assets/overview.md)되어 있어야 합니다.
+   * 아이콘은 다음과 같아야 합니다. [dam에 저장됨](/help/assets/overview.md).
 
 ### 캐시 관리(고급) {#offline-configuration}
 

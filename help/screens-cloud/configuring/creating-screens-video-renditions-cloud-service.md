@@ -2,9 +2,9 @@
 title: Screens에서 비디오 표현물 as a Cloud Service 만들기
 description: 이 페이지에서는 Screens as a Cloud Service으로 비디오 렌디션을 만드는 방법에 대해 설명합니다.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '342'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Screens Content Provider에서 as a Cloud Service으로 비디오 렌디션을 �
 1. Screens Content Provider에서 내 채널로 이동합니다.
 
    >[!NOTE]
-   >을(를) 참조하십시오 [Screens Content Provider 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) 을 참조하십시오.
+   >다음을 참조하십시오 [Screens Content Provider 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) 을 참조하십시오.
 
 1. 왼쪽 탐색 모음에서 도구 섹션을 클릭하고 를 클릭합니다. **에셋** 그런 다음 을 클릭합니다. **처리 프로필**.
 

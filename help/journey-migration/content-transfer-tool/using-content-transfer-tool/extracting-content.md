@@ -2,9 +2,9 @@
 title: 소스에서 콘텐츠 추출
 description: 소스에서 콘텐츠 추출
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '700'
 ht-degree: 27%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 27%
 컨텐츠 전송 도구에서 마이그레이션 세트를 추출하려면 아래 단계를 따르십시오.
 
 >[!NOTE]
->Amazon S3, Azure Data Store 또는 파일 데이터 저장소를 데이터 저장소 유형으로 사용하는 경우 선택적 사전 복사 단계를 실행하여 추출 단계를 크게 가속화할 수 있습니다. 사전 복사 단계는 첫 번째 전체 추출 및 수집에 가장 효과적입니다. 을(를) 참조하십시오 [대형 콘텐츠 저장소 처리](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) 을 참조하십시오.
+>Amazon S3, Azure Data Store 또는 파일 데이터 저장소를 데이터 저장소 유형으로 사용하는 경우 선택적 사전 복사 단계를 실행하여 추출 단계를 크게 가속화할 수 있습니다. 사전 복사 단계는 첫 번째 전체 추출 및 수집에 가장 효과적입니다. 다음을 참조하십시오 [대형 콘텐츠 저장소 처리](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) 을 참조하십시오.
 
 1. 다음에서 마이그레이션 세트 선택 **컨텐츠 전송** 마법사 및 클릭 **Extract** 추출을 시작하려면
 
@@ -64,7 +64,7 @@ ht-degree: 27%
 
 >[!NOTE]
 >처음 콘텐츠 전송 후 클라우드 서비스에서 라이브로 전환되기 전에 최종 차등 콘텐츠 전송에 대한 콘텐츠 고정 기간을 단축하기 위해 자주 차등 콘텐츠 추가를 수행하는 것이 좋습니다. 첫 번째 전체 추출에 사전 복사 단계를 사용한 경우 전체 프로세스에 시간이 추가될 수 있으므로 후속 추가 추출에 대해 사전 복사를 건너뛸 수 있습니다(추가 마이그레이션 세트 크기가 200GB 미만인 경우).
->또한 기존 콘텐츠의 콘텐츠 구조는 초기 추출을 수행한 시점부터 추가 추출을 실행할 때까지 변경되지 않는 것이 중요합니다. 초기 추출 이후 구조가 변경된 콘텐츠에서는 추가 작업을 실행할 수 없습니다. 마이그레이션 프로세스 중에 이를 제한하십시오.
+>또한 기존 콘텐츠의 콘텐츠 구조는 초기 추출을 수행한 시점부터 추가 추출을 실행할 때까지 변경되지 않는 것이 중요합니다. 초기 추출 이후 구조가 변경된 콘텐츠에서는 추가 작업을 실행할 수 없습니다. 마이그레이션 프로세스 중에 이를 제한해야 합니다.
 
 추출 프로세스가 완료되면 추가 추출 방법을 사용하여 델타 컨텐츠를 전송할 수 있습니다.
 

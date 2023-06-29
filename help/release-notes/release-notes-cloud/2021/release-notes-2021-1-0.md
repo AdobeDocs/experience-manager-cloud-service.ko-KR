@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.1.0 릴리스 정보입니다.'
 description: "[!DNL Adobe Experience Manager] 2021.1.0의 as a Cloud Service 릴리스 노트"
 exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 23%
+source-wordcount: '854'
+ht-degree: 24%
 
 ---
 
@@ -52,9 +52,9 @@ ht-degree: 23%
 
 * 제품 경험 관리: 에셋 및 경험 조각에 대한 새로운 &#39;Commerce&#39; 속성 탭입니다. 이 탭에서는 제품/범주를 에셋 및 경험 조각에 연결할 수 있습니다. 탭에는 연결된 제품/범주에 대한 실시간 데이터와 제품 콘솔에 세부 정보를 표시하는 링크도 표시됩니다.
 
-* 최신 CIF 코어 구성 요소 버전 v1.7.0이 포함된 CIF Venia 참조 사이트 - 2021.02.02가 릴리스되었습니다. 을(를) 참조하십시오 [CIF Venia 참조 사이트](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) 을 참조하십시오.
+* 최신 CIF 코어 구성 요소 버전 v1.7.0이 포함된 CIF Venia 참조 사이트 - 2021.02.02가 릴리스되었습니다. 다음을 참조하십시오 [CIF Venia 참조 사이트](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) 을 참조하십시오.
 
-* CIF 코어 구성 요소 v1.7.0이 릴리스되었습니다. 을(를) 참조하십시오 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0) 을 참조하십시오.
+* CIF 코어 구성 요소 v1.7.0이 릴리스되었습니다. 다음을 참조하십시오 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0) 을 참조하십시오.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -74,15 +74,15 @@ AEM as a Cloud Service 2021.1.0의 Cloud Manager 릴리스 일자는 2021년 1�
 
 ### [!DNL Code Refactoring Tools]의 새로운 기능 {#what-is-new-crt}
 
-* 새로운 버전의 AIO-CLI 플러그인이 출시되었습니다. 이 플러그인의 최신 버전에는 AEM Dispatcher Converter 및 Repository Modernizer에 대한 버그 수정이 포함되어 있으며 새 유틸리티인 Index Converter도 지원합니다. 다음을 참조하십시오. [통합 경험](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) 이 플러그인에 대해 자세히 알아보십시오.
+* 새로운 버전의 AIO-CLI 플러그인이 출시되었습니다. 이 플러그인의 최신 버전에는 AEM Dispatcher Converter 및 Repository Modernizer에 대한 버그 수정이 포함되어 있으며 새 유틸리티인 Index Converter도 지원합니다. 다음을 참조하십시오 [통합 경험](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) 이 플러그인에 대해 자세히 알아보십시오.
 
-* AEM Index Converter는 고객의 사용자 지정 OAK 색인 정의를 as a Cloud Service으로 호환되는 OAK 색인 정의로 변환하는 데 사용할 수 있는 유틸리티입니다. 다음을 참조하십시오. [인덱스 변환기](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) 을 참조하십시오.
+* AEM Index Converter는 고객의 사용자 지정 OAK 색인 정의를 as a Cloud Service으로 호환되는 OAK 색인 정의로 변환하는 데 사용할 수 있는 유틸리티입니다. 다음을 참조하십시오 [인덱스 변환기](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) 을 참조하십시오.
 
 * 새 기능이에 추가됨 [저장소 현대화 도구](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 별도의 패키지를 만드는 경우 `ui.config` 모든 OSGi 구성을 포함합니다.
 
 ### 버그 수정 {#crt-bug-fixes}
 
-* AEM Dispatcher Converter 및 Repository Modernizer 도구에서 수행된 몇 가지 버그 수정 사항. 다음을 참조하십시오. [AEM Dispatcher 변환기](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) 및 [저장소 현대화 도구](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+* AEM Dispatcher Converter 및 Repository Modernizer 도구에서 수행된 몇 가지 버그 수정 사항. 다음을 참조하십시오 [AEM Dispatcher 변환기](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) 및 [저장소 현대화 도구](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
 
 ## AEM as a Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
 
@@ -109,6 +109,6 @@ AEM as a Cloud Service SDK Build Analyzer Maven 플러그인은 누락된 종속
 
 ### [!DNL Content Transfer Tool]의 새로운 기능 {#what-is-new-ctt}
 
-* 컨텐츠 전송 도구 - 사용자 매핑 도구에 새로운 기능과 UI가 추가되었습니다. 이 기능은 콘텐츠 마이그레이션 활동의 일부로 기존 사용자 및 그룹을 Adobe Identity Management 시스템 ID에 자동으로 매핑합니다. 을(를) 참조하십시오 [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) 을 참조하십시오.
+* 컨텐츠 전송 도구 - 사용자 매핑 도구에 새로운 기능과 UI가 추가되었습니다. 이 기능은 콘텐츠 마이그레이션 활동의 일부로 기존 사용자 및 그룹을 Adobe Identity Management 시스템 ID에 자동으로 매핑합니다. 자세한 내용은 [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)을 참조하십시오.
 * 이제 콘텐츠 전송 도구는 하위 그룹을 포함하여 마이그레이션 세트에서 참조된 모든 그룹과 사용자를 마이그레이션합니다.
 * 사용자는 아래에서 특정 경로를 선택할 수 있습니다. `/etc` 마이그레이션 세트를 생성할 때.

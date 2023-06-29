@@ -2,9 +2,9 @@
 title: 콘텐츠 전송 확인
 description: 컨텐츠 전송 도구를 사용하여 컨텐츠 전송의 유효성을 검사합니다
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1055'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 >
 >이 기능은 CTT(Content Transfer Tool) 버전 1.8.x 릴리스에서 사용할 수 있습니다. AEM Cloud Service 대상 환경은 버전 6158 이상을 실행 중이어야 합니다. 또한 소스 환경을 설정하여 실행해야 합니다 [사전 복사](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). 유효성 검사 기능은 소스에서 azcopy.config 파일을 찾습니다. 이 파일을 찾지 못하면 유효성 검사가 실행되지 않습니다. azcopy.config 파일을 구성하는 방법에 대한 자세한 내용은 [이 페이지](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
-컨텐츠 전송 유효성 검사는 선택적 기능입니다. 이 기능을 활성화하면 추출과 수집을 수행하는 데 걸리는 시간이 모두 증가합니다. 이 기능을 사용하려면 다음 단계에 따라 소스 AEM 환경의 시스템 콘솔에서 활성화하십시오.
+컨텐츠 전송 유효성 검사는 선택적 기능입니다. 이 기능을 활성화하면 추출 및 수집을 수행하는 데 걸리는 시간이 모두 늘어납니다. 이 기능을 사용하려면 다음 단계에 따라 소스 AEM 환경의 시스템 콘솔에서 활성화하십시오.
 
 1. 다음 위치로 이동하여 소스 인스턴스의 Adobe Experience Manager 웹 콘솔로 이동합니다. **도구 - 작업 - 웹 콘솔** 또는 을 통해 URL로 바로 이동할 수 있습니다 *https://serveraddress:serverport/system/console/configMgr*
 1. 검색 대상 **컨텐츠 전송 도구 추출 서비스 구성**
@@ -38,7 +38,7 @@ ht-degree: 2%
 
 If **추출 중 스테이징 컨테이너 덮어쓰기** 가 활성화되면 추출과 관련된 모든 노드가 추출 경로 다이제스트에 기록됩니다. 이 설정을 사용할 때는 를 활성화해야 합니다. **수집하기 전에 클라우드 인스턴스의 기존 콘텐츠 지우기** 수집 중에 를 설정합니다. 그렇지 않으면 수집 다이제스트에서 누락된 노드가 있을 수 있습니다. 이는 이전 수집에서 대상에 이미 존재하는 노드입니다.
 
-이에 대한 그래픽 예시는 아래 예를 참조하십시오.
+이에 대한 그래픽 설명은 다음 예를 참조하십시오.
 
 ### 예 1 {#example-1}
 
@@ -115,7 +115,7 @@ EXTRACTION: Number of nodes extracted: 4635
 INGESTION: Number of nodes ingested: 0
 ----------------------------------------------------------
 Validation failed. However, the following nodes may already be present in the target environment.
-Please refer to our Migration Validation FAQ (https://www.adobe.com/go/aem_cloud_ctt_validation_en) or open a ticket with Customer Care.
+See our Migration Validation FAQ (https://www.adobe.com/go/aem_cloud_ctt_validation_en) or open a ticket with Customer Care.
 There are 4635 entries present in the extraction digest that are missing from the ingestion digest.
 /content/dam/bruce
 /content/dam/bruce-assets
@@ -138,7 +138,7 @@ Migration validation took 0 minutes
 
 추출 및 수집이 성공적으로 완료되면 주요 마이그레이션에 대한 요약 및 보고서를 사용할 수 있습니다. 이 정보는 어떤 사용자 및 그룹이 성공적으로 마이그레이션되었는지 확인하고, 일부가 마이그레이션되지 않은 이유를 확인하는 데 사용할 수 있습니다.
 
-이 정보를 보려면 Cloud Acceleration Manager 로 이동하십시오. 프로젝트 카드를 클릭하고 컨텐츠 전송 카드를 클릭합니다. 다음으로 이동 **수집 작업** 확인할 수집을 찾습니다. 세 점(**...**)을 클릭하여 해당 수집을 수행합니다. **사용자 요약 보기** 드롭다운에서.
+이 정보를 보려면 Cloud Acceleration Manager 로 이동하십시오. 프로젝트 카드를 클릭하고 컨텐츠 전송 카드를 클릭합니다. 다음으로 이동 **수집 작업** 확인할 수집을 찾습니다. 세 점(**...**)을 클릭하여 해당 수집을 수행합니다. **사용자 요약 보기** 을 클릭합니다.
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
@@ -156,7 +156,7 @@ Migration validation took 0 minutes
 
 첫 번째 단계는 수집이 실제로 실패했는지 또는 추출된 콘텐츠가 대상 환경에 이미 있는지 확인하는 것입니다. 이 문제는 수집이 와 반복되는 경우 발생할 수 있습니다. **수집하기 전에 클라우드 인스턴스의 기존 콘텐츠 지우기** 옵션이 비활성화되었습니다.
 
-확인하려면 유효성 검사 보고서에서 경로를 선택하고 대상 환경에 있는지 확인합니다. 게시 환경의 경우 페이지 및 에셋을 직접 확인하는 것으로 제한될 수 있습니다. 이 단계에 대한 지원이 필요한 경우 고객 지원 센터에서 티켓을 여십시오.
+확인하려면 유효성 검사 보고서에서 경로를 선택하고 대상 환경에 있는지 확인합니다. 게시 환경의 경우 페이지 및 에셋을 직접 확인하는 것으로 제한될 수 있습니다. 이 단계에 대한 지원이 필요한 경우 고객 지원 센터에서 티켓을 엽니다.
 
 ### 노드 수가 예상했던 것보다 적습니다. 이유는 무엇입니까? {#node-count-lower-than-expected}
 

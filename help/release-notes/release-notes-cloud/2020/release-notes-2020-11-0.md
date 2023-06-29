@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2020.11.0 릴리스 정보입니다.'
 description: "[!DNL Adobe Experience Manager] 2020.11.0의 as a Cloud Service 릴리스 노트"
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 17%
+source-wordcount: '1261'
+ht-degree: 18%
 
 ---
 
@@ -73,9 +73,9 @@ ht-degree: 17%
 
 ### 새로운 기능 {#what-is-new-commerce}
 
-* 최신 CIF 코어 구성 요소 버전 v1.5.0이 포함된 CIF Venia 참조 사이트 - 2020.11.05가 릴리스되었습니다. 을(를) 참조하십시오 [CIF Venia 참조 사이트](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) 을 참조하십시오.
+* 최신 CIF 코어 구성 요소 버전 v1.5.0이 포함된 CIF Venia 참조 사이트 - 2020.11.05가 릴리스되었습니다. 다음을 참조하십시오 [CIF Venia 참조 사이트](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) 을 참조하십시오.
 
-* CIF 코어 구성 요소 v1.5.0이 릴리스되었습니다. 을(를) 참조하십시오 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) 을 참조하십시오.
+* CIF 코어 구성 요소 v1.5.0이 릴리스되었습니다. 다음을 참조하십시오 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) 을 참조하십시오.
 
 ### 버그 수정 {#bug-fixes-commerce}
 
@@ -90,7 +90,7 @@ AEM as a Cloud Service 2020.11.0의 Cloud Manager 릴리스 일자는 2020년 11
 ### [!DNL Cloud Manager]의 새로운 기능 {#what-is-new-cm}
 
 * 새 메뉴 옵션 **로컬 로그인** 이제 의 환경 메뉴 옵션에서 사용자가 사용할 수 있습니다. **환경** 카드 및 **환경** 요약 페이지.
-자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md#login-locally)를 참조하십시오.
+다음을 참조하십시오 [환경 관리](/help/implementing/cloud-manager/manage-environments.md#login-locally) 을 참조하십시오.
 
 * Cloud Manager의 **학습** 탭이 UI의 새 이미지로 새로 고쳐졌습니다.
 
@@ -99,7 +99,7 @@ AEM as a Cloud Service 2020.11.0의 Cloud Manager 릴리스 일자는 2020년 11
 * 빌드 실행 전에 종속성을 로드하려면 Maven 플러그인을 다운로드해야 합니다.
 * 이제 언어를 선택하기 위한 Cloud Manager 바닥글의 링크가 올바른 위치로 이동합니다.
 * 코드 스캔 중에 SonarQube 프로세스가 시작되지 않는 경우가 있습니다. 이제 자동 감지되고 다시 시작이 시도됩니다.
-* 모든 기존 프로덕션 파이프라인은 경험 감사 단계에서 자동으로 활성화됩니다.
+* 기존의 모든 프로덕션 파이프라인은 경험 감사 단계에서 자동으로 활성화됩니다.
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
 

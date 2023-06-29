@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1361'
+source-wordcount: '1358'
 ht-degree: 98%
 
 ---
@@ -81,9 +81,9 @@ AEM Sites 번역 여정의 이전 문서인 [콘텐츠 번역](configure-connect
 
 >[!TIP]
 >
->여러 번역을 한 번에 게시하기 위해 게시할 때 여러 항목(즉, 여러 언어 폴더)을 선택할 수 있습니다.
+>게시할 때 여러 항목(예: 여러 언어 폴더)를 선택하여 여러 번역을 한 번에 게시할 수 있습니다.
 
-콘텐츠를 게시할 때에는 게시 시간 예약과 같이 이 여정에서 다루지 않는 추가 옵션을 사용할 수 있습니다. 자세한 내용은 이 문서 끝에 있는 [추가 리소스](#additional-resources) 섹션을 참조하십시오.
+콘텐츠를 게시할 때에는 게시 시간 예약과 같이 이 여정에서 다루지 않는 추가 옵션을 사용할 수 있습니다. 다음을 참조하십시오. [추가 리소스](#additional-resources) 자세한 내용은 문서 끝에 있는 섹션을 참조하십시오.
 
 ## 번역된 콘텐츠 업데이트 {#updating-translations}
 
@@ -95,7 +95,7 @@ AEM Sites 번역 여정의 이전 문서인 [콘텐츠 번역](configure-connect
 
 ### 자동으로 생성된 번역 프로젝트 업데이트 {#updating-automatic-project}
 
-1. **탐색** -> **에셋** -> **파일**&#x200B;로 이동합니다. AEM의 콘텐츠는 `/content`에 저장되어 있습니다.
+1. **탐색** -> **자산** -> **파일**&#x200B;로 이동합니다. AEM의 콘텐츠는 `/content`에 저장되어 있습니다.
 1. 프로젝트의 언어 루트를 선택합니다. 이 경우에는 `/content/wknd/en`을 선택했습니다.
 1. 레일 선택기를 탭하거나 클릭하고 **참조** 패널을 표시합니다.
 1. **언어 사본**&#x200B;을 탭하거나 클릭합니다.
@@ -117,7 +117,7 @@ AEM Sites 번역 여정의 이전 문서인 [콘텐츠 번역](configure-connect
 
 ![추가 번역 작업 추가됨](assets/additional-translation-job.png)
 
-새 카드에 나열된 통계에 차이가 있을 수 있습니다. AEM은 마지막 번역 이후 번경된 내용을 인식하고 번역이 필요한 콘텐츠만 포함하기 때문입니다. 여기에는 새 콘텐츠의 최초 번역과 업데이트된 콘텐츠의 재번역이 포함됩니다.
+새 카드에 나열된 통계에 차이가 있을 수 있습니다. AEM은 마지막 번역 이후 번경된 내용을 인식하고 번역이 필요한 콘텐츠만 포함하기 때문입니다. 여기에는 업데이트된 콘텐츠의 재번역과 새 콘텐츠의 최초 번역이 포함됩니다.
 
 이 시점에서부터 [원본과 마찬가지로 번역 작업을 시작하고 관리할 수 있습니다.](translate-content.md#using-translation-project)
 
@@ -163,7 +163,7 @@ AEM Sites 번역 여정의 이전 문서인 [콘텐츠 번역](configure-connect
 
 ## 추가 리소스 {#additional-resources}
 
-* [번역 프로젝트 관리](/help/sites-cloud/administering/translation/managing-projects.md) - 사람 번역 워크플로 및 다국어 프로젝트와 같은 번역 프로젝트 및 추가 기능의 세부 정보에 대해 알아봅니다.
+* [번역 프로젝트 관리](/help/sites-cloud/administering/translation/managing-projects.md) - 인간 번역 워크플로 및 다국어 프로젝트와 같은 번역 프로젝트 및 추가 기능의 세부 정보에 대해 알아봅니다.
 * [작성 개념](/help/sites-cloud/authoring/getting-started/concepts.md) - AEM의 작성자 및 게시 모델에 대해 자세히 알아봅니다. 이 문서는 콘텐츠 조각이 아닌 페이지 작성에 중점을 두고 있지만, 이론은 여전히 적용됩니다.
 * [페이지 게시](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) - 콘텐츠를 게시할 때 사용할 수 있는 추가 기능에 대해 알아봅니다. 이 문서는 콘텐츠 조각이 아닌 페이지 작성에 중점을 두고 있지만, 이론은 여전히 적용됩니다.
 * [작성 환경 및 도구](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) - AEM은 강력한 경로 브라우저를 포함하여 콘텐츠 구성 및 편집을 위한 다양한 메커니즘을 제공합니다.

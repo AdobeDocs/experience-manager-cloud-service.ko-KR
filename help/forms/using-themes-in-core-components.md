@@ -2,7 +2,7 @@
 title: 테마 만들기 및 사용
 description: 테마를 사용하여 핵심 구성 요소를 사용하여 적응형 양식에 스타일을 지정하고 시각적 ID를 제공할 수 있습니다. 여러 적응형 Forms에서 테마를 공유할 수 있습니다.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1664'
 ht-degree: 5%
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->적응형 양식 테마를 과 혼동하면 안 됩니다. [적응형 양식 템플릿.](/help/forms/template-editor.md) 적응형 양식 테마는 적응형 양식에 대한 스타일 정보만 포함합니다. 적응형 양식 템플릿은 양식 구조 및 초기 콘텐츠를 정의하며 새 템플릿을 만들 수 있는 테마를 포함합니다 [적응형 양식.](/help/forms/creating-adaptive-form.md)
+>적응형 양식 테마를 과 혼동하면 안 됩니다. [적응형 양식 템플릿](/help/forms/template-editor.md). 적응형 양식 테마는 적응형 양식에 대한 스타일 정보만 포함합니다. 적응형 양식 템플릿은 양식 구조 및 초기 콘텐츠를 정의하며 새 템플릿을 만들 수 있는 테마를 포함합니다 [적응형 양식](/help/forms/creating-adaptive-form.md).
 
 ## 핵심 구성 요소를 사용하여 적응형 Forms에서 캔버스 테마 사용 {#using-theme-in-adaptive-form}
 

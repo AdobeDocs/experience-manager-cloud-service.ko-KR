@@ -2,9 +2,9 @@
 title: 대형 콘텐츠 저장소 처리
 description: 이 섹션에서는 대용량 콘텐츠 저장소 처리에 대해 설명합니다
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1816'
+source-wordcount: '1813'
 ht-degree: 6%
 
 ---
@@ -30,17 +30,17 @@ CTT(콘텐츠 전송 도구)를 사용하여 많은 Blob을 복사하는 데 며
 
 * 소스 AEM 버전은 6.3 - 6.5여야 합니다.
 
-* 소스 AEM 데이터 저장소가 Amazon S3 또는 Azure Blob 저장소를 사용하도록 구성되었습니다. 자세한 내용은 다음을 참조하십시오. [AEM 6에서 노드 저장소 및 데이터 저장소 구성](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html).
+* 소스 AEM 데이터 저장소가 Amazon S3 또는 Azure Blob 저장소를 사용하도록 구성되었습니다. 자세한 내용은 [AEM 6에서 노드 저장소 및 데이터 저장소 구성](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html).
 
 * 각 마이그레이션 세트는 전체 데이터 저장소를 복제하므로 단일 마이그레이션 세트만 사용해야 합니다.
 
 * 설치하려면 액세스 권한이 필요합니다. [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) 소스 AEM 인스턴스를 실행하는 인스턴스(또는 VM)에서
 
-* 데이터 저장소 가비지 수집이 소스에서 이전 7일 내에 실행되었습니다. 자세한 내용은 다음을 참조하십시오. [데이터 저장소 가비지 수집](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection).
+* 데이터 저장소 가비지 수집이 소스에서 이전 7일 내에 실행되었습니다. 자세한 내용은 [데이터 저장소 가비지 수집](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection).
 
 ### 소스 AEM 인스턴스가 Amazon S3 또는 Azure Blob 저장 공간 데이터 저장소를 사용하도록 구성된 경우 추가 고려 사항 {#additional-considerations-amazons3-azure}
 
-* Amazon S3 및 Azure Blob Storage에서 데이터를 전송하는 것과 관련된 비용이 있습니다. 전송 비용은 기존 저장소 컨테이너의 총 데이터 양(AEM에서 참조되었는지 여부)과 상대적입니다. 을(를) 참조하십시오 [Amazon](https://aws.amazon.com/s3/pricing/) 및 [Azure Blob 저장소](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) 을 참조하십시오.
+* Amazon S3 및 Azure Blob Storage에서 데이터를 전송하는 것과 관련된 비용이 있습니다. 전송 비용은 기존 저장소 컨테이너의 총 데이터 양(AEM에서 참조되었는지 여부)과 상대적입니다. 다음을 참조하십시오 [Amazon](https://aws.amazon.com/s3/pricing/) 및 [Azure Blob 저장소](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) 을 참조하십시오.
 
 * 기존 소스 Amazon S3 버킷에 대한 액세스 키 및 비밀 키 쌍 또는 기존 소스 Azure Blob 스토리지 컨테이너에 대한 SAS URI가 필요합니다(읽기 전용 액세스는 가능).
 
@@ -117,7 +117,7 @@ azcopy.config 파일에는 다음 속성이 포함되어야 합니다(인스턴�
 
 >[!NOTE]
 >
-> 기존 blob 스토리지 컨테이너에 대한 쓰기 액세스 권한을 부여하지 않는 경우 읽기 및 목록 권한만 있는 새 SAS URI를 생성할 수 있습니다.
+> 기존 blob 저장소 컨테이너에 대한 쓰기 액세스 권한을 부여하지 않으려는 경우 읽기 및 목록 권한만 있는 새 SAS URI를 생성할 수 있습니다.
 
 ```
 azCopyPath=/usr/bin/azcopy
@@ -162,7 +162,7 @@ If `repository.home` 속성이 azcopy.config에 없으면 기본 데이터 저�
 >AzCopy가 올바르게 구성되지 않으면 로그에 다음 메시지가 표시됩니다.
 >`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
 
-1. CTT UI에서 추출을 시작합니다. 을(를) 참조하십시오 [컨텐츠 전송 도구 시작하기](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) 및 [추출 프로세스](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) 을 참조하십시오.
+1. CTT UI에서 추출을 시작합니다. 다음을 참조하십시오 [컨텐츠 전송 도구 시작하기](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) 및 [추출 프로세스](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) 을 참조하십시오.
 
 1. 추출 로그에 다음 줄이 인쇄되었는지 확인합니다.
 
@@ -198,7 +198,7 @@ AzCopy에 문제가 있으면 추출이 즉시 실패하고 추출 로그에 실
 
 ### 5. AzCopy로 수집 {#ingesting-azcopy}
 
-을(를) 참조하십시오 [Target에 컨텐츠 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+다음을 참조하십시오 [Target에 컨텐츠 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
 - &quot;새 수집&quot; 대화 상자에서 AzCopy(사전 복사) 사용 여부에 대한 지침을 포함하여 Cloud Acceleration Manager(CAM)에서 대상으로 콘텐츠를 수집하는 방법에 대한 일반적인 정보입니다.
 
 수집 중에 AzCopy를 활용하려면 Adobe 시 AEM as a Cloud Service 버전(버전 2021.6.5561 이상)을 사용해야 합니다.
@@ -209,7 +209,7 @@ AzCopy에 문제가 있으면 추출이 즉시 실패하고 추출 로그에 실
 *************** Beginning AzCopy pre-copy phase ***************
 INFO: Scanning...
 INFO: Failed to create one or more destination container(s). Your transfers may still succeed if the container already exists.
-INFO: Any empty folders will not be processed, because source and/or destination doesn't have full folder support
+INFO: Any empty folders will not be processed, because source and/or destination does not have full folder support
 INFO: azcopy: A newer version 10.11.0 is available to download
  
 Job 419d98da-fc05-2a45-70cc-797fee632031 has started

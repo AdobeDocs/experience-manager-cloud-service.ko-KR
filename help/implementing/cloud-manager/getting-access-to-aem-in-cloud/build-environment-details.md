@@ -2,10 +2,10 @@
 title: 빌드 환경
 description: Cloud Manager의 빌드 환경과 코드 빌드 및 테스트 방법에 대해 알아봅니다.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 95%
+source-wordcount: '991'
+ht-degree: 98%
 
 ---
 
@@ -94,7 +94,7 @@ Cloud Manager는 특수 빌드 환경을 사용하여 코드를 빌드하고 테
 
 >[!NOTE]
 >
->2022년 4월부터 Oracle JDK는 AEM 애플리케이션의 개발과 운영을 위한 기본 JDK가 됩니다. Cloud Manager의 빌드 프로세스는 Maven 툴체인에 대체 옵션이 명시적으로 선택되어 있더라도 Oracle JDK를 사용하는 것으로 자동 전환됩니다. 2022년 4월 릴리스 노트를 참조하십시오.
+>2022년 4월부터 Oracle JDK는 AEM 애플리케이션의 개발과 운영을 위한 기본 JDK가 될 것입니다. Cloud Manager의 빌드 프로세스는 Maven 툴체인에 대체 옵션이 명시적으로 선택되어 있더라도 Oracle JDK를 사용하는 것으로 자동 전환됩니다. 2022년 4월 릴리스 정보를 참조하십시오.
 
 #### 대체 Maven 실행 JDK 버전 {#alternate-maven-jdk-version}
 
@@ -120,7 +120,7 @@ Cloud Manager는 특수 빌드 환경을 사용하여 코드를 빌드하고 테
 | `CM_PIPELINE_NAME` | 파이프라인 이름 |
 | `CM_PROGRAM_ID` | 숫자 프로그램 식별자 |
 | `CM_PROGRAM_NAME` | 프로그램 이름 |
-| `ARTIFACTS_VERSION` | 스테이징 또는 프로덕션 파이프라인의 경우 Cloud Manager에서 생성된 통합 버전 |
+| `ARTIFACTS_VERSION` | 스테이지 또는 프로덕션 파이프라인의 경우 Cloud Manager에서 생성된 통합 버전 |
 | `CM_AEM_PRODUCT_VERSION` | 릴리스 버전 |
 
 ### 파이프라인 변수 {#pipeline-variables}
@@ -229,4 +229,4 @@ Maven `pom.xml` 파일 내에서 사용할 경우, 일반적으로 다음과 유
 
 >[!TIP]
 >
->프론트엔드 빌드 환경에 대한 자세한 내용은 [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)을 참조하십시오.
+>프론트엔드 빌드 환경에 대한 자세한 내용은 [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).

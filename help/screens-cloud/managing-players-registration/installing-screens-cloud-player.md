@@ -2,9 +2,9 @@
 title: Screens에서 플레이어 설치 및 구성 as a Cloud Service
 description: 이 페이지에서는 Screens에서 as a Cloud Service으로 플레이어를 설치하고 구성하는 방법에 대해 설명합니다.
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '582'
 ht-degree: 1%
 
 ---
@@ -88,4 +88,4 @@ AEM Screens 플레이어에서 기본 재생 모니터링을 사용하면 다음
 
 ## 다음 단계 {#whats-next}
 
-이제 플레이어를 클라우드 모드로 설치 및 구성했으므로 Screens as a Cloud Service 여정을 계속하십시오. 문서 검토 [화면에서 플레이어 등록 as a Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) Screens Services 공급자에서 가져왔습니다.
+이제 플레이어를 클라우드 모드로 설치 및 구성했으므로 Screens as a Cloud Service 여정을 계속하십시오. 다음을 참조하십시오 [화면에서 플레이어 등록 as a Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) Screens Services 공급자에서 가져왔습니다.

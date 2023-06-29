@@ -4,9 +4,9 @@ description: Package Manager를 사용하여 패키지 관리를 하는 AE의 �
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3780'
+source-wordcount: '3775'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,7 @@ AEM as a Cloud Service 애플리케이션용으로 만들어진 콘텐츠 패키
 
 >[!NOTE]
 >
->패키지에는 콘텐츠만 포함될 수 있습니다. 모든 기능(예: 아래에 저장된 콘텐츠) `/apps`)은(는) 다음과 같아야 합니다. [cloud Manager에서 CI/CD 파이프라인을 사용하여 배포됩니다.](/help/implementing/cloud-manager/deploy-code.md)
+>패키지에는 콘텐츠만 포함될 수 있습니다. 모든 기능(예: 아래에 저장된 콘텐츠) `/apps`)은(는) 다음과 같아야 합니다. [Cloud Manager에서 CI/CD 파이프라인을 사용하여 배포됨](/help/implementing/cloud-manager/deploy-code.md).
 
 >[!IMPORTANT]
 >
@@ -43,7 +43,7 @@ AEM as a Cloud Service 애플리케이션용으로 만들어진 콘텐츠 패키
 >
 >해당 오류가 표시되면 설치를 재시도하지 마십시오. 설치가 배경에서 제대로 진행되고 있습니다. 설치가 다시 시작되면 여러 개의 동시 가져오기 프로세스로 인해 충돌이 일부 발생할 수 있습니다.
 
-AEMaaCS용 패키지를 관리하는 방법에 대한 자세한 내용은 문서를 참조하십시오. [AEM에 as a Cloud Service 배포](/help/implementing/deploying/overview.md) 배포 사용 안내서에서 참조하십시오.
+AEMaaCS용 패키지를 관리하는 방법에 대한 자세한 내용은 [AEM에 as a Cloud Service 배포](/help/implementing/deploying/overview.md) 배포 사용 안내서에서 참조하십시오.
 
 ## 패키지 크기 {#package-size}
 
@@ -57,7 +57,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 네트워크 트래픽이 가변적이고 항상 알려진 최대 이론적 값보다 작으므로 온라인 인터넷 연결 속도 테스트 도구를 사용해 보십시오.
 
-인터넷 속도는 업로드와 다운로드의 경우 거의 항상 다릅니다. 패키지를 업로드하고 다운로드해야 한다고 가정할 경우, 계산에서 더 낮은 값(일반적으로 업로드 속도)을 사용해야 합니다.
+인터넷 속도는 업로드와 다운로드의 경우 거의 항상 다릅니다. 패키지를 업로드하고 다운로드해야 한다고 가정할 경우 계산에서 더 낮은 값(일반적으로 업로드 속도)을 사용해야 합니다.
 
 ### 예 {#example}
 
@@ -110,7 +110,7 @@ Package Manager 는 네 가지 주요 기능 영역으로 나뉩니다.
 * **활동 로그** - 이 패널은 처음에 최소화되며, 패키지를 빌드하거나 설치할 때와 같은 패키지 관리자의 활동을 자세히 설명하도록 확장됩니다. [작업 로그] 탭에는 다음과 같은 추가 버튼이 있습니다.
    * **로그 지우기**
    * **표시 / 숨기기**
-* **도구 모음** - 도구 모음에는 왼쪽 탐색 패널 및 패키지 목록에 대한 새로 고침 버튼과 패키지 검색, 생성 및 업로드를 위한 버튼이 포함되어 있습니다.
+* **도구 모음** - 도구 모음에는 왼쪽 탐색 패널 및 패키지 목록에 대한 새로 고침 버튼과 패키지를 검색, 생성 및 업로드하기 위한 버튼이 포함되어 있습니다.
 
 ![패키지 관리자 UI](assets/package-manager-ui.png)
 

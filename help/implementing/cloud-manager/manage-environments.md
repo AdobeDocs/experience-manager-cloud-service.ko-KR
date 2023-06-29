@@ -2,9 +2,9 @@
 title: 환경 관리
 description: 만들 수 있는 환경 유형과 Cloud Manager 프로젝트용으로 환경을 만드는 방법에 대해 알아봅니다.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2274'
 ht-degree: 48%
 
 ---
@@ -86,7 +86,7 @@ ht-degree: 48%
 1. 다음에서 **추가 게시 영역** 드롭다운에서 추가 영역을 선택합니다.
 1. 드롭다운 아래에 선택한 지역을 추가하여 선택 사항을 표시합니다.
    * 을(를) 탭하거나 클릭합니다 `X` 선택한 영역 옆에 있으므로 선택을 취소할 수 있습니다.
-1. **추가 게시 지역** 드롭다운에서 다른 지역을 선택하여 다른 지역을 추가합니다.
+1. 에서 다른 지역 선택 **추가 게시 영역** 드롭다운을 클릭하여 다른 지역을 추가합니다.
 1. 환경을 만들 준비가 되면 **저장**&#x200B;을 탭하거나 클릭합니다.
 
 ![여러 지역 선택](assets/select-multiple-regions.png)
@@ -157,13 +157,13 @@ Cloud Manager는 각 AEM as a Cloud Service 환경에 미리보기 서비스(추
 
 ![미리보기 서비스 및 해당 허용 목록](assets/preview-ip-allow.png)
 
-필요한 권한이 있는 사용자는 미리보기 서비스 URL을 공유하기 전에 다음 단계를 완료하여 해당 URL에 액세스할 수 있어야 합니다.
+필요한 권한이 있는 사용자는 미리보기 서비스 URL을 공유하기 전에 다음 단계를 완료해야 이 URL에 정상적으로 액세스할 수 있습니다.
 
 1. 적절한 IP 허용 목록을 만들어 미리보기 서비스에 적용하고 `Preview Default [<envId>]` 허용 목록
 
    * 다음을 참조하십시오 [IP 허용 목록 적용 및 적용 취소](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 을 참조하십시오.
 
-1. **IP 허용 목록** 업데이트 워크플로를 사용하여 기본 IP를 제거하고 적절하게 IP를 추가합니다. 자세한 내용은 [IP 허용 목록 관리](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)를 참조하십시오.
+1. **IP 허용 목록** 업데이트 워크플로를 사용하여 기본 IP를 제거하고 적절하게 IP를 추가합니다. 다음을 참조하십시오 [IP 허용 목록 관리](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) 자세히 알아보십시오.
 
 미리보기 서비스에 대한 액세스가 잠금 해제된 후에는 미리보기 서비스 이름 앞의 잠금 아이콘이 더 이상 표시되지 않습니다.
 
@@ -175,7 +175,7 @@ Cloud Manager는 각 AEM as a Cloud Service 환경에 미리보기 서비스(추
 
 ## 환경 업데이트 {#updating-dev-environment}
 
-클라우드 네이티브 서비스인 프로덕션 프로그램 내의 스테이징 및 프로덕션 환경 업데이트는 Adobe에서 자동으로 관리합니다.
+클라우드 네이티브 서비스인 프로덕션 프로그램 내의 스테이지 및 프로덕션 환경 업데이트는 Adobe에서 자동으로 관리합니다.
 
 그러나 샌드박스 프로그램의 개발 환경 및 환경에 대한 업데이트는 프로그램 내에서 관리됩니다. 이러한 환경에서 공개적으로 사용 가능한 최신 AEM 버전을 실행하지 않는 경우 의 상태는 **환경** 다음에 대한 카드 **개요** 프로그램의 화면 **업데이트 사용 가능**.
 
@@ -216,7 +216,7 @@ Cloud Manager는 파이프라인과 함께 마지막으로 배포된 버전보�
 
 ## 개발 환경 삭제 {#deleting-environment}
 
-필수 권한이 있는 사용자는 개발 환경을 삭제할 수 있습니다.
+필요한 권한이 있는 사용자는 개발 환경을 삭제할 수 있습니다.
 
 다음에서 **개요** 의 프로그램 화면 **환경** 카드를 삭제하려면 개발 환경의 줄임표 버튼을 클릭합니다.
 

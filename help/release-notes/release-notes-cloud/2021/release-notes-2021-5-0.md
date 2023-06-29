@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.5.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.5.0 릴리스 정보입니다.'
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 48%
+source-wordcount: '1353'
+ht-degree: 46%
 
 ---
 
@@ -108,7 +108,7 @@ AEM as a Cloud Service 2021.5.0의 Cloud Manager 릴리스 일자는 2021년 5�
 
 * 이제 PackageOverlaps 품질 규칙이 동일한 패키지가 여러 번 배포된 경우를 감지합니다. 즉, 배포된 동일한 패키지 세트의 여러 임베드된 위치에 있습니다.
 
-* 이제 공개 API의 저장소 끝점에 Git URL이 포함됩니다.
+* 이제 공개 API의 저장소 엔드포인트에 Git URL이 포함됩니다.
 
 * Cloud Manager 사용자가 다운로드한 배포 로그는 보다 통찰력이 있으며 실패 및 성공 시나리오에 대한 세부 정보를 포함합니다.
 

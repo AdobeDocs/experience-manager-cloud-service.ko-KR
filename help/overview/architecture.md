@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 아키텍처 소개
 description: Adobe Experience Manager as a Cloud Service 아키텍처 소개.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 1e9ca4f18c3698dbf4bbc0f104559e14f429e28e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1827'
-ht-degree: 100%
+source-wordcount: '1826'
+ht-degree: 99%
 
 ---
 
@@ -65,7 +65,7 @@ AEM as a Cloud Service은 다음과 같은 작업을 수행하는 오케스트�
 ## 환경 {#environments}
 
 >[!NOTE]
->자세한 내용은 [배포 - 실행 모드](/help/implementing/deploying/overview.md#runmodes)를 참조하십시오.
+>자세한 내용은 [배포 - 실행 모드](/help/implementing/deploying/overview.md#runmodes)
 
 AEM as a Cloud Service는 개별 인스턴스로서 사용할 수 있게 되었으며, 이때 각 인스턴스는 전체 AEM 환경을 나타냅니다.
 
@@ -77,7 +77,7 @@ AEM as a Cloud Service에서 사용할 수 있는 환경에는 세 가지 유형
 
 * **개발 환경**: 개발자가 스테이지 및 프로덕션 환경과 동일한 런타임 조건으로 AEM 애플리케이션을 구현할 수 있도록 해 줍니다.
 
-  자세한 내용은 [환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ko-kr#using-cloud-manager)를 참조하십시오.
+  다음을 참조하십시오 [환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ko-kr#using-cloud-manager) 을 참조하십시오.
 
 * **신속한 개발 환경**: 신규 또는 기존 코드 디버깅을 위한 신속한 개발 반복이 가능합니다.
 

@@ -2,9 +2,9 @@
 title: 적합한 사람, 적합한 역할
 description: 적합한 사람, 적합한 역할
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '831'
 ht-degree: 82%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 82%
 
 디지털 거버넌스는 디지털에 초점을 맞춘 작업을 누가 담당하고 누가 수행하는지 파악하는 것에서부터 시작합니다. 필요한 기술을 더하기 위해 전략적인 채용을 해야 할 수도 있습니다. 훨씬 더 큰 과제는 새로운 기술에 대한 폭넓은 지원을 구축하고 사람들이 새로운 작업 방식에 익숙해지도록 돕는 등 문화 변화를 주도하는 것입니다. 그러한 노력의 핵심 부분은 사람들이 서로 배우고 지원할 수 있는 디지털 커뮤니티를 형성하는 것입니다.
 
-지금은 Adobe Experience Manager 배포 구축에 도움이 되는 적합한 인력을 배치하는 데 집중하겠습니다. 각 핵심 제품(Experience Manager Sites 및 Experience Manager Assets)에 대해 사용자가 수행해야 할 역할 목록과 함께 다양한 역할을 효율적으로 수행할 수 있는 기술, 전문 지식 수준 및 속성을 제공했습니다.
+지금은 Adobe Experience Manager 배포 구축에 도움이 되는 적합한 인력을 배치하는 데 중점을 두고 있습니다. 각 핵심 제품(Experience Manager Sites 및 Experience Manager Assets)에 대해 Adobe은 사용자가 수행해야 하는 역할 목록과 함께 다양한 역할을 효율적으로 수행할 수 있는 기술, 전문 지식 수준 및 속성을 제공했습니다.
 
 이번 주 귀하의 과제는 구현 팀과 함께 두 목록을 검토하고 각 역할에 대해 관련 자격 조건을 갖춘 인력이 있는지 확인하는 것입니다.
 
@@ -54,7 +54,7 @@ ht-degree: 82%
 
 설계자부터 스크럼 마스터까지, DAM 라이브러리 관리자를 포함한 이 팀의 모든 역할은 없어서는 안 될 구성원입니다.
 
-Adobe Experience Manager Assets 구현을 성공적으로 실행하기 위해 필요한 대부분의 인력을 갖추고 있을 수 있습니다. 이 목록은 Adobe Experience Manager Sites용 목록과 유사하지만, 디지털 에셋을 쉽게 찾을 수 있도록 조직하고 레이블을 지정하려면 라이브러리 관리자가 필요합니다.
+Adobe Experience Manager Assets 구현을 성공적으로 실행하기 위해 필요한 대부분의 인력을 갖추고 있을 수 있습니다. 이 목록은 Adobe Experience Manager Sites용 목록과 유사하며, 디지털 에셋을 쉽게 찾을 수 있도록 조직하고 레이블을 지정하려면 라이브러리 관리자가 필요합니다.
 
 | 역할 | 기술 | 능력 수준 | 자질 |
 |--- |--- |--- |--- |

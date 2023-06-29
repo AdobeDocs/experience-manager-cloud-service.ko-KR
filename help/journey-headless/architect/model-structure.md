@@ -2,10 +2,10 @@
 title: AEM에서의 콘텐츠 조각 모델 만들기에 대해 알아보기
 description: 콘텐츠 조각 모델을 사용하여 Headless CMS용 콘텐츠를 모델링하는 개념 및 메커니즘에 대해 알아봅니다.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 89%
+source-wordcount: '687'
+ht-degree: 92%
 
 ---
 
@@ -45,7 +45,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 이를 선택하면 모델 위치로 이동하고 **만들기**&#x200B;를 선택합니다. 여기에서 여러 주요 세부 정보를 입력할 수 있습니다.
 
-**모델 활성화** 옵션은 기본적으로 활성화됩니다. 즉, 모델을 저장하는 즉시 (콘텐츠 조각 만들기에서) 사용할 수 있습니다. 필요한 경우 비활성화할 수 있음. 나중에 기존 모델을 활성화(또는 비활성화)할 수 있는 기회가 있습니다.
+**모델 활성화** 옵션은 기본적으로 활성화됩니다. 즉, 모델은 저장하는 즉시 사용할 수 있습니다(콘텐츠 조각 생성 시). 필요한 경우 비활성화할 수 있음. 나중에 기존 모델을 활성화(또는 비활성화)할 수 있는 기회가 있습니다.
 
 ![콘텐츠 조각 모델 만들기](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
 
@@ -63,7 +63,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ![필드 정의](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 
-데이터 유형이 추가되면 해당 필드에 대한 **속성**&#x200B;을 정의해야 합니다. 이는 사용 중인 유형에 따라 다릅니다. 예:
+데이터 유형을 추가한 후 다음을 정의해야 합니다. **속성** 해당 필드에 대해. 이는 사용 중인 유형에 따라 다릅니다. 예:
 
 ![데이터 속성](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
 
@@ -73,7 +73,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ### 콘텐츠 작성자 {#your-content-authors}
 
-콘텐츠 작성자는 모델 생성에 사용된 실제 데이터 유형 및 속성을 확인할 수 없습니다. 즉, 특정 필드를 완료하는 방법에 대한 도움말 및 정보를 제공해야 할 수도 있습니다. 기본 정보에는 필드 레이블 및 기본값을 사용할 수 있지만 복잡한 정보에는 프로젝트 관련 설명서를 고려해야 합니다.
+콘텐츠 작성자가 모델을 만드는 데 사용한 실제 데이터 유형 및 속성을 볼 수 없습니다. 즉, 특정 필드를 완료하는 방법에 대한 도움말 및 정보를 제공해야 할 수도 있습니다. 기본 정보에는 필드 레이블 및 기본값을 사용할 수 있지만 복잡한 정보에는 프로젝트 관련 설명서를 고려해야 합니다.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 >[!NOTE]
 >
->작성자가 모델이 아직 게시되지 않은 콘텐츠 조각을 게시하려고 하면 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
+>작성자가 모델이 아직 게시되지 않은 콘텐츠 조각을 게시하려는 경우, 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
 
 모델이 게시되는 즉시 작성자의 읽기 전용 모드로 *잠깁니다*. 목표는 특히 게시 환경에서 기존 GraphQL 스키마 및 쿼리에 오류를 발생시킬 수 있는 변경 사항을 방지하는 것입니다. 콘솔에 **잠김**&#x200B;으로 표시됩니다.
 
@@ -120,7 +120,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
       * [콘텐츠 조각 모델 활성화 또는 비활성화](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
 
-      * [에셋 폴더에서 콘텐츠 조각 모델 허용](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [자산 폴더에서 콘텐츠 조각 모델 허용](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
       * [콘텐츠 조각 모델 삭제](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
 

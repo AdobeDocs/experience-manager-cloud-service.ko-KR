@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 9%
@@ -87,7 +87,7 @@ Media Library 기능을 사용하려면 기본값을 사용합니다 [!DNL Exper
 
 <!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
 
-As per PM, we must avoid stating such a list, as we don't have a list that makes sense in Cloud Service.
+As per PM, we must avoid stating such a list, as we do not have a list that makes sense in Cloud Service.
 -->
 
 >[!IMPORTANT]
@@ -100,14 +100,14 @@ As per PM, we must avoid stating such a list, as we don't have a list that makes
 
 **추가 참조**
 
-* [에셋 번역](translate-assets.md)
+* [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [에셋이 지원되는 파일 형식](file-format-support.md)
-* [에셋 검색](search-assets.md)
-* [연결된 에셋](use-assets-across-connected-assets-instances.md)
-* [에셋 보고서](asset-reports.md)
+* [자산이 지원되는 파일 형식](file-format-support.md)
+* [자산 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [자산 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
-* [에셋 다운로드](download-assets-from-aem.md)
+* [자산 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
@@ -117,4 +117,3 @@ As per PM, we must avoid stating such a list, as we don't have a list that makes
 >
 >* [의 DAM 기능 [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html)
 >* [[!DNL Experience Manager] as a [!DNL Cloud Service] 제품 설명](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
-

@@ -2,10 +2,10 @@
 title: 페이지 템플릿
 description: 페이지 템플릿은 새 페이지의 기반으로 사용되는 페이지를 만들 때 사용됩니다
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3294'
-ht-degree: 5%
+ht-degree: 8%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 5%
    **구조**
 
    * 이 구조를 통해 템플릿의 구성 요소와 콘텐츠를 정의할 수 있습니다.
-   * 템플릿 구조에 정의된 구성 요소는 결과 페이지에서 이동하거나 결과 페이지에서 삭제할 수 없습니다.
+   * 템플릿 구조에 정의된 구성 요소는 결과 페이지 안에서 이동하거나 결과 페이지에서 삭제할 수 없습니다.
    * 페이지 작성자가 구성 요소를 추가 및 제거할 수 있도록 하려면 템플릿에 단락 시스템을 추가하십시오.
    * 초기 콘텐츠를 정의할 수 있도록 하려면 구성 요소 잠금을 해제했다가 다시 잠글 수 있습니다.
 
@@ -66,9 +66,9 @@ ht-degree: 5%
 
    * 콘텐츠 정책은 구성 요소의 디자인 속성을 정의합니다.
 
-      * 예를 들어 사용 가능한 구성 요소 또는 최소/최대 차원이 있습니다.
+      * 예: 사용 가능한 구성 요소 또는 최소/최대 크기.
 
-   * 템플릿과 템플릿으로 만든 페이지에 적용할 수 있습니다.
+   * 이러한 속성은 템플릿(및 템플릿으로 만든 페이지)에 적용될 수 있습니다.
 
    템플릿 작성자가 정책을 정의하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
 
@@ -197,7 +197,7 @@ ht-degree: 5%
 
 ### 구성 브라우저 사용 {#using-the-configuration-browser}
 
-1. 다음으로 이동 **전역 탐색** -> **도구** > [**구성 브라우저**.](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+1. 다음으로 이동 **전역 탐색** -> **도구** > [**구성 브라우저**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
    기존 폴더는 다음을 포함하여 왼쪽에 나열됩니다. `global` 폴더를 삭제합니다.
 
@@ -304,7 +304,7 @@ CRXDE를 통해 또는 구성 브라우저를 통해 템플릿 폴더가 만들�
 
 * AEM에서는 HTML5 페이지 및 적응형 양식 페이지와 같이 바로 사용할 수 있는 다양한 템플릿 유형을 제공합니다.
 
-   * 추가 예는 의 일부로 제공됩니다. [WKND 튜토리얼.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+   * 추가 예는 의 일부로 제공됩니다. [WKND 자습서](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 * 템플릿 유형은 일반적으로 개발자에 의해 정의됩니다.
 
@@ -328,7 +328,7 @@ CRXDE를 통해 또는 구성 브라우저를 통해 템플릿 폴더가 만들�
 
 >[!CAUTION]
 >
->템플릿 유형은 올바른 폴더 구조를 준수해야 합니다(예: `/settings/wcm/...`), 그렇지 않으면 템플릿 유형을 찾을 수 없습니다.
+>템플릿 유형은 올바른 폴더 구조를 준수해야 합니다(즉, `/settings/wcm/...`), 그렇지 않으면 템플릿 유형을 찾을 수 없습니다.
 
 <!--
 ### Template Type and Mobile Device Groups {#template-type-and-mobile-device-groups-br}
@@ -459,7 +459,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 ### 컨텐츠 정책 {#content-policies}
 
-콘텐츠 정책은 구성 요소의 디자인 속성을 정의합니다. 예를 들어 사용 가능한 구성 요소 또는 최소/최대 차원이 있습니다. 템플릿과 템플릿으로 만든 페이지에 적용할 수 있습니다. 템플릿 편집기에서 컨텐츠 정책을 만들고 선택할 수 있습니다.
+콘텐츠 정책은 구성 요소의 디자인 속성을 정의합니다. 예: 사용 가능한 구성 요소 또는 최소/최대 크기. 이러한 속성은 템플릿(및 템플릿으로 만든 페이지)에 적용될 수 있습니다. 템플릿 편집기에서 컨텐츠 정책을 만들고 선택할 수 있습니다.
 
 * 속성 `cq:policy`, `root` 노드
   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
@@ -538,7 +538,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 * **구성 요소**:
 
    * 페이지 구성 요소는 `structure/jcr:content` 이 있는 템플릿의 트리 `jcr:content` 페이지 트리.
-      * 페이지 구성 요소를 사용하면 작성자는 편집 가능한 것으로 플래그가 지정된 템플릿 구조의 노드 및 하위 노드만 편집할 수 있습니다.
+      * 페이지 구성 요소를 사용하면 작성자는 편집 가능 (및 모든 하위 항목)으로 플래그가 지정된 템플릿 구조의 노드만 편집할 수 있습니다.
       * 페이지에서 구성 요소를 렌더링할 때 해당 구성 요소의 상대 경로는 `jcr:content` 노드, 아래에 있는 동일한 경로 `policies/jcr:content` 그러면 템플릿의 노드가 검색됩니다.
          * 다음 `cq:policy` 이 노드의 속성은 실제 콘텐츠 정책을 가리킵니다(즉, 구성 요소에 대한 디자인 구성을 보유함).
             * 이렇게 하면 동일한 콘텐츠 정책 구성을 다시 사용하는 여러 템플릿을 가질 수 있습니다.

@@ -4,10 +4,10 @@ description: 액션 센터를 활용하여 인시던트 및 기타 중요한 정
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '703'
-ht-degree: 94%
+source-wordcount: '701'
+ht-degree: 96%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 94%
 >[!NOTE]
 >이 기능은 릴리스되지 않았습니다.
 
-AEM as Cloud Service는 최적화에 즉각적인 조치와 사전 알림 추천이 필요한 중대 인시던트가 발생하면 액션 센터 이메일 알림을 전송합니다. 예로는 차단된 대기열 또는 만료되는 자격 증명 세트가 있습니다. 액션 센터 알림 유형의 전체 세트는 [아래 표](#supported-notification-types)에서 볼 수 있으며 시간이 지남에 따라 확장됩니다.
+AEM as Cloud Service은 즉각적인 조치가 필요한 중요한 장애 발생 시 작업 센터 이메일 알림을 보내고 최적화를 위한 사전 권장 사항을 보냅니다. 예로는 차단된 대기열 또는 만료되는 자격 증명 세트가 있습니다. 액션 센터 알림 유형의 전체 세트는 [아래 표](#supported-notification-types)에서 볼 수 있으며 시간이 지남에 따라 확장됩니다.
 
 액션 센터 이메일 알림이 수신되면 클릭하여 AEM as a Cloud Service의 액션 센터를 열 수 있으며, 이때 고객이 취해야 할 조치를 설명하는 추가 컨텍스트를 표시하는 팝업이 함께 열립니다.
 
-방금 클릭한 이메일 알림에 대한 정보를 표시하는 것 외에도 액션 센터는 현재 및 이전 알림 세트를 보고 관리할 수 있는 허브 역할을 합니다. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers don't find it) -->
+방금 클릭한 이메일 알림에 대한 정보를 표시하는 것 외에도 액션 센터는 현재 및 이전 알림 세트를 보고 관리할 수 있는 허브 역할을 합니다. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
 액션 센터에 표시되는 두 가지 높은 수준의 알림 범주가 있습니다.
 
@@ -46,7 +46,7 @@ AEM as Cloud Service는 최적화에 즉각적인 조치와 사전 알림 추천
 
 사용자는 **자세히 알아보기** 링크를 클릭하여 이 문서로 이동합니다. 아래에서 [지원되는 알림 유형 표](#supported-notification-types)와 같이 알림 유형을 참조할 수 있으며, 이 표는 어떤 조치를 취해야 하는지 지침을 제공합니다.
 
-액션 센터에서 다른 최근 알림 목록을 볼 수 있습니다. [작업] 목록을 사용하면 조직에서 작업을 인식하고 있음을 Adobe에게 알리는 알림을 확인하고 나중에 해결 조치가 취해진 경우 알림을 해결하는 것이 좋습니다.
+액션 센터에서 다른 최근 알림 목록을 볼 수 있습니다. 조직이 작업을 인식하고 있음을 Adobe에 알리고 나중에 수정 조치가 취해졌을 때 알림을 해결하기 위해 작업 목록을 사용하여 알림을 확인하는 것이 좋습니다.
 
 ![알림 목록](/help/operations/assets/notification-list.png)
 
@@ -56,7 +56,7 @@ AEM as Cloud Service는 최적화에 즉각적인 조치와 사전 알림 추천
 
 ![지원에 문의 2](/help/operations/assets/contact-support2.png)
 
-모든 지원 티켓과 마찬가지로 지원 티켓이 [Adobe Admin Console의 지원 사례 탭](https://helpx.adobe.com/kr/enterprise/using/support-for-enterprise.html)에 나타나며, 여기에서 지원 티켓을 추적하고 댓글을 추가할 수 있습니다.
+모든 지원 티켓과 마찬가지로 지원 티켓이 [Adobe Admin Console의 지원 사례 탭](https://helpx.adobe.com/enterprise/using/support-for-enterprise.html)에 나타나며, 여기에서 지원 티켓을 추적하고 댓글을 추가할 수 있습니다.
 
 ![Admin Console 지원](/help/operations/assets/admin-console-support.png)
 

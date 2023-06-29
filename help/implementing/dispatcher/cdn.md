@@ -3,9 +3,9 @@ title: AEM as a Cloud Service의 CDN
 description: AEM as a Cloud Service의 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1022'
 ht-degree: 25%
 
 ---
@@ -34,7 +34,7 @@ AEM 관리 CDN은 대부분의 고객 성능 및 보안 요구 사항을 충족�
 
 기본적으로 AEM 관리 CDN 설정의 경우 모든 공개 트래픽은 프로덕션 및 비프로덕션(개발 및 스테이지) 환경 모두에 대해 게시 서비스로 이동할 수 있습니다. Cloud Manager 사용자 인터페이스를 통해 특정 환경에 대한 게시 서비스로 트래픽을 제한할 수 있습니다(예: IP 주소 범위별로 스테이징 제한).
 
-자세한 내용은 [IP 허용 목록 관리](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)를 참조하십시오.
+다음을 참조하십시오 [IP 허용 목록 관리](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) 자세히 알아보십시오.
 
 >[!CAUTION]
 >

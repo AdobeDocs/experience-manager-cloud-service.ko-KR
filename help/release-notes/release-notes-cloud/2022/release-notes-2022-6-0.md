@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.6.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.6.0 릴리스 정보입니다.'
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 87%
+source-wordcount: '639'
+ht-degree: 79%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 87%
 
 ### [!DNL Sites]의 새로운 기능 {#sites-features}
 
-* 이제 새로운 [사용자 인터페이스](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)를 사용하여 콘텐츠 관리자 및 콘텐츠 작성자가 Headless 사용 사례에 대한 콘텐츠 조각을 효율적으로 관리(게시, 게시 취소, 복사, 이동 등 작업 수행)하고, 검색/필터링하고, 만들 수 있습니다.
+* 새 항목 [사용자 인터페이스](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) 이제 콘텐츠 관리자 및 콘텐츠 작성자가 Headless 사용 사례에 대한 콘텐츠 조각을 효율적으로 관리(게시, 게시 취소, 복사, 이동 등 작업 수행)하고, 검색/필터링하고, 만들 수 있도록 사용할 수 있습니다.
 
   ![콘텐츠 조각 콘솔](/help/release-notes/assets/cf-ui.png)
 
@@ -67,7 +67,7 @@ Experience Manager Assets는 Adobe Sensei AI 기능을 사용하여 이제 [이�
 
 ![제품 관리실 속성 개요](/help/assets/CIF/product_cockpit_properties_overview.png)
 
-* I/O Runtime의 서드파티 커넥터에 대한 호환성 및 견고함이 개선되었습니다.
+* I/O Runtime의 서드파티 커넥터에 대한 호환성 및 견고성이 개선되었습니다.
 
 * GQL 클라이언트 구성 덮어쓰기(예: 사용자 지정 캐싱 비헤이비어 설정)에 대한 지원이 개선되었습니다.
 

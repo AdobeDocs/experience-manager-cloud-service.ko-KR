@@ -2,10 +2,10 @@
 title: 콘텐츠 조각 - 구성 브라우저 (에셋 - 콘텐츠 조각)
 description: 구성 브라우저에서 콘텐츠 조각 기능을 활성화하는 방법을 알아봅니다.
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '358'
-ht-degree: 27%
+ht-degree: 30%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 27%
 콘텐츠 조각 기능을 활성화하려면 다음을 수행해야 합니다.
 
 * 구성 브라우저를 통해 콘텐츠 조각 기능 사용 활성화
-* 에셋 폴더에 구성 적용
+* 자산 폴더에 구성 적용
 
 ### 구성 브라우저에서 콘텐츠 조각 기능 활성화 {#enable-content-fragment-functionality-in-configuration-browser}
 
@@ -59,8 +59,8 @@ ht-degree: 27%
 1. **만들기**&#x200B;를 사용하여 대화 상자를 열고 여기에서
 
    1. **제목**&#x200B;을 지정합니다.
-   1. 다음 **이름** 는 저장소의 노드 이름이 됩니다.
-      * 제목을 기반으로 자동으로 생성되고 이에 따라 조정됩니다 [AEM 이름 지정 규칙입니다.](/help/implementing/developing/introduction/naming-conventions.md)
+   1. **이름**&#x200B;은 저장소의 노드 이름이 됩니다.
+      * 제목을 기반으로 자동으로 생성되고 이에 따라 조정됩니다 [AEM 이름 지정 규칙](/help/implementing/developing/introduction/naming-conventions.md).
       * 필요한 경우 조정할 수 있습니다.
    1. 사용을 활성화하려면 다음을 선택합니다.
       * **콘텐츠 조각 모델**

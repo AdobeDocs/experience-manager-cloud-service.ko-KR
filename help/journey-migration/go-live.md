@@ -2,9 +2,9 @@
 title: 실행
 description: 코드 및 콘텐츠가 클라우드에 준비되면 마이그레이션을 수행하는 방법을 알아봅니다
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1710'
 ht-degree: 4%
 
 ---
@@ -113,7 +113,7 @@ AEM 소스의 로드는 추출 단계 동안 더 커집니다. 다음 사항에 
 
 ## 실행 체크리스트 {#Go-Live-Checklist}
 
-이 활동 목록을 검토하여 원활하고 성공적인 마이그레이션을 수행하는지 확인하십시오.
+이 활동 목록을 검토하여 원활하고 성공적인 마이그레이션을 수행하도록 하십시오.
 
 * 기능 및 UI 테스트를 통해 엔드 투 엔드 프로덕션 파이프라인을 실행하여 **항상 최신** AEM 제품 경험입니다. 다음 리소스를 참조하십시오.
    * [AEM 버전 업데이트](/help/implementing/deploying/aem-version-updates.md)

@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager의 준비 단계
 description: 이 페이지에서는 Cloud Acceleration Manager의 준비 단계에 대한 개요를 제공합니다.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1049'
 ht-degree: 5%
 
 ---
@@ -62,7 +62,7 @@ Cloud Acceleration Manager에서 프로젝트를 생성했으면 이제 준비 �
 
    ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
-1. CAM의 모범 사례 분석 대시보드를 검토하고 탐색합니다. 아래 섹션을 참조하십시오 [모범 사례 분석 보고서 검토](#analysis-report) 을 참조하십시오.
+1. CAM의 모범 사례 분석 대시보드를 검토하고 탐색합니다. 다음을 참조하십시오 [모범 사례 분석 보고서 검토](#analysis-report) 을 참조하십시오.
 
    >[!NOTE]
    >새 보고서를 업로드하면 모든 평가가 재설정됩니다.
@@ -158,7 +158,7 @@ Cloud Acceleration Manager에서 프로젝트를 생성했으면 이제 준비 �
 ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->을(를) 참조하십시오 [모범 사례 분석기 보고서 해석](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) 결과 카테고리 및 중요도 수준에 대해 알아봅니다.
+>다음을 참조하십시오 [모범 사례 분석기 보고서 해석](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) 결과 카테고리 및 중요도 수준에 대해 알아봅니다.
 
 #### 모범 사례 평가 {#best-practices-assessment}
 

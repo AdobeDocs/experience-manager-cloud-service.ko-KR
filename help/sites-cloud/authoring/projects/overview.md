@@ -2,10 +2,10 @@
 title: 프로젝트
 description: 프로젝트를 사용하면 리소스를 하나의 엔티티로 그룹화할 수 있습니다. 이러한 엔티티의 공통 공유 환경을 통해 프로젝트를 쉽게 관리할 수 있습니다
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
-source-git-commit: 8ea043b4b6424d6922c41c143ca74fd25ac60cf8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 71%
+source-wordcount: '1255'
+ht-degree: 66%
 
 ---
 
@@ -95,7 +95,7 @@ ht-degree: 71%
 
 ![링크](/help/sites-cloud/authoring/assets/project-links.png)
 
-링크 이름을 알아채기 쉬운 이름으로 지정할 수도 있고 썸네일을 변경할 수도 있습니다.
+링크 이름을 알아채기 쉬운 이름으로 지정하고 썸네일을 변경할 수 있습니다.
 
 ![링크 추가](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
@@ -105,7 +105,7 @@ ht-degree: 71%
 
 ![프로젝트 정보](/help/sites-cloud/authoring/assets/project-info.png)
 
-팀원은 팀 타일뿐만 아니라 이 타일에서도 할당 및 삭제되거나 자신의 역할을 변경할 수 있습니다.
+팀원은 이 타일 및 팀 타일에서 할당 및 삭제되거나 역할이 변경될 수 있습니다.
 
 ![프로젝트에 팀원 추가](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -137,11 +137,11 @@ ht-degree: 71%
 
 특정 워크플로를 따르도록 프로젝트를 지정할 수 있습니다. 선택하는 프로젝트에 따라 다른 워크플로를 사용할 수 있습니다.
 
-이에 대해서는 [프로젝트 워크플로 작업](/help/sites-cloud/authoring/projects/workflows.md)에 설명되어 있습니다.
+이에 대해서는 다음에 설명되어 있습니다. [프로젝트 워크플로를 사용하여 작업](/help/sites-cloud/authoring/projects/workflows.md).
 
 ### 론치 {#launches}
 
-론치 타일에는 [론치 요청 워크플로](/help/sites-cloud/authoring/projects/workflows.md)에서 요청한 론치가 표시됩니다.
+론치 타일에는 [론치 요청 워크플로](/help/sites-cloud/authoring/projects/workflows.md).
 
 ![론치](/help/sites-cloud/authoring/assets/project-launches.png)
 

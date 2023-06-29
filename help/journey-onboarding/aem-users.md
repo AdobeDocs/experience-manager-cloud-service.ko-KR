@@ -4,10 +4,10 @@ description: 시스템 관리자가 필요한 클라우드 리소스를 설정�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 100%
+source-wordcount: '579'
+ht-degree: 96%
 
 ---
 
@@ -71,7 +71,7 @@ AEM 작성자는 AEM에 로그인해야 콘텐츠 생성을 시작할 수 있습
 * Cloud Manager 액세스
 * AEM as a Cloud Service의 인스턴스 로그인
 
-축하합니다! 이제 AEM 콘텐츠를 작성하고 게시할 준비가 되었습니다. AEM에서 콘텐츠를 작성하고 관리하는 방법에 대한 자세한 내용은 [추가 리소스](#additional-resources) 섹션을 참조하십시오.
+축하합니다! 이제 AEM 콘텐츠를 작성하고 게시할 준비가 되었습니다. 다음을 참조하십시오 [추가 리소스](#additional-resources) 섹션 을 참조하십시오. AEM에서 콘텐츠를 작성하고 관리하는 방법에 대한 자세한 내용.
 
 개발자와 배포 관리자가 AEM as a Cloud Service에 대한 사용자 정의 애플리케이션을 만들고 관리하는 방법에 관심이 있는 경우 온보딩 여정의 두 번째 선택적 부분인 [AEM 개발자 작업](developers.md)을 계속 진행하십시오.
 

@@ -2,10 +2,10 @@
 title: 프로그램 및 프로그램 유형
 description: Cloud Manager의 계층 구조와 다양한 유형의 프로그램이 해당 구조에 어떻게 적합하고 어떻게 다른지 알아봅니다.
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '531'
-ht-degree: 100%
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+workflow-type: tm+mt
+source-wordcount: '521'
+ht-degree: 90%
 
 ---
 
@@ -35,7 +35,7 @@ Cloud Manager 프로그램은 자체 git 저장소와 함께 자동 프로비저
 
 Cloud Manager git 저장소에 액세스하려면 사용자는 명령줄 도구와 함께 git 클라이언트, 독립 실행형 시각적 git 클라이언트 또는 Eclipse, IntelliJ, NetBeans와 같은 사용자가 선택한 IDE를 사용해야 합니다.
 
-git 클라이언트가 설정되면 Cloud Manager UI에서 git 저장소를 관리할 수 있습니다. Cloud Manager UI를 사용하여 git을 관리하는 방법에 대한 자세한 내용은 [Git 액세스](/help/implementing/cloud-manager/managing-code/accessing-repos.md) 문서를 참조하십시오.
+git 클라이언트가 설정되면 Cloud Manager 사용자 인터페이스에서 git 저장소를 관리할 수 있습니다. Cloud Manager 사용자 인터페이스를 사용하여 git을 관리하는 방법에 대한 자세한 내용은 [Git 액세스](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 AEM 클라우드 애플리케이션 개발을 시작하려면 Cloud Manager 저장소에서 로컬 컴퓨터의 위치로 체크아웃하여 애플리케이션 코드의 로컬 복사본을 만들어야 합니다.
 
@@ -56,8 +56,8 @@ $ git clone {URL}
 사용자는 **프로덕션** 프로그램이나 **샌드박스** 프로그램을 만들 수 있습니다.
 
 * **프로덕션 프로그램**&#x200B;은 사이트에 대한 라이브 트래픽을 활성화하기 위해 만들어집니다.
-   * 자세한 내용은 [프로덕션 프로그램 소개](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) 문서를 참조하십시오.
+   * 다음을 참조하십시오 [프로덕션 프로그램 소개](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) 을 참조하십시오.
 * **샌드박스 프로그램**&#x200B;은 일반적으로 교육, 데모 실행, 활성화, POC 또는 문서화 목적으로 만들어집니다.
    * 샌드박스 환경은 라이브 트래픽을 전달하기 위한 것이 아니며 프로덕션 프로그램에는 없는 제한 사항이 있습니다.
    * 여기에는 Sites 및 Assets가 포함되며 샘플 코드, 개발 환경 및 비프로덕션 파이프라인이 포함된 git 분기가 자동으로 채워져 제공됩니다.
-   * 자세한 내용은 [샌드박스 프로그램 소개](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) 문서를 참조하십시오.
+   * 다음을 참조하십시오 [샌드박스 프로그램 소개](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) 을 참조하십시오.

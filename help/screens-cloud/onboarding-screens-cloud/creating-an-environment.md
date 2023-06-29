@@ -2,9 +2,9 @@
 title: 환경 만들기
 description: 이 페이지에서는 Cloud Manager for Screens as a Cloud Service으로 환경을 만드는 방법에 대해 설명합니다.
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '205'
 ht-degree: 8%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 8%
 이 섹션에서는 Cloud Manager에서 프로그램의 환경을 생성하는 방법에 대해 설명합니다.
 
 >[!NOTE]
->을(를) 참조하십시오 [Cloud Manager에서 환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ko) 를 사용하여 사용자가 환경을 만드는 방법을 알아봅니다.
+>다음을 참조하십시오 [Cloud Manager에서 환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en) 를 사용하여 사용자가 환경을 만드는 방법을 알아봅니다.
 
 ## 목표 {#objective}
 

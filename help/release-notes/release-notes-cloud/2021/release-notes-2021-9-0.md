@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.9.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.9.0 릴리스 정보입니다.'
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1570'
-ht-degree: 38%
+source-wordcount: '1569'
+ht-degree: 37%
 
 ---
 
@@ -75,7 +75,7 @@ CQ-4328183 was not reported on CS so not documented here.
 ### [!DNL Forms]의 베타 기능 {#sep-what-is-new-forms-prerelease}
 
 * **통합 스토리지 커넥터:** 통합 스토리지 커넥터를 사용하여 고객 관리 저장소에서 처리 중인 데이터를 외부화합니다. 예를 들어 다음 작업을 수행할 수 있습니다.
-   * Forms 포털 저장 및 재개 기능을 활성화하고 적응형 양식 초안을 고객 관리 데이터 저장소에 저장합니다.
+   * Forms 포털의 저장 및 재개 기능을 활성화하고 적응형 양식 초안을 고객 관리 데이터 저장소에 저장합니다.
    * 민감한 개인 데이터(SPD)가 포함된, 처리 중인 AEM Workflow 데이터(AEM Workflow 변수 데이터)를 고객 관리 저장소에 저장합니다.
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: [커뮤니케이션 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html)를 통해 XDP 템플릿과 XML 데이터를 결합하여 다양한 형식의 인쇄 문서를 생성할 수 있습니다. 이 서비스를 사용하면 동기화 모드에서 문서를 생성할 수 있습니다. API를 사용하면 다음과 같은 기능을 제공하는 애플리케이션을 만들 수 있습니다.
@@ -145,7 +145,7 @@ Beta 프로그램에 등록하려면 [!DNL formscsbeta@adobe.com]에 문의하�
 
 **색인 최적화**
 
-검색 쿼리 및 색인화의 성능을 개선하기 위해 전체 텍스트 색인 lucene-2는 더 이상 기본 제공 도구에서 사용되지 않습니다 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 이번 릴리스에서. AEM 고객에 따라 AEM 환경에서 이 전체 텍스트 색인을 제거하기 위해 Adobe 엔지니어링은 Lucene 전체 텍스트 색인을 부드럽고 지속적으로 제거하기 위해 개인적이며 적극적으로 고객과 협력합니다. 다음을 방문하십시오. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [설명서](/help/operations/indexing.md#index-optimizations) 자세한 내용을 알고 싶으신 분은 당사의 지원 부서에 직접 문의해 주십시오.
+검색 쿼리 및 색인화의 성능을 개선하기 위해 전체 텍스트 색인 lucene-2는 더 이상 기본 제공 도구에서 사용되지 않습니다 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 이번 릴리스에서. AEM 고객에 따라 AEM 환경에서 이 전체 텍스트 색인을 제거하기 위해 Adobe 엔지니어링은 Lucene 전체 텍스트 색인을 부드럽고 지속적으로 제거하기 위해 개인적이며 적극적으로 고객과 협력합니다. 다음 방문: [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [설명서](/help/operations/indexing.md#index-optimizations) 자세한 내용을 알고 싶으신 분은 당사의 지원 부서에 직접 문의해 주십시오.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -182,7 +182,7 @@ Cloud Acceleration Manager 의 릴리스 날짜는 2021년 10월 4일입니다.
 
 ### 새로운 기능 {#what-is-new-cam}
 
-* Cloud Acceleration Manager는 이제 인쇄 가능한 미리 보기에서 BPA 보고서를 볼 수 있는 기능을 사용자에게 제공하므로 간단한 인쇄 또는 인쇄를 PDF에 제공하여 쉽게 공유할 수 있습니다. 에서 6단계 및 7단계를 참조하십시오. [Best Practices Analysis 카드 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+* Cloud Acceleration Manager는 이제 인쇄 가능한 미리 보기에서 BPA 보고서를 볼 수 있는 기능을 사용자에게 제공하므로 간단한 인쇄 또는 인쇄를 PDF에 제공하여 쉽게 공유할 수 있습니다. 의 6단계 및 7단계 를 참조하십시오 [Best Practices Analysis 카드 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
 
 ## 콘텐츠 전송 도구 {#content-transfer-tool}
 
@@ -192,7 +192,7 @@ Cloud Acceleration Manager 의 릴리스 날짜는 2021년 10월 4일입니다.
 
 ### 새로운 기능 {#what-is-new-ctt}
 
-* 아래 나열된 기능을 포함하여 간소화된 사용자 경험으로 사용자 매핑이 개선되었습니다. 자세한 내용은 다음을 참조하십시오. [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
+* 아래 나열된 기능을 포함하여 간소화된 사용자 경험으로 사용자 매핑이 개선되었습니다. 자세한 내용은 [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
    * 사용자 매핑을 실행하기 전에 사용자 관리 API에 대한 연결 테스트
    * 오류를 정상적으로 건너뛰고 사용자 매핑 활동을 계속합니다.
    * 액세스 토큰이 만료된 경우(24시간 후) 사용자 매핑이 더 이상 실패하지 않습니다. 사용자 매핑은 마지막으로 중지된 위치에서 다시 실행할 수 있습니다.

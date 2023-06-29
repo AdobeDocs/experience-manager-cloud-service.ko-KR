@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 릴리스 2022.7.0의 마이그레이션 도구 �
 description: AEM as a Cloud Service 릴리스 2022.7.0의 마이그레이션 도구 릴리스 정보
 feature: Release Information
 exl-id: bc8f1a80-867e-423a-9c03-4a53b1ebc57c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '428'
 ht-degree: 9%
 
 ---
@@ -59,5 +59,5 @@ Cloud Acceleration Manager 의 릴리스 날짜는 2022년 7월 15일입니다.
 
 ### 새로운 기능 {#what-is-new-cam}
 
-* Cloud Acceleration Manager는 이제 자동 검색이 실패할 때 수집을 시작할 수 있도록 사용자가 마이그레이션 토큰을 수동으로 검색할 수 있도록 제공합니다. 고객이 CAM을 차단하는 IP 허용 목록을 설정했거나 관리자가 아닌 사용자가 수집을 시작하려고 하는 경우 자동 검색이 실패할 수 있습니다. 을(를) 참조하십시오 [문제 해결](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) 추가 정보.
+* Cloud Acceleration Manager는 이제 자동 검색이 실패할 때 수집을 시작할 수 있도록 사용자가 마이그레이션 토큰을 수동으로 검색할 수 있도록 제공합니다. 고객이 CAM을 차단하는 IP 허용 목록을 설정했거나 관리자가 아닌 사용자가 수집을 시작하려고 하는 경우 자동 검색이 실패할 수 있습니다. 다음을 참조하십시오 [문제 해결](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) 추가 정보.
 * 이제 마이그레이션 복잡성 페이지의 긴 테이블을 쉽게 접을 수 있습니다.

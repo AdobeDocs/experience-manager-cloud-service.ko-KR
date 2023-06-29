@@ -2,10 +2,10 @@
 title: Cloud Manager 환경 변수
 description: 표준 환경 변수는 Cloud Manager를 통해 구성 및 관리할 수 있으며 OSGi 구성에서 사용할 런타임 환경에 제공됩니다.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 93%
+source-wordcount: '1018'
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 93%
 
 환경 변수는 AEM as a Cloud Service 사용자에게 다음과 같은 이점을 제공합니다.
 
-* 이를 통해 코드와 애플리케이션의 비헤이비어가 컨텍스트와 환경에 따라 달라질 수 있습니다. 예를 들어 비용이 많이 드는 실수를 피하기 위해 프로덕션 또는 스테이징 환경과 비교하여 개발 환경에서 다양한 구성을 활성화하는 데 사용할 수 있습니다.
+* 이를 통해 코드와 애플리케이션의 비헤이비어가 컨텍스트와 환경에 따라 달라질 수 있습니다. 예를 들어 비용이 많이 드는 실수를 피하기 위해 프로덕션 또는 스테이지 환경과 비교하여 개발 환경에서 다양한 구성을 활성화하는 데 사용할 수 있습니다.
 * 한 번만 구성 및 설정하면 되며 필요할 때 업데이트 및 삭제할 수 있습니다.
 * 해당 값은 언제든지 업데이트할 수 있으며 코드를 변경하거나 배포할 필요 없이 즉시 적용됩니다.
 * 구성에서 코드를 분리하여 버전 제어에 민감한 정보를 포함할 필요가 없습니다.
@@ -34,7 +34,7 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->의 멤버여야 합니다. [**배포 관리자** 역할](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) 을 클릭하여 환경 변수를 추가하거나 수정합니다.
+>환경 변수를 추가하거나 수정하려면 [**배포 관리자** 역할](/help/onboarding/cloud-manager-introduction.md#role-based-premissions)의 멤버여야 합니다.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Adobe Cloud Manager에 로그인합니다.
 1. Cloud Manager에 사용할 수 있는 다양한 프로그램이 나열됩니다. 관리하고자 하는 프로그램을 선택합니다.
@@ -59,7 +59,7 @@ ht-degree: 93%
 
 1. 변수를 유지하려면 **저장**&#x200B;을 선택합니다.
 
-업데이트 중 상태의 표시기가 표 상단과 새로 추가된 변수 옆에 표시되어 구성에 맞게 환경이 **업데이트 중**&#x200B;임을 나타냅니다. 완료 후 새 환경 변수가 표에 표시됩니다.
+업데이트 중 상태의 표시기가 표 상단과 새로 추가된 변수 옆에 표시되어 구성에 맞게 환경이 **업데이트 중**&#x200B;임을 나타냅니다. 완료된 후에 새 환경 변수가 표에 표시됩니다.
 
 ![변수 업데이트](assets/updating-variables.png)
 
@@ -88,9 +88,9 @@ ht-degree: 93%
 
    ![변수 편집](assets/edit-variable.png)
 
-1. 필요한 구성을 모두 변경했으면 **저장**&#x200B;을 선택합니다.
+1. 필요한 구성을 모두 변경한 후 을 선택합니다. **저장**.
 
-[변수를 추가할 때와 마찬가지로](#add-variables) **업데이트 중** 상태의 표시기가 표 상단과 새로 업데이트된 변수 옆에 표시되어 구성을 통해 환경이 업데이트되고 있음을 나타냅니다. 완료 후 업데이트된 환경 변수가 표에 표시됩니다.
+[변수를 추가할 때와 마찬가지로](#add-variables) **업데이트 중** 상태의 표시기가 표 상단과 새로 업데이트된 변수 옆에 표시되어 구성을 통해 환경이 업데이트되고 있음을 나타냅니다. 완료된 후에 업데이트된 환경 변수가 표에 표시됩니다.
 
 >[!TIP]
 >
@@ -118,7 +118,7 @@ ht-degree: 93%
 
 ### Dispatcher {#dispatcher}
 
-[Dispatcher에는 일반 환경 변수만 사용할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR) 비밀은 사용할 수 없습니다.
+[Dispatcher에는 일반 환경 변수만 사용할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 비밀은 사용할 수 없습니다.
 
 그러나 환경 변수는 `IfDefine` 지침에서 사용할 수 없습니다.
 
@@ -128,8 +128,8 @@ ht-degree: 93%
 
 ### OSGi 구성 {#osgi}
 
-일반 환경 변수와 비밀 모두 [OSGi 구성](/help/implementing/deploying/configuring-osgi.md)에서 사용할 수 있습니다.
+일반 환경 변수와 비밀 모두 [OSGi 구성](/help/implementing/deploying/configuring-osgi.md).
 
 ### 파이프라인 변수 {#pipeline}
 
-환경 변수 외에도 빌드 단계 중에 노출되는 파이프라인 변수도 있습니다. [여기에서 파이프라인 변수에 대해 자세히 알아보십시오.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)
+환경 변수 외에도 빌드 단계 중에 노출되는 파이프라인 변수도 있습니다. [여기에서 파이프라인 변수에 대해 자세히 알아보십시오](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).

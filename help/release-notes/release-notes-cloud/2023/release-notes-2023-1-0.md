@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.1.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.1.0 릴리스 정보입니다.'
 exl-id: f134fdbc-224b-404c-b20f-44cae8bad681
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '976'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 97%
 >
 >여기에서 2021, 2022 버전 등 이전 버전의 릴리스 정보로 이동할 수 있습니다.
 >
->[!DNL Experience Manager] as a Cloud Service의 향후 기능 활성화에 대해 알아보려면 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ko-KR)을 살펴보십시오.
+>[!DNL Experience Manager] as a Cloud Service의 향후 기능 활성화에 대해 알아보려면 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)을 살펴보십시오.
 
 >[!NOTE]
 >
@@ -43,17 +43,17 @@ ht-degree: 97%
 
 ### [!DNL Assets]의 새로운 기능 {#assets-features}
 
-* 에셋 보고서에는 이제 관리자가 Experience Manager Assets as a Cloud Service 배포에서 [에셋 다운로드 보고서를 생성](/help/assets/asset-reports.md)할 수 있는 기능이 포함됩니다. 이 데이터는 관리자가 주요 성공 지표에서 통찰력을 도출하여 기업 내 및 고객에 의한 Assets의 채택률을 측정할 수 있도록 합니다.
+* 자산 보고서에는 이제 관리자가 Experience Manager Assets as a Cloud Service 배포에서 [자산 다운로드 보고서를 생성](/help/assets/asset-reports.md)할 수 있는 기능이 포함됩니다. 관리자가 이 데이터를 사용하여 기업 내부에서 또는 고객에 의해 자산 채택률을 측정하려면 주요 성공 지표에서 인사이트를 도출해야 합니다.
 
   ![다른 형식의 PDF 렌디션](/help/release-notes/assets/choose_report.png)
 
-* 이제 Experience Manager Assets는 일괄 가져오기 도구를 사용하여 에셋을 수집하기 위해 Azure Blob Storage 데이터 소스에 연결할 때 인증에 액세스 키 외에 [SAS 토큰을 지원](/help/assets/add-assets.md#asset-bulk-ingestor)합니다.
+* 이제 Experience Manager Assets는 일괄 가져오기 도구를 사용하여 자산을 수집하기 위해 Azure Blob Storage 데이터 소스에 연결할 때 인증에 액세스 키 외에 [SAS 토큰을 지원](/help/assets/add-assets.md#asset-bulk-ingestor)합니다.
 
 * Asset Compute에서 CMYK 이미지 관리가 개선되면 CMYK 이미지용 스마트 자르기와 스마트 태그를 생성할 수 있습니다.
 
 ### [!DNL Assets] 프리릴리스의 새로운 기능 {#prerelease-features-assets}
 
-* 이제 Experience Manager Assets는 일괄 가져오기 도구를 사용하여 [Google Cloud Platform에서의 대규모 에셋 수집](/help/assets/add-assets.md#asset-bulk-ingestor)을 지원합니다.
+* 이제 Experience Manager Assets는 일괄 가져오기 도구를 사용하여 [Google Cloud Platform에서의 대규모 자산 수집](/help/assets/add-assets.md#asset-bulk-ingestor)을 지원합니다.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -64,7 +64,7 @@ ht-degree: 97%
 
 ### [!DNL Forms] 프리릴리스의 새로운 기능 {#prerelease-features-forms}
 
-* **[데이터 캡처 핵심 구성 요소를 사용하여 적응형 양식 작성](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)**: [적응형 양식 편집기를 사용](/help/forms/creating-adaptive-form-core-components.md)하여 표준화된 데이터 캡처 구성 요소(핵심 구성 요소)를 기반으로 양식을 만듭니다. 이 구성 요소는 맞춤화 기능을 제공하고, 개발 시간을 단축하고, 유지 관리 비용을 줄여 디지털 등록 경험을 개선합니다.
+* **[데이터 캡처 핵심 구성 요소를 사용하여 적응형 양식 작성](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en)**: [적응형 양식 편집기를 사용](/help/forms/creating-adaptive-form-core-components.md)하여 표준화된 데이터 캡처 구성 요소(핵심 구성 요소)를 기반으로 양식을 만듭니다. 이 구성 요소는 맞춤화 기능을 제공하고, 개발 시간을 단축하고, 유지 관리 비용을 줄여 디지털 등록 경험을 개선합니다.
 * **[핵심 구성 요소 기반 적응형 양식의 스타일 유지를 위한 프론트엔드 파이프라인 지원](/help/forms/using-themes-in-core-components.md)**: 프론트엔드 파이프라인을 통해 핵심 구성 요소 기반 적응형 양식에 맞는 손쉬운 맞춤형 BEM 기반의 테마를 배포하여 양식의 디자인을 개선합니다.
 * **[핵심 구성 요소 기반 적응형 양식의 기록 문서 만들기](/help/forms/generate-document-of-record-core-components.md)**: 장기간 보존하기 위해 인쇄 또는 문서 형식으로 제출 시 핵심 구성 요소 기반 적응형 양식의 기록을 만듭니다.
 
@@ -86,7 +86,7 @@ ht-degree: 97%
 
   >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
 
-  RDE에서 코드를 성공적으로 검증한 후 프로덕션 파이프라인을 통해 스테이징 및 프로덕션 환경에 배포하기 전에 클라우드 개발 환경에 배포하여 Cloud Manager 품질 게이트를 실행하는 것이 좋습니다.
+  RDE에서 코드를 성공적으로 검증한 후 프로덕션 파이프라인을 통해 스테이지 및 프로덕션 환경에 배포하기 전에 클라우드 개발 환경에 배포하여 Cloud Manager 품질 게이트를 실행하는 것이 좋습니다.
 
   각 프로그램에는 한 개의 RDE가 포함되어 더 많은 프로그램에 라이선스가 부여될 수 있습니다.
 

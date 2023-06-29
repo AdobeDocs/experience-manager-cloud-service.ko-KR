@@ -2,10 +2,10 @@
 title: 더 이상 사용되지 않는 API
 description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]에서 더 이상 사용되지 않으며 제거된 API에 관련된 릴리스 정보입니다.'
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 9e722de86e925cb8de626dc16624954dfac063cc
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1120'
-ht-degree: 100%
+source-wordcount: '1116'
+ht-degree: 96%
 
 ---
 
@@ -158,13 +158,13 @@ ht-degree: 100%
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
-    <td>Apache Felix Http Whiteboard는 더 이상 지원되지 않습니다. 코드를 OSGi Http Whiteboard로 마이그레이션하십시오.</td>
+    <td>Apache Felix Http Whiteboard는 더 이상 지원되지 않습니다. 코드를 OSGi Http Whiteboard로 마이그레이션합니다.</td>
     <td>1/27/2022</td>
     <td>03/24/2022</td>
   </tr>
   <tr>
     <td>org.apache.cocoon.xml.dom<br>org.apache.cocoon.xml.sax</td>
-    <td>이 API는 더 이상 사용되지 않습니다. JDK에서 제공하는 XML API로 코드를 마이그레이션하십시오.</td>
+    <td>이 API는 더 이상 사용되지 않으며, JDK에서 제공하는 XML API로 코드를 마이그레이션합니다.</td>
     <td>1/27/2022</td>
     <td>3/24/2022</td>
   </tr>

@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2308'
+source-wordcount: '2310'
 ht-degree: 3%
 
 ---
@@ -354,7 +354,7 @@ HTML 요소 **레이블** 필드에는 클래스가 포함됩니다. **left** �
 버튼은 위젯이기도 합니다. 하지만 그들의 스타일은 위젯과 약간 다릅니다. 적응형 Forms에서 다음 중 하나가 단추를 구성합니다.
 
 * 입력[type = text]
-* 단추
+* 추가할 수도 있습니다
 * 클래스 .button이 있는 요소
 
 단추에 대한 HTML 코드:
@@ -809,7 +809,7 @@ guideNavIcon 클래스는 탭 탐색기(왼쪽 및 위쪽 모두)와 마법사 �
    <td><p>중첩된 탭의 들여쓰기</p> </td>
   </tr>
   <tr>
-   <td><p><strong>마법사 탐색기</strong></p> </td>
+   <td><p><strong>마법사 네비게이터</strong></p> </td>
    <td><p> </p> </td>
   </tr>
   <tr>
@@ -941,9 +941,9 @@ guideNavIcon 클래스는 탭 탐색기(왼쪽 및 위쪽 모두)와 마법사 �
  </tbody>
 </table>
 
-패널 노드는 탐색기와 콘텐츠로 나뉩니다. 거기 `` `` 콘텐츠에 대한 별도의 스타일 구성 요소가 없습니다. 설명된 변수는 콘텐츠뿐만 아니라 navigator에도 적용됩니다.
+패널 노드는 탐색기와 콘텐츠로 나뉩니다. 거기 `` `` 콘텐츠에 대한 별도의 스타일 구성 요소가 없습니다. 설명된 변수는 네비게이터 및 콘텐츠에 적용됩니다.
 
-맨 위 패널(RootPanel)에 이 클래스가 없습니다.
+최상위 패널(RootPanel)에 이 클래스가 없습니다.
 
 ## 모바일 스타일링 {#mobile-styling}
 

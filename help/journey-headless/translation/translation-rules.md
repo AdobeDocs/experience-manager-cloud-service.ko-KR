@@ -2,10 +2,10 @@
 title: Headless 콘텐츠에 대한 번역 규칙 구성
 description: 번역 규칙을 정의하여 번역할 콘텐츠를 식별하는 방법에 대해 알아봅니다.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '942'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -27,7 +27,7 @@ AEM Headless 번역 여정의 이전 문서인 [번역 커넥터 구성](configu
 >이 설명서 여정 단계는 콘텐츠 조각에서 **번역 가능한** 플래그를 사용하지 않는 경우에만 필요합니다.
 >
 >* **번역 가능한** 플래그는 번역 규칙을 자동으로 만들어 개입이 필요하지 않습니다.
->* **번역 가능한** 플래그는 번역 통합 프레임워크 구성이 **[번역을 위해 콘텐츠 모델 필드 활성화](/help/sites-cloud/administering/translation/integration-framework.md)**&#x200B;로 설정된 경우에만 사용됩니다.
+>* 다음 **변환 가능** 플래그는 번역 통합 프레임워크 구성이 로 설정된 경우에만 사용됩니다. **[번역을 위해 콘텐츠 모델 필드 활성화](/help/sites-cloud/administering/translation/integration-framework.md)**.
 >* TIF 구성에서 이 옵션을 활성화하면 수동으로 만든 번역 규칙을 대체합니다.|
 
 ## 목표 {#objective}
@@ -76,7 +76,7 @@ Headless 조각을 나타내는 콘텐츠 조각에는 구조화된 필드로 �
 1. AEM은 구성을 저장합니다.
 1. 방금 만든 컨텍스트를 선택한 다음 **편집**&#x200B;을 탭하거나 클릭해야 합니다. 이렇게 하면 **번역 규칙 편집기**가 열려 속성을 구성할 수 있습니다.
    ![번역 규칙 편집기](assets/translation-rules-editor.png)
-1. 기본적으로 이 경우 상위 경로에서 모든 구성이 상속됩니다`/content/dam`. 옵션 선택 취소 **상속 대상`/content/dam`** 추가 필드를 구성에 추가할 수 있습니다.
+1. 기본적으로 이 경우 상위 경로에서 모든 구성이 상속됩니다`/content/dam`. 추가 필드를 구성에 추가하려면 `/content/dam`**에서**&#x200B;상속 옵션을 선택 취소합니다.
 1. 선택 취소되면 목록의 **일반** 섹션에서 [이전에 번역 필드로 식별된 콘텐츠 조각 모델의 속성 이름을 추가합니다.](getting-started.md#content-models)
    1. **새 속성** 필드에 속성 이름을 입력합니다.
    1. **번역** 및 **상속** 옵션은 자동으로 선택되어 있습니다.

@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3709'
+source-wordcount: '3708'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ Dynamic Media에 대해 이해할 수 있는 주요 사항 중 하나는 _무한
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![Adobe Dynamic Media은 크기와 형식이 다른 다양한 미디어에 동일한 1차 이미지를 제공합니다.](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+![Adobe Dynamic Media은 서로 다른 크기 및 형식으로 동일한 1차 이미지를 다른 미디어에 제공합니다](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
 _Adobe Dynamic Media은 크기나 대역폭에 관계없이 모든 화면에 일관된 품질 경험을 제공합니다._
 
 계속해서 읽으면서 &quot;하나의 기본 에셋 파일, 무궁한 가능성&quot;이라는 개념이 중요한 이유에 대해 자세히 알아볼 것입니다.
@@ -182,7 +182,7 @@ Dynamic Media이 해결하는 또 다른 사용 사례는 비디오입니다. �
 
 고객은 해결하고자 하는 다음 문제를 가지고 Dynamic Media으로 옵니다.
 
-&quot;_우리는 비디오를 얻었고, 그것을 만드는 데 많은 돈을 썼습니다. 그러나 우리는 그것을 페이지에 넣는 것이나 전달하는 것을 피했습니다. 왜냐하면 우리의 테스트로는, 우리는 비디오의 품질을 보장할 수 없거나, 그것이 정말로 재생될지를 보장할 수 없기 때문입니다. 그리고 궁극적으로, 그것은 우리의 브랜드와 잠재적으로 심지어는 전환에 대한 우리의 역할에 영향을 미칩니다._&quot;
+&quot;_우리는 비디오를 가지고 있고, 그것을 만드는 데 많은 돈을 썼습니다. 하지만 우리는 그것을 페이지에 올리거나 게재하는 것을 피했습니다. 왜냐하면 우리의 테스트로는 비디오의 품질을 보장할 수 없기 때문입니다. 또는 그것이 실제로 재생되는지 말입니다. 그리고 궁극적으로, 그것은 우리의 브랜드와 잠재적으로 심지어는 전환에 대한 우리의 역할에 영향을 미칩니다._&quot;
 
 Dynamic Media의 솔루션은 이러한 1차 비디오 파일을 가져와 Dynamic Media이 코드 변환 프로세스를 통해 모든 크기를 만들 수 있도록 하는 것입니다. 그런 다음 Dynamic Media의 지능형 비디오 플레이어와 페어링합니다. 이 워크플로는 기본 랜딩 페이지나 카테고리 또는 제품 세부 사항 페이지에서 해당 비디오를 사용하든 상관없이 전체적으로 일관성을 유지하고 고품질로 전달되도록 보장합니다.
 
@@ -291,7 +291,7 @@ _Dynamic Media 뷰어_
 
 ## 이 Dynamic Media 여정의 다음 단계 {#whats-next}
 
-이 여정의 2부에서는 에셋이 전달될 때 무슨 일이 일어나고 있는지 더 잘 이해하기 위해 Dynamic Media URL을 좀 더 자세히 살펴봅니다. 또한 에셋을 렌더링할 이미지 사전 설정을 만드는 기본 사항에 대해 자세히 알아보고 이미지 세트, 스핀 세트 및 혼합 미디어 세트와 이러한 세트를 만드는 방법에 대해 알아봅니다.
+이 여정의 II부분에서는 에셋이 전달될 때 무슨 일이 일어나고 있는지 더 잘 이해하기 위해 Dynamic Media URL을 약간 더 가까이 검사합니다. 또한 에셋을 렌더링할 이미지 사전 설정을 만드는 기본 사항에 대해 자세히 알아보고 이미지 세트, 스핀 세트 및 혼합 미디어 세트와 이러한 세트를 만드는 방법에 대해 알아봅니다.
 
 다음으로 이동 [Dynamic Media 여정: 기본 사항, 2부](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
 

@@ -2,10 +2,10 @@
 title: AEM Headless 번역 시작하기
 description: Headless 콘텐츠를 구성하는 방법 및 AEM의 번역 도구의 작동 방식에 대해 알아봅니다.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1407'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -44,7 +44,7 @@ AEM Headless 콘텐츠 번역을 시작하기 전에 알아 두어야 할 몇 �
 
 >[!TIP]
 >
->AEM과 같은 대규모 CMS 사용에 익숙하지 않은 경우 계속 진행하기 전에 [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md) 설명서를 검토하는 것이 좋습니다. 기본 처리 설명서는 이 여정의 일부가 아니므로, 검토를 완료하면 이 페이지로 돌아오십시오.
+>AEM과 같은 대규모 CMS 사용에 익숙하지 않은 경우 계속 진행하기 전에 [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md) 설명서를 검토하는 것이 좋습니다. 기본 처리 설명서는 여정의 일부가 아닙니다. 따라서 완료되면 이 페이지로 돌아갑니다.
 
 ### 도구 {#tools}
 
@@ -64,7 +64,7 @@ AEM의 콘텐츠는 Headless 페이지 또는 기존 웹 페이지와 상관없�
 
 ## AEM이 Headless 콘텐츠를 저장하는 방법 {#headless-content-in-aem}
 
-번역 전문가의 경우 AEM의 Headless 콘텐츠 관리 방법을 깊이 있게 이해하지 않아도 됩니다. 그러나 기본 개념과 용어를 숙지하면 나중에 AEM 번역 도구를 사용할 때 도움이 됩니다. 가장 중요한 것은 콘텐츠를 효과적으로 번역할 수 있도록 자신의 콘텐츠와 콘텐츠 구성 방식을 이해해야 한다는 것입니다.
+번역 전문가의 경우 AEM의 Headless 콘텐츠 관리 방법을 깊이 있게 이해하지 않아도 됩니다. 그러나 기본 개념과 용어를 숙지하게 되면 나중에 AEM의 번역 도구를 사용할 때 도움이 됩니다. 가장 중요한 것은 콘텐츠를 효과적으로 번역하기 위해 자신의 콘텐츠와 콘텐츠 구성 방식을 이해해야 한다는 것입니다.
 
 ### 콘텐츠 모델 {#content-models}
 
@@ -100,7 +100,7 @@ Headless 콘텐츠를 채널, 지역 및 언어에 일관되게 게재하려면 
 
 콘텐츠 모델이 콘텐츠의 패턴인 경우 콘텐츠 조각은 해당 패턴을 기반으로 하는 실제 콘텐츠입니다. 콘텐츠 조각은 번역해야 하는 콘텐츠를 나타냅니다.
 
-콘텐츠 조각은 디지털 에셋 관리(DAM)의 일부로 AEM의 에셋으로 관리됩니다. 이는 모두 경로 아래에 위치하므로 중요합니다`/content/dam`.
+콘텐츠 조각은 디지털 자산 관리(DAM)의 일부로 AEM의 자산으로 관리됩니다. 이는 모두 경로 아래에 위치하므로 중요합니다`/content/dam`.
 
 ## 권장 콘텐츠 구조 {#recommended-structure}
 
@@ -187,4 +187,4 @@ Headless 번역 여정의 한 부분을 완료했으므로,
 * [AEM 기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md) - 콘텐츠 찾기와 같은 필수 작업을 편안하게 탐색하고 수행할 수 있도록 AEM UI의 기본 사항에 대해 알아봅니다.
 * [번역할 콘텐츠 식별](/help/sites-cloud/administering/translation/rules.md) - 번역 규칙이 번역이 필요한 콘텐츠를 식별하는 방법에 대해 알아봅니다.
 * [번역 통합 프레임워크 구성](/help/sites-cloud/administering/translation/integration-framework.md) - 번역 통합 프레임워크를 서드파티 번역 서비스와 통합하도록 구성하는 방법에 대해 알아봅니다.
-* [번역 프로젝트 관리](/help/sites-cloud/administering/translation/managing-projects.md) - AEM에서 기계 번역 및 사람 번역을 만들고 관리하는 방법에 대해 알아봅니다.
+* [번역 프로젝트 관리](/help/sites-cloud/administering/translation/managing-projects.md) - AEM에서 기계 번역 및 인간 번역을 만들고 관리하는 방법에 대해 알아봅니다.

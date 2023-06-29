@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: a641903bf47634cd969f23840c5e6e6fa5a3693b
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1377'
 ht-degree: 0%
@@ -75,13 +75,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. 페이지의 왼쪽 상단 모서리 근처에 있는 드롭다운 목록에서 을(를) 선택합니다. **[!UICONTROL 타임라인]**.
 1. 페이지의 왼쪽 아래 모서리 근처에서 [!UICONTROL 댓글] 필드에서 캐럿 아이콘( **^** ).
 
-   ![선택한 에셋 폴더를 보여주는 Experience Manager 에셋의 스크린샷, 타임라인 드롭다운 목록, 강조 표시된 워크플로 시작 버튼 및 댓글 필드의 오른쪽에 있는 캐럿 아이콘도 강조 표시됩니다.](/help/assets/dynamic-media/assets/reprocess-assets1.png)
+   ![선택한 에셋 폴더를 보여주는 Experience Manager 에셋의 스크린샷, 타임라인 드롭다운 목록 강조 표시, 워크플로 시작 버튼 강조 표시 및 댓글 필드의 오른쪽에 있는 캐럿 아이콘도 강조 표시됩니다](/help/assets/dynamic-media/assets/reprocess-assets1.png).
 
 1. 선택 **[!UICONTROL 워크플로우 시작]**.
 1. 다음에서 **[!UICONTROL 워크플로우 시작]** 드롭다운 목록에서 선택 **[!UICONTROL Scene7: 에셋 재처리]**.
 1. (선택 사항) **워크플로우 제목 입력** 텍스트 필드에 워크플로우의 이름을 입력합니다. 필요한 경우 이름을 사용하여 워크플로 인스턴스를 참조할 수 있습니다.
 
-   ![워크플로 시작 드롭다운 목록에서 &quot;Scene7: 에셋 재처리&quot;를 선택하고 시작 버튼이 강조 표시된 타임라인 사용자 인터페이스의 스크린샷입니다.](/help/assets/dynamic-media/assets/reprocess-assets2.png)
+   ![워크플로 시작 드롭다운 목록에서 &quot;Scene7: 에셋 재처리&quot;를 선택하고 시작 버튼이 강조 표시된 타임라인 사용자 인터페이스의 스크린샷](/help/assets/dynamic-media/assets/reprocess-assets2.png).
 
 1. 선택 **[!UICONTROL 시작]**&#x200B;을 선택한 다음 을 선택합니다. **[!UICONTROL 확인]**.
 
@@ -96,13 +96,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. 위치 [!DNL Experience Manager], 선택 **[!UICONTROL Adobe Experience Manager]** 전역 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]** (hammer) 아이콘 > **[!UICONTROL 워크플로우 > 모델]**.
 1. 워크플로우 모델 페이지의 카드 보기 또는 목록 보기에서 **[!UICONTROL Scene7: 에셋 재처리]**.
 
-   ![Experience Manager의 카드 보기에서 &quot;Scene7: 에셋 재처리&quot; 워크플로를 선택한 워크플로 모델 페이지의 스크린샷입니다.](/help/assets/dynamic-media/assets/reprocess-assets7.png)
+   ![Experience Manager의 카드 보기에서 &quot;Scene7: 에셋 재처리&quot; 워크플로를 선택한 워크플로 모델 페이지의 스크린샷](/help/assets/dynamic-media/assets/reprocess-assets7.png).
 
 1. 도구 모음에서 를 선택합니다. **[!UICONTROL 편집]**. 새 브라우저 탭에서 Scene7: 에셋 재처리 워크플로 모델 페이지를 엽니다.
 1. 오른쪽 상단 근처에 있는 Scene7: 에셋 재처리 워크플로 페이지에서 을(를) 선택합니다 **[!UICONTROL 편집]** 을 클릭하여 워크플로를 &quot;잠금 해제&quot;합니다.
 1. 워크플로우에서 Scene7 일괄 업로드 구성 요소를 선택하여 도구 모음을 열고 을 선택합니다. **[!UICONTROL 구성]** 을 클릭합니다.
 
-   ![마우스 포인터를 &quot;구성&quot; 아이콘 위로 가져간 상태로 &quot;Scene7: 에셋 재처리&quot; 페이지에 있는 &quot;Scene7 일괄 업로드&quot; 구성 요소의 스크린샷입니다.](/help/assets/dynamic-media/assets/reprocess-assets8.png)
+   ![마우스 포인터를 &quot;구성&quot; 아이콘 위로 가져간 상태로 &quot;Scene7: 에셋 재처리&quot; 페이지에 있는 &quot;Scene7 일괄 업로드&quot; 구성 요소의 스크린샷](/help/assets/dynamic-media/assets/reprocess-assets8.png).
 
 1. 다음에서 **[!UICONTROL Scene7에 일괄 업로드 - 단계 속성]** 대화 상자에서 다음을 설정합니다.
    * 다음에서 **[!UICONTROL 제목]** 및 **[!UICONTROL 설명]** 텍스트 필드에 원하는 경우 작업에 대한 새 제목과 설명을 입력합니다.
@@ -112,13 +112,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    * 다음에서 **[!UICONTROL 일괄 처리 필드]** Dynamic Media 서버 일괄 처리 업로드 작업에서 처리할 최대 자산 수(50-1000)를 입력합니다.
    * 선택 **[!UICONTROL 시간 초과 시 진행]** 시간 초과에 도달했을 때 진행하려는 경우. 시간 초과에 도달했을 때 받은 편지함으로 이동하려면 선택을 취소합니다.
 
-   ![Scene7에 일괄 업로드 - 단계 속성 페이지의 스크린샷](/help/assets/dynamic-media/assets/reprocess-assets3.png)
+   ![Scene7에 일괄 업로드 - 단계 속성 페이지의 스크린샷](/help/assets/dynamic-media/assets/reprocess-assets3.png).
 
 1. 의 오른쪽 위 모서리에서 **[!UICONTROL Scene7에 일괄 업로드 - 단계 속성]** 대화 상자에서 **[!UICONTROL 완료]**.
 
 1. Scene7: 에셋 재처리 워크플로 모델 페이지의 오른쪽 상단 모서리에서 을(를) 선택합니다. **[!UICONTROL 동기화]**. 다음을 참조: **[!UICONTROL 동기화됨]**, 워크플로우 런타임 모델이 정상적으로 동기화되어 폴더에 있는 에셋을 재처리할 준비가 되었습니다.
 
-   ![선택한 에셋 폴더를 보여주는 Experience Manager 에셋의 스크린샷, 타임라인 드롭다운 목록, 강조 표시된 워크플로 시작 버튼 및 댓글 필드의 오른쪽에 있는 캐럿 아이콘도 강조 표시됩니다.](/help/assets/dynamic-media/assets/reprocess-assets1.png)
+   ![선택한 에셋 폴더를 보여주는 Experience Manager 에셋의 스크린샷, 타임라인 드롭다운 목록 강조 표시, 워크플로 시작 버튼 강조 표시 및 댓글 필드의 오른쪽에 있는 캐럿 아이콘도 강조 표시됩니다](/help/assets/dynamic-media/assets/reprocess-assets1.png).
 
 1. Scene7: 에셋 재처리 워크플로 모델을 표시하는 브라우저 탭을 닫습니다.
 

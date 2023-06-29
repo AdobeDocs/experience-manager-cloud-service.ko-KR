@@ -2,9 +2,9 @@
 title: Screens에서 as a Cloud Service 채널 만들기 및 관리
 description: 이 페이지에서는 Screens에서 채널을 as a Cloud Service으로 만들고 관리하는 방법을 설명합니다.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1087'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
 
    ![](/help/screens-cloud/assets/create-content/channel-create2.png)
    >[!NOTE]
-   > 다음 **만들기** 마법사는 채널을 만드는 동안 다양한 유형의 템플릿을 제공합니다. 섹션을 참조하십시오 [사용 가능한 템플릿](#available-templates) 자세한 내용은 만들기 마법사를 참조하십시오.
+   > 다음 **만들기** 마법사는 채널을 만드는 동안 다양한 유형의 템플릿을 제공합니다. 다음을 참조하십시오 [사용 가능한 템플릿](#available-templates) 자세한 내용은 만들기 마법사를 참조하십시오.
 
 1. 시퀀스 채널의 이름을 입력합니다(예: ). **루프채널** 및 클릭 **만들기**.
 
@@ -50,7 +50,7 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
 
    이제 다음이 표시됩니다. **루프채널** AEM Screens 을 참조하십시오.
 
-   채널을 만들면 이제 채널에 컨텐츠를 추가할 수 있습니다. 을(를) 참조하십시오 [채널에 콘텐츠 추가](#add-content) 채널에 에셋(이미지/비디오)을 추가하는 방법을 알아봅니다.
+   채널을 만들면 이제 채널에 컨텐츠를 추가할 수 있습니다. 다음을 참조하십시오 [채널에 콘텐츠 추가](#add-content) 채널에 에셋(이미지/비디오)을 추가하는 방법을 알아봅니다.
 
 ## 채널 관리 {#managing-channels}
 
@@ -100,7 +100,7 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
    ![이미지](/help/screens-cloud/assets/display/Assignment1.png)
 
 1. 클릭 **기본 세부 정보 설정**.
-1. 우선 순위, 시작 및 종료 날짜, 채널에 대한 반복 패턴을 포함한 기본 할당 세부 정보를 구성하고 을 클릭합니다. **할당**.
+1. 우선 순위, 시작 및 종료 날짜, 채널에 대한 반복 패턴을 포함한 기본 할당 세부 정보를 구성하고 **할당**.
 
    ![이미지](/help/screens-cloud/assets/display/Assignments2.png)
 
@@ -111,7 +111,7 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
 이 타일에는 다음 정보가 표시됩니다.
 * 디스플레이에서 채널의 기본 우선 순위입니다.
 * 채널 재생이 예정된 활성화 시작 및 종료 날짜입니다.
-* 반복에 대한 합성 보기(시간별/일별/주별/월별/연도별 및 해당 반복에 제공된 이름).
+* 반복에 대한 합성 보기(시간별/일별/주별/월별/연간 및 해당 반복에 제공된 이름).
 
 ### 디스플레이에 할당할 때 기본 할당 세부 정보 사용 {#default-display}
 
@@ -144,7 +144,7 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
 **참고:** 기본 할당 세부 정보를 사용하는 채널 할당은 디스플레이 컨텍스트에서 편집할 수 없습니다.
 
 * 사용자 지정 할당으로 변경해야 하는 경우 먼저 할당을 제거한 다음 **사용자 지정 할당 세부 정보 설정** 옵션을 선택합니다.
-* 기본 할당 세부 정보의 속성을 변경해야 하는 경우 채널 세부 정보 페이지에서 직접 이 작업을 수행해야 합니다.
+* 기본 할당 세부 정보의 속성을 변경해야 하는 경우 채널 세부 정보 페이지에서 바로 변경할 수 있습니다.
 
 ### 채널에서 기본 할당 세부 정보 제거 {#remove-display}
 
@@ -174,4 +174,4 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
 
 ## 다음 단계 {#whats-next}
 
-이제 프로젝트에서 AEM Screens 채널을 설정했으므로 채널을 게시해야 합니다. 을(를) 참조하십시오 [Screens에서 채널 as a Cloud Service 게시](manage-publish.md) Screens Services Provider에서 플레이어를 관리하기 전에
+이제 프로젝트에서 AEM Screens 채널을 설정했으므로 채널을 게시해야 합니다. 다음을 참조하십시오 [Screens에서 채널 as a Cloud Service 게시](manage-publish.md) Screens Services Provider에서 플레이어를 관리하기 전에

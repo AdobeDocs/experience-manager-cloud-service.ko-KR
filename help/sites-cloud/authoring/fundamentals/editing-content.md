@@ -2,10 +2,10 @@
 title: 페이지 콘텐츠 편집
 description: 페이지를 생성하면 콘텐츠를 편집하여 필요한 업데이트를 수행할 수 있습니다.
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3002'
-ht-degree: 73%
+source-wordcount: '2990'
+ht-degree: 68%
 
 ---
 
@@ -291,7 +291,7 @@ ht-degree: 73%
 
 * 이미지 구성 요소 - 전체 화면
 
-  [Entering full screen mode](#edit-content-full-screen-mode) for the image component allows for more space to edit the image as well as showing extra editing options such as **Launch Map** and **Reset Zoom**. In addition, full screen allows for crop presets to be selected.
+  [전체 화면 모드 시작](#edit-content-full-screen-mode) 이미지 구성 요소의 경우 이미지를 편집할 공간을 더 확보하고 다음과 같은 추가 편집 옵션을 표시합니다. **맵 실행** 및 **확대/축소 재설정**. In addition, full screen allows for crop presets to be selected.
 
   ![이미지 구성 요소의 전체 화면 모드](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
@@ -358,7 +358,7 @@ ht-degree: 73%
 
 >[!TIP]
 >
->레이아웃 작업은 선택한 구성 요소의 범위로 제한됩니다. 예를 들어 한 구성 요소의 레이아웃을 편집한 다음 다른 구성 요소를 클릭하면 에뮬레이터 도구 모음이 사라질 뿐 아니라 새롭게 선택한 구성 요소와 크기 조정 핸들에 대해 표준 편집 도구 모음(레이아웃 도구 모음이 아님)이 표시됩니다.
+>레이아웃 작업은 선택한 구성 요소의 범위로 제한됩니다. 예를 들어, 한 구성 요소의 레이아웃을 편집한 다음 다른 구성 요소를 클릭하면 새로 선택한 구성 요소에 대해 표준 편집 도구 모음(레이아웃 도구 모음이 아님)이 표시되고 크기 조정 핸들 및 에뮬레이터 도구 모음이 사라집니다.
 >
 >여러 구성 요소에 영향을 주면서 페이지의 전체 레이아웃을 편집해야 하는 경우 [레이아웃 모드](/help/sites-cloud/authoring/features/responsive-layout.md).
 
@@ -469,7 +469,7 @@ AEM을 사용하면 다른 사람이 컨텐츠를 편집할 수 없도록 페이
 >
 >페이지를 잠근 사용자를 가장하는 것으로는 페이지 잠금을 해제할 수 없습니다.
 >
->페이지를 잠근 사용자가 페이지를 잠금 해제할 수 없는 경우 고객 지원에 문의하여 잠금 해제 옵션을 평가하십시오.
+>페이지를 잠근 사용자가 페이지를 잠금 해제할 수 없는 경우 고객 지원 센터에 문의하여 잠금 해제 옵션을 평가하십시오.
 
 ## 페이지 잠금 해제 {#unlocking-a-page}
 
@@ -485,7 +485,7 @@ AEM을 사용하면 다른 사람이 컨텐츠를 편집할 수 없도록 페이
 >
 >페이지를 잠근 사용자를 가장하는 것으로는 페이지 잠금을 해제할 수 없습니다.
 >
->페이지를 잠근 사용자가 페이지를 잠금 해제할 수 없는 경우 고객 지원에 문의하여 잠금 해제 옵션을 평가하십시오.
+>페이지를 잠근 사용자가 페이지를 잠금 해제할 수 없는 경우 고객 지원 센터에 문의하여 잠금 해제 옵션을 평가하십시오.
 
 <!--
 >[!CAUTION]
@@ -516,7 +516,7 @@ AEM을 사용하면 다른 사람이 컨텐츠를 편집할 수 없도록 페이
 
 ## 페이지 편집 내용 실행 취소 및 재실행 - 이론 {#undoing-and-redoing-page-edits-the-theory}
 
-AEM에는 사용자가 수행한 작업 내역이 순서대로 저장됩니다. 따라서 여러 작업의 실행을 취소하면 수행한 순서대로 취소됩니다. 그런 다음 필요한 경우 재실행을 사용하여 하나 이상의 작업을 다시 적용할 수 있습니다.
+AEM은 사용자가 수행한 작업 내역과 해당 작업을 수행한 시퀀스를 저장하여 사용자가 수행한 순서대로 여러 작업을 실행 취소한 다음 필요한 경우 다시 실행하여 하나 이상의 작업을 다시 적용할 수 있도록 합니다.
 
 콘텐츠 페이지의 요소(예: 텍스트 구성 요소 등)가 선택된 경우 명령을 실행 취소 및 재실행하면 선택한 항목에 적용됩니다.
 

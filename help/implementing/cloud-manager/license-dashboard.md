@@ -2,10 +2,10 @@
 title: 라이선스 대시보드
 description: Cloud Manager는 조직 또는 테넌트가 사용할 수 있는 AEMaaCS 제품 권한을 쉽게 볼 수 있도록 대시보드를 제공합니다.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 77%
+source-wordcount: '873'
+ht-degree: 95%
 
 ---
 
@@ -49,13 +49,13 @@ Cloud Manager 라이선스 대시보드를 사용하면 다음 정보에 쉽게 
 
 >[!TIP]
 >
->Admin Console에서 전체 조직의 Adobe 권한을 관리하는 방법을 알아보려면 [Admin Console 개요](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)를 참조하십시오.
+>다음을 참조하십시오 [Admin Console 개요](https://helpx.adobe.com/enterprise/using/admin-console.html) Admin Console에서 전체 조직의 Adobe 권한을 관리하는 방법을 알아봅니다.
 
 ## FAQ {#faq}
 
 ### 콘텐츠 요청이란? {#what-is-a-content-request}
 
-콘텐츠 요청은 콘텐츠 또는 데이터를 페이지 조회수로 또는 JSON 포맷으로 API 호출로 전달하기 위해 AEM Sites HTML 또는 콘텐츠 전달 네트워크와 같은 고객 제공 캐싱 시스템으로 들어오는 요청입니다.
+콘텐츠 요청은 콘텐츠 또는 데이터를 HTML 포맷을 사용하여 페이지 보기로 전달하거나 JSON 포맷을 사용하여 API 호출로 전달하기 위해 AEM Sites 또는 콘텐츠 전송 네트워크와 같은 고객 제공 캐싱 시스템으로 들어오는 요청입니다.
 
 콘텐츠 요청은 각 페이지 보기 또는 5개의 API 호출마다 계산되며, 콘텐츠 요청을 수신하기 위한 첫 번째 캐싱 시스템의 인그레스에서 측정됩니다. 콘텐츠 요청은 프로덕션 환경에 대해서만 계산됩니다.
 
@@ -63,7 +63,7 @@ Cloud Manager 라이선스 대시보드를 사용하면 다음 정보에 쉽게 
 
 ### Adobe Experience Manager는 콘텐츠 요청을 어떻게 측정합니까? {#how-are-content-requests-measured}
 
-콘텐츠 요청은 AEMas a Cloud Service 의 Edge Server에서 추적됩니다. 원본 트래픽은 콘텐츠 요청에 포함되지 않습니다. AEM에 내장된 CDN은 유효한 HTML 및 JSON 요청을 as a Cloud Service으로 추적합니다.
+콘텐츠 요청은 AEM as a Cloud Service의 에지 서버에서 추적됩니다. 원본 트래픽은 콘텐츠 요청에 포함되지 않습니다. AEM as a Cloud Service에 내장된 CDN은 유효한 HTML 및 JSON 요청을 추적합니다.
 
 또한 AEM에는 검색 인덱스나 서비스를 새로 고치기 위해 사이트를 정기적으로 방문하는 잘 알려진 서비스를 포함하여 잘 알려진 봇을 제외하는 규칙이 있습니다.
 
@@ -79,14 +79,14 @@ Cloud Manager 라이선스 대시보드를 사용하면 다음 정보에 쉽게 
 | 보고서 세트 | 동일한 AEM 인스턴스 및 도메인에 속한 페이지는 데이터를 서로 다른 Analytics 보고서 세트로 전송할 수 있습니다. |
 | 서드파티 모니터링 및 보안 도구 | 모니터링 및 보안 검색 도구는 Analytics 보고서에서 추적되지 않는 AEM에 대한 콘텐츠 요청을 생성할 수 있습니다. |
 | 프리페치 요청 | 프리페치 서비스를 사용하여 페이지를 미리 로드하여 속도를 높이면 콘텐츠 요청 트래픽이 크게 증가할 수 있습니다. |
-| DDOS | Adobe은 DDOS 공격의 트래픽을 자동으로 감지하고 필터링하기 위해 모든 노력을 기울이고 있지만 모든 DDOS 공격을 감지한다는 보장은 없습니다 |
+| DDOS | Adobe는 DDOS 공격의 트래픽을 자동으로 감지하고 필터링하기 위해 모든 노력을 기울이고 있지만, 모든 DDOS 공격을 감지한다고 보장할 수는 없습니다. |
 | 트래픽 차단 | 브라우저에서 추적기 차단을 사용하면 일부 요청이 추적되지 않도록 옵트아웃할 수 있습니다. |
 | 방화벽 | 방화벽이 Analytics 추적을 차단할 수 있습니다. 이는 회사 방화벽에서 더 자주 발생합니다. |
 
-### 콘텐츠 요청 볼륨에 대해 자세히 알아보려면 어떻게 해야 합니까? {#current-request-volumes}
+### 내 콘텐츠 요청 볼륨에 대해 자세히 알고 싶으면 어떻게 하나요? {#current-request-volumes}
 
-라이선스 대시보드에 표시된 콘텐츠 요청 볼륨에 대한 추가 통찰력을 원하는 경우 Adobe 팀이 콘텐츠 요청의 상위 볼륨 드라이버를 보여 주는 보고서를 제공할 수 있습니다. 상위 사용 보고서를 요청하려면 Adobe 팀이나 고객 지원 Adobe에 문의하십시오.
+라이선스 대시보드에 표시된 콘텐츠 요청 볼륨에 대한 추가 인사이트가 필요한 경우, Adobe 팀에서 콘텐츠 요청의 상위 볼륨 드라이버를 보여 주는 보고서를 제공할 수 있습니다. 최상위 사용 보고서를 요청하려면 Adobe 팀이나 고객 지원 Adobe에 문의하십시오.
 
 ### 자체 CDN을 사용하는 경우 어떻게 합니까? {#using-own-cdn}
 
-라이선스 대시보드는 Cloud Service CDN에서 추적한 데이터만 표시합니다.  자체 CDN(BYOCDN)을 가져오기로 선택한 경우 계약에 명시된 대로 연간 컨텐츠 요청 볼륨을 Adobe으로 다시 보고합니다.
+라이선스 대시보드에는 Cloud Service CDN에서 추적한 데이터만 표시됩니다.  BYOCDN(Bring Your Own CDN)을 선택하면 계약에 명시된 대로 콘텐츠 요청 볼륨을 Adobe에 매년 보고하게 됩니다.

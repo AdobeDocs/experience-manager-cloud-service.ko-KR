@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service의 주요 변경 사항
 description: Adobe Experience Manager (AEM) as a Cloud Service의 주요 변경 사항
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 96%
+source-wordcount: '846'
+ht-degree: 97%
 
 ---
 
@@ -45,11 +45,11 @@ AEM Cloud Service는 AEM 프로젝트 관리를 위한 많은 새로운 기능�
 
 * [게시 측 전달](#publish-side-delivery)
 
-* [에셋 처리 및 전달](#asset-handling)
+* [자산 처리 및 전달](#asset-handling)
 
 ## 런타임 시 /apps 및 /libs를 변경할 수 없습니다 {#apps-libs-immutable}
 
-`/apps` 및 `/libs`의 모든 콘텐츠 및 하위 폴더는 읽기 전용입니다. 변경이 필요한 모든 기능 또는 사용자 지정 코드가 변경되지 않습니다. 해당 콘텐츠는 읽기 전용이고 쓰기 작업을 완료할 수 없다는 오류가 반환됩니다. 이는 AEM의 많은 영역에 영향을 줍니다.
+`/apps` 및 `/libs`의 모든 콘텐츠 및 하위 폴더는 읽기 전용입니다. 변경이 필요한 모든 기능 또는 사용자 지정 코드가 변경되지 않습니다. 해당 콘텐츠는 읽기 전용이며 쓰기 작업을 완료할 수 없다는 오류가 반환됩니다. 이는 AEM의 많은 영역에 영향을 줍니다.
 
 * `/libs`의 변경 사항이 전혀 허용되지 않습니다.
    * 이것이 새로운 규칙은 아니지만, AEM의 이전 온프레미스 버전에서는 강제 사항이 아니었습니다.
@@ -115,6 +115,6 @@ CDN과 작성 및 게시 서비스에 대한 트래픽 관리를 비롯한 HTTP 
 
 AMS 또는 온프레미스 설치에서 프로젝트 전환의 경우에는 AEM Cloud Service 내의 기능이 제공된 CDN에 맞게 최적화되므로 기본 CDN을 활용하는 것이 좋습니다.
 
-## 에셋 처리 및 전달 {#asset-handling}
+## 자산 처리 및 전달 {#asset-handling}
 
-에셋 업로드, 처리 및 다운로드는 [!DNL Experience Manager Assets] as a [!DNL Cloud Service]에서 최적화됩니다. [!DNL Assets]는 이제 더 효율적이고 더 많은 확장이 가능하며 훨씬 더 빠른 속도로 업로드 및 다운로드할 수 있습니다. 또한 기존 맞춤형 코드 및 일부 작업에도 영향을 줍니다. 변경 사항 목록 및 [!DNL Experience Manager] 6.5 기능과의 패리티는 [ [!DNL Assets]](/help/assets/assets-cloud-changes.md) 변경 사항을 참조하십시오.
+자산 업로드, 처리 및 다운로드는 [!DNL Experience Manager Assets] as a [!DNL Cloud Service]에서 최적화됩니다. [!DNL Assets]는 이제 더 효율적이고 더 많은 확장이 가능하며 훨씬 더 빠른 속도로 업로드 및 다운로드할 수 있습니다. 또한 기존 맞춤형 코드 및 일부 작업에도 영향을 줍니다. 변경 사항 목록 및 [!DNL Experience Manager] 6.5 기능과의 패리티는 [ [!DNL Assets]](/help/assets/assets-cloud-changes.md) 변경 사항을 참조하십시오.

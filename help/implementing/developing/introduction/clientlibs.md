@@ -2,9 +2,9 @@
 title: AEM에서 클라이언트측 라이브러리 as a Cloud Service 사용
 description: AEM은 클라이언트측 코드(clientlib)를 저장소에 저장하고, 카테고리로 구성하고, 각 코드 카테고리가 클라이언트에 제공되는 시기와 방법을 정의할 수 있는 클라이언트측 라이브러리 폴더를 제공합니다
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2562'
+source-wordcount: '2556'
 ht-degree: 1%
 
 ---
@@ -21,17 +21,17 @@ AEM에서 clientlib을 사용할 때의 장점은 다음과 같습니다.
 * 를 통해 액세스할 수 있는 경로를 통해 clientlib을 노출합니다 [dispatcher](/help/implementing/dispatcher/disp-overview.md)
 * 참조된 파일 또는 이미지에 대한 경로 재작성을 허용합니다.
 
-Clientlib은 AEM에서 CSS 및 Javascript를 제공하는 기본 제공 솔루션입니다.
+Clientlib은 AEM에서 CSS 및 JavaScript를 제공하는 내장 솔루션입니다.
 
 >[!TIP]
 >
->AEM 프로젝트용 CSS 및 Javascript를 만드는 프론트엔드 개발자도 [AEM Project Archetype 및 자동화된 프론트엔드 빌드 프로세스](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+>AEM 프로젝트용 CSS 및 JavaScript를 만드는 프론트엔드 개발자도 [AEM Project Archetype 및 자동화된 프론트엔드 빌드 프로세스](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
 
 ## 클라이언트측 라이브러리란 무엇입니까? {#what-are-clientlibs}
 
-사이트에는 클라이언트측에서 처리할 아이콘 및 웹 글꼴과 같은 정적 리소스뿐만 아니라 JavaScript 및 CSS가 필요합니다. clientlib은 참조하고(필요한 경우 범주별) 이러한 리소스를 제공하는 AEM 메커니즘입니다.
+사이트에서는 클라이언트측에서 처리할 아이콘 및 웹 글꼴과 같은 JavaScript 및 CSS와 정적 리소스가 필요합니다. clientlib은 참조하고(필요한 경우 범주별) 이러한 리소스를 제공하는 AEM 메커니즘입니다.
 
-AEM은 사이트의 CSS와 Javascript를 중앙 위치의 단일 파일로 수집하여 HTML 출력에 모든 리소스의 복사본을 하나만 포함하도록 합니다. 이를 통해 게재 효율성을 극대화하고 프록시를 통해 이러한 리소스를 저장소 중앙에서 유지 관리할 수 있어 액세스 보안을 유지할 수 있습니다.
+AEM은 사이트의 CSS와 JavaScript를 중앙 위치의 단일 파일로 수집하여 HTML 출력에 모든 리소스의 복사본을 하나만 포함하도록 합니다. 이를 통해 게재 효율성을 극대화하고 프록시를 통해 이러한 리소스를 저장소 중앙에서 유지 관리할 수 있어 액세스 보안을 유지할 수 있습니다.
 
 ## AEM용 프론트엔드 개발 as a Cloud Service {#fed-for-aemaacs}
 
@@ -170,11 +170,11 @@ AEM은 클라이언트 라이브러리 폴더를 디버깅하고 테스트하기
 
 ## 추가 클라이언트 라이브러리 폴더 기능 {#additional-features}
 
-AEM의 클라이언트 라이브러리 폴더에서 지원하는 다양한 기능이 있습니다. 그러나 AEMas a Cloud Service 에서는 이러한 기능이 필요하지 않으며, 이러한 기능은 사용하지 않습니다. 완성도를 위해 여기에 나열되어 있습니다.
+AEM의 클라이언트 라이브러리 폴더에서 지원하는 다양한 기능이 있습니다. 그러나 AEMas a Cloud Service 에서는 이러한 기능이 필요하지 않으며, 이러한 기능은 사용하지 않습니다. 완성도를 위해 여기에 나열됩니다.
 
 >[!WARNING]
 >
->클라이언트 라이브러리 폴더의 이러한 추가 기능은 AEM as a Cloud Service에서 필요하지 않으므로 사용하지 마십시오. 완성도를 위해 여기에 나열되어 있습니다.
+>클라이언트 라이브러리 폴더의 이러한 추가 기능은 AEM as a Cloud Service에서 필요하지 않으므로 사용하지 마십시오. 완성도를 위해 여기에 나열됩니다.
 
 ### Adobe Granite HTML 라이브러리 관리자 {#html-library-manager}
 
@@ -189,7 +189,7 @@ AEM의 클라이언트 라이브러리 폴더에서 지원하는 다양한 기�
 
 ### 종속성에 연결 {#linking-to-dependencies}
 
-클라이언트 라이브러리 폴더의 코드가 다른 라이브러리를 참조하면 다른 라이브러리를 종속성으로 식별합니다. 다음 `ui:includeClientLib` 클라이언트 라이브러리 폴더를 참조하는 태그로 인해 HTML 코드에는 생성된 라이브러리 파일에 대한 링크와 종속성이 포함됩니다.
+클라이언트 라이브러리 폴더의 코드가 다른 라이브러리를 참조하면 다른 라이브러리를 종속성으로 식별합니다. 다음 `ui:includeClientLib` 클라이언트 라이브러리 폴더를 참조하는 태그로 인해 HTML 코드에 생성된 라이브러리 파일에 대한 링크와 종속성이 포함됩니다.
 
 종속성은 다른 항목이어야 합니다. `cq:ClientLibraryFolder`. 종속성을 식별하려면 속성을 `cq:ClientLibraryFolder` 다음 속성을 가진 노드:
 

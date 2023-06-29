@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.3.0 릴리스 정보입니다.'
 description: "[!DNL Adobe Experience Manager] 2021.3.0용 as a Cloud Service 릴리스 노트"
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 36%
+source-wordcount: '1290'
+ht-degree: 37%
 
 ---
 
@@ -74,9 +74,9 @@ Adobe 담당자에게 문의하여 데모를 받거나 서비스에 등록할 �
 
 * 이제 제품 세부 사항 구성 요소를 모든 콘텐츠 페이지에서 사용하고 구성할 수 있습니다
 
-* 최신 CIF 코어 구성 요소 버전 v1.9.0이 포함된 CIF Venia 참조 사이트 - 2021.03.25가 릴리스되었습니다. 을(를) 참조하십시오 [CIF Venia 참조 사이트](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) 을 참조하십시오.
+* 최신 CIF 코어 구성 요소 버전 v1.9.0이 포함된 CIF Venia 참조 사이트 - 2021.03.25가 릴리스되었습니다. 다음을 참조하십시오 [CIF Venia 참조 사이트](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) 을 참조하십시오.
 
-* CIF 코어 구성 요소 v1.9.0이 릴리스되었습니다. 을(를) 참조하십시오 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) 을 참조하십시오.
+* CIF 코어 구성 요소 v1.9.0이 릴리스되었습니다. 다음을 참조하십시오 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) 을 참조하십시오.
 
 
 ## Cloud Manager {#cloud-manager}
@@ -128,7 +128,7 @@ AEM as a Cloud Service 2021.3.0의 Cloud Manager 릴리스 일자는 2021년 3�
 
 * 해당 구성이 배포되지 않은 경우에도 IP 허용 목록 옆에 녹색 “활성” 상태가 표시되는 경우가 있었습니다.
 
-* 모든 기존 프로덕션 파이프라인은 경험 감사 단계에서 자동으로 활성화됩니다.
+* 기존의 모든 프로덕션 파이프라인은 경험 감사 단계에서 자동으로 활성화됩니다.
 
 ## 콘텐츠 전송 도구 {#content-transfer-tool}
 
@@ -147,7 +147,7 @@ AEM as a Cloud Service 2021.3.0의 Cloud Manager 릴리스 일자는 2021년 3�
 ### 컨텐츠 전송 도구의 새로운 기능 {#what-is-new-ctt-march}
 
 * CTT는 이제 `/apps` 대신 `/libs` 특정 페이지에 대한 브라우저 책갈피가 더 이상 유효하지 않을 수 있습니다.
-* CTT가 설치되면 사용자는 추가 수준을 탐색하여 콘텐츠 전송 페이지로 이동해야 합니다. 다음을 참조하십시오 [컨텐츠 전송 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html) 을 참조하십시오.
+* CTT가 설치되면 사용자는 추가 수준을 탐색하여 콘텐츠 전송 페이지로 이동해야 합니다. 다음을 참조하십시오 [컨텐츠 전송 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ko-KR) 을 참조하십시오.
 
 ### 버그 수정 {#bug-fixes-ctt-march}
 
@@ -161,19 +161,19 @@ Best Practices Analyzer v2.1.8의 릴리스 날짜는 2021년 3월 22일입니�
 
 ### Best Practices Analyzer 의 새로운 기능 {#what-is-new-bpa}
 
-* UI의 BPA 보고서와 CSV 파일로 내보낸 보고서에서 ACS Commons 결과를 필터링하는 기능.
+* 사용자 인터페이스의 BPA 보고서 및 CSV 파일로 내보낸 보고서에서 ACS Commons 결과를 필터링하는 기능.
 
 ## 코드 리팩터링 도구 {#code-refactoring-tools}
 
 ### 코드 리팩터링 도구의 새로운 기능 {#what-is-new-crt}
 
-* Repository Modernizer의 새로운 기능 및 향상된 기능. 을(를) 참조하십시오 [GitHub 리소스: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 최신 버전용입니다.
+* Repository Modernizer의 새로운 기능 및 향상된 기능. 다음을 참조하십시오 [GitHub 리소스: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 최신 버전용입니다.
    * OSGi 구성(RepoInit 구성 제외)을 기본 .cfg.json 형식으로 정규화합니다.
    * OSGi 구성 폴더의 이름을 지정된 형식으로 변경합니다.
    * ui.apps.structure 프로젝트를 생성합니다.
    * 분석 모듈을 만듭니다.
 
-* Dispatcher Converter의 새로운 기능 및 개선 사항. 을(를) 참조하십시오 [GitHub 리소스: Dispatcher 변환기](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
+* Dispatcher Converter의 새로운 기능 및 개선 사항. 다음을 참조하십시오 [GitHub 리소스: Dispatcher 변환기](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
    * 콘텐츠 라이닝 대신 다른 포함에 대해 별도의 파일 생성.
    * vhost의 폴더 경로와 vhost 파일의 경로를 모두 처리하는 기능.
    * 600개 이상 범위의 대규모 고객 구성이 있는 팜 파일 생성.

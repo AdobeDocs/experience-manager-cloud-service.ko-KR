@@ -2,10 +2,10 @@
 title: SSL 인증서 추가
 description: Cloud Manager의 셀프서비스 도구를 사용하여 자체 SSL 인증서를 추가하는 방법을 알아봅니다.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 86%
+source-wordcount: '571'
+ht-degree: 95%
 
 ---
 
@@ -63,7 +63,7 @@ Cloud Manager를 사용하여 인증서를 추가하려면 다음 단계를 수�
 
    * 감지된 모든 오류가 표시됩니다.
       * 인증서를 저장하려면 먼저 모든 오류를 해결해야 합니다.
-      * 일반적인 오류를 해결하는 방법에 대한 자세한 내용은 [인증서 오류](#certificate-errors) 섹션을 참조하십시오.
+      * 다음을 참조하십시오 [인증서 오류](#certificate-errors) 일반적인 오류를 해결하는 방법에 대한 자세한 내용을 알아봅니다.
 
 1. 인증서를 저장하려면 **저장**&#x200B;을 클릭합니다.
 
@@ -73,7 +73,7 @@ Cloud Manager를 사용하여 인증서를 추가하려면 다음 단계를 수�
 
 >[!NOTE]
 >
->사용자는 의 멤버여야 합니다. **비즈니스 소유자** 또는 **배포 관리자** cloud Manager에서 SSL 인증서를 설치하는 역할입니다.
+>Cloud Manager에서 SSL 인증서를 설치하려면 사용자가 **비즈니스 소유자** 또는 **배포 관리자** 역할의 멤버여야 합니다.
 
 ## 인증서 오류 {#certificate-errors}
 
@@ -153,7 +153,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 >[!NOTE]
 >
->이 두 명령의 출력은 정확히 동일해야 합니다. 에 대해 일치하는 개인 키를 찾을 수 없는 경우 `main/server` 인증서는 새 CSR을 생성하거나 SSL 공급업체에 업데이트된 인증서를 요청하여 인증서 키를 다시 지정해야 합니다.
+>이 두 명령의 출력은 정확히 동일해야 합니다. `main/server` 인증서에 대해 일치하는 개인 키를 찾을 수 없는 경우, 새 CSR을 생성하거나 SSL 공급업체에 업데이트된 인증서를 요청하여 인증서 키를 다시 지정해야 합니다.
 
 ### 인증서 유효 날짜 {#certificate-validity-dates}
 

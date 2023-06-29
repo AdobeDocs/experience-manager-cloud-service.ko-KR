@@ -2,9 +2,9 @@
 title: 인덱스 변환기
 description: 인덱스 변환기
 exl-id: ac02ca41-eb35-4f24-bf17-d00ce318423d
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '274'
 ht-degree: 2%
 
 ---
@@ -36,8 +36,8 @@ If [Oak 색인 확인](https://adobe-consulting-services.github.io/acs-aem-commo
 
 * Adobe I/O CLI 의 방법 : 의 방법으로 인덱스 변환기 를 사용하는 것이 좋습니다. `aio-cli-plugin-aem-cloud-service-migration` (Adobe I/O CLI용 AEM as a Cloud Service 코드 리팩터링 플러그인).
 
-  을(를) 참조하십시오 **[Git 리소스: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** 을(를) 사용하여 플러그인을 설치하고 사용하는 방법을 알아봅니다.
+  다음을 참조하십시오 **[Git 리소스: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** 을(를) 사용하여 플러그인을 설치하고 사용하는 방법을 알아봅니다.
 
 * 독립형 유틸리티로서 : 인덱스 변환기를 독립형 유틸리티로 실행할 수도 있습니다.
 
-  을(를) 참조하십시오 **[Git 리소스: aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** 을(를) 사용하여 이 도구를 사용하는 방법을 알아봅니다.
+  다음을 참조하십시오 **[Git 리소스: aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** 을(를) 사용하여 이 도구를 사용하는 방법을 알아봅니다.

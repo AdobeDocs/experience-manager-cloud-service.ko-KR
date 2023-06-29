@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 릴리스 2021.10.0의 마이그레이션 도구 �
 description: AEM as a Cloud Service 릴리스 2021.11.0의 마이그레이션 도구 릴리스 정보
 feature: Release Information
 exl-id: 6b1caa63-dcb0-4c48-ab2c-fd72617abf13
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '408'
 ht-degree: 14%
 
 ---
@@ -25,7 +25,7 @@ Cloud Acceleration Manager 의 릴리스 날짜는 2021년 10월 25일입니다.
 
 ### 새로운 기능 {#what-is-new-cam}
 
-Cloud Acceleration Manager는 이제 트렌드 라인 보고서에서 기록 BPA 보고서를 볼 수 있는 기능을 사용자에게 제공합니다. 이 보고서를 통해 사용자는 진행 상황을 사용하기 쉬운 그래픽 표현으로 볼 수 있습니다. 을(를) 참조하십시오 [추세선 보기 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#trendline-view-cam) 을 참조하십시오.
+Cloud Acceleration Manager는 이제 트렌드 라인 보고서에서 기록 BPA 보고서를 볼 수 있는 기능을 사용자에게 제공합니다. 이 보고서를 통해 사용자는 진행 상황을 사용하기 쉬운 그래픽 표현으로 볼 수 있습니다. 다음을 참조하십시오 [추세선 보기 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#trendline-view-cam) 을 참조하십시오.
 
 ### 릴리스 일자 {#release-date-october-cam}
 
@@ -33,7 +33,7 @@ Cloud Acceleration Manager 의 릴리스 날짜는 2021년 10월 4일입니다.
 
 ### 새로운 기능 {#what-is-new-cam-oct}
 
-Cloud Acceleration Manager는 이제 인쇄 가능한 미리 보기에서 BPA 보고서를 볼 수 있는 기능을 사용자에게 제공하므로 간단한 인쇄 또는 인쇄를 PDF에 제공하여 쉽게 공유할 수 있습니다. 에서 6단계 및 7단계를 참조하십시오. [Best Practices Analysis 카드 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+Cloud Acceleration Manager는 이제 인쇄 가능한 미리 보기에서 BPA 보고서를 볼 수 있는 기능을 사용자에게 제공하므로 간단한 인쇄 또는 인쇄를 PDF에 제공하여 쉽게 공유할 수 있습니다. 의 6단계 및 7단계 를 참조하십시오 [Best Practices Analysis 카드 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
 
 
 ## 콘텐츠 전송 도구 {#ctt-release}
@@ -44,7 +44,7 @@ Cloud Acceleration Manager는 이제 인쇄 가능한 미리 보기에서 BPA �
 
 ### 새로운 기능 {#what-is-new-ctt-oct}
 
-* 아래 나열된 기능을 포함하여 간소화된 사용자 경험으로 사용자 매핑 도구가 개선되었습니다. 자세한 내용은 다음을 참조하십시오. [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en).
+* 아래 나열된 기능을 포함하여 간소화된 사용자 경험으로 사용자 매핑 도구가 개선되었습니다. 자세한 내용은 [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en).
    * 사용자 매핑을 실행하기 전에 사용자 관리 API에 대한 연결 테스트
    * 오류를 정상적으로 건너뛰고 사용자 매핑 활동을 계속합니다.
    * 다음과 같은 경우 사용자 매핑이 더 이상 실패하지 않음 **액세스 토큰** 24시간 후에 만료됩니다. 사용자 매핑은 마지막으로 중지된 위치에서 다시 실행할 수 있습니다.

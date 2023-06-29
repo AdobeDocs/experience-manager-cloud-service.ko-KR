@@ -3,10 +3,10 @@ title: 쿼리 및 색인화 모범 사례
 description: Adobe의 모범 사례 가이드라인에 기반하여 색인 및 쿼리를 최적화하는 방법에 대해 알아봅니다.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1558'
-ht-degree: 95%
+source-wordcount: '1556'
+ht-degree: 94%
 
 ---
 
@@ -111,7 +111,7 @@ AEM as a Cloud Service는 효율적인 쿼리 구현을 보조하도록 디자�
 
 효율적인 JCR 쿼리 및 색인 정의를 생성하는 데 도움을 얻고 싶다면 [JCR 쿼리 치트시트](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html#jcrquerycheatsheet)를 다운로드하여 개발 중 참조할 수 있습니다.
 
-여기에는 쿼리 성능이 다양한 여러 시나리오를 포괄하는 QueryBuilder, XPath, SQL-2에 대한 샘플 쿼리가 포함되어 있습니다. 이 치트시트는 또한 Oak 색인을 구축하거나 사용자 정의하는 방법에 대한 권장 사항도 제공합니다. 이 치트시트의 콘텐츠는 AEM as a Cloud Service와 AEM 6.5에 적용됩니다.
+여기에는 쿼리 성능이 다양한 여러 시나리오를 포괄하는 QueryBuilder, XPath, SQL-2에 대한 샘플 쿼리가 포함되어 있습니다. 이 치트시트는 또한 Oak 색인을 구축하거나 사용자 정의하는 방법에 대한 권장 사항도 제공합니다. 이 치트 시트의 콘텐츠는 AEM as a Cloud Service 및 AEM 6.5에 적용됩니다.
 
 ## 결과 세트 크기가 큰 쿼리 {#queries-with-large-result-sets}
 

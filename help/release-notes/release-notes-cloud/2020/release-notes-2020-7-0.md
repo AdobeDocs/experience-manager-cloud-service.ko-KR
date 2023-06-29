@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 릴리스의 릴리스 노트'
 description: "[!DNL Adobe Experience Manager] 2020.7.0용 as a Cloud Service 릴리스 노트"
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 76%
+source-wordcount: '1033'
+ht-degree: 73%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 76%
 
 이제 Cloud Service에서 AEM Commerce를 사용할 수 있습니다.
 
-을(를) 참조하십시오 [AEM Commerce 시작하기 as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) 을 참조하십시오.
+다음을 참조하십시오 [AEM Commerce 시작하기 as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) 을 참조하십시오.
 
 ## 핵심 구성 요소 {#core-components}
 
@@ -66,7 +66,7 @@ ht-degree: 76%
 * 새로운 [PDF 뷰어 구성 요소](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html) 소개
 
 * 이제 코어 구성 요소에 대한 AMP(Accelerated Mobile Page) 지원을 사용할 수 있습니다. Google 모바일 검색 결과에서 사이트 방문 시 즉시 페이지를 전환하여 더 빠른 고객 경험을 제공하고 사용자 참여도와 SEO를 향상합니다.
-자세한 내용은 [코어 구성 요소에 대한 AMP 지원](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html)을 참조하십시오.
+다음을 참조하십시오 [핵심 구성 요소에 대한 AMP 지원](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) 을 참조하십시오.
 
 * [Adobe 클라이언트 데이터 레이어](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) 버전 1.0.2와의 호환성.
 
@@ -88,12 +88,12 @@ ht-degree: 76%
 
 * 이제 Cloud Manager 파이프라인이 고객 설정 변수 및 암호를 지원합니다.
 
-  자세한 내용은 파이프라인 변수를 참조하십시오.
+  자세한 내용은 파이프라인 변수 를 참조하십시오.
 
 * 이제 인증 바인딩된 비공개 Maven 저장소가 지원됩니다.
 
 * 이제 Cloud Manager 빌드 컨테이너가 Java 8과 Java 11을 모두 지원합니다.
-자세한 내용은 Java 11 지원 사용을 참조하십시오.
+자세한 내용은 Java 11 지원 사용 을 참조하십시오.
 
 ### 버그 수정 {#bug-fixes-cm}
 
@@ -137,7 +137,7 @@ ht-degree: 76%
 
 * AEM(Adobe Experience Manager) 6.1에서 이전 버전의 CRA를 실행할 수 없습니다. 관리자 그룹의 사용자를 허용하는 명시적 지원이 추가되었습니다.
 
-  자세한 내용은 [AEM 6.1에 CRA 설치](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61)를 참조하십시오.
+  다음을 참조하십시오 [AEM 6.1에 CRA 설치](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) 을 참조하십시오.
 
 * 요약 보고서에 표시되는 만료 타임스탬프가 잘못되었습니다.
 

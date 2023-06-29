@@ -2,9 +2,9 @@
 title: 복제
 description: 배포 및 복제 문제 해결
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1339'
 ht-degree: 44%
 
 ---
@@ -182,7 +182,7 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 ### 콘텐츠 무효화 방법 {#invalidating-content}
 
-작성자의 Sling 콘텐츠 무효화(SCD)(기본 메서드)를 사용하거나 복제 API를 사용하여 게시 Dispatcher 플러시 복제 에이전트를 호출하여 콘텐츠를 직접 무효화할 수 있습니다. 자세한 내용은 [캐싱](/help/implementing/dispatcher/caching.md) 페이지를 참조하십시오.
+작성자의 Sling 콘텐츠 무효화(SCD)(기본 메서드)를 사용하거나 복제 API를 사용하여 게시 Dispatcher 플러시 복제 에이전트를 호출하여 콘텐츠를 직접 무효화할 수 있습니다. 다음을 참조하십시오 [캐싱](/help/implementing/dispatcher/caching.md) 자세한 내용은 페이지를 참조하십시오.
 
 **복제 API 용량 제한**
 

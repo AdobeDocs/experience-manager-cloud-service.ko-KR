@@ -2,10 +2,10 @@
 title: 등록, 로그인 및 사용자 프로필
 description: AEM as a Cloud Service의 등록, 로그인, 사용자 데이터 및 그룹 동기화에 대해 알아봅니다.
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1168'
-ht-degree: 90%
+source-wordcount: '1167'
+ht-degree: 93%
 
 ---
 
@@ -83,7 +83,7 @@ AEM의 SSO 인증 처리기 서비스 사용에 대한 자세한 내용은 [SSO(
 
 ### 고정 세션 및 압축된 토큰 {#sticky-sessions-and-encapsulated-tokens}
 
-AEM as a Cloud Service에서는 쿠키 기반의 고정 세션이 활성화되어 있으므로, 최종 사용자는 각 요청에 대해 동일한 게시 노드에 라우팅됩니다. 성능 향상을 위해 기본적으로 압축된 토큰 기능이 활성화되어 있으므로 각 요청에서 저장소의 사용자 레코드를 참조할 필요가 없습니다. 최종 사용자가 선호하는 게시 노드가 교체된 경우, 아래 데이터 동기화 섹션에 설명된 대로 새 게시 노드에서 사용자 ID 레코드를 사용할 수 있습니다.
+AEM as a Cloud Service에서는 쿠키 기반의 고정 세션이 활성화되어 있으므로, 최종 사용자는 각 요청에 대해 동일한 게시 노드에 라우팅됩니다. 성능 향상을 위해 기본적으로 압축된 토큰 기능이 활성화되어 있으므로 각 요청에 대해 저장소의 사용자 레코드를 참조하지 않아도 됩니다. 최종 사용자가 선호하는 게시 노드가 교체된 경우, 아래 데이터 동기화 섹션에 설명된 대로 새 게시 노드에서 사용자 ID 레코드를 사용할 수 있습니다.
 
 ## 사용자 프로필 {#user-profile}
 
@@ -94,17 +94,17 @@ AEM as a Cloud Service에서는 쿠키 기반의 고정 세션이 활성화되�
 사용자 프로필 정보를 작성하고 읽는 방법에는 두 가지가 있습니다.
 
 * `com.adobe.granite.security.user` 인터페이스 UserPropertiesManager 인터페이스를 통한 서버측 사용. 데이터가 `/home/users`에서 사용자의 노드 아래에 배치됩니다. 사용자별로 고유한 페이지가 캐시되지 않았는지 확인하십시오.
-* [설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html?lang=ko#personalization)에 따라 ContextHub를 사용하는 클라이언트측
+* [설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html?lang=en#personalization)에 따라 ContextHub를 사용하는 클라이언트측
 
 ### 서드파티 데이터 저장소 {#third-party-data-stores}
 
 최종 사용자 데이터는 CRM과 같은 서드파티 공급업체에 전송되고, 사용자가 AEM에 로그인한 후 API를 통해 검색되고, AEM 사용자의 프로필 노드에서 유지(또는 새로 고침)되고, 필요에 따라 AEM에 의해 사용될 수 있습니다.
 
-프로필 속성을 검색하기 위해 서드파티 서비스에 실시간으로 액세스할 수 있지만, 이것이 AEM에서의 요청 처리에 물리적으로 영향을 미치지 않도록 해야 합니다.
+프로필 속성을 검색하기 위해 서드파티 서비스에 실시간으로 액세스할 수 있지만, 이것이 AEM의 요청 처리에 물리적으로 영향을 미치지 않도록 하는 것이 중요합니다.
 
 ## 권한 (폐쇄형 사용자 그룹) {#permissions-closed-user-groups}
 
-폐쇄형 사용자 그룹(CUG)이라고도 하는 게시 계층 액세스 정책은 [여기에 설명된 대로](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=ko#applying-your-closed-user-group-to-content-pages) AEM 작성자에 정의되어 있습니다. 일부 사용자로부터 웹 사이트의 특정 섹션 또는 페이지를 제한하려면 여기에 설명된 대로 AEM 작성자를 사용하여 필요에 따라 CUG를 적용한 다음 게시 계층에 복제하십시오.
+폐쇄형 사용자 그룹(CUG)이라고도 하는 게시 계층 액세스 정책은 [여기에 설명된 대로](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=en#applying-your-closed-user-group-to-content-pages) AEM 작성자에 정의되어 있습니다. 일부 사용자로부터 웹 사이트의 특정 섹션 또는 페이지를 제한하려면 여기에 설명된 대로 AEM 작성자를 사용하여 필요에 따라 CUG를 적용한 다음 게시 계층에 복제하십시오.
 
 * 사용자가 SAML을 사용하여 ID 공급자(IdP)를 통해 인증하여 로그인하는 경우, 인증 처리기는 사용자의 그룹 멤버십(게시 계층의 CUG와 일치해야 함)을 식별한 다음 저장소 레코드를 통해 사용자와 그룹 간의 연결을 유지합니다.
 * IdP 통합 없이 로그인하는 경우 사용자 정의 코드를 동일한 저장소 구조 관계에 적용할 수 있습니다.

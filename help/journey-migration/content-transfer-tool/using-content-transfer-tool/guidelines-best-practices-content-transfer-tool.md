@@ -2,9 +2,9 @@
 title: 컨텐츠 전송 도구 사용을 위한 지침 및 우수 사례
 description: 컨텐츠 전송 도구 사용을 위한 지침 및 우수 사례
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1544'
 ht-degree: 19%
 
 ---
@@ -77,23 +77,23 @@ ht-degree: 19%
 
 * 추출 단계 중에 컨텐츠 전송 도구는 활성 AEM 소스 인스턴스에서 실행됩니다.
 
-* 완료 후 *추출* 컨텐츠 전송 프로세스의 단계 및 시작 전 *수집 단계* 컨텐츠를 AEM as a Cloud Service으로 수집 *단계* 또는 *프로덕션* 인스턴스: 지원 티켓을 로그하여 Adobe에게 실행 의도를 알려야 합니다 *수집* 따라서 Adobe이 작업 중에 중단이 발생하지 않도록 *수집* 프로세스. 1주일 전에 지원 티켓을 기록해야 합니다. *수집* 날짜. 지원 티켓을 제출하면 지원 팀에서 다음 단계에 대한 지침을 제공합니다. 다음 세부 정보로 지원 티켓을 기록할 수 있습니다.
+* 완료 후 *추출* 컨텐츠 전송 프로세스의 단계 및 시작 전 *수집 단계* 컨텐츠를 AEM as a Cloud Service으로 수집 *단계* 또는 *프로덕션* 인스턴스: 지원 티켓을 로그하여 Adobe에게 실행 의도를 알려야 합니다 *수집* 따라서 Adobe이 작업 중에 중단이 발생하지 않도록 *수집* 프로세스. 1주일 전에 지원 티켓을 기록해야 합니다. *수집* 날짜. 지원 티켓을 제출한 후 지원 팀에서 다음 단계에 대한 지침을 제공합니다. 다음 세부 정보로 지원 티켓을 기록할 수 있습니다.
 
    * 다음을 시작할 정확한 날짜 및 예상 시간(표준 시간대 포함) *수집* 단계.
    * 데이터를 수집할 환경 유형(스테이지 또는 프로덕션).
    * 프로그램 ID.
 
-* 다음 *수집 단계* 작성자는 전체 작성자 배포를 축소합니다. 즉, 전체 수집 프로세스 중에는 작성자 AEM을 사용할 수 없습니다. 또한 를 실행하는 동안 Cloud Manager 파이프라인이 실행되지 않는지 확인하십시오. *수집* 단계.
+* 다음 *수집 단계* 작성자는 전체 작성자 배포를 축소합니다. 즉, 전체 수집 프로세스 중에는 작성자 AEM을 사용할 수 없습니다. 또한 를 실행하는 동안 Cloud Manager 파이프라인이 실행되지 않도록 하십시오. *수집* 단계.
 
 * 사용 시 `Amazon S3` 또는 `Azure` 소스 AEM 시스템의 데이터 저장소로, 저장된 블롭을 삭제(가비지 수집)할 수 없도록 데이터 저장소를 구성해야 합니다. 이렇게 하면 인덱스 데이터의 무결성이 보장되며 이러한 방식을 구성하지 않으면 인덱스 데이터의 무결성이 부족하여 추출에 실패할 수 있습니다.
 
-* 사용자 지정 색인을 사용하는 경우 다음을 사용하여 사용자 지정 색인을 구성해야 합니다 `tika` 컨텐츠 전송 도구를 실행하기 전의 노드입니다. 을(를) 참조하십시오 [새 색인 정의 준비](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html#preparing-the-new-index-definition) 을 참조하십시오.
+* 사용자 지정 색인을 사용하는 경우 다음을 사용하여 사용자 지정 색인을 구성해야 합니다 `tika` 컨텐츠 전송 도구를 실행하기 전의 노드입니다. 다음을 참조하십시오 [새 색인 정의 준비](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html#preparing-the-new-index-definition) 을 참조하십시오.
 
-* 추가 추출을 하려는 경우 기존 콘텐츠의 콘텐츠 구조를 초기 추출 시점부터 추가 추출을 실행할 때까지 변경하지 않는 것이 중요합니다. 초기 추출 이후 구조가 변경된 콘텐츠에서는 추가 작업을 실행할 수 없습니다. 마이그레이션 프로세스 중에 이를 제한하십시오.
+* 추가 추출을 하려는 경우 기존 콘텐츠의 콘텐츠 구조를 초기 추출 시점부터 추가 추출을 실행할 때까지 변경하지 않는 것이 중요합니다. 초기 추출 이후 구조가 변경된 콘텐츠에서는 추가 작업을 실행할 수 없습니다. 마이그레이션 프로세스 중에 이를 제한해야 합니다.
 
 * 버전을 마이그레이션 세트의 일부로 포함하려는 경우 다음을 사용하여 추가 작업을 수행합니다 `wipe=false`, 콘텐츠 전송 도구의 현재 제한으로 인해 버전 지우기를 비활성화해야 합니다. 버전 삭제를 활성화하고 마이그레이션 세트에 대해 추가 작업을 수행하는 경우 수집 작업을 다음과 같이 수행해야 합니다. `wipe=true`.
 
-* 오랫동안 사용하지 않으면 마이그레이션 세트가 만료되며 그 이후에는 데이터를 더 이상 사용할 수 없습니다. 검토하십시오. [마이그레이션 세트 만료](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) 을 참조하십시오.
+* 오랫동안 사용하지 않으면 마이그레이션 세트가 만료되며 그 이후에는 데이터를 더 이상 사용할 수 없습니다. 리뷰 [마이그레이션 세트 만료](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) 을 참조하십시오.
 
 ## 다음 단계 {#whats-next}
 

@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.6.0 릴
 description: AEM as a Cloud Service의 Cloud Manager 2023.6.0 릴리스 정보입니다.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: deef27dd90be22669b2328f6e394b8d3df99b4b9
-workflow-type: ht
-source-wordcount: '238'
-ht-degree: 100%
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Adobe Experience Manager as a Cloud Service의 최신 릴리스 정보는 [이 페이지](/help/release-notes/release-notes-cloud/release-notes-current.md)를 참조하십시오.
+>다음을 참조하십시오 [이 페이지](/help/release-notes/release-notes-cloud/release-notes-current.md) Adobe Experience Manager as a Cloud Service의 최신 릴리스 정보.
 
 ## 릴리스 일자 {#release-date}
 

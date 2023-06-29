@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3496'
-ht-degree: 16%
+source-wordcount: '3491'
+ht-degree: 15%
 
 ---
 
@@ -34,7 +34,7 @@ Adobe Creative Cloud은 크리에이티브 팀에 디지털 에셋을 제작할 
 
 | 요구 사항 | 사용 사례 | 관련 표면 |
 |---|---|---|
-| 데스크탑에서 크리에이티브를 위한 경험 단순화 | DAM에서 자산에 대한 액세스 간소화([!DNL Assets]) 크리에이티브 전문가 또는 보다 광범위하게 기본 에셋 생성 애플리케이션에서 작업하는 데스크탑 사용자를 위한 것입니다. Experience Manager에 대한 변경 사항을 검색, 사용(열기), 편집 및 저장하고 새 파일을 업로드할 수 있는 쉽고 간단한 방법이 필요합니다. | Win 또는 Mac 데스크탑, Creative Cloud 앱 |
+| 데스크탑에서 크리에이티브를 위한 경험 단순화 | DAM에서 자산에 대한 액세스 간소화([!DNL Assets]) 크리에이티브 전문가 또는 보다 광범위하게 기본 에셋 생성 애플리케이션에서 작업하는 데스크탑 사용자를 위한 것입니다. Experience Manager에 대한 변경 사항을 검색, 사용(열기), 편집 및 저장하고, 새 파일을 업로드하는 쉽고 간단한 방법이 필요합니다. | Win 또는 Mac 데스크탑, Creative Cloud 앱 |
 | 에서 바로 사용할 수 있는 고품질 자산 제공 [!DNL Adobe Stock] | 마케터는 자산 소싱 및 검색을 지원하여 콘텐츠 작성 프로세스를 가속화합니다. 크리에이티브 전문가는 크리에이티브 도구 내에서 승인된 에셋을 바로 사용합니다. | [!DNL Assets]; [!DNL Adobe Stock] marketplace; 메타데이터 필드 |
 | 조직별 자산 분배 및 공유 | 내부 부서/로컬 지점과 외부 파트너, 배포자 및 에이전시는 상위 조직이 공유하는 승인된 자산을 사용합니다. 이 조직은 생성된 자산을 보다 광범위한 재사용을 위해 안전하고 원활하게 공유하고자 합니다. | [!DNL Brand Portal], [!DNL Asset Share Commons] |
 | 업로드된 에셋의 사전 정의된 변형 자동 생성 | 사전 정의된 작업에 대해 Adobe 고유의 미디어 처리 및 변환 기술을 활용하여 에셋을 자동으로 처리합니다. API 및 에셋 마이크로서비스를 사용하여 사용자 지정 로직을 만들어 사용자 지정 작업을 정의합니다. | [!DNL Assets] 사용자 인터페이스 |
@@ -43,7 +43,7 @@ Adobe Creative Cloud은 크리에이티브 팀에 디지털 에셋을 제작할 
 
 | 관련된 담당자에 대한 가치 제안 | Adobe 제공 | 관련 표면 |
 |---|---|---|
-| 크리에이티브 사용자가에서 에셋 검색 [!DNL Experience Manager], 열어서 사용하고, 변경 내용을 편집하고, 업로드하십시오. [!DNL Experience Manager], 새 파일을에 업로드할 수 있습니다. [!DNL Experience Manager], 을(를) 떠나지 않고 [!DNL Creative Cloud] 앱. | [Adobe Asset Link](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator 및 InDesign. |
+| 크리에이티브 사용자가에서 에셋 검색 [!DNL Experience Manager], 열어서 사용하고, 변경 내용을 편집하고, 업로드하십시오. [!DNL Experience Manager]및 새 파일을에 업로드합니다 [!DNL Experience Manager], 을(를) 떠나지 않고 [!DNL Creative Cloud] 앱. | [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator 및 InDesign. |
 | 비즈니스 사용자는에 에셋 열기 및 사용, 변경 사항 편집 및 업로드 간소화 [!DNL Experience Manager]및 새 파일을에 업로드 [!DNL Experience Manager] 데스크탑 환경에서. Adobe이 아닌 자산 유형을 포함하여 기본 데스크탑 애플리케이션에서 모든 자산 유형을 열기 위해 일반 통합을 사용합니다. | [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Win 및 Mac 데스크탑에서 데스크탑 앱 Experience Manager |
 | 마케터와 비즈니스 사용자는 Experience Manager 내에서 Adobe Stock 자산을 검색, 미리보기, 라이센스 부여 및 저장하고 관리합니다. 라이센스가 부여되고 저장된 자산은 더 나은 거버넌스를 위해 선별된 Adobe Stock 메타데이터를 제공합니다. | [Experience Manager 및 Adobe Stock 통합](aem-assets-adobe-stock.md) | [!DNL Experience Manager] 웹 인터페이스 |
 | 디지털 제품 디자이너와 마케터 간의 협업을 개선합니다. 디자이너는 Adobe XD 캔버스의 디자인 및 와이어프레임 모델에서 디지털 에셋을 사용할 수 있습니다. | [[!DNL Adobe Asset Link] 대상 [!DNL Adobe XD]](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
@@ -119,7 +119,7 @@ Experience Manager 및 Creative Cloud 통합 모범 사례를 간략히 요약�
 * **Understand why and when to store assets in DAM:** Updates to be made available to the broader team in your organization
 * **Mind the volume of assets shared:** If your use case is asset distribution, governance and security might be the most important aspects. Consider using tools built for doing that at scale, like Brand Portal.
 * **Understand asset lifecycle:** Know how assets are handled in your organization by different teams
-* **Handle frequent saves to assets with care:** Adobe Asset Link takes care of that for you with PS, AI, ID. For other applications, don&#39;t carry out work in progress tasks in mapped/shared folder unless you need all the changes in DAM
+* **Handle frequent saves to assets with care:** Adobe Asset Link takes care of that for you with PS, AI, ID. 다른 애플리케이션의 경우 DAM에서 모든 변경 사항이 필요하지 않은 경우 매핑된/공유 폴더에서 진행 중인 작업을 수행하지 마십시오
 
 ### Experience Manager Assets에서 Adobe Stock 에셋에 액세스 {#access-to-adobe-stock-assets-from-aem-assets}
 
@@ -236,14 +236,14 @@ Experience Manager 데스크톱 앱을 사용하여 Experience Manager Assets의
 
 **추가 참조**
 
-* [에셋 번역](translate-assets.md)
+* [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [에셋이 지원되는 파일 형식](file-format-support.md)
-* [에셋 검색](search-assets.md)
-* [연결된 에셋](use-assets-across-connected-assets-instances.md)
-* [에셋 보고서](asset-reports.md)
+* [자산이 지원되는 파일 형식](file-format-support.md)
+* [자산 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [자산 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
-* [에셋 다운로드](download-assets-from-aem.md)
+* [자산 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)

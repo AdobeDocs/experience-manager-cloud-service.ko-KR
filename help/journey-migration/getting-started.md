@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service로의 마이그레이션 여정 시작하기
 description: AEM as a Cloud Service로의 전환에 대한 기본 사항을 숙지하여 마이그레이션 여정 시작
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 91%
+source-wordcount: '583'
+ht-degree: 87%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 91%
 
 ## 목표 {#objective}
 
-이 문서는 AEM의 클라우드 기반 버전을 사용해야 하는 이유와 AEM as a Cloud Service으로 마이그레이션하는 여러 단계를 이해하는 데 도움이 됩니다. 문서를 읽고 나면
+이 문서는 AEM의 클라우드 네이티브 버전을 사용해야 하는 이유와 AEM as a Cloud Service으로 마이그레이션하는 여러 단계를 이해하는 데 도움이 됩니다. 문서를 읽고 나면
 
 * AEM as a Cloud Service로 이동하여 얻을 수 있는 이점을 이해할 수 있습니다.
 * 클라우드로 전환할 수 있도록 수행해야 하는 광범위한 단계를 숙지하십시오

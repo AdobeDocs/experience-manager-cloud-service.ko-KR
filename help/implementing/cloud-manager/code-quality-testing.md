@@ -2,10 +2,10 @@
 title: 코드 품질 테스트
 description: 파이프라인의 코드 품질 테스트가 어떻게 작동하고 배포 품질을 어떻게 개선할 수 있는지 알아봅니다.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1175'
-ht-degree: 97%
+source-wordcount: '1161'
+ht-degree: 87%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 97%
 
 코드 품질 테스트는 일련의 품질 규칙을 기반으로 애플리케이션 코드를 평가합니다. 코드 품질 전용 파이프라인의 주요 목적이며 모든 프로덕션 및 비프로덕션 파이프라인에서 빌드 단계 직후에 실행됩니다.
 
-다양한 파이프라인 유형에 대한 자세한 내용은 [CI-CD 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 문서를 참조하십시오.
+다음을 참조하십시오 [CI-CD 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 다양한 파이프라인 유형에 대해 자세히 알아보십시오.
 
 ## 코드 품질 규칙 {#understanding-code-quality-rules}
 
@@ -30,7 +30,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->[이 링크를 사용](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)하여 전체 규칙 목록을 다운로드할 수 있습니다.
+>전체 규칙 목록을 다운로드할 수 있습니다 [이 링크 포함](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
 
 ### 3계층 등급 {#three-tiered-gate}
 
@@ -65,11 +65,11 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->자세한 정의는 [SonarQube의 지표 정의](https://docs.sonarqube.org/latest/user-guide/metric-definitions/)를 참조하십시오.
+>다음을 참조하십시오 [SonarQube의 지표 정의](https://docs.sonarqube.org/latest/user-guide/metric-definitions/) 를 참조하십시오.
 
 >[!NOTE]
 >
->[!UICONTROL Cloud Manager]에서 실행한 [사용자 정의 코드 품질 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md)에 대한 자세한 내용은 사용자 정의 코드 품질 규칙 문서를 참조하십시오.
+>에서 실행하는 사용자 지정 코드 품질 규칙에 대해 자세히 알아보려면 [!UICONTROL Cloud Manager], 참조 [사용자 지정 코드 품질 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 ## 긍정 오류 처리 {#dealing-with-false-positives}
 
@@ -103,10 +103,10 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 >[!NOTE]
 >
->`@SuppressWarnings` 주석을 가능한 구체적으로 만드는 것이 모범 사례이지만(즉, 문제를 일으키는 특정 문이나 블록에만 주석 추가), 클래스 수준에서 주석을 추가하는 것은 가능합니다.
+>을(를) 만드는 것이 모범 사례이지만 `@SuppressWarnings` 가능한 한 구체적인 주석, 즉 문제를 일으키는 특정 문이나 블록에만 주석을 답니다. 클래스 수준에서 주석을 달 수 있습니다.
 
 >[!NOTE]
->명시적인 보안 테스트 단계는 없지만 코드 품질 단계에서 보안 관련 코드 품질 규칙이 평가됩니다. Cloud Service 보안에 대한 자세한 내용은 [AEM as a Cloud Service 보안 개요](/help/security/cloud-service-security-overview.md) 문서를 참조하십시오.
+>명시적인 보안 테스트 단계는 없지만 코드 품질 단계에서 보안 관련 코드 품질 규칙이 평가됩니다. 다음을 참조하십시오 [AEM as a Cloud Service 보안 개요](/help/security/cloud-service-security-overview.md) Cloud Service 보안에 대해 자세히 알아보십시오.
 
 ## 콘텐츠 패키지 검색 최적화 {#content-package-scanning-optimization}
 
@@ -116,11 +116,11 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (skipped-content-package)
 * `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (skipped-content-package)
 
-안에 있는 항목만 `myco-all-1.0.0-SNAPSHOT.zip` 는 건너뛴 두 개의 콘텐츠 패키지입니다. 그런 다음 &quot;모든&quot; 콘텐츠 패키지 대신 임베드된 두 개의 패키지가 스캔됩니다.
+`myco-all-1.0.0-SNAPSHOT.zip` 내에 있는 항목만 건너뛴 두 개의 콘텐츠 패키지인 경우, “모든” 콘텐츠 패키지 대신 임베드된 두 개의 패키지가 스캔됩니다.
 
 수십 개의 임베드된 패키지를 생성하는 프로젝트의 경우, 이 최적화는 파이프라인 실행당 10분 이상 절약되는 것으로 나타났습니다.
 
-“모든” 콘텐츠 패키지에 건너뛴 콘텐츠 패키지와 OSGi 번들의 조합이 포함된 경우 특별한 경우가 발생할 수 있습니다. 예를 들어 `myco-all-1.0.0-SNAPSHOT.zip`에 앞서 언급한 두 개의 임베드된 패키지가 포함된 경우 하나 이상의 OSGi 번들로만 구성된 새로운 최소 콘텐츠 패키지가 구성됩니다. 이 패키지의 이름은 항상 `cloudmanager-synthetic-jar-package`이고 포함된 번들은 `/apps/cloudmanager-synthetic-installer/install`에 배치됩니다.
+“모든” 콘텐츠 패키지에 건너뛴 콘텐츠 패키지와 OSGi 번들의 조합이 포함된 경우 특별한 경우가 발생할 수 있습니다. 예를 들어 다음과 같습니다. `myco-all-1.0.0-SNAPSHOT.zip` 이전에 언급한 두 개의 임베드된 패키지와 하나 이상의 OSGi 번들이 포함된 다음 OSGi 번들로만 구성된 새로운 최소 콘텐츠 패키지가 구성됩니다. 이 패키지의 이름은 항상 `cloudmanager-synthetic-jar-package`이고 포함된 번들은 `/apps/cloudmanager-synthetic-installer/install`에 배치됩니다.
 
 >[!NOTE]
 >

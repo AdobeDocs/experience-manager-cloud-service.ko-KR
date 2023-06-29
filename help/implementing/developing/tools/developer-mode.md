@@ -4,7 +4,7 @@ seo-title: Developer Mode
 description: 개발자 모드에서는 현재 페이지에 대한 정보를 개발자에게 제공하는 몇 가지 탭이 있는 사이드 패널이 열립니다
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 1%
@@ -76,7 +76,7 @@ AEM에서 페이지를 편집할 때 몇 가지 [모드](/help/sites-cloud/autho
 
 * **스크립트 편집:** CRXDE Lite에서 구성 요소 스크립트를 여는 링크입니다.
 
-* **구성 요소 세부 사항 보기:** 내의 구성 요소에 대한 세부 정보를 엽니다. [구성 요소 콘솔.](/help/sites-cloud/authoring/features/components-console.md)
+* **구성 요소 세부 사항 보기:** 내의 구성 요소에 대한 세부 정보를 엽니다. [구성 요소 콘솔](/help/sites-cloud/authoring/features/components-console.md).
 
 V자 버튼을 탭하거나 클릭하여 구성 요소 항목을 확장하면 다음도 표시됩니다.
 

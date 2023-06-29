@@ -3,9 +3,9 @@ title: AMS에서 AEM as a Cloud Service로 Dispatcher 구성 마이그레이션
 description: AMS에서 AEM as a Cloud Service로 Dispatcher 구성 마이그레이션
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1446'
+source-wordcount: '1451'
 ht-degree: 18%
 
 ---
@@ -31,7 +31,7 @@ Dispatcher 구성 구조에는 Managed ServicesAEM 와 as a Cloud Service 간에
 ### 아카이브 추출 및 최종 접두사 제거
 
 폴더에 아카이브의 압축을 풀고 바로 아래 하위 폴더가 `conf`, `conf.d`,
-`conf.dispatcher.d` 및 `conf.modules.d`. 그렇지 않으면 계층 구조에서 위로 이동합니다.
+`conf.dispatcher.d` 및 `conf.modules.d`. 그렇지 않은 경우 계층 구조에서 위로 이동합니다.
 
 ### 사용하지 않는 하위 폴더 및 파일 제거
 
@@ -60,7 +60,7 @@ Dispatcher 구성 구조에는 Managed ServicesAEM 와 as a Cloud Service 간에
 
 이름이 인 모든 파일 제거 `base_rewrite.rules` 및 `xforwarded_forcessl_rewrite.rules` 및 다음을 제거해야 합니다. `Include` 이 문을 참조하는 가상 호스트 파일의 문입니다.
 
-If `conf.d/rewrites` 이제 에는 단일 파일이 포함되어 있으며 이름을 로 변경해야 합니다. `rewrite.rules` 그리고 적응하는 것을 잊지 마세요. `Include` 가상 호스트 파일에서도 해당 파일을 참조하는 문입니다.
+If `conf.d/rewrites` 이제 에는 단일 파일이 포함되어 있으며 이름을 로 변경해야 합니다. `rewrite.rules` 및 를 수정하는 것을 잊지 마십시오. `Include` 가상 호스트 파일에서도 해당 파일을 참조하는 문입니다.
 
 그러나 폴더에 가상 호스트별 파일이 여러 개 있는 경우 해당 컨텐츠를 `Include` 가상 호스트 파일에서 이를 참조하는 문입니다.
 
@@ -70,7 +70,7 @@ If `conf.d/rewrites` 이제 에는 단일 파일이 포함되어 있으며 이�
 
 이름이 인 모든 파일 제거 `ams_default.vars` 및 다음을 제거해야 합니다. `Include` 이 문을 참조하는 가상 호스트 파일의 문입니다.
 
-If `conf.d/variables` 이제 에는 단일 파일이 포함되어 있으며 이름을 로 변경해야 합니다. `custom.vars` 그리고 적응하는 것을 잊지 마세요. `Include` 가상 호스트 파일에서도 해당 파일을 참조하는 문입니다.
+If `conf.d/variables` 이제 에는 단일 파일이 포함되어 있으며 이름을 로 변경해야 합니다. `custom.vars` 및 를 수정하는 것을 잊지 마십시오. `Include` 가상 호스트 파일에서도 해당 파일을 참조하는 문입니다.
 
 그러나 폴더에 가상 호스트별 파일이 여러 개 있는 경우 해당 컨텐츠를 `Include` 가상 호스트 파일에서 이를 참조하는 문입니다.
 
@@ -116,7 +116,7 @@ If `conf.dispatcher.d/cache` 은(는) 현재 비어 있습니다. 파일을 복�
 표준 Dispatcher 구성에서 이 폴더로. 표준 Dispatcher 구성은 폴더에서 찾을 수 있습니다 `src` 이 SDK의 다음 사항에 적응하는 것을 잊지 마십시오.
 `$include` 를 참조하는 문 `ams_*_cache.any` 팜 파일의 규칙 파일도 참조하십시오.
 
-대신 `conf.dispatcher.d/cache` 이제 접미사가 포함된 단일 파일 포함 `_cache.any`, 이름을 로 변경해야 합니다. `rules.any` 그리고 적응하는 것을 잊지 마세요. `$include` 팜 파일에서도 이 파일을 참조하는 문입니다.
+대신 `conf.dispatcher.d/cache` 이제 접미사가 포함된 단일 파일 포함 `_cache.any`, 이름을 로 변경해야 합니다. `rules.any` 및 를 수정하는 것을 잊지 마십시오. `$include` 팜 파일에서도 이 파일을 참조하는 문입니다.
 
 그러나 폴더에 해당 패턴을 가진 팜 특정 파일이 여러 개 있는 경우 해당 컨텐츠를 `$include` 팜 파일에서 이를 참조하는 문
 
@@ -136,7 +136,7 @@ $include "../cache/default_invalidate.any"
 
 `ams_` 접두어가 있는 파일을 모두 제거합니다.
 
-If `conf.dispatcher.d/clientheaders` 이제 접미사가 포함된 단일 파일 포함 `_clientheaders.any`, 이름을 로 변경해야 합니다. `clientheaders.any` 그리고 적응하는 것을 잊지 마세요. `$include` 팜 파일에서도 이 파일을 참조하는 문입니다.
+If `conf.dispatcher.d/clientheaders` 이제 접미사가 포함된 단일 파일 포함 `_clientheaders.any`, 이름을 로 변경해야 합니다. `clientheaders.any` 및 를 수정하는 것을 잊지 마십시오. `$include` 팜 파일에서도 이 파일을 참조하는 문입니다.
 
 그러나 폴더에 해당 패턴을 가진 팜 특정 파일이 여러 개 있는 경우 해당 컨텐츠를 `$include` 팜 파일에서 이를 참조하는 문
 
@@ -162,7 +162,7 @@ $include "../clientheaders/default_clientheaders.any"
 `ams_` 접두어가 있는 파일을 모두 제거합니다.
 
 If `conf.dispatcher.d/filters` 이제 에는 이름이 로 변경되어야 하는 단일 파일이 포함되어 있습니다.
-`filters.any` 그리고 적응하는 것을 잊지 마세요. `$include` 팜 파일에서도 이 파일을 참조하는 문입니다.
+`filters.any` 및 를 수정하는 것을 잊지 마십시오. `$include` 팜 파일에서도 이 파일을 참조하는 문입니다.
 
 그러나 폴더에 해당 패턴을 가진 팜 특정 파일이 여러 개 있는 경우 해당 컨텐츠를 `$include` 팜 파일에서 이를 참조하는 문
 
@@ -201,7 +201,7 @@ $include "../renders/default_renders.any"
 `ams_` 접두어가 있는 파일을 모두 제거합니다.
 
 If `conf.dispatcher.d/virtualhosts` 이제 에는 이름이 로 변경되어야 하는 단일 파일이 포함되어 있습니다.
-`virtualhosts.any` 그리고 적응하는 것을 잊지 마세요. `$include` 팜 파일에서도 이 파일을 참조하는 문입니다.
+`virtualhosts.any` 및 를 수정하는 것을 잊지 마십시오. `$include` 팜 파일에서도 이 파일을 참조하는 문입니다.
 
 그러나 폴더에 해당 패턴을 가진 팜 특정 파일이 여러 개 있는 경우 해당 컨텐츠를 `$include` 팜 파일에서 이를 참조하는 문
 

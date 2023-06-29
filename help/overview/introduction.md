@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 소개
 description: Adobe Experience Manager (AEM) as a Cloud Service 소개.
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -29,7 +29,7 @@ AEM as a Cloud Service를 통해 AEM 애플리케이션을 클라우드 기반 �
 
 * 최대 복원력 및 효율성이 최적화된 성능 구조에 의해 지원됩니다.
 
-* AEM as a Cloud Service와 Adobe Experience Cloud의 긴밀한 통합을 활용하여 온라인 마케팅 및 웹 분석 제품을 통해 더 나은 고객 경험을 제공할 수 있습니다.
+* AEM as a Cloud Service과 Adobe Experience Cloud의 긴밀한 통합을 활용하여 온라인 마케팅 및 웹 분석 제품에 대해 더 나은 고객 경험을 제공할 수 있습니다.
 
 * 코드 리팩터링, 콘텐츠 전송 등 마이그레이션 작업을 가속화하는 데 도움이 되는 도구를 활용할 수 있습니다.
 
@@ -78,6 +78,6 @@ AEM은 최신 클라우드 서비스의 주요 특성을 채택하여 다음과 
 
 >[!TIP]
 >
->AEM as a Cloud Service에 대한 개요가 있으면 [온보딩 여정](/help/journey-onboarding/overview.md)을 검토하여 빠르게 온보딩할 수 있습니다.
+>AEM as a Cloud Service에 대한 개요가 있으면 을 검토하여 빠르게 온보딩할 수 있습니다. [온보딩 여정](/help/journey-onboarding/overview.md).
 >
 >이미 온보딩했거나 AEM의 기능을 테스트할 준비가 되었습니까? [AEM 참조 데모 추가 기능](/help/journey-sites/demos-add-on/overview.md)을 설치하여 풍부한 예제를 통해 AEM의 강력한 기능을 살펴보십시오.

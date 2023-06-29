@@ -3,10 +3,10 @@ title: CI/CD 파이프라인
 description: Cloud Manager의 CI/CD 파이프라인과 이를 사용하여 코드를 효율적으로 배포하는 방법에 대해 알아봅니다.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1358'
-ht-degree: 87%
+source-wordcount: '1339'
+ht-degree: 86%
 
 ---
 
@@ -17,7 +17,7 @@ Cloud Manager의 CI/CD 파이프라인과 이를 사용하여 코드를 효율�
 
 ## 소개 {#introduction}
 
-Cloud Manager의 CI/CD 파이프라인은 소스 저장소에서 코드를 빌드하고 환경에 배포하는 메커니즘입니다. 파이프라인은 소스 코드 저장소의 가져오기 요청(예: 코드 변경)과 같은 이벤트에 의해 트리거되거나 릴리스 케이던스와 일치하도록 정기적인 일정에 따라 트리거될 수 있습니다.
+Cloud Manager의 CI/CD 파이프라인은 소스 저장소에서 코드를 빌드하고 환경에 배포하는 메커니즘입니다. 파이프라인은 소스 코드 저장소의 가져오기 요청(즉, 코드 변경)과 같은 이벤트에 의해 트리거되거나 릴리스 케이던스와 일치하도록 정기적인 일정에 따라 트리거될 수 있습니다.
 
 파이프라인을 구성하려면 다음 작업을 수행해야 합니다.
 
@@ -44,7 +44,7 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 
 >[!TIP]
 >
->자세한 내용은 [프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 문서를 참조하십시오.
+>다음을 참조하십시오 [프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 을 참조하십시오.
 
 ## 비프로덕션 파이프라인 {#non-prod-pipeline}
 
@@ -52,7 +52,7 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 
 >[!TIP]
 >
->자세한 내용은 [비프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 문서를 참조하십시오.
+>다음을 참조하십시오 [비프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 을 참조하십시오.
 
 ## 코드 소스 {#code-sources}
 
@@ -85,22 +85,22 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 
 전체 스택 파이프라인은 AEM 런타임에 백엔드 코드, 프론트엔드 코드 및 웹 계층 구성을 동시에 배포합니다.
 
-* 백엔드 코드 - 변경 가능한 콘텐츠뿐 아니라 Java 코드, OSGi 구성, repinit와 같이 변경 불가능한 콘텐츠
+* 백엔드 코드 - Java 코드, OSGi 구성, Repoinit 및 변경 가능한 콘텐츠 등 변경할 수 없는 콘텐츠
 * 프론트엔드 코드 - JavaScript, CSS, 글꼴과 같은 애플리케이션 UI 리소스
 * 웹 계층 구성 - HTTPD/Dispatcher 구성
 
 전체 스택 파이프라인은 모든 작업을 한 번에 수행하는 &#39;uber&#39; 파이프라인을 나타내며, 사용자는 프론트엔드 파이프라인 및 웹 계층 구성 파이프라인을 통해 각각 프론트엔드 코드 또는 Dispatcher 구성을 독점적으로 배포할 수 있는 옵션을 제공합니다.
 
-전체 스택 파이프라인은 프론트엔드 코드(JavaScript/CSS)를 [AEM 클라이언트 라이브러리](/help/implementing/developing/introduction/clientlibs.md)로 패키징합니다.
+전체 스택 파이프라인은 프론트엔드 코드(JavaScript/CSS)를 [AEM 클라이언트 라이브러리](/help/implementing/developing/introduction/clientlibs.md).
 
 [웹 계층 구성 파이프라인](#web-tier-config-pipelines)이 구성되지 않은 경우 전체 스택 파이프라인이 웹 계층 구성을 배포할 수 있습니다.
 
 다음 제한 사항이 적용됩니다.
 
-* 사용자는 다음 계정으로 로그인해야 합니다. **배포 관리자** 파이프라인을 구성하거나 실행하는 역할입니다.
+* 파이프라인을 구성하거나 실행하려면 사용자가 **배포 관리자** 역할로 로그인해야 합니다.
 * 언제든지 환경당 하나의 전체 스택 파이프라인만 있을 수 있습니다.
 
-또한 를 도입하기로 선택한 경우 전체 스택 파이프라인이 작동하는 방식을 알고 있어야 합니다. [웹 계층 구성 파이프라인.](#web-tier-config-pipelines)
+또한 [웹 계층 구성 파이프라인](#web-tier-config-pipelines)을 도입하기로 선택한 경우, 전체 스택 파이프라인이 작동하는 방식을 알고 있어야 합니다.
 
 * 해당 웹 계층 구성 파이프라인이 있는 경우 환경에 대한 전체 스택 파이프라인은 Dispatcher 구성을 무시합니다.
 * 환경에 해당하는 웹 계층 구성 파이프라인이 존재하지 않는 경우 사용자는 전체 스택 파이프라인을 구성하거나 Dispatcher 구성을 무시할 수 있습니다.
@@ -115,7 +115,7 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 
 >[!IMPORTANT]
 >
->AEM 버전을 사용하고 있어야 합니다. `2021.10.5933.20211012T154732Z ` 또는 프론트엔드 파이프라인을 사용할 수 있는 AEM Sites이 포함된 버전 이상입니다.
+>프론트엔드 파이프라인을 사용하려면 AEM Sites가 활성화되고 AEM 버전이 `2021.10.5933.20211012T154732Z ` 이상이어야 합니다.
 
 >[!NOTE]
 >
@@ -127,11 +127,11 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 
 ### 프론트엔드 파이프라인을 구성하기 전에 {#before-start}
 
-프론트엔드 파이프라인을 구성하기 전에 [AEM 빠른 사이트 생성 여정](/help/journey-sites/quick-site/overview.md)에서 사용하기 쉬운 AEM 빠른 사이트 생성 도구에 대한 전체 안내서를 검토하십시오. 이 여정을 통해 프론트엔드 개발을 간소화하고 백엔드 AEM 지식 없이 사이트를 빠르게 사용자 정의할 수 있습니다.
+프론트엔드 파이프라인을 구성하기 전에 [AEM 빠른 사이트 생성 여정](/help/journey-sites/quick-site/overview.md) 사용하기 쉬운 AEM 빠른 사이트 생성 도구에 대한 전체 안내서입니다. 이 여정을 통해 프론트엔드 개발을 간소화하고 백엔드 AEM 지식 없이 사이트를 빠르게 사용자 정의할 수 있습니다.
 
 ### 프론트엔드 파이프라인 구성 {#configure-front-end}
 
-프론트엔드 파이프라인을 구성하는 방법은 다음 문서를 참조하십시오.
+프론트엔드 파이프라인을 구성하는 방법은 다음을 참조하십시오.
 
 * [프로덕션 파이프라인 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
 * [비프로덕션 파이프라인 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
@@ -140,7 +140,7 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 
 프론트엔드 파이프라인을 사용하면 프론트엔드 개발자에게 더 많은 독립성을 부여하고 개발 프로세스를 가속화할 수 있습니다.
 
-문서를 참조하십시오 [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 이 프로세스의 전체 잠재력을 활용하기 위해 알아야 할 몇 가지 고려 사항과 함께 이 프로세스가 작동하는 방식에 대한 정보입니다.
+다음을 참조하십시오 [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 이 프로세스의 전체 잠재력을 활용하기 위해 알아야 할 몇 가지 고려 사항과 함께 이 프로세스가 작동하는 방식에 대한 정보입니다.
 
 ### 전체 스택 파이프라인 구성 {#configure-full-stack}
 
@@ -160,18 +160,18 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 
 다음 제한 사항이 적용됩니다.
 
-* AEM 버전을 사용하고 있어야 합니다. `2021.12.6151.20211217T120950Z` 웹 계층 구성 파이프라인을 사용하는 버전 이상이어야 합니다.
-* 다음을 수행해야 합니다. [dispatcher 도구의 유연한 모드 옵트인](/help/implementing/dispatcher/disp-overview.md#validation-debug) 웹 계층 구성 파이프라인을 사용합니다.
-* 사용자는 다음 계정으로 로그인해야 합니다. **배포 관리자** 파이프라인을 구성하거나 실행하는 역할입니다.
+* 웹 계층 구성 파이프라인을 사용하려면 AEM 버전 `2021.12.6151.20211217T120950Z` 이상을 사용해야 합니다.
+* 웹 계층 구성 파이프라인을 사용하려면 [유연한 Dispatcher 도구 모드를 옵트인](/help/implementing/dispatcher/disp-overview.md#validation-debug)해야 합니다.
+* 파이프라인을 구성하거나 실행하려면 사용자가 **배포 관리자** 역할로 로그인해야 합니다.
 * 언제든지 환경당 하나의 웹 계층 구성 파이프라인만 있을 수 있습니다.
 * 해당 전체 스택 파이프라인이 실행 중일 때 사용자는 웹 계층 구성 파이프라인을 구성할 수 없습니다.
-* 웹 계층 구조는 [클라우드의 Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) 문서에 정의된 대로 유연한 모드 구조를 준수해야 합니다.
+* 웹 계층 구조는 문서에 정의된 대로 유연한 모드 구조를 준수해야 합니다 [클라우드의 디스패처](/help/implementing/dispatcher/disp-overview.md#validation-debug).
 
-또한 [전체 스택 파이프라인](#full-stack-pipeline) 웹 계층 파이프라인을 도입할 때 동작합니다.
+또한 웹 계층 파이프라인을 도입할 때 [전체 스택 파이프라인](#full-stack-pipeline)이 어떻게 작동하는지 알고 있어야 합니다.
 
 * 웹 계층 구성 파이프라인이 환경에 대해 구성되지 않은 경우 사용자는 해당 전체 스택 파이프라인을 구성하는 동안 실행 및 배포 중 Dispatcher 구성을 포함하거나 무시하도록 선택할 수 있습니다.
 * 웹 계층 구성 파이프라인이 환경에 대해 구성되면 해당 전체 스택 파이프라인(있는 경우)은 실행 및 배포 중에 Dispatcher 구성을 무시합니다.
-* 웹 계층 구성 파이프라인이 삭제되면 해당 전체 스택 파이프라인이 실행 중에 Dispatcher 구성을 배포하도록 재설정됩니다.
+* 웹 계층 구성 파이프라인이 삭제된 후에 해당 전체 스택 파이프라인이 실행 중에 Dispatcher 구성을 배포하도록 재설정됩니다.
 
 웹 계층 구성 파이프라인은 코드 품질 또는 배포 유형일 수 있습니다.
 

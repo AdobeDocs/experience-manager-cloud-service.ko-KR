@@ -2,10 +2,10 @@
 title: 제품 관리실
 description: 제품 관리실을 사용한 작업
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 3%
+source-wordcount: '432'
+ht-degree: 1%
 
 ---
 
@@ -23,13 +23,13 @@ ht-degree: 3%
 
 ## 구성 {#configuration}
 
-제품 카탈로그는 AEM에서 구성해야 합니다. 다음을 참조하십시오 [스토어 및 카탈로그 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?#catalog) 추가 정보.
+제품 카탈로그는 AEM에서 구성해야 합니다. 다음을 참조하십시오 [스토어 및 카탈로그 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog) 추가 정보.
 
-단계적 카탈로그 기능을 활성화하려면 인증이 필요합니다. 다음을 참조하십시오 [시작](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html) 추가 정보.
+단계적 카탈로그 기능을 활성화하려면 인증이 필요합니다. 다음을 참조하십시오 [시작](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html) 추가 정보.
 
 >[!NOTE]
 >
->단계적 카탈로그 기능은 토큰 기반 인증을 지원하는 Adobe Commerce 및 타사 커넥터에서만 사용할 수 있습니다.
+>단계적 카탈로그 기능은 토큰 기반 인증을 지원하는 Adobe Commerce 및 서드파티 커넥터에서만 사용할 수 있습니다.
 
 ## 제품 관리실 열기 {#opening-product-cockpit}
 
@@ -47,7 +47,7 @@ ht-degree: 3%
 
 ![범주 하위](../assets/catalog-category-children.png)
 
-가능한 경우 제품을 클릭하면 제품 변형이 로드됩니다.
+사용 가능한 경우 제품을 클릭하면 제품 변형이 로드됩니다.
 
 ![제품 변형](../assets/catalog-product-variation.png)
 
@@ -69,7 +69,7 @@ ht-degree: 3%
 
 ## 제품 카탈로그 속성 {#catalog-properties}
 
-제품 또는 범주의 속성 아이콘을 클릭하면 선택한 객체의 속성 보기가 열립니다. 제품 변형의 열기 속성은 기본 제품 속성을 여는 것과 같습니다.
+제품 또는 범주의 속성 아이콘을 클릭하면 선택한 객체의 속성 보기가 열립니다. 제품 변형의 열린 속성은 기본 제품 속성을 연 것과 같습니다.
 
 ### 상거래 탭 {#tabs}
 

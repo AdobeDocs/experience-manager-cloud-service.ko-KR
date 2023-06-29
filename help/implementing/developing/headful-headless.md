@@ -1,17 +1,17 @@
 ---
 title: AEM Headful 및 Headless
-description: AEM 프로젝트는 Headful 및 Headless model 모델에서 구현될 수 있지만 양자택일은 아닙니다. AEM은 하나의 프로젝트에서 두 모델의 장점을 모두 활용할 수 있는 유연성을 제공합니다.
+description: AEM 프로젝트는 headful과 headless 모델로 구현할 수 있지만 양자택일은 아닙니다. AEM은 하나의 프로젝트에서 두 모델의 장점을 모두 활용할 수 있는 유연성을 제공합니다.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1008'
-ht-degree: 96%
+source-wordcount: '1010'
+ht-degree: 91%
 
 ---
 
 # AEM Headful 및 Headless {#headful-headless}
 
-Adobe Experience Manager 프로젝트는 Headful 및 Headless model 모델 모두에서 구현될 수 있지만 양자택일은 아닙니다. AEM은 하나의 프로젝트에서 두 모델의 장점을 모두 활용할 수 있는 유연성을 제공합니다. 이 문서에서는 다양한 모델에 대한 개요를 제공하고 SPA 통합 수준에 대해 설명합니다.
+Adobe Experience Manager 프로젝트는 headful과 headless 모델 모두에서 구현할 수 있지만 양자택일은 아닙니다. AEM은 하나의 프로젝트에서 두 모델의 장점을 모두 활용할 수 있는 유연성을 제공합니다. 이 문서에서는 다양한 모델에 대한 개요를 제공하고 SPA 통합 수준에 대해 설명합니다.
 
 ## 개요 {#overview}
 
@@ -31,7 +31,7 @@ Headless 모델에서 콘텐츠는 AEM 저장소에서 관리되지만 REST와 G
 
 ## 웹 샵 예 {#web-shop-example}
 
-회사에 대한 기존 웹 샵이 SPA로서 존재하고 있다고 가정해 보겠습니다. 여기에 모든 제품 세부 정보와 이미지가 있습니다. 그런 다음 AEM을 소개하여 홍보 사이트, 블로그 및 캠페인 콘텐츠와 같은 마케팅 활동을 강화합니다. 두 가지를 통합하려면 어떻게 합니까? AEM은 옵션 스펙트럼을 활성화합니다.
+회사에 대한 기존 웹 샵이 SPA로서 존재하고 있다고 가정해 보겠습니다. 여기에 모든 제품 세부 정보와 이미지가 있습니다. 그런 다음 AEM을 소개하고 프로모션 사이트, 블로그와 캠페인 콘텐츠 등 마케팅 활동을 홍보합니다. 두 가지를 통합하려면 어떻게 합니까? AEM은 옵션 스펙트럼을 활성화합니다.
 
 * **시스템은 서로 독립적으로 작동할 수 있습니다.**
 * **GraphQL을 통해 AEM의 제한된 콘텐츠를 웹 샵에 제공합니다.** 콘텐츠는 작성자에 의해 AEM에서 생성할 수 있지만 웹 샵 SPA를 통해서만 볼 수 있습니다.
@@ -43,7 +43,7 @@ Headless 모델에서 콘텐츠는 AEM 저장소에서 관리되지만 REST와 G
 
 >[!NOTE]
 >
->물론 웹 샵 SPA을 완전히 기능하는 AEM SPA으로 다시 구현할 수도 있습니다 [AEM SPA 편집기 프레임워크 사용.](/help/implementing/developing/hybrid/introduction.md) 이미 AEM이 있고 새 웹 샵이나 다른 SPA를 생성하는 경우 이는 권장되는 메서드이지만 이 문서의 범위에 적용되지 않습니다.
+>물론 웹 샵 SPA을 완전히 기능하는 AEM SPA으로 다시 구현할 수도 있습니다 [AEM SPA Editor 프레임워크 사용](/help/implementing/developing/hybrid/introduction.md). 이미 AEM이 있고 새 웹 샵이나 다른 SPA를 생성하는 경우 이는 권장되는 메서드이지만 이 문서의 범위에 적용되지 않습니다.
 
 ## SPA 통합 수준 {#integration-levels}
 
@@ -54,18 +54,18 @@ SPA 통합은 AEM에서 네 가지 수준의 스펙트럼에 속합니다.
    * 콘텐츠는 두 개의 시스템에서 독립적으로 생성, 관리 및 게재됩니다.
 * **수준 1: 콘텐츠 조각 통합**
    * [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md)을 사용하여 AEM에서 SPA의 제한된 콘텐츠를 만들고 관리합니다.
-   * SPA는 AEM의 [GraphQL API.](/help/headless/graphql-api/content-fragments.md)를 통해 이 콘텐츠를 검색합니다.
+   * SPA은 AEM을 통해 이 콘텐츠를 검색합니다. [GRAPHQL API](/help/headless/graphql-api/content-fragments.md).
    * 일부 콘텐츠는 AEM에서 관리되고, 일부 콘텐츠는 외부 시스템에서 관리됩니다.
    * 콘텐츠는 SPA에서만 볼 수 있습니다.
 * **수준 2: AEM에 SPA 임베드**
    * [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md)을 사용하여 AEM에서 SPA의 콘텐츠를 만들고 관리합니다.
-   * SPA는 AEM의 [GraphQL API.](/help/headless/graphql-api/content-fragments.md)를 통해 이 콘텐츠를 검색합니다.
+   * SPA은 AEM을 통해 이 콘텐츠를 검색합니다. [GRAPHQL API](/help/headless/graphql-api/content-fragments.md).
    * 일부 콘텐츠는 AEM에서 관리되고, 일부 콘텐츠는 외부 시스템에서 관리됩니다.
    * 콘텐츠는 AEM 내 컨텍스트에서 볼 수 있습니다.
    * 제한된 콘텐츠는 AEM 내에서 편집할 수 있습니다.
 * **수준 3: AEM의 SPA 임베드 및 전체 활성화**
    * [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md)을 사용하여 AEM에서 SPA의 콘텐츠를 만들고 관리합니다.
-   * SPA는 AEM의 [GraphQL API.](/help/headless/graphql-api/content-fragments.md)를 통해 이 콘텐츠를 검색합니다.
+   * SPA은 AEM을 통해 이 콘텐츠를 검색합니다. [GRAPHQL API](/help/headless/graphql-api/content-fragments.md).
    * 콘텐츠는 AEM 내 컨텍스트에서 볼 수 있습니다.
    * 대부분의 콘텐츠는 AEM 내에서 편집할 수 있습니다.
 
@@ -80,6 +80,6 @@ SPA 장점을 계속 유지하면서 AEM의 장점과 유연성을 수준 2와 3
 * **수준 1:** 콘텐츠 조각과 [AEM Headless 프레임워크](/help/headless/introduction.md)를 사용하여 AEM 콘텐츠를 SPA에 게재할 수 있습니다.
 * **수준 2:** 수준 1 외에:
    * [RemotePage 구성 요소](/help/implementing/developing/hybrid/remote-page.md)를 사용하여 외부 SPA를 AEM에 임베드하여 컨텍스트 내에서 AEM 콘텐츠를 볼 수 있습니다.
-   * SPA의 특정 지점을 활성화하여 [AEM에서 제한적으로 편집할 수도 있습니다.](/help/implementing/developing/hybrid/editing-external-spa.md)
+   * SPA의 특정 지점을 활성화하여 [AEM에서 제한적으로 편집할 수도 있습니다](/help/implementing/developing/hybrid/editing-external-spa.md).
 * **수준 3:** 수준 2 외에:
    * AEM에서 종합적인 편집을 수행하도록 전체 SPA 영역을 활성화할 수 있습니다.

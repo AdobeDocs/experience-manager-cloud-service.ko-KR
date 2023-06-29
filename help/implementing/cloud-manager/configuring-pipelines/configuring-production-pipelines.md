@@ -3,17 +3,17 @@ title: 프로덕션 파이프라인 구성
 description: 코드를 빌드하고 프로덕션 환경에 배포하기 위해 프로덕션 파이프라인을 구성하는 방법을 알아봅니다.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1513'
-ht-degree: 91%
+source-wordcount: '1509'
+ht-degree: 96%
 
 ---
 
 
 # 프로덕션 파이프라인 구성 {#configure-production-pipeline}
 
-코드를 빌드하고 프로덕션 환경에 배포하기 위해 프로덕션 파이프라인을 구성하는 방법을 알아봅니다. 프로덕션 파이프라인은 먼저 코드를 스테이징 환경에 배포하고 승인 시 동일한 코드를 프로덕션 환경에 배포합니다.
+코드를 빌드하고 프로덕션 환경에 배포하기 위해 프로덕션 파이프라인을 구성하는 방법을 알아봅니다. 프로덕션 파이프라인은 먼저 코드를 스테이지 환경에 배포하고 승인 시 동일한 코드를 프로덕션 환경에 배포합니다.
 
 프로덕션 파이프라인을 구성하려면 사용자에게 **[배포 관리자](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** 역할이 있어야 합니다.
 
@@ -95,7 +95,7 @@ ht-degree: 91%
 
 >[!NOTE]
 >
->선택한 환경에 대한 전체 스택 코드 파이프라인이 이미 있는 경우 이 선택이 비활성화됩니다.
+>선택한 환경에 대한 전체 스택 코드 파이프라인이 이미 있는 경우, 이 선택이 비활성화됩니다.
 
 전체 스택 코드 프로덕션 파이프라인의 구성을 완료하려면 다음 단계를 따릅니다.
 
@@ -126,7 +126,7 @@ ht-degree: 91%
 
    ![경험 감사의 경로 정의](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
 
-1. 클릭 **페이지 추가** 환경 주소를 사용하여 경로가 자동으로 완료되고 경로 테이블에 추가됩니다.
+1. **페이지 추가**&#x200B;를 클릭하면 환경 주소를 사용하여 경로가 자동으로 완료되고 경로 테이블에 추가됩니다.
 
    ![표에 경로 저장](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
 
@@ -137,7 +137,7 @@ ht-degree: 91%
 
 1. 파이프라인을 저장하려면 **저장**&#x200B;을 클릭합니다.
 
-경험 감사를 위해 구성된 경로는 파이프라인이 실행될 때 성능, 접근성, SEO(검색 엔진 최적화), 모범 사례 및 PWA(점진적 웹 앱) 테스트에 따라 서비스에 제출되고 평가됩니다. 자세한 내용은 [경험 감사 결과 이해](/help/implementing/cloud-manager/experience-audit-testing.md)를 참조하십시오.
+경험 감사를 위해 구성된 경로는 파이프라인이 실행될 때 성능, 접근성, SEO(검색 엔진 최적화), 모범 사례 및 PWA(점진적 웹 앱) 테스트에 따라 서비스에 제출되고 평가됩니다. 다음을 참조하십시오 [경험 감사 결과 이해](/help/implementing/cloud-manager/experience-audit-testing.md) 을 참조하십시오.
 
 파이프라인이 저장되고 이제 **프로그램 개요** 페이지의 **파이프라인** 카드에서 [파이프라인을 관리](managing-pipelines.md)할 수 있습니다.
 
@@ -159,7 +159,7 @@ ht-degree: 91%
       * 분기 이름의 처음 몇 글자를 입력하면 이 필드의 자동 완성 기능이 일치하는 분기를 찾아 선택하는 데 도움이 됩니다.
    * **코드 위치** - 이 옵션은 파이프라인이 코드를 검색해야 하는 선택한 저장소 분기의 경로를 정의합니다.
       * 웹 계층 구성 파이프라인의 경우 일반적으로 `conf.d`, `conf.dispatcher.d` 및 `opt-in` 디렉터리가 포함된 경로입니다.
-      * 예를 들어 프로젝트 구조가 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)에서 생성된 경우 경로는 `/dispatcher/src`입니다.
+      * 예를 들어 프로젝트 구조가 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en)에서 생성된 경우 경로는 `/dispatcher/src`입니다.
    * **프로덕션에 배포 전 일시 중지** - 이 옵션은 프로덕션에 배포하기 전에 파이프라인을 일시 중지합니다.
    * **예약됨** - 이 옵션을 사용하면 예약된 프로덕션 배포를 활성화할 수 있습니다.
 
@@ -177,7 +177,7 @@ ht-degree: 91%
 
 프론트엔드 파이프라인을 사용하면 프론트엔드 개발자에게 더 많은 독립성을 부여하고 개발 프로세스를 가속화할 수 있습니다.
 
-문서를 참조하십시오 [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 이 프로세스의 전체 잠재력을 활용하기 위해 알아야 할 몇 가지 고려 사항과 함께 이 프로세스가 작동하는 방식에 대한 정보입니다.
+다음을 참조하십시오 [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 이 프로세스의 전체 잠재력을 활용하기 위해 알아야 할 몇 가지 고려 사항과 함께 이 프로세스가 작동하는 방식에 대한 정보입니다.
 
 ## Dispatcher 패키지 건너뛰기 {#skip-dispatcher-packages}
 

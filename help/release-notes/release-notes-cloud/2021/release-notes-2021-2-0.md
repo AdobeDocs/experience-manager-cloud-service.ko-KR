@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.2.0 릴리스 정보입니다.'
 description: "[!DNL Adobe Experience Manager] 2021.2.0용 as a Cloud Service 릴리스 노트"
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1232'
-ht-degree: 32%
+source-wordcount: '1228'
+ht-degree: 34%
 
 ---
 
@@ -80,7 +80,7 @@ ht-degree: 32%
 
 * 최신 CIF 코어 구성 요소 버전 v1.8.0이 포함된 CIF Venia 참조 사이트 - 2021.02.24가 릴리스되었습니다. 다음을 참조하십시오 [CIF Venia 참조 사이트](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) 을 참조하십시오.
 
-* CIF 코어 구성 요소 v1.8.0이 릴리스되었습니다. 을(를) 참조하십시오 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) 을 참조하십시오.
+* CIF 코어 구성 요소 v1.8.0이 릴리스되었습니다. 다음을 참조하십시오 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) 을 참조하십시오.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -101,7 +101,7 @@ AEM as a Cloud Service 2021.2.0의 Cloud Manager 릴리스 일자는 2021년 2�
 
 * Cloud Manager UI는 연결된 환경에 실행 중인 파이프라인이 연결되어 있거나 현재 승인 단계를 기다리고 있기 때문에 일시적으로 도메인 이름을 추가/업데이트할 수 없는 사용자에게 알립니다.
 
-* 고객에 설정된 속성 `pom.xml` 이제 sonar 접두사가 붙은 파일은 빌드 및 품질 스캔 실패를 방지하기 위해 동적으로 제거됩니다.
+* sonar 접두사가 붙은 고객 `pom.xml` 파일에 설정된 속성은 이제 빌드 및 품질 스캔 실패를 방지하고자 동적으로 제거됩니다.
 
 * Cloud Manager UI는 현재 배포 중인 도메인 이름에서 SSL 인증서를 사용 중이기 때문에 일시적으로 SSL 인증서를 선택할 수 없는 사용자에게 알립니다.
 
@@ -136,7 +136,7 @@ AEM as a Cloud Service 2021.2.0의 Cloud Manager 릴리스 일자는 2021년 2�
 ### 컨텐츠 전송 도구의 새로운 기능 {#what-is-new-ctt}
 
 * 컨텐츠 전송 도구 - 사용자 매핑 도구에 새로운 기능과 UI가 추가되었습니다. 이 기능은 콘텐츠 마이그레이션 활동의 일부로 기존 사용자 및 그룹을 Adobe Identity Management 시스템 ID에 자동으로 매핑합니다.
-을(를) 참조하십시오 [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) 을 참조하십시오.
+자세한 내용은 [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)을 참조하십시오.
 * 이제 콘텐츠 전송 도구는 하위 그룹을 포함하여 마이그레이션 세트에서 참조된 모든 그룹과 사용자를 마이그레이션합니다.
 * 사용자는 아래에서 특정 경로를 선택할 수 있습니다. `/etc` 마이그레이션 세트를 생성할 때.
 
@@ -159,9 +159,9 @@ Best Practices Analyzer v2.1.2의 릴리스 날짜는 2021년 2월 18일입니�
 ### 코드 리팩터링 도구의 새로운 기능 {#what-is-new-crt}
 
 * 새로운 버전의 AIO-CLI 플러그인이 출시되었습니다. 이 플러그인의 최신 버전에는 Repository Modernizer에 대한 몇 가지 버그 수정이 포함되어 있습니다.
-을(를) 참조하십시오 [통합 경험](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) 이 플러그인에 대해 자세히 알아보십시오.
+다음을 참조하십시오 [통합 경험](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) 이 플러그인에 대해 자세히 알아보십시오.
 
 ### 버그 수정 {#bug-fixes-crt}
 
 * Repository Modernizer에서 몇 가지 버그 수정이 수행되었습니다.
-을(를) 참조하십시오 [GitHub 리소스: aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 을 참조하십시오.
+다음을 참조하십시오 [GitHub 리소스: aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 을 참조하십시오.

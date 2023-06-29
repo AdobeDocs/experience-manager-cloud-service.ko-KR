@@ -4,10 +4,10 @@ description: AEM as a Cloud Service를 사용할 때 중요한 보안 고려 사
 hidefromtoc: true
 hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '229'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 93%
 
 ## AEM Trust Store {#aem-trust-store}
 
-비대칭 암호화 작업을 지원하기 위해 AEM은 콘텐츠 저장소 내의 전역 신뢰 저장소에 인증서를 저장합니다. 콘텐츠는 공개되며 기본적으로 게시자 인스턴스의 모든 사람이 익명으로 액세스할 수 있습니다.
+AEM은 비대칭 암호화 작업을 지원하기 위해 글로벌 Trust Store의 콘텐츠 저장소 내부에 인증서를 저장합니다. 콘텐츠는 공개되며 기본적으로 게시자 인스턴스의 모든 사람이 익명으로 액세스할 수 있습니다.
 
 ### Trust Store의 특징 {#truststore-characteristics}
 
@@ -37,5 +37,5 @@ Commenting out section for now as requested by Lars
 
 ## Anonymous Permission Hardening Package {#anonymous-permission-hardening-package}
 
-For more information on the Anonymous Hardening Package, please see the [Security Checklist](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html#anonymous-permission-hardening-package).
+For more information on the Anonymous Hardening Package, see [Security Checklist](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html#anonymous-permission-hardening-package).
 -->

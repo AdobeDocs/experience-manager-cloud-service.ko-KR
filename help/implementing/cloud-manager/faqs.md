@@ -2,10 +2,10 @@
 title: Cloud Manager FAQ
 description: Cloud Manager에 대해 가장 자주 묻는 질문에 대한 답변을 AEM에서 as a Cloud Service으로 찾아보십시오.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 64%
+ht-degree: 62%
 
 ---
 
@@ -58,11 +58,11 @@ Cloud Manager 빌드의 경우 `maven-enforcer-plugin`이 실패하고 이러한
 
 단계 및 프로덕션 빌드 또는 배포에 대해 버전을 `-SNAPSHOT`으로 설정할 수도 있습니다. Cloud Manager는 자동으로 적절한 버전 번호를 설정하고 git에 태그를 생성합니다. 이 태그는 필요한 경우 나중에 참조할 수 있습니다.
 
-버전 처리에 대한 자세한 내용은 [여기](/help/implementing/cloud-manager/managing-code/project-version-handling.md)에 설명되어 있습니다.
+버전 처리에 대한 자세한 내용은 다음과 같습니다 [여기에 문서화됨](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 ## 패키지 및 번들 버전 관리는 스테이지 및 프로덕션 배포에서 어떻게 작동합니까? {#snapshot-version}
 
-스테이지 및 프로덕션 배포에서는 [여기](/help/implementing/cloud-manager/managing-code/project-version-handling.md)에 설명된 대로 자동 버전이 생성됩니다.
+스테이지 및 프로덕션 배포에서는 자동 버전이 다음으로 생성됩니다. [여기에 문서화됨](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 스테이지 및 프로덕션 배포에서 사용자 정의 버전을 사용하려면 `1.0.0`과 같이 적절한 3부분으로 구성된 Maven 버전을 설정합니다. 프로덕션에 배포할 때마다 버전을 늘립니다.
 

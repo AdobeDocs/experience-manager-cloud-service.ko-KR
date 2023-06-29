@@ -4,9 +4,9 @@ description: 에 디지털 에셋 추가 [!DNL Adobe Experience Manager] as a [!
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 2b597707a26726eec26541c04914ac36e8909fc5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3157'
+source-wordcount: '3156'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 가장 일반적으로 사용되는 브라우저 업로드 외에도 다른 방법으로 에셋을 [!DNL Experience Manager] 저장소가 있습니다. 이러한 다른 방법에는 Asset Link Adobe 또는 [!DNL Experience Manager] 데스크탑 앱, 고객이 만들 업로드 및 수집 스크립트, 자동화된 수집 통합 등이 (으)로 추가되었습니다. [!DNL Experience Manager] 확장.
 
-에서 모든 이진 파일을 업로드하고 관리할 수 있습니다. [!DNL Experience Manager], 가장 일반적으로 사용되는 파일 형식은 메타데이터 추출 또는 미리보기/렌디션 생성과 같은 추가 서비스를 지원합니다. 을(를) 참조하십시오 [지원되는 파일 형식](file-format-support.md) 을 참조하십시오.
+에서 모든 이진 파일을 업로드하고 관리할 수 있습니다. [!DNL Experience Manager], 가장 일반적으로 사용되는 파일 형식은 메타데이터 추출 또는 미리보기/렌디션 생성과 같은 추가 서비스를 지원합니다. 다음을 참조하십시오 [지원되는 파일 형식](file-format-support.md) 을 참조하십시오.
 
 업로드된 에셋에 대해 추가 처리를 수행하도록 선택할 수도 있습니다. 에셋이 업로드되는 폴더에 여러 에셋 처리 프로필을 구성하여 특정 메타데이터, 렌디션 또는 이미지 처리 서비스를 추가할 수 있습니다. 다음을 참조하십시오 [업로드 시 자산 처리](#process-when-uploaded).
 
@@ -30,7 +30,7 @@ ht-degree: 2%
 | [자산 콘솔 사용자 인터페이스](#upload-assets) | 가끔 업로드, 누르기 및 끌기, 찾기 업로드. 를 사용하여 많은 에셋을 업로드하지 마십시오. | 모든 사용자 |
 | [API 업로드](#upload-using-apis) | 업로드 중 다이내믹 의사 결정용. | 개발자 |
 | [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | 낮은 볼륨 에셋 수집이지만 마이그레이션용은 아닙니다. | 관리자, 마케터 |
-| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) | 크리에이티브 및 마케터가 지원되는 내에서 자산에 대해 작업할 때 유용합니다 [!DNL Creative Cloud] 데스크탑 앱. | 크리에이티브, 마케터 |
+| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) | 크리에이티브 및 마케터가 지원되는 내에서 자산에 대해 작업할 때 유용합니다 [!DNL Creative Cloud] 데스크탑 앱. | 크리에이티브, 마케터 |
 | [일괄 에셋 수집기](#asset-bulk-ingestor) | 대규모 마이그레이션 및 경우에 따라 대량으로 수집하는 경우에 권장됩니다. 지원되는 데이터 저장소에만 해당됩니다. | 관리자, 개발자 |
 
 ## 에셋 업로드 {#upload-assets}
@@ -197,7 +197,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 1. DAM에서 자산을 가져올 위치를 정의하려면 다음을 수행하십시오. **[!UICONTROL 에셋 Target 폴더]** 필드, 경로를 지정합니다. (예: `/content/dam/imported_assets`)
 
-1. (선택 사항) CSV 형식으로 제공된 가져올 메타데이터 파일을 **[!UICONTROL 메타데이터 파일]** 필드. 소스 Blob 위치에 CSV 파일을 지정하고 일괄 가져오기 도구를 구성하는 동안 경로를 참조하십시오. 이 필드에서 참조되는 CSV 파일 형식은 다음과 같을 때 CSV 파일 형식과 동일합니다. [자산 메타데이터 일괄적으로 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html). 을(를) 선택하는 경우 **가져오기 후 소스 파일 삭제** 옵션, CSV 파일 필터링 **제외** 또는 **MIME 유형 포함** 또는 **경로/파일로 필터링** 필드. 정규 표현식을 사용하여 이러한 필드의 CSV 파일을 필터링할 수 있습니다.
+1. (선택 사항) CSV 형식으로 제공된 가져올 메타데이터 파일을 **[!UICONTROL 메타데이터 파일]** 필드. 소스 Blob 위치에 CSV 파일을 지정하고 일괄 가져오기 도구를 구성하는 동안 경로를 참조하십시오. 이 필드에서 참조되는 CSV 파일 형식은 다음과 같을 때 CSV 파일 형식과 동일합니다. [자산 메타데이터 일괄적으로 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html). 을(를) 선택하는 경우 **가져오기 후 소스 파일 삭제** 옵션, 다음을 사용하여 CSV 파일 필터링 **제외** 또는 **MIME 유형 포함** 또는 **경로/파일로 필터링** 필드. 정규 표현식을 사용하여 이러한 필드의 CSV 파일을 필터링할 수 있습니다.
 
 1. 클릭 **[!UICONTROL 저장]** 구성을 저장합니다.
 
@@ -351,7 +351,7 @@ Experience Manager에 작업 내역이 표시됩니다. [일괄 가져오기 작
 
 웹 브라우저 사용자 인터페이스 외에도, [!DNL Experience Manager] 는 데스크탑에서 다른 클라이언트를 지원합니다. 또한 웹 브라우저로 이동할 필요 없이 업로드 환경을 제공합니다.
 
-* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) 에서 에셋에 대한 액세스 제공 [!DNL Experience Manager] Adobe Photoshop, Adobe Illustrator 및 Adobe InDesign 데스크탑 애플리케이션에서 사용할 수 있습니다. 현재 열려 있는 문서를에 업로드할 수 있습니다 [!DNL Experience Manager] 이러한 데스크탑 애플리케이션 내에서 Asset Link Adobe 인터페이스에서 직접 액세스
+* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) 에서 에셋에 대한 액세스 제공 [!DNL Experience Manager] Adobe Photoshop, Adobe Illustrator 및 Adobe InDesign 데스크탑 애플리케이션에서 사용할 수 있습니다. 현재 열려 있는 문서를에 업로드할 수 있습니다 [!DNL Experience Manager] 이러한 데스크탑 애플리케이션 내에서 Asset Link Adobe 인터페이스에서 직접 액세스
 * [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) 는 파일 유형 또는 자산을 처리하는 기본 애플리케이션에 관계없이 데스크탑에서 자산 작업을 간소화합니다. 브라우저 업로드는 플랫 파일 목록 업로드만 지원하므로 로컬 파일 시스템에서 중첩된 폴더 계층의 파일을 업로드하는 것이 유용합니다.
 
 ## 업로드 시 에셋 처리 {#process-when-uploaded}
@@ -400,14 +400,14 @@ Experience Manager에 작업 내역이 표시됩니다. [일괄 가져오기 작
 
 **추가 참조**
 
-* [에셋 번역](translate-assets.md)
+* [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [에셋이 지원되는 파일 형식](file-format-support.md)
-* [에셋 검색](search-assets.md)
-* [연결된 에셋](use-assets-across-connected-assets-instances.md)
-* [에셋 보고서](asset-reports.md)
+* [자산이 지원되는 파일 형식](file-format-support.md)
+* [자산 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [자산 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
-* [에셋 다운로드](download-assets-from-aem.md)
+* [자산 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
@@ -417,5 +417,5 @@ Experience Manager에 작업 내역이 표시됩니다. [일괄 가져오기 작
 >
 >* [[!DNL Adobe Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [정보 [!DNL Adobe Asset Link]](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html)
->* [[!DNL Adobe Asset Link] 설명서](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)
+>* [[!DNL Adobe Asset Link] 설명서](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [에셋 업로드에 대한 기술 참조](developer-reference-material-apis.md#asset-upload)

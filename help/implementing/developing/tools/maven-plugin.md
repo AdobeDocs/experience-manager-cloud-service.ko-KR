@@ -2,9 +2,9 @@
 title: Adobe 컨텐츠 패키지 Maven 플러그인
 description: Content Package Maven 플러그인을 사용하여 AEM 애플리케이션 배포
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: a5eef46835e234bb47451693cf5fdcda66c5b26f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1842'
+source-wordcount: '1838'
 ht-degree: 6%
 
 ---
@@ -35,7 +35,7 @@ AEM은 최신 AEM Project Archetype으로 구현된 패키지 관리 및 프로�
 
 >[!TIP]
 >
->자세한 내용은 [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEM as a Cloud Service 설명서의 문서와 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko-KR) 설명서를 참조하십시오. 둘 다 AEM 6.5에 대해 완전히 지원됩니다.
+>자세한 내용은 [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEM as a Cloud Service 설명서의 문서 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 설명서를 참조하십시오. 둘 다 AEM 6.5에 대해 완전히 지원됩니다.
 
 ## 콘텐츠 패키지 Maven 플러그인 가져오기 {#obtaining-the-content-package-maven-plugin}
 
@@ -135,7 +135,7 @@ AEM 인스턴스에 이미 정의된 콘텐츠 패키지를 빌드합니다.
 
 ### ls {#ls}
 
-에 배포된 패키지를 나열합니다. [패키지 관리자.](/help/implementing/developing/tools/package-manager.md)
+에 배포된 패키지를 나열합니다. [패키지 관리자](/help/implementing/developing/tools/package-manager.md).
 
 #### 매개변수 {#parameters-2}
 
@@ -143,7 +143,7 @@ ls 목표의 모든 매개변수는 [일반 매개 변수](#common-parameters) �
 
 ### rm {#rm}
 
-에서 패키지 제거 [패키지 관리자.](/help/implementing/developing/tools/package-manager.md)
+에서 패키지 제거 [패키지 관리자](/help/implementing/developing/tools/package-manager.md).
 
 #### 매개변수 {#parameters-3}
 
@@ -229,7 +229,7 @@ rm 목표의 모든 매개변수는 [일반 매개 변수](#common-parameters) �
 
 ## 패키지에 썸네일 이미지 또는 속성 파일 포함 {#including-a-thumbnail-image-or-properties-file-in-the-package}
 
-기본 패키지 구성 파일을 대체하여 패키지 속성을 사용자 지정합니다. 예를 들어 패키지를 구분할 축소판 이미지를 포함합니다. [패키지 관리자.](/help/implementing/developing/tools/package-manager.md)
+기본 패키지 구성 파일을 대체하여 패키지 속성을 사용자 지정합니다. 예를 들어 패키지를 구분할 축소판 이미지를 포함합니다. [패키지 관리자](/help/implementing/developing/tools/package-manager.md).
 
 소스 파일은 파일 시스템의 어디에나 위치할 수 있습니다. POM 파일에서 빌드 리소스를 정의하여 소스 파일을 `target/vault-work/META-INF` 패키지에 포함할 수 있습니다.
 
@@ -238,7 +238,7 @@ rm 목표의 모든 매개변수는 [일반 매개 변수](#common-parameters) �
 ```xml
 <build>
     <resources>
-        <!-- vault META-INF resources (thumbnail etc.) -->
+        <!-- vault META-INF resources (thumbnail and so on) -->
         <resource>
             <directory>${basedir}/src/main/content/META-INF</directory>
             <targetPath>../vault-work/META-INF</targetPath>
@@ -267,4 +267,4 @@ rm 목표의 모든 매개변수는 [일반 매개 변수](#common-parameters) �
 
 >[!TIP]
 >
->자세한 내용은 [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEM as a Cloud Service 설명서의 문서와 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko-KR) 설명서를 참조하십시오. 둘 다 AEM 6.5에 대해 완전히 지원됩니다.
+>자세한 내용은 [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEM as a Cloud Service 설명서의 문서 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 설명서를 참조하십시오. 둘 다 AEM 6.5에 대해 완전히 지원됩니다.

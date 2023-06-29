@@ -1,31 +1,31 @@
 ---
 title: 데모 사이트에 대해 AEM Screens 활성화
-description: 제작한 데모 사이트에서 전체 AEM Screens as a Cloud Service 환경을 활성화하기 위한 단계에 대해 알아봅니다.
+description: 데모 사이트에서 전체 AEM Screens as a Cloud Service 경험을 활성화하는 단계에 대해 알아봅니다.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2694'
-ht-degree: 97%
+source-wordcount: '2666'
+ht-degree: 58%
 
 ---
 
 # 데모 사이트에 대해 AEM Screens 활성화 {#enable-screens}
 
-제작한 데모 사이트에서 전체 AEM Screens as a Cloud Service 환경을 활성화하기 위한 단계에 대해 알아봅니다.
+데모 사이트에서 전체 AEM Screens as a Cloud Service 경험을 활성화하는 단계에 대해 알아봅니다.
 
 >[!NOTE]
 >
 >AEM Screens 데모에는 Cloud Manager 프로그램에 Screens 추가 기능을 추가해야 합니다. 추가 방법은 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/adding-screens-addon/add-on-new-program-screens-cloud.html)에서 알아보십시오.
 
-## 지금까지의 이야기 {#story-so-far}
+## 지금까지의 스토리 {#story-so-far}
 
-AEM 참조 데모 추가 기능 여정의 이전 문서인 [데모 사이트 만들기](create-site.md)에서는 참조 데모 추가 기능의 템플릿을 기반으로 새 데모 사이트를 제작해 보았습니다. 이제
+AEM 참조 데모 추가 기능 여정의 이전 문서에서는 [데모 사이트 만들기,](create-site.md) 참조 데모 추가 기능의 템플릿을 기반으로 데모 사이트를 제작해 보았습니다. 이제
 
 * AEM 작성 환경 액세스 방법을 이해할 수 있습니다.
 * 템플릿을 기반으로 사이트를 만드는 방법을 이해할 수 있습니다.
 * 사이트 구조 탐색 및 페이지 편집에 대한 기본 사항을 이해할 수 있습니다.
 
-탐색할 나만의 데모 사이트가 있으며 내 데모 사이트를 관리하는 데 도움이 되는 도구를 알아보았으므로, 이제 데모 사이트에 대해 전체 AEM Screens as a Cloud Service 경험을 활성화할 수 있습니다.
+탐색할 나만의 데모 사이트가 있고, 데모 사이트를 관리하는 데 도움이 되는 도구를 이해했으므로 이제 데모 사이트에 대해 전체 AEM Screens as a Cloud Service 경험을 활성화하십시오.
 
 ## 목표 {#objective}
 
@@ -47,11 +47,11 @@ AEM Screens as a Cloud Service는 마케터가 대규모 동적 디지털 경험
 >
 >AEM Screens as a Cloud Service에 대한 자세한 내용은 이 문서 끝에 있는 [추가 리소스](#additional-resources) 섹션을 참조하십시오.
 
-AEM 참조 데모 추가 기능을 설치하면 데모 작성 환경에서 AEM Screens용 We.Cafe 콘텐츠를 자동으로 사용할 수 있게 됩니다. [데모 Screens 프로젝트 배포](#deploy-project)에 설명된 단계를 따라 콘텐츠를 게시하고 미디어 플레이어에 배포하여 전체 AEM Screens 경험을 활성화할 수 있습니다.
+AEM 참조 데모 추가 기능을 설치하면 데모 작성 환경에서 AEM Screens용 We.Cafe 콘텐츠를 자동으로 사용할 수 있게 됩니다. 다음에 설명된 단계: [데모 Screens 프로젝트 배포](#deploy-project) 에서는 해당 콘텐츠를 게시하고 미디어 플레이어에 배포하여 전체 AEM Screens 경험을 활성화할 수 있습니다.
 
 ## 데모 콘텐츠 이해 {#demo-content}
 
-We.Cafe 커피숍은 미국 내 세 개의 위치에 있는 세 개의 커피숍으로 구성되어 있습니다. 세 커피숍 모두 다음과 같은 세 가지 유사한 경험을 가지고 있습니다.
+We.Cafe 커피숍은 미국 내 세 곳의 위치에 있는 세 개의 커피숍으로 구성되어 있습니다. 세 커피숍 모두 다음과 같은 세 가지 유사한 경험을 가지고 있습니다.
 
 * 카운터 위에는 두 개 또는 세 개의 수직 패널로 구성된 메뉴판이 있습니다.
 * 입구 디스플레이는 거리를 마주 보고 있으며 손님을 가게 안으로 맞이하는 하나의 수평 또는 수직 패널이 있습니다.
@@ -70,7 +70,7 @@ We.Cafe 커피숍은 미국 내 세 개의 위치에 있는 세 개의 커피숍
 
 >[!NOTE]
 >
->[Screens as a Cloud Service 연결](#connect-screens) 섹션에서 Screens Cloud Service에 연결하고자 하는 경우 디스플레이 아래 폴더에 위치를 만드십시오. 디스플레이에 대한 자세한 내용은 이 문서 끝에 있는 [추가 리소스](#additional-resources) 섹션을 참조하십시오.
+>에서 Screens Cloud Service에 연결하기로 결정한 경우 [as a Cloud Service Screens 연결](#connect-screens) 섹션에서 디스플레이 아래에 위치를 폴더로 만듭니다. 디스플레이에 대한 자세한 내용은 이 문서 끝에 있는 [추가 리소스](#additional-resources) 섹션을 참조하십시오.
 
 ### 카페 레이아웃 {#care-layouts}
 
@@ -84,9 +84,9 @@ We.Cafe 지점의 레이아웃은 다음과 같습니다.
 
 ### 입구 {#entrance}
 
-입구 디스플레이는 시간을 구분하여 표시되며, 첫 번째 이미지는 오전에서 오후로 변경됩니다. 또한 입구 디스플레이는 시퀀스의 각 패스에 대해 서로 다른 특별한 커피 재료를 광고하며, 이때 매 시간마다 다른 항목을 재생하기 위해 계량되고 임베드된 시퀀스를 사용합니다.
+입구 디스플레이는 시간을 구분하여 표시되며, 첫 번째 이미지는 오전에서 오후로 변경됩니다. 또한 시퀀스의 각 패스에 대해 서로 다른 특별한 커피 재료를 광고하며, 이때 매 시간마다 다른 항목을 재생하기 위해 계량되고 임베드된 시퀀스를 사용합니다.
 
-입구 채널의 마지막 이미지는 외부 온도에 따라 타겟팅되며(즉, 동적으로 변경됨), 이는 [시뮬레이션된 데이터 소스 만들기](#data-source) 섹션에 설명된 대로 시뮬레이션할 수 있습니다.
+입구 채널의 마지막 이미지는 외부 온도에 따라 타겟팅되며(즉, 동적으로 변경됨), 이는 다음에 설명된 대로 시뮬레이션할 수 있습니다. [시뮬레이션된 데이터 소스 만들기](#data-source) 섹션.
 
 ## 데모 Screens 프로젝트 배포 {#deploy-project}
 
@@ -96,7 +96,7 @@ We.Cafe 지점의 레이아웃은 다음과 같습니다.
 
 ![We.Cafe 템플릿](assets/wecafe-template.png)
 
-마법사가 완료되면 Sites에 배포된 콘텐츠를 찾을 수 있으며 다른 콘텐츠와 마찬가지로 검색하고 살펴볼 수 있습니다.
+마법사가 완료되면 Sites에 배포된 콘텐츠를 찾을 수 있으며 다른 콘텐츠와 마찬가지로 탐색하고 탐색할 수 있습니다.
 
 ![We.Cafe 콘텐츠](assets/wecafe-content.png)
 
@@ -107,19 +107,19 @@ We.Cafe 데모 콘텐츠를 준비했으므로 AEM Screens를 테스트하는 �
 
 ## Screens 콘텐츠를 동적으로 변경 {#dynamically-change}
 
-AEM Sites와 마찬가지로 AEM Screens는 컨텍스트를 기반으로 콘텐츠를 동적으로 변경할 수 있습니다. We.Cafe 데모에는 현재 온도에 따라 다른 콘텐츠를 표시하도록 구성된 채널이 있습니다. 이를 시뮬레이션하려면 간단한 기상 서비스를 만들어야 합니다.
+AEM Sites와 마찬가지로 AEM Screens는 컨텍스트를 기반으로 콘텐츠를 동적으로 변경할 수 있습니다. We.Cafe 데모에는 현재 온도에 따라 다른 콘텐츠를 표시하도록 구성된 채널이 있습니다. 이 경험을 시뮬레이션하려면 간단한 기상 서비스를 만들어야 합니다.
 
 ### 시뮬레이션된 데이터 소스 만들기 {#data-source}
 
-데모 또는 테스트 도중 날씨를 변경하는 것은 매우 어려운 일이므로 온도 변화를 시뮬레이션해야 합니다. AEM의 ContextHub에서 호출하여 온도를 검색하는 Google Sheet 스프레드시트에 온도 값을 저장하여 기상 서비스를 시뮬레이션합니다.
+데모 또는 테스트 중에는 날씨를 변경하는 것이 어렵기 때문에 온도 변화를 시뮬레이션해야 합니다. 날씨 서비스는 AEM ContextHub에서 호출하여 온도를 검색하는 Google Sheet 스프레드시트에 온도 값을 저장하여 시뮬레이션됩니다.
 
 #### Google API 키 만들기 {#create-api-key}
 
 먼저 데이터 교환을 용이하게 하는 Google API 키를 만들어야 합니다.
 
-1. Google 계정에 로그인합니다.
+1. Google 계정에 로그온합니다.
 1. 이 링크(`https://console.cloud.google.com`)를 사용하여 클라우드 콘솔을 엽니다.
-1. **Google Cloud Platform** 레이블 뒤에 있는 도구 모음의 왼쪽 상단에서 현재 프로젝트 이름을 클릭하여 새 프로젝트를 만듭니다.
+1. 도구 모음 왼쪽 상단에서 현재 프로젝트 이름을 클릭하여 프로젝트를 만듭니다. **Google 클라우드 플랫폼** 레이블.
 
    ![Google 클라우드 콘솔](assets/google-cloud-console.png)
 
@@ -131,7 +131,7 @@ AEM Sites와 마찬가지로 AEM Screens는 컨텍스트를 기반으로 콘텐�
 
    ![프로젝트 만들기](assets/create-project.png)
 
-1. 새 프로젝트를 선택한 다음 클라우드 콘솔의 대시보드에서 햄버거 메뉴를 사용하여 **API 및 서비스**&#x200B;를 선택하십시오.
+1. 새 프로젝트를 선택한 다음 클라우드 콘솔의 대시보드에서 햄버거 메뉴를 사용하여 을(를) 선택하십시오. **API 및 서비스**.
 
    ![API 및 서비스](assets/apis-services.png)
 
@@ -139,7 +139,7 @@ AEM Sites와 마찬가지로 AEM Screens는 컨텍스트를 기반으로 콘텐�
 
    ![자격 증명](assets/credentials.png)
 
-1. 대화 상자에서 새 API 키를 복사한 다음 나중에 사용할 수 있도록 저장합니다. **닫기**&#x200B;를 클릭하여 대화 상자를 닫습니다.
+1. 대화 상자에서 새 API 키를 복사하고 저장하여 나중에 사용합니다. 클릭 **닫기** 따라서 대화 상자를 종료할 수 있습니다.
 
 #### Google Sheets API 활성화 {#enable-sheets}
 
@@ -149,11 +149,11 @@ API 키를 사용하여 Google Sheets 데이터 교환을 허용하려면 Google
 
    ![API 라이브러리](assets/api-library.png)
 
-1. API 라이브러리 화면에서 스크롤하여 **Google Sheets API**&#x200B;를 찾습니다. 클릭합니다.
+1. API 라이브러리 화면에서 스크롤하여 을 찾아 **Google 시트 API**&#x200B;를 클릭한 다음 클릭합니다.
 
    ![API 라이브러리 검색](assets/api-library-search.png)
 
-1. **Google Sheets API** 창에서 **활성화**&#x200B;를 클릭합니다.
+1. 다음에서 **Google 시트 API** 창에서 다음을 클릭: **사용**.
 
    ![Google Sheets API](assets/sheets-api.png)
 
@@ -161,9 +161,9 @@ API 키를 사용하여 Google Sheets 데이터 교환을 허용하려면 Google
 
 이제 Google Sheets 스프레드시트를 만들어 날씨 데이터를 저장할 수 있습니다.
 
-1. `https://docs.google.com`으로 이동한 다음 새 Google Sheets 스프레드시트를 만듭니다.
+1. 다음으로 이동 `https://docs.google.com` Google Sheets 스프레드시트를 만듭니다.
 1. 셀 A2에 `32`를 입력하여 온도를 정의합니다.
-1. 창의 오른쪽 상단에 있는 **공유**&#x200B;를 클릭하여 문서를 공유하고 **링크 가져오기**&#x200B;에서 **변경**&#x200B;을 클릭합니다.
+1. 다음을 클릭하여 문서 공유 **공유** 창의 오른쪽 상단과 아래에 **링크 가져오기**, 클릭 **변경**.
 
    ![시트 공유](assets/share-sheet.png)
 
@@ -173,7 +173,7 @@ API 키를 사용하여 Google Sheets 데이터 교환을 허용하려면 Google
 
 1. 시트 ID를 찾습니다.
 
-   * 시트 ID는 복사한 시트 링크에서 `d/`와 `/edit` 사이에 포함된 임의의 문자열입니다.
+   * 시트 ID는 복사한 시트 링크에서 임의의 문자열입니다 `d/` 다음 이전 `/edit`.
    * 예:
       * URL이 `https://docs.google.com/spreadsheets/d/1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30/edit#gid=0`인 경우
       * 시트 ID는 `1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30`입니다.
@@ -207,11 +207,11 @@ API 키를 사용하여 Google Sheets 데이터 교환을 허용하려면 Google
    }
    ```
 
-AEM Screens은 이와 동일한 서비스를 사용하여 다음 단계에서 구성된 시뮬레이션된 날씨 데이터에 액세스할 수 있습니다.
+AEM Screens는 이 동일한 서비스를 사용하여 다음 단계에서 구성된 시뮬레이션된 날씨 데이터에 액세스할 수 있습니다.
 
 ### ContextHub 구성 {#configure-contexthub}
 
-AEM Screens는 컨텍스트를 기반으로 콘텐츠를 동적으로 변경할 수 있습니다. We.Cafe 데모에는 AEM의 ContextHub를 활용하여 현재 온도에 따라 다른 콘텐츠를 표시하도록 구성된 채널이 있습니다.
+AEM Screens는 컨텍스트를 기반으로 콘텐츠를 동적으로 변경할 수 있습니다. We.Cafe 데모에는 AEM ContextHub를 사용하여 현재 온도에 따라 다른 콘텐츠를 표시하도록 구성된 채널이 있습니다.
 
 >[!TIP]
 >
@@ -219,17 +219,17 @@ AEM Screens는 컨텍스트를 기반으로 콘텐츠를 동적으로 변경할 
 
 화면 콘텐츠가 표시되면 ContextHub는 기상 서비스를 호출하여 현재 온도를 찾아 표시할 콘텐츠를 결정합니다.
 
-시트의 값은 데모 목적으로 변경될 수 있습니다. ContextHub는 이를 인식하고 콘텐츠는 업데이트된 온도에 따라 채널에서 조정됩니다.
+시트의 값은 데모 목적으로 변경될 수 있습니다. ContextHub는 이 사실을 인식하고 콘텐츠는 업데이트된 온도에 따라 채널에서 조정됩니다.
 
 1. AEMaaCS 작성자 인스턴스에서 **[전역 탐색] -> [도구] -> [사이트] -> [ContextHub]**&#x200B;로 이동합니다.
 1. **We.Cafe 웹 사이트 템플릿**&#x200B;에서 Screens 프로젝트를 만들 때 해당 프로젝트에 입력한 것과 같은 이름의 구성 컨테이너를 선택합니다.
 1. **[구성] -> [ContextHub 구성] -> [Google Sheets]**&#x200B;를 선택하고 오른쪽 상단에서 **[다음]**&#x200B;을 클릭합니다.
-1. 구성에는 이미 사전 구성된 JSON 데이터가 있어야 합니다. 다음은 변경해야 하는 두 가지 값입니다.
-   1. `[your Google Sheets id]`를 [이전에 저장한](#create-spreadsheet) 시트 ID로 대체합니다.
-   1. `[your Google API Key]`를 [이전에 저장한](#create-api-key) API 키로 대체합니다.
+1. 구성에는 이미 사전 구성된 JSON 데이터가 있어야 합니다. 다음 두 가지 값을 변경해야 합니다.
+   1. 바꾸기 `[your Google Sheets id]` 시트 ID를 사용하여 [이전에 저장함](#create-spreadsheet).
+   1. 바꾸기 `[your Google API Key]` api 키를 사용하여 다음을 수행할 수 있습니다. [이전에 저장함](#create-api-key).
 1. **저장**&#x200B;을 클릭합니다.
 
-이제 Google Sheet 스프레드시트에서 온도 값을 변경할 수 있으며 ContextHub는 “날씨 변화를 확인”할 때 Screens를 동적으로 업데이트합니다.
+이제 Google Sheet 스프레드시트에서 온도 값을 변경할 수 있으며 ContextHub는 &quot;날씨 변화를 확인&quot;할 때 Screens를 동적으로 업데이트합니다.
 
 ### 동적 데이터 테스트 {#test-dynamic}
 
@@ -240,13 +240,13 @@ AEM Screens는 컨텍스트를 기반으로 콘텐츠를 동적으로 변경할 
 
    ![데모 프로젝트 콘텐츠 선택](assets/project-content.png)
 
-1. 도구 모음에서 [편집]을 클릭하거나 단축키 `e`를 입력하여 페이지를 편집합니다.
+1. 클릭 **편집** 도구 모음에서 바로 가기 키를 입력하거나 `e` 따라서 페이지를 편집할 수 있습니다.
 
-1. 편집기에서 콘텐츠를 볼 수 있습니다. 한 개의 이미지가 모서리에 타겟팅 아이콘과 함께 파란색으로 강조 표시됩니다.
+1. 편집기에서 콘텐츠를 볼 수 있습니다. 한 이미지가 모서리에 타겟팅 아이콘과 함께 파란색으로 강조 표시됩니다.
 
    ![편집기의 Screens 콘텐츠](assets/screens-content-editor.png)
 
-1. 스프레드시트에 입력한 온도를 32에서 70으로 변경한 다음 콘텐츠가 변경되는 것을 확인합니다.
+1. 스프레드시트에 입력한 온도를 32에서 70으로 변경하고 콘텐츠가 변경되는 것을 확인합니다.
 
    ![편집기의 Screens 콘텐츠](assets/screens-content-editor-2.png)
 
@@ -268,7 +268,7 @@ AEM Screens는 컨텍스트를 기반으로 콘텐츠를 동적으로 변경할 
 
 ### AEM Screens as a Cloud Service 구성 {#configure-screens}
 
-먼저 Screens 데모 콘텐츠를 AEM Screens as a Cloud Service에 게시한 다음 서비스를 구성해야 합니다.
+먼저 Screens 데모 콘텐츠를 AEM Screens에 as a Cloud Service으로 게시하고 서비스를 구성해야 합니다.
 
 1. 데모 Screens 프로젝트의 콘텐츠를 게시하십시오.
 1. Screens as a Cloud Service로 이동한 다음(`https://experience.adobe.com/screens`) 로그인합니다.
@@ -276,31 +276,31 @@ AEM Screens는 컨텍스트를 기반으로 콘텐츠를 동적으로 변경할 
 
    ![Screens 조직 확인](assets/screens-org.png)
 
-1. 왼쪽 상단에서 톱니바퀴 모양의 **설정 편집** 아이콘을 클릭합니다.
+1. 왼쪽 위 모서리 근처에서 **설정 편집** 톱니바퀴 모양의 아이콘
 
    ![설정 편집](assets/screens-edit-settings.png)
 
-1. 데모 사이트를 만든 AEMaaCS 작성자 및 게시 인스턴스의 URL을 입력한 다음 **저장**&#x200B;을 클릭합니다.
+1. 데모 사이트를 만든 AEMaaCS 작성자 및 게시 인스턴스의 URL을 입력하고 **저장**.
 
    ![Screens 설정](assets/screens-settings.png)
 
-1. 데모 인스턴스에 연결되면 Screens는 채널 콘텐츠를 가져옵니다. 왼쪽 패널의 **채널**&#x200B;을 클릭하여 게시된 채널을 확인합니다. 정보가 채워지는 데 어느 정도의 시간이 소요될 수 있습니다. 화면 상단 오른쪽에 있는 파란색 **동기화** 버튼을 클릭하여 정보를 업데이트할 수 있습니다.
+1. 데모 인스턴스에 연결되면 Screens는 채널 콘텐츠를 가져옵니다. 클릭 **채널** 왼쪽 패널에서 게시된 채널을 볼 수 있습니다. 정보가 채워지는 데 어느 정도의 시간이 소요될 수 있습니다. 화면 상단 오른쪽에 있는 파란색 **동기화** 버튼을 클릭하여 정보를 업데이트할 수 있습니다.
 
    ![데모 채널 정보](assets/screens-channels.png)
 
-1. 왼쪽 패널에서 **디스플레이**&#x200B;를 클릭합니다. 아직 데모에 사용할 항목을 만들지 않았습니다. 각각에 대한 폴더를 만들어 We.Cafe의 위치를 시뮬레이션하겠습니다. 화면 오른쪽 상단에 있는 **만들기**&#x200B;를 클릭하고 **폴더**&#x200B;를 선택합니다.
+1. 클릭 **표시** 왼쪽 패널에서 아직 데모에 사용할 항목을 만들지 않았습니다. 각각에 대한 폴더를 만들어 We.Cafe의 위치를 시뮬레이션할 수 있습니다. 클릭 **만들기** 화면 오른쪽 상단에서 **폴더**.
 
    ![디스플레이 만들기](assets/screens-displays.png)
 
-1. 대화 상자에서 **산호세**&#x200B;와 같이 폴더 이름을 입력한 다음 **만들기**&#x200B;를 클릭합니다.
+1. 대화 상자에서 다음과 같은 폴더 이름을 입력합니다 **산호세** 및 클릭 **만들기**.
 
-1. 폴더를 클릭하여 연 다음 오른쪽 상단의 **만들기**&#x200B;를 클릭하고 **디스플레이**&#x200B;를 선택합니다.
+1. 폴더를 클릭하여 연 다음 를 클릭합니다 **만들기** 오른쪽 상단에서 다음을 선택합니다. **표시**.
 
 1. 디스플레이 이름을 입력하고 **만들기**&#x200B;를 클릭합니다.
 
    ![디스플레이 만들기](assets/create-display.png)
 
-1. 디스플레이를 만든 후 디스플레이 이름을 클릭하여 디스플레이 세부 정보 화면을 엽니다. 디스플레이를 데모 사이트에서 동기화된 채널에 할당해야 합니다. 화면 오른쪽 상단의 **채널 할당**&#x200B;을 클릭합니다.
+1. 디스플레이를 만든 후 디스플레이 이름을 클릭하여 디스플레이 세부 정보 화면을 엽니다. 디스플레이를 데모 사이트에서 동기화된 채널에 할당해야 합니다. 클릭 **채널 할당** 화면 오른쪽 상단에서.
 
    ![채널 세부 정보](assets/channel-detail.png)
 
@@ -308,24 +308,24 @@ AEM Screens는 컨텍스트를 기반으로 콘텐츠를 동적으로 변경할 
 
    ![채널 할당](assets/assign-channel.png)
 
-위치 및 디스플레이를 추가하려면 이 단계를 반복하면 됩니다. 완료되면 데모 사이트를 AEM Screens에 연결하고 필요한 구성을 완료한 것입니다.
+위치 및 디스플레이를 추가하려면 이 단계를 반복하면 됩니다. 완료하면 데모 사이트를 AEM Screens에 연결하고 필요한 구성을 완료한 것입니다.
 
 AEMaaCS의 채널 편집기에서 데모를 미리 볼 수 있습니다.
 
 ### Screens 플레이어 사용 {#screens-player}
 
-콘텐츠를 실제 화면에서 보려면 플레이어를 다운로드하여 로컬로 설정할 수 있습니다. 그러면 AEM Screens as a Cloud Service는 플레이어에 콘텐츠를 제공합니다.
+콘텐츠를 실제 화면에서 보려면 플레이어를 다운로드하여 로컬로 설정할 수 있습니다. AEM Screens은 플레이어에 콘텐츠를 as a Cloud Service으로 전달합니다
 
 #### 등록 코드 생성 {#registration-code}
 
-먼저 플레이어를 AEM Screens as a Cloud Service에 안전하게 연결하기 위한 등록 코드를 만들어야 합니다.
+먼저 플레이어를 AEM Screens as a Cloud Service으로 안전하게 연결하기 위한 등록 코드를 만들어야 합니다.
 
 1. Screens as a Cloud Service로 이동한 다음(`https://experience.adobe.com/screens`) 로그인합니다.
 1. 화면 오른쪽 상단에서 올바른 조직에 속해 있는지 확인하십시오.
 
    ![Screens 조직 확인](assets/screens-org.png)
 
-1. 왼쪽 패널에서 **[플레이어 관리] -> [등록 코드]**&#x200B;를 클릭한 다음 화면 오른쪽 상단의 **[코드 만들기]**&#x200B;를 클릭합니다.
+1. 왼쪽 패널에서 **플레이어 관리 -> 등록 코드** 그런 다음 을 클릭합니다. **코드 만들기** 화면 오른쪽 상단에서.
 
 ![등록 코드](assets/registration-codes.png)
 
@@ -340,11 +340,12 @@ AEMaaCS의 채널 편집기에서 데모를 미리 볼 수 있습니다.
 #### 플레이어 설치 및 구성 {#install-player}
 
 1. `https://download.macromedia.com/screens/`에서 플랫폼에 대한 플레이어를 다운로드한 다음 설치합니다.
-1. 플레이어를 실행하고 **구성** 탭으로 전환한 다음 맨 아래로 스크롤하여 **공장 초기화** 및 **클라우드 모드로 변경**&#x200B;을 클릭하고 확인합니다.
+1. 플레이어를 실행한 다음 로 전환합니다. **구성** 탭.
+1. 아래로 스크롤한 다음 를 클릭하고 두 을(를) 확인합니다 **팩토리로 재설정** 및 **클라우드 모드로 변경** 옵션.
 
    ![플레이어 설정](assets/player-configuration.png)
 
-1. 플레이어가 자동으로 **플레이어 등록** 탭으로 변경됩니다. 이전에 생성한 코드를 입력하고 **등록**&#x200B;을 클릭합니다.
+1. 플레이어가 자동으로 **플레이어 등록** 탭. 이전에 생성한 코드를 입력하고 **등록**.
 
    ![플레이어 등록](assets/player-registration-code.png)
 
@@ -359,15 +360,15 @@ AEMaaCS의 채널 편집기에서 데모를 미리 볼 수 있습니다.
 
    ![Screens 조직 확인](assets/screens-org.png)
 
-1. 왼쪽 패널에서 **[플레이어 관리] -> [플레이어]**&#x200B;를 클릭하면 이전에 설치 및 등록한 플레이어가 표시됩니다.
+1. 왼쪽 패널에서 **플레이어 관리 -> 플레이어** 이전에 설치 및 등록한 플레이어가 표시됩니다.
 
    ![플레이어](assets/players.png)
 
-1. 플레이어 이름을 클릭하여 세부 정보를 연 다음 화면 오른쪽 상단에서 **디스플레이에 할당**&#x200B;을 클릭합니다.
+1. 플레이어 이름을 클릭하면 세부 정보를 열 수 있습니다. 클릭 **디스플레이에 할당** 을 클릭합니다.
 
    ![디스플레이에 플레이어 할당](assets/assign-to-display.png)
 
-1. 대화 상자에서 이전에 생성한 디스플레이를 선택한 다음 **선택**&#x200B;을 클릭합니다.
+1. 대화 상자에서 이전에 생성한 디스플레이를 선택한 다음 을 클릭합니다 **선택**.
 
    ![디스플레이 할당](assets/assign-a-display.png)
 

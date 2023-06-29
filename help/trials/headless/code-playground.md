@@ -4,10 +4,10 @@ description: CodePen 예제 앱 및 JavaScript용 AEM Headless 클라이언트�
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 57%
+source-wordcount: '981'
+ht-degree: 55%
 
 ---
 
@@ -120,4 +120,4 @@ JSON은 의 있는 그대로 렌더링됩니다. `pre` 태그는 매우 창의�
 
 ![adventures-all 쿼리 결과 및 resultToDom 렌더링 함수](assets/do-not-localize/adventures-all-query-result.png)
 
-이제 모델과 쿼리를 빌드하는 작업을 완료했으므로 콘텐츠 팀이 쉽게 인계받을 수 있습니다. 다음 모듈에서는 콘텐츠 작성자 플로우를 표시합니다.
+모델 및 쿼리를 빌드하는 작업을 완료했으므로 콘텐츠 팀이 간편하게 대체할 수 있습니다. 다음 모듈에서는 콘텐츠 작성자 플로우를 표시합니다.

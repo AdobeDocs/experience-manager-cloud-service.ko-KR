@@ -1,10 +1,10 @@
 ---
 title: AMS를 Adobe Experience Manager as a Cloud Service Dispatcher 구성으로 변환
 description: AMS를 Adobe Experience Manager as a Cloud Service Dispatcher 구성으로 변환
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1275'
-ht-degree: 44%
+source-wordcount: '1278'
+ht-degree: 39%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 44%
 
 1. **아카이브 추출 및 최종 접두사 제거**
 
-   아카이브를 폴더에 추출하고, 직속 하위 폴더가 conf, conf.d, conf.dispatcher.d 및 conf.modules.d로 시작하는지 확인합니다. 그렇지 않으면 계층 구조에서 위로 이동합니다.
+   아카이브를 폴더에 추출하고, 직속 하위 폴더가 conf, conf.d, conf.dispatcher.d 및 conf.modules.d로 시작하는지 확인합니다. 그렇지 않은 경우 계층 구조에서 위로 이동합니다.
 
 1. **사용하지 않는 하위 폴더 및 파일 제거**
 
@@ -49,7 +49,7 @@ ht-degree: 44%
 
    * base_rewrite.rules 및 xforwarded_forcessl_rewrite.rules 파일을 제거하고, 이 파일을 참조하는 Include 문을 가상 호스트 파일에서 제거해야 합니다.
 
-   * 이제 conf.d/rewrite에 단일 파일이 포함되어 있는 경우 이름을 rewrite.rules로 변경하고, 가상 호스트 파일에서도 이 파일을 참조하는 Include 문을 수정해야 합니다.
+   * 이제 conf.d/rewrites에 단일 파일이 포함되어 있는 경우 이름을 rewrite.rules로 변경하고 가상 호스트 파일에서도 이 파일을 참조하는 Include 문을 수정해야 합니다.
 
    * 그러나 폴더에 가상 호스트별 파일이 여러 개 있는 경우 해당 컨텐츠를 가상 호스트 파일에서 해당 파일을 참조하는 Include 문에 복사해야 합니다.
 

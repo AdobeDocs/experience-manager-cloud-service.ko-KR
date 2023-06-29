@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.4.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.4.0 릴리스 정보입니다.'
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1532'
 ht-degree: 41%
 
 ---
@@ -128,7 +128,7 @@ ht-degree: 41%
 
 ### 새로운 기능 {#what-is-new-commerce}
 
-* 범주 UID 지원 - 범주 ID에 문자열을 사용하는 시스템에 대한 타사 상거래 통합을 잠금 해제합니다.
+* 범주 UID 지원 - 범주 ID에 문자열을 사용하는 시스템에 대한 서드파티 상거래 통합을 잠금 해제합니다.
 
 * PWA Studio에 대한 AEM 확장에는 다음이 포함됩니다. 통합 예
 
@@ -155,7 +155,7 @@ AEM as a Cloud Service 2021.4.0의 Cloud Manager 릴리스 일자는 2021년 4�
 
 * 프로그램 추가 및 편집 워크플로가 보다 직관적으로 보일 수 있도록 UI가 업데이트됩니다.
 
-* 필수 권한이 있는 사용자는 UI를 통해 상거래 끝점을 제출할 수 있습니다.
+* 필수 권한이 있는 사용자는 UI를 통해 상거래 엔드포인트를 제출할 수 있습니다.
 
 * 이제 환경 변수는 특정 서비스인 작성자 또는 게시로 지정될 수 있습니다. AEM 버전 `2021.03.5104.20210328T185548Z` 이상이 필요합니다.
 
@@ -177,7 +177,7 @@ AEM as a Cloud Service 2021.4.0의 Cloud Manager 릴리스 일자는 2021년 4�
 
 * 파이프라인의 경험 감사 페이지를 편집할 때 슬래시`( / )`로 시작하는 입력 경로로 인해 더 이상 단계가 보류 상태에서 멈추지 않습니다.
 
-* 새 프로덕션 파이프라인이 생성될 때 사용자가 콘텐츠 감사 재정의를 추가하지 않으면 기본 홈페이지가 감사되지 않았습니다.
+* 새 프로덕션 파이프라인이 생성될 때 사용자가 콘텐츠 감사 재정의를 추가하지 않으면 기본 홈 페이지가 감사되지 않았습니다.
 
 * 다운로드 가능한 문제 CSV 파일에서 `CloudServiceIncompatibleWorkflowProcess`에 대한 문제의 심각도가 잘못되었습니다.
 

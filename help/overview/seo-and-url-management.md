@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service를 위한 SEO 및 URL 관리 모범 사례
 description: Adobe Experience Manager as a Cloud Service를 위한 SEO 및 URL 관리 모범 사례
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3709'
-ht-degree: 95%
+source-wordcount: '3706'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ URL에 허용되는 몇 가지 모범 사례들이 있습니다.
 
 AEM 프로젝트에서 URL을 평가할 때에는 다음 사항을 자문해 보십시오.
 
-*&quot;사용자가 이 URL은 보고 페이지에 있는 콘텐츠는 보지 못하는 경우 이 페이지의 내용을 설명할 수 있습니까?&quot;*
+*“사용자가 이 URL은 보고 페이지에 있는 콘텐츠는 보지 못하는 경우 이 페이지의 내용을 설명할 수 있습니까?”*
 
 답변이 예라면 검색 엔진에서 URL이 제대로 작동할 가능성이 높습니다.
 
@@ -76,9 +76,9 @@ AEM 프로젝트에서 URL을 평가할 때에는 다음 사항을 자문해 보
 
 * 각 페이지가 하나의 프로토콜에서만 제공되어야 합니다.
 
-   * 때때로 사이트가 제공됩니다. `http` 사용자가 체크아웃 또는 로그인 양식 등이 있는 페이지에 도달하기 전까지 해당 페이지는 다음으로 전환됩니다. `https`. 이 페이지에서 연결할 때 사용자가 `http` 페이지로 돌아가서 `https`를 통해 액세스하는 경우 검색 엔진은 해당 페이지를 두 개의 개별 페이지로 추적합니다.
+   * 경우에 따라 사이트는 사용자가 체크아웃이나 로그인 양식 등이 있는 페이지에 도달하기 전까지 `http`를 통해 제공되고 이러한 페이지에 도달하면 `https`로 전환됩니다. 이 페이지에서 연결할 때 사용자가 `http` 페이지로 돌아가서 `https`를 통해 액세스하는 경우 검색 엔진은 해당 페이지를 두 개의 개별 페이지로 추적합니다.
 
-   * 현재 Google에서는 `http` 페이지보다 `https` 페이지를 선호합니다. 이러한 이유로 전체 사이트를 제공하는 것이 대개 더 편리합니다 `https`.
+   * 현재 Google에서는 `http` 페이지보다 `https` 페이지를 선호합니다. 따라서 전체 사이트를 `https`로 제공하는 것이 모든 사용자의 생활을 편리하게 만드는 경우가 많습니다.
 
 ### 서버 구성 {#server-configuration}
 
@@ -189,7 +189,7 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
 * 다음과 같은 URL을 사용하는 것이 좋습니다.
   `www.mydomain.com/es/casa.html`.
 
-페이지 이름을 현지화하는 데 있어 어려움은 AEM 플랫폼에서 사용할 수 있는 많은 현지화 도구가 지속적인 컨텐츠 동기화를 위해 로케일 간 페이지 이름을 일치시켜야 한다는 것입니다.
+페이지 이름을 현지화할 때 어려움은 AEM 플랫폼에서 사용할 수 있는 많은 현지화 도구가 지속적인 콘텐츠 동기화를 위해 로케일 간 페이지 이름을 일치시켜야 한다는 것입니다.
 
 `sling:alias` 속성을 사용하면 문제를 해결할 수 있습니다. `sling:alias`를 리소스에 속성으로 추가하여 리소스에 별칭을 허용할 수 있습니다. 앞의 예에서
 
@@ -228,7 +228,7 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
 
 매핑을 생성하려면 `/http` 또는 `/https`의 이 위치에서 `sling:Mapping` 노드를 만듭니다. AEM은 이 노드에 설정된 `sling:match` 및 `sling:internalRedirect` 속성을 기반으로 일치하는 URL의 모든 트래픽을 `internalRedirect` 속성에 지정된 값에 리디렉션합니다.
 
-이것이 공식 AEM 및 Sling 설명서에 정리된 접근 방법인데, 이 구현에서 제공하는 정규식 지원은 `SlingResourceResolver`를 바로 사용함으로써 사용 가능한 옵션과 비교할 때 범위가 제한됩니다. 또한, 이 방식으로 매핑을 구현하면 Dispatcher 캐시 무효화에 문제가 발생할 수 있습니다.
+이것이 공식 AEM 및 Sling 설명서에 정리된 접근 방법인데, 이 구현에서 제공하는 정규 표현식 지원은 `SlingResourceResolver`를 바로 사용함으로써 사용 가능한 옵션과 비교할 때 범위가 제한됩니다. 또한, 이 방식으로 매핑을 구현하면 Dispatcher 캐시 무효화에 문제가 발생할 수 있습니다.
 
 이 문제가 발생하는 방법의 예는 다음과 같습니다.
 
@@ -251,7 +251,7 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
    * **Apache Sling Resource Resolver Factory**
      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
-   URL을 정규식으로 단축하는 데 필요한 매핑을 빌드한 후 빌드에 포함된 OsgiConfignode인 `config.publish`에서 이러한 구성을 정의하는 것이 좋습니다.
+   URL을 정규 표현식으로 단축하는 데 필요한 매핑을 빌드한 후 빌드에 포함된 OsgiConfignode인 `config.publish`에서 이러한 구성을 정의하는 것이 좋습니다.
 
    매핑을 `/etc/map`에서 정의하지 않고 속성 **URL 매핑**(`resource.resolver.mapping`)에 바로 지정할 수 있습니다.
 
@@ -370,7 +370,7 @@ Apache Sling 사이트맵 모듈은 최상위 수준의 사이트맵과 중첩�
 
 기본 구성에서 [페이지 속성] 대화 상자는 페이지를 사이트맵 루트로 표시하여 위에서 설명한 대로 사이트맵과 그 하위 항목을 생성하는 옵션을 표시합니다. 해당 비헤이비어는 `SitemapGenerator` 인터페이스의 구현을 통해 구현되며, 대체 구현 추가를 통해 확장될 수 있습니다. 단, XML 사이트맵 재생성 빈도가 콘텐츠 작성 워크플로 및 워크로드에 따라 크게 변동되기 때문에 제품에는 `SitemapScheduler` 구성이 제공되지 않습니다. 이를 통해 기능을 효과적으로 옵트인할 수 있습니다.
 
-XML 사이트맵을 생성하는 백그라운드 작업을 활성화하려면 `SitemapScheduler` 을(를) 구성해야 합니다. 이렇게 하려면 PID `org.apache.sling.sitemap.impl.SitemapScheduler`에 대해 OSGi 구성을 생성합니다. 스케줄러 표현식 `0 0 0 * * ?`을(를) 시작점으로 사용하여 매일 자정에 모든 XML 사이트맵을 다시 생성할 수 있습니다.
+XML 사이트맵을 생성하는 배경 작업을 활성화하려면 `SitemapScheduler`를 구성해야 합니다. 이렇게 하려면 PID `org.apache.sling.sitemap.impl.SitemapScheduler`에 대해 OSGi 구성을 생성합니다. 스케줄러 표현식 `0 0 0 * * ?`을(를) 시작점으로 사용하여 매일 자정에 모든 XML 사이트맵을 다시 생성할 수 있습니다.
 
 ![Apache Sling 사이트맵 - 스케줄러](assets/sling-sitemap-scheduler.png)
 
@@ -458,7 +458,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-또한 XML 사이트맵에 대해 구현된 기능은 다양한 사용 사례에서도 사용할 수 있습니다(예: 페이지 헤드에 표준 링크 또는 대체 언어 추가). 자세한 내용은 [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) 인터페이스를 참조하십시오.
+또한 XML 사이트맵에 대해 구현된 기능은 다양한 사용 사례에서도 사용할 수 있습니다(예: 페이지 헤드에 표준 링크 또는 대체 언어 추가). 다음을 참조하십시오. [SeoTag](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) 인터페이스 를 참조하십시오.
 
 ### 레거시 URL에 대해 301 리디렉션 생성 {#creating-redirects-for-legacy-urls}
 
@@ -471,7 +471,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 
 ## 추가 리소스 {#additional-resources}
 
-자세한 내용은 다음 추가 자료를 참조하십시오.
+자세한 내용은 다음 추가 리소스를 참조하십시오.
 
 <!--
 * [Resource Mapping](/help/sites-deploying/resource-mapping.md)

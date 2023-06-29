@@ -2,10 +2,10 @@
 title: SPA 소개 및 워크스루
 description: 이 문서에서는 SPA 개념을 소개하고, 작성용 기본 SPA 애플리케이션을 사용하는 과정을 안내하고, 기본 AEM SPA 편집기와 관련되는 방식을 보여 줍니다.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2074'
-ht-degree: 94%
+source-wordcount: '2068'
+ht-degree: 92%
 
 ---
 
@@ -42,11 +42,11 @@ SPA 편집기는 AEM 내에서 SPA를 지원하는 복합 솔루션을 제공합
 
 >[!TIP]
 >
->모든 AEM 프로젝트는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 사용하는 입니다.
+>AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하고 SPA SDK를 사용하는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 사용해야 합니다.
 
 ### SPA란 무엇입니까? {#what-is-a-spa}
 
-단일 페이지 애플리케이션(SPA)은 데이터를 로드하여 페이지를 동적으로 업데이트하는 Ajax 호출을 통해 클라이언트측에서 렌더링되고 주로 JavaScript를 기반으로 하는 기존 페이지와 다릅니다. 페이지와의 사용자 상호 작용을 기반으로 필요에 따라 대부분의 콘텐츠 또는 모든 콘텐츠를 추가 리소스가 비동기적으로 로드된 단일 페이지 로드에서 한 번 검색합니다.
+단일 페이지 애플리케이션(SPA)은 클라이언트측에서 렌더링되고, 주로 JavaScript에서 실행되며, Ajax 호출을 사용하여 데이터를 로드하고 페이지를 동적으로 업데이트한다는 점에서 기존 페이지와 다릅니다. 페이지와의 사용자 상호 작용을 기반으로 필요에 따라 대부분의 콘텐츠 또는 모든 콘텐츠를 추가 리소스가 비동기적으로 로드된 단일 페이지 로드에서 한 번 검색합니다.
 
 이렇게 하면 페이지 새로 고침의 필요성이 줄어들고 사용자에게 원활하고 빠르며 기본 앱 환경과 같은 경험을 제공할 수 있습니다.
 
@@ -71,11 +71,11 @@ AEM SPA 편집기를 통해 프론트엔드 개발자가 AEM 사이트에 통합
 #### 개발자 {#developers}
 
 * 개발자는 콘텐츠와 프레젠테이션 사이의 문제를 명확하게 구분하려고 합니다.
-* 명확하게 구분하여 시스템을 좀 더 많이 확장 가능하게 하고 독립적인 프론트엔드를 개발할 수 있습니다.
+* 깔끔한 분리는 시스템을 더욱 확장 가능하게 만들고 독립적인 프론트엔드 개발을 가능하게 합니다.
 
 ### SPA는 어떻게 작동합니까? {#how-does-a-spa-work}
 
-SPA의 기본 아이디어는 서버에 대한 호출과 서버 의존성을 줄여 서버 지연으로 인한 지연을 최소화함으로써 SPA이 기본 애플리케이션의 응답성에 접근하도록 하는 것입니다.
+SPA의 기본 아이디어는 서버 대기 시간으로 인한 지연을 최소화하기 위해 서버에 대한 호출과 종속성을 감소시켜 SPA가 기본 애플리케이션의 응답성에 접근하도록 하는 것입니다.
 
 기존 순차적 웹 페이지에서는 직접적인 페이지에 필요한 데이터만 로드합니다. 즉, 방문자가 다른 페이지로 이동하는 경우 서버는 추가 리소스에 대해 호출됩니다. 방문자가 페이지의 요소와 상호 작용하는 경우 추가 호출이 필요할 수 있습니다. 해당 다중 호출은 페이지가 방문자의 요청을 확인하므로 지연 시간 또는 지연을 파악할 수 있습니다.
 
@@ -96,7 +96,7 @@ SPA의 기본 아이디어는 서버에 대한 호출과 서버 의존성을 줄
 
 ## SPA를 통한 콘텐츠 편집 경험 {#content-editing-experience-with-spa}
 
-AEM SPA 편집기를 사용하도록 SPA을 빌드하면 콘텐츠 작성자는 콘텐츠를 편집하고 만들 때 차이를 알지 못합니다. 일반적인 AEM 기능을 사용할 수 있고 작성자의 워크플로를 변경할 수 없습니다.
+SPA를 빌드하여 AEM SPA 편집기를 사용하는 경우 콘텐츠 작성자가 콘텐츠를 편집 및 생성할 때 차이가 감지되지 않습니다. 일반적인 AEM 기능을 사용할 수 있고 작성자의 워크플로를 변경할 수 없습니다.
 
 1. AEM에서 WKND SPA Project 앱을 편집합니다.
 
@@ -112,9 +112,9 @@ AEM SPA 편집기를 사용하도록 SPA을 빌드하면 콘텐츠 작성자는 
 
    ![텍스트 편집](assets/wknd-edit-text.png)
 
-1. 에셋 브라우저를 사용하여 새 이미지를 이미지 구성 요소로 드래그 앤 드롭합니다.
+1. 자산 브라우저를 사용하여 새 이미지를 이미지 구성 요소로 드래그 앤 드롭합니다.
 
-   ![이미지 에셋 삭제](assets/wkdn-drop-image.png)
+   ![이미지 자산 삭제](assets/wkdn-drop-image.png)
 
 1. 변경 사항이 지속됩니다.
 
@@ -177,7 +177,7 @@ SPA가 최종 사용자에게 어떻게 동작하는지 경험한 다음 SPA 페
 
 1. 검사기의 네트워크 탭으로 전환하고 페이지를 다시 로드합니다.
 
-   이미지 요청을 무시하면서 페이지에 로드된 기본 리소스가 페이지 자체, CSS, React JavaScript, 해당 종속성과 페이지의 JSON 데이터인지 확인합니다.
+   이미지 요청을 무시하는 경우 페이지에 대해 로드된 기본 리소스는 페이지 자체, CSS, React JavaScript, 해당 종속성 및 페이지에 대한 JSON 데이터입니다.
 
    ![WKND SPA Project 네트워크 활동](assets/wknd-network.png)
 
@@ -187,9 +187,9 @@ SPA가 최종 사용자에게 어떻게 동작하는지 경험한 다음 SPA 페
 
    ![WKND SPA Project 홈 페이지의 JSON](assets/wknd-json.png)
 
-   AEM SPA Editor는 [AEM Content Services](/help/sites-cloud/administering/content-fragments/content-fragments.md) 를 사용하여 페이지의 전체 콘텐츠를 JSON 모델로 제공할 수 있습니다.
+   AEM SPA 편집기는 [AEM Content Services](/help/sites-cloud/administering/content-fragments/content-fragments.md)를 사용하여 페이지 전체 콘텐츠를 JSON 모델로 제공합니다.
 
-   특정 인터페이스를 구현하면 Sling 모델은 SPA에 필요한 정보를 제공합니다. JSON 데이터 게재가 각 구성 요소로 하향 위임됩니다(페이지에서 단락과 구성 요소로).
+   특정 인터페이스를 구현하면 Sling 모델은 SPA에 필요한 정보를 제공합니다. JSON 데이터 전달은 각 구성 요소(페이지, 단락, 구성 요소 등)로 아래쪽으로 위임됩니다.
 
    각 구성 요소는 노출되는 항목과 렌더링 방법을 선택합니다(HTL의 서버측 또는 React 또는 Angular의 클라이언트측). 이 문서는 React를 통해 클라이언트측 렌더링에 중점을 둡니다.
 
@@ -207,7 +207,7 @@ SPA가 최종 사용자에게 어떻게 동작하는지 경험한 다음 SPA 페
 
 ### SPA 편집기와의 상호 작용 {#interaction-with-the-spa-editor}
 
-샘플 WKND SPA Project 애플리케이션을 통해 게시될 때 앱의 작동 및 로드 방식을 분명히 파악하고 JSON 콘텐츠 게재와 리소스의 비동기식 로드에 콘텐츠 서비스를 활용합니다.
+샘플 WKND SPA Project 애플리케이션을 사용하면 JSON 콘텐츠 전달 및 비동기 리소스 로드를 위한 콘텐츠 서비스를 활용하여 게시 시 앱이 어떻게 동작하며 로드되는지 명확하게 알 수 있습니다.
 
 또한 콘텐츠 작성자는 SPA 편집기를 사용하여 AEM 내에서 콘텐츠를 원활하게 생성할 수 있습니다.
 
@@ -231,7 +231,7 @@ SPA가 최종 사용자에게 어떻게 동작하는지 경험한 다음 SPA 페
 
    이는 편집기가 SPA 내에서 편집 가능한 구성 요소로 인식하는 데 필요한 유일한 마크업 속성입니다. 이 속성을 기반으로 SPA 편집기는 구성 요소와 연결된 편집 가능한 구성을 결정하므로 올바른 프레임, 도구 모음 등이 로드됩니다.
 
-   일부 특정 클래스 이름이 자리 표시자 표기 및 에셋 드래그 앤 드롭 기능에 추가되기도 합니다.
+   일부 특정 클래스 이름이 자리 표시자 표기 및 자산 드래그 앤 드롭 기능에 추가되기도 합니다.
 
    >[!NOTE]
    >
@@ -241,7 +241,7 @@ SPA가 최종 사용자에게 어떻게 동작하는지 경험한 다음 SPA 페
 
 ## AEM Headful 및 Headless {#headful-headless}
 
-개발 및 유지 관리되는 AEM 외부 SPA를 포함하여 유연한 AEM 내부 통합 기능을 사용하여 SPA를 활성화할 수 있습니다. 또한 SPA을 AEM 내에서 사용하는 동시에 AEM을 사용하여 headless로 콘텐츠를 추가 엔드포인트에 전달할 수 있습니다.
+개발 및 유지 관리되는 AEM 외부 SPA를 포함하여 유연한 AEM 내부 통합 기능을 사용하여 SPA를 활성화할 수 있습니다. 또한 SPA를 AEM 내부에서 사용하는 동시에 AEM을 사용하여 콘텐츠를 Headless 방식으로 추가 엔드포인트에 게재할 수 있습니다.
 
 >[!TIP]
 >
@@ -254,4 +254,4 @@ SPA가 최종 사용자에게 어떻게 동작하는지 경험한 다음 SPA 페
 * [React를 사용하여 AEM에서 SPA 시작하기](getting-started-react.md) React를 통해 AEM에서 기본 SPA를 빌드하여 SPA 편집기에서 작업하는 방법을 표시함
 * [Angular를 사용하여 AEM에서 SPA 시작하기](getting-started-angular.md) Angular를 통해 AEM에서 기본 SPA를 빌드하여 SPA 편집기에서 작업하는 방법을 표시함
 * [SPA 편집기 개요](editor-overview.md)는 AEM과 SPA 간의 커뮤니케이션 모델에 대해 자세히 설명합니다.
-* [AEM용 SPA 개발](developing.md)에서는 프론트엔드 개발자를 AEM용 SPA 개발에 유도하는 방법과 SPA가 AEM의 아키텍처와 상호 작용하는 방법에 대해 설명합니다.
+* [AEM용 SPA 개발](developing.md) 프론트엔드 개발자를 참여시켜 SPA for AEM을 개발하는 방법과 SPA이 AEM 아키텍처와 상호 작용하는 방법에 대해 설명합니다.

@@ -4,10 +4,10 @@ description: 콘텐츠 조각 및 GraphQL API를 Headless 콘텐츠 관리 시�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: a2064dcbec1c171b0a6de57b4197f4921d234428
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 100%
+source-wordcount: '1116'
+ht-degree: 92%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->드롭다운 메뉴에서 **AEM 데모 에셋** 엔드포인트를 선택할 수 없다면 Adobe 고객 지원 센터에 문의하거나[AEM 체험판 Slack 채널](https://adobe-dx-support.slack.com/)을 확인하십시오.
+>을(를) 선택할 수 없는 경우 **AEM 데모 자산** 드롭다운에서 엔드포인트를 다운로드하려면에서 Adobe 고객 지원 센터에 문의하거나 [AEM 체험판 Slack 채널.](https://adobe-dx-support.slack.com/)
 
 ## 특정 샘플 콘텐츠에 대한 쿼리 {#bypath-query}
 

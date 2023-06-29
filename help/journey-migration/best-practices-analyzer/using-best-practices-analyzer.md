@@ -2,9 +2,9 @@
 title: Best Practices Analyzer 사용
 description: Best Practices Analyzer 사용
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2479'
+source-wordcount: '2474'
 ht-degree: 46%
 
 ---
@@ -28,7 +28,7 @@ Best Practices Analyzer(BPA) 실행을 위한 중요한 고려 사항을 이해�
 * BPA는 버전 6.1 이상의 AEM 인스턴스에서 지원됩니다.
 
   >[!NOTE]
-  >다음을 참조하십시오. [AEM 6.1에 설치](#installing-on-aem61) AEM 6.1에 BPA를 설치하기 위한 특별 요구 사항.
+  >다음을 참조하십시오 [AEM 6.1에 설치](#installing-on-aem61) AEM 6.1에 BPA를 설치하기 위한 특별 요구 사항.
 
 * BPA는 모든 환경에서 실행할 수 있지만 *단계* 환경.
 
@@ -107,7 +107,7 @@ Best Practices Analyzer(BPA) 실행을 위한 중요한 고려 사항을 이해�
    ![이미지](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-   >ACS Commons 결과를 무시해서는 안 됩니다. 을(를) 참조하십시오 [설명서](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) AEMas a Cloud Service 과의 호환성을 확인합니다.
+   >ACS Commons 결과를 무시해서는 안 됩니다. 다음을 참조하십시오 [설명서](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) AEMas a Cloud Service 과의 호환성을 확인합니다.
 
 <!--
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
@@ -192,7 +192,7 @@ HTTP 인터페이스는 다양한 방법으로 사용될 수 있습니다.
 
 한 가지 간단한 방법은 관리자로 AEM에 이미 로그인되어 있는 동일한 브라우저에서 브라우저 탭을 여는 것입니다. 브라우저 탭에 URL을 입력하고 결과를 브라우저가 표시하거나 다운로드하도록 할 수 있습니다.
 
-또한 HTTP 클라이언트 애플리케이션과 `curl` 또는 `wget`와 같은 명령줄 도구를 사용할 수 있습니다. 인증된 세션에서 브라우저 탭을 사용하지 않는 경우 주석의 일부로 관리 사용자 이름과 암호를 제공해야 합니다.
+다음과 같은 명령줄 도구를 사용할 수도 있습니다. `curl` 또는 `wget` 및 모든 HTTP 클라이언트 응용 프로그램 인증된 세션에서 브라우저 탭을 사용하지 않는 경우 주석의 일부로 관리 사용자 이름과 암호를 제공해야 합니다.
 
 다음은 이 작업을 수행하는 방법의 예입니다.
 `curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.csv' > report.csv`.

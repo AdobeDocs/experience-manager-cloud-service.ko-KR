@@ -4,9 +4,9 @@ description: Dispatcher 도구를 사용하여 확인 및 디버깅(이전)
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2338'
+source-wordcount: '2329'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 * 사이트별 파일이 아닌 사용해야 하는 단일 재작성 파일입니다.
 * 사용자 정의 가능한 파일의 컨텐츠 합계는 1MB 미만이어야 합니다.
 
-Cloud Manager 2021.7.0 릴리스부터 새로운 Cloud Manager 프로그램은 위의 파일을 포함하는 AEM Archetype 28 이상의 Maven 프로젝트 구조를 생성합니다.
+Cloud Manager 2021.7.0 릴리스부터 새로운 Cloud Manager 프로그램은 이전에 언급된 파일을 포함하는 AEM Archetype 28 이상의 Maven 프로젝트 구조를 생성합니다.
 
 다음과 같습니다. **매우 권장됨** 마이그레이션 섹션에 설명된 대로 레거시 모드에서 유연한 모드로 마이그레이션하는 경우 [레거시 모드에서 유연한 모드로 마이그레이션](#migrating-flexible). 또한 유연한 모드를 사용하면 SDK 및 런타임에서 개선된 방식으로 구성의 유효성을 검사하고 배포할 수 있습니다.
 
@@ -81,7 +81,7 @@ Cloud Manager 2021.7.0 릴리스부터 새로운 Cloud Manager 프로그램은 �
 
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
-이러한 파일이 한 개 이상 있을 수 있습니다. 다음 항목이 포함됩니다. `<VirtualHost>` 호스트 이름과 일치하고 Apache가 서로 다른 규칙으로 각 도메인 트래픽을 처리할 수 있도록 하는 항목입니다. 파일은에서 만들어집니다. `available_vhosts` 디렉토리 및 의 심볼 링크로 활성화됨 `enabled_vhosts` 디렉토리. 다음에서 `.vhost` 파일, 재작성 및 변수와 같은 다른 파일이 포함됩니다.
+이러한 파일이 한 개 이상 있을 수 있습니다. 다음 항목이 포함됩니다. `<VirtualHost>` 호스트 이름과 일치하고 Apache가 서로 다른 규칙으로 각 도메인 트래픽을 처리할 수 있도록 하는 항목입니다. 파일은에서 만들어집니다. `available_vhosts` 디렉토리 및 의 심볼 링크로 활성화됨 `enabled_vhosts` 디렉토리. 다음에서 `.vhost` 파일, 다른 파일(예: 재작성 및 변수)이 포함됩니다.
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -117,13 +117,13 @@ Cloud Manager 2021.7.0 릴리스부터 새로운 Cloud Manager 프로그램은 �
 
 * `conf.dispatcher.d/virtualhosts/virtualhosts.any`
 
-이 파일은 의 내부에 있습니다. `.farm` 파일. glob 일치로 일치시킬 호스트 이름 또는 URI 경로 목록이 있습니다. 요청을 제공하는 데 사용할 백엔드를 결정합니다.
+이 파일은 의 내부에 있습니다. `.farm` 파일. glob 일치로 일치시킬 호스트 이름 또는 URI 경로 목록이 있습니다. 이 일치는 요청을 제공하는 데 사용할 백엔드를 결정합니다.
 
 위의 파일은 아래 나열된 변경 불가능한 구성 파일을 참조합니다. 변경 불가능한 파일에 대한 변경 사항은 클라우드 환경의 Dispatcher에서 처리되지 않습니다.
 
 **변경할 수 없는 구성 파일**
 
-이러한 파일은 기본 프레임워크의 일부이며 표준 및 모범 사례를 적용합니다. 파일을 로컬에서 수정하거나 삭제해도 클라우드 인스턴스로 전송되지 않으므로 배포에 영향을 주지 않으므로 파일을 변경할 수 없는 것으로 간주됩니다.
+이러한 파일은 기본 프레임워크의 일부이며 표준 및 모범 사례를 적용합니다. 파일은 클라우드 인스턴스로 전송되지 않으므로 로컬에서 수정하거나 삭제해도 배포에 영향을 주지 않으므로 변경할 수 없는 것으로 간주됩니다.
 
 위의 파일은 아래 나열된 변경 불가능한 파일을 참조한 후 추가 문 또는 무시를 수행하는 것이 좋습니다. Dispatcher 구성이 클라우드 환경에 배포되면 로컬 개발에 사용된 버전에 관계없이 변경할 수 없는 파일의 최신 버전이 사용됩니다.
 
@@ -137,7 +137,7 @@ Cloud Manager 2021.7.0 릴리스부터 새로운 Cloud Manager 프로그램은 �
 
 * `conf.d/rewrites/default_rewrite.rules`
 
-표준 프로젝트에 적합한 기본 재작성 규칙. 맞춤화가 필요한 경우 `rewrite.rules`. 사용자 지정에서 필요에 맞는 기본 규칙을 먼저 포함할 수 있습니다.
+표준 프로젝트에 적합한 재작성에 대한 기본 규칙. 맞춤화가 필요한 경우 다음을 편집합니다. `rewrite.rules`. 사용자 지정에서 필요에 맞는 기본 규칙을 먼저 포함할 수 있습니다.
 
 * `conf.dispatcher.d/available_farms/default.farm`
 
@@ -178,7 +178,7 @@ Dispatcher 팜이 포함된 방법을 보여 주는 기본 프레임워크의 �
 ## 로컬 유효성 검사 {#local-validation-legacy-mode}
 
 >[!NOTE]
->아래 섹션에는 SDK의 Mac 또는 Linux 버전을 사용하는 명령이 포함되어 있지만 Windows SDK도 유사한 방식으로 사용할 수 있습니다.
+>아래 섹션에는 SDK의 Mac 또는 Linux® 버전을 사용하는 명령이 포함되어 있지만 Windows SDK도 유사한 방식으로 사용할 수 있습니다.
 
 사용 `validate.sh` 아래와 같은 스크립트:
 
@@ -219,7 +219,7 @@ Phase 3 finished
 
 1. 유효성 검사기를 실행합니다. 구성이 올바르지 않으면 스크립트가 실패합니다.
 2. 실행 `httpd -t` apache httpd가 시작할 수 있도록 구문이 올바른지 테스트하는 명령입니다. 성공하면 구성을 배포할 준비가 되어 있어야 합니다.
-3. 에 설명된 대로 변경할 수 없도록 설계된 Dispatcher SDK 구성 파일의 하위 집합이 있는지 확인합니다. [파일 구조 섹션](##legacy-mode-file-structure)은(는) 수정되지 않았습니다. Dispatcher 도구 버전 2.0.36도 포함하는 AEM SDK 버전 v2021.1.4738에서 도입된 새로운 확인입니다. 이 업데이트 이전에는 고객이 변경 불가능한 파일의 로컬 SDK 수정 사항이 클라우드 환경에도 적용된다고 잘못 가정했을 수 있습니다.
+3. 에 설명된 대로 변경할 수 없도록 설계된 Dispatcher SDK 구성 파일의 하위 집합이 있는지 확인합니다. [파일 구조 섹션](##legacy-mode-file-structure)이(가) 편집되지 않았습니다. 이 검사는 새로운 기능으로, Dispatcher 도구 버전 2.0.36도 포함하는 AEM SDK 버전 v2021.1.4738과 함께 도입되었습니다. 이 업데이트 이전에는 고객이 변경 불가능한 파일의 로컬 SDK 수정 사항이 클라우드 환경에도 적용된다고 잘못 가정했을 수 있습니다.
 
 Cloud Manager 배포 중 `httpd -t` 구문 검사도 실행되며 모든 오류가 Cloud Manager에 포함됩니다 `Build Images step failure` 로그합니다.
 
@@ -230,7 +230,7 @@ Cloud Manager 배포 중 `httpd -t` 구문 검사도 실행되며 모든 오류�
 * 를 통해 허용을 사용하는 필터 규칙이 없습니다. `/glob` (참조 [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957) 을 참조하십시오.
 * 관리 기능이 노출되지 않았습니다. 예를 들어 다음과 같은 경로에 액세스할 수 있습니다 `/crx/de or /system/console`.
 
-유효성 검사 도구는 허용 목록에추가된이 아닌 Apache 지시문의 금지된 사용만 보고합니다. 이 정보는 실행 중인 환경의 Apache 모듈에서만 사용할 수 있으므로 Apache 구성과 관련된 구문 또는 의미 상의 문제는 보고하지 않습니다.
+유효성 검사 도구는 허용 목록에추가된이 아닌 Apache 지시문의 금지된 사용만 보고합니다. 이 정보는 실행 중인 환경의 Apache 모듈에서만 사용할 수 있으므로 Apache 구성과 관련된 구문 또는 의미 체계 문제를 보고하지 않습니다.
 
 다음은 도구에서 출력하는 일반적인 유효성 검사 오류를 디버깅하기 위한 문제 해결 기술입니다.
 
@@ -243,7 +243,7 @@ use the prefix `etc/httpd` in your archive.
 
 활성화된 팜은 언급된 하위 폴더에 있어야 합니다.
 
-**포함된 파일(...)의 이름은 다음과 같습니다. ...**
+**포함된 파일(...)의 이름은 다음과 같아야 합니다. ...**
 
 팜 구성에는 다음과 같은 두 개의 섹션이 있습니다. **필수** 특정 파일 포함: `/renders` 및 `/allowedClients` 다음에서 `/cache` 섹션. 이러한 섹션은 다음과 같아야 합니다.
 
@@ -274,7 +274,7 @@ use the prefix `etc/httpd` in your archive.
 
 또는 다음을 포함할 수 있습니다 **기본값** 파일 버전(이름 앞에 단어 포함) `default_`, 예: `../filters/default_filters.any`.
 
-**알려진 위치 외부에 있는 (...)의 문을 포함합니다.**
+**알려진 위치 외부에 있는 (...)에 문을 포함합니다.**
 
 위 단락에 언급된 6개의 섹션 외에는 다음을 사용할 수 없습니다. `$include` 명령문, 예를 들어 다음과 같은 경우 이 오류가 발생합니다.
 
@@ -286,7 +286,7 @@ use the prefix `etc/httpd` in your archive.
 
 **허용된 클라이언트/렌더링은 다음에서 포함되지 않습니다. ...**
 
-이 오류는에 대해 을(를) 지정하지 않을 때 생성됩니다 `/renders` 및 `/allowedClients` 다음에서 `/cache` 섹션. 다음을 참조하십시오.
+이 오류는에 대해 &quot;include&quot;를 지정하지 않을 때 생성됩니다 `/renders` 및 `/allowedClients` 다음에서 `/cache` 섹션. 다음을 참조하십시오.
 **포함된 파일(...)의 이름은 다음과 같습니다. ...** 섹션에 자세히 설명되어 있습니다.
 
 **필터는 glob 패턴을 사용하여 요청을 허용하지 않아야 함**
@@ -313,18 +313,18 @@ Apache 가상 호스트 구성에는 재작성과 변수의 두 가지 유형으
 
 >[!TIP]
 >
->보다 제한된 방식으로 더 많은 파일을 포함할 수 있도록 유연한 Dispatcher 구성 모드로 전환할 수 있습니다. 문서를 참조하십시오. [Dispatcher 도구를 사용하여 확인 및 디버깅](/help/implementing/dispatcher/validation-debug.md) 유연한 모드에 대한 자세한 내용.
+보다 제한된 방식으로 더 많은 파일을 포함할 수 있도록 유연한 Dispatcher 구성 모드로 전환할 수 있습니다. 다음을 참조하십시오 [Dispatcher 도구를 사용하여 확인 및 디버깅](/help/implementing/dispatcher/validation-debug.md) 유연한 모드에 대한 자세한 내용.
 
 또는 다음을 포함할 수 있습니다 **기본값** 이름이 인 규칙 다시 작성 버전 `conf.d/rewrites/default_rewrite.rules`.
 변수 파일의 기본 버전은 없습니다.
 
 **사용 중단된 구성 레이아웃이 감지되어 호환성 모드가 활성화됩니다.**
 
-이 메시지는 구성에 사용되지 않는 버전 1 레이아웃이 포함되어 있으며, 전체 Apache 구성 및 파일이 포함되어 있음을 나타냅니다. `ams_` 접두사. 이전 버전과의 호환성을 위해 지원되지만 새 레이아웃으로 전환해야 합니다.
+이 메시지는 구성에 사용되지 않는 버전 1 레이아웃이 포함되어 있으며, 전체 Apache 구성 및 파일이 포함되어 있음을 나타냅니다. `ams_` 접두사. 이 구성은 이전 버전과의 호환성을 위해 계속 지원되지만 새 레이아웃으로 전환해야 합니다.
 
-첫 번째 단계는 다음과 같을 수도 있습니다. **개별적으로 실행**, 래퍼에서 보다는 `validate.sh` 스크립트.
+첫 번째 단계는 **개별적으로 실행**, 래퍼에서 보다는 `validate.sh` 스크립트.
 
-Maven 아티팩트 또는 `dispatcher/src` 하위 디렉터리에서 유효성 검사 실패를 보고합니다.
+Maven 아티팩트 또는 `dispatcher/src` 하위 디렉토리이며 유효성 검사 실패를 보고합니다.
 
 ```
 $ validator full dispatcher/src
@@ -352,15 +352,15 @@ Windows 탐색기에서 경로를 복사하여 붙여넣은 다음 명령 프롬
 이 단계에서는 이미지에서 도커를 시작하여 Apache 구문을 확인합니다. Docker를 로컬에 설치해야 하지만 AEM을 실행할 필요는 없습니다.
 
 >[!NOTE]
->Windows 사용자는 Windows 10 Professional 또는 Docker를 지원하는 기타 배포를 사용해야 합니다. 로컬 컴퓨터에서 Dispatcher를 실행하고 디버깅하기 위한 전제 조건입니다.
+Windows 사용자는 Windows 10 Professional 또는 Docker를 지원하는 기타 배포를 사용해야 합니다. 이 전제 조건은 로컬 컴퓨터에서 Dispatcher를 실행하고 디버깅하는 데 필요합니다.
 
-이 단계는 `validator full -d out src/dispatcher`: 다음 명령에 필요한 out 디렉터리를 생성합니다. `bin/docker_run.sh out host.docker.internal:4503 8080`.
+이 단계는 `validator full -d out src/dispatcher`: 다음 명령에 필요한 &quot;out&quot; 디렉터리를 생성합니다. `bin/docker_run.sh out host.docker.internal:4503 8080`.
 
 Cloud Manager 배포 중 `httpd -t` 구문 검사가 실행되고 모든 오류가 Cloud Manager 이미지 빌드 단계 오류 로그에 포함됩니다.
 
 ### 단계 3 {#third-phase}
 
-이 단계에서 오류가 발생하는 경우 Adobe이 하나 이상의 변경 불가능한 파일을 변경했으며 해당 변경 불가능한 파일을 의 새 버전으로 바꿔야 합니다. `src` sdk의 디렉터리입니다. 아래의 로그 샘플은 이 문제를 보여 줍니다.
+이 단계에서 오류가 발생하면 Adobe에서 변경할 수 없는 파일을 하나 이상 변경했음을 의미합니다. 이 경우 변경할 수 없는 해당 파일을 의 새 버전으로 바꿔야 합니다 `src` sdk의 디렉터리입니다. 다음 로그 샘플은 이 문제를 보여 줍니다.
 
 ```
 Phase 3: Immutability check
@@ -379,13 +379,13 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
   
 ```
 
-이 단계는 `validator full -d out src/dispatcher`: 다음 명령에 필요한 out 디렉터리를 생성합니다. `bin/docker_immutability_check.sh out`.
+이 단계는 `validator full -d out src/dispatcher`: 다음 명령에 필요한 &quot;out&quot; 디렉터리를 생성합니다. `bin/docker_immutability_check.sh out`.
 
 ## Apache 및 Dispatcher 구성 디버깅 {#debugging-apache-and-dispatcher-configuration}
 
-다음을 사용하여 Apache Dispatcher를 로컬에서 실행할 수 있습니다. `./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
+를 사용하여 로컬에서 Apache Dispatcher를 실행할 수 있습니다. `./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
 
-앞에서 설명한 대로 Docker를 로컬에 설치해야 하며, AEM을 실행할 필요는 없습니다. Windows 사용자는 Windows 10 Professional 또는 Docker를 지원하는 기타 배포를 사용해야 합니다. 로컬 컴퓨터에서 Dispatcher를 실행하고 디버깅하기 위한 전제 조건입니다.
+앞에서 설명한 대로 Docker를 로컬에 설치해야 하며, AEM을 실행할 필요는 없습니다. Windows 사용자는 Windows 10 Professional 또는 Docker를 지원하는 기타 배포를 사용해야 합니다. 이 전제 조건은 로컬 컴퓨터에서 Dispatcher를 실행하고 디버깅하는 데 필요합니다.
 
 다음 전략을 사용하여 Dispatcher 모듈에 대한 로그 출력을 높이고 의 결과를 볼 수 있습니다. `RewriteRule` 로컬 및 클라우드 환경 모두에서 평가.
 
@@ -419,7 +419,7 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 
 ## 환경당 다른 Dispatcher 구성 {#different-dispatcher-configurations-per-environment}
 
-현재 동일한 Dispatcher 구성이 모든 AEM as a Cloud Service 환경에 적용됩니다. 런타임에는 환경 변수가 있습니다 `ENVIRONMENT_TYPE` 현재 실행 모드(dev, stage 또는 prod)와 정의가 포함됩니다. 정의는 다음과 같을 수 있습니다. `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE` 또는 `ENVIRONMENT_PROD`. Apache 구성에서 변수는 표현식에서 직접 사용할 수 있습니다. 또는 정의를 사용하여 논리를 빌드할 수 있습니다.
+현재 동일한 Dispatcher 구성이 AEM의 모든 환경에 as a Cloud Service으로 적용됩니다. 런타임에 환경 변수가 있습니다. `ENVIRONMENT_TYPE` 현재 실행 모드(dev, stag 또는 prod)와 정의는 다음과 같을 수 있습니다. `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE`, 또는 `ENVIRONMENT_PROD`. Apache 구성에서 변수는 표현식에서 직접 사용할 수 있습니다. 또는 정의를 사용하여 논리를 빌드할 수 있습니다.
 
 ```
 # Simple usage of the environment variable
@@ -455,7 +455,7 @@ DISP_RUN_MODE에 대한 값을 전달하지 않을 때의 기본 실행 모드�
 
 ## 도커 컨테이너에서 사용 중인 Dispatcher 구성 보기 {#viewing-dispatcher-configuration-in-use-by-docker-container}
 
-환경별 구성에서는 실제 Dispatcher 구성이 어떻게 표시되는지 파악하기 어려울 수 있습니다. 를 사용하여 도커 컨테이너를 시작한 후 `docker_run.sh` 다음과 같이 덤프할 수 있습니다.
+환경별 구성에서는 실제 Dispatcher 구성이 어떻게 표시되는지 파악하기 어려울 수 있습니다. 를 사용하여 도커 컨테이너를 시작한 후 `docker_run.sh`, 다음과 같이 덤프할 수 있습니다.
 
 * 사용 중인 도커 컨테이너 ID 확인:
 
@@ -478,4 +478,4 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## 레거시 모드에서 유연한 모드로 마이그레이션 {#migrating-flexible}
 
-Cloud Manager 2021.7.0 릴리스를 통해 새로운 Cloud Manager 프로그램은 파일을 포함하는 AEM Archetype 28 이상의 Maven 프로젝트 구조를 생성합니다 **opt-in/USE_SOURCES_DIRECTLY**. 이렇게 하면 파일 수와 크기에 대한 이전 레거시 모드의 제한 사항이 제거되며, 따라서 SDK 및 런타임에서 개선된 방식으로 구성의 유효성을 검사하고 배포할 수 있습니다. Dispatcher 구성에 이 파일이 없는 경우 마이그레이션하는 것이 좋습니다. 에 설명된 방법 사용 [유연 모드](/help/implementing/dispatcher/validation-debug.md#migrating) 페이지를 가리키도록 업데이트하는 중입니다.
+Cloud Manager 2021.7.0 릴리스를 통해 새로운 Cloud Manager 프로그램은 파일을 포함하는 AEM Archetype 28 이상의 Maven 프로젝트 구조를 생성합니다 **opt-in/USE_SOURCES_DIRECTLY**. 파일 수와 크기에 대한 이전 제한 사항이 제거되므로 SDK 및 런타임에서 개선된 방법으로 구성의 유효성을 검사하고 배포할 수 있습니다. Dispatcher 구성에 이 파일이 없는 경우 마이그레이션하는 것이 좋습니다. 에 설명된 방법 사용 [유연 모드](/help/implementing/dispatcher/validation-debug.md#migrating) 페이지를 가리키도록 업데이트하는 중입니다.

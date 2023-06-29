@@ -2,7 +2,7 @@
 title: AEM 프로젝트 구조
 description: Adobe Experience Manager Cloud Service에 배포할 패키지 구조를 정의하는 방법에 대해 알아봅니다.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2918'
 ht-degree: 4%
@@ -558,7 +558,7 @@ scripts=["
   ...
   <repository>
       <id>3rd-party-repository</id>
-      <name>Public 3rd Party Repository</name>
+      <name>Public Third-Party Repository</name>
       <url>https://repo.3rdparty.example.com/...</url>
       <releases>
           <enabled>true</enabled>

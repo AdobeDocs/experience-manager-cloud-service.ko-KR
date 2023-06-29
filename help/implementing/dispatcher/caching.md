@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에서 캐싱
 description: AEM as a Cloud Service에서 캐싱
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2793'
+source-wordcount: '2795'
 ht-degree: 2%
 
 ---
@@ -82,7 +82,7 @@ Define DISABLE_DEFAULT_CACHING
 
 ### 클라이언트측 라이브러리(js,css) {#client-side-libraries}
 
-* AEM 클라이언트 측 라이브러리 프레임워크를 사용하는 경우 모든 변경 사항이 고유한 경로를 가진 새 파일로 매니페스트되므로 브라우저에서 무기한 캐시할 수 있는 방식으로 JavaScript 및 CSS 코드가 생성됩니다. 즉, 클라이언트 라이브러리를 참조하는 HTML은 필요에 따라 생성되므로 고객은 게시된 대로 새로운 콘텐츠를 경험할 수 있습니다. 캐시 제어는 &quot;immutable&quot; 또는 &quot;immutable&quot; 값을 준수하지 않는 오래된 브라우저에 대해 30일로 설정됩니다.
+* AEM 클라이언트 측 라이브러리 프레임워크를 사용하는 경우 모든 변경 사항이 고유한 경로를 가진 새 파일로 매니페스트되므로 브라우저에서 무기한 캐시할 수 있는 방식으로 JavaScript 및 CSS 코드가 생성됩니다. 즉, 클라이언트 라이브러리를 참조하는 HTML은 필요에 따라 생성되므로 고객은 게시된 대로 새로운 콘텐츠를 경험할 수 있습니다. cache-control은 &quot;immutable&quot; 또는 &quot;immutable&quot; 값을 준수하지 않는 오래된 브라우저의 경우 30일로 설정됩니다.
 * 섹션 보기 [클라이언트 측 라이브러리 및 버전 일관성](#content-consistency) 추가 세부 정보.
 
 ### 이미지 및 Blob 저장소에 저장될 만큼 큰 모든 콘텐츠 {#images}
@@ -319,7 +319,7 @@ Adobe은 표준 캐시 헤더를 사용하여 콘텐츠 전달 수명 주기를 
 
 * SCD API는 정확한 지식이 필요한 외부 시스템과 동기화하는 등 모든 이벤트가 보장되어야 할 때 필요합니다. 무효화 호출 시 게시 계층 업스케일링 이벤트가 있는 경우, 각 새 게시가 무효화를 처리할 때 추가 이벤트가 발생합니다.
 
-* 복제 API 사용은 일반적인 사용 사례가 아니지만 캐시를 무효화하는 트리거가 작성자 계층이 아닌 게시 계층에서 온 경우 사용할 수 있습니다. 이 방법은 Dispatcher TTL이 구성된 경우 유용할 수 있습니다.
+* 복제 API를 사용하는 것은 일반적인 사용 사례가 아니지만 캐시를 무효화하는 트리거가 작성자 계층이 아닌 게시 계층에서 온 경우 사용할 수 있습니다. 이 방법은 Dispatcher TTL이 구성된 경우 유용할 수 있습니다.
 
 결론적으로 Dispatcher 캐시를 무효화하려는 경우 권장 옵션은 작성자의 SCD API 무효화 작업을 사용하는 것입니다. 또한 이벤트를 수신하여 추가 다운스트림 작업을 트리거할 수도 있습니다.
 
@@ -448,7 +448,7 @@ The diagram presented below illustrates this.
 
 ![CDN](assets/cdnd.png "CDN")
 
-If there is a concern that the dispatcher cache isn't clearing, contact [customer support](https://helpx.adobe.com/support.ec.html) who can flush the dispatcher cache if necessary.
+If there is a concern that the dispatcher cache is not clearing, contact [customer support](https://helpx.adobe.com/support.ec.html) who can flush the dispatcher cache if necessary.
 
 The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary. -->
 

@@ -3,7 +3,7 @@ title: Dispatcher 도구를 사용하여 확인 및 디버깅
 description: Dispatcher 도구를 사용하여 확인 및 디버깅
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2847'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 ## 소개 {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->클라우드의 Dispatcher 및 Dispatcher 도구를 다운로드하는 방법에 대한 자세한 내용은 다음을 참조하십시오. [클라우드의 디스패처](/help/implementing/dispatcher/disp-overview.md) 페이지를 가리키도록 업데이트하는 중입니다. Dispatcher 구성이 레거시 모드에 있는 경우 다음을 참조하십시오. [레거시 모드 설명서](/help/implementing/dispatcher/validation-debug-legacy.md).
+>클라우드의 Dispatcher 및 Dispatcher 도구를 다운로드하는 방법에 대한 자세한 내용은 다음을 참조하십시오. [클라우드의 디스패처](/help/implementing/dispatcher/disp-overview.md) 페이지를 가리키도록 업데이트하는 중입니다. Dispatcher 구성이 레거시 모드인 경우 를 참조하십시오. [레거시 모드 설명서](/help/implementing/dispatcher/validation-debug-legacy.md).
 
 다음 단원에서는 유연한 모드 파일 구조, 로컬 유효성 검사, 디버깅 및 레거시 모드에서 유연한 모드로 마이그레이션에 대해 설명합니다.
 
@@ -321,7 +321,7 @@ use the prefix `etc/httpd` in your archive.
 
 **허용된 클라이언트/렌더링은 다음에서 포함되지 않습니다. ...**
 
-이 오류는에 대해 &quot;include&quot;를 지정하지 않을 때 생성됩니다. `/renders` 및 `/allowedClients` 다음에서 `/cache` 섹션. 다음을 참조하십시오.
+이 오류는에 대해 &quot;include&quot;를 지정하지 않을 때 생성됩니다 `/renders` 및 `/allowedClients` 다음에서 `/cache` 섹션. 다음을 참조하십시오.
 **포함된 파일(...)의 이름은 다음과 같습니다. ...** 섹션에 자세히 설명되어 있습니다.
 
 **필터는 glob 패턴을 사용하여 요청을 허용하지 않아야 함**
@@ -567,7 +567,7 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## 레거시 모드에서 유연한 모드로 마이그레이션 {#migrating}
 
-Cloud Manager 2021.7.0 릴리스를 통해 새로운 Cloud Manager 프로그램은 [AEM Archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko) 또는 그 이상(파일을 포함) **opt-in/USE_SOURCES_DIRECTLY**. 의 이전 제한 사항을 제거합니다. [레거시 모드](/help/implementing/dispatcher/validation-debug-legacy.md) 또한 SDK 및 런타임에서 개선된 방법으로 구성을 확인하고 배포하는 문제가 발생할 수 있습니다. Dispatcher 구성에 이 파일이 없는 경우 마이그레이션하는 것이 좋습니다. 안전한 전환을 보장하려면 다음 단계를 따르십시오.
+Cloud Manager 2021.7.0 릴리스를 통해 새로운 Cloud Manager 프로그램은 [AEM Archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) 또는 그 이상(파일을 포함) **opt-in/USE_SOURCES_DIRECTLY**. 의 이전 제한 사항을 제거합니다. [레거시 모드](/help/implementing/dispatcher/validation-debug-legacy.md) 또한 SDK 및 런타임에서 개선된 방법으로 구성을 확인하고 배포하는 문제가 발생할 수 있습니다. Dispatcher 구성에 이 파일이 없는 경우 마이그레이션하는 것이 좋습니다. 안전한 전환을 보장하려면 다음 단계를 따르십시오.
 
 1. **로컬 테스트.** 최신 Dispatcher 도구 SDK를 사용하여 폴더 및 파일을 추가합니다 `opt-in/USE_SOURCES_DIRECTLY`. Dispatcher가 로컬에서 작동하는지 테스트할 수 있도록 이 문서의 &quot;로컬 유효성 검사&quot; 지침을 따르십시오.
 1. **클라우드 개발 테스트:**

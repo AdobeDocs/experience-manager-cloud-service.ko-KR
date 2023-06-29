@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.6.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.6.0 릴리스 정보입니다.'
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1441'
-ht-degree: 47%
+source-wordcount: '1437'
+ht-degree: 45%
 
 ---
 
@@ -48,7 +48,7 @@ AEM as a Cloud Service 2021.6.0의 Cloud Manager 릴리스 일자는 2021년 6�
 
 ### 새로운 기능 {#what-is-new-junecm}
 
-* 미리보기 서비스가 모든 프로그램에 순차적으로 배포됩니다. 고객은 미리보기 서비스에 대해 프로그램이 활성화될 때 제품 내에서 알림을 받게 됩니다. 자세한 내용은 [미리보기 서비스 액세스](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)를 참조하십시오.
+* 미리보기 서비스가 모든 프로그램에 순차적으로 배포됩니다. 고객은 미리보기 서비스에 대해 프로그램이 활성화될 때 제품 내에서 알림을 받게 됩니다. 다음을 참조하십시오 [미리보기 서비스 액세스](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) 을 참조하십시오.
 
 * 이제 빌드 단계 중 다운로드된 Maven 종속 항목이 파이프라인 실행 사이에 캐시됩니다. 이 기능은 다음 몇 주 이내에 고객에 대해 활성화됩니다.
 
@@ -66,9 +66,9 @@ AEM as a Cloud Service 2021.6.0의 Cloud Manager 릴리스 일자는 2021년 6�
 
   ![Dispatcher 환경](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
-* `damAssetLucene` 인덱스 구조를 확인하기 위해 새 코드 품질 규칙이 추가되었습니다. [사용자 정의 DAM Asset Lucene Oak 인덱스](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check)를 참조하십시오.
+* `damAssetLucene` 인덱스 구조를 확인하기 위해 새 코드 품질 규칙이 추가되었습니다. 다음을 참조하십시오 [사용자 정의 DAM Asset Lucene Oak 인덱스](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) 을 참조하십시오.
 
-* 이제 해당되는 경우 환경 세부 정보 페이지에 Publish 및 미리보기 서비스에 대한 여러 도메인 이름이 표시됩니다. 자세한 내용은 [환경 세부 정보](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)를 참조하십시오.
+* 이제 해당되는 경우 환경 세부 정보 페이지에 Publish 및 미리보기 서비스에 대한 여러 도메인 이름이 표시됩니다. 다음을 참조하십시오 [환경 세부 정보](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) 추가 세부 정보를 참조하십시오.
 
 ### 버그 수정 {#bug-fixes-junecm}
 

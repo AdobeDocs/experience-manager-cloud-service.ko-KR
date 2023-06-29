@@ -2,10 +2,10 @@
 title: 맞춤화된 테마 배포
 description: 파이프라인을 사용하여 사이트 테마를 배포하는 방법에 대해 알아봅니다.
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 96%
+source-wordcount: '1023'
+ht-degree: 92%
 
 ---
 
@@ -91,7 +91,7 @@ AEM 빠른 사이트 생성 여정의 이전 문서인 [사이트 테마 맞춤�
 * 프록시화된 AEM 콘텐츠를 사용하여 테마를 맞춤화 및 테스트하고 이러한 변경 내용을 AEM git에 커밋하는 방법을 이해할 수 있습니다.
 * 파이프라인을 사용하여 프론트엔드 맞춤화를 배포하는 방법을 이해할 수 있습니다.
 
-이제 나만의 AEM 사이트 테마를 맞춤화할 준비가 되었습니다. 그러나 여러 프론트엔드 파이프라인을 사용하여 다양한 작업 스트림을 만들기 전에 [프론트엔드 파이프라인을 사용한 사이트 개발 문서를 검토하십시오.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 이는 다음을 통해 프론트엔드 개발을 최대한 활용하는 데 도움이 됩니다.
+이제 나만의 AEM 사이트 테마를 맞춤화할 준비가 되었습니다. 그러나 여러 프론트엔드 파이프라인을 사용하여 다양한 작업 스트림을 만들기 전에 문서를 검토하십시오 [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). 이는 다음을 통해 프론트엔드 개발을 최대한 활용하는 데 도움이 됩니다.
 
 * 단일 소스 유지
 * 문제 분리 유지
@@ -105,8 +105,8 @@ AEM은 강력한 도구로서 다양한 추가 옵션을 제공합니다. 이 �
 * [사이트 레일을 사용하여 사이트 테마 관리](/help/sites-cloud/administering/site-creation/site-rail.md) - 테마 소스 다운로드 및 테마 버전 관리를 포함하여 사이트 테마를 손쉽게 맞춤화하고 관리하는 데 도움이 되는 사이트 레일의 강력한 기능을 살펴보십시오.
 * [AEM as a Cloud Service 기술 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - AEM에 대해 확실히 이해하고 있다면 바로 심화 기술 문서를 참조할 수 있습니다.
 * [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Cloud Manager의 기능에 대해 자세히 알아보려면 바로 심화 기술 문서를 참조할 수 있습니다.
-* [역할 기반 권한](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager에는 적절한 권한이 있는 미리 구성된 역할이 있습니다. 이러한 역할 및 이를 관리하는 방법에 대한 자세한 내용은 이 문서를 참조하십시오.
-* [Cloud Manager 저장소](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - AEMaaCS 프로젝트에 대한 Git 저장소를 설정하고 관리하는 방법에 대한 추가 정보가 필요한 경우 이 문서를 참조하십시오.
+* [역할 기반 권한](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager에는 적절한 권한이 있는 미리 구성된 역할이 있습니다. 이러한 역할과 이를 관리하는 방법에 대한 자세한 내용은 이 문서 를 참조하십시오.
+* [Cloud Manager 저장소](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - AEMaaCS 프로젝트에 대한 git 저장소를 설정하고 관리하는 방법에 대한 자세한 내용은 이 문서를 참조하십시오.
 * [CI/CD 파이프라인 구성 - 클라우드 서비스](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) - 이 문서에서 파이프라인(전체 스택 및 프론트엔드) 설정에 대한 자세한 내용을 알아보십시오.
 * [AEM 표준 사이트 템플릿](https://github.com/adobe/aem-site-template-standard) - AEM 표준 사이트 템플릿의 GitHub 저장소입니다.
 * [AEM 사이트 테마](https://github.com/adobe/aem-site-template-standard-theme-e2e) - AEM 사이트 테마의 GitHub 저장소입니다.
@@ -117,4 +117,4 @@ AEM은 강력한 도구로서 다양한 추가 옵션을 제공합니다. 이 �
 * [온보딩 여정](/help/journey-onboarding/overview.md) - 이 가이드는 팀이 구성되어 AEM as a Cloud Service에 액세스할 수 있도록 하는 출발점이 됩니다.
 * [Adobe Experience Manager Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) - Cloud Manager의 기능에 대한 자세한 내용은 Cloud Manager 설명서를 살펴보십시오.
 * [사이트 관리 설명서](/help/sites-cloud/administering/site-creation/create-site.md) - 빠른 사이트 생성 도구의 기능에 대한 자세한 내용은 사이트 생성에 대한 기술 문서를 확인하십시오.
-* [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - 이 문서에서는 프론트엔드 파이프라인을 사용하여 프론트엔드 개발 프로세스의 잠재력을 최대한 활용할 수 있도록 몇 가지 고려해야 할 사항에 대해 설명합니다.
+* [프론트엔드 파이프라인을 사용하여 사이트 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - 이 문서에서는 프론트엔드 파이프라인을 사용하여 프론트엔드 개발 프로세스의 잠재력을 최대한 활용하기 위해 알아 두어야 할 몇 가지 고려 사항을 설명합니다.

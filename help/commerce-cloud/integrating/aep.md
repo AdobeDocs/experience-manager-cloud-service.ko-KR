@@ -11,9 +11,9 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 73fe6ce5bbdf0ad437ae4b47b892ad05e016ab68
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2079'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 ## 보내기 `addToCart` Experience Platform 이벤트 데이터 {#send-addtocart-to-aep}
 
-다음 단계는 를 보내는 방법을 보여 줍니다. `addToCart` AEM 렌더링 제품 페이지의 Experience Platform 데이터를 CIF - Experience Platform 커넥터를 사용하여 이벤트 페이지로 복사합니다. Adobe Experience Platform Debugger 브라우저 확장 프로그램을 사용하여 제출된 데이터를 테스트하고 검토할 수 있습니다.
+다음 단계는 를 보내는 방법을 보여 줍니다. `addToCart` AEM 렌더링 제품 페이지의 Experience Platform 데이터를 CIF - Experience Platform 커넥터를 사용하여 이벤트 페이지로 복사합니다. Adobe Experience Platform Debugger 브라우저 확장을 사용하면 제출된 데이터를 테스트하고 검토할 수 있습니다.
 
 ![Adobe Experience Platform Debugger에서 addToCart 이벤트 데이터 검토](../assets/aep-integration/EventData-AEM-AEP.png)
 
@@ -382,7 +382,7 @@ React 기반 Peregrine 및 CIF 코어 구성 요소를 초기화하려면 필요
 
 - 새 페이지에서, __검색 및 선택__ 이전 단계에서 생성한 스키마를 클릭하고 __다음__ 단추를 클릭합니다.
 
-   ![AEP 데이터 세트 생성 선택 스키마](../assets/aep-integration/AEP-Datasets-Select-Schema.png)
+  ![AEP 데이터 세트 생성 선택 스키마](../assets/aep-integration/AEP-Datasets-Select-Schema.png)
 
 1. 다음을 사용하여 데이터 세트 이름 지정 __데이터 세트 구성 > 이름__ 필드를 클릭하고 __완료__ 단추를 클릭합니다.
 

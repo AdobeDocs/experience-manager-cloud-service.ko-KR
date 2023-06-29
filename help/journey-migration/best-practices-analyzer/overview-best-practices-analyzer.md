@@ -2,9 +2,9 @@
 title: Best Practices Analyzer 개요
 description: Best Practices Analyzer 개요
 exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '350'
 ht-degree: 68%
 
 ---
@@ -37,4 +37,4 @@ ht-degree: 68%
 >[!NOTE]
 >모범 사례 분석기 보고서는 수동으로 수집하고 평가해야 하는 정보를 제공하여 AEM as a Cloud Service으로 전환하는 데 필요한 시간과 비용을 계산하는 프로세스를 가속화합니다.
 
-AEM 인스턴스에서 모범 사례 분석기 보고서를 다운로드할 수도 있습니다. 을(를) 참조하십시오 [모범 사례 분석기 보고서 보기](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) 을 참조하십시오.
+AEM 인스턴스에서 모범 사례 분석기 보고서를 다운로드할 수도 있습니다. 다음을 참조하십시오 [모범 사례 분석기 보고서 보기](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) 을 참조하십시오.

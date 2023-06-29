@@ -3,10 +3,10 @@ title: 소개 및 개요
 description: 콘텐츠와 커머스 소개 및 개요. Experience Manager 전자 상거래 통합 프레임워크(CIF)는 Adobe의 권장 패턴으로 Experience Cloud를 사용하여 Adobe Commerce의 상거래 서비스와 기타 서드파티 상거래 솔루션을 통합하여 확장할 수 있습니다.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 92%
+source-wordcount: '891'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ Adobe Experience Manager 콘텐츠 및 상거래를 통해 브랜드 확장과 �
 
 온라인 상거래 경험에 대한 고객 기대가 높아지면서 브랜드는 차별화된 경험과 더 많은 콘텐츠를 신속하게 제공해야 한다는 압박에 시달리고 있습니다. 하지만 콘텐츠 관리 플랫폼을 구현하려면 사용자 지정 구성 요소와 저작 도구 등 기본 요소 개발에 막대한 시간과 예산을 투자해야 하고 유지 관리 및 업그레이드 시 비용이 발생하는 경우가 있습니다. Experience Manager Sites는 즉시 사용 가능한 상거래 핵심 구성 요소, 작성 도구 및 참조용 매장을 공급하는 Experience Manager as a Cloud Service의 추가 기능 모듈로 Content and Commerce를 제공하여 Go-Live를 가속화하고, 원활한 팀 간 공동 작업을 활성화하고, 전환을 유도할 수 있습니다.
 
-브랜드는 Experience Manager를 Adobe Experience Cloud에 포함된 Adobe Commerce 및 선택한 모든 상거래 엔진과 통합할 수 있습니다. Experience Manager Content and Commerce를 통해 브랜드는 다음과 같은 작업을 수행할 수 있습니다.
+브랜드는 Adobe Commerce, Adobe Experience Cloud의 일부 및 원하는 상거래 엔진과 Experience Manager을 통합할 수 있습니다. Experience Manager Content and Commerce를 통해 브랜드는 다음과 같은 작업을 수행할 수 있습니다.
 
 * 신속한 확장 및 혁신
 * 전환 유도를 위한 경험 개인화
@@ -79,6 +79,6 @@ CIF는 모범 사례를 기반으로 표준화된 통합 패턴을 사용하여 
 
 ## 여정 {#journey}
 
-상거래 여정을 따르는 경우 다음 단계로 이동하십시오.
+상거래 여정을 따르는 경우 다음 단계로 이동합니다.
 
 * [AEM 콘텐츠 작성자 여정](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)

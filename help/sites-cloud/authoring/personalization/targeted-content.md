@@ -2,9 +2,9 @@
 title: 타겟팅 모드를 사용하여 타겟팅된 콘텐츠 작성
 description: 타겟팅 모드 및 타겟 구성 요소는 경험을 위한 콘텐츠를 만드는 도구를 제공합니다.
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '5412'
+source-wordcount: '5410'
 ht-degree: 76%
 
 ---
@@ -445,7 +445,7 @@ A/B 테스트 활동이 있는 경우, 대상자는 왼쪽에 있고 각 경험�
 
 ## 목표 및 설정: 활동 구성 및 목표 설정 {#goals-settings-configuring-the-activity-and-setting-goals}
 
-[타겟팅 프로세스](#the-targeting-process-create-target-and-goals-settings)의 목표 및 설정 단계에는 브랜드 활동의 행동을 구성하는 작업이 포함되어 있습니다. 활동 시작 및 종료 시기와 활동 우선 순위를 지정합니다. 또한 목표를 추적합니다. 특히 활동으로 측정할 사항을 결정할 수 있습니다.
+[타겟팅 프로세스](#the-targeting-process-create-target-and-goals-settings)의 목표 및 설정 단계에는 브랜드 활동의 행동을 구성하는 작업이 포함되어 있습니다. 활동의 시작 및 종료 시기와 활동 우선 순위를 지정합니다. 또한 목표를 추적합니다. 특히 활동으로 측정할 사항을 결정할 수 있습니다.
 
 목표 지표는 타겟팅 엔진으로 Adobe Target을 사용하는 경우에만 사용할 수 있습니다. 하나 이상의 목표 지표를 정의해야 합니다. Adobe Analytics이 구성되어 있고 A4T Analytics 클라우드 구성이 있는 경우 보고 소스를 Adobe Target으로 할지 Adobe Analytics으로 할지 선택할 수 있습니다.
 
@@ -549,7 +549,7 @@ Adobe Target을 사용할 경우 목표 및 설정을 구성하려면 다음 작
 1. 성공 지표를 카운트하는 방법을 추가로 제어하려면 **고급 설정**&#x200B;을 클릭하거나 탭하여 고급 설정에 액세스하십시오.
 1. **저장**&#x200B;을 클릭합니다.
 
-구성 후에는 Adobe Target을 사용하는(경험 또는 A/B 테스트 타겟팅) [활동의 성과를 볼](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test) 수 있습니다. 또한 A/B 테스트 타겟팅을 사용하는 경우에는 [우승자를 전환](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test)할 수 있습니다.
+구성 후에는 Adobe Target을 사용하는(경험 또는 A/B 테스트 타겟팅) [활동의 성과를 볼](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test) 수 있습니다. 또한 A/B 테스트 타겟팅을 사용하여 다음을 수행할 수 있습니다. [우승자 전환](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test).
 
 ## 경험 시뮬레이션 {#simulating-an-experience}
 
@@ -634,4 +634,4 @@ Adobe Target을 엔진으로 선택하는 경우:
 >
 >타겟팅에 ContextHub를 사용하는 경우에는 엔진으로 **ContextHub**를 선택하십시오. 자세한 내용은 [ContextHub 구성]을 참조하십시오.
 <!--You select **Adobe Campaign** as the engine if you are integrating AEM with Adobe Campaign. See [Integrating AEM with Adobe Campaign](/help/sites-administering/campaign.md) for more information.-->
-<!--Select **ContextHub** as the engine if you are using ContextHub for targeting. See [Configuring ContextHub.](/help/sites-administering/contexthub-config.md)-->
+<!--Select **ContextHub** as the engine if you are using ContextHub for targeting. See [Configuring ContextHub](/help/sites-administering/contexthub-config.md).-->

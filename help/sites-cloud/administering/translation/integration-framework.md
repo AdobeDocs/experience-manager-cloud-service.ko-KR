@@ -4,10 +4,10 @@ description: 서드파티 번역 서비스와 통합한 번역 통합 프레임�
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 803a7788cde37fb0026f7cc3582efb33c10e1358
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 100%
+source-wordcount: '1518'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ AEM 콘텐츠 번역 기능의 개요를 확인하려면 [다국어 사이트를
 
 >[!TIP]
 >
->콘텐츠 번역이 처음이라면 AEM의 강력한 번역 도구를 사용한 AEM Sites 콘텐츠 번역을 안내하며 AEM이 없거나 번역 경험이 없는 사용자에게 최적화된 [사이트 번역 여정](/help/journey-sites/translation/overview.md)을 참조하십시오.
+>콘텐츠 번역이 처음이라면 다음을 참조하십시오. [사이트 번역 여정,](/help/journey-sites/translation/overview.md) 는 AEM 강력한 번역 도구를 사용한 AEM Sites 콘텐츠 번역을 안내하며 AEM 또는 번역 경험이 없는 사용자에게 이상적입니다.
 
 ## 번역 서비스 공급업체에 연결 {#connecting-to-a-translation-service-provider}
 
@@ -73,7 +73,7 @@ AEM을 번역 서비스 공급업체에 연결하는 클라우드 구성을 만�
 1. 콘텐츠 구조에서 구성을 만들고자 하는 위치로 이동합니다. 보통 특정 사이트를 토대로 하거나 전역일 수 있습니다.
 1. 필드에 다음 정보를 입력한 다음 **만들기**&#x200B;를 클릭하거나 탭합니다.
    1. 드롭다운 메뉴에서 **구성 유형**&#x200B;을 선택합니다.
-   1. 구성의 **제목**&#x200B;을 입력합니다. **제목**&#x200B;을 통해 **클라우드 서비스** 콘솔과 페이지 속성 드롭다운 목록에서 구성을 식별합니다.
+   1. 구성의 **제목**&#x200B;을 입력합니다. 다음 **제목** 는에서 구성을 식별합니다 **Cloud Services** 콘솔 및 페이지 속성 드롭다운 목록입니다.
    1. 필요한 경우 구성을 저장하는 저장소 노드에 사용할 **이름**&#x200B;을 입력합니다.
 1. **구성 편집** 창에서 **사이트**&#x200B;와 **에셋** 탭의 속성을 구성한 후 **저장 및 닫기**&#x200B;를 클릭하거나 탭합니다.
 

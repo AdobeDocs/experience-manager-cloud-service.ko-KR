@@ -2,10 +2,10 @@
 title: AEM 현대화 도구
 description: AEM 현대화 도구
 exl-id: d541fae0-6386-403f-99c9-373dc978ad13
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '131'
-ht-degree: 77%
+source-wordcount: '129'
+ht-degree: 51%
 
 ---
 
@@ -26,8 +26,8 @@ AEM 현대화 도구를 사용하여 다음과 같이 쉽게 변환할 수 있�
 >[!NOTE]
 >AEM 현대화 도구는 커뮤니티 활동으로, Adobe에서 지원하거나 보증하지 않습니다.
 
-**[AEM 현대화 도구 소개](https://opensource.adobe.com/aem-modernize-tools/)**&#x200B;를 참조하여 AEM 현대화 도구 세트에 대한 계획, 구성 및 개발에 대해 자세히 알아보십시오.
+다음을 참조하십시오 **[AEM 현대화 도구 소개](https://opensource.adobe.com/aem-modernize-tools/)** AEM 현대화 도구 세트에 대한 계획, 구성 및 개발에 대해 자세히 알아보십시오.
 
 ## AEM 현대화 도구 세트 설치 및 구현 {#installing-implementing}
 
-**[Git 리소스: AEM 현대화 도구 세트](https://github.com/adobe/aem-modernize-tools)**&#x200B;를 참조하여 설치 및 구현에 대해 자세히 알아보십시오.
+다음을 참조하십시오 **[Git 리소스: AEM 현대화 도구 세트](https://github.com/adobe/aem-modernize-tools)** 설치 및 구현에 대해 자세히 알아봅니다.

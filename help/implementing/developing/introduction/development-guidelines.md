@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service 개발에 대한 지침과 AMS의 AEM On-Premise 및 AEM과 다른 중요한 방식에 대해 알아봅니다.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2591'
+source-wordcount: '2586'
 ht-degree: 4%
 
 ---
@@ -65,7 +65,7 @@ Adobe은 제공된 를 사용할 것을 권장합니다 [Apache HttpComponents C
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (오래된 버전이며 버전 4.x로 대체되었으므로 권장되지 않음)
 * [OK Http](https://square.github.io/okhttp/) (AEM에서 제공되지 않음)
 
-시간 초과를 제공하는 것 외에 이러한 시간 초과와 예기치 않은 HTTP 상태 코드의 적절한 처리도 구현해야 합니다.
+시간 초과 제공 옆에 이러한 시간 초과 및 예기치 않은 HTTP 상태 코드의 적절한 처리도 구현해야 합니다.
 
 ## 클래식 UI 사용자 지정 없음 {#no-classic-ui-customizations}
 
@@ -133,7 +133,7 @@ AEM as a Cloud Service은 타사 고객 코드에 대한 Touch UI만 지원합�
 | 환경 | 실행 모드별 OSGi 구성 위치 | `org.apache.sling.commons.log.level` 속성 값 |
 | - | - | - |
 | 개발 | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | 디버그 |
-| 스테이징 | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | 경고 |
+| 스테이지 | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | 경고 |
 | 프로덕션 | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | 오류 |
 
 디버그 파일의 행은 일반적으로 DEBUG로 시작한 다음 로그 수준, 설치 관리자 작업 및 로그 메시지를 제공합니다. 예:
@@ -152,7 +152,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ### 스레드 덤프 {#thread-dumps}
 
-클라우드 환경의 스레드 덤프는 지속적으로 수집되지만 지금은 셀프서비스 방식으로 다운로드할 수 없습니다. 그동안, 문제를 디버깅하는 데 스레드 덤프가 필요한 경우 정확한 시간 창을 지정하여 AEM 지원에 문의하십시오.
+클라우드 환경의 스레드 덤프는 지속적으로 수집되지만 지금은 셀프서비스 방식으로 다운로드할 수 없습니다. 한편, 문제를 디버깅하는 데 스레드 덤프가 필요한 경우 정확한 시간 창을 지정하여 AEM 지원에 문의하십시오.
 
 ## CRX/DE Lite 및 개발자 콘솔 {#crxde-lite-and-developer-console}
 
@@ -286,4 +286,4 @@ Caused by: com.mongodb.MongoWriteException: Resulting document after update is l
 
 ## [!DNL Assets] 개발 지침 및 사용 사례 {#use-cases-assets}
 
-Assets에 대한 개발 사용 사례, 권장 사항 및 참조 자료를 as a Cloud Service으로 제공하는 방법에 대해 알아보려면 [자산에 대한 개발자 참조.](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)
+Assets에 대한 개발 사용 사례, 권장 사항 및 참조 자료를 as a Cloud Service으로 제공하는 방법에 대해 알아보려면 다음을 참조하십시오. [자산에 대한 개발자 참조](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).

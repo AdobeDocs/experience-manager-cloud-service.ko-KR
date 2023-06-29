@@ -1,14 +1,14 @@
 ---
-title: 컨텐츠 변환기 사용
-description: 컨텐츠 변환기 사용
-source-git-commit: bc44990c3c2b445f1a3e56467d9dfb56168cd121
+title: 콘텐츠 트랜스포머 사용
+description: 콘텐츠 트랜스포머 사용
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 1%
+source-wordcount: '630'
+ht-degree: 2%
 
 ---
 
-# 컨텐츠 변환기 사용 {#using-ct}
+# 콘텐츠 트랜스포머 사용 {#using-ct}
 
 ## 콘텐츠 변환기 사용에 대한 중요한 고려 사항 {#imp-considerations-ct}
 

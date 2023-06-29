@@ -2,9 +2,9 @@
 title: CIF(Commerce Integration Framework) 추가 기능의 주요 변경 사항
 description: 이전 CIF 버전과 비교한 Commerce Integration Framework(CIF)의 주요 변경 사항.
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32
-source-git-commit: 6c9a44940ea9e52bd27a233c7aa24e320a24076c
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '452'
 ht-degree: 3%
 
 ---

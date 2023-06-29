@@ -2,7 +2,7 @@
 title: 새로운 기능
 description: Adobe Experience Manager (AEM) as a Cloud Service의 새로운 기능
 exl-id: f854aaf8-e84d-4904-832f-f72433590920
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 100%
@@ -20,7 +20,7 @@ Adobe Experience Manager as a Cloud Service에 대한 개요는 다음을 참조
 * Adobe Experience Manager as a Cloud Service [아키텍처](/help/overview/architecture.md)
 * [AEM as a Cloud Service에 대한 개요 - 새로운 기능 및 다른 기능](/help/overview/what-is-new-and-different.md)
 
-<!-- Please link to introduction or what's new of Sites. -->
+<!-- Link to introduction or what's new of Sites. -->
 
 Assets에 대한 개요를 알려면 [Assets as a Cloud Service 소개](/help/assets/overview.md)를 참조하십시오.
 

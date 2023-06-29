@@ -2,7 +2,7 @@
 title: SPA 블루프린트
 description: 이 문서에서는 AEM 내에서 편집 가능한 SPA 구성 요소를 구현할 수 있도록 모든 SPA 프레임워크가 이행해야 하는 일반적인 프레임워크 독립적인 계약에 대해 설명합니다.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2056'
 ht-degree: 2%
@@ -49,7 +49,7 @@ NPM 패키지 보기 [@adobe/aem-spa-model-manager](https://www.npmjs.com/packag
 
 #### 구성 요소 매핑을 위한 동적 모델 {#dynamic-model-to-component-mapping}
 
-AEM용 Javascript SPA SDK에서 동적 모델과 구성 요소 간 매핑이 발생하는 방법에 대한 자세한 내용은 문서 를 참조하십시오 [SPA용 동적 모델과 구성 요소 간 매핑](model-to-component-mapping.md).
+AEM용 JavaScript SPA SDK에서 동적 모델과 구성 요소 간 매핑이 발생하는 방법에 대한 자세한 내용은 문서 를 참조하십시오 [SPA용 동적 모델과 구성 요소 간 매핑](model-to-component-mapping.md).
 
 ### 프레임워크별 계층 {#framework-specific-layer}
 
@@ -74,7 +74,7 @@ SPA 구성 요소는 페이지 모델과 동기화되어야 하며 그에 따라
 * `:hierarchyType`: 리소스의 계층 구조 유형입니다. 다음 `PageModelManager` 는 현재 페이지 유형을 지원합니다
 
 * `:items`: 현재 리소스의 하위 콘텐츠 리소스(중첩된 구조, 컨테이너에만 있음)
-* `:itemsOrder`: 순서가 지정된 하위 목록입니다. JSON 맵 개체는 필드의 순서를 보장하지 않습니다. 맵과 현재 배열을 모두 가짐으로써 API 소비자는 두 구조의 이점을 얻을 수 있습니다
+* `:itemsOrder`: 순서가 지정된 하위 목록입니다. JSON 맵 개체는 해당 필드의 순서를 보장하지 않습니다. 맵과 현재 배열을 모두 가짐으로써 API 소비자는 두 구조의 이점을 얻을 수 있습니다
 * `:path`: 항목의 콘텐츠 경로(페이지를 나타내는 항목에 있음)
 
 참조: [AEM Content Services 시작](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

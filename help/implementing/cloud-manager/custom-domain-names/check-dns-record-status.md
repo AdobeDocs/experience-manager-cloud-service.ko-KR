@@ -2,10 +2,10 @@
 title: DNS 레코드 상태 확인
 description: Cloud Manager를 사용하여 DNS 설정이 제대로 구성되고 있는지 확인하는 방법을 알아봅니다.
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
-source-git-commit: 2278abcf0c34fd34a7730242ee27814d37b7d4d0
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 100%
+source-wordcount: '250'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Cloud Manager는 도메인 이름에 대한 DNS 조회를 수행하고 다음 �
 
 * **DNS가 잘못 확인됨** - DNS 레코드 구성이 확인되지 않았거나 잘못되었음을 나타냅니다.
 
-   * 자세한 내용은 [DNS 설정 구성](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) 문서를 참조하십시오.
+   * 다음을 참조하십시오 [DNS 설정 구성](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) 자세히 알아보십시오.
    * 준비가 되면 상태 옆에 있는 **다시 해결** 아이콘을 선택해야 합니다.
 
 * **DNS 확인 진행 중** - 확인이 진행 중입니다.

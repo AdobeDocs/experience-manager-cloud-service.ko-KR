@@ -2,7 +2,7 @@
 title: SPA의 구성 요소 합성
 description: AEM 단일 페이지 애플리케이션(SPA) 편집기와 함께 작동하는 다른 구성 요소로 구성된 구성 요소인 복합 구성 요소를 직접 만드는 방법을 알아봅니다.
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 1%
@@ -41,7 +41,7 @@ AEM 내의 SPA 구현에 따라 복합 구성 요소를 구현하기 위한 세 
 
 ### 구성 요소가 AEM 프로젝트에 없습니다. {#component-does-not-exist}
 
-복합 구성 요소를 구성할 구성 요소(예: 이미지 및 해당 텍스트의 구성 요소)를 만드는 것부터 시작합니다.
+먼저 합성 구성 요소를 구성할 구성 요소, 즉 이미지와 해당 텍스트에 대한 구성 요소를 만듭니다.
 
 1. AEM 프로젝트에서 텍스트 구성 요소를 만듭니다.
 1. 해당 항목 추가 `resourceType` 구성 요소의 프로젝트에서 `editConfig` 노드.
@@ -118,7 +118,7 @@ function Home() {
 }
 ```
 
-편집기에 텍스트 및 이미지에 대한 빈 자리 표시자가 표시됩니다. 편집기를 사용하여 이러한 요소에 대한 값을 입력할 때 지정된 페이지 경로(즉, `/content/wknd-spa/home`  에 지정된 이름을 가진 루트 수준에서 `itemPath`.
+편집기에 텍스트 및 이미지에 대한 빈 자리 표시자가 표시됩니다. 편집기를 사용하여 이러한 매개 변수의 값을 입력하면 지정된 페이지 경로(예: )에 저장됩니다. `/content/wknd-spa/home`  에 지정된 이름을 가진 루트 수준에서 `itemPath`.
 
 ![편집기의 복합 카드 구성 요소](assets/composite-card.png)
 
@@ -156,7 +156,7 @@ function Home() {
     itemPath='root/responsivegrid' />
    ```
 
-1. 생성된 항목 추가 `wknd-spa/components/imagecard` 구성 요소를 컨테이너 구성 요소에 대해 허용된 구성 요소로 변환 [페이지 템플릿에서 참조할 수 있습니다.](/help/sites-cloud/authoring/features/templates.md)
+1. 생성된 항목 추가 `wknd-spa/components/imagecard` 구성 요소를 컨테이너 구성 요소에 대해 허용된 구성 요소로 변환 [페이지 템플릿에서](/help/sites-cloud/authoring/features/templates.md).
 
 이제 `imagecard` 구성 요소를 AEM 편집기의 컨테이너에 직접 추가할 수 있습니다.
 

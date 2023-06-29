@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 릴리스 2022.5.0의 마이그레이션 도구 �
 description: AEM as a Cloud Service 릴리스 2022.5.0의 마이그레이션 도구 릴리스 정보
 feature: Release Information
 exl-id: 1aa49e85-1914-44d9-bcf7-0a1b03926df0
-source-git-commit: 01c4a21b980918ba99ac174419d80b577bc96dda
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '398'
 ht-degree: 12%
 
 ---
@@ -53,4 +53,4 @@ Cloud Acceleration Manager 의 릴리스 날짜는 2022년 6월 2일입니다.
 
 ### 새로운 기능 {#what-is-new-cam}
 
-* Cloud Acceleration Manager는 이제 마이그레이션 프로젝트의 일부로 고객의 AEM 인스턴스(온-프레미스 또는 Adobe Managed Services)에서 AEM as a Cloud Service으로 콘텐츠를 이동하기 위한 콘텐츠 전송을 시작하고 관리할 수 있는 기능을 사용자에게 제공합니다. 을(를) 참조하십시오 [컨텐츠 전송 카드 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html#content-transfer) 을 참조하십시오.
+* Cloud Acceleration Manager는 이제 마이그레이션 프로젝트의 일부로 고객의 AEM 인스턴스(온-프레미스 또는 Adobe Managed Services)에서 AEM as a Cloud Service으로 콘텐츠를 이동하기 위한 콘텐츠 전송을 시작하고 관리할 수 있는 기능을 사용자에게 제공합니다. 다음을 참조하십시오 [컨텐츠 전송 카드 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html#content-transfer) 을 참조하십시오.

@@ -2,10 +2,10 @@
 title: 컨텐츠 전송 도구 개요
 description: 콘텐츠 전송 도구 개요
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 8197b4f4e5cda21532c3660c2f0ec4855ba53a6a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 63%
+source-wordcount: '645'
+ht-degree: 60%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 63%
 
 1. **추출**: 추출이란 소스 AEM 인스턴스에서 *마이그레이션 세트*&#x200B;라고 하는 임시 영역으로 콘텐츠를 추출하는 것입니다. *마이그레이션 세트*&#x200B;는 소스 AEM 인스턴스와 클라우드 서비스 AEM 인스턴스 간에 전송된 콘텐츠를 임시 저장할 수 있도록 Adobe가 제공하는 클라우드 저장소 영역입니다.
 
-   자세한 내용은 [콘텐츠 전송의 추출 프로세스](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)를 참조하십시오.
+   다음을 참조하십시오 [컨텐츠 전송의 추출 프로세스](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) 을 참조하십시오.
 
    >[!NOTE]
    >사용자 매핑은 이제 작성자에서 추출 단계의 일부로 자동으로 실행됩니다(그러나 선택적으로 작성자에서 비활성화하거나 게시할 때 활성화할 수 있음). 다음을 참조하십시오 [사용자 매핑 및 사용자 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 을 참조하십시오.
@@ -55,9 +55,9 @@ ht-degree: 63%
 >[!NOTE]
 >처음 콘텐츠 전송 후 클라우드 서비스에서 라이브로 전환되기 전에 최종 차등 콘텐츠 전송에 대한 콘텐츠 고정 기간을 단축하기 위해 자주 차등 콘텐츠 추가를 수행하는 것이 좋습니다.
 
-추출 단계에서 기존 마이그레이션 세트를 ***추가***&#x200B;하려면 *덮어쓰기* 옵션을 비활성화해야 합니다. 자세한 내용은 [추출 추가](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)를 참조하십시오.
+추출 단계에서 기존 마이그레이션 세트를 ***추가***&#x200B;하려면 *덮어쓰기* 옵션을 비활성화해야 합니다. 다음을 참조하십시오 [추가 추출](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) 을 참조하십시오.
 
-수집 단계에서 델타 콘텐츠를 현재 콘텐츠 위에 적용하려면 *지우기* 옵션을 비활성화해야 합니다. 자세한 내용은 [수집 추가](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)를 참조하십시오.
+수집 단계에서 델타 콘텐츠를 현재 콘텐츠 위에 적용하려면 *지우기* 옵션을 비활성화해야 합니다. 다음을 참조하십시오 [추가 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 을 참조하십시오.
 
 ## 마이그레이션 세트 만료 {#migration-set-expiry}
 

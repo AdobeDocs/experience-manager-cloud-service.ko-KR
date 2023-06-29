@@ -2,9 +2,9 @@
 title: 파이프라인 실행
 description: 이 페이지에서는 Cloud Manager에서 Screens용 파이프라인을 Cloud Service 프로젝트로 실행하는 방법에 대해 설명합니다.
 exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '309'
 ht-degree: 3%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 3%
 이 섹션에서는 Cloud Manager에서 파이프라인을 실행하고 프로그램에 대한 코드를 배포하는 방법을 설명합니다.
 
 >[!NOTE]
->을(를) 참조하십시오 [CI-CD 파이프라인 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=en) 및 [코드 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=en) cloud Manager에서 프로그램에 대한 파이프라인을 실행하는 방법을 알아봅니다.
+>다음을 참조하십시오 [CI-CD 파이프라인 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=en) 및 [코드 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=en) cloud Manager에서 프로그램에 대한 파이프라인을 실행하는 방법을 알아봅니다.
 
 ## 목표 {#objective}
 
@@ -42,7 +42,7 @@ ht-degree: 3%
 1. 설정 파이프라인이 완료되면 콜 투 액션 카드가 업데이트됩니다.
 
    >[!NOTE]
-   >Cloud Manager의 배포 단계에 대한 자세한 내용은 을 참조하십시오. [코드 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=en) 을 참조하십시오.
+   >Cloud Manager의 배포 단계에 대한 자세한 내용은 다음을 참조하십시오. [코드 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=en) 을 참조하십시오.
 
    ![이미지](/help/screens-cloud/assets/onboarding/run-pipeline3.png)
 

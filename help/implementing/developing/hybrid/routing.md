@@ -2,9 +2,9 @@
 title: SPA 모델 라우팅
 description: AEM의 단일 페이지 애플리케이션의 경우 앱이 라우팅을 담당합니다. 이 문서에서는 경로지정 메커니즘, 계약 및 사용 가능한 옵션에 대해 설명합니다.
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '440'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ AEM의 단일 페이지 애플리케이션의 경우 앱이 라우팅을 담당�
 
 ## 아키텍처 {#architecture}
 
-자세한 설명은 다음을 참조하십시오. [PageModelManager](blueprint.md#pagemodelmanager) SPA 섹션에 있는 마지막 항목이 될 필요가 없습니다.
+자세한 설명은 을 참조하십시오. [PageModelManager](blueprint.md#pagemodelmanager) SPA 섹션에 있는 마지막 항목이 될 필요가 없습니다.
 
 ## 모델 라우터 {#modelrouter}
 

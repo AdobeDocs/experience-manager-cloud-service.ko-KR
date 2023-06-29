@@ -2,10 +2,10 @@
 title: 작성 기본 사항에 대해 알아보기
 description: 콘텐츠 조각을 사용하여 Headless CMS용 콘텐츠를 작성하는 개념 및 메커니즘에 대해 알아봅니다.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1709'
-ht-degree: 95%
+source-wordcount: '1712'
+ht-degree: 91%
 
 ---
 
@@ -44,7 +44,7 @@ AEM 설치는 일반적으로 세 개의 환경으로 구성됩니다.
 
 ### 로그인 {#signing-in}
 
-대부분의 시스템과 마찬가지로 로그온해야 합니다. 작성자는 다음과 같은 혜택을 누릴 수 있습니다.
+대부분의 시스템과 마찬가지로 로그온해야 합니다. 다음 사항이 작성자에게 제공됩니다.
 
 * 사용자 (계정) 이름
 * 암호
@@ -56,7 +56,7 @@ AEM 설치는 일반적으로 세 개의 환경으로 구성됩니다.
 
 작은 온라인 튜토리얼에 처음 로그인하면 사용자 인터페이스의 주요 기능 중 일부가 강조 표시됩니다.
 
-그런 다음 탐색 패널을 사용하여 AEM의 주요 영역에 액세스할 수 있습니다. 콘텐츠 조각의 경우 다음을 사용합니다. **컨텐츠 조각** 콘솔(일부 작업의 경우 **에셋** console).
+그런 다음 탐색 패널을 사용하여 AEM의 주요 영역에 액세스할 수 있습니다. 콘텐츠 조각의 경우, **콘텐츠 조각** 콘솔을 사용합니다(일부 액션의 경우 **자산** 콘솔을 사용하기도 함).
 
 왼쪽 상단의 Adobe 아이콘과 작은 나침반 아이콘을 차례로 선택하여 탐색 패널을 열 수 있습니다.
 
@@ -92,12 +92,12 @@ The Navigation Panel can be opened by selecting Adobe icon at the top left, foll
 * **게시** (및 **게시 취소**)
 * **복사**
 * **이동**
-* **이름 변경**
+* **이름 바꾸기**
 * **삭제**
 
 >[!NOTE]
 >
->게시, 게시 취소, 삭제, 이동, 이름 변경, 복사, 비동기 작업 트리거와 같은 작업입니다. AEM 비동기 작업 UI를 통해 해당 작업의 진행 상태를 모니터링할 수 있습니다.
+>게시, 게시 취소, 삭제, 이동, 이름 바꾸기, 복사, 비동기 작업 트리거와 같은 작업입니다. AEM 비동기 작업 UI를 통해 해당 작업의 진행 상태를 모니터링할 수 있습니다.
 
 <!--
 The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).
@@ -121,7 +121,7 @@ You can view additional information about items using the Rail Selector. This al
 
 ## 콘텐츠 조각 작성 {#authoring-content-fragments}
 
-지금까지 AEM 사용자 인터페이스(UI)에 대해 매우 간략하게 소개했습니다. 기회가 되면 사용해 보시기 바랍니다. 이제 핵심 주제인 Headless용 콘텐츠 조각에 대해 알아보겠습니다.
+AEM UI(사용자 인터페이스)를 빠르게 소개했지만 사용해 볼 기회가 있었으면 합니다. 이제 핵심 주제인 Headless용 콘텐츠 조각에 대해 알아보겠습니다.
 
 처음부터 끝까지 전체를 살펴보아야 하지만 인스턴스에 이미 생성된 폴더 및/또는 조각들이 서로 다른 위치에 배치될 수 있습니다. 원칙은 동일합니다.
 
@@ -203,7 +203,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 조각을 만든 직후에 또는 콘텐츠 조각 콘솔에서(자산 콘솔에서도) 선택하여 조각을 열 수 있습니다.
 
-편집기가 처음 열리면 다음을 확인할 수 있습니다.
+편집기가 처음 열리면 다음과 같이 표시됩니다.
 
 * 왼쪽의 아이콘 목록 - 다양한 기능 영역에 액세스할 수 있습니다. 편집기가 **변형** 탭에서 열리고 대부분의 편집이 여기서 이뤄집니다. **주석** 및 **메타데이터** 탭에도 관심을 가질 수 있습니다.
 
@@ -213,7 +213,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 예를 들면:
 
-* 특정 유형의 정보를 포함하여 정보의 여러 부분만 필요로 하는 조각입니다. Headless 콘텐츠의 경우 여정 후반부에서 주요 참조에 대해 알아봅니다.
+* 특정 유형의 정보를 포함하여 정보의 여러 부분만 필요로 하는 조각입니다. Headless 콘텐츠의 경우, 참조는 중요합니다. 이에 대해서는 나중에 여정에서 알아보십시오.
 
   ![콘텐츠 조각 편집기 - 내 조각](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
@@ -233,9 +233,9 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 >
 >자세한 내용은 변형 - 콘텐츠 조각 작성을 참조하십시오.
 
-#### 다음에 대해서는 걱정하지 않아도 됩니다. {#what-you-probably-do-not-need-to-worry-about}
+#### (아마도) 걱정할 필요가 없는 사항 {#what-you-probably-do-not-need-to-worry-about}
 
-예. 이 섹션은 약간 이상하게 보일지 모르지만, 콘텐츠 조각 편집기를 열고 탐색을 시작하면 Headless 여정에 적용되지 않는 다양한 옵션이 콘텐츠 작성자로 표시됩니다. 이는 Headless 컨텍스트에서 무시할 수 있는 콘텐츠에 대한 간략한 참고 사항입니다.
+예, 약간 이상한 섹션으로 보일 수 있지만 콘텐츠 조각 편집기를 열고 탐색을 시작하면 Headless 콘텐츠 작성자 여정에 적용되지 않는(아마도) 다양한 옵션을 볼 수 있습니다. 이는 Headless 컨텍스트에서 무시할 수 있는 콘텐츠에 대한 간략한 참고 사항입니다.
 
 * **콘텐츠 조각 모델**
 
@@ -258,7 +258,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 * **페이지 참조 업데이트**
 
-  이 액션은 **...**(줄임표) 드롭다운에서 사용할 수 있습니다. 이는 페이지 작성과 관련이 있으므로 Headless 작성자는 별 관심이 없습니다.
+  이 작업은 다음에서 사용할 수 있습니다. **...** (줄임표) 드롭다운 이는 페이지 작성과 관련이 있으므로 Headless 작성자는 별 관심이 없습니다.
 
 ### 게시 {#publishing}
 

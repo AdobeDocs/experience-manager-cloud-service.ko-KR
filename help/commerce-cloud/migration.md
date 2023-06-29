@@ -2,10 +2,10 @@
 title: AEM Commerce Integration Framework(CIF) 추가 기능으로 마이그레이션
 description: 이전 버전에서 AEM Commerce Integration Framework(CIF) 추가 기능으로 마이그레이션하는 방법
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 28%
+source-wordcount: '490'
+ht-degree: 23%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 28%
 
 ## CIF 추가 기능
 
-Experience Manager as a Cloud Service의 경우 CIF 추가 기능은 Adobe Commerce 및 서드파티 상업 솔루션에 대해 유일하게 지원되는 상업 통합 솔루션입니다. Experience Manager as a Cloud Service의 고객에 대해 CIF 추가 기능이 자동으로 배포되므로 수동으로 배포하지 않아도 됩니다. [AEM Commerce as a Cloud Service 시작하기](getting-started.md)를 참조하십시오.
+as a Cloud Service Experience Manager의 경우 CIF 추가 기능은 Adobe Commerce 및 서드파티 상거래 솔루션에 대해 유일하게 지원되는 상거래 통합 솔루션입니다. Experience Manager as a Cloud Service의 고객에 대해 CIF 추가 기능이 자동으로 배포되므로 수동으로 배포하지 않아도 됩니다. [AEM Commerce as a Cloud Service 시작하기](getting-started.md)를 참조하십시오.
 
 CIF Adobe을 배포하는 프로젝트를 지원하려면 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components).
 

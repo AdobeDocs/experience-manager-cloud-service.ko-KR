@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.7.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.7.0 릴리스 정보입니다.'
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 86%
+source-wordcount: '949'
+ht-degree: 82%
 
 ---
 
@@ -102,8 +102,8 @@ ht-degree: 86%
 ### 새로운 기능 {#what-is-new-foundation}
 
 * 이제 [저장소 브라우저](/help/implementing/developing/tools/repository-browser.md)에 경로 입력 필드가 있으므로 저장소 계층의 특정 폴더로 직접 이동할 수 있습니다.
-* Sling 콘텐츠 배포(SCD)는 이제 해당 콘텐츠가 게시되지 않은 콘텐츠를 무효화하는 명시적인 &quot;무효화&quot; 작업을 지원합니다. 자세한 내용은 [AEM as a Cloud Service의 캐싱](/help/implementing/dispatcher/caching.md#explicit-invalidation)을 참조하십시오.
-* 이제 AEM as a Cloud Service에서 mod_macro를 이용할 수 있습니다. 지원되는 Apache 모듈의 목록은 [이 표](/help/implementing/dispatcher/disp-overview.md)를 참조하십시오.
+* Sling 콘텐츠 배포(SCD)는 이제 해당 콘텐츠가 게시되지 않은 콘텐츠를 무효화하는 명시적인 &quot;무효화&quot; 작업을 지원합니다. 다음을 참조하십시오 [AEM as a Cloud Service에서 캐싱](/help/implementing/dispatcher/caching.md#explicit-invalidation) 자세한 내용은 페이지를 참조하십시오.
+* 이제 AEM as a Cloud Service에서 mod_macro를 이용할 수 있습니다. 다음을 참조하십시오 [이 테이블](/help/implementing/dispatcher/disp-overview.md) 지원되는 Apache 모듈의 목록입니다.
 
 ### AEM as a Cloud Service SDK Dispatcher 도구 개선 사항 {#dispatcher-tools-enhancements}
 
@@ -112,7 +112,7 @@ ht-degree: 86%
 
 ### [!DNL Experience Manager] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-foundation}
 
-* 이제 AEM as a Cloud Service가 통합 쉘과 통합되어 사용자 경험을 개선하고 다른 모든 Experience Cloud 애플리케이션과 통합합니다. 자세한 내용은 [통합 쉘의 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)를 참조하십시오.
+* 이제 AEM as a Cloud Service가 통합 쉘과 통합되어 사용자 경험을 개선하고 다른 모든 Experience Cloud 애플리케이션과 통합합니다. 다음을 참조하십시오 [통합 쉘의 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 을 참조하십시오.
 
 ## Adobe Learning Manager 커넥터 {#learn-manage}
 

@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 프리릴리스 채널
 description: 프리릴리스 채널을 사용하여 AEM as a Cloud Service에 대한 예정된 기능을 미리 보는 방법에 대해 알아보십시오.
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 91%
+source-wordcount: '1304'
+ht-degree: 92%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 91%
 
 Adobe Experience Manager as a Cloud Service는 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)에 따라 정기적으로 새로운 기능을 제공합니다.
 
-다음 기능 릴리스로 예정된 기능에 익숙해지려면 개발 환경 또는 샌드박스 환경을 구성하여 액세스할 수 있는 프리릴리스 채널을 구독하면 됩니다. AEM UI를 통해 변경 내용을 미리 볼 수 있으며 새 프리릴리스 API에 대해 코드를 작성할 수 있습니다.
+다음 기능 릴리스에서 실행할 예정인 기능에 익숙해지려면 개발 환경 또는 원하는 샌드박스 환경을 구성하여 액세스할 수 있는 프리릴리스 채널을 구독하면 됩니다. AEM 사용자 인터페이스를 통해 변경 내용을 미리 보고 새로운 프리릴리스 API에 대해 코드를 작성할 수 있습니다.
 
-지정된 기능 릴리스에 대한 프리릴리스 기능 목록은 [릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)에 게시됩니다.
+해당 기능 릴리스의 프리릴리스 기능 목록은 [릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## AEM as a Cloud Service 릴리스 {#releases}
 
@@ -31,22 +31,22 @@ AEM as a Cloud Service에는 두 가지 유형의 릴리스가 있습니다.
 
 이러한 패턴으로 서비스 중단 없이 지속적인 릴리스가 이루어집니다.
 
-프리릴리스 채널을 사용하면 예정된 기능 릴리스에 예정된 기능을 미리 볼 수 있으므로 예정된 기능을 평가하고 프로젝트에 대해 가능한 구현을 계획할 수 있습니다. 이를 통해 다음 기능 릴리스를 미리 계획할 수 있습니다.
+프리릴리스 채널을 통해 다가오는 기능 릴리스에 예정된 기능을 미리 확인하여 예정된 기능을 평가하고 프로젝트에 대해 가능한 구현을 계획할 수 있습니다. 이를 통해 다음 기능 릴리스를 미리 계획할 수 있습니다.
 
-예를 들어 지금이 5월이고 프리릴리스 채널을 구독 중인 경우 다가오는 6월 릴리스의 기능을 미리 평가할 수 있습니다.
+예를 들어 지금이 5월이고 프리릴리스 채널을 구독 중인 경우 다가오는 6월 릴리스의 기능을 평가할 수 있습니다.
 
 ![프리릴리스 주기 그래픽](assets/prerelease-cadence.png)
 
-프리릴리스는 다가오는 AEMaaCS 기능에 대한 1개월의 롤링 기간을 제공하므로, 새로운 기능이 프로젝트 및 맞춤화에 미치는 영향을 평가하고 이러한 기능, 테스트 및 사용자 교육의 개시를 계획할 수 있습니다.
+프리릴리스는 예정된 AEMaaCS 기능에 대한 1개월의 롤링 기간을 제공하므로, 새로운 기능이 프로젝트 및 맞춤화에 미치는 영향을 평가하고 이러한 기능, 테스트 및 사용자 교육의 개시를 계획할 수 있습니다.
 
 프리릴리스 채널을 효과적으로 활용하는 방법은 4단계로 구성되어 있습니다.
 
-1. [달력 표시](#mark-calendars)
+1. [캘린더 표시](#mark-calendars)
 1. [릴리스 정보 검토](#release-notes)
 1. [새로운 기능 액세스 및 사용](#new-features)
 1. [사용자 교육](#train-users)
 
-## 달력 표시 {#mark-calendars}
+## 캘린더 표시 {#mark-calendars}
 
 기능 릴리스는 미리 일정이 예정되어 있으며 기능 릴리스 활성화 날짜는 [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)에 게시됩니다.
 
@@ -54,7 +54,7 @@ AEM as a Cloud Service에는 두 가지 유형의 릴리스가 있습니다.
 
 ## 릴리스 정보 검토 {#release-notes}
 
-달력에 릴리스 날짜를 표시해 두었다면 릴리스 당일 [Adobe Experience League](/help/release-notes/release-notes-cloud/release-notes-current.md) 웹 사이트에서 최신 릴리스 정보를 확인하십시오.
+캘린더에 릴리스 날짜를 표시해 두었다면 릴리스 당일 [Adobe Experience League](/help/release-notes/release-notes-cloud/release-notes-current.md) 웹 사이트에서 최신 릴리스 정보를 확인하십시오.
 
 각 릴리스에는 해당 릴리스의 새로운 기능뿐만 아니라 프리릴리스 평가에 사용할 수 있는 기능을 문서화한 릴리스 정보가 함께 제공됩니다. 미리 알아본 정보로 AEMaaCS의 최신 기능을 활용할 계획을 세워 보십시오.
 
@@ -157,7 +157,7 @@ JavaDoc은 Maven Central에 게시됩니다.
      </dependency>
    ```
 
-   프리릴리스 SDK를 변경하려면 다음에서 종속성을 변경하면 됩니다. `com.adobe.aem:aem-sdk-api` 끝 `com.adobe.aem:aem-prerelease-sdk-api` 아래에 명시된 대로:
+   프리릴리스 SDK를 변경하려면 아래 설명처럼 `com.adobe.aem:aem-sdk-api`에서 `com.adobe.aem:aem-prerelease-sdk-api`로 종속성을 변경하기만 하면 됩니다.
 
    ```
    <dependencyManagement>
@@ -189,7 +189,7 @@ JavaDoc은 Maven Central에 게시됩니다.
 
 ## 사용자 교육 {#train-users}
 
-프리릴리스 채널에서 새로운 기능을 테스트하고 이를 프로젝트에서 사용하기로 결정했다면 사용자를 교육해야 합니다.
+프리릴리스 채널에서 새로운 기능을 테스트하고 이를 프로젝트에 사용하기로 결정했다면 사용자를 교육해야 합니다.
 
 Adobe Experience League는 AEMaaCS에 대해 알아볼 수 있는 많은 리소스를 제공합니다.
 

@@ -2,9 +2,9 @@
 title: 분기 만들기
 description: 이 페이지에서는 Screens용 Cloud Manager에서 as a Cloud Service으로 분기를 생성하는 방법에 대해 설명합니다.
 exl-id: bcfdcb45-8547-4160-ba47-4f47916ca48a
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '225'
 ht-degree: 4%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 4%
 이 섹션에서는 Cloud Manager에서 프로그램의 분기를 만드는 방법을 설명합니다.
 
 >[!NOTE]
->을(를) 참조하십시오 [Cloud Manager에서 마법사 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/using-the-wizard.html?lang=en) 마법사를 사용하여 Cloud Manager에서 AEM 애플리케이션 프로젝트를 만드는 방법을 알아봅니다.
+>다음을 참조하십시오 [Cloud Manager에서 마법사 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/using-the-wizard.html?lang=en) 마법사를 사용하여 Cloud Manager에서 AEM 애플리케이션 프로젝트를 만드는 방법을 알아봅니다.
 
 ## 목표 {#objective}
 

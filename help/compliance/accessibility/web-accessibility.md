@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 및 웹 접근성 지침
 description: Adobe Experience Manager as a Cloud Service 및 웹 액세서빌러티 지침 소개
 exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
-source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 100%
+source-wordcount: '383'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ AEM as a Cloud Service를 사용하여 액세스 가능한 웹 사이트 및 콘
 
 * 액세스 가능한 웹 사이트를 제작하기 위해 이러한 기능을 사용하는 작성자
 
-   액세스 가능한 콘텐츠를 만드는 것은 프로세스입니다. AEM에서는 기능을 제공하지만 콘텐츠 작성자는 액세스 가능한 콘텐츠를 만드는 데 필요한 기법을 따라야 합니다.
+  액세스 가능한 콘텐츠를 만드는 것은 프로세스입니다. AEM에서는 기능을 제공하지만 콘텐츠 작성자는 액세스 가능한 콘텐츠를 만드는 데 필요한 기법을 따라야 합니다.
 
 * 템플릿 개발자도 웹 사이트 디자인을 구현할 때 이러한 문제를 알고 있어야 합니다.
 
@@ -64,4 +64,4 @@ WCAG 2.1은 [접근성 수준과 이를 준수하는 방법에 대한 지침(관
 
 ## Adobe에서의 접근성 {#accessibility-at-adobe}
 
-자세한 내용은 [Adobe 접근성 리소스 센터](https://www.adobe.com/kr/accessibility/)에서 확인하십시오.
+자세한 내용은 [Adobe 접근성 리소스 센터](https://www.adobe.com/kr/accessibility/).

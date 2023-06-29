@@ -2,10 +2,10 @@
 title: 프로젝트 관리
 description: 프로젝트를 사용하면 리소스를 프로젝트 콘솔에서 액세스 및 관리할 수 있는 하나의 엔티티로 그룹화하여 프로젝트를 구성할 수 있습니다.
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: 54a098d8986c8bbd740bed50f8625c1025d2f6f4
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 60%
+source-wordcount: '893'
+ht-degree: 56%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 60%
 
 ![프로젝트 콘솔](/help/sites-cloud/authoring/assets/projects-console.png)
 
-프로젝트에서 프로젝트를 만들고, 리소스를 프로젝트와 연결하며, 프로젝트나 리소스 링크를 삭제할 수도 있습니다. 타일을 열어 콘텐츠를 보고 타일에 항목을 추가할 수도 있습니다. 이 항목에서는 이러한 절차에 대해 설명합니다.
+프로젝트에서 프로젝트를 만들고, 리소스를 프로젝트와 연결하며, 프로젝트나 리소스 링크를 삭제할 수도 있습니다. 타일을 열어 콘텐츠를 보고 타일에 항목을 추가할 수 있습니다. 이 항목에서는 이러한 절차에 대해 설명합니다.
 
 ## 프로젝트 만들기 {#creating-a-project}
 
@@ -57,7 +57,7 @@ The procedure of creating a project is the same from project to project. The dif
 
    >[!NOTE]
    >
-   >프로젝트와 연결할 수 있는 프로젝트 타일은 [프로젝트 타일](/help/sites-cloud/authoring/projects/overview.md#project-tiles)에 자세히 설명되어 있습니다.
+   >프로젝트와 연결할 수 있는 프로젝트 타일에 자세히 설명되어 있습니다 [프로젝트 타일](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
 1. **만들기**&#x200B;를 탭/클릭합니다. 리소스는 프로젝트에 연결되며, 이제부터 프로젝트에서 이 리소스에 액세스할 수 있습니다.
 
@@ -127,13 +127,14 @@ The procedure of creating a project is the same from project to project. The dif
 
 ## 프로젝트를 비활성 또는 활성 상태로 만들기 {#making-projects-inactive-or-active}
 
-프로젝트를 완료했지만 프로젝트에 대한 정보를 유지하려는 경우 프로젝트를 비활성 상태로 만들 수 있습니다.
+프로젝트를 완료했지만 프로젝트에 대한 정보를 계속 유지하려는 경우 프로젝트를 비활성 상태로 만들 수 있습니다.
 
 프로젝트를 비활성(또는 활성) 상태로 만들려면 다음 작업을 수행하십시오.
 
 1. 다음에서 **프로젝트** 콘솔에서 프로젝트를 연 다음 **프로젝트 정보** 타일.
 
    >[!NOTE]
+   >
    이 타일이 프로젝트에 없는 경우 추가해야 할 수 있습니다. 다음을 참조하십시오 [타일 추가](#adding-items-to-a-tile).
 
 1. **편집**&#x200B;을 탭/클릭합니다.

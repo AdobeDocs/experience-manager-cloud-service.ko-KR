@@ -4,10 +4,10 @@ description: AEM의 언어 복사 마법사를 사용하는 방법에 대해 알
 feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 95%
+source-wordcount: '282'
+ht-degree: 87%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 95%
 
 >[!TIP]
 >
->콘텐츠 번역이 처음이라면 AEM의 강력한 번역 도구를 사용한 AEM Sites 콘텐츠 번역을 안내하며 AEM이 없거나 번역 경험이 없는 사용자에게 최적화된 [사이트 번역 여정](/help/journey-sites/translation/overview.md)을 참조하십시오.
+>콘텐츠 번역이 처음이라면 다음을 참조하십시오. [사이트 번역 여정,](/help/journey-sites/translation/overview.md) AEM의 강력한 번역 툴을 사용한 AEM Sites 콘텐츠 번역을 안내하며 AEM 또는 번역 경험이 없는 사용자에게 이상적입니다.
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ ht-degree: 95%
 
    >[!NOTE]
    >
-   >이전 단계에서 여러 언어를 선택한 경우 여러 번역 프로젝트가 만들어집니다.
+   >이전 단계에서 여러 언어를 선택한 경우, 여러 작업 프로젝트가 생성됩니다.
 
    ![마법사의 번역 단계](../assets/language-copy-wizard-translate.png)
 

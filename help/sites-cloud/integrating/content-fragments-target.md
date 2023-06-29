@@ -2,10 +2,10 @@
 title: Adobe Target으로 콘텐츠 조각 내보내기
 description: Adobe Target으로 콘텐츠 조각 내보내기
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2227'
-ht-degree: 97%
+source-wordcount: '2222'
+ht-degree: 96%
 
 ---
 
@@ -52,7 +52,7 @@ AEM 콘텐츠 조각을 Adobe Target으로 내보내기 위한 인스턴스를 �
 
 1. [AEM을 Adobe Target과 통합](/help/sites-cloud/integrating/integrating-adobe-target.md)해야 합니다.
 
-<!-- link rewriter - targets in content-fragments-customizing don't exist yet
+<!-- link rewriter - targets in content-fragments-customizing do not exist yet
 
 1. Content Fragments are exported from the AEM author instance, so you need to [Configure the AEM Link Externalizer](/help/implementing/developing/extending/content-fragments-customizing.md#configuring-the-aem-link-externalizer) on the author instance to ensure that any references within the Content Fragment are externalized for web delivery.
 
@@ -175,7 +175,7 @@ Adobe Target의 세그먼트를 동기화하도록 클라우드 구성을 구성
 
    * **테넌트 ID**: 테넌트 ID입니다.
 
-   * **IMS 구성**: 드롭다운 목록에서 필요한 구성을 선택합니다.
+   * **IMS 구성**: 드롭다운 목록에서 필요한 구성을 선택합니다
 
    * **API 유형**: 기본값은 REST입니다(XML은 더 이상 사용되지 않음).
 
@@ -324,7 +324,7 @@ AEM에서 Target으로 콘텐츠 조각을 내보내려면(클라우드 구성 �
 
    ![Adobe Target으로 내보내기](assets/cfm-export-target-01.png)
 
-   <!-- this note doesn't seem to be accurate for CFs -->
+   <!-- this note does not seem to be accurate for CFs -->
 
    <!--
    
@@ -364,7 +364,7 @@ AEM에서 Target으로 콘텐츠 조각을 내보내려면(클라우드 구성 �
 
 ## Adobe Target에서 콘텐츠 조각 사용 {#using-your-content-fragments-in-adobe-target}
 
-앞의 작업을 수행하면 콘텐츠 조각이 Target의 오퍼 페이지에 표시됩니다. 여기에서 수행할 수 있는 작업에 대해 알아보려면 [관련 Target 설명서](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)를 살펴보십시오.
+앞의 작업을 수행하면 콘텐츠 조각이 Target의 오퍼 페이지에 표시됩니다. 다음을 참조하십시오 [특정 Target 설명서](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html) 여기에서 달성할 수 있는 것에 대해 알아봅니다.
 
 >[!NOTE]
 >
@@ -396,7 +396,7 @@ AEM에서 Target으로 콘텐츠 조각을 내보내려면(클라우드 구성 �
 
 ## 추가 리소스 {#further-resources}
 
-또한 자세한 내용은 다음을 참조하십시오.
+자세한 내용은 다음을 참조하십시오.
 
 <!--
 * [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)

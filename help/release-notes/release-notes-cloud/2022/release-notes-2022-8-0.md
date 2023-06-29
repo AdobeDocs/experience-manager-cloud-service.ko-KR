@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.8.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.8.0 릴리스 정보입니다.'
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 96%
@@ -55,7 +55,7 @@ ht-degree: 96%
 
 * 이제 [사용자가 MIME 유형에 따라 업로드할 수 있는 에셋 유형을 제한](/help/assets/configure-asset-upload-restrictions.md)하도록 Adobe Experience Manager Assets를 구성할 수 있습니다.
 
-   ![에셋 업로드 제한 사항](/help/assets/assets/asset-upload-restrictions.png)
+  ![에셋 업로드 제한 사항](/help/assets/assets/asset-upload-restrictions.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -74,7 +74,7 @@ ht-degree: 96%
 ### 새로운 기능 {#what-is-new-cif}
 
 * AEM 페이지 속성과 제품 관리실 개요를 통해 AEM 페이지를 제품 및 카테고리에 연결
-   ![제품 관리실 페이지 연결](/help/assets/CIF/product_cockpit_page_association.png)
+  ![제품 관리실 페이지 연결](/help/assets/CIF/product_cockpit_page_association.png)
 
 ## Cloud Manager {#cloud-manager}
 

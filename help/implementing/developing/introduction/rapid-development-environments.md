@@ -2,9 +2,9 @@
 title: 신속한 개발 환경
 description: 클라우드 환경에서 신속한 개발 반복을 위해 빠른 개발 환경을 사용하는 방법에 대해 알아봅니다.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3318'
+source-wordcount: '3313'
 ht-degree: 5%
 
 ---
@@ -20,7 +20,7 @@ RDE에서 변경 사항을 테스트하면 Cloud Manager 파이프라인을 통�
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-데모에 나와 있는 추가 비디오를 참조하십시오 [설정 방법](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html), [사용 방법](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html)및 [개발 수명 주기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html) RDE를 사용합니다.
+추가 비디오를 시연해 보십시오 [설정 방법](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html), [사용 방법](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html)및 [개발 수명 주기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html) RDE를 사용합니다.
 
 ## 소개 {#introduction}
 
@@ -42,7 +42,7 @@ RDE는 코드, 콘텐츠 및 Apache 또는 Dispatcher 구성에 사용할 수 �
 
 1. RDE를 추가하여 세부 정보를 표시할 프로그램을 클릭합니다.
 
-   * RDE는 두 항목 모두에 추가할 수 있습니다. [샌드박스 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) 및 [프로덕션 프로그램.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+   * RDE는 두 항목 모두에 추가할 수 있습니다. [샌드박스 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) 및 [제작 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
 
 1. **프로그램 개요** 페이지에서 **환경** 카드의 **환경 추가**&#x200B;를 클릭하여 환경을 추가합니다.
 
@@ -70,11 +70,11 @@ RDE는 코드, 콘텐츠 및 Apache 또는 Dispatcher 구성에 사용할 수 �
 
 생성 시 RDE는 가장 최근에 사용할 수 있는 AEM 버전으로 설정됩니다. Cloud Manager를 사용하여 수행할 수도 있는 RDE 재설정은 RDE를 순환시키고 가장 최근에 사용할 수 있는 AEM 버전으로 설정합니다.
 
-Cloud Manager를 사용하여 환경을 만들고, 환경에 액세스할 수 있는 사용자를 관리하고, 사용자 정의 도메인을 할당하는 방법에 대한 자세한 내용은 다음을 참조하십시오. [cloud Manager 설명서.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+Cloud Manager를 사용하여 환경을 만들고, 환경에 액세스할 수 있는 사용자를 관리하고, 사용자 정의 도메인을 할당하는 방법에 대한 자세한 내용은 다음을 참조하십시오. [cloud Manager 설명서](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 ## RDE 명령줄 도구 설치 {#installing-the-rde-command-line-tools}
 
-Cloud Manager를 사용하여 프로그램에 대한 RDE를 추가한 후에는 다음 단계에 설명된 대로 명령줄 도구를 설정하여 RDE와 상호 작용할 수 있습니다.
+Cloud Manager를 사용하여 프로그램에 대한 RDE를 추가한 후 다음 단계에 설명된 대로 명령줄 도구를 설정하여 RDE와 상호 작용할 수 있습니다.
 
 >[!IMPORTANT]
 >
@@ -94,7 +94,7 @@ Cloud Manager를 사용하여 프로그램에 대한 RDE를 추가한 후에는 
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   및 를 사용하여 영숫자 문자열을 자체 조직 ID로 바꾸고, 이를 전략을 사용하여 조회할 수 있습니다 [여기](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
+   및 를 사용하여 영숫자 문자열을 자체 조직 ID로 바꿉니다. 이 ID는 전략을 사용하여 조회할 수 있습니다 [여기](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
 
 1. 다음으로 프로그램 ID를 구성합니다.
 
@@ -147,7 +147,7 @@ Adobe은 새 기능을 개발하기 위해 다음 워크플로를 권장합니�
 
 * AEM as a Cloud Service SDK를 사용하여 중간 이정표에 도달하고 로컬에서 성공적으로 유효성을 검사하면 git에 커밋은 선택 사항이지만 아직 기본 줄의 일부가 아닌 git 기능 분기에 코드를 커밋해야 합니다. &#39;중간 이정표&#39;를 구성하는 것은 팀 습관에 따라 다르다. 예를 들면 몇 개의 새로운 코드 줄, 반나절 작업 또는 하위 기능 완료가 있습니다.
 
-* 다른 기능에서 RDE를 사용했으며 다음 작업을 수행하려는 경우 RDE를 재설정합니다. [기본 상태로 재설정](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->재설정하는 데 몇 분이 소요되며 기존의 모든 콘텐츠 및 코드가 삭제됩니다. RDE status 명령을 사용하여 RDE가 준비되었는지 확인할 수 있습니다. RDE에 최신 AEM 릴리스 버전이 표시됩니다.
+* 다른 기능에서 RDE를 사용했으며 다음 작업을 수행하려는 경우 RDE를 재설정합니다. [기본 상태로 재설정](#reset-rde). <!-- Alexandru: hiding for now, do not delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->재설정하는 데 몇 분이 소요되며 기존의 모든 콘텐츠 및 코드가 삭제됩니다. RDE status 명령을 사용하여 RDE가 준비되었는지 확인할 수 있습니다. RDE에 최신 AEM 릴리스 버전이 표시됩니다.
 
   >[!IMPORTANT]
   >
@@ -276,7 +276,7 @@ RDE는 한 번에 하나의 프로젝트를 지원합니다. 코드는 로컬 �
 
 >[!TIP]
 >
->위의 명령은 를 배포하는 것으로 가정합니다. [WKND](https://github.com/adobe/aem-guides-wknd) 프로젝트의 dispatcher 구성 다음을 교체하십시오. `X.X.X` 프로젝트의 dispatcher 구성을 배포할 때 해당 WKND 프로젝트 버전 번호 또는 프로젝트별 버전 번호 사용..
+>위의 명령은 를 배포하는 것으로 가정합니다. [WKND](https://github.com/adobe/aem-guides-wknd) 프로젝트의 dispatcher 구성 다음을 교체해야 합니다. `X.X.X` 프로젝트의 dispatcher 구성을 배포할 때 해당 WKND 프로젝트 버전 번호 또는 프로젝트별 버전 번호 사용..
 
 >[!NOTE]
 >
@@ -369,7 +369,7 @@ RDE를 재설정하면 작성자 및 게시 인스턴스 모두에서 모든 사
 
 재설정하면 RDE가 가장 최근에 사용할 수 있는 AEM 버전으로 설정됩니다.
 
-<!-- Alexandru: hiding for now, please don't delete
+<!-- Alexandru: hiding for now, do not delete
 
 Resetting can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code is deleted from the RDE.
 
@@ -417,7 +417,7 @@ Cloud Manager를 사용하여 아래 단계에 따라 RDE를 재설정할 수 �
 
    ![배너 알림 재설정](/help/implementing/cloud-manager/assets/rde-reset-banner.png)
 
-RDE 재설정 프로세스가 시작되면 일반적으로 완료하고 환경을 기본 상태로 되돌리는 데 몇 분이 소요됩니다. 재설정 프로세스의 상태는 언제든지 **상태** 열 **환경** 카드 또는 **환경** 창.
+RDE 재설정 프로세스가 시작되면 일반적으로 완료되어 환경을 기본 상태로 되돌리는 데 몇 분이 소요됩니다. 재설정 프로세스의 상태는 언제든지 **상태** 열 **환경** 카드 또는 **환경** 창.
 
 ![RDE 재설정 상태](/help/implementing/cloud-manager/assets/rde-reset-status-environments-card.png)
 
@@ -425,7 +425,7 @@ RDE 재설정 프로세스가 시작되면 일반적으로 완료하고 환경�
 
 ![환경 카드에서 RDE 재설정](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
-Cloud Manager를 사용하여 환경을 관리하는 방법에 대한 자세한 내용은 다음을 참조하십시오. [cloud Manager 설명서.](/help/implementing/cloud-manager/manage-environments.md)
+Cloud Manager를 사용하여 환경을 관리하는 방법에 대한 자세한 내용은 [cloud Manager 설명서](/help/implementing/cloud-manager/manage-environments.md).
 
 ## 실행 모드 {#runmodes}
 

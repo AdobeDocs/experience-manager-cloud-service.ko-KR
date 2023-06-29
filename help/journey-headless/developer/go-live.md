@@ -2,10 +2,10 @@
 title: Headless 애플리케이션 실행 방법
 description: 이 AEM Headless 개발자 여정의 부분에서는 Git에서 로컬 코드를 가져오고 CI/CD 파이프라인용 Cloud Manager Git으로 이동하여 Headless 애플리케이션을 라이브로 배포하는 방법에 대해 알아봅니다.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 94%
+source-wordcount: '1066'
+ht-degree: 97%
 
 ---
 
@@ -50,7 +50,7 @@ AEM Headless 애플리케이션을 실행할 수 있도록 준비하려면 아�
    * 가능하면 지속 쿼리를 사용합니다.
    * CDN에서 캐싱하려면 CDN TTL을 600초 이상 제공합니다.
    * AEM은 모델 변경이 기존 쿼리에 미치는 영향을 계산할 수 있습니다.
-* 낮은 콘텐츠 변경률과 높은 콘텐츠 변경률 사이에서 JSON 파일/GraphQL 쿼리를 분할함으로써 클라이언트 트래픽을 CDN으로 줄이고 더 높은 TTL을 할당할 수 있습니다. 원본 서버로 CDN을 최소화하여 JSON의 유효성을 다시 확인합니다.
+* 클라이언트 트래픽을 CDN으로 축소하고 더 높은 TTL을 할당하려면 JSON 파일/GraphQL 쿼리를 높고 낮은 콘텐츠 변경률 사이로 분할합니다. 원본 서버로 CDN을 최소화하여 JSON의 유효성을 다시 확인합니다.
 * CDN의 콘텐츠를 효과적으로 무효화하려면 Soft Purge를 사용합니다. 이렇게 하면 CDN은 캐시 누락 없이 콘텐츠를 다시 다운로드할 수 있습니다.
 
 ## Headless 콘텐츠 다운로드 시간 개선 {#improve-download-time}
@@ -59,7 +59,7 @@ AEM Headless 애플리케이션을 실행할 수 있도록 준비하려면 아�
 * HTTP 클라이언트가 gzip에 대한 헤더 요청을 수락하는지 확인합니다.
 * JSON과 참조된 아티팩트를 호스팅하는 데 사용되는 도메인 수를 최소화합니다.
 * `Last-modified-since`를 활용하여 리소스를 새로 고칩니다.
-* JSON 파일의 `_reference`출력을 사용하여 전체 JSON 파일을 구문 분석하지 않고도 에셋 다운로드를 시작합니다.
+* JSON 파일의 `_reference`출력을 사용하여 전체 JSON 파일을 구문 분석하지 않고도 자산 다운로드를 시작합니다.
 
 ## 프로덕션에 배포 {#deploy-to-production}
 
@@ -101,7 +101,7 @@ AEM Headless 애플리케이션을 실행할 수 있도록 준비하려면 아�
 
 ### 지원을 통해 버그 로깅 {#logging-a-bug-with-support}
 
-추가 지원이 필요한 경우 지원 팀에 버그를 효율적으로 기록하려면 다음을 수행하십시오.
+추가 지원이 필요한 경우, 지원을 통해 버그를 효율적으로 로깅하려면 다음 단계를 따릅니다.
 
 * 문제 발생 시 필요한 경우 스크린샷 찍기
 * 문제를 재현하는 방식 문서화
@@ -124,7 +124,7 @@ AEM Headless 애플리케이션을 실행할 수 있도록 준비하려면 아�
 
 ### 단일 페이지 애플리케이션 살펴보기 {#explore-spa}
 
-하지만 AEM의 Headless 스토어는 여기서 멈추지 않습니다. [여정의 일부 시작하기](getting-started.md#integration-levels)에서 AEM이 Headless 게재와 기존 전체 스택 모델뿐만 아니라 두 가지 장점을 결합한 하이브리드 모델을 지원하는 방법에 대해 간략하게 논의했던 것으로 기억할지 모릅니다.
+하지만 AEM의 헤드리스 매장은 여기서 멈추지 않아도 됩니다. [여정의 일부 시작하기](getting-started.md#integration-levels)에서 AEM이 Headless 게재와 기존 전체 스택 모델뿐만 아니라 두 가지 장점을 결합한 하이브리드 모델을 지원하는 방법에 대해 간략하게 논의했던 것으로 기억할지 모릅니다.
 
 프로젝트에 이러한 종류의 유연성이 필요한 경우 부가적인 여정인 [AEM을 통해 단일 페이지 애플리케이션(SPA)을 제작하는 방법](create-spa.md)(선택 사항)을 계속 진행합니다.
 
@@ -132,4 +132,4 @@ AEM Headless 애플리케이션을 실행할 수 있도록 준비하려면 아�
 
 * [AEM as a Cloud Service 배포 개요](/help/implementing/deploying/overview.md)
 * [Cloud Manager를 사용하여 코드 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
-* [Cloud Manager Git 저장소를 외부 Git 저장소와 통합하고 프로젝트를 AEM as a Cloud Service에 배포합니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=ko-KR)
+* [Cloud Manager Git 저장소를 외부 Git 저장소와 통합하고 프로젝트를 AEM as a Cloud Service에 배포합니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html)

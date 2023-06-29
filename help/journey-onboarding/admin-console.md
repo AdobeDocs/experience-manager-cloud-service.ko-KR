@@ -2,10 +2,10 @@
 title: Admin Console 액세스
 description: 온보딩에 필요한 준비와 AEMaaCS 구조의 기본 사항을 이해했으면 처음으로 Admin Console에 로그인할 준비가 된 것입니다.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 97%
+source-wordcount: '1107'
+ht-degree: 96%
 
 ---
 
@@ -32,7 +32,7 @@ Adobe Admin Console은 Adobe 제품 라이선스 및 사용자를 관리하는 �
 
 Admin Console에 로그인하려면 Adobe ID가 필요합니다. Adobe ID는 AEM as a Cloud Service 또는 Adobe 솔루션에 로그인하고 액세스하는 데 필요한 특정 이메일 주소에 연결된 계정입니다. Adobe ID를 사용하면 단일 계정과 연결된 모든 Adobe 플랜 및 제품을 유지할 수 있습니다.
 
-시스템 관리자가 Admin Console에서 팀을 설정하면 Adobe ID으로 사용되는 이메일 주소를 지정합니다.
+시스템 관리자가 Admin Console에서 팀을 설정할 때 Adobe ID로 사용할 이메일 주소를 지정합니다.
 
 Adobe ID에는 세 가지 유형이 있습니다.
 
@@ -58,7 +58,7 @@ Admin Console을 사용하여 팀 내 사용자를 관리하려면 먼저 자신
 
    ![Admin Console](/help/journey-onboarding/assets/get-started1.png)
 
-1. 여러 조직에 액세스할 수 있는 경우 올바른 조직에 로그인했는지 확인합니다. 조직을 변경하려면 오른쪽 상단에서 조직 이름을 클릭하고 액세스가 필요한 필수 조직을 선택합니다.
+1. 여러 조직에 대한 액세스 권한이 있는 경우 올바른 조직에 로그인했는지 확인하십시오. 조직을 변경하려면 오른쪽 상단에서 조직 이름을 클릭하고 액세스가 필요한 필수 조직을 선택합니다.
 
    ![조직 변경](/help/journey-onboarding/assets/admin-console-orgswitch.png)
 
@@ -107,8 +107,8 @@ AEM as a Cloud Service는 IMS를 사용하여 AEM과 나머지 Adobe Experience 
 
 온보딩 여정의 콘텐츠를 능가하려는 경우 다음은 추가적인 옵션 리소스입니다.
 
-* [Admin Console 개요](https://helpx.adobe.com/kr/enterprise/using/admin-console.html) - Admin Console에 대한 포괄적인 개요
+* [Admin Console 개요](https://helpx.adobe.com/enterprise/using/admin-console.html) - Admin Console에 대한 포괄적인 개요
 * [Adobe ID 만들기 또는 업데이트](https://helpx.adobe.com/ca/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - Adobe ID를 만들고, 변경하고, 여러 Adobe ID를 관리하는 방법에 대해 알아봅니다.
 * [SAML 2.0 Authentication Handler](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html) - AEM은 SAML 인증 핸들러와 함께 제공됩니다. 이 핸들러는 HTTP POST 바인딩을 사용하여 SAML 2.0 인증 요청 프로토콜(Web-SSO 프로필)을 지원합니다.
-* [관리 역할](https://helpx.adobe.com/kr/enterprise/using/admin-roles.ug.html) - 조직은 Adobe Admin Console을 사용하여 Adobe 제품 액세스 및 사용을 세분화하고 관리할 수 있는 유연한 관리 계층 구조를 정의할 수 있습니다.
-* [지원 및 전문가 세션](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) - Admin Console에서 지원 옵션을 이용하고, 지원 사례를 관리하고, 전문가 세션을 예약하는 방법 등에 대해 알아봅니다.
+* [관리 역할](https://helpx.adobe.com/enterprise/using/admin-roles.ug.html) - 조직은 Adobe Admin Console을 사용하여 Adobe 제품 액세스 및 사용을 세분화하고 관리할 수 있는 유연한 관리 계층 구조를 정의할 수 있습니다.
+* [지원 및 전문가 세션](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) - Admin Console에서 지원 옵션을 이용하고, 지원 사례를 관리하고, 전문가 세션을 예약하는 방법 등에 대해 알아봅니다.

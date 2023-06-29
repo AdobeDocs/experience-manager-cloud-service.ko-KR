@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2020.8.0 릴리스 정보입니다.'
 description: "[!DNL Adobe Experience Manager] 2020.8.0용 as a Cloud Service 릴리스 노트"
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1041'
-ht-degree: 33%
+source-wordcount: '1039'
+ht-degree: 34%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 33%
 
 * 다음에 대한 기능: [페이지 및 하위 페이지(페이지 트리)를 이전 버전으로 복원](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions).
 
-* 다음에 대한 기능: [론치 만들기](/help/sites-cloud/authoring/launches/overview.md) AEM [SPA 편집기.](/help/implementing/developing/hybrid/introduction.md)
+* 다음에 대한 기능: [론치 만들기](/help/sites-cloud/authoring/launches/overview.md) AEM [SPA 편집기](/help/implementing/developing/hybrid/introduction.md).
 
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
@@ -33,7 +33,7 @@ ht-degree: 33%
 
 * 새 항목 [에셋 다운로드 경험](/help/assets/download-assets-from-aem.md) 허용,
 
-   * 대규모 다운로드를 위해 비동기 다운로드를 지원하므로 사용자가 기다릴 필요가 없습니다.
+   * 대규모 다운로드를 위한 비동기 다운로드를 지원하므로 사용자가 기다리지 않아도 됩니다.
    * 개발자 확장성을 위한 새로운 모듈식 API.
 
 * 에셋 마이크로서비스에 대한 메타데이터 추출의 성능이 향상되었습니다. 전체 에셋 수집 처리량을 증가시킵니다.
@@ -82,7 +82,7 @@ ht-degree: 33%
   >[!NOTE]
   >이후 콘텐츠 감사는 경험 감사로 이름이 변경되었습니다.
 
-  자세한 내용은 [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-testing.md)를 참조하십시오.
+  다음을 참조하십시오 [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-testing.md) 을 참조하십시오.
 
 * Assets 프로그램에서 새로 만들어진 환경은 이제 스마트 콘텐츠 서비스로 자동 구성됩니다.
 
@@ -116,7 +116,7 @@ ht-degree: 33%
 
 * 콘텐츠 감사 탭에 게시 도메인 대신 작성자 도메인을 사용하는 기본 URL이 잘못 표시됩니다.
 
-* 콘텐츠 감사 단계를 활성화하려면 사용자가 파이프라인을 편집하고 선택적으로 페이지를 추가해야 합니다. 페이지가 추가되지 않으면 홈페이지가 감사됩니다.
+* 콘텐츠 감사 단계를 활성화하려면 사용자가 파이프라인을 편집하고 필요한 경우 페이지를 추가해야 합니다. 페이지가 추가되지 않으면 홈 페이지가 감사됩니다.
 
 ## 콘텐츠 전송 도구 {#content-transfer-tool}
 
@@ -138,8 +138,8 @@ ht-degree: 33%
 
 ### 새로운 기능 {#what-is-new-refactoring}
 
-* 개발자가 한 곳에서 코드 리팩터링 도구를 호출하고 실행할 수 있도록 코드 리팩터링 도구를 통합하기 위해 AIO-CLI 플러그인이 출시되었습니다. 을(를) 참조하십시오 [Git 리소스: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 을 참조하십시오.
+* 개발자가 한 곳에서 코드 리팩터링 도구를 호출하고 실행할 수 있도록 코드 리팩터링 도구를 통합하기 위해 AIO-CLI 플러그인이 출시되었습니다. 다음을 참조하십시오 [Git 리소스: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 을 참조하십시오.
 
-* AEM Dispatcher Converter 는 온-프레미스 및 Adobe Managed Services Dispatcher 구성을 AEM as a Cloud Service 호환 Dispatcher 구성으로 변환하는 기능을 지원합니다. 을(를) 참조하십시오 [Git 리소스: AEM Cloud Service Dispatcher 변환기](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) 을 참조하십시오.
+* AEM Dispatcher Converter 는 온-프레미스 및 Adobe Managed Services Dispatcher 구성을 AEM as a Cloud Service 호환 Dispatcher 구성으로 변환하는 기능을 지원합니다. 다음을 참조하십시오 [Git 리소스: AEM Cloud Service Dispatcher 변환기](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) 을 참조하십시오.
 
 * AEM Dispatcher 변환기가 다시 작성됨 ` node.js ` AIO-CLI 플러그인과 통합됩니다.

@@ -2,9 +2,9 @@
 title: 파트너용 Experience Manager as a Cloud Service 마이그레이션 안내서
 description: 파트너용 Experience Manager as a Cloud Service 마이그레이션 안내서
 exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2122'
+source-wordcount: '2120'
 ht-degree: 21%
 
 ---
@@ -127,7 +127,7 @@ Cloud Service으로 전환 여정을 시작하기 전에 Experience Manager as a
 <table>
 <tr>
 <td>프로젝트 검색 및 평가</td>
-<td><ul><li>을(를) 참조하십시오 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html?lang=en">Experience Manager as a Cloud Service의 주요 변경 사항</a> Adobe Experience Manager as a Cloud Service과 Experience Manager 6.x 간의 중요한 차이점을 이해합니다.</li><li>을(를) 참조하십시오 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features.html?lang=en">더 이상 사용되지 않는 기능</a> 더 이상 사용되지 않는 것으로 표시된 기능에 대해 자세히 알아보십시오.</li><li>[Cloud Service 마이그레이션만 해당] Cloud Service 준비 평가 : <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en">Best Practices Analyzer(BPA)</a> 소스 환경에서 </li><li>Experience Manager CS에서 주목할 만한 변경 사항 및 사용되지 않는 기능에 대한 평가를 완료합니다.</li></ul></td>
+<td><ul><li>다음을 참조하십시오 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html?lang=en">Experience Manager as a Cloud Service의 주요 변경 사항</a> Adobe Experience Manager as a Cloud Service과 Experience Manager 6.x 간의 중요한 차이점을 이해합니다.</li><li>다음을 참조하십시오 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features.html?lang=en">더 이상 사용되지 않는 기능</a> 더 이상 사용되지 않는 것으로 표시된 기능에 대해 자세히 알아보십시오.</li><li>[Cloud Service 마이그레이션만 해당] Cloud Service 준비 평가 : <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en">Best Practices Analyzer(BPA)</a> 소스 환경에서 </li><li>Experience Manager CS에서 주목할 만한 변경 사항 및 사용되지 않는 기능에 대한 평가를 완료합니다.</li></ul></td>
 </tr>
 <tr>
 <td>리뷰</td>

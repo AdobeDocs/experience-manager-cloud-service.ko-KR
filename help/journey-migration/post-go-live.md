@@ -2,10 +2,10 @@
 title: Go-Live 후
 description: 문제 모니터링 및 성능 향상 방법 알아보기
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 39%
+source-wordcount: '482'
+ht-degree: 28%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 39%
 
 AEM as a Cloud Service 개발자 환경 디버깅은 개발자 콘솔에서 개발, 스테이지 및 프로덕션 환경에 사용할 수 있습니다.
 
-개발 도구에 대한 자세한 내용은 [AEM as a Cloud Service 구현](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools)을 참조하십시오.
+다음을 참조하십시오 [AEM용 구현 as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) 개발 도구에 대해 자세히 알아보십시오.
 
 ## CRXDE Lite {#crxde-lite}
 
@@ -45,13 +45,13 @@ AEM as a Cloud Service 개발자 환경 디버깅은 개발자 콘솔에서 개�
 >[!IMPORTANT]
 >다음과 같이 변경할 수 없는 저장소에 쓰기 `/libs` 및 `/apps` 런타임 시 오류가 발생합니다. 또한 스테이징 및 프로덕션 환경을 위한 개발자 도구에 액세스할 수 없습니다.
 
-CRXDE Lite를 사용하여 AEM 애플리케이션을 개발하는 방법에 대해 알아보려면 [CRXDE Lite를 사용한 개발](/help/implementing/developing/tools/crxde.md)을 참조하십시오.
+다음을 참조하십시오 [CRXDE Lite을 사용한 개발](/help/implementing/developing/tools/crxde.md) CRXDE Lite을 사용하여 AEM 애플리케이션을 개발하는 방법에 대해 알아봅니다.
 
 ## 로그 관리 {#managing-logs}
 
 사용자는 선택한 환경에 사용할 수 있는 로그 파일 목록에 액세스할 수 있습니다.
 
-UI를 통해 또는 Cloud Manager를 통해 API에서 로그에 액세스하고 관리하는 방법에 대해 알아보려면 [로그 액세스 및 관리](/help/implementing/cloud-manager/manage-logs.md)를 참조하십시오.
+다음을 참조하십시오 [로그 액세스 및 관리](/help/implementing/cloud-manager/manage-logs.md) ui를 통해 또는 Cloud Manager를 통해 API에서 로그에 액세스하고 관리하는 방법을 알아봅니다.
 
 ## 지원 문의 {#contacting-support}
 

@@ -2,7 +2,7 @@
 title: 구현 단계
 description: 코드 및 콘텐츠를 클라우드로 마이그레이션할 준비가 되었는지 확인
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2337'
 ht-degree: 9%
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 ## 지금까지의 스토리 {#story-so-far}
 
-여정의 이전 부분에서 다음을 수행했습니다. [AEM as a Cloud Service의 변경 사항에 익숙해지기](/help/journey-migration/getting-started.md)를 사용하여 배포를 클라우드로 이동할 준비가 되었는지 확인할 수 있습니다. [준비 단계](/help/journey-migration/readiness.md).
+여정의 이전 부분에서는 [AEM as a Cloud Service의 변경 사항에 익숙해지기](/help/journey-migration/getting-started.md)및 를 사용하여 배포를 클라우드로 이동할 준비가 되었는지 확인했습니다. [준비 단계](/help/journey-migration/readiness.md).
 
 이 문서는 코드 및 콘텐츠를 클라우드로 이동할 준비가 되었는지 확인하기 위해 Adobe 제공 도구를 사용하는 방법에 대한 조언을 계속 제공합니다.
 
@@ -100,7 +100,7 @@ AEM Maven 프로젝트가 클라우드와 호환되려면 특정 변경 사항�
 
 ### 클라우드 마이그레이션 도구 {#cloud-migration-tools}
 
-Adobe은 일부 코드 리팩터링 작업을 가속화하는 데 도움이 되는 몇 가지 도구를 제공합니다. 이러한 툴과 이러한 툴이 해결할 수 있는 문제를 이해하면 마이그레이션의 복잡성과 시간을 줄일 수 있습니다.
+Adobe은 일부 코드 리팩터링 작업을 가속화하는 데 도움이 되는 몇 가지 도구를 제공합니다. 이러한 툴과 툴이 해결하는 문제를 이해하면 마이그레이션 복잡성과 시간이 줄어듭니다.
 
 * [자산 워크플로우 마이그레이션](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md): 자산 처리 워크플로우를 자동으로 마이그레이션하는 데 사용되는 도구입니다
 * [Dispatcher 변환기](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md): 기존 Dispatcher 구성을 AEM as a Cloud Service으로 사용할 수 있는 형식으로 변환하는 도구입니다.
@@ -175,7 +175,7 @@ One more important datapoint is the amount of time it takes to complete the [use
 
 다음 표는 일반적인 마이그레이션 계획을 보여 줍니다.
 
-| 마이그레이션 반복 | 시작 날짜 | 예상 종료 일자 | 종속성 | 예상 기간(일) | 추가 세부 정보/작업 항목 |
+| 마이그레이션 반복 | 시작 일자 | 예상 종료 일자 | 종속성 | 예상 기간(일) | 추가 세부 정보/작업 항목 |
 |---|---|---|---|---|---|
 | PRDCLONE-AUTHOR-INITIAL-USRMAP-CSSTAGE-AUTHOR |   |   |   |   |   |
 | PRDCLONE-PUBLISH-TOPUP-CSSTAGE-AUTHOR |   |   |   |   |   |
@@ -256,4 +256,4 @@ One more important datapoint is the amount of time it takes to complete the [use
 
 ## 다음 단계 {#what-is-next}
 
-AEM 설치를 클라우드로 이전할 준비가 되었는지 평가하는 방법을 완전히 이해했다면 이를 준비하는 데 필요한 도구를 사용하는 방법에 대해 알아보았으므로 이제 로 넘어갈 차례입니다. [go-live 단계](/help/journey-migration/go-live.md).
+AEM 설치를 클라우드로 이전할 준비가 되었는지 평가하는 방법을 완전히 이해한 후에는 이를 준비하는 데 필요한 도구를 사용하는 방법에 대해 알아보았으므로 이제 로 넘어갈 차례입니다. [go-live 단계](/help/journey-migration/go-live.md).

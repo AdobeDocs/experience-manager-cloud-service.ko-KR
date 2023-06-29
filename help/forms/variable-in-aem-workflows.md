@@ -2,9 +2,9 @@
 title: AEM Workflow 단계에서 변수를 추가하는 방법
 description: 변수를 만들고 변수 값을 설정하고에서 사용하는 방법을 알아봅니다. [!DNL AEM Forms] 워크플로우 단계.
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2060'
 ht-degree: 0%
 
 ---
@@ -278,4 +278,4 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ## 참조 {#references}
 
-에서 변수를 사용하는 방법에 대한 자세한 예 [!DNL AEM Forms] 워크플로우 단계, 참조: [AEM 워크플로우의 변수](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html).
+에서 변수를 사용하는 방법에 대한 자세한 예 [!DNL AEM Forms] 워크플로우 단계, 참조 [AEM 워크플로우의 변수](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html).

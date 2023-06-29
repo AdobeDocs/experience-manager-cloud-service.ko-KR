@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2195'
+source-wordcount: '2192'
 ht-degree: 2%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   > 참조 [JDBC DataSourcePool을 사용한 SQL 연결](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) 를 참조하십시오.
+   > 다음을 참조하십시오 [JDBC DataSourcePool을 사용한 SQL 연결](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) 를 참조하십시오.
 
 1. 누르기 **[!UICONTROL 저장]** 구성을 저장합니다.
 
@@ -170,7 +170,7 @@ RESTful 서비스 Open API 사양 버전 3.0에서 지원되지 않는 일부 �
 * 링크
 * 단일 작업에 대해 서로 다른 MIME 유형에 대해 서로 다른 요청 본문
 
-다음을 의미할 수 있습니다. [OpenAPI 3.0 사양](https://swagger.io/specification/v3/) 을 참조하십시오.
+다음을 참조하십시오 [OpenAPI 3.0 사양](https://swagger.io/specification/v3/) 을 참조하십시오.
 
 ### 성능을 최적화하기 위한 양식 데이터 모델 HTTP 클라이언트 구성 {#fdm-http-client-configuration}
 

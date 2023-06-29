@@ -4,10 +4,10 @@ description: 번역을 위한 콘텐츠를 준비하는 방법에 대해 알아�
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 100%
+source-wordcount: '765'
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->콘텐츠 번역이 처음이라면 AEM의 강력한 번역 도구를 사용한 AEM Sites 콘텐츠 번역을 안내하며 AEM이 없거나 번역 경험이 없는 사용자에게 최적화된 [사이트 번역 여정](/help/journey-sites/translation/overview.md)을 참조하십시오.
+>콘텐츠 번역이 처음이라면 다음을 참조하십시오. [사이트 번역 여정,](/help/journey-sites/translation/overview.md) 는 AEM 강력한 번역 도구를 사용한 AEM Sites 콘텐츠 번역을 안내하며 AEM 또는 번역 경험이 없는 사용자에게 이상적입니다.
 
 [WKND 튜토리얼 사이트](/help/implementing/developing/introduction/develop-wknd-tutorial.md)는 몇 가지 언어 분기를 포함하며 다음과 같은 구조를 사용합니다.
 
@@ -92,7 +92,7 @@ AEM은 생성된 언어 루트 목록을 표시하는 **참조** 레일을 제�
 
 ![언어 루트](../assets/language-roots.png)
 
-다음 절차를 통해 [레일 선택기](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)를 사용하여 페이지의 언어 사본을 볼 수 있습니다.
+다음 절차를 사용하여 페이지의 언어 사본을 봅니다. [레일 선택기](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
 1. 사이트 콘솔에서 사이트의 페이지를 선택한 다음 **참조**&#x200B;를 클릭하거나 탭합니다.
 

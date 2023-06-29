@@ -4,10 +4,10 @@ description: AEM 사이트 테마를 사용하여 사이트의 스타일 및 디
 feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '353'
-ht-degree: 94%
+ht-degree: 86%
 
 ---
 
@@ -23,7 +23,7 @@ AEM 사이트 템플릿을 통해 생성되는 사이트를 사용하면 테마�
 
 >[!NOTE]
 >
->AEM 사이트 테마를 [AEM 사이트 템플릿과 혼동하면 안 됩니다.](site-templates.md) AEM 사이트 테마는 AEM 사이트에 대한 스타일 정보만 포함합니다. AEM 사이트 템플릿은 사이트 구조 및 초기 콘텐츠를 정의하며 다음을 허용하는 AEM 사이트 테마를 포함합니다. [빠른 사이트 생성.](create-site.md)
+>AEM 사이트 테마를 [AEM 사이트 템플릿과 혼동하면 안 됩니다](site-templates.md). AEM 사이트 테마는 AEM 사이트에 대한 스타일 정보만 포함합니다. AEM 사이트 템플릿은 사이트 구조 및 초기 콘텐츠를 정의하며 다음을 허용하는 AEM 사이트 테마를 포함합니다. [빠른 사이트 생성](create-site.md).
 
 ## 사이트 테마 사용 {#using-themes}
 
@@ -34,7 +34,7 @@ AEM 사이트 템플릿을 통해 생성되는 사이트를 사용하면 테마�
 
 >[!TIP]
 >
->템플릿으로 사이트를 만들고 테마를 맞춤화하는 프로세스에 대한 전체적인 설명은 [빠른 사이트 생성 여정](/help/journey-sites/quick-site/overview.md)에서 확인할 수 있습니다.
+>템플릿으로 사이트를 만들고 테마를 맞춤화하는 프로세스에 대한 전체적인 설명은 [빠른 사이트 생성 여정](/help/journey-sites/quick-site/overview.md).
 
 ## 사이트 테마 구조 {#structure}
 
@@ -53,4 +53,4 @@ Adobe는 나만의 테마를 만들 때 기준으로 사용할 수 있는 모범
 
 Adobe는 새 사이트 테마를 만들기 위한 스크립트 세트로 AEM 사이트 테마 빌더를 제공합니다.
 
-[GitHub의 사용 설명서와 함께 AEM 사이트 테마 빌더를 사용할 수 있습니다.](https://github.com/adobe/aem-site-theme-builder) 테마를 맞춤화하려면 프론트엔드 개발 경험이 필요합니다.
+[GitHub의 사용 설명서와 함께 AEM 사이트 테마 빌더를 사용할 수 있습니다](https://github.com/adobe/aem-site-theme-builder). 테마를 맞춤화하려면 프론트엔드 개발 경험이 필요합니다.

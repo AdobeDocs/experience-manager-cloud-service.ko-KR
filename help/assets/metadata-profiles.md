@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 948b671965cf438e2c93dea0371331cb3a02b6ca
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1408'
+source-wordcount: '1409'
 ht-degree: 20%
 
 ---
@@ -34,13 +34,13 @@ Experience Manager Assets의 프로필 사용과 관련된 중요한 개념은 �
    * **[!UICONTROL 필드 레이블]** - 메타데이터 속성의 표시 이름입니다. 사용자 참조용으로만 사용됩니다.
    * **[!UICONTROL 속성에 매핑]** - 이 속성의 값은 저장소에 저장된 에셋 노드에 대한 상대 경로/이름을 제공합니다. 값은 항상 다음으로 시작해야 합니다. `./` 경로가 자산의 노드 아래에 있음을 나타내기 때문입니다.
 
-      에 지정하는 값 **[!UICONTROL 속성에 매핑]** 는 에셋의 메타데이터 노드 아래에 속성으로 저장됩니다. For example, if you specify . `/jcr:content/metadata/dc:desc` 을(를) 의 이름으로 **[!UICONTROL 속성에 매핑]**, [!DNL Adobe Experience Manager Assets] 값 저장 `dc:desc` (자산의 메타데이터 노드)
+     에 지정하는 값 **[!UICONTROL 속성에 매핑]** 는 에셋의 메타데이터 노드 아래에 속성으로 저장됩니다. For example, if you specify . `/jcr:content/metadata/dc:desc` 을(를) 의 이름으로 **[!UICONTROL 속성에 매핑]**, [!DNL Adobe Experience Manager Assets] 값 저장 `dc:desc` (자산의 메타데이터 노드)
 
    * **[!UICONTROL 기본값]** - 이 속성을 사용하여 메타데이터 구성 요소에 대한 기본값을 추가합니다. 예를 들어 &quot;내 설명&quot;을 지정하면 이 값이 속성에 지정됩니다 `dc:desc` (자산의 메타데이터 노드)
 
-      >[!NOTE]
-      >
-      >새 메타데이터 속성(에 존재하지 않음)에 기본값 추가 `/jcr:content/metadata` node)가 자산의 Properties 페이지에 기본적으로 속성과 해당 값을 표시하지 않습니다. 에서 새 속성을 보려면 [!UICONTROL 속성] 페이지에서 해당 스키마 양식을 수정합니다.
+     >[!NOTE]
+     >
+     >새 메타데이터 속성(에 존재하지 않음)에 기본값 추가 `/jcr:content/metadata` node)가 자산의 Properties 페이지에 기본적으로 속성과 해당 값을 표시하지 않습니다. 에서 새 속성을 보려면 [!UICONTROL 속성] 페이지에서 해당 스키마 양식을 수정합니다.
 
 1. (Optional) Add more components to the Edit Form from the **[!UICONTROL Build Form]** tab, and configure their properties in the **[!UICONTROL Settings]** tab. The following properties are available from the **[!UICONTROL Build Form]** tab:
 
@@ -53,7 +53,7 @@ Experience Manager Assets의 프로필 사용과 관련된 중요한 개념은 �
 | 날짜 | 필드 레이블, 속성에 매핑, 기본값 |
 | 표준 태그 | 필드 레이블, 속성에 매핑, 기본값, 설명 |
 
-1. 클릭 **[!UICONTROL 완료]**. 메타데이터 프로필이 의 프로필 목록에 추가됩니다 **[!UICONTROL 메타데이터 프로필]** 페이지를 가리키도록 업데이트하는 중입니다.
+1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다. 메타데이터 프로필이 의 프로필 목록에 추가됩니다 **[!UICONTROL 메타데이터 프로필]** 페이지를 가리키도록 업데이트하는 중입니다.
 
 ## 메타데이터 프로필 복사 {#copying-a-metadata-profile}
 
@@ -132,14 +132,14 @@ You can remove a metadata profile from a folder from within the **Tools** menu o
 
 **추가 참조**
 
-* [에셋 번역](translate-assets.md)
+* [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [에셋이 지원되는 파일 형식](file-format-support.md)
-* [에셋 검색](search-assets.md)
-* [연결된 에셋](use-assets-across-connected-assets-instances.md)
-* [에셋 보고서](asset-reports.md)
+* [자산이 지원되는 파일 형식](file-format-support.md)
+* [자산 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [자산 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
-* [에셋 다운로드](download-assets-from-aem.md)
+* [자산 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)

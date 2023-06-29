@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service에 대한 로깅
 description: AEM용 로깅을 as a Cloud Service으로 사용하여 중앙 로깅 서비스의 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2376'
+source-wordcount: '2375'
 ht-degree: 3%
 
 ---
@@ -52,7 +52,7 @@ AEM as a Cloud Service에서는 Java 로그 문에 대한 액세스를 제공합
 디버그</td>
 <td>
 애플리케이션에서 발생하는 작업을 설명합니다.<br>
-DEBUG 로깅이 활성화되면 어떤 활동이 발생하는지 명확하게 보여 주는 문과 처리에 영향을 주는 주요 매개 변수가 기록됩니다.</td>
+DEBUG 로깅이 활성화되면 어떤 활동이 발생하는지 명확하게 파악할 수 있는 문과 처리에 영향을 주는 주요 매개 변수가 기록됩니다.</td>
 <td>
 <ul>
 <li> 로컬 개발</li>
@@ -61,7 +61,7 @@ DEBUG 로깅이 활성화되면 어떤 활동이 발생하는지 명확하게 �
 </tr>
 <tr>
 <td>
-스테이징</td>
+스테이지</td>
 <td>
 경고</td>
 <td>
@@ -71,7 +71,7 @@ WARN 로깅이 활성화되면 하위 최적에 가까워지는 조건을 나타
 <ul>
 <li> 로컬 개발</li>
 <li>개발</li>
-<li>스테이징</li>
+<li>스테이지</li>
 </ul></td>
 </tr>
 <tr>
@@ -86,7 +86,7 @@ ERROR 로깅이 활성화되면 실패를 나타내는 문만 기록됩니다. �
 <ul>
 <li> 로컬 개발</li>
 <li>개발</li>
-<li>스테이징</li>
+<li>스테이지</li>
 <li>프로덕션</li>
 </ul></td>
 </tr>
@@ -163,7 +163,7 @@ Sling LogManager 팩토리에 대한 OSGi 구성을 통해 사용자 지정 Java
 }
 ```
 
-### 스테이징 {#stage}
+### 스테이지 {#stage}
 
 /apps/my-app/config.stage/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json
 

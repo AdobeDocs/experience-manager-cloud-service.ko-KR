@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1406'
-ht-degree: 94%
+source-wordcount: '1400'
+ht-degree: 93%
 
 ---
 
@@ -47,7 +47,7 @@ AEM 콘텐츠 번역을 시작하기 전에 알아 두어야 할 몇 가지 요�
 
 >[!TIP]
 >
->AEM과 같은 대규모 CMS 사용에 익숙하지 않은 경우 계속 진행하기 전에 [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md) 설명서를 검토하는 것이 좋습니다. 기본 처리 설명서는 이 여정의 일부가 아니므로, 검토를 완료하면 이 페이지로 돌아오십시오.
+>AEM과 같은 대규모 CMS 사용에 익숙하지 않은 경우 계속 진행하기 전에 [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md) 설명서를 검토하는 것이 좋습니다. 기본 처리 설명서는 여정의 일부가 아닙니다. 따라서 완료되면 이 페이지로 돌아갑니다.
 
 ### 도구 {#tools}
 
@@ -57,7 +57,7 @@ AEM 콘텐츠 번역을 시작하기 전에 알아 두어야 할 몇 가지 요�
 
 ## AEM이 콘텐츠를 저장하는 방법 {#content-in-aem}
 
-번역 전문가의 경우 AEM의 콘텐츠 관리 방법을 깊이 있게 이해하지 않아도 됩니다. 그러나 기본 개념과 용어를 숙지하면 나중에 AEM 번역 도구를 사용할 때 도움이 됩니다. 가장 중요한 것은 자신의 콘텐츠와 콘텐츠를 효과적으로 번역하기 위해 콘텐츠를 구성하는 방식을 이해해야 한다는 것입니다.
+번역 전문가의 경우 AEM의 콘텐츠 관리 방법을 깊이 있게 이해하지 않아도 됩니다. 그러나, 기본 개념과 용어를 숙지하게 되면 나중에 AEM의 번역 도구를 사용할 때 도움이 됩니다. 가장 중요한 것은 콘텐츠를 효과적으로 번역하기 위해서는 자신의 콘텐츠와 콘텐츠 구성 방식을 이해해야 한다는 것입니다.
 
 ### 사이트 콘솔 {#sites-console}
 
@@ -97,7 +97,7 @@ AEM 콘텐츠 번역을 시작하기 전에 알아 두어야 할 몇 가지 요�
 
 페이지를 편집하려면 다음 작업을 수행하십시오.
 
-1. 사이트 콘솔을 사용하여 페이지를 찾아 선택합니다. 개별 페이지의 확인란을 탭하거나 클릭하여 선택해야 합니다.
+1. 사이트 콘솔을 사용하여 페이지를 찾아 선택합니다. 개별 페이지를 선택하려면 각 페이지의 확인란을 탭하거나 클릭해야 합니다.
 
    ![편집할 페이지 선택](assets/sites-editor-select-page.png)
 
@@ -210,4 +210,4 @@ AEM Sites 번역 여정의 한 부분을 완료했으므로,
 * [AEM 기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md) - 콘텐츠 찾기와 같은 필수 작업을 편안하게 탐색하고 수행할 수 있도록 AEM UI의 기본 사항에 대해 알아봅니다.
 * [번역할 콘텐츠 식별](/help/sites-cloud/administering/translation/rules.md) - 번역 규칙이 번역이 필요한 콘텐츠를 식별하는 방법에 대해 알아봅니다.
 * [번역 통합 프레임워크 구성](/help/sites-cloud/administering/translation/integration-framework.md) - 번역 통합 프레임워크를 서드파티 번역 서비스와 통합하도록 구성하는 방법에 대해 알아봅니다.
-* [번역 프로젝트 관리](/help/sites-cloud/administering/translation/managing-projects.md) - AEM에서 기계 번역 및 사람 번역을 만들고 관리하는 방법에 대해 알아봅니다.
+* [번역 프로젝트 관리](/help/sites-cloud/administering/translation/managing-projects.md) - AEM에서 기계 번역 및 인간 번역을 만들고 관리하는 방법에 대해 알아봅니다.

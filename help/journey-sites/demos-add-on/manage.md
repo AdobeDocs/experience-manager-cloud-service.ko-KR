@@ -2,10 +2,10 @@
 title: 데모 사이트 관리
 description: 내 데모 사이트를 관리하는 데 도움이 되는 도구 및 이를 제거하는 방법에 대해 알아봅니다.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 100%
+source-wordcount: '946'
+ht-degree: 98%
 
 ---
 
@@ -105,7 +105,7 @@ AEM 기능 세트를 테스트한 다음에는 데모 사이트 또는 이를 �
 
 * [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Cloud Manager의 기능에 대해 자세히 알아보려면 바로 심화 기술 문서를 참조할 수 있습니다.
 * [사이트 생성](/help/sites-cloud/administering/site-creation/create-site.md) - AEM을 통해 사이트 템플릿을 사용하여 사이트를 만들고 이러한 사이트의 스타일 및 구조를 정의하는 방법에 대해 알아봅니다.
-* [AEM의 페이지 이름 지정 규칙입니다.](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices) - 이 AEM 페이지 구성 규칙에 대해 이해하려면 이 페이지를 참조하십시오.
+* [AEM의 페이지 이름 지정 규칙입니다](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices). - AEM 페이지 구성 규칙에 대해 이해하려면 이 페이지 를 참조하십시오.
 * [AEM 기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md) - AEM을 처음 접하여 탐색 및 콘솔 구성과 같은 기본 개념에 대해 이해하고자 하는 경우 이 문서를 살펴보십시오.
 * [AEM as a Cloud Service 기술 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - AEM에 대해 확실히 이해하고 있다면 바로 심화 기술 문서를 참조할 수 있습니다.
 * [사이트 템플릿](/help/sites-cloud/administering/site-creation/site-templates.md) - 사이트 템플릿 구조 및 이를 사용하여 사이트를 만드는 방법에 대해 자세히 알아보려면 이 문서를 참조하십시오.

@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.10.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.10.0 릴리스 정보입니다.'
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 92%
+source-wordcount: '838'
+ht-degree: 85%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 92%
 
 ### [!DNL Sites]의 새로운 기능 {#sites-features}
 
-* [경험 조각의 개인화 탭](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment)을 통해 경험 조각 편집기에서 세분화 사양 기능을 사용할 수 있으며, 여러 세그먼트에 대해 머리글 및 바닥글 변형을 만들 수 있는 중첩된 경험 조각을 자유롭게 만들 수 있습니다. 이 기능이 출시되기 전에는 AEM에서 제공하는 개인화를 사이트 페이지에만 사용할 수 있고 경험 조각에는 사용할 수 없습니다.
+* 다음 [경험 조각용 개인화 탭](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) 경험 조각 편집기에서 세분화 사양 기능을 사용할 수 있으며, 여러 세그먼트에 대해 머리글 및 바닥글 변형을 만들 수 있는 중첩된 경험 조각을 자유롭게 만들 수 있습니다. 이 기능이 출시되기 전에는 AEM에서 제공하는 개인화를 사이트 페이지에만 사용할 수 있고 경험 조각에는 사용할 수 없습니다.
 
 * 이제 사용자는 [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)에서 번역된 콘텐츠 조각을 효율적으로 관리할 수 있습니다. 클릭 한 번으로 언어 사본을 모두 조회할 수도 있습니다. 사용자는 관심 있는 로케일로 테이블 보기를 필터링할 수도 있습니다.
 
@@ -85,11 +85,11 @@ ht-degree: 92%
 
 ### 새로운 기능 {#what-is-new-foundation}
 
-* 이제 AEM as a Cloud Service(작성자 서비스)가 통합 셸과 통합되어 사용자 경험을 개선하고 다른 모든 Experience Cloud 애플리케이션과 통합합니다. 자세한 내용은 [통합 셸의 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)를 참조하십시오.
+* 이제 AEM as a Cloud Service(작성자 서비스)가 통합 셸과 통합되어 사용자 경험을 개선하고 다른 모든 Experience Cloud 애플리케이션과 통합합니다. AEM as a 를 참조하십시오 [통합 쉘의 Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 을 참조하십시오.
 
 * 앞서 릴리스 정보에서 언급한 바와 같이, 이제 10MB 이상의 콘텐츠 패키지(속성이 있는 노드, 바이너리를 포함하지 않음)를 배포하기 위해 복제 에이전트 관리 화면 또는 복제 API를 사용하는 방법은 더 이상 사용되지 않으며 적용됩니다. 다음을 참조하십시오 [게시 관리](/help/operations/replication.md#manage-publication) 또는 [콘텐츠 트리 워크플로 게시](/help/operations/replication.md#publish-content-tree-workflow) 이러한 대용량 콘텐츠 패키지를 복제하는 데 대한 권장 접근 방식.
 
-* 이제 Dispatcher 구성은 일반적인 마케팅 캠페인 쿼리 매개변수를 나열하는 파일을 참조합니다. 고객은 원하는 경우 자신과 관련된 매개변수의 주석을 해제할 수 있으므로 더 나은 캐싱이 가능합니다. 자세한 내용은 [마케팅 캠페인 매개변수](/help/implementing/dispatcher/caching.md#marketing-parameters)를 참조하십시오.
+* 이제 Dispatcher 구성은 일반적인 마케팅 캠페인 쿼리 매개변수를 나열하는 파일을 참조합니다. 고객은 원하는 경우 자신과 관련된 매개변수의 주석을 해제할 수 있으므로 더 나은 캐싱이 가능합니다. 다음을 참조하십시오 [마케팅 캠페인 매개변수](/help/implementing/dispatcher/caching.md#marketing-parameters) 을 참조하십시오.
 
 ## Cloud Manager {#cloud-manager}
 

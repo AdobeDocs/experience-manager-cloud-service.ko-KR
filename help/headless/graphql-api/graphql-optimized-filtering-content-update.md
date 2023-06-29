@@ -2,10 +2,10 @@
 title: 최적화된 GraphQL 필터링을 위해 콘텐츠 조각 업데이트
 description: Adobe Experience Manager as a Cloud Service에서 Headless 콘텐츠 게재를 위한 GraphQL 필터링 최적화 목적으로 콘텐츠 조각을 업데이트하는 방법을 알아봅니다.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 97%
+source-wordcount: '908'
+ht-degree: 93%
 
 ---
 
@@ -79,7 +79,7 @@ GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트�
       <td>모두 </td>
       <td> </td>
       <td>변수 </td>
-      <td>마이그레이션 후 콘텐츠 조각 수를 저장하기 위한 일괄 처리 크기입니다.<br>이는 한 배치에 몇 개의 CF가 저장소에 저장되는지와 관련이 있으며 저장소에 대한 쓰기 수를 최적화하는 데 사용할 수 있습니다. </td>
+      <td>마이그레이션 후 콘텐츠 조각 수를 저장하기 위한 일괄 처리 크기입니다.<br>얼마나 많은 CF가 한 일괄 처리에서 저장소에 저장되는지와 관련이 있으며 저장소에 대한 쓰기 수를 최적화하는 데 사용할 수 있습니다. </td>
      </tr>
      <tr>
       <td>4</td>
@@ -99,7 +99,7 @@ GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트�
       <td>모두 </td>
       <td> </td>
       <td>변수 </td>
-      <td>다음 제한까지 남은 콘텐츠 조각을 처리하는 간격(초)<br>이 간격은 또한 작업을 시작하기 전까지의 대기 시간, 그리고 각 후속 CF_MIGRATION_LIMIT CF 개수의 처리 간 지연 시간으로 간주됩니다.<br>(*)</td>
+      <td>다음 제한까지 남은 콘텐츠 조각을 처리하는 간격(초)<br>이 간격은 작업을 시작하기 전 대기 시간 및 각 후속 CF_MIGRATION_LIMIT 수의 처리 사이의 지연으로도 간주됩니다.<br>(*)</td>
      </tr>
     </tbody>
    </table>
@@ -146,7 +146,7 @@ GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트�
         23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
         ```
 
-   Splunk를 사용하여 환경 로그에 대한 액세스를 활성화한 고객은 아래 예제 쿼리를 사용하여 업그레이드 프로세스를 모니터링할 수 있습니다. Splunk 로깅 활성화에 대한 자세한 내용은 [프로덕션 및 스테이지 디버깅](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) 페이지를 참조하십시오.
+   Splunk를 사용하여 환경 로그에 대한 액세스를 활성화한 고객은 아래 예제 쿼리를 사용하여 업그레이드 프로세스를 모니터링할 수 있습니다. Splunk 로깅 활성화에 대한 자세한 내용은 [프로덕션 및 스테이지 디버깅](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) 페이지를 가리키도록 업데이트하는 중입니다.
 
    ```splunk
    index=<indexName> sourcetype=aemerror aem_envId=<environmentId> msg="*com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished*" 
@@ -242,7 +242,7 @@ GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트�
 
 ## 제한 사항 {#limitations}
 
-다음 제한 사항을 알아 두십시오.
+다음 제한 사항에 유의하십시오.
 
 * GraphQL 필터의 성능 최적화는 모든 콘텐츠 조각을 완전히 업데이트한 후에만 가능합니다(JCR 노드 `/content/dam`에 `cfGlobalVersion` 속성이 있으면 업데이트가 완료된 것).
 

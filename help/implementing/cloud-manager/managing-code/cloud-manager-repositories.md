@@ -2,10 +2,10 @@
 title: Cloud Manager 저장소
 description: Cloud Manager에서 git 저장소를 생성, 확인 및 삭제하는 방법을 알아봅니다.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 96%
+source-wordcount: '575'
+ht-degree: 92%
 
 ---
 
@@ -38,7 +38,7 @@ Cloud Manager에서 git 저장소를 생성, 확인 및 삭제하는 방법을 �
 
 ![저장소 옵션](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-Cloud Manager에서 만들어진 저장소는 파이프라인을 추가하거나 편집할 때도 선택할 수 있습니다. 자세한 내용은 [CI-CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 문서를 참조하십시오.
+Cloud Manager에서 만들어진 저장소는 파이프라인을 추가하거나 편집할 때도 선택할 수 있습니다. 다음을 참조하십시오 [CI-CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 자세히 알아보십시오.
 
 지정된 파이프라인에 대해 단일 주 저장소 또는 분기가 있습니다. [git 하위 모듈 지원](#git-submodule-support)을 통해 빌드 시 많은 보조 분기를 포함할 수 있습니다.
 
@@ -51,7 +51,7 @@ Cloud Manager에서 만들어진 저장소는 파이프라인을 추가하거나
 저장소를 삭제하면 다음 결과가 발생합니다.
 
 * 나중에 새 저장소를 만들 때 삭제된 저장소 이름을 사용할 수 없습니다.
-   * 오류 메시지 `Repository name should be unique within organization.` 에는 가 표시됩니다.
+   * 이 경우 `Repository name should be unique within organization.` 오류 메시지가 표시됩니다.
 * 삭제된 저장소를 Cloud Manager에서 사용하거나 파이프라인에 연결할 수 없습니다.
 
 Cloud Manager에서 저장소를 삭제하려면 다음을 따르십시오.
@@ -76,7 +76,7 @@ $ git submodule update --init
 
 이 기술은 [다중 소스 Git 저장소를 사용하여 작업](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md) 문서에 설명된 솔루션에 대한 잠재적인 대안으로서, git 하위 모듈 사용에 익숙하고 외부 병합 프로세스를 관리하고 싶지 않은 조직에 적합합니다.
 
-예를 들어 각각 `main`이라는 단일 분기를 포함하는 3개의 저장소가 있다고 가정해 보겠습니다. 기본 저장소, 즉 파이프라인에 구성된 저장소에서 `main` 분기에는 다른 두 저장소에 포함된 프로젝트를 선언하는 `pom.xml` 파일이 있습니다.
+예를 들어 각각 `main`이라는 단일 분기를 포함하는 3개의 저장소가 있다고 가정해 보겠습니다. 기본 저장소, 즉 파이프라인에 구성된 저장소에서 `main` 지점에 다음 항목이 있음: `pom.xml` 다른 두 저장소에 포함된 프로젝트를 선언하는 파일입니다.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -117,7 +117,7 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
     branch = main
 ```
 
-git 하위 모듈에 대한 자세한 내용은 [git 참조 설명서](https://git-scm.com/book/ko/v2/Git-Tools-Submodules)에서 확인할 수 있습니다.
+git 하위 모듈에 대한 자세한 내용은 [git 참조 설명서](https://git-scm.com/book/en/v2/Git-Tools-Submodules)에서 확인할 수 있습니다.
 
 ### 제한 사항 및 권장 사항 {#limitations-recommendations}
 

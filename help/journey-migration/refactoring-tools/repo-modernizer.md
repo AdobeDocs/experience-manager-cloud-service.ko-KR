@@ -2,9 +2,9 @@
 title: 저장소 현대화 도구
 description: 저장소 현대화 도구
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '302'
 ht-degree: 6%
 
 ---
@@ -26,7 +26,7 @@ Repository Modernizer는 다음과 같은 배포 구조를 생성하여 호환�
 * `all` 패키지는 하위 패키지가 포함된 컨테이너 패키지입니다 `ui.apps` 및 `ui.content`.
 
 >[!NOTE]
->프로젝트 구조는 다음을 기반으로 합니다 *Archetype 24* 패키지 및 해당 `pom.xml/filter.xml files`. 을(를) 참조하십시오 [Archetype 24](https://github.com/adobe/aem-project-archetype) 을 참조하십시오.
+>프로젝트 구조는 다음을 기반으로 합니다 *Archetype 24* 패키지 및 해당 `pom.xml/filter.xml files`. 다음을 참조하십시오 [Archetype 24](https://github.com/adobe/aem-project-archetype) 을 참조하십시오.
 
 ## Repository Modernizer 사용 {#using-repo-modernizer}
 

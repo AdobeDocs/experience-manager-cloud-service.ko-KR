@@ -2,7 +2,7 @@
 title: KPI 정렬
 description: KPI 정렬
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 43%
@@ -36,7 +36,7 @@ ht-degree: 43%
 
 1. **각 KPI에 대해 측정 가능한 방식을 세웁니다.** KPI를 선택한 후 나머지 프로세스에 대해 안내하는 Adobe의 KPI 방식 템플릿을 다운로드합니다.
 
-1. **각 KPI에 대해 대상자를 정의합니다.** 이번 주의 마지막 단계는 각 KPI에 가장 관심이 있는 관련자 그룹을 식별하는 것입니다. 다음 주에는 각 그룹과 협력하여 KPI를 확인하고, 방식을 개선하고, 보고서 형식 및 시기에 대해 합의하겠습니다.
+1. **각 KPI에 대해 대상자를 정의합니다.** 이번 주의 마지막 단계는 각 KPI에 가장 관심이 있는 관련자 그룹을 식별하는 것입니다. 다음 주에는 각 그룹과 협력하여 KPI를 확인하고, 방법을 세분화하고, 보고서 형식 및 시기에 대해 합의합니다.
 
 >[!TIP]
 >

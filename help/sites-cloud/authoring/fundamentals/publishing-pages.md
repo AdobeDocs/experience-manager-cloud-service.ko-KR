@@ -2,10 +2,10 @@
 title: 페이지 게시
 description: AEM을 사용하여 페이지를 게시 및 게시 취소하는 방법
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 82%
+source-wordcount: '1802'
+ht-degree: 77%
 
 ---
 
@@ -81,7 +81,7 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
 >[!NOTE]
 >
->편집기에서 게시하면 약식 공개가 아닙니다. 즉, 선택한 페이지만 게시되며 하위 페이지는 게시되지 않습니다.
+>편집기에서 게시하면 약식 게시가 됩니다. 즉, 선택한 페이지만 게시되고 하위 페이지는 게시되지 않습니다.
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
 #### 게시 관리 {#manage-publication}
 
-**게시 관리**&#x200B;는 **빠른 게시**&#x200B;보다 더 많은 옵션을 제공하여 하위 페이지 포함, 참조 맞춤화, 적용 가능한 워크플로 시작 등의 작업을 허용함과 동시에 나중에 게시할 수 있는 옵션을 제공합니다.
+**게시 관리** 은(는) 보다 많은 옵션을 제공합니다. **빠른 게시**&#x200B;을(를) 사용하여 하위 페이지, 참조의 사용자 지정, 적용 가능한 워크플로 시작 등의 작업을 허용하고 나중에 게시할 수 있는 옵션을 제공합니다.
 
 게시 관리를 사용하여 페이지를 게시 또는 게시 취소하려면 다음 작업을 수행하십시오.
 
@@ -203,7 +203,7 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
    >[!NOTE]
    >
-   >다음 **워크플로** 단계는 사용자가 보유하거나 보유하지 않을 수 있는 권한에 따라 표시됩니다. 자세한 내용은 게시 권한에 관한 이 페이지의 이전 메모, 워크플로에 대한 액세스 권한 관리 및 [워크플로를 페이지에 적용](/help/sites-cloud/authoring/workflows/applying.md)을 참조하십시오.
+   >다음 **워크플로** 단계는 사용자가 보유하거나 보유하지 않을 수 있는 권한에 따라 표시됩니다. 게시 권한 및 워크플로우에 대한 액세스 관리에 대한 이 페이지의 이전 메모 를 참조하십시오. [페이지에 워크플로우 적용](/help/sites-cloud/authoring/workflows/applying.md) 을 참조하십시오.
 
    참조는 트리거된 워크플로 및 지정된 옵션별로 그룹화되어 다음 작업을 수행할 수 있습니다.
 

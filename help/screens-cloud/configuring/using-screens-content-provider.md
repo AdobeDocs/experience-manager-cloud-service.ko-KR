@@ -2,9 +2,9 @@
 title: Screens 콘텐츠 공급자 사용
 description: 이 페이지에서는 Screens 콘텐츠 공급자를 사용하여 콘텐츠를 만드는 방법에 대해 설명합니다.
 exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
-source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '353'
 ht-degree: 16%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 16%
 
 >[!NOTE]
 >**전제 조건**
->이 섹션을 읽기 전에 다음을 참조하십시오. [Screens Services Provider 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en) Screens Services Provider에서 이 사용자 인터페이스로 이동하는 방법을 알아봅니다.
+>이 섹션을 읽기 전에 다음을 참조하십시오 [Screens Services Provider 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en) Screens Services Provider에서 이 사용자 인터페이스로 이동하는 방법을 알아봅니다.
 
 아래 단계에 따라 Screens Content Provider에 로그인합니다.
 

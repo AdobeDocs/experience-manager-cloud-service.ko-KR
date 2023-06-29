@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3829'
+source-wordcount: '3830'
 ht-degree: 16%
 
 ---
@@ -344,7 +344,7 @@ Experience Manager에 `expired` 사이트 작성자가 사이트 페이지에서
 *  `Image` 구성 요소를 통해 지원되는 편집과 원본에 영향을 주지 않는 간단한 편집은 가져온 자산에서 수행할 수 있습니다. 자산은 읽기 전용입니다.
 * 자산을 다시 가져오는 유일한 방법은 페이지에서 자산을 드래그하는 것입니다. API 지원 또는 업데이트할 에셋을 다시 가져오는 다른 방법은 없습니다.
 * 자산이 DAM에서 서비스 해제된 경우에도 계속 사용할 수 있습니다 [!DNL Sites] 페이지.
-* 자산의 원격 참조 항목을 비동기식으로 가져옵니다. 참조와 총 횟수는 실시간으로 계산되지 않으며 [!DNL Sites] 작성자는 DAM 사용자가 참조를 보는 동안 에셋을 사용합니다. DAM 사용자는 페이지를 새로 고치고 몇 분 후에 다시 시도하여 총 개수를 가져올 수 있습니다.
+* 자산의 원격 참조 항목을 비동기식으로 가져옵니다. 참조와 총 횟수는 실시간으로 계산되지 않으며 [!DNL Sites] 작성자는 DAM 사용자가 참조를 보는 동안 에셋을 사용합니다. DAM 사용자는 페이지를 새로 고치고 몇 분 후에 다시 시도하여 총 수를 가져올 수 있습니다.
 
 ## 문제 해결 {#troubleshoot}
 
@@ -364,13 +364,13 @@ Experience Manager에 `expired` 사이트 작성자가 사이트 페이지에서
 
 **추가 참조**
 
-* [에셋 번역](translate-assets.md)
+* [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [에셋이 지원되는 파일 형식](file-format-support.md)
-* [에셋 검색](search-assets.md)
-* [에셋 보고서](asset-reports.md)
+* [자산이 지원되는 파일 형식](file-format-support.md)
+* [자산 검색](search-assets.md)
+* [자산 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
-* [에셋 다운로드](download-assets-from-aem.md)
+* [자산 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)

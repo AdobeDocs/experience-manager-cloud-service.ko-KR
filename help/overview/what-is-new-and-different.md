@@ -2,10 +2,10 @@
 title: 차이점 및 새로운 기능 - Adobe Experience Manager as a Cloud Service
 description: 차이점 및 새로운 기능 - Adobe Experience Manager(AEM) as a Cloud Service
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1899'
-ht-degree: 97%
+source-wordcount: '1896'
+ht-degree: 96%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->온프레미스 및 Managed Service 버전에 대한 자세한 내용은 [AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=ko-KR)의 설명서 세트를 참조하십시오.
+>온프레미스 및 Managed Service 버전에 대한 자세한 내용은 [AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html)의 설명서 세트를 참조하십시오.
 
 ## 아키텍처 {#architecture}
 
@@ -71,7 +71,7 @@ AEM as a Cloud Service는 이제 지속적인 통합 및 연속 게재(CI/CD)를
 
 >[!NOTE]
 >
->프로덕션 환경 업데이트에 실패하는 경우 Cloud Manager에서 자동으로 스테이징 환경을 롤백합니다. 이 작업은 업데이트가 완료된 후 스테이징 및 프로덕션 환경이 동일한 AEM 버전에 있도록 자동으로 수행됩니다.
+>프로덕션 환경 업데이트에 실패하는 경우 Cloud Manager에서 자동으로 스테이징 환경을 롤백합니다. 이 작업은 업데이트가 완료된 후 스테이지 및 프로덕션 환경이 동일한 AEM 버전에 있도록 자동으로 수행됩니다.
 
 AEM 버전 업데이트에는 다음과 같은 두 가지 유형이 있습니다.
 
@@ -113,11 +113,11 @@ Cloud Manager의 특징은 다음과 같습니다.
 
 Cloud Manager는 다음과 같은 AEM as a Cloud Service의 주요 구성 요소를 생성하고 구성할 수 있는 셀프서비스 포털로 발전해 왔습니다.
 
-* 새 프로그램 생성 및 관리 자세한 내용은 [프로그램 및 프로그램 유형 이해](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)를 참조하십시오.
+* 새 프로그램 생성 및 관리 다음을 참조하십시오 [프로그램 및 프로그램 유형 이해](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) 을 참조하십시오.
 
-* 이들 프로그램에서의 AEM 환경 생성 및 관리 자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md)를 참조하십시오.
+* 이들 프로그램에서의 AEM 환경 생성 및 관리 다음을 참조하십시오 [환경 관리](/help/implementing/cloud-manager/manage-environments.md) 을 참조하십시오.
 
-* 고객 코드 및 관련 구성을 특정 환경에 배포하기 위한 파이프라인 생성 및 관리 자세한 내용은 [CI-CD 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)을 참조하십시오.
+* 고객 코드 및 관련 구성을 특정 환경에 배포하기 위한 파이프라인 생성 및 관리 다음을 참조하십시오 [CI-CD 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 을 참조하십시오.
 
 * 이들 구성 요소에 대한 중요 라이프사이클 이벤트 알림 (예: 제품 업데이트)
 
@@ -150,7 +150,7 @@ Adobe에서 많은 측면을 담당하므로 AEM as a Cloud service를 사용하
 
 >[!TIP]
 >
->온보딩 프로세스에 대한 전체 개요는 [온보딩 여정](/help/journey-onboarding/overview.md)을 참조하십시오.
+>온보딩 프로세스에 대한 전체 개요는 [온보딩 여정](/help/journey-onboarding/overview.md).
 
 ## 개발 {#developing}
 
@@ -192,7 +192,7 @@ AEM as a Cloud Service에서는 OSGi 번들 및 관련 구성이 관리되는 �
 
 ### 로컬 개발 {#aem-as-a-cloud-service-developing-local-development}
 
-신속한 반복 및 개발을 지원하기 위해 AEM as a Cloud Service 컨텍스트 외부에서 AEM 애플리케이션을 개발할 수도 있습니다. 이러한 목적으로 개발자는 다음과 같은 아티팩트를 사용할 수 있습니다.
+신속한 반복 및 개발 지원을 위해 AEM as a Cloud Service 컨텍스트 외부에서 AEM 애플리케이션을 개발할 수도 있습니다. 이러한 목적으로 개발자는 다음과 같은 아티팩트를 사용할 수 있습니다.
 
 * AEM as a Cloud Service 빠른 시작: 동일한 기능 및 API 영역을 갖춘 최신 AEM 코드 베이스의 `.jar` 기반 독립형 설치 관리자
 
@@ -228,7 +228,7 @@ AEM as a Cloud Service를 사용하면 이러한 작업이 자동화되므로 �
 
 AEM as a Cloud Service의 주요 변경 내용은 작성자 계층 액세스에 대한 Adobe ID 사용이 완전히 통합된다는 것입니다.
 
-이를 위해서는 사용자 및 사용자 그룹 관리에 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)을 사용해야 합니다. 사용자 프로필 정보가 Adobe Identity Management System(IMS)에서 중앙 집중식으로 관리되어 모든 클라우드 서비스에 공유되므로 사용자 계정을 사용하면 사용자가 Adobe 제품 및 서비스에 액세스할 수 있습니다. AEM에 액세스 권한을 할당하면 이전과 동일하게 AEM as a Cloud Service에서 사용자 계정을 참조할 수 있습니다(예: AEM 보안 사용자 인터페이스에서 역할 및 권한을 정의하기 위해).
+이를 위해서는 사용자 및 사용자 그룹 관리에 [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html)을 사용해야 합니다. 사용자 프로필 정보가 Adobe Identity Management System(IMS)에서 중앙 집중식으로 관리되어 모든 클라우드 서비스에 공유되므로 사용자 계정을 사용하면 사용자가 Adobe 제품 및 서비스에 액세스할 수 있습니다. AEM에 액세스 권한을 할당하면 이전과 동일하게 AEM as a Cloud Service에서 사용자 계정을 참조할 수 있습니다(예: AEM 보안 사용자 인터페이스에서 역할 및 권한을 정의하기 위해).
 
 이렇게 하면 다음과 같은 이점이 있습니다.
 
@@ -248,15 +248,15 @@ Sites 및 Assets에 대한 사용자 인터페이스(UI) 작성의 기본 원칙
 
 ## AEM Sites {#aem-sites}
 
-Adobe Experience Manager Sites as a Cloud Service를 사용하면 AEM 콘텐츠 관리 시스템의 기능과 AEM 디지털 에셋 관리를 통합하여 고객에게 개인화된 콘텐츠 주도 경험을 제공할 수 있습니다.
+Adobe Experience Manager Sites as a Cloud Service를 사용하면 AEM 콘텐츠 관리 시스템의 기능과 AEM 디지털 자산 관리를 통합하여 고객에게 개인화된 콘텐츠 주도 경험을 제공할 수 있습니다.
 
 자세한 내용은 [Sites 변경 내용](/help/sites-cloud/sites-cloud-changes.md) 개요를 참조하십시오.
 
 ## AEM Assets {#aem-assets}
 
-Adobe Experience Manager Assets as a Cloud Service는 클라우드 기반의 비즈니스용 PaaS 솔루션을 제공하여 빠르고 효과적으로 디지털 에셋 관리 및 Dynamic Media 작업을 수행할 뿐만 아니라, 항상 최신 상태를 유지하고 항상 사용 가능하며 항상 학습하는 시스템 내에서 AI/ML과 같은 차세대 스마트 기능도 사용합니다.
+Adobe Experience Manager Assets as a Cloud Service는 클라우드 기반의 비즈니스용 PaaS 솔루션을 제공하여 빠르고 효과적으로 디지털 자산 관리 및 Dynamic Media 작업을 수행할 뿐만 아니라, 항상 최신 상태를 유지하고 항상 사용 가능하며 항상 학습하는 시스템 내에서 AI/ML과 같은 차세대 스마트 기능도 사용합니다.
 
-Assets 제품에는 클라우드에서의 차세대 에셋 프로세싱과 고성능 에셋 수집 및 검색 기능이 포함됩니다.
+Assets 제품에는 클라우드에서의 차세대 자산 프로세싱과 고성능 자산 수집 및 검색 기능이 포함됩니다.
 
 자세한 내용은 [Assets as a Cloud Service 개요 및 소개](/help/assets/overview.md)를 참조하십시오.
 
@@ -270,10 +270,10 @@ Assets 제품에는 클라우드에서의 차세대 에셋 프로세싱과 고�
 * [AEM Sites as a Cloud Service의 주요 변경 사항](/help/sites-cloud/sites-cloud-changes.md)
 * [AEM Assets as a Cloud Service에 대한 주요 변경 내용](/help/assets/assets-cloud-changes.md)
 * [AEM Assets as a Cloud Service 소개](/help/assets/overview.md)
-* [Adobe Experience Manager as a Cloud Service 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ko-KR)
+* [Adobe Experience Manager as a Cloud Service 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 >[!TIP]
 >
->AEM as a Cloud Service에 대한 개요가 있으면 [온보딩 여정](/help/journey-onboarding/overview.md)을 검토하여 빠르게 온보딩할 수 있습니다.
+>AEM as a Cloud Service에 대한 개요가 있으면 을 검토하여 빠르게 온보딩할 수 있습니다. [온보딩 여정](/help/journey-onboarding/overview.md).
 >
 >이미 온보딩했거나 AEM의 기능을 테스트할 준비가 되었습니까? [AEM 참조 데모 추가 기능](/help/journey-sites/demos-add-on/overview.md)을 설치하여 풍부한 예제를 통해 AEM의 강력한 기능을 살펴보십시오.

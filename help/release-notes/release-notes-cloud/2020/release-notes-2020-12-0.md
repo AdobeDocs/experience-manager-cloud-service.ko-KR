@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2020.12.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2020.12.0 릴리스 정보입니다.'
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 17%
+source-wordcount: '683'
+ht-degree: 18%
 
 ---
 
@@ -36,9 +36,9 @@ ht-degree: 17%
 
 ### 새로운 기능 {#what-is-new-commerce}
 
-* 최신 CIF 코어 구성 요소 버전 v1.6.0이 포함된 CIF Venia 참조 사이트 - 2020.12.01이 릴리스되었습니다. 을(를) 참조하십시오 [CIF Venia 참조 사이트](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01) 을 참조하십시오.
+* 최신 CIF 코어 구성 요소 버전 v1.6.0이 포함된 CIF Venia 참조 사이트 - 2020.12.01이 릴리스되었습니다. 다음을 참조하십시오 [CIF Venia 참조 사이트](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01) 을 참조하십시오.
 
-* CIF 코어 구성 요소 v1.6.0이 릴리스되었습니다. 을(를) 참조하십시오 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0) 을 참조하십시오.
+* CIF 코어 구성 요소 v1.6.0이 릴리스되었습니다. 다음을 참조하십시오 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0) 을 참조하십시오.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -64,15 +64,15 @@ AEM as a Cloud Service 2020.12.0의 Cloud Manager 릴리스 일자는 2020년 12
 
 ### [!DNL Code Refactoring Tools]의 새로운 기능 {#what-is-new-crt}
 
-* 새로운 버전의 AIO-CLI 플러그인이 출시되었습니다. 이 플러그인의 최신 버전에는 AEM Dispatcher Converter 및 Repository Modernizer에 대한 버그 수정이 포함되어 있으며 새 유틸리티인 Index Converter도 지원합니다. 다음을 참조하십시오. [통합 경험](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) 이 플러그인에 대해 자세히 알아보십시오.
+* 새로운 버전의 AIO-CLI 플러그인이 출시되었습니다. 이 플러그인의 최신 버전에는 AEM Dispatcher Converter 및 Repository Modernizer에 대한 버그 수정이 포함되어 있으며 새 유틸리티인 Index Converter도 지원합니다. 다음을 참조하십시오 [통합 경험](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) 이 플러그인에 대해 자세히 알아보십시오.
 
-* AEM Index Converter는 고객의 사용자 지정 OAK 색인 정의를 as a Cloud Service으로 호환되는 OAK 색인 정의로 변환하는 데 사용할 수 있는 유틸리티입니다. 다음을 참조하십시오. [인덱스 변환기](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) 을 참조하십시오.
+* AEM Index Converter는 고객의 사용자 지정 OAK 색인 정의를 as a Cloud Service으로 호환되는 OAK 색인 정의로 변환하는 데 사용할 수 있는 유틸리티입니다. 다음을 참조하십시오 [인덱스 변환기](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) 을 참조하십시오.
 
 * 새 기능이에 추가됨 [저장소 현대화 도구](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 별도의 패키지를 만드는 경우 `ui.config` 모든 OSGi 구성을 포함합니다.
 
 ### 버그 수정 {#crt-bug-fixes}
 
-* AEM Dispatcher Converter 및 Repository Modernizer 도구에서 수행된 몇 가지 버그 수정 사항. 다음을 참조하십시오. [AEM Dispatcher 변환기](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) 및 [저장소 현대화 도구](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+* AEM Dispatcher Converter 및 Repository Modernizer 도구에서 수행된 몇 가지 버그 수정 사항. 다음을 참조하십시오 [AEM Dispatcher 변환기](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) 및 [저장소 현대화 도구](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
 
 ### 릴리스 일자 {#release-date-ctt}
 

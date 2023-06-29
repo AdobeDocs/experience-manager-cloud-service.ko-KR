@@ -2,10 +2,10 @@
 title: 속성 및 유형
 description: Universal Editor에 필요한 데이터 속성 및 유형에 대해 알아봅니다.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 84%
+source-wordcount: '662'
+ht-degree: 94%
 
 ---
 
@@ -27,10 +27,10 @@ Universal Editor에서 앱을 편집할 수 있으려면 앱이 적절하게 구
 |---|---|
 | `itemid` | 리소스에 대한 URN은 [AEM에서 Universal Editor 시작하기 문서의 페이지 계측](getting-started.md#instrument-thepage) 섹션을 참조하십시오. |
 | `itemprop` | 리소스의 속성은 [AEM에서 Universal Editor 시작하기 문서의 페이지 계측](getting-started.md#instrument-thepage) 섹션을 참조하십시오. |
-| `itemtype` | 편집 가능한 항목의 유형 (예: 텍스트, 이미지, 참조 등) |
+| `itemtype` | 편집 가능한 항목의 유형(예: 텍스트, 이미지, 참조) |
 | `data-editor-itemfilter` | 사용할 수 있는 참조 정의 |
-| `data-editor-itemlabel` | 편집기에 표시되는 선택 가능한 항목에 대한 사용자 지정 레이블을 정의합니다. <br>만일의 경우 `itemmodel` 가 설정되면 모델을 통해 레이블을 검색합니다. |
-| `data-editor-itemmodel` | 속성 레일에서 양식 기반 편집에 사용되는 모델을 정의합니다. |
+| `data-editor-itemlabel` | 편집기에 표시되는 선택 가능한 항목에 대한 사용자 정의 레이블 정의 <br>`itemmodel`이 설정된 경우, 레이블은 모델을 통해 검색 |
+| `data-editor-itemmodel` | 속성 레일에서 양식 기반의 편집에 사용될 모델 정의 |
 | `data-editor-behavior` | 계측의 동작 정의 (예: 독립 실행형 텍스트 또는 이미지는 구성 요소를 모방하여 이동하거나 삭제 가능) |
 
 ## 항목 유형 {#item-types}
@@ -38,10 +38,10 @@ Universal Editor에서 앱을 편집할 수 있으려면 앱이 적절하게 구
 | `itemtype` | 설명 | `itemid` | `itemprop` | `data-editor-itemfilter` | `data-editor-itemlabel` | `data-editor-itemmodel` | `data-editor-behvior` |
 |---|---|---|---|---|---|---|---|
 | `text` | 텍스트는 HTML 태그 내에서 편집할 수 있지만 간단한 텍스트 형식으로만 사용할 수 있으며 서식 있는 텍스트 형식(예: 제목 구성 요소에 일반적으로 사용되는 텍스트 형식)은 사용 불가 | 선택 사항 | 필수 | 해당 없음 | 선택 사항 | 해당 없음 | 선택 사항 |
-| `richtext` | 전체 서식 있는 텍스트 기능으로 텍스트 편집 가능. RTE가 오른쪽 패널에 표시됩니다 | 선택 사항 | 필수 | 해당 없음 | 선택 사항 | 해당 없음 | 선택 사항 |
-| `media` | 편집 가능 항목은 에셋(예: 이미지 또는 비디오)임 | 선택 사항 | 필수 | 선택 사항<br>에셋 선택기로 전달되는 이미지 또는 비디오 필터 조건 목록 | 선택 사항 | 해당 없음 | 선택 사항 |
+| `richtext` | 전체 서식 있는 텍스트 기능으로 텍스트 편집 가능. RTE는 오른쪽 편집기 패널에 표시됨 | 선택 사항 | 필수 | 해당 없음 | 선택 사항 | 해당 없음 | 선택 사항 |
+| `media` | 편집 가능 항목은 자산(예: 이미지 또는 비디오)임 | 선택 사항 | 필수 | 선택 사항<br>자산 선택기로 전달되는 이미지 또는 비디오 필터 조건 목록 | 선택 사항 | 해당 없음 | 선택 사항 |
 | `container` | 편집 가능 항목은 단락 시스템이라는 구성 요소의 컨테이너 역할을 합니다. | 상황에 따라 다름 <br>아래 참조 | 상황에 따라 다름 <br>아래 참조 | 선택 사항<br>허용된 구성 요소 목록 | 선택 사항 | 해당 없음 | 해당 없음 |
-| `component` | 편집 가능 항목은 구성 요소입니다. 추가 기능을 추가하지 않음. DOM의 이동/삭제 가능한 부분을 표시하고 속성 레일과 해당 필드를 여는 데 필요합니다. | 필수 | 해당 없음 | 해당 없음 | 선택 사항 | 선택 사항 | 해당 없음 |
+| `component` | 편집 가능 항목은 구성 요소입니다. 추가 기능을 추가하지 않고, DOM의 이동/삭제 가능한 부분을 표시하고 속성 레일과 해당 필드를 여는 데 필요합니다. | 필수 | 해당 없음 | 해당 없음 | 선택 사항 | 선택 사항 | 해당 없음 |
 | `reference` | 편집 가능 항목은 참조(예: 콘텐츠 조각, 경험 조각 또는 제품)임 | 상황에 따라 다름 <br>아래 참조 | 상황에 따라 다름 <br>아래 참조 | 선택 사항<br>콘텐츠 조각, 제품 또는 참조 선택기에 전달되는 경험 조각 필터 조건 목록 | 선택 사항 | 선택 사항 | 해당 없음 |
 
 사용 사례에 따라 다름 `itemprop` 또는 `itemid`가 필요할 수도 있고 필요하지 않을 수도 있습니다. 예:
@@ -59,7 +59,7 @@ Universal Editor에서 앱을 편집할 수 있으려면 앱이 적절하게 구
 
 Universal Editor에 대해 자세히 알아보려면 다음 문서를 참조하십시오.
 
-* [유니버설 편집기 소개](introduction.md) - Universal Editor를 통해 모든 구현에서 콘텐츠의 모든 측면을 편집할 수 있으므로 탁월한 경험을 제공하고 콘텐츠 속도를 높이며 최신 개발자 경험을 제공할 수 있습니다.
+* [Universal Editor 소개](introduction.md) - Universal Editor를 통해 모든 구현에서 콘텐츠의 모든 측면을 편집하여 뛰어난 경험을 제공하고, 콘텐츠 속도를 높이고, 최신 개발자 경험을 제공하는 방법에 대해 알아봅니다.
 * [Universal Editor로 콘텐츠 작성](authoring.md) - 콘텐츠 작성자가 Universal Editor를 사용하여 콘텐츠를 만드는 것이 얼마나 쉽고 직관적인지 알아봅니다.
 * [Universal Editor로 콘텐츠 게시](publishing.md) - Universal Visual Editor에서 콘텐츠를 게시하는 방법과 앱에서 게시된 콘텐츠를 처리하는 방법에 대해 알아봅니다.
 * [AEM에서 Universal Editor 시작하기](getting-started.md) - Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 알아봅니다.

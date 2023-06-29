@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2933'
+source-wordcount: '2931'
 ht-degree: 3%
 
 ---
@@ -67,7 +67,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 * **특별 FPO 렌디션**: 대형 에셋을 배치할 때 [!DNL Experience Manager] 대상 [!DNL Adobe InDesign] 문서, 크리에이티브 전문가는 시간이 지난 후 상당한 시간을 기다립니다. [자산 배치](https://helpx.adobe.com/indesign/using/placing-graphics.html). 한편, 사용자의 사용이 차단됩니다 [!DNL InDesign]. 이는 크리에이티브 흐름을 방해하고 사용자 경험에 부정적인 영향을 미칩니다. Adobe을 사용하면 작은 크기의 렌디션을 임시로 배치할 수 있습니다. [!DNL InDesign] 로 시작하는 문서이며 나중에 전체 해상도 에셋으로 대체할 수 있습니다. [!DNL Experience Manager] 에서는 배치에만 사용되는 렌디션(FPO)을 제공합니다. 이러한 FPO 렌디션은 파일 크기는 작지만 종횡비가 동일합니다.
 
-처리 프로필에는 FPO(배치 전용) 렌디션이 포함될 수 있습니다. 다음을 참조하십시오 [!DNL Adobe Asset Link] [설명서](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html) 처리 프로필에 대해 켜야 하는 경우 이해합니다. 자세한 내용은 [Adobe Asset Link 전체 설명서](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html).
+처리 프로필에는 FPO(배치 전용) 렌디션이 포함될 수 있습니다. 다음을 참조하십시오 [!DNL Adobe Asset Link] [설명서](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html) 처리 프로필에 대해 켜야 하는 경우 이해합니다. 자세한 내용은 [Adobe Asset Link 전체 설명서](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
 
 ### 표준 프로필 만들기 {#create-standard-profile}
 
@@ -268,14 +268,14 @@ OSGi 구성을 배포하는 방법은 다음을 참조하십시오. [배포 대�
 
 **추가 참조**
 
-* [에셋 번역](translate-assets.md)
+* [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [에셋이 지원되는 파일 형식](file-format-support.md)
-* [에셋 검색](search-assets.md)
-* [연결된 에셋](use-assets-across-connected-assets-instances.md)
-* [에셋 보고서](asset-reports.md)
+* [자산이 지원되는 파일 형식](file-format-support.md)
+* [자산 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [자산 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
-* [에셋 다운로드](download-assets-from-aem.md)
+* [자산 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)

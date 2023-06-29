@@ -2,9 +2,9 @@
 title: 코드 리팩터링 도구에 대한 통합 경험
 description: 코드 리팩터링 도구에 대한 통합 경험
 exl-id: daee0e2d-1e2b-41a3-acab-fc59142d0e05
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '263'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ AEM as a Cloud Service과 호환되어야 하는 코드 리팩터링 작업 중 
 
 * **기본 코드 리팩터링 도구 세트**
 
-   코드 리팩터링 도구는 다음과 같은 방법으로 기능을 실행합니다.
+  코드 리팩터링 도구는 다음과 같은 방법으로 기능을 실행합니다.
 
    * 고객 코드의 각 섹션을 스캔하고 모범 사례에 대한 코드 구현을 기반으로 코드를 조작하여 확인 및 배포할 수 있는 출력을 생성합니다.
 
@@ -42,7 +42,7 @@ AEM as a Cloud Service과 호환되어야 하는 코드 리팩터링 작업 중 
 
 ## 사용 가능 {#availability}
 
-을(를) 참조하십시오 [Git 리소스: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 사용 및 GitHub에서 제공되는 이 플러그인 코드에 기여할 수 있는 방법에 대해 알아봅니다.
+다음을 참조하십시오 [Git 리소스: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 사용 및 GitHub에서 제공되는 이 플러그인 코드에 기여할 수 있는 방법에 대해 알아봅니다.
 
 >[!NOTE]
 >현재 플러그인은 AEM Dispatcher Converter 및 Repository Modernizer와 통합됩니다.

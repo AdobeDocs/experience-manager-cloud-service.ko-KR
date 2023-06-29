@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2529'
+source-wordcount: '2527'
 ht-degree: 19%
 
 ---
@@ -191,7 +191,7 @@ Experience Manager Assets as a에서 Brand Portal을 활성화하는 자동화 �
 
 다음 섹션에서는 Experience Manager Assets as a를 수동으로 구성하는 방법을 설명합니다. [!DNL Cloud Service] Adobe Developer 콘솔을 사용하는 Brand Portal 사용.
 
-이전에는 Experience Manager Assets as a [!DNL Cloud Service] Brand Portal 테넌트의 인증을 위해 Adobe IMS(Identity Management Services) 계정 토큰을 조달하는 Adobe Developer 콘솔을 통해 Brand Portal으로 수동으로 구성되었습니다. Experience Manager Assets과 Adobe Developer 콘솔 모두에서 구성이 필요합니다.
+이전에는 Experience Manager Assets as a [!DNL Cloud Service] Brand Portal 테넌트의 인증을 위해 Adobe IMS(Identity Management Services) 계정 토큰을 조달하는 Adobe Developer 콘솔을 통해 Brand Portal으로 수동으로 구성되었습니다. Experience Manager Assets 및 Adobe Developer 콘솔 모두에서 구성이 필요합니다.
 
 1. Experience Manager Assets에서 IMS 계정을 만들고 공개 키(인증서)를 생성합니다.
 1. Adobe 개발자 콘솔에서 Brand Portal 테넌트(조직)에 대한 프로젝트를 만듭니다.
@@ -533,14 +533,14 @@ Go to `/system/console/slingmetrics` for statistics related to the distributed c
 
 **추가 참조**
 
-* [에셋 번역](translate-assets.md)
+* [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [에셋이 지원되는 파일 형식](file-format-support.md)
-* [에셋 검색](search-assets.md)
-* [연결된 에셋](use-assets-across-connected-assets-instances.md)
-* [에셋 보고서](asset-reports.md)
+* [자산이 지원되는 파일 형식](file-format-support.md)
+* [자산 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [자산 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
-* [에셋 다운로드](download-assets-from-aem.md)
+* [자산 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)

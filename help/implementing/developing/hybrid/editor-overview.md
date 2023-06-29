@@ -2,10 +2,10 @@
 title: SPA 편집기 개요
 description: 이 문서에서는 SPA 편집기와 구동하는 방법(AEM 내에서 SPA 편집기와 워크플로의 세부 상호 작용 포함)에 대한 포괄적인 개요를 제공합니다.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1630'
-ht-degree: 95%
+ht-degree: 92%
 
 ---
 
@@ -31,11 +31,11 @@ AEM의 SPA에 대한 자세한 내용은 다음 문서를 참조하십시오.
 
 ## 디자인 {#design}
 
-SPA의 페이지 구성 요소는 JSP 또는 HTL 파일을 통해 하위 구성 요소의 HTML 요소를 제공하지 않습니다. 이 작업은 SPA 프레임워크에 위임됩니다. 하위 구성 요소 또는 모델 표현은 JCR의 JSON 데이터 구조로 가져옵니다. 그런 다음 SPA 구성 요소는 해당 구조에 따라 페이지에 추가됩니다. 이 비헤이비어는 SPA가 아닌 구성 요소에서 페이지 구성 요소의 초기 본문 구성을 구별합니다.
+SPA에 대한 페이지 구성 요소는 JSP 또는 HTL 파일을 통해 하위 구성 요소의 HTML 요소를 제공하지 않습니다. 이 작업은 SPA 프레임워크에 위임됩니다. 하위 구성 요소 또는 모델 표현은 JCR의 JSON 데이터 구조로 가져옵니다. 그런 다음 SPA 구성 요소는 해당 구조에 따라 페이지에 추가됩니다. 이 비헤이비어는 SPA가 아닌 구성 요소에서 페이지 구성 요소의 초기 본문 구성을 구별합니다.
 
 ### 페이지 모델 관리 {#page-model-management}
 
-페이지 모델의 해상도와 관리는 제공되는 `PageModel`라이브러리에 위임됩니다. SPA 편집기에서 초기화하고 작성할 수 있도록 SPA은 페이지 모델 라이브러리를 사용해야 합니다. `aem-react-editable-components` npm을 통해 AEM 페이지 구성 요소에 페이지 모델 라이브러리를 간접적으로 제공합니다. 페이지 모델은 AEM과 SPA 사이의 인터프리터이므로 항상 있어야 합니다. 페이지가 작성되면 추가 라이브러리 `cq.authoring.pagemodel.messaging` 페이지 편집기와의 통신을 활성화하려면 을(를) 추가해야 합니다.
+페이지 모델의 해상도와 관리는 제공되는 `PageModel`라이브러리에 위임됩니다. SPA 편집기에서 SPA를 초기화하고 작성하려면 모델 라이브러리를 사용해야 합니다. `aem-react-editable-components` npm을 통해 AEM 페이지 구성 요소에 페이지 모델 라이브러리를 간접적으로 제공합니다. 페이지 모델은 AEM과 SPA 사이의 인터프리터이므로 항상 있어야 합니다. 페이지가 작성되면 페이지 편집기와 통신할 수 있도록 추가 라이브러리 `cq.authoring.pagemodel.messaging`을 추가해야 합니다.
 
 SPA 페이지 구성 요소가 페이지 핵심 구성 요소로부터 상속받는 경우 `cq.authoring.pagemodel.messaging` 클라이언트 라이브러리 범주를 사용할 수 있는 두 가지 옵션이 있습니다.
 
@@ -63,7 +63,7 @@ SPA 편집기를 SPA와 AEM 간의 중재자로 간주하여 두 사이의 상�
 * HTML 대신 JSON을 사용하여 페이지 편집기와 SPA 간의 통신이 이뤄집니다.
 * 페이지 편집기는 iframe과 메시지 API를 통해 최신 버전의 페이지 모델을 SPA에 제공합니다.
 * 페이지 모델 관리자는 편집할 준비가 되었음을 편집자에게 알리고 페이지 모델을 JSON 구조로 전달합니다.
-* 편집기는 최신 페이지 모델을 제공하는 대신 작성 중인 페이지의 DOM 구조를 변경하거나 액세스 권한조차 없습니다.
+* 편집기는 작성 중인 페이지의 DOM 구조를 변경하거나 액세스하지 않으며 최신 페이지 모델을 제공합니다.
 
 ![SPA 워크플로](assets/workflow.png)
 
@@ -77,7 +77,7 @@ SPA 편집기의 핵심 요소에 중점을 두면 AEM 내 SPA를 편집하는 �
 1. SPA는 별도의 프레임에 로드됩니다.
 1. SPA는 JSON 콘텐츠를 요청하고 클라이언트측 구성 요소를 렌더링합니다.
 1. SPA 편집기는 렌더링된 구성 요소를 감지하고 오버레이를 생성합니다.
-1. 작성자가 오버레이를 클릭하여 구성 요소의 편집 도구 모음을 표시합니다.
+1. 작성자가 오버레이를 클릭하면 구성 요소의 편집 도구 모음이 표시됩니다.
 1. 서버에 대한 POST 요청이 있는 경우 SPA 편집기는 편집을 유지합니다.
 1. SPA 편집기는 SPA 편집기에 업데이트된 JSON을 요청하고 DOM 이벤트와 함께 SPA에 전송합니다.
 1. SPA는 문제가 있는 구성 요소를 다시 렌더링하여 DOM을 업데이트합니다.
@@ -146,7 +146,7 @@ SPA 편집기의 핵심 요소에 중점을 두면 AEM 내 SPA를 편집하는 �
 
 ## 요구 사항 및 제한 사항 {#requirements-limitations}
 
-작성자가 SPA 콘텐츠를 편집할 수 있도록 페이지 편집기를 사용하려면 SPA 애플리케이션을 구현하여 AEM SPA Editor SDK와 상호 작용해야 합니다. 실행 시 알아야 할 최소한의 내용은 [React를 사용하여 AEM에서 SPA 시작하기](getting-started-react.md) 문서를 참조하십시오.
+작성자가 SPA 콘텐츠를 편집할 수 있도록 페이지 편집기를 사용하려면 SPA 애플리케이션을 구현하여 AEM SPA Editor SDK와 상호 작용해야 합니다. 다음을 참조하십시오. [React를 사용하여 AEM에서 SPA 시작하기](getting-started-react.md) 문서화에서 실행하는 데 필요한 최소한의 정보만 제공합니다.
 
 ### 지원되는 프레임워크 {#supported-frameworks}
 
@@ -172,7 +172,7 @@ SPA에 생성된 텍스트 구성 요소의 내부 편집기를 사용하려면 
 1. 텍스트 HTML이 포함된 컨테이너 래퍼 요소의 속성(모든 속성일 수 있음)을 설정합니다. WKND SPA Project의 경우 `<div>` 요소이고 사용된 선택기는 `data-rte-editelement`입니다.
 1. 해당 선택기(예: `data-rte-editelement`)를 가리키는 해당 AEM 텍스트 구성 요소의 `cq:InplaceEditingConfig`에서 구성 `editElementQuery`를 설정합니다. 이를 통해 편집기는 HTML 텍스트를 래핑하는 HTML 요소를 인식할 수 있습니다.
 
-리치 텍스트 편집기의 `editElementQuery` 속성 및 구성에 대한 자세한 내용은 [리치 텍스트 편집기 구성](/help/implementing/developing/extending/rich-text-editor.md)을 참조하십시오.
+에 대한 추가 정보 `editElementQuery` 속성 및 리치 텍스트 편집기의 구성을 참조하십시오. [리치 텍스트 편집기 구성](/help/implementing/developing/extending/rich-text-editor.md).
 
 ### 제한 사항 {#limitations}
 
@@ -186,4 +186,4 @@ AEM SPA Editor SDK는 Adobe에서 완벽하게 지원하며, 지속적으로 강
 * 페이지 비교 및 시간 비틀기
 * 링크 검사기, CDN 재작성 서비스, URL 단축 등 서버측 HTML 재작성 수행 기능
 * 개발자 모드
-* AEM 런치
+* AEM 론치

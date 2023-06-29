@@ -2,10 +2,10 @@
 title: Git 저장소 액세스 정보 가져오기
 description: 프론트엔드 개발자가 Cloud Manager를 사용하여 git 저장소 정보에 액세스하는 방법에 대해 알아봅니다.
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 100%
+source-wordcount: '891'
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 사이트 테마의 맞춤화만 담당하는 프론트엔드 개발자는 AEM의 설정 방법에 대한 지식이 필요하지 않으므로 이 문서의 [목표](#objective) 섹션으로 건너뛸 수 있습니다.
 
-프론트엔드 개발자와 더불어 Cloud Manager 또는 AEM 관리자 역할도 수행하는 사용자는 AEM 빠른 사이트 생성 여정의 이전 문서인 [프론트엔드 개발자에게 액세스 권한 부여](grant-access.md)에서 프론트엔드 개발자가 git 저장소에 액세스할 수 있도록 온보딩하는 방법에 대해 알아보았습니다. 여기에서 알게 된 내용은 다음과 같습니다.
+Cloud Manager 또는 AEM 관리자 및 프론트엔드 개발자의 역할도 수행하는 사용자는 AEM 빠른 사이트 생성 여정의 이전 문서인 [프론트엔드 개발자에게 액세스 권한 부여,](grant-access.md) git 저장소에 액세스할 수 있도록 프론트엔드 개발자를 온보딩하는 방법에 대해 알아보았습니다. 여기에서 알게 된 내용은 다음과 같습니다.
 
 * 프론트엔드 개발자를 사용자로 추가하는 방법
 * 프론트엔드 개발자에게 필요한 역할을 부여하는 방법
@@ -50,9 +50,9 @@ ht-degree: 100%
    * 액세스를 알리는 Cloud Manager의 시작 이메일
    * Cloud Manager 내 프로그램 이름 또는 프로그램 URL
 
-이들 중 누락된 항목이 있는 경우 AEM 관리자 또는 Cloud Manager 관리자에게 문의하십시오.
+이러한 항목이 누락된 경우 AEM 관리자 또는 Cloud Manager 관리자에게 문의하십시오.
 
-프론트엔드 개발자는 프론트엔드 개발 워크플로뿐만 아니라 다음과 같은 일반적인 도구에 대한 광범위한 경험을 가지고 있다고 간주됩니다.
+프론트엔드 개발자는 프론트엔드 개발 워크플로 및 다음과 같은 일반적인 도구에 대한 광범위한 경험을 가지고 있다고 간주됩니다.
 
 * git
 * npm
@@ -72,7 +72,7 @@ Cloud Manager 관리자는 귀하를 Cloud Manager 사용자로 온보딩하게 
 
 ![시작 이메일](assets/welcome-email.png)
 
-이 이메일을 수신하지 못한 경우 Cloud Manager 관리자에게 문의하십시오.
+이 이메일을 받지 못한 경우 Cloud Manager 관리자에게 문의하십시오.
 
 ## Cloud Manager 액세스 {#access-cloud-manager}
 

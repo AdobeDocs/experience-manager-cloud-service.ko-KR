@@ -2,10 +2,10 @@
 title: 구성 및 구성 브라우저
 description: AEM 구성 및 AEM에서 작업 공간 설정을 관리하는 방법을 이해합니다.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1492'
-ht-degree: 4%
+source-wordcount: '1485'
+ht-degree: 6%
 
 ---
 
@@ -29,7 +29,7 @@ AEM 구성은 AEM에서 설정을 관리하고 작업 공간으로 사용됩니�
 
 ## 관리자로서의 구성 {#configurations-administrator}
 
-AEM 관리자는 물론 작성자도 구성을 작업 공간으로 고려할 수 있습니다. 이러한 작업 공간은 이러한 기능에 대한 액세스 권한을 구현하여 조직 목적을 위해 설정 그룹과 관련 콘텐츠를 함께 수집하는 데 사용할 수 있습니다.
+AEM 관리자 및 작성자는 구성을 작업 공간으로 고려할 수 있습니다. 이러한 작업 공간은 이러한 기능에 대한 액세스 권한을 구현하여 조직 목적을 위해 설정 그룹과 관련 콘텐츠를 수집하는 데 사용할 수 있습니다.
 
 AEM 내의 다양한 기능에 대해 구성을 만들 수 있습니다.
 
@@ -40,7 +40,7 @@ AEM 내의 다양한 기능에 대해 구성을 만들 수 있습니다.
 
 ### 예 {#administrator-example}
 
-예를 들어 관리자가 편집 가능한 템플릿에 대해 두 가지 구성을 만들 수 있습니다.
+예를 들어, 관리자는 편집 가능한 템플릿에 대해 두 가지 구성을 만들 수 있습니다.
 
 * WKND 일반
 * 매거진
@@ -75,8 +75,8 @@ AEM 내의 다양한 기능에 대해 구성을 만들 수 있습니다.
    ![구성 만들기](assets/configuration-create.png)
 
    * **제목**&#x200B;은 설명적이어야 합니다.
-   * 다음 **이름** 는 저장소의 노드 이름이 됩니다.
-      * 제목을 기반으로 자동으로 생성되고 이에 따라 조정됩니다 [AEM 이름 지정 규칙입니다.](naming-conventions.md)
+   * **이름**&#x200B;은 저장소의 노드 이름이 됩니다.
+      * 제목을 기반으로 자동 생성되고 [AEM 명명 규칙](naming-conventions.md)에 따라 조정됩니다.
       * 필요한 경우 조정할 수 있습니다.
 1. 허용하려는 구성 유형을 확인합니다.
    * [Context Hub 세그먼트](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -155,7 +155,7 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 이 예에서는 여기에 WKND 특정 DAM 폴더가 있고 해당 구성이 있다고 가정합니다. 해당 폴더에서 시작 `/content/dam/wknd`, 이름이 인 문자열 속성이 있는지 확인합니다. `cq:conf` 하위 트리에 적용해야 하는 구성을 참조합니다. 속성은 일반적으로 `jcr:content` 에셋 폴더 또는 페이지 다음 `conf` 링크는 명시적이므로 CRXDE의 콘텐츠만 보면 쉽게 따라갈 수 있습니다.
 
-안에서 뛰기 `/conf`, 참조를 따라 다음 항목이 있습니다. `/conf/wknd` 노드. 이는 구성입니다. 조회는 애플리케이션 코드를 완전히 통과시킵니다. 예제 코드에는 전용 참조가 없습니다. `Conf` 개체. 적용되는 구성은 JCR 콘텐츠를 통해 완전히 제어됩니다.
+안에서 뛰기 `/conf`, 참조를 따라 다음 항목이 있습니다. `/conf/wknd` 노드. 이는 구성입니다. 조회는 애플리케이션 코드를 완전히 통과합니다. 예제 코드에는 전용 참조가 없습니다. `Conf` 개체. 적용되는 구성은 JCR 콘텐츠를 통해 완전히 제어됩니다.
 
 구성에 고정 이름이 포함됩니다. `settings` 다음을 포함한 실제 항목을 포함하는 노드 `dam/imageserver` 우리는 우리의 경우에 필요합니다. 이러한 항목은 &quot;설정 문서&quot;로 생각할 수 있으며 일반적으로 `cq:Page` 다음 포함 `jcr:content` 실제 컨텐츠 유지.
 

@@ -2,9 +2,9 @@
 title: ContextHub 구성
 description: Context Hub를 구성하는 방법에 대해 알아봅니다.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1680'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ UI 모듈 속성에는 모듈별 속성에 대한 값을 제공할 수 있는 �
 | [contexthub.base](sample-modules.md#contexthub-base-ui-module-type) | 범용 UI 모듈 유형 | UI 모듈 속성에 구성됨 |
 | [contexthub.browserinfo](sample-modules.md#contexthub-browserinfo-ui-module-type) | 브라우저에 대한 정보를 표시합니다. | `surferinfo` |
 | [contexthub.datetime](sample-modules.md#contexthub-datetime-ui-module-type) | 날짜 및 시간 정보 표시 | `datetime` |
-| [contexthub.location](sample-modules.md#contexthub-location-ui-module-type) | 클라이언트의 위도와 경도와 맵 상의 위치를 표시합니다. 위치를 변경할 수 있습니다. | `geolocation` |
+| [contexthub.location](sample-modules.md#contexthub-location-ui-module-type) | 클라이언트의 위도와 경도 및 맵 상의 위치를 표시합니다. 위치를 변경할 수 있습니다. | `geolocation` |
 | [contexthub.screen-orientation](sample-modules.md#contexthub-screen-orientation-ui-module-type) | 장치의 화면 방향(가로 또는 세로)을 표시합니다. | `emulators` |
 | [contexthub.tagcloud](sample-modules.md#contexthub-tagcloud-ui-module-type) | 페이지 태그에 대한 통계를 표시합니다. | `tagcloud` |
 | [granite.profile](sample-modules.md#granite-profile-ui-module-type) | 다음을 포함한 현재 사용자의 프로필 정보를 표시합니다. `authorizableID`, `displayName` 및 `familyName`. 값을 변경할 수 있습니다. `displayName` 및 `familyName`. | `profile` |
@@ -149,7 +149,7 @@ AEM은 스토어의 기반이 될 수 있는 다음 샘플 스토어 후보를 �
 
 contexthub.generic-jsonp 샘플 저장소 후보를 사용하면 JSON 데이터를 반환하는 웹 서비스 또는 JSONP 서비스에서 데이터를 검색할 수 있습니다. 이 저장소 후보의 경우 저장소 구성을 사용하여 사용할 JSONP 서비스에 대한 세부 정보를 제공합니다.
 
-다음 [init](contexthub-api.md#init-name-config) 의 함수 `ContextHub.Store.JSONPStore` Javascript 클래스는 `config` 이 저장소 후보를 초기화하는 개체입니다. 다음 `config` 오브젝트에 다음 포함: `service` jsonp 서비스에 대한 세부 정보를 포함하는 객체입니다. 저장소를 구성하려면 다음을 제공합니다. `service` 세부 구성 속성에 대한 값으로 JSON 형식의 객체입니다.
+다음 [init](contexthub-api.md#init-name-config) 의 함수 `ContextHub.Store.JSONPStore` JavaScript 클래스는 `config` 이 저장소 후보를 초기화하는 개체입니다. 다음 `config` 오브젝트에 다음 포함: `service` jsonp 서비스에 대한 세부 정보를 포함하는 객체입니다. 저장소를 구성하려면 다음을 제공합니다. `service` 세부 구성 속성에 대한 값으로 JSON 형식의 객체입니다.
 
 jsontest.com 사이트의 MD5 서비스에서 데이터를 저장하려면 [ContextHub 저장소 만들기](#creating-a-contexthub-store) 다음 속성 사용:
 
@@ -159,21 +159,21 @@ jsontest.com 사이트의 MD5 서비스에서 데이터를 저장하려면 [Cont
 * **활성화됨:** 선택
 * **세부 정보 구성(JSON):**
 
-   ```javascript
-   {
-    "service": {
-    "jsonp": false,
-    "timeout": 1000,
-    "ttl": 1800000,
-    "secure": false,
-    "host": "md5.jsontest.com",
-    "port": 80,
-    "params":{
-    "text":"text to md5"
-        }
-      }
-    }
-   ```
+  ```javascript
+  {
+   "service": {
+   "jsonp": false,
+   "timeout": 1000,
+   "ttl": 1800000,
+   "secure": false,
+   "host": "md5.jsontest.com",
+   "port": 80,
+   "params":{
+   "text":"text to md5"
+       }
+     }
+   }
+  ```
 
 ### md5 데이터에 대한 UI 모듈 추가 {#adding-a-ui-module-for-the-md-data}
 
@@ -187,15 +187,15 @@ ContextHub 도구 모음에 UI 모듈을 추가하여 예제 md5 저장소에 �
 * **모듈 유형:** contexthub.base
 * **세부 정보 구성(JSON):**
 
-   ```javascript
-   {
-    "icon": "coral-Icon--data",
-    "title": "MD5 Conversion",
-    "storeMapping": { "md5": "md5" },
-    "template": "<p> {{md5.original}}</p>;
-                 <p>{{md5.md5}}</p>"
-   }
-   ```
+  ```javascript
+  {
+   "icon": "coral-Icon--data",
+   "title": "MD5 Conversion",
+   "storeMapping": { "md5": "md5" },
+   "template": "<p> {{md5.original}}</p>;
+                <p>{{md5.md5}}</p>"
+  }
+  ```
 
 ## ContextHub 디버깅 {#debugging-contexthub}
 
@@ -230,7 +230,7 @@ Adobe Granite ContextHub OSGi 서비스 구성(PID = `com.adobe.granite.contexth
 
 자동 모드에서는 모든 디버그 정보가 표시되지 않습니다. 각 ContextHub 구성에 대해 독립적으로 설정할 수 있는 일반 디버그 옵션과 달리, 자동 모드는 ContextHub 구성 수준의 디버그 설정에 우선하는 전역 설정입니다.
 
-디버그 정보가 전혀 필요하지 않은 게시 인스턴스에 유용합니다. 전역 설정이므로 OSGi를 통해 활성화됩니다.
+이 기능은 디버그 정보를 전혀 원하지 않는 게시 인스턴스에 유용합니다. 전역 설정이므로 OSGi를 통해 활성화됩니다.
 
 1. 를 엽니다. **Adobe Experience Manager 웹 콘솔 구성** 위치: `http://<host>:<port>/system/console/configMgr`
 1. 검색 대상 **Adobe Granite ContextHub**

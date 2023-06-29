@@ -2,10 +2,10 @@
 title: 태그 사용
 description: 태그는 웹 사이트에 포함된 콘텐츠를 빠르고 손쉽게 분류할 수 있는 방법입니다.
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 95%
+source-wordcount: '563'
+ht-degree: 88%
 
 ---
 
@@ -13,8 +13,8 @@ ht-degree: 95%
 
 태그는 웹 사이트에 포함된 콘텐츠를 빠르고 손쉽게 분류할 수 있는 방법입니다. 태그는 검색을 통해 해당 콘텐츠 및 관련 콘텐츠를 찾을 수 있도록 하기 위해 페이지, 에셋 또는 콘텐츠에 첨부할 수 있는 키워드 또는 레이블이라고 할 수 있습니다.
 
-* 태그 작성 및 관리 방법과 콘텐츠 태그가 적용되는 항목에 대한 내용은 태그 관리를 참조하십시오. <!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.-->
-* 사용자 정의 애플리케이션에서 태그를 포함 및 확장하는 방법과 태그 지정 프레임워크에 대한 내용은 [개발자를 위한 태그 지정](/help/implementing/developing/introduction/tagging-framework.md)을 참조하십시오.
+* 태그 작성 및 관리 방법과 컨텐츠 태그가 적용되는 항목에 대한 내용은 태그 관리를 참조하십시오. <!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, and to which content tags have been applied.-->
+* 다음을 참조하십시오 [개발자를 위한 태깅](/help/implementing/developing/introduction/tagging-framework.md) 사용자 지정 애플리케이션에서 태그를 포함 및 확장하는 방법과 태깅 프레임워크에 대한 정보입니다.
 
 ## 태그 지정을 사용해야 하는 10가지 이유 {#ten-reasons-to-use-tagging}
 
@@ -47,7 +47,7 @@ ht-degree: 95%
 
 * 개별 태그를 활성화합니다.
 
-   페이지와 마찬가지로 새로 만든 태그를 활성화해야 게시 환경에서 사용할 수 있습니다.
+  페이지와 마찬가지로 새로 만든 태그를 활성화해야 게시 환경에서 사용할 수 있습니다.
 
 >[!NOTE]
 >

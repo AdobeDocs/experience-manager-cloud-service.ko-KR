@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2875'
+source-wordcount: '2872'
 ht-degree: 0%
 
 ---
@@ -141,7 +141,7 @@ URL을 복사한 다음 브라우저에 붙여넣어 이미지의 모양을 확�
 ![정적 및 동적 이미지 사전 설정](/help/assets/dynamic-media/assets/dm-image-presets.png)
 _정적 및 동적 이미지 사전 설정. 시계 이미지는 를 사용하여 렌더링되었습니다. `PDP-page` 이미지 사전 설정._
 
-하지만 만약 웹사이트의 이미지를 변경해야 한다면? 예를 들어 몇 가지 테스트를 완료하고 이미지 120 x 120을 발견했다고 가정해 보겠습니다. `Cart` 이미지 사전 설정)이 생각만큼 잘 수신되지 않습니다. 너비를 175픽셀로 늘리고 높이를 175픽셀로 늘려 이미지를 더 크게 만들어야 합니다. 일반적으로 Adobe Photoshop으로 이동하여 이러한 모든 장바구니 이미지를 다시 만들어야 합니다. 하지만 Dynamic Media을 사용하면 아래 예와 같이 [폭] 및 [높이] 값을 175로 업데이트하여 이미지 사전 설정을 편집하고 사전 설정을 저장하면 됩니다.
+하지만 만약 웹사이트의 이미지를 변경해야 한다면? 예를 들어 몇 가지 테스트를 완료하고 이미지 120 x 120을 발견했다고 가정해 보겠습니다. `Cart` 이미지 사전 설정)이 생각대로 수신되지 않습니다. 너비를 175픽셀로 늘리고 높이를 175픽셀로 늘려 이미지를 더 크게 만들어야 합니다. 일반적으로 Adobe Photoshop으로 이동하여 이러한 모든 장바구니 이미지를 다시 만들어야 합니다. 하지만 Dynamic Media을 사용하면 아래 예와 같이 [폭] 및 [높이] 값을 175로 업데이트하여 이미지 사전 설정을 편집하고 사전 설정을 저장하면 됩니다.
 
 ![이미지 사전 설정 편집](/help/assets/dynamic-media/assets/dm-edit-image-preset.png)
 _너비와 높이 편집 `Cart` 이미지 사전 설정._
@@ -193,7 +193,7 @@ _다음 `Running` 플라이아웃 뷰어가 적용된 이미지 세트입니다.
 
 플라이아웃 뷰어는 속성을 편집할 수 있는 기본 기본 뷰어입니다. 또는 이미지 사전 설정을 만드는 것처럼 자신만의 사용자 지정 뷰어를 만들 수 있습니다.
 
-영업 및 마케팅 팀이 플라이아웃 뷰어를 좋아하지 않는다고 가정합니다. 그들은 줌 기능을 좋아하지만 고객들이 신발 위로 바로 줌 효과를 보기를 원합니다. 이러한 경우 이미지 세트에 InlineZoom 뷰어를 적용하고 브라우저에 해당 URL을 복사하여 붙여넣어 작동 방식을 확인하면 됩니다. [사용해 보기](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom){target="_blank"}.
+판매 및 마케팅 팀이 플라이아웃 뷰어를 좋아하지 않는다고 가정합니다. 그들은 줌 기능을 좋아하지만 고객들이 신발 위로 바로 줌 효과를 보기를 원합니다. 이러한 경우 이미지 세트에 InlineZoom 뷰어를 적용하고 브라우저에 해당 URL을 복사하여 붙여넣어 작동 방식을 확인하면 됩니다. [사용해 보기](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom){target="_blank"}.
 
 마우스 포인터를 신발 위로 이동하면 해당 이미지를 확대하여 포인터가 움직일 때 더 자세한 내용을 볼 수 있습니다. 그 이유는 단순히 처음에 Dynamic Media에 업로드되었던 이미지의 크기입니다.
 

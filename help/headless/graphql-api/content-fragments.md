@@ -3,10 +3,10 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud Service에서 Headless 콘텐츠 게재를 위해 콘텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '4924'
-ht-degree: 95%
+source-wordcount: '4918'
+ht-degree: 98%
 
 ---
 
@@ -50,7 +50,7 @@ GraphQL은
 "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
 -->
 
-GraphQL API에 대한 추가 정보는 기타 여러 리소스 중에서도 특히 다음 섹션을 참조하십시오.
+GraphQL API에 대한 자세한 내용은 다음 섹션(기타 여러 리소스)을 참조하십시오.
 
 * [graphql.org](https://graphql.org):
 
@@ -193,13 +193,13 @@ AEM용 GraphQL에서 스키마는 유연합니다. 즉, 콘텐츠 조각 모델�
 
 콘텐츠 조각 모델을 업데이트할 때도 데이터 스키마 캐시가 새로 고쳐집니다.
 
-Sites GraphQL 서비스는 콘텐츠 조각 모델에 대한 수정 사항을 백그라운드에서 수신 대기합니다. 업데이트가 감지되면 스키마의 해당 부분만 다시 생성됩니다. 이 최적화는 시간을 절약하고 안정성을 제공합니다.
+Sites GraphQL 서비스는 콘텐츠 조각 모델에 대한 수정 사항을 배경에서 수신 대기합니다. 업데이트가 감지되면 스키마의 해당 부분만 다시 생성됩니다. 이 최적화는 시간을 절약하고 안정성을 제공합니다.
 
 예를 들어:
 
 1. `Content-Fragment-Model-1` 및 `Content-Fragment-Model-2`가 포함된 패키지를 설치하는 경우:
 
-   1. GraphQL 유형 `Model-1` 및 `Model-2` 생성됩니다.
+   1. `Model-1` 및 `Model-2`에 대한 GraphQL 유형이 생성됩니다.
 
 1. 그리고 `Content-Fragment-Model-2`를 수정하는 경우:
 
@@ -257,7 +257,7 @@ AEM용 GraphQL은 유형 목록을 지원합니다. 지원되는 모든 콘텐�
 
 ### 도우미 필드 {#helper-fields}
 
-사용자 생성 필드의 데이터 형식 외에도 GraphQL for AEM에서는 *도우미* 콘텐츠 조각을 식별하는 데 도움이 되거나 콘텐츠 조각에 대한 추가 정보를 제공하는 필드입니다.
+사용자 생성 필드의 데이터 형식 외에도 AEM용 GraphQL은 콘텐츠 조각 식별을 돕거나 콘텐츠 조각에 대한 추가 정보를 제공하기 위해 여러 *도우미* 필드를 생성합니다.
 
 이 [도우미 필드](#helper-fields)는 사용자가 정의한 것과 자동 생성된 것을 구별하기 위해 앞에 `_`로 표시됩니다.
 
@@ -369,7 +369,7 @@ AEM은 또한 GraphQL을 통해 콘텐츠 조각의 메타데이터를 노출합
 
 >[!NOTE]
 >
->지정된 변형이 콘텐츠 조각에 존재하지 않는 경우 원본 데이터(마스터 변형이라고도 함)는 (대체) 기본값으로 반환됩니다.
+>콘텐츠 조각에 대한 지정된 변형이 존재하지 않는 경우, 원본 데이터(마스터 변형이라고도 함)은 (대체) 기본값으로 반환됩니다.
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -377,7 +377,7 @@ AEM은 또한 GraphQL을 통해 콘텐츠 조각의 메타데이터를 노출합
 
 ## GraphQL 변수 {#graphql-variables}
 
-GraphQL을 사용하면 쿼리에 변수를 배치할 수 있습니다. 보다 자세한 정보는 [변수에 대한 GraphQL 설명서](https://graphql.org/learn/queries/#variables)를 참조하십시오.
+GraphQL을 사용하면 쿼리에 변수를 배치할 수 있습니다. 자세한 내용은 [변수에 대한 GraphQL 설명서](https://graphql.org/learn/queries/#variables).
 
 예를 들어 특정 변형에 있는 `Author` 유형의 모든 콘텐츠 조각을 가져오려면(가능한 경우) GraphiQL에서 `variation` 인수를 지정할 수 있습니다.
 
@@ -407,7 +407,7 @@ query($variation: String!) {
 
 이 쿼리는 작성자의 전체 목록을 반환합니다. `another` 변형이 없는 작성자는 원본 데이터로 대체됩니다(이 경우 `_variation`은 `master`를 보고함).
 
-지정된 변형을 제공하는 작성자로 목록을 제한하고 원본 데이터로 대체되는 작성자를 건너뛰려면 [필터](#filtering)를 적용해야 합니다.
+지정된 변형을 제공하는 작성자로 목록을 제한하고 원본 데이터로 대체되는 작성자를 건너뛰려면 [필터](#filtering):
 
 ```graphql
 query($variation: String!) {
@@ -431,7 +431,7 @@ query($variation: String!) {
 
 GraphQL에서는 GraphQL 지시문이라고 하는 변수를 기반으로 쿼리를 변경할 수 있습니다.
 
-예를 들어 `includePrice` 변수를 기반으로 모든 `AdventureModels`에 대한 쿼리에 `adventurePrice` 필드를 포함할 수 있습니다.
+예를 들어 다음을 포함할 수 있습니다. `adventurePrice` 쿼리의 모든 필드 `AdventureModels`, 변수 기반 `includePrice`.
 
 ![GraphQL 지시문](assets/cfm-graphqlapi-04.png "GraphQL 지시문")
 
@@ -570,7 +570,7 @@ GraphQL 쿼리에서 필터링을 사용하여 특정 데이터를 반환할 수
 
 * 필드 경로를 나타내는 쉼표로 구분된 값 목록입니다.
    * 목록의 첫 번째 필드는 기본 정렬 순서를 정의하고, 두 번째 필드는 기본 정렬 기준의 두 값이 동일한 경우 사용되며, 세 번째 필드는 처음 두 기준이 동일한 경우 사용됩니다.
-   * 점으로 구분된 표기법 (예: field1.subfield.subfield 등)
+   * 점으로 구분된 표기법(예: field1.subfield.subfield 등)
 * 선택적 정렬 방향
    * (ASC(오름차순) 또는 DESC(내림차순))이 포함되며, 기본값 ASC가 적용됩니다.
    * 방향은 필드별로 지정할 수 있습니다. 즉, 한 필드는 오름차순으로 정렬하고 다른 필드는 내림차순으로 정렬할 수 있습니다(name, firstName DESC).
@@ -664,7 +664,7 @@ query {
 
 >[!NOTE]
 >
->* 페이징이 동일한 결과 세트의 서로 다른 페이지를 요청하는 여러 쿼리에서 올바르게 작동하도록 하려면 안정적인 정렬 순서가 필요합니다. 페이징은 기본적으로 결과 세트의 각 항목에 대한 저장소 경로를 사용하여 순서가 항상 동일하도록 합니다. 다른 정렬 순서를 사용하고 해당 정렬을 JCR 쿼리 수준에서 수행할 수 없는 경우, 페이지를 결정하기 전에 전체 결과 세트를 메모리에 로드해야 하므로 성능에 부정적인 영향이 있습니다.
+>* 페이징이 동일한 결과 세트의 서로 다른 페이지를 요청하는 여러 쿼리에서 올바르게 작동하도록 하려면 안정적인 정렬 순서가 필요합니다. 페이징은 기본적으로 결과 세트의 각 항목에 대한 저장소 경로를 사용하여 순서가 항상 동일하도록 합니다. 다른 정렬 순서를 사용하고 해당 정렬을 JCR 쿼리 수준에서 수행할 수 없는 경우, 페이지를 결정하기 전에 전체 결과 세트를 메모리에 로드해야 하므로 성능에 부정적인 영향이 발생합니다.
 >
 >* 오프셋이 높을수록 전체 JCR 쿼리 결과 세트에서 항목을 건너뛰는 데 더 많은 시간이 소요됩니다. 대용량 결과 세트에 대한 대체 솔루션은 페이지가 매겨진 쿼리를 `first` 및 `after` 메서드와 함께 사용하는 것입니다.
 
@@ -740,7 +740,7 @@ GraphQL의 솔루션으로 다음과 같은 작업을 수행할 수 있습니다
 구조 및 구문은 다음과 같습니다.
 
 * `format`: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL, WEBPLY와 같이 확장자가 지원하는 모든 형식이 포함된 열거형
-* `seoName`: 노드 이름 대신 파일 이름으로 사용되는 문자열
+* `seoName`: 노드 이름 대신 파일 이름으로 사용할 문자열
 * `crop`: 프레임 하위 구조(폭 또는 높이가 생략되면 높이 또는 폭이 동일한 값으로 사용됨)
    * `xOrigin`: 프레임의 x 원점(필수)
    * `yOrigin`: 프레임의 y 원점(필수)
@@ -752,7 +752,7 @@ GraphQL의 솔루션으로 다음과 같은 작업을 수행할 수 있습니다
 * `rotation`: 지원되는 모든 회전의 열거형: R90, R180, R270
 * `flip`: HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL의 열거형
 * `quality`: 이미지 품질의 백분율을 표시하는 1-100 범위의 정수
-* `width`: 출력 이미지의 폭을 정의하지만 이미지 생성기에서 무시하는 정수입니다
+* `width`: 출력 이미지의 폭을 정의하지만 이미지 생성기에서 무시되는 정수
 * `preferWebp`: webp가 선호되는지 여부를 나타내는 부울(기본값은 false)
 
 URL 변환은 경로, 목록 또는 페이지 지정과 같은 모든 쿼리 유형에 사용할 수 있습니다.
@@ -971,7 +971,7 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
 
         >[!NOTE]
         >
-        >지정된 변형이 콘텐츠 조각에 존재하지 않는 경우 마스터 변형은 (대체) 기본값으로 반환됩니다.
+        >지정된 변형이 콘텐츠 조각에 존재하지 않는 경우, 마스터 변형은 (대체) 기본값으로 반환됩니다.
 
         >[!CAUTION]
         >
@@ -1046,4 +1046,4 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
 
 ## 튜토리얼 - AEM Headless 및 GraphQL 시작하기 {#tutorial}
 
-실습형 튜토리얼을 찾고 계십니까? 체크아웃 [AEM Headless 및 GraphQL 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko-KR) headless CMS 시나리오에서, AEM GraphQL API를 사용하여 콘텐츠를 작성하고 노출하고 외부 앱에서 사용하는 방법을 보여 주는 종단간 튜토리얼입니다.
+실습형 튜토리얼을 찾고 계십니까? Headless CMS 시나리오에서 AEM의 GraphQL API를 사용하여 콘텐츠를 빌드하고 노출하고 외부 앱에서 사용하는 방법을 보여 주는 [AEM Headless 및 GraphQL 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) 엔드투엔드 튜토리얼을 확인하십시오.

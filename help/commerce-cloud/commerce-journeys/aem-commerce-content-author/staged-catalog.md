@@ -2,9 +2,9 @@
 title: 단계적 제품 카탈로그 경험 관리
 description: 단계적 제품 카탈로그 경험을 관리하는 방법을 알아봅니다.
 exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '493'
 ht-degree: 10%
 
 ---
@@ -25,7 +25,7 @@ AEM Content and Commerce 여정의 이전 문서에서는 [제품 카탈로그 �
 
     >[!NOTE]
     >
-    >이 기능은 토큰 기반 인증을 지원하는 Adobe Commerce 또는 Cloud Edition 및 타사 커넥터에서만 사용할 수 있습니다. 자세한 내용은 [시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html)를 참조하십시오.
+    >이 기능은 토큰 기반 인증을 지원하는 Adobe Commerce 또는 Cloud Edition 및 서드파티 커넥터에서만 사용할 수 있습니다. 자세한 내용은 [시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html)를 참조하십시오.
 
 먼저 작성자가 CIF를 사용하여 준비된 제품 데이터에 액세스하는 방법을 살펴보겠습니다.
 
@@ -47,7 +47,7 @@ AEM Content and Commerce 여정의 이전 문서에서는 [제품 카탈로그 �
     >
     >Omnisearch에는 컨텍스트가 없으므로 라이브 제품 카탈로그 데이터만 반환합니다.
 
-## AEM 런치 {#launches}
+## AEM 론치 {#launches}
 
 AEM Launches를 사용하면 스테이징된 제품 데이터에 대한 콘텐츠를 만들 수 있습니다. 론치에 익숙하지 않은 경우 다음 문서 링크를 따르십시오. [추가 리소스 섹션](#additional-resources). 그런 다음 론치 날짜 를 사용하여 스테이징된 제품 데이터에 액세스합니다.
 

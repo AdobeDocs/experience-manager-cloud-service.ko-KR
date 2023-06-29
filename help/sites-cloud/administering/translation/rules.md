@@ -4,16 +4,16 @@ description: 번역 규칙이 번역이 필요한 콘텐츠를 식별하는 방�
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1294'
-ht-degree: 94%
+source-wordcount: '1291'
+ht-degree: 97%
 
 ---
 
 # 번역할 콘텐츠 식별 {#identifying-content-to-translate}
 
-번역 규칙은 번역 프로젝트에 포함되어 있거나 번역 프로젝트에서 제외된 페이지, 구성 요소 및 에셋에 대해 번역할 콘텐츠를 식별합니다. 페이지 또는 에셋이 번역될 때 AEM은 이 콘텐츠를 추출하여 번역 서비스로 전송될 수 있도록 합니다.
+번역 규칙은 번역 프로젝트에 포함되어 있거나 번역 프로젝트에서 제외된 페이지, 구성 요소 및 자산에 대해 번역할 콘텐츠를 식별합니다. 페이지 또는 자산이 번역될 때 AEM은 이 콘텐츠를 추출하여 번역 서비스로 전송될 수 있도록 합니다.
 
 >[!TIP]
 >
@@ -29,7 +29,7 @@ ht-degree: 94%
 
 ## 개요 {#overview}
 
-페이지 및 에셋은 JCR 저장소의 노드로 표시됩니다. 추출되는 콘텐츠는 하나 이상의 노드 속성 값입니다. 번역 규칙은 추출할 콘텐츠가 포함된 속성을 식별합니다.
+페이지 및 자산은 JCR 저장소의 노드로 표시됩니다. 추출되는 콘텐츠는 하나 이상의 노드 속성 값입니다. 번역 규칙은 추출할 콘텐츠가 포함된 속성을 식별합니다.
 
 번역 규칙은 XML 형식으로 표시되며 다음과 같은 위치에 저장됩니다.
 
@@ -56,7 +56,7 @@ AEM 콘텐츠 번역 기능의 개요를 확인하려면 [다국어 사이트를
 >
 >AEM은 페이지에서 참조된 콘텐츠의 번역을 위해 리소스 유형과 참조 속성 간의 일대일 매핑을 지원합니다.
 
-## 페이지, 구성 요소 및 에셋에 대한 규칙 구문 {#rule-syntax-for-pages-components-and-assets}
+## 페이지, 구성 요소 및 자산에 대한 규칙 구문 {#rule-syntax-for-pages-components-and-assets}
 
 규칙은 하나 이상의 하위 `property` 요소 또는 0개 이상의 하위 `node` 요소가 있는 `node` 요소입니다.
 
@@ -100,9 +100,9 @@ AEM 콘텐츠 번역 기능의 개요를 확인하려면 [다국어 사이트를
 </node>
 ```
 
-## 페이지에서 에셋을 추출하기 위한 규칙 구문  {#rule-syntax-for-extracting-assets-from-pages}
+## 페이지에서 자산을 추출하기 위한 규칙 구문  {#rule-syntax-for-extracting-assets-from-pages}
 
-다음 규칙 구문을 사용하여 구성 요소에 임베드되거나 구성 요소에서 참조되는 에셋을 포함할 수 있습니다.
+다음 규칙 구문을 사용하여 구성 요소에 임베드되거나 구성 요소에서 참조되는 자산을 포함할 수 있습니다.
 
 ```xml
 <assetNode resourceType="path to component" assetReferenceAttribute="property that stores asset"/>
@@ -111,7 +111,7 @@ AEM 콘텐츠 번역 기능의 개요를 확인하려면 [다국어 사이트를
 각 `assetNode` 요소는 다음과 같은 특성을 가지고 있습니다.
 
 * 구성 요소로 확인되는 경로와 동일한 `resourceType` 속성
-* 에셋 바이너리(임베드된 에셋의 경우) 또는 참조된 에셋으로의 경로를 저장하는 속성의 이름과 동일한 `assetReferenceAttribute` 속성
+* 자산 바이너리(임베드된 자산의 경우) 또는 참조된 자산으로의 경로를 저장하는 속성의 이름과 동일한 `assetReferenceAttribute` 속성
 
 다음 예는 이미지 구성 요소에서 이미지를 추출합니다.
 
@@ -163,7 +163,7 @@ AEM 콘텐츠 번역 기능의 개요를 확인하려면 [다국어 사이트를
 
 번역 규칙 UI에서 다음과 같은 작업을 수행할 수 있습니다.
 
-1. **컨텍스트 추가**: 경로를 추가할 수 있습니다.
+1. **컨텍스트를 추가**&#x200B;하여 경로를 추가할 수 있습니다.
 
    ![번역 컨텍스트 추가](../assets/add-translation-context.png)
 
@@ -186,7 +186,7 @@ UI를 통해 변경할 수 있는 속성에는 네 가지가 있습니다.
 
 **`isDeep`**&#x200B;은 노드 필터에 적용할 수 있으며 기본값은 true입니다. 노드(또는 상위 항목)에 필터에 지정된 속성 값이 있는 속성이 포함되어 있는지 확인합니다. false인 경우 현재 노드에서만 확인합니다.
 
-예를 들어 상위 노드에 속성이 있는 경우에도 하위 노드가 번역 작업에 추가됩니다 `draftOnly` 초안 콘텐츠에 플래그를 지정하려면 true로 설정합니다. 여기서 `isDeep`이 생성되어 상위 노드에 true인 속성 `draftOnly`가 있는지 확인하고 이들 하위 노드를 제외합니다.
+예를 들어, 상위 노드의 속성 `draftOnly`가 true로 설정되어 있는 경우에도 번역 작업에 하위 노드가 추가되어 초안 콘텐츠에 플래그를 지정됩니다. 여기서 `isDeep`이 생성되어 상위 노드에 true인 속성 `draftOnly`가 있는지 확인하고 이들 하위 노드를 제외합니다.
 
 편집기에서, **필터** 탭에서 **Is Deep**&#x200B;을 선택/선택 취소할 수 있습니다.
 

@@ -1,10 +1,10 @@
 ---
 title: 프로비저닝 프로세스 - 개요
 description: 프로비저닝 프로세스 - 개요
-source-git-commit: ffeda76f9c661117ddba50588ebea01d151ee8c3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 100%
+source-wordcount: '330'
+ht-degree: 95%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 100%
 ![processoverview.jpg](assets/processOverview.jpg)
 
 
-자세한 내용은 [Experience League에서 Experience Manager as a Cloud Service 온보딩](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=ko)을 참조하십시오.
+자세한 내용은 [Experience League 시 as a Cloud Service Experience Manager에 온보딩](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=ko).
 
 ### 리소스 및 링크
 

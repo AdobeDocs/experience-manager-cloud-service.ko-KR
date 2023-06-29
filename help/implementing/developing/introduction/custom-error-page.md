@@ -2,9 +2,9 @@
 title: 사용자 정의 오류 페이지
 description: AEM에는 사용자 지정할 수 있는 HTTP 오류를 처리하기 위한 표준 오류 핸들러가 포함되어 있습니다.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '573'
 ht-degree: 2%
 
 ---
@@ -62,7 +62,7 @@ HTTP [500 내부 서버 오류](https://www.w3.org/Protocols/rfc2616/rfc2616-sec
    * HTTP 응답 코드 500
    * 예외 스택 추적
 
-작성자: [오류 핸들러로 표시된 페이지 사용자 지정](#how-to-customize-pages-shown-by-the-error-handler) a `500.jsp` 스크립트를 만들 수 있습니다. 그러나 다음과 같은 경우에만 사용됩니다 `HttpServletResponse.sendError(500)` 는 명시적으로 실행됩니다(예: 예외 캐쳐에서).
+작성자: [오류 핸들러로 표시된 페이지 사용자 지정](#how-to-customize-pages-shown-by-the-error-handler) a `500.jsp` 스크립트를 만들 수 있습니다. 그러나 다음과 같은 경우에만 사용됩니다 `HttpServletResponse.sendError(500)` 는 명시적으로 실행됩니다. 즉, 예외 캐쳐에서 실행됩니다.
 
 그렇지 않으면 응답 코드가 500으로 설정되지만 `500.jsp` 스크립트가 실행되지 않습니다.
 
@@ -77,6 +77,6 @@ HTTP [500 내부 서버 오류](https://www.w3.org/Protocols/rfc2616/rfc2616-sec
 >
 >작성자 인스턴스에서 [CQ WCM 디버그 필터](/help/implementing/deploying/configuring-osgi.md) 은 기본적으로 활성화되어 있습니다. 따라서 항상 응답 코드 200이 생성됩니다. 기본 오류 처리기는 전체 스택 추적을 응답에 기록하여 응답합니다.
 >
->사용자 지정 오류 처리기의 경우 코드 500이 있는 응답이 필요하므로 [CQ WCM 디버그 필터를 비활성화해야 합니다.](/help/implementing/deploying/configuring-osgi.md) 이는 응답 코드(500)가 반환되는 것을 보장하며, 이는 결국 올바른 Sling 오류-핸들러를 트리거한다.
+>사용자 지정 오류 처리기의 경우 코드 500이 있는 응답이 필요하므로 [CQ WCM 디버그 필터를 비활성화해야 합니다.](/help/implementing/deploying/configuring-osgi.md). 이는 응답 코드(500)가 반환되는 것을 보장하며, 이는 결국 올바른 Sling 오류-핸들러를 트리거한다.
 >
 >게시 인스턴스에서 CQ WCM 디버그 필터는 **항상** 비활성화됨(활성화됨으로 구성된 경우에도).

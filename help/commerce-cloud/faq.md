@@ -2,9 +2,9 @@
 title: AEM - Commerce Integration Framework를 사용하여 Commerce 통합 FAQ
 description: AEM - Commerce Integration Framework를 사용하여 Commerce 통합 FAQ
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '967'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ AEM에서 마케팅 관련 데이터 및 콘텐츠를 관리하는 것이 좋습
 
 ## 14. 전체 프레젠테이션 레이어에서 AEM을 사용할 때 PCI 규정 준수를 보장하려면 어떻게 해야 합니까?
 
-추상화된 결제 방법을 사용하는 것이 좋습니다. 이렇게 하면 브라우저 클라이언트가 결제 게이트웨이 공급자와 직접 통신하므로 Adobe 또는 상거래 솔루션이 카드 소지자 데이터를 보관하거나 전달하지 못합니다. 이 방식에서는 레벨 3 PCI 규정 준수만 필요합니다. 그러나 직원이 시스템 및 데이터와 상호 작용하는 방식과 같이 완전한 PCI 준수로 간주할 추가 사항이 있습니다. Adobe Commerce PCI 규정 준수에 대한 자세한 내용은 다음을 참조하십시오. [PCI 규정 준수 요구 사항](https://business.adobe.com/products/magento/pci-compliance.html).
+추상화된 결제 방법을 사용하는 것이 좋습니다. 이렇게 하면 브라우저 클라이언트가 결제 게이트웨이 공급자와 직접 통신하므로 Adobe 또는 상거래 솔루션이 카드 소지자 데이터를 보관하거나 전달하지 못합니다. 이 방식에서는 레벨 3 PCI 규정 준수만 필요합니다. 그러나 직원이 시스템 및 데이터와 상호 작용하는 방식과 같이 완전한 PCI 준수로 간주할 추가 사항이 있습니다. Adobe Commerce PCI 규정 준수에 대한 자세한 내용은 [PCI 규정 준수 요구 사항](https://business.adobe.com/products/magento/pci-compliance.html).
 
 ## 15. AEM 및 Adobe Commerce 클라우드 버전을 사용하는 경우 이 공동 솔루션은 PCI를 준수합니까?
 
