@@ -3,9 +3,9 @@ title: 알림
 description: Adobe Experience Cloud 알림 시스템을 사용하여 파이프라인 배포에 대한 정보를 수신하는 방법을 알아봅니다.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '558'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -16,11 +16,11 @@ Cloud Manager가 중요한 이벤트를 알리는 방법에 대해 알아보십�
 
 ## Cloud Manager의 알림 {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager] 는 프로덕션 파이프라인이 시작되고(성공 또는 실패) 프로덕션 배포를 시작할 때 알림을 보냅니다.
+[!UICONTROL Cloud Manager]를 사용하여 프로덕션 배포 시작 시 프로덕션 파이프라인이 시작되고 완료될 때 알림(성공 또는 실패)을 보냅니다.
 
-이러한 알림은 [!UICONTROL Experience Cloud] 에서 사용자에게 알림 시스템 **비즈니스 소유자**, **프로그램 관리자**, 및 **배포 관리자** 역할.
+이러한 알림은 [!UICONTROL Experience Cloud] 알림 시스템을 통해 **비즈니스 소유자**, **프로그램 관리자** 및 **배포 관리자** 역할을 가진 사용자에게 전송됩니다.
 
-알림은 [!UICONTROL Cloud Manager] 내 사이드바와 Adobe [!UICONTROL Experience Cloud] 전체에 나타납니다. 새 알림이 있을 때 헤더의 벨 아이콘에 배지가 표시됩니다.
+알림은 [!UICONTROL Cloud Manager] 내 사이드바와 Adobe [!UICONTROL Experience Cloud] 전체에 표시됩니다. 새 알림이 있을 때 헤더의 벨 아이콘에 배지가 표시됩니다.
 
 ![알림 아이콘](assets/notifications-bell-badged.png)
 
@@ -40,7 +40,7 @@ Cloud Manager가 중요한 이벤트를 알리는 방법에 대해 알아보십�
 
 ## 알림 구성 {#configuration}
 
-알림 수신 방법과 수신 알림을 사용자 지정할 수 있습니다.
+알림 수신 방법과 수신 알림을 사용자 정의할 수 있습니다.
 
 알림 사이드바 상단에 있는 기어 아이콘을 클릭합니다.
 
@@ -60,7 +60,7 @@ Cloud Manager가 중요한 이벤트를 알리는 방법에 대해 알아보십�
 
 ### 우선 순위 {#priority}
 
-우선 순위 경고는 다음으로 표시됨 **높음** 태그를 지정하고 경고로만 받도록 구성할 수 있습니다. **우선 순위** 섹션에서 우선 순위 알림에 적합한 범주를 정의할 수 있습니다.
+우선 순위 경고는 **높음** 태그로 표시되며 경고로만 수신되도록 구성할 수 있습니다. **우선 순위** 섹션에서 우선 순위 알림에 적합한 범주를 정의할 수 있습니다.
 
 ![알림 우선 순위](assets/notifications-priority.png)
 
