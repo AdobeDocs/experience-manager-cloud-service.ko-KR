@@ -2,9 +2,9 @@
 title: 자산 폴더 만들기 - Headless 설정
 description: AEM 콘텐츠 조각 모델을 사용하여 Headless 콘텐츠의 기반이 되는 콘텐츠 조각의 구조를 정의합니다.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '383'
 ht-degree: 88%
 
 ---
@@ -19,7 +19,7 @@ AEM 콘텐츠 조각 모델을 사용하여 Headless 콘텐츠의 기반이 되�
 
 그러나 먼저 자산을 저장할 자산 폴더를 만들어야 합니다.
 
-에셋 폴더는 [기존 콘텐츠 자산 구성](/help/assets/manage-digital-assets.md) 이미지, 비디오 및 콘텐츠 조각과 같은 작업을 수행합니다.
+에셋 폴더는 [기존 콘텐츠 자산 구성](/help/assets/manage-digital-assets.md) 콘텐츠 조각과 함께 이미지 및 비디오 등.
 
 ## 자산 폴더를 만드는 방법 {#how-to-create-an-assets-folder}
 

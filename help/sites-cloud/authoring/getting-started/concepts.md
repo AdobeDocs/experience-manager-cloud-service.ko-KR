@@ -2,9 +2,9 @@
 title: 작성 개념
 description: AEM의 작성 개념
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '385'
 ht-degree: 39%
 
 ---
@@ -20,7 +20,7 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
 작성 환경에서는 콘텐츠를 실제로 게시하기 전에 만들고, 업데이트하고 검토하는 메커니즘을 제공합니다.
 
-* 작성자는 콘텐츠를 만들고 검토합니다. 컨텐츠는 페이지, 에셋 및 발행물과 같은 매우 다양한 유형일 수 있습니다.
+* 작성자는 콘텐츠를 만들고 검토합니다. 컨텐츠는 페이지, 에셋 및 게시물을 비롯한 다양한 유형일 수 있습니다.
 * 이 콘텐츠는 어느 시점에서 웹 사이트에 게시됩니다.
 
 ![작성자, 게시자 및 디스패처 다이어그램](/help/sites-cloud/authoring/assets/author-publish.png)

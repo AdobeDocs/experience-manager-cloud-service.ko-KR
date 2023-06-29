@@ -4,9 +4,9 @@ description: 변형을 통해 조각에 대한 콘텐츠를 작성한 다음 목
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '2463'
+source-wordcount: '2461'
 ht-degree: 97%
 
 ---
@@ -197,8 +197,12 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
 1. 속성을 지정합니다(예: **제목**).
 1. **만들기**&#x200B;를 선택합니다.
 1. 마지막으로
-   1. **완료** 는 (원래 조각으로) 를 반환하고 새 조각을 참조합니다.
-   1. **열기** 는 새 조각을 참조하고 편집을 위해 새 브라우저 탭에서 새 조각을 엽니다.
+   1. **완료**:
+      * 반환(원래 조각으로)
+      * 새 조각 참조
+   1. **열기**:
+      * 새 조각 참조
+      * 편집할 새 조각을 새 브라우저 탭에서 엽니다.
 
 ### 주요 통계 보기 {#viewing-key-statistics}
 

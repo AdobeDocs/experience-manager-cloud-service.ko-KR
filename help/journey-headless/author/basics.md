@@ -2,9 +2,9 @@
 title: 작성 기본 사항에 대해 알아보기
 description: 콘텐츠 조각을 사용하여 Headless CMS용 콘텐츠를 작성하는 개념 및 메커니즘에 대해 알아봅니다.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1715'
 ht-degree: 91%
 
 ---
@@ -213,7 +213,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 예를 들면:
 
-* 특정 유형의 정보를 포함하여 정보의 여러 부분만 필요로 하는 조각입니다. Headless 콘텐츠의 경우, 참조는 중요합니다. 이에 대해서는 나중에 여정에서 알아보십시오.
+* 특정 유형의 정보를 포함하여 정보의 여러 부분만 필요로 하는 조각입니다. Headless 콘텐츠의 경우 참조는 중요합니다(여정 후반부에 배울 내용).
 
   ![콘텐츠 조각 편집기 - 내 조각](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
@@ -235,7 +235,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 #### (아마도) 걱정할 필요가 없는 사항 {#what-you-probably-do-not-need-to-worry-about}
 
-예, 약간 이상한 섹션으로 보일 수 있지만 콘텐츠 조각 편집기를 열고 탐색을 시작하면 Headless 콘텐츠 작성자 여정에 적용되지 않는(아마도) 다양한 옵션을 볼 수 있습니다. 이는 Headless 컨텍스트에서 무시할 수 있는 콘텐츠에 대한 간략한 참고 사항입니다.
+좋습니다. 약간 이상한 섹션으로 보일 수 있지만 콘텐츠 조각 편집기를 열고 탐색을 시작하면 콘텐츠 작성자로서 headless 여정에 적용되지 않는(아마도) 다양한 옵션을 볼 수 있습니다. 이는 Headless 컨텍스트에서 무시할 수 있는 콘텐츠에 대한 간략한 참고 사항입니다.
 
 * **콘텐츠 조각 모델**
 

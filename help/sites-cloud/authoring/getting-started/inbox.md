@@ -2,9 +2,9 @@
 title: 받은 편지함
 description: 받은 편지함에서 작업 관리
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '905'
 ht-degree: 91%
 
 ---
@@ -102,7 +102,7 @@ AEM 알림 받은 편지함 열기
 
   ![받은 편지함 목록 보기 설정](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-  다른 사용자에게 달력을 위임하고 다른 사용자의 위임을 요청하고 위임을 관리할 수도 있습니다.
+  다른 사용자에게 달력을 위임하고, 다른 사용자의 위임을 요청하고, 위임을 관리할 수도 있습니다.
 
   ![받은 편지함 목록 보기 위임 설정](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
