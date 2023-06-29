@@ -3,9 +3,9 @@ title: GraphQL 쿼리 최적화
 description: Headless 콘텐츠 게재를 위해 Adobe Experience Manager as a Cloud Service에서 콘텐츠 조각을 필터링, 페이징 및 정렬할 때 GraphQL 쿼리를 최적화하는 방법을 알아봅니다.
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1193'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ JCR 필터(쿼리 제한 형식)를 적용한 후에 AEM 필터링을 위해 결
 
 >[!NOTE]
 >
->기술적인 이유(예: 유연성, 조각 중첩)로 인해 AEM은 전체 필터링을 JCR에 위임할 수 없습니다.
+>기술적인 이유로(예: 유연성, 조각 중첩) AEM은 전체 필터링을 JCR에 위임할 수 없습니다.
 
 이 기법에서는 GraphQL 필터의 유연성을 유지하면서 최대한 많은 필터링을 JCR에 위임합니다.
 
@@ -129,7 +129,7 @@ GraphQL 쿼리에도 이 접근 방식을 적용해야 합니다.
 
 ### 필터 표현식의 논리 연산 {#logical-operations-in-filter-expressions}
 
-중첩된 조각에서 필터링하는 경우 를 사용하여 결합되는 최상위 수준 필드에 관련 필터를 제공하여 JCR 필터링을 적용할 수 있습니다. `AND` 연산자.
+중첩 조각을 필터링하는 경우 `AND` 연산자를 사용하여 결합된 최상위 필드에 동반 필터를 제공하여 JCR 필터링을 계속 적용할 수 있습니다.
 
 일반적인 사용 사례는 최상위 수준 조각의 `_path` 필드에 필터를 사용하여 쿼리 범위를 제한한 다음 최상위 수준 또는 중첩된 조각에 있을 수 있는 추가 필드를 필터링하는 것입니다.
 
