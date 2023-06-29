@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1532'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -89,9 +89,9 @@ Admin Console을 사용하여 Cloud Manager 프로필 목록을 볼 수 있습�
 
 이제 사용자를 추가하고 **비즈니스 소유자** 제품 프로필에 할당할 준비가 되었습니다.
 
-1. Cloud Manager 프로그램을 관리해야 하는 사용자를 식별합니다. 다음 항목이(가) **비즈니스 소유자**.
+1. Cloud Manager 프로그램을 관리해야 하는 사용자를 식별합니다. 이 사용자가 **비즈니스 소유자**&#x200B;가 됩니다.
 
-1. 다음 위치에서 Admin Console에 로그온 `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` 및 **개요** 페이지, 선택 **Adobe Experience Manager as a Cloud Service** 제품 출처 **제품 및 서비스** 카드.
+1. `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)`에서 Admin Console에 로그온하고 **개요** 페이지의 **제품 및 서비스** 카드에서 **Adobe Experience Manager as a Cloud Service** 제품을 선택합니다.
 
    ![제품 및 서비스](/help/journey-onboarding/assets/assign-team1.png)
 
@@ -185,5 +185,5 @@ Admin Console을 사용하여 Cloud Manager 프로필 목록을 볼 수 있습�
 
 * [Cloud Manager 소개](/help/onboarding/cloud-manager-introduction.md) - Cloud Manager, Cloud Manager 프로그램 및 환경에 대해 알아봅니다.
 * [Cloud Manager 제품 프로필](/help/onboarding/aem-cs-team-product-profiles.md) - AEM as a Cloud Service 팀 및 제품 프로필에 대해 알아봅니다.
-* [Adobe Admin Console의 ID 유형](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/identity.ug.html) - Adobe의 id 관리 시스템은 관리자가 애플리케이션 및 서비스에 대한 사용자의 액세스 권한을 만들고 관리할 수 있도록 도와줍니다. Adobe는 사용자를 인증하고 권한을 부여하는 데 사용할 수 있는 이들 ID 유형 또는 계정을 제공합니다.
+* [Adobe Admin Console의 ID 유형](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/identity.ug.html) - Adobe의 ID 관리 시스템을 사용하여 관리자는 애플리케이션 및 서비스에 대한 사용자 이용 권한을 만들고 관리할 수 있습니다. Adobe는 사용자를 인증하고 권한을 부여하는 데 사용할 수 있는 이들 ID 유형 또는 계정을 제공합니다.
 
