@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: f075c6032edb23f9cf52ad53ae2a628915e76ec2
+source-git-commit: d0deca8acbf6049d5be6c27275eedf9b52b27658
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '740'
 ht-degree: 68%
 
 ---
@@ -37,7 +37,7 @@ Adobe Experience Manager Assets as a [!DNL Cloud Service]는 클라우드 기반
 * **지속적인 모니터링**: 시스템 모니터링은 자동화되어 있고, 기본 제공 검사와 트리거는 성능, 가용성 및 전반적인 견고성을 유지하는 데 도움이 됩니다.
 * **간편한 배포**: Experience Manager in the Cloud 작업은 완전히 자동화되어 수동 개입이 필요하지 않습니다. 배포를 자동화하는 경우 Cloud Manager(CM) 구성 요소는 사용자 지정 코드가 포함된 배포 가능한 Docker 이미지의 빌드를 자동화합니다.
 
-## 사용 가능한 사용자 기반 경험
+## 사용 가능한 사용자 기반 경험 {#persona-based-experiences}
 
 Adobe는 디지털 에셋을 최대한 활용할 수 있는 강력한 DAM(디지털 에셋 관리) 솔루션을 제공합니다. Adobe Experience Manager Assets에는 동일한 Cloud Services 저장소를 사용하는 두 개의 별도 경험이 있습니다.
 
@@ -51,7 +51,7 @@ DAM 라이브러리 관리자, 개발자 및 슈퍼 사용자는 필요에 따�
 
 ![태그 추가](assets/newui-overview.svg)
 
-자산 보기에 액세스하는 방법과 관리자 보기에서 제공하는 몇 가지 간단한 기능에 대한 자세한 내용은 자산 보기를 참조하십시오.
+자산 보기에 액세스하는 방법과 관리자 보기에서 제공하는 몇 가지 간단한 기능에 대한 자세한 내용은 을 참조하십시오. [자산 보기 소개](/help/assets/assets-view-introduction.md).
 
 ## 새 에셋 기능 {#whats-new-assets}
 

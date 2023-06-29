@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 40393340131a72a86503c00a0a2e9e78a28b7e69
+source-git-commit: 9424bef8a9a2c7ab4afb06e2a08e15336f858b7b
 workflow-type: tm+mt
-source-wordcount: '4138'
+source-wordcount: '4139'
 ht-degree: 99%
 
 ---
@@ -501,23 +501,22 @@ ht-degree: 99%
       + [콘텐츠 FAQ의 HTTP2 게재](/help/assets/dynamic-media/http2faq.md)
       + [Flash 뷰어 서비스 종료](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML 뷰어 서비스 종료](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
-
-+ 자산 보기 작업 {#assets-view}
-   + [시작](/help/assets/get-started-assets-view.md)
-   + [내 작업 영역](/help/assets/my-workspace-assets-view.md)
-   + [지원되는 파일 형식 및 사용 사례](/help/assets/supported-file-formats-assets-view.md)
-   + [에셋 보기](/help/assets/navigate-assets-view.md)
-   + [에셋 업로드 및 추가](/help/assets/add-delete-assets-view.md)
-   + [에셋 검색 및 탐색](/help/assets/search-assets-view.md)
-   + [에셋 관리 작업](/help/assets/manage-organize-assets-view.md)
-   + [이미지 편집](/help/assets/edit-images-assets-view.md)
-   + [에셋 메타데이터 관리](/help/assets/metadata-assets-view.md)
-   + [에셋 공유](/help/assets/share-links-for-assets-view.md)
-   + [컬렉션 관리](/help/assets/manage-collections-assets-view.md)
-   + [에셋, 폴더 및 컬렉션 보기](/help/assets/manage-notifications-assets-view.md)
-   + [보고서 관리](/help/assets/manage-reports-assets-view.md)
-   + [태그 관리](/help/assets/tagging-management-assets-view.md)
-
+   + 자산 보기 작업 {#assets-view}
+      + [소개](/help/assets/assets-view-introduction.md)
+      + [시작](/help/assets/get-started-assets-view.md)
+      + [내 작업 영역](/help/assets/my-workspace-assets-view.md)
+      + [지원되는 파일 형식 및 사용 사례](/help/assets/supported-file-formats-assets-view.md)
+      + [에셋 보기](/help/assets/navigate-assets-view.md)
+      + [에셋 업로드 및 추가](/help/assets/add-delete-assets-view.md)
+      + [에셋 검색 및 탐색](/help/assets/search-assets-view.md)
+      + [에셋 관리 작업](/help/assets/manage-organize-assets-view.md)
+      + [이미지 편집](/help/assets/edit-images-assets-view.md)
+      + [에셋 메타데이터 관리](/help/assets/metadata-assets-view.md)
+      + [에셋 공유](/help/assets/share-links-for-assets-view.md)
+      + [컬렉션 관리](/help/assets/manage-collections-assets-view.md)
+      + [에셋, 폴더 및 컬렉션 보기](/help/assets/manage-notifications-assets-view.md)
+      + [보고서 관리](/help/assets/manage-reports-assets-view.md)
+      + [태그 관리](/help/assets/tagging-management-assets-view.md)
    + Adobe Workfront와 통합 {#integrations}
       + [ [!DNL Adobe Workfront]와 통합](/help/assets/workfront-integrations.md)
       + [자산 메타데이터 매핑 구성](/help/assets/configure-asset-metadata-mapping.md)
@@ -525,6 +524,7 @@ ht-degree: 99%
       + [기존 설치에 대해 외부 종속성 제거](/help/assets/remove-external-dependencies.md)
       + [ [!DNL Workfront]용 [!DNL enhanced connector] 구성](/help/assets/workfront-connector-configure.md)
       + [업데이트 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
+
 + Forms {#forms}
    + 개요 {#forms-overview}
       + [소개](/help/forms/home.md)
