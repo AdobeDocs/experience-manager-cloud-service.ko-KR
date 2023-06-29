@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: f0dc0e0ccd196ab748e2bfcdb4ce404c1c91c213
+source-git-commit: e8ea040ba3f8c73d7ed64c9669ac1d0a22d3a3c8
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '600'
 ht-degree: 23%
 
 ---
@@ -38,8 +38,8 @@ ht-degree: 23%
 - SITES-13559: MSM: 구성 요소를 롤아웃할 때 &quot;수정할 수 없음&quot; 예외가 발생합니다.
 - SITES-11757: MSM: 상위에서 롤아웃 구성 상속이 하위 페이지에 대해 다시 반환되지 않음
 - SITES-14073: 사이트 관리자: 내보낼 속성이 없음을 선택하면 CSV 보고서가 500으로 실패합니다
-- FORMS-7648: 숫자 상자 구성 요소에서 최대 자릿수 필드 유효성 검사가 작동하지 않습니다.
-- FORMS-8177: Forms 서비스가 활성 상태일 때 &#39;com.adobe.aem.formsndocuments.publish.AssetReferenceProvider에서 자산 종속성 검색 실패&#39; 오류가 발생합니다.
+- FORMS-7648: 숫자 상자 구성 요소의 최대 자릿수를 확인할 수 없습니다. 유효성 검사 스크립트가 작동하지 않습니다.
+- FORMS-8177: Forms 서비스가 활성화되면 `com.adobe.aem.formsndocuments.publish.AssetReferenceProvider Failed to retrieve asset dependencies` 오류가 발생했습니다.
 - FORMS-8300: 사용자가 작업을 연 후 위임하려고 하면 위임 응답이 사용자의 AEM 받은 편지함 UI를 여는 대신 작업을 다시 로드합니다.
 - FORMS-8500: IE 모드 옵션이 활성화된 Microsoft® Edge 브라우저에서 HTML5 Forms이 열리지 않습니다.
 - FORMS-8541: 적응형 Forms 렌더링 시 Null 포인터 예외가 발생합니다.
@@ -52,7 +52,6 @@ ht-degree: 23%
 - FORMS-8846: 바인딩 참조 속성이 적응형 Forms 첨부 구성 요소에 대해 작동하지 않습니다.
 - FORMS-9072: 양식 조각을 만드는 동안 스키마를 검색할 때 검색 결과가 선택할 스키마를 반환하지 않습니다.
 - FORMS: AEM Forms 기능의 접근성을 개선하기 위해 접근성 관련 버그가 여러 개 수정되었습니다.
-
 
 ### 알려진 문제 {#known-issues-12441}
 
