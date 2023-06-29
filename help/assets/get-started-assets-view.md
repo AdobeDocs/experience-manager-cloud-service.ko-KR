@@ -3,14 +3,14 @@ title: ' [!DNL Assets View] 사용 시작하기'
 description: ' [!DNL Assets View]의 액세스 방법, 로그인 경험, 지원되는 사용 사례 및 알려진 문제'
 role: User, Leader
 exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
-source-git-commit: 5af7f9160b0028d0eff5358c3c1a43729b86883b
+source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 94%
+source-wordcount: '345'
+ht-degree: 86%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets View] 사용 시작하기 {#assets-view-get-started}
+# 자산 보기 시작 {#assets-view-get-started}
 
 <!-- TBD: Make links for these steps. -->
 
@@ -25,11 +25,9 @@ ht-degree: 94%
 <!--In addition, more reference information that can be helpful is [understanding of the user interface](/help/assets/navigate-assets-view.md), [list of use cases](#use-cases), [supported file types](/help/assets/supported-file-formats-assets-view.md), and [known issues](/help/assets/release-notes.md#known-issues).
 -->
 
-## [!DNL Assets View]에 대한 액세스 권한 받기 {#get-access}
+## 자산 보기 액세스 {#access-assets-view}
 
-Adobe는 솔루션을 프로비저닝하고 조직의 지정된 사용자를 관리자로 추가합니다. 관리자는 [[!DNL Admin Console]](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)을 사용하여 조직의 다양한 사용자에게 액세스 권한을 부여할 수 있습니다. 액세스와 관련된 요청은 조직의 관리자에게 문의하십시오.
-
-로그인할 때 자격 증명을 제공한 후 [!DNL Assets View]에서 계정을 선택하라는 메시지가 표시됩니다. 이 경우 계속 진행하려면 `Company or School Account`을(를) 선택합니다.
+다음을 참조하십시오 [에셋 보기에 액세스하는 방법](/help/assets/assets-view-introduction.md#how-to-access-assets-view) 에셋 보기에 액세스하는 방법에 대한 자세한 지침은 를 참조하십시오.
 
 ## 구성 [!DNL Assets View] {#configuration}
 

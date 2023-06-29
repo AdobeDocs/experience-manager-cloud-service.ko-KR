@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: d0deca8acbf6049d5be6c27275eedf9b52b27658
+source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 68%
@@ -51,7 +51,7 @@ DAM 라이브러리 관리자, 개발자 및 슈퍼 사용자는 필요에 따�
 
 ![태그 추가](assets/newui-overview.svg)
 
-자산 보기에 액세스하는 방법과 관리자 보기에서 제공하는 몇 가지 간단한 기능에 대한 자세한 내용은 을 참조하십시오. [자산 보기 소개](/help/assets/assets-view-introduction.md).
+자산 보기에 액세스하는 방법과 관리자 보기에서 제공하는 몇 가지 간소화에 대한 자세한 내용은 을 참조하십시오. [자산 보기 소개](/help/assets/assets-view-introduction.md).
 
 ## 새 에셋 기능 {#whats-new-assets}
 

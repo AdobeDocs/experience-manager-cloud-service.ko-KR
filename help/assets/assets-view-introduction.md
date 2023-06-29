@@ -2,9 +2,9 @@
 title: 에셋 보기는 어떤 이점을 제공합니까?
 description: 자산 보기의 주요 이점에 대해 자세히 알아보기
 mini-toc-levels: 3
-source-git-commit: 4e31a57a6bcbc6783398c205075bb8e1b1a5dc74
+source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1118'
 ht-degree: 11%
 
 ---
@@ -120,6 +120,11 @@ Assets에 대해 as a Cloud Service으로 사용할 수 있는 페르소나 기�
 * 로컬 파일 시스템에서 에셋 저장소로 다른 이름의 새 에셋 버전을 업로드합니다. 업로드한 에셋은 원본 에셋과 동일한 이름의 새 버전으로 사용할 수 있습니다.
 
 * 저장소 내에서 사용할 수 있는 에셋 및 폴더의 이름을 변경합니다.
+
+다음 링크를 사용하여 자산 보기를 빠르게 시작할 수 있습니다.
+
+* [내 작업 영역](/help/assets/my-workspace-assets-view.md)
+* [자산 보기 사용 시작하기](/help/assets/get-started-assets-view.md)
 
 ## 결론 {#conclusion}
 
