@@ -6,9 +6,9 @@ feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1103'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -58,13 +58,13 @@ ht-degree: 94%
    * 중첩된 폴더를 표시하도록 크기를 조정할 수 있습니다.
 * 기본/오른쪽 패널 - 여기에서 다음 작업을 수행할 수 있습니다.
    * 선택한 트리 분기에 있는 모든 콘텐츠 조각 목록 표시:
-      * 위치는 탐색 표시로 표시됩니다. 위치를 변경하는 데에도 사용할 수 있습니다.
+      * 위치는 이동 경로로 표시됩니다. 위치를 변경하는 데에도 사용할 수 있습니다.
       * 선택한 폴더의 콘텐츠 조각이 표시되고 모든 하위 폴더가 표시됩니다.
          * 콘텐츠 조각에 대한 [다양한 정보 필드](#selectuse-available-columns)에서 링크가 제공됩니다. 필드에 따라 다음 작업을 수행할 수 있습니다.
             * 편집기에서 적절한 조각 열기
             * 참조에 대한 정보 표시
             * 조각의 언어 버전에 대한 정보 표시
-      * 열 헤더에서 마우스 오버를 사용하면 드롭다운 작업 선택기 및 너비 슬라이더가 표시됩니다. 이렇게 하면 다음 작업을 수행할 수 있습니다.
+      * 열 머리글 위로 마우스를 가져가면 드롭다운 작업 선택기와 폭 슬라이더가 표시됩니다. 이를 통해 다음과 같은 작업을 수행할 수 있습니다.
          * 정렬 - 오름차순 또는 내림차순에 적합한 작업 선택
 이렇게 하면 해당 열에 따라 전체 테이블이 정렬됩니다. 정렬은 해당 열에서만 사용할 수 있습니다.
          * 열 크기 조정 - 작업 또는 폭 슬라이더 사용
@@ -95,7 +95,7 @@ ht-degree: 94%
 
 ### (선택한) 콘텐츠 조각 작업 {#actions-selected-content-fragment}
 
-특정 조각을 선택하면 해당 조각에 사용할 수 있는 작업에 초점을 둔 도구 모음이 열립니다. 여러 조각을 선택할 수도 있습니다. 그에 따라 작업 선택이 조정됩니다.
+특정 조각을 선택하면 해당 조각에 사용할 수 있는 작업에 초점을 둔 도구 모음이 열립니다. 여러 조각을 선택할 수도 있으며 그에 따라 작업 선택이 조정됩니다.
 
 ![콘텐츠 조각 콘솔 - 선택한 조각에 대한 도구 모음](assets/cfc-fragment-toolbar.png)
 
@@ -103,12 +103,12 @@ ht-degree: 94%
 * **[게시](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)** (및 **[게시 취소](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#unpublishing-a-fragment)**)
 * **복사**
 * **이동**
-* **이름 변경**
+* **이름 바꾸기**
 * **[삭제](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#deleting-a-fragment)**
 
 >[!NOTE]
 >
->게시, 게시 취소, 삭제, 이동, 이름 변경, 복사, 비동기 작업 트리거와 같은 작업입니다. AEM 비동기 작업 UI를 통해 해당 작업의 진행 상태를 모니터링할 수 있습니다.
+>게시, 게시 취소, 삭제, 이동, 이름 바꾸기, 복사, 비동기 작업 트리거와 같은 작업입니다. AEM 비동기 작업 UI를 통해 해당 작업의 진행 상태를 모니터링할 수 있습니다.
 
 ## 콘텐츠 조각에 대한 정보 제공 {#information-content-fragments}
 
@@ -158,7 +158,7 @@ ht-degree: 94%
 
 ![콘텐츠 조각 콘솔 - 열 구성](assets/cfc-console-column-icon.png)
 
-숨기거나 표시할 수 있는 열 목록이 나타납니다.
+숨기거나 표시할 수 있는 열 목록이 표시됩니다.
 
 ![콘텐츠 조각 콘솔 - 열 구성](assets/cfc-console-column-selection.png)
 
@@ -184,7 +184,7 @@ ht-degree: 94%
 
 ![콘텐츠 조각 콘솔 - 필터링](assets/cfc-console-fast-filter-01.png)
 
-선택 후 필터 술어로 표시되며, 목록은 그에 따라 필터링됩니다.
+선택한 후에 필터 조건자로 표시되고 그에 따라 목록이 필터링됩니다.
 
 ![콘텐츠 조각 콘솔 - 필터링](assets/cfc-console-fast-filter-02.png)
 
