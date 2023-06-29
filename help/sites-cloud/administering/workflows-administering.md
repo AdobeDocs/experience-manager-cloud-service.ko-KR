@@ -6,7 +6,7 @@ role: Admin
 source-git-commit: 31cda6f7eb7ef1c32ba9d0ec7d198a5f2f38b1e6
 workflow-type: tm+mt
 source-wordcount: '1284'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -196,7 +196,7 @@ ht-degree: 95%
 
 워크플로 모델 수준에서는 모델(및 런타임 인스턴스)에 메타데이터의 외부 스토리지가 있음을 나타내는 플래그가 제공됩니다. 워크플로 변수는 외부 스토리지로 표시된 모델의 워크플로 인스턴스에 대해 JCR에서 유지되지 않습니다.
 
-속성 *userMetadataPersistenceEnabled* 다음에 저장됩니다. *jcr:content 노드* 워크플로 모델의 경우입니다. 이 플래그는 워크플로 메타데이터에서 다음과 같이 유지됩니다. *cq:userMetaDataCustomPersistenceEnabled*.
+*userMetadataPersistenceEnabled* 속성은 워크플로 모델의 *jcr:content 노드*&#x200B;에 저장됩니다. 이 플래그는 워크플로 메타데이터에서 *cq:userMetaDataCustomPersistenceEnabled*&#x200B;로 유지됩니다.
 
 아래 그림은 워크플로우에 플래그를 설정하는 방법을 보여 줍니다.
 

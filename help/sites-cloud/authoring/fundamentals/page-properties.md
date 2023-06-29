@@ -105,7 +105,7 @@ ht-degree: 85%
       * 예를 들어 페이지 `/content/wknd/us/en/magazine/members-only`에 대한 `private`의 별칭을 정의하면 `/content/wknd/us/en/magazine/private`을 통해서도 이 페이지에 액세스할 수 있습니다.
       * 별칭을 만들면 페이지 노드의 `sling:alias` 속성이 설정되며, 이는 저장소 경로가 아닌 리소스에만 영향을 미칩니다.
       * 편집기의 별칭을 통해 액세스하는 페이지는 게시할 수 없습니다. 편집기의 [게시 옵션](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)은 실제 경로를 통해 액세스하는 페이지에 대해서만 사용할 수 있습니다.
-      * 자세한 내용은 [SEO 및 URL 관리 모범 사례 아래의 로컬라이제이션된 페이지 이름](/help/overview/seo-and-url-management.md#localized-page-names)을 참조하십시오.
+      * 자세한 내용은 [SEO 및 URL 관리 모범 사례 아래의 현지화된 페이지 이름](/help/overview/seo-and-url-management.md#localized-page-names)을 참조하십시오.
 
 * **구성**
 

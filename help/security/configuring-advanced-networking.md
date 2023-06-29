@@ -15,7 +15,7 @@ ht-degree: 94%
 
 >[!INFO]
 >
->이 [위치](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=en)에서는 각각의 고급 네트워킹 옵션에 대해 설명하기 위해 설계된 일련의 문서를 찾아볼 수도 있습니다.
+>이 [위치](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=ko)에서는 각각의 고급 네트워킹 옵션에 대해 설명하기 위해 설계된 일련의 문서를 찾아볼 수도 있습니다.
 
 ## 개요 {#overview}
 
@@ -343,7 +343,7 @@ VPN을 사용하면 작성자, 게시 또는 미리보기에서 온프레미스 
 
 또한 VPN을 사용하면 VPN을 지원하는 CRM 공급업체와 같은 SaaS 공급업체에 연결하거나 기업 네트워크에서 AEM as a Cloud Service 작성자, 미리보기 또는 게시에 연결할 수 있습니다.
 
-대부분의 IPSec 기술이 내장된 VPN 디바이스가 지원됩니다. **RouteBased 구성 지침** 열에 기재된 정보에 따라 [이 페이지](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable)의 디바이스 목록을 참조하십시오. 표에 설명된 대로 디바이스를 구성하십시오.
+대부분의 IPSec 기술이 내장된 VPN 디바이스가 지원됩니다. **RouteBased 구성 지침** 열에 기재된 정보에 따라 [이 페이지](https://docs.microsoft.com/ko-kr/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable)의 디바이스 목록을 참조하십시오. 표에 설명된 대로 디바이스를 구성하십시오.
 
 ### 일반적인 고려 사항 {#general-vpn-considerations}
 

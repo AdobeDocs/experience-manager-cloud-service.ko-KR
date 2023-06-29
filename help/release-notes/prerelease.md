@@ -50,11 +50,11 @@ AEM as a Cloud Service에는 두 가지 유형의 릴리스가 있습니다.
 
 기능 릴리스는 미리 일정이 예정되어 있으며 기능 릴리스 활성화 날짜는 [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)에 게시됩니다.
 
-예정된 기능을 검토하고 테스트할 시간을 계획할 수 있도록 릴리스 날짜를 기록해 두십시오.
+예정된 기능을 검토하고 테스트할 시간을 계획할 수 있도록 릴리스 일자를 기록해 두십시오.
 
 ## 릴리스 정보 검토 {#release-notes}
 
-캘린더에 릴리스 날짜를 표시해 두었다면 릴리스 당일 [Adobe Experience League](/help/release-notes/release-notes-cloud/release-notes-current.md) 웹 사이트에서 최신 릴리스 정보를 확인하십시오.
+캘린더에 릴리스 일자를 표시해 두었다면 릴리스 당일 [Adobe Experience League](/help/release-notes/release-notes-cloud/release-notes-current.md) 웹 사이트에서 최신 릴리스 정보를 확인하십시오.
 
 각 릴리스에는 해당 릴리스의 새로운 기능뿐만 아니라 프리릴리스 평가에 사용할 수 있는 기능을 문서화한 릴리스 정보가 함께 제공됩니다. 미리 알아본 정보로 AEMaaCS의 최신 기능을 활용할 계획을 세워 보십시오.
 

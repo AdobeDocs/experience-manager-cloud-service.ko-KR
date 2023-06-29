@@ -19,7 +19,7 @@ ht-degree: 58%
 
 >[!NOTE]
 >
->개인 정보 보호 문제에 대한 Adobe의 대응 및 Adobe 고객으로서의 의미에 대한 자세한 내용은 다음을 참조하십시오. [Adobe 개인정보 보호 센터](https://www.adobe.com/privacy.html).
+>개인 정보 보호 문제에 대한 Adobe의 대응 및 Adobe 고객으로서의 의미에 대한 자세한 내용은 다음을 참조하십시오. [Adobe 개인정보 보호 센터](https://www.adobe.com/kr/privacy.html).
 
 ## AEM Foundation 데이터 개인정보 보호 및 보호 지원 {#aem-foundation-data-privacy-and-protection-support}
 

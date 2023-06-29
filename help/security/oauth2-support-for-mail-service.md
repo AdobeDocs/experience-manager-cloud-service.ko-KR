@@ -100,7 +100,7 @@ AEM측의 OAuth 구성을 진행하기에 앞서 아래 절차에 따라 accessT
 >
 > [이 위치](https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow)에서 Postman API 컬렉션을 가져올 수 있습니다.
 >
-> MSFT OAuth 설명서 참조 [여기](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) 을 참조하십시오.
+> MSFT OAuth 설명서 참조 [여기](https://learn.microsoft.com/ko-kr/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) 을 참조하십시오.
 
 ### AEM as a Cloud Service와 통합 {#integration-with-aem-as-a-cloud-service}
 
@@ -132,7 +132,7 @@ AEM측의 OAuth 구성을 진행하기에 앞서 아래 절차에 따라 accessT
    * `offline_access`
    * `email`
    * `profile`
-1. 다음 구문을 사용하여 OSGi 속성 파일 `called com.day.cq.mailer.DefaultMailService.cfg.json`을 `/apps/<my-project>/osgiconfig/config` 아래에 생성합니다. 다음 `smtp.host` 및 `smtp.port` 값은에 설명된 대로 고급 네트워킹 구성을 반영합니다. [이메일 서비스 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=en).
+1. 다음 구문을 사용하여 OSGi 속성 파일 `called com.day.cq.mailer.DefaultMailService.cfg.json`을 `/apps/<my-project>/osgiconfig/config` 아래에 생성합니다. 다음 `smtp.host` 및 `smtp.port` 값은에 설명된 대로 고급 네트워킹 구성을 반영합니다. [이메일 서비스 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=ko).
 
    ```
    {

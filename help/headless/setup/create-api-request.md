@@ -1,6 +1,6 @@
 ---
 title: API 요청 만들기 - Headless 설정
-description: 콘텐츠 조각 콘텐츠의 Headless 전달을 위해 GraphQL API를 사용하는 방법과 콘텐츠 조각을 관리하기 위해 AEM의 에셋 REST API를 사용하는 방법을 알아봅니다.
+description: 콘텐츠 조각 콘텐츠의 Headless 게재를 위해 GraphQL API를 사용하는 방법과 콘텐츠 조각을 관리하기 위해 AEM의 자산 REST API를 사용하는 방법을 알아봅니다.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 63%
 
 # API 요청 만들기 - Headless 설정 {#accessing-delivering-content-fragments}
 
-콘텐츠 조각 콘텐츠의 Headless 전달을 위해 GraphQL API를 사용하는 방법과 콘텐츠 조각을 관리하기 위해 AEM의 에셋 REST API를 사용하는 방법을 알아봅니다.
+콘텐츠 조각 콘텐츠의 Headless 게재를 위해 GraphQL API를 사용하는 방법과 콘텐츠 조각을 관리하기 위해 AEM의 자산 REST API를 사용하는 방법을 알아봅니다.
 
 ## GraphQL 및 Assets REST API란 무엇입니까? {#what-are-the-apis}
 
@@ -19,18 +19,18 @@ ht-degree: 63%
 
 * [GRAPHQL API](/help/headless/graphql-api/content-fragments.md) 콘텐츠 조각에 액세스하고 전달하기 위한 요청을 만들 수 있습니다. 이 API는 콘텐츠 조각 콘텐츠를 쿼리하고 소비하기 위한 가장 강력한 기능 집합을 제공합니다.
    * API를 사용하려면, [AEM에서 엔드포인트 정의 및 활성화](/help/headless/graphql-api/graphql-endpoint.md), 그리고 필요한 경우 [GraphiQL 인터페이스가 설치됨](/help/headless/graphql-api/graphiql-ide.md).
-* [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md)를 사용하면 콘텐츠 조각(및 기타 에셋)을 만들고 수정할 수 있습니다.
+* [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md)를 사용하면 콘텐츠 조각(및 기타 자산)을 만들고 수정할 수 있습니다.
 
 이 안내서의 나머지 부분에서는 GraphQL 액세스 및 콘텐츠 조각 전달에 중점을 둡니다.
 
-## GraphQL 끝점 활성화 {#enable-graphql-endpoint}
+## GraphQL 엔드포인트 활성화 {#enable-graphql-endpoint}
 
-GraphQL API를 사용하려면 먼저 GraphQL 끝점을 만들어야 합니다.
+GraphQL API를 사용하려면 먼저 GraphQL 엔드포인트를 만들어야 합니다.
 
 1. **도구**, **일반**&#x200B;으로 이동한 다음 **GraphQL**&#x200B;을 선택합니다.
 1. **만들기**&#x200B;를 선택합니다.
 1. 다음 **새 GraphQL 엔드포인트 만들기** 대화 상자가 열립니다. 여기에서 다음을 지정할 수 있습니다.
-   * **이름**: 끝점의 이름입니다. 어떤 텍스트든 입력할 수 있습니다.
+   * **이름**: 엔드포인트의 이름입니다. 어떤 텍스트든 입력할 수 있습니다.
    * **다음에서 제공하는 GraphQL 스키마 사용**: 드롭다운을 사용하여 필요한 구성을 선택합니다.
 1. **만들기**&#x200B;를 사용하여 확인합니다.
 1. 콘솔에서 **경로** 은 이전에 만든 구성을 기반으로 표시됩니다. 이 경로는 GraphQL 쿼리를 실행하는 데 사용됩니다.
@@ -39,13 +39,13 @@ GraphQL API를 사용하려면 먼저 GraphQL 끝점을 만들어야 합니다.
    /content/cq:graphql/<configuration-name>/endpoint
    ```
 
-GraphQL 끝점 활성화에 대한 자세한 내용은 [여기](/help/headless/graphql-api/graphql-endpoint.md)에서 확인할 수 있습니다.
+GraphQL 엔드포인트 활성화에 대한 자세한 내용은 [여기](/help/headless/graphql-api/graphql-endpoint.md)에서 확인할 수 있습니다.
 
 ## GraphiQL로 GraphQL을 사용하여 콘텐츠 쿼리
 
 정보 설계자는 채널 끝점에 대한 쿼리를 설계하여 콘텐츠를 전달합니다. 이러한 쿼리는 엔드포인트, 모델당 한 번만 고려하십시오. 이 시작 안내서에서는 하나만 만들어야 합니다.
 
-GraphiQL은 AEM 환경에 포함된 IDE입니다. [끝점을 구성](#enable-graphql-endpoint)한 다음 액세스/볼 수 있습니다.
+GraphiQL은 AEM 환경에 포함된 IDE입니다. [엔드포인트를 구성](#enable-graphql-endpoint)한 다음 액세스/볼 수 있습니다.
 
 1. AEM as a Cloud Service에 로그인한 다음 GraphiQL 인터페이스에 액세스합니다.
 
@@ -55,7 +55,7 @@ GraphiQL은 AEM 환경에 포함된 IDE입니다. [끝점을 구성](#enable-gra
    * 직접(예: `http://localhost:4502/aem/graphiql.html`)
 
 1. GraphiQL IDE는 GraphQL을 위한 브라우저 내 쿼리 편집기입니다. 이를 사용하여 콘텐츠 조각을 검색하는 쿼리를 작성하여 JSON으로 Headless 방식으로 전달할 수 있습니다.
-   * 드롭다운 오른쪽 위를 클릭하면 끝점을 선택할 수 있습니다.
+   * 드롭다운 오른쪽 위를 클릭하면 엔드포인트를 선택할 수 있습니다.
    * 맨 왼쪽 패널에 지속 쿼리가 나열됩니다(가능한 경우).
    * 왼쪽 중간 패널에서 쿼리를 작성할 수 있습니다.
    * 왼쪽 중간 패널에 결과가 표시됩니다.

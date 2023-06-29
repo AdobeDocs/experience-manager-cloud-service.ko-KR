@@ -102,7 +102,7 @@ X-Frame-Options: SAMEORIGIN은 iframe 내에서 AEM 페이지 렌더링을 방�
 
 Universal Editor 서비스에는 편집 중인 앱의 콘텐츠에 대한 올바른 백엔드 시스템을 식별하고 활용하기 위해 [균일 리소스 이름(URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name)이 필요합니다. 따라서 콘텐츠를 다시 콘텐츠 리소스에 매핑하려면 URN 스키마가 필요합니다.
 
-페이지에 추가된 계측 속성은 대부분 [HTML 마이크로데이터](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata)로 구성되는데, 이는 HTML을 더 의미 있게 만들고 HTML 문서를 색인화하는 등의 작업에 사용할 수 있는 업계 표준입니다.
+페이지에 추가된 계측 속성은 대부분 [HTML 마이크로데이터](https://developer.mozilla.org/ko-KR/docs/Web/HTML/Microdata)로 구성되는데, 이는 HTML을 더 의미 있게 만들고 HTML 문서를 색인화하는 등의 작업에 사용할 수 있는 업계 표준입니다.
 
 ### 연결 만들기 {#connections}
 

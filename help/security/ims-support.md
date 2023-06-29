@@ -48,7 +48,7 @@ IMS 인증은 AEM과 Adobe IMS 엔드포인트 간 OAuth 프로토콜을 사용�
 
 Adobe Admin Console에 대한 고객 온보딩은 AEM 인증에 Adobe IMS를 사용하기 위한 사전 요구 사항입니다.
 
-첫 번째 단계로, 고객은 Adobe IMS에서 조직이 프로비저닝되어 있어야 합니다. Adobe 엔터프라이즈 고객은 의 IMS 조직으로 표시됩니다. [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html). 이 영역은 Adobe 고객이 사용자 및 그룹에 대한 제품 권한을 관리하는 데 사용하는 포털입니다.
+첫 번째 단계로, 고객은 Adobe IMS에서 조직이 프로비저닝되어 있어야 합니다. Adobe 엔터프라이즈 고객은 의 IMS 조직으로 표시됩니다. [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html). 이 영역은 Adobe 고객이 사용자 및 그룹에 대한 제품 권한을 관리하는 데 사용하는 포털입니다.
 
 AEM 고객은 이미 조직이 프로비저닝되어 있어야 하며, IMS 프로비저닝의 일부로서 고객 인스턴스는 사용자 권한 및 액세스를 관리하기 위해 Admin Console에서 사용할 수 있게 됩니다.
 
@@ -62,7 +62,7 @@ AEM 고객은 이미 조직이 프로비저닝되어 있어야 하며, IMS 프�
 1. 시스템 관리자는 SSO(Single Sign-On)를 설정하기 위해 Admin Console에서 IDP 구성을 수행합니다.
 1. AEM 관리자는 평소대로 로컬 그룹 및 권한을 관리합니다.
 
-IDP 구성을 비롯한 Adobe Identity Management 기본 사항은 [여기에서](https://helpx.adobe.com/enterprise/using/set-up-identity.html) 다룹니다.
+IDP 구성을 비롯한 Adobe Identity Management 기본 사항은 [여기에서](https://helpx.adobe.com/kr/enterprise/using/set-up-identity.html) 다룹니다.
 
 엔터프라이즈 관리 및 Admin Console 사용에 대해서는 [여기에서](https://helpx.adobe.com/enterprise/admin-guide.html) 다룹니다.
 

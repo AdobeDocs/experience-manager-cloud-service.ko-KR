@@ -91,7 +91,7 @@ With the **Template Editor**, creating and maintaining templates is no longer a 
 >
 >국제화해야 하는 정보는 템플릿에 입력하지 마십시오. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->로컬라이제이션해야 하는 머리글 및 바닥글과 같은 템플릿 요소의 경우 [핵심 구성 요소의 로컬라이제이션 기능](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)을 사용하십시오.
+>현지화해야 하는 머리글 및 바닥글과 같은 템플릿 요소의 경우 [핵심 구성 요소의 현지화 기능](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)을 사용하십시오.
 
 ### 템플릿 폴더 만들기 - 관리자 {#creating-a-template-folder-admin}
 
@@ -477,7 +477,7 @@ Select a component in the list and click or tap **Add type** to add an additiona
 
 구성 요소 잠금이 해제될 경우:
 
-* 테두리에 열린 자물쇠 표시가 나타납니다.
+* 테두리에 열린 자물쇠 표시가 표시됩니다.
 * 구성 요소 도구 모음이 그에 따라 조정됩니다.
 * 이미 입력한 콘텐츠는 **구조** 모드에 더 이상 표시되지 않습니다.
    * 이미 입력한 콘텐츠는 초기 콘텐츠로 간주되며 **초기 콘텐츠** 모드에서만 볼 수 있습니다.
@@ -532,7 +532,7 @@ This includes unlocking container components so that further components can be a
 >
 >초기 콘텐츠는 콘텐츠를 작성하기 위한 시작점으로 사용되는 구성 요소 및 페이지 레이아웃을 준비하기 위한 것입니다. 이는 그대로 남아 있어야 하는 실제 콘텐츠용이 아닙니다. 따라서 초기 콘텐츠를 변환할 수 없습니다.
 >
->머리글이나 바닥글에서와 같이 번역 가능한 텍스트를 템플릿에 포함해야 하는 경우 [핵심 구성 요소의 로컬라이제이션 기능](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)을 사용할 수 있습니다.
+>머리글이나 바닥글에서와 같이 번역 가능한 텍스트를 템플릿에 포함해야 하는 경우 [핵심 구성 요소의 현지화 기능](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)을 사용할 수 있습니다.
 
 ### 템플릿 편집 - 레이아웃 - 템플릿 작성자 {#editing-a-template-layout-template-author}
 

@@ -71,7 +71,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 | Sites | Sites 콘솔에서는 AEM 인스턴스에서 실행되는 [사이트를 만들고, 보고, 관리](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)할 수 있습니다. 이 콘솔을 통해 페이지를 만들고, 편집하고, 복사하고, 이동하고, 삭제하며 워크플로를 시작하고, 페이지를 게시할 수 있습니다. |
 | 경험 조각 | [경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)은 여러 채널 간에 재사용할 수 있으며 변형이 있는 독립형 환경으로, 경험 또는 경험 일부를 반복해서 복사하고 붙여넣는 단조로운 작업을 수행할 필요를 없애줍니다. |
 | 자산 | 자산 콘솔을 사용하여 [이미지, 비디오, 문서 및 오디오 파일과 같은 디지털 자산](/help/assets/overview.md)을 가져오고 관리할 수 있습니다. 그런 다음 동일한 AEM 인스턴스에서 실행되는 사이트에서 이러한 자산을 사용할 수 있습니다. 또한 자산 콘솔에서는 [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)을 만들고 관리할 수도 있습니다. |
-| 개인화 | [이 콘솔은 타게팅된 콘텐츠를 작성하고 개인화된 환경을 제공하기 위한 도구 프레임워크를 제공합니다](/help/sites-cloud/authoring/personalization/overview.md). |
+| 개인화 | [이 콘솔은 타겟팅된 콘텐츠를 작성하고 개인화된 환경을 제공하기 위한 도구 프레임워크를 제공합니다](/help/sites-cloud/authoring/personalization/overview.md). |
 | 콘텐츠 조각 | [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md)을 사용하여 페이지 독립적인 콘텐츠를 디자인하고, 만들고, 선별하고, 게시할 수 있습니다. 이를 통해 페이지 작성과 Headless 게재 모두에 이상적인, 여러 위치/여러 채널에서 사용할 수 있도록 구조화된 콘텐츠를 준비할 수 있습니다. |
 
 ## 도구 패널 {#tools-panel}
@@ -98,7 +98,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
   [단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/`(슬래시)를 사용하여 모든 콘솔에서 검색을 호출할 수도 있습니다.
 
-* [솔루션](https://www.adobe.com/experience-cloud.html)
+* [솔루션](https://www.adobe.com/kr/experience-cloud.html)
 
   ![솔루션 버튼](/help/sites-cloud/authoring/assets/solutions.png)
 
@@ -392,7 +392,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
 예를 들어 **사이트** 콘솔에서 콘텐츠만 선택하거나(기본값), 콘텐츠 트리, 타임라인, 참조, 사이트 세부 정보 또는 필터 측면 패널을 선택할 수 있습니다.
 
-콘텐츠만을 선택하면 레일 아이콘만 표시됩니다. 기타 옵션이 선택된 경우, 레일 아이콘 옆에 옵션 이름이 표시됩니다.
+콘텐츠만 선택하면 레일 아이콘만 표시됩니다. 기타 옵션이 선택된 경우, 레일 아이콘 옆에 옵션 이름이 표시됩니다.
 
 >[!NOTE]
 >

@@ -26,7 +26,7 @@ ht-degree: 87%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 기능 릴리스(2023.4.0)의 릴리스 날짜는 2023년 6월 7일입니다. 다음 기능 릴리스(2023.6.0)는 2023년 6월 29일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 기능 릴리스(2023.4.0)의 릴리스 일자는 2023년 6월 7일입니다. 다음 기능 릴리스(2023.6.0)는 2023년 6월 29일에 예정되어 있습니다.
 
 ## 릴리스 비디오 {#release-video}
 
@@ -43,7 +43,7 @@ ht-degree: 87%
 
 ### [!DNL Experience Manager Sites] 프리릴리스의 새로운 기능 {#prerelease-sites}
 
-* 이제 [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en)을 사용하여 콘텐츠 조각 및 해당 참조를 [AEM 미리보기 서비스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#access-preview-service)에 게시하게 되면 사용자는 시작하기 전에 분리된 미리보기 애플리케이션을 통해 최종 경험을 미리 볼 수 있습니다.
+* 이제 [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=ko)을 사용하여 콘텐츠 조각 및 해당 참조를 [AEM 미리보기 서비스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=ko#access-preview-service)에 게시하게 되면 사용자는 시작하기 전에 분리된 미리보기 애플리케이션을 통해 최종 경험을 미리 볼 수 있습니다.
 * 이제 AEM GraphQL을 사용하여 Headless 시나리오에서 이미지를 웹 게재에 동적으로 최적화할 수 있습니다. [쿼리 변수](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=en#query-variables) 는 GraphQL 쿼리에서 정의하여 분리된 클라이언트 애플리케이션 요청이 AEM에서 최적화된 이미지를 제공하도록 할 수 있습니다.
 * 태그: [컨텐츠 조각 변형](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=en) 는 이제 AEM GraphQL 콘텐츠 게재 API를 사용하여 JSON으로 출력할 수 있습니다.
 
@@ -72,7 +72,7 @@ ht-degree: 87%
 
 ### [!DNL Assets] 프리릴리스의 기능 {#prerelease-feature-assets}
 
-* Dynamic Media - 이미지 프로필의 일부 스마트 자르기 관련 필드에 대한 사용자 인터페이스가 이제 스마트 자르기를 정의하기 위한 현재 지침을 반영하도록 업데이트되었습니다. [자르기 옵션](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en#crop-options)을 참조하십시오.
+* Dynamic Media - 이미지 프로필의 일부 스마트 자르기 관련 필드에 대한 사용자 인터페이스가 이제 스마트 자르기를 정의하기 위한 현재 지침을 반영하도록 업데이트되었습니다. [자르기 옵션](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=ko#crop-options)을 참조하십시오.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -85,7 +85,7 @@ ht-degree: 87%
 * [AEM 페이지 편집기 내 적응형 양식](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): 이제 AEM 페이지 편집기를 사용하여 여러 양식을 빠르게 만들고 사이트 페이지에 추가할 수 있습니다. 이 기능을 통해 콘텐츠 작성자는 동적 비헤이비어, 유효성 검사, 데이터 통합, 기록 문서 생성 및 비즈니스 프로세스 자동화 등 적응형 양식 구성 요소의 기능을 사용하여 Sites 페이지에서 원활한 데이터 캡처 경험을 만들 수 있습니다. 다음과 같은 작업을 수행할 수 있습니다.
 
    * AEM Sites 편집기 또는 경험 조각에서 양식 구성 요소를 적응형 양식 컨테이너 구성 요소로 드래그 앤 드롭하여 적응형 양식을 만듭니다.
-   * AEM Sites 편집기 내에서 적응형 양식 마법사를 사용하여 Sites 페이지와는 별개로 양식을 만들게 되면, 여러 페이지에서 해당 양식을 자유롭게 재사용할 수 있습니다.
+   * AEM Sites 편집기 내에서 적응형 양식 마법사를 사용하여 Sites 페이지와는 별개로 양식을 만들게 되면 여러 페이지에서 해당 양식을 자유롭게 재사용할 수 있습니다.
    * Sites 페이지에 여러 양식을 추가하여 사용자 경험을 간소화하고 더 많은 유연성을 제공합니다.
 
      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
@@ -94,7 +94,7 @@ ht-degree: 87%
 
   공공기관용 Adobe Acrobat Sign과 통합하여 Adobe의 파트너와 공공기관 고객들은 가장 중요하고 민감한 비즈니스 라인에서 적응형 양식 전자 서명을 사용할 수 있습니다. 이 보안 계층이 추가되면 Adobe의 공공기관 고객들이 안심할 수 있도록 모든 전자 서명은 FedRAMP Moderate 규정을 완전히 준수해야 합니다.
 
-* 규칙 편집기의 사용자 지정 오류 처리기로 향상된 오류 처리: 이제 외부 서비스에서 반환한 오류에 대한 응답으로 사용자 지정 함수(클라이언트 라이브러리 사용)를 호출하고 최종 사용자에게 맞춤 응답을 제공할 수 있습니다. 서비스에서 반환된 오류에 대해 특정 작업을 수행할 수도 있습니다. 예를 들어, 특정 오류 코드의 백엔드에서 사용자 정의 워크플로를 호출하거나 서비스가 중단되었음을 고객에게 알려 줄 수 있습니다.
+* 규칙 편집기의 사용자 지정 오류 처리기로 향상된 오류 처리: 이제 외부 서비스에서 반환한 오류에 대한 응답으로 사용자 지정 함수(클라이언트 라이브러리 사용)를 호출하고 최종 사용자에게 맞춤 응답을 제공할 수 있습니다. 서비스에서 반환된 오류에 대해 특정 작업을 수행할 수도 있습니다. 예를 들어 특정 오류 코드의 백엔드에서 사용자 정의 워크플로를 호출하거나 서비스가 중단되었음을 고객에게 알려 줄 수 있습니다.
 
   이 기능을 통해 OOTB 오류 핸들러와 역으로 호환되는 표준 기반 오류 응답을 도입하여 보다 높은 유연성과 제어 기능을 제공함으로써 전체 오류 처리 기능을 개선할 수 있습니다.
 

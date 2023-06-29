@@ -14,9 +14,9 @@ ht-degree: 82%
 >[!CONTEXTUALHELP]
 >id="aemcloud_chooseteam"
 >title="적합한 팀 선택"
->abstract="Adobe Experience Manager 배포를 성공적으로 이끌 수 있도록 적합한 인력을 배치하십시오."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="KPI 정렬"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=en" text="KPI 평가"
+>abstract="Adobe Experience Manager 배포를 정상적으로 이끌 수 있도록 적합한 인력을 배치하십시오."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=ko" text="KPI 정렬"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=ko" text="KPI 평가"
 
 조직 내 여러 부서에서 디지털 환경의 다양한 측면을 보일 수 있습니다. 거버넌스를 갖추지 않으면 끝없는 논쟁과 내분, 혼란의 상황이 발생할 것입니다.
 
@@ -28,7 +28,7 @@ ht-degree: 82%
 
 ## **AEM Experience Manager Sites에 대한 주요 역할**
 
-성과가 좋은 팀은 귀사의 배포 팀과 같이 9명의 인원이 적절한 자리에 배치되어야 합니다. Adobe Experience Manager Sites를 통한 귀사의 성공 여부는 팀 멤버의 힘과 이들 팀원이 협력하는 정도에 따라 결정됩니다. 제안된 자격 요건을 갖춘 사람들에게 이러한 9가지의 역할을 할당해야 합니다.
+성과가 좋은 팀은 귀사의 배포 팀과 같이 9명의 인원이 적절한 자리에 배치되어야 합니다. Adobe Experience Manager Sites를 통한 귀사의 성공 여부는 팀원의 힘과 이들 팀원이 협력하는 정도에 따라 결정됩니다. 제안된 자격 요건을 갖춘 사람들에게 이러한 9가지의 역할을 할당해야 합니다.
 
 | 역할 | 기술 | 능력 수준 | 자질 |
 |--- |--- |--- |--- |
@@ -48,13 +48,13 @@ ht-degree: 82%
 
 ![구현을 위한 역할 검토](assets/team_involvement.png)
 
-**구현 팀과 함께 이 목록을 검토**&#x200B;하고 각 역할에 대해 관련 자격 조건을 갖춘 인력이 있는지 확인하십시오. Adobe Experience Cloud에 익숙하지 않은 팀 멤버는 [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) 학습 리소스를 사용하여 [Adobe 디지털 학습](https://learning.adobe.com/certification.html)을 통해 인증을 받을 수 있습니다.
+**구현 팀과 함께 이 목록을 검토**&#x200B;하고 각 역할에 대해 관련 자격 조건을 갖춘 인력이 있는지 확인하십시오. Adobe Experience Cloud에 익숙하지 않은 팀원은 [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) 학습 리소스를 사용하여 [Adobe 디지털 학습](https://learning.adobe.com/certification.html)을 통해 인증을 받을 수 있습니다.
 
 ## **AEM Experience Manager Assets에 대한 주요 역할**
 
 설계자부터 스크럼 마스터까지, DAM 라이브러리 관리자를 포함한 이 팀의 모든 역할은 없어서는 안 될 구성원입니다.
 
-Adobe Experience Manager Assets 구현을 성공적으로 실행하기 위해 필요한 대부분의 인력을 갖추고 있을 수 있습니다. 이 목록은 Adobe Experience Manager Sites용 목록과 유사하며, 디지털 에셋을 쉽게 찾을 수 있도록 조직하고 레이블을 지정하려면 라이브러리 관리자가 필요합니다.
+Adobe Experience Manager Assets 구현을 정상적으로 실행하기 위해 필요한 대부분의 인력을 갖추고 있을 수 있습니다. 이 목록은 Adobe Experience Manager Sites용 목록과 유사하며, 디지털 에셋을 쉽게 찾을 수 있도록 조직하고 레이블을 지정하려면 라이브러리 관리자가 필요합니다.
 
 | 역할 | 기술 | 능력 수준 | 자질 |
 |--- |--- |--- |--- |

@@ -107,8 +107,8 @@ AEM as a Cloud Service는 IMS를 사용하여 AEM과 나머지 Adobe Experience 
 
 온보딩 여정의 콘텐츠를 능가하려는 경우 다음은 추가적인 옵션 리소스입니다.
 
-* [Admin Console 개요](https://helpx.adobe.com/enterprise/using/admin-console.html) - Admin Console에 대한 포괄적인 개요
-* [Adobe ID 만들기 또는 업데이트](https://helpx.adobe.com/ca/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - Adobe ID를 만들고, 변경하고, 여러 Adobe ID를 관리하는 방법에 대해 알아봅니다.
+* [Admin Console 개요](https://helpx.adobe.com/kr/enterprise/using/admin-console.html) - Admin Console에 대한 포괄적인 개요
+* [Adobe ID 만들기 또는 업데이트](https://helpx.adobe.com/kr/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - Adobe ID를 만들고, 변경하고, 여러 Adobe ID를 관리하는 방법에 대해 알아봅니다.
 * [SAML 2.0 Authentication Handler](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html) - AEM은 SAML 인증 핸들러와 함께 제공됩니다. 이 핸들러는 HTTP POST 바인딩을 사용하여 SAML 2.0 인증 요청 프로토콜(Web-SSO 프로필)을 지원합니다.
-* [관리 역할](https://helpx.adobe.com/enterprise/using/admin-roles.ug.html) - 조직은 Adobe Admin Console을 사용하여 Adobe 제품 액세스 및 사용을 세분화하고 관리할 수 있는 유연한 관리 계층 구조를 정의할 수 있습니다.
-* [지원 및 전문가 세션](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) - Admin Console에서 지원 옵션을 이용하고, 지원 사례를 관리하고, 전문가 세션을 예약하는 방법 등에 대해 알아봅니다.
+* [관리 역할](https://helpx.adobe.com/kr/enterprise/using/admin-roles.ug.html) - 조직은 Adobe Admin Console을 사용하여 Adobe 제품 액세스 및 사용을 세분화하고 관리할 수 있는 유연한 관리 계층 구조를 정의할 수 있습니다.
+* [지원 및 전문가 세션](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) - Admin Console에서 지원 옵션을 이용하고, 지원 사례를 관리하고, 전문가 세션을 예약하는 방법 등에 대해 알아봅니다.

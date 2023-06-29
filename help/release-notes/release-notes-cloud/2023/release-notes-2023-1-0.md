@@ -25,7 +25,7 @@ ht-degree: 100%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 2023.1.0 기능 릴리스의 릴리스 날짜는 2023년 2월 9일입니다. 다음 기능 릴리스(2023.2.0)는 2023년 4월 12일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 2023.1.0 기능 릴리스의 릴리스 일자는 2023년 2월 9일입니다. 다음 기능 릴리스(2023.2.0)는 2023년 4월 12일에 예정되어 있습니다.
 
 ## 릴리스 비디오 {#release-video}
 
@@ -64,7 +64,7 @@ ht-degree: 100%
 
 ### [!DNL Forms] 프리릴리스의 새로운 기능 {#prerelease-features-forms}
 
-* **[데이터 캡처 핵심 구성 요소를 사용하여 적응형 양식 작성](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en)**: [적응형 양식 편집기를 사용](/help/forms/creating-adaptive-form-core-components.md)하여 표준화된 데이터 캡처 구성 요소(핵심 구성 요소)를 기반으로 양식을 만듭니다. 이 구성 요소는 맞춤화 기능을 제공하고, 개발 시간을 단축하고, 유지 관리 비용을 줄여 디지털 등록 경험을 개선합니다.
+* **[데이터 캡처 핵심 구성 요소를 사용하여 적응형 양식 작성](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)**: [적응형 양식 편집기를 사용](/help/forms/creating-adaptive-form-core-components.md)하여 표준화된 데이터 캡처 구성 요소(핵심 구성 요소)를 기반으로 양식을 만듭니다. 이 구성 요소는 맞춤화 기능을 제공하고, 개발 시간을 단축하고, 유지 관리 비용을 줄여 디지털 등록 경험을 개선합니다.
 * **[핵심 구성 요소 기반 적응형 양식의 스타일 유지를 위한 프론트엔드 파이프라인 지원](/help/forms/using-themes-in-core-components.md)**: 프론트엔드 파이프라인을 통해 핵심 구성 요소 기반 적응형 양식에 맞는 손쉬운 맞춤형 BEM 기반의 테마를 배포하여 양식의 디자인을 개선합니다.
 * **[핵심 구성 요소 기반 적응형 양식의 기록 문서 만들기](/help/forms/generate-document-of-record-core-components.md)**: 장기간 보존하기 위해 인쇄 또는 문서 형식으로 제출 시 핵심 구성 요소 기반 적응형 양식의 기록을 만듭니다.
 
@@ -86,7 +86,7 @@ ht-degree: 100%
 
   >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
 
-  RDE에서 코드를 성공적으로 검증한 후 프로덕션 파이프라인을 통해 스테이지 및 프로덕션 환경에 배포하기 전에 클라우드 개발 환경에 배포하여 Cloud Manager 품질 게이트를 실행하는 것이 좋습니다.
+  RDE에서 코드를 정상적으로 검증한 후 프로덕션 파이프라인을 통해 스테이지 및 프로덕션 환경에 배포하기 전에 클라우드 개발 환경에 배포하여 Cloud Manager 품질 게이트를 실행하는 것이 좋습니다.
 
   각 프로그램에는 한 개의 RDE가 포함되어 더 많은 프로그램에 라이선스가 부여될 수 있습니다.
 

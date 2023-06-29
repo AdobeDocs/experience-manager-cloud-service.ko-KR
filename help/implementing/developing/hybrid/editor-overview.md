@@ -69,7 +69,7 @@ SPA 편집기를 SPA와 AEM 간의 중재자로 간주하여 두 사이의 상�
 
 ### 기본 SPA 편집기 워크플로 {#basic-spa-editor-workflow}
 
-SPA 편집기의 핵심 요소에 중점을 두면 AEM 내 SPA를 편집하는 높은 수준의 워크플로가 다음과 같이 작성자에게 나타납니다.
+SPA 편집기의 핵심 요소에 중점을 두면 AEM 내 SPA를 편집하는 높은 수준의 워크플로가 다음과 같이 작성자에게 표시됩니다.
 
 ![애니메이션 SPA 워크플로](assets/workflow.gif)
 
@@ -163,7 +163,7 @@ AEM SPA Editor SDK와 구동할 수 있도록 추가 SPA 프레임워크를 구�
 
 ### 여러 선택기 사용 {#multiple-selectors}
 
-추가 사용자 지정 선택기를 AEM SPA SDK용으로 개발된 SPA의 일부로 정의하고 사용할 수 있습니다. 단, 이 지원을 생성하려면 `model`선택기는 첫 번째 선택기가 되고 확장자는 JSON 내보내기의 요구 사항에 `.json`따라야 합니다.
+추가 사용자 정의 선택기를 AEM SPA SDK용으로 개발된 SPA의 일부로 정의하고 사용할 수 있습니다. 단, 이 지원을 생성하려면 `model`선택기는 첫 번째 선택기가 되고 확장자는 JSON 내보내기의 요구 사항에 `.json`따라야 합니다.
 
 ### 텍스트 편집기 요구 사항 {#text-editor-requirements}
 

@@ -56,7 +56,7 @@ AEM as Cloud Service은 즉각적인 조치가 필요한 중요한 장애 발생
 
 ![지원에 문의 2](/help/operations/assets/contact-support2.png)
 
-모든 지원 티켓과 마찬가지로 지원 티켓이 [Adobe Admin Console의 지원 사례 탭](https://helpx.adobe.com/enterprise/using/support-for-enterprise.html)에 나타나며, 여기에서 지원 티켓을 추적하고 댓글을 추가할 수 있습니다.
+모든 지원 티켓과 마찬가지로 지원 티켓이 [Adobe Admin Console의 지원 사례 탭](https://helpx.adobe.com/kr/enterprise/using/support-for-enterprise.html)에 나타나며, 여기에서 지원 티켓을 추적하고 댓글을 추가할 수 있습니다.
 
 ![Admin Console 지원](/help/operations/assets/admin-console-support.png)
 

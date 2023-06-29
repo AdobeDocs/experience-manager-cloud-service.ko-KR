@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3462'
-ht-degree: 47%
+ht-degree: 49%
 
 ---
 
@@ -80,7 +80,7 @@ AEMas a Cloud Service 의 애플리케이션용으로 작성된 콘텐츠 패키
 * AEM 웹 콘솔의 구성 관리자를 통해 개발자의 로컬 AEM 환경에 필요한 변경 작업을 수행하고 로컬 파일 시스템의 AEM 프로젝트로 결과 내보내기
 * 로컬 파일 시스템의 AEM 프로젝트에서 OSGI 구성을 수동으로 만들기, 속성 이름은 AEM 콘솔의 구성 관리자 참조.
 
-[ AEM as a Cloud Service용 OSGi 구성](/help/implementing/deploying/configuring-osgi.md)에서 OSGI 구성에 대해 자세히 살펴봅니다.
+[AEM as a Cloud Service용 OSGi 구성](/help/implementing/deploying/configuring-osgi.md)에서 OSGI 구성에 대해 자세히 살펴봅니다.
 
 ## 변경 가능한 콘텐츠 {#mutable-content}
 
@@ -174,7 +174,7 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="패키지 관리자 - 변경 가능한 콘텐츠 패키지 마이그레이션"
->abstract="콘텐츠 패키지를 &#39;일회성&#39;으로 설치해야 하는 사용 사례에 대해 패키지 관리자 사용을 살펴보십시오. 설치에는 프로덕션 문제를 디버깅하기 위해 프로덕션에서 스테이징으로 특정 콘텐츠를 가져오는 작업, 온프레미스 환경에서 AEM Cloud 환경으로 소규모 콘텐츠 패키지를 전송하는 작업 등이 포함됩니다."
+>abstract="콘텐츠 패키지를 “일회성”으로 설치해야 하는 사용 사례에서 패키지 관리자 사용에 대해 알아봅니다. 설치에는 프로덕션 문제를 디버깅하기 위해 프로덕션에서 스테이징으로 특정 콘텐츠를 가져오고 온프레미스 환경에서 AEM Cloud 환경 등으로 소형 콘텐츠 패키지를 이전하는 등의 작업이 포함됩니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en" text="콘텐츠 전송 도구"
 
 콘텐츠 패키지를 “일회성”으로 설치해야 하는 사용 사례가 있습니다. 예를 들어 프로덕션 문제를 디버깅하기 위해 프로덕션에서 스테이징으로 특정 콘텐츠를 가져옵니다. 이러한 시나리오의 경우 [패키지 관리자](/help/implementing/developing/tools/package-manager.md) AEM의 환경에서 as a Cloud Service으로 사용할 수 있습니다.

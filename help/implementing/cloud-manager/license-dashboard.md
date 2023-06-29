@@ -49,13 +49,13 @@ Cloud Manager 라이선스 대시보드를 사용하면 다음 정보에 쉽게 
 
 >[!TIP]
 >
->다음을 참조하십시오 [Admin Console 개요](https://helpx.adobe.com/enterprise/using/admin-console.html) Admin Console에서 전체 조직의 Adobe 권한을 관리하는 방법을 알아봅니다.
+>다음을 참조하십시오 [Admin Console 개요](https://helpx.adobe.com/kr/enterprise/using/admin-console.html) Admin Console에서 전체 조직의 Adobe 권한을 관리하는 방법을 알아봅니다.
 
 ## FAQ {#faq}
 
 ### 콘텐츠 요청이란? {#what-is-a-content-request}
 
-콘텐츠 요청은 콘텐츠 또는 데이터를 HTML 포맷을 사용하여 페이지 보기로 전달하거나 JSON 포맷을 사용하여 API 호출로 전달하기 위해 AEM Sites 또는 콘텐츠 전송 네트워크와 같은 고객 제공 캐싱 시스템으로 들어오는 요청입니다.
+콘텐츠 요청은 콘텐츠 또는 데이터를 HTML 포맷을 사용하여 페이지 보기로 전달하거나 JSON 포맷을 사용하여 API 호출로 전달하기 위해 AEM Sites 또는 콘텐츠 게재 네트워크와 같은 고객 제공 캐싱 시스템으로 들어오는 요청입니다.
 
 콘텐츠 요청은 각 페이지 보기 또는 5개의 API 호출마다 계산되며, 콘텐츠 요청을 수신하기 위한 첫 번째 캐싱 시스템의 인그레스에서 측정됩니다. 콘텐츠 요청은 프로덕션 환경에 대해서만 계산됩니다.
 
@@ -83,7 +83,7 @@ Cloud Manager 라이선스 대시보드를 사용하면 다음 정보에 쉽게 
 | 트래픽 차단 | 브라우저에서 추적기 차단을 사용하면 일부 요청이 추적되지 않도록 옵트아웃할 수 있습니다. |
 | 방화벽 | 방화벽이 Analytics 추적을 차단할 수 있습니다. 이는 회사 방화벽에서 더 자주 발생합니다. |
 
-### 내 콘텐츠 요청 볼륨에 대해 자세히 알고 싶으면 어떻게 하나요? {#current-request-volumes}
+### 내 콘텐츠 요청 볼륨에 대해 자세히 알고 싶으면 어떻게 해야 합니까? {#current-request-volumes}
 
 라이선스 대시보드에 표시된 콘텐츠 요청 볼륨에 대한 추가 인사이트가 필요한 경우, Adobe 팀에서 콘텐츠 요청의 상위 볼륨 드라이버를 보여 주는 보고서를 제공할 수 있습니다. 최상위 사용 보고서를 요청하려면 Adobe 팀이나 고객 지원 Adobe에 문의하십시오.
 

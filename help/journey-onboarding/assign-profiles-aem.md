@@ -4,10 +4,10 @@ description: 클라우드 리소스를 구성한 후에는 AEM 제품 프로필�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: e5142052423abee7a2e2ed64affb2b04a93bf0d1
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 94%
+source-wordcount: '898'
+ht-degree: 99%
 
 ---
 
@@ -41,8 +41,8 @@ AEM을 사용하려면 팀원이 하나 이상의 AEM 제품 프로필에 할당
 >
 >AEM as a Cloud Service 제품 프로필에 할당된 모든 사용자는 **Cloud Manager 사용** 역할을 통해 Cloud Manager에 대한 읽기 전용 액세스 권한이 있습니다.
 >
->을(를) 가진 사용자 **Cloud Manager** 사용자 역할은 Cloud Manager에 로그인한 다음 프로그램 메뉴 옵션을 사용하여 AEM 작성자 환경(있는 경우)으로 이동할 수만 있습니다. **Cloud Manager 사용** 역할은 프로그램 세부 정보에 액세스하기에 충분하지 않습니다. 이러한 액세스 권한이 필요한 경우 사용자는 시스템 관리자로부터 추가 역할을 부여받아야 합니다.
->다음을 참조하십시오. [아래 추가 리소스 섹션](#additional-resources) cloud Manager 사용자 역할에 대한 자세한 내용은 을 참조하십시오.
+>**Cloud Manager 사용**&#x200B;역할만 있는 사용자는 프로그램 메뉴 옵션을 통해 Cloud Manager에 로그인하고 AEM 작성자 환경(존재하는 경우)으로 이동할 수 있습니다. **Cloud Manager 사용** 역할은 프로그램 세부 정보에 액세스하기에 충분하지 않습니다. 이러한 액세스 권한이 필요한 경우 사용자는 시스템 관리자로부터 추가 역할을 부여받아야 합니다.
+>Cloud Manager 사용자 역할에 대한 자세한 내용은 [아래의 추가 리소스 섹션](#additional-resources) 을 참조하십시오.
 
 >[!CAUTION]
 >
@@ -96,7 +96,7 @@ Admin Console에서 AEM 제품 프로필을 보려면 다음 단계를 따르십
 
    ![팀원 추가](/help/journey-onboarding/assets/add-team3.png)
 
-1. 액세스 권한이 필요한 팀원의 정보가 있는 경우 개발, 스테이징 및 프로덕션을 포함한 모든 환경에 대해 이 단계를 반복합니다.
+1. 액세스 권한이 필요한 팀원의 정보가 있는 경우 개발, 스테이지 및 프로덕션을 포함한 모든 환경에 대해 이 단계를 반복합니다.
 
 추가한 사용자는 이제 AEM as a Cloud Service 작성자 서비스에 액세스할 수 있습니다.
 

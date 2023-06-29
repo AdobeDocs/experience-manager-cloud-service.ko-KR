@@ -150,7 +150,7 @@ ht-degree: 59%
    * **Git 분기** - 이 옵션은 선택한 파이프라인에서 코드를 검색해야 하는 분기를 정의합니다.
    * **코드 위치** - 이 옵션은 파이프라인이 코드를 검색해야 하는 선택한 저장소 분기의 경로를 정의합니다.
       * 웹 계층 구성 파이프라인의 경우 이 경로에는 일반적으로 `conf.d`, `conf.dispatcher.d`, 및 `opt-in` 디렉토리.
-      * 예를 들어 프로젝트 구조가 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en)에서 생성된 경우 경로는 `/dispatcher/src`입니다.
+      * 예를 들어 프로젝트 구조가 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)에서 생성된 경우 경로는 `/dispatcher/src`입니다.
 
    ![웹 계층 파이프라인](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-web-tier.png)
 

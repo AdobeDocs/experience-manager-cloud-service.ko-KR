@@ -55,7 +55,7 @@ ht-degree: 100%
 
 ### [!DNL Forms] 프리릴리스에서 사용 가능한 새로운 기능 {#new-features-available-in-channel}
 
-* **[데이터 캡처 핵심 구성 요소를 사용하여 적응형 양식 작성](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en)**: [적응형 양식 편집기를 사용](/help/forms/creating-adaptive-form-core-components.md)하여 표준화된 데이터 캡처 구성 요소(핵심 구성 요소)를 기반으로 양식을 만듭니다. 이 구성 요소는 맞춤화 기능을 제공하고, 개발 시간을 단축하고, 유지 관리 비용을 줄여 디지털 등록 경험을 개선합니다.
+* **[데이터 캡처 핵심 구성 요소를 사용하여 적응형 양식 작성](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)**: [적응형 양식 편집기를 사용](/help/forms/creating-adaptive-form-core-components.md)하여 표준화된 데이터 캡처 구성 요소(핵심 구성 요소)를 기반으로 양식을 만듭니다. 이 구성 요소는 맞춤화 기능을 제공하고, 개발 시간을 단축하고, 유지 관리 비용을 줄여 디지털 등록 경험을 개선합니다.
 
 * **[핵심 구성 요소 기반 적응형 양식의 스타일 유지를 위한 프론트엔드 파이프라인 지원](/help/forms/using-themes-in-core-components.md)**: 프론트엔드 파이프라인을 통해 핵심 구성 요소 기반 적응형 양식에 맞는 표준화된 BEM 기반의 테마를 배포하여 양식의 디자인을 개선하고 조직의 브랜드 승인 디자인 지침을 준수합니다.
 

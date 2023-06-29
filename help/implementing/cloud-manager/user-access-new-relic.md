@@ -116,7 +116,7 @@ New Relic One에 로그인하는 동안 이메일을 확인하라는 메시지�
 
 이메일 주소를 확인하지 않는 경우 New Relic은 이메일 주소와 연결된 가장 최근에 만든 사용자 레코드로 로그인을 시도합니다. 로그인할 때마다 이메일을 확인하지 않으려면 로그인 화면에서 **내 정보 저장** 확인란을 클릭합니다.
 
-도움이 더 필요하면 다음을 통해 지원 티켓을 엽니다. [AEM 지원 포털](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+도움이 더 필요하면 다음을 통해 지원 티켓을 엽니다. [AEM 지원 포털](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html).
 
 ## New Relic One 액세스 문제 해결 {#troubleshooting}
 
@@ -150,7 +150,7 @@ New Relic One에 사용자를 추가하는 경우 다음 제한이 적용됩니�
 * New Relic에 추가된 사용자는 **제한됨** 유형이 됩니다. [자세한 내용은 New Relic 설명서를 ](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)참조하십시오.
 * AEM as a Cloud Service는 New Relic One APM 솔루션만 제공하며 경고, 로깅 또는 API 통합에 대한 지원은 제공하지 않습니다.
 
-as a Cloud Service 프로그램의 New Relic One AEM 제공에 대한 추가 도움말 또는 추가 지침을 보려면 [AEM 지원 포털](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+as a Cloud Service 프로그램의 New Relic One AEM 제공에 대한 추가 도움말 또는 추가 지침을 보려면 [AEM 지원 포털](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html).
 
 ## New Relic One에 대한 FAQ {#faqs}
 

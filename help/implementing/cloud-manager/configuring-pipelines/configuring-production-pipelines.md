@@ -13,7 +13,7 @@ ht-degree: 96%
 
 # 프로덕션 파이프라인 구성 {#configure-production-pipeline}
 
-코드를 빌드하고 프로덕션 환경에 배포하기 위해 프로덕션 파이프라인을 구성하는 방법을 알아봅니다. 프로덕션 파이프라인은 먼저 코드를 스테이지 환경에 배포하고 승인 시 동일한 코드를 프로덕션 환경에 배포합니다.
+코드를 빌드하고 프로덕션 환경에 배포하기 위해 프로덕션 파이프라인을 구성하는 방법을 알아봅니다. 프로덕션 파이프라인은 먼저 코드를 스테이징 환경에 배포하고 승인 시 동일한 코드를 프로덕션 환경에 배포합니다.
 
 프로덕션 파이프라인을 구성하려면 사용자에게 **[배포 관리자](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** 역할이 있어야 합니다.
 
@@ -159,7 +159,7 @@ ht-degree: 96%
       * 분기 이름의 처음 몇 글자를 입력하면 이 필드의 자동 완성 기능이 일치하는 분기를 찾아 선택하는 데 도움이 됩니다.
    * **코드 위치** - 이 옵션은 파이프라인이 코드를 검색해야 하는 선택한 저장소 분기의 경로를 정의합니다.
       * 웹 계층 구성 파이프라인의 경우 일반적으로 `conf.d`, `conf.dispatcher.d` 및 `opt-in` 디렉터리가 포함된 경로입니다.
-      * 예를 들어 프로젝트 구조가 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en)에서 생성된 경우 경로는 `/dispatcher/src`입니다.
+      * 예를 들어 프로젝트 구조가 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)에서 생성된 경우 경로는 `/dispatcher/src`입니다.
    * **프로덕션에 배포 전 일시 중지** - 이 옵션은 프로덕션에 배포하기 전에 파이프라인을 일시 중지합니다.
    * **예약됨** - 이 옵션을 사용하면 예약된 프로덕션 배포를 활성화할 수 있습니다.
 

@@ -13,7 +13,7 @@ ht-degree: 92%
 
 파이프라인을 사용하여 사이트 테마를 배포하는 방법에 대해 알아봅니다.
 
-## 지금까지의 이야기 {#story-so-far}
+## 지금까지의 스토리 {#story-so-far}
 
 AEM 빠른 사이트 생성 여정의 이전 문서인 [사이트 테마 맞춤화](customize-theme.md)에서는 라이브 AEM 콘텐츠를 사용하여 테마를 구축하고, 맞춤화하고, 테스트하는 방법에 대해 알아보았습니다. 여기에서 알게 된 내용은 다음과 같습니다.
 
@@ -114,7 +114,7 @@ AEM은 강력한 도구로서 다양한 추가 옵션을 제공합니다. 이 �
 * [Webpack](https://webpack.js.org) - 사이트를 간편하게 구축하기 위해 사용하는 AEM 테마는 Webpack을 사용합니다.
 * [페이지 생성 및 관리](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - 템플릿으로 AEM 사이트를 만든 다음 추가로 맞춤화하고자 하는 경우 여기에서 AEM 사이트의 페이지를 관리하는 방법에 대한 내용을 살펴볼 수 있습니다.
 * [패키지를 사용하여 작업하는 방법](/help/implementing/developing/tools/package-manager.md) - 패키지를 사용하여 저장소 콘텐츠를 가져오고 내보낼 수 있습니다. 이 문서에서는 AEM 6.5의 패키지를 사용하여 작업하는 방법에 대해 설명합니다(AEMaaCS에도 적용됨).
-* [온보딩 여정](/help/journey-onboarding/overview.md) - 이 가이드는 팀이 구성되어 AEM as a Cloud Service에 액세스할 수 있도록 하는 출발점이 됩니다.
+* [온보딩 여정](/help/journey-onboarding/overview.md) - 이 안내서는 팀이 구성되어 AEM as a Cloud Service에 액세스할 수 있도록 하는 출발점이 됩니다.
 * [Adobe Experience Manager Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) - Cloud Manager의 기능에 대한 자세한 내용은 Cloud Manager 설명서를 살펴보십시오.
 * [사이트 관리 설명서](/help/sites-cloud/administering/site-creation/create-site.md) - 빠른 사이트 생성 도구의 기능에 대한 자세한 내용은 사이트 생성에 대한 기술 문서를 확인하십시오.
 * [프론트엔드 파이프라인을 사용하여 사이트 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - 이 문서에서는 프론트엔드 파이프라인을 사용하여 프론트엔드 개발 프로세스의 잠재력을 최대한 활용하기 위해 알아 두어야 할 몇 가지 고려 사항을 설명합니다.

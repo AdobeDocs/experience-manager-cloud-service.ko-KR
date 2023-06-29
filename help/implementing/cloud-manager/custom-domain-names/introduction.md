@@ -2,10 +2,10 @@
 title: 사용자 정의 도메인 이름 소개
 description: Cloud Manager의 UI를 사용하면 사용자 정의 도메인을 추가하여 셀프서비스 방식을 사용하여 사이트를 고유한 브랜드 이름으로 식별할 수 있습니다.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 100%
+source-wordcount: '766'
+ht-degree: 98%
 
 ---
 
@@ -74,4 +74,4 @@ AEMaaCS에서 사용자 정의 도메인 이름을 사용하는 데에는 여러
 * 동일한 도메인 이름을 둘 이상의 환경에서 사용할 수 없습니다.
 * 한 번에 하나의 도메인 이름만 추가할 수 있습니다.
 * AEM as a Cloud Service는 `*.example.com`와 같은 와일드카드 도메인을 지원하지 않습니다.
-* 사용자 정의 도메인 이름을 추가하기 전에 사용자 정의 도메인 이름이 포함된 유효한 SSL 인증서가(와일드카드 인증서가 유효함) 프로그램에 설치되어 있어야 합니다. 자세한 내용은 [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)를 참조하십시오.
+* 사용자 정의 도메인 이름을 추가하기 전에 사용자 정의 도메인 이름이 포함된 유효한 SSL 인증서가(와일드카드 인증서가 유효함) 프로그램에 설치되어 있어야 합니다. 다음을 참조하십시오 [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) 자세히 알아보십시오.

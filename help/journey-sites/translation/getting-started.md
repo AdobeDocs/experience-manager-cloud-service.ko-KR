@@ -16,7 +16,7 @@ ht-degree: 93%
 
 AEM Sites 콘텐츠를 구성하는 방법 및 AEM의 번역 도구의 작동 방식에 대해 알아봅니다.
 
-## 지금까지의 이야기 {#story-so-far}
+## 지금까지의 스토리 {#story-so-far}
 
 AEM Sites 번역 여정의 이전 문서인 [AEM Sites 콘텐츠 및 AEM에서의 AEM Sites 콘텐츠 번역 방법에 대해 알아보기](learn-about.md)에서는 AEM Sites의 기본 이론에 대해 알아보았습니다. 여기에서 알게 된 내용은 다음과 같습니다.
 

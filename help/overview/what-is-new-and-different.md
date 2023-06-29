@@ -200,7 +200,7 @@ AEM as a Cloud Service에서는 OSGi 번들 및 관련 구성이 관리되는 �
 
 >[!NOTE]
 >
->Cloud 빠른 시작은 일부 AEM Sites 및 AEM Assets 기능만을 허용합니다. 대부분의 확장 기능을 개발 및 테스트할 수 있는 간단한 작성자 환경으로 구성되어 있습니다.
+>Cloud QuickStart는 일부 AEM Sites 및 AEM Assets 기능만 허용합니다. 대부분의 확장 기능을 개발 및 테스트할 수 있는 간단한 작성자 환경으로 구성되어 있습니다.
 
 ## 작업 및 성능 {#operations-and-performance}
 
@@ -228,7 +228,7 @@ AEM as a Cloud Service를 사용하면 이러한 작업이 자동화되므로 �
 
 AEM as a Cloud Service의 주요 변경 내용은 작성자 계층 액세스에 대한 Adobe ID 사용이 완전히 통합된다는 것입니다.
 
-이를 위해서는 사용자 및 사용자 그룹 관리에 [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html)을 사용해야 합니다. 사용자 프로필 정보가 Adobe Identity Management System(IMS)에서 중앙 집중식으로 관리되어 모든 클라우드 서비스에 공유되므로 사용자 계정을 사용하면 사용자가 Adobe 제품 및 서비스에 액세스할 수 있습니다. AEM에 액세스 권한을 할당하면 이전과 동일하게 AEM as a Cloud Service에서 사용자 계정을 참조할 수 있습니다(예: AEM 보안 사용자 인터페이스에서 역할 및 권한을 정의하기 위해).
+이를 위해서는 사용자 및 사용자 그룹 관리에 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)을 사용해야 합니다. 사용자 프로필 정보가 Adobe Identity Management System(IMS)에서 중앙 집중식으로 관리되어 모든 클라우드 서비스에 공유되므로 사용자 계정을 사용하면 사용자가 Adobe 제품 및 서비스에 액세스할 수 있습니다. AEM에 액세스 권한을 할당하면 이전과 동일하게 AEM as a Cloud Service에서 사용자 계정을 참조할 수 있습니다(예: AEM 보안 사용자 인터페이스에서 역할 및 권한을 정의하기 위해).
 
 이렇게 하면 다음과 같은 이점이 있습니다.
 
@@ -244,7 +244,7 @@ AEM as a Cloud Service의 주요 변경 내용은 작성자 계층 액세스에 
 
 Sites 및 Assets에 대한 사용자 인터페이스(UI) 작성의 기본 원칙은 이전에 AEM을 사용한 적이 있는 누구에게나 매우 익숙할 것입니다.
 
-주요 차이점은 UI에는 터치 기능만 지원되며, 클래식 UI는 더 이상 사용할 수 없다는 것입니다. 그렇지 않은 경우 기본 사항은 변경되지 않으며 작은 변경만 나타납니다.
+주요 차이점은 UI에는 터치 기능만 지원되며, 클래식 UI는 더 이상 사용할 수 없다는 것입니다. 그렇지 않은 경우 기본 사항은 변경되지 않으며 작은 변경만 표시됩니다.
 
 ## AEM Sites {#aem-sites}
 
@@ -254,7 +254,7 @@ Adobe Experience Manager Sites as a Cloud Service를 사용하면 AEM 콘텐츠 
 
 ## AEM Assets {#aem-assets}
 
-Adobe Experience Manager Assets as a Cloud Service는 클라우드 기반의 비즈니스용 PaaS 솔루션을 제공하여 빠르고 효과적으로 디지털 자산 관리 및 Dynamic Media 작업을 수행할 뿐만 아니라, 항상 최신 상태를 유지하고 항상 사용 가능하며 항상 학습하는 시스템 내에서 AI/ML과 같은 차세대 스마트 기능도 사용합니다.
+Adobe Experience Manager Assets as a Cloud Service는 클라우드 기반의 비즈니스용 PaaS 솔루션을 제공하여 빠르고 효과적으로 디지털 자산 관리 및 Dynamic Media 작업을 수행할 뿐만 아니라 항상 최신 상태를 유지하고 항상 사용 가능하며 항상 학습하는 시스템 내에서 AI/ML과 같은 차세대 스마트 기능도 사용합니다.
 
 Assets 제품에는 클라우드에서의 차세대 자산 프로세싱과 고성능 자산 수집 및 검색 기능이 포함됩니다.
 

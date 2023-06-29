@@ -2,10 +2,10 @@
 title: SSL 인증서 관리 소개
 description: Cloud Manager가 SSL 인증서를 설치하기 위한 셀프서비스 도구를 제공하는 방법을 알아봅니다.
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 100%
+source-wordcount: '630'
+ht-degree: 98%
 
 ---
 
@@ -69,7 +69,7 @@ Cloud Manager는 최대 50개의 SSL 인증서를 설치할 수 있습니다. �
 
 ## 자세히 알아보기 {#learn-more}
 
-필요한 권한이 있는 사용자는 Cloud Manager를 사용하여 프로그램의 SSL 인증서를 관리할 수 있습니다. 이러한 기능을 사용하는 방법에 대한 자세한 내용은 다음 문서를 참조하십시오.
+필요한 권한이 있는 사용자는 Cloud Manager를 사용하여 프로그램의 SSL 인증서를 관리할 수 있습니다. 이러한 기능 사용에 대한 자세한 내용은 다음 문서를 참조하십시오.
 
 * [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
 * [SSL 인증서 보기, 업데이트 및 바꾸기](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)

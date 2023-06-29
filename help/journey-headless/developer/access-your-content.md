@@ -40,7 +40,7 @@ Adobe Experience Manager(AEM) as a Cloud Service에서 AEM GraphQL API를 사용
 
 >[!NOTE]
 >
->AEM GraphQL API는 표준 GraphQL API 사양에 따라 사용자 지정된 구현입니다.
+>AEM GraphQL API는 표준 GraphQL API 사양에 따라 사용자 정의된 구현입니다.
 
 ## GraphQL - 소개 {#graphql-introduction}
 
@@ -79,7 +79,7 @@ GraphQL is used in various locations in AEM; for example:
 
 ## AEM GraphQL API {#aem-graphql-api}
 
-AEM GraphQL API는 표준 GraphQL API 사양을 기반으로 사용자 지정된 버전으로 콘텐츠 조각에서 (복잡한) 쿼리를 수행하도록 특별히 구성되었습니다.
+AEM GraphQL API는 표준 GraphQL API 사양을 기반으로 사용자 정의된 버전으로 콘텐츠 조각에서 (복잡한) 쿼리를 수행하도록 특별히 구성되었습니다.
 
 콘텐츠는 콘텐츠 조각 모델에 따라 구조화되므로 콘텐츠 조각을 사용합니다. 이로써 GraphQL의 기본 요구 사항을 충족합니다.
 
@@ -373,6 +373,6 @@ query {
 * [콘텐츠 조각을 사용하여 작업](/help/sites-cloud/administering/content-fragments/content-fragments.md)
    * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
    * [JSON 출력](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
-* [원본 간 리소스 공유(CORS) 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))
+* [원본 간 리소스 공유(CORS) 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ko#understand-cross-origin-resource-sharing-(cors))
 * [서버측 API용 액세스 토큰 생성](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
 * [AEM Headless 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - 콘텐츠 모델링 및 GraphQL을 포함하여 AEM의 Headless 기능 사용 개요를 제공하는 짧은 비디오 튜토리얼 시리즈.

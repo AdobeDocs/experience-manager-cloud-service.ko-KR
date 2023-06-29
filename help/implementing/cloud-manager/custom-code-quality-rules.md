@@ -411,7 +411,7 @@ public void doThis() {
 * **심각도**: 사소
 * **이후**: 버전 2018.4.0
 
-앞에서 언급했듯이 로그 메시지를 이해할 때는 컨텍스트가 중요합니다. `Exception.printStackTrace()`를 사용하면 스택 추적만 표준 오류 스트림으로 출력되므로 모든 컨텍스트가 손실됩니다. 또한, Experience Manager와 같은 다중 스레드 애플리케이션에서 이 방법을 사용하여 여러 예외를 병렬로 인쇄하면 스택 추적이 겹쳐서 상당한 혼동을 일으킬 수 있습니다. 예외는 로깅 프레임워크에서만 기록되어야 합니다.
+앞에서 언급했듯이 로그 메시지를 이해할 때는 컨텍스트가 중요합니다. `Exception.printStackTrace()`를 사용하면 스택 추적만 표준 오류 스트림으로 출력되므로 모든 컨텍스트가 손실됩니다. 또한 Experience Manager와 같은 다중 스레드 애플리케이션에서 이 방법을 사용하여 여러 예외를 병렬로 인쇄하면 스택 추적이 겹쳐서 상당한 혼동을 일으킬 수 있습니다. 예외는 로깅 프레임워크에서만 기록되어야 합니다.
 
 #### 비준수 코드 {#non-compliant-code-11}
 
@@ -535,7 +535,7 @@ Experience Manager API 영역은 사용이 권장되지 않아 더 이상 사용
 * **심각도**: 심각
 * **이후**: 버전 2018.7.0
 
-Experience Manager API에는 사용자 정의 코드로 사용할 수 있지만 구현은 할 수 없도록 설계된 Java™ 인터페이스 및 클래스가 포함되어 있습니다. 예를 들어, `com.day.cq.wcm.api.Page` 인터페이스는 Experience Manager만을 사용하여 구현해야 합니다.
+Experience Manager API에는 사용자 정의 코드로 사용할 수 있지만 구현은 할 수 없도록 설계된 Java™ 인터페이스 및 클래스가 포함되어 있습니다. 예를 들어 `com.day.cq.wcm.api.Page` 인터페이스는 Experience Manager만 사용하여 구현해야 합니다.
 
 이러한 인터페이스에 새 메서드를 추가해도 추가된 메서드는 이들 인터페이스를 사용하는 기존 코드에 영향을 미치지 않습니다. 결과적으로 이러한 인터페이스에 새 메서드를 추가해도 이전 버전과 호환되는 것으로 간주됩니다. 그러나 사용자 정의 코드로 이러한 인터페이스 중 하나를 구현하는 경우 해당 사용자 정의 코드로 인해 이전 버전과 호환되지 않는 문제가 발생합니다.
 
@@ -842,7 +842,7 @@ Experience Manager 클라이언트 라이브러리에는 이미지 및 글꼴과
 * **심각도**: 주요
 * **이후**: 버전 2021.2.0
 
-Experience Manager as a Cloud Service에서의 자산 처리를 위해 Asset 마이크로 서비스로 이동하면서, Experience Manager의 온프레미스 및 AMS 버전에서 사용되던 여러 워크플로 프로세스가 지원되지 않거나 불필요하게 되었습니다.
+Experience Manager as a Cloud Service에서의 자산 처리를 위해 Asset 마이크로 서비스로 이동하면서 Experience Manager의 온프레미스 및 AMS 버전에서 사용되던 여러 워크플로 프로세스가 지원되지 않거나 불필요하게 되었습니다.
 
 [Experience Manager as a Cloud Service Assets GitHub 저장소](https://github.com/adobe/aem-cloud-migration)에 있는 마이그레이션 도구를 사용하여 Experience Manager as a Cloud Service로 마이그레이션하는 동안 워크플로 모델을 업데이트할 수 있습니다.
 
