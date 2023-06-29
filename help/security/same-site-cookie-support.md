@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service에 대한 Same Site 쿠키 �
 description: Adobe Experience Manager as a Cloud Service에 대한 Same Site 쿠키 지원
 exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '283'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 85%
 
 이 설정의 기본값(`SameSite=Lax`)으로 인해 AEM 인스턴스 또는 서비스 간 인증이 제대로 작동하지 않을 수 있습니다. 이들 서비스의 도메인 또는 URL 구조가 이 쿠키 정책의 제한 조건에 해당하지 않을 수 있기 때문입니다.
 
-이 문제를 해결하려면 SameSite 쿠키 속성을 로 설정해야 합니다 `None` 로그인 토큰에 사용됩니다.
+이 문제를 해결하려면 로그인 토큰에 대해 SameSite 쿠키 속성을 `None`으로 설정해야 합니다.
 
 >[!CAUTION]
 >
@@ -36,4 +36,4 @@ ht-degree: 85%
 1. [AEM SDK 빠른 시작을 사용하여 OSGi 구성 생성](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)에 설명된 단계에 따라 이 특정 설정에 대해 JSON 포맷 구성을 생성합니다.
 1. [설정 속성에 대한 Cloud Manager API 포맷](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) OSGi 설명서의 단계에 따라 설정을 적용합니다.
 
-이 설정이 업데이트되고 사용자가 로그오프했다가 다시 로그온하면 `login-token` 쿠키에는 `None` 속성 집합 및 가 사이트 간 요청에 포함됩니다.
+이 설정이 업데이트되고 사용자가 로그아웃 후에 다시 로그인하면 `login-token` 쿠키가 `None` 속성으로 설정되고 교차 사이트 요청에 포함됩니다.
