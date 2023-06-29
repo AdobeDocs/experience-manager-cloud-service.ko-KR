@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 5096cd6141e70f40b5145389ca4db3cc65ea1e66
+source-git-commit: 6d445943fb8a79eb549c954bb88daf61242a8b10
 workflow-type: tm+mt
-source-wordcount: '2558'
+source-wordcount: '2553'
 ht-degree: 18%
 
 ---
@@ -101,7 +101,7 @@ Brand Portal URL을 잘 모를 경우 다음 단계를 수행하십시오.
 
 1. 다음에서 **도구** 패널, 다음으로 이동 **[!UICONTROL 배포]** > **[!UICONTROL 배포]**.
 
-   ![Brand Portal을 사용하여 AEM Assets as a Cloud Service 구성](assets/test-bpconfig1.png)
+   ![배포 옵션으로 이동](assets/test-bpconfig1.png)
 
    Brand Portal 배포 에이전트(**[!UICONTROL bpdistributionagent0]**)은 아래에 생성됩니다. **[!UICONTROL Brand Portal에 게시]**.
 
