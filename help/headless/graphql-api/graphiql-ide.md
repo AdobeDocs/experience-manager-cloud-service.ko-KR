@@ -4,9 +4,9 @@ description: Adobe Experience Manager에서 GraphiQL IDE를 사용하는 방법�
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1144'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -78,9 +78,9 @@ GraphiQL 로고 바로 아래 왼쪽 중간 패널에 있는 편집기에 새 �
 
 ## 쿼리 실행 중 {#running-queries}
 
-새 쿼리를 바로 실행하거나 지속 쿼리를 로드하고 실행할 수 있습니다. 지속 쿼리를 로드하려면 목록에서 선택합니다. 그러면 쿼리가 편집기 패널에 표시됩니다.
+새 쿼리를 바로 실행하거나 지속 쿼리를 로드하고 실행할 수 있습니다. 지속 쿼리를 로드하는 경우, 목록에서 선택하면 쿼리가 편집기 패널에 표시됩니다.
 
-두 경우 모두 편집기 패널에 표시되는 쿼리는 다음 두 가지 작업을 수행하는 경우 실행되는 쿼리입니다.
+두 경우 모두 편집기 패널에 표시되는 쿼리는 다음 두 가지 작업을 수행하는 경우에 실행되는 쿼리입니다.
 
 * **쿼리 실행** 아이콘 클릭/탭
 * 키보드 조합 `Control-Enter` 사용
