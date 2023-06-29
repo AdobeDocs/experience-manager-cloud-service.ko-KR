@@ -3,9 +3,9 @@ title: AEM as a Headless CMS 작성 - 소개
 description: 프로젝트 콘텐츠를 작성하는 Adobe Experience Manager as a Cloud Service as a Headless CMS 기능 사용 소개.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '664'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Headless는 웹에 해당 콘텐츠를 표시하는 방식에서 사실상 콘�
 
 그렇다면 AEM이란 무엇입니까?
 
-무엇보다도 AEM은 요구 사항에 맞게 사용자 지정할 수 있는 다양한 기능을 갖춘 콘텐츠 관리 시스템입니다.
+무엇보다도 AEM은 요구 사항에 맞게 사용자 정의할 수 있는 다양한 기능을 갖춘 콘텐츠 관리 시스템입니다.
 
 즉, 다음 경우로 사용할 수 있습니다.
 
@@ -55,7 +55,7 @@ Headless는 웹에 해당 콘텐츠를 표시하는 방식에서 사실상 콘�
 (문제가 발생하면 AEM 웹 페이지를 구성할 때도 이 조각이 필요한 경우 사용할 수 있습니다.)
 
 * “기존” CMS
-   * 콘텐츠는 콘텐츠가 웹 사이트에서 렌더링되는 방법을 정의하는 다양한 구성 요소를 사용하여 웹 페이지용으로 작성됩니다. 여기서도 프로젝트 팀이 사용자 지정된 구성 요소를 개발할 수 있으므로 AEM이 매우 유연합니다.
+   * 웹 사이트에서 콘텐츠를 렌더링하는 방법을 정의하는 다양한 구성 요소를 사용하여 웹 페이지용 콘텐츠를 작성합니다. 여기서도 프로젝트 팀이 사용자 정의된 구성 요소를 개발할 수 있으므로 AEM이 매우 유연합니다.
 
 ## 콘텐츠 모델링 {#content-modeling}
 
