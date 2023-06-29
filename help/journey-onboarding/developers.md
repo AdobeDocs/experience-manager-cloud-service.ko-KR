@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1417'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 98%
 개발자 또는 배포 관리자로서 이 문서에 설명된 작업을 시작하기 전에 시스템 관리자가 이 온보딩 여정의 모든 단계를 완료했는지 확인하십시오. 이 의미는 다음과 같습니다.
 
 * 시스템 관리자가 개발자 및 배포 관리자를 해당 제품 프로필에 할당했습니다.
-* 개발자를 다음에 추가로 할당해야 합니다. **AEM 사용자** 또는 **AEM 관리자** 제품 프로필 을 통해 AEM도 사용할 수 있습니다.
+* 개발자도 AEM을 사용하게 하려면 **AEM 사용자** 또는 **AEM 관리자** 제품 프로필에 추가로 할당해야 합니다.
 * 클라우드 리소스가 설정되었습니다.
 
 ## git 액세스 {#accessing-git}
