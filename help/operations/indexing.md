@@ -2,10 +2,10 @@
 title: 콘텐츠 검색 및 색인화
 description: 콘텐츠 검색 및 색인화
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: c19783ed4899772835a05856fc3a5601ef6a6df8
 workflow-type: tm+mt
-source-wordcount: '2427'
-ht-degree: 37%
+source-wordcount: '2309'
+ht-degree: 34%
 
 ---
 
@@ -35,37 +35,37 @@ AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 C
 
 ## 사용 방법 {#how-to-use}
 
-인덱스 정의는 다음 세 가지 사용 사례로 구성될 수 있습니다.
+색인 정의는 다음과 같이 세 가지 주요 사용 사례로 분류할 수 있습니다.
 
-1. 고객 색인 정의 추가.
-1. 기존의 색인 정의 업데이트. 이 업데이트는 새 버전의 기존 색인 정의가 추가되었음을 의미합니다.
-1. 중복 또는 사용하지 않는 기존의 색인 삭제.
+1. **추가** 새로운 사용자 정의 색인 정의.
+2. **업데이트** 새 버전을 추가하여 기존 색인 정의.
+3. **제거** 더 이상 필요하지 않은 색인 정의.
 
-위의 1번과 2번은 해당 Cloud Manager 릴리스 일정에서 사용자 지정 코드 기반의 일부로 색인 정의를 생성해야 합니다. 자세한 내용은 [AEM as a Cloud Service에 배포 설명서](/help/implementing/deploying/overview.md).
+위의 1번과 2번은 각각 Cloud Manager 릴리스 일정에서 사용자 정의 코드 기반의 일부로 새 색인 정의를 생성해야 합니다. 자세한 내용은 [AEM에 as a Cloud Service 배포](/help/implementing/deploying/overview.md) 설명서를 참조하십시오.
 
 ## 색인 이름 {#index-names}
 
-색인 정의는 다음 중 하나일 수 있습니다.
+색인 정의는 다음 범주 중 하나에 속할 수 있습니다.
 
-1. 기본 제공 색인. 예: `/oak:index/cqPageLucene-2`
-1. 기본 제공 색인의 사용자 정의. 이러한 사용자 정의는 고객이 정의합니다. 예: `/oak:index/cqPageLucene-2-custom-1`
-1. 완전히 맞춤화된 색인. 예: `/oak:index/acme.product-1-custom-2`. 이름 지정 충돌을 방지하려면 Adobe 시 완전히 맞춤화된 색인에 접두사(예: )가 있어야 합니다. `acme.`
+1. 기본 제공(OOTB) 색인. 예: `/oak:index/cqPageLucene-2` 또는 `/oak:index/damAssetLucene-8`.
 
-기본 제공 색인의 사용자 정의와 완전히 맞춤화된 색인에는 모두 다음이 포함되어야 합니다 `-custom-`. 완전히 맞춤화된 색인만 접두사로 시작합니다.
+2. OOTB 인덱스 사용자 정의. 이러한 경고는 다음을 추가하여 나타냅니다. `-custom-` 뒤에 숫자 식별자가 옵니다. 예: `/oak:index/damAssetLucene-8-custom-1`.
+
+3. 완전히 맞춤화된 색인: 완전히 새로운 색인을 처음부터 만들 수 있습니다. 이름 충돌을 방지하려면 이름에 접두사가 있어야 합니다. 예: `/oak:index/acme.product-1-custom-2`: 여기서 접두사는 입니다. `acme.`
 
 ## 새 색인 정의 준비 {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->기본 제공 색인을 사용자 정의하는 경우, 예 `damAssetLucene-6`에서 최신 기본 제공 인덱스 정의를 복사합니다. *Cloud Service 환경* crx DE 패키지 관리자 사용(`/crx/packmgr/`). 그 다음 `damAssetLucene-6-custom-1`과 같이 구성의 이름을 바꾸고 상단에 사용자 정의를 추가합니다. 이 프로세스를 통해 필요한 구성이 실수로 제거되지 않도록 할 수 있습니다. 예를 들어 `/oak:index/damAssetLucene-6/tika`의 `tika` 노드는 클라우드 서비스의 맞춤화된 색인에 필요합니다. Cloud SDK에 없습니다.
+>`damAssetLucene-8`과 같이 기본 제공 인덱스를 맞춤화하는 경우 CRX DE 패키지 관리자(`/crx/packmgr/`)를 사용하여 *Cloud Service 환경*&#x200B;에서 최신 기본 제공 인덱스 정의를 복사하십시오. 이름 바꾸기 `damAssetLucene-8-custom-1` (또는 이상) 및 XML 파일 내에 사용자 정의를 추가합니다. 이렇게 하면 필요한 구성이 실수로 제거되지 않도록 할 수 있습니다. 예를 들어 `/oak:index/damAssetLucene-8/tika`의 `tika` 노드는 클라우드 서비스의 맞춤화된 색인에 필요합니다. Cloud SDK에는 없습니다.
 
-이 이름 지정 패턴에 따라 실제 색인 정의가 포함된 색인 정의 패키지를 준비합니다.
+OOTB 인덱스의 사용자 정의를 위해 이 이름 지정 패턴을 따르는 실제 인덱스 정의가 포함된 새 패키지를 준비합니다.
 
-`<indexName>[-<productVersion>]-custom-<customVersion>`
+`<indexName>-<productVersion>-custom-<customVersion>`
 
-그런 다음 아래에 이동해야 합니다. `ui.apps/src/main/content/jcr_root`. 맞춤화된 인덱스 정의 및 사용자 정의 인덱스 정의는 모두 아래에 저장해야 합니다. `/oak:index`.
+완전히 맞춤화된 색인의 경우 이 이름 지정 패턴을 따르는 색인 정의가 포함된 새 색인 정의 패키지를 준비합니다.
 
-기존 색인(기본 제공 색인)이 유지되고 있는 것과 같이 패키지의 필터를 설정해야 합니다. 파일 내 `ui.apps/src/main/content/META-INF/vault/filter.xml`, 각 사용자 지정(또는 맞춤화된) 색인은 다음과 같이 나열되어야 합니다. `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. 인덱스 버전을 나중에 변경하면 필터를 조정해야 합니다.
+`<prefix>.<indexName>-<productVersion>-custom-<customVersion>`
 
 <!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
 
@@ -73,136 +73,160 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!NOTE]
 >
->색인 정의가 포함된 모든 콘텐츠 패키지는 콘텐츠 패키지의 속성 파일에 다음 속성으로 설정되어야 합니다. `/META-INF/vault/properties.xml`:
+>색인 정의가 포함된 모든 콘텐츠 패키지는에 있는 콘텐츠 패키지의 속성 파일에 다음 속성으로 설정되어야 합니다. `<package_name>/META-INF/vault/properties.xml`:
 >
->`noIntermediateSaves=true`
+> * `noIntermediateSaves=true`
+>
+> * `allowIndexDefinitions=true`
 
-## 색인 정의 배포 {#deploying-index-definitions}
+## 사용자 정의 색인 정의 배포 {#deploying-custom-index-definitions}
 
-인덱스 정의는 사용자 정의로 표시되며 다음 버전입니다.
+맞춤화된 버전의 기본 제공 색인의 배포를 보여 주기 위해 `damAssetLucene-8`에 단계별 안내서를 제공합니다. 이 예제에서는 이름을 로 바꿉니다. `damAssetLucene-8-custom-1`. 그런 다음 프로세스는 다음과 같습니다.
 
-* 인덱스 정의 자체(예: `/oak:index/ntBaseLucene-custom-1`)
+1. 에서 업데이트된 색인 이름으로 새 폴더를 만듭니다. `ui.apps` 디렉터리:
+   * 예: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
-사용자 지정 인덱스 또는 맞춤화된 인덱스를 배포하려면 인덱스 정의(`/oak:index/definitionname`)은(는) 다음을 통해 전달되어야 합니다. `ui.apps` git 및 Cloud Manager 배포 프로세스를 통해 FileVault 필터(예: `ui.apps/src/main/content/META-INF/vault/filter.xml`, 각 사용자 정의 인덱스 및 맞춤화된 인덱스를 개별적으로 나열합니다. 예를 들면 다음과 같습니다 `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. 그러면 사용자 정의/맞춤화된 인덱스 정의 자체가 파일에 저장됩니다 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, 다음과 같이:
+2. 구성 파일 추가 `.content.xml` 새로 만든 폴더 내에 있는 사용자 지정 구성을 포함합니다. 다음은 사용자 지정의 예입니다. 파일 이름: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:oak="https://jackrabbit.apache.org/oak/ns/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
-        jcr:primaryType="oak:QueryIndexDefinition"
-        async="[async,nrt]"
-        compatVersion="{Long}2"
-        ...
-        </indexRules>
-        <tika jcr:primaryType="nt:unstructured">
-            <config.xml jcr:primaryType="nt:file"/>
-        </tika>
-</jcr:root>
-```
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:oak="http://jackrabbit.apache.org/oak/ns/1.0" xmlns:rep="internal"
+       jcr:mixinTypes="[rep:AccessControllable]"
+       jcr:primaryType="oak:QueryIndexDefinition"
+       async="[async,nrt]"
+       compatVersion="{Long}2"
+       evaluatePathRestrictions="{Boolean}true"
+       includedPaths="[/content/dam]"
+       maxFieldLength="{Long}100000"
+       type="lucene">
+       <facets
+           jcr:primaryType="nt:unstructured"
+           secure="statistical"
+           topChildren="100"/>
+       <indexRules jcr:primaryType="nt:unstructured">
+           <dam:Asset jcr:primaryType="nt:unstructured">
+               <properties jcr:primaryType="nt:unstructured">
+                   <cqTags
+                       jcr:primaryType="nt:unstructured"
+                       name="jcr:content/metadata/cq:tags"
+                       nodeScopeIndex="{Boolean}true"
+                       propertyIndex="{Boolean}true"
+                       useInSpellcheck="{Boolean}true"
+                       useInSuggest="{Boolean}true"/>
+               </properties>
+           </dam:Asset>
+       </indexRules>
+       <tika jcr:primaryType="nt:folder">
+           <config.xml jcr:primaryType="nt:file"/>
+       </tika>
+   </jcr:root>
+   ```
 
-위의 예에는 Apache Tika에 대한 구성이 포함되어 있습니다. Tika 구성 파일은 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/tika/config.xml` 아래에 저장됩니다.
+3. 의 FileVault 필터에 항목 추가 `ui.apps/src/main/content/META-INF/vault/filter.xml`:
 
-### 프로젝트 구성
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <workspaceFilter version="1.0">
+       ...
+       <filter root="/oak:index/damAssetLucene-8-custom-1"/> 
+   </workspaceFilter>
+   ```
 
-사용되는 Jackrabbit Filerabbit Maven 패키지 플러그인의 버전에 따라 프로젝트에서의 몇 가지 추가 구성이 필요합니다. Jackrabbit FileVault Maven Package 플러그인 버전을 사용하는 경우 **1.1.6** 또는 그 이상에서는 `pom.xml` 은(는) 의 플러그인 구성에 다음 섹션을 포함해야 합니다. `filevault-package-maven-plugin`, 위치 `configuration/validatorsSettings` (바로 전 `jackrabbit-nodetypes`):
+4. 에서 Apache Tika에 대한 구성 파일을 추가합니다. `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/tika/config.xml`:
 
-```xml
-<jackrabbit-packagetype>
-    <options>
-        <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
-    </options>
-</jackrabbit-packagetype>
-```
+   ```xml
+   <properties>
+       <detectors>
+           <detector class="org.apache.tika.detect.TypeDetector"/>
+       </detectors>
+       <parsers>
+           <parser class="org.apache.tika.parser.DefaultParser">
+           <mime>text/plain</mime>
+           </parser>
+       </parsers>
+       <service-loader initializableProblemHandler="ignore" dynamic="true"/>
+   </properties>
+   ```
 
-또한, 이 경우 `vault-validation` 버전을 최신 버전으로 업그레이드해야 합니다.
+5. 구성이 다음에 제공된 지침을 준수하는지 확인합니다. [프로젝트 구성](#project-configuration) 섹션. 그에 따라 필요한 적응을 수행합니다.
 
-```xml
-<dependency>
-    <groupId>org.apache.jackrabbit.vault</groupId>
-    <artifactId>vault-validation</artifactId>
-    <version>3.5.6</version>
-</dependency>
-```
+## 프로젝트 구성
 
-그런 다음 `ui.apps.structure/pom.xml` 및 `ui.apps/pom.xml`, 의 구성 `filevault-package-maven-plugin` 다음을 포함해야 함 `allowIndexDefinitions` 및 `noIntermediateSaves` 활성화되었습니다. `noIntermediateSaves` 옵션은 인덱스 구성이 올바르게 추가되었는지 확인합니다.
+버전 >= 를 사용하는 것이 좋습니다. `1.3.2` 잭래빗의 `filevault-package-maven-plugin`. 이를 프로젝트에 통합하는 단계는 다음과 같습니다.
 
-```xml
-<groupId>org.apache.jackrabbit</groupId>
-    <artifactId>filevault-package-maven-plugin</artifactId>
-    <configuration>
-        <allowIndexDefinitions>true</allowIndexDefinitions>
-        <properties>
-            <cloudManagerTarget>none</cloudManagerTarget>
-            <noIntermediateSaves>true</noIntermediateSaves>
-        </properties>
-    ...
-```
+1. 최상위 수준에서 버전 업데이트 `pom.xml`:
 
-위치 `ui.apps.structure/pom.xml`, `filters` 이 플러그인의 섹션은 다음과 같이 필터 루트를 포함해야 합니다.
+   ```xml
+   <plugin>
+       <groupId>org.apache.jackrabbit</groupId>
+           <artifactId>filevault-package-maven-plugin</artifactId>
+           ...
+           <version>1.3.2</version>
+       ...
+   </plugin>
+   ```
 
-```xml
-<filter><root>/oak:index</root></filter>
-```
+2. 최상위 수준에 다음 추가 `pom.xml`:
 
-새 색인 정의가 추가되면 새 애플리케이션이 Cloud Manager를 통해 배포됩니다. 배포 시 색인 정의를 MongoDB와 Azure Segment Store에 추가(필요한 경우 병합)하여 각각 작성 및 게시할 수 있는 두 가지 작업이 시작됩니다. 스위치가 실행되기 전에 기본 저장소가 새 색인 정의로 다시 지정됩니다.
+   ```xml
+   <jackrabbit-packagetype>
+       <options>   
+           <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
+       </options>
+   </jackrabbit-packagetype>
+   ```
 
-### 메모
+   다음은 프로젝트의 최상위 수준 샘플입니다 `pom.xml` 위에 언급된 구성을 가진 파일이 포함되었습니다.
 
-Filevault 유효성 검사에서 다음 오류가 발생하는 경우 <br>
-`[ERROR] ValidationViolation: "jackrabbit-nodetypes: Mandatory child node missing: jcr:content [nt:base] inside node with types [nt:file]"` <br>
-그런 다음 다음 다음 단계를 수행하여 문제를 해결할 수 있습니다. - <br>
+   파일 이름: `pom.xml`
 
-1. filevault를 버전 1.0.4로 다운그레이드하고 다음을 최상위 pom에 추가합니다.
+   ```xml
+   <plugin>
+       <groupId>org.apache.jackrabbit</groupId>
+           <artifactId>filevault-package-maven-plugin</artifactId>
+           ...
+           <version>1.3.2</version>
+           <configuration>
+               ...
+               <validatorsSettings>
+                   <jackrabbit-packagetype>
+                       <options>
+                           <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
+                       </options>
+                   </jackrabbit-packagetype>
+                   ...
+               ...
+   </plugin>
+   ```
 
-```xml
-<allowIndexDefinitions>true</allowIndexDefinitions>
-```
+3. 위치 `ui.apps/pom.xml` 및 `ui.apps.structure/pom.xml` 다음을 활성화해야 합니다. `allowIndexDefinitions` 및 `noIntermediateSaves` 의 옵션 `filevault-package-maven-plugin`. 활성화 중 `allowIndexDefinitions` 은 사용자 정의 색인 정의를 허용하지만 `noIntermediateSaves` 구성이 올바르게 추가되었는지 확인합니다.
 
-다음은 pom에서 위 구성을 배치할 위치에 대한 예입니다.
+   파일 이름: `ui.apps/pom.xml` 및 `ui.apps.structure/pom.xml`
 
-```xml
-<plugin>
-    <groupId>org.apache.jackrabbit</groupId>
-    <artifactId>filevault-package-maven-plugin</artifactId>
-    <configuration>
-        <properties>
-        ...
-        </properties>
-        ...
-        <allowIndexDefinitions>true</allowIndexDefinitions>
-        <repositoryStructurePackages>
-        ...
-        </repositoryStructurePackages>
-        <dependencies>
-        ...
-        </dependencies>
-    </configuration>
-</plugin>
-```
+   ```xml
+   <plugin>
+       <groupId>org.apache.jackrabbit</groupId>
+           <artifactId>filevault-package-maven-plugin</artifactId>
+           <configuration>
+               <allowIndexDefinitions>true</allowIndexDefinitions>
+               <properties>
+                   <cloudManagerTarget>none</cloudManagerTarget>
+                   <noIntermediateSaves>true</noIntermediateSaves>
+               </properties>
+       ...
+   </plugin>
+   ```
 
-1. 노드 유형 유효성 검사를 비활성화합니다. filevault 플러그인 구성의 jackrabbit-nodetypes 섹션에서 다음 속성을 설정합니다.
+4. 필터 추가 `/oak:index` 위치: `ui.apps.structure/pom.xml`:
 
-```xml
-<isDisabled>true</isDisabled>
-```
+   ```xml
+   <filters>
+       ...
+       <filter><root>/oak:index</root></filter>
+   </filters>
+   ```
 
-다음은 pom에서 위 구성을 배치할 위치에 대한 예입니다.
-
-```xml
-<plugin>
-    <groupId>org.apache.jackrabbit</groupId>
-    <artifactId>filevault-package-maven-plugin</artifactId>
-    ...
-    <configuration>
-    ...
-        <validatorsSettings>
-        ...
-            <jackrabbit-nodetypes>
-                <isDisabled>true</isDisabled>
-            </jackrabbit-nodetypes>
-        </validatorsSettings>
-    </configuration>
-</plugin>
-```
+새 색인 정의를 추가한 후 Cloud Manager를 사용하여 새 애플리케이션을 배포합니다. 이 배포는 두 개의 작업을 시작하고, 각각 작성 및 게시를 위해 MongoDB 및 Azure 세그먼트 저장소에 인덱스 정의를 추가(및 필요한 경우 병합)합니다. 전환 전에 기본 저장소는 업데이트된 색인 정의로 리인덱싱됩니다.
 
 >[!TIP]
 >
@@ -307,7 +331,7 @@ Adobe이 &quot;damAssetLucene&quot; 또는 &quot;cqPageLucene&quot; 같은 기�
 
 ### 변경 실행 취소 {#undoing-a-change}
 
-경우에 따라 색인 정의의 변경 사항을 되돌려야 합니다. 실수로 변경이 되었거나 더 이상 변경이 필요하지 않은 경우가 있을 수 있습니다. 색인 정의 `damAssetLucene-8-custom-3`이 실수로 생성된 후 이미 배포된 경우를 예로 들어보겠습니다. 이런 경우에는 이전의 색인 정의 `damAssetLucene-8-custom-2`를 되돌리고 싶을 것입니다. 이렇게 하려면 라는 인덱스를 추가합니다. `damAssetLucene-8-custom-4` 이전 색인의 정의가 포함된 `damAssetLucene-8-custom-2`.
+색인 정의에서 수정을 실행 취소해야 하는 경우가 가끔 있습니다. 이는 의도치 않은 오류로 인해 발생하거나 더 이상 수정할 필요가 없습니다. 예를 들어 색인 정의를 사용합니다 `damAssetLucene-8-custom-3,` 가 잘못 생성되어 이미 배포되었습니다. 따라서 이전 색인 정의로 되돌아갈 수 있습니다. `damAssetLucene-8-custom-2.` 이를 수행하려면 라는 이름의 새 색인을 도입해야 합니다 `damAssetLucene-8-custom-4` 이전 색인의 정의를 통합합니다. `damAssetLucene-8-custom-2.`
 
 ### 색인 삭제 {#removing-an-index}
 
