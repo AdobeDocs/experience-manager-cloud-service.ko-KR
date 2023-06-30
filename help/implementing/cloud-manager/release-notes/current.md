@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.6.0 릴리스 정보
-description: AEM as a Cloud Service의 Cloud Manager 2023.6.0 릴리스 정보입니다.
+title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.7.0 릴리스 정보
+description: AEM as a Cloud Service의 Cloud Manager 2023.7.0 릴리스 정보입니다.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1b46f763903a1b103837ed7e8cc498ad08ce64f1
 workflow-type: tm+mt
 source-wordcount: '237'
-ht-degree: 93%
+ht-degree: 35%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.6.0 릴리스 정보 {#release-notes}
+# Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.7.0 릴리스 정보 {#release-notes}
 
-이 페이지에서는 AEM as a Cloud Service의 Cloud Manager 2023.6.0 릴리스 정보에 대해 설명합니다.
+이 페이지에서는 AEM as a Cloud Service의 Cloud Manager 2023.7.0 릴리스 정보에 대해 설명합니다.
 
 >[!NOTE]
 >
@@ -21,17 +21,18 @@ ht-degree: 93%
 
 ## 릴리스 일자 {#release-date}
 
-AEM as a Cloud Service의 Cloud Manager 2023.6.0 릴리스 일자는 2023년 6월 8일입니다. 다음 릴리스는 2023년 7월 6일에 예정되어 있습니다.
+AEM as a Cloud Service의 Cloud Manager 2023.7.0 릴리스 일자는 2023년 6월 29일입니다. 다음 릴리스는 2023년 8월 10일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
-* 고객은 기본 지역 외에 추가 이차 게시 지역을 구매할 수 있으므로 지연 시간을 줄이고 가용성을 높일 수 있는 이점이 제공됩니다. 참고: 특정 제한 사항이 적용될 수 있습니다.
-* [프로그램 또는 환경](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)을 새로 만들 때 이제 이름은 영숫자와 특수 문자 세트로만 제한됩니다.
-* 이제 [프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)을 다시 시작할 때 승인 단계에서 확인 대화 상자가 표시됩니다.
-* **[고객 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)**&#x200B;와 **[사용자 정의 UI 테스트](/help/implementing/cloud-manager/ui-testing.md)** 파이프라인 단계의 경우 새 `INCOMPLETE` 상태에는 해당 테스트가 없었고 수행되지 않았음이 표시됩니다.
-   * 이러한 경우 파이프라인은 실패하지 않고 다음 단계로 진행됩니다.
+* 이제 Cloud Manager 랜딩 페이지의 카드에 [향상된 보안](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) 이 해당 프로그램에 대해 활성화되어 있습니다.
+* 개발인 경우 [파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 에는 테스트 단계가 포함되어 있지 않습니다. 이제 사용자는 테스트 단계를 포함할 수 있습니다. [파이프라인을 시작합니다.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)
+   * 이 기능은 단계적으로 출시될 예정입니다.
+* 날짜 [실행 취소,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) 이제 파이프라인 실행 승인 단계에서 사용자에게 취소 이유를 입력하도록 요청합니다.
+   * 이 기능은 단계적으로 출시될 예정입니다.
 
 ## 버그 수정 {#bug-fixes}
 
-* [웹 계층 구성 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines)은 자산 전용 프로그램에 대해 더 이상 비정상적으로 활성화되지 않습니다.
-* 환경 프로비저닝 과정에서 특정 유형의 오류를 방지하도록 보다 강력한 유효성 검사가 추가되었습니다.
+* Cloud Manager에서 작성 UI로 이동하는 경우 로그인 후 더 이상 통합 셸로 리디렉션되지 않습니다.
+* Go-Live 위젯을 통해 Go-Live 날짜를 편집하면 이제 로 이동합니다. **실행** 대신 tab 키를 누릅니다. **향상된 보안** 탭.
+* 복사 작업을 시작할 때 사용자는 복사 작업이 이미 호출된 환경을 더 이상 선택할 수 없습니다.
