@@ -2,10 +2,10 @@
 title: 에셋 보기는 어떤 이점을 제공합니까?
 description: 자산 보기의 주요 이점에 대해 자세히 알아보기
 mini-toc-levels: 3
-source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
+source-git-commit: 97b6f66f2d19b85ec0a71eda756aaa334ea5da57
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 11%
+source-wordcount: '1064'
+ht-degree: 12%
 
 ---
 
@@ -121,14 +121,15 @@ Assets에 대해 as a Cloud Service으로 사용할 수 있는 페르소나 기�
 
 * 저장소 내에서 사용할 수 있는 에셋 및 폴더의 이름을 변경합니다.
 
+새로운 Adobe Experience Manager Assets 보기는 워크플로우를 간소화하고 공동 작업을 촉진하며 에셋 전달을 가속화하도록 맞춤화되었습니다. 콘텐츠 속도를 수용하여 마케터는 디지털 에셋의 잠재력을 최대한 활용하고 이전과는 전혀 다른 창의력을 발휘할 수 있습니다.
+
+
 다음 링크를 사용하여 자산 보기를 빠르게 시작할 수 있습니다.
 
 * [내 작업 영역](/help/assets/my-workspace-assets-view.md)
 * [자산 보기 사용 시작하기](/help/assets/get-started-assets-view.md)
 
-## 결론 {#conclusion}
 
-디지털 중심의 시대가 도래했으며, 진화하는 비즈니스 환경을 지원하기 위해 마케팅 도구를 혁신해야 할 때입니다. 새로운 Adobe Experience Manager Assets 보기는 워크플로우를 간소화하고 공동 작업을 촉진하며 에셋 전달을 가속화하도록 맞춤화되었습니다. 콘텐츠 속도를 수용하여 마케터는 디지털 에셋의 잠재력을 최대한 활용하고 이전과는 전혀 다른 창의력을 발휘할 수 있습니다. Adobe의 새로운 자산 보기 경험을 활용하고 마케팅 캠페인에서 탁월한 결과를 도출해 보십시오. 이제 DAM의 미래를 수용하고 비즈니스를 발전시켜야 할 때입니다.
 
 
 
