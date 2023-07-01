@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5a37f237d04d19f3c4113c2ea3e37ab447bf3b0c
+source-git-commit: da5634dfa812268b81b2db783da772b6ecc1d7ce
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1365'
 ht-degree: 35%
 
 ---
@@ -115,8 +115,8 @@ ht-degree: 35%
 
 * [AEM 페이지 편집기 및 경험 조각 내의 적응형 Forms](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): 이제 AEM 페이지 편집기 및 경험 조각을 사용하여 여러 양식을 신속하게 만들고 AEM Sites 페이지에 추가할 수 있습니다. 이 기능을 통해 콘텐츠 작성자는 동적 동작, 유효성 검사, 데이터 통합, 기록 문서 생성 및 비즈니스 프로세스 자동화를 비롯한 적응형 Forms 구성 요소의 기능을 사용하여 Sites 페이지 내에서 매끄러운 데이터 캡처 경험을 만들 수 있습니다.
 
-      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&amp;learn=on)
-  
+  >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
+
 * [AEM Forms에서 Adobe Acrobat Sign Solutions for Government(HIPPA 컴플레인) 사용](/help/forms/adobe-sign-integration-adaptive-forms.md): 이제 AEM Forms을 Adobe Acrobat Sign Solutions for Government와 통합합니다. 이 통합은 공공기관 관련 계정(정부 부서 및 기관)에 대한 적응형 양식 제출과 함께 전자 서명의 고급 규정 준수 및 보안을 제공합니다.
 
   Adobe Acrobat Sign Solutions for Government와의 통합을 통해 Adobe 파트너 및 정부 고객은 적응형 Forms에서 전자 서명을 사용하여 가장 미션 크리티컬하고 민감한 비즈니스 제품군 중 일부를 수행할 수 있습니다. 이 보안 계층이 추가되면 Adobe의 공공기관 고객들이 안심할 수 있도록 모든 전자 서명은 FedRAMP Moderate 규정을 완전히 준수해야 합니다.
