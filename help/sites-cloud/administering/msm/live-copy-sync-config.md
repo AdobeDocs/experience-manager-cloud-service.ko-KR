@@ -4,10 +4,10 @@ description: 사용할 수 있는 강력한 Live Copy 동기화 옵션 및 프�
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+workflow-type: tm+mt
 source-wordcount: '2335'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -123,7 +123,7 @@ AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을
 
 일부 속성 및 노드 유형은 기본적으로 제외되며, 이들은 **제외된 페이지 속성** 아래에 있는 **CQ MSM 콘텐츠 업데이트 작업**&#x200B;의 OSGi 구성에 정의되어 있습니다.
 
-기본적으로 다음 정규 표현식과 일치하는 속성은 롤아웃 시 제외됩니다(즉 업데이트되지 않음).
+기본적으로 다음 정규 표현식과 일치하는 속성은 롤아웃 시 제외(즉, 업데이트되지 않음)됩니다.
 
 ![Live Copy 제외 정규 표현식](../assets/live-copy-exclude.png)
 
@@ -196,7 +196,7 @@ MSM을 사용하면 일반적으로 사용되는 롤아웃 구성 세트를 지�
 1. **사이트** 콘솔을 사용하여 블루프린트의 루트 페이지를 선택합니다.
 1. 도구 모음에서 **속성**&#x200B;을 선택합니다.
 1. **블루프린트** 탭을 엽니다.
-1. 드롭다운 선택기를 사용하여 **롤아웃 구성**&#x200B;을 한 개 이상 선택합니다.
+1. 하나 이상 선택 **롤아웃 구성** 드롭다운 선택기 사용.
 1. **저장**&#x200B;을 사용하여 업데이트를 유지합니다.
 
 ### 시스템 기본 롤아웃 구성 설정 {#setting-the-system-default-rollout-configuration}

@@ -2,10 +2,10 @@
 title: 코드 배포
 description: AEM as a Cloud Service에서 Cloud Manager 파이프라인을 사용하여 코드를 배포하는 방법에 대해 알아봅니다.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '1215'
-ht-degree: 100%
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+workflow-type: tm+mt
+source-wordcount: '1189'
+ht-degree: 95%
 
 ---
 
@@ -57,9 +57,9 @@ _전체 스택 코드 파이프라인 유형만 코드 스캔, 기능 테스트,
 
 * **유효성 검사** - 이 단계에서는 파이프라인이 현재 사용 가능한 리소스를 사용하도록 구성되었는지 확인합니다. 예를 들어 구성된 분기가 존재하고 환경이 사용 가능한지를 테스트합니다.
 * **빌드 및 단위 테스트** - 이 단계는 컨테이너화된 빌드 프로세스를 실행합니다.
-   * 빌드 환경에 대한 자세한 내용은 [빌드 환경 세부 정보](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 문서를 참조하십시오.
+   * 다음을 참조하십시오 [빌드 환경 세부 정보](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 빌드 환경에 대한 자세한 내용
 * **코드 스캔** - 이 단계에서는 애플리케이션 코드의 품질을 평가합니다.
-   * 테스트 프로세스에 대한 자세한 내용은 [코드 품질 테스트](/help/implementing/cloud-manager/code-quality-testing.md) 문서를 참조하십시오.
+   * 다음을 참조하십시오 [코드 품질 테스트](/help/implementing/cloud-manager/code-quality-testing.md) 테스트 프로세스에 대한 자세한 내용.
 * **이미지 빌드** - 이 프로세스는 빌드 단계에서 생성된 콘텐츠 및 Dispatcher 패키지를 도커 이미지 및 Kubernetes 구성으로 변환하는 역할을 합니다.
 * **스테이지에 배포** - [스테이지 테스트 단계](#stage-testing)를 준비하기 위해 이미지가 스테이징 환경에 배포됩니다.
 
@@ -70,20 +70,20 @@ _전체 스택 코드 파이프라인 유형만 코드 스캔, 기능 테스트,
 **스테이지 테스트** 단계는 다음과 같이 진행됩니다.
 
 * **제품 기능 테스트** - Cloud Manager 파이프라인이 스테이징 환경에 대해 실행되는 테스트를 실행합니다.
-   * 자세한 내용은 [제품 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) 문서를 참조하십시오.
+   * 다음을 참조하십시오 [제품 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) 을 참조하십시오.
 
 * **사용자 정의 기능 테스트** - 파이프라인의 이 단계는 항상 실행되며 건너뛸 수 없습니다. 빌드에서 테스트 JAR이 생성되지 않으면 기본적으로 테스트가 통과합니다.
-   * 자세한 내용은 [사용자 정의 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) 문서를 참조하십시오.
+   * 다음을 참조하십시오 [사용자 정의 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) 을 참조하십시오.
 
 * **사용자 정의 UI 테스트** - 이 단계는 사용자 정의 애플리케이션에 대해 만들어진 UI 테스트를 자동으로 실행하는 선택적 기능입니다.
    * UI 테스트는 언어 및 프레임워크(예: Java 및 Maven, Node 및 WebDriver.io 또는 Selenium을 기반으로 구축된 기타 프레임워크 및 기술)에서 다양한 선택을 허용하도록 도커 이미지에 패키징된 Selenium 기반 테스트입니다.
-   * 자세한 내용은 [사용자 정의 UI 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) 문서를 참조하십시오.
+   * 다음을 참조하십시오 [사용자 정의 UI 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) 을 참조하십시오.
 
 * **경험 감사** - 파이프라인의 이 단계는 항상 실행되며 건너뛸 수 없습니다. 프로덕션 파이프라인이 실행되면 검사를 실행할 사용자 정의 기능 테스트 후에 경험 감사 단계가 포함됩니다.
    * 구성된 페이지는 서비스에 제출되고 평가됩니다.
    * 결과는 정보 제공용이며 점수, 현재 점수와 이전 점수 간의 변화를 보여 줍니다.
    * 이 인사이트는 현재 배포에 도입될 회귀가 있는지 확인하는 데 유용합니다.
-   * 자세한 내용은 [경험 감사 결과 이해](/help/implementing/cloud-manager/experience-audit-testing.md) 문서를 참조하십시오.
+   * 다음을 참조하십시오 [경험 감사 결과 이해](/help/implementing/cloud-manager/experience-audit-testing.md) 을 참조하십시오.
 
 ![스테이지 테스트](assets/stage-testing.png)
 
@@ -120,7 +120,7 @@ _전체 스택 코드 파이프라인 유형만 코드 스캔, 기능 테스트,
 
 ## 배포 프로세스 {#deployment-process}
 
-모든 Cloud Service 배포는 롤링 프로세스를 통해 가동 중지 없이 구현됩니다. 자세한 내용은 [롤링 배포 작동 방법](/help/implementing/deploying/overview.md#how-rolling-deployments-work) 문서를 참조하십시오.
+모든 Cloud Service 배포는 롤링 프로세스를 통해 가동 중지 없이 구현됩니다. 다음을 참조하십시오 [롤링 배포 작동 방식](/help/implementing/deploying/overview.md#how-rolling-deployments-work) 자세히 알아보십시오.
 
 >[!NOTE]
 >
@@ -155,7 +155,7 @@ _전체 스택 코드 파이프라인 유형만 코드 스캔, 기능 테스트,
 
 재실행을 트리거하려면 프로덕션 배포 단계 상태에서 HAL 링크 &lt;(<https://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)>에 대해 PUT 요청을 수행해야 합니다. 이 링크가 있으면 해당 단계에서 재실행할 수 있습니다. 이 링크가 없으면 해당 단계에서 재실행할 수 없습니다. 초기 릴리스에서 이 링크는 프로덕션 배포 단계에만 표시되지만 향후 릴리스에서는 다른 단계에서의 파이프라인 시작을 지원할 수 있습니다. 예:
 
-```Javascript
+```JavaScript
  {
   "_links": {
     "https://ns.adobe.com/adobecloud/rel/pipeline/logs": {

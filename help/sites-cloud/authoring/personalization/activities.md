@@ -2,9 +2,9 @@
 title: 활동 관리
 description: 활동 콘솔을 사용하면 브랜드의 마케팅 활동을 만들고, 구성하고, 관리할 수 있습니다.
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
-source-git-commit: 56a7f214a4a1a3a58c56f1e06e3a98532054ffee
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2019'
+source-wordcount: '2020'
 ht-degree: 61%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 61%
 
 * XT - Adobe Target 경험 타겟팅
 * A/B - Adobe Target A/B 테스트
-* AEM - Adobe Experience Manager 타겟팅(예: ContextHub 기반)
+* AEM - Adobe Experience Manager 타깃팅(즉, ContextHub 기반)
 
 ![활동 유형](/help/sites-cloud/authoring/assets/activities-types.png)
 
@@ -63,8 +63,8 @@ ht-degree: 61%
    ![활동으로 이동](/help/sites-cloud/authoring/assets/activities-navigation.png)
 
 1. 활동 콘솔에서 을 클릭하거나 탭합니다 **만들기**&#x200B;그러면&#x200B;**브랜드 만들기**.
-1. 브랜드 템플릿을 선택하고 을 클릭하거나 탭합니다. **다음**.
-1. 활동 및 오퍼 콘솔에 표시할 브랜드의 제목을 입력합니다. 필요한 경우 브랜드와 연결할 태그를 하나 이상 입력하거나 선택합니다.
+1. 브랜드 템플릿을 선택하고 **다음**&#x200B;을 클릭하거나 탭합니다.
+1. 활동 및 오퍼 콘솔에 표시할 브랜드의 제목을 입력합니다. 원할 경우, 브랜드와 연결할 태그를 하나 이상 입력하거나 선택합니다.
 1. **만들기**&#x200B;를 클릭하거나 탭합니다. 브랜드가 활동 콘솔에 표시됩니다.
 
 ## 활동 콘솔을 사용하여 활동 추가/편집 {#adding-editing-an-activity-using-the-activities-console}

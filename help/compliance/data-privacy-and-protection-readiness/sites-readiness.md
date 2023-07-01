@@ -2,10 +2,10 @@
 title: 데이터 보호 및 데이터 개인정보 보호 규정 - Adobe Experience Manager as a Cloud Service Sites 준비
 description: EU 일반 데이터 보호 규정(GDPR), 캘리포니아 소비자 개인정보 보호법 및 새 AEM as a Cloud Service 프로젝트 구현 시 이들 규정을 준수하는 방법을 포함하여 다양한 데이터 보호 및 데이터 개인정보 보호 규정에 대한 Adobe Experience Manager as a Cloud Service Sites 지원에 대해 알아봅니다.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '1028'
-ht-degree: 100%
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+workflow-type: tm+mt
+source-wordcount: '1025'
+ht-degree: 92%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Adobe Experience Manager as a Cloud Service Sites는 고객의 데이터 개인정보 보호 및 보호 규정 준수 제어를 도울 준비가 되었습니다. 이 페이지에서는 AEM Sites에서 이러한 요청을 처리하는 절차에 대해 안내합니다. 저장된 개인 데이터의 위치와 수동으로 또는 코드로 해당 데이터를 제거하는 방법에 대해서도 설명합니다.
 
-자세한 내용은 [Adobe의 개인정보 보호 센터](https://www.adobe.com/kr/privacy.html)를 참조하십시오.
+자세한 내용은 [Adobe 개인 정보 보호 센터](https://www.adobe.com/kr/privacy.html).
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Adobe Experience Manager as a Cloud Service Sites는 고객의 데이터 개인�
 
 작성자 서버에서 사이트 방문자 인증에 사용되는 사용자 계정 및 UGC 콘텐츠에 대한 내용은 [AEM Foundation 설명서](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)에 기재되어 있습니다.
 
-기본적으로 AEM Sites 구성 요소는 게시 서버에서 방문자가 입력한 양식 데이터를 저장하지 않습니다. 추가적인 처리가 필요하면 데이터를 서드파티 시스템 또는 Adobe Campaign에 전달하는 것이 좋습니다.
+기본적으로 AEM Sites 구성 요소는 게시 서버에서 방문자가 입력한 양식 데이터를 저장하지 않습니다. 추가적인 처리가 필요하면 데이터를 타사 시스템 또는 Adobe Campaign에 전달하는 것이 좋습니다.
 
 ## 옵트인/옵트아웃 {#opt-in-opt-out}
 
@@ -76,13 +76,13 @@ Adobe Experience Manager의 경우 사용자에 대한 옵트인/옵트아웃 �
 
 AEM Sites에는 Adobe Analytics 온디맨드 서비스의 기능을 사용하는 Analytics Foundation과의 선택적 통합이 포함되어 있습니다.
 
-Adobe Analytics 관련 데이터 주제 요청 관리에 대한 자세한 내용은 [Adobe Analytics 및 데이터 개인정보 보호](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html)를 참조하십시오.
+Adobe Analytics 관련 데이터 주체 요청 관리에 대한 자세한 내용은 을 참조하십시오. [Adobe Analytics 및 데이터 개인 정보 보호](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
 
 ## Target을 통한 개인 맞춤화 기초 {#personalization-foundation-by-target}
 
 AEM Sites에는 Adobe Target 온디맨드 서비스의 기능을 사용하는 Target을 통한 개인 맞춤화 기초와의 선택적 통합이 포함되어 있습니다.
 
-Adobe Target과 관련된 데이터 주체 요청 관리에 대한 자세한 내용은 [Adobe Target - 개인정보 보호 및 일반 데이터 보호 규정](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)을 참조하십시오.
+Adobe Target 관련 데이터 주체 요청 관리에 대한 자세한 내용은 다음을 참조하십시오. [Adobe Target - 개인 정보 보호 및 일반 데이터 보호 규정](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 

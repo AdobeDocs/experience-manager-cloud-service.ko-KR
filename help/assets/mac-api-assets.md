@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 3%
@@ -145,7 +145,7 @@ API 호출이 실패하고 `500` 제공된 경로의 상위 노드가 없는 경
 
 **응답 코드**: 응답 코드는 다음과 같습니다.
 
-* 201 - 작성됨 - 작성됨.
+* 201 - 작성됨 - 성공적으로 작성되었을 때.
 * 409 - 충돌 - 폴더가 있는 경우.
 * 412 - 사전 조건 실패 - 루트 컬렉션을 찾거나 액세스할 수 없는 경우.
 * 500 - 내부 서버 오류 - 다른 문제가 발생한 경우.
@@ -279,13 +279,13 @@ API 호출이 실패하고 `500` 제공된 경로의 상위 노드가 없는 경
 
 **추가 참조**
 
-* [에셋 번역](translate-assets.md)
-* [에셋이 지원되는 파일 형식](file-format-support.md)
-* [에셋 검색](search-assets.md)
-* [연결된 에셋](use-assets-across-connected-assets-instances.md)
-* [에셋 보고서](asset-reports.md)
+* [자산 번역](translate-assets.md)
+* [자산이 지원되는 파일 형식](file-format-support.md)
+* [자산 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [자산 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
-* [에셋 다운로드](download-assets-from-aem.md)
+* [자산 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)

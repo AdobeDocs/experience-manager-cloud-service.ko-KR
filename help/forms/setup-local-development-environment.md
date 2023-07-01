@@ -2,10 +2,10 @@
 title: Adobe Experience Manager Forms as a Cloud Service을 위한 로컬 개발 환경 설정
 description: Adobe Experience Manager Forms as a Cloud Service을 위한 로컬 개발 환경 설정
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 7dc36220c1f12177037aaa79d864c1ec2209a301
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2818'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -191,15 +191,15 @@ AEM Forms as a Cloud Services은 기록 문서를 보다 쉽게 개발하고 다
    * (Apple macOS) 설치 [Mac용 도커 데스크탑](https://hub.docker.com/editions/community/docker-ce-desktop-mac). 여기에는 Docker 엔진, Docker CLI 클라이언트, Docker 작성, Docker 컨텐츠 신뢰, Kubernetes 및 Credential Helper가 포함됩니다.
 
    * (Linux®의 경우) 설치 [도커 엔진](https://docs.docker.com/engine/install/#server) 및 [도커 작성](https://docs.docker.com/compose/install/) 컴퓨터에 있습니다.
+
    >[!NOTE]
    >
    > * Apple macOS의 경우 로컬 AEM 작성자 인스턴스가 포함된 허용 목록에 추가하다 폴더입니다.
    >
    > * Windows용 Docker Desktop은 Hyper-V라는 두 개의 백엔드를 지원합니다.
-      > (기존) 및 WSL2(최신). 파일 공유가 자동으로 수행됩니다.
-      > WSL2(최신)를 사용할 때 Docker에서 관리합니다. 다음을 수행해야 합니다.
-      > hyper-V(레거시)를 사용하는 동안 파일 공유를 명시적으로 구성하십시오.
-
+   > (기존) 및 WSL2(최신). 파일 공유가 자동으로 수행됩니다.
+   > WSL2(최신)를 사용할 때 Docker에서 관리합니다. 다음을 수행해야 합니다.
+   > hyper-V(레거시)를 사용하는 동안 파일 공유를 명시적으로 구성하십시오.
 
 1. 작성자 및 게시 인스턴스와 동시에 폴더를 만듭니다(예: aem-sdk). 예: C:\aem-sdk.
 
@@ -234,7 +234,7 @@ AEM Forms as a Cloud Services은 기록 문서를 보다 쉽게 개발하고 다
 ---------|----------|---------
 | 캔버스 3.0 | 기본 | Microsoft® Dynamics 365 |
 | 고요해 | 비어 있음 | Salesforce |
-| 우르바네 |  |  |
+| 우르바네 |   |  |
 | 울트라마린 |  |  |
 | 베릴 |  |  |
 
@@ -329,9 +329,9 @@ Experience Manager Forms에 대한 Dispatcher 캐시를 as a Cloud Service으로
 
 로컬 개발 환경이 준비되었습니다.
 
-## AEM Forms as a Cloud Service 및 로컬 개발 환경에서 적응형 Forms 핵심 구성 요소 활성화
+## AEM Forms as a Cloud Service 및 로컬 개발 환경에서 적응형 양식 핵심 구성 요소 활성화
 
-AEM Forms as a Cloud Service에서 적응형 Forms 핵심 구성 요소를 활성화하면 AEM Forms Cloud Service 인스턴스를 사용하여 적응형 Forms 및 Headless Forms 기반의 핵심 구성 요소를 만들고, 게시하고, 여러 채널에 전달할 수 있습니다. Headless 적응형 Forms을 사용하려면 적응형 Forms 핵심 구성 요소 사용 환경이 필요합니다.
+AEM Forms as a Cloud Service에서 적응형 양식 핵심 구성 요소를 활성화하면 여러 채널에 AEM Forms Cloud Service 인스턴스를 사용하여 핵심 구성 요소 기반 적응형 양식 및 Headless 양식을 만들고, 게시하고, 게재할 수 있습니다. Headless Adaptive Forms를 사용하려면 적응형 양식 핵심 구성 요소 활성화 환경이 필요합니다.
 
 자세한 내용은 [AEM Forms as a Cloud Service 및 로컬 개발 환경에서 적응형 Forms 핵심 구성 요소 활성화](/help/forms/enable-adaptive-forms-core-components.md)
 

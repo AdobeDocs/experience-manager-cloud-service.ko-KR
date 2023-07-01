@@ -2,9 +2,9 @@
 title: ContextHub 진단
 description: ContextHub는 ContextHub 프레임워크의 개요를 볼 수 있는 진단 페이지를 제공합니다
 exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '438'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ContextHub 진단 페이지는 작성된 저장소 및 UI 모듈, 로드된 클�
 
 >[!NOTE]
 >
->진단 정보를 반환하려면 디버그 모드를 활성화해야 합니다. 그렇지 않으면 진단 페이지가 비어 있습니다. 다음을 참조하십시오. [이 문서](configuring-contexthub.md#debugging-contexthub) 디버그 모드를 활성화하는 방법에 대한 자세한 내용을 참조하십시오.
+>진단 정보를 반환하려면 디버그 모드를 활성화해야 합니다. 그렇지 않으면 진단 페이지가 비어 있습니다. 다음을 참조하십시오 [이 문서](configuring-contexthub.md#debugging-contexthub) 디버그 모드를 활성화하는 방법에 대한 자세한 내용을 참조하십시오.
 
 ## 스토어 {#stores}
 
@@ -52,8 +52,8 @@ Clientlibs 섹션에는 [클라이언트 라이브러리 폴더](/help/implement
 URL 섹션에는 ContextHub 기능에 대한 링크가 포함되어 있습니다.
 
 * **구성 편집기:** 다음을 엽니다. [ContextHub 구성 페이지](configuring-contexthub.md) 저장소, UI 모드 및 UI 모듈을 구성할 수 있습니다.
-* **ContextHub 모듈 구성:** 다음을 엽니다. `/etc/cloudsettings/default/contexthub.config.kernel.js` ContextHub 저장소 구성의 Javascript 개체 표현이 포함된 파일입니다.
-* **ContextHub UI 구성:** 다음을 엽니다. `/etc/cloudsettings/default/contexthub.config.ui.js` ContextHub UI 모드 구성의 Javascript 개체 표현이 포함된 파일입니다.
+* **ContextHub 모듈 구성:** 다음을 엽니다. `/etc/cloudsettings/default/contexthub.config.kernel.js` ContextHub 저장소 구성의 JavaScript 개체 표현을 포함하는 파일입니다.
+* **ContextHub UI 구성:** 다음을 엽니다. `/etc/cloudsettings/default/contexthub.config.ui.js` ContextHub UI 모드 구성의 JavaScript 개체 표현을 포함하는 파일입니다.
 * **kernel.js:** 다음을 엽니다. `/etc/cloudsettings/default/contexthub.kernel.js` ContextHub 프레임워크, 세그먼트 엔진 및 저장소 유형을 구현하는 클라이언트 라이브러리의 소스 코드가 들어 있는 파일입니다.
 * **ui.js:** 다음을 엽니다. `/etc/cloudsettings/default/contexthub.ui.js` ContextHub UI 및 UI 모듈 유형을 구현하는 클라이언트 라이브러리의 소스 코드가 포함된 파일입니다.
 * **style.css:** 다음을 엽니다. `/etc/cloudsettings/default/contexthub.styles.css` ContextHub UI 및 UI 모듈의 CSS 스타일이 포함된 파일입니다.

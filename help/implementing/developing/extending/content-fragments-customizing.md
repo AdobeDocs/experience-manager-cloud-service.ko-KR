@@ -2,9 +2,9 @@
 title: 콘텐츠 조각 맞춤화 및 확장
 description: 컨텐츠 조각은 표준 자산을 확장합니다.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1808'
+source-wordcount: '1811'
 ht-degree: 2%
 
 ---
@@ -46,7 +46,7 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 
 * 컨텐츠 조각은 에셋입니다.
 * 기존 에셋 기능을 사용합니다.
-* Assets(관리 콘솔 등)와 완전히 통합됩니다.
+* Assets는 Assets(관리 콘솔 등)와 완전히 통합됩니다.
 
 컨텐츠 조각은 다음과 같은 사이트 기능으로 간주됩니다.
 
@@ -106,7 +106,7 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 
 * 구성 요소에서 중간 콘텐츠를 사용할 수 있습니다.
 
-   * 여기에서 구성 요소를 사용하여 다른 에셋(이미지 등)을 배치할 수 있습니다. 참조된 조각의 단락 사이.
+   * 여기에서 구성 요소를 사용하여 참조된 조각의 단락 사이에 다른 에셋(이미지 등)을 배치할 수 있습니다.
 
    * 중간 콘텐츠 의 경우 다음을 수행해야 합니다.
 

@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 대상 선택기
 description: AEM 대상 선택기를 사용하여 사용할 수 있는 자산을 원본 자산의 사본으로 표시하고 선택합니다.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1909'
-ht-degree: 95%
+source-wordcount: '1911'
+ht-degree: 93%
 
 ---
 
@@ -130,7 +130,7 @@ interface SelectedDestination {
 | *repo:size* | 숫자 | 자산의 크기입니다(바이트). |
 | *repo:path* | 문자열 | 저장소 내 자산의 위치입니다. |
 | *repo:ancestors* | `Array<string>` | 저장소에 있는 자산의 상위 항목 배열입니다. |
-| *repo:state* | 문자열 | 저장소에 있는 자산의 현재 상태입니다(예: 활성, 삭제됨 등). |
+| *repo:state* | 문자열 | 저장소에 있는 에셋의 현재 상태(예: 활성, 삭제됨 등)입니다. |
 | *repo:createdBy* | 문자열 | 자산을 생성한 사용자 또는 시스템입니다. |
 | *repo:createDate* | 문자열 | 자산이 생성된 날짜 및 시간입니다. |
 | *repo:modifiedBy* | 문자열 | 마지막으로 자산을 수정한 사용자 또는 시스템입니다. |
@@ -188,7 +188,7 @@ interface SelectedDestination {
 | *imsOrg* | 문자열 | 예 | | 조직에 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]를 프로비저닝하는 중에 할당된 Adobe IMS(Identity Management System)입니다. 다음 `imsOrg` 액세스하려는 조직이 Adobe IMS에 속해 있는지 여부를 인증하려면 키가 필요합니다. |
 | *imsToken* | 문자열 | 아니요 | | 인증에 사용되는 IMS 전달자 토큰입니다. `imsToken` SUSI 흐름을 사용하는 경우에는 이 필요하지 않습니다. 그러나 비SUSI 흐름을 사용하는 경우에는 필수입니다. |
 | *apiKey* | 문자열 | 아니요 | | AEM Discovery 서비스에 액세스하는 데 사용되는 API 키입니다. `apiKey` SUSI 흐름을 사용하는 경우에는 이 필요하지 않습니다. 단, SUSI 외 흐름의 경우에는 필요합니다. |
-| *rootPath* | 문자열 | 아니요 | /content/dam/ | 대상 선택기에 자산이 표시되는 폴더 경로입니다. 캡슐화된 형태로도 `rootPath`를 사용할 수 있습니다. 예를 들어 `/content/dam/marketing/subfolder/`라는 경로가 주어지면 대상 선택기에서는 상위 폴더로 이동할 수 없으며 하위 폴더만 표시됩니다. |
+| *rootPath* | 문자열 | 아니요 | /content/dam/ | 대상 선택기에 자산이 표시되는 폴더 경로입니다. 캡슐화된 형태로도 `rootPath`를 사용할 수 있습니다. 예를 들어 다음 경로가 주어지면 `/content/dam/marketing/subfolder/`, 대상 선택기를 사용하면 상위 폴더를 통과할 수 없지만 하위 폴더만 표시됩니다. |
 | *hasMore* | 부울 | 아니요 | | 애플리케이션에 표시할 콘텐츠가 많은 경우 이 속성을 사용하여 콘텐츠를 로드하는 로더를 추가하면 콘텐츠를 애플리케이션에 표시할 수 있습니다. 이 표시기로 콘텐츠 로딩이 진행 중임을 나타냅니다. |
 | *orgName* | 부울 | 아니요 | | AEM과 연관된 조직의 이름 (orgID) |
 | *initRepoID* | 문자열 | 아니요 | | 기본 초기 보기에서 사용하려는 자산 저장소의 경로 |

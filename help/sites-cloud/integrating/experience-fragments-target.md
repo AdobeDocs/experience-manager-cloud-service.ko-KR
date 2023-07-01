@@ -2,10 +2,10 @@
 title: Adobe Target으로 경험 조각 내보내기
 description: Adobe Target으로 경험 조각 내보내기
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2250'
-ht-degree: 98%
+source-wordcount: '2245'
+ht-degree: 97%
 
 ---
 
@@ -48,7 +48,7 @@ AEM 경험 조각을 Adobe Target의 기본 작업 영역 또는 Adobe Target의
 
 >[!NOTE]
 >
->또한 자세한 내용은 다음을 참조하십시오.
+>자세한 내용은 다음을 참조하십시오.
 >
 >* [Adobe Target 개발](https://developers.adobetarget.com/)
 >* [핵심 구성 요소 - 경험 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
@@ -177,7 +177,7 @@ Adobe Target의 세그먼트를 동기화하도록 클라우드 구성을 구성
 
    * **테넌트 ID**: 테넌트 ID입니다.
 
-   * **IMS 구성**: 드롭다운 목록에서 필요한 구성을 선택합니다.
+   * **IMS 구성**: 드롭다운 목록에서 필요한 구성을 선택합니다
 
    * **API 유형**: 기본값은 REST입니다(XML은 더 이상 사용되지 않음).
 
@@ -356,7 +356,7 @@ AEM에서 Target으로 경험 조각을 내보내려면(클라우드 구성 지�
 
 ## Adobe Target에서 경험 조각 사용 {#using-your-experience-fragments-in-adobe-target}
 
-이전 작업을 수행하면 경험 조각이 Target의 오퍼 페이지에 표시됩니다. 여기에서 수행할 수 있는 작업에 대해 알아보려면 [관련 Target 설명서](https://experiencecloud.adobe.com/resources/help/ko_KR/target/target/aem-experience-fragments.html)를 살펴보십시오.
+이전 작업을 수행하면 경험 조각이 Target의 오퍼 페이지에 표시됩니다. 다음을 참조하십시오 [특정 Target 설명서](https://experiencecloud.adobe.com/resources/help/ko_KR/target/target/aem-experience-fragments.html) 여기에서 달성할 수 있는 것에 대해 알아봅니다.
 
 >[!NOTE]
 >

@@ -2,9 +2,9 @@
 title: 론치 만들기
 description: 론치를 만들어 향후 활성화할 수 있도록 기존 웹 페이지의 새 버전 업데이트를 활성화할 수 있습니다.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1043'
 ht-degree: 66%
 
 ---
@@ -62,7 +62,7 @@ Optionally, you can specify the **Launch Date** (and time) to define when the la
 
    >[!NOTE]
    >
-   >론치에 페이지 및/또는 분기를 추가하려면 사이트 내에 있어야 합니다(예: 일반적인 최상위 루트 아래).
+   >론치에 페이지 및/또는 분기를 추가하려면 사이트 내에 있어야 합니다. 즉, 공통 최상위 루트 아래에 있어야 합니다.
    >
    >사이트에 최상위 수준 아래의 언어 루트가 포함되어 있는 경우 론치용 페이지 및 분기는 공통 언어 루트 아래에 있어야 합니다.
 

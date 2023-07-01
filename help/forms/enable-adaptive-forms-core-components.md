@@ -6,10 +6,10 @@ seo-description: Learn how to enable Adaptive Forms Core Components on AEM Forms
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 100%
+source-wordcount: '1016'
+ht-degree: 94%
 
 ---
 
@@ -24,7 +24,7 @@ AEM Forms as a Cloud Service에서 적응형 양식 핵심 구성 요소를 활�
 
 * 핵심 구성 요소가 [임베드되지 않은](#enable-components) 이전 Forms as a Cloud Service 프로그램이 있는 경우 AEM as a Cloud Service 저장소에 [적응형 양식 핵심 구성 요소 종속성을 추가](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment)하고 Cloud Service 환경에 저장소를 배포하여 Headless 적응형 양식을 활성화할 수 있습니다.
 
-* 기존 Cloud Service 환경에 [핵심 구성 요소 기반 적응형 양식을 만드는](creating-adaptive-form-core-components.md) 옵션이 제공되는 경우 내 환경에 맞는 적응형 양식 핵심 구성 요소와 Headless 적응형 양식이 이미 활성화되어 있으며 핵심 구성 요소 기반 적응형 양식을 모바일, 웹, 기본 앱 등 채널과 적응형 양식의 Headless 표현식이 필요한 서비스에 Headless 양식으로 제공할 수 있습니다.
+* 기존 Cloud Service 환경에서 다음 옵션을 제공하는 경우 [핵심 구성 요소 기반 적응형 Forms 만들기](creating-adaptive-form-core-components.md), 적응형 Forms 핵심 구성 요소 및 Headless 적응형 Forms은 귀하의 환경에 대해 이미 활성화되어 있으며, 적응형 Forms의 Headless 표현이 필요한 모바일, 웹, 기본 앱 및 서비스와 같은 채널에 Headless 양식으로 핵심 구성 요소 기반 적응형 Forms을 제공할 수 있습니다.
 
 
 ## 적응형 양식 핵심 구성 요소 및 Headless 적응형 양식 활성화 {#enable-headless-forms}

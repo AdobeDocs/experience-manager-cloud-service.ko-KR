@@ -4,10 +4,10 @@ description: 다중 사이트 관리자 롤아웃 충돌을 관리하고 해결�
 feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '922'
-ht-degree: 100%
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+workflow-type: tm+mt
+source-wordcount: '923'
+ht-degree: 96%
 
 ---
 
@@ -77,7 +77,7 @@ AEM은 다음을 제공합니다.
 기본 충돌 처리기는 `ResourceNameRolloutConflictHandler`입니다.
 
 * 이 처리기를 사용하면 블루프린트 페이지가 우선 순위를 갖습니다.
-* 이 처리기의 서비스 순위는 낮게 설정되어 있는데(`service.ranking` 속성의 기본값보다 낮음), 이는 맞춤화된 처리기에 더 높은 순위가 필요하다고 가정하기 때문입니다. 그러나 순위는 유연성을 보장하기 위한 절대적인 최소 조건이 아닙니다.
+* 이 처리기의 서비스 순위가 낮게 설정되어 있습니다. 즉, 의 기본값보다 낮습니다. `service.ranking` 속성을 사용하면 맞춤화된 처리기에 더 높은 순위가 필요하다고 가정할 수 있습니다. 그러나 순위는 유연성을 보장하기 위한 절대적인 최소 조건이 아닙니다.
 
 이 충돌 처리기를 사용하면 블루프린트가 우선 순위를 갖습니다. 예를 들어 Live Copy 페이지 `/b`가 Live Copy 분기 내에서 `/b_msm_moved`로 이동하게 됩니다.
 

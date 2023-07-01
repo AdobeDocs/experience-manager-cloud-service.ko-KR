@@ -1,21 +1,21 @@
 ---
-title: ContextHub Javascript API 참조
-description: ContextHub 구성 요소를 페이지에 추가하면 ContextHub Javascript API를 스크립트에 사용할 수 있습니다
+title: ContextHub JavaScript API 참조
+description: ContextHub JavaScript API는 ContextHub 구성 요소가 페이지에 추가되면 스크립트에 사용할 수 있습니다
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '4620'
 ht-degree: 2%
 
 ---
 
-# ContextHub Javascript API 참조 {#contexthub-javascript-api-reference}
+# ContextHub JavaScript API 참조 {#contexthub-javascript-api-reference}
 
-다음과 같은 경우 스크립트에서 ContextHub Javascript API를 사용할 수 있습니다. [ContextHub 구성 요소가 페이지에 추가되었습니다](adding-contexthub.md).
+ContextHub JavaScript API는 다음과 같은 경우에 스크립트에서 사용할 수 있습니다. [ContextHub 구성 요소가 페이지에 추가되었습니다](adding-contexthub.md).
 
 ## ContextHub 상수 {#contexthub-constants}
 
-ContextHub Javascript API에서 정의하는 상수 값입니다.
+ContextHub JavaScript API에서 정의하는 상수 값입니다.
 
 ### 이벤트 상수 {#event-constants}
 
@@ -62,7 +62,7 @@ ContextHub Javascript API에서 정의하는 상수 값입니다.
 | `ContextHub.Constants.EVENT_UI_INITIALIZED` | UI 컨테이너가 초기화되면 실행됩니다. | `ui-initialized` |
 | `ContextHub.Constants.ACTIVE_UI_MODE` | 활성 UI 모드를 나타냅니다. | `/_/active-ui-mode` |
 
-## ContextHub Javascript API 참조 {#contexthub-javascript-api-reference-2}
+## ContextHub JavaScript API 참조 {#contexthub-javascript-api-reference-2}
 
 ContextHub 개체는 모든 저장소에 대한 액세스를 제공합니다.
 
@@ -89,7 +89,7 @@ var geoloc = allStores.geolocation
 
 #### getStore(name) {#getstore-name}
 
-저장소를 Javascript 개체로 검색합니다.
+저장소를 JavaScript 개체로 검색합니다.
 
 ##### 매개변수 {#parameters-}
 
@@ -369,7 +369,7 @@ A `boolean` 값:
 
 JSON 데이터가 포함된 저장소입니다. 데이터는 외부 JSONP 서비스 또는 JSON 데이터를 반환하는 서비스에서 검색됩니다. 다음을 사용하여 서비스 세부 정보 지정 [`init`](#init-name-config) 이 클래스의 인스턴스를 만들 때 작동합니다.
 
-저장소는 인메모리 지속성(Javascript 변수)을 사용합니다. 저장 데이터는 페이지 수명 동안에만 사용할 수 있습니다.
+저장소는 인메모리 지속성(JavaScript 변수)을 사용합니다. 저장 데이터는 페이지 수명 동안에만 사용할 수 있습니다.
 
 ContextHub.Store.JSONPtore 확장 [ContextHub.Store.Core](#contexthub-store-core) 및 는 해당 클래스의 함수를 상속합니다.
 
@@ -441,7 +441,7 @@ A `string` 서비스 URL을 나타내는 값입니다.
 * **`config`:** (객체) 서비스 속성을 포함하는 객체입니다. JSONPtore 개체는 `service` jsonp 서비스의 URL을 구성하는 개체:
    * `eventDeferring`: 32.
    * `eventing`: 이 저장소의 ContextHub.Utils.Eventing 개체입니다. 기본값은 입니다 `ContextHub.eventing` 개체.
-   * `persistence`: 이 저장소의 ContextHub.Utils.Persistence 개체입니다. 기본적으로 메모리 지속성이 사용됩니다(Javascript 개체).
+   * `persistence`: 이 저장소의 ContextHub.Utils.Persistence 개체입니다. 기본적으로 메모리 지속성이 사용됩니다(JavaScript 개체).
    * `service`: (오브젝트)
       * `host`: (문자열) 서버 이름 또는 IP 주소입니다.
       * `jsonp`: (부울) 값이 true이면 서비스가 JSONP 서비스이고 그렇지 않으면 false입니다. true인 경우 `{callback: "ContextHub.Callbacks.*Object.name*}`개체가 추가됨 `service.params`.
@@ -489,7 +489,7 @@ A `string` 서비스 URL을 나타내는 값입니다.
 
 ## ContextHub.Store.SessionStore {#contexthub-store-sessionstore}
 
-`ContextHub.Store.SessionStore` 확장 [ContextHub.Store.Core](#contexthub-store-core) 그래서 그것은 그 클래스의 모든 기능을 상속합니다. 이 저장소의 데이터는 메모리 내 지속성을 사용하여 지속됩니다(Javascript 개체).
+`ContextHub.Store.SessionStore` 확장 [ContextHub.Store.Core](#contexthub-store-core) 그래서 그것은 그 클래스의 모든 기능을 상속합니다. 이 저장소의 데이터는 메모리 내 지속성(JavaScript 개체)을 사용하여 유지됩니다.
 
 ## ContextHub.UI {#contexthub-ui}
 
@@ -773,7 +773,7 @@ If `triggerForPastEvents` 은(는) `false`, 이 함수는 값을 반환하지 �
 
 ##### 반환 {#returns-parse}
 
-Javascript 개체입니다.
+JavaScript 개체.
 
 ##### 예 {#example-parse}
 
@@ -795,7 +795,7 @@ Object {
 
 #### stringify(data) {#stringify-data}
 
-Javascript 값 및 개체를 JSON 형식의 문자열 값으로 serialize합니다.
+JavaScript 값 및 개체를 JSON 형식의 문자열 값으로 serialize합니다.
 
 ##### 매개변수 {#parameters-stringify}
 
@@ -869,7 +869,7 @@ ContextHub.Utils.JSON.stringify({
 
 ##### 예 {#example-getitem-2}
 
-다음 Javascript 개체를 고려해 보십시오.
+다음 JavaScript 개체를 고려해 보십시오.
 
 ```javascript
 myObject {
@@ -1045,7 +1045,7 @@ ContextHub.Utils.JSON.tree.sanitizeKey(key)
 
 ##### 예 {#example-setitem-2}
 
-다음 Javascript 코드를 고려하십시오.
+다음 JavaScript 코드를 생각해 보십시오.
 
 ```javascript
 var myObject = {

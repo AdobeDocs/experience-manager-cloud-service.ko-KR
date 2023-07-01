@@ -2,10 +2,10 @@
 title: 콘텐츠 조각을 사용하여 작업 (에셋 - 콘텐츠 조각)
 description: Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각을 사용하여 페이지 작성 및 Headless 게재에 이상적인 페이지 독립적 콘텐츠를 디자인하고, 작성하고, 선별하고, 사용하는 방법에 대해 알아봅니다.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2132'
-ht-degree: 91%
+source-wordcount: '2134'
+ht-degree: 90%
 
 ---
 
@@ -84,7 +84,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 >
 >경험 조각은 콘텐츠 조각 형태로 콘텐츠를 포함할 수 있지만 반대로는 불가능합니다.
 >
->자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)를 참조하십시오.
+>자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
 
 ## 콘텐츠 조각 및 콘텐츠 서비스 {#content-fragments-and-content-services}
 
@@ -289,7 +289,7 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 
    * 조각을 HTML 및/또는 JSON 형식으로 게재하는 데 중요합니다.
    * [페이지에서 조각을 참조](/help/sites-cloud/authoring/fundamentals/content-fragments.md)하는 데 필요합니다.
-   * 채널처럼 조각의 레이아웃 및 게재를 담당합니다.
+   * 조각, 즉 채널의 레이아웃 및 게재를 담당합니다.
    * 조각은 레이아웃을 정의하고 일부 또는 모든 요소/변형 및 관련 콘텐츠를 게재하기 위해 하나 이상의 전용 구성 요소를 필요로 합니다.
    * 작성 중인 페이지에 조각을 드래그하면 필요한 구성 요소가 자동으로 연결됩니다.
 

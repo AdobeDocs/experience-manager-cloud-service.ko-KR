@@ -2,7 +2,7 @@
 title: AEM 기술 재단
 description: AEM이 구조화되고 JCR, Sling 및 OSGi와 같은 기본 기술이 포함된 AEM의 기술 기반에 대한 개요입니다.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2144'
 ht-degree: 1%

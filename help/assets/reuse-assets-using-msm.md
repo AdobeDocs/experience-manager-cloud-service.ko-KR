@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: ca58b4df232dc658d7843ede2386710c4da43fcb
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '3404'
+source-wordcount: '3403'
 ht-degree: 12%
 
 ---
@@ -363,7 +363,7 @@ However, you have the flexibility to make local modifications to a live copy to 
 
 >[!NOTE]
 >
->콘텐츠 조각(을 통해 액세스됨)용 MSM을 기억하십시오. **[!UICONTROL 에셋]** 콘솔)에서는 에셋 기능을 사용합니다. 이는 에셋이 에셋으로 저장되기 때문입니다(하지만 사이트 기능으로 간주됨).
+>콘텐츠 조각용 MSM(를 통해 액세스)은 **[!UICONTROL 에셋]** 콘솔)에서는 에셋 기능을 사용합니다. 이는 에셋이 에셋으로 저장되기 때문입니다(하지만 사이트 기능으로 간주됨).
 
 ## 제한 사항 및 MSM의 알려진 문제 [!DNL Assets] {#limitations}
 
@@ -373,14 +373,14 @@ However, you have the flexibility to make local modifications to a live copy to 
 
 **추가 참조**
 
-* [에셋 번역](translate-assets.md)
+* [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [에셋이 지원되는 파일 형식](file-format-support.md)
-* [에셋 검색](search-assets.md)
-* [연결된 에셋](use-assets-across-connected-assets-instances.md)
-* [에셋 보고서](asset-reports.md)
+* [자산이 지원되는 파일 형식](file-format-support.md)
+* [자산 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [자산 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
-* [에셋 다운로드](download-assets-from-aem.md)
+* [자산 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)

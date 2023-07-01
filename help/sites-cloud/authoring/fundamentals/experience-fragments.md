@@ -2,10 +2,10 @@
 title: 경험 조각
 description: Adobe Experience Manager as a Cloud Service 경험 조각을 사용하여 경험을 재사용이 가능하고 및 유연하게 만듭니다.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2052'
-ht-degree: 81%
+source-wordcount: '2046'
+ht-degree: 77%
 
 ---
 
@@ -37,7 +37,7 @@ Adobe Experience Manager as a Cloud Service 내 경험 조각은
 경험 조각이 없으면 작성자는 해당 조각을 복사하여 붙여넣어야 합니다. 이러한 복사/붙여넣기 경험을 생성하고 유지 관리하는 데는 시간이 오래 걸리고 사용자 오류가 발생합니다.
 경험 조각은 복사/붙여넣기가 필요하지 않습니다.
 * 경험 조각을 사용하여 Headless CMS 사용 사례를 지원할 수 있습니다.
-작성자는 작성에만 AEM을 사용하고 고객에게 게재하는 데에는 사용하지 않습니다. 서드파티 시스템/터치포인트는 이러한 경험을 소모한 다음 최종 사용자에게 게재합니다.
+작성자는 작성에만 AEM을 사용하고 고객에게 게재하는 데에는 사용하지 않습니다. 서드파티 시스템/터치포인트는 이러한 경험을 소모한 다음 최종 사용자에게 전달합니다.
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Adobe Experience Manager as a Cloud Service 내 경험 조각은
 >
 >경험 조각은 콘텐츠 조각 형태로 콘텐츠를 포함할 수 있지만 반대로는 불가능합니다.
 >
->자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)를 참조하십시오.
+>자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
 
 >[!NOTE]
 >
@@ -302,7 +302,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 빌딩 블록은에 표시됩니다. **빌딩 블록** 탭. 각 블록에 대해 다음 작업을 사용할 수 있습니다.
 
 * **마스터로 이동**: 새 탭에서 루트 페이지 변형 열기
-* **이름 변경**
+* **이름 바꾸기**
 * **삭제**
 
 ![빌딩 블록 관리](/help/sites-cloud/authoring/assets/xf-13.png)
@@ -422,7 +422,7 @@ URL에서 `.plain.` 선택기를 사용하여 브라우저에서 일반 HTML 렌
 
 >[!NOTE]
 >
-브라우저에서 직접 사용할 수 있지만 [기본 목적은 다른 애플리케이션(예: 서드파티 웹 앱, 사용자 정의 모바일 구현)이 URL만 사용하여 경험 조각의 콘텐츠에 직접 액세스할 수 있도록 하는 것입니다.](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition)
+브라우저에서 직접 사용할 수 있지만, [주요 목적은 다른 애플리케이션(예: 서드파티 웹 앱, 사용자 지정 모바일 구현)이 URL만 사용하여 경험 조각의 콘텐츠에 직접 액세스할 수 있도록 하는 것입니다](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## 경험 조각 게시 {#publishing-experience-fragments}
 
@@ -432,7 +432,7 @@ URL에서 `.plain.` 선택기를 사용하여 브라우저에서 일반 HTML 렌
 
 ## 경험 조각 내보내기 {#exporting-experience-fragments}
 
-기본적으로 경험 조각은 HTML 형식으로 전달됩니다. 이는 AEM과 서드파티 채널에서 모두 동일하게 사용할 수 있습니다.
+기본적으로 경험 조각은 HTML 형식으로 전달됩니다. AEM과 타사 채널에서 모두 동일하게 사용할 수 있습니다.
 
 Adobe Target으로 내보내는 경우 JSON을 사용할 수도 있습니다. 다음을 참조하십시오.
 

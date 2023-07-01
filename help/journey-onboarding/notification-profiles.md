@@ -4,10 +4,10 @@ description: 중요한 이메일 알림 수신을 관리하기 위해 Admin Cons
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: f7b3dec6380266a35f1bf7d90e0195277dd37335
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 100%
+source-wordcount: '933'
+ht-degree: 98%
 
 ---
 
@@ -72,7 +72,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Cloud Manager **제품 프로필 이름**&#x200B;이 제공된 것과 정확히 동일해야 합니다. 오류를 방지하려면 제공된 제품 프로필 이름을 복사하여 붙여넣으십시오. 변동이나 오타가 있으면 알림이 원하는 대로 전송되지 않습니다.
+>Cloud Manager **제품 프로필 이름**&#x200B;이 제공된 것과 정확히 동일해야 합니다. 오류를 방지하기 위해 제공된 제품 프로필 이름을 복사하여 붙여넣습니다. 변동이나 오타가 있으면 알림이 원하는 대로 전송되지 않습니다.
 >
 >오류가 있거나 프로필이 정의되지 않은 경우 Adobe는 기본적으로 **Cloud Manager 개발자** 또는 **개발 관리자** 프로필에 할당된 기존 사용자에게 알립니다.
 

@@ -2,10 +2,10 @@
 title: 구성 요소
 description: 구성 요소는 AEM에서 콘텐츠 페이지의 기본적인 작성 빌딩 블록입니다.
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
-source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 67%
+source-wordcount: '347'
+ht-degree: 63%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 67%
 * [콘텐츠 편집](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 * [콘텐츠 편집 - 전체 화면 모드](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-content-full-screen-mode)
 
-페이지에 구성 요소를 추가하는 방법에 대한 자세한 내용은 [페이지 콘텐츠 편집](/help/sites-cloud/authoring/fundamentals/editing-content.md) 문서를 참조하십시오.
+페이지에 구성 요소를 추가하는 방법에 대한 자세한 내용은 [페이지 컨텐츠 편집](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
 ## 모든 구성 요소 개요 {#overview-of-all-components}
 

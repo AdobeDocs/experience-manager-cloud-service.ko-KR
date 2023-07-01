@@ -2,10 +2,10 @@
 title: 컨텐츠 조각 관리 (에셋 - 콘텐츠 조각)
 description: Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1754'
-ht-degree: 85%
+source-wordcount: '1755'
+ht-degree: 80%
 
 ---
 
@@ -175,7 +175,7 @@ Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐�
 
 ![모드](assets/cfm-managing-top-toolbar.png)
 
-* 이미 콘텐츠 페이지에서 조각을 참조 중인 경우 메시지가 표시됩니다. 메시지를 **닫을** 수 있습니다.
+* 이미 콘텐츠 페이지에서 조각을 참조 중이면 메시지가 표시됩니다. 메시지를 **닫을** 수 있습니다.
 
 * 사이드 패널은 **사이드 패널 전환** 아이콘을 사용하여 숨기거나 표시할 수 있습니다.
 
@@ -225,13 +225,13 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
   >[!CAUTION]
   >
-  >이 작업은 변경 내용을 저장하는 것 이외에도 모든 참조도 업데이트하며 필요에 따라 Dispatcher를 플러시합니다. 이러한 변경 사항은 처리에 시간이 걸릴 수 있습니다. 이로 인해 대형/복합/부하가 큰 시스템의 성능에 영향이 있을 수 있습니다.
+  >이 작업은 변경 내용을 저장하는 것 이외에도 모든 참조도 업데이트하며 필요에 따라 Dispatcher를 플러시합니다. 이러한 변경 사항은 처리에 시간이 걸릴 수 있습니다. 이로 인해 대형/복합/부하가 큰 시스템의 성능에 영향을 줄 수 있습니다.
   >
-  >**저장 및 닫기**&#x200B;를 사용한 다음 조각 편집기로 빠르게 다시 들어가 이후의 변경 내용을 적용하고 저장할 때 이 점을 염두에 두십시오.
+  >을 사용할 때는 이 프로세스를 염두에 두십시오 **저장 및 닫기** 그런 다음 조각 편집기로 빠르게 다시 들어가 더 많은 변경 작업을 수행하고 저장합니다.
 
 * **닫기**
 
-  마지막 변경 내용(즉, 마지막 **저장** 이후에 적용된 변경 내용)을 저장하지 않고 편집기를 종료합니다.
+  마지막 변경 내용(즉, 마지막 이후 변경 내용)을 저장하지 않고 편집기를 종료합니다. **저장**).
 
 콘텐츠 조각을 편집하는 동안 AEM은 자동으로 버전을 만들어 변경 내용을 취소한 경우(저장하지 않고 **닫기** 사용) 이전 콘텐츠를 복원할 수 있도록 합니다.
 
@@ -262,7 +262,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## 조각과 콘텐츠 연결 {#associating-content-with-your-fragment}
 
-조각과 [콘텐츠를 연결](/help/assets/content-fragments/content-fragments-assoc-content.md)할 수도 있습니다. 이렇게 하면 조각이 콘텐츠 페이지에 추가될 때 자산(즉, 이미지)을 조각과 함께 필요에 따라 사용할 수 있도록 연결을 제공합니다.
+조각과 [콘텐츠를 연결](/help/assets/content-fragments/content-fragments-assoc-content.md)할 수도 있습니다. 이렇게 하면 조각이 컨텐츠 페이지에 추가될 때 자산(즉, 이미지)을 조각과 함께 필요에 따라 사용할 수 있도록 연결을 제공합니다.
 
 ## 조각의 메타데이터(속성) 보기 및 편집 {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 

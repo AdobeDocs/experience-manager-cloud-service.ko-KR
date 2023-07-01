@@ -4,10 +4,10 @@ description: AEM의 강력한 Live Copy 및 다중 사이트 관리자 기능을
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '2705'
-ht-degree: 100%
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+workflow-type: tm+mt
+source-wordcount: '2706'
+ht-degree: 99%
 
 ---
 
@@ -155,7 +155,7 @@ MSM은 적절한 콘솔에서 다양한 옵션을 사용하여 UI에서 직접 �
 | 소스 | Live Copy의 기반으로 사용되는 원본 페이지 | 블루프린트 및/또는 블루프린트 페이지의 동의어 |
 | Live Copy | 롤아웃 구성에서 정의된 동기화 작업에 의해 관리되는 (소스의) 사본 |  |
 | Live Copy 구성 | Live Copy에 대한 구성 세부 정보의 정의 |  |
-| 라이브 관계 | 지정된 리소스에 대한 상속의 실질적 정의 (예: 소스와 Live Copy 간의 연결) | 소스에 적용된 변경 내용을 Live Copy와 동기화합니다. |
+| 라이브 관계 | 지정된 리소스, 즉 소스와 라이브 카피 간의 연결에 대한 효과적인 정의 | 소스에 적용된 변경 내용을 Live Copy와 동기화합니다. |
 | 블루프린트 | 소스의 동의어 | 블루프린트 구성으로 정의할 수 있습니다. |
 | 블루프린트 구성 | 소스 경로를 지정하는 사전 정의된 구성 | 블루프린트 구성에서 블루프린트 페이지가 참조되면 롤아웃 명령을 사용할 수 있습니다. |
 | 챕터 | Live Copy에 포함할 블루프린트 섹션 | 일반적으로 루트의 하위 페이지입니다. |

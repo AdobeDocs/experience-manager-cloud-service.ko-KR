@@ -2,9 +2,9 @@
 title: 알려진 문제 및 모범 사례 고려 사항
 description: 커뮤니케이션 모범 사례, 알려진 문제 및 제한 사항
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1709'
 ht-degree: 0%
 
 ---
@@ -161,11 +161,11 @@ Type-1 및 OpenType® 글꼴은 PCL 출력에 포함되지 않습니다. Type-1 
 
 * 인쇄 옵션 목록에서 특정 렌더링 유형(PDF, 인쇄)을 한 번만 사용할 수 있습니다. 예를 들어 각각 PCL 렌더링 유형을 지정하는 두 개의 인쇄 옵션이 있을 수는 없습니다.
 
-* 일괄 처리 구성의 경우 OutputType(PDF, 인쇄) 및 RenderType(PostScript, PCL, IPL, ZPL 등) 값의 조합으로 이루어진 하나의 인스턴스만 허용됩니다.
+* 일괄 처리 구성의 경우 OutputType(PDF, 인쇄) 및 RenderType(PostScript, PCL, IPL, ZPL 등) 값의 조합에 대한 하나의 인스턴스만 허용됩니다.
 
 * 비동기 API(일괄 처리)의 경우 기본 레코드 수준이 2로 설정됩니다. 사용자 지정 XCI를 사용하여 레코드 수준을 1로 변경할 수 있습니다.
 
-* 기본 XCI가 구성되면 원본 렌디션까지의 경로가 포함됩니다. 예 `/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`
+* 기본 XCI가 구성되면 원본 렌디션까지의 경로가 포함됩니다. 예, `/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`
 
 
 

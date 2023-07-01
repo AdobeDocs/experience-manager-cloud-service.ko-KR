@@ -2,10 +2,10 @@
 title: Adobe Analytics와 통합할 때 사용되는 IMS 구성
 description: Adobe Analytics와 통합할 때 사용되는 IMS 구성 알아보기
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 92%
+source-wordcount: '886'
+ht-degree: 91%
 
 ---
 
@@ -45,7 +45,7 @@ Analytics Standard API를 통해 Adobe Experience Manager as a Cloud Service(AEM
 1. AEM에서 **도구** 메뉴를 엽니다.
 1. **보안** 섹션에서 **Adobe IMS 구성**&#x200B;을 선택합니다.
 1. **만들기**&#x200B;를 선택하여 **Adobe IMS 기술 계정 구성**&#x200B;을 엽니다.
-1. **클라우드 구성** 아래의 드롭다운을 사용하여 **Adobe Analytics**&#x200B;를 선택합니다.
+1. 아래의 드롭다운 사용 **클라우드 구성**, 선택 **Adobe Analytics**.
 1. **새 인증서 만들기**&#x200B;를 활성화한 다음 새 별칭을 입력합니다.
 1. **인증서 만들기**&#x200B;를 사용하여 확인합니다.
 

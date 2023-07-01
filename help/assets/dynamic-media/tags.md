@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '6666'
+source-wordcount: '6665'
 ht-degree: 7%
 
 ---
@@ -591,7 +591,7 @@ Experience Platform 태그 구성(속성, 확장, 규칙 및 데이터 요소 �
 
 Experience Platform 태그에는 잠재적으로 여러 개발 환경, 하나의 스테이징 환경 및 하나의 프로덕션 환경이 있을 수 있습니다. 기본적으로 Experience Manager의 Experience Platform 태그 클라우드 구성은 Experience Manager 작성자 노드를 Platform Tags의 스테이지 환경으로 지정합니다. Experience Manager 게시 노드는 Experience Platform 태그의 프로덕션 환경을 가리킵니다. 즉, 기본 Experience Manager 설정을 사용하여 Experience Platform 태그 라이브러리를 스테이징 환경에 게시해야 합니다. 이렇게 하면 Experience Manager 작성자에서 사용할 수 있습니다. 그런 다음 Experience Manager 게시에서 사용할 수 있도록 프로덕션 환경에 게시할 수 있습니다.
 
-다음을 참조하십시오 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) Experience Platform 태그 환경에 대한 자세한 내용을 참조하십시오.
+다음을 참조하십시오 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=ko-KR) Experience Platform 태그 환경에 대한 자세한 내용을 참조하십시오.
 
 라이브러리 게시에는 다음 두 단계가 포함됩니다.
 

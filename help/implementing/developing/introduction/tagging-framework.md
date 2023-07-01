@@ -2,7 +2,7 @@
 title: AEM 태그 지정 프레임워크
 description: 콘텐츠에 태그를 지정하고 AEM 태깅 인프라를 사용하여 분류 및 구성합니다.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 0%

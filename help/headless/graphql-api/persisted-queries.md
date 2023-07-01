@@ -3,10 +3,10 @@ title: 지속 GraphQL 쿼리
 description: 성능을 최적화하기 위해 Adobe Experience Manager as a Cloud Service에서 GraphQL 쿼리를 지속하는 방법을 알아봅니다. HTTP GET 메서드를 사용하여 클라이언트 애플리케이션에서 지속 쿼리를 요청할 수 있으며 응답을 Dispatcher 및 CDN 계층에서 캐시할 수 있으므로 궁극적으로 클라이언트 애플리케이션의 성능이 향상됩니다.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+workflow-type: tm+mt
 source-wordcount: '1681'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -196,7 +196,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
 `PERSISTENT_PATH`는 지속 쿼리가 저장되는 위치에 대한 축약된 경로입니다.
 
-1. 예를 들어 `wknd`는 구성 이름이며 `plain-article-query`는 지속 쿼리의 이름입니다. 쿼리를 실행하려면 다음 작업을 수행하십시오.
+1. 예를 들어, `wknd` 는 구성 이름이며 `plain-article-query` 는 지속 쿼리의 이름입니다. 쿼리를 실행하려면 다음 작업을 수행하십시오.
 
    ```shell
    $ curl -X GET \
@@ -228,7 +228,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 <AEM_HOST>/graphql/execute.json/<PERSISTENT_QUERY_PATH>;variable1=value1;variable2=value2
 ```
 
-예를 들어 다음 쿼리에는 활동 값을 기반으로 목록을 필터링하기 위한 변수 `activity`가 포함되어 있습니다.
+예를 들어 다음 쿼리에는 변수가 포함되어 있습니다 `activity` 활동 값을 기반으로 목록을 필터링하려면 다음을 수행합니다.
 
 ```graphql
 query getAdventuresByActivity($activity: String!) {
@@ -400,7 +400,7 @@ curl -u admin:admin -X POST \
 
 ## 앱에서 사용할 쿼리 URL 인코딩 {#encoding-query-url}
 
-애플리케이션에서 사용하는 경우 쿼리 변수를 구성할 때 사용되는 모든 특수 문자(예: 세미콜론(`;`), 등호(`=`), 슬래시(`/`))를 해당 UTF-8 인코딩을 사용하도록 변환해야 합니다.
+애플리케이션에서 사용하는 경우 쿼리 변수를 구성할 때 사용되는 모든 특수 문자(즉, 세미콜론(`;`), 등호(`=`), 슬래시 `/`)는 해당 UTF-8 인코딩을 사용하도록 변환해야 합니다.
 
 예:
 

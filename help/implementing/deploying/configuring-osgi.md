@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service에 대한 OSGi 구성
 description: 비밀 값 및 환경별 값이 있는 OSGi 구성
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '3318'
 ht-degree: 1%
@@ -293,7 +293,7 @@ export ENV_VAR_NAME=my_value
 
 비밀의 값은 파일에서 읽습니다. 따라서 비밀을 사용하는 각 자리 표시자에 대해 비밀 값이 포함된 텍스트 파일을 만들어야 합니다.
 
-예: `$[secret:server_password]` 은 이라는 텍스트 파일을 사용하는데 **server_password** 을(를) 만들어야 합니다. 이러한 모든 암호 파일은 동일한 디렉터리와 프레임워크 속성에 저장해야 합니다 `org.apache.felix.configadmin.plugin.interpolation.secretsdir` 은(는) 해당 로컬 디렉터리로 구성해야 합니다.
+예를 들어 다음과 같습니다. `$[secret:server_password]` 은 이라는 텍스트 파일을 사용하는데 **server_password** 을(를) 만들어야 합니다. 이러한 모든 암호 파일은 동일한 디렉터리와 프레임워크 속성에 저장해야 합니다 `org.apache.felix.configadmin.plugin.interpolation.secretsdir` 은(는) 해당 로컬 디렉터리로 구성해야 합니다.
 
 >[!CAUTION]
 >

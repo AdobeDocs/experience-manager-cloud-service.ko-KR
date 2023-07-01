@@ -2,7 +2,7 @@
 title: 샘플 ContextHub UI 모듈 유형
 description: ContextHub는 솔루션에서 사용할 수 있는 몇 가지 샘플 UI 모듈을 제공합니다
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 1%
@@ -35,7 +35,7 @@ contexthub.base UI 모듈 유형은 다른 모든 UI 모듈 유형의 기본 유
 
 ### 구성 {#configuration}
 
-JSON 형식의 Javascript 개체를 사용하여 contexthub.base UI 모듈을 구성합니다. 다음 속성 중 하나를 포함하여 UI 모듈 기능을 구성합니다.
+JSON 형식의 JavaScript 개체를 사용하여 contexthub.base UI 모듈을 구성합니다. 다음 속성 중 하나를 포함하여 UI 모듈 기능을 구성합니다.
 
 * **이미지:** 아이콘으로 표시할 이미지의 URL입니다.
 * **아이콘:** 의 이름 [Coral UI 아이콘](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) 클래스. 아이콘과 이미지 속성 모두에 대한 값을 지정하면 이미지가 사용됩니다.

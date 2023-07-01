@@ -3,10 +3,10 @@ title: Headless 콘텐츠에 대한 권한 고려 사항
 description: Adobe Experience Manager를 사용한 Headless 구현에 대한 다양한 권한 및 ACL 고려 사항에 대해 알아봅니다. Author 및 Publish 환경 모두에 필요한 다양한 가상 사용자 및 잠재적 권한 수준을 이해합니다.
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 100%
+source-wordcount: '841'
+ht-degree: 97%
 
 ---
 
@@ -52,7 +52,7 @@ AEM에서 그룹의 권한을 관리하려면 **도구** > **보안** > **권한
 
 기본 제공 그룹의 권한을 직접 수정하지 않는 것이 가장 좋습니다. 대신 **DAM 사용자** 그룹 권한을 모델로 하여 고유한 그룹을 만들 수도 있고 AEM Assets 내의 다른 **폴더**&#x200B;에 대한 액세스를 추가로 제한할 수도 있습니다.
 
-보다 세분화된 권한을 얻으려면 AEM의 **권한** 콘솔을 사용하고 `/content/dam` 경로를 보다 구체적인 경로(예: `/content/dam/mycontentfragments`)로 경로를 업데이트합니다.
+보다 세분화된 권한을 얻으려면 **권한** AEM의 콘솔 및 경로 업데이트 `/content/dam` 더 구체적인 경로로, 즉, `/content/dam/mycontentfragments`.
 
 콘텐츠 조각을 만들고 편집할 수 있는 권한을 이 사용자 그룹에 부여하고 삭제하지 않는 것이 좋습니다. 편집 권한을 검토하고 할당하지만 삭제는 허용하지 않으려면[콘텐츠 조각 - 삭제 고려 사항](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)을 참조하십시오.
 

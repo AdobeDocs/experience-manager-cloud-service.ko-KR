@@ -6,7 +6,7 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '4376'
 ht-degree: 12%
@@ -273,7 +273,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 1. 확인 대화 상자에서 다음을 클릭합니다.
 
    * **[!UICONTROL 취소]** 작업을 중지하려면
-   * **[!UICONTROL 삭제]** 작업을 확인하려면:
+   * **[!UICONTROL 삭제]**&#x200B;를 사용하여 작업을 확인합니다.
 
       * 에셋에 참조가 없으면 에셋이 삭제됩니다.
       * 에셋에 참조가 있을 경우 오류 메시지에 **[!UICONTROL 하나 이상의 에셋이 참조됨]**. 다음을 선택할 수 있습니다. **[!UICONTROL 강제 삭제]** 또는 **[!UICONTROL 취소]**.
@@ -669,14 +669,14 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 
 **추가 참조**
 
-* [에셋 번역](translate-assets.md)
+* [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [에셋이 지원되는 파일 형식](file-format-support.md)
-* [에셋 검색](search-assets.md)
-* [연결된 에셋](use-assets-across-connected-assets-instances.md)
-* [에셋 보고서](asset-reports.md)
+* [자산이 지원되는 파일 형식](file-format-support.md)
+* [자산 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [자산 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
-* [에셋 다운로드](download-assets-from-aem.md)
+* [자산 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
