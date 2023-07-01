@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 25689621ab24b6e14e7e865451ae53947a67d8d1
+source-git-commit: 5a37f237d04d19f3c4113c2ea3e37ab447bf3b0c
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 45%
+source-wordcount: '1372'
+ht-degree: 35%
 
 ---
 
@@ -113,15 +113,11 @@ ht-degree: 45%
 
 ### [!DNL Forms] 프리릴리스에서 사용 가능한 새로운 기능 {#new-features-available-in-channel}
 
-* [AEM 페이지 편집기 내 적응형 양식](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): 이제 AEM 페이지 편집기를 사용하여 여러 양식을 빠르게 만들고 사이트 페이지에 추가할 수 있습니다. 이 기능을 통해 콘텐츠 작성자는 동적 비헤이비어, 유효성 검사, 데이터 통합, 기록 문서 생성 및 비즈니스 프로세스 자동화 등 적응형 양식 구성 요소의 기능을 사용하여 Sites 페이지에서 원활한 데이터 캡처 경험을 만들 수 있습니다. 다음과 같은 작업을 수행할 수 있습니다.
+* [AEM 페이지 편집기 및 경험 조각 내의 적응형 Forms](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): 이제 AEM 페이지 편집기 및 경험 조각을 사용하여 여러 양식을 신속하게 만들고 AEM Sites 페이지에 추가할 수 있습니다. 이 기능을 통해 콘텐츠 작성자는 동적 동작, 유효성 검사, 데이터 통합, 기록 문서 생성 및 비즈니스 프로세스 자동화를 비롯한 적응형 Forms 구성 요소의 기능을 사용하여 Sites 페이지 내에서 매끄러운 데이터 캡처 경험을 만들 수 있습니다.
 
-   * AEM Sites 편집기 또는 경험 조각에서 양식 구성 요소를 적응형 양식 컨테이너 구성 요소로 드래그 앤 드롭하여 적응형 양식을 만듭니다.
-   * AEM Sites 편집기 내에서 적응형 양식 마법사를 사용하여 Sites 페이지와는 별개로 양식을 만들게 되면 여러 페이지에서 해당 양식을 자유롭게 재사용할 수 있습니다.
-   * Sites 페이지에 여러 양식을 추가하여 사용자 경험을 간소화하고 더 많은 유연성을 제공합니다.
-
-     >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
-
-* [Adobe Acrobat Sign Solutions for Government](/help/forms/adobe-sign-integration-adaptive-forms.md): 이제 AEM Forms을 Adobe Acrobat Sign Solutions for Government와 통합합니다. 이 통합은 공공기관 관련 계정(정부 부서 및 기관)에 대한 적응형 양식 제출과 함께 전자 서명의 고급 규정 준수 및 보안을 제공합니다.
+      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&amp;learn=on)
+  
+* [AEM Forms에서 Adobe Acrobat Sign Solutions for Government(HIPPA 컴플레인) 사용](/help/forms/adobe-sign-integration-adaptive-forms.md): 이제 AEM Forms을 Adobe Acrobat Sign Solutions for Government와 통합합니다. 이 통합은 공공기관 관련 계정(정부 부서 및 기관)에 대한 적응형 양식 제출과 함께 전자 서명의 고급 규정 준수 및 보안을 제공합니다.
 
   Adobe Acrobat Sign Solutions for Government와의 통합을 통해 Adobe 파트너 및 정부 고객은 적응형 Forms에서 전자 서명을 사용하여 가장 미션 크리티컬하고 민감한 비즈니스 제품군 중 일부를 수행할 수 있습니다. 이 보안 계층이 추가되면 Adobe의 공공기관 고객들이 안심할 수 있도록 모든 전자 서명은 FedRAMP Moderate 규정을 완전히 준수해야 합니다.
 
@@ -129,15 +125,15 @@ ht-degree: 45%
 
   이 기능을 통해 OOTB 오류 핸들러와 역으로 호환되는 표준 기반 오류 응답을 도입하여 보다 높은 유연성과 제어 기능을 제공함으로써 전체 오류 처리 기능을 개선할 수 있습니다.
 
-* [양식 데이터 모델을 위한 향상된 인증 방법](/help/forms/configure-data-sources.md): AEM Forms을 호환 가능한 데이터 소스와 연결하기 위한 클라이언트 자격 증명 기반 인증이 도입되어 보안이 강화되었습니다. 이 향상된 기능을 통해 가장 또는 사용자 로그인이 필요 없으므로 데이터 보호가 강화됩니다.
+* [양식 데이터 모델을 위한 향상된 인증 방법](/help/forms/configure-data-sources.md): AEM Forms(양식 데이터 모델)을 호환되는 데이터 소스와 연결하기 위해 클라이언트 자격 증명 기반 인증이 도입되어 보안이 강화되었습니다. 이 향상된 기능을 통해 가장 또는 사용자 로그인이 필요 없으므로 데이터 보호가 강화됩니다.
 
-* [반복 가능한 섹션이 포함된 적응형 Forms](/help/forms/create-forms-repeatable-sections.md): 이제 다음을 수행할 수 있습니다. [어코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [패널](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), 및 [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 핵심 구성 요소 기반 적응형 양식의 구성 요소를 사용하여 반복 가능한 섹션 만들기
+* [반복 가능한 섹션이 포함된 적응형 Forms 만들기](/help/forms/create-forms-repeatable-sections.md): 이제 다음을 수행할 수 있습니다. [어코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [패널](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), 및 [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 핵심 구성 요소 기반 적응형 양식의 구성 요소를 사용하여 반복 가능한 섹션 만들기
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 
   이러한 반복 가능한 섹션을 사용하면 고정 필드 개수 없이 항목의 수를 무제한으로 제공할 수 있습니다. 이 메서드는 필요한 데이터 인스턴스를 미리 알 수 없는 경우에 유용합니다. Forms 사용자는 섹션을 쉽게 추가하거나 제거할 수 있으므로 양식이 다양한 데이터 입력 시나리오에 맞게 조정될 수 있으며 동일한 데이터가 여러 번 발생하는 경우 간편하게 수집할 수 있습니다.
 
-* **[적응형 양식을 Microsoft® SharePoint 및 Microsoft® OneDrive에 제출](/help/forms/configuring-submit-actions.md)**: 비즈니스 사용자 민첩성을 개선하여 새로운 양식을 빠르게 시작하고, Microsoft® SharePoint 사이트 또는 OneDrive 폴더와 같이 일상적으로 사용하는 도구에 제출된 데이터를 저장합니다.
+* **[Microsoft® SharePoint 및 Microsoft® OneDrive에 적응형 Forms 제출](/help/forms/configuring-submit-actions.md)**: 이제 적응형 Forms 데이터를 Microsoft® SharePoint Site 또는 Microsoft® OneDrive와 같은 일상적인 도구에 제출할 수 있습니다.
 
 ### Headless 적응형 양식 얼리 어답터 프로그램 {#forms-early-adopter}
 
