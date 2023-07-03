@@ -3,32 +3,32 @@ title: AEM Sites 페이지에 적응형 양식을 추가하는 방법
 description: 적응형 양식을 간편하게 만들거나 AEM Sites 페이지에 추가하는 방법에 대해 알아보십시오. 양식을 웹 사이트에 통합하고 디지털 경험을 최적화하여 최대의 효과를 발휘할 수 있는 단계별 기술과 모범 사례에 대해 알아보십시오.
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: Forms AEM Sites, Add Form to a Sites page, Adaptive Forms AEM Sites, Add Adaptive Forms to AEM Page, Create Forms in an AEM Sites page
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bbb01d049083d0aef09bc2365235a7930fb53070
 workflow-type: tm+mt
-source-wordcount: '3245'
-ht-degree: 21%
+source-wordcount: '3264'
+ht-degree: 20%
 
 ---
 
 
-# AEM Sites 페이지 또는 AEM 경험 조각에서 적응형 양식 만들기 {#create-or-add-an-adaptive-form-to-aem-sites-page}
+# AEM Sites 페이지 또는 경험 조각에서 적응형 양식 만들기 {#create-or-add-an-adaptive-form-to-aem-sites-page}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=en) |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
 | AEM as a Cloud Service | 이 문서 |
 
-AEM Forms을 사용하면 AEM Sites 페이지에 적응형 양식을 원활하게 추가할 수 있습니다. 이를 통해 방문자는 현재 페이지를 떠나지 않고 편리하게 양식을 작성하고 제출할 수 있습니다. 이렇게 하면 방문자는 양식과 상호 작용하면서 웹 사이트의 다른 요소에 지속적으로 관심을 가질 수 있습니다.
+AEM Forms을 사용하면 AEM Sites 페이지에 양식을 원활하게 추가할 수 있습니다. 이를 통해 방문자는 현재 페이지를 떠나지 않고 편리하게 양식을 작성하고 제출할 수 있습니다. 이렇게 하면 방문자는 양식과 상호 작용하면서 웹 사이트의 다른 요소에 지속적으로 관심을 가질 수 있습니다.
 
-AEM 페이지 편집기 를 사용하여 여러 양식을 신속하게 만들고 AEM Sites 페이지에 추가할 수 있습니다. 콘텐츠 작성자는 AEM 페이지 편집기를 사용하여 동적 동작, 유효성 검사, 데이터 통합, 기록 문서 생성 및 비즈니스 프로세스 자동화 등 적응형 양식 구성 요소의 기능을 사용하여 Sites 페이지 내에서 매끄러운 데이터 캡처 경험을 만들 수 있습니다. 또한 버전 관리, 타겟팅, 번역 및 다중 사이트 관리자 등 AEM Sites 페이지의 다양한 기능을 사용할 수 있습니다.
+AEM 페이지 편집기 를 사용하여 여러 양식을 신속하게 만들고 AEM Sites 페이지에 추가할 수 있습니다. 콘텐츠 작성자는 AEM 페이지 편집기를 사용하여 동적 동작, 유효성 검사, 데이터 통합, 기록 문서 생성 및 비즈니스 프로세스 자동화를 비롯한 적응형 양식 구성 요소의 기능을 사용하여 Sites 페이지 내에서 매끄러운 데이터 캡처 경험을 만들 수 있습니다. 또한 버전 관리, 타겟팅, 번역 및 다중 사이트 관리자 등 AEM Sites 페이지의 다양한 기능을 사용할 수 있습니다.
 
-AEM Forms는 적응형 양식 컨테이너와 적응형 양식 – 임베드 구성 요소를 제공합니다. 적응형 양식 컨테이너를 사용하여 경험 조각 또는 AEM Sites 페이지에서 새 양식을 만들 수 있습니다. 적응형 Forms - 임베드 구성 요소를 사용하면 적응형 Forms 편집기를 사용하여 기존 적응형 양식을 추가하거나 새 양식을 만들 수 있습니다.
+AEM Forms Cloud Service은 적응형 양식 컨테이너 및 적응형 Forms - 임베드 구성 요소 를 제공합니다. 적응형 양식 컨테이너를 사용하여 AEM Sites 페이지 또는 경험 조각에 새 양식을 만들 수 있습니다. 적응형 Forms - 임베드 구성 요소를 사용하면 적응형 Forms 편집기를 사용하여 기존 적응형 양식을 추가하거나 새 양식을 만들 수 있습니다.
 
 ![AEM Sites 페이지의 적응형 양식의 예](/help/forms/assets/adaptive-form-in-sites-page.png)
 
-## AEM Sites 페이지 또는 AEM 경험 조각에서 적응형 양식을 만드는 이유는 무엇입니까?
+## 적응형 Forms 핵심 구성 요소를 사용하여 AEM Sites 페이지 또는 경험 조각에서 적응형 양식을 만드는 이유는 무엇입니까?
 
-AEM 페이지 편집기에서 적응형 양식 컨테이너를 사용하면 동적 동작, 유효성 검사, 데이터 통합, 기록 문서 생성 및 비즈니스 프로세스 자동화 등 적응형 Forms 구성 요소의 기능을 사용하여 Sites 페이지 내에서 매끄러운 데이터 캡처 경험을 만들 수 있습니다. 또한 버전 관리, 타겟팅, 번역 및 다중 사이트 관리자와 같은 AEM Sites 페이지의 다양한 기능을 사용할 수 있으므로 전반적인 양식 작성 및 관리 경험이 향상됩니다. 다음 기능 중 일부를 살펴보겠습니다.
+과거에 사이트에 대한 적응형 Forms 기초 구성 요소 또는 일반 HTML 기반 양식을 만든 경우, Adobe은 적응형 Forms 핵심 구성 요소를 사용하여 AEM Sites 페이지 또는 경험 조각에서 적응형 양식을 만들 것을 권장합니다. 이를 통해 버전 관리, 타겟팅, 번역 및 다중 사이트 관리자와 같은 AEM Sites 페이지의 다양한 기능을 사용할 수 있으므로 적응형 Forms에 대한 전반적인 양식 작성 및 관리 경험이 향상됩니다. 다음 기능 중 일부를 살펴보겠습니다.
 
 * **버전 관리:** AEM Sites 페이지 오퍼 [강력한 버전 관리 기능](/help/sites-cloud/authoring/features/page-versions.md)를 사용하면 양식의 다양한 버전을 추적하고 관리할 수 있습니다. 이렇게 하면 필요한 경우 이전 버전으로 롤백하는 기능을 유지하면서 양식을 변경하고 개선할 수 있습니다. 버전 관리를 통해 개발 및 진화를 형성하기 위한 통제되고 조직화된 접근 방식을 확보할 수 있습니다.
 * **타깃팅(Adobe Target과 통합):** AEM Sites 페이지 타깃팅 기능을 사용하여 다음과 같은 작업을 수행할 수도 있습니다 [다양한 대상자를 위한 양식 경험 개인화](/help/sites-cloud/integrating/integration-adobe-target-ims.md). 사용자 세그먼트 및 타깃팅 기준을 활용하여 양식의 콘텐츠, 디자인 또는 동작을 특정 사용자 그룹에 맞게 조정할 수 있습니다. 이를 통해 개인화되고 관련성 있는 양식 경험을 제공하여 참여도와 전환율을 높일 수 있습니다.
@@ -38,7 +38,7 @@ AEM 페이지 편집기에서 적응형 양식 컨테이너를 사용하면 동�
 * **태그 지정:** AEM Sites 페이지를 사용하면 다음 작업을 수행할 수 있습니다. [페이지, 에셋 또는 기타 콘텐츠에 태그 또는 레이블 할당](/help/implementing/developing/introduction/tagging-framework.md). 태그는 특정 기준에 따라 콘텐츠를 분류하고 구성하는 방법을 제공하는 키워드 또는 메타데이터 레이블입니다. 페이지, 에셋 또는 AEM 내의 다른 콘텐츠 항목에 하나 이상의 태그를 할당하여 검색을 개선하고 에셋을 분류할 수 있습니다.
 * **컨텐츠 잠금 및 잠금 해제:** AEM Sites을 통해 사용자는 [페이지 액세스 및 수정 제어](/help/sites-cloud/authoring/fundamentals/editing-content.md) AEM Sites 환경 내에서. 페이지가 잠기면 다른 사용자가 승인되지 않은 변경 또는 편집하지 못하도록 보호됩니다. 콘텐츠를 잠근 사용자 또는 지정된 관리자만 수정을 허용하도록 잠금을 해제할 수 있습니다.
 
-또한 AEM 페이지 편집기의 적응형 Forms은 [적응형 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). 이러한 핵심 구성 요소는 다음과 동일한 방식으로 구성 요소를 스타일링하고 맞춤화하는 보다 표준적이고 쉬운 방법을 제공합니다. [AEM Sites WCM 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR).
+또한 AEM 페이지 편집기의 적응형 Forms은 [적응형 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features). 이러한 핵심 구성 요소는 다음과 동일한 방식으로 구성 요소를 스타일링하고 맞춤화하는 보다 표준적이고 쉬운 방법을 제공합니다. [AEM Sites WCM 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
 
 
 ## AEM Sites 페이지 또는 AEM 경험 조각에서 적응형 양식을 만들거나 추가하는 방법 {#various-options-to-creat-or-add-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
@@ -262,4 +262,9 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
 * [양식의 스타일 또는 테마 만들기](using-themes-in-core-components.md)
 * [규칙 편집기를 사용하여 양식에 동적 동작 추가](rule-editor.md)
 * [다양한 화면 크기 및 장치 유형에 대한 양식 레이아웃 설정](/help/sites-cloud/authoring/features/responsive-layout.md)
+
+
+## 관련 문서 {#related-article}
+
+* [적응형 양식 기반의 독립형 핵심 구성 요소 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
