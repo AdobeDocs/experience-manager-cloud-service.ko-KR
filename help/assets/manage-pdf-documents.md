@@ -4,9 +4,9 @@ description: 에서 PDF 문서 관리 [!DNL Adobe Experience Manager] as a [!DNL
 feature: Asset Management
 role: User,Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '853'
 ht-degree: 4%
 
 ---
@@ -22,6 +22,7 @@ Document Cloud PDF 뷰어는 다음과 같은 방법으로 AEM Assets에 이점�
 
 > 팁
 > 이전에 업로드한 PDF 문서의 여러 PDF 미리보기를 가져올 수 없는 경우 페이지를 선택하고 을(를) 클릭합니다 **![재처리](/help/assets/assets/Reprocess.svg) 자산 재처리**.
+>
 
 ## PDF Document Cloud 뷰어 구성 요소 지원 {#pdf-doc-cloud}
 
@@ -55,6 +56,7 @@ Adobe Experience Manager Assets를 사용하면 여러 페이지로 구성된 PD
 
 > 메모
 > 미리 볼 수 있는 에셋의 최대 크기는 최대 100MB입니다.
+>
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409355)
 
@@ -110,6 +112,10 @@ PDF 문서에 주석을 달려면 다음 단계를 수행하십시오.
         </tr>
     </table>
 
+>[!NOTE]
+>
+>PDF 문서에 추가하는 주석은 미리보기 모드에서 사용할 수 있습니다. 그러나 PDF 문서를 다운로드하거나 인쇄할 때는 주석이 표시되지 않습니다.
+
 ## 다른 형식의 문서에 대한 여러 페이지 미리보기 지원 {#multi-format}
 
 PDF 문서 외에도 다른 형식 유형의 문서에 대해 여러 페이지를 미리 볼 수도 있습니다. 지원되는 문서 형식 유형은 TXT, RTF, DOC, DOCX, PPT, PPTX, XLS 및 XLSX입니다. Experience Manager Assets은 이러한 문서 형식을 자동으로 PDF 형식으로 변환하여 미리보기에 사용할 수 있도록 합니다.
@@ -127,17 +133,16 @@ PDF 문서 외에도 다른 형식 유형의 문서에 대해 여러 페이지�
 > * 미리 볼 XLS 또는 XLSX 파일의 최대 크기는 20MB입니다.
 >
 
-
 **추가 참조**
 
-* [에셋 번역](translate-assets.md)
+* [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [에셋이 지원되는 파일 형식](file-format-support.md)
-* [에셋 검색](search-assets.md)
-* [연결된 에셋](use-assets-across-connected-assets-instances.md)
-* [에셋 보고서](asset-reports.md)
+* [자산이 지원되는 파일 형식](file-format-support.md)
+* [자산 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [자산 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
-* [에셋 다운로드](download-assets-from-aem.md)
+* [자산 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)

@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
 workflow-type: tm+mt
-source-wordcount: '5096'
+source-wordcount: '5162'
 ht-degree: 7%
 
 ---
@@ -37,7 +37,7 @@ AEM의 자산 검색은 다음 사용 사례를 지원하며 이 문서에서는
 | [제한 사항](#limitations) 및 [팁](#tips) | | |
 | [그림 예제](#samples) | | |
 
-상단의 Omnisearch 필드를 사용하여 에셋을 검색합니다. [!DNL Experience Manager] 웹 인터페이스. 다음으로 이동 **[!UICONTROL 에셋]** > **[!UICONTROL 파일]** 위치: [!DNL Experience Manager], 클릭 ![search_icon](assets/do-not-localize/search_icon.png) 상단 막대에서 검색 키워드를 입력하고 `Return`. 또는 키워드 단축키를 사용합니다 `/` (슬래시) Omnisearch 필드를 엽니다. `Location:Assets` 검색을 DAM 에셋으로 제한하기 위해 사전 선택됩니다. [!DNL Experience Manager] 는 검색 키워드를 입력할 때 제안을 제공합니다.
+상단의 Omnisearch 필드를 사용하여 에셋을 검색합니다. [!DNL Experience Manager] 웹 인터페이스. 다음으로 이동 **[!UICONTROL 에셋]** > **[!UICONTROL 파일]** 위치: [!DNL Experience Manager], 클릭 ![search_icon](assets/do-not-localize/search_icon.png) 상단 막대에서 검색 키워드를 입력하고 `Return`. 또는 키워드 단축키를 사용합니다 `/` (슬래시) Omnisearch 필드를 엽니다. `Location:Assets` 검색을 DAM 에셋으로 제한하기 위해 사전 선택됩니다. `Path:/content/dam` 또한 내의 루트 수준에서 검색을 수행할 때도 표시됩니다. **[!UICONTROL 파일]** 폴더를 삭제합니다. 다른 폴더로 이동하면 `Path:/content/dam/<folder name>` 검색 범위를 현재 폴더로 제한하기 위해 Omnisearch 필드에 를 표시합니다. [!DNL Experience Manager] 검색 키워드 입력을 시작할 때 제안 사항을 제공합니다.
 
 사용 **[!UICONTROL 필터]** 패널 을 사용하여 에셋, 폴더, 태그 및 메타데이터를 검색할 수 있습니다. 파일 유형, 파일 크기, 마지막 수정 날짜, 에셋 상태, 인사이트 데이터 및 Adobe Stock 라이선싱과 같은 다양한 옵션(술어)을 기반으로 검색 결과를 필터링할 수 있습니다. 필터 패널을 사용자 정의하고 다음을 사용하여 검색 술어를 추가하거나 제거할 수 있습니다. [검색 패싯](/help/assets/search-facets.md). 다음 [!UICONTROL 파일 유형] 에서 필터링 [!UICONTROL 필터] 패널에 혼합 상태 확인란이 있습니다. 따라서 중첩된 술어(또는 형식)를 모두 선택하지 않으면 첫 번째 수준의 확인란이 부분적으로 선택됩니다.
 
@@ -415,6 +415,7 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 * 워크플로 시작
 * 에셋 연결 또는 연결 해제
 * 검색을 수행한 후 자동으로 표시되는 필터 패널을 사용하여 필터를 적용하여 검색 결과의 범위를 좁힐 수 있습니다.
+* 자산 위치로 이동
 
 ### 검색 결과 정렬 {#sort}
 
@@ -466,6 +467,10 @@ You can create smart collections based on the search criteria. From the **[!UICO
 ### 에셋 연결 및 연결 해제 {#relate-unrelate-assets}
 
 검색 결과에 표시되는 에셋의 관계를 지정하거나 관계를 해제합니다. 에셋을 선택하고 **[!UICONTROL 관계 설정]** 또는 **[!UICONTROL 관계 해제]**.
+
+### 자산 폴더 위치로 이동 {#navigate-asset-folder-location}
+
+검색 결과에 표시된 에셋의 폴더 위치로 이동합니다. 에셋을 선택하고 **[!UICONTROL 파일 위치 표시]**.
 
 ## 예기치 않은 검색 결과 및 문제 {#unexpected-results}
 
