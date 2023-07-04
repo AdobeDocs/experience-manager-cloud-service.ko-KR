@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 45004db44af48301f0a9cbd9f574ac34c360275e
+source-git-commit: b738d351a8ec607bef6c82880616061a88968e7f
 workflow-type: tm+mt
 source-wordcount: '1365'
-ht-degree: 35%
+ht-degree: 44%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 35%
 
 * [폴더 위치로 이동](/help/assets/search-assets.md#aftersearch) 검색 결과에 표시되는 에셋의 경우
 
-**3D 자산에 대한 축소판 미리 보기**
+**3D 자산의 썸네일 미리보기**
 
 [!DNL Experience Manager Assets] 이제에서 생성 [일반적인 3D 파일 형식에 대한 축소판 미리 보기](/help/assets/file-format-support.md) gLB, USDz, FBX, 3DS, OBJ 및 SBSAR 포함. 이러한 파일이 업로드되면 기본적으로 썸네일이 자동으로 생성됩니다.
 
@@ -76,31 +76,31 @@ ht-degree: 35%
 
 ### 자산 보기의 새로운 기능 {#assets-view-features}
 
-**보다 빠른 검색 경험을 위한 자산의 계층적 태그 지정**
+**빠른 검색 경험을 위한 자산의 계층적 태그 지정**
 
-통제된 어휘의 단순 목록은 시간이 지남에 따라 관리할 수 없게 됩니다. 이제 자산 보기에서 다음을 지원합니다. [계층적 태그 지정 구조](/help/assets/tagging-management-assets-view.md): 관련 메타데이터 적용, 에셋 분류, 검색 지원, 태그 재사용, 검색 기능 개선 등을 용이하게 합니다.
+제어된 어휘의 단순 목록은 시간이 지남에 따라 관리하기 까다로워집니다. 이제 자산 보기에서 다음을 지원합니다. [계층적 태그 지정 구조](/help/assets/tagging-management-assets-view.md): 관련 메타데이터 적용, 에셋 분류, 검색 지원, 태그 재사용, 검색 기능 개선 등을 용이하게 합니다.
 
 ![태그 지정 관리](/help/assets/assets/tags-hierarchy.png)
 
 **빠른 액세스를 위해 파일, 폴더 및 컬렉션 고정**
 
-이제 다음을 수행할 수 있습니다. [더 빠른 액세스를 위해 파일, 폴더 및 컬렉션 고정](/help/assets/my-workspace-assets-view.md) 나중에 필요할 때 이러한 항목을 추가합니다. 고정 항목이 **빠른 액세스** 내 작업 영역의 섹션에 있는 마지막 항목이 될 필요가 없습니다. 저장소 내에 저장된 위치로 이동하지 않고 내 작업 영역을 사용하여 액세스할 수 있습니다.
+이제 다음을 수행할 수 있습니다. [더 빠른 액세스를 위해 파일, 폴더 및 컬렉션 고정](/help/assets/my-workspace-assets-view.md) 나중에 필요할 때 이러한 항목을 추가합니다. 고정된 항목은 내 작업 영역의 **빠른 액세스** 섹션에 표시됩니다. 저장소 내에서 저장된 위치로 이동하는 대신 내 작업 영역을 사용하여 액세스할 수 있습니다.
 
 ![작업 영역의 작업](/help/assets/assets/quick-access.png)
 
-**휴지통 폴더에서 자산 필터링**
+**휴지통 폴더의 자산 필터링**
 
-이제 에셋 보기를 사용하여 다음 작업을 수행할 수 있습니다. [휴지통 폴더에서 사용할 수 있는 자산 필터링](/help/assets/navigate-assets-view.md). 표준 또는 사용자 지정 필터를 적용하여 휴지통 폴더 내의 적절한 자산을 검색하여 복원하거나 영구적으로 삭제할 수 있습니다.
+이제 에셋 보기를 사용하여 다음 작업을 수행할 수 있습니다. [휴지통 폴더에서 사용할 수 있는 자산 필터링](/help/assets/navigate-assets-view.md). 표준 또는 사용자 정의 필터를 적용하여 휴지통 폴더 내에서 적절한 자산을 검색해 복원하거나 영구적으로 삭제할 수 있습니다.
 
-**3D 자산에 대한 축소판 미리 보기**
+**3D 자산의 썸네일 미리보기**
 
 이제 Assets 보기는 gLB, USDz, FBX, 3DS, OBJ 및 SBSAR을 포함한 일반적인 3D 파일 형식에 대한 썸네일 미리보기를 생성합니다. 이러한 파일이 에셋 보기에 업로드되면 기본적으로 시스템에 의해 썸네일이 자동으로 생성됩니다.
 
 ![작업 영역의 작업](/help/assets/assets/3d-preview.png)
 
-**인기 검색어 보기**
+**가장 많이 검색된 용어 보기**
 
-이제 자산 보기에서 다음을 지원합니다. [배포 내에서 인기 검색어 보기](/help/assets/my-workspace-assets-view.md) 사용 **Insights** 내 작업 영역의 섹션에 있는 마지막 항목이 될 필요가 없습니다. 또한 자세한 인사이트 로 이동하여 지난 30일 또는 12개월 동안의 상위 검색을 볼 수 있습니다.
+이제 자산 보기에서 다음을 지원합니다. [배포 내에서 인기 검색어 보기](/help/assets/my-workspace-assets-view.md) 사용 **Insights** 내 작업 영역의 섹션에 있는 마지막 항목이 될 필요가 없습니다. 세부 인사이트로 이동하여 지난 30일 또는 12개월 동안의 인기 검색어를 볼 수도 있습니다.
 
 ![작업 영역의 작업](/help/assets/assets/insights-top-searches.png)
 
