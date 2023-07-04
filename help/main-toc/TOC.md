@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: e60a734d7e0887a23978efac8d896ac3745dbb5d
+source-git-commit: 823d9875f1cd293df834cc6e2fc16fc8f7e0d37b
 workflow-type: tm+mt
-source-wordcount: '4150'
+source-wordcount: '4160'
 ht-degree: 98%
 
 ---
@@ -508,13 +508,13 @@ ht-degree: 98%
       + [시작](/help/assets/get-started-assets-view.md)
       + [내 작업 영역](/help/assets/my-workspace-assets-view.md)
       + [지원되는 파일 형식 및 사용 사례](/help/assets/supported-file-formats-assets-view.md)
-      + [에셋 보기](/help/assets/navigate-assets-view.md)
-      + [에셋 업로드 및 추가](/help/assets/add-delete-assets-view.md)
-      + [에셋 검색 및 탐색](/help/assets/search-assets-view.md)
-      + [에셋 관리 작업](/help/assets/manage-organize-assets-view.md)
+      + [자산 보기](/help/assets/navigate-assets-view.md)
+      + [자산 업로드 및 추가](/help/assets/add-delete-assets-view.md)
+      + [자산 검색 및 탐색](/help/assets/search-assets-view.md)
+      + [자산 관리 작업](/help/assets/manage-organize-assets-view.md)
       + [이미지 편집](/help/assets/edit-images-assets-view.md)
-      + [에셋 메타데이터 관리](/help/assets/metadata-assets-view.md)
-      + [에셋 공유](/help/assets/share-links-for-assets-view.md)
+      + [자산 메타데이터 관리](/help/assets/metadata-assets-view.md)
+      + [자산 공유](/help/assets/share-links-for-assets-view.md)
       + [컬렉션 관리](/help/assets/manage-collections-assets-view.md)
       + [에셋, 폴더 및 컬렉션 보기](/help/assets/manage-notifications-assets-view.md)
       + [보고서 관리](/help/assets/manage-reports-assets-view.md)
@@ -526,7 +526,6 @@ ht-degree: 98%
       + [기존 설치에 대해 외부 종속성 제거](/help/assets/remove-external-dependencies.md)
       + [ [!DNL Workfront]용 [!DNL enhanced connector] 구성](/help/assets/workfront-connector-configure.md)
       + [업데이트 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
-
 + Forms {#forms}
    + 개요 {#forms-overview}
       + [소개](/help/forms/home.md)
@@ -627,9 +626,10 @@ ht-degree: 98%
       + [PDF 문서에서 사용자 정의 글꼴 사용하기](/help/forms/use-custom-fonts.md)
       + [알려진 문제, 모범 사례 및 자주 묻는 질문](/help/forms/communications-known-issues-limitations.md)
    + 개발자 API 참조 {#aem-forms-developer-api-reference}
+      + [적응형 Forms API 참조](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms Cloud Service 커뮤니케이션 API 참조](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
       + [AEM Forms Cloud Service JavaScript API 참조](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
-      + [AEM Forms Cloud Service Java API 참조](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
+      + [AEM Forms Cloud Service Java API 참조](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/index.html)
    + 문제 해결 {#troubleshooting-aem-forms-cloud-service}
       + [설치 및 구성](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher 및 CDN 캐싱](/help/forms/troubleshooting-caching-performance.md)
