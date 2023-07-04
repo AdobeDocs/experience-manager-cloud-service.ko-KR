@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 823d9875f1cd293df834cc6e2fc16fc8f7e0d37b
+source-git-commit: 0efdb9353ef908cf5a655c989ae7be1107c8f3de
 workflow-type: tm+mt
-source-wordcount: '4160'
+source-wordcount: '4164'
 ht-degree: 98%
 
 ---
@@ -559,6 +559,7 @@ ht-degree: 98%
          + [양식 데이터 모델을 사용하여 작업](/help/forms/work-with-form-data-model.md)
          + [양식 데이터 모델 사용](/help/forms/using-form-data-model.md)
    + 적응형 양식 {#adaptive-forms-authoring}
+      + [적응형 양식 만들기](/help/forms/create-an-adaptive-form.md)
       + [AEM Sites 페이지 또는 경험 조각에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + 적응형 양식 작성 - 핵심 구성 요소 {#authoring-adaptive-forms-core-components}
          + 적응형 양식 만들기 {#create-an-adaptive-form-on-forms-cs}
