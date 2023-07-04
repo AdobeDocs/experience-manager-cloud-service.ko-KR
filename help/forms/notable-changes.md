@@ -3,9 +3,9 @@ title: AEM 6.5 Forms과 AEM Cloud Services의 차이점
 description: Experience Manager Forms 사용자이며 Adobe Experience Manager Forms as a Cloud Service으로 업그레이드하고자 하십니까? AEM 6.5 Forms과 AEM Cloud Services를 비교하고 Cloud Service으로 업그레이드하거나 마이그레이션하기 전에 가장 두드러진 변경 사항에 대해 알아봅니다.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 54a1ae1cc030030e44612b502b70c9b567144538
+source-git-commit: 1d16797f741fc9032356564061f2b6743d4c7936
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1405'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Adobe Experience Manager Forms as a Cloud Service은 Adobe Experience Manager Fo
 
 * 개발자는 Cloud Service 및 로컬 개발 환경에 대한 코드를 공통적으로 유지 관리합니다 [git 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/cloud-manager-repositories.html). AEM Archetype을 기반으로 하는 git 저장소는 AEM as a Cloud Service 프로그램 생성 시 자동으로 생성됩니다.
 
-   ![](/help/forms/assets/git-repo-local-and-forms-cs.png)
+  ![](/help/forms/assets/git-repo-local-and-forms-cs.png)
 
 * Forms의 개발 흐름은 AEM Cloud Service용 AEM Archetype에 as a Cloud Service으로 맞춰집니다. 그러나 Adobe Experience Manager Maven 프로젝트가 AEM Cloud Service과 호환되도록 하려면 몇 가지 변경이 필요합니다. 높은 수준에서 AEM은 변경 가능한 콘텐츠와 변경 불가능한 콘텐츠 사이의 분할을 준수하기 위해 콘텐츠와 코드를 개별 하위 패키지로 분리해야 합니다. 사용 [저장소 현대화 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html) Adobe Experience Manager as a Cloud Service에 대해 정의된 프로젝트 구조와 호환될 수 있도록 콘텐츠와 코드를 개별 패키지로 분리하여 기존 프로젝트 패키지를 재구성했습니다.
 
@@ -50,7 +50,7 @@ Adobe Experience Manager Forms as a Cloud Service은 Adobe Experience Manager Fo
 
 * **규칙 편집기:** AEM Forms은 강화 기능을 as a Cloud Service으로 제공합니다 [규칙 편집기](rule-editor.md#visual-rule-editor). 코드 편집기는 Forms as a Cloud Service으로 사용할 수 없습니다.
 
-   다음 [마이그레이션 유틸리티](/help/forms/migrate-to-forms-as-a-cloud-service.md) 는 사용자 지정 규칙(코드 편집기에서 생성)이 있는 양식을 마이그레이션하는 데 도움이 됩니다. 유틸리티는 이러한 규칙을 Forms as a Cloud Service에서 지원되는 사용자 지정 함수로 변환합니다. 규칙 편집기와 함께 재사용 가능한 기능을 사용하여 규칙 스크립트로 얻은 결과를 계속 얻을 수 있습니다. 다음 `onSubmitError` 또는 `onSubmitSuccess` 이제 함수를 규칙 편집기에서 작업으로 사용할 수 있습니다.
+  다음 [마이그레이션 유틸리티](/help/forms/migrate-to-forms-as-a-cloud-service.md) 는 사용자 지정 규칙(코드 편집기에서 생성)이 있는 양식을 마이그레이션하는 데 도움이 됩니다. 유틸리티는 이러한 규칙을 Forms as a Cloud Service에서 지원되는 사용자 지정 함수로 변환합니다. 규칙 편집기와 함께 재사용 가능한 기능을 사용하여 규칙 스크립트로 얻은 결과를 계속 얻을 수 있습니다. 다음 `onSubmitError` 또는 `onSubmitSuccess` 이제 함수를 규칙 편집기에서 작업으로 사용할 수 있습니다.
 
 * **미리 채우기 서비스:** 기본적으로 미리 채우기 서비스는 AEM 6.5 Forms의 서버에서 데이터를 병합하는 것과 반대로 클라이언트에서 데이터를 적응형 양식과 병합합니다. 이 기능은 적응형 양식을 미리 채우는 데 필요한 시간을 개선하는 데 도움이 됩니다. Adobe Experience Manager Forms 서버에서 병합 작업을 실행하도록 언제든지 구성할 수 있습니다.
 
@@ -113,4 +113,13 @@ Forms은 문서 생성 및 문서 조작 RESTful API를 as a Cloud Service으로
 
 * 커뮤니케이션 API를 사용하여 맞춤형 문서를 온디맨드로 제작하거나 Forms에서 as a Cloud Service으로 일괄 처리할 수 있습니다. 대화형 통신 및 에이전트 UI 사용 사례에 AEM 6.5 Forms 환경을 사용할 수 있습니다.
 
+## 다음 보기
 
+* [AEM Forms(온-프레미스 및 AMS 환경)에서 AEM Forms as a Cloud Service으로 마이그레이션](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+* [AEM Sites 페이지에 적응형 Forms 추가 또는 생성](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [적응형 양식 만들기(핵심 구성 요소)](/help/forms/creating-adaptive-form-core-components.md)
+
+## 추가 정보
+
+* [AEM Forms as a Cloud Service 소개](/help/forms/home.md)
+* [로컬 개발 환경 및 초기 개발 프로젝트 설정](/help/forms/setup-local-development-environment.md)

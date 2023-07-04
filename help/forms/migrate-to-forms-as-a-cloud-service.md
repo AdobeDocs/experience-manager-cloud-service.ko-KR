@@ -1,16 +1,16 @@
 ---
 title: AEM 6.5 Forms에서 로 마이그레이션하는 방법 [!DNL AEM Forms] as a Cloud Service 환경?
 description: 다음에서 마이그레이션 [!DNL AEM Forms] (온-프레미스 및 AMS 환경) [!DNL AEM Forms] as a Cloud Service 환경.
-keywords: 6.5 forms를 cloud service로, 6.5 forms를 cs로, 6.5 forms를 CS로 마이그레이션, 6.5 forms를 cloud service로 마이그레이션, 6.5 forms를 CS로 업그레이드, 6.5 forms를 CS로 이동, AEM 6.5를 CS로 업그레이드
+keywords: 6.5 forms를 cloud service로, 6.5 forms를 cs로, 6.5 forms를 cloud service로 마이그레이션, 6.5 forms를 cloud service로 마이그레이션, 6.5 forms를 CS로 업그레이드, 6.5 forms를 CS로 이동, AEM 6.5를 CS로 업그레이드, AEM Forms 6.5를 Cloud Service으로 업그레이드, AEM을 cloud service로 마이그레이션
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: f6b8ef52ad551be70e665a14ce00c197d1470e84
+source-git-commit: 850b1cccb03ca05ea53b646c55fcb0d0c100494c
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1590'
 ht-degree: 5%
 
 ---
@@ -120,7 +120,7 @@ AEM Forms AEM 6.5에서 as a Cloud Service 환경으로 원활하게 전환하�
 
    Cloud Service은 규칙 편집기 스크립트를 지원하지 않습니다. 다음 **[!UICONTROL 코드 편집기 스크립트 마이그레이션]** 도구는 사용자 환경의 모든 규칙 스크립트를 재사용 가능한 기능으로 변환하고 재사용 가능한 기능을 적절한 위치의 시각적 편집기에 적용합니다. 이러한 재사용 가능한 기능은 클라이언트 라이브러리 형태로 저장되며 기존 기능을 그대로 유지하는 데 도움이 됩니다. 이 도구는 생성된 재사용 가능한 기능을 해당 적응형 Forms에 자동으로 적용합니다.
 
-   사용 [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#contentmanagement) 재사용 가능한 기능(클라이언트 라이브러리)을 패키지로 내보냅니다.
+   Cloud Service으로 AEM 양식 마이그레이션, 사용 [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#contentmanagement) 재사용 가능한 기능(클라이언트 라이브러리)을 패키지로 내보냅니다.
 
 1. [배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#deploying-content-packages-via-cloud-manager-and-package-manager) 재사용 가능한 기능(클라이언트 라이브러리) 패키지 [사용자 지정 코드, 구성 요소, 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html#cloud-manager), 로케일별 사용자 정의 라이브러리 [!DNL AEM] as a Cloud Service 환경.
 
@@ -152,7 +152,7 @@ AEM Forms 6.5에서 Cloud Service로 마이그레이션할 때 다음 위치에�
 * `/content/forms/af`
 * `/etc/clientlibs/fd/theme`
 
-AEM Workflow 모델을 마이그레이션하려면 다음 경로를 지정합니다.
+AEM Workflow 모델을 AEM Forms 6.5에서 Cloud Service으로 마이그레이션할 때 다음 경로를 지정하십시오.
 
 * `/conf/global/settings/workflow/models/`
 * `/conf/global/settings/workflow/launcher`
