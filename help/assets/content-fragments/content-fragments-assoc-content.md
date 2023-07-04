@@ -2,10 +2,10 @@
 title: 관련 컨텐츠(자산 - 컨텐츠 조각)
 description: AEM 관련 콘텐츠 기능이 연결을 제공하여 조각과 함께 에셋을 선택적으로 사용할 수 있도록 하는 방법을 이해합니다.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 53%
+source-wordcount: '231'
+ht-degree: 54%
 
 ---
 
@@ -17,9 +17,9 @@ AEM 관련 콘텐츠 기능은 조각이 콘텐츠 페이지에 추가될 때 �
 
 >[!NOTE]
 >
->[시각적 에셋(예: 이미지)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)을 조각 및/또는 페이지에 추가하는 다양한 방법이 있습니다.
+>[시각적 자산(예: 이미지)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)을 조각 및/또는 페이지에 추가하는 다양한 방법이 있습니다.
 
-연결하려면 먼저 [미디어 에셋을 컬렉션에 추가](/help/assets/manage-collections.md)해야 합니다. 이러한 작업을 마치면 다음과 같은 작업을 수행할 수 있습니다.
+연결하려면 먼저 [미디어 자산을 컬렉션에 추가](/help/assets/manage-collections.md)해야 합니다. 이러한 작업을 마치면 다음과 같은 작업을 수행할 수 있습니다.
 
 1. 조각을 열고 사이드 패널에서 **관련 콘텐츠**&#x200B;를 선택합니다.
 
@@ -36,15 +36,15 @@ AEM 관련 콘텐츠 기능은 조각이 콘텐츠 페이지에 추가될 때 �
 
    ![컬렉션 선택](assets/cfm-assoc-content-02.png)
 
-1. **선택**&#x200B;을 사용하여 확인합니다. 컬렉션이 연결된 것으로 나열됩니다.
+1. **선택**&#x200B;을 사용하여 확인합니다. 컬렉션이 연결된 것으로 표시됩니다.
 
-   ![cfm-6420-05](assets/cfm-assoc-content-03.png)
+   ![확인된 연결](assets/cfm-assoc-content-03.png)
 
 ## 관련 콘텐츠 편집 {#editing-associated-content}
 
 컬렉션을 연결하면 다음 작업을 수행할 수 있습니다.
 
 * 연결 **제거**
-* 컬렉션에 **에셋 추가**
-* 추가 작업을 위한 에셋 선택
-* 에셋 편집
+* 컬렉션에 **자산 추가**
+* 추가 작업을 위한 자산 선택
+* 자산 편집

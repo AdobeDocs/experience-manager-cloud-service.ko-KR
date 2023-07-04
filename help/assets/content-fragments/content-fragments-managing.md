@@ -2,9 +2,9 @@
 title: 컨텐츠 조각 관리 (에셋 - 콘텐츠 조각)
 description: Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
 workflow-type: tm+mt
-source-wordcount: '1755'
+source-wordcount: '1770'
 ht-degree: 80%
 
 ---
@@ -56,7 +56,7 @@ Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐�
 
    선택 후 **다음**&#x200B;을 사용하여 진행하십시오.
 
-   ![조각 기준](assets/cfm-managing-01.png)
+   ![콘텐츠 조각 모델 선택](assets/cfm-managing-01.png)
 
 1. **속성** 단계에서 다음 사항을 지정합니다.
 
@@ -92,7 +92,7 @@ Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐�
 * 도구 모음에서 조각을 선택한 후 모든 적절한 작업이 가능합니다.
 * 개별 조각 카드에 사용할 수 있는 작업의 일부로서 [빠른 작업](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)이 있습니다.
 
-![작업](assets/cfm-managing-02.png)
+![도구 모음의 작업](assets/cfm-managing-02.png)
 
 조각을 선택하여 적용 가능한 작업이 있는 도구 모음을 표시합니다.
 
@@ -167,13 +167,13 @@ Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐�
 * [구조 트리](/help/assets/content-fragments/content-fragments-structure-tree.md)
 * [미리보기](/help/assets/content-fragments/content-fragments-json-preview.md)
 
-![모드](assets/cfm-managing-04.png)
+![콘텐츠 조각 편집기의 모드](assets/cfm-managing-04.png)
 
 ### 콘텐츠 조각 편집기의 도구 모음 작업 {#toolbar-actions-in-the-content-fragment-editor}
 
 상단 도구 모음의 일부 기능은 여러 모드에서 사용할 수 있습니다.
 
-![모드](assets/cfm-managing-top-toolbar.png)
+![다양한 모드에서 사용할 수 있는 도구 모음 작업](assets/cfm-managing-top-toolbar.png)
 
 * 이미 콘텐츠 페이지에서 조각을 참조 중이면 메시지가 표시됩니다. 메시지를 **닫을** 수 있습니다.
 
@@ -331,7 +331,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 >
 조각을 비교할 때에는 조각 콘텐츠를 편집할 수 없습니다.
 
-![비교](assets/cfm-managing-06.png)
+![변형 비교](assets/cfm-managing-06.png)
 
 ## 버전으로 되돌리기  {#reverting-to-a-version}
 
