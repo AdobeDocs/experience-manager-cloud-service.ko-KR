@@ -7,9 +7,9 @@ role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 0efdb9353ef908cf5a655c989ae7be1107c8f3de
+source-git-commit: e302d24261f24697aeb5f97b99ffee1fc2135959
 workflow-type: tm+mt
-source-wordcount: '2849'
+source-wordcount: '2783'
 ht-degree: 4%
 
 ---
@@ -24,20 +24,17 @@ ht-degree: 4%
 
 적응형 Forms을 사용하면 매력적인 반응형, 동적 및 적응형 양식을 만들 수 있습니다. AEM Forms은 적응형 Forms을 신속하게 만들 수 있는 비즈니스 사용자 친화적 마법사를 제공합니다. 마법사에는 미리 구성된 템플릿, 스타일, 필드 및 제출 옵션을 손쉽게 선택하여 적응형 양식을 만들 수 있는 빠른 탭 탐색 기능이 있습니다.
 
+![적응형 양식 만들기 마법사](/help/release-notes/assets/wizard.png){width="100%" align="center"}
+
 시작하기 전에 사용 가능한 Forms 구성 요소 유형에 대해 알아보십시오.
 
-* [적응형 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko): 표준화된 데이터 캡처 구성 요소입니다. 이러한 구성 요소는 사용자 지정 기능, 개발 시간 단축 및 디지털 등록 환경에 대한 유지 관리 비용 절감을 제공합니다. 개발자는 이러한 구성 요소를 손쉽게 맞춤화하고 스타일을 지정할 수 있습니다. **Adobe은 이러한 현대적이고 확장 가능한 구성 요소를 사용하여 적응형 Forms을 개발할 것을 권장합니다**.
+* [적응형 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko): 표준화된 데이터 캡처 구성 요소입니다. 이러한 구성 요소는 사용자 지정 기능, 개발 시간 단축 및 디지털 등록 환경에 대한 유지 관리 비용 절감을 제공합니다. 개발자는 이러한 구성 요소를 손쉽게 맞춤화하고 스타일을 지정할 수 있습니다. 다음을 방문하실 수 있습니다. [https://aemcomponents.dev/](https://aemcomponents.dev/) 사용 가능한 핵심 구성 요소 보기 **Adobe은 이러한 현대적이고 확장 가능한 구성 요소를 사용하여 적응형 Forms을 개발할 것을 권장합니다**.
 
 * [적응형 Forms Foundation 구성 요소](creating-adaptive-form.md): 클래식(이전) 데이터 캡처 구성 요소입니다. 적응형 양식 기반의 기존 기초 구성 요소를 편집하는 데 계속 사용할 수 있습니다. Adobe 새 양식을 만드는 경우 다음을 사용하는 것이 좋습니다.  [적응형 Forms 핵심 구성 요소를 사용하여 적응형 Forms 만들기](#create-an-adaptive-form-core-components).
 
-![적응형 양식 만들기 마법사](/help/release-notes/assets/wizard.png){width="100%" align="center"}
-
-
 >[!BEGINTABS]
 
->[!TAB 핵심 구성 요소로 적응형 Forms 만들기]
-
-## 전제 조건 {#pre-requisites-to-create-a-core-components-based-adaptive-form}
+>[!TAB 핵심 구성 요소로 적응형 Forms 만들기(권장)]
 
 적응형 양식을 만들려면 다음 항목이 필요합니다.
 
@@ -101,25 +98,20 @@ ht-degree: 4%
    * **[!UICONTROL 이름:]** 양식 이름을 지정합니다. 지정된 이름의 노드가 저장소에 생성됩니다. 제목 입력을 시작하면 이름 필드에 대한 값이 자동으로 생성됩니다. 제안 값을 변경할 수 있습니다. 이름 필드에는 영숫자, 하이픈 및 밑줄만 포함할 수 있습니다. 잘못된 모든 입력은 하이픈으로 대체됩니다.
    * **[!UICONTROL 경로:]** 적응형 양식을 저장할 위치를 지정합니다. 다음 위치에서 적응형 양식을 직접 저장할 수 있습니다. `/content/dam/formsanddocuments` 또는 다음과 같은 폴더를 생성합니다. `/content/dam/formsanddocuments/adaptiveforms` 을 클릭하여 적응형 양식을 저장하십시오. 경로에서 폴더를 사용하기 전에 폴더를 만들어야 합니다. 다음 **[!UICONTROL 경로]** 필드는 폴더를 자동으로 만들지 않습니다.
 
-1. 누르기 **[!UICONTROL 만들기]**. 적응형 양식이 만들어지고 적응형 Forms 편집기에서 열립니다. 템플릿에서 사용할 수 있는 콘텐츠가 편집기에 표시됩니다.  적응형 양식 유형에 따라 연관된 양식 요소에 있는 양식 요소 <!--XFA form template, XML schema or --> JSON 스키마 또는 양식 데이터 모델은 **[!UICONTROL 데이터 모델 개체]** 의 탭 **[!UICONTROL 컨텐츠 브라우저]** 를 클릭합니다. 이러한 요소를 드래그 앤 드롭하여 적응형 양식을 작성할 수도 있습니다.
+1. 누르기 **[!UICONTROL 만들기]**. 적응형 양식이 만들어지고 적응형 Forms 편집기에서 열립니다. 템플릿에서 사용할 수 있는 콘텐츠가 편집기에 표시됩니다.  적응형 양식 유형에 따라 연관된 양식 요소에 있는 양식 요소 <!--XFA form template, XML schema or --> JSON 스키마 또는 양식 데이터 모델은 **[!UICONTROL 데이터 모델 개체]** 의 탭 **[!UICONTROL 컨텐츠 브라우저]** 를 클릭합니다.
 
-이제 적응형 Forms 핵심 구성 요소를 적응형 Forms 컨테이너로 드래그 앤 드롭하여 양식을 디자인하고 만들 수 있습니다.
+이제 을(를) 드래그 앤 드롭할 수 있습니다. [적응형 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#components) 또는 스키마 요소를 사용하여 적응형 양식을 작성할 수 있습니다.
 
-## 사용 가능한 적응형 Forms 핵심 구성 요소 {#available-core-components}
-
-적응형 Forms 핵심 구성 요소는 표준화된 데이터 캡처 구성 요소입니다. 이러한 구성 요소는 사용자 지정 기능을 제공하고, 개발 시간을 줄이고, 디지털 등록 경험에 대한 유지 관리 비용을 절감하는 데 도움이 됩니다. [적응형 Forms 핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko) 에는 사용 가능한 구성 요소 목록과 함께 각 구성 요소의 기능에 대한 자세한 정보가 포함되어 있습니다. 다음을 방문하실 수도 있습니다. [https://aemcomponents.dev/](https://aemcomponents.dev/) 사용 가능한 핵심 구성 요소 보기
 
 ## 적응형 양식의 양식 모델 속성 편집 {#edit-form-model-core-components-based-adaptive-forms}
 
-1. 적응형 양식을 선택하고 을 누릅니다 ![페이지 정보](/help/forms/assets/Smock_Properties_18_N.svg){width="100%" align="center"} > **[!UICONTROL 속성 열기]**. 양식 속성 페이지가 열립니다.
+1. 적응형 양식을 선택하고 을 누릅니다 ![페이지 정보](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL 속성 열기]**. 양식 속성 페이지가 열립니다.
 
 1. 로 이동 **[!UICONTROL 양식 모델]** 을(를) 탭하고 양식 모델을 선택합니다. 적응형 양식에 양식 모델이 없는 경우 JSON 스키마 또는 양식 데이터 모델을 선택할 수 있습니다. 반면에 적응형 양식이 이미 양식 모델을 기반으로 하는 경우 동일한 유형의 다른 양식 모델로 전환할 수 있는 옵션이 있습니다. 예를 들어 양식이 JSON 스키마를 사용하는 경우 다른 JSON 스키마로 쉽게 전환할 수 있으며, 마찬가지로 양식이 양식 데이터 모델을 사용하는 경우 다른 양식 데이터 모델로 전환할 수 있습니다.
 
 1. 누르기 **[!UICONTROL 저장]** 속성을 저장합니다.
 
 >[!TAB 기초 구성 요소를 사용하여 적응형 Forms 만들기]
-
-## 전제 조건 {#pre-requisites-to-create-a-foundation-components-based-adaptive-form}
 
 적응형 양식을 만들려면 다음 항목이 필요합니다.
 
@@ -254,7 +246,7 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 적응형 양식 편집기 또는 적응형 양식 템플릿 편집기에서 양식 모델 속성을 수정할 수도 있습니다.
 
 1. 다음 항목 선택 **[!UICONTROL 적응형 양식 컨테이너(루트)]** 구성 요소.
-1. 클릭 ![구성 아이콘](/help/forms/assets/configure-icon.svg){width="100%" align="center"} 아이콘을 클릭하여 엽니다. **[!UICONTROL 속성]** 적응형 양식 컨테이너.
+1. 클릭 ![구성 아이콘](/help/forms/assets/configure-icon.svg) 아이콘을 클릭하여 엽니다. **[!UICONTROL 속성]** 적응형 양식 컨테이너.
 1. 다음 항목 선택 **[!UICONTROL 데이터 모델]** 을(를) 탭하고 다음 중 하나를 수행합니다.
 
    * 적응형 양식에 양식 모델이 없는 경우 양식 모델을 선택하고 그에 따라 을(를) 선택할 수 있습니다 <!-- a form template, --> XML 또는 JSON 스키마 또는 양식 데이터 모델.
