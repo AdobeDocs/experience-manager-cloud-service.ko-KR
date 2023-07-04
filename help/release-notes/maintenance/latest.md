@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: e8ea040ba3f8c73d7ed64c9669ac1d0a22d3a3c8
+source-git-commit: c7143ce939ca8c06fc678fc30f90c71981e4f8d7
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 23%
+source-wordcount: '607'
+ht-degree: 20%
 
 ---
 
@@ -13,18 +13,18 @@ ht-degree: 23%
 
 다음 섹션에서는 Experience Manager as a Cloud Service 현재 유지 관리 릴리스의 기술 릴리스 정보에 대해 간략히 소개합니다.
 
-## 릴리스 12441 {#release-12441}
+## 릴리스 12549 {#release-12549}
 
-2023년 6월 27일에 릴리스된 유지 관리 릴리스 12441의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이 유지 관리 릴리스는 이전 유지 관리 릴리스 12255의 업데이트입니다.
+다음은 2023년 7월 4일에 공개적으로 릴리스된 유지 보수 릴리스 12549에 대한 지속적인 개선 사항을 요약합니다. 이 유지 관리 릴리스는 이전 유지 관리 릴리스 12255의 업데이트입니다. 유지 관리 릴리스 12549은 두 가지 12441을 수정하는 데 도움이 됩니다.
 
 2023.7.0 기능 활성화는 이 유지 관리 릴리스에 대한 전체 기능 세트를 제공합니다. 다음을 참조하십시오. [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) 추가 정보.
 
-### 향상된 기능 {#enhancements-12441}
+### 향상된 기능 {#enhancements-12549}
 
 - SITES-8769: ResponsiveGrid에서 StyleImpl 호출 개선
 - FORMS-5054: 모든 기능에 대한 지원을 추가했습니다. [조각상](https://opensource.adobe.com/acrobat-sign/acrobat_sign_events/webhookeventsagreements.html) Adobe Sign에서 지원합니다.
 
-### 해결된 문제 {#fixed-issues-12441}
+### 해결된 문제 {#fixed-issues-12549}
 
 - 접근성 관련된 다양한 업데이트
 - SITES-12688: 페이지 편집기: 논리 연산자 또는 에셋 파인더 검색에서 제대로 작동하지 않음
@@ -53,11 +53,11 @@ ht-degree: 23%
 - FORMS-9072: 양식 조각을 만드는 동안 스키마를 검색할 때 검색 결과가 선택할 스키마를 반환하지 않습니다.
 - FORMS: AEM Forms 기능의 접근성을 개선하기 위해 접근성 관련 버그가 여러 개 수정되었습니다.
 
-### 알려진 문제 {#known-issues-12441}
+### 알려진 문제 {#known-issues-12549}
 
 없음.
 
-### 임베드된 기술 {#embedded-tech-12441}
+### 임베드된 기술 {#embedded-tech-12549}
 
 | 기술 | 버전 | 링크 |
 |---|---|---|
