@@ -7,9 +7,9 @@ keywords: 사용자 지정 오류 핸들러 추가, 기본 오류 핸들러 추�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 09ed1ae61e7748da2cc182b005a9dd26853cb3f7
+source-git-commit: 11ab8d41b911afc73fe5339d43ca3a0fc80a5f8d
 workflow-type: tm+mt
-source-wordcount: '1981'
+source-wordcount: '1926'
 ht-degree: 2%
 
 ---
@@ -59,7 +59,7 @@ AEM Forms은 양식 제출을 위해 기본 성공 및 오류 핸들러를 제�
     ]
     originCode : <target error Code>
     originMessage : <unstructured error message returned by service>
-}
+    }
 ```
 
 
@@ -125,20 +125,20 @@ AEM Forms 버전의 기능 및 후속 업데이트의 개선으로, 기존 오�
 * **`Header:`** `content-type:application/problem+json`
 * **`Response:`**
 
-      &quot;javascript
-      {
-      &quot;type&quot;: &quot;VALIDATION_ERROR&quot;,
-      &quot;validationErrors&quot;: [
-      {
-      &quot;fieldName&quot;: &quot;guide[0].guide1[0].guideRootPanel[0].textbox1686647736683[0]&quot;,
-      &quot;dataRef&quot;: &quot;&quot;,
-      &quot;details&quot;: [
-      &quot;잘못된 ID가 제공되었습니다. 입력한 값이 올바르지 않습니다.&quot;
-      ]
-      }
-      ]}
-      &quot;
-  
+  ```javascript
+          {
+              "type": "VALIDATION_ERROR",
+              "validationErrors": [
+              {
+              "fieldName": "guide[0].guide1[0].guideRootPanel[0].textbox1686647736683[0]",
+              "dataRef": "",
+              "details": [
+              "Invalid ID supplied. Provided value is not correct!"
+          ]
+          }
+          ]}
+  ```
+
   필드를 탭하고 을(를) 선택하여 적응형 양식에 있는 모든 필드의 SOM 표현식을 볼 수 있습니다. **[!UICONTROL SOM 표현식 보기]**.
 
   ![사용자 지정 오류 처리기의 오류 응답을 표시하는 적응형 양식 필드의 일부 표현식](/help/forms/assets/custom-error-handler-somexpression.png)
@@ -152,17 +152,17 @@ AEM Forms 버전의 기능 및 후속 업데이트의 개선으로, 기존 오�
 * **`Response:`**
 
   ```javascript
-  {
-      "type": "VALIDATION_ERROR",
-      "validationErrors": [
       {
-          "fieldName": "",
-          "dataRef": "/Pet/id",
-          "details": [
-          "Invalid ID supplied. Provided value is not correct!"
-          ]
-          }
-  ]}
+          "type": "VALIDATION_ERROR",
+          "validationErrors": [
+          {
+              "fieldName": "",
+              "dataRef": "/Pet/id",
+              "details": [
+              "Invalid ID supplied. Provided value is not correct!"
+              ]
+              }
+      ]}
   ```
 
   ![사용자 지정 오류 처리기에서 오류 응답을 표시하는 적응형 양식 필드의 데이터 참조](/help/forms/assets/custom-errorhandler-dataref.png)
@@ -235,21 +235,21 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
 1. 예를 들어 JavaScript 파일 추가 `function.js`. 이 파일은 사용자 지정 오류 처리기에 대한 코드로 구성됩니다.
 다음 코드를 JavaScript 파일에 추가하여 REST 서비스 끝점에서 받은 응답 및 헤더를 브라우저 콘솔에 표시해 보겠습니다.
 
-       &quot;javascript
+   ```javascript
        /**
-       * 사용자 지정 오류 처리기
-       * @name customErrorHandler 사용자 지정 오류 핸들러 함수
+       * Custom Error handler
+       * @name customErrorHandler Custom Error Handler Function
        * @errorHandler
        */
-       함수 customErrorHandler(response, headers)
+       function customErrorHandler(response, headers)
        {
-       console.log(&quot;사용자 지정 오류 처리기 처리 시작...&quot;);
-       console.log(&quot;response:&quot;+JSON.stringify(response));
-       console.log(&quot;headers:&quot;+JSON.stringify(headers));
-       console.log(&quot;사용자 지정 오류 처리기 처리 종료...&quot;);
+           console.log("Custom Error Handler processing start...");
+           console.log("response:"+JSON.stringify(response));
+           console.log("headers:"+JSON.stringify(headers));
+           console.log("Custom Error Handler processing end...");
        }
-       &quot;
-   
+   ```
+
    <!--  To call the default error handler after the custom error handler, the following line of the sample code is used:
         `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `-->
 1. 저장 `function.js` 파일.
