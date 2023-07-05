@@ -2,7 +2,7 @@
 title: Adobe Target으로 경험 조각 내보내기
 description: Adobe Target으로 경험 조각 내보내기
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 7905f21e70f373150775fe90d5faf02db4a59c32
 workflow-type: tm+mt
 source-wordcount: '2245'
 ht-degree: 97%
@@ -242,7 +242,7 @@ Target 클라우드 구성을 구성한 다음에는 Target 프레임워크를 �
 
    프레임워크 페이지가 열립니다. Sidekick은 매핑할 수 있는 [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)의 정보를 나타내는 구성 요소를 제공합니다.
 
-   <!-- ![chlimage_1-162](assets/chlimage_1-162.png) -->
+   <!-- ![Framework](assets/chlimage_1-162.png) -->
 
 1. 매핑에 사용하고자 하는 데이터를 나타내는 클라이언트 컨텍스트 구성 요소를 드롭 대상에 드래그합니다. 또는 **ContextHub 스토어** 구성 요소를 프레임워크에 드래그합니다.
 
@@ -252,11 +252,11 @@ Target 클라우드 구성을 구성한 다음에는 Target 프레임워크를 �
 
    예를 들어 사이트 방문자에 대한 **프로필 데이터**&#x200B;를 사용하여 Target 캠페인을 관리하려면 **프로필 데이터** 구성 요소를 페이지에 드래그해야 합니다. Target 매개변수에 매핑할 수 있는 프로필 데이터 변수가 표시됩니다.
 
-   <!-- ![chlimage_1-163](assets/chlimage_1-163.png) -->
+   <!-- ![Profile Data](assets/chlimage_1-163.png) -->
 
 1. 적절한 열에서 **공유** 확인란을 선택하여 Adobe Target 시스템에 표시하고자 하는 변수를 선택합니다.
 
-   <!-- ![chlimage_1-164](assets/chlimage_1-164.png) -->
+   <!-- ![Share](assets/chlimage_1-164.png) -->
 
    >[!NOTE]
    >
@@ -293,7 +293,7 @@ When you associate a page with the framework, the child pages inherit the associ
 1. Tap/click **Edit**.
 1. Tap/click **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
 
-  ![chlimage_1-165](assets/chlimage_1-165.png)
+  ![Cloud Service Configuration](assets/chlimage_1-165.png)
 
 1. Select the framework you want under **Configuration Reference**.
 
