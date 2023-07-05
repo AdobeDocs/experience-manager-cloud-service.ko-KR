@@ -1,12 +1,12 @@
 ---
 title: Experience Manager as a Cloud Service Sites를 위한 리소스 지원
-description: 모든 Adobe AEM Cloud Services 지원 리소스의 전체 목록을 가져옵니다. AEM Sites as Cloud Service 관련 질문에 대한 답변을 찾아보십시오.
+description: 모든 Adobe AEM Cloud Services 지원 리소스에 대한 전체 목록을 살펴보십시오. AEM Sites as Cloud Service 관련 질문에 대한 답변을 찾아보십시오.
 landing-page-description: AEM Sites as a Cloud Service로 작성하고 관리하는 방법을 이해합니다.
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 71%
+ht-degree: 74%
 
 ---
 

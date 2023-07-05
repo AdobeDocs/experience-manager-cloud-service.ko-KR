@@ -1,12 +1,12 @@
 ---
 title: ' [!DNL AEM Forms] as a Cloud Service 소개'
-description: AEM Forms를 살펴보고 업무용 양식 및 문서 콘텐츠를 제작하는 데 어떻게 도움이 되는지 알아봅니다. PaaS(Platform-as-a-Service)와 엔터프라이즈급 디지털 양식 및 비즈니스 프로세스를 관리하는 방법에 대해 알아보고 Forms을 Adobe Sign 및 현재 데이터 소스에 연결합니다.
+description: AEM Forms를 살펴보고 업무용 양식 및 문서 콘텐츠를 제작하는 데 어떻게 도움이 되는지 알아봅니다. PaaS(Platform-as-a-Service)에 대해 살펴보고 엔터프라이즈급 디지털 양식 및 비즈니스 프로세스를 관리하는 방법을 포함하여 Forms를 Adobe Sign 및 현재 데이터 소스에 연결하는 방법도 알아봅니다.
 landing-page-description: AEM as a Cloud Service에서 양식을 사용하는 방법을 이해합니다.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: 87aeebad2576e91472530a2617b23bece4cd453f
 workflow-type: tm+mt
 source-wordcount: '1117'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
