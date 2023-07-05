@@ -286,4 +286,4 @@ Caused by: com.mongodb.MongoWriteException: Resulting document after update is l
 
 ## [!DNL Assets] 개발 지침 및 사용 사례 {#use-cases-assets}
 
-Assets에 대한 개발 사용 사례, 권장 사항 및 참조 자료를 as a Cloud Service으로 제공하는 방법에 대해 알아보려면 다음을 참조하십시오. [자산에 대한 개발자 참조](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
+Assets에 대한 개발 사용 사례, 권장 사항 및 참조 자료를 as a Cloud Service으로 제공하는 방법에 대해 알아보려면 [자산에 대한 개발자 참조](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).

@@ -19,7 +19,7 @@ ht-degree: 45%
 
 >[!NOTE]
 >
->개인 정보 보호 문제에 대한 Adobe의 응답 및 Adobe 고객으로서의 이러한 응답이 의미하는 바에 대한 자세한 내용은 다음을 참조하십시오. [Adobe 개인정보 보호 센터](https://www.adobe.com/privacy.html).
+>개인 정보 보호 문제에 대한 Adobe의 응답 및 Adobe 고객으로서의 이러한 응답이 의미하는 바에 대한 자세한 내용은 다음을 참조하십시오. [Adobe 개인정보 보호 센터](https://www.adobe.com/kr/privacy.html).
 
 Adobe 고객이 이러한 규정을 준수할 수 있도록 지원하기 위해 Adobe은 고객 개인정보 보호 관리자 및 AEM 관리자를 위한 설명서 및 절차(가능한 경우 API 포함)를 제공하고 있습니다.
 
@@ -32,7 +32,7 @@ Adobe 고객이 이러한 규정을 준수할 수 있도록 지원하기 위해 
 >
 >다른 Adobe 온디맨드 서비스의 데이터와 관련 개인 정보 보호 요청은 해당 서비스에 대한 조치가 필요합니다.
 >
->자세한 내용은 [Adobe 개인정보 보호 센터](https://www.adobe.com/privacy.html).
+>자세한 내용은 [Adobe 개인정보 보호 센터](https://www.adobe.com/kr/privacy.html).
 
 ## 소개 {#introduction}
 

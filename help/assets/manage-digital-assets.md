@@ -28,7 +28,7 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->* 유형의 에셋 폴더 공유 `sling:OrderedFolder`은(는) Experience Cloud에 공유할 때 지원되지 않습니다. 폴더를 공유하려면 선택하지 마십시오. [!UICONTROL 주문됨] 폴더를 만들 때.
+>* 유형의 에셋 폴더 공유 `sling:OrderedFolder`은(는) Experience Cloud에 공유할 때 지원되지 않습니다. 폴더를 공유하려면 선택하지 마십시오 [!UICONTROL 주문됨] 폴더를 만들 때.
 >* Experience Manager에서 사용을 허용하지 않음 `subassets` word를 폴더 이름으로 사용합니다. 조합 자산에 대한 하위 자산을 포함하는 노드용으로 예약된 키워드입니다
 
 1. 디지털 자산 폴더에서 새 폴더를 만들 위치로 이동합니다. 메뉴에서 다음을 클릭합니다. **[!UICONTROL 만들기]**. 선택 **[!UICONTROL 새 폴더]**.
@@ -77,7 +77,7 @@ DAM 사용자가 저장소에 이미 존재하는 에셋을 하나 이상 업로
 >
 >에셋을 저장소에 업로드하면 Experience Manager에서 중복을 감지하여 처음 100개의 중복 에셋에 대해 알려 줍니다.
 
-## 에셋 미리보기 {#previewing-assets}
+## 자산 미리보기 {#previewing-assets}
 
 에셋을 미리 보려면 다음 단계를 수행합니다.
 
@@ -316,7 +316,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 ## 폐쇄된 사용자 그룹 {#closed-user-group}
 
-CUG(폐쇄형 사용자 그룹)는에서 게시된 특정 에셋 폴더에 대한 액세스를 제한하는 데 사용됩니다 [!DNL Experience Manager]. 폴더에 대한 CUG를 생성하는 경우 폴더(폴더 자산 및 하위 폴더 포함)에 대한 액세스는 할당된 구성원 또는 그룹으로만 제한됩니다. 폴더에 액세스하려면 보안 자격 증명을 사용하여 로그인해야 합니다.
+CUG(폐쇄형 사용자 그룹)는에서 게시된 특정 에셋 폴더에 대한 액세스를 제한하는 데 사용됩니다 [!DNL Experience Manager]. 폴더에 대한 CUG를 생성하는 경우 폴더(폴더 에셋 및 하위 폴더 포함)에 대한 액세스는 할당된 구성원 또는 그룹으로만 제한됩니다. 폴더에 액세스하려면 보안 자격 증명을 사용하여 로그인해야 합니다.
 
 CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더의 로그인 페이지를 구성할 수도 있습니다.
 
