@@ -5,7 +5,7 @@ exl-id: 2e95ff7b-cc94-477d-99ab-816a58998287
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '338'
-ht-degree: 24%
+ht-degree: 36%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 24%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_dispconverter"
 >title="AEM Dispatcher 변환기"
->abstract="Adobe Experience Manager Dispatcher 변환기는 AEM Dispatcher의 기존 구성을 AEM as a Cloud Service Dispatcher의 구성으로 변환합니다."
+>abstract="Adobe Experience Manager Dispatcher 변환기는 기존 AEM Dispatcher의 구성을 AEM as a Cloud Service Dispatcher로 변환해 줍니다."
 
-Adobe Experience Manager Dispatcher 변환기는 AEM Dispatcher의 기존 구성을 AEM as a Cloud Service Dispatcher의 구성으로 변환합니다.
+Adobe Experience Manager Dispatcher 변환기는 기존 AEM Dispatcher의 구성을 AEM as a Cloud Service Dispatcher로 변환해 줍니다.
 
 ## Dispatcher 소개 {#introduction-dispatcher}
 

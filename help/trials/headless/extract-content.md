@@ -7,7 +7,7 @@ exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1116'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 92%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide_footer"
->title="훌륭합니다! 두 가지 기본 쿼리 유형과 자체 콘텐츠를 쿼리하는 방법에 대해 배웠습니다. 이제 AEM GraphQL API를 사용하여 앱에서 기대하는 형식으로 콘텐츠를 제공하는 효율적인 쿼리를 만드는 방법을 파악했습니다."
+>title="훌륭합니다! 지금까지 두 가지 기본 쿼리 유형과 자체 콘텐츠를 쿼리하는 방법에 대해 알아보았습니다. 이제 AEM GraphQL API를 사용하여 앱에서 기대하는 형식으로 콘텐츠를 제공하는 효율적인 쿼리를 만드는 방법을 파악했습니다."
 >abstract=""
 
 ## 샘플 콘텐츠 목록 쿼리 {#list-query}
