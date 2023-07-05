@@ -2,9 +2,9 @@
 title: 기록 문서 템플릿을 만들기 위해 Forms Designer를 다운로드하고 설치하는 방법
 description: Forms Designer를 사용하여 기록 문서의 템플릿 역할을 하는 XDP 및 PDF 양식 템플릿을 만들 수 있습니다. 디자이너는 [!DNL AEM Forms] 라이센스.
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: e71dd8a4eb92acbed53fb9384bc40efc3e743761
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '262'
 ht-degree: 2%
 
 ---
@@ -26,6 +26,7 @@ Designer를 설치하고 구성하려면 다음 소프트웨어와 최소 하드
 * 비디오 하드웨어 가속(옵션)
 * Acrobat Pro DC, Acrobat Standard DC 또는 Adobe Acrobat Reader DC.
 * Designer를 설치할 수 있는 관리 권한입니다.
+* Microsoft Visual C++ 2019(VC 14.28 이상) 32비트 런타임
 
 ## Designer 설치 {#install-designer}
 
