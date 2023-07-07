@@ -2,12 +2,13 @@
 title: Universal Visual Editor로 콘텐츠 게시
 description: Universal Visual Editor에서 콘텐츠를 게시하는 방법과 앱에서 게시된 콘텐츠를 처리하는 방법에 대해 알아봅니다.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 78%
+source-wordcount: '367'
+ht-degree: 88%
 
 ---
+
 
 # Universal Visual Editor로 콘텐츠 게시 {#publishing}
 
@@ -31,6 +32,6 @@ Universal Visual Editor를 통한 게시가 AEM과 다른 부분은 편집기 �
 
 ## 요약 {#summary}
 
-유니버설 편집기의 목표는 특정 패턴을 적용하지 않는 것이며, 이를 통해 구현은 구현에 대한 모든 것을 단순하고 앞으로 곧게 유지하면서 완전히 분리된 방식으로 목표를 가장 잘 달성할 수 있습니다.
+Universal Editor의 목적은 특정 패턴을 적용하지 않고 구현을 위한 모든 것을 간단하고 복잡하지 않게 유지하면서 완전히 분리된 방식으로 목표를 달성할 수 있도록 하는 것입니다.
 
 마찬가지로 Universal Editor는 특정 프로젝트에서 콘텐츠를 게재할 계층을 결정하는 방법에 대한 요구 사항을 제공하지 않습니다. 이를 통해 다양한 가능성을 실현하고 프로젝트에서 자체 요구 사항에 가장 적합한 솔루션을 결정할 수 있도록 합니다.

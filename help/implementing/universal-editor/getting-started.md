@@ -2,10 +2,10 @@
 title: AEM에서 Universal Editor 시작하기
 description: Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 알아봅니다.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 93%
+source-wordcount: '804'
+ht-degree: 94%
 
 ---
 
@@ -66,7 +66,7 @@ React 앱을 구현하지 않거나 서버측 렌더링이 필요한 경우 다�
 
 Universal Editor를 사용하여 앱에서 AEM 콘텐츠를 편집할 수 있으려면 AEM 내에서 CORS 및 쿠키 설정을 수행해야 합니다.
 
-다음 [OSGi 구성을 AEM 작성 인스턴스에서 설정해야 합니다](/help/implementing/deploying/configuring-osgi.md).
+다음 [OSGi 구성을 AEM 작성 인스턴스에서 설정해야 합니다.](/help/implementing/deploying/configuring-osgi.md)
 
 * `SameSite Cookies = None`-`com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`
 * X-FRAME-OPTIONS 제거: `org.apache.sling.engine.impl.SlingMainServlet`의 SAMEORIGIN 헤더
@@ -161,7 +161,7 @@ itemid="urn:<referenceName>:<resource>"
 </html>
 ```
 
-## 유니버설 편집기를 사용할 준비가 되었습니다. {#youre-ready}
+## Universal Editor를 사용할 준비 완료 {#youre-ready}
 
 이제 앱이 Universal Editor를 사용하도록 구성되었습니다.
 

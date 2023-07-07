@@ -2,12 +2,13 @@
 title: Universal Editor 아키텍처
 description: Universal Editor의 아키텍처 및 해당 서비스와 계층 간에 데이터가 흐르는 방식에 대해 알아봅니다.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '652'
 ht-degree: 90%
 
 ---
+
 
 # Universal Editor 아키텍처 {#architecture}
 
@@ -28,7 +29,7 @@ Universal Editor의 아키텍처 및 해당 서비스와 계층 간에 데이터
 
 >[!TIP]
 >
->범용 편집기 및 해당 아키텍처의 작동 방식을 보려면 [AEM에서 유니버설 편집기 시작하기](getting-started.md) 범용 편집기에 대한 액세스 권한을 받는 방법 및 이를 사용하기 위해 첫 번째 AEM 앱을 계측하는 방법을 알아봅니다.
+>범용 편집기 및 해당 아키텍처의 작동 방식을 확인하려면 문서를 참조하십시오. [AEM에서 유니버설 편집기 시작하기](getting-started.md) 범용 편집기에 대한 액세스 권한을 받는 방법 및 이를 사용하기 위해 첫 번째 AEM 앱을 계측하는 방법을 알아봅니다.
 
 ### 편집기 {#editors}
 
