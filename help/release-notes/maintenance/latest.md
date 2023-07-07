@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: c7143ce939ca8c06fc678fc30f90c71981e4f8d7
+source-git-commit: 1251f36ece4449d8be6a40f34421351161bf3b23
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 20%
+source-wordcount: '640'
+ht-degree: 19%
 
 ---
 
@@ -21,7 +21,6 @@ ht-degree: 20%
 
 ### 향상된 기능 {#enhancements-12549}
 
-- SITES-8769: ResponsiveGrid에서 StyleImpl 호출 개선
 - FORMS-5054: 모든 기능에 대한 지원을 추가했습니다. [조각상](https://opensource.adobe.com/acrobat-sign/acrobat_sign_events/webhookeventsagreements.html) Adobe Sign에서 지원합니다.
 
 ### 해결된 문제 {#fixed-issues-12549}
@@ -55,7 +54,7 @@ ht-degree: 20%
 
 ### 알려진 문제 {#known-issues-12549}
 
-없음.
+- SKYOPS-61385: 최신 Dispatcher 업데이트를 적용하면 이전에 에서 자동으로 무시한 특정 잘못된 정규 표현식이 `libpcre1` 업데이트에서 더 이상 허용되지 않음 `libpcre2` 배포 중. 디스패처 구성 검사는 이러한 사항을 더 일찍 식별하도록 곧 업데이트됩니다.
 
 ### 임베드된 기술 {#embedded-tech-12549}
 
