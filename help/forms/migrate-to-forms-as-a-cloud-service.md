@@ -1,16 +1,17 @@
 ---
 title: AEM 6.5 Forms에서 로 마이그레이션하는 방법 [!DNL AEM Forms] as a Cloud Service 환경?
-description: 다음에서 마이그레이션 [!DNL AEM Forms] (온-프레미스 및 AMS 환경) [!DNL AEM Forms] as a Cloud Service 환경.
-keywords: 6.5 forms를 cloud service로, 6.5 forms를 cs로, 6.5 forms를 cloud service로 마이그레이션, 6.5 forms를 cloud service로 마이그레이션, 6.5 forms를 CS로 업그레이드, 6.5 forms를 CS로 이동, AEM 6.5를 CS로 업그레이드, AEM Forms 6.5를 Cloud Service으로 업그레이드, AEM을 cloud service로 마이그레이션
+description: as a Cloud Service으로 마이그레이션 여정 AEM 시작 | Adobe Experience Manager. 다음에서 마이그레이션 [!DNL AEM Forms] (온-프레미스 및 AMS 환경) [!DNL AEM Forms] as a Cloud Service 환경.
+keywords: 6.5 forms를 cloud service로, 6.5 forms를 cs로, 6.5 forms를 cloud service로 마이그레이션, 6.5 forms를 cloud service로 마이그레이션, 6.5 forms를 CS로 업그레이드, 6.5 forms를 CS로 이동, AEM 6.5를 CS로 업그레이드, AEM Forms 6.5를 Cloud Service으로 업그레이드, AEM을 cloud service로 마이그레이션, 여정을 AEMas a Cloud Service 로 마이그레이션 | ADOBE EXPERIENCE MANAGER
 contentOwner: khsingh
 feature: Adaptive Forms
+feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 850b1cccb03ca05ea53b646c55fcb0d0c100494c
+source-git-commit: 8dc89bf4b20d12bdb380797b6e56db1a2ce6ce0a
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1632'
 ht-degree: 5%
 
 ---
@@ -22,7 +23,8 @@ ht-degree: 5%
 | AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/upgrade.html) |
 | AEM as a Cloud Service | 이 문서 |
 
-다음에서 적응형 Forms, 테마, 템플릿 및 클라우드 구성을 마이그레이션하거나 업그레이드할 수 있습니다. <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> OSGi의 AEM 6.5 Forms [!DNL AEM] as a Cloud Service. 이러한 에셋을 마이그레이션하기 전에 마이그레이션 유틸리티를 사용하여 이전 버전에서 사용된 형식을 에서 사용된 형식으로 변환합니다 [!DNL AEM] as a Cloud Service. 마이그레이션 유틸리티를 실행하면 다음 자산이 업데이트됩니다.
+다음에서 적응형 Forms, 테마, 템플릿 및 클라우드 구성을 마이그레이션하거나 업그레이드할 수 있습니다. <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> OSGi의 AEM 6.5 Forms [!DNL AEM] as a Cloud Service. 이러한 에셋을 마이그레이션하기 전에 마이그레이션 유틸리티를 사용하여 이전 버전에서 사용된 형식을 에서 사용된 형식으로 변환합니다 [!DNL AEM] as a Cloud Service.
+AEMas a Cloud Service 로의 마이그레이션 여정을 시작해 보겠습니다. | Adobe Experience Manager. 마이그레이션 유틸리티를 실행하면 다음 자산이 업데이트됩니다.
 
 * 적응형 Forms에 대한 맞춤형 구성 요소
 * 적응형 Forms 템플릿 및 테마
