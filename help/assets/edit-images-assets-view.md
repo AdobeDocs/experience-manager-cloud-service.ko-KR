@@ -3,10 +3,10 @@ title: 이미지 편집
 description: ' [!DNL Adobe Photoshop Express] 기반 옵션을 사용하여 이미지를 편집하고 업데이트된 이미지를 버전으로 저장합니다.'
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: e2efffe0192f7914fd97178884b7938b84fd9a27
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 97%
+source-wordcount: '549'
+ht-degree: 95%
 
 ---
 
@@ -45,7 +45,7 @@ For more information about how Spot Healing works in Photoshop, see [retouching 
 
 ## 이미지 크기 조정 {#resize-image}
 
-이미지 크기를 특정 크기로 조정하는 것이 일반적인 사용 사례입니다. [!DNL Assets view]를 사용하면 특정 사진 크기에 대해 미리 계산된 새로운 해상도를 제공하여 일반적인 사진 크기에 맞게 빠르게 이미지 크기를 조정할 수 있습니다. 일반적인 사진 크기를 cm(센티미터) 또는 in(인치) 단위로 보고 치수를 알 수 있습니다. 기본적으로 크기 조정 방법은 가로 세로 비율을 유지합니다. 가로 세로 비율을 수동으로 오버라이드하려면 ![](assets/do-not-localize/lock-closed-icon.png)를 클릭하십시오.
+이미지 크기를 특정 크기로 조정하는 것이 일반적인 사용 사례입니다. [!DNL Assets view]를 사용하면 특정 사진 크기에 대해 미리 계산된 새로운 해상도를 제공하여 일반적인 사진 크기에 맞게 빠르게 이미지 크기를 조정할 수 있습니다. 일반적인 사진 크기를 cm(센티미터) 또는 in(인치) 단위로 보고 치수를 알 수 있습니다. 기본적으로 크기 조정 방법은 가로 세로 비율을 유지합니다. 가로 세로 비율을 수동으로 오버라이드하려면 ![이미지 크기 조정 옵션.](assets/do-not-localize/lock-closed-icon.png).
 
 치수를 입력하고 **[!UICONTROL 이미지 크기 조정]**&#x200B;을 클릭하여 이미지 크기를 조정합니다. 변경 사항을 버전으로 저장하기 전에 [!UICONTROL 실행 취소]를 클릭하여 저장하기 전에 수행한 모든 변경 사항을 실행 취소하거나 [!UICONTROL 되돌리기]를 클릭하여 편집 프로세스의 특정 단계를 변경할 수 있습니다.
 

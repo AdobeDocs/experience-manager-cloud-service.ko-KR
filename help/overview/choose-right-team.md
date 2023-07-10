@@ -2,10 +2,10 @@
 title: 적합한 사람, 적합한 역할
 description: 적합한 사람, 적합한 역할
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 82%
+source-wordcount: '847'
+ht-degree: 80%
 
 ---
 
@@ -73,7 +73,7 @@ Adobe Experience Manager Assets 구현을 정상적으로 실행하기 위해 �
 
 <br>
 
-![](/help/overview/assets/team_involvement2.png)
+![AEM Assets 팀에 대한 가상 역할과 참여 수준을 보여 주는 가로 막대 차트입니다.](/help/overview/assets/team_involvement2.png)
 
 >[!TIP]
 >

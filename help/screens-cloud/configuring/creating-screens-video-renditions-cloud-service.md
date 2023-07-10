@@ -2,9 +2,9 @@
 title: Screens에서 비디오 표현물 as a Cloud Service 만들기
 description: 이 페이지에서는 Screens as a Cloud Service으로 비디오 렌디션을 만드는 방법에 대해 설명합니다.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '367'
 ht-degree: 1%
 
 ---
@@ -37,15 +37,15 @@ Screens Content Provider에서 as a Cloud Service으로 비디오 렌디션을 �
 
 1. 다음을 입력합니다. **이름**, 예: **ScreensProcessingProfile**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-3.png)
+   ![[이름] 필드를 강조 표시하는 [처리 프로필] 대화 상자](/help/screens-cloud/assets/configure/screens-video-3.png)
 
 1. 다음으로 이동 **비디오** 비디오 인코딩을 추가할 수 있도록 탭한 다음 **새로 추가**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-4a.png)
+   ![새로 추가 버튼이 강조 표시된 처리 프로필 대화 상자](/help/screens-cloud/assets/configure/screens-video-4a.png)
 
 1. 다음을 입력합니다. **인코딩 이름** 예: , **screens-fullhd** 및 **비트율** 다음으로: **2500**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-4.png)
+   ![저장 버튼이 강조 표시된 처리 프로필 대화 상자.](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
    >&quot;screens-&quot;로 시작하는 인코딩 이름을 사용하십시오. 이러한 비디오 표현물만 Screens에서 비디오 경험을 as a Cloud Service으로 재생하는 것으로 간주됩니다. 비디오를 작동하는 비트율을 입력합니다(720px 비디오의 경우 2500kbps, 1080px의 경우 5000kbps).

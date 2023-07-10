@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 6d445943fb8a79eb549c954bb88daf61242a8b10
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '2553'
+source-wordcount: '2563'
 ht-degree: 18%
 
 ---
@@ -372,7 +372,7 @@ IMS 계정을 구성하려면 다음 단계를 수행하십시오.
 
    대화 상자에서 **[!UICONTROL 확인]**&#x200B;을 클릭합니다. 구성이 성공하면 *토큰이 성공적으로 검색되었습니다.*&#x200B;라는 메시지가 나타납니다.
 
-   ![](assets/create-new-integration5.png)
+   ![Adobe IMS 구성 상태 확인](assets/create-new-integration5.png)
 
 >[!CAUTION]
 >
@@ -396,7 +396,7 @@ Brand Portal 클라우드 서비스를 구성하려면 다음 단계를 수행�
 
    다음에서 **[!UICONTROL 서비스 URL]** 필드에 Brand Portal 테넌트 URL을 지정합니다.
 
-   ![](assets/create-cloud-service.png)
+   ![Brand Portal 구성 대화 상자](assets/create-cloud-service.png)
 
 1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다. 클라우드 구성이 만들어집니다.
 
@@ -423,11 +423,11 @@ Perform the following steps to validate the configuration:
 
 1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
-    ![](assets/test-bpconfig1.png)
+    ![test-bpconfig1](assets/test-bpconfig1.png)
 
    A Brand Portal distribution agent (**[!UICONTROL bpdistributionagent0]**) is created under **[!UICONTROL Publish to Brand Portal]**.
 
-   ![](assets/test-bpconfig2.png)
+   ![test-bpconfig2](assets/test-bpconfig2.png)
 
 
 1. Click **[!UICONTROL Publish to Brand Portal]** to open the distribution agent. 
@@ -443,11 +443,11 @@ Perform the following steps to validate the configuration:
    >
    >It is recommended to review the failures and  clear the **error-queue** periodically.  
 
-   ![](assets/test-bpconfig3.png)
+   ![test-bpconfig3](assets/test-bpconfig3.png)
 
 1. To verify the connection between AEM Assets as a [!DNL Cloud Service] and Brand Portal, click on the **[!UICONTROL Test Connection]** icon.
 
-   ![](assets/test-bpconfig4.png)
+   ![test-bpconfig4](assets/test-bpconfig4.png)
 
    A message appears that your *test package is successfully delivered*.
 
@@ -475,7 +475,7 @@ For example, we have published an asset from AEM Assets to Brand Portal to valid
 1. Follow the steps (from 1 to 4) as shown in the [Test Configuration](#test-configuration) section and navigate to the distribution agent page.
 1. Click **[!UICONTROL Logs]** to view the processing and error logs.
 
-   ![](assets/test-bpconfig5.png)
+   ![ctest-bpconfig4](assets/ctest-bpconfig4.png)
 
 The distribution agent has generated the following logs:
 

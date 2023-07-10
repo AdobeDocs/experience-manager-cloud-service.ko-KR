@@ -2,10 +2,10 @@
 title: Screens에서 as a Cloud Service 채널 만들기 및 관리
 description: 이 페이지에서는 Screens에서 채널을 as a Cloud Service으로 만들고 관리하는 방법을 설명합니다.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 1%
+source-wordcount: '1094'
+ht-degree: 2%
 
 ---
 
@@ -36,17 +36,18 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
 
 1. 다음 항목 선택 **채널** 프로젝트의 폴더(예: ) **FirstDigitalExperience** —> **채널** 및 클릭 **만들기** 작업 표시줄에서
 
-   ![](/help/screens-cloud/assets/create-content/channel-create1.png)
+   ![channel-create1](/help/screens-cloud/assets/create-content/channel-create1.png)
 
 1. 다음과 같은 템플릿을 선택합니다. **시퀀스 채널** 다음에서 **만들기** 마법사 및 클릭 **다음**.
 
-   ![](/help/screens-cloud/assets/create-content/channel-create2.png)
+   ![channel-create2](/help/screens-cloud/assets/create-content/channel-create2.png)
+
    >[!NOTE]
    > 다음 **만들기** 마법사는 채널을 만드는 동안 다양한 유형의 템플릿을 제공합니다. 다음을 참조하십시오 [사용 가능한 템플릿](#available-templates) 자세한 내용은 만들기 마법사를 참조하십시오.
 
 1. 시퀀스 채널의 이름을 입력합니다(예: ). **루프채널** 및 클릭 **만들기**.
 
-   ![](/help/screens-cloud/assets/create-content/channel-create3.png)
+   ![channel-create3](/help/screens-cloud/assets/create-content/channel-create3.png)
 
    이제 다음이 표시됩니다. **루프채널** AEM Screens 을 참조하십시오.
 
@@ -58,7 +59,7 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
 
 아래 그림과 같이 프로젝트에서 채널로 이동하고 채널을 선택합니다. 이제 채널 편집, 속성 보기, 콘텐츠 미리 보기, 게시 관리 또는 작업 표시줄에서 채널 삭제와 같은 옵션을 선택할 수 있습니다.
 
-![](/help/screens-cloud/assets/create-content/channelprop1.png)
+![channelprop1](/help/screens-cloud/assets/create-content/channelprop1.png)
 
 ### 채널에 콘텐츠 추가 {#add-content}
 
@@ -66,17 +67,17 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
 
 1. 아래 그림과 같이 편집할 채널을 선택합니다. 클릭 **편집** 작업 표시줄의 왼쪽 상단 모서리에서 편집기를 엽니다.
 
-   ![](/help/screens-cloud/assets/create-content/edit-channel1.png)
+   ![edit-channel1](/help/screens-cloud/assets/create-content/edit-channel1.png)
 
 1. 편집기를 사용하면 게시할 채널에 자산/구성 요소를 추가할 수 있습니다.
 
 1. 왼쪽 창에서 에셋을 끌어다 놓고 편집기에 추가합니다.
 
-   ![](/help/screens-cloud/assets/create-content/edit-channel2.png)
+   ![edit-channel2](/help/screens-cloud/assets/create-content/edit-channel2.png)
 
    >[!NOTE]
    >클릭 **미리 보기** 을 클릭하여 채널의 콘텐츠를 미리 봅니다.
-   >![](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
+   >![편집-채널 미리 보기](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
 ## 만들기 마법사에서 사용할 수 있는 템플릿 {#available-templates}
 

@@ -2,10 +2,10 @@
 title: Screens 콘텐츠 공급자 사용
 description: 이 페이지에서는 Screens 콘텐츠 공급자를 사용하여 콘텐츠를 만드는 방법에 대해 설명합니다.
 exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 16%
+source-wordcount: '414'
+ht-degree: 14%
 
 ---
 
@@ -30,21 +30,21 @@ ht-degree: 16%
 1. 다음으로 이동 [Adobe Experience Cloud](https://experience.adobe.com) 홈 페이지입니다.
 
 1. **Experience Manager**를 선택합니다.
-   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   ![Experience Manager 영역에 대한 빠른 액세스를 위한 랜딩 페이지입니다.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
 1. 클릭 **시작** 사용. 에 성공적으로 로그인하면 [!UICONTROL Cloud Manager], 사용자 인터페이스(UI)를 사용할 준비가 되었습니다.
-   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+   ![Cloud Manager의 네 가지 영역(Brand Portal, Cloud Manager, Cloud Acceleration Manager 및 소프트웨어 배포)이 각각 고유한 Launch 구현을 보여 줍니다.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 1. Screens as a Cloud Service에 대한 프로그램을 선택하고 아래와 같이 아이콘을 클릭하여 Cloud Manager를 엽니다. **개요** 특정 프로그램에 대한 페이지입니다.
 
-   ![](/help/screens-cloud/assets/configure/screens-cp-1.png)
+   ![Cloud Manager의 개요 페이지에 대한 아이콘은 도구 모음의 맨 왼쪽에 표시됩니다.](/help/screens-cloud/assets/configure/screens-cp-1.png)
 
    >[!NOTE]
    >프로그램을 만들지 않은 경우 [Screens에 처음 as a Cloud Service 로그인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en). 이 항목에서는 Cloud Manager에서 Screens as a Cloud Service으로 프로그램을 추가하는 과정을 안내합니다.
 
 1. 에서 링크를 선택합니다. **환경** Screens Content Provider에 액세스할 수 있는 카드입니다.
 
-   ![](/help/screens-cloud/assets/configure/screens-cp-2.png)
+   ![Screens Content Provider에 액세스할 수 있는 환경 카드에서 강조 표시된 링크입니다.](/help/screens-cloud/assets/configure/screens-cp-2.png)
 
    Screens Content Provider에 로그인하면 이제 콘텐츠 재생에서 콘텐츠를 만들 수 있습니다.
 

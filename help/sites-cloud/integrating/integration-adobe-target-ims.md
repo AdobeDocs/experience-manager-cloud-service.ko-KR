@@ -2,7 +2,7 @@
 title: Adobe Target과 통합할 때 사용되는 IMS 구성
 description: Adobe Target과 통합할 때 사용되는 IMS 구성 알아보기
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 91%
@@ -113,7 +113,7 @@ Adobe Developer Console을 열고 AEM이 사용할 Adobe Target을 사용하여 
 <!--
 1. The creation is confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
 
-   ![](assets/integrate-target-ims-07.png)
+   ![integrate-target-ims-07](assets/integrate-target-ims-07.png)
 -->
 
 <!-- could not verify - only saw Adobe Target Classic -->

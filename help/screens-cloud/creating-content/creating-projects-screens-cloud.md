@@ -2,10 +2,10 @@
 title: Screens에서 프로젝트 만들기 as a Cloud Service
 description: Screens에서 프로젝트를 as a Cloud Service으로 만드는 방법에 대해 알아봅니다.
 exl-id: 89e3ac28-7537-413d-b63b-abd2bbae6cb7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 1%
+source-wordcount: '335'
+ht-degree: 2%
 
 ---
 
@@ -28,18 +28,18 @@ Screens as a Cloud Service에서 새 프로젝트를 구현하는 첫 번째 단
 
 1. 작업 표시줄의 오른쪽 위 모서리 근처에서 **스크린 프로젝트 만들기**.
 
-   ![](/help/screens-cloud/assets/create-content/create-screens-project1.png)
+   ![create-screens-project1](/help/screens-cloud/assets/create-content/create-screens-project1.png)
 
 1. 다음을 입력합니다. **제목** 의 프로젝트에서 **스크린 프로젝트 만들기** 대화 상자. 예를 들어, *FirstDigitalExperience*.
 
-   ![](/help/screens-cloud/assets/create-content/create-screens-project2.png)
+   ![create-screens-project2](/help/screens-cloud/assets/create-content/create-screens-project2.png)
 
    >[!NOTE]
    >다음 **이름** 필드는 다음에서 자동으로 채워집니다 **Screens 프로젝트 만들기** 선택한 제목을 기반으로 한 대화 상자
 
 1. **저장**&#x200B;을 클릭합니다. 다음과 같은 제목이 있는 Screens 프로젝트가 표시됩니다. *FirstDigitalExperience* Screens Content Provider에서 또한 Screens Content Provider에 이라는 두 개의 폴더가 있는 프로젝트가 표시됩니다. **위치** 및 **채널**.
 
-   ![](/help/screens-cloud/assets/create-content/create-screens-project3.png)
+   ![create-screens-project3](/help/screens-cloud/assets/create-content/create-screens-project3.png)
 
    이제 AEM Screens 프로젝트를 설정했으므로 프로젝트에 채널과 위치를 추가할 수 있습니다.
 
@@ -51,7 +51,7 @@ Screens as a Cloud Service의 기존 프로젝트를 삭제할 수 있습니다.
 1. 삭제할 프로젝트를 선택합니다.
 1. 작업 표시줄에서 을(를) 클릭합니다 **삭제**.
 
-   ![](/help/screens-cloud/assets/create-content/create-project5.png)
+   ![create-project5](/help/screens-cloud/assets/create-content/create-project5.png)
 
 1. 클릭 **삭제** 프로젝트 삭제를 확인합니다.
 
