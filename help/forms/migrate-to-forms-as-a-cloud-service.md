@@ -1,7 +1,7 @@
 ---
 title: AEM 6.5 Forms에서 로 마이그레이션하는 방법 [!DNL AEM Forms] as a Cloud Service 환경?
 description: as a Cloud Service으로 마이그레이션 여정 AEM 시작 | Adobe Experience Manager. 다음에서 마이그레이션 [!DNL AEM Forms] (온-프레미스 및 AMS 환경) [!DNL AEM Forms] as a Cloud Service 환경.
-keywords: 6.5 forms를 cloud service로, 6.5 forms를 cs로, 6.5 forms를 cloud service로 마이그레이션, 6.5 forms를 cloud service로 마이그레이션, 6.5 forms를 CS로 업그레이드, 6.5 forms를 CS로 이동, AEM 6.5를 CS로 업그레이드, AEM Forms 6.5를 Cloud Service으로 업그레이드, AEM을 cloud service로 마이그레이션, 여정을 AEMas a Cloud Service 로 마이그레이션 | ADOBE EXPERIENCE MANAGER
+Keywords: 6.5 forms to cloud service, 6.5 forms to cs, migrate 6.5 forms to CS, migrate 6.5 forms to cloud service, upgrade 6.5 forms to CS, move 6.5 forms to CS, upgrade AEM 6.5 to CS, AEM Forms 6.5 to Cloud Service, AEM form migration to cloud service, Migration Journey to AEM as a Cloud Service | Adobe Experience Manager.
 contentOwner: khsingh
 feature: Adaptive Forms
 feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
@@ -9,9 +9,9 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 8dc89bf4b20d12bdb380797b6e56db1a2ce6ce0a
+source-git-commit: d43e2d555a09f481900ec70e5e38bab42f4cc1d7
 workflow-type: tm+mt
-source-wordcount: '1632'
+source-wordcount: '1582'
 ht-degree: 5%
 
 ---
