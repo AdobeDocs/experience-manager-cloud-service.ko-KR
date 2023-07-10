@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 124b363fe341199fdc9b25d25bbf2a9bc8f87d87
+source-git-commit: e0bee5134bea71010cacf4bf16eac0baa3dee725
 workflow-type: tm+mt
-source-wordcount: '5868'
+source-wordcount: '6251'
 ht-degree: 3%
 
 ---
@@ -27,27 +27,26 @@ ht-degree: 3%
 >* 다음을 참조하십시오 [Dynamic Media Cloud Services 구성](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) Dynamic Media 구성 및 [Dynamic Media 문제 해결](/help/assets/dynamic-media/troubleshoot-dm.md).
 >
 
-
 1. **Dynamic Media 비디오 업로드** 다음을 수행합니다.
 
    * 나만의 비디오 인코딩 프로필을 만듭니다. 또는 사전 정의된 _응용 비디오 인코딩_ Dynamic Media과 함께 제공되는 프로필입니다.
 
       * [비디오 인코딩 프로필 만들기](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
       * 자세히 알아보기 [비디오 인코딩에 대한 우수 사례](#best-practices-for-encoding-videos).
+
    * 기본 소스 비디오를 업로드할 하나 이상의 폴더에 비디오 처리 프로필을 연결합니다.
 
       * [폴더에 비디오 프로필 적용](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
       * 자세히 알아보기 [디지털 자산 구성](/help/assets/organize-assets.md).
+
    * 기본 소스 비디오를 폴더에 업로드합니다. 비디오가 폴더에 추가되면 폴더에 할당한 비디오 처리 프로필에 따라 인코딩됩니다.
 
       * Dynamic Media은 최대 길이가 30분이고 최소 해상도가 25 x 25보다 큰 주로 짧은 형식의 비디오를 지원합니다.
       * 각각 최대 15GB의 비디오 파일을 업로드할 수 있습니다.
       * [비디오 업로드](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
       * 자세히 알아보기 [지원되는 입력 파일 형식](/help/assets/file-format-support.md).
+
    * 모니터링 방법 [비디오 인코딩이 진행 중입니다](#monitoring-video-encoding-and-youtube-publishing-progress) 자산 또는 워크플로우 보기에서.
-
-
-
 
 1. **Dynamic Media 비디오 관리** 다음 중 하나를 수행하여
 
@@ -55,21 +54,24 @@ ht-degree: 3%
 
       * [디지털 자산 구성](/help/assets/organize-assets.md)
       * [비디오 자산 검색](/help/assets/search-assets.md#custompredicates) 또는 [자산 검색 중](/help/assets/manage-digital-assets.md#search-assets)
+
    * 비디오 자산 미리 보기 및 게시
 
       * 소스 비디오와 비디오의 인코딩된 렌디션을 관련 썸네일과 함께 봅니다.
-         [비디오 미리 보기](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) 또는 [에셋 미리보기](/help/assets/dynamic-media/previewing-assets.md)
-         [비디오 표현물 관리](/help/assets/manage-digital-assets.md#managing-renditions)
+        [비디오 미리 보기](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) 또는 [에셋 미리보기](/help/assets/dynamic-media/previewing-assets.md)
+        [비디오 표현물 관리](/help/assets/manage-digital-assets.md#managing-renditions)
 
       * [뷰어 사전 설정 관리](/help/assets/dynamic-media/managing-viewer-presets.md)
       * [자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+
    * 비디오 메타데이터 작업
 
       * 제목, 설명, 태그 및 사용자 지정 메타데이터 필드와 같은 비디오의 속성을 편집합니다.
-         [비디오 속성 편집](/help/assets/manage-digital-assets.md#editing-properties)
+        [비디오 속성 편집](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [디지털 에셋에 대한 메타데이터 관리](/help/assets/manage-metadata.md)
       * [메타데이터 스키마](/help/assets/metadata-schemas.md)
+
    * 비디오 검토, 승인 및 주석 달기, 전체 버전 제어 유지
 
       * [비디오에 주석 달기](/help/assets/manage-video-assets.md#annotate-video-assets) 또는 [에셋에 주석 달기](/help/assets/manage-digital-assets.md#annotating)
@@ -80,26 +82,23 @@ ht-degree: 3%
       * [폴더 자산 검토](/help/assets/bulk-approval.md)
       * [프로젝트](/help/sites-cloud/authoring/projects/overview.md)
 
-
-
-
 1. **Dynamic Media 비디오 게시** 다음 중 하나를 수행합니다.
 
    * Experience Manager을 WCM(웹 컨텐츠 관리) 시스템으로 사용하는 경우 웹 페이지에 직접 비디오를 추가할 수 있습니다.
 
       * [웹 페이지에 비디오 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+
    * 타사 웹 컨텐츠 관리 시스템을 사용하는 경우 웹 페이지에 비디오를 연결하거나 포함할 수 있습니다.
 
       * URL을 사용하여 비디오 통합:
-         [웹 애플리케이션에 URL 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
+        [웹 애플리케이션에 URL 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
       * 웹 페이지에서 포함 코드를 사용하여 비디오 통합:
-         [웹 페이지에 비디오 뷰어 포함](/help/assets/dynamic-media/embed-code.md).
+        [웹 페이지에 비디오 뷰어 포함](/help/assets/dynamic-media/embed-code.md).
+
    * [비디오 보고서 생성](#viewing-video-reports).
 
    * [비디오에 캡션 추가](#adding-captions-to-video).
-
-
 
 ## Dynamic Media에서 비디오 작업 {#working-with-video-in-dynamic-media}
 
@@ -600,15 +599,15 @@ Dynamic Media은 캡션 파일을 JSON(JavaScript Object Notation) 형식으로 
 
    * 팝업 비디오 뷰어 경험을 위해 다음을 선택합니다. **[!UICONTROL URL]**. URL 대화 상자에서 을 선택하고 URL을 클립보드로 복사한 다음 URL을 지나 단순 텍스트 편집기로 이동합니다. 복사한 비디오의 URL을 다음 구문과 함께 추가합니다.
 
-      `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
+     `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
-      다음을 참고하십시오. `,1` 캡션 경로의 끝입니다. 경로에서 VTT 파일 이름 확장자 바로 다음에 나오는 를 로 설정하여 비디오 플레이어 바의 자막 버튼을 선택적으로 활성화(켜기)하거나 비활성화(끄기)할 수 있습니다 `,1` 또는 `,0`, 각각
+     다음을 참고하십시오. `,1` 캡션 경로의 끝입니다. 경로에서 VTT 파일 이름 확장자 바로 다음에 나오는 를 로 설정하여 비디오 플레이어 바의 자막 버튼을 선택적으로 활성화(켜기)하거나 비활성화(끄기)할 수 있습니다 `,1` 또는 `,0`, 각각
 
    * 임베드된 비디오 뷰어 환경을 보려면 다음을 선택하십시오. **[!UICONTROL 포함 코드]**. 포함 코드 대화 상자에서 을 선택하고 포함 코드를 클립보드에 복사한 다음 코드를 간단한 텍스트 편집기에 붙여넣습니다. 복사된 포함 코드를 다음 구문과 함께 추가합니다.
 
-      `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
+     `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
-      다음을 참고하십시오. `,1` 캡션 경로의 끝입니다. 경로에서 VTT 파일 이름 확장자 바로 다음에 나오는 를 로 설정하여 비디오 플레이어 바의 자막 버튼을 선택적으로 활성화(켜기)하거나 비활성화(끄기)할 수 있습니다 `,1` 또는 `,0`, 각각
+     다음을 참고하십시오. `,1` 캡션 경로의 끝입니다. 경로에서 VTT 파일 이름 확장자 바로 다음에 나오는 를 로 설정하여 비디오 플레이어 바의 자막 버튼을 선택적으로 활성화(켜기)하거나 비활성화(끄기)할 수 있습니다 `,1` 또는 `,0`, 각각
 
 ## 비디오에 챕터 마커 추가 {#adding-chapter-markers-to-video}
 
@@ -688,51 +687,49 @@ HTML5 비디오 뷰어를 사용하고 있으므로, 만든 챕터 파일이 Web
      </tbody>
    </table>
 
-<!--
 
-## About video thumbnails {#about-video-thumbnails}
 
-A video thumbnail is a reduced-size version of a video frame or an image asset representing the video to the customer. The thumbnail should serve to encourage a customer to select the video.
+## 비디오 썸네일 기본 정보 {#about-video-thumbnails}
 
-All videos in Experience Manager must have an associated thumbnail; you cannot delete a thumbnail without replacing it. By default, when you upload a video to Experience Manager, the first frame is used as the thumbnail. However, you can customize the thumbnail for branding purposes or visual search, for example. When you customize a video thumbnail, you can either play the video and pause on the frame you want to use, or you can select an image asset that you have already uploaded and *published* in your digital asset manager.
+비디오 썸네일은 고객에게 비디오를 나타내는 이미지 에셋 또는 비디오 프레임의 축소된 버전입니다. 썸네일은 고객이 비디오를 선택하도록 유도하는 역할을 해야 합니다.
 
-Note that a custom video thumbnail image that you select from a video is not extracted and saved in the DAM as a separate and distinct asset. However, a custom video thumbnail that you select from an existing image asset is saved to the JCR. The path of the selected asset gets stored under the video asset's node as in the following example path:
+Experience Manager의 모든 비디오에는 연결된 썸네일이 있어야 합니다. 썸네일을 바꾸지 않으면 썸네일을 삭제할 수 없습니다. 기본적으로 Experience Manager에 비디오를 업로드할 때 첫 번째 프레임이 썸네일로 사용됩니다. 그러나 예를 들어 브랜딩 목적 또는 시각적 검색을 위해 썸네일을 사용자 정의할 수 있습니다. 비디오 썸네일을 사용자 지정하면 비디오를 재생하고 사용할 프레임에서 일시 중지하거나 이미 업로드한 이미지 에셋을 선택하고 *게시됨* 을 참조하십시오.
 
-`/content/dam/*<folder_name*>/<*video_name*>/jcr:content/manualThumbnail`
+비디오에 대한 썸네일을 변경하면 비디오를 다시 처리할 때 Asset compute 서비스를 통한 썸네일 생성이 건너뜁니다.
 
-The ability to customize a video thumbnail is only available after you have applied a video profile to the folder where the video is located.
+비디오 축소판을 사용자 지정하는 기능은 비디오가 있는 폴더에 비디오 프로필을 적용한 후에만 사용할 수 있습니다.
 
-### Adding a custom video thumbnail {#adding-a-custom-video-thumbnail}
+### 사용자 지정 비디오 썸네일 추가 {#adding-a-custom-video-thumbnail}
 
-1. Be sure you have already done the following:
+1. 다음을 이미 수행했는지 확인합니다.
 
-    * Created a folder for your video assets.
-    * [Applied a video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
+   * 비디오 자산에 대한 폴더를 만들었습니다.
+   * [폴더에 비디오 프로필 적용됨](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
 
-    * [Uploaded your videos to the folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
+   * [비디오를 폴더에 업로드함](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 
-1. Navigate to an uploaded video asset whose thumbnail image you want to change.
-1. In asset selection mode either from **[!UICONTROL List View]** or **[!UICONTROL Card View]**, select the video asset.
-1. On the toolbar, select the **[!UICONTROL Properties** icon (a circle with an "i" in it).
-1. On the video's Properties page, select **[!UICONTROL Change Thumbnail]**.
-1. On the Change Thumbnail page, do one of the following:
+1. 썸네일 이미지를 변경하고자 하는 업로드된 비디오 자산으로 이동합니다.
+1. 자산 선택 모드에서 다음 중 하나를 수행합니다. **[!UICONTROL 목록 보기]** 또는 **[!UICONTROL 카드 보기]**&#x200B;비디오 자산을 선택합니다.
+1. 도구 모음에서 **[!UICONTROL 속성]** 아이콘(안에 &quot;i&quot;가 있는 원)
+1. 비디오의 속성 페이지에서 을 선택합니다. **[!UICONTROL 썸네일 변경]**.
+1. 썸네일 변경 페이지에서 다음 중 하나를 수행합니다.
 
-    * To use a frame from the video as the new thumbnail:
+   * 비디오의 프레임을 새 썸네일로 사용하려면 다음 작업을 수행하십시오.
 
-        * On the toolbar, select **[!UICONTROL Select Frame from video]**.
-        * Select the Play button, then select the Pause button on the frame you want to capture as the video's new thumbnail.
+      * 도구 모음에서 를 선택합니다. **[!UICONTROL 비디오에서 프레임 선택]**.
+      * 재생 버튼을 선택한 다음 비디오의 새 썸네일로 캡처할 프레임에서 일시 중지 버튼을 선택합니다.
 
-    * To use an image asset as the new thumbnail:
+   * 이미지 자산을 새 썸네일로 사용하려면 다음을 수행하십시오.
 
-        * On the toolbar, select **[!UICONTROL Select Thumbnail from Assets]**.
-        * Select **[!UICONTROL Select Thumbnail]**.
-        * Navigate to a previously uploaded and published image asset you want to use. Note that the asset will automatically be resized to serve as a thumbnail image for the video.
-        * Select the image asset, then select **[!UICONTROL Select]**.
+      * 도구 모음에서 를 선택합니다. **[!UICONTROL 에셋에서 썸네일 선택]**.
+      * 선택 **[!UICONTROL 썸네일 선택]**.
+      * 사용할 이전에 업로드되고 게시된 이미지 자산으로 이동합니다. 비디오의 썸네일 이미지 역할을 하도록 에셋의 크기가 자동으로 조정됩니다.
+      * 이미지 자산을 선택한 다음 을 선택합니다. **[!UICONTROL 선택]**.
 
-1. On the Change Thumbnail page, select **[!UICONTROL Save Change]**.
-1. On the video's Properties page, in the upper-right corner, select **[!UICONTROL Save & Close]**.
+1. Change Thumbnail 페이지에서 **[!UICONTROL 변경 내용 저장]**.
+1. 비디오의 속성 페이지에서 오른쪽 상단 모서리에서 을(를) 선택합니다. **[!UICONTROL 저장 및 닫기]**.
 
--->
+
 
 <!--
 
