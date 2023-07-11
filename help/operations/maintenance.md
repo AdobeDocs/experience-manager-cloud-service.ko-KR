@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service에서의 유지 관리 작업
 description: AEM as a Cloud Service에서의 유지 관리 작업
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 19a3ebd981a7a62fe78a9ec909547b6a70c55121
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 63%
@@ -44,7 +44,7 @@ ht-degree: 63%
   <tr>
     <td>버전 삭제</td>
     <td>Adobe</td>
-    <td>기존 환경(2023년 6월 1일 이전에 생성된 환경)의 경우 지우기는 비활성화되며 고객이 명시적으로 활성화하지 않는 한 향후 활성화되지 않습니다. 이 때 고객이 사용자 지정 값으로 환경을 구성할 수도 있습니다.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->새 환경(2023년 6월 1일부터 생성된 환경)은 기본적으로 아래 값으로 제거가 활성화되며, 고객은 사용자 지정 값으로 을 구성할 수 있습니다.
+    <td>기존 환경(2023년 9월 1일 이전에 생성된 환경)의 경우 지우기는 비활성화되며 고객이 명시적으로 활성화하지 않는 한 향후에는 활성화되지 않습니다. 이 경우 고객이 사용자 지정 값으로 환경을 구성할 수도 있습니다.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->새 환경(2023년 9월 1일부터 생성된 환경)은 기본적으로 아래 값으로 제거가 활성화되며, 고객은 사용자 지정 값으로 을 구성할 수 있습니다.
      <ol>
        <li>30일 넘는 구 버전 삭제</li>
        <li>지난 30일 이내 가장 최근의 5개 버전은 유지</li>
@@ -56,7 +56,7 @@ ht-degree: 63%
   <tr>
     <td>감사 로그 삭제</td>
     <td>Adobe</td>
-    <td>기존 환경(2023년 6월 1일 이전에 생성된 환경)의 경우 지우기는 비활성화되며 고객이 명시적으로 활성화하지 않는 한 향후 활성화되지 않습니다. 이 때 고객이 사용자 지정 값으로 환경을 구성할 수도 있습니다.<br><br> <!-- See above for the two line breaks -->새 환경(2023년 6월 1일부터 생성된 환경)은 기본적으로 <code>/content</code> 다음 동작에 따른 저장소의 노드:
+    <td>기존 환경(2023년 9월 1일 이전에 생성된 환경)의 경우 지우기는 비활성화되며 고객이 명시적으로 활성화하지 않는 한 향후에는 활성화되지 않습니다. 이 경우 고객이 사용자 지정 값으로 환경을 구성할 수도 있습니다.<br><br> <!-- See above for the two line breaks -->새 환경(2023년 9월 1일부터 생성된 환경)은 기본적으로 <code>/content</code> 다음 동작에 따른 저장소의 노드:
      <ol>
        <li>복제 감사의 경우, 3일 넘는 감사 로그 삭제</li>
        <li>DAM(애셋) 감사의 경우, 30일 넘는 감사 로그 삭제</li>
