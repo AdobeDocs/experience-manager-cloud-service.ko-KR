@@ -10,9 +10,9 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
+source-git-commit: 50f5b34fa9453fd6d8e85290f69194622afeb42c
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 0%
    >
    >서명 단계 구성 요소는 양식에 사용할 수 있는 전체 너비를 차지합니다. 서명 단계 구성 요소가 포함된 섹션에는 다른 구성 요소가 없는 것이 좋습니다.
 
-1. 콘텐츠 브라우저에서 을 누릅니다. **양식 컨테이너**&#x200B;을 누르고 **구성** ![](assets/configure.png) 아이콘. 속성 브라우저를 열고 적응형 양식 컨테이너 속성을 표시합니다. 다음으로 이동 **적응형 양식 컨테이너** > **전자 서명** 및 선택 취소 **Adobe Sign 활성화** 옵션을 선택합니다. 완료 탭 ![aem_forms_save](assets/aem_forms_save.png) 아이콘 을 클릭하여 변경 내용을 저장합니다.
+1. 콘텐츠 브라우저에서 을 누릅니다. **양식 컨테이너**&#x200B;을 누르고 **구성** ![구성 아이콘](assets/configure.png) 아이콘. 속성 브라우저를 열고 적응형 양식 컨테이너 속성을 표시합니다. 다음으로 이동 **적응형 양식 컨테이너** > **전자 서명** 및 선택 취소 **Adobe Sign 활성화** 옵션을 선택합니다. 완료 탭 ![aem_forms_save](assets/aem_forms_save.png) 아이콘 을 클릭하여 변경 내용을 저장합니다.
 
    >[!NOTE]
    >
