@@ -10,9 +10,9 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: 76f13cb4236b8c7eb515d647a1cede6fa2cf4799
+source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 완료 를 탭하면 ![aem_forms_save](assets/aem_forms_save.png) 아이콘을 클릭하면 서명을 편집할 수 없습니다. 서명을 편집하려면 현재 서명을 무시하고 위의 [페인트 브러쉬/키보드] 옵션을 사용하여 다시 서명해야 합니다.
 
-다음을 탭할 수 있습니다. **구성** ![](assets/configure.png) 아이콘을 클릭하여 스크리블 서명 캔버스의 가로/세로 비율을 설정합니다.
+다음을 탭할 수 있습니다. **구성** ![구성 아이콘](assets/configure.png) 아이콘을 클릭하여 스크리블 서명 캔버스의 가로/세로 비율을 설정합니다.
 * 스크리블 서명 캔버스의 종횡비가 1보다 작은 경우 지리적 위치 정보가 스크리블 서명 캔버스의 맨 아래에 추가됩니다.
 
 
@@ -46,6 +46,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >서명은 항상 PNG 형식으로 저장됩니다.
+>
 
 ## 스크리블 서명을 사용하도록 적응형 양식 구성 {#configure-an-adaptive-form-to-use-scribble-signature}
 

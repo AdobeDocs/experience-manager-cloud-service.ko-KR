@@ -3,9 +3,9 @@ title: AEM 6.5 Forms과 AEM Cloud Services의 차이점
 description: Experience Manager Forms 사용자이며 Adobe Experience Manager Forms as a Cloud Service으로 업그레이드하고자 하십니까? AEM 6.5 Forms과 AEM Cloud Services를 비교하고 Cloud Service으로 업그레이드하거나 마이그레이션하기 전에 가장 두드러진 변경 사항에 대해 알아봅니다.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 1d16797f741fc9032356564061f2b6743d4c7936
+source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1417'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Adobe Experience Manager Forms as a Cloud Service은 Adobe Experience Manager Fo
 
 * 개발자는 Cloud Service 및 로컬 개발 환경에 대한 코드를 공통적으로 유지 관리합니다 [git 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/cloud-manager-repositories.html). AEM Archetype을 기반으로 하는 git 저장소는 AEM as a Cloud Service 프로그램 생성 시 자동으로 생성됩니다.
 
-  ![](/help/forms/assets/git-repo-local-and-forms-cs.png)
+  ![AEM as a cloud service 프로그램에서 git 저장소 자동 생성](/help/forms/assets/git-repo-local-and-forms-cs.png)
 
 * Forms의 개발 흐름은 AEM Cloud Service용 AEM Archetype에 as a Cloud Service으로 맞춰집니다. 그러나 Adobe Experience Manager Maven 프로젝트가 AEM Cloud Service과 호환되도록 하려면 몇 가지 변경이 필요합니다. 높은 수준에서 AEM은 변경 가능한 콘텐츠와 변경 불가능한 콘텐츠 사이의 분할을 준수하기 위해 콘텐츠와 코드를 개별 하위 패키지로 분리해야 합니다. 사용 [저장소 현대화 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html) Adobe Experience Manager as a Cloud Service에 대해 정의된 프로젝트 구조와 호환될 수 있도록 콘텐츠와 코드를 개별 패키지로 분리하여 기존 프로젝트 패키지를 재구성했습니다.
 
