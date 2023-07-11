@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 1251f36ece4449d8be6a40f34421351161bf3b23
+source-git-commit: e1183791f543d17f98cb6c9ca0c513c8936ef477
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 19%
+source-wordcount: '251'
+ht-degree: 47%
 
 ---
 
@@ -13,54 +13,36 @@ ht-degree: 19%
 
 다음 섹션에서는 Experience Manager as a Cloud Service 현재 유지 관리 릴리스의 기술 릴리스 정보에 대해 간략히 소개합니다.
 
-## 릴리스 12549 {#release-12549}
+## 릴리스 12585 {#release-12585}
 
-다음은 2023년 7월 4일에 공개적으로 릴리스된 유지 보수 릴리스 12549에 대한 지속적인 개선 사항을 요약합니다. 이 유지 관리 릴리스는 이전 유지 관리 릴리스 12255의 업데이트입니다. 유지 관리 릴리스 12549은 두 가지 12441을 수정하는 데 도움이 됩니다.
+다음은 2023년 7월 11일에 공개적으로 릴리스된 유지 보수 릴리스 12585에 대한 지속적인 개선 사항을 요약했습니다. 이 유지 관리 릴리스는 이전 유지 관리 릴리스 12549의 업데이트입니다.
 
 2023.7.0 기능 활성화는 이 유지 관리 릴리스에 대한 전체 기능 세트를 제공합니다. 다음을 참조하십시오. [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) 추가 정보.
 
-### 향상된 기능 {#enhancements-12549}
+### 향상된 기능 {#enhancements-12585}
 
-- FORMS-5054: 모든 기능에 대한 지원을 추가했습니다. [조각상](https://opensource.adobe.com/acrobat-sign/acrobat_sign_events/webhookeventsagreements.html) Adobe Sign에서 지원합니다.
+- 일반 RDE 안정성 개선 사항(SKYOPS-61133, SKYOPS-55281, SKYOPS-61216 및 SKYOPS-61401)
+- DXML-12327: AEM 안내서: 기본 PDF 게시에서 언어 변수 지원
+- DXML-11518: AEM Guides: 기본 PDF 게시에서 향상된 메타데이터 지원
+- DXML-10093: AEM 안내서: 외부 데이터 소스에 연결하고 데이터를 dita 주제에 삽입할 수 있습니다
+- DXML-10699: AEM 안내서: 번역에서 XLIFF 형식 지원
+- DXML-10141: AEM Guides: PDF(기본 및 DITA-OT), HTML 및 사용자 지정 사전 설정 유형에 마이크로서비스 기반 게시를 사용하는 옵션
 
-### 해결된 문제 {#fixed-issues-12549}
+### 해결된 문제 {#fixed-issues-12585}
 
-- 접근성 관련된 다양한 업데이트
-- SITES-12688: 페이지 편집기: 논리 연산자 또는 에셋 파인더 검색에서 제대로 작동하지 않음
-- SITES-4951: 페이지 편집기: 페이지 편집기의 태그 검색에서 하위 태그를 찾을 수 없음
-- SITES-12465: 경험 조각: 경험 조각 구성 요소 대화 상자에서 화살표 키가 작동하지 않음
-- SITES-12893: 경험 조각: 경험 조각에 대한 순환 참조 유효성 검사 적용
-- SITES-12715: Experience Fragments: Experience Fragments 폴더에 적용된 클라우드 서비스 구성이 지속되지 않음
-- SITES-13097: 경험 조각: 경험 조각을 번역 프로젝트에 추가할 수 없음
-- SITES-13165: GraphQL: null 값 필터링을 위한 기본 동작 복원
-- SITES-12577: 링크 검사기: 변환기가 링크를 간헐적으로 다시 쓰지 않음
-- SITES-13559: MSM: 구성 요소를 롤아웃할 때 &quot;수정할 수 없음&quot; 예외가 발생합니다.
-- SITES-11757: MSM: 상위에서 롤아웃 구성 상속이 하위 페이지에 대해 다시 반환되지 않음
-- SITES-14073: 사이트 관리자: 내보낼 속성이 없음을 선택하면 CSV 보고서가 500으로 실패합니다
-- FORMS-7648: 숫자 상자 구성 요소의 최대 자릿수를 확인할 수 없습니다. 유효성 검사 스크립트가 작동하지 않습니다.
-- FORMS-8177: Forms 서비스가 활성화되면 `com.adobe.aem.formsndocuments.publish.AssetReferenceProvider Failed to retrieve asset dependencies` 오류가 발생했습니다.
-- FORMS-8300: 사용자가 작업을 연 후 위임하려고 하면 위임 응답이 사용자의 AEM 받은 편지함 UI를 여는 대신 작업을 다시 로드합니다.
-- FORMS-8500: IE 모드 옵션이 활성화된 Microsoft® Edge 브라우저에서 HTML5 Forms이 열리지 않습니다.
-- FORMS-8541: 적응형 Forms 렌더링 시 Null 포인터 예외가 발생합니다.
-- FORMS-8964: Google Chrome 또는 Mozilla Firefox의 Android™ 장치에서 양식을 열 때 텍스트 상자 구성 요소에 입력된 텍스트를 제거할 수 없습니다.
-- FORMS-9026: 사용자가 복잡하고 유효한 JSON 스키마를 기반으로 적응형 양식을 만들고 관련 JSON 스키마 필드를 적응형 Forms 편집기로 드래그하여 적응형 Forms 필드를 만들고 적응형 Forms 편집기 창을 새로 고치면 모든 필드가 삭제되고 적응형 Forms 편집기가 비어 있습니다.
-- FORMS-9263: 확인란 옵션의 표시 텍스트에 특수 문자가 포함되어 있는 경우 사용자는 이러한 확인란을 선택할 수 없습니다.
-- FORMS-8668: 양식의 PDF 미리 보기를 렌더링하는 동안 일부 필요하지 않은 Java™ 스택 덤프가 오류 로그에 표시됩니다. 그러나 양식을 렌더링하는 데에는 문제가 없습니다.
-- FORMS-8116: 규칙이 적응형 Forms 컨테이너 구성 요소에 적용되면 적용된 규칙이 저장되지 않습니다.
-- FORMS-7906: 적응형 양식이 AEM Sites 컨테이너 구성 요소에 추가되면 규칙 편집기를 열 수 없습니다.
-- FORMS-8846: 바인딩 참조 속성이 적응형 Forms 첨부 구성 요소에 대해 작동하지 않습니다.
-- FORMS-9072: 양식 조각을 만드는 동안 스키마를 검색할 때 검색 결과가 선택할 스키마를 반환하지 않습니다.
-- FORMS: AEM Forms 기능의 접근성을 개선하기 위해 접근성 관련 버그가 여러 개 수정되었습니다.
+- AEM 안내서: 다양한 기본 PDF 개선 사항 및 안정성 수정 사항
+- SKYOPS-53130: RDE에서 AC 도구 지원 개선
+- SKYOPS-57146: AEM 시작 시 Sling 교착 상태 수정
 
-### 알려진 문제 {#known-issues-12549}
+### 알려진 문제 {#known-issues-12585}
 
-- SKYOPS-61385: 최신 Dispatcher 업데이트를 적용하면 이전에 에서 자동으로 무시한 특정 잘못된 정규 표현식이 `libpcre1` 업데이트에서 더 이상 허용되지 않음 `libpcre2` 배포 중. 디스패처 구성 검사는 이러한 사항을 더 일찍 식별하도록 곧 업데이트됩니다.
+없음.
 
-### 임베드된 기술 {#embedded-tech-12549}
+### 임베드된 기술 {#embedded-tech-12585}
 
 | 기술 | 버전 | 링크 |
 |---|---|---|
-| AEM OAK | 1.50-T20230405052634-f9df4aa | [Oak API 1.50.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.50.0/index.html) |
-| AEM SLING API | 버전 2.27.0 | [Apache Sling API 2.27.0 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
+| AEM OAK | 1.52-T20230629133256-25c01b8 | [Oak API 1.52.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.52.0/index.html) |
+| AEM SLING API | 버전 2.27.2 | [Apache Sling API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 버전 1.4.20-1.4.0 | [HTML 템플릿 언어 사양](https://github.com/adobe/htl-spec) |
 | AEM 핵심 구성 요소 | 버전 2.23.0 | [AEM WCM 핵심 구성 요소](https://github.com/adobe/aem-core-wcm-components) |
