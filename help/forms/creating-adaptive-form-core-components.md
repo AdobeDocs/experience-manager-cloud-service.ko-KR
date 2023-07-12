@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 53997540cc469f4cc2ad747ca4e52b531a7b193e
+source-git-commit: 8d40f259e70ef73285aafcb736e1f9d720380f7d
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2250'
 ht-degree: 5%
 
 ---
@@ -126,7 +126,7 @@ ht-degree: 5%
 
    * 사용자 정의 메시지 또는 감사 메시지를 구성하려면 제출 시 옵션을 선택합니다. **[!UICONTROL 메시지 표시]** 옵션을 선택한 다음 **[!UICONTROL 메시지 콘텐츠]** 상자. 서식 있는 텍스트 상자입니다. 전체 화면 옵션을 사용하여 사용 가능한 모든 서식 있는 텍스트 항목을 볼 수 있습니다.
 
-## 스키마 또는 양식 데이터 모델 구성 {#configure-schema-or-data-model-for-form}
+## 적응형 양식에 대한 스키마 또는 양식 데이터 모델 구성{#configure-schema-or-data-model-for-form}
 
 양식 데이터 모델을 사용하여 사용자 작업에 따라 데이터를 보내고 받기 위해 양식을 데이터 소스에 연결할 수 있습니다. 양식을 JSON 스키마에 연결하여 사전 정의된 형식으로 제출된 데이터를 받을 수도 있습니다. 요구 사항에 따라 양식을 JSON 스키마 또는 양식 데이터 모델에 연결합니다.
 
