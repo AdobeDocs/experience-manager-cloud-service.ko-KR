@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service SDK
 description: AEM as a Cloud Service 소프트웨어 개발 키트 개요
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 33ba3e88a4116674c70c44a29273a04544b6b39b
 workflow-type: tm+mt
-source-wordcount: '1167'
-ht-degree: 1%
+source-wordcount: '1239'
+ht-degree: 2%
 
 ---
 
@@ -33,6 +33,10 @@ AEM as a Cloud Service SDK는 사용자 지정 코드를 빌드하고 배포하�
 * **아티팩트 배포**. 아티팩트가 로컬 서버에 배포됩니다.
 
 클라우드 환경에 배포할 때 Cloud Manager에서 동일한 단계를 실행합니다. 로컬에서 빌드를 수행하면 로컬 개발 및 테스트가 가능합니다. 개발자는 소스 제어를 커밋하고 Cloud Manager 배포를 트리거하기 전에 코드 또는 구조적 문제를 효율적으로 발견할 수 있으며, 이 작업에는 더 많은 시간이 걸릴 수 있습니다.
+
+>[!NOTE]
+>
+>AEM as a Cloud Service SDK는에서 지원하는 Java 배포 및 버전을 사용하여 빌드해야 합니다. [Cloud Manager의 빌드 환경](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). AEM as a Cloud Service 고객은 다음 위치에서 Oracle JDK를 다운로드할 수 있습니다. [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) Adobe Experience Manager 프로젝트에서 사용할 경우 Adobe의 라이선스 및 Oracle Java 기술에 대한 지원 약관으로 인해 Java 11 확장 지원이 2026년 9월까지 제공됩니다.
 
 ## AEM as a Cloud Service SDK 액세스 {#accessing-the-aem-as-a-cloud-service-sdk}
 
