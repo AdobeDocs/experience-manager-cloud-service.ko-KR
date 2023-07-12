@@ -3,9 +3,9 @@ title: AEM Sites 페이지에 적응형 양식을 추가하는 방법
 description: 적응형 양식을 간편하게 만들거나 AEM Sites 페이지에 추가하는 방법에 대해 알아보십시오. 양식을 웹 사이트에 통합하고 디지털 경험을 최적화하여 최대의 효과를 발휘할 수 있는 단계별 기술과 모범 사례에 대해 알아보십시오.
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: 6f07493714c68cb7c6e96a252c4ef1ff9d6ba9ac
+source-git-commit: 53997540cc469f4cc2ad747ca4e52b531a7b193e
 workflow-type: tm+mt
-source-wordcount: '3265'
+source-wordcount: '3232'
 ht-degree: 21%
 
 ---
@@ -200,13 +200,13 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
 1. 적응형 양식이 포함된 AEM 페이지 편집기 또는 경험 조각을 엽니다.
 1. 콘텐츠 트리를 열고 다음을 선택합니다. **[!UICONTROL 적응형 Forms 컨테이너]** 적응형 양식을 호스팅합니다. AEM Sites 페이지는 여러 적응형 Forms을 호스팅할 수 있습니다. 따라서 올바른 적응형 Forms 컨테이너를 신중하게 선택하십시오.
 1. 적응형 양식 컨테이너 속성을 클릭합니다 ![적응형 양식 컨테이너 속성](/help/forms/assets/configure-icon.svg) 아이콘. 제출 액션을 구성할 수 있는 적응형 양식 컨테이너 대화 상자가 열립니다.
-   ![렌치 아이콘을 클릭하여 적응형 양식 컨테이너 구성 요소에 대한 데이터 모델을 구성하려면 적응형 양식 컨테이너 대화 상자를 엽니다](/help/forms/assets/adaptive-forms-container.png)
+   ![렌치 아이콘을 클릭하여 적응형 양식 컨테이너 대화 상자를 열고 제출 액션을 구성합니다](/help/forms/assets/adaptive-forms-container.png)
 1. 요구 사항에 따라 제출 액션을 선택하고 구성합니다. 제출 액션에 대한 자세한 내용은 [적응형 양식 제출 액션](/help/forms/configuring-submit-actions.md)
 
 
 ## AEM Sites 페이지 또는 경험 조각에서 양식에 대한 스키마 또는 양식 데이터 모델 구성 {#configure-schema-or-data-model-for-form}
 
-양식 데이터 모델을 사용하여 사용자 작업에 따라 데이터를 보내고 받기 위해 양식을 데이터 소스에 연결할 수 있습니다. 양식을 JSON 스키마에 연결하여 사전 정의된 형식으로 제출된 데이터를 받을 수도 있습니다. 양식을 스키마 또는 양식 데이터 모델에 연결하기 전에:
+양식 데이터 모델을 사용하여 사용자 작업에 따라 데이터를 보내고 받기 위해 양식을 데이터 소스에 연결할 수 있습니다. 양식을 JSON 스키마에 연결하여 사전 정의된 형식으로 제출된 데이터를 받을 수도 있습니다. 요구 사항에 따라 양식을 JSON 스키마 또는 양식 데이터 모델에 연결합니다.
 
 * [JSON 스키마 만들기 및 환경에 업로드](/help/forms/adaptive-form-json-schema-form-model.md)  또는,
 * [양식 데이터 모델 만들기](/help/forms/create-form-data-models.md)
@@ -216,7 +216,7 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
 1. 적응형 양식이 포함된 AEM 페이지 편집기 또는 경험 조각을 엽니다.
 1. 콘텐츠 트리를 열고 다음을 선택합니다. **[!UICONTROL 적응형 Forms 컨테이너]** 적응형 양식을 호스팅합니다. AEM Sites 페이지는 여러 적응형 Forms을 호스팅할 수 있습니다. 따라서 올바른 적응형 Forms 컨테이너를 신중하게 선택하십시오.
 1. 적응형 양식 컨테이너 속성을 클릭합니다 ![적응형 양식 컨테이너 속성](/help/forms/assets/configure-icon.svg) 아이콘. 데이터 모델을 구성하는 적응형 양식 컨테이너 대화 상자가 열립니다.
-   ![렌치 아이콘을 클릭하여 적응형 양식 컨테이너 구성 요소에 대한 데이터 모델을 구성하려면 적응형 양식 컨테이너 대화 상자를 엽니다](/help/forms/assets/form-data-model-adaptive-forms-container.png)
+   ![렌치 아이콘을 클릭하여 적응형 양식 컨테이너 대화 상자를 열고 적응형 양식에 대한 데이터 모델을 구성합니다](/help/forms/assets/form-data-model-adaptive-forms-container.png)
 1. 요구 사항에 따라 JSON 스키마 또는 양식 데이터 모델을 선택하고 구성합니다. 제출 액션에 대한 자세한 내용은 [적응형 양식 제출 액션](/help/forms/configuring-submit-actions.md).
 
    * 다음을 선택하면 **[!UICONTROL 양식 모델]** 옵션, 사용 **[!UICONTROL 양식 데이터 모델 선택]** 미리 구성된 양식 데이터 모델을 선택하는 옵션입니다.
@@ -238,7 +238,7 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
 1. 적응형 양식이 포함된 AEM 페이지 편집기 또는 경험 조각을 엽니다.
 1. 콘텐츠 트리를 열고 다음을 선택합니다. **[!UICONTROL 적응형 Forms 컨테이너]** 적응형 양식을 호스팅합니다. AEM Sites 페이지는 여러 적응형 Forms을 호스팅할 수 있습니다. 따라서 올바른 적응형 Forms 컨테이너를 신중하게 선택하십시오.
 1. 적응형 양식 컨테이너 속성을 클릭합니다 ![적응형 양식 컨테이너 속성](/help/forms/assets/configure-icon.svg) 아이콘. 데이터 모델을 구성하는 적응형 양식 컨테이너 대화 상자가 열립니다.
-   ![렌치 아이콘을 클릭하여 적응형 양식 컨테이너 구성 요소에 대한 데이터 모델을 구성하려면 적응형 양식 컨테이너 대화 상자를 엽니다](/help/forms/assets/adaptive-forms-container.png)
+   ![렌치 아이콘을 클릭하여 적응형 양식 컨테이너 대화 상자를 열고 미리 채우기 서비스를 구성합니다.](/help/forms/assets/adaptive-forms-container.png)
 1. 양식 데이터 모델 선택. 를 엽니다. **[!UICONTROL 기본]** 탭. 미리 채우기 서비스에서 다음을 선택합니다. **[!UICONTROL 양식 데이터 모델 미리 채우기 서비스]**.
 1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다. 이제 적응형 양식이 양식 데이터 모델 미리 채우기를 사용하도록 구성되었습니다. 이제 다음을 사용할 수 있습니다. [규칙 편집기](rule-editor.md) 을 클릭하여 양식의 필드를 미리 채우는 규칙을 만듭니다.
 
@@ -249,13 +249,12 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
 
 1. 적응형 양식이 포함된 AEM 페이지 편집기 또는 경험 조각을 엽니다.
 1. 콘텐츠 트리를 열고 다음을 선택합니다. **[!UICONTROL 적응형 Forms 컨테이너]** 적응형 양식을 호스팅합니다. AEM Sites 페이지는 여러 적응형 Forms을 호스팅할 수 있습니다. 따라서 올바른 적응형 Forms 컨테이너를 신중하게 선택하십시오.
-1. 적응형 양식 컨테이너 속성을 클릭합니다 ![적응형 양식 컨테이너 속성](/help/forms/assets/configure-icon.svg) 아이콘. 데이터 모델을 구성하는 적응형 양식 컨테이너 대화 상자가 열립니다.
+
 1. 를 엽니다. **[!UICONTROL 제출]** 탭.
 
-   * 리디렉션 URL을 구성하려면 제출 시 옵션에서 URL로 리디렉션 옵션을 선택하고 절대 주소 또는 AEM Sites 페이지의 리디렉션 URL 또는 상대 경로를 제공합니다.
+   * 리디렉션 URL을 구성하려면 제출 시 옵션에서 **[!UICONTROL URL로 리디렉션]** 옵션을 클릭하고 AEM Sites 페이지를 검색 및 선택하거나 외부 페이지의 URL을 입력합니다.
 
-   * 사용자 정의 메시지 또는 감사 메시지를 구성하려면 제출 시 옵션에서 메시지 표시 옵션을 선택하고 메시지 콘텐츠 상자에 메시지를 제공합니다. 서식 있는 텍스트 상자입니다. 전체 화면 옵션을 사용하여 사용 가능한 모든 서식 있는 텍스트 항목을 볼 수 있습니다.
-
+   * 사용자 정의 메시지 또는 감사 메시지를 구성하려면 제출 시 옵션을 선택합니다. **[!UICONTROL 메시지 표시]** 옵션을 선택한 다음 **[!UICONTROL 메시지 콘텐츠]** 상자. 서식 있는 텍스트 상자입니다. 전체 화면 옵션을 사용하여 사용 가능한 모든 서식 있는 텍스트 항목을 볼 수 있습니다.
 
 ## 다음 보기
 
