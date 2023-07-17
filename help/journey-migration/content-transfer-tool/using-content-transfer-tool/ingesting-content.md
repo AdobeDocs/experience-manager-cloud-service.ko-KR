@@ -2,10 +2,10 @@
 title: 대상에 콘텐츠 수집
 description: 대상에 콘텐츠 수집
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 3f526b8096125fbcf13b73fe82b2da0f611fa6ca
 workflow-type: tm+mt
-source-wordcount: '1707'
-ht-degree: 13%
+source-wordcount: '1925'
+ht-degree: 11%
 
 ---
 
@@ -155,7 +155,7 @@ Release Orchestrator는 자동으로 업데이트를 적용하여 환경을 최�
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
-### 추가 수집 실패
+### 고유성 제약 조건 위반으로 인한 추가 수집 실패
 
 의 일반적인 원인 [추가 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 실패는 노드 id의 충돌입니다. 이 오류를 식별하려면 Cloud Acceleration Manager UI를 사용하여 수집 로그를 다운로드하고 다음과 같은 항목을 찾습니다.
 
@@ -166,6 +166,18 @@ AEM의 각 노드에는 고유한 UUID가 있어야 합니다. 이 오류는 수
 타겟의 노드가 수집과 후속 추가 수집 사이에서 이동된 경우에도 이 문제가 발생할 수 있습니다.
 
 이 충돌은 수동으로 해결해야 합니다. 콘텐츠에 익숙한 사용자는 두 노드 중 삭제할 노드를 참조하는 다른 콘텐츠를 염두에 두고 결정해야 합니다. 해결책은 불쾌한 노드 없이 다시 추가 추출이 수행될 것을 요구할 수 있다.
+
+### 참조된 노드를 삭제할 수 없어 추가 수집 실패
+
+다음의 또 다른 일반적인 원인 [추가 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 실패는 대상 인스턴스의 특정 노드에 대한 버전 충돌입니다. 이 오류를 식별하려면 Cloud Acceleration Manager UI를 사용하여 수집 로그를 다운로드하고 다음과 같은 항목을 찾습니다.
+>java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: 참조된 노드를 삭제할 수 없음: 8a2289f4-b904-4bd0-8410-15e41e0976a8
+
+이 문제는 대상의 노드가 수집과 후속 추가 수집 사이에서 수정되어 새 버전이 만들어지는 경우 발생할 수 있습니다. 수집에 &quot;버전 포함&quot;이 활성화되어 있으면 타겟에 버전 내역 및 기타 콘텐츠에서 참조되는 최신 버전이 있으므로 충돌이 발생할 수 있습니다. 수정 버전 노드가 참조되기 때문에 수집 프로세스에서 수정 버전 노드를 삭제할 수 없습니다.
+
+해결책은 불쾌한 노드 없이 다시 추가 추출이 수행될 것을 요구할 수 있다. 또는 문제가 되는 노드의 소규모 마이그레이션 세트를 만들지만 &quot;버전 포함&quot;은 비활성화되어 있습니다.
+
+우수 사례에 따르면 지우기=false 및 &quot;버전 포함&quot;=true로 수집을 실행해야 하는 경우 마이그레이션 여정이 완료될 때까지 타겟의 콘텐츠를 가능한 한 적게 수정하는 것이 중요합니다. 그렇지 않으면 이러한 충돌이 발생할 수 있습니다.
+
 
 ## 다음 단계 {#whats-next}
 
