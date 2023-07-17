@@ -17,7 +17,7 @@ ht-degree: 8%
 >id="aemcloud_ctt_precopy"
 >title="대형 콘텐츠 저장소 처리"
 >abstract="콘텐츠 전송 활동의 추출 및 수집 단계를 크게 가속화하여 콘텐츠를 AEM as a Cloud Service로 이동하기 위해 CTT(콘텐츠 전송 도구)는 선택 사항인 사전 복사 단계로 AzCopy를 사용할 수 있습니다. 이 사전 단계가 구성되면 추출 단계에서 AzCopy는 Amazon S3 또는 Azure Blob 저장소에서 마이그레이션 세트 Blob 저장소로 Blob을 복사합니다. 수집 단계에서 AzCopy는 마이그레이션 세트 Blob 저장소의 Blob을 대상 AEM as a Cloud Service Blob 저장소로 복사합니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html#setting-up-pre-copy-step" text="사전 복사 단계로 AzCopy 시작"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ko-KR#setting-up-pre-copy-step" text="사전 복사 단계로 AzCopy 시작"
 
 CTT(콘텐츠 전송 도구)를 사용하여 많은 Blob을 복사하는 데 며칠이 걸릴 수 있습니다.
 컨텐츠 전송 활동의 추출 및 수집 단계 속도를 높여 컨텐츠를 AEM as a Cloud Service으로 이동하려면 CTT에서 다음을 사용할 수 있습니다 [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) 선택적 사전 복사 단계입니다. 이 사전 복사 단계는 소스 AEM 인스턴스가 Amazon S3, Azure Blob Storage 데이터 저장소 또는 파일 데이터 저장소를 사용하도록 구성된 경우 사용할 수 있습니다. 사전 복사 단계는 첫 번째 전체 추출 및 수집에 가장 효과적입니다. 그러나 전체 프로세스에 시간이 추가될 수 있으므로 후속 추가 작업에 사전 복사를 사용하지 않는 것이 좋습니다(추가 크기가 200GB 미만인 경우). 이 사전 단계가 구성되면 추출 단계에서 AzCopy는 Amazon S3, Azure Blob Storage 또는 파일 데이터 저장소의 Blob을 마이그레이션 세트 Blob 저장소로 복사합니다. 수집 단계에서 AzCopy는 마이그레이션 세트 Blob 저장소의 Blob을 대상 AEM as a Cloud Service Blob 저장소로 복사합니다.

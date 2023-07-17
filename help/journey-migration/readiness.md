@@ -15,7 +15,7 @@ ht-degree: 6%
 >id="aemcloud_cam_planning"
 >title="전환 계획"
 >abstract="Cloud Service로의 전환 여정을 시작하기에 앞서 AEM as a Cloud Service에 익숙해지십시오. 주목할 만한 변경 사항과 대체되거나 더 이상 사용하지 않는 기능을 검토해 보십시오."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="Best Practices Analyzer"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=ko-KR" text="Best Practices Analyzer"
 
 이 AEM as a Cloud Service 마이그레이션 여정 단계에서는 AEMas a Cloud Service 에 익숙해집니다. 도입된 주목할 만한 변경 사항을 검토하고 클라우드로의 성공적인 마이그레이션을 계획하는 데 필요한 사항을 이해할 수 있습니다.
 
@@ -149,8 +149,8 @@ AEM as a Cloud Service은 AEM 프로젝트 관리를 위한 많은 새로운 기
   </tr>
   <tr>
     <td>인증 변경 사항</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=ko-KR">AEM as a Cloud Service에 대한 IMS 지원</td>
-    <td>Cloud Service으로 이동하기 전에 작성자 및 게시 모두에서 SAML 2.0 통합을 이전에 사용 중이었던 경우 주요 변경 사항은 AEM as a Cloud Service Author가 Adobe IMS와만 통합된다는 것입니다. 그러나 AEM as a Cloud Service 게시 계층은 여전히 SAML 또는 기타 인증 통합을 사용할 수 있습니다. AEMas a Cloud Service 에서는 작성자, 관리자 및 개발자 사용자에 대해서만 IMS 인증 지원을 제공합니다. IMS 인증은 사이트 방문자와 같은 고객 사이트의 외부 최종 사용자를 지원하지 않습니다.</td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en">AEM as a Cloud Service에 대한 IMS 지원</td>
+    <td>Cloud Service으로 이동하기 전에 작성자 및 게시 모두에서 SAML 2.0 통합을 이전에 사용 중이었던 경우 주요 변경 사항은 AEM as a Cloud Service Author가 Adobe IMS와만 통합된다는 것입니다. 그러나 AEM as a Cloud Service 게시 계층은 여전히 SAML 또는 기타 인증 통합을 사용할 수 있습니다. AEM as a Cloud Service에서는 작성자, 관리 및 개발 사용자에 대해서만 IMS 인증 지원 서비스를 제공합니다. IMS 인증은 사이트 방문자와 같은 고객 사이트의 외부 최종 사용자를 지원하지 않습니다.</td>
   </tr>
 </tbody>
 </table>
