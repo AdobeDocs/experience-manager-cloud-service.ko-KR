@@ -8,10 +8,10 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: af26c42ddd1594e5622e9b32334ce5508d097582
+source-git-commit: 88227693b7dfc3cbd30751718dc85e55ee67bb96
 workflow-type: tm+mt
-source-wordcount: '4174'
-ht-degree: 98%
+source-wordcount: '4177'
+ht-degree: 99%
 
 ---
 
@@ -129,6 +129,7 @@ ht-degree: 98%
    + 마이그레이션 도구 릴리스 정보 {#migration-tools}
       + [최신 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + 2023 {#2023}
+         + [2023.6.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2023-06-0.md)
          + [2023.3.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2023-03-0.md)
       + 2022 {#2022}
          + [2022.12.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2022-12-0.md)
@@ -208,9 +209,9 @@ ht-degree: 98%
          + [구현 단계](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
          + [실행 단계](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
    + 클라우드 전환 도구 {#cloud-migration}
-      + Best Practices Analyzer {#best-practices-analyzer}
+      + 모범 사례 분석기 {#best-practices-analyzer}
          + [개요](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
-         + [Best Practices Analyzer 사용](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
+         + [모범 사례 분석기 사용](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
       + 콘텐츠 트랜스포머 {#content-transformer}
          + [개요](/help/journey-migration/content-transformer/overview.md)
          + [콘텐츠 트랜스포머 사용](/help/journey-migration/content-transformer/using.md)
@@ -236,7 +237,7 @@ ht-degree: 98%
       + [통합 경험](/help/journey-migration/unified-experience.md)
       + [저장소 현대화 도구](/help/journey-migration/refactoring-tools/repo-modernizer.md)
       + [인덱스 변환기](/help/journey-migration/refactoring-tools/index-converter.md)
-      + [자산 워크플로 마이그레이션](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
+      + [자산 워크플로우 마이그레이션](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
       + [AEM Dispatcher 변환기](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
       + [AEM 현대화 도구](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + Sites {#sites}
@@ -266,7 +267,7 @@ ht-degree: 98%
          + [경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)
          + [CSV로 내보내기](/help/sites-cloud/authoring/fundamentals/csv-export.md)
          + [구성 요소](/help/sites-cloud/authoring/fundamentals/components.md)
-         + [모바일 디바이스용 작성](/help/sites-cloud/authoring/fundamentals/mobile.md)
+         + [모바일 장치용 작성](/help/sites-cloud/authoring/fundamentals/mobile.md)
          + [액세스 가능한 콘텐츠 제작 (WCAG 2.1 적합성)](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
          + [문제 해결](/help/sites-cloud/authoring/fundamentals/troubleshooting.md)
          + [키보드 단축키](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
@@ -283,7 +284,7 @@ ht-degree: 98%
          + [프로젝트를 사용하여 작업](/help/sites-cloud/authoring/projects/overview.md)
          + [프로젝트 관리](/help/sites-cloud/authoring/projects/managing.md)
          + [작업](/help/sites-cloud/authoring/projects/tasks.md)
-         + [프로젝트 워크플로를 사용하여 작업](/help/sites-cloud/authoring/projects/workflows.md)
+         + [프로젝트 워크플로우를 사용하여 작업](/help/sites-cloud/authoring/projects/workflows.md)
       + 론치 {#launches}
          + [론치를 사용하여 작업](/help/sites-cloud/authoring/launches/overview.md)
          + [론치 만들기](/help/sites-cloud/authoring/launches/creating.md)
@@ -291,10 +292,10 @@ ht-degree: 98%
          + [론치 편집](/help/sites-cloud/authoring/launches/editing.md)
          + [타임워프를 사용하여 론치 미리보기](/help/sites-cloud/authoring/launches/preview.md)
          + [론치 홍보](/help/sites-cloud/authoring/launches/promoting.md)
-      + 워크플로 {#workflows}
-         + [워크플로를 사용하여 작업](/help/sites-cloud/authoring/workflows/overview.md)
-         + [페이지에 워크플로 적용](/help/sites-cloud/authoring/workflows/applying.md)
-         + [워크플로에 참여](/help/sites-cloud/authoring/workflows/participating.md)
+      + 워크플로우 {#workflows}
+         + [워크플로우를 사용하여 작업](/help/sites-cloud/authoring/workflows/overview.md)
+         + [페이지에 워크플로우 적용](/help/sites-cloud/authoring/workflows/applying.md)
+         + [워크플로우에 참여](/help/sites-cloud/authoring/workflows/participating.md)
       + 개인 맞춤화 {#personalization}
          + [개인 맞춤화 개요](/help/sites-cloud/authoring/personalization/overview.md)
          + [ContextHub 데이터를 사용하여 페이지 미리보기](/help/sites-cloud/authoring/personalization/contexthub.md)
@@ -338,7 +339,7 @@ ht-degree: 98%
             + [git 저장소 액세스 정보 가져오기](/help/journey-sites/quick-site/retrieve-access.md)
             + [사이트 테마 맞춤화](/help/journey-sites/quick-site/customize-theme.md)
             + [맞춤화된 테마 배포](/help/journey-sites/quick-site/deploy-theme.md)
-      + [워크플로 관리](/help/sites-cloud/administering/workflows-administering.md)
+      + [워크플로우 관리](/help/sites-cloud/administering/workflows-administering.md)
       + 재사용 등급 {#reusing-content}
          + [MSM 및 번역](/help/sites-cloud/administering/msm-and-translation.md)
          + 다중 사이트 관리자 {#msm}
@@ -460,8 +461,8 @@ ht-degree: 98%
       + [Dynamic Media 설정](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Dynamic Media를 사용하여 작업](/help/assets/dynamic-media/dynamic-media.md)
       + [Dynamic Media 구성](/help/assets/dynamic-media/config-dm.md)
-      + [선택 사항 - Dynamic Media, 일반 설정 구성](/help/assets/dynamic-media/dm-general-settings.md)
-      + [선택 사항 - Dynamic Media, 게시 설정 구성](/help/assets/dynamic-media/dm-publish-settings.md)
+      + [옵션 - Dynamic Media, 일반 설정 구성](/help/assets/dynamic-media/dm-general-settings.md)
+      + [옵션 - Dynamic Media, 게시 설정 구성](/help/assets/dynamic-media/dm-publish-settings.md)
       + [Dynamic Media 문제 해결](/help/assets/dynamic-media/troubleshoot-dm.md)
       + [Dynamic Media 별칭 계정 구성](/help/assets/dynamic-media/dm-alias-account.md)
       + [Dynamic Media에서의 접근성](/help/assets/dynamic-media/accessibility-dm.md)
@@ -477,7 +478,7 @@ ht-degree: 98%
       + [Dynamic Media의 방식으로 CDN 캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
       + [Dynamic Media Classic의 방식으로 CDN 캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
       + [스마트 이미징](/help/assets/dynamic-media/imaging-faq.md)
-      + [클라이언트측 디바이스 픽셀 비율을 갖는 스마트 이미징](/help/assets/dynamic-media/client-side-dpr.md)
+      + [클라이언트측 장치 픽셀 비율을 갖는 스마트 이미징](/help/assets/dynamic-media/client-side-dpr.md)
       + [Dynamic Media 자산 전송](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Dynamic Media의 핫링크 보호 활성화](/help/assets/dynamic-media/hotlink-protection.md)
       + [3D 지원](/help/assets/dynamic-media/assets-3d.md)
@@ -505,7 +506,7 @@ ht-degree: 98%
       + [콘텐츠 FAQ의 HTTP2 게재](/help/assets/dynamic-media/http2faq.md)
       + [Flash 뷰어 서비스 종료](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML 뷰어 서비스 종료](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
-   + 자산 보기 작업 {#assets-view}
+   + Assets 보기 작업 {#assets-view}
       + [소개](/help/assets/assets-view-introduction.md)
       + [시작](/help/assets/get-started-assets-view.md)
       + [내 작업 영역](/help/assets/my-workspace-assets-view.md)
@@ -518,7 +519,7 @@ ht-degree: 98%
       + [자산 메타데이터 관리](/help/assets/metadata-assets-view.md)
       + [자산 공유](/help/assets/share-links-for-assets-view.md)
       + [컬렉션 관리](/help/assets/manage-collections-assets-view.md)
-      + [에셋, 폴더 및 컬렉션 보기](/help/assets/manage-notifications-assets-view.md)
+      + [자산, 폴더 및 컬렉션 보기](/help/assets/manage-notifications-assets-view.md)
       + [보고서 관리](/help/assets/manage-reports-assets-view.md)
       + [태그 관리](/help/assets/tagging-management-assets-view.md)
    + Adobe Workfront와 통합 {#integrations}
@@ -571,7 +572,7 @@ ht-degree: 98%
             + [AEM Sites 페이지에 적응형 양식 - 핵심 구성 요소 생성](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [기계 번역 또는 인간 번역을 사용하여 적응형 양식 번역](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [리디렉션 페이지 또는 감사 메시지 구성](/help/forms/configure-redirect-page-or-thank-you-message.md)
-            + [반복 가능한 섹션이 있는 양식 만들기](/help/forms/create-forms-repeatable-sections.md)
+            + [반복 가능한 섹션으로 양식 만들기](/help/forms/create-forms-repeatable-sections.md)
       + 적응형 양식 작성 - 기초 구성 요소 {#authoring-adaptive-forms-foundation-components}
          + PDF 양식을 적응형 양식으로 변환 {#afcs}
             + [자동 양식 전환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -598,7 +599,7 @@ ht-degree: 98%
             + [개별 적응형 양식 구성 요소에 인라인 CSS 스타일 적용](/help/forms/inline-style-adaptive-forms.md)
          + 적응형 양식에 규칙 추가 및 표현식 사용 {#add-rules-and-use-expressions-in-an-adaptive-form}
             + [적응형 양식에 규칙 추가](/help/forms/rule-editor.md)
-            + [규칙 편집기의 호출 서비스를 사용하여 사용자 지정 오류 처리기 추가](/help/forms/add-custom-error-handler-adaptive-forms.md)
+            + [규칙 편집기의 호출 서비스를 사용하여 사용자 정의 오류 핸들러 추가](/help/forms/add-custom-error-handler-adaptive-forms.md)
          + [!DNL Adobe Sign] 사용 {#use-adobe-sign}
             + [Adobe Sign을 사용하여 적응형 양식에 전자 서명](/help/forms/working-with-adobe-sign.md)
          + 제출 액션 및 메타데이터 제출 구성 {#configure-submit-actions-and-metadata-submission}
@@ -616,9 +617,9 @@ ht-degree: 98%
             + [접근성 높은 적응형 양식 만들기](/help/forms/creating-accessible-adaptive-forms.md)
          + [Forms 포털 구성](/help/forms/configure-forms-portal.md)
          + [검토 만들기 및 관리](/help/forms/create-reviews-forms.md)
-   + 양식 중심 워크플로 {#create-form-centric-workflows}
-      + [워크플로 + 단계 참조에서 양식 중심 단계 사용](/help/forms/aem-forms-workflow-step-reference.md)
-      + [양식 중심 워크플로에서 변수 사용](/help/forms/variable-in-aem-workflows.md)
+   + 양식 중심 워크플로우 {#create-form-centric-workflows}
+      + [워크플로우 + 단계 참조에서 양식 중심 단계 사용](/help/forms/aem-forms-workflow-step-reference.md)
+      + [양식 중심 워크플로우에서 변수 사용](/help/forms/variable-in-aem-workflows.md)
       + [[Out of Office] 옵션 사용](/help/forms/configure-out-of-office-settings.md)
    + 커뮤니케이션 API {#using-communications}
       + [커뮤니케이션 API 소개](/help/forms/aem-forms-cloud-service-communications-introduction.md)
@@ -687,7 +688,7 @@ ht-degree: 98%
       + [서드파티 상거래 솔루션](/help/commerce-cloud/integrating/third-party.md)
       + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
    + AEM Storefront {#storefront}
-      + [시작하기](/help/commerce-cloud/getting-started.md)
+      + [시작](/help/commerce-cloud/getting-started.md)
       + 작성 {#authoring}
          + [상거래 경험](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
          + [제품 관리실](/help/commerce-cloud/authoring/product-cockpit.md)
@@ -760,7 +761,7 @@ ht-degree: 98%
          + [AEM Assets API를 통해 콘텐츠를 업데이트하는 방법](/help/journey-headless/developer/update-your-content.md)
          + [결합 방법](/help/journey-headless/developer/put-it-all-together.md)
          + [Headless 애플리케이션 실행 방법](/help/journey-headless/developer/go-live.md)
-         + [선택 사항 - AEM을 통해 단일 페이지 애플리케이션을 제작하는 방법](/help/journey-headless/developer/create-spa.md)
+         + [옵션 - AEM을 통해 단일 페이지 애플리케이션을 제작하는 방법](/help/journey-headless/developer/create-spa.md)
          + [개발자 포털 (추가 리소스)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
       + Headless 콘텐츠 설계 여정 {#architect}
          + [AEM Headless 콘텐츠 설계 여정 개요](/help/journey-headless/architect/overview.md)
