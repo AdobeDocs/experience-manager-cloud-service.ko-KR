@@ -3,9 +3,9 @@ title: AEM Sites 페이지에 적응형 양식을 추가하는 방법
 description: 적응형 양식을 만들거나 AEM Sites 페이지에 추가하는 방법을 알아봅니다. 또한 웹 사이트에 양식을 통합하는 이점 및 다양한 방법에 대해 알아봅니다.
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: 05401630484fa881da1304b6d0301670248b9889
+source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
 workflow-type: tm+mt
-source-wordcount: '3224'
+source-wordcount: '3214'
 ht-degree: 21%
 
 ---
@@ -265,5 +265,4 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
 
 ## 관련 문서 {#related-article}
 
-* [적응형 양식 기반의 독립형 핵심 구성 요소 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
-
+* [적응형 양식 기반의 독립형 핵심 구성 요소 만들기](/help/forms/creating-adaptive-form-core-components.md)

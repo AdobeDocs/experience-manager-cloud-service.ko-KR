@@ -5,14 +5,14 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 8d40f259e70ef73285aafcb736e1f9d720380f7d
+source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
 workflow-type: tm+mt
-source-wordcount: '2250'
-ht-degree: 5%
+source-wordcount: '2246'
+ht-degree: 6%
 
 ---
 
-# 적응형 양식 만들기(핵심 구성 요소) {#creating-an-adaptive-form-core-components}
+# 적응형 양식 만들기 {#creating-an-adaptive-form-core-components}
 
 적응형 Forms을 사용하면 매력적인 반응형, 동적 및 적응형 양식을 만들 수 있습니다. AEM Forms은 적응형 Forms을 신속하게 만들 수 있는 비즈니스 사용자 친화적 마법사를 제공합니다. 마법사에는 미리 구성된 템플릿, 스타일, 필드 및 제출 옵션을 손쉽게 선택하여 적응형 양식을 만들 수 있는 빠른 탭 탐색 기능이 있습니다.
 
@@ -44,7 +44,7 @@ ht-degree: 5%
 * **권한**: 사용자 추가 [!DNL forms-users] 그룹입니다. 의 멤버 [!DNL forms-users] 그룹은 적응형 양식을 만들 수 있는 권한이 있습니다. 양식별 사용자 그룹의 자세한 목록은 [그룹 및 권한](forms-groups-privileges-tasks.md).
 
 
-## 적응형 양식 만들기(핵심 구성 요소) {#create-an-adaptive-form-core-components}
+## 적응형 양식 만들기  {#create-an-adaptive-form-core-components}
 
 1. 에 로그인 [!DNL Experience Manager Forms] 작성자 인스턴스. 클라우드 인스턴스 또는 로컬 개발 인스턴스일 수 있습니다.
 
