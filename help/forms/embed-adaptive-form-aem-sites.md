@@ -4,14 +4,20 @@ seo-title: Hwo to add an Adaptive Form to an AEM Sites page?
 description: 적응형 Forms -Embed 구성 요소를 사용하여 AEM Sites 페이지에 적응형 Forms을 추가하거나 임베드하여 AEM Sites 페이지를 종료하지 않고 양식을 작성하고 제출할 수 있습니다.
 feature: Adaptive Forms
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 0%
+source-wordcount: '1174'
+ht-degree: 1%
 
 ---
 
 # AEM 사이트 페이지에 적응형 양식 포함 {#embed-an-adaptive-form-to-aem-sites-page}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html) |
+| AEM as a Cloud Service | 이 문서 |
+
 
 ## 개요 {#overview}
 

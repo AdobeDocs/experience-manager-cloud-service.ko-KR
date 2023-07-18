@@ -3,14 +3,20 @@ title: 데이터베이스를 연결하는 방법 [!DNL AEM Forms] as a Cloud Ser
 seo-title: AEM Forms Data Integration
 description: 에서 RESTful 웹 서비스, SOAP 기반 웹 서비스 및 OData 서비스에 데이터를 검색하고 저장할 수 있습니다. [!DNL AEM Forms] as a Cloud Service. 이 서비스는 데이터를 검색, 테스트, 유효성 검사 및 다양한 유형의 데이터 소스로 전송하는 전용 도구를 제공합니다.
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 1%
+source-wordcount: '577'
+ht-degree: 3%
 
 ---
 
 # 데이터 소스를 Cloud Service에 연결 {#aem-forms-data-integration}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html) |
+| AEM as a Cloud Service | 이 문서 |
+
 
 ![데이터 통합](do-not-localize/data-integeration.png)
 

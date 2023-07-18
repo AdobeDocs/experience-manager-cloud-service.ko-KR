@@ -2,10 +2,10 @@
 title: 적응형 양식에서 반복성(핵심 구성 요소)
 description: 패널 구성 요소의 반복 기능을 사용하여 적응형 양식에서 유사한 섹션을 반복합니다.
 role: Architect, Developer, Admin, User
-source-git-commit: bf45e7b935c3e57c2ecf77d9391abda80ee4a761
+source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
 workflow-type: tm+mt
 source-wordcount: '1410'
-ht-degree: 1%
+ht-degree: 6%
 
 ---
 
@@ -97,6 +97,7 @@ ht-degree: 1%
    * 패널 삭제 단추를 만들려면 다음을 지정합니다 `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
 
    **완료**&#x200B;를 클릭합니다.
+>[!VIDEO](https://video.tv.adobe.com/v/3421620/adaptive-forms-repeatable-sections)
 
 >[!NOTE]
 >

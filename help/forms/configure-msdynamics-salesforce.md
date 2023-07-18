@@ -2,14 +2,19 @@
 title: 적응형 양식을 위한 기본 양식 데이터 모델을 사용하여 Microsoft Dynamics 365 및 Salesforce를 구성하는 방법
 description: Microsoft Dynamics 365 및 Salesforce를 적응형 양식과 통합하는 방법을 알아봅니다.
 exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 1%
+source-wordcount: '957'
+ht-degree: 2%
 
 ---
 
-# [!DNL Microsoft Dynamics 365]및[!DNL Salesforce]클라우드 서비스 구성 {#configure-azure-storage}
+# [!DNL Microsoft Dynamics 365]및[!DNL Salesforce]Cloud Service 구성 {#configure-azure-storage}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
+| AEM as a Cloud Service | 이 문서 |
 
 [[!DNL Experience Manager Forms] 데이터 통합](data-integration.md) 다음을 제공합니다 [!DNL Microsoft Dynamics 365] 및 [!DNL Salesforce] 적응형 양식을 즉시 사용할 수 있는 양식 데이터 모델과 통합하는 클라우드 서비스 그런 다음 적응형 Forms은 와 상호 작용할 수 있습니다. [!DNL Microsoft Dynamics 365] 및 [!DNL Salesforce] 비즈니스 워크플로를 활성화하는 서버입니다. 예:
 
@@ -30,11 +35,11 @@ ht-degree: 1%
 
 * [연결된 OAuth 활성화 만들기 [!DNL Salesforce] 애플리케이션](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&amp;type=5). 연결된 을(를) 만드는 경우 [!DNL Salesforce] 응용 프로그램에서 콜백 URL을 다음 형식으로 지정합니다.
 
-   ```
-   https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
-   ```
+  ```
+  https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
+  ```
 
-   여기서 서버 및 포트는 의 호스트 이름과 포트 번호를 나타냅니다. [!DNL AEM Forms] 서버입니다.
+  여기서 서버 및 포트는 의 호스트 이름과 포트 번호를 나타냅니다. [!DNL AEM Forms] 서버입니다.
 
 * 연결된 을(를) 만드는 동안 [!DNL Salesforce] 응용 프로그램, 지정 `full` 및 `offline_access` 를 OAuth 범위 값으로 사용합니다.
 
@@ -66,11 +71,11 @@ A [!DNL Salesforce] 양식 데이터 모델은 [!DNL AEM Forms] 서버 [Experien
 
 * [다음에 대한 애플리케이션 등록 [!DNL Microsoft Dynamics 365] azure Active Directory 사용](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/walkthrough-register-app-azure-active-directory). 연결된 을(를) 만드는 경우 [!DNL Microsoft Dynamics 365] 응용 프로그램에서 다음 형식으로 회신 URL을 지정합니다.
 
-   ```
-   https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
-   ```
+  ```
+  https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
+  ```
 
-   여기서 서버 및 포트는 의 호스트 이름과 포트 번호를 나타냅니다. [!DNL AEM Forms] 서버입니다.
+  여기서 서버 및 포트는 의 호스트 이름과 포트 번호를 나타냅니다. [!DNL AEM Forms] 서버입니다.
 
 * 클라이언트 ID(애플리케이션 ID라고도 함) 및 연결된 애플리케이션의 클라이언트 암호 값을 기록해 두십시오.
 

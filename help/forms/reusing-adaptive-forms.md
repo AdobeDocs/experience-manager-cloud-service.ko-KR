@@ -4,14 +4,19 @@ seo-title: Reuse metadata properties of an Adaptive Form
 description: 기존 적응형 양식을 재사용하여 새 적응형 Forms을 만들 수 있습니다.
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 2%
+source-wordcount: '554'
+ht-degree: 4%
 
 ---
 
 # 적응형 양식의 메타데이터 속성 재사용 {#reusing-adaptive-forms}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/reusing-adaptive-forms.html) |
+| AEM as a Cloud Service | 이 문서 |
 
 기존 적응형 양식의 일부 속성을 사용하여 새 적응형 양식을 생성하려면 복사-붙여넣기 기능을 사용하면 됩니다. 또한 원하는 폴더 경로에 새 적응형 양식을 붙여넣을 수 있습니다. 모든 메타데이터 속성이 복제되고 XFA 및 XSD 기반 적응형 Forms에 대한 XFA 및 XSD도 복사됩니다.
 

@@ -5,14 +5,20 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1017'
 ht-degree: 1%
 
 ---
 
 # 소극적 로드 옵션이 있는 대용량 양식의 성능 향상{#improve-performance-of-large-forms-with-lazy-loading}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/lazy-loading-adaptive-forms.html) |
+| AEM as a Cloud Service | 이 문서 |
+
 
 ## 소극적 로드 소개 {#introduction-to-lazy-loading}
 
@@ -27,17 +33,17 @@ ht-degree: 1%
 * **조각 식별 및 만들기**
 소극적 로드를 위해 적응형 양식 조각만 구성할 수 있습니다. 조각은 적응형 양식 외부에 있는 독립형 세그먼트로, 여러 양식에서 재사용할 수 있습니다. 따라서 소극적 로드를 구현하는 첫 번째 단계는 양식의 논리적 섹션을 식별하고 조각으로 변환하는 것입니다. 처음부터 조각을 만들거나 기존 양식 패널을 조각으로 저장할 수 있습니다.
 
-   <!--For more information about creating fragments, see [Adaptive Form Fragments](adaptive-form-fragments.md).-->
+  <!--For more information about creating fragments, see [Adaptive Form Fragments](adaptive-form-fragments.md).-->
 
 * **글로벌 값 식별 및 표시**
 Forms 기반 트랜잭션에는 동적 요소가 포함되어 사용자로부터 관련 데이터를 캡처하고 이를 처리하여 양식 채우기 경험을 단순화합니다. 예를 들어 양식에 다른 조각의 필드 B의 유효성을 결정하는 값이 조각 X에 필드 A가 있습니다. 이 경우 조각 X가 지연 로드로 표시된 경우 조각 X가 로드되지 않은 경우에도 필드 B의 유효성을 검사하기 위해 필드 A의 값을 사용할 수 있어야 합니다. 이를 위해 필드 A를 글로벌로 표시하여 조각 X가 로드되지 않을 때 필드 B의 유효성 검사에 해당 값을 사용할 수 있도록 할 수 있습니다.
 
-   필드 값을 전역으로 만드는 방법에 대한 자세한 내용은 [레이지 로드 구성](lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
+  필드 값을 전역으로 만드는 방법에 대한 자세한 내용은 [레이지 로드 구성](lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
 
 * **필드의 가시성을 제어하는 규칙 작성**
 Forms에는 모든 사용자 및 조건에 적용할 수 없는 일부 필드 및 섹션이 포함되어 있습니다. Forms 작성자 및 개발자는 가시성 또는 표시 숨기기 규칙을 사용하여 사용자 입력에 따라 가시성을 제어합니다. 예를 들어, Office 주소 필드는 Employment Status 필드에서 실업을 선택한 사용자에게 양식으로 표시되지 않습니다. 규칙 작성에 대한 자세한 내용은 [규칙 편집기 사용](rule-editor.md).
 
-   느리게 로드된 조각에서 가시성 규칙을 사용하여 조건부 필드가 필요한 경우에만 표시할 수 있습니다. 또한 느리게 로드된 조각의 가시성 표현식에서 참조하도록 조건부 필드를 전역으로 표시합니다.
+  느리게 로드된 조각에서 가시성 규칙을 사용하여 조건부 필드가 필요한 경우에만 표시할 수 있습니다. 또한 느리게 로드된 조각의 가시성 표현식에서 참조하도록 조건부 필드를 전역으로 표시합니다.
 
 ## 레이지 로드 구성 {#configuring-lazy-loading}
 
@@ -81,4 +87,4 @@ Forms에는 모든 사용자 및 조건에 적용할 수 없는 일부 필드 �
 * 필드의 전역적으로 사용 가능한 속성을 사용하여 지연 로드 패널에 있는 필드의 값을 양식의 다른 모든 패널에서 사용할 수 있도록 합니다.
 * 필드가 조각 간에 전역적으로 표시되는지 여부에 관계없이 레이지 패널 내의 필드 참조 값을 전달하지 마십시오.
 * 다음 클릭 표현식을 사용하여 패널에 표시되는 모든 것을 재설정하려면 패널 재설정 기능을 사용하십시오.\
-   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;}).resetData()
+  guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;}).resetData()

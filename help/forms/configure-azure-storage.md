@@ -2,14 +2,17 @@
 title: Azure 스토리지를 구성하는 방법
 description: 양식을 Azure 스토리지 서버와 통합하는 방법을 알아봅니다.
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 10284b1ac6fbad2e7f6231603c3dd60b6e404299
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '582'
 ht-degree: 1%
 
 ---
 
 # [!DNL Azure]스토리지 구성 {#configure-azure-storage}
+
+
+![데이터 통합](assets/data-integeration.png)
 
 [[!DNL Experience Manager Forms] 데이터 통합](data-integration.md) 는 을(를) 제공합니다 [!DNL Azure] 양식을 와 통합하기 위한 스토리지 구성 [!DNL Azure] 스토리지 서비스. 양식 데이터 모델을 사용하여 와 상호 작용하는 적응형 Forms을 만들 수 있습니다 [!DNL Azure] 비즈니스 워크플로를 활성화하는 서버입니다. 예:
 

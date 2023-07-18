@@ -2,14 +2,19 @@
 title: Experience Manager [!DNL AEM Forms] as a Cloud Service 아키텍처
 description: 의 아키텍처 이해 [!DNL AEM Forms] 플랫폼의 확장성, 복원력 및 성능 측면에 대해 as a Cloud Service으로 알아볼 수 있습니다.
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 4%
+source-wordcount: '1065'
+ht-degree: 5%
 
 ---
 
 # [!DNL AEM] Forms as a Cloud Service 아키텍처 {#architecture}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/aem-forms-architecture-deployment.html) |
+| AEM as a Cloud Service | 이 문서 |
 
 [!DNL Adobe Experience Manager Forms] as a Cloud Service은 기업이 복잡한 디지털 양식 및 통신을 생성, 관리, 게시 및 업데이트하면서 제출된 데이터를 백엔드 프로세스, 비즈니스 규칙 및 외부 데이터 저장소에 데이터를 저장하는 클라우드 기반 솔루션입니다. 확장됩니다 [!DNL Adobe Experience Manager as a Cloud Service]. 확장, 배포, 환경 및 기타 인프라에 대한 자세한 내용은 [의 아키텍처에 대한 소개 [!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html).
 
@@ -91,7 +96,7 @@ Forms은 Blob Store, 데이터베이스 또는 스토리지 서비스와 같은 
 
 ### Cloud Manager
 
-Cloud Manager는 의 필수 구성 요소입니다. [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html). 고객의 운영 및 개발자 담당자를 위한 단일 진입점입니다. AEM 프로그램 및 환경을 관리할 수 있는 곳입니다. Cloud Manager는 다음과 같은 AEM as a Cloud Service의 주요 구성 요소를 만들고 구성할 수 있는 셀프서비스 포털로 발전해 왔습니다.
+Cloud Manager는 의 필수 구성 요소입니다. [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=ko-KR). 고객의 운영 및 개발자 담당자를 위한 단일 진입점입니다. AEM 프로그램 및 환경을 관리할 수 있는 곳입니다. Cloud Manager는 다음과 같은 AEM as a Cloud Service의 주요 구성 요소를 만들고 구성할 수 있는 셀프서비스 포털로 발전해 왔습니다.
 
 * 프로그램 만들기 및 관리
 * 프로그램 내에서 AEM 환경 만들기 및 관리

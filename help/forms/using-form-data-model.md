@@ -5,14 +5,20 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 0%
+source-wordcount: '1030'
+ht-degree: 2%
 
 ---
 
 # 양식 데이터 모델 사용 {#use-form-data-model}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html) |
+| AEM as a Cloud Service | 이 문서 |
+
 
 ![데이터 통합](do-not-localize/data-integeration.png)
 
@@ -26,8 +32,7 @@ ht-degree: 0%
 양식 데이터 모델은 다음과 같은 작업에 사용할 수 있는 JSON 스키마의 확장입니다.
 
 * [적응형 Forms 및 조각 만들기](#create-af)
-
-   <!--* [Create interactive communications and building blocks like text, list, and condition fragments](#create-ic)-->
+  <!--* [Create interactive communications and building blocks like text, list, and condition fragments](#create-ic)-->
 * [샘플 데이터로 미리 보기](#preview-ic)
 * [양식 데이터 모델 서비스 사용](#prefill)
 * [제출된 적응형 양식 데이터를 데이터 소스에 다시 쓰기](#write-af)

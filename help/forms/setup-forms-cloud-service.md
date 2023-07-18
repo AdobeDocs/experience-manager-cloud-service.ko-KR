@@ -2,14 +2,20 @@
 title: 설정 방법 [!DNL AEM Forms] as a Cloud Service 환경?
 description: 설정 및 구성 방법 알아보기 [!DNL AEM Forms] as a Cloud Service 환경
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '613'
-ht-degree: 16%
+source-wordcount: '634'
+ht-degree: 17%
 
 ---
 
 # 에 온보드 [!DNL AEM Forms] as a Cloud Service {#overview}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) |
+| AEM as a Cloud Service | 이 문서 |
+
 
 ## 성향 결정 {#personas-aem-forms-project}
 

@@ -2,14 +2,19 @@
 title: AEM Forms을 Adobe Analytics과 통합하는 방법
 seo-title: Learn how to integrate AEM Forms with Adobe Analytics.
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1687'
-ht-degree: 0%
+source-wordcount: '1707'
+ht-degree: 1%
 
 ---
 
 # [!DNL Adobe Analytics]와 통합  {#integrate-aem-forms-with-adobe-analytics}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
+| AEM as a Cloud Service | 이 문서 |
 
 AEM Forms은 와 통합됩니다. [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) 을 사용하여 게시된 양식에 대한 성능 지표를 캡처하고 추적할 수 있습니다. 이러한 지표를 분석하는 목표는 비즈니스 사용자가 최종 사용자 동작에 대한 통찰력을 얻고 데이터 캡처 경험을 최적화할 수 있도록 하는 것입니다. 적응형 Forms용 Adobe Analytics을 통해 로그인한 사용자와 로그인하지 않은(익명의) 사용자의 행동을 포착하고 추적할 수 있습니다.
 
@@ -140,7 +145,7 @@ AEM Forms을 구성하려면 다음 단계를 수행하십시오. [Adobe Analyti
 
    * **[!UICONTROL 변수 지우기]**: 이벤트가 한 번만 등록되도록 데이터 추적을 지우려면 이 작업 유형을 사용하십시오. [!DNL Adobe Analytics].
 
-      권장되는 접근 방법은 **[!UICONTROL 변수 설정]** 작업 유형을 사용하여 이벤트 및 데이터 요소를 구성한 다음 **[!UICONTROL 비콘 보내기]** 데이터를 보낸 다음 **[!UICONTROL 변수 지우기]** 데이터 추적을 지웁니다.
+     권장되는 접근 방법은 **[!UICONTROL 변수 설정]** 작업 유형을 사용하여 이벤트 및 데이터 요소를 구성한 다음 **[!UICONTROL 비콘 보내기]** 데이터를 보낸 다음 **[!UICONTROL 변수 지우기]** 데이터 추적을 지웁니다.
 
 1. 다음에서 **[!UICONTROL Prop]** 섹션에서 드롭다운 목록에서 사용할 수 있는 보고서 세트 옵션을 를 사용하여 정의된 데이터 요소와 매핑합니다. [데이터 요소 구성](#configure-data-elements).
 

@@ -3,14 +3,19 @@ title: 적응형 Forms의 레이아웃 기능
 seo-title: Layout capabilities of Adaptive Forms
 description: 다양한 디바이스에서 적응형 Forms의 레이아웃 및 모습은 레이아웃 설정의 적용을 받습니다. 다양한 레이아웃과 적용 방법을 이해합니다.
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 0%
+source-wordcount: '799'
+ht-degree: 1%
 
 ---
 
 # 적응형 Forms의 레이아웃 기능 {#layout-capabilities-of-adaptive-forms}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
+| AEM as a Cloud Service | 이 문서 |
 
 [!DNL Adobe Experience Manager] 최종 사용자에게 동적 경험을 제공하는 사용하기 쉬운 적응형 Forms을 만들 수 있습니다. 양식 레이아웃은 적응형 양식에 항목 또는 구성 요소가 표시되는 방식을 제어합니다.
 
@@ -68,7 +73,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![적응형 Forms에서 아코디언 레이아웃을 사용하는 반복 가능한 패널](assets/accordion-layout.png)
 
-### [!UICONTROL 탭 레이아웃 - 왼쪽에 탭이 나타납니다. ]{#tabbed-layout-tabs-appear-on-the-left}
+### [!UICONTROL 탭 레이아웃 - 왼쪽에 탭이 나타납니다.]{#tabbed-layout-tabs-appear-on-the-left}
 
 이 레이아웃을 사용하여 **[!UICONTROL 패널 적응형 양식]** 탭 탐색이 있는 패널의 구성 요소입니다. 탭은 패널 콘텐츠의 왼쪽에 배치됩니다.
 
@@ -102,7 +107,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![양식 머리글에 패널 제목이 있는 모바일 레이아웃](assets/mobile-layout1.png)
 
-### [!UICONTROL 양식 헤더에 패널 제목이 없는 레이아웃 ]{#layout-without-panel-titles-in-the-form-header}
+### [!UICONTROL 양식 헤더에 패널 제목이 없는 레이아웃]{#layout-without-panel-titles-in-the-form-header}
 
 이 레이아웃은 이름에서 알 수 있듯이 패널 제목 없이 탐색 메뉴와 탐색 막대만 표시합니다. 이 레이아웃은 탐색에 다음 및 이전 아이콘도 제공합니다.
 

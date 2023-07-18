@@ -3,14 +3,19 @@ title: 워크플로우에서 다른 사용자에게 워크플로우를 할당하
 description: Forms 중심 워크플로를 사용하면 적응형 Forms 기반 워크플로를 신속하게 구축할 수 있습니다. Adobe Sign을 사용하여 문서에 전자 서명하고, 양식 기반 비즈니스 프로세스를 만들고, 데이터를 검색하여 여러 데이터 소스로 보내고, 전자 메일 알림을 보낼 수 있습니다
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '7189'
+source-wordcount: '7209'
 ht-degree: 1%
 
 ---
 
 # Forms 중심 AEM 워크플로 - 단계 참조 {#forms-centric-workflow-on-osgi-step-reference}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
+| AEM as a Cloud Service | 이 문서 |
 
 워크플로우 모델을 사용하여 비즈니스 논리를 자동화된 반복 프로세스로 변환합니다. 모델은 일련의 단계를 정의하고 실행하는 데 도움이 됩니다. 워크플로가 일시적인지 또는 여러 리소스를 사용하는지 여부와 같은 모델 속성을 정의할 수도 있습니다. 다음을 수행할 수 있습니다. [비즈니스 논리를 달성하기 위해 모델에 다양한 AEM Workflow 단계 포함](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem).
 
@@ -45,7 +50,7 @@ Forms 중심 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 작�
 * **[!UICONTROL 설명]**: 작업에서 수행되는 작업에 대한 설명입니다. 이 정보는 공유 개발 환경에서 작업할 때 다른 프로세스 개발자에게 유용합니다.
 
 * **[!UICONTROL 썸네일 경로]**: 작업 썸네일 경로. 경로를 지정하지 않으면 적응형 양식 기본 썸네일이 표시되고 기록 문서의 경우 기본 아이콘이 표시됩니다.
-* **[!UICONTROL 워크플로 단계]**: 워크플로우에는 여러 단계가 있을 수 있습니다. 이러한 단계는 AEM 받은 편지함에 표시됩니다. 모델의 속성([사이드 킥] > [페이지] > [페이지 속성] > [단계])에서 이러한 단계를 정의할 수 있습니다.
+* **[!UICONTROL 워크플로 단계]**: 워크플로우에는 여러 단계가 있을 수 있습니다. 이러한 단계는 AEM 받은 편지함에 표시됩니다. 모델의 속성([Sidekick] > [페이지] > [페이지 속성] > [단계])에서 이러한 단계를 정의할 수 있습니다.
 * **[!UICONTROL 우선 순위]**: 선택한 우선 순위가 AEM 받은 편지함에 표시됩니다. 사용 가능한 옵션은 높음, 중간 및 낮음입니다. 기본값은 Medium입니다.
 * **[!UICONTROL 기한]**: 작업이 지연됨으로 표시된 후 경과된 일 또는 시간을 지정합니다. 다음을 선택하는 경우 **[!UICONTROL 끔]**&#x200B;을 입력하면 작업이 기한 초과로 표시되지 않습니다. 작업 기한이 지난 후 특정 작업을 수행할 시간 초과 핸들러를 지정할 수도 있습니다.
 

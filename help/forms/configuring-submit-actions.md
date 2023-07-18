@@ -2,14 +2,19 @@
 title: 적응형 양식에 대한 제출 액션을 구성하는 방법
 description: 적응형 양식은 여러 제출 액션을 제공합니다. 제출 액션은 제출 후 적응형 양식의 처리 방법을 정의합니다. 기본 제공 제출 액션을 사용하거나 직접 만들 수 있습니다.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 921dc0f109b1faaa6d53086c4ca29627cb30bef8
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '3133'
-ht-degree: 2%
+source-wordcount: '3153'
+ht-degree: 3%
 
 ---
 
 # 적응형 양식 제출 액션 {#configuring-the-submit-action}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
+| AEM as a Cloud Service | 이 문서 |
 
 사용자가 를 클릭하면 제출 작업이 트리거됩니다. **[!UICONTROL 제출]** 적응형 양식의 단추입니다. 적응형 Forms은 즉시 사용할 수 있는 몇 가지 제출 액션을 제공합니다. 즉시 사용할 수 있는 제출 작업은 다음과 같습니다.
 
@@ -93,7 +98,7 @@ ht-degree: 2%
 
     &quot;
     
-    안녕하세요, ${customer_Name} 님,
+    안녕하세요, ${customer_Name},
     
     다음은 기본 배송 주소로 설정됩니다.
     ${customer_Name},
@@ -110,7 +115,6 @@ ht-degree: 2%
 >
 > * 필드가 적응형 양식의 서로 다른 패널에 배치된 경우에도 모든 양식 필드에는 서로 다른 요소 이름이 있어야 합니다.
 > * AEM as a Cloud Service을 사용하려면 아웃바운드 메일을 암호화해야 합니다. 기본적으로 아웃바운드 이메일은 비활성화됩니다. 활성화하려면 지원 티켓을 다음으로 제출하십시오. [액세스 요청 중](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
-
 
 이메일에 첨부 파일과 기록 문서(DoR)를 포함할 수도 있습니다. 활성화하려면 **[!UICONTROL 기록 문서 첨부]** 옵션을 선택하고 적응형 양식을 구성하여 기록 문서(DoR)를 생성합니다. 옵션을 활성화하여 적응형 양식 속성에서 기록 문서를 생성할 수 있습니다.
 
@@ -198,7 +202,6 @@ AEM Forms을 Microsoft® Sharepoint 스토리지에 연결하려면
    >* 기본적으로, `forms-ootb-storage-adaptive-forms-submission` 은(는) 선택한 SharePoint 사이트에 있습니다.
    >* 폴더를 다음으로 만들기 `forms-ootb-storage-adaptive-forms-submission`에 아직 없는 경우 `Documents` 다음을 클릭하여 선택한 SharePoint 사이트의 라이브러리 **폴더 만들기**.
 
-
 이제 적응형 양식의 제출 작업에 이 SharePoint Sites 구성을 사용할 수 있습니다.
 
 ### 적응형 양식에서 SharePoint 구성 사용 {#use-sharepoint-configuartion-in-af}
@@ -210,7 +213,6 @@ AEM Forms을 Microsoft® Sharepoint 스토리지에 연결하려면
    >
    > * 동일하게 선택 [!UICONTROL 구성 컨테이너] SharePoint 스토리지를 만든 적응형 양식용.
    > * 없는 경우 [!UICONTROL 구성 컨테이너] 을(를) 선택한 다음 글로벌을 선택합니다. [!UICONTROL 스토리지 구성] 제출 작업 등록 정보 창에 폴더가 나타납니다.
-
 
 1. 선택 **제출 액션** 다음으로: **[!UICONTROL SharePoint에 제출]**.
    ![Sharepoint GIF](/help/forms/assets/sharedrive-video.gif)
@@ -257,7 +259,6 @@ AEM Forms을 Microsoft® OneDrive 저장소에 연결하려면:
    >* 기본적으로, `forms-ootb-storage-adaptive-forms-submission` 이(가) OneDrive 컨테이너에 있습니다.
    > * 폴더를 다음으로 만들기 `forms-ootb-storage-adaptive-forms-submission`를 클릭해도 표시되지 않는 경우 **폴더 만들기**.
 
-
 이제 적응형 양식의 제출 작업에 이 OneDrive 저장소 구성을 사용할 수 있습니다.
 
 ### 적응형 양식에서 OneDrive 구성 사용 {#use-onedrive-configuartion-in-af}
@@ -269,7 +270,6 @@ AEM Forms을 Microsoft® OneDrive 저장소에 연결하려면:
    >
    > * 동일하게 선택 [!UICONTROL 구성 컨테이너] OneDrive 저장소를 만든 적응형 양식용.
    > * 없는 경우 [!UICONTROL 구성 컨테이너] 을(를) 선택한 다음 글로벌을 선택합니다. [!UICONTROL 스토리지 구성] 제출 작업 등록 정보 창에 폴더가 나타납니다.
-
 
 1. 선택 **제출 액션** 다음으로: **[!UICONTROL OneDrive에 제출]**.
    ![OneDrive GIF](/help/forms/assets/onedrive-video.gif)
@@ -284,7 +284,7 @@ AEM Forms을 Microsoft® OneDrive 저장소에 연결하려면:
 다음 **[!UICONTROL Azure Blob 스토리지에 제출]**  제출 액션은 적응형 양식을 Microsoft® Azure 포털에 연결합니다. 양식 데이터, 파일, 첨부 파일 또는 기록 문서를 연결된 Azure Storage 컨테이너에 제출할 수 있습니다. Azure Blob 스토리지에 대해 제출 액션을 사용하려면 다음을 수행하십시오.
 
 1. [Azure Blob 저장소 컨테이너 만들기](#create-a-azure-blob-storage-container-create-azure-configuration): AEM Forms을 Azure 스토리지 컨테이너에 연결합니다.
-2. [적응형 양식에서 Azure 스토리지 구성 사용 ](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af): 적응형 양식을 구성된 Azure 스토리지 컨테이너에 연결합니다.
+2. [적응형 양식에서 Azure 스토리지 구성 사용](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af): 적응형 양식을 구성된 Azure 스토리지 컨테이너에 연결합니다.
 
 ### Azure Blob 저장소 컨테이너 만들기 {#create-azure-configuration}
 
@@ -313,7 +313,6 @@ AEM Forms을 Azure 스토리지 컨테이너에 연결하려면
    >
    > * 동일하게 선택 [!UICONTROL 구성 컨테이너] OneDrive 저장소를 만든 적응형 양식용.
    > * 없는 경우 [!UICONTROL 구성 컨테이너] 을(를) 선택한 다음 글로벌을 선택합니다. [!UICONTROL 스토리지 구성] 제출 작업 등록 정보 창에 폴더가 나타납니다.
-
 
 1. 선택 **제출 액션** 다음으로: **[!UICONTROL Azure Blob 스토리지에 제출]**.
    ![Azure Blob 저장 공간 GIF](/help/forms/assets/azure-submit-video.gif)
@@ -358,7 +357,7 @@ AEM Forms을 Azure 스토리지 컨테이너에 연결하려면
 
 서버측 유효성 검사 활성화
 
-최종 사용자가 이러한 유효성 검사를 무시하고 양식을 제출하는 경우 서버에서 유효성 검사를 다시 수행합니다. 서버 끝에서 유효성 검사가 실패하면 제출 트랜잭션이 중지됩니다. 최종 사용자에게 다시 원래 양식이 표시됩니다. 캡처된 데이터 및 제출된 데이터는 오류로서 사용자에게 제시된다.
+최종 사용자가 이러한 유효성 검사를 무시하고 양식을 제출하는 경우 서버에서 유효성 검사를 다시 수행합니다. 서버 끝에서 유효성 검사가 실패하면 제출 트랜잭션이 중지됩니다. 최종 사용자에게 다시 원래 양식이 표시됩니다. 캡처된 데이터 및 제출된 데이터는 에러로서 사용자에게 제시된다.
 
 >[!NOTE]
 >

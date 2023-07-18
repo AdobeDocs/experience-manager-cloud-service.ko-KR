@@ -6,14 +6,21 @@ seo-description: The Table component in AEM Forms lets you create tables in adap
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '2415'
+source-wordcount: '2435'
 ht-degree: 0%
 
 ---
 
 # 적응형 양식의 표 {#tables-in-adaptive-forms}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-forms-tables.html) |
+| AEM as a Cloud Service | 이 문서 |
+
+
 
 표를 사용하면 복잡한 데이터를 효과적이고 단순하며 체계적으로 나타낼 수 있습니다. 사용자가 정보를 쉽게 식별하고 행 및 열의 정렬된 배열로 입력을 제공하는 데 도움이 됩니다. 금융 서비스 및 정부 조직의 양식에서는 대부분 숫자를 입력하고 계산을 수행하기 위해 큰 데이터 테이블이 필요합니다.
 

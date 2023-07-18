@@ -5,14 +5,20 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 1f3104d4a986018675f751afa04fe0ed3b7f5c26
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 0%
+source-wordcount: '1551'
+ht-degree: 1%
 
 ---
 
 # 양식 데이터 모델 만들기 {#create-form-data-model}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html) |
+| AEM as a Cloud Service | 이 문서 |
+
 
 ![데이터 통합](do-not-localize/data-integeration.png)
 
@@ -77,7 +83,7 @@ ht-degree: 0%
    * 기존 데이터 소스를 동일한 유형의 다른 데이터 소스로 바꾸려면 **[!UICONTROL 편집]** ( 데이터 소스 아이콘)을 클릭하고 사용 가능한 데이터 소스 목록에서 을 선택합니다.
    * 기존 데이터 소스를 삭제하려면 **[!UICONTROL 삭제]** 데이터 소스에 대한 아이콘. 데이터 소스의 데이터 모델 객체가 양식 데이터 모델에 추가되는 경우 삭제 아이콘이 비활성화됩니다.
 
-      ![fdm-properties](assets/fdm-properties.png)
+     ![fdm-properties](assets/fdm-properties.png)
 
 1. 누르기 **[!UICONTROL 저장 및 닫기]** 업데이트를 저장합니다.
 
@@ -108,14 +114,13 @@ ht-degree: 0%
 
 1. Apache Sling 컨텍스트 인식 구성을 만듭니다. OSGi 구성을 생성하려면 다음을 수행합니다.
    1. **에서 OSGi 구성 파일 설정 [!DNL Experience Manager] Archetype 프로젝트**
-PID로 OSGi 출하 시 구성 파일 생성 
-`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`을 따르지 않는 경우입니다. 실행 모드별로 값을 변경해야 하는 각 실행 모드 폴더에 이름이 동일한 파일을 만듭니다. 자세한 내용은 [다음에 대한 OSGi 구성 [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
+PID로 OSGi 출하 시 구성 파일 생성 `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. 실행 모드별로 값을 변경해야 하는 각 실행 모드 폴더에 이름이 동일한 파일을 만듭니다. 자세한 내용은 [다음에 대한 OSGi 구성 [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
 
    1. **OSGI 구성 json을 설정합니다.** Apache Sling 컨텍스트 인식 구성 재정의 공급자를 사용하려면 다음을 수행하십시오.
       1. 로컬 개발 인스턴스에서 `/system/console/configMgr`를 클릭하고, 다음과 같은 이름의 공장 OSGi 구성을 선택합니다. **[!UICONTROL Apache Sling 컨텍스트 인식 구성 재정의 공급자: OSGi 구성]**.
       1. 설명을 입력합니다.
       1. 선택 **[!UICONTROL 활성화됨]**.
-      1. 재정의에서 sling 재정의 구문에서 환경에 따라 변경해야 하는 필드를 제공합니다. 자세한 내용은 [Apache Sling 컨텍스트 인식 구성 - 재정의](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). 예, `cloudconfigs/fdm/{configName}/url="newURL"`.
+      1. 재정의에서 sling 재정의 구문에서 환경에 따라 변경해야 하는 필드를 제공합니다. 자세한 내용은 [Apache Sling 컨텍스트 인식 구성 - 재정의](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). (예: `cloudconfigs/fdm/{configName}/url="newURL"`)
 을(를) 선택하여 여러 재정의를 추가할 수 있습니다. **[!UICONTROL +]**.
       1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
       1. OSGi 구성 JSON을 가져오려면 의 단계를 따릅니다. [AEM SDK 빠른 시작을 사용하여 OSGi 구성 생성](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).
@@ -123,7 +128,6 @@ PID로 OSGi 출하 시 구성 파일 생성
       1. 값 변경 `newURL` 환경(또는 실행 모드)을 기반으로 합니다.
       1. 실행 모드에 따라 비밀 값을 변경하려면 다음을 사용하여 비밀 변수를 만들 수 있습니다. [cloud manager API](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) 및에서 참조할 수 있습니다. [OSGi 구성](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values).
 이 Archetype 프로젝트가 CM 파이프라인을 통해 배포되면 재정의는 다른 환경(또는 실행 모드)에서 다른 값을 제공합니다.
-
       >[!NOTE]
       >
       >[!DNL Adobe Managed Service] 사용자는 암호화 지원을 사용하여 비밀 값을 암호화할 수 있습니다(자세한 내용은 다음을 참조하십시오.) [구성 속성에 대한 암호화 지원](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support) 다음 뒤에 있는 값에 암호화된 텍스트 넣기 [컨텍스트 인식 구성은 서비스 팩 6.5.13.0에서 사용할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config).
