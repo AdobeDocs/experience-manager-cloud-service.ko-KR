@@ -3,9 +3,9 @@ title: Cloud Manager 및 빠른 사이트 생성 워크플로 이해
 description: Cloud Manager와 이것이 새로운 빠른 사이트 생성 프로세스를 결합하는 방법에 대해 알아봅니다.
 exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1128'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Cloud Manager와 이것이 새로운 빠른 사이트 생성 프로세스를 결
 
 >[!TIP]
 >
->Cloud Manager 역할 및 역할 관리에 익숙하지 않은 경우 [추가 리소스](#additional-resources) 섹션.
+>Cloud Manager 역할 및 역할 관리에 익숙하지 않은 경우, [추가 리소스](#additional-resources) 섹션의 역할 기반 권한 문서를 참조하십시오.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -124,6 +124,6 @@ AEM 빠른 사이트 생성 여정의 한 부분을 완료했으므로,
 다음 문서인 [템플릿으로 사이트 생성](create-site.md)을 검토하여 빠른 사이트 생성 여정의 다음 부분으로 넘어가는 것이 좋습니다. 다음은 이 문서에 나열된 몇 가지 개념을 자세히 알아보는 추가적인 옵션 리소스이며, 이들 리소스를 여정에서 계속 사용할 필요는 없습니다.
 
 * [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Cloud Manager의 기능에 대해 자세히 알아보려면 바로 심화 기술 문서를 참조할 수 있습니다.
-* [역할 기반 권한](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager에는 적절한 권한이 있는 미리 구성된 역할이 있습니다. 이러한 역할과 이를 관리하는 방법에 대한 자세한 내용은 이 문서 를 참조하십시오.
+* [역할 기반 권한](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager에는 적절한 권한이 있는 미리 구성된 역할이 있습니다. 이러한 역할 및 이를 관리하는 방법에 대한 자세한 내용은 이 문서를 참조하십시오.
 * [npm](https://www.npmjs.com) - 사이트를 간편하게 빌드하기 위해 사용하는 AEM 테마는 npm을 기반으로 합니다.
 * [Webpack](https://webpack.js.org) - 사이트를 간편하게 빌드하기 위해 사용하는 AEM 테마는 Webpack을 사용합니다.
