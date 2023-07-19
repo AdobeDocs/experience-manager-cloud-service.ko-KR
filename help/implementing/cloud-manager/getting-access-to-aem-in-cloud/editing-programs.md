@@ -3,15 +3,15 @@ title: 프로그램 편집
 description: 프로덕션 및 샌드박스 프로그램을 만든 후 옵션을 조정하도록 편집하는 방법을 알아봅니다.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '520'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 # 프로그램 편집 {#editing-programs}
 
-필수 권한이 있는 사용자는 편집할 수 있습니다. [조직에서 만든 프로덕션 프로그램](creating-production-programs.md) 및 [조직에서 만든 샌드박스 프로그램.](creating-sandbox-programs.md)을 편집할 수 있습니다. 프로그램을 편집하여 다음과 같은 작업을 수행할 수 있습니다.
+필요한 권한이 있는 사용자는 [조직에서 만든 프로덕션 프로그램](creating-production-programs.md) 및 [조직에서 만든 샌드박스 프로그램을 편집할 수 있습니다.](creating-sandbox-programs.md)을 편집할 수 있습니다. 프로그램을 편집하여 다음과 같은 작업을 수행할 수 있습니다.
 
 * Assets가 있는 기존 프로그램에 Sites 솔루션을 추가하거나 그 반대로 할 수 있습니다.
 * Sites와 Assets가 모두 있는 기존 프로그램에서 Sites 또는 Assets를 제거할 수 있습니다.
@@ -63,7 +63,7 @@ ht-degree: 93%
 
 ![프로그램에 대해 활성화된 향상된 보안](assets/edit-program-enhanced.png)
 
-프로그램 생성 이후에는 이 설정을 수정할 수 없습니다. 향상된 보안 옵션에 대한 자세한 내용은 [프로덕션 프로그램 만들기](creating-production-programs.md) 문서.
+프로그램 생성 이후에는 이 설정을 수정할 수 없습니다. 향상된 보안 옵션에 대한 자세한 내용은 [프로덕션 프로그램 만들기](creating-production-programs.md) 문서를 참조하십시오.
 
 ## 샌드박스 프로그램 삭제 {#delete-sandbox-program}
 
