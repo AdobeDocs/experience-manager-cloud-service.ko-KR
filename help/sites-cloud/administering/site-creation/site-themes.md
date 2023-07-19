@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '353'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ AEM 사이트 템플릿을 통해 생성되는 사이트를 사용하면 테마�
 
 >[!NOTE]
 >
->AEM 사이트 테마를 [AEM 사이트 템플릿과 혼동하면 안 됩니다](site-templates.md). AEM 사이트 테마는 AEM 사이트에 대한 스타일 정보만 포함합니다. AEM 사이트 템플릿은 사이트 구조 및 초기 콘텐츠를 정의하며 다음을 허용하는 AEM 사이트 테마를 포함합니다. [빠른 사이트 생성](create-site.md).
+>AEM 사이트 테마를 [AEM 사이트 템플릿과 혼동하면 안 됩니다](site-templates.md). AEM 사이트 테마는 AEM 사이트에 대한 스타일 정보만 포함합니다. AEM 사이트 템플릿은 사이트 구조 및 최초 콘텐츠를 정의하며 [빠른 사이트 생성](create-site.md)을 위한 AEM 사이트 테마를 포함합니다.
 
 ## 사이트 테마 사용 {#using-themes}
 
@@ -34,7 +34,7 @@ AEM 사이트 템플릿을 통해 생성되는 사이트를 사용하면 테마�
 
 >[!TIP]
 >
->템플릿으로 사이트를 만들고 테마를 맞춤화하는 프로세스에 대한 전체적인 설명은 [빠른 사이트 생성 여정](/help/journey-sites/quick-site/overview.md).
+>템플릿으로 사이트를 만들고 테마를 맞춤화하는 프로세스에 대한 전체적인 설명은 [빠른 사이트 생성 여정](/help/journey-sites/quick-site/overview.md)에서 확인할 수 있습니다.
 
 ## 사이트 테마 구조 {#structure}
 
