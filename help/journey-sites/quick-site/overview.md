@@ -3,9 +3,9 @@ title: AEM 빠른 사이트 생성 여정
 description: 사용하기 쉬운 AEM 빠른 사이트 생성 도구를 통해 AEM 사이트의 프론트엔드 개발을 간소화하고 AEM 백엔드에 대한 지식 없이 사이트를 간편하게 맞춤화할 수 있는 가이드 여정을 시작해 보십시오.
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1034'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ Adobe가 AEM을 통해 AEM 관련 사이트 비즈니스 사례를 해결하는 
 
 이제 Adobe 빠른 사이트 생성 여정을 시작할 준비가 되었습니다.
 
-* AEM 또는 Cloud Manager 관리자이거나 프론트엔드 개발자 및 관리자 역할을 모두 수행하는 경우 또는 AEM의 전체적인 프로세스를 이해하고자 하는 경우 를 사용하여 여정을 처음부터 시작하십시오. [Cloud Manager 이해](cloud-manager.md) 아래 설명된 대로.
+* AEM 또는 Cloud Manager 관리자이거나 프론트엔드 개발자 및 관리자 역할을 모두 수행하는 경우 또는 AEM의 전체적인 프로세스를 이해하고자 하는 경우, 아래 설명된 대로 [Cloud Manager 이해](cloud-manager.md)를 통해 여정을 처음부터 시작하십시오.
 * 프론트엔드 개발만 담당하며 AEM 및 Cloud Manager 관리자와 상호 작용해야 하는 경우, 바로 [git 저장소 액세스 정보 가져오기](retrieve-access.md)로 건너뛰어 AEM git 저장소에 대한 액세스 권한을 얻고 맞춤화를 시작할 수 있습니다.
 * AEM Sites 및 Cloud Manager가 함께 작동하는 방법에 대해 이미 알고 있으며 바로 구성을 시작하고자 하는 경우, [템플릿으로 새 사이트 생성으로 바로 건너뛸 수 있습니다.](create-site.md)
 
