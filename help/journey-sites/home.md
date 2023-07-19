@@ -3,9 +3,9 @@ title: AEM Sites 여정
 description: 여기에서 AEM의 강력한 사이트 도구를 이해하는 데 사용할 수 있는 가이드 여정 개요를 살펴보십시오.
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '418'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 87%
 
 ## 소개 {#introduction}
 
-[AEM Sites](https://business.adobe.com/products/experience-manager/sites/aem-sites.html)는 채널 전체에서 디지털 경험을 손쉽게 만들고, 관리하고, 게시할 수 있는 강력한 도구 통합 세트입니다. 초기 콘텐츠 구조 설정부터 재사용 가능한 콘텐츠 제작, 여러 시장 및 언어로 배포, 개인화된 경험을 제공하는 맞춤형 애플리케이션 제작에 이르기까지 AEM Sites은 대상자가 어디에 있든 훌륭한 경험을 선사할 수 있는 포괄적인 중앙 집중식 솔루션입니다.
+[AEM Sites](https://business.adobe.com/products/experience-manager/sites/aem-sites.html)는 채널 전체에서 디지털 경험을 손쉽게 만들고, 관리하고, 게시할 수 있는 강력한 도구 통합 세트입니다. 초기 콘텐츠 구조 설정부터 재사용 가능한 콘텐츠 제작, 여러 시장 및 언어로 배포 및 개인화된 경험을 제공하는 맞춤형 애플리케이션 제작에 이르기까지 AEM Sites는 대상자가 어디에 있든 훌륭한 경험을 선사할 수 있는 포괄적인 중앙 집중식 솔루션입니다.
 
 ## AEM 설명서 여정 {#documentation-journeys}
 
@@ -43,4 +43,4 @@ Sites 여정은 다양한 담당자를 위해 설계되었으며, 다양한 관�
 | [참조 데모 추가 기능 여정](/help/journey-sites/demos-add-on/overview.md) | 최소한의 AEM 구성으로 AEM 참조 데모 추가 기능을 샌드박스 환경에 손쉽게 추가하는 방법과 모범 사례를 기반으로 하는 풍부한 예제를 통해 AEM의 강력한 기능을 테스트하는 방법에 대한 가이드 여정을 시작해 보십시오. | 시스템 관리자 |
 | [사이트 번역 여정](/help/journey-sites/translation/overview.md) | AEM Sites 기술, 이들을 프로젝트에서 사용하는 방법 및 AEM에서 번역 프로젝트를 만들고 업데이트하는 방법을 A부터 Z까지 알아보십시오. | 번역 전문가 |
 
-다음 기간 동안 추후에 추적 [추가 역할에 대한 여정 예정](/help/journey-documentation/documentation-journeys.md#journeys).
+[추가 역할을 다루는 다가오는 여정](/help/journey-documentation/documentation-journeys.md#journeys)은 추후에 업데이트될 예정입니다.
