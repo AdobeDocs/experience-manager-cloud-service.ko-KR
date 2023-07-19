@@ -3,9 +3,9 @@ title: AEM Headless 번역 시작하기
 description: Headless 콘텐츠를 구성하는 방법 및 AEM의 번역 도구의 작동 방식에 대해 알아봅니다.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1407'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ AEM Headless 콘텐츠 번역을 시작하기 전에 알아 두어야 할 몇 �
 
 >[!TIP]
 >
->AEM과 같은 대규모 CMS 사용에 익숙하지 않은 경우 계속 진행하기 전에 [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md) 설명서를 검토하는 것이 좋습니다. 기본 처리 설명서는 여정의 일부가 아닙니다. 따라서 완료되면 이 페이지로 돌아갑니다.
+>AEM과 같은 대규모 CMS 사용에 익숙하지 않은 경우 계속 진행하기 전에 [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md) 설명서를 검토하는 것이 좋습니다. 기본 처리 설명서는 여정의 일부가 아닙니다. 검토를 완료하면 이 페이지로 돌아오십시오.
 
 ### 도구 {#tools}
 
