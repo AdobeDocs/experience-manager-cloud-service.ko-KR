@@ -3,9 +3,9 @@ title: 경험 감사 테스트
 description: 경험 감사를 통해 배포 프로세스를 검증하고 배포된 변경 사항이 성능, 접근성, 모범 사례 및 SEO에 대한 기준 표준을 충족하는지 확인하는 방법을 알아봅니다.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '549'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -35,11 +35,11 @@ Cloud Manager의 경험 감사를 통해 최종 사용자의 사이트 경험을
 
 >[!TIP]
 >
->다음과 같은 경우 경험 감사에 포함될 페이지를 구성합니다 [파이프라인 설정](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
+>[파이프라인을 설정](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)할 때 경험 감사에 포함되는 페이지를 구성합니다.
 
 ## 경험 감사 결과 이해 {#understanding-experience-audit-results}
 
-경험 감사는 다음을 통해 집계되고 상세한 페이지 수준 테스트 결과를 제공합니다. [프로덕션 파이프라인 실행 페이지](/help/implementing/cloud-manager/deploy-code.md).
+경험 감사는 [프로덕션 파이프라인 실행 페이지](/help/implementing/cloud-manager/deploy-code.md)를 통해 집계되고 상세한 페이지 수준 테스트 결과를 제공합니다.
 
 * 집계 지표는 성능, 접근성, 모범 사례, SEO(검색 엔진 최적화)에 대해 감사된 페이지의 평균 점수를 측정합니다.
 * 드릴다운을 통해 개별 페이지 수준 점수를 확인할 수도 있습니다.
@@ -68,6 +68,6 @@ Cloud Manager의 경험 감사를 통해 최종 사용자의 사이트 경험을
 
 테스트를 자세히 살펴봄으로써 보다 자세한 페이지 수준 점수를 매길 수 있습니다. 이전 테스트 실행에서 변경된 사항과 함께 특정 테스트에 대해 개별 페이지의 점수를 확인할 수 있습니다.
 
-개별 페이지의 세부 정보를 클릭하면 평가된 페이지 요소에 대한 정보와, 개선 기회가 감지된 경우 문제를 해결하기 위한 지침이 제공됩니다.
+개별 페이지의 세부 정보를 클릭하면 평가된 페이지 요소에 대한 정보와 개선 기회가 감지된 경우 문제를 해결하기 위한 지침이 제공됩니다.
 
 ![페이지 수준 점수](/help/implementing/cloud-manager/assets/exp-audit-2.png)
