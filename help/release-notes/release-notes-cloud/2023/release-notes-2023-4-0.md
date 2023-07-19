@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.4.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.4.0 릴리스 정보입니다.'
 source-git-commit: 104065f208adf9bcc8e6a090b224517a7904f5f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1171'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -37,14 +37,14 @@ ht-degree: 87%
 
 ### [!DNL Experience Manager Sites]의 새로운 기능 {#sites-features}
 
-* AEMas a Cloud Service 에서 JSON 형식으로 Adobe Target으로 컨텐츠 조각을 내보내고 Target에서 해당 JSON 오퍼를 만듭니다.
+* AEM as a Cloud Service에서 Adobe Target으로 콘텐츠 조각을 JSON 형식으로 내보내고 Target에 해당 JSON 오퍼를 만듭니다.
 * 내부 캐싱 향상과 함께 GraphQL 페이지 매김 및 정렬에 대한 지원은 이제 복잡한 GraphQL 쿼리 및 필터를 사용하여 AEM에서 대규모 콘텐츠 세트를 가져올 때 분리된 클라이언트 애플리케이션의 성능을 개선하는 데 도움이 됩니다.
 
 ### [!DNL Experience Manager Sites] 프리릴리스의 새로운 기능 {#prerelease-sites}
 
-* 이제 [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=ko)을 사용하여 콘텐츠 조각 및 해당 참조를 [AEM 미리보기 서비스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=ko#access-preview-service)에 게시하게 되면 사용자는 시작하기 전에 분리된 미리보기 애플리케이션을 통해 최종 경험을 미리 볼 수 있습니다.
-* 이제 AEM GraphQL을 사용하여 Headless 시나리오에서 이미지를 웹 게재에 동적으로 최적화할 수 있습니다. [쿼리 변수](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=en#query-variables) 는 GraphQL 쿼리에서 정의하여 분리된 클라이언트 애플리케이션 요청이 AEM에서 최적화된 이미지를 제공하도록 할 수 있습니다.
-* 태그: [컨텐츠 조각 변형](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=en) 는 이제 AEM GraphQL 콘텐츠 게재 API를 사용하여 JSON으로 출력할 수 있습니다.
+* 이제 [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en)을 사용하여 콘텐츠 조각 및 해당 참조를 [AEM 미리보기 서비스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#access-preview-service)에 게시하게 되면 사용자는 시작하기 전에 분리된 미리보기 애플리케이션을 통해 최종 경험을 미리 볼 수 있습니다.
+* 이제 AEM GraphQL을 사용하여 Headless 시나리오에서 웹 게재를 위해 이미지를 동적으로 최적화할 수 있습니다. GraphQL 쿼리에서 [쿼리 변수](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=en#query-variables)를 정의하여 분리된 클라이언트 애플리케이션으로 AEM에서 최적화된 이미지를 요청할 수 있습니다.
+* 이제 [콘텐츠 조각 변형](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=en)에 있는 태그를 AEM GraphQL 콘텐츠 게재 API를 사용하여 JSON으로 출력할 수 있습니다.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -71,7 +71,7 @@ ht-degree: 87%
 
 ### [!DNL Assets] 프리릴리스의 기능 {#prerelease-feature-assets}
 
-* Dynamic Media - 이미지 프로필의 일부 스마트 자르기 관련 필드에 대한 사용자 인터페이스가 이제 스마트 자르기를 정의하기 위한 현재 지침을 반영하도록 업데이트되었습니다. [자르기 옵션](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=ko#crop-options)을 참조하십시오.
+* Dynamic Media - 이미지 프로필의 일부 스마트 자르기 관련 필드에 대한 사용자 인터페이스가 이제 스마트 자르기를 정의하기 위한 현재 지침을 반영하도록 업데이트되었습니다. [자르기 옵션](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en#crop-options)을 참조하십시오.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -89,11 +89,11 @@ ht-degree: 87%
 
      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
-* [Adobe Acrobat Sign Solutions for Government](/help/forms/adobe-sign-integration-adaptive-forms.md): 이제 AEM Forms을 Adobe Acrobat Sign Solutions for Government와 통합합니다. 이 통합은 공공기관 관련 계정(정부 부서 및 기관)에 대한 적응형 양식 제출과 함께 전자 서명의 고급 규정 준수 및 보안을 제공합니다.
+* [공공기관용 Adobe Acrobat Sign Solutions](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms는 공공기관용 Adobe Acrobat Sign Solutions와 통합합니다. 이 통합은 공공기관 관련 계정(정부 부서 및 기관)에 대한 적응형 양식 제출과 함께 전자 서명의 고급 규정 준수 및 보안을 제공합니다.
 
   공공기관용 Adobe Acrobat Sign과 통합하여 Adobe의 파트너와 공공기관 고객들은 가장 중요하고 민감한 비즈니스 라인에서 적응형 양식 전자 서명을 사용할 수 있습니다. 이 보안 계층이 추가되면 Adobe의 공공기관 고객들이 안심할 수 있도록 모든 전자 서명은 FedRAMP Moderate 규정을 완전히 준수해야 합니다.
 
-* 규칙 편집기의 사용자 지정 오류 처리기로 향상된 오류 처리: 이제 외부 서비스에서 반환한 오류에 대한 응답으로 사용자 지정 함수(클라이언트 라이브러리 사용)를 호출하고 최종 사용자에게 맞춤 응답을 제공할 수 있습니다. 서비스에서 반환된 오류에 대해 특정 작업을 수행할 수도 있습니다. 예를 들어 특정 오류 코드의 백엔드에서 사용자 정의 워크플로를 호출하거나 서비스가 중단되었음을 고객에게 알려 줄 수 있습니다.
+* 규칙 편집기의 사용자 정의 오류 핸들러로 오류 처리 개선: 이제 외부 서비스에서 반환되는 오류에 따라 사용자 정의 함수(클라이언트 라이브러리 사용)를 호출하여 맞춤형 응답을 최종 사용자에게 제공할 수 있습니다. 서비스에서 반환된 오류에 대해 특정 작업을 수행할 수도 있습니다. 예를 들어 특정 오류 코드의 백엔드에서 사용자 정의 워크플로를 호출하거나 서비스가 중단되었음을 고객에게 알려 줄 수 있습니다.
 
   이 기능을 통해 OOTB 오류 핸들러와 역으로 호환되는 표준 기반 오류 응답을 도입하여 보다 높은 유연성과 제어 기능을 제공함으로써 전체 오류 처리 기능을 개선할 수 있습니다.
 
