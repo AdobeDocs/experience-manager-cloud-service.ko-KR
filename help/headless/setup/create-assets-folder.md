@@ -3,9 +3,9 @@ title: 자산 폴더 만들기 - Headless 설정
 description: AEM 콘텐츠 조각 모델을 사용하여 Headless 콘텐츠의 기반이 되는 콘텐츠 조각의 구조를 정의합니다.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '383'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ AEM 콘텐츠 조각 모델을 사용하여 Headless 콘텐츠의 기반이 되�
 
 그러나 먼저 자산을 저장할 자산 폴더를 만들어야 합니다.
 
-에셋 폴더는 [기존 콘텐츠 자산 구성](/help/assets/manage-digital-assets.md) 콘텐츠 조각과 함께 이미지 및 비디오 등.
+자산 폴더는 콘텐츠 조각 외에도 이미지 및 비디오와 같은 [기존 콘텐츠 자산](/help/assets/manage-digital-assets.md)을 구성하는 데 사용됩니다.
 
 ## 자산 폴더를 만드는 방법 {#how-to-create-an-assets-folder}
 
@@ -30,11 +30,11 @@ AEM 콘텐츠 조각 모델을 사용하여 Headless 콘텐츠의 기반이 되�
 1. 폴더의 **제목** 및 **이름**&#x200B;을 입력합니다.
    * **제목**&#x200B;은 설명적이어야 합니다.
    * **이름**&#x200B;은 저장소의 노드 이름이 됩니다.
-      * 제목을 기반으로 자동으로 생성되고 이에 따라 조정됩니다 [AEM 이름 지정 규칙](/help/implementing/developing/introduction/naming-conventions.md).
+      * 제목을 기반으로 자동 생성되고 [AEM 명명 규칙](/help/implementing/developing/introduction/naming-conventions.md)에 따라 조정됩니다.
       * 필요한 경우 조정할 수 있습니다.
 
    ![폴더 만들기](../assets/assets-folder-create.png)
-1. 마우스를 가져가서 확인 표시를 눌러 방금 만든 폴더를 선택합니다. 그런 다음 을 선택합니다 **속성** 도구 모음에서 (또는 를 사용하여) `p` [키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)).
+1. 마우스를 가져가서 확인 표시를 눌러 방금 만든 폴더를 선택합니다. 그런 다음 도구 모음에서&#x200B;**속성**&#x200B;을 선택합니다(또는 `p` [키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)사용).
 1. **속성** 창에서 **Cloud Services** 탭을 선택합니다.
 1. **클라우드 구성**&#x200B;의 경우 [이전에 생성한 구성](create-configuration.md)을 선택합니다.
    ![자산 폴더 구성](../assets/assets-folder-configure.png)
