@@ -3,9 +3,9 @@ title: 페이지 편집을 위한 키보드 단축키
 description: 페이지 편집을 위한 일부를 포함하여 AEM 전체에서 사용할 수 있는 다양한 키보드 단축키
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
 source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '237'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 | **편집** 모드 | `Ctrl-z` | [마지막 변경 내용을 실행 취소합니다](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [마지막 변경 내용을 재실행합니다](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | 여러 단락을 선택합니다 |
-|  | `Ctrl-c` | 선택한 단락 복사 |
+|  | `Ctrl-c` | 선택한 단락을 복사합니다. |
 |  | `Ctrl-x` | 선택한 단락을 잘라냅니다. 잘라낸 단락은 붙여넣기 전까지 사용자 인터페이스에서 사라지지 않습니다. |
 |  | `Ctrl-v` | 이전에 잘라내거나 복사한 단락을 붙여넣습니다. |
 |  | `Ctrl-Backspace` | 선택한 단락을 삭제합니다. |
