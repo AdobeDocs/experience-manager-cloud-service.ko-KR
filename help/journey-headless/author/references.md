@@ -1,11 +1,11 @@
 ---
 title: 콘텐츠 조각의 참조 사용에 대해 알아보기
-description: 콘텐츠, 다른 조각과 에셋(미디어)의 콘텐츠 조각에서 참조를 사용하는 방법에 대해 알아봅니다. Headless CMS 작성에서 중첩된 조각의 필요성과 메커니즘을 소개합니다.
+description: 콘텐츠, 다른 조각과 자산(미디어)의 콘텐츠 조각에서 참조를 사용하는 방법에 대해 알아봅니다. Headless CMS 작성에서 중첩된 조각의 필요성과 메커니즘을 소개합니다.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '731'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,15 +25,15 @@ AEMaaCS를 통한 작성, 특히 콘텐츠 조각 작성에 대한 소개와 함
 * **목표**: Headless CMS 작성에 대한 참조 사용을 소개합니다. 사용 가능한 참조의 종류와 참조 목적은 무엇입니까?
 
    * 콘텐츠 참조
-   * 에셋/미디어 참조
+   * 자산/미디어 참조
    * 조각 참조
    * 텍스트 블록 내 애드혹 참조
 
 ## 참조란 무엇입니까? {#what-are-references}
 
-참조는 다른 콘텐츠, 에셋(이미지에서와 같이) 또는 다른 조각 등 리소스를 연결하는 메커니즘일 뿐입니다. 매우 유사하지만 차이점이 몇 가지 있습니다.
+참조는 다른 콘텐츠, 자산(이미지에서와 같이) 또는 다른 조각 등 리소스를 연결하는 메커니즘일 뿐입니다. 매우 유사하지만 차이점이 몇 가지 있습니다.
 
-일부 참조에는 전용 데이터 유형(예: 콘텐츠 참조 및 조각 참조)이 있지만 다른 참조는 텍스트 블록 내 참조로 추가됩니다(에셋 참조 및 애드혹 참조).
+일부 참조에는 전용 데이터 유형(예: 콘텐츠 참조 및 조각 참조)이 있지만 다른 참조는 텍스트 블록 내 참조로 추가됩니다(자산 참조 및 애드혹 참조).
 
 ![콘텐츠 조각 - 참조](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
 
@@ -41,11 +41,11 @@ AEMaaCS를 통한 작성, 특히 콘텐츠 조각 작성에 대한 소개와 함
 
 콘텐츠 참조는 이 작업을 수행하고 이를 통해 다른 콘텐츠를 참조할 수 있습니다. 이러면 콘텐츠 항목을 선택할 수 있는 브라우저가 열립니다.
 
-## 에셋/미디어 참조 {#assets-media-references}
+## 자산/미디어 참조 {#assets-media-references}
 
-**에셋 삽입** 옵션을 사용하여 텍스트 블록 내에서 에셋(예: 이미지 또는 미디어)을 참조할 수 있습니다. 이러면 에셋 항목을 선택할 수 있는 브라우저가 열립니다.
+**자산 삽입** 옵션을 사용하여 텍스트 블록 내에서 자산(예: 이미지 또는 미디어)을 참조할 수 있습니다. 이러면 자산 항목을 선택할 수 있는 브라우저가 열립니다.
 
-![콘텐츠 조각 - 에셋 삽입](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
+![콘텐츠 조각 - 자산 삽입](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
 ## 조각 참조 {#fragment-references}
 
@@ -71,7 +71,7 @@ AEMaaCS를 통한 작성, 특히 콘텐츠 조각 작성에 대한 소개와 함
 
 사용자(작성자)와 Headless 애플리케이션 모두가 이해하므로 조각 참조를 사용하여 해당 상호 관계를 나타낼 수 있습니다.
 
-작성자는 이러한 관계(콘텐츠 조각 모델을 만들 때 콘텐츠 설계자가 수행)를 정의할 책임이 없지만, 참조를 인식하고 편집하는 방법을 알고 있어야 합니다.
+작성자는 해당 관계(콘텐츠 조각 모델 생성 시 콘텐츠 설계자가 수행하는 작업)를 정의할 책임이 없지만, 참조를 인식하고 편집하는 방법에 대해 알아야 합니다.
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
@@ -106,7 +106,7 @@ AEMaaCS를 통한 작성, 특히 콘텐츠 조각 작성에 대한 소개와 함
 
 ## 다음 단계 {#whats-next}
 
-이제 콘텐츠 조각의 참조 및 구조에 대해 배웠으므로 다음 단계는 [메타데이터 및 태깅에 대해 알아보기](metadata-tagging.md)입니다. 콘텐츠 조각의 메타데이터 및 태그를 정의하는 방법을 소개하고 자세히 설명합니다.
+이제 콘텐츠 조각의 참조 및 구조에 대해 배웠으므로 다음 단계는 [메타데이터 및 태그 지정에 대해 알아보기](metadata-tagging.md)입니다. 콘텐츠 조각의 메타데이터 및 태그를 정의하는 방법을 소개하고 자세히 설명합니다.
 
 ## 추가 리소스 {#additional-resources}
 
@@ -127,7 +127,7 @@ AEMaaCS를 통한 작성, 특히 콘텐츠 조각 작성에 대한 소개와 함
       * [콘텐츠 조각 모델 - 속성](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
 * 시작 안내서
-   * [에셋 폴더 만들기 - Headless 설정](/help/headless/setup/create-assets-folder.md)
+   * [자산 폴더 만들기 - Headless 설정](/help/headless/setup/create-assets-folder.md)
 
 * AEM Headless 콘텐츠 설계자 여정
 
