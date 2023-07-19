@@ -3,9 +3,9 @@ title: 로그 액세스 및 관리
 description: AEM as a Cloud Service에서 개발 프로세스를 지원하기 위해 로그에 액세스하고 관리하는 방법을 알아봅니다.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '267'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ AEM as a Cloud Service에서 개발 프로세스를 지원하기 위해 로그�
 
 ## 로그 다운로드 {#download-logs}
 
-로그를 다운로드하려면 다음을 수행하십시오.
+로그를 다운로드하려면 다음 작업을 수행하십시오.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
@@ -48,13 +48,13 @@ UI를 통해 로그를 다운로드하는 것 외에도 API 및 명령줄 인터
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-또한 명령줄 인터페이스를 통해 로그를 추적할 수 있습니다.
+명령줄 인터페이스를 사용하여 로그를 추적할 수도 있습니다.
 
 ```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-환경 ID(이 예에서는 1884)와 사용 가능한 서비스 또는 로그 이름 옵션을 가져오려면 다음 명령을 사용할 수 있습니다.
+다음 명령을 사용하여 환경 ID(이 예에서는 1884)와 사용 가능한 서비스나 로그 이름 옵션을 가져올 수 있습니다.
 
 ```shell
 $ aio cloudmanager:list-environments
