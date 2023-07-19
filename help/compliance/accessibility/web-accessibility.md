@@ -3,15 +3,15 @@ title: Adobe Experience Manager as a Cloud Service 및 웹 접근성 지침
 description: Adobe Experience Manager as a Cloud Service 및 웹 액세서빌러티 지침 소개
 exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '384'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Adobe Experience Manager as a Cloud Service 및 웹 접근성 지침{#aem-and-the-web-accessibility-guidelines}
 
-웹 콘텐츠를 장애나 제한 사항에 관계없이 타겟 대상자가 가능한 한 쉽게 액세스할 수 있도록 설계하기 위한 많은 사회적, 경제적 및 법적 동기가 있습니다. Adobe Experience Manager (AEM) as a Cloud Service를 사용하는 웹 접근성은 좋은 웹 디자인에서 점점 더 중요해지고 있습니다.
+웹 콘텐츠를 장애나 제한 사항에 관계없이 타깃 대상자가 가능한 한 쉽게 액세스할 수 있도록 설계하기 위한 많은 사회적, 경제적 및 법적 동기가 있습니다. Adobe Experience Manager (AEM) as a Cloud Service를 사용하는 웹 접근성은 좋은 웹 디자인에서 점점 더 중요해지고 있습니다.
 
 AEM as a Cloud Service를 사용하여 액세스 가능한 웹 사이트 및 콘텐츠를 만드는 것은 다음과 같은 사용자에게 영향을 줍니다.
 
@@ -27,7 +27,7 @@ Adobe Experience Manager as a Cloud Service는 [World Wide Web Consortium](#worl
 
 >[!NOTE]
 >
->자세한 내용은 [Adobe 솔루션에 대한 액세서빌러티 준수 보고서](https://www.adobe.com/kr/accessibility/compliance.html)를 참조하십시오.
+>자세한 내용은 [Adobe 솔루션에 대한 액세서빌러티 준수 보고서](https://www.adobe.com/accessibility/compliance.html)를 참조하십시오.
 
 ## World Wide Web Consortium {#world-wide-web-consortium}
 
@@ -64,4 +64,4 @@ WCAG 2.1은 [접근성 수준과 이를 준수하는 방법에 대한 지침(관
 
 ## Adobe에서의 접근성 {#accessibility-at-adobe}
 
-자세한 내용은 [Adobe 접근성 리소스 센터](https://www.adobe.com/kr/accessibility/).
+자세한 내용은 [Adobe 액세스 가능성 리소스 센터](https://www.adobe.com/accessibility/)에서 확인하십시오.
