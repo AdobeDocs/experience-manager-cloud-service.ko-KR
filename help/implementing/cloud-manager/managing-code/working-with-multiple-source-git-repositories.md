@@ -3,9 +3,9 @@ title: 여러 저장소 사용
 description: Cloud Manager로 작업할 때 여러 git 저장소를 관리하는 방법을 알아봅니다.
 exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '752'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -122,7 +122,7 @@ jobs:
           git -C ${MAIN_BRANCH} push
 ```
 
-GitHub 작업 사용은 매우 유연합니다. git 저장소 분기 간의 모든 매핑과 별도의 git 프로젝트를 기본 프로젝트의 디렉터리 레이아웃으로 매핑할 수 있습니다.
+GitHub 작업 사용은 매우 유연합니다. git 저장소 분기 간의 모든 매핑은 물론 별도의 git 프로젝트를 기본 프로젝트의 디렉터리 레이아웃으로 매핑할 수 있습니다.
 
 >[!NOTE]
 >
@@ -191,7 +191,7 @@ git commit -F ../commit.txt
 git push
 ```
 
-Jenkins 작업 사용은 매우 유연합니다. git 저장소 분기 간의 모든 매핑과 별도의 git 프로젝트를 기본 프로젝트의 디렉터리 레이아웃으로 매핑할 수 있습니다.
+Jenkins 작업 사용은 매우 유연합니다. git 저장소 분기 간의 모든 매핑은 물론 별도의 git 프로젝트를 기본 프로젝트의 디렉터리 레이아웃으로 매핑할 수 있습니다.
 
 >[!NOTE]
 >
