@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '282'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 87%
 
 >[!TIP]
 >
->콘텐츠 번역이 처음이라면 다음을 참조하십시오. [사이트 번역 여정,](/help/journey-sites/translation/overview.md) AEM의 강력한 번역 툴을 사용한 AEM Sites 콘텐츠 번역을 안내하며 AEM 또는 번역 경험이 없는 사용자에게 이상적입니다.
+>콘텐츠 번역이 처음인 경우, AEM의 강력한 번역 도구를 사용한 AEM Sites 콘텐츠 번역을 안내하며 AEM이 없거나 번역 경험이 없는 사용자에게 최적화된 [Sites 번역 여정](/help/journey-sites/translation/overview.md)을 참조하십시오.
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ ht-degree: 87%
 
 마법사에 액세스하려면 다음 작업을 수행하십시오.
 
-1. 사이트 콘솔에서 페이지를 선택하여 **만들기**&#x200B;를 탭하거나 클릭한 다음 **언어 사본**&#x200B;을 선택합니다.
+1. Sites 콘솔에서 페이지를 선택하여 **만들기**&#x200B;를 탭하거나 클릭한 다음 **언어 사본**&#x200B;을 선택합니다.
 
    ![마법사로 언어 사본 만들기](../assets/language-copy-wizard.png)
 
