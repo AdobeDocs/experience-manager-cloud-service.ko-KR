@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '558'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -42,16 +42,16 @@ Adobe Analytics와 AEM as a Cloud Service를 통합하여 웹 페이지 활동�
 |---|---|
 | 제목 | 구성 이름 |
 | IMS 구성 | IMS 구성 선택(아래 챕터 참조) |
-| 세그먼트 | 현재 보고서 세트에 정의된 Analytics 세그먼트를 사용하는 옵션입니다. Analytics 보고서는 세그먼트를 기반으로 필터링됩니다. 다음을 참조하십시오 [이 페이지](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html) 추가 세부 정보. |
+| 세그먼트 | 현재 보고서 세트에 정의된 Analytics 세그먼트를 사용하는 옵션입니다. Analytics 보고서는 세그먼트를 기반으로 필터링됩니다. 자세한 내용은 [이 페이지](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html)를 참조하십시오. |
 | 보고서 세트 | 데이터를 보내고 보고서를 가져오는 저장소입니다. 보고서 세트는 선택한 웹 사이트, 웹 사이트 집합 또는 웹 사이트 페이지의 하위 세트에 대한 전체적이고 독립적인 보고를 정의합니다. 단일 보고서 세트에서 가져온 보고서를 확인하고 요구 사항에 따라 언제든지 구성에서 이 필드를 편집할 수 있습니다. |
 
 ### IMS 인증을 사용하는 Adobe Analytics {#configuration-parameters-ims}
 
-Adobe Analytics를 AEM as a Cloud Service와 제대로 통합하기 위해 IMS 구성이 필요합니다. 이 구성은 반드시 생성되어야 하므로 다음을 참조하십시오. [페이지](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) analytics IMS 구성을 만드는 방법에 대해 알아봅니다.
+Adobe Analytics를 AEM as a Cloud Service와 제대로 통합하기 위해 IMS 구성이 필요합니다. 이 구성은 필수로 만들어야 하므로 해당 [페이지](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)를 참조하여 Analytics IMS 구성을 만드는 방법에 대해 알아보십시오.
 
 ### 사이트에 구성 추가 {#add-configuration}
 
-사이트에 Touch UI 구성을 적용하려면 **사이트**&#x200B;로 이동하여 **원하는 사이트 페이지를 선택**&#x200B;한 다음 **속성** → **고급** → **구성**&#x200B;으로 이동하여 구성 테넌트를 선택합니다.
+사이트에 Touch UI 구성을 적용하려면 **Sites**&#x200B;로 이동하여 **원하는 사이트 페이지를 선택**&#x200B;한 다음 **속성** → **고급** → **구성**&#x200B;으로 이동하여 구성 테넌트를 선택합니다.
 
 ## Adobe Launch를 사용하여 AEM 사이트에서 Adobe Analytics 통합 {#analytics-launch}
 
