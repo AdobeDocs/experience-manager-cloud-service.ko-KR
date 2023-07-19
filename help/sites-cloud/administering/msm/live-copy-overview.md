@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '731'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 다음 위치에서 Live Copy 개요를 열 수 있습니다.
 
-* [블루프린트 페이지의 참조 측면 패널(사이트 콘솔)](#opening-live-copy-overview-references-for-a-blueprint-page)
+* [블루프린트 페이지의 참조 측면 패널(Sites 콘솔)](#opening-live-copy-overview-references-for-a-blueprint-page)
 * [블루프린트 페이지 속성](#opening-live-copy-overview-properties-of-a-blueprint-page)
 
 ### 블루프린트 페이지에 대한 참조 {#references-to-a-blueprint-page}
