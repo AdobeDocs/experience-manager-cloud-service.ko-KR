@@ -3,9 +3,9 @@ title: Cloud Manager 환경 변수
 description: 표준 환경 변수는 Cloud Manager를 통해 구성 및 관리할 수 있으며 OSGi 구성에서 사용할 런타임 환경에 제공됩니다.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1018'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 95%
 1. Cloud Manager에 사용할 수 있는 다양한 프로그램이 나열됩니다. 관리하고자 하는 프로그램을 선택합니다.
 1. 선택한 프로그램의 **환경** 탭을 선택한 다음 왼쪽 탐색 패널에서 환경 변수를 생성할 환경을 선택합니다.
 1. 환경 세부 정보 내에서 **구성** 탭을 선택한 다음 **추가**&#x200B;를 선택하여 **환경 구성** 대화 상자를 엽니다.
-   * 환경 변수를 처음 추가하는 경우 **구성 추가** 페이지의 중앙에 있는 단추입니다. 이 버튼 또는 **추가**&#x200B;를 사용하여 **환경 구성** 대화 상자를 열 수 있습니다.
+   * 환경 변수를 처음 추가하는 경우 페이지 중앙에 **구성 추가** 버튼이 표시됩니다. 이 버튼 또는 **추가**&#x200B;를 사용하여 **환경 구성** 대화 상자를 열 수 있습니다.
 
    ![구성 탭](assets/configuration-tab.png)
 
@@ -88,7 +88,7 @@ ht-degree: 95%
 
    ![변수 편집](assets/edit-variable.png)
 
-1. 필요한 구성을 모두 변경한 후 을 선택합니다. **저장**.
+1. 필요한 구성을 모두 변경한 후에 **저장**&#x200B;을 선택합니다.
 
 [변수를 추가할 때와 마찬가지로](#add-variables) **업데이트 중** 상태의 표시기가 표 상단과 새로 업데이트된 변수 옆에 표시되어 구성을 통해 환경이 업데이트되고 있음을 나타냅니다. 완료된 후에 업데이트된 환경 변수가 표에 표시됩니다.
 
@@ -128,7 +128,7 @@ ht-degree: 95%
 
 ### OSGi 구성 {#osgi}
 
-일반 환경 변수와 비밀 모두 [OSGi 구성](/help/implementing/deploying/configuring-osgi.md).
+일반 환경 변수 및 비밀 모두 [OSGi 구성](/help/implementing/deploying/configuring-osgi.md)에서 사용할 수 있습니다.
 
 ### 파이프라인 변수 {#pipeline}
 
