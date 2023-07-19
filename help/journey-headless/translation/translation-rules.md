@@ -3,9 +3,9 @@ title: Headless 콘텐츠에 대한 번역 규칙 구성
 description: 번역 규칙을 정의하여 번역할 콘텐츠를 식별하는 방법에 대해 알아봅니다.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '942'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ AEM Headless 번역 여정의 이전 문서인 [번역 커넥터 구성](configu
 >이 설명서 여정 단계는 콘텐츠 조각에서 **번역 가능한** 플래그를 사용하지 않는 경우에만 필요합니다.
 >
 >* **번역 가능한** 플래그는 번역 규칙을 자동으로 만들어 개입이 필요하지 않습니다.
->* 다음 **변환 가능** 플래그는 번역 통합 프레임워크 구성이 로 설정된 경우에만 사용됩니다. **[번역을 위해 콘텐츠 모델 필드 활성화](/help/sites-cloud/administering/translation/integration-framework.md)**.
+>* **번역 가능한** 플래그는 번역 통합 프레임워크 구성이 **[번역을 위해 콘텐츠 모델 필드 활성화](/help/sites-cloud/administering/translation/integration-framework.md)**&#x200B;로 설정된 경우에만 사용됩니다.
 >* TIF 구성에서 이 옵션을 활성화하면 수동으로 만든 번역 규칙을 대체합니다.|
 
 ## 목표 {#objective}
