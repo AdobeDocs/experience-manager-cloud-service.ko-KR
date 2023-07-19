@@ -1,11 +1,11 @@
 ---
 title: 모바일 디바이스용 페이지 작성
-description: 모바일용 작성 시 여러 에뮬레이터 간을 전환하여 최종 사용자에게 표시되는 내용을 확인할 수 있습니다
+description: 모바일용으로 작성할 때 몇 개의 에뮬레이터 간을 전환하여 최종 사용자에게 표시되는 내용을 확인할 수 있습니다.
 exl-id: fabd4468-3304-402f-9522-342da3bbae94
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '267'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -13,13 +13,13 @@ ht-degree: 77%
 
 Adobe Experience Manager 페이지는 반응형 레이아웃을 기반으로 합니다. [반응형 레이아웃](/help/sites-cloud/authoring/features/responsive-layout.md)은 대상 디바이스에 맞게 콘텐츠를 자동으로 조정하므로 특정 디바이스를 위한 콘텐츠를 작성할 필요가 없습니다.
 
-모바일 페이지를 작성할 때는 모바일 디바이스를 에뮬레이션하는 방식으로 페이지가 표시됩니다. 페이지 작성 시 여러 에뮬레이터 간을 전환하여 최종 사용자가 페이지에 액세스할 때 표시되는 내용을 확인할 수 있습니다.
+모바일 페이지를 작성할 때는 모바일 디바이스를 에뮬레이션하는 방식으로 페이지가 표시됩니다. 페이지를 작성할 때에는 몇 개의 에뮬레이터 간을 전환하여 페이지에 액세스할 때 최종 사용자에게 표시되는 내용을 확인할 수 있습니다.
 
 디바이스는 페이지를 렌더링할 디바이스의 기능에 따라 카테고리 기능, 스마트와 터치로 그룹화됩니다. 최종 사용자가 모바일 페이지에 액세스하면 AEM이 디바이스를 감지하여 디바이스 그룹에 해당하는 표현 데이터를 전송합니다.
 
 >[!NOTE]
 >
->기존 표준 사이트를 기반으로 모바일 사이트를 만들려면 표준 사이트의 라이브 카피를 만듭니다. 다음을 참조하십시오 [라이브 카피 만들기](/help/sites-cloud/administering/msm/creating-live-copies.md).
+>기존 표준 사이트를 기반으로 모바일 사이트를 만들려면 표준 사이트의 Live Copy를 만드십시오. [Live Copy 만들기](/help/sites-cloud/administering/msm/creating-live-copies.md)를 참조하십시오.
 >
 >AEM 개발자는 새 디바이스 그룹을 만들 수 있습니다. 디바이스 그룹 필터 만들기를 참조하십시오.
 
@@ -35,8 +35,8 @@ Adobe Experience Manager 페이지는 반응형 레이아웃을 기반으로 합
 
    ![에뮬레이터 아이콘](/help/sites-cloud/authoring/assets/emulator.png)
 
-1. 구성 요소 브라우저 또는 에셋 브라우저에 있는 구성 요소를 페이지에 드래그하여 놓습니다.
-1. 선택한 디바이스를 기반으로 페이지 및 해당 구성 요소의 [응답형 레이아웃](/help/sites-cloud/authoring/features/responsive-layout.md)을 수정합니다.
+1. 구성 요소 브라우저 또는 자산 브라우저에 있는 구성 요소를 페이지에 드래그하여 놓습니다.
+1. 선택한 디바이스를 기반으로 페이지 및 해당 구성 요소의 [반응형 레이아웃](/help/sites-cloud/authoring/features/responsive-layout.md)을 수정합니다.
 
 페이지 모습은 다음과 유사합니다.
 
