@@ -5,9 +5,9 @@ hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '701'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 96%
 >[!NOTE]
 >이 기능은 릴리스되지 않았습니다.
 
-AEM as Cloud Service은 즉각적인 조치가 필요한 중요한 장애 발생 시 작업 센터 이메일 알림을 보내고 최적화를 위한 사전 권장 사항을 보냅니다. 예로는 차단된 대기열 또는 만료되는 자격 증명 세트가 있습니다. 액션 센터 알림 유형의 전체 세트는 [아래 표](#supported-notification-types)에서 볼 수 있으며 시간이 지남에 따라 확장됩니다.
+AEM as Cloud Service는 최적화에 즉각적인 조치 및 사전 알림 추천이 필요한 중대 인시던트가 발생하면 액션 센터 이메일 알림을 전송합니다. 예로는 차단된 대기열 또는 만료되는 자격 증명 세트가 있습니다. 액션 센터 알림 유형의 전체 세트는 [아래 표](#supported-notification-types)에서 볼 수 있으며 시간이 지남에 따라 확장됩니다.
 
 액션 센터 이메일 알림이 수신되면 클릭하여 AEM as a Cloud Service의 액션 센터를 열 수 있으며, 이때 고객이 취해야 할 조치를 설명하는 추가 컨텍스트를 표시하는 팝업이 함께 열립니다.
 
@@ -56,7 +56,7 @@ AEM as Cloud Service은 즉각적인 조치가 필요한 중요한 장애 발생
 
 ![지원에 문의 2](/help/operations/assets/contact-support2.png)
 
-모든 지원 티켓과 마찬가지로 지원 티켓이 [Adobe Admin Console의 지원 사례 탭](https://helpx.adobe.com/kr/enterprise/using/support-for-enterprise.html)에 나타나며, 여기에서 지원 티켓을 추적하고 댓글을 추가할 수 있습니다.
+모든 지원 티켓과 마찬가지로 지원 티켓이 [Adobe Admin Console의 지원 사례 탭](https://helpx.adobe.com/enterprise/using/support-for-enterprise.html)에 나타나며, 여기에서 지원 티켓을 추적하고 댓글을 추가할 수 있습니다.
 
 ![Admin Console 지원](/help/operations/assets/admin-console-support.png)
 
