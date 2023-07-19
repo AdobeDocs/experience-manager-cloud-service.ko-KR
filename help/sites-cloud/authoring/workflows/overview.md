@@ -1,17 +1,17 @@
 ---
 title: 워크플로를 사용하여 작업
-description: AEM의 워크플로에서는 페이지나 에셋에서 수행되는 일련의 단계들을 자동화할 수 있습니다.
+description: AEM의 워크플로에서는 페이지나 자산에서 수행되는 일련의 단계들을 자동화할 수 있습니다.
 exl-id: ed157646-abb3-45c6-bafd-7889bd93fdf3
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '178'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
 # 워크플로를 사용하여 작업 {#working-with-workflows}
 
-AEM 워크플로에서는 (하나 이상의) 페이지 및/또는 에셋에서 수행되는 일련의 단계들을 자동화할 수 있습니다.
+AEM 워크플로에서는 (하나 이상의) 페이지 및/또는 자산에서 수행되는 일련의 단계들을 자동화할 수 있습니다.
 
 예를 들어 편집자는 게시할 때 사이트 관리자가 페이지를 활성화하기 전에 콘텐츠를 검토해야 합니다. 이 예제를 자동화하는 워크플로는 필요한 작업을 수행할 때가 되면 각 참가자에게 알립니다.
 
@@ -24,7 +24,7 @@ AEM 워크플로에서는 (하나 이상의) 페이지 및/또는 에셋에서 �
 * 콘텐츠 작성자는 페이지에 워크플로를 적용하고 워크플로에 참여합니다.
 * 사용하는 워크플로는 조직의 비즈니스 프로세스마다 고유합니다.
 
-다음 페이지는 다음 내용을 다룹니다.
+다음 페이지에 이 내용이 나와 있습니다.
 
 * [페이지에 워크플로 적용](/help/sites-cloud/authoring/workflows/applying.md)
 * [워크플로에 참여](/help/sites-cloud/authoring/workflows/participating.md)
