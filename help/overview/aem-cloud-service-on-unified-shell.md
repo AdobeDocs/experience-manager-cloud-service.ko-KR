@@ -3,9 +3,9 @@ title: 통합 셸의 AEM as a Cloud Service
 description: 통합 셸의 AEM as a Cloud Service
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '394'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ AEM as a Cloud Service(작성자 서비스)가 통합 셸과 통합되어 사용
 
 이에 대한 이점은 다음과 같습니다.
 
-* 모든 Experience Cloud 애플리케이션에서 단일 사인온
+* 모든 Experience Cloud 애플리케이션 간 SSO(Single Sign-On)
 * 간편한 조직 간 전환 또는 다른 애플리케이션으로의 전환
 * 제품 도움말 개선
 * 문제를 보고하거나 Adobe와 아이디어를 공유할 수 있는 간편한 제품 내 피드백 버튼
@@ -32,13 +32,13 @@ AEM as a Cloud Service(작성자 서비스)가 통합 셸과 통합되어 사용
 >[!NOTE]
 >관리 권한이 있는 계정에서만 통합 셸을 비활성화할 수 있습니다.
 
-1. 클릭 **도구 > Cloud Services**.
+1. **도구 > 클라우드 서비스**&#x200B;를 클릭합니다.
 
-   관리자는 아래와 같이 통합 셸 구성 카드를 볼 수 있습니다.
+   관리 사용자는 아래와 같이 통합 셸 구성 카드를 볼 수 있습니다.
 
    ![이미지](/help/overview/assets/unifiedshell2.png)
 
-1. 클릭 **통합 쉘 구성**. 그런 다음 아래 표시된 확인란을 선택 해제하여 통합 셸을 비활성화합니다.
+1. **통합 셸 구성**&#x200B;을 클릭합니다. 그런 다음 아래 표시된 확인란을 선택 해제하여 통합 셸을 비활성화합니다.
 
    ![이미지](/help/overview/assets/unifiedshell3.png)
 
@@ -54,13 +54,13 @@ AEM as a Cloud Service(작성자 서비스)가 통합 셸과 통합되어 사용
 
 ## AEM as a Cloud Service 환경 식별 {#identify-aemaacs-environment}
 
-AEM as a Cloud Service는 프로덕션, 스테이징 및 개발의 세 가지 유형의 환경을 제공합니다. 다음을 참조하십시오 [환경 유형](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=ko) 을 참조하십시오. 통합 셸과의 통합을 통해 사용자가 Author 서비스에 로그인한 환경 유형이 아래와 같이 레이블을 통해 상단 헤더에 표시됩니다.
+AEM as a Cloud Service는 프로덕션, 스테이징 및 개발의 세 가지 유형의 환경을 제공합니다. 자세한 내용은 [환경 유형](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en)을 참조하십시오. 통합 셸과의 통합을 통해 사용자가 Author 서비스에 로그인한 환경 유형이 아래와 같이 레이블을 통해 상단 헤더에 표시됩니다.
 
 ![이미지](/help/overview/assets/unifiedshell_header_label.png)
 
 ## AEM 받은 편지함 액세스 {#accessing-the-aem-inbox}
 
-통합 쉘에서 벨 아이콘을 클릭하여 AEM 받은 편지함에 액세스할 수 있습니다.
+AEM 받은 편지함은 통합 셸에서 벨 아이콘을 클릭하여 액세스할 수 있습니다.
 
 >[!INFO]
 >
@@ -68,6 +68,6 @@ AEM as a Cloud Service는 프로덕션, 스테이징 및 개발의 세 가지 �
 
 ![이미지](/help/overview/assets/unifiedshell5.png)
 
-AEM 받은 편지함으로 이동할 수 있도록 팝오버에서 받은 편지함 버튼을 클릭합니다.
+팝오버에서 [받은 편지함] 버튼을 클릭하여 AEM 받은 편지함으로 이동합니다.
 
 ![이미지](/help/overview/assets/unifiedshell6.png)
