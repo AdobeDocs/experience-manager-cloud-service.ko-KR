@@ -3,9 +3,9 @@ title: AEM에서의 콘텐츠 조각 모델 만들기에 대해 알아보기
 description: 콘텐츠 조각 모델을 사용하여 Headless CMS용 콘텐츠를 모델링하는 개념 및 메커니즘에 대해 알아봅니다.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '687'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -59,11 +59,11 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 그럼 어떤 작업을 수행해야 합니까?
 
-의 인스턴스를 드래그할 수 있습니다 **데이터 유형** 왼쪽 공간으로 이동합니다. 이미 모델을 정의하고 있습니다.
+**데이터 유형** 인스턴스를 왼쪽 공간으로 드래그하여 모델을 미리 정의할 수 있습니다.
 
 ![필드 정의](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 
-데이터 유형을 추가한 후 다음을 정의해야 합니다. **속성** 해당 필드에 대해. 이는 사용 중인 유형에 따라 다릅니다. 예:
+데이터 유형을 추가한 후에 해당 필드에 대한 **속성**&#x200B;을 정의해야 합니다. 이는 사용 중인 유형에 따라 다릅니다. 예:
 
 ![데이터 속성](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
 
@@ -73,7 +73,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ### 콘텐츠 작성자 {#your-content-authors}
 
-콘텐츠 작성자가 모델을 만드는 데 사용한 실제 데이터 유형 및 속성을 볼 수 없습니다. 즉, 특정 필드를 완료하는 방법에 대한 도움말 및 정보를 제공해야 할 수도 있습니다. 기본 정보에는 필드 레이블 및 기본값을 사용할 수 있지만 복잡한 정보에는 프로젝트 관련 설명서를 고려해야 합니다.
+콘텐츠 작성자는 모델 생성에 사용된 실제 데이터 유형 및 속성을 확인할 수 없습니다. 즉, 특정 필드를 완료하는 방법에 대한 도움말 및 정보를 제공해야 할 수도 있습니다. 기본 정보에는 필드 레이블 및 기본값을 사용할 수 있지만 복잡한 정보에는 프로젝트 관련 설명서를 고려해야 합니다.
 
 >[!NOTE]
 >
