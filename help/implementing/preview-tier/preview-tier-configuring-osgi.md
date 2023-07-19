@@ -3,9 +3,9 @@ title: 미리보기 계층을 위한 OSGi 설정 구성
 description: 콘텐츠를 시작하기 전에 미리보기 위해서 AEM 미리보기 서비스를 구성하는 방법에 대해서 알아봅니다.
 exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '219'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ AEM은 개발자 및 콘텐츠 작성자가 웹 사이트의 최종 결과물이
 
 >[!NOTE]
 >
->환경 미리보기에 대한 자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+>미리보기 환경에 대한 자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)을 참조하십시오.
 
 ## 미리보기 계층을 위한 OSGi 설정 구성 {#configuring-osgi-settings-for-the-preview-tier}
 
