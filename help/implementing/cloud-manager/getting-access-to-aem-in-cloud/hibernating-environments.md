@@ -3,9 +3,9 @@ title: 샌드박스 환경 최대 절전 모드 설정 및 해제
 description: 샌드박스 프로그램의 환경이 자동으로 최대 절전 모드로 전환되는 방법과 최대 절전 모드를 해제하는 방법에 대해 알아봅니다.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '685'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Developer Console에서 샌드박스 프로그램을 수동으로 최대 절전 
 
 1. **환경** 카드에서 줄임표 버튼을 클릭하고 **Developer Console**&#x200B;을 선택합니다.
 
-   * 다음을 참조하십시오 [Developer Console 액세스](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) developer Console에 대한 추가 세부 정보.
+   * Developer Console에 대한 자세한 내용은 [Developer Console 액세스](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)를 참조하십시오.
 
    ![Developer Console 메뉴 옵션](assets/developer-console-menu-option.png)
 
@@ -69,7 +69,7 @@ Developer Console에서 샌드박스 프로그램을 수동으로 최대 절전 
 
 1. **환경** 카드에서 줄임표 버튼을 클릭하고 **Developer Console**&#x200B;을 선택합니다.
 
-   * 다음을 참조하십시오 [Developer Console 액세스](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) developer Console에 대한 추가 세부 정보.
+   * Developer Console에 대한 자세한 내용은 [Developer Console 액세스](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)를 참조하십시오.
 
 1. **최대 절전 모드 해제**&#x200B;를 클릭합니다.
 
