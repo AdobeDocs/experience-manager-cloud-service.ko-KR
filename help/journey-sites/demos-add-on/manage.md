@@ -3,9 +3,9 @@ title: 데모 사이트 관리
 description: 내 데모 사이트를 관리하는 데 도움이 되는 도구 및 이를 제거하는 방법에 대해 알아봅니다.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '946'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 98%
 
 내 데모 사이트를 관리하는 데 도움이 되는 도구 및 이를 제거하는 방법에 대해 알아봅니다.
 
-## 지금까지의 이야기 {#story-so-far}
+## 지금까지의 스토리 {#story-so-far}
 
 AEM 참조 데모 추가 기능 여정의 이전 문서인 [사이트 생성](create-site.md)에서는 참조 데모 추가 기능의 템플릿을 기반으로 새 데모 사이트를 제작해 보았습니다. 이제
 
@@ -56,7 +56,7 @@ AEM 참조 데모 추가 기능 여정의 이전 문서인 [사이트 생성](cr
 * **프라임 작성자 캐시** - 이 옵션은 Adobe Experience Manager 인스턴스 내에서 여러 리소스를 가져와 가져오기 시간을 단축할 수 있습니다. 몇 초 정도 소요될 수 있습니다.
 * **Android 앱** - 데모 Android 앱 설치 및 실행을 위한 도구입니다. **WKND 단일 페이지 앱**&#x200B;을 기반으로 하는 사이트를 제작하여 이 페이지를 채우십시오. Android 디바이스, 에뮬레이터 또는 Bluestacks에서 시작하십시오.
 * **사용자 환경 설정** - 튜토리얼 팝업 대화 상자를 끕니다.
-* **GraphQL 설정** - 빠르게 전역 GraphQL 끝점을 설정합니다.
+* **GraphQL 설정** - 빠르게 전역 GraphQL 엔드포인트를 설정합니다.
 
 ## 데모 사이트 및 템플릿 삭제 {#deleting}
 
@@ -105,7 +105,7 @@ AEM 기능 세트를 테스트한 다음에는 데모 사이트 또는 이를 �
 
 * [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Cloud Manager의 기능에 대해 자세히 알아보려면 바로 심화 기술 문서를 참조할 수 있습니다.
 * [사이트 생성](/help/sites-cloud/administering/site-creation/create-site.md) - AEM을 통해 사이트 템플릿을 사용하여 사이트를 만들고 이러한 사이트의 스타일 및 구조를 정의하는 방법에 대해 알아봅니다.
-* [AEM의 페이지 이름 지정 규칙입니다](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices). - AEM 페이지 구성 규칙에 대해 이해하려면 이 페이지 를 참조하십시오.
+* [AEM의 페이지 이름 지정 규칙입니다](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices). - 이 AEM 페이지 구성 규칙에 대해 이해하려면 이 페이지를 참조하십시오.
 * [AEM 기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md) - AEM을 처음 접하여 탐색 및 콘솔 구성과 같은 기본 개념에 대해 이해하고자 하는 경우 이 문서를 살펴보십시오.
 * [AEM as a Cloud Service 기술 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - AEM에 대해 확실히 이해하고 있다면 바로 심화 기술 문서를 참조할 수 있습니다.
 * [사이트 템플릿](/help/sites-cloud/administering/site-creation/site-templates.md) - 사이트 템플릿 구조 및 이를 사용하여 사이트를 만드는 방법에 대해 자세히 알아보려면 이 문서를 참조하십시오.
