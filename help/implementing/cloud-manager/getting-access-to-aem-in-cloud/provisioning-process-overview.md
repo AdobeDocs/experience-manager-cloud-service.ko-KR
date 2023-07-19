@@ -2,9 +2,9 @@
 title: 프로비저닝 프로세스 - 개요
 description: 프로비저닝 프로세스 - 개요
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '330'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -34,13 +34,13 @@ ht-degree: 95%
 ![processoverview.jpg](assets/processOverview.jpg)
 
 
-자세한 내용은 [Experience League 시 as a Cloud Service Experience Manager에 온보딩](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=ko).
+자세한 내용은 [Experience League에서 Experience Manager as a Cloud Service 온보딩](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en)을 참조하십시오.
 
 ### 리소스 및 링크
 
-* [AEM as a Cloud Service에 대한 IMS 지원](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=ko)
-* [Cloud Manager의 역할 기반 권한](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=ko#what-is-required)
-* [Experience Manager as a Cloud Service 액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=ko#getting-access)
+* [AEM as a Cloud Service에 대한 IMS 지원](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en)
+* [Cloud Manager의 역할 기반 권한](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=en#what-is-required)
+* [Experience Manager as a Cloud Service 액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#getting-access)
 
 
 ## Adobe Experience Manager as a Cloud Service 온보딩 프로세스
@@ -75,4 +75,4 @@ ht-degree: 95%
 ## 도움말 및 리소스
 
 * [최초 로그인 - Cloud Service](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
-* [AEM as a Cloud Service 액세스 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=ko#accessing)
+* [AEM as a Cloud Service 액세스 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#accessing)
