@@ -3,7 +3,7 @@ title: 적응형 양식에 대한 제출 액션을 구성하는 방법
 description: 적응형 양식은 여러 제출 액션을 제공합니다. 제출 액션은 제출 후 적응형 양식의 처리 방법을 정의합니다. 기본 제공 제출 액션을 사용하거나 직접 만들 수 있습니다.
 hide: true
 hidefromtoc: true
-source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
+source-git-commit: ac9689a911be119ae53d5e1134595c567370b7c4
 workflow-type: tm+mt
 source-wordcount: '3366'
 ht-degree: 2%
@@ -12,17 +12,17 @@ ht-degree: 2%
 
 # 적응형 양식 제출 액션 {#configuring-the-submit-action}
 
+<span class="preview"> Adobe은 핵심 구성 요소를 사용하여 다음을 수행할 것을 권장합니다. [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 또는 종료 [독립 실행형 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md). </span>
+
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service | 이 문서 |
+| 적용 대상 | ✅ 양식 핵심 구성 요소 ❎ [적응형 양식 기초 구성 요소](/help/forms/configuring-submit-actions.md) |
 
-**적용 대상**: ✔️ 양식 핵심 구성 요소 ❌ [적응형 양식 기초 구성 요소](/help/forms/configuring-submit-actions.md). Adobe은 핵심 구성 요소를 사용하여 다음을 수행할 것을 권장합니다. [AEM Sites 페이지에 적응형 Forms 추가](create-or-add-an-adaptive-form-to-aem-sites-page.md) 또는 종료 [독립 실행형 적응형 Forms 만들기](creating-adaptive-form-core-components.md).
 
-제출 액션을 사용하면 적응형 양식을 통해 캡처된 데이터 대상을 선택할 수 있습니다. 사용자가 를 클릭하면 트리거됩니다. **[!UICONTROL 제출]** 적응형 양식의 단추입니다.
-
-핵심 구성 요소에 빌드된 적응형 Forms용 Forms as a Cloud Service은 사전 빌드된 제출 액션 배열을 제공합니다. 기본 제출 액션을 사용하면 다음과 같은 작업을 수행할 수 있습니다.
+제출 액션을 사용하면 적응형 양식을 통해 캡처된 데이터 대상을 선택할 수 있습니다. 사용자가 를 클릭하면 트리거됩니다. **[!UICONTROL 제출]** 적응형 양식의 단추입니다. Forms as a Cloud Service(핵심 구성 요소 기반 적응형 Forms)는 사전 빌드된 제출 액션 배열을 제공합니다. 기본 제출 액션을 사용하면 다음과 같은 작업을 수행할 수 있습니다.
 
 * 전자 메일을 통해 손쉽게 양식 데이터를 보낼 수 있습니다.
 * 데이터를 전송하는 동안 Microsoft Power Automate 플로우 또는 AEM 워크플로우를 시작합니다.
