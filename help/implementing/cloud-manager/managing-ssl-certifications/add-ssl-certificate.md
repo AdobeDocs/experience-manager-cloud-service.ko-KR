@@ -3,9 +3,9 @@ title: SSL 인증서 추가
 description: Cloud Manager의 셀프서비스 도구를 사용하여 자체 SSL 인증서를 추가하는 방법을 알아봅니다.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '571'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Cloud Manager를 사용하여 인증서를 추가하려면 다음 단계를 수�
 
    * 감지된 모든 오류가 표시됩니다.
       * 인증서를 저장하려면 먼저 모든 오류를 해결해야 합니다.
-      * 다음을 참조하십시오 [인증서 오류](#certificate-errors) 일반적인 오류를 해결하는 방법에 대한 자세한 내용을 알아봅니다.
+      * 일반적인 오류를 해결하는 방법에 대한 자세한 내용은 [인증서 오류](#certificate-errors) 섹션을 참조하십시오.
 
 1. 인증서를 저장하려면 **저장**&#x200B;을 클릭합니다.
 
