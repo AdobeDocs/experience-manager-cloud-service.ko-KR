@@ -4,9 +4,9 @@ description: 콘텐츠와 커머스 소개 및 개요. Experience Manager 전자
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '891'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ Adobe Experience Manager 콘텐츠 및 상거래를 통해 브랜드 확장과 �
 
 ## Content and Commerce를 통해 고객의 성공적인 여정을 지원하는 방법 {#successful}
 
-온라인 상거래 경험에 대한 고객 기대가 높아지면서 브랜드는 차별화된 경험과 더 많은 콘텐츠를 신속하게 제공해야 한다는 압박에 시달리고 있습니다. 하지만 콘텐츠 관리 플랫폼을 구현하려면 사용자 지정 구성 요소와 저작 도구 등 기본 요소 개발에 막대한 시간과 예산을 투자해야 하고 유지 관리 및 업그레이드 시 비용이 발생하는 경우가 있습니다. Experience Manager Sites는 즉시 사용 가능한 상거래 핵심 구성 요소, 작성 도구 및 참조용 매장을 공급하는 Experience Manager as a Cloud Service의 추가 기능 모듈로 Content and Commerce를 제공하여 Go-Live를 가속화하고, 원활한 팀 간 공동 작업을 활성화하고, 전환을 유도할 수 있습니다.
+온라인 상거래 경험에 대한 고객 기대가 높아지면서 브랜드는 차별화된 경험과 더 많은 콘텐츠를 신속하게 제공해야 한다는 압박에 시달리고 있습니다. 하지만 콘텐츠 관리 플랫폼을 구현하려면 사용자 정의 구성 요소와 저작 도구 등 기본 요소 개발에 막대한 시간과 예산을 투자해야 하고 유지 관리 및 업그레이드 시 비용이 발생하는 경우가 있습니다. Experience Manager Sites는 즉시 사용 가능한 상거래 핵심 구성 요소, 작성 도구 및 참조용 매장을 공급하는 Experience Manager as a Cloud Service의 추가 기능 모듈로 Content and Commerce를 제공하여 Go-Live를 가속화하고, 원활한 팀 간 공동 작업을 활성화하고, 전환을 유도할 수 있습니다.
 
-브랜드는 Adobe Commerce, Adobe Experience Cloud의 일부 및 원하는 상거래 엔진과 Experience Manager을 통합할 수 있습니다. Experience Manager Content and Commerce를 통해 브랜드는 다음과 같은 작업을 수행할 수 있습니다.
+브랜드는 Experience Manager를 Adobe Experience Cloud에 포함된 Adobe Commerce 및 선택한 모든 상거래 엔진과 통합할 수 있습니다. Experience Manager Content and Commerce를 통해 브랜드는 다음과 같은 작업을 수행할 수 있습니다.
 
 * 신속한 확장 및 혁신
 * 전환 유도를 위한 경험 개인화
@@ -28,7 +28,7 @@ Adobe Experience Manager 콘텐츠 및 상거래를 통해 브랜드 확장과 �
 
 ## AEM 전자 상거래 통합 프레임워크(CIF) 소개 {#cif-intro}
 
-해당 프로젝트가 복잡한 상거래 솔루션 통합을 처리해야 하기 때문입니다. 상거래 솔루션은 Adobe Commerce Cloud와 같은 상업용 솔루션부터 일련의 사용자 지정 상거래 서비스에 이르기까지 다양할 수 있습니다. 통합은 사용 사례와 생태계에 따라 크게 달라집니다. 일반적으로 여러 위치를 다루며 느낌이 매우 다양합니다.
+해당 프로젝트가 복잡한 상거래 솔루션 통합을 처리해야 하기 때문입니다. 상거래 솔루션은 Adobe Commerce Cloud와 같은 상업용 솔루션부터 일련의 사용자 정의 상거래 서비스에 이르기까지 다양할 수 있습니다. 통합은 사용 사례와 생태계에 따라 크게 달라집니다. 일반적으로 여러 위치를 다루며 느낌이 매우 다양합니다.
 
 * 복잡하고 동적인 생태계 통합 (예: 제품 카탈로그)
 * 기업은 효율적인 옴니채널 방식으로 자체 라이프사이클로 제품 콘텐츠 관리해야 함
@@ -42,11 +42,11 @@ Adobe Experience Manager 콘텐츠 및 상거래를 통해 브랜드 확장과 �
 
 ## 2013년부터 고객을 지원하는 CIF {#support}
 
-고객 기업이 200개가 넘는 CIF는 콘텐츠 및 상거래 프로젝트 분야에서 입지적인 성공을 거뒀습니다. 현재와 미래의 IT 및 비즈니스에 가치를 제공합니다. 최근 고객 프로젝트에서는 CIF를 &quot;뛰어난 가속기와 많은 가치를 제공하는 엄청난 시간 절약&quot;이라고 설명합니다.
+고객 기업이 200개가 넘는 CIF는 콘텐츠 및 상거래 프로젝트 분야에서 입지적인 성공을 거뒀습니다. 현재와 미래의 IT 및 비즈니스에 가치를 제공합니다. CIF는 최근 고객 프로젝트에서 “수많은 가치를 실현하는 위대한 액셀러레이터이자 타임세이버”로 평가받고 있습니다.
 
 ## CIF 이점 {#cif-benefits}
 
-CIF는 사용자 지정 코드의 필요성을 줄이고 브랜드의 시장 출시 기간을 가속화하는 즉시 사용 가능한 상거래 핵심 구성 요소를 제공합니다. 모든 핵심 구성 요소는 Adobe의 클라이언트측 데이터 레이어와 즉시 통합되므로 통합 프로필과 같은 고객 프로필을 하이드레이션할 수 있습니다. 이 프로필은 방문자의 행동을 자세히 캡처합니다. 이 행동은 고객 여정을 실시간으로 예측하고 개인화하는 데 사용할 수 있습니다.
+CIF는 사용자 정의 코드의 필요성을 줄이고 브랜드의 시장 출시 기간을 가속화하는 즉시 사용 가능한 상거래 핵심 구성 요소를 제공합니다. 모든 핵심 구성 요소는 Adobe의 클라이언트측 데이터 레이어와 즉시 통합되어 통합 프로필 등 고객 프로필을 하이드레이션합니다. 이 프로필은 구체적으로 방문자 행동을 캡처하고 이를 사용하여 실시간으로 고객 여정을 예측하고 개인화할 수 있습니다.
 
 CIF 추가 기능은 Experience Manager로 제품 컨텍스트를 가져오고, 마케터가 개발자에 의존하지 않고 Experience Manager에서 쇼핑 가능한 경험을 만들고 제공할 수 있도록 제품 콘솔과 제품/카테고리 선택기 등 작성 도구를 제공합니다. 이점은 다음과 같습니다.
 
@@ -79,6 +79,6 @@ CIF는 모범 사례를 기반으로 표준화된 통합 패턴을 사용하여 
 
 ## 여정 {#journey}
 
-상거래 여정을 따르는 경우 다음 단계로 이동합니다.
+Commerce 여정을 따르는 경우 다음 단계로 이동하십시오.
 
 * [AEM 콘텐츠 작성자 여정](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
