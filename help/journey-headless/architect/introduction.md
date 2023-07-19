@@ -3,9 +3,9 @@ title: AEM as a Headless CMS용 콘텐츠 모델링 - 소개
 description: 프로젝트 콘텐츠를 모델링하는 Adobe Experience Manager as a Cloud Service as a Headless CMS 기능 사용 소개.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '722'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -66,7 +66,7 @@ AEM의 경우 콘텐츠 설계자는 콘텐츠 모델링을 수행하여 다양�
 
 이는 개발 세부 정보에 가깝지만 스토리텔링을 완성하는 데 흥미를 줄 수도 있습니다.
 
-콘텐츠 조각 모델을 만들고 작성자가 이를 사용하여 콘텐츠를 생성한 후에는 Headless 애플리케이션이 이 콘텐츠에 액세스해야 합니다.
+콘텐츠 조각 모델을 만든 후에 작성자가 이를 사용하여 콘텐츠를 생성하면 Headless 애플리케이션은 이 콘텐츠에 액세스해야 합니다.
 
 Adobe Experience Manager(AEM) as a Cloud Service는 AEM GraphQL API를 통해 콘텐츠 조각에 선택적으로 액세스하여 필요한 콘텐츠만 반환할 수 있습니다. API를 사용하여 개발자는 특정 콘텐츠를 선택하는 쿼리를 만들 수 있습니다. 이 선택 프로세스는 *사용자의* 콘텐츠 조각 모델을 기반으로 합니다.
 
