@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '562'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 95%
 
 >[!TIP]
 >
->프론트엔드 파이프라인 및 사이트 템플릿을 사용하여 사이트를 간편하게 배포하는 방법에 익숙하지 않은 경우 다음을 참조하십시오. [빠른 사이트 생성 여정](/help/journey-sites/quick-site/overview.md) 소개.
+>프론트엔드 파이프라인 및 사이트 템플릿을 사용하여 사이트를 간편하게 배포하는 방법에 익숙하지 않은 경우, [빠른 사이트 생성 여정](/help/journey-sites/quick-site/overview.md)을 검토하십시오.
 
 사이트 템플릿 및 테마를 기반으로 하는 기존 사이트를 만들지 않았다면 AEM은 기존 클라이언트 라이브러리 상단에 있는 프론트엔드 파이프라인을 통해 배포된 테마를 로드하도록 사이트를 구성할 수 있습니다.
 
@@ -47,7 +47,7 @@ AEM은 자동으로 기존 사이트를 프론트엔드 파이프라인을 사�
 
 ## 프론트엔드 파이프라인 활성화 {#enabling}
 
-사이트 콘솔에서 [사이트 레일](site-rail.md)을 사용하여 사이트를 활성화할 수 있습니다.
+Sites 콘솔에서 [사이트 레일](site-rail.md)을 사용하여 사이트를 활성화할 수 있습니다.
 
 1. AEM에 로그인한 다음 **전역 탐색** > **사이트**&#x200B;를 통해 사이트로 이동합니다.
 1. 콘솔에서 사이트를 선택합니다. 사이트의 하위 페이지가 아닌 루트를 선택해야 합니다.
