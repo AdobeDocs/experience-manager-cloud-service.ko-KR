@@ -3,9 +3,9 @@ title: 파이프라인 설정
 description: 프론트엔드 파이프라인을 만들어 사이트 테마의 맞춤화를 관리할 수 있습니다.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '967'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ AEM 빠른 사이트 생성 여정의 이전 문서인 [템플릿으로 사이�
 * Cloud Manager에 대한 액세스 권한이 필요합니다.
 * Cloud Manager에서 **배포 관리자** 역할의 멤버여야 합니다.
 * Cloud Manager에 AEM 환경에 대한 Git 저장소가 설치되어 있어야 합니다.
-   * 이는 일반적으로 모든 진행 중인 프로젝트에 해당되는 사항입니다. 그러나 그렇지 않은 경우, 다음에서 사용할 수 있는 Cloud Manager 저장소 설명서를 참조하십시오. [추가 리소스](#additional-resources) 섹션.
+   * 이는 일반적으로 모든 진행 중인 프로젝트에 해당되는 사항입니다. 그러나 그렇지 않은 경우, [추가 리소스](#additional-resources) 섹션에 있는 Cloud Manager 저장소 설명서를 참조하십시오.
 
 ## 프론트엔드 파이프라인 개요 {#front-end-pipeline}
 
@@ -102,7 +102,7 @@ Cloud Manager에 액세스했으므로 프론트엔드 개발을 위한 파이�
 
 >[!TIP]
 >
->AEMaaCS의 파이프라인에 익숙하고 프론트엔드 파이프라인에 대한 자세한 정보를 포함하여 다양한 파이프라인 유형 간의 차이점에 대해 자세히 알아보고자 하는 경우, CI/CD 파이프라인 구성 - 의 Cloud Services 링크를 참조하십시오. [추가 리소스](#additional-resources) 아래 섹션.
+>AEMaaCS의 파이프라인에 익숙하고 프론트엔드 파이프라인에 대한 자세한 정보를 포함하여 다양한 파이프라인 유형 간의 차이점에 대해 자세히 알아보고자 하는 경우, 아래 [추가 리소스](#additional-resources) 섹션에 있는 CI/CD 파이프라인 구성 - 클라우드 서비스를 참조하십시오.
 
 ## 다음 단계 {#what-is-next}
 
@@ -118,5 +118,5 @@ AEM 빠른 사이트 생성 여정의 한 부분을 완료했으므로,
 다음 문서인 [사이트 테마 맞춤화](customize-theme.md)를 검토하여 빠른 사이트 생성 여정의 다음 부분으로 넘어가는 것이 좋습니다. 다음은 이 문서에 나열된 몇 가지 개념을 자세히 알아보는 추가적인 옵션 리소스이며, 이들 리소스를 여정에서 계속 사용할 필요는 없습니다.
 
 * [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Cloud Manager의 기능에 대해 자세히 알아보려면 바로 심화 기술 문서를 참조할 수 있습니다.
-* [Cloud Manager 저장소](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - AEMaaCS 프로젝트에 대한 git 저장소를 설정하고 관리하는 방법에 대한 자세한 내용은 이 문서를 참조하십시오.
+* [Cloud Manager 저장소](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - AEMaaCS 프로젝트에 대한 Git 저장소를 설정하고 관리하는 방법에 대한 추가 정보가 필요한 경우 이 문서를 참조하십시오.
 * [CI/CD 파이프라인 구성 - 클라우드 서비스](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) - 이 문서에서 파이프라인(전체 스택 및 프론트엔드) 설정에 대한 자세한 내용을 알아보십시오.
