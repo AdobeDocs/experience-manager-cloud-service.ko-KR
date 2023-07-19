@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '175'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Adobe Campaign과의 통합을 지원하는 AEM as a Cloud Service의 지원에 
 >
 >이 문서에는 Adobe Campaign과 클라우드 기반 AEM 솔루션인 AEM as a Cloud Service를 통합하는 방법이 나와 있습니다.
 >
->Adobe Campaign과 AEM 6.5, 온프레미스 또는 AMS 호스팅 AEM 솔루션 통합에 대한 자세한 내용은 [이 문서 보기](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html).
+>Adobe Campaign과 AEM 6.5, 온프레미스 또는 AMS 호스팅된 AEM 솔루션을 통합하는 방법에 대한 자세한 내용은 [이 문서를 참조](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html)하십시오.
 
 ## Adobe Campaign Classic과 통합 {#acc}
 
