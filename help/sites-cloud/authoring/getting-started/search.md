@@ -3,9 +3,9 @@ title: 검색
 description: 포괄적인 검색으로 신속하게 콘텐츠 찾기
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
 source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '491'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
