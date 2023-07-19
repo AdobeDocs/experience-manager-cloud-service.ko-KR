@@ -3,9 +3,9 @@ title: 콘텐츠 미리보기
 description: AEM 미리보기 서비스를 사용하여 콘텐츠를 시작하기 전에 미리 보는 방법에 대해 알아봅니다.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '274'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -16,13 +16,13 @@ AEM은 개발자 및 콘텐츠 작성자가 웹 사이트의 최종 경험이 �
 
 이를 사용하면 페이지 전환 및 게시측 전용 콘텐츠와 같은 작성자 환경에는 표시되지 않는 페이지 경험을 미리 볼 수 있습니다.
 
-환경 미리보기에 대한 자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+미리보기 환경에 대한 자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)을 참조하십시오.
 
 ## 미리보기에 콘텐츠 게시 {#publishing-content-to-preview}
 
 **게시 관리** UI를 사용하여 콘텐츠를 미리보기 서비스에 게시할 수 있습니다.
 
-1. 사이트 콘솔에서 미리보기에 전송할 페이지를 선택한 다음 **게시 관리** 버튼을 클릭합니다.
+1. Sites 콘솔에서 미리보기에 전송할 페이지를 선택한 다음 **게시 관리** 버튼을 클릭합니다.
 1. 다음 마법사에서 대상으로 **미리보기**&#x200B;를 선택합니다.
 
    ![게시 관리](/help/sites-cloud/authoring/assets/previewmanagedpublication.png)
@@ -50,7 +50,7 @@ https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.htm
 
 ## 추가 정보 {#further-information}
 
-또한 다음 문서도 참조할 수 있습니다.
+추가 참조:
 
 * [미리보기 계층을 위한 OSGi 설정 구성](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
 
