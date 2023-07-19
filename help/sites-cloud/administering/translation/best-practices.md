@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '872'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 94%
 
 >[!TIP]
 >
->콘텐츠 번역이 처음이라면 다음을 참조하십시오. [사이트 번역 여정,](/help/journey-sites/translation/overview.md) 는 AEM 강력한 번역 도구를 사용한 AEM Sites 콘텐츠 번역을 안내하며 AEM 또는 번역 경험이 없는 사용자에게 이상적입니다.
+>콘텐츠 번역이 처음인 경우, AEM의 강력한 번역 도구를 사용한 AEM Sites 콘텐츠 번역을 안내하며 AEM이 없거나 번역 경험이 없는 사용자에게 최적화된 [Sites 번역 여정](/help/journey-sites/translation/overview.md)을 참조하십시오.
 
 ## 일반 {#general}
 
@@ -32,7 +32,7 @@ ht-degree: 94%
 
 * 사이트 구조를 설계할 때는 먼저 콘텐츠를 검사하고 언어 콘텐츠를 작성할 위치를 결정해야 합니다. 이 위치는 사이트의 최상위 수준이어야 합니다.
 * 가장 좋은 방법은 최상위 수준의 작성 및 국가 사이트 간에 최대 3단계의 **언어 기반 구조**&#x200B;를 사용하는 것입니다.
-* 다음 언어/국가 사이트 명명 규칙 사용 **[W3C 표준](/help/sites-cloud/authoring/fundamentals/accessible-content.md)**.
+* **[W3C 표준](/help/sites-cloud/authoring/fundamentals/accessible-content.md)**&#x200B;을 따르는 언어/국가 사이트 명명 규칙을 사용합니다.
 * 지역 및 국가에서 콘텐츠를 배포하는 방법을 결정합니다. 동일한 언어를 공유하는 국가들을 고려합니다. 번역된 콘텐츠를 검토하고 수정한 다음 해당 언어를 공유하는 국가 사이트에 푸시하거나 가져올 수 있는 비활성 페이지 계층인 언어 마스터를 만드는 것이 좋습니다.
 * 언어 사본을 사용하거나 MSM/Live Copy를 사용하여 언어 마스터를 만들 수 있습니다.
    * 언어 사본을 사용하는 접근 방식은 AEM의 획기적인 번역 통합 프레임워크에서 사용하는 접근 방식으로, 시작하기 가장 쉬운 방법입니다. 프레임워크는 기본 언어(예: 영어) 마스터에서 언어 마스터로 콘텐츠 변경 내용을 반영하고 번역하는 데 도움이 되는 사용자 인터페이스를 제공합니다. 그러나 프로젝트 규모가 커질수록 늘어나는 페이지 및/또는 언어의 번역을 관리하기 위해서는 워크플로 자동화의 필요성이 점점 더 커지게 됩니다.
