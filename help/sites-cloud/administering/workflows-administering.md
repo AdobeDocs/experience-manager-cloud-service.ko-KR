@@ -4,9 +4,9 @@ description: 워크플로 인스턴스 관리 방법 알아보기
 feature: Administering
 role: Admin
 source-git-commit: 31cda6f7eb7ef1c32ba9d0ec7d198a5f2f38b1e6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1284'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 97%
 1. 탐색을 사용하여 **도구**&#x200B;를 선택한 다음 **워크플로**&#x200B;를 선택합니다.
 1. **인스턴스**&#x200B;를 선택하여 현재 진행되는 실행 중인 워크플로 인스턴스 목록을 표시합니다.
 1. 오른쪽 상단 레일에 있는 워크플로 인스턴스에 **실행 중인 워크플로**, **상태** 및 **세부 정보**&#x200B;가 표시됩니다.
-1. **실행 중인 워크플로**&#x200B;는 실행 중인 워크플로의 수와 상태를 보여 줍니다. 예를 들어 주어진 이미지에 **실행 중인 워크플로**&#x200B;의 수와 AEM 인스턴스의 **상태**&#x200B;가 표시됩니다:
+1. **실행 중인 워크플로**&#x200B;는 실행 중인 워크플로의 수와 상태를 보여 줍니다. 예를 들어 주어진 이미지에 **실행 중인 워크플로**&#x200B;의 수와 AEM 인스턴스의 **상태**&#x200B;가 표시됩니다.
 
    * **상태: 정상**
      ![상태-정상](/help/sites-cloud/administering/assets/status-healthy.png)
@@ -36,17 +36,17 @@ ht-degree: 97%
    * **상태: 비정상**
      ![상태-비정상](/help/sites-cloud/administering/assets/status-unhealthy.png)
 
-1. 워크플로 인스턴스의 **상태 세부 정보**&#x200B;를 알아보려면 **세부 정보**&#x200B;를 클릭하여 **실행 중인 워크플로 인스턴스**&#x200B;의 수, **완료된 워크플로 인스턴스**, **중단된 워크플로 인스턴스**, **실패한 워크플로 인스턴스** 등을 표시합니다. 예를 들어 아래에 표시된 주어진 이미지가 있습니다. **상태 세부 정보** 포함:
+1. 워크플로 인스턴스의 **상태 세부 정보**&#x200B;를 알아보려면 **세부 정보**&#x200B;를 클릭하여 **실행 중인 워크플로 인스턴스**&#x200B;의 수, **완료된 워크플로 인스턴스**, **중단된 워크플로 인스턴스**, **실패한 워크플로 인스턴스** 등을 표시합니다. 예를 들어 다음은 **상태 세부 정보**
 
-   * **상태 세부 사항: 정상**
+   * (**상태 세부 정보: 정상**
      ![상태-세부 정보-정상](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
-   * **상태 세부 정보: 비정상**
+   * **상태 세부 정보: 비정상**)를 보여 주는 해당 이미지입니다.
      ![상태-세부 정보-비정상](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
    >
-   > 정상적인 워크플로 인스턴스를 유지 관리하려면 [정기적인 워크플로 인스턴스 제거](#regular-purging-of-workflow-instances)의 모범 사례 또는 [워크플로 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=ko)를 따라야 합니다.
+   > 정상적인 워크플로 인스턴스를 유지 관리하려면 [정기적인 워크플로 인스턴스 제거](#regular-purging-of-workflow-instances)의 모범 사례 또는 [워크플로 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=en)를 따라야 합니다.
 
 ## 워크플로 인스턴스 검색 {#search-workflow-instances}
 
@@ -198,7 +198,7 @@ ht-degree: 97%
 
 *userMetadataPersistenceEnabled* 속성은 워크플로 모델의 *jcr:content 노드*&#x200B;에 저장됩니다. 이 플래그는 워크플로 메타데이터에서 *cq:userMetaDataCustomPersistenceEnabled*&#x200B;로 유지됩니다.
 
-아래 그림은 워크플로우에 플래그를 설정하는 방법을 보여 줍니다.
+아래 일러스트레이션에서는 워크플로에 플래그를 설정하는 방법을 보여 줍니다.
 
 ![workflow-externalize-config](/help/sites-cloud/administering/assets/workflow-externalize-config.png)
 
