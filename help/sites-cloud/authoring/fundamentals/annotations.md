@@ -3,9 +3,9 @@ title: 페이지 주석 추가
 description: 주석 모드를 사용해 콘텐츠 검토 프로세스를 지원하기 위해 스티커 메모를 사용하듯이 페이지에 주석 및 스케치를 남깁니다.
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '698'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -57,14 +57,14 @@ ht-degree: 94%
 
 1. 주석 추가를 시작하려면 추석 추가 아이콘(도구 모음 왼쪽의 더하기 기호)을 클릭하거나 탭합니다.
 
-1. 필요한 구성 요소(파란색 테두리로 강조 표시되어 주석을 추가할 수 있는 구성 요소)를 클릭하거나 탭하여 주석을 추가하고 대화 상자를 엽니다.
+1. 필요한 구성 요소(파란색 테두리로 강조 표시되고 주석을 추가할 수 있는 구성 요소)를 클릭하거나 탭하여 주석을 추가하고 대화 상자를 엽니다.
 
    ![주석 추가](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
-   여기에서 적절한 필드 및/또는 아이콘을 사용하여 다음을 수행할 수 있습니다.
+   이 대화 상자에서는 적절한 필드 및/또는 아이콘을 사용하여 다음 작업을 할 수 있습니다.
 
    * 주석 텍스트를 입력합니다.
-   * 스케치(선과 모양)를 만들어 구성 요소 영역 강조 표시
+   * 스케치(선과 모양)를 만들어 구성 요소 영역을 강조 표시합니다.
 
      ![주석 스케치 버튼](/help/sites-cloud/authoring/assets/annotation-sketch.png)
 
@@ -131,5 +131,5 @@ ht-degree: 94%
 
 구성 요소 외에도 다양한 리소스에 주석을 달 수 있습니다.
 
-* 에셋에 주석 달기 [에셋에 주석 달기](/help/assets/manage-digital-assets.md#annotating)
-* 비디오 에셋에 주석 달기 [비디오 에셋에 주석 달기](/help/assets/manage-video-assets.md#annotate-video-assets)
+* 자산에 주석 달기 [자산에 주석 달기](/help/assets/manage-digital-assets.md#annotating)
+* 비디오 자산에 주석 달기 [비디오 자산에 주석 달기](/help/assets/manage-video-assets.md#annotate-video-assets)
