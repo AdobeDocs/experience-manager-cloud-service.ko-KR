@@ -3,9 +3,9 @@ title: AEM Headless as a Cloud Service 시작하기
 description: 이 AEM Headless 개발자 여정의 부분에서는 AEM Headless 사전 요구 사항에 대해 알아봅니다.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3084'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -85,7 +85,7 @@ AEM의 Headless 기능은 몇 가지 주요 기능을 기반으로 합니다. �
 * GraphQL API를 사용하면 콘텐츠 조각에 액세스하고 전달하기 위한 요청을 생성할 수 있습니다.
 * Assets REST API를 사용하면 콘텐츠 조각(및 기타 자산)을 만들고 수정할 수 있습니다.
 
-AEM Headless 여정 후반부에서 해당 API와 이를 사용하는 방법에 대해 알아봅니다. 또는 [추가 리소스](#additional-resources) 추가 설명서에 대해서는 아래 섹션 을 참조하십시오.
+AEM Headless 여정 후반부에서 해당 API와 이를 사용하는 방법에 대해 알아봅니다. 또는 아래 [추가 리소스](#additional-resources) 섹션에서 추가 설명서를 참조하십시오.
 
 ## Headless 통합 수준 {#integration-levels}
 
@@ -145,7 +145,7 @@ AEM Headless 프로젝트를 시작하기 전에 알아 두어야 할 몇 가지
 
 프로젝트의 범위를 명확히 정의해야 합니다. 범위는 허용 기준을 알려 주고 완료에 대한 정의를 설정할 수 있도록 합니다.
 
-첫 번째 질문은 “AEM Headless를 통해 얻으려는 목표는 무엇입니까?”입니다. 답은 일반적으로 AEM이 아닌 자체 개발 도구로 빌드한 경험 애플리케이션을 보유하고 있거나 향후 보유하고 있어야 합니다. 이 경험 애플리케이션은 모바일 앱, 웹 사이트 또는 기타 최종 사용자 고객용 경험 애플리케이션일 수 있습니다. AEM Headless 사용 목표는 AEM Headless 호출로 경험 애플리케이션에서 바로 콘텐츠나 CRUD 콘텐츠를 완전히 가져올 수 있는 최신 API를 사용하여 AEM에서 생성, 저장 및 관리되는 콘텐츠로 경험 애플리케이션을 피드하는 것입니다. 이 항목을 원하는 것이 아니면 [AEM 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)로 돌아가 수행할 작업에 더 적합한 섹션을 찾습니다.
+첫 번째 질문은 “AEM Headless를 통해 얻으려는 목표는 무엇입니까?”입니다. AEM이 아닌 자체 개발 도구로 빌드한 경험 애플리케이션을 보유하거나 앞으로 보유할 수 있다는 것이 이 질문에 대한 일반적인 답변입니다. 이 경험 애플리케이션은 모바일 앱, 웹 사이트 또는 기타 최종 사용자 고객용 경험 애플리케이션일 수 있습니다. AEM Headless 사용 목표는 AEM Headless 호출로 경험 애플리케이션에서 바로 콘텐츠나 CRUD 콘텐츠를 완전히 가져올 수 있는 최신 API를 사용하여 AEM에서 생성, 저장 및 관리되는 콘텐츠로 경험 애플리케이션을 피드하는 것입니다. 이 항목을 원하는 것이 아니면 [AEM 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)로 돌아가 수행할 작업에 더 적합한 섹션을 찾습니다.
 
 ### 역할 및 책임 {#roles-responsibilities}
 
@@ -190,7 +190,7 @@ AEM Headless 번역 여정 링크를 포함하여 AEM 워크플로 및 번역 �
 폴더 계층은 콘텐츠 관리와 관련된 두 가지 주요 문제를 해결할 수 있습니다.
 
 * [번역](#translation) - AEM은 로케일별 폴더에서 콘텐츠 사본을 유지 관리하면서 콘텐츠 번역을 관리합니다.
-* 조직 - 폴더는 번역 요구 사항을 지원하고 콘텐츠 조각을 논리적으로 관리하는 데 필요한 콘텐츠 계층 구조를 정의하는 데 사용됩니다.
+* 조직 - 폴더를 사용하여 번역 요구 사항을 지원하고 콘텐츠 조각을 논리적으로 관리하는 데 필요한 콘텐츠 계층을 정의합니다.
 
 AEM에서는 유연한 콘텐츠 구조를 사용하고 계층은 임의적으로 커질 수 있습니다. 단, 폴더 구조의 모든 변경 사항이 콘텐츠 경로를 [사용하는 기존 쿼리에 의도하지 않은 결과를 초래할 수 있음을 인식해야 합니다.](#developer)따라서 사전에 명확하게 설정 및 정의된 계층은 콘텐츠 작성자에게 도움이 될 수 있습니다.
 
