@@ -3,9 +3,9 @@ title: Headless 콘텐츠에 대한 번역 커넥터 구성
 description: AEM을 번역 서비스에 연결하는 방법에 대해 알아봅니다.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1231'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ AEM의 번역 통합 프레임워크(TIF)를 서드파티 번역 서비스와 �
 
 1. 필드에 다음 정보를 입력한 다음 **만들기**&#x200B;를 클릭하거나 탭합니다.
    1. 드롭다운 메뉴에서 **구성 유형**&#x200B;을 선택합니다. 목록에서 **번역 통합**&#x200B;을 선택합니다.
-   1. 구성의 **제목**&#x200B;을 입력합니다. 다음 **제목** 는에서 구성을 식별합니다 **Cloud Services** 콘솔 및 페이지 속성 드롭다운 목록입니다.
+   1. 구성의 **제목**&#x200B;을 입력합니다. **제목**&#x200B;을 통해 **클라우드 서비스** 콘솔 및 페이지 속성 드롭다운 목록에서 구성을 식별합니다.
    1. 필요한 경우 구성을 저장하는 저장소 노드에 사용할 **이름**&#x200B;을 입력합니다.
 
    ![번역 구성 만들기](assets/create-translation-configuration.png)
