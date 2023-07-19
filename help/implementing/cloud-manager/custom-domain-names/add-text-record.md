@@ -3,15 +3,15 @@ title: TXT 레코드 추가
 description: Cloud Manager에서 TXT 레코드를 추가하여 사용자 정의 도메인 이름을 추가하는 방법을 알아봅니다.
 exl-id: d441de29-af41-4d3e-9155-531af9702841
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '329'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # TXT 레코드 추가 {#adding-txt}
 
-DNS TXT 레코드는 도메인이 CDN 서비스에서 호스팅되도록 승인합니다. Cloud Manager가 사용자 정의 도메인을 사용하여 CDN 서비스를 배포하고 이를 백엔드 서비스와 연결하도록 권한을 부여한 영역에서 DNS TXT 레코드를 생성해야 합니다. 이 연결은 전적으로 사용자의 통제 하에 있으며 Cloud Manager가 서비스에서 도메인으로 콘텐츠를 제공하도록 인증합니다. 이 인증은 승인 및 철회될 수 있습니다. TXT 레코드는 도메인 및 Cloud Manager 환경에 따라 다릅니다.
+DNS TXT 레코드는 도메인이 CDN 서비스에서 호스팅되도록 승인합니다. Cloud Manager가 사용자 정의 도메인을 사용하여 CDN 서비스를 배포하고 이를 백엔드 서비스와 연결하도록 권한을 부여한 영역에서 DNS TXT 레코드를 생성해야 합니다. 이 연결은 전적으로 사용자의 통제 하에 있으며 Cloud Manager가 서비스에서 도메인으로 콘텐츠를 제공하도록 인증합니다. 이 인증은 허가될 수도 있고 철회될 수도 있습니다. TXT 레코드는 도메인 및 Cloud Manager 환경에 따라 다릅니다.
 
 TXT 레코드를 추가하기 전에 이러한 요구 사항을 충족해야 합니다.
 
@@ -23,7 +23,7 @@ TXT 레코드를 추가하기 전에 이러한 요구 사항을 충족해야 합
 1. 도메인 호스트에 로그인하고 DNS 레코드 섹션을 찾습니다.
 1. **이름** 값으로 `_aemverification.[yourdomainname]`을 추가하고 나타나는 대로 TXT 값을 정확하게 추가합니다.
 
-이 표의 예를 참조하십시오.
+예시는 이 표를 참조하십시오.
 
 | 도메인 | 이름 | TXT 값 |
 |--- |--- |---|
