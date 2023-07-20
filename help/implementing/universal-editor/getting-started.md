@@ -3,9 +3,9 @@ title: AEM에서 Universal Editor 시작하기
 description: Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 알아봅니다.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '804'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ AEM 앱을 온보딩하고 Universal Editor를 사용하도록 계측하는 데�
 
 ## Universal Editor에 대한 액세스 권한 요청 {#request-access}
 
-먼저 Universal Editor에 대한 액세스 권한을 요청해야 합니다. 다음을 참조하십시오 [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor), 로그인 및 범용 편집기에 대한 액세스 권한이 있는지 확인합니다.
+먼저 Universal Editor에 대한 액세스 권한을 요청해야 합니다. [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor) 로그인으로 이동하여 Universal Editor에 대한 액세스 권한이 있는지 확인하십시오.
 
 액세스 권한이 없는 경우 같은 페이지에 링크된 양식을 통해 요청할 수 있습니다.
 
@@ -102,7 +102,7 @@ X-Frame-Options: SAMEORIGIN은 iframe 내에서 AEM 페이지 렌더링을 방�
 
 Universal Editor 서비스에는 편집 중인 앱의 콘텐츠에 대한 올바른 백엔드 시스템을 식별하고 활용하기 위해 [균일 리소스 이름(URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name)이 필요합니다. 따라서 콘텐츠를 다시 콘텐츠 리소스에 매핑하려면 URN 스키마가 필요합니다.
 
-페이지에 추가된 계측 속성은 대부분 [HTML 마이크로데이터](https://developer.mozilla.org/ko-KR/docs/Web/HTML/Microdata)로 구성되는데, 이는 HTML을 더 의미 있게 만들고 HTML 문서를 색인화하는 등의 작업에 사용할 수 있는 업계 표준입니다.
+페이지에 추가된 계측 속성은 대부분 [HTML 마이크로데이터](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata)로 구성되는데, 이는 HTML을 더 의미 있게 만들고 HTML 문서를 색인화하는 등의 작업에 사용할 수 있는 업계 표준입니다.
 
 ### 연결 만들기 {#connections}
 
@@ -165,7 +165,7 @@ itemid="urn:<referenceName>:<resource>"
 
 이제 앱이 Universal Editor를 사용하도록 구성되었습니다.
 
-다음을 참조하십시오 [유니버설 편집기로 콘텐츠 작성](authoring.md) 콘텐츠 작성자가 범용 편집기를 사용하여 콘텐츠를 만드는 것이 얼마나 쉽고 직관적인지 알아봅니다.
+콘텐츠 작성자가 Universal Editor를 사용하여 콘텐츠를 만드는 것이 얼마나 쉽고 직관적인지 알아보려면 [Universal Editor로 콘텐츠 작성](authoring.md)을 참조하십시오.
 
 ## 추가 리소스 {#additional-resources}
 
