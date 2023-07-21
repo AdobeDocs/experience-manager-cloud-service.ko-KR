@@ -5,7 +5,7 @@ exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '1715'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -121,7 +121,7 @@ You can view additional information about items using the Rail Selector. This al
 
 ## 콘텐츠 조각 작성 {#authoring-content-fragments}
 
-AEM UI(사용자 인터페이스)를 빠르게 소개했지만 사용해 볼 기회가 있었으면 합니다. 이제 핵심 주제인 Headless용 콘텐츠 조각에 대해 알아보겠습니다.
+지금까지 AEM 사용자 인터페이스(UI)에 대해 매우 간략하게 소개했습니다. 기회가 되면 사용해 보시기 바랍니다. 이제 핵심 주제인 Headless용 콘텐츠 조각에 대해 알아보겠습니다.
 
 처음부터 끝까지 전체를 살펴보아야 하지만 인스턴스에 이미 생성된 폴더 및/또는 조각들이 서로 다른 위치에 배치될 수 있습니다. 원칙은 동일합니다.
 
@@ -141,7 +141,7 @@ AEM UI(사용자 인터페이스)를 빠르게 소개했지만 사용해 볼 기
 
 #### 경로 및 태그를 사용하여 폴더에 제공되는 콘텐츠 조각 모델 제한 {#tags-paths-for-models-in-folder}
 
-다소 개선된 고급 섹션입니다. 여러분이 단지 시작하고 일을 시도하고 있다면 여러분은 정말로 그것이 필요하지 않지만, 그것은 그렇습니다 *매우* 조각이 많을 때 유용합니다. 따라서 아직 사용하지 않더라도 알아 두면 좋습니다.
+다소 개선된 고급 섹션입니다. 작업을 시작하고 시도하면 조각이 실제로 필요하지 않지만 조각이 많으면 *매우* 유용합니다. 조각을 아직 사용하지 않더라도 알아두면 좋습니다.
 
 콘텐츠 설계자는 현재 프로젝트와 일부 다른 프로젝트에도 필요한 모든 콘텐츠 조각 모델을 생성했습니다. 사용자와 다른 작성자의 작업을 간단하게 유지할 수 있도록 특정 폴더에 제공되는 모델 목록을 제한할 수 있습니다.
 
@@ -203,7 +203,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 조각을 만든 직후에 또는 콘텐츠 조각 콘솔에서(자산 콘솔에서도) 선택하여 조각을 열 수 있습니다.
 
-편집기가 처음 열리면 다음과 같이 표시됩니다.
+편집기가 처음 열리면 다음을 확인할 수 있습니다.
 
 * 왼쪽의 아이콘 목록 - 다양한 기능 영역에 액세스할 수 있습니다. 편집기가 **변형** 탭에서 열리고 대부분의 편집이 여기서 이뤄집니다. **주석** 및 **메타데이터** 탭에도 관심을 가질 수 있습니다.
 
@@ -213,7 +213,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 예를 들면:
 
-* 특정 유형의 정보를 포함하여 정보의 여러 부분만 필요로 하는 조각입니다. Headless 콘텐츠의 경우 참조는 중요합니다(여정 후반부에 배울 내용).
+* 특정 유형의 정보를 포함하여 정보의 여러 부분만 필요로 하는 조각입니다. Headless 콘텐츠의 경우, 여정 후반부에서 주요 참조에 대해 알아봅니다.
 
   ![콘텐츠 조각 편집기 - 내 조각](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
@@ -233,9 +233,9 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 >
 >자세한 내용은 변형 - 콘텐츠 조각 작성을 참조하십시오.
 
-#### (아마도) 걱정할 필요가 없는 사항 {#what-you-probably-do-not-need-to-worry-about}
+#### 다음에 대해서는 걱정하지 않아도 됩니다. {#what-you-probably-do-not-need-to-worry-about}
 
-좋습니다. 약간 이상한 섹션으로 보일 수 있지만 콘텐츠 조각 편집기를 열고 탐색을 시작하면 콘텐츠 작성자로서 headless 여정에 적용되지 않는(아마도) 다양한 옵션을 볼 수 있습니다. 이는 Headless 컨텍스트에서 무시할 수 있는 콘텐츠에 대한 간략한 참고 사항입니다.
+예. 이 섹션은 약간 이상하게 보일지 모르지만 콘텐츠 조각 편집기를 열고 탐색을 시작하면 Headless 여정에 적용되지 않는 다양한 옵션이 콘텐츠 작성자로 표시됩니다. 이는 Headless 컨텍스트에서 무시할 수 있는 콘텐츠에 대한 간략한 참고 사항입니다.
 
 * **콘텐츠 조각 모델**
 
@@ -258,7 +258,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 * **페이지 참조 업데이트**
 
-  이 작업은 다음에서 사용할 수 있습니다. **...** (줄임표) 드롭다운 이는 페이지 작성과 관련이 있으므로 Headless 작성자는 별 관심이 없습니다.
+  이 액션은 **...**(줄임표) 드롭다운에서 사용할 수 있습니다. 이는 페이지 작성과 관련이 있으므로 Headless 작성자는 별 관심이 없습니다.
 
 ### 게시 {#publishing}
 

@@ -5,7 +5,7 @@ exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1404'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Cloud Manager를 사용하여 빌드 및 배포하려면 AEM 프로젝트가 다
 
 일부 제한된 경우 Cloud Manager 내에서 실행할 때는 개발자 워크스테이션에서 실행할 때와 달리 빌드 프로세스를 약간 변경해야 할 수 있습니다. 이러한 경우 [Maven 프로필](https://maven.apache.org/guides/introduction/introduction-to-profiles.html)을 사용하여 Cloud Manager를 비롯한 다양한 환경에서 빌드가 어떻게 달라야 하는지 정의할 수 있습니다.
 
-Cloud Manager 빌드 환경 내에서 Maven 프로필을 활성화하려면 `CM_BUILD` [환경 변수](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). 환경 변수를 찾아야 합니다. 마찬가지로 Cloud Manager 빌드 환경 외부에서만 사용하려는 프로필은 이 변수가 없는지 확인해야 합니다.
+`CM_BUILD` [환경 변수](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)를 찾아 Cloud Manager 빌드 환경 내에서 Maven 프로필을 활성화해야 합니다. 환경 변수를 찾아야 합니다. 마찬가지로 Cloud Manager 빌드 환경 외부에서만 사용하려는 프로필은 이 변수가 없는지 확인해야 합니다.
 
 예를 들어 빌드가 Cloud Manager 내에서 실행될 때만 간단한 메시지를 출력하려는 경우 이렇게 하면 됩니다.
 
@@ -110,11 +110,11 @@ Cloud Manager 빌드 환경 내에서 Maven 프로필을 활성화하려면 `CM_
 
 >[!NOTE]
 >
->암호로 보호된 Maven 저장소의 아티팩트는 이 메커니즘을 통해 배포된 코드가 현재 Cloud Manager의 품질 게이트에 구현된 모든 [코드 품질 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md)을 통해 실행되지 않기 때문에 매우 신중하게 사용해야 합니다. 따라서 AEM에 연결되지 않은 코드에만 드물게 사용해야 합니다 이진과 함께 Java 소스 및 전체 프로젝트 소스 코드도 배포하는 것이 좋습니다.
+>암호로 보호된 Maven 저장소의 아티팩트는 이 메커니즘을 통해 배포된 코드가 현재 Cloud Manager의 품질 게이트에 구현된 모든 [코드 품질 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md)을 통해 실행되지 않기 때문에 매우 신중하게 사용해야 합니다. 따라서 AEM에 연결되지 않은 코드에만 드물게 사용해야 합니다 이진과 함께 전체 프로젝트 소스 코드 외에 Java 소스도 배포하는 것이 좋습니다.
 
 Cloud Manager 내에서 암호로 보호된 Maven 저장소를 사용하려면 다음 작업을 수행하십시오.
 
-1. 암호(및 선택적으로 사용자 이름)를 비밀로 지정합니다 [파이프라인 변수](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md).
+1. 암호(및 선택적으로 사용자 이름)를 비밀 [파이프라인 변수](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)로 지정합니다.
 1. 그런 다음 [Maven 설정 파일](https://maven.apache.org/settings.html) 스키마를 따르는 git 저장소의 `.cloudmanager/maven/settings.xml` 파일 내에서 해당 비밀로 참조합니다.
 
 Cloud Manager 빌드 프로세스가 시작되면 다음 작업을 수행하십시오.

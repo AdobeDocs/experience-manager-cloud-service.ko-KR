@@ -5,7 +5,7 @@ exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1055'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ AEM은 다음을 위한 도구 프레임워크를 제공합니다.
 
 대상자는 개인화된 콘텐츠로 타겟팅하려는 최종 사용자 그룹입니다. 방문자가 웹 페이지를 열면 페이지 로직은 알려진 정보를 기반으로 방문자가 속한 대상자를 판단합니다. 해당 평가를 기반으로 AEM은 해당 대상자를 위해 만들어진 콘텐츠를 표시합니다.
 
-대상자는 마케팅 세그먼트를 기반으로 합니다. 마케팅 세그먼트는 AEM 또는 Adobe Target에서 생성됩니다. Audiences 콘솔을 사용하여 AEM에서 직접 Adobe Target 대상자를 만들 수 있습니다.
+대상자는 마케팅 세그먼트를 기반으로 합니다. 마케팅 세그먼트는 AEM 또는 Adobe Target에서 생성됩니다. 대상자 콘솔을 사용하여 AEM에서 직접 Adobe Target 대상자를 만들 수 있습니다.
 
 ### 세그먼트 {#segment}
 
@@ -54,7 +54,7 @@ AEM ContextHub 내에서 대상자는 규칙(조건)을 기반으로 세그먼�
 
 ## 활동 {#activity}
 
-활동은 다음을 수행합니다.
+활동은 다음 작업을 수행합니다.
 
 * 특정 대상자(세그먼트)와 특정 경험의 매핑 정의
 * 타겟팅이 적용되는 기간 정의
@@ -88,7 +88,7 @@ AEM의 타겟팅 모드를 사용하여 [타겟팅된 콘텐츠를 작성](/help
 
 경험을 구성하는 그룹화된 구성 요소 세트입니다.
 
-[경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment)은 콘텐츠와 정보(스타일링 등)로 구성되어 경험을 만듭니다. 페이지 작성 시 직접 사용할 수 있습니다. AEM 페이지의 하위 집합으로 생각할 수 있습니다. 이를 통해 콘텐츠 작성자는 Sites 페이지 및 서드파티 시스템을 비롯한 여러 채널에서 콘텐츠를 재사용할 수 있습니다.
+[경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment)은 콘텐츠와 정보(스타일링 등)로 구성되어 경험을 만듭니다. 페이지 작성 시 직접 사용할 수 있습니다. AEM 페이지의 하위 집합으로 생각할 수 있습니다. 이를 통해 콘텐츠 작성자가 Sites 페이지와 서드파티 시스템을 비롯한 여러 채널에서 콘텐츠를 재사용할 수 있습니다.
 
 개인화의 예로 제목, 이미지, 설명 및 콜 투 액션 버튼을 결합하여 티저 경험을 형성할 수 있습니다. 경험 조각 사용은 Adobe Target 개인화 사용의 핵심 부분입니다.
 
@@ -118,7 +118,7 @@ AEM에서는 페이지 요청을 처리하고 표시할 콘텐츠를 결정하�
 [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) 타겟팅 엔진을 사용하면 페이지 방문에서 수집된 정보가 Adobe Target에서 추적됩니다.
 
 * 이 타겟팅 엔진을 사용하는 경우, Adobe Target에서 가져오는 세그먼트를 사용하여 경험의 대상자를 정의합니다.
-* Adobe Target 엔진을 사용하는 활동은 다음과 같습니다 [Target에 동기화됨](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
+* Adobe Target 엔진을 사용하는 활동은 [Target에 동기화](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target)됩니다.
 
 [Adobe Target과 통합](/help/sites-cloud/integrating/integrating-adobe-target.md)한 경우 이 엔진을 사용할 수 있습니다.
 
@@ -133,7 +133,7 @@ AEM에서는 페이지 요청을 처리하고 표시할 콘텐츠를 결정하�
 
 1. 대상자를 구성합니다.
 
-   1. 타겟팅 엔진에 따라 [타겟 대상자](https://experienceleague.adobe.com/docs/target/using/audiences/target.html) 또는 [ContextHub 세그먼트](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)와 함께 규칙을 정의합니다.
+   1. 타겟팅 엔진에 따라 [타깃 대상자](https://experienceleague.adobe.com/docs/target/using/audiences/target.html) 또는 [ContextHub 세그먼트](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)와 함께 규칙을 정의합니다.
 
 1. [브랜드 및 활동](/help/sites-cloud/authoring/personalization/activities.md)을 만듭니다.
 

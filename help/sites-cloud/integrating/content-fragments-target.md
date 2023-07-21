@@ -3,7 +3,7 @@ title: Adobe Target으로 콘텐츠 조각 내보내기
 description: Adobe Target으로 콘텐츠 조각 내보내기
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
 source-git-commit: 7905f21e70f373150775fe90d5faf02db4a59c32
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2222'
 ht-degree: 100%
 

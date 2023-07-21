@@ -5,7 +5,7 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 source-git-commit: aeb407f8971dabb4e86203b3cee82318330638b0
 workflow-type: tm+mt
 source-wordcount: '646'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -49,7 +49,7 @@ SSL 인증서 페이지에서 SSL 인증서의 상태에 대한 개요를 파악
 
 Cloud Manager에서 인증서 제거는 취소할 수 없는 영구적인 작업입니다. Cloud Manager에서 SSL 파일을 삭제하기 전에 로컬에 저장하는 것이 좋습니다.
 
-Cloud Manager에서는 하나 이상의 도메인이 연결된 SSL 인증서를 삭제할 수 없습니다. SSL 인증서를 삭제하기 전에 연결된 모든 도메인을 삭제해야 합니다. 다음을 참조하십시오 [사용자 정의 도메인 이름 관리](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) 자세히 알아보십시오.
+Cloud Manager에서는 하나 이상의 도메인이 연결된 SSL 인증서를 삭제할 수 없습니다. SSL 인증서를 삭제하기 전에 연결된 모든 도메인을 삭제해야 합니다. 자세한 내용은 [사용자 정의 도메인 이름 관리](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)을 참조하십시오.
 
 SSL 인증서를 삭제하려면 다음 단계를 따르십시오.
 
@@ -70,6 +70,6 @@ SSL 인증서에 대한 기존 CDN 구성이 있는 경우, **SSL 인증서** �
 
 UI를 사용하여 모든 기존 환경 구성이 마이그레이션되면 메시지가 사라집니다. 메시지가 사라지는 데는 영업일 기준 1~2일이 소요될 수 있습니다.
 
-다음을 참조하십시오 [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) 을 참조하십시오.
+자세한 내용은 [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)를 참조하십시오.
 
 IP 허용 목록 또는 사용자 정의 도메인 이름에 대한 기존 CDN 구성이 있는 환경의 **IP 허용 목록** 및 **환경** 페이지에도 유사한 메시지가 제공됩니다.

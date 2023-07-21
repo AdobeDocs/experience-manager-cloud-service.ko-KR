@@ -5,15 +5,15 @@ exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '4577'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # 페이지 템플릿 만들기 {#creating-page-templates}
 
-페이지를 만들 때 새 페이지를 만들 때 기준으로 사용되는 템플릿을 선택해야 합니다. 템플릿은 결과 페이지의 구조, 초기 콘텐츠 및 사용할 수 있는 구성 요소를 정의합니다.
+페이지를 만들 때 새 페이지를 만드는 기준으로 사용할 템플릿을 선택해야 합니다. 템플릿은 결과 페이지의 구조, 초기 콘텐츠 및 사용할 수 있는 구성 요소를 정의합니다.
 
-With the **Template Editor**, creating and maintaining templates is no longer a developer-only task. A type of power-user, who is called a **template author**, can be involved too. Developers are still required to setup the environment, create client libraries, and create the components to be used, but once these basics are in place the **template author** has the flexibility to create and configure templates without a development project.
+**템플릿 편집기**&#x200B;를 사용하면 템플릿을 만들고 유지 관리하는 작업은 더 이상 개발자 전용 작업이 아닙니다. **템플릿 작성자**&#x200B;라고 불리는 강력한 사용자 유형도 참여할 수 있습니다. 개발자는 여전히 환경을 설정하고 클라이언트 라이브러리를 생성하고 사용할 구성 요소를 생성해야 하지만, 이러한 기본 사항이 마련되면 **템플릿 작성자**&#x200B;는 개발 프로젝트 없이도 템플릿을 생성하고 구성할 수 있습니다.
 
 **템플릿 콘솔**&#x200B;을 사용하여 템플릿 작성자는 다음과 같은 작업을 수행할 수 있습니다.
 
@@ -28,11 +28,11 @@ With the **Template Editor**, creating and maintaining templates is no longer a 
 
 이 문서에서는 **템플릿 작성자**&#x200B;가 템플릿 콘솔 및 편집기를 사용하여 편집 가능한 템플릿을 만들고 관리하는 방법을 설명합니다.
 
-편집 가능한 템플릿이 기술 수준에서 작동하는 방법에 대한 자세한 내용은 개발자 문서를 참조하십시오 [페이지 템플릿](/help/implementing/developing/components/templates.md) 추가 정보.
+편집 가능한 템플릿이 기술 수준에서 작동하는 방법에 대한 자세한 내용은 개발자 문서 [페이지 템플릿](/help/implementing/developing/components/templates.md)을 참조하십시오.
 
 >[!NOTE]
 >
->The **Template Editor** does not support targeting directly on the template level. Pages created based on an editable template can be targeted, but the templates themselves can not be.
+>**템플릿 편집기**&#x200B;는 템플릿 수준에서 직접 타겟팅을 지원하지 않습니다. 편집 가능한 템플릿 기반으로 생성된 페이지를 대상으로 지정할 수 있지만, 템플릿 자체는 대상이 될 수 없습니다.
 
 ## 시작하기에 앞서 {#before-you-start}
 
@@ -120,7 +120,7 @@ With the **Template Editor**, creating and maintaining templates is no longer a 
    * **템플릿 이름**
    * **설명**
 
-1. **만들기**&#x200B;를 선택합니다. 확인이 표시되면 다음을 선택합니다. **열기** 템플릿 편집을 시작하려면 또는 **완료** 템플릿 콘솔로 돌아갑니다.
+1. **만들기**&#x200B;를 선택합니다. 확인이 표시되면 **열기**&#x200B;를 선택하여 템플릿 편집을 시작하거나 **완료**&#x200B;를 선택하여 템플릿 콘솔로 돌아갑니다.
 
    >[!NOTE]
    >
@@ -180,7 +180,7 @@ With the **Template Editor**, creating and maintaining templates is no longer a 
 
 >[!CAUTION]
 >
->템플릿을 활성화한 후 템플릿 작성자가 템플릿을 추가로 업데이트하기 시작하면 경고가 표시됩니다. 이 경고는 템플릿이 참조될 수 있으므로 변경을 수행할 경우 템플릿을 참조하는 페이지에 영향을 줄 수 있음을 나타냅니다.
+>템플릿이 활성화되면 템플릿 작성자가 템플릿을 추가로 업데이트하기 시작할 때 경고가 표시됩니다. 이 경고는 템플릿이 참조될 수 있으므로 변경을 수행할 경우 템플릿을 참조하는 페이지에 영향을 줄 수 있음을 나타냅니다.
 
 1. **템플릿 콘솔**&#x200B;에서 템플릿을 선택합니다.
 1. 도구 모음에서 **활성화** 또는 **비활성화**&#x200B;를 선택하고 다시 확인 대화 상자에서 선택한 옵션을 다시 선택합니다.
@@ -206,7 +206,7 @@ With the **Template Editor**, creating and maintaining templates is no longer a 
 
    >[!NOTE]
    >
-   >다음과 같은 경우 **허용된 템플릿** list를 비워 두면 값/list가 발견될 때까지 트리가 상승합니다.
+   >**허용된 템플릿** 목록을 비워 두면 값/목록을 찾을 때까지 상위 트리까지 검색됩니다.
    >
    >
    >[템플릿 가용성](/help/implementing/developing/components/templates.md#template-availability)을 참조하십시오. 허용된 템플릿에 대한 원칙은 동일합니다.
@@ -262,11 +262,11 @@ With the **Template Editor**, creating and maintaining templates is no longer a 
 
 #### 초기 콘텐츠 {#template-initial-content}
 
-구성 요소 잠금이 해제된 경우 [초기 컨텐츠](#editing-a-template-initial-content-author) 템플릿에서 생성된 결과 페이지에 복사됩니다. 잠금이 해제된 이러한 구성 요소는 결과 페이지에서 편집할 수 있습니다.
+구성 요소 잠금이 해제된 경우, 템플릿에서 만든 결과 페이지에 복사할 [초기 콘텐츠](#editing-a-template-initial-content-author)를 정의할 수 있습니다. 잠금이 해제된 이러한 구성 요소는 결과 페이지에서 편집할 수 있습니다.
 
 >[!NOTE]
 >
->위치 **초기 컨텐츠** 모드 및 결과 페이지에서 액세스 가능한 상위 구성 요소(즉, 레이아웃 컨테이너 내의 구성 요소)가 있는 잠금 해제된 모든 구성 요소를 삭제할 수 있습니다.
+>결과 페이지 뿐만 아니라 **초기 콘텐츠** 모드에서 액세스 가능한 상위 구성 요소(예: 레이아웃 컨테이너 내의 구성 요소)가 있는 잠금 해제된 모든 구성 요소를 삭제할 수 있습니다.
 
 #### 레이아웃 {#template-layout}
 
@@ -313,7 +313,7 @@ With the **Template Editor**, creating and maintaining templates is no longer a 
 >
 >곧바로 사용 가능한 **제목** 구성 요소를 템플릿에 추가하면 기본 텍스트 **구조**&#x200B;가 포함됩니다.
 >
->이를 변경하고 사용자 고유의 텍스트를 추가하는 경우 템플릿에서 페이지를 만들 때 이 업데이트된 텍스트가 사용됩니다.
+>이를 변경하고 사용자 고유의 텍스트를 추가하는 경우, 템플릿에서 페이지를 만들 때 이 업데이트된 텍스트가 사용됩니다.
 >
 >기본 텍스트(구조)를 그대로 두면 제목은 기본적으로 후속 페이지의 이름으로 설정됩니다.
 
@@ -368,11 +368,11 @@ With the **Template Editor**, creating and maintaining templates is no longer a 
 
 ![정책 추가 버튼](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-**정책 선택** 드롭다운에서 선택한 기존 정책은 드롭다운 옆에 있는 복사 버튼을 사용하여 새 정책으로서 복사할 수 있습니다. 이후 **정책 제목** 필드에 새 제목을 지정해야 합니다. 기본적으로 복사된 정책 제목은 다음과 같습니다 **X 사본**&#x200B;여기서 X는 복사된 정책의 제목입니다.
+**정책 선택** 드롭다운에서 선택한 기존 정책은 드롭다운 옆에 있는 복사 버튼을 사용하여 새 정책으로서 복사할 수 있습니다. 이후 **정책 제목** 필드에 새 제목을 지정해야 합니다. 기본적으로 복사된 정책 제목은 **X의 사본**&#x200B;으로 지정됩니다. 여기서 X는 복사된 정책의 제목입니다.
 
 ![정책 복사 버튼](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
-**정책 설명** 필드에서 정책에 대한 설명은 선택 사항입니다.
+**정책 설명** 필드에서 정책에 대한 설명은 옵션입니다.
 
 **선택한 정책을 사용하는 다른 템플릿** 섹션에서 **정책 선택** 드롭다운에서 선택한 정책을 사용하는 다른 템플릿을 쉽게 확인할 수 있습니다.
 
@@ -393,7 +393,7 @@ With the **Template Editor**, creating and maintaining templates is no longer a 
 
 **기본** 탭에서는 구성 요소의 가장 중요한 설정이 정의됩니다.
 
-예를 들어 이미지 구성 요소의 경우 지연 로드를 활성화하여 허용되는 너비를 정의할 수 있습니다.
+예를 들어 이미지 구성 요소의 경우 지연 로드를 활성화하여 허용되는 폭을 정의할 수 있습니다.
 
 설정이 여러 구성을 허용하는 경우 **추가** 버튼을 클릭하거나 탭하여 다른 구성을 추가합니다.
 
@@ -427,7 +427,7 @@ With the **Template Editor**, creating and maintaining templates is no longer a 
 
 >[!NOTE]
 >
->컨테이너에서 사용할 수 있는 구성 요소를 정의할 수 있으므로 정책 구성은 컨테이너 구성 요소에 필수입니다.
+>컨테이너 구성 요소의 경우, 컨테이너에서 사용할 수 있는 구성 요소를 정의하는 데 필요하므로 정책을 반드시 구성해야 합니다.
 
 이 구성 창은 창의 일반적인 사용 방식과 마찬가지로 두 개로 나누어집니다.
 
@@ -463,7 +463,7 @@ With the **Template Editor**, creating and maintaining templates is no longer a 
 
 완전히 새로운 구성 요소 및 MIME 유형 매핑을 추가하려면 **매핑 추가**&#x200B;를 클릭하거나 탭하십시오.
 
-Select a component in the list and click or tap **Add type** to add an additional MIME type to an already mapped component. MIME 유형을 제거하려면 **삭제** 아이콘을 클릭하십시오.
+목록에서 구성 요소를 선택하고 **유형 추가**&#x200B;를 클릭하거나 탭하여 이미 매핑된 구성 요소에 MIME 유형을 추가합니다. MIME 유형을 제거하려면 **삭제** 아이콘을 클릭하십시오.
 
 ![기본 구성 요소 탭](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
@@ -485,7 +485,7 @@ Select a component in the list and click or tap **Add type** to add an additiona
 
 ![구성 요소 잠금 버튼](/help/sites-cloud/authoring/assets/templates-unlock-component.png)
 
-This includes unlocking container components so that further components can be added, either in **Initial Content** mode or on resulting pages. 잠금 해제하기 전에 구성 요소/콘텐츠를 컨테이너에 이미 추가한 경우 다음과 같을 때 더 이상 표시되지 않습니다. **구조** 모드이지만 다음 위치에 표시됩니다. **초기 컨텐츠** 모드. 위치 **구조 모드**: 컨테이너 구성 요소 자체만 목록과 함께 표시됩니다. **허용된 구성 요소**.
+여기에는 **초기 콘텐츠** 모드 또는 결과 페이지에서 구성 요소를 추가할 수 있도록 컨테이너 구성 요소의 잠금을 해제하는 작업이 포함됩니다. 잠금을 해제하기 전에 컨테이너에 구성 요소/콘텐츠를 이미 추가한 경우, **구조** 모드에서는 더 이상 표시되지 않지만 **초기 콘텐츠** 모드에서는 표시됩니다. **구조 모드**&#x200B;에서는 컨테이너 구성 요소 자체만 **허용된 구성 요소** 목록과 함께 표시됩니다.
 
 ![허용된 구성 요소](/help/sites-cloud/authoring/assets/templates-allowed-components.png)
 
@@ -536,11 +536,11 @@ This includes unlocking container components so that further components can be a
 
 ### 템플릿 편집 - 레이아웃 - 템플릿 작성자 {#editing-a-template-layout-template-author}
 
-디바이스 범위에 대한 템플릿 레이아웃을 정의할 수 있습니다. 템플릿에 대한 [응답형 레이아웃](/help/sites-cloud/authoring/features/responsive-layout.md)은 페이지 작성의 경우와 마찬가지로 작동합니다.
+디바이스 범위에 대한 템플릿 레이아웃을 정의할 수 있습니다. 템플릿에 대한 [반응형 레이아웃](/help/sites-cloud/authoring/features/responsive-layout.md)은 페이지 작성의 경우와 마찬가지로 작동합니다.
 
 >[!NOTE]
 >
->레이아웃에 대한 변경 사항이에 반영됩니다. **초기 컨텐츠** 모드는 변경되지않음 **구조** 모드.
+>레이아웃에 대한 변경 사항은 **초기 콘텐츠** 모드에서 반영되지만 **구조** 모드에서는 표시되지 않습니다.
 
 ![템플릿 레이아웃 편집](/help/sites-cloud/authoring/assets/templates-edit-layout.png)
 
@@ -572,7 +572,7 @@ This includes unlocking container components so that further components can be a
 
   ![정책 추가 버튼](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-  **정책 선택** 드롭다운에서 선택한 기존 정책은 드롭다운 옆에 있는 복사 버튼을 사용하여 새 정책으로서 복사할 수 있습니다. 이후 **정책 제목** 필드에 새 제목을 지정해야 합니다. 기본적으로 복사된 정책 제목은 다음과 같습니다 **X 사본**&#x200B;여기서 X는 복사된 정책의 제목입니다.
+  **정책 선택** 드롭다운에서 선택한 기존 정책은 드롭다운 옆에 있는 복사 버튼을 사용하여 새 정책으로서 복사할 수 있습니다. 이후 **정책 제목** 필드에 새 제목을 지정해야 합니다. 기본적으로 복사된 정책 제목은 **X의 사본**&#x200B;으로 지정됩니다. 여기서 X는 복사된 정책의 제목입니다.
 
   ![정책 복사 버튼](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
@@ -580,7 +580,7 @@ This includes unlocking container components so that further components can be a
 
   ![정책 제목](/help/sites-cloud/authoring/assets/templates-policy-title.png)
 
-* **정책 설명** 필드에서 정책에 대한 설명은 선택 사항입니다.
+* **정책 설명** 필드에서 정책에 대한 설명은 옵션입니다.
 * **선택한 정책을 사용하는 다른 템플릿** 섹션에서 **정책 선택** 드롭다운에서 선택한 정책을 사용하는 다른 템플릿을 쉽게 확인할 수 있습니다.
 
   ![정책 사용](/help/sites-cloud/authoring/assets/templates-policy-use.png)
@@ -653,7 +653,7 @@ This includes unlocking container components so that further components can be a
    * 활성화된 템플릿에서 구성 요소 잠금 또는 잠금 해제.
    * 기존 페이지에서 이미 해당 구성 요소를 사용하고 있을 수 있으므로 부작용이 있을 수 있습니다. 일반적으로 다음이 진행됩니다.
 
-      * 잠긴 구성 요소 잠금 해제가 기존 페이지에서 누락되었습니다.
+      * 구성 요소(잠겨 있는)의 잠금을 해제하면 기존 페이지에서 누락됩니다.
       * 구성 요소(편집 가능)를 잠그면 해당 콘텐츠가 페이지에 표시되지 않고 숨겨집니다.
 
    >[!NOTE]

@@ -5,7 +5,7 @@ exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '553'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 96%
 
 페이지(또는 페이지 세트)에 대한 론치가 만들어지면 페이지의 론치 카피에서 콘텐츠를 편집할 수 있습니다.
 
-1. [참조의 론치(사이트 콘솔)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)에 액세스하여 사용 가능한 동작을 표시합니다.
+1. [참조의 론치(Sites 콘솔)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)에 액세스하여 사용 가능한 동작을 표시합니다.
 1. **페이지로 이동**&#x200B;을 선택하여 편집할 페이지를 엽니다.
 
 페이지를 편집 시 상단 도구 모음에 **나가기** 및 **탐색** 옵션이 표시됩니다.
@@ -65,14 +65,14 @@ Live Copy는 *소스 분기에서* *론치 분기로* 콘텐츠를 동기화하�
 1. 다음 중 하나에서 론치에 액세스하여 선택합니다.
    * [론치 콘솔](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
       * **편집**&#x200B;을 선택합니다.
-   * 사용 가능한 작업을 표시하려면 [참조(사이트 콘솔)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)를 사용하십시오.
+   * 사용 가능한 작업을 표시하려면 [참조(Sites 콘솔)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)를 사용하십시오.
       * **론치 편집**&#x200B;을 선택하십시오.
       * 소스 페이지가 표시됩니다.
 1. 필요한 변경 내용을 적용한 다음 **저장**&#x200B;을 사용하여 확인합니다.
 
 >[!NOTE]
 >
->론치에 페이지를 추가하려면 공통 언어 루트 아래(즉, 단일 사이트 내)여야 합니다.
+>페이지를 론치에 추가하려면 페이지가 일반 언어 루트 아래(예: 단일 사이트 내)에 있어야 합니다.
 
 ## 론치 구성 편집 {#editing-a-launch-configuration}
 
@@ -81,14 +81,14 @@ Live Copy는 *소스 분기에서* *론치 분기로* 콘텐츠를 동기화하�
 1. 다음 중 하나에서 론치에 액세스하여 선택합니다.
    * [론치 콘솔](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
       * **속성**&#x200B;을 선택하십시오.
-   * 사용 가능한 작업을 표시하려면 [참조(사이트 콘솔)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)를 사용하십시오.
+   * 사용 가능한 작업을 표시하려면 [참조(Sites 콘솔)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)를 사용하십시오.
       * **속성 편집**&#x200B;을 선택하십시오.
       * 세부 사항이 표시됩니다.
 1. 필요한 변경 내용을 적용한 다음 **저장**&#x200B;을 사용하여 확인합니다.
-   * See [Launches - the Order of Events](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) for information about the purpose and interaction of the **Launch Date** and **Production Ready** fields.
+   * **실행 날짜** 및 **프로덕션 준비** 필드의 목적과 상호 작용에 대한 정보는 [론치 - 이벤트 순서](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)를 참조하십시오.
 
 ## 페이지의 론치 상태 찾기 {#discovering-the-launch-status-of-a-page}
 
-참조 탭에서 특정 론치를 선택하면 상태가 표시됩니다([참조(사이트 콘솔)의 론치](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) 참조).
+참조 탭에서 특정 론치를 선택하면 상태가 표시됩니다([참조(Sites 콘솔)의 론치](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) 참조).
 
 ![론치 상태 찾기](/help/sites-cloud/authoring/assets/launches-status.png)

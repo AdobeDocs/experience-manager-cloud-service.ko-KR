@@ -5,7 +5,7 @@ exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1391'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->레거시 오퍼를 경험 조각으로 변환하는 데 권장되는 워크플로입니다.
+>레거시 오퍼를 경험 조각으로 전환하는 데 권장되는 워크플로입니다.
 
 >[!NOTE]
 >

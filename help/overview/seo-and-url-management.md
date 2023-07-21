@@ -5,7 +5,7 @@ exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3706'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -285,7 +285,7 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
 
 지금까지는 구성 요소의 논리와 함께 매핑을 구현하여 URL을 Adobe 페이지에 출력할 때 이 매핑을 사용했습니다.
 
-이 단축 URL이 Dispatcher에 삽입되면 퍼즐의 마지막 조각이 처리합니다. 여기서 `mod_rewrite`가 생성됩니다. 사용의 가장 큰 이점 `mod_rewrite` 즉, URL이 긴 양식에 다시 매핑됩니다 *다음 이전* 디스패처 모듈로 전송됩니다. 즉, Dispatcher는 게시 서버에서 긴 URL을 요청하고 적절하게 이를 캐시합니다. 따라서 게시 서버에서 들어오는 모든 Dispatcher 플러시 요청은 이 콘텐츠를 무효화할 수 있습니다.
+이 단축 URL이 Dispatcher에 삽입되면 퍼즐의 마지막 조각이 처리합니다. 여기서 `mod_rewrite`가 생성됩니다. `mod_rewrite` 사용 시 가장 큰 이점은 URL이 Dispatcher 모듈로 전송되기 *전에* 긴 양식으로 다시 매핑된다는 것입니다. 즉, Dispatcher는 게시 서버에서 긴 URL을 요청하고 적절하게 이를 캐시합니다. 따라서 게시 서버에서 들어오는 모든 Dispatcher 플러시 요청은 이 콘텐츠를 무효화할 수 있습니다.
 
 이러한 규칙을 구현하기 위해 Apache HTTP Server 구성에서 가상 호스트 아래에 `RewriteRule` 요소를 추가할 수 있습니다. 이전 예에서 단축된 URL을 확장하려는 경우 다음과 같은 규칙을 구현할 수 있습니다.
 
@@ -348,7 +348,7 @@ Disallow: /
 
 또는 실제 환경에서는 색인화하지 않을 특정 경로를 허용하지 않도록 선택할 수 있습니다.
 
-배치 시 주의해야 할 사항 `robots.txt` 사이트 루트에 있는 파일은 Dispatcher 플러시 요청이 이 파일을 지우고 URL 매핑이 사이트 루트를 와 다른 위치에 배치할 수 있다는 것입니다. `DOCROOT` apache HTTP Server 구성에 정의되어 있습니다. 이에 일반적으로 이 파일을 사이트 루트의 작성자 인스턴스에 배치하고 게시 인스턴스에 복제할 수 있습니다.
+사이트 루트에 `robots.txt` 파일 배치 시, Dispatcher 플러시 요청이 해당 파일을 지우고 URL 매핑이 Apache HTTP Server 구성에서 정의한 `DOCROOT`와 다른 위치에 사이트 루트를 배치할 수 있다는 점에 주의해야 합니다. 이에 일반적으로 이 파일을 사이트 루트의 작성자 인스턴스에 배치하고 게시 인스턴스에 복제할 수 있습니다.
 
 ### AEM에서 XML 사이트맵 작성 {#building-an-xml-sitemap-on-aem}
 
@@ -458,7 +458,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-또한 XML 사이트맵에 대해 구현된 기능은 다양한 사용 사례에서도 사용할 수 있습니다(예: 페이지 헤드에 표준 링크 또는 대체 언어 추가). 다음을 참조하십시오. [SeoTag](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) 인터페이스 를 참조하십시오.
+또한 XML 사이트맵에 대해 구현된 기능은 다양한 사용 사례에서도 사용할 수 있습니다(예: 페이지 헤드에 표준 링크 또는 대체 언어 추가). 자세한 내용은 [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) 인터페이스를 참조하십시오.
 
 ### 레거시 URL에 대해 301 리디렉션 생성 {#creating-redirects-for-legacy-urls}
 
@@ -471,7 +471,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 
 ## 추가 리소스 {#additional-resources}
 
-자세한 내용은 다음 추가 리소스를 참조하십시오.
+자세한 내용은 다음 추가 자료를 참조하십시오.
 
 <!--
 * [Resource Mapping](/help/sites-deploying/resource-mapping.md)

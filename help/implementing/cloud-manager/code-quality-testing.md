@@ -5,7 +5,7 @@ exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1161'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 87%
 
 코드 품질 테스트는 일련의 품질 규칙을 기반으로 애플리케이션 코드를 평가합니다. 코드 품질 전용 파이프라인의 주요 목적이며 모든 프로덕션 및 비프로덕션 파이프라인에서 빌드 단계 직후에 실행됩니다.
 
-다음을 참조하십시오 [CI-CD 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 다양한 파이프라인 유형에 대해 자세히 알아보십시오.
+다양한 파이프라인 유형에 대한 자세한 내용은 [CI-CD 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)을 참조하십시오.
 
 ## 코드 품질 규칙 {#understanding-code-quality-rules}
 
@@ -30,7 +30,7 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->전체 규칙 목록을 다운로드할 수 있습니다 [이 링크 포함](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
+>[이 링크를 사용](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)하여 전체 규칙 목록을 다운로드할 수 있습니다.
 
 ### 3계층 등급 {#three-tiered-gate}
 
@@ -60,16 +60,16 @@ ht-degree: 87%
 | 범위 | 다음 공식을 사용하여 단위 테스트 라인 범위와 조건 범위의 혼합으로 정의됩니다. <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <ul><li>`CT` = 단위 테스트를 실행하는 동안 한 번 이상 `true`로 평가된 조건</li><li>`CF` = 단위 테스트를 실행하는 동안 한 번 이상 `false`로 평가된 조건</li><li>`LC` = 적용 라인 = lines_to_cover - uncovered_lines</li><li>`B` = 총 조건 수</li><li>`EL` = 총 실행 가능한 라인 수 (lines_to_cover)</li></ul> | 중요 | &lt; 50% |
 | 건너뛴 단위 테스트 | 건너뛴 단위 테스트 수 | 정보 | > 1 |
 | 미해결 문제 | 전반적인 문제 유형 - 취약점, 버그 및 코드 스멜 | 정보 | > 0 |
-| 중복 라인 | 중복된 블록과 관련된 라인의 수로 정의됩니다. 다음 조건에서는 코드 블록이 중복된 것으로 간주됩니다.<br>비 Java 프로젝트:<ul><li>연속 토큰과 중복 토큰이 100개 이상 있어야 합니다.</li><li>이러한 토큰은 최소한 다음과 같이 분산되어야 합니다. </li><li>COBOL의 경우 30개 코드 라인 </li><li>ABAP의 경우 20개 코드 라인 </li><li>기타 언어의 경우 10개 코드 라인</li></ul>Java 프로젝트:<ul></li><li> 토큰과 라인 수에 관계없이 연속적이고 중복된 문이 10개 이상 있어야 합니다.</li></ul>중복을 감지할 때 들여쓰기 및 문자열 리터럴의 차이는 무시됩니다. | 정보 | > 1% |
+| 중복 라인 | 중복된 블록과 관련된 라인의 수로 정의됩니다. 다음 조건에서는 코드 블록이 중복된 것으로 간주됩니다.<br>비 Java 프로젝트:<ul><li>연속 토큰과 중복 토큰이 100개 이상 있어야 합니다.</li><li>이러한 토큰은 최소한 다음과 같이 분산되어야 합니다. </li><li>COBOL의 경우 30개 코드 라인 </li><li>ABAP의 경우 20개 코드 라인 </li><li>기타 언어의 경우 10개 코드 라인</li></ul>Java 프로젝트:<ul></li><li> 토큰과 라인 수에 관계없이 연속적이고 중복된 문이 10개 이상 있어야 합니다.</li></ul>중복 요소를 감지할 때 들여쓰기 및 문자열 리터럴의 차이는 무시됩니다. | 정보 | > 1% |
 | Cloud Service 호환성 | 식별된 Cloud Service 호환성 문제 수 | 정보 | > 0 |
 
 >[!NOTE]
 >
->다음을 참조하십시오 [SonarQube의 지표 정의](https://docs.sonarqube.org/latest/user-guide/metric-definitions/) 를 참조하십시오.
+>자세한 정의는 [SonarQube의 지표 정의](https://docs.sonarqube.org/latest/user-guide/metric-definitions/)를 참조하십시오.
 
 >[!NOTE]
 >
->에서 실행하는 사용자 지정 코드 품질 규칙에 대해 자세히 알아보려면 [!UICONTROL Cloud Manager], 참조 [사용자 지정 코드 품질 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+>[!UICONTROL Cloud Manager]에서 실행한 사용자 정의 코드 품질 규칙에 대한 자세한 내용은 [사용자 정의 코드 품질 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md)을 참조하십시오.
 
 ## 긍정 오류 처리 {#dealing-with-false-positives}
 
@@ -103,10 +103,10 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 >[!NOTE]
 >
->을(를) 만드는 것이 모범 사례이지만 `@SuppressWarnings` 가능한 한 구체적인 주석, 즉 문제를 일으키는 특정 문이나 블록에만 주석을 답니다. 클래스 수준에서 주석을 달 수 있습니다.
+>`@SuppressWarnings` 주석을 가능한 구체적으로 만드는 것이 모범 사례이지만(즉, 문제를 일으키는 특정 문이나 블록에만 주석 추가) 클래스 수준에서 주석을 추가하는 것은 가능합니다.
 
 >[!NOTE]
->명시적인 보안 테스트 단계는 없지만 코드 품질 단계에서 보안 관련 코드 품질 규칙이 평가됩니다. 다음을 참조하십시오 [AEM as a Cloud Service 보안 개요](/help/security/cloud-service-security-overview.md) Cloud Service 보안에 대해 자세히 알아보십시오.
+>명시적인 보안 테스트 단계는 없지만 코드 품질 단계에서 보안 관련 코드 품질 규칙이 평가됩니다. Cloud Service 보안에 대한 자세한 내용은 [AEM as a Cloud Service 보안 개요](/help/security/cloud-service-security-overview.md)를 참조하십시오.
 
 ## 콘텐츠 패키지 검색 최적화 {#content-package-scanning-optimization}
 
@@ -120,7 +120,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 수십 개의 임베드된 패키지를 생성하는 프로젝트의 경우, 이 최적화는 파이프라인 실행당 10분 이상 절약되는 것으로 나타났습니다.
 
-“모든” 콘텐츠 패키지에 건너뛴 콘텐츠 패키지와 OSGi 번들의 조합이 포함된 경우 특별한 경우가 발생할 수 있습니다. 예를 들어 다음과 같습니다. `myco-all-1.0.0-SNAPSHOT.zip` 이전에 언급한 두 개의 임베드된 패키지와 하나 이상의 OSGi 번들이 포함된 다음 OSGi 번들로만 구성된 새로운 최소 콘텐츠 패키지가 구성됩니다. 이 패키지의 이름은 항상 `cloudmanager-synthetic-jar-package`이고 포함된 번들은 `/apps/cloudmanager-synthetic-installer/install`에 배치됩니다.
+“모든” 콘텐츠 패키지에 건너뛴 콘텐츠 패키지와 OSGi 번들의 조합이 포함된 경우 특별한 경우가 발생할 수 있습니다. 예를 들어 `myco-all-1.0.0-SNAPSHOT.zip`에 앞서 언급한 두 개의 임베드된 패키지가 포함된 경우, 하나 이상의 OSGi 번들로만 구성된 새로운 최소 콘텐츠 패키지가 구성됩니다. 이 패키지의 이름은 항상 `cloudmanager-synthetic-jar-package`이고 포함된 번들은 `/apps/cloudmanager-synthetic-installer/install`에 배치됩니다.
 
 >[!NOTE]
 >

@@ -5,7 +5,7 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1589'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ AEM as a Cloud Service용 New Relic One APM에는 많은 기능이 있습니다.
 
 1. New Relic에서 계정 확인을 위한 링크가 포함된 이메일을 보내드립니다.
 
-New Relic에서 확인 이메일을 받지 못한 경우 다음을 참조하십시오. [문제 해결 섹션.](#troubshooting)
+New Relic에서 확인 이메일을 받지 못한 경우, [문제 해결 섹션](#troubshooting)을 참조하십시오.
 
 ## New Relic One 액세스 {#accessing-new-relic}
 
@@ -114,9 +114,9 @@ New Relic One에 직접 액세스하려면 다음 작업을 수행하십시오.
 
 New Relic One에 로그인하는 동안 이메일을 확인하라는 메시지가 표시되면 이메일이 여러 계정과 연결되어 있다는 의미입니다. 이를 통해 액세스할 계정을 선택할 수 있습니다.
 
-이메일 주소를 확인하지 않는 경우 New Relic은 이메일 주소와 연결된 가장 최근에 만든 사용자 레코드로 로그인을 시도합니다. 로그인할 때마다 이메일을 확인하지 않으려면 로그인 화면에서 **내 정보 저장** 확인란을 클릭합니다.
+이메일 주소를 확인하지 않는 경우, New Relic은 이메일 주소와 연결된 가장 최근에 만들어진 사용자 레코드로 로그인을 시도합니다. 로그인할 때마다 이메일을 확인하지 않으려면 로그인 화면에서 **내 정보 저장** 확인란을 클릭합니다.
 
-도움이 더 필요하면 다음을 통해 지원 티켓을 엽니다. [AEM 지원 포털](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html).
+도움이 더 필요하면 [AEM 지원 포털](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)을 사용하여 지원 티켓을 여십시오.
 
 ## New Relic One 액세스 문제 해결 {#troubleshooting}
 
@@ -134,13 +134,13 @@ New Relic One에 로그인하는 동안 이메일을 확인하라는 메시지�
 
 1. New Relic에서 계정 확인을 위한 링크가 포함된 이메일을 보내드립니다.
 
-가입 절차를 완료했는데 이메일 또는 암호 오류 메시지로 인해 계정에 로그인할 수 없는 경우 다음을 통해 지원 티켓을 기록합니다. [Admin Console.](https://adminconsole.adobe.com/)
+가입 절차를 완료했는데 이메일 또는 암호 오류 메시지로 인해 계정에 로그인할 수 없는 경우, [Admin Console](https://adminconsole.adobe.com/)을 사용하여 지원 티켓을 기록하십시오.
 
-New Relic에서 이메일을 받지 못한 경우:
+New Relic에서 이메일을 받지 못한 경우, 다음 작업을 수행하십시오.
 
 * [스팸 필터](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/)를 확인합니다.
 * 해당하는 경우 [이메일 허용 목록에 New Relic을 추가](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist)합니다.
-* 두 제안 모두 도움이 되지 않는 경우 지원 티켓에 대한 피드백을 제공하고 Adobe 지원 팀에서 도움을 줄 수 있습니다.
+* 두 제안 모두 도움이 되지 않는 경우, 지원 티켓에 대한 피드백을 제공해 주시면 Adobe 지원 팀에서 추가로 도움을 드리겠습니다.
 
 ## 제한 사항 {#limitations}
 
@@ -150,9 +150,9 @@ New Relic One에 사용자를 추가하는 경우 다음 제한이 적용됩니�
 * New Relic에 추가된 사용자는 **제한됨** 유형이 됩니다. [자세한 내용은 New Relic 설명서를 ](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)참조하십시오.
 * AEM as a Cloud Service는 New Relic One APM 솔루션만 제공하며 경고, 로깅 또는 API 통합에 대한 지원은 제공하지 않습니다.
 
-as a Cloud Service 프로그램의 New Relic One AEM 제공에 대한 추가 도움말 또는 추가 지침을 보려면 [AEM 지원 포털](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html).
+AEM as a Cloud Service 프로그램용 New Relic One에 대한 추가 도움말 또는 추가 지침을 보려면 [AEM 지원 포털](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)을 사용하여 지원 티켓을 엽니다.
 
-## New Relic One에 대한 FAQ {#faqs}
+## New Relic One에 대해 자주 묻는 질문 {#faqs}
 
 ### Adobe가 New Relic One으로 모니터링하는 대상은 무엇입니까? {#adobe-monitor}
 

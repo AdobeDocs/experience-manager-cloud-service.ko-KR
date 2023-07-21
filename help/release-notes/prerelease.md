@@ -5,7 +5,7 @@ exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1304'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 92%
 
 Adobe Experience Manager as a Cloud Service는 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)에 따라 정기적으로 새로운 기능을 제공합니다.
 
-다음 기능 릴리스에서 실행할 예정인 기능에 익숙해지려면 개발 환경 또는 원하는 샌드박스 환경을 구성하여 액세스할 수 있는 프리릴리스 채널을 구독하면 됩니다. AEM 사용자 인터페이스를 통해 변경 내용을 미리 보고 새로운 프리릴리스 API에 대해 코드를 작성할 수 있습니다.
+다음 기능 릴리스에서 실행할 예정인 기능에 익숙해지려면 개발 환경 또는 원하는 샌드박스 환경을 구성하여 액세스할 수 있는 프리릴리스 채널을 구독하면 됩니다. AEM 사용자 인터페이스를 통해 변경 내용을 미리 볼 수 있으며 새 프리릴리스 API에 대해 코드를 작성할 수 있습니다.
 
-해당 기능 릴리스의 프리릴리스 기능 목록은 [릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md).
+지정된 기능 릴리스에 대한 프리릴리스 기능 목록은 [릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)에 게시됩니다.
 
 ## AEM as a Cloud Service 릴리스 {#releases}
 
@@ -33,11 +33,11 @@ AEM as a Cloud Service에는 두 가지 유형의 릴리스가 있습니다.
 
 프리릴리스 채널을 통해 다가오는 기능 릴리스에 예정된 기능을 미리 확인하여 예정된 기능을 평가하고 프로젝트에 대해 가능한 구현을 계획할 수 있습니다. 이를 통해 다음 기능 릴리스를 미리 계획할 수 있습니다.
 
-예를 들어 지금이 5월이고 프리릴리스 채널을 구독 중인 경우 다가오는 6월 릴리스의 기능을 평가할 수 있습니다.
+예를 들어 지금이 5월이고 프리릴리스 채널을 구독 중인 경우, 다가오는 6월 릴리스의 기능을 미리 평가할 수 있습니다.
 
 ![프리릴리스 주기 그래픽](assets/prerelease-cadence.png)
 
-프리릴리스는 예정된 AEMaaCS 기능에 대한 1개월의 롤링 기간을 제공하므로, 새로운 기능이 프로젝트 및 맞춤화에 미치는 영향을 평가하고 이러한 기능, 테스트 및 사용자 교육의 개시를 계획할 수 있습니다.
+프리릴리스는 다가오는 AEMaaCS 기능에 대한 1개월의 롤링 기간을 제공하므로 새로운 기능이 프로젝트 및 맞춤화에 미치는 영향을 평가하고 이러한 기능, 테스트 및 사용자 교육의 개시를 계획할 수 있습니다.
 
 프리릴리스 채널을 효과적으로 활용하는 방법은 4단계로 구성되어 있습니다.
 
@@ -118,7 +118,7 @@ Cloud Manager API 및 CLI를 사용하여 환경 변수를 업데이트할 수�
 
 ### 로컬 SDK {#local-sdk}
 
-Maven 프로젝트에서 Maven Central에 위치한 프리릴리스 `API Jar`를 참조하도록 구성하여 로컬 SDK 빠른 시작에 있는 사이트 콘솔의 새 기능 및 프리릴리스의 새 API에 대한 코드를 확인할 수 있습니다. 또한 프리릴리스 모드에서 일반 SDK 빠른 시작을 시작하여 이들 프리릴리스 기능을 로컬 개발 환경에서도 확인할 수 있습니다.
+Maven 프로젝트에서 Maven Central에 위치한 프리릴리스 `API Jar`를 참조하도록 구성하여 로컬 SDK 빠른 시작에 있는 Sites 콘솔의 새 기능 및 프리릴리스의 새 API에 대한 코드를 확인할 수 있습니다. 또한 프리릴리스 모드에서 일반 SDK 빠른 시작을 시작하여 이들 프리릴리스 기능을 로컬 개발 환경에서도 확인할 수 있습니다.
 
 #### 프리릴리스 모드에서 SDK 빠른 시작 {#prerelease-mode}
 

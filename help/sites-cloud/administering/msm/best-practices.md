@@ -7,7 +7,7 @@ exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1425'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Live Copy로 새 사이트를 만들 때, 전체 MSM 기능 세트를 사용할 
 
 >[!NOTE]
 >
->권한 탭의 CUG는 블루프린트에서 라이브 카피로 롤아웃할 수 없습니다. Live Copy를 구성할 때 이 규칙을 염두에 두고 계획을 세우십시오.
+>권한 탭의 CUG는 블루프린트에서 Live Copy로 롤아웃할 수 없습니다. Live Copy를 구성할 때 이 규칙을 염두에 두고 계획을 세우십시오.
 
 ## 구성 요소 및 컨테이너 동기화 {#components-and-container-synchronization}
 
@@ -81,13 +81,13 @@ MSM은 두 가지 방법으로 다국어 웹 사이트 생성을 지원할 수 �
 
 언어 마스터를 만들 때 다음 사항에 유의하십시오.
 
-* MSM 자체는 **콘텐츠 번역을 지원하지 않지만**, 이를 지원하는 서드파티 번역 커넥터와 통합할 수 있습니다. 다음을 참고하십시오.
+* MSM 자체는 **콘텐츠 번역을 지원하지 않지만**, 이를 지원하는 서드파티 번역 커넥터와 통합할 수 있습니다. 다음 사항을 참고하십시오.
    * MSM을 사용하면 페이지 및/또는 구성 요소 수준에서 상속을 취소할 수 있습니다. 이렇게 하면 텍스트 롤아웃 시 Live Copy의 번역된 콘텐츠를 아직 번역되지 않은 블루프린트 콘텐츠로 덮어쓰는 것을 방지할 수 있습니다.
       * 일부 서드파티 번역 커넥터는 이러한 MSM 상속 관리를 자동화합니다.
-      * 자세한 내용은 번역 서비스 공급업체에 문의하십시오.
+      * 자세한 내용은 귀사의 번역 서비스 공급업체에 문의하십시오.
       * 언어 마스터를 만들고 번역하기 위한 또 다른 접근 방식은 AEM의 기본 번역 통합 프레임워크와 함께 언어 사본을 사용하는 것입니다.
 
-자세한 내용은 [다국어 사이트를 위한 콘텐츠 번역](/help/sites-cloud/administering/translation/overview.md) 및 [번역 모범 사례](/help/sites-cloud/administering/translation/best-practices.md).
+자세한 내용은 [다국어 사이트를 위한 콘텐츠 번역](/help/sites-cloud/administering/translation/overview.md) 및 [번역 모범 사례](/help/sites-cloud/administering/translation/best-practices.md)를 참조하십시오.
 
 ## 구조 변경 및 롤아웃 {#structure-changes-and-rollouts}
 
@@ -144,7 +144,7 @@ MSM을 사용하면 롤아웃 작업 외에도 롤아웃되는 노드 속성을 
 
 ## 추가 정보 {#further-information}
 
-MSM 및 라이브 카피에 대한 자세한 내용은 다음 문서를 참조하십시오.
+MSM 및 Live Copy에 대한 자세한 내용은 다음 문서를 참조하십시오.
 
 * [Live Copy 생성 및 동기화](creating-live-copies.md)
 * [Live Copy 개요 콘솔](live-copy-overview.md)

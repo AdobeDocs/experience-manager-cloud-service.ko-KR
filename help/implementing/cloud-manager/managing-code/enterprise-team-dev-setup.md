@@ -1,21 +1,21 @@
 ---
-title: 기업 개발 팀 설정
+title: 엔터프라이즈 개발 팀 설정
 description: 기업 개발 팀을 설정 및 확장하는 방법과 AEM as a Cloud Service를 통해 개발 프로세스를 지원하는 방법을 알아봅니다.
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1437'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# AEM as a Cloud Service에 대한 기업 개발 팀 설정 {#enterprise-setup}
+# AEM as a Cloud Service에 대한 엔터프라이즈 개발 팀 설정 {#enterprise-setup}
 
 기업 개발 팀을 설정 및 확장하는 방법과 AEM as a Cloud Service를 통해 개발 프로세스를 지원하는 방법을 알아봅니다.
 
 ## 소개 {#introduction}
 
-기업 개발 설정을 사용하는 고객을 지원하기 위해 AEM as a Cloud Service는 Cloud Manager 및 해당 목적에 맞게 빌드된 [독자적인 CI/CD 파이프라인과 완전히 통합됩니다](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md). 이러한 파이프라인과 서비스는 모범 사례를 기반으로 구축되어 철저히 보장됩니다 [테스트 및 최고 코드 품질](/help/implementing/cloud-manager/code-quality-testing.md).
+기업 개발 설정을 사용하는 고객을 지원하기 위해 AEM as a Cloud Service는 Cloud Manager 및 해당 목적에 맞게 빌드된 [독자적인 CI/CD 파이프라인과 완전히 통합됩니다](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md). 이러한 파이프라인과 서비스는 모범 사례를 기반으로 구축되어 철저한 [테스트와 최고의 코드 품질](/help/implementing/cloud-manager/code-quality-testing.md)을 보장합니다.
 
 ## 기업 팀 개발 설정에서 Cloud Manager 지원 {#cloud-manager}
 
@@ -70,7 +70,7 @@ Cloud Manager의 git 저장소 설정에는 두 개의 분기가 있습니다.
 * 안정적인 릴리스 분기에는 모든 팀의 프로덕션 코드가 포함됩니다.
 * 개발 분기에는 모든 팀의 개발 코드가 포함됩니다.
 
-개발 또는 안정적인 분기에서 팀의 git 저장소로 푸시할 때마다 [GitHub 작업](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code).
+개발 또는 안정적인 분기에서 팀의 git 저장소로 푸시할 때마다 [GitHub 작업](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code)이 트리거됩니다.
 
 모든 프로젝트는 안정적인 분기에 대해 동일한 설정을 따릅니다. 프로젝트의 안정적인 분기로 푸시하면 Cloud Manager의 git 저장소에 있는 안정적인 분기로 자동 푸시됩니다. Cloud Manager의 프로덕션 파이프라인은 안정적인 분기로 푸시하여 트리거되도록 구성됩니다. 따라서 프로덕션 파이프라인은 팀이 안정적인 분기로 푸시할 때마다 실행되며 모든 품질 게이트가 통과하면 프로덕션 배포가 업데이트됩니다.
 
@@ -82,7 +82,7 @@ Cloud Manager의 git 저장소 설정에는 두 개의 분기가 있습니다.
 
 로컬 개발의 경우 [AEM as a Cloud Service용 SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md#developing)가 사용됩니다. SDK를 사용하면 로컬 작성자, 게시 및 Dispatcher를 설정할 수 있습니다. 이를 통해 오프라인 개발 및 빠른 처리 시간이 가능합니다. 때로는 작성자 환경만 개발에 사용되지만 Dispatcher 및 게시 환경을 빠르게 설정하면 git 저장소로 푸시하기 전에 모든 것을 로컬에서 테스트할 수 있습니다.
 
-각 팀의 멤버는 일반적으로 공유 git의 코드를 자체 프로젝트 코드로 체크아웃합니다. 프로젝트가 독립적이므로 다른 프로젝트를 체크아웃할 필요가 없습니다.
+각 팀의 멤버는 일반적으로 공유 git의 코드 및 자체 프로젝트 코드를 체크아웃합니다. 프로젝트가 독립적이므로 다른 프로젝트를 체크아웃할 필요가 없습니다.
 
 ![로컬 체크아웃 및 SDK](/help/implementing/cloud-manager/assets/team-setup3.png)
 
@@ -90,7 +90,7 @@ Cloud Manager의 git 저장소 설정에는 두 개의 분기가 있습니다.
 
 >[!TIP]
 >
->다음을 참조하십시오 [다중 소스 Git 저장소를 사용하여 작업](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html#managing-code) 이 설정에 대해 자세히 알아보세요.
+>이 설정에 대한 자세한 내용은 [다중 소스 Git 저장소를 사용하여 작업](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html#managing-code) 문서를 참조하십시오.
 
 ### 다중 팀 설정에 대한 고려 사항 {#considerations}
 

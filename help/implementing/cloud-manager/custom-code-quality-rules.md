@@ -5,7 +5,7 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3502'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -504,7 +504,7 @@ public void doThis(Resource resource) {
 
 보장된 실행이 필요한 작업에는 Sling 스케줄러를 사용하지 마십시오. Sling의 예정된 작업은 실행을 보장하며 클러스터된 환경과 클러스터되지 않은 환경 모두에 더 적합합니다.
 
-다음을 참조하십시오 [Apache Sling 이벤트 및 작업 처리](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) 클러스터 환경에서 슬링 작업이 처리되는 방법에 대해 자세히 알아보십시오.
+클러스터된 환경에서 Sling 작업이 처리되는 방법에 대한 자세한 내용은 [Apache Sling 이벤트 및 작업 처리](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)를 참조하십시오.
 
 ### 더 이상 사용되지 않는 Experience Manager API를 사용하지 않음 {#sonarqube-aem-deprecated}
 
@@ -560,7 +560,7 @@ public class DontDoThis implements Page {
 
 기본 제공되는 여러 Experience Manager Oak 인덱스에는 Tika 구성이 포함되며 이러한 인덱스의 사용자 정의 항목에는 Tika 구성이 포함되어야 합니다. 이 규칙은 `damAssetLucene`, `lucene` 및 `graphqlConfig` 인덱스의 사용자 정의 항목을 확인하고 `tika` 노드가 누락되거나 `tika` 노드에 `config.xml`이라는 하위 노드가 누락된 경우 문제를 발생시킵니다.
 
-다음을 참조하십시오 [색인 지정 문서](/help/operations/indexing.md#preparing-the-new-index-definition) 색인 정의 사용자 정의에 대한 자세한 내용을 보려면 를 클릭하십시오.
+인덱스 정의 사용자 정의에 대한 자세한 내용은 [인덱싱 설명서](/help/operations/indexing.md#preparing-the-new-index-definition)를 참조하십시오.
 
 #### 비준수 코드 {#non-compliant-code-indextikanode}
 
@@ -773,10 +773,10 @@ Experience Manager 콘텐츠 저장소의 `/libs` 콘텐츠 트리는 고객이 
 Classic UI 대화 상자가 있는 Experience Manager 구성 요소에는 항상 해당하는 Touch UI 대화 상자가 있어야 합니다. 두 대화 상자 모두 최적의 작성 환경을 제공하며 Classic UI가 지원되지 않는 Cloud Service 배포 모델과 호환됩니다. 이 규칙은 다음 시나리오를 확인합니다.
 
 * Classic UI 대화 상자(즉, `dialog` 하위 노드)가 있는 구성 요소에는 해당 터치 UI 대화 상자(즉, `cq:dialog` 하위 노드)가 있어야 합니다.
-* 클래식 UI 디자인 대화 상자가 있는 구성 요소(즉, `design_dialog` 노드에는 해당 터치 UI 디자인 대화 상자(즉, `cq:design_dialog` 하위 노드).
+* Classic UI 디자인 대화 상자(예: `design_dialog` 노드)가 있는 구성 요소에는 해당 터치 UI 디자인 대화 상자(예: `cq:design_dialog` 하위 노드)가 있어야 합니다.
 * Classic UI 대화 상자 및 Classic UI 디자인 대화 상자가 모두 있는 구성 요소에는 해당 터치 UI 대화 상자 및 해당 터치 UI 디자인 대화 상자가 모두 있어야 합니다.
 
-Experience Manager 현대화 도구 설명서는 구성 요소를 Classic UI에서 Touch UI로 변환하는 방법에 대한 문서와 도구를 제공합니다. 다음을 참조하십시오 [Experience Manager 현대화 도구 설명서](https://opensource.adobe.com/aem-modernize-tools/) 을 참조하십시오.
+Experience Manager 현대화 도구 설명서는 구성 요소를 Classic UI에서 Touch UI로 변환하는 방법에 대한 문서와 도구를 제공합니다. 자세한 내용은 [Experience Manager 현대화 도구 설명서](https://opensource.adobe.com/aem-modernize-tools/)를 참조하십시오.
 
 ### 패키지에 변경 가능한 콘텐츠 및 변경 불가능한 콘텐츠를 혼합하지 않음 {#oakpal-packages-immutable}
 
@@ -791,7 +791,7 @@ Cloud Service 배포 모델과 호환되려면 개별 콘텐츠 패키지에 저
 >
 >[고객 패키지로 /libs에서 노드를 생성하거나 수정하지 않기](#oakpal-customer-package) 규칙은 항상 적용됩니다.
 
-다음을 참조하십시오 [Experience Manager 프로젝트 구조](/help/implementing/developing/introduction/aem-project-content-package-structure.md) 을 참조하십시오.
+자세한 내용은 [Experience Manager 프로젝트 구조 설명서](/help/implementing/developing/introduction/aem-project-content-package-structure.md)를 참조하십시오.
 
 ### 역방향 복제 에이전트를 사용하지 않음 {#oakpal-reverse-replication}
 
@@ -800,7 +800,7 @@ Cloud Service 배포 모델과 호환되려면 개별 콘텐츠 패키지에 저
 * **심각도**: 사소
 * **이후**: 버전 2020.5.0
 
-Experience Manager as a Cloud Service의 일부로 설명한 대로 Cloud Service 배포에서는 역방향 복제에 대한 지원을 사용할 수 없습니다. [릴리스 정보](/help/release-notes/aem-cloud-changes.md#replication-agents).
+Experience Manager as a Cloud Service의 [릴리스 정보](/help/release-notes/aem-cloud-changes.md#replication-agents)에서 설명한 대로 Cloud Service 배포에서는 역방향 복제에 대한 지원을 사용할 수 없습니다.
 
 역방향 복제를 사용하는 고객은 Adobe에 대체 솔루션을 문의해야 합니다.
 
@@ -853,7 +853,7 @@ Experience Manager as a Cloud Service에서의 자산 처리를 위해 Asset 마
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
-이전까지는 Experience Manager 프로젝트에서 정적 템플릿을 매우 흔히 사용했지만 이제는 가장 유연하고 정적 템플릿에 없는 추가 기능을 지원하는 편집 가능한 템플릿을 사용하는 것이 좋습니다. 자세한 내용은 문서에서 확인할 수 있습니다. [페이지 템플릿](/help/implementing/developing/components/templates.md).
+이전까지는 Experience Manager 프로젝트에서 정적 템플릿을 매우 흔히 사용했지만 이제는 가장 유연하고 정적 템플릿에 없는 추가 기능을 지원하는 편집 가능한 템플릿을 사용하는 것이 좋습니다. 자세한 내용은 [페이지 템플릿](/help/implementing/developing/components/templates.md) 문서에서 확인할 수 있습니다.
 
 정적 템플릿에서 편집 가능한 템플릿으로의 마이그레이션은 [Experience Manager 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/)를 사용하여 대부분 자동화할 수 있습니다.
 
@@ -864,7 +864,7 @@ Experience Manager as a Cloud Service에서의 자산 처리를 위해 Asset 마
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
-레거시 Foundation 구성 요소(즉, 아래의 구성 요소) `/libs/foundation`)는 코어 구성 요소를 위한 여러 Experience Manager 릴리스에서 더 이상 사용되지 않습니다. 오버레이 또는 상속 여부에 관계없이 기존 기초 구성 요소를 사용자 정의 구성 요소의 기반으로 사용하는 것은 권장되지 않으며 해당 핵심 구성 요소로 변환해야 합니다.
+기존 기초 구성 요소(예: `/libs/foundation` 아래의 구성 요소)는 핵심 구성 요소를 위한 여러 Experience Manager 릴리스에서 더 이상 사용되지 않습니다. 오버레이 또는 상속 여부에 관계없이 기존 기초 구성 요소를 사용자 정의 구성 요소의 기반으로 사용하는 것은 권장되지 않으며 해당 핵심 구성 요소로 변환해야 합니다.
 
 이러한 전환은 [Experience Manager 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/)를 통해 용이하게 수행할 수 있습니다.
 
@@ -884,7 +884,7 @@ Experience Manager as a Cloud Service는 실행 모드 이름에 대해 엄격�
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
-Experience Manager as a Cloud Service을 사용하려면 사용자 정의 검색 인덱스 정의(즉, 유형의 노드)가 필요합니다. `oak:QueryIndexDefinition`) 의 직접 하위 노드여야 합니다. `/oak:index`. Experience Manager as a Cloud Service와 호환되려면 다른 위치의 인덱스를 이동해야 합니다. 검색 인덱스에 대한 자세한 내용은 해당 문서 를 참조하십시오 [콘텐츠 검색 및 색인화](/help/operations/indexing.md).
+Experience Manager as a Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(예: `oak:QueryIndexDefinition` 유형의 노드)가 `/oak:index`의 직접 하위 노드여야 합니다. Experience Manager as a Cloud Service와 호환되려면 다른 위치의 인덱스를 이동해야 합니다. 검색 인덱스에 대한 자세한 내용은 [콘텐츠 검색 및 색인화](/help/operations/indexing.md) 문서를 참조하십시오.
 
 ### 사용자 정의 검색 인덱스 정의 노드의 compatVersion을 2로 설정해야 함 {#oakpal-custom-search-compatVersion}
 
@@ -893,7 +893,7 @@ Experience Manager as a Cloud Service을 사용하려면 사용자 정의 검색
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
-Experience Manager as a Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(예: `oak:QueryIndexDefinition` 유형의 노드)에 `2`로 설정된 `compatVersion` 속성이 있어야 합니다. 다른 값은 Experience Manager as a Cloud Service에서 지원되지 않습니다. 검색 인덱스에 대한 자세한 내용은 [콘텐츠 검색 및 색인화](/help/operations/indexing.md).
+Experience Manager as a Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(예: `oak:QueryIndexDefinition` 유형의 노드)에 `2`로 설정된 `compatVersion` 속성이 있어야 합니다. 다른 값은 Experience Manager as a Cloud Service에서 지원되지 않습니다. 검색 인덱스에 대한 자세한 내용은 [콘텐츠 검색 및 색인화](/help/operations/indexing.md)를 참조하십시오.
 
 ### 사용자 정의 검색 인덱스 정의 노드의 하위 노드 유형을 nt:unstructured로 설정해야 함 {#oakpal-descendent-nodes}
 
@@ -920,7 +920,7 @@ Experience Manager as a Cloud Service를 사용하려면 사용자 정의 검색
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
-Experience Manager as a Cloud Service을 사용하려면 사용자 정의 검색 인덱스 정의(즉, 유형의 노드)가 필요합니다. `oak:QueryIndexDefinition`)는 문서에 설명된 특정 패턴에 따라 지정해야 합니다 [콘텐츠 검색 및 색인화](/help/operations/indexing.md).
+Experience Manager as a Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(예: `oak:QueryIndexDefinition` 유형의 노드)를 [콘텐츠 검색 및 색인화](/help/operations/indexing.md) 문서에 설명된 특정 패턴에 따라 지정해야 합니다.
 
 ### 사용자 정의 검색 인덱스 정의 노드는 lucene 유형의 인덱스를 사용해야 함  {#oakpal-index-type-lucene}
 
@@ -929,7 +929,7 @@ Experience Manager as a Cloud Service을 사용하려면 사용자 정의 검색
 * **심각도**: Blocker
 * **이후**: 버전 2021.2.0(유형 및 심각도는 2021.8.0에 변경됨)
 
-Experience Manager as a Cloud Service을 사용하려면 사용자 정의 검색 인덱스 정의(즉, 유형의 노드)가 필요합니다. `oak:QueryIndexDefinition`) `type` 값이 로 설정된 속성 `lucene`. 기존 인덱스 유형을 사용하는 색인화는 Experience Manager as a Cloud Service로 마이그레이션하기 전에 업데이트해야 합니다. 자세한 내용은 [콘텐츠 검색 및 색인화](/help/operations/indexing.md#how-to-use)를 참조하십시오.
+Experience Manager as a Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(예: `oak:QueryIndexDefinition` 유형의 노드)에 값이 `lucene`으로 설정된 `type` 속성이 있어야 합니다. 기존 인덱스 유형을 사용하는 색인화는 Experience Manager as a Cloud Service로 마이그레이션하기 전에 업데이트해야 합니다. 자세한 내용은 [콘텐츠 검색 및 색인화](/help/operations/indexing.md#how-to-use)를 참조하십시오.
 
 ### 사용자 정의 검색 인덱스 정의 노드에 “seed” 속성을 포함하지 않음 {#oakpal-property-name-seed}
 

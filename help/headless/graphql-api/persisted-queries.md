@@ -6,7 +6,7 @@ exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1681'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -196,7 +196,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
 `PERSISTENT_PATH`는 지속 쿼리가 저장되는 위치에 대한 축약된 경로입니다.
 
-1. 예를 들어, `wknd` 는 구성 이름이며 `plain-article-query` 는 지속 쿼리의 이름입니다. 쿼리를 실행하려면 다음 작업을 수행하십시오.
+1. 예를 들어 `wknd`는 구성 이름이며 `plain-article-query`는 지속 쿼리의 이름입니다. 쿼리를 실행하려면 다음 작업을 수행하십시오.
 
    ```shell
    $ curl -X GET \
@@ -228,7 +228,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 <AEM_HOST>/graphql/execute.json/<PERSISTENT_QUERY_PATH>;variable1=value1;variable2=value2
 ```
 
-예를 들어 다음 쿼리에는 변수가 포함되어 있습니다 `activity` 활동 값을 기반으로 목록을 필터링하려면 다음을 수행합니다.
+예를 들어 다음 쿼리에는 활동 값을 기반으로 목록을 필터링하기 위한 변수 `activity`가 포함되어 있습니다.
 
 ```graphql
 query getAdventuresByActivity($activity: String!) {
@@ -265,7 +265,7 @@ query getAdventuresByActivity($activity: String!) {
 
 기본적으로 AEM은 TTL(Time To Live) 정의에 따라 캐시를 무효화합니다. 이러한 TTL은 다음 매개변수로 정의할 수 있습니다. 이러한 매개변수는 다양한 방법으로 액세스할 수 있으며, 사용되는 메커니즘에 따라 이름이 다양합니다.
 
-| 캐시 유형 | [HTTP 헤더](https://developer.mozilla.org/ko-KR/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | OSGi 구성  | Cloud Manager |
+| 캐시 유형 | [HTTP 헤더](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | OSGi 구성  | Cloud Manager |
 |--- |--- |--- |--- |--- |
 | 브라우저 | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` | `graphqlCacheControl` |
 | CDN | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` | `graphqlSurrogateControl` | 60 |
@@ -336,7 +336,7 @@ curl -u admin:admin -X POST \
 --data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
 ```
 
-`cache-control`은 생성 시간(PUT) 또는 그 이후에 설정될 수 있습니다(예: 인스턴스의 POST 요청을 통해 설정). AEM에서 기본값을 제공하기 때문에 지속 쿼리 생성 시 캐시 제어는 선택 사항입니다. cURL을 사용하여 쿼리를 지속하는 사례는 [GraphQL 쿼리를 지속하는 방법](#how-to-persist-query)을 참조하십시오.
+`cache-control`은 생성 시간(PUT) 또는 그 이후에 설정될 수 있습니다(예: 인스턴스의 POST 요청을 통해 설정). AEM에서 기본값을 제공하기 때문에 지속 쿼리 생성 시 캐시 제어는 옵션입니다. cURL을 사용하여 쿼리를 지속하는 사례는 [GraphQL 쿼리를 지속하는 방법](#how-to-persist-query)을 참조하십시오.
 
 ### Cloud Manager 변수를 사용하여 캐시 관리 {#cache-cloud-manager-variables}
 
@@ -400,7 +400,7 @@ curl -u admin:admin -X POST \
 
 ## 앱에서 사용할 쿼리 URL 인코딩 {#encoding-query-url}
 
-애플리케이션에서 사용하는 경우 쿼리 변수를 구성할 때 사용되는 모든 특수 문자(즉, 세미콜론(`;`), 등호(`=`), 슬래시 `/`)는 해당 UTF-8 인코딩을 사용하도록 변환해야 합니다.
+애플리케이션에서 사용하는 경우, 쿼리 변수를 구성할 때 사용되는 모든 특수 문자(예: 세미콜론(`;`), 등호(`=`), 슬래시(`/`))를 해당 UTF-8 인코딩을 사용하도록 변환해야 합니다.
 
 예:
 

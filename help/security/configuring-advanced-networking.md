@@ -5,7 +5,7 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3571'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 94%
 
 >[!INFO]
 >
->이 [위치](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=ko)에서는 각각의 고급 네트워킹 옵션에 대해 설명하기 위해 설계된 일련의 문서를 찾아볼 수도 있습니다.
+>이 [위치](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=en)에서는 각각의 고급 네트워킹 옵션에 대해 설명하기 위해 설계된 일련의 문서를 찾아볼 수도 있습니다.
 
 ## 개요 {#overview}
 
@@ -25,7 +25,7 @@ AEM as a Cloud Service는 Cloud Manager API를 사용하여 구성할 수 있는
 * [전용 이그레스 IP 주소](#dedicated-egress-IP-address) - AEM as a Cloud Service의 트래픽을 고유 IP에서 생성되도록 구성합니다.
 * [Virtual Private Network(VPN)](#vpn) - VPN 기술을 보유한 고객에 대해 고객 인프라 및 AEM as a Cloud Service 간의 트래픽을 보호합니다.
 
-이 문서에서는 구성 방법을 포함하여 이러한 옵션 각각에 대해 자세히 설명합니다. 일반적인 구성 전략으로, 프로그램 수준에서 `/networkInfrastructures` API 엔드포인트가 호출되어 원하는 고급 네트워킹 유형을 선언한 다음 각 환경에 대해 `/advancedNetworking` 엔드포인트가 호출되어 인프라를 활성화하고 환경별 매개변수를 구성합니다. 각 형식 구문, 샘플 요청 및 응답에 대한 Cloud Manager API 설명서의 적절한 끝점을 참조하십시오.
+이 문서에서는 구성 방법을 포함하여 이러한 옵션 각각에 대해 자세히 설명합니다. 일반적인 구성 전략으로, 프로그램 수준에서 `/networkInfrastructures` API 엔드포인트가 호출되어 원하는 고급 네트워킹 유형을 선언한 다음 각 환경에 대해 `/advancedNetworking` 엔드포인트가 호출되어 인프라를 활성화하고 환경별 매개변수를 구성합니다. 각 형식 구문, 샘플 요청 및 응답은 Cloud Manager API 설명서에 기재된 적절한 엔드포인트를 참조하십시오.
 
 프로그램에서 단일 고급 네트워킹 변형을 프로비저닝할 수 있습니다. 유연한 포트 이그레스와 전용 이그레스 IP 주소 사이에서 결정할 때, 특정 IP 주소가 필요하지 않은 경우 Adobe에서 유연한 포트 이그레스 트래픽의 성능을 최적화할 수 있으므로 유연한 포트 이그레스를 선택하는 것이 좋습니다.
 
@@ -36,7 +36,7 @@ AEM as a Cloud Service는 Cloud Manager API를 사용하여 구성할 수 있는
 
 >[!NOTE]
 >
->레거시 전용 이그레스 기술을 통해 이미 프로비저닝되었으며 이들 옵션 중 하나를 구성해야 하는 고객은 옵션을 구성해서는 안 되며, 그렇지 않으면 사이트 연결에 영향을 미칠 수 있습니다. 도움이 필요하면 Adobe 지원 센터에 문의하십시오.
+>레거시 전용 이그레스 기술을 통해 이미 프로비저닝되었으며 이들 옵션 중 하나를 구성해야 하는 고객은 옵션을 구성해서는 안 되며, 그렇지 않으면 사이트 연결에 영향을 미칠 수 있습니다. 도움이 필요하면 Adobe 지원 팀에 문의하십시오.
 
 ## 유연한 포트 이그레스 {#flexible-port-egress}
 
@@ -44,11 +44,11 @@ AEM as a Cloud Service는 Cloud Manager API를 사용하여 구성할 수 있는
 
 ### 고려 사항 {#flexible-port-egress-considerations}
 
-VPN이 필요하지 않고 전용 이그레스 IP 주소가 필요하지 않은 경우 전용 이그레스에 의존하지 않는 트래픽을 사용하면 더 높은 처리량을 달성할 수 있으므로 유연한 포트 이그레스가 권장됩니다.
+VPN 및 전용 이그레스 IP 주소가 필요하지 않은 경우, 전용 이그레스에 의존하지 않는 트래픽을 사용할 때 더 많은 처리량을 달성할 수 있으므로 유연한 포트 이그레스가 권장됩니다.
 
 ### 구성 {#configuring-flexible-port-egress-provision}
 
-프로그램당 한 번씩 POST `/program/<programId>/networkInfrastructures` 엔드포인트가 호출되어 `kind` 매개변수 및 지역에 대한 `flexiblePortEgress` 값이 간단히 전달됩니다. 끝점이 다음으로 응답함 `network_id`, 및 상태를 포함한 기타 정보. 전체 매개변수 세트, 정확한 구문 및 나중에 변경할 수 없는 매개변수와 같은 중요한 정보 [API 문서에서 참조할 수 있습니다.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
+프로그램당 한 번씩 POST `/program/<programId>/networkInfrastructures` 엔드포인트가 호출되어 `kind` 매개변수 및 지역에 대한 `flexiblePortEgress` 값이 간단히 전달됩니다. 해당 엔드포인트는 `network_id`와 상태 등의 기타 정보에 응답합니다. 전체 매개변수 세트와 정확한 구문은 물론 나중에 변경할 수 없는 매개변수와 같은 중요한 정보는 [API 문서에서 참조할 수 있습니다.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
 
 호출되면 네트워킹 인프라가 프로비저닝되는 데 일반적으로 약 15분이 소요됩니다. Cloud Manager의 [네트워크 인프라 GET 엔드포인트](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) 호출은 “준비됨” 상태로 표시됩니다.
 
@@ -79,8 +79,8 @@ API에 대한 자세한 내용은 [Cloud Manager API 설명서](https://develope
 
 80 또는 443 이외의 포트로 이동하는 HTTP 또는 HTTPS 트래픽의 경우 다음 호스트 및 포트 환경 변수를 사용하여 프록시를 구성해야 합니다.
 
-* HTTP: `AEM_PROXY_HOST` / `AEM_HTTP_PROXY_PORT ` (default to `proxy.tunnel:3128` in AEM releases &lt; 6094)
-* HTTPS: `AEM_PROXY_HOST` / `AEM_HTTPS_PROXY_PORT ` (default to `proxy.tunnel:3128` in AEM releases &lt; 6094)
+* HTTP: `AEM_PROXY_HOST` / `AEM_HTTP_PROXY_PORT ` (`proxy.tunnel:3128`로 기본값 설정(AEM 릴리스) &lt; 6094)
+* HTTPS: `AEM_PROXY_HOST` / `AEM_HTTPS_PROXY_PORT ` (`proxy.tunnel:3128`로 기본값 설정(AEM 릴리스) &lt; 6094)
 
 `www.example.com:8443`으로 요청을 전송하는 샘플 코드로 예를 들어 보겠습니다.
 
@@ -127,8 +127,8 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
   <tr>
     <td></td>
     <td>다음 환경 변수 및 프록시 포트 번호를 사용하여 구성된 HTTP 프록시를 통한 80 또는 443 이외의 포트의 비표준 트래픽. Cloud Manager API 호출의 portForwards 매개변수에서 대상 포트를 선언하지 마십시오.<br><ul>
-     <li>AEM_PROXY_HOST (default to `proxy.tunnel` in AEM releases &lt; 6094)</li>
-     <li>AEM_HTTPS_PROXY_PORT (default to port 3128 in AEM releases &lt; 6094)</li>
+     <li>AEM_PROXY_HOST (`proxy.tunnel`로 기본값 설정(AEM 릴리스) &lt; 6094)</li>
+     <li>AEM_HTTPS_PROXY_PORT (포트 3128로 기본값 설정(AEM 릴리스) &lt; 6094)</li>
     </ul>
     <td>80 또는 443 이외의 포트</td>
     <td>허용됨</td>
@@ -180,7 +180,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 >[!NOTE]
 >
->2021년 9월 릴리스(21/10/6) 이전에 전용 이그레스 IP로 프로비저닝된 경우 를 참조하십시오. [레거시 전용 이그레스 주소 고객](#legacy-dedicated-egress-address-customers).
+>2021년 9월 릴리스(21/10/6) 이전에 전용 이그레스 IP로 프로비저닝된 경우, [레거시 전용 이그레스 주소 고객](#legacy-dedicated-egress-address-customers)을 참조하십시오.
 
 ### 이점 {#benefits}
 
@@ -343,7 +343,7 @@ VPN을 사용하면 작성자, 게시 또는 미리보기에서 온프레미스 
 
 또한 VPN을 사용하면 VPN을 지원하는 CRM 공급업체와 같은 SaaS 공급업체에 연결하거나 기업 네트워크에서 AEM as a Cloud Service 작성자, 미리보기 또는 게시에 연결할 수 있습니다.
 
-대부분의 IPSec 기술이 내장된 VPN 디바이스가 지원됩니다. **RouteBased 구성 지침** 열에 기재된 정보에 따라 [이 페이지](https://docs.microsoft.com/ko-kr/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable)의 디바이스 목록을 참조하십시오. 표에 설명된 대로 디바이스를 구성하십시오.
+대부분의 IPSec 기술이 내장된 VPN 디바이스가 지원됩니다. **RouteBased 구성 지침** 열에 기재된 정보에 따라 [이 페이지](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable)의 디바이스 목록을 참조하십시오. 표에 설명된 대로 디바이스를 구성하십시오.
 
 ### 일반적인 고려 사항 {#general-vpn-considerations}
 
@@ -352,7 +352,7 @@ VPN을 사용하면 작성자, 게시 또는 미리보기에서 온프레미스 
 
 ### 만들기 {#vpn-creation}
 
-프로그램당 한 번씩 POST `/program/<programId>/networkInfrastructures` 엔드포인트가 호출되어 `kind` 매개변수, 지역, 주소 공간(CIDR 목록 - 나중에 수정할 수 없음)에 대한 “vpn” 값, 고객 네트워크의 이름 확인을 위한 DNS Resolver 및 게이트웨이 구성, 공유 VPN 키 및 IP 보안 정책과 같은 VPN 연결 정보 등을 포함하는 구성 정보 페이로드를 전달합니다. 끝점이 다음으로 응답함 `network_id`, 및 상태를 포함한 기타 정보. [API 설명서](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)에 전체 매개변수 및 정확한 구문 집합이 참조되어야 합니다.
+프로그램당 한 번씩 POST `/program/<programId>/networkInfrastructures` 엔드포인트가 호출되어 `kind` 매개변수, 지역, 주소 공간(CIDR 목록 - 나중에 수정할 수 없음)에 대한 “vpn” 값, 고객 네트워크의 이름 확인을 위한 DNS Resolver 및 게이트웨이 구성, 공유 VPN 키 및 IP 보안 정책과 같은 VPN 연결 정보 등을 포함하는 구성 정보 페이로드를 전달합니다. 해당 엔드포인트는 `network_id`와 상태 등의 기타 정보에 응답합니다. [API 설명서](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)에 전체 매개변수 및 정확한 구문 집합이 참조되어야 합니다.
 
 호출되면 네트워킹 인프라가 프로비저닝되는 데 일반적으로 약 45분에서 60분이 소요됩니다. API의 GET 메서드를 호출하여 현재 상태를 반환하고 `creating`에서 `ready`로 전환할 수 있습니다. 모든 상태에 대한 내용은 API 설명서를 참조하십시오.
 
@@ -423,7 +423,7 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시하고, 약 10분 
   </tr>
   <tr>
     <td></td>
-    <td>IP가 다음에 해당하지 않는 경우 <i>VPN 게이트웨이 주소 공간</i> 범위 및 http 프록시 구성(기본적으로 표준 Java HTTP 클라이언트 라이브러리를 사용하여 HTTP/S 트래픽에 대해 구성됨)을 통해</td>
+    <td>IP가 <i>VPN 게이트웨이 주소 공간</i> 범위에 해당하지 않는 경우 기본적으로 표준 Java HTTP 클라이언트 라이브러리를 사용하여 HTTP/S 트래픽에 대해 구성되는 HTTP 프록시 구성을 통해</td>
     <td>임의</td>
     <td>전용 이그레스 IP를 통해</td>
     <td></td>
@@ -452,7 +452,7 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시하고, 약 10분 
   </tr>
   <tr>
     <td></td>
-    <td>IP가 다음에 해당하지 않는 경우 <i>VPN 게이트웨이 주소 공간</i> 범위 및 클라이언트가 <code>AEM_PROXY_HOST</code> 를 사용하는 환경 변수 <code>portOrig</code> 선언된 위치 <code>portForwards</code> API 매개변수</td>
+    <td>IP가 <i>VPN 게이트웨이 주소 공간</i> 범위에 해당하지 않고 클라이언트가 <code>portForwards</code> API 매개변수에서 선언된 <code>portOrig</code>를 사용하여 <code>AEM_PROXY_HOST</code> 환경 변수를 연결하는 경우</td>
     <td>임의</td>
     <td>전용 이그레스 IP를 통해</td>
     <td></td>
@@ -504,7 +504,7 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시하고, 약 10분 
 
 AEM으로의 VPN 액세스만 허용하려면 `p{PROGRAM_ID}.external.adobeaemcloud.com`에 의해 정의된 IP만 환경에 접근할 수 있도록 Cloud Manager에 환경 허용 목록을 구성해야 합니다. 이 작업은 Cloud Manager의 다른 IP 기반 허용 목록과 동일한 방식으로 수행할 수 있습니다.
 
-규칙이 경로 기반이어야 하는 경우 디스패처 수준에서 표준 HTTP 지시문을 사용하여 특정 IP를 거부하거나 허용하십시오. 요청이 항상 도메인에 도착하도록 원하는 경로도 CDN에서 캐시할 수 없어야 합니다.
+규칙이 경로 기반이어야 하는 경우 Dispatcher 수준에서 표준 HTTP 지시문을 사용하여 특정 IP를 거부하거나 허용하십시오. 요청이 항상 도메인에 도착하도록 원하는 경로도 CDN에서 캐시할 수 없어야 합니다.
 
 **HTTPd 구성 예**
 
@@ -563,7 +563,7 @@ Header always set Cache-Control private
 절차는 대부분 이전 지침과 유사합니다. 단, 프로덕션 환경이 고급 네트워킹에 대해 아직 활성화되지 않은 경우 스테이징 환경에서 먼저 활성화하여 구성을 테스트할 수 있습니다.
 
 1. [Cloud Manager Create Network Infrastructure API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure)에 대한 POST 호출을 통해 모든 지역에 네트워킹 인프라를 만듭니다. 기본 지역과 비교하여 페이로드 JSON 구성의 유일한 차이점은 지역 속성입니다.
-1. 스테이징 환경의 경우 `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`을 실행하여 환경에서 설정한 고급 네트워킹을 활성화하고 구성합니다. 자세한 내용은 API 설명서 를 참조하십시오. [여기](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
+1. 스테이징 환경의 경우 `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`을 실행하여 환경에서 설정한 고급 네트워킹을 활성화하고 구성합니다. 자세한 내용은 [여기](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)에서 API 설명서를 참조하십시오.
 1. 필요한 경우 FQDN을 통해 외부 인프라를 잠급니다(예: `p1234.external.adobeaemcloud.com`). 그렇지 않으면 IP 주소를 통해 잠글 수 있습니다.
 1. 스테이징 환경이 예상대로 작동하는 경우 프로덕션의 환경에서 설정한 고급 네트워킹 구성을 활성화하고 구성합니다.
 

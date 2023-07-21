@@ -5,7 +5,7 @@ exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1569'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 여기에서는 빠른 시작 안내서를 시작하기 전에 기억해야 하는 일반적인 팁과 힌트 몇 가지를 작성 시스템의 영역으로 나누어서 설명합니다.
 
-### 사이트 콘솔에서 {#sites-console}
+### Sites 콘솔에서 {#sites-console}
 
 * 만들기 버튼
 
@@ -57,7 +57,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 페이지 찾기에 대한 여러 측면이 있습니다. 탐색 및/또는 검색할 수 있습니다.
 
-1. 를 엽니다. **사이트** 콘솔 (사용 **사이트** 의 옵션 [전역 탐색](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) - Adobe Experience Manager 링크(왼쪽 상단)를 선택하면 트리거됩니다(드롭다운).
+1. Adobe Experience Manager 링크(왼쪽 상단)를 선택하면 트리거되는(드롭다운) **전역 탐색**&#x200B;에서 **Sites** 옵션을 사용하여 [Sites](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) 콘솔을 엽니다.
 
 1. 해당 페이지를 탭/클릭하여 트리 아래로 탐색합니다. 페이지 리소스가 표시되는 방식은 사용 중인 보기([카드, 목록 또는 열](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources))에 따라 다릅니다.
 
@@ -90,11 +90,11 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 1. 열 보기:
 
-   * 필요한 리소스에 대한 썸네일을 탭/클릭합니다. 썸네일 위에 확인 표시가 나타나 썸네일이 선택되었음을 나타냅니다.
+   * 필요한 리소스에 대한 썸네일을 탭/클릭합니다. 썸네일 위에 확인 표시가 나타나 페이지가 선택되었음을 알려 줍니다.
 
 1. 목록 보기:
 
-   * 필요한 리소스에 대한 썸네일을 탭/클릭합니다. 썸네일 위에 확인 표시가 나타나 썸네일이 선택되었음을 나타냅니다.
+   * 필요한 리소스에 대한 썸네일을 탭/클릭합니다. 썸네일 위에 확인 표시가 나타나 페이지가 선택되었음을 알려 줍니다.
 
 1. 카드 보기:
 
@@ -103,7 +103,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
       * 모바일 디바이스에서: 카드를 길게 탭
       * 데스크탑 디바이스에서: 확인 표시 아이콘으로 표시되는 [빠른 작업](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) 사용
 
-   * 카드가 틱 마크로 오버레이되어 페이지가 선택되었음을 나타냅니다.
+   * 카드 위에 확인 표시가 나타나 페이지가 선택되었음을 알려 줍니다.
 
    ![카드 예](/help/sites-cloud/authoring/assets/card.png)
 
@@ -181,7 +181,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
       * 도구 모음에서 **미리보기**&#x200B;를 선택합니다.
 
-   * 다음을 사용하여 편집 모드로 돌아가기(또는 다른 모드 선택) **편집** 드롭다운 선택기입니다.
+   * **편집** 드롭다운 선택기를 사용하여 편집 모드로 돌아가거나 다른 모드를 선택합니다.
 
    >[!NOTE]
    >
@@ -191,7 +191,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 [페이지 속성을 편집](/help/sites-cloud/authoring/fundamentals/page-properties.md)하는 방법에는 두 가지(기본) 방법이 있습니다.
 
-* **사이트** 콘솔에서:
+* **Sites** 콘솔에서:
 
    1. 게시할 [페이지로 이동](#finding-your-page)합니다.
    1. 다음 중 하나를 사용하여 **속성** 아이콘을 선택합니다.
@@ -214,7 +214,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 페이지를 게시 및 게시 취소하는 [방법에는](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) 두 가지 기본 방법이 있습니다.
 
-* **사이트** 콘솔에서:
+* **Sites** 콘솔에서:
 
    1. 게시할 [페이지로 이동](#finding-your-page)합니다.
    1. 다음 중 하나에서 **빠른 게시** 아이콘을 선택합니다.
@@ -267,10 +267,10 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 ### 페이지 잠금(및 잠금 해제) {#locking-your-page-then-unlocking}
 
-[Locking a page](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) prevents other authors from working on it while you are. The Lock (and Unlock) icon/button can be found:
+[페이지 잠금](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)을 사용하면 사용자가 작업하는 동안 다른 작성자가 작업할 수 없습니다. 잠금(및 잠금 해제) 아이콘/버튼은 다음에 있습니다.
 
 * [페이지를 선택했을 때](#selecting-your-page-for-further-action)의 도구 모음
-* 다음 [페이지 정보 드롭다운 메뉴](#editing-the-page-properties) 페이지를 편집할 때.
+* 페이지를 편집할 때 [[페이지 정보] 드롭다운 메뉴](#editing-the-page-properties)
 * 페이지를 편집할 때 페이지 도구 모음(페이지가 잠겨 있을 때)
 
 예를 들어 잠금 아이콘은 다음과 같습니다.
@@ -279,7 +279,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 ### 페이지 참조에 액세스 {#accessing-page-references}
 
-페이지에 대한 참조 및 페이지에서의 [참조에 대한 빠른 액세스](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)는 참조 레일에서 사용할 수 있습니다.
+페이지에 대한 참조 및 페이지에서의 [참조에 바로 가기](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)는 참조 레일에서 사용할 수 있습니다.
 
 1. **페이지를 선택**&#x200B;하기 전이나 후에 도구 모음 아이콘을 사용하여 [참조](#selecting-your-page-for-further-action)를 선택합니다.
 
@@ -323,4 +323,4 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    * **차이 표시**
 
-      * 두 버전 간의 차이점이 강조 표시된 상태로 페이지가 열립니다.
+      * 두 버전 간의 차이가 강조 표시된 채로 페이지가 열립니다.

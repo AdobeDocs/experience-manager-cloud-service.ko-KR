@@ -5,7 +5,7 @@ exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2153'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -152,7 +152,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 >[!NOTE]
 >
->모바일 장치는 폭이 1024픽셀 미만인 경우 감지됩니다(즉, 작은 데스크탑 창에서도 감지됨).
+>모바일 디바이스는 폭이 1024픽셀 미만인 경우 감지됩니다(즉, 작은 데스크탑 창에서도 감지됨).
 
 자산을 빠르게 변경해야 하는 경우, 자산의 이름 옆에 있는 편집 아이콘을 클릭하여 [자산 편집기](/help/assets/manage-digital-assets.md)를 자산 브라우저에서 직접 시작할 수 있습니다.
 
@@ -172,7 +172,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 페이지는 동일한 유형의 여러 구성 요소로 쉽게 구성할 수 있으므로 콘텐츠(구성 요소) 트리에는 구성 요소 유형의 이름(검은색) 뒤에 설명 텍스트(회색)가 표시됩니다. 설명 텍스트는 제목 또는 텍스트와 같은 구성 요소의 공통된 속성에서 가져옵니다.
 
-구성 요소 유형은 사용자 언어로 표시되는 반면, 구성 요소 설명 텍스트는 페이지 언어로 제공됩니다.
+구성 요소 유형은 사용자 언어로 표시되는 반면 구성 요소 설명 텍스트는 페이지 언어로 제공됩니다.
 
 구성 요소 옆에 있는 V자형 화살표를 클릭하면 해당 수준을 축소하거나 확장합니다.
 
@@ -265,12 +265,12 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 여러 작업을 허용하는 페이지를 편집할 때는 다음과 같은 다양한 모드가 있습니다.
 
 * [편집](/help/sites-cloud/authoring/fundamentals/editing-content.md) - 페이지 콘텐츠를 편집할 때 사용할 모드
-* [레이아웃](/help/sites-cloud/authoring/features/responsive-layout.md) - 디바이스에 따라 응답형 레이아웃을 만들고 편집할 수 있도록 허용(페이지가 레이아웃 컨테이너를 기반으로 하는 경우)
+* [레이아웃](/help/sites-cloud/authoring/features/responsive-layout.md) - 디바이스에 따라 반응형 레이아웃을 만들고 편집할 수 있도록 허용(페이지가 레이아웃 컨테이너를 기반으로 하는 경우)
 * [타겟팅](/help/sites-cloud/authoring/personalization/targeted-content.md) - 모든 채널에서 타겟팅과 측정을 통해 콘텐츠 관련성을 높입니다.
 * [타임워프](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - 특정 시점에 페이지 상태를 볼 수 있습니다.
 * [Live Copy 상태](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) - Live Copy 상태와 상속되었거나 상속되지 않은 구성 요소에 대한 간단한 개요를 알 수 있습니다.
 * [개발자 모드](/help/implementing/developing/tools/developer-mode.md)
-* [미리 보기](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - 게시 환경에 표시된 대로 페이지를 보거나 콘텐츠의 링크를 사용하여 탐색하는 데 사용됩니다.
+* [미리보기](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - 페이지가 게시 환경에 표시되는 상태로 해당 페이지를 보거나 콘텐츠의 링크를 사용하여 탐색하는 데 사용됩니다.
 * [주석](/help/sites-cloud/authoring/fundamentals/annotations.md) - 페이지에서 주석을 추가하거나 보는 데 사용됩니다.
 
 오른쪽 상단의 아이콘을 사용하여 다음 화면에 액세스할 수 있습니다. 실제 아이콘은 현재 사용 중인 모드를 반영하도록 변경됩니다.
@@ -305,12 +305,12 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 ### 경로 브라우저 {#path-browser}
 
-경로 브라우저는 [사이트 콘솔]의 [열 보기](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view)와 같이 구성되어 리소스에 대한 상세한 선택 항목을 확인할 수 있습니다.
+경로 브라우저는 [Sites 콘솔]의 [열 보기](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view)와 같이 구성되어 리소스에 대한 상세한 선택 항목을 확인할 수 있습니다.
 
 ![경로 브라우저](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* 리소스를 선택하면 대화 상자의 오른쪽 상단에 **선택** 버튼이 활성화됩니다. 클릭하거나 탭하여 선택 사항을 확인하거나 **취소**&#x200B;를 선택하여 중단할 수 있습니다.
-* If the context allows for the selection of multiple resources, selecting a resource also activates the **Select** button, but also adds a count of the number of selected resources to the upper-right of the window. Click the **X** next to the number to deselect all.
+* 리소스를 선택하면 대화 상자의 오른쪽 상단에 **선택** 버튼이 활성화됩니다. 클릭하거나 탭하여 옵션을 확인하거나 **취소**&#x200B;를 선택하여 중단할 수 있습니다.
+* 컨텍스트에서 여러 리소스를 선택할 수 있는 경우, 리소스를 선택하면 **선택** 버튼이 활성화되지만, 선택한 리소스 수도 창의 오른쪽 상단에 추가됩니다. 번호 옆에 있는 **X**&#x200B;를 클릭하여 모두 선택 취소합니다.
 * 트리를 탐색할 때 위치는 대화 상자 상단의 이동 경로에 반영됩니다. 이러한 이동 경로를 사용하여 리소스 계층 구조 내에서 빠르게 이동할 수도 있습니다.
 * 언제든지 대화 상자 상단의 검색 필드를 사용할 수 있습니다. 검색을 지우려면 검색 필드에서 **X**&#x200B;를 클릭합니다.
 * 검색 범위를 좁히려면 필터 옵션을 표시하고 특정 경로에 따라 결과를 필터링할 수 있습니다.

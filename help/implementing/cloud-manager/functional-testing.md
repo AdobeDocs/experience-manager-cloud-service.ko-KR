@@ -5,7 +5,7 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '539'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -35,9 +35,9 @@ AEM as a Cloud Service의 기능 테스트에는 세 가지 유형이 있습니�
 * [사용자 정의 기능 테스트](#custom-functional-testing)
 * [사용자 정의 UI 테스트](#custom-ui-testing)
 
-모든 기능 테스트의 경우 세부 테스트 결과는 다음과 같이 다운로드할 수 있습니다. `.zip` 다음을 사용하여 파일 **빌드 로그 다운로드** 의 일부로 빌드 개요 화면의 단추 [배포 프로세스](/help/implementing/cloud-manager/deploy-code.md).
+모든 기능 테스트의 경우, [배포 프로세스](/help/implementing/cloud-manager/deploy-code.md)의 일부로 빌드 개요 화면에서 **빌드 로그 다운로드** 버튼을 사용하여 자세한 테스트 결과를 `.zip` 파일로 다운로드할 수 있습니다.
 
-이러한 로그에는 실제 AEM 런타임 프로세스의 로그가 포함되지 않습니다. 이러한 로그에 액세스하려면 다음을 참조하십시오. [로그 액세스 및 관리](/help/implementing/cloud-manager/manage-logs.md) 을 참조하십시오.
+이러한 로그에는 실제 AEM 런타임 프로세스의 로그가 포함되지 않습니다. 해당 로그에 액세스하려면 [로그 액세스 및 관리](/help/implementing/cloud-manager/manage-logs.md)에서 자세한 내용을 알아보십시오.
 
 제품 기능 테스트와 샘플 사용자 정의 기능 테스트는 모두 [AEM 테스트 클라이언트](https://github.com/adobe/aem-testing-clients)를 기반으로 합니다.
 
@@ -48,7 +48,7 @@ AEM as a Cloud Service의 기능 테스트에는 세 가지 유형이 있습니�
 * [프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md): 제품 기능 테스트는 새 코드를 Cloud Manager에 배포할 때마다 자동으로 실행되며 건너뛸 수 없습니다.
 * [비프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md): 비프로덕션 파이프라인을 실행할 때마다 실행되도록 제품 기능 테스트를 선택적으로 선택할 수 있습니다.
 
-제품 기능 테스트는 오픈 소스 프로젝트로 유지 관리됩니다. 다음을 참조하십시오 [제품 기능 테스트](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) 자세한 내용은 GitHub를 참조하십시오.
+제품 기능 테스트는 오픈 소스 프로젝트로 유지 관리됩니다. 자세한 내용은 GitHub의 [제품 기능 테스트](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) 문서를 참조하십시오.
 
 ### 사용자 정의 기능 테스트 {#custom-functional-testing}
 
@@ -56,12 +56,12 @@ AEM as a Cloud Service의 기능 테스트에는 세 가지 유형이 있습니�
 
 사용자 정의 기능 테스트는 사용자 정의 코드 배포 및 푸시 업그레이드 모두에 대해 실행되므로 AEM 코드 변경으로 인해 애플리케이션 코드가 손상되지 않도록 우수한 기능 테스트를 작성하는 것이 특히 중요합니다. 사용자 정의 기능 테스트 단계는 항상 존재하며 건너뛸 수 없습니다.
 
-다음을 참조하십시오 [Java 기능 테스트](/help/implementing/cloud-manager/java-functional-testing.md) 추가 정보.
+자세한 내용은 [Java 기능 테스트](/help/implementing/cloud-manager/java-functional-testing.md)를 참조하십시오.
 
 
 ### 사용자 정의 UI 테스트 {#custom-ui-testing}
 
 사용자 정의 UI 테스트는 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있는 선택적 기능입니다. UI 테스트는 언어 및 프레임워크(예: Java 및 Maven, Node 및 WebDriver.io 또는 Selenium을 기반으로 구축된 기타 프레임워크 및 기술)에서 다양한 선택을 허용하도록 도커 이미지에 패키징된 Selenium 기반 테스트입니다.
 
-다음을 참조하십시오 [사용자 정의 UI 테스트](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) 추가 정보.
+자세한 내용은 [사용자 정의 UI 테스트](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)를 참조하십시오.
 

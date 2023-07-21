@@ -5,7 +5,7 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '873'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -49,9 +49,9 @@ Cloud Manager 라이선스 대시보드를 사용하면 다음 정보에 쉽게 
 
 >[!TIP]
 >
->다음을 참조하십시오 [Admin Console 개요](https://helpx.adobe.com/kr/enterprise/using/admin-console.html) Admin Console에서 전체 조직의 Adobe 권한을 관리하는 방법을 알아봅니다.
+>Admin Console에서 전체 조직의 Adobe 권한을 관리하는 방법을 알아보려면 [Admin Console 개요](https://helpx.adobe.com/enterprise/using/admin-console.html)를 참조하십시오.
 
-## FAQ {#faq}
+## 자주 묻는 질문 {#faq}
 
 ### 콘텐츠 요청이란? {#what-is-a-content-request}
 
@@ -85,7 +85,7 @@ Cloud Manager 라이선스 대시보드를 사용하면 다음 정보에 쉽게 
 
 ### 내 콘텐츠 요청 볼륨에 대해 자세히 알고 싶으면 어떻게 해야 합니까? {#current-request-volumes}
 
-라이선스 대시보드에 표시된 콘텐츠 요청 볼륨에 대한 추가 인사이트가 필요한 경우, Adobe 팀에서 콘텐츠 요청의 상위 볼륨 드라이버를 보여 주는 보고서를 제공할 수 있습니다. 최상위 사용 보고서를 요청하려면 Adobe 팀이나 고객 지원 Adobe에 문의하십시오.
+라이선스 대시보드에 표시된 콘텐츠 요청 볼륨에 대한 추가 인사이트가 필요한 경우, Adobe 팀에서 콘텐츠 요청의 상위 볼륨 드라이버를 보여 주는 보고서를 제공할 수 있습니다. 상위 사용량 보고서를 요청하려면 Adobe 팀이나 Adobe 고객 지원 센터에 문의하십시오.
 
 ### 자체 CDN을 사용하는 경우 어떻게 합니까? {#using-own-cdn}
 

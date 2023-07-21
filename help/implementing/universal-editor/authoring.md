@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 source-git-commit: 05554f397a843ede5a723b206b6e0748e2d6ba96
 workflow-type: tm+mt
 source-wordcount: '1682'
-ht-degree: 52%
+ht-degree: 55%
 
 ---
 
@@ -33,7 +33,7 @@ Universal Editor로 앱의 콘텐츠를 작성하려면 개발자가 앱을 계�
 
 >[!TIP]
 >
->다음을 참조하십시오 [AEM에서 유니버설 편집기 시작하기](getting-started.md) 범용 편집기에서 작동하도록 AEM 앱을 구성하는 방법의 예입니다.
+>Universal Editor와 함께 작동하도록 AEM 앱을 구성하는 방법에 대한 예는 [AEM에서 Universal Editor 시작](getting-started.md)을 참조하십시오.
 
 ## 로그인 {#sign-in}
 
@@ -79,7 +79,7 @@ Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Clou
 
 #### 도움말 {#help}
 
-도움말 아이콘은 학습 및 지원 리소스에 대한 빠른 액세스를 제공합니다.
+도움말 아이콘은 학습 및 지원 리소스에 대한 바로 가기를 제공합니다.
 
 ![도움말](assets/help.png)
 
@@ -97,7 +97,7 @@ Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Clou
 
 ### Universal Editor 헤더 {#universal-editor-header}
 
-Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바로 아래에 있습니다.](#experience-cloud-header) 빠른 액세스를 통해 편집할 다른 페이지로 이동하고 현재 페이지를 게시할 수 있습니다.
+Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바로 아래에 있습니다.](#experience-cloud-header) 현재 페이지를 게시하고 편집할 다른 페이지에 바로 갈 수 있습니다.
 
 ![Universal Editor 헤더](assets/universal-editor-header.png)
 

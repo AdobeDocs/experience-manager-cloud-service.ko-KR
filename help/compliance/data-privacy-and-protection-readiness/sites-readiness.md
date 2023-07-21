@@ -5,7 +5,7 @@ exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1025'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 92%
 
 >[!NOTE]
 >
->개인정보 보호 문제에 대한 Adobe의 대응 및 Adobe 고객에게 의미하는 바에 대한 자세한 내용은 [Adobe 개인정보 보호 센터](https://www.adobe.com/kr/privacy.html)를 참조하십시오.
+>개인정보 보호 문제에 대한 Adobe의 대응 및 Adobe 고객에게 의미하는 바에 대한 자세한 내용은 [Adobe 개인정보 보호 센터](https://www.adobe.com/privacy.html)를 참조하십시오.
 
 Adobe Experience Manager as a Cloud Service Sites는 고객의 데이터 개인정보 보호 및 보호 규정 준수 제어를 도울 준비가 되었습니다. 이 페이지에서는 AEM Sites에서 이러한 요청을 처리하는 절차에 대해 안내합니다. 저장된 개인 데이터의 위치와 수동으로 또는 코드로 해당 데이터를 제거하는 방법에 대해서도 설명합니다.
 
-자세한 내용은 [Adobe 개인 정보 보호 센터](https://www.adobe.com/kr/privacy.html).
+자세한 내용은 [Adobe의 개인정보 보호 센터](https://www.adobe.com/privacy.html)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Adobe Experience Manager as a Cloud Service Sites는 고객의 데이터 개인�
 
 작성자 서버에서 사이트 방문자 인증에 사용되는 사용자 계정 및 UGC 콘텐츠에 대한 내용은 [AEM Foundation 설명서](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)에 기재되어 있습니다.
 
-기본적으로 AEM Sites 구성 요소는 게시 서버에서 방문자가 입력한 양식 데이터를 저장하지 않습니다. 추가적인 처리가 필요하면 데이터를 타사 시스템 또는 Adobe Campaign에 전달하는 것이 좋습니다.
+기본적으로 AEM Sites 구성 요소는 게시 서버에서 방문자가 입력한 양식 데이터를 저장하지 않습니다. 추가적인 처리가 필요하면 데이터를 서드파티 시스템 또는 Adobe Campaign에 전달하는 것이 좋습니다.
 
 ## 옵트인/옵트아웃 {#opt-in-opt-out}
 
@@ -50,7 +50,7 @@ Adobe Experience Manager의 경우 사용자에 대한 옵트인/옵트아웃 �
 옵트아웃 방법
 
 1. 다음으로 이동합니다.
-   [Adobe 개인정보 보호 센터 - 옵트아웃](https://www.adobe.com/kr/privacy/opt-out.html)
+   [Adobe 개인정보 보호 센터 - 옵트아웃](https://www.adobe.com/privacy/opt-out.html)
 
 1. **서비스** - **Experience Cloud 서비스 사용 데이터**&#x200B;로 스크롤합니다.
 
@@ -70,19 +70,19 @@ Adobe Experience Manager의 경우 사용자에 대한 옵트인/옵트아웃 �
 
    >[!NOTE]
    >
-   > 자세한 설명은 **2. 개인정보 보호** 섹션([Adobe 일반 사용 약관](https://www.adobe.com/kr/legal/terms.html))에 기재되어 있습니다.
+   > 자세한 설명은 **2. 개인정보 보호** 섹션([Adobe 일반 사용 약관](https://www.adobe.com/legal/terms.html))에 기재되어 있습니다.
 
 ## Analytics Foundation {#analytics-foundation}
 
 AEM Sites에는 Adobe Analytics 온디맨드 서비스의 기능을 사용하는 Analytics Foundation과의 선택적 통합이 포함되어 있습니다.
 
-Adobe Analytics 관련 데이터 주체 요청 관리에 대한 자세한 내용은 을 참조하십시오. [Adobe Analytics 및 데이터 개인 정보 보호](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
+Adobe Analytics 관련 데이터 주제 요청 관리에 대한 자세한 내용은 [Adobe Analytics 및 데이터 개인정보 보호](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html)를 참조하십시오.
 
 ## Target을 통한 개인 맞춤화 기초 {#personalization-foundation-by-target}
 
 AEM Sites에는 Adobe Target 온디맨드 서비스의 기능을 사용하는 Target을 통한 개인 맞춤화 기초와의 선택적 통합이 포함되어 있습니다.
 
-Adobe Target 관련 데이터 주체 요청 관리에 대한 자세한 내용은 다음을 참조하십시오. [Adobe Target - 개인 정보 보호 및 일반 데이터 보호 규정](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+Adobe Target과 관련된 데이터 주체 요청 관리에 대한 자세한 내용은 [Adobe Target - 개인정보 보호 및 일반 데이터 보호 규정](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)을 참조하십시오.
 
 ## ContextHub {#contexthub}
 
@@ -105,7 +105,7 @@ AEM에서는 ContextHub와 관련하여 선택적 데이터 계층을 제공합�
 
    * 동의
    * 거부
-   * 이전 선택 사항 변경
+   * 이전 옵션 변경
 
 * 사이트 방문자가 사이트의 약관에 동의하면 ContextHub 옵트아웃 쿠키가 제거됩니다.
 
@@ -132,7 +132,7 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
 
 * 브라우저의 콘솔 사용. 예를 들어
 
-   * Chrome:
+   * 크롬:
 
       * Developer Tools > Application > Storage를 엽니다.
 
@@ -182,7 +182,7 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
 
 * 브라우저의 콘솔 사용:
 
-   * Chrome - Developer Tools > Application > Storage 열기:
+   * 크롬 - Developer Tools > Application > Storage 열기:
 
       * Local Storage > (웹 사이트) > ContextHubPersistence
       * Session Storage > (웹 사이트) > ContextHubPersistence

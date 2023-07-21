@@ -6,7 +6,7 @@ exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '275'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 92%
 
 Adobe Experience Manager의 레퍼러 필터를 사용하면 서드파티 호스트에서 액세스할 수 있습니다.
 
-HTTP POST를 통해 헤드리스 애플리케이션용 GraphQL 엔드포인트 액세스를 활성화하려면 레퍼러 필터에 대한 OSGi 구성이 필요합니다. HTTP GET을 통해 AEM에 액세스하는 AEM Headless 지속 쿼리를 사용하는 경우 레퍼러 필터 구성이 필요하지 않습니다.
+HTTP POST를 통해 Headless 애플리케이션용 GraphQL 엔드포인트 액세스를 활성화하려면 레퍼러 필터에 대한 OSGi 구성이 필요합니다. HTTP GET을 통해 AEM에 액세스하는 AEM Headless 지속 쿼리를 사용하는 경우 레퍼러 필터 구성이 필요하지 않습니다.
 
 >[!WARNING]
 > AEM의 레퍼러 필터는 OSGi 구성 팩토리가 아니므로 한 번에 하나의 구성만 AEM 서비스에서 활성화됩니다. 가능한 경우 사용자 정의 레퍼러 필터 구성을 추가하지 마십시오. AEM의 기본 구성을 덮어쓰고 제품 기능을 손상시킬 수 있습니다.
@@ -26,7 +26,7 @@ HTTP POST를 통해 헤드리스 애플리케이션용 GraphQL 엔드포인트 �
 
 파일 이름은 `org.apache.sling.security.impl.ReferrerFilter.cfg.json`이어야 합니다.
 
-예를 들어 레퍼러 `my.domain`이 있는 요청에 대한 액세스 권한을 부여하려면 다음을 수행할 수 있습니다.
+예를 들어 레퍼러 `my.domain`이 있는 요청에 대한 액세스 권한을 부여하려면 다음과 같은 작업을 수행할 수 있습니다.
 
 ```xml
 {

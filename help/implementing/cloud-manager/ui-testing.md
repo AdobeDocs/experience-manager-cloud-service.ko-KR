@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2389'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Java로 작성된 HTTP 테스트인 사용자 정의 기능 테스트와 달리 
 >
 >[AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress)에 제공된 코드에 따라 UI 테스트에 Cypress를 사용하는 것이 좋습니다.
 > 
->또한 Adobe은 WebdriverIO를 사용한 JavaScript 기반 UI 테스트 모듈 예제를 제공합니다( 참조) [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) 및 Java와 WebDriver(참조) [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)).
+>또한 Adobe는 WebdriverIO([AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) 참조)가 포함된 JavaScript 및 WebDriver([AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver) 참조)가 포함된 Java를 기반으로 하는 UI 테스트 모듈 예제를 제공합니다.
 
 ## UI 테스트 시작하기 {#get-started-ui-tests}
 
@@ -53,7 +53,7 @@ Java로 작성된 HTTP 테스트인 사용자 정의 기능 테스트와 달리 
 
    * Java 및 WebDriver의 경우 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)에 있는 샘플 코드를 사용하십시오.
 
-   * 기타 프로그래밍 언어의 경우 섹션을 참조하십시오 [UI 테스트 빌드](#building-ui-tests) 테스트 프로젝트를 설정하려면 이 문서를 참조하십시오.
+   * 다른 프로그래밍 언어의 경우, 이 문서의 [UI 테스트 빌드](#building-ui-tests) 섹션을 참조하여 테스트 프로젝트를 설정합니다.
 
 1. 이 문서의 [고객 옵트인](#customer-opt-in) 섹션에 따라 UI 테스트가 활성화되어 있는지 확인합니다.
 
@@ -69,7 +69,7 @@ Maven 프로젝트는 Docker 빌드 컨텍스트를 생성합니다. 이 Docker 
 
 >[!TIP]
 >
->다음 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) 는 프로그래밍 언어에 대한 특별한 요구 사항이 없는 경우 다음 설명을 준수하는 UI 테스트 프로젝트를 생성할 수 있습니다.
+>[AEM Project Archetype](https://github.com/adobe/aem-project-archetype)은 프로그래밍 언어에 대한 특별한 요구 사항이 없는 사용자를 위해 다음 설명을 준수하는 UI 테스트 프로젝트를 생성할 수 있습니다.
 
 ### Docker 빌드 컨텍스트 생성 {#generate-docker-build-context}
 
@@ -236,7 +236,7 @@ Docker 이미지가 다른 프로그래밍 언어 또는 테스트 실행자로 
 
 >[!NOTE]
 >
->UI 테스트 단계의 결과는 테스트 보고서만을 기반으로 평가됩니다. 테스트 실행에 맞게 보고서를 생성해야 합니다.
+>UI 테스트 단계의 결과는 테스트 보고서만을 기반으로 평가됩니다. 테스트 실행에 맞게 보고서를 생성했는지 확인하십시오.
 >
 >STDERR에 오류를 로깅하거나 0이 아닌 종료 코드를 반환하는 대신 어설션을 사용하십시오. 이렇게 하지 않으면 배포 파이프라인이 정상적으로 진행될 수 있습니다.
 
@@ -253,13 +253,13 @@ Docker 이미지가 다른 프로그래밍 언어 또는 테스트 실행자로 
 | 유형 | 값 | 설명 |
 |----------------------|-------|-----------------------------------------------------------------------|
 | CPU | 2.0 | 테스트 실행당 예약된 CPU 시간 |
-| 메모리 | 1Gi | 테스트에 할당된 메모리 양, 기비바이트 값 |
+| 메모리 | 1Gi | 테스트에 할당된 메모리 양(기비바이트 값) |
 | 시간 초과 | 30m | 테스트가 종료되기까지의 기간입니다. |
 | 권장 기간 | 15m | 이 시간보다 오래 걸리지 않도록 테스트를 작성하는 것이 좋습니다. |
 
 >[!NOTE]
 >
-> 추가 리소스가 필요한 경우 고객 지원 사례를 만들고 사용 사례를 설명합니다. Adobe이 요청을 검토하고 적절한 지원을 제공합니다.
+> 더 많은 리소스가 필요한 경우, 고객 지원 사례를 만들고 사용 사례를 설명하십시오. Adobe에서 귀하의 요청을 검토하고 적절한 지원을 제공할 것입니다.
 
 ## Selenium 관련 세부 정보
 
@@ -345,7 +345,7 @@ Cloud Manager 파이프라인에서 UI 테스트를 활성화하기 전에 [AEM 
 >
 >로그 파일은 저장소의 `target/` 폴더에 저장됩니다.
 >
->자세한 내용은 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
+>자세한 내용은 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md)를 참고하십시오.
 
 ### JavaScript WebdriverIO 테스트 샘플 {#javascript-sample}
 
@@ -367,9 +367,9 @@ Cloud Manager 파이프라인에서 UI 테스트를 활성화하기 전에 [AEM 
 >
 >* 독립 실행형 Selenium 인스턴스가 시작되고 그에 대한 테스트가 실행됩니다.
 >* 로그 파일은 저장소의 `target/reports` 폴더에 저장됩니다.
->* 테스트에서 테스트를 위해 ChromeDriver의 최신 릴리스를 자동으로 다운로드하므로 최신 Chrome 버전이 실행 중인지 확인해야 합니다.
+>* 테스트에서 테스트를 위해 ChromeDriver의 최신 릴리스를 자동으로 다운로드하므로 최신 크롬 버전이 실행 중인지 확인해야 합니다.
 >
->자세한 내용은 [AEM 프로젝트 원형 저장소](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
+>자세한 내용은 [AEM Project Archetype 저장소](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md)를 참고하십시오.
 
 ### Java Selenium WebDriver 테스트 샘플 {#java-sample}
 
@@ -392,4 +392,4 @@ Cloud Manager 파이프라인에서 UI 테스트를 활성화하기 전에 [AEM 
 >
 >로그 파일은 저장소의 `target/reports` 폴더에 저장됩니다.
 >
->자세한 내용은 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).
+>자세한 내용은 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)를 참고하십시오.

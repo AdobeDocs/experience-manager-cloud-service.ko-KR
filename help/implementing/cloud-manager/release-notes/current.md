@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 1b46f763903a1b103837ed7e8cc498ad08ce64f1
 workflow-type: tm+mt
 source-wordcount: '237'
-ht-degree: 35%
+ht-degree: 49%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 35%
 
 >[!NOTE]
 >
->다음을 참조하십시오 [이 페이지](/help/release-notes/release-notes-cloud/release-notes-current.md) Adobe Experience Manager as a Cloud Service의 최신 릴리스 정보.
+>Adobe Experience Manager as a Cloud Service의 최신 릴리스 정보는 [이 페이지](/help/release-notes/release-notes-cloud/release-notes-current.md)를 참조하십시오.
 
 ## 릴리스 일자 {#release-date}
 
@@ -25,7 +25,7 @@ AEM as a Cloud Service의 Cloud Manager 2023.7.0 릴리스 일자는 2023년 6�
 
 ## 새로운 기능 {#what-is-new}
 
-* 이제 Cloud Manager 랜딩 페이지의 카드에 [향상된 보안](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) 이 해당 프로그램에 대해 활성화되어 있습니다.
+* 이제 Cloud Manager 랜딩 페이지의 카드에 해당 프로그램에 대한 [향상된 보안](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) 기능이 활성화되어 있는지 여부가 표시됩니다.
 * 개발인 경우 [파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 에는 테스트 단계가 포함되어 있지 않습니다. 이제 사용자는 테스트 단계를 포함할 수 있습니다. [파이프라인을 시작합니다.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)
    * 이 기능은 단계적으로 출시될 예정입니다.
 * 날짜 [실행 취소,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) 이제 파이프라인 실행 승인 단계에서 사용자에게 취소 이유를 입력하도록 요청합니다.

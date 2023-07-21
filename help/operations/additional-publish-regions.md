@@ -4,7 +4,7 @@ description: AEM as a Cloud Service가 추가 게시 지역을 지원하여 가�
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '542'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ AEM Sites로 설정된 프로그램에서 추가 게시 지역에 라이선스�
 
 >[!NOTE]
 >
->이 기능은 현재 AEM Sites에서만 사용할 수 있습니다. 샌드박스 프로그램에는 적용될 수 없습니다. 또한 추가 게시 영역 기능을 사용하려면 프로그램을 AEM 릴리스 버전 12142 이상으로 업데이트해야 합니다.
+>이 기능은 현재 AEM Sites에서만 사용할 수 있습니다. 샌드박스 프로그램에는 적용될 수 없습니다. 또한 추가 게시 지역 기능을 사용하려면 프로그램을 AEM 릴리스 버전 12142 이상으로 업데이트해야 합니다.
 
 ## 사용 사례 {#use-cases}
 
@@ -40,11 +40,11 @@ AEM Sites로 설정된 프로그램에서 추가 게시 지역에 라이선스�
 
 추가 게시 지역이 고급 네트워킹이 이미 구성된 환경에서 활성화되면 고급 네트워킹 규칙과 일치하는 추가 게시 지역의 트래픽이 기본 지역을 통해 기본적으로 라우팅합니다. 높은 가용성을 활용하려면 추가 지역에서 고급 네트워킹을 활성화하는 것이 좋습니다.
 
-다음을 참조하십시오. [추가 게시 영역에 대한 고급 네트워킹 구성](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions) 자세한 내용은 고급 네트워킹 설명서 섹션을 참조하십시오. 이 섹션에서는 연결을 끊지 않고 추가 영역에 고급 네트워킹 구성을 추가하는 방법에 대해 설명합니다.
+연결 손실을 발생시키지 않고도 추가 지역에 고급 네트워킹 구성을 추가하는 방법 등에 대한 자세한 내용은 고급 네트워킹 설명서의 [추가 게시 지역에 대한 고급 네트워킹 구성](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions) 섹션을 참조하십시오.
 
 ## 제한 사항 {#limitations}
 
-추가 게시 영역 사용을 고려할 때 다음 제한 사항을 염두에 두십시오.
+추가 게시 지역 사용 고려 시 해당 제한 사항을 고려하십시오.
 
 * 추가 게시 지역은 AEM Sites에만 추가할 수 있습니다. 추가 게시 지역은 동일한 프로그램(예: AEM Forms 또는 Adobe Learning Manager)에 배포되는 다른 AEM 솔루션 또는 관련 기능으로 확장되지 않습니다.
 * 추가 지역은 관련 권한이 테넌트에 사용되지 않는 경우에만 추가할 수 있습니다.

@@ -237,7 +237,7 @@ ht-degree: 99%
       + [통합 경험](/help/journey-migration/unified-experience.md)
       + [저장소 현대화 도구](/help/journey-migration/refactoring-tools/repo-modernizer.md)
       + [인덱스 변환기](/help/journey-migration/refactoring-tools/index-converter.md)
-      + [자산 워크플로우 마이그레이션](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
+      + [자산 워크플로 마이그레이션](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
       + [AEM Dispatcher 변환기](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
       + [AEM 현대화 도구](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + Sites {#sites}
@@ -245,7 +245,7 @@ ht-degree: 99%
    + [AEM Cloud Service의 AEM Sites에 대한 주요 변경 내용](/help/sites-cloud/sites-cloud-changes.md)
    + 작성 {#authoring}
       + 시작하기 {#getting-started}
-         + [페이지 작성 빠른 시작 안내서](/help/sites-cloud/authoring/getting-started/quick-start.md)
+         + [페이지 작성에 대한 빠른 시작 안내서](/help/sites-cloud/authoring/getting-started/quick-start.md)
          + [작성 개념](/help/sites-cloud/authoring/getting-started/concepts.md)
          + [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md)
          + [검색](/help/sites-cloud/authoring/getting-started/search.md)
@@ -267,7 +267,7 @@ ht-degree: 99%
          + [경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)
          + [CSV로 내보내기](/help/sites-cloud/authoring/fundamentals/csv-export.md)
          + [구성 요소](/help/sites-cloud/authoring/fundamentals/components.md)
-         + [모바일 장치용 작성](/help/sites-cloud/authoring/fundamentals/mobile.md)
+         + [모바일 디바이스용 작성](/help/sites-cloud/authoring/fundamentals/mobile.md)
          + [액세스 가능한 콘텐츠 제작 (WCAG 2.1 적합성)](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
          + [문제 해결](/help/sites-cloud/authoring/fundamentals/troubleshooting.md)
          + [키보드 단축키](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
@@ -277,14 +277,14 @@ ht-degree: 99%
          + [페이지 버전](/help/sites-cloud/authoring/features/page-versions.md)
          + [페이지 비교](/help/sites-cloud/authoring/features/page-diff.md)
          + [구성 요소 콘솔](/help/sites-cloud/authoring/features/components-console.md)
-         + [응답형 레이아웃](/help/sites-cloud/authoring/features/responsive-layout.md)
+         + [반응형 레이아웃](/help/sites-cloud/authoring/features/responsive-layout.md)
          + [태그 사용](/help/sites-cloud/authoring/features/tags.md)
          + [점진적 웹 앱 기능 활성화](/help/sites-cloud/authoring/features/enable-pwa.md)
       + 프로젝트 {#projects}
          + [프로젝트를 사용하여 작업](/help/sites-cloud/authoring/projects/overview.md)
          + [프로젝트 관리](/help/sites-cloud/authoring/projects/managing.md)
          + [작업](/help/sites-cloud/authoring/projects/tasks.md)
-         + [프로젝트 워크플로우를 사용하여 작업](/help/sites-cloud/authoring/projects/workflows.md)
+         + [프로젝트 워크플로를 사용하여 작업](/help/sites-cloud/authoring/projects/workflows.md)
       + 론치 {#launches}
          + [론치를 사용하여 작업](/help/sites-cloud/authoring/launches/overview.md)
          + [론치 만들기](/help/sites-cloud/authoring/launches/creating.md)
@@ -292,10 +292,10 @@ ht-degree: 99%
          + [론치 편집](/help/sites-cloud/authoring/launches/editing.md)
          + [타임워프를 사용하여 론치 미리보기](/help/sites-cloud/authoring/launches/preview.md)
          + [론치 홍보](/help/sites-cloud/authoring/launches/promoting.md)
-      + 워크플로우 {#workflows}
-         + [워크플로우를 사용하여 작업](/help/sites-cloud/authoring/workflows/overview.md)
-         + [페이지에 워크플로우 적용](/help/sites-cloud/authoring/workflows/applying.md)
-         + [워크플로우에 참여](/help/sites-cloud/authoring/workflows/participating.md)
+      + 워크플로 {#workflows}
+         + [워크플로를 사용하여 작업](/help/sites-cloud/authoring/workflows/overview.md)
+         + [페이지에 워크플로 적용](/help/sites-cloud/authoring/workflows/applying.md)
+         + [워크플로에 참여](/help/sites-cloud/authoring/workflows/participating.md)
       + 개인 맞춤화 {#personalization}
          + [개인 맞춤화 개요](/help/sites-cloud/authoring/personalization/overview.md)
          + [ContextHub 데이터를 사용하여 페이지 미리보기](/help/sites-cloud/authoring/personalization/contexthub.md)
@@ -339,7 +339,7 @@ ht-degree: 99%
             + [git 저장소 액세스 정보 가져오기](/help/journey-sites/quick-site/retrieve-access.md)
             + [사이트 테마 맞춤화](/help/journey-sites/quick-site/customize-theme.md)
             + [맞춤화된 테마 배포](/help/journey-sites/quick-site/deploy-theme.md)
-      + [워크플로우 관리](/help/sites-cloud/administering/workflows-administering.md)
+      + [워크플로 관리](/help/sites-cloud/administering/workflows-administering.md)
       + 재사용 등급 {#reusing-content}
          + [MSM 및 번역](/help/sites-cloud/administering/msm-and-translation.md)
          + 다중 사이트 관리자 {#msm}
@@ -478,7 +478,7 @@ ht-degree: 99%
       + [Dynamic Media의 방식으로 CDN 캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
       + [Dynamic Media Classic의 방식으로 CDN 캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
       + [스마트 이미징](/help/assets/dynamic-media/imaging-faq.md)
-      + [클라이언트측 장치 픽셀 비율을 갖는 스마트 이미징](/help/assets/dynamic-media/client-side-dpr.md)
+      + [클라이언트측 디바이스 픽셀 비율을 갖는 스마트 이미징](/help/assets/dynamic-media/client-side-dpr.md)
       + [Dynamic Media 자산 전송](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Dynamic Media의 핫링크 보호 활성화](/help/assets/dynamic-media/hotlink-protection.md)
       + [3D 지원](/help/assets/dynamic-media/assets-3d.md)
@@ -618,9 +618,9 @@ ht-degree: 99%
             + [접근성 높은 적응형 양식 만들기](/help/forms/creating-accessible-adaptive-forms.md)
          + [Forms 포털 구성](/help/forms/configure-forms-portal.md)
          + [검토 만들기 및 관리](/help/forms/create-reviews-forms.md)
-   + 양식 중심 워크플로우 {#create-form-centric-workflows}
-      + [워크플로우 + 단계 참조에서 양식 중심 단계 사용](/help/forms/aem-forms-workflow-step-reference.md)
-      + [양식 중심 워크플로우에서 변수 사용](/help/forms/variable-in-aem-workflows.md)
+   + 양식 중심 워크플로 {#create-form-centric-workflows}
+      + [워크플로 + 단계 참조에서 양식 중심 단계 사용](/help/forms/aem-forms-workflow-step-reference.md)
+      + [양식 중심 워크플로에서 변수 사용](/help/forms/variable-in-aem-workflows.md)
       + [[Out of Office] 옵션 사용](/help/forms/configure-out-of-office-settings.md)
    + 커뮤니케이션 API {#using-communications}
       + [커뮤니케이션 API 소개](/help/forms/aem-forms-cloud-service-communications-introduction.md)
@@ -969,7 +969,7 @@ ht-degree: 99%
    + 미리보기 계층 {#preview-tier}
       + [미리보기 계층을 위한 OSGi 설정 구성](/help/implementing/preview-tier/preview-tier-configuring-osgi.md)
    + 콘텐츠 게재 개요 {#content-delivery}
-      + [콘텐츠 게재 흐름](/help/implementing/dispatcher/overview.md)
+      + [콘텐츠 게재 플로우](/help/implementing/dispatcher/overview.md)
       + [클라우드의 Dispatcher](/help/implementing/dispatcher/disp-overview.md)
       + [Dispatcher 도구를 사용하여 확인 및 디버깅](/help/implementing/dispatcher/validation-debug.md)
       + [AMS에서 AEM as a Cloud Service로 Dispatcher 구성 마이그레이션](/help/implementing/dispatcher/ams-aem.md)

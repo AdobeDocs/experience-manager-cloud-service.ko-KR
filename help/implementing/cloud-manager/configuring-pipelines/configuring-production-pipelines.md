@@ -6,7 +6,7 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1509'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -137,7 +137,7 @@ ht-degree: 96%
 
 1. 파이프라인을 저장하려면 **저장**&#x200B;을 클릭합니다.
 
-경험 감사를 위해 구성된 경로는 파이프라인이 실행될 때 성능, 접근성, SEO(검색 엔진 최적화), 모범 사례 및 PWA(점진적 웹 앱) 테스트에 따라 서비스에 제출되고 평가됩니다. 다음을 참조하십시오 [경험 감사 결과 이해](/help/implementing/cloud-manager/experience-audit-testing.md) 을 참조하십시오.
+경험 감사를 위해 구성된 경로는 파이프라인이 실행될 때 성능, 접근성, SEO(검색 엔진 최적화), 모범 사례 및 PWA(점진적 웹 앱) 테스트에 따라 서비스에 제출되고 평가됩니다. 자세한 내용은 [경험 감사 결과 이해](/help/implementing/cloud-manager/experience-audit-testing.md)를 참조하십시오.
 
 파이프라인이 저장되고 이제 **프로그램 개요** 페이지의 **파이프라인** 카드에서 [파이프라인을 관리](managing-pipelines.md)할 수 있습니다.
 
@@ -159,7 +159,7 @@ ht-degree: 96%
       * 분기 이름의 처음 몇 글자를 입력하면 이 필드의 자동 완성 기능이 일치하는 분기를 찾아 선택하는 데 도움이 됩니다.
    * **코드 위치** - 이 옵션은 파이프라인이 코드를 검색해야 하는 선택한 저장소 분기의 경로를 정의합니다.
       * 웹 계층 구성 파이프라인의 경우 일반적으로 `conf.d`, `conf.dispatcher.d` 및 `opt-in` 디렉터리가 포함된 경로입니다.
-      * 예를 들어 프로젝트 구조가 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)에서 생성된 경우 경로는 `/dispatcher/src`입니다.
+      * 예를 들어 프로젝트 구조가 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en)에서 생성된 경우 경로는 `/dispatcher/src`입니다.
    * **프로덕션에 배포 전 일시 중지** - 이 옵션은 프로덕션에 배포하기 전에 파이프라인을 일시 중지합니다.
    * **예약됨** - 이 옵션을 사용하면 예약된 프로덕션 배포를 활성화할 수 있습니다.
 
@@ -177,13 +177,13 @@ ht-degree: 96%
 
 프론트엔드 파이프라인을 사용하면 프론트엔드 개발자에게 더 많은 독립성을 부여하고 개발 프로세스를 가속화할 수 있습니다.
 
-다음을 참조하십시오 [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 이 프로세스의 전체 잠재력을 활용하기 위해 알아야 할 몇 가지 고려 사항과 함께 이 프로세스가 작동하는 방식에 대한 정보입니다.
+이 프로세스의 잠재력을 최대한 활용하기 위해 알아야 할 몇 가지 고려 사항 및 이 프로세스가 작동하는 방식에 대한 자세한 내용은 [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)을 참조하십시오.
 
 ## Dispatcher 패키지 건너뛰기 {#skip-dispatcher-packages}
 
 Dispatcher 패키지를 파이프라인의 일부로 빌드하고 싶지만 스토리지를 빌드하기 위해 게시하지 않으려는 경우 게시를 비활성화하면 파이프라인 실행 기간이 단축될 수 있습니다.
 
-Dispatcher 패키지 게시를 비활성화하려면 프로젝트 `pom.xml` 파일을 통해 다음 구성을 추가해야 합니다. 이는 환경 변수를 기반으로 하며, Cloud Manager 빌드 컨테이너에서 디스패처 패키지를 무시해야 하는 시기를 정의할 때 설정할 수 있는 플래그 역할을 합니다.
+Dispatcher 패키지 게시를 비활성화하려면 프로젝트 `pom.xml` 파일을 통해 다음 구성을 추가해야 합니다. 이는 환경 변수를 기반으로 하며, Cloud Manager 빌드 컨테이너에서 Dispatcher 패키지를 무시해야 하는 시기를 정의할 때 설정할 수 있는 플래그 역할을 합니다.
 
 ```xml
 <profile>

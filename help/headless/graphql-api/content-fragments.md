@@ -6,7 +6,7 @@ exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '4918'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ GraphQL은
 "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
 -->
 
-GraphQL API에 대한 자세한 내용은 다음 섹션(기타 여러 리소스)을 참조하십시오.
+GraphQL API에 대한 정보는 기타 여러 리소스 중에서도 특히 다음 섹션을 참조하십시오.
 
 * [graphql.org](https://graphql.org):
 
@@ -377,7 +377,7 @@ AEM은 또한 GraphQL을 통해 콘텐츠 조각의 메타데이터를 노출합
 
 ## GraphQL 변수 {#graphql-variables}
 
-GraphQL을 사용하면 쿼리에 변수를 배치할 수 있습니다. 자세한 내용은 [변수에 대한 GraphQL 설명서](https://graphql.org/learn/queries/#variables).
+GraphQL을 사용하면 쿼리에 변수를 배치할 수 있습니다. 보다 자세한 정보는 [변수에 대한 GraphQL 설명서](https://graphql.org/learn/queries/#variables)를 참조하십시오.
 
 예를 들어 특정 변형에 있는 `Author` 유형의 모든 콘텐츠 조각을 가져오려면(가능한 경우) GraphiQL에서 `variation` 인수를 지정할 수 있습니다.
 
@@ -407,7 +407,7 @@ query($variation: String!) {
 
 이 쿼리는 작성자의 전체 목록을 반환합니다. `another` 변형이 없는 작성자는 원본 데이터로 대체됩니다(이 경우 `_variation`은 `master`를 보고함).
 
-적용 [필터](#filtering), 지정된 변형을 제공하는 작성자로 목록을 제한하고 원본 데이터로 대체되는 작성자를 건너뛰려면 다음을 수행하십시오.
+지정된 변형을 제공하는 작성자로 목록을 제한하고 원본 데이터로 대체되는 작성자를 건너뛰려면 [필터](#filtering)를 적용합니다.
 
 ```graphql
 query($variation: String!) {
@@ -431,7 +431,7 @@ query($variation: String!) {
 
 GraphQL에서는 GraphQL 지시문이라고 하는 변수를 기반으로 쿼리를 변경할 수 있습니다.
 
-예를 들어 다음을 포함할 수 있습니다. `adventurePrice` 쿼리의 모든 필드 `AdventureModels`, 변수 기반 `includePrice`.
+예를 들어 `includePrice` 변수를 기반으로 모든 `AdventureModels`에 대한 쿼리에 `adventurePrice` 필드를 포함할 수 있습니다.
 
 ![GraphQL 지시문](assets/cfm-graphqlapi-04.png "GraphQL 지시문")
 
@@ -570,7 +570,7 @@ GraphQL 쿼리에서 필터링을 사용하여 특정 데이터를 반환할 수
 
 * 필드 경로를 나타내는 쉼표로 구분된 값 목록입니다.
    * 목록의 첫 번째 필드는 기본 정렬 순서를 정의하고, 두 번째 필드는 기본 정렬 기준의 두 값이 동일한 경우 사용되며, 세 번째 필드는 처음 두 기준이 동일한 경우 사용됩니다.
-   * 점으로 구분된 표기법(예: field1.subfield.subfield 등)
+   * 점으로 구분된 표기법 (예: field1.subfield.subfield 등)
 * 선택적 정렬 방향
    * (ASC(오름차순) 또는 DESC(내림차순))이 포함되며, 기본값 ASC가 적용됩니다.
    * 방향은 필드별로 지정할 수 있습니다. 즉, 한 필드는 오름차순으로 정렬하고 다른 필드는 내림차순으로 정렬할 수 있습니다(name, firstName DESC).
@@ -751,7 +751,7 @@ GraphQL의 솔루션으로 다음과 같은 작업을 수행할 수 있습니다
    * `height`: 차원의 높이
 * `rotation`: 지원되는 모든 회전의 열거형: R90, R180, R270
 * `flip`: HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL의 열거형
-* `quality`: 이미지 품질의 백분율을 표시하는 1-100 범위의 정수
+* `quality`: 이미지 품질의 백분율을 나타내는 1~100의 정수
 * `width`: 출력 이미지의 폭을 정의하지만 이미지 생성기에서 무시되는 정수
 * `preferWebp`: webp가 선호되는지 여부를 나타내는 부울(기본값은 false)
 
@@ -905,7 +905,7 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 * 캐싱 헤더
 
    * 작성자에 대한 캐싱 없음
-   * 게시 시 캐싱 - 최대 수명 10분(클라이언트에서 변경할 수 없음)
+   * 게시 시 캐싱 - 최대 수명 10분 (클라이언트에서 변경할 수 없음)
 
 ## AEM용 GraphQL - 확장 요약 {#graphql-extensions}
 

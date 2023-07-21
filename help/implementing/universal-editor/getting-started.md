@@ -3,7 +3,7 @@ title: AEM에서 Universal Editor 시작하기
 description: Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 알아봅니다.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 100%
 

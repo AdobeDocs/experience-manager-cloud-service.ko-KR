@@ -5,7 +5,7 @@ exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1896'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -113,11 +113,11 @@ Cloud Manager의 특징은 다음과 같습니다.
 
 Cloud Manager는 다음과 같은 AEM as a Cloud Service의 주요 구성 요소를 생성하고 구성할 수 있는 셀프서비스 포털로 발전해 왔습니다.
 
-* 새 프로그램 생성 및 관리 다음을 참조하십시오 [프로그램 및 프로그램 유형 이해](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) 을 참조하십시오.
+* 새 프로그램 생성 및 관리 자세한 내용은 [프로그램 및 프로그램 유형 이해](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)를 참조하십시오.
 
-* 이들 프로그램에서의 AEM 환경 생성 및 관리 다음을 참조하십시오 [환경 관리](/help/implementing/cloud-manager/manage-environments.md) 을 참조하십시오.
+* 이들 프로그램에서의 AEM 환경 생성 및 관리 자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md)를 참조하십시오.
 
-* 고객 코드 및 관련 구성을 특정 환경에 배포하기 위한 파이프라인 생성 및 관리 다음을 참조하십시오 [CI-CD 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 을 참조하십시오.
+* 고객 코드 및 관련 구성을 특정 환경에 배포하기 위한 파이프라인 생성 및 관리 자세한 내용은 [CI-CD 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)을 참조하십시오.
 
 * 이들 구성 요소에 대한 중요 라이프사이클 이벤트 알림 (예: 제품 업데이트)
 
@@ -150,7 +150,7 @@ Adobe에서 많은 측면을 담당하므로 AEM as a Cloud service를 사용하
 
 >[!TIP]
 >
->온보딩 프로세스에 대한 전체 개요는 [온보딩 여정](/help/journey-onboarding/overview.md).
+>온보딩 프로세스에 대한 전체 개요는 [온보딩 여정](/help/journey-onboarding/overview.md)을 참조하십시오.
 
 ## 개발 {#developing}
 
@@ -178,7 +178,7 @@ AEM as a Cloud Service에서는 OSGi 번들 및 관련 구성이 관리되는 �
 >
 >[OSGi 구성](/help/implementing/deploying/overview.md#osgi-configuration)도 살펴보십시오.
 
-개발자에 대한 또 다른 일반적인 요구 사항은 다양한 환경의 로그 파일에 빠르게 액세스하는 것입니다. AEM as a Cloud Service를 사용하면 작성자 및 게시 노드에 있는 다양한 노드의 로그 파일을 다운로드 가능한 파일 형식에서 또는 API를 통해 Cloud Manager를 통해 사용할 수 있습니다.
+개발자에 대한 또 다른 일반적인 요구 사항은 다양한 환경의 로그 파일에 대한 바로 가기입니다. AEM as a Cloud Service를 사용하면 작성자 및 게시 노드에 있는 다양한 노드의 로그 파일을 다운로드 가능한 파일 형식에서 또는 API를 통해 Cloud Manager를 통해 사용할 수 있습니다.
 
 코드와 콘텐츠의 명확하게 분리되어 있으므로 개발자는 특정 프로세스를 사용하여 개발의 일부로 콘텐츠를 업데이트할 수 있습니다. 변경 가능한 콘텐츠의 일반적인 사용 사례는 다음과 같습니다.
 
@@ -196,7 +196,7 @@ AEM as a Cloud Service에서는 OSGi 번들 및 관련 구성이 관리되는 �
 
 * AEM as a Cloud Service 빠른 시작: 동일한 기능 및 API 영역을 갖춘 최신 AEM 코드 베이스의 `.jar` 기반 독립형 설치 관리자
 
-* AEM as a Cloud Service 디스패처 SDK: 로컬에서의 디스패처 구성 테스트 및 유효성 검사를 위한 이미지 기반 프로세스
+* AEM as a Cloud Service Dispatcher SDK: 로컬에서의 Dispatcher 구성 테스트 및 유효성 검사를 위한 이미지 기반 프로세스
 
 >[!NOTE]
 >
@@ -228,7 +228,7 @@ AEM as a Cloud Service를 사용하면 이러한 작업이 자동화되므로 �
 
 AEM as a Cloud Service의 주요 변경 내용은 작성자 계층 액세스에 대한 Adobe ID 사용이 완전히 통합된다는 것입니다.
 
-이를 위해서는 사용자 및 사용자 그룹 관리에 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)을 사용해야 합니다. 사용자 프로필 정보가 Adobe Identity Management System(IMS)에서 중앙 집중식으로 관리되어 모든 클라우드 서비스에 공유되므로 사용자 계정을 사용하면 사용자가 Adobe 제품 및 서비스에 액세스할 수 있습니다. AEM에 액세스 권한을 할당하면 이전과 동일하게 AEM as a Cloud Service에서 사용자 계정을 참조할 수 있습니다(예: AEM 보안 사용자 인터페이스에서 역할 및 권한을 정의하기 위해).
+이를 위해서는 사용자 및 사용자 그룹 관리에 [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html)을 사용해야 합니다. 사용자 프로필 정보가 Adobe Identity Management System(IMS)에서 중앙 집중식으로 관리되어 모든 클라우드 서비스에 공유되므로 사용자 계정을 사용하면 사용자가 Adobe 제품 및 서비스에 액세스할 수 있습니다. AEM에 액세스 권한을 할당하면 이전과 동일하게 AEM as a Cloud Service에서 사용자 계정을 참조할 수 있습니다(예: AEM 보안 사용자 인터페이스에서 역할 및 권한을 정의하기 위해).
 
 이렇게 하면 다음과 같은 이점이 있습니다.
 
@@ -262,7 +262,7 @@ Assets 제품에는 클라우드에서의 차세대 자산 프로세싱과 고�
 
 ## Adobe Experience Manager as a Cloud Service 알아보기 {#getting-to-know-aem-as-cloud-service}
 
-자세한 내용은 다음을 참조하십시오.
+자세한 내용은 다음 문서를 참조하십시오.
 
 * [Adobe Experience Manager as a Cloud Service 소개](/help/overview/introduction.md)
 * Adobe Experience Manager as a Cloud Service [아키텍처](/help/overview/architecture.md)
@@ -274,6 +274,6 @@ Assets 제품에는 클라우드에서의 차세대 자산 프로세싱과 고�
 
 >[!TIP]
 >
->AEM as a Cloud Service에 대한 개요가 있으면 을 검토하여 빠르게 온보딩할 수 있습니다. [온보딩 여정](/help/journey-onboarding/overview.md).
+>AEM as a Cloud Service에 대한 개요가 있으면 [온보딩 여정](/help/journey-onboarding/overview.md)을 검토하여 빠르게 온보딩할 수 있습니다.
 >
 >이미 온보딩했거나 AEM의 기능을 테스트할 준비가 되었습니까? [AEM 참조 데모 추가 기능](/help/journey-sites/demos-add-on/overview.md)을 설치하여 풍부한 예제를 통해 AEM의 강력한 기능을 살펴보십시오.

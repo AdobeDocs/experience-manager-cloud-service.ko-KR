@@ -5,7 +5,7 @@ exl-id: fbc38611-dbee-426e-b823-df64b6730c45
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1691'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ AEM을 통해 손쉽게 사용자의 경험을 개인화할 수 있습니다. �
 
 ## 세그먼트 할당 {#accessing-segments}
 
-다음 [대상](audiences.md) 콘솔을 사용하여 ContextHub용 세그먼트와 Adobe Target 계정의 대상을 관리할 수 있습니다. 이 설명서에서는 ContextHub용 세그먼트 관리 방법에 대해 다룹니다.
+[대상자](audiences.md) 콘솔을 사용하여 ContextHub용 세그먼트와 Adobe Target 계정에 대한 대상자를 관리할 수 있습니다. 이 설명서에서는 ContextHub용 세그먼트 관리 방법에 대해 다룹니다.
 
 세그먼트에 액세스하려면 전역 탐색에서 **탐색 > 개인화 > 대상자**&#x200B;를 선택하십시오. 세그먼트를 보려면 구성(예: WKND 사이트)을 선택하십시오.
 
@@ -65,13 +65,13 @@ AEM을 통해 손쉽게 사용자의 경험을 개인화할 수 있습니다. �
 
 >[!NOTE]
 >
->값을 비교할 때 비교의 데이터 유형이 설정되지 않은 경우(즉, 자동 감지로 설정된 경우) ContextHub의 세그먼테이션 엔진은 Javascript와 마찬가지로 단순히 값을 비교합니다. 이는 예상되는 유형에 값을 전달하지 않으므로 오해의 소지가 있는 결과가 발생할 수 있습니다. 예:
+>값 비교 시 비교의 데이터 유형이 설정되지 않은 경우(예: 자동 감지로 설정된 경우) ContextHub의 세분화 엔진은 JavaScript와 같이 단순히 값을 비교합니다. 이는 예상되는 유형에 값을 전달하지 않으므로 오해의 소지가 있는 결과가 발생할 수 있습니다. 예:
 >
 >`null < 30 // will return true`
 >
 >따라서 [세그먼트를 작성](#creating-a-new-segment)할 때 비교되는 값의 유형을 알 때마다 **데이터 유형**&#x200B;을 선택해야 합니다. 예:
 >
->속성을 비교할 때 `profile/age`, 비교되는 유형이 이라는 것은 이미 알고 있습니다. **숫자**, 따라서 `profile/age` 가 설정되지 않음, 비교 `profile/age` 30 미만이 반환됩니다 **false**&#x200B;예상대로 입니다.
+>속성 `profile/age`를 비교할 때 귀하는 이미 비교되는 유형이 **숫자**&#x200B;임을 알고 있으므로 `profile/age`가 설정되지 않았더라도 30 이하의 비교 `profile/age`는 예상대로 **false**&#x200B;를 반환하게 됩니다.
 
 ### 참조 {#references}
 
@@ -92,16 +92,16 @@ AEM을 통해 손쉽게 사용자의 경험을 개인화할 수 있습니다. �
 
    ![세그먼트 추가](../assets/contexthub-create-segment.png)
 
-1. 다음에서 **새 ContextHub 세그먼트**, 세그먼트 제목 및 필요한 경우 부스트 값 을 입력한 다음 을 탭하거나 클릭합니다 **만들기**.
+1. **새 ContextHub 세그먼트**&#x200B;에서 세그먼트 제목 및 부스트 값을 입력(필요한 경우)한 다음 **만들기**&#x200B;를 탭하거나 클릭합니다.
 
    ![새 세그먼트](../assets/contexthub-new-segment.png)
 
-   각 세그먼트에는 가중치 요소로 사용되는 부스트 매개변수가 있습니다. 여러 세그먼트가 유효한 경우 세그먼트의 숫자가 클수록 작은 수의 세그먼트에 우선하여 선택됩니다.
+   각 세그먼트에는 가중치 요소로 사용되는 부스트 매개변수가 있습니다. 여러 세그먼트가 유효한 경우, 세그먼트의 숫자가 클수록 작은 수의 세그먼트에 우선하여 선택됩니다.
 
    * 최솟값: `0`
    * 최댓값: `1000000`
 
-1. 세그먼트 콘솔에서 새로 만든 세그먼트를 편집하여 세그먼트 편집기에서 엽니다.
+1. 세그먼트 콘솔에서 새로 작성한 세그먼트를 편집하여 세그먼트 편집기에서 엽니다.
 1. 비교 또는 참조를 세그먼트 편집기로 드래그하면 기본 AND 컨테이너에 표시됩니다.
 1. 새 참조 또는 세그먼트의 구성 옵션을 더블 클릭하거나 탭하여 특정 매개변수를 편집합니다. 이 예제에서는 스위스 바젤의 사람들을 테스트하고 있습니다.
 
@@ -175,7 +175,7 @@ AND 및 OR 컨테이너 구성 요소를 사용하여 AEM에서 복잡한 세그
 
 1. `ContextHub.SegmentEngine.ScriptManager.register`로 스크립트를 등록합니다.
 
-스크립트가 추가 속성에 따라 달라지는 경우 해당 스크립트는 `this.dependOn()`을 호출해야 합니다. 예를 들어 스크립트가에 따라 `profile/age`:
+스크립트가 추가 속성에 따라 달라지는 경우 해당 스크립트는 `this.dependOn()`을 호출해야 합니다. 예를 들어 스크립트가 `profile/age`에 따라 달라지는 경우:
 
 ```javascript
 this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
@@ -200,7 +200,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. 폴더의 **제목** 및 **이름**&#x200B;을 입력합니다.
    * **제목**&#x200B;은 설명적이어야 합니다.
    * **이름**&#x200B;은 저장소의 노드 이름이 됩니다.
-      * 제목을 기반으로 자동으로 생성되고 이에 따라 조정됩니다 [AEM 이름 지정 규칙](/help/implementing/developing/introduction/naming-conventions.md).
+      * 제목을 기반으로 자동 생성되고 [AEM 명명 규칙](/help/implementing/developing/introduction/naming-conventions.md)에 따라 조정됩니다.
       * 필요한 경우 조정할 수 있습니다.
 
    ![폴더 만들기](../assets/contexthub-create-folder.png)
@@ -279,7 +279,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 이러한 테스트는 페이지 콘텐츠에서 타겟팅된 콘텐츠 및 관련 **활동** 및 **경험**&#x200B;과 함께 수행할 수도 잇습니다.
 
-활동 및 경험을 설정했다면 활동을 사용하여 세그먼트를 손쉽게 테스트할 수 있습니다. 활동 설정에 대한 자세한 내용은 [타깃팅된 콘텐츠 작성에 대한 설명서](targeted-content.md).
+활동 및 경험을 설정했다면 활동을 사용하여 세그먼트를 손쉽게 테스트할 수 있습니다. 활동 설정에 대한 자세한 내용은 [타겟팅된 콘텐츠 작성에 대한 관련 설명서](targeted-content.md)를 참조하십시오.
 
 1. 타겟팅된 콘텐츠를 설정한 페이지의 편집 모드에서 콘텐츠의 화살표 아이콘을 통해 해당 콘텐츠가 타겟팅되었음을 확인할 수 있습니다.
 1. 미리보기 모드로 전환하고 ContextHub를 사용하여 경험에 대해 구성된 세그먼테이션과 일치하지 않는 담당자로 전환합니다.
@@ -287,4 +287,4 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 ## 세그먼트 사용 {#using-your-segment}
 
-세그먼트를 사용하여 특정 타겟 대상자에게 표시되는 실제 콘텐츠를 제어할 수 있습니다. 대상자 및 세그먼트에 대한 자세한 내용은 [대상자 관리](audiences.md)를, 콘텐츠를 타겟팅할 대상자 및 세그먼트 사용에 대한 자세한 내용은 [타겟팅된 콘텐츠 작성](targeted-content.md)을 참조하십시오.
+세그먼트를 사용하여 특정 타깃 대상자에게 표시되는 실제 콘텐츠를 제어할 수 있습니다. 대상자 및 세그먼트에 대한 자세한 내용은 [대상자 관리](audiences.md)를, 콘텐츠를 타겟팅할 대상자 및 세그먼트 사용에 대한 자세한 내용은 [타겟팅된 콘텐츠 작성](targeted-content.md)을 참조하십시오.

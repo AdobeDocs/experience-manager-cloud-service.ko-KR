@@ -5,7 +5,7 @@ exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Analytics Standard API를 통해 Adobe Experience Manager as a Cloud Service(AEM
 
 이 절차를 시작하기 전에:
 
-* [Adobe 지원 팀](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html)은 다음에 대한 계정을 프로비저닝해야 합니다.
+* [Adobe 지원 팀](https://helpx.adobe.com/contact/enterprise-support.ec.html)은 다음에 대한 계정을 프로비저닝해야 합니다.
 
    * Adobe Console
    * Adobe Developer Console
@@ -35,7 +35,7 @@ Analytics Standard API를 통해 Adobe Experience Manager as a Cloud Service(AEM
 * 귀사의 시스템 관리자는 Admin Console을 사용하여 필요한 개발자를 관련 제품 프로필에 추가해야 합니다.
 
    * 이렇게 하면 관련 개발자에게 Adobe Developer Console을 사용하여 통합을 활성화할 수 있는 권한이 제공됩니다.
-   * 자세한 내용은 [개발자 관리](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)를 참조하십시오.
+   * 자세한 내용은 [개발자 관리](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)를 참조하십시오.
 
 
 ## IMS 구성 - 공개 키 생성 {#configuring-ims-generating-a-public-key}
@@ -45,7 +45,7 @@ Analytics Standard API를 통해 Adobe Experience Manager as a Cloud Service(AEM
 1. AEM에서 **도구** 메뉴를 엽니다.
 1. **보안** 섹션에서 **Adobe IMS 구성**&#x200B;을 선택합니다.
 1. **만들기**&#x200B;를 선택하여 **Adobe IMS 기술 계정 구성**&#x200B;을 엽니다.
-1. 아래의 드롭다운 사용 **클라우드 구성**, 선택 **Adobe Analytics**.
+1. **클라우드 구성** 아래의 드롭다운을 사용하여 **Adobe Analytics**&#x200B;를 선택합니다.
 1. **새 인증서 만들기**&#x200B;를 활성화한 다음 새 별칭을 입력합니다.
 1. **인증서 만들기**&#x200B;를 사용하여 확인합니다.
 
@@ -55,7 +55,7 @@ Analytics Standard API를 통해 Adobe Experience Manager as a Cloud Service(AEM
 
    >[!CAUTION]
    >
-   >이 구성을 열어 두십시오. 다음 경우에 다시 필요합니다. [AEM에서 IMS 구성 완료](#completing-the-ims-configuration-in-aem).
+   >[AEM에서 IMS 구성을 완료](#completing-the-ims-configuration-in-aem)할 때 다시 필요하므로 이 구성을 열어 두십시오.
 
    ![인증서 다운로드](assets/integrate-analytics-ims-02.png)
 
@@ -73,9 +73,9 @@ Adobe Developer Console을 열고 AEM이 사용할 Adobe Analytics를 사용하�
 
 1. 보유 중인 모든 프로젝트가 표시됩니다. **새 프로젝트 만들기**&#x200B;를 선택합니다. 위치 및 사용량은 다음에 따라 달라집니다.
 
-   * 아직 프로젝트가 없는 경우 **새 프로젝트 만들기** 가운데, 아래쪽
+   * 보유 중인 프로젝트가 없는 경우, **새 프로젝트 만들기**는 중앙 하단에 표시됩니다.
      ![새 프로젝트 만들기 - 첫 번째 프로젝트](assets/integration-analytics-ims-02.png)
-   * 기존 프로젝트가 있는 경우 이들 프로젝트가 나열되고 **새 프로젝트 만들기** 오른쪽 위에 있습니다.
+   * 기존 프로젝트가 있는 경우, 이 프로젝트가 나열되며 **새 프로젝트 만들기**는 오른쪽 상단에 표시됩니다.
      ![새 프로젝트 만들기 - 여러 프로젝트](assets/integration-analytics-ims-03.png)
 
 
@@ -107,7 +107,7 @@ Adobe Developer Console을 열고 AEM이 사용할 Adobe Analytics를 사용하�
 
    ![필요한 제품 프로필 선택](assets/integration-analytics-ims-16.png)
 
-1. 구성이 확인되었습니다.
+1. 구성이 확인됩니다.
 
 ### 통합에 권한 할당 {#assigning-privileges-to-the-integration}
 

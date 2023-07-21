@@ -5,7 +5,7 @@ exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
 source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
 source-wordcount: '652'
-ht-degree: 90%
+ht-degree: 93%
 
 ---
 
@@ -33,12 +33,12 @@ Universal Editor의 아키텍처 및 해당 서비스와 계층 간에 데이터
 
 ### 편집기 {#editors}
 
-* **Universal Editor** - Universal Editor는 계측된 DOM을 사용하여 콘텐츠의 내부 편집을 허용합니다. 다음을 참조하십시오 [속성 및 유형](attributes-types.md) 필요한 메타데이터에 대한 세부 사항을 참조하십시오. AEM의 계측 예시는 [AEM에서 Universal Editor 시작하기](getting-started.md) 문서를 참조하십시오.
+* **Universal Editor** - Universal Editor는 계측된 DOM을 사용하여 콘텐츠의 내부 편집을 허용합니다. 필요한 메타데이터에 대한 자세한 내용은 [속성 및 유형](attributes-types.md)을 참조하십시오. AEM의 계측 예시는 [AEM에서 Universal Editor 시작하기](getting-started.md) 문서를 참조하십시오.
 * **속성 레일** - 구성 요소의 일부 속성(예: 캐러셀의 회전 시간 또는 항상 열리거나 닫혀 있어야 하는 아코디언 탭 정보)은 컨텍스트 내에서 편집할 수 없습니다. 이러한 구성 요소 정보를 편집할 수 있도록 편집기의 측면 레일에 양식 기반 편집기가 제공됩니다.
 
 ### 원격 앱 {#remote-app}
 
-Universal Editor에서 컨텍스트 내에서 앱을 편집할 수 있도록 하려면 DOM을 계측해야 합니다. 원격 앱은 DOM의 특정 속성을 렌더링해야 합니다. 다음을 참조하십시오 [속성 및 유형](attributes-types.md) 필요한 메타데이터에 대한 세부 사항을 참조하십시오. AEM의 계측 예시는 [AEM에서 Universal Editor 시작하기](getting-started.md) 문서를 참조하십시오.
+Universal Editor에서 컨텍스트 내에서 앱을 편집할 수 있도록 하려면 DOM을 계측해야 합니다. 원격 앱은 DOM의 특정 속성을 렌더링해야 합니다. 필요한 메타데이터에 대한 자세한 내용은 [속성 및 유형](attributes-types.md)을 참조하십시오. AEM의 계측 예시는 [AEM에서 Universal Editor 시작하기](getting-started.md) 문서를 참조하십시오.
 
 Universal Editor는 최소한의 SDK를 위해 노력하므로 계측은 원격 앱 구현의 책임입니다.
 

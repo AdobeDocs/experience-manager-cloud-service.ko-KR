@@ -1,30 +1,30 @@
 ---
 title: 반응형 레이아웃
-description: AEM에서는 페이지에 대한 응답형 레이아웃을 실현할 수 있습니다.
+description: AEM에서는 페이지에 대한 반응형 레이아웃을 실현할 수 있습니다.
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1748'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 # 반응형 레이아웃 {#responsive-layout}
 
-AEM에서는 **레이아웃 컨테이너** 구성 요소를 사용하여 사용자 페이지에 대한 응답형 레이아웃을 보유할 수 있습니다.
+AEM에서는 **레이아웃 컨테이너** 구성 요소를 사용하여 사용자 페이지에 대한 반응형 레이아웃을 보유할 수 있습니다.
 
-이 레이아웃은 응답형 격자 내에 구성 요소를 배치할 수 있도록 해 주는 단락 시스템을 제공합니다. 이 격자를 사용하면 디바이스/창 크기 및 형식에 따라 레이아웃을 다시 정렬할 수 있습니다. 구성 요소는 [**레이아웃** 모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)와 함께 사용됩니다. 이 모드에서는 디바이스에 종속적인 응답형 레이아웃을 만들고 편집할 수 있습니다.
+이 레이아웃은 응답형 격자 내에 구성 요소를 배치할 수 있도록 해 주는 단락 시스템을 제공합니다. 이 격자를 사용하면 디바이스/창 크기 및 형식에 따라 레이아웃을 다시 정렬할 수 있습니다. 구성 요소는 [**레이아웃** 모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)와 함께 사용됩니다. 이 모드에서는 디바이스에 종속적인 반응형 레이아웃을 만들고 편집할 수 있습니다.
 
 레이아웃 컨테이너:
 
 * 구성 요소를 격자에 나란히 배치하고 언제 구성 요소가 축소되거나 리플로우되어야 하는지를 지정하는 기능과 함께, 수평 격자에 맞춤 기능을 제공합니다.
-* 미리 정의된 중단점(예: 전화, 태블릿 등)을 사용하여 관련 장치/방향에 대한 콘텐츠의 필수 동작을 정의할 수 있습니다.
+* 미리 정의된 중단점(예: 휴대폰, 태블릿 등)을 사용하여 관련 디바이스/방향에 대한 콘텐츠의 필수 동작을 정의할 수 있습니다.
    * 예를 들어 구성 요소 크기나 구성 요소를 특정 디바이스에서 볼 수 있도록 할지 여부를 사용자 정의할 수 있습니다.
 * 열 컨트롤을 사용하도록 중첩될 수 있습니다.
 
-그러면 사용자는 콘텐츠가 에뮬레이터를 사용하여 어떻게 특정 디바이스에 대해 렌더링되는지 알 수 있습니다.
+그러면 사용자는 콘텐츠가 에뮬레이터를 사용하여 어떻게 특정 디바이스에 대해 렌더링될지 알 수 있습니다.
 
-AEM에서는 메커니즘을 조합하여 페이지에 대한 응답형 레이아웃을 실현합니다.
+AEM에서는 메커니즘을 조합하여 페이지에 대한 반응형 레이아웃을 실현합니다.
 
 * [**레이아웃 컨테이너**](#adding-a-layout-container-and-its-content-edit-mode) 구성 요소
 
@@ -35,7 +35,7 @@ AEM에서는 메커니즘을 조합하여 페이지에 대한 응답형 레이�
   레이아웃 컨테이너를 페이지에 배치하면 **레이아웃** 모드를 사용하여 콘텐츠를 응답형 그리드 내에 배치할 수 있습니다.
 
 * [**에뮬레이터**](#selecting-a-device-to-emulate)
-이렇게 하면 구성 요소의 크기를 대화 방식으로 변경하여 디바이스/창 크기에 따라 레이아웃을 다시 정렬하는 응답형 웹 사이트를 만들고 편집할 수 있습니다. 그러면 사용자는 콘텐츠가 에뮬레이터를 사용하여 어떻게 렌더링되는지 볼 수 있습니다.
+이를 사용하여 구성 요소의 크기를 상호 작용 방식으로 조정하여 디바이스/창 크기에 따라 레이아웃을 재정렬하는 반응형 웹 사이트를 만들고 편집할 수 있습니다. 그러면 사용자는 콘텐츠가 에뮬레이터를 사용하여 어떻게 렌더링될지 알 수 있습니다.
 
 이러한 응답형 격자 메커니즘을 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 
@@ -49,11 +49,11 @@ AEM에서는 메커니즘을 조합하여 페이지에 대한 응답형 레이�
 
 >[!TIP]
 >
->Adobe는 응답형 레이아웃의 [GitHub 설명서](https://adobe-marketing-cloud.github.io/aem-responsivegrid/)를 프론트엔드 개발자에게 참조용으로 제공하여 AEM 외부 그리드를 사용할 수 있도록 합니다. 예를 들어 나중에 사용하기 위해 AEM 사이트에 대한 정적 HTML mock-up을 생성할 때 이를 사용할 수 있습니다.
+>Adobe는 반응형 레이아웃의 [GitHub 설명서](https://adobe-marketing-cloud.github.io/aem-responsivegrid/)를 프론트엔드 개발자에게 참조용으로 제공하여 AEM 외부 그리드를 사용할 수 있도록 합니다. 예를 들어 나중에 사용하기 위해 AEM 사이트에 대한 정적 HTML mock-up을 생성할 때 이를 사용할 수 있습니다.
 
 >[!NOTE]
 >
->위의 메커니즘은 템플릿에 대한 구성으로 사용할 수 있게 됩니다. 자세한 내용은 응답형 레이아웃 구성을 참조하십시오. <!-- Use of the above mechanisms is enabled by configuration on the template. See [Configuring Responsive Layout](/help/sites-administering/configuring-responsive-layout.md) for further information.-->
+>위의 메커니즘은 템플릿에 대한 구성으로 사용할 수 있게 됩니다. 자세한 내용은 반응형 레이아웃 구성을 참조하십시오. <!-- Use of the above mechanisms is enabled by configuration on the template. See [Configuring Responsive Layout](/help/sites-administering/configuring-responsive-layout.md) for further information.-->
 
 ## 레이아웃 정의, 디바이스 에뮬레이션 및 중단점 {#layout-definitions-device-emulation-and-breakpoints}
 
@@ -68,15 +68,15 @@ AEM을 사용하면 디바이스의 폭에 따라 레이아웃을 정의할 수 
    * 중단점의 범위는 다음 중단점까지 왼쪽으로 확장됩니다.
    * 중단점을 명시적으로 선택할 수는 없습니다. 디바이스 및 방향을 선택하면 적절한 중단점이 자동으로 선택됩니다.
 
-장치 **데스크탑**&#x200B;특정 너비가 없고 기본 중단점과 관련되어 있습니다(즉, 마지막으로 구성된 중단점 위의 모든 것).
+특정 너비가 없고 기본 중단점(마지막으로 구성된 중단점 위의 모든 것)과 관련된 **데스크탑** 디바이스입니다.
 
 >[!NOTE]
 >
 >모든 개별 디바이스에 대해 중단점을 정의할 수는 있지만, 그렇게 되면 레이아웃 정의 및 유지 관리에 필요한 노력이 크게 증가합니다.
 
-에뮬레이터를 사용할 때 에뮬레이션하고 레이아웃을 정의할 특정 디바이스를 선택하면 관련 중단점도 강조 표시됩니다. 수행하는 모든 레이아웃 변경 작업은 중단점이 적용되는 다른 장치에 적용할 수 있습니다. 즉, 활성 중단점 마커의 왼쪽에, 하지만 다음 중단점 마커의 앞에 있는 모든 장치를 나타냅니다.
+에뮬레이터를 사용하여 에뮬레이션하고 레이아웃을 정의할 특정 디바이스를 선택하면 관련 중단점도 강조 표시됩니다. 레이아웃 변경 사항은 중단점이 적용되는 다른 디바이스에 적용할 수 있습니다. 즉, 기본 중단점 마커의 왼쪽에 있지만 다음 중단점 마커 앞에 있는 모든 디바이스입니다.
 
-예를 들어, 장치를 선택하는 경우 **iPhone 6 Plus** (너비 540픽셀로 정의됨) 에뮬레이션하고 레이아웃을 지정하는 중단점입니다 **전화** (768픽셀로 정의됨)도 활성화됩니다. 다음에 대해 수행하는 모든 레이아웃 변경 **IPHONE 6** 아래의 다른 장치에 적용됩니다. **휴대폰** 중단점(예: ) **IPHONE 5** (320픽셀로 정의됨)
+예를 들어 에뮬레이션하고 레이아웃을 정의할 디바이스로 **iPhone 6 Plus**(폭 540픽셀로 정의됨)를 선택하면 중단점 **Phone**(768픽셀로 정의됨)도 활성화됩니다. **iPhone 6**&#x200B;에 대해 수행하는 모든 레이아웃 변경 작업은 **iPhone 5**(320픽셀로 정의됨)와 같은 **Phones** 중단점 아래의 다른 디바이스에 적용됩니다.
 
 ![에뮬레이터](/help/sites-cloud/authoring/assets/responsive-layout-emulators.png)
 
@@ -136,7 +136,7 @@ AEM을 사용하면 디바이스의 폭에 따라 레이아웃을 정의할 수 
 >
 >아직 사용할 수 없는 경우에는 **레이아웃 컨테이너**&#x200B;를 단락 시스템/페이지에 대해 확실히 활성화해야 합니다. <!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
 
-1. The **Layout Container** is available as a standard component in the [Components Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). From here you can drag it to the required location on the page after which you will see the **Drag Components here** placeholder.
+1. **레이아웃 컨테이너**&#x200B;는 [구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)에서 표준 구성 요소로 사용할 수 있습니다. 여기에서 해당 페이지의 필요한 위치로 드래그하면 **구성 요소를 여기로 드래그하십시오** 플레이스홀더가 나타납니다.
 1. 그런 다음 구성 요소를 레이아웃 컨테이너에 추가할 수 있습니다. 이러한 구성 요소는 실제 콘텐츠를 담게 됩니다.
 
    ![레이아웃 컨테이너](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
@@ -157,16 +157,16 @@ AEM을 사용하면 디바이스의 폭에 따라 레이아웃을 정의할 수 
 
    ![상위 버튼](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
-1. 레이아웃 구성 요소가 중첩된 경우 **상위** 옵션은 중첩된 레이아웃 컨테이너 또는 해당 상위 항목을 선택할 수 있는 드롭다운 선택 사항을 제공합니다.
+1. 레이아웃 구성 요소가 중첩된 경우, **상위** 옵션을 선택하면 드롭다운 옵션이 표시되어 중첩된 레이아웃 컨테이너 또는 상위 항목을 선택할 수 있습니다.
 
    드롭다운에서 컨테이너 이름 위로 마우스를 이동하면 해당 윤곽이 페이지에 표시됩니다.
 
    * 가장 낮게 중첩된 레이아웃 컨테이너는 파란색으로 윤곽이 표시됩니다.
-   * 연속적인 모든 컨테이너는 파란색 음영으로 윤곽선이 표시됩니다.
+   * 연속적인 모든 컨테이너는 파란색 음영으로 표시됩니다.
 
    ![중첩된 컨테이너](/help/sites-cloud/authoring/assets/responsive-layout-nested.png)
 
-1. 전체 격자가 해당 콘텐츠로 강조 표시됩니다. 다음과 같은 작업을 선택할 수 있는 작업 도구 모음이 표시됩니다. **삭제.**
+1. 해당 콘텐츠가 있는 전체 격자가 강조 표시됩니다. 작업 도구 모음이 표시되고 여기서 **삭제** 등의 작업을 선택할 수 있습니다.
 
 ## 레이아웃 정의(레이아웃 모드) {#defining-layouts-layout-mode}
 
@@ -181,13 +181,13 @@ AEM을 사용하면 디바이스의 폭에 따라 레이아웃을 정의할 수 
 * [도구 모음에서 모드 메뉴](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)를 사용하여 **레이아웃** 모드 선택
    * **편집** 모드나 **타겟팅** 모드로 전환하는 것처럼 **레이아웃** 모드 선택
    * **레이아웃** 모드가 지속적으로 유지되며 모드 선택기를 통해 다른 모드를 선택할 때까지 **레이아웃** 모드를 벗어나지 않습니다.
-* 날짜 [개별 구성 요소 편집](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout).
-   * 구성 요소의 빠른 작업 메뉴에서 **레이아웃** 선택 사항을 사용하여 **레이아웃** 모드로 전환할 수 있습니다.
+* [개별 구성 요소를 편집](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)하는 경우
+   * 구성 요소의 빠른 작업 메뉴에서 **레이아웃** 옵션을 사용하여 **레이아웃** 모드로 전환할 수 있습니다.
    * 구성 요소를 편집하는 동안 **레이아웃** 모드가 지속되며 초점이 다른 구성 요소로 변경되면 **편집** 모드로 되돌아갑니다.
 
 레이아웃 모드에 있는 경우 격자에서 다양한 작업을 수행할 수 있습니다.
 
-* 파란색 점을 사용하여 콘텐츠 구성 요소 크기를 변경할 수 있습니다. 크기를 변경하면 항상 격자에 맞춰집니다. 크기를 조정할 때 배경 격자가 정렬에 도움이 되도록 표시됩니다.
+* 파란색 점을 사용하여 콘텐츠 구성 요소 크기를 변경할 수 있습니다. 크기를 변경하면 항상 격자에 맞춰집니다. 크기를 변경하면 정렬을 위해 배경 격자가 표시됩니다.
 
   ![구성 요소 크기 조정](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
 
@@ -204,7 +204,7 @@ AEM을 사용하면 디바이스의 폭에 따라 레이아웃을 정의할 수 
 
 * **레이아웃** 모드에서 **구성 요소를 여기로 드래그하십시오.**&#x200B;를 탭/클릭하여 전체 구성 요소를 선택할 수 있습니다. 이 모드에 대한 도구 모음이 표시됩니다.
 
-  도구 모음에는 레이아웃 구성 요소와 그 구성 요소에 속하는 구성 요소의 상태에 따라 다른 옵션이 있습니다. 예:
+  도구 모음은 레이아웃 구성 요소의 상태와 이에 속하는 구성 요소에 따라 옵션이 달라집니다. 예:
 
    * **상위** - 상위 구성 요소를 선택합니다.
 
@@ -214,7 +214,7 @@ AEM을 사용하면 디바이스의 폭에 따라 레이아웃을 정의할 수 
 
      ![숨겨진 구성 요소 표시 버튼](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
 
-   * **중단점 레이아웃 되돌리기** - 기본 레이아웃으로 되돌립니다. 사용자 지정된 레이아웃이 적용되지 않습니다.
+   * **중단점 레이아웃 되돌리기** - 기본 레이아웃으로 되돌립니다. 사용자 정의된 레이아웃이 적용되지 않습니다.
 
      ![중단점 레이아웃 되돌리기 버튼](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
 

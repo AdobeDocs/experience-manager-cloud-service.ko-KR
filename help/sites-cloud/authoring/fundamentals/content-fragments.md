@@ -5,7 +5,7 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1223'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
 >
 >경험 조각은 콘텐츠 조각 형태로 콘텐츠를 포함할 수 있지만 반대로는 불가능합니다.
 >
->자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
+>자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)를 참조하십시오.
 
 >[!CAUTION]
 >
@@ -62,7 +62,7 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
    >
    >다른 방법은 특정 콘텐츠 조각을 페이지로 직접 드래그하는 것입니다. 이 경우 관련 구성 요소(콘텐츠 조각)가 자동으로 만들어집니다.
 
-4. 처음에는 의 콘텐츠 **기본** 요소 및 **기본** (변형)이 표시됩니다. 필요에 따라 [다른 요소 및/또는 변형을 선택](#selecting-the-element-or-variation)할 수 있습니다.
+4. 처음에는 **주** 요소 및 **마스터**(변형) 콘텐츠가 표시됩니다. 필요에 따라 [다른 요소 및/또는 변형을 선택](#selecting-the-element-or-variation)할 수 있습니다.
 
    ![자산 브라우저의 콘텐츠 조각](/help/sites-cloud/authoring/assets/content-fragments.png)
 
@@ -70,7 +70,7 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
    >
    >추가 편집 기능에 대한 자세한 정보는 다음을 참조하십시오.
    >
-   >* [응답형 레이아웃](/help/sites-cloud/authoring/features/responsive-layout.md)
+   >* [반응형 레이아웃](/help/sites-cloud/authoring/features/responsive-layout.md)
    >* [페이지 콘텐츠 편집](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 ### 요소 또는 변형 선택 {#selecting-the-element-or-variation}
@@ -89,15 +89,15 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
    * **단일 텍스트 요소**
    * **여러 요소**
 * **요소**
-   * 선택한 항목은 사용된 모델에 따라 사용할 수 있습니다.
+   * 선택 항목은 사용된 모델에 따라 사용할 수 있습니다.
 
   >[!NOTE]
   >
   >사용할 수 있는 요소는 사용된 모델에 따라 다릅니다.
 
 * **변형**
-   * 기본값 **기본** 는 항상 사용할 수 있습니다.
-   * 조각에 대해 변형을 만든 경우 선택 항목을 사용할 수 있습니다.
+   * 기본 **마스터**&#x200B;는 항상 사용할 수 있습니다.
+   * 조각에 대해 변형을 만든 경우, 선택이 가능합니다.
 
 * **ID**
 
@@ -115,7 +115,7 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
 
 특정 콘텐츠 조각이 페이지에 추가되면 조각의 각 HTML 단락 사이(및 상단/하단)에 **구성 요소를 여기로 드래그하십시오.** 플레이스홀더가 있습니다.
 
-이를 통해 컨텐츠를 추가할 수 있습니다 [중간(즉, 중간 컨텐츠)](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) 루트 조각을 변경하지 않고도 사용 가능한 모든 포인트에서 조각 콘텐츠를 사용할 수 있습니다.
+이렇게 하면 루트 조각을 변경하지 않고도 조각 콘텐츠 [사이(예: 중간 콘텐츠)](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)(사용 가능한 모든 지점)에 콘텐츠를 더 추가할 수 있습니다.
 
 중간 콘텐츠에서 다음 작업을 수행할 수 있습니다.
 
@@ -137,7 +137,7 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
 
 >[!CAUTION]
 >
->중간 컨텐츠를 페이지의 컨텐츠 조각에 추가한 후에 기본 컨텐츠 조각(즉, 컨텐츠 조각 편집기에서)의 구조를 변경하면 잘못된/예기치 않은 결과가 나타날 수 있습니다.
+>중간 콘텐츠를 페이지의 콘텐츠 조각에 추가한 후에 기존 콘텐츠 조각(예: 콘텐츠 조각 편집기에서)의 구조를 변경하면 잘못된/예기치 않은 결과가 나타날 수 있습니다.
 >
 >이 경우 중간 콘텐츠가 그대로 유지됩니다.
 >
@@ -160,7 +160,7 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
 
 관련 콘텐츠가 있는 조각을 페이지에 추가하면 새 탭(**관련 콘텐츠**)이 사이드 패널에서 열립니다.
 
-여기에서 에셋을 필요한 위치(기존 구성 요소 또는 해당 구성 요소를 만드는 필요한 위치)로 드래그할 수 있습니다.
+여기서 자산을 필요한 위치(기존 구성 요소 또는 해당 구성 요소를 만들 필수 위치)로 드래그할 수 있습니다.
 
 ![이미지 삽입](/help/sites-cloud/authoring/assets/content-fragments-image.png)
 

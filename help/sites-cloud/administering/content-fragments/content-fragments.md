@@ -7,7 +7,7 @@ exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2122'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Adobe Experience Manager(AEM) as a Cloud Service와 함께 콘텐츠 조각을 �
 AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하여 콘텐츠 조각을 JSON 형식으로 게재할 수도 있습니다. 이 게재 형식을 사용하면
 
 * 구성 요소를 사용하여 게재할 조각의 요소를 관리할 수 있습니다.
-* API 게재에 사용되는 페이지에서 여러 콘텐츠 조각 핵심 구성 요소를 추가하여 벌크 게재를 수행할 수 있습니다.
+* API 게재에 사용되는 페이지에서 여러 콘텐츠 조각 핵심 구성 요소를 추가하여 일괄 게재를 수행할 수 있습니다.
 
 이 페이지 및 다음 페이지에서는 콘텐츠 조각 생성, 구성, 관리 및 사용을 위한 작업을 다룹니다.
 
@@ -70,7 +70,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 
 콘텐츠 조각을 사용하면 다음과 같은 작업을 수행할 수 있습니다.
 
-* 다양한 채널에서 효율적으로 타겟 대상자에게 도달하는 방법을 고려할 수 있습니다.
+* 다양한 채널에서 효율적으로 타깃 대상자에게 도달하는 방법을 고려할 수 있습니다.
 * 채널 중립적인 에디토리얼 콘텐츠를 만들고 관리할 수 있습니다.
 * 다양한 채널을 위한 콘텐츠 풀을 빌드할 수 있습니다.
 * 특정 채널에 맞는 콘텐츠 변형을 디자인할 수 있습니다.
@@ -87,7 +87,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 >
 >경험 조각은 콘텐츠 조각 형태로 콘텐츠를 포함할 수 있지만 반대로는 불가능합니다.
 >
->자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
+>자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)를 참조하십시오.
 
 ## 콘텐츠 조각 및 콘텐츠 서비스 {#content-fragments-and-content-services}
 
@@ -147,7 +147,7 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 * [이미지를 포함하거나 이미지에 연결](#fragments-with-visual-assets)할 수 있습니다.
 * 페이지에서 참조할 때 [중간적인 콘텐츠](#in-between-content-when-page-authoring-with-content-fragments)를 사용할 수 있습니다.
 
-* 게재 메커니즘(즉, 페이지, 채널)에 독립적입니다.
+* 게재 메커니즘(예: 페이지, 채널)에 독립적입니다.
 
 ### 시각적 자산이 있는 조각 {#fragments-with-visual-assets}
 
@@ -283,7 +283,7 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
    * [도구를 사용하여 생성](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)됩니다.
    * [조각 생성](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-content-fragments)에 필요합니다.
    * 조각의 구조(제목, 콘텐츠 요소, 태그 정의)를 정의합니다.
-   * 콘텐츠 모델 정의에는 제목과 하나의 데이터 요소가 필요하며, 기타 모든 항목은 선택 사항입니다.
+   * 콘텐츠 모델 정의에는 제목과 하나의 데이터 요소가 필요하며, 기타 모든 항목은 옵션입니다.
    * 기본 콘텐츠(해당되는 경우)를 정의할 수 있습니다.
    * 작성자는 조각 콘텐츠를 작성할 때 정의된 구조를 변경할 수 없습니다.
    * 종속 콘텐츠 조각을 만든 후 모델을 변경하면 해당 콘텐츠 조각에 영향을 줄 수 있습니다.
@@ -294,7 +294,7 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 
    * 조각을 HTML 및/또는 JSON 형식으로 게재하는 데 중요합니다.
    * [페이지에서 조각을 참조](/help/sites-cloud/authoring/fundamentals/content-fragments.md)하는 데 필요합니다.
-   * 조각, 즉 채널의 레이아웃 및 게재를 담당합니다.
+   * 채널 등과 같이 조각의 레이아웃 및 게재를 담당합니다.
    * 조각은 레이아웃을 정의하고 일부 또는 모든 요소/변형 및 관련 콘텐츠를 게재하기 위해 하나 이상의 전용 구성 요소를 필요로 합니다.
    * 작성 중인 페이지에 조각을 드래그하면 필요한 구성 요소가 자동으로 연결됩니다.
 

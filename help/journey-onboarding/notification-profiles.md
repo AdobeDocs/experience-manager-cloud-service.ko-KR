@@ -7,7 +7,7 @@ exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '933'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 98%
 
 ## 사전 요구 사항 {#prerequisites}
 
-사용자 프로필은 Admin Console에서 생성되고 유지되므로 알림 프로필을 만들기 전에 다음을 수행해야 합니다.
+사용자 프로필은 Admin Console에서 생성되고 유지되므로 알림 프로필을 만들기 전에 다음 작업을 수행해야 합니다.
 
 * 멤버십을 추가하고 프로필을 작성할 수 있는 권한을 보유합니다.
 * 유효한 Adobe Admin Console 프로필이 있습니다.

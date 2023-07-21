@@ -5,7 +5,7 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '347'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -17,21 +17,21 @@ ht-degree: 63%
 
 >[!NOTE]
 >
->이 섹션에서는 표준 AEM 설치에서 즉시 사용할 수 있는 구성 요소에 대해서만 설명합니다.
+>이 섹션에서는 표준 AEM 설치 시 기본적으로 사용할 수 있는 구성 요소에 대해서만 설명합니다.
 >
->사용자 인스턴스에 따라 사용자 요구 사항에 맞게 명시적으로 개발된 구성 요소를 사용자 정의했을 수 있습니다. 이들은 심지어 여기서 논의되는 구성 요소 중 일부와 동일한 이름을 가질 수 있다.
+>사용자 인스턴스에 따라 사용자 요구 사항에 맞게 명시적으로 개발된 구성 요소를 사용자 정의했을 수 있습니다. 이러한 구성 요소는 여기서 설명한 구성 요소 중 일부와 이름이 같을 수도 있습니다.
 
-## 일반 사용 {#general-usage}
+## 일반 사용법 {#general-usage}
 
-구성 요소는에서 사용할 수 있습니다. **구성 요소** 다음과 같은 경우 페이지 편집기의 측면 패널에 있는 탭 [페이지 편집](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+구성 요소는 [페이지를 편집할 때](/help/sites-cloud/authoring/fundamentals/editing-content.md) 페이지 편집기의 측면 패널에 있는 **구성 요소** 탭에서 사용할 수 있습니다.
 
-구성 요소를 선택하여 페이지에서 필요한 위치로 드래그할 수 있습니다. 그런 다음 다음을 사용하여 편집할 수 있습니다.
+구성 요소를 선택한 다음 페이지에서 필요한 위치로 끌어올 수 있습니다. 그런 뒤에, 다음을 사용하여 편집할 수 있습니다.
 
 * [속성 구성](/help/sites-cloud/authoring/fundamentals/page-properties.md)
 * [콘텐츠 편집](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 * [콘텐츠 편집 - 전체 화면 모드](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-content-full-screen-mode)
 
-페이지에 구성 요소를 추가하는 방법에 대한 자세한 내용은 [페이지 컨텐츠 편집](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+페이지에 구성 요소를 추가하는 방법에 대한 자세한 내용은 [페이지 콘텐츠 편집](/help/sites-cloud/authoring/fundamentals/editing-content.md)을 참조하십시오.
 
 ## 모든 구성 요소 개요 {#overview-of-all-components}
 
@@ -43,7 +43,7 @@ ht-degree: 63%
 
 이 구성 요소는 AEM 우수 사례를 사용하여 빌드하며 AEM 작성 환경의 기반입니다. 코어 구성 요소는 특정 프로젝트 요구 사항을 충족하도록 개발자가 쉽게 확장할 수 있습니다.
 
-WCM 코어 구성 요소와 함께 다음을 사용할 수도 있습니다. [적응형 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). 이러한 핵심 구성 요소는 다음과 같은 표준 및 간편한 방법을 제공합니다. [AEM Sites 페이지에 양식 만들기 또는 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
+WCM 핵심 구성 요소와 함께 [적응형 양식 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features)를 사용할 수도 있습니다. 이러한 핵심 구성 요소는 [AEM Sites 페이지에 양식을 작성하거나 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)할 수 있는 손쉬운 표준 방법을 제공합니다
 
 ### 템플릿 구성 {#configuring-templates}
 

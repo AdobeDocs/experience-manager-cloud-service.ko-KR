@@ -5,7 +5,7 @@ exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1116'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -111,7 +111,7 @@ ht-degree: 96%
   </tr>
   <tr>
     <td>org.apache.felix.metatype<br>org.apache.felix.scr<br>org.apache.felix.scr.info<br>org.apache.felix.scr.component</td>
-    <td>Apache Felix 메타타입 및 SCR API는 더 이상 사용되지 않습니다.  대신 OSGi 메타타입 및 선언 서비스 API를 사용하십시오.</td>
+    <td>Apache Felix 메타타입 및 SCR API는 더 이상 사용되지 않습니다.  대신 OSGi 메타타입 및 선언 서비스 API를 사용합니다.</td>
     <td>5/27/21</td>
     <td>제거됨</td>
   </tr>
@@ -164,7 +164,7 @@ ht-degree: 96%
   </tr>
   <tr>
     <td>org.apache.cocoon.xml.dom<br>org.apache.cocoon.xml.sax</td>
-    <td>이 API는 더 이상 사용되지 않으며, JDK에서 제공하는 XML API로 코드를 마이그레이션합니다.</td>
+    <td>이 API는 더 이상 사용되지 않습니다. JDK에서 제공하는 XML API로 코드를 마이그레이션하십시오.</td>
     <td>1/27/2022</td>
     <td>3/24/2022</td>
   </tr>
@@ -206,7 +206,7 @@ ht-degree: 96%
   </tr>
   <tr>
     <td>com.day.cq.contentsync.handler.util</td>
-    <td>이 API는 더 이상 사용되지 않습니다. 대신 Apache Sling의 빌더를 사용하십시오.</td>
+    <td>이 API는 더 이상 사용되지 않습니다. 대신 Apache Sling의 빌더를 사용합니다.</td>
     <td>10/31/2022</td>
     <td>01/01/2023</td>
   </tr>

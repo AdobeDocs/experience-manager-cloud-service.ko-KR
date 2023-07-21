@@ -5,7 +5,7 @@ exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '835'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 84%
 
 Cloud Manager는 AEM as a Cloud Service의 필수 구성 요소이며 팀의 단일 진입점 역할을 합니다. 특별히 제작된 CI/CD 파이프라인은 철저한 테스트와 최고의 코드 품질을 보장하여 탁월한 경험을 제공합니다. 고객이 프로젝트를 빠르게 시작할 수 있도록 Cloud Manager는 클라우드 리소스 및 환경을 생성하고 git 저장소에 액세스하는 기능을 포함하여 셀프서비스 방식으로 시작하는 데 필요한 모든 기능을 제공합니다. 이러한 기능은 기업 개발 설정을 지원하므로 팀이 변경 사항을 자주 커밋하고 탁월한 디지털 경험을 신속하게 제공하며 가치 실현 시간을 단축할 수 있습니다.
 
-시스템 관리자는 클라우드 리소스 및 개발자를 생성할 개인을 포함하여 Cloud Manager 팀을 구성할 책임이 있습니다. 기업 개발 팀을 설정하고 확장하는 방법과 AEMas a Cloud Service 에서 개발 프로세스를 지원하는 방법에 대한 자세한 내용은 다음을 참조하십시오. [AEM as a Cloud Service에 대한 기업 팀 개발 설정](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md).
+시스템 관리자는 클라우드 리소스 및 개발자를 생성할 개인을 포함하여 Cloud Manager 팀을 구성할 책임이 있습니다. 기업 개발 팀을 설정하고 확장하는 방법과 AEM as a Cloud Service가 개발 프로세스를 지원하는 방법에 대한 자세한 내용은 [AEM as a Cloud Service에 대한 기업 팀 개발 설정](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)을 참조하십시오.
 
 ## Cloud Manager의 개요 페이지로 이동 {#navigate-cloud-manager}
 
@@ -23,7 +23,7 @@ Cloud Manager는 AEM as a Cloud Service의 필수 구성 요소이며 팀의 단
 
 1. Cloud Manager의 **프로그램 및 제품** 페이지에서 프로그램을 선택하여 **개요** 페이지를 시작합니다.
 
-다음 단계에 따라 Adobe Experience Cloud 홈 페이지에서 Cloud Manager의 프로그램 및 제품 페이지로 이동할 수도 있습니다.
+다음 단계에 따라 Adobe Experience Cloud 홈 페이지에서 Cloud Manager 프로그램 및 제품 페이지로 이동할 수도 있습니다.
 
 1. Adobe Experience Cloud([`https://experience.adobe.com`](https://experience.adobe.com))로 이동한 다음 Adobe ID를 사용하여 로그인합니다.
 
@@ -54,7 +54,7 @@ Cloud Manager는 AEM as a Cloud Service의 필수 구성 요소이며 팀의 단
 
 >[!NOTE]
 >
->한 사용자에게 여러 역할을 할당할 수 있습니다. 예를 들어 둘 다 할당 **비즈니스 소유자** 및 **배포 관리자** 사용자에 대한 역할은 사용자에게 이러한 권한의 합계를 제공합니다.
+>한 사용자에게 여러 역할을 할당할 수 있습니다. 예를 들어 사용자에게 **비즈니스 소유자** 및 **배포 관리자** 역할을 모두 할당하면 사용자에게 이러한 권한의 합계가 제공됩니다.
 
 ## Cloud Manager 프로그램 {#cloud-manager-programs}
 
@@ -66,12 +66,12 @@ Cloud Manager 프로그램 사용에 대해 자세히 알아보려면 이 [비�
 사용자는 **샌드박스** 또는 **프로덕션** 프로그램을 만들 수 있습니다.
 
 * **프로덕션 프로그램**&#x200B;은 미래의 적절한 시간에 라이브 트래픽을 활성화하기 위해 만들어집니다.
-   * 다음을 참조하십시오 [프로덕션 프로그램 소개](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) 을 참조하십시오.
+   * 자세한 내용은 [프로덕션 프로그램 소개](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)를 참조하십시오.
 
 * **샌드박스 프로그램**&#x200B;은 일반적으로 교육, 데모 실행, 활성화, POC 만들기 또는 문서화 목적으로 만들어집니다.
    * 라이브 트래픽을 전달하기 위한 것이 아니며 프로덕션 프로그램에는 없는 제한 사항이 있습니다.
    * 여기에는 Sites 및 Assets가 포함되며 샘플 코드, 개발 환경 및 비프로덕션 파이프라인이 포함된 git 분기가 자동으로 채워져 제공됩니다.
-   * 다음을 참조하십시오 [샌드박스 프로그램 소개](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) 을 참조하십시오.
+   * 자세한 내용은 [샌드박스 프로그램 소개](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)를 참조하십시오.
 
 ## Cloud Manager 환경 {#cloud-manager-environments}
 
@@ -83,9 +83,9 @@ Cloud Manager 프로그램 사용에 대해 자세히 알아보려면 이 [비�
 
 >[!TIP]
 >
-> 비디오 보기 [Cloud Manager 환경 Adobe 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) 사용 가능한 환경에 대한 개요입니다.
+> 사용 가능한 환경에 대한 개요는 [Adobe Cloud Manager 환경 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) 비디오를 참조하십시오.
 >
->다음을 참조하십시오 [환경 관리](/help/implementing/cloud-manager/manage-environments.md) 사용자가 만들 수 있는 환경 유형과 사용자가 환경을 만드는 방법에 대해 자세히 알아봅니다.
+>사용자가 만들 수 있는 환경 유형과 사용자가 환경을 만드는 방법에 대한 자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md)를 참조하십시오.
 
 ### AEM 제작 서비스 {#author-services}
 

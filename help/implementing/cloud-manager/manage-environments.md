@@ -163,7 +163,7 @@ Cloud Manager는 AEM as a Cloud Service 환경에 미리보기 서비스(추가 
 
    * 자세한 내용은 [IP 허용 목록 적용 및 적용 취소](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)를 참조하십시오.
 
-1. **IP 허용 목록** 업데이트 워크플로우를 사용하여 기본 IP를 제거하고 적절하게 IP를 추가합니다. 자세한 내용은 [IP 허용 목록 관리](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)를 참조하십시오.
+1. **IP 허용 목록** 업데이트 워크플로를 사용하여 기본 IP를 제거하고 적절하게 IP를 추가합니다. 자세한 내용은 [IP 허용 목록 관리](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)를 참조하십시오.
 
 미리보기 서비스에 대한 액세스가 잠금 해제된 후에는 미리보기 서비스 이름 앞의 잠금 아이콘이 더 이상 표시되지 않습니다.
 

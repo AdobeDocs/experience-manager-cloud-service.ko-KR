@@ -5,7 +5,7 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1826'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ AEM as a Cloud Service은 다음과 같은 작업을 수행하는 오케스트�
 ## 환경 {#environments}
 
 >[!NOTE]
->자세한 내용은 [배포 - 실행 모드](/help/implementing/deploying/overview.md#runmodes)
+>자세한 내용은 [배포 - 실행 모드](/help/implementing/deploying/overview.md#runmodes)를 참조하십시오.
 
 AEM as a Cloud Service는 개별 인스턴스로서 사용할 수 있게 되었으며, 이때 각 인스턴스는 전체 AEM 환경을 나타냅니다.
 
@@ -77,7 +77,7 @@ AEM as a Cloud Service에서 사용할 수 있는 환경에는 세 가지 유형
 
 * **개발 환경**: 개발자가 스테이지 및 프로덕션 환경과 동일한 런타임 조건으로 AEM 애플리케이션을 구현할 수 있도록 해 줍니다.
 
-  다음을 참조하십시오 [환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ko-kr#using-cloud-manager) 을 참조하십시오.
+  자세한 내용은 [환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager)를 참조하십시오.
 
 * **신속한 개발 환경**: 신규 또는 기존 코드 디버깅을 위한 신속한 개발 반복이 가능합니다.
 
@@ -149,7 +149,7 @@ AEM 프로그램은 다음을 포함하는 컨테이너입니다.
 
    * 블롭 스토리지는 게시, 미리보기 및 작성자 계층에 걸쳐 공유되며, 파일은 *이동*&#x200B;하지 않습니다.
 
-   * 작성자 계층에서 콘텐츠가 승인되면 이것은 해당 콘텐츠가 활성화되었음을 나타내고, 따라서 게시 계층 지속성 레이어 또는 필요한 경우 미리보기 계층에 적용됩니다. 이 작업은 미들웨어 파이프라인인 복제 서비스를 통해 수행됩니다. 이 파이프라인은 해당 파이프라인에 적용된 콘텐츠를 구독하는 개별 게시 서비스(또는 미리보기 서비스) 노드를 통해 새 콘텐츠를 수신합니다.
+   * 작성자 계층에서 콘텐츠가 승인되면 이는 해당 콘텐츠가 활성화되었음을 나타내고, 따라서 게시 계층 지속성 레이어 또는 필요한 경우 미리보기 계층에 적용됩니다. 이 작업은 미들웨어 파이프라인인 복제 서비스를 통해 수행됩니다. 이 파이프라인은 해당 파이프라인에 적용된 콘텐츠를 구독하는 개별 게시 서비스(또는 미리보기 서비스) 노드를 통해 새 콘텐츠를 수신합니다.
 
      >[!NOTE]
      >
@@ -161,7 +161,7 @@ AEM 프로그램은 다음을 포함하는 컨테이너입니다.
 
    * 게시 계층 및 미리보기 계층의 경우 Continuous Delivery Network(CDN) 서비스를 첫 번째 진입점으로 사용할 수 있습니다.
 
-* AEM as a Cloud Service의 데모 인스턴스의 경우 아키텍처는 단일 작성 노드로 간소화됩니다. 따라서 표준 개발, 스테이지 또는 프로덕션 환경의 모든 특성을 제공하지는 않습니다. 이것은 또한 일정한 다운타임이 있을 수 있고 백업/복원 작업을 지원하지 않는다는 것을 의미합니다.
+* AEM as a Cloud Service의 데모 인스턴스의 경우 아키텍처는 단일 작성 노드로 간소화됩니다. 따라서 표준 개발, 스테이지 또는 프로덕션 환경의 모든 특성을 제공하지는 않습니다. 이는 또한 일정한 다운타임이 있을 수 있고 백업/복원 작업을 지원하지 않는다는 것을 의미합니다.
 
 ## 배포 아키텍처 {#deployment-architecture}
 

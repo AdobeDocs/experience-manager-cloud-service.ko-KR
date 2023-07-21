@@ -5,7 +5,7 @@ exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '759'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -15,11 +15,11 @@ AEM as a Cloud Service 팀 및 제품 프로필이 사용 허가된 Adobe 솔루
 
 ## 제품 프로필 {#profiles}
 
-사용자에게 특정 Adobe 솔루션에 대한 액세스 권한을 부여할 때 반드시 전체 액세스 권한을 부여할 필요는 없습니다. 제품 프로필을 사용하면 각 솔루션이 고유한 사용자 권한 집합을 가질 수 있습니다. 다음을 통해 사용 및 액세스할 수 있습니다. [Admin Console](/help/journey-onboarding/admin-console.md).
+사용자에게 특정 Adobe 솔루션에 대한 액세스 권한을 부여할 때 반드시 전체 액세스 권한을 부여할 필요는 없습니다. 제품 프로필을 사용하면 각 솔루션이 고유한 사용자 권한 집합을 가질 수 있습니다. [Admin Console](/help/journey-onboarding/admin-console.md)을 통해 사용하고 액세스할 수 있습니다.
 
 ## AEM as a Cloud Service 제품 프로필 {#aem-product-profiles}
 
-AEM as a Cloud Service는 AEM as a Service를 제공하는 완전한 클라우드 네이티브 제품입니다. 항상 켜짐, 항상 최신 상태, 항상 보안, 항상 규모에 맞게 확장과 같은 새로운 속성을 사용하여 클라우드 네이티브 방식으로 AEM을 제공합니다. 동시에 AEM이 고객에게 사용자 정의 플랫폼으로 제공하는 주요 가치 제안을 유지하고 기업 팀이 개발 및 게재 절차에 통합할 수 있도록 지원합니다. 다음을 참조하십시오 [Adobe Experience Manager as a Cloud Service 소개](/help/overview/introduction.md) AEM as a Cloud Service에 대해 자세히 알아보십시오.
+AEM as a Cloud Service는 AEM as a Service를 제공하는 완전한 클라우드 네이티브 제품입니다. 항상 켜짐, 항상 최신 상태, 항상 보안, 항상 규모에 맞게 확장과 같은 새로운 속성을 사용하여 클라우드 네이티브 방식으로 AEM을 제공합니다. 동시에 AEM이 고객에게 사용자 정의 플랫폼으로 제공하는 주요 가치 제안을 유지하고 기업 팀이 개발 및 게재 절차에 통합할 수 있도록 지원합니다. AEM as a Cloud에 대해 자세히 알아보려면 [Adobe Experience Manager as a Cloud Service 소개](/help/overview/introduction.md)를 참조하십시오.
 
 AEM as a Cloud Service 팀원은 온보딩 중 Admin Console을 통해 다음 제품 프로필 중 하나 이상에 추가 및 할당됩니다.
 
@@ -41,8 +41,8 @@ AEM as a Cloud Service 팀원은 온보딩 중 Admin Console을 통해 다음 �
 
 >[!TIP]
 >
->* AEM 제품 프로필에 대한 자세한 내용은 [AEM 제품 프로필 할당](/help/journey-onboarding/assign-profiles-aem.md).
->* 온보딩 프로세스에 대한 자세한 내용은 [온보딩 여정](/help/journey-onboarding/overview.md).
+>* AEM 제품 프로필에 대한 자세한 내용은 [AEM 제품 프로필 할당](/help/journey-onboarding/assign-profiles-aem.md) 문서를 참조하십시오.
+>* 온보딩 프로세스에 대한 자세한 내용은 [온보딩 여정](/help/journey-onboarding/overview.md)을 참조하십시오.
 
 ## Cloud Manager 제품 프로필 {#cloud-manager-product-profiles}
 
@@ -50,7 +50,7 @@ Cloud Manager에는 역할 기반 권한으로 생각할 수 있는 사전 구�
 
 >[!TIP]
 >
->다음을 참조하십시오 [Cloud Manager의 역할 기반 권한](/help/onboarding/cloud-manager-introduction.md#role-based-permissions) 을 참조하십시오.
+>자세한 내용은 [Cloud Manager의 역할 기반 권한](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)을 참조하십시오.
 
 각 제품 프로필에는 연결된 특정 권한이 있습니다.
 
@@ -73,5 +73,5 @@ Cloud Manager 팀에는 최소한 다음 역할이 포함됩니다.
 
 >[!TIP]
 >
->* Cloud Manager 제품 프로필에 대한 자세한 내용은 [Cloud Manager 제품 프로필에 팀원 할당](/help/journey-onboarding/assign-profiles-cloud-manager.md).
->* 온보딩 프로세스에 대한 자세한 내용은 [온보딩 여정](/help/journey-onboarding/overview.md).
+>* Cloud Manager 제품 프로필에 대한 자세한 내용은 [Cloud Manager 제품 프로필에 팀원 할당](/help/journey-onboarding/assign-profiles-cloud-manager.md)을 참조하십시오.
+>* 온보딩 프로세스에 대한 자세한 내용은 [온보딩 여정](/help/journey-onboarding/overview.md)을 참조하십시오.

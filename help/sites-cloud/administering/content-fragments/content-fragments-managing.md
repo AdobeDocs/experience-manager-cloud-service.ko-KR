@@ -7,7 +7,7 @@ exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '2052'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 94%
 1. **새 콘텐츠 조각** 대화 상자가 열리면 여기에서 다음을 지정할 수 있습니다.
 
    * **위치** - 현재 위치로 자동 완성되지만 필요한 경우 다른 위치를 선택할 수 있음
-   * **콘텐츠 조각 모델** - 드롭다운 목록에서 조각의 기반으로 사용할 모델을 선택합니다.
+   * **콘텐츠 조각 모델** - 드롭다운 목록에서 조각 기반으로 사용할 모델을 선택합니다.
    * **제목**
    * **이름** - **제목**&#x200B;을 기반으로 자동 완성되지만 필요한 경우 편집할 수 있음
    * **설명**
@@ -196,11 +196,11 @@ This updates any page references and ensures that the Dispatcher is flushed as r
   >
   >이 작업은 변경 내용을 저장하는 것 이외에도 모든 참조도 업데이트하며 필요에 따라 Dispatcher를 플러시합니다. 이러한 변경 사항은 처리에 시간이 걸릴 수 있습니다. 이로 인해 대형/복합/부하가 큰 시스템의 성능에 영향이 있을 수 있습니다.
   >
-  >을 사용할 때 이 프로세스 시간을 염두에 두십시오 **저장 및 닫기**&#x200B;를 클릭한 다음 조각 편집기를 빠르게 다시 입력하여 추가 변경 작업을 수행하고 저장합니다.
+  >**저장 및 닫기**&#x200B;를 사용한 다음, 조각 편집기로 빠르게 다시 들어가 이후 변경 내용을 적용하고 저장할 때 이 프로세스 시간을 염두에 두십시오.
 
 * **닫기**
 
-  마지막 변경 내용(즉, 마지막 이후 변경 내용)을 저장하지 않고 편집기를 종료합니다. **저장**).
+  마지막 변경 내용(마지막 **저장** 이후에 적용된 변경 내용)을 저장하지 않고 편집기를 종료합니다.
 
 콘텐츠 조각을 편집하는 동안 AEM은 자동으로 버전을 만들어 변경 내용을 취소한 경우(저장하지 않고 **닫기** 사용) 이전 콘텐츠를 복원할 수 있도록 합니다.
 
@@ -231,7 +231,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## 조각과 콘텐츠 연결 {#associating-content-with-your-fragment}
 
-조각과 [콘텐츠를 연결](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)할 수도 있습니다. 이렇게 하면 조각이 컨텐츠 페이지에 추가될 때 자산(즉, 이미지)을 조각과 함께 필요에 따라 사용할 수 있도록 연결을 제공합니다.
+조각과 [콘텐츠를 연결](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)할 수도 있습니다. 이렇게 하면 조각이 콘텐츠 페이지에 추가될 때 자산(예: 이미지)을 조각과 함께 필요에 따라 사용할 수 있도록 연결을 제공합니다.
 
 ## 조각의 메타데이터(속성) 보기 및 편집 {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
@@ -251,7 +251,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
   >[!NOTE]
   >
-  환경 미리보기에 대한 자세한 내용은 다음을 참조하십시오.
+  미리보기 환경에 대한 자세한 내용은 다음을 참조하십시오.
   >
   * [환경 관리](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
   * [미리보기 계층을 위한 OSGi 설정 구성](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)

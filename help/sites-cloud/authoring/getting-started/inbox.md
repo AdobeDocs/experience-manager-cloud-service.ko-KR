@@ -5,7 +5,7 @@ exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 91%
 
 ## 헤더의 받은 편지함 {#inbox-in-the-header}
 
-어떤 콘솔에서든 헤더에는 받은 편지함의 현재 알림 수가 표시됩니다. 표시기를 열어서 작업이 필요한 페이지에 빨리 액세스하거나 받은 편지함에 액세스할 수도 있습니다.
+어떤 콘솔에서든 헤더에는 받은 편지함의 현재 알림 수가 표시됩니다. 표시기를 열어서 작업이 필요한 페이지에 바로 가거나 받은 편지함에 액세스할 수도 있습니다.
 
 ![헤더의 받은 편지함 개요](/help/sites-cloud/authoring/assets/inbox-header.png)
 
@@ -48,7 +48,7 @@ AEM 알림 받은 편지함 열기
 1. 도구 모음에서 표시기를 클릭/탭합니다.
 
 1. **모두 보기**&#x200B;를 선택합니다. **AEM 받은 편지함**&#x200B;이 열립니다. 받은 편지함은 워크플로, 프로젝트 및 작업의 항목을 표시합니다.
-1. The default view is [List View](#inbox-list-view), but you can also switch to [Calendar View](#inbox-calendar-view). This is done with the view selector (toolbar, top right).
+1. 기본 보기는 [목록 보기](#inbox-list-view)이나 [캘린더 보기](#inbox-calendar-view)로 전환할 수 있습니다. 이 작업은 보기 선택기(도구 모음, 오른쪽 상단))에서 수행됩니다.
 
    두 보기 모두에 대해 [보기 설정](#inbox-view-settings)을 정의할 수 있습니다. 사용 가능한 옵션은 현재 보기에 따라 다릅니다.
 
@@ -102,7 +102,7 @@ AEM 알림 받은 편지함 열기
 
   ![받은 편지함 목록 보기 설정](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-  다른 사용자에게 달력을 위임하고, 다른 사용자의 위임을 요청하고, 위임을 관리할 수도 있습니다.
+  다른 사용자에게 캘린더를 위임하고, 다른 사용자로부터의 위임을 요청하고 위임을 관리할 수도 있습니다.
 
   ![받은 편지함 목록 보기 위임 설정](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
@@ -136,11 +136,11 @@ AEM 알림 받은 편지함 열기
    >
    >* 워크플로 항목 - [워크플로에 참여](/help/sites-cloud/authoring/workflows/participating.md)
 
-2. 선택한 항목에 따라 작업이 시작됩니다. 예를 들면 다음과 같습니다.
+2. 선택한 항목에 따라 작업이 시작되며 예를 들면 다음과 같습니다.
 
-   * 작업에 해당하는 대화 상자가 열립니다
-   * 작업 마법사가 시작됩니다
-   * 문서 페이지가 열립니다
+   * 작업에 해당하는 대화 상자가 열림
+   * 작업 마법사가 시작됨
+   * 설명서 페이지가 열림
 
    예를 들어 **위임**&#x200B;은 다음과 같은 대화 상자가 열립니다.
 
