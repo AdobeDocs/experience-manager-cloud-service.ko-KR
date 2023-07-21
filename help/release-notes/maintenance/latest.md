@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 39b2afda66e3bcb7db8ae63a2d0dcd27014ce377
+source-git-commit: 704f4e250975d8c0cbcfdc5e49b9c03d3a3e2939
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 77%
+source-wordcount: '190'
+ht-degree: 73%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 77%
 
 ### 알려진 문제 {#known-issues-12790}
 
-없음.
+- GRANITE-46601 - jdk 11.0.20에서 SDK 빠른 시작을 시작하지 못했습니다. `-Djdk.util.zip.disableZip64ExtraFieldValidation=true` java 옵션
 
 ### 임베드된 기술 {#embedded-tech-12790}
 
