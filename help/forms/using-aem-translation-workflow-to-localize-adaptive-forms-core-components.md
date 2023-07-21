@@ -2,9 +2,9 @@
 title: 적응형 양식 기반의 핵심 구성 요소 번역
 description: 기계 번역 또는 사람 번역을 사용하여 적응형 양식 기반의 핵심 구성 요소 번역
 feature: Adaptive Forms
-source-git-commit: a33b380570210a32f4a4a1f26c9a2fe37c885bb1
+source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '882'
 ht-degree: 4%
 
 ---
@@ -71,7 +71,7 @@ ht-degree: 4%
 1. 의 맨 아래에서 **요약** 타일에서 **생략 부호**. 번역 프로젝트 속성 화면이 열립니다.
 1. 를 엽니다. **[!UICONTROL 고급]** 맨 위에 있는 탭 **번역 프로젝트 속성** 화면. 의 경우 **[!UICONTROL 번역 필드]**, 선택 **[!UICONTROL 사람 번역]**. 클릭 **저장 및 닫기** 화면 맨 위에 있습니다.
 1. 다음에서 **번역 작업** 타일에서 ![aem62forms_downarrow](assets/aem62forms_downarrow.png) 아이콘 및 클릭 **내보내기**. 내보내기 대화 상자에서 내보낸 파일 다운로드 옵션을 클릭합니다. .zip 파일을 다운로드합니다.
-   ![](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
+   ![번역 파일 내보내기](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
 1. 다운로드한 .zip 파일의 압축을 풉니다. 추출된 폴더에는 두 개의 파일이 있습니다.
    * translation_export_summary.xml
    * [form-fields-file].xml.
@@ -79,6 +79,6 @@ ht-degree: 4%
 1. translation_export_summary.xml 파일을 압축하고 [form-fields-file].xml.
 1. 다음에서 **번역 작업** 타일에서 ![aem62forms_downarrow](assets/aem62forms_downarrow.png) 아이콘 및 클릭 **가져오기**. 다음을 포함한 아카이브 선택 [form-fields-file].xml. (양식 필드에 대한 현지화된 문자열 및 메시지 포함)
 
-   ![](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
+   ![번역 파일 가져오기](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
 1. 현지화된 양식을 미리 보려면 AEM Forms UI에서 현지화된 양식을 선택합니다. 클릭 **[!UICONTROL 미리 보기]** >**[!UICONTROL HTML으로 미리 보기]**. 을(를) 추가한 후 양식 다시 열기 `afAcceptLang=<locale code>` 를 입력합니다. 예: 추가 `afAcceptLang=de`독일어 버전의 양식을 엽니다.

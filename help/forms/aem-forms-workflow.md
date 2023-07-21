@@ -8,9 +8,9 @@ topic-tags: publish, document_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
 workflow-type: tm+mt
-source-wordcount: '2360'
+source-wordcount: '2362'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # OSGi의 Forms 중심 워크플로우{#forms-centric-workflow-on-osgi}
 
-![](do-not-localize/header.png)
+![영웅 이미지](do-not-localize/header.png)
 
 기업은 수백, 수천 개의 양식, 다양한 백엔드 시스템, 온라인 또는 오프라인 데이터 소스에서 데이터를 수집합니다. 또한 반복적인 검토 및 승인 프로세스를 포함하는 데이터에 대한 결정을 내리는 동적 사용자 집합이 있습니다.
 
@@ -273,4 +273,4 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 
 ### 워크플로 인스턴스 제거 {#purge-workflow-instances}
 
-워크플로 인스턴스 수를 최소화하면 워크플로 엔진의 성능이 향상되므로 완료되었거나 실행 중인 워크플로 인스턴스를 저장소에서 정기적으로 제거할 수 있습니다. 자세한 내용은, [정기적인 워크플로 인스턴스 제거](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html) 워크플로 인스턴스 삭제
+워크플로 인스턴스 수를 최소화하면 워크플로 엔진의 성능이 향상되므로 완료되었거나 실행 중인 워크플로 인스턴스를 저장소에서 정기적으로 제거할 수 있습니다. 자세한 내용은, [정기적인 워크플로 인스턴스 제거](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html?lang=ko-KR) 워크플로 인스턴스 삭제

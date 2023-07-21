@@ -4,9 +4,9 @@ description: 용 Adobe Acrobat Sign을 구성하는 방법 알아보기 [!DNL AE
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
 workflow-type: tm+mt
-source-wordcount: '1939'
+source-wordcount: '1943'
 ht-degree: 31%
 
 ---
@@ -123,7 +123,7 @@ AEM Forms과 Adobe Acrobat Sign Solutions for Government를 연결하는 것은 
 * Adobe Sign 팀으로부터 자격 증명 받기
 * 수신한 자격 증명을 사용하여 AEM Forms과 Adobe Acrobat Sign Solutions for Government 연결
 
-![](/help/forms/assets/adobe-acrobat-sign-govt-workflow.png)
+![Adobe Sign 정부 워크플로](/help/forms/assets/adobe-acrobat-sign-govt-workflow.png)
 
 
 AEM Forms은 개발, 스테이지 및 프로덕션 환경을 as a Cloud Service으로 제공합니다. 의 개발 환경을 Adobe Acrobat Sign Solutions for Government와 연결하는 것으로 시작하고 나중에 스테이지와 프로덕션 환경을 연결할 수 있습니다.

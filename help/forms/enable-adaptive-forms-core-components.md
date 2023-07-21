@@ -6,10 +6,10 @@ seo-description: Learn how to enable Adaptive Forms Core Components on AEM Forms
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
 workflow-type: tm+mt
-source-wordcount: '1016'
-ht-degree: 94%
+source-wordcount: '1023'
+ht-degree: 93%
 
 ---
 
@@ -32,7 +32,7 @@ AEM Forms as a Cloud Service에서 적응형 양식 핵심 구성 요소를 활�
 AEM Forms as a Cloud Service 환경에 맞게 적응형 양식 핵심 구성 요소와 Headless 적응형 양식을 활성화하려면 나열된 순서대로 다음 단계를 수행하십시오.
 
 
-![](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
+![핵심 구성 요소 및 Headless 적응형 양식 활성화](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
 
 ## 1. AEM Forms as a Cloud Service Git 저장소 복제 {#clone-git-repository}
