@@ -2,12 +2,13 @@
 title: 콘텐츠 복사 도구
 description: 컨텐츠 복사 도구를 사용하면 사용자가 필요에 따라 변화하는 컨텐츠를 AEM의 프로덕션 환경에서 테스트 목적으로 낮은 환경으로 as a Cloud Service으로 복사할 수 있습니다.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: f08048b2378b150210a3fd1168206f4efb0c4f8e
+source-git-commit: f579539d582e2059fca20f9f7e5e82f4ae24c833
 workflow-type: tm+mt
-source-wordcount: '1203'
-ht-degree: 41%
+source-wordcount: '1308'
+ht-degree: 38%
 
 ---
+
 
 # 콘텐츠 복사 도구 {#content-copy}
 
@@ -41,11 +42,13 @@ ht-degree: 41%
 | [콘텐츠 세트](#create-content-set) 만들기 및 수정 | 필수 | 필요 없음 |
 | [콘텐츠 복사 프로세스](#copy-content) 시작 또는 취소 | 필수 | 필수 |
 
+권한 및 권한 설정 방법에 대한 자세한 내용은 문서를 참조하십시오 [AEM as a Cloud Service 팀 및 제품 프로필.](/help/onboarding/aem-cs-team-product-profiles.md)
+
 ## 콘텐츠 세트 만들기 {#create-content-set}
 
 콘텐츠를 복사하려면 먼저 콘텐츠 세트를 정의해야 합니다. 정의된 콘텐츠 세트를 재사용하여 콘텐츠를 복사할 수 있습니다. 콘텐츠 세트를 만들 수 있도록 다음 단계를 수행합니다.
 
-1. 에서 Cloud Manager에 로그온 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 적절한 조직과 프로그램을 선택합니다.
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그온한 다음 적절한 조직과 프로그램을 선택합니다.
 
 1. **개요** 페이지에서 **환경** 화면으로 이동합니다.
 
@@ -174,6 +177,16 @@ ht-degree: 41%
 >콘텐츠 복사 작업을 취소하면 대상 환경에 콘텐츠가 부분적으로 복사될 수 있습니다. 이 경우 대상 환경을 사용할 수 없는 상태로 둘 수 있습니다.
 >
 >취소로 인해 환경이 이러한 상태에 있는 경우 Adobe 고객 지원 센터에 문의하십시오.
+
+### 로그 액세스 {#accessing-logs}
+
+완료된 콘텐츠 복사 프로세스에 대해 소스 및 대상 환경의 로그를 모두 확인할 수 있습니다.
+
+이렇게 하려면 **콘텐츠 복사 활동** 페이지에서 **로그** 작업 - 복사 프로세스의 줄임표 메뉴에서 로그를 검토한 다음 환경을 선택합니다.
+
+![콘텐츠 복사 프로세스를 위해 로그 액세스](assets/copy-content-logs.png)
+
+로그는 로컬 시스템으로 다운로드됩니다. 다운로드가 시작되지 않는 경우 팝업 차단 설정을 확인하십시오.
 
 ## 제한 사항 {#limitations}
 
