@@ -120,7 +120,7 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
-이는 [Sling 리소스 합병](/help/implementing/developing/introduction/overlays.md)을 통해 [오버레이](/help/implementing/developing/introduction/sling-resource-merger.md)를 사용합니다.
+>이는 [Sling 리소스 합병](/help/implementing/developing/introduction/overlays.md)을 통해 [오버레이](/help/implementing/developing/introduction/sling-resource-merger.md)를 사용합니다.
 
 구성 요소가 구성되면 페이지 작성자가 구성한 스타일이 AEM을 통해 데코레이션 요소에 자동으로 삽입됩니다. AEM은 이러한 스타일을 편집 가능한 모든 구성 요소에 자동으로 래핑합니다. 구성 요소 자체는 이를 위해 어떤 작업도 수행할 필요가 없습니다.
 
@@ -134,11 +134,11 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
-이는 [Sling 리소스 합병](/help/implementing/developing/introduction/overlays.md)을 통해 [오버레이](/help/implementing/developing/introduction/sling-resource-merger.md)를 사용합니다.
+>이는 [Sling 리소스 합병](/help/implementing/developing/introduction/overlays.md)을 통해 [오버레이](/help/implementing/developing/introduction/sling-resource-merger.md)를 사용합니다.
 
 >[!NOTE]
 >
-편집 대화 상자의 스타일 탭은 기본적으로 활성화되어 있지 않습니다.
+>편집 대화 상자의 스타일 탭은 기본적으로 활성화되어 있지 않습니다.
 
 ### 요소 이름을 갖는 스타일 {#styles-with-element-names}
 
@@ -150,11 +150,11 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 
 >[!CAUTION]
 >
-결합할 수 있는 스타일에 대해서는 요소 이름을 정의하지 마십시오. 여러 요소 이름이 정의된 경우 우선 순위 순서는 다음과 같습니다.
+>결합할 수 있는 스타일에 대해서는 요소 이름을 정의하지 마십시오. 여러 요소 이름이 정의된 경우 우선 순위 순서는 다음과 같습니다.
 >
-1. HTL이 모든 것에 우선합니다. `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
-1. 그런 다음 여러 활성 스타일 중에서 구성 요소의 정책에 구성된 스타일 목록의 첫 번째 스타일이 적용됩니다.
-1. 마지막으로 구성 요소의 `cq:htmlTag`/ `cq:tagName`은 폴백 값으로 간주됩니다.
+>1. HTL이 모든 것에 우선합니다. `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
+>1. 그런 다음 여러 활성 스타일 중에서 구성 요소의 정책에 구성된 스타일 목록의 첫 번째 스타일이 적용됩니다.
+>1. 마지막으로 구성 요소의 `cq:htmlTag`/ `cq:tagName`은 폴백 값으로 간주됩니다.
 >
 
 스타일 이름을 정의하는 기능은 레이아웃 컨테이너 또는 콘텐츠 조각 구성 요소와 같은 일반적인 구성 요소에 추가적인 의미를 제공할 때 유용합니다.
