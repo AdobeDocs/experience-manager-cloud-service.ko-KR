@@ -2,12 +2,13 @@
 title: Universal Editor로 콘텐츠 작성
 description: 콘텐츠 작성자가 Universal Editor를 사용하여 얼마나 쉽고 직관적으로 콘텐츠를 만들 수 있는지 알아봅니다.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 05554f397a843ede5a723b206b6e0748e2d6ba96
+source-git-commit: 481202760e0d22cde9c32e0b781dc99f67d463e4
 workflow-type: tm+mt
-source-wordcount: '1682'
-ht-degree: 55%
+source-wordcount: '1939'
+ht-degree: 44%
 
 ---
+
 
 # Universal Editor로 콘텐츠 작성 {#authoring}
 
@@ -141,7 +142,7 @@ Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바�
 
 #### 앱 미리보기 열기 {#open-app-preview}
 
-앱 미리보기 열기 아이콘을 탭하거나 클릭하면 현재 편집 중인 페이지가 자체 브라우저에서 열려 편집기 없이 변경 사항을 미리 볼 수 있습니다.
+편집기에서 벗어나 앱 미리 보기 열기 아이콘을 탭하거나 클릭하여 현재 편집 중인 페이지를 자체 브라우저 탭에서 열어 콘텐츠를 미리 볼 수 있습니다.
 
 ![앱 미리보기 열기](assets/open-app-preview.png)
 
@@ -177,9 +178,12 @@ Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바�
 
 #### 텍스트 모드 {#text-mode}
 
-텍스트 모드에서는 페이지가 편집기에서 렌더링되지만 콘텐츠 작성자는 를 클릭하여 편집할 텍스트 콘텐츠를 선택할 수 있습니다. 페이지가 로드될 때 편집기의 기본 모드입니다.
+텍스트 모드에서 콘텐츠 작성자는 클릭하여 텍스트 콘텐츠를 선택할 수 있습니다.
 
 ![텍스트 모드](assets/text-mode.png)
+
+* 다음을 수행할 수 있습니다. [일반 텍스트 편집](#editing-content) 제자리에.
+* 다음을 수행할 수도 있습니다. [리치 텍스트 편집](#editing-rich-text) 구성 요소 레일에 표시되는 추가적인 서식 옵션과 함께 배치됩니다.
 
 >[!TIP]
 >
@@ -187,9 +191,11 @@ Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바�
 
 #### 미디어 모드 {#media-mode}
 
-미디어 모드에서 페이지는 편집기에서 렌더링되지만 콘텐츠 작성자는 클릭하여 편집할 미디어 콘텐츠를 선택할 수 있습니다.
+미디어 모드에서 콘텐츠 작성자는 클릭하여 미디어 콘텐츠를 선택할 수 있습니다.
 
 ![미디어 모드](assets/media-mode.png)
+
+콘텐츠 세부 사항은 구성 요소 레일에 표시되며 작성자는 [미디어 콘텐츠를 편집합니다.](#editing-media)
 
 >[!TIP]
 >
@@ -197,11 +203,11 @@ Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바�
 
 #### 구성 요소 모드 {#component-mode}
 
-구성 요소 모드에서 페이지는 편집기에서 렌더링되지만 콘텐츠 작성자는 를 클릭하여 페이지 구성 요소를 선택할 수 있습니다.
+구성 요소 모드에서 콘텐츠 작성자는 클릭하여 선택할 수 있습니다. [컨텐츠 조각.](/help/assets/content-fragments/content-fragments.md)
 
 ![구성 요소 모드](assets/component-mode.png)
 
-콘텐츠 조각을 선택하면 해당 조각의 세부 사항이 [구성 요소 레일.](#component-rail)
+콘텐츠 조각을 선택하면 그 세부 정보가 구성 요소 레일에 표시되어 다음과 같은 작업을 수행할 수 있습니다 [콘텐츠 조각을 편집합니다.](#edit-content-fragment)
 
 >[!TIP]
 >
@@ -209,11 +215,13 @@ Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바�
 
 #### 편집 {#edit}
 
-다음 시기 [구성 요소 모드,](#component-mode) 콘텐츠 조각을 선택하면 편집 옵션이 모드 레일에 나타납니다.
+다음 시기 [구성 요소 모드,](#component-mode) 을(를) 선택하는 경우 [컨텐츠 조각,](/help/assets/content-fragments/content-fragments.md) 편집 옵션이 모드 레일에 나타납니다.
 
 ![편집 아이콘](assets/edit.png)
 
-편집 버튼을 탭하거나 클릭하면 새 탭에서 콘텐츠 조각 편집기가 열리고, 범용 편집기 내에서 참조된 콘텐츠와 텍스트 및 미디어 콘텐츠를 편집할 수 있습니다.
+편집 버튼을 탭하거나 클릭하면 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) 새 탭에서 콘텐츠 조각 편집기의 전체 기능에 액세스할 수 있습니다.
+
+콘텐츠 조각의 세부 사항을 편집할 수도 있습니다. [구성 요소 레일](#edit-content-fragment) 워크플로우의 요구 사항에 따라 다릅니다.
 
 >[!TIP]
 >
@@ -223,7 +231,7 @@ Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바�
 
 편집기는 창의 대부분을 차지하며 페이지가 지정된 위치입니다. [위치 표시줄](#location-bar) 렌더링됩니다.
 
-* 편집기가 다음과 같은 편집 모드에 있는 경우 [텍스트 모드](#text-mode) 또는 [미디어 모드,](#media-mode) 콘텐츠를 편집할 수 있으며 링크를 따라갈 수 없습니다.
+* 편집기가 다음과 같은 편집 모드에 있는 경우 [텍스트 모드](#text-mode) 또는 [미디어 모드,](#media-mode) 컨텐츠는 편집할 수 있지만 링크를 따라갈 수는 없습니다.
 * 편집기가 인 경우 [미리 보기 모드,](#preview-mode) 콘텐츠를 탐색할 수 있고 링크를 따라갈 수 있지만 콘텐츠를 편집할 수는 없습니다.
 
 ![편집기](assets/editor.png)
@@ -240,11 +248,11 @@ Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바�
 
 ![속성 모드](assets/properties-mode.png)
 
-선택한 구성 요소에 대한 세부 정보가 레일에 표시됩니다. 다음을 사용하여 콘텐츠 조각을 선택한 경우 [구성 요소 모드,](#component-mode) 구성 요소 레일에서 설정을 수정할 수 있습니다. 변경 사항은 범용 편집기에 의해 자동으로 저장됩니다.
+선택한 구성 요소 유형에 따라 세부 정보가 속성 레일에 표시되고 수정될 수 있습니다.
 
 ![구성 요소 세부 정보](assets/component-details.png)
 
-일부 구성 요소에 표시할 수 있는 세부 정보가 있는 것은 아닙니다.
+모든 구성 요소에 표시 및/또는 편집할 수 있는 세부 정보가 있는 것은 아닙니다.
 
 >[!TIP]
 >
@@ -271,17 +279,59 @@ Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바�
 
 ![편집 가능한 콘텐츠는 파란색 상자로 강조 표시됩니다](assets/editable-content.png)
 
-파란색 상자에 있는 콘텐츠를 탭하거나 클릭하면 바로 편집기를 시작하여 변경할 수 있습니다. 변경 사항은 자동으로 저장됩니다.
+편집 모드에서 콘텐츠를 탭하거나 클릭하면 편집할 콘텐츠가 선택됩니다. 링크를 이용하여 콘텐츠를 탐색하려면 [미리보기 모드](#preview-mode)로 전환합니다.
+
+에 따라 [모드](#mode-rail) 에서 선택한 컨텐츠를 편집하는 동안 즉석 편집 옵션이 다를 수 있으며, 를 사용하여 컨텐츠에 대한 추가 속성을 검토할 수 있습니다. [구성 요소 레일.](#component-rail)
+
+### 일반 텍스트 편집 {#edit-plain-text}
+
+에 있는 경우 [텍스트 모드](#text-mode) 일반 텍스트 구성 요소를 선택하면 텍스트를 바로 편집할 수 있습니다.
 
 ![콘텐츠 편집](assets/editing-content.png)
 
-편집 모드에서 콘텐츠를 탭하거나 클릭하면 편집할 콘텐츠가 선택됩니다. 링크를 이용하여 콘텐츠를 탐색하려면 [미리보기 모드](#preview-mode)로 전환합니다.
+단순히 입력하여 콘텐츠를 업데이트합니다. Enter/Return 키를 누르거나 텍스트 상자 외부를 탭하거나 클릭하여 변경 내용을 저장합니다.
 
-에 따라 [모드](#mode-rail) 을(를) 진행 중이고 선택한 컨텐츠를 선택한 경우 즉석 편집 옵션이 다를 수 있습니다.
+### 리치 텍스트 편집 {#edit-rich-text}
 
-또한 를 사용하여 콘텐츠에 대한 추가 속성을 검토할 수 있습니다. [구성 요소 레일.](#component-rail) 예를 들어 서식 있는 텍스트 구성 요소를 선택하는 경우 구성 요소 레일에서 서식 옵션을 편집할 수 있습니다.
+에 있는 경우 [텍스트 모드](#text-mode) 서식 있는 텍스트 구성 요소를 선택하면 텍스트를 바로 편집할 수 있습니다.
+
+단순히 입력하여 콘텐츠를 업데이트합니다. Enter/Return 키를 누르거나 텍스트 상자 외부를 탭하거나 클릭하여 변경 내용을 저장합니다.
+
+또한 서식 옵션 및 텍스트에 대한 세부 사항은 구성 요소 레일에서 사용할 수 있습니다.
 
 ![리치 텍스트 구성 요소 편집](assets/rich-text-editing.png)
+
+서식 변경 사항은 콘텐츠에 자동으로 저장됩니다.
+
+### 미디어 편집 {#edit-media}
+
+에 있는 경우 [미디어 모드](#media-mode) 이미지를 선택하면 구성 요소 레일에서 세부 정보를 볼 수 있습니다.
+
+![미디어 편집](assets/ue-edit-media.png)
+
+을(를) 탭하거나 클릭합니다 **바꾸기** 구성 요소 레일에서 선택한 이미지의 미리 보기 아래에 있는 단추를 클릭하여 이미지를 자산 라이브러리의 다른 이미지로 바꿉니다.
+
+1. 다음 [자산 선택기](/help/assets/asset-selector.md#using-asset-selector) 자산을 선택할 수 있는 창이 열립니다.
+1. 탭하거나 클릭하여 새 자산을 선택합니다.
+1. 탭 또는 클릭 **선택** 에셋이 교체된 구성 요소 레일로 돌아갑니다.
+
+변경 사항은 콘텐츠에 자동으로 저장됩니다.
+
+>[!TIP]
+>
+>단축키 사용 `R` 에셋 선택기를 열어 선택한 이미지를 바꿉니다.
+
+### 컨텐츠 조각 편집 {#edit-content-fragment}
+
+에 있는 경우 [구성 요소 모드](#component-mode) 다음 중 하나를 선택합니다. [컨텐츠 조각,](/help/assets/content-fragments/content-fragments.md) 구성 요소 레일에서 세부 사항을 편집할 수 있습니다.
+
+![컨텐츠 조각 편집](assets/ue-edit-cf.png)
+
+선택한 콘텐츠 조각의 콘텐츠 모델에 정의된 필드가 구성 요소 레일에 표시되고 편집할 수 있습니다.
+
+변경 사항은 콘텐츠에 자동으로 저장됩니다.
+
+에서 콘텐츠 조각을 편집하려면 다음을 수행하십시오. [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) 대신 [편집 단추](#edit) 모드 레일에서 을 클릭합니다.
 
 ## 콘텐츠 미리보기 {#previewing-content}
 
