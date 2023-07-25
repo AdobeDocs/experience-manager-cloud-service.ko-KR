@@ -10,17 +10,19 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 115f8dfc8d3ba025f1e815bb8ae87cfb8a513e65
+source-git-commit: 07e0e7c14ac6bac04542a34d50e67b3b846281b8
 workflow-type: tm+mt
 source-wordcount: '1513'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 # 적응형 Forms에서 CAPTCHA 사용{#using-captcha-in-adaptive-forms}
 
-| 버전 | 문서 링크 | | -------- | ---------------------------- | | AEM 6.5 |    [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html)                  | | AEM AS A CLOUD SERVICE | 이 문서 |
-=======
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html) |
+| AEM as a Cloud Service | 이 문서 |
 
 <span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
 
