@@ -2,14 +2,16 @@
 title: 각주 지원
 description: 각주에 대한 RTE 지원.
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 0%
+source-wordcount: '426'
+ht-degree: 1%
 
 ---
 
 # 각주 구성 요소 {#footnotecomponent}
+
+<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
 
 **[!UICONTROL 각주]** 는 페이지 끝에 표시되는 정보 또는 참고의 추가 비트입니다. [!UICONTROL 각주] 는 숫자로 텍스트에 표시된 메모를 위 첨자로 구성합니다.
 
@@ -44,13 +46,11 @@ ht-degree: 0%
    >* 각주에 자동으로 번호가 지정되며 적응형 양식에 작성된 방식으로 표시됩니다.
    >* 중복된 각주가 있으면 모든 중복된 각주에 대해 숫자가 동일합니다.
 
-
 1. 구성 요소 브라우저에서 **[!UICONTROL 각주 플레이스홀더]** 구성 요소를 적응형 양식에 추가합니다.
    >[!NOTE]
    >
    >* 게시 인스턴스에서 각주는 다음 위치에 표시됩니다. **[!UICONTROL 각주 플레이스홀더]** 구성 요소가 적응형 양식에 배치됩니다.
    >* 다른 패널 사이를 탐색할 때 화면에 표시되는 각주만 **[!UICONTROL 각주 플레이스홀더]** 탐색 패널에 표시됩니다.
-
 
 1. 속성을 저장합니다.
 

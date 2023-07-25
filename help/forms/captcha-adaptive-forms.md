@@ -10,14 +10,16 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 63f6e7c6df7404062aa0d209496506bdabcf564c
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1493'
 ht-degree: 3%
 
 ---
 
 # 적응형 Forms에서 CAPTCHA 사용{#using-captcha-in-adaptive-forms}
+
+<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
 
 CAPTCHA(Complete Automated Public Turning test to tell Computers and Humans Apart)는 온라인 거래에서 일반적으로 사용되는 프로그램으로 인간과 자동화된 프로그램 또는 봇을 구별합니다. 문제를 제기하고 사용자 응답을 평가하여 사이트와 상호 작용하는 사람인지 보트인지를 확인합니다. 테스트 실패 시 사용자가 진행할 수 없도록 하고 봇이 스팸이나 악의적인 목적을 게시하지 않도록 해 온라인 거래를 안전하게 만드는 데 도움을 준다.
 

@@ -2,14 +2,16 @@
 title: 적응형 양식 템플릿을 만드는 방법
 description: 템플릿 편집기를 사용하여 기본 구조와 초기 콘텐츠를 정의하는 적응형 양식 템플릿을 만드십시오.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '2038'
+source-wordcount: '2095'
 ht-degree: 1%
 
 ---
 
 # 적응형 양식 템플릿 만들기 {#adaptive-form-templates}
+
+<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |

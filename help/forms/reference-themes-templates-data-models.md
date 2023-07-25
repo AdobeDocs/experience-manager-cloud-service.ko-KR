@@ -4,14 +4,16 @@ seo-title: Reference Themes, Templates, and Form Data models
 description: AEM Forms은 소프트웨어 배포에서 가져올 수 있는 적응형 양식 테마, 템플릿 및 양식 데이터 모델을 제공합니다
 seo-description: AEM Forms provides adaptive forms themes, templates, and form data models that you can get from Software Distribution
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '836'
 ht-degree: 2%
 
 ---
 
 # 참조 테마, 템플릿 및 양식 데이터 모델 {#reference-themes-templates-and-data-models}
+
+<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
 
 AEM Forms as a Cloud Service에서는 여러 참조 테마, 템플릿 및 양식 데이터 모델을 제공하여 적응형 Forms 만들기를 빠르게 시작할 수 있습니다. 다음을 다운로드할 수 있습니다. [소프트웨어 배포 포털의 콘텐츠 패키지 참조](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) 및 사용 [패키지 관리자](/help/implementing/developing/tools/package-manager.md) 을(를) 설치하려면 [참조 콘텐츠 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) 프로덕션, 개발 또는 로컬 개발 환경에서 이러한 참조 자산을 사용자 환경에 가져올 수 있습니다.
 
@@ -22,11 +24,11 @@ AEM Forms as a Cloud Service에서는 여러 참조 테마, 템플릿 및 양식
 ---------|----------|---------
 | 캔버스 3.0 | 기본 | Microsoft Dynamics 365 |
 | 고요해 | 비어 있음 | Salesforce |
-| 우르바네 |  |  |
+| 우르바네 |   |  |
 | 울트라마린 |  |  |
 | 베릴 |  |  |
-| 건강 관리 |  |  |
-| FSI |  |  |
+| 건강 관리 |  |   |
+| FSI |   |   |
 
 ## 참조 테마 {#reference-themes}
 
