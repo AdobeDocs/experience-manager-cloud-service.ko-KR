@@ -1,22 +1,22 @@
 ---
-title: 컨텍스트 내 편집
-description: 유니버설 편집기를 사용하여 모든 구현에서 콘텐츠 측면을 바로 및 컨텍스트에서 편집할 수 있는 방법을 살펴봅니다.
+title: 컨텍스트에서 편집
+description: 범용 편집기를 사용하여 콘텐츠의 모든 측면을 구현의 위치 및 컨텍스트에서 편집할 수 있는 방법을 살펴봅니다.
 hidefromtoc: true
 index: false
-source-git-commit: 4dd0998862baf3e1d0c8ed2d42006acfcf5d0873
+source-git-commit: 9826041962a3a0065feb676b07304ba30d23d2e9
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 6%
+source-wordcount: '961'
+ht-degree: 4%
 
 ---
 
 
-# 컨텍스트 내 편집 {#editing-in-context}
+# 컨텍스트에서 편집 {#editing-in-context}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
->title="컨텍스트 내 편집"
->abstract="Headless 앱이 유니버설 편집기를 활용하여 저자의 손가락 끝에 마찰이 적은 컨텍스트 내 편집을 가져오는 방법을 알아보십시오."
+>title="컨텍스트에서 편집"
+>abstract="Headless 앱이 유니버설 편집기를 활용하여 문맥 편집에서 작성자의 손가락 끝에 마찰을 덜 일으키는 방법을 살펴보십시오."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
@@ -25,14 +25,18 @@ ht-degree: 6%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
->title="이 모듈에서는 범용 편집기를 사용하여 컨텍스트 내 및 위치 내에서 콘텐츠를 사용자 지정하는 방법을 배웠습니다."
+>title="이 모듈에서는 범용 편집기를 사용하여 컨텍스트 및 위치에서 콘텐츠를 사용자 지정하는 방법을 배웠습니다."
 >abstract=""
 
 ## 컨텍스트에서 텍스트 편집 {#edit-text}
 
-내부 및 컨텍스트 내 편집은 이전 모듈에서 보았던 콘텐츠 조각 편집기에서와 같이 구조화된 headless 콘텐츠 편집보다 종종 유용할 수 있습니다.
+이전 모듈에서 본 콘텐츠 조각 편집기에서와 같이 구조화된 headless 콘텐츠 편집보다 현장 및 컨텍스트에서 편집하는 것이 종종 유용할 수 있습니다.
 
-범용 편집기를 사용하면 상황에 맞는 적절한 위치에서 텍스트를 신속하게 편집할 수 있으므로 간단하고 직관적인 콘텐츠 작성이 가능합니다.
+>[!NOTE]
+>
+>이 체험판에서 유니버설 편집기를 사용하려면 시크릿 모드가 아닌 Chrome을 브라우저로 사용해야 합니다. 이는 유니버설 편집기가 아닌 체험판 경험의 한계입니다.
+
+범용 편집기를 사용하면 상황에 맞는 적절한 방식으로 텍스트를 편집할 수 있으므로 간단하고 직관적인 콘텐츠 작성이 가능합니다.
 
 1. 편집기는 기본적으로 다음 위치에 로드되어야 합니다. **텍스트** 모드. 그렇지 않은 경우 다음을 탭하거나 클릭하십시오. **텍스트** 편집기 왼쪽에 있는 모드 레일의 아이콘
 
@@ -47,6 +51,26 @@ ht-degree: 6%
 1. Enter/return 키를 누르거나 텍스트 구성 요소 외부를 탭하거나 클릭하면 변경 사항이 자동으로 저장됩니다.
 
 유니버설 편집기는 작성 환경 내에 변경 사항을 자동으로 저장합니다. 독자가 볼 수 있도록 여전히 게시해야 합니다. 이 작업은 이후 단계에서 수행합니다.
+
+## 컨텍스트에서 미디어 편집 {#edit-media}
+
+범용 편집기를 사용하여 콘텐츠 컨텍스트에 남아 있는 동안 이미지를 교체할 수도 있습니다.
+
+1. 편집기 변경 **미디어** 을 탭하거나 클릭하여 모드 **미디어** 모드 레일의 단추
+
+1. 서퍼의 이미지를 탭하거나 클릭하여 선택합니다.
+
+1. 구성 요소 레일에서 에셋의 세부 정보를 볼 수 있습니다. 탭 또는 클릭 **바꾸기**.
+
+   ![편집할 이미지 선택](assets/do-not-localize/ue-edit-media.png)
+
+1. 다음에서 **에셋 선택** 창을 아래로 스크롤하고 `surfer-wave-02.JPG` 이미지를 선택하여 선택합니다.
+
+1. 탭 또는 클릭 **선택** 다음에서 **에셋 선택** 창.
+
+   ![에셋 선택 창을 사용하여 이미지 선택](assets/do-not-localize/ue-select-asset.png)
+
+이미지가 선택한 이미지로 교체됩니다.
 
 ## Reader과 마찬가지로 컨텐츠 경험 {#emulators}
 
@@ -102,6 +126,5 @@ Headless 콘텐츠를 구조적으로 편집하는 것이 즉석 편집보다 �
 1. 새 항목 **편집** 아이콘이 모드 레일에 나타납니다. 을(를) 탭하거나 클릭합니다 **편집** 아이콘을 클릭하여 새 탭에서 콘텐츠 조각 편집기를 엽니다.
 
 ![범용 편집기에서 콘텐츠 조각 선택](assets/do-not-localize/ue-content-fragments.png)
-
 
 이제 새 탭에서 범용 편집기에서 선택한 콘텐츠 조각을 편집할 수 있습니다.
