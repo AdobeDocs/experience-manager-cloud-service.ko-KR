@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service 개발에 대한 지침과 AMS의 AEM On-Premise 및 AEM과 다른 중요한 방식에 대해 알아봅니다.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: f69b348b7de6c6537a9945793e3397bf4fe30f98
 workflow-type: tm+mt
-source-wordcount: '2586'
+source-wordcount: '2655'
 ht-degree: 4%
 
 ---
@@ -66,6 +66,13 @@ Adobe은 제공된 를 사용할 것을 권장합니다 [Apache HttpComponents C
 * [OK Http](https://square.github.io/okhttp/) (AEM에서 제공되지 않음)
 
 시간 초과 제공 옆에 이러한 시간 초과 및 예기치 않은 HTTP 상태 코드의 적절한 처리도 구현해야 합니다.
+
+## 요청 비율 제한 처리 {#rate-limit-handling}
+
+>[!NOTE]
+>HTTP 오류 응답은 2023년 8월 7일이 있는 주에 503에서 429로 변경됩니다.
+>
+AEM에 대한 수신 요청 비율이 정상 수준을 초과하면 AEM은 HTTP 오류 코드 429로 새 요청에 응답합니다. AEM에 프로그래밍 방식으로 호출하는 애플리케이션에서는 지수 백오프 전략을 사용하여 몇 초 후에 다시 시도하면서 방어적으로 코딩을 고려할 수 있습니다. 2023년 8월 중순 이전, AEM은 HTTP 오류 코드 503으로 동일한 조건에 응답했습니다.
 
 ## 클래식 UI 사용자 지정 없음 {#no-classic-ui-customizations}
 
@@ -286,4 +293,4 @@ Caused by: com.mongodb.MongoWriteException: Resulting document after update is l
 
 ## [!DNL Assets] 개발 지침 및 사용 사례 {#use-cases-assets}
 
-Assets에 대한 개발 사용 사례, 권장 사항 및 참조 자료를 as a Cloud Service으로 제공하는 방법에 대해 알아보려면 [자산에 대한 개발자 참조](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
+Assets에 대한 개발 사용 사례, 권장 사항 및 참조 자료를 as a Cloud Service으로 제공하는 방법에 대해 알아보려면 다음을 참조하십시오. [자산에 대한 개발자 참조](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
