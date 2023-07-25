@@ -2,14 +2,19 @@
 title: AEM Forms as a Cloud Service 커뮤니케이션 소개
 description: XDP 및 PDF 템플릿과 데이터 자동 병합 또는 PCL, ZPL 및 PostScript 형식으로 출력 생성
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
+source-git-commit: 94b24e3fb1ce009fb31506a1b0a6d5159c4907eb
 workflow-type: tm+mt
-source-wordcount: '1136'
-ht-degree: 100%
+source-wordcount: '1156'
+ht-degree: 99%
 
 ---
 
 # AEM Forms as a Cloud Service 커뮤니케이션 사용 {#frequently-asked-questions}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html) |
+| AEM as a Cloud Service | 이 문서 |
 
 커뮤니케이션 기능은 비즈니스 서신, 명세서, 요청 처리 레터, 혜택 공지, 월별 청구서 또는 시작 키트 등 개인화 및 표준화된 브랜드 승인 문서를 만드는 데 도움이 됩니다.
 
