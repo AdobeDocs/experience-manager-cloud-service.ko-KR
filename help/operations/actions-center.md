@@ -4,10 +4,10 @@ description: 액션 센터를 활용하여 인시던트 및 기타 중요한 정
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '701'
-ht-degree: 100%
+source-git-commit: 083aa4b893b58102b3a0bf68c4dd3b4c003b48f6
+workflow-type: tm+mt
+source-wordcount: '708'
+ht-degree: 99%
 
 ---
 
@@ -72,7 +72,7 @@ AEM as a Cloud Service에는 여러 유형의 알림이 있지만 아래 그림�
 
 ## 지원되는 알림 유형 {#supported-notification-types}
 
-다음 표는 액션 센터에서 현재 지원되는 알림 유형 목록입니다.
+다음 표는 액션 센터에서 현재 지원되는 알림 유형 목록입니다. 알림은 현재 프로덕션 환경으로 제한됩니다.
 
 | 알림 유형 | 관련 제품 프로필 | 수정 조치 |
 |---|---|---|
