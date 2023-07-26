@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 62649d9aaa7c4307351cc83eefbab14806f91378
 workflow-type: tm+mt
-source-wordcount: '3830'
+source-wordcount: '3871'
 ht-degree: 16%
 
 ---
@@ -317,6 +317,8 @@ Experience Manager에 `expired` 사이트 작성자가 사이트 페이지에서
 
 * 자산 사용에 대한 통찰력을 얻으려면 다음을 구성하십시오. [Assets Insight](/help/assets/assets-insights.md) 에 대한 기능 [!DNL Sites] 인스턴스.
 * 구성 요소 작성의 경로 브라우저 사용은 연결된 자산에서 지원되지 않습니다.
+
+* 원격 자산을 (으)로 끌 수 없습니다. [이미지 구성 요소 구성 대화 상자](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=en#configure-dialog). 그러나 를 클릭하지 않고 원격 자산을 사이트 페이지의 이미지 구성 요소로 직접 드래그할 수 있습니다. **[!UICONTROL 구성]**.
 
 ### 권한 및 자산 관리 {#permissions-and-managing-assets}
 
