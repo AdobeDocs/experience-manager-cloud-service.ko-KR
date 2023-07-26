@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 579f2842a72c7da1c9d24772bdae354a943de40c
+source-git-commit: 651fd49950c9b168a097e4b7d2812b22bd8de03f
 workflow-type: tm+mt
-source-wordcount: '4192'
+source-wordcount: '4194'
 ht-degree: 99%
 
 ---
@@ -340,7 +340,6 @@ ht-degree: 99%
             + [git 저장소 액세스 정보 가져오기](/help/journey-sites/quick-site/retrieve-access.md)
             + [사이트 테마 맞춤화](/help/journey-sites/quick-site/customize-theme.md)
             + [맞춤화된 테마 배포](/help/journey-sites/quick-site/deploy-theme.md)
-      + [워크플로 관리](/help/sites-cloud/administering/workflows-administering.md)
       + 재사용 등급 {#reusing-content}
          + [MSM 및 번역](/help/sites-cloud/administering/msm-and-translation.md)
          + 다중 사이트 관리자 {#msm}
@@ -369,6 +368,8 @@ ht-degree: 99%
             + [번역 통합 프레임워크 구성](/help/sites-cloud/administering/translation/integration-framework.md)
             + [Microsoft Translator에 연결](/help/sites-cloud/administering/translation/connect-ms-translator.md)
             + [번역 모범 사례](/help/sites-cloud/administering/translation/best-practices.md)
+      + [태그 관리](/help/sites-cloud/administering/tags.md)
+      + [워크플로 관리](/help/sites-cloud/administering/workflows-administering.md)
    + AEM as a Cloud Service와 통합 {#integrations}
       + [Adobe Analytics와 통합](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Adobe Analytics 자동 설정과 통합](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
