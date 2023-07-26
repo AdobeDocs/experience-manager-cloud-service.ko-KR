@@ -7,7 +7,7 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 source-git-commit: 91e9711e10a7aa8e3c7fa0b4cc25a098741e53b1
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 88%
+ht-degree: 93%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 88%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="콘텐츠 조각 콘솔 실행"
->abstract="앱과 웹 사이트에서 원활하게 작동하는 일관된 고품질 콘텐츠를 만들면 훌륭한 고객 경험을 구축할 수 있습니다. 이 모듈에서는 콘텐츠 조각 콘솔을 사용하여 첫 번째 Headless 콘텐츠를 만드는 과정을 안내합니다.<br><br>아래 버튼을 클릭하여 새 탭에서 이 모듈을 실행한 다음 이 안내서를 따르십시오."
+>abstract="앱과 웹 사이트에서 원활하게 작동하는 일관된 고품질 콘텐츠를 만들면 훌륭한 고객 경험을 구축할 수 있습니다. 이 모듈에서는 콘텐츠 조각 콘솔을 사용하여 첫 번째 Headless 콘텐츠를 생성하는 과정을 안내합니다.<br><br>아래 버튼을 클릭하여 새 탭에서 이 모듈을 실행한 다음 이 안내서를 따르십시오."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
->title="좋습니다! 이 모듈에서는 이전에 만든 모델을 기반으로 headless 콘텐츠를 콘텐츠 조각으로 작성하는 방법을 배웠습니다. 이제 콘텐츠 팀이 개발 주기와 관계없이 앱과 웹 사이트의 콘텐츠를 만들고 관리하는 방법에 대해 이해할 수 있습니다."
+>title="좋습니다! 이 모듈에서는 이전에 만든 모델을 기반으로 Headless 콘텐츠를 콘텐츠 조각으로 작성하는 방법에 대해 배웠습니다. 이제 콘텐츠 팀이 개발 주기와 관계없이 앱과 웹 사이트의 콘텐츠를 만들고 관리하는 방법에 대해 이해할 수 있습니다."
 >abstract=""
 
 ## 콘텐츠 조각 만들기 {#create-fragment}
