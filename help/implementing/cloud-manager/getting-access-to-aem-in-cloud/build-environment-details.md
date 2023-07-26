@@ -2,10 +2,10 @@
 title: 빌드 환경
 description: Cloud Manager의 빌드 환경과 코드 빌드 및 테스트 방법에 대해 알아봅니다.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '991'
-ht-degree: 100%
+source-git-commit: d3bc5dbb5a88aff7765beffc8282d99063dde99f
+workflow-type: tm+mt
+source-wordcount: '1005'
+ht-degree: 98%
 
 ---
 
@@ -54,27 +54,41 @@ Cloud Manager는 특수 빌드 환경을 사용하여 코드를 빌드하고 테
 
 [Maven 툴체인 플러그인](https://maven.apache.org/plugins/maven-toolchains-plugin/)을 사용하면 프로젝트가 툴체인 인식 Maven 플러그인의 맥락에서 사용될 특정 JDK(또는 툴체인)를 선택할 수 있습니다. 공급업체 및 버전 값을 지정하여 프로젝트의 `pom.xml` 파일에서 이 작업을 수행합니다.
 
+이 툴체인 플러그인은 아래와 같이 프로필의 일부로 추가할 수 있습니다.
+
 ```xml
-<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-toolchains-plugin</artifactId>
-    <version>1.1</version>
-    <executions>
-        <execution>
-            <goals>
-                <goal>toolchain</goal>
-            </goals>
-        </execution>
-    </executions>
-    <configuration>
-        <toolchains>
-            <jdk>
-                <version>11</version>
-                <vendor>oracle</vendor>
-            </jdk>
-        </toolchains>
-    </configuration>
-</plugin>
+<profile>
+    <id>cm-java-11</id>
+    <activation>
+        <property>
+            <name>env.CM_BUILD</name>
+        </property>
+    </activation>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-toolchains-plugin</artifactId>
+                <version>1.1</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>toolchain</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <toolchains>
+                        <jdk>
+                            <version>11</version>
+                            <vendor>oracle</vendor>
+                        </jdk>
+                    </toolchains>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</profile>
 ```
 
 그러면 모든 툴체인 인식 Maven 플러그인이 Oracle JDK 버전 11을 사용하게 됩니다.
