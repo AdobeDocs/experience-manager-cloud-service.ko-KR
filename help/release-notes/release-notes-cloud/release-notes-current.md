@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 8efe5d66929d1e2ccd7af71a2de8ae02f2bbc290
+source-git-commit: 758960006bd1e58530fdf7b20cdd761853170366
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 44%
+source-wordcount: '981'
+ht-degree: 41%
 
 ---
 
@@ -77,10 +77,9 @@ Experience Manager Assets는 이제 이미지 스마트 태그에 대해 향상�
 
 * [**기본 제공 테마**](/help/forms/using-themes-in-core-components.md) **및 템플릿**: 숙련된 전문가와 새로운 양식 작성자 모두에게 권한을 부여하도록 맞춤화된 즉시 사용할 수 있는 OOTB 테마 및 템플릿을 사용하여 양식 작성 프로세스를 시작하십시오. 적응형 Forms 핵심 구성 요소를 사용하여 간편하게 빌드된 이 세심하게 조정된 테마와 템플릿을 사용하면 일반적인 사용 사례에서 신속하게 양식을 만들 수 있습니다.
 
+!![기본 제공 템플릿](/help/forms/assets/form-templates-ootb.png)
 
 * **Headless Forms용 React 구성 요소**: 이제 즉시 제공된 React 구성 요소로 Headless 적응형 양식 렌디션을 미리 보고 사용자 정의할 수 있습니다. 이러한 구성 요소는 스타일을 지정하기 위해 적응형 Forms 핵심 구성 요소의 BEM 클래스를 활용하므로 특정 요구 사항에 따라 모양을 손쉽게 사용자 지정할 수 있습니다.
-
-  공공기관용 Adobe Acrobat Sign Solutions와 통합하여 Adobe의 파트너와 공공기관 고객들은 가장 중요하고 민감한 비즈니스 라인에서 적응형 양식 전자 서명을 사용할 수 있습니다. 이 보안 계층이 추가되면 Adobe의 공공기관 고객들이 안심할 수 있도록 모든 전자 서명은 FedRAMP Moderate 규정을 완전히 준수해야 합니다.
 
 * [**반복 가능한 섹션이 포함된 적응형 Forms 만들기**](/help/forms/create-forms-repeatable-sections.md): 이제 다음을 수행할 수 있습니다. [어코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [패널](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), 및 [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 여러 데이터 레코드 캡처를 위한 적응형 양식 기반 구성 요소.  이러한 반복 가능한 섹션을 통해 여러 데이터 항목을 쉽게 제공할 수 있습니다. 필요한 데이터 인스턴스를 미리 알 수 없는 경우에 유용합니다. 양식 작성기를 사용하면 섹션을 쉽게 추가하거나 제거할 수 있으므로 양식을 다양한 데이터 입력 시나리오에 맞게 조정할 수 있으며 동일한 데이터 레코드의 여러 항목을 간편하게 수집할 수 있습니다.
 
