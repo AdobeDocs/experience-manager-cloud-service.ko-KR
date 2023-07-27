@@ -3,7 +3,7 @@ title: AEM Sites 페이지에 적응형 양식을 추가하는 방법
 description: 적응형 양식을 만들거나 AEM Sites 페이지에 추가하는 방법을 알아봅니다. 또한 웹 사이트에 양식을 통합하는 이점 및 다양한 방법에 대해 알아봅니다.
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: 991de20303380af76d3e2e97aca8e0a4373e2232
+source-git-commit: ecc881ac1a9f8dd98cd57bbeb44cc35deddcbb8e
 workflow-type: tm+mt
 source-wordcount: '3214'
 ht-degree: 22%
@@ -38,7 +38,7 @@ AEM Forms Cloud Service은 적응형 양식 컨테이너 및 적응형 Forms - �
 * **태그 지정:** AEM Sites 페이지를 사용하면 다음 작업을 수행할 수 있습니다. [페이지, 에셋 또는 기타 콘텐츠에 태그 또는 레이블 할당](/help/implementing/developing/introduction/tagging-framework.md). 태그는 특정 기준에 따라 콘텐츠를 분류하고 구성하는 방법을 제공하는 키워드 또는 메타데이터 레이블입니다. 페이지, 에셋 또는 AEM 내의 다른 콘텐츠 항목에 하나 이상의 태그를 할당하여 검색을 개선하고 에셋을 분류할 수 있습니다.
 * **컨텐츠 잠금 및 잠금 해제:** AEM Sites을 통해 사용자는 [페이지 액세스 및 수정 제어](/help/sites-cloud/authoring/fundamentals/editing-content.md) AEM Sites 환경 내에서. 페이지가 잠기면 다른 사용자가 승인되지 않은 변경 또는 편집하지 못하도록 보호됩니다. 콘텐츠를 잠근 사용자 또는 지정된 관리자만 수정을 허용하도록 잠금을 해제할 수 있습니다.
 
-또한 AEM 페이지 편집기의 적응형 Forms은 [적응형 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features). 이러한 핵심 구성 요소는 다음과 동일한 방식으로 구성 요소를 스타일링하고 맞춤화하는 보다 표준적이고 쉬운 방법을 제공합니다. [AEM Sites WCM 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
+또한 AEM 페이지 편집기의 적응형 Forms 는 [적응형 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features). 이러한 핵심 구성 요소는 다음과 동일한 방식으로 구성 요소를 스타일링하고 맞춤화하는 보다 표준적이고 쉬운 방법을 제공합니다. [AEM Sites WCM 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
 
 
 ## AEM Sites 페이지 또는 AEM 경험 조각에서 적응형 양식을 만들거나 추가하는 방법 {#various-options-to-creat-or-add-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
