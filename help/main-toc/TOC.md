@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 651fd49950c9b168a097e4b7d2812b22bd8de03f
+source-git-commit: 0b79cc8ee956226e10cffdfec05c7c38caccaee0
 workflow-type: tm+mt
-source-wordcount: '4194'
+source-wordcount: '4197'
 ht-degree: 99%
 
 ---
@@ -35,6 +35,7 @@ ht-degree: 99%
    + AEMaaCS 기능 릴리스 정보 {#release-notes}
       + [최신 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2023 {#2023}
+         + [2023.6.0 릴리스 정보](/help/release-notes/release-notes-cloud/2023/release-notes-2023-6-0.md)
          + [2023.4.0 릴리스 정보](/help/release-notes/release-notes-cloud/2023/release-notes-2023-4-0.md)
          + [2023.2.0 릴리스 정보](/help/release-notes/release-notes-cloud/2023/release-notes-2023-2-0.md)
          + [2023.1.0 릴리스 정보](/help/release-notes/release-notes-cloud/2023/release-notes-2023-1-0.md)
@@ -192,7 +193,7 @@ ht-degree: 99%
       + [Headless 콘텐츠 만들기](/help/trials/headless/create-content.md)
       + [GraphQL API를 통한 콘텐츠 추출](/help/trials/headless/extract-content.md)
       + [JavaScript로 JSON 콘텐츠 가져오기](/help/trials/headless/code-playground.md)
-      + [범용 편집기로 인라인 편집](/help/trials/headless/universal-editor.md)
+      + [Universal Editor로 인라인 편집](/help/trials/headless/universal-editor.md)
 + AEM as a Cloud Service 마이그레이션 여정 {#migration-journey}
    + [AEM as a Cloud Service 이동 시작하기](/help/journey-migration/getting-started.md)
    + [준비 단계](/help/journey-migration/readiness.md)
@@ -633,7 +634,7 @@ ht-degree: 99%
       + [PDF 문서에서 사용자 정의 글꼴 사용하기](/help/forms/use-custom-fonts.md)
       + [알려진 문제, 모범 사례 및 자주 묻는 질문](/help/forms/communications-known-issues-limitations.md)
    + 개발자 API 참조 {#aem-forms-developer-api-reference}
-      + [적응형 Forms API 참조](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
+      + [적응형 양식 API 참조](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms Cloud Service 커뮤니케이션 API 참조](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
       + [AEM Forms Cloud Service JavaScript API 참조](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
       + [AEM Forms Cloud Service Java API 참조](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/index.html)

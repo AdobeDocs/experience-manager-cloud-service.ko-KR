@@ -1,20 +1,15 @@
 ---
 title: 액션 센터
 description: 액션 센터를 활용하여 인시던트 및 기타 중요한 정보에 대해 편리하게 조치
-hidefromtoc: true
-hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 083aa4b893b58102b3a0bf68c4dd3b4c003b48f6
+source-git-commit: 4adae6ffe45dcd2b80d7d199fc29a806ce5e78c4
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 99%
+source-wordcount: '727'
+ht-degree: 95%
 
 ---
 
 # 액션 센터 {#actions-center}
-
->[!NOTE]
->이 기능은 릴리스되지 않았습니다.
 
 AEM as Cloud Service는 최적화에 즉각적인 조치 및 사전 알림 추천이 필요한 중대 인시던트가 발생하면 액션 센터 이메일 알림을 전송합니다. 예로는 차단된 대기열 또는 만료되는 자격 증명 세트가 있습니다. 액션 센터 알림 유형의 전체 세트는 [아래 표](#supported-notification-types)에서 볼 수 있으며 시간이 지남에 따라 확장됩니다.
 
@@ -40,7 +35,7 @@ AEM as Cloud Service는 최적화에 즉각적인 조치 및 사전 알림 추�
 
 ## 자세한 사용자 흐름 {#detailed-user-flow}
 
-이메일을 클릭하면 클릭한 알림에 대한 컨텍스트를 표시하는 팝업과 경우에 따라 수정 조치를 취하는 방법을 설명하는 추가 정보 링크가 있는 액션 센터로 이동합니다.
+이메일을 클릭하면 클릭한 알림에 대한 컨텍스트를 표시하는 팝업과 경우에 따라 수정 조치를 취하는 방법을 설명하는 추가 정보 링크가 있는 액션 센터로 이동합니다. 다음 위치에서 작업 센터에 직접 액세스할 수도 있습니다. [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/)관련 프로그램 및 환경을 선택할 수 있습니다.
 
 ![인시던트 세부 정보](/help/operations/assets/incident-details.png)
 
