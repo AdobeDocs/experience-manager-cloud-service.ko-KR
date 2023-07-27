@@ -3,9 +3,9 @@ title: AEM Sites 페이지에 적응형 양식을 추가하는 방법
 description: 적응형 양식을 만들거나 AEM Sites 페이지에 추가하는 방법을 알아봅니다. 또한 웹 사이트에 양식을 통합하는 이점 및 다양한 방법에 대해 알아봅니다.
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: c5a3b5a22283e0e14b8d0a8464b9bba460a80c71
+source-git-commit: 6a462b7a437f74e659a43f7f5d4a95663b92c2cf
 workflow-type: tm+mt
-source-wordcount: '3214'
+source-wordcount: '3308'
 ht-degree: 22%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 22%
 | -------- | ---------------------------- |
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
 | AEM as a Cloud Service | 이 문서 |
+
+## 개요 {#overview}
 
 AEM Forms을 사용하면 AEM Sites 페이지에 양식을 원활하게 추가할 수 있습니다. 이를 통해 방문자는 현재 페이지를 떠나지 않고 편리하게 양식을 작성하고 제출할 수 있습니다. 이렇게 하면 방문자는 양식과 상호 작용하면서 웹 사이트의 다른 요소에 지속적으로 관심을 가질 수 있습니다.
 
@@ -51,11 +53,12 @@ AEM Forms Cloud Service은 적응형 양식 컨테이너 및 적응형 Forms - �
 
 * **[적응형 양식을 경험 조각으로 변환](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment):** AEM Sites 페이지에 추가된 적응형 양식을 여러 AEM Sites 페이지에서 양식을 재사용하기 위한 경험 조각으로 변환합니다.
 
-* **AEM Sites 페이지 또는 경험 조각에 여러 양식 추가:**  AEM Sites 페이지에 여러 적응형 Forms을 만들거나 추가하여 사용자의 환경 설정 및 요구 사항에 따라 다양한 선택 사항을 제공할 수 있습니다. 이로써 처음부터 완전히 새로운 양식과 기존 양식을 조합할 수 있습니다.
+* **[승인된 템플릿을 기반으로 양식을 만들어 AEM Sites 페이지에 추가합니다.](/help/forms/embed-adaptive-form-aem-sites.md#embed-form-using-adaptive-form-wizzard-aem-sites)** 사전 승인된 템플릿을 활용하여 조직의 브랜딩 지침 및 디자인 표준에 맞는 적응형 Forms을 신속하게 만들 수 있습니다. 옵션은 적응형 Forms 편집기 또는 적응형 Forms - 임베드 구성 요소로 생성된 적응형 Forms에 대해서만 사용할 수 있습니다.
 
-* **승인된 템플릿을 기반으로 양식을 만들어 AEM Sites 페이지에 추가합니다.** 사전 승인된 템플릿을 활용하여 조직의 브랜딩 지침 및 디자인 표준에 맞는 적응형 Forms을 신속하게 만들 수 있습니다. 옵션은 적응형 Forms 편집기 또는 적응형 Forms - 임베드 구성 요소로 생성된 적응형 Forms에 대해서만 사용할 수 있습니다.
+* **[AEM Sites 페이지에 기존 양식 추가:](/help/forms/embed-adaptive-form-aem-sites.md#embed-an-adaptive-form-in-sites-editor)** 이미 만든 양식을 웹 사이트에 쉽게 통합하여 방문자가 직접 상호 작용할 수 있도록 할 수 있습니다. 옵션은 적응형 Forms 편집기 또는 적응형 Forms - 임베드 구성 요소로 생성된 적응형 Forms에 대해서만 사용할 수 있습니다.
 
-* **AEM Sites 페이지에 기존 양식 추가:** 이미 만든 양식을 웹 사이트에 쉽게 통합하여 방문자가 직접 상호 작용할 수 있도록 할 수 있습니다. 옵션은 적응형 Forms 편집기 또는 적응형 Forms - 임베드 구성 요소로 생성된 적응형 Forms에 대해서만 사용할 수 있습니다.
+
+* **AEM Sites 페이지 또는 경험 조각에 여러 양식 추가:**  AEM Sites 페이지에 여러 적응형 Forms을 만들거나 추가하여 사용자의 환경 설정 및 요구 사항에 따라 다양한 선택 사항을 제공할 수 있습니다. 이로써 처음부터 완전히 새로운 양식과 기존 양식을 조합할 수 있습니다. 다음을 사용할 수 있습니다. **[!UICONTROL 적응형 양식 컨테이너]** AEM Sites 페이지에 적응형 Forms을 추가하기 위한 구성 요소를 여러 번 추가했습니다. 다음을 사용할 수 있습니다. **[!UICONTROL 적응형 Forms - 포함]** 구성 요소를 AEM Sites 페이지에서 여러 번 만듭니다. **[!UICONTROL 폼은 프레임의 전체 너비를 포함합니다.]** 옵션이 선택되어 있습니다. 만일의 경우에 **[!UICONTROL 폼은 프레임의 전체 너비를 포함합니다.]** 옵션이 선택되어 있지 않습니다. AEM Sites 페이지는 iframe 없이 하나의 적응형 양식만 존재하도록 지원합니다. 를 사용하여 더 많은 적응형 Forms을 추가하려면 **[!UICONTROL 적응형 Forms - 포함]** 구성 요소, 선택 **[!UICONTROL 폼은 프레임의 전체 너비를 포함합니다.]** 옵션을 선택합니다.
 
 ## AEM Sites 페이지 또는 AEM 경험 조각에서 적응형 양식을 만들기 위한 고려 사항 {#consideration}
 
