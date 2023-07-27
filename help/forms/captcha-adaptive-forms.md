@@ -1,10 +1,10 @@
 ---
 title: 적응형 Forms에서 reCAPTCHA 사용
-description: 적응형 Forms에서 AEM CAPTCHA 또는 Google reCAPTCHA 서비스를 구성하는 방법에 대해 알아봅니다.
+description: 적응형 Forms에서 Google reCAPTCHA 서비스를 구성하는 방법에 대해 알아봅니다.
 topic-tags: adaptive_forms, author
-source-git-commit: bc1c9736c36014b9a2e0df561e6808f28b1dd7b5
+source-git-commit: 4b6c22667bb79bb6cac22675fa22f741b0262210
 workflow-type: tm+mt
-source-wordcount: '1913'
+source-wordcount: '1911'
 ht-degree: 3%
 
 ---
@@ -53,7 +53,7 @@ CAPTCHA(Complete Automated Public Turning test to tell Computers and Humans Apar
 1. 클라우드 서비스 구성 [!DNL reCAPTCHA Enterprise].
 
    1. Experience Manager 작성자 인스턴스에서 ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
-   1. 누르기 **[!UICONTROL reCAPT차]**. Configurations 페이지가 열립니다. 만든 구성 컨테이너를 선택하고 을 누릅니다 **[!UICONTROL 만들기]**.
+   1. 누르기 **[!UICONTROL reCAPT차]**. Configurations 페이지가 열립니다. 만든 구성 컨테이너를 선택한 다음 탭합니다. **[!UICONTROL 만들기]**.
    1. 다음으로 버전 선택 [!DNL reCAPTCHA Enterprise] 및 reCAPTCHA Enterprise 서비스에 대한 이름, 프로젝트 ID, 사이트 키 및 API 키(2단계에서 획득)를 지정합니다.
    1. 키 유형을 선택합니다. 키 유형은 에서 구성한 사이트 키와 동일해야 합니다. [Google 클라우드 프로젝트](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin), 예: **확인란 사이트 키** 또는 **점수 기반 사이트 키**.
    1. 지정 [0~1 범위의 임계값 점수](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores). 임계값 점수보다 크거나 같은 점수는 인간 상호 작용을 식별하고, 그렇지 않으면 봇 상호 작용으로 간주됩니다.
@@ -106,104 +106,108 @@ reCAPTCHA Enterprise 서비스가 활성화되면 적응형 양식에서 사용�
    >[!NOTE]
    >
    >* 적응형 양식에서 Captcha 구성 요소를 두 개 이상 사용하는 것은 지원되지 않습니다. 또한 소극적 로드로 표시된 패널 또는 조각에서는 CAPTCHA를 사용하지 않는 것이 좋습니다.
-   >* Captcha는 시간에 민감하며 약 1분 후에 만료됩니다. 따라서 적응형 양식에서 Captcha 구성 요소를 제출 단추 바로 앞에 배치하는 것이 좋습니다.
+   >* reCaptcha는 시간에 민감하며 약 1분 후에 만료됩니다. 따라서 적응형 양식에서 Captcha 구성 요소를 제출 단추 바로 앞에 배치하는 것이 좋습니다.
 
 1. 추가한 Captcha 구성 요소를 선택하고 을 누릅니다 ![cmppr](assets/cmppr.png) 속성을 편집합니다.
 1. CAPTCHA 위젯의 제목을 지정합니다. 기본값은 입니다. **Captcha**. 선택 **제목 숨기기** 제목을 표시하지 않으려는 경우
 1. 다음에서 **Captcha 서비스** 드롭다운, 선택 **reCAPT차** 에 설명된 대로 구성한 경우 reCAPTCHA 서비스를 활성화하려면 다음을 수행하십시오 [Google의 reCAPTCHA 서비스](#google-reCAPTCHA).
 1. 다음에 대한 설정 드롭다운에서 구성을 선택합니다. **reCAPTCHA 엔터프라이즈** 또는 **reCAPTCHA v2**
-1. 선택한 구성에 버전 reCAPTCHA Enterprise가 있는 경우 키 유형은 다음과 같을 수 있습니다. **확인란** 또는 **점수 기준** reCAPTCHA enterprise 구성 시 선택한 항목에 따라:
-   1. 클라우드 구성에서 키 유형은 다음과 같습니다. **확인란**, 사용자 지정된 오류 메시지는 captcha 유효성 검사가 실패하면 인라인 메시지로 표시됩니다. 다음과 같이 크기를 선택할 수 있습니다. **[!UICONTROL 기본]** 및 **[!UICONTROL 콤팩트]**.
-   1. 을 사용하는 클라우드 구성 **키 유형** 다음으로: **점수 기준**&#x200B;사용자 지정된 오류 메시지는 captcha 유효성 검사가 실패하면 팝업 메시지로 표시됩니다.
-   1. 다음을 선택할 수 있습니다. **[!UICONTROL 바인드 참조]** 위치: [!DNL AEM Forms], 위치 **[!UICONTROL 바인드 참조]** 제출된 데이터는 바인딩된 데이터이며, 그렇지 않으면 바인딩되지 않은 데이터입니다. 다음은 양식 제출 시 바인딩되지 않은 데이터와 바인딩된 데이터(바인드 참조를 SSN으로 사용)의 XML 예입니다.
+   1. 다음을 선택하는 경우 **reCAPTCHA 엔터프라이즈** version의 키 형식은 다음과 같을 수 있습니다. **확인란** 또는 **점수 기준**, 구성 시 선택한 항목에 따라 달라집니다 [웹 사이트에 대한 사이트 키](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key):
 
-      ```xml
-          <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-          <afData>
-          <afUnboundData>
-              <data>
-                  <captcha16820607953761>
-                      <captchaType>reCaptchaEnterprise</captchaType>
-                      <captchaScore>0.9</captchaScore>
-                  </captcha16820607953761>
-              </data>
-          </afUnboundData>
-          <afBoundData>
-              <Root
-                  xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
-                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                  <PersonalDetails>
-                      <SSN>371237912</SSN>
-                      <FirstName>Sarah </FirstName>
-                      <LastName>Smith</LastName>
-                  </PersonalDetails>
-                  <OtherInfo>
-                      <City>California</City>
-                      <Address>54 Residency</Address>
-                      <State>USA</State>
-                      <Zip>123112</Zip>
-                  </OtherInfo>
-              </Root>
-          </afBoundData>
-          <afSubmissionInfo>
-              <stateOverrides/>
-              <signers/>
-              <afPath>/content/dam/formsanddocuments/captcha-form</afPath>
-              <afSubmissionTime>20230608034928</afSubmissionTime>
-          </afSubmissionInfo>
-          </afData>
-      ```
+   >[!NOTE]
+   >
+   >* 을 사용하는 클라우드 구성 **키 유형** 다음으로: **확인란**, 사용자 지정된 오류 메시지는 captcha 유효성 검사가 실패하면 인라인 메시지로 표시됩니다.
+   >* 을 사용하는 클라우드 구성 **키 유형** 다음으로: **점수 기준**&#x200B;사용자 지정된 오류 메시지는 captcha 유효성 검사가 실패하면 팝업 메시지로 표시됩니다.
 
+   1. 다음과 같이 크기를 선택할 수 있습니다. **[!UICONTROL 기본]** 및 **[!UICONTROL 콤팩트]**.
+   1. 다음을 선택할 수 있습니다. **[!UICONTROL 바인드 참조]**, 위치 **[!UICONTROL 바인드 참조]** 제출된 데이터는 바인딩된 데이터이며, 그렇지 않으면 바인딩되지 않은 데이터입니다. 다음은 양식 제출 시 바인딩되지 않은 데이터와 바인딩된 데이터(바인드 참조를 SSN으로 사용)의 XML 예입니다.
 
-      ```xml
-          <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-          <afData>
-          <afUnboundData>
-              <data/>
-          </afUnboundData>
-          <afBoundData>
-              <Root
-                  xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
-                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                  <PersonalDetails>
-                      <SSN>
-                          <captchaType>reCaptchaEnterprise</captchaType>
-                          <captchaScore>0.9</captchaScore>
-                      </SSN>
-                      <FirstName>Sarah</FirstName>
-                      <LastName>Smith</LastName>
-                  </PersonalDetails>
-                  <OtherInfo>
-                      <City>California</City>
-                      <Address>54 Residency</Address>
-                      <State>USA</State>
-                      <Zip>123112</Zip>
-                  </OtherInfo>
-              </Root>
-          </afBoundData>
-          <afSubmissionInfo>
-              <stateOverrides/>
-              <signers/>
-              <afPath>/content/dam/formsanddocuments/captcha-form</afPath>
-              <afSubmissionTime>20230608035111</afSubmissionTime>
-          </afSubmissionInfo>
-          </afData>
-      ```
+   ```xml
+           <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+           <afData>
+           <afUnboundData>
+               <data>
+                   <captcha16820607953761>
+                       <captchaType>reCaptchaEnterprise</captchaType>
+                       <captchaScore>0.9</captchaScore>
+                   </captcha16820607953761>
+               </data>
+           </afUnboundData>
+           <afBoundData>
+               <Root
+                   xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                   <PersonalDetails>
+                       <SSN>371237912</SSN>
+                       <FirstName>Sarah </FirstName>
+                       <LastName>Smith</LastName>
+                   </PersonalDetails>
+                   <OtherInfo>
+                       <City>California</City>
+                       <Address>54 Residency</Address>
+                       <State>USA</State>
+                       <Zip>123112</Zip>
+                   </OtherInfo>
+               </Root>
+           </afBoundData>
+           <afSubmissionInfo>
+               <stateOverrides/>
+               <signers/>
+               <afPath>/content/dam/formsanddocuments/captcha-form</afPath>
+               <afSubmissionTime>20230608034928</afSubmissionTime>
+           </afSubmissionInfo>
+           </afData>
+   ```
 
+   ```xml
+           <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+           <afData>
+           <afUnboundData>
+               <data/>
+           </afUnboundData>
+           <afBoundData>
+               <Root
+                   xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                   <PersonalDetails>
+                       <SSN>
+                           <captchaType>reCaptchaEnterprise</captchaType>
+                           <captchaScore>0.9</captchaScore>
+                       </SSN>
+                       <FirstName>Sarah</FirstName>
+                       <LastName>Smith</LastName>
+                   </PersonalDetails>
+                   <OtherInfo>
+                       <City>California</City>
+                       <Address>54 Residency</Address>
+                       <State>USA</State>
+                       <Zip>123112</Zip>
+                   </OtherInfo>
+               </Root>
+           </afBoundData>
+           <afSubmissionInfo>
+               <stateOverrides/>
+               <signers/>
+               <afPath>/content/dam/formsanddocuments/captcha-form</afPath>
+               <afSubmissionTime>20230608035111</afSubmissionTime>
+           </afSubmissionInfo>
+           </afData>
+   ```
 
-   **선택한 구성에 버전이 reCAPTCHA v2인 경우**:
-   1. 다음과 같이 크기를 선택할 수 있습니다. **[!UICONTROL 기본]** 또는 **[!UICONTROL 콤팩트]** reCAPTCHA 위젯의 경우 reCAPTCHA를 구성할 때 **[!UICONTROL 숨김]** 의심되는 활동이 있는 경우에만 CAPTCHA 문제를 표시하는 옵션입니다. 다음 **reCAPTCHA로 보호됨** 아래 표시된 배지는 보호된 양식에 표시됩니다.
+   다음을 선택하는 경우 **reCAPTCHA v2** 버전:
+   1. 다음과 같이 크기를 선택할 수 있습니다. **[!UICONTROL 기본]** 또는 **[!UICONTROL 콤팩트]** reCAPTCHA 위젯용
+   1. 다음을 선택할 수 있습니다. **[!UICONTROL 숨김]** 의심되는 활동이 있는 경우에만 CAPTCHA 문제를 표시하는 옵션입니다.
 
-      ![reCAPTCHA 배지로 보호된 Google](/help/forms/assets/google-recaptcha-v2.png)
-
-
-   reCAPTCHA 서비스가 적응형 양식에서 활성화됩니다. 양식을 미리 보고 CAPTCHA가 작동하는 것을 볼 수 있습니다.
+   reCAPTCHA 서비스가 적응형 양식에서 활성화됩니다. 양식을 미리 보고 CAPTCHA가 작동하는 것을 볼 수 있습니다. 다음 **reCAPTCHA로 보호됨** 아래 표시된 배지는 보호된 양식에 표시됩니다.
+   ![reCAPTCHA 배지로 보호된 Google](/help/forms/assets/google-recaptcha-v2.png)
 
 1. 속성을 저장합니다.
 
 >[!NOTE]
 > 
 > 선택 안 함 **[!UICONTROL 기본값]** 기본 AEM CAPTCHA 서비스가 더 이상 사용되지 않으므로 CAPTCHA 서비스 드롭다운에서 을 사용하십시오.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3422097/adaptive-forms-recaptcha-core-components-captcha/?quality=12&learn=on)
 
 ### 규칙에 따라 CAPTCHA 구성 요소 표시 또는 숨기기 {#show-hide-captcha}
 
