@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 758960006bd1e58530fdf7b20cdd761853170366
+source-git-commit: 71af59cae28332793471568069204e9c88acd6a5
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 41%
@@ -77,7 +77,7 @@ Experience Manager Assets는 이제 이미지 스마트 태그에 대해 향상�
 
 * [**기본 제공 테마**](/help/forms/using-themes-in-core-components.md) **및 템플릿**: 숙련된 전문가와 새로운 양식 작성자 모두에게 권한을 부여하도록 맞춤화된 즉시 사용할 수 있는 OOTB 테마 및 템플릿을 사용하여 양식 작성 프로세스를 시작하십시오. 적응형 Forms 핵심 구성 요소를 사용하여 간편하게 빌드된 이 세심하게 조정된 테마와 템플릿을 사용하면 일반적인 사용 사례에서 신속하게 양식을 만들 수 있습니다.
 
-!![기본 제공 템플릿](/help/forms/assets/form-templates-ootb.png)
+  ![기본 제공 템플릿](/help/forms/assets/form-templates-ootb.png)
 
 * **Headless Forms용 React 구성 요소**: 이제 즉시 제공된 React 구성 요소로 Headless 적응형 양식 렌디션을 미리 보고 사용자 정의할 수 있습니다. 이러한 구성 요소는 스타일을 지정하기 위해 적응형 Forms 핵심 구성 요소의 BEM 클래스를 활용하므로 특정 요구 사항에 따라 모양을 손쉽게 사용자 지정할 수 있습니다.
 
