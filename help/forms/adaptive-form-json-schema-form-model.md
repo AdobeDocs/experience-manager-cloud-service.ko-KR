@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 558662fb646abcf298a46fd0c1b1c709d53bce45
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1368'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 5%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 
@@ -730,6 +730,20 @@ JSON 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 �
   </tr>
  </tbody>
 </table>
+
+
+## 스키마 호환 데이터 활성화 {#enablig-schema-compliant-data}
+
+적응형 양식을 활성화하여 양식 제출 시 스키마 호환 데이터를 생성하려면 다음 단계를 수행하십시오.
+
+1. 다음 위치에서 Experience Manager 웹 콘솔로 이동 `https://server:host/system/console/configMgr`.
+1. 찾기 **[!UICONTROL 적응형 양식 및 대화형 통신 웹 채널 구성]**.
+1. 을 눌러 구성을 편집 모드로 엽니다.
+1. 다음 항목 선택 **[!UICONTROL 스키마 준수 데이터 생성]** 확인란.
+1. 설정을 저장합니다.
+
+![적응형 양식 및 대화형 통신 웹 채널 구성](/help/forms/assets/af-ic-web-channel-configuration.png)
+
 
 ## 지원되지 않는 구문  {#non-supported-constructs}
 
