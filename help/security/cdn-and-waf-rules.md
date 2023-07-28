@@ -1,9 +1,9 @@
 ---
 title: 트래픽을 필터링하기 위한 CDN 및 WAF 규칙 구성
 description: CDN 및 웹 애플리케이션 방화벽 규칙을 사용하여 악성 트래픽을 필터링합니다.
-source-git-commit: 579f2842a72c7da1c9d24772bdae354a943de40c
+source-git-commit: a9b8b4d6029d0975428b9cff04dbbec993d56172
 workflow-type: tm+mt
-source-wordcount: '2360'
+source-wordcount: '2371'
 ht-degree: 2%
 
 ---
@@ -170,7 +170,7 @@ Adobe은 고객 웹 사이트에 대한 공격을 완화하려고 하지만, 악
 | 데이터 센터 | 데이터 센터 트래픽 | 데이터 센터 트래픽은 식별된 호스팅 공급자에서 발생하는 비유기 트래픽입니다. 이 유형의 트래픽은 일반적으로 실제 최종 사용자와 관련이 없습니다. |
 | 널바이트 | Null 바이트 | Null 바이트는 일반적으로 요청에 표시되지 않으며 요청의 형식이 잘못되어 악의적일 수 있음을 나타냅니다. |
 | 사기꾼 | SearchBot 가져오기 | 검색 봇 사기꾼은 Google 또는 Bing 검색 봇을 가장하지만 합법적이지 않은 사람입니다. 참고: 는 응답에 직접 의존하지 않지만 먼저 클라우드에서 해결해야 하므로 사전 규칙에서 사용해서는 안 됩니다. |
-| 개인 파일 | 비공개 파일 | 개인 파일은 일반적으로 Apache와 같이 기본적으로 기밀입니다 `.htaccess` 파일 또는 중요한 정보를 유출할 수 있는 구성 파일 |
+| 개인 파일 | 비공개 파일 | 개인 파일은 일반적으로 Apache와 같은 속성에서 기밀입니다 `.htaccess` 파일 또는 중요한 정보를 유출할 수 있는 구성 파일 |
 | 스캐너 | 스캐너 | 자주 사용되는 스캔 서비스 및 도구 식별 |
 | RESPONSESPLIT | HTTP 응답 분할 | CRLF 문자가 HTTP 응답에 헤더를 삽입하기 위해 애플리케이션에 입력으로 제출되는 시점을 식별합니다 |
 | XML 오류 | XML 인코딩 오류 | &quot;Content-Type&quot; 요청 헤더 내에서 XML을 포함하는 것으로 지정되었지만 XML 구문 분석 오류가 포함된 POST, PUT 또는 PATCH 요청 본문. 이는 종종 프로그래밍 오류나 자동화된 요청 또는 악의적인 요청과 관련이 있습니다. |
@@ -312,6 +312,7 @@ data:
 "ttfb": 19,
 "cip": "147.160.230.112",
 "rid": "974e67f6",
+"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "host": "example.com",
 "url": "/block-me",
 "req_mthd": "GET",
@@ -329,11 +330,12 @@ data:
 "timestamp": "2023-05-26T09:20:01+0000",
 "ttfb": 19,
 "cip": "147.160.230.112",
+"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "rid": "974e67f6",
 "host": "example.com",
 "url": "/?sqli=%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20fAPK",
 "req_mthd": "GET",
-"res_type": "",
+"res_type": "image/png",
 "cache": "PASS",
 "res_status": 406,
 "res_bsize": 3362,
@@ -352,6 +354,7 @@ data:
 | *ttfb* | 의 약어 *첫 번째 바이트까지의 시간*. 요청 사이의 시간 간격이 응답 본문의 스트리밍을 시작하기 전 시점까지 시작되었습니다. |
 | *cip* | 클라이언트 IP 주소입니다. |
 | *rid* | 요청을 고유하게 식별하는 데 사용되는 요청 헤더의 값입니다. |
+| *ua* | 주어진 HTTP 요청을 담당하는 사용자 에이전트입니다. |
 | *호스트* | 요청이 의도한 권한. |
 | *url* | 쿼리 매개 변수를 포함한 전체 경로입니다. |
 | *req_mthd* | &quot;GET&quot; 또는 &quot;POST&quot;와 같이 클라이언트가 전송하는 HTTP 메서드입니다. |
