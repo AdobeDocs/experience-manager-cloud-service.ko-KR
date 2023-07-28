@@ -5,7 +5,7 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: 558662fb646abcf298a46fd0c1b1c709d53bce45
+source-git-commit: c00080859cc10da2da887cf1a711e1aef9dc5fb8
 workflow-type: tm+mt
 source-wordcount: '1368'
 ht-degree: 5%
@@ -734,7 +734,7 @@ JSON 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 �
 
 ## 스키마 호환 데이터 활성화 {#enablig-schema-compliant-data}
 
-적응형 양식을 활성화하여 양식 제출 시 스키마 호환 데이터를 생성하려면 다음 단계를 수행하십시오.
+양식 제출 시 모든 JSON 스키마 기반 적응형 Forms이 스키마 호환 데이터를 생성할 수 있도록 하려면 다음 단계를 따르십시오.
 
 1. 다음 위치에서 Experience Manager 웹 콘솔로 이동 `https://server:host/system/console/configMgr`.
 1. 찾기 **[!UICONTROL 적응형 양식 및 대화형 통신 웹 채널 구성]**.
