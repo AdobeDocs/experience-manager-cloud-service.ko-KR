@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 71af59cae28332793471568069204e9c88acd6a5
+source-git-commit: 3ac4fcd1f3ef1ef78dcee3c10bfbc99f9d7ba3ad
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 41%
+source-wordcount: '935'
+ht-degree: 43%
 
 ---
 
@@ -50,11 +50,15 @@ ht-degree: 41%
 
 ### Assets 보기의 새로운 기능 {#assets-view-features}
 
-**폴더에 메타데이터 양식 할당**
+<!--
 
-이제 Assets Essentials 배포 내의 특정 폴더에 메타데이터 양식을 할당할 수 있습니다. 하위 폴더의 에셋을 포함하여 폴더의 모든 에셋은 할당된 메타데이터 양식에 정의된 속성을 표시합니다.
+**Assign metadata form to a folder**
 
-![폴더에 메타데이터 양식 할당](/help/release-notes/assets/assign-to-folder.png)
+You can now assign metadata form to a specific folder within your Assets Essentials deployment. All assets in the folder, including assets in the sub-folders, then display properties defined in the assigned metadata form.
+
+![assign metadata form to a folder](/help/release-notes/assets/assign-to-folder.png)
+
+-->
 
 **이미지 스마트 태그를 위한 인공 지능 프레임워크 개선**
 
