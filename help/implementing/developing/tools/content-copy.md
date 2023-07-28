@@ -2,7 +2,7 @@
 title: 콘텐츠 복사 도구
 description: 컨텐츠 복사 도구를 사용하면 사용자가 필요에 따라 변화하는 컨텐츠를 AEM의 프로덕션 환경에서 테스트 목적으로 낮은 환경으로 as a Cloud Service으로 복사할 수 있습니다.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: f579539d582e2059fca20f9f7e5e82f4ae24c833
+source-git-commit: 639c49c69c87e7c408929f0d35a673a96a5cc5db
 workflow-type: tm+mt
 source-wordcount: '1308'
 ht-degree: 38%
@@ -39,7 +39,7 @@ ht-degree: 38%
 
 | 콘텐츠 복사 기능 | AEM 관리자 그룹 | 배포 관리자 역할 |
 |---|---|---|
-| [콘텐츠 세트](#create-content-set) 만들기 및 수정 | 필수 | 필요 없음 |
+| [콘텐츠 세트](#create-content-set) 만들기 및 수정 | 필요 없음 | 필수 |
 | [콘텐츠 복사 프로세스](#copy-content) 시작 또는 취소 | 필수 | 필수 |
 
 권한 및 권한 설정 방법에 대한 자세한 내용은 문서를 참조하십시오 [AEM as a Cloud Service 팀 및 제품 프로필.](/help/onboarding/aem-cs-team-product-profiles.md)
