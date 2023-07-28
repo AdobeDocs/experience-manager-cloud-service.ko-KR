@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3ac4fcd1f3ef1ef78dcee3c10bfbc99f9d7ba3ad
+source-git-commit: 5995c416328e6f340285004ec2e723cc9279dabd
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 43%
@@ -30,7 +30,7 @@ ht-degree: 43%
 
 ## 릴리스 비디오 {#release-video}
 
-2023년 7월 릴리스 개요 비디오를 통해 2023.6.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
+2023년 7월 릴리스 개요 비디오를 통해 2023.7.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3422016/?quality=12)
 
