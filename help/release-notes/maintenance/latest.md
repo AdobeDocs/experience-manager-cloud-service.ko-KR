@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 704f4e250975d8c0cbcfdc5e49b9c03d3a3e2939
 workflow-type: tm+mt
 source-wordcount: '190'
-ht-degree: 73%
+ht-degree: 82%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 73%
 
 ## 릴리스 12790 {#release-12790}
 
-다음은 2023년 7월 21일에 공개적으로 릴리스된 유지 보수 릴리스 12790에 대한 지속적인 개선 사항을 요약했습니다. 이 유지 관리 릴리스는 이전 유지 관리 릴리스 12697의 업데이트입니다.
+2023년 7월 21일에 릴리스된 유지 관리 릴리스 12790의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이 유지 관리 릴리스는 이전 유지 관리 릴리스 12697의 업데이트입니다.
 
 이 유지 관리 릴리스(2023.7.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)을 참조하십시오.
 

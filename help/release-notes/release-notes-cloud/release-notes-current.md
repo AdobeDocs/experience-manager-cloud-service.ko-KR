@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 5995c416328e6f340285004ec2e723cc9279dabd
 workflow-type: tm+mt
 source-wordcount: '935'
-ht-degree: 43%
+ht-degree: 49%
 
 ---
 
@@ -60,19 +60,19 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 -->
 
-**이미지 스마트 태그를 위한 인공 지능 프레임워크 개선**
+**이미지 스마트 태그에 대해 개선된 인공 지능 프레임워크**
 
-Experience Manager Assets는 이제 이미지 스마트 태그에 대해 향상된 인공 지능 프레임워크를 사용합니다. 이 콘텐츠 인텔리전스는 수집 시 모든 이미지 에셋에 사용할 수 있는 스마트 태그의 관련성과 정확성을 향상시킵니다.
+Experience Manager Assets는 이제 이미지 스마트 태그에 대해 향상된 인공 지능 프레임워크를 사용합니다. 이 콘텐츠 인텔리전스는 수집 시 모든 이미지 자산에 사용할 수 있는 스마트 태그의 관련성과 정확성을 향상시킵니다.
 
 **자산 목록 보기에 대한 열 표시 구성**
 
-이제 Assets Essentials은 상태, 형식, Dimension, 크기 등과 같이 에셋 목록 보기에 표시되는 열을 선택하는 기능을 제공합니다.
+이제 Assets Essentials가 상태, 형식, 차원, 크기 등과 같이 자산 목록 보기에 표시되는 열을 선택할 수 있는 기능을 제공합니다.
 
 ![열 구성](/help/release-notes/assets/configure-columns.png)
 
 **관련성을 기준으로 검색 결과 정렬**
 
-이제 Assets Essentials은 기본적으로 관련성을 기준으로 검색 결과를 정렬합니다. 검색된 자산을 `Name`, `Relevance`, `Size`, `Modified` 및 `Created`의 오름차순 또는 내림차순으로 정렬할 수 있습니다.
+이제 Assets Essentials는 기본적으로 관련성을 기준으로 검색 결과를 정렬합니다. 검색된 자산을 `Name`, `Relevance`, `Size`, `Modified` 및 `Created`의 오름차순 또는 내림차순으로 정렬할 수 있습니다.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}

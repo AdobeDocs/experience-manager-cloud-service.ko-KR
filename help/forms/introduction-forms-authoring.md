@@ -23,7 +23,7 @@ ht-degree: 97%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 ## 개요 {#overview}
@@ -162,7 +162,7 @@ XML 및 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생�
   </tr>
   <tr>
    <td>파일 첨부</td>
-   <td><p>사용자가 지원 문서를 검색하고 양식에 첨부할 수 있는 버튼을 추가합니다.</p> <p><strong>참고: </strong>첨부 파일 구성 요소는 Adobe Sign에 사용되는 적응형 양식에서 사전 정의된 파일 형식 세트를 지원합니다. 자세한 내용은 <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">지원되는 파일 형식</a>을 참조하십시오.</p> </td>
+   <td><p>사용자가 지원 문서를 검색하고 양식에 첨부할 수 있는 버튼을 추가합니다.</p> <p><strong>참고: </strong>첨부 파일 구성 요소는 Adobe Sign에 사용되는 적응형 양식에서 사전 정의된 파일 형식 세트를 지원합니다. 자세한 내용은 <a href="https://helpx.adobe.com/kr/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">지원되는 파일 형식</a>을 참조하십시오.</p> </td>
   </tr>
   <tr>
    <td>첨부 파일 나열</td>

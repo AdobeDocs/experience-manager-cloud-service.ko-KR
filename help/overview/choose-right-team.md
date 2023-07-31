@@ -5,7 +5,7 @@ exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
 source-wordcount: '847'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 98%
 >id="aemcloud_chooseteam"
 >title="적합한 팀 선택"
 >abstract="Adobe Experience Manager 배포를 정상적으로 이끌 수 있도록 적합한 인력을 배치하십시오."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="KPI 정렬"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=en" text="KPI 평가"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=ko" text="KPI 정렬"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=ko" text="KPI 평가"
 
 조직 내 여러 부서에서 디지털 환경의 다양한 측면을 보일 수 있습니다. 거버넌스를 갖추지 않으면 끝없는 논쟁과 내분, 혼란의 상황이 발생할 것입니다.
 
@@ -42,13 +42,13 @@ ht-degree: 98%
 | 백엔드 개발자 | Agile 인증, 컴퓨터 프로그래밍 및 컴퓨터 과학에 대한 경험 | 초보자부터 중급자 | 세부 지향적, 프로세스 중심, 일관적 |
 | 프론트엔드 개발자 | Agile 인증, HTML, CSS 및 JavaScript에 대한 이해 | 초보자부터 중급자 | 세부 지향적, 프로세스 중심, 일관적 |
 
-필요한 역할이 무엇인지 알았으므로 아래 표를 참조하여 구현 프로세스에서 각 역할이 언제 수행되는지 확인하십시오.
+필요한 역할이 무엇인지 알았으므로 아래 표를 참조하여 구현 프로세스에서 각 역할이 언제 수행되는지 확인합니다.
 
 <br>
 
 ![구현을 위한 역할 검토](assets/team_involvement.png)
 
-**구현 팀과 함께 이 목록을 검토**&#x200B;하고 각 역할에 대해 관련 자격 조건을 갖춘 인력이 있는지 확인하십시오. Adobe Experience Cloud에 익숙하지 않은 팀원은 [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) 학습 리소스를 사용하여 [Adobe 디지털 학습](https://learning.adobe.com/certification.html)을 통해 인증을 받을 수 있습니다.
+**구현 팀과 함께 이 목록을 검토**&#x200B;하고 각 역할에 대해 관련 자격 조건을 갖춘 인력이 있는지 확인합니다. Adobe Experience Cloud에 익숙하지 않은 팀원은 [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) 학습 리소스를 사용하여 [Adobe 디지털 학습](https://learning.adobe.com/certification.html)을 통해 인증을 받을 수 있습니다.
 
 ## **AEM Experience Manager Assets에 대한 주요 역할**
 
@@ -69,11 +69,11 @@ Adobe Experience Manager Assets 구현을 정상적으로 실행하기 위해 �
 | 프론트엔드 개발자 | Agile 인증, HTML, CSS 및 JavaScript에 대한 이해 | 초보자부터 중급자 | 세부 지향적, 프로세스 중심, 일관적 |
 | DAM 라이브러리 관리자 | 라이브러리 과학 배경 지식 및 학위 | 전문가 | 세부 지향적, 프로세스 중심, 조직적 |
 
-필요한 역할이 무엇인지 알았으므로 아래 표를 참조하여 구현 프로세스에서 각 역할이 언제 수행되는지 확인하십시오.
+필요한 역할이 무엇인지 알았으므로 아래 표를 참조하여 구현 프로세스에서 각 역할이 언제 수행되는지 확인합니다.
 
 <br>
 
-![AEM Assets 팀에 대한 가상 역할과 참여 수준을 보여 주는 가로 막대 차트입니다.](/help/overview/assets/team_involvement2.png)
+![가상 역할과 AEM Assets 팀에 대한 참여 수준을 보여 주는 수평 막대 차트.](/help/overview/assets/team_involvement2.png)
 
 >[!TIP]
 >

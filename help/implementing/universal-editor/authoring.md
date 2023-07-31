@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 source-git-commit: 481202760e0d22cde9c32e0b781dc99f67d463e4
 workflow-type: tm+mt
 source-wordcount: '1939'
-ht-degree: 44%
+ht-degree: 69%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 44%
 
 Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면을 편집할 수 있기 때문에 뛰어난 경험을 제공하고, 콘텐츠 속도를 높이고, 최신 개발자 경험을 제공할 수 있습니다.
 
-이를 위해 범용 편집기는 콘텐츠 작성자에게 콘텐츠 편집을 시작하고 바로 시작할 수 있는 최소 교육이 필요한 직관적인 UI를 제공합니다. 이 문서에서는 범용 편집기의 작성 환경에 대해 설명합니다.
+이를 위해 제공되는 Universal Editor는 콘텐츠 작성자가 최소한의 교육만 받으면 사용할 수 있어 바로 부담 없이 콘텐츠 편집을 시작할 수 있습니다. 이 문서에서는 Universal Editor의 작성 환경에 대해 설명합니다.
 
 >[!TIP]
 >
@@ -26,7 +26,7 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 
 >[!NOTE]
 >
->유니버설 편집기는 아직 개발 중입니다. 현재 일부 컨텐츠 유형은 편집할 수 없습니다.
+>Universal Editor는 아직 개발 중입니다. 현재 모든 콘텐츠 유형을 편집할 수 없습니다.
 
 ## 앱 준비 {#prepare-app}
 
@@ -40,11 +40,11 @@ Universal Editor로 앱의 콘텐츠를 작성하려면 개발자가 앱을 계�
 
 Universal Editor와 함께 작동하도록 앱이 구성되었으면 Universal Editor에 로그인해야 합니다. 로그인하고 [Universal Editor에 액세스하려면](getting-started.md#request-access) Adobe ID가 필요합니다.
 
-로그인한 후 편집할 페이지의 URL을 [위치 표시줄.](#location-bar) 따라서 다음과 같은 콘텐츠 편집을 시작할 수 있습니다. [텍스트 컨텐츠](#text-mode) 또는 [미디어 콘텐츠.](#media-mode)
+로그인한 후에 [위치 표시줄에 편집하려는 페이지의 URL을 입력하여](#location-bar)[텍스트 콘텐츠](#text-mode) 또는 [미디어 콘텐츠](#media-mode)와 같은 콘텐츠를 편집할 수 있습니다.
 
 ## UI 이해 {#ui}
 
-UI는 5개의 기본 영역으로 나뉩니다.
+UI는 크게 다섯 가지 영역으로 나뉩니다.
 
 * [Experience Cloud 헤더](#experience-cloud-header)
 * [Universal Editor 헤더](#universal-editor-header)
@@ -124,7 +124,7 @@ Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바�
 
 #### 에뮬레이터 설정 {#emulator}
 
-에뮬레이션 아이콘을 탭하거나 클릭하여 유니버설 편집기에서 페이지를 렌더링하는 방법을 정의합니다.
+에뮬레이션 아이콘을 탭하거나 클릭하여 Universal Editor가 페이지를 렌더링하는 방법을 정의합니다.
 
 ![에뮬레이터 아이콘](assets/emulator.png)
 
@@ -132,12 +132,12 @@ Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바�
 
 ![에뮬레이션 옵션](assets/emulation-options.png)
 
-기본적으로 편집기는 브라우저에서 자동으로 높이 및 너비를 정의하는 데스크탑 레이아웃으로 열립니다.
+기본적으로 편집기는 브라우저에서 높이 및 폭이 자동으로 정의되는 데스크탑 레이아웃에서 열립니다.
 
-모바일 장치와 범용 편집기 내에서 에뮬레이션하도록 선택할 수도 있습니다.
+Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있습니다.
 
 * 방향 정의
-* 폭 및 높이 정의
+* 폭과 높이 정의
 * 방향 변경
 
 #### 앱 미리보기 열기 {#open-app-preview}
@@ -148,7 +148,7 @@ Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바�
 
 >[!TIP]
 >
->단축키 사용 `O` (O자): 앱 미리 보기를 엽니다.
+>단축키 `O`(O자)를 사용하여 앱 미리보기를 엽니다.
 
 #### 게시 {#publish}
 
@@ -162,7 +162,7 @@ Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바�
 
 ### 모드 레일 {#rail}
 
-모드 레일은 항상 편집기의 왼쪽에 표시됩니다. 이를 통해 편집기를 다양한 편집 모드 간에 쉽게 전환할 수 있습니다.
+모드 레일은 항상 편집기의 왼쪽에 있습니다. 이를 통해 편집 모드 간에 편집기를 쉽게 전환할 수 있습니다.
 
 ![모드 레일](assets/mode-rail.png)
 
@@ -187,7 +187,7 @@ Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바�
 
 >[!TIP]
 >
->단축키 사용 `T` 텍스트 모드로 전환합니다.
+>단축키 `T`를 사용하여 텍스트 모드로 전환합니다.
 
 #### 미디어 모드 {#media-mode}
 
@@ -199,7 +199,7 @@ Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바�
 
 >[!TIP]
 >
->단축키 사용 `M` 미디어 모드로 전환합니다.
+>단축키 `M`를 사용하여 미디어 모드로 전환합니다.
 
 #### 구성 요소 모드 {#component-mode}
 
@@ -211,7 +211,7 @@ Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바�
 
 >[!TIP]
 >
->단축키 사용 `C` 구성 요소 모드로 전환합니다.
+>단축키 `C`를 사용하여 구성 요소 모드로 전환합니다.
 
 #### 편집 {#edit}
 
@@ -225,26 +225,26 @@ Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바�
 
 >[!TIP]
 >
->단축키 사용 `E` 을 눌러 선택한 구성 요소를 편집합니다.
+>단축키 `E`를 사용하여 선택한 구성 요소를 편집합니다.
 
 ### 편집기 {#editor}
 
-편집기는 창의 대부분을 차지하며 페이지가 지정된 위치입니다. [위치 표시줄](#location-bar) 렌더링됩니다.
+편집기는 창의 대부분을 차지하며 [위치 표시줄](#location-bar)에 지정된 페이지가 렌더링되는 곳입니다.
 
 * 편집기가 다음과 같은 편집 모드에 있는 경우 [텍스트 모드](#text-mode) 또는 [미디어 모드,](#media-mode) 컨텐츠는 편집할 수 있지만 링크를 따라갈 수는 없습니다.
-* 편집기가 인 경우 [미리 보기 모드,](#preview-mode) 콘텐츠를 탐색할 수 있고 링크를 따라갈 수 있지만 콘텐츠를 편집할 수는 없습니다.
+* 편집기가 [미리보기 모드](#preview-mode)에 있는 경우 콘텐츠를 탐색하고 링크를 따라갈 수 있지만, 콘텐츠를 편집할 수 없습니다.
 
 ![편집기](assets/editor.png)
 
 ### 구성 요소 레일 {#component-rail}
 
-구성 요소 레일은 항상 편집기의 왼쪽에 표시됩니다. 모드에 따라 콘텐츠 또는 페이지 콘텐츠의 계층에서 선택한 구성 요소에 대한 세부 정보가 표시될 수 있습니다.
+구성 요소 레일은 항상 편집기의 왼쪽에 있습니다. 해당 모드에 따라 콘텐츠 또는 페이지 콘텐츠의 계층 구조에서 선택한 구성 요소에 대한 세부 정보를 표시할 수 있습니다.
 
 ![구성 요소 레일](assets/component-rail.png)
 
 #### 속성 모드 {#properties-mode}
 
-속성 모드에서 레일에는 편집기에서 현재 선택한 구성 요소의 속성이 표시됩니다. 페이지가 로드될 때 구성 요소 레일의 기본 모드입니다.
+속성 모드의 레일에 편집기에서 현재 선택한 구성 요소의 속성이 표시됩니다. 페이지가 로드될 때 구성 요소의 기본 모드입니다.
 
 ![속성 모드](assets/properties-mode.png)
 
@@ -256,26 +256,26 @@ Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바�
 
 >[!TIP]
 >
->단축키 사용 `D` 속성 모드로 전환합니다.
+>단축키 `D`를 사용하여 속성 모드로 전환합니다.
 
-#### 컨텐츠 트리 모드 {#Content-tree-mode}
+#### 콘텐츠 트리 모드 {#Content-tree-mode}
 
-콘텐츠 트리 모드에서 레일은 페이지 콘텐츠의 계층 구조를 보여 줍니다.
+콘텐츠 트리 모드의 경우 레일에 페이지 콘텐츠의 계층 구조가 표시됩니다.
 
-![컨텐츠 트리 모드](assets/content-tree-mode.png)
+![콘텐츠 트리 모드](assets/content-tree-mode.png)
 
-콘텐츠 트리에서 항목을 선택하면 편집기가 해당 콘텐츠로 스크롤하여 선택합니다.
+콘텐츠 트리의 항목을 선택하면 편집기는 해당 콘텐츠를 스크롤하여 선택합니다.
 
 ![콘텐츠 트리](assets/content-tree.png)
 
 >[!TIP]
 >
->단축키 사용 `F` 컨텐츠 트리 모드로 전환합니다.
+>단축키 `F`를 사용하여 콘텐츠 트리 모드로 전환합니다.
 
 
 ## 콘텐츠 편집 {#editing-content}
 
-콘텐츠 편집은 간단하고 직관적입니다. 편집 모드([텍스트 모드](#text-mode), [미디어 모드](#media-mode), 및 [구성 요소 모드](#component-mode)) 편집기의 콘텐츠 위로 마우스를 가져가면 편집 가능한 콘텐츠가 파란색 상자로 강조 표시됩니다.
+콘텐츠 편집은 간단하고 직관적입니다. 편집 모드([텍스트 모드](#text-mode), [미디어 모드](#media-mode) 및 [구성 요소 모드](#component-mode))에서 편집기에서 콘텐츠 위로 마우스를 가져가면 편집 가능한 콘텐츠가 파란색 상자로 강조 표시됩니다.
 
 ![편집 가능한 콘텐츠는 파란색 상자로 강조 표시됩니다](assets/editable-content.png)
 
@@ -299,7 +299,7 @@ Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바�
 
 또한 서식 옵션 및 텍스트에 대한 세부 사항은 구성 요소 레일에서 사용할 수 있습니다.
 
-![리치 텍스트 구성 요소 편집](assets/rich-text-editing.png)
+![서식 있는 텍스트 구성 요소 편집](assets/rich-text-editing.png)
 
 서식 변경 사항은 콘텐츠에 자동으로 저장됩니다.
 
@@ -321,7 +321,7 @@ Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바�
 >
 >단축키 사용 `R` 에셋 선택기를 열어 선택한 이미지를 바꿉니다.
 
-### 컨텐츠 조각 편집 {#edit-content-fragment}
+### 콘텐츠 조각 편집 {#edit-content-fragment}
 
 에 있는 경우 [구성 요소 모드](#component-mode) 다음 중 하나를 선택합니다. [컨텐츠 조각,](/help/assets/content-fragments/content-fragments.md) 구성 요소 레일에서 세부 사항을 편집할 수 있습니다.
 
@@ -337,7 +337,7 @@ Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바�
 
 콘텐츠 편집을 마치면 콘텐츠를 탐색하여 다른 페이지의 콘텐츠에서 어떻게 보이는지 확인하고 싶은 경우가 많습니다. [미리보기 모드](#preview-mode)에서 링크를 클릭하여 독자처럼 콘텐츠를 탐색할 수 있습니다. 콘텐츠는 게시될 때 편집기에서 렌더링됩니다.
 
-미리보기 모드에서 콘텐츠를 탭하거나 클릭하면 콘텐츠 독자에게 반응하는 것처럼 반응합니다. 편집할 컨텐츠를 선택하려면 와 같은 편집 모드로 전환합니다. [텍스트 모드](#text-mode) 또는 [미디어 모드입니다.](#media-mode)
+미리보기 모드에서 콘텐츠를 탭하거나 클릭하면 콘텐츠 독자에게 반응하는 것처럼 반응합니다. 편집할 콘텐츠를 선택하려면 [텍스트 모드](#text-mode) 또는 [미디어 모드](#media-mode)와 같은 편집 모드로 전환합니다.
 
 ## 추가 리소스 {#additional-resources}
 
