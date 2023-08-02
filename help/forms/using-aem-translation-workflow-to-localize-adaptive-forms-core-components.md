@@ -2,7 +2,7 @@
 title: 적응형 양식 기반의 핵심 구성 요소 번역
 description: 기계 번역 또는 사람 번역을 사용하여 적응형 양식 기반의 핵심 구성 요소 번역
 feature: Adaptive Forms
-source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
+source-git-commit: 4f2a51502202fba3792cde370180d127f8e17418
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 4%
