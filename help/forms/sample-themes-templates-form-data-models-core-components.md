@@ -7,7 +7,7 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: b527e7499bfd995362b792ca1c57a2c92901739c
+source-git-commit: 2739b89da945cb96b35bfd33e683b5b5e98490d0
 workflow-type: tm+mt
 source-wordcount: '1210'
 ht-degree: 4%
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 # 핵심 구성 요소의 샘플 테마, 템플릿 및 양식 데이터 모델 {#sample-themes-templates-and-data-models}
 
-AEM Forms as a Cloud Service에서는 샘플 참조 테마, 템플릿 및 양식 데이터 모델을 제공하여 핵심 구성 요소로 적응형 Forms을 신속하게 만들 수 있습니다. 다음을 수행할 수 있습니다. [적응형 Forms 핵심 구성 요소 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) AEM Forms as a Cloud Service 및 로컬 개발 환경에서 샘플 OOTB 템플릿을 가져와 [샘플 테마 사용 및 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) 위치: [!DNL AEM Forms].
+AEM Forms 핵심 구성 요소는 핵심 구성 요소를 사용하여 적응형 Forms을 신속하게 만들 수 있도록 샘플 참조 테마, 템플릿 및 양식 데이터 모델을 제공합니다. 다음을 수행할 수 있습니다. [적응형 Forms 핵심 구성 요소 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) AEM Forms as a Cloud Service 및 로컬 개발 환경에서 샘플 OOTB 템플릿을 가져와 [샘플 테마 사용 및 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) 위치: [!DNL AEM Forms].
 
 참조 콘텐츠 패키지에 포함된 샘플 테마, 템플릿 및 양식 데이터 모델은 다음과 같습니다.
 
@@ -47,20 +47,20 @@ AEM Forms as a Cloud Service에서는 샘플 참조 테마, 템플릿 및 양식
 
 캔버스 테마는 양식의 기본 테마이며 기본 색상, 투명도 및 플랫 아이콘 사용을 강조합니다. 아래 스크린샷에서는 캔버스 테마의 모양을 확인할 수 있습니다.
 
-![캔버스 테마](assets/canvas-theme.png)
+![캔버스 테마](assets/Safety-Inspection-Theme-Canvas.png)
 
 ### WKND {#WKND}
 
 WKND 테마는 생동감 있고 상상력이 풍부하며 매력적인 디자인을 구현하여 스타일리시한 모습을 양식에 선보이고 있습니다. 테마는 의 모양과 스타일을 기반으로 합니다. [WKND 사이트](https://wknd.site/us/en.html) 에 여행 및 모험 웹 사이트 빌드 [Adobe Experience Manager 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction).
 
-![WKND 테마](assets/WKND-theme.png)
+![WKND 테마](assets/Safety-Inspection-Form-Theme.png)
 
 
 ### 이젤 {#Easel}
 
 이젤 테마는 매력적이고 설정하기 쉬운 양식 모양을 만드는 데 도움이, 그것은 단순성과 사용자 친화성을 위해 사용자 지정. 이젤 테마는 작가가 그림을 그리는 동안 캔버스를 지탱하기 위해 사용하는 휴대용 스탠드를 콘셉트로 하고 있다.
 
-![이젤 테마](assets/Easel-theme.png)
+![이젤 테마](assets/Safety-Inspection-Theme-Easel.png)
 
 ## 샘플 템플릿 {#Sample-templates}
 
@@ -72,46 +72,19 @@ WKND 테마는 생동감 있고 상상력이 풍부하며 매력적인 디자인
 
 기본 템플릿을 사용하면 등록 경험 양식을 신속하게 만들 수 있습니다. 이 구성 요소를 사용하여 의 기능을 미리 볼 수도 있습니다. [적응형 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction). 또한 데이터의 섹션별 표시를 위한 마법사 레이아웃을 제공합니다.
 
->[!BEGINTABS]
-
->[!TAB 데스크탑]
-
-![기본 템플릿 데스크탑](assets/Basic-template-desktop-view.png)
-
->[!TAB 전화]
-
-![기본 템플릿 전화](assets/Basic-temp-phone-view.png){width:&quot;25%&quot;}
-
->[!TAB 태블릿]
-
-![기본 템플릿 태블릿](assets/Basic-temp-tablet-view.png)
-
->[!ENDTABS]
-
+![기본 템플릿](assets/Basic-template-desktop-view.png)
 
 ### 비어 있음 {#Blank}
 
 빈 캔버스 템플릿을 사용하여 적응형 양식 구조, 콘텐츠 및 규칙을 처음부터 만듭니다. 빈 템플릿에는 양식 구성 요소가 미리 통합되어 있지 않습니다.
 
->[!BEGINTABS]
-
->[!TAB 데스크탑]
-
-![빈 템플릿 데스크탑](assets/Blank-temp-desktop-view.png)
-
->[!TAB 전화]
-
-![기본 템플릿 전화](assets/Blank-temp-phone-view.png){width:&quot;25%&quot;}
-
->[!TAB 태블릿]
-
-![기본 템플릿 태블릿](assets/Blank-temp-tablet-view.png)
-
->[!ENDTABS]
+![비어 있는 템플릿](assets/Blank-temp-desktop-view.png)
 
 ### 연락처 {#Contact-Us}
 
 연락처 양식 템플릿은 웹 사이트 방문자와 관리자 간의 원활한 커뮤니케이션을 위한 양식을 만드는 데 사용됩니다. 사용자는 양식을 통해 쿼리, 피드백 또는 지원 요청을 제출할 수 있습니다.
+
+![연락처 템플릿](assets/Contact-us-desktop-view.png)
 
 ### 연락처 세부 정보 업데이트 {#Contact-Details-Update}
 
@@ -123,21 +96,34 @@ WKND 테마는 생동감 있고 상상력이 풍부하며 매력적인 디자인
 
 동의 양식 템플릿은 특정 활동, 연구 연구, 의료 절차 또는 개인 정보나 권리가 개입될 수 있는 모든 상황에 참여하는 참여자로부터 법적 문서를 받을 수 있는 양식을 만드는 데 사용됩니다. 그 형태는 투명성을 보장하고, 참여자의 권리를 보호하며, 개인이 동의하는 것에 대한 명확한 이해를 확립한다.
 
+![동의 양식](assets/Consent-form-desktop-view.png)
+
 ### 로그 서비스 요청 {#Log-Service-Request}
 
 로그 서비스 요청 템플릿은 서비스 공급자로부터 특정 로깅 서비스를 요청하는 양식을 만드는 데 도움이 됩니다. 이 양식은 특정 이벤트, 활동 또는 상태 모니터링 또는 추적을 위해 기록된 데이터가 있는 티켓을 만들기 위한 공식적인 요청 역할을 합니다.
+
+![로그 서비스 요청 템플릿](assets/Log-service-request-desktop-view.png)
+
 
 ### 피드백 제공 {#Give-Feedback}
 
 피드백 양식 템플릿 제공은 다른 사람 또는 팀에 건설적인 피드백을 제공하는 양식을 작성하는 데 도움이 됩니다. 이 양식은 피드백이 명확하고 구체적이며 실행 가능하고 개방형 커뮤니케이션 및 개선을 촉진하도록 하는 데 도움이 됩니다.
 
+![피드백 템플릿 제공](assets/Give-feedback-desktop-view.png)
+
+
 ### 복리후생 등록 {#Benefits-Enrollment}
 
 복리후생 등록 양식 템플리트는 사원으로부터 선호 복리후생 및 수혜범위 선택사항에 관한 필수 정보를 수집하는 양식을 생성하는 데 사용됩니다. 이는 일반적으로 연간 복리후생 등록 기간과 동반됩니다.
 
+![복리후생 등록 템플리트](assets/Benefits-enrollment-form-template.png)
+
+
 ### 직원 복리후생 요약 {#Employee-Benefits-Summary}
 
 직원 복리후생 요약 양식 템플릿을 사용하여 양식을 작성하여 개인의 복리후생에 대한 중요한 세부 정보를 수집합니다. 효율적인 지원 및 지원을 위한 포괄적인 개요를 제공하여 적용 범위를 빠르고 정확하게 평가하는 데 도움이 됩니다.
+![직원 복리후생 요약](assets/Employee-benefits-summary.png)
+
 
 ### 계정 명세서 요청 {#Request-for-Account-Statement}
 
@@ -149,15 +135,20 @@ WKND 테마는 생동감 있고 상상력이 풍부하며 매력적인 디자인
 
 안전 검사 양식 서식 파일은 안전한 작업 환경을 위해 세부 정보를 입력하는 양식을 만드는 데 도움이 됩니다. 이 양식을 활용하여 정기적인 검사를 실시함으로써 잠재적인 위험요소를 파악할 수 있다. 이 양식은 직원, 방문자 및 고객의 안전과 복지를 위해 비상구, 화재 안전, 전기 안전, 위험 물질, 개인 보호 장비, 워크스테이션 인체공학 등 다양한 측면을 다룹니다.
 
+![안전 검사 양식](assets/Safety-inspection-form.png)
+
 ### 품질 관리 검사 {#Quality-Control-Inspection}
 
 품질 관리 검사 양식 서식 파일은 제품이나 항목의 시각적 모양, 차원, 기능, 설명서, 테스트 결과 및 전체 품질을 평가하고 문서화하는 양식을 만드는 데 사용됩니다. 품질 표준 준수를 보장하는 데 필요한 결함, 부적합 및 시정 조치를 식별하는 데 도움이 됩니다.
+
+![품질 관리 검사](assets/Quality-Control-Inspection.png)
+
 
 ### 구매 요청 {#Purchase-Request}
 
 구매 요청 양식 템플릿을 사용하면 조달 프로세스를 시작하고 직원들이 작업에 필요한 물품 또는 서비스의 구매를 공식적으로 요청할 수 있는 양식을 작성할 수 있습니다. 이 양식에는 품목 설명, 수량, 선호 공급자(해당되는 경우), 예산 할당, 구매 사유, 납품 정보 및 필수 승인과 같은 필수 세부 정보가 캡처됩니다.
 
-![구매 요청](assets/purchase-request.gif)
+![구매 요청 양식](assets/Purchase-request-form.png)
 
 ## 참조 양식 데이터 모델 {#reference-models}
 
