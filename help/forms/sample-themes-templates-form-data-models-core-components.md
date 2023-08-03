@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: 6cc7153c9754b6786a08c5fd378d72a8ab7c478d
+source-git-commit: b527e7499bfd995362b792ca1c57a2c92901739c
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1210'
 ht-degree: 4%
 
 ---
@@ -80,7 +80,7 @@ WKND 테마는 생동감 있고 상상력이 풍부하며 매력적인 디자인
 
 >[!TAB 전화]
 
-![기본 템플릿 전화](assets/Basic-temp-phone-view.png)
+![기본 템플릿 전화](assets/Basic-temp-phone-view.png){width:&quot;25%&quot;}
 
 >[!TAB 태블릿]
 
@@ -93,7 +93,21 @@ WKND 테마는 생동감 있고 상상력이 풍부하며 매력적인 디자인
 
 빈 캔버스 템플릿을 사용하여 적응형 양식 구조, 콘텐츠 및 규칙을 처음부터 만듭니다. 빈 템플릿에는 양식 구성 요소가 미리 통합되어 있지 않습니다.
 
-![빈 템플릿](assets/Blank-template.png)
+>[!BEGINTABS]
+
+>[!TAB 데스크탑]
+
+![빈 템플릿 데스크탑](assets/Blank-temp-desktop-view.png)
+
+>[!TAB 전화]
+
+![기본 템플릿 전화](assets/Blank-temp-phone-view.png){width:&quot;25%&quot;}
+
+>[!TAB 태블릿]
+
+![기본 템플릿 태블릿](assets/Blank-temp-tablet-view.png)
+
+>[!ENDTABS]
 
 ### 연락처 {#Contact-Us}
 
@@ -147,7 +161,7 @@ WKND 테마는 생동감 있고 상상력이 풍부하며 매력적인 디자인
 
 ## 참조 양식 데이터 모델 {#reference-models}
 
-을(를) 만든 후 [적응형 양식](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) 기준 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components), 양식의 백엔드를 데이터베이스 Microsoft® Dynamics 365 및 Salesforce 서버와 연결하여 비즈니스 워크플로우를 활성화할 수 있습니다. 예:
+을(를) 만든 후 [적응형 양식](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) 기준 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components), 양식을 데이터베이스 Microsoft® Dynamics 365 및 Salesforce 서버에 연결하여 비즈니스 워크플로우를 활성화할 수 있습니다. 예:
 
 * 적응형 양식 제출 시 Microsoft® Dynamics 365 및 Salesforce로 데이터를 작성합니다.
 * 양식 데이터 모델에 정의된 사용자 지정 엔터티를 통해 Microsoft® Dynamics 365 및 Salesforce에서 데이터를 쓰고 그 반대로 할 수 있습니다.
