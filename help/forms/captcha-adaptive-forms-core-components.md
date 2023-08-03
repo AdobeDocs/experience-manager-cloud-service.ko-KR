@@ -5,7 +5,7 @@ topic-tags: Adaptive Forms, author
 hide: true
 hidefromtoc: true
 Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: a1689c61715f01cb4eb62882dbcd6e202b74ffc9
+source-git-commit: b81acc99b1d90b05b7c341253e7cbb46c6ea12ae
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Google의 reCAPTCHA 서비스를 사용하여 AEM Forms 환경을 연결하려�
 
 1. 획득 [reCAPTCHA API 키 쌍](https://www.google.com/recaptcha/admin) Google에서. 여기에는 다음이 포함됩니다 **사이트 키** 및 a **비밀 키**.
 
-   ![Google 웹 사이트의 Google reCAPTCHA 구성을 만들어 reCAPTCHA 키를 가져옵니다.](/help/forms/assets/google-captcha.gif){width="50%"}
+   ![Google 웹 사이트의 Google reCAPTCHA 구성을 만들어 reCAPTCHA 키를 가져옵니다.](/help/forms/assets/google-captcha.gif)
 1. AEM Forms as a Cloud Service 환경에서 구성 컨테이너를 만듭니다. 구성 컨테이너에는 AEM을 외부 서비스에 연결하는 데 사용되는 클라우드 구성이 포함됩니다. Google에서 제공하는 reCAPTCHA 서비스를 사용하여 AEM Forms 환경을 연결할 수 있도록 구성 컨테이너를 만들고 구성하려면 다음 작업을 수행하십시오.
    1. AEM Forms as a Cloud Service 인스턴스를 엽니다.
    1. 다음으로 이동 **[!UICONTROL 도구 > 일반 > 구성 브라우저]**. 구성 브라우저에서 다음 작업을 수행할 수 있습니다.
