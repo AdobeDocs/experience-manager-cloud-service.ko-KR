@@ -2,9 +2,9 @@
 title: 적응형 Forms에서 reCAPTCHA 사용
 description: 적응형 Forms에서 Google reCAPTCHA 서비스를 구성하는 방법에 대해 알아봅니다.
 topic-tags: adaptive_forms, author
-source-git-commit: 4b6c22667bb79bb6cac22675fa22f741b0262210
+source-git-commit: a1689c61715f01cb4eb62882dbcd6e202b74ffc9
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '1913'
 ht-degree: 3%
 
 ---
@@ -106,7 +106,7 @@ reCAPTCHA Enterprise 서비스가 활성화되면 적응형 양식에서 사용�
    >[!NOTE]
    >
    >* 적응형 양식에서 Captcha 구성 요소를 두 개 이상 사용하는 것은 지원되지 않습니다. 또한 소극적 로드로 표시된 패널 또는 조각에서는 CAPTCHA를 사용하지 않는 것이 좋습니다.
-   >* reCaptcha는 시간에 민감하며 약 1분 후에 만료됩니다. 따라서 적응형 양식에서 Captcha 구성 요소를 제출 단추 바로 앞에 배치하는 것이 좋습니다.
+   >* reCaptcha는 시간에 민감하며 약 2~3분 후에 만료됩니다. 따라서 적응형 양식에서 Captcha 구성 요소를 제출 단추 바로 앞에 배치하는 것이 좋습니다.
 
 1. 추가한 Captcha 구성 요소를 선택하고 을 누릅니다 ![cmppr](assets/cmppr.png) 속성을 편집합니다.
 1. CAPTCHA 위젯의 제목을 지정합니다. 기본값은 입니다. **Captcha**. 선택 **제목 숨기기** 제목을 표시하지 않으려는 경우

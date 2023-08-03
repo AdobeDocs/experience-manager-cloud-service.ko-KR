@@ -5,9 +5,9 @@ topic-tags: Adaptive Forms, author
 hide: true
 hidefromtoc: true
 Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: b56c90edacbe891afe3fe0add670f75ba46b0064
+source-git-commit: a1689c61715f01cb4eb62882dbcd6e202b74ffc9
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '878'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,9 @@ Google의 reCAPTCHA 서비스를 사용하여 AEM Forms 환경을 연결하려�
    1. 이전 섹션에서 만들거나 업데이트한 구성 컨테이너를 선택합니다. **[!UICONTROL 만들기]**&#x200B;를 탭합니다.
    1. 지정 **[!UICONTROL 제목]**, **[!UICONTROL 이름]**, **[!UICONTROL 사이트 키]**, 및 **[!UICONTROL 비밀 키]** reCAPTCHA 서비스(1단계에서 획득)의 경우 **[!UICONTROL 만들기]**&#x200B;를 탭합니다.
 
-   ![Google의 reCAPTCHA 서비스와 AEM Forms 환경을 연결하도록 Cloud Service 구성](/help/forms/assets/captcha-configuration.gif){width="50%"}
+
+   ![Google의 reCAPTCHA 서비스와 AEM Forms 환경을 연결하도록 Cloud Service 구성](/help/forms/assets/captcha-configuration.gif)
+
 
 
    reCAPTCHA 서비스가 구성되면 적응형 양식에서 사용할 수 있습니다. 자세한 내용은 [적응형 양식에서 Google reCAPTCHA 사용](#using-reCAPTCHA).
@@ -62,12 +64,13 @@ Google의 reCAPTCHA 서비스를 사용하여 AEM Forms 환경을 연결하려�
 1. 적응형 Forms을 선택하고 **[!UICONTROL 속성]**. 의 경우 **[!UICONTROL 구성 컨테이너]** 옵션을 선택하고 Google에서 AEM Forms과 reCAPTCHA 서비스를 연결하는 클라우드 구성이 포함된 구성 컨테이너를 선택한 다음 을 누릅니다 **[!UICONTROL 저장 및 닫기]**.
 
    이러한 구성 컨테이너가 없는 경우 섹션 을 참조하십시오 [Google의 reCAPTCHA 서비스를 사용하여 AEM Forms 환경 연결](#connect-your-forms-environment-with-recaptcha-service-by-google) 구성 컨테이너를 만드는 방법을 알아봅니다.
-   ![구성 컨테이너 선택](/help/forms/assets/captcha-properties.png){width="50%"}
+
+   ![구성 컨테이너 선택](/help/forms/assets/captcha-properties.png)
 
 1. 적응형 Forms을 선택하고 **[!UICONTROL 편집]**. 적응형 양식이 적응형 Forms 편집기에서 열립니다.
 1. 구성 요소 브라우저에서 **[!UICONTROL 적응형 양식 reCAPTCHA]** 구성 요소를 적응형 양식에 추가합니다.
 
-   Google reCAPTCHA 유효성 검사는 시간에 민감하며 약 1분 후에 만료됩니다. 따라서 Adobe은 **[!UICONTROL 적응형 양식 reCAPTCHA]** 구성 요소 바로 앞 **[!UICONTROL 제출]** 단추를 클릭합니다.
+   Google reCAPTCHA 유효성 검사는 시간에 민감하며 약 2분 후에 만료됩니다. 따라서 Adobe은 **[!UICONTROL 적응형 양식 reCAPTCHA]** 구성 요소 바로 앞 **[!UICONTROL 제출]** 단추를 클릭합니다.
 
 1. 다음 항목 선택 **[!UICONTROL 적응형 양식 reCAPTCHA]** 구성 요소 및 속성 탭 ![속성 아이콘](assets/configure-icon.svg) 아이콘. 속성 대화 상자가 열립니다. 다음 필수 속성을 지정합니다.
    * **[!UICONTROL 이름]:** 양식 및 규칙 편집기에서 고유한 이름으로 양식 구성 요소를 쉽게 식별할 수 있지만 이름에는 공백이나 특수 문자를 사용할 수 없습니다.
