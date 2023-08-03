@@ -1,11 +1,11 @@
 ---
 title: AEM as a Cloud Service에서의 유지 관리 작업
-description: AEM as a Cloud Service에서의 유지 관리 작업
+description: AEM as a Cloud Service의 유지 관리 작업과 이를 구성하는 방법에 대해 알아봅니다.
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 19a3ebd981a7a62fe78a9ec909547b6a70c55121
+source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '1107'
-ht-degree: 63%
+source-wordcount: '1114'
+ht-degree: 62%
 
 ---
 

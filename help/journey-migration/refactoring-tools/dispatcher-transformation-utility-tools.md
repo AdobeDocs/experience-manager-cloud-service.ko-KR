@@ -1,11 +1,11 @@
 ---
 title: AEM Dispatcher 변환기 도구
-description: AEM Dispatcher 변환기 도구
+description: AEM Dispatcher의 기존 구성을 AEM as a Cloud Service Dispatcher의 구성으로 변환하는 방법에 대해 알아봅니다.
 exl-id: 2e95ff7b-cc94-477d-99ab-816a58998287
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 36%
+source-wordcount: '352'
+ht-degree: 33%
 
 ---
 

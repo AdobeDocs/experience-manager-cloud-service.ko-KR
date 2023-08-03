@@ -1,13 +1,13 @@
 ---
 title: Adobe Target과 통합
-description: Adobe Target과 통합
+description: Adobe Target을 AEMas a Cloud Service 와 통합하는 방법을 알아봅니다.
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
-workflow-type: ht
-source-wordcount: '1018'
-ht-degree: 100%
+source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
+workflow-type: tm+mt
+source-wordcount: '1026'
+ht-degree: 98%
 
 ---
 

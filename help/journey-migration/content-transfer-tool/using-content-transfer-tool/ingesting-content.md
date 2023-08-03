@@ -1,10 +1,10 @@
 ---
 title: 대상에 콘텐츠 수집
-description: 대상에 콘텐츠 수집
+description: 컨텐츠 전송 도구를 사용하여 마이그레이션 세트의 컨텐츠를 Cloud Service 인스턴스로 수집하는 방법을 알아봅니다.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 3f526b8096125fbcf13b73fe82b2da0f611fa6ca
+source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1941'
 ht-degree: 11%
 
 ---

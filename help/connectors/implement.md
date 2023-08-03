@@ -1,11 +1,11 @@
 ---
 title: AEM 커넥터 구현
-description: AEM 커넥터 구현
+description: AEM 커넥터를 빌드하고 구현하는 방법을 알아봅니다.
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '966'
-ht-degree: 100%
+source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
+workflow-type: tm+mt
+source-wordcount: '971'
+ht-degree: 99%
 
 ---
 
