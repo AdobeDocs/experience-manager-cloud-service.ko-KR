@@ -5,7 +5,7 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: a63a237e8da9260fa5f88060304b8cf9f508da7f
 workflow-type: tm+mt
 source-wordcount: '1899'
 ht-degree: 6%
@@ -75,6 +75,7 @@ ht-degree: 6%
 ![다이렉트 이진 업로드 프로토콜 개요](assets/add-assets-technical.png)
 
 >[!IMPORTANT]
+>
 위의 단계를 내부가 아닌 외부 애플리케이션에서 실행합니다. [!DNL Experience Manager] JVM
 
 이 접근 방식은 자산 업로드의 확장 가능하고 더 성능 있는 처리를 제공합니다. 과 비교한 차이점 [!DNL Experience Manager] 6.5는 다음과 같습니다.
@@ -83,8 +84,11 @@ ht-degree: 6%
 * 이진 클라우드 스토리지는 CDN(Content Delivery Network) 또는 Edge 네트워크와 함께 작동합니다. CDN은 클라이언트에 더 가까운 업로드 끝점을 선택합니다. 데이터가 가까운 엔드포인트로 더 짧은 거리를 이동할 때 특히 지리적으로 분산된 팀의 경우 업로드 성능과 사용자 경험이 개선됩니다.
 
 >[!NOTE]
+>
 오픈 소스에서 이 접근 방식을 구현하려면 클라이언트 코드 를 참조하십시오 [aem 업로드 라이브러리](https://github.com/adobe/aem-upload).
+>
 [!IMPORTANT]
+>
 경우에 따라 변경 사항이 Experience ManagerCloud Service 에 있는 스토리지의 일관적인 특성으로 인해 요청 간에 완전히 전파되지 않을 수 있습니다. 필수 폴더 생성이 전파되지 않아 업로드 호출을 시작하거나 완료하는 응답이 404개로 늘어납니다. 클라이언트는 404 개의 응답을 예상해야 하며, 백오프 전략을 사용하여 재시도를 구현하여 응답들을 처리해야 합니다.
 
 ### 업로드 시작 {#initiate-upload}
@@ -154,25 +158,27 @@ CDN 에지 노드는 요청된 바이너리 업로드를 가속화하는 데 도
 업로드가 성공하면 서버는 각 요청에 `201` 상태 코드입니다.
 
 >[!NOTE]
+>
 업로드 알고리즘에 대한 자세한 내용은 [공식 기능 설명서](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) 및 [API 설명서](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) Apache Jackrabbit Oak 프로젝트에서.
 
 ### 업로드 완료 {#complete-upload}
 
 이진 파일의 모든 부분이 업로드된 후 HTTP POST 요청을 시작 데이터가 제공하는 전체 URI에 제출합니다. 요청 본문의 콘텐츠 유형은 다음과 같아야 합니다. `application/x-www-form-urlencoded` 다음 필드가 포함된 양식 데이터.
 
-| 필드 | 유형 | 필수 여부 | 설명 |
+| 필드 | 유형 | 필수 또는 아님 | 설명 |
 |---|---|---|---|
 | `fileName` | 문자열 | 필수 | 시작 데이터에서 제공된 에셋의 이름입니다. |
 | `mimeType` | 문자열 | 필수 | 시작 데이터에서 제공한 바이너리의 HTTP 콘텐츠 유형입니다. |
 | `uploadToken` | 문자열 | 필수 | 시작 데이터에서 제공한 대로 바이너리에 대한 업로드 토큰입니다. |
-| `createVersion` | 부울 | 선택 사항 | If `True` 지정된 이름의 자산이 있으면 [!DNL Experience Manager] 는 에셋의 새 버전을 만듭니다. |
-| `versionLabel` | 문자열 | 선택 사항 | 새 버전이 만들어지면 에셋의 새 버전과 관련된 레이블입니다. |
-| `versionComment` | 문자열 | 선택 사항 | 새 버전을 만드는 경우 버전과 관련된 주석입니다. |
-| `replace` | 부울 | 선택 사항 | If `True` 지정된 이름의 자산이 있습니다. [!DNL Experience Manager] 에셋을 삭제한 다음 다시 만듭니다. |
-| `uploadDuration` | 숫자 | 선택 사항 | 파일이 전부 업로드되는 총 시간(밀리초)입니다. 이 옵션을 지정하면 업로드 기간이 전송 속도 분석을 위해 시스템의 로그 파일에 포함됩니다. |
-| `fileSize` | 숫자 | 선택 사항 | 파일의 크기(바이트)입니다. 지정하면 파일 크기가 전송 속도 분석을 위해 시스템의 로그 파일에 포함됩니다. |
+| `createVersion` | 부울 | 옵션 | If `True` 지정된 이름의 자산이 있으면 [!DNL Experience Manager] 는 에셋의 새 버전을 만듭니다. |
+| `versionLabel` | 문자열 | 옵션 | 새 버전이 만들어지면 에셋의 새 버전과 관련된 레이블입니다. |
+| `versionComment` | 문자열 | 옵션 | 새 버전을 만드는 경우 버전과 관련된 주석입니다. |
+| `replace` | 부울 | 옵션 | If `True` 지정된 이름의 자산이 있습니다. [!DNL Experience Manager] 에셋을 삭제한 다음 다시 만듭니다. |
+| `uploadDuration` | 숫자 | 옵션 | 파일이 전부 업로드되는 총 시간(밀리초)입니다. 이 옵션을 지정하면 업로드 기간이 전송 속도 분석을 위해 시스템의 로그 파일에 포함됩니다. |
+| `fileSize` | 숫자 | 옵션 | 파일의 크기(바이트)입니다. 지정하면 파일 크기가 전송 속도 분석을 위해 시스템의 로그 파일에 포함됩니다. |
 
 >[!NOTE]
+>
 에셋이 존재하고 모두 존재하지 않는 경우 `createVersion` nor `replace` 을 지정한 다음 [!DNL Experience Manager] 는 에셋의 현재 버전을 새 바이너리로 업데이트합니다.
 
 시작 프로세스와 마찬가지로 전체 요청 데이터에는 두 개 이상의 파일에 대한 정보가 포함될 수 있습니다.
@@ -187,6 +193,7 @@ CDN 에지 노드는 요청된 바이너리 업로드를 가속화하는 데 도
 * [오픈 소스 명령줄 도구](https://github.com/adobe/aio-cli-plugin-aem).
 
 >[!NOTE]
+>
 aem 업로드 라이브러리와 명령줄 도구는 모두 [node-httptransfer 라이브러리](https://github.com/adobe/node-httptransfer/)
 
 ### 더 이상 사용되지 않는 에셋 업로드 API {#deprecated-asset-upload-api}
@@ -196,13 +203,13 @@ aem 업로드 라이브러리와 명령줄 도구는 모두 [node-httptransfer �
 새 업로드 방법은 다음에만 지원됩니다. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. 의 API [!DNL Adobe Experience Manager] 6.5는 더 이상 사용되지 않습니다. 에셋 또는 렌디션(바이너리 업로드) 업로드 또는 업데이트와 관련된 방법은 다음 API에서 더 이상 사용되지 않습니다.
 
 * [EXPERIENCE MANAGER ASSETS HTTP API](mac-api-assets.md)
-* `AssetManager` 과 같은 Java API `AssetManager.createAsset(..)`
+* `AssetManager` 과 같은 Java API `AssetManager.createAsset(..)`, `AssetManager.createAssetForBinary(..)`, `AssetManager.getAssetForBinary(..)`, `AssetManager.removeAssetForBinary(..)`, `AssetManager.createOrUpdateAsset(..)`, `AssetManager.createOrReplaceAsset(..)`
 
 >[!MORELIKETHIS]
+>
 * [오픈 소스 AEM 업로드 라이브러리](https://github.com/adobe/aem-upload).
 * [오픈 소스 명령줄 도구](https://github.com/adobe/aio-cli-plugin-aem).
 * [직접 업로드를 위한 Apache Jackrabbit Oak 설명서](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
-
 
 ## 에셋 처리 및 사후 처리 워크플로 {#post-processing-workflows}
 
@@ -292,19 +299,19 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 **추가 참조**
 
-* [에셋 번역](translate-assets.md)
+* [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [에셋이 지원되는 파일 형식](file-format-support.md)
-* [에셋 검색](search-assets.md)
-* [연결된 에셋](use-assets-across-connected-assets-instances.md)
-* [에셋 보고서](asset-reports.md)
+* [자산이 지원되는 파일 형식](file-format-support.md)
+* [자산 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [자산 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
-* [에셋 다운로드](download-assets-from-aem.md)
+* [자산 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
 * [일괄 메타데이터 가져오기](metadata-import-export.md)
 
 >[!MORELIKETHIS]
+>
 * [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
-
