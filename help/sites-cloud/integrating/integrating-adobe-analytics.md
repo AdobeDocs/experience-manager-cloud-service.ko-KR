@@ -1,10 +1,10 @@
 ---
 title: Adobe Analytics와 통합
-description: Touch Ui 및 Adobe Launch를 사용하여 Adobe Analytics을 AEMas a Cloud Service 와 통합하는 방법에 대해 알아봅니다.
+description: Touch UI 및 Adobe Launch를 사용하여 Adobe Analytics을 AEMas a Cloud Service 와 통합하는 방법을 알아봅니다.
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
+source-git-commit: 957758a8d3c16328e7638356e7ee6df3e561386d
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 96%
