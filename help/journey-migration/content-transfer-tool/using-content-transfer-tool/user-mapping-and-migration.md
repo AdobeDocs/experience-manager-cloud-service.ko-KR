@@ -1,10 +1,10 @@
 ---
 title: 사용자 매핑 및 주요 마이그레이션
-description: 사용자 매핑 및 사용자 마이그레이션 개요
+description: AEMas a Cloud Service 의 사용자 매핑 및 사용자 마이그레이션 개요.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '837'
 ht-degree: 10%
 
 ---

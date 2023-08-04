@@ -1,11 +1,11 @@
 ---
 title: 인덱스 변환기
-description: 인덱스 변환기
+description: AEM as a Cloud Service으로 이동할 준비를 위해 색인 정의를 마이그레이션하는 방법에 대해 알아봅니다.
 exl-id: ac02ca41-eb35-4f24-bf17-d00ce318423d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 2%
+source-wordcount: '290'
+ht-degree: 1%
 
 ---
 

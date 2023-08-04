@@ -1,10 +1,10 @@
 ---
 title: 컨텐츠 전송 도구에서 마이그레이션 세트 삭제
-description: 컨텐츠 전송 도구에서 마이그레이션 세트 삭제
+description: 콘텐츠 전송 도구에서 마이그레이션 세트를 삭제하는 방법을 알아봅니다.
 exl-id: 7ec1c5ca-bac7-4617-8068-78569d7cb503
-source-git-commit: c61407d70fb65a7fdc72174881b23db4deca556a
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '235'
 ht-degree: 8%
 
 ---

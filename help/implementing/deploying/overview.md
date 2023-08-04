@@ -1,12 +1,12 @@
 ---
 title: AEM as a Cloud Service에 배포
-description: AEM as a Cloud Service에 배포
+description: AEM에 as a Cloud Service으로 배포하는 기본 사항과 모범 사례에 대해 알아봅니다
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '3462'
-ht-degree: 100%
+source-wordcount: '3470'
+ht-degree: 99%
 
 ---
 

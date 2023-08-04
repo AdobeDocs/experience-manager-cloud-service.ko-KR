@@ -1,10 +1,10 @@
 ---
 title: AEM as a Cloud Service으로 백업 및 복원
-description: AEM as a Cloud Service으로 백업 및 복원
+description: AEM as a Cloud Service으로 백업 및 복원에 대해 알아보기
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '514'
 ht-degree: 24%
 
 ---

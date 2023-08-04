@@ -1,15 +1,15 @@
 ---
-title: Best Practices Analyzer 사용
-description: Best Practices Analyzer 사용
+title: 모범 사례 분석기 사용
+description: 업그레이드 준비 상태를 파악하기 위해 모범 사례 분석기를 사용하는 방법을 알아봅니다.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2484'
 ht-degree: 46%
 
 ---
 
-# Best Practices Analyzer 사용 {#using-best-practices-analyzer}
+# 모범 사례 분석기 사용 {#using-best-practices-analyzer}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_using"

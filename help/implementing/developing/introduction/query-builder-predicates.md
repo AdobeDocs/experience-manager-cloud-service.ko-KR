@@ -1,10 +1,10 @@
 ---
 title: 쿼리 빌더 술어 참조
-description: Query Builder API에 대한 설명 참조.
+description: AEMas a Cloud Service 의 Query Builder API에 대한 설명 참조.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2252'
 ht-degree: 1%
 
 ---

@@ -1,11 +1,11 @@
 ---
-title: 컨텐츠 전송 도구 개요
-description: 콘텐츠 전송 도구 개요
+title: 콘텐츠 전송 도구 개요
+description: 컨텐츠 전송 도구를 사용하여 On-Premise AEM AEM 인스턴스에서 as a Cloud Service으로 컨텐츠를 전송하는 방법을 알아봅니다
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 60%
+source-wordcount: '664'
+ht-degree: 57%
 
 ---
 
