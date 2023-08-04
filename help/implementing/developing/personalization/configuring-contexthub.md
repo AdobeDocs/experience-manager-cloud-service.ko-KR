@@ -1,10 +1,10 @@
 ---
 title: ContextHub 구성
-description: Context Hub를 구성하는 방법에 대해 알아봅니다.
+description: 컨텍스트 데이터를 저장, 조작 및 표시하기 위한 프레임워크인 Context Hub를 구성하는 방법에 대해 알아봅니다.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '1680'
+source-wordcount: '1689'
 ht-degree: 1%
 
 ---
@@ -56,7 +56,7 @@ UI 모드를 관련 ContextHub 모듈 그룹에 추가합니다. UI 모드를 �
    * 모드 아이콘: 의 선택기 [Coral UI 아이콘](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) 사용할 항목: 예 `coral-Icon--user`
    * 활성화됨: ContextHub 도구 모음에 UI 모드를 표시하려면 선택하십시오.
 
-1. 저장 을 클릭하거나 탭합니다.
+1. 저장을 클릭하거나 탭합니다.
 
 ### UI 모듈 추가 {#adding-a-ui-module}
 
@@ -91,7 +91,7 @@ UI 모듈 속성에는 모듈별 속성에 대한 값을 제공할 수 있는 �
    * 활성화됨: ContextHub 도구 모음에 UI 모듈을 표시하려면 선택하십시오.
 
 1. (선택 사항) 기본 저장소 구성을 무시하려면 UI 모듈을 구성할 JSON 개체를 입력합니다.
-1. 저장 을 클릭하거나 탭합니다.
+1. 저장을 클릭하거나 탭합니다.
 
 ## ContextHub 저장소 만들기 {#creating-a-contexthub-store}
 
@@ -130,7 +130,7 @@ AEM은 스토어의 기반이 될 수 있는 다음 샘플 스토어 후보를 �
    * **활성화됨:** 스토어를 활성화하려면 선택
 
 1. (선택 사항) 기본 저장소 구성을 재정의하려면 세부 정보 구성(JSON) 상자에 JSON 개체를 입력합니다.
-1. 저장 을 클릭하거나 탭합니다.
+1. 저장을 클릭하거나 탭합니다.
 
 ## 예: JSONP 서비스 사용  {#example-using-a-jsonp-service}
 

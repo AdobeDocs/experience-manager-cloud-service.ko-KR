@@ -1,11 +1,11 @@
 ---
 title: 페이지 속성 편집
-description: 페이지의 필수 속성 정의
+description: AEM에서 페이지를 관리하는 데 필요한 속성을 정의하는 방법을 알아봅니다.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '2341'
-ht-degree: 100%
+source-wordcount: '2347'
+ht-degree: 99%
 
 ---
 
