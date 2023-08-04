@@ -1,11 +1,11 @@
 ---
 title: Universal Editor 인증
-description: Universal Editor의 인증 방법을 알아봅니다.
+description: 범용 편집기에서 인증에 Adobe의 IMS(Identity Management System)를 사용하는 방법을 알아봅니다.
 exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
-source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
-workflow-type: ht
-source-wordcount: '326'
-ht-degree: 100%
+source-git-commit: 9fd7c17fce8c11809eabcc6387cbace0ebdc64a2
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 96%
 
 ---
 

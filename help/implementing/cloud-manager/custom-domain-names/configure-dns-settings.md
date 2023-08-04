@@ -1,11 +1,11 @@
 ---
 title: DNS 설정 구성
-description: DNS 설정 구성
+description: 사용자 정의 도메인 이름에 대한 DNS 설정을 구성하는 방법에 대해 알아봅니다.
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '330'
-ht-degree: 100%
+source-git-commit: 9fd7c17fce8c11809eabcc6387cbace0ebdc64a2
+workflow-type: tm+mt
+source-wordcount: '338'
+ht-degree: 96%
 
 ---
 
