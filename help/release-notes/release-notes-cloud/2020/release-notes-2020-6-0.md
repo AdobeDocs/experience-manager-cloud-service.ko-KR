@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 2020.6.0용 릴리스 노트
-description: Experience Manager 2020.6.0용 릴리스 노트
+description: "[!DNL Adobe Experience Manager] 2020.6.0용 as a Cloud Service 릴리스 노트"
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 9ceec0401b91bba2408bda89d4f2c486e2d51eec
 workflow-type: tm+mt
-source-wordcount: '1931'
-ht-degree: 91%
+source-wordcount: '1933'
+ht-degree: 95%
 
 ---
 
@@ -60,11 +60,11 @@ AEM as a Cloud Service 릴리스 2020.6.0에 있는 Cloud Manager의 새로운 �
 
 * Cloud Manager의 *비즈니스 소유자* 역할의 사용자는 이제 랜딩 페이지(프로그램 카드의 빠른 작업 버튼)나 프로그램 내에서 샌드박스 프로그램을 삭제할 수 있습니다.
 
-  다음을 참조하십시오 [샌드박스 프로그램 삭제](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) 을 참조하십시오.
+  자세한 내용은 [샌드박스 프로그램 삭제](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)를 참조하십시오.
 
-* Cloud Manager의 *비즈니스 소유자* 또는 *배포 관리자* 역할의 샌드박스 프로그램 사용자는 이제 클라우드 관리자 UI를 통해 프로덕션 및 스테이지 환경 세트를 삭제할 수 있습니다. 이제 의 환경 카드 모두에서 삭제 옵션을 사용할 수 있습니다. **프로그램 개요** 페이지 및 **환경** 페이지를 가리키도록 업데이트하는 중입니다. 프로덕션 또는 스테이지에서 삭제 옵션을 선택하면 세트에 있는 다른 옵션도 삭제됩니다.
+* Cloud Manager의 *비즈니스 소유자* 또는 *배포 관리자* 역할의 샌드박스 프로그램 사용자는 이제 클라우드 관리자 UI를 통해 프로덕션 및 스테이징 환경 세트를 삭제할 수 있습니다. 이제 **프로그램 개요** 페이지 및 **환경** 페이지의 환경 카드 모두에서 삭제 옵션을 사용할 수 있습니다. 프로덕션 또는 스테이지에서 삭제 옵션을 선택하면 세트에 있는 다른 옵션도 삭제됩니다.
 
-  다음을 참조하십시오 [샌드박스 프로그램 삭제](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) 을 참조하십시오.
+  자세한 내용은 [샌드박스 프로그램 삭제](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)를 참조하십시오.
 
 * 랜딩 페이지의 코치 표시를 사용하여 사용자에게 기본 탐색에 대해 알리고 지시합니다.
 
@@ -72,17 +72,17 @@ AEM as a Cloud Service 릴리스 2020.6.0에 있는 Cloud Manager의 새로운 �
 
 * 이제 **LEARN** 페이지를 Cloud Manager에서 사용할 수 있으며 위쪽 탐색을 통해 액세스할 수 있습니다. 이 페이지에는 Cloud Manager에서 할당된 역할과 관련하여 가장 자주 사용되는 워크플로에 대한 사용자 학습을 돕는 리소스가 포함되어 있습니다.
 
-* 이제 샌드박스 프로그램 은 다음을 통해 식별됩니다. **샌드박스** 랜딩 페이지의 프로그램 카드에 표시되고 의 프로그램 이름 옆에 표시되는 배지 **프로그램 개요** 페이지를 가리키도록 업데이트하는 중입니다.
+* 샌드박스 프로그램은 이제 **프로그램 개요** 페이지의 프로그램 이름 옆에 있을 뿐만 아니라 랜딩 페이지의 프로그램 카드에 표시될 **샌드박스** 배지로 식별됩니다.
 
 * 이제 SysAdmin 역할의 사용자는 Cloud Manager에 대한 사용자 역할이나 권한을 관리할 수 있는 Admin Console의 위치에 클릭 한 번으로 액세스할 수 있습니다. 이제 **액세스 관리** 버튼을 **프로그램 추가** 버튼 옆에 있는 랜딩 페이지에서 사용할 수 있습니다.
 
-  다음을 참조하십시오 [시스템 관리자 작업](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) 을 참조하십시오.
+  자세한 내용은 [SysAdmin 작업](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks)을 참조하십시오.
 
 * 이제 SysAdmin 역할의 사용자는 Cloud Manager에서 직접 작성자 인스턴스에 한 번의 클릭으로 액세스할 수 있습니다.
 
-  다음을 참조하십시오 [작성자 인스턴스에 대한 액세스 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) 을 참조하십시오.
+  자세한 내용은 [작성자 인스턴스에 대한 액세스 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem)를 참조하십시오.
 
-* 이제 빌드 로그에는 생략된 콘텐츠 패키지를 포함하여 검색된 객체 목록이 포함됩니다.
+* 이제 빌드 로그에 생략된 콘텐츠 패키지를 포함하여 검색된 아티팩트의 목록이 포함됩니다.
 
 * 빌드 단계에서 이제 생성된 모든 콘텐츠 패키지에 이름, 그룹 및 버전과 같은 모든 필수 속성이 포함되어 있는지 확인합니다.
 

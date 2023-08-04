@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 2020.4.0용 릴리스 노트
-description: Experience Manager 2020.4.0용 릴리스 노트
+description: "[!DNL Adobe Experience Manager] 2020.4.0용 as a Cloud Service 릴리스 노트"
 exl-id: d98a3862-76fa-4b5b-b81a-333f5f532b67
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 9ceec0401b91bba2408bda89d4f2c486e2d51eec
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 94%
+source-wordcount: '648'
+ht-degree: 93%
 
 ---
 
@@ -32,11 +32,11 @@ ht-degree: 94%
 * 사용자는 특정 폴더 계층 구조에 대한 폴더 [!UICONTROL 속성] 사용자 인터페이스에서 [사후 처리 워크플로우](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)를 자동으로 시작하도록 구성할 수 있습니다.
    * 폴더 [!UICONTROL 속성] 사용자 인터페이스는 메타데이터 프로필, 처리 프로필 및 새로운 자동 시작 워크플로우 구성을 포함하는 새로운 [!UICONTROL 자산 처리] 탭을 사용하여 단순화되었습니다.
 
-      ![처리 프로필은 폴더에 쉽게 적용할 수 있으며 폴더에 업로드된 모든 자산은 이러한 프로필을 사용하여 처리 중입니다](/help/assets/assets/asset-processing-folder-properties.png)
+     ![처리 프로필은 폴더에 쉽게 적용할 수 있으며 폴더에 업로드된 모든 자산은 이러한 프로필을 사용하여 처리 중입니다](/help/assets/assets/asset-processing-folder-properties.png)
 
    * 자산 재처리 옵션을 사용하면 특정 처리 프로필을 선택하여 하위 폴더에서 사용자가 선택한 자산을 재처리할 수 있습니다.
 
-      ![특정 처리 프로필을 사용하여 선택한 자산 재처리](/help/assets/assets/fpo-existing-asset-reprocess.gif)
+     ![특정 처리 프로필을 사용하여 선택한 자산 재처리](/help/assets/assets/fpo-existing-asset-reprocess.gif)
 
    * [!DNL Dynamic Media]: 자산이 보안 미리 보기용으로만 자동 게시되도록 선택적 게시 구성을 추가했습니다. 또한 공중영역에서 전달하기 위해 DMS7에 게시하지 않고 자산을 Experience Manager에 명시적으로 게시할 수 있습니다.
 
@@ -51,7 +51,6 @@ ht-degree: 94%
 >* [Brand Portal 구성](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
 >* [Asset Link를 사용하도록 Experience Manager 구성](https://helpx.adobe.com/kr/enterprise/using/configure-aem-assets-for-asset-link.html)
 >* [에셋 마이크로서비스를 사용하여 Experience Manager에서 워크플로 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
-
 
 ## Cloud Manager의 새로운 기능 {#whats-new-cloud-manager}
 
