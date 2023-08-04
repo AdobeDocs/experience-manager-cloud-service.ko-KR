@@ -1,13 +1,13 @@
 ---
 title: 번역을 위한 콘텐츠 준비
-description: 번역을 위한 콘텐츠를 준비하는 방법에 대해 알아봅니다.
+description: 다국어 웹 사이트를 개발할 때 번역을 위한 콘텐츠를 준비하는 방법에 대해 알아봅니다.
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '765'
-ht-degree: 100%
+source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
+workflow-type: tm+mt
+source-wordcount: '769'
+ht-degree: 98%
 
 ---
 

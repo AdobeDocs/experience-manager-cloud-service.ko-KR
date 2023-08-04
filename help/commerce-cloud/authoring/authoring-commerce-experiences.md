@@ -1,10 +1,10 @@
 ---
 title: 상거래 경험 작성
-description: 상거래 경험 작업
+description: 컨텍스트를 종료하지 않고 제품 데이터 및 콘텐츠에 액세스하여 상거래 관련 경험을 효율적으로 작성하고 구축하는 방법을 알아봅니다.
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '719'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ CIF 추가 기능은 상업용 기능으로 AEM 작성을 확장합니다. 이�
 
 ![선택 영역이 있는 슬라이드 구성 요소](../assets/authoring/carousel_component_with_selection.png)
 
-## Universal Editor  {#universal-editor}
+## Universal Editor {#universal-editor}
 
 범용 편집기는 실시간 제품 데이터 및 관련 제품 콘텐츠에 액세스할 수 있는 기능으로 확장되었습니다.
 

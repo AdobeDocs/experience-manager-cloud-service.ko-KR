@@ -1,11 +1,11 @@
 ---
 title: 슬링 치트시트
-description: 쉬운 슬링 참조
+description: POST 요청에 대한 기본 핸들러인 SlingPostServlet을 사용할 때 도움이 되는 간편한 Sling 참조입니다.
 exl-id: 6ca374f4-5dc4-4322-bc36-5010bc2c7768
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
 workflow-type: tm+mt
-source-wordcount: '30'
-ht-degree: 13%
+source-wordcount: '44'
+ht-degree: 9%
 
 ---
 

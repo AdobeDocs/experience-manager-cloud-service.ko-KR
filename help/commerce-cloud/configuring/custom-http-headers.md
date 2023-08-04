@@ -1,10 +1,10 @@
 ---
 title: 사용자 정의 HTTP 헤더
-description: 사용자 지정 HTTP 헤더 구성
+description: CIF에서 이미 보낸 헤더와 함께 상거래 엔진으로 보낼 사용자 지정 HTTP 헤더를 구성하는 방법에 대해 알아봅니다.
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '287'
 ht-degree: 5%
 
 ---

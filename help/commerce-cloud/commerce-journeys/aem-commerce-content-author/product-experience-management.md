@@ -1,10 +1,10 @@
 ---
 title: 제품 경험 빌드
-description: 제품 경험을 구축하는 방법을 알아봅니다.
+description: 다양한 채널에서 사용할 수 있는 제품 콘텐츠를 빌드하여 몰입형 쇼핑 경험을 만드는 방법을 알아봅니다.
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 412e206a66de470e2798aafc58bcac93dc7e3cad
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1168'
 ht-degree: 4%
 
 ---
@@ -59,7 +59,7 @@ AEM에서 다양한 유형의 콘텐츠를 만들고 제품 카탈로그에 연�
 
 ![PEM 조종석](assets/pem-cockpit.png)
 
-작업 아이콘을 클릭하면 해당 콘텐츠가 새 브라우저 탭에서 열립니다.
+작업 아이콘을 클릭하면 새 브라우저 탭에서 해당 콘텐츠가 열립니다.
 
 ## 개별 제품 및 범주 페이지 강화 {#enrich}
 
