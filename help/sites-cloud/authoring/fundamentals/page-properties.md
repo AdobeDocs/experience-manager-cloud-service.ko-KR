@@ -2,9 +2,9 @@
 title: 페이지 속성 편집
 description: AEM에서 페이지를 관리하는 데 필요한 속성을 정의하는 방법을 알아봅니다.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 0183e14ad1653e98c06b19ea36c7e97dedccdb84
 workflow-type: tm+mt
-source-wordcount: '2347'
+source-wordcount: '2281'
 ht-degree: 99%
 
 ---
@@ -294,18 +294,6 @@ ht-degree: 99%
 ### Sites 콘솔에서 - 다중 페이지 {#from-the-sites-console-multiple-pages}
 
 **Sites** 콘솔에서 여러 페이지를 선택한 다음, **속성 보기**&#x200B;를 사용하여 페이지 속성을 보거나 편집할 수 있습니다. 이를 페이지 속성의 일괄 편집이라고 합니다.
-
->[!NOTE]
->
->속성의 일괄 편집은 자산에 대해서도 사용할 수 있습니다. 비슷하지만 몇 가지 차이점이 있습니다. 자세한 내용은 다중 자산의 속성 편집을 참조하십시오.
->
->GQL(Google 쿼리 언어)을 사용하여 여러 페이지에서 콘텐츠를 검색한 다음 변경 사항을 원래 페이지에 저장하기 전에 일괄 편집기에서 직접 콘텐츠를 편집할 수 있으므로 일괄 편집기라고도 합니다.
-
-<!--
->Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See [Editing Properties of Multiple Assets](/help/assets/managing-multiple-assets.md) for details.
->
->There is also the [Bulk Editor](/help/sites-administering/bulk-editor.md), which allows you to search for content from multiple pages using GQL (Google Query Language) and then edit the content directly in the bulk editor before saving your changes to the originating pages.
--->
 
 다음을 비롯하여 다양한 방법으로 일괄 편집할 여러 페이지를 선택할 수 있습니다.
 

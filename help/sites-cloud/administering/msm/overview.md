@@ -4,10 +4,10 @@ description: AEM의 강력한 Live Copy 및 다중 사이트 관리자 기능을
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 4049d226ecedb917c2a72cb76bc2fcaa946163f2
 workflow-type: tm+mt
-source-wordcount: '2706'
-ht-degree: 100%
+source-wordcount: '2719'
+ht-degree: 99%
 
 ---
 
@@ -170,11 +170,9 @@ MSM은 적절한 콘솔에서 다양한 옵션을 사용하여 UI에서 직접 �
 | 약식 | 단일 페이지의 Live Copy |  |
 | 딥 | 하위 페이지를 포함하는 페이지의 Live Copy |  |
 
-<!--
 >[!TIP]
 >
->See [Overview of the Java API](/help/sites-developing/extending-msm.md#overview-of-the-java-api) for the object names.
--->
+>문서를 참조하십시오. [다중 사이트 관리자 확장](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) 객체 이름.
 
 ## Live Copy {#live-copies}
 

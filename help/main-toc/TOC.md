@@ -8,10 +8,10 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4f2a51502202fba3792cde370180d127f8e17418
+source-git-commit: 0183e14ad1653e98c06b19ea36c7e97dedccdb84
 workflow-type: tm+mt
-source-wordcount: '4222'
-ht-degree: 99%
+source-wordcount: '4236'
+ht-degree: 98%
 
 ---
 
@@ -963,6 +963,11 @@ ht-degree: 99%
       + [리치 텍스트 편집기 구성](/help/implementing/developing/extending/rich-text-editor.md)
       + [RTE 플러그인 구성](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
       + [액세스 가능한 사이트를 생성하도록 RTE 구성](/help/implementing/developing/extending/rte-accessible-content.md)
+      + [페이지 작성 확장](/help/implementing/developing/extending/page-authoring.md)
+      + [콘솔 확장](/help/implementing/developing/extending/consoles.md)
+      + [페이지 속성 확장](/help/implementing/developing/extending/page-properties.md)
+      + [벌크 편집기 확장](/help/implementing/developing/extending/bulk-editor.md)
+      + [MSM 확장](/help/implementing/developing/extending/msm.md)
    + AEM as a Cloud Service에 배포 {#deploying}
       + [AEM as a Cloud Service에 배포](/help/implementing/deploying/overview.md)
       + [AEM 버전 업데이트](/help/implementing/deploying/aem-version-updates.md)

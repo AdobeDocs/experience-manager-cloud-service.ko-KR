@@ -4,12 +4,13 @@ description: 사용할 수 있는 강력한 Live Copy 동기화 옵션 및 프�
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 1d5460c87aef10ae1adee7401cd462242e106f8c
 workflow-type: tm+mt
-source-wordcount: '2335'
-ht-degree: 100%
+source-wordcount: '2426'
+ht-degree: 96%
 
 ---
+
 
 # Live Copy 동기화 구성 {#configuring-live-copy-synchronization}
 
@@ -44,9 +45,7 @@ Adobe Experience Manager는 다양하고 획기적인 동기화 구성을 제공
 
 다음 표에는 AEM을 통해 즉시 사용할 수 있도록 제공되는 롤아웃 구성이 나열되어 있습니다. 표에는 각 롤아웃 구성의 트리거 및 동기화 작업이 포함되어 있습니다.
 
-<!--
-If the installed rollout configuration actions do not meet your requirements, you can [create a new rollout configuration](#creating-a-rollout-configuration).
--->
+설치된 롤아웃 구성 작업이 요구 사항을 충족하지 않는 경우 다음을 수행할 수 있습니다. [새 롤아웃 구성을 만듭니다.](#creating-a-rollout-configuration)
 
 | 이름 | 설명 | 트리거 | [동기화 작업](#synchronization-actions) |
 |---|---|---|---|
@@ -61,7 +60,7 @@ If the installed rollout configuration actions do not meet your requirements, yo
 
 다음 표에는 AEM을 통해 즉시 사용할 수 있도록 제공되는 동기화 작업이 나열되어 있습니다.
 
-<!--If the installed actions do not meet your requirements, you can [Create a New Synchronization Action](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action).-->
+설치된 작업이 요구 사항을 충족하지 않는 경우 다음을 수행할 수 있습니다 [새 동기화 작업을 만듭니다.](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)
 
 | 작업 이름 | 설명 | 속성 |
 |---|---|---|
@@ -83,16 +82,14 @@ If the installed rollout configuration actions do not meet your requirements, yo
 | `PageMoveAction` | `PageMoveAction`은 페이지가 블루프린트에서 이동된 경우 적용됩니다.<br>이 작업은 (관련) Live Copy 페이지를 한 위치에서 다른 위치로 이동하지 않고 복사합니다.<br>`PageMoveAction`은 이동 전 위치에서 Live Copy 페이지를 변경하지 않습니다. 따라서 연속된 롤아웃 구성은 블루프린트가 없는 라이브 관계 상태를 가집니다.제외할 노드 유형, 단락 항목 및 페이지 속성을 지정하도록 <br>[**** CQ MSM 페이지 이동 작업 서비스를 구성](#excluding-properties-and-node-types-from-synchronization)합니다.<br>이 작업은 롤아웃 구성에 포함된 유일한 동기화 작업이어야 합니다. | `prop_referenceUpdate: (Boolean)`을 true(기본값)으로 설정하여 참조를 업데이트합니다. |
 | `markLiveRelationship` | 이 작업은 론치가 생성한 콘텐츠에 대해 라이브 관계가 존재함을 나타냅니다. |  |
 
-<!--
-### Creating a Rollout Configuration {#creating-a-rollout-configuration}
+### 롤아웃 구성 만들기 {#creating-a-rollout-configuration}
 
-You can [create a rollout configuration](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration) when the installed rollout configurations do not meet your application requirements by performing the following steps.
+다음을 수행할 수 있습니다. [롤아웃 구성 만들기](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration) 설치된 롤아웃 구성이 애플리케이션 요구 사항에 부합하지 않는 경우 다음 단계를 수행하십시오.
 
-1. [Create the rollout configuration](/help/sites-developing/extending-msm.md#create-the-rollout-configuration).
-1. [Add synchronization actions to the rollout configuration](/help/sites-developing/extending-msm.md#add-synchronization-actions-to-the-rollout-configuration).
+1. [롤아웃 구성 만들기-](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
+1. [롤아웃 구성에 동기화 작업을 추가합니다.](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)
 
-The new rollout configuration is then available to you when configuring rollout configurations on a blueprint or Live Copy page.
--->
+블루프린트 또는 라이브 카피 페이지에서 롤아웃 구성을 구성할 때 새 롤아웃 구성을 사용할 수 있습니다.
 
 ### 동기화에서 속성 및 노드 유형 제외 {#excluding-properties-and-node-types-from-synchronization}
 
