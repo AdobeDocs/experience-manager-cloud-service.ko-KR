@@ -7,17 +7,17 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: 2739b89da945cb96b35bfd33e683b5b5e98490d0
+source-git-commit: 2b290be134be05bc15891082e8b54efef62076d0
 workflow-type: tm+mt
-source-wordcount: '1210'
-ht-degree: 4%
+source-wordcount: '1277'
+ht-degree: 3%
 
 ---
 
 
 # 핵심 구성 요소의 샘플 테마, 템플릿 및 양식 데이터 모델 {#sample-themes-templates-and-data-models}
 
-AEM Forms 핵심 구성 요소는 핵심 구성 요소를 사용하여 적응형 Forms을 신속하게 만들 수 있도록 샘플 참조 테마, 템플릿 및 양식 데이터 모델을 제공합니다. 다음을 수행할 수 있습니다. [적응형 Forms 핵심 구성 요소 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) AEM Forms as a Cloud Service 및 로컬 개발 환경에서 샘플 OOTB 템플릿을 가져와 [샘플 테마 사용 및 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) 위치: [!DNL AEM Forms].
+[!DNL AEM Forms] 핵심 구성 요소는 바로 사용할 수 있는 샘플 테마, 템플릿 및 양식 데이터 모델을 제공하여 다양한 적응형 양식을 신속하게 만듭니다. 또한 양식 작성자가 의 확장성, 적응성 및 응답성을 학습하는 데 도움이 됩니다 [AEM Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 간단한 양식을 신속하게 작성하고 복잡한 양식을 손쉽게 작성하면서 데이터베이스와 원활하게 연결할 수 있습니다.
 
 참조 콘텐츠 패키지에 포함된 샘플 테마, 템플릿 및 양식 데이터 모델은 다음과 같습니다.
 
@@ -39,7 +39,13 @@ AEM Forms 핵심 구성 요소는 핵심 구성 요소를 사용하여 적응형
 
 ## 샘플 테마 {#Sample-Themes}
 
-참조 샘플 테마를 사용하면 작성자가 양식에 맞게 스타일을 정의하고 맞춤화할 수 있으며, CSS에 대한 기본 지식을 갖춘 작성자가 요구 사항에 따라 테마를 맞춤화할 수 있습니다. 양식 작성자 [적응형 Forms 핵심 구성 요소 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) AEM Forms as a Cloud Service 및 로컬 개발 환경에서 다음과 같이 이러한 테마를 얻을 수 있습니다.
+참조 샘플 테마를 사용하면 작성자가 양식에 맞게 스타일을 정의하고 맞춤화할 수 있으며, CSS에 대한 기본 지식을 갖춘 작성자가 요구 사항에 따라 테마를 맞춤화할 수 있습니다.
+
+**이러한 테마를 얻는 방법**
+* 다음 테마를 다운로드하려면 **Forms as a Cloud Service** 환경, [적응형 Forms 핵심 구성 요소 활성화](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) 및 사용 [프론트엔드 파이프라인](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) 를 클릭하여 이러한 테마를 배포합니다.
+* 에 이 테마를 만들려면 **AEM 6.5 Forms** 환경, [적응형 Forms 핵심 구성 요소 활성화](https://experienceleague.corp.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) 및 사용 [패키지 관리자](https://experienceleague.corp.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components) 를 클릭하여 이러한 테마를 배포합니다.
+
+다음 **기본 제공** [적응형 양식 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 테마는 다음과 같이 설명되어 있습니다.
 
 ![OOTB 테마](assets/OOTB-themes.png)
 
@@ -51,7 +57,7 @@ AEM Forms 핵심 구성 요소는 핵심 구성 요소를 사용하여 적응형
 
 ### WKND {#WKND}
 
-WKND 테마는 생동감 있고 상상력이 풍부하며 매력적인 디자인을 구현하여 스타일리시한 모습을 양식에 선보이고 있습니다. 테마는 의 모양과 스타일을 기반으로 합니다. [WKND 사이트](https://wknd.site/us/en.html) 에 여행 및 모험 웹 사이트 빌드 [Adobe Experience Manager 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction).
+WKND 테마는 생동감 있고 상상력이 풍부하며 매력적인 디자인을 구현하여 스타일리시한 모습을 양식에 선보이고 있습니다. 테마는 의 모양과 스타일을 기반으로 합니다. [WKND 사이트](https://wknd.site/us/en.html) 에 여행 및 모험 웹 사이트 빌드 [Adobe Experience Manager 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html).
 
 ![WKND 테마](assets/Safety-Inspection-Form-Theme.png)
 
@@ -64,7 +70,12 @@ WKND 테마는 생동감 있고 상상력이 풍부하며 매력적인 디자인
 
 ## 샘플 템플릿 {#Sample-templates}
 
-템플릿은 초기 양식 구조, 콘텐츠 및 작업을 정의하여 양식에서 복제하거나 양식과 유사한 템플릿 구조(예: 동의 양식, 혜택 등록 양식 등)를 사용합니다. 다음 템플릿은 다음 방법으로 가져올 수 있습니다. [적응형 Forms 핵심 구성 요소 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) AEM Forms as a Cloud Service 또는 로컬 개발 환경에서. 적응형 Forms 핵심 구성 요소의 샘플 템플릿은 다음과 같습니다.
+템플릿은 초기 양식 구조, 콘텐츠 및 작업을 정의하여 양식에서 복제하거나 양식과 유사한 템플릿 구조(예: 동의 양식, 혜택 등록 양식 등)를 사용합니다.
+
+**이러한 템플릿을 가져오는 방법**
+를 배포하여 템플릿을 가져올 수 있습니다. [AEM Archetype 43 이상 기반 프로젝트](https://github.com/adobe/aem-project-archetype) (으)로 **AEM Forms as a Cloud Service** 또는 **AEM 6.5** Forms 환경.
+
+다음 **기본 제공** [적응형 양식 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 템플릿은 다음과 같이 설명되어 있습니다.
 
 ![참조 템플릿](assets/reference-templates-core-components.png)
 
@@ -82,7 +93,7 @@ WKND 테마는 생동감 있고 상상력이 풍부하며 매력적인 디자인
 
 ### 연락처 {#Contact-Us}
 
-연락처 양식 템플릿은 웹 사이트 방문자와 관리자 간의 원활한 커뮤니케이션을 위한 양식을 만드는 데 사용됩니다. 사용자는 양식을 통해 쿼리, 피드백 또는 지원 요청을 제출할 수 있습니다.
+연락처 양식 템플릿은 웹 사이트 방문자와 양식 관리자 간의 원활한 커뮤니케이션을 위한 양식을 만드는 데 사용됩니다. 사용자는 양식을 통해 쿼리, 피드백 또는 지원 요청을 제출할 수 있습니다.
 
 ![연락처 템플릿](assets/Contact-us-desktop-view.png)
 
@@ -100,7 +111,7 @@ WKND 테마는 생동감 있고 상상력이 풍부하며 매력적인 디자인
 
 ### 로그 서비스 요청 {#Log-Service-Request}
 
-로그 서비스 요청 템플릿은 서비스 공급자로부터 특정 로깅 서비스를 요청하는 양식을 만드는 데 도움이 됩니다. 이 양식은 특정 이벤트, 활동 또는 상태 모니터링 또는 추적을 위해 기록된 데이터가 있는 티켓을 만들기 위한 공식적인 요청 역할을 합니다.
+로그 서비스 요청 템플릿은 서비스 공급자로부터 로그별 로깅 서비스를 요청하는 양식을 만드는 데 도움이 됩니다. 이 양식은 모니터링 또는 추적 상태를 위해 기록된 이벤트, 활동 또는 데이터에 대한 티켓을 만드는 공식적인 요청 역할을 합니다.
 
 ![로그 서비스 요청 템플릿](assets/Log-service-request-desktop-view.png)
 
@@ -152,7 +163,7 @@ WKND 테마는 생동감 있고 상상력이 풍부하며 매력적인 디자인
 
 ## 참조 양식 데이터 모델 {#reference-models}
 
-을(를) 만든 후 [적응형 양식](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) 기준 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components), 양식을 데이터베이스 Microsoft® Dynamics 365 및 Salesforce 서버에 연결하여 비즈니스 워크플로우를 활성화할 수 있습니다. 예:
+을(를) 만든 후 [적응형 양식](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#adaptive-forms-core-components) 기준 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction#adaptive-forms-core-components), 양식을 데이터베이스 Microsoft® Dynamics 365 및 Salesforce 서버에 연결하여 비즈니스 워크플로우를 활성화할 수 있습니다. 예:
 
 * 적응형 양식 제출 시 Microsoft® Dynamics 365 및 Salesforce로 데이터를 작성합니다.
 * 양식 데이터 모델에 정의된 사용자 지정 엔터티를 통해 Microsoft® Dynamics 365 및 Salesforce에서 데이터를 쓰고 그 반대로 할 수 있습니다.
@@ -164,4 +175,4 @@ WKND 테마는 생동감 있고 상상력이 풍부하며 매력적인 디자인
 * Microsoft® Dynamics 365
 * Salesforce
 
-이러한 모델 사용에 대한 자세한 내용은 [Microsoft® Dynamics 365 및 Salesforce 클라우드 서비스 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
+이러한 모델 사용에 대한 자세한 내용은 [Microsoft® Dynamics 365 및 Salesforce 클라우드 서비스 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html#configure-dynamics-cloud-service)
