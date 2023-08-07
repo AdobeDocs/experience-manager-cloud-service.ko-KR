@@ -3,10 +3,10 @@ title: AEM 버전 업데이트
 description: AEM에서 as a Cloud Service으로 CI/CD(지속적 통합 및 배포)를 사용하여 프로젝트를 최신 버전으로 유지하는 방법을 알아봅니다.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: dd567c484d71e25de1808f784c455cfb9b124fbf
+source-git-commit: 635b4adeab8d93b7c7335453b04d8b78ef3a0496
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 11%
+source-wordcount: '800'
+ht-degree: 9%
 
 ---
 
@@ -58,6 +58,37 @@ AEM as a Cloud Service 업데이트 중에 이러한 확인이 실패하면 릴�
 >[!NOTE]
 >
 >사용자 지정 코드가 프로덕션이 아닌 스테이징으로 푸시된 경우 다음 AEM 업데이트에서는 이러한 변경 사항을 제거하여 프로덕션에 마지막으로 성공한 고객 릴리스의 git 태그를 반영합니다. 따라서 스테이징에서만 사용할 수 있었던 사용자 지정 코드를 다시 배포해야 합니다.
+
+## 모범 사례 {#best-practices}
+
+* 
+   * **스테이징 환경 사용**
+   * 긴 QA/UAT 주기를 위해 스테이징이 아닌 다른 환경을 사용합니다.
+   * 스테이지에서 온전성 테스트가 완료되면 프로덕션에서 로 이동하여 확인합니다.
+
+* 
+   * **프로덕션 파이프라인**
+   * 프로덕션에 배포하기 전에 일시 중단합니다.
+   * 스테이징 배포 후 파이프라인을 취소하면 코드가 &quot;이동 중&quot;이며 올바른 프로덕션 후보가 아님을 나타냅니다. 다음을 참조하십시오. [프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+
+* 
+   * **비프로덕션 파이프라인**
+* 구성 [비프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
+* 
+   * 프로덕션 파이프라인 실패에 대한 전달 속도/빈도를 가속화합니다.  제품 기능 테스트, 사용자 정의 기능 테스트 및 사용자 정의 UI 테스트를 활성화하여 비프로덕션 파이프라인의 문제를 식별합니다.
+
+* 
+   * **콘텐츠 복사**
+   * 사용 [콘텐츠 복사](/help/implementing/developing/tools/content-copy.md) 를 클릭하여 유사한 컨텐트 세트를 비프로덕션 환경으로 이동합니다.
+
+* 
+   * **자동화된 기능 테스트**
+* 파이프라인에 자동화된 테스트를 포함하여 중요한 기능을 테스트합니다.
+* [고객 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) 및 [사용자 정의 UI 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) 차단됩니다. 실패하면 AEM 릴리스가 롤아웃되지 않습니다.
+
+## 회귀 {#regression}
+
+회귀와 관련된 문제가 발생하는 경우 Admin Console을 통해 지원 사례를 제기하십시오.  문제가 차단제이고 프로덕션에 영향을 주는 경우 P1을 제기해야 합니다.  회귀 문제를 재현하는 데 필요한 모든 세부 정보를 제공합니다.
 
 ## 복합 노드 저장소 {#composite-node-store}
 
