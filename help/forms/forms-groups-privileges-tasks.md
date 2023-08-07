@@ -2,14 +2,19 @@
 title: 기본 제공 [!DNL AEM Forms] as a Cloud Service 그룹
 description: 즉시 사용 가능한 사용자 그룹 및 각 그룹에 할당된 권한 목록
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
+source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 12%
+source-wordcount: '175'
+ht-degree: 25%
 
 ---
 
 # 그룹 및 권한 {#aem-forms-on-osgi-groups-and-privileges}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html) |
+| AEM as a Cloud Service | 이 문서 |
 
 다음을 수행할 수 있습니다. [그룹 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) 및 정책 할당 [사용자](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) 그룹에게 보냅니다. 이러한 정책은 그룹에 속한 사용자의 권한을 제어합니다.
 
@@ -105,7 +110,7 @@ ht-degree: 12%
 
 * [Cloud Service 환경에 온보드](/help/forms/setup-forms-cloud-service.md)
 * [로컬 개발 환경 설정](/help/forms/setup-local-development-environment.md)
-* [AEM 6.5 Forms에서 Cloud Service으로 마이그레이션](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+* [AEM 6.5 Forms에서 Cloud Service로 마이그레이션](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 * [독립 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md)
 * [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
