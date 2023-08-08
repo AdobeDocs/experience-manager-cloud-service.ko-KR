@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 2721cb20083eeda7546513817f1ddfe12e9cb43a
 workflow-type: tm+mt
 source-wordcount: '265'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -30,8 +30,8 @@ AEM as a Cloud Service의 Cloud Manager 2023.7.0 릴리스 일자는 2023년 6�
    * 이 기능은 단계적으로 출시될 예정입니다.
 * 이제 [실행을 취소할 때](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) 파이프라인 실행 승인 단계에서 사용자에게 취소 이유를 입력하도록 요청됩니다.
    * 이 기능은 단계적으로 출시될 예정입니다.
-* 이제 사용자가 액세스할 수 있음 [콘텐츠 복사 프로세스에서 로그인합니다.](/help/implementing/developing/tools/content-copy.md#accessing-logs)
-   * 이 옵션은 소스 및 대상 환경이 모두 AEM 버전인 경우에만 사용할 수 있습니다 `2023.7.12549` 또는 그 이상
+* 이제 사용자는 [콘텐츠 복사 프로세스의 로그](/help/implementing/developing/tools/content-copy.md#accessing-logs)에 액세스할 수 있습니다.
+   * 이 옵션은 소스 및 대상 환경이 모두 AEM 버전 `2023.7.12549` 이상인 경우에만 사용할 수 있습니다.
 
 ## 버그 수정 {#bug-fixes}
 

@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 5995c416328e6f340285004ec2e723cc9279dabd
 workflow-type: tm+mt
 source-wordcount: '935'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 49%
 
 ## 릴리스 일자 {#release-date}
 
-의 릴리스 날짜 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 기능 릴리스(2023.7.0)는 2023년 7월 27일입니다. 다음 기능 릴리스(2023.8.0)는 2023년 8월 31일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 기능 릴리스(2023.7.0)의 릴리스 날짜는 2023년 7월 27일입니다. 다음 기능 릴리스(2023.8.0)는 2023년 8월 31일에 예정되어 있습니다.
 
 ## 릴리스 비디오 {#release-video}
 
@@ -38,13 +38,13 @@ ht-degree: 49%
 
 ### [!DNL Experience Manager Sites]의 새로운 기능 {#sites-features}
 
-* 콘텐츠 조각용 MSM. 이제 콘텐츠 조각에 AEM Multisite Manager를 사용할 수 있으며 벌크 콘텐츠 배포를 위해 콘텐츠 조각 라이브 카피를 만들 수 있습니다. 세분화된 상속 컨트롤은 콘텐츠 조각 요소 및 변형 수준까지 사용할 수 있습니다.
+* 콘텐츠 조각의 MSM. 이제 AEM Multisite Manager를 콘텐츠 조각에 사용할 수 있으므로 대량 콘텐츠 배포를 위한 콘텐츠 조각 라이브 카피를 만들 수 있습니다. 콘텐츠 조각 요소 및 변형 수준까지 세분화된 상속 제어를 사용할 수 있습니다.
 
 ### [!DNL Experience Manager Sites] 프리릴리스의 새로운 기능 {#prerelease-sites}
 
-* 다음 [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=ko) 이제 사용자는 태그를 보고 콘텐츠 조각에 메타데이터로 적용된 태그로 검색할 수 있습니다. 사용자는 이 기능을 위해 더 이상 Assets UI로 전환할 필요가 없어 컨텍스트 전환이 줄어들고 효율성이 향상됩니다.
+* 이제 사용자는 [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=ko)을 사용하여 콘텐츠 조각에 메타데이터로 적용된 태그를 보고 검색할 수 있습니다. 사용자가 더 이상 이 기능을 사용하기 위해 자산 UI로 전환할 필요가 없으므로 컨텍스트 전환이 줄어들고 효율성이 향상됩니다.
 
-![콘텐츠 조각 콘솔의 태깅](/help/assets/content-fragments-console-tags.png)
+![콘텐츠 조각 콘솔에서 태그 지정](/help/assets/content-fragments-console-tags.png)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -79,18 +79,18 @@ Experience Manager Assets는 이제 이미지 스마트 태그에 대해 향상�
 
 ### [!DNL Forms] 프리릴리스에서 사용 가능한 새로운 기능 {#new-features-available-in-forms-channel}
 
-* [**기본 제공 테마**](/help/forms/using-themes-in-core-components.md) **및 템플릿**: 숙련된 전문가와 새로운 양식 작성자 모두에게 권한을 부여하도록 맞춤화된 즉시 사용할 수 있는 OOTB 테마 및 템플릿을 사용하여 양식 작성 프로세스를 시작하십시오. 적응형 Forms 핵심 구성 요소를 사용하여 간편하게 빌드된 이 세심하게 조정된 테마와 템플릿을 사용하면 일반적인 사용 사례에서 신속하게 양식을 만들 수 있습니다.
+* [**기본 제공 테마**](/help/forms/using-themes-in-core-components.md)**및 템플릿**: 바로 사용할 수 있으며 노련한 전문가와 초보 양식 작성자 모두의 역량을 강화하도록 맞춤화된 OOTB 테마 및 템플릿으로 양식 작성 프로세스를 시작하십시오. 적응형 양식 핵심 구성 요소를 사용하여 원활하게 구축되었으며 세심하게 선별된 이 테마 및 템플릿을 사용하면 일반적인 사용 사례에 대한 양식을 신속하게 작성할 수 있습니다.
 
   ![기본 제공 템플릿](/help/forms/assets/form-templates-ootb.png)
 
-* **Headless Forms용 React 구성 요소**: 이제 즉시 제공된 React 구성 요소로 Headless 적응형 양식 렌디션을 미리 보고 사용자 정의할 수 있습니다. 이러한 구성 요소는 스타일을 지정하기 위해 적응형 Forms 핵심 구성 요소의 BEM 클래스를 활용하므로 특정 요구 사항에 따라 모양을 손쉽게 사용자 지정할 수 있습니다.
+* **헤드리스 양식용 React 구성 요소**: 이제 기본 제공 React 구성 요소를 사용하여 헤드리스 적응형 양식 렌디션을 미리 보고 사용자 정의할 수 있습니다. 이러한 구성 요소는 스타일 지정을 위해 적응형 양식 핵심 구성 요소의 BEM 클래스를 활용하므로 특정 요구 사항에 따라 형태를 쉽게 사용자 정의할 수 있습니다.
 
-* [**반복 가능한 섹션이 포함된 적응형 Forms 만들기**](/help/forms/create-forms-repeatable-sections.md): 이제 다음을 수행할 수 있습니다. [어코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [패널](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), 및 [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 여러 데이터 레코드 캡처를 위한 적응형 양식 기반 구성 요소.  이러한 반복 가능한 섹션을 통해 여러 데이터 항목을 쉽게 제공할 수 있습니다. 필요한 데이터 인스턴스를 미리 알 수 없는 경우에 유용합니다. 양식 작성기를 사용하면 섹션을 쉽게 추가하거나 제거할 수 있으므로 양식을 다양한 데이터 입력 시나리오에 맞게 조정할 수 있으며 동일한 데이터 레코드의 여러 항목을 간편하게 수집할 수 있습니다.
+* [**반복 가능한 섹션으로 적응형 양식 만들기**](/help/forms/create-forms-repeatable-sections.md): 이제 [아코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [패널](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html) 및 [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 구성 요소에 기반한 반복 가능 적응형 양식을 만들어 여러 데이터 레코드 캡처에 사용할 수 있습니다.  이러한 반복 가능한 섹션을 사용하면 여러 데이터 항목을 쉽게 제공할 수 있습니다. 필요한 데이터 인스턴스를 미리 알 수 없는 경우에 유용합니다. 양식 작성기에서 섹션을 쉽게 추가하거나 제거할 수 있으므로, 양식을 다양한 데이터 입력 시나리오에 맞게 조정하고 동일한 데이터 레코드의 여러 항목 수집을 단순화할 수 있습니다.
 
 
-### 에서 사용할 수 있는 프리릴리스 기능 [!DNL Forms] {#pre-release-features-available-in-forms-channel}
+### [!DNL Forms]에서 사용할 수 있는 프리릴리스 기능 {#pre-release-features-available-in-forms-channel}
 
-* [**Google reCAPTCHA 엔터프라이즈 지원**](/help/forms/captcha-adaptive-forms.md): 적응형 양식에서 Google reCAPTCHA Enterprise를 사용하여 사기 활동 및 스팸에 대한 향상된 보호를 제공하여 보다 안전한 사용자 경험을 제공합니다. 고급 위험 분석과 원활한 통합을 통해 정품 사용자는 손쉽게 양식을 제출할 수 있으며 봇은 효과적으로 차단됩니다.
+* [**Google reCAPTCHA 엔터프라이즈 지원**](/help/forms/captcha-adaptive-forms.md): 적응형 양식에서 Google reCAPTCHA Enterprise를 사용해 사기 행위 및 스팸 방지 기능을 강화하여 보다 안전한 사용자 환경을 제공합니다. 고급 위험 분석 및 원활한 통합을 통해 실제 사용자가 양식을 쉽게 제출할 수 있는 동시에 봇이 효과적으로 차단됩니다.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3422097/adaptive-forms-recaptcha-core-components-captcha/?quality=12&learn=on)
 
@@ -109,23 +109,23 @@ Experience Manager Assets는 이제 이미지 스마트 태그에 대해 향상�
 
 ### 액션 센터 {#actions-center}
 
-즉각적인 조치가 필요한 중요한 사고가 발생할 때 경고하는 이메일 알림을 구독하고 사이트를 최적화하기 위한 개인화된 권장 사항을 제공합니다. [작업 센터](/help/operations/actions-center.md) 복제 큐 차단 또는 자격 증명 만료 등 이러한 경고를 검토하고 해결됨으로 표시할 수 있는 허브 역할을 합니다.
+즉각적인 조치가 필요한 중대 인시던트가 발생할 때 알려 주는 이메일 알림과 사이트 최적화를 위한 개인화된 권장 사항을 구독할 수 있습니다. [액션 센터](/help/operations/actions-center.md)는 차단된 복제 대기열 또는 자격 증명 만료와 같은 경고를 검토하고 해결 상태로 표시할 수 있는 허브 역할을 합니다.
 
-![작업 센터 스크린샷](/help/assets/assets/actions-center.png)
+![액션 센터 스크린샷](/help/assets/assets/actions-center.png)
 
 ### CDN 및 WAF 규칙 얼리 어답터 프로그램 {#waf-early-adopter}
 
-다음을 기반으로 CDN의 트래픽 필터링:
+다음을 기준으로 CDN에서 트래픽을 필터링할 수 있습니다.
 * 요청 헤더 및 속성(예: IP 주소)
 * 악성 트래픽과 관련된 것으로 알려진 트래픽 패턴
 
-기능을 테스트하고 피드백을 공유하는 데 관심이 있으십니까? 다음으로 이메일 보내기 **aemcs-waf-adopter@adobe.com** 얼리어답터 프로그램에 대한 자세한 내용은 공식 이메일 ID에서 확인하십시오. 공간이 제한되어 있습니다.
+기능을 사용해 보고 피드백을 공유하고 싶으십니까? 공식 이메일 ID로 **aemcs-waf-adopter@adobe.com**&#x200B;에 이메일을 보내 얼리 어답터 프로그램에 대해 자세히 알아보십시오. 인원이 한정되어 있습니다.
 
-문서의 기능에 대해 자세히 알아보기 [여기](/help/security/cdn-and-waf-rules.md).
+[여기](/help/security/cdn-and-waf-rules.md)에 있는 문서에서 기능에 대해 자세히 알아보십시오.
 
-### 기타 기초 변경 사항 {#other-foundation-changes}
+### 기타 Foundation 변경 사항 {#other-foundation-changes}
 
-* 8월 7일이 있는 주 동안 AEM 인스턴스에 대한 요청이 정상 수준을 초과하면 AEM은 오류 코드 503 대신 오류 코드 429를 반환합니다. [자세히 알아보기](/help/implementing/developing/introduction/development-guidelines.md).
+* 8월 7일이 속한 한 주 동안 AEM 인스턴스에 대한 요청이 정상 수준을 초과하면 AEM에서 오류 코드 503 대신 오류 코드 429를 반환합니다. [자세히 알아보기](/help/implementing/developing/introduction/development-guidelines.md).
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 

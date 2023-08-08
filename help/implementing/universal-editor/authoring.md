@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 source-git-commit: 481202760e0d22cde9c32e0b781dc99f67d463e4
 workflow-type: tm+mt
 source-wordcount: '1939'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -142,7 +142,7 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 #### 앱 미리보기 열기 {#open-app-preview}
 
-편집기에서 벗어나 앱 미리 보기 열기 아이콘을 탭하거나 클릭하여 현재 편집 중인 페이지를 자체 브라우저 탭에서 열어 콘텐츠를 미리 볼 수 있습니다.
+앱 미리보기 열기 아이콘을 탭하거나 클릭하면 현재 편집 중인 페이지가 자체 브라우저 탭에서 열려 편집기 없이 콘텐츠를 미리 볼 수 있습니다.
 
 ![앱 미리보기 열기](assets/open-app-preview.png)
 
@@ -182,8 +182,8 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 ![텍스트 모드](assets/text-mode.png)
 
-* 다음을 수행할 수 있습니다. [일반 텍스트 편집](#editing-content) 제자리에.
-* 다음을 수행할 수도 있습니다. [리치 텍스트 편집](#editing-rich-text) 구성 요소 레일에 표시되는 추가적인 서식 옵션과 함께 배치됩니다.
+* 즉시 [일반 텍스트를 편집](#editing-content)할 수 있습니다.
+* 즉시 [리치 텍스트를 편집](#editing-rich-text)하는 것 또한 가능하며 이때 추가 서식 옵션이 구성 요소 레일에 표시됩니다.
 
 >[!TIP]
 >
@@ -195,7 +195,7 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 ![미디어 모드](assets/media-mode.png)
 
-콘텐츠 세부 사항은 구성 요소 레일에 표시되며 작성자는 [미디어 콘텐츠를 편집합니다.](#editing-media)
+콘텐츠의 세부 정보가 구성 요소 레일에 표시되며 작성자는 [미디어 콘텐츠도 편집](#editing-media)할 수 있습니다.
 
 >[!TIP]
 >
@@ -203,11 +203,11 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 #### 구성 요소 모드 {#component-mode}
 
-구성 요소 모드에서 콘텐츠 작성자는 클릭하여 선택할 수 있습니다. [컨텐츠 조각.](/help/assets/content-fragments/content-fragments.md)
+구성 요소 모드에서 콘텐츠 작성자는 클릭하여 [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)을 선택할 수 있습니다.
 
 ![구성 요소 모드](assets/component-mode.png)
 
-콘텐츠 조각을 선택하면 그 세부 정보가 구성 요소 레일에 표시되어 다음과 같은 작업을 수행할 수 있습니다 [콘텐츠 조각을 편집합니다.](#edit-content-fragment)
+콘텐츠 조각을 선택하면 세부 정보가 구성 요소 레일에 표시되며 여기에서 [콘텐츠 조각을 편집](#edit-content-fragment)할 수 있습니다.
 
 >[!TIP]
 >
@@ -215,13 +215,13 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 #### 편집 {#edit}
 
-다음 시기 [구성 요소 모드,](#component-mode) 을(를) 선택하는 경우 [컨텐츠 조각,](/help/assets/content-fragments/content-fragments.md) 편집 옵션이 모드 레일에 나타납니다.
+[구성 요소 모드](#component-mode)에서 [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)을 선택하면 편집 옵션이 모드 레일에 표시됩니다.
 
 ![편집 아이콘](assets/edit.png)
 
-편집 버튼을 탭하거나 클릭하면 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) 새 탭에서 콘텐츠 조각 편집기의 전체 기능에 액세스할 수 있습니다.
+편집 버튼을 탭하거나 클릭하면 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)가 새 탭에서 열려 콘텐츠 조각 편집기의 전체 기능에 액세스할 수 있습니다.
 
-콘텐츠 조각의 세부 사항을 편집할 수도 있습니다. [구성 요소 레일](#edit-content-fragment) 워크플로우의 요구 사항에 따라 다릅니다.
+또한 워크플로의 필요에 따라 [구성 요소 레일](#edit-content-fragment)에서 콘텐츠 조각의 세부 정보를 편집할 수 있습니다.
 
 >[!TIP]
 >
@@ -231,7 +231,7 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 편집기는 창의 대부분을 차지하며 [위치 표시줄](#location-bar)에 지정된 페이지가 렌더링되는 곳입니다.
 
-* 편집기가 다음과 같은 편집 모드에 있는 경우 [텍스트 모드](#text-mode) 또는 [미디어 모드,](#media-mode) 컨텐츠는 편집할 수 있지만 링크를 따라갈 수는 없습니다.
+* 편집기가 [텍스트 모드](#text-mode) 또는 [미디어 모드](#media-mode)와 같은 편집 모드에 있는 경우 콘텐츠를 편집할 수 있지만 링크를 따라갈 수는 없습니다.
 * 편집기가 [미리보기 모드](#preview-mode)에 있는 경우 콘텐츠를 탐색하고 링크를 따라갈 수 있지만, 콘텐츠를 편집할 수 없습니다.
 
 ![편집기](assets/editor.png)
@@ -248,11 +248,11 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 ![속성 모드](assets/properties-mode.png)
 
-선택한 구성 요소 유형에 따라 세부 정보가 속성 레일에 표시되고 수정될 수 있습니다.
+선택한 구성 요소 유형에 따라 속성 레일에 세부 정보가 표시될 수 있으며 여기에서 해당 세부 정보를 수정할 수 있습니다.
 
 ![구성 요소 세부 정보](assets/component-details.png)
 
-모든 구성 요소에 표시 및/또는 편집할 수 있는 세부 정보가 있는 것은 아닙니다.
+일부 구성 요소에는 표시 및/또는 편집할 수 있는 세부 정보가 포함되지 않습니다.
 
 >[!TIP]
 >
@@ -281,23 +281,23 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 편집 모드에서 콘텐츠를 탭하거나 클릭하면 편집할 콘텐츠가 선택됩니다. 링크를 이용하여 콘텐츠를 탐색하려면 [미리보기 모드](#preview-mode)로 전환합니다.
 
-에 따라 [모드](#mode-rail) 에서 선택한 컨텐츠를 편집하는 동안 즉석 편집 옵션이 다를 수 있으며, 를 사용하여 컨텐츠에 대한 추가 속성을 검토할 수 있습니다. [구성 요소 레일.](#component-rail)
+현재 [모드](#mode-rail)와 선택한 콘텐츠에 따라 즉시 편집 옵션이 다를 수 있으며, [구성 요소 레일](#component-rail)을 사용해 콘텐츠의 추가 속성을 검토하는 것이 가능할 수 있습니다.
 
 ### 일반 텍스트 편집 {#edit-plain-text}
 
-에 있는 경우 [텍스트 모드](#text-mode) 일반 텍스트 구성 요소를 선택하면 텍스트를 바로 편집할 수 있습니다.
+[텍스트 모드](#text-mode)에서 일반 텍스트 구성 요소를 선택하면 즉시 텍스트를 편집할 수 있습니다.
 
 ![콘텐츠 편집](assets/editing-content.png)
 
-단순히 입력하여 콘텐츠를 업데이트합니다. Enter/Return 키를 누르거나 텍스트 상자 외부를 탭하거나 클릭하여 변경 내용을 저장합니다.
+콘텐츠를 업데이트하려면 내용을 입력하면 됩니다. Enter/Return 키를 누르거나 텍스트 상자 외부를 탭하거나 클릭하여 변경 사항을 저장합니다.
 
 ### 리치 텍스트 편집 {#edit-rich-text}
 
-에 있는 경우 [텍스트 모드](#text-mode) 서식 있는 텍스트 구성 요소를 선택하면 텍스트를 바로 편집할 수 있습니다.
+[텍스트 모드](#text-mode)에서 리치 텍스트 구성 요소를 선택하면 즉시 텍스트를 편집할 수 있습니다.
 
-단순히 입력하여 콘텐츠를 업데이트합니다. Enter/Return 키를 누르거나 텍스트 상자 외부를 탭하거나 클릭하여 변경 내용을 저장합니다.
+콘텐츠를 업데이트하려면 내용을 입력하면 됩니다. Enter/Return 키를 누르거나 텍스트 상자 외부를 탭하거나 클릭하여 변경 사항을 저장합니다.
 
-또한 서식 옵션 및 텍스트에 대한 세부 사항은 구성 요소 레일에서 사용할 수 있습니다.
+또한 구성 요소 레일에서 텍스트의 서식 옵션 및 세부 정보를 사용하고 확인할 수 있습니다.
 
 ![서식 있는 텍스트 구성 요소 편집](assets/rich-text-editing.png)
 
@@ -305,33 +305,33 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 ### 미디어 편집 {#edit-media}
 
-에 있는 경우 [미디어 모드](#media-mode) 이미지를 선택하면 구성 요소 레일에서 세부 정보를 볼 수 있습니다.
+[미디어 모드](#media-mode)에서 이미지를 선택하면 구성 요소 레일에서 세부 정보를 볼 수 있습니다.
 
 ![미디어 편집](assets/ue-edit-media.png)
 
-을(를) 탭하거나 클릭합니다 **바꾸기** 구성 요소 레일에서 선택한 이미지의 미리 보기 아래에 있는 단추를 클릭하여 이미지를 자산 라이브러리의 다른 이미지로 바꿉니다.
+구성 요소 레일에서 선택한 이미지의 미리보기 아래에 있는 **바꾸기** 버튼을 탭하거나 클릭하여 이미지를 자산 라이브러리의 다른 이미지로 바꿉니다.
 
-1. 다음 [자산 선택기](/help/assets/asset-selector.md#using-asset-selector) 자산을 선택할 수 있는 창이 열립니다.
+1. 자산을 선택할 수 있는 [자산 선택기](/help/assets/asset-selector.md#using-asset-selector) 창이 열립니다.
 1. 탭하거나 클릭하여 새 자산을 선택합니다.
-1. 탭 또는 클릭 **선택** 에셋이 교체된 구성 요소 레일로 돌아갑니다.
+1. **선택**&#x200B;을 탭하거나 클릭하여 자산을 바꾼 구성 요소 레일로 돌아갑니다.
 
 변경 사항은 콘텐츠에 자동으로 저장됩니다.
 
 >[!TIP]
 >
->단축키 사용 `R` 에셋 선택기를 열어 선택한 이미지를 바꿉니다.
+>단축키 `R`을 사용해 자산 선택기를 열어 선택한 이미지를 바꿉니다.
 
 ### 콘텐츠 조각 편집 {#edit-content-fragment}
 
-에 있는 경우 [구성 요소 모드](#component-mode) 다음 중 하나를 선택합니다. [컨텐츠 조각,](/help/assets/content-fragments/content-fragments.md) 구성 요소 레일에서 세부 사항을 편집할 수 있습니다.
+[구성 요소 모드](#component-mode)에서 [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)을 선택하면 구성 요소 레일에서 해당 콘텐츠 조각의 세부 정보를 편집할 수 있습니다.
 
-![컨텐츠 조각 편집](assets/ue-edit-cf.png)
+![콘텐츠 조각 편집](assets/ue-edit-cf.png)
 
-선택한 콘텐츠 조각의 콘텐츠 모델에 정의된 필드가 구성 요소 레일에 표시되고 편집할 수 있습니다.
+선택한 콘텐츠 조각의 콘텐츠 모델에 정의된 필드가 구성 요소 레일에 표시되며 여기에서 해당 필드를 편집할 수 있습니다.
 
 변경 사항은 콘텐츠에 자동으로 저장됩니다.
 
-에서 콘텐츠 조각을 편집하려면 다음을 수행하십시오. [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) 대신 [편집 단추](#edit) 모드 레일에서 을 클릭합니다.
+대신 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)에서 콘텐츠 조각을 편집하려면 모드 레일에서 [편집 버튼](#edit)을 클릭합니다.
 
 ## 콘텐츠 미리보기 {#previewing-content}
 
