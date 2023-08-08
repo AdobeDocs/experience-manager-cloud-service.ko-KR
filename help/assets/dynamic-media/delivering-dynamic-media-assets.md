@@ -1,13 +1,13 @@
 ---
 title: Dynamic Media Assets 전달
-description: Dynamic Media 에셋을 제공하는 방법을 알아봅니다.
+description: 포함된 비디오 및 이미지를 통해 또는 웹 애플리케이션에 URL을 연결하여 Dynamic Media 자산을 웹 페이지에 전달하는 방법을 알아봅니다.
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '335'
 ht-degree: 9%
 
 ---

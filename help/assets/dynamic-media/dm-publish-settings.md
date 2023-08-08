@@ -1,6 +1,6 @@
 ---
 title: 이미지 서버에 대한 Dynamic Media 게시 설정 구성
-description: Dynamic Media에서 게시를 설정하는 방법을 알아봅니다.
+description: 색상 관리, 보안 및 썸네일 이미지에 대해 다루고 있는 이미지 서버에 대한 Dynamic Media Publish 설정을 구성하는 방법에 대해 알아봅니다.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
-source-wordcount: '3481'
+source-wordcount: '3493'
 ht-degree: 3%
 
 ---

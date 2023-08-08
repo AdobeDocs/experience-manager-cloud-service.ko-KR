@@ -1,12 +1,12 @@
 ---
 title: Dynamic Media 문제 해결
-description: Dynamic Media 사용 시 문제 해결 팁
+description: Dynamic Media에서 이미지, 세트 및 뷰어로 작업할 때 시도할 수 있는 문제 해결 팁에 대해 알아봅니다.
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1146'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ CRXDE Lite에서 다음 에셋 속성을 검토하여 Adobe Experience Manager�
 
 기존 Dynamic Media 에셋(동일한 이름 및 위치)을 바꿀 때 두 에셋을 모두 유지하거나 버전을 대체/만들 수 있습니다.
 
-* 둘 다 유지하면 게시된 에셋 URL에 대해 고유한 이름의 에셋이 만들어집니다. 예를 들어, `image.jpg` 은(는) 원래 자산이며 `image1.jpg` 는 새로 업로드한 에셋입니다.
+* 둘 다 유지하면 게시된 에셋 URL에 대해 고유한 이름의 에셋이 만들어집니다. 예를 들어, `image.jpg` 은(는) 원본 자산이며 `image1.jpg` 는 새로 업로드한 에셋입니다.
 
 * Dynamic Media에서는 버전 만들기가 지원되지 않습니다. 새 버전은 게재의 기존 에셋을 대체합니다.
 
@@ -204,8 +204,7 @@ CRXDE Lite에서 다음을 수행합니다.
    * `"is/content"`
    * `dam:scene7Folder`
    * `<asset-name>`
-예: 
-`https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+예: `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
 
 **솔루션**
 
