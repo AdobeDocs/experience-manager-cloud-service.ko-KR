@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.6.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.6.0 릴리스 정보입니다.'
 source-git-commit: 2d10d03e478bff5a162c620c41ceac38a6d7911a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1409'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 97%
 
 * 이제 [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)을 사용하여 콘텐츠 조각 및 해당 참조를 [AEM 미리보기 서비스](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)에 게시하게 되면 사용자는 시작하기 전에 분리된 미리보기 애플리케이션을 통해 최종 경험을 미리 볼 수 있습니다.
 
-![콘텐츠 조각 콘솔에서 미리 보기](/help/assets/content-fragments-console-preview.png)
+![콘텐츠 조각 콘솔에서 미리보기](/help/assets/content-fragments-console-preview.png)
 
 * 이제 AEM GraphQL을 사용하여 Headless 시나리오에서 웹 게재를 위해 이미지를 동적으로 최적화할 수 있습니다. GraphQL 쿼리에서 [쿼리 변수](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=ko#query-variables)를 정의하여 분리된 클라이언트 애플리케이션으로 AEM에서 최적화된 이미지를 요청할 수 있습니다.
 * 이제 [콘텐츠 조각 변형](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=ko)에 있는 태그를 AEM GraphQL 콘텐츠 게재 API를 사용하여 JSON으로 출력할 수 있습니다.
@@ -132,7 +132,7 @@ Assets 보기에서는 이제 [다중 값 텍스트 및 드롭다운 목록 속�
 
 * [양식 데이터 모델에 대한 향상된 인증 방법](/help/forms/configure-data-sources.md): AEM Forms를 호환되는 데이터 소스와 연결하기 위한 클라이언트 자격 증명 기반 인증을 도입하여 보안 경험을 강화합니다. 이 향상된 기능을 통해 가장 또는 사용자 로그인을 사용하지 않고도 데이터 보호 기능을 강화합니다.
 
-* [반복 가능한 섹션이 포함된 적응형 Forms](/help/forms/create-forms-repeatable-sections.md): 이제 다음을 수행할 수 있습니다. [어코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [패널](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), 및 [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 핵심 구성 요소 기반 적응형 양식의 구성 요소를 사용하여 반복 가능한 섹션 만들기
+* [반복 가능한 섹션으로 적응형 양식 만들기](/help/forms/create-forms-repeatable-sections.md): 이제 적응형 양식 기반 핵심 구성 요소에서 [아코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [패널](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html) 및 [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 구성 요소를 만들어 반복 가능한 섹션을 만들 수 있습니다.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 
