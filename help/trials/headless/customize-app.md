@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 source-git-commit: 3177832b32c98bf463c763dafe2d9e284dc2ac28
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1044'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ AEM Headless CMS에 통합될 때 React 앱 내에서 콘텐츠를 업데이트�
 
    ![조각에서 이미지 제거](assets/do-not-localize/swap-image-4.png)
 
-1. 탭 또는 클릭 **에셋 추가** 그런 다음 **에셋 찾아보기** 을 클릭합니다.
+1. **자산 추가**&#x200B;를 탭하거나 클릭한 다음 팝업 메뉴에서 **자산 찾아보기**&#x200B;를 탭하거나 클릭합니다.
 
 1. **자산 선택** 대화 상자가 열리고 **sample-wknd-app** > **en** > **이미지 파일** 경로가 자동으로 선택됩니다.
 
