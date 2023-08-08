@@ -3,9 +3,9 @@ title: 액션 센터
 description: 액션 센터를 활용하여 인시던트 및 기타 중요한 정보에 대해 편리하게 조치
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 source-git-commit: 4adae6ffe45dcd2b80d7d199fc29a806ce5e78c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '727'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ AEM as Cloud Service는 최적화에 즉각적인 조치 및 사전 알림 추�
 
 ## 자세한 사용자 흐름 {#detailed-user-flow}
 
-이메일을 클릭하면 클릭한 알림에 대한 컨텍스트를 표시하는 팝업과 경우에 따라 수정 조치를 취하는 방법을 설명하는 추가 정보 링크가 있는 액션 센터로 이동합니다. 다음 위치에서 작업 센터에 직접 액세스할 수도 있습니다. [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/)관련 프로그램 및 환경을 선택할 수 있습니다.
+이메일을 클릭하면 클릭한 알림에 대한 컨텍스트를 표시하는 팝업과 경우에 따라 수정 조치를 취하는 방법을 설명하는 추가 정보 링크가 있는 액션 센터로 이동합니다. [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/)에서 액션 센터에 직접 액세스하여 관련 프로그램 및 환경을 선택할 수도 있습니다.
 
 ![인시던트 세부 정보](/help/operations/assets/incident-details.png)
 
