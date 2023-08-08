@@ -3,9 +3,9 @@ title: 빌드 환경
 description: Cloud Manager의 빌드 환경과 코드 빌드 및 테스트 방법에 대해 알아봅니다.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 source-git-commit: d3bc5dbb5a88aff7765beffc8282d99063dde99f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1005'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
