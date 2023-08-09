@@ -2,10 +2,10 @@
 title: Universal Editor로 콘텐츠 작성
 description: 콘텐츠 작성자가 Universal Editor를 사용하여 얼마나 쉽고 직관적으로 콘텐츠를 만들 수 있는지 알아봅니다.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 481202760e0d22cde9c32e0b781dc99f67d463e4
+source-git-commit: e03bf6437b72a4fe7e959a23f12f0baa892fa567
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 100%
+source-wordcount: '2271'
+ht-degree: 83%
 
 ---
 
@@ -213,20 +213,6 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 >
 >단축키 `C`를 사용하여 구성 요소 모드로 전환합니다.
 
-#### 편집 {#edit}
-
-[구성 요소 모드](#component-mode)에서 [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)을 선택하면 편집 옵션이 모드 레일에 표시됩니다.
-
-![편집 아이콘](assets/edit.png)
-
-편집 버튼을 탭하거나 클릭하면 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)가 새 탭에서 열려 콘텐츠 조각 편집기의 전체 기능에 액세스할 수 있습니다.
-
-또한 워크플로의 필요에 따라 [구성 요소 레일](#edit-content-fragment)에서 콘텐츠 조각의 세부 정보를 편집할 수 있습니다.
-
->[!TIP]
->
->단축키 `E`를 사용하여 선택한 구성 요소를 편집합니다.
-
 ### 편집기 {#editor}
 
 편집기는 창의 대부분을 차지하며 [위치 표시줄](#location-bar)에 지정된 페이지가 렌더링되는 곳입니다.
@@ -258,7 +244,7 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 >
 >단축키 `D`를 사용하여 속성 모드로 전환합니다.
 
-#### 콘텐츠 트리 모드 {#Content-tree-mode}
+#### 콘텐츠 트리 모드 {#content-tree-mode}
 
 콘텐츠 트리 모드의 경우 레일에 페이지 콘텐츠의 계층 구조가 표시됩니다.
 
@@ -272,6 +258,43 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 >
 >단축키 `F`를 사용하여 콘텐츠 트리 모드로 전환합니다.
 
+#### 편집 {#edit}
+
+다음 시기 [구성 요소 모드,](#component-mode) 을(를) 선택하는 경우 [컨텐츠 조각,](/help/assets/content-fragments/content-fragments.md) 편집 옵션이 구성 요소 레일에 표시됩니다.
+
+![편집 아이콘](assets/edit.png)
+
+편집 버튼을 탭하거나 클릭하면 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)가 새 탭에서 열려 콘텐츠 조각 편집기의 전체 기능에 액세스할 수 있습니다.
+
+워크플로우의 요구 사항에 따라 구성 요소 레일 내에서 콘텐츠 조각의 세부 사항을 편집할 수도 있습니다.
+
+>[!TIP]
+>
+>단축키 `E`를 사용하여 선택한 구성 요소를 편집합니다.
+
+#### 추가 {#add}
+
+콘텐츠 트리 또는 편집기에서 컨테이너 구성 요소를 선택하면 구성 요소 레일에 추가 옵션이 표시됩니다.
+
+![추가 아이콘](assets/ue-add-component-icon.png)
+
+추가 버튼을 탭하거나 클릭하면 사용할 수 있는 구성 요소의 드롭다운 메뉴가 열립니다 [선택한 컨테이너에 를 추가합니다.](#adding-components)
+
+>[!TIP]
+>
+>단축키 사용 `A` 을 눌러 선택한 컨테이너 구성 요소에 구성 요소를 추가합니다.
+
+#### 삭제 {#delete}
+
+콘텐츠 트리 또는 편집기에서 컨테이너 구성 요소 내의 구성 요소를 선택하면 구성 요소 레일에 삭제 옵션이 표시됩니다.
+
+![삭제 아이콘](assets/ue-delete-component-icon.png)
+
+삭제 단추 탭하거나 클릭 [구성 요소를 삭제합니다.](#deleting-components)
+
+>[!TIP]
+>
+>단축키 사용 `Shift+Backspace` 컨테이너에서 선택한 구성 요소를 삭제합니다.
 
 ## 콘텐츠 편집 {#editing-content}
 
@@ -332,6 +355,38 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 변경 사항은 콘텐츠에 자동으로 저장됩니다.
 
 대신 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)에서 콘텐츠 조각을 편집하려면 모드 레일에서 [편집 버튼](#edit)을 클릭합니다.
+
+### 컨테이너에 구성 요소 추가 {#adding-components}
+
+1. 콘텐츠 트리 또는 편집기에서 컨테이너 구성 요소를 선택합니다.
+1. 그런 다음 구성 요소 레일에서 추가 아이콘을 탭하거나 클릭합니다.
+
+   ![컨테이너에 추가할 구성 요소 선택](assets/ue-add-component.png)
+
+구성 요소가 컨테이너에 삽입되며 편집기에서 편집할 수 있습니다.
+
+### 컨테이너에서 구성 요소 삭제 {#deleting-components}
+
+1. 콘텐츠 트리 또는 편집기에서 컨테이너 구성 요소를 선택합니다.
+1. 컨테이너의 V자 아이콘을 탭하거나 클릭하여 콘텐츠 트리에서 콘텐츠를 확장합니다.
+1. 그런 다음 콘텐츠 트리에서 컨테이너 내의 구성 요소를 선택합니다.
+1. 구성 요소 레일에서 삭제 아이콘 을 탭하거나 클릭합니다.
+
+   ![구성 요소 삭제](assets/ue-delete-component.png)
+
+선택한 구성 요소가 삭제되었습니다.
+
+### 컨테이너에서 구성 요소 재정렬 {#reordering-components}
+
+1. 콘텐츠 트리 또는 편집기에서 컨테이너 구성 요소를 선택합니다.
+1. 아직 [콘텐츠 트리 모드,](#content-tree-mode) 전환합니다.
+1. 컨테이너의 V자 아이콘을 탭하거나 클릭하여 콘텐츠 트리에서 콘텐츠를 확장합니다.
+1. 컨테이너 내의 구성 요소 옆에 핸들 아이콘을 드래그하면 구성 요소를 재배열할 수 있음을 알 수 있습니다. 컨테이너 내에서 구성 요소를 드래그하여 순서를 변경합니다.
+
+   ![구성 요소 재정렬](assets/ue-reordering-components.png)
+1. 드래그한 구성 요소는 구성 요소 트리에서 회색으로 바뀌고 삽입 지점은 파란색 선으로 표시됩니다. 구성 요소를 릴리스하여 새 위치에 배치합니다.
+
+콘텐츠 트리와 편집기 모두에서 구성 요소의 순서가 변경되었습니다
 
 ## 콘텐츠 미리보기 {#previewing-content}
 

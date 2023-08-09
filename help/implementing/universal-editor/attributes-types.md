@@ -2,10 +2,10 @@
 title: 속성 및 유형
 description: Universal Editor에 필요한 데이터 속성 및 유형에 대해 알아봅니다.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
+source-git-commit: 9df57ce958bb8f7f9406b9fe342c9d2a4ccb0ae0
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 100%
+source-wordcount: '681'
+ht-degree: 94%
 
 ---
 
@@ -53,7 +53,8 @@ Universal Editor에서 앱을 편집할 수 있으려면 앱이 적절하게 구
 
 | `data-editor-behavior` | 설명 |
 |---|---|
-| `component` | 독립 실행형 텍스트, 서식 있는 텍스트 및 미디어 모방 구성 요소를 허용하여 페이지에서 이동 및 삭제할 수 있도록 하는 데 사용 가능 |
+| `component` | 독립 실행형 텍스트, 리치 텍스트 및 미디어가 페이지에서 이동 및 삭제할 수 있도록 모방하는 데 사용됩니다 |
+| `container` | 페이지에서 이동 및 삭제할 수 있도록 컨테이너를 자체 구성 요소로 처리할 수 있도록 하는 데 사용됩니다. |
 
 ## 추가 리소스 {#additional-resources}
 
