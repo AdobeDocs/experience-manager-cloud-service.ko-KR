@@ -2,16 +2,16 @@
 title: 콘텐츠 전송 확인
 description: 컨텐츠 전송 도구를 사용하여 컨텐츠 전송의 유효성을 검사합니다
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1077'
 ht-degree: 2%
 
 ---
 
 # 콘텐츠 전송 확인 {#validating-content-transfers}
 
-## 시작하기 {#getting-started}
+## 시작 {#getting-started}
 
 사용자는 콘텐츠 전송 도구에서 추출한 모든 콘텐츠가 대상 인스턴스에 성공적으로 수집되었는지 확인할 수 있습니다. 이 유효성 검사 기능은 추출 중에 포함된 모든 노드의 경로 요약과 수집 중에 포함된 모든 노드의 경로 요약을 비교하여 작동합니다. 추출 다이제스트에 포함된 노드 경로 중 수집 다이제스트에서 누락된 노드가 있는 경우 유효성 검사가 실패한 것으로 간주되며 추가 수동 유효성 검사가 필요할 수 있습니다.
 
@@ -163,3 +163,7 @@ Migration validation took 0 minutes
 추출 및 수집 다이제스트의 일부 경로는 수집 완료 후 2시간 이내에 마이그레이션 유효성 검사 결과를 계산할 수 있도록 이러한 파일의 크기를 관리 가능하게 유지하기 위해 의도적으로 제외됩니다.
 
 현재 다이제스트에서 제외되는 경로는 다음과 같습니다. `cqdam.text.txt` 렌디션, 노드 `/home`, 및 다음 내의 노드 `/jcr:system`.
+
+### 폐쇄된 사용자 그룹이 작동하지 않음 {#validating-cugs}
+
+다음을 참조하십시오 [폐쇄된 사용자 그룹 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) CUG(폐쇄형 사용자 그룹) 정책을 사용할 때의 추가 고려 사항입니다.

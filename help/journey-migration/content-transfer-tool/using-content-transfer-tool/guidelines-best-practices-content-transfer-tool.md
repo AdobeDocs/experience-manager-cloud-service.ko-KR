@@ -2,9 +2,9 @@
 title: 컨텐츠 전송 도구 사용을 위한 지침 및 우수 사례
 description: 컨텐츠 전송 도구 사용을 위한 지침 및 우수 사례
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1562'
 ht-degree: 19%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 19%
 
 * CTT(컨텐츠 전송 도구)는 소스 인스턴스에서 대상 인스턴스로 컨텐츠를 전송하기 전에 어떠한 종류의 컨텐츠 분석도 수행하지 않습니다. 예를 들어 CTT는 컨텐츠를 게시 환경에 수집하는 동안 게시된 컨텐츠와 게시되지 않은 컨텐츠를 구분하지 않습니다. 마이그레이션 세트에 지정된 모든 콘텐츠는 선택한 대상 인스턴스로 수집됩니다. 사용자는 마이그레이션 세트를 작성자 인스턴스나 게시 인스턴스 또는 둘 다로 수집할 수 있습니다. 프로덕션 인스턴스로 콘텐츠를 이동하는 동안 소스 작성자 인스턴스에 CTT를 설치하여 콘텐츠를 타겟 작성자 인스턴스로 이동하고, 마찬가지로 소스 게시 인스턴스에 CTT를 설치하여 콘텐츠를 타겟 게시 인스턴스로 이동하는 것이 좋습니다. 다음을 참조하십시오 [게시 인스턴스에서 컨텐츠 전송 도구 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) 을 참조하십시오.
 
-* 컨텐츠 전송 도구에서 전송한 사용자 및 그룹은 컨텐츠에서 권한을 충족하기 위해 필요한 사용자 및 그룹입니다. 다음 _추출_ 전체 복사 처리 `/home` 마이그레이션 세트에 추가되고 각 사용자의 이메일 주소에서 만든 필드를 추가하여 사용자 매핑을 수행합니다. 자세한 내용은 [사용자 매핑 및 사용자 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). 다음 _수집_ 프로세스는 마이그레이션된 콘텐츠 ACL에서 참조된 모든 사용자 및 그룹을 복사합니다.
+* 컨텐츠 전송 도구에서 전송한 사용자 및 그룹은 컨텐츠에서 권한을 충족하기 위해 필요한 사용자 및 그룹입니다. 다음 _추출_ 전체 복사 처리 `/home` 마이그레이션 세트에 추가되고 각 사용자의 이메일 주소에서 만든 필드를 추가하여 사용자 매핑을 수행합니다. 자세한 내용은 [사용자 매핑 및 사용자 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). 다음 _수집_ 프로세스는 마이그레이션된 콘텐츠 ACL에서 참조된 모든 사용자 및 그룹을 복사합니다. 다음을 참조하십시오 [폐쇄된 사용자 그룹 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) CUG(폐쇄형 사용자 그룹) 정책에 사용된 그룹에 대한 추가 고려 사항.
 
 * 추출 단계 중에 컨텐츠 전송 도구는 활성 AEM 소스 인스턴스에서 실행됩니다.
 

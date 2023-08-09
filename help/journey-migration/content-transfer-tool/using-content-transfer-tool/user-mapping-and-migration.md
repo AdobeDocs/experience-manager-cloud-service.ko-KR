@@ -2,9 +2,9 @@
 title: 사용자 매핑 및 주요 마이그레이션
 description: AEMas a Cloud Service 의 사용자 매핑 및 사용자 마이그레이션 개요.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '855'
 ht-degree: 10%
 
 ---
@@ -57,6 +57,7 @@ AEM 사용자는 동일한 이메일 주소로 해당 Adobe IMS 사용자에게 
 * 다음과 같은 경우 **수집하기 전에 클라우드 인스턴스의 기존 콘텐츠 지우기** 가 설정되어 있으면 Cloud Service 인스턴스에서 이미 전송된 사용자가 기존 저장소 전체와 함께 삭제됩니다. 콘텐츠가 수집되는 새 저장소가 생성됩니다. 또한 이 프로세스는 대상 Cloud Service 인스턴스에 대한 권한을 포함한 모든 설정을 재설정하며에 추가된 관리자에 대해 true입니다. **관리자** 그룹입니다. 관리자 를 읽으려면 **관리자** 그룹: CTT에 대한 액세스 토큰을 검색합니다.
 * 컨텐츠 추가를 수행할 때 이전 전송 이후 변경되지 않아 컨텐츠가 전송되지 않으면 해당 컨텐츠와 연관된 사용자 및 그룹도 전송되지 않습니다. 이 규칙은 그동안 사용자 및 그룹이 변경되었더라도 적용됩니다. 그 이유는 사용자 및 그룹이 연결된 콘텐츠와 함께 마이그레이션되기 때문입니다.
 * 대상 AEM Cloud Service 인스턴스에 소스 AEM 인스턴스의 사용자 중 하나와 동일한 이메일 주소를 가지지만 다른 사용자 이름이 있는 사용자가 있을 경우, 사용자 매핑이 활성화되면 로그에 오류 메시지가 기록됩니다. 또한 지정된 이메일 주소를 가진 한 명의 사용자만 대상 시스템에서 허용되므로 소스 AEM 사용자는 전송되지 않습니다.
+* 다음을 참조하십시오 [폐쇄된 사용자 그룹 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) CUG(폐쇄형 사용자 그룹) 정책에 사용된 그룹에 대한 추가 고려 사항.
 
 ## 최종 요약 및 보고서 {#final-report}
 
