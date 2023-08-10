@@ -2,10 +2,10 @@
 title: 적응형 Forms에서 reCAPTCHA 사용
 description: 적응형 Forms에서 Google reCAPTCHA 서비스를 구성하는 방법에 대해 알아봅니다.
 topic-tags: adaptive_forms, author
-source-git-commit: a1689c61715f01cb4eb62882dbcd6e202b74ffc9
+source-git-commit: b4665d0291ee1223e46c8ecf13ca13ea336107d3
 workflow-type: tm+mt
 source-wordcount: '1913'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 3%
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html) |
 | AEM as a Cloud Service | 이 문서 |
 
-<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 CAPTCHA(Complete Automated Public Turning test to tell Computers and Humans Apart)는 온라인 거래에서 일반적으로 사용되는 프로그램으로 인간과 자동화된 프로그램 또는 봇을 구별합니다. 문제를 제기하고 사용자 응답을 평가하여 사이트와 상호 작용하는 사람인지 보트인지를 확인합니다. 테스트 실패 시 사용자가 진행할 수 없도록 하고 봇이 스팸이나 악의적인 목적을 게시하지 않도록 해 온라인 거래를 안전하게 만드는 데 도움을 준다.
 
@@ -207,7 +207,7 @@ reCAPTCHA Enterprise 서비스가 활성화되면 적응형 양식에서 사용�
 > 
 > 선택 안 함 **[!UICONTROL 기본값]** 기본 AEM CAPTCHA 서비스가 더 이상 사용되지 않으므로 CAPTCHA 서비스 드롭다운에서 을 사용하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3422097/adaptive-forms-recaptcha-core-components-captcha/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3422641/recaptcha-google-adaptive-forms/?quality=12&learn=on)
 
 ### 규칙에 따라 CAPTCHA 구성 요소 표시 또는 숨기기 {#show-hide-captcha}
 
