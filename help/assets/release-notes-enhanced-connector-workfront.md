@@ -2,9 +2,9 @@
 title: 릴리스 정보 [!DNL Workfront for Experience Manager enhanced connector]
 description: 릴리스 정보 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 87aeebad2576e91472530a2617b23bece4cd453f
+source-git-commit: 4b63c00847fa21967560a59c3bcd931433a3a73f
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1190'
 ht-degree: 1%
 
 ---
@@ -15,22 +15,25 @@ ht-degree: 1%
 
 ## 릴리스 일자 {#release-date}
 
-의 최신 버전 1.9.11에 대한 릴리스 날짜 [!DNL Workfront for Experience Manager enhanced connector] 는 2023년 6월 19일입니다.
+의 최신 버전 1.9.12에 대한 릴리스 날짜 [!DNL Workfront for Experience Manager enhanced connector] 는 2023년 8월 9일입니다.
 
 ## 릴리스 특징 {#release-highlights}
 
 의 최신 버전 [!DNL Workfront for Experience Manager enhanced connector] 에는 다음 업데이트가 포함됩니다.
 
-* 고급 네트워킹을 구성했으면 Adobe WorkfrontAEM 에서 as a Cloud Service으로 콘텐츠를 전송하는 동안 문제가 발생합니다.
+* 연결된 폴더와 연결된 Experience Manager 계정이 없기 때문에 사용자 계정에 연결된 폴더를 만들 수 없습니다.
+
+* Experience Manager 에셋에 대한 메타데이터 업데이트 중 경합 조건.
+
 
 >[!NOTE]
 >
->AEM 6.4는 확장 지원이 종료되었습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/?lang=en).
+>AEM 6.4는 확장 지원이 종료되었습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/?lang=en).
 
 
 >[!IMPORTANT]
 >
->Adobe은 다음을 권장합니다. [최신 1.9.11 버전으로 업그레이드](/help/assets/workfront-connector-install.md) / [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe은 다음을 권장합니다. [최신 1.9.12 버전으로 업그레이드](/help/assets/workfront-connector-install.md) / [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 알려진 문제 {#known-issues}
 
@@ -39,6 +42,11 @@ ht-degree: 1%
 * 클래식 Workfront 환경을 사용하는 경우 **[!UICONTROL 전송 대상]** 옵션이에서 사용할 수 있음 **[!UICONTROL 자세히]** 드롭다운 목록에서는 Experience Manager 내의 대상 을 선택할 수 없습니다. 다음 **[!UICONTROL 전송 대상]** 옵션은 **[!UICONTROL 문서 작업]** 드롭다운 목록입니다. 다음 **[!UICONTROL 전송 대상]** 옵션이에 대해 올바르게 작동합니다. **[!UICONTROL 자세히]** 드롭다운 목록 및 **[!UICONTROL 문서 작업]** 새로운 Workfront 경험에서 사용할 수 있는 드롭다운 목록입니다.
 
 ## 이전 릴리스 {#previous-releases}
+
+### 2023년 6월 릴리스 {#june-2023-release}
+
+* 고급 네트워킹을 구성했으면 Adobe WorkfrontAEM 에서 as a Cloud Service으로 콘텐츠를 전송하는 동안 문제가 발생합니다.
+
 
 ### 2023년 5월 릴리스 {#may-2023-release}
 
