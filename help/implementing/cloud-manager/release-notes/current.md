@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.7.0 릴리스 정보
-description: AEM as a Cloud Service의 Cloud Manager 2023.7.0 릴리스 정보입니다.
+title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.8.0 릴리스 정보
+description: AEM as a Cloud Service의 Cloud Manager 2023.8.0 릴리스 정보입니다.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 2721cb20083eeda7546513817f1ddfe12e9cb43a
+source-git-commit: d1640c14c796d7b7b6a7b236b38077e360559966
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 100%
+source-wordcount: '412'
+ht-degree: 31%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.7.0 릴리스 정보 {#release-notes}
+# Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.8.0 릴리스 정보 {#release-notes}
 
-이 페이지에서는 AEM as a Cloud Service의 Cloud Manager 2023.7.0 릴리스 정보에 대해 설명합니다.
+이 페이지에서는 AEM as a Cloud Service의 Cloud Manager 2023.8.0 릴리스 정보에 대해 설명합니다.
 
 >[!NOTE]
 >
@@ -21,20 +21,34 @@ ht-degree: 100%
 
 ## 릴리스 일자 {#release-date}
 
-AEM as a Cloud Service의 Cloud Manager 2023.7.0 릴리스 일자는 2023년 6월 29일입니다. 다음 릴리스는 2023년 8월 10일에 예정되어 있습니다.
+AEM as a Cloud Service의 Cloud Manager 2023.8.0 릴리스 일자는 2023년 8월 10일입니다. 다음 릴리스는 2023년 7월 9일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
-* 이제 Cloud Manager 랜딩 페이지의 카드에 해당 프로그램에 대한 [향상된 보안](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) 기능이 활성화되어 있는지 여부가 표시됩니다.
-* 개발 [파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)에 테스트 단계가 포함되어 있지 않은 경우 사용자는 이제 [파이프라인을 시작할 때](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) 테스트 단계를 포함할 수 있습니다.
-   * 이 기능은 단계적으로 출시될 예정입니다.
-* 이제 [실행을 취소할 때](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) 파이프라인 실행 승인 단계에서 사용자에게 취소 이유를 입력하도록 요청됩니다.
-   * 이 기능은 단계적으로 출시될 예정입니다.
-* 이제 사용자는 [콘텐츠 복사 프로세스의 로그](/help/implementing/developing/tools/content-copy.md#accessing-logs)에 액세스할 수 있습니다.
-   * 이 옵션은 소스 및 대상 환경이 모두 AEM 버전 `2023.7.12549` 이상인 경우에만 사용할 수 있습니다.
+* 콘텐츠 세트 구성 시 [콘텐츠 복사,](/help/implementing/developing/tools/content-copy.md) [컨텍스트 인식 구성](/help/implementing/developing/introduction/configurations.md) 는 이제 UI의 콘텐츠 세트에서 허용됩니다.
+* Cloud Manager UI에서 오류 메시지의 이해도와 노출을 개선했습니다.
+
+## Self-Service Content Restore Early-Adoption 프로그램 {#early-adoption}
+
+[새로운 셀프서비스 콘텐츠 복원 기능](/help/operations/restore.md) 이제 최대 7일 동안 백업 복원을 제공하며 얼리 어답터가 평가 목적으로 사용할 수 있습니다. 평가 기능은 다음과 같습니다.
+
+* 이전 24시간 동안의 시점 백업 복원
+* 최대 7일 동안 고정 시간 복원
+
+이 새로운 기능을 테스트하고 피드백을 공유하려면 (으)로 이메일을 보내십시오. `aemcs-restorefrombackup-adopter@adobe.com` Adobe ID과 연계된 이메일. 참고:
+
+* 얼리 어답터 프로그램은 개발 환경으로만 제한됩니다.
+* 얼리어답터 프로그램의 가용성은 제한됩니다.
+* 이 기능은 실수로 삭제된 콘텐츠를 복구하기 위한 것으로, 재해 복구용이 아닙니다.
 
 ## 버그 수정 {#bug-fixes}
 
-* 로그인 후 Cloud Manager에서 작성 UI로 이동해도 더 이상 통합 셸로 리디렉션되지 않습니다.
-* Go-Live인 위젯을 통해 Go-Live 날짜를 편집하면 이제 **향상된 보안** 탭 대신 **Go-Live** 탭으로 이동합니다.
-* 복사 작업을 시작할 때 사용자는 더 이상 복사 작업이 호출되어 있는 환경을 선택할 수 없습니다.
+* 다음 **환경** 이제 를 트리거한 후 메뉴가 닫힙니다. **[콘텐츠 복사](/help/implementing/developing/tools/content-copy.md)** 모달
+* [파이프라인 재실행](/help/implementing/cloud-manager/deploy-code.md#reexecute-deployment) 이전 실행에 가 없는 경우 이 더 이상 허용되지 않습니다. `commitId` 빌드 단계 상태를 설정합니다.
+* 이제 사용자가 의 파이프라인을 클릭하면 드물게 발생하는 오류에 대해 보다 이해하기 쉬운 메시지가 표시됩니다. **활동** 또는 **파이프라인** screens.
+* 다음 `contentSetName` 값이 더 이상 로그에 누락되지 않고 이제 를 시작할 때 입력에 제공됩니다. [콘텐츠 복사](/help/implementing/developing/tools/content-copy.md) 작업.
+* 동일한 파이프라인에서 두 번의 실행을 시작하여 &quot;중단&quot; 상태로 이어지는 특정 드문 상황에서는 더 이상 이 작업을 수행할 수 없습니다.
+* 인증서가 만료되면 인증서와 연결된 도메인 이름 및 IP 허용 목록이 더 이상 CDN에서 제거되지 않습니다.
+   * 이러한 경우 사이트에 계속 연결할 수 있습니다.
+   * [](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)Cloud Manager UI는 더 눈에 띄는 방식으로 SSL 인증서가 만료 예정이라는 사전 경고를 제공합니다.
+* Sites가 Assets 전용 프로그램의 솔루션으로 추가되는 상황에서 AEM이 게시 끝점에 액세스할 수 없는 문제가 수정되었습니다.

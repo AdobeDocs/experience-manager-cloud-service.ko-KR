@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ca3c4bae2e652d75190d68c76b1dd4e09239f16c
+source-git-commit: ec4445a63eee834c45ff95b7978497a615a1ed46
 workflow-type: tm+mt
-source-wordcount: '4230'
+source-wordcount: '4235'
 ht-degree: 99%
 
 ---
@@ -83,6 +83,7 @@ ht-degree: 99%
    + Cloud Manager 릴리스 정보 {#cloud-manager}
       + [최신 릴리스 정보](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
+         + [2023.7.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2023/2023-7-0.md)
          + [2023.6.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
          + [2023.5.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
          + [2023.4.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
@@ -1001,6 +1002,7 @@ ht-degree: 99%
    + [AEM as a Cloud Service의 인프라 및 서비스 모니터링](/help/operations/monitoring.md)
    + [유지 관리 작업](/help/operations/maintenance.md)
    + [백업 및 복원](/help/operations/backup.md)
+   + [셀프서비스 복원](/help/operations/restore.md)
    + [비동기 작업](/help/operations/asynchronous-jobs.md)
    + [일반 Lucene 인덱스 제거](/help/operations/removal-generic-lucene-index.md)
    + [쿼리 및 색인화 모범 사례](/help/operations/query-and-indexing-best-practices.md)
