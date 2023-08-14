@@ -2,10 +2,10 @@
 title: Go-Live 후
 description: 문제 모니터링 및 성능 향상 방법 알아보기
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 3784569086a786c6c25c0e3d6d0bb0ddbdd37e4b
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 28%
+source-wordcount: '477'
+ht-degree: 22%
 
 ---
 
@@ -15,10 +15,10 @@ ht-degree: 28%
 >id="aemcloud_golive_troubleshooting"
 >title="AEM 문제 해결"
 >abstract="지속적인 개발을 목적으로 모범 사례를 검토하고 개발자 콘솔 및 CRXDE Lite 등의 도구와 함께 로그를 관리하여 AEM 문제를 해결할 수 있습니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html?lang=ko-KR" text="로그 액세스 및 관리"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ko-KR#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 개발 도구"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html" text="로그 액세스 및 관리"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 개발 도구"
 
-이는 여정의 마지막 부분이므로 마이그레이션이 완료되면 문제를 모니터링하고 성능을 향상시키는 방법에 대해 알아보게 됩니다. 임시 파일을 정리하고, 지속적인 개발을 위한 우수 사례를 검토하고, 로그를 관리해야 합니다.
+이 여정은 마지막 부분이므로 마이그레이션이 완료되면 문제를 모니터링하고 성능을 향상시키는 방법에 대해 알아봅니다. 임시 파일을 정리하고, 지속적인 개발을 위한 우수 사례를 검토하고, 로그를 관리해야 합니다.
 
 ## 지금까지의 스토리 {#story-so-far}
 
@@ -43,9 +43,9 @@ AEM as a Cloud Service 개발자 환경 디버깅은 개발자 콘솔에서 개�
 사용자는 개발 환경에서 CRXDE Lite에 액세스할 수 있지만, 스테이지나 프로덕션 환경에서는 액세스할 수 없습니다.
 
 >[!IMPORTANT]
->다음과 같이 변경할 수 없는 저장소에 쓰기 `/libs` 및 `/apps` 런타임 시 오류가 발생합니다. 또한 스테이징 및 프로덕션 환경을 위한 개발자 도구에 액세스할 수 없습니다.
+>다음과 같이 변경할 수 없는 저장소에 쓰기 `/libs` 및 `/apps` 런타임 시 오류가 발생합니다. 또한 스테이징 및 프로덕션 환경을 위한 개발자 도구에 대한 액세스 권한이 없습니다.
 
-다음을 참조하십시오 [CRXDE Lite을 사용한 개발](/help/implementing/developing/tools/crxde.md) CRXDE Lite을 사용하여 AEM 애플리케이션을 개발하는 방법에 대해 알아봅니다.
+다음을 참조하십시오 [CRXDE Lite을 사용한 개발](/help/implementing/developing/tools/crxde.md) CRXDE Lite을 사용하여 AEM 애플리케이션을 개발하는 방법에 대한 자세한 내용을 보려면 .
 
 ## 로그 관리 {#managing-logs}
 
@@ -58,20 +58,20 @@ AEM as a Cloud Service 개발자 환경 디버깅은 개발자 콘솔에서 개�
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"
 >title="도움말 및 지원"
->abstract="자세한 설명이 필요하거나 문제를 해결하려면 AEM 지원 팀에 문의하십시오."
+>abstract="자세한 설명이 필요하거나 문제를 해결하려면 Adobe의 AEM 지원 팀에 문의하십시오."
 >additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud 지원"
 
 Cloud Service 액세스에 대한 질문이 있는 경우 Adobe 담당자에게 문의하거나 [Experience Cloud 지원](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) 을 참조하십시오.
 
 ## 문서 학습 {#document-learnings}
 
-마이그레이션이 완료되면 이 프로세스 중에 얻은 지식을 문서화해야 합니다. 설명서 프로세스에 도움이 될 수 있는 몇 가지 질문은 다음과 같습니다.
+마이그레이션이 완료되면 이 프로세스 중에 얻은 지식을 문서화합니다. 설명서 프로세스에 도움이 될 수 있는 몇 가지 질문은 다음과 같습니다.
 
 * 잘 작동한 것과 그렇지 않은 것은 무엇입니까?
 * 주요 통증 사항은 무엇입니까?
-* 향후 마이그레이션의 경우 Recommendations.
+* 향후 마이그레이션이 있는 경우 Recommendations으로 이동합니다.
 
-그런 다음 이러한 마이그레이션 후 학습 내용을 조직 내의 관련자 및 팀과 공유해야 합니다.
+이러한 마이그레이션 후 학습 내용을 조직 내의 관련자 및 팀과 공유합니다.
 
 ## 여정 종료 - 종료되었습니까? {#journey-ends}
 
