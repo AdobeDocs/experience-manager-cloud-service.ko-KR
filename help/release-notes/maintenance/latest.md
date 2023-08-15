@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 4c38285f9e75618ad181a85034212c7c24030e99
+source-git-commit: b2c67687e2f3577b44929777a31b6ce85a5f1877
 workflow-type: tm+mt
 source-wordcount: '619'
-ht-degree: 25%
+ht-degree: 22%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 25%
 
 ## 릴리스 13099 {#release-13099}
 
-2023년 8월 16일에 릴리스된 유지 관리 릴리스 13099의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이 유지 관리 릴리스는 이전 유지 관리 릴리스 12874의 업데이트입니다.
+다음은 2023년 8월 15일에 공개적으로 릴리스된 유지 보수 릴리스 13099에 대한 지속적인 개선 사항을 요약합니다. 이 유지 관리 릴리스는 이전 유지 관리 릴리스 12874의 업데이트입니다.
 
 이 유지 관리 릴리스(2023.8.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)을 참조하십시오.
 
