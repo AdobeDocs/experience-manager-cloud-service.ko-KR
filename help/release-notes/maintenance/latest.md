@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: b2c67687e2f3577b44929777a31b6ce85a5f1877
+source-git-commit: cb963a233b5afd4497704233db7f51c37563d0f9
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '620'
 ht-degree: 22%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 22%
 ### 향상된 기능 {#enhancements-13099}
 
 - SITES-13906: GraphQL - graphql-java 20.1로 업그레이드
-- SITES-8972: GraphQL - 옵션 추가```label``` JSON for Enumeration 데이터 형식을 참조하십시오.
+- SITES-8972: GraphQL - 열거형 데이터 유형에 JSON에 옵션 레이블을 추가합니다.
 - SITES-9689: GraphQL - 컨텐츠 참조 데이터 유형을 위해 JSON에 제목 및 설명을 추가합니다.
 - SITES-13052: 콘텐츠 조각 - Adobe Target으로 콘텐츠 조각 내보내기
 
