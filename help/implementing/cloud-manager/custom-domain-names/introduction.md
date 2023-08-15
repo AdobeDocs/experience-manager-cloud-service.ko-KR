@@ -1,11 +1,11 @@
 ---
 title: 사용자 정의 도메인 이름 소개
-description: Cloud Manager의 UI를 사용하면 사용자 정의 도메인을 추가하여 셀프서비스 방식을 사용하여 사이트를 고유한 브랜드 이름으로 식별할 수 있습니다.
+description: Cloud Manager의 UI를 사용하면 사용자 정의 도메인을 추가하여 셀프서비스 방식으로 사이트를 고유한 브랜드 이름으로 식별할 수 있습니다.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 100%
+source-wordcount: '757'
+ht-degree: 81%
 
 ---
 
@@ -15,15 +15,15 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_domains"
 >title="사용자 정의 도메인 이름 관리"
->abstract="Cloud Manager의 UI를 사용하면 사용자 정의 도메인을 추가하여 셀프서비스 방식을 사용하여 사이트를 고유한 브랜드 이름으로 식별할 수 있습니다."
+>abstract="Cloud Manager의 UI를 사용하면 사용자 정의 도메인을 추가하여 셀프서비스 방식으로 사이트를 고유한 브랜드 이름으로 식별할 수 있습니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html" text="사용자 정의 도메인 이름 추가"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.html" text="사용자 정의 도메인 이름 보기 및 업데이트"
 
-Cloud Manager의 UI를 사용하면 사용자 정의 도메인을 추가하여 셀프서비스 방식을 사용하여 사이트를 고유한 브랜드 이름으로 식별할 수 있습니다. Adobe Experience Manager as a Cloud Service는 `*.adobeaemcloud.com`으로 끝나는 기본 도메인 이름으로 프로비저닝됩니다. 이 기본 도메인 이름은 사용자 정의 도메인 이름을 웹 사이트에 연결한 후에도 유지됩니다.
+Cloud Manager의 UI를 사용하면 사용자 정의 도메인을 추가하여 셀프서비스 방식으로 사이트를 고유한 브랜드 이름으로 식별할 수 있습니다. Adobe Experience Manager as a Cloud Service는 `*.adobeaemcloud.com`으로 끝나는 기본 도메인 이름으로 프로비저닝됩니다. 이 기본 도메인 이름은 사용자 정의 도메인 이름을 웹 사이트에 연결한 후에도 유지됩니다.
 
 ## 사용자 정의 도메인 이름이란? {#what-are-custom-domain-names}
 
-각 웹 사이트에는 `184.33.123.64`와 같이 기계가 읽을 수 있는 고유한 숫자 주소가 연결되어 있습니다. DNS(도메인 이름 시스템)를 사용하면 숫자 주소를 `wknd.com`과 같은 기억할 수 있는 주소로 변환하여 웹 사이트에 사용자 정의 브랜드 도메인을 연결할 수 있습니다.
+각 웹 사이트에는 `184.33.123.64`와 같이 기계가 읽을 수 있는 고유한 숫자 주소가 연결되어 있습니다. DNS(도메인 이름 시스템)를 사용하면 숫자 주소를 과 같은 기억할 수 있는 주소로 변환하여 웹 사이트에 사용자 정의 브랜드 도메인을 연결할 수 있습니다. `wknd.com`.
 
 고객의 기억에 남고 브랜드를 잘 나타내는 도메인 이름을 사이트에 사용하는 것이 좋습니다.
 
@@ -35,7 +35,7 @@ Cloud Manager의 UI를 사용하면 사용자 정의 도메인을 추가하여 �
 
 ## 사용자 정의 도메인 이름 및 BYO CDN {#byo-cdn}
 
-AEM as a Cloud Service는 내장된 콘텐츠 게재 네트워크(CDN) 서비스를 제공하지만 BYO(Bring-Your-Own) CDN 방식에 따라 AEM과 함께 사용할 수 있습니다. 사용자 정의 도메인은 AEM 관리 CDN 또는 자체 관리 CDN에 설치할 수 있습니다.
+AEM as a Cloud Service에서는 내장된 CDN(content delivery network) 서비스를 제공하며 AEM에서 사용할 BYO(고유한) CDN을 가져올 수도 있습니다. 사용자 정의 도메인은 AEM 관리 CDN 또는 자체 관리 CDN에 설치할 수 있습니다.
 
 * AEM 관리 CDN에 설치된 사용자 정의 도메인의 이름(및 인증서)은 Cloud Manager를 통해 관리됩니다.
 * 자체 CDN에 설치된 사용자 정의 도메인의 이름(및 인증서)은 해당 특정 CDN을 통해 관리됩니다.
