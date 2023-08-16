@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service에 대한 로깅
 description: AEM용 로깅을 as a Cloud Service으로 사용하여 중앙 로깅 서비스의 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 2fcc33cfb8b0be89b4b9f91d687dc21ba456000c
 workflow-type: tm+mt
-source-wordcount: '2375'
-ht-degree: 3%
+source-wordcount: '2683'
+ht-degree: 8%
 
 ---
 
@@ -17,6 +17,7 @@ AEM as a Cloud Service 로깅 설정 및 로그 수준은 Git에서 AEM 프로�
 
 * AEM 로깅 - AEM 애플리케이션 수준에서 로깅을 수행합니다.
 * 게시 계층에서 웹 서버 및 Dispatcher의 로깅을 수행하는 Apache HTTPD 웹 서버/Dispatcher 로깅.
+* CDN 로깅은 이름 그대로 CDN에서 로깅을 수행합니다. 이 기능은 현재 얼리어답터가 사용할 수 있습니다. 얼리어답터 프로그램에 참여하려면 다음 이메일을 보내주십시오. **aemcs-cdnlogs-adopter@adobe.com**, 조직 이름 및 기능에 대한 관심 컨텍스트 등.
 
 ## AEM 로깅 {#aem-logging}
 
@@ -498,6 +499,57 @@ Define DISP_LOG_LEVEL debug
 >[!NOTE]
 >
 >AEM as a Cloud Service 환경의 경우 debug는 최대 세부 정보 수준입니다. 추적 로그 수준은 지원되지 않으므로 클라우드 환경에서 작업할 때 이 수준을 설정하지 않아야 합니다.
+
+## CDN 로그 {#cdn-log}
+
+>[!NOTE]
+>
+>이 기능은 아직 일반적으로 사용할 수 없습니다. 진행 중인 얼리어답터 프로그램에 참여하려면 다음 이메일을 보내십시오. **aemcs-cdnlogs-adopter@adobe.com**, 조직 이름 및 기능에 대한 관심 컨텍스트 등.
+>
+
+AEM as a Cloud Service에서는 캐시 적중률 최적화를 포함한 사용 사례에 유용한 CDN 로그에 액세스할 수 있습니다. CDN 로그 형식은 사용자 지정할 수 없으며 정보, 경고 또는 오류와 같은 다양한 모드로 설정하는 개념이 없습니다.
+
+**예**
+
+```
+{
+"timestamp": "2023-05-26T09:20:01+0000",
+"ttfb": 19,
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
+"rid": "974e67f6",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"host": "example.com",
+"url": "/content/hello.png",
+"method": "GET",
+"res_ctype": "image/png",
+"cache": "PASS",
+"status": 200,
+"res_age": 0,
+"pop": "PAR"
+}
+```
+
+**로그 형식**
+
+CDN 로그는 json 형식을 준수한다는 점에서 다른 로그와 구별됩니다.
+
+| **필드 이름** | **설명** |
+|---|---|
+| *timestamp* | TLS 종료 후 요청이 시작된 시간입니다. |
+| *ttfb* | *Time To First Byte(첫 번째 바이트까지의 시간)*&#x200B;의 약어입니다. 요청이 시작된 후 응답 본문의 스트리밍이 시작되기까지의 시간 간격입니다. |
+| *cli_ip* | 클라이언트 IP 주소입니다. |
+| *cli_country* | 두 글자 [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) 클라이언트 국가의 알파-2 국가 코드. |
+| *rid* | 요청을 고유하게 식별하는 데 사용되는 요청 헤더의 값입니다. |
+| *req_ua* | 해당 HTTP 요청을 담당하는 사용자 에이전트입니다. |
+| *host* | 요청이 의도한 대상 기관입니다. |
+| *url* | 쿼리 매개변수를 포함한 전체 경로입니다. |
+| *방법* | “GET” 또는 “POST”와 같은 클라이언트에서 전송한 HTTP 메서드입니다. |
+| *res_ctype* | 리소스의 원래 미디어 유형을 나타내는 데 사용되는 콘텐츠 유형입니다. |
+| *cache* | 캐시의 상태입니다. 가능한 값은 HIT, MISS 또는 PASS입니다. |
+| *상태* | HTTP 상태 코드입니다(정수 값). |
+| *res_age* | 응답이 캐시된 시간(초)입니다(모든 노드에서). |
+| *pop* | CDN 캐시 서버의 데이터센터입니다. |
 
 ## 로그 액세스 방법 {#how-to-access-logs}
 
