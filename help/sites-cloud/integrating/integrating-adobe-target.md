@@ -1,13 +1,13 @@
 ---
 title: Adobe Target과 통합
-description: Touch UI 및 Adobe Launch를 사용하여 Adobe Target을 AEMas a Cloud Service 와 통합하는 방법을 알아봅니다.
+description: Touch UI 및 Adobe Launch를 사용하여 Adobe Target을 AEM as a Cloud Service와 통합하는 방법에 대해 알아봅니다.
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
 source-git-commit: 957758a8d3c16328e7638356e7ee6df3e561386d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1034'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Launch 및 Target에 대한 IMS 구성은 Target과 AEM 및 Launch를 올바르�
 
 ### Adobe Target 테넌트 ID 및 Adobe Target 클라이언트 코드 {#tenant-client}
 
-Adobe Target 테넌트 ID 및 Adobe Target 클라이언트 코드 필드를 구성할 때에는 다음을 고려해야 합니다.
+Adobe Target 테넌트 ID 및 Adobe Target 클라이언트 코드 필드를 구성할 때에는 다음과 같은 사항을 고려해야 합니다.
 
 1. 대부분의 고객은 테넌트 ID와 클라이언트 코드가 같습니다. 즉, 두 필드에는 동일한 정보가 포함되어 있으며 이 두 필드는 동일합니다. 두 필드 모두에 테넌트 ID를 입력하십시오.
 2. 또한 레거시 목적으로 테넌트 ID와 클라이언트 코드 필드에 서로 다른 값을 입력할 수도 있습니다.
