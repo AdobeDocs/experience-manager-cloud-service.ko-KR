@@ -1,12 +1,12 @@
 ---
 title: 클라우드의 Dispatcher
-description: Dispatcher 도구, 지원되는 Apache 모듈 및 레거시 모드와 유연한 모드에 대해 알아봅니다.
+description: Dispatcher 도구, 지원되는 Apache 모듈, 레거시 및 유연한 모드에 대해 알아봅니다.
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '993'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,14 +19,14 @@ ht-degree: 98%
 
 ## 소개 {#apache-and-dispatcher-configuration-and-testing}
 
-이 페이지에서는 Dispatcher 도구를 다운로드하고 추출하는 방법을 설명하고 지원되는 Apache 모듈과 레거시 모드 및 유연한 모드에 대한 높은 수준의 개요를 제공합니다. 또한, 유효성 검사 및 디버깅과 AMS에서 AEM as a Cloud Service로 Dispatcher 구성 마이그레이션에 대한 추가 참조가 있습니다. <!-- ERROR: NOT FOUND (HTTP ERROR 404) Also, see [this video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html) for additional details about deploying dispatcher files in a cloud service environment. -->
+이 페이지에서는 Dispatcher 도구를 다운로드하고 추출하는 방법을 설명하고 지원되는 Apache 모듈과 레거시 모드 및 유연한 모드에 대한 높은 수준의 개요를 제공합니다. 또한 유효성 검사 및 디버깅과 AMS에서 AEM as a Cloud Service로 Dispatcher 구성 마이그레이션에 대한 추가 참조가 있습니다. <!-- ERROR: NOT FOUND (HTTP ERROR 404) Also, see [this video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html) for additional details about deploying dispatcher files in a cloud service environment. -->
 
 ## Dispatcher 도구 {#dispatcher-sdk}
 
 Dispatcher 도구는 전체 AEM as a Cloud Service SDK의 일부이며 다음을 제공합니다.
 
 * Dispatcher용 Maven 프로젝트에 포함될 구성 파일이 있는 바닐라 파일 구조입니다.
-* 도구를 사용하여 고객은 Dispatcher 구성에 AEM as a Cloud Service 지원 지시문만 있는지 확인합니다. 또한, 도구를 사용하여 Apache의 성공적인 시작을 위해 구문이 올바른지 확인합니다.
+* 도구를 사용하여 고객은 Dispatcher 구성에 AEM as a Cloud Service 지원 지시문만 있는지 확인합니다. 또한 도구를 사용하여 Apache의 성공적인 시작을 위해 구문이 올바른지 확인합니다.
 * 로컬로 Dispatcher를 호출하는 도커 이미지입니다.
 
 ## 도구 다운로드 및 추출 {#extracting-the-sdk}
