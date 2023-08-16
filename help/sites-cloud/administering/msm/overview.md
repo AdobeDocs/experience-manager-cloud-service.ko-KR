@@ -172,7 +172,7 @@ MSM은 적절한 콘솔에서 다양한 옵션을 사용하여 UI에서 직접 �
 
 >[!TIP]
 >
->개체 이름은 [다중 사이트 관리자 확장](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) 문서를 참조하십시오.
+>오브젝트 이름은 [다중 사이트 관리자 확장](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) 문서를 참조하십시오.
 
 ## Live Copy {#live-copies}
 

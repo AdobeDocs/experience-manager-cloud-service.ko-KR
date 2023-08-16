@@ -19,7 +19,7 @@ ht-degree: 22%
 
 이 유지 관리 릴리스(2023.8.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)을 참조하십시오.
 
-### 향상된 기능 {#enhancements-13099}
+### 개선 사항 {#enhancements-13099}
 
 - SITES-13906: GraphQL - graphql-java 20.1로 업그레이드
 - SITES-8972: GraphQL - 열거형 데이터 유형에 JSON에 옵션 레이블을 추가합니다.

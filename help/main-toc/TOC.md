@@ -242,7 +242,7 @@ ht-degree: 99%
       + [통합 경험](/help/journey-migration/unified-experience.md)
       + [저장소 현대화 도구](/help/journey-migration/refactoring-tools/repo-modernizer.md)
       + [인덱스 변환기](/help/journey-migration/refactoring-tools/index-converter.md)
-      + [자산 워크플로우 마이그레이션](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
+      + [자산 워크플로 마이그레이션](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
       + [AEM Dispatcher 변환기](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
       + [AEM 현대화 도구](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + Sites {#sites}
@@ -289,7 +289,7 @@ ht-degree: 99%
          + [프로젝트를 사용하여 작업](/help/sites-cloud/authoring/projects/overview.md)
          + [프로젝트 관리](/help/sites-cloud/authoring/projects/managing.md)
          + [작업](/help/sites-cloud/authoring/projects/tasks.md)
-         + [프로젝트 워크플로우를 사용하여 작업](/help/sites-cloud/authoring/projects/workflows.md)
+         + [프로젝트 워크플로를 사용하여 작업](/help/sites-cloud/authoring/projects/workflows.md)
       + 론치 {#launches}
          + [론치를 사용하여 작업](/help/sites-cloud/authoring/launches/overview.md)
          + [론치 만들기](/help/sites-cloud/authoring/launches/creating.md)
@@ -297,10 +297,10 @@ ht-degree: 99%
          + [론치 편집](/help/sites-cloud/authoring/launches/editing.md)
          + [타임워프를 사용하여 론치 미리보기](/help/sites-cloud/authoring/launches/preview.md)
          + [론치 홍보](/help/sites-cloud/authoring/launches/promoting.md)
-      + 워크플로우 {#workflows}
-         + [워크플로우를 사용하여 작업](/help/sites-cloud/authoring/workflows/overview.md)
-         + [페이지에 워크플로우 적용](/help/sites-cloud/authoring/workflows/applying.md)
-         + [워크플로우에 참여](/help/sites-cloud/authoring/workflows/participating.md)
+      + 워크플로 {#workflows}
+         + [워크플로를 사용하여 작업](/help/sites-cloud/authoring/workflows/overview.md)
+         + [페이지에 워크플로 적용](/help/sites-cloud/authoring/workflows/applying.md)
+         + [워크플로에 참여](/help/sites-cloud/authoring/workflows/participating.md)
       + 개인 맞춤화 {#personalization}
          + [개인 맞춤화 개요](/help/sites-cloud/authoring/personalization/overview.md)
          + [ContextHub 데이터를 사용하여 페이지 미리보기](/help/sites-cloud/authoring/personalization/contexthub.md)
@@ -373,7 +373,7 @@ ht-degree: 99%
             + [Microsoft Translator에 연결](/help/sites-cloud/administering/translation/connect-ms-translator.md)
             + [번역 모범 사례](/help/sites-cloud/administering/translation/best-practices.md)
       + [태그 관리](/help/sites-cloud/administering/tags.md)
-      + [워크플로우 관리](/help/sites-cloud/administering/workflows-administering.md)
+      + [워크플로 관리](/help/sites-cloud/administering/workflows-administering.md)
    + AEM as a Cloud Service와 통합 {#integrations}
       + [Adobe Analytics와 통합](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Adobe Analytics 자동 설정과 통합](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
@@ -626,9 +626,9 @@ ht-degree: 99%
             + [접근성 높은 적응형 양식 만들기](/help/forms/creating-accessible-adaptive-forms.md)
          + [Forms 포털 구성](/help/forms/configure-forms-portal.md)
          + [검토 만들기 및 관리](/help/forms/create-reviews-forms.md)
-   + 양식 중심 워크플로우 {#create-form-centric-workflows}
-      + [워크플로우 + 단계 참조에서 양식 중심 단계 사용](/help/forms/aem-forms-workflow-step-reference.md)
-      + [양식 중심 워크플로우에서 변수 사용](/help/forms/variable-in-aem-workflows.md)
+   + 양식 중심 워크플로 {#create-form-centric-workflows}
+      + [워크플로 + 단계 참조에서 양식 중심 단계 사용](/help/forms/aem-forms-workflow-step-reference.md)
+      + [양식 중심 워크플로에서 변수 사용](/help/forms/variable-in-aem-workflows.md)
       + [[Out of Office] 옵션 사용](/help/forms/configure-out-of-office-settings.md)
    + 커뮤니케이션 API {#using-communications}
       + [커뮤니케이션 API 소개](/help/forms/aem-forms-cloud-service-communications-introduction.md)

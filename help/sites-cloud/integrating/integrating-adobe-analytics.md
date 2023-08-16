@@ -16,7 +16,7 @@ ht-degree: 97%
 Adobe Analytics과 AEMas a Cloud Service 를 통합하여 웹 페이지 활동을 추적할 수 있습니다. 통합하려면 다음 작업을 수행해야 합니다.
 
 * Touch UI를 사용하여 AEM as a Cloud Service에 Analytics 구성을 만듭니다. Adobe Analytics를 AEM as a Cloud Service와 통합하려면 IMS 인증이 필요합니다.
-* Adobe Analytics를 [Adobe Launch](#analytics-launch)에 확장 프로그램으로 추가하고 구성합니다. Adobe Launch에 대한 자세한 내용은 [이 페이지](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html)를 참조하십시오.
+* Adobe Analytics를 [Adobe Launch](#analytics-launch)에 확장 기능으로 추가하고 구성합니다. Adobe Launch에 대한 자세한 내용은 [이 페이지](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html)를 참조하십시오.
 
 이전 버전의 AEM과 달리 프레임워크 지원은 AEM as a Cloud Service의 Analytics 구성에서 제공되지 않습니다. 대신 이제 Analytics 기능(JS 라이브러리)을 갖춘 AEM 사이트를 측정하기 위한 실질적인 도구인 Adobe에서 제공하는 Launch가 이를 수행합니다. Adobe Launch에서는 Adobe Analytics 확장 기능을 구성할 수 있는 속성이 생성되며 Adobe Analytics로 데이터를 전송하기 위한 규칙이 생성됩니다. Adobe Launch에서는 SiteCatalyst에서 제공하는 분석 작업이 대체되었습니다.
 
@@ -55,9 +55,9 @@ Adobe Analytics를 AEM as a Cloud Service와 제대로 통합하기 위해 IMS �
 
 ## Adobe Launch를 사용하여 AEM 사이트에서 Adobe Analytics 통합 {#analytics-launch}
 
-Adobe Analytics를 Launch 속성에 확장 프로그램으로 추가할 수 있습니다. 매핑을 수행하고 Adobe Analytics에 대한 POST 호출을 만드는 규칙을 정의할 수 있습니다.
+Adobe Analytics를 Launch 속성에 확장 기능으로 추가할 수 있습니다. 매핑을 수행하고 Adobe Analytics에 대한 POST 호출을 만드는 규칙을 정의할 수 있습니다.
 
-* Launch의 Analytics 확장 프로그램을 기본 사이트로 빠르게 구성하는 방법에 대해 알아보려면 [이 비디오](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html)를 시청하십시오.
+* Launch의 Analytics 확장 기능을 기본 사이트로 빠르게 구성하는 방법에 대해 알아보려면 [이 비디오](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html)를 시청하십시오.
 
 * 규칙을 만들고 Adobe Analytics에 데이터를 보내는 방법에 대한 자세한 내용은 [이 페이지](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html)를 참조하십시오.
 

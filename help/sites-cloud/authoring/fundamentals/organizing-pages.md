@@ -25,7 +25,7 @@ ht-degree: 99%
 
 >[!TIP]
 >
->페이지를 보다 효율적으로 구성할 수 있도록 해 주고 웹 Sites 콘솔에서 사용할 수 있는 다양한 [키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)가 있습니다.
+>페이지를 보다 효율적으로 구성할 수 있도록 해 주고 웹 사이트 콘솔에서 사용할 수 있는 다양한 [키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)가 있습니다.
 
 ## 웹 사이트 구성 {#organizing-your-website}
 
