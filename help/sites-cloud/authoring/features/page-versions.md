@@ -3,9 +3,9 @@ title: 페이지 버전을 사용하여 작업
 description: AEM에서 페이지 버전을 만들고, 비교하고, 복원하는 방법에 대해 알아봅니다.
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1507'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
