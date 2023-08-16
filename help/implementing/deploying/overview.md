@@ -1,12 +1,12 @@
 ---
 title: AEM as a Cloud Service에 배포
-description: AEM에 as a Cloud Service으로 배포하는 기본 사항과 모범 사례에 대해 알아봅니다
+description: AEM as a Cloud Service에 배포할 때의 기본 사항 및 모범 사례에 대해 알아봅니다.
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3470'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -295,7 +295,7 @@ Cloud Manager 파이프라인을 사용하여 코드를 배포하는 일반 개�
 
 반면에 AEM as a Cloud Service는 사용 가능한 실행 모드와 OSGI 번들 및 OSGI 구성을 매핑할 수 있는 방법에 있어 보다 독창적입니다.
 
-* OSGI 구성 실행 모드는 환경의 경우 RDE, 개발, 스테이징, 프로덕션을 참조하고 서비스의 경우 작성자 또는 게시를 참조해야 합니다. `<service>.<environment_type>` 조합은 지원되는 반면에, 특정 순서로 사용되어야 합니다(예: `author.dev` 또는 `publish.prod`). OSGI 토큰은 런타임 시 `environment_type`이 더 이상 포함되지 않는 `getRunModes` 메서드를 사용하는 대신 코드에서 직접 참조해야 합니다. 자세한 내용은 [AEM as a Cloud Service용 OSGi 구성](/help/implementing/deploying/configuring-osgi.md)을 참조하십시오.
+* OSGI 구성 실행 모드는 환경의 경우 RDE, 개발, 스테이징, 프로덕션을 참조하고 서비스의 경우 작성자 또는 게시를 참조해야 합니다. `<service>.<environment_type>` 조합은 지원되는 반면, 이들 환경은 특정 순서로 사용되어야 합니다(예: `author.dev` 또는 `publish.prod`). OSGI 토큰은 런타임 시 `environment_type`이 더 이상 포함되지 않는 `getRunModes` 메서드를 사용하는 대신 코드에서 직접 참조해야 합니다. 자세한 내용은 [AEM as a Cloud Service용 OSGi 구성](/help/implementing/deploying/configuring-osgi.md)을 참조하십시오.
 * OSGI 번들 실행 모드는 서비스(작성자, 게시)로 제한됩니다. 실행별 모드 OSGI 번들은 `install.author` 또는 `install.publish` 아래의 콘텐츠 패키지에 설치해야 합니다.
 
 AEM as a Cloud Service에서는 실행 모드를 사용하여 특정 환경 또는 서비스에 대한 콘텐츠를 설치할 수 없습니다. 스테이징 또는 프로덕션 환경에 없는 데이터 또는 HTML로 개발 환경을 시드해야 하는 경우, 패키지 관리자를 사용할 수 있습니다.
