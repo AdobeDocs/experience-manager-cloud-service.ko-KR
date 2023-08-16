@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 source-git-commit: 1d5460c87aef10ae1adee7401cd462242e106f8c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2426'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Adobe Experience Manager는 다양하고 획기적인 동기화 구성을 제공
 
 다음 표에는 AEM을 통해 즉시 사용할 수 있도록 제공되는 롤아웃 구성이 나열되어 있습니다. 표에는 각 롤아웃 구성의 트리거 및 동기화 작업이 포함되어 있습니다.
 
-설치된 롤아웃 구성 작업이 요구 사항을 충족하지 않는 경우 다음을 수행할 수 있습니다. [새 롤아웃 구성을 만듭니다.](#creating-a-rollout-configuration)
+설치된 롤아웃 구성 작업이 요구 사항을 충족하지 않을 경우 [새 롤아웃 구성을 만들 수 있습니다](#creating-a-rollout-configuration).
 
 | 이름 | 설명 | 트리거 | [동기화 작업](#synchronization-actions) |
 |---|---|---|---|
@@ -60,7 +60,7 @@ Adobe Experience Manager는 다양하고 획기적인 동기화 구성을 제공
 
 다음 표에는 AEM을 통해 즉시 사용할 수 있도록 제공되는 동기화 작업이 나열되어 있습니다.
 
-설치된 작업이 요구 사항을 충족하지 않는 경우 다음을 수행할 수 있습니다 [새 동기화 작업을 만듭니다.](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)
+설치된 작업이 요구 사항을 충족하지 않는 경우 [새 동기화 작업을 만들 수 있습니다](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action).
 
 | 작업 이름 | 설명 | 속성 |
 |---|---|---|
@@ -84,12 +84,12 @@ Adobe Experience Manager는 다양하고 획기적인 동기화 구성을 제공
 
 ### 롤아웃 구성 만들기 {#creating-a-rollout-configuration}
 
-다음을 수행할 수 있습니다. [롤아웃 구성 만들기](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration) 설치된 롤아웃 구성이 애플리케이션 요구 사항에 부합하지 않는 경우 다음 단계를 수행하십시오.
+설치된 롤아웃 구성이 애플리케이션 요구 사항을 충족하지 않을 경우 다음 단계를 수행하여 [롤아웃 구성을 만들 수 있습니다](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration).
 
-1. [롤아웃 구성 만들기-](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
+1. [롤아웃 구성 만들기 -](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
 1. [롤아웃 구성에 동기화 작업을 추가합니다.](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)
 
-블루프린트 또는 라이브 카피 페이지에서 롤아웃 구성을 구성할 때 새 롤아웃 구성을 사용할 수 있습니다.
+새 롤아웃 구성을 만들었다면 블루프린트 또는 Live Copy 페이지에서 롤아웃 구성을 구성할 때 사용할 수 있습니다.
 
 ### 동기화에서 속성 및 노드 유형 제외 {#excluding-properties-and-node-types-from-synchronization}
 
