@@ -3,7 +3,7 @@ title: 샌드박스 프로그램 만들기
 description: Cloud Manager를 사용하여 교육, 데모, POC 또는 기타 비프로덕션 목적을 위한 자체 샌드박스 프로그램을 만드는 방법을 알아봅니다.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '444'
 ht-degree: 100%
 
