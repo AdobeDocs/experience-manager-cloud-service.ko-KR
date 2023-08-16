@@ -1,11 +1,11 @@
 ---
 title: AEM 커넥터 제출
-description: AEMas a Cloud Service 에서 커넥터를 올바르게 참조하고 배포하는 방법에 대해 알아봅니다.
+description: AEM as a Cloud Service에서 커넥터를 올바르게 참조하고 배포하는 방법에 대해 알아봅니다.
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
 source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '307'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
