@@ -1,11 +1,11 @@
 ---
 title: AEM 커넥터 유지 관리
-description: 초기 제출 후 AEM 커넥터를 유지 관리하고 업데이트하는 방법을 알아봅니다.
+description: 초기 제출 후 AEM 커넥터를 유지 관리하고 업데이트하는 방법에 대해 알아봅니다.
 exl-id: 8122a8c8-6577-4907-8f6e-52711eed3970
 source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '171'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
