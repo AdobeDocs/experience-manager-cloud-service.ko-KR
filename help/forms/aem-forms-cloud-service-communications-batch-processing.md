@@ -2,9 +2,9 @@
 title: Experience Manager [!DNL Forms] as a Cloud Service 통신 일괄 처리
 description: 브랜드 지향적이고 개인화된 커뮤니케이션을 만드는 방법
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1692'
 ht-degree: 2%
 
 ---
@@ -87,7 +87,7 @@ Microsoft Azure 스토리지에서 다음을 만듭니다. [컨테이너](https:
 
 클라우드 구성은 Experience Manager 인스턴스를 Microsoft Azure Storage에 연결합니다. 클라우드 구성을 만들려면 다음 작업을 수행하십시오.
 
-1. 도구 > Cloud Services > Azure 스토리지로 이동합니다.
+1. 도구 > Cloud Service > Azure 스토리지로 이동합니다.
 1. 구성을 호스팅할 폴더를 열고 [만들기]를 클릭합니다. 전역 폴더를 사용하거나 폴더를 만듭니다.
 1. 서비스에 연결할 구성 및 자격 증명의 이름을 지정합니다. 다음을 수행할 수 있습니다. [Microsoft Azure 스토리지 포털에서 이러한 자격 증명을 검색합니다.](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys).
 1. 만들기를 클릭합니다.
@@ -157,7 +157,6 @@ Microsoft Azure 스토리지에서 다음을 만듭니다. [컨테이너](https:
 >
 >* 여러 PRINT 형식을 요청할 때 상태에는 여러 항목이 포함됩니다. 예: PRINT/ZPL, PRINT/IPL.
 >* 일괄 처리 작업은 모든 레코드를 동시에 읽지 않고 레코드 수를 계속 읽고 증가시킵니다. 따라서 모든 레코드를 읽을 때까지 상태는 -1을 반환합니다.
-
 
 ### 생성된 문서 보기 {#view-generated-documents}
 

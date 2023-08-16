@@ -11,9 +11,9 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2560'
+source-wordcount: '2559'
 ht-degree: 2%
 
 ---
@@ -225,7 +225,7 @@ Sling 모델은 Java™으로 구현되며 는에서 찾을 수 있습니다. **
    private ProductTeaser productTeaser;
    ```
 
-   재정의하거나 변경하지 않으려는 메서드의 경우 `ProductTeaser` 를 반환합니다. 예:
+   재정의하거나 변경하지 않으려는 메서드의 경우 `ProductTeaser` 를 반환합니다. 예를 들면 다음과 같습니다.
 
    ```java
    @Override
@@ -496,9 +496,9 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
 
 ## 추가 리소스 {#additional-resources}
 
-- [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko-KR)
+- [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 - [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)
 - [AEM CIF 핵심 구성 요소 맞춤화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/customize-cif-components.html)
 - [핵심 구성 요소 사용자 정의](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
-- [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)
+- [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 - [CIF 제품 및 범주 선택기 사용](use-cif-pickers.md)

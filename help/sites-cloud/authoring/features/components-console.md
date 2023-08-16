@@ -1,11 +1,11 @@
 ---
 title: 구성 요소 콘솔
-description: 구성 요소 콘솔에서 인스턴스에 대해 정의된 모든 구성 요소를 탐색할 수 있습니다.
+description: 구성 요소 콘솔에서 인스턴스에 대해 정의된 모든 구성 요소를 탐색할 수 있습니다
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 81%
+source-wordcount: '273'
+ht-degree: 68%
 
 ---
 
@@ -33,9 +33,9 @@ ht-degree: 81%
 
 * **속성**
 
-   ![구성 요소 콘솔 속성](/help/sites-cloud/authoring/assets/components-console-properties.png)
+  ![구성 요소 콘솔 속성](/help/sites-cloud/authoring/assets/components-console-properties.png)
 
-   [속성] 탭에서 다음 작업을 수행할 수 있습니다.
+  [속성] 탭에서 다음 작업을 수행할 수 있습니다.
 
    * 구성 요소의 일반 속성 확인
       * 구성 요소에 대해 아이콘이나 약어를 정의한 방법을 확인합니다. <!-- View how the [icon or abbreviation has been defined](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) for the component.-->
@@ -43,24 +43,24 @@ ht-degree: 81%
    * 보기 **리소스 유형** 및 **리소스 슈퍼 유형** (정의된 경우).
       * 리소스 수퍼 유형 을 클릭하면 해당 구성 요소로 이동합니다.
 
-   >[!NOTE]
-   >
-   >`/apps`는 런타임 시 편집할 수 없으므로 구성 요소 콘솔은 읽기 전용입니다.
+  >[!NOTE]
+  >
+  >`/apps`는 런타임 시 편집할 수 없으므로 구성 요소 콘솔은 읽기 전용입니다.
 
 * **정책**
 
-   ![구성 요소 콘솔 정책](/help/sites-cloud/authoring/assets/components-console-policies.png)
+  ![구성 요소 콘솔 정책](/help/sites-cloud/authoring/assets/components-console-policies.png)
 
 * **라이브 사용량**
 
-   ![구성 요소의 라이브 사용량](/help/sites-cloud/authoring/assets/components-console-live-usage.png)
+  ![구성 요소의 라이브 사용량](/help/sites-cloud/authoring/assets/components-console-live-usage.png)
 
-   >[!CAUTION]
-   >
-   >이 보기에 대해 수집 중인 정보의 특성으로 인해 순서대로 구성하거나 표시하는 데 시간이 걸릴 수 있습니다.
+  >[!CAUTION]
+  >
+  >이 보기에 대해 수집 중인 정보의 특성으로 인해 순서대로 구성하거나 표시하는 데 시간이 걸릴 수 있습니다.
 
 * **설명서**
 
-   개발자가 구성 요소에 대한 설명서를 제공한 경우 **설명서** 탭에 표시됩니다. 사용 가능한 설명서가 없으면 **설명서** 탭이 표시되지 않습니다. <!-- If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.-->
+  개발자가 구성 요소에 대한 설명서를 제공한 경우 **설명서** 탭에 표시됩니다. 사용 가능한 설명서가 없으면 **설명서** 탭이 표시되지 않습니다. <!-- If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.-->
 
-   ![구성 요소 설명서](/help/sites-cloud/authoring/assets/components-console-documentation.png)
+  ![구성 요소 설명서](/help/sites-cloud/authoring/assets/components-console-documentation.png)

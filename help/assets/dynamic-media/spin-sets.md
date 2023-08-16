@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1927'
+source-wordcount: '1926'
 ht-degree: 10%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 10%
 
 스핀 세트를 빠르게 시작하고 실행하려면 다음 단계를 따르십시오.
 
-1. 선택 사항. [일괄처리 집합 사전 설정 만들기](/help/assets/dynamic-media/batch-set-presets-dm.md) 새 에셋 폴더에 적용합니다.
+1. 옵션. [일괄처리 집합 사전 설정 만들기](/help/assets/dynamic-media/batch-set-presets-dm.md) 새 에셋 폴더에 적용합니다.
 
    일괄처리 집합 사전 설정을 사용하면 회전 집합 생성을 자동화할 수 있습니다.
 
@@ -145,6 +145,7 @@ ht-degree: 10%
    * [회전 집합 편집기] 페이지의 왼쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 자산 추가]**.
 
    * 스핀 세트 편집기 페이지 가운데 있는 아래에서 **[!UICONTROL 자산 선택기를 열려면 탭하십시오.]**.
+
    회전 집합에 포함할 자산을 선택합니다. Selected assets have a checkmark icon over them. 완료되면 페이지의 오른쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 선택]**.
 
    With the Asset Selector, you can search for assets by typing in a keyword and tapping **[!UICONTROL Return]**. You can also apply filters to refine your search results. You can filter by path, collection, file type, and tag. 필터를 선택한 다음 **[!UICONTROL 필터]** 아이콘을 클릭합니다. Change the view by tapping the View icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View]**.
@@ -179,7 +180,7 @@ ht-degree: 10%
 
 **스핀 세트를 보려면**
 
-1. 개별 에셋의 속성을 열 때. 속성은 선택한 자산이 (다음 아래)의 멤버로 설정되는 항목을 나타냅니다. **[!UICONTROL 세트 구성원]**). 전체 세트를 보려면 세트 이름을 선택합니다.
+1. 개별 에셋의 속성을 열 때. 속성은 선택한 에셋이 (아래에) 멤버로 설정되는 항목을 나타냅니다. **[!UICONTROL 세트 구성원]**). 전체 세트를 보려면 세트 이름을 선택합니다.
 
    ![chlimage_1-156](assets/chlimage_1-384.png)
 
@@ -221,7 +222,6 @@ Experience Manager이 썸네일에 사용하는 이미지를 다른 이미지로
    * 에셋을 삭제하려면 에셋을 선택한 다음 를 선택합니다 **[!UICONTROL 자산 삭제]**.
    * 사전 설정을 적용하려면 [사전 설정] 아이콘을 선택하고 사전 설정을 선택합니다.
    * 전체 회전 세트를 삭제하려면 회전 세트로 이동하여 선택한 다음 를 선택합니다 **[!UICONTROL 삭제]**
-
    >[!NOTE]
    >
    >회전 세트로 이동하여 회전 세트의 이미지를 편집할 수 있습니다. **[!UICONTROL 구성원 설정]** 왼쪽 레일에서 개별 에셋의 연필 아이콘을 선택하여 편집 창을 엽니다.

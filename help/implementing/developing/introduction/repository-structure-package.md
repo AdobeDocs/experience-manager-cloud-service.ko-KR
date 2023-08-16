@@ -2,7 +2,7 @@
 title: AEM 프로젝트 저장소 구조 패키지
 description: Adobe Experience Manager as a Cloud Service의 Maven 프로젝트에는 프로젝트의 코드 하위 패키지가 배포되는 JCR 저장소 루트를 정의하는 것이 유일한 목적인 저장소 구조 하위 패키지 정의가 필요합니다.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 8%
@@ -86,7 +86,7 @@ Maven 프로젝트에 대한 저장소 구조 패키지를 생성하려면 다�
                         Examples of complex roots
 
 
-                        Overlays of /libs typically require defining the overlayed structure, at each level here.
+                        Overlays of /libs typically require defining the overlay structure, at each level here.
 
                         For example, adding a new section to the main AEM Tools navigation, necessitates the following rules:
 
@@ -157,7 +157,7 @@ Maven 프로젝트에 대한 저장소 구조 패키지를 생성하려면 다�
 
 덜 일반적이고 복잡한 사용 사례는 JCR 저장소의 동일한 영역에 설치하는 여러 코드 패키지의 배포를 지원합니다.
 
-예:
+예를 들면 다음과 같습니다.
 
 + 코드 패키지 A가에 배포 `/apps/a`
 + 코드 패키지 B가에 배포 `/apps/a/b`

@@ -4,10 +4,10 @@ description: 테마를 사용하여 핵심 구성 요소를 사용하여 적응�
 seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
 keywords: 새 테마 만들기, 테마 맞춤화, 새 테마 업로드, 양식에 테마 사용, 프론트엔드 파이프라인을 사용하여 테마 맞춤화
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: fc0ff8cff8c616bc5576d834883aa0fe38ef593e
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2711'
-ht-degree: 4%
+source-wordcount: '2709'
+ht-degree: 5%
 
 ---
 
@@ -334,7 +334,7 @@ AEM Forms as a Cloud Service 인스턴스에 호스팅된 적응형 양식에 �
    git push [name-for-createdrepository]
    ```
 
-   예:
+   예를 들면 다음과 같습니다.
 
    ```
    git remote add canvascloudthemerepo https://git.cloudmanager.adobe.com/stage-aemformsdev/customcanvastheme/

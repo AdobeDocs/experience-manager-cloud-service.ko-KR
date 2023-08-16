@@ -2,10 +2,10 @@
 title: Universal Editor로 콘텐츠 작성
 description: 콘텐츠 작성자가 Universal Editor를 사용하여 얼마나 쉽고 직관적으로 콘텐츠를 만들 수 있는지 알아봅니다.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: e03bf6437b72a4fe7e959a23f12f0baa892fa567
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2271'
-ht-degree: 83%
+source-wordcount: '2266'
+ht-degree: 80%
 
 ---
 
@@ -26,7 +26,7 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 
 >[!NOTE]
 >
->Universal Editor는 아직 개발 중입니다. 현재 모든 콘텐츠 유형을 편집할 수 없습니다.
+>Universal Editor는 아직 개발 중입니다. 현재 모든 콘텐츠 유형을 편집할 수는 없습니다.
 
 ## 앱 준비 {#prepare-app}
 
@@ -217,8 +217,8 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 편집기는 창의 대부분을 차지하며 [위치 표시줄](#location-bar)에 지정된 페이지가 렌더링되는 곳입니다.
 
-* 편집기가 [텍스트 모드](#text-mode) 또는 [미디어 모드](#media-mode)와 같은 편집 모드에 있는 경우 콘텐츠를 편집할 수 있지만 링크를 따라갈 수는 없습니다.
-* 편집기가 [미리보기 모드](#preview-mode)에 있는 경우 콘텐츠를 탐색하고 링크를 따라갈 수 있지만, 콘텐츠를 편집할 수 없습니다.
+* 편집기가 다음과 같은 편집 모드에 있는 경우 [텍스트 모드](#text-mode) 또는 [미디어 모드,](#media-mode) 컨텐츠는 편집할 수 있지만 링크를 따라갈 수는 없습니다.
+* 편집기가 인 경우 [미리 보기 모드,](#preview-mode) 콘텐츠를 탐색할 수 있고 링크를 따라갈 수 있지만 콘텐츠를 편집할 수는 없습니다.
 
 ![편집기](assets/editor.png)
 

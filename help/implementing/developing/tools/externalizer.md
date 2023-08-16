@@ -2,9 +2,9 @@
 title: URL 표면화
 description: 외부화는 프로그래밍 방식으로 리소스 경로를 외부 및 절대 URL로 변환할 수 있는 OSGi 서비스입니다.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '653'
 ht-degree: 1%
 
 ---
@@ -44,7 +44,7 @@ AEM as a Cloud Service 인스턴스는 외부에 표시되는 URL을 알 수 없
 
 ## 외부화 서비스 구성 {#configuring-the-externalizer-service}
 
-외부화 서비스를 사용하면 리소스 경로를 프로그래밍 방식으로 접두사로 사용하는 데 사용할 수 있는 도메인을 중앙에서 정의할 수 있습니다. Externalizer 서비스는 단일 도메인을 사용하는 응용 프로그램에만 사용해야 합니다.
+외부화 서비스를 사용하면 프로그래밍 방식으로 리소스 경로를 접두사로 사용하는 데 사용할 수 있는 도메인을 중앙에서 정의할 수 있습니다. Externalizer 서비스는 단일 도메인을 사용하는 응용 프로그램에만 사용해야 합니다.
 
 >[!NOTE]
 >

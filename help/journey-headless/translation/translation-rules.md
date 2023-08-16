@@ -2,10 +2,10 @@
 title: Headless 콘텐츠에 대한 번역 규칙 구성
 description: 번역 규칙을 정의하여 번역할 콘텐츠를 식별하는 방법에 대해 알아봅니다.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '942'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '941'
+ht-degree: 98%
 
 ---
 
@@ -69,7 +69,7 @@ Headless 조각을 나타내는 콘텐츠 조각에는 구조화된 필드로 �
 
 **번역 구성** UI에는 번역 규칙에 사용할 수 있는 다양한 옵션이 있습니다. 여기에서 기본 Headless 현지화 구성에 가장 필요하고 일반적인 단계를 집중적으로 다룹니다.
 
-1. **컨텍스트 추가**를 탭하거나 클릭하여 경로를 추가할 수 있습니다. 이는 규칙의 영향을 받는 콘텐츠 경로입니다.
+1. 탭 또는 클릭 **컨텍스트 추가**: 경로를 추가할 수 있습니다. 이는 규칙의 영향을 받는 콘텐츠 경로입니다.
    ![컨텍스트 추가](assets/add-translation-context.png)
 1. 경로 브라우저를 사용하여 필요한 경로를 선택한 다음 **확인** 버튼을 탭하거나 클릭하여 저장합니다. Headless 콘텐츠를 보유하는 콘텐츠 조각은 일반적으로 `/content/dam/<your-project>` 아래에 위치합니다.
    ![경로 선택](assets/select-context.png)

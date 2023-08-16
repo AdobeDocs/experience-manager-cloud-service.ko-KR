@@ -2,10 +2,10 @@
 title: Admin Console 액세스
 description: 온보딩에 필요한 준비와 AEMaaCS 구조의 기본 사항을 이해했으면 처음으로 Admin Console에 로그인할 준비가 된 것입니다.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1107'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '1104'
+ht-degree: 95%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 ## Admin Console {#admin-console}
 
-Adobe Admin Console은 Adobe 제품 라이선스 및 사용자를 관리하는 중앙 위치입니다. Admin Console을 사용하면 다양한 개별 솔루션이 아닌 단일 위치에서 사용자를 생성하고 관리할 수 있습니다.
+Adobe Admin Console은 Adobe 제품 라이선스 및 사용자를 관리하는 중앙 위치입니다. Admin Console을 사용하면 다양한 개별 솔루션 내부가 아닌 단일 위치에서 사용자를 만들고 관리할 수 있습니다.
 
 ## Adobe ID {#adobe-id}
 
@@ -50,7 +50,7 @@ Admin Console을 사용하여 팀 내 사용자를 관리하려면 먼저 자신
 
 1. 시스템 관리자는 온보딩 프로세스의 일부로 Adobe로부터 여러 개의 이메일을 받게 됩니다. 액세스 권한이 부여된 조직 이름에 대한 정보를 제공하는 시작 이메일을 찾습니다.
 
-1. 시작 이메일의 **시작하기** 링크를 클릭하여 Admin Console로 이동합니다. 이메일을 찾을 수 없는 경우 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)에서 Admin Console로 직접 브라우저를 엽니다.
+1. 시작 이메일의 **시작하기** 링크를 클릭하여 Admin Console로 이동합니다. 이메일을 찾을 수 없는 경우 브라우저를 열어 (으)로 Admin Console [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
    ![시작 이메일](/help/journey-onboarding/assets/get-started-email.png)
 
@@ -90,7 +90,7 @@ AEM as a Cloud Service는 IMS를 사용하여 AEM과 나머지 Adobe Experience 
 
 ![지원 탭](/help/journey-onboarding/assets/support-menu.png)
 
-이 탭에서 사례를 만들고 관리할 수 있으며 Adobe 고객 지원 센터 담당자와 직접 채팅하고 전문가와의 세션을 예약할 수 있습니다. 시스템 관리자 및 지원 관리자는 지원 사례와 전문가 세션 옵션을 이용하려면 로그인해야 합니다.
+탭에서는 사례를 만들고 관리할 수 있으며, Adobe 고객 지원 담당자와 직접 채팅하고, 전문가와의 세션을 예약할 수 있습니다. 시스템 관리자 및 지원 관리자는 지원 사례와 전문가 세션 옵션을 이용하려면 로그인해야 합니다.
 
 ## 다음 단계 {#whats-next}
 

@@ -2,10 +2,10 @@
 title: New Relic One
 description: AEM as a Cloud Service를 위한 New Relic One APM(Application Performance Monitoring) 서비스에 대한 정보와 액세스하는 방법에 대해 알아봅니다.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1589'
-ht-degree: 100%
+source-wordcount: '1586'
+ht-degree: 97%
 
 ---
 
@@ -112,7 +112,7 @@ New Relic One에 직접 액세스하려면 다음 작업을 수행하십시오.
 
 ### 이메일 확인 {#verify-email}
 
-New Relic One에 로그인하는 동안 이메일을 확인하라는 메시지가 표시되면 이메일이 여러 계정과 연결되어 있다는 의미입니다. 이를 통해 액세스할 계정을 선택할 수 있습니다.
+New Relic One에 로그인하는 동안 이메일을 확인하라는 메시지가 표시되면 이메일이 여러 계정과 연결되어 있다는 의미입니다. 액세스할 계정을 선택할 수 있습니다.
 
 이메일 주소를 확인하지 않는 경우, New Relic은 이메일 주소와 연결된 가장 최근에 만들어진 사용자 레코드로 로그인을 시도합니다. 로그인할 때마다 이메일을 확인하지 않으려면 로그인 화면에서 **내 정보 저장** 확인란을 클릭합니다.
 
@@ -120,7 +120,7 @@ New Relic One에 로그인하는 동안 이메일을 확인하라는 메시지�
 
 ## New Relic One 액세스 문제 해결 {#troubleshooting}
 
-[New Relic One 사용자 관리](#manage-users) 섹션에 설명된 대로 New Relic One 사용자로 추가되었는데 원본 계정 확인 이메일을 찾을 수 없는 경우 다음 단계를 따르십시오.
+섹션에 설명된 대로 New Relic One 사용자로 추가된 경우 [New Relic One 사용자 관리](#manage-users) 원본 계정 확인 이메일을 찾을 수 없습니다. 다음 단계를 따르십시오.
 
 1. New Relic 로그인 페이지([`login.newrelic.com/login`](https://login.newrelic.com/login))로 이동합니다.
 

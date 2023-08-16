@@ -4,10 +4,10 @@ description: AEM의 언어 복사 마법사를 사용하는 방법에 대해 알
 feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '282'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '280'
+ht-degree: 89%
 
 ---
 
@@ -29,11 +29,11 @@ ht-degree: 100%
 
    ![마법사로 언어 사본 만들기](../assets/language-copy-wizard.png)
 
-1. 마법사가 열리며 페이지를 추가/제거할 수 있는 **소스 선택** 단계로 이동합니다. 하위 페이지를 포함하거나 제외할 수 있는 옵션도 있습니다. 포함하려는 페이지를 선택하고 **다음**&#x200B;을 탭하거나 클릭합니다.
+1. 마법사가 열리면 **소스 선택** 페이지를 추가/제거할 수 있는 단계입니다. 하위 페이지를 포함하거나 제외할 수 있는 옵션도 있습니다. 포함하려는 페이지를 선택하고 **다음**&#x200B;을 탭하거나 클릭합니다.
 
    ![마법사를 사용하여 페이지 추가](../assets/language-copy-wizard-add-pages.png)
 
-1. 마법사의 **구성** 단계에서는 언어를 추가/제거하고 번역 방법을 선택할 수 있습니다. **다음**&#x200B;을 탭하거나 클릭합니다.
+1. 다음 **구성** 마법사의 단계에서는 언어를 추가/제거하고 번역 방법을 선택할 수 있습니다. **다음**&#x200B;을 탭하거나 클릭합니다.
 
    ![마법사의 구성 단계](../assets/language-copy-wizard-configure.png)
 

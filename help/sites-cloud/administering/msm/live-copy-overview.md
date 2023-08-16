@@ -4,10 +4,10 @@ description: 콘텐츠 동기화를 위해 Live Copy 상태를 신속하게 이�
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '731'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '729'
+ht-degree: 97%
 
 ---
 
@@ -112,6 +112,6 @@ Live Copy 페이지를 선택하면 다음과 같은 작업을 사용할 수 있
 
 ### Live Copy {#live-copy-tab}
 
-이 탭을 사용하면 Live Copy 구성을 조회하고 편집할 수 있습니다.
+이 탭에서는 라이브 카피 구성을 보고 편집할 수 있습니다.
 
 ![Live Copy 탭](../assets/live-copy-relationship-status-live-copy.png)

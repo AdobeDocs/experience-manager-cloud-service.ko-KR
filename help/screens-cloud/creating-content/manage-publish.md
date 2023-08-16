@@ -2,9 +2,9 @@
 title: Screens에서 채널 as a Cloud Service 게시
 description: 이 페이지에서는 Screens에 as a Cloud Service으로 채널을 게시하는 방법에 대해 설명합니다.
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
-source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '307'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 ## 소개 {#introduction}
 
-AEM Screens에서 콘텐츠를 게시할 수 있습니다. 게시 관리 기능을 사용하면 작성자에서 플레이어로 게시하는 컨텐츠 업데이트를 전달할 수 있습니다. 전체 AEM Screens 프로젝트에 대한 콘텐츠 또는 채널, 위치, 플레이어 또는 애플리케이션 중 하나에 대한 콘텐츠만 게시 또는 게시 취소할 수 있습니다.
+AEM Screens에서 콘텐츠를 게시할 수 있습니다. 게시 관리 기능을 사용하면 작성자에서 플레이어로 게시되는 콘텐츠 업데이트를 전달할 수 있습니다. 전체 AEM Screens 프로젝트에 대한 콘텐츠 또는 채널, 위치, 플레이어 또는 애플리케이션 중 하나에 대한 콘텐츠만 게시 또는 게시 취소할 수 있습니다.
 
 >[!IMPORTANT]
 >프로젝트에서 채널을 만든 후에는 AEM Screens Services Provider의 인벤토리 목록 보기에서 채널/채널을 표시하도록 채널을 게시해야 합니다.

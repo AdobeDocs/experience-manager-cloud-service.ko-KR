@@ -4,10 +4,10 @@ description: Adobe 엔지니어링 및 컨설팅 팀에서 컴파일한 AEM 다�
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1425'
-ht-degree: 100%
+source-wordcount: '1420'
+ht-degree: 95%
 
 ---
 
@@ -140,7 +140,7 @@ MSM 롤아웃 구성은 맞춤화가 매우 용이합니다. 롤아웃을 자동
 
 ### 노드 유형/속성 {#node-types-properties}
 
-MSM을 사용하면 롤아웃 작업 외에도 롤아웃되는 노드 속성을 맞춤화할 수 있습니다. [MSM OSGi 구성을 사용하면 노드 유형을 소스에서 Live Copy로 복사하지 못하도록 제외](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization)할 수 있습니다.
+MSM을 사용하면 롤아웃 작업 외에도 롤아웃되는 노드 속성을 맞춤화할 수 있습니다. 다음 [MSM OSGi 구성을 사용하여 노드 유형을 제외할 수 있습니다](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) 소스에서 라이브 카피로 복사됩니다.
 
 ## 추가 정보 {#further-information}
 

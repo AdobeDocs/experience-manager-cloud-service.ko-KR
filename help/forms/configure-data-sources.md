@@ -1,14 +1,14 @@
 ---
 title: 데이터 소스를 구성하는 방법
-description: Experience Manager Forms 데이터 통합을 사용하면 서로 다른 데이터 소스를 구성하고 연결할 수 있습니다. RESTful 웹 서비스, SOAP 기반 웹 서비스 및 OData 서비스를 데이터 소스로 구성하고 이를 사용하여 양식 데이터 모델을 만드는 방법에 대해 알아봅니다.
+description: Experience Manager Forms 데이터 통합을 통해 서로 다른 데이터 소스를 구성하고 연결할 수 있습니다. RESTful 웹 서비스, SOAP 기반 웹 서비스 및 OData 서비스를 데이터 소스로 구성하고 이를 사용하여 양식 데이터 모델을 만드는 방법에 대해 알아봅니다.
 feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2212'
-ht-degree: 2%
+source-wordcount: '2210'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 ![데이터 통합](do-not-localize/data-integeration.png)
@@ -126,7 +126,7 @@ RESTful 웹 서비스는 [Swagger 사양](https://swagger.io/specification/v2/) 
 
 ### Open API 사양 버전 2.0에 대한 RESTful 서비스 구성 {#configure-restful-services-open-api-2.0}
 
-1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Services > 데이터 소스]**. 클라우드 구성을 만들려는 폴더를 탭하여 선택합니다.
+1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Service > 데이터 소스]**. 클라우드 구성을 만들려는 폴더를 탭하여 선택합니다.
 
    다음을 참조하십시오 [클라우드 서비스 구성을 위한 폴더 구성](configure-data-sources.md#cloud-folder) 클라우드 서비스 구성을 위한 폴더 만들기 및 구성에 대한 정보를 제공합니다.
 
@@ -151,7 +151,7 @@ RESTful 웹 서비스는 [Swagger 사양](https://swagger.io/specification/v2/) 
 
 ### Open API 사양 버전 3.0에 대한 RESTful 서비스 구성 {#configure-restful-services-open-api-3.0}
 
-1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Services > 데이터 소스]**. 클라우드 구성을 만들려는 폴더를 탭하여 선택합니다.
+1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Service > 데이터 소스]**. 클라우드 구성을 만들려는 폴더를 탭하여 선택합니다.
 
    다음을 참조하십시오 [클라우드 서비스 구성을 위한 폴더 구성](configure-data-sources.md#cloud-folder) 클라우드 서비스 구성을 위한 폴더 만들기 및 구성에 대한 정보를 제공합니다.
 
@@ -227,7 +227,7 @@ SOAP 기반 웹 서비스는 다음을 사용하여 설명합니다. [WSDL(웹 �
 
 에서 SOAP 기반 웹 서비스를 구성하려면 [!DNL Experience Manager] as a Cloud Service으로 웹 서비스용 WSDL URL이 있는지 확인하고 다음을 수행합니다.
 
-1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Services > 데이터 소스]**. 클라우드 구성을 만들려는 폴더를 탭하여 선택합니다.
+1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Service > 데이터 소스]**. 클라우드 구성을 만들려는 폴더를 탭하여 선택합니다.
 
    다음을 참조하십시오 [클라우드 서비스 구성을 위한 폴더 구성](configure-data-sources.md#cloud-folder) 클라우드 서비스 구성을 위한 폴더 만들기 및 구성에 대한 정보를 제공합니다.
 
@@ -259,7 +259,7 @@ SOAP 웹 서비스 WSDL에서 가져오기 문으로 허용되는 절대 URL에 
 ```
 
 
-구성의 값을 설정하려면 [AEM SDK를 사용해 OSGi 구성을 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)하고 Cloud Service 인스턴스에 [구성을 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process)하십시오.
+구성의 값을 설정하려면 [AEM SDK를 사용하여 OSGi 구성을 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ko#generating-osgi-configurations-using-the-aem-sdk-quickstart)하고 Cloud Service 인스턴스에 [구성을 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ko#deployment-process)합니다.
 
 ## OData 서비스 구성 {#config-odata}
 
@@ -270,7 +270,7 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. 에서 OData 서비�
 > 양식 데이터 모델 지원 [OData 버전 4](https://www.odata.org/documentation/).
 >를 구성하는 단계별 지침입니다. [!DNL Microsoft® Dynamics 365], 온라인 또는 온프레미스에서 다음을 참조하십시오. [[!DNL Microsoft® Dynamics] OData 구성](ms-dynamics-odata-configuration.md).
 
-1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Services > 데이터 소스]**. 클라우드 구성을 만들려는 폴더를 탭하여 선택합니다.
+1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Service > 데이터 소스]**. 클라우드 구성을 만들려는 폴더를 탭하여 선택합니다.
 
    다음을 참조하십시오 [클라우드 서비스 구성을 위한 폴더 구성](#cloud-folder) 클라우드 서비스 구성을 위한 폴더 만들기 및 구성에 대한 정보를 제공합니다.
 

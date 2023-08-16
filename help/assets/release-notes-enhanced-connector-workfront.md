@@ -2,7 +2,7 @@
 title: 릴리스 정보 [!DNL Workfront for Experience Manager enhanced connector]
 description: 릴리스 정보 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 4b63c00847fa21967560a59c3bcd931433a3a73f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1190'
 ht-degree: 1%
@@ -89,7 +89,7 @@ ht-degree: 1%
 
 <!--
 
-* Workfront enhanced connector now allows you to use new search parameters to be more specific while defining folder names on large repositories.
+* Workfront enhanced connector now lets you use new search parameters to be more specific while defining folder names on large repositories.
 
 -->
 
@@ -180,7 +180,7 @@ ht-degree: 1%
 
 * 자산에 대해 작업 만들기 워크플로우를 실행할 때 로그 메시지에 Null 포인터 예외가 표시됩니다.
 
-* 을(를) 활성화하면 `Replace Spaces with DASH` Experience Manager의 고급 설정 아래에 있는 구성 옵션을 사용하면 Workfront에서 중복 폴더가 만들어집니다.
+* 을(를) 활성화하면 `Replace Spaces with DASH` Experience Manager의 고급 설정 아래에 있는 구성 옵션으로 인해 Workfront에서 중복 폴더가 만들어집니다.
 
 ### 2022년 6월 릴리스 {#june-2022-release}
 

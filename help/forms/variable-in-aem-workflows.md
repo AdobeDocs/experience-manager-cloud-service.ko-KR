@@ -2,9 +2,9 @@
 title: AEM Workflow 단계에서 변수를 추가하는 방법
 description: 변수를 만들고 변수 값을 설정하고에서 사용하는 방법을 알아봅니다. [!DNL AEM Forms] 워크플로우 단계.
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2079'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/variable-in-aem-workflows.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/variable-in-aem-workflows.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 워크플로우 모델의 변수는 해당 데이터 유형을 기반으로 값을 저장하는 방법입니다. 모든 워크플로우 단계에서 변수의 이름을 사용하여 변수에 저장된 값을 검색할 수 있습니다. 변수 이름을 사용하여 라우팅 의사 결정을 위한 표현식을 정의할 수도 있습니다.
@@ -275,7 +275,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 변수를 삭제하기 전에 워크플로우에서 변수의 모든 참조를 제거합니다. 변수가 워크플로우에서 사용되지 않는지 확인합니다.
 
-변수를 삭제하려면 다음 작업을 수행하십시오.
+변수를 삭제하려면 다음을 수행하십시오.
 
 1. 워크플로 편집 페이지에서 워크플로 모델의 사이드 킥에 있는 변수 아이콘을 탭합니다. 왼쪽 창의 변수 섹션에는 기존 변수가 모두 표시됩니다.
 1. 삭제하려는 변수 이름 옆에 있는 삭제 아이콘을 탭합니다.

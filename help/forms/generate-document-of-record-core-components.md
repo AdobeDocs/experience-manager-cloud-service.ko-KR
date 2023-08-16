@@ -2,9 +2,9 @@
 title: 적응형 Forms에 대한 기록 문서 생성
 description: 적응형 Forms에 대한 기록 문서(DoR)에 대한 템플릿을 생성하는 방법을 설명합니다.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3109'
+source-wordcount: '3105'
 ht-degree: 2%
 
 ---
@@ -94,7 +94,7 @@ Adobe Acrobat PDF(Acroform)을 AEM Forms 인스턴스에 업로드합니다. 기
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 <!-- 
-In the following video Adaptive Form components are binded with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
+In the following video, Adaptive Form components are bound with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
 &quot;이메일 보내기&quot;, &quot;AEM 워크플로 호출&quot;, &quot;Power Automate 흐름 호출&quot; 등과 같은 제출 액션을 사용할 수 있습니다 [작업 제출](configuring-submit-actions.md) 기록 문서를 받을 수 있습니다.
@@ -328,14 +328,21 @@ When you select a form model, configure Document of Record using options availab
       * **글꼴 모음**: 기록 문서 PDF 내 텍스트의 글꼴 모음
 
       * **데이터 모델에 바인딩되지 않은 양식 개체 포함**: 속성을 설정하면 기록 문서에 있는 스키마 기반 적응형 양식의 바인딩되지 않은 필드가 포함됩니다.
+
       <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
 
       * **패널 설명 숨기기**: 속성을 설정하면 패널/테이블에 대한 설명이 기록 문서에서 제외됩니다. 패널 및 테이블에 적용할 수 있습니다.
+
+
+
    1. **양식 필드 속성**:
       * **확인란 및 라디오 버튼 구성 요소의 경우 선택한 값만 표시합니다**: 속성을 설정하면 확인란 및 라디오 버튼의 선택한 값만 표시됩니다. [!UICONTROL 기록 문서].
       * **다중 값에 대한 구분 기호**: 쉼표나 줄 바꿈과 같은 구분 기호를 선택하여 여러 값을 표시할 수 있습니다.
       * **옵션 정렬**: 원하는 정렬(가로, 세로, 적응형 양식과 동일)을 선택하여 확인란이나 라디오 단추와 같은 필드에 대한 정렬을 설정할 수 있습니다 [!UICONTROL 기록 문서]. 기본적으로 수직 정렬은 의 필드에 대해 설정됩니다 [!UICONTROL 기록 문서]. 에서 속성 설정 [!UICONTROL 양식 필드 속성] DoR의 은 [!UICONTROL 항목 정렬] 를 참조하십시오. 이 경우 다음을 선택합니다 [!UICONTROL 적응형 양식과 동일] 옵션을 선택하면 적응형 양식 작성자 인스턴스에 구성된 대로 정렬이 사용됩니다. [!UICONTROL 기록 문서] 필드.
       * **수평 정렬 옵션 수**:수평 정렬을 위해 기록 문서에 표시할 옵션 수를 설정할 수 있습니다.
+
+
+
    1. **마스터 페이지  속성**:
       * **로고 이미지**: 적응형 양식에서 로고 이미지를 사용하거나, DAM에서 로고 이미지를 선택하거나, 컴퓨터에서 로고 이미지를 업로드할 수 있습니다.
       * **양식 제목**: DoR의 제목
@@ -343,7 +350,9 @@ When you select a form model, configure Document of Record using options availab
       * **면책조항 레이블**: 면책조항 레이블.
       * **면책조항**: 기록 문서에 대한 권한 및 의무의 범위를 지정하는 텍스트입니다.
       * **면책조항 텍스트**: 면책조항 텍스트.
+
       ![마스터 페이지  속성](/help/forms/assets/dorpropertiesimg.png)
+
    >[!NOTE]
    >
    >6.3 이전 버전의 Designer로 만든 적응형 양식 템플릿을 사용하는 경우 Accent Color 및 Font Family 속성이 작동하려면 루트 하위 양식 아래의 적응형 양식 템플릿에 다음 항목이 있는지 확인하십시오.

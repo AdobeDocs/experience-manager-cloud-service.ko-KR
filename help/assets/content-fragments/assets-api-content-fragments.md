@@ -3,10 +3,10 @@ title: Assets HTTP API의 Adobe Experience Manager as a Cloud Service 콘텐츠 
 description: AEM Headless 게재 기능의 중요한 부분인 Assets HTTP API의 콘텐츠 조각에 대한 지원에 대해 알아봅니다.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1785'
-ht-degree: 18%
+source-wordcount: '1784'
+ht-degree: 19%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 18%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html?lang=en) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
 AEM Headless 게재 기능의 중요한 부분인 Assets HTTP API의 콘텐츠 조각에 대한 지원에 대해 알아봅니다.
@@ -147,7 +147,7 @@ Assets REST API가 특정 인증 요구 사항 없이 환경 내에서 사용되
 
 >[!NOTE]
 >
->자세한 내용은 다음을 참조하십시오.
+>자세한 내용은 다음 문서를 참조하십시오.
 >
 >* [CORS/AEM 설명](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [비디오 - AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)에서 CORS용 개발
@@ -351,7 +351,7 @@ A [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) 는 �
 
 ## 추가 리소스 {#additional-resources}
 
-자세한 내용은 다음을 참조하십시오.
+자세한 내용은 다음 문서를 참조하십시오.
 
 * [Assets HTTP API 설명서](/help/assets/mac-api-assets.md)
 * [AEM Gem 세션: OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)

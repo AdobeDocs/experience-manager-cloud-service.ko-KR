@@ -2,10 +2,10 @@
 title: 검색
 description: 포괄적인 검색으로 신속하게 콘텐츠 찾기
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
-workflow-type: ht
-source-wordcount: '491'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '490'
+ht-degree: 98%
 
 ---
 
@@ -54,7 +54,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 콘텐츠를 검색하�
 
    리소스 유형에 따라 검색에 미리 정의된 검색/필터 조건이 표시됩니다.
 
-   사이드 패널에서 다음을 선택할 수 있습니다.
+   사이드 패널에서는 다음을 선택할 수 있습니다.
 
    * 저장된 검색
    * 검색 디렉터리

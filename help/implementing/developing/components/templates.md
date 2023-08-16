@@ -2,9 +2,9 @@
 title: 페이지 템플릿
 description: 페이지 템플릿은 새 페이지의 기반으로 사용되는 페이지를 만들 때 사용됩니다
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3294'
+source-wordcount: '3291'
 ht-degree: 8%
 
 ---
@@ -86,7 +86,7 @@ ht-degree: 8%
    **레이아웃**
 
    * 디바이스 범위에 대한 템플릿 레이아웃을 정의할 수 있습니다.
-   * 템플릿에 대한 응답형 레이아웃은 페이지 작성의 경우와 마찬가지로 작동합니다.
+   * 템플릿에 대한 반응형 레이아웃은 페이지 작성의 경우와 마찬가지로 작동합니다.
 
    템플릿 작성자가 템플릿 레이아웃을 정의하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/features/templates.md#editing-a-template-layout-template-author).
 
@@ -168,7 +168,7 @@ ht-degree: 8%
 
 ## CRXDE Lite 사용 {#using-crxde-lite}
 
-1. 프로그래밍 방식으로 또는 CRXDE Lite을 사용하여 인스턴스에 대해 새 폴더(/conf 아래)를 만들 수 있습니다.
+1. 프로그래밍 방식으로 또는 CRXDE Lite을 사용하여 인스턴스에 대해 새 폴더(/conf 아래에)를 만들 수 있습니다.
 
    다음 구조를 사용해야 합니다.
 
@@ -320,7 +320,7 @@ CRXDE를 통해 또는 구성 브라우저를 통해 템플릿 폴더가 만들�
 
 * `/apps/settings/wcm/template-types`
 
-사용자 정의된 템플릿 유형에 대한 정의는 사용자 정의 폴더(권장) 또는 `global`. 예:
+사용자 정의된 템플릿 유형에 대한 정의는 사용자 정의 폴더(권장) 또는 `global`. 예를 들면 다음과 같습니다.
 
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/template-types`
 * `/conf/<my-folder>/settings/wcm/template-types`
@@ -360,18 +360,18 @@ When creating a new editable template, the value is copied from the template typ
 1. 에서 템플릿 삭제 `templates` 노드 아래의 [템플릿 폴더](#template-folders).
 1. 아래에 있는 템플릿 사본에서 `template-types` 노드, 모두 삭제 `cq:template` 및 `cq:templateType` 모든 속성 `jcr:content` 노드.
 
-GitHub에서 사용 가능한 편집 가능한 예제 템플릿을 기준으로 하여 자신만의 템플릿 유형을 개발할 수도 있습니다.
+GitHub에서 사용 가능한 편집 가능한 예제 템플릿을 기준으로 자체 템플릿 유형을 개발할 수도 있습니다.
 
 GITHUB의 코드
 
-GitHub에서 이 페이지의 코드를 확인할 수 있습니다
+이 페이지의 코드는 GitHub에서 확인할 수 있습니다
 
 * [GitHub에서 aem-sites-example-custom-template-type 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type)
 * 다음으로 프로젝트 다운로드 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type/archive/master.zip)
 
 ## 템플릿 정의 {#template-definitions}
 
-편집 가능한 템플릿에 대한 정의가 저장됩니다 [사용자 정의 폴더](#template-folders) (권장) 또는 `global`. 예:
+편집 가능한 템플릿에 대한 정의가 저장됩니다 [사용자 정의 폴더](#template-folders) (권장) 또는 `global`. 예를 들면 다음과 같습니다.
 
 * `/conf/<my-folder>/settings/wcm/templates`
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/templates`
@@ -425,7 +425,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * **이름**: `jcr:title`
 * **이름**: `status`
-   * &quot;**유형**: `String`
+   * ``**유형**: `String`
    * **값**: `draft`, `enabled` 또는 `disabled`
 
 ### 구조 {#structure}
@@ -541,7 +541,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
       * 페이지 구성 요소를 사용하면 작성자는 편집 가능 (및 모든 하위 항목)으로 플래그가 지정된 템플릿 구조의 노드만 편집할 수 있습니다.
       * 페이지에서 구성 요소를 렌더링할 때 해당 구성 요소의 상대 경로는 `jcr:content` 노드, 아래에 있는 동일한 경로 `policies/jcr:content` 그러면 템플릿의 노드가 검색됩니다.
          * 다음 `cq:policy` 이 노드의 속성은 실제 콘텐츠 정책을 가리킵니다(즉, 구성 요소에 대한 디자인 구성을 보유함).
-            * 이렇게 하면 동일한 콘텐츠 정책 구성을 다시 사용하는 여러 템플릿을 가질 수 있습니다.
+            * 이렇게 하면 동일한 콘텐츠 정책 구성을 다시 사용하는 여러 템플릿을 사용할 수 있습니다.
 
 ### 템플릿 가용성 {#template-availability}
 

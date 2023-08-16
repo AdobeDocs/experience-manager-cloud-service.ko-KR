@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '455'
 ht-degree: 15%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 15%
    >
    >텍스트 필드가 비어 있으면 기존 메타데이터 세트가 없습니다. 필드에 값을 입력하고 저장하여 해당 메타데이터 속성을 추가할 수 있습니다.
 
-에셋의 메타데이터에 대한 모든 변경 사항은 XMP 데이터의 일부로 원래 바이너리에 다시 기록됩니다. 이 작업은 Experience Manager 메타데이터 쓰기 되돌림 워크플로우를 통해 수행됩니다. 기존 속성에 대한 변경 사항(예: `dc:title`)은 덮어쓰기되며 새로 생성된 속성(과 같은 사용자 지정 속성 포함)입니다 `cq:tags`)가 스키마와 함께 추가됩니다.
+에셋의 메타데이터에 대한 모든 변경 사항은 XMP 데이터의 일부로 원래 바이너리에 다시 기록됩니다. 이 작업은 Experience Manager 메타데이터 쓰기 되돌림 워크플로우를 통해 수행됩니다. 기존 속성에 대한 변경 사항(예: `dc:title`)은 덮어쓰기되고 새로 생성된 속성(과 같은 사용자 지정 속성 포함)입니다 `cq:tags`)가 스키마와 함께 추가됩니다.
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 
@@ -56,14 +56,14 @@ Experience Manager 내에 고유한 네임스페이스를 추가할 수 있습�
 
 **추가 참조**
 
-* [에셋 번역](translate-assets.md)
+* [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [에셋이 지원되는 파일 형식](file-format-support.md)
-* [에셋 검색](search-assets.md)
-* [연결된 에셋](use-assets-across-connected-assets-instances.md)
-* [에셋 보고서](asset-reports.md)
+* [자산이 지원되는 파일 형식](file-format-support.md)
+* [자산 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [자산 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
-* [에셋 다운로드](download-assets-from-aem.md)
+* [자산 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)

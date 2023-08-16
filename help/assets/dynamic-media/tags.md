@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '6665'
+source-wordcount: '6663'
 ht-degree: 7%
 
 ---
@@ -92,7 +92,7 @@ Dynamic Media 뷰어를 추적하려면 다음 유형을 사용할 수 있습니
 
 작업 섹션에서 다음을 수행해야 합니다 *변수 설정* 작업. 이 작업은 Adobe Analytics에 추적 변수를 데이터로 채우는 방법을 알려 줍니다. 동시에 *변수 설정* 작업이 추적 서버로 아무 것도 보내지 않습니다.
 
-다음 *변수 설정* 작업 뒤에 다음 문자가 와야 합니다. *비콘 보내기* 작업. 다음 *비콘 보내기* 실제로 작업은 analytics 추적 서버로 데이터를 전송합니다. 두 작업 모두, *변수 설정* 및 *비콘 보내기*: Adobe Analytics 확장에서 가져옵니다.
+다음 *변수 설정* 작업 뒤에 다음 문자가 와야 합니다. *비콘 보내기* 작업. 다음 *비콘 보내기* 작업이 실제로 analytics 추적 서버로 데이터를 전송합니다. 두 작업 모두, *변수 설정* 및 *비콘 보내기*: Adobe Analytics 확장에서 가져옵니다.
 
 다음을 참조하십시오 [규칙](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html) ( Experience Platform 태그 사용 안내서)를 참조하십시오.
 
@@ -555,7 +555,7 @@ On the Install Extension page, enter the Report Suite ID in the **[!UICONTROL De
 
 다음을 참조하십시오 [Adobe Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html).
 
-* (선택 사항. 비디오 추적이 필요한 경우에만 필요함) *오디오 및 비디오용 Adobe Medium 분석* 확장
+* (옵션. 비디오 추적이 필요한 경우에만 필요함) *오디오 및 비디오용 Adobe Medium 분석* 확장
 
 추적 서버 필드를 입력합니다. 에 대한 추적 서버 *오디오 및 비디오용 Adobe Medium 분석* 확장 프로그램이 Adobe Analytics에 사용되는 추적 서버와 다릅니다. 템플릿을 따릅니다 `<trackingNamespace>.hb.omtrdc.net`, 여기서 `<trackingNamespace>` 은 프로비저닝 이메일의 정보입니다.
 
@@ -785,7 +785,7 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
 
 ## 통합을 위한 Experience Platform 태그 클라우드 구성 {#configuring-adobe-launch-cloud-for-the-integration}
 
-1. Experience Manager 작성자의 왼쪽 상단 모서리 근처에서 도구 아이콘(hammer)을 선택한 다음 로 이동합니다. **[!UICONTROL Cloud Services]** > **[!UICONTROL Experience Platform 태그 구성]**.
+1. Experience Manager 작성자의 왼쪽 상단 모서리 근처에서 도구 아이콘(hammer)을 선택한 다음 로 이동합니다. **[!UICONTROL Cloud Service]** > **[!UICONTROL Experience Platform 태그 구성]**.
 
    ![2019-07-26_12-10-38](assets/2019-07-26_12-10-38.png)
 

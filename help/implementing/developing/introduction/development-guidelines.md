@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service 개발에 대한 지침과 AMS의 AEM On-Premise 및 AEM과 다른 중요한 방식에 대해 알아봅니다.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f69b348b7de6c6537a9945793e3397bf4fe30f98
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2655'
+source-wordcount: '2653'
 ht-degree: 4%
 
 ---
@@ -135,7 +135,7 @@ AEM as a Cloud Service은 타사 고객 코드에 대한 Touch UI만 지원합�
 
 디버그 로그 수준에서 로그를 필요 이상으로 오래 두면 많은 항목이 생성됩니다.
 
-항상 다음 위치에 기록하는 것이 바람직한 경우 실행 모드 기반 OSGi 구성 타겟팅을 사용하여 다양한 AEM 환경에 대해 개별 로그 수준을 설정할 수 있습니다. `DEBUG` 개발 중. 예:
+항상 다음 위치에 기록하는 것이 바람직한 경우 실행 모드 기반 OSGi 구성 타겟팅을 사용하여 다양한 AEM 환경에 대해 개별 로그 수준을 설정할 수 있습니다. `DEBUG` 개발 중. 예를 들면 다음과 같습니다.
 
 | 환경 | 실행 모드별 OSGi 구성 위치 | `org.apache.sling.commons.log.level` 속성 값 |
 | - | - | - |
@@ -143,7 +143,7 @@ AEM as a Cloud Service은 타사 고객 코드에 대한 Touch UI만 지원합�
 | 스테이지 | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | 경고 |
 | 프로덕션 | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | 오류 |
 
-디버그 파일의 행은 일반적으로 DEBUG로 시작한 다음 로그 수준, 설치 관리자 작업 및 로그 메시지를 제공합니다. 예:
+디버그 파일의 행은 일반적으로 DEBUG로 시작한 다음 로그 수준, 설치 관리자 작업 및 로그 메시지를 제공합니다. 예를 들면 다음과 같습니다.
 
 ```text
 DEBUG 3 WebApp Panel: WebApp successfully deployed
@@ -205,7 +205,7 @@ AEM as a Cloud Service 개발자 환경을 디버깅하기 위한 도구 세트�
 
 ### 성능 모니터링 {#performance-monitoring}
 
-Adobe은 애플리케이션 성능을 모니터링하고 성능 저하가 관찰되는 경우 문제를 해결하기 위한 조치를 취합니다. 현재 애플리케이션 지표는 관찰할 수 없습니다.
+Adobe은 애플리케이션 성능을 모니터링하고 성능 저하가 관찰되는 경우 문제를 해결하기 위한 조치를 취합니다. 이때 응용 프로그램 지표는 무시할 수 없습니다.
 
 ## 이메일 전송 중 {#sending-email}
 

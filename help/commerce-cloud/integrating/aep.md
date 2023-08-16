@@ -11,9 +11,9 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2076'
 ht-degree: 1%
 
 ---
@@ -443,12 +443,12 @@ Experience Platform에서 데이터 스트림을 생성하려면 다음 단계�
 1. 에서 원하는 제품 카드를 클릭합니다. __제품 페이지__&#x200B;을 선택한 다음 을 선택합니다. __색상, 크기__ 을(를) 활성화하려면 __장바구니에 추가__ 단추를 클릭합니다.
 
 
-1. 를 엽니다. __Adobe Experience Platform 디버거__ 브라우저의 확장 패널에서 확장을 선택한 다음 __Experience Platform Wed SDK__ 왼쪽 레일에서.
+1. 를 엽니다. __Adobe Experience Platform Debugger__ 브라우저의 확장 패널에서 확장을 선택한 다음 __Experience Platform Wed SDK__ 왼쪽 레일에서.
 
    ![AEP 디버거](../assets/aep-integration/AEP-Debugger.png)
 
 
-1. (으)로 돌아가기 __제품 페이지__ 및 클릭 __장바구니에 추가__ 단추를 클릭합니다. 이렇게 하면 데이터가 Experience Platform으로 전송됩니다. 다음 __Adobe Experience Platform 디버거__ 확장은 이벤트 세부 사항을 표시합니다.
+1. (으)로 돌아가기 __제품 페이지__ 및 클릭 __장바구니에 추가__ 단추를 클릭합니다. 이렇게 하면 데이터가 Experience Platform으로 전송됩니다. 다음 __Adobe Experience Platform Debugger__ 확장은 이벤트 세부 사항을 표시합니다.
 
    ![AEP 디버거 장바구니에 추가 이벤트 데이터](../assets/aep-integration/AEP-Debugger-AddToCart-EventData.png)
 

@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1400'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '1399'
+ht-degree: 98%
 
 ---
 
@@ -93,7 +93,7 @@ Sites 콘솔에 액세스하려면 다음 작업을 수행하십시오.
 
 ### 페이지 편집기 {#page-editor}
 
-Sites 콘솔을 사용하여 콘텐츠를 탐색하고 해당 콘텐츠 구조의 개요를 살펴볼 수 있습니다. 개별 페이지의 세부 정보를 보려면 사이트 편집기를 사용해야 합니다.
+사이트 콘솔을 사용하여 콘텐츠를 탐색하고 해당 콘텐츠 구조의 개요를 살펴볼 수 있습니다. 개별 페이지의 세부 정보를 보려면 사이트 편집기를 사용해야 합니다.
 
 페이지를 편집하려면 다음 작업을 수행하십시오.
 

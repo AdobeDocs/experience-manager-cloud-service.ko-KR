@@ -5,22 +5,22 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3174'
-ht-degree: 1%
+source-wordcount: '3173'
+ht-degree: 3%
 
 ---
 
 
 # 사용 [!DNL Adobe Sign] 적응형 양식 {#using-adobe-sign-in-an-adaptive-form}
 
-<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 
@@ -83,7 +83,7 @@ Sign이 활성화된 적응형 양식을 만들려면 다음 작업을 수행하
 
    1. 다음 항목 선택 [구성 컨테이너](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) 생성 시간 [통합 [!DNL Adobe Sign] 포함 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 
-   구성 컨테이너에는 [!DNL Adobe Sign] 환경에 맞게 구성된 Cloud Services. 이러한 서비스는 적응형 양식 편집기에서 선택할 수 있습니다.
+   구성 컨테이너에는 [!DNL Adobe Sign] 환경에 맞게 구성된 Cloud Service. 이러한 서비스는 적응형 양식 편집기에서 선택할 수 있습니다.
 
 1. 다음에서 **[!UICONTROL 양식 모델]** 탭에서 다음 옵션 중 하나를 선택합니다.
 
@@ -91,7 +91,7 @@ Sign이 활성화된 적응형 양식을 만들려면 다음 작업을 수행하
 
    * 사용자 정의 양식 템플릿이 없는 경우 **[!UICONTROL 기록 문서 생성]** 옵션을 선택합니다. 옵션을 사용하면 서명을 위해 전송된 문서에 적응형 양식의 모든 필드가 표시됩니다.
 
-1. 누르기 **[!UICONTROL 만들기.]** 서명이 활성화된 적응형 양식이 만들어집니다. 다음을 추가할 수 있습니다. [!DNL Adobe Sign] 필드를 양식으로 보내고 서명을 위해 보냅니다.
+1. **[!UICONTROL 만들기를 탭합니다.]** 서명이 활성화된 적응형 양식이 만들어집니다. 다음을 추가할 수 있습니다. [!DNL Adobe Sign] 필드를 양식으로 보내고 서명을 위해 보냅니다.
 
 #### 사용 [!DNL Adobe Sign] 적응형 양식용 {#editafsign}
 
@@ -164,11 +164,11 @@ Sign이 활성화된 적응형 양식을 만들려면 다음 작업을 수행하
 
 1. 콘텐츠 브라우저에서 을 누릅니다. **[!UICONTROL 양식 컨테이너]**&#x200B;을 누르고 **[!UICONTROL 구성]** ![구성](assets/Smock_Wrench_18_N.svg) 아이콘. 속성 브라우저를 열고 적응형 양식 컨테이너 속성을 표시합니다.
 1. 속성 브라우저에서 **[!UICONTROL 전자 서명]** 아코디언을 선택하고 **[!UICONTROL Adobe Sign 활성화]** 옵션을 선택합니다. 다음을 가능하게 합니다. [!DNL Adobe Sign] 적응형 양식용.
-1. 이미 구성된 목록에서 Cloud Service 선택 [!DNL Adobe Sign] Cloud Services.
+1. 이미 구성된 목록에서 Cloud Service 선택 [!DNL Adobe Sign] Cloud Service.
 
    다음과 같은 경우 **[!UICONTROL Adobe Sign Cloud Service]** 목록이 비어 있습니다. [구성 [!DNL Adobe Sign] 포함 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) 서비스를 구성하는 데 필요한 문서입니다.
 
-   드롭다운에 있는 Cloud Services 목록이 `global` 도구 > 의 폴더 **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. 또한 드롭다운에는 에서 선택한 폴더에 있는 Cloud Services 목록도 있습니다. **[!UICONTROL 구성 컨테이너]** 적응형 양식을 만들 때 필드.
+   드롭다운에 있는 Cloud Service 목록이 `global` 도구 > 의 폴더 **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. 또한 드롭다운에는 에서 선택한 폴더에 있는 Cloud Service 목록도 있습니다. **[!UICONTROL 구성 컨테이너]** 적응형 양식을 만들 때 필드.
 
 1. 에서 서명 순서 선택 **[!UICONTROL 수신자가 완료할 수 있음]** 대화 상자. 수신자는 적응형 양식에 서명할 수 있습니다 **[!UICONTROL 순차적으로]** - 차례로 받는 사람 또는 **[!UICONTROL 동시에]** - 모든 순서.
 
@@ -201,7 +201,7 @@ Adobe Sign 계약에 대해 한 명 또는 여러 명의 수신자가 있을 수
 
      >[!NOTE]
      >
-     >첫 번째 수신자 또는 유일한 수신자(단일 수신자가 있는 경우)의 이메일 주소가 와 동일하지 않은지 확인합니다. [!DNL Adobe Sign] aem 클라우드 서비스 구성에 사용되는 계정입니다.
+     >첫 번째 수신자 또는 유일한 수신자(단일 수신자가 있는 경우)의 이메일 주소가 와 동일하지 않은지 확인합니다. [!DNL Adobe Sign] AEM Cloud Service 구성에 사용되는 계정입니다.
 
    * **[!UICONTROL 수신자 인증 방법]:** Adobe Sign 계약을 열기 전에 수신자를 인증하는 방법을 지정하십시오. 전화, 기술 자료, 소셜 ID 기반 인증 및 [정부 ID](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html) 대상 [!DNL Adobe Acrobat Sign]. 대상 [!DNL Adobe Acrobat Sign for Government] 전화와 지식 기반 인증 중에서 선택할 수 있습니다.
 
@@ -322,7 +322,7 @@ Adobe Sign 계약 ID(agreementId)는 적응형 양식의 제출 데이터에 포
 
      >[!NOTE]
      >
-     > 디지털 서명은 다음 대상에도 적용됩니다. [!DNL Adobe Acrobat Sign for Government] 그러나 클라우드 서명을 사용하여 적용할 수 없습니다.
+     > 디지털 서명은 다음 대상에도 적용됩니다. [!DNL Adobe Acrobat Sign for Government] 그러나 Cloud Signatures를 사용하여 적용할 수는 없습니다.
 
    클라우드 서명 필드를 적응형 양식에 추가한 후 다음 단계를 수행하여 구성 프로세스를 완료합니다.
 
@@ -357,9 +357,9 @@ Adobe Sign 계약 ID(agreementId)는 적응형 양식의 제출 데이터에 포
 
 * 다음 확인: [Adobe Sign Cloud Service 구성](adobe-sign-integration-adaptive-forms.md) 적응형 양식에 사용됩니다.
 * 의 API 애플리케이션 확인 [!DNL Adobe Sign] 를 구성하는 데 사용되는 서버 [!DNL Adobe Sign] Cloud Service에게 필요한 권한이 있습니다.
-* 여러 개를 사용하는 경우 [!DNL Adobe Sign] Cloud Services, 다음을 가리키기 **[!UICONTROL oAuth URL]** 모든 서비스를 동일하게 유지 **[!UICONTROL Adobe Sign 샤드]**.
+* 여러 개를 사용하는 경우 [!DNL Adobe Sign] Cloud Service, 다음을 가리키기 **[!UICONTROL oAuth URL]** 모든 서비스를 동일하게 유지 **[!UICONTROL Adobe Sign 샤드]**.
 
-* 별도의 이메일 주소를 사용하여 구성 [!DNL Adobe Sign] 첫 번째 또는 단일 수신자에 대한 및 계정입니다. 첫 번째 수신자 또는 유일한 수신자(단일 수신자가 있는 경우)의 이메일 주소는 다음과 같을 수 없습니다. [!DNL Adobe Sign] aem 클라우드 서비스 구성에 사용되는 계정입니다.
+* 별도의 이메일 주소를 사용하여 구성 [!DNL Adobe Sign] 첫 번째 또는 단일 수신자에 대한 및 계정입니다. 첫 번째 수신자 또는 유일한 수신자(단일 수신자가 있는 경우)의 이메일 주소는 다음과 같을 수 없습니다. [!DNL Adobe Sign] AEM Cloud Service 구성에 사용되는 계정입니다.
 
 ## 관련 문서 {#related-articles}
 

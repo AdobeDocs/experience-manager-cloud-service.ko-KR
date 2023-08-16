@@ -2,16 +2,16 @@
 title: 사용자 정의 도메인 이름 관리
 description: Cloud Manager를 사용하여 사용자 정의 도메인 이름을 보고, 업데이트하고, 바꾸고, 삭제하는 방법을 알아봅니다.
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 100%
+source-wordcount: '336'
+ht-degree: 96%
 
 ---
 
 # 사용자 정의 도메인 이름 관리 {#managing-custom-domain-names}
 
-Cloud Manager를 사용하여 사용자 정의 도메인 이름을 보고, 업데이트하고, 바꾸고, 삭제할 수 있습니다.
+Cloud Manager를 사용하면 사용자 정의 도메인 이름을 보고, 업데이트하고, 바꾸고, 삭제할 수 있습니다.
 
 ## 보기 및 업데이트 {#view-and-update}
 

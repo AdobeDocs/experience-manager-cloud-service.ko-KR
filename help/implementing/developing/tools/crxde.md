@@ -2,9 +2,9 @@
 title: CRXDE Lite 사용
 description: CRXDE Lite은 AEM 빠른 시작의 일부이며 브라우저 내에서 로컬 개발 환경의 저장소에 액세스하고 수정할 수 있습니다.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1688'
+source-wordcount: '1685'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ CRXDE Lite의 사용자 인터페이스는 많은 부분을 가지고 있고 많
 
 ### 상단 전환기 막대 {#top-switcher-bar}
 
-상단 전환기 표시줄을 사용하면 CRXDE Lite과 간 빠르게 전환할 수 있습니다. [패키지 관리자.](package-manager.md)
+상단 전환기 막대 를 사용하면 CRXDE Lite과 간 빠르게 전환할 수 있습니다. [패키지 관리자.](package-manager.md)
 
 ### 노드 경로 위젯 {#node-path-widget}
 
@@ -192,7 +192,7 @@ CRXDE Lite으로 노드를 만들려면 다음 작업을 수행하십시오.
 >
 대부분의 편집 작업 **노드 만들기**&#x200B;는 모든 변경 사항을 메모리에 유지하며 저장 시 저장소에만 저장합니다( 사용). [**모두 저장 단추**](#save-all-button)). 그러나 이동과 같은 일부 작업은 자동으로 지속됩니다.
 >
-새로 생성된 노드가 상위 노드의 노드 유형에 의해 허용되는지 여부와 관련된 검증은 변경 사항을 저장할 때 저장소에서도 수행됩니다. 노드를 저장하는 동안 오류 메시지가 표시되면 콘텐츠 구조가 유효한지 확인합니다(예: `nt:unstructured` 다음 중 1차 하위 구성요소로서의 노드 `nt:folder` node).
+새로 생성된 노드가 상위 노드의 노드 유형에 의해 허용되는지 여부에 대한 검증은 변경 사항을 저장할 때 저장소에서도 수행됩니다. 노드를 저장하는 동안 오류 메시지가 표시되면 콘텐츠 구조가 유효한지 확인합니다(예: `nt:unstructured` 다음 중 1차 하위 구성요소로서의 노드 `nt:folder` node).
 
 ## 속성 만들기 {#creating-a-property}
 

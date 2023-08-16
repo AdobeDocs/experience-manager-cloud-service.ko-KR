@@ -6,10 +6,10 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2135'
-ht-degree: 5%
+source-wordcount: '2131'
+ht-degree: 6%
 
 ---
 
@@ -19,7 +19,7 @@ AEM Sites 페이지에 적응형 Forms을 원활하게 작성하거나 임베드
 
 다음 방법 중 하나를 선택하여 적응형 양식을 만들거나 AEM Sites 페이지에 추가할 수 있습니다.
 
-* **적응형 Forms 컨테이너 구성 요소를 사용하여 적응형 양식 만들기**: [적응형 양식 컨테이너](#af-container-component) 구성 요소를 사용하면 AEM Sites 편집기 내에서 직접 적응형 Forms 구성 요소를 활용하여 디지털 등록 경험을 구축할 수 있습니다. 이 통합은 AEM Sites 페이지 내에서 양식을 만들고 관리하려는 AEM Sites 작성자에게 원활한 경험을 제공합니다.
+* **적응형 Forms 컨테이너 구성 요소를 사용하여 적응형 양식 만들기**: [적응형 양식 컨테이너](#af-container-component) 구성 요소를 사용하여 AEM Sites 편집기 내에서 직접 적응형 Forms 구성 요소를 활용하여 디지털 등록 경험을 구축할 수 있습니다. 이 통합은 AEM Sites 페이지 내에서 양식을 만들고 관리하려는 AEM Sites 작성자에게 원활한 경험을 제공합니다.
 
 * **기존 적응형 양식 추가**: [적응형 Forms - 포함(v2)](#embed-existing-af) 구성 요소를 사용하여 AEM Sites 내의 페이지에 기존 적응형 양식을 쉽게 추가할 수 있습니다. 이 기능은 적응형 Forms의 적응성과 재사용성을 향상시킵니다. 이 통합은 고객이 이미 만든 적응형 Forms을 재사용할 수 있는 편리한 방법을 제공합니다.
 
@@ -125,10 +125,10 @@ AEM Sites 페이지에서 적응형 Forms 구성 요소를 사용하려면 AEM A
       * **리디렉션 URL/경로**: 제출 후 적응형 양식이 리디렉션되는 URL 또는 경로를 지정합니다.
 
       * **제출 액션**: 사용자가 적응형 양식에서 제출 단추를 클릭하면 제출 액션이 트리거됩니다. 다음을 수행할 수 있습니다. [적응형 양식에서 제출 액션 구성](/help/forms/configuring-submit-actions.md). 적응형 양식은 즉시 다음과 같은 제출 액션을 제공합니다.
-         * REST 끝점에 제출
+         * REST 엔드포인트에 제출
          * 이메일 보내기
          * 양식 데이터 모델을 사용하여 제출
-         * AEM 워크플로우 호출
+         * AEM Workflow 호출
          * SharePoint에 제출
          * OneDrive에 제출
          * Azure Blob 스토리지에 제출
@@ -140,7 +140,7 @@ AEM Sites 페이지에서 적응형 Forms 구성 요소를 사용하려면 AEM A
 
 ## 적응형 양식 포함  {#aem-container-component}
 
-사용 **[!UICONTROL 적응형 Forms - 포함(V2)]** 구성 요소를 통해 사이트의 페이지에 새 적응형 양식을 임베드하거나 기존 적응형 양식을 임베드할 수 있습니다. 다음 [!UICONTROL 적응형 Forms - 포함(v2)] 구성 요소를 사용하여 다음을 수행할 수 있습니다.
+사용 **[!UICONTROL 적응형 Forms - 포함(V2)]** 구성 요소를 통해 사이트의 페이지에 새 적응형 양식을 임베드하거나 기존 적응형 양식을 임베드할 수 있습니다. 다음 [!UICONTROL 적응형 Forms - 포함(v2)] 구성 요소를 사용하여 다음 작업을 수행할 수 있습니다.
 
 * [기존 적응형 양식 추가](#embed-new-af)
 

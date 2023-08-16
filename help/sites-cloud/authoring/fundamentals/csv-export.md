@@ -2,10 +2,10 @@
 title: CSV로 내보내기
 description: 로컬 시스템에서 페이지에 대한 정보를 CSV 파일로 내보내기
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 100%
+source-wordcount: '197'
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 >
 >브라우저의 다운로드 기능 및 기본 대상이 사용됩니다.
 
-**CSV 내보내기 만들기** 마법사를 사용하여 다음을 선택할 수 있습니다.
+다음 **CSV 내보내기 만들기** 마법사를 사용하여 다음을 선택할 수 있습니다.
 
 * 내보낼 속성
    * 메타데이터

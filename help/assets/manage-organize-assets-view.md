@@ -4,10 +4,10 @@ description: ' [!DNL Assets view]에서 에셋을 이동하고, 삭제하고, �
 role: User,Leader
 contentOwner: AG
 exl-id: b01e98b9-0cc2-47c5-9f5b-79b8e6bef39f
-source-git-commit: d198b3f0c7d8469a376ba7a3e95e57c84f835dbb
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 92%
+source-wordcount: '1034'
+ht-degree: 93%
 
 ---
 
@@ -111,7 +111,7 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 ### 에셋 만료 날짜 설정 {#set-asset-expiration-date}
 
-에셋 보기를 사용하면 저장소에서 사용 가능한 에셋의 만료 날짜를 설정할 수도 있습니다. 그런 다음 `Expired` 에셋 상태를 기반으로 [검색 결과를 필터링](search-assets-view.md#refine-search-results)할 수 있습니다. 또한 에셋의 만료 날짜 범위를 지정하여 검색 결과를 추가로 필터링할 수 있습니다.
+또한 에셋 보기를 사용하여 저장소에서 사용할 수 있는 에셋의 만료 날짜를 설정할 수도 있습니다. 그런 다음 `Expired` 에셋 상태를 기반으로 [검색 결과를 필터링](search-assets-view.md#refine-search-results)할 수 있습니다. 또한 에셋의 만료 날짜 범위를 지정하여 검색 결과를 추가로 필터링할 수 있습니다.
 
 에셋 만료 날짜를 설정하려면 다음 작업을 수행하십시오.
 
@@ -143,7 +143,7 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 * [에셋 보기의 에셋 관리에 대한 비디오 보기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html)
 
-* 다음을 사용하여 제품 피드백 제공 [!UICONTROL 피드백] 자산 보기 사용자 인터페이스에서 사용할 수 있는 옵션
+* Assets 보기 사용자 인터페이스에서 사용 가능한 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백 제공
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백 제공
 

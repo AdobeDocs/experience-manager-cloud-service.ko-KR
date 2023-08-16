@@ -2,10 +2,10 @@
 title: AEM 게재 API를 통해 콘텐츠에 액세스하는 방법
 description: 이 AEM Headless 개발자 여정의 부분에서는 GraphQL 쿼리를 통해 콘텐츠 조각의 콘텐츠에 액세스하는 방법을 대해 알아봅니다.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1360'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '1358'
+ht-degree: 99%
 
 ---
 
@@ -49,7 +49,7 @@ GraphQL은 다음 사항을 제공하는 오픈 소스 사양입니다.
 * 구조화된 오브젝트에서 특정 콘텐츠를 선택할 수 있는 쿼리 언어.
 * 구조화된 콘텐츠로 해당 쿼리를 수행하는 런타임.
 
-GraphQL은 *강력한* 형식의 API입니다. 즉, GraphQL이 액세스하는 대상 및 방법을 *이해*&#x200B;할 수 있도록 *모든* 데이터를 유형별로 명확하게 구조화하고 구성해야 합니다. 콘텐츠 오브젝트의 구조를 정의하는 GraphQL 스키마 내에서 데이터 필드를 정의합니다.
+GraphQL은 강력한 형식의 API입니다. 즉, GraphQL이 액세스하는 대상 및 방법을 *이해*&#x200B;할 수 있도록 *모든* 데이터를 유형별로 명확하게 구조화하고 구성해야 합니다. 콘텐츠 오브젝트의 구조를 정의하는 GraphQL 스키마 내에서 데이터 필드를 정의합니다.
 
 그런 다음 GraphQL 엔드포인트는 GraphQL 쿼리에 응답하는 경로를 제공합니다.
 
@@ -133,7 +133,7 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
 
 * 콘텐츠 조각 모델을 정의할 때 사용 가능한 특정 데이터 유형입니다.
 * 특정 콘텐츠 조각 모델에 따라 다른 조각을 참조합니다.
-* 구조화된 데이터를 만든 다음 검색할 수 있습니다.
+* 구조화된 데이터를 만들고 검색할 수 있습니다.
 
    * **다중 피드**&#x200B;로 정의된 경우 주요 조각에서 여러 하위 조각을 참조(검색)할 수 있습니다.
 
@@ -146,7 +146,7 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
 <!--
 ## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}
 
-GraphQL is a strongly typed API, which means that content must be clearly structured and organized by type. The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating content on a certain instance. To do this, a client needs to fetch the Schema, which contains all the types necessary for a query. 
+GraphQL is a strongly-typed API, which means that content must be clearly structured and organized by type. The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating content on a certain instance. To do this, a client needs to fetch the Schema, which contains all the types necessary for a query. 
 
 For Content Fragments, the GraphQL schemas (structure and types) are based on **Enabled** Content Fragment Models and their data types.
 

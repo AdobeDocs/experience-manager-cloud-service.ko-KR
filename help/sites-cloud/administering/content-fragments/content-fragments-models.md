@@ -4,10 +4,10 @@ description: 콘텐츠 조각 모델이 AEM에서 콘텐츠 조각의 기반 역
 feature: Content Fragments
 role: User
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '2919'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '2916'
+ht-degree: 98%
 
 ---
 
@@ -222,6 +222,7 @@ AEM의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/sites-cloud/administe
 * **[조각 참조](#fragment-reference-nested-fragments)**(중첩된 조각)
    * 지정된 특정 모델에 따라 다른 조각을 참조합니다.
    * 구조화된 데이터를 포함/검색할 수 있습니다.
+
      >[!NOTE]
      >
      >이 방법은 특히 [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠를 게재](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)할 때 함께 사용할 수 있습니다.
@@ -239,7 +240,7 @@ AEM의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/sites-cloud/administe
 
 ### 콘텐츠 참조 {#content-reference}
 
-콘텐츠 참조를 사용하면 다른 소스의 콘텐츠를 렌더링할 수 있습니다(예: 이미지 또는 콘텐츠 조각).
+컨텐츠 참조를 사용하면 다른 소스의 컨텐츠를 렌더링할 수 있습니다(예: 이미지 또는 컨텐츠 조각).
 
 표준 속성 외에 다음을 지정할 수 있습니다.
 

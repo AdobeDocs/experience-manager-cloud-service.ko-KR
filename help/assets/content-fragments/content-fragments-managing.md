@@ -2,9 +2,9 @@
 title: 컨텐츠 조각 관리 (에셋 - 콘텐츠 조각)
 description: Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1770'
+source-wordcount: '1768'
 ht-degree: 80%
 
 ---
@@ -105,11 +105,11 @@ Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐�
 * **체크아웃**
 * **속성**
 
-   * 조각의 메타데이터를 보거나 편집할 수 있습니다.
+   * 조각의 메타데이터를 보거나 편집하거나 두 가지 모두를 수행할 수 있습니다.
 
 * **편집**
 
-   * 요소, 변형, 관련 컨텐츠 및 메타데이터와 함께 [컨텐츠를 편집할 조각을 열](/help/assets/content-fragments/content-fragments-variations.md) 수 있습니다.
+   * 다음 작업을 수행할 수 있습니다. [콘텐츠 편집을 위해 조각 열기](/help/assets/content-fragments/content-fragments-variations.md) 요소, 변형, 관련 컨텐츠 및 메타데이터와 함께
 
 * **빠른 게시**
 * **게시 관리**
@@ -231,7 +231,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 * **닫기**
 
-  마지막 변경 내용(즉, 마지막 이후 변경 내용)을 저장하지 않고 편집기를 종료합니다. **저장**).
+  마지막 변경 내용(마지막 **저장** 이후에 적용된 변경 내용)을 저장하지 않고 편집기를 종료합니다.
 
 콘텐츠 조각을 편집하는 동안 AEM은 자동으로 버전을 만들어 변경 내용을 취소한 경우(저장하지 않고 **닫기** 사용) 이전 콘텐츠를 복원할 수 있도록 합니다.
 
@@ -262,7 +262,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## 조각과 콘텐츠 연결 {#associating-content-with-your-fragment}
 
-조각과 [콘텐츠를 연결](/help/assets/content-fragments/content-fragments-assoc-content.md)할 수도 있습니다. 이렇게 하면 조각이 컨텐츠 페이지에 추가될 때 자산(즉, 이미지)을 조각과 함께 필요에 따라 사용할 수 있도록 연결을 제공합니다.
+조각과 [콘텐츠를 연결](/help/assets/content-fragments/content-fragments-assoc-content.md)할 수도 있습니다. 이렇게 하면 조각이 콘텐츠 페이지에 추가될 때 자산(예: 이미지)을 조각과 함께 필요에 따라 사용할 수 있도록 연결을 제공합니다.
 
 ## 조각의 메타데이터(속성) 보기 및 편집 {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
@@ -323,7 +323,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
    * 삽입된 텍스트 - 녹색
    * 대체된 텍스트 - 파란색
 
-* 전체 화면 아이콘을 사용하면 두 버전 중 하나를 자체적으로 열 수 있습니다. 그런 다음 병렬 보기로 다시 전환할 수 있습니다.
+* 전체 화면 아이콘을 사용하면 두 버전 중 하나를 자체적으로 열 수 있습니다. 그런 다음 병렬 보기로 다시 전환할 수 있습니다
 * 특정 버전으로 **되돌릴** 수 있습니다.
 * **완료**&#x200B;를 선택하면 콘솔로 돌아갑니다.
 

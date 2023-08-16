@@ -2,10 +2,10 @@
 title: 경험 조각
 description: Adobe Experience Manager as a Cloud Service 경험 조각을 사용하여 경험을 재사용이 가능하고 및 유연하게 만듭니다.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2046'
-ht-degree: 100%
+source-wordcount: '2044'
+ht-degree: 99%
 
 ---
 
@@ -232,7 +232,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
    ![경험 조각 변형 만들기](/help/sites-cloud/authoring/assets/xf-06.png)
 
-1. **만들기**&#x200B;를 사용하여 다음을 생성할 수 있습니다.
+1. **만들기** 다음을 만들 수 있습니다.
 
    * **변형**
    * **변형을 Live Copy로**.
@@ -360,11 +360,9 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
    >* 페이지에 대해 구성된 ContextHub에 정의된 저장소의 하위 집합을 포함하는 경로
    >
    > 
-
 **개인화** 탭에서 선택한 **세그먼트 경로**&#x200B;는 다음 중 하나여야 합니다.
    >
-   >* 조각이 렌더링될 페이지에 대해 구성된 것과 동일한 경로
-
+   * 조각이 렌더링될 페이지에 대해 구성된 것과 동일한 경로
 또는
    * 페이지에 대해 구성된 세그먼트의 하위 집합을 포함하는 경로
 
@@ -393,9 +391,9 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
    >[!CAUTION]
    >
-   >이러한 탭은 경험 조각 콘솔에서 **속성**&#x200B;을 열면 표시됩니다.
+   이러한 탭은 경험 조각 콘솔에서 **속성**&#x200B;을 열면 표시됩니다.
    >
-   >경험 조각을 편집할 때 **속성을 열면** 해당 [페이지 속성](/help/sites-cloud/authoring/fundamentals/page-properties.md)이 표시됩니다.
+   경험 조각을 편집할 때 **속성을 열면** 해당 [페이지 속성](/help/sites-cloud/authoring/fundamentals/page-properties.md)이 표시됩니다.
 
    ![경험 조각 속성](/help/sites-cloud/authoring/assets/xf-17.png)
 
@@ -425,7 +423,7 @@ URL에서 `.plain.` 선택기를 사용하여 브라우저에서 일반 HTML 렌
 
 >[!NOTE]
 >
->브라우저에서 직접 사용할 수 있지만 [기본 목적은 다른 애플리케이션(예: 서드파티 웹 앱, 사용자 정의 모바일 구현)이 URL만 사용하여 경험 조각의 콘텐츠에 직접 액세스할 수 있도록 하는 것입니다](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+브라우저에서 직접 사용할 수 있지만 [기본 목적은 다른 애플리케이션(예: 서드파티 웹 앱, 사용자 정의 모바일 구현)이 URL만 사용하여 경험 조각의 콘텐츠에 직접 액세스할 수 있도록 하는 것입니다](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## 경험 조각 게시 {#publishing-experience-fragments}
 

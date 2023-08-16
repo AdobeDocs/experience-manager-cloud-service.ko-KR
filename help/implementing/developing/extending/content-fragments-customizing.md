@@ -2,9 +2,9 @@
 title: 콘텐츠 조각 맞춤화 및 확장
 description: 컨텐츠 조각은 표준 자산을 확장합니다. 이를 맞춤화하는 방법에 대해 알아봅니다.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 964599b919a7299da33a5f0ac72ad5ea644097d8
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1817'
+source-wordcount: '1812'
 ht-degree: 2%
 
 ---
@@ -256,7 +256,7 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 
 * 추가 작업이 필요할 수 있는 작업:
 
-   * 에서 새 변형을 만드는 것이 좋습니다. `ContentFragment`. 이렇게 하면 모든 요소가 이 변형을 공유하고, 콘텐츠 구조에 새롭게 만들어진 변형을 반영하기 위해 필요에 따라 적절한 전역 데이터 구조가 업데이트됩니다.
+   * 에서 새 변형을 만드는 것이 좋습니다. `ContentFragment`. 이렇게 하면 모든 요소가 이 변형을 공유하고, 콘텐츠 구조에 새롭게 만든 변형을 반영하기 위해 필요한 경우 적절한 전역 데이터 구조가 업데이트됩니다.
 
    * 요소를 통해 기존 변형 제거, `ContentElement.removeVariation()`은 변형에 할당된 전역 데이터 구조를 업데이트하지 않습니다. 이러한 데이터 구조가 계속 동기화되도록 하려면 `ContentFragment.removeVariation()` 대신, 변형을 전체적으로 제거합니다.
 
@@ -297,7 +297,7 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 
 `com.adobe.cq.dam.cfm.ContentFragment`
 
-예:
+예를 들면 다음과 같습니다.
 
 ```java
 // first, get the resource
@@ -314,7 +314,7 @@ if (fragmentResource != null) {
 새 콘텐츠 조각을 프로그래밍 방식으로 만들려면
 `FragmentTemplate` 모델 리소스를 통해 조정됩니다.
 
-예:
+예를 들면 다음과 같습니다.
 
 ```java
 Resource modelRsc = resourceResolver.getResource("...");

@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: c15486fb3de73773fa7e255809ffaa36715cea05
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3529'
+source-wordcount: '3528'
 ht-degree: 8%
 
 ---
@@ -104,15 +104,15 @@ ht-degree: 8%
 | 이미지 형식 | 대소문자를 구분하지 않는 파일 확장명 | MIME 유형 | 지원되는 입력 색상 공간 | 지원되는 최대 입력 파일 크기 | 지원되는 이미지 형식 |
 | --- | --- | --- | --- | --- | --- |
 | BMP | `.bmp` | image/bmp | sRGB | 4GB | 예 |
-| CMYK |  |  |  |  | 예 |
-| EPS |  |  |  |  | 아니요 |
+| CMYK | | | | | 예 |
+| EPS | | | | | 아니요 |
 | GIF | `.gif` | image/gif | sRGB | 15GB | 예. 애니메이션 GIF의 첫 번째 프레임이 렌디션에 사용됩니다. 첫 번째 프레임은 구성하거나 변경할 수 없습니다. |
 | JPEG | `.jpg` 및 `.jpeg` | image/jpeg | sRGB | 15GB | 예 |
 | PNG | `.png` | image/png | sRGB | 15GB | 예 |
 | PSD | `.psd` | image/vnd.adobe.photoshop | sRGB<br>CMYK | 2GB | 예 |
-| SVG |  |  |  |  | 아니요 |
+| SVG | | | | | 아니요 |
 | TIFF | `.tif` 및 `.tiff` | image/tiff | sRGB<br>CMYK | 4GB | 예 |
-| WebP/Animated WebP |  |  |  |  | 아니요 |
+| WebP/Animated WebP | | | | | 아니요 |
 
 ## Dynamic Media 이미지 프로필 만들기 {#creating-image-profiles}
 
@@ -202,13 +202,13 @@ Folders that have a profile already assigned to it are indicated by the display 
 
    * 다음으로 이동 `https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` 적절한 프로필을 적용하고 선택 **[!UICONTROL 저장]**.
 
-      ![chlimage_1-257](assets/chlimage_1-257.png)
+     ![chlimage_1-257](assets/chlimage_1-257.png)
 
    * 다음 CRXDE Lite으로 이동합니다. `/content/dam/jcr:content`.
 
-      속성 추가 `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` 및 선택 **[!UICONTROL 모두 저장]**.
+     속성 추가 `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` 및 선택 **[!UICONTROL 모두 저장]**.
 
-      ![configure_image_profile](assets/configure_image_profiles.png)
+     ![configure_image_profile](assets/configure_image_profiles.png)
 
 ## 단일 이미지의 스마트 자르기 또는 스마트 색상 견본 편집 {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
@@ -272,37 +272,35 @@ Folders that have a profile already assigned to it are indicated by the display 
 
    * 페이지에서 이미지 보기 크기를 조정합니다.
 
-      중단점 이름 드롭다운 목록의 오른쪽에 있는 슬라이더 막대를 왼쪽 또는 오른쪽으로 드래그하여 볼 수 있는 이미지 표시의 크기를 변경합니다.
+     중단점 이름 드롭다운 목록의 오른쪽에 있는 슬라이더 막대를 왼쪽 또는 오른쪽으로 드래그하여 볼 수 있는 이미지 표시의 크기를 변경합니다.
 
-      ![edit_smart_crops-sliderbar](assets/edit_smart_crops-sliderbar.png)
+     ![edit_smart_crops-sliderbar](assets/edit_smart_crops-sliderbar.png)
 
    * 중단점 이름을 기반으로 볼 수 있는 이미지 목록을 필터링합니다. 아래 예에서는 이미지가 중단점 이름 &quot;Medium&quot;에서 필터링됩니다.
 
-      페이지의 오른쪽 상단 모서리 근처에 있는 드롭다운 목록에서 표시되는 이미지를 필터링할 중단점 이름을 선택합니다. (위의 이미지를 참조하십시오.)
+     페이지의 오른쪽 상단 모서리 근처에 있는 드롭다운 목록에서 표시되는 이미지를 필터링할 중단점 이름을 선택합니다. (위의 이미지를 참조하십시오.)
 
-      ![edit_smart_crops-dropdownlist](assets/edit_smart_crops-dropdownlist.png)
+     ![edit_smart_crops-dropdownlist](assets/edit_smart_crops-dropdownlist.png)
 
    * 스마트 자르기 상자의 크기를 조정합니다. 다음 중 하나를 수행합니다.
 
       * 이미지에 스마트 자르기 또는 스마트 색상 견본만 있는 경우 이미지에서 자르기 상자의 모서리 핸들을 드래그합니다. 자르기 중 볼 수 있는 영역의 크기를 조정합니다.
       * 이미지에 스마트 자르기와 스마트 색상 견본이 모두 있는 경우 이미지에서 자르기 상자의 모서리 핸들을 드래그합니다. 자르기 중 볼 수 있는 영역의 크기를 조정합니다. 또는 이미지 아래의 스마트 색상 견본을 선택한 다음(색상 견본은 정적임) 자르기 상자의 모서리 핸들을 드래그합니다. 견본에서 볼 수 있는 영역의 크기를 조정합니다.
 
-      ![이미지의 스마트 자르기 크기 조정](assets/edit_smart_crops-resize.png).
+     ![이미지의 스마트 자르기 크기 조정](assets/edit_smart_crops-resize.png).
 
    * 스마트 자르기 상자를 이동합니다. 다음 중 하나를 수행합니다.
 
       * 이미지에 스마트 자르기 또는 스마트 색상 견본만 있는 경우 이미지에서 자르기 상자를 새 위치로 드래그합니다.
       * 이미지에 스마트 자르기와 스마트 색상 견본이 모두 있는 경우 이미지에서 스마트 자르기 상자를 새 위치로 드래그합니다. 또는 이미지 아래에서 스마트 색상 견본을 선택한 다음(색상 견본은 정적임) 스마트 색상 견본 자르기 상자를 새 위치로 드래그합니다.
 
-      ![edit_smart_crops-move](assets/edit_smart_crops-move.png)
+     ![edit_smart_crops-move](assets/edit_smart_crops-move.png)
 
    * 모든 편집 내용을 실행 취소하고 원래 스마트 자르기 또는 스마트 색상 견본을 복원합니다(현재 편집 세션에만 적용됨).
 
-      선택 **[!UICONTROL 되돌리기]** 이미지 위로 이동합니다.
+     선택 **[!UICONTROL 되돌리기]** 이미지 위로 이동합니다.
 
-      ![edit_smart_crops-revert](assets/edit_smart_crops-revert.png)
-
-
+     ![edit_smart_crops-revert](assets/edit_smart_crops-revert.png)
 
 1. 페이지의 오른쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 저장]**&#x200B;을 선택한 다음 을 선택합니다. **[!UICONTROL 닫기]** 에셋 폴더로 돌아갑니다.
 

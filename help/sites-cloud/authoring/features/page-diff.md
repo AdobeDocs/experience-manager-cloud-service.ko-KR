@@ -2,10 +2,10 @@
 title: 페이지 비교
 description: 페이지 비교 기능을 사용하면 두 페이지를 둘 사이의 차이점이 강조 표시된 상태로 편리하게 나란히 비교할 수 있습니다.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 100%
+source-wordcount: '610'
+ht-degree: 93%
 
 ---
 
@@ -75,7 +75,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->브라우저 폭이 전체 화면 보기에서 두 페이지 이름을 모두 수용할 수 없는 경우, 표시되는 페이지의 이름만 표시되고 다른 이름은 생략 부호 뒤에 사용할 수 있습니다.
+>브라우저 너비가 전체 화면 보기에서 두 페이지 이름을 모두 수용할 수 없는 경우 표시되는 페이지의 이름만 표시되고 다른 이름은 생략 부호 뒤에 사용할 수 있습니다.
 
 전체 화면 종료 아이콘을 클릭하여 전체 화면 보기를 닫을 수도 있습니다.
 

@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2563'
-ht-degree: 18%
+source-wordcount: '2562'
+ht-degree: 19%
 
 ---
 
@@ -16,10 +16,10 @@ ht-degree: 18%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=ko) |
 | AEM as a Cloud Service | 이 문서 |
 
-Adobe Experience Manager Assets Brand Portal을 구성하면 Adobe Experience Manager Assets에서 승인된 브랜드 자산을 다음으로 게시할 수 있습니다. [!DNL Cloud Service] 인스턴스를 Brand Portal에 배포하고 Brand Portal 사용자에게 배포합니다.
+Adobe Experience Manager Assets Brand Portal을 구성하면 Adobe Experience Manager Assets에서 승인된 브랜드 자산을 as a로 게시할 수 있습니다 [!DNL Cloud Service] 인스턴스를 Brand Portal에 배포하고 Brand Portal 사용자에게 배포합니다.
 
 ## Cloud Manager를 사용하여 Brand Portal 활성화 {#activate-brand-portal}
 
@@ -386,7 +386,7 @@ Brand Portal 클라우드 서비스를 구성하려면 다음 단계를 수행�
 
 1. Experience Manager Assets에 로그인합니다.
 
-1. 다음에서 **도구** 패널, 다음으로 이동 **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
+1. 다음에서 **도구** 패널, 다음으로 이동 **[!UICONTROL Cloud Service]** > **[!UICONTROL AEM Brand Portal]**.
 
 1. Brand Portal 구성 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 

@@ -1,24 +1,22 @@
 ---
 title: 적응형 양식에 새 로케일 지원 추가
-seo-title: Learn to add support for new locales to your adaptive forms
 description: AEM Forms을 사용하면 적응형 양식을 현지화하기 위한 새 로케일을 추가할 수 있습니다. 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어(브라질), 중국어(zh-CN), 중국어(zh-TW) 및 한국어(ko-KR) 로케일.
-seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 2%
+source-wordcount: '1266'
+ht-degree: 7%
 
 ---
 
 # 적응형 Forms 현지화를 위한 새 로케일 지원 {#supporting-new-locales-for-adaptive-forms-localization}
 
-<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 AEM Forms은 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어-브라질어(pt-BR), 중국어(zh-CN), 중국어-대만(zh-TW) 및 한국어(ko-KR) 로케일을 즉시 지원합니다. 힌디어(hi_IN)와 같은 더 많은 로케일에 대한 지원을 추가할 수도 있습니다.
@@ -103,7 +101,7 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
 1. 추가 `<locale-name>` 기본 로케일 값 `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`, 아직 존재하지 않는 경우.
 
 1. 추가 `<locale>` 의 값에 `languages` 다음의 속성 `/etc/languages`.
-1. 새로 만든 폴더를 `filter.xml` etc/META-INF/[폴더 계층] 다음으로:
+1. 에서 새로 만든 폴더 추가 `filter.xml` etc/META-INF/[폴더 계층] 다음으로:
 
    ```
    <filter root="/etc/clientlibs/[locale-name]"/>
@@ -124,7 +122,7 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
 1. AEM 작성자 인스턴스에 로그인합니다.
 1. 다음으로 이동 **Forms** >  **Forms 및 문서**.
 1. 적응형 양식을 선택하고 **사전 추가** 및 **사전을 번역 프로젝트에 추가** 마법사가 나타납니다.
-1. 다음을 지정합니다. **프로젝트 제목** 및 선택 **Target 언어** 드롭다운 메뉴 아래의 **사전을 번역 프로젝트에 추가** 마법사.
+1. 다음을 지정합니다. **프로젝트 제목** 및 선택 **타겟 언어** 드롭다운 메뉴 아래의 **사전을 번역 프로젝트에 추가** 마법사.
 1. 클릭 **완료** 생성된 번역 프로젝트를 실행합니다.
 1. 적응형 양식을 선택하고 **HTML으로 미리 보기**.
 1. 추가 `&afAcceptLang=<locale-name>` 를 입력합니다.
@@ -132,7 +130,7 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
 
 적응형 양식의 로케일을 식별하는 방법에는 두 가지가 있습니다. 적응형 양식이 렌더링되면 다음 방법으로 요청된 로케일을 식별합니다.
 
-* 검색 중 `[local]` 적응형 양식 URL의 선택기. URL 형식은 다음과 같습니다. `http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. 사용 `[local]` 선택기를 사용하여 적응형 양식을 캐싱할 수 있습니다.
+* 검색 중 `[local]` 적응형 양식 URL의 선택기. URL 형식은 `http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled`입니다. 사용 `[local]` 선택기를 사용하여 적응형 양식을 캐싱할 수 있습니다.
 
 * 나열된 순서로 다음 매개 변수를 검색합니다.
 

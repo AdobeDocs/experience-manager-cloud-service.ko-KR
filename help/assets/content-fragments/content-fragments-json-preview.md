@@ -2,7 +2,7 @@
 title: 미리보기 - JSON 표시(에셋 - 콘텐츠 조각)
 description: AEM Headless 솔루션을 구현할 때 콘텐츠 조각의 JSON 표현식을 쉽게 미리 보는 방법에 대해 알아봅니다.
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
-source-git-commit: 344d04eb18c100835b78fe59c909d92c1e42111b
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '117'
 ht-degree: 94%
@@ -22,5 +22,5 @@ AEM Headless 구현의 일부로 콘텐츠 조각용 모델을 개발할 때, �
 ![콘텐츠 조각 편집기 - 조각 미리보기](assets/cfm-preview-02.png)
 
 <!--
-**Copy URL** allows you to copy to clipboard the URL for either author or publish.
+**Copy URL** lets you copy to clipboard the URL for either author or publish.
 -->

@@ -6,10 +6,10 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 1a1bb23c-d1d1-4e2b-811b-753e6a90a01b
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 4%
+source-wordcount: '545'
+ht-degree: 7%
 
 ---
 
@@ -70,7 +70,7 @@ URL을 리소스에 매핑하기 위해 ResourceResolver.resolve 메서드에서
 
 요청을 리디렉션하려면:
 
-`https://localhost:4503/welcome` ``
+`https://localhost:4503/welcome` &quot;
 
 끝:
 
@@ -103,8 +103,8 @@ https://localhost:4503/에 대한 요청 앞에 를 붙이는 매핑을 만들�
 
    * **이름** `localhost_any`
 
-1. 클릭 **모두 저장**.
-1. **추가** 이 노드에 대한 다음 속성:
+1. **모두 저장**&#x200B;을 클릭합니다.
+1. **이 노드에 다음 속성을 추가합니다.**
 
    * **이름** `sling:match`
 
@@ -118,7 +118,7 @@ https://localhost:4503/에 대한 요청 앞에 를 붙이는 매핑을 만들�
 
       * **값** `/content/`
 
-1. 클릭 **모두 저장**.
+1. **모두 저장**&#x200B;을 클릭합니다.
 
 이 매핑은 다음과 같은 요청을 처리합니다.
 `localhost:4503/geometrixx/en/products.html`

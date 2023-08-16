@@ -4,16 +4,16 @@ description: 에서 PDF 문서 관리 [!DNL Adobe Experience Manager] as a [!DNL
 feature: Asset Management
 role: User,Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '849'
 ht-degree: 4%
 
 ---
 
 # Experience Manager Assets as a Cloud Service으로 PDF 문서 관리 {#add-assets-to-experience-manager}
 
-Experience Manager Assets은 Document Cloud PDF 뷰어와 원활하게 통합되므로 PDF 문서의 여러 페이지를 미리 볼 수 있습니다. 또한 주석, 검색 텍스트, 책갈피 및 썸네일을 사용하여 PDF 문서를 탐색하는 등의 고급 Document Cloud PDF 뷰어 기능을 동일한 지붕 아래에서 사용할 수도 있습니다. Experience Manager Assets을 사용하면 지원되는 다른 형식의 문서를 업로드하고 PDF 형식으로 미리 볼 수도 있습니다.
+Experience Manager Assets은 Document Cloud PDF 뷰어와 원활하게 통합되므로 PDF 문서의 여러 페이지를 미리 볼 수 있습니다. 또한 주석, 검색 텍스트, 책갈피 및 썸네일을 사용하여 PDF 문서를 탐색하는 등의 고급 Document Cloud PDF 뷰어 기능을 동일한 지붕 아래에서 사용할 수도 있습니다. 또한 Experience Manager Assets을 사용하면 지원되는 다른 형식의 문서를 업로드하고 PDF 형식으로 미리 볼 수 있습니다.
 
 Document Cloud PDF 뷰어는 다음과 같은 방법으로 AEM Assets에 이점을 제공합니다.
 * [PDF Document Cloud 뷰어 구성 요소 지원](#pdf-doc-cloud)
@@ -79,7 +79,7 @@ PDF 문서에 주석을 달려면 다음 단계를 수행하십시오.
             <th> 설명 </th>
         </tr>
         <tr>
-           <td> <img src="/help/assets/assets/Comment.svg"> 설명 </td>
+           <td> <img src="/help/assets/assets/Comment.svg"> 댓글 </td>
             <td> 관찰을 표현하려면 Comment 를 선택합니다. </td>
         </tr>
         <tr>

@@ -5,9 +5,9 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 8466595f988d3a10806d4654885c14a622d14057
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1630'
+source-wordcount: '1627'
 ht-degree: 6%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 6%
 
 다음 옵션은에서 사용할 수 있습니다. [!UICONTROL 게시 관리] 인터페이스:
 
-* [!UICONTROL 작업]
+* [!UICONTROL 액션]
    * `Publish`: 선택한 대상에 에셋 및 폴더 게시
    * `Unpublish`: 대상에서 에셋 및 폴더 게시 취소
 
@@ -61,7 +61,7 @@ ht-degree: 6%
 
 ### 콘텐츠 추가 {#add-content}
 
-게시 위치 [!DNL Experience Manager Assets] 게시 목록에 더 많은 콘텐츠(에셋 및 폴더)를 추가할 수 있습니다. dam-repository의 목록에 더 많은 에셋 또는 폴더를 추가할 수 있습니다. 클릭 **[!UICONTROL 콘텐츠 추가]** 단추를 클릭하여 더 많은 콘텐츠를 추가합니다.
+게시 위치 [!DNL Experience Manager Assets] 게시 목록에 더 많은 컨텐츠(에셋 및 폴더)를 추가할 수 있습니다. dam-repository의 목록에 더 많은 에셋 또는 폴더를 추가할 수 있습니다. 클릭 **[!UICONTROL 콘텐츠 추가]** 단추를 클릭하여 더 많은 콘텐츠를 추가합니다.
 
 폴더에서 여러 자산을 추가하거나 한 번에 여러 폴더를 추가할 수 있습니다. 그러나 한 번에 여러 폴더에서 에셋을 추가할 수는 없습니다.
 
@@ -80,7 +80,7 @@ ht-degree: 6%
 
 * `Include folder contents` 및 `Include only immediate folder contents`
 
-   두 옵션을 모두 선택하면 선택한 폴더의 모든 에셋, 하위 폴더(비어 있음) 및 참조가 게시됩니다. 하위 폴더의 자산은 게시되지 않습니다.
+  두 옵션을 모두 선택하면 선택한 폴더의 모든 에셋, 하위 폴더(비어 있음) 및 참조가 게시됩니다. 하위 폴더의 자산은 게시되지 않습니다.
 
 <!--
 * [!UICONTROL Include only immediate folder contents]: Only the subfolders content and references are published. 
@@ -94,7 +94,7 @@ Only the selected folder content and references are published.
 
 ![AEM에 게시](assets/manage-publication-publish-aem.png)
 
-위의 그림에서 **[!UICONTROL Target 게시]** 특성. 에 게시를 선택했다는 사실을 기억하겠습니다. [!DNL Experience Manager Assets] (`Destination: Publish`). 그러면 폴더와 에셋만 게시되는 이유는 무엇입니까? `AEM`, 그리고 다른 두 자산은 두 자산 모두에 게시됩니다 `AEM` 및 `Dynamic Media`?
+위의 그림에서 **[!UICONTROL 대상 게시]** 특성. 에 게시를 선택했다는 사실을 기억하겠습니다. [!DNL Experience Manager Assets] (`Destination: Publish`). 그러면 폴더와 에셋만 게시되는 이유는 무엇입니까? `AEM`, 그리고 다른 두 자산은 두 자산 모두에 게시됩니다 `AEM` 및 `Dynamic Media`?
 
 여기에서 폴더 속성의 역할을 이해해야 합니다. 폴더 **[!UICONTROL Dynamic Media 게시 모드]** 속성은 발행에 중요한 역할을 합니다. 폴더의 속성을 보려면 폴더를 선택하고 **[!UICONTROL 속성]** 을 클릭합니다. 에셋의 경우 상위 폴더의 속성을 참조하십시오.
 
@@ -115,7 +115,7 @@ Only the selected folder content and references are published.
 >
 >폴더 게시 위치 [!DNL Dynamic Media] 은(는) 지원되지 않습니다.
 >
->폴더를 선택하는 경우(`Selective Publish`) 및 을(를) 선택합니다 [!DNL Dynamic Media] 대상, [!UICONTROL Target 게시] 속성이 다음을 반영함 `None`.
+>폴더를 선택하는 경우(`Selective Publish`) 및 을(를) 선택합니다 [!DNL Dynamic Media] 대상, [!UICONTROL 대상 게시] 속성이 다음을 반영함 `None`.
 
 
 이제 을(를) 변경합니다. **[!UICONTROL 대상]** 위의 사용 사례에서 **[!UICONTROL Dynamic Media]** 결과를 확인합니다. 이렇게 하면 의 자산만 `Selective Publish` 폴더를에 게시합니다. [!DNL Dynamic Media]. 의 자산 `Immediate` 및 `Upon Activation` 폴더가 게시되지 않고 반영됩니다. `None`.
@@ -194,6 +194,7 @@ Only the selected folder content and references are published.
 >[!NOTE]
 >
 >If [!DNL Dynamic Media] 이(가) 대상으로 선택된 경우 워크플로 단계가 비활성화됨 **워크플로 사용자** 및 **admin** 사용자.
+>
 
 ## 제한 사항 및 팁 {#limitations-and-tips}
 

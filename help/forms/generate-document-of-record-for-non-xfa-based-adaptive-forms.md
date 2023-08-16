@@ -2,21 +2,21 @@
 title: 적응형 Forms에 대한 기록 문서 생성
 description: 적응형 Forms에 대한 기록 문서(DoR)에 대한 템플릿을 생성하는 방법을 설명합니다.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4143'
-ht-degree: 2%
+source-wordcount: '4139'
+ht-degree: 4%
 
 ---
 
 # 적응형 양식의 기록 문서 생성
 
-<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 ## 개요 {#overview}
@@ -103,7 +103,7 @@ Adobe Acrobat PDF(Acroform)을 AEM Forms 인스턴스에 업로드합니다. 기
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 <!-- 
-In the following video Adaptive Form components are binded with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
+In the following video, Adaptive Form components are bound with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
 과 함께 이메일 보내기, 워크플로우 Experience Manager 제출 액션을 사용할 수 있습니다. [기록 문서 단계 및 기타 제출 액션](configuring-submit-actions.md) 기록 문서를 받을 수 있습니다.
@@ -392,8 +392,8 @@ When you select a form model, configure Document of Record using options availab
 
 적응형 양식 편집기의 작성자 인스턴스에서 다음 단계를 수행합니다.
 
-1. 다음 항목 선택 **[!UICONTROL 적응형 양식 컨테이너(루트)]** 구성 요소.
-1. 클릭 ![구성 아이콘](/help/forms/assets/configure-icon.svg) 아이콘을 클릭하여 엽니다. **[!UICONTROL 속성]** 적응형 양식 컨테이너.
+1. **[!UICONTROL 적응형 양식 컨테이너(루트)]** 구성 요소를 선택합니다.
+1. ![아이콘 구성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭하여 적응형 양식 컨테이너의 **[!UICONTROL 속성]**&#x200B;을 엽니다.
 1. 를 엽니다. **[!UICONTROL 기록 문서 템플릿]** 을(를) 탭하고 다음 옵션 중에서 선택합니다.
    * **[!UICONTROL 없음]**: 이 옵션을 선택한 경우 아니요 [!UICONTROL 기록 문서] 적응형 양식용 템플릿이 작성되었습니다.
 
@@ -401,7 +401,7 @@ When you select a form model, configure Document of Record using options availab
 
    * **[!UICONTROL 기록 문서 생성]**: 이 옵션을 선택하면 [!UICONTROL 기록 문서] 적응형 양식에 대해 템플릿이 자동으로 생성됩니다.
 
-1. 누르기 ![저장](/help/forms/assets/check-button.png) 속성을 저장합니다.
+1. ![저장](/help/forms/assets/check-button.png)을 탭하여 변경 내용을 저장합니다.
 
 ![기록 문서 템플릿 지원](/help/forms/assets/dor-templatesupport.png)
 

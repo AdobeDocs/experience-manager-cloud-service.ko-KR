@@ -2,10 +2,10 @@
 title: Cloud Manager 환경 변수
 description: 표준 환경 변수는 Cloud Manager를 통해 구성 및 관리할 수 있으며 OSGi 구성에서 사용할 런타임 환경에 제공됩니다.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1018'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '1014'
+ht-degree: 99%
 
 ---
 
@@ -118,9 +118,9 @@ ht-degree: 100%
 
 ### Dispatcher {#dispatcher}
 
-[Dispatcher에는 일반 환경 변수만 사용할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 비밀은 사용할 수 없습니다.
+[Dispatcher에는 일반 환경 변수만 사용할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 분비물을 사용할 수 없습니다.
 
-그러나 환경 변수는 `IfDefine` 지침에서 사용할 수 없습니다.
+그러나 환경 변수는 다음에서 사용할 수 없습니다. `IfDefine` 지시문입니다.
 
 >[!TIP]
 >

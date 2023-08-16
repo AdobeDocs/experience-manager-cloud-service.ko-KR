@@ -2,10 +2,10 @@
 title: Adobe Experience Manager Forms as a Cloud Service을 위한 로컬 개발 환경 설정
 description: Adobe Experience Manager Forms as a Cloud Service을 위한 로컬 개발 환경 설정
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2818'
-ht-degree: 4%
+source-wordcount: '2816'
+ht-degree: 3%
 
 ---
 
@@ -182,7 +182,7 @@ Use this project to update configurations, create overlays, develop custom Adapt
 
 ## 기록 문서(DoR)에 대한 로컬 개발 환경 설정{#docker-microservices}
 
-AEM Forms as a Cloud Services은 기록 문서를 보다 쉽게 개발하고 다른 마이크로서비스를 사용할 수 있는 도커 기반 SDK 환경을 제공합니다. 플랫폼별 바이너리 및 적응물을 수동으로 구성할 필요가 없습니다. 환경을 설정하려면 다음을 수행하십시오.
+AEM Forms as a Cloud Service은 기록 문서를 보다 쉽게 개발하고 다른 마이크로서비스를 사용할 수 있는 도커 기반 SDK 환경을 제공합니다. 플랫폼별 바이너리 및 적응물을 수동으로 구성할 필요가 없습니다. 환경을 설정하려면 다음을 수행하십시오.
 
 1. 도커 설치 및 구성:
 
@@ -207,7 +207,7 @@ AEM Forms as a Cloud Services은 기록 문서를 보다 쉽게 개발하고 다
 
    ![추출된 aem forms add on native](assets/microservice-docker.png)
 
-1. 환경 변수 AEM_HOME을 만들고 로컬 AEM Author 설치를 가리킵니다. 예: C:\aem\author\.
+1. 환경 변수 AEM_HOME을 생성하고 로컬 AEM Author 설치를 가리킵니다. 예: C:\aem\author\.
 
 1. 편집할 sdk.bat 또는 sdk.sh를 엽니다. 로컬 AEM Author 설치를 가리키도록 AEM_HOME을 설정합니다. 예: C:\aem\author\.
 
@@ -276,7 +276,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
 ## 로컬 Dispatcher 도구 설정 {#setup-local-dispatcher-tools}
 
-Dispatcher는 CDN과 AEM 게시 계층 간에 보안 및 성능 계층을 제공하는 Apache HTTP 웹 서버 모듈입니다. Dispatcher는 전체 Experience Manager 아키텍처의 필수적인 부분이며 로컬 개발 환경의 일부여야 합니다.
+Dispatcher는 CDN과 AEM Publish 계층 간에 보안 및 성능 계층을 제공하는 Apache HTTP 웹 서버 모듈입니다. Dispatcher는 전체 Experience Manager 아키텍처의 필수적인 부분이며 로컬 개발 환경의 일부여야 합니다.
 
 다음 단계를 수행하여 로컬 Dispatcher를 구성한 다음 Forms 관련 규칙을 추가합니다.
 
@@ -331,7 +331,7 @@ Experience Manager Forms에 대한 Dispatcher 캐시를 as a Cloud Service으로
 
 ## AEM Forms as a Cloud Service 및 로컬 개발 환경에서 적응형 양식 핵심 구성 요소 활성화
 
-AEM Forms as a Cloud Service에서 적응형 양식 핵심 구성 요소를 활성화하면 여러 채널에 AEM Forms Cloud Service 인스턴스를 사용하여 핵심 구성 요소 기반 적응형 양식 및 Headless 양식을 만들고, 게시하고, 게재할 수 있습니다. Headless Adaptive Forms를 사용하려면 적응형 양식 핵심 구성 요소 활성화 환경이 필요합니다.
+AEM Forms as a Cloud Service에서 적응형 Forms 핵심 구성 요소를 활성화하면 AEM Forms Cloud Service 인스턴스를 사용하여 적응형 Forms 및 Headless Forms 기반의 핵심 구성 요소를 만들고, 게시하고, 여러 채널에 전달할 수 있습니다. Headless Adaptive Forms를 사용하려면 적응형 양식 핵심 구성 요소 활성화 환경이 필요합니다.
 
 자세한 내용은 [AEM Forms as a Cloud Service 및 로컬 개발 환경에서 적응형 Forms 핵심 구성 요소 활성화](/help/forms/enable-adaptive-forms-core-components.md)
 
@@ -383,7 +383,7 @@ For information about troubleshooting, stopping local AEM environment, run modes
 
 1. 양식 데이터 모델 다운로드
 
-1. 편집 가능한 템플릿, 클라우드 구성 및 워크플로우 모델을 내보냅니다. 기존 SDK에서 이전에 언급된 모든 항목을 내보내려면 [CRX-Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html) 다음 필터 사용:
+1. 편집 가능한 템플릿, 클라우드 구성 및 워크플로우 모델을 내보냅니다. 기존 SDK에서 이전에 언급된 모든 항목을 내보내려면 [CRX-Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ko-KR) 다음 필터 사용:
 
    * /conf/ReferenceEditableTemplates
    * /conf/global/settings/cloudconfigs

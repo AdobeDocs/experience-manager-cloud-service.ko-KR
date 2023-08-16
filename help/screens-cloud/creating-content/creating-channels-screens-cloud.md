@@ -2,9 +2,9 @@
 title: Screens에서 as a Cloud Service 채널 만들기 및 관리
 description: 이 페이지에서는 Screens에서 채널을 as a Cloud Service으로 만들고 관리하는 방법을 설명합니다.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1094'
+source-wordcount: '1092'
 ht-degree: 2%
 
 ---
@@ -69,7 +69,7 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
 
    ![edit-channel1](/help/screens-cloud/assets/create-content/edit-channel1.png)
 
-1. 편집기를 사용하면 게시할 채널에 자산/구성 요소를 추가할 수 있습니다.
+1. 편집기를 사용하면 게시할 채널에 에셋/구성 요소를 추가할 수 있습니다.
 
 1. 왼쪽 창에서 에셋을 끌어다 놓고 편집기에 추가합니다.
 
@@ -137,7 +137,7 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
 
    ![이미지](/help/screens-cloud/assets/display/Assignments7.png)
 
-1. 채널에는 사용자 지정 예약(시계 아이콘)을 사용하는지 또는 기본 세부 정보(세계 시계 아이콘)를 상속하는지 여부에 따라 다른 아이콘이 표시되며, 이러한 아이콘을 클릭하면 예약 세부 정보가 표시됩니다.
+1. 채널에는 사용자 지정 예약(시계 아이콘)을 사용하는지 또는 기본 세부 정보(세계 시계 아이콘)를 상속하는지 여부에 따라 다른 아이콘이 표시되며, 해당 아이콘을 클릭하면 예약 세부 정보가 표시됩니다.
 1. 또한 각 유형에 사용할 수 있는 작업이 달라집니다.
 
    ![이미지](/help/screens-cloud/assets/display/Assignments8.png)

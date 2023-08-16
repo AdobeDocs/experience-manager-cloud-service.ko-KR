@@ -2,10 +2,10 @@
 title: 구현 단계
 description: 코드 및 콘텐츠를 클라우드로 마이그레이션할 준비가 되었는지 확인
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2337'
-ht-degree: 9%
+source-wordcount: '2339'
+ht-degree: 10%
 
 ---
 
@@ -59,13 +59,13 @@ Cloud Service으로 전환하는 정확한 단계는 구입한 시스템과 사�
 
 콘텐츠 마이그레이션은 여러 팀 간의 계획, 추적 및 협업이 필요한 여러 단계로 진행되는 프로세스입니다.
 
-도구 작동 방식과 권장 사용 방법에 대한 자세한 내용은 [컨텐츠 전송 도구 설명서](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
+도구 작동 방식과 Adobe이 이 도구를 사용하는 것을 권장하는 방법에 대한 자세한 내용은 다음을 참조하십시오. [컨텐츠 전송 도구 설명서](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
 
 ## 코드 리팩터링 {#code-refactor}
 
 ### 개발을 위한 설정 {#set-up-for-development}
 
-이제 Cloud Services과 호환될 수 있도록 기존 기능을 리팩터링할 때입니다.
+이제 Cloud Service과 호환될 수 있도록 기존 기능을 리팩터링할 때입니다.
 
 먼저 기본 도구에 대해 자세히 설명하는 설명서를 살펴보고 코드 리팩터링을 시작합니다.
 
@@ -112,7 +112,7 @@ Adobe은 일부 코드 리팩터링 작업을 가속화하는 데 도움이 되�
 
 ### 코드 고정 예약 {#schedule-a-code-freeze}
 
-전환 여정의 일부로 코드 리팩터링 작업과 함께 활성 AEM에서 진행 중인 코드 개발을 관리하려면, AEM as a Cloud Service과 호환되도록 Maven 프로젝트 재구성을 완료할 때까지 코드 동결 기간을 예약하는 것이 좋습니다.
+전환 여정Adobe 의 일부로 코드 리팩터링 작업과 함께 활성 AEM에서 진행 중인 코드 개발을 관리하려면, Maven 프로젝트 재구성을 완료할 때까지 코드 동결 기간을 AEM as a Cloud Service과 호환되도록 예약하는 것이 좋습니다.
 
 프로젝트 재구성이 완료되면 이 새 구조를 기반으로 새 코드 개발을 재개할 수 있습니다. 이렇게 하면 코드 배포 및 테스트 중 Cloud Manager 파이프라인 오류가 줄어듭니다.
 
@@ -153,7 +153,7 @@ Cloud Manager 파이프라인은 스테이지 환경에 대해 실행되는 테�
 >[!NOTE]
 > 다음 [컨텐츠 마이그레이션 전략 및 타임라인](#content-strategy-and-timeline) 이 섹션에서는 수집된 데이터를 외삽하고 마이그레이션 계획을 만드는 방법에 대해 자세히 설명합니다.
 
-데이터를 수집하면 마이그레이션 활동 및 관련 작업을 계획하는 데 도움이 될 수 있습니다. 데이터 포인트를 마이그레이션 세트의 특정 크기와 연결할 수 있으므로 추출 및 수집 시간이 특히 유용합니다. 따라서 다음 데이터 포인트를 외삽하여 계획을 수립할 수 있습니다.
+데이터를 수집하면 마이그레이션 활동 및 관련 작업을 계획하는 데 도움이 될 수 있습니다. 데이터 포인트를 마이그레이션 세트의 특정 크기와 연결할 수 있으므로 추출 및 수집 시간이 특히 유용합니다. 따라서 다음 데이터 포인트를 외삽하여 계획을 제안할 수 있습니다.
 
 * 에 대해 걸린 총 시간 [추출](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
 * 에 대해 걸린 총 시간 [수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
@@ -193,7 +193,7 @@ One more important datapoint is the amount of time it takes to complete the [use
 
 * 추출된 세트는 여러 Cloud Service 환경으로 수집할 수 있으므로 이 항목을 플랜에 캡처하는 것이 중요합니다.
 * 추가 수집 수.
-* 소스 작성자에서 Cloud Service 작성자 인스턴스로 콘텐츠를 마이그레이션하고 소스 게시에서 Cloud Service 게시로 콘텐츠를 마이그레이션하는 것은 모든 작성자 콘텐츠를 Cloud Service 게시로 수집하지 않는 가장 좋은 방법입니다.
+* 소스 작성자에서 Cloud Service 작성자 인스턴스로 콘텐츠를 마이그레이션하고 소스 게시에서 Cloud Service 게시로 콘텐츠를 마이그레이션하는 것은 모든 작성자 콘텐츠를 Cloud Service 게시로 수집하지 않는 모범 사례입니다.
 
 ### 마이그레이션 추적기 {#migration-tracker}
 

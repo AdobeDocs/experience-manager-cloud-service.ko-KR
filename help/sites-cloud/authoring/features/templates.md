@@ -2,10 +2,10 @@
 title: 페이지 템플릿 만들기
 description: 템플릿은 결과 페이지의 구조를 정의하며, 템플릿 편집기를 사용하여 템플릿을 만들고 유지 관리하는 것은 더 이상 개발자 전용 작업이 아닙니다.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4577'
-ht-degree: 100%
+source-wordcount: '4570'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->**템플릿 편집기**&#x200B;는 템플릿 수준에서 직접 타겟팅을 지원하지 않습니다. 편집 가능한 템플릿 기반으로 생성된 페이지를 대상으로 지정할 수 있지만, 템플릿 자체는 대상이 될 수 없습니다.
+>**템플릿 편집기**&#x200B;는 템플릿 수준에서 직접 타겟팅을 지원하지 않습니다. 편집 가능한 템플릿을 기반으로 작성된 페이지는 타겟팅할 수 있지만 템플릿 자체는 타겟팅할 수 없습니다.
 
 ## 시작하기에 앞서 {#before-you-start}
 
@@ -230,7 +230,7 @@ ht-degree: 100%
 
 템플릿을 만들거나 편집할 때 다양한 측면을 정의할 수 있습니다. 템플릿 편집 작업은 페이지 작성과 유사합니다.
 
-도구 모음의 **모드** 선택기를 사용하여 템플릿의 해당 측면을 선택하고 편집할 수 있습니다.
+다음 **모드** 도구 모음의 선택기 를 사용하여 템플릿의 해당 측면을 선택하고 편집할 수 있습니다.
 
 * [구조](#editing-a-template-structure-template-author)
 * [초기 콘텐츠](#editing-a-template-initial-content-author)
@@ -238,7 +238,7 @@ ht-degree: 100%
 
 ![템플릿 편집기 모드 선택기](/help/sites-cloud/authoring/assets/templates-mode.png)
 
-반면에 **페이지 정보** 메뉴의 **페이지 정책** 옵션을 사용하여 [필요한 페이지 정책을 선택](#page-policies)할 수 있습니다.
+동안 **페이지 정책** 옵션 **페이지 정보** 메뉴를 사용하면 다음 작업을 수행할 수 있습니다. [필요한 페이지 정책 선택](#page-policies):
 
 ![템플릿 편집기 페이지 정보](/help/sites-cloud/authoring/assets/templates-page-information.png)
 
@@ -323,7 +323,7 @@ ht-degree: 100%
 
 #### 구성 요소 작업 {#component-actions}
 
-구성 요소가 템플릿에 추가되면 구성 요소에 대해 작업을 수행합니다. 각 개별 인스턴스에는 사용 가능한 작업에 액세스할 수 있는 도구 모음이 있으며, 도구 모음은 구성 요소 유형에 따라 달라집니다.
+구성 요소가 템플릿에 추가되면 구성 요소에 대해 작업을 수행합니다. 각 개별 인스턴스에는 사용 가능한 작업에 액세스할 수 있는 도구 모음이 있으며, 도구 모음은 구성 요소 유형에 따라 다릅니다.
 
 ![템플릿 구성 요소의 작업 도구 모음](/help/sites-cloud/authoring/assets/templates-component-actions.png)
 
@@ -345,7 +345,7 @@ ht-degree: 100%
 
 ![콘텐츠 정책 버튼](/help/sites-cloud/authoring/assets/templates-content-policy-button.png)
 
-이를 통해 디자인 세부 사항을 정의할 수 있습니다.
+이렇게 하면 디자인 세부 사항을 정의할 수 있습니다.
 
 ![콘텐츠 정책](/help/sites-cloud/authoring/assets/template-content-policy.png)
 
@@ -407,7 +407,7 @@ ht-degree: 100%
 
 ###### 기능 {#features}
 
-**기능** 탭을 사용하여 구성 요소의 추가 기능을 활성화하거나 비활성화할 수 있습니다.
+다음 **기능** 탭에서는 구성 요소의 추가 기능을 활성화하거나 비활성화할 수 있습니다.
 
 예를 들어 이미지 구성 요소의 경우 자르기 비율, 허용되는 이미지 방향 및 업로드가 허용되는지 여부를 정의할 수 있습니다.
 

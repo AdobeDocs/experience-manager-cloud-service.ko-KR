@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2020.8.0 릴리스 정보입니다.'
 description: "[!DNL Adobe Experience Manager] 2020.8.0용 as a Cloud Service 릴리스 노트"
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1039'
+source-wordcount: '1038'
 ht-degree: 34%
 
 ---
@@ -82,9 +82,9 @@ ht-degree: 34%
   >[!NOTE]
   >이후 콘텐츠 감사는 경험 감사로 이름이 변경되었습니다.
 
-  다음을 참조하십시오 [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-testing.md) 을 참조하십시오.
+  자세한 내용은 [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-testing.md)를 참조하십시오.
 
-* Assets 프로그램에서 새로 만들어진 환경은 이제 스마트 콘텐츠 서비스로 자동 구성됩니다.
+* 이제 Assets 프로그램에서 새로 만든 환경이 스마트 컨텐츠 서비스로 자동 구성됩니다.
 
 * 최대 절전 모드 환경은 Cloud Manager의 **개요** 페이지에서 최대 절전 모드를 해제할 수 있습니다.
 
@@ -96,7 +96,7 @@ ht-degree: 34%
 
 * 파이프라인 실행 페이지에서 분기 이름의 형식이 잘못되었습니다.
 
-* 경우에 따라 완료된 파이프라인 실행이 완료된 것으로 성공적으로 기록되지 않아 파이프라인의 새로운 실행이 방지되었습니다.
+* 경우에 따라 완료된 파이프라인 실행이 완료된 것으로 정상적으로 기록되지 않아 파이프라인의 새로운 실행이 방지되었습니다.
 
 * 내부 통신 문제로 인해 파이프라인 실행이 가끔 *중단*&#x200B;되었습니다.
 
@@ -140,6 +140,6 @@ ht-degree: 34%
 
 * 개발자가 한 곳에서 코드 리팩터링 도구를 호출하고 실행할 수 있도록 코드 리팩터링 도구를 통합하기 위해 AIO-CLI 플러그인이 출시되었습니다. 다음을 참조하십시오 [Git 리소스: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 을 참조하십시오.
 
-* AEM Dispatcher Converter 는 온-프레미스 및 Adobe Managed Services Dispatcher 구성을 AEM as a Cloud Service 호환 Dispatcher 구성으로 변환하는 기능을 지원합니다. 다음을 참조하십시오 [Git 리소스: AEM Cloud Service Dispatcher 변환기](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) 을 참조하십시오.
+* AEM Dispatcher Converter 는 온-프레미스 및 Adobe Managed Services AEM Dispatcher 구성을 as a Cloud Service 호환 Dispatcher 구성으로 변환하는 기능을 지원합니다. 다음을 참조하십시오 [Git 리소스: AEM Cloud Service Dispatcher 변환기](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) 을 참조하십시오.
 
 * AEM Dispatcher 변환기가 다시 작성됨 ` node.js ` AIO-CLI 플러그인과 통합됩니다.

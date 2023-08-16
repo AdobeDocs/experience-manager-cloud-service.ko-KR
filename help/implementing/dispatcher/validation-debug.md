@@ -3,9 +3,9 @@ title: Dispatcher 도구를 사용하여 확인 및 디버깅
 description: 로컬 유효성 검사, 디버깅, 유연한 모드 파일 구조 및 레거시 모드에서 유연한 모드로 마이그레이션하는 방법에 대해 알아봅니다.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2861'
+source-wordcount: '2860'
 ht-degree: 1%
 
 ---
@@ -478,7 +478,7 @@ Windows 운영 체제의 제한으로 인해 이 기능은 macOS 및 Linux® 사
 
 다음 명령을 사용하여 스크립트를 실행할 수 있습니다. `./bin/docker_run_hot_reload.sh src/dispatcher host.docker.internal:4503 8080`
 
-출력의 첫 번째 행은 다음에 대해 실행되는 것과 유사합니다. `docker_run.sh`. 예:
+출력의 첫 번째 행은 다음에 대해 실행되는 것과 유사합니다. `docker_run.sh`. 예를 들면 다음과 같습니다.
 
 ```
 ~ bin/docker_run_hot_reload.sh src host.docker.internal:8081 8082

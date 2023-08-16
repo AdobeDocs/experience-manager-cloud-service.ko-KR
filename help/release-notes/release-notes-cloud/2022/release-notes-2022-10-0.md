@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.10.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.10.0 릴리스 정보입니다.'
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 85%
+source-wordcount: '836'
+ht-degree: 80%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 85%
 
 ### [!DNL Assets]의 새로운 기능 {#assets-features}
 
-* 이제 Experience Manager Assets를 사용하여 지원되는 다른 형식 유형의 문서를 업로드할 수 있으며[ 포함된 Document Cloud 뷰어를 사용하여 미리보기](/help/assets/manage-pdf-documents.md)가 가능합니다. 지원되는 형식 유형은 TXT, RTF, DOC, DOCX, PPT, PPTX, XLS, XLSX입니다.
+* 이제 Experience Manager Assets을 사용하여 지원되는 다른 형식 유형의 문서를 업로드할 수 있습니다.[포함된 Document Cloud 뷰어를 사용하여 미리보기](/help/assets/manage-pdf-documents.md). 지원되는 형식 유형은 TXT, RTF, DOC, DOCX, PPT, PPTX, XLS, XLSX입니다.
 
   ![다른 형식의 PDF 렌디션](/help/release-notes/assets/multi-page-other-formats.png)
 
@@ -65,7 +65,7 @@ ht-degree: 85%
 
 ### [!DNL Forms] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-forms}
 
-* **적응형 양식 템플릿 편집기**: 템플릿 편집기를 사용하면 조직 적응형 양식의 기본 구조와 모양을 미리 정의할 수 있습니다. 이번 릴리스에서 템플릿 편집기 기능이 다음과 같이 개선되었습니다.
+* **적응형 Forms 템플릿 편집기**: 템플릿 편집기를 사용하면 조직 적응형 Forms의 기본 구조와 모양을 미리 정의할 수 있습니다. 이번 릴리스에서 템플릿 편집기 기능이 다음과 같이 개선되었습니다.
    * **[템플릿 편집기의 양식 데이터 모델](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**: 템플릿 편집기에서 양식 데이터 모델 스키마를 적응형 양식 템플릿에 연결할 수 있습니다. 적응형 양식을 만드는 데 걸리는 시간을 줄이는 데 도움이 됩니다. 또한 이 옵션은 적응형 양식 편집기에도 추가되어 사용자가 기존 양식에 대한 양식 데이터 모델을 선택하거나 변경할 수 있습니다.
    * **[템플릿 편집기의 기록 문서](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**: 이제 템플릿을 사용하여 생성된 모든 양식에 대해 레코드 문서 생성을 표준화할 수 있습니다. 이는 조직 요구 사항에 대한 규정 준수 및 표준화를 강화하는 데 도움이 됩니다.
 

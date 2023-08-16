@@ -2,9 +2,9 @@
 title: 제품 경험 빌드
 description: 다양한 채널에서 사용할 수 있는 제품 콘텐츠를 빌드하여 몰입형 쇼핑 경험을 만드는 방법을 알아봅니다.
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
-source-git-commit: 412e206a66de470e2798aafc58bcac93dc7e3cad
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1165'
 ht-degree: 4%
 
 ---
@@ -69,7 +69,7 @@ AEM에서 다양한 유형의 콘텐츠를 만들고 제품 카탈로그에 연�
 
 ![pem 플레이스홀더](assets/pem-placeholder.png)
 
-구성 요소의 대화 상자를 열고 이 자리 표시자의 이름을 입력합니다. 자리 표시자 이름이 필요하며, 자리 표시자를 필요한 수만큼 추가할 수 있습니다.
+구성 요소의 대화 상자를 열고 이 자리 표시자의 이름을 입력합니다. 자리 표시자 이름이 필요하며, 자리 표시자를 필요한 만큼 추가할 수 있습니다.
 
 ![pem XF 대화 상자](assets/pem-dialog-xf.png)
 

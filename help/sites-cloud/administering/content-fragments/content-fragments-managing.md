@@ -4,10 +4,10 @@ description: 페이지 작성을 위해 또는 Headless 콘텐츠의 기반으�
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2052'
-ht-degree: 100%
+source-wordcount: '2051'
+ht-degree: 99%
 
 ---
 
@@ -247,23 +247,23 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
   >[!CAUTION]
   >
-  >**게시** 액션을 통해 [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)에서만 **미리보기 서비스**&#x200B;에 콘텐츠 조각을 게시할 수 있습니다.
+  **게시** 액션을 통해 [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)에서만 **미리보기 서비스**&#x200B;에 콘텐츠 조각을 게시할 수 있습니다.
 
   >[!NOTE]
   >
-  >미리보기 환경에 대한 자세한 내용은 다음을 참조하십시오.
+  미리보기 환경에 대한 자세한 내용은 다음을 참조하십시오.
   >
-  >* [환경 관리](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
-  >* [미리보기 계층을 위한 OSGi 설정 구성](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
-  >* [Developer Console을 사용하여 미리보기 디버깅](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
+  * [환경 관리](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
+  * [미리보기 계층을 위한 OSGi 설정 구성](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
+  * [Developer Console을 사용하여 미리보기 디버깅](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
 
 [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)의 도구 모음에서 **게시** 옵션을 사용하여 콘텐츠 조각을 게시하는 경우
 
 >[!CAUTION]
 >
->조각이 모델을 기반으로 한다면 [모델이 게시되었는지](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model) 확인해야 합니다.
+조각이 모델을 기반으로 한다면 [모델이 게시되었는지](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model) 확인해야 합니다.
 >
->모델이 아직 게시되지 않은 콘텐츠 조각을 게시하는 경우, 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
+모델이 아직 게시되지 않은 콘텐츠 조각을 게시하는 경우, 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
 
 1. 목록에서 하나 이상의 조각을 선택합니다.
 
@@ -284,11 +284,11 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!NOTE]
 >
->[조각을 사용하는 페이지를 게시](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)한 후 페이지 참조에 조각이 나열됩니다.
+[조각을 사용하는 페이지를 게시](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)한 후 페이지 참조에 조각이 나열됩니다.
 
 >[!CAUTION]
 >
->조각이 게시 및/또는 참조된 후 작성자가 편집을 위해 조각을 다시 열면 AEM에 경고가 표시됩니다. 작성자는 조각에 대한 변경 사항이 참조된 페이지에도 영향을 미칠 것이라는 경고를 받습니다.
+조각이 게시 및/또는 참조된 후 작성자가 편집을 위해 조각을 다시 열면 AEM에 경고가 표시됩니다. 작성자는 조각에 대한 변경 사항이 참조된 페이지에도 영향을 미칠 것이라는 경고를 받습니다.
 
 ## 조각 게시 취소 {#unpublishing-a-fragment}
 
@@ -299,11 +299,11 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!NOTE]
 >
->게시된 조각을 사용할 수 있는 경우에만 **게시 취소** 작업이 표시됩니다.
+게시된 조각을 사용할 수 있는 경우에만 **게시 취소** 작업이 표시됩니다.
 
 >[!CAUTION]
 >
->다른 조각 또는 페이지에서 조각이 이미 참조된 경우 경고 메시지가 나타나고 계속 진행할지 확인해야 합니다.
+다른 조각 또는 페이지에서 조각이 이미 참조된 경우 경고 메시지가 나타나고 계속 진행할지 확인해야 합니다.
 
 ## 조각 삭제 {#deleting-a-fragment}
 
@@ -314,14 +314,14 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
    >[!NOTE]
    >
-   >**삭제** 작업은 빠른 작업으로 사용할 수 없습니다.
+   **삭제** 작업은 빠른 작업으로 사용할 수 없습니다.
 
 3. 도구 모음에서 **삭제**&#x200B;를 선택합니다.
 4. **삭제** 작업을 확인합니다.
 
    >[!CAUTION]
    >
-   >다른 조각 또는 페이지에서 조각이 이미 참조된 경우 경고 메시지가 나타나고 **강제 삭제**&#x200B;를 진행할지 확인해야 합니다. 해당 콘텐츠 조각 구성 요소와 함께 조각이 모든 콘텐츠 페이지에서 삭제됩니다.
+   다른 조각 또는 페이지에서 조각이 이미 참조된 경우 경고 메시지가 나타나고 **강제 삭제**&#x200B;를 진행할지 확인해야 합니다. 해당 콘텐츠 조각 구성 요소와 함께 조각이 모든 콘텐츠 페이지에서 삭제됩니다.
 
 ## 조각의 상위 참조 찾기 {#parent-references-fragment}
 
@@ -335,7 +335,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!NOTE]
 >
->이 기능은 **자산** 콘솔에서만 사용할 수 있습니다.
+이 기능은 **자산** 콘솔에서만 사용할 수 있습니다.
 
 표준 옵션뿐만 아니라 [타임라인](/help/assets/manage-digital-assets.md#timeline)도 콘텐츠 조각과 관련된 정보와 작업을 모두 제공합니다.
 
@@ -356,16 +356,16 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!NOTE]
 >
->댓글은
+댓글은
 >
->* 모든 자산에 대한 표준 기능입니다.
->* 타임라인에서 만들어집니다.
->* 조각 자산과 관련되어 있습니다.
+* 모든 자산에 대한 표준 기능입니다.
+* 타임라인에서 만들어집니다.
+* 조각 자산과 관련되어 있습니다.
 >
->주석(콘텐츠 조각)은
+주석(콘텐츠 조각)은
 >
->* 조각 편집기에서 입력됩니다.
->* 조각 내의 선택된 텍스트 세그먼트에 대한 것입니다.
+* 조각 편집기에서 입력됩니다.
+* 조각 내의 선택된 텍스트 세그먼트에 대한 것입니다.
 >
 
 예:
@@ -376,7 +376,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!NOTE]
 >
->이 기능은 **자산** 콘솔에서만 사용할 수 있습니다.
+이 기능은 **자산** 콘솔에서만 사용할 수 있습니다.
 
 **현재 항목에 비교** 작업은 특정 버전을 선택한 후 [타임라인](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)에서 사용할 수 있습니다.
 
@@ -394,13 +394,13 @@ This updates any page references and ensures that the Dispatcher is flushed as r
    * 삽입된 텍스트 - 녹색
    * 대체된 텍스트 - 파란색
 
-* 전체 화면 아이콘을 사용하면 두 버전 중 하나를 자체적으로 열 수 있습니다. 그런 다음 병렬 보기로 다시 전환할 수 있습니다.
+* 전체 화면 아이콘을 사용하면 두 버전 중 하나를 자체적으로 열 수 있습니다. 그런 다음 병렬 보기로 다시 전환할 수 있습니다
 * 특정 버전으로 **되돌릴** 수 있습니다.
 * **완료**&#x200B;를 선택하면 콘솔로 돌아갑니다.
 
 >[!NOTE]
 >
->조각을 비교할 때에는 조각 콘텐츠를 편집할 수 없습니다.
+조각을 비교할 때에는 조각 콘텐츠를 편집할 수 없습니다.
 
 ![비교](assets/cfm-managing-06.png)
 
@@ -408,7 +408,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!NOTE]
 >
->이 기능은 **자산** 콘솔에서만 사용할 수 있습니다.
+이 기능은 **자산** 콘솔에서만 사용할 수 있습니다.
 
 조각을 특정 버전으로 되돌릴 수 있습니다.
 

@@ -4,10 +4,10 @@ description: 시스템 관리자가 필요한 클라우드 리소스를 설정�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
-workflow-type: ht
-source-wordcount: '1417'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '1415'
+ht-degree: 95%
 
 ---
 
@@ -150,6 +150,6 @@ Cloud Manager뿐 아니라 작업 환경, 저장소 및 파이프라인에 대�
 * [Cloud Manager와 함께 git 사용](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) - Cloud Manager의 git 저장소를 사용하는 방법과 자체 On-Premise 고객 관리 git 저장소를 Cloud Manager와 통합하는 방법을 알아봅니다.
 * [로컬 개발 환경 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) - 이 튜토리얼에서는 AEM as a Cloud Service SDK를 사용하여 Adobe Experience Manager(AEM)용 로컬 개발 환경을 설정하는 과정을 안내합니다.
 * [AEM Sites 시작하기 - WKND 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) - Adobe Experience Manager(AEM)를 처음 사용하는 개발자를 위해 설계된 멀티 파트 튜토리얼에 오신 것을 환영합니다. 이 튜토리얼은 WKND의 가상 라이프스타일 브랜드를 위한 AEM 사이트의 구현 과정을 안내합니다. 이 튜토리얼은 Adobe Experience Manager Sites를 통한 사용한 프로젝트 설정, 핵심 구성 요소, 편집 가능한 템플릿, 클라이언트측 라이브러리 및 구성 요소 개발 등의 기본 주제를 다룹니다.
-* [React를 사용하여 AEM에서 SPA 시작하기](/help/implementing/developing/hybrid/getting-started-react.md) - 이 문서에서는 샘플 SPA 애플리케이션을 제공하고, 구성 방법을 설명하며, React 프레임워크를 사용하여 SPA를 빠르게 시작하고 실행할 수 있도록 지원합니다.
-* [Angular 사용하여 AEM에서 SPA 시작하기](/help/implementing/developing/hybrid/getting-started-angular.md) - 이 문서에서는 샘플 SPA 애플리케이션을 제공하고, 구성 방법을 설명하며, Angular 프레임워크를 사용하여 SPA를 빠르게 시작하고 실행할 수 있도록 지원합니다.
+* [React를 사용하여 AEM에서 SPA 시작하기](/help/implementing/developing/hybrid/getting-started-react.md) - 이 문서에서는 샘플 SPA 애플리케이션을 제공하고, 구성 방법을 설명하며, React 프레임워크를 사용하여 신속하게 자체 SPA을 시작하고 실행할 수 있도록 해 줍니다.
+* [angular을 사용하여 AEM에서 SPA 시작하기](/help/implementing/developing/hybrid/getting-started-angular.md) - 이 문서에서는 샘플 SPA 애플리케이션을 제공하고, 구성 방법을 설명하며, Angular 프레임워크를 사용하여 SPA을 빠르게 시작하고 실행할 수 있도록 해 줍니다.
 * [Headless 개발자 여정](/help/journey-headless/developer/overview.md) - AEM을 사용하여 Headless 애플리케이션을 개발하기 위한 안내 과정을 보려면 여기에서 시작하십시오.

@@ -2,7 +2,7 @@
 title: AEM - Commerce Integration Framework를 사용하여 Commerce 통합 FAQ
 description: AEM - Commerce Integration Framework를 사용하여 Commerce 통합 FAQ
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 0%
@@ -47,7 +47,7 @@ PIM 데이터는 GraphQL 요청을 통해 AEM 및 클라이언트에 노출됩�
 
 ## 9. AEM Dispatcher에 대한 캐시 무효화는 AEM 및 commerce에서 어떻게 작동합니까?
 
-Dispatcher에 캐시된 페이지에 대한 TTL 기반 캐시 무효화를 설정하는 것이 좋습니다. 가격 또는 주식과 같은 동적 정보의 경우 클라이언트측 데이터를 렌더링하는 것이 좋습니다. TTL 기반 캐시 무효화에 대한 자세한 내용은 [Dispatcher 캐시 최적화](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html) 및 [AEM 성능 최적화](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html).
+Adobe은 Dispatcher에 캐시된 페이지에 대한 TTL 기반 캐시 무효화를 설정할 것을 권장합니다. 가격 또는 주식과 같은 동적 정보의 경우 Adobe은 클라이언트측 데이터를 렌더링할 것을 권장합니다. TTL 기반 캐시 무효화에 대한 자세한 내용은 [Dispatcher 캐시 최적화](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html) 및 [AEM 성능 최적화](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html).
 
 ## 10. Commerce를 사용하는 AEM 콘텐츠 전반에 대한 통합 검색에 대한 권장 사항이 있습니까?
 
@@ -63,11 +63,11 @@ CIF는 검색 창 및 검색 결과 구성 요소를 제공합니다. 검색 창
 
 ## 13. 상업용 텍스트로 제품 데이터를 향상시킬 수 있는 방법이 있습니까? 이거 어디서 하는 거야? AEM에서? 상거래 솔루션에서?
 
-AEM에서 마케팅 관련 데이터 및 콘텐츠를 관리하는 것이 좋습니다. 콘텐츠 조각을 사용하여 상거래 솔루션의 제품 데이터를 추가 속성으로 장식하거나 비정형 콘텐츠에 대한 경험 조각을 만들어 제품과 연결할 수 있습니다.
+Adobe은 AEM에서 마케팅 관련 데이터 및 콘텐츠를 관리할 것을 권장합니다. 콘텐츠 조각을 사용하여 상거래 솔루션의 제품 데이터를 추가 속성으로 장식하거나 비정형 콘텐츠에 대한 경험 조각을 만들어 제품과 연결할 수 있습니다.
 
 ## 14. 전체 프레젠테이션 레이어에서 AEM을 사용할 때 PCI 규정 준수를 보장하려면 어떻게 해야 합니까?
 
-추상화된 결제 방법을 사용하는 것이 좋습니다. 이렇게 하면 브라우저 클라이언트가 결제 게이트웨이 공급자와 직접 통신하므로 Adobe 또는 상거래 솔루션이 카드 소지자 데이터를 보관하거나 전달하지 못합니다. 이 방식에서는 레벨 3 PCI 규정 준수만 필요합니다. 그러나 직원이 시스템 및 데이터와 상호 작용하는 방식과 같이 완전한 PCI 준수로 간주할 추가 사항이 있습니다. Adobe Commerce PCI 규정 준수에 대한 자세한 내용은 [PCI 규정 준수 요구 사항](https://business.adobe.com/products/magento/pci-compliance.html).
+Adobe은 추상화된 결제 방법을 사용할 것을 권장합니다. 이렇게 하면 브라우저 클라이언트가 결제 게이트웨이 공급자와 직접 통신하므로 Adobe 또는 상거래 솔루션이 카드 소지자 데이터를 보관하거나 전달하지 못합니다. 이 방식에서는 레벨 3 PCI 규정 준수만 필요합니다. 그러나 직원이 시스템 및 데이터와 상호 작용하는 방식과 같이 완전한 PCI 준수로 간주할 추가 사항이 있습니다. Adobe Commerce PCI 규정 준수에 대한 자세한 내용은 [PCI 규정 준수 요구 사항](https://business.adobe.com/products/magento/pci-compliance.html).
 
 ## 15. AEM 및 Adobe Commerce 클라우드 버전을 사용하는 경우 이 공동 솔루션은 PCI를 준수합니까?
 

@@ -3,10 +3,10 @@ title: 데이터베이스를 연결하는 방법 [!DNL AEM Forms] as a Cloud Ser
 seo-title: AEM Forms Data Integration
 description: 에서 RESTful 웹 서비스, SOAP 기반 웹 서비스 및 OData 서비스에 데이터를 검색하고 저장할 수 있습니다. [!DNL AEM Forms] as a Cloud Service. 이 서비스는 데이터를 검색, 테스트, 유효성 검사 및 다양한 유형의 데이터 소스로 전송하는 전용 도구를 제공합니다.
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 3%
+source-wordcount: '575'
+ht-degree: 4%
 
 ---
 
@@ -14,13 +14,13 @@ ht-degree: 3%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 
 ![데이터 통합](do-not-localize/data-integeration.png)
 
-엔터프라이즈 인프라스트럭처에는 데이터베이스, 웹 서비스, REST 서비스, OData 서비스, CRM 솔루션과 같이 서로 다른 백엔드 시스템 또는 데이터 소스가 포함됩니다. 이를 통합하여 엔터프라이즈 애플리케이션에 데이터를 제공하여 일상적인 업무를 수행하는 정보 시스템을 구축합니다. 반면에 애플리케이션은 데이터를 캡처하여 데이터 소스를 업데이트하기 위해 다시 전송합니다.
+엔터프라이즈 인프라스트럭처에는 데이터베이스, 웹 서비스, REST 서비스, OData 서비스 및 CRM 솔루션과 같은 다양한 백엔드 시스템 또는 데이터 소스가 포함됩니다. 이를 통합하여 엔터프라이즈 애플리케이션에 데이터를 제공하여 일상적인 업무를 수행하는 정보 시스템을 구축합니다. 반면에 애플리케이션은 데이터를 캡처하여 데이터 소스를 업데이트하기 위해 다시 전송합니다.
 
 [!DNL AEM Forms] 적응형 Forms 및 대화형 통신과 같은 애플리케이션을 사용하려면 양식을 렌더링하고 대화형 통신을 만드는 동안 고객 데이터를 가져오기 위해 데이터 소스와의 통합이 필요합니다. 적응형 Forms의 사용자 입력을 기반으로 데이터 소스에서 데이터를 가져오는 사용 사례가 있습니다. 또한 제출된 적응형 양식 데이터를 다시 작성하여 각 데이터 소스를 업데이트할 수 있습니다.
 

@@ -2,10 +2,10 @@
 title: "[!DNL AEM Forms] as a Cloud Service 릴리스 정보"
 description: "[!DNL AEM Forms] as a Cloud Service 릴리스 정보"
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2024'
-ht-degree: 100%
+source-wordcount: '2015'
+ht-degree: 94%
 
 ---
 
@@ -61,7 +61,7 @@ Beta 프로그램에 등록하려면 [!DNL formscsbeta@adobe.com]에 문의하�
 ### [!DNL Forms]의 베타 기능 {#sep-what-is-new-forms-prerelease}
 
 - **통합 스토리지 커넥터:** 통합 스토리지 커넥터를 사용하여 고객 관리 저장소에서 처리 중인 데이터를 외부화합니다. 예를 들어 민감한 개인 데이터(SPD)가 포함된, 처리 중인 AEM Workflow 데이터(AEM Workflow 변수 데이터)를 고객 관리 저장소에 저장할 수 있습니다.
-   <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
+  <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
 - **[!DNL AEM Forms as a Cloud Service - Communications]**: [커뮤니케이션 API](aem-forms-cloud-service-communications.md)를 통해 XDP 템플릿과 XML 데이터를 결합하여 다양한 형식의 인쇄 문서를 생성할 수 있습니다. 이 서비스를 사용하면 동기화 모드에서 문서를 생성할 수 있습니다. API를 사용하면 다음과 같은 기능을 제공하는 애플리케이션을 만들 수 있습니다.
    - XML 데이터로 템플릿 파일을 채워 문서를 생성합니다.
@@ -104,7 +104,7 @@ Beta 프로그램에 등록하려면 [!DNL formscsbeta@adobe.com]에 문의하�
 
 - **Acroform 기반 기록 문서**: AEM Forms as a Cloud Service는 XFA 기반 양식 템플릿 외에 기록 문서용 템플릿으로도 [Adobe Acrobat Form PDF(Acroform PDF)](generate-document-of-record-for-non-xfa-based-adaptive-forms.md)을 사용할 수 있도록 지원합니다.
 
-- **Microsoft Azure 데이터 스토어 커넥터**: 이제 [양식 데이터 모델을 Microsoft Azure Storage에 연결](configure-azure-storage.md)할 수 있습니다. 이를 통해, 적응형 양식 데이터를 검색하여 Microsoft Azure Storage에 BLOB로 저장할 수 있습니다.
+- **Microsoft Azure 데이터 스토어 커넥터**: 이제 [양식 데이터 모델을 Microsoft Azure Storage에 연결](configure-azure-storage.md)할 수 있습니다. 적응형 양식 데이터를 검색하여 Microsoft Azure Storage에 BLOB로 저장할 수 있습니다.
 
 ### [!DNL Forms]의 베타 기능 {#aug-what-is-new-forms-prerelease}
 
@@ -139,7 +139,7 @@ Beta 프로그램에 등록하려면 [!DNL formscsbeta@adobe.com]에 문의하�
 
 - **Acroform 기반 기록 문서**: XFA 기반 양식 템플릿 외에 [기록 문서의 템플릿으로도 Adobe Acrobat Form PDF(Acroform PDF)를 사용](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html)할 수 있습니다.
 
-- **Microsoft Azure 데이터 스토어 커넥터**: 이제 [양식 데이터 모델을 Microsoft Azure Storage에 연결](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html)할 수 있습니다. 이를 통해, 적응형 양식 데이터를 검색하여 Microsoft Azure Storage에 BLOB로 저장할 수 있습니다.
+- **Microsoft Azure 데이터 스토어 커넥터**: 이제 [양식 데이터 모델을 Microsoft Azure Storage에 연결](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html)할 수 있습니다. 적응형 양식 데이터를 검색하여 Microsoft Azure Storage에 BLOB로 저장할 수 있습니다.
 
 - **변수 데이터 외부화**: 조직에서 관리하는 외부 스토리지 시스템에 AEM Workflow 변수 데이터를 저장할 수 있습니다.
 
@@ -187,7 +187,7 @@ Beta 프로그램에 등록하려면 [!DNL formscsbeta@adobe.com]에 문의하�
 
 ### [!DNL Forms]의 예정된 베타 기능 {#may-what-is-new-forms-prerelease}
 
-Output as a Cloud service: Output 서비스는 XDP 템플릿과 XML 데이터를 결합하여 다양한 형식의 인쇄 문서를 생성할 수 있도록 합니다. 이 서비스를 사용하면 동기화 모드와 비동기화 배치 모드에서 문서를 생성할 수 있습니다. Output 서비스를 사용하면 다음과 같은 기능을 제공하는 애플리케이션을 만들 수 있습니다.
+Output as a Cloud service: Output 서비스는 XDP 템플릿과 XML 데이터를 결합하여 다양한 형식의 인쇄 문서를 생성할 수 있도록 합니다. 이 서비스를 사용하면 동기화 모드와 비동기 배치 모드에서 문서를 생성할 수 있습니다. Output 서비스를 사용하면 다음과 같은 기능을 제공하는 애플리케이션을 만들 수 있습니다.
 
 - XML 데이터로 템플릿 파일을 채워 최종 양식 문서를 생성합니다.
 - 비대화형 PDF 인쇄 스트림을 포함하여 다양한 형식의 출력 양식을 생성합니다.
@@ -207,25 +207,25 @@ Beta 프로그램에 등록하려면 formscsbeta@adobe.com에 문의하십시오
 
 - **Adobe Sign이 활성화된 적응형 양식에서 정부 ID 신원 인증 방법 사용**
 
-   고급 머신 러닝 알고리즘으로 더욱 강력해진 Adobe Sign의 정부 ID 프로세스는 고품질의 수령인 신원 인증을 확보할 수 있는 능력을 전 세계 기업에 제공합니다. 이제 Adobe Sign이 활성화된 적응형 양식에서 정부 ID 신원 인증 방법을 사용할 수 있습니다.
+  고급 머신 러닝 알고리즘으로 더욱 강력해진 Adobe Sign의 정부 ID 프로세스는 고품질의 수령인 신원 인증을 확보할 수 있는 능력을 전 세계 기업에 제공합니다. 이제 Adobe Sign이 활성화된 적응형 양식에서 정부 ID 신원 인증 방법을 사용할 수 있습니다.
 
-   정부 ID는 [정부에서 발급한 신분증(운전면허증, 주민등록증, 여권)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html) 이미지를 수령인이 업로드할 수 있도록 지시하는 방법이며, 그런 다음 해당 문서가 진짜인지 평가합니다.
+  정부 ID는 [정부에서 발급한 신분증(운전면허증, 주민등록증, 여권)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html) 이미지를 수령인이 업로드할 수 있도록 지시하는 방법이며, 그런 다음 해당 문서가 진짜인지 평가합니다.
 
 - **비동기 적응형 양식 제출을 위한 양식 내 서명 경험 사용 지원**
 
-   이제 비동기 적응형 양식 제출을 위해 양식 내 서명 환경을 사용할 수 있습니다. 또한 [!DNL Experience Manager Sites] 페이지에 적응형 양식을 임베드하고 적응형 양식 제출을 위해 양식 내 서명 환경을 사용할 수 있습니다.
+  이제 비동기 적응형 양식 제출을 위해 양식 내 서명 환경을 사용할 수 있습니다. 또한 [!DNL Experience Manager Sites] 페이지에 적응형 양식을 임베드하고 적응형 양식 제출을 위해 양식 내 서명 환경을 사용할 수 있습니다.
 
 - **작업 할당 단계를 위해 적응형 양식을 미리 채우는 동안 변수를 사용하여 첨부 파일을 지정하도록 지원**
 
-   이제 작업 할당 단계를 위해 적응형 양식을 미리 채우는 동안 문서 유형 변수를 사용하여 적응형 양식에 대한 입력 첨부 파일을 선택할 수 있습니다.
+  이제 작업 할당 단계를 위해 적응형 양식을 미리 채우는 동안 문서 유형 변수를 사용하여 적응형 양식에 대한 입력 첨부 파일을 선택할 수 있습니다.
 
 - **JSON 유형 변수에 대한 값을 설정하기 위해 리터럴 옵션을 사용하도록 지원**
 
-   리터럴 옵션을 사용하여 AEM Workflow의 변수 설정 단계에서 JSON 유형 변수의 값을 설정할 수 있습니다. 리터럴 옵션을 사용하면 문자열 형식으로 JSON을 지정할 수 있습니다.
+  리터럴 옵션을 사용하여 AEM Workflow의 변수 설정 단계에서 JSON 유형 변수의 값을 설정할 수 있습니다. 리터럴 옵션을 사용하면 문자열 형태로 JSON을 지정할 수 있습니다.
 
 - **로컬 개발 환경을 사용하여 기록 문서(DoR) 생성**
 
-   XDP를 클라우드 서비스 인스턴스와 AEM Forms as a Cloud Service SDK(로컬 개발 환경)에서 기록 문서 템플릿으로 사용할 수 있습니다. 이전에는 지원이 클라우드 서비스 인스턴스로만 제한되었습니다.
+  XDP를 클라우드 서비스 인스턴스와 AEM Forms as a Cloud Service SDK(로컬 개발 환경)에서 기록 문서 템플릿으로 사용할 수 있습니다. 이전에는 지원이 클라우드 서비스 인스턴스로만 제한되었습니다.
 
 ### [!DNL Forms]에서 수정된 버그 {#april-bug-fixes-forms}
 

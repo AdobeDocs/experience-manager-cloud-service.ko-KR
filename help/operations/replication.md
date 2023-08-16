@@ -2,10 +2,10 @@
 title: 복제
 description: AEM as a Cloud Service으로 배포 및 복제 문제 해결에 대해 알아봅니다.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1342'
-ht-degree: 42%
+source-wordcount: '1341'
+ht-degree: 41%
 
 ---
 
@@ -64,7 +64,7 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
 1. AEM as a Cloud Service 홈페이지에서 **도구 - 워크플로 - 모델**.
 1. 워크플로우 모델 페이지에서 를 누릅니다. **만들기** 화면의 오른쪽 상단에 있습니다.
 1. 모델에 제목과 이름을 추가합니다. 자세한 내용은 [워크플로 모델 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)를 참조하십시오..
-1. 목록에서 새로 생성된 모델을 선택한 다음 **편집**&#x200B;을 누릅니다.
+1. 목록에서 새로 생성된 모델을 선택하고 키를 누릅니다 **편집**
 1. 다음 창에서 프로세스 단계를 현재 모델 플로우로 드래그하여 놓습니다.
 
    ![프로세스 단계](/help/operations/assets/processstep.png)

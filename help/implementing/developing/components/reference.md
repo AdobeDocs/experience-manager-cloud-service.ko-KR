@@ -2,9 +2,9 @@
 title: 구성 요소 참조 안내서
 description: 구성 요소 및 해당 구조에 대한 세부 사항에 대한 개발자 참조 안내서
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3650'
+source-wordcount: '3648'
 ht-degree: 2%
 
 ---
@@ -63,7 +63,7 @@ Sling 리소스 병합을 사용하고 속성을 정의하는 구성 요소 대�
 
 이 (선택 사항) 논리는 다양한 방식으로 구현할 수 있으며 특정 명령으로 HTL에서 호출됩니다.
 
-* Java 사용 - [HTL Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html) htl 파일이 사용자 지정 Java 클래스의 도우미 메서드에 액세스할 수 있도록 합니다. 이렇게 하면 Java 코드를 사용하여 구성 요소 콘텐츠를 선택하고 구성하는 논리를 구현할 수 있습니다.
+* Java 사용 - [HTL Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html) htl 파일이 사용자 지정 Java 클래스의 도우미 메서드에 액세스할 수 있도록 합니다. 이렇게 하면 Java 코드를 사용하여 구성 요소 콘텐츠를 선택하고 구성하기 위한 논리를 구현할 수 있습니다.
 * JavaScript 사용 - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) htl 파일이 JavaScript로 작성된 도우미 코드에 액세스할 수 있도록 합니다. 이렇게 하면 JavaScript 코드를 사용하여 구성 요소 콘텐츠를 선택하고 구성하는 논리를 구현할 수 있습니다.
 * 클라이언트측 라이브러리 사용 - 최신 웹 사이트는 복잡한 JavaScript 및 CSS 코드로 구동되는 클라이언트측 처리에 크게 의존합니다. 문서 보기 [AEM에서 클라이언트측 라이브러리 as a Cloud Service 사용](/help/implementing/developing/introduction/clientlibs.md) 추가 정보.
 
@@ -90,7 +90,7 @@ AEM 구성 요소의 구조는 강력하고 유연합니다. 주요 부분은 �
 
 컴포넌트의 정의는 다음과 같이 나눌 수 있습니다.
 
-* AEM 구성 요소는 다음을 기반으로 합니다 [슬링](https://sling.apache.org/documentation.html)
+* AEM 구성 요소는 [슬링](https://sling.apache.org/documentation.html)
 * AEM 구성 요소는 아래에 있습니다. `/libs/core/wcm/components`.
 * 프로젝트/사이트별 구성 요소는 `/apps/<myApp>/components`.
 * AEM 표준 구성 요소는 다음과 같이 정의됩니다. `cq:Component` 및 에는 다음과 같은 주요 요소가 있습니다.

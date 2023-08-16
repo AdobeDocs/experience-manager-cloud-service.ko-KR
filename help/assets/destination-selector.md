@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 대상 선택기
 description: AEM 대상 선택기를 사용하여 사용할 수 있는 자산을 원본 자산의 사본으로 표시하고 선택합니다.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1911'
-ht-degree: 93%
+source-wordcount: '1902'
+ht-degree: 86%
 
 ---
 
@@ -192,12 +192,12 @@ interface SelectedDestination {
 | *hasMore* | 부울 | 아니요 | | 애플리케이션에 표시할 콘텐츠가 많은 경우 이 속성을 사용하여 콘텐츠를 로드하는 로더를 추가하면 콘텐츠를 애플리케이션에 표시할 수 있습니다. 이 표시기로 콘텐츠 로딩이 진행 중임을 나타냅니다. |
 | *orgName* | 부울 | 아니요 | | AEM과 연관된 조직의 이름 (orgID) |
 | *initRepoID* | 문자열 | 아니요 | | 기본 초기 보기에서 사용하려는 자산 저장소의 경로 |
-| *onCreateFolder* | 문자열 | 아니요 | | `onCreateFolder` 속성을 사용하여 애플리케이션에서 새 폴더를 추가하는 아이콘을 추가할 수 있습니다. |
+| *onCreateFolder* | 문자열 | 아니요 | | 다음 `onCreateFolder` 속성을 사용하면 응용 프로그램에 새 폴더를 추가하는 아이콘을 추가할 수 있습니다. |
 | *onConfirm* | 문자열 | 아니요 | | 확인 버튼을 누를 시 콜백입니다. |
 | *confirmDisabled* | 문자열 | 아니요 | | 이 속성은 확인 버튼의 토글을 제어합니다. |
 | *viewType* | 문자열 | 아니요 | | `viewType` 속성은 자산 표시에 사용하는 보기를 지정하는 데 사용됩니다. |
 | *viewTypeOptions* | 문자열 | 아니요 | | 이 속성은 `viewType` 속성과 관련됩니다. 하나 이상의 보기를 지정하여 자산을 표시할 수 있습니다. 사용 가능한 viewTypeOptions: 목록 보기, 격자 보기, 갤러리 보기, 워터폴 보기 및 트리 보기. |
-| *itemNameFormatter* | 문자열 | 아니요 | | 이 속성을 사용하여 항목 이름의 형식을 지정할 수 있음 |
+| *itemNameFormatter* | 문자열 | 아니요 | | 이 속성을 사용하면 항목 이름의 서식을 지정할 수 있습니다 |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | 아니요 |  | OOTB 번역이 애플리케이션 요구 사항을 제대로 충족하지 않는 경우 `i18nSymbols` 속성을 통해 현지화된 사용자 정의 값을 전달할 수 있는 인터페이스를 노출할 수 있습니다. 이 인터페이스를 통해 값을 전달하면 제공된 기본 번역이 재정의되며 사용자 고유의 번역이 대신 사용됩니다.  재정의를 수행하려면 유효한 재정의하려는 `i18nSymbols`의 키에 [메시지 설명자](https://formatjs.io/docs/react-intl/api/#message-descriptor) 오브젝트를 전달해야 합니다. |
 | *inlineAlertSetup* | 문자열 | 아니요 | | 애플리케이션에서 전달하려는 경고 메시지를 추가합니다. 예: 이 폴더에 액세스할 수 있는 권한이 없다는 경고 메시지를 추가합니다. |
 | *intl* | 오브젝트 | 아니요 | | 대상 선택기는 기본 OOTB 번역을 제공합니다. `intl.locale` 속성을 통해 유효한 로케일 문자열을 제공하여 번역 언어를 선택할 수 있습니다. 예를 들어 `intl={{ locale: "es-es" }}`의 경우 </br></br> 지원되는 로케일 문자열은 언어 표준의 이름을 표현하기 위해 [ISO 639 - 코드](https://www.iso.org/iso-639-language-codes.html)를 따릅니다. </br></br> 지원되는 로케일 목록: 영어 - “en-us”(기본값) 스페인어 - “es-es” 독일어 - “de-de” 프랑스어 - “fr-fr” 이탈리아어 - “it-it” 일본어 - “ja-jp” 한국어 - “ko-kr” 포르투갈어 - “pt-br” 중국어(번체) - “zh-cn” 중국어(대만) - “zh-tw” |
@@ -208,7 +208,7 @@ interface SelectedDestination {
 
 ### 예 1: 대상 선택기에서 폴더 만들기
 
-대상 선택기를 사용하면 새 폴더를 만들어 특정 위치에서 자산을 업로드, 이동 또는 복사할 수 있습니다.
+대상 선택기 를 사용하면 특정 위치에서 자산을 업로드, 이동 또는 복사할 새 폴더를 만들 수 있습니다.
 
 ![create-folder-destination-selector](assets/create-folder-destination-selector.png)
 
@@ -241,7 +241,7 @@ interface SelectedDestination {
 
 ### 검색 창 {#search-bar}
 
-대상 선택기를 사용하면 선택한 저장소 내에서 자산의 전체 텍스트 검색을 수행할 수 있습니다. 예를 들어 검색 창에 `wave` 키워드를 입력하면 메타데이터 속성에 언급된 것 중 `wave` 키워드가 있는 모든 자산이 표시됩니다.
+대상 선택기 를 사용하면 선택한 저장소 내의 에셋에 대해 전체 텍스트 검색을 수행할 수 있습니다. 예를 들어 검색 창에 `wave` 키워드를 입력하면 메타데이터 속성에 언급된 것 중 `wave` 키워드가 있는 모든 자산이 표시됩니다.
 
 ### 정렬 {#sorting}
 
@@ -249,7 +249,7 @@ interface SelectedDestination {
 
 ### 자산 저장소 {#assets-repo}
 
-대상 선택기를 통해 AEM 애플리케이션에서 원하는 저장소의 데이터를 볼 수도 있습니다. `repositoryID` 속성을 사용하여 대상 선택기의 첫 번째 인스턴스에서 보려는 대상 폴더의 경로를 초기화할 수 있습니다.
+대상 선택기를 사용하면 AEM 애플리케이션에서 사용할 수 있는 원하는 저장소의 데이터를 볼 수도 있습니다. `repositoryID` 속성을 사용하여 대상 선택기의 첫 번째 인스턴스에서 보려는 대상 폴더의 경로를 초기화할 수 있습니다.
 
 ### 접미사 또는 접두사 추가 {#add-suffix-or-prefix}
 
@@ -257,11 +257,11 @@ interface SelectedDestination {
 
 ### 새 폴더 만들기 {#create-new-folder}
 
-이를 통해 [!DNL Cloud Service]로서 [!DNL Adobe Experience Manager]의 대상 폴더에서 새 폴더를 만들 수 있습니다.
+폴더의 대상 폴더에 새 폴더를 만들 수 있습니다. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 
 ### 보기 유형 {#types-of-view}
 
-대상 선택기를 사용하면 네 가지 다른 보기에서 자산을 볼 수 있습니다.
+대상 선택기 를 사용하면 에셋을 다음 네 가지 보기로 볼 수 있습니다.
 
 * **![목록 보기](assets/do-not-localize/list-view.png) [!UICONTROL 목록 보기]**: 목록 보기에는 스크롤 가능한 파일과 폴더가 단일 열에 표시됩니다.
 * **![격자 보기](assets/do-not-localize/grid-view.png) [!UICONTROL 격자 보기]**: 격자 보기에는 스크롤 가능한 파일과 폴더가 행과 열의 격자로 표시됩니다.
@@ -270,8 +270,8 @@ interface SelectedDestination {
 
 ### 정보 {#info}
 
-정보 또는 정보 아이콘을 사용하여 선택한 자산의 메타데이터를 볼 수 있습니다. 차원, 크기, 설명, 경로, 수정한 날짜 및 만든 날짜 등 다양한 세부 정보가 포함됩니다. 메타데이터 정보를 제공하는 동시에 새 자산을 업로드하거나 복사 또는 만듭니다.
+정보 또는 정보 아이콘을 사용하면 선택한 에셋의 메타데이터를 볼 수 있습니다. 차원, 크기, 설명, 경로, 수정한 날짜 및 만든 날짜 등 다양한 세부 정보가 포함됩니다. 메타데이터 정보를 제공하는 동시에 새 자산을 업로드하거나 복사 또는 만듭니다.
 
 ### 폴더 선택 {#select-folder}
 
-폴더 선택 버튼을 사용하여 자산을 선택하면 대상 선택기의 [속성](#destination-selector-properties)과 연관된 다양한 작업을 수행할 수 있습니다.
+폴더 선택 단추를 사용하여 다음과 관련된 다양한 작업을 수행할 에셋을 선택할 수 있습니다. [속성](#destination-selector-properties) 대상 선택기에서.

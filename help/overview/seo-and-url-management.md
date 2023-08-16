@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service를 위한 SEO 및 URL 관리 모범 사례
 description: Adobe Experience Manager as a Cloud Service를 위한 SEO 및 URL 관리 모범 사례
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3706'
-ht-degree: 100%
+source-wordcount: '3705'
+ht-degree: 99%
 
 ---
 
@@ -191,7 +191,7 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
 
 페이지 이름을 현지화할 때 어려움은 AEM 플랫폼에서 사용할 수 있는 많은 현지화 도구가 지속적인 콘텐츠 동기화를 위해 로케일 간 페이지 이름을 일치시켜야 한다는 것입니다.
 
-`sling:alias` 속성을 사용하면 문제를 해결할 수 있습니다. `sling:alias`를 리소스에 속성으로 추가하여 리소스에 별칭을 허용할 수 있습니다. 앞의 예에서
+다음 `sling:alias` 속성을 사용하면 우리의 케이크를 먹고 먹을 수 있습니다. `sling:alias`를 리소스에 속성으로 추가하여 리소스에 별칭을 허용할 수 있습니다. 앞의 예에서
 
 * JCR의 페이지를 만든 위치:
   `…/es/home`

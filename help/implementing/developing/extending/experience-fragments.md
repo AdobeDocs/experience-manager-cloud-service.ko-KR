@@ -2,9 +2,9 @@
 title: 경험 조각 개요
 description: Adobe Experience Manager as a Cloud Service 경험 조각을 확장합니다.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1641'
+source-wordcount: '1640'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ An [경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments
 
 * 또는 다음으로 끝남: `-src`, 또는 `-href`
 
-예:
+예를 들면 다음과 같습니다.
 
 `.../brooklyn-coat/master.plain.html`
 
@@ -124,7 +124,7 @@ AEM에서는 경험 조각을 만들 수 있습니다. 경험 조각:
 <!--Using the [Export to Target](/help/sites-administering/experience-fragments-target.md) feature, you can:
 -->
 
-Target으로 내보내기 기능을 사용하여 다음과 같은 작업을 수행할 수 있습니다.
+Export to Target 기능을 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 
 * 경험 조각 만들기,
 * 구성 요소를 추가합니다.
@@ -138,7 +138,7 @@ This feature can be [enabled on an author instance of AEM](/help/sites-administe
 
 링크 외부화는 Target 오퍼의 HTML 버전을 생성할 때 필요한 올바른 URL을 결정하고 이를 Adobe Target으로 전송하는 데 사용됩니다. Adobe Target에서는 Target HTML 오퍼 내의 모든 링크에 공개적으로 액세스할 수 있어야 하므로 이 프로세스가 필요합니다. 즉, 링크가 참조하는 모든 리소스 및 경험 조각 자체를 사용하려면 먼저 게시해야 합니다.
 
-기본적으로 Target HTML 오퍼를 구성하면 AEM의 사용자 지정 Sling 선택기로 요청이 전송됩니다. 이 선택기를 호출합니다. `.nocloudconfigs.html`. 이름에서 알 수 있듯이, 경험 조각의 일반 HTML 렌더링을 만들지만, 클라우드 구성(불필요한 정보)은 포함하지 않습니다.
+기본적으로 Target HTML 오퍼를 구성하면 요청이 AEM의 사용자 지정 Sling 선택기로 전송됩니다. 이 선택기를 호출합니다. `.nocloudconfigs.html`. 이름에서 알 수 있듯이, 경험 조각의 일반 HTML 렌더링을 만들지만, 클라우드 구성(불필요한 정보)은 포함하지 않습니다.
 
 HTML 페이지를 생성하면 Sling 재작성기 파이프라인이 출력으로 수정됩니다.
 
@@ -200,7 +200,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 인터페이스를 사용하려면 먼저 링크 재작성기 공급자 인터페이스를 구현하는 새 서비스 구성 요소가 포함된 번들을 만들어야 합니다.
 
-이 서비스는 다양한 링크에 액세스할 수 있도록 경험 조각 내보내기를 Target 재작성에 연결하는 데 사용됩니다.
+이 서비스는 다양한 링크에 액세스할 수 있도록 경험 조각을 Target으로 내보내기 재작성에 연결하는 데 사용됩니다.
 
 예, `ComponentService`:
 
@@ -247,7 +247,7 @@ public class GeneralLinkRewriter implements ExperienceFragmentLinkRewriterProvid
 
 `shouldRewrite(ExperienceFragmentVariation experienceFragment);`
 
-예:
+예를 들면 다음과 같습니다.
 
 ```java
 @Override
@@ -256,7 +256,7 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 }
 ```
 
-이 메서드는 Target 시스템으로 내보내기 시스템이 다시 작성하는 경험 조각 변형을 매개 변수로 수신합니다.
+이 메서드는 Target으로 내보내기 시스템이 다시 작성하는 경험 조각 변형을 매개 변수로 수신합니다.
 
 위의 예에서 다음을 다시 작성하려고 합니다.
 
@@ -286,7 +286,7 @@ Target으로 내보내기 시스템을 통과한 다른 경험 조각은 무시�
 * `attribute`
 정확한 속성 이름입니다.
 
-예를 들어 Target 시스템으로 내보내기 시스템에서 이 요소를 처리하는 경우 `CSSInclude` 다음으로:
+예를 들어 Target으로 내보내기 시스템에서 이 요소를 처리하는 경우 다음을 정의할 수 있습니다 `CSSInclude` 다음으로:
 
 ```java
 <link rel="stylesheet" href="/etc.clientlibs/foundation/clientlibs/main.css" type="text/css">
@@ -337,7 +337,7 @@ public String rewriteLink(String link, String tag, String attribute) {
 
 >[!NOTE]
 >
->위의 메서드가 를 반환하는 경우 `null`를 클릭하면 Target으로 내보내기 시스템은 리소스에 대한 상대 링크인 링크를 그대로 둡니다.
+>위의 메서드가 를 반환하는 경우 `null`를 클릭한 다음 Target으로 내보내기 시스템은 리소스에 대한 상대 링크인 링크를 그대로 둡니다.
 
 #### 우선 순위 - getPriority {#priorities-getpriority}
 

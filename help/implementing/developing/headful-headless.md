@@ -2,10 +2,10 @@
 title: AEM Headful 및 Headless
 description: AEM 프로젝트는 Headful 및 Headless model 모델에서 구현될 수 있지만 양자택일은 아닙니다. AEM은 하나의 프로젝트에서 두 모델의 장점을 모두 활용할 수 있는 유연성을 제공합니다.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1010'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '1013'
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ AEM은 한 개의 플랫폼에서 콘텐츠 생성과 게재를 모두 관리할
 
 AEM을 사용하여 간단히 콘텐츠를 관리할 수도 있고, 다른 플랫폼에서 관리할 콘텐츠를 표시하고 게재할 수 있습니다. 이는 콘텐츠 관리의 기존 “Headless” 모델로서 콘텐츠 작성자와 개발자는 서로 다른 플랫폼에서 작업하여 콘텐츠 소비자에게 경험을 제공할 수 있습니다.
 
-그러나 양자택일이 될 필요는 없습니다. AEM은 프로젝트에 두 모델의 장점을 모두 활용할 수 있는 유연성을 제공합니다.
+그러나 이것은 양자택일 필요는 없다. AEM은 프로젝트에 두 모델의 장점을 모두 활용할 수 있는 유연성을 제공합니다.
 
 ![AEM 구현 모델](/help/headless/assets/aem-implementation-models.png)
 
@@ -27,7 +27,7 @@ Headful 또는 전체 스택 모델에서 콘텐츠는 Java, HTL 등을 기반�
 
 Headless 모델에서 콘텐츠는 AEM 저장소에서 관리되지만 REST와 GraphQL 등 API를 통해 다른 시스템에 게재되어 사용자 경험에 필요한 콘텐츠를 렌더링합니다. 이 모델에서 콘텐츠는 AEM에서 생성되지만 스타일 지정, 프레젠테이션과 게재는 모두 다른 플랫폼에서 이뤄집니다.
 
-단일 페이지 애플리케이션(SPA)은 종종 AEM에서 Headless 방식으로 게재되는 콘텐츠의 대상이기도 합니다. 단, 해당 SPA는 완전히 AEM 외부에 있을 필요는 없습니다. AEM을 통해 SPA가 AEM에 통합되는 정도를 파악할 수 있습니다. 예를 살펴보겠습니다.
+단일 페이지 애플리케이션(SPA)은 종종 AEM에서 Headless 방식으로 게재되는 콘텐츠의 대상이기도 합니다. 그러나 이러한 SPA이 전적으로 AEM 외부에 있을 필요는 없습니다. AEM을 사용하면 SPA이 AEM에 통합되는 정도를 결정할 수 있습니다. 예를 살펴보겠습니다.
 
 ## 웹 샵 예 {#web-shop-example}
 

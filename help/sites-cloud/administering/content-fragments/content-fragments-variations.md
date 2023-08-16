@@ -4,10 +4,10 @@ description: 변형을 통해 조각에 대한 콘텐츠를 작성한 다음 목
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2461'
-ht-degree: 100%
+source-wordcount: '2458'
+ht-degree: 98%
 
 ---
 
@@ -151,7 +151,7 @@ ht-degree: 100%
 >
 >자세한 내용은 [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md) 설명서를 참조하십시오.
 
-Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음과 같은 항목을 정의할 수 있습니다.
+이렇게 하면 Markdown을 사용하여 텍스트 서식을 지정할 수 있습니다. 다음과 같은 항목을 정의할 수 있습니다.
 
 * 제목
 * 단락 및 줄 바꿈
@@ -234,14 +234,14 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
 
 >[!CAUTION]
 >
->영어는 즉시 이용 가능합니다.
+영어는 즉시 이용 가능합니다.
 >
->다른 언어는 소프트웨어 배포의 언어 모델 패키지로 사용할 수 있습니다.
+다른 언어는 소프트웨어 배포의 언어 모델 패키지로 사용할 수 있습니다.
 >
->* [프랑스어(fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [독일어(de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [이탈리아어(it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [스페인어(es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+* [프랑스어(fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+* [독일어(de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+* [이탈리아어(it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+* [스페인어(es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 1. **마스터** 또는 필요한 변형을 선택합니다.
@@ -310,7 +310,7 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
 
   >[!NOTE]
   >
-  >여러 개의 주석이 하나의 텍스트에 적용된 경우 드롭다운 선택기가 제공됩니다.
+  여러 개의 주석이 하나의 텍스트에 적용된 경우 드롭다운 선택기가 제공됩니다.
 
 * 주석이 적용된 전체 텍스트를 삭제하면 주석도 삭제됩니다.
 
@@ -328,13 +328,13 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
 
 >[!CAUTION]
 >
->참조 페이지에서 이러한 자산을 이동하거나 삭제할 수 없습니다. 이러한 작업은 조각 편집기에서 수행해야 합니다.
+참조 페이지에서 이러한 자산을 이동하거나 삭제할 수 없습니다. 이러한 작업은 조각 편집기에서 수행해야 합니다.
 >
->그러나 자산의 형식 지정(예: 크기)은 [페이지 편집기](/help/sites-cloud/authoring/fundamentals/content-fragments.md)에서 수행해야 합니다. 조각 편집기의 자산 표현은 순전히 콘텐츠 흐름을 작성하기 위한 것입니다.
+그러나 자산의 형식 지정(예: 크기)은 [페이지 편집기](/help/sites-cloud/authoring/fundamentals/content-fragments.md)에서 수행해야 합니다. 조각 편집기의 자산 표현은 순전히 콘텐츠 흐름을 작성하기 위한 것입니다.
 
 >[!NOTE]
 >
->[이미지](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)를 조각 및/또는 페이지에 추가하는 방법은 다양합니다.
+[이미지](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)를 조각 및/또는 페이지에 추가하는 방법은 다양합니다.
 
 1. 이미지를 추가할 위치에 커서를 놓습니다.
 1. **자산 삽입** 아이콘을 사용하여 검색 대화 상자를 엽니다.
@@ -352,10 +352,10 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
 
    >[!CAUTION]
    >
-   >자산을 추가한 후 형식을 다음과 같이 변경하는 경우
+   자산을 추가한 후 형식을 다음과 같이 변경하는 경우
    >
-   >* **일반 텍스트**: 자산이 조각에서 완전히 손실됩니다.
-   >* **Markdown**: 자산이 표시되진 않지만 **리치 텍스트**&#x200B;로 돌아가면 계속 표시됩니다.
+   * **일반 텍스트**: 자산이 조각에서 완전히 손실됩니다.
+   * **Markdown**: 자산이 표시되진 않지만 **리치 텍스트**&#x200B;로 돌아가면 계속 표시됩니다.
 
 ### 조각에 콘텐츠 조각 삽입 {#inserting-content-fragment-into-your-fragment}
 
@@ -365,17 +365,17 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
 
 >[!NOTE]
 >
->이 옵션은 **여러 줄 텍스트**&#x200B;가 **조각 참조 허용**&#x200B;으로 구성된 경우 사용할 수 있습니다.
+이 옵션은 **여러 줄 텍스트**&#x200B;가 **조각 참조 허용**&#x200B;으로 구성된 경우 사용할 수 있습니다.
 
 >[!CAUTION]
 >
->참조 페이지에서 이러한 자산을 이동하거나 삭제할 수 없습니다. 이러한 작업은 조각 편집기에서 수행해야 합니다.
+참조 페이지에서 이러한 자산을 이동하거나 삭제할 수 없습니다. 이러한 작업은 조각 편집기에서 수행해야 합니다.
 >
->그러나 자산의 형식 지정(예: 크기)은 [페이지 편집기](/help/sites-cloud/authoring/fundamentals/content-fragments.md)에서 수행해야 합니다. 조각 편집기의 자산 표현은 순전히 콘텐츠 흐름을 작성하기 위한 것입니다.
+그러나 자산의 형식 지정(예: 크기)은 [페이지 편집기](/help/sites-cloud/authoring/fundamentals/content-fragments.md)에서 수행해야 합니다. 조각 편집기의 자산 표현은 순전히 콘텐츠 흐름을 작성하기 위한 것입니다.
 
 >[!NOTE]
 >
->[이미지](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)를 조각 및/또는 페이지에 추가하는 방법은 다양합니다.
+[이미지](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)를 조각 및/또는 페이지에 추가하는 방법은 다양합니다.
 
 1. 조각을 추가하고자 하는 위치에 커서를 놓습니다.
 1. **콘텐츠 조각 삽입** 아이콘을 사용하여 검색 대화 상자를 엽니다.
@@ -393,18 +393,18 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
 
    >[!CAUTION]
    >
-   >다른 조각에 대한 참조를 추가한 후 형식을 다음과 같이 변경하는 경우
+   다른 조각에 대한 참조를 추가한 후 형식을 다음과 같이 변경하는 경우
    >
-   >* **일반 텍스트**: 참조가 조각에서 완전히 손실됩니다.
-   >* **Markdown**: 참조가 유지됩니다.
+   * **일반 텍스트**: 참조가 조각에서 완전히 손실됩니다.
+   * **Markdown**: 참조가 유지됩니다.
 
 ## 변형 관리 {#managing-variations}
 
->[!CONTEXTUALHELP]
->id="aemcloud_sites_contentfragments_variations"
->title="변형 - 조각 콘텐츠 작성"
->abstract="특정 채널에서 사용할 다양한 콘텐츠를 만드는 방법을 알아봅니다."
->additional-url="https://video.tv.adobe.com/v/333295" text="콘텐츠 조각 변형"
+[!CONTEXTUALHELP]
+id="aemcloud_sites_contentfragments_variations"
+title="변형 - 조각 콘텐츠 작성"
+abstract="특정 채널에서 사용할 다양한 콘텐츠를 만드는 방법을 알아봅니다."
+additional-url="https://video.tv.adobe.com/v/333295" text="콘텐츠 조각 변형"
 
 ### 변형 만들기 {#creating-a-variation}
 
@@ -420,12 +420,12 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
 
    >[!NOTE]
    >
-   >새 변형을 만들 때 새 변형은 현재 열려 있는 변형이 아니라 항상 복사되어 있는 **마스터**&#x200B;입니다.
+   새 변형을 만들 때 새 변형은 현재 열려 있는 변형이 아니라 항상 복사되어 있는 **마스터**&#x200B;입니다.
 
 
    >[!NOTE]
    >
-   >변형을 새로 만들면 **마스터** 변형에 현재 할당된 모든 **태그**&#x200B;가 새 변형에 복사됩니다.
+   변형을 새로 만들면 **마스터** 변형에 현재 할당된 모든 **태그**&#x200B;가 새 변형에 복사됩니다.
 
 ### 변형 편집 {#editing-a-variation}
 
@@ -450,7 +450,7 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
 
 >[!NOTE]
 >
->이 작업은 변형 **제목**&#x200B;에만 영향을 줍니다.
+이 작업은 변형 **제목**&#x200B;에만 영향을 줍니다.
 
 ### 변형 삭제 {#deleting-a-variation}
 
@@ -464,23 +464,23 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
 
 >[!NOTE]
 >
->**마스터**&#x200B;는 삭제할 수 없습니다.
+**마스터**&#x200B;는 삭제할 수 없습니다.
 
 ### 마스터와 동기화 {#synchronizing-with-master}
 
 **마스터**&#x200B;는 콘텐츠 조각의 필수적인 부분이며, 정의에 따라 콘텐츠의 마스터 사본은 보존되지만 변형에는 해당 콘텐츠의 개별 업데이트 및 맞춤화 버전이 포함됩니다. 마스터가 업데이트되면 이러한 변경 내용이 변형과 관련이 있으므로 이들 변경 내용을 해당 변형으로 전파해야 합니다.
 
-변형을 편집할 때 변형의 현재 요소를 마스터와 동기화하는 작업을 수행할 수 있습니다. 이렇게 하면 마스터에 수행된 변경 내용을 필요한 변형에 자동으로 복사할 수 있습니다.
+변형을 편집할 때 변형의 현재 요소를 마스터와 동기화하는 작업을 수행할 수 있습니다. 이렇게 하면 기본으로 수행된 변경 내용을 필요한 변형에 자동으로 복사할 수 있습니다.
 
 >[!CAUTION]
 >
->*동기화는&#x200B;**마스터**의 변경 내용을*&#x200B;변형에 복사하는 데에만 사용할 수 있습니다.
+*동기화는&#x200B;**마스터**의 변경 내용을*&#x200B;변형에 복사하는 데에만 사용할 수 있습니다.
 >
->변형의 현재 요소만 동기화됩니다.
+변형의 현재 요소만 동기화됩니다.
 >
->동기화는 **여러 줄 텍스트** 데이터 유형에서만 작동합니다.
+동기화는 **여러 줄 텍스트** 데이터 유형에서만 작동합니다.
 >
->*변형의 변경 내용을&#x200B;**마스터***에 전송하는 선택은 할 수 없습니다.
+*변형의 변경 내용을&#x200B;**마스터***에 전송하는 선택은 할 수 없습니다.
 
 1. 조각 편집기에서 콘텐츠 조각을 엽니다. **마스터**&#x200B;가 편집되었는지 확인합니다.
 

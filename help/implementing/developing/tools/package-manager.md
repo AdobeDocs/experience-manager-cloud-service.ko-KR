@@ -4,9 +4,9 @@ description: Package Manager를 사용하여 패키지 관리를 하는 AE의 �
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3775'
+source-wordcount: '3770'
 ht-degree: 4%
 
 ---
@@ -105,7 +105,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 Package Manager 는 네 가지 주요 기능 영역으로 나뉩니다.
 
-* **왼쪽 탐색 패널** - 이 패널을 통해 패키지 목록을 필터링하고 정렬할 수 있습니다.
+* **왼쪽 탐색 패널** - 이 패널을 사용하면 패키지 목록을 필터링하고 정렬할 수 있습니다.
 * **패키지 목록** - 왼쪽 탐색 패널의 선택 항목별로 필터링되고 정렬된 인스턴스의 패키지 목록입니다.
 * **활동 로그** - 이 패널은 처음에 최소화되며, 패키지를 빌드하거나 설치할 때와 같은 패키지 관리자의 활동을 자세히 설명하도록 확장됩니다. [작업 로그] 탭에는 다음과 같은 추가 버튼이 있습니다.
    * **로그 지우기**
@@ -546,7 +546,7 @@ POST 요청을 통해 유효성을 검사할 때 응답은 JSON 개체로 다시
 
 1. 클릭 **설치**.
 
-1. 작업 로그에는 설치 진행 상황이 자세히 설명되어 있습니다.
+1. 작업 로그에는 설치 진행률이 자세히 설명되어 있습니다.
 
 설치가 완료되고 성공하면 패키지 목록이 업데이트되고 **설치됨** 패키지 상태에 나타납니다.
 

@@ -3,10 +3,10 @@ title: AEM Headless CMS 개발자 여정
 description: Adobe Experience Manager(AEM) as a Headless CMS를 사용하여 Headless 개발에 대해 알아봅니다. 콘텐츠 모델, 콘텐츠 조각, GraphQL API와 같은 기능을 사용하여 Headless 콘텐츠 게재를 개선하는 방법에 대해 알아봅니다.
 landing-page-description: Headless 콘텐츠 게재 및 구현을 이해합니다. 비즈니스 내부에서 전략을 개발하는 방법에 대해 자세히 알아봅니다.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1082'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -55,7 +55,7 @@ AEM의 Headless 구현은 콘텐츠 조각 모델 및 콘텐츠 조각을 사용
 
 AEM의 Headless에 대한 기본 지식을 제공하는 다양한 주제는 이 여정에서 자세히 다룹니다.
 
-여정의 특정 부분으로 바로 이동할 수 있지만, 많은 개념이 이전 문서의 개념을 기반으로 빌드됩니다. 처음부터 시작하여 순차적으로 진행하는 것이 좋습니다.
+여정의 특정 부분으로 바로 이동할 수 있지만, 많은 개념이 이전 문서의 개념을 기반으로 빌드됩니다. Adobe은 처음부터 시작하여 순차적으로 진행하는 것을 권장합니다.
 
 | # | 문서 | 설명 |
 |---|---|---|

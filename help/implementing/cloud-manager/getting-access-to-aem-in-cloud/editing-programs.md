@@ -2,10 +2,10 @@
 title: 프로그램 편집
 description: 프로덕션 및 샌드박스 프로그램을 만든 후 옵션을 조정하도록 편집하는 방법을 알아봅니다.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '520'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '516'
+ht-degree: 97%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 100%
 
 ![프로그램에 대해 활성화된 향상된 보안](assets/edit-program-enhanced.png)
 
-프로그램 생성 이후에는 이 설정을 수정할 수 없습니다. 향상된 보안 옵션에 대한 자세한 내용은 [프로덕션 프로그램 만들기](creating-production-programs.md) 문서를 참조하십시오.
+프로그램을 만든 후에는 이 설정을 수정할 수 없습니다. 향상된 보안 옵션에 대한 자세한 내용은 [프로덕션 프로그램 만들기](creating-production-programs.md) 문서를 참조하십시오.
 
 ## 샌드박스 프로그램 삭제 {#delete-sandbox-program}
 

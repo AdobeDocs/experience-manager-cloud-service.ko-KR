@@ -2,9 +2,9 @@
 title: AEM Forms as a Cloud Service - 커뮤니케이션
 description: XDP 및 PDF 템플릿과 데이터 자동 병합 또는 PCL, ZPL 및 PostScript 형식으로 출력 생성
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '683'
 ht-degree: 7%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 7%
 
 # 동기 처리 사용 {#sync-processing-introduction}
 
-Forms as a Cloud Service - 커뮤니케이션 API를 통해 비즈니스 서신, 문서, 명세서, 청구 처리 편지, 혜택 공지, 청구 처리 편지, 월별 청구서 및 시작 키트와 같은 브랜드 지향적이고 개인화된 커뮤니케이션을 만들고, 조합하고, 제공할 수 있습니다. 커뮤니케이션 API를 사용하여 템플릿(XFA 또는 PDF)을 고객 데이터와 결합하여 PDF, PS, PCL, DPL, IPL 및 ZPL 형식의 문서를 생성할 수 있습니다.
+Forms as a Cloud Service - 커뮤니케이션 API를 사용하면 비즈니스 서신, 문서, 명세서, 청구 처리 편지, 혜택 공지, 청구 처리 편지, 월별 청구서 및 시작 키트와 같은 브랜드 지향적이고 개인화된 커뮤니케이션을 만들고, 조합하고, 제공할 수 있습니다. 커뮤니케이션 API를 사용하여 템플릿(XFA 또는 PDF)을 고객 데이터와 결합하여 PDF, PS, PCL, DPL, IPL 및 ZPL 형식의 문서를 생성할 수 있습니다.
 
 하나 이상의 템플릿과 각 템플릿에 대한 여러 XML 데이터 레코드가 있는 시나리오를 고려하십시오. 커뮤니케이션 API를 사용하여 각 레코드에 대한 인쇄 문서를 생성할 수 있습니다. <!-- You can also combine the records into a single document. --> 그 결과 비대화형 PDF 문서가 만들어집니다. 비대화형 PDF 문서에서는 사용자가 해당 필드에 데이터를 입력할 수 없습니다.
 
@@ -51,9 +51,9 @@ Forms as a Cloud Service - 커뮤니케이션은 예약된 문서 생성을 위�
    1. 액세스 토큰을 전달자 인증 토큰으로 사용하여 Experience Manager API를 실행합니다.
    1. [Experience Manager 환경에서 기술 계정 사용자에 대한 적절한 권한 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
 
-   >[!NOTE]
-   >
-   >Adobe은 프로덕션 환경에서 토큰 기반 인증을 사용할 것을 권장합니다.
+  >[!NOTE]
+  >
+  >Adobe은 프로덕션 환경에서 토큰 기반 인증을 사용할 것을 권장합니다.
 
 <!-- 
 

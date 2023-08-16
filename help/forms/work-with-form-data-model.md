@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4140'
+source-wordcount: '4137'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/work-with-form-data-model.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/work-with-form-data-model.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 
@@ -452,7 +452,7 @@ operationOptions.setValidationOptions(ValidationOptions.FULL);
    <td>입력 데이터 소스</td> 
   </tr> 
   <tr> 
-   <td>필수</td> 
+   <td>required</td> 
    <td>true인 경우 매개 변수는 입력 데이터에 포함되어야 합니다.</td> 
    <td>Swagger, WSDL 및 데이터베이스</td> 
   </tr> 

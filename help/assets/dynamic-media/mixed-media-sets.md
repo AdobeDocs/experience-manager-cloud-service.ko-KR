@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1501'
+source-wordcount: '1500'
 ht-degree: 14%
 
 ---
@@ -148,12 +148,11 @@ Start by uploading the images and videos for your Mixed Media Sets. 사용자는
 
    * 자산을 이름별로 오름차순 또는 내림차순으로 정렬하려면 왼쪽 패널에서 을 선택합니다 **[!UICONTROL 에셋]** (그림 아이콘). 의 오른쪽에 **[!UICONTROL 에셋]** 머리글에서 위쪽 또는 아래쪽 캐럿 아이콘을 선택합니다.
 
-      >[!NOTE]
-      >
-      >* 전체 혼합 미디어 세트를 모든 보기 모드(예: **[!UICONTROL 카드 보기]** 또는 **[!UICONTROL 열 보기]**) 혼합 미디어 세트로 이동합니다. 자산을 마우스로 가리킨 다음, 선택할 수 있도록 확인 표시 아이콘을 선택합니다. 누르기 **[!UICONTROL 백스페이스]** 키보드에서 또는 을(를) 선택합니다 **[!UICONTROL 자세히]** (세 점) 을 클릭하여 도구 모음에서 **[!UICONTROL 삭제]**.
-      >
-      >* 해당 세트로 이동하여 혼합 미디어 세트의 자산을 편집할 수 있습니다. 왼쪽 레일에서 을 선택합니다. **[!UICONTROL 구성원 설정]**&#x200B;을(를) 선택한 다음 **[!UICONTROL 연필]** 아이콘을 클릭하여 편집 창을 엽니다.
-
+     >[!NOTE]
+     >
+     >* 전체 혼합 미디어 세트를 모든 보기 모드(예: **[!UICONTROL 카드 보기]** 또는 **[!UICONTROL 열 보기]**) 혼합 미디어 세트로 이동합니다. 자산을 마우스로 가리킨 다음, 선택할 수 있도록 확인 표시 아이콘을 선택합니다. 누르기 **[!UICONTROL 백스페이스]** 키보드에서 또는 을(를) 선택합니다 **[!UICONTROL 자세히]** (세 점) 을 클릭하여 도구 모음에서 **[!UICONTROL 삭제]**.
+     >
+     >* 해당 세트로 이동하여 혼합 미디어 세트의 자산을 편집할 수 있습니다. 왼쪽 레일에서 을 선택합니다. **[!UICONTROL 구성원 설정]**&#x200B;을(를) 선택한 다음 **[!UICONTROL 연필]** 아이콘을 클릭하여 편집 창을 엽니다.
 
 1. 선택 **[!UICONTROL 저장]** 편집을 마치면
 
@@ -162,7 +161,6 @@ Start by uploading the images and videos for your Mixed Media Sets. 사용자는
    >* To edit the assets in a Mixed Media Set - Navigate to the Mixed Media Set. Experience Manager 세트 미리 보기 페이지에서 세트를 열 수 있도록 세트를 탭(선택하지 않음)합니다. 왼쪽 레일에서 드롭다운 캐럿을 선택하여 드롭다운 목록을 연 다음 을 선택합니다 **[!UICONTROL 구성원 설정]**. 구성원 설정 페이지에서 자산을 마우스로 가리킨 다음 을 선택합니다 **[!UICONTROL 편집]** (연필 아이콘) 을 클릭하여 편집 페이지를 엽니다.
    >
    >* To delete an entire Mixed Media Set - From any viewing mode (such as Card view or Column view), navigate to the Mixed Media Set. 세트를 마우스로 가리킨 다음 을 선택합니다 **[!UICONTROL 선택]** (확인 표시 아이콘) 누르기 **[!UICONTROL 백스페이스]** 키보드에서 또는 을(를) 선택합니다 **[!UICONTROL 자세히]** (세 점의 행), 다음 선택 **[!UICONTROL 삭제]**.
-
 
 ## 혼합 미디어 집합 미리 보기 {#previewing-mixed-media-sets}
 

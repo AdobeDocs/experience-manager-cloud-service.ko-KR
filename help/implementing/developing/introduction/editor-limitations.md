@@ -2,9 +2,9 @@
 title: 편집기 제한 사항
 description: 터치 지원 UI의 편집기는 오버레이를 사용하여 iframe에 한정된 컨텐츠와 상호 작용합니다. 이러한 상호 작용은 편집자와 개발자의 사용에 모두 제한을 만듭니다.
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '313'
 ht-degree: 10%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 10%
 
 ### 구조 페이지 {#structure-pages}
 
-페이지 이름을 지정할 수 없습니다. `structure`. 이름이 지정된 페이지 `structure` 페이지 편집기에서 편집할 수 없습니다.
+Pages의 이름을 지정할 수 없습니다. `structure`. 이름이 지정된 페이지 `structure` 페이지 편집기에서 편집할 수 없습니다.
 
 ## CSS 제한 사항 {#css-limitations}
 

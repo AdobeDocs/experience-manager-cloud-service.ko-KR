@@ -2,9 +2,9 @@
 title: 쿼리 빌더 API
 description: 자산 공유 쿼리 빌더의 기능은 Java&trade; API 및 REST API를 통해 노출됩니다.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2008'
+source-wordcount: '2006'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ path=/content
 orderby=path
 ```
 
-동일한 쿼리(매개 변수 포함) `p.limit=-1`) **모든 결과 반환** (인스턴스에 따라 높은 숫자가 될 수 있습니다.)
+동일한 쿼리(매개 변수 사용) `p.limit=-1`) **모든 결과 반환** (인스턴스에 따라 높은 숫자가 될 수 있습니다.)
 
 `http://<host>:<port>/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=wknd/components/structure/page&1_property.operation=like&orderby=path&p.limit=-1`
 
@@ -80,7 +80,7 @@ orderby=path
 
 의 목적 `p.guessTotal` 매개 변수는 최소 실행 가능 수를 결합하여 표시할 수 있는 적절한 결과 수를 반환하는 것입니다 `p.offset` 및 `p.limit` 값. 이 매개 변수를 사용하면 결과 세트 크기가 클수록 성능이 향상됩니다. 이 매개 변수는 전체 합계를 계산하는 것을 방지합니다(예: 호출). `result.getSize()`)를 참조하고 Oak 엔진 및 색인까지 최적화된 전체 결과 세트를 읽습니다. 이 프로세스는 실행 시간과 메모리 사용량 모두에서 수십만 개의 결과가 있을 때 상당한 차이가 될 수 있습니다.
 
-매개 변수의 단점은 사용자가 정확한 합계를 보지 못한다는 것입니다. 하지만 다음과 같이 최소 숫자를 설정할 수 있습니다. `p.guessTotal=1000` 그래서 항상 1000까지 읽습니다. 이러한 방식으로 작은 결과 세트에 대한 정확한 합계를 얻지만, 더 많은 경우 &quot;외&quot;만 표시할 수 있습니다.
+매개 변수의 단점은 사용자가 정확한 합계를 보지 못한다는 것입니다. 하지만 다음과 같이 최소 숫자를 설정할 수 있습니다. `p.guessTotal=1000` 그래서 항상 1000까지 읽습니다. 이러한 방식으로 작은 결과 세트에 대한 정확한 합계를 얻지만, 더 많은 경우 &quot;및 더 많은&quot;만 표시할 수 있습니다.
 
 추가 `p.guessTotal=true` 작동 방식을 확인하려면 아래 쿼리를 참조하십시오.
 

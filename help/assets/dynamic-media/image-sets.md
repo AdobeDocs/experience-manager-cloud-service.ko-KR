@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2135'
+source-wordcount: '2134'
 ht-degree: 6%
 
 ---
@@ -43,7 +43,7 @@ Image Sets are designated by a banner with the word `IMAGESET`. 또한 이미지
 
 빠르게 시작하고 실행하려면:
 
-1. 선택 사항. [일괄처리 집합 사전 설정 만들기](/help/assets/dynamic-media/batch-set-presets-dm.md) 회전 집합 이미지가 업로드되는 새 폴더에 적용합니다.
+1. 옵션. [일괄처리 집합 사전 설정 만들기](/help/assets/dynamic-media/batch-set-presets-dm.md) 회전 집합 이미지가 업로드되는 새 폴더에 적용합니다.
 
    일괄처리 집합 사전 설정을 사용하면 이미지 집합 생성을 자동화할 수 있습니다.
 
@@ -121,7 +121,6 @@ Image Sets are designated by a banner with the word `IMAGESET`. 또한 이미지
 >* 같은 재킷의 검정색, 갈색, 그리고 초록색 샷입니다.
 >* 검정색, 갈색 및 녹색 썸네일.
 
-
 ## 이미지 집합 만들기 {#creating-image-sets}
 
 사용자 인터페이스 또는 API를 통해 이미지 세트를 만들 수 있습니다.
@@ -164,6 +163,7 @@ Image Sets are designated by a banner with the word `IMAGESET`. 또한 이미지
    * 이미지 세트 편집기 페이지의 왼쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 자산 추가]**.
 
    * 이미지 세트 편집기 페이지의 중간 부분에서 다음을 선택합니다 **[!UICONTROL 자산 선택기를 열려면 탭하십시오.]**.
+
    이미지 세트에 포함할 자산을 탭하여 선택합니다. 선택한 에셋에는 확인 표시 아이콘이 있습니다. 완료되면 페이지의 오른쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 선택]**.
 
    자산 선택기를 사용하여 키워드를 입력하고 를 선택하여 자산을 검색할 수 있습니다 **[!UICONTROL 반환]**. You can also apply filters to refine your search results. You can filter by path, collection, file type, and tag. 필터를 선택한 다음 **[!UICONTROL 필터]** 아이콘을 클릭합니다. 보기 아이콘을 선택하고 을 선택하여 보기 변경 **[!UICONTROL 열 보기]**, **[!UICONTROL 카드 보기]**, 또는 **[!UICONTROL 목록 보기]**.
@@ -185,6 +185,7 @@ Image Sets are designated by a banner with the word `IMAGESET`. 또한 이미지
    * 이미지를 삭제하려면 이미지를 선택하고 을 선택합니다 **[!UICONTROL 자산 삭제]**.
 
    * 페이지의 오른쪽 위 모서리 근처에서 사전 설정을 적용하려면 **[!UICONTROL 사전 설정]**&#x200B;을 클릭한 다음 사전 설정을 선택하여 모든 에셋에 한 번에 적용합니다.
+
    >[!NOTE]
    >
    >이미지 세트를 만들 때 이미지 세트 썸네일을 변경할 수 있습니다. 또는 이미지 세트의 에셋에 따라 Experience Manager이 썸네일을 자동으로 선택하도록 할 수 있습니다. 썸네일을 선택하려면 **[!UICONTROL 썸네일 변경]** 이미지 세트 편집기 페이지의 제목 필드 위에 있습니다. 그런 다음 이미지를 선택합니다(다른 폴더로 이동하여 이미지를 찾을 수도 있음). 썸네일을 선택한 경우 Experience Manager이 이미지 세트에서 썸네일을 생성하도록 결정한 다음 을 선택합니다. **[!UICONTROL 다음으로 전환]** **[!UICONTROL 자동 썸네일]**.
@@ -203,17 +204,17 @@ Image Sets are designated by a banner with the word `IMAGESET`. 또한 이미지
 
 * 에셋의 속성을 엽니다. 속성은 선택한 에셋이 참조되거나 의 멤버를 설정하는 항목을 나타냅니다. 전체 세트를 보려면 세트 이름을 선택합니다.
 
-   ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties.png)
+  ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties.png)
 
 * From a member image of any set. 다음 항목 선택 **[!UICONTROL 세트]** 메뉴: 자산이 멤버로 속한 세트를 표시합니다.
 
-   ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
+  ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
 * 검색에서 다음을 선택할 수 있습니다 **[!UICONTROL 필터]**, 다음 확장 **[!UICONTROL Dynamic Media]** 및 선택 **[!UICONTROL 세트]**.
 
-   UI에서 수동으로 만들었거나 일괄처리 집합 사전 설정을 통해 자동으로 만든 일치 세트가 검색 결과에 반환됩니다. 자동화된 세트의 경우 &quot;다음으로 시작&quot;을 사용하여 검색 쿼리가 수행됩니다. 이 Experience Manager 기준은 &quot;포함&quot;을 사용하는 기준이 되는 검색과 다릅니다. 필터 설정 **[!UICONTROL 세트]** 는 자동화된 집합을 검색하는 유일한 방법입니다.
+  UI에서 수동으로 만들었거나 일괄처리 집합 사전 설정을 통해 자동으로 만든 일치 세트가 검색 결과에 반환됩니다. 자동화된 세트의 경우 &quot;다음으로 시작&quot;을 사용하여 검색 쿼리가 수행됩니다. 이 Experience Manager 기준은 &quot;포함&quot;을 사용하는 기준이 되는 검색과 다릅니다. 필터 설정 **[!UICONTROL 세트]** 는 자동화된 집합을 검색하는 유일한 방법입니다.
 
-   ![chlimage_1-134](assets/chlimage_1-134.png)
+  ![chlimage_1-134](assets/chlimage_1-134.png)
 
 >[!NOTE]
 >
@@ -242,10 +243,9 @@ Image Sets are designated by a banner with the word `IMAGESET`. 또한 이미지
    * 에셋 순서를 변경하려면 이미지를 새 위치로 드래그합니다(항목을 이동하려면 순서 변경 아이콘을 선택합니다.).
    * 항목을 오름차순 또는 내림차순으로 정렬하려면 열 머리글을 클릭합니다.
    * 에셋을 추가하거나 기존 에셋을 업데이트하려면 **[!UICONTROL 자산 추가]**. 에셋으로 이동하여 선택한 다음 를 선택합니다 **[!UICONTROL 선택]** 페이지의 오른쪽 상단 모서리 근처.
-
-      >[!NOTE]
-      >
-      >Experience Manager이 썸네일에 사용하는 이미지를 다른 이미지로 교체하여 삭제해도 원래 에셋이 계속 표시됩니다.
+     >[!NOTE]
+     >
+     >Experience Manager이 썸네일에 사용하는 이미지를 다른 이미지로 교체하여 삭제해도 원래 에셋이 계속 표시됩니다.
    * 에셋을 삭제하려면 에셋을 선택한 다음 를 선택합니다 **[!UICONTROL 자산 삭제]**.
    * 페이지의 오른쪽 위 모서리 근처에서 사전 설정을 적용하려면 **[!UICONTROL 사전 설정]**&#x200B;을 클릭한 다음 뷰어 사전 설정을 선택합니다.
    * 썸네일을 추가하거나 변경하려면 에셋 오른쪽 옆에 있는 썸네일 아이콘을 선택합니다. 새 썸네일 또는 견본 에셋으로 이동하여 선택한 다음 를 선택합니다 **[!UICONTROL 선택]**.

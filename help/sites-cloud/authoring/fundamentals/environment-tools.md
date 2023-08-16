@@ -2,10 +2,10 @@
 title: 작성 환경 및 도구
 description: AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2153'
-ht-degree: 100%
+source-wordcount: '2150'
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 ## 사이트 관리 {#managing-your-site}
 
-**사이트** 콘솔에서는 헤더 막대, 도구 모음, 작업 아이콘(선택한 리소스에 대해 적용 가능), 이동 경로 및(선택 시) 보조 레일(예: 타임라인 및 참조)을 사용하여 웹 사이트를 탐색 및 관리할 수 있습니다.
+다음 **사이트** 콘솔을 사용하면 헤더 막대, 도구 모음, 작업 아이콘(선택한 리소스에 대해 적용 가능), 탐색 표시 및(선택 시) 보조 레일(예: 타임라인 및 참조)을 사용하여 웹 사이트를 탐색 및 관리할 수 있습니다.
 
 예를 들면 열 보기에서 다음 작업을 수행합니다.
 
@@ -265,9 +265,9 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 여러 작업을 허용하는 페이지를 편집할 때는 다음과 같은 다양한 모드가 있습니다.
 
 * [편집](/help/sites-cloud/authoring/fundamentals/editing-content.md) - 페이지 콘텐츠를 편집할 때 사용할 모드
-* [레이아웃](/help/sites-cloud/authoring/features/responsive-layout.md) - 디바이스에 따라 반응형 레이아웃을 만들고 편집할 수 있도록 허용(페이지가 레이아웃 컨테이너를 기반으로 하는 경우)
+* [레이아웃](/help/sites-cloud/authoring/features/responsive-layout.md) - 디바이스에 따라 응답형 레이아웃을 만들고 편집할 수 있도록 허용(페이지가 레이아웃 컨테이너를 기반으로 하는 경우)
 * [타겟팅](/help/sites-cloud/authoring/personalization/targeted-content.md) - 모든 채널에서 타겟팅과 측정을 통해 콘텐츠 관련성을 높입니다.
-* [타임워프](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - 특정 시점에 페이지 상태를 볼 수 있습니다.
+* [타임워프](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - 특정 시점의 페이지 상태를 볼 수 있습니다.
 * [Live Copy 상태](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) - Live Copy 상태와 상속되었거나 상속되지 않은 구성 요소에 대한 간단한 개요를 알 수 있습니다.
 * [개발자 모드](/help/implementing/developing/tools/developer-mode.md)
 * [미리보기](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - 페이지가 게시 환경에 표시되는 상태로 해당 페이지를 보거나 콘텐츠의 링크를 사용하여 탐색하는 데 사용됩니다.

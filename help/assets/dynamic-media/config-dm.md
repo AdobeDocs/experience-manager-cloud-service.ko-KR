@@ -4,16 +4,16 @@ description: Adobe Experience Manager as a Cloud Service에서 Dynamic Media을 
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3795'
+source-wordcount: '3794'
 ht-degree: 3%
 
 ---
 
 # Dynamic Media 구성 Cloud Service {#configuring-dynamic-media}
 
-개발, 스테이징 및 라이브 프로덕션과 같은 다양한 환경에 Adobe Experience Manager을 사용하는 경우 이러한 각 환경에 대해 Dynamic Media Cloud Services을 구성합니다.
+개발, 스테이징 및 라이브 프로덕션과 같은 다양한 환경에 Adobe Experience Manager을 사용하는 경우 이러한 각 환경에 대해 Dynamic Media Cloud Service을 구성합니다.
 
 참조: [Dynamic Media 회사 별칭 계정 구성](/help/assets/dynamic-media/dm-alias-account.md)
 
@@ -40,7 +40,6 @@ ht-degree: 3%
 >* CDN 수준에서 URL 리디렉션
 >* Akamai ChinaCDN(중국에서 최적의 전송을 위해)
 
-
 <!-- OBSOLETE CONTENT
 
 ## (Optional) Migrating Dynamic Media presets and configurations from 6.3 to 6.5 Zero Downtime {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
@@ -61,12 +60,12 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 -->
 
-## Cloud Services에서 Dynamic Media 구성 만들기 {#configuring-dynamic-media-cloud-services}
+## Cloud Service에서 Dynamic Media 구성 만들기 {#configuring-dynamic-media-cloud-services}
 
 <!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
 1. Experience Manager as a Cloud Service에서 Experience Manager as a Cloud Service 로고를 선택하여 전역 탐색 콘솔에 액세스합니다.
-1. 콘솔의 왼쪽에서 도구 아이콘을 선택한 다음 로 이동합니다. **[!UICONTROL Cloud Services > Dynamic Media 구성]**.
+1. 콘솔의 왼쪽에서 도구 아이콘을 선택한 다음 로 이동합니다. **[!UICONTROL Cloud Service > Dynamic Media 구성]**.
 1. Dynamic Media 구성 브라우저 페이지의 왼쪽 창에서 을(를) 선택합니다 **[!UICONTROL 글로벌]** ( 왼쪽에 있는 폴더 아이콘을 선택하지 마십시오. **[!UICONTROL 글로벌]**). 그런 다음 을 선택합니다 **[!UICONTROL 만들기]**.
 1. 다음에서 **[!UICONTROL Dynamic Media 구성 만들기]** 페이지에서 Dynamic Media 계정의 회사 관리자의 제목, Dynamic Media 계정 이메일 주소 및 암호를 입력한 다음 지역을 선택합니다. 이 정보는 프로비저닝 이메일에서 Adobe으로 제공됩니다. 이 이메일을 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
 1. 선택 **[!UICONTROL Dynamic Media에 연결]**.
@@ -93,7 +92,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    | 속성 | 설명 |
    |---|---|
-   | 회사 | Dynamic Media 계정의 이름입니다.<br>**중요 사항**: Experience Manager 인스턴스에서는 Cloud Services의 Dynamic Media 구성이 하나만 지원됩니다. 구성을 두 개 이상 추가하지 마십시오. Experience Manager 인스턴스의 여러 Dynamic Media 구성 _아님_ Adobe에서 지원하거나 권장합니다.<!-- CQDOC-19579 and CQDOC-19612 --><br>참조: [Dynamic Media 회사 별칭 계정 구성](/help/assets/dynamic-media/dm-alias-account.md). |
+   | 회사 | Dynamic Media 계정의 이름입니다.<br>**중요 사항**: Experience Manager 인스턴스에서는 Cloud Service의 Dynamic Media 구성이 하나만 지원됩니다. 구성을 두 개 이상 추가하지 마십시오. Experience Manager 인스턴스의 여러 Dynamic Media 구성 _아님_ Adobe에서 지원하거나 권장합니다.<!-- CQDOC-19579 and CQDOC-19612 --><br>참조: [Dynamic Media 회사 별칭 계정 구성](/help/assets/dynamic-media/dm-alias-account.md). |
    | 회사 루트 폴더 경로 | 회사의 루트 폴더 경로입니다. |
    | 자산 게시 | 다음 세 가지 옵션 중에서 선택할 수 있습니다.<br>**[!UICONTROL 즉시&#x200B;]**- 에셋이 업로드되면 시스템이 에셋을 수집하여 URL/임베드를 즉시 제공합니다. 에셋을 게시하는 데 필요한 사용자 개입이 없습니다.<br>**[!UICONTROL 활성화 시]** - URL/포함 링크를 제공하기 전에 먼저 에셋을 명시적으로 게시해야 합니다.<br>**[!UICONTROL 선택적 게시&#x200B;]**- 자산이 보안 미리 보기용으로만 자동 게시됩니다. 또한 공중영역에서 전달하기 위해 DMS7에 게시하지 않고 Experience Manager as a Cloud Service으로 명시적으로 게시할 수 있습니다. 향후에 이 옵션은 자산을 Experience Manager에 as a Cloud Service으로 게시하고 자산을 Dynamic Media에 함께 게시하여 서로 배타적으로 만듭니다. 즉, 스마트 자르기 또는 동적 변환과 같은 기능을 사용할 수 있도록 자산을 DMS7에 게시할 수 있습니다. 또는 자산을 미리 보기 위해 Experience Manager as a Cloud Service으로만 게시할 수 있습니다. 이러한 동일한 자산은 공개 도메인에서 제공하기 위해 DMS7에 게시되지 않습니다. |
    | 보안 미리 보기 서버 | 보안 변환 미리 보기 서버에 대한 URL 경로를 지정할 수 있습니다. 즉, 렌디션이 생성되면 Experience Manager as a Cloud Service에서 원격 Dynamic Media 렌디션에 안전하게 액세스하고 미리 볼 수 있습니다(바이너리가 Experience Manager as a Cloud Service 인스턴스로 다시 전송되지 않음).<br>Adobe 고유한 회사의 서버나 특수 서버를 사용할 특별한 배열이 없는 경우에는 이 설정을 지정된 대로 두는 것이 좋습니다. |
@@ -171,14 +170,14 @@ Dynamic Media의 암호 만료는 현재 시스템 날짜로부터 100년으로 
 선택하면 변경된 암호가 저장됩니다. **[!UICONTROL 저장]** 의 오른쪽 위 모서리 **[!UICONTROL Dynamic Media 구성 편집]** 페이지를 가리키도록 업데이트하는 중입니다.
 
 1. Experience Manager as a Cloud Service에서 Experience Manager as a Cloud Service 로고를 선택하여 전역 탐색 콘솔에 액세스합니다.
-1. 콘솔의 왼쪽에서 도구 아이콘을 선택한 다음 로 이동합니다. **[!UICONTROL Cloud Services > Dynamic Media 구성]**.
+1. 콘솔의 왼쪽에서 도구 아이콘을 선택한 다음 로 이동합니다. **[!UICONTROL Cloud Service > Dynamic Media 구성]**.
 1. Dynamic Media 구성 브라우저 페이지의 왼쪽 창에서 을(를) 선택합니다 **[!UICONTROL 글로벌]**. 의 왼쪽에 있는 폴더 아이콘을 선택하지 마십시오. **[!UICONTROL 글로벌]**. 그런 다음 을 선택합니다. **[!UICONTROL 편집]**.
 1. 다음에서 **[!UICONTROL Dynamic Media 구성 편집]** 페이지, 바로 아래 **[!UICONTROL 암호]** 필드, 선택 **[!UICONTROL 암호 변경]**.
 1. 다음에서 **[!UICONTROL 암호 변경]** 대화 상자에서 다음을 수행합니다.
 
    * 다음에서 **[!UICONTROL 새 암호]** 필드에 새 암호를 입력합니다.
 
-      다음 **[!UICONTROL 현재 암호]** 필드는 의도적으로 미리 채워져 있고 상호 작용에서 숨겨져 있습니다.
+     다음 **[!UICONTROL 현재 암호]** 필드는 의도적으로 미리 채워져 있고 상호 작용에서 숨겨져 있습니다.
 
    * 다음에서 **[!UICONTROL 암호 반복]** 필드에서 새 암호를 다시 입력한 다음 을 선택합니다 **[!UICONTROL 완료]**.
 
@@ -238,7 +237,6 @@ Dynamic Media Classic 사용자 인터페이스를 사용하여 Dynamic Media �
 * [색상 관리 구성](#configuring-color-management)
 * [지원되는 형식의 MIME 유형 편집](#editing-mime-types-for-supported-formats)
 * [지원되지 않는 형식에 대한 MIME 유형 추가](#adding-mime-types-for-unsupported-formats)
-
 <!-- OBSOLETE BUT LEAVE FOR POSSIBLE FUTURE* [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) -->
 
 #### 이미지 서버에 대한 Dynamic Media 게시 설정 구성 {#publishing-setup-for-image-server}
@@ -292,7 +290,7 @@ Dynamic Media에서 처리하는 자산 유형을 정의하고 고급 자산 처
 
 * Adobe PDF을 eCatalog 자산으로 변환합니다.
 * 개인화를 위해 Adobe Photoshop PSD 문서(.personalization)를 배너 템플릿 자산으로 변환합니다.
-* Adobe Illustrator 파일(.AI) 또는 Adobe Photoshop Encapsulated PostScript ® 파일(.EPS)을 래스터화합니다.
+* Adobe Illustrator 파일(.AI) 또는 Adobe Photoshop Encapsulated PostScript® 파일(.EPS)을 래스터화합니다.
 * [비디오 프로필](/help/assets/dynamic-media/video-profiles.md) 및 [이미지 프로필](/help/assets/dynamic-media/image-profiles.md) 를 사용하여 비디오와 이미지의 처리를 각각 정의할 수 있습니다.
 
 다음을 참조하십시오 [에셋 업로드](/help/assets/add-assets.md).
@@ -395,7 +393,7 @@ Dynamic Media을 유지하려면 <!--(with `dynamicmedia_scene7` run mode)--> Ad
 
 <!-- THIS PARAGRAPH WAS REPLACED WITH THE TWO PARAGRAPHS DIRECTLY ABOVE BASED ON CQDOC-17657 You can tune job parameters for faster processing when you upload files. For example, if you are uploading PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such case, the tuned job parameter would appear as `process=None&createTemplate=false`. -->
 
-Adobe은 PDF, PostScript ® 및 PSD 파일에 대해 다음 &quot;조정된&quot; 작업 매개 변수를 사용할 것을 권장합니다.
+Adobe은 PDF, PostScript® 및 PSD 파일에 대해 다음 &quot;조정된&quot; 작업 매개 변수를 사용할 것을 권장합니다.
 
 | 파일 유형 | 권장 작업 매개 변수 |
 | ---| ---|

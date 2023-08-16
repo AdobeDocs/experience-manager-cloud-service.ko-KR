@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2646'
+source-wordcount: '2643'
 ht-degree: 25%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 25%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/multilingual-assets.html?lang=en) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/multilingual-assets.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
 다국어 에셋은 여러 언어로 된 바이너리, 메타데이터 및 태그가 있는 에셋을 의미합니다. 일반적으로 에셋의 바이너리, 메타데이터 및 태그는 한 언어로 된 후 다국어 프로젝트에서 사용할 수 있도록 다른 언어로 번역됩니다. Adobe Experience Manager Assets를 사용하면 워크플로우를 자동화하여 자산(바이너리, 메타데이터 및 태그 포함)을 번역하여 다국어 프로젝트에서 사용할 다른 언어의 자산을 생성할 수 있습니다.
@@ -139,7 +139,7 @@ Adobe Experience Manager Assets에서 다국어 자산은 폴더에 포함되며
 1. Click/tap **[!UICONTROL Create]**. The assets to be translated are added to the target folder. The updated folder is listed under the **[!UICONTROL Language Copies]** section.
 1. 프로젝트 콘솔로 이동한 다음 추가한 기존 번역 프로젝트를 엽니다.
 1. 번역 프로젝트 프로젝트 프로젝트 세부 정보 페이지 보기 를 클릭/탭합니다.
-1. 아래 줄임표 클릭/탭 **번역 작업** 타일을 사용하여 번역 워크플로우에서 에셋을 볼 수 있습니다. 번역 작업 목록에는 에셋 메타데이터와 태그에 대한 항목도 표시됩니다. 이 항목들은 에셋의 메타데이터와 태그도 번역됨을 나타냅니다.
+1. 아래 줄임표 클릭/탭 **번역 작업** 타일을 사용하여 번역 워크플로우에서 에셋을 볼 수 있습니다. 번역 작업 목록에는 자산 메타데이터와 태그에 대한 항목도 표시됩니다. 이 항목들은 자산의 메타데이터와 태그도 번역됨을 나타냅니다.
 
    >[!NOTE]
    >
@@ -231,7 +231,7 @@ Use the **Create structure only** option to create a target folder hierarchy wit
 1. Assets UI에서 타겟 언어 루트에 구조를 만들 소스 폴더를 선택합니다.
 1. Open the **[!UICONTROL References]** pane and click/tap **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]**.
 1. 클릭/탭 **[!UICONTROL 만들기 및 번역]** 맨 아래에
-1. 다음에서 **[!UICONTROL Target 언어]** 목록에서 폴더 구조를 만들 언어를 선택합니다.
+1. 다음에서 **[!UICONTROL 타겟 언어]** 목록에서 폴더 구조를 만들 언어를 선택합니다.
 1. From the **[!UICONTROL Project]** list, choose **[!UICONTROL Create structure only]**.
 1. Click/tap **[!UICONTROL Create]**. 대상 언어의 새 구조는 아래에 나열됩니다. **[!UICONTROL 언어 복사]**.
 1. 목록에서 구조를 클릭/탭한 다음 클릭/탭합니다. **[!UICONTROL 에셋에 표시]** 대상 언어 내에서 폴더 구조로 이동합니다.
@@ -267,7 +267,7 @@ Adobe Experience Manager을 사용하면 원하는 번역 공급업체에서 클
 If you want to apply a custom connector for the translation services you want to use in translation workflows. 사용자 지정 커넥터를 적용하려면 먼저 다음에서 커넥터를 설치합니다. [패키지 관리자](/help/implementing/developing/tools/package-manager.md). Then, configure the connector from the Cloud Services console. After you configure the connector, it is available in the list of connectors in the Cloud Services tab described in [Applying the translation services](#applying-the-translation-services). After you apply the custom connector and run translation workflows, the **[!UICONTROL Translation Summary]** tile of the translation project displays the connector details under the heads **[!UICONTROL Provider]** and **[!UICONTROL Method]**.
 
 1. 에서 커넥터 설치 [패키지 관리자](/help/implementing/developing/tools/package-manager.md).
-1. Experience Manager 로고를 클릭/탭하고 다음 위치로 이동 **[!UICONTROL 도구 > 배포 > Cloud Services]**.
+1. Experience Manager 로고를 클릭/탭하고 다음 위치로 이동 **[!UICONTROL 도구 > 배포 > Cloud Service]**.
 1. Locate the connector you installed under **[!UICONTROL Third Party Services]** in the **[!UICONTROL Cloud Services]** page.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)

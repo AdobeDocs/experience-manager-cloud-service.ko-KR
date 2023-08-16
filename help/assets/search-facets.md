@@ -4,10 +4,10 @@ description: 이 문서에서는 Experience Manager에서 검색 패싯을 만�
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2444'
+ht-degree: 21%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 Adobe Experience Manager Assets의 전사적 배포는 많은 에셋을 저장할 수 있습니다. 경우에 따라 Experience Manager의 일반 검색 기능만 사용하는 경우 적합한 에셋을 찾는 것이 고되고 시간이 오래 걸릴 수 있습니다.
@@ -152,7 +152,7 @@ Instead of manually creating a node structure for the options in the CRX reposit
 
 다음을 기준으로 태그 구조를 오름차순 또는 내림차순으로 정렬할 수 있습니다. **[!UICONTROL 이름]** (알파벳순), **[!UICONTROL 생성됨]** 날짜 또는 **[!UICONTROL 수정됨]** 날짜. 다음 그림에서 태그 구조는 를 기준으로 알파벳순으로 정렬됩니다. **[!UICONTROL 이름]**.
 
-![태그 추가](assets/add-tags-to-asset.png)
+![add-tags](assets/add-tags-to-asset.png)
 
 
 ## 다른 술어 추가 {#adding-other-predicates}
@@ -330,14 +330,14 @@ Forms 검색 페이지의 옵션에 대해 아이콘을 잠그면 기본 설정�
 
 **추가 참조**
 
-* [에셋 번역](translate-assets.md)
+* [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [에셋이 지원되는 파일 형식](file-format-support.md)
-* [에셋 검색](search-assets.md)
-* [연결된 에셋](use-assets-across-connected-assets-instances.md)
-* [에셋 보고서](asset-reports.md)
+* [자산이 지원되는 파일 형식](file-format-support.md)
+* [자산 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [자산 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
-* [에셋 다운로드](download-assets-from-aem.md)
+* [자산 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [컬렉션 관리](manage-collections.md)
 * [일괄 메타데이터 가져오기](metadata-import-export.md)
@@ -345,4 +345,3 @@ Forms 검색 페이지의 옵션에 대해 아이콘을 잠그면 기본 설정�
 >[!MORELIKETHIS]
 >
 >* [디지털 자산 검색](search-assets.md).
-

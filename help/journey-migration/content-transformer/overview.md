@@ -1,9 +1,9 @@
 ---
 title: 콘텐츠 변환기 개요
 description: 콘텐츠 변환기를 사용하여 BPA에서 보고한 콘텐츠 관련 문제를 감지하고 해결하는 방법에 대해 알아봅니다.
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '392'
 ht-degree: 2%
 
 ---

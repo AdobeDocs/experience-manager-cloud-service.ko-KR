@@ -1,11 +1,11 @@
 ---
 title: Adobe Target으로 콘텐츠 조각 내보내기
-description: 콘텐츠 조각을 Adobe Target으로 내보내 경험을 테스트하고 개인화하는 방법을 알아봅니다.
+description: 콘텐츠 조각을 Adobe Target으로 내보내 경험을 테스트하고 개인화하는 방법에 대해 알아봅니다.
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: 964599b919a7299da33a5f0ac72ad5ea644097d8
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2231'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -304,7 +304,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
    >[!NOTE]
    >
-   >If the framework you attached to the page was not activated yet, a wizard opens which allows you to publish it as well.
+   >If the framework you attached to the page was not activated yet, a wizard opens which lets you publish it as well.
 -->
 
 ## Adobe Target으로 콘텐츠 조각 내보내기 {#exporting-a-content-fragment-to-adobe-target}

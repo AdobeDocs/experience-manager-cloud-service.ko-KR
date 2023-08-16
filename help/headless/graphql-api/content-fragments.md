@@ -3,10 +3,10 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud Service에서 Headless 콘텐츠 게재를 위해 콘텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4918'
-ht-degree: 100%
+source-wordcount: '4913'
+ht-degree: 98%
 
 ---
 
@@ -707,7 +707,7 @@ query {
 
 ## GraphQL 쿼리에서 웹에 최적화된 이미지 게재 {#web-optimized-image-delivery-in-graphql-queries}
 
-웹에 최적화된 이미지 게재를 통해 Graphql 쿼리를 사용하여 다음과 같은 작업을 수행할 수 있습니다.
+웹에 최적화된 이미지 제공을 통해 Graphql 쿼리를 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 
 * AEM Assets 이미지에 대한 URL 요청
 
@@ -725,7 +725,7 @@ AEM을 사용해 다음을 할 수 있습니다.
 
 즉, 해당 이미지에 대한 GET 요청의 URL 매개변수와 동일한 방식으로 쿼리 실행 중에 명령이 적용됩니다.
 
-이를 통해 JSON 게재를 위한 이미지 렌디션을 동적으로 생성할 수 있으므로 해당 렌디션을 저장소에 수동으로 만들고 저장할 필요가 없습니다.
+이렇게 하면 JSON 전달을 위한 이미지 렌디션을 동적으로 만들 수 있으므로 이러한 렌디션을 수동으로 만들어 저장소에 저장할 필요가 없습니다.
 
 GraphQL의 솔루션으로 다음과 같은 작업을 수행할 수 있습니다.
 
