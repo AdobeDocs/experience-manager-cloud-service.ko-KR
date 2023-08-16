@@ -7,20 +7,20 @@ keywords: 사용자 지정 오류 핸들러 추가, 기본 오류 핸들러 추�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: bb2ee07f8750c15959ecdaa65f0932b05edfcd39
 workflow-type: tm+mt
 source-wordcount: '1983'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
 # 적응형 Forms의 오류 핸들러 {#error-handlers-in-adaptive-form}
 
-<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 AEM Forms은 양식 제출을 위해 기본 성공 및 오류 핸들러를 제공합니다. 또한 오류 처리기 함수를 사용자 지정하는 기능도 제공합니다. 예를 들어 특정 오류 코드의 백엔드에서 사용자 정의 워크플로를 호출하거나 서비스가 중단되었음을 고객에게 알려 줄 수 있습니다. 핸들러는 서버 응답을 기반으로 실행되는 클라이언트측 함수입니다. API를 사용하여 외부 서비스를 호출하면 유효성 검사를 위해 데이터가 서버로 전송되며, 이 데이터는 제출에 대한 성공 또는 오류 이벤트에 대한 정보와 함께 클라이언트에 응답을 반환합니다. 정보는 관련 핸들러에 매개 변수로 전달되어 함수를 실행합니다. 오류 처리기는 발생한 오류 또는 유효성 검사 문제를 관리하고 표시하는 데 도움이 됩니다.
@@ -97,7 +97,7 @@ AEM Forms 버전의 기능 및 후속 업데이트의 개선으로, 기존 오�
 >[!NOTE]
 >
 > * 오류 응답 구조에 다음 중 하나가 포함되어 있는지 확인합니다. **fieldName** 또는 **dataRef**.
-> * 다음을 확인합니다. **ContentType** 헤더: **application/problem+json**.
+> * 다음을 확인합니다. **ContentType** 헤더: **application/문제+json**.
 
 위치:
 * `type (required)` 실패 유형을 지정합니다. 다음 값 중 하나일 수 있습니다.
@@ -234,7 +234,7 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
 1. 다음으로 이동 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/`.
 1. 다음 이름의 폴더 만들기 `js`.
 1. 다음 위치로 이동 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` 폴더를 삭제합니다.
-1. 예를 들어 JavaScript 파일 추가 `function.js`. 이 파일은 사용자 지정 오류 처리기에 대한 코드로 구성됩니다.
+1. 예를 들어 JavaScript 파일 추가 `function.js`. 이 파일은 사용자 지정 오류 처리기의 코드로 구성됩니다.
 다음 코드를 JavaScript 파일에 추가하여 REST 서비스 끝점에서 받은 응답 및 헤더를 브라우저 콘솔에 표시해 보겠습니다.
 
    ```javascript
@@ -286,7 +286,7 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
 을 사용하여 사용자 지정 오류 핸들러를 사용하려면 **[!UICONTROL 규칙 편집기의 호출 서비스]** 작업:
 
 1. 작성 모드에서 적응형 양식을 열고 양식 구성 요소를 선택하고 을 누릅니다 **[!UICONTROL 규칙 편집기]** 규칙 편집기를 엽니다.
-1. 누르기 **[!UICONTROL 만들기]**.
+1. **[!UICONTROL 만들기]**&#x200B;를 탭합니다.
 1. 에서 조건 만들기 **날짜** 규칙 섹션에 자세히 설명되어 있습니다. 예를 들어 다음과 같은 경우: **[Pet ID 필드 이름]** 이(가) 변경되었습니다. 다음을 선택합니다. **변경됨** 다음에서 **상태 선택** 드롭다운 목록입니다.
 1. 다음에서 **그러면** 섹션, 선택 **[!UICONTROL 서비스 호출]** 다음에서 **작업 선택** 드롭다운 목록입니다.
 1. 선택 **Post 서비스** 및 의 해당 데이터 바인딩 **입력** 섹션. 예를 들어, 유효성을 검사하려면 **Pet ID**, 선택 **Post 서비스** 다음으로: **GET /pet/{petId}** 및 선택 **Pet ID** 다음에서 **입력** 섹션.

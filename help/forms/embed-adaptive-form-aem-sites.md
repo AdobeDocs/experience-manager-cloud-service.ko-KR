@@ -5,9 +5,9 @@ description: 적응형 Forms - 임베드 구성 요소를 사용하여 AEM Sites
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bb2ee07f8750c15959ecdaa65f0932b05edfcd39
 workflow-type: tm+mt
-source-wordcount: '3230'
+source-wordcount: '3158'
 ht-degree: 6%
 
 ---
@@ -94,44 +94,40 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 1. 플랜 텍스트 편집기에서 AEM Cloud Service Git 저장소 폴더를 엽니다. 예를 들어 Microsoft® Visual Code가 있습니다.
 1. 를 엽니다. `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` 을(를) 파일하고 다음 코드를 파일에 추가합니다.
 
-       &quot;
+   ```
        //Customheaderlibs.html
-       &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-       &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&amp;#39;core.forms.components.runtime.all&amp;#39;}&quot; />
-       &lt;/sly>
-       
-       &quot;
-   
+       <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+       <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
+       </sly> 
+   ```
+
 1. 를 엽니다. `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` 을(를) 파일하고 다음 코드를 파일에 추가합니다.
 
-       &quot;
-       
+   ```
        //customfooterlibs.html
-       &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-       &lt;sly data-sly-test=&quot;${!wcmmode.edit}&quot; data-sly-call=&quot;${clientlib.js @ categories=&amp;#39;core.forms.components.runtime.all&amp;#39;, async=true}&quot; />
-       &lt;/sly>
-       &quot;
-   
+       <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+       <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
+       </sly> 
+   ```
+
 1. 를 엽니다. `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customheaderlibs.html` 을(를) 파일하고 다음 코드를 파일에 추가합니다.
 
-       &quot;
+   ```
        //Customheaderlibs.html
-       &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-       &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&amp;#39;core.forms.components.runtime.all&amp;#39;}&quot; />
-       &lt;/sly>
-       
-       &quot;
-   
+       <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+       <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
+       </sly> 
+   ```
+
 1. 를 엽니다. `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customfooterlibs.html` 을(를) 파일하고 다음 코드를 파일에 추가합니다.
 
-       &quot;
-       
+   ```
        //customfooterlibs.html
-       &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-       &lt;sly data-sly-test=&quot;${!wcmmode.edit}&quot; data-sly-call=&quot;${clientlib.js @ categories=&amp;#39;core.forms.components.runtime.all&amp;#39;, async=true}&quot; />
-       &lt;/sly>
-       &quot;
-   
+       <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+       <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
+       </sly> 
+   ```
+
 1. [배포 파이프라인을 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html)하여 AEM as a Cloud Service 환경에 클라이언트 라이브러리를 배포합니다.
 
 +++
@@ -235,9 +231,11 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
 1. 편집 모드로 적응형 양식(적응형 Forms 컨테이너 구성 요소)이 포함된 AEM Sites 페이지를 엽니다.
 1. 콘텐츠 트리를 열고 다음을 선택합니다. **[!UICONTROL 적응형 Forms 컨테이너]** 적응형 양식을 호스팅합니다. AEM Sites 페이지는 여러 적응형 Forms을 호스팅할 수 있습니다. 따라서 올바른 적응형 Forms 컨테이너를 신중하게 선택하십시오.
 1. 메뉴 모음에서 ![경험 조각 변형으로 변환 아이콘](/help/forms/assets/Smock_FilingCabinet_18_N.svg) 경험 조각 변형 아이콘으로 변환합니다.
+
    ![파일 캐비닛 로고를 클릭하여 AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환합니다](/help/forms/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
 
-   적응형 양식 컨테이너를 새 경험 조각으로 변환하거나 기존 경험 조각에 추가할 수 있는 대화 상자가 나타납니다 .
+   적응형 양식 컨테이너를 새 경험 조각으로 변환하거나 기존 경험 조각에 추가할 수 있는 대화 상자가 나타납니다.
+
 1. 다음에서 **[!UICONTROL 경험 조각으로 변환]** 변형 대화 상자에서 다음 옵션의 값을 설정합니다.
 
    * **작업:** 을(를) 선택하여 경험 조각을 만들거나 기존 경험 조각에 추가를 선택합니다.
