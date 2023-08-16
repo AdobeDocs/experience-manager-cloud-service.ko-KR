@@ -3,9 +3,9 @@ title: 프로그램 및 프로그램 유형
 description: Cloud Manager의 계층 구조와 다양한 유형의 프로그램이 해당 구조에 어떻게 적합하고 어떻게 다른지 알아봅니다.
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 source-git-commit: fc14675e47e7a61bf36acb9a16756a593189b702
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '520'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ $ git clone {URL}
 
 ## 프로그램 유형 {#program-types}
 
-사용자는 다음을 만들 수 있습니다 **production** 프로그램 또는 **샌드박스** 프로그램.
+사용자는 **프로덕션** 프로그램 또는 **샌드박스** 프로그램을 만들 수 있습니다.
 
 * **프로덕션 프로그램**&#x200B;은 사이트에 대한 라이브 트래픽을 활성화하기 위해 만들어집니다.
    * 자세한 내용은 [프로덕션 프로그램 소개](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)를 참조하십시오.
