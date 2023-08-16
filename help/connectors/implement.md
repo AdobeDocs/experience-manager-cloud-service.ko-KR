@@ -1,11 +1,11 @@
 ---
 title: AEM 커넥터 구현
-description: AEM 커넥터를 빌드하고, 테스트하고, 구현하는 방법을 알아봅니다. 또한 일반적인 통합 패턴에 대해서도 학습하게 됩니다.
+description: AEM 커넥터를 빌드, 테스트 및 구현하는 방법에 대해 알아봅니다. 또한 일반적인 통합 패턴에 대해 알아봅니다.
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '980'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Experience Manager as a Cloud Service [설명서](../overview/introduction.md)�
 패키지 구조 규칙
 -----------------------
 
-지속적인 배포를 지원하기 위해 AEM as a Cloud Service 패키지(예: 커넥터)는 “변경 불가능한” 콘텐츠와 “변경 가능한” 콘텐츠를 엄격하게 분리하여 사용합니다. 패키지는 다음을 포함하는 패키지와 명확히 구분되어야 합니다.
+지속적인 배포를 지원하기 위해 AEM as a Cloud Service 패키지(예: 커넥터)는 “변경 불가능한” 콘텐츠와 “변경 가능한” 콘텐츠를 엄격하게 분리하여 사용합니다. 패키지는 다음 항목을 포함하는 패키지와 명확히 구분되어야 합니다.
 
 * `/apps`
 * `/content` 및 `/conf`
