@@ -4,10 +4,10 @@ description: 중요한 이메일 알림 수신을 관리하기 위해 Admin Cons
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 6764fe48068325dfb7ed84cf7834c7eb5f25fb48
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 100%
+source-wordcount: '970'
+ht-degree: 98%
 
 ---
 
@@ -139,3 +139,9 @@ Federated ID가 이미 존재하는 사용자를 추가하려면 다음 단계�
 1. **저장**&#x200B;을 클릭하면 추가한 사용자에게 시작 이메일이 전송됩니다.
 
 이제 초대된 사용자가 알림을 받게 됩니다. 알림을 받으려는 팀의 사용자에 대해 이 단계를 반복합니다.
+
+## 추가 리소스 {#additional-resources}
+
+온보딩 여정의 콘텐츠를 능가하려는 경우 다음은 추가적인 옵션 리소스입니다.
+
+* [작업 센터](/help/operations/actions-center.md) - 문제 및 기타 중요한 정보에 대한 조치를 편리하게 취할 수 있도록 조치 센터를 활용하십시오.
