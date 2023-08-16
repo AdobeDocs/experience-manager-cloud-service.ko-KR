@@ -1,11 +1,11 @@
 ---
 title: 작성 개념
-description: 작성자, 미리보기 및 게시 환경을 사용하여 AEM에서 작성하는 개념을 알아봅니다.
+description: 작성, 미리보기 및 게시 환경을 사용하여 AEM에서 작성의 개념에 대해 알아봅니다.
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
 source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '394'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
