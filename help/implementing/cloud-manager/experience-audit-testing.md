@@ -2,10 +2,10 @@
 title: 경험 감사 테스트
 description: 경험 감사를 통해 배포 프로세스를 검증하고 배포된 변경 사항이 성능, 접근성, 모범 사례 및 SEO에 대한 기준 표준을 충족하는지 확인하는 방법을 알아봅니다.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '549'
-ht-degree: 100%
+source-git-commit: e9f205a506fb2d2b7f5e634b353b112bf077058a
+workflow-type: tm+mt
+source-wordcount: '588'
+ht-degree: 93%
 
 ---
 
@@ -32,6 +32,10 @@ Cloud Manager의 경험 감사를 통해 최종 사용자의 사이트 경험을
 감사 결과는 정보 제공용이며 이를 통해 배포 관리자가 점수, 현재 점수와 이전 점수 간의 변화를 확인할 수 있습니다. 이 인사이트는 현재 배포에 도입된 회귀가 있는지 확인하는 데 유용합니다.
 
 경험 감사는 Google의 오픈 소스 도구인 Google Lighthouse를 기반으로 하며 모든 Cloud Manager 프로덕션 파이프라인에서 사용할 수 있습니다.
+
+>[!INFO]
+>
+>2023년 8월 28일부터 경험 감사는 모바일 플랫폼과 관련된 결과를 표시하는 것으로 전환됩니다. 모바일 성능 지표는 일반적으로 데스크톱보다 낮게 등록되므로 이 변경 후에 보고된 성능이 변경될 것으로 예상하십시오.
 
 >[!TIP]
 >
