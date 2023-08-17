@@ -1,11 +1,11 @@
 ---
-title: AEM 6.5 Forms과 AEM Cloud Services의 차이점
-description: Experience Manager Forms 사용자이며 Adobe Experience Manager Forms as a Cloud Service으로 업그레이드하고자 하십니까? AEM 6.5 Forms과 AEM Cloud Services를 비교하고 Cloud Service으로 업그레이드하거나 마이그레이션하기 전에 가장 두드러진 변경 사항에 대해 알아봅니다.
+title: AEM 6.5 Forms과 AEM Cloud Service의 차이점
+description: Experience Manager Forms 사용자이며 Adobe Experience Manager Forms as a Cloud Service으로 업그레이드하고자 하십니까? AEM 6.5 Forms 및 AEM Cloud Services을 비교하고 Cloud Service으로 업그레이드하거나 마이그레이션하기 전에 가장 두드러진 변경 사항에 대해 알아봅니다.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
+source-git-commit: fa71eb6317314dc8c3540cd0ebb8afaa75d55a59
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1343'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Adobe Experience Manager Forms as a Cloud Service은 Adobe Experience Manager Fo
 
 * 기본적으로 이메일은 HTTP 및 HTTPs 프로토콜만 지원합니다. [지원 팀에 문의](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) 이메일 전송을 위한 포트를 활성화하고 환경에 대한 SMTP 프로토콜을 활성화합니다.
 
-## 로컬라이제이션
+## 지역화
 
 * 현지화된 적응형 Forms의 URL 규칙은 이제 URL에서 로케일 지정을 지원합니다. 새 URL 규칙을 사용하면 Dispatcher 또는 CDN에서 현지화된 양식을 캐싱할 수 있습니다. Cloud Service 환경에서 URL 형식을 사용합니다 `http://host:port/content/forms/af/<afName>.<locale>.html` 을(를) 대신해 지역화된 버전의 적응형 양식을 요청하려면 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`.
 
@@ -60,11 +60,11 @@ Adobe Experience Manager Forms as a Cloud Service은 Adobe Experience Manager Fo
 
 * **XSD 기반 적응형 Forms:** XDP-template을 사용하여 기록 문서에 대한 템플릿을 디자인할 수 있습니다. 이 서비스는 XFA 기반 적응형 Forms을 지원하지 않습니다
 
-* **구성 요소**: 다음을 사용할 수 있습니다 [적응형 Forms 핵심 구성 요소](/help/forms/creating-adaptive-form-core-components.md) 양식을 디자인할 수 있습니다. 이러한 구성 요소는 WCM 핵심 구성 요소를 기반으로 하며 BEM 표준을 따르고 쉽게 맞춤화할 수 있습니다. 이 서비스는 양식 내 서명 경험을 지원하지 않으며, 적응형 양식에 대한 요약 및 확인 구성 요소를 포함하지 않습니다
+* **구성 요소**: 이 서비스는 양식 내 서명 경험을 지원하지 않으며, 적응형 양식에 대한 요약 및 확인 구성 요소를 포함하지 않습니다.
+
+* **마법사 인터페이스:** 다음을 사용할 수 있습니다. [마법사 인터페이스](/help/forms/creating-adaptive-form-core-components.md) 을 사용하면 일반 옵션을 빠르게 구성하고 적응형 양식을 쉽게 만들 수 있습니다.
 
 ## Forms 포털
-
-* Forms 포털의 검색 및 목록, 초안 및 제출, 링크 구성 요소를 사용하여 로그인한 사용자의 양식을 나열할 수 있습니다. Forms 포털의 익명 사용에 대한 지원은 즉시 사용할 수 없습니다(OOTB). Forms 포털을 사용자 지정하여 로그인하지 않은 사용자의 양식을 표시할 수 있습니다.
 
 * 이 서비스는 초안 및 제출된 적응형 Forms에 대한 메타데이터를 보존하지 않습니다.
 
@@ -85,7 +85,7 @@ Forms은 문서 생성 및 문서 조작 RESTful API를 as a Cloud Service으로
 
 ## 데이터 통합(양식 데이터 모델)
 
-* 또한 이 서비스는 JDBC 커넥터, Microsoft Dynamics, SalesForce, SOAP 기반 웹 서비스 및 OData를 지원하는 서비스를 지원합니다.
+* 또한 이 서비스는 Microsoft Dynamics, SalesForce, SOAP 기반 웹 서비스 및 OData를 지원하는 서비스를 지원합니다.
 
 * AEM 사용자 프로필을 연결하여 사용자 정보를 검색하고 업데이트할 수도 있습니다.
 
@@ -96,8 +96,6 @@ Forms은 문서 생성 및 문서 조작 RESTful API를 as a Cloud Service으로
 
 ## 전자 서명
 
-* 이 서비스는 Adobe Sign과의 OOTB 통합을 제공하며 전자 서명에 대한 DocuSign을 지원합니다.
-
 * 이 서비스는 Adobe Sign 역할도 지원합니다. 비즈니스 사용자를 위한 적응형 Forms 편집기에서 역할을 구성하여 서명 워크플로를 쉽게 구성할 수 있습니다.
 
 
@@ -105,7 +103,7 @@ Forms은 문서 생성 및 문서 조작 RESTful API를 as a Cloud Service으로
 
 * AEM 6.5 Forms 환경을 사용하여 다음을 수행할 수 있습니다.
 
-   * xdp 기반 양식을 HTML5 Forms으로 렌더링합니다. 이 서비스는 HTML5 Forms(모바일 Forms)를 지원하지 않습니다.
+   * xdp 기반 양식을 HTML5 Forms으로 렌더링합니다. 이 서비스는 HTML5 Forms을 지원하지 않습니다.
 
    * 오프라인으로 데이터를 캡처하고 다음에 온라인으로 돌아올 때 동기화합니다. [AEM Forms 작업 공간](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) 앱.
 
