@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: cb963a233b5afd4497704233db7f51c37563d0f9
+source-git-commit: 25af1b0d99f7c5971245f99a95c74d04ca943936
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 22%
+source-wordcount: '661'
+ht-degree: 21%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 22%
 - SITES-13906: GraphQL - graphql-java 20.1로 업그레이드
 - SITES-8972: GraphQL - 열거형 데이터 유형에 JSON에 옵션 레이블을 추가합니다.
 - SITES-9689: GraphQL - 컨텐츠 참조 데이터 유형을 위해 JSON에 제목 및 설명을 추가합니다.
-- SITES-13052: 콘텐츠 조각 - Adobe Target으로 콘텐츠 조각 내보내기
+- SITES-13052: 컨텐츠 조각 - 컨텐츠 조각을 Adobe Target으로 내보냅니다.
 
 ### 해결된 문제 {#fixed-issues-13099}
 
@@ -54,7 +54,9 @@ ht-degree: 22%
 
 ### 알려진 문제 {#known-issues-13099}
 
-- SITES-15359: 변형 이름 패턴이 이 있는 변형과 올바르게 일치하지 않습니다. ```'_'``` 리소스 이름.
+- SITES-15359: 콘텐츠 조각 - 변형 이름 패턴이 이 있는 변형과 올바르게 일치하지 않음 ```'_'``` 리소스 이름.
+- SITES-15463: 사이트 템플릿 - 템플릿을 게시할 수 없습니다(해결 방법: 배포 콘솔 사용).
+- CQ-4354191: 워크플로 - nt:unstructured 노드에 있는 복제 메타데이터로 인해 사용자 지정 런처가 여러 번 트리거될 수 있습니다(해결 방법: 겹치지 않도록 복제 메타데이터 속성을 제외하도록 런처를 업데이트).
 
 ### 임베드된 기술 {#embedded-tech-13099}
 
