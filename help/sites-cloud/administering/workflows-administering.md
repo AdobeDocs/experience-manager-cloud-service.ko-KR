@@ -1,12 +1,12 @@
 ---
 title: 워크플로 인스턴스 관리
-description: 워크플로 인스턴스 관리 방법 알아보기
+description: 워크플로 인스턴스 관리 방법 알아보기 워크플로우 콘솔 사용
 feature: Administering
 role: Admin
-source-git-commit: 31cda6f7eb7ef1c32ba9d0ec7d198a5f2f38b1e6
-workflow-type: ht
-source-wordcount: '1284'
-ht-degree: 100%
+source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
+workflow-type: tm+mt
+source-wordcount: '1288'
+ht-degree: 99%
 
 ---
 

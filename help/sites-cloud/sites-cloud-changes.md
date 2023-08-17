@@ -1,11 +1,11 @@
 ---
 title: AEM Cloud Service의 AEM Sites에 대한 주요 변경 내용
-description: AEM Cloud Service의 AEM Sites에 대한 주요 변경 내용
+description: AEM Cloud Service에서 AEM Sites의 주목할 만한 변경 사항에 대해 자세히 알아봅니다.
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: 8e06dff01e06ced62686a4784619278f29345082
+source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 100%
+source-wordcount: '537'
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,6 @@ AEM Sites as a Cloud Service는 클라우드 기반 AEM as a Cloud Service 플�
 >* [AEM Assets as a Cloud Service에 대한 주요 변경 내용](/help/assets/assets-cloud-changes.md)
 >* [AEM Assets as a Cloud Service 소개](/help/assets/overview.md)
 >* [Adobe Experience Manager as a Cloud Service 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
-
 
 AEM Sites as a Cloud Service에 대한 변경 내용 및 추가 사항은 다음과 같습니다.
 
