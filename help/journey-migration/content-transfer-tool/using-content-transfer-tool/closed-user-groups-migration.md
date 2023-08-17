@@ -6,7 +6,7 @@ hidefromtoc: true
 source-git-commit: ca3c4bae2e652d75190d68c76b1dd4e09239f16c
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cug_migration"
->title="닫기 사용자 그룹 마이그레이션"
->abstract="현재 CUG(폐쇄된 사용자 그룹)의 마이그레이션은 마이그레이션 후 작동하도록 하기 위해 몇 가지 확인 및 단계가 필요합니다."
+>title="폐쇄형 사용자 그룹의 마이그레이션"
+>abstract="폐쇄형 사용자 그룹(CUG)의 마이그레이션은 현재 마이그레이션 후 작동을 위한 몇 가지 확인 및 단계가 필요합니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html" text="AEM의 폐쇄형 사용자 그룹"
 
 현재 폐쇄된 사용자 그룹(CUG)이 마이그레이션의 대상 환경에서 작동하려면 몇 가지 추가 단계가 필요합니다.  이 문서에서는 시나리오 및 의도한 방식으로 노드를 보호하는 데 필요한 단계에 대해 설명합니다.
