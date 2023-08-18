@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 25af1b0d99f7c5971245f99a95c74d04ca943936
+source-git-commit: 6e491a68dedc55609349db75ac13691aeda2f0dc
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 21%
+source-wordcount: '673'
+ht-degree: 20%
 
 ---
 
@@ -56,6 +56,7 @@ ht-degree: 21%
 
 - SITES-15359: 콘텐츠 조각 - 변형 이름 패턴이 이 있는 변형과 올바르게 일치하지 않음 ```'_'``` 리소스 이름.
 - SITES-15463: 사이트 템플릿 - 템플릿을 게시할 수 없습니다(해결 방법: 배포 콘솔 사용).
+- FORMS-10444: 적응형 Forms 템플릿 - 템플릿을 게시할 수 없습니다(해결 방법: 배포 콘솔 사용).
 - CQ-4354191: 워크플로 - nt:unstructured 노드에 있는 복제 메타데이터로 인해 사용자 지정 런처가 여러 번 트리거될 수 있습니다(해결 방법: 겹치지 않도록 복제 메타데이터 속성을 제외하도록 런처를 업데이트).
 
 ### 임베드된 기술 {#embedded-tech-13099}
