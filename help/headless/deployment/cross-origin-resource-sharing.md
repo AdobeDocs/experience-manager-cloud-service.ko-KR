@@ -3,14 +3,18 @@ title: AEM Headless로 CORS(원본 간 리소스 공유) 구성
 description: Adobe Experience Manager의 CORS(원본 간 리소스 공유)를 사용하면 Headless 웹 애플리케이션에서 AEM에 대한 클라이언트측 호출을 할 수 있습니다. GraphQL 끝점에 대한 액세스를 활성화하려면 CORS 구성이 필요합니다.
 feature: GraphQL API
 exl-id: 426be9f9-f44a-4744-ac08-e64bb97308a0
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 316680823fe4bc85e1f4359305047c0d1f517dc7
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 100%
+source-wordcount: '230'
+ht-degree: 90%
 
 ---
 
 # CORS(원본 간 리소스 공유) 구성
+
+>[!CAUTION]
+>
+>If [Dispatcher에서 캐싱이 활성화되었습니다.](/help/headless/deployment/dispatcher-caching.md) 그런 다음 CORS 필터가 필요하지 않으므로 이 섹션을 무시할 수 있습니다.
 
 >[!NOTE]
 >
