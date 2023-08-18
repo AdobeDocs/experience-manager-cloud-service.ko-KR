@@ -1,10 +1,10 @@
 ---
 title: AEM의 새로운 AEM Assets UI 또는 에셋 보기가 어떤 이점을 제공합니까?
-description: AEM에서 새 AEM Assets UI 또는 새 에셋 보기의 주요 이점에 대해 자세히 알아보십시오
+description: 새 AEM Assets UI 또는 AEM의 새 에셋 보기의 주요 이점에 대해 자세히 알아보십시오. Adobe는 마케팅 및 크리에이티브 전문가의 역량을 강화하는 전문성을 활용하여, 판도를 바꿀 새로운 사용자 경험을 소개합니다.
 mini-toc-levels: 3
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 2c8bac8627ed660d2780f93f4018c8fa980e569a
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1132'
 ht-degree: 66%
 
 ---

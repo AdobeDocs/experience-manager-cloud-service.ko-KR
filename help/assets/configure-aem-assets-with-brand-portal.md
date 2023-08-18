@@ -1,14 +1,14 @@
 ---
 title: AEM Assets as a 구성 [!DNL Cloud Service] Brand Portal 사용
-description: Brand Portal에서 AEM Assets 구성.
-contentOwner: Vishabh Gupta
+description: Brand Portal을 사용하여 AEM Assets을 구성하는 방법에 대해 알아봅니다. 구성을 사용하면 승인된 브랜드 자산을 AEM 인스턴스에서 Brand Portal으로 게시하고 Brand Portal 사용자에게 배포할 수 있습니다.
+contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 2c8bac8627ed660d2780f93f4018c8fa980e569a
 workflow-type: tm+mt
-source-wordcount: '2562'
-ht-degree: 19%
+source-wordcount: '2589'
+ht-degree: 18%
 
 ---
 
