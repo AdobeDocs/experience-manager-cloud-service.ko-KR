@@ -1,23 +1,23 @@
 ---
-title: 워크플로우에서 다른 사용자에게 워크플로우를 할당하고, 이메일을 보내고, Adobe Sign을 사용하는 방법
+title: 양식 중심의 AEM 워크플로를 사용하여 비즈니스 프로세스 자동화
 description: Forms 중심 워크플로를 사용하면 적응형 Forms 기반 워크플로를 신속하게 구축할 수 있습니다. Adobe Sign을 사용하여 문서에 전자 서명하고, 양식 기반 비즈니스 프로세스를 만들고, 데이터를 검색하여 여러 데이터 소스로 보내고, 전자 메일 알림을 보낼 수 있습니다
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '7204'
+source-wordcount: '7192'
 ht-degree: 2%
 
 ---
 
-# Forms 중심 AEM 워크플로 - 단계 참조 {#forms-centric-workflow-on-osgi-step-reference}
+# Forms 중심의 AEM 워크플로 사용 - 비즈니스 프로세스 자동화를 위한 단계 참조{#forms-centric-workflow-on-osgi-step-reference}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | 이 문서 |
 
-워크플로우 모델을 사용하여 비즈니스 논리를 자동화된 반복 프로세스로 변환합니다. 모델은 일련의 단계를 정의하고 실행하는 데 도움이 됩니다. 워크플로가 일시적인지 또는 여러 리소스를 사용하는지 여부와 같은 모델 속성을 정의할 수도 있습니다. 다음을 수행할 수 있습니다. [비즈니스 논리를 달성하기 위해 모델에 다양한 AEM Workflow 단계 포함](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ko#extending-aem).
+워크플로우 모델 을 사용합니다. 모델은 일련의 단계를 정의하고 실행하는 데 도움이 됩니다. 워크플로가 일시적인지 또는 여러 리소스를 사용하는지 여부와 같은 모델 속성을 정의할 수도 있습니다. 다음을 수행할 수 있습니다. [비즈니스 논리를 달성하기 위해 모델에 다양한 AEM Workflow 단계 포함](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ko#extending-aem).
 
 ## Forms 중심 단계 {#forms-workflow-steps}
 

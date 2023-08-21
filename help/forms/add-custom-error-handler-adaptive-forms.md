@@ -1,20 +1,19 @@
 ---
-title: AEM용 적응형 Forms Adaptive Forms에서 사용자 지정 오류 핸들러 추가
-seo-title: Error Handlers in Adaptive Forms for AEM Adaptive Forms
+title: AEM Adaptive Forms에서 사용자 지정 오류 처리기 추가
 description: AEM Forms은 외부 서비스를 호출하도록 구성된 REST 끝점을 사용하여 양식에 대한 기본 성공 및 오류 핸들러를 제공합니다. AEM 적응형 양식에 기본 오류 처리기와 사용자 지정 오류 처리기를 추가할 수 있습니다.
 seo-description: Error handler function and Rule Editor in Adaptive Forms helps you to effectively manage and customize error handling. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
 keywords: 사용자 지정 오류 핸들러 추가, 기본 오류 핸들러 추가, 양식에 오류 핸들러 추가, 규칙 편집기의 호출 서비스를 사용하여 사용자 지정 오류 핸들러 추가, 규칙 편집기를 구성하여 사용자 지정 오류 핸들러 추가, 규칙 편집기를 사용하여 사용자 지정 오류 핸들러 추가
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: bb2ee07f8750c15959ecdaa65f0932b05edfcd39
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1983'
+source-wordcount: '1982'
 ht-degree: 5%
 
 ---
 
-# 적응형 Forms의 오류 핸들러 {#error-handlers-in-adaptive-form}
+# AEM Adaptive Forms에서 사용자 지정 오류 핸들러 추가 {#error-handlers-in-adaptive-form}
 
 <span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 

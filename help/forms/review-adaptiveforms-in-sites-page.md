@@ -1,19 +1,18 @@
 ---
-title: Sites 페이지에 임베드되거나 생성된 적응형 Forms에 대한 검토 생성 및 관리
-seo-title: Review is a mechanism that allows reviewer to perform different tasks for adaptive forms using Assign Task step
+title: 적응형 양식에 대한 검토 만들기 및 관리
 description: 검토는 검토자가 작업 할당 단계를 사용하여 적응형 양식에 대해 다른 작업을 수행할 수 있는 메커니즘입니다
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: daeb407e27b9f1d390fe40151ca16ec0196712e6
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 4%
+source-wordcount: '351'
+ht-degree: 5%
 
 ---
 
 
-# 사이트 페이지의 Forms 검토 단계 {#review-step-forms-aem-sites-page}
+# 적응형 양식에 대한 검토 만들기 및 관리 {#review-step-forms-aem-sites-page}
 
 사용 [할당 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html#assign-task-step) AEM 워크플로의 검토자는 제출된 양식을 검토하고 그에 대한 작업을 수행합니다. 작업 할당 단계를 사용하여 제출된 양식을 검토하려면 다음 단계를 수행합니다.
 

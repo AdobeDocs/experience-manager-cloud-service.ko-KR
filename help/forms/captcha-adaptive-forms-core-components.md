@@ -1,18 +1,18 @@
 ---
-title: 핵심 구성 요소를 기반으로 하는 적응형 양식에서 Google reCAPTCHA 사용
+title: AEM 적응형 양식에서 Google reCAPTCHA 사용
 description: Google reCAPTCHA 서비스를 통해 손쉽게 양식 보안을 강화할 수 있습니다. 내부의 단계별 가이드!
 topic-tags: Adaptive Forms, author
 hide: true
 hidefromtoc: true
 Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: b81acc99b1d90b05b7c341253e7cbb46c6ea12ae
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '874'
 ht-degree: 1%
 
 ---
 
-# 핵심 구성 요소를 기반으로 하는 적응형 Forms에서 reCAPTCHA 사용 {#using-reCAPTCHA-in-adaptive-forms}
+# AEM 적응형 양식에서 Google reCAPTCHA 사용 {#using-reCAPTCHA-in-adaptive-forms}
 
 CAPTCHA(Complete Automated Public Turning test to tell Computers and Humans Apart)는 온라인 거래에서 일반적으로 사용되는 프로그램으로 인간과 자동화된 프로그램 또는 봇을 구별합니다. 문제를 제기하고 사용자 응답을 평가하여 사이트와 상호 작용하는 사람인지 보트인지를 확인합니다. 테스트 실패 시 사용자가 진행할 수 없도록 하고 봇이 스팸이나 악의적인 목적을 게시하지 않도록 해 온라인 거래를 안전하게 만드는 데 도움을 준다.
 
@@ -43,7 +43,7 @@ Google의 reCAPTCHA 서비스를 사용하여 AEM Forms 환경을 연결하려�
          1. 누르기 **[!UICONTROL 저장 및 닫기]** 구성을 저장하고 대화 상자를 종료합니다.
 
 1. Cloud Service 구성:
-   1. AEM 작성자 인스턴스에서 ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** 및 탭 **[!UICONTROL reCAPT차]**.
+   1. AEM 작성자 인스턴스에서 ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]** 및 탭 **[!UICONTROL reCAPT차]**.
    1. 이전 섹션에서 만들거나 업데이트한 구성 컨테이너를 선택합니다. **[!UICONTROL 만들기]**&#x200B;를 탭합니다.
    1. 지정 **[!UICONTROL 제목]**, **[!UICONTROL 이름]**, **[!UICONTROL 사이트 키]**, 및 **[!UICONTROL 비밀 키]** reCAPTCHA 서비스(1단계에서 획득)의 경우 **[!UICONTROL 만들기]**&#x200B;를 탭합니다.
 

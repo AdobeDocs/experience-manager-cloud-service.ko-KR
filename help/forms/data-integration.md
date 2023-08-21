@@ -1,16 +1,14 @@
 ---
-title: 데이터베이스를 연결하는 방법 [!DNL AEM Forms] as a Cloud Service?
-seo-title: AEM Forms Data Integration
+title: 데이터베이스에 AEM Forms 연결
 description: 에서 RESTful 웹 서비스, SOAP 기반 웹 서비스 및 OData 서비스에 데이터를 검색하고 저장할 수 있습니다. [!DNL AEM Forms] as a Cloud Service. 이 서비스는 데이터를 검색, 테스트, 유효성 검사 및 다양한 유형의 데이터 소스로 전송하는 전용 도구를 제공합니다.
-exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 4%
+source-wordcount: '570'
+ht-degree: 2%
 
 ---
 
-# 데이터 소스를 Cloud Service에 연결 {#aem-forms-data-integration}
+# 데이터베이스에 AEM Forms 연결 {#aem-forms-data-integration}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |

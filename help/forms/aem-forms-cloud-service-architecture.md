@@ -1,11 +1,11 @@
 ---
-title: Experience Manager [!DNL AEM Forms] as a Cloud Service 아키텍처
+title: AEM Forms as a Cloud Service 아키텍처
 description: 의 아키텍처 이해 [!DNL AEM Forms] 플랫폼의 확장성, 복원력 및 성능 측면에 대해 as a Cloud Service으로 알아볼 수 있습니다.
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
 workflow-type: tm+mt
 source-wordcount: '1065'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/aem-forms-architecture-deployment.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/aem-forms-architecture-deployment.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 [!DNL Adobe Experience Manager Forms] as a Cloud Service은 기업이 복잡한 디지털 양식 및 통신을 생성, 관리, 게시 및 업데이트하면서 제출된 데이터를 백엔드 프로세스, 비즈니스 규칙 및 외부 데이터 저장소에 데이터를 저장하는 클라우드 기반 솔루션입니다. 확장됩니다 [!DNL Adobe Experience Manager as a Cloud Service]. 확장, 배포, 환경 및 기타 인프라에 대한 자세한 내용은 [의 아키텍처에 대한 소개 [!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html).
@@ -34,7 +34,7 @@ Forms as a Cloud Service은 여러 구성 요소로 구성됩니다.
 
 ### CDN(Content Delivery Network)
 
-모든 AEM Forms as a Cloud Service 프로그램은에 대한 액세스 권한이 있습니다. [기본 CDN 서비스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html). Forms as a Cloud Services 라이선스에 포함되어 있습니다.
+모든 AEM Forms as a Cloud Service 프로그램은에 대한 액세스 권한이 있습니다. [기본 CDN 서비스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html). Forms as a Cloud Service 라이선스에 포함되어 있습니다.
 
 ### 작성자
 

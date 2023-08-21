@@ -1,15 +1,14 @@
 ---
-title: 기록 문서 템플릿을 만들기 위해 Forms Designer를 다운로드하고 설치하는 방법
+title: Forms Designer 다운로드 및 설치
 description: Forms Designer를 사용하여 기록 문서의 템플릿 역할을 하는 XDP 및 PDF 양식 템플릿을 만들 수 있습니다. 디자이너는 [!DNL AEM Forms] 라이센스.
-exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: e71dd8a4eb92acbed53fb9384bc40efc3e743761
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '256'
 ht-degree: 2%
 
 ---
 
-# Forms Designer 설치 {#installing-and-configuring-designer}
+# Forms Designer 다운로드 및 설치 {#installing-and-configuring-designer}
 
 디자이너는 XDP 및 PDF 양식 템플릿 작성을 간소화하는 포인트 앤 클릭 그래픽 양식 디자인 도구입니다. 양식 템플릿을 디자인하고 해당 논리를 정의하며 엄격한 법적 요구 사항을 충족할 수 있습니다. XDP 및 PDF 양식은 적응형 양식에서 기록 문서 템플릿 역할을 합니다. 이러한 양식 템플릿은 다음과 다릅니다. [적응형 양식 템플릿](template-editor.md).
 

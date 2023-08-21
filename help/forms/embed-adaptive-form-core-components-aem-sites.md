@@ -1,14 +1,12 @@
 ---
-title: AEM Sites 페이지에서 적응형 양식(핵심 구성 요소) 추가 또는 생성
-seo-title: How to add or create an Adaptive Form (Core Components) to an AEM Sites page?
+title: AEM Sites 편집기를 사용하여 적응형 양식 만들기 또는 추가
 description: AEM Sites 페이지에서 적응형 양식(핵심 구성 요소)을 사용하여 AEM Sites 페이지를 종료하지 않고 양식을 작성하고 제출할 수 있습니다.
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '2131'
+source-wordcount: '2129'
 ht-degree: 6%
 
 ---

@@ -1,11 +1,11 @@
 ---
-title: Adobe Experience Manager Forms as a Cloud Service의 최신 혁신 기능을 살펴보십시오.
+title: 주요 Adobe Experience Manager Forms 혁신 사항
 description: "의 최신 기능 살펴보기 [!DNL AEM Forms] 엔터프라이즈급 양식 및 비즈니스 프로세스를 생성, 관리 및 게시할 수 있는 as a Cloud Service입니다."
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 9%
+source-wordcount: '1155'
+ht-degree: 10%
 
 ---
 

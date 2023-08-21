@@ -1,15 +1,15 @@
 ---
-title: Experience Manager [!DNL Forms] as a Cloud Service 통신 일괄 처리
+title: AEM Forms as a Cloud Service 통신 일괄 처리
 description: 브랜드 지향적이고 개인화된 커뮤니케이션을 만드는 방법
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1692'
+source-wordcount: '1698'
 ht-degree: 2%
 
 ---
 
-# 일괄 처리 사용
+# AEM Forms as a Cloud Service 통신 일괄 처리
 
 커뮤니케이션을 사용하면 비즈니스 서신, 문서, 명세서, 청구 처리 편지, 혜택 공지, 청구 처리 편지, 월별 청구서 및 환영 키트와 같은 브랜드 지향적이고 개인화된 커뮤니케이션을 만들고, 조합하고, 제공할 수 있습니다. 커뮤니케이션 API를 사용하여 템플릿(XFA 또는 PDF)을 고객 데이터와 결합하여 PDF, PS, PCL, DPL, IPL 및 ZPL 형식의 문서를 생성할 수 있습니다.
 

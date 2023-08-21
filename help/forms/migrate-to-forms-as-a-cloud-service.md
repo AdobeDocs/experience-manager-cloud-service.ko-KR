@@ -1,5 +1,5 @@
 ---
-title: AEM 6.5 Forms에서 로 마이그레이션하는 방법 [!DNL AEM Forms] as a Cloud Service 환경?
+title: AEM 6.5 Forms에서 AEM Forms as a Cloud Service으로 마이그레이션
 description: as a Cloud Service으로 마이그레이션 여정 AEM 시작 | Adobe Experience Manager. 다음에서 마이그레이션 [!DNL AEM Forms] (온-프레미스 및 AMS 환경) [!DNL AEM Forms] as a Cloud Service 환경.
 Keywords: 6.5 forms to cloud service, 6.5 forms to cs, migrate 6.5 forms to CS, migrate 6.5 forms to cloud service, upgrade 6.5 forms to CS, move 6.5 forms to CS, upgrade AEM 6.5 to CS, AEM Forms 6.5 to Cloud Service, AEM form migration to cloud service, Migration Journey to AEM as a Cloud Service | Adobe Experience Manager.
 contentOwner: khsingh
@@ -9,10 +9,10 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: d43e2d555a09f481900ec70e5e38bab42f4cc1d7
+source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
 workflow-type: tm+mt
-source-wordcount: '1582'
-ht-degree: 5%
+source-wordcount: '1580'
+ht-degree: 6%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 5%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/upgrade.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/upgrade.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 다음에서 적응형 Forms, 테마, 템플릿 및 클라우드 구성을 마이그레이션하거나 업그레이드할 수 있습니다. <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> OSGi의 AEM 6.5 Forms [!DNL AEM] as a Cloud Service. 이러한 에셋을 마이그레이션하기 전에 마이그레이션 유틸리티를 사용하여 이전 버전에서 사용된 형식을 에서 사용된 형식으로 변환합니다 [!DNL AEM] as a Cloud Service.
@@ -111,7 +111,7 @@ AEM Forms AEM 6.5에서 as a Cloud Service 환경으로 원활하게 전환하�
 
    1. 누르기 **[!UICONTROL 적응형 Forms 템플릿 마이그레이션]** 그리고 사용자 지정 구성 요소 마이그레이션 페이지에서 을 누릅니다. **[!UICONTROL 마이그레이션 시작]**. 다음 위치에 적응형 양식 템플릿을 만듭니다. `/apps` 또는 `/conf` 와 호환되는 AEM 템플릿 편집기를 사용하여 생성 [!DNL AEM] AS A CLOUD SERVICE .
 
-   1. 누르기 **[!UICONTROL AEM Forms 클라우드 구성 마이그레이션]** 그런 다음 구성 마이그레이션 페이지에서 을 누릅니다. **[!UICONTROL 마이그레이션 시작]**. 다음 Cloud Services을 업데이트하고 새 위치로 이동합니다.
+   1. 누르기 **[!UICONTROL AEM Forms 클라우드 구성 마이그레이션]** 그런 다음 구성 마이그레이션 페이지에서 을 누릅니다. **[!UICONTROL 마이그레이션 시작]**. 다음 Cloud Service을 업데이트하고 새 위치로 이동합니다.
 
       * 양식 데이터 모델 Cloud Service
       * Google reCAPTCHA Cloud Service
@@ -128,7 +128,7 @@ AEM Forms AEM 6.5에서 as a Cloud Service 환경으로 원활하게 전환하�
 
    <!-- 1. Install the latest [Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) to your cloned [!DNL AEM Forms] environment. -->
 
-1. 실행 [컨텐츠 전송 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration). 에서 매개 변수를 지정하는 동안 **[!UICONTROL 마이그레이션 세트 만들기]** 화면에서 적응형 Forms, 테마, 템플릿, 양식 데이터 모델, Cloud Services, 사용자 지정 구성 요소 및 기타 AEM Forms 관련 에셋의 경로를 **[!UICONTROL 포함할 경로]** 옵션을 선택합니다. 지정된 항목이 추가됩니다. [!DNL AEM Forms] 자산을 마이그레이션 세트로 마이그레이션합니다.
+1. 실행 [컨텐츠 전송 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration). 에서 매개 변수를 지정하는 동안 **[!UICONTROL 마이그레이션 세트 만들기]** 화면에서 적응형 Forms, 테마, 템플릿, 양식 데이터 모델, Cloud Service, 사용자 지정 구성 요소 및 기타 AEM Forms 관련 에셋의 경로를 **[!UICONTROL 포함할 경로]** 옵션을 선택합니다. 지정된 항목이 추가됩니다. [!DNL AEM Forms] 자산을 마이그레이션 세트로 마이그레이션합니다.
 
 ## 다양한 AEM Forms 관련 에셋의 경로
 

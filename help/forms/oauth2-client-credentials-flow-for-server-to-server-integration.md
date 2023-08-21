@@ -1,18 +1,18 @@
 ---
-title: OAuth 2.0 클라이언트 자격 증명 흐름을 사용하여 Salesforce 통합을 AEM Forms와 통합하는 방법은 무엇입니까?
+title: OAuth 2.0 클라이언트 자격 증명 흐름별 Salesforce 통합
 seo-title: Salesforce integration with AEM Forms using OAuth 2.0 client credential flow
 description: OAuth 2.0 클라이언트 자격 증명 흐름을 사용하여 Salesforce 통합을 AEM Forms와 통합하는 단계
 seo-description: Steps to integrate Salesforce integration with AEM Forms using OAuth 2.0 client credential flow
 Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, salesforce integration with oauth2 using client credential flow, salesforce and client credential integration
-source-git-commit: 2c0a816b61cfc17a83b24b28be1f317e9681c6c5
-workflow-type: ht
-source-wordcount: '426'
-ht-degree: 100%
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+workflow-type: tm+mt
+source-wordcount: '420'
+ht-degree: 96%
 
 ---
 
 
-# OAuth 2.0 클라이언트 자격 증명 흐름을 사용한 Salesforce 애플리케이션 통합 {#configure-salesforce-with-ouath-2.0-client-credential}
+# OAuth 2.0 클라이언트 자격 증명 흐름별 Salesforce 통합 {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |

@@ -1,19 +1,18 @@
 ---
-title: 적응형 양식을 위한 기본 양식 데이터 모델을 사용하여 Microsoft Dynamics 365 및 Salesforce를 구성하는 방법
+title: AEM Forms용 Microsoft Dynamics 365 또는 Salesforce 구성
 description: Microsoft Dynamics 365 및 Salesforce를 적응형 양식과 통합하는 방법을 알아봅니다.
-exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 2%
+source-wordcount: '952'
+ht-degree: 3%
 
 ---
 
-# [!DNL Microsoft Dynamics 365]및[!DNL Salesforce]Cloud Service 구성 {#configure-azure-storage}
+# AEM Forms용 Microsoft Dynamics 365 또는 Salesforce 구성 {#configure-azure-storage}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 [[!DNL Experience Manager Forms] 데이터 통합](data-integration.md) 다음을 제공합니다 [!DNL Microsoft Dynamics 365] 및 [!DNL Salesforce] 적응형 양식을 즉시 사용할 수 있는 양식 데이터 모델과 통합하는 클라우드 서비스 그런 다음 적응형 Forms은 와 상호 작용할 수 있습니다. [!DNL Microsoft Dynamics 365] 및 [!DNL Salesforce] 비즈니스 워크플로를 활성화하는 서버입니다. 예:
@@ -47,7 +46,7 @@ ht-degree: 2%
 
 다음 단계를 수행하여 을 구성합니다 [!DNL Salesforce] 클라우드 서비스:
 
-1. 날짜 [!DNL AEM Forms] 작성자 인스턴스, 다음으로 이동 **[!UICONTROL 도구]** ![망치](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL 데이터 소스]**. 사용 가능한 래퍼 폴더 목록에에 제목이 지정된 폴더가 포함됩니다. `DappTitle`  while [AEM Archetype 프로젝트 생성](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
+1. 날짜 [!DNL AEM Forms] 작성자 인스턴스, 다음으로 이동 **[!UICONTROL 도구]** ![망치](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL 데이터 소스]**. 사용 가능한 래퍼 폴더 목록에에 제목이 지정된 폴더가 포함됩니다. `DappTitle`  while [AEM Archetype 프로젝트 생성](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
 1. 폴더 이름을 탭하고 다음을 선택합니다. **[!UICONTROL Salesforce 클라우드 구성]**, 및 탭 **[!UICONTROL 속성]**.
 1. 다음에서 **[!UICONTROL 인증 설정]** 탭:
    1. 다음을 지정합니다. [!DNL Salesforce] 의 도메인 URL **[!UICONTROL 호스트]** 필드. 예를 들어, [도메인 이름].my.salesforce.com입니다.
@@ -81,7 +80,7 @@ A [!DNL Salesforce] 양식 데이터 모델은 [!DNL AEM Forms] 서버 [Experien
 
 다음 단계를 수행하여 을 구성합니다 [!DNL Microsoft Dynamics 365] 클라우드 서비스:
 
-1. 날짜 [!DNL AEM Forms] 작성자 인스턴스, 다음으로 이동 **[!UICONTROL 도구]** ![망치](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL 데이터 소스]**. 사용 가능한 래퍼 폴더 목록에에 제목이 지정된 폴더가 포함됩니다. `DappTitle`  while [AEM Archetype 프로젝트 생성](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
+1. 날짜 [!DNL AEM Forms] 작성자 인스턴스, 다음으로 이동 **[!UICONTROL 도구]** ![망치](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL 데이터 소스]**. 사용 가능한 래퍼 폴더 목록에에 제목이 지정된 폴더가 포함됩니다. `DappTitle`  while [AEM Archetype 프로젝트 생성](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
 1. 폴더 이름을 탭하고 다음을 선택합니다. **[!UICONTROL Microsoft Dynamics 365 클라우드 구성]**, 및 탭 **[!UICONTROL 속성]**.
 1. 다음에서 **[!UICONTROL 인증 설정]** 탭:
    1. 다음에 대한 값 입력 **[!UICONTROL 서비스 루트]** 필드. Dynamics 인스턴스로 이동하여 다음 위치로 이동 [개발자 리소스](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/view-download-developer-resources) 서비스 루트 필드에 대한 값을 보려면 다음을 수행하십시오. 예, `https://<tenant-name>.dynamics.com/api/data/v9.1/`

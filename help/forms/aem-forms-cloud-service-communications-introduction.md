@@ -1,15 +1,15 @@
 ---
-title: AEM Forms as a Cloud Service 커뮤니케이션 소개
+title: Forms as a Cloud Service 커뮤니케이션 소개
 description: XDP 및 PDF 템플릿과 데이터 자동 병합 또는 PCL, ZPL 및 PostScript 형식으로 출력 생성
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
 source-wordcount: '1156'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
-# AEM Forms as a Cloud Service 커뮤니케이션 사용 {#frequently-asked-questions}
+# AEM Forms as a Cloud Service 커뮤니케이션 소개 {#frequently-asked-questions}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |

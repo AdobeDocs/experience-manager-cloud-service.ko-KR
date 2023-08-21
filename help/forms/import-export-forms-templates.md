@@ -1,18 +1,16 @@
 ---
-title: 적응형 Forms, PDF forms 및 기타 에셋 가져오기, 내보내기 및 구성
-seo-title: Learn to import, export, and organize Adaptive Forms, PDF forms, and other assets on an[!DNL AEM Forms] instance
+title: 적응형 Forms 및 AEM Forms 에셋 가져오기 또는 내보내기
 description: 적응형 Forms 및 자산을 AEM 인스턴스로 및 인스턴스에서 마이그레이션하고자 하십니까? 여기에서 적응형 Forms, PDF forms, 테마 및 기타 지원 에셋을 가져오고 내보내는 방법을 알아보십시오. [!DNL AEM Forms] 인스턴스.
 seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance.
 topic-tags: forms-manager
-exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1210'
-ht-degree: 2%
+source-wordcount: '1206'
+ht-degree: 1%
 
 ---
 
-# 적응형 양식, PDF 양식 및 기타 자산 가져오기, 내보내기 및 구성{#importing-and-exporting-assets-to-aem-forms}
+# 적응형 Forms 및 AEM Forms 에셋 가져오기 또는 내보내기 {#importing-and-exporting-assets-to-aem-forms}
 
 다음 작업 간에 적응형 Forms 및 적응형 양식 테마, 양식 데이터 모델, 적응형 양식 템플릿, 문서 단편 및 PDF forms과 같은 관련 에셋을 이동할 수 있습니다. [!DNL AEM Forms] 인스턴스. CRX 패키지 또는 바이너리 파일 형식으로 에셋을 가져오고 내보낼 수 있습니다.
 

@@ -1,18 +1,18 @@
 ---
-title: 레이아웃 모드를 사용하여 적응형 Forms에 대한 구성 요소 크기를 조정하는 방법
+title: 레이아웃 모드를 사용하여 적응형 Forms에 대한 구성 요소 크기 조정
 description: 레이아웃 모드에서 사용할 수 있는 응답형 격자를 사용하여 구성 요소의 위치를 정의합니다. 레이아웃 모드에 액세스하고, 구성 요소의 크기를 조정하고, 패널의 크기를 조정하고, 패널의 다중 열 레이아웃을 정의하고, 이전 반응형 레이아웃에 대해 새 반응형 그리드를 활성화하고, 이전 반응형 레이아웃이 있는 양식의 레이아웃 모드를 비활성화하는 방법에 대해 알아봅니다.
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 7%
+source-wordcount: '1157'
+ht-degree: 6%
 
 ---
 
-# 레이아웃 모드를 사용하여 구성 요소 크기 변경 {#use-layout-mode-to-resize-components}
+# 레이아웃 모드를 사용하여 적응형 Forms에 대한 구성 요소 크기 조정 {#use-layout-mode-to-resize-components}
 
 <span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
