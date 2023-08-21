@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 64d88b9af48f1c5736ef668ae00fb29e9bfad9f7
+source-git-commit: e78410a1ce229db0dd3529bf544f694e97bfff46
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 84%
@@ -15,7 +15,7 @@ ht-degree: 84%
 
 ## 릴리스 13206 {#release-13206}
 
-2023년 8월 22일에 릴리스된 유지 관리 릴리스 13206의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이 유지 관리 릴리스는 받은 편지함 기능에 영향을 주는 문제를 해결하기 위해 릴리스 13173 및 13099을 대체합니다.
+2023년 8월 21일에 릴리스된 유지 관리 릴리스 13206의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이 유지 관리 릴리스는 받은 편지함 기능에 영향을 주는 문제를 해결하기 위해 릴리스 13173 및 13099을 대체합니다.
 
 이 유지 관리 릴리스(2023.8.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)을 참조하십시오.
 
