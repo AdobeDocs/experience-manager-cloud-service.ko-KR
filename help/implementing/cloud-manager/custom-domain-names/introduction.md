@@ -1,11 +1,11 @@
 ---
 title: 사용자 정의 도메인 이름 소개
-description: Cloud Manager의 UI를 사용하면 사용자 정의 도메인을 추가하여 셀프서비스 방식으로 사이트를 고유한 브랜드 이름으로 식별할 수 있습니다.
+description: Cloud Manager의 UI를 사용하면 사용자 정의 도메인을 추가하여 셀프서비스 방식을 사용하여 사이트를 고유한 브랜드 이름으로 식별할 수 있습니다.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '757'
-ht-degree: 81%
+ht-degree: 89%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 81%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_domains"
 >title="사용자 정의 도메인 이름 관리"
->abstract="Cloud Manager의 UI를 사용하면 사용자 정의 도메인을 추가하여 셀프서비스 방식으로 사이트를 고유한 브랜드 이름으로 식별할 수 있습니다."
+>abstract="Cloud Manager의 UI를 사용하면 사용자 정의 도메인을 추가하여 셀프서비스 방식을 사용하여 사이트를 고유한 브랜드 이름으로 식별할 수 있습니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html" text="사용자 정의 도메인 이름 추가"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.html" text="사용자 정의 도메인 이름 보기 및 업데이트"
 
-Cloud Manager의 UI를 사용하면 사용자 정의 도메인을 추가하여 셀프서비스 방식으로 사이트를 고유한 브랜드 이름으로 식별할 수 있습니다. Adobe Experience Manager as a Cloud Service는 `*.adobeaemcloud.com`으로 끝나는 기본 도메인 이름으로 프로비저닝됩니다. 이 기본 도메인 이름은 사용자 정의 도메인 이름을 웹 사이트에 연결한 후에도 유지됩니다.
+Cloud Manager의 UI를 사용하면 사용자 정의 도메인을 추가하여 셀프서비스 방식을 사용하여 사이트를 고유한 브랜드 이름으로 식별할 수 있습니다. Adobe Experience Manager as a Cloud Service는 `*.adobeaemcloud.com`으로 끝나는 기본 도메인 이름으로 프로비저닝됩니다. 이 기본 도메인 이름은 사용자 정의 도메인 이름을 웹 사이트에 연결한 후에도 유지됩니다.
 
 ## 사용자 정의 도메인 이름이란? {#what-are-custom-domain-names}
 
