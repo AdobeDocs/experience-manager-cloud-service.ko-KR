@@ -2,9 +2,9 @@
 title: 컨텐츠 전송 도구 사용을 위한 지침 및 우수 사례
 description: 컨텐츠 전송 도구 사용을 위한 지침 및 우수 사례
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
+source-git-commit: 9212042db782dc413b64d40ebde096c12d754f97
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1599'
 ht-degree: 19%
 
 ---
@@ -50,6 +50,8 @@ ht-degree: 19%
 따라서 세그먼트 저장소 크기가 20GB인 경우 필요한 여유 디스크 공간은 94GB입니다.
 
 * 콘텐츠 추가를 지원하려면 콘텐츠 전송 작업 전반에 걸쳐 마이그레이션 세트를 유지 관리해야 합니다. Cloud Acceleration Manager에서는 프로젝트당 최대 5개의 마이그레이션 세트를 컨텐츠 전송 작업 중에 한 번에 만들고 유지 관리할 수 있습니다. 5개 이상의 마이그레이션 세트가 필요한 경우 Cloud Acceleration Manager에서 두 번째 프로젝트를 만들어야 합니다. 그러나 이를 위해서는 여러 사용자가 타겟의 콘텐츠를 덮어쓰는 것을 방지하기 위해 추가적인 프로젝트 관리 및 제품 외 거버넌스가 필요합니다.
+
+* CTT 도구의 설치 디렉토리를 변경하지 마십시오. 기본적으로 설치는 crx-quickstart/cloud-migration 경로에서 수행됩니다. 이 특정 위치는 다른 라이브러리에서 내부적으로 사용됩니다. 이 경로를 수정하면 추출 문제가 발생할 수 있습니다.
 
 ## 컨텐츠 전송 도구 사용 전 중요 고려 사항 {#important-considerations}
 
