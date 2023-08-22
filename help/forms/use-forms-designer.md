@@ -1,15 +1,15 @@
 ---
-title: Forms Designer를 사용하여 DOR 템플릿 및 양식 단편 만들기
+title: AEM Forms Designer 사용
 description: 사용 [!DNL AEM Forms] 기록 문서 템플릿을 만드는 디자이너.
 exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '150'
 ht-degree: 0%
 
 ---
 
-# Forms Designer를 사용하여 기록 문서(DoR) 템플릿 및 양식 단편 만들기 {#install-designer}
+# AEM Forms Designer 사용 {#install-designer}
 
 디자이너는 XDP 양식 템플릿 작성을 단순화하는 포인트 앤 클릭 그래픽 양식 디자인 도구입니다. 양식 템플릿을 디자인하고 해당 논리를 정의하며 엄격한 법적 요구 사항을 충족할 수 있습니다. 이러한 템플릿은 적응형 양식의 기록 문서 템플릿으로 사용됩니다. 이러한 양식 템플릿은 다음과 다릅니다. [적응형 양식 템플릿](template-editor.md).
 
