@@ -2,14 +2,17 @@
 title: 적응형 Forms에서 reCAPTCHA 사용
 description: 적응형 Forms에서 Google reCAPTCHA 서비스를 구성하는 방법에 대해 알아봅니다.
 topic-tags: adaptive_forms, author
-source-git-commit: b4665d0291ee1223e46c8ecf13ca13ea336107d3
+source-git-commit: ad63083016f0f8c51ea336e37461562e61c02a8f
 workflow-type: tm+mt
-source-wordcount: '1913'
-ht-degree: 6%
+source-wordcount: '1932'
+ht-degree: 9%
 
 ---
 
 # 적응형 Forms에서 reCAPTCHA 사용{#using-reCAPTCHA-in-adaptive-forms}
+
+<span class="preview"> 프리릴리스 기능이며 를 통해 액세스할 수 있습니다. [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -18,7 +21,7 @@ ht-degree: 6%
 
 <span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
-CAPTCHA(Complete Automated Public Turning test to tell Computers and Humans Apart)는 온라인 거래에서 일반적으로 사용되는 프로그램으로 인간과 자동화된 프로그램 또는 봇을 구별합니다. 문제를 제기하고 사용자 응답을 평가하여 사이트와 상호 작용하는 사람인지 보트인지를 확인합니다. 테스트 실패 시 사용자가 진행할 수 없도록 하고 봇이 스팸이나 악의적인 목적을 게시하지 않도록 해 온라인 거래를 안전하게 만드는 데 도움을 준다.
+CAPTCHA(컴퓨터와 인간을 구분하기 위해 완전히 자동화된 공공 튜링 테스트)는 인간과 자동화된 프로그램 또는 봇을 구별하기 위해 온라인 거래에서 일반적으로 사용되는 프로그램입니다. 문제를 제기하고 사용자 응답을 평가하여 사이트와 상호 작용하는 것이 인간인지 봇인지 판단합니다. 테스트가 실패할 경우 사용자가 진행하지 못하도록 차단하고 봇이 스팸을 게시하거나 악의적인 목적으로 상호 작용하는 것을 방지하여 온라인 거래를 안전하게 할 수 있도록 도와줍니다.
 
 [!DNL AEM Forms] 적응형 Forms에서 reCAPTCHA를 지원합니다. Google의 reCAPTCHA 서비스를 사용하여 CAPTCHA를 구현할 수 있습니다.
 
@@ -52,7 +55,7 @@ CAPTCHA(Complete Automated Public Turning test to tell Computers and Humans Apar
 
 1. 클라우드 서비스 구성 [!DNL reCAPTCHA Enterprise].
 
-   1. Experience Manager 작성자 인스턴스에서 ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
+   1. Experience Manager 작성자 인스턴스에서 ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]**.
    1. 누르기 **[!UICONTROL reCAPT차]**. Configurations 페이지가 열립니다. 만든 구성 컨테이너를 선택한 다음 탭합니다. **[!UICONTROL 만들기]**.
    1. 다음으로 버전 선택 [!DNL reCAPTCHA Enterprise] 및 reCAPTCHA Enterprise 서비스에 대한 이름, 프로젝트 ID, 사이트 키 및 API 키(2단계에서 획득)를 지정합니다.
    1. 키 유형을 선택합니다. 키 유형은 에서 구성한 사이트 키와 동일해야 합니다. [Google 클라우드 프로젝트](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin), 예: **확인란 사이트 키** 또는 **점수 기반 사이트 키**.
@@ -81,7 +84,7 @@ reCAPTCHA Enterprise 서비스가 활성화되면 적응형 양식에서 사용�
 
 1. reCAPTCHA v2에 대한 클라우드 서비스를 구성합니다.
 
-   1. AEM 작성자 인스턴스에서 ![tools-1](assets/tools-1.png) > **Cloud Services**.
+   1. AEM 작성자 인스턴스에서 ![tools-1](assets/tools-1.png) > **Cloud Service**.
    1. 누르기 **[!UICONTROL reCAPT차]**. Configurations 페이지가 열립니다. 만든 구성 컨테이너를 선택한 다음 탭합니다. **[!UICONTROL 만들기]**.
    1. 다음으로 버전 선택 [!DNL reCAPTCHA v2] , reCAPTCHA 서비스(1단계에서 획득)에 대한 이름, 사이트 키 및 비밀 키를 지정하고 을 누릅니다 **[!UICONTROL 만들기]** 을 클릭하여 클라우드 서비스 구성을 생성합니다.
    1. 구성 요소 편집 대화 상자에서 1단계에서 얻은 사이트 및 비밀 키를 지정합니다. 누르기 **[!UICONTROL 설정 저장]** 그런 다음 을 누릅니다 **확인** 구성을 완료합니다.
