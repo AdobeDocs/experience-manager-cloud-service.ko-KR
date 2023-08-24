@@ -3,9 +3,9 @@ title: AEM Headless as a Cloud Service 시작하기
 description: 이 AEM Headless 개발자 여정의 부분에서는 AEM Headless 사전 요구 사항에 대해 알아봅니다.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3080'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ AEM의 Headless 기능은 몇 가지 주요 기능을 기반으로 합니다. �
 콘텐츠를 Headless 방식으로 수정하기 위해 AEM은 두 개의 강력한 API를 제공합니다.
 
 * GraphQL API를 사용하여 콘텐츠 조각에 액세스하고 전달하기 위한 요청을 생성할 수 있습니다.
-* Assets REST API를 사용하면 콘텐츠 조각(및 기타 에셋)을 만들고 수정할 수 있습니다.
+* Assets REST API를 사용하면 콘텐츠 조각(및 기타 자산)을 만들고 수정할 수 있습니다.
 
 AEM Headless 여정 후반부에서 해당 API와 이를 사용하는 방법에 대해 알아봅니다. 또는 아래 [추가 리소스](#additional-resources) 섹션에서 추가 설명서를 참조하십시오.
 
@@ -143,7 +143,7 @@ AEM Headless 프로젝트를 시작하기 전에 알아 두어야 할 몇 가지
 
 ### 범위 {#scope}
 
-프로젝트의 범위를 명확히 정의해야 합니다. 범위는 수락 기준을 알리고 완료의 정의를 설정할 수 있습니다.
+프로젝트의 범위를 명확히 정의해야 합니다. 범위는 허용 기준을 알려 주고 완료에 대한 정의를 설정할 수 있도록 합니다.
 
 첫 번째 질문은 “AEM Headless를 통해 얻으려는 목표는 무엇입니까?”입니다. AEM이 아닌 자체 개발 도구로 빌드한 경험 애플리케이션을 보유하거나 앞으로 보유할 수 있다는 것이 이 질문에 대한 일반적인 답변입니다. 이 경험 애플리케이션은 모바일 앱, 웹 사이트 또는 기타 최종 사용자 고객용 경험 애플리케이션일 수 있습니다. AEM Headless 사용 목표는 AEM Headless 호출로 경험 애플리케이션에서 바로 콘텐츠나 CRUD 콘텐츠를 완전히 가져올 수 있는 최신 API를 사용하여 AEM에서 생성, 저장 및 관리되는 콘텐츠로 경험 애플리케이션을 피드하는 것입니다. 이 항목을 원하는 것이 아니면 [AEM 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)로 돌아가 수행할 작업에 더 적합한 섹션을 찾습니다.
 
@@ -259,7 +259,7 @@ GraphQL은 AEM과 Headless 콘텐츠 사용자 사이에서 “접착제” 역�
 
 #### 업데이트 주기 {#update-frequency}
 
-경험 섹션이 다르면 콘텐츠 업데이트 주기가 달라지는 경우가 있습니다. CDN 및 캐시 구성을 세부 조정할 수 있으려면 이를 이해하는 것이 중요합니다. [콘텐츠 설계자](#content-architects)가 모델을 디자인하여 콘텐츠를 나타내는 경우 중요한 정보입니다. 고려해야 할 사항:
+경험 섹션이 다르면 콘텐츠 업데이트 주기가 달라지는 경우가 있습니다. 이 정보를 이해하려면 CDN 및 캐시 구성을 미세 조정할 수 있어야 합니다. [콘텐츠 설계자](#content-architects)가 모델을 디자인하여 콘텐츠를 나타내는 경우 중요한 정보입니다. 고려해야 할 사항:
 
 * 특정 기간이 경과하면 특정 유형의 콘텐츠는 만료되어야 합니까?
 * 사용자별로 지정되어 캐시될 수 없는 요소가 있습니까?
