@@ -5,15 +5,15 @@ feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '573'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Adobe Analytics와 통합{#integrating-with-adobe-analytics}
 
-Adobe Analytics과 AEMas a Cloud Service 를 통합하여 웹 페이지 활동을 추적할 수 있습니다. 통합하려면 다음 작업을 수행해야 합니다.
+Adobe Analytics와 AEM as a Cloud Service를 통합하여 웹 페이지 활동을 추적할 수 있습니다. 통합하려면 다음 작업을 수행해야 합니다.
 
 * Touch UI를 사용하여 AEM as a Cloud Service에 Analytics 구성을 만듭니다. Adobe Analytics를 AEM as a Cloud Service와 통합하려면 IMS 인증이 필요합니다.
 * Adobe Analytics를 [Adobe Launch](#analytics-launch)에 확장 기능으로 추가하고 구성합니다. Adobe Launch에 대한 자세한 내용은 [이 페이지](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html)를 참조하십시오.
