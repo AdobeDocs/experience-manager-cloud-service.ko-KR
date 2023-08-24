@@ -3,9 +3,9 @@ title: 작성 기본 사항에 대해 알아보기
 description: 콘텐츠 조각을 사용하여 Headless CMS용 콘텐츠를 작성하는 개념 및 메커니즘에 대해 알아봅니다.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1714'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ AEM 설치는 일반적으로 세 개의 환경으로 구성됩니다.
 * 암호
 * 로그인 화면 액세스 권한에 대한 링크
 
-필요한 모든 권한으로 계정을 구성합니다. Adobe 문제가 있는 경우 사내 프로젝트 지원 팀에 문의하는 것이 좋습니다.
+필요한 모든 권한으로 계정을 구성합니다. 문제가 발생한 경우 사내 프로젝트 지원 팀에 문의하는 것이 좋습니다.
 
 ### 탐색 {#navigation}
 
