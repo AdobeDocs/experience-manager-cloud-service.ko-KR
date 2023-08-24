@@ -3,9 +3,9 @@ title: SSL 인증서 관리
 description: Cloud Manager를 사용하여 SSL 인증서의 상태를 확인하는 방법과 SSL 인증서를 편집, 교체, 업데이트 및 삭제하는 방법을 알아봅니다.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '644'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
