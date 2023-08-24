@@ -3,9 +3,9 @@ title: 기본 처리
 description: AEM 탐색 및 기본 사용 방법 익히기
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2975'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 98%
 
 ## 터치 지원 UI {#a-touch-enabled-ui}
 
-AEM 사용자 인터페이스는 터치가 활성화되어 있습니다. 터치 활성화 인터페이스를 사용하면 탭, 길게 터치하기, 밀기 등의 동작을 통해 소프트웨어와 상호 작용할 수 있습니다. AEM UI는 터치를 지원하므로 휴대 전화 또는 태블릿과 같은 터치 디바이스에서 터치 제스처를 사용할 수 있습니다. 그러나 기존 데스크탑 디바이스에서 마우스 동작도 사용할 수 있으므로 콘텐츠를 작성하는 방법을 유연하게 선택할 수 있습니다.
+AEM 사용자 인터페이스는 터치가 활성화되어 있습니다. 터치 활성화 인터페이스를 사용하면 탭, 길게 누르기, 밀기 등과 같은 동작을 통해 소프트웨어와 상호 작용할 수 있습니다. AEM UI는 터치를 지원하므로 휴대 전화 또는 태블릿과 같은 터치 디바이스에서 터치 제스처를 사용할 수 있습니다. 그러나 기존 데스크탑 디바이스에서 마우스 동작도 사용할 수 있으므로 콘텐츠를 작성하는 방법을 유연하게 선택할 수 있습니다.
 
 ## 첫 단계 {#first-steps}
 
@@ -98,7 +98,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
   [단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/`(슬래시)를 사용하여 모든 콘솔에서 검색을 호출할 수도 있습니다.
 
-* [솔루션](https://www.adobe.com/experience-cloud.html)
+* [솔루션](https://www.adobe.com/kr/experience-cloud.html)
 
   ![솔루션 버튼](/help/sites-cloud/authoring/assets/solutions.png)
 
@@ -293,7 +293,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
 ![열 보기](/help/sites-cloud/authoring/assets/column-view.png)
 
-[열 보기]를 사용하면 일련의 계단식 열을 통해 콘텐츠 트리를 시각적으로 탐색할 수 있습니다. 이 보기를 통해 웹 사이트의 트리 구조를 시각화하고 탐색할 수 있습니다.
+[열 보기]를 사용하면 일련의 계단식 열을 통해 콘텐츠 트리를 시각적으로 탐색할 수 있습니다. 이 보기에서는 웹 사이트의 트리 구조를 시각화하고 트래버스할 수 있습니다.
 
 맨 왼쪽 열의 리소스를 선택하면 오른쪽 열에 하위 리소스가 표시됩니다. 오른쪽 열에서 리소스를 선택하면 오른쪽의 다른 열에 하위 리소스가 표시됩니다.
 
@@ -418,7 +418,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
 ![타임라인 트리](/help/sites-cloud/authoring/assets/timeline.png)
 
-타임라인 열에서 다음 작업을 수행할 수 있습니다.
+타임라인 열을 통해 다음을 수행할 수 있습니다.
 
 * 선택한 항목과 관련된 다양한 이벤트 보기
 
