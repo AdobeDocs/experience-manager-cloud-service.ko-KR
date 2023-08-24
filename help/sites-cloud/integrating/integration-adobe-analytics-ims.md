@@ -2,10 +2,10 @@
 title: Adobe Analytics와 통합할 때 사용되는 IMS 구성
 description: Adobe Analytics와 통합할 때 사용되는 IMS 구성 알아보기
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: d59559d38eef182723a8791c6614d03930f64a85
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 100%
+source-wordcount: '914'
+ht-degree: 96%
 
 ---
 
@@ -66,6 +66,12 @@ Adobe Developer Console을 사용하여 AEM이 사용할 Adobe Analytics로 프�
 ### 프로젝트 만들기 {#creating-the-project}
 
 Adobe Developer Console을 열고 AEM이 사용할 Adobe Analytics를 사용하여 프로젝트를 만듭니다.
+
+>[!CAUTION]
+>
+>현재는 Adobe Developer 콘솔만 지원합니다. **서비스 계정(JWT)** 자격 증명 유형.
+>
+>를 사용하지 마십시오. **OAuth 서버 간** 나중에 지원되는 자격 증명 유형입니다.
 
 1. 프로젝트용 Adobe Developer Console을 엽니다.
 
