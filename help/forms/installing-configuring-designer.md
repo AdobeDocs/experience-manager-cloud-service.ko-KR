@@ -1,10 +1,10 @@
 ---
 title: Forms Designer 다운로드 및 설치
 description: Forms Designer를 사용하여 기록 문서의 템플릿 역할을 하는 XDP 및 PDF 양식 템플릿을 만들 수 있습니다. 디자이너는 [!DNL AEM Forms] 라이센스.
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 115612a11f43000894c76758b1d2bcb3506f3bcb
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 2%
+source-wordcount: '307'
+ht-degree: 1%
 
 ---
 
@@ -14,18 +14,38 @@ ht-degree: 2%
 
 ## 전제 조건 {#pre-requisites}
 
-Designer를 설치하고 구성하려면 다음 소프트웨어와 최소 하드웨어가 필요합니다.
+최신 버전의 AEM Forms Designer 64비트 또는 32비트를 설치하려면 Designer를 설치하고 구성할 다음 소프트웨어와 최소 하드웨어가 필요합니다.
 
-* [!DNL Microsoft® Windows® 2016 Server], [!DNL Microsoft® Windows® 2019 Server], 또는 [!DNL Microsoft® Windows® 10]
-* 32비트용 RAM 1GB 또는 64비트 OS용 RAM 2GB
-* 32비트용 16GB 디스크 공간 또는 64비트 OS용 20GB 디스크 공간
+>[!BEGINTABS]
+
+>[!TAB 64비트 OS(권장)]
+
+* [!DNL Microsoft® Windows® 2016 Server] 또는 [!DNL Microsoft® Windows® 2019 Server], 및 [!DNL Microsoft® Windows® 10]
+* 최소 2GB RAM
+* 20GB의 디스크 공간
 * 그래픽 메모리 - 128MB GPU(256MB 권장)
 * 2.35GB의 사용 가능한 하드 디스크 공간
 * 1024 X 768 픽셀 이상의 모니터 해상도
 * 비디오 하드웨어 가속(옵션)
-* Acrobat Pro DC, Acrobat Standard DC 또는 Adobe Acrobat Reader DC.
-* Designer를 설치할 수 있는 관리 권한입니다.
-* Microsoft Visual C++ 2019(VC 14.28 이상) 32비트 런타임
+* Acrobat Pro DC, Acrobat Standard DC 또는 Adobe Acrobat Reader DC
+* Designer를 설치할 수 있는 관리 권한
+* [!DNL Microsoft® Visual C++ 2019] (VC 14.28 이상)
+
+>[!TAB 32비트 운영 체제]
+
+* [!DNL Microsoft® Windows® 2016 Server] 또는 [!DNL Microsoft® Windows® 2019 Server], 및 [!DNL Microsoft® Windows® 10]
+* 최소 1GB RAM
+* 16GB의 디스크 공간
+* 그래픽 메모리 - 128MB GPU(256MB 권장)
+* 2.35GB의 사용 가능한 하드 디스크 공간
+* 1024 X 768 픽셀 이상의 모니터 해상도
+* 비디오 하드웨어 가속(옵션)
+* Acrobat Pro DC, Acrobat Standard DC 또는 Adobe Acrobat Reader DC
+* Designer를 설치할 수 있는 관리 권한
+* Microsoft® Visual C++ 2019(VC 14.28 이상)
+
+>[!ENDTABS]
+
 
 ## Designer 설치 {#install-designer}
 
