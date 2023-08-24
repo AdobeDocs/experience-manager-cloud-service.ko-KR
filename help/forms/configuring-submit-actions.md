@@ -2,9 +2,9 @@
 title: 적응형 양식에 대한 제출 액션을 구성하는 방법
 description: 적응형 양식은 여러 제출 액션을 제공합니다. 제출 액션은 적응형 양식이 제출 후 처리되는 방식을 정의합니다. 기본 제공 제출 액션을 사용하거나 직접 만들 수 있습니다.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: be57fe6c54f2ee07378e16bae601500f71e7ce6b
+source-git-commit: 74fed5b2bcffac9d267b66aaa3d69b27cadd3417
 workflow-type: tm+mt
-source-wordcount: '3388'
+source-wordcount: '3386'
 ht-degree: 83%
 
 ---
@@ -337,7 +337,7 @@ AEM Forms를 Azure Storage 컨테이너에 연결하려면
 * 캡처된 데이터에 대해 복잡한 계산 수행
 * 사전 정의된 일정에 따라 스토리지 시스템에 적응형 Forms 데이터 저장
 
-적응형 Forms 편집기는 **Microsoft® Power Automate 플로우 호출** 제출 액션을 통해 적응형 양식 데이터, 첨부 파일 및 기록 문서를 Power Automate Cloud Flow로 전송합니다. 제출 액션을 사용하여 캡처된 데이터를 Microsoft® Power Automate로 보내려면 [Forms as a Cloud Service 인스턴스와 Microsoft® Power Automate 연결](forms-microsoft-power-automate-integration.md)
+적응형 Forms 편집기는 **Microsoft® Power Automate 플로우 호출** 적응형 양식 데이터, 첨부 파일 및 기록 문서를 Power Automate Cloud Flow로 전송하는 작업을 제출합니다. 제출 액션을 사용하여 캡처된 데이터를 Microsoft® Power Automate로 보내려면 [Forms as a Cloud Service 인스턴스와 Microsoft® Power Automate 연결](forms-microsoft-power-automate-integration.md)
 
 구성이 완료되면 다음을 사용합니다. [Microsoft® Power Automate 플로우 호출](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) 작업을 제출하여 Power Automate 흐름에 데이터를 전송합니다.
 

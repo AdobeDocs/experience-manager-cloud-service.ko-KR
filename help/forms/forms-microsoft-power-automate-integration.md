@@ -3,9 +3,9 @@ title: 적응형 양식 데이터를 Microsoft&reg; Power Automate에 연결하�
 description: 적응형 양식 데이터를 Microsoft&reg; Power Automate에 연결하고 전송하는 단계별 안내서입니다.
 keywords: 적응형 Forms Microsoft Power Automate, Microsoft Power Automate에 적응형 Forms 데이터 제출
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: be57fe6c54f2ee07378e16bae601500f71e7ce6b
+source-git-commit: 74fed5b2bcffac9d267b66aaa3d69b27cadd3417
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1198'
 ht-degree: 6%
 
 ---
@@ -119,7 +119,7 @@ ht-degree: 6%
 1. 작성자 인스턴스에 로그인하고 적응형 양식을 선택한 다음 를 클릭합니다. **[!UICONTROL 속성]**.
 1. 구성 컨테이너에서 섹션에서 만든 컨테이너를 찾아 선택합니다 [Microsoft® Power Automate Dataverse 클라우드 구성 만들기](#microsoft-power-automate-dataverse-cloud-configuration), 및 탭 **[!UICONTROL 저장 및 닫기]**.
 1. 편집할 적응형 양식을 열고 다음으로 이동합니다. **[!UICONTROL 제출]** 섹션에 있는 섹션을 참조하십시오.
-1. 속성 컨테이너에서 **[!UICONTROL 작업 제출]** 선택 **[!UICONTROL Power Automate 플로우 호출]** 옵션을 선택합니다. 사용 가능한 Power Automate 플로우 목록을 사용할 수 있습니다. **[!UICONTROL 전원 자동화 플로우]** 옵션을 선택합니다. 필요한 플로우를 선택하면 적응형 Forms 데이터가 제출 시 해당 플로우에 제출됩니다.
+1. 속성 컨테이너에서 **[!UICONTROL 작업 제출]** 선택 **[!UICONTROL Power Automate 플로우 호출]** 옵션 및 선택 **[!UICONTROL 전원 자동화 플로우]**. 필요한 플로우를 선택하면 적응형 Forms 데이터가 제출 시 해당 플로우에 제출됩니다.
 
    ![제출 액션 구성](assets/submission.png)
 
