@@ -4,9 +4,9 @@ description: 성능을 최적화하기 위해 Adobe Experience Manager as a Clou
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1680'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -444,7 +444,7 @@ URL은 다음과 같은 부분들로 나눌 수 있습니다.
 1. “1.0”과 같은 버전 번호를 입력합니다.
 1. **필터** 아래에 새 **필터**&#x200B;를 추가합니다. 경로 파인더를 사용하여 구성 아래에서 `persistentQueries` 폴더를 선택합니다. 예를 들어 `wknd` 구성의 경우, 전체 경로는 `/conf/wknd/settings/graphql/persistentQueries`입니다.
 1. **저장**&#x200B;을 탭하여 새 패키지 정의를 저장하고 대화 상자를 닫습니다.
-1. 탭 **빌드** 새로 생성된 패키지 정의에 있는 단추입니다.
+1. 새로 만든 패키지 정의에 있는 **빌드** 버튼을 탭합니다.
 
 패키지를 빌드하면 다음과 같은 작업을 수행할 수 있습니다.
 
