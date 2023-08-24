@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2051'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -394,7 +394,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
    * 삽입된 텍스트 - 녹색
    * 대체된 텍스트 - 파란색
 
-* 전체 화면 아이콘을 사용하면 두 버전 중 하나를 자체적으로 열 수 있습니다. 그런 다음 병렬 보기로 다시 전환할 수 있습니다
+* 전체 화면 아이콘을 사용하면 두 버전 중 하나를 자체적으로 열 수 있습니다. 그런 다음 병렬 보기로 다시 전환할 수 있습니다.
 * 특정 버전으로 **되돌릴** 수 있습니다.
 * **완료**&#x200B;를 선택하면 콘솔로 돌아갑니다.
 
