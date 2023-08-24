@@ -4,9 +4,9 @@ description: AEM Forms를 살펴보고 업무용 양식 및 문서 콘텐츠를 
 landing-page-description: AEM as a Cloud Service에서 양식을 사용하는 방법을 이해합니다.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1155'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service]는 고객 여정의 모
 
 ## 양식 성능 최적화
 
-이 서비스는 게시된 양식에 대한 성능 지표를 캡처하고 추적할 수 있는 Adobe Analytics과 통합됩니다. 이러한 지표를 분석하는 목적은 양식이나 문서를 보다 유용하게 만드는 데 필요한 변경 사항에 대한 데이터를 기반으로 정보에 입각한 결정을 내리는 것입니다. Adobe Analytics를 사용하면 적응형 양식을 사용하는 동안 사용자가 직면하는 상호 작용 패턴 및 문제를 발견할 수 있습니다.
+이 서비스는 게시된 양식에 대한 성능 지표를 캡처하고 추적할 수 있는 Adobe Analytics와 통합되어 있습니다. 이러한 지표를 분석하는 목적은 양식이나 문서를 보다 유용하게 만드는 데 필요한 변경 사항에 대한 데이터를 기반으로 정보에 입각한 결정을 내리는 것입니다. Adobe Analytics를 사용하면 적응형 양식을 사용하는 동안 사용자가 직면하는 상호 작용 패턴 및 문제를 발견할 수 있습니다.
 
 
 ## 시작하기 {#key-features}
