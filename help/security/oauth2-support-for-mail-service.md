@@ -3,9 +3,9 @@ title: 메일 서비스에 대한 OAuth2 지원
 description: Adobe Experience Manager as a Cloud Service의 메일 서비스에 대한 Oauth2 지원
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '679'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ AEM as a Cloud Service 메일 서비스에 대한 자세한 내용은 [이메일
    ![앱 등록 프로세스 시작](assets/oauth-outlook1.png)
 
 1. 요구 사항에 따라 정보를 입력한 다음, **등록**&#x200B;을 클릭합니다.
-1. 새로 만든 앱으로 이동하여 **API 권한**.
+1. 새로 만든 앱으로 이동하여 **API 권한**&#x200B;을 선택합니다.
 1. **권한 추가** > **그래프 권한** > **위임된 권한**&#x200B;을 클릭합니다.
 1. 아래의 앱에 대한 권한을 선택한 다음 **권한 추가**&#x200B;를 클릭합니다.
    * `https://outlook.office.com/SMTP.Send`
@@ -132,7 +132,7 @@ AEM측의 OAuth 구성을 진행하기에 앞서 아래 절차에 따라 accessT
    * `offline_access`
    * `email`
    * `profile`
-1. 다음 구문을 사용하여 OSGi 속성 파일 `called com.day.cq.mailer.DefaultMailService.cfg.json`을 `/apps/<my-project>/osgiconfig/config` 아래에 생성합니다. [이메일 서비스 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=en)에 설명된 대로 `smtp.host` 및 `smtp.port` 값은 고급 네트워킹 구성을 반영합니다.
+1. 다음 구문을 사용하여 OSGi 속성 파일 `called com.day.cq.mailer.DefaultMailService.cfg.json`을 `/apps/<my-project>/osgiconfig/config` 아래에 생성합니다. [이메일 서비스 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=ko-KR)에 설명된 대로 `smtp.host` 및 `smtp.port` 값은 고급 네트워킹 구성을 반영합니다.
 
    ```
    {
