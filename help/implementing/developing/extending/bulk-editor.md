@@ -4,14 +4,14 @@ description: 한 번에 여러 페이지의 속성을 편집할 수 있도록 �
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '248'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
 # 페이지 속성의 일괄 편집 구성 {#configuring-bulk-editing-of-page-properties}
 
-[페이지 속성의 벌크 편집](/help/sites-cloud/authoring/fundamentals/page-properties.md#from-the-sites-console-multiple-pages) 여러 페이지의 속성을 한 번에 편집할 수 있습니다.
+[페이지 속성의 일괄 편집](/help/sites-cloud/authoring/fundamentals/page-properties.md#from-the-sites-console-multiple-pages)을 통해 한 번에 여러 페이지의 속성을 편집할 수 있습니다.
 
 ## 고려 사항 {#considerations}
 

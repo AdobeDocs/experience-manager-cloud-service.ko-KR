@@ -5,7 +5,7 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 source-git-commit: 072f76672198a68a9b6ede51d4a93d3ab27f3c84
 workflow-type: tm+mt
 source-wordcount: '1366'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -49,7 +49,7 @@ GraphQL은 다음 사항을 제공하는 오픈 소스 사양입니다.
 * 구조화된 오브젝트에서 특정 콘텐츠를 선택할 수 있는 쿼리 언어.
 * 구조화된 콘텐츠로 해당 쿼리를 수행하는 런타임.
 
-GraphQL은 강력한 형식의 API입니다. 즉, GraphQL이 액세스하는 대상 및 방법을 *이해*&#x200B;할 수 있도록 *모든* 데이터를 유형별로 명확하게 구조화하고 구성해야 합니다. 콘텐츠 오브젝트의 구조를 정의하는 GraphQL 스키마 내에서 데이터 필드를 정의합니다.
+GraphQL은 강력한 포맷의 API입니다. 즉, GraphQL이 액세스하는 대상 및 방법을 *이해*&#x200B;할 수 있도록 *모든* 데이터를 유형별로 명확하게 구조화하고 구성해야 합니다. 콘텐츠 오브젝트의 구조를 정의하는 GraphQL 스키마 내에서 데이터 필드를 정의합니다.
 
 그런 다음 GraphQL 엔드포인트는 GraphQL 쿼리에 응답하는 경로를 제공합니다.
 
@@ -133,7 +133,7 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
 
 * 콘텐츠 조각 모델을 정의할 때 사용 가능한 특정 데이터 유형입니다.
 * 특정 콘텐츠 조각 모델에 따라 다른 조각을 참조합니다.
-* 구조화된 데이터를 만들고 검색할 수 있습니다.
+* 구조화된 데이터를 만든 다음 검색할 수 있습니다.
 
    * **다중 피드**&#x200B;로 정의된 경우 주요 조각에서 여러 하위 조각을 참조(검색)할 수 있습니다.
 
@@ -344,7 +344,7 @@ query {
 
 <!-- need code / curl / cli examples-->
 
-필수 요소 구성과 함께 AEM GraphQL API 사용에 대한 자세한 내용은 다음을 참조할 수 있습니다.
+필수 요소 구성과 함께 AEM GraphQL API 사용에 대한 자세한 내용은 다음 자료를 참조하십시오.
 
 * AEM을 통해 GraphQL을 사용하는 방법 알아보기
 * 샘플 콘텐츠 조각 구조
@@ -373,7 +373,7 @@ query {
 * [콘텐츠 조각을 사용하여 작업](/help/sites-cloud/administering/content-fragments/content-fragments.md)
    * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
    * [JSON 출력](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
-* [원본 간 리소스 공유(CORS) 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))
+* [원본 간 리소스 공유(CORS) 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ko-KR#understand-cross-origin-resource-sharing-(cors))
 * [GraphQL 지속 쿼리 - Dispatcher에서 캐싱 활성화](/help/headless/deployment/dispatcher-caching.md)
 * [서버측 API용 액세스 토큰 생성](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
 * [AEM Headless 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - 콘텐츠 모델링 및 GraphQL을 포함하여 AEM의 Headless 기능 사용 개요를 제공하는 짧은 비디오 튜토리얼 시리즈.

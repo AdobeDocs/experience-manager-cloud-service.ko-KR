@@ -225,7 +225,7 @@ ht-degree: 99%
          + [콘텐츠 전송 도구 사용을 위한 지침 및 모범 사례](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
          + [콘텐츠 전송 도구 시작하기](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
          + [콘텐츠 전송 확인](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
-         + [폐쇄된 사용자 그룹 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)
+         + [폐쇄형 사용자 그룹 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)
          + [대형 콘텐츠 저장소 처리](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
          + [사용자 매핑 및 주요 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
          + [소스에서 콘텐츠 추출](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)

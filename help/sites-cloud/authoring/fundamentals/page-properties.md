@@ -5,7 +5,7 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2279'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 98%
 
 * **별칭 URL**
 
-   * 이 페이지의 별칭 URL을 입력할 수 있습니다. 이 URL을 사용하면 더 짧은 및/또는 더 높은 표현식의 URL을 사용할 수 있습니다.
+   * 이 페이지에 대한 별칭 URL을 입력할 수 있으므로 더 짧고 구체적인 URL을 사용할 수 있습니다.
    * 예를 들어 웹 사이트 `http://example.com`에 대해 경로 `/v1.0/startpage`로 식별되는 페이지에 대한 별칭 URL을 `welcome`으로 설정하면 `http://example.com/welcome`이 `http://example.com/content/v1.0/startpage`의 별칭 URL이 됩니다.
 
   >[!CAUTION]
@@ -104,7 +104,7 @@ ht-degree: 98%
    * **별칭** - 이 페이지와 사용할 별칭을 지정합니다.
       * 예를 들어 페이지 `/content/wknd/us/en/magazine/members-only`에 대한 `private`의 별칭을 정의하면 `/content/wknd/us/en/magazine/private`을 통해서도 이 페이지에 액세스할 수 있습니다.
       * 별칭을 만들면 페이지 노드의 `sling:alias` 속성이 설정되며, 이는 저장소 경로가 아닌 리소스에만 영향을 미칩니다.
-      * 편집기의 별칭 을 통해 액세스하는 페이지는 게시할 수 없습니다. 편집기의 [게시 옵션](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)은 실제 경로를 통해 액세스하는 페이지에 대해서만 사용할 수 있습니다.
+      * 편집기의 별칭을 통해 액세스하는 페이지는 게시할 수 없습니다. 편집기의 [게시 옵션](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)은 실제 경로를 통해 액세스하는 페이지에 대해서만 사용할 수 있습니다.
       * 자세한 내용은 [SEO 및 URL 관리 모범 사례 아래의 현지화된 페이지 이름](/help/overview/seo-and-url-management.md#localized-page-names)을 참조하십시오.
 
 * **구성**

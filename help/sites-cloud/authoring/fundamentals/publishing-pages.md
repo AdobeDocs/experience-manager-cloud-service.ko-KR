@@ -5,7 +5,7 @@ exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1804'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -85,7 +85,7 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
 >[!NOTE]
 >
->다음에 의해 액세스된 페이지 [별칭](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) 편집기에서 을(를) 게시할 수 없습니다. 편집기의 [게시] 옵션은 실제 경로를 통해 액세스하는 페이지에 대해서만 사용할 수 있습니다.
+>편집기의 [별칭](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)을 통해 액세스하는 페이지는 게시할 수 없습니다. 편집기의 [게시] 옵션은 실제 경로를 통해 액세스하는 페이지에 대해서만 사용할 수 있습니다.
 
 ### 콘솔에서 게시 {#publishing-from-the-console}
 
@@ -124,7 +124,7 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
    ![게시할 페이지 선택](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
-1. **게시 관리** 마법사가 시작됩니다. 첫 번째 단계, **옵션**&#x200B;를 사용하면 다음 작업을 수행할 수 있습니다.
+1. **게시 관리** 마법사가 시작됩니다. 첫 번째 단계인 **옵션**&#x200B;에서는 다음을 수행할 수 있습니다.
 
    * **작업**
 
@@ -228,7 +228,7 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
 >[!NOTE]
 >
->다음에 의해 액세스된 페이지 [별칭](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) 편집기의 게시는 취소할 수 없습니다. 편집기의 [게시] 옵션은 실제 경로를 통해 액세스하는 페이지에 대해서만 사용할 수 있습니다.
+>편집기의 [별칭](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)을 통해 액세스하는 페이지는 게시를 취소할 수 없습니다. 편집기의 [게시] 옵션은 실제 경로를 통해 액세스하는 페이지에 대해서만 사용할 수 있습니다.
 
 ### 콘솔에서 게시 취소 {#unpublishing-from-the-console}
 
