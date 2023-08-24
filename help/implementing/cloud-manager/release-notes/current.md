@@ -4,9 +4,9 @@ description: AEM as a Cloud Service의 Cloud Manager 2023.8.0 릴리스 정보�
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 99772a1a3faa454a9b07dd92c9e7622ddb37ce2d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '540'
-ht-degree: 24%
+ht-degree: 100%
 
 ---
 
@@ -25,42 +25,42 @@ AEM as a Cloud Service의 Cloud Manager 2023.8.0 릴리스 일자는 2023년 8�
 
 ## 새로운 기능 {#what-is-new}
 
-* 콘텐츠 세트 구성 시 [콘텐츠 복사,](/help/implementing/developing/tools/content-copy.md) [컨텍스트 인식 구성](/help/implementing/developing/introduction/configurations.md) 는 이제 UI의 콘텐츠 세트에서 허용됩니다.
-* Cloud Manager UI에서 오류 메시지의 이해도와 노출을 개선했습니다.
+* 콘텐츠 세트를 [복사 콘텐츠](/help/implementing/developing/tools/content-copy.md)로 구성할 때 이제 UI의 콘텐츠 세트 내에서 [컨텍스트 인식 구성](/help/implementing/developing/introduction/configurations.md)이 허용됩니다.
+* Cloud Manager UI에서 오류 메시지의 이해도 및 표시가 개선되었습니다.
 
 ## 조기 채택 프로그램 {#early-adoption}
 
-초기 채택 프로그램의 일부가 되어 예정된 기능을 테스트할 수 있습니다.
+조기 채택 프로그램에 참여하여 향후 기능을 테스트할 기회를 얻으십시오.
 
 ### 셀프서비스 콘텐츠 복원 {#content-restore}
 
-[새로운 셀프서비스 콘텐츠 복원 기능](/help/operations/restore.md) 이제 최대 7일 동안 백업 복원을 제공하며 얼리 어답터가 평가 목적으로 사용할 수 있습니다. 평가 기능은 다음과 같습니다.
+[새로운 셀프서비스 콘텐츠 복원 기능](/help/operations/restore.md)에서 이제 최대 7일 동안 백업 복원이 제공되며 얼리 어답터는 평가 목적으로 다음 기능을 사용할 수 있습니다.
 
-* 이전 24시간 동안의 시점 백업 복원
+* 이전 24시간 동안 특정 시점 백업 복원
 * 최대 7일 동안 고정 시간 복원
 
-이 새로운 기능을 테스트하고 피드백을 공유하려면 (으)로 이메일을 보내십시오. `aemcs-restorefrombackup-adopter@adobe.com` Adobe ID과 연계된 이메일. 참고:
+이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일로 `aemcs-restorefrombackup-adopter@adobe.com`에 이메일을 보내주십시오. 참고:
 
 * 얼리 어답터 프로그램은 개발 환경으로만 제한됩니다.
-* 이 기능의 얼리어답터 프로그램 가용성은 제한됩니다.
-* 이 기능은 실수로 삭제된 콘텐츠를 복구하기 위한 것으로, 재해 복구용이 아닙니다.
+* 이 기능에 대한 얼리 어답터 프로그램의 가용성은 제한적입니다.
+* 이 기능은 실수로 삭제된 콘텐츠를 복구하기 위한 것이며 재해 복구용이 아닙니다.
 
 ### 경험 감사 대시보드 {#experience-audit-dashboard}
 
-[Cloud Manager 경험 감사 대시보드](/help/implementing/cloud-manager/experience-audit-dashboard.md) 에는 페이지 성능 점수의 트렌드 보기와 이를 개선하는 데 도움이 되는 통찰력 및 권장 사항이 포함되어 있습니다. 경험 감사는 Cloud Manager 프로덕션 파이프라인의 한 단계로 포함됩니다.
+[Cloud Manager 경험 감사 대시보드](/help/implementing/cloud-manager/experience-audit-dashboard.md)에는 개선에 도움이 되는 인사이트 및 권장 사항과 함께 페이지 성능 점수의 트렌드 보기가 포함됩니다. 경험 감사는 Cloud Manager 프로덕션 파이프라인의 한 단계로 포함됩니다.
 
-대시보드는 웹 앱의 품질을 개선하기 위한 오픈 소스 자동 도구인 Google Lighthouse를 활용합니다. 공개 또는 인증이 필요한 웹 페이지에 대해 실행할 수 있습니다. 여기에는 성능, 접근성, 점진적 웹 앱, SEO 등에 대한 감사가 있습니다.
+대시보드는 웹 앱의 품질을 개선하기 위한 오픈 소스 자동화 도구인 Google Lighthouse를 활용합니다. 공개 또는 인증이 필요한 모든 웹 페이지에 대해 실행할 수 있습니다. 성능, 접근성, 점진적 웹 앱, SEO 등에 대한 감사가 있습니다.
 
-새로운 대시보드를 테스트하는 데 관심이 있으십니까? (으)로 이메일을 보내십시오. `aem-lighthouse-pilot@adobe.com` Adobe ID과 연결된 이메일을 통해 시작할 수 있습니다.
+새 대시보드를 테스트해 보고 싶으십니까? Adobe ID와 연결된 이메일로 `aem-lighthouse-pilot@adobe.com`에 이메일을 보내주시면 귀하의 시작을 도와드릴 수 있습니다.
 
 ## 버그 수정 {#bug-fixes}
 
-* 다음 **환경** 이제 를 트리거한 후 메뉴가 닫힙니다. **[콘텐츠 복사](/help/implementing/developing/tools/content-copy.md)** 모달
-* [파이프라인 재실행](/help/implementing/cloud-manager/deploy-code.md#reexecute-deployment) 이전 실행에 가 없는 경우 이 더 이상 허용되지 않습니다. `commitId` 빌드 단계 상태를 설정합니다.
-* 이제 사용자가 의 파이프라인을 클릭하면 드물게 발생하는 오류에 대해 보다 이해하기 쉬운 메시지가 표시됩니다. **활동** 또는 **파이프라인** screens.
-* 다음 `contentSetName` 값이 더 이상 로그에 누락되지 않고 이제 를 시작할 때 입력에 제공됩니다. [콘텐츠 복사](/help/implementing/developing/tools/content-copy.md) 작업.
-* 동일한 파이프라인에서 두 번의 실행을 시작하여 &quot;중단&quot; 상태로 이어지는 특정 드문 상황에서는 더 이상 이 작업을 수행할 수 없습니다.
-* 인증서가 만료되면 인증서와 연결된 도메인 이름 및 IP 허용 목록이 더 이상 CDN에서 제거되지 않습니다.
+* 이제 **환경** 메뉴는 **[콘텐츠 복사](/help/implementing/developing/tools/content-copy.md)** 모달을 트리거한 후에 닫힙니다.
+* 이전 실행에서 빌드 단계 상태에 설정된 `commitId`(이)가 없는 경우 [파이프라인 재실행](/help/implementing/cloud-manager/deploy-code.md#reexecute-deployment)이 더 이상 허용되지 않습니다.
+* 이제 사용자가 **활동** 또는 **파이프라인** 화면에서 파이프라인을 클릭할 때 드물게 발생하는 오류에 대해 보다 이해하기 쉬운 메시지가 표시됩니다.
+* `contentSetName` 값은 더 이상 로그에서 누락되지 않으며 이제 [콘텐츠 복사](/help/implementing/developing/tools/content-copy.md) 작업 시작 시 입력에 제공됩니다.
+* 이제 특정 드문 상황에서 동일한 파이프라인에서 두 개의 실행을 시작해도 “고착” 상태가 되지 않습니다.
+* 인증서가 만료되면 해당 인증서와 연결된 도메인 이름 및 IP 허용 목록은 더 이상 CDN에서 제거되지 않습니다.
    * 이러한 경우 사이트에 계속 연결할 수 있습니다.
-   * [](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)Cloud Manager UI는 더 눈에 띄는 방식으로 SSL 인증서가 만료 예정이라는 사전 경고를 제공합니다.
-* Sites가 Assets 전용 프로그램의 솔루션으로 추가되는 상황에서 AEM이 게시 끝점에 액세스할 수 없는 문제가 수정되었습니다.
+   * [Cloud Manager UI](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)는 더 눈에 띄는 방식으로 SSL 인증서가 만료 예정이라는 사전 경고를 제공합니다.
+* Sites가 Assets 전용 프로그램에 대한 솔루션으로 추가된 상황에서 AEM의 게시 엔드포인트에 대한 액세스 권한이 손실되는 문제가 해결되었습니다.
