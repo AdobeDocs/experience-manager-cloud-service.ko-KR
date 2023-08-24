@@ -1,11 +1,10 @@
 ---
 title: 스크리블 서명을 사용하여 양식에 전자 서명
-description: 낙서를 사용한 양식 서명
-seo-description: Signing forms using scribble
+description: 스크리블 서명 및 서명 단계를 사용하여 간편하게 적응형 Forms에 전자 서명합니다. 디지털 서명을 간소화하여 효율성을 향상시킵니다.
 topic-tags: author
-source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '725'
 ht-degree: 9%
 
 ---

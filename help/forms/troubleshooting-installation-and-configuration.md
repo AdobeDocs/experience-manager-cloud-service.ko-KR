@@ -1,14 +1,11 @@
 ---
-title: 설치 및 구성 문제 해결
-seo-title: Troubleshooting installation and configuration
-description: 설치 및 구성 문제 해결
-seo-description: Troubleshooting installation and configuration
+title: 설치 및 구성 문제 해결 Cloud Service
+description: AEM Forms as a Cloud Service의 설치 및 구성 관련 문제를 해결하는 방법
 contentOwner: khsingh
-exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 6%
+source-wordcount: '177'
+ht-degree: 5%
 
 ---
 

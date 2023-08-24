@@ -1,12 +1,9 @@
 ---
 title: 부재 설정 구성
-seo-title: Configure Out of Office settings
-description: 부재 설정 구성
-seo-description: Configure Out of Office settings
-exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+description: 원활한 워크플로우 실행을 위해 부재 중 또는 부재 중 작업을 위임할 수 있습니다.
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '826'
 ht-degree: 7%
 
 ---
@@ -15,7 +12,7 @@ ht-degree: 7%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 부재 예정인 경우 해당 기간 동안 자신에게 할당된 항목에 대한 처리 방법을 지정할 수 있습니다.
@@ -64,7 +61,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->(Forms 중심 워크플로 항목만 해당) **[!UICONTROL 피할당자가 &#39;부재 중&#39; 설정을 사용하여 위임하도록 허용]** 옵션 **[!UICONTROL 작업 할당]** 워크플로우의 단계입니다. 위에서 언급한 옵션이 활성화된 항목만 다른 사용자에게 위임됩니다.
+>(Forms 중심 워크플로 항목만 해당) **[!UICONTROL 피할당자가 &#39;부재 중&#39; 설정을 사용하여 위임하도록 허용]** 옵션 **[!UICONTROL 작업 할당]** 워크플로우의 단계입니다. 앞에서 언급한 옵션이 활성화된 항목만 다른 사용자에게 위임됩니다.
 
 ## 제한 사항 {#limitations}
 
