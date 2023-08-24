@@ -4,9 +4,9 @@ description: 편집, 실행 및 삭제를 포함하여 기존 파이프라인을
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '516'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
