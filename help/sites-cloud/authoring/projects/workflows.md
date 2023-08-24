@@ -3,9 +3,9 @@ title: 프로젝트 워크플로를 사용하여 작업
 description: 다양한 프로젝트 워크플로를 즉시 사용할 수 있습니다.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '451'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
