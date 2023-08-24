@@ -1,21 +1,21 @@
 ---
-title: 폐쇄된 사용자 그룹 마이그레이션
+title: 폐쇄형 사용자 그룹 마이그레이션
 description: 이 페이지에서는 콘텐츠를 Adobe Experience Manager as a Cloud Service으로 마이그레이션한 후 [폐쇄된 사용자 그룹]을 활성화하는 데 필요한 특수 고려 사항을 제공합니다.
 hide: true
 hidefromtoc: true
 source-git-commit: 9da813d39d154e81da5b9814aa86b8318dc0bb3a
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 3%
+ht-degree: 9%
 
 ---
 
-# 폐쇄된 사용자 그룹 마이그레이션 {#migrating-closed-user-groups}
+# 폐쇄형 사용자 그룹 마이그레이션 {#migrating-closed-user-groups}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cug_migration"
 >title="폐쇄형 사용자 그룹의 마이그레이션"
->abstract="현재 CUG(폐쇄형 사용자 그룹)를 마이그레이션하려면 마이그레이션 후 이를 작동시키기 위해 몇 가지 확인과 단계가 필요합니다."
+>abstract="폐쇄형 사용자 그룹(CUG)의 마이그레이션은 현재 마이그레이션 후 작동을 위한 몇 가지 확인 및 단계가 필요합니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html" text="AEM의 폐쇄형 사용자 그룹"
 
 현재 폐쇄된 사용자 그룹(CUG)이 마이그레이션의 대상 환경에서 작동하려면 몇 가지 추가 단계가 필요합니다.  이 문서에서는 시나리오 및 의도한 방식으로 노드를 보호하는 데 필요한 단계에 대해 설명합니다.
