@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '409'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Adobe Experience Manager의 내장 다중 사이트 관리자 및 번역 도구�
 
 * 다중 사이트 관리자(MSM) 및 Live Copy 기능을 사용하면 다양한 변형을 활용함과 동시에 여러 지역에서 동일한 사이트 콘텐츠를 사용할 수 있습니다.
    * [콘텐츠 재사용: 다중 사이트 관리자 및 Live Copy](msm/overview.md)
-* 번역을 사용하면 페이지 콘텐츠 번역을 자동화하여 다국어 웹 사이트를 만들고 관리할 수 있습니다.
+* 번역을 통해 페이지 콘텐츠 번역을 자동화하여 다국어 웹 사이트를 만들고 관리할 수 있습니다.
    * [다국어 사이트를 위한 콘텐츠 번역](translation/overview.md)
 
 이러한 두 가지 기능을 결합하여 [다국적 및 다국어](#multinational-and-multilingual-sites) 웹 사이트를 지원할 수 있습니다.
