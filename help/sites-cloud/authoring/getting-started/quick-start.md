@@ -3,9 +3,9 @@ title: 페이지 작성에 대한 빠른 시작 안내서
 description: 페이지 콘텐츠 작성을 시작하는 데 도움이 되는 빠른 개요 안내서
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1568'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    ![선택 항목 보기 드롭다운](/help/sites-cloud/authoring/assets/views.png)
 
-1. 다음을 사용하여 트리 위로 탐색 [헤더의 이동 경로](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)를 클릭하여 선택한 위치로 돌아갈 수 있습니다.
+1. [헤더에서 이동 경로](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)를 사용하여 트리 위로 탐색합니다. 그러면 선택한 위치로 돌아갈 수 있습니다.
 
    ![이동 경로 드롭다운](/help/sites-cloud/authoring/assets/breadcrumb.png)
 
