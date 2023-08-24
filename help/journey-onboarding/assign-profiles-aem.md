@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '898'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ AEM을 사용하려면 팀원이 하나 이상의 AEM 제품 프로필에 할당
 
 >[!TIP]
 >
->Adobe 온보딩을 위해 관리자, 개발자 및 콘텐츠 작성자와 같이 즉각적인 작업에 참여할 사용자를 초기에 추가하는 것이 좋습니다. 모든 사용자를 추가하지 않고 나머지 온보딩을 계속할 수 있습니다. 온보딩을 마친 후에는 나중에 더 많은 사용자로 확장할 수 있습니다.
+>온보딩을 위해 관리자, 개발자 및 콘텐츠 작성자와 같이 즉각적인 작업에 참여할 사용자를 초기에 추가하는 것이 좋습니다. 모든 사용자를 추가하지 않고 나머지 온보딩을 계속할 수 있습니다. 온보딩을 마친 후에는 나중에 더 많은 사용자로 확장할 수 있습니다.
 
 ## AEM 제품 프로필 보기 {#view-profiles}
 
