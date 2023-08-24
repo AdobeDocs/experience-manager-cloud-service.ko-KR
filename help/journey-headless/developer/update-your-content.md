@@ -3,9 +3,9 @@ title: AEM Assets API를 통해 콘텐츠를 업데이트하는 방법
 description: 이 AEM Headless 개발자 여정의 부분에서는 REST API를 통해 콘텐츠 조각의 콘텐츠에 액세스하고 업데이트하는 방법을 대해 알아봅니다.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1069'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Headless 여정의 이전 단계에서는 쿼리를 사용하여 콘텐츠를 �
 
 그러면 다른 API가 필요한 이유는 무엇입니까?
 
-Assets HTTP API를 사용하면 다음 작업을 수행할 수 있습니다. **읽기** 콘텐츠를 볼 수 있지만 **만들기**, **업데이트** 및 **삭제** content - GraphQL API로 사용할 수 없는 작업입니다.
+Assets HTTP API를 사용하여 콘텐츠를 **읽을** 수 있지만 GraphQL API를 사용할 수 없는 액션인 콘텐츠를 **만들고**, **업데이트**&#x200B;하고, **삭제**&#x200B;할 수도 있습니다.
 
 Assets REST API는 기본적으로 제공되는 최신 Adobe Experience Manager as a Cloud Service 버전 설치에서 사용할 수 있습니다.
 
@@ -54,7 +54,7 @@ Assets HTTP API에는 다음이 포함됩니다.
 
 Assets HTTP API의 현재 구현은 **REST** 아키텍처 스타일을 기반으로 하며 **CRUD** 작업(만들기, 읽기, 업데이트, 삭제)을 통해 콘텐츠(AEM에 저장됨)에 액세스할 수 있습니다.
 
-이러한 작업을 통해 API는 JavaScript 프런트 엔드 애플리케이션에 컨텐츠 서비스를 제공하여 Adobe Experience Manager as a Cloud Service as a Headless CMS(컨텐츠 관리 시스템)를 운영할 수 있도록 해줍니다. 아니면 HTTP 요청을 실행하고 JSON 응답을 처리할 수 있는 다른 애플리케이션입니다. 예를 들어 단일 페이지 애플리케이션(SPA), 프레임워크 기반 또는 사용자 지정에는 API를 통해 종종 JSON 형식으로 제공되는 콘텐츠가 필요합니다.
+이 작업에서 API를 사용하면 JavaScript 프론트엔드 애플리케이션에 콘텐츠 서비스를 제공하여 Headless CMS(콘텐츠 관리 시스템)로서 Adobe Experience Manager as a Cloud Service를 작동할 수 있습니다. 아니면 HTTP 요청을 실행하고 JSON 응답을 처리할 수 있는 다른 애플리케이션입니다. 예를 들어 단일 페이지 애플리케이션(SPA), 프레임워크 기반 또는 사용자 정의에는 API를 통해 종종 JSON 형식으로 제공되는 콘텐츠가 필요합니다.
 
 <!--
 >[!NOTE]
@@ -180,7 +180,7 @@ Assets can have multiple renditions. These are typically exposed as child entiti
 
 ## Assets HTTP API 및 콘텐츠 조각 {#assets-http-api-content-fragments}
 
-콘텐츠 조각은 Headless 게재에 사용되고 콘텐츠 조각은 특수 유형의 에셋입니다. 텍스트, 숫자, 날짜 등과 같은 구조화된 데이터에 액세스하는 데 사용됩니다.
+콘텐츠 조각은 Headless 게재에 사용되고 콘텐츠 조각은 특수 유형의 자산입니다. 텍스트, 숫자, 날짜 등과 같은 구조화된 데이터에 액세스하는 데 사용됩니다.
 
 <!--
 As there are several differences to *standard* assets (such as images or audio), some additional rules apply to handling them.
@@ -209,9 +209,9 @@ Associated content is currently not exposed.
 
 ### 액세스 {#access}
 
-Assets REST API는 `/api/assets`엔드포인트를 사용하여 액세스하려면 에셋 경로가 필요합니다(선행 `/content/dam` 없이).
+Assets REST API는 `/api/assets`엔드포인트를 사용하여 액세스하려면 자산 경로가 필요합니다(선행 `/content/dam` 없이).
 
-* 즉, 다음 위치에서 에셋에 액세스할 수 있습니다.
+* 즉, 다음 위치에서 자산에 액세스할 수 있습니다.
    * `/content/dam/path/to/asset`
 * 다음을 요청해야 합니다.
    * `/api/assets/path/to/asset`
@@ -228,14 +228,14 @@ Assets REST API는 `/api/assets`엔드포인트를 사용하여 액세스하려�
 
 HTTP 메서드는 실행할 작업을 결정합니다.
 
-* **GET** - 에셋 또는 폴더의 JSON 표현식 검색
-* **POST** - 새 에셋 또는 폴더 만들기
-* **PUT** - 에셋 또는 폴더의 속성 업데이트
-* **DELETE** - 에셋 또는 폴더 삭제
+* **GET** - 자산 또는 폴더의 JSON 표현식 검색
+* **POST** - 새 자산 또는 폴더 만들기
+* **PUT** - 자산 또는 폴더의 속성 업데이트
+* **DELETE** - 자산 또는 폴더 삭제
 
 >[!NOTE]
 >
->요청 본문 및/또는 URL 매개변수를 사용하여 해당 작업 중 일부를 구성할 수 있습니다(예: **POST** 요청에 의해 폴더 또는 에셋이 생성될 수 있도록 정의).
+>요청 본문 및/또는 URL 매개변수를 사용하여 해당 작업 중 일부를 구성할 수 있습니다(예: **POST** 요청에 의해 폴더 또는 자산이 생성될 수 있도록 정의).
 
 API 참조 설명서에 지원되는 요청의 정확한 형식을 정의합니다.
 
@@ -297,7 +297,7 @@ API 참조 설명서에 지원되는 요청의 정확한 형식을 정의합니�
 
 `DELETE /{cfParentPath}/{cfName}`
 
-AEM Assets REST API 사용에 대한 자세한 내용은 다음을 참조할 수 있습니다.
+AEM Assets REST API 사용에 대한 자세한 내용은 다음 자료를 참조하십시오.
 
 * Adobe Experience Manager Assets HTTP API (추가 리소스)
 * AEM Assets HTTP API의 콘텐츠 조각 지원 (추가 리소스)
@@ -327,5 +327,5 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 * [Adobe Experience Manager Assets API - 콘텐츠 조각](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
 * [콘텐츠 조각을 사용하여 작업](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 * [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [CORS/AEM 설명](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
-* [비디오 - AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)에서 CORS용 개발
+* [CORS/AEM 설명](https://helpx.adobe.com/kr/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
+* [비디오 - AEM](https://helpx.adobe.com/kr/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)에서 CORS용 개발
