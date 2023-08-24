@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '920'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 94%
 
 ## 충돌 처리 {#conflict-handling}
 
-블루프린트 및 라이브 카피 분기에 충돌하는 페이지가 있는 경우 MSM을 사용하여 처리 방법(또는 처리 여부)을 정의할 수 있습니다.
+블루프린트 및 Live Copy 분기에 충돌하는 페이지가 있는 경우 MSM을 사용하여 처리 방법(또는 처리 여부)을 정의할 수 있습니다.
 
 롤아웃을 차단하지 않도록 다음과 같은 정의를 사용할 수 있습니다.
 
@@ -69,7 +69,7 @@ AEM은 다음을 제공합니다.
 * [기본 충돌 핸들러](#default-conflict-handler):
    * `ResourceNameRolloutConflictHandler`
 * [맞춤화된 핸들러](#customized-handlers) 구현 가능성
-* 각 개별 처리기의 우선 순위를 설정할 수 있는 서비스 순위 메커니즘
+* 각 개별 핸들러의 우선 순위를 설정할 수 있는 서비스 순위 메커니즘
    * 순위가 가장 높은 서비스가 사용됩니다.
 
 ### 기본 충돌 핸들러 {#default-conflict-handler}
