@@ -4,9 +4,9 @@ description: Universal Editor를 사용하여 모든 구현에서 컨텍스트�
 hidefromtoc: true
 index: false
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '959'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 96%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
 >title="컨텍스트에서 편집"
->abstract="헤드리스 앱이 Universal Editor를 활용하여 작성자가 컨텍스트에서 손쉽게 편집을 수행할 수 있도록 하는 방법을 확인하십시오."
+>abstract="Headless 앱이 Universal Editor를 활용하여 작성자가 컨텍스트에서 손쉽게 편집을 수행할 수 있도록 하는 방법을 확인하십시오."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
@@ -30,7 +30,7 @@ ht-degree: 96%
 
 ## 컨텍스트에서 텍스트 편집 {#edit-text}
 
-컨텍스트에서 즉시 편집하면 이전 모듈에서 본 콘텐츠 조각 편집기에서와 같이 구조화된 헤드리스 콘텐츠에 대해 편집하는 것보다 유리한 경우가 많습니다.
+컨텍스트에서 즉시 편집하면 이전 모듈에서 본 콘텐츠 조각 편집기에서와 같이 구조화된 Headless 콘텐츠에 대해 편집하는 것보다 유리한 경우가 많습니다.
 
 >[!NOTE]
 >
@@ -74,7 +74,7 @@ Universal Editor를 사용하여 콘텐츠 컨텍스트에서 이미지를 교�
 
 ## 독자와 동일한 형태로 콘텐츠 경험 {#emulators}
 
-범용 편집기를 사용하면 콘텐츠가 사용자의 장치에 전달될 때 콘텐츠를 보고 콘텐츠 컨텍스트 내에서 콘텐츠와 상호 작용할 수 있습니다.
+Universal Editor를 사용하면 컨텍스트 내 콘텐츠와 상호 작용할 수 있으며 사용자의 디바이스에 전달되는 콘텐츠를 확인할 수 있습니다.
 
 1. 기본적으로 편집기는 콘텐츠의 데스크탑 버전을 렌더링합니다. 편집기의 오른쪽 상단에서 에뮬레이터 버튼을 탭하거나 클릭하여 대상 디바이스를 변경합니다.
 
@@ -112,11 +112,11 @@ Universal Editor를 사용하여 콘텐츠 컨텍스트에서 이미지를 교�
 
 ## 콘텐츠 조각 편집 {#editing-fragments}
 
-Universal Editor에는 헤드리스 콘텐츠의 구조화된 편집이 즉시 편집보다 유리할 때 콘텐츠 제작 경험을 가속화하기 위해 콘텐츠 조각 편집기에 대한 빠른 액세스 기능도 있습니다.
+Universal Editor에는 Headless 콘텐츠의 구조화된 편집이 즉시 편집보다 유리할 때 콘텐츠 제작 경험을 가속화하기 위해 콘텐츠 조각 편집기에 대한 빠른 액세스 기능도 있습니다.
 
 1. 페이지에서 아래로 스크롤하여 **모험** 섹션으로 이동합니다.
 
-1. 편집기의 왼쪽에 있는 모드 레일에서 **구성 요소**&#x200B;를 선택합니다. 편집기에서 페이지 구성 요소를 선택할 수 있습니다.
+1. 편집기의 왼쪽에 있는 모드 레일에서 **구성 요소**&#x200B;를 선택합니다. 이를 통해 편집기에서 페이지 구성 요소를 선택할 수 있습니다.
 
 1. 모험 중 하나를 탭하거나 클릭하여 선택합니다.
 
