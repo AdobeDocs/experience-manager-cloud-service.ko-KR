@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2916'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -240,7 +240,7 @@ AEM의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/sites-cloud/administe
 
 ### 콘텐츠 참조 {#content-reference}
 
-컨텐츠 참조를 사용하면 다른 소스의 컨텐츠를 렌더링할 수 있습니다(예: 이미지 또는 컨텐츠 조각).
+콘텐츠 참조를 사용하면 다른 소스의 콘텐츠(예: 이미지 또는 콘텐츠 조각)를 렌더링할 수 있습니다.
 
 표준 속성 외에 다음을 지정할 수 있습니다.
 
