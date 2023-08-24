@@ -3,9 +3,9 @@ title: 페이지 콘텐츠 편집
 description: 페이지를 생성하면 콘텐츠를 편집하여 필요한 업데이트를 수행할 수 있습니다.
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2983'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ ht-degree: 97%
 
 * **모드 선택기**
 
-  현재 항목 표시 [모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 편집, 레이아웃, 타임워프 또는 타겟팅과 같은 다른 모드를 선택할 수 있습니다.
+  현재 [모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)를 표시하고 편집, 레이아웃, 타임워프 또는 타겟팅과 같은 다른 모드를 선택할 수 있습니다.
 
   ![모드 선택기 버튼](/help/sites-cloud/authoring/assets/mode-selector.png)
 
@@ -84,7 +84,7 @@ ht-degree: 97%
 
 * **주석**
 
-  다음을 추가할 수 있습니다. [주석](/help/sites-cloud/authoring/fundamentals/annotations.md) 페이지를 검토할 때 페이지로 이동합니다. 첫 번째 주석 다음에 아이콘이 숫자로 전환하여 페이지에 있는 주석의 수를 가리킵니다.
+  페이지를 검토할 때 페이지에 [주석](/help/sites-cloud/authoring/fundamentals/annotations.md)을 추가할 수 있습니다. 첫 번째 주석 다음에 아이콘이 숫자로 전환하여 페이지에 있는 주석의 수를 가리킵니다.
 
   ![주석 버튼](/help/sites-cloud/authoring/assets/annotations.png)
 
@@ -240,7 +240,7 @@ ht-degree: 97%
 
 * **그룹**
 
-  이렇게 하면 여러 구성 요소를 한 번에 선택할 수 있습니다. **Control+Click** 또는 **Command+Click**&#x200B;하여 데스크탑 디바이스에서도 동일한 작업을 수행할 수 있습니다.
+  여러 구성 요소를 한 번에 선택할 수 있도록 해 줍니다. **Control+Click** 또는 **Command+Click**&#x200B;하여 데스크탑 디바이스에서도 동일한 작업을 수행할 수 있습니다.
 
   ![그룹 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-group.png)
 
@@ -252,13 +252,13 @@ ht-degree: 97%
 
 * **레이아웃**
 
-  이렇게 하면 을 수정할 수 있습니다. [레이아웃](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) 선택한 구성 요소. 선택한 구성 요소에만 적용되며 전체 페이지의 [레이아웃 모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)는 활성화하지 않습니다.
+  이렇게 하면 선택한 구성 요소의 [레이아웃](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)을 수정할 수 있습니다. 선택한 구성 요소에만 적용되며 전체 페이지의 [레이아웃 모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)는 활성화하지 않습니다.
 
   ![레이아웃 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
 * **경험 조각 변형으로 변환**
 
-  새 을(를) 만들 수 있습니다. [경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) 선택한 구성 요소에서 선택하거나 기존 경험 조각에 추가합니다.
+  이 작업에서는 선택한 구성 요소에서 새 [경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)을 생성하거나 기존 경험 조각에 추가할 수 있습니다.
 
   ![경험 조각 변형으로 변환 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 
