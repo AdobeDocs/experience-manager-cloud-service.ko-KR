@@ -3,9 +3,9 @@ title: ContextHub를 사용하여 세그먼테이션 구성
 description: ContextHub를 사용하여 세그먼테이션을 구성하는 방법에 대해 알아봅니다.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1687'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 98%
 
 그런 다음 이러한 세그먼트를 사용하여 방문자에게 특별히 타겟팅된 콘텐츠를 제공할 수 있습니다. 여기에 정의된 [활동](activities.md)은 모든 페이지에 포함될 수 있으며 특정 콘텐츠가 적용될 수 있는 방문자 세그먼트를 정의할 수 있습니다.
 
-AEM을 사용하면 사용자의 경험을 손쉽게 개인화할 수 있습니다. 또한 세그먼트 정의의 결과를 확인할 수도 있습니다.
+AEM을 통해 손쉽게 사용자의 경험을 개인화할 수 있습니다. 또한 세그먼트 정의의 결과를 확인할 수도 있습니다.
 
 ## 세그먼트 할당 {#accessing-segments}
 
@@ -30,7 +30,7 @@ AEM을 사용하면 사용자의 경험을 손쉽게 개인화할 수 있습니�
 ## 세그먼트 편집기 {#segment-editor}
 
 <!--The **Segment Editor** lets you easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
-다음 **세그먼트 편집기** 세그먼트를 쉽게 수정할 수 있습니다. 세그먼트를 편집하려면 세그먼트 목록에서 세그먼트를 선택한 다음 **편집** 버튼을 클릭하십시오.
+**세그먼트 편집기**&#x200B;를 사용하여 손쉽게 세그먼트를 수정할 수 있습니다. 세그먼트를 편집하려면 세그먼트 목록에서 세그먼트를 선택한 다음 **편집** 버튼을 클릭하십시오.
 
 ![세그먼트 편집기](../assets/contexthub-segment-editor.png)
 
