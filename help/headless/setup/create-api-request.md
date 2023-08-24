@@ -3,9 +3,9 @@ title: API 요청 만들기 - Headless 설정
 description: 콘텐츠 조각 콘텐츠의 Headless 게재를 위해 GraphQL API를 사용하는 방법과 콘텐츠 조각을 관리하기 위해 AEM의 자산 REST API를 사용하는 방법을 알아봅니다.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '651'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 95%
 
 * [GraphQL API](/help/headless/graphql-api/content-fragments.md)를 사용하여 콘텐츠 조각에 액세스하고 전달하기 위한 요청을 생성할 수 있습니다. 이 API는 콘텐츠 조각 콘텐츠를 쿼리하고 소비하기 위한 가장 강력한 기능 집합을 제공합니다.
    * API를 사용하려면 [AEM에서 엔드포인트를 정의 및 활성화하고](/help/headless/graphql-api/graphql-endpoint.md), 필요한 경우 [GraphiQL 인터페이스를 설치](/help/headless/graphql-api/graphiql-ide.md)합니다
-* [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) 콘텐츠 조각(및 기타 에셋)을 만들고 수정할 수 있습니다.
+* [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md)를 사용하면 콘텐츠 조각(및 기타 자산)을 만들고 수정할 수 있습니다.
 
 이 안내서의 나머지 부분에서는 GraphQL 액세스 및 콘텐츠 조각 게재에 중점을 둡니다.
 
@@ -55,9 +55,9 @@ GraphiQL은 AEM 환경에 포함된 IDE입니다. [엔드포인트를 구성](#e
    * 직접(예: `http://localhost:4502/aem/graphiql.html`)
 
 1. GraphiQL IDE는 GraphQL을 위한 브라우저 내 쿼리 편집기입니다. 이를 사용하여 콘텐츠 조각을 검색하는 쿼리를 작성하여 JSON으로 Headless 방식으로 전달할 수 있습니다.
-   * 드롭다운 오른쪽 위를 클릭하면 끝점을 선택할 수 있습니다.
+   * 드롭다운 오른쪽 위를 클릭하면 엔드포인트를 선택할 수 있습니다.
    * 맨 왼쪽 패널에 지속 쿼리가 나열됩니다(가능한 경우).
-   * 왼쪽 중간 패널을 사용하여 쿼리를 작성할 수 있습니다.
+   * 왼쪽 중간 패널에서 쿼리를 작성할 수 있습니다.
    * 왼쪽 중간 패널에 결과가 표시됩니다.
    * 쿼리 편집기는 쿼리를 쉽게 실행할 수 있는 코드 완성 기능과 단축키를 제공합니다.
 
