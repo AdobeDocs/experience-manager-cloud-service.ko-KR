@@ -4,7 +4,7 @@ description: 자산 선택기를 사용하여 애플리케이션 내에서 자�
 contentOwner: Adobe
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: dd923ae9d63f1ca1379d8e177ff7b00648da052a
 workflow-type: tm+mt
 source-wordcount: '2373'
 ht-degree: 91%
@@ -44,6 +44,7 @@ ht-degree: 91%
 모든 [!DNL Adobe] 또는 Adobe 이외의 애플리케이션을 [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 저장소와 통합하고 애플리케이션 내에서 자산을 선택할 수 있습니다.
 
 이러한 통합은 자산 선택기 패키지를 가져온 다음 Vanilla JavaScript 라이브러리를 사용하여 Assets as a Cloud Service에 연결하여 수행할 수 있습니다. `index.html` 또는 애플리케이션 내의 적절한 파일을 편집하여 다음 작업을 수행해야 합니다.
+
 * 인증 세부 정보 정의
 * Assets as a Cloud Service 저장소 액세스
 * 자산 선택기 표시 속성 구성
@@ -73,6 +74,7 @@ You can use properties such as `imsScope` or `imsClientID` to retrieve `imsToken
 -->
 
 `index.html` 파일 또는 애플리케이션 구현 내에 있는 유사한 파일의 사전 요구 사항을 정의하여 [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 저장소에 액세스하기 위한 인증 세부 정보를 정의합니다. 사전 요구 사항에는 다음이 포함됩니다.
+
 * imsOrg
 * imsToken
 * apikey
@@ -105,7 +107,7 @@ For more information on these properties, see [Example for the SUSI flow](#susi-
 **UMD 버전**&#x200B;을 사용하는 브라우저의 경우(권장됨):
 
 ```
-<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js"></script>
+<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js"></script>
 
 <script>
   const { renderAssetSelector } = PureJSSelectors;
@@ -116,14 +118,14 @@ For more information on these properties, see [Example for the SUSI flow](#susi-
 
 ```
 <script type="module">
-  import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+  import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 </script>
 ```
 
 **ESM CDN 버전**&#x200B;을 사용하는 Deno/Webpack Module Federation의 경우:
 
 ```
-import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 ```
 
 ### 선택된 자산 유형 {#selected-asset-type}
@@ -526,7 +528,7 @@ It is based on the `imsOrg` that is provided in the application. If you want to 
 * `MIME type`: JPG, GIF, PPTX, PNG, MP4, DOCX, TIFF, PDF, XLSX 포함
 * `Image Size`: 이미지 최소/최대 폭, 최소/최대 높이 포함
 
-![레일-보기-예](assets/filters-asset-selector.png)
+  ![레일-보기-예](assets/filters-asset-selector.png)
 
 ### 사용자 정의 검색
 
