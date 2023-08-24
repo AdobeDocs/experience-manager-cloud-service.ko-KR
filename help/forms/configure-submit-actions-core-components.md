@@ -3,10 +3,10 @@ title: 적응형 양식에 대한 제출 액션을 구성하는 방법
 description: 적응형 양식은 여러 제출 액션을 제공합니다. 제출 액션은 적응형 양식이 제출 후 처리되는 방식을 정의합니다. 기본 제공 제출 액션을 사용하거나 직접 만들 수 있습니다.
 hide: true
 hidefromtoc: true
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: be57fe6c54f2ee07378e16bae601500f71e7ce6b
 workflow-type: tm+mt
-source-wordcount: '3365'
-ht-degree: 99%
+source-wordcount: '3575'
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 99%
 | 적용 대상 | ✅ 적응형 양식 핵심 구성 요소, ❎ [적응형 양식 기초 구성 요소](/help/forms/configuring-submit-actions.md) |
 
 
-제출 액션을 사용하면 적응형 양식을 통해 캡처된 데이터 대상을 선택할 수 있습니다. 사용자가 적응형 양식에서 **[!UICONTROL 제출]** 버튼을 클릭하면 제출 액션이 트리거됩니다. 핵심 구성 요소를 기반으로 하는 적응형 양식의 Forms as a Cloud Service는 다수의 사전 빌드된 제출 액션을 제공합니다. 이러한 기본 제공 제출 액션을 통해 다음과 같은 작업을 수행할 수 있습니다.
+제출 액션을 사용하면 적응형 양식을 통해 캡처되는 데이터의 대상을 선택할 수 있습니다. 사용자가 적응형 양식에서 **[!UICONTROL 제출]** 버튼을 클릭하면 제출 액션이 트리거됩니다. 핵심 구성 요소를 기반으로 하는 적응형 양식의 Forms as a Cloud Service는 다수의 사전 빌드된 제출 액션을 제공합니다. 이러한 기본 제공 제출 액션을 통해 다음과 같은 작업을 수행할 수 있습니다.
 
 * 이메일을 통해 양식 데이터를 손쉽게 전송합니다.
 * 데이터 전송 도중 Microsoft Power Automate 흐름 또는 AEM Workflow를 시작합니다.
@@ -52,6 +52,7 @@ ht-degree: 99%
    * [REST 엔드포인트에 제출](#submit-to-rest-endpoint)
    * [OneDrive에 제출](#submit-to-onedrive)
    * [AEM Workflow 호출](#invoke-an-aem-workflow)
+   * [Power Automate에 제출](#microsoft-power-automate)
 
 ## 이메일 보내기 {#send-email}
 
@@ -345,6 +346,20 @@ AEM Forms를 Azure Storage 컨테이너에 연결하려면
 데이터를 저장하는 폴더 구조는 `/configuration_container/form_name/year/month/date/submission_id/data`입니다.
 
 구성의 값을 설정하려면 [AEM SDK를 사용하여 OSGi 구성을 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ko#generating-osgi-configurations-using-the-aem-sdk-quickstart)하고 Cloud Service 인스턴스에 [구성을 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ko#deployment-process)합니다.
+
+
+## Power Automate에 제출 {#microsoft-power-automate}
+
+제출 시 Microsoft® Power Automate Cloud Flow를 실행하도록 적응형 양식을 구성할 수 있습니다. 구성된 적응형 양식은 캡처된 데이터, 첨부 파일 및 기록 문서를 처리를 위해 Power Automate Cloud Flow로 전송합니다. 이렇게 하면 Microsoft® Power Automate의 강력한 기능을 활용하면서 사용자 정의 데이터 캡처 환경을 구축하여 캡처된 데이터를 중심으로 비즈니스 로직을 구축하고 고객 워크플로를 자동화할 수 있습니다. 다음은 적응형 양식과 Microsoft® Power Automate를 통합한 후 수행할 수 있는 작업의 몇 가지 예입니다.
+
+* Power Automate 비즈니스 프로세스에서 적응형 Forms 데이터 사용
+* Power Automate를 사용하여 캡처한 데이터를 500개 이상의 데이터 소스 또는 공개적으로 사용 가능한 API로 전송
+* 캡처된 데이터에 대해 복잡한 계산 수행
+* 사전 정의된 일정에 따라 스토리지 시스템에 적응형 Forms 데이터 저장
+
+적응형 Forms 편집기는 **Microsoft® Power Automate 플로우 호출** 제출 액션을 통해 적응형 양식 데이터, 첨부 파일 및 기록 문서를 Power Automate Cloud Flow로 전송합니다. 제출 액션을 사용하여 캡처된 데이터를 Microsoft® Power Automate로 보내려면 [Forms as a Cloud Service 인스턴스와 Microsoft® Power Automate 연결](forms-microsoft-power-automate-integration.md)
+
+구성이 완료되면 다음을 사용합니다. [Microsoft® Power Automate 플로우 호출](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) 작업을 제출하여 Power Automate 흐름에 데이터를 전송합니다.
 
 ## 동기 제출 또는 비동기 제출 사용 {#use-synchronous-or-asynchronous-submission}
 
