@@ -2,9 +2,9 @@
 title: 역할 및 책임
 description: 역할 및 책임
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '500'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -60,6 +60,6 @@ Adobe는 Experience Manager as a Cloud Service의 프로비저닝, 개발, 스�
 
 >[!NOTE]
 >
-> 위의 내용은 Premier Support가 포함되어 있다고 가정합니다. 이 표는 고객과 사용자 정의자 간의 합의에 따라 수정될 수 있습니다. Adobe 위의 사항에 대한 설명이 필요한 경우 Adobe 영업 및 사용자 정의 팀과 협력하는 것이 좋습니다.
+> 위의 내용은 Premier Support가 포함되어 있다고 가정합니다. 이 표는 고객과 사용자 정의자 간의 합의에 따라 수정될 수 있습니다. 위의 사항에 대한 설명이 필요한 경우 Adobe 영업 및 사용자 정의 팀과 협력하는 것이 좋습니다.
 > 사용자 정의를 직접 처리하지 않으려는 고객은 Adobe의 전문 서비스 팀 또는 Experience Manager 파트너의 서비스를 받아야 합니다.
 >고품질 수준을 유지하기 위해 Adobe는 Experience Manager as a Cloud Service 개발 프로젝트에 참여하는 파트너에게 Experience Manager 소프트웨어에 대한 고급 개발자 인증을 획득한 직원 한 명 이상을 배치할 것을 요구합니다.
