@@ -3,9 +3,9 @@ title: 파이프라인 설정
 description: 프론트엔드 파이프라인을 만들어 사이트 테마의 맞춤화를 관리할 수 있습니다.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '966'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ AEM 빠른 사이트 생성 여정의 이전 문서인 [템플릿으로 사이�
 
 >[!NOTE]
 >
->프론트엔드 파이프라인은 JavaScript, CSS 및 AEM 사이트의 스타일 지정을 위한 정적 리소스만 배포합니다. 페이지 또는 에셋과 같은 사이트 콘텐츠는 파이프라인에 배포할 수 없습니다.
+>프론트엔드 파이프라인은 JavaScript, CSS 및 AEM 사이트의 스타일 지정을 위한 정적 리소스만 배포합니다. 페이지 또는 자산과 같은 사이트 콘텐츠는 파이프라인에서 배포되지 않습니다.
 
 ## Cloud Manager 액세스 {#login}
 
