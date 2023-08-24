@@ -1,11 +1,11 @@
 ---
 title: 구성 요소 콘솔
-description: 구성 요소 콘솔에서 인스턴스에 대해 정의된 모든 구성 요소를 탐색할 수 있습니다
+description: 구성 요소 콘솔에서 인스턴스에 대해 정의된 모든 구성 요소를 탐색할 수 있습니다.
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '273'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 68%
 
 ### 구성 요소 세부 정보 {#component-details}
 
-특정 구성 요소에 대한 세부 정보를 보려면 필요한 리소스를 탭/클릭하십시오. 세 가지 탭은 다음을 제공합니다.
+특정 구성 요소에 대한 세부 정보를 보려면 필수 리소스를 탭하거나 클릭합니다. 세 탭에서 다음 정보를 제공합니다.
 
 * **속성**
 
@@ -39,9 +39,9 @@ ht-degree: 68%
 
    * 구성 요소의 일반 속성 확인
       * 구성 요소에 대해 아이콘이나 약어를 정의한 방법을 확인합니다. <!-- View how the [icon or abbreviation has been defined](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) for the component.-->
-      * 아이콘 소스를 클릭하면 해당 구성 요소로 이동합니다.
-   * 보기 **리소스 유형** 및 **리소스 슈퍼 유형** (정의된 경우).
-      * 리소스 수퍼 유형 을 클릭하면 해당 구성 요소로 이동합니다.
+      * 아이콘의 소스를 클릭하면 해당 구성 요소로 이동합니다.
+   * 구성 요소에 대한 **리소스 유형** 및 **리소스 슈퍼 유형**(정의된 경우)을 확인합니다.
+      * [리소스 슈퍼 유형]을 클릭하면 해당 구성 요소로 이동합니다.
 
   >[!NOTE]
   >
