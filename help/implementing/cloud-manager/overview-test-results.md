@@ -3,9 +3,9 @@ title: Cloud Manager 테스트 개요
 description: Cloud Manager가 사용자 정의 코드의 품질을 보장하기 위해 자동으로 실행하는 세 가지 테스트 유형에 대한 개요를 확인합니다.
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '162'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
