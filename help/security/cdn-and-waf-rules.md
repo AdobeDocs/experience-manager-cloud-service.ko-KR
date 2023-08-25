@@ -1,10 +1,10 @@
 ---
 title: 트래픽 필터링을 위한 CDN 및 WAF 규칙 구성
 description: CDN 및 웹 애플리케이션 방화벽 규칙을 사용하여 악성 트래픽 필터링
-source-git-commit: a9b8b4d6029d0975428b9cff04dbbec993d56172
-workflow-type: ht
-source-wordcount: '2371'
-ht-degree: 100%
+source-git-commit: 0f1ee0ec5fc2d084a6dfdc65d15a8497c23f11a2
+workflow-type: tm+mt
+source-wordcount: '2391'
+ht-degree: 97%
 
 ---
 
@@ -310,17 +310,18 @@ data:
 {
 "timestamp": "2023-05-26T09:20:01+0000",
 "ttfb": 19,
-"cip": "147.160.230.112",
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
 "rid": "974e67f6",
-"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "host": "example.com",
 "url": "/block-me",
-"req_mthd": "GET",
-"res_type": "",
+"method": "GET",
+"res_ctype": "",
 "cache": "PASS",
-"res_status": 406,
-"res_bsize": 3362,
-"server": "PAR",
+"status": 406,
+"res_age": 0,
+"pop": "PAR",
 "rules": "cdn=path-rule;waf=;action=blocked"
 }
 ```
@@ -329,17 +330,18 @@ data:
 {
 "timestamp": "2023-05-26T09:20:01+0000",
 "ttfb": 19,
-"cip": "147.160.230.112",
-"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "rid": "974e67f6",
 "host": "example.com",
 "url": "/?sqli=%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20fAPK",
-"req_mthd": "GET",
-"res_type": "image/png",
+"method": "GET",
+"res_ctype": "image/png",
 "cache": "PASS",
-"res_status": 406,
-"res_bsize": 3362,
-"server": "PAR",
+"status": 406,
+"res_age": 0,
+"pop": "PAR",
 "rules": "cdn=;waf=SQLI;action=blocked"
 }
 ```
@@ -352,15 +354,16 @@ data:
 |---|---|
 | *timestamp* | TLS 종료 후 요청이 시작된 시간입니다. |
 | *ttfb* | *Time To First Byte(첫 번째 바이트까지의 시간)*&#x200B;의 약어입니다. 요청이 시작된 후 응답 본문의 스트리밍이 시작되기까지의 시간 간격입니다. |
-| *cip* | 클라이언트 IP 주소입니다. |
+| *cli_ip* | 클라이언트 IP 주소입니다. |
+| *cli_country* | 두 글자 [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) 클라이언트 국가의 알파-2 국가 코드. |
 | *rid* | 요청을 고유하게 식별하는 데 사용되는 요청 헤더의 값입니다. |
-| *ua* | 해당 HTTP 요청을 담당하는 사용자 에이전트입니다. |
+| *req_ua* | 해당 HTTP 요청을 담당하는 사용자 에이전트입니다. |
 | *host* | 요청이 의도한 대상 기관입니다. |
 | *url* | 쿼리 매개변수를 포함한 전체 경로입니다. |
-| *req_mthd* | “GET” 또는 “POST”와 같은 클라이언트에서 전송한 HTTP 메서드입니다. |
-| *res_type* | 리소스의 원래 미디어 유형을 나타내는 데 사용된 Content-Type입니다. |
+| *방법* | “GET” 또는 “POST”와 같은 클라이언트에서 전송한 HTTP 메서드입니다. |
+| *res_ctype* | 리소스의 원래 미디어 유형을 나타내는 데 사용되는 콘텐츠 유형입니다. |
 | *cache* | 캐시의 상태입니다. 가능한 값은 HIT, MISS 또는 PASS입니다. |
-| *res_status* | HTTP 상태 코드입니다(정수 값). |
-| *res_bsize* | 응답에서 클라이언트로 전송된 본문 바이트입니다. |
-| *server* | CDN 캐시 서버의 데이터센터입니다. |
+| *상태* | HTTP 상태 코드입니다(정수 값). |
+| *res_age* | 응답이 캐시된 시간(초)입니다(모든 노드에서). |
+| *pop* | CDN 캐시 서버의 데이터센터입니다. |
 | *rules* | CDN 규칙 및 waf 규칙 모두에 대해 일치하는 규칙의 이름입니다.<br><br>일치하는 CDN 규칙은 CDN 적중, 통과 또는 실패 여부에 관계없이 CDN에 대한 모든 요청의 로그 항목에 나타납니다.<br><br>또한 일치에 따라 차단되었는지 여부도 나타냅니다. <br><br>예: “`cdn=;waf=SQLI;action=blocked`”<br><br>일치하는 규칙이 없으면 비어 있습니다. |
