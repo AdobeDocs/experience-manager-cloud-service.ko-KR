@@ -1,9 +1,9 @@
 ---
 title: Forms Designer 다운로드 및 설치
 description: Forms Designer를 사용하여 기록 문서의 템플릿 역할을 하는 XDP 및 PDF 양식 템플릿을 만들 수 있습니다. 디자이너는 [!DNL AEM Forms] 라이센스.
-source-git-commit: 115612a11f43000894c76758b1d2bcb3506f3bcb
+source-git-commit: 3b05d413756a98c034388eb31e752b2448758496
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '304'
 ht-degree: 1%
 
 ---
@@ -16,9 +16,12 @@ ht-degree: 1%
 
 최신 버전의 AEM Forms Designer 64비트 또는 32비트를 설치하려면 Designer를 설치하고 구성할 다음 소프트웨어와 최소 하드웨어가 필요합니다.
 
+<!--
 >[!BEGINTABS]
 
->[!TAB 64비트 OS(권장)]
+>[!TAB 64-bit OS (Recommended)] -->
+
++++ 64비트 OS(권장)
 
 * [!DNL Microsoft® Windows® 2016 Server] 또는 [!DNL Microsoft® Windows® 2019 Server], 및 [!DNL Microsoft® Windows® 10]
 * 최소 2GB RAM
@@ -31,7 +34,9 @@ ht-degree: 1%
 * Designer를 설치할 수 있는 관리 권한
 * [!DNL Microsoft® Visual C++ 2019] (VC 14.28 이상)
 
->[!TAB 32비트 운영 체제]
++++
+
++++ 32비트 운영 체제
 
 * [!DNL Microsoft® Windows® 2016 Server] 또는 [!DNL Microsoft® Windows® 2019 Server], 및 [!DNL Microsoft® Windows® 10]
 * 최소 1GB RAM
@@ -42,10 +47,9 @@ ht-degree: 1%
 * 비디오 하드웨어 가속(옵션)
 * Acrobat Pro DC, Acrobat Standard DC 또는 Adobe Acrobat Reader DC
 * Designer를 설치할 수 있는 관리 권한
-* Microsoft® Visual C++ 2019(VC 14.28 이상)
+* [!DNL Microsoft® Visual C++ 2019] (VC 14.28 이상)
 
->[!ENDTABS]
-
++++
 
 ## Designer 설치 {#install-designer}
 
