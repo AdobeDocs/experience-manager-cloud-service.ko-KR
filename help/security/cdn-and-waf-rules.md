@@ -1,7 +1,7 @@
 ---
 title: 트래픽 필터링을 위한 CDN 및 WAF 규칙 구성
 description: CDN 및 웹 애플리케이션 방화벽 규칙을 사용하여 악성 트래픽 필터링
-source-git-commit: 0f1ee0ec5fc2d084a6dfdc65d15a8497c23f11a2
+source-git-commit: 27165ce7d6259f5b5fc9915349d87f551076389e
 workflow-type: tm+mt
 source-wordcount: '2391'
 ht-degree: 97%
@@ -265,7 +265,7 @@ data:
 
 ```
 - name: rate-limit-example
-  when: { reqProperty: /critical/resource }
+  when: { reqProperty: path, equals: /critical/resource }
   action: block
   rateLimit: { limit: 100, window: 60, penalty: 60 }
 ```
@@ -274,7 +274,7 @@ data:
 
 ```
 - name: rate-limit-using-defaults
-  when: { reqProperty: /critical/resource }
+  when: { reqProperty: path, equals: /critical/resource }
   action: block
   rateLimit:
     limit: 10
