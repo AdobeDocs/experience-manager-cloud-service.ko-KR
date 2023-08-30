@@ -2,10 +2,10 @@
 title: New Relic One
 description: AEM as a Cloud Service를 위한 New Relic One APM(Application Performance Monitoring) 서비스에 대한 정보와 액세스하는 방법에 대해 알아봅니다.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: f695bc891b60d2494b936a43f5c0a729c64628d7
+source-git-commit: 8ce7c26c6552c77bc845f76a805768a931b9d532
 workflow-type: tm+mt
-source-wordcount: '1691'
-ht-degree: 94%
+source-wordcount: '1627'
+ht-degree: 97%
 
 ---
 
@@ -150,12 +150,6 @@ New Relic One에 사용자를 추가하는 경우 다음 제한이 적용됩니�
 * New Relic에 추가된 사용자는 **제한됨** 유형이 됩니다. [자세한 내용은 New Relic 설명서를 ](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)참조하십시오.
 * AEM as a Cloud Service는 New Relic One APM 솔루션만 제공하며 경고, 로깅 또는 API 통합에 대한 지원은 제공하지 않습니다.
 
->[!NOTE]
->
->New Relic One 계정에서 90일 이상 활동이 감지되지 않으면 APM 에이전트가 중지됩니다.
->
->다음을 통해 지원 티켓을 여십시오. [AEM 지원 포털](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html) aemaaCS 환경에 대해 APM 에이전트를 다시 활성화하려면 다음을 수행하십시오.
-
 AEM as a Cloud Service 프로그램용 New Relic One에 대한 추가 도움말 또는 추가 지침을 보려면 [AEM 지원 포털](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)을 사용하여 지원 티켓을 엽니다.
 
 ## New Relic One에 대해 자주 묻는 질문 {#faqs}
@@ -176,6 +170,10 @@ New Relic One 계정은 Adobe에서 관리하는 주 계정에 연결되어 있�
 * AEM as a Cloud Service 환경은 하나의 New Relic One 계정에만 보고합니다.
 * New Relic One에 대한 전체 모니터링 지표 및 이벤트는 7일 동안 유지됩니다.
 
+### Adobe이 New Relic One에서 경고 알림을 전송합니까? {#alerting-new-relic}
+
+Adobe은 가시성 목적으로만 New Relic One 액세스를 제공하며 고객 경고 또는 내부 운영 경고 용도로 활용하지 않습니다. 인시던트에 대한 알림은 다음을 사용하여 전송됩니다. [사용자 알림 프로필.](/help/journey-onboarding/notification-profiles.md)
+
 ### New Relic One Cloud Service 데이터에 접근할 수 있는 권한은 누구에게 있습니까? {#access-new-relic-cloud}
 
 최대 30명의 팀원에게 전체 읽기 액세스 권한이 부여됩니다. 읽기 액세스에는 New Relic One 에이전트가 수집한 모든 APM 지표가 포함됩니다.
@@ -195,7 +193,3 @@ Adobe 지원에서 서비스의 일부로 New Relic One 및 기타 사내 도구
 >[!NOTE]
 >
 >New Relic One 내에서 두 데이터 세트를 모두 보려면 사용자에게 올바른 권한이 있어야 하며 두 계정(Adobe New Relic One 및 고객 관리 New Relic 계정)에 대해 동일한 로그인 방법을 사용해야 합니다.
-
-### 내 New Relic One 계정의 APM 에이전트가 중지되었습니다. 무슨 일이 있었던 거야? {#deactivated}
-
-[APM 에이전트 중지](#limitations) 활동이 90일 이상 감지되지 않는 경우. 다음을 통해 지원 티켓을 여십시오. [AEM 지원 포털](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html) aemaaCS 환경에 대해 APM 에이전트를 다시 활성화하려면 다음을 수행하십시오.
