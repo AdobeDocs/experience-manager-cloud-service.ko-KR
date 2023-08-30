@@ -2,9 +2,9 @@
 title: 경험 조각 개요
 description: Adobe Experience Manager as a Cloud Service 경험 조각을 확장합니다.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 29d8d08899bb60b2bf3027ed32dbcdca3a73e671
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1646'
 ht-degree: 1%
 
 ---
@@ -35,13 +35,15 @@ An [경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments
 
 * 또는 다음으로 끝남: `-src`, 또는 `-href`
 
-예를 들면 다음과 같습니다.
+예:
 
 `.../brooklyn-coat/master.plain.html`
 
 >[!NOTE]
 >
 >링크는 항상 게시 인스턴스를 참조합니다. 이 링크는 서드파티가 사용하도록 만들었으므로 작성자 인스턴스가 아닌 게시 인스턴스에서 항상 호출됩니다.
+>
+>자세한 내용은 [URL 표면화](/help/implementing/developing/tools/externalizer.md).
 
 ![일반 HTML 렌디션](assets/xf-14.png)
 
@@ -247,7 +249,7 @@ public class GeneralLinkRewriter implements ExperienceFragmentLinkRewriterProvid
 
 `shouldRewrite(ExperienceFragmentVariation experienceFragment);`
 
-예를 들면 다음과 같습니다.
+예:
 
 ```java
 @Override
