@@ -2,10 +2,10 @@
 title: 알림
 description: Adobe Experience Cloud 알림 시스템을 사용하여 파이프라인 배포에 대한 정보를 수신하는 방법을 알아봅니다.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '558'
-ht-degree: 100%
+source-git-commit: d95b432f74a7b52efc9fd1cf0e380c3f5237503c
+workflow-type: tm+mt
+source-wordcount: '589'
+ht-degree: 89%
 
 ---
 
@@ -54,7 +54,7 @@ Cloud Manager가 중요한 이벤트를 알리는 방법에 대해 알아보십�
 
 ![알림 구독](assets/notifications-subscriptions.png)
 
-기본적으로 모든 제품에 대한 모든 알림을 받게 됩니다. 제품 옆에 있는 **사용자 정의**&#x200B;를 클릭하여 해당 제품에 대해 수신하는 알림 유형을 정의합니다.
+기본적으로 애플리케이션과 이메일 모두에서 모든 제품에 대한 모든 알림을 받게 됩니다. 제품 이름 옆에 있는 V자형 화살표를 클릭하면 자세한 옵션이 표시되고, 해당 제품에 대해 수신하는 알림의 유형을 정의할 수 있습니다. 또는 제품 수준에서 옵션을 선택하거나 선택 해제하여 제품에 대한 모든 옵션을 선택/선택 취소합니다.
 
 ![알림 구독 사용자 정의](assets/notifications-subscriptions-customize.png)
 
