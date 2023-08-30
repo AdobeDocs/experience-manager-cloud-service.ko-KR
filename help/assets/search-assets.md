@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
+source-git-commit: 069103e7a82123bff28b4aa6e9d718c12e8496e3
 workflow-type: tm+mt
-source-wordcount: '5162'
+source-wordcount: '5372'
 ht-degree: 7%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 7%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 [!DNL Adobe Experience Manager Assets] 는 더 높은 컨텐츠 속도를 달성하는 데 도움이 되는 강력한 자산 검색 방법을 제공합니다. 기본 기능과 사용자 지정 방법을 사용하여 매끄럽고 지능적인 에셋 검색 환경을 구축하여 출시 시간을 단축할 수 있습니다. 자산 검색 기능은 크리에이티브의 추가 사용, 비즈니스 사용자 및 마케터의 강력한 자산 관리 또는 DAM 관리자의 관리를 위한 디지털 자산 관리 시스템 사용의 중심입니다. 를 통해 수행할 수 있는 간단한 고급 사용자 정의 검색 [!DNL Assets] 사용자 인터페이스 또는 기타 앱 및 표면이 이러한 사용 사례를 충족하도록 도와줍니다.
@@ -60,6 +60,20 @@ AEM의 자산 검색은 다음 사용 사례를 지원하며 이 문서에서는
 ![검색 패싯에서 검색 결과를 필터링하지 않고 대략적인 자산 수를 확인합니다.](assets/asset_search_results_in_facets_filters.png)
 
 *그림: 검색 패싯에서 검색 결과를 필터링하지 않고 대략적인 자산 수를 확인합니다.*
+
+Experience Manager Assets은 기본적으로 다음 두 속성에 대한 Facet 수를 표시합니다.
+
+* 자산 유형(jcr:content/metadata/dc:format)
+
+* 승인 상태(jcr:content/metadata/dam:status)
+
+2023년 8월 현재 Experience Manager Assets에는 의 새 버전 9가 포함되어 있습니다. `damAssetLucene` 색인입니다. 이전 버전, `damAssetLucene-8` 및 아래에서 `statistical` 각 검색 패싯 수에 대한 항목 샘플에 대한 액세스 제어를 확인하는 모드입니다.
+
+`damAssetLucene-9` 는 기본 검색 색인에 의해 반환된 패싯 카운트에 대한 액세스 제어를 더 이상 평가하지 않도록 Oak 쿼리 패싯 카운트의 동작을 변경하여 검색 응답 시간이 더 빨라집니다. 그 결과, 사용자에게 액세스 권한이 없는 에셋을 포함하는 Facet 카운트 값이 표시될 수 있습니다. 이러한 사용자는 해당 에셋의 경로를 포함하여 다른 세부 정보에 액세스, 다운로드 또는 읽거나 에셋에 대한 추가 정보를 얻을 수 없습니다.
+
+이전 동작으로 전환해야 하는 경우(`statistical` mode), 참조 [콘텐츠 검색 및 색인화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html) 의 사용자 지정 버전을 만들려면 `damAssetLucene-9` 색인입니다. Adobe은 로 전환하지 않는 것이 좋습니다. `secure` 검색 응답 시간에 미치는 영향(결과 세트 크기가 큰 경우)으로 인한 모드입니다.
+
+이러한 모드에 대한 자세한 설명을 포함하여 Oak의 Facet 기능에 대한 자세한 내용은 를 참조하십시오. [이 문서](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
 
 ## 입력할 때 제안 사항 검색 {#searchsuggestions}
 
@@ -209,7 +223,7 @@ You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media
 
 크리에이티브 전문가는 데스크탑 앱을 사용하여 [!DNL Experience Manager Assets] 로컬 데스크톱(Win 또는 Mac)에서 쉽게 검색하고 사용할 수 있습니다. 크리에이티브는 Mac 파인더 또는 Windows 탐색기에서 원하는 자산을 쉽게 표시하고, 데스크탑 애플리케이션에서 열고, 로컬로 변경할 수 있습니다. 변경 사항은 다음에 다시 저장됩니다. [!DNL Experience Manager] 저장소에서 새 버전을 만들 수 있습니다. 하나 이상의 키워드를 사용하는 기본 검색을 지원합니다. `*` 및 `?` 와일드카드 및 `AND` 연산자. 다음을 참조하십시오 [에셋 검색 및 미리보기](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) 데스크탑 앱에서.
 
-### [!DNL Brand Portal]에서 에셋 검색 {#brand-portal}
+### [!DNL Brand Portal]에서 자산 검색 {#brand-portal}
 
 LOB(Line of Business) 사용자 및 마케터는 Brand Portal을 사용하여 승인된 디지털 에셋을 확장된 내부 팀, 파트너 및 리셀러와 효율적이고 안전하게 공유합니다. 다음을 참조하십시오 [Brand Portal에서 에셋 검색](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
 
@@ -282,7 +296,7 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 * 전체 텍스트 검색은 다음과 같은 연산자를 지원합니다. `-` 및 `^`. 이러한 문자를 문자열 리터럴로 검색하려면 검색 표현식을 큰따옴표로 묶습니다. 예를 들어, `"Notebook - Beauty"` 대신 `Notebook - Beauty`.
 * 검색 결과가 너무 많으면 [검색 범위](#scope) 을 눌러 원하는 에셋에 대해 제로인을 수행합니다. 특정 파일 유형, 특정 위치, 특정 메타데이터 등과 같은 원하는 에셋을 더 잘 찾는 방법에 대한 아이디어가 있을 때 가장 잘 작동합니다.
 
-* **태깅**: 태그를 사용하여 보다 효율적으로 검색 및 검색할 수 있는 에셋을 분류할 수 있습니다. 태깅은 적절한 분류법을 다른 사용자 및 워크플로우에 전달하는 데 도움이 됩니다. [!DNL Experience Manager] 은 사용 및 교육으로 자산에 태그를 지정하는 데 계속 더 능숙해지는 Adobe Sensei의 인위적인 인텔리전트 서비스를 사용하여 자산에 자동으로 태그를 지정하는 메서드를 제공합니다. 에셋을 검색할 때 스마트 태그가 팩토링됩니다. 기본 제공 검색 기능과 함께 작동합니다. 다음을 참조하십시오 [검색 동작](#searchbehavior). 검색 결과가 표시되는 순서를 최적화하려면 다음을 수행할 수 있습니다 [검색 순위 높이기](#searchrank) 몇 개 중 일부 자산을 선택합니다.
+* **태깅**: 태그를 사용하여 보다 효율적으로 검색 및 검색할 수 있는 에셋을 분류할 수 있습니다. 태그 지정은 적절한 분류 체계를 다른 사용자 및 워크플로에 전파하는 데 도움이 됩니다. [!DNL Experience Manager] 은 사용 및 교육으로 자산에 태그를 지정하는 데 계속 더 능숙해지는 Adobe Sensei의 인위적인 인텔리전트 서비스를 사용하여 자산에 자동으로 태그를 지정하는 메서드를 제공합니다. 에셋을 검색할 때 스마트 태그가 팩토링됩니다. 기본 제공 검색 기능과 함께 작동합니다. 다음을 참조하십시오 [검색 동작](#searchbehavior). 검색 결과가 표시되는 순서를 최적화하려면 다음을 수행할 수 있습니다 [검색 순위 높이기](#searchrank) 몇 개 중 일부 자산을 선택합니다.
 
 * **색인화**: 인덱싱된 메타데이터 및 에셋만 검색 결과에 반환됩니다. 더 나은 적용 범위와 성능을 위해 적절한 색인화를 보장하고 모범 사례를 따르십시오. 다음을 참조하십시오 [색인화](#searchindex).
 
@@ -294,7 +308,7 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 
 *그림: 따옴표가 있거나 없는 검색 동작*
 
-**별표 와일드카드로 검색**: 검색 범위를 넓히려면 검색어 앞이나 뒤에 별표를 사용하여 문자 수를 일치시킵니다. 예를 들어 별표 없이 실행 을 검색해도 메타데이터에 포함된 단어의 변형이 포함된 자산은 반환되지 않습니다. 별표는 임의의 문자 수를 대체합니다. 예를 들어
+**별표 와일드카드로 검색**: 검색 범위를 넓히려면 검색어 앞이나 뒤에 별표를 사용하여 문자 수를 일치시킵니다. 예를 들어 별표 없이 실행 을 검색해도 메타데이터에 포함된 단어의 변형이 포함된 자산은 반환되지 않습니다. 별표는 임의의 문자 수를 대체합니다. 예:
 
 * `run` 정확하게 실행 키워드가 있는 자산 반환
 * `run*` 자산 반환: `running`, `run`, `runaway`등.
