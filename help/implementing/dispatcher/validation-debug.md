@@ -3,9 +3,9 @@ title: Dispatcher 도구를 사용하여 확인 및 디버깅
 description: 로컬 유효성 검사, 디버깅, 유연한 모드 파일 구조 및 레거시 모드에서 유연한 모드로 마이그레이션하는 방법에 대해 알아봅니다.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: fccce4fed057b9cf20825bce043b3ec95c3a5ab8
+source-git-commit: 4a79284d879af1920c839a68be14619d1e35f7e9
 workflow-type: tm+mt
-source-wordcount: '2988'
+source-wordcount: '2990'
 ht-degree: 1%
 
 ---
@@ -113,13 +113,13 @@ ServerAlias와 일치하는 가상 호스트를 항상 하나 이상 사용할 �
 
 이러한 심볼 링크를 만드는 데 필요한 명령 예:
 
-Apple® macOS, Linux 및 WSL
+Apple macOS, Linux 및 WSL
 
 ```
 ln -s ../available_vhosts/wknd.vhost wknd.vhost
 ```
 
-Microsoft® Windows
+Microsoft Windows
 
 ```
 mklink wknd.vhost ..\available_vhosts\wknd.vhost
@@ -151,13 +151,13 @@ mklink wknd.vhost ..\available_vhosts\wknd.vhost
 
 이러한 심볼 링크를 만드는 데 필요한 명령 예:
 
-Apple® macOS, Linux 및 WSL
+Apple macOS, Linux 및 WSL
 
 ```
 ln -s ../available_farms/wknd.farm wknd.farm
 ```
 
-Microsoft® Windows
+Microsoft Windows
 
 ```
 mklink wknd.farm ..\available_farms\wknd.farm
