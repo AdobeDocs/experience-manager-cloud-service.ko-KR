@@ -3,9 +3,9 @@ title: Dispatcher 도구를 사용하여 확인 및 디버깅
 description: 로컬 유효성 검사, 디버깅, 유연한 모드 파일 구조 및 레거시 모드에서 유연한 모드로 마이그레이션하는 방법에 대해 알아봅니다.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: fccce4fed057b9cf20825bce043b3ec95c3a5ab8
 workflow-type: tm+mt
-source-wordcount: '2860'
+source-wordcount: '2988'
 ht-degree: 1%
 
 ---
@@ -107,6 +107,28 @@ ServerAlias와 일치하는 가상 호스트를 항상 하나 이상 사용할 �
 </VirtualHost>
 ```
 
+* `conf.d/enabled_vhosts/<CUSTOMER_CHOICE>.vhost`
+
+이 폴더에는 conf.dispatcher.d/available_vhosts 아래의 파일에 대한 상대 심볼 링크가 포함되어 있습니다.
+
+이러한 심볼 링크를 만드는 데 필요한 명령 예:
+
+Apple® macOS, Linux 및 WSL
+
+```
+ln -s ../available_vhosts/wknd.vhost wknd.vhost
+```
+
+Microsoft® Windows
+
+```
+mklink wknd.vhost ..\available_vhosts\wknd.vhost
+```
+
+>[!NOTE]
+>
+> Windows에서 심볼 링크로 작업하는 경우 상위 명령 프롬프트나 Linux용 Windows 하위 시스템에서 를 실행하거나 [심볼 링크 만들기](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) 권한이 할당되었습니다.
+
 * `conf.d/rewrites/rewrite.rules`
 
 파일은 의 내부에서 포함됩니다. `.vhost` 파일. 다음에 대한 재작성 규칙 세트가 있습니다. `mod_rewrite`.
@@ -122,6 +144,28 @@ ServerAlias와 일치하는 가상 호스트를 항상 하나 이상 사용할 �
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
 이러한 파일을 하나 이상 가질 수 있으며 호스트 이름과 일치하는 팜을 포함하고 Dispatcher 모듈이 다른 규칙으로 각 팜을 처리할 수 있도록 합니다. 파일은에서 만들어집니다. `available_farms` 디렉토리 및 의 심볼 링크로 활성화됨 `enabled_farms` 디렉토리. 다음에서 `.farm` 파일, 필터, 캐시 규칙 등과 같은 기타 파일이 포함됩니다.
+
+* `conf.dispatcher.d/enabled_farms/<CUSTOMER_CHOICE>.farm`
+
+이 폴더에는 conf.dispatcher.d/available_farms 아래의 파일에 대한 상대 심볼 링크가 포함되어 있습니다.
+
+이러한 심볼 링크를 만드는 데 필요한 명령 예:
+
+Apple® macOS, Linux 및 WSL
+
+```
+ln -s ../available_farms/wknd.farm wknd.farm
+```
+
+Microsoft® Windows
+
+```
+mklink wknd.farm ..\available_farms\wknd.farm
+```
+
+>[!NOTE]
+>
+> Windows에서 심볼 링크로 작업하는 경우 상위 명령 프롬프트나 Linux용 Windows 하위 시스템에서 를 실행하거나 [심볼 링크 만들기](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) 권한이 할당되었습니다.
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -478,7 +522,7 @@ Windows 운영 체제의 제한으로 인해 이 기능은 macOS 및 Linux® 사
 
 다음 명령을 사용하여 스크립트를 실행할 수 있습니다. `./bin/docker_run_hot_reload.sh src/dispatcher host.docker.internal:4503 8080`
 
-출력의 첫 번째 행은 다음에 대해 실행되는 것과 유사합니다. `docker_run.sh`. 예를 들면 다음과 같습니다.
+출력의 첫 번째 행은 다음에 대해 실행되는 것과 유사합니다. `docker_run.sh`. 예:
 
 ```
 ~ bin/docker_run_hot_reload.sh src host.docker.internal:8081 8082
@@ -567,7 +611,7 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## 레거시 모드에서 유연한 모드로 마이그레이션 {#migrating}
 
-Cloud Manager 2021.7.0 릴리스를 통해 새로운 Cloud Manager 프로그램은 [AEM Archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) 또는 그 이상(파일을 포함) **opt-in/USE_SOURCES_DIRECTLY**. 의 이전 제한 사항을 제거합니다. [레거시 모드](/help/implementing/dispatcher/validation-debug-legacy.md) 또한 SDK 및 런타임에서 개선된 방법으로 구성을 확인하고 배포하는 문제가 발생할 수 있습니다. Dispatcher 구성에 이 파일이 없는 경우 마이그레이션하는 것이 좋습니다. 안전한 전환을 보장하려면 다음 단계를 따르십시오.
+Cloud Manager 2021.7.0 릴리스를 통해 새로운 Cloud Manager 프로그램은 [AEM Archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko-KR) 또는 그 이상(파일을 포함) **opt-in/USE_SOURCES_DIRECTLY**. 의 이전 제한 사항을 제거합니다. [레거시 모드](/help/implementing/dispatcher/validation-debug-legacy.md) 또한 SDK 및 런타임에서 개선된 방법으로 구성을 확인하고 배포하는 문제가 발생할 수 있습니다. Dispatcher 구성에 이 파일이 없는 경우 마이그레이션하는 것이 좋습니다. 안전한 전환을 보장하려면 다음 단계를 따르십시오.
 
 1. **로컬 테스트.** 최신 Dispatcher 도구 SDK를 사용하여 폴더 및 파일을 추가합니다 `opt-in/USE_SOURCES_DIRECTLY`. Dispatcher가 로컬에서 작동하는지 테스트할 수 있도록 이 문서의 &quot;로컬 유효성 검사&quot; 지침을 따르십시오.
 1. **클라우드 개발 테스트:**
