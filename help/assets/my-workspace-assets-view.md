@@ -2,10 +2,10 @@
 title: 에셋 보기를 위한 내 작업 영역
 description: 내 작업 영역은 Assets 사용자 인터페이스의 주요 영역과 사용자와 가장 관련성이 높은 정보에 편리하게 액세스할 수 있도록 사용자 정의 가능한 시각적 모듈을 제공하는 페이지입니다.
 exl-id: 402dd3a6-44e5-4d13-97d8-1d7fa26a99e4
-source-git-commit: ab607be0cc4a6c7f686978250a513c776f73024e
+source-git-commit: 701a7610780553731a6ac4c85fe3221ee3d98ae2
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 92%
+source-wordcount: '740'
+ht-degree: 83%
 
 ---
 
@@ -40,9 +40,17 @@ Highlights upcoming features for Assets.
 
 나중에 필요할 때 파일, 폴더 및 컬렉션에 더 빠르게 액세스할 수 있도록 이러한 항목을 고정합니다. 고정된 모든 항목은 내 작업 영역의 **빠른 액세스** 섹션에 표시됩니다. 저장소 내에서 저장된 위치로 이동하는 대신 내 작업 영역을 사용하여 액세스할 수 있습니다.
 
-자산, 폴더 또는 컬렉션을 고정하려면 항목을 선택하고 **[!UICONTROL 빠른 액세스에 고정]**&#x200B;을 클릭합니다.
+에셋, 폴더 또는 컬렉션을 고정하려면 다음 작업을 수행하십시오.
 
-![작업 영역의 작업](assets/quick-access.png)
+1. 항목을 선택하고 **[!UICONTROL 빠른 액세스에 고정]**.
+
+1. 자신만, 전체 조직 또는 선택한 그룹에 대해 항목을 고정해야 하는 경우 선택합니다. 다음을 선택하는 경우 **[!UICONTROL 그룹]**&#x200B;에서 그룹 이름을 정의합니다. **[!UICONTROL 그룹에 고정]** 필드.
+
+   ![그룹에 대한 항목 고정](assets/pin-items-for-groups.png)
+1. 클릭 **[!UICONTROL 고정]**.
+
+   선택한 항목이 **[!UICONTROL 빠른 액세스]** 내 작업 영역의 섹션에 있는 마지막 항목이 될 필요가 없습니다.
+   ![작업 영역의 작업](assets/quick-access.png)
 
 **인사이트**
 
