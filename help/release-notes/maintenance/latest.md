@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 22ed74b307b9eb4c6c2f72ac2a34e2ab6d30a85c
+source-git-commit: bb7d8145eb954557d185b58f884532f8f08c5a54
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '286'
 ht-degree: 50%
 
 ---
@@ -23,12 +23,10 @@ ht-degree: 50%
 
 - GRANITE-46784: BearerAuthenticationHandler를 비활성화하는 옵션 추가
 - GRANITE-36205: 내부 oak 릴리스 버전을 최신 버전으로 업데이트
-- GRANITE-47059: Granite Jetty SSL 번들 제거
 - ASSETS-26713: 새로운 경험 UI 대시보드에 대한 Touch UI 외부 링크 - 통합 쉘 통합 및 ui-touch에 최적화된 업그레이드
 - SKYOPS-63302: com.adobe.granite:com.adobe.granite.auth.saml을 v1.0.54로 업그레이드
 - GRANITE-46634: 이벤트 클라이언트 1.4.0으로 업그레이드
-- GRANITE-46788: Apache Commons 라이브러리 업데이트
-- GRANITE-29211: Sling 기능 모델 2.0으로 도구 업데이트
+- GRANITE-46788: 라이브러리를 Apache Commons IO 2.13.0, Commons Lang 3.13.0, Commons Code 1.16.0 및 Commons Compress 1.23.0으로 업데이트합니다.
 - GRANITE-46705: Apache Felix Http Jetty 4.1.14로 업데이트
 - GRANITE-46631: Jackrabbit 버전을 2.20.11로 업데이트
 - SKYOPS-61895: Jackrabbit Filevault 3.7.0으로 업데이트
@@ -41,6 +39,7 @@ ht-degree: 50%
 - GRANITE-43744: 인증 요구 사항 및 단축 경로와 함께 잘못된 구성이 있는 경우 Sling 인증자가 제대로 작동하지 않습니다
 - GRANITE-46419: Auth0 Idp와 AEM 통합 문제
 - GRANITE-46292: AEM Cloud 업데이트 후 Okta SAML 구성이 작동하지 않음
+- GRANITE-47059: Granite Jetty SSL 번들 제거
 
 ### 알려진 문제 {#known-issues-13239}
 
