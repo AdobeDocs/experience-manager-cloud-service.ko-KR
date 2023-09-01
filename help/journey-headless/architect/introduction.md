@@ -2,10 +2,10 @@
 title: AEM as a Headless CMS용 콘텐츠 모델링 - 소개
 description: 프로젝트 콘텐츠를 모델링하는 Adobe Experience Manager as a Cloud Service as a Headless CMS 기능 사용 소개.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: d280bcfa7e4fe297952309a94bc0229d08fd5f9c
+source-git-commit: 03cf688168106f71f2df2511782be7c1f3cc0dae
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 100%
+source-wordcount: '749'
+ht-degree: 97%
 
 ---
 
@@ -82,8 +82,8 @@ Adobe Experience Manager(AEM) as a Cloud Service는 AEM GraphQL API를 통해 �
    * [CMS Headless 개발에 대해 알아보기](/help/journey-headless/developer/learn-about.md)
    * [콘텐츠를 모델링하는 방법에 대해 알아보기](/help/journey-headless/developer/model-your-content.md)
 
-<!--
-* [Introduction to AEM as a Headless CMS](/help/headless/introduction.md)
-* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [Tutorials for Headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
--->
+* [AEM as a Headless CMS 소개](/help/headless/introduction.md)
+
+* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+
+* [AEM의 Headless Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
