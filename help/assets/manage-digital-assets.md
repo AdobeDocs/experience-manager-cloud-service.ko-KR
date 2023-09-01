@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: c63f621f2526f05c8555acdac77a4c05a473c95d
+source-git-commit: 2f3845495b545f88a1bc5a5feef1a6312f679a26
 workflow-type: tm+mt
-source-wordcount: '4481'
+source-wordcount: '4501'
 ht-degree: 11%
 
 ---
@@ -91,6 +91,11 @@ ZIP 파일을 추출하려면 다음 단계를 수행하십시오.
 1. 클릭 **[!UICONTROL Extract]**. Zip 추출 프로세스가 시작됩니다. 프로세스가 완료되면 대상 폴더에서 추출된 에셋을 볼 수 있습니다.
 
    ![zip 추출](assets/zip-extraction.png)
+
+>[!NOTE]
+>
+>* 지원되는 최대 ZIP 파일 크기는 15GB입니다.
+>* 한 번에 최대 3개의 ZIP 파일을 추출할 수 있습니다.
 
 ## 자산 미리보기 {#previewing-assets}
 
