@@ -3,15 +3,24 @@ title: 메타데이터 - 조각 속성
 description: Headless 콘텐츠 게재 및 페이지 작성을 위해 AEM Content Fragments에서 메타데이터 속성을 보고 편집하는 방법에 대해 알아봅니다.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: c1b90118-4501-4f93-bd2d-6552e0d17aee
-source-git-commit: 0d7d89e0d8343e7e00fdecb91a20dd7d4a736851
-workflow-type: ht
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
+workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 100%
 
 ---
 
 # 메타데이터 - 조각 속성 {#metadata-fragment-properties}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 AEM 콘텐츠 조각에 대한 메타데이터 속성을 보고 편집하는 방법에 대해 알아봅니다.
 

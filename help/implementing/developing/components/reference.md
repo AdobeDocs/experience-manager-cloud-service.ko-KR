@@ -2,7 +2,7 @@
 title: 구성 요소 참조 안내서
 description: 구성 요소 및 해당 구조에 대한 세부 사항에 대한 개발자 참조 안내서
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '3648'
 ht-degree: 2%
@@ -473,4 +473,4 @@ Granite UI 및 Granite UI 위젯의 필드 유효성 검사는 다음을 사용�
 
 ![구성 요소 콘솔에 표시되는 README.md](assets/components-documentation-console.png)
 
-지원되는 Markdown은 의 경우와 동일합니다 [컨텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md).
+지원되는 Markdown은 의 경우와 동일합니다 [컨텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md).

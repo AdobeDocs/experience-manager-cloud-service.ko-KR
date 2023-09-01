@@ -2,7 +2,7 @@
 title: 옵션 - AEM(Adobe Experience Manager)을 통해 단일 페이지 애플리케이션(SPA)을 제작하는 방법
 description: 지속적인 AEM Headless 개발자 여정의 이 선택적인 구성에서는 AEM이 Headless 게재를 기존 전체 스택 CMS 기능과 결합하는 방법과 AEM의 SPA 편집기 프레임워크를 통해 편집 가능한 SPA를 제작하는 방법에 대해 알아봅니다.
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 100%
@@ -126,5 +126,5 @@ AEM에서 SPA 주제에 대해 자세히 살펴볼 수 있는 [추가 리소스]
 * [SPA 편집기 개요](/help/implementing/developing/hybrid/editor-overview.md) - SPA 편집기의 작동 방식에 대한 세부 정보
 * [서버측 렌더링](/help/implementing/developing/hybrid/ssr.md) - AEM SPA용 SSR을 구성하는 방법
 * [SPA 참조 문서](/help/implementing/developing/hybrid/reference-materials.md) - 오픈 소스 AEM SPA GitHub 프로젝트에 대한 JavaScript API 참조 및 링크
-* [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md) - 콘텐츠 조각을 만드는 방법
+* [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments) - 콘텐츠 조각을 만드는 방법
 * [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) - Adobe Experience Manager(AEM) 프로젝트를 웹 사이트 시작 지점으로 만드는 최소한의 모범 사례 기반 Maven 템플릿

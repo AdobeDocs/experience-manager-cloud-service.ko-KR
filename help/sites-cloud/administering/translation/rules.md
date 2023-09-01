@@ -4,8 +4,8 @@ description: 번역 규칙이 번역이 필요한 콘텐츠를 식별하는 방�
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 이 문서에 설명된 번역 규칙은 **번역에 대해 콘텐츠 모델 필드 사용** 옵션이 [번역 통합 프레임워크 구성 수준](integration-framework.md#assets-configuration-properties)에서 활성화되지 않은 경우에만 콘텐츠 조각에 적용됩니다.
 
-**번역에 대해 콘텐츠 모델 필드 사용** 옵션이 활성화된 경우, AEM은 [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)에서 **번역 가능** 필드를 사용하여 해당 필드를 번역할지 여부를 결정하고 그에 따라 자동으로 번역 규칙을 생성합니다. 이 옵션을 사용하면 이전에 생성한 모든 번역 규칙이 대체되며 여기에는 개입이나 추가 단계가 필요하지 않습니다.
+**번역에 대해 콘텐츠 모델 필드 사용** 옵션이 활성화된 경우, AEM은 [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)에서 **번역 가능** 필드를 사용하여 해당 필드를 번역할지 여부를 결정하고 그에 따라 자동으로 번역 규칙을 생성합니다. 이 옵션을 사용하면 이전에 생성한 모든 번역 규칙이 대체되며 여기에는 개입이나 추가 단계가 필요하지 않습니다.
 
 번역 규칙을 사용하여 콘텐츠 조각을 번역하려면 번역 통합 프레임워크 구성의 **번역에 대해 콘텐츠 모델 필드 사용** 옵션이 비활성화되어 있어야 하며 아래 설명된 단계를 따라 규칙을 생성해야 합니다.
 

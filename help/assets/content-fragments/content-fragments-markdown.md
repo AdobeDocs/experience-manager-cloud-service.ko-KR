@@ -4,10 +4,10 @@ description: 콘텐츠 조각 편집기에서 Markdown 구문을 사용하여 He
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 92%
+source-wordcount: '576'
+ht-degree: 83%
 
 ---
 
@@ -15,9 +15,15 @@ ht-degree: 92%
 
 다음과 같은 경우: [작성](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), 콘텐츠 조각 편집기는 *Markdown* headless 콘텐츠를 쉽게 작성할 수 있는 구문:
 
+>[!NOTE]
+>
+>콘텐츠 조각은 사이트 기능이지만 다음과 같이 저장됩니다. **에셋**.
+>
+>콘텐츠 조각 작성용 편집기에는 두 가지가 있습니다. 이 단원에서는 주로 **에셋** 콘솔. 사이트 설명서 를 참조하십시오. [컨텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md), 새 편집기에 대한 세부 정보(주로 **컨텐츠 조각** console).
+
 ![Markdown 편집기](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
-다음을 항목을 정의할 수 있습니다.
+다음과 같은 항목을 정의할 수 있습니다.
 
 * [제목 표기법](/help/assets/content-fragments/content-fragments-markdown.md#heading-notation)
 * [단락 및 줄 바꿈](/help/assets/content-fragments/content-fragments-markdown.md#paragraphs-and-line-breaks)

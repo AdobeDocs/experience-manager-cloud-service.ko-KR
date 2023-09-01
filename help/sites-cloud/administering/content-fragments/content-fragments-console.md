@@ -4,15 +4,24 @@ description: 콘텐츠 조각 콘솔에서 콘텐츠 조각을 관리하는 방�
 landing-page-description: Headless 사용 사례에 대한 콘텐츠 조각에 중점을 두고 있지만 페이지 작성 시에도 사용되는 콘텐츠 조각 콘솔에서 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: afe676b0972462ef2c9b52150d96560c71f7a0f6
-workflow-type: ht
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
+workflow-type: tm+mt
 source-wordcount: '1178'
 ht-degree: 100%
 
 ---
 
 # 콘텐츠 조각 콘솔  {#content-fragments-console}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 콘텐츠 조각 콘솔에서 콘텐츠 조각에 대한 액세스를 최적화하여 게시, 게시 취소, 복사와 같은 관리 작업을 수행하여 콘텐츠 조각을 만들고, 검색하고, 관리하는 방법에 대해 알아봅니다.
 

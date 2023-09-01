@@ -3,8 +3,8 @@ title: AEM Headless 소개
 description: 상세한 설명서와 Headless 여정의 결합을 통해 Adobe Experience Manager(AEM)의 Headless에 대해 알아봅니다. 콘텐츠 조각 모델, 콘텐츠 조각 및 GraphQL API와 같은 기능을 사용하여 Headless 경험을 강화하는 방법에 대해 알아봅니다.
 landing-page-description: Adobe Experience Manager as a Cloud Service에서 Headless를 사용하고 관리하는 방법을 이해합니다.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 100%
 
@@ -42,7 +42,7 @@ AEM as a Cloud Service는 다음과 같은 세 가지 강력한 기능을 제공
 1. **콘텐츠 조각**
    * 콘텐츠 조각은 콘텐츠 조각 모델을 기반으로 생성됩니다.
    * 콘텐츠 조각은 콘텐츠 작성자가 AEM 콘텐츠 조각 편집기를 사용하여 생성합니다.
-   * 콘텐츠 조각은 AEM Assets으로 저장되지만 자산 콘솔 또는 [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)을 통해 관리할 수 있습니다.
+   * 콘텐츠 조각은 AEM Assets으로 저장되지만 자산 콘솔 또는 [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)을 통해 관리할 수 있습니다.
 1. **게재를 위한 콘텐츠 API**
    * AEM GraphQL API는 콘텐츠 조각 게재를 지원합니다.
    * AEM Assets REST API는 콘텐츠 조각 CRUD 작업을 지원합니다.

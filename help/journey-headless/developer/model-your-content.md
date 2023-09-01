@@ -2,8 +2,8 @@
 title: 콘텐츠를 모델링하는 방법
 description: 이 AEM Headless 개발자 여정의 부분에서는 콘텐츠 조각 모델 및 콘텐츠 조각과 함께 콘텐츠 모델링을 사용하여 AEM Headless 게재에 콘텐츠를 모델링하는 방법에 대해 알아봅니다.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 100%
 
@@ -270,10 +270,10 @@ tbc...
 
 ## 추가 리소스 {#additional-resources}
 
-* [콘텐츠 조각 작업](/help/sites-cloud/administering/content-fragments/content-fragments.md) - 콘텐츠 조각의 리드 인 페이지
-   * [구성 브라우저의 콘텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) - 구성 브라우저의 콘텐츠 조각 기능 활성화
-   * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - 콘텐츠 조각 모델 만들기 및 편집
-   * [콘텐츠 조각 관리](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md) - 콘텐츠 조각을 만들고 작성하면 이 페이지를 통해 다른 세부 섹션으로 이동합니다.
+* [콘텐츠 조각 작업](/help/sites-cloud/administering/content-fragments/overview.md) - 콘텐츠 조각의 리드 인 페이지
+   * [구성 브라우저의 콘텐츠 조각](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) - 구성 브라우저의 콘텐츠 조각 기능 활성화
+   * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - 콘텐츠 조각 모델 만들기 및 편집
+   * [콘텐츠 조각 관리](/help/sites-cloud/administering/content-fragments/managing.md) - 콘텐츠 조각을 만들고 작성하면 이 페이지를 통해 다른 세부 섹션으로 이동합니다.
 * [AEM GraphQL 스키마](access-your-content.md) - GraphQL이 모델을 실현하는 방법
 * [샘플 콘텐츠 조각 구조](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
 * [AEM Headless 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - 콘텐츠 모델링 및 GraphQL을 포함하여 AEM의 Headless 기능 사용 개요를 제공하는 짧은 비디오 튜토리얼 시리즈

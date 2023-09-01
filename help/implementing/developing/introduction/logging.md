@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service에 대한 로깅
 description: AEM용 로깅을 as a Cloud Service으로 사용하여 중앙 로깅 서비스의 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 2fcc33cfb8b0be89b4b9f91d687dc21ba456000c
+source-git-commit: 7d4e1acee54ebcb1398bcc6ab83491e3fa6a8801
 workflow-type: tm+mt
-source-wordcount: '2683'
+source-wordcount: '2669'
 ht-degree: 8%
 
 ---
@@ -17,7 +17,7 @@ AEM as a Cloud Service 로깅 설정 및 로그 수준은 Git에서 AEM 프로�
 
 * AEM 로깅 - AEM 애플리케이션 수준에서 로깅을 수행합니다.
 * 게시 계층에서 웹 서버 및 Dispatcher의 로깅을 수행하는 Apache HTTPD 웹 서버/Dispatcher 로깅.
-* CDN 로깅은 이름 그대로 CDN에서 로깅을 수행합니다. 이 기능은 현재 얼리어답터가 사용할 수 있습니다. 얼리어답터 프로그램에 참여하려면 다음 이메일을 보내주십시오. **aemcs-cdnlogs-adopter@adobe.com**, 조직 이름 및 기능에 대한 관심 컨텍스트 등.
+* CDN 로깅은 이름 그대로 CDN에서 로깅을 수행합니다. 이 기능은 9월 초에 고객에게 점진적으로 출시되고 있습니다.
 
 ## AEM 로깅 {#aem-logging}
 
@@ -504,10 +504,12 @@ Define DISP_LOG_LEVEL debug
 
 >[!NOTE]
 >
->이 기능은 아직 일반적으로 사용할 수 없습니다. 진행 중인 얼리어답터 프로그램에 참여하려면 다음 이메일을 보내십시오. **aemcs-cdnlogs-adopter@adobe.com**, 조직 이름 및 기능에 대한 관심 컨텍스트 등.
+>이 기능은 9월 초에 고객에게 점진적으로 출시되고 있습니다.
 >
 
 AEM as a Cloud Service에서는 캐시 적중률 최적화를 포함한 사용 사례에 유용한 CDN 로그에 액세스할 수 있습니다. CDN 로그 형식은 사용자 지정할 수 없으며 정보, 경고 또는 오류와 같은 다양한 모드로 설정하는 개념이 없습니다.
+
+Splunk 전달 기능은 아직 CDN 로그를 지원하지 않습니다.
 
 **예**
 
@@ -600,6 +602,8 @@ AEM 이 작업은 가능하지만 Git의 구성 파일에 있는 로그 수준�
 Splunk 계정이 있는 고객은 고객 지원 티켓을 통해 AEM Cloud Service 로그가 적절한 색인에 전달되도록 요청할 수 있습니다. 로깅 데이터는 Cloud Manager 로그 다운로드를 통해 사용할 수 있는 것과 동일하지만 고객은 Splunk 제품에서 사용할 수 있는 쿼리 기능을 사용하는 것이 편리할 수 있습니다.
 
 Splunk로 전송된 로그와 관련된 네트워크 대역폭은 고객의 네트워크 I/O 사용의 일부로 간주됩니다.
+
+Splunk 전달은 아직 CDN 로그를 지원하지 않습니다.
 
 ### Splunk 전달 활성화 {#enabling-splunk-forwarding}
 

@@ -2,16 +2,22 @@
 title: 변형 - 조각 콘텐츠 작성 (에셋 - 콘텐츠 조각)
 description: 변형에서 조각에 대한 콘텐츠를 작성한 다음 목적에 따라 해당 콘텐츠의 변형을 만들 수 있으므로 AEM의 Headless 콘텐츠를 어떻게 더 유연하게 만들 수 있는지 이해합니다.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: fa133319077388a3598ca13b2574b8b62bf9b2b4
 workflow-type: tm+mt
-source-wordcount: '2435'
-ht-degree: 94%
+source-wordcount: '2567'
+ht-degree: 91%
 
 ---
 
 # 변형 - 조각 콘텐츠 작성{#variations-authoring-fragment-content}
 
 [변형](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 는 특정 채널 및/또는 시나리오에서 사용할 마스터 콘텐츠의 사본을 만들고 편집할 수 있는 AEM 콘텐츠 조각의 중요한 기능으로, headless 콘텐츠 전달을 보다 유연하게 해 줍니다.
+
+>[!NOTE]
+>
+>콘텐츠 조각은 사이트 기능이지만 다음과 같이 저장됩니다. **에셋**.
+>
+>콘텐츠 조각 작성용 편집기에는 두 가지가 있습니다. 이 단원에서는 주로 **에셋** 콘솔. 사이트 설명서 를 참조하십시오. [컨텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md), 새 편집기에 대한 세부 정보(주로 **컨텐츠 조각** console).
 
 **변형** 탭에서는 다음 작업을 수행할 수 있습니다.
 
@@ -112,7 +118,7 @@ ht-degree: 94%
 
 ### 리치 텍스트 {#rich-text}
 
-리치 텍스트 편집 기능을 다음 서식을 지정할 수 있습니다.
+서식 있는 텍스트 편집을 통해 다음 포맷을 지정할 수 있습니다.
 
 * 굵게
 * 기울임체
@@ -149,7 +155,7 @@ ht-degree: 94%
 >
 >자세한 내용은 [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) 설명서를 참조하십시오.
 
-이렇게 하면 Markdown을 사용하여 텍스트 서식을 지정할 수 있습니다. 다음과 같은 항목을 정의할 수 있습니다.
+Markdown을 사용하여 텍스트 서식을 지정할 수 있습니다. 다음과 같은 항목을 정의할 수 있습니다.
 
 * 제목
 * 단락 및 줄 바꿈
@@ -391,8 +397,33 @@ ht-degree: 94%
    >[!CAUTION]
    >
    다른 조각에 대한 참조를 추가한 후 형식을 다음과 같이 변경하는 경우
+   >
    * **일반 텍스트**: 참조가 조각에서 완전히 손실됩니다.
    * **Markdown**: 참조가 유지됩니다.
+
+## 상속 {#inheritance}
+
+상속은 콘텐츠를 한 조각에서 다른 조각으로 자동으로 푸시할 수 있는 메커니즘입니다. 상속된 필드 및 변형은 의 산물일 수 있습니다. [다중 사이트 관리](/help/assets/content-fragments/content-fragments.md#reusing-content-fragments-with-msm-assets).
+
+상속을 취소(그런 다음 다시 활성화)할 수 있습니다. 조각이 라이브 카피의 일부인 경우 컨텍스트에 따라 변형에 사용하거나 개별 필드에 사용할 수 있습니다.
+
+![상속 관계를 보여주는 콘텐츠 조각](/help/assets/content-fragments/assets/cfm-variations-inheritance.png)
+
+예:
+
+* 상속 취소
+
+  ![상속 취소 버튼](/help/assets/content-fragments/assets/editing-cancel-inheritance.png)
+
+* 상속 재활성화(상속이 이미 취소된 경우)
+
+  ![상속 재활성화 버튼](/help/assets/content-fragments/assets/editing-reenable-inheritance.png)
+
+<!--
+* Rollout action is also available in Live Copy source
+
+  ![Rollout button](/help/assets/content-fragments/assets/editing-rollout.png)
+-->
 
 ## 변형 관리 {#managing-variations}
 
@@ -459,11 +490,11 @@ ht-degree: 94%
 
 **마스터**&#x200B;는 콘텐츠 조각의 필수적인 부분이며, 정의에 따라 콘텐츠의 마스터 사본은 보존되지만 변형에는 해당 콘텐츠의 개별 업데이트 및 맞춤화 버전이 포함됩니다. 마스터가 업데이트되면 이러한 변경 내용이 변형과 관련이 있으므로 이들 변경 내용을 해당 변형으로 전파해야 합니다.
 
-변형을 편집할 때 변형의 현재 요소를 마스터와 동기화하는 작업을 수행할 수 있습니다. 이렇게 하면 기본으로 수행된 변경 내용을 필요한 변형에 자동으로 복사할 수 있습니다.
+변형을 편집할 때 변형의 현재 요소를 마스터와 동기화하는 작업을 수행할 수 있습니다. 이렇게 하면 마스터에 수행된 변경 내용을 필요한 변형에 자동으로 복사할 수 있습니다.
 
 >[!CAUTION]
 >
-*동기화는&#x200B;**마스터**의 변경 내용을*&#x200B;변형에 복사하는 데에만 사용할 수 있습니다.
+동기화는 **마스터**&#x200B;의 변경 내용을 변형에 복사하는 데에만&#x200B;*사용할 수 있습니다.*
 >
 변형의 현재 요소만 동기화됩니다.
 >

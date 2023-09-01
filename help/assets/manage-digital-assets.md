@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5b61b60a94b944a747232b238c3ce48195a5a212
 workflow-type: tm+mt
-source-wordcount: '4376'
+source-wordcount: '4508'
 ht-degree: 12%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 12%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=ko) |
 | AEM as a Cloud Service | 이 문서 |
 
 이 문서에서는에서 에셋을 관리하고 편집하는 방법을 설명합니다. [!DNL Adobe Experience Manager Assets]. 관리하려면 [!DNL Content Fragments], 참조 [[!DNL Content Fragments]](content-fragments/content-fragments.md) 에셋.
@@ -28,7 +28,7 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->* 유형의 에셋 폴더 공유 `sling:OrderedFolder`은(는) Experience Cloud에 공유할 때 지원되지 않습니다. 폴더를 공유하려면 선택하지 마십시오 [!UICONTROL 주문됨] 폴더를 만들 때.
+>* 유형의 에셋 폴더 공유 `sling:OrderedFolder`은(는) Experience Cloud에 공유할 때 지원되지 않습니다. 폴더를 공유하려면 선택하지 마십시오. [!UICONTROL 주문됨] 폴더를 만들 때.
 >* Experience Manager에서 사용을 허용하지 않음 `subassets` word를 폴더 이름으로 사용합니다. 조합 자산에 대한 하위 자산을 포함하는 노드용으로 예약된 키워드입니다
 
 1. 디지털 자산 폴더에서 새 폴더를 만들 위치로 이동합니다. 메뉴에서 다음을 클릭합니다. **[!UICONTROL 만들기]**. 선택 **[!UICONTROL 새 폴더]**.
@@ -76,6 +76,21 @@ DAM 사용자가 저장소에 이미 존재하는 에셋을 하나 이상 업로
 >[!NOTE]
 >
 >에셋을 저장소에 업로드하면 Experience Manager에서 중복을 감지하여 처음 100개의 중복 에셋에 대해 알려 줍니다.
+
+## ZIP 아카이브 추출 {#extract-zip-archives}
+
+Experience Manager에서 관리되는 ZIP 아카이브를 선택하고 다운로드하지 않고 파일을 Experience Manager에 직접 추출하십시오.
+
+ZIP 파일을 추출하려면 다음 단계를 수행하십시오.
+
+1. ZIP 파일 유형을 선택합니다.
+1. 다음을 클릭합니다. **[!UICONTROL 아카이브 추출]** 작업 모음에서 사용할 수 있는 옵션입니다.
+1. 압축된 폴더에서 사용할 수 있는 추출된 에셋을 저장해야 하는 폴더를 선택합니다.
+1. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+1. 추출하는 동안 파일 이름 충돌을 처리할 적절한 동작을 선택하십시오. 기존 에셋의 새 버전을 만들거나, 에셋을 교체하거나, 두 에셋을 모두 대상 폴더에 유지하거나, 새 에셋의 추출을 건너뛸 수 있습니다.
+1. 클릭 **[!UICONTROL Extract]**. Zip 추출 프로세스가 시작됩니다. 프로세스가 완료되면 대상 폴더에서 추출된 에셋을 볼 수 있습니다.
+
+   ![zip 추출](assets/zip-extraction.png)
 
 ## 자산 미리보기 {#previewing-assets}
 

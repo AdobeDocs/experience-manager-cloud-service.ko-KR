@@ -3,15 +3,24 @@ title: 콘텐츠 조각 - 구성 브라우저
 description: 구성 브라우저에서 콘텐츠 조각 및 GraphQL 기능을 활성화하여 AEM Headless 게재 기능을 사용하는 방법에 대해 알아봅니다.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
+workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 100%
 
 ---
 
 # 콘텐츠 조각 - 구성 브라우저{#content-fragments-configuration-browser}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 구성 브라우저에서 특정 콘텐츠 조각 기능을 활성화하는 방법에 대해 알아봅니다.
 

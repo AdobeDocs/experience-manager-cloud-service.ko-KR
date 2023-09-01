@@ -2,14 +2,16 @@
 title: Forms as a Cloud Service 커뮤니케이션 소개
 description: XDP 및 PDF 템플릿과 데이터 자동 병합 또는 PCL, ZPL 및 PostScript 형식으로 출력 생성
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 96%
+source-wordcount: '1475'
+ht-degree: 75%
 
 ---
 
 # AEM Forms as a Cloud Service 커뮤니케이션 소개 {#frequently-asked-questions}
+
+<span class="preview"> [DocAssurance 서비스](#doc-assurance) 는 프리릴리스 기능이며 다음을 통해 액세스할 수 있습니다. [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). 기능에 대한 설명서는 변경될 수 있습니다.</span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -157,7 +159,35 @@ You can [query a PDF document](https://developer.adobe.com/experience-manager-fo
 
 The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary. -->
 
-## 통신 API 유형
+
+<span class="preview"> Document Assurance 서비스는 프리릴리스 기능이며 다음을 통해 액세스할 수 있습니다 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). 기능에 대한 설명서는 변경될 수 있습니다.</span>
+
+## 문서 보증 {#doc-assurance}
+
+DocAssurance 서비스에는 서명 및 암호화 API가 포함되어 있습니다.
+
+### 서명 API
+
+서명 API를 사용하면 조직에서 배포하고 수신하는 Adobe PDF 문서의 보안 및 개인 정보를 보호할 수 있습니다. 이 서비스는 디지털 서명 및 인증을 사용하여 의도한 수신자만 문서를 변경할 수 있도록 합니다. 보안 기능은 문서 자체에 적용되므로, 문서는 전체 라이프 사이클에 대해 안전하게 제어됩니다. 문서는 오프라인으로 다운로드할 때와 조직에 다시 제출될 때 방화벽 이후에도 안전하게 보호됩니다. 서명 API를 사용하여 다음 작업을 수행할 수 있습니다.
+
+* PDF 문서에 서명 필드를 추가합니다.
+* PDF 문서에서 지정된 서명 필드에 서명합니다.
+* PDF 문서 인증
+
+### 암호화 API
+
+암호화 API를 사용하면 문서를 암호화하고 해독할 수 있습니다. 문서가 암호화되면 해당 내용을 읽을 수 없게 됩니다. 인가된 사용자는 문서의 암호를 해독하여 콘텐츠에 액세스할 수 있습니다. PDF 문서가 암호로 암호화된 경우 Adobe Reader 또는 Adobe Acrobat에서 문서를 보려면 열기 암호를 지정해야 합니다. 마찬가지로, PDF 문서가 인증서로 암호화되어 있는 경우, 사용자는 PDF 문서를 암호화하는 데 사용된 인증서(개인 키)에 해당하는 공개 키로 PDF 문서의 암호를 해독해야 합니다.
+
+암호화 API를 사용하여 다음 작업을 수행할 수 있습니다.
+
+* 암호로 PDF 문서를 암호화합니다.
+* PDF 문서에서 암호 기반 암호화를 제거합니다.
+* PDF 문서에 적용된 보안 유형을 검색합니다.
+
+서명 API 및 암호화 API는 모두 [동기 API](#types-of-communications-apis-types).
+
+
+## 통신 API 유형 {#types}
 
 커뮤니케이션은 주문형 및 배치 문서 생성에 HTTP API를 제공합니다.
 

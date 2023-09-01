@@ -2,7 +2,7 @@
 title: 구성 및 구성 브라우저
 description: AEM 구성 및 AEM에서 작업 공간 설정을 관리하는 방법을 이해합니다.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 6%
@@ -34,7 +34,7 @@ AEM 관리자 및 작성자는 구성을 작업 공간으로 고려할 수 있�
 AEM 내의 다양한 기능에 대해 구성을 만들 수 있습니다.
 
 * [Context Hub 세그먼트](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-* [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+* [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [편집 가능한 템플릿](/help/sites-cloud/authoring/features/templates.md)
 * 다양한 클라우드 구성
 
@@ -80,7 +80,7 @@ AEM 내의 다양한 기능에 대해 구성을 만들 수 있습니다.
       * 필요한 경우 조정할 수 있습니다.
 1. 허용하려는 구성 유형을 확인합니다.
    * [Context Hub 세그먼트](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-   * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
    * [편집 가능한 템플릿](/help/sites-cloud/authoring/features/templates.md)
    * 다양한 클라우드 구성
 1. **만들기**&#x200B;를 탭하거나 클릭합니다.

@@ -2,7 +2,7 @@
 title: 구성 요소에 대해 JSON 내보내기 활성화
 description: 구성 요소는 모델러 프레임워크를 기반으로 콘텐츠의 JSON 내보내기를 생성하도록 조정할 수 있습니다.
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 12%
@@ -78,7 +78,7 @@ serialize할 메서드를 정의하려면 모델 인터페이스에 적절한 �
 
 자세한 내용은 다음을 참조하십시오.
 
-* [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md)
-* [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+* [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md)
+* [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [컨텐츠 조각으로 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
 * [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 [콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)

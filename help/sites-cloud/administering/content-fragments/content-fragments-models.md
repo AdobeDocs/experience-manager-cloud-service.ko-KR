@@ -3,15 +3,24 @@ title: 콘텐츠 조각 모델
 description: 콘텐츠 조각 모델이 AEM에서 콘텐츠 조각의 기반 역할을 하는 방법에 대해 알아봅니다. 이를 통해 Headless 게재 또는 페이지 작성에 사용할 구조화된 콘텐츠를 만들 수 있습니다.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
+workflow-type: tm+mt
 source-wordcount: '2916'
 ht-degree: 100%
 
 ---
 
 # 콘텐츠 조각 모델 {#content-fragment-models}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 AEM의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md)의 콘텐츠 구조를 정의합니다. 이는 페이지 작성에 사용하거나 Headless 콘텐츠의 기반으로 사용할 수 있습니다.
 

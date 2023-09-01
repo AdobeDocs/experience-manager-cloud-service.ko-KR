@@ -2,9 +2,9 @@
 title: 콘텐츠 조각의 참조 사용에 대해 알아보기
 description: 콘텐츠, 다른 조각과 자산(미디어)의 콘텐츠 조각에서 참조를 사용하는 방법에 대해 알아봅니다. Headless CMS 작성에서 중첩된 조각의 필요성과 메커니즘을 소개합니다.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '728'
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+workflow-type: tm+mt
+source-wordcount: '712'
 ht-degree: 100%
 
 ---
@@ -35,7 +35,7 @@ AEMaaCS를 통한 작성, 특히 콘텐츠 조각 작성에 대한 소개와 함
 
 일부 참조에는 전용 데이터 유형(예: 콘텐츠 참조 및 조각 참조)이 있지만 다른 참조는 텍스트 블록 내 참조로 추가됩니다(자산 참조 및 애드혹 참조).
 
-![콘텐츠 조각 - 참조](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
+![콘텐츠 조각 - 참조](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## 콘텐츠 참조 {#content-references}
 
@@ -92,11 +92,7 @@ AEMaaCS를 통한 작성, 특히 콘텐츠 조각 작성에 대한 소개와 함
 
 콘텐츠 조각 편집기의 **구조 트리** 탭을 사용하여 조각에서 참조하는 조각을 탐색한 다음 이에 포함될 수 있는 모든 참조를 탐색할 수 있습니다. 참조를 선택하면 편집용 조각이 열립니다.
 
->[!NOTE]
->
->기본 패널에서 탐색 표시를 사용하여 시작점으로 돌아갈 수 있습니다.
-
-![콘텐츠 조각 구조 트리](/help/sites-cloud/administering/content-fragments/assets/cfm-structuretree-02.png)
+![콘텐츠 조각 구조 트리](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-structure-tree.png)
 
 ## 애드혹 참조 {#adhoc-references}
 
@@ -110,21 +106,21 @@ AEMaaCS를 통한 작성, 특히 콘텐츠 조각 작성에 대한 소개와 함
 
 ## 추가 리소스 {#additional-resources}
 
-* [콘텐츠 조각을 사용하여 작업](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [콘텐츠 조각을 사용하여 작업](/help/sites-cloud/administering/content-fragments/overview.md)
 
-   * [콘텐츠 조각 관리](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+   * [콘텐츠 조각 관리](/help/sites-cloud/administering/content-fragments/managing.md)
 
-      * [자산 폴더에 구성 적용](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+      * [자산 폴더에 구성 적용](/help/sites-cloud/administering/content-fragments/setup.md#apply-the-configuration-to-your-folder)
 
-      * [콘텐츠 조각 만들기](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+      * [콘텐츠 조각 만들기](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)
 
-   * [변형 - 콘텐츠 조각 작성](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+   * [콘텐츠 조각 작성](/help/sites-cloud/administering/content-fragments/authoring.md)
 
-   * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-      * [콘텐츠 조각 모델 - 데이터 형식](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
+      * [콘텐츠 조각 모델 - 데이터 형식](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
-      * [콘텐츠 조각 모델 - 속성](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
+      * [콘텐츠 조각 모델 - 속성](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)
 
 * 시작 안내서
    * [자산 폴더 만들기 - Headless 설정](/help/headless/setup/create-assets-folder.md)

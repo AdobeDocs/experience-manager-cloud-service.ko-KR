@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.5.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.5.0 릴리스 정보입니다.'
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 75%
@@ -37,7 +37,7 @@ ht-degree: 75%
 ### [!DNL Sites] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-sites}
 
 * 다양한 GraphQL 기능
-* 콘텐츠 조각의 Headless 사용에 최적화된 [새 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)
+* 콘텐츠 조각의 Headless 사용에 최적화된 [새 콘솔](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

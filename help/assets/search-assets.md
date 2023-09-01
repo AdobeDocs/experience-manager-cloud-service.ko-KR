@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 069103e7a82123bff28b4aa6e9d718c12e8496e3
+source-git-commit: fb70abb2aa698303c462e38ad3bec10d028f804e
 workflow-type: tm+mt
-source-wordcount: '5372'
+source-wordcount: '5532'
 ht-degree: 7%
 
 ---
@@ -137,6 +137,20 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *비디오: 검색 결과의 등급이 지정되는 방식과 등급이 영향을 받는 방식을 이해합니다.*
+
+## 검색 결과를 표시하도록 자산 배치 크기 구성 {#configure-asset-batch-size}
+
+이제 관리자는 사용자가 검색을 수행할 때 표시되는 에셋의 배치 크기를 구성할 수 있습니다. 결과를 로드하기 위해 아래로 더 스크롤할 때 자산 검색 결과가 구성된 배치 크기 번호의 배수로 표시됩니다. 사용 가능한 배치 크기인 200개, 500개 및 1000개의 에셋 중에서 선택할 수 있습니다. 배치 크기 수를 낮게 설정하면 검색 응답 시간이 빨라집니다.
+
+예를 들어 결과 개수 제한을 200개의 에셋으로 배치 크기로 설정한 경우, Experience Manager Assets은 검색 수행을 시작할 때 200개의 에셋의 배치 크기를 검색 결과에 표시합니다. 아래로 스크롤하여 검색 결과를 탐색하면 다음 200개의 자산 배치가 표시됩니다. 검색 쿼리와 일치하는 모든 에셋이 표시될 때까지 프로세스가 계속됩니다.
+
+자산 배치 크기를 구성하려면 다음을 수행합니다.
+
+1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 에셋]** > **[!UICONTROL 에셋 구성]** > **[!UICONTROL Assets Omnisearch 구성]**.
+
+1. 결과 개수 제한을 선택하고 **[!UICONTROL 저장]**.
+
+   ![자산 배치 크기 구성](/help/release-notes/assets/assets-batch-size-configuration.png)
 
 ## 고급 검색 {#scope}
 

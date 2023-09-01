@@ -1,8 +1,8 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.6.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.6.0 릴리스 정보입니다.'
-source-git-commit: 2d10d03e478bff5a162c620c41ceac38a6d7911a
-workflow-type: ht
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ ht-degree: 100%
 
 ### [!DNL Experience Manager Sites]의 새로운 기능 {#sites-features}
 
-* 이제 [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)을 사용하여 콘텐츠 조각 및 해당 참조를 [AEM 미리보기 서비스](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)에 게시하게 되면 사용자는 시작하기 전에 분리된 미리보기 애플리케이션을 통해 최종 경험을 미리 볼 수 있습니다.
+* 이제 [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)을 사용하여 콘텐츠 조각 및 해당 참조를 [AEM 미리보기 서비스](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)에 게시하게 되면 사용자는 시작하기 전에 분리된 미리보기 애플리케이션을 통해 최종 경험을 미리 볼 수 있습니다.
 
 ![콘텐츠 조각 콘솔에서 미리보기](/help/assets/content-fragments-console-preview.png)
 

@@ -4,8 +4,8 @@ description: 서드파티 번역 서비스와 통합한 번역 통합 프레임�
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+workflow-type: tm+mt
 source-wordcount: '1518'
 ht-degree: 100%
 
@@ -109,7 +109,7 @@ AEM을 번역 서비스 공급업체에 연결하는 클라우드 구성을 만�
 | 태그 번역 | 이 속성을 활성화하면 자산과 연결된 태그를 번역할 수 있습니다. |
 | 자동 실행 번역 | 이 속성을 선택하면 번역 프로젝트가 생성된 후 자동으로 번역 작업을 수행할 수 있습니다. 이 옵션을 선택하면 번역 작업을 검토하거나 살필 수 없습니다. |
 | 업데이트 전용 번역 사용 중지 | 이 옵션을 선택하면 번역 작업 업데이트로 최종 번역 이후 변경된 필드 외에 번역할 수 있는 모든 필드를 번역하도록 제출합니다. |
-| 번역을 위해 콘텐츠 모델 필드 활성화 | 이 옵션을 활성화하면 필드의 번역 여부를 결정할 때 [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)의 **번역할 수 있는** 필드를 사용하며 그에 따라 [번역 규칙](rules.md)을 자동으로 생성합니다. 이 옵션을 사용하면 이전에 생성한 모든 번역 규칙이 대체됩니다. |
+| 번역을 위해 콘텐츠 모델 필드 활성화 | 이 옵션을 활성화하면 필드의 번역 여부를 결정할 때 [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)의 **번역할 수 있는** 필드를 사용하며 그에 따라 [번역 규칙](rules.md)을 자동으로 생성합니다. 이 옵션을 사용하면 이전에 생성한 모든 번역 규칙이 대체됩니다. |
 
 ## 번역을 위한 페이지 구성 {#configuring-pages-for-translation}
 

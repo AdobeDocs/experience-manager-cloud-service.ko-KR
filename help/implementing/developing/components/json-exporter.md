@@ -2,7 +2,7 @@
 title: 콘텐츠 서비스에 대한 JSON 내보내기
 description: AEM Content Services는 웹 페이지에 초점을 두지 않고 AEM에서 콘텐츠 설명 및 게재를 일반화하기 위해 디자인되었습니다. 모든 클라이언트가 사용할 수 있는 표준화된 방법을 사용하여 기존 AEM 웹 페이지가 아닌 채널에 콘텐츠를 게재할 수 있습니다.
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 31%
@@ -49,25 +49,25 @@ AEM 내에서 전달은 선택기를 사용하여 수행됩니다 `model` 및 `.
 
 * 예를 들어 다음과 같은 URL:
 
-   ```shell
-   http://localhost:4502/content/wknd/language-masters/en/magazine/guide-la-skateparks/jcr:content/root/container/container/contentfragment.model.json
-   ```
+  ```shell
+  http://localhost:4502/content/wknd/language-masters/en/magazine/guide-la-skateparks/jcr:content/root/container/container/contentfragment.model.json
+  ```
 
 * 은(는) 다음과 같은 콘텐츠를 제공합니다.
 
-   ![WKND 콘텐츠 조각의 JSON 모델](assets/json-model-wknd-content-fragment.png)
+  ![WKND 콘텐츠 조각의 JSON 모델](assets/json-model-wknd-content-fragment.png)
 
-   >[!NOTE]
-   >
-   >다음을 수행할 수 있습니다. [자체 구성 요소 조정](enabling-json-exporter.md) 을 클릭하여 이 데이터에 액세스하고 사용하십시오.
+  >[!NOTE]
+  >
+  >다음을 수행할 수 있습니다. [자체 구성 요소 조정](enabling-json-exporter.md) 을 클릭하여 이 데이터에 액세스하고 사용하십시오.
 
-   >[!NOTE]
-   >
-   >표준 구현은 아니지만, [여러 선택기가 지원되며,](enabling-json-exporter.md#multiple-selectors) 그러나 `model` 은(는) 첫 번째 여야 합니다.
+  >[!NOTE]
+  >
+  >표준 구현은 아니지만, [여러 선택기가 지원되며,](enabling-json-exporter.md#multiple-selectors) 그러나 `model` 은(는) 첫 번째 여야 합니다.
 
 ### 추가 정보 {#further-information}
 
-또한 다음 문서도 참조할 수 있습니다.
+추가 참조:
 
 * Assets HTTP API
    * [Assets HTTP API](/help/assets/developer-reference-material-apis.md)
@@ -80,7 +80,7 @@ AEM 내에서 전달은 선택기를 사용하여 수행됩니다 `model` 및 `.
 
 자세한 내용은 다음을 참조하십시오.
 
-* [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md)
-* [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+* [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md)
+* [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [컨텐츠 조각으로 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 및 [콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 [콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)

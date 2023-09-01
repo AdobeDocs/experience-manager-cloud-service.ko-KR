@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5995c416328e6f340285004ec2e723cc9279dabd
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 100%
+source-wordcount: '1750'
+ht-degree: 28%
 
 ---
 
@@ -26,25 +26,42 @@ ht-degree: 100%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 기능 릴리스(2023.7.0)의 릴리스 날짜는 2023년 7월 27일입니다. 다음 기능 릴리스(2023.8.0)는 2023년 8월 31일에 예정되어 있습니다.
+의 릴리스 날짜 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 기능 릴리스(2023.8.0)는 2023년 8월 31일입니다. 다음 기능 릴리스(2023.9.0)는 2023년 9월 28일에 예정되어 있습니다.
 
 ## 릴리스 비디오 {#release-video}
 
-2023년 7월 릴리스 개요 비디오를 통해 2023.7.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
+2023년 8월 릴리스 개요 비디오를 통해 2023.8.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3422016/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3423535/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### [!DNL Experience Manager Sites]의 새로운 기능 {#sites-features}
 
-* 콘텐츠 조각의 MSM. 이제 AEM Multisite Manager를 콘텐츠 조각에 사용할 수 있으므로 대량 콘텐츠 배포를 위한 콘텐츠 조각 라이브 카피를 만들 수 있습니다. 콘텐츠 조각 요소 및 변형 수준까지 세분화된 상속 제어를 사용할 수 있습니다.
-
-### [!DNL Experience Manager Sites] 프리릴리스의 새로운 기능 {#prerelease-sites}
-
 * 이제 사용자는 [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=ko)을 사용하여 콘텐츠 조각에 메타데이터로 적용된 태그를 보고 검색할 수 있습니다. 사용자가 더 이상 이 기능을 사용하기 위해 자산 UI로 전환할 필요가 없으므로 컨텍스트 전환이 줄어들고 효율성이 향상됩니다.
 
-![콘텐츠 조각 콘솔에서 태그 지정](/help/assets/content-fragments-console-tags.png)
+  ![콘텐츠 조각 콘솔에서 태그 지정](/help/assets/content-fragments-console-tags.png)
+* 이제 새로운 콘텐츠 조각 편집기를 AEM에서 as a Cloud Service으로 사용할 수 있습니다. 작성 작업을 간소화하고 컨텐츠를 편집하는 동안 서로 다른 앱 간에 전환할 필요성을 줄여 컨텐츠 작성자가 보다 생산성을 발휘할 수 있도록 합니다.
+  ![새 콘텐츠 조각 편집기](/help/release-notes/assets/newCFEditor.png)
+
+새로운 콘텐츠 조각 편집기는 원래 편집기에서 사용할 수 없는 다음과 같은 이점을 제공합니다.
+* 자동 저장 기능을 통해 작성 효율성을 높이고 실수로 편집이 손실되는 것을 방지할 수 있습니다.
+* 깊게 구조화된 조각 내에서 빠른 탐색을 위해 구조 트리를 사용하는 콘텐츠 조각 및 해당 참조에 대한 계층 구조 보기.
+  ![콘텐츠 조각 편집기의 구조 트리](/help/release-notes/assets/newCFEditor_StructureTree.png)
+
+* 먼저 에셋 DAM에 업로드하지 않고도 에셋을 콘텐츠 참조로 인라인 업로드
+* 콘텐츠 조각에서 제공하는 렌더링된 경험의 임시 미리 보기를 통해 작성자는 프론트엔드 앱에서 콘텐츠의 디자인을 시각화할 수 있습니다
+* 편집기에서 콘텐츠 조각 게시 및 게시 취소 를 1번 클릭합니다
+* 콘텐츠 조각을 편집하는 동안 언어 사본 보기 및 탐색
+  ![콘텐츠 조각 편집기의 언어 사본](/help/release-notes/assets/newCFEditor_LanguageCopies.PNG)
+
+* 콘텐츠 조각의 타임라인을 추적하는 데 도움이 되는 버전 보기
+
+  ![콘텐츠 조각 편집기의 버전](/help/release-notes/assets/newCFEditor_Versionhistory.PNG)
+
+* 작성자가 편집의 영향을 이해하는 데 도움이 되는 상위 참조 보기
+
+  ![콘텐츠 조각 편집기의 상위 참조](/help/release-notes/assets/newCFEditor_Parentreferences.PNG)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -60,39 +77,69 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 -->
 
-**이미지 스마트 태그에 대해 개선된 인공 지능 프레임워크**
+* **데이터 소스에서 에셋 일괄 가져오기**: 이제 관리자는 [많은 수의 에셋을 가져오는 기능](/help/assets/bulk-import-assets-view.md) 데이터 소스에서 AEM Assets으로. 관리자는 더 이상 AEM Assets에 개별 에셋 또는 폴더를 업로드할 필요가 없습니다. 일괄 가져오기에 지원되는 데이터 소스에는 Azure, AWS, Google Cloud 및 Dropbox이 포함됩니다.
 
-Experience Manager Assets는 이제 이미지 스마트 태그에 대해 향상된 인공 지능 프레임워크를 사용합니다. 이 콘텐츠 인텔리전스는 수집 시 모든 이미지 자산에 사용할 수 있는 스마트 태그의 관련성과 정확성을 향상시킵니다.
+  ![데이터 소스에서 에셋 일괄 가져오기](/help/release-notes/assets/bulk-import.png)
 
-**자산 목록 보기에 대한 열 표시 구성**
+* **Adobe Express 기반 이미지 편집 도구**: 쉽고 직관적 [Adobe Express 기반의 이미지 편집 도구](/help/assets/edit-images-assets-view.md) AEM Assets 내에서 바로 사용할 수 있으므로 콘텐츠 재사용을 높이고 콘텐츠 속도를 가속화할 수 있습니다.
 
-이제 Assets Essentials가 상태, 형식, 차원, 크기 등과 같이 자산 목록 보기에 표시되는 열을 선택할 수 있는 기능을 제공합니다.
+  ![Adobe Express을 사용하여 이미지 편집](/help/release-notes/assets/edit-adobe-express.png)
 
-![열 구성](/help/release-notes/assets/configure-columns.png)
+* **내 작업 영역 빠른 액세스에 대한 항목을 고정할 때의 유연성**: 사용자, 전체 조직 또는 그룹 목록에 대해 항목을 선택하고 고정하여 [내 작업 영역의 빠른 액세스 섹션](/help/assets/my-workspace-assets-view.md) 를 참조하십시오.
 
-**관련성을 기준으로 검색 결과 정렬**
+  ![그룹에 대한 항목 고정](/help/release-notes/assets/pin-items-for-groups.png)
 
-이제 Assets Essentials는 기본적으로 관련성을 기준으로 검색 결과를 정렬합니다. 검색된 자산을 `Name`, `Relevance`, `Size`, `Modified` 및 `Created`의 오름차순 또는 내림차순으로 정렬할 수 있습니다.
+### 관리자 보기의 새로운 기능 {#admin-view-features}
+
+**검색 개선 사항**
+
+* 이제 관리자는 [자산의 배치 크기 구성](/help/assets/search-assets.md#configure-asset-batch-size) 검색을 수행할 때 표시됩니다. 결과를 로드하기 위해 아래로 더 스크롤할 때 자산 검색 결과가 구성된 배치 크기 번호의 배수로 표시됩니다. 사용 가능한 배치 크기인 200개, 500개 및 1000개의 에셋 중에서 선택할 수 있습니다. 배치 크기 수를 낮게 설정하면 검색 응답 시간이 빨라집니다.
+
+  ![자산 배치 크기 구성](/help/release-notes/assets/assets-batch-size-configuration.png)
+
+* 이제 Experience Manager Assets에 의 새 버전 9가 포함되어 있습니다. `damAssetLucene` 색인입니다. `damAssetLucene-9` oak 쿼리 패싯 카운트의 비헤이비어를 [facet 카운트에서 더 이상 액세스 제어를 평가하지 않음](/help/assets/search-assets.md) 기본 검색 색인에 의해 반환되어 검색 응답 시간이 빨라집니다.
+
+### [!DNL Experience Manager Assets]에서 사용할 수 있는 프리릴리스 기능 {#prerelease-features-assets}
+
+* **Dynamic Media**: [Dynamic Media 비디오에 대한 다중 자막 및 다중 오디오 트랙 지원](/help/assets/dynamic-media/video.md#about-msma)- 이제 여러 자막과 여러 오디오 트랙을 기본 비디오에 쉽게 추가할 수 있습니다. 이 기능은 글로벌 대상자를 통해 비디오에 액세스할 수 있음을 의미합니다. 게시된 단일 기본 비디오를 여러 언어로 글로벌 대상자에게 사용자 지정하고 다양한 지리적 영역에 대한 액세스 가능성 지침을 준수할 수 있습니다. 작성자는 사용자 인터페이스의 단일 탭에서 자막 및 오디오 트랙을 관리할 수도 있습니다.
+
+  ![선택한 비디오 자산의 속성 페이지에 있는 자막 및 오디오 트랙 탭&#x200B;](/help/release-notes/assets/msma-aem-cs.png)*선택한 비디오 자산의 속성 페이지에 있는 자막 및 오디오 트랙 탭*
+
+* **에셋**: Experience Manager에서 관리되는 ZIP 아카이브를 선택하고 [Experience Manager으로 직접 파일 추출](/help/assets/manage-digital-assets.md#extract-zip-archives) 다운로드하지 않고
+
+  ![그룹에 대한 항목 고정](/help/release-notes/assets/extract-archive.png)
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms] 프리릴리스에서 사용 가능한 새로운 기능 {#new-features-available-in-forms-channel}
 
-* [**기본 제공 테마**](/help/forms/using-themes-in-core-components.md)**및 템플릿**: 바로 사용할 수 있으며 노련한 전문가와 초보 양식 작성자 모두의 역량을 강화하도록 맞춤화된 OOTB 테마 및 템플릿으로 양식 작성 프로세스를 시작하십시오. 적응형 양식 핵심 구성 요소를 사용하여 원활하게 구축되었으며 세심하게 선별된 이 테마 및 템플릿을 사용하면 일반적인 사용 사례에 대한 양식을 신속하게 작성할 수 있습니다.
-
-  ![기본 제공 템플릿](/help/forms/assets/form-templates-ootb.png)
-
-* **헤드리스 양식용 React 구성 요소**: 이제 기본 제공 React 구성 요소를 사용하여 헤드리스 적응형 양식 렌디션을 미리 보고 사용자 정의할 수 있습니다. 이러한 구성 요소는 스타일 지정을 위해 적응형 양식 핵심 구성 요소의 BEM 클래스를 활용하므로 특정 요구 사항에 따라 형태를 쉽게 사용자 정의할 수 있습니다.
-
-* [**반복 가능한 섹션으로 적응형 양식 만들기**](/help/forms/create-forms-repeatable-sections.md): 이제 [아코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [패널](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html) 및 [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 구성 요소에 기반한 반복 가능 적응형 양식을 만들어 여러 데이터 레코드 캡처에 사용할 수 있습니다.  이러한 반복 가능한 섹션을 사용하면 여러 데이터 항목을 쉽게 제공할 수 있습니다. 필요한 데이터 인스턴스를 미리 알 수 없는 경우에 유용합니다. 양식 작성기에서 섹션을 쉽게 추가하거나 제거할 수 있으므로, 양식을 다양한 데이터 입력 시나리오에 맞게 조정하고 동일한 데이터 레코드의 여러 항목 수집을 단순화할 수 있습니다.
+* [**Google reCAPTCHA 엔터프라이즈 지원**](/help/forms/captcha-adaptive-forms.md): 적응형 양식에서 Google reCAPTCHA Enterprise를 사용해 사기 행위 및 스팸 방지 기능을 강화하여 보다 안전한 사용자 환경을 제공합니다. 고급 위험 분석 및 원활한 통합을 통해 실제 사용자가 양식을 쉽게 제출할 수 있는 동시에 봇이 효과적으로 차단됩니다.
 
 
 ### [!DNL Forms]에서 사용할 수 있는 프리릴리스 기능 {#pre-release-features-available-in-forms-channel}
 
-* [**Google reCAPTCHA 엔터프라이즈 지원**](/help/forms/captcha-adaptive-forms.md): 적응형 양식에서 Google reCAPTCHA Enterprise를 사용해 사기 행위 및 스팸 방지 기능을 강화하여 보다 안전한 사용자 환경을 제공합니다. 고급 위험 분석 및 원활한 통합을 통해 실제 사용자가 양식을 쉽게 제출할 수 있는 동시에 봇이 효과적으로 차단됩니다.
+* **Forms용 Experience Cloud 설정 자동화가 포함된 Adobe Analytics**: 이제 두 개의 단추를 전환하여 Experience Cloud 설정 자동화를 통해 Adobe Analytics을 활성화할 수 있습니다. 이를 통해 Experience Platform 태그 및 Adobe Analytics과 AEM Forms as a Cloud Service으로 연결하여 게시된 양식에 대한 성능 지표를 캡처하고 추적할 수 있습니다.
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3422097/adaptive-forms-recaptcha-core-components-captcha/?quality=12&learn=on)
+* **적응형 Forms용 Adobe Analytics 보고서 템플릿**: 이제 Forms as a Cloud Service에서 Adobe Analytics 보고서 OOTB를 제공합니다. 폼의 성능을 쉽게 이해할 수 있도록 해줍니다. 양식 수준 지표를 통해 표현물, 표현물, 방문자, 제출, 평균 채우기 시간과 같은 여러 KPI(주요 성능 지표)에서 양식이 어떻게 작동하는지 파악할 수 있습니다. 사용자 동작 및 피드백을 추적하여 혼동을 일으키는 양식 영역을 식별하고 양식의 디자인 및 기능 개선을 안내할 수 있습니다.
+
+  ![적응형 양식 사용자 참여 adobe analytics 보고서](/help/forms/assets/forms-analytics-report.png)
+
+* **[핵심 구성 요소를 기반으로 하는 적응형 Forms의 양식 단편](/help/forms/adaptive-form-fragments-core-components.md)**: 양식 조각으로 양식 구축 경험을 향상시켜 중복에 종지부를 찍고, 디지털 인벤토리를 최적화하고, 공동 작업을 개선합니다. 이러한 재사용 가능한 구성 요소는 여러 양식에 원활하게 통합되어 일관되고 전문적인 양식을 간편하게 만들 수 있습니다. 양식 조각은 &#39;한 번 변경하고 모든 곳에 반영&#39; 기능을 통해 재사용성, 표준화 및 브랜드 일관성을 보장합니다. 이러한 조각을 활용하는 모든 양식에 한 곳에서 이루어진 업데이트가 자동으로 전파되므로 유지 관리 기능과 효율성이 향상됩니다.
+
+* **[향상된 Adobe Sign 워크플로 단계](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**: Adobe Sign 워크플로 단계가 다음을 포함하도록 개선되었습니다.
+   * **Adobe Sign에 대한 정부 ID 기반 인증**: Adobe Acrobat Sign의 정부 ID 기반 인증은 사용자가 정부에서 발급한 ID(운전면허증, 주민등록증, 여권)를 사용하여 신원을 인증할 수 있도록 함으로써 추가적인 인증 계층을 제공합니다. 이 향상된 기능은 신뢰할 수 있는 ID 문서를 활용함으로써 서명 프로세스에 대한 신뢰도를 더욱 높여 강화된 보안, 규정 준수 및 사용자 유효성 검사가 필요한 시나리오에 이상적입니다.
+
+   * **Adobe Sign 문서에 대한 감사 추적**: 감사 추적 기능을 사용하여 Adobe Sign 문서의 라이프사이클에 대한 자세한 통찰력을 얻을 수 있습니다. 이제 감사 추적을 사용하여 문서와 관련된 모든 작업 및 상호 작용에 대한 포괄적인 레코드를 유지 관리할 수 있습니다. 여기에는 각 이벤트에 대한 타임스탬프와 함께 문서를 보고, 편집하고, 서명한 사람 등의 세부 정보가 포함됩니다. 이러한 개선된 기능은 규정 준수 유지, 분쟁 해결 및 디지털 계약의 무결성 보장에 매우 중요합니다.
+
+   * **서명자 이외의 계약 수신자를 위한 새로운 역할**: Adobe Acrobat Sign에는 계약 수신자의 역할을 서명자 이상으로 확장하여 워크플로 요구 사항에 보다 잘 부합하도록 하는 옵션이 있습니다. 활성화되면 계약의 각 수신자는 자신의 역할을 개별적으로 구성할 수 있으며 기본값은 서명자입니다.
+
+* **[Document Assurance API(통신 API의 일부)를 통해 문서 Protect](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: Document Assurance API를 통해 문서에 서명 및 암호화하여 중요한 정보를 보호할 수 있습니다. 암호화를 통해 문서 내용을 읽을 수 없는 형식으로 변환하여 인가된 사용자만 액세스할 수 있도록 합니다. 이 강화된 보호 레이어는 무단 시야로부터 귀중한 데이터를 보호할 뿐만 아니라 안심할 수 있습니다. 서명 API를 사용하면 조직에서 배포하고 수신하는 Adobe PDF 문서의 보안 및 개인 정보를 보호할 수 있습니다. 이 서비스는 디지털 서명 및 인증을 사용하여 의도한 수신자만 문서를 변경할 수 있도록 합니다.
+
+* **통신 API의 페이지 수 지원**: 이제 통신 API를 통해 문서를 검색할 뿐만 아니라 문서에 포함된 페이지 수에 대한 중요한 정보도 받을 수 있습니다.
+
+* **[규칙 편집기의 사용자 지정 오류 처리기로 오류 처리](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**: 이제 외부 서비스에서 반환한 오류에 대한 응답으로 사용자 지정 함수를 호출하고 최종 사용자에게 맞춤 응답을 제공할 수 있습니다. 예를 들어 특정 오류 코드의 백엔드에서 사용자 정의 워크플로를 호출하거나 서비스가 중단되었음을 고객에게 알려 줄 수 있습니다.
+
 
 ### Headless 적응형 양식 얼리 어답터 프로그램 {#forms-early-adopter}
 
@@ -105,13 +152,12 @@ Experience Manager Assets는 이제 이미지 스마트 태그에 대해 향상�
 
 공식 이메일 ID에서 `aem-forms-headless@adobe.com`으로 이메일을 보내 얼리 어답터 프로그램에 참여할 수 있습니다.
 
+
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### 액션 센터 {#actions-center}
+### CDN 로그 {#cdn-logs}
 
-즉각적인 조치가 필요한 중대 인시던트가 발생할 때 알려 주는 이메일 알림과 사이트 최적화를 위한 개인화된 권장 사항을 구독할 수 있습니다. [액션 센터](/help/operations/actions-center.md)는 차단된 복제 대기열 또는 자격 증명 만료와 같은 경고를 검토하고 해결 상태로 표시할 수 있는 허브 역할을 합니다.
-
-![액션 센터 스크린샷](/help/assets/assets/actions-center.png)
+캐시 적중률 최적화에 유용하고 컨텐츠 전달 흐름에 대한 가시성을 높이는 Cloud Manager에서 CDN 로그를 다운로드합니다. [다음에 대해 알아보기](/help/implementing/developing/introduction/logging.md#cdn-log) cdn 로그 형식입니다. 이 기능은 9월 초에 고객에게 점진적으로 출시될 예정입니다.
 
 ### CDN 및 WAF 규칙 얼리 어답터 프로그램 {#waf-early-adopter}
 
@@ -123,9 +169,6 @@ Experience Manager Assets는 이제 이미지 스마트 태그에 대해 향상�
 
 [여기](/help/security/cdn-and-waf-rules.md)에 있는 문서에서 기능에 대해 자세히 알아보십시오.
 
-### 기타 Foundation 변경 사항 {#other-foundation-changes}
-
-* 8월 7일이 속한 한 주 동안 AEM 인스턴스에 대한 요청이 정상 수준을 초과하면 AEM에서 오류 코드 503 대신 오류 코드 429를 반환합니다. [자세히 알아보기](/help/implementing/developing/introduction/development-guidelines.md).
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 

@@ -2,10 +2,10 @@
 title: 콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기
 description: 콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '261'
-ht-degree: 100%
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+workflow-type: tm+mt
+source-wordcount: '191'
+ht-degree: 92%
 
 ---
 
@@ -26,21 +26,9 @@ ht-degree: 100%
 
 ## 메타데이터 및 태그 추가 {#adding-metadata-and-tags}
 
-메타데이터 및 태그 추가에 사용할 수 있는 방법이 세 가지 있습니다.
+콘텐츠 조각 편집기의 오른쪽 패널에서 메타데이터와 태그를 추가할 수 있습니다.
 
-* 조각을 처음 만드는 경우(**자산** 콘솔에서):
-
-  ![새 콘텐츠 조각 만들기 - 이름 입력](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
-
-* 콘텐츠 조각 편집기의 **변형** 탭을 사용하여 프로젝트에서 사전 정의된 **태그**&#x200B;를 추가할 수 있습니다.
-
-  ![콘텐츠 조각 편집기 - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
-
-* 콘텐츠 조각 편집기의 **메타데이터** 탭을 사용하여 프로젝트에서 다양한 메타데이터 필드와 사전 정의된 **태그**&#x200B;를 추가할 수 있습니다.
-
-  ![콘텐츠 조각 편집기 - 메타데이터](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
-
-   * 자산 콘솔의 도구 모음에 있는 **속성** 옵션을 사용하여 직접 액세스할 수도 있습니다.
+![콘텐츠 조각 편집기 - Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## 다음 단계 {#whats-next}
 
@@ -48,8 +36,8 @@ ht-degree: 100%
 
 ## 추가 리소스 {#additional-resources}
 
-* [메타데이터 - 조각 속성](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
+* [메타데이터 - 조각 속성](/help/sites-cloud/administering/content-fragments/authoring.md#view-properties-tags)
 
 * [태그 사용](/help/sites-cloud/authoring/features/tags.md)
 
-* [콘텐츠 조각 모델 - 자산 폴더에서 콘텐츠 조각 모델 허용](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [콘텐츠 조각 모델 - 자산 폴더에서 콘텐츠 조각 모델 허용](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)

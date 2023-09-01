@@ -3,8 +3,8 @@ title: AEM에서 GraphQL 엔드포인트 관리
 description: Headless 콘텐츠 게재용 Adobe Experience Manager as a Cloud Service에서 GraphQL 엔드포인트를 관리하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 100%
 
@@ -22,10 +22,10 @@ AEM에는 두 가지 유형의 엔드포인트가 있습니다.
 
 * 전역
    * 모든 사이트에서 사용할 수 있습니다.
-   * 이 엔드포인트는 모든 Sites 구성의 모든 콘텐츠 조각 모델을 사용할 수 있습니다([구성 브라우저](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)에 정의됨).
+   * 이 엔드포인트는 모든 Sites 구성의 모든 콘텐츠 조각 모델을 사용할 수 있습니다([구성 브라우저](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)에 정의됨).
    * Sites 구성 간에 공유해야 하는 콘텐츠 조각 모델이 있는 경우 전역 Sites 구성에서 생성해야 합니다.
 * Sites 구성:
-   * [구성 브라우저](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)에 정의된 Sites 구성에 해당합니다.
+   * [구성 브라우저](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)에 정의된 Sites 구성에 해당합니다.
    * 지정된 사이트/프로젝트에만 해당됩니다.
    * Sites 구성 특정 엔드포인트는 해당 특정 Sites 구성의 콘텐츠 조각 모델을 전역 Sites 구성의 콘텐츠 조각 모델과 함께 사용합니다.
 
@@ -52,11 +52,11 @@ AEM용 GraphQL의 엔드포인트를 활성화하려면 다음 작업을 수행�
 
 ## GraphQL 엔드포인트 활성화하기 {#enabling-graphql-endpoint}
 
-GraphQL 엔드포인트를 활성화하려면 먼저 적절한 구성이 필요합니다. [콘텐츠 조각 - 구성 브라우저](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)를 참조하십시오.
+GraphQL 엔드포인트를 활성화하려면 먼저 적절한 구성이 필요합니다. [콘텐츠 조각 - 구성 브라우저](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)를 참조하십시오.
 
 >[!CAUTION]
 >
->[콘텐츠 조각 모델 사용이 활성화되지 않은](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) 경우 **만들기** 옵션을 사용할 수 없습니다.
+>[콘텐츠 조각 모델 사용이 활성화되지 않은](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) 경우 **만들기** 옵션을 사용할 수 없습니다.
 
 해당 엔드포인트를 활성화하려면 다음 작업을 수행하십시오.
 

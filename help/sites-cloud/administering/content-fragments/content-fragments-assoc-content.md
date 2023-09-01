@@ -3,15 +3,25 @@ title: 관련 콘텐츠
 description: 콘텐츠 조각의 관련 콘텐츠 기능이 연결을 제공하여 조각과 함께 해당 자산을 선택적으로 사용할 수 있도록 함으로써 페이지 작성과 Headless 콘텐츠 게재 모두에 유연성을 더하는 방법을 이해합니다.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
-workflow-type: ht
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
+workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 100%
 
 ---
 
+
 # 관련 콘텐츠{#associated-content}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 AEM의 관련 콘텐츠 기능은 [페이지에서 콘텐츠 조각을 사용할 때 액세스할 수 있는 다양한 자산을 제공](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)함으로써 콘텐츠 페이지에 자산을 추가할 때 조각과 함께 해당 자산을 선택적으로 사용할 수 있도록 하는 연결을 제공합니다. 이를 통해 적절한 자산을 검색하는 데 필요한 시간을 절약할 수도 있습니다. Headless 콘텐츠 게재를 위한 유연성도 제공합니다.
 

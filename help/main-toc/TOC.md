@@ -8,10 +8,10 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 316680823fe4bc85e1f4359305047c0d1f517dc7
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '4249'
-ht-degree: 99%
+source-wordcount: '4258'
+ht-degree: 97%
 
 ---
 
@@ -35,6 +35,7 @@ ht-degree: 99%
    + AEMaaCS 기능 릴리스 정보 {#release-notes}
       + [최신 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2023 {#2023}
+         + [2023.7.0 릴리스 정보](/help/release-notes/release-notes-cloud/2023/release-notes-2023-7-0.md)
          + [2023.6.0 릴리스 정보](/help/release-notes/release-notes-cloud/2023/release-notes-2023-6-0.md)
          + [2023.4.0 릴리스 정보](/help/release-notes/release-notes-cloud/2023/release-notes-2023-4-0.md)
          + [2023.2.0 릴리스 정보](/help/release-notes/release-notes-cloud/2023/release-notes-2023-2-0.md)
@@ -315,6 +316,16 @@ ht-degree: 99%
          + [등록, 로그인 및 사용자 프로필](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
    + 관리 {#administering}
       + 콘텐츠 조각 {#content-fragments}
+         + [개요 및 개념](/help/sites-cloud/administering/content-fragments/overview.md)
+         + [GraphQL을 사용한 헤드리스 게재](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
+         + [콘텐츠 조각 설정](/help/sites-cloud/administering/content-fragments/setup.md)
+         + [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+         + [콘텐츠 조각 관리](/help/sites-cloud/administering/content-fragments/managing.md)
+         + [조각 컨텐츠 작성](/help/sites-cloud/administering/content-fragments/authoring.md)
+         + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
+         + [삭제 고려 사항](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
+         + [구조 분석](/help/sites-cloud/administering/content-fragments/analysis.md)
+         + [키보드 단축키](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
          + [콘텐츠 조각을 사용하여 작업](/help/sites-cloud/administering/content-fragments/content-fragments.md)
          + [콘텐츠 조각 및 GraphQL을 사용하여 Headless 게재](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)
          + [인스턴스에 대해 콘텐츠 조각 기능 활성화](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
@@ -519,6 +530,7 @@ ht-degree: 99%
       + [지원되는 파일 형식 및 사용 사례](/help/assets/supported-file-formats-assets-view.md)
       + [자산 보기](/help/assets/navigate-assets-view.md)
       + [자산 업로드 및 추가](/help/assets/add-delete-assets-view.md)
+      + [자산 일괄 가져오기](/help/assets/bulk-import-assets-view.md)
       + [자산 검색 및 탐색](/help/assets/search-assets-view.md)
       + [자산 관리 작업](/help/assets/manage-organize-assets-view.md)
       + [이미지 편집](/help/assets/edit-images-assets-view.md)
@@ -574,6 +586,7 @@ ht-degree: 99%
       + 적응형 양식 작성 - 핵심 구성 요소 {#authoring-adaptive-forms-core-components}
          + 적응형 양식 만들기 {#create-an-adaptive-form-on-forms-cs}
             + [적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md)
+            + [적응형 양식 단편 만들기](/help/forms/adaptive-form-fragments-core-components.md)
             + [적응형 양식의 테마 만들기 - 핵심 구성 요소](/help/forms/using-themes-in-core-components.md)
             + [적응형 양식의 기록 문서 생성](/help/forms/generate-document-of-record-core-components.md)
             + [AEM Sites 페이지에 적응형 양식 - 핵심 구성 요소 생성](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
@@ -582,6 +595,7 @@ ht-degree: 99%
             + [반복 가능한 섹션으로 양식 만들기](/help/forms/create-forms-repeatable-sections.md)
             + [적응형 양식에 대한 제출 액션 구성](/help/forms/configure-submit-actions-core-components.md)
             + [적응형 양식에서 Google reCAPTCHA 사용](/help/forms/captcha-adaptive-forms-core-components.md)
+            + [적응형 양식에 사용자 지정 오류 처리기 추가](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
       + 적응형 양식 작성 - 기초 구성 요소 {#authoring-adaptive-forms-foundation-components}
          + PDF 양식을 적응형 양식으로 변환 {#afcs}
             + [자동 양식 전환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -730,18 +744,14 @@ ht-degree: 99%
       + [콘텐츠 조각](/help/headless/setup/create-content-fragment.md)
       + [GraphQL 엔드포인트](/help/headless/setup/create-api-request.md)
    + 콘텐츠 조각 {#content-fragments}
-      + [개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html)
-      + [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)
-      + [콘텐츠 조각 모델](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html)
-      + [관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html)
+      + [개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html)
+      + [콘텐츠 조각 모델](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html)
+      + [콘텐츠 조각 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
       + 작성{#authoring}
-         + [작성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html)
-         + [텍스트 편집기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-markdown.html)
-         + [관련 콘텐츠](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-assoc-content.html)
-         + [변형](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html#managing-variations)
-      + [메타데이터](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-metadata.html)
-      + [구조 트리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html)
-      + [JSON 미리보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-json-preview.html)
+         + [작성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
+         + [Markdown 편집기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
+      + [구조 트리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
+      + [JSON 미리보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
    + GraphQL API {#graphql-api}
       + [콘텐츠 조각용 GraphQL API](/help/headless/graphql-api/content-fragments.md)
       + [GraphQL 엔드포인트 관리](/help/headless/graphql-api/graphql-endpoint.md)
@@ -961,6 +971,7 @@ ht-degree: 99%
       + [콘텐츠 조각 맞춤화 및 확장](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [렌더링용 구성 요소를 구성하는 콘텐츠 조각](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
       + [콘텐츠 조각 콘솔 맞춤화](/help/implementing/developing/extending/content-fragment-console-customizing.md)
+      + [콘텐츠 조각 콘솔 및 편집기 맞춤화](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
       + 검색 양식 관리 {#manage-search-forms}
          + [검색 양식 구성](/help/implementing/developing/extending/search-forms.md)
          + [받은 편지함용 검색 필터 구성](/help/implementing/developing/extending/configure-inbox-search-rail.md)

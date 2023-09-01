@@ -2,10 +2,10 @@
 title: AEM Headless as a Cloud Service 시작하기
 description: 이 AEM Headless 개발자 여정의 부분에서는 AEM Headless 사전 요구 사항에 대해 알아봅니다.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+workflow-type: tm+mt
 source-wordcount: '3080'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -166,7 +166,7 @@ AEM Headless 프로젝트를 시작하기 전에 알아 두어야 할 몇 가지
 
 #### 콘텐츠 작성자 {#content-author}
 
-콘텐츠 작성자는 AEM에서 Headless 방식으로 게재하는 콘텐츠를 만들고 관리합니다. 콘텐츠 작성자는 콘텐츠 조각과 자산 콘솔 등 AEM 기능을 사용하여 콘텐츠를 관리합니다.
+콘텐츠 작성자는 AEM에서 Headless 방식으로 게재하는 콘텐츠를 만들고 관리합니다. 콘텐츠 작성자는 콘텐츠 조각 편집기와 같은 AEM 기능 및 다양한 콘솔을 사용하여 콘텐츠를 관리합니다.
 
 콘텐츠 작성자는 다음 모범 사례를 고려해야 합니다.
 
@@ -289,8 +289,8 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 * [이름 지정 규칙](/help/implementing/developing/introduction/naming-conventions.md) - AEM에서 페이지 이름 지정 제한 사항에 대한 기술 설명서
 * [다중 사이트 관리자 및 번역](/help/sites-cloud/administering/msm-and-translation.md) - AEM의 강력한 번역 기능에 대한 기술 설명서
 * [AEM 워크플로](/help/sites-cloud/authoring/workflows/overview.md) - AEM에서 워크플로를 자동화하는 방법에 대한 기술 설명서
-* [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md) - 콘텐츠 조각에 대한 기술 설명서.
-* [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - 콘텐츠 조각 모델에 대한 기술 설명서.
+* [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md) - 콘텐츠 조각에 대한 기술 설명서.
+* [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - 콘텐츠 조각 모델에 대한 기술 설명서.
 * [GraphQL 기술 설명서](https://graphql.org) - GraphQL 정의 (외부 링크)
 * [GraphQL API](/help/headless/graphql-api/content-fragments.md) - 콘텐츠 조각에 액세스하고 전달하기 위한 요청을 만드는 방법에 대한 기술 설명서
 * [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) - 콘텐츠 조각(및 기타 자산)을 만들고 수정하는 방법에 대한 기술 설명서

@@ -3,8 +3,11 @@ title: Markdown
 description: 콘텐츠 조각 편집기에서 Markdown 구문을 사용하여 손쉽게 페이지 작성 및 Headless 게재에 필요한 콘텐츠를 만들 수 있도록 하는 방법을 이해합니다.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: 4e9b076e-7429-466b-bb53-2164da379650
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 100%
@@ -12,6 +15,12 @@ ht-degree: 100%
 ---
 
 # Markdown {#markdown}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 [작성](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#authoring-your-content) 시 콘텐츠 조각 편집기는 *Markdown* 구문을 사용하여 사용자가 손쉽게 페이지 작성 및 Headless 게재에 필요한 콘텐츠를 작성할 수 있도록 합니다.
 

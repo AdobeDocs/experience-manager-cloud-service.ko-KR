@@ -2,7 +2,7 @@
 title: 콘텐츠 조각 맞춤화 및 확장
 description: 컨텐츠 조각은 표준 자산을 확장합니다. 이를 맞춤화하는 방법에 대해 알아봅니다.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '1812'
 ht-degree: 2%
@@ -13,13 +13,13 @@ ht-degree: 2%
 
 Adobe Experience Manager as a Cloud Service 내에서 컨텐츠 조각은 표준 자산을 확장합니다. 다음을 참조하십시오.
 
-* [컨텐츠 조각 생성 및 관리](/help/sites-cloud/administering/content-fragments/content-fragments.md) 및 [컨텐츠 조각으로 페이지 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 콘텐츠 조각에 대한 자세한 내용은 을 참조하십시오.
+* [컨텐츠 조각 생성 및 관리](/help/sites-cloud/administering/content-fragments/overview.md) 및 [컨텐츠 조각으로 페이지 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 콘텐츠 조각에 대한 자세한 내용은 을 참조하십시오.
 
 * [자산 관리](/help/assets/manage-digital-assets.md) 표준 에셋에 대한 자세한 내용을 보려면 .
 
 ## 아키텍처 {#architecture}
 
-기본 [구성 부분](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 콘텐츠 조각의 은 다음과 같습니다.
+기본 [구성 부분](/help/sites-cloud/administering/content-fragments/overview.md#constituent-parts-of-a-content-fragment) 콘텐츠 조각의 은 다음과 같습니다.
 
 * A *컨텐츠 조각*,
 * 1개 또는 그 이상의 *컨텐츠 요소*,
@@ -78,7 +78,7 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 
 #### 자산 권한 {#asset-permissions}
 
-자세한 내용은 을 참조하십시오. [컨텐츠 조각 - 삭제 고려 사항](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md).
+자세한 내용은 을 참조하십시오. [컨텐츠 조각 - 삭제 고려 사항](/help/sites-cloud/administering/content-fragments/delete-considerations.md).
 
 #### 기능 통합 {#feature-integration}
 
@@ -297,7 +297,7 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 
 `com.adobe.cq.dam.cfm.ContentFragment`
 
-예를 들면 다음과 같습니다.
+예:
 
 ```java
 // first, get the resource
@@ -314,7 +314,7 @@ if (fragmentResource != null) {
 새 콘텐츠 조각을 프로그래밍 방식으로 만들려면
 `FragmentTemplate` 모델 리소스를 통해 조정됩니다.
 
-예를 들면 다음과 같습니다.
+예:
 
 ```java
 Resource modelRsc = resourceResolver.getResource("...");
@@ -324,7 +324,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### 예: 자동 저장 간격 지정 {#example-specifying-the-auto-save-interval}
 
-다음 [자동 저장 간격](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#save-close-and-versions) (초 단위)는 구성 관리자(ConfMgr)를 사용하여 정의할 수 있습니다.
+다음 [자동 저장 간격](/help/sites-cloud/administering/content-fragments/managing.md#save-close-and-versions) (초 단위)는 구성 관리자(ConfMgr)를 사용하여 정의할 수 있습니다.
 
 * 노드: `<conf-root>/settings/dam/cfm/jcr:content`
 * 속성 이름: `autoSaveInterval`
