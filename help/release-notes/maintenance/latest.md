@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 370d5742065d659f32ec1ff4d4b0fc0a153f71c2
+source-git-commit: 288f871b75e68fdbca1244099e490408ea66ff40
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '316'
 ht-degree: 40%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 40%
 - SKYOP-63290: 버킷의 잘못된 발생을 수정했습니다.
 - SKYOPS-54607: 실패한 요청에 대해 Ratelimiter 서버로드 계산이 올바르지 않습니다.
 - ASSETS-27648: ContentModelIT가 다른 번들의 제외 파일을 읽지 못했습니다.
-- GRANITE-43744: 인증 요구 사항 및 단축 경로와 함께 잘못된 구성이 있는 경우 Sling 인증자가 제대로 작동하지 않습니다.
+- GRANITE-43744: 인증 요구 사항 및 단축 경로에서 잘못된 구성이 있는 경우 Sling 인증자가 제대로 작동하지 않습니다.
 - GRANITE-46419: Auth0 Idp에 AEM 통합 문제가 있습니다.
 - GRANITE-46292: AEM Cloud 업데이트 후 Okta SAML 구성이 작동하지 않습니다.
 - GRANITE-47059: Granite Jetty SSL 번들을 제거합니다.
