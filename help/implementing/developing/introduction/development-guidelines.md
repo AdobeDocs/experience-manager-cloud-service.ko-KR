@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service 개발에 대한 지침과 AMS의 AEM On-Premise 및 AEM과 다른 중요한 방식에 대해 알아봅니다.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 5a60c491db4a182529a2c4b6490b18b356c14fa7
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '2746'
 ht-degree: 4%
 
 ---
@@ -100,6 +100,14 @@ AEM as a Cloud Service은 타사 고객 코드에 대한 Touch UI만 지원합�
 
 ## 모니터링 및 디버깅 {#monitoring-and-debugging}
 
+## 개발 환경을 오버로드할 수 없음 {#overloading-dev-envs}
+
+프로덕션 환경은 안정적인 운영을 보장하기 위해 더 높은 크기로 지정되는 반면, 스테이징 환경은 프로덕션 조건에서 실제 테스트를 보장하기 위해 프로덕션 환경과 같은 크기로 지정됩니다.
+
+개발 환경 및 신속한 개발 환경은 개발, 오류 분석 및 기능 테스트로 제한되어야 하며 높은 워크로드 또는 대량의 콘텐츠를 처리하도록 설계되지 않았습니다.
+
+예를 들어 개발 환경의 대규모 콘텐츠 저장소에서 인덱스 정의를 변경하면 다시 인덱싱이 수행되어 처리 작업이 너무 많아질 수 있습니다. 실질적인 콘텐츠가 필요한 테스트는 스테이지 환경에서 실행해야 합니다.
+
 ### 로그 {#logs}
 
 로컬 개발의 경우 로그 항목이 `/crx-quickstart/logs` 폴더를 삭제합니다.
@@ -135,7 +143,7 @@ AEM as a Cloud Service은 타사 고객 코드에 대한 Touch UI만 지원합�
 
 디버그 로그 수준에서 로그를 필요 이상으로 오래 두면 많은 항목이 생성됩니다.
 
-항상 다음 위치에 기록하는 것이 바람직한 경우 실행 모드 기반 OSGi 구성 타겟팅을 사용하여 다양한 AEM 환경에 대해 개별 로그 수준을 설정할 수 있습니다. `DEBUG` 개발 중. 예를 들면 다음과 같습니다.
+항상 다음 위치에 기록하는 것이 바람직한 경우 실행 모드 기반 OSGi 구성 타겟팅을 사용하여 다양한 AEM 환경에 대해 개별 로그 수준을 설정할 수 있습니다. `DEBUG` 개발 중. 예:
 
 | 환경 | 실행 모드별 OSGi 구성 위치 | `org.apache.sling.commons.log.level` 속성 값 |
 | - | - | - |
@@ -143,7 +151,7 @@ AEM as a Cloud Service은 타사 고객 코드에 대한 Touch UI만 지원합�
 | 스테이지 | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | 경고 |
 | 프로덕션 | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | 오류 |
 
-디버그 파일의 행은 일반적으로 DEBUG로 시작한 다음 로그 수준, 설치 관리자 작업 및 로그 메시지를 제공합니다. 예를 들면 다음과 같습니다.
+디버그 파일의 행은 일반적으로 DEBUG로 시작한 다음 로그 수준, 설치 관리자 작업 및 로그 메시지를 제공합니다. 예:
 
 ```text
 DEBUG 3 WebApp Panel: WebApp successfully deployed
