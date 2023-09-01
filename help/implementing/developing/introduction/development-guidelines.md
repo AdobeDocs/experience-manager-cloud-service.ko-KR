@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service 개발에 대한 지침과 AMS의 AEM On-Premise 및 AEM과 다른 중요한 방식에 대해 알아봅니다.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 5a60c491db4a182529a2c4b6490b18b356c14fa7
+source-git-commit: 5aa4a049bc6a69f161ad04d2a64ab0871e672432
 workflow-type: tm+mt
 source-wordcount: '2746'
 ht-degree: 4%
@@ -98,8 +98,6 @@ AEM as a Cloud Service은 타사 고객 코드에 대한 Touch UI만 지원합�
 
 게시자-하위 메커니즘을 통해 컨텐츠가 작성자에서 게시로 복제됩니다. 사용자 지정 복제 에이전트는 지원되지 않습니다.
 
-## 모니터링 및 디버깅 {#monitoring-and-debugging}
-
 ## 개발 환경을 오버로드할 수 없음 {#overloading-dev-envs}
 
 프로덕션 환경은 안정적인 운영을 보장하기 위해 더 높은 크기로 지정되는 반면, 스테이징 환경은 프로덕션 조건에서 실제 테스트를 보장하기 위해 프로덕션 환경과 같은 크기로 지정됩니다.
@@ -107,6 +105,8 @@ AEM as a Cloud Service은 타사 고객 코드에 대한 Touch UI만 지원합�
 개발 환경 및 신속한 개발 환경은 개발, 오류 분석 및 기능 테스트로 제한되어야 하며 높은 워크로드 또는 대량의 콘텐츠를 처리하도록 설계되지 않았습니다.
 
 예를 들어 개발 환경의 대규모 콘텐츠 저장소에서 인덱스 정의를 변경하면 다시 인덱싱이 수행되어 처리 작업이 너무 많아질 수 있습니다. 실질적인 콘텐츠가 필요한 테스트는 스테이지 환경에서 실행해야 합니다.
+
+## 모니터링 및 디버깅 {#monitoring-and-debugging}
 
 ### 로그 {#logs}
 
