@@ -2,10 +2,10 @@
 title: 결합 방법 - AEM Headless의 앱과 콘텐츠
 description: 이 AEM Headless 개발자 여정의 부분에서는 콘텐츠 조각, GraphQL 호출, REST API 호출 및 애플리케이션 등 AEM 프로젝트를 가져와 실행을 준비하는 방법에 대해 알아봅니다.
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '1065'
-ht-degree: 100%
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+workflow-type: tm+mt
+source-wordcount: '1092'
+ht-degree: 98%
 
 ---
 
@@ -114,4 +114,6 @@ AEM Headless 프로젝트를 실제로 실행할 수 있는 다음 문서인 [He
 * [클라이언트측 브라우저용 AEM Headless SDK (JavaScript)](https://github.com/adobe/aem-headless-client-js)
 * [서버측/Node.js용 AEM Headless SDK (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
 * [Java™용 AEM Headless SDK](https://github.com/adobe/aem-headless-client-java)
-
+* [AEM as a Headless CMS 소개](/help/headless/introduction.md)
+* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM의 Headless Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

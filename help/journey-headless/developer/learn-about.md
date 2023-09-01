@@ -2,10 +2,10 @@
 title: CMS Headless 개발에 대해 알아보기
 description: 이 AEM Headless 개발자 여정의 부분에서는 Headless 기술과 이를 사용하는 이유에 대해 알아봅니다.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '1620'
-ht-degree: 100%
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+workflow-type: tm+mt
+source-wordcount: '1638'
+ht-degree: 99%
 
 ---
 
@@ -127,4 +127,6 @@ AEM Headless 여정을 시작해 주셔서 감사합니다! 이 문서를 읽고
 다음 문서인 [AEM Headless as a Cloud Service 시작하기](getting-started.md)를 검토하여 Headless 개발 여정의 다음 부분으로 넘어가는 것이 좋습니다. 다음은 이 문서에 나열된 몇 가지 개념을 자세히 알아보는 추가적인 옵션 리소스이며, 이들 리소스를 Headless 여정에서 계속 사용할 필요는 없습니다.
 
 * [Adobe Experience Manager as a Cloud Service의 아키텍처 소개](/help/overview/architecture.md) - AEM as a Cloud Service의 아키텍처 이해
+* An [AEM as a Headless CMS 소개](/help/headless/introduction.md)
+* 다음 [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [AEM Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 이 실습 튜토리얼을 사용하여 AEM을 통해 콘텐츠를 Headless 엔드포인트를 게재하는 옵션을 사용하는 방법을 살펴보고 자신에게 적합한 옵션을 선택합니다.

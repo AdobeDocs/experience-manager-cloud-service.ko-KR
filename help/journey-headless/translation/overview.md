@@ -2,10 +2,10 @@
 title: AEM Headless 번역 여정
 description: AEM의 강력한 번역 도구를 사용하여 Headless 콘텐츠 번역을 통한 가이드 여정을 시작해 보십시오.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '1029'
-ht-degree: 100%
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+workflow-type: tm+mt
+source-wordcount: '1045'
+ht-degree: 99%
 
 ---
 
@@ -84,4 +84,6 @@ Adobe가 AEM을 통해 AEM 관련 Headless 비즈니스 사례를 해결하는 �
 * [Headless 설계자 여정](/help/journey-headless/architect/overview.md) - 여기에서 Adobe Experience Manager as a Cloud Service의 강력하고 유연한 Headless 기능을 접해 보고 프로젝트 콘텐츠를 모델링하는 방법을 알아보십시오.
 * [AEM Headless 개발자 여정](/help/journey-headless/developer/overview.md) - 여기에서 AEM의 강력하고 유연한 Headless 기능과 각각의 능력, 그리고 사용자의 첫 개발 프로젝트에서 이들 기능을 사용하는 방법에 대한 가이드 여정을 시작해 보십시오.
 * [AEM as a Cloud Service 기술 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - AEM 및 Headless 기술에 대해 확실히 이해하고 있다면 바로 심화 기술 문서를 참조할 수 있습니다.
+   * [AEM as a Headless CMS 소개](/help/headless/introduction.md)
+* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [AEM Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 직접 해보면서 배우는 것을 선호하고 기술 관련 소양을 갖추고 있다면 API 및 프레임워크로 구성된 실습형 튜토리얼을 사용하여 AEM Headless에 구축된 애플리케이션을 만들고 사용해 보십시오.
