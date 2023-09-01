@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: bb7d8145eb954557d185b58f884532f8f08c5a54
+source-git-commit: a1686d7796bb1e310b776195bd19df98f6f10650
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 50%
+source-wordcount: '305'
+ht-degree: 41%
 
 ---
 
@@ -13,13 +13,13 @@ ht-degree: 50%
 
 다음 섹션에서는 Experience Manager as a Cloud Service 현재 유지 관리 릴리스의 기술 릴리스 정보에 대해 간략히 소개합니다.
 
-## 릴리스 13239 {#release-13239}
+## 릴리스 13323 {#release-13323}
 
-2023년 8월 29일에 릴리스된 유지 관리 릴리스 13239의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이 유지 관리 릴리스는 릴리스 정보를 13206.
+다음은 2023년 9월 1일에 공개적으로 릴리스된 유지 보수 릴리스 13323에 대한 지속적인 개선 사항을 요약합니다. 이 유지 관리 릴리스는 릴리스 정보를 13239.
 
 이 유지 관리 릴리스(2023.9.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)을 참조하십시오.
 
-### 개선 사항 {#enhancements-13239}
+### 개선 사항 {#enhancements-13323}
 
 - GRANITE-46784: BearerAuthenticationHandler를 비활성화하는 옵션 추가
 - GRANITE-36205: 내부 oak 릴리스 버전을 최신 버전으로 업데이트
@@ -31,7 +31,7 @@ ht-degree: 50%
 - GRANITE-46631: Jackrabbit 버전을 2.20.11로 업데이트
 - SKYOPS-61895: Jackrabbit Filevault 3.7.0으로 업데이트
 
-### 해결된 문제 {#fixed-issues-13239}
+### 해결된 문제 {#fixed-issues-13323}
 
 - SKYOPS-63290: 버킷의 잘못된 진화가 수정되었습니다.
 - SKYOPS-54607: 실패한 요청에 대해 Ratelimiter 서버로드 계산이 올바르지 않습니다.
@@ -41,11 +41,12 @@ ht-degree: 50%
 - GRANITE-46292: AEM Cloud 업데이트 후 Okta SAML 구성이 작동하지 않음
 - GRANITE-47059: Granite Jetty SSL 번들 제거
 
-### 알려진 문제 {#known-issues-13239}
+### 알려진 문제 {#known-issues-13323}
 
-없음.
+- SITES-15622: GraphQL - 숫자 및 부울 매개 변수가 있는 지속 쿼리 문제.
+- SITES-15654: GraphQL - 같은 이름의 결합 및 속성 관련 문제
 
-### 임베드된 기술 {#embedded-tech-13239}
+### 임베드된 기술 {#embedded-tech-13323}
 
 | 기술 | 버전 | 링크 |
 |---|---|---|
