@@ -6,10 +6,10 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 5b61b60a94b944a747232b238c3ce48195a5a212
+source-git-commit: c63f621f2526f05c8555acdac77a4c05a473c95d
 workflow-type: tm+mt
-source-wordcount: '4508'
-ht-degree: 12%
+source-wordcount: '4481'
+ht-degree: 11%
 
 ---
 
@@ -121,19 +121,18 @@ ZIP 파일을 추출하려면 다음 단계를 수행하십시오.
 
 1. To schedule a particular date/time for the activation of the asset, use the date picker beside the **[!UICONTROL On Time]** field.
 
-   ![chlimage_1-217](assets/chlimage_1-217.png)
+   ![날짜 선택기](assets/date-picker.png)
 
 1. 특정 기간 후에 에셋을 비활성화하려면 옆에 있는 날짜 선택기에서 비활성화 날짜/시간을 선택합니다. **[!UICONTROL 해제 시간]** 필드. 비활성화 날짜는 에셋의 활성화 날짜 이후여야 합니다. 다음 이후 [!UICONTROL 해제 시간], 에셋 및 해당 렌디션은 에셋 웹 인터페이스 또는 HTTP API를 통해 사용할 수 없습니다.
 
-   ![chlimage_1-218](assets/chlimage_1-218.png)
-
+   <!--![chlimage_1-218](assets/chlimage_1-218.png)
 1. 다음에서 **[!UICONTROL 태그]** 필드에서 태그를 하나 이상 선택합니다. 사용자 지정 태그를 추가하려면 상자에 태그 이름을 입력하고 `Enter` 키. 새 태그는에 저장됩니다. [!DNL Experience Manager].
 
    YouTube을 게시하려면 태그가 필요하고 YouTube에 대한 링크가 있어야 합니다(적절한 링크가 있는 경우).
 
    >[!NOTE]
    >
-   >태그를 만들려면 다음 위치에 쓰기 권한이 있어야 합니다. `/content/cq:tags/default` crx 저장소의 경로입니다.
+   > 태그를 만들려면 다음 위치에 쓰기 권한이 있어야 합니다. `/content/cq:tags/default` crx 저장소의 경로입니다.
 
 1. 탭/클릭 **[!UICONTROL 저장 및 닫기]**.
 
@@ -181,7 +180,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 1. 다음을 클릭합니다. **[!UICONTROL 붙여넣기]** 도구 모음의 에셋 아이콘 자산이 이 위치에 복사됩니다.
 
-   ![chlimage_1-219](assets/chlimage_1-219.png)
+   <!--![chlimage_1-219](assets/chlimage_1-219.png)-->
 
    >[!NOTE]
    >
@@ -229,7 +228,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 1. 에셋을 탭/클릭하여 에셋 페이지를 엽니다.
 
-   ![chlimage_1-220](assets/chlimage_1-220.png)
+   <!--![chlimage_1-220](assets/chlimage_1-220.png)-->
 
 1. GlobalNav 아이콘을 탭/클릭한 다음 **[!UICONTROL 표현물]** 목록에서 삭제할 수 있습니다.
 
@@ -255,7 +254,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    Navigate to the asset details page for the asset, and tap/click the **[!UICONTROL Add Rendition]** icon in the toolbar to upload a new rendition for the asset.
 
-   ![chlimage_1-221](assets/chlimage_1-221.png)
+   <!--![chlimage_1-221](assets/chlimage_1-221.png)-->
 
    >[!NOTE]
    >
@@ -267,7 +266,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    마찬가지로 오버레이하여 주석 페이지 이미지를 사용자 정의할 수 있습니다 `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
-   ![chlimage_1-222](assets/chlimage_1-222.png)
+   <!--![chlimage_1-222](assets/chlimage_1-222.png)-->
 
    비디오 에셋에 대한 렌디션 차원을 구성하려면 다음 위치로 이동합니다. `videopicker` 위치에 있는 CRX 저장소의 노드 `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`를 클릭하고 노드를 오버레이한 다음 적절한 속성을 편집합니다.
 
@@ -451,11 +450,11 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
    * [빠른 작업](#quick-actions)
    * 에셋을 선택하거나 에셋 페이지로 이동한 후 도구 모음에서
 
-   ![chlimage_1-233](assets/chlimage_1-233.png)
+   <!--![chlimage_1-233](assets/chlimage_1-233.png)-->
 
 1. Add a comment in the **[!UICONTROL Comment]** box at the bottom of the timeline. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog.
 
-   ![chlimage_1-234](assets/chlimage_1-234.png)
+<!-- ![chlimage_1-234](assets/chlimage_1-234.png)-->
 
 <!--
 1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
@@ -465,11 +464,11 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 >
 >관리자가 아닌 사용자의 경우 다음에 대한 읽기 권한이 있는 경우에만 제안이 표시됩니다. `/home` CRXDE.
 
-![chlimage_1-235](assets/chlimage_1-235.png)
+<!--![chlimage_1-235](assets/chlimage_1-235.png)-->
 
 1. 주석을 추가한 후 **[!UICONTROL 추가]** 저장하려고. 주석에 대한 알림이 Aaron에게 전송됩니다.
 
-   ![chlimage_1-236](assets/chlimage_1-236.png)
+   <!--![chlimage_1-236](assets/chlimage_1-236.png)-->
 
    >[!NOTE]
    >
@@ -484,11 +483,11 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 1. 사용자를 구분할 수 있도록 다른 색상을 선택하려면 프로필 아이콘을 클릭/탭한 다음 클릭/탭합니다 **[!UICONTROL 내 환경 설정]**.
 
-   ![chlimage_1-237](assets/chlimage_1-237.png)
+   <!--![chlimage_1-237](assets/chlimage_1-237.png)-->
 
    Specify the desired color in the **[!UICONTROL Annotation Color]** box and then click/tap **[!UICONTROL Accept]**.
 
-   ![chlimage_1-238](assets/chlimage_1-238.png)
+<!-- ![chlimage_1-238](assets/chlimage_1-238.png)-->
 
 >[!NOTE]
 >
@@ -508,15 +507,15 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 1. GlobalNav 아이콘을 탭/클릭하고 **[!UICONTROL 타임라인]** 목록에서 삭제할 수 있습니다.
 
-   ![chlimage_1-239](assets/chlimage_1-239.png)
+   <!--![chlimage_1-239](assets/chlimage_1-239.png)-->
 
 1. From the **[!UICONTROL Show All]** list in the timeline, select **[!UICONTROL Comments]** to filter the results based on annotations.
 
-   ![chlimage_1-240](assets/chlimage_1-240.png)
+   <!--![chlimage_1-240](assets/chlimage_1-240.png)-->
 
    에서 주석 탭/클릭 **[!UICONTROL 타임라인]** 패널에서 이미지에 있는 해당 주석을 볼 수 있습니다.
 
-   ![chlimage_1-241](assets/chlimage_1-241.png)
+   <!--![chlimage_1-241](assets/chlimage_1-241.png)-->
 
    탭/클릭 **[!UICONTROL 삭제]**&#x200B;을 클릭하여 특정 주석을 삭제합니다.
 
@@ -540,29 +539,29 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 1. 특정 주석을 인쇄하려면 타임라인에서 주석을 선택합니다.
 
-   ![chlimage_1-242](assets/chlimage_1-242.png)
+   <!--![chlimage_1-242](assets/chlimage_1-242.png)-->
 
    검토 상태만 인쇄하려면 타임라인에서 선택합니다.
 
-   ![chlimage_1-243](assets/chlimage_1-243.png)
+   <!--![chlimage_1-243](assets/chlimage_1-243.png)-->
 
 1. 탭/클릭 **[!UICONTROL 인쇄]** 아이콘을 클릭합니다.
 
-   ![chlimage_1-244](assets/chlimage_1-244.png)
+   <!--![chlimage_1-244](assets/chlimage_1-244.png)-->
 
 1. 인쇄 대화 상자에서 주석/검토 상태를 PDF에 표시할 위치를 선택합니다. 예를 들어 인쇄된 이미지가 포함된 페이지의 오른쪽 상단에 주석/상태를 인쇄하려면 **왼쪽 위** 설정. 기본적으로 선택되어 있습니다.
 
-   ![chlimage_1-245](assets/chlimage_1-245.png)
+   <!--![chlimage_1-245](assets/chlimage_1-245.png)-->
 
    You can choose other settings depending on the position where you want the annotations/status to appear in the printed PDF. If you want the annotations/status to appear in a page that is separate from the printed asset, choose **[!UICONTROL Next Page]**.
 
 1. 클릭 **[!UICONTROL 인쇄]**. Depending upon the option you choose in step 2, the generated PDF displays the annotations/status at the specified position. For example, if you choose to print both annotations and the review status using the **Top-Left** setting, the generated output resembles the PDF file depicted here.
 
-   ![chlimage_1-246](assets/chlimage_1-246.png)
+   <!--![chlimage_1-246](assets/chlimage_1-246.png)-->
 
 1. 오른쪽 상단의 옵션을 사용하여 PDF을 다운로드하거나 인쇄합니다.
 
-   ![chlimage_1-247](assets/chlimage_1-247.png)
+   <!--![chlimage_1-247](assets/chlimage_1-247.png)-->
 
    렌더링된 PDF 파일의 모양(예: 주석 및 상태의 글꼴 색상, 크기 및 스타일, 배경색)을 수정하려면 **[!UICONTROL 주석 PDF 구성]** 을 누르고 원하는 옵션을 수정합니다. 예를 들어 승인됨 상태의 표시 색상을 변경하려면 해당 필드의 색상 코드를 수정합니다. 주석의 글꼴 색상 변경에 대한 자세한 내용은 [주석 달기](/help/assets/manage-digital-assets.md#annotating).
 
@@ -594,15 +593,15 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 1. 탭/클릭 **[!UICONTROL 작업]** (화살표) 아이콘을 클릭하면 에셋에서 수행할 수 있는 작업을 확인할 수 있습니다.
 
-   ![chlimage_1-249](assets/chlimage_1-249.png)
+   <!--![chlimage_1-249](assets/chlimage_1-249.png)-->
 
 1. 탭/클릭 **[!UICONTROL 다른 버전으로 저장]** 에셋의 버전을 생성하려면 다음을 수행하십시오.
 
-   ![chlimage_1-250](assets/chlimage_1-250.png)
+<!--![chlimage_1-250](assets/chlimage_1-250.png)-->
 
 1. 레이블과 댓글을 추가한 다음 **[!UICONTROL 만들기]** 을 클릭하여 버전을 만듭니다. 또는 을 탭/클릭합니다 **취소** 을 눌러 작업을 종료합니다.
 
-   ![chlimage_1-251](assets/chlimage_1-251.png)
+   <!--![chlimage_1-251](assets/chlimage_1-251.png)-->
 
 1. To view the new version, open the **[!UICONTROL Show All]** list in the timeline from the asset details page or the Assets UI, and choose **[!UICONTROL Versions]**. All versions created for an asset are listed under the timeline tab. You can filter the list to show Versions, by clicking the drop arrow and selecting **[!UICONTROL Versions]** from the list.
 
@@ -635,23 +634,23 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 1. 탭/클릭 **[!UICONTROL 작업]** (화살표) 아래에 있는 아이콘을 클릭하여 자산에 사용할 수 있는 작업 목록을 엽니다.
 
-   ![chlimage_1-252](assets/chlimage_1-252.png)
+   <!--![chlimage_1-252](assets/chlimage_1-252.png)-->
 
 1. 탭/클릭 **[!UICONTROL 워크플로우 시작]** 목록에서 삭제할 수 있습니다.
 
-   ![chlimage_1-253](assets/chlimage_1-253.png)
+   <!--![chlimage_1-253](assets/chlimage_1-253.png)-->
 
 1. 다음에서 **[!UICONTROL 워크플로우 시작]** 대화 상자에서 목록에서 워크플로 모델을 선택합니다.
 
-   ![chlimage_1-254](assets/chlimage_1-254.png)
+   <!--![chlimage_1-254](assets/chlimage_1-254.png)-->
 
 1. (선택 사항) 워크플로 인스턴스를 참조하는 데 사용할 수 있는 워크플로의 제목을 지정합니다.
 
-   ![chlimage_1-255](assets/chlimage_1-255.png)
+   <!--![chlimage_1-255](assets/chlimage_1-255.png)-->
 
 1. Tap/click **[!UICONTROL Start]** and then tap/click **[!UICONTROL Proceed]** in the dialog to confirm. Each step of workflow is displayed in the timeline as an event.
 
-   ![chlimage_1-256](assets/chlimage_1-256.png)
+   <!--![chlimage_1-256](assets/chlimage_1-256.png)-->
 
 ## 컬렉션 {#collections}
 
