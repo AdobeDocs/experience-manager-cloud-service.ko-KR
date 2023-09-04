@@ -1,16 +1,20 @@
 ---
 title: 자산 보기를 사용하여 자산 일괄 가져오기
 description: 새로운 에셋 UI(에셋 보기)를 사용하여 에셋을 일괄 가져오는 방법을 알아봅니다. 관리자는 데이터 소스에서 AEM Assets으로 많은 수의 에셋을 가져올 수 있습니다.
-source-git-commit: 49d1e002f22427d8ffc6c5bdecd054c10eac47b9
+source-git-commit: 5cc522db4bd86514c1093a0d6fee481f6604fc26
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 3%
+source-wordcount: '1177'
+ht-degree: 2%
 
 ---
 
 # 자산 보기를 사용하여 자산 일괄 가져오기  {#bulk-import-assets-view}
 
 AEM Assets 보기에서 일괄 가져오기를 사용하면 관리자는 데이터 소스에서 AEM Assets으로 많은 수의 에셋을 가져올 수 있습니다. 관리자는 더 이상 AEM Assets에 개별 에셋 또는 폴더를 업로드할 필요가 없습니다.
+
+>[!NOTE]
+>
+>자산 보기 벌크 임포터는 관리 보기 벌크 임포터와 동일한 백엔드를 사용합니다. 하지만 가져올 데이터 소스가 더 많고 사용자 경험이 더 간소화됩니다.
 
 다음 데이터 소스에서 에셋을 가져올 수 있습니다.
 
@@ -58,6 +62,14 @@ AEM Assets 보기에서 일괄 가져오기를 사용하면 관리자는 데이�
    ![일괄 가져오기 실행](assets/bulk-import-run.png)
 
 1. 클릭 **[!UICONTROL 저장]** 을 눌러 선택한 옵션을 실행합니다.
+
+### 일괄 가져오기 중 파일 이름 처리 {#filename-handling-bulkimport-assets-view}
+
+에셋 또는 폴더를 일괄적으로 가져올 때 [!DNL Experience Manager Assets] 는 가져오기 소스에 존재하는 것의 전체 구조를 가져옵니다. [!DNL Experience Manager] 에셋 및 폴더 이름에서 특수 문자에 대한 내장 규칙을 따르므로 이러한 파일 이름은 삭제해야 합니다. 폴더 이름과 자산 이름 모두에서 사용자가 정의한 제목은 변경되지 않은 상태로 유지되며에 저장됩니다 `jcr:title`.
+
+일괄 가져오기 중, [!DNL Experience Manager] 에셋 및 폴더를 다시 가져오지 않도록 기존 폴더를 찾고, 가져오기가 발생하는 상위 폴더에 적용된 정리 규칙을 확인합니다. 정리 규칙이 상위 폴더에 적용되는 경우 동일한 규칙이 가져오기 소스에 적용됩니다. 새 가져오기의 경우 다음 정리 규칙이 자산 및 폴더의 파일 이름을 관리하는 데 적용됩니다.
+
+허용되지 않는 이름, 자산 이름 처리 및 일괄 가져오기 중 폴더 이름 처리에 대한 자세한 내용은 [관리자 보기에서 일괄 가져오는 동안 파일 이름 처리](add-assets.md##filename-handling-bulkimport).
 
 ## 기존 대량 가져오기 구성 보기 {#view-import-configuration}
 
