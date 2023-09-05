@@ -3,7 +3,7 @@ title: 페이지 편집을 위한 키보드 단축키
 description: 페이지 편집을 위한 일부를 포함하여 AEM 전체에서 사용할 수 있는 다양한 키보드 단축키
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
 source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '237'
 ht-degree: 100%
 
