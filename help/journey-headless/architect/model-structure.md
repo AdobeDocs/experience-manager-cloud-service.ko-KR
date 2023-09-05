@@ -3,7 +3,7 @@ title: AEM에서의 콘텐츠 조각 모델 만들기에 대해 알아보기
 description: 콘텐츠 조각 모델을 사용하여 Headless CMS용 콘텐츠를 모델링하는 개념 및 메커니즘에 대해 알아봅니다.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '687'
 ht-degree: 100%
 
