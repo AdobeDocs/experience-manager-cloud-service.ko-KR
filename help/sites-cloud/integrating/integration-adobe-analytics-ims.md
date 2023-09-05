@@ -3,9 +3,9 @@ title: Adobe Analytics와 통합할 때 사용되는 IMS 구성
 description: Adobe Analytics와 통합할 때 사용되는 IMS 구성 알아보기
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
 source-git-commit: d59559d38eef182723a8791c6614d03930f64a85
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '914'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Analytics Standard API를 통해 Adobe Experience Manager as a Cloud Service(AEM
 
 이 절차를 시작하기 전에:
 
-* [Adobe 지원 팀](https://helpx.adobe.com/contact/enterprise-support.ec.html)은 다음에 대한 계정을 프로비저닝해야 합니다.
+* [Adobe 지원 팀](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html)은 다음에 대한 계정을 프로비저닝해야 합니다.
 
    * Adobe Console
    * Adobe Developer Console
@@ -35,7 +35,7 @@ Analytics Standard API를 통해 Adobe Experience Manager as a Cloud Service(AEM
 * 귀사의 시스템 관리자는 Admin Console을 사용하여 필요한 개발자를 관련 제품 프로필에 추가해야 합니다.
 
    * 이렇게 하면 관련 개발자에게 Adobe Developer Console을 사용하여 통합을 활성화할 수 있는 권한이 제공됩니다.
-   * 자세한 내용은 [개발자 관리](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)를 참조하십시오.
+   * 자세한 내용은 [개발자 관리](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)를 참조하십시오.
 
 
 ## IMS 구성 - 공개 키 생성 {#configuring-ims-generating-a-public-key}
@@ -69,9 +69,9 @@ Adobe Developer Console을 열고 AEM이 사용할 Adobe Analytics를 사용하�
 
 >[!CAUTION]
 >
->현재는 Adobe Developer 콘솔만 지원합니다. **서비스 계정(JWT)** 자격 증명 유형.
+>현재로서는 Adobe Developer Console의 **서비스 계정(JWT)** 자격 증명 유형만 지원됩니다.
 >
->를 사용하지 마십시오. **OAuth 서버 간** 나중에 지원되는 자격 증명 유형입니다.
+>**OAuth 서버 간** 자격 증명 유형은 향후 지원될 예정이니 사용하지 마십시오.
 
 1. 프로젝트용 Adobe Developer Console을 엽니다.
 
