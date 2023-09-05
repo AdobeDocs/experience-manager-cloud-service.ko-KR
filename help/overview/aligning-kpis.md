@@ -1,11 +1,11 @@
 ---
 title: KPI 정렬
-description: AEM 구현에 적합한 KPI를 선택하는 방법에 대해 알아봅니다
+description: AEM 구현에 적합한 KPI를 선택하는 방법에 대해 알아보기
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
 source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '496'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
