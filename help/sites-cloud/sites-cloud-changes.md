@@ -1,11 +1,11 @@
 ---
 title: AEM Cloud Service의 AEM Sites에 대한 주요 변경 내용
-description: AEM Cloud Service에서 AEM Sites의 주목할 만한 변경 사항에 대해 자세히 알아봅니다.
+description: AEM Cloud Service의 AEM Sites에 대한 주요 변경 내용에 대해 자세히 알아보기
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '537'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
