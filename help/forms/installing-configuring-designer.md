@@ -1,7 +1,7 @@
 ---
 title: Forms Designer 다운로드 및 설치
 description: Forms Designer를 사용하여 기록 문서의 템플릿 역할을 하는 XDP 및 PDF 양식 템플릿을 만들 수 있습니다. 디자이너는 [!DNL AEM Forms] 라이센스.
-source-git-commit: a22c21ba05e72c1bf18c56df72b7e3c7c62edc0c
+source-git-commit: 325769d4a3b93502b0c6857e20911b05df34a24a
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 1%
@@ -53,7 +53,6 @@ ht-degree: 1%
 Designer를 설치하려면 다음 단계를 수행하십시오.
 
 1. 에서 Designer 다운로드 [소프트웨어 배포](https://experience.adobe.com/downloads).
-
 1. setup.exe 를 두 번 클릭하여 설치 관리자를 실행합니다.
 1. 계속 진행하여 개인화 화면에 세부 정보를 제공합니다.
 1. 사용권 계약에 동의하면 **[!UICONTROL 다음]** 계속합니다.
