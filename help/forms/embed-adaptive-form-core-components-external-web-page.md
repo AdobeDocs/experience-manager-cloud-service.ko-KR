@@ -4,10 +4,10 @@ description: 외부 웹 페이지에 적응형 양식을 임베드하는 방법 
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
-source-git-commit: 876a861d3bc4ec3f685c6cc41a3a7e747ab214a5
+source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '994'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,8 @@ ht-degree: 0%
 | AEM as a Cloud Service | 이 문서 |
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html) |
 
-다음을 수행할 수 있습니다. [AEM Sites 페이지에 적응형 양식 포함](/help/forms/embed-adaptive-form-core-components-aem-sites.md) 또는 AEM 외부에서 호스팅되는 웹 페이지입니다. 임베드된 적응형 양식은 완전히 기능할 수 있으며, 사용자는 페이지를 종료하지 않고도 양식을 작성하고 제출할 수 있습니다. 이렇게 하면 사용자가 웹 페이지의 다른 요소 컨텍스트에 남아 있으면서 양식과 동시에 상호 작용할 수 있습니다.
+
+다음을 수행할 수 있습니다. [AEM Sites 페이지에 적응형 양식 포함](/help/forms/embed-adaptive-form-aem-sites.md) 또는 AEM 외부에서 호스팅되는 웹 페이지입니다. 임베드된 적응형 양식은 완전히 기능할 수 있으며, 사용자는 페이지를 종료하지 않고도 양식을 작성하고 제출할 수 있습니다. 이렇게 하면 사용자가 웹 페이지의 다른 요소 컨텍스트에 남아 있으면서 양식과 동시에 상호 작용할 수 있습니다.
 
 ## 사전 요구 사항 {#prerequisites}
 

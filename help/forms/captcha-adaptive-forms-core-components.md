@@ -5,16 +5,23 @@ topic-tags: Adaptive Forms, author
 hide: true
 hidefromtoc: true
 Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 1%
+source-wordcount: '947'
+ht-degree: 13%
 
 ---
 
-# AEM 적응형 양식에서 Google reCAPTCHA 사용 {#using-reCAPTCHA-in-adaptive-forms}
+# 핵심 구성 요소를 기반으로 하는 AEM 적응형 양식에서 Google reCAPTCHA 사용 {#using-reCAPTCHA-in-adaptive-forms}
 
-CAPTCHA(Complete Automated Public Turning test to tell Computers and Humans Apart)는 온라인 거래에서 일반적으로 사용되는 프로그램으로 인간과 자동화된 프로그램 또는 봇을 구별합니다. 문제를 제기하고 사용자 응답을 평가하여 사이트와 상호 작용하는 사람인지 보트인지를 확인합니다. 테스트 실패 시 사용자가 진행할 수 없도록 하고 봇이 스팸이나 악의적인 목적을 게시하지 않도록 해 온라인 거래를 안전하게 만드는 데 도움을 준다.
+<span class="preview"> 프리릴리스 기능이며 를 통해 액세스할 수 있습니다. [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+| 적용 대상 | 문서 링크 |
+| -------- | ---------------------------- |
+| 핵심 구성 요소를 기반으로 하는 적응형 양식 | 이 문서 |
+| 기초 구성 요소를 기반으로 하는 적응형 양식 | [여기 클릭](/help/forms/captcha-adaptive-forms.md) |
+
+CAPTCHA(컴퓨터와 인간을 구분하기 위해 완전히 자동화된 공공 튜링 테스트)는 인간과 자동화된 프로그램 또는 봇을 구별하기 위해 온라인 거래에서 일반적으로 사용되는 프로그램입니다. 문제를 제기하고 사용자 응답을 평가하여 사이트와 상호 작용하는 것이 인간인지 봇인지 판단합니다. 테스트가 실패할 경우 사용자가 진행하지 못하도록 차단하고 봇이 스팸을 게시하거나 악의적인 목적으로 상호 작용하는 것을 방지하여 온라인 거래를 안전하게 할 수 있도록 도와줍니다.
 
 [!DNL AEM Forms] as a [!DNL Cloud Service] 는 적응형 Forms에서 Google reCAPTCHA v2를 지원합니다. 양식 제출에 CAPTCHA 문제를 제시하는 데 사용할 수 있습니다. 적응형 양식에서 reCAPTCHA를 사용하려면 다음을 수행하십시오.
 
@@ -106,3 +113,9 @@ Tap the **[!UICONTROL Currency Value]** field in the form and create the followi
 **Q: 적응형 양식에 Captcha 구성 요소를 두 개 이상 사용할 수 있습니까?**
 **Ans:** 적응형 양식에서 Captcha 구성 요소를 두 개 이상 사용하는 것은 지원되지 않습니다. 또한 지연 로드로 표시된 조각 또는 패널에서는 Captcha 구성 요소를 사용하지 않는 것이 좋습니다.
 
+## 참고 항목
+
+* [적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md)
+* [적응형 양식 단편 만들기](/help/forms/adaptive-form-fragments-core-components.md)
+* [AEM Sites 페이지 또는 경험 조각에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [적응형 양식에서 Google reCAPTCHA 사용](/help/forms/captcha-adaptive-forms-core-components.md)
