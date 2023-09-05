@@ -1,11 +1,11 @@
 ---
 title: 콘텐츠 게재 플로우 개요
-description: 콘텐츠 게재 데이터 흐름 및 콘텐츠 게시 방법에 대해 자세히 알아보기
+description: 콘텐츠 게재 데이터 흐름과 콘텐츠 게시 방법에 대해 자세히 알아보기
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '217'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
