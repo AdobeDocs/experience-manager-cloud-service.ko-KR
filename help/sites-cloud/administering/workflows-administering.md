@@ -1,12 +1,12 @@
 ---
 title: 워크플로 인스턴스 관리
-description: 워크플로 인스턴스 관리 방법 알아보기 워크플로우 콘솔 사용
+description: 워크플로 인스턴스 관리 방법 알아보기 워크플로 콘솔 사용
 feature: Administering
 role: Admin
 source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1288'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 99%
 
    >[!NOTE]
    >
-   > 정상적인 워크플로 인스턴스를 유지 관리하려면 [정기적인 워크플로 인스턴스 제거](#regular-purging-of-workflow-instances)의 모범 사례 또는 [워크플로 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=en)를 따라야 합니다.
+   > 정상적인 워크플로 인스턴스를 유지 관리하려면 [정기적인 워크플로 인스턴스 제거](#regular-purging-of-workflow-instances)의 모범 사례 또는 [워크플로 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=ko)를 따라야 합니다.
 
 ## 워크플로 인스턴스 검색 {#search-workflow-instances}
 
@@ -178,7 +178,7 @@ ht-degree: 99%
 
 ## 받은 편지함의 최대 크기 설정 {#setting-the-maximum-size-of-the-inbox}
 
-**Adobe Grantine 워크플로 서비스**&#x200B;를 구성하여 받은 편지함의 최대 크기를 설정할 수 있습니다. [저장소에 OSGi 구성 추가](/help/implementing/deploying/configuring-osgi.md)를 참조하십시오. 다음 표는 구성할 속성을 설명합니다.
+**Adobe Granite 워크플로 서비스**&#x200B;를 구성하여 받은 편지함의 최대 크기를 설정할 수 있습니다. [저장소에 OSGi 구성 추가](/help/implementing/deploying/configuring-osgi.md)를 참조하십시오. 다음 표는 구성할 속성을 설명합니다.
 
 >[!NOTE]
 >저장소에 구성을 추가하는 경우 서비스 PID는 다음과 같습니다.
