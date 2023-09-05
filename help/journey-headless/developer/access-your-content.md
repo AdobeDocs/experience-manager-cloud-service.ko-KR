@@ -3,9 +3,9 @@ title: AEM 게재 API를 통해 콘텐츠에 액세스하는 방법
 description: 이 AEM Headless 개발자 여정의 부분에서는 GraphQL 쿼리를 통해 콘텐츠 조각의 콘텐츠에 액세스하는 방법을 대해 알아봅니다.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 source-git-commit: f58581f6f81e60edafd79dd1d305bd479b65eed5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1366'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
