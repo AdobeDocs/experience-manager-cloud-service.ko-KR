@@ -2,7 +2,7 @@
 title: 트래픽 필터링을 위한 CDN 및 WAF 규칙 구성
 description: CDN 및 웹 애플리케이션 방화벽 규칙을 사용하여 악성 트래픽 필터링
 source-git-commit: 27165ce7d6259f5b5fc9915349d87f551076389e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2391'
 ht-degree: 100%
 

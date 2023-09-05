@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 288f871b75e68fdbca1244099e490408ea66ff40
 workflow-type: tm+mt
 source-wordcount: '316'
-ht-degree: 40%
+ht-degree: 46%
 
 ---
 
@@ -44,8 +44,8 @@ ht-degree: 40%
 
 ### 알려진 문제 {#known-issues-13323}
 
-- SITES-15622: GraphQL - 숫자 및 부울 매개 변수가 있는 지속 쿼리 문제.
-- SITES-15654: GraphQL - 같은 이름의 결합 및 속성 관련 문제
+- SITES-15622: GraphQL - 숫자 및 부울 매개변수가 포함된 지속 쿼리에 문제가 있습니다.
+- SITES-15654: GraphQL - 동일한 이름의 결합 및 속성에 문제가 있습니다.
 
 ### 임베드된 기술 {#embedded-tech-13323}
 
