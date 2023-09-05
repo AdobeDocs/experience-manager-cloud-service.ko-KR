@@ -1,14 +1,14 @@
 ---
 title: Assets as a [!DNL Cloud Service] 소개
-description: Experience Manager Assets as a의 새로운 기능과 이점을 알아보십시오. [!DNL Cloud Service]. 비즈니스를 위한 클라우드 기반의 PaaS 솔루션입니다.
+description: Experience Manager Assets as a [!DNL Cloud Service]의 새로운 기능과 이점에 대해 알아봅니다. 기업을 위한 클라우드 기반 PaaS 솔루션입니다.
 contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '752'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
