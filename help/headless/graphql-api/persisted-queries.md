@@ -4,7 +4,7 @@ description: 성능을 최적화하기 위해 Adobe Experience Manager as a Clou
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1680'
 ht-degree: 100%
 
