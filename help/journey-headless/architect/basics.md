@@ -3,7 +3,7 @@ title: 콘텐츠 모델링 기본 사항 알아보기
 description: 콘텐츠 조각을 사용하여 Headless CMS용 콘텐츠 모델링 기본 사항을 알아봅니다.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '903'
 ht-degree: 100%
 
