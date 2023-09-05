@@ -8,10 +8,10 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: bb15e840071279dbdf8bd2bfe89d59c067898aca
+source-git-commit: 876a861d3bc4ec3f685c6cc41a3a7e747ab214a5
 workflow-type: tm+mt
-source-wordcount: '4258'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -570,6 +570,7 @@ ht-degree: 97%
          + [Adobe Analytics와 AEM Forms as a Cloud Service 통합](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [Microsoft Power Automate와 적응형 양식 통합](/help/forms/forms-microsoft-power-automate-integration.md)
          + [AEM Sites 페이지에 적응형 양식 임베드](/help/forms/embed-adaptive-form-aem-sites.md)
+         + [핵심 구성 요소를 기반으로 하는 적응형 양식을 외부 웹 페이지에 임베드](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
       + 양식 데이터 모델 {#use-form-data-model}
          + [데이터 소스를 Cloud Service에 연결](/help/forms/data-integration.md)
          + [데이터 소스 구성](/help/forms/configure-data-sources.md)
@@ -583,7 +584,7 @@ ht-degree: 97%
    + 적응형 양식 {#adaptive-forms-authoring}
       + [적응형 양식 만들기](/help/forms/create-an-adaptive-form.md)
       + [AEM Sites 페이지 또는 경험 조각에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-      + 적응형 양식 작성 - 핵심 구성 요소 {#authoring-adaptive-forms-core-components}
+      + 코어 구성 요소 {#authoring-adaptive-forms-core-components}
          + 적응형 양식 만들기 {#create-an-adaptive-form-on-forms-cs}
             + [적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md)
             + [적응형 양식 단편 만들기](/help/forms/adaptive-form-fragments-core-components.md)
@@ -596,7 +597,7 @@ ht-degree: 97%
             + [적응형 양식에 대한 제출 액션 구성](/help/forms/configure-submit-actions-core-components.md)
             + [적응형 양식에서 Google reCAPTCHA 사용](/help/forms/captcha-adaptive-forms-core-components.md)
             + [적응형 양식에 사용자 지정 오류 처리기 추가](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
-      + 적응형 양식 작성 - 기초 구성 요소 {#authoring-adaptive-forms-foundation-components}
+      + 기초 구성 요소 {#authoring-adaptive-forms-foundation-components}
          + PDF 양식을 적응형 양식으로 변환 {#afcs}
             + [자동 양식 전환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
             + [기존 PDF 양식을 적응형 양식으로 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
@@ -772,7 +773,7 @@ ht-degree: 97%
       + [레퍼러 필터](/help/headless/deployment/referrer-filter.md)
    + Headless 여정 {#journeys}
       + Headless 개발자 여정 {#developer}
-         + [AEM Headless 이해](/help/journey-headless/developer/overview.md)
+         + [AEM의 Headless 이해](/help/journey-headless/developer/overview.md)
          + [CMS Headless 개발에 대해 알아보기](/help/journey-headless/developer/learn-about.md)
          + [AEM Headless as a Cloud Service 시작하기](/help/journey-headless/developer/getting-started.md)
          + [AEM Headless를 사용한 첫 번째 경험으로의 경로](/help/journey-headless/developer/path-to-first-experience.md)
