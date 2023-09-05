@@ -4,9 +4,9 @@ description: AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud 
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: f58581f6f81e60edafd79dd1d305bd479b65eed5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4922'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -117,7 +117,7 @@ POST 요청을 사용하는 GraphQL 쿼리는 캐시되지 않으므로 권장�
 
 GraphQL은 GET 요청도 지원하지만 이러한 요청은 지속 쿼리를 사용하면 피할 수 있는 제한(예: URL 길이)에 도달할 수 있습니다.
 
-다음을 참조하십시오 [지속 쿼리 캐싱 활성화](/help/headless/deployment/dispatcher-caching.md) 을 참조하십시오.
+자세한 내용은 [지속 쿼리 캐싱 활성화](/help/headless/deployment/dispatcher-caching.md)를 참조하십시오.
 
 >[!NOTE]
 >
