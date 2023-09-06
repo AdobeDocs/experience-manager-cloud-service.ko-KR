@@ -8,10 +8,10 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 876a861d3bc4ec3f685c6cc41a3a7e747ab214a5
+source-git-commit: 71e9325997dcb32e27758d23177670cc70381537
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '4260'
+ht-degree: 97%
 
 ---
 
@@ -516,6 +516,7 @@ ht-degree: 0%
       + [페이지에 Dynamic Media 자산 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
       + [웹 페이지에 Dynamic Video 또는 Dynamic Image 뷰어 임베드](/help/assets/dynamic-media/embed-code.md)
       + [웹 애플리케이션에 URL 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
+      + [실패한 게재 URL에 대한 요청 오류 보고서](/help/assets/dynamic-media/reporting-dm.md)
       + [규칙 세트를 사용하여 URL 변환](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
       + [Dynamic Media 자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
       + [Dynamic Media의 선택적 게시를 사용하여 작업](/help/assets/dynamic-media/selective-publishing.md)
@@ -590,7 +591,6 @@ ht-degree: 0%
             + [적응형 양식 단편 만들기](/help/forms/adaptive-form-fragments-core-components.md)
             + [적응형 양식의 테마 만들기 - 핵심 구성 요소](/help/forms/using-themes-in-core-components.md)
             + [적응형 양식의 기록 문서 생성](/help/forms/generate-document-of-record-core-components.md)
-            + [AEM Sites 페이지에 적응형 양식 - 핵심 구성 요소 생성](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [기계 번역 또는 인간 번역을 사용하여 적응형 양식 번역](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [리디렉션 페이지 또는 감사 메시지 구성](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [반복 가능한 섹션으로 양식 만들기](/help/forms/create-forms-repeatable-sections.md)

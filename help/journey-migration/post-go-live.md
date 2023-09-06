@@ -2,10 +2,10 @@
 title: Go-Live 후
 description: 문제 모니터링 및 성능 향상 방법 알아보기
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
-source-git-commit: 3784569086a786c6c25c0e3d6d0bb0ddbdd37e4b
+source-git-commit: 1b9d49ce1ef8ad4b0a11400b41d8c9b880cbf884
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 22%
+source-wordcount: '483'
+ht-degree: 28%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 22%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html" text="로그 액세스 및 관리"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 개발 도구"
 
-이 여정은 마지막 부분이므로 마이그레이션이 완료되면 문제를 모니터링하고 성능을 향상시키는 방법에 대해 알아봅니다. 임시 파일을 정리하고, 지속적인 개발을 위한 우수 사례를 검토하고, 로그를 관리해야 합니다.
+이 여정은 마지막 부분이므로 마이그레이션이 완료된 후 문제를 모니터링하고 성능을 향상시키는 방법에 대해 알아봅니다. 임시 파일을 정리하고, 지속적인 개발을 위한 우수 사례를 검토하고, 로그를 관리해야 합니다.
 
 ## 지금까지의 스토리 {#story-so-far}
 
@@ -51,7 +51,7 @@ AEM as a Cloud Service 개발자 환경 디버깅은 개발자 콘솔에서 개�
 
 사용자는 선택한 환경에 사용할 수 있는 로그 파일 목록에 액세스할 수 있습니다.
 
-다음을 참조하십시오 [로그 액세스 및 관리](/help/implementing/cloud-manager/manage-logs.md) ui를 통해 또는 Cloud Manager를 통해 API에서 로그에 액세스하고 관리하는 방법을 알아봅니다.
+다음을 참조하십시오 [로그 액세스 및 관리](/help/implementing/cloud-manager/manage-logs.md) 사용자 인터페이스를 통해 또는 Cloud Manager를 통해 API에서 로그에 액세스하고 관리하는 방법을 알아봅니다.
 
 ## 지원 문의 {#contacting-support}
 
@@ -59,9 +59,9 @@ AEM as a Cloud Service 개발자 환경 디버깅은 개발자 콘솔에서 개�
 >id="aemcloud_golive_support"
 >title="도움말 및 지원"
 >abstract="자세한 설명이 필요하거나 문제를 해결하려면 Adobe의 AEM 지원 팀에 문의하십시오."
->additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud 지원"
+>additional-url="https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud 지원"
 
-Cloud Service 액세스에 대한 질문이 있는 경우 Adobe 담당자에게 문의하거나 [Experience Cloud 지원](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) 을 참조하십시오.
+Cloud Service 액세스에 대한 질문이 있는 경우 Adobe 담당자에게 문의하거나 [Experience Cloud 지원](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html) 을 참조하십시오.
 
 ## 문서 학습 {#document-learnings}
 
