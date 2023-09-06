@@ -2,9 +2,9 @@
 title: SPA 및 서버측 렌더링
 description: SPA에서 서버측 렌더링(SSR)을 사용하면 페이지의 초기 로드를 가속화한 다음 추가적인 렌더링을 클라이언트에 전달할 수 있습니다.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: 66c9e95f96c8ce181722488a34a175c80f6f917c
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1518'
 ht-degree: 0%
 
 ---
@@ -48,6 +48,10 @@ Adobe I/O Runtime에 대한 자세한 내용은 다음을 참조하십시오.
 >Adobe은 환경(단계, 프로덕션, 테스트 등)별로 별도의 Adobe I/O Runtime 작업공간을 권장합니다. 이렇게 하면 서로 다른 환경에 배포된 단일 애플리케이션의 서로 다른 버전을 사용하는 일반적인 SDLC(시스템 개발 수명 주기) 패턴을 사용할 수 있습니다. 다음을 참조하십시오 [App Builder 애플리케이션용 CI/CD](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) 추가 정보.
 >
 >인스턴스 유형별 런타임 구현에 차이가 없는 한 인스턴스(작성자, 게시)별로 별도의 작업 영역이 필요하지 않습니다.
+
+>[!NOTE]
+>
+>Cloud Manager는 Adobe I/O Runtime에 대한 배포를 지원하지 않습니다. 따라서 Adobe I/O Runtime에 SSR 코드를 배포하도록 자체 인프라를 설정해야 합니다.
 
 ## 원격 렌더러 구성 {#remote-content-renderer-configuration}
 
