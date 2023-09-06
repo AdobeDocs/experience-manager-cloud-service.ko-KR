@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
+source-git-commit: 9da87302369331fb55c1c8036c5b22fa686b1be8
 workflow-type: tm+mt
-source-wordcount: '1926'
+source-wordcount: '1938'
 ht-degree: 26%
 
 ---
@@ -144,7 +144,9 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * **[DocAssurance API(통신 API의 일부)를 사용하여 문서 Protect](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: DocAssurance API를 사용하면 문서에 서명하고 암호화하여 중요한 정보를 보호할 수 있습니다. 암호화를 통해 문서 내용을 읽을 수 없는 형식으로 변환하여 인가된 사용자만 액세스할 수 있도록 합니다. 이 강화된 보호 레이어는 무단 시야로부터 귀중한 데이터를 보호할 뿐만 아니라 안심할 수 있습니다. 서명 API를 사용하면 조직에서 배포하고 수신하는 Adobe PDF 문서의 보안 및 개인 정보를 보호할 수 있습니다. 이 서비스는 디지털 서명 및 인증을 사용하여 의도한 수신자만 문서를 변경할 수 있도록 합니다.
 
-  Adobe 지원 을 연결하여 DocAssurance API의 얼리어답터 프로그램에 참여할 수 있습니다.
+
+  <br> 다음으로 이메일을 보낼 수 있습니다. `aem-forms-early-adopter-program@adobe.com` 을(를) 공식 이메일 ID에서 입력하여 얼리어답터 프로그램에 참여하고 환경에 대한 기능 액세스를 요청합니다.  <br>  <br>
+
 
 * **[헤드리스 적응형 Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)**: Headless 적응형 Forms을 사용하여 개발자가 기존의 그래픽 사용자 인터페이스가 아닌 API를 통해 액세스하고 상호 작용할 수 있는 대화형 양식을 만들고 게시하고 관리할 수 있습니다. Headless 적응형 양식은 다음에 도움이 됩니다.
 
