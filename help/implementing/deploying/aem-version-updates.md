@@ -3,7 +3,7 @@ title: AEM 버전 업데이트
 description: AEM에서 as a Cloud Service으로 CI/CD(지속적 통합 및 배포)를 사용하여 프로젝트를 최신 버전으로 유지하는 방법을 알아봅니다.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: ca91e969014415e872ecf8e42fe86ffc9ca41e10
+source-git-commit: 7cdbda468221c42325a957131c6817c9f85a574a
 workflow-type: tm+mt
 source-wordcount: '801'
 ht-degree: 9%
@@ -55,28 +55,22 @@ AEM 업데이트는 여러 단계를 포함하는 강력하고 완전히 자동�
 
 ## 모범 사례 {#best-practices}
 
-* 
-   * **스테이징 환경 사용**
-   * 긴 QA/UAT 주기를 위해 스테이징이 아닌 다른 환경을 사용합니다.
-   * 스테이지에서 온전성 테스트가 완료되면 프로덕션에서 로 이동하여 확인합니다.
+* **스테이징 환경 사용**
+* 긴 QA/UAT 주기를 위해 스테이징이 아닌 다른 환경을 사용합니다.
+* 스테이지에서 온전성 테스트가 완료되면 프로덕션에서 로 이동하여 확인합니다.
 
-* 
-   * **프로덕션 파이프라인**
-   * 프로덕션에 배포하기 전에 일시 중단합니다.
-   * 스테이징 배포 후 파이프라인을 취소하면 코드가 &quot;이동 중&quot;이며 올바른 프로덕션 후보가 아님을 나타냅니다. 다음을 참조하십시오. [프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+* **프로덕션 파이프라인**
+* 프로덕션에 배포하기 전에 일시 중단합니다.
+* 스테이징 배포 후 파이프라인을 취소하면 코드가 &quot;이동 중&quot;이며 올바른 프로덕션 후보가 아님을 나타냅니다. 다음을 참조하십시오. [프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
 
-* 
-   * **비프로덕션 파이프라인**
+* **비프로덕션 파이프라인**
 * 구성 [비프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
-* 
-   * 프로덕션 파이프라인 실패에 대한 전달 속도/빈도를 가속화합니다.  제품 기능 테스트, 사용자 정의 기능 테스트 및 사용자 정의 UI 테스트를 활성화하여 비프로덕션 파이프라인의 문제를 식별합니다.
+* 프로덕션 파이프라인 실패에 대한 전달 속도/빈도를 가속화합니다.  제품 기능 테스트, 사용자 정의 기능 테스트 및 사용자 정의 UI 테스트를 활성화하여 비프로덕션 파이프라인의 문제를 식별합니다.
 
-* 
-   * **콘텐츠 복사**
-   * 사용 [콘텐츠 복사](/help/implementing/developing/tools/content-copy.md) 를 클릭하여 유사한 컨텐트 세트를 비프로덕션 환경으로 이동합니다.
+* **콘텐츠 복사**
+* 사용 [콘텐츠 복사](/help/implementing/developing/tools/content-copy.md) 를 클릭하여 유사한 컨텐트 세트를 비프로덕션 환경으로 이동합니다.
 
-* 
-   * **자동화된 기능 테스트**
+* **자동화된 기능 테스트**
 * 파이프라인에 자동화된 테스트를 포함하여 중요한 기능을 테스트합니다.
 * [고객 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) 및 [사용자 정의 UI 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) 차단됩니다. 실패하면 AEM 릴리스가 롤아웃되지 않습니다.
 
