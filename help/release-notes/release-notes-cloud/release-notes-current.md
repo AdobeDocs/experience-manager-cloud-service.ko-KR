@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 325769d4a3b93502b0c6857e20911b05df34a24a
+source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
 workflow-type: tm+mt
-source-wordcount: '1861'
-ht-degree: 27%
+source-wordcount: '1926'
+ht-degree: 26%
 
 ---
 
@@ -137,21 +137,23 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * **[규칙 편집기의 사용자 지정 오류 처리기로 오류 처리](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**: 이제 외부 서비스에서 반환한 오류에 대한 응답으로 사용자 지정 함수를 호출하고 최종 사용자에게 맞춤 응답을 제공할 수 있습니다. 예를 들어 특정 오류 코드의 백엔드에서 사용자 정의 워크플로를 호출하거나 서비스가 중단되었음을 고객에게 알려 줄 수 있습니다.
 
+* **[64비트 버전의 AEM Forms Designer](/help/forms/installing-configuring-designer.md)**: 64비트 버전의 AEM Forms Designer는 향상된 성능, 확장성, 메모리 관리를 제공하여 양식 생성 환경을 향상시킵니다. 64비트 아키텍처를 사용하면 훨씬 더 크고 복잡한 프로젝트를 쉽게 처리할 수 있으므로 원활한 설계 워크플로와 최적화된 효율성을 보장할 수 있습니다. 이 최신 릴리스를 통해 양식 디자인 기능을 향상시키고 AEM Forms Designer의 미래를 포용할 수 있습니다.
+
 
 ### 얼리 어답터 프로그램 {#forms-early-adopter}
 
 * **[DocAssurance API(통신 API의 일부)를 사용하여 문서 Protect](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: DocAssurance API를 사용하면 문서에 서명하고 암호화하여 중요한 정보를 보호할 수 있습니다. 암호화를 통해 문서 내용을 읽을 수 없는 형식으로 변환하여 인가된 사용자만 액세스할 수 있도록 합니다. 이 강화된 보호 레이어는 무단 시야로부터 귀중한 데이터를 보호할 뿐만 아니라 안심할 수 있습니다. 서명 API를 사용하면 조직에서 배포하고 수신하는 Adobe PDF 문서의 보안 및 개인 정보를 보호할 수 있습니다. 이 서비스는 디지털 서명 및 인증을 사용하여 의도한 수신자만 문서를 변경할 수 있도록 합니다.
 
-Adobe 지원 을 연결하여 DocAssurance API의 얼리어답터 프로그램에 참여할 수 있습니다.
+  Adobe 지원 을 연결하여 DocAssurance API의 얼리어답터 프로그램에 참여할 수 있습니다.
 
-**헤드리스 적응형 Forms**: 사용 [헤드리스 적응형 Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) 을 사용하면 개발자가 기존의 그래픽 사용자 인터페이스가 아닌 API를 통해 액세스하고 상호 작용할 수 있는 대화형 양식을 만들고 게시하고 관리할 수 있습니다. Headless 적응형 양식은 다음에 도움이 됩니다.
+* **[헤드리스 적응형 Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)**: Headless 적응형 Forms을 사용하여 개발자가 기존의 그래픽 사용자 인터페이스가 아닌 API를 통해 액세스하고 상호 작용할 수 있는 대화형 양식을 만들고 게시하고 관리할 수 있습니다. Headless 적응형 양식은 다음에 도움이 됩니다.
 
-* 선택한 프로그래밍 언어로 고품질 다중 채널 양식 작성
-* 양식을 데스크탑 및 모바일 앱, 웹 사이트 및 채팅 애플리케이션에 기본적으로 통합
-* 양식 애플리케이션과 함께 독점 UI 구성 요소 재사용
-* Adobe Experience Manager Forms의 기능 사용
+   * 선택한 프로그래밍 언어로 고품질 다중 채널 양식 작성
+   * 양식을 데스크탑 및 모바일 앱, 웹 사이트 및 채팅 애플리케이션에 기본적으로 통합
+   * 양식 애플리케이션과 함께 독점 UI 구성 요소 재사용
+   * Adobe Experience Manager Forms의 기능 사용
 
-공식 이메일 ID에서 `aem-forms-headless@adobe.com`으로 이메일을 보내 얼리 어답터 프로그램에 참여할 수 있습니다.
+  공식 이메일 ID에서 `aem-forms-headless@adobe.com`으로 이메일을 보내 얼리 어답터 프로그램에 참여할 수 있습니다.
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}

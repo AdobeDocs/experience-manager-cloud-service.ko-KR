@@ -4,9 +4,9 @@ description: 외부 웹 페이지에 적응형 양식을 임베드하는 방법 
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
-source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
+source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '979'
 ht-degree: 2%
 
 ---
@@ -99,14 +99,12 @@ ht-degree: 2%
 
 적응형 양식이 웹 페이지에 임베드됩니다. 임베드된 적응형 양식에서 다음 사항을 확인하십시오.
 
-* 원래 적응형 양식의 머리글 및 바닥글은 임베드된 양식에 포함되지 않습니다.
 * 초안 및 제출된 양식은 Forms 포털의 초안 및 제출 탭에서 사용할 수 있습니다.
 * 원래 적응형 양식에 구성된 제출 액션은 임베드된 양식에 유지됩니다.
 * 적응형 양식 규칙은 임베드된 양식에서 유지되고 완전히 작동합니다.
 * 원래 적응형 양식에 구성된 경험 타깃팅 및 A/B 테스트는 임베드된 양식에서 작동하지 않습니다.
 * Adobe Analytics이 원본 양식에 구성된 경우, 분석 데이터가 Adobe Analytics 서버에 캡처됩니다. 하지만 Forms 분석 보고서에서는 사용할 수 없습니다.
-
-핵심 구성 요소를 기반으로 하는 적응형 Forms에서 클라이언트 라이브러리(ClientLib)는 양식의 머리글 및 바닥글 구성 요소와 함께 포함되고 로드됩니다. 따라서 웹 페이지에 핵심 구성 요소를 기반으로 하는 적응형 Forms을 임베드하면 항상 양식의 머리글과 바닥글이 포함됩니다.
+* 핵심 구성 요소를 기반으로 하는 적응형 Forms에서 클라이언트 라이브러리(ClientLib)는 양식의 머리글 및 바닥글 구성 요소와 함께 포함되고 로드됩니다. 따라서 웹 페이지에 핵심 구성 요소를 기반으로 하는 적응형 Forms을 임베드하면 항상 양식의 머리글과 바닥글이 포함됩니다.
 
 ## 샘플 토폴로지 {#sample-topology}
 

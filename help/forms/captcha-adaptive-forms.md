@@ -2,9 +2,9 @@
 title: 적응형 Forms에서 reCAPTCHA 사용
 description: 적응형 Forms에서 Google reCAPTCHA 서비스를 구성하는 방법에 대해 알아봅니다.
 topic-tags: adaptive_forms, author
-source-git-commit: 58451648b120991a5e204044f8dd6aeeaf655d81
+source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
 workflow-type: tm+mt
-source-wordcount: '1933'
+source-wordcount: '1930'
 ht-degree: 10%
 
 ---
@@ -13,15 +13,13 @@ ht-degree: 10%
 
 <span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
-| 적용 대상 | 문서 링크 |
-| -------- | ---------------------------- |
-| 기초 구성 요소를 기반으로 하는 적응형 양식 | 이 문서 |
-| 핵심 구성 요소를 기반으로 하는 적응형 양식 | [여기 클릭](/help/forms/captcha-adaptive-forms-core-components.md) |
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html) |
 | AEM as a Cloud Service | 이 문서 |
+| 적용 대상 | 기초 구성 요소를 기반으로 하는 적응형 양식입니다. <br> 핵심 구성 요소 기반 적응형 양식의 경우 [여기를 클릭하십시오.](/help/forms/captcha-adaptive-forms-core-components.md). |
+
 
 CAPTCHA(컴퓨터와 인간을 구분하기 위해 완전히 자동화된 공공 튜링 테스트)는 인간과 자동화된 프로그램 또는 봇을 구별하기 위해 온라인 거래에서 일반적으로 사용되는 프로그램입니다. 문제를 제기하고 사용자 응답을 평가하여 사이트와 상호 작용하는 것이 인간인지 봇인지 판단합니다. 테스트가 실패할 경우 사용자가 진행하지 못하도록 차단하고 봇이 스팸을 게시하거나 악의적인 목적으로 상호 작용하는 것을 방지하여 온라인 거래를 안전하게 할 수 있도록 도와줍니다.
 
