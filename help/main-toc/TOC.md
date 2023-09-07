@@ -8,10 +8,10 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 71e9325997dcb32e27758d23177670cc70381537
+source-git-commit: 6c43921b90daa64dd4695c569e6dcd6f23e464cb
 workflow-type: tm+mt
-source-wordcount: '4260'
-ht-degree: 97%
+source-wordcount: '4265'
+ht-degree: 96%
 
 ---
 
@@ -230,7 +230,8 @@ ht-degree: 97%
          + [대형 콘텐츠 저장소 처리](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
          + [사용자 매핑 및 주요 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
          + [소스에서 콘텐츠 추출](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
-         + [대상에 콘텐츠 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+         + [Cloud Service에 컨텐츠 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+         + [콘텐츠 마이그레이션 후 색인화](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md)
          + [마이그레이션 세트에 대한 로그 보기](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
          + [마이그레이션 세트 삭제](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [게시 인스턴스에서 콘텐츠 전송 도구 실행](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)

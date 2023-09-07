@@ -1,25 +1,25 @@
 ---
-title: 대상에 콘텐츠 수집
-description: 컨텐츠 전송 도구를 사용하여 마이그레이션 세트의 컨텐츠를 Cloud Service 인스턴스로 수집하는 방법을 알아봅니다.
+title: Cloud Service에 컨텐츠 수집
+description: Cloud Acceleration Manager 를 사용하여 마이그레이션 세트의 컨텐츠를 대상 Cloud Service 인스턴스로 수집하는 방법을 알아봅니다.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
+source-git-commit: 382d1ed93e9545127ebb54641657db365886503d
 workflow-type: tm+mt
-source-wordcount: '1941'
-ht-degree: 11%
+source-wordcount: '1954'
+ht-degree: 8%
 
 ---
 
-# 대상에 콘텐츠 수집 {#ingesting-content}
+# Cloud Service에 컨텐츠 수집 {#ingesting-content}
 
 ## 컨텐츠 전송 도구에서 수집 프로세스 {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="콘텐츠 수집"
->abstract="수집은 마이그레이션 세트의 콘텐츠를 대상 클라우드 서비스 인스턴스로 수집하는 것입니다. 콘텐츠 전송 도구에는 이전 콘텐츠 전송 활동 이후 수행된 변경 사항만 전송할 수 있는 차등 콘텐츠 추가를 지원하는 기능이 있습니다."
+>abstract="수집은 마이그레이션 세트에서 대상 Cloud Service 인스턴스로 콘텐츠를 수집하는 것입니다. 콘텐츠 전송 도구에는 이전 콘텐츠 전송 활동 이후 수행된 변경 사항만 전송할 수 있는 차등 콘텐츠 추가를 지원하는 기능이 있습니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ko-KR" text="추가 수집"
 
-컨텐츠 전송 도구에서 마이그레이션 세트를 수집하려면 아래 단계를 따르십시오.
+Cloud Acceleration Manager를 사용하여 마이그레이션 세트를 수집하려면 아래 단계를 따르십시오.
 
 >[!NOTE]
 >이 수집에 대한 지원 티켓을 기록하는 것을 잊지 않았습니까? 다음을 참조하십시오 [컨텐츠 전송 도구 사용 전 중요 고려 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) 을 비롯한 여러 고려 사항이 수집에 도움이 됩니다.
@@ -80,7 +80,7 @@ ht-degree: 11%
    Additionally, click on **Customer Care** to log a ticket, as shown in the figure below. 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
-   
+
    Also, see [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) to learn more.
 
 1. Once the ingestion is complete, the status under **Author ingestion** updates to **FINISHED**.
@@ -172,7 +172,7 @@ AEM의 각 노드에는 고유한 UUID가 있어야 합니다. 이 오류는 수
 다음의 또 다른 일반적인 원인 [추가 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 실패는 대상 인스턴스의 특정 노드에 대한 버전 충돌입니다. 이 오류를 식별하려면 Cloud Acceleration Manager UI를 사용하여 수집 로그를 다운로드하고 다음과 같은 항목을 찾습니다.
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: 참조된 노드를 삭제할 수 없음: 8a2289f4-b904-4bd0-8410-15e41e0976a8
 
-이 문제는 대상의 노드가 수집과 후속 추가 수집 사이에서 수정되어 새 버전이 만들어지는 경우 발생할 수 있습니다. 수집에 &quot;버전 포함&quot;이 활성화되어 있으면 타겟에 버전 내역 및 기타 콘텐츠에서 참조되는 최신 버전이 있으므로 충돌이 발생할 수 있습니다. 수정 버전 노드가 참조되기 때문에 수집 프로세스에서 수정 버전 노드를 삭제할 수 없습니다.
+이 문제는 대상의 노드가 수집과 후속 추가 수집 사이에서 수정되어 새 버전이 만들어지는 경우 발생할 수 있습니다. 수집에서 &quot;버전 포함&quot;이 활성화된 경우 타겟에 버전 내역 및 기타 콘텐츠에서 참조하고 있는 최신 버전이 있으므로 충돌이 발생할 수 있습니다. 수정 버전 노드가 참조되기 때문에 수집 프로세스에서 수정 버전 노드를 삭제할 수 없습니다.
 
 해결책은 불쾌한 노드 없이 다시 추가 추출이 수행될 것을 요구할 수 있다. 또는 문제가 되는 노드의 소규모 마이그레이션 세트를 만들지만 &quot;버전 포함&quot;은 비활성화되어 있습니다.
 
@@ -181,4 +181,7 @@ AEM의 각 노드에는 고유한 UUID가 있어야 합니다. 이 오류는 수
 
 ## 다음 단계 {#whats-next}
 
-Target에 컨텐츠 수집을 완료하면 각 단계(추출 및 수집)의 로그를 보고 오류를 검색할 수 있습니다. 다음을 참조하십시오 [마이그레이션 세트에 대한 로그 보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=ko-KR) 자세히 알아보십시오.
+수집이 성공하면 AEM 색인화가 자동으로 시작됩니다. 다음을 참조하십시오 [콘텐츠 마이그레이션 후 색인화](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) 추가 정보.
+
+Cloud Service에 컨텐츠 수집을 완료하면 각 단계(추출 및 수집)의 로그를 보고 오류를 검색할 수 있습니다. 다음을 참조하십시오 [마이그레이션 세트에 대한 로그 보기](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md) 자세히 알아보십시오.
+
