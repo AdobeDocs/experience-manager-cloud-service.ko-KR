@@ -4,8 +4,8 @@ description: Cloud Acceleration Manager 를 사용하여 마이그레이션 세�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 382d1ed93e9545127ebb54641657db365886503d
 workflow-type: tm+mt
-source-wordcount: '1954'
-ht-degree: 8%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

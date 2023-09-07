@@ -3,8 +3,8 @@ title: 콘텐츠 마이그레이션 후 색인화
 description: 마이그레이션 프로세스에서 대상 Cloud Service 인스턴스에 수집된 콘텐츠를 색인화하는 방법을 알아봅니다.
 source-git-commit: 22c5cbf300bb0b3b0db04fcfa669dde44197c326
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
