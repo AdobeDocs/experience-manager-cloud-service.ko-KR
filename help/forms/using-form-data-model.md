@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a6e76d2b3650d57adafe543b2b694360e4bb4169
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1244'
 ht-degree: 2%
 
 ---
@@ -146,3 +146,26 @@ Edit Properties dialog for an interactive communication-->
 ![invoke-service](assets/invoke-service.png)
 
 또한 `guidelib.dataIntegrationUtils.executeOperation` 규칙 편집기의 코드 편집기에서 JavaScript를 작성하는 API입니다. <!-- For API details, see [API to invoke Form Data Model service](invoke-form-data-model-services.md).-->
+
+### 사용자 지정 함수를 사용하여 양식 데이터 모델 호출 {#invoke-form-data-model-using-custom-functions}
+
+다음을 수행할 수 있습니다. [사용자 지정 함수를 사용하여 규칙 편집기에서 양식 데이터 모델 호출](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). 양식 데이터 모델을 호출하려면 양식 데이터 모델을 허용 목록에 추가하다에 추가합니다. 허용 목록에 양식 데이터 모델을 추가하려면 다음을 수행합니다.
+
+1. 다음 위치에서 Experience Manager 웹 콘솔로 이동 `https://server:host/system/console/configMgr`.
+1. 찾기 **[!UICONTROL 서비스 호출을 위한 양식 데이터 모델의 적응형 양식 수준 화이트리스트 - 구성 팩토리]**.
+1. 클릭 ![더하기 아이콘](/help/forms/assets/Smock_Add_18_N.svg) 구성 추가 아이콘..
+1. 추가 **[!UICONTROL 컨텐츠 경로 패턴]** 를 클릭하여 적응형 Forms의 위치를 지정하십시오.  기본적으로 값은 입니다. `/content/forms/af/(.*)` 모든 적응형 Forms이 포함됩니다. 특정 적응형 양식의 경로를 지정할 수도 있습니다.
+1. 추가 **[!UICONTROL 양식 데이터 모델 경로 패턴]** 양식 데이터 모델의 위치를 지정합니다. 기본적으로 값은 입니다. `/content/dams/formsanddocuments-fdm/(.*)` 모든 양식 데이터 모델을 포함합니다. 특정 양식 데이터 모델의 경로를 지정할 수도 있습니다.
+1. 설정을 저장합니다.
+
+추가된 구성은 **[!UICONTROL 서비스 호출을 위한 양식 데이터 모델의 적응형 양식 수준 화이트리스트 - 구성 팩토리]** 옵션을 선택합니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3423977/adaptive-forms-custom-function-rule-editor)
+
+>[!NOTE]
+>
+> AEM Archetype 프로젝트를 통해 사용자 정의 함수를 사용하여 규칙 편집기에서 양식 데이터 모델을 호출하려면 다음을 수행합니다.
+>
+>1. [구성 파일 만들기](https://github.com/adobe/aem-core-forms-components/blob/master/it/config/src/main/content/jcr_root/apps/system/config/com.adobe.aemds.guide.factory.impl.AdaptiveFormFDMConfigurationFactoryImpl~core-components-it.cfg.json).
+>1. getContentPathPattern 및 getFormDataModelPathPattern의 속성을 설정합니다.
+>1. 프로젝트 배포.

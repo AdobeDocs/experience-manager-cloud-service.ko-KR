@@ -5,9 +5,9 @@ description: 적응형 Forms - 임베드 구성 요소를 사용하여 AEM Sites
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: bb2ee07f8750c15959ecdaa65f0932b05edfcd39
+source-git-commit: d9dee0b5a070da6a19004c749f69c724fff9d967
 workflow-type: tm+mt
-source-wordcount: '3158'
+source-wordcount: '3177'
 ht-degree: 6%
 
 ---
@@ -259,6 +259,11 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
 * **페이지 언어 사용**: 적응형 양식의 로케일 대신 AEM Sites 페이지의 로컬 로케일을 사용합니다. 이 옵션은 적응형 양식(Foundation)에만 적용됩니다.
 * **양식에 초점 설정**: 적응형 양식의 첫 번째 필드에 초점을 설정하려면 선택합니다. 이 옵션은 적응형 양식(Foundation)에만 적용됩니다.
 * **테마**: 적응형 양식 구성 요소의 스타일을 정의하는 테마를 선택합니다. 스타일링에는 글꼴 스타일, 배경색, 치수 및 정렬과 같은 모양 속성이 포함됩니다. 이 옵션은 적응형 양식(Foundation)에만 적용됩니다.
+
+  >[!NOTE]
+  >
+  > 다음을 사용할 수 있습니다. **페이지 언어 사용**, **양식에 초점 설정** 및 **테마** 적응형 양식(Foundation)에만 해당하는 옵션입니다.
+
 * **폼은 프레임의 전체 너비를 포함합니다.**: 인라인 프레임(iframe)은 적응형 양식을 AEM Sites 페이지에 로드하는 HTML 요소입니다.
 
    * 다음과 같은 경우 **[!UICONTROL 폼은 프레임의 전체 너비를 포함합니다.]** 확인란을 선택하면 적응형 양식이 배치되는 컨테이너의 전체 폭을 차지합니다. 이 경우 양식 렌더링에는 iframe이 사용되지 않습니다. 적응형 양식의 레이아웃과 디자인은 컨테이너의 전체 너비에 맞게 조정되므로 반응형이 좋고 다양한 화면 크기로 조정할 수 있습니다. 이 옵션을 사용하면 AEM Sites 페이지 내에 여러 적응형 Forms을 포함할 수 있습니다.
@@ -367,7 +372,7 @@ AEM 사이트 페이지에 적응형 Forms을 포함할 때는 다음 사항을 
 * 원래 양식에 구성된 제출 액션은 포함된 양식에 유지됩니다.
 * 원래 양식에 대해 Adobe Analytics이 구성된 경우, 임베드된 양식의 분석 데이터가 Adobe Analytics에 캡처됩니다. 하지만 양식 분석 보고서에서는 사용할 수 없습니다.
 
-## 참조: {#see-also}
+## 추가 참조 {#see-also}
 
 * [독립형 적응형 Forms 기반의 핵심 구성 요소 만들기](/help/forms/creating-adaptive-form-core-components.md)
 * [AEM Sites 페이지에서 바로 핵심 구성 요소 기반 적응형 양식 만들기](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
