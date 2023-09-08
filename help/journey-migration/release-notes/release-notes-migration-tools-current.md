@@ -1,37 +1,30 @@
 ---
-title: AEM as a Cloud Service 릴리스 2023.07.0의 마이그레이션 도구 릴리스 정보
-description: AEM as a Cloud Service 릴리스 2022.07.0의 마이그레이션 도구 릴리스 정보
+title: AEM as a Cloud Service 릴리스 2023.09.0의 마이그레이션 도구 릴리스 정보
+description: AEM as a Cloud Service 릴리스 2022.09.0의 마이그레이션 도구 릴리스 정보
 feature: Release Information
-exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
-source-git-commit: 88227693b7dfc3cbd30751718dc85e55ee67bb96
+source-git-commit: 9abce12c396ee74d36019218dd8b4fa72f762256
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 7%
+source-wordcount: '150'
+ht-degree: 4%
 
 ---
 
-# AEM as a Cloud Service 릴리스 2023.07.0의 마이그레이션 도구 릴리스 정보 {#release-notes}
+# AEM as a Cloud Service 릴리스 2023.09.0의 마이그레이션 도구 릴리스 정보 {#release-notes}
 
-이 페이지에서는 AEM as a Cloud Service 2022.07.0의 마이그레이션 도구 릴리스 정보에 대해 간략히 설명합니다.
+이 페이지에서는 AEM as a Cloud Service 2022.09.0의 마이그레이션 도구 릴리스 정보에 대해 간략히 설명합니다.
 
-## Best Practices Analyzer {#bpa-release}
+## 콘텐츠 전송 도구 {#ctt-release}
 
-### 릴리스 날짜 {#release-date-bpa}
+### 릴리스 날짜 {#release-date-ctt}
 
-모범 사례 분석기 v2.1.42의 릴리스 날짜는 2023년 7월 6일입니다.
+컨텐츠 전송 도구 v3.0.0의 릴리스 날짜는 2023년 9월 7일입니다.
 
-### 새로운 기능 {#what-is-new-bpa}
+### 새로운 기능 {#what-is-new-ctt}
 
-* 이 릴리스의 모범 사례 분석기에 여러 모범 사례 패턴이 추가되었습니다. 여기에는 다음이 포함됩니다.
-   * 최소 유지 관리 작업 구성 확인
-   * 장기 실행/대량 쿼리 감지
-   * 실행 중 또는 부실 상태에서 많은 작성자 워크플로 감지
-   * OSGI Apache Sling 작업 구성 감지
-   * 사용자 지정 Guava 캐시 감지
+컨텐츠 전송 도구 가 크게 향상되어 다음과 같은 이점이 있습니다.
+* AzCopy를 활용하여 모든 Blob ID를 복사하는 대신 필요한 Blob ID만 복사함으로써 컨텐츠 리포지토리의 하위 집합을 마이그레이션할 때 전송 시간이 단축되었습니다
+* Oak 업그레이드를 사용한 더 빠른 차등 컨텐츠 추가
+* 콘텐츠 수집 프로세스에서 색인화 프로세스를 분리하여 견고성을 개선했습니다. 색인화에 실패한 경우 콘텐츠를 다시 수집할 필요가 없습니다. 인덱싱만 자동으로 다시 시작되므로 상당한 시간과 노력이 절약됩니다.
 
-### 버그 수정 {#bug-fixes-bpa}
-
-* BPA를 개선하여 결과 수가 많은 보고서의 메모리 부족 보고서 생성 오류를 방지했습니다.
-* BPA가 개선되어 경로에서 이스케이프 문자를 감지하여 콘텐츠를 AEM으로 as a Cloud Service으로 마이그레이션할 때 콘텐츠 수집 오류가 발생하지 않습니다.
 
 
