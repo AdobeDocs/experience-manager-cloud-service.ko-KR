@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9abce12c396ee74d36019218dd8b4fa72f762256
+source-git-commit: 96b3986f73ab71bad02b00ddc699aeecd498aebd
 workflow-type: tm+mt
-source-wordcount: '4271'
+source-wordcount: '4284'
 ht-degree: 96%
 
 ---
@@ -572,6 +572,8 @@ ht-degree: 96%
          + [Adobe Sign과 AEM Forms as a Cloud Service 통합](/help/forms/adobe-sign-integration-adaptive-forms.md)
          + [DocuSign과 AEM Forms as a Cloud Service 통합](/help/forms/integrate-docusign-adaptive-forms.md)
          + [Adobe Analytics와 AEM Forms as a Cloud Service 통합](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+         + [Adobe Analytics에 적응형 Forms 통합](/help/forms/forms-experience-cloud-setup-automation.md)
+         + [적응형 Forms Analytics 보고서 보기 및 이해](/help/forms/view-understand-aem-forms-analytics-reports.md)
          + [Microsoft Power Automate와 적응형 양식 통합](/help/forms/forms-microsoft-power-automate-integration.md)
          + [AEM Sites 페이지에 적응형 양식 임베드](/help/forms/embed-adaptive-form-aem-sites.md)
          + [핵심 구성 요소를 기반으로 하는 적응형 양식을 외부 웹 페이지에 임베드](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
