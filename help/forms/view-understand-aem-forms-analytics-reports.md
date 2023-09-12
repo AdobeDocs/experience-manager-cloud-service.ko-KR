@@ -5,15 +5,17 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 96b3986f73ab71bad02b00ddc699aeecd498aebd
+source-git-commit: b44b54a88b87dc391dfeb51fb8b83095c274bd38
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
 
 
 # 적응형 Forms 분석 보고서 보기 및 이해 {#viewing-and-understanding-aem-forms-analytics-reports}
+
+<span class="preview"> 프리릴리스 기능이며 를 통해 액세스할 수 있습니다. [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 빠르게 진화하는 디지털 분석 환경에서 정보에 입각한 의사 결정을 내리고 디지털 경험을 최적화하기 위해서는 글로벌 트렌드에 주의해야 합니다. 이를 해결하기 위해 적응형 Forms은 Adobe Analytics과 원활하게 통합되어 게시된 양식 및 문서에 대한 성능 지표를 캡처하고 추적합니다. 이러한 지표를 분석하는 목표는 지표와 분석을 사용하여 양식의 유용성과 효율성을 향상시켜 데이터 중심의 결정을 내리는 것입니다.
 
