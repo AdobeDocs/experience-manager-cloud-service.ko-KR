@@ -1,7 +1,7 @@
 ---
 title: Experience Cloud 설정 자동화를 사용하여 적응형 양식용 Adobe Analytics 활성화
 description: Experience Cloud 설정 자동화는 Adobe Analytics을 적응형 양식에 연결하는 데 도움이 됩니다. 적응형 양식과의 사용자 상호 작용을 추적 및 분석하는 데 도움이 되며, 방문자 상호 작용 및 참여에 대한 인사이트를 제공합니다.
-source-git-commit: c88f8f61cf54059b1d141d08b77983dd45edfaa6
+source-git-commit: 3ff64646b7d7c03374bc6deadbdeb7bc27dbbacf
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 0%
@@ -117,5 +117,4 @@ Forms as a Cloud Service 환경에서 앞에서 설명한 것을 사용할 수 �
 
 1. 클릭 **Adobe Analytics** 보고서를 보고 성과 데이터를 분석합니다.
 
-
-이전 방법을 사용하여 적응형 양식을 Adobe Analytics과 연결하려면 다음을 방문하십시오. [AEM Forms과 Adobe Analytics 통합](/help/forms/integrate-aem-forms-with-adobe-analytics.md).
+수동 방법을 사용하여 적응형 양식과 Adobe Analytics을 연결하려면 다음을 방문하십시오. [AEM Forms과 Adobe Analytics 통합](/help/forms/integrate-aem-forms-with-adobe-analytics.md).

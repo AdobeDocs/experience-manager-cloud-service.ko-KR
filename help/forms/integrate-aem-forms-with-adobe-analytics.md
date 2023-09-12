@@ -3,9 +3,9 @@ title: AEM Forms을 Adobe Analytics과 통합하는 방법
 seo-title: Learn how to integrate AEM Forms with Adobe Analytics.
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 hidefromtoc: true
-source-git-commit: d97b17981e82323317e34185e47ee3f4224795b3
+source-git-commit: 3ff64646b7d7c03374bc6deadbdeb7bc27dbbacf
 workflow-type: tm+mt
-source-wordcount: '1743'
+source-wordcount: '1750'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
 | AEM as a Cloud Service | 이 문서 |
 
-<span class="preview"> 적응형 양식과 Adobe Analytics을 원활하고 신속하게 통합하려면 다음을 방문하십시오. [Experience Cloud 설정 자동화를 사용하여 적응형 양식용 Adobe Analytics 활성화](/help/forms/forms-experience-cloud-setup-automation.md). </span>
+<span class="preview"> 이 문서에서는 적응형 양식에서 Adobe Analytics을 활성화하는 수동 절차에 대해 간략히 설명합니다. 그러나 Adobe은 [Experience Cloud 설정 자동화를 사용하여 적응형 양식용 Adobe Analytics 활성화](/help/forms/forms-experience-cloud-setup-automation.md). </span>
 
 AEM Forms은 와 통합됩니다. [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) 을 사용하여 게시된 양식에 대한 성능 지표를 캡처하고 추적할 수 있습니다. 이러한 지표를 분석하는 목표는 비즈니스 사용자가 최종 사용자 동작에 대한 통찰력을 얻고 데이터 캡처 경험을 최적화할 수 있도록 하는 것입니다. 적응형 Forms용 Adobe Analytics을 통해 로그인한 사용자와 로그인하지 않은(익명) 사용자의 행동을 모두 캡처하고 추적할 수 있습니다.
 
