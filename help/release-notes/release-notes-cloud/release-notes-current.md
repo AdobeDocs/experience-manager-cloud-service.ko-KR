@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 555873b15e3a748c95893a371925d3ab6e87ae67
+source-git-commit: 407afc27911c507d3662fa4897b29e8187bbec7a
 workflow-type: tm+mt
 source-wordcount: '1934'
 ht-degree: 26%
@@ -116,9 +116,9 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * [**Google reCAPTCHA 엔터프라이즈 지원**](/help/forms/captcha-adaptive-forms-core-components.md): 적응형 양식에서 Google reCAPTCHA Enterprise를 사용해 사기 행위 및 스팸 방지 기능을 강화하여 보다 안전한 사용자 환경을 제공합니다. 고급 위험 분석 및 원활한 통합을 통해 실제 사용자가 양식을 쉽게 제출할 수 있는 동시에 봇이 효과적으로 차단됩니다.
 
-* **Forms용 Experience Cloud 설정 자동화가 포함된 Adobe Analytics**: 이제 두 개의 단추를 전환하여 Experience Cloud 설정 자동화를 통해 Adobe Analytics을 활성화할 수 있습니다. 이를 통해 Experience Platform 태그 및 Adobe Analytics과 AEM Forms as a Cloud Service으로 연결하여 게시된 양식에 대한 성능 지표를 캡처하고 추적할 수 있습니다.
+* [**Forms용 Experience Cloud 설정 자동화가 포함된 Adobe Analytics**](/help/forms/forms-experience-cloud-setup-automation.md): 이제 두 개의 단추를 전환하여 Experience Cloud 설정 자동화를 통해 Adobe Analytics을 활성화할 수 있습니다. 이를 통해 Experience Platform 태그 및 Adobe Analytics과 AEM Forms as a Cloud Service으로 연결하여 게시된 양식에 대한 성능 지표를 캡처하고 추적할 수 있습니다.
 
-* **적응형 Forms용 Adobe Analytics 보고서 템플릿**: 이제 Forms as a Cloud Service에서 Adobe Analytics 보고서 OOTB를 제공합니다. 폼의 성능을 쉽게 이해할 수 있도록 해줍니다. 양식 수준 지표를 통해 표현물, 표현물, 방문자, 제출, 평균 채우기 시간과 같은 여러 KPI(주요 성능 지표)에서 양식이 어떻게 작동하는지 파악할 수 있습니다. 사용자 동작 및 피드백을 추적하여 혼동을 일으키는 양식 영역을 식별하고 양식의 디자인 및 기능 개선을 안내할 수 있습니다.
+* [**적응형 Forms용 Adobe Analytics 보고서 템플릿**](/help/forms/view-understand-aem-forms-analytics-reports.md): 이제 Forms as a Cloud Service에서 Adobe Analytics 보고서 OOTB를 제공합니다. 폼의 성능을 쉽게 이해할 수 있도록 해줍니다. 양식 수준 지표를 통해 표현물, 표현물, 방문자, 제출, 평균 채우기 시간과 같은 여러 KPI(주요 성능 지표)에서 양식이 어떻게 작동하는지 파악할 수 있습니다. 사용자 동작 및 피드백을 추적하여 혼동을 일으키는 양식 영역을 식별하고 양식의 디자인 및 기능 개선을 안내할 수 있습니다.
 
   ![적응형 양식 사용자 참여 adobe analytics 보고서](/help/forms/assets/forms-analytics-report.png)
 
