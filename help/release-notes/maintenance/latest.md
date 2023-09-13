@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 288f871b75e68fdbca1244099e490408ea66ff40
+source-git-commit: 57d818e3e89f17f829a6b51689f02e5f59614563
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 46%
+source-wordcount: '296'
+ht-degree: 45%
 
 ---
 
@@ -13,41 +13,38 @@ ht-degree: 46%
 
 다음 섹션에서는 Experience Manager as a Cloud Service 현재 유지 관리 릴리스의 기술 릴리스 정보에 대해 간략히 소개합니다.
 
-## 릴리스 13323 {#release-13323}
+## 릴리스 13420 {#release-13420}
 
-다음은 2023년 9월 1일에 공개적으로 릴리스된 유지 보수 릴리스 13323에 대한 지속적인 개선 사항을 요약합니다. 이 유지 관리 릴리스는 릴리스 정보를 13239.
+다음은 2023년 9월 11일에 공개적으로 릴리스된 유지 보수 릴리스 13420에 대한 지속적인 개선 사항을 요약합니다. 이 유지 관리 릴리스는 릴리스 정보를 13323.
 
 이 유지 관리 릴리스(2023.9.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)을 참조하십시오.
 
-### 개선 사항 {#enhancements-13323}
+### 개선 사항 {#enhancements-13420}
 
-- GRANITE-46784: BearerAuthenticationHandler를 비활성화하는 옵션을 추가합니다.
-- GRANITE-36205: 내부 oak 릴리스 버전을 최신 버전으로 업데이트합니다.
-- ASSETS-26713: 새로운 경험 UI 대시보드에 대한 Touch UI 외부 링크 - 통합 쉘 통합 및 ui-touch에 최적화된 업그레이드.
-- SKYOPS-63302: com.adobe.granite:com.adobe.granite.auth.saml을 v1.0.54로 업그레이드합니다.
-- GRANITE-46634: 이벤트 클라이언트 1.4.0으로 업그레이드합니다.
-- GRANITE-46788: 라이브러리를 Apache Commons IO 2.13.0, Commons Lang 3.13.0, Commons 코드 1.16.0 및 Commons Compress 1.23.0으로 업데이트합니다.
-- GRANITE-46705: Apache Felix Http Jetty 4.1.14로 업데이트합니다.
-- GRANITE-46631: Jackrabbit 버전을 2.20.11로 업데이트합니다.
-- SKYOPS-61895: Jackrabbit Filevault 3.7.0으로 업데이트합니다.
+- ASSETS-19544: 마지막으로 수정한 자산 속성이 이제 처리를 요청하는 사용자로 설정됩니다.
 
-### 해결된 문제 {#fixed-issues-13323}
+### 해결된 문제 {#fixed-issues-13420}
 
-- ASSETS-28461: DocumentCloud 뷰어가 PDF에 대해 작동하지 않음에서 13239.
-- SKYOP-63290: 버킷의 잘못된 발생을 수정했습니다.
-- SKYOPS-54607: 실패한 요청에 대해 Ratelimiter 서버로드 계산이 올바르지 않습니다.
-- ASSETS-27648: ContentModelIT가 다른 번들의 제외 파일을 읽지 못했습니다.
-- GRANITE-43744: 인증 요구 사항 및 단축 경로에서 잘못된 구성이 있는 경우 Sling 인증자가 제대로 작동하지 않습니다.
-- GRANITE-46419: Auth0 Idp에 AEM 통합 문제가 있습니다.
-- GRANITE-46292: AEM Cloud 업데이트 후 Okta SAML 구성이 작동하지 않습니다.
-- GRANITE-47059: Granite Jetty SSL 번들을 제거합니다.
+- ASSETS-27628: 에셋 검색 패널을 사용자 정의할 때 잘못된 &quot;채널&quot; 노드가 생성됨
+- ASSETS-27539: 업로드 제한 사항 정규 표현식 일치.
+- ASSETS-26530: 통합 쉘은 사용자를 원래 페이지로 다시 불러오지 않습니다.
+- ASSETS-22719: 스마트 자르기 중단점 이름 지정의 대괄호로 스마트 자르기 편집 기능이 중단됩니다.
+- ASSETS-27726: linkshare.html을 Google으로 인덱싱해서는 안 됩니다.
+- ASSETS-27791: 메타데이터 스키마 유효성 검사는 첫 번째 필드에 대해서만 발생합니다.
+- ASSETS-25544: 비활성화된 CDN 캐시 무효화 단추가 수정되었습니다.
+- ASSETS-26575: 이미지 집합을 만들 때 이름이 잘리는 문제가 해결되었습니다.
+- ASSETS-26705: DM이 아닌 폴더 에셋 및 콘텐츠 조각에 대한 불필요한 처리가 수정되었습니다.
+- ASSETS-25740: 아래쪽 화살표 키를 사용하여 &#39;스마트 자르기 편집&#39; 페이지에서 편집/자르기 컨트롤의 이름 및 역할에 내레이션을 지정하지 않은 고정 화면 판독기입니다.
+- CQ-4354266: 받은 편지함 항목을 열 수 없습니다.
+- CQ-4354347: AEM 번역을 업데이트했습니다.
+- DISP-1009: 첫 번째 헤더가 아닌 사용자 에이전트는 X-Forwarded-Host를 트리밍합니다.
+- 다양한 접근성 및 보안 관련 수정 사항.
 
-### 알려진 문제 {#known-issues-13323}
+### 알려진 문제 {#known-issues-13420}
 
-- SITES-15622: GraphQL - 숫자 및 부울 매개변수가 포함된 지속 쿼리에 문제가 있습니다.
-- SITES-15654: GraphQL - 동일한 이름의 결합 및 속성에 문제가 있습니다.
+없음.
 
-### 임베드된 기술 {#embedded-tech-13323}
+### 임베드된 기술 {#embedded-tech-13420}
 
 | 기술 | 버전 | 링크 |
 |---|---|---|
