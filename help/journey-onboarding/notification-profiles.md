@@ -4,10 +4,10 @@ description: 중요한 이메일 알림 수신을 관리하기 위해 Admin Cons
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: 6764fe48068325dfb7ed84cf7834c7eb5f25fb48
-workflow-type: ht
-source-wordcount: '970'
-ht-degree: 100%
+source-git-commit: afb20efe8ed078a508f828c5df4e079f99dfab21
+workflow-type: tm+mt
+source-wordcount: '989'
+ht-degree: 98%
 
 ---
 
@@ -22,6 +22,10 @@ ht-degree: 100%
 
 * **문제 알림** - 이러한 알림은 문제 중에 또는 Adobe가 AEM as a Cloud Service 환경의 잠재적 가용성 문제를 식별한 경우 전송됩니다.
 * **사전 알림** - 이러한 알림은 Adobe 지원 팀원이 AEM as a Cloud Service 환경에 도움이 될 수 있는 잠재적인 최적화 또는 권장 사항에 대한 지침을 제공하고자 할 때 전송됩니다.
+
+>[!NOTE]
+>
+>사전 알림에 그룹을 할당할 수 없습니다. 대신 사용자를 제품 프로필에 직접 할당해야 합니다.
 
 올바른 사용자가 이러한 알림을 수신하도록 하려면 이 문서에 설명된 대로 사용자 프로필을 구성하고 할당해야 합니다.
 
