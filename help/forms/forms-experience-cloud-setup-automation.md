@@ -1,9 +1,9 @@
 ---
-title: Experience Cloud 설정 자동화를 사용하여 적응형 양식용 Adobe Analytics 활성화
-description: Experience Cloud 설정 자동화는 Adobe Analytics을 적응형 양식에 연결하는 데 도움이 됩니다. 적응형 양식과의 사용자 상호 작용을 추적 및 분석하는 데 도움이 되며, 방문자 상호 작용 및 참여에 대한 인사이트를 제공합니다.
-source-git-commit: b44b54a88b87dc391dfeb51fb8b83095c274bd38
+title: 적응형 양식에 Adobe Analytics 활성화
+description: Experience Cloud 설정 자동화는 Adobe Analytics을 적응형 양식에 연결하여 방문자 상호 작용 및 참여에 대한 통찰력을 추적하는 데 도움이 됩니다.
+source-git-commit: 39ea959cb0a0568fd94ca455be935228479c0415
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Adobe Analytics은 양식 사용에 대한 중요한 통찰력을 제공하도�
 
 * **방문자 지원이 필요한 영역** 도움말 보기, 유효성 검사 오류 인스턴스 및 필드 방문 빈도가 포함된 지표로, 사용자가 양식을 작성하는 데 도움이 필요할 수 있는 위치를 강조 표시합니다.
 
-![Analytics 보고서](assets/analytics-report.png)
+![Analytics 보고서](assets/analytics-report.png){width="100%"}
 
 
 각 지표에 대한 자세한 내용은 다음을 참조하십시오. [AEM Forms Analytics 보고서 보기 및 이해](/help/forms/view-understand-aem-forms-analytics-reports.md)
@@ -58,7 +58,7 @@ Experience Cloud 설정 자동화, Adobe Analytics 및 Experience Platform Launc
 
 Forms as a Cloud Service 환경에서 앞에서 설명한 것을 사용할 수 있는지 확인하려면 다음을 방문하십시오. [개발자 콘솔](https://developer.adobe.com/console/projects)로 이동하여 프로그램 id로 프로젝트를 검색합니다. 예를 들어 URL이 있는 환경에 대해 검색합니다 `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`, 프로그램 id는 `p45913-e175111`. Experience Cloud 설정 자동화, Adobe Analytics 및 Experience Platform Launch API가 나열되어 있는지 확인합니다. 이러한 항목이 나열되어 있으면 적응형 Forms에 대해 Adobe Analytics을 활성화할 수 있습니다.
 
-![Forms Analytics 통합 전제 조건](assets/analytics-aem.png)
+![Forms Analytics 통합 전제 조건](assets/analytics-aem.png){width="100%"}
 
 <!-- 
 >[!NOTE]
@@ -94,7 +94,7 @@ Forms as a Cloud Service 환경에서 앞에서 설명한 것을 사용할 수 �
 1. AEM 인스턴스에서 **[!UICONTROL Forms]** >> **[Forms 및 문서]** 및 선택 **[!UICONTROL 양식]**, 아래 이미지에 표시된 대로 Adobe Analytics이 양식에 통합되었습니다.
 1. 이제 다음을 볼 수 있습니다. [적응형 양식 Adobe Analytics 보고서](#view-adobe-analytics-report).
 
-![통합 AEM Analytics](assets/analytics-aem-integrated.png)
+![통합 AEM Analytics](assets/analytics-aem-integrated.png){width="100%"}
 
 ### 핵심 구성 요소에 대한 적응형 Forms으로 Adobe Analytics 활성화 {#integrate-adobe-analytics-with-aem-forms-for-core-components}
 
@@ -115,7 +115,7 @@ Forms as a Cloud Service 환경에서 앞에서 설명한 것을 사용할 수 �
 1. AEM 인스턴스에서 **[!UICONTROL Forms]** >> **[!UICONTROL Forms 및 문서]**.
 1. 양식을 선택하면 Adobe Analytics이 왼쪽과 같이 Adobe Analytics용으로 활성화된 Forms에 통합됩니다.
 
-   ![보고서 보기](assets/activ-aa.png)
+   ![보고서 보기](assets/activ-aa.png){width="100%"}
 
 1. 클릭 **Adobe Analytics** 보고서를 보고 성과 데이터를 분석합니다.
 
