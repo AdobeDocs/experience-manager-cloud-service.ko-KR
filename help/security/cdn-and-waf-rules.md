@@ -1,9 +1,9 @@
 ---
 title: 트래픽 필터 규칙 구성(WAF 규칙 사용)
 description: 트래픽 필터 규칙(WAF 규칙 포함)을 사용하여 트래픽 필터링
-source-git-commit: dc0c7e77bb4bc5423040364202ecac3c59adced0
+source-git-commit: b1b184b63ab6cdeb8a4e0019c31a34db59438a3d
 workflow-type: tm+mt
-source-wordcount: '2690'
+source-wordcount: '2709'
 ht-degree: 70%
 
 ---
@@ -41,7 +41,8 @@ WAF(Web Application Firewall) 추가 기능에 라이선스를 부여하는 고�
    ```
    kind: "CDN"
    version: "1"
-   envType: "dev"
+   metadata:
+     envTypes: ["dev"]
    data:
      trafficFilters:
        rules:
@@ -94,13 +95,14 @@ WAF 오퍼링에 라이선스를 부여하는 고객은 라는 특별한 카테�
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
       - name: "path-rule"
         when: { reqProperty: path, equals: /block-me }
-        action: 
+        action:
           type: block
       - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
         when: { reqProperty: path, like: "*" }
@@ -225,7 +227,7 @@ cdn.yaml 파일의 트래픽 필터 규칙 형식은 아래에 설명되어 있�
 
 * 규칙이 일치하여 차단되면 CDN은 `406` 반환 코드로 응답합니다.
 
-* 구성 파일에는 git 저장소에 액세스할 수 있는 모든 사람이 읽을 수 있으므로 비밀이 포함되어서는 안 됩니다
+* 구성 파일에는 git 저장소에 액세스할 수 있는 모든 사람이 읽을 수 있으므로 비밀이 포함되어서는 안 됩니다.
 
 ## 규칙 예 {#examples}
 
@@ -238,13 +240,14 @@ cdn.yaml 파일의 트래픽 필터 규칙 형식은 아래에 설명되어 있�
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
      rules:
        - name: "block-request-from-ip"
          when: { reqProperty: clientIp, equals: "192.168.1.1" }
-         action: 
+         action:
            type: block
 ```
 
@@ -255,7 +258,8 @@ data:
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
      rules:
@@ -265,7 +269,7 @@ data:
             - { reqProperty: path, equals: /helloworld }
             - { reqProperty: tier, equals: publish }
             - { reqHeader: user-agent, matches: '.*Chrome.*'  }
-           action: 
+           action:
              type: block
 ```
 
@@ -276,17 +280,18 @@ data:
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
       - name: "block-request-that-contains-query-parameter-foo"
         when: { queryParam: url-param, equals: foo }
-        action: 
+        action:
           type: block
       - name: "allow-all-requests-from-ip"
         when: { reqProperty: clientIp, equals: 192.168.1.1 }
-        action: 
+        action:
           type: allow
 ```
 
@@ -297,13 +302,14 @@ data:
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
       - name: "path-rule"
         when: { reqProperty: path, equals: /block-me }
-        action: 
+        action:
           type: block
       - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
         when: { reqProperty: path, like: "*" }
@@ -319,7 +325,8 @@ data:
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -352,20 +359,22 @@ data:
 
 | **속성** | **유형** | **기본값** | **의미** |
 |---|---|---|---|
-| limit | 10에서 10000 사이의 정수 | required | 규칙이 트리거되는 초당 요청의 요청 속도입니다. |
-| window | 정수 열거형: 1, 10 또는 60 | 10 | 요청 속도를 계산하는 샘플링 기간(초) |
-| penalty | 60에서 3600 사이의 정수 | 300(5분) | 일치하는 요청이 차단되는 기간(초 단위로 반올림) |
+| limit | 10에서 10000 사이의 정수 | required | 규칙이 트리거되는 초당 요청의 요청 속도입니다.. |
+| window | 정수 열거형: 1, 10 또는 60 | 10 | 요청 속도를 계산하는 샘플링 기간(초). |
+| penalty | 60에서 3600 사이의 정수 | 300(5분) | 일치하는 요청이 차단되는 기간(초 단위로 반올림). |
+| groupBy | 배열[게터] | 없음 | 속도 제한 카운터는 요청 속성 집합(예: clientIp)으로 집계됩니다. |
 
 ### 예 {#ratelimiting-examples}
 
 **예 1**
 
-이 규칙은 지난 60초 동안 100req/sec를 초과하는 경우 5m 동안 클라이언트를 차단합니다
+이 규칙은 지난 60초 동안 100req/sec를 초과하는 경우 5m 동안 클라이언트를 차단합니다.
 
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     - name: limit-requests-client-ip
@@ -383,18 +392,19 @@ data:
 
 **예 2**
 
-지난 60초 동안 100req/sec를 초과하는 경우 경로/중요/리소스의 60초 차단 요청
+지난 60초 동안 100req/sec를 초과하는 경우 경로/중요/리소스의 60초 차단 요청:
 
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
       - name: rate-limit-example
         when: { reqProperty: path, equals: /critical/resource }
-        action: 
+        action:
           type: block
         rateLimit: { limit: 100, window: 60, penalty: 60 }
 ```
@@ -418,7 +428,7 @@ AEM as a Cloud Service에서 제공하는 CDN 로그 액세스는 캐시 적중�
 규칙은 다음과 같은 방식으로 동작합니다.
 
 * 일치하는 규칙의 고객이 선언한 규칙 이름이 matches 속성에 나열됩니다.
-* 작업 속성은 규칙이 차단, 허용 또는 로깅의 영향을 미쳤는지 여부를 설명합니다
+* 작업 속성은 규칙이 차단, 허용 또는 로깅의 영향을 미쳤는지 여부를 설명합니다.
 * waf에 라이센스가 부여되고 활성화되어 있으면 waf 속성은 구성에 waf 규칙이 나열되었는지 여부에 관계없이 감지된 모든 waf 규칙(예: SQLI, 고객이 선언한 이름과 독립적임)을 나열합니다.
 * 고객이 선언한 규칙이 일치하지 않고 waf 규칙이 일치하지 않으면 rules 속성 속성이 비어 있습니다.
 
@@ -430,7 +440,8 @@ AEM as a Cloud Service에서 제공하는 CDN 로그 액세스는 캐시 적중�
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -490,7 +501,7 @@ data:
 
 | **필드 이름** | **설명** |
 |---|---|
-| *timestamp* | TLS 종료 후 요청이 시작된 시간입니다. |
+| *timestamp* | TLS 종료 후 요청이 시작된 시간입니다.. |
 | *ttfb* | *Time To First Byte(첫 번째 바이트까지의 시간)*&#x200B;의 약어입니다. 요청이 시작된 후 응답 본문의 스트리밍이 시작되기까지의 시간 간격입니다. |
 | *cli_ip* | 클라이언트 IP 주소입니다. |
 | *cli_country* | 클라이언트 국가의 2글자 [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) Alpha-2 국가 코드입니다. |
