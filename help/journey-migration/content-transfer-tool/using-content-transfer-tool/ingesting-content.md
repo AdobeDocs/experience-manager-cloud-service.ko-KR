@@ -2,22 +2,22 @@
 title: Cloud Service에 컨텐츠 수집
 description: Cloud Acceleration Manager 를 사용하여 마이그레이션 세트의 컨텐츠를 대상 Cloud Service 인스턴스로 수집하는 방법을 알아봅니다.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 382d1ed93e9545127ebb54641657db365886503d
+source-git-commit: 5c482e5f883633c04d70252788b01f878156bac8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2142'
+ht-degree: 6%
 
 ---
 
 # Cloud Service에 컨텐츠 수집 {#ingesting-content}
 
-## 컨텐츠 전송 도구에서 수집 프로세스 {#ingestion-process}
+## Cloud Acceleration Manager의 수집 프로세스 {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="콘텐츠 수집"
 >abstract="수집은 마이그레이션 세트에서 대상 Cloud Service 인스턴스로 콘텐츠를 수집하는 것입니다. 콘텐츠 전송 도구에는 이전 콘텐츠 전송 활동 이후 수행된 변경 사항만 전송할 수 있는 차등 콘텐츠 추가를 지원하는 기능이 있습니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ko-KR" text="추가 수집"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html#top-up-extraction-process" text="추가 추출"
 
 Cloud Acceleration Manager를 사용하여 마이그레이션 세트를 수집하려면 아래 단계를 따르십시오.
 
@@ -42,50 +42,31 @@ Cloud Acceleration Manager를 사용하여 마이그레이션 세트를 수집�
    >다음은 콘텐츠 수집에 적용되는 참고 사항입니다.
    > 소스가 작성자인 경우 타겟의 작성자 계층으로 수집하는 것이 좋습니다. 마찬가지로 소스가 Publish인 경우 타겟도 Publish여야 합니다.
    > 대상 계층이 `Author`, 작성자 인스턴스는 수집 기간 동안 종료되며 사용자(예: 작성자 또는 유지 관리를 수행하는 모든 사용자)는 사용할 수 없게 됩니다. 그 이유는 시스템을 보호하고, 손실되거나 수집 충돌을 야기할 수 있는 변경 사항을 방지하기 위함입니다. 팀이 이 사실을 알고 있는지 확인합니다. 또한 환경은 작성자 수집 중에 최대 절전 모드로 표시됩니다.
-   > 선택적 사전 복사 단계를 실행하여 수집 단계를 크게 가속화할 수 있습니다. 다음을 참조하십시오 [AzCopy로 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 을 참조하십시오.
+   > 선택적 사전 복사 단계를 실행하여 수집 속도를 크게 높일 수 있습니다. 다음을 참조하십시오 [AzCopy로 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 을 참조하십시오.
    > S3 또는 Azure Data Store의 경우 사전 복사를 사용한 수집을 사용하는 경우 먼저 작성자 수집을 실행하는 것이 좋습니다. 이렇게 하면 나중에 실행할 때 게시 수집 속도가 빨라집니다.
    > 수집은 RDE(빠른 개발 환경) 대상을 지원하지 않으며, 사용자가 액세스할 수 있는 경우에도 가능한 대상 선택으로 표시되지 않습니다.
 
    >[!IMPORTANT]
-   > 다음 중요 알림은 콘텐츠 수집에 적용됩니다.
    > 로컬 환경에 속해 있는 경우에만 대상 환경에 대한 수집을 시작할 수 있습니다 **AEM 관리자** 대상 Cloud Service 작성자 서비스의 그룹입니다. 수집을 시작할 수 없는 경우 다음을 참조하십시오. [수집을 시작할 수 없음](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) 을 참조하십시오.
-   > 다음과 같은 경우 **지우기** 수집 전에 활성화되며, 기존 저장소 전체를 삭제하고 컨텐츠를 수집할 수 있는 저장소를 만듭니다. 이 워크플로우는 대상 Cloud Service 인스턴스에 대한 권한을 포함하여 모든 설정을 재설정함을 의미합니다. 이 재설정은 에 추가된 관리자 사용자에게도 적용됩니다. **관리자** 그룹입니다. 수집을 시작하려면 관리자 그룹에 속해 있어야 합니다.
+
+   * 다음을 선택합니다. `Wipe` 값
+      * 다음 **지우기** 옵션은 수집의 시작 지점을 설정합니다. If **지우기** 가 활성화되면 모든 콘텐츠를 포함하는 대상이 Cloud Manager에 지정된 AEM 버전으로 재설정됩니다. 활성화되지 않은 경우 대상은 현재 콘텐츠를 시작점으로 유지합니다.
+      * 이 옵션은 다음 작업을 수행합니다 **아님** 콘텐츠 수집이 수행되는 방식에 영향을 줍니다. 수집은 항상 컨텐츠 대체 전략을 사용하며 _아님_ 컨텐츠 병합 전략 **지우기** 및 **지우지 않음** 마이그레이션 세트를 수집하면 대상의 동일한 경로에 있는 콘텐츠를 덮어씁니다. 예를 들어 마이그레이션 세트에 `/content/page1` 대상에 이미 다음 항목이 포함되어 있음 `/content/page1/product1`, 수집하면 전체 `page1` 경로 및 해당 하위 페이지: `product1`을 클릭하고 마이그레이션 세트의 콘텐츠로 대체합니다. 이는 다음을 수행할 때 신중하게 계획해야 함을 의미합니다. **지우지 않음** 유지 관리해야 하는 콘텐츠가 포함된 대상으로의 수집
+
+   >[!IMPORTANT]
+   > 다음과 같은 경우 **지우기** 수집이 활성화되고 대상 Cloud Service 인스턴스에 대한 사용자 권한을 포함하여 기존 저장소 전체가 재설정됩니다. 이 재설정은 에 추가된 관리자 사용자에게도 적용됩니다. **관리자** 수집을 시작하려면 그룹 및 해당 사용자를 관리자 그룹에 다시 추가해야 합니다.
 
 1. 클릭 **수집**.
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
-1. 그런 다음 수집 작업 목록 보기에서 수집 단계를 모니터링하고 수집의 작업 메뉴를 사용하여 수집이 진행될 때 로그를 볼 수 있습니다.
+1. 그런 다음 수집 작업 목록 보기에서 수집을 모니터링하고 수집의 작업 메뉴를 사용하여 지속 시간을 보고 수집 진행 상황을 기록할 수 있습니다.
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
 1. 다음을 클릭합니다. **(i)** 수집 작업에 대한 자세한 내용을 보려면 행의 단추를 클릭하십시오. 실행 중이거나 완료된 수집 단계의 각 기간은 다음을 클릭하여 확인할 수 있습니다. **...**&#x200B;을 클릭한 다음 **기간 보기**. 추출에서 얻은 정보도 수집되는 내용을 인식하는 것으로 표시됩니다.
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23b.png)
-
-<!-- Alexandru: hiding temporarily, until it's reviewed 
-
-1. The **Migration Set ingestion** dialog box displays. Content can be ingested to either Author instance or Publish instance at a time. Select the instance to ingest content to. Click on **Ingest** to start the ingestion phase. 
-
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-02.png)
-
-   >[!IMPORTANT]
-   >If ingesting with pre-copy is used (for S3 or Azure Data Store), it is recommended to run Author ingestion first alone. This will speed up the Publish ingestion when it is run later. 
-
-   >[!IMPORTANT]
-   >When the **Wipe existing content on Cloud instance before ingestion** option is enabled, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance. This is also true for an admin user added to the **administrators** group.
-
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-03.png)
-
-   Additionally, click on **Customer Care** to log a ticket, as shown in the figure below. 
-
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
-
-   Also, see [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) to learn more.
-
-1. Once the ingestion is complete, the status under **Author ingestion** updates to **FINISHED**.
-
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-05.png) -->
 
 ## 추가 수집 {#top-up-ingestion-process}
 
@@ -95,14 +76,14 @@ Cloud Acceleration Manager를 사용하여 마이그레이션 세트를 수집�
 >abstract="추가 기능을 사용하여 이전 콘텐츠 전송 활동 이후 수정된 콘텐츠를 이동합니다. 수집이 완료되면 로그에서 오류/경고를 확인하십시오. 모든 오류는 보고된 문제를 처리하거나 Adobe 고객 지원 센터에 문의하여 즉시 해결해야 합니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=ko-KR" text="로그 보기"
 
-컨텐츠 전송 도구에는 이전 컨텐츠 전송 활동 이후 수행된 변경 사항만 전송할 수 있는 차등 컨텐츠 *추가*&#x200B;를 지원하는 기능이 있습니다.
+컨텐츠 전송 도구에는 다음을 수행하여 차등 컨텐츠를 추출할 수 있는 기능이 있습니다. *추가* 마이그레이션 세트. 이렇게 하면 모든 콘텐츠를 다시 추출할 필요 없이 이전 추출 후 변경된 콘텐츠만 포함하도록 마이그레이션 세트를 수정할 수 있습니다.
 
 >[!NOTE]
->처음 콘텐츠 전송 후 클라우드 서비스에서 라이브로 전환되기 전에 최종 차등 콘텐츠 전송에 대한 콘텐츠 고정 기간을 단축하기 위해 자주 차등 콘텐츠 추가를 수행하는 것이 좋습니다. 첫 번째 전체 수집에 사전 복사 단계를 사용한 경우 후속 추가 수집에 대해 사전 복사를 건너뛸 수 있습니다(추가 마이그레이션 세트 크기가 200GB 미만인 경우). 그 이유는 전체 과정에 시간이 추가될 수 있기 때문이다.
+>처음 콘텐츠 전송 후 클라우드 서비스에서 라이브로 전환되기 전에 최종 차등 콘텐츠 전송에 대한 콘텐츠 고정 기간을 단축하기 위해 자주 차등 콘텐츠 추가를 수행하는 것이 좋습니다. 첫 번째 수집에 사전 복사 단계를 사용한 경우 후속 추가 수집에 대해 사전 복사를 건너뛸 수 있습니다(추가 마이그레이션 세트 크기가 200GB 미만인 경우). 그 이유는 전체 과정에 시간이 추가될 수 있기 때문이다.
 
-수집 프로세스가 완료되면 델타 컨텐츠를 수집하려면 [추가 추출](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)를 클릭한 다음 추가 수집 방법을 사용합니다.
+일부 수집이 완료된 후 차등 콘텐츠를 수집하려면 다음을 실행해야 합니다. [추가 추출](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)를 클릭한 다음 를 사용하여 수집 방법 사용 **지우기** 옵션 **비활성화됨**. 다음을 읽으십시오. **지우기** 대상에 이미 있는 콘텐츠를 잃지 않도록 위의 설명을 참조하십시오.
 
-수집 작업 생성으로 시작하여 다음을 확인합니다. **지우기** 은 아래와 같이 수집 단계 중에 비활성화됩니다.
+수집 작업 생성으로 시작하여 다음을 확인합니다. **지우기** 는 아래와 같이 수집 중에 비활성화됩니다.
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
@@ -161,9 +142,9 @@ Release Orchestrator는 자동으로 업데이트를 적용하여 환경을 최�
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: 고유성 제약 조건이 속성을 위반했습니다 [jcr:uuid] 값 a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
 
-AEM의 각 노드에는 고유한 UUID가 있어야 합니다. 이 오류는 수집되는 노드가 대상 인스턴스의 다른 경로에 있는 노드와 동일한 UUID를 가지고 있음을 나타냅니다.
+AEM의 각 노드에는 고유한 UUID가 있어야 합니다. 이 오류는 수집되는 노드가 대상 인스턴스의 다른 경로에 있는 노드와 동일한 uuid를 가지고 있음을 나타냅니다.
 이 상황은 노드가 소스에서 추출과 후속 추출 사이에서 이동되면 발생할 수 있습니다 [추가 추출](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
-타겟의 노드가 수집과 후속 추가 수집 사이에서 이동된 경우에도 이 문제가 발생할 수 있습니다.
+대상의 노드가 수집과 후속 추가 수집 사이에서 이동된 경우에도 이 문제가 발생할 수 있습니다.
 
 이 충돌은 수동으로 해결해야 합니다. 콘텐츠에 익숙한 사용자는 두 노드 중 삭제할 노드를 참조하는 다른 콘텐츠를 염두에 두고 결정해야 합니다. 해결책은 불쾌한 노드 없이 다시 추가 추출이 수행될 것을 요구할 수 있다.
 
@@ -172,11 +153,11 @@ AEM의 각 노드에는 고유한 UUID가 있어야 합니다. 이 오류는 수
 다음의 또 다른 일반적인 원인 [추가 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 실패는 대상 인스턴스의 특정 노드에 대한 버전 충돌입니다. 이 오류를 식별하려면 Cloud Acceleration Manager UI를 사용하여 수집 로그를 다운로드하고 다음과 같은 항목을 찾습니다.
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: 참조된 노드를 삭제할 수 없음: 8a2289f4-b904-4bd0-8410-15e41e0976a8
 
-이 문제는 대상의 노드가 수집과 후속 추가 수집 사이에서 수정되어 새 버전이 만들어지는 경우 발생할 수 있습니다. 수집에서 &quot;버전 포함&quot;이 활성화된 경우 타겟에 버전 내역 및 기타 콘텐츠에서 참조하고 있는 최신 버전이 있으므로 충돌이 발생할 수 있습니다. 수정 버전 노드가 참조되기 때문에 수집 프로세스에서 수정 버전 노드를 삭제할 수 없습니다.
+대상의 노드가 수집과 후속 수집 사이에서 수정된 경우 이 문제가 발생할 수 있습니다 **지우지 않음** 수집 - 새 버전이 만들어집니다. 마이그레이션 세트가 &quot;버전 포함&quot;을 활성화한 상태로 추출된 경우 대상에 버전 내역 및 기타 콘텐츠에서 참조되는 최신 버전이 있으므로 충돌이 발생할 수 있습니다. 수정 버전 노드가 참조되기 때문에 수집 프로세스에서 수정 버전 노드를 삭제할 수 없습니다.
 
 해결책은 불쾌한 노드 없이 다시 추가 추출이 수행될 것을 요구할 수 있다. 또는 문제가 되는 노드의 소규모 마이그레이션 세트를 만들지만 &quot;버전 포함&quot;은 비활성화되어 있습니다.
 
-우수 사례에 따르면 지우기=false 및 &quot;버전 포함&quot;=true로 수집을 실행해야 하는 경우 마이그레이션 여정이 완료될 때까지 타겟의 콘텐츠를 가능한 한 적게 수정하는 것이 중요합니다. 그렇지 않으면 이러한 충돌이 발생할 수 있습니다.
+모범 사례에 따르면 **지우지 않음** 수집은 버전이 포함된 마이그레이션 세트를 사용하여 실행해야 합니다(즉, &quot;include versions&quot;=true 로 추출). 마이그레이션 여정이 완료될 때까지 대상의 컨텐츠를 가능한 한 적게 수정하는 것이 중요합니다. 그렇지 않으면 이러한 충돌이 발생할 수 있습니다.
 
 
 ## 다음 단계 {#whats-next}
@@ -184,4 +165,3 @@ AEM의 각 노드에는 고유한 UUID가 있어야 합니다. 이 오류는 수
 수집이 성공하면 AEM 색인화가 자동으로 시작됩니다. 다음을 참조하십시오 [콘텐츠 마이그레이션 후 색인화](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) 추가 정보.
 
 Cloud Service에 컨텐츠 수집을 완료하면 각 단계(추출 및 수집)의 로그를 보고 오류를 검색할 수 있습니다. 다음을 참조하십시오 [마이그레이션 세트에 대한 로그 보기](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md) 자세히 알아보십시오.
-
