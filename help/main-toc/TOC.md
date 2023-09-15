@@ -8,10 +8,10 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: eb0d74e4ab1feaf29de2254fed7c80e690622dce
+source-git-commit: 1a40ed62c57bfa704abe0aad669d1c628416d35a
 workflow-type: tm+mt
-source-wordcount: '4288'
-ht-degree: 96%
+source-wordcount: '4291'
+ht-degree: 99%
 
 ---
 
@@ -86,6 +86,7 @@ ht-degree: 96%
    + Cloud Manager 릴리스 정보 {#cloud-manager}
       + [최신 릴리스 정보](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
+         + [2023.8.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2023/2023-8-0.md)
          + [2023.7.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2023/2023-7-0.md)
          + [2023.6.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
          + [2023.5.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
@@ -321,13 +322,13 @@ ht-degree: 96%
    + 관리 {#administering}
       + 콘텐츠 조각 {#content-fragments}
          + [개요 및 개념](/help/sites-cloud/administering/content-fragments/overview.md)
-         + [GraphQL을 사용한 헤드리스 게재](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
+         + [GraphQL을 사용하여 Headless 게재](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
          + [콘텐츠 조각 설정](/help/sites-cloud/administering/content-fragments/setup.md)
          + [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
          + [콘텐츠 조각 관리](/help/sites-cloud/administering/content-fragments/managing.md)
-         + [조각 컨텐츠 작성](/help/sites-cloud/administering/content-fragments/authoring.md)
+         + [조각 콘텐츠 작성](/help/sites-cloud/administering/content-fragments/authoring.md)
          + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
-         + [삭제 고려 사항](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
+         + [고려 사항 삭제](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [구조 분석](/help/sites-cloud/administering/content-fragments/analysis.md)
          + [키보드 단축키](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
          + [콘텐츠 조각을 사용하여 작업](/help/sites-cloud/administering/content-fragments/content-fragments.md)
@@ -577,7 +578,7 @@ ht-degree: 96%
          + [적응형 Forms Analytics 보고서 보기 및 이해](/help/forms/view-understand-aem-forms-analytics-reports.md)
          + [Microsoft Power Automate와 적응형 양식 통합](/help/forms/forms-microsoft-power-automate-integration.md)
          + [AEM Sites 페이지에 적응형 양식 임베드](/help/forms/embed-adaptive-form-aem-sites.md)
-         + [핵심 구성 요소를 기반으로 하는 적응형 양식을 외부 웹 페이지에 임베드](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+         + [외부 웹 페이지에 핵심 구성 요소 기반 적응형 양식 임베드](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
       + 양식 데이터 모델 {#use-form-data-model}
          + [데이터 소스를 Cloud Service에 연결](/help/forms/data-integration.md)
          + [데이터 소스 구성](/help/forms/configure-data-sources.md)
@@ -594,7 +595,7 @@ ht-degree: 96%
       + 코어 구성 요소 {#authoring-adaptive-forms-core-components}
          + 적응형 양식 만들기 {#create-an-adaptive-form-on-forms-cs}
             + [적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md)
-            + [적응형 양식 단편 만들기](/help/forms/adaptive-form-fragments-core-components.md)
+            + [적응형 양식 조각 만들기](/help/forms/adaptive-form-fragments-core-components.md)
             + [적응형 양식의 테마 만들기 - 핵심 구성 요소](/help/forms/using-themes-in-core-components.md)
             + [적응형 양식의 기록 문서 생성](/help/forms/generate-document-of-record-core-components.md)
             + [기계 번역 또는 인간 번역을 사용하여 적응형 양식 번역](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
@@ -602,7 +603,7 @@ ht-degree: 96%
             + [반복 가능한 섹션으로 양식 만들기](/help/forms/create-forms-repeatable-sections.md)
             + [적응형 양식에 대한 제출 액션 구성](/help/forms/configure-submit-actions-core-components.md)
             + [적응형 양식에서 Google reCAPTCHA 사용](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [적응형 양식에 사용자 지정 오류 처리기 추가](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
+            + [적응형 양식에서 사용자 정의 오류 핸들러 추가](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
       + 기초 구성 요소 {#authoring-adaptive-forms-foundation-components}
          + PDF 양식을 적응형 양식으로 변환 {#afcs}
             + [자동 양식 전환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
