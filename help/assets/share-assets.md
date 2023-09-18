@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 49abc947db97de5ceb248383b556e77d4fc68060
 workflow-type: tm+mt
-source-wordcount: '1630'
-ht-degree: 5%
+source-wordcount: '1344'
+ht-degree: 6%
 
 ---
 
@@ -27,34 +27,6 @@ ht-degree: 5%
 * 다음을 사용하여 공유 [[!DNL Adobe Asset Link]](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html).
 * 다음을 사용하여 공유 [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html).
 
-## 사전 요구 사항 {#prerequisites}
-
-다음 작업을 수행하려면 관리자 권한이 필요합니다. [링크로 자산을 공유하기 위한 설정 구성](#config-link-share-settings).
-
-## 링크 공유 설정 구성 {#config-link-share-settings}
-
-[!DNL Experience Manager Assets] 기본 링크 공유 설정을 구성할 수 있습니다.
-
-1. 다음을 클릭합니다. [!DNL Experience Manager] 로고, 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 에셋]** > **[!UICONTROL 에셋 구성]** > **[!UICONTROL 링크 공유]**.
-1. 초기 설정:
-
-   * **원본 포함:**
-
-      * 선택 `Select Include Originals` 을(를) 선택하려면 `Include Originals` 기본적으로 링크 공유 대화 상자의 옵션입니다.
-      * 적절한 옵션을 선택하여 비헤이비어를 지정합니다. `Include Originals` 편집 가능, 읽기 전용 또는 숨김 옵션입니다.
-   * **렌디션 포함:**
-      * 선택 `Select Include Renditions` 옵션 선택 `Include Renditions` 기본적으로 링크 공유 대화 상자의 옵션입니다.
-      * 적절한 옵션을 선택하여 비헤이비어를 선택합니다. `Include Renditions` 편집 가능, 읽기 전용 또는 숨김 옵션입니다.
-
-1. 에서 링크의 기본 유효 기간을 지정합니다. `Validity Period` 의 필드 `Expiration date` 섹션.
-
-1. **[!UICONTROL 링크 공유]** 작업 표시줄의 단추:
-   * 이 있는 모든 사용자 `jcr:modifyAccessControl` 사용 권한은 [!UICONTROL 링크 공유] 옵션을 선택합니다. 기본적으로 모든 관리자가 볼 수 있습니다. 다음 [!UICONTROL 링크 공유] 기본적으로 모든 사용자가 단추를 볼 수 있습니다. 정의된 그룹에 대해서만 이 옵션을 표시하도록 구성하거나 특정 그룹에서 이 옵션을 거부할 수도 있습니다. 선택 `Allow only for groups` 특정 그룹이 `Share Link` 옵션을 선택합니다. 선택 `Deny from groups` 을(를) 거부하려면 `Share Link` 특정 그룹의 옵션입니다. 이러한 옵션 중 하나를 선택하면 다음을 사용하여 그룹 이름을 지정합니다. `Select Groups` 허용하거나 거부해야 하는 그룹 이름을 추가할 필드입니다.
-
-전자 메일 구성 관련 설정을 확인하려면 다음을 방문하십시오. [이메일 서비스 설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
-
-![이메일 서비스 구성](config-email-service.png)
-
 ## 링크로 자산 공유 {#sharelink}
 
 링크를 통해 에셋을 공유하면 외부 당사자, 마케터 및 기타 사용자가 리소스를 사용할 수 있는 편리한 방법입니다 [!DNL Experience Manager] 사용자. 이 기능을 사용하면 익명 사용자가 공유된 에셋에 액세스하고 다운로드할 수 있습니다. 공유 링크에서 에셋을 다운로드할 때 [!DNL Experience Manager Assets] 는 빠르고 중단 없는 다운로드를 제공하는 비동기 서비스를 사용합니다. 다운로드할 자산은 관리 가능한 파일 크기의 ZIP 아카이브에 백그라운드로 대기됩니다. 대규모 다운로드의 경우 다운로드는 파일 크기당 100GB의 여러 파일로 번들로 제공됩니다.
@@ -70,12 +42,11 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 링크 공유 기능을 사용하여 에셋을 공유하는 방법에는 두 가지가 있습니다.
 
-1. 공유 링크 생성, [에셋 링크 복사 및 공유](#copy-and-share-assets-link) (다른 사용자와 함께)
-1. 공유 링크 생성 및 [이메일을 통해 에셋 링크 공유](#share-assets-link-through-email). 만료 날짜 및 시간과 같은 기본값을 수정하고 원본 에셋과 렌디션을 다운로드할 수 있습니다. 이메일 주소를 추가하여 여러 사용자에게 이메일을 보낼 수 있습니다.
+1. 공유 링크 생성, [에셋 링크 복사 및 공유](#copy-and-share-assets-link) (다른 사용자와 함께) 링크의 기본 만료 시간은 1일입니다. 복사된 링크를 다른 사용자와 공유할 때 만료 시간을 변경할 수 없습니다.
 
-![링크 공유 대화 상자](assets/share-link.png)
+1. 공유 링크 생성 및 [이메일을 통해 에셋 링크 공유](#share-assets-link-through-email). 이 경우 만료 날짜 및 시간과 같은 기본값을 수정하고 원본 에셋과 렌디션을 다운로드할 수 있습니다. 이메일 주소를 추가하여 여러 사용자에게 이메일을 보낼 수 있습니다.
 
-두 경우 모두 만료 날짜 및 시간과 같은 기본값을 수정하고 원본 에셋과 렌디션을 다운로드할 수 있습니다.
+   ![링크 공유 대화 상자](assets/link-sharing-dialog.png)
 
 ### 에셋 링크 복사 및 공유{#copy-and-share-asset-link}
 
@@ -84,9 +55,6 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 1. 에 로그인 [!DNL Experience Manager Assets] 다음 위치로 이동 **[!UICONTROL 파일]**.
 1. 에셋 또는 에셋을 포함하는 폴더를 선택합니다. 도구 모음에서 를 클릭합니다 **[!UICONTROL 링크 공유]**.
 1. 다음 **[!UICONTROL 링크 공유]** 에서 자동 생성된 에셋 링크가 포함된 대화 상자가 나타납니다. **[!UICONTROL 링크 공유]** 필드.
-1. 필요에 따라 공유 링크의 만료 날짜를 설정합니다.
-1. 아래 **[!UICONTROL 링크 설정]**, 선택 또는 선택 해제 `Include Originals` 또는 `Include Renditions` 둘 중 하나를 포함하거나 제외합니다. 최소 옵션 선택은 필수입니다.
-1. 선택한 에셋의 이름이 [!DNL Share Link] 대화 상자.
 1. 에셋 링크를 복사하여 사용자와 공유합니다.
 
 ### 이메일 알림을 통해 에셋 링크 공유 {#share-assets-link-through-email}
@@ -96,7 +64,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 1. 에셋 또는 에셋을 포함하는 폴더를 선택합니다. 도구 모음에서 를 클릭합니다 **[!UICONTROL 링크 공유]**.
 1. 다음 **[!UICONTROL 링크 공유]** 에서 자동 생성된 에셋 링크가 포함된 대화 상자가 나타납니다. **[!UICONTROL 링크 공유]** 필드.
 
-   * 이메일 주소 상자에 링크를 공유할 사용자의 이메일 주소를 입력합니다. You can share the link with multiple users. 사용자가 조직의 멤버인 경우 드롭다운 목록에 표시되는 제안 사항에서 이메일 주소를 선택합니다. 이메일 주소 텍스트 필드에 링크를 공유할 사용자의 이메일 주소를 입력하고 를 클릭합니다 [!UICONTROL 입력]. You can share the link with multiple users.
+   * 이메일 주소 상자에 링크를 공유할 사용자의 이메일 ID를 입력합니다. You can share the link with multiple users. 사용자가 조직의 멤버인 경우 드롭다운 목록에 표시되는 제안 사항에서 이메일 ID를 선택합니다. 사용자가 외부 사용자인 경우 전체 이메일 ID를 입력하고 키를 누릅니다 **[!UICONTROL 입력]**; 이메일 ID가 사용자 목록에 추가됩니다.
 
    * 다음에서 **[!UICONTROL 제목]** 상자에 제목을 입력하여 공유된 에셋의 용도를 지정합니다.
    * 다음에서 **[!UICONTROL 메시지]** 필요한 경우 상자에 메시지를 입력합니다.
@@ -105,7 +73,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 1. 클릭 **[!UICONTROL 공유]**. 링크가 사용자와 공유되었음을 확인하는 메시지가 표시됩니다. 사용자는 공유 링크가 포함된 이메일을 받습니다.
 
-![링크 공유 전자 메일](assets/link-sharing-email-notification.png)
+   ![링크 공유 전자 메일](assets/link-sharing-email-notification.png)
 
 ### 에셋 링크를 사용하여 에셋 다운로드
 
@@ -121,7 +89,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
   ![대기열 다운로드](assets/queue-download.png)
 
-* 다운로드 파일이 준비되면 **[!UICONTROL 받은 편지함 다운로드]** 다운로드 상태를 보는 옵션입니다. 대량 다운로드의 경우 **[!UICONTROL 새로 고침]** 상태를 업데이트하는 단추입니다.
+* 다운로드 파일이 준비되는 동안 **[!UICONTROL 받은 편지함 다운로드]** 다운로드 상태를 보는 옵션입니다. 대량 다운로드의 경우 **[!UICONTROL 새로 고침]** 상태를 업데이트하는 단추입니다.
 
   ![받은 편지함 다운로드](assets/link-sharing-download-inbox.png)
 
@@ -234,13 +202,20 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 >* `[aem_server]:[port]/linkexpired.html`
 
 <!--
+## Configure Day CQ mail service {#configmailservice}
+
+Before you can share assets as links, configure the email service.
+
+1. Click or tap the Experience Manager logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the list of services, locate **[!UICONTROL Day CQ Mail Service]**.
-1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service** with the details mentioned against their names:
+1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service]** with the details mentioned against their names:
 
     * SMTP server host name: email server host name
     * SMTP server port: email server port
     * SMTP user: email server user name
     * SMTP password: email server password
+
+1. Click/tap **[!UICONTROL Save]**.
 -->
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
