@@ -3,8 +3,8 @@ title: 콘텐츠 마이그레이션 후 색인화
 description: 마이그레이션 프로세스에서 대상 Cloud Service 인스턴스에 수집된 콘텐츠를 색인화하는 방법을 알아봅니다.
 source-git-commit: 22c5cbf300bb0b3b0db04fcfa669dde44197c326
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '514'
+ht-degree: 8%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_indexing"
 >title="콘텐츠 색인화"
->abstract="AEM 색인화는 콘텐츠를 Cloud Service 인스턴스로 마이그레이션한 후 해당 인스턴스에 있는 콘텐츠를 색인화하는 것을 말합니다. 해당 인스턴스에서 콘텐츠 검색을 지원하려면 색인화가 필요합니다."
+>abstract="AEM 색인화는 Cloud Service 인스턴스로 콘텐츠를 마이그레이션한 후 콘텐츠를 색인화하는 것을 의미합니다. 해당 인스턴스의 콘텐츠 검색을 지원하기 위해서는 색인화가 필요합니다."
 
 Cloud Acceleration Manager가 Cloud Service 인스턴스로의 콘텐츠 수집을 완료했으면 사용할 준비가 되었습니다. 처음에는 콘텐츠가 색인화되지 않아 검색 가능한 콘텐츠 및 성능 저하와 같은 문제가 예상되는 불안정한 환경이 발생할 수 있습니다.
 인스턴스에서 최적의 성능을 위해 마이그레이션 프로세스가 콘텐츠 인덱싱을 자동으로 시작합니다. 인덱싱 진행 상황을 모니터링하는 것 외에는 수행할 작업이 없습니다.

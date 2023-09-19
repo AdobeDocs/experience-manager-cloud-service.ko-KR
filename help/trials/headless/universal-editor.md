@@ -4,7 +4,7 @@ description: Universal Editor를 사용하여 모든 구현에서 컨텍스트�
 hidefromtoc: true
 index: false
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 100%
 

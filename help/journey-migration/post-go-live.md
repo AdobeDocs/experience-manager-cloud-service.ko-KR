@@ -15,8 +15,8 @@ ht-degree: 28%
 >id="aemcloud_golive_troubleshooting"
 >title="AEM 문제 해결"
 >abstract="지속적인 개발을 목적으로 모범 사례를 검토하고 개발자 콘솔 및 CRXDE Lite 등의 도구와 함께 로그를 관리하여 AEM 문제를 해결할 수 있습니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html" text="로그 액세스 및 관리"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 개발 도구"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=ko-KR" text="로그 액세스 및 관리"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=ko-KR#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 개발 도구"
 
 이 여정은 마지막 부분이므로 마이그레이션이 완료된 후 문제를 모니터링하고 성능을 향상시키는 방법에 대해 알아봅니다. 임시 파일을 정리하고, 지속적인 개발을 위한 우수 사례를 검토하고, 로그를 관리해야 합니다.
 
@@ -59,9 +59,9 @@ AEM as a Cloud Service 개발자 환경 디버깅은 개발자 콘솔에서 개�
 >id="aemcloud_golive_support"
 >title="도움말 및 지원"
 >abstract="자세한 설명이 필요하거나 문제를 해결하려면 Adobe의 AEM 지원 팀에 문의하십시오."
->additional-url="https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud 지원"
+>additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud 지원"
 
-Cloud Service 액세스에 대한 질문이 있는 경우 Adobe 담당자에게 문의하거나 [Experience Cloud 지원](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html) 을 참조하십시오.
+Cloud Service 액세스에 대한 질문이 있는 경우 Adobe 담당자에게 문의하거나 [Experience Cloud 지원](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) 을 참조하십시오.
 
 ## 문서 학습 {#document-learnings}
 
