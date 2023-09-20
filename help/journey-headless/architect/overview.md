@@ -3,9 +3,9 @@ title: AEM Headless 콘텐츠 설계자 여정
 description: AEM의 강력하고 유연한 Headless 기능과 각각의 능력, 그리고 사용자의 첫 Headless 프로젝트에서 콘텐츠를 모델링하는 방법에 대한 가이드 여정을 시작해 보십시오.
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
 source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '802'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
