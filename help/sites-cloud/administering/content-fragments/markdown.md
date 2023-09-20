@@ -4,16 +4,16 @@ description: 콘텐츠 조각 편집기에서 Markdown 구문을 사용하여 �
 feature: Content Fragments
 role: User
 source-git-commit: af97fec754edae6216551763fd20cad5ee07179c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '557'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 
 # Markdown {#markdown}
 
-다음과 같은 경우: [작성](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) 보유하고 있는 콘텐츠 조각 [여러 줄 텍스트 필드](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) 을 사용하여 정의됨 **기본 유형** / **Markdown**. 콘텐츠 조각 편집기는 *Markdown* 페이지 작성 및 Headless 전달에 필요한 콘텐츠를 쉽게 작성할 수 있는 구문:
+콘텐츠 조각을 [작성](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown)하는 경우, **Markdown**&#x200B;의 **기본 유형**&#x200B;으로 [여러 줄 텍스트 필드](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)를 정의할 수 있습니다. 콘텐츠 조각 편집기에서 *Markdown* 구문을 사용하여 손쉽게 페이지 작성 및 Headless 게재에 필요한 콘텐츠를 작성할 수 있습니다.
 
 ![편집기의 Markdown 여러 줄 텍스트 필드](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 
