@@ -3,9 +3,9 @@ title: New Relic One
 description: AEM as a Cloud Service를 위한 New Relic One APM(Application Performance Monitoring) 서비스에 대한 정보와 액세스하는 방법에 대해 알아봅니다.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 source-git-commit: 8ce7c26c6552c77bc845f76a805768a931b9d532
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1627'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -116,7 +116,7 @@ New Relic One에 로그인하는 동안 이메일을 확인하라는 메시지�
 
 이메일 주소를 확인하지 않는 경우, New Relic은 이메일 주소와 연결된 가장 최근에 만들어진 사용자 레코드로 로그인을 시도합니다. 로그인할 때마다 이메일을 확인하지 않으려면 로그인 화면에서 **내 정보 저장** 확인란을 클릭합니다.
 
-도움이 더 필요하면 [AEM 지원 포털](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)을 사용하여 지원 티켓을 여십시오.
+도움이 더 필요하면 [AEM 지원 포털](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)을 사용하여 지원 티켓을 여십시오.
 
 ## New Relic One 액세스 문제 해결 {#troubleshooting}
 
@@ -150,7 +150,7 @@ New Relic One에 사용자를 추가하는 경우 다음 제한이 적용됩니�
 * New Relic에 추가된 사용자는 **제한됨** 유형이 됩니다. [자세한 내용은 New Relic 설명서를 ](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)참조하십시오.
 * AEM as a Cloud Service는 New Relic One APM 솔루션만 제공하며 경고, 로깅 또는 API 통합에 대한 지원은 제공하지 않습니다.
 
-AEM as a Cloud Service 프로그램용 New Relic One에 대한 추가 도움말 또는 추가 지침을 보려면 [AEM 지원 포털](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)을 사용하여 지원 티켓을 엽니다.
+AEM as a Cloud Service 프로그램용 New Relic One에 대한 추가 도움말 또는 추가 지침을 보려면 [AEM 지원 포털](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)을 사용하여 지원 티켓을 엽니다.
 
 ## New Relic One에 대해 자주 묻는 질문 {#faqs}
 
@@ -170,9 +170,9 @@ New Relic One 계정은 Adobe에서 관리하는 주 계정에 연결되어 있�
 * AEM as a Cloud Service 환경은 하나의 New Relic One 계정에만 보고합니다.
 * New Relic One에 대한 전체 모니터링 지표 및 이벤트는 7일 동안 유지됩니다.
 
-### Adobe이 New Relic One에서 경고 알림을 전송합니까? {#alerting-new-relic}
+### Adobe는 New Relic One에서 경고 알림을 전송합니까? {#alerting-new-relic}
 
-Adobe은 가시성 목적으로만 New Relic One 액세스를 제공하며 고객 경고 또는 내부 운영 경고 용도로 활용하지 않습니다. 인시던트에 대한 알림은 다음을 사용하여 전송됩니다. [사용자 알림 프로필.](/help/journey-onboarding/notification-profiles.md)
+Adobe는 가시성 목적으로만 New Relic One 액세스를 제공하고 고객 경고나 내부 작업 경고에는 이를 활용하지 않습니다. 모든 인시던트에 대한 알림은 [사용자 알림 프로필](/help/journey-onboarding/notification-profiles.md)을 통해 전송됩니다.
 
 ### New Relic One Cloud Service 데이터에 접근할 수 있는 권한은 누구에게 있습니까? {#access-new-relic-cloud}
 
