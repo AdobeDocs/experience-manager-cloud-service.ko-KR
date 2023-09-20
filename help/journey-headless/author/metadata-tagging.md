@@ -3,9 +3,9 @@ title: 콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 �
 description: 콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
 source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '191'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 92%
 
 ## 메타데이터 및 태그 추가 {#adding-metadata-and-tags}
 
-콘텐츠 조각 편집기의 오른쪽 패널에서 메타데이터와 태그를 추가할 수 있습니다.
+콘텐츠 조각 편집기의 오른쪽 패널에서 메타데이터 및 태그를 추가할 수 있습니다.
 
 ![콘텐츠 조각 편집기 - Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
