@@ -3,7 +3,7 @@ title: 경험 조각
 description: Adobe Experience Manager as a Cloud Service 경험 조각을 사용하여 경험을 재사용이 가능하고 및 유연하게 만듭니다.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: bad2225e7c5f2554ebd51c0e7e737296c3aa552b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2044'
 ht-degree: 100%
 
@@ -79,7 +79,7 @@ Adobe Experience Manager as a Cloud Service 내 경험 조각은
 
 * [이러한 폴더에 허용된 템플릿을 구성합니다](#configure-allowed-templates-folder).
 
-폴더를 만들면 다음을 수행할 수 있습니다.
+폴더를 만들면 다음과 같은 작업을 수행할 수 있습니다.
 
 * 경험 조각에 의미 있는 구조를 만들 수 있습니다(예: 분류에 따라).
 
