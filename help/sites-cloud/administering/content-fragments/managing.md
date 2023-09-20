@@ -1,28 +1,28 @@
 ---
 title: 콘텐츠 조각 관리
-description: Headless 콘텐츠의 기반으로 또는 페이지 작성을 위해 콘솔 및 편집기에서 AEM 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
+description: Headless 콘텐츠 기반 또는 페이지 작성을 위해 콘솔과 편집기에서 AEM 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
 feature: Content Fragments
 role: User, Developer, Architect
 source-git-commit: d381cc80e2c15ea35f9fd23baa78806ce15ec1af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2540'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
 
 # 콘텐츠 조각 관리 {#managing-content-fragments}
 
-을(를) 관리하는 방법 알아보기 **컨텐츠 조각** Adobe Experience Manager(AEM as a Cloud Service)의 전용 [콘텐츠 조각 콘솔](#content-fragments-console), 및 [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor). 이러한 콘텐츠 조각은 Headless 콘텐츠의 기반으로 사용하거나 페이지 작성에 사용할 수 있습니다.
+전용 [콘텐츠 조각 콘솔](#content-fragments-console)과 [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)에서 Adobe Experience Manager(AEM) as a Cloud Service의 **콘텐츠 조각**&#x200B;을 관리하는 방법에 대해 알아봅니다. 이 콘텐츠 조각을 Headless 콘텐츠 기반 또는 페이지 작성에 사용할 수 있습니다.
 
 >[!NOTE]
 >
->필요한 경우 프로젝트 팀이 콘솔 및 편집기를 사용자 지정할 수 있습니다. 다음을 참조하십시오 [콘텐츠 조각 콘솔 및 편집기 맞춤화](/help/implementing/developing/extending/content-fragments-console-and-editor.md) 을 참조하십시오.
+>프로젝트 팀은 필요한 경우 콘솔과 편집기를 사용자 정의할 수 있습니다. 자세한 내용은 [콘텐츠 조각 콘솔 및 편집기 사용자 정의](/help/implementing/developing/extending/content-fragments-console-and-editor.md)를 참조하십시오.
 
-다음을 정의한 후 [컨텐츠 조각 모델](#creating-a-content-model) 이를 사용하여 다음을 수행할 수 있습니다.
+[콘텐츠 조각 모델](#creating-a-content-model)을 정의한 후 이를 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 
-* [콘텐츠 조각 만들기](#creating-a-content-fragment).
-* 그런 다음 를 엽니다. [콘텐츠 조각 편집기](#opening-the-fragment-editor) 끝 [콘텐츠 작성 및 변형 관리](#editing-the-content-of-your-fragment).
+* [콘텐츠 조각을 만듭니다](#creating-a-content-fragment).
+* 그런 다음 [콘텐츠 조각 편집기](#opening-the-fragment-editor)를 열어 [콘텐츠를 작성하고 변형을 관리합니다](#editing-the-content-of-your-fragment).
 * [태그 관리](#manage-tags)
 * [속성(메타데이터) 보기 및 편집](#viewing-and-editing-properties)
 * [구조 트리 보기](/help/sites-cloud/administering/content-fragments/authoring.md#structure-tree)
@@ -31,8 +31,8 @@ ht-degree: 62%
 >
 >다음과 같은 경우 콘텐츠 조각을 사용할 수 있습니다.
 >
->* 대상 [GraphQL에서 콘텐츠 조각을 사용하여 Headless 콘텐츠 게재](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md),
->* 페이지 작성 시([콘텐츠 조각을 사용하여 페이지 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 참조)
+>* [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠 게재](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md) 시,
+>* 페이지 작성 시([콘텐츠 조각을 사용하여 페이지 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 참조).
 
 >[!NOTE]
 >
@@ -54,11 +54,11 @@ ht-degree: 62%
 
 * [콘텐츠 조각 콘솔의 콘텐츠 조각에 대한 작업](#actions-selected-content-fragment)
 
-* [콘솔에 표시되는 열 선택](#select-columns-console)
+* [콘솔에 표시된 열 선택](#select-columns-console)
 
 * [콘텐츠 조각 콘솔에서 검색 및 필터링](#filtering-fragments)
 
-* 몇 가지 [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다
+* 몇 가지 [](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)키보드 단축키를 이 콘솔에서 사용할 수 있습니다.
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ ht-degree: 62%
 
 >[!CAUTION]
 >
->이 콘솔은 *전용* 온라인 Adobe Experience Manager(AEM) as a Cloud Service으로 이용할 수 있습니다.
+>이 콘솔은 온라인 Adobe Experience Manager(AEM) as a Cloud Service *에서만* 사용할 수 있습니다.
 
 ### 콘솔의 기본 구조 및 처리 {#basic-structure-handling-content-fragments-console}
 
@@ -79,7 +79,7 @@ ht-degree: 62%
 * 상단 도구 모음
    * 표준 AEM 기능을 제공합니다.
    * IMS 조직도 표시합니다.
-   * 다양한 기능 제공 [작업](#actions-unselected)
+   * 다양한 [작업](#actions-unselected) 제공
 * 왼쪽 패널
    * 여기에서 폴더 트리를 숨기거나 표시할 수 있습니다.
    * 트리의 특정 분기를 선택할 수 있습니다.
@@ -87,23 +87,23 @@ ht-degree: 62%
 * 기본/오른쪽 패널 - 여기에서 다음 작업을 수행할 수 있습니다.
    * 선택한 트리 분기에 있는 모든 콘텐츠 조각 목록 표시:
       * 선택한 폴더의 콘텐츠 조각이 표시되고 모든 하위 폴더가 표시됩니다.
-         * 위치는 탐색 표시로 표시됩니다. 위치를 변경하는 데에도 사용할 수 있습니다.
-      * [각 조각에 대한 정보가 표시됩니다](#information-content-fragments)
-         * [표시할 열을 선택할 수 있습니다](#select-columns-console)
+         * 위치는 이동 경로로 표시됩니다. 위치를 변경하는 데에도 사용할 수 있습니다.
+      * [각 조각에 대한 정보가 표시됩니다.](#information-content-fragments)
+         * [표시할 열을 선택할 수 있습니다.](#select-columns-console)
       * 콘텐츠 조각에 대한 [다양한 정보 필드](#information-content-fragments)에서 링크가 제공됩니다. 필드에 따라 다음 작업을 수행할 수 있습니다.
          * 편집기에서 적절한 조각 열기
          * 참조에 대한 정보 표시
          * 조각의 언어 버전에 대한 정보 표시
-      * [기타 특정 정보 필드](#information-content-fragments) 콘텐츠 조각 정보 를 다음 용도로 사용할 수 있습니다. [빠른 필터링](#fast-filtering):
-         * 열에서 값을 선택하면 필터로 즉시 적용됩니다.
-         * 빠른 필터링은 **모델**, **상태**, **수정한 사람**, **태그** 및 **게시자** 열.
+      * 콘텐츠 조각에 대한 [기타 특정 정보 필드](#information-content-fragments)를 [빠른 필터링](#fast-filtering)에 사용할 수 있습니다.
+         * 열에서 값을 선택하면 필터에 즉시 적용됩니다.
+         * **모델**, **상태**, **수정자**, **태그** 및 **게시자** 열에 대해 빠른 필터링이 지원됩니다.
       * 열 머리글 위로 마우스를 가져가면 드롭다운 작업 선택기와 폭 슬라이더가 표시됩니다. 이를 사용하면 다음 작업을 수행할 수 있습니다.
          * 정렬 - 오름차순 또는 내림차순에 적합한 작업 선택
 이렇게 하면 해당 열에 따라 전체 테이블이 정렬됩니다. 정렬은 해당 열에서만 사용할 수 있습니다.
          * 열 크기 조정 - 작업 또는 폭 슬라이더 사용
-      * 추가 작업을 위해 하나 이상의 조각을 선택합니다. [작업](#actions-selected-content-fragment)
-   * 사용 [검색](#searching-fragments) 상자
-   * 를 엽니다. [필터 패널](#filtering-fragments)
+      * 추가 [작업](#actions-selected-content-fragment)에 하나 이상의 조각을 선택합니다.
+   * [검색](#searching-fragments) 상자 사용
+   * [필터 패널](#filtering-fragments) 열기
 
 ### 액션 {#actions}
 
@@ -124,10 +124,10 @@ ht-degree: 62%
 
   >[!NOTE]
   >
-  >**자산** 콘솔을 사용하여 이미지, 비디오 등의 자산에 액세스할 수 있습니다.  이 콘솔은 다음과 같은 방법으로 액세스할 수 있습니다.
+  >**자산** 콘솔을 사용하여 이미지, 비디오 등의 자산에 액세스할 수 있습니다. 이 콘솔은 다음과 같은 방법으로 액세스할 수 있습니다.
   >
   >* 콘텐츠 조각 콘솔에서 **자산에서 열기** 링크 사용
-  >* 전 세계에서 직접 **탐색** 창
+  >* 전역 **탐색** 창에서 바로 액세스
 
 #### (선택한) 콘텐츠 조각 작업 {#actions-selected-content-fragment}
 
@@ -136,7 +136,7 @@ ht-degree: 62%
 ![콘텐츠 조각 콘솔 - 선택한 조각에 대한 도구 모음](assets/cf-managing-console-fragment-toolbar.png)
 
 * **[새 편집기에서 열기](#editing-the-content-of-your-fragment)**
-* **[열기](/help/assets/content-fragments/content-fragments-variations.md)** (원본 편집기에서)
+* (원본 편집기에서) **[열기](/help/assets/content-fragments/content-fragments-variations.md)**
 * **[게시](#publishing-and-previewing-a-fragment)** (및 **[게시 취소](#unpublishing-a-fragment)**)
 * **[태그 관리](#manage-tags)**
 * **[복사](/help/assets/manage-digital-assets.md)**
@@ -150,11 +150,11 @@ ht-degree: 62%
 
 >[!NOTE]
 >
->사용 **열기** 에서 선택한 조각을 열려면 *원본* 편집자.
+>**열기**&#x200B;를 사용하여 *원본* 편집기에서 선택한 조각을 엽니다.
 
 >[!NOTE]
 >
->게시, 게시 취소, 삭제, 이동, 이름 바꾸기 및 복사와 같은 작업은 각 비동기 작업을 트리거합니다. AEM 비동기 작업 UI를 통해 해당 작업의 진행 상태를 모니터링할 수 있습니다.
+>게시, 게시 취소, 삭제, 이동, 이름 바꾸기 및 복사와 같은 작업과 비동기 작업 트리거와 같은 작업입니다. AEM 비동기 작업 UI를 통해 해당 작업의 진행 상태를 모니터링할 수 있습니다.
 
 ### 콘텐츠 조각에 대한 정보 제공 {#information-content-fragments}
 
@@ -191,13 +191,13 @@ ht-degree: 62%
    * 정보만.
    * [빠른 필터링](#fast-filtering)에 사용할 수 있습니다.
 * **참조자**:
-   * 모든 항목을 나열하는 대화 상자를 여는 링크를 제공합니다 [상위 참조](#parent-references-fragment)  컨텐츠 조각, 경험 조각 및 페이지 참조를 포함하는 조각의 특정 참조를 열려면 대화 상자에서 **제목**&#x200B;을 클릭합니다.
+   * 해당 조각의 모든 [상위 참조](#parent-references-fragment)를 표시하는 대화 상자를 여는 링크가 제공됩니다. 여기에는 콘텐츠 조각, 경험 조각 및 페이지 참조가 포함됩니다. 특정 참조를 열려면 대화 상자에서 **제목**&#x200B;을 클릭합니다.
 
      ![콘텐츠 조각 콘솔 - 참조 대화 상자](assets/cf-managing-console-references-dialog.png)
 
-* **언어**: 다음을 나타냅니다. [언어](#language-copies-fragment) 사본
+* **언어**: 모든 [언어](#language-copies-fragment) 사본 표시
 
-   * 총 로컬/의 수와 함께 콘텐츠 조각의 로케일을 나타냅니다.[언어](#language-copies-fragment)  콘텐츠 조각과 연결된 복사본.
+   * 콘텐츠 조각과 관련된 총 로컬/[언어](#language-copies-fragment) 사본 수와 함께 콘텐츠 조각 로케일을 표시합니다.
 
      ![콘텐츠 조각 콘솔 - 언어 표시기](assets/cf-managing-console-language-indicator.png)
 
@@ -212,7 +212,7 @@ ht-degree: 62%
 
 ### 콘텐츠 모델 만들기 {#creating-a-content-model}
 
-[컨텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) 구조화된 컨텐츠와 함께 컨텐츠 조각을 생성하기 전에 을 활성화하고 생성해야 합니다.
+구조화된 콘텐츠와 함께 콘텐츠 조각을 만들기 전에 [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)을 활성화하고 만들어야 합니다.
 
 ### 콘텐츠 조각 만들기 {#creating-a-content-fragment}
 
@@ -238,53 +238,58 @@ ht-degree: 62%
 
 ## 콘텐츠 조각 상태 {#statuses-content-fragments}
 
-콘텐츠 조각은 존재하는 동안 다음과 같이 몇 가지 상태를 가질 수 있습니다. [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) 및 [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md):
+콘텐츠 조각은 존재하는 동안 [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)과 [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md)에 표시되는 것과 같이 여러 상태를 가질 수 있습니다.
 
-* **신규** (회색) 새 콘텐츠 조각이 생성되었지만 콘텐츠 조각 편집기에서 편집하거나 연 적이 없기 때문에 콘텐츠가 없습니다.
-* **초안** (파란색) 누군가 콘텐츠 조각 편집기에서 (새) 콘텐츠 조각을 편집하거나 열었지만 아직 게시되지 않았습니다.
-* **게시됨** (녹색) 콘텐츠 조각이 게시되었습니다.
-* **수정됨** (주황색) 콘텐츠 조각이 게시된 후 수정을 게시하기 전에 편집되었습니다.
-* **게시 취소됨** (빨간색) 콘텐츠 조각의 게시가 취소되었습니다.
+* **새로 만들기**(회색)
+콘텐츠 조각 편집기에서 새 콘텐츠 조각을 만들었지만 편집 또는 열리지 않는 콘텐츠는 없습니다.
+* **초안**(파란색)
+누군가 콘텐츠 조각 편집기에서 (새) 콘텐츠 조각을 편집하거나 열었지만 아직 게시되지 않았습니다.
+* **게시됨**(녹색)
+콘텐츠 조각이 게시되었습니다.
+* **수정됨**(주황색)
+콘텐츠 조각이 게시된 후 수정을 게시하기 전에 편집되었습니다.
+* **게시 취소됨**(빨간색)
+콘텐츠 조각의 게시가 취소되었습니다.
 
 ## 조각(및 변형)의 콘텐츠 편집 {#editing-the-content-of-your-fragment}
 
 >[!IMPORTANT]
 >
->자세한 내용은 [콘텐츠 조각 작성 을 참조하십시오](/help/sites-cloud/administering/content-fragments/authoring.md)
+>자세한 내용은 [콘텐츠 조각 작성 참조](/help/sites-cloud/administering/content-fragments/authoring.md)
 
 편집할 조각을 열려면
 
 1. **콘텐츠 조각** 콘솔을 사용하여 콘텐츠 조각의 위치로 이동합니다.
-1. 조각을 선택한 다음 편집할 조각을 엽니다. **새 편집기에서 열기** 을 클릭합니다.
+1. 조각을 선택한 다음 도구 모음의 새 편집기에서 **열기**&#x200B;를 선택하여 편집할 조각을 엽니다.
 
-1. 조각 편집기가 열립니다. 필요한 항목 선택 **변형** amd는 필요에 따라 변경합니다(자동 저장됨).
+1. 조각 편집기가 열립니다. 필요한 **변형**&#x200B;을 선택한 다음 필요에 따라 변경 작업을 수행합니다(자동 저장됨).
 
    ![조각 편집기](assets/cf-managing-editor.png)
 
 ## 태그 보기 및 관리 {#manage-tags}
 
-콘텐츠 조각 콘솔에서 의 적용된 태그를 볼 수 있습니다. **태그** 열; 확인 후 [열에 표시](#select-columns-console).
+[열이 표시되고 있는지](#select-columns-console) 확인한 다음 콘텐츠 조각 콘솔에서 **태그** 열에 적용된 모든 태그를 볼 수 있습니다.
 
 ### 태그 관리(콘솔) {#manage-tags-console}
 
-태그를 관리하려면 다음을 수행하십시오.
+태그를 관리하려면
 
 1. 콘텐츠 조각 콘솔로 이동합니다.
 1. 콘텐츠 조각을 선택합니다.
-1. 선택 **태그 관리** 을 클릭합니다.
-1. 태그 선택기를 사용하여 적용하거나 제거할 태그를 선택합니다.
+1. 도구 모음에서 **태그 관리**&#x200B;를 선택합니다.
+1. 태그 선택기를 사용하여 적용 또는 제거할 태그를 선택합니다.
 
    ![태그 관리](assets/cf-managing-manage-tags.png)
 
-1. **저장** 업데이트. 콘솔로 돌아갑니다.
+1. 업데이트를 **저장**&#x200B;합니다. 이를 선택하면 콘솔로 돌아갑니다.
 
 ### 태그 보기 및 편집(편집기) {#viewing-and-editing-tags}
 
-를 사용하여 조각에 적용된 태그를 보고 편집할 수도 있습니다. [속성](/help/sites-cloud/administering/content-fragments/authoring.md) 편집기 탭 표시되는 정보는 다음과 다릅니다. **기본** 및 임의 **변형**.
+편집기의 [속성](/help/sites-cloud/administering/content-fragments/authoring.md) 탭을 사용하여 조각에 적용된 태그를 보고 편집할 수도 있습니다. 표시되는 정보는 **기본**&#x200B;과 모든 **변형** 간에 다릅니다.
 
 ## 속성 보기 및 편집(편집기) {#viewing-and-editing-properties}
 
-를 사용하여 조각의 속성(메타데이터)을 보고 편집할 수 있습니다. [속성](/help/sites-cloud/administering/content-fragments/authoring.md) 편집기 탭 표시되는 정보는 다음과 다릅니다. **기본** 및 임의 **변형**.
+편집기의 [속성](/help/sites-cloud/administering/content-fragments/authoring.md) 탭을 사용하여 조각의 속성(메타데이터)을 보고 편집할 수 있습니다. 표시되는 정보는 **기본**&#x200B;과 모든 **변형** 간에 다릅니다.
 
 ## 조각 게시 및 미리보기 {#publishing-and-previewing-a-fragment}
 
@@ -296,7 +301,7 @@ ht-degree: 62%
 
   >[!CAUTION]
   >
-  >**게시** 액션을 통해 콘텐츠 조각 콘솔에서만 **미리보기 서비스**&#x200B;에 콘텐츠 조각을 게시할 수 있습니다.
+  >**게시** 작업을 통해 콘텐츠 조각 콘솔에서만 **미리보기 서비스**&#x200B;에 콘텐츠 조각을 게시할 수 있습니다.
 
   >[!NOTE]
   >
@@ -314,22 +319,22 @@ ht-degree: 62%
 
 ### 게시 {#publishing}
 
-를 사용하여 콘텐츠 조각을 게시할 수 있습니다. **게시** 다음 중 하나의 옵션:
+다음 중 하나의 **게시** 옵션을 사용하여 콘텐츠 조각을 게시할 수 있습니다.
 
-* 의 도구 모음 [콘텐츠 조각 콘솔](#actions-selected-content-fragment)
+* [콘텐츠 조각 콘솔](#actions-selected-content-fragment)의 도구 모음
 
-   * 목록에서 조각을 하나 이상 선택합니다.
+   * 목록에서 하나 이상의 조각을 선택합니다.
 
-* 의 도구 모음 [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)
+* [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)의 도구 모음
 
-을(를) 선택한 후 **게시** 작업:
+**게시** 작업을 선택한 후에
 
 1. 다음 옵션 중 하나를 선택하여 적절한 대화 상자를 엽니다.
 
    * **지금** - **게시 서비스** 또는 **미리보기 서비스** 중 하나를 선택하면 확인 후 조각이 즉시 게시됩니다.
    * **예약** - 필수 서비스 외에 조각을 게시할 날짜 및 시간을 선택할 수도 있습니다.
 
-1. 대화 상자에서 모든 세부 정보를 제공합니다. 예: 예약된 게시 요청의 경우
+1. 대화 상자에 모든 세부 정보를 입력합니다. 예: 예약된 게시 요청의 경우
 
    ![게시 대화 상자](assets/cf-managing-publish-dialog.png)
 
@@ -337,9 +342,9 @@ ht-degree: 62%
    >
    >필요한 경우 게시할 참조를 지정해야 합니다. 기본적으로 미리보기 서비스에도 참조를 게시하여 콘텐츠에 브레이크가 없는지 확인합니다.
 
-1. 게시 액션을 확인합니다.
+1. 게시 작업을 확인합니다.
 
-게시 후 조각 상태가 업데이트되고 편집기 및 콘솔에 표시됩니다. 예약된 게시를 지정한 경우 정보가 표시됩니다.
+게시 후 조각 상태는 업데이트되고 편집기와 콘솔에 표시됩니다. 예약된 게시를 지정한 경우 정보가 표시됩니다.
 
 >[!NOTE]
 >
@@ -347,15 +352,15 @@ ht-degree: 62%
 
 ## 조각 게시 취소 {#unpublishing-a-fragment}
 
-콘텐츠 조각의 게시를 취소할 수 있습니다.
+콘텐츠 조각을 게시 취소할 수 있습니다.
 
-* 의 도구 모음 [콘텐츠 조각 콘솔](#actions-selected-content-fragment)
+* [콘텐츠 조각 콘솔](#actions-selected-content-fragment)의 도구 모음
 
-   * 목록에서 조각을 하나 이상 선택합니다.
+   * 목록에서 하나 이상의 조각을 선택합니다.
 
-* 의 도구 모음 [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)
+* [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)의 도구 모음
 
-두 경우 모두 선택 **게시 취소** 도구 모음에서 를 클릭하고 다음 중 하나를 수행합니다. **지금** 또는 **예약됨**.
+두 사례에서 도구 모음에서 **게시 취소**&#x200B;를 선택한 다음 **지금** 또는 **예약됨** 중 하나를 선택합니다.
 
 관련 대화 상자가 열리면 적절한 서비스를 선택할 수 있습니다.
 
@@ -388,16 +393,16 @@ The **Replace** option is available to find, and replace, specified text in your
 
 >[!NOTE]
 >
->다음 **삭제** 는 현재 게시된 조각에 사용할 수 없습니다. 먼저 게시를 취소해야 합니다.
+>**삭제**&#x200B;는 현재 게시된 조각에서 사용할 수 없으므로 먼저 게시를 취소해야 합니다.
 
 ## 조각의 상위 참조 찾기 {#parent-references-fragment}
 
-상위 참조에 대한 세부 정보는
+상위 참조에 대한 세부 정보는 다음에서 액세스할 수 있습니다.
 
-* **참조** 콘텐츠 조각 콘솔의 열
-* 다음 [콘텐츠 조각 편집기의 상단 도구 모음에 있는 상위 참조 링크](/help/sites-cloud/administering/content-fragments/authoring.md#view-parent-references)
+* 콘텐츠 조각 콘솔의 **참조** 열
+* [콘텐츠 조각 편집기의 상단 도구 모음에 있는 상위 참조 링크](/help/sites-cloud/administering/content-fragments/authoring.md#view-parent-references)
 
-둘 다 콘텐츠 조각, 경험 조각 및 페이지 참조를 포함하여 해당 조각의 모든 상위 참조를 나열하는 대화 상자를 여는 링크를 제공합니다. 특정 참조를 열려면 **제목**&#x200B;또는 대화 상자에서 링크 아이콘 을 클릭합니다.
+두 참조를 통해 해당 조각의 모든 상위 참조를 표시하는 대화 상자를 여는 링크가 제공됩니다. 여기에는 콘텐츠 조각, 경험 조각 및 페이지 참조가 포함됩니다. 특정 참조를 열려면 대화 상자에서 **제목** 또는 링크 아이콘을 클릭합니다.
 
 예:
 
@@ -405,12 +410,12 @@ The **Replace** option is available to find, and replace, specified text in your
 
 ## 조각의 언어 사본 찾기 {#language-copies-fragment}
 
-언어 사본에 대한 세부 정보는 다음 위치에서 액세스할 수 있습니다.
+언어 사본에 대한 세부 정보는 다음에서 액세스할 수 있습니다.
 
-* 다음 **언어** 열 [콘텐츠 조각 콘솔](#information-content-fragments)
-* 다음 [콘텐츠 조각 편집기의 언어 사본 탭](/help/sites-cloud/administering/content-fragments/authoring.md#view-language-copies)
+* [콘텐츠 조각 콘솔](#information-content-fragments)의 **언어** 열
+* [콘텐츠 조각 편집기의 언어 사본 탭](/help/sites-cloud/administering/content-fragments/authoring.md#view-language-copies)
 
-아이콘은 콘텐츠 조각과 연관된 총 로케일/언어 사본 수와 함께 콘텐츠 조각의 로케일을 나타냅니다. 예를 들어 콘솔에서 다음을 수행합니다.
+아이콘은 콘텐츠 조각과 관련된 총 로케일/언어 사본 수와 함께 콘텐츠 조각 로케일을 표시합니다. 예: 콘솔에서 표시:
 
 ![콘텐츠 조각 콘솔 - 언어 표시기](assets/cfc-console-language-indicator.png)
 
@@ -418,7 +423,7 @@ The **Replace** option is available to find, and replace, specified text in your
 
 ![콘텐츠 조각 콘솔 - 언어 대화 상자](assets/cf-managing-console-languages-dialog.png)
 
-## 콘솔에 표시되는 열 선택 {#select-columns-console}
+## 콘솔에 표시된 열 선택 {#select-columns-console}
 
 다른 콘솔과 마찬가지로 다음 작업에 표시된 열을 구성할 수 있습니다.
 
