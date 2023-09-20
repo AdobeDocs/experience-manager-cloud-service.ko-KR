@@ -3,9 +3,9 @@ title: Headless 콘텐츠 및 AEM에서의 번역에 대해 알아보기
 description: Headless 개념, AEM에 매핑하는 방법 및 AEM 번역 이론에 대해 알아봅니다.
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
 source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '743'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -79,4 +79,4 @@ AEM Headless 번역 여정을 시작해 주셔서 감사합니다! 이 문서를
 
 * [MSM 및 번역](/help/sites-cloud/administering/msm-and-translation.md) - AEM의 다중 사이트 관리자에 대한 세부 정보 및 번역 도구 사용 방법
 * [AEM as a Headless CMS 소개](/help/headless/introduction.md)
-* [AEM의 Headless Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
