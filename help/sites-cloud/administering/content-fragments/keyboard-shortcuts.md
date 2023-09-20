@@ -4,9 +4,9 @@ description: 콘텐츠 조각 관리를 위한 일부 키보드 단축키를 포
 feature: Content Fragments
 role: User, Developer, Architect
 source-git-commit: 676173813b6ea4defeafe25c95be9668d32aac38
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '222'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 94%
 
 몇 가지 키보드 단축키를 콘텐츠 조각 콘솔에서 사용할 수 있습니다.
 
-AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 일부는 다음과 같은 경우에 적용됩니다. [페이지 편집](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md), 기타 [콘솔의 일반 사용](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 일부는 [페이지 편집](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)에 적용되고 일부는 [일반적인 콘솔 사용](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)에 적용됩니다.
 
 >[!NOTE]
 >
