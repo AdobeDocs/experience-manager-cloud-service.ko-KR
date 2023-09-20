@@ -1,7 +1,7 @@
 ---
-title: 트래픽 필터 규칙 구성(WAF 규칙 사용)
-description: 트래픽 필터 규칙(WAF 규칙 포함)을 사용하여 트래픽 필터링
-source-git-commit: b1b184b63ab6cdeb8a4e0019c31a34db59438a3d
+title: WAF 규칙을 사용하여 트래픽 필터 규칙 구성
+description: WAF 규칙과 함께 트래픽 필터 규칙을 사용하여 트래픽을 필터링합니다
+source-git-commit: ce7b6922f92208c06f85afe85818574bf2bc8f6d
 workflow-type: tm+mt
 source-wordcount: '2709'
 ht-degree: 70%
@@ -9,7 +9,7 @@ ht-degree: 70%
 ---
 
 
-# 트래픽을 필터링하기 위해 트래픽 필터 규칙 구성(WAF 규칙 사용) {#configuring-cdn-and-waf-rules-to-filter-traffic}
+# 트래픽을 필터링하기 위해 WAF 규칙으로 트래픽 필터 규칙 구성 {#configuring-cdn-and-waf-rules-to-filter-traffic}
 
 >[!NOTE]
 >
