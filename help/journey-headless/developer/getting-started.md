@@ -3,9 +3,9 @@ title: AEM Headless as a Cloud Service 시작하기
 description: 이 AEM Headless 개발자 여정의 부분에서는 AEM Headless 사전 요구 사항에 대해 알아봅니다.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 source-git-commit: b302aa1140fc14044e85fd61ed2d361b71e6be34
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3098'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -166,7 +166,7 @@ AEM Headless 프로젝트를 시작하기 전에 알아 두어야 할 몇 가지
 
 #### 콘텐츠 작성자 {#content-author}
 
-콘텐츠 작성자는 AEM에서 Headless 방식으로 게재하는 콘텐츠를 만들고 관리합니다. 콘텐츠 작성자는 콘텐츠 조각 편집기와 같은 AEM 기능 및 다양한 콘솔을 사용하여 콘텐츠를 관리합니다.
+콘텐츠 작성자는 AEM에서 Headless 방식으로 게재하는 콘텐츠를 만들고 관리합니다. 콘텐츠 작성자는 콘텐츠 조각 편집기와 다양한 콘솔 등 AEM 기능을 사용하여 콘텐츠를 관리합니다.
 
 콘텐츠 작성자는 다음 모범 사례를 고려해야 합니다.
 
@@ -281,8 +281,8 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 
 * [AEM Headless 번역 여정](/help/journey-headless/translation/overview.md) - 이 설명서 여정을 통해 Headless 기술, AEM에서 Headless 콘텐츠를 제공하는 방법과 콘텐츠를 번역하는 방법을 폭넓게 이해할 수 있습니다.
 * [Adobe Experience Manager as a Cloud Service의 아키텍처 소개](/help/overview/architecture.md) - AEM as a Cloud Service의 아키텍처 이해
-* An [AEM as a Headless CMS 소개](/help/headless/introduction.md)
-* 다음 [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM as a Headless CMS 소개](/help/headless/introduction.md)
+* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [AEM Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 이 실습 튜토리얼을 사용하여 AEM을 통해 콘텐츠를 Headless 엔드포인트를 게재하는 옵션을 사용하는 방법을 살펴보고 자신에게 적합한 옵션을 선택합니다.
 * [GraphQL API를 사용한 Headless 콘텐츠 관리](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - 이 과정에 따라 AEM에서 구현되는 GraphQL API의 개요를 확인합니다. AdobeID를 통한 인증이 필수입니다.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - 이 GitHub 프로젝트에는 AEM의 GraphQL API를 강조 표시하는 예제 애플리케이션이 포함됩니다.
