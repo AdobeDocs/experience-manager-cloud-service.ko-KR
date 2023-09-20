@@ -3,9 +3,9 @@ title: Headless 애플리케이션 실행 방법
 description: 이 AEM Headless 개발자 여정의 부분에서는 Git에서 로컬 코드를 가져오고 CI/CD 파이프라인용 Cloud Manager Git으로 이동하여 Headless 애플리케이션을 라이브로 배포하는 방법에 대해 알아봅니다.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1093'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -132,7 +132,7 @@ AEM Headless 애플리케이션을 실행할 수 있도록 준비하려면 아�
 
 * [AEM as a Headless CMS 소개](/help/headless/introduction.md)
 * [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [AEM의 Headless Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
 * [AEM as a Cloud Service 배포 개요](/help/implementing/deploying/overview.md)
 * [Cloud Manager를 사용하여 코드 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
 * [Cloud Manager Git 저장소를 외부 Git 저장소와 통합하고 프로젝트를 AEM as a Cloud Service에 배포합니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html)
