@@ -4,9 +4,9 @@ description: 적응형 양식은 여러 제출 액션을 제공합니다. 제출
 hide: true
 hidefromtoc: true
 source-git-commit: 74fed5b2bcffac9d267b66aaa3d69b27cadd3417
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3573'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -357,7 +357,7 @@ AEM Forms를 Azure Storage 컨테이너에 연결하려면
 * 캡처된 데이터에 대해 복잡한 계산 수행
 * 미리 정의된 일정에 따라 적응형 양식 데이터를 스토리지 시스템에 저장
 
-적응형 Forms 편집기는 **Microsoft® Power Automate 플로우 호출** 적응형 양식 데이터, 첨부 파일 및 기록 문서를 Power Automate Cloud Flow로 전송하는 작업을 제출합니다. 제출 작업을 사용하여 캡처된 데이터를 Microsoft® Power Automate로 전송하려면 [Forms as a Cloud Service 인스턴스를 Microsoft® Power Automate와 연결](forms-microsoft-power-automate-integration.md)합니다.
+적응형 양식 편집기는 **Microsoft® Power Automate 흐름 호출** 제출 작업을 제공하여 적응형 양식 데이터, 첨부 파일 및 기록 문서를 Power Automate Cloud Flow로 전송합니다. 제출 작업을 사용하여 캡처된 데이터를 Microsoft® Power Automate로 전송하려면 [Forms as a Cloud Service 인스턴스를 Microsoft® Power Automate와 연결](forms-microsoft-power-automate-integration.md)합니다.
 
 성공적으로 구성한 후 [Microsoft® Power Automate 흐름 호출](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) 제출 액션을 사용하여 데이터를 Power Automate 흐름으로 전송합니다.
 
