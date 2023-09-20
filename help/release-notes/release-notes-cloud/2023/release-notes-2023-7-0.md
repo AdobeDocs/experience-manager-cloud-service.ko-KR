@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.7.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.7.0 릴리스 정보입니다.'
 source-git-commit: 1158508cc28d33e5799b3102381f227db05a0107
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '942'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 99%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 기능 릴리스(2023.7.0)의 릴리스 날짜는 2023년 7월 27일입니다. 다음 기능 릴리스(2023.8.0)는 2023년 8월 31일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 기능 릴리스(2023.7.0)의 릴리스 일자는 2023년 7월 27일입니다. 다음 기능 릴리스(2023.8.0)는 2023년 8월 31일에 예정되어 있습니다.
 
 ## 릴리스 비디오 {#release-video}
 
@@ -41,7 +41,7 @@ ht-degree: 99%
 
 ### [!DNL Experience Manager Sites] 프리릴리스의 새로운 기능 {#prerelease-sites}
 
-* 이제 사용자는 [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=ko)을 사용하여 콘텐츠 조각에 메타데이터로 적용된 태그를 보고 검색할 수 있습니다. 사용자가 더 이상 이 기능을 사용하기 위해 자산 UI로 전환할 필요가 없으므로 컨텍스트 전환이 줄어들고 효율성이 향상됩니다.
+* 이제 사용자는 [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en)을 사용하여 콘텐츠 조각에 메타데이터로 적용된 태그를 보고 검색할 수 있습니다. 사용자가 더 이상 이 기능을 사용하기 위해 자산 UI로 전환할 필요가 없으므로 컨텍스트 전환이 줄어들고 효율성이 향상됩니다.
 
 ![콘텐츠 조각 콘솔에서 태그 지정](/help/assets/content-fragments-console-tags.png)
 
@@ -82,9 +82,9 @@ Experience Manager Assets는 이제 이미지 스마트 태그에 대해 향상�
 
   ![기본 제공 템플릿](/help/forms/assets/form-templates-ootb.png)
 
-* **[헤드리스 양식용 React 구성 요소](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: 이제 기본 제공 React 구성 요소를 사용하여 헤드리스 적응형 양식 렌디션을 미리 보고 사용자 정의할 수 있습니다. 이러한 구성 요소는 스타일 지정을 위해 적응형 양식 핵심 구성 요소의 BEM 클래스를 활용하므로 특정 요구 사항에 따라 형태를 쉽게 사용자 정의할 수 있습니다.
+* **[Headless 양식용 React 구성 요소](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: 이제 기본 제공 React 구성 요소를 사용하여 Headless 적응형 양식 렌디션을 미리 보고 사용자 정의할 수 있습니다. 이러한 구성 요소는 스타일 지정을 위해 적응형 양식 핵심 구성 요소의 BEM 클래스를 활용하므로 특정 요구 사항에 따라 형태를 쉽게 사용자 정의할 수 있습니다.
 
-* [**반복 가능한 섹션으로 적응형 양식 만들기**](/help/forms/create-forms-repeatable-sections.md): 이제 [아코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [패널](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html) 및 [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 구성 요소에 기반한 반복 가능 적응형 양식을 만들어 여러 데이터 레코드 캡처에 사용할 수 있습니다.  이러한 반복 가능한 섹션을 사용하면 여러 데이터 항목을 쉽게 제공할 수 있습니다. 필요한 데이터 인스턴스를 미리 알 수 없는 경우에 유용합니다. 양식 작성기에서 섹션을 쉽게 추가하거나 제거할 수 있으므로, 양식을 다양한 데이터 입력 시나리오에 맞게 조정하고 동일한 데이터 레코드의 여러 항목 수집을 단순화할 수 있습니다.
+* [**반복 가능한 섹션으로 적응형 양식 만들기**](/help/forms/create-forms-repeatable-sections.md): 이제 [아코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [패널](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html) 및 [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 구성 요소에 기반한 반복 가능 적응형 양식을 만들어 여러 데이터 레코드 캡처에 사용할 수 있습니다. 이러한 반복 가능한 섹션을 사용하면 여러 데이터 항목을 쉽게 제공할 수 있습니다. 필요한 데이터 인스턴스를 미리 알 수 없는 경우에 유용합니다. 양식 작성기에서 섹션을 쉽게 추가하거나 제거할 수 있으므로, 양식을 다양한 데이터 입력 시나리오에 맞게 조정하고 동일한 데이터 레코드의 여러 항목 수집을 단순화할 수 있습니다.
 
 
 ### [!DNL Forms]에서 사용할 수 있는 프리릴리스 기능 {#pre-release-features-available-in-forms-channel}
