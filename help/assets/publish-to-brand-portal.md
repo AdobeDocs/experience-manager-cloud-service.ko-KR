@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: 56a4b03e78e835108aa57fdb241803e75b867260
 workflow-type: tm+mt
-source-wordcount: '1205'
-ht-degree: 97%
+source-wordcount: '1263'
+ht-degree: 93%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/brand-portal-publish-folder.html?lang=en) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/brand-portal-publish-folder.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
 AEM(Adobe Experience Manager) Assets 관리자는 자산, 폴더 및 컬렉션을 AEM Assets Brand Portal 인스턴스에 게시할 수 있습니다. 자산이나 폴더의 게시 워크플로우를 나중 날짜나 시간으로 예약할 수도 있습니다. 게시된 자산, 폴더 및 컬렉션은 Brand Portal 사용자가 액세스하고 다른 사용자에게 추가로 분배할 수 있습니다.
@@ -87,6 +87,16 @@ Brand Portal 인터페이스에 로그인하여 게시된 자산을 확인합니
 
 ![bp_landingpage](assets/bp_landingpage.png)
 
+>[!NOTE]
+>
+> * DAM-Users 그룹의 기존 사용자 부분은 &quot;/conf/global/settings/cloudconfigs/mediaportal&quot; 경로에서 읽기 액세스 권한이 있습니다.
+>* 새 사용자(또는 관리자가 아닌 사용자)는 brand portal에 게시하려면 다음 권한이 필요합니다.
+> 경로:
+> &quot;/conf/global/settings/cloudconfigs/mediaportal&quot; : jcr:read
+>/libs : jcr:read
+>/conf : jcr:read
+>/content : jcr:read , crx:replicate
+>/content/dam/ : jcr:read , 수정 , crx:replicate
 
 ## 폴더를 Brand Portal에 게시 {#publish-folders-to-brand-portal}
 
@@ -104,7 +114,7 @@ Brand Portal 인터페이스에 로그인하여 게시된 자산을 확인합니
 
    * 도구 모음에서 **[!UICONTROL 빠른 게시]**&#x200B;를 선택합니다.
 
-      메뉴에서 **[!UICONTROL Brand Portal에 게시]**&#x200B;를 선택합니다.
+     메뉴에서 **[!UICONTROL Brand Portal에 게시]**&#x200B;를 선택합니다.
 
    * 도구 모음에서 **[!UICONTROL 게시 관리]**&#x200B;를 선택합니다.
 
@@ -252,14 +262,14 @@ AEM Assets 인스턴스에서 게시를 취소하여 Brand Portal에 게시된 �
 
 **추가 참조**
 
-* [에셋 번역](translate-assets.md)
+* [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [에셋이 지원되는 파일 형식](file-format-support.md)
-* [에셋 검색](search-assets.md)
-* [연결된 에셋](use-assets-across-connected-assets-instances.md)
-* [에셋 보고서](asset-reports.md)
+* [자산이 지원되는 파일 형식](file-format-support.md)
+* [자산 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [자산 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
-* [에셋 다운로드](download-assets-from-aem.md)
+* [자산 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
