@@ -1,18 +1,18 @@
 ---
 title: 외부 웹 페이지에 적응형 양식 임베드
-description: 외부 웹 페이지에 적응형 양식을 임베드하는 방법 알아보기
+description: 외부 웹 페이지에서 적응형 양식을 임베드하는 방법 알아보기
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
 source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '979'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
-# 핵심 구성 요소를 기반으로 하는 적응형 양식을 외부 웹 페이지에 임베드 {#embed-adaptive-form-in-external-web-page}
+# 외부 웹 페이지에 핵심 구성 요소 기반 적응형 양식 임베드 {#embed-adaptive-form-in-external-web-page}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -20,23 +20,23 @@ ht-degree: 2%
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html) |
 
 
-다음을 수행할 수 있습니다. [AEM Sites 페이지에 적응형 양식 포함](/help/forms/embed-adaptive-form-aem-sites.md) 또는 AEM 외부에서 호스팅되는 웹 페이지입니다. 임베드된 적응형 양식은 완전히 기능할 수 있으며, 사용자는 페이지를 종료하지 않고도 양식을 작성하고 제출할 수 있습니다. 이렇게 하면 사용자가 웹 페이지의 다른 요소 컨텍스트에 남아 있으면서 양식과 동시에 상호 작용할 수 있습니다.
+[AEM Sites 페이지에서 적응형 양식을 임베드](/help/forms/embed-adaptive-form-aem-sites.md)하거나 AEM 외부에 호스트된 웹 페이지를 임베드할 수 있습니다. 임베드된 적응형 양식은 완전한 기능을 갖추고 있으며 사용자는 페이지를 떠나지 않고 양식을 작성하고 제출할 수 있습니다. 이로써 사용자는 웹 페이지의 다른 요소 컨텍스트에 남아 있는 동시에 양식과 상호 작용할 수 있습니다.
 
 ## 사전 요구 사항 {#prerequisites}
 
-적응형 양식을 외부 웹 사이트에 포함하기 전에 다음 단계를 수행하십시오
+먼저 다음 단계를 수행한 다음 외부 웹 사이트에 적응형 양식을 임베드합니다.
 
 * AEM Forms 서버의 게시 인스턴스에 임베드할 적응형 양식을 게시합니다.
-* 웹 사이트에서 웹 페이지를 만들거나 식별하여 적응형 양식을 호스팅합니다. 웹 페이지가 [cdn에서 jQuery 파일 읽기](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) 또는 에는 jQuery의 로컬 사본이 포함되어 있습니다. 적응형 양식을 렌더링하려면 jQuery가 필요합니다.
-* AEM 서버와 웹 페이지가 서로 다른 도메인에 있는 경우 섹션에 나열된 단계를 수행합니다. [AEM Forms에서 도메인 간 사이트에 적응형 양식을 제공할 수 있도록 활성화](#cross-site).
+* 적응형 양식을 호스팅하려면 웹 사이트에서 웹 페이지를 만들거나 식별합니다. 웹 페이지에서 [CDN의 jQuery 파일을 읽을](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) 수 있는지 또는 jQuery의 로컬 사본이 있는지 확인합니다. 적응형 양식을 렌더링하는 데 jQuery가 필요합니다.
+* AEM 서버와 웹 페이지가 다른 도메인에 있는 경우, 섹션에 나열된 단계를 수행하고 [AEM Forms를 활성화하여 크로스 도메인 사이트에 적응형 양식을 제공합니다](#cross-site).
 
-## 적응형 양식 포함 {#embed-adaptive-form}
+## 임베드된 적응형 양식 {#embed-adaptive-form}
 
-웹 페이지에 JavaScript의 몇 줄을 삽입하여 적응형 양식을 포함할 수 있습니다. 코드의 API는 적응형 양식 리소스에 대한 HTTP 요청을 AEM 서버로 보내고 적응형 양식을 지정된 양식 컨테이너에 삽입합니다.
+웹 페이지에서 몇 줄의 JavaScript를 삽입하여 적응형 양식을 임베드할 수 있습니다. 코드의 API는 적응형 양식 리소스에 대한 HTTP 요청을 AEM 서버에 보내고 지정된 양식 컨테이너에 적응형 양식을 주입합니다.
 
-적응형 양식을 포함하려면 다음 작업을 수행하십시오.
+적응형 양식을 임베드하려면
 
-1. 다음 코드를 사용하여 웹 사이트에 웹 페이지를 만듭니다.
+1. 다음 코드를 사용하여 웹 사이트에서 웹 페이지를 만듭니다.
 
    ```html
         <!doctype html>
@@ -92,43 +92,43 @@ ht-degree: 2%
         </html>
    ```
 
-1. 포함 코드에서:
+1. 임베드된 코드에서
 
-   * 값 변경 *options.path* 적응형 양식의 게시 URL 경로가 포함된 변수입니다. AEM 서버가 컨텍스트 경로에서 실행 중인 경우 URL에 컨텍스트 경로가 포함되어 있는지 확인합니다. 확장을 포함한 적응형 양식의 전체 이름을 항상 언급하십시오.   예를 들어 위의 코드와 적응형 양식은 동일한 AEM Forms 서버에 상주하므로 이 예제는 적응형 양식 /content/forms/af/locbasic.html의 컨텍스트 경로를 사용합니다.
-   * CSS_Selector는 적응형 양식이 포함된 양식 컨테이너의 CSS 선택기입니다. 예를 들어, .customafsection css 클래스는 위의 예에서 CSS 선택기입니다.
+   * *options.path* 변수 값을 적응형 양식의 게시 URL 경로로 변경합니다. AEM 서버가 컨텍스트 경로에서 실행 중인 경우, URL에 컨텍스트 경로가 포함되어 있는지 확인합니다. 확장명을 포함하여 항상 적응형 양식의 전체 이름을 표시합니다.  예: 위 코드와 적응형 양식은 동일한 AEM Forms 서버에 있으므로 예에서는 적응형 양식 /content/forms/af/locbasic.html의 컨텍스트 경로를 사용합니다.
+   * CSS 선택기는 적응형 양식이 임베드된 양식 컨테이너의 CSS 선택기입니다. 예: 위 예에서 .customafsection css 클래스는 CSS 선택기입니다.
 
-적응형 양식이 웹 페이지에 임베드됩니다. 임베드된 적응형 양식에서 다음 사항을 확인하십시오.
+적응형 양식은 웹 페이지에 임베드되어 있습니다. 임베드된 적응형 양식에서 다음 규칙을 준수합니다.
 
-* 초안 및 제출된 양식은 Forms 포털의 초안 및 제출 탭에서 사용할 수 있습니다.
-* 원래 적응형 양식에 구성된 제출 액션은 임베드된 양식에 유지됩니다.
-* 적응형 양식 규칙은 임베드된 양식에서 유지되고 완전히 작동합니다.
-* 원래 적응형 양식에 구성된 경험 타깃팅 및 A/B 테스트는 임베드된 양식에서 작동하지 않습니다.
-* Adobe Analytics이 원본 양식에 구성된 경우, 분석 데이터가 Adobe Analytics 서버에 캡처됩니다. 하지만 Forms 분석 보고서에서는 사용할 수 없습니다.
-* 핵심 구성 요소를 기반으로 하는 적응형 Forms에서 클라이언트 라이브러리(ClientLib)는 양식의 머리글 및 바닥글 구성 요소와 함께 포함되고 로드됩니다. 따라서 웹 페이지에 핵심 구성 요소를 기반으로 하는 적응형 Forms을 임베드하면 항상 양식의 머리글과 바닥글이 포함됩니다.
+* 초안과 제출된 양식은 양식 포털의 초안 및 제출 탭에서 확인할 수 있습니다.
+* 원래 적응형 양식에 구성되는 제출 작업은 임베드된 양식에 유지됩니다.
+* 적응형 양식 규칙은 임베드된 양식에 유지되고 완전한 기능을 갖추고 있습니다.
+* 원래 적응형 양식에 구성되는 경험 타겟팅과 A/B 테스트는 임베드된 양식에서 작동하지 않습니다.
+* Adobe Analytics가 원래 양식에 구성된 경우, 분석 데이터는 Adobe Analytics 서버에서 캡처됩니다. 단, 양식 분석 보고서에서 사용할 수 없습니다.
+* 핵심 구성 요소 기반 적응형 양식에는 클라이언트 라이브러리(ClientLibs)가 포함되고 이는 양식의 머리글 및 바닥글 구성 요소와 함께 로드됩니다. 따라서 웹 페이지에 핵심 구성 요소 기반 적응형 양식을 임베드하면 항상 양식의 머리글 및 바닥글을 포함합니다.
 
 ## 샘플 토폴로지 {#sample-topology}
 
-적응형 양식을 임베드하는 외부 웹 페이지는 일반적으로 개인 네트워크의 방화벽 뒤에 있는 AEM 서버에 요청을 보냅니다. 요청이 AEM 서버로 안전하게 전달되도록 하려면 역방향 프록시 서버를 설정하는 것이 좋습니다.
+적응형 양식을 임베드하는 외부 웹 페이지에서는 일반적으로 비공개 네트워크 방화벽 뒤에 있는 AEM 서버로 요청을 보냅니다. 요청이 AEM 서버로 안전하게 이동되도록 하려면 역방향 프록시 서버를 설정하는 것이 좋습니다.
 
-Dispatcher 없이 Apache 2.4 역방향 프록시 서버를 설정하는 방법의 예를 살펴보겠습니다. 이 예에서는 AEM 서버를 `/forms` 컨텍스트 경로 및 맵 `/forms` 역방향 프록시용입니다. 에 대한 모든 요청이 `/forms` apache 서버의 경우 AEM 인스턴스로 이동됩니다. 이 토폴로지는 모든 요청에 접두사가 추가되므로 Dispatcher 레이어의 규칙 수를 줄이는 데 도움이 됩니다. `/forms` AEM 서버로 라우팅합니다.
+Dispatcher 없이 Apache 2.4 역방향 프록시 서버를 설정하는 방법의 예를 살펴보겠습니다. 이 예에서는 역방향 프록시의 `/forms`컨텍스트 경로와 맵`/forms`을 사용하여 AEM 서버를 호스팅합니다. Apache 서버에서 `/forms`에 대한 모든 요청이 AEM 인스턴스로 이동하는지 확인합니다. 모든 요청 앞에 AEM 서버에 대한 `/forms` 경로가 붙으면 이 토폴로지를 사용하여 Dispatcher 계층의 규칙 수를 줄일 수 있습니다.
 
-1. 를 엽니다. `httpd.conf` 구성 파일을 만들고 다음 코드 줄의 주석 처리를 제거합니다. 또는 이러한 코드 행을 파일에 추가할 수 있습니다.
+1. `httpd.conf`구성 파일을 열고 다음 코드 라인의 주석 해제합니다. 또는 파일에서 이 코드 라인을 추가할 수 있습니다.
 
    ```text
    LoadModule proxy_html_module modules/mod_proxy_html.so
    LoadModule proxy_http_module modules/mod_proxy_http.so
    ```
 
-1. 다음 코드 행을 추가하여 프록시 규칙을 설정합니다. `httpd-proxy.conf` 구성 파일입니다.
+1. `httpd-proxy.conf` 구성 파일의 다음 코드 라인을 추가하여 프록시 규칙을 설정합니다.
 
    ```text
    ProxyPass /forms https://[AEM_Instance]/forms
    ProxyPassReverse /forms https://[AEM_Instance]/forms
    ```
 
-   바꾸기 `[AEM_Instance]` 규칙에 AEM 서버 게시 URL이 있는 경우.
+   규칙에서 `[AEM_Instance]`를 AEM 서버 게시 URL로 바꿉니다.
 
-컨텍스트 경로에 AEM 서버를 마운트하지 않는 경우 Apache 계층의 프록시 규칙은 다음과 같습니다.
+AEM 서버를 컨텍스트 경로에 장착하지 않는 경우, Apache 레이어의 프록시 규칙은 다음과 같습니다.
 
 ```text
 ProxyPass /content https://<AEM_Instance>/content
@@ -145,23 +145,23 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 >[!NOTE]
 >
->다른 토폴로지를 설정하는 경우 제출, 미리 채우기 및 기타 URL을 디스패처 계층의 허용 목록에 추가하다에 추가해야 합니다.
+>다른 토폴로지를 설정하는 경우, 제출, 미리 채우기와 기타 URL을 Dispatcher 계층의 허용 목록에 추가해야 합니다.
 
-## 우수 사례 {#best-practices}
+## 모범 사례 {#best-practices}
 
-웹 페이지에 적응형 양식을 포함할 때에는 다음 모범 사례를 고려하십시오.
+웹 페이지의 적응형 양식을 임베드할 때 다음 모범 사례를 고려하십시오.
 
-* 웹 페이지 CSS에 정의된 스타일 규칙이 양식 개체 CSS와 충돌하지 않는지 확인하십시오. 충돌을 방지하기 위해 AEM 클라이언트 라이브러리를 사용하여 적응형 양식 테마의 웹 페이지 CSS를 재사용할 수 있습니다. 적응형 양식 테마에서 클라이언트 라이브러리를 사용하는 방법에 대한 자세한 내용은 다음을 참조하십시오. [AEM Forms의 테마](/help/forms/using-themes-in-core-components.md).
-* 웹 페이지의 양식 컨테이너가 전체 창 너비를 사용하도록 합니다. 모바일 장치에 대해 구성된 CSS 규칙이 변경 없이 작동하도록 합니다. 양식 컨테이너가 전체 창 너비를 차지하지 않는 경우 양식을 다른 모바일 장치에 맞게 조정하려면 사용자 지정 CSS를 작성해야 합니다.
-* 사용 `[getData](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)` 클라이언트에서 양식 데이터의 XML 또는 JSON 표현을 가져오기 위한 API입니다.
-* 사용 `[unloadAdaptiveForm](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)` HTML DOM에서 적응형 양식을 언로드하기 위한 API.
-* AEM 서버에서 응답을 보낼 때 access-control-origin 헤더를 설정합니다.
+* 웹 페이지 CSS에 정의된 스타일 규칙이 양식 오브젝트 CSS와 충돌하지 않는지 확인합니다. 충돌 방지를 위해 AEM 클라이언트 라이브러리를 사용하여 적응형 양식 테마에서 웹 페이지 CSS를 다시 사용할 수 있습니다. 적응형 양식 테마에서 클라이언트 라이브러리 사용에 대한 자세한 내용은 [AEM Forms의 테마](/help/forms/using-themes-in-core-components.md)를 참조하십시오.
+* 웹 페이지의 양식 컨테이너에서 전체 창 너비를 사용할 수 있습니다. 모바일 디바이스용으로 구성된 CSS 규칙이 변경 사항 없이 작동하고 있는지 확인합니다. 양식 컨테이너에서 전체 창 너비를 사용하지 않는 경우, 사용자 정의 CSS를 작성하여 양식이 다양한 모바일 디바이스에 적응하도록 구성해야 합니다.
+* `[getData](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)` API를 사용하여 클라이언트에서 양식 데이터의 XML 또는 JSON 표현식을 가져옵니다.
+* `[unloadAdaptiveForm](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)` API를 사용하여 HTML DOM에서 적응형 양식을 언로드합니다.
+* AEM 서버에서 응답을 전송할 때 access-control-origin 헤더를 설정합니다.
 
-## AEM Forms에서 도메인 간 사이트에 적응형 양식을 제공할 수 있도록 활성화 {#cross-site}
+## AEM Forms를 활성화하여 크로스 도메인 사이트에 적응형 양식을 제공합니다. {#cross-site}
 
-1. AEM 게시 인스턴스에서 의 AEM 웹 콘솔 구성 관리자로 이동합니다. `https://'[server]:[port]'/system/console/configMgr`.
-1. 을(를) 찾아 엽니다. **Apache Sling Referrer 필터** 구성.
-1. 허용된 호스트 필드에서 웹 페이지가 있는 도메인을 지정합니다. 이렇게 하면 호스트가 AEM 서버에 POST 요청을 할 수 있습니다. 정규 표현식을 사용하여 일련의 외부 응용 프로그램 도메인을 지정할 수도 있습니다.
+1. AEM 게시 인스턴스에서 `https://'[server]:[port]'/system/console/configMgr`의 AEM 웹 콘솔 구성 관리자로 이동합니다.
+1. **Apache Sling 레퍼러 필터** 구성을 찾아 엽니다.
+1. 허용된 호스트 필드에서 웹 페이지가 있는 도메인을 지정합니다. 이를 통해 호스트는 AEM 서버에 POST를 요청할 수 있습니다. 정규 표현식을 사용하여 일련의 외부 애플리케이션 도메인을 지정할 수도 있습니다.
 
 
 
