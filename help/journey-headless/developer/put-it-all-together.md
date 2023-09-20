@@ -3,9 +3,9 @@ title: 결합 방법 - AEM Headless의 앱과 콘텐츠
 description: 이 AEM Headless 개발자 여정의 부분에서는 콘텐츠 조각, GraphQL 호출, REST API 호출 및 애플리케이션 등 AEM 프로젝트를 가져와 실행을 준비하는 방법에 대해 알아봅니다.
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
 source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1092'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -90,7 +90,7 @@ AEM Headless 프로젝트 실행을 준비하려면 프로젝트의 모든 구�
 
 로컬 개발 환경은 세 가지 주요 영역으로 구성됩니다.
 
-1. AEM Project - 이 프로젝트에는 AEM 개발자가 작업할 모든 사용자 지용 코드, 구성 및 콘텐츠가 포함됨
+1. AEM Project - 이 프로젝트에는 AEM 개발자가 작업할 모든 사용자 정의 코드, 구성 및 콘텐츠가 포함됨
 1. 로컬 AEM 런타임 - AEM 프로젝트에서 코드 배포에 사용되는 AEM 작성자 및 게시 서비스의 로컬 버전
 1. 로컬 Dispatcher 런타임 - Dispatcher 모듈이 포함된 Apache htttpd 웹 서버의 로컬 버전
 
@@ -116,4 +116,4 @@ AEM Headless 프로젝트를 실제로 실행할 수 있는 다음 문서인 [He
 * [Java™용 AEM Headless SDK](https://github.com/adobe/aem-headless-client-java)
 * [AEM as a Headless CMS 소개](/help/headless/introduction.md)
 * [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [AEM의 Headless Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
