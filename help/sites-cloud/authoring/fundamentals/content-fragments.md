@@ -3,9 +3,9 @@ title: 콘텐츠 조각
 description: Adobe Experience Manager as a Cloud Service 콘텐츠 조각을 사용하면 페이지 독립적 콘텐츠를 디자인, 작성, 조정 및 사용할 수 있습니다.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1286'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -19,14 +19,14 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
 
 >[!NOTE]
 >
->콘텐츠 조각은 **사이트** 기능이지만 다음과 같이 저장됩니다. **에셋**.
+>콘텐츠 조각은 **Sites** 기능이지만 **자산**&#x200B;으로 저장됩니다.
 >
->이제 를 통해 주로 관리됩니다. **[컨텐츠 조각](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** 콘솔에서 관리할 수 있습니다. **[에셋](/help/assets/content-fragments/content-fragments-managing.md)** 콘솔.
+>이제는 주로 **[콘텐츠 조각](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** 콘솔과 함께 관리되지만 **[자산](/help/assets/content-fragments/content-fragments-managing.md)** 콘솔에서도 계속 관리될 수 있습니다.
 >
->콘텐츠 조각 작성에는 두 가지 편집기가 있습니다.
+>콘텐츠 조각을 작성하는 두 가지 편집기가 있습니다.
 >
->* 의 새 편집기 [컨텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md)는 주로 다음에서 액세스됩니다. **컨텐츠 조각** 콘솔.
->* 다음 [원본 편집기](/help/assets/content-fragments/content-fragments-variations.md) 은(는) 주로 다음에서 액세스함: **에셋** 콘솔.
+>* [콘텐츠 조각 -작성](/help/sites-cloud/administering/content-fragments/authoring.md)의 새 편집기는 주로 **콘텐츠 조각** 콘솔에서 액세스할 수 있습니다.
+>* [원본 편집기](/help/assets/content-fragments/content-fragments-variations.md)는 주로 **자산** 콘솔에서 액세스할 수 있습니다.
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
 * **마케팅 및 캠페인 전략**
    * 중앙에서 관리되는 콘텐츠 조각을 통해 콘텐츠를 검토합니다.
 * **Creative 프로그램**
-   * 콘텐츠 조각과 관련된 컬렉션을 통해 Creative 자산을 추적합니다.
+   * 콘텐츠 조각과 관련된 컬렉션을 통해 크리에이티브 자산을 추적합니다.
 * **사본 작성자**
    * AEM 콘텐츠 조각 편집기에서 작성합니다.
    * 콘텐츠 변형을 만들 수 있습니다.
