@@ -4,9 +4,9 @@ description: GraphQL에서 Headless 콘텐츠 게재를 위해 콘텐츠 조각�
 feature: Content Fragments, GraphQL API
 role: Developer, Architect
 source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '748'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -102,9 +102,9 @@ AEM GraphQL API 구현은 [GraphQL Java 라이브러리](https://graphql.org/cod
 
 ## 콘텐츠 조각 구조 분석 {#analyzing-content-fragments-structure}
 
-분석에 도움이 되도록 AEM은에서 조각 구조를 보는 몇 가지 방법을 제공합니다. [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md).
+분석을 지원하기 위해 AEM은 [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md)에서 조각의 구조를 볼 수 있는 몇 가지 방법을 제공합니다.
 
-다음을 참조하십시오 [콘텐츠 조각 구조 분석](/help/sites-cloud/administering/content-fragments/analysis.md) 자세한 내용은:
+자세한 내용은 [콘텐츠 조각 구조 분석](/help/sites-cloud/administering/content-fragments/analysis.md)을 참조하십시오.
 
 * [구조 트리](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree)
 
