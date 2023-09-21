@@ -1,7 +1,7 @@
 ---
 title: 핵심 구성 요소를 기반으로 적응형 양식에 새 로케일에 대한 지원을 추가하는 방법
 description: AEM Forms을 사용하면 적응형 양식을 현지화하기 위한 새 로케일을 추가할 수 있습니다.
-source-git-commit: 23f915f0e2e33b9cf1313d15cb98a0a4f8243746
+source-git-commit: b643cdc9ebf57e164088e0dc3598e4e0d3ded267
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 4%
@@ -48,7 +48,7 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
 
 ![저장소에 로케일 추가](add-a-locale-adaptive-form-core-components.png)
 
-### 1. AEM as a Cloud Service Git 저장소 복제 {#clone-the-repository}
+### AEM as a Cloud Service Git 리포지토리 복제 {#clone-the-repository}
 
 1. 명령줄을 열고 다음과 같이 저장소를 저장할 디렉토리를 선택합니다 `/cloud-service-repository/`.
 
@@ -63,7 +63,7 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
    명령을 성공적으로 완료하면 폴더가 `<my-program>` 이(가) 만들어졌습니다. 여기에는 Git 저장소에서 복제된 콘텐츠가 포함됩니다. 문서의 나머지 부분에서 폴더는 다음과 같이 표시됩니다. `[AEM Forms as a Cloud Service Git repostory]`.
 
 
-### 2. 가이드 현지화 서비스에 새 로케일 추가 {#add-a-locale-to-the-guide-localization-service}
+### 가이드 현지화 서비스에 새 로케일 추가 {#add-a-locale-to-the-guide-localization-service}
 
 1. 이전 섹션에서 복제된 저장소 폴더를 일반 텍스트 편집기에서 엽니다.
 1. `[AEM Forms as a Cloud Service Git repostory]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config` 폴더로 이동합니다. 다음을 찾을 수 있습니다. `<appid>` 다음에서 `archetype.properties` 프로젝트의 파일입니다.
@@ -74,7 +74,7 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
 1. 추가 [언어의 로케일 코드](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) 예를 들어 힌디어에 대해 &#39;hi&#39;를 추가하려는 경우
 1. 파일을 저장하고 닫습니다.
 
-### 3. 로케일을 추가할 클라이언트 라이브러리 만들기
+### 로케일을 추가할 클라이언트 라이브러리 만들기
 
 AEM Forms은 새 로케일을 쉽게 추가하는 데 도움이 되는 샘플 클라이언트 라이브러리를 제공합니다. 을(를) 다운로드하고 추가할 수 있습니다. `clientlib-it-custom-locale` 클라이언트 라이브러리: GitHub의 적응형 Forms 핵심 구성 요소 저장소에서 Forms as a Cloud Service 저장소로. 클라이언트 라이브러리를 추가하려면 다음 단계를 수행합니다.
 
@@ -84,7 +84,7 @@ AEM Forms은 새 로케일을 쉽게 추가하는 데 도움이 되는 샘플 �
 1. 다음으로 이동 `[AEM Forms as a Cloud Service Git repostory]/ui.apps/src/main/content/jcr_root/apps/moonlightprodprogram/clientlibs` 및 붙여넣기 `clientlib-it-custom-locale` 디렉토리.
 
 
-### 4. 로케일별 파일 만들기 {#locale-specific-file}
+### 로케일별 파일 만들기 {#locale-specific-file}
 
 1. 다음으로 이동 `[AEM Forms as a Cloud Service Git repostory]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`
 1. 를 찾습니다. [GitHub의 영어 로케일 .json 파일](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json)제품에 포함된 최신 기본 문자열 세트가 들어 있습니다.
@@ -94,7 +94,7 @@ AEM Forms은 새 로케일을 쉽게 추가하는 데 도움이 되는 샘플 �
 1. 파일을 저장하고 닫습니다.
 
 
-### 4. 로케일 지원을 사전에 추가합니다 {#add-locale-support-for-the-dictionary}
+### 사전에 로케일 지원 추가 {#add-locale-support-for-the-dictionary}
 
 다음 경우에만 이 단계를 수행하십시오. `<locale>` 을(를) 추가하고 있는 이(가) 다음에 없습니다. `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
@@ -133,7 +133,7 @@ AEM Forms은 새 로케일을 쉽게 추가하는 데 도움이 되는 샘플 �
 
    ![에서 새로 만든 폴더 추가 `filter.xml` 아래에 `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
 
-### 5. 변경 사항을 커밋하고 파이프라인을 배포합니다. {#commit-changes-in-repo-deploy-pipeline}
+### 변경 사항을 커밋하고 파이프라인 배포 {#commit-changes-in-repo-deploy-pipeline}
 
 새 로케일 지원을 추가한 후 GIT 저장소에 변경 사항을 커밋합니다. 전체 스택 파이프라인을 사용하여 코드를 배포합니다. 학습 [파이프라인 설정 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) 새 로케일 지원을 추가합니다.
 파이프라인이 완료되면 새로 추가된 로케일이 AEM 환경에 나타납니다.
