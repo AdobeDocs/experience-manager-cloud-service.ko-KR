@@ -8,10 +8,10 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ce7b6922f92208c06f85afe85818574bf2bc8f6d
+source-git-commit: 23f915f0e2e33b9cf1313d15cb98a0a4f8243746
 workflow-type: tm+mt
-source-wordcount: '4293'
-ht-degree: 99%
+source-wordcount: '4303'
+ht-degree: 98%
 
 ---
 
@@ -604,6 +604,7 @@ ht-degree: 99%
             + [적응형 양식에 대한 제출 액션 구성](/help/forms/configure-submit-actions-core-components.md)
             + [적응형 양식에서 Google reCAPTCHA 사용](/help/forms/captcha-adaptive-forms-core-components.md)
             + [적응형 양식에서 사용자 정의 오류 핸들러 추가](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
+            + [핵심 구성 요소를 기반으로 적응형 Forms에 대한 로케일 추가](/help/forms/supporting-new-language-localization-core-components.md)
       + 기초 구성 요소 {#authoring-adaptive-forms-foundation-components}
          + PDF 양식을 적응형 양식으로 변환 {#afcs}
             + [자동 양식 전환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
