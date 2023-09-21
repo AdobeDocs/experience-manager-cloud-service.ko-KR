@@ -2,10 +2,10 @@
 title: 적응형 양식에 새 로케일 지원 추가
 description: AEM Forms을 사용하면 적응형 양식을 현지화하기 위한 새 로케일을 추가할 수 있습니다. 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어(브라질), 중국어(zh-CN), 중국어(zh-TW) 및 한국어(ko-KR) 로케일.
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 9a1bb716256b5e820723911f4e78a6a4c69d940c
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 7%
+source-wordcount: '1251'
+ht-degree: 8%
 
 ---
 
@@ -17,7 +17,6 @@ ht-degree: 7%
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html) |
-| AEM as a Cloud Service | 이 문서 |
 
 AEM Forms은 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어-브라질어(pt-BR), 중국어(zh-CN), 중국어-대만(zh-TW) 및 한국어(ko-KR) 로케일을 즉시 지원합니다. 힌디어(hi_IN)와 같은 더 많은 로케일에 대한 지원을 추가할 수도 있습니다.
 
@@ -31,7 +30,7 @@ AEM Forms은 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it)
 
 ## 새 로케일에 대한 지원 추가 {#add-support-for-new-locales}
 
-새 로케일에 대한 지원을 추가하려면 다음을 수행합니다.
+로케일에 대한 지원을 추가하려면 다음을 수행합니다.
 
 1. [지원되지 않는 로케일에 대한 현지화 지원 추가](#add-localization-support-for-non-supported-locales)
 1. [적응형 Forms에서 추가된 로케일 사용](#use-added-locale-in-af)
@@ -40,7 +39,7 @@ AEM Forms은 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it)
 
 AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어(pt-BR), 중국어(zh-CN), 중국어-대만(zh-TW) 및 한국어(ko-KR) 로케일로 된 적응형 Forms 콘텐츠의 현지화를 지원합니다.
 
-적응형 Forms 런타임에 새 로케일에 대한 지원을 추가하려면:
+로케일에 대한 지원을 추가하려면 다음 작업을 수행하십시오.
 
 1. [저장소 복제](#clone-the-repository)
 1. [GuideLocalizationService 서비스에 로케일 추가](#add-a-locale-to-the-guide-localization-service)
@@ -112,7 +111,7 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
 
 #### 5. 저장소의 변경 사항을 커밋하고 파이프라인을 배포합니다 {#commit-changes-in-repo-deploy-pipeline}
 
-새 로케일 지원을 추가한 후 GIT 저장소에 변경 사항을 커밋합니다. 전체 스택 파이프라인을 사용하여 코드를 배포합니다. 학습 [파이프라인 설정 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) 새 로케일 지원을 추가합니다.
+로케일 지원을 추가한 후 GIT 저장소에 변경 사항을 커밋합니다. 전체 스택 파이프라인을 사용하여 코드를 배포합니다. 학습 [파이프라인 설정 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) 새 로케일 지원을 추가합니다.
 파이프라인이 완료되면 새로 추가된 로케일이 AEM 환경에 나타납니다.
 
 ### 적응형 Forms에서 추가된 로케일 사용 {#use-added-locale-in-af}
