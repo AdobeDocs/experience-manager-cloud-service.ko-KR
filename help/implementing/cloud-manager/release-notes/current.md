@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.9.0 릴
 description: AEM as a Cloud Service의 Cloud Manager 2023.9.0 릴리스 정보입니다.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 8bf2ffe8b1d3780f4ad3f6972fea4f8281945abb
+source-git-commit: a5e8c11340ab5eacdefb22da302f9e35d9429bc7
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 76%
+source-wordcount: '443'
+ht-degree: 75%
 
 ---
 
@@ -55,6 +55,6 @@ AEM as a Cloud Service의 Cloud Manager 2023.9.0 릴리스 일자는 2023년 9�
 
 ## 버그 수정 {#bug-fixes}
 
-* 프로그램이 삭제되면 연결된 실행 중인 파이프라인도 모두 삭제되어 파이프라인이 실패 상태로 잘못 지정되지 않도록 합니다.
-* Go-live 완료 버튼이 비활성화되고 파이프라인이 진행 중인 이유를 사용자에게 알립니다.
-* 경우에 따라 파이프라인 실행의 모든 단계가 &#39;완료&#39;되면 파이프라인의 상태가 &#39;실행 중&#39;으로 표시되어 중단 상태로 보일 수 있습니다. 이제 &#39;완료&#39;로 표시됩니다.
+* 이제 프로그램이 삭제되면 연결된 실행 중인 파이프라인도 삭제됩니다.
+* 파이프라인이 진행 중인 경우 **보내기** 의 단추 **라이브 완료** 이제 대화 상자가 비활성화되고 실행 중인 파이프라인으로 인해 go-live 날짜를 설정할 수 없다고 사용자에게 알립니다.
+* 파이프라인 실행의 모든 단계가 완료된 것으로 표시되었지만 파이프라인의 상태가 여전히 실행 중이어서 정지 상태인 것처럼 표시되는 가끔 오류가 수정되었습니다.

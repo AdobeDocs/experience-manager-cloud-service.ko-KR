@@ -2,10 +2,10 @@
 title: 태그 사용
 description: 태그는 웹 사이트에 포함된 콘텐츠를 빠르고 손쉽게 분류할 수 있는 방법입니다.
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+source-git-commit: a7774ff75fb6bac55d5e931b13597d90bf8d721b
+workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 태그는 웹 사이트에 포함된 콘텐츠를 빠르고 손쉽게 분류할 수 있는 방법입니다. 태그는 검색을 통해 해당 콘텐츠 및 관련 콘텐츠를 찾을 수 있도록 하기 위해 페이지, 자산 또는 콘텐츠에 첨부할 수 있는 키워드 또는 레이블이라고 할 수 있습니다.
 
-* 태그 작성 및 관리 방법과 콘텐츠 태그가 적용되는 항목에 대한 내용은 태그 관리를 참조하십시오. <!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, and to which content tags have been applied.-->
+* 다음을 참조하십시오 [태그 관리](/help/sites-cloud/administering/tags.md) 태그 작성 및 관리 방법과 컨텐츠 태그가 적용되는 항목에 대한 정보입니다.
 * 사용자 정의 애플리케이션에서 태그를 포함하고 확장하는 방법과 태그 지정 프레임워크에 대한 내용은 [개발자를 위한 태그 지정](/help/implementing/developing/introduction/tagging-framework.md)을 참조하십시오.
 
 ## 태그 지정을 사용해야 하는 10가지 이유 {#ten-reasons-to-use-tagging}
