@@ -1,9 +1,9 @@
 ---
 title: 핵심 구성 요소를 기반으로 적응형 양식에 새 로케일에 대한 지원을 추가하는 방법
 description: AEM Forms을 사용하면 적응형 양식을 현지화하기 위한 새 로케일을 추가할 수 있습니다.
-source-git-commit: b643cdc9ebf57e164088e0dc3598e4e0d3ded267
+source-git-commit: 0a1310290c25a94ffe6f95ea6403105475ef5dda
 workflow-type: tm+mt
-source-wordcount: '1336'
+source-wordcount: '1079'
 ht-degree: 4%
 
 ---
@@ -16,15 +16,20 @@ ht-degree: 4%
 | 기초 구성 요소 | [여기 클릭](supporting-new-language-localization.md) |
 | 핵심 구성 요소 | 이 문서 |
 
-AEM Forms은 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어-브라질어(pt-BR), 중국어(zh-CN), 중국어-대만(zh-TW) 및 한국어(ko-KR) 로케일을 즉시 지원합니다. 힌디어(hi_IN)와 같은 더 많은 로케일에 대한 지원을 추가할 수도 있습니다.
+AEM Forms은 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어-브라질어(pt-BR), 중국어(zh-CN), 중국어-대만(zh-TW) 및 한국어(ko-KR) 로케일을 즉시 지원합니다.
 
-## 로케일 사전 이해 {#about-locale-dictionaries}
+힌디어(hi_IN)와 같은 더 많은 로케일에 대한 지원을 추가할 수도 있습니다.
 
-적응형 양식의 현지화는 두 가지 유형의 로케일 사전을 사용합니다.
+<!-- 
+## Understanding locale dictionaries {#about-locale-dictionaries}
 
-* **양식 특정 사전** 적응형 양식에 사용되는 문자열을 포함합니다. 예를 들어 레이블, 필드 이름, 오류 메시지, 도움말 설명이 있습니다. 각 로케일에 대한 XLIFF 파일 세트로 관리되며 다음 위치에서 액세스할 수 있습니다. `[author-instance]/libs/cq/i18n/gui/translator.html`.
+The localization of adaptive forms relies on two types of locale dictionaries:
 
-* **글로벌 사전** AEM 클라이언트 라이브러리에는 JSON 개체로 관리되는 두 개의 글로벌 사전이 있습니다. 이러한 사전에는 기본 오류 메시지, 월 이름, 통화 기호, 날짜 및 시간 패턴 등이 포함됩니다. 다음 위치에서 이 사전을 찾을 수 있습니다. `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. 이러한 위치에는 각 로케일에 대해 별도의 폴더가 있습니다. 글로벌 사전은 자주 업데이트되지 않으므로 각 로케일에 대해 별도의 JavaScript 파일을 유지하면 브라우저가 이를 캐시할 수 있고 동일한 서버의 다른 적응형 양식에 액세스할 때 네트워크 대역폭 사용을 줄일 수 있습니다.
+*   **Form-specific dictionary** Contains strings used in adaptive forms. For example, labels, field names, error messages, help descriptions. It is managed as a set of XLIFF files for each locale and you can access it at `[AEM Forms as a Cloud Service Author instance]/libs/cq/i18n/gui/translator.html`.
+
+*   **Global dictionaries** There are two global dictionaries, managed as JSON objects, in AEM client library. These dictionaries contain default error messages, month names, currency symbols, date and time patterns, and so on.  These locations contain separate folders for each locale. Because global dictionaries are not updated frequently, keeping separate JavaScript files for each locale enables browsers to cache them and reduce network bandwidth usage when accessing different adaptive forms on same server.
+
+-->
 
 ## 사전 요구 사항 {#prerequistes}
 
@@ -44,7 +49,7 @@ AEM Forms은 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it)
 
 ## 로케일 추가 {#add-localization-support-for-non-supported-locales}
 
-AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어(pt-BR), 중국어(zh-CN), 중국어-대만(zh-TW) 및 한국어(ko-KR) 로케일로 된 적응형 Forms 콘텐츠의 현지화를 지원합니다. 적응형 Forms 런타임 시 새 로케일에 대한 지원을 추가하려면 다음 단계를 수행합니다.
+새 로케일에 대한 지원을 추가하려면 다음 단계를 수행합니다.
 
 ![저장소에 로케일 추가](add-a-locale-adaptive-form-core-components.png)
 
@@ -136,13 +141,14 @@ AEM Forms은 새 로케일을 쉽게 추가하는 데 도움이 되는 샘플 �
 ### 변경 사항을 커밋하고 파이프라인 배포 {#commit-changes-in-repo-deploy-pipeline}
 
 새 로케일 지원을 추가한 후 GIT 저장소에 변경 사항을 커밋합니다. 전체 스택 파이프라인을 사용하여 코드를 배포합니다. 학습 [파이프라인 설정 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) 새 로케일 지원을 추가합니다.
-파이프라인이 완료되면 새로 추가된 로케일이 AEM 환경에 나타납니다.
 
-## 적응형 Forms에서 추가된 로케일 사용 {#use-added-locale-in-af}
+파이프라인 실행이 성공하면 새로 추가된 로케일을 사용할 수 있습니다.
 
-새로 추가된 로케일을 사용하여 적응형 양식을 사용하고 렌더링하려면 다음 단계를 수행하십시오.
+## 새로 추가된 로케일이 있는 적응형 양식 미리 보기 {#use-added-locale-in-af}
 
-1. AEM 작성자 인스턴스에 로그인합니다.
+새로 추가된 로케일을 사용하여 적응형 양식을 미리 보려면 다음 단계를 수행하십시오.
+
+1. AEM Forms as a Cloud Service 인스턴스에 로그인합니다.
 1. 다음으로 이동 **Forms** >  **Forms 및 문서**.
 1. 적응형 양식을 선택하고 **사전 추가** 및 **사전을 번역 프로젝트에 추가** 마법사가 나타납니다.
 1. 다음을 지정합니다. **프로젝트 제목** 및 선택 **타겟 언어** 드롭다운 메뉴 아래의 **사전을 번역 프로젝트에 추가** 마법사.
@@ -153,7 +159,7 @@ AEM Forms은 새 로케일을 쉽게 추가하는 데 도움이 되는 샘플 �
 
 적응형 양식의 로케일을 식별하는 방법에는 두 가지가 있습니다. 적응형 양식이 렌더링되면 다음 방법으로 요청된 로케일을 식별합니다.
 
-* 검색 중 `[local]` 적응형 양식 URL의 선택기. URL 형식은 `http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled`입니다. 사용 `[local]` 선택기를 사용하여 적응형 양식을 캐싱할 수 있습니다.
+* 검색 중 `[local]` 적응형 양식 URL의 선택기. URL 형식은 `http:/[AEM Forms Server URL]/content/forms/af/[afName].[locale].html?wcmmode=disabled`입니다. 사용 `[local]` 선택기를 사용하여 적응형 양식을 캐싱할 수 있습니다.
 
 * 나열된 순서로 다음 매개 변수를 검색합니다.
 
@@ -165,17 +171,18 @@ AEM Forms은 새 로케일을 쉽게 추가하는 데 도움이 되는 샘플 �
 
 요청한 로케일에 대한 클라이언트 라이브러리가 없으면 로케일에 있는 언어 코드에 대한 클라이언트 라이브러리를 확인합니다. 예를 들어 요청된 로케일이 `en_ZA` (남아프리카 영어) 및 클라이언트 라이브러리 `en_ZA` 이(가) 존재하지 않습니다. 적응형 양식은 클라이언트 라이브러리를 사용합니다. `en` (영어) 언어(있는 경우). 단, 존재하지 않는 경우 적응형 양식은 다음 용도로 사전을 사용합니다 `en` 로케일.
 
-
 로케일이 식별되면 적응형 양식에서 양식별 사전을 선택합니다. 요청된 로케일에 대한 양식 특정 사전을 찾을 수 없는 경우 적응형 양식이 작성된 언어로 사전을 사용합니다.
 
-사용 가능한 로케일 정보가 없는 경우 적응형 양식은 개발 중에 사용되는 언어인 원래 언어로 표시됩니다.
+사용 가능한 로케일 정보가 없는 경우 적응형 양식이 양식 개발 중에 사용된 언어인 원래 언어로 표시됩니다.
 
-Get [샘플 클라이언트 라이브러리](/help/forms/assets/locale-support-sample.zip) 새 로케일에 대한 지원을 추가합니다. 필요한 로케일에서 폴더 콘텐츠를 변경해야 합니다.
+<!--
+Get [sample client library](/help/forms/assets/locale-support-sample.zip) to add support for new locale. You need to change the content of the folder in the required locale.
 
-## 새로운 현지화 기능 지원을 위한 모범 사례 {#best-practices}
+## Best Practices to support for new localization {#best-practices}
 
-* Adobe은 적응형 양식을 만든 후 번역 프로젝트를 만들 것을 권장합니다.
+*   Adobe recommends creating a translation project after creating an Adaptive Form.
 
-* 기존 적응형 양식에 새 필드를 추가하는 경우:
-   * **기계 번역용**: 사전을 다시 만들고 번역 프로젝트를 실행합니다. 번역 프로젝트를 만든 후 적응형 양식에 추가된 필드는 번역되지 않은 상태로 유지됩니다.
-   * **사람 번역용**: 다음을 통해 사전 내보내기 `[server:port]/libs/cq/i18n/gui/translator.html`. 새로 추가된 필드의 사전을 업데이트하고 업로드합니다.
+*   When new fields are added in an existing Adaptive Form:
+    * **For machine translation**: Re-create the dictionary and run the translation project. Fields added to an Adaptive Form after creating a translation project remain untranslated. 
+    * **For human translation**: Export the dictionary through `[server:port]/libs/cq/i18n/gui/translator.html`. Update the dictionary for the newly added fields and upload it.
+-->
