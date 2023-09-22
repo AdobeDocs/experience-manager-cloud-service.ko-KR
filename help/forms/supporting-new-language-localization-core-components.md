@@ -1,9 +1,9 @@
 ---
 title: 핵심 구성 요소를 기반으로 적응형 양식에 새 로케일에 대한 지원을 추가하는 방법
 description: 적응형 양식에 대한 새 로케일을 추가하는 방법을 알아봅니다.
-source-git-commit: 2a738d17b1e2f46c06828512ee07c1c20f35596c
+source-git-commit: 4e48e49fea66fa24052632138a1b305208690d06
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1484'
 ht-degree: 3%
 
 ---
@@ -16,12 +16,11 @@ ht-degree: 3%
 | 기초 구성 요소 | [여기 클릭](supporting-new-language-localization.md) |
 | 핵심 구성 요소 | 이 문서 |
 
-AEM Forms은 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어-브라질어(pt-BR), 중국어(zh-CN), 중국어-대만(zh-TW) 및 한국어(ko-KR) 로케일을 즉시 지원합니다.
+AEM Forms은 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어-브라질어(pt-BR), 중국어(zh-CN), 중국어-대만(zh-TW) 및 한국어(ko-KR) 로케일을 즉시 지원합니다. 힌디어(hi_IN)와 같은 더 많은 로케일에 대한 지원을 추가할 수도 있습니다.
 
 ## 적응형 양식에 대해 선택한 로케일은 어떻게 됩니까?
 
-
-적응형 양식이 렌더링될 때 로케일을 식별하고 선택하는 두 가지 방법이 있습니다.
+적응형 Forms에 대한 새 로케일 추가를 시작하기 전에 적응형 양식에 대해 로케일이 선택되는 방법에 대한 이해를 구축하십시오. 적응형 양식이 렌더링될 때 로케일을 식별하고 선택하는 두 가지 방법이 있습니다.
 
 * **사용 [로케일] URL의 선택기**: 적응형 양식을 렌더링할 때 시스템은 다음을 검사하여 요청된 로케일을 식별합니다 [로케일] 적응형 양식 URL의 선택기. URL은 http:/ 형식을 따릅니다.[AEM Forms 서버 URL]/content/forms/af/[afName].[로케일].html?wcmmode=disabled. 사용 [로케일] 선택기를 사용하여 적응형 양식을 캐싱할 수 있습니다.
 
