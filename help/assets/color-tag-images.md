@@ -1,11 +1,11 @@
 ---
 title: 이미지용 색상 태그
-description: Experience Manager Assets을 사용하면 이미지의 색상을 구분하고 이를 태그로 자동으로 적용할 수 있습니다. 그런 다음 이러한 태그를 사용하여 이미지를 검색하고 필터링할 수 있습니다.
+description: Adobe Experience Manager Assets를 사용하면 이미지의 색상을 구분하고 이를 태그로 자동으로 적용할 수 있습니다. 그런 다음 이러한 태그를 사용하여 이미지를 검색하고 필터링할 수 있습니다.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 57d6b50ef5256bf6e8fce84100eed4690b77cb87
 workflow-type: tm+mt
 source-wordcount: '1220'
-ht-degree: 7%
+ht-degree: 6%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 7%
 
 ![색상 태그 지정 배너](assets/banner-image.png)
 
-Experience Manager Assets은 Adobe Sensei AI 기능을 사용하여 이미지의 색상을 구분하고 수집 시 이들 색상을 자동으로 태그로 적용합니다. 이러한 태그를 통해 이미지 색상 구성에 따라 향상된 검색 환경을 사용할 수 있습니다.
+Adobe Experience Manager(AEM) Assets는 Adobe Sensei AI 기능을 사용하여 이미지의 색상을 구분하고 수집 시 태그로 자동 적용합니다. 이러한 태그를 사용하면 이미지 색상 구성에 따라 향상된 검색 환경을 사용할 수 있습니다.
 
 나중에 해당 색상을 기준으로 이미지를 검색할 수 있도록 이미지에 태그가 지정된 색상 수를 1~40 범위 내에서 구성할 수 있습니다. Experience Manager Assets은 이미지의 색상 범위를 기반으로 태그를 적용합니다. 색상 태그의 표시 형식을 구성할 수도 있습니다.
 
@@ -25,12 +25,12 @@ Experience Manager Assets은 Adobe Sensei AI 기능을 사용하여 이미지의
 
 | 파일 형식 | 확장 | MIME 유형 | 입력 색상 공간 | 지원되는 최대 소스 파일 크기 | 지원되는 최대 파일 크기 확인 |
 |---|---|---|---|---|---|
-| JPEG | .jpg, .jpeg | image/jpeg | sRGB | 15GB | 20000px X 20000px |
-| PNG | .png | image/png | sRGB | 15GB | 20000px X 20000px |
-| TIFF | .tif, .tiff | image/tiff | sRGB | 4GB(포맷 사양에 따라 제한됨) | 20000px X 20000px |
-| PSD | .psd | image/vnd.adobe.photoshop | sRGB | 2GB(포맷 사양에 따라 제한됨) | 20000px X 20000px |
-| GIF | .gif | image/gif | sRGB | 15GB | 20000px X 20000px |
-| BMP | .bmp | image/bmp | sRGB | 4GB(포맷 사양에 따라 제한됨) | 20000px X 20000px |
+| JPEG | .jpg 및 .jpeg | image/jpeg | sRGB | 15GB | 20000 × 20000 픽셀 |
+| PNG | .png | image/png | sRGB | 15GB | 20000 × 20000 픽셀 |
+| TIFF | .tif 및 .tiff | image/tiff | sRGB | 4GB(포맷 사양에 따라 제한됨) | 20000 × 20000 픽셀 |
+| PSD | .psd | image/vnd.adobe.photoshop | sRGB | 2GB(포맷 사양에 따라 제한됨) | 20000 × 20000 픽셀 |
+| GIF | .gif | image/gif | sRGB | 15GB | 20000 × 20000 픽셀 |
+| BMP | .bmp | image/bmp | sRGB | 4GB(포맷 사양에 따라 제한됨) | 20000 × 20000 픽셀 |
 
 ## 색상 태깅 속성 관리 {#manage-color-tagging-properties}
 
@@ -42,7 +42,7 @@ Experience Manager Assets은 Adobe Sensei AI 기능을 사용하여 이미지의
 
 1. 에서 색상 태그의 표시 형식 지정 **[!UICONTROL 표시 형식]** 필드. 가능한 옵션에는 색상 이름, RGB 또는 HEX 형식이 포함됩니다.
 
-1. 에서 이미지에 대해 태그 지정할 색상 수를 지정합니다. **[!UICONTROL 제한]** 필드. 이러한 색상은 이미지에 대한 속성을 볼 때 표시됩니다.  이 필드에서는 1에서 40 사이의 숫자를 정의할 수 있습니다. 이 필드의 기본값은 10색입니다.
+1. 에서 이미지에 태그를 지정할 색상 수를 지정합니다. **[!UICONTROL 제한]** 필드. 이러한 색상은 이미지에 대한 속성을 볼 때 표시됩니다. 이 필드에서는 1에서 40 사이의 숫자를 정의할 수 있습니다. 이 필드의 기본값은 10색입니다.
 
 1. 에서 검색 결과에 색상 태그를 포함할 최소 색상 적용 범위 비율을 지정합니다. **[!UICONTROL 적용 범위/우위성 임계값 %]** 필드. 예를 들어, 이미지의 빨강 색상에 대한 적용 범위가 10%이고 이 필드에 9%를 정의하면 빨강 색상에 대한 이미지를 검색할 때 이미지가 포함됩니다. 그러나 이미지의 빨강 색상에 대한 적용 범위가 10%이고 이 필드에 11%를 정의하면 빨강 색상에 대한 이미지를 검색할 때 이미지가 포함되지 않습니다.
 
@@ -104,21 +104,21 @@ Experience Manager Assets은 Adobe Sensei AI 기능을 사용하여 이미지의
 
 ## DAM의 기존 이미지에 대한 색상 태그 {#color-tags-existing-images}
 
-DAM에 이미 존재하는 이미지는 색상 태그가 자동으로 지정되지 않습니다. 다음을 수행해야 합니다. [!UICONTROL 자산 재처리] 색상 태그를 수동으로 생성합니다.
+DAM의 기존 이미지는 색상 태그가 자동으로 지정되지 않습니다. [!UICONTROL 자산 재처리] 색상 태그를 수동으로 생성합니다.
 
-에셋 저장소에 이미 있는 에셋의 이미지 또는 폴더(하위 폴더 포함)에 색상을 지정하려면 다음 단계를 수행합니다.
+에셋 저장소에 있는 에셋의 이미지 또는 폴더(하위 폴더 포함)에 색상을 지정하려면 다음 단계를 수행합니다.
 
 1. 다음 항목 선택 [!DNL Adobe Experience Manager] 로고를 만든 다음 [!UICONTROL 탐색] 페이지를 가리키도록 업데이트하는 중입니다.
 
-1. 선택 [!UICONTROL 파일] 자산 인터페이스를 표시합니다.
+1. 선택 [!UICONTROL 파일].
 
-1. 색상 태그를 적용할 폴더로 이동합니다.
+1. Assets 인터페이스에서 색상 태그를 적용할 폴더로 이동합니다.
 
 1. 전체 폴더 또는 특정 이미지를 선택합니다.
 
 1. 선택 ![에셋 재처리 아이콘](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL 자산 재처리] 아이콘을 클릭하고 [!UICONTROL 전체 프로세스] 옵션을 선택합니다.
 
-프로세스가 완료되면 다음 위치로 이동합니다. [!UICONTROL 속성] 폴더에 있는 모든 이미지의 페이지입니다. 자동으로 추가된 태그는에 표시됩니다. [!UICONTROL 스마트 색상 태그] 의 섹션 [!UICONTROL 기본] 탭.
+프로세스가 완료되면 다음 위치로 이동합니다. [!UICONTROL 속성] 폴더에 있는 모든 이미지의 페이지입니다. 자동으로 추가된 태그는 [!UICONTROL 스마트 색상 태그] 의 섹션 [!UICONTROL 기본] 탭.
 
 
 ## 이미지에 대한 스마트 색상 태그 보기 {#view-color-tags}
@@ -133,7 +133,7 @@ DAM에 이미 존재하는 이미지는 색상 태그가 자동으로 지정되�
 
    ![색상 태그 보기](assets/view-color-tags.png)
 
-   마우스를 색상 태그 위로 가져가면 **[!UICONTROL 적용 범위/우위성 임계값 %]** 이미지의 색상입니다.
+   을(를) 볼 수 있도록 마우스를 색상 태그 위에 놓습니다. **[!UICONTROL 적용 범위/우위성 임계값 %]** 이미지의 색상입니다.
 
 ## AEM Assets 색상 술어 구성 {#configure-search-predicate}
 
@@ -180,18 +180,18 @@ DAM에 이미 존재하는 이미지는 색상 태그가 자동으로 지정되�
 
    선택한 색상을 기준으로 이미지를 필터링할 수 있습니다. 선택한 색상이 스마트 색상 태그 중 하나이며 그 위에 있는 이미지 [적용 범위/우위성 임계값 %](#manage-color-tagging-settings) 오른쪽 창에 을 표시합니다.
 
-1. 검색 창에서 x 를 클릭하여 필터를 지웁니다.
+1. 검색 창에서 X 를 클릭하여 필터를 지웁니다.
 
 **추가 참조**
 
-* [에셋 번역](translate-assets.md)
+* [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [에셋이 지원되는 파일 형식](file-format-support.md)
-* [에셋 검색](search-assets.md)
-* [연결된 에셋](use-assets-across-connected-assets-instances.md)
-* [에셋 보고서](asset-reports.md)
+* [자산이 지원되는 파일 형식](file-format-support.md)
+* [자산 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [자산 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
-* [에셋 다운로드](download-assets-from-aem.md)
+* [자산 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)

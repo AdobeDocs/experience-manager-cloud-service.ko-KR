@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 8a1ed1e44db0154854af73a96339d8e416afd3b4
+source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 53%
+source-wordcount: '295'
+ht-degree: 49%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 53%
 
 2023년 9월 12일에 릴리스된 유지 관리 릴리스 13420의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이 유지 관리 릴리스에서는 릴리스 13323를 대체합니다.
 
-이 유지 관리 릴리스(2023.9.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)을 참조하십시오.
+2023.9.0 기능 활성화는 이 유지 관리 릴리스에 대한 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)을 참조하십시오.
 
 ### 개선 사항 {#enhancements-13420}
 
@@ -25,7 +25,7 @@ ht-degree: 53%
 
 ### 해결된 문제 {#fixed-issues-13420}
 
-- ASSETS-27628: 에셋 검색 패널을 사용자 정의할 때 잘못된 &quot;채널&quot; 노드가 생성됨
+- ASSETS-27628: 에셋 검색 패널을 사용자 지정할 때 잘못된 &quot;채널&quot; 노드가 생성됩니다.
 - ASSETS-27539: 업로드 제한 사항 정규 표현식 일치.
 - ASSETS-26530: 통합 쉘은 사용자를 원래 페이지로 다시 불러오지 않습니다.
 - ASSETS-22719: 스마트 자르기 중단점 이름 지정의 대괄호로 스마트 자르기 편집 기능이 중단됩니다.
@@ -48,7 +48,7 @@ ht-degree: 53%
 
 | 기술 | 버전 | 링크 |
 |---|---|---|
-| AEM OAK | 1.54-T20230817132355-3800a65 | [Oak API 1.54.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.54.0/index.html) |
+| AEM Oak | 1.54-T20230817132355-3800a65 | [Oak API 1.54.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.54.0/index.html) |
 | AEM SLING API | 버전 2.27.2 | [Apache Sling API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 버전 1.4.20-1.4.0 | [HTML 템플릿 언어 사양](https://github.com/adobe/htl-spec) |
 | AEM 핵심 구성 요소 | 버전 2.23.2 | [AEM WCM 핵심 구성 요소](https://github.com/adobe/aem-core-wcm-components) |

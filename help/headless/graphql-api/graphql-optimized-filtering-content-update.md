@@ -2,20 +2,20 @@
 title: 최적화된 GraphQL 필터링을 위해 콘텐츠 조각 업데이트
 description: Adobe Experience Manager as a Cloud Service에서 Headless 콘텐츠 게재를 위한 GraphQL 필터링 최적화 목적으로 콘텐츠 조각을 업데이트하는 방법을 알아봅니다.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 100%
+source-wordcount: '890'
+ht-degree: 60%
 
 ---
 
 # 최적화된 GraphQL 필터링을 위해 콘텐츠 조각 업데이트 {#updating-content-fragments-for-optimized-graphql-filtering}
 
-GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트하는 절차를 실행해야 합니다.
+GraphQL 필터의 성능을 최적화하려면 컨텐츠 조각을 업데이트하는 절차를 실행합니다.
 
 >[!NOTE]
 >
->콘텐츠 조각을 업데이트한 후에는 [GraphQL 쿼리 최적화](/help/headless/graphql-api/graphql-optimization.md) 권장 사항을 따를 수 있습니다.
+>콘텐츠 조각을 업데이트한 후에는 다음 권장 사항을 따를 수 있습니다. [GraphQL 쿼리 최적화](/help/headless/graphql-api/graphql-optimization.md).
 
 
 ## 사전 요구 사항 {#prerequisites}
@@ -26,11 +26,9 @@ GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트�
 
 1. 작업을 수행하는 사용자에게 필요한 권한이 있는지 확인하십시오.
 
-   * 최소한 Cloud Manager의 `Deployment Manager` 역할이 필요합니다.
+   * 최소한, `Deployment Manager` cloud Manager의 역할이 필요합니다.
 
 ## 콘텐츠 조각 업데이트 {#updating-content-fragments}
-
-절차를 실행하려면 다음 단계를 사용하십시오.
 
 1. Cloud Manager UI를 사용해 인스턴스에 대해 다음 변수를 설정하여 업데이트를 활성화합니다.
 
@@ -69,7 +67,7 @@ GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트�
       <td>모두 </td>
       <td> </td>
       <td>변수 </td>
-      <td>콘텐츠 조각의 리마이그레이션을 시행(!=0)합니다.<br>이 플래그를 0으로 설정하면 CF의 증분 마이그레이션이 수행됩니다. 즉, 어떤 이유로든 작업이 종료되면 다음에 작업을 실행했을 때 종료된 위치에서 마이그레이션이 시작됩니다. 최초의 마이그레이션은 시행(값=1)하는 것이 좋습니다. </td>
+      <td>콘텐츠 조각의 리마이그레이션을 시행(!=0) 콘텐츠 조각을 다시 마이그레이션합니다.<br>이 플래그를 0으로 설정하면 CF가 증분 마이그레이션됩니다. 즉, 어떤 이유로든 작업이 종료되면 그 다음 작업 실행은 종료된 시점부터 마이그레이션을 시작합니다. 적용에는 첫 번째 마이그레이션이 권장됩니다(값=1). </td>
      </tr>
      <tr>
       <td>3</td>
@@ -79,7 +77,7 @@ GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트�
       <td>모두 </td>
       <td> </td>
       <td>변수 </td>
-      <td>마이그레이션 후 콘텐츠 조각 수를 저장하기 위한 일괄 처리 크기입니다.<br>얼마나 많은 CF가 한 일괄 처리에서 저장소에 저장되는지와 관련이 있으며 저장소에 대한 쓰기 수를 최적화하는 데 사용할 수 있습니다. </td>
+      <td>마이그레이션 후 콘텐츠 조각 수를 저장하기 위한 배치 크기.<br>이는 한 묶음으로 저장소에 저장되는 CF 수와 관련이 있으며 저장소에 대한 쓰기 수를 최적화하는 데 사용할 수 있습니다. </td>
      </tr>
      <tr>
       <td>4</td>
@@ -99,7 +97,7 @@ GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트�
       <td>모두 </td>
       <td> </td>
       <td>변수 </td>
-      <td>다음 제한까지 남은 콘텐츠 조각을 처리하는 간격(초)<br>또한 이 간격은 작업을 시작하기 전까지의 대기 시간, 그리고 각 후속 CF_MIGRATION_LIMIT CF 개수의 처리 간 지연 시간으로 간주됩니다.<br>(*)</td>
+      <td>다음 제한까지 나머지 콘텐츠 조각을 처리하는 간격(초)<br>이 간격은 작업을 시작하기 전 대기 시간과 각 후속 CF_MIGRATION_LIMIT 수의 처리 사이의 지연으로도 간주됩니다.<br>(*)</td>
      </tr>
     </tbody>
    </table>
@@ -118,9 +116,9 @@ GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트�
    >* 마이그레이션 완료에 필요한 대략적인 시간 = 60 + (20,000/1000 * 60) = 1260초 = 21분
    >  시작 시 추가된 “60”초는 작업 시작 시 초기 지연으로 인한 것입니다.
    >
-   >이는 작업을 완료하는 데 필요한 *최소한의* 시간이며 I/O 시간은 포함하지 않습니다. 소요되는 실제 시간은 이 추정치보다 훨씬 더 클 수 있습니다.
+   >이는 *최소값* 작업을 완료하는 데 필요한 시간이며 I/O 시간은 포함되지 않습니다. 실제 소요 시간은 이 추정치 이상일 수 있다.
 
-1. 진행 상황과 업데이트 완료를 모니터링하십시오.
+1. 업데이트 진행 상황과 완료 상태를 모니터링합니다.
 
    이를 위해서는 다음의 작성자 및 골든 게시에 대한 로그를 모니터링하십시오.
 
@@ -146,7 +144,7 @@ GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트�
         23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
         ```
 
-   Splunk를 사용하여 환경 로그에 대한 액세스를 활성화한 고객은 아래 예제 쿼리를 사용하여 업그레이드 프로세스를 모니터링할 수 있습니다. Splunk 로깅 활성화에 대한 자세한 내용은 [프로덕션 및 스테이지 디버깅](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) 페이지를 참조하십시오.
+   Splunk를 사용하여 환경 로그에 대한 액세스를 활성화한 고객은 아래 예제 쿼리를 사용하여 업그레이드 프로세스를 모니터링할 수 있습니다. Splunk 로깅 활성화에 대한 자세한 내용은 [프로덕션 및 스테이지 디버깅](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage).
 
    ```splunk
    index=<indexName> sourcetype=aemerror aem_envId=<environmentId> msg="*com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished*" 
@@ -220,13 +218,13 @@ GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트�
 
    >[!NOTE]
    >
-   >이는 게시 계층에 특히 중요한데, 콘텐츠 업데이트가 골든 게시에서만 수행되며, 포드를 재활용할 때 모든 일반 게시 포드가 골든 게시를 기반으로 하기 때문입니다.
+   >이는 콘텐츠 업데이트가 골든 게시에서만 수행되므로 게시 계층에 중요합니다. Pod를 재활용할 때 모든 일반 게시 Pod는 골든 게시를 기반으로 합니다.
 
 1. 업데이트 절차가 완료되었는지 확인합니다.
 
    Cloud Manager 개발자 콘솔의 저장소 브라우저를 사용해 콘텐츠 조각 데이터를 확인하여 업데이트가 정상적으로 완료되었는지 확인할 수 있습니다.
 
-   * 첫 번째 전체 마이그레이션 전까지는 `cfGlobalVersion` 속성이 존재하지 않습니다.
+   * 첫 번째 마이그레이션 완료 전에 `cfGlobalVersion` 속성이 없습니다.
 따라서 JCR 노드 `/content/dam`에 이 속성이 있고 값이 `1`이면 마이그레이션이 완료된 것입니다.
 
    * 개별 콘텐츠 조각에서 다음 속성을 확인할 수도 있습니다.
@@ -236,14 +234,14 @@ GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트�
 
      >[!NOTE]
      >
-     >이 절차는 작성자 및 게시 인스턴스에서 콘텐츠 조각을 업데이트합니다.
+     >이 절차는 작성자 및 게시 인스턴스의 콘텐츠 조각을 업데이트합니다.
      >
-     >따라서 저장소 브라우저를 통해 *최소* 한 명의 작성자 *및* 하나의 게시 인스턴스에 대해 검증을 수행하는 것이 좋습니다.
+     >따라서 Adobe은 다음에 대한 저장소 브라우저를 통해 확인을 수행할 것을 권장합니다. *최소* 작성자 1명 *및* 게시 인스턴스 1개.
 
 ## 제한 사항 {#limitations}
 
 다음 제한 사항을 알아 두십시오.
 
-* GraphQL 필터의 성능 최적화는 모든 콘텐츠 조각을 완전히 업데이트한 후에만 가능합니다(JCR 노드 `/content/dam`에 `cfGlobalVersion` 속성이 있으면 업데이트가 완료된 것).
+* GraphQL 필터의 성능 최적화는 모든 콘텐츠 조각(의 존재로 표시됨)의 전체 업데이트 후에만 가능합니다. `cfGlobalVersion` jcr 노드의 속성 `/content/dam`)
 
-* 업데이트 절차를 실행한 후 콘텐츠 패키지에서 콘텐츠 조각을 가져온 경우(`crx/de` 사용) 해당 콘텐츠 조각은 업데이트 절차가 다시 실행될 때까지 GraphQL 쿼리 결과에서 고려되지 않습니다.
+* 컨텐츠 패키지에서 컨텐츠 조각을 가져오는 경우(사용) `crx/de`) 업데이트 프로시저가 실행되면 업데이트 프로시저가 다시 실행될 때까지 해당 콘텐츠 조각은 GraphQL 쿼리 결과에서 고려되지 않습니다.
