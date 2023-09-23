@@ -1,9 +1,9 @@
 ---
 title: 핵심 구성 요소를 기반으로 하는 적응형 양식에 새 로케일에 대한 지원을 추가하는 방법
 description: 적응형 양식에 대한 새 로케일을 추가하는 방법을 알아봅니다.
-source-git-commit: 911b377edd4eb0c8793d500c26ca44a44c69e167
+source-git-commit: 0d2e353208e4e59296d551ca5270be06e574f7df
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1339'
 ht-degree: 4%
 
 ---
@@ -20,17 +20,17 @@ AEM Forms은 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it)
 
 ## 적응형 양식에 대해 선택한 로케일은 어떻게 됩니까?
 
-적응형 Forms에 대한 새 로케일 추가를 시작하기 전에 적응형 양식에 대해 로케일이 선택되는 방법에 대한 이해를 구축하십시오. 적응형 양식이 렌더링될 때 로케일을 식별하고 선택하는 두 가지 방법이 있습니다.
+적응형 Forms에 대한 로케일 추가를 시작하기 전에 적응형 양식에 대해 로케일이 선택되는 방법에 대한 이해를 구축하십시오. 적응형 양식이 렌더링될 때 해당 로케일을 식별하고 선택하는 두 가지 방법이 있습니다.
 
-* **사용 [로케일] URL의 선택기**: 적응형 양식을 렌더링할 때 시스템은 다음을 검사하여 요청된 로케일을 식별합니다 [로케일] 적응형 양식 URL의 선택기. URL은 http:/ 형식을 따릅니다.[AEM Forms 서버 URL]/content/forms/af/[afName].[로케일].html?wcmmode=disabled. 사용 [로케일] 선택기를 사용하여 적응형 양식을 캐싱할 수 있습니다.
+* **사용 `locale` URL의 선택기**: 적응형 양식을 렌더링할 때 시스템은 다음을 검사하여 요청된 로케일을 식별합니다 [로케일] 적응형 양식 URL의 선택기. URL은 http:/ 형식을 따릅니다.[AEM Forms 서버 URL]/content/forms/af/[afName].[로케일].html?wcmmode=disabled. 사용 [로케일] 선택기를 사용하여 적응형 양식을 캐싱할 수 있습니다. (예: URL) `www.example.com/content/forms/af/contact-us.hi.html?wcmmmode=disabled` 힌디어로 양식을 렌더링합니다.
 
 * 아래 나열된 순서대로 매개 변수를 검색합니다.
 
-   * **요청 매개 변수`afAcceptLang`**: 사용자의 브라우저 로케일을 재정의하려면 afAcceptLang 요청 매개 변수를 전달할 수 있습니다. 예를 들어 이 URL은 프랑스어(캐나다) 로케일로 양식 렌더링을 적용합니다. `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`.
+   * **사용 `afAcceptLang`요청 매개 변수**: 사용자의 브라우저 로케일을 재정의하려면 afAcceptLang 요청 매개 변수를 전달할 수 있습니다. 예를 들어 `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr` URL은 AEM Forms 서버가 캐나다 프랑스어 로케일로 양식을 렌더링하도록 강제합니다.
 
-   * **브라우저 로케일 (Accept-Language 헤더)**: 시스템은 를 사용하여 요청에 지정된 사용자의 브라우저 로케일도 고려합니다. `Accept-Language` 머리글입니다.
+   * **브라우저 로케일 사용(Accept-Language 헤더)**: 시스템은 를 사용하여 요청에 지정된 사용자의 브라우저 로케일도 고려합니다. `Accept-Language` 머리글입니다.
 
-  요청된 로케일에 대한 클라이언트 라이브러리를 사용할 수 없는 경우 시스템은 로케일 내의 언어 코드에 대한 클라이언트 라이브러리가 있는지 확인합니다. 예를 들어 요청된 로케일이 `en_ZA` (남아프리카 영어) 및 클라이언트 라이브러리가 없습니다. `en_ZA`, 적응형 양식은 사용 가능한 경우 en(영어)용 클라이언트 라이브러리를 사용합니다. 둘 다 검색되지 않는 경우 적응형 양식은 다음에 대한 사전을 찾습니다. `en` 로케일.
+  요청된 로케일에 대한 클라이언트 라이브러리(라이브러리를 만들고 사용하는 프로세스는 이 문서의 뒷부분에서 다룹니다)를 사용할 수 없는 경우 시스템에서 로케일 내 언어 코드에 대한 클라이언트 라이브러리가 있는지 확인합니다. 예를 들어 요청된 로케일이 `en_ZA` (남아프리카 영어) 및 클라이언트 라이브러리가 없습니다. `en_ZA`, 적응형 양식은 사용 가능한 경우 en(영어)용 클라이언트 라이브러리를 사용합니다. 둘 다 검색되지 않는 경우 적응형 양식은 다음에 대한 사전을 찾습니다. `en` 로케일.
 
   로케일이 식별되면 적응형 양식은 해당 양식 특정 사전을 선택합니다. 요청된 로케일에 대한 사전을 찾을 수 없는 경우 기본적으로 적응형 양식이 작성된 언어의 사전을 사용합니다.
 
@@ -39,19 +39,21 @@ AEM Forms은 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it)
 
 ## 사전 요구 사항 {#prerequistes}
 
-새 로케일에 대한 지원을 추가하기 전에
+로케일 추가를 시작하기 전에
 
-* 보다 쉬운 편집을 위해 일반 텍스트 편집기(IDE)를 설치합니다. 이 문서의 예제는 Microsoft® Visual Studio 코드를 기반으로 합니다.
+* 보다 쉬운 편집을 위해 일반 텍스트 편집기(IDE)를 설치합니다. 이 문서의 예제는 다음을 기반으로 합니다 [Microsoft® Visual Studio 코드](https://code.visualstudio.com/download).
 * 버전 설치 [Git](https://git-scm.com): 컴퓨터에서 사용할 수 없는 경우 입니다.
 * 복제 [적응형 Forms 핵심 구성 요소](https://github.com/adobe/aem-core-forms-components) 리포지토리. 저장소를 복제하려면 다음을 수행하십시오.
-   1. 명령줄 또는 터미널 창을 열고 저장소를 저장할 위치로 이동합니다. 예 `/adaptive-forms-core-components`
+   1. 명령줄 또는 터미널 창을 열고 저장소를 저장할 위치로 이동합니다. 예, `/adaptive-forms-core-components`
    1. 다음 명령을 실행하여 저장소를 복제합니다.
 
       ```SHELL
           git clone https://github.com/adobe/aem-core-forms-components.git
       ```
 
-  저장소에는 로케일을 추가하는 데 필요한 클라이언트 라이브러리가 포함되어 있습니다. 문서의 나머지 부분에서 폴더는 다음과 같이 표시됩니다. [적응형 Forms 핵심 구성 요소 저장소].
+  저장소에는 로케일을 추가하는 데 필요한 클라이언트 라이브러리가 포함되어 있습니다.
+
+  명령이 성공적으로 실행되면 저장소가 `aem-core-forms-components` 컴퓨터의 폴더입니다. 이 문서의 나머지 부분에서 폴더는 다음과 같이 표시됩니다. [적응형 Forms 핵심 구성 요소 저장소].
 
 
 ## 로케일 추가 {#add-localization-support-for-non-supported-locales}
@@ -169,7 +171,13 @@ AEM Forms은 새 로케일을 쉽게 추가하는 데 도움이 되는 샘플 �
 * Adobe은 적응형 양식을 만든 후 번역 프로젝트를 만들 것을 권장합니다.
 
 * 기존 적응형 양식에 새 필드를 추가하는 경우:
-   * **기계 번역용**: 사전을 다시 만들고 번역 프로젝트를 실행합니다. 번역 프로젝트를 만든 후 적응형 양식에 추가된 필드는 번역되지 않은 상태로 유지됩니다.
-   * **사람 번역용**: 다음을 통해 사전 내보내기 `[server:port]/libs/cq/i18n/gui/translator.html`. 새로 추가된 필드의 사전을 업데이트하고 업로드합니다.
+   * **기계 번역용**: 사전을 다시 만들고 [번역 프로젝트 실행](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md). 번역 프로젝트를 만든 후 적응형 양식에 추가된 필드는 번역되지 않은 상태로 유지됩니다.
+   * **사람 번역용**: 의 UI를 사용하여 사전을 내보냅니다. `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. 새로 추가된 필드의 사전을 업데이트하고 업로드합니다.
+
+## 더 보기
+
+* [기계 번역 또는 사람 번역을 사용하여 적응형 양식 기반의 핵심 구성 요소 번역](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+* [적응형 Forms에 대한 기록 문서 생성](/help/forms/generate-document-of-record-core-components.md)
+* [AEM Sites 페이지 또는 경험 조각에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 
