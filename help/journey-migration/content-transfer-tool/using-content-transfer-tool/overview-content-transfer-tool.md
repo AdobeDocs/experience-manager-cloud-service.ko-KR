@@ -2,10 +2,10 @@
 title: 콘텐츠 전송 도구 개요
 description: 컨텐츠 전송 도구를 사용하여 On-Premise AEM AEM 인스턴스에서 as a Cloud Service으로 컨텐츠를 전송하는 방법을 알아봅니다
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
 workflow-type: tm+mt
 source-wordcount: '664'
-ht-degree: 57%
+ht-degree: 54%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 57%
 
 마이그레이션 세트에는 다음 속성이 있습니다.
 
-* 새 버전을 사용하여 Cloud Acceleration Manager에 생성된 프로젝트 내에서 최대 5개의 마이그레이션 세트를 만들 수 있습니다.
+* 새 버전을 사용하면 Cloud Acceleration Manager에서 만든 프로젝트 내에 최대 20개의 마이그레이션 세트를 만들 수 있습니다.
 * 각 마이그레이션 세트의 이름은 고유해야 합니다.
 
 콘텐츠 전송 도구에는 이전 콘텐츠 전송 활동 이후 수행된 변경 사항만 전송할 수 있는 차등 콘텐츠 추가를 지원하는 기능이 있습니다.
