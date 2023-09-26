@@ -1,7 +1,7 @@
 ---
 title: Edge Delivery Services 시작
 description: Edge Delivery Services 시작
-source-git-commit: 22a3795340add4ae29ec690b41baef96e8fb4adc
+source-git-commit: 6334efceb9abae560ae77c133df1a70ffb438e6a
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Edge Delivery를 활용하여 다음을 수행할 수 있습니다.
 
 Edge Delivery는 웹 사이트에서 콘텐츠를 작성하는 방법에 대해 높은 수준의 유연성을 제공하는 구성 가능한 서비스 세트입니다. 앞에서 설명한 대로 두 가지를 모두 사용할 수 있습니다 [AEM 작성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) 및 [문서 기반 작성](https://www.hlx.live/docs/authoring).
 
-예를 들어 Microsoft Word 또는 Goggle 문서에서 직접 콘텐츠를 사용할 수 있습니다. 즉, 이러한 소스의 문서가 웹 사이트의 페이지가 될 수 있습니다. 또한 제목, 목록, 이미지, 글꼴 요소는 모두 초기 소스에서 웹 사이트로 전송할 수 있습니다. 새 콘텐츠는 재구축 프로세스 없이 즉시 추가됩니다.
+예를 들어 Microsoft Word 또는 Google 문서에서 직접 콘텐츠를 사용할 수 있습니다. 즉, 이러한 소스의 문서가 웹 사이트의 페이지가 될 수 있습니다. 또한 제목, 목록, 이미지, 글꼴 요소는 모두 초기 소스에서 웹 사이트로 전송할 수 있습니다. 새 콘텐츠는 재구축 프로세스 없이 즉시 추가됩니다.
 
 Edge Delivery는 GitHub를 활용하므로 고객은 GitHub 저장소에서 직접 코드를 관리하고 배포할 수 있습니다. 예를 들어 Google 문서 또는 Microsoft Word로 콘텐츠를 작성할 수 있고 GitHub에서 CSS와 JavaScript를 사용하여 사이트의 기능을 개발할 수 있습니다 . 준비가 되면 Sidekick 브라우저 확장 기능을 사용하여 콘텐츠 업데이트를 미리 보고 게시할 수 있습니다.
 
