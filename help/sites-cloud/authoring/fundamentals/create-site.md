@@ -4,16 +4,19 @@ description: 관리자가 AEM을 통해 사이트 템플릿을 사용하여 새 
 feature: Administering
 role: Admin
 exl-id: 50105d03-9d94-4aec-b0a7-0b88e3fe50e0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 100%
 
 ---
 
+
 # 새 사이트 생성 {#new-site}
 
 관리자가 AEM을 통해 사이트 템플릿을 사용하여 새 사이트를 만들고 이러한 사이트의 스타일 및 구조를 정의하는 방법에 대해 알아봅니다.
+
+{{edge-delivery-authoring}}
 
 ## 개요 {#overview}
 

@@ -2,12 +2,13 @@
 title: 페이지 콘텐츠 편집
 description: 페이지를 생성하면 콘텐츠를 편집하여 필요한 업데이트를 수행할 수 있습니다.
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+workflow-type: tm+mt
 source-wordcount: '2983'
 ht-degree: 100%
 
 ---
+
 
 # 페이지 콘텐츠 편집{#editing-page-content}
 
@@ -31,6 +32,8 @@ ht-degree: 100%
 >[!TIP]
 >
 >**편집** 모드에서는 콘텐츠에 링크가 표시되지만 **액세스할 수 없습니다**. 콘텐츠의 링크를 사용하여 탐색하려면 [미리보기 모드](#previewing-pages)를 사용하십시오.
+
+{{edge-delivery-authoring}}
 
 ## 페이지 도구 모음 {#page-toolbar}
 

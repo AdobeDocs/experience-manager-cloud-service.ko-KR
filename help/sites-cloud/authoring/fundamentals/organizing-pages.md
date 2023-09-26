@@ -2,12 +2,13 @@
 title: 페이지 생성 및 구성
 description: AEM으로 페이지를 만들고 관리하여 웹 사이트를 구성하는 방법에 대해 알아봅니다.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2543'
 ht-degree: 100%
 
 ---
+
 
 # 페이지 생성 및 구성 {#creating-and-organizing-pages}
 
@@ -26,6 +27,8 @@ ht-degree: 100%
 >[!TIP]
 >
 >페이지를 보다 효율적으로 구성할 수 있도록 해 주고 웹 사이트 콘솔에서 사용할 수 있는 다양한 [키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)가 있습니다.
+
+{{edge-delivery-authoring}}
 
 ## 웹 사이트 구성 {#organizing-your-website}
 

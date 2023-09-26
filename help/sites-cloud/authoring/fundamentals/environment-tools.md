@@ -2,16 +2,19 @@
 title: 작성 환경 및 도구
 description: AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+workflow-type: tm+mt
 source-wordcount: '2150'
 ht-degree: 100%
 
 ---
 
+
 # 작성 환경 및 도구 {#authoring-the-environment-and-tools}
 
 AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다. 제공된 도구는 다양한 콘솔 및 페이지 편집기에서 액세스할 수 있습니다.
+
+{{edge-delivery-authoring}}
 
 ## 사이트 관리 {#managing-your-site}
 

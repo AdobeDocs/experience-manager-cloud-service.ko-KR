@@ -2,12 +2,13 @@
 title: 기본 처리
 description: AEM 탐색 및 기본 사용 방법 익히기
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
-workflow-type: ht
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+workflow-type: tm+mt
 source-wordcount: '2975'
 ht-degree: 100%
 
 ---
+
 
 # 기본 처리 {#basic-handling}
 
@@ -17,6 +18,8 @@ ht-degree: 100%
 >
 >* 몇 가지 기능을 일부 콘솔에서 사용할 수 없거나, 추가 기능을 일부 콘솔에서 사용할 수 있습니다. 개별 콘솔에 대한 특정 정보 및 관련 기능은 다른 페이지에서 더 자세히 다룹니다.
 >* AEM 전체에서 키보드 단축키를 사용할 수 있습니다. 특히 [콘솔을 사용하고](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) [페이지를 편집할 때 ](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)이러한 키보드 단축키를 사용할 수 있습니다.
+
+{{edge-delivery-authoring}}
 
 ## 터치 지원 UI {#a-touch-enabled-ui}
 

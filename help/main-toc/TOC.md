@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 44492597085c52eb715a8ecd19a2c4aa884ae12f
+source-git-commit: af7a4a3e23a07e4768192ae7d6308e3c6036ceb6
 workflow-type: tm+mt
-source-wordcount: '4310'
+source-wordcount: '4321'
 ht-degree: 98%
 
 ---
@@ -741,6 +741,9 @@ ht-degree: 98%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [마이그레이션](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
++ Edge 게재 서비스 {#edge-delivery}
+   + [Edge 게재 시작](/help/edge/overview.md)
+   + [Edge 게재 사용](/help/edge/using.md)
 + Headless {#headless}
    + [Headless CMS란 무엇입니까?](/help/headless/what-is-headless.md)
    + [AEM Headless 소개](/help/headless/introduction.md)

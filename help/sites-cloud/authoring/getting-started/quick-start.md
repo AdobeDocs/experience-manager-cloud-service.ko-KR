@@ -2,12 +2,13 @@
 title: 페이지 작성에 대한 빠른 시작 안내서
 description: 페이지 콘텐츠 작성을 시작하는 데 도움이 되는 빠른 개요 안내서
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+workflow-type: tm+mt
 source-wordcount: '1568'
 ht-degree: 100%
 
 ---
+
 
 # 페이지 작성에 대한 빠른 시작 안내서 {#quick-guide-to-authoring-pages}
 
@@ -20,6 +21,8 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 * [작성 개념](/help/sites-cloud/authoring/getting-started/concepts.md)
 * [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md)
+
+{{edge-delivery-authoring}}
 
 ## 몇 가지 빠른 힌트 {#a-few-quick-hints}
 

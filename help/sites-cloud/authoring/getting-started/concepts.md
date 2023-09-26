@@ -2,12 +2,13 @@
 title: 작성 개념
 description: 작성, 미리보기 및 게시 환경을 사용하여 AEM에서 작성의 개념에 대해 알아봅니다.
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
-workflow-type: ht
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 100%
 
 ---
+
 
 # 작성 개념 {#authoring-concepts}
 
@@ -26,6 +27,8 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 ![작성자, 게시자 및 Dispatcher 다이어그램](/help/sites-cloud/authoring/assets/author-publish.png)
 
 작성 환경에서는 AEM의 작성 사용자 인터페이스를 통해 AEM 기능을 사용할 수 있도록 되어 있습니다. 게시 환경의 경우, 사용자가 사용할 수 있도록 만들어진 인터페이스의 전체 모양 및 느낌을 디자인합니다.
+
+{{edge-delivery-authoring}}
 
 ## 작성 환경 {#author-environment}
 
