@@ -3,10 +3,10 @@ title: 콘텐츠 조각 작성
 description: 콘텐츠 조각에 대한 콘텐츠를 작성한 다음 목적에 따라 해당 콘텐츠의 변형을 만드는 방법을 이해합니다. 이렇게 하면 Headless 게재 및 페이지 작성을 위한 유연성을 높일 수 있습니다.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
-workflow-type: ht
-source-wordcount: '2208'
-ht-degree: 100%
+source-git-commit: 2fa22bf2feb6b8697877b345bc29821e30b1c6a1
+workflow-type: tm+mt
+source-wordcount: '2227'
+ht-degree: 98%
 
 ---
 
@@ -484,7 +484,7 @@ URL이 정의되면 **미리보기** 버튼이 활성화됩니다. 이 버튼을
    <td><p> <img src="assets/cf-authoring-json-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>탭 플레이스홀더</b></p><p>실제 아이콘으로 표시되지 않지만 <b>탭 플레이스홀더</b>는 왼쪽 패널과 중앙 패널에 표시됩니다.</p> </td>
+   <td><p><b>탭 플레이스홀더</b></p><p>실제 아이콘으로 표시되지 않지만 <b>탭 자리 표시자</b> 왼쪽 패널에 표시됩니다. <br>또한 표시된 대로 가로로 중앙 패널에 표시되거나, 가로로 표시할 내용이 너무 많을 경우 드롭다운 목록에 표시됩니다.</p> </td>
    <td><p> <img src="assets/cf-authoring-tab-icon.png"> </p></td>
   </tr>
  </tbody>
