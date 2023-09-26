@@ -2,9 +2,9 @@
 title: 신속한 개발 환경
 description: 클라우드 환경에서 신속한 개발 반복을 위해 빠른 개발 환경을 사용하는 방법에 대해 알아봅니다.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
 workflow-type: tm+mt
-source-wordcount: '3312'
+source-wordcount: '3304'
 ht-degree: 5%
 
 ---
@@ -26,9 +26,9 @@ RDE에서 변경 사항을 테스트하면 Cloud Manager 파이프라인을 통�
 
 RDE는 코드, 콘텐츠 및 Apache 또는 Dispatcher 구성에 사용할 수 있습니다. 일반 클라우드 개발 환경과 달리 개발자는 로컬 명령줄 도구를 사용하여 로컬로 빌드된 코드를 RDE에 동기화할 수 있습니다.
 
-모든 프로그램은 RDE로 프로비저닝됩니다. Sandbox 계정의 경우 몇 시간 동안 사용하지 않으면 최대 절전 모드로 전환됩니다.
+모든 프로그램은 RDE로 프로비저닝됩니다. Sandbox 계정이 있는 경우 몇 시간 동안 사용하지 않으면 최대 절전 모드로 전환됩니다.
 
-생성 시 RDE는 가장 최근에 사용할 수 있는 AEM 버전으로 설정됩니다. Cloud Manager를 사용하여 수행할 수 있는 RDE 재설정은 RDE를 순환시키고 가장 최근에 사용할 수 있는 AEM 버전으로 설정합니다.
+생성 시 RDE는 가장 최근에 사용 가능한 Adobe Experience Manager(AEM) 버전으로 설정됩니다. Cloud Manager를 사용하여 수행할 수 있는 RDE 재설정은 RDE를 순환시키고 가장 최근에 사용할 수 있는 AEM 버전으로 설정합니다.
 
 일반적으로 RDE는 특정 기능을 테스트 및 디버깅하기 위해 주어진 시간에 단일 개발자에 의해 사용됩니다. 개발 세션이 완료되면 RDE는 다음 사용을 위해 기본 상태로 재설정될 수 있습니다.
 
@@ -36,11 +36,11 @@ RDE는 코드, 콘텐츠 및 Apache 또는 Dispatcher 구성에 사용할 수 �
 
 ## 프로그램에서 RDE 활성화 {#enabling-rde-in-a-program}
 
-다음 단계에 따라 Cloud Manager를 사용하여 프로그램에 대한 RDE를 만듭니다.
+Cloud Manager를 사용하여 프로그램에 대한 RDE를 생성할 수 있도록 다음 단계를 따르십시오.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. RDE를 추가하여 세부 정보를 표시할 프로그램을 클릭합니다.
+1. RDE를 추가할 프로그램을 클릭하여 세부 정보를 표시합니다.
 
    * RDE는 두 항목 모두에 추가할 수 있습니다. [샌드박스 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) 및 [제작 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
 
@@ -78,7 +78,7 @@ Cloud Manager를 사용하여 프로그램에 대한 RDE를 추가한 후 다음
 
 >[!IMPORTANT]
 >
->의 최신 버전이 있는지 확인하십시오. [노드 및 NPM 설치됨](https://nodejs.org/en/download/) Adobe I/O CLI 및 관련 플러그인이 제대로 작동하는지 확인하십시오.
+>의 최신 버전을 보유하고 있는지 확인하십시오. [노드 및 NPM 설치됨](https://nodejs.org/en/download/) Adobe I/O CLI 및 관련 플러그인이 제대로 작동하는지 확인하십시오.
 
 
 1. 절차에 따라 Adobe I/O CLI 도구를 설치합니다 [여기](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
@@ -94,7 +94,7 @@ Cloud Manager를 사용하여 프로그램에 대한 RDE를 추가한 후 다음
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   및 를 사용하여 영숫자 문자열을 자체 조직 ID로 바꿉니다. 이 ID는 전략을 사용하여 조회할 수 있습니다 [여기](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
+   그리고 영숫자 문자열을 자체 조직 ID로 바꿉니다. 이 ID는 전략을 사용하여 조회할 수 있습니다 [여기](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
 
 1. 다음으로 프로그램 ID를 구성합니다.
 
@@ -126,35 +126,35 @@ Cloud Manager를 사용하여 프로그램에 대한 RDE를 추가한 후 다음
 
    >[!TIP]
    >
-   >다음 항목이 표시되면 `Warning: cloudmanager:list-programs is not a aio command.` 오류, 다음을 설치해야 합니다. [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) 아래 명령을 실행하여 다음을 수행합니다.
+   >다음 항목이 표시되면 `Warning: cloudmanager:list-programs is not a aio command.` 오류입니다. 다음을 설치해야 합니다. [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) 아래 명령을 실행하여 다음을 수행합니다.
    >
    >```
    >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
    >```
 
-1. 다음을 실행하여 로그인이 성공적으로 완료되었는지 확인
+1. 를 실행하여 로그인이 성공적으로 완료되었는지 확인합니다.
 
    `aio cloudmanager:list-programs`
 
    구성된 조직의 모든 프로그램이 나열됩니다.
 
 
-자세한 내용 및 데모는 [RDE 설정 방법](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html) 비디오 튜토리얼입니다.
+자세한 내용 및 데모를 보려면 비디오 튜토리얼을 시청하십시오 [rde 설정 방법 (06:24)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html).
 
 ## 새 기능을 개발하는 동안 RDE 사용 {#using-rde-while-developing-a-new-feature}
 
 Adobe은 새 기능을 개발하기 위해 다음 워크플로를 권장합니다.
 
-* AEM as a Cloud Service SDK를 사용하여 중간 이정표에 도달하고 로컬에서 성공적으로 유효성을 검사하면 git에 커밋은 선택 사항이지만 아직 기본 줄의 일부가 아닌 git 기능 분기에 코드를 커밋해야 합니다. &#39;중간 이정표&#39;를 구성하는 것은 팀 습관에 따라 다르다. 예를 들면 몇 개의 새로운 코드 줄, 반나절 작업 또는 하위 기능 완료가 있습니다.
+* 중간 이정표에 도달하고 AEM as a Cloud Service SDK를 사용하여 로컬에서 성공적으로 유효성을 검사하면 git 기능 분기에 코드를 커밋합니다. git에 커밋은 선택 사항이지만 분기는 아직 주 라인에 포함되지 않아야 합니다. &#39;중간 이정표&#39;를 구성하는 것은 팀 습관에 따라 다르다. 예를 들면 몇 개의 새로운 코드 줄, 반나절 작업 또는 하위 기능 완료가 있습니다.
 
-* 다른 기능에서 RDE를 사용했으며 다음 작업을 수행하려는 경우 RDE를 재설정합니다. [기본 상태로 재설정](#reset-rde). <!-- Alexandru: hiding for now, do not delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->재설정하는 데 몇 분이 소요되며 기존의 모든 콘텐츠 및 코드가 삭제됩니다. RDE status 명령을 사용하여 RDE가 준비되었는지 확인할 수 있습니다. RDE에 최신 AEM 릴리스 버전이 표시됩니다.
+* 다른 기능에서 RDE를 사용했으며 다음 작업을 수행하려는 경우 RDE를 재설정합니다. [기본 상태로 재설정](#reset-rde). <!-- Alexandru: hiding for now, do not delete This can be done by way of [Cloud Manager](#reset-the-rde-cloud-manager) or by way of the [command line](#reset-the-rde-command-line). -->재설정하는 데 몇 분이 소요되며 기존의 모든 콘텐츠와 코드가 삭제됩니다. RDE status 명령을 사용하여 RDE가 준비되었는지 확인할 수 있습니다. RDE에 최신 AEM 릴리스 버전이 표시됩니다.
 
   >[!IMPORTANT]
   >
-  > 스테이징 및 프로덕션 환경이 자동 AEM 릴리스 업데이트를 받지 못하고 가장 최근의 AEM 릴리스 버전보다 훨씬 뒤처진 경우 RDE에서 실행되는 코드가 스테이징 및 프로덕션에서 코드가 작동하는 방식과 일치하지 않을 수 있습니다. 이 경우 코드를 프로덕션에 배포하기 전에 스테이징에서 철저한 테스트를 수행하는 것이 특히 중요합니다.
+  > 스테이징 및 프로덕션 환경이 자동 AEM 릴리스 업데이트를 받지 못하고 최신 AEM 릴리스 버전보다 오래된 경우 RDE에서 실행되는 코드가 스테이징 및 프로덕션에서 작동하는 방식과 일치하지 않을 수 있습니다. 이 경우 코드를 프로덕션에 배포하기 전에 스테이징에서 철저한 테스트를 수행하는 것이 특히 중요합니다.
 
 
-* RDE 명령줄 인터페이스를 사용하여 로컬 코드를 RDE에 동기화합니다. 옵션에는 Apache/Dispatcher 구성의 콘텐츠 패키지, 특정 번들, OSGI 구성 파일, 콘텐츠 파일 및 zip 파일 설치가 포함됩니다. 원격 콘텐츠 패키지를 참조할 수도 있습니다. 다음을 참조하십시오. [RDE 명령줄 도구](#rde-cli-commands) 섹션에 자세히 설명되어 있습니다. status 명령을 사용하여 배포가 성공했는지 확인할 수 있습니다. 필요한 경우 패키지 관리자를 사용하여 콘텐츠 패키지를 설치합니다.
+* RDE 명령줄 인터페이스를 사용하여 로컬 코드를 RDE에 동기화합니다. 옵션에는 Apache/Dispatcher 구성의 콘텐츠 패키지, 특정 번들, OSGI 구성 파일, 콘텐츠 파일 및 zip 파일 설치가 포함됩니다. 원격 콘텐츠 패키지를 참조할 수도 있습니다. 다음을 참조하십시오 [RDE 명령줄 도구](#rde-cli-commands) 추가 정보. status 명령을 사용하여 배포가 성공했는지 확인할 수 있습니다. 필요한 경우 패키지 관리자를 사용하여 콘텐츠 패키지를 설치합니다.
 
 * RDE에서 코드를 테스트합니다. Cloud Manager에서는 작성자 및 게시 URL을 사용할 수 있습니다.
 
@@ -162,7 +162,7 @@ Adobe은 새 기능을 개발하기 위해 다음 워크플로를 권장합니�
 
 * 코드가 예상대로 작동하면 코드를 git 기능 분기에 커밋합니다.
 
-* RDE로 동기화된 코드는 Cloud Manager 파이프라인을 사용하지 않으므로 이제 Cloud Manager 비프로덕션 파이프라인을 사용하여 git 기능 분기를 클라우드 개발 환경에 배포해야 합니다. 코드가 Cloud Manager 품질 게이트를 통과하는지 확인하고 나중에 Cloud Manager 프로덕션 파이프라인을 사용하여 코드가 성공적으로 배포될 것이라고 확신할 수 있습니다.
+* RDE로 동기화된 코드는 Cloud Manager 파이프라인을 사용하지 않으므로 이제 Cloud Manager 비프로덕션 파이프라인을 사용하여 git 기능 분기를 클라우드 개발 환경에 배포해야 합니다. 코드가 Cloud Manager 품질 게이트를 통과하는지, 그리고 나중에 Cloud Manager 프로덕션 파이프라인을 사용하여 코드가 성공적으로 배포되었는지 확인할 수 있습니다.
 
 * 기능에 대한 모든 코드가 준비되고 RDE 및 클라우드 개발 환경 모두에서 잘 실행될 때까지 각 중간 이정표에 대해 위의 단계를 반복합니다.
 
@@ -219,7 +219,7 @@ RDE는 한 번에 하나의 프로젝트를 지원합니다. 코드는 로컬 �
 
 >[!IMPORTANT]
 >
->WKND 프로젝트에 대한 Dispatcher 구성은 위의 콘텐츠 패키지 설치를 통해 배포되지 않습니다. &quot;Apache/Dispatcher 구성 배포&quot; 단계 후에 별도로 배포해야 합니다.
+>WKND 프로젝트에 대한 Dispatcher 구성은 위의 콘텐츠 패키지 설치를 통해 배포되지 않습니다. &quot;Apache/Dispatcher 구성 배포&quot; 단계에 따라 별도로 배포합니다.
 
 <u>OSGI 구성 배포</u>
 
@@ -262,7 +262,7 @@ RDE는 한 번에 하나의 프로젝트를 지원합니다. 코드는 로컬 �
 
 이러한 유형의 구성을 위해서는 전체 폴더 구조가 zip 파일 형식이어야 합니다.
 
-다음에서 `dispatcher` AEM 프로젝트의 모듈에서는 아래 maven 명령을 실행하여 dispatcher 구성을 압축할 수 있습니다.
+다음에서 `dispatcher` AEM 프로젝트의 모듈에서는 아래 maven 명령을 실행하여 Dispatcher 구성을 압축할 수 있습니다.
 
 `mvn clean package`
 
@@ -276,13 +276,13 @@ RDE는 한 번에 하나의 프로젝트를 지원합니다. 코드는 로컬 �
 
 >[!TIP]
 >
->위의 명령은 를 배포하는 것으로 가정합니다. [WKND](https://github.com/adobe/aem-guides-wknd) 프로젝트의 dispatcher 구성 다음을 교체해야 합니다. `X.X.X` 프로젝트의 dispatcher 구성을 배포할 때 해당 WKND 프로젝트 버전 번호 또는 프로젝트별 버전 번호 사용..
+>위의 명령은 를 배포하는 것으로 가정합니다. [WKND](https://github.com/adobe/aem-guides-wknd) 프로젝트의 Dispatcher 구성 다음을 교체해야 합니다. `X.X.X` 프로젝트의 Dispatcher 구성을 배포할 때 해당 WKND 프로젝트 버전 번호 또는 프로젝트별 버전 번호 사용
 
 >[!NOTE]
 >
->RDE는 &quot;유연한 모드&quot; Dispatcher 구성을 지원하지만 &quot;레거시 모드&quot; Dispatcher 구성은 지원하지 않습니다. 다음을 참조하십시오 [dispatcher 설명서](/help/implementing/dispatcher/disp-overview.md#validation-debug) 두 가지 모드에 대한 정보. 다음 설명서도 참조하십시오. [유연한 모드로 마이그레이션](/help/implementing/dispatcher/validation-debug.md#migrating), 아직 수행하지 않았다면 다음을 수행합니다.
+>RDE는 &quot;유연한 모드&quot; Dispatcher 구성을 지원하지만 &quot;레거시 모드&quot; Dispatcher 구성은 지원하지 않습니다. 다음을 참조하십시오 [Dispatcher 설명서](/help/implementing/dispatcher/disp-overview.md#validation-debug) 두 가지 모드에 대한 정보. 다음 설명서도 참조하십시오. [유연한 모드로 마이그레이션](/help/implementing/dispatcher/validation-debug.md#migrating), 아직 수행하지 않았다면 다음을 수행합니다.
 
-성공적인 배포는 다음과 유사한 응답을 생성합니다.
+배포가 성공하면 다음과 유사한 응답이 생성됩니다.
 
 ```
 ..
@@ -293,7 +293,7 @@ Logs:
   Syntax OK
 ```
 
-RDE에 배포된 코드는 Cloud Manager 파이프라인과 연결된 품질 게이트를 거치지 않지만, 아래 코드 샘플에 표시된 대로 코드가 일부 분석을 통해 오류를 보고합니다.
+RDE에 배포된 코드는 Cloud Manager 파이프라인 및 관련 품질 게이트를 거치지 않습니다. 그러나 이 코드는 아래 코드 샘플에 표시된 대로 오류를 보고하는 몇 가지 분석을 수행합니다.
 
 ```
 $ aio aem:rde:install ~/.m2/repository/org/apache/felix/org.apache.felix.gogo.jline/1.1.8/org.apache.felix.gogo.jline-1.1.8.jar
@@ -308,7 +308,7 @@ The analyser found the following errors for publish :
 [api-regions-exportsimports] com.adobe.aem.temp:org.apache.felix.gogo.jline:1.1.8: Bundle org.apache.felix.gogo.jline:1.1.8 is importing package(s) [org.jline.builtins, org.jline.utils, org.apache.felix.service.command, org.apache.felix.service.threadio, org.jline.terminal, org.jline.reader, org.apache.felix.gogo.runtime, org.jline.reader.impl] in start level 20 but no bundle is exporting these for that start level.
 ```
 
-위의 코드 샘플은 번들이 확인되지 않는 경우의 동작을 보여 줍니다. 이 경우 번들은 &quot;스테이징되며&quot;, 다른 코드의 설치를 통해 해당 요구 사항(이 경우 누락된 가져오기)이 충족되는 경우에만 설치됩니다.
+위의 코드 샘플은 번들이 해결되지 않는 경우의 동작을 보여 줍니다. 이 경우 &quot;스테이징됨&quot;이며 다른 코드 설치를 통해 요구 사항(이 경우 누락된 가져오기)이 충족되는 경우에만 설치됩니다.
 
 ### RDE 상태 확인 {#checking-rde-status}
 
@@ -318,7 +318,7 @@ RDE CLI를 사용하여 RDE 플러그인을 통해 배포된 내용과 같이 �
 
 `aio aem:rde:status`
 
-반환:
+다음을 반환합니다.
 
 ```
 Info for cm-p12345-e987654
@@ -341,7 +341,7 @@ Environment: Ready
 
 `aio aem:rde:history`
 
-응답 반환:
+응답 형식을 반환합니다.
 
 `#1: deploy completed for content-package aem-guides-wknd.all-2.1.0.zip on author,publish - done by 029039A55D4DE16A0A494025@AdobeID at 2022-09-12T14:41:55.393Z`
 
@@ -361,7 +361,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
 
-자세한 내용 및 데모는 [rde 명령 사용 방법](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html) 비디오 튜토리얼입니다.
+자세한 내용 및 데모는 비디오 튜토리얼 을 참조하십시오. [RDE 명령 사용 방법(10:01)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html).
 
 ## 재설정 {#reset-rde}
 
@@ -371,13 +371,13 @@ RDE를 재설정하면 작성자 및 게시 인스턴스 모두에서 모든 사
 
 <!-- Alexandru: hiding for now, do not delete
 
-Resetting can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code is deleted from the RDE.
+Resetting can be done by way of [Cloud Manager](#reset-the-rde-cloud-manager) or by way of the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code is deleted from the RDE.
 
 >[NOTE!]
 >
 >You must be assigned the Cloud Manager Developer role to use the reset feature. If not, a reset action results in an error.
 
-### Reset the RDE via Command Line {#reset-the-rde-command-line}
+### Reset the RDE by way of Command Line {#reset-the-rde-command-line}
 
 You can reset the RDE and return it to a default state by running:
 
@@ -486,7 +486,7 @@ RDE는 라이센스가 부여된 각 솔루션에 대해 사용할 수 있으며
 
 ## AEM Forms Cloud Service RDE(신속한 개발 환경)는 다른 환경과 어떻게 다릅니까? {#how-are-forms-rds-different-from-cloud-development-environments}
 
-Forms 개발자는 AEM Forms Cloud Service 신속 개발 환경을 사용하여 적응형 Forms, 워크플로 및 핵심 구성 요소 맞춤화, 서드파티 시스템과의 통합 등과 같은 사용자 정의를 신속하게 개발할 수 있습니다. AEM Forms Cloud Service 빠른 개발 환경(RDE)은 통신 API 및 적응형 양식 제출 시 기록 문서 생성과 같이 기록 문서가 필요한 기능에 대한 지원이 없습니다. 아래에 나열된 AEM Forms 기능은 RDE(Rapid Development Environment)에서 사용할 수 없습니다.
+Forms 개발자는 AEM Forms Cloud Service 신속 개발 환경을 사용하여 적응형 Forms, 워크플로 및 핵심 구성 요소 맞춤화, 서드파티 시스템과의 통합 등과 같은 사용자 정의를 신속하게 개발할 수 있습니다. AEM Forms RDE(Cloud Service 빠른 개발 환경)에는 통신 API가 지원되지 않습니다. 또한 적응형 양식 제출 시 기록 문서 생성과 같이 기록 문서가 필요한 기능이 지원되지 않습니다. 아래에 나열된 AEM Forms 기능은 RDE(Rapid Development Environment)에서 사용할 수 없습니다.
 
 * 적응형 양식을 위한 기록 문서 구성
 * 적응형 양식 제출 시 또는 워크플로우 단계와 함께 기록 문서 생성
@@ -496,8 +496,8 @@ Forms 개발자는 AEM Forms Cloud Service 신속 개발 환경을 사용하여 
 
 >[!NOTE]
 >
-> RDE(Rapid Development Environment)의 UI와 Forms의 기타 Cloud Service 환경에는 차이가 없습니다. 적응형 양식에 대한 기록 문서 템플릿 선택과 같은 모든 기록 문서 관련 옵션이 UI에 계속 표시됩니다. 이러한 환경에는 이러한 옵션을 테스트할 통신 API 및 기록 문서 기능이 없습니다. 따라서 통신 API 또는 기록 문서 기능이 필요한 옵션을 선택하면 작업이 수행되지 않고 오류 메시지가 표시되거나 반환됩니다.
+> RDE(Rapid Development Environment)의 UI와 Forms의 기타 Cloud Service 환경에는 차이가 없습니다. 적응형 양식에 대한 기록 문서 템플릿 선택과 같은 모든 기록 문서 관련 옵션이 UI에 계속 표시됩니다. 이러한 환경에는 이러한 옵션을 테스트할 통신 API 및 기록 문서 기능이 없습니다. 따라서 통신 API 또는 기록 문서 기능이 필요한 옵션을 선택하면 작업이 수행되지 않고 오류 메시지가 표시됩니다.
 
 ## RDE 자습서
 
-AEM에서 RDE에 대해 as a Cloud Service으로 알아보려면 [설정 방법, 사용 방법 및 개발 라이프 사이클을 보여 주는 비디오 튜토리얼입니다](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)
+AEM에서 RDE에 대해 as a Cloud Service으로 알아보려면 다음을 보여 주는 비디오 튜토리얼을 참조하십시오. [설정 방법, 사용 방법 및 개발 수명 주기(01:25)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html).

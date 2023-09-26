@@ -1,17 +1,17 @@
 ---
 title: AEM Forms Designer 사용
-description: 사용 [!DNL AEM Forms] 기록 문서 템플릿을 만드는 디자이너.
+description: 사용 [!DNL Adobe Experience Manager (AEM) Forms] 기록 문서 템플릿을 만드는 디자이너.
 exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
-source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
+source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '153'
 ht-degree: 0%
 
 ---
 
-# AEM Forms Designer 사용 {#install-designer}
+# Adobe Experience Manager(AEM) Forms 디자이너 사용 {#install-designer}
 
-디자이너는 XDP 양식 템플릿 작성을 단순화하는 포인트 앤 클릭 그래픽 양식 디자인 도구입니다. 양식 템플릿을 디자인하고 해당 논리를 정의하며 엄격한 법적 요구 사항을 충족할 수 있습니다. 이러한 템플릿은 적응형 양식의 기록 문서 템플릿으로 사용됩니다. 이러한 양식 템플릿은 다음과 다릅니다. [적응형 양식 템플릿](template-editor.md).
+디자이너는 XDP 양식 템플릿 작성을 단순화하는 포인트 앤 클릭 그래픽 양식 디자인 도구입니다. 양식 템플릿을 디자인하고 해당 논리를 정의하며 엄격한 법적 요구 사항을 충족할 수 있습니다. 이러한 템플릿은 적응형 양식의 기록 문서 템플릿 역할을 합니다. 이러한 양식 템플릿은 다음과 다릅니다. [적응형 양식 템플릿](template-editor.md).
 
 다음 문서에서는 디자이너를 사용하여 XDP 템플릿과 PDF forms을 만드는 방법을 설명합니다.
 
