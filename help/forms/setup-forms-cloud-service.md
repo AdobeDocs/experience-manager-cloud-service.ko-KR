@@ -1,10 +1,10 @@
 ---
 title: AEM Forms as a Cloud Service으로 온보드
-description: 설정 및 구성 방법 알아보기 [!DNL AEM Forms] as a Cloud Service 환경
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+description: 설정 및 구성 방법 알아보기 [!DNL Adobe Experience Manager (AEM) Forms] as a Cloud Service 환경
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 18%
+source-wordcount: '647'
+ht-degree: 17%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 18%
 
 ## 성향 결정 {#personas-aem-forms-project}
 
-<!-- When you sign up for the service, Adobe creates an Organization identifier for your company in the Adobe Identity Management System (IMS), where your users and their permissions can be managed. So, --> 에 온보딩 전 [!DNL AEM Forms] as a Cloud Service 환경, 프로젝트 담당자 결정 및 팀 구성. 일반 [!DNL AEM Forms] 프로젝트 팀에는 다음과 같은 담당자가 있습니다.
+<!-- When you sign up for the service, Adobe creates an Organization identifier for your company in the Adobe Identity Management System (IMS), where your users and their permissions can be managed. So, --> Adobe Experience Manager(AEM) Forms as a Cloud Service 환경에 온보딩하기 전에 사원을 결정하고 프로젝트를 위한 팀을 구성하십시오. 일반 [!DNL AEM Forms] 프로젝트 팀에는 다음과 같은 담당자가 있습니다.
 
 * **사용자 경험(UX) 디자이너**: 사용자 경험(UX) 디자이너는 의 스타일, 레이아웃 및 브랜딩을 정의합니다 [!DNL AEM Forms] 에셋.
 
 * **Forms 실무자**: Forms 전문가는 UX 디자이너가 제공하는 스타일, 레이아웃 및 브랜딩에 따라 적응형 Forms, 테마 및 템플릿을 만듭니다. 또한 전문가가 적응형 양식을 만들어 양식 데이터 모델 및 AEM 워크플로우와 통합합니다. Forms 전문가는 일반적으로 프론트엔드 관련 작업을 수행합니다.
 
-* **Forms 개발자**: Forms 개발자는 사용자 정의 양식 솔루션을 개발합니다.  Forms 개발자는 일반적으로 사용자 지정 구성 요소 개발, AEM 워크플로, 미리 채우기 서비스 등과 같은 백엔드 개발을 수행합니다.
+* **Forms 개발자**: Forms 개발자는 사용자 정의 양식 솔루션을 개발합니다. Forms 개발자는 일반적으로 사용자 지정 구성 요소 개발, AEM 워크플로, 미리 채우기 서비스 등과 같은 백엔드 개발을 수행합니다.
 
 * **AEM 관리자**: AEM 관리자는 사용자 설정, 환경 강화, 데이터 소스 구성, 이메일 구성 및 타사 소프트웨어와 같은 전반적인 구성을 지원합니다. AEM 관리자는 Adobe Analytics, Adobe Target 및 Adobe Sign과 통합하는 것과 같은 통합도 지원합니다.
 
@@ -40,11 +40,11 @@ ht-degree: 18%
 
 ## 서비스 온보드 {#onboarding}
 
-* [온보드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) (으)로 [!DNL Adobe Experience Manager] as a Cloud Service.
+* [온보드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html) (으)로 [!DNL Adobe Experience Manager] as a Cloud Service.
 
-* (샌드박스만 해당) 서비스를 온보딩한 후 [만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) 및 [실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) 프로덕션 및 비프로덕션 파이프라인 모두. 의 최신 기능을 활성화하고 제공합니다. [!DNL AEM Forms] as a Cloud Service으로 사용 가능합니다.
+* (샌드박스만 해당) 서비스를 온보딩한 후 [만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=en) 및 [실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html) 프로덕션 및 비프로덕션 파이프라인 모두. 의 최신 기능을 활성화하고 제공합니다. [!DNL AEM Forms] as a Cloud Service으로 사용 가능합니다.
 
-Forms as a Cloud Service을 사용하여 적응형 양식(디지털 등록)을 만들거나 고객 커뮤니케이션을 생성할 수 있습니다. 완료 후 [온보딩](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) (으)로 [!DNL Adobe Experience Manager] as a Cloud Service으로 다음 작업 중 하나를 수행하여 디지털 등록 또는 고객 커뮤니케이션 기능을 활성화합니다. 두 기능을 모두 활성화할 수도 있습니다.
+Forms as a Cloud Service을 사용하여 적응형 양식(디지털 등록)을 만들거나 고객 커뮤니케이션을 생성할 수 있습니다. 완료 후 [온보딩](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html) (으)로 [!DNL Adobe Experience Manager] as a Cloud Service으로 다음 작업 중 하나를 수행하여 디지털 등록 또는 고객 커뮤니케이션 기능을 활성화합니다. 두 기능을 모두 활성화할 수도 있습니다.
 
 1. Cloud Manager에 로그인하고 AEM Forms as a Cloud Service 인스턴스를 엽니다.
 
@@ -62,7 +62,7 @@ Forms as a Cloud Service을 사용하여 적응형 양식(디지털 등록)을 �
 
 >[!NOTE]
 >
-> 문서 조작 API를 활성화하고 구성하려면 다음 규칙을 [Dispatcher 구성](setup-local-development-environment.md#forms-specific-rules-to-dispatcher)에 추가합니다.
+> 문서 조작 API를 활성화하고 구성하려면 다음 규칙을 [Dispatcher 구성](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
@@ -76,7 +76,7 @@ Forms as a Cloud Service을 사용하여 적응형 양식(디지털 등록)을 �
 | 양식 전문가 /Forms 개발자 | <ul> <li> [!DNL forms-users] </li><li> [!DNL template-author] </li><li> [!DNL workflow-users] </li><li> [!DNL workflow-editors] </li><li> [!DNL fdm-authors] </li></ul> | 작성자 인스턴스 |
 | 사용자 경험(UX) 디자이너 | <ul> <li> [!DNL forms-users]</li><li> [!DNL template-author] </li></ul> | 작성자 인스턴스 |
 | AEM 관리자 | <ul> <li>[!DNL aem-administrators],</li> <li>[!DNL fd-administrators] </li> </ul> | 작성자 및 게시 인스턴스 |
-| 최종 사용자 | <ul> <li>사용자가 적응형 양식을 보고 제출하기 위해 로그인해야 하는 경우 해당 사용자를에 추가합니다. [!DNL forms-users] 그룹입니다. </li> <li>적응형 Forms에 액세스하는 데 사용자 인증이 필요하지 않은 경우 해당 사용자에게 그룹을 할당하지 마십시오. </li> </ul> | 작성자 및 게시 인스턴스 |
+| 최종 사용자 | <ul> <li>사용자가 적응형 양식을 보고 제출하기 위해 로그인해야 하는 경우 해당 사용자를 [!DNL forms-users] 그룹입니다. </li> <li>적응형 Forms에 액세스하는 데 사용자 인증이 필요하지 않은 경우 해당 사용자에게 그룹을 할당하지 마십시오. </li> </ul> | 작성자 및 게시 인스턴스 |
 
 Forms 관련 AEM 그룹 및 해당 권한에 대한 자세한 내용은 [그룹 및 권한](forms-groups-privileges-tasks.md).
 
@@ -84,7 +84,7 @@ Forms 관련 AEM 그룹 및 해당 권한에 대한 자세한 내용은 [그룹 
 
 ## 다음 단계 {#next-steps}
 
-[로컬 개발 환경 설정](setup-local-development-environment.md). 로컬 개발 환경을 사용하여 적응형 양식 및 관련 에셋(테마, 템플릿, 사용자 지정 제출 작업, 미리 채우기 서비스 등)을 만들고 [PDF forms을 적응형 Forms으로 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) 클라우드 개발 환경에 로그인하지 않아도 됩니다.
+[로컬 개발 환경 설정](setup-local-development-environment.md). 로컬 개발 환경을 사용하여 적응형 양식 및 관련 에셋(테마, 템플릿, 사용자 지정 제출 작업, 미리 채우기 서비스 등)을 만들 수 있습니다. 및, [PDF forms을 적응형 Forms으로 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) 클라우드 개발 환경에 로그인하지 않아도 됩니다.
 
 <!-- ### Business unit and end-users {#business-unit-and-end-users}
 
@@ -92,9 +92,9 @@ Forms 관련 AEM 그룹 및 해당 권한에 대한 자세한 내용은 [그룹 
 |-----|-------|-----|
 | UX Designer                  | Customer/System Integrator/Partner | Defines user experience design (style, layout, branding) as per organizational requirements for Adaptive Forms to allow AEM Forms practitioners to design the corresponding themes and templates.                                     |
 | Forms Practitioner           | Customer                           | Authors Adaptive Forms, creates Form Data Model integrations, and creates business workflows using the Experience Manager Workflows. Typically undertakes the front-end work.                                                         |
-| Business Executive - Digital | Customer                           | Responsible for business unit’s product marketing strategy and revenues, main business stakeholders for digital use cases, solutions, and service offerings for the end-users, signs off on the use case implementation and delivery. |
+| Business Executive - Digital | Customer                           | Responsible for business unit's product marketing strategy and revenues, main business stakeholders for digital use cases, solutions, and service offerings for the end-users, signs off on the use case implementation and delivery. |
 | Customer Experience Lead     | Customer                           | Business user persona. Authors, personalizes and updates Adaptive Forms fields/rules/styling, identifies, and prioritizes business needs. Validates business use-case with SI/Partner developers/practitioners during UAT.            |
-| Forms Back-Office User       | Customer                           | End-user internal to organization filling forms, participating in back-office Forms workflows such as review/approval of applications etc.                                                                                            |
+| Forms Back-Office User       | Customer                           | End-user internal to organization filling forms, participating in back-office Forms workflows such as review/approval of applications and so on.                                                                                            |
 | Forms End-User               | External to customer               | Interacts with and submits the published form as end customer or citizen, signs submitted forms, tracks her applications through web portal, receives personalized interactive communications.                                        |
 
 ### Project team {#project-team}
@@ -114,7 +114,7 @@ Forms 관련 AEM 그룹 및 해당 권한에 대한 자세한 내용은 [그룹 
 
 After you onboard the service, configure a [local development environment](setup-local-development-environment.md). 
 
-Administrators are responsible for managing Adobe software and services for their organization. Administrators grant access to developers in their organization to connect and use your [!DNL AEM Forms] as a Cloud Service program. When an administrator is provisioned for an organization, the administrator receives an email with title ‘You now have administrator rights to manage Adobe software and services for your organization’. If you are an administrator, check your mailbox for email with previously mentioned title and proceed to [add users](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#onboarding-users-in-admin-console) via IMS and assign [form-specific groups](forms-groups-privileges-tasks.md) to users based on their role.
+Administrators are responsible for managing Adobe software and services for their organization. Administrators grant access to developers in their organization to connect and use your [!DNL AEM Forms] as a Cloud Service program. When an administrator is provisioned for an organization, the administrator receives an email with title 'You now have administrator rights to manage Adobe software and services for your organization'. If you are an administrator, check your mailbox for email with previously mentioned title and proceed to [add users](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#onboarding-users-in-admin-console) by way of IMS and assign [form-specific groups](forms-groups-privileges-tasks.md) to users based on their role.
 
 ## Next step {#next-steps} -->
 

@@ -1,6 +1,6 @@
 ---
 title: AEM Commerce 시작하기 as a Cloud Service
-description: Adobe Cloud Manager, CI/CD 파이프라인 및 Venia 참조 상점을 사용하여 AEM 상거래 프로젝트를 배포하는 방법에 대해 알아봅니다.
+description: Adobe Cloud Manager, CI/CD 파이프라인 및 Venia 참조 상점을 사용하여 Adobe Experience Manager(AEM) 상거래 프로젝트를 배포하는 방법에 대해 알아봅니다.
 topics: Commerce
 feature: Commerce Integration Framework, Cloud Manager
 version: Cloud Service
@@ -8,16 +8,16 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1104'
 ht-degree: 3%
 
 ---
 
 # AEM Commerce 시작하기 as a Cloud Service {#start}
 
-AEM Commerce를 as a Cloud Service으로 시작하려면 Commerce Integration Framework(CIF) 추가 기능으로 Experience Manager Cloud Service을 프로비저닝해야 합니다. CIF 추가 기능은 맨 위에 있는 추가 모듈입니다. [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html).
+Adobe Experience Manager(AEM) Commerce as a Cloud Service을 시작하려면 Commerce integration framework(CIF) 추가 기능으로 Experience Manager Cloud Service을 프로비저닝해야 합니다. CIF 추가 기능은 맨 위에 있는 추가 모듈입니다. [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html).
 
 ## 온보딩 {#onboarding}
 
@@ -30,7 +30,7 @@ AEM Commerce as a Cloud Service에 대한 온보딩은 두 단계로 구성됩�
 
 CIF 추가 기능을 제공받으면 기존 Cloud Manager 프로그램에 적용됩니다. Cloud Manager 프로그램이 없는 경우 새로 만들어야 합니다. 자세한 내용은 [프로그램 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html).
 
-두 번째 단계는 각 AEM as a Cloud Service 환경에 대한 셀프서비스입니다. CIF 추가 기능을 처음 프로비저닝한 후 수행해야 하는 몇 가지 추가 구성이 있습니다.
+두 번째 단계는 각 AEM as a Cloud Service 환경에 대한 셀프서비스입니다. CIF 추가 기능의 초기 프로비저닝 후에 수행해야 하는 몇 가지 추가 구성이 있습니다.
 
 ## 상거래 솔루션과 AEM 연결 {#solution}
 
@@ -41,9 +41,9 @@ CIF 추가 기능 및 [AEM CIF 핵심 구성 요소](https://github.com/adobe/ae
 - GraphQL은 AEM CIF 핵심 구성 요소 및 고객 프로젝트 구성 요소에서 사용하는 몇 가지 일반적인 공유 가능한 GraphQl 클라이언트를 통해 AEM에서 상거래 백엔드로 호출을 수행합니다.
 - 변수가 설정된 각 AEM 환경에서 GraphQL 프록시 URL을 설정합니다 `/api/graphql`. 이 URL은 AEM commerce 작성 도구(CIF 추가 기능) 및 CIF 클라이언트측 구성 요소에서 사용됩니다.
 
-각 AEM as a Cloud Service 환경에 대해 다른 GraphQL 엔드포인트 URL을 사용할 수 있습니다. 이 방법으로 프로젝트는 AEM 스테이징 환경을 상거래 스테이징 시스템 및 AEM 프로덕션 환경과 상거래 프로덕션 시스템을 연결할 수 있습니다. GraphQL 끝점을 공개적으로 사용할 수 있어야 하며 개인 VPN 또는 로컬 연결이 지원되지 않습니다. 선택적으로, 인증이 필요한 추가 CIF 기능을 사용하도록 인증 헤더를 제공할 수 있다.
+각 AEM as a Cloud Service 환경에 대해 다른 GraphQL 엔드포인트 URL을 사용할 수 있습니다. 이 방법으로 프로젝트는 AEM 스테이징 환경을 상거래 스테이징 시스템 및 AEM 프로덕션 환경과 상거래 프로덕션 시스템을 연결할 수 있습니다. GraphQL 끝점을 공개적으로 사용할 수 있어야 하며 개인 VPN 또는 로컬 연결이 지원되지 않습니다. 선택적으로, 인증이 필요한 추가 CIF 기능을 사용하도록 인증 헤더를 제공할 수 있습니다.
 
-선택적으로, Adobe Commerce Enterprise/Cloud의 경우에만 CIF 추가 기능이 AEM 작성자를 위해 준비된 카탈로그 데이터의 사용을 지원합니다. 이 데이터를 사용하려면 인증 헤더를 구성해야 합니다. 이 헤더는 보안상의 이유로 AEM 작성자 인스턴스에서만 사용할 수 있습니다. AEM 게시 인스턴스는 준비된 데이터를 표시할 수 없습니다.
+선택적으로, Adobe Commerce Enterprise/Cloud의 경우에만 CIF 추가 기능이 AEM 작성자를 위해 준비된 카탈로그 데이터의 사용을 지원합니다. 이 데이터를 사용하려면 인증 헤더를 구성해야 합니다. 이 헤더는 보안상의 이유로 AEM 작성자 인스턴스에서만 사용할 수 있습니다. AEM Publish 인스턴스는 준비된 데이터를 표시할 수 없습니다.
 
 끝점을 구성하는 두 가지 옵션이 있습니다.
 
@@ -107,13 +107,13 @@ CIF 추가 기능 및 [CIF 핵심 구성 요소](https://github.com/adobe/aem-co
 
 이 구성은 다음 단계에 따라 CIF Cloud Service 구성을 통해 프로젝트에 대해 조정할 수 있습니다.
 
-1. AEM에서 도구 -> Cloud Services -> CIF 구성으로 이동합니다.
+1. AEM에서 도구 -> Cloud Service -> CIF 구성으로 이동합니다.
 
 2. 변경할 상거래 구성을 선택합니다.
 
 3. 작업 표시줄을 통해 구성 속성을 엽니다.
 
-![CIF Cloud Services 구성](/help/commerce-cloud/assets/cif-cloud-service-config.png)
+![CIF Cloud Service 구성](/help/commerce-cloud/assets/cif-cloud-service-config.png)
 
 다음 속성을 구성할 수 있습니다.
 
@@ -130,7 +130,7 @@ CIF 추가 기능 및 [CIF 핵심 구성 요소](https://github.com/adobe/aem-co
 - 카탈로그 루트 범주 식별자 - 스토어 카탈로그 루트의 식별자(UID 또는 ID)
   >[!CAUTION]
   >
-  > CIF 코어 구성 요소 버전 2.0.0부터 `id` 을(를) 제거하고 로 대체함 `uid`. 프로젝트에서 CIF 코어 구성 요소 버전 2.0.0을 사용하는 경우 카탈로그 UID 지원을 활성화하고 유효한 범주 UID를 &quot;카탈로그 루트 범주 식별자&quot;로 사용해야 합니다.
+  > CIF 핵심 구성 요소 버전 2.0.0부터 `id` 을(를) 제거하고 로 대체함 `uid`. 프로젝트에서 CIF 핵심 구성 요소 버전 2.0.0을 사용하는 경우 카탈로그 UID 지원을 활성화하고 유효한 범주 UID를 &quot;카탈로그 루트 범주 식별자&quot;로 사용해야 합니다.
 
 위에 표시된 구성은 참조용입니다. 프로젝트는 자체 구성을 제공해야 합니다.
 
