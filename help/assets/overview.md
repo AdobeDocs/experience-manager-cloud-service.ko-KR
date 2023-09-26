@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
-workflow-type: ht
-source-wordcount: '752'
-ht-degree: 100%
+source-git-commit: a4601d95076d37ed5df79b7c9dabb8beab8353d0
+workflow-type: tm+mt
+source-wordcount: '825'
+ht-degree: 91%
 
 ---
 
@@ -52,6 +52,12 @@ DAM 라이브러리 관리자, 개발자 및 상위 사용자는 계속해서 �
 ![add-tags](assets/newui-overview.svg)
 
 Assets 보기에 액세스하는 방법 및 관리자 보기에서 제공하는 일부 간소화에 대한 자세한 내용은 [Assets 보기 소개](/help/assets/assets-view-introduction.md)를 참조하십시오.
+
+## Edge Delivery Services을 위한 문서 기반 작성과 통합 {#integrate-doc-authoring-edge-and-assets}
+
+Edge Delivery를 통해 작성자가 컨텐츠를 빠르게 업데이트하고 게시할 수 있으며 새로운 사이트를 빠르게 시작할 수 있는 빠르고 매력적인 웹 사이트를 만들 수 있습니다.
+
+Edge Delivery Services을 위한 문서 기반 작성과 AEM Assets을 통합하여 웹 사이트 작성자가 Microsoft Word 또는 Google 문서에서 문서를 작성하는 동안 AEM Assets 저장소에서 사용할 수 있는 이미지를 사용할 수 있도록 합니다. 자세한 내용은 [문서 기반 작성과 AEM Assets 통합](/help/edge/using.md#integrate-assets-edge).
 
 ## 새 자산 기능 {#whats-new-assets}
 
