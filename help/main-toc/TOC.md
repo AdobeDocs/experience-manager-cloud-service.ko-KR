@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: af7a4a3e23a07e4768192ae7d6308e3c6036ceb6
+source-git-commit: 18d63a9ed1fd52ebcd696a4ec5f635350cacb1c0
 workflow-type: tm+mt
-source-wordcount: '4321'
+source-wordcount: '4268'
 ht-degree: 98%
 
 ---
@@ -331,20 +331,6 @@ ht-degree: 98%
          + [고려 사항 삭제](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [구조 분석](/help/sites-cloud/administering/content-fragments/analysis.md)
          + [키보드 단축키](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
-         + [콘텐츠 조각을 사용하여 작업](/help/sites-cloud/administering/content-fragments/content-fragments.md)
-         + [콘텐츠 조각 및 GraphQL을 사용하여 Headless 게재](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)
-         + [인스턴스에 대해 콘텐츠 조각 기능 활성화](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
-         + [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
-         + [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)
-         + [콘텐츠 조각 관리](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
-         + [변형 - 조각 콘텐츠 작성](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
-         + [콘텐츠 조각 관련 콘텐츠](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)
-         + [메타데이터 - 조각 속성](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
-         + [콘텐츠 조각 - 삭제 고려 사항](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)
-         + [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
-         + [구조 트리](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
-         + [미리보기 - JSON 표현식](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
-         + [콘텐츠 조각 콘솔 - 키보드 단축키](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
       + 사이트 생성 {#site-creation}
          + [새 사이트 생성](/help/sites-cloud/administering/site-creation/create-site.md)
          + [프론트엔드 파이프라인 활성화](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
