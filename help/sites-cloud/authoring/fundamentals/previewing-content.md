@@ -2,10 +2,10 @@
 title: 콘텐츠 미리보기
 description: AEM 미리보기 서비스를 사용하여 콘텐츠를 시작하기 전에 미리 보는 방법에 대해 알아봅니다.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '274'
-ht-degree: 100%
+source-git-commit: 1804eacb5399dc38c97ff953031666711b9a0e4f
+workflow-type: tm+mt
+source-wordcount: '316'
+ht-degree: 86%
 
 ---
 
@@ -15,6 +15,10 @@ ht-degree: 100%
 AEM은 개발자 및 콘텐츠 작성자가 웹 사이트의 최종 경험이 게시 환경에 도달하고 공개적으로 사용할 수 있게 되기 전에 이를 미리 볼 수 있도록 하는 Sites 미리보기 서비스를 제공합니다.
 
 이를 사용하면 페이지 전환 및 게시측 전용 콘텐츠와 같은 작성자 환경에는 표시되지 않는 페이지 경험을 미리 볼 수 있습니다.
+
+>[!NOTE]
+>
+>내용: *게시됨* 미리보기 환경은 URL로 액세스할 수 있습니다(따라서 AEM에 액세스할 필요가 없음).
 
 미리보기 환경에 대한 자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)을 참조하십시오.
 
@@ -31,6 +35,9 @@ AEM은 개발자 및 콘텐츠 작성자가 웹 사이트의 최종 경험이 �
 
 1. 대화 상자에 미리보기 환경의 콘텐츠에 액세스하기 위한 URL이 표시됩니다.
 
+   >[!NOTE]
+   >
+   >내용: *게시됨* 미리보기 환경은 URL로 액세스할 수 있습니다(따라서 AEM에 액세스할 필요가 없음).
 
 마법사에 표시되는 URL을 사용하여 미리보기 콘텐츠를 보는 것 이외에도 프로덕션 인스턴스의 게시 URL 앞에 `preview-`를 추가할 수도 있습니다.
 
