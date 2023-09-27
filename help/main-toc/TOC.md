@@ -8,10 +8,10 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 18d63a9ed1fd52ebcd696a4ec5f635350cacb1c0
+source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
 workflow-type: tm+mt
 source-wordcount: '4268'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -166,7 +166,7 @@ ht-degree: 98%
    + [AEM as a Cloud Service에 대한 IMS 지원](/help/security/ims-support.md)
    + [AEM as a Cloud Service에 대한 Same Site 쿠키 지원](/help/security/same-site-cookie-support.md)
    + [메일 서비스에 대한 OAuth2 지원](/help/security/oauth2-support-for-mail-service.md)
-   + [트래픽을 필터링하기 위해 WAF 규칙으로 트래픽 필터 규칙 구성](/help/security/cdn-and-waf-rules.md)
+   + [트래픽 필터링을 위해 WAF 규칙과 함께 트래픽 필터 규칙 구성](/help/security/cdn-and-waf-rules.md)
    + [AEM as a Cloud Service 보안 고려 사항](/help/security/security-considerations.md)
 + 온보딩 {#onboarding}
    + [여기에서 시작](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
@@ -234,7 +234,7 @@ ht-degree: 98%
          + [대형 콘텐츠 저장소 처리](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
          + [사용자 매핑 및 주요 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
          + [소스에서 콘텐츠 추출](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
-         + [Cloud Service에 컨텐츠 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+         + [클라우드 서비스에 콘텐츠 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
          + [콘텐츠 마이그레이션 후 색인화](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md)
          + [마이그레이션 세트에 대한 로그 보기](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
          + [마이그레이션 세트 삭제](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
@@ -507,7 +507,7 @@ ht-degree: 98%
       + [페이지에 Dynamic Media 자산 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
       + [웹 페이지에 Dynamic Video 또는 Dynamic Image 뷰어 임베드](/help/assets/dynamic-media/embed-code.md)
       + [웹 애플리케이션에 URL 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
-      + [실패한 게재 URL에 대한 요청 오류 보고서](/help/assets/dynamic-media/reporting-dm.md)
+      + [게재 실패 URL에 대한 오류 보고서 요청](/help/assets/dynamic-media/reporting-dm.md)
       + [규칙 세트를 사용하여 URL 변환](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
       + [Dynamic Media 자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
       + [Dynamic Media의 선택적 게시를 사용하여 작업](/help/assets/dynamic-media/selective-publishing.md)
@@ -560,8 +560,8 @@ ht-degree: 98%
          + [Adobe Sign과 AEM Forms as a Cloud Service 통합](/help/forms/adobe-sign-integration-adaptive-forms.md)
          + [DocuSign과 AEM Forms as a Cloud Service 통합](/help/forms/integrate-docusign-adaptive-forms.md)
          + [Adobe Analytics와 AEM Forms as a Cloud Service 통합](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-         + [Adobe Analytics에 적응형 Forms 통합](/help/forms/forms-experience-cloud-setup-automation.md)
-         + [적응형 Forms Analytics 보고서 보기 및 이해](/help/forms/view-understand-aem-forms-analytics-reports.md)
+         + [Adobe Analytics에 적응형 양식 통합](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+         + [적응형 양식 분석 보고서 보기 및 이해](/help/forms/view-understand-aem-forms-analytics-reports.md)
          + [Microsoft Power Automate와 적응형 양식 통합](/help/forms/forms-microsoft-power-automate-integration.md)
          + [AEM Sites 페이지에 적응형 양식 임베드](/help/forms/embed-adaptive-form-aem-sites.md)
          + [외부 웹 페이지에 핵심 구성 요소 기반 적응형 양식 임베드](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
