@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 온보딩 여정 소개
 description: AEM as a Cloud Service로의 온보드 프로세스를 통해 안내하는 여정에 대한 개요를 보려면 여기를 클릭하십시오.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: d76a0782c72045698e8a595574f9e4c64c3ebaff
+source-git-commit: 7553d3c9f82c8b675af5f704a48bc316ba0d4885
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 96%
+source-wordcount: '1221'
+ht-degree: 95%
 
 ---
 
@@ -86,7 +86,7 @@ AEM as a Cloud Service를 시작할 때 알아야 할 것이 많은 것처럼 �
 
 >[!NOTE]
 >
->Edge Delivery Services은 작성자가 빠르게 업데이트하고 게시할 수 있는 신속한 개발 환경을 가능하게 하는 새로운 구성 가능한 서비스 세트이며 새로운 사이트가 빠르게 시작됩니다. Edge Delivery 서비스에 대한 자세한 내용은 [시작 페이지](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
+>Edge Delivery Services은 작성자가 빠르게 업데이트하고 게시할 수 있는 유연하고 빠른 개발 환경을 가능하게 하는 새로운 컴포저블 서비스 세트입니다. Edge Delivery 서비스에 대한 자세한 내용은 [시작 페이지](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
 
 ## 다음 단계 {#what-is-next}
 
