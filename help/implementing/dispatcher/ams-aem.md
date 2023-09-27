@@ -3,7 +3,7 @@ title: AMS에서 AEM as a Cloud Service로 Dispatcher 구성 마이그레이션
 description: AMS에서 AEM as a Cloud Service로 Dispatcher 구성 마이그레이션
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 24c6e5e78e3e1b30e4becfad2f4f6e57e75ad4e9
 workflow-type: tm+mt
 source-wordcount: '1451'
 ht-degree: 18%
@@ -104,7 +104,7 @@ $ validator httpd .
 
 ### 팜 파일 이름 변경
 
-의 모든 팜 `conf.d/enabled_farms` 패턴과 일치하도록 이름을 변경해야 합니다. `*.farm`, 예를 들어 팜 파일 `customerX_farm.any` 이름을 변경해야 함 `customerX.farm`.
+의 모든 팜 `conf.dispatcher.d/enabled_farms` 패턴과 일치하도록 이름을 변경해야 합니다. `*.farm`, 예를 들어 팜 파일 `customerX_farm.any` 이름을 변경해야 함 `customerX.farm`.
 
 ### cache 확인
 
