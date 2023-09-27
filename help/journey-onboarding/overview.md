@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 온보딩 여정 소개
 description: AEM as a Cloud Service로의 온보드 프로세스를 통해 안내하는 여정에 대한 개요를 보려면 여기를 클릭하십시오.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
+source-git-commit: d76a0782c72045698e8a595574f9e4c64c3ebaff
 workflow-type: tm+mt
-source-wordcount: '1172'
-ht-degree: 100%
+source-wordcount: '1220'
+ht-degree: 96%
 
 ---
 
@@ -83,6 +83,10 @@ AEM as a Cloud Service를 시작할 때 알아야 할 것이 많은 것처럼 �
 | 8 | [AEM 제품 프로필 할당](assign-profiles-aem.md) | 시스템 관리자가 팀원을 AEM as a Cloud Service의 제품 프로필에 할당하는 방법에 대해 알아봅니다. | 시스템 관리자 |
 | 9 | [개발자 및 배포 관리자 작업](developers.md) | 선택 사항 - 개발자가 Cloud Manager Git에 액세스하고 관리하는 방법과 배포 관리자가 Cloud Manager에서 파이프라인을 설정하고 코드를 배포하는 방법에 대해 알아봅니다. | 개발자 및 배포 관리자 |
 | 10 | [AEM 사용자 작업](aem-users.md) | 선택 사항 - AEM 작성자가 AEM as a Cloud Service 인스턴스에 액세스하고 AEM as a Cloud Service의 콘텐츠 작성에 익숙해지는 방법에 대해 알아봅니다. | AEM 사용자 |
+
+>[!NOTE]
+>
+>Edge Delivery Services은 작성자가 빠르게 업데이트하고 게시할 수 있는 신속한 개발 환경을 가능하게 하는 새로운 구성 가능한 서비스 세트이며 새로운 사이트가 빠르게 시작됩니다. Edge Delivery 서비스에 대한 자세한 내용은 [시작 페이지](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
 
 ## 다음 단계 {#what-is-next}
 
