@@ -2,10 +2,10 @@
 title: 환경 만들기
 description: 이 페이지에서는 Cloud Manager for Screens as a Cloud Service으로 환경을 만드는 방법에 대해 설명합니다.
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 8%
+source-wordcount: '203'
+ht-degree: 9%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 8%
 이 섹션에서는 Cloud Manager에서 프로그램의 환경을 생성하는 방법에 대해 설명합니다.
 
 >[!NOTE]
->다음을 참조하십시오 [Cloud Manager에서 환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en) 를 사용하여 사용자가 환경을 만드는 방법을 알아봅니다.
+>다음을 참조하십시오 [Cloud Manager에서 환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=ko) 를 사용하여 사용자가 환경을 만드는 방법을 알아봅니다.
 
 ## 목표 {#objective}
 
@@ -30,14 +30,14 @@ ht-degree: 8%
 
    ![이미지](/help/screens-cloud/assets/onboarding/add-environ1.png)
 
-1. 에서 환경 세부 정보 선택 **환경 추가** 대화 상자를 클릭하고 클릭 **저장**.
+1. 에서 환경 세부 정보 선택 **환경 추가** 대화 상자 및 클릭 **저장**.
 
    ![이미지](/help/screens-cloud/assets/onboarding/add-environ2.png)
 
-1. 환경 단계 추가가 완료되면 아래 그림과 같이 콜 투 액션 카드가 업데이트됩니다.
+1. 환경 추가가 완료되면 아래 그림과 같이 콜 투 액션 카드가 업데이트됩니다.
 
    ![이미지](/help/screens-cloud/assets/onboarding/add-environ3a.png)
 
 ## 다음 단계 {#whats-next}
 
-Cloud Manager에서 프로그램의 환경을 설정하는 방법을 배우면 이제 온보딩 프로세스의 다음 단계로 이동할 준비가 되었습니다. [파이프라인 실행](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).
+Cloud Manager에서 프로그램의 환경을 설정하는 방법에 대해 알아본 후에는 계속 진행할 준비가 되었습니다. 온보딩 프로세스의 다음 단계는 [파이프라인 실행](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).
