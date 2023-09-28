@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: fb70abb2aa698303c462e38ad3bec10d028f804e
+source-git-commit: c1e115e0fcf7e168c26f810f0803950df50b2c6f
 workflow-type: tm+mt
-source-wordcount: '5532'
-ht-degree: 7%
+source-wordcount: '5561'
+ht-degree: 8%
 
 ---
 
@@ -46,12 +46,26 @@ AEM의 자산 검색은 다음 사용 사례를 지원하며 이 문서에서는
 ## 에셋 검색 인터페이스 이해 {#searchui}
 
 에셋 검색 인터페이스 및 사용 가능한 작업에 대해 숙지하십시오.
-
-![Experience Manager Assets 검색 결과 인터페이스 이해](assets/aem_search_results.png)
-
+<!--
+![Understand Experience Manager Assets search results interface](assets/aem_search_results.png)
+-->
+![Experience Manager Assets 검색 결과 인터페이스 이해](assets/aem-search-interface.png)
 *그림: 이해 [!DNL Experience Manager Assets] 검색 결과 인터페이스.*
 
-**A.** 검색을 스마트 컬렉션으로 저장합니다. **B.** 검색 결과의 범위를 좁히기 위한 필터 또는 술어입니다. **C.** 파일, 폴더 또는 둘 다를 표시합니다. **D.** Click Filters to open or close the left rail. **E.** Search location is DAM. **F** 사용자가 제공한 검색 키워드가 있는 Omnisearch 필드. **G.** 로드된 검색 결과를 선택합니다. **H.** 총 검색 결과 중 표시된 검색 결과 수. **난..** 검색을 닫습니다. **J.** 카드 보기와 목록 보기 간에 전환합니다.
+**A.** 검색을 스마트 컬렉션으로 저장합니다.
+**B.** 검색 결과의 범위를 좁히기 위한 필터 또는 술어입니다.
+**C.** 파일, 폴더 또는 둘 다를 표시합니다.
+**D.** 검색 위치는 DAM입니다.
+**E.** 저장된 검색에 액세스합니다.
+**F** 필터 를 클릭하여 왼쪽 레일을 열거나 닫습니다.
+**G.** 자산을 기본 검색으로 표시합니다.
+**H.** 검색 위치는 DAM입니다.
+**난..** 사용자가 제공한 검색 키워드가 있는 Omnisearch 필드.
+**J.** 로드된 검색 결과를 선택합니다.
+**K.** 생성됨, 수정됨, 이름, 없음으로 정렬합니다.
+**.** 오름차순 또는 내림차순으로 정렬합니다.
+**M.** 총 검색 결과 중 표시된 검색 결과 수. **N.** 검색을 닫습니다.
+**아..** 카드 보기와 목록 보기 간에 전환합니다.
 
 ### 동적 검색 패싯 {#dynamicfacets}
 
@@ -69,7 +83,7 @@ Experience Manager Assets은 기본적으로 다음 두 속성에 대한 Facet �
 
 2023년 8월 현재 Experience Manager Assets에는 의 새 버전 9가 포함되어 있습니다. `damAssetLucene` 색인입니다. 이전 버전, `damAssetLucene-8` 및 아래에서 `statistical` 각 검색 패싯 수에 대한 항목 샘플에 대한 액세스 제어를 확인하는 모드입니다.
 
-`damAssetLucene-9` 는 기본 검색 색인에 의해 반환된 패싯 카운트에 대한 액세스 제어를 더 이상 평가하지 않도록 Oak 쿼리 패싯 카운트의 동작을 변경하여 검색 응답 시간이 더 빨라집니다. 그 결과, 사용자에게 액세스 권한이 없는 에셋을 포함하는 Facet 카운트 값이 표시될 수 있습니다. 이러한 사용자는 해당 에셋의 경로를 포함하여 다른 세부 정보에 액세스, 다운로드 또는 읽거나 에셋에 대한 추가 정보를 얻을 수 없습니다.
+`damAssetLucene-9` Oak 쿼리 패싯 계산의 동작을 로 변경하여 더 이상 기본 검색 색인에서 반환된 패싯 수에 대한 액세스 제어를 평가하지 않도록 합니다. 이로써 색 응답 시간이 빨라집니다. 그 결과, 사용자에게 액세스 권한이 없는 에셋을 포함하는 Facet 카운트 값이 표시될 수 있습니다. 이러한 사용자는 해당 에셋의 경로를 포함하여 다른 세부 정보에 액세스, 다운로드 또는 읽거나 에셋에 대한 추가 정보를 얻을 수 없습니다.
 
 이전 동작으로 전환해야 하는 경우(`statistical` mode), 참조 [콘텐츠 검색 및 색인화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html) 의 사용자 지정 버전을 만들려면 `damAssetLucene-9` 색인입니다. Adobe은 로 전환하지 않는 것이 좋습니다. `secure` 검색 응답 시간에 미치는 영향(결과 세트 크기가 큰 경우)으로 인한 모드입니다.
 
@@ -140,7 +154,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ## 검색 결과를 표시하도록 자산 배치 크기 구성 {#configure-asset-batch-size}
 
-이제 관리자는 사용자가 검색을 수행할 때 표시되는 에셋의 배치 크기를 구성할 수 있습니다. 결과를 로드하기 위해 아래로 더 스크롤할 때 자산 검색 결과가 구성된 배치 크기 번호의 배수로 표시됩니다. 사용 가능한 배치 크기인 200개, 500개 및 1000개의 에셋 중에서 선택할 수 있습니다. 배치 크기 수를 낮게 설정하면 검색 응답 시간이 빨라집니다.
+관리자는 검색을 수행할 때 표시되는 자산의 배치 크기를 구성할 수 있습니다. 아래로 스크롤하여 결과를 로드하는 경우 자산 검색 결과는 구성된 여러 배치 크기 번호로 표시됩니다. 200, 500, 1,000개 자산의 사용 가능한 배치 크기 중에서 선택할 수 있습니다. 낮은 배치 크기 번호를 설정하면 검색 응답 시간이 빨라집니다.
 
 예를 들어 결과 개수 제한을 200개의 에셋으로 배치 크기로 설정한 경우, Experience Manager Assets은 검색 수행을 시작할 때 200개의 에셋의 배치 크기를 검색 결과에 표시합니다. 아래로 스크롤하여 검색 결과를 탐색하면 다음 200개의 자산 배치가 표시됩니다. 검색 쿼리와 일치하는 모든 에셋이 표시될 때까지 프로세스가 계속됩니다.
 
@@ -160,7 +174,10 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 **폴더 내 에셋 검색**: 검색을 특정 폴더로 제한할 수 있습니다. 다음에서 **[!UICONTROL 필터]** 패널, 폴더의 경로를 추가합니다. 폴더는 한 번에 하나만 선택할 수 있습니다.
 
-![필터 패널에서 폴더 경로를 추가하여 검색 결과를 폴더로 제한](assets/search_folder_select.gif)
+![필터 패널에서 폴더 경로를 추가하여 검색 결과를 폴더로 제한](assets/limiting-search.gif)
+<!--
+![Limit search results to a folder by adding a folder path in Filters panel](assets/search_folder_select.gif)
+-->
 
 *그림: 필터 패널에서 폴더 경로를 추가하여 검색 결과를 폴더로 제한합니다.*
 
@@ -277,7 +294,9 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 
 자산 선택기 인터페이스에 액세스하려면 로 이동합니다. `https://[aem_server]:[port]/aem/assetpicker`. 원하는 폴더로 이동하고 하나 이상의 에셋을 선택합니다. 또는 Omnisearch 상자에서 원하는 에셋을 검색하고 필요에 따라 필터를 적용한 다음 선택합니다.
 
-![에셋 선택기에서 에셋 검색 및 선택](assets/assetpicker.png)
+![에셋 선택기에서 에셋 검색 및 선택](assets/select-asset.png)
+
+<!--![Browse and select asset in the asset selector](assets/assetpicker.png)-->
 
 *그림: 에셋 선택기에서 에셋을 찾아보고 선택합니다.*
 
