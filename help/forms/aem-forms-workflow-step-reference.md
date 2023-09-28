@@ -3,21 +3,21 @@ title: 양식 중심의 AEM 워크플로를 사용하여 비즈니스 프로세�
 description: Forms 중심 워크플로를 사용하면 적응형 Forms 기반 워크플로를 신속하게 구축할 수 있습니다. Adobe Sign을 사용하여 문서에 전자 서명하고, 양식 기반 비즈니스 프로세스를 만들고, 데이터를 검색하여 여러 데이터 소스로 보내고, 전자 메일 알림을 보낼 수 있습니다
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+keywords: AEM 워크플로 사용, 작업 단계 할당, PDF/A 단계로 전환, 기록된 문서 생성 단계, 워크플로 사용, 문서 서명 단계, 인쇄된 출력 단계 생성, 비대화형 PDF 출력 생성
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '7452'
+source-wordcount: '7433'
 ht-degree: 1%
 
 ---
 
-# Forms 중심의 AEM 워크플로 사용 - 비즈니스 프로세스 자동화를 위한 단계 참조{#forms-centric-workflow-on-osgi-step-reference}
+
+# Forms 중심의 AEM 워크플로 사용 - 비즈니스 프로세스 자동화를 위한 단계 참조 {#forms-centric-workflow-on-osgi-step-reference}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | 이 문서 |
-
-<span class="preview"> 에서 가수 역할, 감사 추적 및 정부 ID 기반 인증 옵션 [문서 서명 단계](#sign-document-step) 프리릴리스 기능이며 을 통해 액세스할 수 있습니다. [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 워크플로우 모델 을 사용합니다. 모델은 일련의 단계를 정의하고 실행하는 데 도움이 됩니다. 워크플로가 일시적인지 또는 여러 리소스를 사용하는지 여부와 같은 모델 속성을 정의할 수도 있습니다. 다음을 수행할 수 있습니다. [비즈니스 논리를 달성하기 위해 모델에 다양한 AEM Workflow 단계 포함](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ko#extending-aem).
 
@@ -40,7 +40,6 @@ Forms 중심 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 작�
 >[!NOTE]
 >
 >워크플로 모델이 외부 스토리지로 표시된 경우 모든 Forms Workflow 단계에서 변수 옵션만 선택하여 데이터 파일과 첨부 파일을 저장하거나 검색할 수 있습니다.
-
 
 ## 작업 단계 할당 {#assign-task-step}
 
@@ -379,8 +378,6 @@ DDX 호출 단계에는 다음 속성이 있습니다.
 
 ## 문서 서명 단계 {#sign-document-step}
 
-<span class="preview"> Adobe Sign 단계의 가수 역할, 감사 추적 및 정부 ID 기반 인증 옵션은 프리릴리스 기능이며 다음을 통해 액세스할 수 있습니다. [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
-
 문서 서명 단계에서는 다음을 사용할 수 있습니다. [!DNL Adobe Sign] 문서에 서명합니다. 를 사용할 때 [!DNL Adobe Sign] 적응형 양식에 서명하는 워크플로 단계: 워크플로 단계의 구성에 따라 양식을 수신자 간에 차례대로 전달하거나 모든 수신자에게 동시에 전송할 수 있습니다. [!DNL Adobe Sign] 이 활성화된 적응형 Forms은 모든 수신자가 서명 프로세스를 완료한 후에만 Experience Manager Forms Server에 제출됩니다.
 
 기본적으로 [!DNL Adobe Sign] 스케줄러 서비스는 24시간마다 수신자 응답을 확인(폴링)합니다. 다음을 수행할 수 있습니다. [환경에 대한 기본 간격 변경](adobe-sign-integration-adaptive-forms.md#for-aem-workflows-only-configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status-configure-adobe-sign-scheduler-to-sync-the-signing-status).
@@ -589,3 +586,9 @@ Send a document directly to a printer. It supports the following printing access
 * **선형 PDF**: 웹 보기를 위해 생성된 PDF을 최적화할지 여부를 지정합니다.
 * **태그 지정된 PDF**: 생성된 PDF에 액세스할 수 있게 할지 여부를 지정합니다.
 * **XCI 문서**: XCI 파일의 경로를 지정합니다.
+
+## 추가 참조 {#see-also}
+
+* [Forms 중심 AEM 워크플로의 변수](/help/forms/variable-in-aem-workflows.md)
+* [부재 중 설정 구성](/help/forms/configure-out-of-office-settings.md)
+

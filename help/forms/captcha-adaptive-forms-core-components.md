@@ -2,19 +2,16 @@
 title: AEM 적응형 양식에서 Google reCAPTCHA 사용
 description: Google reCAPTCHA 서비스를 통해 손쉽게 양식 보안을 강화할 수 있습니다. 내부의 단계별 가이드!
 topic-tags: Adaptive Forms, author
-hide: true
-hidefromtoc: true
-Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
+keywords: Google reCAPTCHA 서비스, 적응형 Forms, CAPTCHA 과제, 보트 방지, 핵심 구성 요소, 양식 제출 보안, 양식 스팸 방지
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 13%
+source-wordcount: '945'
+ht-degree: 15%
 
 ---
 
-# 핵심 구성 요소를 기반으로 하는 AEM 적응형 양식에서 Google reCAPTCHA 사용 {#using-reCAPTCHA-in-adaptive-forms}
 
-<span class="preview"> 프리릴리스 기능이며 를 통해 액세스할 수 있습니다. [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+# 핵심 구성 요소를 기반으로 하는 AEM 적응형 양식에서 Google reCAPTCHA 사용 {#using-reCAPTCHA-in-adaptive-forms}
 
 | 적용 대상 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -37,7 +34,7 @@ Google의 reCAPTCHA 서비스를 사용하여 AEM Forms 환경을 연결하려�
    ![Google 웹 사이트의 Google reCAPTCHA 구성을 만들어 reCAPTCHA 키를 가져옵니다.](/help/forms/assets/google-captcha.gif)
 1. AEM Forms as a Cloud Service 환경에서 구성 컨테이너를 만듭니다. 구성 컨테이너에는 AEM을 외부 서비스에 연결하는 데 사용되는 클라우드 구성이 포함됩니다. Google에서 제공하는 reCAPTCHA 서비스를 사용하여 AEM Forms 환경을 연결할 수 있도록 구성 컨테이너를 만들고 구성하려면 다음 작업을 수행하십시오.
    1. AEM Forms as a Cloud Service 인스턴스를 엽니다.
-   1. 다음으로 이동 **[!UICONTROL 도구 > 일반 > 구성 브라우저]**. 구성 브라우저에서 다음 작업을 수행할 수 있습니다.
+   1. **[!UICONTROL 도구 > 일반 > 구성 브라우저]**&#x200B;로 이동합니다. 구성 브라우저에서 다음 작업을 수행할 수 있습니다.
    1. 기존 폴더를 선택하거나 폴더를 만듭니다. 폴더를 만들고 이 폴더에 대해 클라우드 구성 옵션을 활성화하거나 기존 폴더에 대해 클라우드 구성 옵션을 활성화할 수 있습니다.
 
       * 폴더를 만들고 이 폴더에 대한 클라우드 구성 옵션을 활성화하려면 다음을 수행하십시오.
@@ -47,20 +44,16 @@ Google의 reCAPTCHA 서비스를 사용하여 AEM Forms 환경을 연결하려�
       * 기존 폴더에 대해 클라우드 구성 옵션을 활성화하려면 다음을 수행하십시오.
          1. 구성 브라우저에서 폴더를 선택하고 을 누릅니다 **[!UICONTROL 속성]**.
          1. 구성 속성 대화 상자에서 다음을 활성화합니다 **[!UICONTROL 클라우드 구성]**.
-         1. 누르기 **[!UICONTROL 저장 및 닫기]** 구성을 저장하고 대화 상자를 종료합니다.
+         1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 탭하여 구성을 저장하고 대화 상자를 종료합니다.
 
 1. Cloud Service 구성:
    1. AEM 작성자 인스턴스에서 ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]** 및 탭 **[!UICONTROL reCAPT차]**.
    1. 이전 섹션에서 만들거나 업데이트한 구성 컨테이너를 선택합니다. **[!UICONTROL 만들기]**&#x200B;를 탭합니다.
    1. 지정 **[!UICONTROL 제목]**, **[!UICONTROL 이름]**, **[!UICONTROL 사이트 키]**, 및 **[!UICONTROL 비밀 키]** reCAPTCHA 서비스(1단계에서 획득)의 경우 **[!UICONTROL 만들기]**&#x200B;를 탭합니다.
 
-
    ![Google의 reCAPTCHA 서비스와 AEM Forms 환경을 연결하도록 Cloud Service 구성](/help/forms/assets/captcha-configuration.gif)
 
-
-
    reCAPTCHA 서비스가 구성되면 적응형 양식에서 사용할 수 있습니다. 자세한 내용은 [적응형 양식에서 Google reCAPTCHA 사용](#using-reCAPTCHA).
-
 
 ## 적응형 양식에서 Google reCAPTCHA 사용 {#using-reCAPTCHA}
 
@@ -116,6 +109,6 @@ Tap the **[!UICONTROL Currency Value]** field in the form and create the followi
 ## 참고 항목
 
 * [적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md)
-* [적응형 양식 단편 만들기](/help/forms/adaptive-form-fragments-core-components.md)
+* [적응형 양식 조각 만들기](/help/forms/adaptive-form-fragments-core-components.md)
 * [AEM Sites 페이지 또는 경험 조각에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [적응형 양식에서 Google reCAPTCHA 사용](/help/forms/captcha-adaptive-forms-core-components.md)

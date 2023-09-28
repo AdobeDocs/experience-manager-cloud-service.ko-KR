@@ -1,15 +1,21 @@
 ---
 title: Forms Designer 다운로드 및 설치
 description: Forms Designer를 사용하여 기록 문서의 템플릿 역할을 하는 XDP 및 PDF 양식 템플릿을 만들 수 있습니다. 디자이너는 [!DNL AEM Forms] 라이센스.
-source-git-commit: 325769d4a3b93502b0c6857e20911b05df34a24a
+keywords: Designer 설치, Forms designer 설치, Forms Designer 설치를 위한 요구 사항
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 1%
+source-wordcount: '397'
+ht-degree: 9%
 
 ---
 
 
 # Forms Designer 다운로드 및 설치 {#installing-and-configuring-designer}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | 이 문서 |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/installing-configuring-designer.html) |
 
 디자이너는 XDP 및 PDF 양식 템플릿 작성을 간소화하는 포인트 앤 클릭 그래픽 양식 디자인 도구입니다. 양식 템플릿을 디자인하고 해당 논리를 정의하며 엄격한 법적 요구 사항을 충족할 수 있습니다. XDP 및 PDF 양식은 적응형 양식에서 기록 문서 템플릿 역할을 합니다. 이러한 양식 템플릿은 다음과 다릅니다. [적응형 양식 템플릿](template-editor.md).
 
@@ -19,7 +25,6 @@ ht-degree: 1%
 
 +++ 64비트 디자이너(권장)
 
-* 64비트 버전의 Forms Designer를 설치하기 전에 32비트 버전의 Designer를 제거합니다.
 * [!DNL Microsoft® Windows® 2016 Server] 또는 [!DNL Microsoft® Windows® 2019 Server], 및 [!DNL Microsoft® Windows® 10]
 * 최소 2GB RAM
 * 20GB의 디스크 공간
@@ -50,6 +55,10 @@ ht-degree: 1%
 
 ## Designer 설치 {#install-designer}
 
+>[!NOTE]
+>
+> 64비트 버전의 Forms Designer를 설치하기 전에 32비트 버전의 Designer를 제거합니다.
+
 Designer를 설치하려면 다음 단계를 수행하십시오.
 
 1. 에서 Designer 다운로드 [소프트웨어 배포](https://experience.adobe.com/downloads).
@@ -59,3 +68,9 @@ Designer를 설치하려면 다음 단계를 수행하십시오.
 1. (선택 사항) 기본 설치 경로를 변경하여 원하는 위치에 Designer를 설치합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 1. 클릭 **[!UICONTROL 뒤로]** 기본 설정을 변경합니다. Designer를 설치하려면 **[!UICONTROL 설치]**.
 1. 클릭 **[!UICONTROL 완료]** 설치가 완료되는 시점입니다.
+
+## 추가 참조 {#see-also}
+
+* [사용자 정의 글꼴 사용](/help/forms/use-custom-fonts.md)
+* [적응형 양식 기반의 독립 실행형 코어 구성 요소 만들기](/help/forms/creating-adaptive-form-core-components.md)
+* [적응형 양식을 만들거나 AEM Sites 페이지에 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)

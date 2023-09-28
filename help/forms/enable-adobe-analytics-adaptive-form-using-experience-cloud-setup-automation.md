@@ -1,20 +1,23 @@
 ---
 title: 적응형 양식용 Adobe Analytics 활성화
 description: Experience Cloud 설정 자동화를 통해 Adobe Analytics를 적응형 양식에 연결하여 방문자 상호 작용과 참여에 대한 인사이트를 추적할 수 있습니다.
-source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
+keywords: Experience Cloud 설정 자동화를 사용하여 적응형 양식용 Adobe Analytics 활성화, Forms의 Adobe Analytics, 적응형 Forms의 Adobe Analytics, Forms 분석 통합, Forms 및 Adobe Analytics 활성화
+source-git-commit: 4daba42c9d8a7eff5d3ef6f9581c52c787666ed1
 workflow-type: tm+mt
-source-wordcount: '1534'
-ht-degree: 60%
+source-wordcount: '1591'
+ht-degree: 59%
 
 ---
 
 
 # Experience Cloud 설정 자동화를 사용하여 적응형 양식용 Adobe Analytics 활성화 {#integrate-adobe-analytics-to-aem-forms-with-experience-cloud-setup-automation}
 
-<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)을 통해 액세스할 수 있습니다. </span>
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | 이 문서 |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
 
 Experience Cloud 설정 자동화를 통해 Adobe Analytics를 Adaptive Forms에 연결하여 양식과의 사용자 상호 작용을 추적 및 분석하고 방문자 상호 작용과 참여에 대한 인사이트를 제공할 수 있습니다. 또한 Experience Cloud 설정 자동화를 통해 완료 시간과 드롭오프 시점과 같은 지표 평가를 포함하는 양식 성능을 모니터링할 수 있습니다. 이 분석을 사용하면 로그인 상태에 따라 사용자 행동(예: 익명 사용자)을 구분하여 일반적인 트렌드와 패턴을 식별하는 동시에 양식을 최적화하여 사용자 경험을 향상시킬 수 있습니다.
-
 
 ## Adobe Analytics와 적응형 양식 통합의 이점 {#advantages-of-integrating-adobe-analytics-with-aem-forms}
 
@@ -76,7 +79,7 @@ Forms as a Cloud Service 환경에서 앞에서 설명한 것을 사용할 수 �
 * [기초 구성 요소 기반의 적응형 양식용 Adobe Analytics를 사용할 수 있도록 설정](#integrate-adobe-analytics-with-aem-forms-for-foundation-component)
 * [코어 구성 요소 기반의 적응형 양식용 Adobe Analytics를 사용할 수 있도록 설정](#integrate-adobe-analytics-with-aem-forms-for-core-components)
 
->[!VIDEO](https://video.tv.adobe.com/v/3424577/recaptcha-google-adaptive-forms/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3424577/enable-adobe-analytics/?quality=12&learn=on)
 
 
 <!--
@@ -219,14 +222,20 @@ AEM Sites 페이지에서 적응형 양식에 연결하여 Analytics를 활성�
 
 ## Best Practices
 
-1.	Verify that Adobe Analytics is enabled on all the forms activated for Adobe Analytics.
+1.    Verify that Adobe Analytics is enabled on all the forms activated for Adobe Analytics.
 
-1.	Check the Adobe Analytics report periodically to gain insights into user behavior and form performance. For instance, you may set the cadence to 15 days or the period you prefer to choose for report analysis. This enables you to improve the forms enrollment experience.
+1.    Check the Adobe Analytics report periodically to gain insights into user behavior and form performance. For instance, you may set the cadence to 15 days or the period you prefer to choose for report analysis. This enables you to improve the forms enrollment experience.
 
-1.	Enable Analytics for all or most of your forms for tracking and analyzing user interaction with your forms and to gain insights into visitor interactions and engagement.
+1.    Enable Analytics for all or most of your forms for tracking and analyzing user interaction with your forms and to gain insights into visitor interactions and engagement.
 
 1. Check your forms performance after you update your form fields or components.
 
-1.	Share Analytics report with your peer groups for review, you can schedule your report for a later time.
+1.    Share Analytics report with your peer groups for review, you can schedule your report for a later time.
 
 -->
+
+## 추가 참조 {#see-also}
+
+* [적응형 Forms 분석 보고서 보기 및 이해](/help/forms/view-understand-aem-forms-analytics-reports.md)
+* [AEM Sites 페이지 또는 경험 조각에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [AEM Forms과 Adobe Analytics 통합](/help/forms/integrate-aem-forms-with-adobe-analytics.md)

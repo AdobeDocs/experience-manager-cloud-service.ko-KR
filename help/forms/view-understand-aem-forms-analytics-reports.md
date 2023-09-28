@@ -1,21 +1,25 @@
 ---
 title: 적응형 양식 분석 보고서 보기 및 이해
 description: 적응형 양식은 Adobe Analytics와 원활하게 통합되어 게시된 양식 및 문서에 대한 성능 지표를 캡처하고 추적합니다.
+keywords: 적응형 양식 분석 보고서 보기 및 이해, Adobe 분석 보고서, Forms 분석 보고서
 topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 100%
+source-wordcount: '988'
+ht-degree: 98%
 
 ---
 
 
 # 적응형 양식 분석 보고서 보기 및 이해 {#viewing-and-understanding-aem-forms-analytics-reports}
 
-<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)을 통해 액세스할 수 있습니다. </span>
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | 이 문서 |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html) |
 
 빠르게 변화하는 디지털 분석 환경에서 정보에 입각한 결정을 내리고 디지털 경험을 최적화하려면 지속적으로 글로벌 트렌드에 적응해야 합니다. 문제 해결을 위해 적응형 양식은 Adobe Analytics와 원활하게 통합되어 게시된 양식 및 문서에 대한 성능 지표를 캡처하고 추적합니다. 이러한 지표를 분석하는 목적은 양식의 유용성과 효율성을 높일 수 있는 지표 및 분석을 사용하여 데이터를 기반으로 정보에 입각한 결정을 내리는 것입니다.
 
@@ -75,7 +79,7 @@ Adobe Analytics는 양식 사용에 대한 중요한 인사이트 확보를 위�
 
 ### **트래픽의 주요 소스 및 방문 빈도가 높은 양식** {#top-sources-of-traffic-and-popular-forms}
 
-이렇게 하면 양식을 참조하는 기본 소스 또는 링크를 식별할 수 있습니다. 예를 들어 아래 주어진 이미지에 18.9%는 **입력/책갈피 표시**&#x200B;이고, 70.49%는 **검색 엔진**&#x200B;을 기준으로 하고, 24%는 **기타 웹 사이트**&#x200B;에 있는 적응형 양식용 검색 인스턴스가 표시됩니다. 요구 사항에 따라 차원 항목을 정의할 수 있습니다. 또한, 가장 많이 방문한 양식이나 방문 빈도가 높은 양식을 정렬할 수 있습니다.
+이렇게 하면 양식을 참조하는 기본 소스 또는 링크를 식별할 수 있습니다. 예를 들어 아래 주어진 이미지에 18.9%는 **입력/책갈피 표시**&#x200B;이고, 70.49%는 **검색 엔진**&#x200B;을 기준으로 하고, 24%는 **기타 웹 사이트**&#x200B;에 있는 적응형 양식용 검색 인스턴스가 표시됩니다. 요구 사항에 따라 차원 항목을 정의할 수 있습니다. 또한 가장 많이 방문한 양식이나 방문 빈도가 높은 양식을 정렬할 수 있습니다.
 
 ![추천한 사이트](assets/referred-sites.png){width="100%"}
 
@@ -102,3 +106,9 @@ Adobe Analytics는 양식 사용에 대한 중요한 인사이트 확보를 위�
 이를 통해 사용자는 양식을 포기하기 전 시간을 보낸 양식 필드를 분석할 수 있습니다. 예를 들어 아래 이미지에서 알 수 있듯이 포기한 양식 5개 중 2개는 **전체 이름** 필드에 남고, 2개는 **전화번호** 필드에 남고, 나머지 1개는 **텍스트 입력**&#x200B;에 남게 됩니다.
 
 ![필드 방문자](assets/field-visitors.png){width="100%"}
+
+## 추가 참조 {#see-also}
+
+* [Experience Cloud 설정 자동화를 사용하여 적응형 양식용 Adobe Analytics 활성화](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+* [AEM Sites 페이지 또는 경험 조각에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [AEM Forms과 Adobe Analytics 통합](/help/forms/integrate-aem-forms-with-adobe-analytics.md)

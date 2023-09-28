@@ -2,16 +2,17 @@
 title: Forms as a Cloud Service 커뮤니케이션 소개
 description: XDP 및 PDF 템플릿과 데이터 자동 병합 또는 PCL, ZPL 및 PostScript 형식으로 출력 생성
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '1475'
-ht-degree: 75%
+source-wordcount: '1426'
+ht-degree: 81%
 
 ---
 
+
 # AEM Forms as a Cloud Service 커뮤니케이션 소개 {#frequently-asked-questions}
 
-<span class="preview"> [DocAssurance 서비스](#doc-assurance) 는 프리릴리스 기능이며 다음을 통해 액세스할 수 있습니다. [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). 기능에 대한 설명서는 변경될 수 있습니다.</span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -159,16 +160,13 @@ You can [query a PDF document](https://developer.adobe.com/experience-manager-fo
 
 The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary. -->
 
-
-<span class="preview"> Document Assurance 서비스는 프리릴리스 기능이며 다음을 통해 액세스할 수 있습니다 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). 기능에 대한 설명서는 변경될 수 있습니다.</span>
-
 ## 문서 보증 {#doc-assurance}
 
 DocAssurance 서비스에는 서명 및 암호화 API가 포함되어 있습니다.
 
 ### 서명 API
 
-서명 API를 사용하면 조직에서 배포하고 수신하는 Adobe PDF 문서의 보안 및 개인 정보를 보호할 수 있습니다. 이 서비스는 디지털 서명 및 인증을 사용하여 의도한 수신자만 문서를 변경할 수 있도록 합니다. 보안 기능은 문서 자체에 적용되므로, 문서는 전체 라이프 사이클에 대해 안전하게 제어됩니다. 문서는 오프라인으로 다운로드할 때와 조직에 다시 제출될 때 방화벽 이후에도 안전하게 보호됩니다. 서명 API를 사용하여 다음 작업을 수행할 수 있습니다.
+서명 API를 통해 조직에서 배포하고 수신하는 Adobe PDF 문서의 보안 및 개인정보를 보호할 수 있습니다. 이 서비스는 의도한 수신자만 문서를 변경할 수 있도록 디지털 서명과 인증을 사용합니다. 보안 기능은 문서 자체에 적용되므로, 문서는 전체 라이프 사이클에 대해 안전하게 제어됩니다. 문서는 오프라인으로 다운로드할 때와 조직에 다시 제출될 때 방화벽 이후에도 안전하게 보호됩니다. 서명 API를 사용하여 다음 작업을 수행할 수 있습니다.
 
 * PDF 문서에 서명 필드를 추가합니다.
 * PDF 문서에서 지정된 서명 필드에 서명합니다.
@@ -302,3 +300,9 @@ If you attempt to flatten a non-interactive PDF document, an exception occurs.
 An interactive PDF document contains various elements that constitute a form. These elements may include fields (to accept or display data), buttons (to trigger events), and scripts (commands to perform a specific action). Clicking a button may trigger an event that changes the state of a field. For example, choosing a gender option may change the color of a field or the appearance of the form. This is an example of a manual event causing the form state to change.
 
 When such an interactive PDF document is flattened using the Communications APIs, the state of the form is not retained. To ensure that the state of the form is retained even after the form is flattened, set the Boolean value _retainFormState_ to True to save and retain the state of the form.  -->
+
+## 추가 참조 {#see-also}
+
+
+* [통신 처리 - 동기 API](/help/forms/aem-forms-cloud-service-communications.md)
+* [통신 처리 - 일괄 처리 API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

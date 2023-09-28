@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에서 캐싱
 description: AEM as a Cloud Service 캐싱의 기본 사항에 대해 알아봅니다.
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: a6714e79396f006f2948c34514e5454fef84b5d8
 workflow-type: tm+mt
-source-wordcount: '2800'
+source-wordcount: '2803'
 ht-degree: 2%
 
 ---
@@ -203,16 +203,18 @@ Adobe CDN에서 다음과 같은 리소스에 대한 HEAD 요청을 받는 경�
 
 ### 마케팅 캠페인 매개변수 {#marketing-parameters}
 
-웹 사이트 URL에는 캠페인의 성공을 추적하는 데 사용되는 마케팅 캠페인 매개 변수가 자주 포함됩니다. Dispatcher 캐시를 효과적으로 사용하려면 Dispatcher 구성 을 `ignoreUrlParams` 다음으로 속성: [여기에 문서화됨](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+웹 사이트 URL에는 캠페인의 성공을 추적하는 데 사용되는 마케팅 캠페인 매개 변수가 자주 포함됩니다.
 
-다음 `ignoreUrlParams` 섹션은 주석 처리를 취소해야 하며 파일을 참조해야 합니다. `conf.dispatcher.d/cache/marketing_query_parameters.any`. 마케팅 채널과 관련된 매개 변수에 해당하는 라인의 주석을 해제하여 파일을 수정할 수 있습니다. 다른 매개 변수도 추가할 수 있습니다.
+2023년 10월 이상에서 생성된 환경의 경우, CDN은 더 나은 캐시 요청을 위해 일반적인 마케팅 관련 쿼리 매개 변수, 특히 다음 정규 표현식 패턴과 일치하는 매개 변수를 제거합니다.
 
 ```
-/ignoreUrlParams {
-{{ /0001 { /glob "*" /type "deny" }}}
-{{ $include "../cache/marketing_query_parameters.any"}}
-}
+^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$
 ```
+
+이 동작을 비활성화하려면 지원 티켓을 제출하십시오.
+
+2023년 10월 이전에 생성된 환경의 경우 Dispatcher 구성을 `ignoreUrlParams` 다음으로 속성: [여기에 문서화됨](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+
 
 ## 디스패처 캐시 무효화 {#disp}
 
