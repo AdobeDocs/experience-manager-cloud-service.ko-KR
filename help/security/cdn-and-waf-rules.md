@@ -1,30 +1,30 @@
 ---
-title: WAF 규칙을 사용하여 트래픽 필터 규칙 구성
-description: WAF 규칙과 함께 트래픽 필터 규칙을 사용하여 트래픽을 필터링합니다
+title: WAF 규칙과 함께 트래픽 필터 규칙 구성
+description: 트래픽 필터링을 위해 WAF 규칙과 함께 트래픽 필터 규칙 사용
 source-git-commit: ce7b6922f92208c06f85afe85818574bf2bc8f6d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2709'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
 
-# 트래픽을 필터링하기 위해 WAF 규칙으로 트래픽 필터 규칙 구성 {#configuring-cdn-and-waf-rules-to-filter-traffic}
+# 트래픽 필터링을 위해 WAF 규칙과 함께 트래픽 필터 규칙 구성 {#configuring-cdn-and-waf-rules-to-filter-traffic}
 
 >[!NOTE]
 >
 >이 기능은 아직 일반적으로 사용할 수 없습니다. 진행 중인 얼리 어답터 프로그램에 참여하려면 이메일 **aemcs-waf-adopter@adobe.com**&#x200B;으로 귀사 조직의 이름과 해당 기능에 가지고 있는 관심에 대한 맥락을 작성하여 보내 주십시오.
 
-Adobe은 고객 웹 사이트에 대한 공격을 완화하려고 하지만, 악성 트래픽이 애플리케이션에 도달하지 않도록 특정 패턴과 일치하는 트래픽을 사전에 필터링하는 것이 유용할 수 있습니다. 가능한 접근법은 다음과 같습니다.
+Adobe는 고객 웹 사이트에 대한 공격을 완화하려고 노력하지만, 악성 트래픽이 애플리케이션에 도달하지 않도록 특정 패턴과 일치하는 트래픽을 사전에 필터링하는 것이 유용할 수 있습니다. 가능한 접근법은 다음과 같습니다.
 
 * `mod_security`와 같은 Apache 레이어 모듈
 * Cloud Manager의 구성 파이프라인을 통해 CDN에 배포되는 트래픽 필터 규칙 구성
 
-이 문서에서는 트래픽 필터 규칙 접근 방식에 대해 설명합니다. 이러한 규칙은 대부분 IP, 경로 및 사용자 에이전트를 포함한 요청 속성 및 요청 헤더에 따라 요청을 차단하거나 허용합니다. 모든 AEM as a Cloud Service Sites 및 Forms 고객이 이러한 규칙을 구성할 수 있습니다.
+이 문서에서는 트래픽 필터 규칙 접근 방식에 대해 설명합니다. 이러한 규칙의 대부분은 IP, 경로 및 사용자 에이전트를 포함하여 요청 속성 및 요청 헤더를 기반으로 요청을 차단하거나 허용합니다. 이러한 규칙은 모든 AEM as a Cloud Service Sites 및 Forms 고객이 구성할 수 있습니다.
 
-WAF(Web Application Firewall) 추가 기능에 라이선스를 부여하는 고객은 &quot;WAF 트래픽 필터 규칙&quot;(또는 줄여서 WAF 규칙)이라는 추가 규칙 범주를 구성할 수도 있습니다. 이러한 WAF 규칙은 악의적인 트래픽과 관련된 것으로 알려진 다양한 패턴과 일치하는 요청을 차단합니다. 예정된 기능의 라이선스에 대한 자세한 내용은 Adobe 계정 팀에 문의하십시오. 얼리 어답터 프로그램 중에는 추가 라이선스가 필요하지 않습니다.
+WAF(웹 애플리케이션 방화벽) 추가 기능에 라이선스를 부여한 고객은 “WAF 트래픽 필터 규칙”(또는 WAF 규칙)이라고 하는 추가 규칙 범주를 구성할 수도 있습니다. 이러한 WAF 규칙은 악성 트래픽과 관련된 것으로 알려진 다양한 패턴과 일치하는 요청을 차단합니다. 이 향후 기능 라이선싱에 대한 자세한 내용은 Adobe 계정 팀에 문의하십시오. 얼리 어답터 프로그램 중에는 추가 라이선스가 필요하지 않습니다.
 
-트래픽 필터 규칙은 프로덕션(샌드박스가 아닌) 프로그램의 모든 클라우드 환경 유형(RDE, dev, stage, prod)에 배포할 수 있습니다.
+트래픽 필터 규칙은 프로덕션(비샌드박스) 프로그램의 모든 클라우드 환경 유형(RDE, 개발, 스테이징, 프로덕션)에 배포할 수 있습니다.
 
 ## 설정 {#setup}
 
@@ -36,7 +36,7 @@ WAF(Web Application Firewall) 추가 기능에 라이선스를 부여하는 고�
            cdn.yaml
    ```
 
-1. `cdn.yaml` 는 메타데이터와 트래픽 필터 규칙 및 WAF 규칙 목록을 포함해야 합니다.
+1. `cdn.yaml` 메타데이터와 트래픽 필터 규칙 및 WAF 규칙 목록을 포함해야 합니다.
 
    ```
    kind: "CDN"
@@ -49,12 +49,12 @@ WAF(Web Application Firewall) 추가 기능에 라이선스를 부여하는 고�
          ...
    ```
 
-“kind” 매개변수는 “CDN”으로 설정되어야 하며 버전은 스키마 버전(현재 “1”)으로 설정되어야 합니다. 자세한 내용은 아래 예를 참조하십시오.
+“kind” 매개변수는 “CDN”으로 설정되어야 하며 버전은 스키마 버전(현재 “1”)으로 설정되어야 합니다. 아래 추가 예를 참조하십시오.
 
 
 <!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
 
-1. WAF 규칙을 구성하려면 새로운 프로그램 시나리오와 기존 프로그램 시나리오에서 아래에 설명된 대로 Cloud Manager에서 WAF를 활성화해야 합니다. WAF용으로 별도의 라이선스를 구매해야 합니다.
+1. WAF 규칙을 구성하려면 신규 및 기존 프로그램 시나리오 모두에 대해 아래에 설명된 대로 Cloud Manager에서 WAF를 활성화해야 합니다. WAF용으로 별도의 라이선스를 구매해야 합니다.
 
    1. 새 프로그램에서 WAF를 구성하려면 아래와 같이 **보안** 탭의 **WAF-DDOS 보호** 확인란을 선택합니다. 계속해서 [프로덕션 프로그램 추가](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)에 설명된 단계에 따라 프로그램을 만듭니다.
 
@@ -70,7 +70,7 @@ WAF(Web Application Firewall) 추가 기능에 라이선스를 부여하는 고�
    1. 파이프라인에 이름을 지정하고 배포 트리거를 선택한 다음 **계속**&#x200B;을 선택합니다.
    1. **소스 코드** 탭에서 **타겟팅 배포**&#x200B;를 선택한 다음 **구성**&#x200B;을 선택합니다.
 
-      ![타깃팅된 배포 선택](/help/security/assets/target-deployment.png)
+      ![타겟팅 배포 선택](/help/security/assets/target-deployment.png)
 
    1. 필요에 따라 저장소와 분기를 선택합니다. 선택한 환경에 대한 구성 파이프라인이 있는 경우, 이 선택이 비활성화됩니다.
 
@@ -78,19 +78,19 @@ WAF(Web Application Firewall) 추가 기능에 라이선스를 부여하는 고�
 
       >[!NOTE]
       >
-      > 이러한 파이프라인을 구성하거나 실행하려면 사용자가 배포 관리자로 로그인해야 합니다.
+      > 이러한 파이프라인을 구성하거나 실행하려면 사용자는 배포 관리자로 로그인해야 합니다.
       > 또한 환경당 하나의 구성 파이프라인만 구성하고 실행할 수 있습니다.
 
    1. **저장**&#x200B;을 선택합니다. 새 파이프라인이 파이프라인 카드에 표시되며, 준비가 되면 실행할 수 있습니다.
-   1. RDE의 경우 명령줄이 사용되지만 지금은 RDE가 지원되지 않습니다.
+   1. RDE의 경우 명령이 사용되지만 RDE는 현재 지원되지 않습니다.
 
 ## 트래픽 필터 규칙 구문 {#rules-syntax}
 
-다음을 구성할 수 있습니다. `traffic filter rules` IP, 사용자 에이전트, 요청 헤더, 호스트 이름, 지역 및 url과 같은 패턴을 일치시키십시오.
+IPS, 사용자 에이전트, 요청 헤더, 호스트 이름, 지역 및 URL과 같은 패턴을 일치하도록 `traffic filter rules`을 구성할 수 있습니다.
 
-WAF 오퍼링에 라이선스를 부여하는 고객은 라는 특별한 카테고리의 트래픽 필터 규칙을 구성할 수도 있습니다. `WAF traffic filter rules` 하나 이상의 WAF 플래그를 참조하는 (또는 WAF 규칙은 줄임). 이 플래그는 아래 섹션에 나열되어 있습니다.
+WAF 제품에 라이선스를 부여한 고객은 하나 이상의 WAF 플래그를 참조하고 아래의 자체 섹션에 나열되어 있는 `WAF traffic filter rules`(WAF 규칙)이라고 하는 트래픽 필터 규칙의 특수 범주를 구성할 수도 있습니다.
 
-다음은 WAF 규칙을 포함하는 트래픽 필터 규칙 세트의 예입니다.
+다음은 WAF 규칙도 포함하는 트래픽 필터 규칙 세트의 예입니다.
 
 ```
 kind: "CDN"
@@ -111,14 +111,14 @@ data:
           wafFlags: [ SQLI, XSS]
 ```
 
-cdn.yaml 파일의 트래픽 필터 규칙 형식은 아래에 설명되어 있습니다. 이후 섹션에서 몇 가지 예를 참조하십시오.
+cdn.yaml 파일의 트래픽 필터 규칙 형식은 아래에서 설명합니다. 이후 섹션에서 몇 가지 예를 참조하십시오.
 
 
 | **속성** | **대부분의 트래픽 필터 규칙** | **WAF 트래픽 필터 규칙** | **유형** | **기본 값** | **설명** |
 |---|---|---|---|---|---|
-| name | X | X | `string` | - | 규칙 이름(64자 길이, 영숫자 및 - 만 포함할 수 있음) |
+| 이름 | X | X | `string` | - | 규칙 이름(64자 길이, 영숫자 및 - 만 포함할 수 있음) |
 | when | X | X | `Condition` | - | 기본 구조는 다음과 같습니다.<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>getter, 조건자 및 여러 조건을 결합하는 방법을 설명하는 아래의 조건 구조 구문을 참조하십시오. |
-| action | X | X | `Action` | log | log, allow, block, log 또는 action object 기본값은 log입니다. |
+| action | X | X | `Action` | 로그 | log, allow, block, log 또는 action 오브젝트 기본값은 로그입니다. |
 | rateLimit | X |   | `RateLimit` | 정의되지 않음 | 속도 제한 구성입니다. 속도 제한은 정의되지 않은 경우 비활성화됩니다.<br><br>예제와 함께 rateLimit 구문을 설명하는 별도의 섹션이 아래에 추가로 있습니다. |
 
 ### 조건 구조 {#condition-structure}
@@ -172,23 +172,23 @@ cdn.yaml 파일의 트래픽 필터 규칙 형식은 아래에 설명되어 있�
 | **in** | `array[string]` | 제공된 목록에 getter 결과가 포함되어 있는 경우 true |
 | **notIn** | `array[string]` | 제공된 목록에 getter 결과가 포함되어 있지 않은 경우 true |
 
-### 작업 구조 {#action-structure}
+### 액션 구조 {#action-structure}
 
-다음에 의해 지정됨 `action` 작업 유형(허용, 블록, 로그)을 지정하고 다른 모든 옵션의 기본값을 가정하거나 을 통해 규칙 유형이 정의된 개체를 사용할 수 있는 필드입니다. `type` 해당 유형에 적용할 수 있는 기타 옵션과 함께 필수 필드입니다.
+액션 유형(allow, block, log)을 지정하고 다른 모든 옵션에 기본값을 가정하는 문자열이거나 `type` 필수 필드를 통해 해당 유형에 적용되는 다른 옵션과 함께 규칙 유형을 정의하는 오브젝트일 수 있는 `action` 필드로 지정합니다.
 
-**작업 유형**
+**액션 유형**
 
-작업은 다음 표의 유형에 따라 우선 순위가 매겨지며, 실행 순서를 반영하도록 순서가 지정됩니다.
+액션의 실행 순서를 반영하도록 정렬되어 있는 다음 표의 액션 유형에 따라 액션의 우선순위를 지정합니다.
 
 | **이름** | **허용된 속성** | **의미** |
 |---|---|---|
-| **허용** | `wafFlags` (옵션) | wafFlags가 없으면 추가 규칙 처리를 중지하고 응답을 제공합니다. wafFlags가 있으면 지정된 WAF 보호를 비활성화하고 추가 규칙 처리를 진행합니다. |
-| **차단** | `status, wafFlags` (선택 사항이며 함께 사용할 수 없음) | wafFlags가 없으면 다른 모든 속성을 무시하고 HTTP 오류를 반환합니다. 오류 코드는 상태 속성에 의해 정의되거나 기본값이 406으로 설정됩니다. wafFlags가 있으면 지정된 WAF 보호를 활성화하고 추가 규칙 처리를 진행합니다. |
-| **log** | `wafFlags` (옵션) | 규칙이 트리거되었다는 사실을 기록합니다. 그렇지 않으면 처리에 영향을 주지 않습니다. wafFlags는 영향을 주지 않습니다. |
+| **허용** | `wafFlags` (옵션) | wafFlags가 없으면 추가 규칙 처리를 중지하고 응답 제공을 진행합니다. wafFlags가 있으면 지정된 WAF 보호를 비활성화하고 추가 규칙 처리를 진행합니다. |
+| **블록** | `status, wafFlags` (옵션이면 상호 배타적) | wafFlags가 없으면 다른 모든 속성을 무시하는 HTTP 오류를 반환하고, 상태 속성으로 오류 코드를 정의하거나 406을 기본으로 표시합니다. wafFlags가 있으면 지정된 WAF 보호를 활성화하고 추가 규칙 처리를 진행합니다. |
+| **로그** | `wafFlags` (옵션) | 규칙이 트리거되었다는 사실을 로그 기록하지 않으면 처리에 영향을 주지 않습니다. wafFlags는 영향을 주지 않음 |
 
 ### WAF 플래그 목록 {#waf-flags-list}
 
-다음 `wafFlag` 속성은 다음을 포함할 수 있습니다.
+`wafFlag` 속성에는 다음이 포함될 수 있습니다.
 
 | **플래그 ID** | **플래그 이름** | **설명** |
 |---|---|---|
@@ -227,7 +227,7 @@ cdn.yaml 파일의 트래픽 필터 규칙 형식은 아래에 설명되어 있�
 
 * 규칙이 일치하여 차단되면 CDN은 `406` 반환 코드로 응답합니다.
 
-* 구성 파일에는 git 저장소에 액세스할 수 있는 모든 사람이 읽을 수 있으므로 비밀이 포함되어서는 안 됩니다.
+* git 저장소에 액세스할 수 있는 모든 사용자가 암호를 읽을 수 있으므로 구성 파일은 비밀을 포함해서는 안 됩니다.
 
 ## 규칙 예 {#examples}
 
@@ -362,13 +362,13 @@ data:
 | limit | 10에서 10000 사이의 정수 | required | 규칙이 트리거되는 초당 요청의 요청 속도입니다.. |
 | window | 정수 열거형: 1, 10 또는 60 | 10 | 요청 속도를 계산하는 샘플링 기간(초). |
 | penalty | 60에서 3600 사이의 정수 | 300(5분) | 일치하는 요청이 차단되는 기간(초 단위로 반올림). |
-| groupBy | 배열[게터] | 없음 | 속도 제한 카운터는 요청 속성 집합(예: clientIp)으로 집계됩니다. |
+| groupBy | 배열[getter] | 없음 | 처리율 제한 장치 카운터는 요청 속성 세트(예: clientIp)로 집계됩니다. |
 
 ### 예 {#ratelimiting-examples}
 
 **예 1**
 
-이 규칙은 지난 60초 동안 100req/sec를 초과하는 경우 5m 동안 클라이언트를 차단합니다.
+이 규칙은 지난 60초 동안 100req/sec를 초과하면 5분간 클라이언트를 차단합니다.
 
 ```
 kind: "CDN"
@@ -392,7 +392,7 @@ data:
 
 **예 2**
 
-지난 60초 동안 100req/sec를 초과하는 경우 경로/중요/리소스의 60초 차단 요청:
+지난 60초 동안 100req/sec를 초과하면 경로/중대/리소스에서 60초간 요청을 차단합니다.
 
 ```
 kind: "CDN"
@@ -413,7 +413,7 @@ data:
 
 AEM as a Cloud Service에서 제공하는 CDN 로그 액세스는 캐시 적중률 최적화, CDN 및 WAF 규칙 구성을 포함한 사용 사례에 유용합니다. CDN 로그는 Cloud Manager에서 작성자 또는 게시 서비스를 선택할 때 **로그 다운로드** 대화 상자에 나타납니다.
 
-&quot;rules&quot; 속성은 일치하는 트래픽 필터 규칙을 설명하며, 다음 패턴을 포함합니다.
+“규칙” 속성은 일치되는 트래픽 필터 규칙에 대해 설명하고 패턴은 다음과 같습니다.
 
 ```
 "rules": "match=<matching-customer-named-rules-that-are-matched>,waf=<matching-WAF-rules>,action=<action_type>"
@@ -425,16 +425,16 @@ AEM as a Cloud Service에서 제공하는 CDN 로그 액세스는 캐시 적중�
 "rules": "match=Block-Traffic-under-private-folder,Enable-SQL-injection-everywhere,waf="SQLI,SANS",action=block"
 ```
 
-규칙은 다음과 같은 방식으로 동작합니다.
+규칙은 다음의 방식으로 진행됩니다.
 
-* 일치하는 규칙의 고객이 선언한 규칙 이름이 matches 속성에 나열됩니다.
-* 작업 속성은 규칙이 차단, 허용 또는 로깅의 영향을 미쳤는지 여부를 설명합니다.
-* waf에 라이센스가 부여되고 활성화되어 있으면 waf 속성은 구성에 waf 규칙이 나열되었는지 여부에 관계없이 감지된 모든 waf 규칙(예: SQLI, 고객이 선언한 이름과 독립적임)을 나열합니다.
-* 고객이 선언한 규칙이 일치하지 않고 waf 규칙이 일치하지 않으면 rules 속성 속성이 비어 있습니다.
+* 고객이 선언한 일치하는 모든 규칙의 이름이 일치하는 속성에 나열됩니다.
+* 액션 속성은 규칙이 차단, 허용 또는 로깅에 영향을 주었는지 여부를 자세히 표시합니다.
+* WAF에 라이선스가 부여되고 WAF가 활성화되면 waf 속성은 구성에서의 waf 규칙 나열 여부에 관계없이 감지된 모든 waf 규칙(예: SQLI, 이는 고객이 선언한 이름과 독립적이어야 함)을 나열합니다.
+* 일치하는 고객이 선언한 규칙과 WAF 규칙이 없는 경우 규칙 속성이 비어 있습니다.
 
-일반적으로 일치하는 규칙은 CDN 히트인지, 전달인지 또는 누락인지에 관계없이 CDN에 대한 모든 요청에 대한 로그 항목에 나타납니다. 단, WAF 규칙은 CDN 적중이 아니라 CDN 실패 또는 통과로 간주되는 CDN 요청에 대해서만 로그 항목에 나타납니다.
+일반적으로 일치하는 규칙은 CDN 적중, 통과 또는 실패 여부에 관계없이 CDN에 대한 모든 요청의 로그 항목에 나타납니다. 단, WAF 규칙은 CDN 적중이 아니라 CDN 실패 또는 통과로 간주되는 CDN 요청에 대해서만 로그 항목에 나타납니다.
 
-아래 예는 샘플 cdn.yaml 및 두 개의 CDN 로그 항목을 보여 줍니다.
+아래 예에서는 샘플 cdn.yaml과 로그 항목 두 개를 보여 줍니다.
 
 
 ```
@@ -515,4 +515,4 @@ data:
 | *상태* | HTTP 상태 코드입니다(정수 값). |
 | *res_age* | 모든 노드에서 응답이 캐시되는 데 소요되는 시간(초)입니다. |
 | *pop* | CDN 캐시 서버의 데이터센터입니다. |
-| *rules* | 일치하는 규칙의 이름입니다.<br><br>또한 일치에 따라 차단되었는지 여부도 나타냅니다. <br><br>예: “`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`”<br><br>일치하는 규칙이 없으면 비어 있습니다. |
+| *rules* | 일치하는 모든 규칙의 이름입니다.<br><br>또한 일치에 따라 차단되었는지 여부도 나타냅니다. <br><br>예: “`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`”<br><br>일치하는 규칙이 없으면 비어 있습니다. |
