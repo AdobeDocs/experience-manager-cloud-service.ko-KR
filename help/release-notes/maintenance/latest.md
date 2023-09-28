@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: b147c80581bcb554ae0b4ac971c5f98e7160d1df
+source-git-commit: c62ae58240298604e6cd7737678603eb734434b3
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 9%
@@ -94,15 +94,9 @@ ht-degree: 9%
 * FORMS-10248: 핵심 구성 요소를 기반으로 하는 적응형 Forms에서 데이터 값 유형이 부울일 때 라디오 버튼 또는 확인란의 값을 설정하면 예상대로 작동하지 않습니다.
 * FORMS-8114: NVDA 화면 판독기에서 날짜 선택기 및 패턴을 올바르게 읽지 못했습니다. 특히 NVDA 화면 판독기를 사용할 때는 패턴이 없는 날짜 선택기를 올바르게 읽습니다. 그러나 날짜 선택기에 패턴을 적용하면 패턴이 올바르게 해석되지 않고 표로 읽힙니다.
 
-
-
-
-
-
-
 ### 알려진 문제 {#known-issues-13665}
 
-없음
+없음.
 
 ### 임베드된 기술 {#embedded-tech-13665}
 
