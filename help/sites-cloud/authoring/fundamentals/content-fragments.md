@@ -3,7 +3,7 @@ title: 콘텐츠 조각
 description: Adobe Experience Manager as a Cloud Service 콘텐츠 조각을 사용하면 페이지 독립적 콘텐츠를 디자인, 작성, 조정 및 사용할 수 있습니다.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 source-git-commit: 18d63a9ed1fd52ebcd696a4ec5f635350cacb1c0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1286'
 ht-degree: 100%
 
