@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 39284210e6639c4ed2a80cf86dbf0ea32d889986
+source-git-commit: ed67bb95a82f083ed3b6eea4fe5f5d150359c539
 workflow-type: tm+mt
-source-wordcount: '1421'
+source-wordcount: '1419'
 ht-degree: 83%
 
 ---
@@ -50,7 +50,7 @@ Edge Delivery는 고객의 상호 작용 시점에서 측정 가능한 비즈니
 
 **폴더에 메타데이터 양식 할당**
 
-이제 Assets Essentials 배포 내의 특정 폴더에 메타데이터 양식을 할당할 수 있습니다. 하위 폴더의 에셋을 포함하여 폴더의 모든 에셋은 할당된 메타데이터 양식에 정의된 속성을 표시합니다.
+이제 메타데이터 양식을 배포 내의 특정 폴더에 할당할 수 있습니다. 하위 폴더의 에셋을 포함하여 폴더의 모든 에셋은 할당된 메타데이터 양식에 정의된 속성을 표시합니다.
 
 ![폴더에 메타데이터 양식 할당](/help/release-notes/assets/assign-to-folder.png)
 
