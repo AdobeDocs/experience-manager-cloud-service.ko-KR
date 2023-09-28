@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
 source-git-commit: afb20efe8ed078a508f828c5df4e079f99dfab21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '989'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->사전 알림에 그룹을 할당할 수 없습니다. 대신 사용자를 제품 프로필에 직접 할당해야 합니다.
+>사전 알림에 그룹 할당은 지원되지 않습니다. 대신 사용자를 제품 프로필에 직접 할당해야 합니다.
 
 올바른 사용자가 이러한 알림을 수신하도록 하려면 이 문서에 설명된 대로 사용자 프로필을 구성하고 할당해야 합니다.
 
@@ -38,7 +38,7 @@ ht-degree: 98%
 
 ## 새 Cloud Manager 제품 프로필 만들기 {#create-profiles}
 
-알림 수신을 올바르게 설정하려면 두 개의 사용자 프로필을 만들어야 합니다. 이러한 단계는 한 번만 수행해야 합니다.
+알림 수신을 올바르게 설정하려면 두 개의 사용자 프로필을 만들어야 합니다. 이들 단계는 한 번만 수행해야 합니다.
 
 1. Admin Console([`https://adminconsole.adobe.com`)에 로그인합니다.](https://adminconsole.adobe.com)
 
