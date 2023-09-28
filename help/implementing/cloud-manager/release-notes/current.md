@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: a5e8c11340ab5eacdefb22da302f9e35d9429bc7
 workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 75%
+ht-degree: 92%
 
 ---
 
@@ -25,8 +25,8 @@ AEM as a Cloud Service의 Cloud Manager 2023.9.0 릴리스 일자는 2023년 9�
 
 ## 새로운 기능 {#what-is-new}
 
-* CDN 로그는 사용 가능한 경우 Cloud Manager UI를 통해 다운로드할 수 있습니다.
-* 이제 사용자는 Google LightHouse에서 제공하는 경험 감사 테스트를 비프로덕션 전체 스택 파이프라인에 포함하도록 선택할 수 있습니다.
+* 가능한 경우 CDN 로그는 Cloud Manager UI를 통해 다운로드할 수 있습니다.
+* 이제 사용자는 비프로덕션, 전체 스택 파이프라인에 Google LightHouse에서 제공하는 Experience Audit 테스트를 포함하도록 옵트인할 수 있습니다.
 
 ## 조기 채택 프로그램 {#early-adoption}
 
@@ -55,6 +55,6 @@ AEM as a Cloud Service의 Cloud Manager 2023.9.0 릴리스 일자는 2023년 9�
 
 ## 버그 수정 {#bug-fixes}
 
-* 이제 프로그램이 삭제되면 연결된 실행 중인 파이프라인도 삭제됩니다.
+* 프로그램이 삭제되면 실행 중인 관련 파이프라인도 모두 삭제됩니다.
 * 파이프라인이 진행 중인 경우 **보내기** 의 단추 **라이브 완료** 이제 대화 상자가 비활성화되고 실행 중인 파이프라인으로 인해 go-live 날짜를 설정할 수 없다고 사용자에게 알립니다.
-* 파이프라인 실행의 모든 단계가 완료된 것으로 표시되었지만 파이프라인의 상태가 여전히 실행 중이어서 정지 상태인 것처럼 표시되는 가끔 오류가 수정되었습니다.
+* 가끔씩 파이프라인 실행의 모든 &#x200B;&#x200B;단계가 완료된 것으로 표시되었지만 파이프라인 상태가 여전히 실행 중이어서 멈춘 상태처럼 표시되는 오류가 수정되었습니다.
