@@ -3,7 +3,7 @@ title: 페이지 콘텐츠 편집
 description: 페이지를 생성하면 콘텐츠를 편집하여 필요한 업데이트를 수행할 수 있습니다.
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
 source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2983'
 ht-degree: 100%
 
