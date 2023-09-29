@@ -4,15 +4,15 @@ description: 적응형 Forms은 적응형 양식에서 사용할 패널 또는 �
 topic-tags: author
 keywords: 적응형 양식 단편 추가, 적응형 양식 단편, 양식 단편 만들기, 적응형 양식에 단편 추가, 단편 관리
 feature: Adaptive Forms
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+source-git-commit: 290cdecdb355b5c9a872d0f12ac701d271a258d4
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1745'
 ht-degree: 4%
 
 ---
 
 
-# 적응형 양식 단편 {#adaptive-form-fragments}
+# 핵심 구성 요소를 기반으로 하는 적응형 양식에서 적응형 Forms 조각 생성 및 사용 {#adaptive-form-fragments}
 
 
 | 버전 | 문서 링크 |
