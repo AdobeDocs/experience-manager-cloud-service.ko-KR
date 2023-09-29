@@ -8,10 +8,10 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: abd0632a6874e4917a9ca7fc4fd11696f4c55caa
+source-git-commit: 904b35d31dc317703ad1aec09cefee3c111abcb0
 workflow-type: tm+mt
-source-wordcount: '4271'
-ht-degree: 99%
+source-wordcount: '4286'
+ht-degree: 98%
 
 ---
 
@@ -462,6 +462,7 @@ ht-degree: 99%
       + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
       + [구조 트리](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [미리보기 - JSON 표현식](/help/assets/content-fragments/content-fragments-json-preview.md)
+      + [에셋용 MSM을 사용하여 콘텐츠 조각 재사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html)
    + Dynamic Media {#dynamicmedia}
       + Dynamic Media 여정: 기본 사항 {#dm-journey}
          + [1부: Dynamic Media 소개 - 사용 사례 - 자산이 시스템을 통해 이동하는 방법](/help/assets/dynamic-media/dm-journey-part1.md)
