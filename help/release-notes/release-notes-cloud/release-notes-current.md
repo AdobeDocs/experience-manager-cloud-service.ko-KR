@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ed67bb95a82f083ed3b6eea4fe5f5d150359c539
+source-git-commit: 8c878833118b2d8dc51e8cfa2c15ce70efbd3deb
 workflow-type: tm+mt
 source-wordcount: '1419'
 ht-degree: 83%
@@ -27,6 +27,10 @@ ht-degree: 83%
 ## 릴리스 일자 {#release-date}
 
 의 릴리스 날짜 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 기능 릴리스(2023.9.0)는 2023년 9월 28일입니다. 다음 기능 릴리스(2023.10.0)는 2023년 10월 26일에 예정되어 있습니다.
+
+## 유지 관리 릴리스 정보 {#maintenance}
+
+[ 여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
 
 <!-- 
 
@@ -127,10 +131,6 @@ Edge Delivery는 고객의 상호 작용 시점에서 측정 가능한 비즈니
 기능을 사용해 보고 피드백을 공유하고 싶으십니까? 공식 이메일 ID로 **aemcs-waf-adopter@adobe.com**&#x200B;에 이메일을 보내 얼리 어답터 프로그램에 대해 자세히 알아보십시오. 인원이 한정되어 있습니다.
 
 [여기](/help/security/cdn-and-waf-rules.md)에 있는 문서에서 기능에 대해 자세히 알아보십시오.
-
-## 유지 관리 릴리스 정보 {#maintenance}
-
-[ 여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
 
 ## Cloud Manager {#cloud-manager}
 
