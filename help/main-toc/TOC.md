@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 904b35d31dc317703ad1aec09cefee3c111abcb0
+source-git-commit: a741105afdb2fb4dc3bfb70dc6dcb1bf317a3aea
 workflow-type: tm+mt
-source-wordcount: '4286'
+source-wordcount: '4296'
 ht-degree: 98%
 
 ---
@@ -541,6 +541,9 @@ ht-degree: 98%
       + [기존 설치에 대해 외부 종속성 제거](/help/assets/remove-external-dependencies.md)
       + [ [!DNL Workfront]용 [!DNL enhanced connector] 구성](/help/assets/workfront-connector-configure.md)
       + [업데이트 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
+
++ Adobe Express과 통합 {#integration-adobe-express}
+   + [Adobe Express을 위한 AEM Assets 추가 기능](/help/assets/addon-adobe-express.md)
 + Forms {#forms}
    + 개요 {#forms-overview}
       + [소개](/help/forms/home.md)
