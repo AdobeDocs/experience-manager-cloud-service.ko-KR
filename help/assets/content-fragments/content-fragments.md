@@ -2,10 +2,10 @@
 title: 콘텐츠 조각을 사용하여 작업 (에셋 - 콘텐츠 조각)
 description: Adobe Experience Manager(AEM as a Cloud Service)의 컨텐츠 조각을 사용하여 페이지 작성 및 Headless 게재에 이상적인 페이지 독립적인 컨텐츠를 디자인하고, 작성하고, 선별하고, 사용하는 방법에 대해 알아봅니다. 또한 MSM과 함께 사용할 수 있는 방법입니다.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
 workflow-type: tm+mt
-source-wordcount: '2211'
-ht-degree: 63%
+source-wordcount: '2229'
+ht-degree: 62%
 
 ---
 
@@ -38,7 +38,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 >
 >이제는 주로 **[콘텐츠 조각](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** 콘솔과 함께 관리되지만 **자산** 콘솔에서도 계속 관리될 수 있습니다. 이 섹션에서는 다음의 관리에 대해 설명합니다. **에셋** 콘솔.
 >
->콘텐츠 조각을 작성하는 두 가지 편집기가 있습니다. 이 단원에서는 주로 **에셋** 콘솔. 사이트 설명서 를 참조하십시오. [컨텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md), 새 편집기에 대한 세부 정보(주로 **컨텐츠 조각** console).
+>콘텐츠 조각을 작성하는 두 가지 편집기가 있습니다. 이 단원에서는 주로 **에셋** 콘솔. 사이트 설명서 를 참조하십시오. [컨텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md), 새 편집기에 대한 세부 정보(주로 **컨텐츠 조각** console). 두 편집기 모두 상단 도구 모음에 토글 스위치가 있어 다른 편집기에 빠르게 액세스할 수 있습니다.
 
 이 페이지 및 다음 페이지에서는 콘텐츠 조각 생성, 구성, 유지 관리 및 사용을 위한 작업을 다룹니다.
 
