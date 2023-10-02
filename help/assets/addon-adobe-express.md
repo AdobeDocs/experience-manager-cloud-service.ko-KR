@@ -1,9 +1,7 @@
 ---
 title: Adobe Express을 위한 AEM Assets 추가 기능
 description: Adobe Express용 AEM Assets 추가 기능을 사용하면 Adobe Express 사용자 인터페이스 내에서 AEM Assets에 저장된 자산에 직접 액세스할 수 있습니다.
-hide: true
-hidefromtoc: true
-source-git-commit: 5fe4204bcfdd42edad53ca80b693800aef0a5dc5
+source-git-commit: e9ff2f2b15642288e82ac6f900dc567231bf85c7
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%
