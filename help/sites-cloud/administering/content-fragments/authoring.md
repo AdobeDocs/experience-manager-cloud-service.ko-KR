@@ -3,10 +3,10 @@ title: 콘텐츠 조각 작성
 description: 콘텐츠 조각에 대한 콘텐츠를 작성한 다음 목적에 따라 해당 콘텐츠의 변형을 만드는 방법을 이해합니다. 이렇게 하면 Headless 게재 및 페이지 작성을 위한 유연성을 높일 수 있습니다.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 2fa22bf2feb6b8697877b345bc29821e30b1c6a1
+source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
 workflow-type: tm+mt
-source-wordcount: '2227'
-ht-degree: 98%
+source-wordcount: '2249'
+ht-degree: 97%
 
 ---
 
@@ -62,6 +62,11 @@ ht-degree: 98%
    * **상위 참조**&#x200B;를 모두 표시하는 옵션(링크 아이콘)
    * 조각 **[상태](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)** 및 마지막으로 저장한 정보
    * 원본(자산 기반) 편집기로 전환할 수 있는 기능
+
+     >[!WARNING]
+     >
+     >원본 편집기가 동일한 탭에서 열립니다. 두 편집기를 동시에 열지 않는 것이 좋습니다.
+
 * 왼쪽 패널: 콘텐츠 조각 및 해당 **필드**&#x200B;의 **[변형](#variations)** 표시:
    * 이 링크를 사용하여 [콘텐츠 조각 구조 탐색](#navigate-structure)
 * 오른쪽 패널: [속성(메타데이터) 및 태그](#view-properties-tags), [버전 내력](#view-version-history)에 대한 정보와 모든 [언어 사본](#view-language-copies)과 관련된 정보를 표시하는 탭 제공

@@ -2,10 +2,10 @@
 title: 컨텐츠 조각 관리 (에셋 - 콘텐츠 조각)
 description: Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
+source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 80%
+source-wordcount: '1877'
+ht-degree: 79%
 
 ---
 
@@ -196,6 +196,10 @@ Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐�
    * **비활성화됨**: 빨간색
 
 * 버튼을 사용하면 다음 작업을 수행할 수 있습니다. **새 편집기 사용해 보기**, 를 직접 열어 *신규* [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md) 를 통해 액세스할 수 있습니다. [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+
+  >[!WARNING]
+  >
+  >새 편집기가 동일한 탭에서 열립니다. 두 편집기를 동시에 열지 않는 것이 좋습니다.
 
 * **저장**&#x200B;은 **저장 및 닫기** 옵션에 대한 액세스를 제공합니다.
 
