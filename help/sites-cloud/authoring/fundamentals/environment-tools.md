@@ -2,10 +2,10 @@
 title: 작성 환경 및 도구
 description: AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
-workflow-type: ht
-source-wordcount: '2150'
-ht-degree: 100%
+source-git-commit: ccd4206f029ac77b90f731891ac300c5d3849ef8
+workflow-type: tm+mt
+source-wordcount: '2166'
+ht-degree: 99%
 
 ---
 
@@ -224,7 +224,10 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 자세한 내용을 보려면 적절한 참조 유형을 선택합니다. 특정 상황에서 다음을 비롯한 특정 참조를 선택하면 추가 작업을 사용할 수 있습니다.
 
-* **수신 링크**: 페이지를 참조하는 페이지 목록과 함께, 특정 링크를 선택할 때 그러한 페이지 중 하나를 **편집**&#x200B;하기 위해 직접 액세스할 수 있는 권한 제공
+* **수신 링크**: 페이지를 참조하는 페이지 목록과 함께, 특정 링크를 선택할 때 그러한 페이지 중 하나를 **편집**&#x200B;하기 위해 직접 액세스할 수 있는 권한 제공.
+
+   * 동적으로 생성된 링크가 아닌 정적 링크만 표시할 수 있습니다(예: 목록 구성 요소에서).
+
 * **참조** 구성 요소를 사용하여 빌린 콘텐츠와 빌려준 콘텐츠의 인스턴스: 여기서 참조하는/참조한 페이지로 이동할 수 있음
 * [론치](/help/sites-cloud/authoring/launches/overview.md): 관련 론치에 대한 액세스 권한 제공
 * [Live Copy](/help/sites-cloud/administering/msm/overview.md): 선택한 리소스를 기반으로 하는 모든 Live Copy의 경로 표시
