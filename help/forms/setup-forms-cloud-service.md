@@ -1,9 +1,10 @@
 ---
-title: AEM Forms as a Cloud Service으로 온보드
-description: 설정 및 구성 방법 알아보기 [!DNL Adobe Experience Manager (AEM) Forms] as a Cloud Service 환경
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+title: 설정 방법 [!DNL AEM Forms] as a Cloud Service 환경?
+description: 설정 및 구성 방법 알아보기 [!DNL AEM Forms] as a Cloud Service 환경.
+exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '649'
 ht-degree: 17%
 
 ---

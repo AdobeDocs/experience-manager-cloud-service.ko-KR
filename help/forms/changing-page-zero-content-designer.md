@@ -1,16 +1,14 @@
 ---
-title: Designer에서 Page Zero 콘텐츠 변경
-seo-title: Changing Page Zero content in Designer
-description: 비 Adobe PDF 뷰어에서 볼 때 XFA PDF의 Page Zero에 표시된 메시지를 변경하는 방법을 알고 있습니까?
-seo-description: Do you know how you can change the message displayed on Page Zero of an XFA PDF when viewing it in a non-Adobe PDF viewer?
+title: Designer에서 Page Zero 콘텐츠를 변경하는 방법
+description: Adobe PDF 뷰어가 아닌 뷰어에 대해 XFA PDF의 페이지 0에 표시되는 메시지를 변경합니다.
 uuid: ac23fb21-3f15-48ea-aeeb-4ecc12b771ac
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '224'
 ht-degree: 1%
 
 ---
@@ -33,7 +31,7 @@ ht-degree: 1%
 1. 다음에서 [!UICONTROL 양식 속성] 대화 상자, 클릭 ![플러스](assets/plus.png) (더하기 아이콘) 을 클릭하여 사용자 지정 속성을 추가합니다.
 
 1. 지정 **_pagezerocontent** 속성 이름으로 사용됩니다.
-1. 새 Page Zero 메시지를 서식 있는 텍스트 형식으로 값으로 추가합니다. 예를 들면 다음과 같습니다.
+1. 새 Page Zero 메시지를 서식 있는 텍스트 형식으로 값으로 추가합니다. 예:
 
 
    `<body xmlns="https://www.w3.org/1999/xhtml" xmlns:xfa="https://www.xfa.org/schema/xfa-data/1.0/"><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </code></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">You are seeing this message maybe because you are using a non Adobe PDF Viewer or an Old version of Adobe Reader. You can upgrade to the latest version of Adobe Reader for Windows, Mac, or Linux by visiting <span style="xfa-spacerun:yes"> </code>https://www.adobe.com/go/reader_download.</p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </code></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">For more assistance with Adobe Reader visit <span style="xfa-spacerun:yes"> </code>https://www.adobe.com/go/acrreader.</p></body>`

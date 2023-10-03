@@ -1,16 +1,14 @@
 ---
-title: 적응형 Forms에서 SOM 표현식 사용
-seo-title: Using SOM expressions in Adaptive Forms
-description: 적응형 양식 패널의 SOM 표현식을 추출하는 방법을 알아봅니다.
-seo-description: Learn how to extract SOM expressions of a panel of an Adaptive Form.
+title: 적응형 Forms에서 SOM 표현식을 사용하는 방법
+description: 적응형 Forms에서 패널의 SOM 표현식을 추출하는 방법을 알아봅니다.
 uuid: c5d55aff-fb69-4a1c-96ea-fb3f9322cbb0
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 13f00bb2-561f-4d64-8829-292c663abeab
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---

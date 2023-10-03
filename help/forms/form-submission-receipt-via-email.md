@@ -1,13 +1,14 @@
 ---
-title: 이메일을 통해 양식 제출 승인 보내기
+title: AEM Forms에서 이메일을 통해 양식 제출 승인을 전송하는 방법
 description: AEM Forms을 사용하면 양식 제출 시 사용자에게 승인을 보내는 이메일 제출 액션을 구성할 수 있습니다.
+uuid: c80b1ef4-8fe3-48e0-8fc6-3032dc022a38
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
@@ -79,7 +80,7 @@ ht-degree: 0%
 
 변수 자리 표시자도 **[!UICONTROL 제목]** 및 **[!UICONTROL 이메일 템플릿]** 필드.
 
-예를 들면 다음과 같습니다.
+예:
 
 `Hi ${first_name} ${last_name},`
 

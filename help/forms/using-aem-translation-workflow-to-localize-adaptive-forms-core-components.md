@@ -1,10 +1,11 @@
 ---
-title: 적응형 양식 기반의 핵심 구성 요소 번역
-description: 기계 번역 또는 사람 번역을 사용하여 적응형 양식 기반의 핵심 구성 요소 번역
+title: 적응형 양식 기반의 핵심 구성 요소 번역 방법
+description: AEM Forms에서 양식 데이터 모델을 만들고, 샘플 데이터 및 서비스로 모델을 테스트하고, 모델에 대한 다양한 옵션을 구성하는 방법에 대해 알아봅니다.
 feature: Adaptive Forms
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '893'
 ht-degree: 4%
 
 ---

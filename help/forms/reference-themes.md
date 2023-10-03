@@ -1,14 +1,12 @@
 ---
-title: 참조 테마
-seo-title: Reference Themes
-description: AEM Forms에서는 소프트웨어 배포에서 가져온 적응형 양식 테마를 제공하고 을 사용하여 양식의 스타일을 지정할 수 있습니다.
-seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
+title: AEM Forms 참조 자산
+description: 제공된 참조 적응형 양식 테마, 템플릿 및 양식 데이터 모델을 사용하여 신속하게 시작하십시오.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 03305b4a-d82d-4b8d-8804-249b10bdd358
-source-git-commit: 50d4be07b9563fb5047e9b313ae604cd7633a0e2
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 3%
+source-wordcount: '513'
+ht-degree: 7%
 
 ---
 

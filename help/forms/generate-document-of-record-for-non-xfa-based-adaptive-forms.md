@@ -1,8 +1,8 @@
 ---
-title: 적응형 Forms에 대한 기록 문서 생성
-description: 적응형 Forms에 대한 기록 문서(DoR)에 대한 템플릿을 생성하는 방법을 설명합니다.
+title: 적응형 Forms에 대한 기록 문서 생성 방법
+description: 적응형 Forms용 기록 문서(DoR)에 대한 템플릿을 생성하는 방법에 대해 알아봅니다.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
 source-wordcount: '4139'
 ht-degree: 4%
@@ -487,7 +487,7 @@ XCI 파일은 문서의 다양한 속성을 설정하는 데 도움이 됩니다
     }
    ```
 
-   예를 들어
+   예:
 
    ```JSON
     {

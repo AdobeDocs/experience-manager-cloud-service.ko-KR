@@ -1,13 +1,13 @@
 ---
 title: 양식 데이터 모델을 사용하여 작업하는 방법
-description: 데이터 모델 개체 및 서비스를 추가하고, 데이터 모델 개체 및 하위 속성을 만들고, 서비스를 구성하고, 연결을 추가하고, OData 서비스의 탐색 속성을 사용하여 작업하는 방법에 대해 알아봅니다. 샘플 데이터를 생성 및 편집하고, 데이터 모델 개체 및 서비스를 테스트하고, 입력 데이터의 유효성 검사를 자동화하는 방법에 대해 자세히 알아보십시오.
+description: 데이터 모델 개체, 서비스를 추가하고, 데이터 모델 개체 및 하위 속성을 만들고, 서비스를 구성하고, OData 서비스의 탐색 속성을 사용하여 작업합니다.
 feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '4137'
+source-wordcount: '4108'
 ht-degree: 0%
 
 ---
@@ -541,7 +541,7 @@ operationOptions.setValidationOptions(ValidationOptions.FULL);
    ]
 ```
 
-입력 데이터가 검증 기준을 충족하지 않는 경우 예외가 표시됩니다. 로그 수준이 로 설정된 경우 **디버그**&#x200B;에 오류가 기록됩니다. **error.log** 파일. 예를 들어
+입력 데이터가 검증 기준을 충족하지 않는 경우 예외가 표시됩니다. 로그 수준이 로 설정된 경우 **디버그**&#x200B;에 오류가 기록됩니다. **error.log** 파일. 예:
 
 ```verilog
 21.01.2019 17:26:37.411 *ERROR* com.adobe.aem.dermis.core.validation.JsonSchemaValidator {"errorCode":"AEM-FDM-001-044","errorMessage":"Input validations failed during operation execution.","violations":{"/orderId":["numeric instance is greater than the required maximum (maximum: 10, found: 16)"]}}

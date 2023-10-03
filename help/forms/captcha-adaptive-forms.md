@@ -1,13 +1,18 @@
 ---
-title: 적응형 Forms에서 reCAPTCHA 사용
-description: 적응형 Forms에서 Google reCAPTCHA 서비스를 구성하는 방법에 대해 알아봅니다.
+title: 적응형 Forms에서 CAPTCHA를 사용하는 방법
+description: 적응형 양식에 대한 AEM CAPTCHA 또는 Google reCAPTCHA 서비스를 구성하는 방법에 대해 알아봅니다.
+uuid: 0e11e98a-12ac-484c-b77f-88ebdf0f40e5
+contentOwner: vishgupt
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
-source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
+exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '1930'
-ht-degree: 10%
+source-wordcount: '1935'
+ht-degree: 11%
 
 ---
+
 
 # 적응형 Forms에서 reCAPTCHA 사용 {#using-reCAPTCHA-in-adaptive-forms}
 
@@ -47,11 +52,11 @@ CAPTCHA(컴퓨터와 인간을 구분하기 위해 완전히 자동화된 공공
 1. 다음을 획득 [프로젝트 ID](https://support.google.com/googleapi/answer/7014113?hl=en#:~:text=To%20locate%20your%20project%20ID,a%20member%20of%20are%20displayed) 및 만들기 [API 키](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key) 및 a [웹 사이트에 대한 사이트 키](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key).
 1. 클라우드 서비스에 대한 구성 컨테이너를 만듭니다.
 
-   1. 다음으로 이동 **[!UICONTROL 도구 > 일반 > 구성 브라우저]**.
+   1. **[!UICONTROL 도구 > 일반 > 구성 브라우저]**&#x200B;로 이동합니다.
    1. 폴더를 선택하거나 폴더를 만들고 다음 단계를 사용하여 클라우드 구성에 대해 폴더를 활성화하십시오.
       1. 구성 브라우저에서 폴더를 선택하고 을 누릅니다 **[!UICONTROL 속성]**.
       1. 구성 속성 대화 상자에서 다음을 활성화합니다 **[!UICONTROL 클라우드 구성]**.
-      1. 누르기 **[!UICONTROL 저장 및 닫기]** 구성을 저장하고 대화 상자를 종료합니다.
+      1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 탭하여 구성을 저장하고 대화 상자를 종료합니다.
 
 1. 클라우드 서비스 구성 [!DNL reCAPTCHA Enterprise].
 
@@ -76,11 +81,11 @@ reCAPTCHA Enterprise 서비스가 활성화되면 적응형 양식에서 사용�
 
 1. 획득 [reCAPTCHA API 키 쌍](https://www.google.com/recaptcha/admin) Google에서. 여기에는 다음이 포함됩니다 **사이트 키** 및 a **비밀 키**.
 1. 클라우드 서비스에 대한 구성 컨테이너를 만듭니다.
-   1. 다음으로 이동 **[!UICONTROL 도구 > 일반 > 구성 브라우저]**.
+   1. **[!UICONTROL 도구 > 일반 > 구성 브라우저]**&#x200B;로 이동합니다.
    1. 폴더를 선택하거나 폴더를 만들고 다음 단계를 사용하여 클라우드 구성에 대해 폴더를 활성화하십시오.
       1. 구성 브라우저에서 폴더를 선택하고 을 누릅니다 **[!UICONTROL 속성]**.
       1. 구성 속성 대화 상자에서 다음을 활성화합니다 **[!UICONTROL 클라우드 구성]**.
-      1. 누르기 **[!UICONTROL 저장 및 닫기]** 구성을 저장하고 대화 상자를 종료합니다.
+      1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 탭하여 구성을 저장하고 대화 상자를 종료합니다.
 
 1. reCAPTCHA v2에 대한 클라우드 서비스를 구성합니다.
 

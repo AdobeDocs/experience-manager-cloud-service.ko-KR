@@ -1,11 +1,9 @@
 ---
-title: 에셋 가져오기 및 내보내기
-seo-title: Import and export assets to [!DNL AEM Forms]
-description: 적응형 Forms 및 관련 에셋을 AEM 인스턴스로 가져오고 내보낼 수 있습니다. 이는 양식을 마이그레이션하거나 시스템 간에 이동하는 데 도움이 됩니다.
-seo-description: You can import and export Adaptive Forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+title: 에셋을 가져오고 내보내는 방법 [!DNL AEM Forms]?
+description: 적응형 양식과 함께 DocuSign을 사용하여 전자 서명을 수집하는 방법에 대해 알아봅니다.
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1314'
 ht-degree: 1%
 
 ---

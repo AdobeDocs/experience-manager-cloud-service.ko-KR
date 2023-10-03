@@ -1,16 +1,15 @@
 ---
 title: 제출 서류 검토자를 양식과 연결
 seo-title: Associating submission reviewers with a form
-description: 의 제출 서류 검토자를 양식과 연결하는 방법에 대해 알아봅니다. [!DNL AEM Forms]. 관련 검토자는 Forms 포털을 통해 제출된 양식을 검토합니다.
-seo-description: Learn how to associate submission reviewers with a form in [!DNL AEM Forms]. Associated reviewers review a form submitted via forms portal.
+description: 하나 이상의 검토자와 검토용 적응형 양식을 공유합니다.
 uuid: 58c8c8fb-9262-4c37-b9b2-e46fe21b77d9
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
 docset: aem65
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '483'
 ht-degree: 1%
 
 ---

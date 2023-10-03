@@ -1,10 +1,10 @@
 ---
-title: 적응형 Forms에 대한 기록 문서 생성
-description: 적응형 Forms에 대한 기록 문서(DoR)에 대한 템플릿을 생성하는 방법을 설명합니다.
+title: 적응형 Forms에 대한 기록 문서를 생성하는 방법
+description: 적응형 Forms 핵심 구성 요소용 기록 문서(DoR)에 대한 템플릿을 생성하는 방법에 대해 알아봅니다.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '3105'
+source-wordcount: '3107'
 ht-degree: 2%
 
 ---

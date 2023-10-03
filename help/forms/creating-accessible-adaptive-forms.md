@@ -1,17 +1,15 @@
 ---
-title: 액세스 가능한 적응형 Forms 만들기
-seo-title: Creating accessible Adaptive Forms
-description: AEM Forms은 액세스 가능한 적응형 Forms을 제작할 수 있는 도구 및 기능을 제공하며 접근성 표준을 준수하도록 도와줍니다.
-seo-description: AEM Forms provides you tools and to create accessible Adaptive Forms and helps comply with accessibility standards.
+title: 액세스 가능한 적응형 Forms을 만드는 방법
+description: AEM Forms은 액세스 가능한 적응형 Forms을 만들 수 있는 도구를 제공하며 접근성 표준을 준수하도록 도와줍니다.
 uuid: 6472bc2d-47ca-4883-88b7-5de0b758fd00
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '2024'
+source-wordcount: '2025'
 ht-degree: 0%
 
 ---

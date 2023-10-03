@@ -1,10 +1,10 @@
 ---
-title: AEM Forms Designer 사용
-description: 사용 [!DNL Adobe Experience Manager (AEM) Forms] 기록 문서 템플릿을 만드는 디자이너.
+title: Forms Designer를 사용하여 기록 문서(DoR) 템플릿 및 양식 조각을 만드는 방법
+description: 사용 [!DNL AEM Forms] 기록 문서 템플릿 및 양식 조각을 만드는 디자이너입니다.
 exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---

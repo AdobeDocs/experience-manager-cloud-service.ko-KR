@@ -1,13 +1,13 @@
 ---
 title: 양식 데이터 모델을 사용하는 방법
-description: 양식 데이터 모델을 기반으로 적응형 Forms 및 적응형 양식 조각을 만드는 방법에 대해 알아봅니다. 양식 데이터 모델에서 데이터 모델 개체에 대한 샘플 데이터를 생성하고 편집하여 보다 깊이 파고듭니다. 이 데이터를 사용하여 적응형 Forms을 미리 보고 테스트할 수 있습니다.
+description: FDM(양식 데이터 모델)을 기반으로 적응형 Forms 및 조각을 만드는 방법에 대해 알아봅니다. FDM에서 데이터 모델 개체에 대한 샘플 데이터를 생성하고 편집합니다.
 feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: a6e76d2b3650d57adafe543b2b694360e4bb4169
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1226'
 ht-degree: 2%
 
 ---

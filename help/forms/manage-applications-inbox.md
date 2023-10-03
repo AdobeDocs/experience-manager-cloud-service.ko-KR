@@ -1,13 +1,13 @@
 ---
-title: AEM 받은 편지함에서 Forms 애플리케이션 및 작업 관리
+title: AEM 받은 편지함에서 양식 애플리케이션 및 작업을 관리하는 방법
 description: AEM 받은 편지함을 사용하면 애플리케이션 제출을 통해 Forms 중심 워크플로우를 시작하고 작업을 관리할 수 있습니다.
+uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1149'
 ht-degree: 3%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 3%
 
 # AEM 받은 편지함에서 Forms 애플리케이션 및 작업 관리{#manage-forms-applications-and-tasks-in-aem-inbox}
 
-Forms 중심 워크플로우를 시작하거나 트리거하는 여러 방법 중 하나는 AEM 받은 편지함의 애플리케이션을 통해서입니다. Forms 워크플로우를 받은 편지함에서 애플리케이션으로 사용할 수 있도록 하려면 워크플로우 애플리케이션을 만들어야 합니다. 워크플로우 애플리케이션 및 Forms 워크플로우를 시작하는 기타 방법에 대한 자세한 내용은 [OSGi에서 Forms 중심 워크플로우 실행](aem-forms-workflow.md#launch).
+Forms 중심 워크플로우를 시작하거나 트리거하는 여러 방법 중 하나는 AEM 받은 편지함의 애플리케이션을 통해서입니다. Forms Workflow을 받은 편지함에서 애플리케이션으로 사용할 수 있도록 하려면 워크플로우 애플리케이션을 만들어야 합니다. 워크플로우 애플리케이션 및 Forms 워크플로우를 시작하는 기타 방법에 대한 자세한 내용은 [OSGi에서 Forms 중심 워크플로우 실행](aem-forms-workflow.md#launch).
 
-또한 AEM 받은 편지함은 Forms 워크플로를 포함하여 다양한 AEM 구성 요소의 알림과 작업을 통합합니다. 작업 할당 단계가 포함된 Forms 워크플로우가 트리거되면 연결된 애플리케이션이 할당자의 받은 편지함에 작업으로 나열됩니다. 피할당자가 그룹인 경우 개별 사용자가 작업을 요청하거나 위임할 때까지 모든 그룹 구성원의 받은 편지함에 작업이 표시됩니다.
+또한 AEM 받은 편지함은 Forms 워크플로를 포함하여 다양한 AEM 구성 요소의 알림과 작업을 통합합니다. 작업 할당 단계가 포함된 Forms Workflow이 트리거되면 연결된 애플리케이션이 피할당자의 받은 편지함에 작업으로 나열됩니다. 피할당자가 그룹인 경우 개별 사용자가 작업을 요청하거나 위임할 때까지 모든 그룹 구성원의 받은 편지함에 작업이 표시됩니다.
 
 받은 편지함 사용자 인터페이스에서는 작업을 볼 수 있는 목록 및 달력 보기를 제공합니다. 보기 설정을 구성할 수도 있습니다. 다양한 매개 변수를 기반으로 작업을 필터링할 수 있습니다. 보기 및 필터에 대한 자세한 내용은 [받은 편지함](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html#inbox-in-the-header).
 
-요약하면 받은 편지함을 사용하여 새 애플리케이션을 만들고 할당된 작업을 관리할 수 있습니다.
+요약하면 받은 편지함에서 응용 프로그램을 만들고 할당된 작업을 관리할 수 있습니다.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Forms 중심 워크플로우를 시작하거나 트리거하는 여러 방법 �
 
 ## 작업 관리 {#manage-tasks}
 
-Forms 워크플로가 트리거되고 피할당자 또는 피할당자 그룹의 일부인 경우 받은 편지함에 작업이 표시됩니다. 받은 편지함에서 작업 세부 정보를 보고 작업에 대해 사용 가능한 작업을 수행할 수 있습니다.
+Forms 워크플로우 트리거를 통해 피할당자 또는 피할당자 그룹의 일부인 경우 받은 편지함에 작업이 표시됩니다. 받은 편지함에서 작업 세부 사항을 보고 작업에 대해 사용 가능한 작업을 수행할 수 있습니다.
 
 ### 작업 클레임 또는 위임 {#claim-or-delegate-tasks}
 
@@ -57,7 +57,7 @@ Forms 워크플로가 트리거되고 피할당자 또는 피할당자 그룹의
 
 ### 세부 정보 보기 및 작업에 대한 작업 수행 {#view-details-and-perform-actions-on-tasks}
 
-작업을 열면 작업 세부 정보를 보고 사용 가능한 작업을 수행할 수 있습니다. 작업에 사용할 수 있는 작업은 연결된 Forms 워크플로의 작업 할당 단계에 정의되어 있습니다.
+작업을 열면 작업 세부 정보를 보고 사용 가능한 작업을 수행할 수 있습니다. 작업에 사용할 수 있는 작업은 관련 Forms Workflow의 작업 할당 단계에서 정의됩니다.
 
 1. 작업의 썸네일을 선택하려면 탭하십시오. 선택한 작업을 열거나 위임하는 옵션이 맨 위에 나타납니다.
 1. 누르기 **열기** 작업 세부 사항을 보고 작업을 수행합니다. 자세한 작업 보기가 열립니다. 이 보기에서 작업 세부 사항을 보고 작업에 대한 작업을 수행할 수 있습니다.
@@ -93,13 +93,13 @@ Forms 워크플로가 트리거되고 피할당자 또는 피할당자 그룹의
 
 #### 작업 도구 모음 {#actions-toolbar}
 
-작업 도구 모음에는 작업에 사용 가능한 모든 옵션이 표시됩니다. 저장, 재설정 및 위임은 기본 작업이지만 사용 가능한 다른 작업은에 구성됩니다. [작업 단계 할당](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem). 위의 예에서 승인 및 거부는 워크플로우에 구성됩니다.
+작업 도구 모음에는 작업에 사용 가능한 모든 옵션이 표시됩니다. 저장, 재설정 및 위임은 기본 작업이지만 사용 가능한 다른 작업은에서 구성됩니다. [작업 단계 할당](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem). 위의 예에서 승인 및 거부는 워크플로우에 구성됩니다.
 
 작업에 대한 작업을 수행하면 워크플로우에서 더 진행됩니다.
 
 ### 완료된 작업 보기 {#view-completed-tasks}
 
-AEM 받은 편지함은 활성 작업만 표시합니다. 완료된 작업이 목록에 표시되지 않습니다. 하지만 받은 편지함 필터를 사용하여 작업 유형, 상태, 시작 및 종료 날짜 등과 같은 여러 매개 변수를 기반으로 작업을 필터링할 수 있습니다. 완료된 작업을 보려면 다음과 같이 하십시오.
+AEM 받은 편지함은 활성 작업만 표시합니다. 완료된 작업이 목록에 표시되지 않습니다. 하지만 받은 편지함 필터를 사용하여 작업 유형, 상태, 시작 및 종료 날짜 등 여러 매개 변수를 기반으로 작업을 필터링할 수 있습니다. 완료된 작업을 보려면 다음과 같이 하십시오.
 
 1. AEM 받은 편지함에서 ![toggle-side-panel1](assets/toggle-side-panel1.png) 필터 선택기를 엽니다.
 1. 누르기 **[!UICONTROL 작업 상태]** 아코디언 및 선택 **[!UICONTROL 완료]**. 완료된 작업이 모두 표시됩니다.
@@ -122,7 +122,7 @@ AEM 받은 편지함은 활성 작업만 표시합니다. 완료된 작업이 �
 
 ### AEM 받은 편지함에서 AEM Workflow와 관련된 항목을 볼 수 없음 {#unable-to-see-aem-worklow-items}
 
-워크플로우 모델 소유자가 AEM 받은 편지함에서 AEM Workflow와 관련된 항목을 볼 수 없습니다. 이 문제를 해결하려면 아래 나열된 인덱스를 AEM 저장소에 추가하고 인덱스를 다시 빌드합니다.
+워크플로우 모델 소유자가 AEM 받은 편지함에서 AEM Workflow와 관련된 항목을 볼 수 없습니다. 이 문제를 해결하려면 AEM 저장소에 아래 나열된 인덱스를 추가하고 인덱스를 다시 빌드합니다.
 
 1. 다음 방법 중 하나를 사용하여 인덱스를 추가합니다.
 
@@ -137,7 +137,7 @@ AEM 받은 편지함은 활성 작업만 표시합니다. 완료된 작업이 �
      | allowExplicitSharing | allowExplicitSharing | 부울 |
 
 
-   * AEM 패키지를 통해 인덱스를 배포합니다. 다음을 사용할 수 있습니다. [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) 배포 가능한 AEM 패키지를 만드는 프로젝트입니다. 다음 샘플 코드를 사용하여 AEM Archetype 프로젝트에 인덱스를 추가합니다.
+   * AEM 패키지를 통해 인덱스를 배포합니다. 다음을 사용할 수 있습니다. [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko-KR) 배포 가능한 AEM 패키지를 만드는 프로젝트입니다. 다음 샘플 코드를 사용하여 AEM Archetype 프로젝트에 인덱스를 추가합니다.
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()

@@ -1,21 +1,21 @@
 ---
-title: 적응형 양식에서 반복성(핵심 구성 요소)
-description: 패널 구성 요소의 반복 기능을 사용하여 적응형 양식에서 유사한 섹션을 반복합니다.
+title: 적응형 양식 핵심 구성 요소에서 반복 가능한 패널을 만드는 방법
+description: 적응형 양식에서 반복 가능한 섹션 또는 필드를 만드는 방법에 대해 알아봅니다.
 role: Architect, Developer, Admin, User
-source-git-commit: fcdb96a6bbe8ff8761293eedc0d38efaecb56037
+exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 6%
+source-wordcount: '1390'
+ht-degree: 7%
 
 ---
-
 
 # 반복 가능한 섹션이 포함된 양식 만들기(핵심 구성 요소) {#repeat-panel}
 
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-forms-repeatable-sections.html?lang=en) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-forms-repeatable-sections.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
 반복 가능 섹션은 동일한 데이터의 여러 인스턴스에 대한 정보를 수집하기 위해 중복되거나 여러 번 반복될 수 있는 양식의 일부를 나타냅니다.
@@ -24,7 +24,7 @@ ht-degree: 6%
 
 ![반복성](/help/forms/assets/repeatable-adaptive-form-example.gif)
 
-이 문서의 마지막 부분에서 다음 방법을 배웁니다.
+이 문서의 끝 부분에서는 다음 방법을 배웁니다.
 
 * 적응형 양식에 반복 가능한 섹션 만들기
 * 적응형 양식 구성 요소에 대한 최소 또는 최대 반복 횟수 설정
@@ -169,7 +169,7 @@ A panel has various layouts options. The Layout for accordian design option has 
 1. 바인딩 탭을 클릭하고 각 데이터 항목에 대해 하위 양식 반복을 선택합니다.
 1. 최소 반복 횟수를 지정하려면 최소 횟수(Min Count)를 선택하고 연관된 상자에 숫자를 입력합니다. 이 옵션을 0으로 설정하고 데이터 병합 시 하위 양식의 개체에 대해 데이터가 제공되지 않으면 양식을 렌더링할 때 하위 양식이 배치되지 않습니다.
 1. 하위 양식 반복의 최대 횟수를 지정하려면 최대값을 선택하고 연관된 상자에 숫자를 입력합니다. [최대] 상자에 값을 지정하지 않으면 하위 양식 반복 횟수는 제한이 없습니다.
-1. 데이터 수량에 관계없이 하위 양식 반복 횟수를 지정하려면 초기 수를 선택하고 관련 상자에 숫자를 입력합니다. 이 옵션을 선택하고 사용할 수 있는 데이터가 없거나 지정된 초기 개수 값보다 적은 데이터 항목이 있으면 하위 양식의 빈 인스턴스가 계속 양식에 배치됩니다.
+1. 데이터 수량에 관계없이 하위 양식 반복 횟수를 지정하려면 초기 수를 선택하고 관련 상자에 숫자를 입력합니다. 이 옵션을 선택하고 사용할 수 있는 데이터가 없거나 지정된 초기 개수 값보다 적은 데이터 항목이 있는 경우 하위 양식의 빈 인스턴스가 계속 양식에 배치됩니다.
 1. 상위 하위 양식에 인스턴스 추가 단추와 반복 가능한 하위 양식의 인스턴스 삭제 단추 두 개를 추가합니다. 자세한 단계는 를 참조하십시오. [작업 빌드](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
 1. 이제 양식 템플릿을 적응형 양식에 연결합니다. 자세한 단계는 를 참조하십시오. [템플릿을 기반으로 적응형 양식 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=en#create-an-adaptive-form-based-on-an-xfa-form-template).
 1. 9단계에서 만든 단추를 사용하여 하위 양식을 추가하거나 제거합니다.
@@ -228,6 +228,6 @@ XML 스키마와 복합 유형 요소의 minOccours 및 maxOccurs 속성에서 �
 ## 관련 문서
 
 * [적응형 양식 만들기](creating-adaptive-form-core-components.md)
-* [양식의 스타일 또는 테마 만들기](using-themes-in-core-components.md)
+* [양식에 맞는 스타일 또는 테마 만들기](using-themes-in-core-components.md)
 * [규칙 편집기를 사용하여 양식에 동적 동작 추가](rule-editor.md)
 * [다양한 화면 크기 및 장치 유형에 대한 양식 레이아웃 설정](/help/sites-cloud/authoring/features/responsive-layout.md)

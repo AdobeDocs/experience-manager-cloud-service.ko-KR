@@ -1,13 +1,13 @@
 ---
 title: 적응형 양식을 위한 XML 스키마 디자인
-description: 적응형 양식에서 XML 스키마를 양식 모델로 사용하는 방법에 대해 알아봅니다. XML 스키마의 샘플을 사용하여 자세히 알아보고, XML 스키마를 사용하여 필드에 특수 속성을 추가하고, 적응형 양식 구성 요소에 사용할 수 있는 값을 제한합니다.
+description: 적응형 양식에 대한 XML 스키마를 만들고 스키마를 기반으로 적응형 양식을 만들어 스키마 위반 데이터를 생성하는 방법에 대해 알아봅니다.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '950'
 ht-degree: 6%
 
 ---

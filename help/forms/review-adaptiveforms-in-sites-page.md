@@ -1,12 +1,12 @@
 ---
-title: 적응형 양식에 대한 검토 만들기 및 관리
-description: 검토는 검토자가 작업 할당 단계를 사용하여 적응형 양식에 대해 다른 작업을 수행할 수 있는 메커니즘입니다
+title: Sites 페이지에 임베드되거나 생성된 적응형 Forms에 대한 검토를 생성하고 관리하는 방법
+description: 검토는 검토자가 작업 할당 단계를 사용하여 적응형 양식에 대해 다양한 작업을 수행할 수 있는 메커니즘입니다.
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '358'
 ht-degree: 5%
 
 ---

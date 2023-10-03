@@ -1,12 +1,11 @@
 ---
-title: Forms as a Cloud Service 커뮤니케이션 소개
-description: XDP 및 PDF 템플릿과 데이터 자동 병합 또는 PCL, ZPL 및 PostScript 형식으로 출력 생성
-exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
+title: AEM Forms as a Cloud Service 커뮤니케이션 소개
+description: 통신 API를 사용하여 문서에 서명, 인증 또는 보호하고, PDF 생성 프로세스를 자동화하고, PDF 문서를 다른 형식으로 변환합니다.
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1426'
-ht-degree: 81%
+source-wordcount: '1433'
+ht-degree: 80%
 
 ---
 

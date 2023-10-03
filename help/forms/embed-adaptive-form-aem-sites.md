@@ -1,13 +1,12 @@
 ---
-title: AEM Sites 페이지에 적응형 양식 포함
-seo-title: How to add an Adaptive Form to an AEM Sites page?
-description: 적응형 Forms - 임베드 구성 요소를 사용하여 AEM Sites 페이지에 적응형 Forms을 임베드할 수 있으므로 AEM Sites 페이지를 종료하지 않고도 양식을 작성하고 제출할 수 있습니다.
+title: AEM Sites 페이지에 적응형 양식을 추가하는 방법
+description: 적응형 Forms을 AEM Sites 페이지 또는 AEM 외부에서 호스팅되는 웹 페이지에 원활하게 임베드합니다.
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: d9dee0b5a070da6a19004c749f69c724fff9d967
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '3177'
+source-wordcount: '3165'
 ht-degree: 6%
 
 ---
@@ -75,7 +74,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 새 적응형 양식 또는 기존 적응형 양식 임베드를 시작하기 전에 **[!UICONTROL 적응형 Forms - 포함(v2)]**, 활성화 **적응형 Forms 핵심 구성 요소** 및 추가 **적응형 Forms 클라이언트 라이브러리** AEM Sites 페이지로:
 
-+++  AEM Cloud Service 환경을 위한 적응형 Forms 핵심 구성 요소 활성화
++++  AEM Cloud Service 환경에 맞는 적응형 양식 핵심 구성 요소를 활성화합니다
 
 [AEM Forms as a Cloud Service 환경에 맞는 적응형 양식 핵심 구성 요소가 활성화되어 있는지](enable-adaptive-forms-core-components.md) 확인합니다.
 
@@ -363,7 +362,7 @@ AEM sites 페이지에 임베드된 적응형 양식을 게시하기 위한 다�
 >
 >원래 적응형 양식에서 변경된 사항은 임베드된 양식에 자동으로 반영됩니다. 단, 적응형 양식 또는 사이트의 페이지를 다시 게시하여 게시된 페이지의 변경 사항을 반영합니다.
 
-## 우수 사례 {#best-practices}
+## 모범 사례 {#best-practices}
 
 AEM 사이트 페이지에 적응형 Forms을 포함할 때는 다음 사항을 염두에 두십시오.
 

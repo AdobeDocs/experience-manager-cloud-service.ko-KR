@@ -9,7 +9,7 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
 source-wordcount: '1580'
 ht-degree: 6%
@@ -135,7 +135,7 @@ AEM Forms AEM 6.5에서 as a Cloud Service 환경으로 원활하게 전환하�
 AEM Forms 6.5에서 Cloud Service로 마이그레이션할 때 다음 위치에서 AEM Forms 관련 에셋을 찾을 수 있습니다.
 
 * **적응형 Forms**: 다음 위치에서 적응형 양식을 찾을 수 있습니다. `/content/dam/formsanddocuments/`및 `/content/forms/af`. 예를 들어 WKND 등록이라는 적응형 양식의 경우 경로를 추가합니다 `/content/dam/formsanddocuments/wknd-registration` 및 `/content/forms/af/wknd-registration`.
-* **양식 데이터 모델**: 다음 위치에서 모든 양식 데이터 모델을 찾을 수 있습니다. `/content/dam/formsanddocuments-fdm`. (예: `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`)
+* **양식 데이터 모델**: 다음 위치에서 모든 양식 데이터 모델을 찾을 수 있습니다. `/content/dam/formsanddocuments-fdm`. 예: `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
 
 * **클라이언트 라이브러리**: 클라이언트 라이브러리의 기본 경로는 다음과 같습니다. `/etc/clientlibs/fd/theme`.
 

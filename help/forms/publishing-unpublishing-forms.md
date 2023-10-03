@@ -1,18 +1,13 @@
 ---
-title: 양식 및 문서 게시 및 게시 취소
-seo-title: Publishing and unpublishing forms and documents
-description: 양식 게시 및 게시 취소를 예약할 수 있습니다. 게시된 양식은 게시 인스턴스에 복제됩니다.
-seo-description: You can schedule publishing and unpublishing of forms. Published forms are replicated on the publish instance.
-uuid: 0bad5608-b7a8-4599-81cc-2cd0a3dc7dd5
+title: 양식 및 문서를 게시하고 게시 취소하는 방법
+description: 적응형 Forms의 게시 및 게시 취소를 예약합니다. 게시된 양식은 게시 인스턴스에 복제됩니다.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-content-strategy: max-2018
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
-docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+docset: aem65s
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1333'
+source-wordcount: '1335'
 ht-degree: 0%
 
 ---
@@ -78,7 +73,6 @@ ht-degree: 0%
       >[!NOTE]
       >
       >여러 에셋을 선택하지 마십시오. 한 번에 여러 자산을 게시할 수 없습니다.
-
 
 1. 게시 프로세스가 시작되면 관련 에셋 및 리소스가 모두 나열된 확인 대화 상자가 나타납니다. 관련 에셋이 포함된 대화 상자에서 **[!UICONTROL 게시]**. 에셋이 게시되고 에셋 게시 성공 대화 상자가 나타납니다.
 

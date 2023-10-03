@@ -1,15 +1,17 @@
 ---
-title: AEM Adaptive Forms에서 사용자 지정 오류 처리기 추가
+title: AEM용 적응형 Forms Adaptive Forms에서 사용자 지정 오류 핸들러 추가
+seo-title: Error Handlers in Adaptive Forms for AEM Adaptive Forms
 description: AEM Forms에서는 외부 서비스를 호출하도록 구성된 REST 엔드포인트를 사용하여 양식에 대한 기본 성공 사례와 오류 핸들러를 제공합니다. AEM 적응형 양식에 기본 오류 처리기와 사용자 지정 오류 처리기를 추가할 수 있습니다.
 seo-description: Error handler function and Rule Editor in Adaptive Forms helps you to effectively manage and customize error handling. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
 keywords: 사용자 정의 오류 핸들러 추가, 기본 오류 핸들러 추가, 양식에서 오류 핸들러 추가, 규칙 편집기의 호출 서비스를 사용하여 사용자 정의 오류 핸들러 추가, 규칙 편집기를 구성하여 사용자 정의 오류 핸들러 추가, 규칙 편집기를 사용하여 사용자 정의 오류 핸들러 추가
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: f6c6ef96f8de194942a95d8589591b41431037f5
+exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '2466'
-ht-degree: 90%
+source-wordcount: '2470'
+ht-degree: 91%
 
 ---
 
@@ -228,7 +230,7 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 
 사용자 정의 오류 함수를 만들려면 다음 단계를 수행합니다.
 
-1. [AEM Forms as a Cloud Service 저장소 복제](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
+1. [AEM Forms as a Cloud Service 저장소 복제](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#accessing-git).
 1. `[AEM Forms as a Cloud Service repository folder]/apps/` 폴더 아래에 폴더를 만듭니다. 예: `experience-league`로 지정된 폴더 만들기
 1. `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/`로 이동하고 `clientlibs`로서 `ClientLibraryFolder`를 만듭니다.
 1. `js`라는 이름의 폴더를 만듭니다.
@@ -279,7 +281,7 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 
    >[!NOTE]
    >
-   > 사용자 정의 함수를 생성하는 방법에 대해 자세히 알아보려면 [규칙 편집기의 사용자 정의 함수](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#write-rules)를 클릭합니다.
+   > 사용자 정의 함수를 생성하는 방법에 대해 자세히 알아보려면 [규칙 편집기의 사용자 정의 함수](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=ko-KR#write-rules)를 클릭합니다.
 
 1. 아래 명령을 사용하여 저장소의 변경 내용을 추가하고, 커밋하고, 푸시합니다.
 
@@ -406,6 +408,6 @@ Using this custom error handler, the adaptive form converts the fields listed in
 ## 참고 항목 {#see-also}
 
 * [적응형 Forms(핵심 구성 요소)에서 사용자 지정 오류 핸들러 만들기 및 사용](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
-* [적응형 양식 기반의 독립형 핵심 구성 요소 만들기](/help/forms/creating-adaptive-form-core-components.md)
-* [양식의 스타일 또는 테마 만들기](/help/forms/using-themes-in-core-components.md)
+* [적응형 양식 기반의 독립 실행형 코어 구성 요소 만들기](/help/forms/creating-adaptive-form-core-components.md)
+* [양식에 맞는 스타일 또는 테마 만들기](/help/forms/using-themes-in-core-components.md)
 * [적응형 양식을 만들거나 AEM Sites 페이지에 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)

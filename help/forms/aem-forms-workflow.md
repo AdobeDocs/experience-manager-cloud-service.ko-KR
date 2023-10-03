@@ -1,11 +1,12 @@
 ---
 title: OSGi의 Forms 중심 워크플로우
-description: 사용 [!DNL AEM Forms] 검토 및 승인을 자동화하고 신속하게 구축하여 문서 서비스를 시작하는 워크플로
-seo-description: Use [!DNL AEM Forms] Workflow to automate and rapidly build review and approvals, to start document services (For example, to convert a PDF document to another format), integrate with Adobe Sign signature workflow, and more.
+seo-title: Rapidly build Adaptive Forms-based processes, automate document services operations, and use Adobe Sign with AEM workflows
+description: 'AEM Forms 워크플로를 사용하여 비즈니스 프로세스 워크플로를 자동화하고 신속하게 구축할 수 있습니다. 예: 검토 및 승인, PDF 생성, Adobe Sign 워크플로.'
+uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '2361'
+source-wordcount: '2369'
 ht-degree: 2%
 
 ---

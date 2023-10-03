@@ -1,8 +1,6 @@
 ---
 title: 적응형 양식 작성 소개
-seo-title: Introduction to authoring Adaptive Forms
 description: AEM Forms는 적응형 양식 작성을 위한 사용하기 쉽지만 강력한 인터페이스를 제공합니다. 양식을 빌드하는 데 사용할 수 있는 다양한 구성 요소 및 도구를 제공합니다.
-seo-description: AEM Forms provide easy-to-use yet powerful interface for authoring Adaptive Forms. It provides a host of components and tools that you can use to build forms.
 uuid: 3b150507-41b9-47c2-a94c-f85b903b2274
 content-type: reference
 topic-tags: author, introduction
@@ -10,8 +8,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+workflow-type: tm+mt
 source-wordcount: '2482'
 ht-degree: 100%
 

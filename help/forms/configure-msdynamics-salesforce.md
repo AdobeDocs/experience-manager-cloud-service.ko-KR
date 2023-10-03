@@ -1,9 +1,10 @@
 ---
-title: Microsoft 및 reg 구성, AEM Forms용 Dynamics 365 또는 Salesforce
-description: Microsoft&reg; Dynamics 365 및 Salesforce를 적응형 양식과 통합하는 방법을 알아봅니다.
-source-git-commit: 483a72f67f361023ebeefa3d74ec9f35a5f4f765
+title: 적응형 Forms을 위한 기본 양식 데이터 모델을 통해 Microsoft Dynamics 365 및 Salesforce를 구성하는 방법
+description: Microsoft Dynamics 365 및 Salesforce를 적응형 Forms과 통합하는 방법을 알아봅니다.
+exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '960'
 ht-degree: 3%
 
 ---
@@ -86,7 +87,7 @@ A [!DNL Salesforce] 양식 데이터 모델은 [!DNL AEM Forms] 사용자 이후
    1. 다음에 대한 값 입력 **[!UICONTROL 서비스 루트]** 필드. Dynamics 인스턴스로 이동하여 다음 위치로 이동 [개발자 리소스](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/view-download-developer-resources) 서비스 루트 필드에 대한 값을 보려면 다음을 수행하십시오. 예, `https://<tenant-name>.dynamics.com/api/data/v9.1/`
    1. 연결된 응용 프로그램에 대한 클라이언트 ID(응용 프로그램 ID라고도 함)와 클라이언트 암호를 지정합니다.
    1. 바꾸기 `{tenant}` 다음에 테넌트 ID가 있는 **[!UICONTROL OAuth URL]**, **[!UICONTROL 토큰 URL 새로 고침]**, 및 **[!UICONTROL 토큰 URL 액세스]** 필드.
-   1. 에서 동적 인스턴스 URL 지정 **[!UICONTROL 리소스]** 구성할 필드 [!UICONTROL Microsoft® Dynamics] (양식 데이터 모델 포함) 서비스 루트 URL을 사용하여 Dynamics 인스턴스 URL을 파생합니다. (예: `https://<tenant-name>.dynamics.com`)
+   1. 에서 동적 인스턴스 URL 지정 **[!UICONTROL 리소스]** 구성할 필드 [!UICONTROL Microsoft® Dynamics] (양식 데이터 모델 포함) 서비스 루트 URL을 사용하여 Dynamics 인스턴스 URL을 파생합니다. 예: `https://<tenant-name>.dynamics.com`
 
    1. 지정 `openid` 다음에서 **[!UICONTROL 인증 범위]** 인증 프로세스용 필드 [!DNL Microsoft® Dynamics 365].
    1. 로 로그인 [!DNL Microsoft® Dynamics 365] 자격 증명 및 동의 를 선택하여 cloud service 구성 연결 [!DNL Microsoft® Dynamics 365] 서비스. 연결에 성공하면 로 리디렉션됩니다. [!DNL Microsoft® Dynamics 365] 성공 메시지를 표시하는 클라우드 서비스 구성 페이지

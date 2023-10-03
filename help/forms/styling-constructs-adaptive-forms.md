@@ -1,16 +1,14 @@
 ---
-title: 적응형 Forms에 대한 스타일 구성
-seo-title: Styling constructs for Adaptive Forms
-description: 적은 프레임워크를 사용하여 적응형 Forms의 모양을 사용자 지정합니다.
-seo-description: Use LESS framework to customize appearance of Adaptive Forms.
+title: 적응형 Forms에 대한 구문의 스타일을 지정하는 방법
+description: 적응형 Forms에 대해 LESS 프레임워크를 사용하여 적응형 Forms의 모양을 사용자 지정합니다.
 uuid: d2e45ad9-7322-43ce-a1dd-ad97e2eea742
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '2310'
+source-wordcount: '2315'
 ht-degree: 3%
 
 ---
@@ -809,7 +807,7 @@ guideNavIcon 클래스는 탭 탐색기(왼쪽 및 위쪽 모두)와 마법사 �
    <td><p>중첩된 탭의 들여쓰기</p> </td>
   </tr>
   <tr>
-   <td><p><strong>마법사 네비게이터</strong></p> </td>
+   <td><p><strong>마법사 탐색기</strong></p> </td>
    <td><p> </p> </td>
   </tr>
   <tr>

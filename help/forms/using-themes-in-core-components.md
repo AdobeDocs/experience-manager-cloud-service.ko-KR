@@ -1,12 +1,10 @@
 ---
-title: 테마 만들기 및 사용
-description: 테마를 사용하여 핵심 구성 요소를 사용하여 적응형 양식에 스타일을 지정하고 시각적 ID를 제공할 수 있습니다. 여러 적응형 Forms에서 테마를 공유할 수 있습니다.
-seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
-keywords: 새 테마 만들기, 테마 맞춤화, 새 테마 업로드, 양식에 테마 사용, 프론트엔드 파이프라인을 사용하여 테마 맞춤화
+title: 적응형 Forms에서 테마를 만들고 사용하는 방법
+description: 테마를 사용하여 스타일을 지정하고 핵심 구성 요소를 사용하여 적응형 양식에 시각적 ID를 제공할 수 있습니다. 여러 적응형 Forms에서 테마를 공유할 수 있습니다.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2697'
 ht-degree: 5%
 
 ---
@@ -124,7 +122,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 1. 일반 텍스트 편집기에서 테마 폴더를 엽니다. 예를 들어 를 열려면 `aem-forms-theme-canvas` 폴더가 표시됩니다.
 
-1. 다음 위치로 이동 `aem-forms-theme-canvas` 폴더를 삭제합니다.
+1. `aem-forms-theme-canvas` 폴더로 이동합니다.
 
 1. 다음 명령을 실행합니다.
 
@@ -160,7 +158,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 다음 `variable.scss` 파일에는 테마의 전역 변수가 포함되어 있습니다. 이러한 변수를 업데이트하여 테마 수준에서 스타일 관련 변경 사항을 적용할 수 있습니다. 테마 수준 스타일을 적용하려면 다음 단계를 수행합니다.
 
 1. 편집할 `<your-theme-sources>/src/site/_variables.scss` 페이지를 엽니다.
-1. 모든 속성의 값을 변경합니다. 예를 들어 기본 오류 색상은 `red`. 오류 색상을 변경하려면 `red` 끝 `blue`, 의 색상 16진수 코드 변경 `$errorvariable`. (예: `$error: #196ee5`)
+1. 모든 속성의 값을 변경합니다. 예를 들어 기본 오류 색상은 `red`. 오류 색상을 변경하려면 `red` 끝 `blue`, 의 색상 16진수 코드 변경 `$errorvariable`. 예: `$error: #196ee5`
 1. 파일을 저장하고 닫습니다.
 
    ![테마 편집](/help/forms/assets/edit_theme.png)
@@ -334,7 +332,7 @@ AEM Forms as a Cloud Service 인스턴스에 호스팅된 적응형 양식에 �
    git push [name-for-createdrepository]
    ```
 
-   예를 들면 다음과 같습니다.
+   예:
 
    ```
    git remote add canvascloudthemerepo https://git.cloudmanager.adobe.com/stage-aemformsdev/customcanvastheme/
@@ -389,7 +387,7 @@ AEM Forms as a Cloud Service 인스턴스에 호스팅된 적응형 양식에 �
 
 적응형 양식 테마는 적응형 양식을 작성하는 동안 스타일을 정의하는 적응형 양식 템플릿의 일부로 사용됩니다.
 
-## 우수 사례 {#best-practices}
+## 모범 사례 {#best-practices}
 
 * **다른 테마에서 에셋 피하기**
 
@@ -423,4 +421,4 @@ AEM Forms as a Cloud Service 인스턴스에 호스팅된 적응형 양식에 �
 ## 관련 문서 {#related-article}
 
 * [AEM Forms as a Cloud Service 및 로컬 개발 환경에서 적응형 양식 핵심 구성 요소 활성화](/help/forms/enable-adaptive-forms-core-components.md)
-* [적응형 양식 기반의 독립형 핵심 구성 요소 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+* [적응형 양식 기반의 독립 실행형 코어 구성 요소 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)

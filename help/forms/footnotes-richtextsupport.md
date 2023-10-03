@@ -1,10 +1,11 @@
 ---
-title: 적응형 Forms에 대한 각주 지원
-description: 유용한 리치 텍스트 각주로 적응형 Forms을 강화합니다. 사용자 경험 및 참여를 개선합니다.
-source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
+title: 적응형 Forms의 각주 지원
+description: 적응형 양식의 각주에 대해 리치 텍스트 편집기(RTE)를 사용하십시오.
+exl-id: f04dae84-daab-42f8-876f-02fe426f62be
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 12%
+source-wordcount: '438'
+ht-degree: 13%
 
 ---
 

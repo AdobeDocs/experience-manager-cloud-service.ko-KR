@@ -1,11 +1,11 @@
 ---
-title: 적응형 양식과 DocuSign 통합
+title: DocuSign을 적응형 양식과 통합하는 방법
 description: 적응형 양식과 함께 DocuSign을 사용하여 전자 서명을 수집하는 방법에 대해 알아봅니다.
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 9%
+source-wordcount: '1559'
+ht-degree: 10%
 
 ---
 
@@ -124,7 +124,7 @@ AEM Forms as a Cloud Service에서는 DocuSign에 대한 사용자 지정 제출
 
 전제 조건이 갖추어지면 다음 단계를 수행하여 을 통합합니다 [!DNL DocuSign] 포함 [!DNL AEM Forms] 작성자 인스턴스에서 참조할 수 있습니다.
 
-1. 다음으로 이동 **[!UICONTROL 도구]** ![망치](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL DocuSign]** 구성을 호스팅할 폴더를 선택하십시오.
+1. 다음으로 이동 **[!UICONTROL 도구]** ![망치](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL DocuSign]** 구성을 호스팅할 폴더를 선택하십시오.
 
 1. 구성 페이지에서 을 누릅니다. **[!UICONTROL 만들기]** 만들려면 [!DNL DocuSign] AEM Forms의 구성
 1. 다음에서 **[!UICONTROL 일반]** 의 탭 **[!UICONTROL DocuSign 구성 만들기]** 페이지, 지정 **[!UICONTROL 이름]** 구성을 보려면 다음을 누르십시오. **[!UICONTROL 다음]**. 다음을 선택적으로 지정할 수 있습니다. **[!UICONTROL 제목]**.
@@ -174,7 +174,8 @@ Sign이 활성화된 적응형 양식을 만들려면 다음 작업을 수행하
    1. 다음을 지정합니다. **[!UICONTROL 이름]** 및 **[!UICONTROL 제목]** 적응형 양식용.
 
    1. 다음 항목 선택 [구성 컨테이너](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) 생성 시간 [통합 [!DNL DocuSign] 포함 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
-   구성 컨테이너에는 [!DNL DocuSign] 환경에 맞게 구성된 Cloud Services. 이러한 서비스는 적응형 양식 편집기에서 선택할 수 있습니다.
+
+   구성 컨테이너에는 [!DNL DocuSign] 환경에 맞게 구성된 Cloud Service. 이러한 서비스는 적응형 양식 편집기에서 선택할 수 있습니다.
 
 1. 다음에서 **[!UICONTROL 양식 모델]** 탭에서 다음 옵션 중 하나를 선택합니다.
 
@@ -182,7 +183,7 @@ Sign이 활성화된 적응형 양식을 만들려면 다음 작업을 수행하
 
    - 사용자 정의 양식 템플릿이 없는 경우 **[!UICONTROL 기록 문서 생성]** 옵션을 선택합니다. 옵션을 사용하면 서명을 위해 전송된 문서에 적응형 양식의 모든 필드가 표시됩니다.
 
-1. 누르기 **[!UICONTROL 만들기.]** 서명이 활성화된 적응형 양식이 만들어집니다. 다음을 추가할 수 있습니다. [!DNL DocuSign] 필드를 양식으로 보내고 서명을 위해 보냅니다.
+1. **[!UICONTROL 만들기를 탭합니다.]** 서명이 활성화된 적응형 양식이 만들어집니다. 다음을 추가할 수 있습니다. [!DNL DocuSign] 필드를 양식으로 보내고 서명을 위해 보냅니다.
 1. 편집 모드에서 적응형 양식을 엽니다. 다음에서 **[!UICONTROL 콘텐츠]** 탭에서 다음을 누릅니다. **[!UICONTROL 양식 컨테이너]** 및 탭 ![구성](assets/configure-icon.svg).
 
 1. 다음에서 **[!UICONTROL 제출]** 섹션, 선택 **[!UICONTROL DocuSign 전자 서명으로 제출]** 다음에서 **[!UICONTROL 제출 액션]** 드롭다운 목록입니다.
@@ -191,7 +192,7 @@ Sign이 활성화된 적응형 양식을 만들려면 다음 작업을 수행하
 
 1. 에서 이메일 메시지의 제목을 지정합니다. **[!UICONTROL 이메일 제목]** 필드. 선택 **첨부 파일 포함** 전자 메일 메시지에 첨부 파일을 포함합니다.
 
-1. 누르기 ![저장](assets/save_icon.svg) 속성을 저장합니다.
+1. ![저장](assets/save_icon.svg)을 탭하여 변경 내용을 저장합니다.
 
 #### 사용 [!DNL DocuSign] 적응형 양식용 {#editafsign}
 
@@ -216,4 +217,4 @@ Sign이 활성화된 적응형 양식을 만들려면 다음 작업을 수행하
 
 1. 에서 이메일 메시지의 제목을 지정합니다. **[!UICONTROL 이메일 제목]** 필드. 선택 **첨부 파일 포함** 전자 메일 메시지에 첨부 파일을 포함합니다.
 
-1. 누르기 ![저장](assets/save_icon.svg) 속성을 저장합니다.
+1. ![저장](assets/save_icon.svg)을 탭하여 변경 내용을 저장합니다.

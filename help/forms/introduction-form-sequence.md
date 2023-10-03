@@ -1,14 +1,14 @@
 ---
-title: 다단계 양식 시퀀스를 만드는 방법은 무엇입니까?
-description: ' [!DNL Experience Manager Forms]를 사용하여 사용자가 적응형 양식을 탐색하고 채울 수 있는 양식 패널의 시퀀스를 정의할 수 있습니다. 사용 사례 방식을 예제로 사용하여 다단계 양식 시퀀스 생성을 더 자세히 알아보십시오. '
+title: 여러 단계 양식 시퀀스를 만드는 방법
+description: ' [!DNL Experience Manager Forms]를 사용하여 사용자가 적응형 양식을 탐색하고 채울 수 있는 양식 패널의 시퀀스를 정의할 수 있습니다.'
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 100%
+source-wordcount: '547'
+ht-degree: 98%
 
 ---
 

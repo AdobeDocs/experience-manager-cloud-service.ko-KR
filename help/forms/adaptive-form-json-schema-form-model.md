@@ -1,20 +1,20 @@
 ---
 title: 적응형 양식에 대한 JSON 스키마 디자인
-description: JSON 스키마를 양식 모델로 사용하여 적응형 Forms을 만드는 방법에 대해 알아봅니다. 기존 JSON 스키마를 사용하여 적응형 Forms을 만들 수 있습니다. JSON 스키마 샘플을 자세히 살펴보고, JSON 스키마 정의의 필드를 사전 구성하고, 적응형 양식 구성 요소에 사용할 수 있는 값을 제한하고, 지원되지 않는 구문에 대해 알아봅니다.
+description: 적응형 양식에 대한 JSON 스키마를 만들고 스키마를 기반으로 적응형 양식을 만들어 스키마 컴플레인 데이터를 생성하는 방법에 대해 알아봅니다.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: c00080859cc10da2da887cf1a711e1aef9dc5fb8
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1368'
-ht-degree: 5%
+source-wordcount: '1343'
+ht-degree: 9%
 
 ---
 
 # 적응형 양식에 대한 JSON 스키마 디자인 {#creating-adaptive-forms-using-json-schema}
 
-<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |

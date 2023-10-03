@@ -1,11 +1,11 @@
 ---
-title: 적응형 양식에 새 로케일 지원 추가
-description: AEM Forms을 사용하면 적응형 양식을 현지화하기 위한 새 로케일을 추가할 수 있습니다. 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어(브라질), 중국어(zh-CN), 중국어(zh-TW) 및 한국어(ko-KR) 로케일.
+title: 적응형 양식에 새 로케일에 대한 지원을 추가하는 방법
+description: 적응형 Forms의 경우 즉시 제공된 언어 외에도 더 많은 언어에 대한 로케일을 추가할 수 있습니다.
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 23f915f0e2e33b9cf1313d15cb98a0a4f8243746
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
 source-wordcount: '1259'
-ht-degree: 9%
+ht-degree: 8%
 
 ---
 
@@ -32,7 +32,7 @@ AEM Forms은 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it)
 
 ## 새 로케일에 대한 지원 추가 {#add-support-for-new-locales}
 
-로케일에 대한 지원을 추가하려면 다음을 수행합니다.
+새 로케일에 대한 지원을 추가하려면 다음 단계를 수행하십시오.
 
 1. [지원되지 않는 로케일에 대한 현지화 지원 추가](#add-localization-support-for-non-supported-locales)
 1. [적응형 Forms에서 추가된 로케일 사용](#use-added-locale-in-af)
@@ -41,7 +41,7 @@ AEM Forms은 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it)
 
 AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어(pt-BR), 중국어(zh-CN), 중국어-대만(zh-TW) 및 한국어(ko-KR) 로케일로 된 적응형 Forms 콘텐츠의 현지화를 지원합니다.
 
-로케일에 대한 지원을 추가하려면 다음 작업을 수행하십시오.
+적응형 Forms 런타임 시 새 로케일에 대한 지원을 추가하려면 다음 작업을 수행하십시오.
 
 1. [저장소 복제](#clone-the-repository)
 1. [GuideLocalizationService 서비스에 로케일 추가](#add-a-locale-to-the-guide-localization-service)
@@ -69,7 +69,7 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
 1. UI.content 폴더에서 `etc/clientlibs` 폴더를 삭제합니다.
 1. 다음 이름의 폴더 추가 생성: `locale-name` 아래에 `etc/clientlibs` 를 xfa 및 af clientlibs의 컨테이너 역할을 합니다.
 
-##### 3.1 locale-name 폴더의 로케일에 대한 XFA 클라이언트 라이브러리 추가
+##### 3.1 locale-name 폴더에 로케일에 대한 XFA 클라이언트 라이브러리 추가
 
 라는 노드를 만듭니다. `[locale-name]_xfa` 및 다음으로 입력 `cq:ClientLibraryFolder` 아래에 `etc/clientlibs/locale_name`, 범주 포함 `xfaforms.I18N.<locale>`을 클릭하고 다음 파일을 추가합니다.
 
@@ -109,11 +109,11 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
    <filter root="/etc/languages"/>
    ```
 
-변경 사항을 AEM Git 저장소에 커밋하기 전에 [Git 저장소 정보](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
+변경 사항을 AEM Git 저장소에 커밋하기 전에 [Git 저장소 정보](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#accessing-git).
 
 #### 5. 저장소의 변경 사항을 커밋하고 파이프라인을 배포합니다 {#commit-changes-in-repo-deploy-pipeline}
 
-로케일 지원을 추가한 후 GIT 저장소에 변경 사항을 커밋합니다. 전체 스택 파이프라인을 사용하여 코드를 배포합니다. 학습 [파이프라인 설정 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) 새 로케일 지원을 추가합니다.
+로케일 지원을 추가한 후 GIT 저장소에 변경 사항을 커밋합니다. 전체 스택 파이프라인을 사용하여 코드를 배포합니다. 학습 [파이프라인 설정 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#setup-pipeline) 새 로케일 지원을 추가합니다.
 파이프라인이 완료되면 새로 추가된 로케일이 AEM 환경에 나타납니다.
 
 ### 적응형 Forms에서 추가된 로케일 사용 {#use-added-locale-in-af}
@@ -144,11 +144,11 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
 요청한 로케일에 대한 클라이언트 라이브러리가 없으면 로케일에 있는 언어 코드에 대한 클라이언트 라이브러리를 확인합니다. 예를 들어 요청된 로케일이 `en_ZA` (남아프리카 영어) 및 클라이언트 라이브러리 `en_ZA` 이(가) 존재하지 않습니다. 적응형 양식은 클라이언트 라이브러리를 사용합니다. `en` (영어) 언어(있는 경우). 단, 존재하지 않는 경우 적응형 양식은 다음 용도로 사전을 사용합니다 `en` 로케일.
 
 
-로케일이 식별되면 적응형 양식에서 양식별 사전을 선택합니다. 요청된 로케일에 대한 양식 특정 사전을 찾을 수 없으면 적응형 양식이 작성된 언어용 사전을 사용합니다.
+로케일이 식별되면 적응형 양식에서 양식별 사전을 선택합니다. 요청된 로케일에 대한 양식 특정 사전을 찾을 수 없는 경우 적응형 양식이 작성된 언어로 사전을 사용합니다.
 
 로케일 정보가 없으면 적응형 양식이 양식의 원래 언어로 전달됩니다. 원래 언어는 적응형 양식을 개발하는 동안 사용되는 언어입니다.
 
-Get [샘플 클라이언트 라이브러리](/help/forms/assets/locale-support-sample.zip) 새 로케일에 대한 지원을 추가합니다. 필요한 로케일에서 폴더 콘텐츠를 변경해야 합니다.
+가져오기 [샘플 클라이언트 라이브러리](/help/forms/assets/locale-support-sample.zip) 새 로케일에 대한 지원을 추가합니다. 필요한 로케일에서 폴더 콘텐츠를 변경해야 합니다.
 
 ## 새로운 현지화 기능 지원을 위한 모범 사례 {#best-practices}
 

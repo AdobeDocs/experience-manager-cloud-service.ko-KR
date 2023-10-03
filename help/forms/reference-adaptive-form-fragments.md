@@ -1,16 +1,14 @@
 ---
-title: 적응형 양식 단편 참조
-seo-title: Reference Adaptive Form Fragments
-description: AEM Forms은 양식을 빠르게 만들기 위해 에셋으로 사용할 수 있는 적응형 양식 조각을 제공합니다.
-seo-description: AEM Forms provides Adaptive Form Fragments that you can use as assets to create a form quickly.
+title: 참조 적응형 양식 조각이란 무엇입니까?
+description: AEM Forms은 에셋으로 사용하여 양식을 신속하게 만들 수 있는 적응형 양식 조각을 제공합니다.
 uuid: 85401274-6691-4726-8b70-b93fd46de053
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '423'
 ht-degree: 2%
 
 ---
@@ -60,7 +58,7 @@ ht-degree: 2%
 ## 신용 카드 정보 {#credit-card-information}
 
 결제를 처리하는 데 사용할 수 있는 신용 카드 정보를 캡처하는 필드를 포함합니다.
-[ ![신용 카드 정보 조각](assets/cc-info.png)](assets/cc-info-1.png)
+[![신용 카드 정보 조각](assets/cc-info.png)](assets/cc-info-1.png)
 
 ## 현재 고용 {#current-employment}
 

@@ -1,17 +1,17 @@
 ---
 title: 사용 방법 [!DNL Adobe Sign] 적응형 양식에서?
-description: 전자 서명( )을 활성화할 수 있습니다.[!DNL Adobe Sign]) 서명 워크플로를 자동화하고, 단일 및 다중 서명 프로세스를 간소화하며, 모바일 장치에서 양식에 전자적으로 서명하는 적응형 양식용 워크플로입니다.
+description: 적응형 양식의 Adobe Sign을 사용하여 양식 수신자가 선택한 장치 및 위치에서 양식에 전자 서명할 수 있습니다.
 topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '3173'
+source-wordcount: '3169'
 ht-degree: 3%
 
 ---
-
 
 # 사용 [!DNL Adobe Sign] 적응형 양식 {#using-adobe-sign-in-an-adaptive-form}
 
@@ -203,7 +203,7 @@ Adobe Sign 계약에 대해 한 명 또는 여러 명의 수신자가 있을 수
      >
      >첫 번째 수신자 또는 유일한 수신자(단일 수신자가 있는 경우)의 이메일 주소가 와 동일하지 않은지 확인합니다. [!DNL Adobe Sign] AEM Cloud Service 구성에 사용되는 계정입니다.
 
-   * **[!UICONTROL 수신자 인증 방법]:** Adobe Sign 계약을 열기 전에 수신자를 인증하는 방법을 지정하십시오. 전화, 기술 자료, 소셜 ID 기반 인증 및 [정부 ID](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html) 대상 [!DNL Adobe Acrobat Sign]. 대상 [!DNL Adobe Acrobat Sign for Government] 전화와 지식 기반 인증 중에서 선택할 수 있습니다.
+   * **[!UICONTROL 수신자 인증 방법]:** Adobe Sign 계약을 열기 전에 수신자를 인증하는 방법을 지정하십시오. 전화, 기술 자료, 소셜 ID 기반 인증 및 [정부 ID](https://helpx.adobe.com/kr/sign/using/adobesign-authentication-government-id.html) 대상 [!DNL Adobe Acrobat Sign]. 대상 [!DNL Adobe Acrobat Sign for Government] 전화와 지식 기반 인증 중에서 선택할 수 있습니다.
 
    >[!NOTE]
    >

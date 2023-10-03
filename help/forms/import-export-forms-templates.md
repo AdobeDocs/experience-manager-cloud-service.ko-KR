@@ -1,11 +1,11 @@
 ---
-title: 적응형 Forms 및 AEM Forms 에셋 가져오기 또는 내보내기
-description: 적응형 Forms 및 자산을 AEM 인스턴스로 및 인스턴스에서 마이그레이션하고자 하십니까? 여기에서 적응형 Forms, PDF forms, 테마 및 기타 지원 에셋을 가져오고 내보내는 방법을 알아보십시오. [!DNL AEM Forms] 인스턴스.
-seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance.
+title: 에서 적응형 Forms, PDF forms 및 기타 에셋을 가져오고, 내보내고, 구성하는 방법에 대해 알아봅니다[!DNL AEM Forms] 인스턴스
+description: 적응형 Forms, PDF forms, 테마 및 기타 지원 자산을 AEM 인스턴스로/에서 마이그레이션하는 방법에 대해 알아봅니다.
 topic-tags: forms-manager
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1199'
 ht-degree: 1%
 
 ---

@@ -1,14 +1,14 @@
 ---
 title: 구성 방법 [!DNL Microsoft Dynamics] OData?
-description: 에 정의된 엔티티, 속성 및 서비스를 기반으로 양식 데이터 모델을 만드는 방법을 알아봅니다. [!DNL Microsoft Dynamics] 서비스. 양식 데이터 모델을 사용하여 와 상호 작용하는 적응형 Forms을 만들 수 있습니다 [!DNL Microsoft Dynamics] 비즈니스 워크플로를 활성화하는 서버입니다.
+description: 에 정의된 엔티티, 속성 및 서비스를 기반으로 양식 데이터 모델을 만드는 방법에 대해 알아봅니다. [!DNL Microsoft Dynamics] 서비스.
 feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 2%
+source-wordcount: '982'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 ![데이터 통합](assets/data-integeration.png)
@@ -122,7 +122,7 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. 에서 OData 서비�
 >
 >를 구성하는 단계별 지침입니다. [!DNL Microsoft Dynamics 365], 온라인 또는 온프레미스에서 다음을 참조하십시오. [[!DNL Microsoft Dynamics] OData 구성](ms-dynamics-odata-configuration.md).
 
-1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Services > 데이터 소스]**. 클라우드 구성을 만들려는 폴더를 탭하여 선택합니다.
+1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Service > 데이터 소스]**. 클라우드 구성을 만들려는 폴더를 탭하여 선택합니다.
 
    다음을 참조하십시오 [클라우드 서비스 구성을 위한 폴더 구성](#cloud-folder) 클라우드 서비스 구성을 위한 폴더 만들기 및 구성에 대한 정보를 제공합니다.
 

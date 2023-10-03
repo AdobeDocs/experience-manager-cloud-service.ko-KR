@@ -1,12 +1,12 @@
 ---
-title: AEM Sites 편집기를 사용하여 적응형 양식 만들기 또는 추가
-description: AEM Sites 페이지에서 적응형 양식(핵심 구성 요소)을 사용하여 AEM Sites 페이지를 종료하지 않고 양식을 작성하고 제출할 수 있습니다.
+title: AEM Sites 페이지에서 적응형 양식 핵심 구성 요소를 추가하거나 만드는 방법
+description: AEM Sites 페이지에서 적응형 양식 핵심 구성 요소를 사용하여 AEM Sites 페이지를 종료하지 않고 양식을 작성하고 제출합니다.
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '2129'
+source-wordcount: '2131'
 ht-degree: 6%
 
 ---
@@ -95,7 +95,7 @@ AEM Sites 페이지에서 적응형 Forms 구성 요소를 사용하려면 AEM A
 
 #### 적응형 양식 컨테이너 속성 구성 {#configure-additional-settings-container}
 
-의 고급 설정을 사용자 지정할 수 있습니다. [!UICONTROL 적응형 양식 컨테이너] 구성 요소. 예를 들어
+의 고급 설정을 사용자 지정할 수 있습니다. [!UICONTROL 적응형 양식 컨테이너] 구성 요소. 예:
 
 * 사이트 페이지에 미리 채워진 값이 있는 적응형 양식을 로드하도록 미리 채우기 서비스를 구성할 수 있습니다.
 * 적응형 양식을 데이터 소스와 연결하도록 데이터 모델 설정을 구성할 수 있습니다.
@@ -263,7 +263,7 @@ AEM Sites 페이지에서 [레이아웃 모드](https://experienceleague.adobe.c
 
 AEM sites 페이지는 적응형 양식에 대한 참조를 유지 관리합니다. AEM Sites 페이지를 번역하면 를 사용하여 적응형 양식 및 관련 참조된 자산을 자동으로 번역합니다. [번역 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/managing-projects.html?lang=en#adding-pages-assets-to-a-translation-job) 다른 언어로.
 
-## 우수 사례 {#best-practices}
+## 모범 사례 {#best-practices}
 
 * 원래 양식의 머리글 및 바닥글은 포함된 양식에 포함되지 않습니다.
 * 포함된 양식의 사용자 초안 및 제출은 Forms 포털의 초안 및 제출된 Forms 탭에서 지원되고 볼 수 있습니다.

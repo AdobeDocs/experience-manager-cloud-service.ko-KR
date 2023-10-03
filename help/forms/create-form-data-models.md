@@ -1,13 +1,13 @@
 ---
 title: 양식 데이터 모델을 만드는 방법
-description: Experience Manager Forms 데이터 통합은 양식 데이터 모델을 만들고 작업할 수 있는 직관적인 사용자 인터페이스를 제공합니다. 구성된 데이터 소스를 사용하거나 사용하지 않고 양식 데이터 모델을 만드는 방법을 알아봅니다.
+description: 적응형 양식 또는 AEM Workflow를 사용하여 양식 데이터 모델(FDM)을 만들고, 데이터를 데이터 소스로 전송하거나 검색하는 방법에 대해 알아봅니다.
 feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1544'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 
@@ -120,7 +120,7 @@ PID로 OSGi 출하 시 구성 파일 생성 `org.apache.sling.caconfig.impl.over
       1. 로컬 개발 인스턴스에서 `/system/console/configMgr`를 클릭하고, 다음과 같은 이름의 공장 OSGi 구성을 선택합니다. **[!UICONTROL Apache Sling 컨텍스트 인식 구성 재정의 공급자: OSGi 구성]**.
       1. 설명을 입력합니다.
       1. 선택 **[!UICONTROL 활성화됨]**.
-      1. 재정의에서 sling 재정의 구문에서 환경에 따라 변경해야 하는 필드를 제공합니다. 자세한 내용은 [Apache Sling 컨텍스트 인식 구성 - 재정의](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). (예: `cloudconfigs/fdm/{configName}/url="newURL"`)
+      1. 재정의에서 sling 재정의 구문에서 환경에 따라 변경해야 하는 필드를 제공합니다. 자세한 내용은 [Apache Sling 컨텍스트 인식 구성 - 재정의](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). 예: `cloudconfigs/fdm/{configName}/url="newURL"`
 을(를) 선택하여 여러 재정의를 추가할 수 있습니다. **[!UICONTROL +]**.
       1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
       1. OSGi 구성 JSON을 가져오려면 의 단계를 따릅니다. [AEM SDK 빠른 시작을 사용하여 OSGi 구성 생성](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).

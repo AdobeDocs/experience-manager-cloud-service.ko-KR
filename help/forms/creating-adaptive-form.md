@@ -1,14 +1,14 @@
 ---
 title: 적응형 Forms을 만드는 방법
-description: 을 사용하여 적응형 양식을 만드는 방법 알아보기 [!DNL Experience Manager Forms]. 적응형 Forms은 정보 수집 및 처리를 간소화하는 반응형 HTML 5 양식입니다. 양식 데이터 모델 및 XML 또는 JSON 스키마를 기반으로 적응형 양식을 만드는 방법에 대해 자세히 알아보십시오.
+description: 정보 수집 및 처리를 간소화하는 적응형 양식을 만드는 방법에 대해 알아봅니다. 또한 양식 데이터 모델을 기반으로 적응형 양식을 만드는 방법에 대해 알아봅니다.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 89%
+source-wordcount: '1556'
+ht-degree: 93%
 
 ---
 
@@ -100,7 +100,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
    * **양식 데이터 모델**: [양식 데이터 모델](data-integration.md)을 통해 서로 다른 데이터 소스의 엔티티와 서비스를 적응형 양식으로 통합할 수 있습니다. 생성 중인 적응형 양식에 여러 데이터 소스에서의 데이터 가져오기 및 쓰기 작업이 포함된 경우 양식 데이터 모델을 선택합니다.
 
-   * **JSON 스키마**: [JSON 스키마](adaptive-form-json-schema-form-model.md)는 조직의 백엔드 시스템에서 데이터를 생성 또는 사용하는 구조를 나타냅니다. 스키마를 적응형 양식에 연결하고 해당 요소를 사용하여 동적 콘텐츠를 적응형 양식에 추가할 수 있습니다. 적응형 Forms을 작성할 때 콘텐츠 브라우저의 데이터 모델 개체 탭에서 스키마 요소를 사용할 수 있으며 모든 필드는 새로 만든 적응형 양식에도 추가됩니다.
+   * **JSON 스키마**: [JSON 스키마](adaptive-form-json-schema-form-model.md)는 조직의 백엔드 시스템에서 데이터를 생성 또는 사용하는 구조를 나타냅니다. 스키마를 적응형 양식에 연결하고 해당 요소를 사용하여 동적 콘텐츠를 적응형 양식에 추가할 수 있습니다. 스키마 요소는 적응형 양식 작성 시 콘텐츠 브라우저의 데이터 모델 오브젝트 탭에서 사용할 수 있고 모든 필드는 새로 만든 적응형 양식에 자동으로 추가되기도 합니다.
 
    기본적으로 데이터 모델의 모든 필드가 선택됩니다. 적응형 양식을 만들 때 선택한 모든 데이터 모델 필드가 해당되는 적응형 양식 구성 요소로 변환됩니다. 마법사는 적응형 양식에 포함되어야 하는 해당 필드만 선택할 수 있는 확인란을 제공합니다.
 
@@ -124,7 +124,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
    * **[!UICONTROL 이름:]** 양식의 이름을 지정합니다. 이름이 지정된 노드가 저장소에서 만들어집니다. 제목 입력이 시작되면 이름 필드 값이 자동으로 생성됩니다. 제안 값을 변경할 수 있습니다. 이름 필드에는 영숫자 문자, 하이픈 및 밑줄만 포함될 수 있습니다. 잘못된 모든 입력은 하이픈으로 대체됩니다.
    * **[!UICONTROL 경로:]** 적응형 양식을 저장할 위치를 지정합니다. 적응형 양식을 `/content/dam/formsanddocuments`에서 바로 저장하거나 `/content/dam/formsanddocuments/adaptiveforms`와 같은 폴더를 만들어 적응형 양식을 저장할 수 있습니다. 경로에서 사용하기 전에 폴더를 만들어야 합니다. **[!UICONTROL 경로:]** 필드는 폴더를 자동으로 만들지 않습니다.
 
-1. **[!UICONTROL 만들기]**&#x200B;를 탭합니다. 적응형 양식을 만들고 적응형 양식 편집기에서 엽니다. 편집기에 템플릿에서 사용 가능한 콘텐츠가 표시됩니다. 또한 필요에 따라 새로 만든 양식을 사용자 지정할 수 있는 사이드바가 표시됩니다.
+1. **[!UICONTROL 만들기]**&#x200B;를 탭합니다. 적응형 양식을 만들고 적응형 양식 편집기에서 엽니다. 편집기에 템플릿에서 사용 가능한 콘텐츠가 표시됩니다. 또한 요구 사항에 따라 새로 만든 양식을 사용자 정의할 수 있는 사이드바가 표시됩니다.
 
    적응형 양식 유형에 따라 연결된 <!--XFA form template, XML schema or --> JSON 스키마 또는 양식 데이터 모델에 존재하는 양식 요소가 사이드바에 있는 **[!UICONTROL 콘텐츠 브라우저]**&#x200B;의 **[!UICONTROL 데이터 모델 오브젝트]** 탭에 표시됩니다. 이러한 요소를 드래그 앤 드롭하여 적응형 양식을 작성할 수도 있습니다.
 

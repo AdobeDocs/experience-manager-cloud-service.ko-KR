@@ -1,25 +1,22 @@
 ---
-title: 적응형 양식 필드 미리 채우기
-seo-title: Prefill Adaptive Form fields
-description: 기존 데이터를 사용하여 적응형 양식의 필드를 미리 채웁니다.
-seo-description: With Adaptive Forms, you users can prefill basic information in a form by logging in with their social profiles. This article describes how you can accomplish this.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+title: 적응형 양식 필드를 미리 채우는 방법
+description: 기존 데이터를 사용하여 적응형 양식의 필드를 미리 채우면 사용자가 소셜 프로필로 로그인하여 양식의 기본 정보를 미리 채울 수 있습니다.
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '2025'
-ht-degree: 2%
+source-wordcount: '2042'
+ht-degree: 4%
 
 ---
 
 # 적응형 양식 필드 미리 채우기{#prefill-adaptive-form-fields}
 
-<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 ## 소개 {#introduction}
@@ -28,7 +25,7 @@ ht-degree: 2%
 
 ## 미리 채우기 데이터 구조 {#the-prefill-structure}
 
-적응형 양식에는 바인딩된 필드와 바인딩되지 않은 필드가 혼합되어 있을 수 있습니다. 바인딩된 필드는 콘텐츠 파인더 탭에서 드래그하고 비어 있지 않은 필드를 포함합니다 `bindRef` 필드 편집 대화 상자의 속성 값입니다. 바인딩되지 않은 필드는 Sidekick의 구성 요소 브라우저에서 직접 드래그되며 비어 있음 `bindRef` 값.
+적응형 양식에는 바인딩된 필드와 바인딩되지 않은 필드가 혼합되어 있을 수 있습니다. 바인딩된 필드는 콘텐츠 파인더 탭에서 드래그하고 비어 있지 않은 필드를 포함합니다 `bindRef` 필드 편집 대화 상자의 속성 값입니다. 바인딩되지 않은 필드는 Sidekick의 구성 요소 브라우저에서 직접 드래그되며 비어 있습니다. `bindRef` 값.
 
 적응형 양식의 바인딩된 필드와 바인딩되지 않은 필드를 모두 미리 채울 수 있습니다. 미리 채우기 데이터에는 적응형 양식의 바인딩된 필드와 바인딩되지 않은 필드를 모두 미리 채우는 afBoundData 섹션과 afUnBoundData 섹션이 포함됩니다. 다음 `afBoundData` 섹션에는 바인딩된 필드 및 패널의 미리 채우기 데이터가 포함됩니다. 이 데이터는 연결된 양식 모델 스키마와 호환되어야 합니다.
 
@@ -248,7 +245,7 @@ JSON 스키마 모델을 사용하는 필드의 경우, 데이터는 아래 샘�
   }
 ```
 
-구성의 값을 설정하려면 다음을 수행합니다. [AEM SDK를 사용하여 OSGi 구성 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) 및 [구성 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) Cloud Service 인스턴스로 이동합니다.
+구성의 값을 설정하려면 다음을 수행합니다. [AEM SDK를 사용하여 OSGi 구성 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ko#generating-osgi-configurations-using-the-aem-sdk-quickstart) 및 [구성 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ko#deployment-process) Cloud Service 인스턴스로 이동합니다.
 
 >[!NOTE]
 >

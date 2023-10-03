@@ -1,10 +1,10 @@
 ---
-title: 알려진 문제 및 모범 사례 고려 사항
-description: 커뮤니케이션 모범 사례, 알려진 문제 및 제한 사항
+title: AEM Forms의 알려진 문제 및 모범 사례 고려 사항
+description: AEM Forms Communication API에 대한 알려진 문제 및 모범 사례를 고려합니다.
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1716'
 ht-degree: 0%
 
 ---
@@ -202,4 +202,4 @@ AEM Forms 출력 서비스를 사용하여 템플릿(XFA 또는 PDF)을 고객 �
 **Where is data hosted?** -->
 
 **여러 배치 작업을 동시에 실행할 수 있습니까?**
-예. 여러 배치 작업을 동시에 실행할 수 있습니다. 모든 작업에 대해 항상 다른 소스 및 대상 폴더를 사용하여 충돌을 피하십시오.
+예. 여러 배치 작업을 동시에 실행할 수 있습니다. 모든 작업에 대해 항상 다른 소스 및 대상 폴더를 사용하여 충돌을 방지하십시오.

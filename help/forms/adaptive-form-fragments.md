@@ -1,16 +1,14 @@
 ---
 title: 적응형 양식 단편
-seo-title: Adaptive Form Fragments
-description: 적응형 Forms은 적응형 양식에서 사용할 패널 또는 필드 그룹과 같은 양식 세그먼트를 만드는 메커니즘을 제공합니다. 기존 패널을 조각으로 저장할 수도 있습니다.
-seo-description: Adaptive Forms provides a mechanism to create a form segment, such as a panel or a group of fields, as use it in any Adaptive Form. You can also save an existing panel as fragment.
+description: 양식 조각은 양식의 모듈식 재사용 가능한 구성 요소입니다. 효율적인 양식 어셈블리를 위해 양식 조각을 빌드하고 여러 양식에서 재사용하는 방법에 대해 알아봅니다.
 uuid: bb4830b5-82a0-4026-9dae-542daed10e6f
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 17df7ef15fbd4077201f7e0678ffc9ea2732863d
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '2028'
+source-wordcount: '2018'
 ht-degree: 1%
 
 ---

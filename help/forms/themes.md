@@ -1,24 +1,24 @@
 ---
-title: 테마를 만들고 사용하여 적응형 양식 스타일링
-description: 테마를 사용하여 적응형 양식에 스타일을 지정하고 시각적 ID를 제공할 수 있습니다. 여러 적응형 Forms에서 테마를 공유할 수 있습니다.
+title: 테마를 만들고 사용하여 적응형 양식의 스타일을 지정하는 방법
+description: 적응형 양식 테마를 사용하여 적응형 양식에 스타일을 지정하고 시각적 ID를 제공합니다. 여러 적응형 Forms에서 테마를 공유할 수 있습니다.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '5576'
-ht-degree: 1%
+source-wordcount: '5578'
+ht-degree: 3%
 
 ---
 
 # 테마 만들기 및 사용 {#creating-and-using-themes}
 
-<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
 | AEM as a Cloud Service | 이 문서 |
 
-테마를 만들고 적용하여 적응형 양식을 스타일링할 수 있습니다<!-- or an interactive communication-->. 테마에는 구성 요소 및 패널에 대한 스타일 지정 세부 사항이 포함되어 있습니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬 및 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일이 해당 구성 요소에 반영됩니다. 테마는 적응형 양식에 대한 참조 없이 독립적으로 관리됩니다<!-- or interactive communication -->.
+테마를 만들고 적용하여 적응형 양식을 스타일링할 수 있습니다<!-- or an interactive communication-->. 테마에는 구성 요소 및 패널에 대한 스타일 지정 세부 사항이 포함되어 있습니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일은 해당 구성 요소에 반영됩니다. 테마는 적응형 양식에 대한 참조 없이 독립적으로 관리됩니다<!-- or interactive communication -->.
 
 다운로드하여 설치할 수 있습니다. [!DNL AEM Forms] 다음에서 콘텐츠 패키지 참조: [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 포털을 통해 참조 테마 및 템플릿을 환경으로 가져올 수 있습니다.
 
@@ -488,8 +488,8 @@ Cloud Service 인스턴스에서 만든 테마:
 
 Experience Manager에서 Adobe Fonts을 구성하려면 다음 단계를 수행하십시오.
 
-1. 작성자 인스턴스에서 ![Adobe Experience Manager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager ]**>**[!UICONTROL &#x200B;도구&#x200B;]**![망치](assets/hammer.png) >**[!UICONTROL &#x200B;배포&#x200B;]**>**[!UICONTROL  Cloud Services ]**.
-1. 다음에서 **[!UICONTROL Cloud Services]** 페이지에서 로 이동하여 **[!UICONTROL Adobe Fonts]** 옵션을 선택합니다. 구성 폴더를 열고 **[!UICONTROL 만들기]**.
+1. 작성자 인스턴스에서 ![Adobe Experience Manager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager ]**>**[!UICONTROL &#x200B;도구&#x200B;]**![망치](assets/hammer.png) >**[!UICONTROL &#x200B;배포&#x200B;]**>**[!UICONTROL  Cloud Service ]**.
+1. 다음에서 **[!UICONTROL Cloud Service]** 페이지에서 로 이동하여 **[!UICONTROL Adobe Fonts]** 옵션을 선택합니다. 구성 폴더를 열고 **[!UICONTROL 만들기]**.
 1. 다음에서 **[!UICONTROL 구성 만들기]** 대화 상자에서 구성의 제목을 지정하고 **[!UICONTROL 만들기]**.
 
    구성 페이지로 리디렉션됩니다.

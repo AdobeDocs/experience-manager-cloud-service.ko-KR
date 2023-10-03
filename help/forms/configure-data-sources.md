@@ -1,13 +1,13 @@
 ---
 title: 데이터 소스를 구성하는 방법
-description: Experience Manager Forms 데이터 통합을 통해 서로 다른 데이터 소스를 구성하고 연결할 수 있습니다. RESTful 웹 서비스, SOAP 기반 웹 서비스 및 OData 서비스를 데이터 소스로 구성하고 이를 사용하여 양식 데이터 모델을 만드는 방법에 대해 알아봅니다.
+description: RESTful 웹 서비스, SOAP 기반 웹 서비스 및 OData 서비스를 양식 데이터 모델의 데이터 소스로 구성하는 방법에 대해 알아봅니다.
 feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '2210'
+source-wordcount: '2193'
 ht-degree: 3%
 
 ---
@@ -106,7 +106,7 @@ RESTful, SOAP 및 OData 서비스에 대한 클라우드 서비스를 구성하�
 
 클라우드 서비스 구성에 대한 폴더를 구성하려면 다음을 수행합니다.
 
-1. 다음으로 이동 **[!UICONTROL 도구 > 일반 > 구성 브라우저]**.
+1. **[!UICONTROL 도구 > 일반 > 구성 브라우저]**&#x200B;로 이동합니다.
    * 다음을 참조하십시오. [구성 브라우저](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html) 설명서 를 참조하십시오.
 1. 클라우드 구성에 대한 전역 폴더를 활성화하려면 다음을 수행하거나 클라우드 서비스 구성에 대한 다른 폴더를 만들고 구성하려면 이 단계를 건너뜁니다.
 
@@ -114,7 +114,7 @@ RESTful, SOAP 및 OData 서비스에 대한 클라우드 서비스를 구성하�
 
    1. 다음에서 **[!UICONTROL 구성 속성]** 대화 상자, 활성화 **[!UICONTROL 클라우드 구성]**.
 
-   1. 누르기 **[!UICONTROL 저장 및 닫기]** 구성을 저장하고 대화 상자를 종료합니다.
+   1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 탭하여 구성을 저장하고 대화 상자를 종료합니다.
 
 1. 다음에서 **[!UICONTROL 구성 브라우저]**, 탭 **[!UICONTROL 만들기]**.
 1. 다음에서 **[!UICONTROL 구성 만들기]** 대화 상자에서 폴더의 제목을 지정하고 활성화합니다. **[!UICONTROL 클라우드 구성]**.

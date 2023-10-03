@@ -1,15 +1,14 @@
 ---
 title: 적응형 Forms 캐시 구성
-description: 적응형 Forms 캐시는 특히 적응형 Forms 및 문서를 위해 설계되었습니다. 클라이언트에서 적응형 양식 또는 문서를 렌더링하는 데 필요한 시간을 줄이기 위한 목적으로 적응형 Forms 및 적응형 문서를 캐시합니다.
+description: 적응형 Forms 캐시는 적응형 양식 또는 문서를 렌더링하는 데 필요한 시간을 줄이기 위한 목적으로 적응형 Forms 및 문서용으로 설계되었습니다.
 uuid: ba8f79fd-d8dc-4863-bc0d-7c642c45505c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
-docset: aem65
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '965'
 ht-degree: 1%
 
 ---
@@ -91,7 +90,7 @@ Dispatcher에서 적응형 Forms 캐싱을 활성화하고 구성할 수 있도�
 
    * 적응형 양식은 업데이트된 버전의 양식이 게시되지 않을 때까지 캐시에 남아 있습니다.
 
-   * 적응형 양식에서 참조된 리소스의 새 버전이 게시되면 영향을 받은 적응형 양식이 자동으로 무효화됩니다. 참조된 리소스의 자동 무효화에 대한 몇 가지 예외가 있습니다. 예외에 대한 해결 방법은 를 참조하십시오. [문제 해결](#troubleshooting) 섹션.
+   * 적응형 양식에서 참조된 리소스의 새 버전이 게시되면 영향을 받은 적응형 양식이 자동으로 무효화됩니다. 참조된 리소스의 자동 무효화에 대한 몇 가지 예외가 있습니다. 예외에 대한 해결 방법은 [문제 해결](#troubleshooting) 섹션.
 1. [아래 규칙 dispatcher.any 또는 사용자 지정 규칙 파일을 추가합니다.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-documents-to-cache). 캐싱을 지원하지 않는 URL은 제외합니다. 예를 들어 대화형 통신.
 
    ```JSON

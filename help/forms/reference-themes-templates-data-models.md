@@ -1,19 +1,19 @@
 ---
-title: 참조 테마, 템플릿 및 양식 데이터 모델
+title: AEM Forms의 테마, 템플릿 및 양식 데이터 모델 참조
 seo-title: Reference Themes, Templates, and Form Data models
-description: AEM Forms은 소프트웨어 배포에서 가져올 수 있는 적응형 양식 테마, 템플릿 및 양식 데이터 모델을 제공합니다
+description: AEM Forms은 양식을 신속하게 만들 수 있도록 샘플 적응형 양식 테마, 템플릿 및 양식 데이터 모델을 제공합니다.
 seo-description: AEM Forms provides adaptive forms themes, templates, and form data models that you can get from Software Distribution
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 2%
+source-wordcount: '839'
+ht-degree: 23%
 
 ---
 
 # 참조 테마, 템플릿 및 양식 데이터 모델 {#reference-themes-templates-and-data-models}
 
-<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 AEM Forms as a Cloud Service에서는 여러 참조 테마, 템플릿 및 양식 데이터 모델을 제공하여 적응형 Forms 만들기를 빠르게 시작할 수 있습니다. 다음을 다운로드할 수 있습니다. [소프트웨어 배포 포털의 콘텐츠 패키지 참조](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) 및 사용 [패키지 관리자](/help/implementing/developing/tools/package-manager.md) 을(를) 설치하려면 [참조 콘텐츠 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) 프로덕션, 개발 또는 로컬 개발 환경에서 이러한 참조 자산을 사용자 환경에 가져올 수 있습니다.
 
@@ -104,7 +104,7 @@ FSI 테마는 양식에 대한 미니멀하고 기능적인 모양을 강조합�
 * 기본
 * 비어 있음
 
-기본 템플릿을 사용하면 등록 양식을 신속하게 만들 수 있습니다. 적응형 Forms 기초 구성 요소의 기능을 미리 보는 데에도 사용할 수 있습니다. 또한 데이터의 섹션별 표시를 위한 마법사 레이아웃을 제공합니다. 빈 템플릿을 사용하여 빈 캔버스에서 적응형 양식을 만들기 시작합니다.
+기본 템플릿을 사용하면 등록 양식을 신속하게 만들 수 있습니다. 적응형 Forms 기초 구성 요소의 기능을 미리 보는 데에도 사용할 수 있습니다. 데이터를 섹션별로 표시하기 위한 마법사 레이아웃이 제공됩니다. 빈 템플릿을 사용하여 빈 캔버스에서 적응형 양식을 만들기 시작합니다.
 
 
 ## 참조 양식 데이터 모델 {#reference-models}
@@ -116,7 +116,7 @@ FSI 테마는 양식에 대한 미니멀하고 기능적인 모양을 강조합�
 * Microsoft Dynamics 365 및 Salesforce 서버에 데이터를 쿼리하고 적응형 Forms을 미리 채웁니다.
 * Microsoft Dynamics 365 및 Salesforce 서버에서 데이터를 읽습니다.
 
-다음을 설치하여 다음 양식 데이터 모델을 가져올 수 있습니다. [참조 컨텐츠 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
+[참조 콘텐츠 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)를 설치하여 다음 양식 데이터 모델을 가져올 수 있습니다.
 
 * Microsoft® Dynamics 365
 * Salesforce

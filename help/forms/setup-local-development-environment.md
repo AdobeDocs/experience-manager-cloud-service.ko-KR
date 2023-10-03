@@ -1,9 +1,10 @@
 ---
-title: AEM Forms을 위한 로컬 개발 환경 설정
+title: AEM Forms에 대한 로컬 개발 환경을 설정하는 방법
 description: Adobe Experience Manager Forms as a Cloud Service을 위한 로컬 개발 환경 설정
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+exl-id: 12877a77-094f-492a-af58-cffafecf79ae
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '2807'
+source-wordcount: '2810'
 ht-degree: 3%
 
 ---
@@ -292,7 +293,7 @@ Dispatcher 설정에 대한 자세한 지침은 [로컬 Dispatcher 도구 설정
 Experience Manager Forms에 대한 Dispatcher 캐시를 as a Cloud Service으로 구성하려면 다음 단계를 수행하십시오.
 
 1. AEM 프로젝트를 열고 다음으로 이동 `\src\conf.dispatcher.d\available_farms`
-1. 의 복사본 만들기 `default.farm` 파일. (예: `forms.farm`)
+1. 의 복사본 만들기 `default.farm` 파일. 예: `forms.farm`
 1. 새로 만든 을 엽니다. `forms.farm` 편집할 파일 및 다음 코드 바꾸기:
 
    ```json
