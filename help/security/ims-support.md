@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service에 대한 IMS 지원
 description: Adobe Experience Manager as a Cloud Service에 대한 이미지 관리 시스템 지원
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1993'
+source-git-commit: 361881807e8704dfcb27075365cb73a7f659c82d
+workflow-type: tm+mt
+source-wordcount: '1978'
 ht-degree: 100%
 
 ---
@@ -21,9 +21,7 @@ ht-degree: 100%
 >
 >Adobe IMS를 사용하여 AEM as a Cloud Service에 인증하는 방법에 대한 소개는 [관리자를 위한 AEM에 대한 액세스 구성](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem)을 참조하십시오. 또한 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필을 사용하여 AEM 및 해당 기능에 대한 액세스를 제어하는 방법도 알아봅니다. Adobe ID가 필요합니다.
 
->[!NOTE]
->
->현재 AEM에서는 프로필에 그룹을 할당할 수 없습니다. 대신 사용자를 개별적으로 추가해야 합니다.
+{{ims-group-profiles}}
 
 ## 주요 내용 {#key-highlights}
 

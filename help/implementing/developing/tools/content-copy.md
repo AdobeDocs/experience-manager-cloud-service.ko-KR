@@ -1,14 +1,13 @@
 ---
 title: 콘텐츠 복사 도구
 description: 컨텐츠 복사 도구를 사용하면 사용자가 필요에 따라 변화하는 컨텐츠를 AEM의 프로덕션 환경에서 테스트 목적으로 낮은 환경으로 as a Cloud Service으로 복사할 수 있습니다.
-exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
+source-git-commit: 361881807e8704dfcb27075365cb73a7f659c82d
 workflow-type: tm+mt
 source-wordcount: '1306'
 ht-degree: 38%
 
 ---
-
 
 # 콘텐츠 복사 도구 {#content-copy}
 
@@ -201,3 +200,5 @@ ht-degree: 38%
 * 콘텐츠 복사 도구는 버전 관리 기능이 없으며 마지막 콘텐츠 복사 작업 이후 콘텐츠 세트의 소스 환경에서 수정된 콘텐츠 또는 새로 작성된 콘텐츠를 자동으로 감지할 수 없습니다.
    * 콘텐츠 변경 사항으로만 대상 환경을 업데이트하려면 마지막 콘텐츠 복사 작업 이후 콘텐츠 세트를 만들어야 합니다. 그런 다음 마지막 콘텐츠 복사 작업 이후 변경된 소스 인스턴스의 경로를 지정합니다.
 * 버전 정보는 콘텐츠 사본에 포함되지 않습니다.
+
+{{ims-group-profiles}}

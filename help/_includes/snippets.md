@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8304ab7999ad467ef5966a6aec143416c8158f78
+source-git-commit: cada650e940aa941538a43ffb1f9a16d1f0b8a61
 workflow-type: tm+mt
-source-wordcount: '61'
-ht-degree: 60%
+source-wordcount: '83'
+ht-degree: 62%
 
 ---
 # 스니펫 {#snippets}
@@ -14,3 +14,9 @@ ht-degree: 60%
 ## Edge Delivery Services 작성 {#edge-delivery-authoring}
 
 [!BADGE Edge Delivery Services을 위한 AEM 컨텐츠를 만들려면 여기를 클릭하십시오.]{type=Positive url="/help/edge/overview.md" tooltip="Edge Delivery Services을 위한 AEM 컨텐츠 작성"}
+
+## 프로필에 그룹을 할당하기 위한 IMS 지원 {#ims-group-profiles}
+
+>[!NOTE]
+>
+>현재 AEM에서는 프로필에 그룹을 할당할 수 없습니다. 대신 사용자를 개별적으로 추가해야 합니다.
