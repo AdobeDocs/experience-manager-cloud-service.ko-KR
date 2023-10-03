@@ -5,7 +5,7 @@ exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 source-git-commit: 44a3f3c4ca08cffa06056ea85adc58e3cf1f2f1c
 workflow-type: tm+mt
 source-wordcount: '713'
-ht-degree: 25%
+ht-degree: 28%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 25%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction"
 >title="콘텐츠 추출"
->abstract="추출이란 소스 AEM(Adobe Experience Manager) 인스턴스에서 마이그레이션 세트라는 임시 영역으로 컨텐츠를 추출하는 것입니다. 마이그레이션 세트는 소스 AEM 인스턴스와 클라우드 서비스 AEM 인스턴스 간에 전송된 콘텐츠를 임시 저장할 수 있도록 Adobe가 제공하는 클라우드 저장소 영역입니다."
+>abstract="추출이란 소스 Adobe Experience Manager(AEM) 인스턴스에서 마이그레이션 세트라고 하는 임시 영역으로 콘텐츠를 추출하는 것입니다. 마이그레이션 세트는 소스 AEM 인스턴스와 클라우드 서비스 AEM 인스턴스 간에 전송된 콘텐츠를 임시 저장할 수 있도록 Adobe가 제공하는 클라우드 저장소 영역입니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ko-KR#top-up-extraction-process" text="추가 추출"
 
 
