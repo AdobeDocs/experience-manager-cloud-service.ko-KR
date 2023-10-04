@@ -1,15 +1,15 @@
 ---
-title: Cloud Service에 컨텐츠 수집
+title: 클라우드 서비스에 콘텐츠 수집
 description: Cloud Acceleration Manager 를 사용하여 마이그레이션 세트의 컨텐츠를 대상 Cloud Service 인스턴스로 수집하는 방법을 알아봅니다.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 5c482e5f883633c04d70252788b01f878156bac8
+source-git-commit: a6d19de48f114982942b0b8a6f6cbdc38b0d4dfa
 workflow-type: tm+mt
-source-wordcount: '2142'
+source-wordcount: '2191'
 ht-degree: 7%
 
 ---
 
-# Cloud Service에 컨텐츠 수집 {#ingesting-content}
+# 클라우드 서비스에 콘텐츠 수집 {#ingesting-content}
 
 ## Cloud Acceleration Manager의 수집 프로세스 {#ingestion-process}
 
@@ -20,9 +20,6 @@ ht-degree: 7%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html#top-up-extraction-process" text="추가 추출"
 
 Cloud Acceleration Manager를 사용하여 마이그레이션 세트를 수집하려면 아래 단계를 따르십시오.
-
->[!NOTE]
->이 수집에 대한 지원 티켓을 기록하는 것을 잊지 않았습니까? 다음을 참조하십시오 [컨텐츠 전송 도구 사용 전 중요 고려 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) 을 비롯한 여러 고려 사항이 수집에 도움이 됩니다.
 
 1. Cloud Acceleration Manager 로 이동합니다. 프로젝트 카드를 클릭하고 컨텐츠 전송 카드를 클릭합니다. 다음으로 이동 **수집 작업** 및 클릭 **새 수집**
 
@@ -120,21 +117,27 @@ Cloud Acceleration Manager를 사용하여 마이그레이션 세트를 수집�
 > 몇 가지 경우에 해당 토큰을 검색하는 것이 실제로 허용되지 않으므로 &quot;마이그레이션 토큰&quot; 필드가 표시됩니다. 수동으로 제공될 수 있게 함으로써, 이는 사용자가 어떠한 추가적인 도움 없이도 수집을 신속하게 시작할 수 있게 할 수 있다. 토큰을 제공하고 메시지가 여전히 나타나면, 토큰을 검색하는 것은 문제가 되지 않습니다.
 
 * AEM은 환경 상태를 as a Cloud Service으로 유지하며 경우에 따라 다양한 일반적인 이유로 마이그레이션 서비스를 다시 시작해야 합니다. 서비스를 다시 시작하는 경우에는 해당 서비스에 연결할 수 없지만 결국 사용할 수 있습니다.
-* 인스턴스에서 다른 프로세스가 실행되고 있을 수 있습니다. 예를 들어 Release Orchestrator에서 업데이트를 적용하는 경우 시스템이 사용 중이고 마이그레이션 서비스를 정기적으로 사용할 수 없습니다. 따라서 스테이지나 프로덕션 인스턴스가 손상될 가능성이 있으므로 수집 중에 업데이트를 일시 중지하는 것이 좋습니다.
+* 인스턴스에서 다른 프로세스가 실행되고 있을 수 있습니다. 예를 들어 다음과 같습니다. [AEM 버전 업데이트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) 업데이트를 적용하는 중입니다. 시스템이 사용 중이고 마이그레이션 서비스를 정기적으로 사용할 수 없습니다. 해당 프로세스가 완료되면 수집 시작을 다시 시도할 수 있습니다.
 * 다음과 같은 경우 [IP 허용 목록이 적용되었습니다.](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) cloud Manager를 통해 Cloud Acceleration Manager가 마이그레이션 서비스에 도달하는 것을 차단합니다. 주소가 동적이므로 수집에 IP 주소를 추가할 수 없습니다. 현재 유일한 해결 방법은 수집이 실행되는 동안 IP 허용 목록을 비활성화하는 것입니다.
 * 조사가 필요한 다른 이유가 있을 수 있다. 계속해서 수집이 실패하면 Adobe 고객 지원 센터에 문의하십시오.
 
-### Release Orchestrator를 통한 자동 업데이트가 여전히 활성화되어 있음
+### AEM 버전 업데이트 및 수집
 
-Release Orchestrator는 자동으로 업데이트를 적용하여 환경을 최신 상태로 자동 유지합니다. 수집이 수행될 때 업데이트가 트리거되면 환경 손상 등 예측할 수 없는 결과가 발생할 수 있습니다. 수집을 시작하기 전에 고객 지원 티켓을 기록하여 Release Orchestrator를 일시적으로 비활성화하는 것을 예약할 수 있는 좋은 이유입니다(위의 &quot;참고&quot; 참조).
+[AEM 버전 업데이트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) 최신 AEM as a Cloud Service 버전을 최신 상태로 유지하기 위해 환경에 자동으로 적용됩니다. 수집이 수행될 때 업데이트가 트리거되면 환경 손상 등 예측할 수 없는 결과가 발생할 수 있습니다.
 
-수집이 시작될 때 Release Orchestrator가 여전히 실행 중인 경우 사용자 인터페이스에 이 메시지가 표시됩니다. 필드를 확인하고 버튼을 다시 눌러 위험을 감수하고 계속 진행하도록 선택할 수 있습니다.
+대상 프로그램에 &quot;AEM 버전 업데이트&quot;가 온보딩되면 수집 프로세스는 시작하기 전에 해당 대기열을 비활성화하려고 시도합니다. 수집이 완료되면 버전 업데이트 프로그램 상태가 수집이 시작되기 전의 상태로 반환됩니다.
 
 >[!NOTE]
 >
-> 이제 Release Orchestrator가 개발 환경에 배포되고 있으므로 해당 환경에 대한 업데이트를 일시 중지해야 합니다.
+> &quot;AEM 버전 업데이트&quot;를 비활성화하기 위해 더 이상 지원 티켓을 기록할 필요가 없습니다.
 
-![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
+&quot;AEM 버전 업데이트&quot;가 활성화된 경우(즉, 업데이트가 실행 중이거나 실행 대기 중인 경우) 수집이 시작되지 않고 사용자 인터페이스에 다음 메시지가 표시됩니다. 업데이트가 완료되면 수집을 시작할 수 있습니다. Cloud Manager를 사용하여 프로그램 파이프라인의 현재 상태를 볼 수 있습니다.
+
+>[!NOTE]
+>
+> &quot;AEM 버전 업데이트&quot;는 환경의 파이프라인에서 실행되며 파이프라인이 지워질 때까지 대기합니다. 업데이트가 예상보다 오래 큐에 있는 경우 사용자 지정 워크플로우에 의도하지 않게 파이프라인이 잠겨 있지 않은지 확인하십시오.
+
+![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
 ### 고유성 제약 조건 위반으로 인한 추가 수집 실패
 

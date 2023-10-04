@@ -2,10 +2,10 @@
 title: 컨텐츠 전송 도구 사용에 대한 지침 및 우수 사례
 description: 콘텐츠 전송 도구 사용에 대한 지침과 모범 사례에 대해 알아봅니다.
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: 5f805122fb52d7f5268075bd7a6a0232e7e8d2ff
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 14%
+source-wordcount: '1432'
+ht-degree: 16%
 
 ---
 
@@ -78,12 +78,6 @@ ht-degree: 14%
 * 컨텐츠 전송 도구에서 전송한 사용자 및 그룹은 컨텐츠에서 권한을 충족하기 위해 필요한 사용자 및 그룹입니다. 다음 _추출_ 전체 복사 처리 `/home` 마이그레이션 세트에 추가되고 각 사용자의 이메일 주소에서 만든 필드를 추가하여 사용자 매핑을 수행합니다. 자세한 내용은 [사용자 매핑 및 사용자 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). 다음 _수집_ 프로세스는 마이그레이션된 콘텐츠 ACL에서 참조된 모든 사용자 및 그룹을 복사합니다. 다음을 참조하십시오 [폐쇄된 사용자 그룹 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) CUG(폐쇄형 사용자 그룹) 정책에 사용된 그룹에 대한 추가 고려 사항.
 
 * 추출 단계 중에 컨텐츠 전송 도구는 활성 AEM 소스 인스턴스에서 실행됩니다.
-
-* 완료 후 *추출* 컨텐츠 전송 프로세스의 단계 및 시작 전 *수집 단계* 컨텐츠를 AEM as a Cloud Service으로 수집 *단계* 또는 *프로덕션* 인스턴스: 지원 티켓을 기록합니다. Adobe에게 실행 의도를 알립니다 *수집* 따라서 Adobe이 작업 중에 중단이 발생하지 않도록 *수집* 프로세스. 계획보다 1주일 전에 지원 티켓을 기록하십시오. *수집* 날짜. 지원 티켓을 제출한 후 지원 팀에서 다음 단계에 대한 지침을 제공합니다. 다음 세부 정보가 포함된 지원 티켓을 제출할 수 있습니다.
-
-   * 다음을 시작할 정확한 날짜 및 예상 시간(표준 시간대 포함) *수집* 단계.
-   * 데이터를 수집할 환경 유형(스테이지 또는 프로덕션).
-   * 프로그램 ID.
 
 * 다음 *수집 단계* 작성자는 전체 작성자 배포를 축소합니다. 즉, 전체 수집 프로세스 중에는 작성자 AEM을 사용할 수 없습니다. 또한 를 실행하는 동안 Cloud Manager 파이프라인이 실행되지 않도록 하십시오. *수집* 단계.
 
