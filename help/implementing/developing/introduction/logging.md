@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service에 대한 로깅
 description: AEM용 로깅을 as a Cloud Service으로 사용하여 중앙 로깅 서비스의 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 7d4e1acee54ebcb1398bcc6ab83491e3fa6a8801
+source-git-commit: 8f20876be6b01e1994fb8f91d4a1b4a113588a3e
 workflow-type: tm+mt
-source-wordcount: '2669'
-ht-degree: 8%
+source-wordcount: '2657'
+ht-degree: 10%
 
 ---
 
@@ -502,11 +502,6 @@ Define DISP_LOG_LEVEL debug
 
 ## CDN 로그 {#cdn-log}
 
->[!NOTE]
->
->이 기능은 9월 초에 고객에게 점진적으로 출시되고 있습니다.
->
-
 AEM as a Cloud Service에서는 캐시 적중률 최적화를 포함한 사용 사례에 유용한 CDN 로그에 액세스할 수 있습니다. CDN 로그 형식은 사용자 지정할 수 없으며 정보, 경고 또는 오류와 같은 다양한 모드로 설정하는 개념이 없습니다.
 
 Splunk 전달 기능은 아직 CDN 로그를 지원하지 않습니다.
@@ -541,16 +536,16 @@ CDN 로그는 json 형식을 준수한다는 점에서 다른 로그와 구별�
 | *timestamp* | TLS 종료 후 요청이 시작된 시간입니다. |
 | *ttfb* | *Time To First Byte(첫 번째 바이트까지의 시간)*&#x200B;의 약어입니다. 요청이 시작된 후 응답 본문의 스트리밍이 시작되기까지의 시간 간격입니다. |
 | *cli_ip* | 클라이언트 IP 주소입니다. |
-| *cli_country* | 두 글자 [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) 클라이언트 국가의 알파-2 국가 코드. |
+| *cli_country* | 클라이언트 국가의 2글자 [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) Alpha-2 국가 코드입니다. |
 | *rid* | 요청을 고유하게 식별하는 데 사용되는 요청 헤더의 값입니다. |
 | *req_ua* | 해당 HTTP 요청을 담당하는 사용자 에이전트입니다. |
 | *host* | 요청이 의도한 대상 기관입니다. |
 | *url* | 쿼리 매개변수를 포함한 전체 경로입니다. |
-| *방법* | “GET” 또는 “POST”와 같은 클라이언트에서 전송한 HTTP 메서드입니다. |
+| *메서드* | “GET” 또는 “POST”와 같은 클라이언트에서 전송한 HTTP 메서드입니다. |
 | *res_ctype* | 리소스의 원래 미디어 유형을 나타내는 데 사용되는 콘텐츠 유형입니다. |
 | *cache* | 캐시의 상태입니다. 가능한 값은 HIT, MISS 또는 PASS입니다. |
 | *상태* | HTTP 상태 코드입니다(정수 값). |
-| *res_age* | 응답이 캐시된 시간(초)입니다(모든 노드에서). |
+| *res_age* | 모든 노드에서 응답이 캐시되는 데 소요되는 시간(초)입니다. |
 | *pop* | CDN 캐시 서버의 데이터센터입니다. |
 
 ## 로그 액세스 방법 {#how-to-access-logs}
