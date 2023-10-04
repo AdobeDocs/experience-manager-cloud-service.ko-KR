@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 1df4f371fe4a98b910634b4742d9ff1a9448674f
+source-git-commit: 00cd62aa64c183a0560326feaacda1db70627858
 workflow-type: tm+mt
-source-wordcount: '9442'
+source-wordcount: '9448'
 ht-degree: 2%
 
 ---
@@ -547,10 +547,11 @@ DASH(Digital Adaptive Streaming over HTTP)는 비디오 스트리밍에 대한 �
 
 **Dynamic Media 계정에서 DASH, 다중 자막 및 다중 오디오 트랙 지원을 활성화하려면 다음을 수행합니다.**
 
-1. [Admin Console을 사용하여 새 지원 사례 만들기 시작](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html).
+1. [Admin Console을 사용하여 새 지원 사례 만들기 시작](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. 지원 사례를 생성하려면 다음 정보를 제공하면서 지침을 따르십시오.
 
    * 기본 담당자 이름, 이메일, 전화.
+   * 프로그램 ID 및 환경 ID입니다.
    * Dynamic Media 계정 이름.
    * Experience Manager 6.5에서 Dynamic Media 계정에서 DASH, 다중 자막 및 다중 오디오 트랙 지원을 활성화하도록 지정합니다.
 
@@ -565,7 +566,7 @@ DASH(Digital Adaptive Streaming over HTTP)는 비디오 스트리밍에 대한 �
 
 ## Dynamic Media의 비디오에 대한 다중 자막 및 다중 오디오 트랙 지원 정보{#about-msma}
 
-Dynamic Media의 다중 자막 및 다중 오디오 트랙 기능을 사용하면 기본 비디오에 여러 자막 및 오디오 트랙을 쉽게 추가할 수 있습니다. 이 기능은 글로벌 대상자를 통해 비디오에 액세스할 수 있음을 의미합니다. 게시된 단일 기본 비디오를 여러 언어로 글로벌 대상자에게 사용자 지정하고 다양한 지리적 영역에 대한 액세스 가능성 지침을 준수할 수 있습니다. 작성자는 사용자 인터페이스의 단일 탭에서 자막 및 오디오 트랙을 관리할 수도 있습니다.
+Dynamic Media의 다중 자막 및 다중 오디오 트랙 기능을 사용하면 기본 비디오에 여러 자막 및 오디오 트랙을 쉽게 추가할 수 있습니다. 즉, 이러한 기능을 통해 글로벌 대상자는 비디오에 액세스할 수 있습니다. 여러 언어로 글로벌 대상자에게 게시된 하나의 기본 비디오를 사용자 정의하고 지역별 액세스 가능성 가이드라인을 준수할 수 있습니다. 작성자는 사용자 인터페이스의 단일 탭에서 자막 및 오디오 트랙을 관리할 수도 있습니다.
 
 ![Dynamic Media의 자막 및 오디오 트랙 탭과 업로드된 .VTT 자막 파일 및 업로드된 .MP3 비디오 오디오 트랙 파일을 보여 주는 표를 함께 제공합니다.](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab.png)
 
