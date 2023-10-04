@@ -4,7 +4,7 @@ description: 콘텐츠 조각에 대한 콘텐츠를 작성한 다음 목적에 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: e92e0d76ed5aa904c3e16bcfda13650fb6a8b5b6
+source-git-commit: b8206ffc0947de4fed085a03a6f90b5ac0f85aab
 workflow-type: tm+mt
 source-wordcount: '2253'
 ht-degree: 96%
@@ -27,8 +27,7 @@ ht-degree: 96%
 * 콘텐츠 조각을 통해 게재된 렌더링된 경험을 [미리보기](#preview-content-fragment)할 수 있습니다.
 * 편집기에서 [게시](#publish-content-fragment) 및 [게시 취소](#unpublish-content-fragment)할 수 있습니다.
 * 편집기에서 연결된 [언어 사본을 보고 열](#view-language-copies) 수 있습니다.
-* 편집기에서 [버전 세부 사항을 볼](#view-version-history) 수 있습니다.
-   * 선택한 버전으로 되돌릴 수도 있습니다.
+* 편집기에서 [버전 세부 사항을 볼](#view-version-history) 수 있습니다. 선택한 버전으로 되돌릴 수도 있습니다.
 * [상위 참조를 보고 열](#view-parent-references) 수 있습니다.
 * [구조 트리](#structure-tree)를 사용하여 콘텐츠 조각과 해당 참조의 계층적 보기를 실행할 수 있습니다.
 
