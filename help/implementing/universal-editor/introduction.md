@@ -1,18 +1,18 @@
 ---
-title: Universal Visual Editor 소개
-description: Universal Visual Editor(Universal Editor)가 Headless 및 헤드풀 환경의 WYSIWYG(what-you-see-is-what-you-get) 편집을 가능하게 하는 방법에 대해 알아봅니다. 콘텐츠 작성자가 탁월한 경험을 제공하고 콘텐츠 속도를 높이며 최신 개발자 경험을 제공하는 데 도움이 되는 방식에 대해 살펴보십시오.
+title: Universal Editor 소개
+description: 유니버설 편집기를 통해 Headless 및 Headful 환경의 WYSIWYG(보이는 그대로) 편집을 활성화하는 방법에 대해 알아봅니다. 콘텐츠 작성자가 탁월한 경험을 제공하고 콘텐츠 속도를 높이며 최신 개발자 경험을 제공하는 데 도움이 되는 방식에 대해 살펴보십시오.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
+source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 100%
+source-wordcount: '919'
+ht-degree: 96%
 
 ---
 
 
-# Universal Visual Editor 소개 {#introduction}
+# Universal Editor 소개 {#introduction}
 
-Universal Visual Editor(Universal Editor)가 Headless 및 헤드풀 환경의 WYSIWYG(what-you-see-is-what-you-get) 편집을 가능하게 하는 방법에 대해 알아봅니다. 콘텐츠 작성자가 탁월한 경험을 제공하고 콘텐츠 속도를 높이며 최신 개발자 경험을 제공하는 데 도움이 되는 방식에 대해 살펴보십시오.
+유니버설 편집기를 통해 Headless 및 Headful 환경의 WYSIWYG(보이는 그대로) 편집을 활성화하는 방법에 대해 알아봅니다. 콘텐츠 작성자가 탁월한 경험을 제공하고 콘텐츠 속도를 높이며 최신 개발자 경험을 제공하는 데 도움이 되는 방식에 대해 살펴보십시오.
 
 ## 배경 {#background}
 
@@ -62,9 +62,9 @@ Universal Editor를 사용하기 위한 구현 요구 사항은 매우 간단하
 * **콘텐츠 속도 증가** - 실무자의 관리 워크플로를 간소화해 주는 Universal Editor를 사용하면 미리보기 내에서 콘텐츠를 편집할 수 있습니다. 이때 해당 컨텍스트와 관련된 옵션만 표시하고 워크플로와 콘텐츠 소스를 분리하므로 실무자에게 도움이 됩니다.
 * **첨단 개발자 경험** - 실질적인 이기종 애플리케이션 환경을 지원하는 Universal Editor는 완전히 분리되고 기술에 구애받지 않으므로 개발자가 선호하는 기술 스택을 사용하여 경험을 구현할 수 있습니다.
 
-## Universal Visual Editor 및 콘텐츠 조각 편집기 {#universal-editor-content-fragment-editor}
+## Universal Editor와 콘텐츠 조각 편집기 {#universal-editor-content-fragment-editor}
 
-Universal Visual Editor와 콘텐츠 조각 모델 편집기는 유사한 편집 기능을 제공하는 것처럼 보일 수 있습니다. 그러나 두 편집기는 서로 매우 다른 기능을 제공하며 마케팅 실무자의 다른 작업을 담당합니다.
+얼핏 보면 Universal Editor와 콘텐츠 조각 편집기가 유사한 편집 기능을 제공하는 것처럼 보일 수 있습니다. 단, 두 편집기는 서로 매우 다른 기능을 제공하며 마케팅 실무자의 다른 작업을 담당합니다.
 
 ### 콘텐츠 조각 편집기 {#content-fragment-editor}
 
@@ -72,7 +72,7 @@ Universal Visual Editor와 콘텐츠 조각 모델 편집기는 유사한 편집
 
 * 수행해야 할 기본 작업은 콘텐츠 전략을 확장하는 것입니다.
 
-### Universal Visual Editor {#universal-editor}
+### Universal Editor  {#universal-editor}
 
 마케팅 실무자가 뛰어난 경험을 제공하기 위해 주어진 컨텍스트의 레이아웃에 맞는 콘텐츠를 만들고자 합니다.
 
@@ -89,7 +89,7 @@ Universal Editor에 예정된 향후 기능에 대한 자세한 내용은 Adobe 
 Universal Editor에 대해 자세히 알아보려면 다음 문서를 참조하십시오.
 
 * [Universal Editor로 콘텐츠 작성](authoring.md) - 콘텐츠 작성자가 Universal Editor를 사용하여 콘텐츠를 만드는 것이 얼마나 쉽고 직관적인지 알아봅니다.
-* [Universal Editor로 콘텐츠 게시](publishing.md) - Universal Visual Editor에서 콘텐츠를 게시하는 방법과 앱에서 게시된 콘텐츠를 처리하는 방법에 대해 알아봅니다.
+* [Universal Editor로 콘텐츠 게시](publishing.md) - Universal Editor에서 콘텐츠를 게시하는 방법과 앱에서 게시된 콘텐츠를 처리하는 방법에 대해 알아봅니다.
 * [AEM에서 Universal Editor 시작하기](getting-started.md) - Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 알아봅니다.
 * [Universal Editor 아키텍처](architecture.md) - Universal Editor의 아키텍처 및 해당 서비스와 계층 간에 데이터가 흐르는 방식에 대해 알아봅니다.
 * [속성 및 유형](attributes-types.md) - Universal Editor에 필요한 데이터 속성 및 유형에 대해 알아봅니다.
