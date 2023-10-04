@@ -3,13 +3,13 @@ title: 콘텐츠 조각 작성
 description: 콘텐츠 조각에 대한 콘텐츠를 작성한 다음 목적에 따라 해당 콘텐츠의 변형을 만드는 방법을 이해합니다. 이렇게 하면 Headless 게재 및 페이지 작성을 위한 유연성을 높일 수 있습니다.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
+exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
+source-git-commit: e92e0d76ed5aa904c3e16bcfda13650fb6a8b5b6
 workflow-type: tm+mt
-source-wordcount: '2249'
-ht-degree: 97%
+source-wordcount: '2253'
+ht-degree: 96%
 
 ---
-
 
 # 콘텐츠 조각 작성 {#authoring-content-fragments}
 
@@ -32,23 +32,9 @@ ht-degree: 97%
 * [상위 참조를 보고 열](#view-parent-references) 수 있습니다.
 * [구조 트리](#structure-tree)를 사용하여 콘텐츠 조각과 해당 참조의 계층적 보기를 실행할 수 있습니다.
 
->[!CAUTION]
+>[!WARNING]
 >
 >이 섹션에서 설명하는 편집기는 *온라인* Adobe Experience Manager(AEM) as a Cloud Service *에서만* 사용할 수 있습니다.
-
->[!CAUTION]
->
->콘텐츠 조각을 편집하려면 [적절한 권한](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)이 있어야 합니다. 문제가 발생하는 경우, 시스템 관리자에게 문의하십시오.
-> 
->예: `edit` 권한이 없는 경우, 편집기는 읽기 전용입니다.
-
->[!NOTE]
->
->[원본 콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-variations.md)에 대한 자세한 내용은 자산 설명서를 참조하십시오. **자산** 콘솔과 **콘텐츠 조각** 콘솔 모두에서 사용할 수 있습니다.
-
->[!NOTE]
->
->프로젝트 팀은 필요한 경우 편집기를 사용자 정의할 수 있습니다. 자세한 내용은 [콘텐츠 조각 콘솔 및 편집기 사용자 정의](/help/implementing/developing/extending/content-fragments-console-and-editor.md)를 참조하십시오.
 
 ## 콘텐츠 조각 편집기 {#content-fragment-editor}
 
@@ -76,12 +62,6 @@ ht-degree: 97%
    * **탭 플레이스홀더** 필드가 여기에 표시된 모델 내에서 정의되고 탐색에 사용될 수 있는 경우, 가로 또는 드롭다운 목록 중 하나로 표시됩니다.
 
 ![콘텐츠 조각 편집기 - 개요](assets/cf-authoring-overview.png)
-
->[!CAUTION]
->
->콘텐츠 조각 모델은 종종 **제목**&#x200B;과 **설명**&#x200B;으로 이름이 지정된 데이터 필드를 정의할 수 있습니다. 이러한 필드가 존재하는 경우, 해당 필드는 사용자 정의 필드이고 조각을 편집할 때 *중앙 패널*&#x200B;에서 업데이트할 수 있습니다.
->
->또한 콘텐츠 조각과 변형에는 **제목** 및 **설명**&#x200B;이라는 메타데이터 필드(변형 속성)가 있습니다. 이 필드는 콘텐츠 조각의 필수 부분이며 처음 조각이 생성될 때 정의됩니다. 조각을 편집할 때 *오른쪽 패널*&#x200B;에서 업데이트할 수 있습니다.
 
 ## 콘텐츠 조각 구조 탐색 {#navigate-structure}
 
@@ -494,3 +474,19 @@ URL이 정의되면 **미리보기** 버튼이 활성화됩니다. 이 버튼을
   </tr>
  </tbody>
 </table>
+
+## 알아 둘 사항 {#good-to-know}
+
+또한
+
+* 콘텐츠 조각을 편집하려면 [적절한 권한](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)이 있어야 합니다. 문제가 발생하는 경우, 시스템 관리자에게 문의하십시오.
+
+  예: `edit` 권한이 없는 경우, 편집기는 읽기 전용입니다.
+
+* 콘텐츠 조각 모델은 종종 **제목**&#x200B;과 **설명**&#x200B;으로 이름이 지정된 데이터 필드를 정의할 수 있습니다. 이러한 필드가 존재하는 경우, 해당 필드는 사용자 정의 필드이고 조각을 편집할 때 *중앙 패널*&#x200B;에서 업데이트할 수 있습니다.
+
+  또한 콘텐츠 조각과 변형에는 **제목** 및 **설명**&#x200B;이라는 메타데이터 필드(변형 속성)가 있습니다. 이 필드는 콘텐츠 조각의 필수 부분이며 처음 조각이 생성될 때 정의됩니다. 조각을 편집할 때 *오른쪽 패널*&#x200B;에서 업데이트할 수 있습니다.
+
+* [원본 콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-variations.md)에 대한 자세한 내용은 자산 설명서를 참조하십시오. **자산** 콘솔과 **콘텐츠 조각** 콘솔 모두에서 사용할 수 있습니다.
+
+* 프로젝트 팀은 필요한 경우 편집기를 사용자 정의할 수 있습니다. 자세한 내용은 [콘텐츠 조각 콘솔 및 편집기 사용자 정의](/help/implementing/developing/extending/content-fragments-console-and-editor.md)를 참조하십시오.
