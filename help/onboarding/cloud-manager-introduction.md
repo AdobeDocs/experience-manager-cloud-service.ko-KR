@@ -2,12 +2,13 @@
 title: Cloud Manager 소개
 description: Cloud Manager가 프로그램, 환경 및 파이프라인을 통해 AEM 프로젝트를 지원하는 방법에 대해 알아봅니다.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 0e0daf9870ba2e5923f9ea5dcdf3821a0cd0b7c6
+source-git-commit: 928a3f0d8ee98e211aa03ad3d0fd83b780e98bbc
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 97%
 
 ---
+
 
 # Cloud Manager 소개 {#intro-cloud-manager}
 

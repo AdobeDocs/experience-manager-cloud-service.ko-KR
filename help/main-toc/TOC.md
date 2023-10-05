@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
+source-git-commit: 1d0001f967cad074ffc8d91f77241502ffaa1d94
 workflow-type: tm+mt
-source-wordcount: '4308'
+source-wordcount: '4313'
 ht-degree: 98%
 
 ---
@@ -87,6 +87,7 @@ ht-degree: 98%
    + Cloud Manager 릴리스 정보 {#cloud-manager}
       + [최신 릴리스 정보](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
+         + [2023.9.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2023/2023-9-0.md)
          + [2023.8.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2023/2023-8-0.md)
          + [2023.7.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2023/2023-7-0.md)
          + [2023.6.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
@@ -734,7 +735,7 @@ ht-degree: 98%
    + [마이그레이션](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
 + Edge 게재 서비스 {#edge-delivery}
-   + [Edge Delivery 시작](/help/edge/overview.md)
+   + [Edge Delivery 시작하기.](/help/edge/overview.md)
    + [Edge 게재 사용](/help/edge/using.md)
 + Headless {#headless}
    + [Headless CMS란 무엇입니까?](/help/headless/what-is-headless.md)
@@ -847,6 +848,7 @@ ht-degree: 98%
          + [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-testing.md)
          + [경험 감사 대시보드](/help/implementing/cloud-manager/experience-audit-dashboard.md)
       + [로그 액세스 및 관리](/help/implementing/cloud-manager/manage-logs.md)
+      + [사용자 지정 권한](/help/implementing/cloud-manager/custom-permissions.md)
       + [SLA 보고](/help/implementing/cloud-manager/sla-reporting.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [알림](/help/implementing/cloud-manager/notifications.md)

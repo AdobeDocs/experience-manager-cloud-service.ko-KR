@@ -3,12 +3,13 @@ title: 파이프라인 관리
 description: 편집, 실행 및 삭제를 포함하여 기존 파이프라인을 관리하는 방법을 알아봅니다.
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '516'
-ht-degree: 100%
+source-git-commit: b8d692e354851a31b4f66b24135c863b5ca723b4
+workflow-type: tm+mt
+source-wordcount: '667'
+ht-degree: 81%
 
 ---
+
 
 # 파이프라인 관리 {#managing-pipelines}
 
@@ -74,7 +75,9 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 >
 >실행 중인 파이프라인은 삭제할 수 없습니다.
 
-## 세부 정보 보기 {#view-details}
+## 파이프라인 세부 정보 보기 {#view-details}
+
+파이프라인의 세부 정보를 보고 마지막 실행의 상태와 로그를 볼 수 있습니다.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
@@ -84,8 +87,32 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 
 ![파이프라인 세부 정보](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-running-details.png)
 
-여기에서 파이프라인의 다양한 단계 상태를 확인하고 진단 목적으로 빌드 로그를 검색할 수 있습니다. 자세한 내용은 [코드 배포](/help/implementing/cloud-manager/deploy-code.md) 문서를 참조하십시오.
+여기에서 파이프라인의 다양한 단계 상태를 확인하고 진단 목적으로 빌드 로그를 검색할 수 있습니다. 문서 보기 [코드 배포](/help/implementing/cloud-manager/deploy-code.md) 코드 배포 및 테스트 실행에 대한 자세한 내용을 보려면 를 클릭하십시오.
 
 >[!NOTE]
 >
 >실행 중이거나 한 번 이상 실행된 파이프라인의 세부 정보만 볼 수 있습니다.
+
+## 파이프라인 취소 {#cancel}
+
+파이프라인이 유효성 검사 또는 빌드 이미지 단계에 있는 경우 파이프라인 실행을 안전하게 취소할 수 있습니다.
+
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
+
+1. 프로그램 개요 페이지에서 취소하려는 파이프라인의 줄임표 버튼을 클릭합니다. **파이프라인** 카드.
+
+   ![파이프라인 취소](/help/implementing/cloud-manager/assets/cancel-pipeline.png)
+
+1. 탭 또는 클릭 **취소**.
+
+또는 파이프라인 세부 정보 페이지에서 파이프라인을 취소할 수 있습니다.
+
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
+
+1. 다음 위치로 이동 **파이프라인** 의 탭 **프로그램 개요** 페이지를 연 다음 취소하려는 파이프라인을 탭하거나 클릭합니다.
+
+1. 실행 중인 파이프라인의 세부 정보 페이지로 이동합니다.
+
+   ![파이프라인 세부 정보 취소](/help/implementing/cloud-manager/assets/cancel-pipeline-details.png)
+
+1. 탭 또는 클릭 **취소**.
