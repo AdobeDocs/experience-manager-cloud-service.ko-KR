@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9146bf7222ad3cb74e6558868c41b822364ef3f0
+source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
 workflow-type: tm+mt
-source-wordcount: '4296'
+source-wordcount: '4308'
 ht-degree: 98%
 
 ---
@@ -569,7 +569,8 @@ ht-degree: 98%
          + [적응형 양식 분석 보고서 보기 및 이해](/help/forms/view-understand-aem-forms-analytics-reports.md)
          + [Microsoft Power Automate와 적응형 양식 통합](/help/forms/forms-microsoft-power-automate-integration.md)
          + [AEM Sites 페이지에 적응형 양식 임베드](/help/forms/embed-adaptive-form-aem-sites.md)
-         + [외부 웹 페이지에 핵심 구성 요소 기반 적응형 양식 임베드](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+         + [핵심 구성 요소 기반의 적응형 양식을 외부 웹 페이지에 임베드](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+         + [기초 구성 요소 기반 적응형 양식을 외부 웹 페이지에 임베드](/help/forms/embed-adaptive-form-external-web-page.md)
       + 양식 데이터 모델 {#use-form-data-model}
          + [데이터 소스를 Cloud Service에 연결](/help/forms/data-integration.md)
          + [데이터 소스 구성](/help/forms/configure-data-sources.md)
@@ -733,7 +734,7 @@ ht-degree: 98%
    + [마이그레이션](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
 + Edge 게재 서비스 {#edge-delivery}
-   + [Edge 게재 시작](/help/edge/overview.md)
+   + [Edge Delivery 시작](/help/edge/overview.md)
    + [Edge 게재 사용](/help/edge/using.md)
 + Headless {#headless}
    + [Headless CMS란 무엇입니까?](/help/headless/what-is-headless.md)

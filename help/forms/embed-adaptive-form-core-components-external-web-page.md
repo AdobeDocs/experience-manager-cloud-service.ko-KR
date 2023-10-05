@@ -1,16 +1,16 @@
 ---
-title: 외부 웹 페이지에 적응형 양식 임베드
-description: 외부 웹 페이지에서 적응형 양식을 임베드하는 방법 알아보기
+title: 핵심 구성 요소를 기반으로 하는 적응형 양식을 외부 웹 페이지에 임베드하는 방법
+description: 웹 사이트에 적응형 Forms을 임베드하는 방법에 대해 알아봅니다.
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
-source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
+exl-id: 198f6f76-1134-4818-89a0-6ddc84ff956c
+source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 100%
+source-wordcount: '984'
+ht-degree: 97%
 
 ---
-
 
 # 외부 웹 페이지에 핵심 구성 요소 기반 적응형 양식 임베드 {#embed-adaptive-form-in-external-web-page}
 
@@ -162,6 +162,3 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 1. AEM 게시 인스턴스에서 `https://'[server]:[port]'/system/console/configMgr`의 AEM 웹 콘솔 구성 관리자로 이동합니다.
 1. **Apache Sling 레퍼러 필터** 구성을 찾아 엽니다.
 1. 허용된 호스트 필드에서 웹 페이지가 있는 도메인을 지정합니다. 이를 통해 호스트는 AEM 서버에 POST를 요청할 수 있습니다. 정규 표현식을 사용하여 일련의 외부 애플리케이션 도메인을 지정할 수도 있습니다.
-
-
-

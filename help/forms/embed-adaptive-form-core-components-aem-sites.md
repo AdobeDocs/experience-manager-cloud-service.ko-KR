@@ -4,9 +4,9 @@ description: AEM Sites 페이지에서 적응형 양식 핵심 구성 요소를 
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
 workflow-type: tm+mt
-source-wordcount: '2131'
+source-wordcount: '2150'
 ht-degree: 6%
 
 ---
@@ -267,3 +267,8 @@ AEM sites 페이지는 적응형 양식에 대한 참조를 유지 관리합니�
 
 * 원래 양식의 머리글 및 바닥글은 포함된 양식에 포함되지 않습니다.
 * 포함된 양식의 사용자 초안 및 제출은 Forms 포털의 초안 및 제출된 Forms 탭에서 지원되고 볼 수 있습니다.
+
+>[!MORELIKETHIS]
+>
+>* [외부 웹 페이지에 핵심 구성 요소 기반 적응형 양식 임베드](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+>* [외부 웹 페이지에 적응형 양식 임베드](/help/forms/embed-adaptive-form-external-web-page.md)
