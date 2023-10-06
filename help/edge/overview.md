@@ -1,15 +1,15 @@
 ---
-title: Edge Delivery Services 시작
-description: Edge Delivery Services 시작
+title: Edge Delivery Services 시작하기
+description: Edge Delivery Services 시작하기.
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 source-git-commit: ba59cb131d3b17730c87377f30162feb4e7aee29
 workflow-type: tm+mt
 source-wordcount: '833'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# Edge Delivery Services 시작 {#getstart-edge}
+# Edge Delivery Services 시작하기 {#getstart-edge}
 
 AEM은 Edge Delivery Services을 통해 참여와 전환을 유도하는 탁월한 경험을 제공합니다. AEM은 작성 및 개발이 빠른 임팩트 높은 경험을 제공함으로써 이러한 작업을 수행합니다. 작성자가 빠르게 업데이트하고 게시할 수 있는 신속한 개발 환경을 가능하게 하는 컴포저블 서비스 세트이며 새로운 사이트가 빠르게 시작됩니다. 따라서 Edge Delivery Services을 사용하면 전환을 개선하고 비용을 절감하며 컨텐츠 속도를 극대화할 수 있습니다.
 
