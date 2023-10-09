@@ -2,10 +2,10 @@
 title: GraphQL 쿼리 최적화
 description: Headless 콘텐츠 게재를 위해 Adobe Experience Manager as a Cloud Service에서 콘텐츠 조각을 필터링, 페이징 및 정렬할 때 GraphQL 쿼리를 최적화하는 방법을 알아봅니다.
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '1193'
-ht-degree: 100%
+source-git-commit: ba864cb28d2de0559d36f113e8e154ed5c115cae
+workflow-type: tm+mt
+source-wordcount: '1877'
+ht-degree: 65%
 
 ---
 
@@ -14,6 +14,84 @@ ht-degree: 100%
 >[!NOTE]
 >
 >이러한 최적화 권장 사항을 적용하기 전에 최고의 성능을 위해 [GraphQL 필터링 시 페이징 및 정렬을 위한 콘텐츠 조각 업데이트](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)를 고려하십시오.
+
+이 지침은 GraphQL 쿼리와 관련된 성능 문제를 방지하기 위해 제공됩니다.
+
+## GraphQL 검사 목록 {#graphql-checklist}
+
+다음 체크리스트는 Adobe Experience Manager(AEM as a Cloud Service)에서 GraphQL의 구성 및 사용을 최적화하는 데 도움이 되는 것입니다.
+
+### 첫 번째 원칙 {#first-principles}
+
+#### 지속 GraphQL 쿼리 사용 {#use-persisted-graphql-queries}
+
+**추천**
+
+지속 GraphQL 쿼리를 사용하는 것이 좋습니다.
+
+지속 GraphQL 쿼리는 CDN(Content Delivery Network)을 활용하여 쿼리 실행 성능을 줄이는 데 도움이 됩니다. 클라이언트 애플리케이션은 빠른 에지 지원 실행을 위해 GET 요청과 함께 지속 쿼리를 요청합니다.
+
+**추가 참조**
+
+다음을 참조하십시오.
+
+* [지속 GraphQL 쿼리](/help/headless/graphql-api/persisted-queries.md).
+* [AEM을 통해 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐츠 및 쿼리](/help/headless/graphql-api/sample-queries.md)
+
+### 캐시 전략 {#cache-strategy}
+
+최적화를 위해 다양한 캐싱 방법을 사용할 수도 있습니다.
+
+#### AEM Dispatcher 캐싱 활성화 {#enable-aem-dispatcher-caching}
+
+**추천**
+
+[AEM 디스패처](/help/implementing/dispatcher/overview.md) 는 AEM 서비스 내에서 CDN 캐시 이전의 첫 번째 수준 캐시입니다.
+
+**추가 참조**
+
+다음을 참조하십시오.
+
+* [GraphQL 지속 쿼리 - Dispatcher에서 캐싱 활성화](/help/headless/deployment/dispatcher-caching.md)
+
+#### CDN(Content Delivery Network) 사용 {#use-cdn}
+
+**추천**
+
+GraphQL 쿼리 및 해당 JSON 응답은 타깃팅한 경우 캐시될 수 있습니다. `GET` cdn 사용 시 요청. 반대로 캐시되지 않은 요청은 매우 (리소스) 비용이 많이 들고 처리 속도가 느릴 수 있으며, 이로 인해 원본 리소스에 추가 해로운 영향을 미칠 수 있습니다.
+
+**추가 참조**
+
+다음을 참조하십시오.
+
+* [AEM as a Cloud Service의 CDN](/help/implementing/dispatcher/cdn.md)
+
+#### HTTP 캐시 제어 헤더 설정 {#set-http-cache-control-headers}
+
+**추천**
+
+CDN과 함께 지속 GraphQL 쿼리를 사용하는 경우 적절한 HTTP 캐시 제어 헤더를 설정하는 것이 좋습니다.
+
+각 지속 쿼리에는 고유한 캐시 제어 헤더 집합이 있을 수 있습니다. 머리글은 다음에 대해 설정할 수 있습니다. [GRAPHQL API](/help/headless/graphql-api/content-fragments.md) 또는 [AEM GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md).
+
+**추가 참조**
+
+다음을 참조하십시오.
+
+* [지속 쿼리 캐싱](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)
+* [지속 쿼리에 대한 캐시 관리](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
+
+#### AEM GraphQL 사전 캐싱 사용 {#use-aem-graphql-pre-caching}
+
+**추천**
+
+이 기능을 사용하면 AEM에서 GraphQL 쿼리 범위 내에 콘텐츠를 추가로 캐싱할 수 있으며, 이 콘텐츠를 한 줄에 하나씩 캐싱하지 않고 JSON 출력의 블록으로 어셈블할 수 있습니다.
+
+**추가 참조**
+
+AEM Cloud Service 프로그램 및 환경에 이 기능을 활성화하려면 Adobe에 문의하십시오.
+
+### GraphQL 쿼리 최적화 {#graphql-query-optimization}
 
 동일한 모델을 공유하는 콘텐츠 조각이 많은 AEM 인스턴스에서는 리소스 측면에서 GraphQL 목록 쿼리에 비용이 많이 들 수 있습니다.
 
@@ -25,14 +103,16 @@ GraphQL 쿼리 내에서 사용되는 모델을 공유하는 *모든* 조각은 
 
 AEM은 GraphQL 쿼리를 최적화하는 데 2가지 접근 방식을 제공합니다.
 
-* [하이브리드 필터링](#hybrid-filtering)
-* [페이징](#paging) (또는 페이지 매김)
+* [하이브리드 필터링](#use-aem-graphql-hybrid-filtering)
+* [페이징](#use-graphql-pagination) (또는 페이지 매김)
 
-   * [정렬](#sorting)은 최적화와 직접적인 관련은 없지만 페이징과 관련이 있음
+   * [정렬](#use-graphql-sorting)은 최적화와 직접적인 관련은 없지만 페이징과 관련이 있음
 
-각 접근 방식에는 독자적인 사용 사례와 제한 사항이 있습니다. 이 문서는 하이브리드 필터링 및 페이징에 대한 정보와 함께 GraphQL 쿼리 최적화의 일부 [모범 사례](#best-practices)를 제공합니다.
+각 접근 방식에는 독자적인 사용 사례와 제한 사항이 있습니다. 이 섹션에서는 하이브리드 필터링 및 페이징에 대한 정보와 함께 [우수 사례](#best-practices) GraphQL 쿼리 최적화에 사용됩니다.
 
-## 하이브리드 필터링 {#hybrid-filtering}
+#### AEM GraphQL 하이브리드 필터링 사용 {#use-aem-graphql-hybrid-filtering}
+
+**추천**
 
 하이브리드 필터링은 JCR 필터링과 AEM 필터링을 결합한 것입니다.
 
@@ -44,7 +124,22 @@ JCR 필터(쿼리 제한 형식)를 적용한 후에 AEM 필터링을 위해 결
 
 이 기법에서는 GraphQL 필터의 유연성을 유지하면서 최대한 많은 필터링을 JCR에 위임합니다.
 
-## 페이징 {#paging}
+>[!NOTE]
+>
+>AEM 하이브리드 필터링을 사용하려면 기존 콘텐츠 조각을 업데이트해야 합니다
+
+**추가 참조**
+
+다음을 참조하십시오.
+
+* [GraphQL 필터링에서 페이징 및 정렬을 위한 콘텐츠 조각 업데이트](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
+* [_태그 ID별로 필터링하고 변형을 제외하는 샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+
+#### GraphQL 페이지 매김 사용 {#use-aem-graphql-pagination}
+
+**추천**
+
+GraphQL 표준인 페이지 매김을 사용하여 응답을 청크로 세분화함으로써, 결과 세트가 큰 복잡한 쿼리의 응답 시간을 향상시킬 수 있습니다.
 
 AEM에서 GraphQL은 2가지 유형의 페이지 매김을 지원합니다.
 
@@ -64,7 +159,17 @@ AEM에서 GraphQL은 2가지 유형의 페이지 매김을 지원합니다.
   >
   >역방향 페이징(`before`/`last` 매개변수 사용)은 지원되지 않습니다.
 
-## 정렬 {#sorting}
+**추가 참조**
+
+다음을 참조하십시오.
+
+* [첫 번째 및 그 다음 페이지를 사용하는 샘플 페이지 매김 쿼리](/help/headless/graphql-api/sample-queries.md#sample-pagination-first-after)
+
+#### GraphQL 정렬 사용 {#use-graphql-sorting}
+
+**추천**
+
+또한 GraphQL 표준인 정렬을 통해 클라이언트는 정렬된 순서대로 JSON 콘텐츠를 수신할 수 있습니다. 이를 통해 클라이언트에 대한 추가 처리 필요성을 줄일 수 있습니다.
 
 정렬은 모든 정렬 기준이 최상위 조각과 관련된 경우에만 효율적입니다.
 
@@ -74,9 +179,15 @@ AEM에서 GraphQL은 2가지 유형의 페이지 매김을 지원합니다.
 >
 >최상위 필드에 대한 정렬도 (크지는 않지만) 성능에 영향을 미칩니다.
 
+**추가 참조**
+
+다음을 참조하십시오.
+
+* [태그 ID별로 필터링하고 변형을 제외한 샘플 쿼리 및 이름별 정렬](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+
 ## 모범 사례 {#best-practices}
 
-모든 최적화의 주요 목표는 초기 결과 세트를 줄이는 것입니다. 아래에 나열된 모범 사례는 그 방법을 소개합니다. 모범 사례는 결합할 수 있으며, 또 결합해야 합니다.
+모든 최적화 권장 사항의 주요 목표는 초기 결과 세트를 줄이는 것입니다. 아래에 나열된 모범 사례는 그 방법을 소개합니다. 모범 사례는 결합할 수 있으며, 또 결합해야 합니다.
 
 ### 최상위 속성만 필터링 {#filter-top-level-properties-only}
 
@@ -166,3 +277,27 @@ GraphQL 쿼리에도 이 접근 방식을 적용해야 합니다.
 * `CONTAINS_NOT` 연산자를 사용한 필터 표현식.
 
 * `NOT_AT` 연산자를 사용하는 `Calendar`, `Date` 또는 `Time` 값에 대한 필터 표현식.
+
+### 콘텐츠 조각 중첩 최소화 {#minimize-content-fragment-nesting}
+
+콘텐츠 조각 중첩은 사용자 지정 콘텐츠 구조를 모델링하는 좋은 방법입니다. 중첩된 조각이 있는 조각, 중첩된 조각이 있는 조각, ...등이 있는 조각을 가질 수도 있습니다.
+
+그러나 GraphQL이 중첩된 모든 콘텐츠 조각의 전체 계층 구조를 통과해야 하므로 수준이 너무 많은 구조를 만들면 GraphQL 쿼리의 처리 시간이 늘어날 수 있습니다.
+
+딥중첩은 콘텐츠 거버넌스에 악영향을 줄 수도 있습니다. 일반적으로 콘텐츠 조각 중첩을 5개 또는 6개 수준 이하로 제한하는 것이 좋습니다.
+
+### 모든 형식 출력 안 함(여러 줄 텍스트 요소) {#do-not-output-all-formats}
+
+AEM GraphQL은 다음에서 작성된 텍스트를 반환할 수 있습니다. **[여러 줄 텍스트](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** 데이터 유형(리치 텍스트, 단순 텍스트 및 Markdown 등 다양한 형식).
+
+세 형식을 모두 출력하면 JSON의 텍스트 출력 크기가 3배율로 증가합니다. 따라서 매우 광범위한 쿼리의 일반적으로 큰 결과 세트와 함께 매우 큰 JSON 응답을 생성할 수 있으므로 계산하는 데 시간이 오래 걸립니다. 콘텐츠를 렌더링하는 데 필요한 텍스트 형식으로만 출력을 제한하는 것이 좋습니다.
+
+### 컨텐츠 조각 수정 {#modifying-content-fragments}
+
+AEM UI 또는 API를 사용하여 콘텐츠 조각 및 해당 리소스만 수정합니다. JCR에서 직접 수정하지 마십시오.
+
+### 쿼리 테스트 {#test-your-queries}
+
+GraphQL 쿼리 처리는 검색 쿼리 처리와 유사하며 단순한 GET 전체 컨텐츠 API 요청보다 훨씬 더 복잡합니다.
+
+제어된 비프로덕션 환경에서 쿼리를 신중하게 계획, 테스트 및 최적화하는 것은 프로덕션에서 사용할 때 추후 성공을 위한 핵심입니다.
