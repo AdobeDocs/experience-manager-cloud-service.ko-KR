@@ -2,7 +2,7 @@
 title: GraphQL 쿼리 최적화
 description: Headless 콘텐츠 게재를 위해 Adobe Experience Manager as a Cloud Service에서 콘텐츠 조각을 필터링, 페이징 및 정렬할 때 GraphQL 쿼리를 최적화하는 방법을 알아봅니다.
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: ba864cb28d2de0559d36f113e8e154ed5c115cae
+source-git-commit: 2ac93fbe0075cc2c88def444daba613e8b40c018
 workflow-type: tm+mt
 source-wordcount: '1877'
 ht-degree: 65%
@@ -104,7 +104,7 @@ GraphQL 쿼리 내에서 사용되는 모델을 공유하는 *모든* 조각은 
 AEM은 GraphQL 쿼리를 최적화하는 데 2가지 접근 방식을 제공합니다.
 
 * [하이브리드 필터링](#use-aem-graphql-hybrid-filtering)
-* [페이징](#use-graphql-pagination) (또는 페이지 매김)
+* [페이징](#use-aem-graphql-pagination) (또는 페이지 매김)
 
    * [정렬](#use-graphql-sorting)은 최적화와 직접적인 관련은 없지만 페이징과 관련이 있음
 
