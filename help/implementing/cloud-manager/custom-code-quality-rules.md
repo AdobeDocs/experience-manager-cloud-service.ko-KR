@@ -2,10 +2,10 @@
 title: 사용자 정의 코드 품질 규칙
 description: 이 페이지에서는 코드 품질 테스트의 일부로 Cloud Manager에서 실행되는 사용자 정의 코드 품질 규칙에 대해 설명합니다. 이 규칙은 Adobe Experience Manager Engineering의 모범 사례를 기반으로 합니다.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 57a7cd3fd2bfc34ebcee82832e020cf45887afa9
 workflow-type: tm+mt
-source-wordcount: '3502'
-ht-degree: 100%
+source-wordcount: '3868'
+ht-degree: 92%
 
 ---
 
@@ -570,7 +570,6 @@ public class DontDoThis implements Page {
       - async: [async]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
 ```
@@ -583,7 +582,6 @@ public class DontDoThis implements Page {
       - async: [async]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
       + tika
@@ -606,11 +604,8 @@ public class DontDoThis implements Page {
     + damAssetLucene-1-custom
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - type: lucene
-      - reindex: false
       - tags: [visualSimilaritySearch]
-      - type: lucene
       + tika
         + config.xml
 ```
@@ -623,7 +618,6 @@ public class DontDoThis implements Page {
       - async: [async]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
       + tika
@@ -647,7 +641,6 @@ Experience Manager Assets에서 자산 검색이 올바르게 작동하려면 `
       - async: [async, nrt]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - type: lucene
       + tika
         + config.xml
@@ -661,7 +654,6 @@ Experience Manager Assets에서 자산 검색이 올바르게 작동하려면 `
       - async: [async, nrt]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
       + tika
@@ -948,3 +940,208 @@ Experience Manager as a Cloud Service에서는 사용자 정의 검색 인덱스
 * **이후**: 버전 2021.2.0
 
 Experience Manager as a Cloud Service에서는 사용자 정의 검색 인덱스 정의(즉, `oak:QueryIndexDefinition` 유형의 노드)에 `reindex`라는 속성을 포함할 수 없습니다. 이 속성을 사용하는 색인화는 Experience Manager as a Cloud Service로 마이그레이션하기 전에 업데이트해야 합니다. 자세한 내용은 [콘텐츠 검색 및 색인화](/help/operations/indexing.md#how-to-use) 문서를 참조하십시오.
+
+### 사용자 지정 DAM 에셋 Lucene 노드는 &#39;queryPaths&#39;를 지정하지 않아야 합니다. {#oakpal-damAssetLucene-queryPaths}
+
+* **키**: IndexDamAssetLucene
+* **유형**: 버그
+* **심각도**: Blocker
+* **이후**: 버전 2022.1.0
+
+#### 비준수 코드 {#non-compliant-code-damAssetLucene-queryPaths}
+
+```text
++ oak:index
+    + damAssetLucene-1-custom-1
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: [/content/dam]
+      - queryPaths: [/content/dam]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+#### 준수 코드 {#compliant-code-damAssetLucene-queryPaths}
+
+```text
++ oak:index
+    + damAssetLucene-1-custom-2
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: [/content/dam]
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+### 사용자 정의 검색 인덱스 정의에 compatVersion이 포함된 경우 2로 설정해야 합니다. {#oakpal-compatVersion}
+
+* **키**: IndexCompatVersion
+* **유형**: 코드 스멜
+* **심각도**: 주요
+* **이후**: 버전 2022.1.0
+
+
+### &#39;includedPaths&#39;를 지정하는 인덱스 노드는 동일한 값으로 &#39;queryPaths&#39;도 지정해야 합니다. {#oakpal-included-paths-without-query-paths}
+
+* **키**: IndexIncludedPathsWithoutQueryPaths
+* **유형**: 코드 스멜
+* **심각도**: 사소
+* **이후**: 버전 2023.1.0
+
+사용자 정의 인덱스의 경우 `includedPaths` 및 `queryPaths` 은(는) 동일한 값으로 구성해야 합니다. 하나가 지정된 경우 다른 하나가 일치해야 합니다. 단, 인덱스의 경우 특별한 경우가 있습니다. `damAssetLucene`, 사용자 지정 버전 포함. 이러한 경우 다음을 제공해야 합니다. `includedPaths`.
+
+### 일반 노드 유형에서 nodeScopeIndex를 지정하는 인덱스 노드는 includedPaths 및 queryPaths도 지정해야 합니다. {#oakpal-full-text-on-generic-node-type}
+
+* **키**: IndexFulltextOnGenericType
+* **유형**: 코드 스멜
+* **심각도**: 사소
+* **이후**: 버전 2023.1.0
+
+를 설정할 때 `nodeScopeIndex` 과 같은 &quot;일반&quot; 노드 유형의 속성 `nt:unstructured` 또는 `nt:base`또한 다음을 지정해야 합니다. `includedPaths` 및 `queryPaths` 속성.
+`nt:base` 모든 노드 유형이 해당 노드 유형에서 상속되므로 &quot;일반&quot;으로 간주할 수 있습니다. 그래서 를 설정하는 중 `nodeScopeIndex` 날짜 `nt:base` 저장소의 모든 노드를 색인화하게 됩니다. 마찬가지로, `nt:unstructured` 저장소에 이 유형의 노드가 많으므로 &quot;일반&quot;으로도 간주됩니다.
+
+#### 비준수 코드 {#non-compliant-code-full-text-on-generic-node-type}
+
+```text
++ oak:index/acme.someIndex-custom-1
+  - async: [async, nrt]
+  - evaluatePathRestrictions: true
+  - tags: [visualSimilaritySearch]
+  - type: lucene
+    + indexRules
+      - jcr:primaryType: nt:unstructured
+      + nt:base
+        - jcr:primaryType: nt:unstructured
+        + properties
+          + acme.someIndex-custom-1
+            - nodeScopeIndex: true
+```
+
+#### 준수 코드 {#compliant-code-full-text-on-generic-node-type}
+
+```text
++ oak:index/acme.someIndex-custom-1
+  - async: [async, nrt]
+  - evaluatePathRestrictions: true
+  - tags: [visualSimilaritySearch]
+  - type: lucene
+  - includedPaths: ["/content/dam/"] 
+  - queryPaths: ["/content/dam/"]
+    + indexRules
+      - jcr:primaryType: nt:unstructured
+      + nt:base
+        - jcr:primaryType: nt:unstructured
+        + properties
+          + acme.someIndex-custom-1
+            - nodeScopeIndex: true
+```
+
+### 쿼리 엔진의 queryLimitReads 속성을 재정의하면 안 됩니다. {#oakpal-query-limit-reads}
+
+* **키**: OverrideOfQueryLimitReads
+* **유형**: 코드 스멜
+* **심각도**: 사소
+* **이후**: 버전 2023.1.0
+
+기본값을 재정의하면 특히 더 많은 콘텐츠가 추가될 때 페이지 읽기가 매우 느려질 수 있습니다.
+
+### 동일한 인드의 여러 활성 버전 {#oakpal-multiple-active-versions}
+
+* **키**: IndexDetectMultipleActiveVersionsOfSameIndex
+* **유형**: 코드 스멜
+* **심각도**: 사소
+* **이후**: 버전 2023.1.0
+
+#### 비준수 코드 {#non-compliant-code-multiple-active-versions}
+
+```text
++ oak:index
+  + damAssetLucene-1-custom-1
+    ...
+  + damAssetLucene-1-custom-2
+    ...
+  + damAssetLucene-1-custom-3
+    ...
+```
+
+#### 준수 코드 {#compliant-code-multiple-active-versions}
+
+```text
++ damAssetLucene-1-custom-3
+    ...
+```
+
+
+### 완전히 맞춤화된 색인 정의의 이름은 공식 지침을 준수해야 합니다 {#oakpal-fully-custom-index-name}
+
+* **키**: IndexValidFullyCustomName
+* **유형**: 코드 스멜
+* **심각도**: 사소
+* **이후**: 버전 2023.1.0
+
+전체 사용자 정의 인덱스 이름의 예상 패턴은 다음과 같습니다. `[prefix].[indexName]-custom-[version]`. 자세한 내용은 문서에서 확인할 수 있습니다. [콘텐츠 검색 및 색인화](/help/operations/indexing.md).
+
+
+### 동일한 색인 정의에서 다른 분석 값을 가진 동일한 속성 {#oakpal-same-property-different-analyzed-values}
+
+#### 비준수 코드 {#non-compliant-code-same-property-different-analyzed-values}
+
+```text
++ indexRules
+  + dam:Asset
+    + properties
+      + status
+        - name: status
+        - analyzed: true
+  + dam:cfVariationNode
+    + properties
+      + status
+        - name: status
+```
+
+#### 준수 코드 {#compliant-code-same-property-different-analyzed-values}
+
+예:
+
+```text
++ indexRules
+  + dam:Asset
+    + properties
+      + status
+        - name: status
+        - analyzed: true
+  + dam:cfVariationNode
+    + properties
+      + status
+        - name: status
+        - analyzed: true
+```
+
+예:
+
+```text
++ indexRules
+  + dam:Asset
+    + properties
+      + status
+        - name: status
+  + dam:cfVariationNode
+    + properties
+      + status
+        - name: status
+        - analyzed: true
+```
+
+분석된 속성이 명시적으로 설정되지 않은 경우 기본값은 false입니다.
+
+### 태그 속성
+
+* **키**: IndexHasValidTagsProperty
+* **유형**: 코드 스멜
+* **심각도**: 사소
+* **이후**: 버전 2023.1.0
+
+특정 인덱스의 경우 태그 속성과 현재 값을 유지해야 합니다. 태그 속성에 새 값을 추가하는 것은 가능하지만, 기존 값(또는 속성을 모두 삭제)을 삭제하면 예기치 않은 결과가 발생할 수 있습니다.
