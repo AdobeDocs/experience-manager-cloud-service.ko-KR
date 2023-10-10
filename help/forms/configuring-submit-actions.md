@@ -2,10 +2,10 @@
 title: 적응형 양식에 대한 제출 액션을 구성하는 방법
 description: 적응형 양식은 여러 제출 액션을 제공합니다. 제출 액션은 적응형 양식이 제출 후 처리되는 방식을 정의합니다. 기본 제공 제출 액션을 사용하거나 직접 만들 수 있습니다.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: ba83b35f411ffd51e0032e7c7f12c7c82cd982ad
 workflow-type: tm+mt
-source-wordcount: '3388'
-ht-degree: 83%
+source-wordcount: '3395'
+ht-degree: 87%
 
 ---
 
@@ -184,8 +184,9 @@ AEM Forms를 Microsoft® SharePoint Storage에 연결하려면
 1. 다음으로 이동 **AEM Forms 작성자** 인스턴스 > **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
 1. 을(를) 선택하면 **[!UICONTROL Microsoft® SharePoint]**&#x200B;로 리디렉션됩니다. **[!UICONTROL SharePoint 브라우저]**.
 1. **구성 컨테이너**&#x200B;를 선택합니다. 선택한 구성 컨테이너에 구성을 저장합니다.
-1. **[!UICONTROL 만들기]**를 클릭합니다. SharePoint 구성 마법사가 나타납니다.
-   ![SharePoint 구성](/help/forms/assets/sharepoint_configuration.png)
+1. 클릭 **[!UICONTROL 만들기]** > **[!UICONTROL SharePoint 문서 라이브러리]** 을 클릭합니다. SharePoint 구성 마법사가 나타납니다.
+
+![SharePoint 구성](/help/forms/assets/sharepoint_configuration.png)
 1. **[!UICONTROL 제목]**, **[!UICONTROL 클라이언트 ID]**, **[!UICONTROL 클라이언트 보안]** 및 **[!UICONTROL OAuth URL]**&#x200B;을 지정합니다. OAuth URL의 클라이언트 ID, 클라이언트 보안, 테넌트 ID를 검색하는 방법에 대한 자세한 내용은 [Microsoft® Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)을 참조하십시오.
    * Microsoft® Azure 포털에서 앱의 `Client ID` 및 `Client Secret`를 검색할 수 있습니다.
    * Microsoft® Azure 포털에서 리디렉션 URI를 `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`로 추가합니다. `[author-instance]`를 작성자 인스턴스의 URL로 대체합니다.
@@ -210,6 +211,7 @@ AEM Forms를 Microsoft® SharePoint Storage에 연결하려면
 ### 적응형 양식에서 SharePoint 구성 사용 {#use-sharepoint-configuartion-in-af}
 
 적응형 양식에서 생성된 SharePoint 구성을 사용하여 SharePoint 폴더에 데이터 또는 생성된 기록 문서를 저장할 수 있습니다. 적응형 양식에서 SharePoint 스토리지 구성을 다음으로 사용하려면 다음 단계를 수행하십시오.
+
 1. [적응형 양식](/help/forms/creating-adaptive-form.md)을 만듭니다.
 
    >[!NOTE]
@@ -331,16 +333,16 @@ AEM Forms를 Azure Storage 컨테이너에 연결하려면
 
 ## Power Automate에 제출 {#microsoft-power-automate}
 
-제출 시 Microsoft® Power Automate Cloud Flow를 실행하도록 적응형 양식을 구성할 수 있습니다. 구성된 적응형 양식은 캡처된 데이터, 첨부 파일 및 기록 문서를 처리를 위해 Power Automate Cloud Flow로 전송합니다. 이렇게 하면 Microsoft® Power Automate의 강력한 기능을 활용하면서 사용자 정의 데이터 캡처 환경을 구축하여 캡처된 데이터를 중심으로 비즈니스 로직을 구축하고 고객 워크플로를 자동화할 수 있습니다. 다음은 적응형 양식과 Microsoft® Power Automate를 통합한 후 수행할 수 있는 작업의 몇 가지 예입니다.
+제출 시 Microsoft® Power Automate Cloud Flow를 실행하도록 적응형 양식을 구성할 수 있습니다. 구성된 적응형 양식은 캡처된 데이터, 첨부 파일 및 기록 문서를 처리를 위해 Power Automate Cloud Flow로 전송합니다. 이렇게 하면 Microsoft® Power Automate의 강력한 기능을 활용하면서 사용자 정의 데이터 캡처 환경을 빌드하여 캡처된 데이터를 중심으로 비즈니스 논리를 빌드하고 고객 워크플로를 자동화할 수 있습니다. 다음은 적응형 양식을 Microsoft® Power Automate와 통합한 후 수행할 수 있는 작업에 대한 몇 가지 예입니다.
 
-* Power Automate 비즈니스 프로세스에서 적응형 Forms 데이터 사용
-* Power Automate를 사용하여 캡처한 데이터를 500개 이상의 데이터 소스 또는 공개적으로 사용 가능한 API로 전송
+* Power Automate 비즈니스 프로세스에서 적응형 양식 데이터 사용
+* Power Automate를 사용하여 캡처된 데이터를 500개 이상의 데이터 소스 또는 공개적으로 사용 가능한 API로 전송
 * 캡처된 데이터에 대해 복잡한 계산 수행
-* 사전 정의된 일정에 따라 스토리지 시스템에 적응형 Forms 데이터 저장
+* 미리 정의된 일정에 따라 적응형 양식 데이터를 스토리지 시스템에 저장
 
-적응형 Forms 편집기는 **Microsoft® Power Automate 플로우 호출** 제출 액션을 통해 적응형 양식 데이터, 첨부 파일 및 기록 문서를 Power Automate Cloud Flow로 전송합니다. 제출 액션을 사용하여 캡처된 데이터를 Microsoft® Power Automate로 보내려면 [Forms as a Cloud Service 인스턴스와 Microsoft® Power Automate 연결](forms-microsoft-power-automate-integration.md)
+적응형 양식 편집기는 **Microsoft® Power Automate 흐름 호출** 제출 액션을 제공하여 적응형 양식 데이터, 첨부 파일 및 기록 문서를 Power Automate Cloud Flow로 전송합니다. 제출 작업을 사용하여 캡처된 데이터를 Microsoft® Power Automate로 전송하려면 [Forms as a Cloud Service 인스턴스를 Microsoft® Power Automate와 연결](forms-microsoft-power-automate-integration.md)합니다.
 
-구성이 완료되면 다음을 사용합니다. [Microsoft® Power Automate 플로우 호출](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) 작업을 제출하여 Power Automate 흐름에 데이터를 전송합니다.
+성공적으로 구성한 후 [Microsoft® Power Automate 흐름 호출](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) 제출 액션을 사용하여 데이터를 Power Automate 흐름으로 전송합니다.
 
 ## 동기 제출 또는 비동기 제출 사용 {#use-synchronous-or-asynchronous-submission}
 
@@ -358,7 +360,7 @@ AEM Forms를 Azure Storage 컨테이너에 연결하려면
 
 서버측 유효성 재검사 기능을 통해 서버에서 적응형 양식을 디자인하면서 적응형 양식 작성자가 제공한 유효성 검사를 실행할 수도 있습니다. 양식 유효성 검사에 표시되는 데이터 제출 및 비즈니스 규칙 위반 사항에 발생할 수 있는 잠재적 손상을 방지할 수 있습니다.
 
-### 서버의 유효성을 검사할 대상은 무엇일까요? {#what-to-validate-on-server-br}
+### 서버에서의 유효성 검사 대상은 무엇입니까? {#what-to-validate-on-server-br}
 
 서버에서 다시 실행되는 적응형 양식에 대한 즉시 사용할 수 있는(OOTB) 필드 유효성 검사는 다음과 같습니다.
 

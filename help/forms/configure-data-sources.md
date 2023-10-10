@@ -5,12 +5,13 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: ac7e1a1ada156734c3a487269e674e8eade7c9c3
 workflow-type: tm+mt
-source-wordcount: '2193'
-ht-degree: 3%
+source-wordcount: '2452'
+ht-degree: 9%
 
 ---
+
 
 # 데이터 소스 구성 {#configure-data-sources}
 
@@ -23,7 +24,7 @@ ht-degree: 3%
 
 [!DNL Experience Manager Forms] 데이터 통합을 통해 서로 다른 데이터 소스를 구성하고 연결할 수 있습니다. 기본적으로 지원되는 유형은 다음과 같습니다.
 
-* 관계형 데이터베이스 - MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2], 및 [!DNL Oracle RDBMS]
+* 관계형 데이터베이스 - MySQL, [!DNL Microsoft® SQL Server], [!DNL IBM® DB2®], 및 [!DNL Oracle RDBMS]
 * RESTful 웹 서비스
 * SOAP 기반 웹 서비스
 * OData 서비스(버전 4.0)
@@ -57,7 +58,7 @@ ht-degree: 3%
    * JDBC 연결 URI
    * JDBC 드라이버와의 연결을 설정하는 사용자 이름 및 암호
    * 다음에서 SQL SELECT 쿼리를 지정합니다 **[!UICONTROL 유효성 검사 쿼리]** 풀에서 연결의 유효성을 검사하는 필드입니다. 쿼리는 하나 이상의 행을 반환해야 합니다. 데이터베이스를 기반으로 다음 중 하나를 지정합니다.
-      * 1(MySQL 및 MS SQL) 선택
+      * 1(MySQL 및 MS® SQL) 선택
       * 이중 (Oracle)에서 1 선택
    * 데이터 소스 이름
 
@@ -179,7 +180,7 @@ RESTful 서비스 Open API 사양 버전 3.0에서 지원되지 않는 일부 �
 
 ### 성능을 최적화하기 위한 양식 데이터 모델 HTTP 클라이언트 구성 {#fdm-http-client-configuration}
 
-[!DNL Experience Manager Forms] 데이터 소스로 RESTful 웹 서비스와 통합할 때 양식 데이터 모델에 성능 최적화를 위한 HTTP 클라이언트 구성이 포함됩니다.
+[!DNL Experience Manager Forms] 데이터 소스에 성능 최적화를 위한 HTTP 클라이언트 구성이 포함되어 있으므로 RESTful 웹 서비스와 통합할 때 데이터 모델을 구성합니다.
 
 다음 속성을 설정합니다. **[!UICONTROL REST 데이터 소스에 대한 양식 데이터 모델 HTTP 클라이언트 구성]** 정규 표현식을 지정하는 구성:
 
@@ -223,7 +224,7 @@ RESTful 서비스 Open API 사양 버전 3.0에서 지원되지 않는 일부 �
 
 ## SOAP 웹 서비스 구성 {#configure-soap-web-services}
 
-SOAP 기반 웹 서비스는 다음을 사용하여 설명합니다. [WSDL(웹 서비스 설명 언어) 사양](https://www.w3.org/TR/wsdl). [!DNL Experience Manager Forms] rpc 스타일 WSDL 모델을 지원하지 않습니다.
+SOAP 기반 웹 서비스는 다음을 사용하여 설명합니다. [WSDL(웹 서비스 설명 언어) 사양](https://www.w3.org/TR/wsdl). [!DNL Experience Manager Forms] rpc 스타일의 WSDL 모델을 지원하지 않습니다.
 
 에서 SOAP 기반 웹 서비스를 구성하려면 [!DNL Experience Manager] as a Cloud Service으로 웹 서비스용 WSDL URL이 있는지 확인하고 다음을 수행합니다.
 
@@ -268,7 +269,7 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. 에서 OData 서비�
 >[!NOTE]
 >
 > 양식 데이터 모델 지원 [OData 버전 4](https://www.odata.org/documentation/).
->를 구성하는 단계별 지침입니다. [!DNL Microsoft® Dynamics 365], 온라인 또는 온프레미스에서 다음을 참조하십시오. [[!DNL Microsoft® Dynamics] OData 구성](ms-dynamics-odata-configuration.md).
+>를 구성하는 단계별 안내서입니다. [!DNL Microsoft®® Dynamics 365], 온라인 또는 온프레미스에서 다음을 참조하십시오. [[!DNL Microsoft® Dynamics] OData 구성](ms-dynamics-odata-configuration.md).
 
 1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Service > 데이터 소스]**. 클라우드 구성을 만들려는 폴더를 탭하여 선택합니다.
 
@@ -284,9 +285,32 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. 에서 OData 서비�
 
    >[!NOTE]
    >
-   연결할 OAuth 2.0 인증 유형을 선택해야 합니다. [!DNL Microsoft® Dynamics] 서비스 루트로 OData 끝점을 사용하는 서비스입니다.
+   연결할 OAuth 2.0 인증 유형을 선택해야 합니다. [!DNL Microsoft®® Dynamics] 서비스 루트로 OData 끝점을 사용하는 서비스입니다.
 
 1. 누르기 **[!UICONTROL 만들기]** 를 클릭하여 OData 서비스에 대한 클라우드 구성을 만듭니다.
+
+## Microsoft® SharePoint 목록 구성 {#config-sharepoint-list}
+
+<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)을 통해 액세스할 수 있습니다. </span>
+
+데이터를 테이블 형식으로 저장하려면 Microsoft® SharePoint List를 사용하십시오. 에서 Microsoft SharePoint 목록을 구성하려면 다음을 수행하십시오. [!DNL Experience Manager] as a Cloud Service으로 다음을 수행합니다.
+
+1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft®® SharePoint]**.
+1. **구성 컨테이너**&#x200B;를 선택합니다. 선택한 구성 컨테이너에 구성을 저장합니다.
+1. 클릭 **[!UICONTROL 만들기]** > **[!UICONTROL SharePoint 목록]** 을 클릭합니다. SharePoint 구성 마법사가 나타납니다.
+1. **[!UICONTROL 제목]**, **[!UICONTROL 클라이언트 ID]**, **[!UICONTROL 클라이언트 보안]** 및 **[!UICONTROL OAuth URL]**&#x200B;을 지정합니다. OAuth URL의 클라이언트 ID, 클라이언트 보안, 테넌트 ID를 검색하는 방법에 대한 자세한 내용은 [Microsoft® Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)을 참조하십시오.
+   * Microsoft® Azure 포털에서 앱의 `Client ID` 및 `Client Secret`를 검색할 수 있습니다.
+   * Microsoft® Azure 포털에서 리디렉션 URI를 `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`로 추가합니다. `[author-instance]`를 작성자 인스턴스의 URL로 대체합니다.
+   * API 권한 추가 `offline_access` 및 `Sites.Manage.All` 다음에서 **Microsoft® 그래프** 읽기/쓰기 권한을 제공하는 탭입니다. 추가 `AllSites.Manage` 의 권한 **Sharepoint** 탭으로 이동하여 SharePoint 데이터와 원격으로 상호 작용할 수 있습니다.
+   * OAuth URL 사용: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Microsoft® Azure 포털에서 `<tenant-id>`를 앱의 `tenant-id`로 대체합니다.
+
+     >[!NOTE]
+     >
+     **클라이언트 보안** 필드는 Azure Active Directory 애플리케이션 구성에 따라 필수 또는 선택 사항입니다. 애플리케이션을 구성하여 클라이언트 보안을 사용하는 경우 클라이언트 보안을 제공해야 합니다.
+
+1. **[!UICONTROL 연결]**&#x200B;을 클릭합니다. 연결이 완료되면 `Connection Successful` 메시지가 나타납니다.
+1. 선택 **[!UICONTROL SharePoint 사이트]** 및 **[!UICONTROL SharePoint 목록]** 을 클릭합니다.
+1. 누르기 **[!UICONTROL 만들기]** Microsoft® SharePointList에 대한 클라우드 구성을 만듭니다.
 
 <!--## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 
