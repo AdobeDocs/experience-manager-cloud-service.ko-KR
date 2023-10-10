@@ -3,9 +3,9 @@ title: Edge Delivery Services 시작하기
 description: Edge Delivery Services 시작하기.
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: 6a4a257b3ca3d2db76d43707792d97db87974593
+source-git-commit: beaadc7b59223d527b61ed43d44fcd97a0079e0d
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '832'
 ht-degree: 2%
 
 ---
@@ -60,7 +60,7 @@ Adobe은 Edge Delivery Services에 도움이 되는 세 가지 채널을 제공�
 
 ### 커뮤니티 리소스 액세스 {#community-resource}
 
-Adobe은 Edge 게재에 도움이 되는 두 개의 커뮤니티 리소스를 보유하고 있습니다. [Experience League 커뮤니티](https://adobe.ly/3Q6kTKl) 및 a [디스코드 채널](https://discord.gg/YFTKQK8M).
+Adobe은 Edge 게재에 도움이 되는 두 개의 커뮤니티 리소스를 보유하고 있습니다. [Experience League 커뮤니티](https://adobe.ly/3Q6kTKl) 및 a [디스코드 채널](https://discord.gg/aem-live).
 
 ### 제품 공동 작업 채널에 액세스하는 방법 {#collab-channel}
 
