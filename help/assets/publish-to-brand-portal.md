@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 780d04852d3760f92c6f0c5edf77630d4bb5a343
+source-git-commit: 7f806c457f7bef1c5309bbc6f69d3989af1b06d3
 workflow-type: tm+mt
-source-wordcount: '1263'
-ht-degree: 93%
+source-wordcount: '1301'
+ht-degree: 90%
 
 ---
 
@@ -32,6 +32,8 @@ AEM Assets에서 원래 자산, 폴더 또는 컬렉션을 차후에 수정하�
 >[!NOTE]
 >
 >AEM 작성자가 초과 리소스를 차지하지 않도록 가급적이면 피크가 아닌 시간에, 시차 게시를 수행하는 것이 좋습니다.
+>자산은 묶음으로 게시해야 합니다. 배치 크기에 대한 권장 사항은 15K입니다.
+> 대상 [!DNL Experience Manager Assets] as a [!DNL Cloud Service], lab 조건에서 관찰된 전송 비율은 시간당 1000개의 에셋입니다. 이 속도는 평균 10MB 에셋의 크기로 관찰됩니다.
 
 ## 자산을 Brand Portal에 게시 {#publish-assets-to-bp}
 
