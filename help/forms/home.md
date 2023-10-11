@@ -1,12 +1,12 @@
 ---
 title: ' [!DNL AEM Forms] as a Cloud Service 소개'
-description: AEM Forms을 탐색하여 업무용 양식을 제작하고 비즈니스 프로세스 워크플로우를 제작하며 문서 서비스를 사용하여 문서를 제작하고 보호합니다.
+description: AEM Forms를 통해 업무용 양식을 제작하고 비즈니스 프로세스 워크플로를 만들 수 있고, 문서 서비스를 사용하여 문서를 생성하고 보호할 수 있습니다.
 landing-page-description: AEM as a Cloud Service에서 양식을 사용하는 방법을 이해합니다.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
 source-wordcount: '1149'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 

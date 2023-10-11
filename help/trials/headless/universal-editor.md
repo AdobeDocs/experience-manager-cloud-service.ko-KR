@@ -1,5 +1,5 @@
 ---
-title: 범용 편집기를 사용하여 컨텍스트에서 편집
+title: Universal Editor로 컨텍스트에서 편집
 description: 범용 편집기를 사용하여 구현의 위치 및 컨텍스트에서 콘텐츠의 모든 측면을 편집하는 방법에 대해 알아봅니다.
 hidefromtoc: true
 index: false
@@ -7,15 +7,15 @@ exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 source-git-commit: 226df8999d1344ffe8acb2a9ce75b58634300a11
 workflow-type: tm+mt
 source-wordcount: '971'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
-# 범용 편집기를 사용하여 컨텍스트에서 편집 {#editing-in-context}
+# Universal Editor로 컨텍스트에서 편집 {#editing-in-context}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
->title="범용 편집기를 사용하여 컨텍스트에서 편집"
+>title="Universal Editor로 컨텍스트에서 편집"
 >abstract="Headless 앱이 Universal Editor를 활용하여 작성자가 컨텍스트에서 손쉽게 편집을 수행할 수 있도록 하는 방법을 확인하십시오."
 
 >[!CONTEXTUALHELP]
