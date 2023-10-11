@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 8c878833118b2d8dc51e8cfa2c15ce70efbd3deb
+source-git-commit: ab0fc832eb66bcf9a0fcd4f08b481845f3664e14
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 83%
+source-wordcount: '1440'
+ht-degree: 85%
 
 ---
 
@@ -32,15 +32,11 @@ ht-degree: 83%
 
 [ 여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
 
-<!-- 
+## 릴리스 비디오 {#release-video}
 
-## Release Video {#release-video}
+2023년 9월 릴리스 개요 비디오를 통해 2023.9.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
-Have a look at the September 2023 Release Overview video for a summary of the features added in the 2023.9.0 release:
-
->[!VIDEO](put new link here)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3424826/?quality=12)
 
 ## Edge 게재 서비스 {#edge-delivery}
 
@@ -54,7 +50,7 @@ Edge Delivery는 고객의 상호 작용 시점에서 측정 가능한 비즈니
 
 **폴더에 메타데이터 양식 할당**
 
-이제 메타데이터 양식을 배포 내의 특정 폴더에 할당할 수 있습니다. 하위 폴더의 에셋을 포함하여 폴더의 모든 에셋은 할당된 메타데이터 양식에 정의된 속성을 표시합니다.
+이제 배포 내의 특정 폴더에 메타데이터 양식을 할당할 수 있습니다. 하위 폴더의 자산을 포함한 폴더의 모든 자산에는 할당된 메타데이터 양식에 정의된 속성이 표시됩니다.
 
 ![폴더에 메타데이터 양식 할당](/help/release-notes/assets/assign-to-folder.png)
 
