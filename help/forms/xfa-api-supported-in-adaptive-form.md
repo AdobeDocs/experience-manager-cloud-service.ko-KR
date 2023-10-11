@@ -2,11 +2,9 @@
 title: XDP 기반 적응형 Forms에서 XFA 지원
 description: 적응형 Forms에서 지원되는 XFA 이벤트, 속성, 스크립트 및 유효성 검사를 나열합니다.
 uuid: 75d3c292-cfed-438f-afdb-4071d95a08b7
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 05303b29-9058-4723-b134-4ba605fe40c7
-docset: aem65
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 5%

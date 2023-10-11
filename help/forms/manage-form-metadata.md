@@ -1,10 +1,10 @@
 ---
-title: AEM Forms에 대한 메타데이터 관리
+title: AEM Forms에 대한 메타데이터를 관리하려면 어떻게 해야 합니까?
 description: 메타데이터를 사용하면 에셋을 보다 쉽게 분류하고 구성할 수 있으며 특정 에셋을 찾는 사용자에게 도움이 됩니다.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '1741'
 ht-degree: 6%
 
 ---

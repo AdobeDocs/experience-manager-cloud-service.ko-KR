@@ -1,11 +1,11 @@
 ---
-title: “[!DNL AEM Forms] as a Cloud Service 릴리스 정보”
-description: “[!DNL AEM Forms] as a Cloud Service 릴리스 정보”
+title: AEM Forms as a Cloud Service 릴리스 노트
+description: AEM Forms as a Cloud Service의 새로운 기능, 베타 릴리스, 프리릴리스 정보 등에 대해 알아보십시오.
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '2015'
-ht-degree: 100%
+source-git-commit: 8074c0e9566b679830a56094bc9b47cb22f4bb4a
+workflow-type: tm+mt
+source-wordcount: '2028'
+ht-degree: 98%
 
 ---
 

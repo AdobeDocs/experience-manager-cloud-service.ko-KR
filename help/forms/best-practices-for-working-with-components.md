@@ -1,11 +1,9 @@
 ---
-title: 구성 요소 작업에 대한 우수 사례
-seo-title: Best practices for working with components
-description: 적응형 양식 구성 요소로 작업할 때 기억해야 할 몇 가지 모범 사례 및 주요 사항
-seo-description: Some best practices and key points to remember when working with Adaptive Form components
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+title: AEM 적응형 양식 작업 시 기억해야 할 모범 사례 및 주요 사항.
+description: 적응형 양식 구성 요소로 작업할 때 기억해야 할 몇 가지 모범 사례와 주요 사항입니다.
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '641'
 ht-degree: 1%
 
 ---

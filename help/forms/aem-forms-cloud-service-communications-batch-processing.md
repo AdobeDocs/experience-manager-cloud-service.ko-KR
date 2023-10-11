@@ -1,17 +1,17 @@
 ---
-title: AEM Forms as a Cloud Service 통신 일괄 처리
+title: 간편한 벌크 PDF 생성 - 일괄 처리 기술을 기본으로 제공 - 수백만 개의 PDF 문서 생성에 대한 자체 도움말 안내서!
 description: 브랜드 지향적이고 개인화된 커뮤니케이션을 만드는 방법
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1705'
 ht-degree: 2%
 
 ---
 
 # AEM Forms as a Cloud Service 통신 일괄 처리
 
-커뮤니케이션을 사용하면 비즈니스 서신, 문서, 명세서, 청구 처리 편지, 혜택 공지, 청구 처리 편지, 월별 청구서 및 환영 키트와 같은 브랜드 지향적이고 개인화된 커뮤니케이션을 만들고, 조합하고, 제공할 수 있습니다. 커뮤니케이션 API를 사용하여 템플릿(XFA 또는 PDF)을 고객 데이터와 결합하여 PDF, PS, PCL, DPL, IPL 및 ZPL 형식의 문서를 생성할 수 있습니다.
+커뮤니케이션을 사용하면 비즈니스 서신, 문서, 명세서, 청구 처리 편지, 혜택 공지, 월별 청구서 및 시작 키트와 같은 브랜드 지향적이고 개인화된 커뮤니케이션을 만들고, 조합하고, 제공할 수 있습니다. 커뮤니케이션 API를 사용하여 템플릿(XFA 또는 PDF)을 고객 데이터와 결합하여 PDF, PS, PCL, DPL, IPL 및 ZPL 형식의 문서를 생성할 수 있습니다.
 
 통신은 온디맨드 및 예약된 문서 생성을 위한 API를 제공합니다. 온디맨드 API에는 동기 API를, 예약된 문서 생성에는 배치 API(비동기 API)를 사용할 수 있습니다.
 

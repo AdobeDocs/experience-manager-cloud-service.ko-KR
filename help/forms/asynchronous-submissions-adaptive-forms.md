@@ -1,13 +1,14 @@
 ---
-title: AEM Adaptive Forms의 비동기 제출 구성
+title: AEM Adaptive Forms에 대한 비동기 제출을 구성하는 방법
 description: 적응형 Forms에 대한 비동기 제출을 구성하는 방법을 알아봅니다. 적응형 Forms에 대해 비동기 제출이 작동하는 방식에 대해 자세히 알아보십시오.
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 1%
+source-wordcount: '751'
+ht-degree: 5%
 
 ---
 
@@ -41,7 +42,7 @@ ht-degree: 1%
 
 ## 비동기 제출 작동 방식 {#how-asynchronous-submission-works}
 
-[!DNL Experience Manager Forms] 는 양식 제출을 위한 기본 성공 및 오류 핸들러를 제공합니다. 핸들러는 서버 응답을 기반으로 실행되는 클라이언트측 함수입니다. 양식을 제출하면 유효성 검사를 위해 데이터가 서버로 전송되며, 이 서버는 제출에 대한 성공 또는 오류 이벤트에 대한 정보와 함께 응답을 클라이언트에 반환합니다. 정보는 관련 핸들러에 매개 변수로 전달되어 함수를 실행합니다.
+[!DNL Experience Manager Forms] 는 양식 제출을 위한 기본 성공 및 오류 핸들러를 제공합니다. 핸들러는 서버 응답을 기반으로 실행되는 클라이언트측 함수입니다. 양식을 제출하면 유효성 검사를 위해 데이터가 서버로 전송되며, 이 서버는 제출에 대한 성공 또는 오류 이벤트에 대한 정보와 함께 응답을 클라이언트에 반환합니다. 정보가 매개변수로서 관련 핸들러에 전달되면 함수를 실행할 수 있습니다.
 
 또한 양식 작성자와 개발자는 양식 수준에서 규칙을 작성하여 기본 핸들러를 재정의할 수 있습니다. 자세한 내용은 [규칙을 사용하여 기본 처리기 재정의](#custom).
 

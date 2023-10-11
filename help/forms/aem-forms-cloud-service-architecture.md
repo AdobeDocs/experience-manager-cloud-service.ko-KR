@@ -1,11 +1,11 @@
 ---
-title: AEM Forms as a Cloud Service 아키텍처
+title: 적응형 Forms 및 통신 API를 위한 AEM Forms as a Cloud Service 아키텍처
 description: 의 아키텍처 이해 [!DNL AEM Forms] 플랫폼의 확장성, 복원력 및 성능 측면에 대해 as a Cloud Service으로 알아볼 수 있습니다.
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
-source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 6%
+source-wordcount: '1071'
+ht-degree: 5%
 
 ---
 

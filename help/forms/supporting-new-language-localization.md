@@ -1,10 +1,10 @@
 ---
-title: 적응형 양식에 새 로케일에 대한 지원을 추가하는 방법
+title: 기초 구성 요소를 기반으로 하는 적응형 양식에 새 로케일에 대한 지원을 추가하려면 어떻게 합니까?
 description: 적응형 Forms의 경우 즉시 제공된 언어 외에도 더 많은 언어에 대한 로케일을 추가할 수 있습니다.
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1264'
 ht-degree: 8%
 
 ---

@@ -1,11 +1,11 @@
 ---
-title: 적응형 양식 미리 보기 방법
+title: 적응형 양식을 미리 보는 방법
 description: 사용자는 게시 또는 활성화 전에 양식을 미리 보고 예상치에 부합하도록 할 수 있습니다. 미리 보기 옵션은 지원되는 양식 유형에 따라 다를 수 있습니다.
 uuid: 9ec359ea-f518-441c-9c3d-e3c1ea07a532
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 3%

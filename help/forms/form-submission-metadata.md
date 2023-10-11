@@ -1,12 +1,12 @@
 ---
-title: 사용자 데이터의 정보를 양식 제출 메타데이터에 추가
+title: 제출된 양식의 메타데이터를 업데이트하는 방법
 description: 사용자 제공 데이터를 사용하여 제출된 양식의 메타데이터에 정보를 추가하는 방법을 알아봅니다. CRX 저장소에서 업데이트된 양식 제출 메타데이터를 보는 방법에 대해 자세히 알아보십시오.
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '688'
 ht-degree: 0%
 
 ---

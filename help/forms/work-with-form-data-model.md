@@ -1,13 +1,13 @@
 ---
-title: 양식 데이터 모델을 사용하여 작업하는 방법
+title: AEM Forms에서 양식 데이터 모델을 사용하는 프로세스는 무엇입니까?
 description: 데이터 모델 개체, 서비스를 추가하고, 데이터 모델 개체 및 하위 속성을 만들고, 서비스를 구성하고, OData 서비스의 탐색 속성을 사용하여 작업합니다.
 feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '4108'
+source-wordcount: '4115'
 ht-degree: 0%
 
 ---

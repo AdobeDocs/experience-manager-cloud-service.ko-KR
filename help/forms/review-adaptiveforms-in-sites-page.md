@@ -1,12 +1,12 @@
 ---
-title: Sites 페이지에 임베드되거나 생성된 적응형 Forms에 대한 검토를 생성하고 관리하는 방법
+title: 검토를 위해 적응형 양식을 보내는 방법 AEM 적응형 양식에 대한 검토를 관리하는 방법
 description: 검토는 검토자가 작업 할당 단계를 사용하여 적응형 양식에 대해 다양한 작업을 수행할 수 있는 메커니즘입니다.
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '360'
 ht-degree: 5%
 
 ---

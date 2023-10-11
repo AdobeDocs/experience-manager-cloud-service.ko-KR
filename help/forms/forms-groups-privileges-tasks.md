@@ -1,11 +1,11 @@
 ---
-title: 기본 제공 [!DNL AEM Forms] as a Cloud Service 그룹
+title: AEM Forms as a Cloud Service으로 제공되는 사용자 그룹은 무엇입니까?
 description: 즉시 사용 가능한 사용자 그룹 및 각 그룹에 할당된 권한 목록
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 25%
+source-wordcount: '185'
+ht-degree: 24%
 
 ---
 

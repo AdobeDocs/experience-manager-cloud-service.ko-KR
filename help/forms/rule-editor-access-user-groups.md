@@ -1,12 +1,12 @@
 ---
-title: 사용자 그룹 선택을 위한 규칙 편집기 액세스 권한을 부여하는 방법
+title: 사용자 그룹을 선택하기 위해 AEM 적응형 양식 규칙 편집기에 대한 액세스 권한을 제공하는 방법은 무엇입니까?
 description: 적응형 Forms과 작동하는 다양한 스킬을 가진 다양한 유형의 사용자가 있습니다. 역할 또는 기능에 따라 규칙 편집기 액세스를 사용자에게 제한하는 방법에 대해 알아봅니다.
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '325'
 ht-degree: 5%
 
 ---

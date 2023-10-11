@@ -1,13 +1,13 @@
 ---
-title: 핵심 구성 요소를 기반으로 하는 적응형 양식에 새 로케일에 대한 지원을 추가하는 방법
+title: 핵심 구성 요소를 기반으로 새 로케일에 대한 지원을 적응형 양식에 추가하려면 어떻게 합니까?
 description: 적응형 양식에 대한 새 로케일을 추가하는 방법을 알아봅니다.
-source-git-commit: 0d2e353208e4e59296d551ca5270be06e574f7df
+exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1340'
 ht-degree: 4%
 
 ---
-
 
 # 핵심 구성 요소를 기반으로 적응형 Forms에 대한 로케일 추가 {#supporting-new-locales-for-adaptive-forms-localization}
 
@@ -149,7 +149,7 @@ AEM Forms은 새 로케일을 쉽게 추가하는 데 도움이 되는 샘플 �
 
 ### 6. 변경 사항을 커밋하고 파이프라인을 배포합니다. {#commit-changes-in-repo-deploy-pipeline}
 
-새 로케일을 추가한 후 GIT 저장소에 변경 사항을 커밋합니다. 전체 스택 파이프라인을 사용하여 코드를 배포합니다. 학습 [파이프라인 설정 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) 새 로케일 지원을 추가합니다.
+새 로케일을 추가한 후 GIT 저장소에 변경 사항을 커밋합니다. 전체 스택 파이프라인을 사용하여 코드를 배포합니다. 학습 [파이프라인 설정 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#setup-pipeline) 새 로케일 지원을 추가합니다.
 
 파이프라인 실행이 완료되면 새로 추가된 로케일을 사용할 수 있습니다.
 
@@ -179,5 +179,3 @@ AEM Forms은 새 로케일을 쉽게 추가하는 데 도움이 되는 샘플 �
 * [기계 번역 또는 사람 번역을 사용하여 적응형 양식 기반의 핵심 구성 요소 번역](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [적응형 Forms에 대한 기록 문서 생성](/help/forms/generate-document-of-record-core-components.md)
 * [AEM Sites 페이지 또는 경험 조각에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-
-

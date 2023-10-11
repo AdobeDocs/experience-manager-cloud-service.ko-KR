@@ -1,12 +1,12 @@
 ---
-title: Forms as a Cloud Service faq
+title: AEM FORMS FAQ AS A CLOUD SERVICE
 description: Forms as a Cloud Service faq
 contentOwner: khsingh
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
 index: false
-source-git-commit: 93e7c4b31ea3037c98b64790ffdee11f94cc6134
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '995'
 ht-degree: 3%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 3%
 * **기존 테마 및 템플릿을 계속 사용할 수 있습니까?**
 예, 를 사용한 후에도 AEM 6.4 Forms 및 AEM 6.5 Forms으로 만든 테마를 계속 사용할 수 있습니다. [마이그레이션 유틸리티](migrate-to-forms-as-a-cloud-service.md) 다음으로 이동 [!DNL AEM Forms] as a Cloud Service.
 
-   을 기반으로 프로젝트를 만들 수도 있습니다. [!DNL AEM Forms] as a Cloud Service [Archetype](setup-local-development-environment.md#forms-cloud-service-local-development-environment) 포함된 샘플 테마 및 템플릿을 사용하십시오.
+  을 기반으로 프로젝트를 만들 수도 있습니다. [!DNL AEM Forms] as a Cloud Service [Archetype](setup-local-development-environment.md#forms-cloud-service-local-development-environment) 포함된 샘플 테마 및 템플릿을 사용하십시오.
 
 * **스키마 준수 데이터를 생성할 수 있습니까?**
 예. 적응형 Forms을 만들어 스키마 호환 데이터를 생성할 수 있습니다.
@@ -60,7 +60,7 @@ Custom parameters are planned for an upcoming release. -->
 
 * **현지화된 적응형 양식이 있습니다. 현지화된 버전을 렌더링하고 있지 않습니까? 그 원인이 무엇이며 어떻게 해결할 것인가?**
 
-   현지화된 적응형 Forms의 URL 규칙은 이제 URL에서 로케일 지정을 지원합니다. 새 URL 규칙을 사용하면 Dispatcher 또는 CDN에서 현지화된 양식을 캐싱할 수 있습니다. Cloud Service 환경에서 URL 형식을 사용합니다 `http://host:port/content/forms/af/<afName>.<locale>.html` 을(를) 대신해 지역화된 버전의 적응형 양식을 요청하려면 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`. Adobe Dispatcher 또는 CDN 캐싱을 사용하는 것이 좋습니다. 미리 채워진 양식의 렌더링 속도를 개선하는 데 도움이 됩니다.
+  현지화된 적응형 Forms의 URL 규칙은 이제 URL에서 로케일 지정을 지원합니다. 새 URL 규칙을 사용하면 Dispatcher 또는 CDN에서 현지화된 양식을 캐싱할 수 있습니다. Cloud Service 환경에서 URL 형식을 사용합니다 `http://host:port/content/forms/af/<afName>.<locale>.html` 을(를) 대신해 지역화된 버전의 적응형 양식을 요청하려면 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`. Adobe Dispatcher 또는 CDN 캐싱을 사용하는 것이 좋습니다. 미리 채워진 양식의 렌더링 속도를 개선하는 데 도움이 됩니다.
 
 * **적응형 양식을 업데이트했습니다. 업데이트된 버전을 고객이 사용할 수 없습니까?**
 기본적으로 CDN은 5분마다 캐시를 새로 고치고 5분 동안 기다린 다음 업데이트된 버전을 확인합니다.
@@ -82,11 +82,11 @@ Custom parameters are planned for an upcoming release. -->
 
 * **Forms 포털 제출 액션 적응형 Forms을 사용할 수 있습니까?**
 
-   기존 적응형 Forms을 수정하여 사용할 수 있습니다 [REST 끝점에 제출](configuring-submit-actions.md#submit-to-rest-endpoint), [이메일 보내기](configuring-submit-actions.md#send-email), [양식 데이터 모델을 사용하여 제출](configuring-submit-actions.md#submit-using-form-data-model), 및 [AEM 워크플로우 호출](configuring-submit-actions.md#invoke-an-aem-workflow) 작업을 제출합니다. Forms 포털 및 Forms 포털 제출 액션은 아직 사용할 수 없습니다. 기능의 가용성에 대한 월별 릴리스 정보를 주시합니다.
+  기존 적응형 Forms을 수정하여 사용할 수 있습니다 [REST 끝점에 제출](configuring-submit-actions.md#submit-to-rest-endpoint), [이메일 보내기](configuring-submit-actions.md#send-email), [양식 데이터 모델을 사용하여 제출](configuring-submit-actions.md#submit-using-form-data-model), 및 [AEM 워크플로우 호출](configuring-submit-actions.md#invoke-an-aem-workflow) 작업을 제출합니다. Forms 포털 및 Forms 포털 제출 액션은 아직 사용할 수 없습니다. 기능의 가용성에 대한 월별 릴리스 정보를 주시합니다.
 
 * **사용할 수 있습니까 [!DNL AEM Forms] 앱 사용 [!DNL AEM Forms] as a Cloud Service?**
 
-   적응형 양식은 반응형 디자인을 제공합니다. 이러한 양식은 기본 디바이스에 따라 모양, 디자인 및 인터랙티브 요소를 변경합니다. 기능의 가용성을 월별 릴리스 정보에서 계속 주시하면서 모바일 장치에서 적응형 Forms을 계속 사용할 수 있습니다.
+  적응형 양식은 반응형 디자인을 제공합니다. 이러한 양식은 기본 디바이스에 따라 모양, 디자인 및 인터랙티브 요소를 변경합니다. 기능의 가용성을 월별 릴리스 정보에서 계속 주시하면서 모바일 장치에서 적응형 Forms을 계속 사용할 수 있습니다.
 
 * **초기 GA 릴리스에 포함되지 않는 기능은 무엇입니까?**
 Forms 포털, [!DNL AEM Forms] 앱, Adobe Analytics과의 통합 및 Adobe Target과의 통합은 초기 GA 릴리스의 일부가 아닙니다. 새로운 기능에 대한 정보는 월별 릴리스 정보를 확인하십시오.

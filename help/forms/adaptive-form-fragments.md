@@ -1,14 +1,14 @@
 ---
-title: 적응형 양식 단편
+title: 적응형 양식 조각을 만들고 사용하는 방법
 description: 양식 조각은 양식의 모듈식 재사용 가능한 구성 요소입니다. 효율적인 양식 어셈블리를 위해 양식 조각을 빌드하고 여러 양식에서 재사용하는 방법에 대해 알아봅니다.
 uuid: bb4830b5-82a0-4026-9dae-542daed10e6f
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '2018'
+source-wordcount: '2023'
 ht-degree: 1%
 
 ---
@@ -132,7 +132,7 @@ ht-degree: 1%
 1. 적응형 양식 단편을 삽입할 적응형 양식을 편집 모드로 엽니다.
 1. 클릭 **에셋** ![에셋 브라우저](assets/assets-browser.png) 를 클릭합니다. 에셋 브라우저에서 **적응형 양식 단편** 드롭다운에서 을 클릭합니다.
 
-   양식 템플릿, XML 스키마 또는 기본 등 모든 적응형 양식 조각을 표시하거나 해당 양식 모델을 기반으로 필터링을 표시하도록 선택할 수도 있습니다.
+   양식 모델 양식 템플릿, XML 스키마 또는 기본을 기반으로 모든 적응형 양식 조각 또는 필터를 표시 하도록 선택할 수도 있습니다.
 
 1. 적응형 양식 단편을 적응형 양식으로 드래그 앤 드롭합니다.
 

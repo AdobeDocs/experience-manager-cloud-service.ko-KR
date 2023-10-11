@@ -1,12 +1,12 @@
 ---
-title: OSGi의 Forms 중심 워크플로우
+title: BPM(비즈니스 프로세스 자동화)에 AEM Forms을 사용하는 방법
 seo-title: Rapidly build Adaptive Forms-based processes, automate document services operations, and use Adobe Sign with AEM workflows
 description: 'AEM Forms 워크플로를 사용하여 비즈니스 프로세스 워크플로를 자동화하고 신속하게 구축할 수 있습니다. 예: 검토 및 승인, PDF 생성, Adobe Sign 워크플로.'
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '2369'
+source-wordcount: '2375'
 ht-degree: 2%
 
 ---

@@ -1,11 +1,11 @@
 ---
-title: 적응형 양식의 메타데이터 속성을 재사용하는 방법
+title: 적응형 양식의 메타데이터 속성을 재사용하려면 어떻게 해야 합니까?
 description: 기존 적응형 양식의 용도를 효율적으로 변경하여 새 적응형 양식을 만드는 방법을 살펴보십시오.
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '615'
 ht-degree: 12%
 
 ---

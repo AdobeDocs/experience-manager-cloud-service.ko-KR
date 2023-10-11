@@ -1,10 +1,11 @@
 ---
-title: 캐싱 성능 문제 해결
-description: AEM Forms as a Cloud Service에 대한 캐싱 관련 문제를 해결하는 방법
+title: AEM Forms as a Cloud Service에 대한 캐싱 관련 문제를 해결하려면 어떻게 합니까?
+description: AEM Forms as a Cloud Service의 캐싱 관련 문제를 해결합니다.
 contentOwner: khsingh
-source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
+exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '378'
 ht-degree: 2%
 
 ---

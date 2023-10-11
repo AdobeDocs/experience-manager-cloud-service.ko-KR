@@ -1,13 +1,13 @@
 ---
-title: 구성 방법 [!DNL Microsoft Dynamics] OData?
+title: 구성 방법 [!DNL Microsoft Dynamics] AEM Forms용 OData?
 description: 에 정의된 엔티티, 속성 및 서비스를 기반으로 양식 데이터 모델을 만드는 방법에 대해 알아봅니다. [!DNL Microsoft Dynamics] 서비스.
 feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '986'
 ht-degree: 3%
 
 ---

@@ -1,9 +1,9 @@
 ---
-title: 의 자리 표시자 텍스트 [!DNL AEM Forms]
+title: 양식 필드에 자리 표시자 텍스트를 추가하는 방법
 description: 자리 표시자 텍스트는 컨트롤에 값이 없을 때 사용자에게 데이터 입력을 지원하기 위한 것입니다. 샘플 값이거나 예상 형식에 대한 간략한 설명일 수 있습니다.
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '211'
 ht-degree: 0%
 
 ---

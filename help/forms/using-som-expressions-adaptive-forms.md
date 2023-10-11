@@ -1,14 +1,14 @@
 ---
-title: 적응형 Forms에서 SOM 표현식을 사용하는 방법
+title: 적응형 Forms에서 SOM 표현식을 사용하려면 어떻게 해야 합니까?
 description: 적응형 Forms에서 패널의 SOM 표현식을 추출하는 방법을 알아봅니다.
 uuid: c5d55aff-fb69-4a1c-96ea-fb3f9322cbb0
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 13f00bb2-561f-4d64-8829-292c663abeab
 docset: aem65
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---

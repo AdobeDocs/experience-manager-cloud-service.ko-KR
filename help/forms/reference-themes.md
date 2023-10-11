@@ -1,12 +1,12 @@
 ---
-title: AEM Forms 참조 자산
+title: 기초 구성 요소를 기반으로 적응형 양식의 참조 테마를 얻는 방법
 description: 제공된 참조 적응형 양식 테마, 템플릿 및 양식 데이터 모델을 사용하여 신속하게 시작하십시오.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 03305b4a-d82d-4b8d-8804-249b10bdd358
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 7%
+source-wordcount: '521'
+ht-degree: 6%
 
 ---
 

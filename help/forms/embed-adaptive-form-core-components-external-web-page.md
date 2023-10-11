@@ -1,14 +1,14 @@
 ---
-title: 핵심 구성 요소를 기반으로 하는 적응형 양식을 외부 웹 페이지에 임베드하는 방법
-description: 웹 사이트에 적응형 Forms을 임베드하는 방법에 대해 알아봅니다.
+title: 외부 웹 페이지에 적응형 양식을 임베드하려면 어떻게 해야 합니까?
+description: 외부 웹 페이지에서 적응형 양식을 임베드하는 방법 알아보기
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
 exl-id: 198f6f76-1134-4818-89a0-6ddc84ff956c
-source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
+source-git-commit: fb3d3732f698015151d9703bfddfe94b531d31b6
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 97%
+source-wordcount: '982'
+ht-degree: 98%
 
 ---
 

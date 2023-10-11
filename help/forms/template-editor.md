@@ -1,21 +1,21 @@
 ---
-title: 적응형 양식 템플릿을 만드는 방법
+title: 적응형 양식 템플릿을 만들려면 어떻게 해야 합니까?
 description: 템플릿 편집기를 사용하여 기본 구조와 초기 콘텐츠를 정의하는 적응형 양식 템플릿을 만드십시오.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '2095'
-ht-degree: 1%
+source-wordcount: '2096'
+ht-degree: 4%
 
 ---
 
 # 적응형 양식 템플릿 만들기 {#adaptive-form-templates}
 
-<span class="preview"> Adobe은 현대적이고 확장 가능한 데이터 캡처를 사용할 것을 권장합니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 대상 [새 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 이러한 구성 요소는 적응형 Forms 작성의 중요한 발전을 나타내어 인상적인 사용자 경험을 보장합니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 양식을 작성할 때 편집기에서 양식 구조, 콘텐츠 및 작업을 정의하는 필드 및 구성 요소를 추가합니다. 에서 필드 및 구성 요소를 추가합니다 `guideRootPanel` 양식 컨테이너. 템플릿 편집기를 사용하면 작성자가 양식을 만드는 데 사용할 수 있는 기본 구조와 초기 콘텐츠가 포함된 템플릿을 만들 수 있습니다.
@@ -156,7 +156,7 @@ Experience Manager은 템플릿을 구성할 수 있는 전역 폴더를 제공�
 
 ## 템플릿 가져오기 또는 내보내기 {#importing-or-exporting-a-template}
 
-양식은 템플릿으로 작동합니다. 사용자 지정된 템플릿을 사용하여 만든 적응형 양식을 다운로드할 때 템플릿이 다운로드되지 않습니다. 다른 페이지에서 양식을 가져올 때 [!DNL AEM Forms] 예를 들어 템플릿 없이 가져옵니다. 양식을 가져왔지만 해당 템플릿을 사용할 수 없는 경우 양식이 렌더링되지 않습니다. 에서 사용자 지정 템플릿을 패키징할 수 있습니다. `/conf` 의 노드 `https://<server>:<port>/crx/packmgr`및 를 사용하여 [!DNL AEM Forms] 양식을 업로드할 인스턴스입니다. 다음을 수행할 수도 있습니다. [AEM Archetype을 사용하여 템플릿을 만들고 Cloud Services 인스턴스에 배포합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
+양식은 템플릿으로 작동합니다. 사용자 지정된 템플릿을 사용하여 만든 적응형 양식을 다운로드할 때 템플릿이 다운로드되지 않습니다. 다른 페이지에서 양식을 가져올 때 [!DNL AEM Forms] 예를 들어 템플릿 없이 가져옵니다. 양식을 가져왔지만 해당 템플릿을 사용할 수 없는 경우 양식이 렌더링되지 않습니다. 에서 사용자 지정 템플릿을 패키징할 수 있습니다. `/conf` 의 노드 `https://<server>:<port>/crx/packmgr`및 를 사용하여 [!DNL AEM Forms] 양식을 업로드할 인스턴스입니다. 다음을 수행할 수도 있습니다. [AEM Archetype을 사용하여 템플릿을 만들고 Cloud Service 인스턴스에 배포합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
 
 >[!NOTE]
 >

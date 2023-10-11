@@ -1,12 +1,12 @@
 ---
-title: 양식 중심의 AEM 워크플로를 사용하여 비즈니스 프로세스 자동화
+title: AEM Forms Cloud Service에서 워크플로우를 만드는 데 사용할 수 있는 워크플로우 단계와 비즈니스 프로세스 자동화(BPM)에 사용할 수 있는 워크플로우 단계는 무엇입니까?
 description: Forms 중심 워크플로를 사용하면 적응형 Forms 기반 워크플로를 신속하게 구축할 수 있습니다. Adobe Sign을 사용하여 문서에 전자 서명하고, 양식 기반 비즈니스 프로세스를 만들고, 데이터를 검색하여 여러 데이터 소스로 보내고, 전자 메일 알림을 보낼 수 있습니다
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: AEM 워크플로 사용, 작업 단계 할당, PDF/A 단계로 전환, 기록된 문서 생성 단계, 워크플로 사용, 문서 서명 단계, 인쇄된 출력 단계 생성, 비대화형 PDF 출력 생성
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '7433'
+source-wordcount: '7446'
 ht-degree: 1%
 
 ---

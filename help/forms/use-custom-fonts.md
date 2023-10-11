@@ -1,10 +1,10 @@
 ---
-title: AEM Forms에서 사용자 정의 글꼴을 사용하는 방법
+title: AEM Forms에서 사용자 정의 글꼴을 사용하려면 어떻게 해야 합니까?
 description: Forms as a Cloud Service 환경에 사용자 정의 글꼴을 추가하는 방법을 알아봅니다.
 exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---

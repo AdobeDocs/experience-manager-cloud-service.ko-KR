@@ -1,13 +1,13 @@
 ---
-title: 레이아웃 모드를 사용하여 적응형 Forms에 대한 구성 요소 크기를 조정하는 방법
+title: 레이아웃 모드를 사용하여 적응형 양식의 구성 요소 크기를 조정하려면 어떻게 해야 합니까?
 description: AEM Forms 구성 요소의 위치를 정의하고, 레이아웃 모드에 액세스하는 방법을 배우고, 구성 요소의 크기를 조정하고, 패널의 크기를 조정하고, 패널의 다중 열 레이아웃을 정의합니다.
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1135'
 ht-degree: 6%
 
 ---

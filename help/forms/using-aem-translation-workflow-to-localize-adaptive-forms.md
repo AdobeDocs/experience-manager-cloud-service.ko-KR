@@ -1,15 +1,14 @@
 ---
-title: AEM 번역 워크플로를 사용하여 적응형 Forms 및 기록 문서를 현지화하는 방법
-description: AEM 번역 워크플로를 사용하면 기계 번역 또는 사람 번역을 사용하여 적응형 Forms 및 해당 기록 문서를 현지화할 수 있습니다.
-seo-description: Learn to use AEM translation workflows to localize Adaptive Forms and Document of Record.
+title: AEM 번역 워크플로를 사용하여 적응형 Forms 및 기록 문서를 현지화하려면 어떻게 해야 합니까?
+description: AEM 번역 워크플로를 사용하여 적응형 Forms 및 기록 문서를 현지화하는 방법에 대해 알아봅니다.
 uuid: 6c87a283-0203-4cf7-989a-3770ddbbbd6e
 content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '535'
 ht-degree: 1%
 
 ---

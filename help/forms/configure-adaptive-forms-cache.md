@@ -1,14 +1,14 @@
 ---
-title: 적응형 Forms 캐시 구성
+title: 적응형 양식 캐시란 무엇입니까? AEM 적응형 양식을 캐시하는 방법은 무엇입니까?
 description: 적응형 Forms 캐시는 적응형 양식 또는 문서를 렌더링하는 데 필요한 시간을 줄이기 위한 목적으로 적응형 Forms 및 문서용으로 설계되었습니다.
 uuid: ba8f79fd-d8dc-4863-bc0d-7c642c45505c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '974'
 ht-degree: 1%
 
 ---

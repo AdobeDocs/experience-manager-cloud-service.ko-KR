@@ -1,10 +1,10 @@
 ---
-title: 적응형 양식 표현식
+title: 적응형 양식 표현식이란?
 seo-title: Adaptive Form Expressions
 description: 적응형 Forms 표현식을 사용하여 자동 유효성 검사, 계산을 추가하고 섹션의 가시성을 켜거나 끕니다.
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '2695'
+source-wordcount: '2697'
 ht-degree: 0%
 
 ---
