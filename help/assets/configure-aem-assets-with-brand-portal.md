@@ -5,7 +5,7 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 2c8bac8627ed660d2780f93f4018c8fa980e569a
+source-git-commit: ac393e4b275693fae7413fb79496052d106b219c
 workflow-type: tm+mt
 source-wordcount: '2589'
 ht-degree: 18%
@@ -106,7 +106,6 @@ Brand Portal URL을 잘 모를 경우 다음 단계를 수행하십시오.
    Brand Portal 배포 에이전트(**[!UICONTROL bpdistributionagent0]**)은 아래에 생성됩니다. **[!UICONTROL Brand Portal에 게시]**.
 
    ![분배 에이전트 만들기](assets/test-bpconfig2.png)
-
 
 1. 클릭 **[!UICONTROL Brand Portal에 게시]** 배포 에이전트를 엽니다.
 
