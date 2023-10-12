@@ -8,10 +8,10 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 73e2e84006cb6435d5bf34eef642269eeb8f5c4e
+source-git-commit: 2218aa58c6105d5fbfc08975e9e39d6476f4b173
 workflow-type: tm+mt
-source-wordcount: '4328'
-ht-degree: 98%
+source-wordcount: '4333'
+ht-degree: 99%
 
 ---
 
@@ -465,7 +465,7 @@ ht-degree: 98%
       + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
       + [구조 트리](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [미리보기 - JSON 표현식](/help/assets/content-fragments/content-fragments-json-preview.md)
-      + [에셋용 MSM을 사용하여 콘텐츠 조각 재사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html)
+      + [자산의 MSM을 사용하여 콘텐츠 조각 재사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html)
    + Dynamic Media {#dynamicmedia}
       + Dynamic Media 여정: 기본 사항 {#dm-journey}
          + [1부: Dynamic Media 소개 - 사용 사례 - 자산이 시스템을 통해 이동하는 방법](/help/assets/dynamic-media/dm-journey-part1.md)
@@ -545,8 +545,8 @@ ht-degree: 98%
       + [ [!DNL Workfront]용 [!DNL enhanced connector] 구성](/help/assets/workfront-connector-configure.md)
       + [업데이트 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 
-   + Adobe Express과 통합 {#integration-adobe-express}
-      + [Adobe Express을 위한 AEM Assets 추가 기능](/help/assets/addon-adobe-express.md)
+   + Adobe Express와 통합 {#integration-adobe-express}
+      + [Adobe Express의 AEM Assets 추가 기능](/help/assets/addon-adobe-express.md)
 + Forms {#forms}
    + 개요 {#forms-overview}
       + [소개](/help/forms/home.md)
@@ -588,7 +588,7 @@ ht-degree: 98%
    + 적응형 양식 {#adaptive-forms-authoring}
       + [적응형 양식 만들기](/help/forms/create-an-adaptive-form.md)
       + [AEM Sites 페이지 또는 경험 조각에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-      + 코어 구성 요소 {#authoring-adaptive-forms-core-components}
+      + 핵심 구성 요소 {#authoring-adaptive-forms-core-components}
          + 적응형 양식 만들기 {#create-an-adaptive-form-on-forms-cs}
             + [적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md)
             + [적응형 양식 조각 만들기](/help/forms/adaptive-form-fragments-core-components.md)
@@ -600,7 +600,7 @@ ht-degree: 98%
             + [적응형 양식에 대한 제출 액션 구성](/help/forms/configure-submit-actions-core-components.md)
             + [적응형 양식에서 Google reCAPTCHA 사용](/help/forms/captcha-adaptive-forms-core-components.md)
             + [적응형 양식에서 사용자 정의 오류 핸들러 추가](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
-            + [핵심 구성 요소를 기반으로 적응형 Forms에 대한 로케일 추가](/help/forms/supporting-new-language-localization-core-components.md)
+            + [핵심 구성 요소 기반 적응형 양식의 로케일 추가](/help/forms/supporting-new-language-localization-core-components.md)
       + 기초 구성 요소 {#authoring-adaptive-forms-foundation-components}
          + PDF 양식을 적응형 양식으로 변환 {#afcs}
             + [자동 양식 전환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -737,13 +737,14 @@ ht-degree: 98%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [마이그레이션](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
-+ Edge 게재 서비스 {#edge-delivery}
-   + [Edge Delivery 시작하기.](/help/edge/overview.md)
-   + [Edge 게재 사용](/help/edge/using.md)
++ Edge Delivery Services {#edge-delivery}
+   + [Edge Delivery 시작](/help/edge/overview.md)
+   + [Edge Delivery 사용](/help/edge/using.md)
 + Headless {#headless}
    + [Headless CMS란 무엇입니까?](/help/headless/what-is-headless.md)
    + [AEM Headless 소개](/help/headless/introduction.md)
    + [개발자 포털 (추가 리소스)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+   + [모범 사례 - 설정 및 사용](/help/headless/best-practices-setup-use.md)
    + 설정 {#setup}
       + [소개](/help/headless/setup/introduction.md)
       + [구성](/help/headless/setup/create-configuration.md)
@@ -1046,4 +1047,4 @@ ht-degree: 98%
    + [Universal Editor 아키텍처](/help/implementing/universal-editor/architecture.md)
    + [속성 및 유형](/help/implementing/universal-editor/attributes-types.md)
    + [Universal Editor 인증](/help/implementing/universal-editor/authentication.md)
-   + [범용 편집기를 사용한 로컬 AEM 개발](/help/implementing/universal-editor/local-dev.md)
+   + [Universal Editor를 사용하는 로컬 AEM 개발](/help/implementing/universal-editor/local-dev.md)
