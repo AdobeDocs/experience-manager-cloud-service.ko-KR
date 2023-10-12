@@ -4,9 +4,9 @@ description: 이 문서에서는 Experience Manager에서 검색 패싯을 만�
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 220350e6669c38ea602c2796ec1d5559992338ec
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '2503'
 ht-degree: 21%
 
 ---
@@ -303,6 +303,18 @@ Instead of manually creating a node structure for the options in the CRX reposit
   </tr>
  </tbody>
 </table>
+
+## 기본 검색 패싯 제거 {#removing-default-search-facets}
+
+Adobe은 성능 문제를 방지하기 위해 기본 검색 패싯을 제거하는 동안 주의할 것을 권장합니다. 기본 검색 패싯을 제거하면 기본 기능 동작에도 영향을 줄 수 있습니다.
+
+다음 숨김 필드는 OmniSearch 및 스마트 컬렉션에서 쿼리 성능 문제를 일으킬 수 있으므로 제거하지 마십시오.
+
+* group.2_group.type=dam:Asset
+
+* group.1_group.type=nt:folder
+
+* group.p.or=true
 
 ## 기본 검색 패싯 복원 {#restoring-default-search-facets}
 
