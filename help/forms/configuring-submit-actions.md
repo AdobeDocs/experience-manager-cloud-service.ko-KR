@@ -2,7 +2,7 @@
 title: 적응형 양식에 대한 제출 액션을 구성하는 방법?
 description: 적응형 양식은 여러 제출 액션을 제공합니다. 제출 액션은 적응형 양식이 제출 후 처리되는 방식을 정의합니다. 기본 제공 제출 액션을 사용하거나 직접 만들 수 있습니다.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: fb3d3732f698015151d9703bfddfe94b531d31b6
+source-git-commit: 89e61c009890e2052c5db74b38c93fd54e697cd3
 workflow-type: tm+mt
 source-wordcount: '3395'
 ht-degree: 87%
@@ -235,6 +235,8 @@ AEM Forms를 Microsoft® SharePoint Storage에 연결하려면
 2. [적응형 양식에서 OneDrive에 제출 액션 사용](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af): Adaptive Form을 구성된 Microsoft® OneDrive에 연결합니다.
 
 ### OneDrive 구성 만들기 {#create-onedrice-configuration}
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
 
 AEM Forms를 Microsoft® OneDrive Storage에 연결하려면
 
