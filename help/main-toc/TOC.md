@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2218aa58c6105d5fbfc08975e9e39d6476f4b173
+source-git-commit: 66a6897a28bb7fa57992c6782c001629f0f1d0c5
 workflow-type: tm+mt
-source-wordcount: '4333'
+source-wordcount: '4325'
 ht-degree: 99%
 
 ---
@@ -581,7 +581,6 @@ ht-degree: 99%
          + [OAuth 2.0 클라이언트 자격 증명 흐름을 사용한 Salesforce 애플리케이션 통합](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
          + [ [!DNL Azure] 스토리지 구성](/help/forms/configure-azure-storage.md)
          + [ [!DNL Microsoft Dynamics 365] 및 [!DNL Salesforce] Cloud Service 구성](/help/forms/configure-msdynamics-salesforce.md)
-         + [Microsoft SharePoint 목록에 적응형 양식 연결](/help/forms/connect-aem-adaptive-form-to-sharepointlist.md)
          + [양식 데이터 모델 만들기](/help/forms/create-form-data-models.md)
          + [양식 데이터 모델을 사용하여 작업](/help/forms/work-with-form-data-model.md)
          + [양식 데이터 모델 사용](/help/forms/using-form-data-model.md)
