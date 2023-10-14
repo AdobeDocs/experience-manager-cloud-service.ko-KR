@@ -2,10 +2,10 @@
 title: 릴리스 정보 [!DNL Workfront for Experience Manager enhanced connector]
 description: 릴리스 정보 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 9981fb1ac5ddf5d918cf76476fa185c524749c70
+source-git-commit: f5f2c460815d273fe445c6f415dee7776cc18fce
 workflow-type: tm+mt
-source-wordcount: '1252'
-ht-degree: 2%
+source-wordcount: '1355'
+ht-degree: 1%
 
 ---
 
@@ -15,17 +15,20 @@ ht-degree: 2%
 
 ## 릴리스 일자 {#release-date}
 
-의 최신 버전 1.9.13에 대한 릴리스 날짜 [!DNL Workfront for Experience Manager enhanced connector] 는 2023년 9월 11일입니다.
+의 최신 버전 1.9.14에 대한 릴리스 날짜 [!DNL Workfront for Experience Manager enhanced connector] 은 2023년 10월 13일입니다.
 
 ## 릴리스 특징 {#release-highlights}
 
-의 최신 버전 [!DNL Workfront for Experience Manager enhanced connector] 에는 다음 업데이트가 포함됩니다.
+의 최신 버전 [!DNL Workfront for Experience Manager enhanced connector] 에는 다음 버그 수정 사항이 포함되어 있습니다.
 
-* Experience Manager 강화 커넥터는 프로젝트에 대한 이벤트 구독을 삭제하는 동안 Workfront에서 모든 이벤트 구독을 가져오므로 애플리케이션에 성능에 영향을 줍니다.
+* 고급 설정에서 이벤트 구독이 비활성화되어 있는 경우에도 다음 옵션을 선택할 수 있습니다. **문서 업데이트 이벤트에 가입하여 AEM 에셋 메타데이터 업데이트**, **프로젝트 완료 시 모든 프로젝트 에셋을 Brand Portal에 게시**, 및 **댓글 동기화 활성화**.
 
-* Workfront에서 Experience Manager으로 에셋을 전송하면 에셋 MIME 유형이 로 설정되지 않습니다. `dc:format` Experience Manager 내의 속성입니다.
+* Experience Manager에 저장된 일부 에셋은 Workfront에서 미리 볼 때 적절하게 렌더링되지 않습니다.
 
-* Experience Manager 강화 커넥터에 저장된 Workfront 프로젝트 ID에 중복 항목이 포함되어 있습니다.
+* Workfront과의 Experience Manager 연결을 다시 구성하는 동안 댓글 동기화 업데이트, 삭제, 문서 업데이트와 같은 이벤트 구독이 성공적으로 만들어지지 않습니다.
+
+* 연결된 폴더 만들기, 업데이트, 연결된 폴더 활성화, 댓글 동기화 활성화 및 비활성화, 커넥터에 설정 저장의 고급 설정에 대한 주요 API 성능 개선.
+
 
 >[!NOTE]
 >
@@ -34,7 +37,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->Adobe은 다음을 권장합니다. [최신 1.9.13 버전으로 업그레이드](/help/assets/workfront-connector-install.md) / [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe은 다음을 권장합니다. [최신 1.9.14 버전으로 업그레이드](/help/assets/workfront-connector-install.md) / [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 알려진 문제 {#known-issues}
 
@@ -43,6 +46,14 @@ ht-degree: 2%
 * 클래식 Workfront 환경을 사용하는 경우 **[!UICONTROL 전송 대상]** 옵션이에서 사용할 수 있음 **[!UICONTROL 자세히]** 드롭다운 목록에서는 Experience Manager 내의 대상 을 선택할 수 없습니다. 다음 **[!UICONTROL 전송 대상]** 옵션은 **[!UICONTROL 문서 작업]** 드롭다운 목록입니다. 다음 **[!UICONTROL 전송 대상]** 옵션이에 대해 올바르게 작동합니다. **[!UICONTROL 자세히]** 드롭다운 목록 및 **[!UICONTROL 문서 작업]** 새로운 Workfront 경험에서 사용할 수 있는 드롭다운 목록입니다.
 
 ## 이전 릴리스 {#previous-releases}
+
+### 2023년 9월 릴리스 {#september-2023-release}
+
+* Experience Manager 강화 커넥터는 프로젝트에 대한 이벤트 구독을 삭제하는 동안 Workfront에서 모든 이벤트 구독을 가져오므로 애플리케이션에 성능에 영향을 줍니다.
+
+* Workfront에서 Experience Manager으로 에셋을 전송하면 에셋 MIME 유형이 로 설정되지 않습니다. `dc:format` Experience Manager 내의 속성입니다.
+
+* Experience Manager 강화 커넥터에 저장된 Workfront 프로젝트 ID에 중복 항목이 포함되어 있습니다.
 
 ### 2023년 8월 릴리스 {#august-2023-release}
 
