@@ -1,8 +1,8 @@
 ---
 source-git-commit: cada650e940aa941538a43ffb1f9a16d1f0b8a61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '83'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 # 스니펫 {#snippets}
@@ -13,9 +13,9 @@ ht-degree: 62%
 
 ## Edge Delivery Services 작성 {#edge-delivery-authoring}
 
-[!BADGE Edge Delivery Services을 위한 AEM 컨텐츠를 만들려면 여기를 클릭하십시오.]{type=Positive url="/help/edge/overview.md" tooltip="Edge Delivery Services을 위한 AEM 컨텐츠 작성"}
+[!BADGE Edge Delivery Services용 AEM 콘텐츠를 작성하려면 여기를 클릭합니다.]{type=Positive url="/help/edge/overview.md" tooltip="Edge Delivery Services용 AEM 콘텐츠 작성"}
 
-## 프로필에 그룹을 할당하기 위한 IMS 지원 {#ims-group-profiles}
+## 그룹을 프로필에 할당하는 IMS 지원 {#ims-group-profiles}
 
 >[!NOTE]
 >
