@@ -2,10 +2,10 @@
 title: 콘텐츠 검색 및 색인화
 description: AEM as a Cloud Service으로 콘텐츠 검색 및 색인화에 대해 알아봅니다.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d567115445c0a068380e991452d9b976535e3a1d
 workflow-type: tm+mt
-source-wordcount: '2324'
-ht-degree: 34%
+source-wordcount: '2433'
+ht-degree: 31%
 
 ---
 
@@ -34,6 +34,11 @@ AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 C
 * 내부적으로 다른 색인을 구성하고 쿼리에 사용할 수 있습니다. 예를 들어 `damAssetLucene` 색인에 대해 작성된 Skyline의 쿼리는 이 색인의 Elasticsearch 버전에 대해 실행됩니다. 이 차이는 일반적으로 애플리케이션과 사용자에게는 표시되지 않지만 다음과 같은 특정 도구에는 표시됩니다. `explain` 기능이 다른 색인을 보고합니다. Lucene 색인과 Elastic 색인의 차이에 대해서는 [Apache Jackrabbit Oak의 Elastic 설명서](https://jackrabbit.apache.org/oak/docs/query/elastic.html)를 참조하십시오. 고객은 Elasticsearch 색인을 직접 구성할 필요가 없으며 구성할 수도 없습니다.
 * 유사한 피쳐 벡터로 검색(`useInSimilarity = true`)은 지원되지 않습니다.
 
+>[!TIP]
+>
+>고급 검색 및 색인화 기능에 대한 자세한 설명을 포함하여 Oak 색인화 및 쿼리에 대한 자세한 내용은 [Apache Oak 설명서](https://jackrabbit.apache.org/oak/docs/query/query.html).
+
+
 ## 사용 방법 {#how-to-use}
 
 색인 정의는 다음과 같이 세 가지 주요 사용 사례로 분류할 수 있습니다.
@@ -54,11 +59,15 @@ AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 C
 
 3. 완전히 맞춤화된 색인: 완전히 새로운 색인을 처음부터 만들 수 있습니다. 이름 충돌을 방지하려면 이름에 접두사가 있어야 합니다. 예: `/oak:index/acme.product-1-custom-2`: 여기서 접두사는 입니다. `acme.`
 
+>[!NOTE]
+>
+>에서 새 색인 소개 `dam:Asset` nodetype(특히 전체 텍스트 인덱스)이 OOTB 제품 기능과 충돌하여 기능 및 성능 문제가 발생할 수 있으므로 권장하지 않습니다. 일반적으로 현재 항목에 추가 속성을 추가합니다. `damAssetLucene-*` index version은에서 쿼리를 색인화하는 가장 적절한 방법입니다 `dam:Asset` nodetype(이러한 변경 사항은 이후에 릴리스되는 경우 색인의 새 제품 버전에 자동으로 병합됩니다.) 확실하지 않은 경우 Adobe 지원 센터에 문의하여 조언을 구하십시오.
+
 ## 새 색인 정의 준비 {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->`damAssetLucene-8`과 같이 기본 제공 인덱스를 맞춤화하는 경우 CRX DE 패키지 관리자(`/crx/packmgr/`)를 사용하여 *Cloud Service 환경*&#x200B;에서 최신 기본 제공 인덱스 정의를 복사하십시오. 이름 바꾸기 `damAssetLucene-8-custom-1` (또는 이상) 및 XML 파일 내에 사용자 정의를 추가합니다. 이렇게 하면 필요한 구성이 실수로 제거되지 않도록 할 수 있습니다. 예를 들어 `/oak:index/damAssetLucene-8/tika`의 `tika` 노드는 클라우드 서비스의 맞춤화된 색인에 필요합니다. Cloud SDK에는 없습니다.
+>`damAssetLucene-8`과 같이 기본 제공 인덱스를 맞춤화하는 경우 CRX DE 패키지 관리자(`/crx/packmgr/`)를 사용하여 *Cloud Service 환경*&#x200B;에서 최신 기본 제공 인덱스 정의를 복사하십시오. 이름 바꾸기 `damAssetLucene-8-custom-1` (또는 이상) 및 XML 파일 내에 사용자 정의를 추가합니다. 이렇게 하면 필요한 구성이 실수로 제거되지 않도록 할 수 있습니다. 예를 들어 `tika` 노드 `/oak:index/damAssetLucene-8/tika` 는 AEM Cloud Service 환경에 배포된 사용자 지정 색인에 필요하지만 로컬 AEM SDK에는 없습니다.
 
 OOTB 인덱스의 사용자 정의를 위해 이 이름 지정 패턴을 따르는 실제 인덱스 정의가 포함된 새 패키지를 준비합니다.
 

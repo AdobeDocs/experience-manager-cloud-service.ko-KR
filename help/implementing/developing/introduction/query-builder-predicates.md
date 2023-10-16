@@ -1,15 +1,15 @@
 ---
-title: 쿼리 빌더 술어 참조
+title: 쿼리 빌더 조건자 참조
 description: AEMas a Cloud Service 의 Query Builder API에 대한 설명 참조.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: e10c39c1d7fa05b738dd8f25662617a3a9568f83
 workflow-type: tm+mt
-source-wordcount: '2252'
+source-wordcount: '2295'
 ht-degree: 1%
 
 ---
 
-# 쿼리 빌더 술어 참조 {#query-builder-predicate-reference}
+# 쿼리 빌더 조건자 참조 {#query-builder-predicate-reference}
 
 ## 일반 {#general}
 
@@ -25,6 +25,8 @@ ht-degree: 1%
 * **`p.limit`** - 페이지 크기를 나타내는 숫자입니다.
 * **`p.guessTotal`** - 권장: 비용이 많이 들 수 있는 전체 결과 합계를 계산하지 마십시오. 계산할 최대 합계를 나타내는 숫자(예: 1000, 대략적인 크기에 대한 충분한 피드백과 더 작은 결과에 대한 정확한 숫자)입니다. 또는, `true` 필요한 최소값까지만 계산하다 `p.offset` + `p.limit`.
 * **`p.excerpt`** - 로 설정된 경우 `true`를 입력하면 결과에 전체 텍스트 발췌가 포함됩니다.
+* **`p.indexTag`** - 설정하면 쿼리에 색인 태그 옵션이 포함됩니다(참조). [쿼리 옵션 색인 태그](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)).
+* **`p.facetStrategy`** - 로 설정된 경우 `oak`, Query Builder는 Oak에 Facet 추출을 위임합니다( 참조) [패싯](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#facets)).
 * **`p.hits`** - (JSON 서블릿만 해당) 히트가 JSON으로 기록되는 방식을 선택합니다(ResultHitWriter 서비스를 통해 확장 가능).
    * **`simple`** - 다음과 같은 최소 항목 `path`, `title`, `lastmodified`, `excerpt` (설정된 경우).
    * **`full`** - 노드의 sling JSON 렌더링, `jcr:path` 히트의 경로를 나타냅니다. 기본적으로 에는 노드의 직접 속성만 나열되며 다음과 같은 심층 트리가 포함됩니다. `p.nodedepth=N`를 0으로 지정하면 전체, 무한 하위 트리를 의미합니다. 추가 `p.acls=true` 주어진 결과 항목에 현재 세션의 JCR 권한을 포함시키려면 다음을 수행합니다(매핑: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
