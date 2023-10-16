@@ -3,9 +3,9 @@ title: 여러 저장소 사용
 description: Cloud Manager로 작업할 때 여러 git 저장소를 관리하는 방법을 알아봅니다.
 exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
 source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '738'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -17,9 +17,9 @@ Cloud Manager로 작업할 때 여러 git 저장소를 관리하는 방법을 �
 
 고객은 Cloud Manager의 git 저장소를 직접 사용하는 대신 [자체 git 저장소](integrating-with-git.md) 또는 여러 개의 git 저장소로 작업할 수 있습니다. 이러한 경우 Cloud Manager의 git 저장소를 항상 최신 상태로 유지할 수 있도록 자동 동기화 프로세스를 설정해야 합니다.
 
-고객의 git 저장소를 호스팅하는 위치에 따라 GitHub 작업이나 Jenkins와 같은 지속적인 통합 솔루션을 사용하여 자동화를 설정할 수 있습니다. 자동화를 통해 고객 소유 git 저장소에 대한 모든 푸시를 자동으로 Cloud Manager의 git 저장소로 전달할 수 있습니다.
+고객의 git 저장소를 호스팅하는 위치에 따라 GitHub 작업이나 Jenkins와 같은 지속적인 통합 솔루션을 사용하여 자동화를 설정할 수 있습니다. 자동화를 통해 고객이 소유한 저장소에 대한 모든 푸시를 자동으로 Cloud Manager의 git 저장소로 전달할 수 있습니다.
 
-단일 고객 소유 git 저장소에 대한 이러한 자동화는 간단하지만 다중 저장소에 대해 이를 구성하려면 초기 설정이 필요합니다. 여러 git 저장소의 콘텐츠를 단일 Cloud Manager git 저장소 내의 다른 디렉터리에 매핑해야 합니다. Cloud Manager의 git 저장소를 루트 Maven로 프로비저닝해야 함 `pom.xml`를 참조하고 모듈 섹션에 여러 하위 프로젝트를 나열합니다.
+단일 고객 소유 git 저장소에 대한 이러한 자동화는 간단하지만 다중 저장소에 대해 이를 구성하려면 초기 설정이 필요합니다. 다중 git 저장소의 콘텐츠를 단일 Cloud Manager의 git 저장소 내에 있는 다른 디렉터리에 매핑해야 합니다. Cloud Manager의 git 저장소를 루트 Maven `pom.xml`로 프로비저닝하고 모듈 섹션에 여러 하위 프로젝트를 나열해야 합니다.
 
 다음은 두 고객 소유 git 저장소용 샘플 `pom.xml` 파일입니다.
 
@@ -50,14 +50,14 @@ Cloud Manager로 작업할 때 여러 git 저장소를 관리하는 방법을 �
 가능한 해결 방법은 다음과 같습니다.
 
 1. GitHub 작업을 프로젝트 A의 분기로 푸시하여 트리거할 수 있습니다.
-1. 이 작업은 프로젝트 A와 Cloud Manager git 저장소를 체크아웃하고 프로젝트 A의 모든 콘텐츠를 디렉터리로 복사합니다 `project-a` Cloud Manager의 git 저장소에서 다음을 수행합니다.
+1. 이 작업은 프로젝트 A와 Cloud Manager git 저장소를 체크아웃하고 프로젝트 A의 모든 콘텐츠를 Cloud Manager의 git 저장소에 있는 `project-a` 디렉터리로 복사합니다.
 1. 그런 다음 작업은 변경 사항을 커밋-푸시합니다.
 
-예를 들어 프로젝트 A의 기본 분기에 대한 변경 사항은 Cloud Manager의 git 저장소에 있는 기본 분기에 자동으로 푸시됩니다. 라는 분기로 푸시하는 것처럼 분기 간에 매핑이 있을 수 있습니다. `dev` 프로젝트 A가 이라는 분기로 푸시됨 `development` Cloud Manager의 git 저장소에서 다음을 수행합니다. 프로젝트 B에도 유사한 단계가 필요합니다.
+예를 들어 프로젝트 A의 기본 분기에 대한 변경 사항은 Cloud Manager의 git 저장소에 있는 기본 분기에 자동으로 푸시됩니다. 프로젝트 A의 `dev`라는 분기에 대한 푸시가 Cloud Manager의 git 저장소에 있는 `development`라는 분기로 푸시되는 것처럼 분기 간에 매핑이 있을 수 있습니다. 프로젝트 B에도 유사한 단계가 필요합니다.
 
-분기 전략 및 워크플로에 따라 다른 분기에 대해 동기화를 구성할 수 있습니다. 사용된 git 저장소가 GitHub 작업과 유사한 개념을 제공하지 않는 경우 Jenkins(또는 이와 유사한)를 통한 통합도 가능합니다. 이 경우 웹후크는 작업을 수행하는 Jenkins 작업을 트리거합니다.
+분기 전략 및 워크플로에 따라 다른 분기에 대해 동기화를 구성할 수 있습니다. 사용하는 git 저장소가 GitHub 작업과 유사한 개념을 제공하지 않는 경우 Jenkins(또는 이와 유사한)를 통한 통합도 가능합니다. 이 경우 웹후크는 작업을 수행하는 Jenkins 작업을 트리거합니다.
 
-새 세 번째 소스 또는 저장소를 추가할 수 있도록 다음 단계를 수행합니다.
+새 세 번째 소스 또는 저장소를 추가하려면 다음 단계를 수행합니다.
 
 1. 해당 저장소에서 Cloud Manager의 git 저장소로 변경 사항을 푸시하는 GitHub 작업을 새 저장소에 추가합니다.
 1. 이 작업을 한 번 이상 수행하여 프로젝트 코드가 Cloud Manager의 git 저장소에 있는지 확인합니다.
@@ -65,7 +65,7 @@ Cloud Manager로 작업할 때 여러 git 저장소를 관리하는 방법을 �
 
 ## 샘플 GitHub 작업 {#sample-github-action}
 
-다음은 기본 분기로 푸시한 다음 Cloud Manager의 git 저장소의 하위 디렉터리로 푸시하여 트리거되는 샘플 GitHub 작업입니다. GitHub 작업에는 두 가지 비밀이 제공되어야 합니다. `MAIN_USER` 및 `MAIN_PASSWORD`를 사용하여 Cloud Manager의 git 저장소에 연결하고 푸시할 수 있습니다.
+다음은 기본 분기로 푸시한 다음 Cloud Manager의 git 저장소의 하위 디렉터리로 푸시하여 트리거되는 샘플 GitHub 작업입니다. GitHub 작업에는 Cloud Manager의 git 저장소에 연결하고 푸시할 수 있도록 `MAIN_USER` 및 `MAIN_PASSWORD`라는 두 가지 비밀이 제공되어야 합니다.
 
 ```java
 name: SYNC
@@ -126,7 +126,7 @@ GitHub 작업 사용은 유연합니다. git 저장소 분기 간의 모든 매�
 
 >[!NOTE]
 >
->샘플 스크립트는 `git add`를 사용하여 저장소를 업데이트합니다. 여기에 제거가 포함되어 있다고 가정합니다. git의 기본 구성에 따라 로 대체해야 합니다. `git add --all`.
+>샘플 스크립트는 `git add`를 사용하여 저장소를 업데이트합니다. 여기에 제거가 포함되어 있다고 가정합니다. git의 기본 구성에 따라 `git add --all`로 대체해야 합니다.
 
 ## 샘플 Jenkins 작업 {#sample-jenkins-job}
 
@@ -137,7 +137,7 @@ Jenkins 작업 또는 이와 유사한 작업에서 사용할 수 있는 샘플 
 1. 그런 다음 작업은 이 스크립트를 트리거합니다.
 1. 이 스크립트는 Cloud Manager의 git 저장소를 체크아웃하고 프로젝트 코드를 하위 디렉터리에 커밋합니다.
 
-Jenkins 작업에는 두 가지 비밀이 제공되어야 합니다 `MAIN_USER` 및 `MAIN_PASSWORD`를 사용하여 Cloud Manager의 git 저장소에 연결하고 푸시할 수 있습니다.
+Jenkins 작업에는 Cloud Manager의 git 저장소에 연결하고 푸시할 수 있도록 `MAIN_USER` 및 `MAIN_PASSWORD`라는 두 가지 비밀이 제공되어야 합니다.
 
 ```java
 # Username/email used to commit to Cloud Manager's Git repository
@@ -195,4 +195,4 @@ Jenkins 작업 사용은 유연합니다. git 저장소 분기 간의 모든 매
 
 >[!NOTE]
 >
->샘플 스크립트는 `git add`를 사용하여 저장소를 업데이트합니다. 여기에 제거가 포함되어 있다고 가정합니다. git의 기본 구성에 따라 로 대체해야 합니다. `git add --all`.
+>샘플 스크립트는 `git add`를 사용하여 저장소를 업데이트합니다. 여기에 제거가 포함되어 있다고 가정합니다. git의 기본 구성에 따라 `git add --all`로 대체해야 합니다.
