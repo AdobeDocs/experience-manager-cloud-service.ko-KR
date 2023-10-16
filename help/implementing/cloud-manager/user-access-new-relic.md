@@ -3,9 +3,9 @@ title: New Relic One
 description: AEM as a Cloud Service를 위한 New Relic One APM(Application Performance Monitoring) 서비스에 대한 정보와 액세스하는 방법에 대해 알아봅니다.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 source-git-commit: 6ba6dddd8f949e55a0575bd373c0b87dc2d7f2b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1732'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -116,7 +116,7 @@ New Relic One에 로그인하는 동안 이메일을 확인하라는 메시지�
 
 이메일 주소를 확인하지 않는 경우, New Relic은 이메일 주소와 연결된 가장 최근에 만들어진 사용자 레코드로 로그인을 시도합니다. 로그인할 때마다 이메일을 확인하지 않으려면 로그인 화면에서 **내 정보 저장** 확인란을 클릭합니다.
 
-도움이 더 필요하면 [AEM 지원 포털](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)을 사용하여 지원 티켓을 여십시오.
+도움이 더 필요하면 [AEM 지원 포털](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)을 사용하여 지원 티켓을 여십시오.
 
 ## New Relic One 액세스 문제 해결 {#troubleshooting}
 
@@ -152,11 +152,11 @@ New Relic One에 사용자를 추가하는 경우 다음 제한이 적용됩니�
 
 >[!NOTE]
 >
->New Relic One 계정에서 90일 이상 활동이 감지되지 않으면 APM 에이전트가 중지됩니다.
+>활동이 New Relic One 계정에서 90일 이상 감지되지 않으면 APM 에이전트가 중단됩니다.
 >
->다음을 통해 지원 티켓을 여십시오. [AEM 지원 포털](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) aemaaCS 환경에 대해 APM 에이전트를 다시 활성화하려면 다음을 수행하십시오.
+>AEMaaCS 환경의 APM 에이전트를 다시 활성화하려면 [AEM 지원 포털](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)을 통해 지원 티켓을 열어 주십시오.
 
-AEM as a Cloud Service 프로그램용 New Relic One에 대한 추가 도움말 또는 추가 지침을 보려면 [AEM 지원 포털](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)을 사용하여 지원 티켓을 엽니다.
+AEM as a Cloud Service 프로그램용 New Relic One에 대한 추가 도움말 또는 추가 지침을 보려면 [AEM 지원 포털](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)을 사용하여 지원 티켓을 엽니다.
 
 ## New Relic One에 대해 자주 묻는 질문 {#faqs}
 
@@ -200,6 +200,6 @@ Adobe 지원에서 서비스의 일부로 New Relic One 및 기타 사내 도구
 >
 >New Relic One 내에서 두 데이터 세트를 모두 보려면 사용자에게 올바른 권한이 있어야 하며 두 계정(Adobe New Relic One 및 고객 관리 New Relic 계정)에 대해 동일한 로그인 방법을 사용해야 합니다.
 
-### 내 New Relic One 계정의 APM 에이전트가 중지되었습니다. 무슨 일이 있었던 거야? {#deactivated}
+### New Relic One 계정의 APM 에이전트가 중단됩니다. 어떻게 되었습니까? {#deactivated}
 
-[APM 에이전트 중지](#limitations) 활동이 90일 이상 감지되지 않는 경우. 다음을 통해 지원 티켓을 여십시오. [AEM 지원 포털](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) aemaaCS 환경에 대해 APM 에이전트를 다시 활성화하려면 다음을 수행하십시오.
+활동이 90일 이상 감지되지 않으면 [APM 에이전트가 중단됩니다](#limitations). AEMaaCS 환경의 APM 에이전트를 다시 활성화하려면 [AEM 지원 포털](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)을 통해 지원 티켓을 열어 주십시오.
