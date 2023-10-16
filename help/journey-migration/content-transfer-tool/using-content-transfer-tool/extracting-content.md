@@ -2,7 +2,7 @@
 title: 소스에서 콘텐츠 추출
 description: 소스 AEM(Adobe Experience Manager) 인스턴스에서 콘텐츠를 추출하여 나중에 Cloud Service AEM 인스턴스로 전송하는 방법을 알아봅니다.
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 44a3f3c4ca08cffa06056ea85adc58e3cf1f2f1c
+source-git-commit: 031ddfa2da0fc5ecc92267eae1f9dcaac394573d
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 28%
@@ -36,7 +36,7 @@ ht-degree: 28%
 
 1. 이렇게 하면 추출 대화 상자가 표시됩니다. 클릭 **Extract** 추출 단계를 시작합니다.
 
-   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14.png)
+   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14b.png)
 
    >[!NOTE]
    >추출 단계 중에 스테이징 컨테이너를 선택적으로 덮어쓸 수 있습니다. If **스테이징 컨테이너 덮어쓰기** 가 비활성화되어 콘텐츠 경로 또는 포함 버전 설정이 변경되지 않은 후속 마이그레이션에 대해 추출 속도를 높일 수 있습니다. 하지만 콘텐츠 경로 또는 포함 버전 설정이 변경된 경우 **스테이징 컨테이너 덮어쓰기** 을 활성화해야 합니다.
