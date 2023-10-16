@@ -3,9 +3,9 @@ title: 쿼리 및 색인화 모범 사례
 description: Adobe의 모범 사례 가이드라인에 기반하여 색인 및 쿼리를 최적화하는 방법에 대해 알아봅니다.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: 1cdda5f793d853493f1f61eefebbf2af8cdeb6cb
+source-git-commit: ddd67a69bea2e2109ce93a91f42e8f365424f80f
 workflow-type: tm+mt
-source-wordcount: '3141'
+source-wordcount: '3144'
 ht-degree: 46%
 
 ---
@@ -315,4 +315,15 @@ Automated Cloud Manager 파이프라인 확인은 위에서 설명한 몇 가지
    * 이 경우 인덱스에서 반환된 모든 결과는 쿼리 엔진에서 읽고 메모리 내에서 정렬해야 합니다.
    * 이는 기본 색인 쿼리에서 정렬을 적용하는 것보다 몇 배 더 느립니다.
 1. 쿼리 실행자가 큰 결과 집합을 반복하려고 합니다.
-   * 이러한 상황은 여러 가지 이유로 발생할 수 있습니다. | 원인 | 완화 | ------------------------ | 의 생략 `p.guessTotal` (또는 매우 큰 guessTotal의 사용) QueryBuilder가 결과 계산 결과를 대량으로 반복하도록 합니다 |제공 `p.guessTotal` 적절한 값 포함 | | Query Builder에서 크거나 제한되지 않은 제한 사용(예 `p.limit=-1`) |다음에 적절한 값 사용 `p.limit` (이상적으로 1000 이하) | | 기본 JCR 쿼리에서 많은 결과를 필터링하는 Query Builder의 필터링 술어 사용 | 필터링 술어를 기본 JCR 쿼리에 적용할 수 있는 제한으로 바꿉니다. | | QueryBuilder에서 비교 기반 정렬 사용 |기본 JCR 쿼리의 속성 기반 순서로 바꾸기(순서가 지정된 인덱싱된 속성 사용) | | 액세스 제어로 인한 많은 결과 필터링 |추가 인덱싱된 속성 또는 경로 제한을 쿼리에 적용하여 액세스 제어를 미러링합니다. | | 오프셋이 큰 &#39;오프셋 페이지 매김&#39;의 사용 |다음을 사용하는 것이 좋습니다. [키 집합 페이지 매김](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)| | 큰 또는 제한되지 않은 결과 수의 반복 |다음을 사용하는 것이 좋습니다. [키 집합 페이지 매김](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)| | 잘못된 색인 선택됨 |쿼리 및 색인 정의에 태그를 사용하여 필요한 색인이 사용되도록 하십시오.|
+   * 이 상황은 아래와 같이 여러 가지 이유로 발생할 수 있습니다.
+
+| 원인 | 완화 |
+|----------|--------------|
+| 의 생략 `p.guessTotal` (또는 매우 큰 guessTotal의 사용) QueryBuilder가 결과 계산 결과를 대량으로 반복하도록 합니다 | 제공 `p.guessTotal` 적절한 값 포함 |
+| Query Builder에서 크거나 제한되지 않은 제한 사용(예: `p.limit=-1`) | 다음에 대한 적절한 값 사용 `p.limit` (이상적으로 1000 이하) |
+| 기본 JCR 쿼리에서 많은 결과를 필터링하는 Query Builder의 필터링 술어 사용 | 필터링 술어를 기본 JCR 쿼리에 적용할 수 있는 제한으로 바꿉니다. |
+| QueryBuilder에서 Comparator 기반 정렬 사용 | 기본 JCR 쿼리의 속성 기반 순서 지정(순서가 지정된 것으로 인덱싱된 속성 사용)으로 대체합니다. |
+| 액세스 제어로 인한 많은 결과 필터링 | 추가 인덱싱된 속성 또는 경로 제한을 쿼리에 적용하여 액세스 제어를 미러링합니다 |
+| 오프셋이 큰 &#39;오프셋 페이지 매김&#39; 사용 | 사용 고려 [키 집합 페이지 매김](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) |
+| 많은 또는 제한되지 않은 결과 수의 반복 | 사용 고려 [키 집합 페이지 매김](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) |
+| 잘못된 색인 선택됨 | 쿼리 및 색인 정의에 태그를 사용하여 예상된 색인이 사용되도록 하십시오 |
