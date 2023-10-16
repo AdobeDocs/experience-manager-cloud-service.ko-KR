@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 66a6897a28bb7fa57992c6782c001629f0f1d0c5
+source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
 workflow-type: tm+mt
-source-wordcount: '4325'
+source-wordcount: '4330'
 ht-degree: 99%
 
 ---
@@ -537,6 +537,8 @@ ht-degree: 99%
       + [자산, 폴더 및 컬렉션 보기](/help/assets/manage-notifications-assets-view.md)
       + [보고서 관리](/help/assets/manage-reports-assets-view.md)
       + [태그 관리](/help/assets/tagging-management-assets-view.md)
+   + 모범 사례{#best-practices}
+      + [검색 모범 사례](/help/assets/search-best-practices.md)
    + Adobe Workfront와 통합 {#integrations}
       + [ [!DNL Adobe Workfront]와 통합](/help/assets/workfront-integrations.md)
       + [자산 메타데이터 매핑 구성](/help/assets/configure-asset-metadata-mapping.md)

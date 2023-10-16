@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: c1e115e0fcf7e168c26f810f0803950df50b2c6f
+source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
 workflow-type: tm+mt
-source-wordcount: '5561'
+source-wordcount: '5564'
 ht-degree: 8%
 
 ---
@@ -539,6 +539,7 @@ You can create smart collections based on the search criteria. From the **[!UICO
 
 **추가 참조**
 
+* [검색 모범 사례](search-best-practices.md)
 * [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
 * [자산이 지원되는 파일 형식](file-format-support.md)

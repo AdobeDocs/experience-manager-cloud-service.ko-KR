@@ -4,9 +4,9 @@ description: 이 문서에서는 Experience Manager에서 검색 패싯을 만�
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 220350e6669c38ea602c2796ec1d5559992338ec
+source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
 workflow-type: tm+mt
-source-wordcount: '2503'
+source-wordcount: '2506'
 ht-degree: 21%
 
 ---
@@ -342,6 +342,7 @@ Forms 검색 페이지의 옵션에 대해 아이콘을 잠그면 기본 설정�
 
 **추가 참조**
 
+* [검색 모범 사례](search-best-practices.md)
 * [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
 * [자산이 지원되는 파일 형식](file-format-support.md)
