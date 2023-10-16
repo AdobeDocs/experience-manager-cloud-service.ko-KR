@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service에 대한 IMS 지원
 description: Adobe Experience Manager as a Cloud Service에 대한 이미지 관리 시스템 지원
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: 361881807e8704dfcb27075365cb73a7f659c82d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1978'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ IMS 인증은 AEM과 Adobe IMS 엔드포인트 간 OAuth 프로토콜을 사용�
 
 Adobe Admin Console에 대한 고객 온보딩은 AEM 인증에 Adobe IMS를 사용하기 위한 사전 요구 사항입니다.
 
-첫 번째 단계로 고객은 Adobe IMS에서 조직이 프로비저닝되어 있어야 합니다. Adobe Enterprise 고객은 [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html)에서 IMS 조직으로 표시됩니다. 이 영역은 Adobe 고객이 사용자 및 그룹에 대한 제품 권한을 관리하는 데 사용하는 포털입니다.
+첫 번째 단계로 고객은 Adobe IMS에서 조직이 프로비저닝되어 있어야 합니다. Adobe Enterprise 고객은 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)에서 IMS 조직으로 표시됩니다. 이 영역은 Adobe 고객이 사용자 및 그룹에 대한 제품 권한을 관리하는 데 사용하는 포털입니다.
 
 AEM 고객은 이미 조직이 프로비저닝되어 있어야 하며, IMS 프로비저닝의 일부로서 고객 인스턴스는 사용자 권한 및 액세스를 관리하기 위해 Admin Console에서 사용할 수 있게 됩니다.
 
@@ -60,9 +60,9 @@ AEM 고객은 이미 조직이 프로비저닝되어 있어야 하며, IMS 프�
 1. 시스템 관리자는 SSO(Single Sign-On)를 설정하기 위해 Admin Console에서 IDP 구성을 수행합니다.
 1. AEM 관리자는 평소대로 로컬 그룹 및 권한을 관리합니다.
 
-IDP 구성을 비롯한 Adobe Identity Management 기본 사항은 [여기에서](https://helpx.adobe.com/enterprise/using/set-up-identity.html) 다룹니다.
+IDP 구성을 비롯한 Adobe Identity Management 기본 사항은 [여기에서](https://helpx.adobe.com/kr/enterprise/using/set-up-identity.html) 다룹니다.
 
-엔터프라이즈 관리 및 Admin Console 사용에 대해서는 [여기에서](https://helpx.adobe.com/enterprise/admin-guide.html) 다룹니다.
+엔터프라이즈 관리 및 Admin Console 사용에 대해서는 [여기에서](https://helpx.adobe.com/kr/enterprise/admin-guide.html) 다룹니다.
 
 ### Admin Console에서 사용자 온보딩 {#onboarding-users-in-admin-console}
 
@@ -215,7 +215,7 @@ Cloud Manager 또는 AEM as a Cloud Service 환경에 액세스하려면 Cloud M
 Cloud Manager의 특정 기능의 가용성을 제어하는 사용자 역할에 대한 자세한 내용은 역할 정의를 참조하십시오.
 
 >[!NOTE]
->Cloud Manager에는 적절한 권한이 있는 미리 구성된 역할이 있습니다. 특정 권한, 사전 구성된 작업 또는 각 역할과 연관된 권한이 있는 각 역할에 대해 알아보려면 [역할 기반 권한](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html?lang=en)을 참조하십시오.
+>Cloud Manager에는 적절한 권한이 있는 미리 구성된 역할이 있습니다. 특정 권한, 사전 구성된 작업 또는 각 역할과 연관된 권한이 있는 각 역할에 대해 알아보려면 [역할 기반 권한](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html?lang=ko-KR)을 참조하십시오.
 
 **사용자 추가 단계**
 
