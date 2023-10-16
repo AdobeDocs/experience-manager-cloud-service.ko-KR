@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 온보딩 여정 소개
 description: AEM as a Cloud Service로의 온보드 프로세스를 통해 안내하는 여정에 대한 개요를 보려면 여기를 클릭하십시오.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 source-git-commit: bba8310b9ba560ab9b6c2f9bea3e5c3cbec9228b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1256'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ AEM as a Cloud Service를 선택해 주셔서 감사합니다. 이 문서는 온
 
 ## 소개 {#introduction}
 
-Adobe Experience Manager은 모든 채널에서 매우 효과적이고 개인화된 경험을 신속하게 전달하여 모든 콘텐츠를 무료로 제공하는 강력한 구성 가능한 콘텐츠 서비스 세트입니다. **Edge 게재 서비스** 는 극단적인 컨텐츠 속도를 구현하고 탁월한 경험을 제공하는 Adobe Experience Manager의 최신 혁신입니다. 다음을 방문하여 Edge Delivery Services을 시작하는 방법에 대해 알아보십시오. [이 페이지](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html). Edge Delivery Services 사용 방법을 이해하려면 [개발자 자습서](https://www.hlx.live/developer/tutorial) 페이지를 가리키도록 업데이트하는 중입니다.
+Adobe Experience Manager는 채널에서 깊은 인상을 주는 개인화된 경험을 신속하게 제공하여 모두에게 콘텐츠를 제공하는 구성 가능한 강력한 콘텐츠 서비스 세트입니다. **Edge Delivery Services**&#x200B;는 최고의 콘텐츠 속도와 탁월한 경험을 제공하는 Adobe Experience Manager의 최신 혁신 기술입니다. [이 페이지](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)를 방문하여 Edge Delivery Services를 시작하는 방법에 대해 알아봅니다. Edge Delivery Services를 사용하는 방법을 이해하려면 [개발자 튜토리얼](https://www.hlx.live/developer/tutorial) 페이지를 참조하십시오.
 
 온보딩은 지정된 시스템 관리자가 조직에 대해 AEM as a Cloud Service을 설정하는 프로세스입니다. 이 프로세스에는 클라우드 리소스의 초기 프로비저닝과 직무에 따라 사용자를 역할에 할당하는 것이 포함됩니다. 결과적으로 각 멤버는 AEM as a Cloud Service 리소스에 로그인하고 액세스할 수 있습니다.
 
@@ -80,7 +80,7 @@ AEM as a Cloud Service를 시작할 때 알아야 할 것이 많은 것처럼 �
 | 3 | [Admin Console](admin-console.md) | Admin Console이란 무엇이고, 어떻게 로그인하는지, 그리고 시스템 관리자로서 프로필을 확인하는 방법에 대해 알아봅니다. | 시스템 관리자 |
 | 4 | [Cloud Manager 제품 프로필 할당](assign-profiles-cloud-manager.md) | Cloud Manager 제품 프로필을 검토하고 Cloud Manager 제품 프로필에 팀원을 할당하는 방법을 알아봅니다. | 시스템 관리자 |
 | 5 | [Cloud Manager 액세스](cloud-manager.md) | 프로젝트 리소스를 설정할 수 있도록 Cloud Manager에 액세스하는 방법을 알아봅니다. | 시스템 관리자 |
-| 6 | [프로그램 만들기](create-program.md) | Cloud Manager를 사용하여 프로그램을 만드는 방법을 배웁니다. | 시스템 관리자 |
+| 6 | [프로그램 제작](create-program.md) | Cloud Manager를 사용하여 프로그램을 만드는 방법을 배웁니다. | 시스템 관리자 |
 | 7 | [환경 만들기](create-environments.md) | Cloud Manager를 사용하여 환경을 만드는 방법을 배웁니다. | 시스템 관리자 |
 | 8 | [AEM 제품 프로필 할당](assign-profiles-aem.md) | 시스템 관리자가 팀원을 AEM as a Cloud Service의 제품 프로필에 할당하는 방법에 대해 알아봅니다. | 시스템 관리자 |
 | 9 | [개발자 및 배포 관리자 작업](developers.md) | 선택 사항 - 개발자가 Cloud Manager Git에 액세스하고 관리하는 방법과 배포 관리자가 Cloud Manager에서 파이프라인을 설정하고 코드를 배포하는 방법에 대해 알아봅니다. | 개발자 및 배포 관리자 |
