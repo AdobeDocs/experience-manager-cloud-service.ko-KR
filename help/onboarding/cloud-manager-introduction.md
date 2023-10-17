@@ -5,7 +5,7 @@ exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 source-git-commit: 928a3f0d8ee98e211aa03ad3d0fd83b780e98bbc
 workflow-type: tm+mt
 source-wordcount: '861'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Cloud Manager는 AEM as a Cloud Service의 필수 구성 요소이며 팀의 단
 | 개인 액세스 토큰 생성 | git 액세스 |  | x |  | x |
 | RDE 만들기 | 신속한 개발 환경 만들기 | x |  |  | x |
 | RDE 재설정 | 신속한 개발 환경 재설정 | x |  |  | x |
-| 콘텐츠 세트 만들기/수정 | 콘텐츠 복사에 대한 콘텐츠 세트 만들기 또는 수정 |  | x |  |  |
+| 콘텐츠 세트 만들기/수정 | 콘텐츠 세트를 만들거나 수정하여 콘텐츠 복사 |  | x |  |  |
 | 콘텐츠 복사 시작/취소 | 콘텐츠 복사 프로세스 시작 또는 취소 |  | x |  |  |
 
 >[!NOTE]

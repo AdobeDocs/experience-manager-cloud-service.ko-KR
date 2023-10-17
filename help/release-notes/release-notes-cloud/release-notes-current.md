@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: ab0fc832eb66bcf9a0fcd4f08b481845f3664e14
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 85%
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 85%
 
 ## 릴리스 일자 {#release-date}
 
-의 릴리스 날짜 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 기능 릴리스(2023.9.0)는 2023년 9월 28일입니다. 다음 기능 릴리스(2023.10.0)는 2023년 10월 26일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager]인 [!DNL Cloud Service]의 현재 기능 릴리스(2023.9.0)의 날짜는 2023년 9월 28일입니다. 다음 기능 릴리스(2023.10.0)는 2023년 10월 26일에 예정되어 있습니다.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
@@ -38,11 +38,11 @@ ht-degree: 85%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424826/?quality=12)
 
-## Edge 게재 서비스 {#edge-delivery}
+## Edge Delivery Services {#edge-delivery}
 
-Edge Delivery는 고객의 상호 작용 시점에서 측정 가능한 비즈니스 성과를 도출하기 위해 컨텐츠의 효과를 극대화하는 데 중점을 둔 새로운 구성 가능한 서비스 세트입니다.
+Edge Delivery는 고객 상호 작용 시점에서 측정 가능한 비즈니스 결과를 도출하기 위해 콘텐츠가 미치는 영향을 극대화하는 데 역점을 둔 구성 가능한 새로운 서비스 세트입니다.
 
-문서에서 Edge Delivery Services에 대해 자세히 알아보기 [여기](/help/edge/overview.md).
+[여기](/help/edge/overview.md)에 있는 문서에서 Edge Delivery Services에 대해 자세히 알아보십시오.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -56,9 +56,9 @@ Edge Delivery는 고객의 상호 작용 시점에서 측정 가능한 비즈니
 
 ### 관리자 보기의 새로운 기능 {#admin-view-features}
 
-* **AEM Assets as a Cloud Service과 Edge Delivery Services을 위한 문서 기반 작성 통합**: 웹 사이트 작성자가 AEM Assets을 Edge Delivery Services을 위한 문서 기반 작성과 통합하여 [Microsoft Word 또는 Google 문서에서 문서를 작성하는 동안 AEM Assets 저장소에서 사용할 수 있는 이미지 사용](/help/edge/using.md#integrate-assets-edge).
+* **AEM Assets as a Cloud Service를 Edge Delivery Services용 문서 기반 작성과의 통합**: AEM Assets를 Edge Delivery Services용 문서 기반 작성과 통합하면 웹 사이트 작성자가 [Microsoft Word 또는 Google Docs에서 문서를 작성하는 동안 AEM Assets 저장소에서 사용 가능한 이미지를 사용할 수 있습니다](/help/edge/using.md#integrate-assets-edge).
 
-* **ZIP 아카이브 추출**: Experience Manager에서 관리되는 ZIP 아카이브를 선택하고 [Experience Manager으로 직접 파일 추출](/help/assets/manage-digital-assets.md#extract-zip-archives) 다운로드하지 않고
+* **ZIP 아카이브 추출**: Experience Manager에서 관리하는 ZIP 아카이브를 선택하고, 다운로드하지 않고도 [Experience Manager로 직접 파일을 추출하는](/help/assets/manage-digital-assets.md#extract-zip-archives) 기능.
 
   ![그룹에 맞는 항목 고정](/help/release-notes/assets/extract-archive.png)
 
@@ -101,7 +101,7 @@ Edge Delivery는 고객의 상호 작용 시점에서 측정 가능한 비즈니
 
 * **[DocAssurance API(Communication API의 일부)로 문서 보호](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: DocAssurance API를 사용하여 문서에 서명하고 암호화하여 민감한 정보를 보호할 수 있습니다. 문서의 콘텐츠는 암호화를 통해 읽을 수 없는 포맷으로 변환되어 권한이 있는 사용자만 액세스할 수 있습니다. 이 보호 계층이 강화되면 중요 데이터를 승인되지 않은 사용자로부터 보호할 뿐만 아니라 고객들이 안심할 수 있습니다. 서명 API를 통해 조직에서 배포하고 수신하는 Adobe PDF 문서의 보안 및 개인정보를 보호할 수 있습니다. 이 서비스는 의도한 수신자만 문서를 변경할 수 있도록 디지털 서명과 인증을 사용합니다.
 
-  다음에 쓸 수 있습니다. `aem-forms-early-adopter-program@adobe.com` 을(를) 통해 얼리어답터 프로그램에 참여하고 기능에 대한 액세스를 요청합니다.
+  공식 이메일 ID에서 “`aem-forms-early-adopter-program@adobe.com`”으로 이메일을 보내 얼리 어답터 프로그램에 참여하여 기능에 대한 액세스 권한을 요청할 수 있습니다.
 
 * **[Headless 적응형 양식](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)**: Headless 적응형 양식을 사용하여 개발자가 기존의 그래픽 사용자 인터페이스가 아닌 API를 통해 액세스하고 상호 작용할 수 있는 대화형 양식을 만들고, 게시하고, 관리할 수 있습니다. Headless 적응형 양식은 다음에 도움이 됩니다.
 
@@ -114,11 +114,11 @@ Edge Delivery는 고객의 상호 작용 시점에서 측정 가능한 비즈니
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### 캠페인 관련 URL 매개 변수에 대한 새 CDN 캐싱 동작 {#cache-url-params}
+### 캠페인 관련 URL 매개변수에 대한 새로운 CDN 캐싱 비헤이비어 {#cache-url-params}
 
-새 환경의 경우, CDN은 마케팅 캠페인 성능과 캐시 적중률을 높이기 위해 기본적으로 마케팅 관련 쿼리 매개 변수를 제거합니다. 기존 환경은 영향을 받지 않습니다. [자세히 알아보기.](/help/implementing/dispatcher/caching.md#marketing-parameters)
+기본적으로 새 환경에서 CDN은 마케팅 관련 쿼리 매개변수를 제거하여 마케팅 캠페인 성과와 캐시 적중률을 높입니다. 기존 환경은 영향을 받지 않습니다. [자세히 알아보기.](/help/implementing/dispatcher/caching.md#marketing-parameters)
 
-### 트래픽 필터 규칙(WAF 규칙 포함) 얼리어답터 프로그램 {#waf-early-adopter}
+### 트래픽 필터 규칙(WAF 규칙 포함) 얼리 어답터 프로그램 {#waf-early-adopter}
 
 다음을 기준으로 CDN에서 트래픽을 필터링할 수 있습니다.
 * 요청 헤더 및 속성(예: IP 주소)

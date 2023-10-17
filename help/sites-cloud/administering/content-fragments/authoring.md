@@ -7,7 +7,7 @@ exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 source-git-commit: b8206ffc0947de4fed085a03a6f90b5ac0f85aab
 workflow-type: tm+mt
 source-wordcount: '2253'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 96%
 
      >[!WARNING]
      >
-     >원본 편집기가 동일한 탭에서 열립니다. 두 편집기를 동시에 열지 않는 것이 좋습니다.
+     >원본 편집기가 동일한 탭에서 열립니다. 두 편집기는 동시에 여는 것이 좋습니다.
 
 * 왼쪽 패널: 콘텐츠 조각 및 해당 **필드**&#x200B;의 **[변형](#variations)** 표시:
    * 이 링크를 사용하여 [콘텐츠 조각 구조 탐색](#navigate-structure)
@@ -468,7 +468,7 @@ URL이 정의되면 **미리보기** 버튼이 활성화됩니다. 이 버튼을
    <td><p> <img src="assets/cf-authoring-json-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>탭 플레이스홀더</b></p><p>실제 아이콘으로 표시되지 않지만 <b>탭 자리 표시자</b> 왼쪽 패널에 표시됩니다. <br>또한 표시된 대로 가로로 중앙 패널에 표시되거나, 가로로 표시할 내용이 너무 많을 경우 드롭다운 목록에 표시됩니다.</p> </td>
+   <td><p><b>탭 플레이스홀더</b></p><p>실제 아이콘으로 표시되지 않지만 <b>탭 플레이스홀더</b>는 왼쪽 패널에 표시됩니다. <br>중앙 패널에 가로로 표시되거나 드롭다운 목록(아이콘이 너무 많아 가로로 표시할 수 없는 경우)에도 표시됩니다.</p> </td>
    <td><p> <img src="assets/cf-authoring-tab-icon.png"> </p></td>
   </tr>
  </tbody>

@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: b760b3a65d89b0b4f924379fc460015a58e2ed3e
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 63%
+ht-degree: 80%
 
 ---
 
@@ -29,12 +29,12 @@ AEM as a Cloud Service의 Cloud Manager 2023.10.0 릴리스 일자는 2023년 10
    * 개선 사항은 콘텐츠 프로필에 따라 다릅니다.
 * 자동 [개발 환경에 대한 업데이트](/help/implementing/cloud-manager/manage-environments.md#updating-environments) 새 프로그램에 대해 기본적으로 활성화되어 업데이트를 수동으로 실행해야 하는 시간을 절약할 수 있습니다.
    * 이 업데이트는 단계적으로 배포됩니다.
-* Cloud Manager의 2023년 10월 릴리스부터 단계적 롤아웃을 통해 Java 버전이 업데이트됩니다.
-   * Java 8 및 11과 Maven의 부 버전이 업데이트되었으며 향후 2개월에 걸쳐 단계적으로 출시될 예정입니다. 새 버전에는 여러 보안 수정 사항 및 버그 수정이 있습니다. 새 버전은 다음과 같습니다.
+* Cloud Manager의 2023년 10월 릴리스에서는 Java 버전이 단계적 출시를 통해 업데이트되고 있습니다.
+   * Java 8 및 11과 Maven의 보조 버전이 업데이트되었으며 향후 2개월에 걸쳐 단계적으로 출시될 예정입니다. 새 버전에는 여러 보안 수정 사항과 버그 수정이 포함되어 있습니다. 새 버전은 다음과 같습니다.
    * *Maven: 3.8.8*
    * *Java 8 버전: /usr/lib/jvm/jdk1.8.0_371*
    * *Java 11 버전: /usr/lib/jvm/jdk-11.0.20*
-   * [OpenJDK 설명서를 참조하십시오](https://openjdk.org/groups/vulnerability/advisories/) 이러한 JDK 업데이트의 보안 및 버그 수정에 대한 자세한 내용을 확인하십시오.
+   * 이러한 JDK 업데이트의 보안 및 버그 수정에 대한 자세한 내용은 [OpenJDK 자문](https://openjdk.org/groups/vulnerability/advisories/)을 참조하십시오.
 
 ## 조기 채택 프로그램 {#early-adoption}
 
