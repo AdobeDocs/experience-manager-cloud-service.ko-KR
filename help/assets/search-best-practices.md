@@ -2,9 +2,9 @@
 title: 에 대한 모범 사례 검색 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: 애플리케이션 내에서 에셋의 메타데이터를 검색, 찾기 및 검색하기 위한 모범 사례입니다.
 contentOwner: KK
-source-git-commit: 31526510cc32c9587e76da522d9377afd837d991
+source-git-commit: 2c9316431d588241b470c8146c9444dbfc0af5fd
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2544'
 ht-degree: 3%
 
 ---
@@ -299,13 +299,11 @@ The newly added assets are not indexed.
 
 <table>
     <tr>
-        <th> S.No.</th>
         <th> 매개변수 </th>
         <th> 관리자 보기 </th>
         <th> 자산 보기 </th>
     </tr>
     <tr>
-        <td> 1. </td>
         <td> 사용자 지정 패싯 </td>
         <td> 다음을 추가할 수 있습니다. <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en">요구 사항에 따라 사용자 정의 검색 패싯.</td>
         <td> 사용자 지정 패싯은 자산 보기에서 부분적으로 지원됩니다. 지원되는 패싯은 다음과 같습니다.
@@ -319,37 +317,31 @@ The newly added assets are not indexed.
         </td>
     </tr>
     <tr>
-        <td> 2. </td>
         <td> 연산자 </td>
         <td> 지원 AND, OR 및 NOT </td>
         <td> 지원되지 않음 </td>
     </tr>
     <tr>
-        <td> 3. </td>
         <td> 와일드카드 </td>
         <td> 물음표(?)를 지원합니다. 별표(*)를 포함합니다.</td>
         <td> 지원되지 않음 </td>
     </tr>
     <tr>
-        <td> 4. </td>
         <td> 검색 결과 증폭 </td>
         <td> 지원됨 </td>
         <td> 지원되지 않음 </td>
     </tr>
      <tr>
-        <td> 5. </td>
         <td> 한 번에 모든 필터 지우기 </td>
         <td> 지원되지 않음 </td>
         <td> 지원됨</td>
     </tr>
      <tr>
-        <td> 6. </td>
         <td> 파일/폴더/파일 및 폴더 </td>
         <td> 지원됨 </td>
         <td> 폴더를 선택하는 옵션은 "파일 유형"에서 사용할 수 있습니다. </td>
     </tr>
      <tr>
-        <td> 7. </td>
         <td> 자산 상태 </td>
         <td> 
             지원되는 옵션은 다음과 같습니다.
@@ -374,7 +366,6 @@ The newly added assets are not indexed.
         </td>
     </tr>
      <tr>
-        <td> 8. </td>
         <td> 파일 유형 </td>
         <td>
         지원되는 옵션은 다음과 같습니다.
@@ -398,7 +389,6 @@ The newly added assets are not indexed.
         </td>
     </tr>
      <tr>
-        <td> 9. </td>
         <td> 파일 크기 </td>
         <td>
         지원되는 옵션은 다음과 같습니다.
@@ -410,7 +400,6 @@ The newly added assets are not indexed.
         <td> 지원되지 않음 </td>
     </tr>
      <tr>
-        <td> 10. </td>
         <td> 기타 필터 </td>
         <td>
             <ul>
@@ -427,7 +416,6 @@ The newly added assets are not indexed.
         <td> 지원되지 않음 </td>
     </tr>
      <tr>
-        <td> 11. </td>
         <td> 유사 항목 찾기 </td>
         <td> 지원됨 </td>
         <td> 지원되지 않음 </td>
