@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '1775'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 적응형 양식은 즉시 사용할 수 있는(OOTB) 여러 제출 액션을 제공합니다. 제출 액션은 적응형 양식을 통해 수집된 데이터에 대해 수행할 작업의 세부 정보를 지정합니다. (예: 이메일에서 데이터 보내기)
@@ -77,11 +77,11 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 * 첨부 파일의 크기는 0바이트입니다.
 
-* 파일 첨부 파일의 형식이 [지원되는 파일 유형](https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text) 섹션에 자세히 설명되어 있습니다.
+* 파일 첨부 파일의 형식이 [지원되는 파일 유형](https://helpx.adobe.com/kr/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text) 섹션에 자세히 설명되어 있습니다.
 
 ### 전달 경로 및 리디렉션 URL {#forward-path-and-redirect-url}
 
-필요한 작업을 수행한 후 제출 서블릿은 요청을 전달 경로로 전달합니다. 작업은 setForwardPath API를 사용하여 안내서 제출 서블릿에 전달 경로를 설정합니다.
+필요한 작업을 수행한 후 제출 서블릿은 요청을 전달 경로로 전달합니다. 작업은 setForwardPath API를 사용하여 안내서 제출 서블릿에서 전달 경로를 설정합니다.
 
 작업이 전달 경로를 제공하지 않으면 제출 서블릿이 리디렉션 URL을 사용하여 브라우저를 리디렉션합니다. 작성자는 적응형 양식 편집 대화 상자에서 감사 페이지 구성을 사용하여 리디렉션 URL을 구성합니다. 제출 액션 또는 안내서 제출 서블릿의 setRedirectUrl API를 통해 리디렉션 URL을 구성할 수도 있습니다. 안내서 제출 서블릿에서 setRedirectParameters API를 사용하여 리디렉션 URL로 전송된 요청 매개 변수를 구성할 수도 있습니다.
 
@@ -390,3 +390,7 @@ Perform the following steps to create a custom Submit Action that saves the data
    Select the action in the Adaptive Form. The action sends an email and stores the data. 
 
 -->
+
+>[!MORELIKETHIS]
+>
+>* [적응형 양식에 대한 제출 액션 구성](/help/forms/configure-submit-actions-core-components.md)

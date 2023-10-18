@@ -3,9 +3,9 @@ title: ' [!DNL AEM Forms] as a Cloud Service 소개'
 description: AEM Forms를 통해 업무용 양식을 제작하고 비즈니스 프로세스 워크플로를 만들 수 있고, 문서 서비스를 사용하여 문서를 생성하고 보호할 수 있습니다.
 landing-page-description: AEM as a Cloud Service에서 양식을 사용하는 방법을 이해합니다.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
 workflow-type: tm+mt
-source-wordcount: '1149'
+source-wordcount: '1151'
 ht-degree: 100%
 
 ---
@@ -67,11 +67,10 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service]는 고객 여정의 모
 | 데이터 소스 | 양식 및 문서를 외부 데이터 소스와 쉽게 연결하여 데이터를 검색하고 전송합니다. <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=ko">RDBMS 또는 Rest 엔드포인트에 연결</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=ko">Microsoft® Dynamics 365 또는 Salesforce 클라우드 서비스에 연결</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=ko">Microsoft® Azure Blob Storage에 연결</a></li></ul> |
 
 
-## 관련 문서
-
-* [Cloud Service 환경에 온보드](/help/forms/setup-forms-cloud-service.md)
-* [로컬 개발 환경 설정](/help/forms/setup-local-development-environment.md)
-* [AEM 6.5 Forms에서 Cloud Service로 마이그레이션](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-
-
+>[!MORELIKETHIS]
+>
+>* [적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md)
+>* [Cloud Service 환경에 온보드](/help/forms/setup-forms-cloud-service.md)
+>* [로컬 개발 환경 설정](/help/forms/setup-local-development-environment.md)
+>* [AEM 6.5 Forms에서 Cloud Service로 마이그레이션](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 

@@ -1,8 +1,8 @@
 ---
-source-git-commit: cada650e940aa941538a43ffb1f9a16d1f0b8a61
-workflow-type: ht
-source-wordcount: '83'
-ht-degree: 100%
+source-git-commit: 867b87e0b22fdc4f0466b517e8a04c18fb2dc860
+workflow-type: tm+mt
+source-wordcount: '244'
+ht-degree: 38%
 
 ---
 # 스니펫 {#snippets}
@@ -20,3 +20,28 @@ ht-degree: 100%
 >[!NOTE]
 >
 >현재 AEM에서는 프로필에 그룹을 할당할 수 없습니다. 대신 사용자를 개별적으로 추가해야 합니다.
+
+## 추가 참조 {#see-also}
+
+* [AEM 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md)
+* [AEM Sites 페이지에 AEM 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [AEM 적응형 양식에 테마 적용](/help/forms/using-themes-in-core-components.md)
+* [AEM 적응형 양식에 구성 요소 추가](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#components)
+* [AEM 적응형 양식에서 CAPTCHA 사용](/help/forms/captcha-adaptive-forms-core-components.md)
+* [AEM 적응형 양식의 PDF 버전(DoR) 생성](/help/forms/generate-document-of-record-core-components.md)
+* [AEM 적응형 양식 번역](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+* [적응형 양식용 Adobe Analytics을 활성화하여 양식 사용 추적](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+* [Microsoft SharePoint에 적응형 양식 연결](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive)
+* [적응형 양식을 Microsoft Power Automate에 연결](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+* [적응형 양식을 Microsoft OneDrive에 연결](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration)
+* [적응형 양식을 Microsoft Azure Blob 스토리지에 연결](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
+* [적응형 양식을 Salesforce에 연결](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [AEM 적응형 양식에서 Adobe Sign 사용](/help/forms/working-with-adobe-sign.md)
+* [적응형 양식에 대한 새 로케일 추가](/help/forms/supporting-new-language-localization-core-components.md)
+* [적응형 양식 데이터를 데이터베이스로 보내기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html)
+* [적응형 양식 데이터를 REST 끝점으로 보내기](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
+* [AEM Workflow에 적응형 양식 데이터 보내기](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
+* [Forms 포털을 사용하여 AEM 웹 사이트에 AEM 적응형 Forms 나열](/help/forms/configure-forms-portal.md)
+
+
+

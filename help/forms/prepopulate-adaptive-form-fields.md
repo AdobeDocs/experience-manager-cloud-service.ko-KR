@@ -3,7 +3,7 @@ title: 적응형 양식 필드를 미리 채우는 방법
 description: 기존 데이터를 사용하여 적응형 양식의 필드를 미리 채우면 사용자가 소셜 프로필로 로그인하여 양식의 기본 정보를 미리 채울 수 있습니다.
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: ebb77adfc97c805383de660d238e04a2173122b7
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 4%
@@ -12,7 +12,7 @@ ht-degree: 4%
 
 # 적응형 양식 필드 미리 채우기{#prefill-adaptive-form-fields}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |

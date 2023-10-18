@@ -2,14 +2,14 @@
 title: 핵심 구성 요소를 기반으로 새 로케일에 대한 지원을 적응형 양식에 추가하려면 어떻게 합니까?
 description: 적응형 양식에 대한 새 로케일을 추가하는 방법을 알아봅니다.
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 4%
+source-wordcount: '1328'
+ht-degree: 5%
 
 ---
 
-# 핵심 구성 요소를 기반으로 적응형 Forms에 대한 로케일 추가 {#supporting-new-locales-for-adaptive-forms-localization}
+# 핵심 구성 요소 기반 적응형 양식의 로케일 추가 {#supporting-new-locales-for-adaptive-forms-localization}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -176,6 +176,10 @@ AEM Forms은 새 로케일을 쉽게 추가하는 데 도움이 되는 샘플 �
 
 ## 더 보기
 
-* [기계 번역 또는 사람 번역을 사용하여 적응형 양식 기반의 핵심 구성 요소 번역](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [적응형 Forms에 대한 기록 문서 생성](/help/forms/generate-document-of-record-core-components.md)
 * [AEM Sites 페이지 또는 경험 조각에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
+
+## 추가 참조 {#see-also}
+
+{{see-also}}

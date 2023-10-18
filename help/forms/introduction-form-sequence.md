@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
-workflow-type: ht
-source-wordcount: '547'
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+workflow-type: tm+mt
+source-wordcount: '549'
 ht-degree: 100%
 
 ---
@@ -51,3 +51,8 @@ ht-degree: 100%
 1. 나머지 단계를 완료하여 양식 템플릿을 만듭니다. <!-- For more information, see [Creating a custom Adaptive Form template](custom-adaptive-forms-templates.md). -->
 
 양식 템플릿에서 양식 시퀀스를 정의하고 나서 이를 사용하여 기본 구조를 시퀀스로 바로 정의하는 양식을 생성할 수 있지만 항상 요구 사항에 맞게 양식을 사용자 정의할 수 있습니다.
+
+
+## 추가 참조 {#see-also}
+
+{{see-also}}

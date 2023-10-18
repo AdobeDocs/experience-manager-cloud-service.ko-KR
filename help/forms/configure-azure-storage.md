@@ -2,7 +2,7 @@
 title: Azure 스토리지를 구성하는 방법
 description: 양식을 Azure 스토리지 서버와 통합하는 방법을 알아봅니다.
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 이러한 단계를 실행하기 전에 [!DNL Azure] 저장소 계정 및 액세스 권한 부여 액세스 키 [!DNL Azure] 저장소 계정입니다.
 
-1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure 스토리지]**.
+1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Azure 스토리지]**.
 1. 구성을 만들 폴더를 선택하고 을 누릅니다 **[!UICONTROL 만들기]**.
 1. 에서 구성의 제목을 지정합니다. **[!UICONTROL 제목]** 필드.
 1. 의 이름을 지정합니다. [!DNL Azure] 의 저장소 계정 **[!UICONTROL Azure 스토리지 계정]** 필드.
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 ### 추가 [!DNL Azure] 양식 데이터 모델에 대한 서비스 {#add-azure-services}
 
-양식 데이터 모델 및 데이터 모델 개체를 만든 후 [!DNL Azure] 를 양식 데이터 모델에 추가합니다.
+양식 데이터 모델 및 데이터 모델 개체를 만든 후 [!DNL Azure] 서비스를 양식 데이터 모델에 추가합니다.
 
 추가하려면 [!DNL Azure] 서비스:
 
@@ -101,3 +101,13 @@ ht-degree: 1%
 >[!NOTE]
 >
 >Azure는 Blob당 10개의 태그만 허용하므로 Azure 엔터티당 10개의 검색 키만 허용되며 검색 키로 표시된 속성 값은 해싱 후 Azure 인덱스 태그에 저장됩니다.
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
+>* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+>  [Add Forms Portal to an AEM Sites page](/help/forms/configure-forms-portal.md)
+
+-->

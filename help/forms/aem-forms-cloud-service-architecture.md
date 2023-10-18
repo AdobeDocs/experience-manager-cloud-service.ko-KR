@@ -2,9 +2,9 @@
 title: 적응형 Forms 및 통신 API를 위한 AEM Forms as a Cloud Service 아키텍처
 description: 의 아키텍처 이해 [!DNL AEM Forms] 플랫폼의 확장성, 복원력 및 성능 측면에 대해 as a Cloud Service으로 알아볼 수 있습니다.
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1093'
 ht-degree: 5%
 
 ---
@@ -193,3 +193,10 @@ Set up your development environment, [Configure your CI/CD Pipeline](https://exp
 ## 디버깅 {#debugging}
 
 AEM as a Cloud Service은 셀프서비스, 확장 가능한 클라우드 인프라에서 실행됩니다. AEM 개발자는 빌드 및 배포에서 AEM 애플리케이션 실행에 대한 세부 정보를 얻기 위해 AEMas a Cloud Service 의 다양한 측면을 이해하고 디버깅해야 합니다. 자세한 내용은 [디버깅 AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html).
+
+
+>[!MORELIKETHIS]
+>
+>* [AEM Forms as a Cloud Service 커뮤니케이션 소개](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [AEM Forms as a Cloud Service 통신 일괄 처리](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [통신 처리 - 동기 API](/help/forms/aem-forms-cloud-service-communications.md)

@@ -2,9 +2,9 @@
 title: 간편한 벌크 PDF 생성 - 일괄 처리 기술을 기본으로 제공 - 수백만 개의 PDF 문서 생성에 대한 자체 도움말 안내서!
 description: 브랜드 지향적이고 개인화된 커뮤니케이션을 만드는 방법
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1705'
+source-wordcount: '1735'
 ht-degree: 2%
 
 ---
@@ -171,3 +171,10 @@ Microsoft Azure 스토리지에서 다음을 만듭니다. [컨테이너](https:
 ## API 참조 설명서
 
 API 참조 설명서는 API에서 제공하는 모든 매개 변수, 인증 방법 및 다양한 서비스에 대한 자세한 정보를 제공합니다. API 참조 설명서는 .yaml 형식으로 사용할 수 있습니다. 다음을 다운로드할 수 있습니다. [일괄 처리 API](assets/batch-api.yaml) 파일을 만든 다음 Postman에 업로드하여 API 기능을 확인합니다.
+
+>[!MORELIKETHIS]
+>
+>* [AEM Forms as a Cloud Service 커뮤니케이션 소개](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [적응형 Forms 및 통신 API를 위한 AEM Forms as a Cloud Service 아키텍처](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [통신 처리 - 동기 API](/help/forms/aem-forms-cloud-service-communications.md)
+>* [통신 처리 - 일괄 처리 API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

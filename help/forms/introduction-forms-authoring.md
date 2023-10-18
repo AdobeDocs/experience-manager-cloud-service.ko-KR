@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
-workflow-type: ht
-source-wordcount: '2482'
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+workflow-type: tm+mt
+source-wordcount: '2484'
 ht-degree: 100%
 
 ---
@@ -362,3 +362,7 @@ J. **기타**: 추가 옵션을 제공하여 선택한 구성 요소로 작업�
 * **도구 모음:** 적응형 양식 컨테이너는 양식 전역의 맞춤형 글로벌 도구 모음과 연결되어 있습니다. 편집 막대의 **[!UICONTROL 도구 모음 추가]** 액션을 사용하여 이 도구 모음을 추가할 수 있습니다. 이를 통해 작성자는 제출, 저장, 재설정 등과 같은 액션을 추가할 수 있습니다.
 
 * **자산:** 이 노드에는 양식 작성에 사용되는 추가 정보가 포함됩니다. 예: 양식 모델 세부 정보, 지역화 세부 정보 등.
+
+## 추가 참조 {#see-also}
+
+{{see-also}}

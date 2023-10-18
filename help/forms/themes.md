@@ -2,16 +2,16 @@
 title: 테마를 만들고 사용하여 적응형 양식의 스타일을 어떻게 지정할 수 있습니까?
 description: 적응형 양식 테마를 사용하여 적응형 양식에 스타일을 지정하고 시각적 ID를 제공합니다. 여러 적응형 Forms에서 테마를 공유할 수 있습니다.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '5579'
+source-wordcount: '5581'
 ht-degree: 3%
 
 ---
 
 # 테마 만들기 및 사용 {#creating-and-using-themes}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -668,3 +668,8 @@ CSS 보기를 선택하면 테마 편집기에서 모든 스타일 정보를 수
 
   글꼴 스타일, 배경 및 투명도와 같은 스타일 옵션을 사용하여 머리글과 바닥글의 스타일을 지정하려면 테마 편집기를 사용하십시오.
 로고 이미지, 머리글에 회사 이름, 바닥글에 저작권 정보 등의 정보를 제공하려면 양식 편집기 옵션을 사용합니다.
+
+
+## 추가 참조 {#see-also}
+
+{{see-also}}

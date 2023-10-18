@@ -4,10 +4,10 @@ description: Google reCAPTCHA 서비스를 통해 손쉽게 양식 보안을 강
 topic-tags: Adaptive Forms, author
 keywords: Google reCAPTCHA 서비스, 적응형 Forms, CAPTCHA 과제, 보트 방지, 핵심 구성 요소, 양식 제출 보안, 양식 스팸 방지
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 15%
+source-wordcount: '919'
+ht-degree: 12%
 
 ---
 
@@ -106,9 +106,6 @@ Tap the **[!UICONTROL Currency Value]** field in the form and create the followi
 **Q: 적응형 양식에 Captcha 구성 요소를 두 개 이상 사용할 수 있습니까?**
 **Ans:** 적응형 양식에서 Captcha 구성 요소를 두 개 이상 사용하는 것은 지원되지 않습니다. 또한 지연 로드로 표시된 조각 또는 패널에서는 Captcha 구성 요소를 사용하지 않는 것이 좋습니다.
 
-## 참고 항목
+## 추가 참조 {#see-also}
 
-* [적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md)
-* [적응형 양식 조각 만들기](/help/forms/adaptive-form-fragments-core-components.md)
-* [AEM Sites 페이지 또는 경험 조각에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [적응형 양식에서 Google reCAPTCHA 사용](/help/forms/captcha-adaptive-forms-core-components.md)
+{{see-also}}

@@ -2,9 +2,9 @@
 title: 적응형 Forms에 대한 기록 문서를 생성하는 방법
 description: 적응형 Forms 핵심 구성 요소용 기록 문서(DoR)에 대한 템플릿을 생성하는 방법에 대해 알아봅니다.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '3107'
+source-wordcount: '3109'
 ht-degree: 2%
 
 ---
@@ -404,4 +404,14 @@ When you select a form model, configure Document of Record using options availab
 **양식 수준 설정**
 
 * **DoR에 바인딩되지 않은 필드 포함:** 속성을 설정하면 기록 문서에 있는 스키마 기반 적응형 양식의 바인딩되지 않은 필드가 포함됩니다. 기본적으로 true입니다.
-<!-- **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.->>
+
+## 추가 참조 {#see-also}
+
+{{see-also}}
+
+
+<!-- 
+
+**Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.
+
+!->>

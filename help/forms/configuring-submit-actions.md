@@ -2,9 +2,9 @@
 title: 적응형 양식에 대한 제출 액션을 구성하는 방법?
 description: 적응형 양식은 여러 제출 액션을 제공합니다. 제출 액션은 적응형 양식이 제출 후 처리되는 방식을 정의합니다. 기본 제공 제출 액션을 사용하거나 직접 만들 수 있습니다.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 6d949d9f31cc13b30f8ba06058911ddfe8e817af
+source-git-commit: ddc7ddbcd1761b4320e1c7a30a015d844ef3e0c0
 workflow-type: tm+mt
-source-wordcount: '3395'
+source-wordcount: '3403'
 ht-degree: 87%
 
 ---
@@ -403,3 +403,7 @@ AEM 보안 및 강화 지침의 일부로, 400.jsp, 404.jsp 및 500.jsp와 같�
 양식 데이터 모델이나, 데이터에 `<afData>`, `<afBoundData>` 및 `</afUnboundData>` 태그가 포함되지 않은 스키마에 대해 XML 또는 JSON 데이터 컴플레인이 존재하는 스키마 기반 적응형 양식을 미리 채우는 경우 적응형 양식의 무제한 필드 데이터가 손실됩니다. 스키마는 XML 스키마, JSON 스키마 또는 양식 데이터 모델일 수 있습니다. 무제한 필드는 `bindref` 속성이 없는 적응형 양식 필드입니다.
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
+
+>[!MORELIKETHIS]
+>
+>* [적응형 Forms에 대한 사용자 지정 제출 액션 만들기](/help/forms/custom-submit-action-form.md)

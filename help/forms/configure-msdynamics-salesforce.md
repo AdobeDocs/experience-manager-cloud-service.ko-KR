@@ -2,9 +2,9 @@
 title: 적응형 Forms을 위한 기본 양식 데이터 모델을 통해 Microsoft Dynamics 365 및 Salesforce를 구성하는 방법
 description: Microsoft Dynamics 365 및 Salesforce를 적응형 Forms과 통합하는 방법을 알아봅니다.
 exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '980'
 ht-degree: 3%
 
 ---
@@ -100,3 +100,9 @@ A [!DNL Microsoft® Dynamics 365] 양식 데이터 모델은 [!DNL AEM Forms] �
 양식 데이터 모델에 액세스하려면 다음으로 이동합니다. **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL 데이터 통합]**. 사용 가능한 폴더 목록에는 제목이 지정된 폴더가 포함됩니다. `DappTitle`  while [AEM Archetype 프로젝트 생성](setup-local-development-environment.md#forms-cloud-service-local-development-environment). 폴더 이름을 탭하고 **[!UICONTROL Microsoft® Dynamics 365 데이터 모델]**&#x200B;을 클릭하고 편집을 탭합니다 ![편집](assets/edit.png) 양식 데이터 모델을 보기 위한 아이콘입니다.
 
 구성 후 [[!DNL Microsoft® Dynamics 365] 클라우드 구성 서비스](#configure-dynamics-cloud-service)를 사용하면 적응형 양식을 즉시 통합할 수 있습니다 [!DNL Microsoft® Dynamics 365] 데이터 모델.
+
+>[!MORELIKETHIS]
+>
+* [AEM Forms에 대한 데이터 소스 구성](/help/forms/configure-data-sources.md)
+* [AEM Forms용 Azure 스토리지 구성](/help/forms/configure-azure-storage.md)
+[AEM Sites 페이지에 Forms 포털 추가](/help/forms/configure-forms-portal.md)

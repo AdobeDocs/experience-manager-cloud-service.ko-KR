@@ -4,16 +4,16 @@ description: 테이블 구성 요소를 사용하여 적응형 양식에 테이�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '2496'
-ht-degree: 2%
+source-wordcount: '2498'
+ht-degree: 3%
 
 ---
 
 # 적응형 양식의 표 {#tables-in-adaptive-forms}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 
 | 버전 | 문서 링크 |
@@ -329,3 +329,8 @@ XFA 테이블 요소는 테이블 구성 요소에 매핑되고 적응형 양식
 * 기본 테이블의 각 본문 셀에는 사전 정의된 요소 이름이 연결되어 있습니다. 적응형 양식에 다른 표를 추가하면 새 표의 기본 본문 셀이 첫 번째 표와 동일한 요소 이름을 갖게 됩니다. 이러한 시나리오에서는 양식 제출 시 생성된 데이터에 테이블 중 하나의 기본 본문 셀에만 데이터가 포함됩니다. 따라서 기본 본문 셀의 요소 이름을 변경하여 테이블 간에 고유한 이름을 유지하고 데이터 손실을 방지해야 합니다.
 
   기본 본문 셀에만 적용할 수 있습니다. 표에 행이나 열을 더 추가하면 기본값이 아닌 본문 셀에 대한 고유한 요소 이름이 자동으로 생성됩니다.
+
+## 추가 참조 {#see-also}
+
+{{see-also}}
+

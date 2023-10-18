@@ -5,9 +5,9 @@ uuid: c3fa2aa4-a6b4-458e-8534-138e075290b1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1140'
 ht-degree: 0%
 
 ---
@@ -169,3 +169,8 @@ XML 스키마와 복합 유형 요소의 minOccours 및 maxOccurs 속성에서 �
 >[!NOTE]
 >
 >아코디언이 아닌 레이아웃의 경우 적응형 양식 버튼 구성 요소를 사용하여 인스턴스를 추가 및 제거합니다.
+
+
+>[!MORELIKETHIS]
+>
+>* [적응형 양식 핵심 구성 요소에서 반복 가능한 섹션이 포함된 양식 만들기](/help/forms/create-forms-repeatable-sections.md)

@@ -4,9 +4,9 @@ description: AEM Forms을 사용하면 상황에 맞는 도움말을 적응형 �
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '384'
 ht-degree: 1%
 
 ---
@@ -65,3 +65,7 @@ ht-degree: 1%
 
 ![양식 패널 수준의 컨텍스트 내 도움말 예제](assets/photoshop-1.png)
 
+>[!MORELIKETHIS]
+>
+>* [양식 필드에 자리 표시자 텍스트 추가](/help/forms/placeholder-text-in-aem-forms.md)
+>* [서식 있는 텍스트를 위한 적응형 양식에 각주 추가](/help/forms/footnotes-richtextsupport.md)

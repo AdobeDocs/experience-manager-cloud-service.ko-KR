@@ -2,9 +2,9 @@
 title: AEM Forms의 고려 사항, 알려진 문제 및 모범 사례는 무엇입니까?
 description: AEM Forms Communication API에 대한 알려진 문제 및 모범 사례를 고려합니다.
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1718'
+source-wordcount: '1748'
 ht-degree: 0%
 
 ---
@@ -203,3 +203,11 @@ AEM Forms 출력 서비스를 사용하여 템플릿(XFA 또는 PDF)을 고객 �
 
 **여러 배치 작업을 동시에 실행할 수 있습니까?**
 예. 여러 배치 작업을 동시에 실행할 수 있습니다. 모든 작업에 대해 항상 다른 소스 및 대상 폴더를 사용하여 충돌을 방지하십시오.
+
+>[!MORELIKETHIS]
+>
+>* [AEM Forms as a Cloud Service 커뮤니케이션 소개](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [적응형 Forms 및 통신 API를 위한 AEM Forms as a Cloud Service 아키텍처](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [통신 처리 - 동기 API](/help/forms/aem-forms-cloud-service-communications.md)
+>* [통신 처리 - 일괄 처리 API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+

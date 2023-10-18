@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
 docset: aem65
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '499'
 ht-degree: 1%
 
 ---
@@ -75,3 +75,7 @@ ht-degree: 1%
 >
 >모든 사용자가 원격 구현에서 사용자 그룹의 구성원을 검토하는 것으로 복제되는지 확인하십시오.
 
+>[!MORELIKETHIS]
+>
+>* [양식에 대한 리뷰 생성 및 관리](/help/forms/create-reviews-forms.md)
+>* [적응형 양식에 대한 검토 만들기 및 관리](/help/forms/review-adaptiveforms-in-sites-page.md)

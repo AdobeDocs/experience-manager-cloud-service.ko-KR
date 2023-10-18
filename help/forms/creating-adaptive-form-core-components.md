@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
 workflow-type: tm+mt
-source-wordcount: '2344'
+source-wordcount: '2326'
 ht-degree: 67%
 
 ---
@@ -198,7 +198,8 @@ ht-degree: 67%
 * [다양한 화면 크기 및 장치 유형에 대한 양식 레이아웃 설정](/help/sites-cloud/authoring/features/responsive-layout.md)
 * [샘플 테마 템플릿 및 양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
+## 추가 참조 {#see-also}
 
-## 관련 문서 {#related-article}
+{{see-also}}
 
-* [적응형 양식 기반의 독립 실행형 코어 구성 요소 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+

@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: e4dc01d2-7c89-4bd8-af0a-1d2df4676a9a
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 4%
+source-wordcount: '214'
+ht-degree: 6%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-redirect-page.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-redirect-page.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 양식 작성자는 양식을 제출한 후 양식 사용자가 리디렉션되는 각 양식에 대한 페이지를 구성할 수 있습니다.
@@ -35,3 +35,7 @@ ht-degree: 4%
 양식 작성자는 감사 인사 페이지에 전달되는 다음 매개 변수를 사용할 수 있습니다. 사용 가능한 모든 제출 액션의 경우 `status` 및 `owner` 매개 변수가 전달됩니다. 이 두 매개 변수 외에도 다음 제출 액션에 대해 몇 가지 추가 매개 변수가 전달됩니다.
 
 * **[!UICONTROL REST 끝점에 제출]**: 필드 내 매개 변수 매핑에 추가된 매개 변수가 전달됩니다. `status` 및 `owner` 매개 변수는 이 제출 액션에서 전달되지 않습니다. 자세한 내용은 [REST 끝점에 제출 작업 구성](configuring-submit-actions.md).
+
+>[!MORELIKETHIS]
+>
+>* [리디렉션 페이지 또는 감사 메시지 구성](/help/forms/configure-redirect-page-or-thank-you-message.md)

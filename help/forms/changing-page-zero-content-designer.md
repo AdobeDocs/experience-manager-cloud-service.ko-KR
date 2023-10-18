@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '248'
 ht-degree: 1%
 
 ---
@@ -45,3 +45,8 @@ ht-degree: 1%
 >[!NOTE]
 >
 >방금 만든 사용자 지정 속성은 양식을 다시 열 때 양식 속성 대화 상자에 제대로 표시되지 않을 수 있습니다. 그러나 제대로 작동하며 양식에 업데이트된 Page Zero 메시지가 표시됩니다.
+
+>[!MORELIKETHIS]
+>
+>* [기록 문서 템플릿을 만들려면 Forms Designer를 다운로드하여 설치하십시오.](/help/forms/installing-configuring-designer.md)
+>* [Forms Designer를 사용하여 기록 문서(DoR) 템플릿 및 양식 조각을 만드시겠습니까?](/help/forms/use-forms-designer.md)

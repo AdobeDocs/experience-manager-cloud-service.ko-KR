@@ -7,13 +7,13 @@ role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '2780'
+exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+workflow-type: tm+mt
+source-wordcount: '2748'
 ht-degree: 100%
 
 ---
-
 
 # 적응형 양식 만들기 {#creating-an-adaptive-form}
 
@@ -271,7 +271,4 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
 >[!MORELIKETHIS]
 >
->* [AEM Sites 페이지 또는 경험 조각에서 적응형 양식 만들기](create-or-add-an-adaptive-form-to-aem-sites-page.md)
->* [사용자 정의 적응형 양식 테마 만들기](using-themes-in-core-components.md)
->* [양식의 제출 액션 구성](configuring-submit-actions.md)
->* [사용 가능한 적응형 양식 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#components)
+>* [적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md)

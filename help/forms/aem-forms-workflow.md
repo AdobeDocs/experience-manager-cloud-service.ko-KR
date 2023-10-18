@@ -4,9 +4,9 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: 'AEM Forms 워크플로를 사용하여 비즈니스 프로세스 워크플로를 자동화하고 신속하게 구축할 수 있습니다. 예: 검토 및 승인, PDF 생성, Adobe Sign 워크플로.'
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2392'
 ht-degree: 2%
 
 ---
@@ -270,3 +270,9 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 ### 워크플로 인스턴스 제거 {#purge-workflow-instances}
 
 워크플로 인스턴스 수를 최소화하면 워크플로 엔진의 성능이 향상되므로 완료되었거나 실행 중인 워크플로 인스턴스를 저장소에서 정기적으로 제거할 수 있습니다. 자세한 내용은, [정기적인 워크플로 인스턴스 제거](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html?lang=ko-KR) 워크플로 인스턴스 삭제
+
+
+>[!MORELIKETHIS]
+>
+>* [AEM 번역 워크플로를 사용하여 적응형 Forms 및 기록 문서 현지화](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms.md)
+>* [Forms 중심 AEM 워크플로의 변수](/help/forms/variable-in-aem-workflows.md)

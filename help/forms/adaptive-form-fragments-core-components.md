@@ -5,10 +5,10 @@ topic-tags: author
 keywords: 적응형 양식 단편 추가, 적응형 양식 단편, 양식 단편 만들기, 적응형 양식에 단편 추가, 단편 관리
 feature: Adaptive Forms
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1747'
-ht-degree: 4%
+source-wordcount: '1716'
+ht-degree: 3%
 
 ---
 
@@ -190,8 +190,8 @@ AEM Forms UI를 사용하여 적응형 양식 조각에 대해 여러 작업을 
 양식을 만드는 데 사용할 수 있는 적응형 양식 조각을 참조할 수 있습니다.
 <!-- For more information, see [Reference Fragments](../../forms/using/reference-adaptive-form-fragments.md). -->
 
+
+
 ## 추가 참조 {#see-also}
 
-* [AEM Sites 페이지 또는 경험 조각에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [적응형 Forms에서 테마 만들기 또는 추가](/help/forms/using-themes-in-core-components.md)
-* [핵심 구성 요소를 기반으로 하는 AEM 적응형 양식에서 Google reCAPTCHA 사용](/help/forms/captcha-adaptive-forms-core-components.md)
+{{see-also}}

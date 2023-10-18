@@ -2,16 +2,16 @@
 title: 적응형 Forms의 레이아웃 기능은 무엇입니까?
 description: 다양한 디바이스에서 적응형 Forms의 레이아웃 및 모습은 레이아웃 설정의 적용을 받습니다. 다양한 레이아웃과 적용 방법을 이해합니다.
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '861'
 ht-degree: 8%
 
 ---
 
 # 적응형 Forms의 레이아웃 기능 {#layout-capabilities-of-adaptive-forms}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 
 | 버전 | 문서 링크 |
@@ -115,6 +115,11 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![양식 머리글에 패널 제목이 없는 모바일 레이아웃](assets/mobile-layout2.png)
 
+## 추가 참조 {#see-also}
+
+{{see-also}}
+
+
 <!-- ## Toolbar layouts {#toolbar-layouts}
 
 A Toolbar Layout controls positioning and display of any action buttons that you add to your Adaptive Forms. The layout can be added at a form level or at a panel level.
@@ -146,3 +151,5 @@ For the Mobile layout, you can add action buttons using icons.
 ![Mobile fixed layout for toolbar](assets/toolbar_layout_mobile_fixed.png)
 
 Mobile fixed layout for toolbar-->
+
+

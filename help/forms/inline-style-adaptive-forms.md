@@ -5,16 +5,16 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '778'
 ht-degree: 11%
 
 ---
 
 # 적응형 양식 구성 요소의 인라인 스타일 지정 {#inline-styling-of-adaptive-form-components}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -132,3 +132,12 @@ ht-degree: 11%
 성공 및 오류 상태를 시뮬레이션할 수도 있습니다. 확장 아이콘을 탭하여 **[!UICONTROL 시뮬레이트 성공]** 및 **[!UICONTROL 시뮬레이트 오류]** 옵션.
 
 ![상태 시뮬레이션](assets/simulate-states.png)
+
+
+## 추가 참조 {#see-also}
+
+{{see-also}}
+
+>[!MORELIKETHIS]
+>
+>* [적응형 양식 핵심 구성 요소에서 테마 사용](/help/forms/using-themes-in-core-components.md)

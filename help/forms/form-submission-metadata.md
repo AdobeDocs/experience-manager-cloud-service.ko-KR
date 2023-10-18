@@ -4,7 +4,7 @@ description: 사용자 제공 데이터를 사용하여 제출된 양식의 메�
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 0%

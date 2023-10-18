@@ -3,16 +3,16 @@ title: 양식에서 리뷰를 만들고 관리하는 방법
 description: 검토 메커니즘을 사용하여 검토자를 추가하고 검토자가 양식에 주석을 달 수 있도록 합니다.
 topic-tags: forms-manager
 exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '733'
 ht-degree: 8%
 
 ---
 
 # 양식에 대한 리뷰 생성 및 관리{#creating-and-managing-reviews-to-forms}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
 
 
 | 버전 | 문서 링크 |
@@ -114,3 +114,17 @@ ht-degree: 8%
    1. **모두**: 리뷰가 이전 리뷰 섹션에 표시됩니다. 더 이상 댓글을 추가할 수 없습니다.
 
    ![검토 완료](assets/review-complete-imgg.png)
+
+
+## 추가 참조 {#see-also}
+
+{{see-also}}
+
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Associating submission reviewers with a form](/help/forms/adding-reviewers-form.md)
+
+-->

@@ -2,16 +2,16 @@
 title: Experience Manager Sites 페이지에서 Forms 포털을 만드는 방법
 description: AEM Sites 페이지에서 Forms 포털을 만들고 기본 핵심 구성 요소를 사용하는 방법을 알아봅니다.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
 workflow-type: tm+mt
-source-wordcount: '1839'
+source-wordcount: '1841'
 ht-degree: 4%
 
 ---
 
 # AEM Sites 페이지에 Forms 포털 추가 {#publish-forms-on-portal}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -182,3 +182,19 @@ Adobe Experience Manager(AEM) 사이트에서 핵심 구성 요소(기본 포털
 1. 다음 항목 선택 **[!UICONTROL 사용]** 양식의 자동 저장을 활성화하려면 이 확인란을 선택합니다. 다음을 구성할 수 있습니다.
 * 기본적으로 [!UICONTROL 적응형 양식 이벤트] 가 &quot;true&quot;로 설정되어 있으면 모든 이벤트 후에 양식이 자동으로 저장됨을 의미합니다.
 * 위치 [!UICONTROL 트리거], 이벤트 발생에 따라 또는 특정 시간 간격 후에 자동 저장을 트리거하도록 구성합니다.
+
+## 추가 참조 {#see-also}
+
+{{see-also}}
+
+
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
+>* [Configure Azure storage for AEM Forms](/help/forms/configure-azure-storage.md)
+>* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+
+-->

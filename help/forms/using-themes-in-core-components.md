@@ -2,9 +2,9 @@
 title: 적응형 Forms에서 테마를 만들고 사용하려면 어떻게 해야 합니까?
 description: 테마를 사용하여 스타일을 지정하고 핵심 구성 요소를 사용하여 적응형 양식에 시각적 ID를 제공할 수 있습니다. 여러 적응형 Forms에서 테마를 공유할 수 있습니다.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
 workflow-type: tm+mt
-source-wordcount: '2698'
+source-wordcount: '2680'
 ht-degree: 5%
 
 ---
@@ -124,7 +124,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 1. `aem-forms-theme-canvas` 폴더로 이동합니다.
 
-1. 다음 명령을 실행합니다.
+1. 다음 명령을 실행합니다:
 
    ```
          code .
@@ -418,7 +418,11 @@ AEM Forms as a Cloud Service 인스턴스에 호스팅된 적응형 양식에 �
 * [샘플 테마 템플릿 및 양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 
-## 관련 문서 {#related-article}
+>[!MORELIKETHIS]
+>
+>* [AEM Forms as a Cloud Service 및 로컬 개발 환경에서 적응형 양식 핵심 구성 요소 활성화](/help/forms/enable-adaptive-forms-core-components.md)
 
-* [AEM Forms as a Cloud Service 및 로컬 개발 환경에서 적응형 양식 핵심 구성 요소 활성화](/help/forms/enable-adaptive-forms-core-components.md)
-* [적응형 양식 기반의 독립 실행형 코어 구성 요소 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+
+## 추가 참조 {#see-also}
+
+{{see-also}}

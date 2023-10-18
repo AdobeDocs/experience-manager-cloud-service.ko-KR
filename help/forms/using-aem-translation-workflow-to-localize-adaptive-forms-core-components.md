@@ -3,9 +3,9 @@ title: 적응형 양식 기반의 핵심 구성 요소를 번역하려면 어떻
 description: AEM Forms에서 양식 데이터 모델을 만들고, 샘플 데이터 및 서비스로 모델을 테스트하고, 모델에 대한 다양한 옵션을 구성하는 방법에 대해 알아봅니다.
 feature: Adaptive Forms
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '896'
 ht-degree: 4%
 
 ---
@@ -83,3 +83,7 @@ ht-degree: 4%
    ![번역 파일 가져오기](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
 1. 현지화된 양식을 미리 보려면 AEM Forms UI에서 현지화된 양식을 선택합니다. 클릭 **[!UICONTROL 미리 보기]** >**[!UICONTROL HTML으로 미리 보기]**. 을(를) 추가한 후 양식 다시 열기 `afAcceptLang=<locale code>` 를 입력합니다. 예: 추가 `afAcceptLang=de`독일어 버전의 양식을 엽니다.
+
+## 추가 참조 {#see-also}
+
+{{see-also}}

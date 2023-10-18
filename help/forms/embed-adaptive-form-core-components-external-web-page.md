@@ -5,7 +5,7 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
 exl-id: 198f6f76-1134-4818-89a0-6ddc84ff956c
-source-git-commit: fb3d3732f698015151d9703bfddfe94b531d31b6
+source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 98%
@@ -162,3 +162,11 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 1. AEM 게시 인스턴스에서 `https://'[server]:[port]'/system/console/configMgr`의 AEM 웹 콘솔 구성 관리자로 이동합니다.
 1. **Apache Sling 레퍼러 필터** 구성을 찾아 엽니다.
 1. 허용된 호스트 필드에서 웹 페이지가 있는 도메인을 지정합니다. 이를 통해 호스트는 AEM 서버에 POST를 요청할 수 있습니다. 정규 표현식을 사용하여 일련의 외부 애플리케이션 도메인을 지정할 수도 있습니다.
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Embed adaptive form based on core components to AEM sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
+
+-->

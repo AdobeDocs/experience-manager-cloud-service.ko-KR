@@ -5,7 +5,7 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: ac7e1a1ada156734c3a487269e674e8eade7c9c3
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
 source-wordcount: '2452'
 ht-degree: 9%
@@ -328,3 +328,14 @@ When you enable mutual authentication for form data model, both the data source 
 ## 다음 단계 {#next-steps}
 
 데이터 소스를 구성했습니다. 그런 다음 양식 데이터 모델을 만들거나 데이터 소스 없이 이미 양식 데이터 모델을 만든 경우 구성한 데이터 소스와 연결할 수 있습니다. 다음을 참조하십시오 [양식 데이터 모델 만들기](create-form-data-models.md) 을 참조하십시오.
+
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Configure Azure storage for AEM Forms](/help/forms/configure-azure-storage.md)
+>* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+>*  [Add Forms Portal to an AEM Sites page](/help/forms/configure-forms-portal.md)
+
+-->

@@ -1,14 +1,14 @@
 ---
 title: 적응형 Forms에서 CAPTCHA를 사용하는 방법
-description: 적응형 양식에 대한 AEM CAPTCHA 또는 Google reCAPTCHA 서비스를 구성하는 방법에 대해 알아봅니다.
+description: 적응형 양식에 대한 또는 Google reCAPTCHA 서비스를 구성하는 방법에 대해 알아봅니다.
 uuid: 0e11e98a-12ac-484c-b77f-88ebdf0f40e5
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1935'
+source-wordcount: '1945'
 ht-degree: 11%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 11%
 
 # 적응형 Forms에서 reCAPTCHA 사용 {#using-reCAPTCHA-in-adaptive-forms}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 
 | 버전 | 문서 링크 |
@@ -342,3 +342,12 @@ reCAPTCHA 서비스는 `https://www.recaptcha.net/` 을 기본 도메인으로 �
 ```
 
 구성의 값을 설정하려면 [AEM SDK를 사용하여 OSGi 구성을 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ko#generating-osgi-configurations-using-the-aem-sdk-quickstart)하고 Cloud Service 인스턴스에 [구성을 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ko#deployment-process)합니다.
+
+## 추가 참조 {#see-also}
+
+{{see-also}}
+
+
+>[!MORELIKETHIS]
+>
+>* [적응형 Forms을 위한 테마, 템플릿 및 양식 데이터 모델 참조](/help/forms/reference-themes-templates-data-models.md)

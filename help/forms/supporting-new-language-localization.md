@@ -2,16 +2,16 @@
 title: 기초 구성 요소를 기반으로 하는 적응형 양식에 새 로케일에 대한 지원을 추가하려면 어떻게 합니까?
 description: 적응형 Forms의 경우 즉시 제공된 언어 외에도 더 많은 언어에 대한 로케일을 추가할 수 있습니다.
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1266'
 ht-degree: 8%
 
 ---
 
 # 적응형 Forms 현지화를 위한 새 로케일 지원 {#supporting-new-locales-for-adaptive-forms-localization}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 
 | 버전 | 문서 링크 |
@@ -157,3 +157,8 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
 * 기존 적응형 양식에 새 필드를 추가하는 경우:
    * **기계 번역용**: 사전을 다시 만들고 번역 프로젝트를 실행합니다. 번역 프로젝트를 만든 후 적응형 양식에 추가된 필드는 번역되지 않은 상태로 유지됩니다.
    * **사람 번역용**: 다음을 통해 사전 내보내기 `[server:port]/libs/cq/i18n/gui/translator.html`. 새로 추가된 필드의 사전을 업데이트하고 업로드합니다.
+
+
+## 추가 참조 {#see-also}
+
+{{see-also}}

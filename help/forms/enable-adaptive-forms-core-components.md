@@ -5,9 +5,9 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
 exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '1013'
 ht-degree: 86%
 
 ---
@@ -355,3 +355,7 @@ AEM Forms as a Cloud Service 환경에 맞게 적응형 양식 핵심 구성 요
    ![all/pom.xml에서 core-forms-components-af-core 아티팩트 찾기](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
 
    종속성이 있는 경우 내 환경에 맞는 적응형 양식 핵심 구성 요소가 활성화됩니다.
+
+>[!MORELIKETHIS]
+>
+>* [적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md)

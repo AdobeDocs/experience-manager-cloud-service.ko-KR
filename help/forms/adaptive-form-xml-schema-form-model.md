@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 6%
+source-wordcount: '959'
+ht-degree: 7%
 
 ---
 
@@ -298,3 +298,7 @@ A `bindRef` 적응형 양식 구성 요소와 스키마 요소 또는 속성 간
 **반복 가능한 하위 양식(minOccours 또는 maxOccurs 값이 1보다 큼)에 대해 하위 양식(복합 유형에서 생성된 구조)의 개별 요소를 드래그할 수 없는 이유는 무엇입니까?**
 
 반복 가능한 하위 양식에서는 전체 하위 양식을 사용해야 합니다. 선택 필드만 사용하려는 경우 전체 구조를 사용하고 원하지 않는 구조는 삭제하십시오.
+
+>[!MORELIKETHIS]
+>
+>* [적응형 양식에 대한 JSON 스키마 디자인](/help/forms/adaptive-form-json-schema-form-model.md)

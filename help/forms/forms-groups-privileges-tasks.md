@@ -2,7 +2,7 @@
 title: AEM Forms as a Cloud Service으로 제공되는 사용자 그룹은 무엇입니까?
 description: 즉시 사용 가능한 사용자 그룹 및 각 그룹에 할당된 권한 목록
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 24%
@@ -114,5 +114,10 @@ ht-degree: 24%
 * [독립 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md)
 * [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
+<!--
 
+>[!MORELIKETHIS]
+>
+>* [Use AEM Forms workflow for business process automation](/help/forms/aem-forms-workflow.md)
 
+-->

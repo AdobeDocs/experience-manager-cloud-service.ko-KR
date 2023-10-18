@@ -2,9 +2,9 @@
 title: AEM Forms용 통합 스토리지 커넥터를 구성하는 방법
 description: AEM Forms용 통합 스토리지 커넥터를 관리하는 방법을 알아봅니다. 통합 스토리지 커넥터를 사용하여 AEM Forms을 외부 데이터 스토리지에 연결합니다.
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Azure 스토리지 구성을 만들고 통합 스토리지 커넥터를 사용�
 
 다음 단계를 수행하여 [!DNL Azure] 스토리지 구성:
 
-1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure 스토리지]**.
+1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Azure 스토리지]**.
 1. 구성을 만들 폴더를 선택하고 을 누릅니다 **[!UICONTROL 만들기]**.
 1. 에서 구성의 제목을 지정합니다. **[!UICONTROL 제목]** 필드.
 1. 의 이름을 지정합니다. [!DNL Azure] 의 저장소 계정 **[!UICONTROL Azure 스토리지 계정]** 필드.
@@ -66,3 +66,10 @@ AEM Workflow용 통합 스토리지 커넥터를 구성하려면 다음 단계�
 * 워크플로 모델에서 사용자 지정 AEM 워크플로 단계를 사용하여 CRX DE 저장소에 데이터를 저장하지 마십시오.
 
 * 다음을 수행하는 경우 [외부 데이터 스토리지에 대한 AEM Workflow 모델 구성](#configure-workflow-external-data-storage)AEM 받은 편지함의 작업 항목이 외부 스토리지로 표시된 워크플로에 속하는 경우 사용자 지정 열의 값을 가져오지 않으므로 AEM 받은 편지함에 대한 사용자 지정 열을 만들지 마십시오.
+
+>[!MORELIKETHIS]
+>
+>* [AEM Forms에 대한 데이터 소스 구성](/help/forms/configure-data-sources.md)
+>* [AEM Forms용 Azure 스토리지 구성](/help/forms/configure-azure-storage.md)
+>* [Microsoft Dynamics 365 및 Salesforce를 적응형 Forms과 통합](/help/forms/configure-msdynamics-salesforce.md)
+>  [AEM Sites 페이지에 Forms 포털 추가](/help/forms/configure-forms-portal.md)

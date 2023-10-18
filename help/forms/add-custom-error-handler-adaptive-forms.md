@@ -8,16 +8,16 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
 workflow-type: tm+mt
-source-wordcount: '2470'
+source-wordcount: '2462'
 ht-degree: 91%
 
 ---
 
 # AEM Adaptive Forms에서 사용자 지정 오류 핸들러 추가 {#error-handlers-in-adaptive-form}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -405,9 +405,12 @@ Using this custom error handler, the adaptive form converts the fields listed in
  -->
 
 
-## 참고 항목 {#see-also}
+## 추가 참조 {#see-also}
 
-* [적응형 Forms(핵심 구성 요소)에서 사용자 지정 오류 핸들러 만들기 및 사용](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
-* [적응형 양식 기반의 독립 실행형 코어 구성 요소 만들기](/help/forms/creating-adaptive-form-core-components.md)
-* [양식에 맞는 스타일 또는 테마 만들기](/help/forms/using-themes-in-core-components.md)
-* [적응형 양식을 만들거나 AEM Sites 페이지에 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+{{see-also}}
+
+>[!MORELIKETHIS]
+>
+>* [적응형 Forms(핵심 구성 요소)에서 사용자 지정 오류 핸들러 만들기 및 사용](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
+>* [양식에 맞는 스타일 또는 테마 만들기](/help/forms/using-themes-in-core-components.md)
+>* [적응형 양식을 만들거나 AEM Sites 페이지에 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)

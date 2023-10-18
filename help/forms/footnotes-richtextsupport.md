@@ -2,16 +2,16 @@
 title: 적응형 양식에 각주를 추가하는 방법
 description: 적응형 양식의 각주에 대해 리치 텍스트 편집기(RTE)를 사용하십시오.
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 12%
+source-wordcount: '443'
+ht-degree: 13%
 
 ---
 
 # 각주 구성 요소 {#footnotecomponent}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 **[!UICONTROL 각주]** 는 페이지 끝에 표시되는 정보 또는 참고의 추가 비트입니다. [!UICONTROL 각주] 는 숫자로 텍스트에 표시된 메모를 위 첨자로 구성합니다.
 
@@ -55,3 +55,8 @@ ht-degree: 12%
 1. 속성을 저장합니다.
 
 런타임 시 숫자는 텍스트에 위 첨자로 나타나고 해당 설명은 **[!UICONTROL 각주]** 다음의 위치에 있는 구성 요소 [!UICONTROL 각주 플레이스홀더] 은 적응형 양식에 배치됩니다. 에서 해당 번호를 클릭하여 각주 설명으로 직접 이동할 수 있습니다. [!UICONTROL 각주].
+
+
+## 추가 참조 {#see-also}
+
+{{see-also}}

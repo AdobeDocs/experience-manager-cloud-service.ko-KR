@@ -1,9 +1,9 @@
 ---
 title: 에셋을 가져오고 내보내는 방법 [!DNL AEM Forms]?
 description: 적응형 양식과 함께 DocuSign을 사용하여 전자 서명을 수집하는 방법에 대해 알아봅니다.
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1325'
 ht-degree: 1%
 
 ---
@@ -242,3 +242,8 @@ The side panel also lets you save your search settings with names of your choice
 For more information and instructions on using search, filters, saved search, and side panel, see [Search](/help/sites-authoring/search.md).
 
 -->
+
+>[!MORELIKETHIS]
+>
+>* [내보내기 양식 템플릿 가져오기](/help/forms/import-export-forms-templates.md)
+>* [적응형 양식 핵심 구성 요소에서 테마 사용](/help/forms/using-themes-in-core-components.md)

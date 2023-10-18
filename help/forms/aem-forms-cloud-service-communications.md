@@ -2,10 +2,10 @@
 title: Forms as a Cloud Service을 사용하여 데이터를 XDP 및 PDF 템플릿과 병합하거나 PCL, ZPL 및 PostScript 형식으로 출력을 생성하는 방법
 description: XDP 및 PDF 템플릿과 데이터 자동 병합 또는 PCL, ZPL 및 PostScript 형식으로 출력 생성
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 7%
+source-wordcount: '731'
+ht-degree: 6%
 
 ---
 
@@ -142,3 +142,10 @@ While it is possible to do the entire JWT generation and exchange process in cus
 >[!NOTE]
 >
 >Forms-users 그룹의 멤버만 통신 API에 액세스할 수 있습니다.
+
+>[!MORELIKETHIS]
+>
+>* [AEM Forms as a Cloud Service 커뮤니케이션 소개](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [적응형 Forms 및 통신 API를 위한 AEM Forms as a Cloud Service 아키텍처](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [통신 처리 - 동기 API](/help/forms/aem-forms-cloud-service-communications.md)
+>* [통신 처리 - 일괄 처리 API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

@@ -3,9 +3,9 @@ title: 기록 문서 템플릿을 만들기 위해 Forms Designer를 다운로�
 description: 기록 문서의 템플릿 역할을 하는 XDP 및 PDF 양식 템플릿을 만들려면 Forms Designer를 사용하십시오.
 keywords: Designer 설치, Forms designer 설치, Forms Designer 설치를 위한 요구 사항
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '410'
 ht-degree: 9%
 
 ---
@@ -74,3 +74,8 @@ Designer를 설치하려면 다음 단계를 수행하십시오.
 * [사용자 정의 글꼴 사용](/help/forms/use-custom-fonts.md)
 * [적응형 양식 기반의 독립 실행형 코어 구성 요소 만들기](/help/forms/creating-adaptive-form-core-components.md)
 * [적응형 양식을 만들거나 AEM Sites 페이지에 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
+
+>[!MORELIKETHIS]
+>
+>* [Forms Designer를 사용하여 기록 문서(DoR) 템플릿 및 양식 조각 만들기](/help/forms/use-forms-designer.md)

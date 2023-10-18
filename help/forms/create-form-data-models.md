@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
-source-wordcount: '1544'
-ht-degree: 1%
+source-wordcount: '1548'
+ht-degree: 2%
 
 ---
 
@@ -139,3 +139,8 @@ PID로 OSGi 출하 시 구성 파일 생성 `org.apache.sling.caconfig.impl.over
 이제 데이터 소스가 추가된 양식 데이터 모델이 있습니다. 그런 다음 양식 데이터 모델을 편집하여 데이터 모델 개체 및 서비스를 추가 및 구성하고, 데이터 모델 개체 간의 연결을 추가하고, 속성을 편집하고, 사용자 지정 데이터 모델 개체 및 속성을 추가하고, 샘플 데이터를 생성하는 등의 작업을 수행할 수 있습니다.
 
 자세한 내용은 [양식 데이터 모델 작업](work-with-form-data-model.md).
+
+
+>[!MORELIKETHIS]
+>
+>* [양식 데이터 모델 사용](/help/forms/using-form-data-model.md)

@@ -7,13 +7,13 @@ keywords: 사용자 정의 오류 핸들러 추가, 기본 오류 핸들러 추�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: a589005551dd7d8cdf8ac004725341905f0e99d1
+exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '2408'
+source-wordcount: '2410'
 ht-degree: 99%
 
 ---
-
 
 # 핵심 구성 요소를 기반으로 하는 적응형 양식에 대한 오류 처리기 {#error-handlers-in-adaptive-form}
 
@@ -410,3 +410,8 @@ Using this custom error handler, the adaptive form converts the fields listed in
 * [적응형 양식 기반의 독립 실행형 코어 구성 요소 만들기](/help/forms/creating-adaptive-form-core-components.md)
 * [양식에 맞는 스타일 또는 테마 만들기](/help/forms/using-themes-in-core-components.md)
 * [적응형 양식을 만들거나 AEM Sites 페이지에 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
+## 추가 참조 {#see-also}
+
+{{see-also}}
+

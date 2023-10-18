@@ -2,16 +2,16 @@
 title: AEM Forms에 대한 메타데이터를 관리하려면 어떻게 해야 합니까?
 description: 메타데이터를 사용하면 에셋을 보다 쉽게 분류하고 구성할 수 있으며 특정 에셋을 찾는 사용자에게 도움이 됩니다.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1741'
+source-wordcount: '1743'
 ht-degree: 6%
 
 ---
 
 # 적응형 양식의 메타데이터 추가, 제거 또는 편집 {#manage-form-metadata}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 
 | 버전 | 문서 링크 |
@@ -307,3 +307,8 @@ ht-degree: 6%
    사용자 지정 메타데이터 속성을 추가했습니다.
 
 의 모든 적응형 Forms [!DNL AEM Forms] 이제 이 추가 메타데이터 속성을 포함합니다. 속성 페이지에서 편집할 수 있습니다.
+
+
+## 추가 참조 {#see-also}
+
+{{see-also}}

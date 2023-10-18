@@ -4,10 +4,10 @@ description: 적응형 양식을 만들거나 AEM Sites 페이지에 추가하�
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: a1b63508ed7040c719778bd1c422728bc0e2e4f2
+source-git-commit: 7b797524d0df764c497baa6e4ffd0b3cabd368ca
 workflow-type: tm+mt
-source-wordcount: '3229'
-ht-degree: 21%
+source-wordcount: '3221'
+ht-degree: 20%
 
 ---
 
@@ -262,6 +262,7 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
 * [다양한 화면 크기 및 장치 유형에 대한 양식 레이아웃 설정](/help/sites-cloud/authoring/features/responsive-layout.md)
 
 
-## 관련 문서 {#related-article}
+## 추가 참조 {#see-also}
 
-* [적응형 양식 기반의 독립 실행형 코어 구성 요소 만들기](/help/forms/creating-adaptive-form-core-components.md)
+{{see-also}}
+
