@@ -3,13 +3,13 @@ title: AEM Sites 페이지에 적응형 양식을 추가하는 방법
 description: 적응형 양식을 만들거나 AEM Sites 페이지에 추가하는 방법을 알아봅니다. 또한 웹 사이트에 양식을 통합하는 이점 및 다양한 방법에 대해 알아봅니다.
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: bb2ee07f8750c15959ecdaa65f0932b05edfcd39
+exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
+source-git-commit: a1b63508ed7040c719778bd1c422728bc0e2e4f2
 workflow-type: tm+mt
 source-wordcount: '3229'
-ht-degree: 19%
+ht-degree: 21%
 
 ---
-
 
 # AEM Sites 페이지 또는 경험 조각에 적응형 양식 추가 {#create-or-add-an-adaptive-form-to-aem-sites-page}
 
@@ -71,7 +71,7 @@ AEM Forms Cloud Service은 적응형 양식 컨테이너 및 적응형 Forms - �
 
 적응형 양식 만들기를 시작하기 전에 적응형 Forms 핵심 구성 요소를 활성화하고 적응형 Forms 클라이언트 라이브러리를 AEM Sites 페이지에 추가합니다.
 
-+++  AEM Cloud Service 환경을 위한 적응형 Forms 핵심 구성 요소 활성화
++++  AEM Cloud Service 환경에 맞는 적응형 양식 핵심 구성 요소를 활성화합니다
 
 [AEM Forms as a Cloud Service 환경에 맞는 적응형 양식 핵심 구성 요소가 활성화되어 있는지](enable-adaptive-forms-core-components.md) 확인합니다.
 
@@ -195,7 +195,7 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
 
 ## AEM Sites 페이지 또는 경험 조각에서 양식에 대한 제출 액션 구성 {#configure-submit-action-for-form}
 
-제출 액션을 사용하면 적응형 양식을 통해 캡처된 데이터 대상을 선택할 수 있습니다. 사용자가 적응형 양식에서 제출 버튼을 클릭하면 제출 액션이 트리거됩니다. 적응형 양식에는 즉시 사용 가능한 제출 액션이 포함됩니다. 기본 제출 액션을 확장하여 자신만의 사용자 지정 제출 액션을 만들 수도 있습니다. 양식에 대해 제출 액션을 구성하려면 다음 작업을 수행하십시오.
+제출 액션을 사용하면 적응형 양식을 통해 캡처되는 데이터의 대상을 선택할 수 있습니다. 사용자가 적응형 양식에서 제출 버튼을 클릭하면 제출 액션이 트리거됩니다. 적응형 양식에는 즉시 사용 가능한 제출 액션이 포함됩니다. 기본 제출 액션을 확장하여 자신만의 사용자 지정 제출 액션을 만들 수도 있습니다. 양식에 대해 제출 액션을 구성하려면 다음 작업을 수행하십시오.
 
 1. 적응형 양식이 포함된 AEM 페이지 편집기 또는 경험 조각을 엽니다.
 1. 콘텐츠 트리를 열고 다음을 선택합니다. **[!UICONTROL 적응형 Forms 컨테이너]** 적응형 양식을 호스팅합니다. AEM Sites 페이지는 여러 적응형 Forms을 호스팅할 수 있습니다. 따라서 올바른 적응형 Forms 컨테이너를 신중하게 선택하십시오.
@@ -257,11 +257,11 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
 
 ## 다음 보기
 
-* [양식의 스타일 또는 테마 만들기](using-themes-in-core-components.md)
+* [양식에 맞는 스타일 또는 테마 만들기](using-themes-in-core-components.md)
 * [규칙 편집기를 사용하여 양식에 동적 동작 추가](rule-editor.md)
 * [다양한 화면 크기 및 장치 유형에 대한 양식 레이아웃 설정](/help/sites-cloud/authoring/features/responsive-layout.md)
 
 
 ## 관련 문서 {#related-article}
 
-* [적응형 양식 기반의 독립형 핵심 구성 요소 만들기](/help/forms/creating-adaptive-form-core-components.md)
+* [적응형 양식 기반의 독립 실행형 코어 구성 요소 만들기](/help/forms/creating-adaptive-form-core-components.md)
