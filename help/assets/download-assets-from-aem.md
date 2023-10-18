@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 3a14f3b6f75f6021a7843a5a8a3439d6ea7f886d
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1387'
 ht-degree: 5%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=en) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
 정적 및 동적 변환을 포함한 에셋을 다운로드할 수 있습니다. 또는 에셋에 대한 링크가 포함된 이메일을 바로 보낼 수 있습니다. [!DNL Adobe Experience Manager Assets]. 다운로드한 에셋은 ZIP 파일에 번들로 제공됩니다. <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
@@ -80,7 +80,7 @@ Experience Manager은 에셋 수량 및 크기를 기반으로 다운로드 경�
    | 다운로드 옵션 | 설명 |
    |---|---|
    | **[!UICONTROL 각 자산에 대해 별도의 폴더 만들기]** | 에셋에 대해 다운로드한 모든 렌디션이 포함된 각 에셋에 대한 폴더를 생성하려면 이 옵션을 선택합니다. 선택하지 않으면 각 에셋(및 다운로드를 위해 선택한 경우 렌디션)이 생성된 아카이브의 상위 폴더에 포함됩니다. |
-   | **[!UICONTROL 이메일]** | 다른 사용자에게 이메일 알림(다운로드에 대한 링크 포함)을 보내려면 이 옵션을 선택합니다. 수신자 사용자는 의 멤버여야 합니다 `dam-users` 그룹입니다. 표준 이메일 템플릿은 다음 위치에서 사용할 수 있습니다.<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> 배포 중 사용자 정의하는 템플릿은 다음 위치에서 사용할 수 있습니다. <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>다음 위치에 테넌트별 사용자 지정 템플릿을 저장할 수 있습니다.<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
+   | **[!UICONTROL 이메일]** | 다른 사용자에게 이메일 알림(다운로드에 대한 링크 포함)을 보내려면 이 옵션을 선택합니다. 수신자 사용자는 의 멤버여야 합니다 `dam-users` 그룹입니다. 표준 이메일 템플릿은 다음 위치에서 사용할 수 있습니다.<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> 배포 중 사용자 정의하는 템플릿은 다음 위치에서 사용할 수 있습니다. <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul>다음 위치에 테넌트별 사용자 지정 템플릿을 저장할 수 있습니다.<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> |
    | **[!UICONTROL 자산]** | 자산을 원래 양식으로 다운로드하려면 이 옵션을 선택합니다.<br>하위 에셋 옵션은 원래 에셋에 하위 에셋이 있는 경우 사용할 수 있습니다. |
    | **[!UICONTROL 렌디션]** | 렌디션은 에셋의 바이너리 표현입니다. 에셋에는 업로드된 파일의 기본 표현이 있습니다. 그들은 얼마든지 표현을 할 수 있다. <br> 이 옵션을 사용하여 다운로드할 변환을 선택할 수 있습니다. 사용 가능한 렌디션은 선택한 에셋에 따라 다릅니다. |
    | **[!UICONTROL 스마트 자르기]** | 선택한 에셋의 모든 스마트 자르기 렌디션을 내에서 다운로드하려면 이 옵션을 선택합니다 [!DNL Experience Manager]. 스마트 자르기 렌디션이 포함된 zip 파일이 생성되고 로컬 컴퓨터에 다운로드됩니다. |
@@ -132,18 +132,27 @@ DAM에서 에셋을 다운로드할 수 있도록 하려면 Asset Share Commons 
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
+## OnTime/OffTime 표현물 {#on-off-time-rendition}
+
+활성화하려면 `OnOffTimeAssetAccessFilter` 서비스에서는 OSGi 구성을 생성해야 합니다. 이 서비스를 사용하면 설정/해제 시간 설정에 따라 에셋 자체 외에도 렌디션 및 메타데이터에 대한 액세스를 차단할 수 있습니다. OSGi 구성은 다음과 같아야 합니다. `com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter`. 아래 단계를 따르십시오.
+
+1. Git의 프로젝트 코드에서 다음 위치에 구성 파일을 만듭니다. `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. 파일에는 다음이 포함되어야 합니다. `{}` 해당 OSGi 구성 요소에 대한 빈 OSGi 구성을 의미합니다. 이 작업을 수행하면 서비스가 활성화됩니다.
+1. 다음을 통해 이 새 구성을 포함한 코드를 배포합니다. [!DNL Cloud Manager].
+1. 배포되면 에셋의 설정/해제 시간 설정에 따라 렌디션 및 메타데이터에 액세스할 수 있습니다. 현재 날짜 또는 시간이 설정 시간 이전이나 해제 시간 이후인 경우 오류 메시지가 표시됩니다.
+빈 OSGi 구성 추가에 대한 자세한 내용은 다음을 참조하십시오. [안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en).
+
 ## 팁 및 제한 사항 {#tips-limitations}
 
 * 빈 폴더를 다운로드하는 경우 [!DNL Experience Manager] 는 ZIP 아카이브 생성에 대한 성공 메시지를 전달하지만, 아카이브는 생성되지 않습니다.
 
 **추가 참조**
 
-* [에셋 번역](translate-assets.md)
+* [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [에셋이 지원되는 파일 형식](file-format-support.md)
-* [에셋 검색](search-assets.md)
-* [연결된 에셋](use-assets-across-connected-assets-instances.md)
-* [에셋 보고서](asset-reports.md)
+* [자산이 지원되는 파일 형식](file-format-support.md)
+* [자산 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [자산 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
