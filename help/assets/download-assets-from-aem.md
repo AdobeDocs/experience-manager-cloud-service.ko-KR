@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 3a14f3b6f75f6021a7843a5a8a3439d6ea7f886d
+source-git-commit: d25d433203b8ec6787dec87a9ec35092a247096e
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1388'
 ht-degree: 5%
 
 ---
@@ -132,7 +132,7 @@ DAM에서 에셋을 다운로드할 수 있도록 하려면 Asset Share Commons 
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
-## OnTime/OffTime 표현물 {#on-off-time-rendition}
+## OnTime 또는 OffTime 렌디션 {#on-off-time-rendition}
 
 활성화하려면 `OnOffTimeAssetAccessFilter` 서비스에서는 OSGi 구성을 생성해야 합니다. 이 서비스를 사용하면 설정/해제 시간 설정에 따라 에셋 자체 외에도 렌디션 및 메타데이터에 대한 액세스를 차단할 수 있습니다. OSGi 구성은 다음과 같아야 합니다. `com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter`. 아래 단계를 따르십시오.
 
