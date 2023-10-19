@@ -2,7 +2,7 @@
 title: WAF 규칙과 함께 트래픽 필터 규칙 구성
 description: 트래픽 필터링을 위해 WAF 규칙과 함께 트래픽 필터 규칙 사용
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 9345ec974c9fbd525b12b53d20d98809cd72cb04
+source-git-commit: 146b85093331fe26da891252c398fc24d4f7c0d6
 workflow-type: tm+mt
 source-wordcount: '3810'
 ht-degree: 71%
@@ -165,7 +165,7 @@ cdn.yaml 파일의 트래픽 필터 규칙 형식은 아래에서 설명합니�
 | reqProperty | `string` | 요청 속성입니다.<br><br>다음 중 하나입니다. `path`, `queryString`, `method`, `tier`, `domain`, `clientIp`, `clientCountry`<br><br>도메인 속성은 요청의 호스트 헤더를 소문자로 변환한 것입니다. 문자열을 비교할 때 유용합니다. 즉, 대소문자 구분으로 인해 일치 항목이 누락되는 일이 없습니다.<br><br>`clientCountry`는 [https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol)에 표시된 두 개의 문자 코드를 사용합니다. |
 | reqHeader | `string` | 지정된 이름의 요청 헤더를 반환합니다. |
 | queryParam | `string` | 지정된 이름의 쿼리 매개변수를 반환합니다. |
-| cookie | `string` | 지정된 이름의 쿠키를 반환합니다. |
+| reqCookie | `string` | 지정된 이름의 쿠키를 반환합니다. |
 
 **조건자**
 
