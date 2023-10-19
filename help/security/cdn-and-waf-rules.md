@@ -2,10 +2,10 @@
 title: WAF 규칙과 함께 트래픽 필터 규칙 구성
 description: 트래픽 필터링을 위해 WAF 규칙과 함께 트래픽 필터 규칙 사용
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 550ef9a969dc184fccbfd3b79716744cd80ce463
+source-git-commit: 218bf89a21f6b5e7f2027a88c488838b3e72b80e
 workflow-type: tm+mt
-source-wordcount: '3826'
-ht-degree: 70%
+source-wordcount: '3810'
+ht-degree: 71%
 
 ---
 
@@ -532,7 +532,7 @@ data:
 
 Adobe은 Cloud Manager를 통해 다운로드한 CDN 로그를 수집하기 위해 컴퓨터에 대시보드 도구를 다운로드하는 메커니즘을 제공합니다. 이 도구를 사용하면 트래픽을 분석하여 WAF 규칙을 포함하여 선언할 적절한 트래픽 필터 규칙을 마련할 수 있습니다. 이 섹션에서는 먼저 개발 환경의 대시보드 도구에 익숙해지도록 한 다음 해당 지식을 활용하여 프로덕션 환경에서 규칙을 만드는 방법에 대한 지침을 제공합니다.
 
-트래픽 필터 규칙 얼리어답터 고객은 Docker 컨테이너를 로드하고 CDN 로그를 수집하는 방법을 설명하는 추가 정보 파일이 포함된 대시보드 도구 모음을 요청해야 합니다.
+대시보드 도구는 다음에서 직접 복제할 수 있습니다. [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Github 리포지토리.
 
 
 ### 대시보드 도구 이해하기 {#dashboard-getting-familiar}
