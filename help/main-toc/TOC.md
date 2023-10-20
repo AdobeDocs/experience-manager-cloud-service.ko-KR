@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2bb6c6b5846264145543134f607bd6520865b4ed
+source-git-commit: bb7bbe5e31d75a72b3c81939ce560e3ff3979a86
 workflow-type: tm+mt
-source-wordcount: '4330'
+source-wordcount: '4331'
 ht-degree: 99%
 
 ---
@@ -575,7 +575,7 @@ ht-degree: 99%
          + [핵심 구성 요소 기반의 적응형 양식을 외부 웹 페이지에 임베드](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [기초 구성 요소 기반 적응형 양식을 외부 웹 페이지에 임베드](/help/forms/embed-adaptive-form-external-web-page.md)
       + 양식 데이터 모델 {#use-form-data-model}
-         + [데이터 소스를 Cloud Service에 연결](/help/forms/data-integration.md)
+         + [데이터베이스 또는 데이터 소스에 AEM Forms 연결](/help/forms/data-integration.md)
          + [데이터 소스 구성](/help/forms/configure-data-sources.md)
          + [ [!DNL Microsoft Dynamics] OData 구성](/help/forms/ms-dynamics-odata-configuration.md)
          + [OAuth 2.0 클라이언트 자격 증명 흐름을 사용한 Salesforce 애플리케이션 통합](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
