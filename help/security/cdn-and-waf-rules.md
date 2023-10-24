@@ -2,10 +2,10 @@
 title: WAF 규칙과 함께 트래픽 필터 규칙 구성
 description: 트래픽 필터링을 위해 WAF 규칙과 함께 트래픽 필터 규칙 사용
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 218bf89a21f6b5e7f2027a88c488838b3e72b80e
+source-git-commit: 5231d152a67b72909ca5b38f0bbc40616ccd4739
 workflow-type: tm+mt
-source-wordcount: '3810'
-ht-degree: 71%
+source-wordcount: '3661'
+ht-degree: 69%
 
 ---
 
@@ -166,6 +166,7 @@ cdn.yaml 파일의 트래픽 필터 규칙 형식은 아래에서 설명합니�
 | reqHeader | `string` | 지정된 이름의 요청 헤더를 반환합니다. |
 | queryParam | `string` | 지정된 이름의 쿼리 매개변수를 반환합니다. |
 | reqCookie | `string` | 지정된 이름의 쿠키를 반환합니다. |
+| postParam | `string` | 본문에서 지정된 이름의 매개 변수를 반환합니다. 본문이 컨텐츠 유형인 경우에만 작동합니다. `application/x-www-form-urlencoded` |
 
 **조건자**
 
@@ -208,12 +209,9 @@ cdn.yaml 파일의 트래픽 필터 규칙 형식은 아래에서 설명합니�
 | TRAVERSAL | 디렉터리 순회 | 디렉터리 순회는 민감한 정보를 얻기 위해 시스템 전체에서 권한 있는 폴더를 탐색하려는 시도입니다. |
 | USERAGENT | 공격 툴링 | 공격 툴링은 자동화된 소프트웨어를 사용하여 보안 취약성을 식별하거나 발견된 취약성을 악용하려고 시도하는 것입니다. |
 | LOG4J-JNDI | Log4J JNDI | Log4J JNDI 공격은 2.16.0 이전 Log4J 버전에 있는 [Log4Shell 취약점](https://en.wikipedia.org/wiki/Log4Shell)을 활용하려고 시도합니다. |
-| AWS SSRF | AWS-SSRF | SSRF(Server Side Request Forgery)는 웹 애플리케이션이 만든 요청을 대상 내부 시스템으로 전송하려고 시도하는 요청입니다. AWS SSRF 공격은 SSRF를 사용하여 AWS(Amazon Web Services) 키를 얻고 S3 버킷과 해당 데이터에 대한 액세스 권한을 얻습니다. |
 | BHH | 잘못된 홉 헤더 | 잘못된 홉 헤더는 잘못된 형식의 TE(Transfer-Encoding) 또는 CL(Content-Length) 헤더나 올바른 형식의 TE 및 CL 헤더를 통한 HTTP 스머글링 시도를 나타냅니다. |
 | ABNORMALPATH | 비정상 경로 | 비정상 경로는 원래 경로가 정규화된 경로와 다름을 나타냅니다(예: `/foo/./bar`는 `/foo/bar`로 정규화됨). |
-| COMPRESSED | 압축 감지 | POST 요청 본문이 압축되어 검사할 수 없습니다. 예를 들어 “Content-Encoding: gzip” 요청 헤더가 지정되고 POST 본문이 일반 텍스트가 아닌 경우입니다. |
 | DOUBLEENCODING | 이중 인코딩 | 이중 인코딩은 html 문자를 이중 인코딩하는 회피 기술을 확인합니다. |
-| FORCEFULBROWSING | 강제 탐색 | 강제 탐색은 관리자 페이지에 액세스를 시도했지만 실패한 경우입니다. |
 | NOTUTF8 | 잘못된 인코딩 | 잘못된 인코딩으로 인해 서버가 요청의 악성 문자를 응답으로 변환하여 서비스 거부 또는 XSS가 발생할 수 있습니다. |
 | JSON-ERROR | JSON 인코딩 오류 | “Content-Type” 요청 헤더 내에 JSON을 포함하도록 지정되었지만 JSON 구문 분석 오류가 포함된 POST, PUT 또는 PATCH 요청 본문입니다. 흔히 프로그래밍 오류나 자동화된 요청 또는 악성 요청과 관련이 있습니다. |
 | MALFORMED-DATA | 요청 본문의 형식이 잘못된 데이터 | “Content-Type” 요청 헤더에 따라 형식이 잘못된 POST, PUT 또는 PATCH 요청 본문입니다. 예를 들어 “Content-Type: application/x-www-form-urlencoded” 요청 헤더가 지정되고 json인 POST 본문을 포함하는 경우입니다. 흔히 프로그래밍 오류, 자동화된 요청 또는 악성 요청에 해당합니다. 에이전트 3.2 이상이 필요합니다. |
@@ -222,9 +220,7 @@ cdn.yaml 파일의 트래픽 필터 규칙 형식은 아래에서 설명합니�
 | NO-CONTENT-TYPE | 누락된 “Content-Type” 요청 헤더 | “Content-Type” 요청 헤더가 없는 POST, PUT 또는 PATCH 요청입니다. 이 경우 기본적으로 애플리케이션 서버는 “Content-Type: text/plain; charset=us-ascii”를 가정하게 됩니다. 자동화된 요청 및 악성 요청 중 대다수에서 “Content Type”이 누락되어 있을 수 있습니다. |
 | NOUA | 사용자 에이전트 없음 | 자동화된 요청 및 악성 요청 중 대다수가 가짜 사용자 에이전트 또는 누락된 사용자 에이전트를 사용하여 요청 주체인 디바이스 유형을 식별하기 어렵게 만듭니다. |
 | TORNODE | Tor 트래픽 | Tor는 사용자의 신원을 숨기는 소프트웨어입니다. Tor 트래픽 스파이크가 발생한다면 공격자가 자신의 위치를 숨기려고 시도하고 있음을 나타낼 수 있습니다. |
-| DATACENTER | 데이터센터 트래픽 | 데이터센터 트래픽은 식별된 호스팅 제공업체에서 발생하는 비유기적 트래픽입니다. 이러한 유형의 트래픽은 일반적으로 실제 최종 사용자와 연결되지 않습니다. |
 | NULLBYTE | Null 바이트 | Null 바이트는 일반적으로 요청에 표시되지 않으며, 요청이 잘못된 형식이고 잠재적으로 악성임을 나타냅니다. |
-| IMPOSTOR | 검색 봇 사칭자 | 검색 봇 사칭자는 Google 또는 Bing 검색 봇으로 위장했지만 실제로는 그렇지 않은 사람입니다. 응답 자체에 의존하지는 않지만 먼저 클라우드에서 해결해야 하므로 사전 규칙에서 사용해서는 안 됩니다. |
 | PRIVATEFILE | 비공개 파일 | 비공개 파일은 민감한 정보를 유출할 수 있는 Apache `.htaccess` 파일 또는 구성 파일 등으로서, 흔히 본질적으로 기밀입니다. |
 | SCANNER | 스캐너 | 널리 사용되는 스캔 서비스 및 도구를 식별합니다. |
 | RESPONSESPLIT | HTTP 응답 분할 | 헤더를 HTTP 응답에 삽입하기 위해 CRLF 문자가 애플리케이션에 대한 입력으로 제출되는 시점을 식별합니다. |
