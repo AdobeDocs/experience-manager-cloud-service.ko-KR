@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.7.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.7.0 릴리스 정보입니다.'
-source-git-commit: 1158508cc28d33e5799b3102381f227db05a0107
-workflow-type: ht
+exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
+source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
+workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 100%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2023.7.0 릴리스 정보 {#release-notes}
 
@@ -120,7 +120,7 @@ Experience Manager Assets는 이제 이미지 스마트 태그에 대해 향상�
 
 기능을 사용해 보고 피드백을 공유하고 싶으십니까? 공식 이메일 ID로 **aemcs-waf-adopter@adobe.com**&#x200B;에 이메일을 보내 얼리 어답터 프로그램에 대해 자세히 알아보십시오. 인원이 한정되어 있습니다.
 
-[여기](/help/security/cdn-and-waf-rules.md)에 있는 문서에서 기능에 대해 자세히 알아보십시오.
+[여기](/help/security/traffic-filter-rules-including-waf.md)에 있는 문서에서 기능에 대해 자세히 알아보십시오.
 
 ### 기타 Foundation 변경 사항 {#other-foundation-changes}
 

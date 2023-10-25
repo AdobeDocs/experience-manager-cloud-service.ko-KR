@@ -2,8 +2,8 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.8.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.8.0 릴리스 정보입니다.'
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
-workflow-type: ht
+source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
+workflow-type: tm+mt
 source-wordcount: '1686'
 ht-degree: 100%
 
@@ -156,7 +156,7 @@ Cloud Manager에서 CDN 로그를 다운로드합니다. 이는 캐시 적중률
 
 기능을 사용해 보고 피드백을 공유하고 싶으십니까? 공식 이메일 ID로 **aemcs-waf-adopter@adobe.com**&#x200B;에 이메일을 보내 얼리 어답터 프로그램에 대해 자세히 알아보십시오. 인원이 한정되어 있습니다.
 
-[여기](/help/security/cdn-and-waf-rules.md)에 있는 문서에서 기능에 대해 자세히 알아보십시오.
+[여기](/help/security/traffic-filter-rules-including-waf.md)에 있는 문서에서 기능에 대해 자세히 알아보십시오.
 
 
 ## 유지 관리 릴리스 정보 {#maintenance}

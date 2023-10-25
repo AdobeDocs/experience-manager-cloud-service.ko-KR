@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5e6d209729809952b2478fd0a71b32668ba41230
+source-git-commit: c9ad4b6f2ae5107569c556ca11c75868c9e4be63
 workflow-type: tm+mt
-source-wordcount: '4336'
+source-wordcount: '4335'
 ht-degree: 98%
 
 ---
@@ -168,7 +168,7 @@ ht-degree: 98%
    + [AEM as a Cloud Service에 대한 IMS 지원](/help/security/ims-support.md)
    + [AEM as a Cloud Service에 대한 Same Site 쿠키 지원](/help/security/same-site-cookie-support.md)
    + [메일 서비스에 대한 OAuth2 지원](/help/security/oauth2-support-for-mail-service.md)
-   + [트래픽 필터링을 위해 WAF 규칙과 함께 트래픽 필터 규칙 구성](/help/security/cdn-and-waf-rules.md)
+   + [WAF 규칙을 포함한 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service 보안 고려 사항](/help/security/security-considerations.md)
 + 온보딩 {#onboarding}
    + [여기에서 시작](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
@@ -578,7 +578,7 @@ ht-degree: 98%
          + [데이터베이스 또는 데이터 소스에 AEM Forms 연결](/help/forms/data-integration.md)
          + [데이터 소스 구성](/help/forms/configure-data-sources.md)
          + [ [!DNL Microsoft Dynamics] OData 구성](/help/forms/ms-dynamics-odata-configuration.md)
-         + [OAuth 2.0 클라이언트 자격 증명 흐름을 사용한 Salesforce 애플리케이션 통합](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+         + [OAuth 2.0 클라이언트 자격 증명 플로우를 사용하여 적응형 양식을 Salesforce 애플리케이션에 연결](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
          + [ [!DNL Azure] 스토리지 구성](/help/forms/configure-azure-storage.md)
          + [ [!DNL Microsoft Dynamics 365] 및 [!DNL Salesforce] Cloud Service 구성](/help/forms/configure-msdynamics-salesforce.md)
          + [양식 데이터 모델 만들기](/help/forms/create-form-data-models.md)

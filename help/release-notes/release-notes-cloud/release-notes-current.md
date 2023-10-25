@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ab0fc832eb66bcf9a0fcd4f08b481845f3664e14
+source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 98%
@@ -126,7 +126,7 @@ Edge Delivery는 고객 상호 작용 시점에서 측정 가능한 비즈니스
 
 기능을 사용해 보고 피드백을 공유하고 싶으십니까? 공식 이메일 ID로 **aemcs-waf-adopter@adobe.com**&#x200B;에 이메일을 보내 얼리 어답터 프로그램에 대해 자세히 알아보십시오. 인원이 한정되어 있습니다.
 
-[여기](/help/security/cdn-and-waf-rules.md)에 있는 문서에서 기능에 대해 자세히 알아보십시오.
+[여기](/help/security/traffic-filter-rules-including-waf.md)에 있는 문서에서 기능에 대해 자세히 알아보십시오.
 
 ## Cloud Manager {#cloud-manager}
 
