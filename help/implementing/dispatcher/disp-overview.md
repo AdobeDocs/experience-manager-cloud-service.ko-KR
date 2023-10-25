@@ -4,7 +4,7 @@ description: Dispatcher 도구, 지원되는 Apache 모듈, 레거시 및 유연
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '993'
 ht-degree: 100%
 

@@ -59,9 +59,9 @@ AEM as a Cloud Service 개발자 환경 디버깅은 개발자 콘솔에서 개�
 >id="aemcloud_golive_support"
 >title="도움말 및 지원"
 >abstract="자세한 설명이 필요하거나 문제를 해결하려면 Adobe의 AEM 지원 팀에 문의하십시오."
->additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud 지원"
+>additional-url="https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud 지원"
 
-Cloud Service 액세스에 대한 질문이 있는 경우 Adobe 담당자에게 문의하거나 [Experience Cloud 지원](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) 을 참조하십시오.
+Cloud Service 액세스에 대한 질문이 있는 경우 Adobe 담당자에게 문의하거나 [Experience Cloud 지원](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html) 을 참조하십시오.
 
 ## 문서 학습 {#document-learnings}
 

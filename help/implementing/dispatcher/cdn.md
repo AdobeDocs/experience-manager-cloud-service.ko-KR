@@ -6,7 +6,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
 workflow-type: tm+mt
 source-wordcount: '1033'
-ht-degree: 24%
+ht-degree: 25%
 
 ---
 
@@ -57,7 +57,7 @@ AEM 관리 CDN은 대부분의 고객 성능 및 보안 요구 사항을 충족�
 
 구성 지침:
 
-1. CDN을 Adobe CDN의 인그레스를 원본 도메인으로 지정합니다. (예: `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`)
+1. CDN을 Adobe CDN의 인그레스를 원본 도메인으로 지정합니다. 예: `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`
 1. SNI를 Adobe CDN의 인그레스로 설정합니다.
 1. 호스트 헤더를 원본 도메인으로 설정합니다. 예: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. 설정 `X-Forwarded-Host` AEM에서 호스트 헤더를 확인할 수 있도록 도메인 이름이 포함된 헤더입니다. 예: `X-Forwarded-Host:example.com`.
@@ -131,7 +131,7 @@ AEM 관리 CDN은 다음을 사용하여 각 요청에 헤더를 추가합니다
 >
 >고객 관리 CDN이 있는 경우 이러한 헤더는 실제 클라이언트가 아닌 고객 CDN 프록시 서버의 위치를 반영합니다. 따라서 고객 관리 CDN의 경우 지리적 위치 헤더는 고객 CDN에서 관리해야 합니다.
 
-국가 코드의 값은 설명된 알파-2 코드입니다 [여기](https://en.wikipedia.org/wiki/ISO_3166-1).
+국가 코드의 값은 설명된 Alpha-2 코드입니다 [여기](https://en.wikipedia.org/wiki/ISO_3166-1).
 
 대륙 코드의 값은 다음과 같습니다.
 

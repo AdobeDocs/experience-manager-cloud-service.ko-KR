@@ -46,6 +46,6 @@ AEM as a Cloud Service 지원:
 
 ## 오프사이트 백업 {#offsite-backup}
 
-일반 백업은 AEM Cloud Services 내에서 실수로 삭제하거나 기술적 오류가 발생할 수 있는 위험을 다루지만, 지역 오류로 인해 발생할 수 있는 위험도 다루어야 합니다. 가용성과 더불어 이러한 데이터 지역 중단의 가장 큰 위험은 주로 데이터 손실입니다.
+일반 백업은 AEM Cloud Service 내에서 실수로 삭제하거나 기술적 오류가 발생할 수 있는 위험을 다루지만, 영역의 오류로 인해 발생할 수 있는 위험도 다루어야 합니다. 가용성과 더불어 이러한 데이터 지역 중단의 가장 큰 위험은 주로 데이터 손실입니다.
 AEM as a Cloud Service은 모든 AEM 프로덕션 환경에 대해 이 위험을 표준으로 다룹니다. 전체 AEM 컨텐츠를 원격 리전에 지속적으로 복제하여 3개월 동안 복구할 수 있도록 합니다. Adobe은 이 기능을 오프사이트 백업이라고 부릅니다.
-스테이지 및 프로덕션 환경에 대한 AEM Cloud Services 복원은 데이터 지역이 중단되는 경우 AEM Service Reliability Engineering에서 수행됩니다.
+데이터 영역이 중단되는 경우 AEM Service Reliability Engineering에서 스테이지 및 프로덕션 환경에 대한 AEM Cloud Service 복원을 수행합니다.

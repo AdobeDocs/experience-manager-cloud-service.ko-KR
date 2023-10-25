@@ -2,7 +2,7 @@
 title: 역할 및 책임
 description: 역할 및 책임
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 100%
 

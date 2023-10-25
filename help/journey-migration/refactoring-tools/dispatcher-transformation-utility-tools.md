@@ -35,7 +35,7 @@ Dispatcher는 Adobe Experience Manager의 캐싱, 또는 로드 밸런싱 또는
 
 ## AEM Dispatcher 변환기 {#aem-dispatcher-converter}
 
-AEM Dispatcher Converter 는 기존 온-프레미스 또는 Adobe Managed Services Dispatcher 구성을 AEM as a Cloud Service 호환 Dispatcher 구성으로 리팩터링하는 기능을 제공합니다.
+AEM Dispatcher Converter 는 기존 온-프레미스 또는 Adobe Managed Services AEM Dispatcher 구성을 as a Cloud Service 호환 Dispatcher 구성으로 리팩터링하는 기능을 제공합니다.
 
 ## AEM Dispatcher 변환기 사용 {#using-dispatcher-converter}
 

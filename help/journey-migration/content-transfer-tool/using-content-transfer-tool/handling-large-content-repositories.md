@@ -84,7 +84,7 @@ Azure 포털의 기존 컨테이너 속성 페이지에서 **크기 계산** 컨
   `du -sh [path to datastore on the instance]`을 따르지 않는 경우입니다. 예를 들어 데이터 저장소가에 있는 경우 `/mnt/author/crx-quickstart/repository/datastore`, 다음 명령은 해당 크기를 가져옵니다. `du -sh /mnt/author/crx-quickstart/repository/datastore`.
 
 * Windows의 경우 데이터 저장소 디렉토리에서 dir 명령을 사용하여 해당 크기를 가져옵니다.
-  `dir /a/s [location of datastore]`.
+  `dir /a/s [location of datastore]`
 
 ### 1. AzCopy 설치 {#install-azcopy}
 

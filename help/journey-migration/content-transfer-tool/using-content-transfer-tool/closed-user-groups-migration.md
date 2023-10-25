@@ -3,7 +3,8 @@ title: 폐쇄형 사용자 그룹 마이그레이션
 description: 콘텐츠를 Adobe Experience Manager as a Cloud Service으로 마이그레이션한 후 폐쇄된 사용자 그룹을 활성화하는 데 필요한 특수 고려 사항에 대해 알아봅니다.
 hide: true
 hidefromtoc: true
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
+source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 9%
@@ -46,4 +47,3 @@ ht-degree: 9%
    - 그렇지 않은 경우 패키지를 사용하여 대상 인스턴스에 설치하고(또는 해당 인스턴스에서 수동으로 만들기) 대상 인스턴스 및 해당 멤버를 활성화합니다. 그런 다음 Publish에 있는지 확인합니다.
 1. 예를 들어 페이지를 먼저 편집하여 게시되도록 CUG 정책과 연관된 모든 페이지를 다시 게시합니다. 모두 다시 게시하는 것이 중요합니다.
    - 모든 페이지가 다시 게시되면 CUG로 보호된 각 페이지에 대한 기능을 확인합니다.
-

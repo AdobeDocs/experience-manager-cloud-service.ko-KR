@@ -5,7 +5,7 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: 13c67c35238c5138120f6d0d4845c759221d65ad
 workflow-type: tm+mt
 source-wordcount: '2015'
-ht-degree: 91%
+ht-degree: 93%
 
 ---
 
@@ -201,7 +201,7 @@ AEM as a Cloud Service를 위한 새로운 아키텍처에서는 이전 세대�
 
 ## Edge Delivery Services이 있는 AEM {#aem-with-edge-delivery-services}
 
-Edge Delivery Services의 추가로 AEM은 참여 및 전환을 유도하는 탁월한 경험을 제공합니다. AEM은 작성 및 개발이 빠른 임팩트 높은 경험을 제공함으로써 이러한 작업을 수행합니다. Edge Delivery Services은 작성자가 빠르게 업데이트하고 게시할 수 있는 신속한 개발 환경을 가능하게 하는 컴포저블 서비스 세트이며 새로운 사이트가 빠르게 시작됩니다. 따라서 Edge Delivery Services을 사용하면 전환을 개선하고 비용을 절감하며 컨텐츠 속도를 극대화할 수 있습니다.
+Edge Delivery Services의 추가로 AEM은 참여 및 전환을 유도하는 탁월한 경험을 제공합니다. 이를 위해 AEM은 빠르게 작성 및 개발할 수 있는 영향력이 큰 경험을 제공합니다. Edge Delivery Services은 작성자가 빠르게 업데이트하고 게시할 수 있는 신속한 개발 환경을 가능하게 하는 컴포저블 서비스 세트이며 새로운 사이트가 빠르게 시작됩니다. 그에 따라 Edge Delivery Services를 사용하여 전환을 개선하고, 비용을 절감하고, 최고의 콘텐츠 속도를 제공할 수 있습니다.
 
 업데이트된 아키텍처는 다음과 같이 구성됩니다.
 
@@ -211,7 +211,7 @@ Edge Delivery Services의 추가로 AEM은 참여 및 전환을 유도하는 탁
    * 페이지 편집기
    * SharePoint 또는 Google Drive에서 문서 기반 작성
 * 이제 다음을 포함한 경험 전달:
-   * Edge 게재 서비스
+   * Edge Delivery Services
 * 컨텐츠 및 코드의 빠르고 효율적인 전달을 위한 보조 서비스
 
 ![AEM as a Cloud Service 개요 - Edge Delivery Services](assets/AEMaaCS-Edge-Architecture.png "AEM as a Cloud Service 개요 - Edge Delivery Services")

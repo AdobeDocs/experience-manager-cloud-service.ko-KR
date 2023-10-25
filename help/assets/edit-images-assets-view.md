@@ -6,23 +6,23 @@ exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
 source-git-commit: 30b8c9b8eaee6292323dde4b436c29fe8290c910
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
 # [!DNL Assets view]에서 이미지 편집 {#edit-images}
 
-[!DNL Assets view] 는에서 제공하는 사용자 친화적인 편집 옵션을 제공합니다. [!DNL Adobe Express] 및 [!DNL Adobe Photoshop Express]. 를 사용하여 사용할 수 있는 편집 작업 [!DNL Adobe Express] 이미지 크기 조정, 배경 제거, 이미지 자르기 및 JPEG을 PNG로 변환 중에서 선택할 수 있습니다.
+[!DNL Assets view]는 [!DNL Adobe Express] 및 [!DNL Adobe Photoshop Express]에서 제공하는 사용자 친화적인 편집 옵션을 제공합니다. [!DNL Adobe Express]로 사용할 수 있는 편집 작업에는 이미지 크기 조정, 배경 제거, 이미지 자르기, JPEG를 PNG로 변환하기 등이 있습니다.
 
-이미지를 편집한 후 새 이미지를 새 버전으로 저장할 수 있습니다. 필요한 경우 버전 관리를 통해 나중에 원본 에셋으로 되돌릴 수 있습니다. 이미지를 편집하려면 [미리보기 열기](/help/assets/navigate-assets-view.md) 및 클릭 **[!UICONTROL 이미지 편집]**.
+이미지를 편집한 후 새 이미지를 새 버전으로 저장할 수 있습니다. 필요한 경우 버전 관리를 통해 나중에 원본 자산으로 되돌릴 수 있습니다. 이미지를 편집하려면 [미리보기를 열고](/help/assets/navigate-assets-view.md) **[!UICONTROL 이미지 편집]**&#x200B;을 클릭합니다.
 
 >[!NOTE]
 >
->다음을 사용하여 PNG 및 JPEG 파일 유형의 이미지를 편집할 수 있습니다. [!DNL Adobe Express].
+>[!DNL Adobe Express]을 사용하여 PNG 및 JPEG 파일 형식의 이미지를 편집할 수 있습니다.
 
 <!--The editing actions that are available are Spot healing, Crop and straighten, Resize image, and Adjust image.-->
 
-## Adobe Express을 사용하여 이미지 편집 {#edit-using-express}
+## Adobe Express를 사용하여 이미지 편집 {#edit-using-express}
 
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
@@ -31,47 +31,47 @@ ht-degree: 54%
 
 ### 이미지 크기 조정 {#resize-image-using-express}
 
-이미지 크기를 특정 크기로 조정하는 것이 일반적인 사용 사례입니다. [!DNL Assets view]를 사용하면 특정 사진 크기에 대해 미리 계산된 새로운 해상도를 제공하여 일반적인 사진 크기에 맞게 빠르게 이미지 크기를 조정할 수 있습니다. 을 사용하여 이미지 크기를 조정하려면 [!DNL Assets view]을(를) 클릭하고 아래 단계를 수행합니다.
+이미지 크기를 특정 크기로 조정하는 것이 일반적인 사용 사례입니다. [!DNL Assets view]를 사용하면 특정 사진 크기에 대해 미리 계산된 새로운 해상도를 제공하여 일반적인 사진 크기에 맞게 빠르게 이미지 크기를 조정할 수 있습니다. [!DNL Assets view]을 사용하여 이미지 크기를 조정하려면 아래 단계를 수행합니다.
 
-1. 이미지를 선택하고 **편집**.
-2. 클릭 **[!DNL Resize Image]** 왼쪽 창에서 사용할 수 있는 빠른 작업
-3. 에서 적절한 소셜 미디어 플랫폼을 선택합니다. **[!UICONTROL 크기 조정 대상]** 드롭다운 목록을 표시하고 표시되는 옵션에서 이미지 크기를 선택합니다.
-4. 필요한 경우 **[!UICONTROL 이미지 크기 조절]** 필드.
-5. 클릭 **[!DNL Apply]** 변경 사항을 적용합니다.
-   ![Adobe Express을 사용하여 이미지 편집](assets/adobe-express-resize-image.png)
+1. 이미지를 선택하고 **편집**&#x200B;을 클릭합니다.
+2. 왼쪽 창에서 사용할 수 있는 빠른 작업에서 **[!DNL Resize Image]**&#x200B;을 클릭합니다.
+3. 드롭다운 목록의 **[!UICONTROL 크기 조정]**&#x200B;에서 적절한 소셜 미디어 플랫폼을 선택하고 표시되는 옵션에서 이미지 크기 조정을 선택합니다.
+4. 필요한 경우 **[!UICONTROL 이미지 크기 조정]** 필드를 사용하여 이미지 크기를 조정합니다.
+5. **[!DNL Apply]**를 클릭하여 변경 내용을 적용합니다.
+   ![Adobe Express를 사용하여 이미지 편집](assets/adobe-express-resize-image.png)
 
-   편집한 이미지를 다운로드할 수 있습니다. 편집된 에셋을 동일한 에셋의 새 버전으로 저장하거나 새 에셋으로 저장할 수 있습니다.
-   ![Adobe Express으로 이미지 저장](assets/adobe-express-resize-save.png)
+   편집한 이미지를 다운로드할 수 있습니다. 편집한 자산을 동일한 자산의 새 버전으로 저장하거나 새 자산으로 저장할 수 있습니다.
+   ![Adobe Express로 이미지 저장](assets/adobe-express-resize-save.png)
 
 ### 배경 제거 {#remove-background-using-express}
 
-아래 설명된 대로 몇 가지 간단한 단계를 수행하여 이미지에서 배경을 제거할 수 있습니다.
+아래 설명된 몇 번의 간단한 단계를 통해 이미지에서 배경을 제거할 수 있습니다.
 
-1. 이미지를 선택하고 **편집**.
-2. 클릭 **[!DNL Remove Background]** 왼쪽 창에서 사용할 수 있는 빠른 작업 Experience Manager Assets은 배경 없이 이미지를 표시합니다.
-3. 클릭 **[!DNL Apply]** 변경 사항을 적용합니다.
-   ![Adobe Express으로 이미지 저장](assets/adobe-express-remove-background.png)
+1. 이미지를 선택하고 **편집**&#x200B;을 클릭합니다.
+2. 왼쪽 창에서 사용할 수 있는 빠른 작업에서 **[!DNL Remove Background]**&#x200B;을 클릭합니다. Experience Manager Assets에는 배경 없는 이미지가 표시됩니다.
+3. **[!DNL Apply]**를 클릭하여 변경 내용을 적용합니다.
+   ![Adobe Express로 이미지 저장](assets/adobe-express-remove-background.png)
 
-   편집한 이미지를 다운로드할 수 있습니다. 편집된 에셋을 동일한 에셋의 새 버전으로 저장하거나 새 에셋으로 저장할 수 있습니다.
+   편집한 이미지를 다운로드할 수 있습니다. 편집한 자산을 동일한 자산의 새 버전으로 저장하거나 새 자산으로 저장할 수 있습니다.
 
 ### 이미지 자르기 {#crop-image-using-express}
 
-임베디드 기능을 사용하여 이미지를 완벽한 크기로 손쉽게 변환할 수 있습니다. [!DNL Adobe Express] 빠른 작업.
+임베드된 [!DNL Adobe Express] 빠른 작업을 사용하여 이미지를 완벽한 크기로 쉽게 변환할 수 있습니다.
 
-1. 이미지를 선택하고 **편집**.
-2. 클릭 **[!DNL Crop Image]** 왼쪽 창에서 사용할 수 있는 빠른 작업
-3. 이미지의 모서리에 있는 핸들을 드래그하여 원하는 자르기를 만듭니다.
+1. 이미지를 선택하고 **편집**&#x200B;을 클릭합니다.
+2. 왼쪽 창에서 사용할 수 있는 빠른 작업에서 **[!DNL Crop Image]**&#x200B;을 클릭합니다.
+3. 이미지 모퉁이의 핸들을 드래그하여 원하는 자르기를 만듭니다.
 4. **[!DNL Apply]**를 클릭합니다.
-   ![Adobe Express으로 이미지 저장](assets/adobe-express-crop-image.png)
-자른 이미지를 다운로드할 수 있습니다. 편집된 에셋을 동일한 에셋의 새 버전으로 저장하거나 새 에셋으로 저장할 수 있습니다.
+   ![Adobe Express로 이미지 저장](assets/adobe-express-crop-image.png)
+잘린 이미지를 다운로드할 수 있습니다. 편집한 자산을 동일한 자산의 새 버전으로 저장하거나 새 자산으로 저장할 수 있습니다.
 
-### JPEG을 PNG로 변환 {#convert-jpeg-to-png-using-express}
+### JPEG를 PNG로 변환하기 {#convert-jpeg-to-png-using-express}
 
-Adobe Express을 사용하여 JPEG 이미지를 PNG 형식으로 빠르게 변환할 수 있습니다. 다음 단계를 실행합니다.
+Adobe Express를 사용하여 JPEG 이미지를 PNG 형식으로 빠르게 변환할 수 있습니다. 다음 단계를 실행합니다.
 
-1. 이미지를 선택하고 **편집**.
-2. 클릭 **[!DNL JPEG to PNG]** 왼쪽 창에서 사용할 수 있는 빠른 작업
-   ![Adobe Express을 사용하여 PNG로 변환](assets/adobe-express-convert-image.png)
+1. 이미지를 선택하고 **편집**&#x200B;을 클릭합니다.
+2. 왼쪽 창에서 사용할 수 있는 빠른 작업에서 **[!DNL JPEG to PNG]**을 클릭합니다.
+   ![Adobe Express를 사용하여 PNG로 변환](assets/adobe-express-convert-image.png)
 3. **[!UICONTROL 다운로드]**&#x200B;를 클릭합니다.
 
 ### 제한 사항 {#limitations-adobe-express}
@@ -80,7 +80,7 @@ Adobe Express을 사용하여 JPEG 이미지를 PNG 형식으로 빠르게 변�
 
 * 지원되는 최대 파일 크기: 17MB
 
-## 다음을 사용하여 이미지 편집 [!DNL Adobe Photoshop Express] {#edit-using-photoshop-express}
+## [!DNL Adobe Photoshop Express]를 사용하여 이미지 편집 {#edit-using-photoshop-express}
 
 <!--
 After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later, if needed. To edit an image, [open its preview](//help/navigate-assets-view.md#preview-assets) and click **[!UICONTROL Edit Image]** ![edit icon](assets/do-not-localize/edit-icon.png) from the rail on the right.
@@ -147,4 +147,4 @@ TBD: Insert a video of the available social media options.
 
 >[!MORELIKETHIS]
 >
->* [에셋의 버전 내역 보기](/help/assets/navigate-assets-view.md)
+>* [자산의 버전 내역 보기](/help/assets/navigate-assets-view.md)

@@ -5,7 +5,7 @@ exl-id: 33c889f5-c989-4772-9591-db62f50e5c80
 source-git-commit: d198b3f0c7d8469a376ba7a3e95e57c84f835dbb
 workflow-type: tm+mt
 source-wordcount: '793'
-ht-degree: 87%
+ht-degree: 89%
 
 ---
 
@@ -188,7 +188,7 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 
 ## 다음 단계 {#next-steps}
 
-* 다음을 사용하여 제품 피드백 제공 [!UICONTROL 피드백] 자산 보기 사용자 인터페이스에서 사용할 수 있는 옵션
+* Assets 보기 사용자 인터페이스에서 사용 가능한 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백 제공
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백 제공
 

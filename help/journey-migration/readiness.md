@@ -21,7 +21,7 @@ ht-degree: 6%
 
 ## 지금까지의 스토리 {#story-so-far}
 
-이전 문서, [AEM으로 이동 as a Cloud Service 시작하기](/help/journey-migration/getting-started.md)는 AEM으로 as a Cloud Service으로 마이그레이션할 수 있도록 거쳐야 하는 단계 목록을 간략하게 설명합니다. 또한 마이그레이션 작업의 이점에 대해서도 간략히 설명합니다.
+이전 문서, [AEM으로 이동 as a Cloud Service 시작하기](/help/journey-migration/getting-started.md)는 AEM으로 as a Cloud Service으로 마이그레이션할 수 있도록 거쳐야 하는 단계 목록을 간략하게 설명합니다. 또한 마이그레이션을 통해 얻을 수 있는 이점에 대해서도 간략히 설명합니다.
 
 ## 목표 {#objective}
 
@@ -34,7 +34,7 @@ ht-degree: 6%
 
 AEM as a Cloud Service은 AEM 프로젝트 관리를 위한 많은 새로운 기능과 가능성을 제공합니다.
 
-이러한 개선 사항과 함께 AEM의 온프레미스 설치와 Adobe Managed Services 간에 AEM as a Cloud Service과 비교하여 몇 가지 차이점이 도입되었습니다.
+이러한 개선 사항과 함께 AEM 및 Adobe Managed Services의 온프레미스 설치 간에 AEM as a Cloud Service과 비교하여 몇 가지 차이점이 도입되었습니다.
 
 아래 표의 항목 목록은 AEM as a Cloud Service으로 마이그레이션하는 데 가장 적합한 변경 사항의 하위 집합입니다. 주목할 만한 변경 사항의 전체 목록을 참조할 수 있습니다 [여기](/help/release-notes/aem-cloud-changes.md).
 
