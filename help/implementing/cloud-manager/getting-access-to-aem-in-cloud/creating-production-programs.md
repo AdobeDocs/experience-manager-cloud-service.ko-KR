@@ -2,10 +2,10 @@
 title: 프로덕션 프로그램 만들기
 description: Cloud Manager를 사용하여 라이브 트래픽을 호스팅하는 자체 프로덕션 프로그램을 만드는 방법을 알아봅니다.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '581'
-ht-degree: 100%
+source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+workflow-type: tm+mt
+source-wordcount: '604'
+ht-degree: 88%
 
 ---
 
@@ -32,12 +32,15 @@ ht-degree: 100%
 
 1. 필요한 경우, 파일 브라우저에서 이미지를 선택하려면 이미지 파일을 **프로그램 이미지 추가** 타깃으로 드래그 앤 드롭하거나 클릭하여 이미지를 프로그램에 추가할 수 있습니다. **계속**&#x200B;을 탭하거나 클릭합니다.
 
-1. 강화 보안 권한을 보유한 경우 **향상된 보안** 탭에서 프로덕션 프로그램에 **향상된 보안을 활성화**&#x200B;하는 옵션이 제공됩니다. 필요한 경우 향상된 보안을 활성화하는 옵션을 선택하고 **계속**&#x200B;을 탭하거나 클릭합니다.
+1. 필요한 권한이 있는 경우 **보안** 탭이 표시되고 활성화 옵션을 제공합니다. **HIPAA** 및/또는 **WAF-DDOS 보호** 프로덕션 프로그램용입니다. 생성 중인 프로그램에 필요한 경우 해당 옵션을 선택한 다음 탭하거나 클릭합니다 **계속**.
 
-   * 프로그램 생성 후에는 향상된 보안을 활성화하거나 비활성화할 수 없습니다.
-   * Adobe의 HIPAA 준비 솔루션 구현에 대해 [자세히 알아보십시오](https://www.adobe.com/go/hipaa-ready_kr).
+   * 프로그램 생성 후에는 HIPAA를 활성화하거나 비활성화할 수 없습니다.
+      * Adobe의 HIPAA 준비 솔루션 구현에 대해 [자세히 알아보십시오](https://www.adobe.com/go/hipaa-ready_kr).
+   * 활성화되면 를 설정하여 WAF-DDOS 보호를 구성할 수 있습니다. [비프로덕션 파이프라인.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
 
-   ![향상된 보안 옵션](assets/create-production-program-enhanced.png)
+   {{waf-limited-release}}
+
+   ![보안 옵션](assets/create-production-program-security.png)
 
 1. **솔루션 및 추가 기능** 탭에서 프로그램에 포함할 솔루션을 선택합니다.
 
@@ -65,7 +68,7 @@ ht-degree: 100%
 
 ![Cloud Manager 개요](assets/navigate-cm.png)
 
-## 프로그램 액세스 {#acessing}
+## 프로그램 액세스 {#accessing}
 
 1. 랜딩 페이지에 프로그램 카드가 표시되면 줄임표 버튼을 선택하여 사용 가능한 메뉴 옵션을 확인합니다.
 

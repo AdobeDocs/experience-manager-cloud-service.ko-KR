@@ -3,10 +3,10 @@ title: CI/CD 파이프라인
 description: Cloud Manager의 CI/CD 파이프라인과 이를 사용하여 코드를 효율적으로 배포하는 방법에 대해 알아봅니다.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '1337'
-ht-degree: 100%
+source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+workflow-type: tm+mt
+source-wordcount: '1448'
+ht-degree: 92%
 
 ---
 
@@ -32,12 +32,6 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 
 ![파이프라인 유형](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cd-config1.png)
 
-## 비디오 개요 {#video}
-
-파이프라인 유형에 대한 간략한 개요는 이 짧은 비디오를 참조하십시오.
-
->[!VIDEO](https://video.tv.adobe.com/v/342363)
-
 ## 프로덕션 파이프라인 {#prod-pipeline}
 
 프로덕션 파이프라인은 프로덕션 사용을 위해 소스 코드를 배포하기 위한 일련의 조정된 단계로 구성된 특별히 빌드된 파이프라인입니다. 이 단계에는 모든 스테이징 환경에 대한 첫 번째 빌드, 패키징, 테스트, 검증 및 배포가 포함됩니다. 따라서 프로덕션 파이프라인은 프로덕션 및 스테이징 환경 세트가 생성된 후에만 추가할 수 있습니다.
@@ -59,6 +53,7 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 프로덕션 및 비프로덕션 외에도 배포하는 코드 유형에 따라 파이프라인을 구분할 수 있습니다.
 
 * **[전체 스택 파이프라인](#full-stack-pipeline)** - HTTPD/Dispatcher 구성과 함께 하나 이상의 AEM 서버 애플리케이션을 포함하는 백엔드 및 프론트엔드 코드 빌드를 동시에 배포합니다.
+* **[배포 파이프라인 구성](#config-deployment-pipeline)** - AEM 환경, 유지 관리 작업, CDN 규칙 등에 대한 설정을 구성합니다.
 * **[프론트엔드 파이프라인](#front-end)** - 하나 이상의 클라이언트측 UI 애플리케이션을 포함하는 프론트엔드 코드 빌드를 배포합니다.
 * **[웹 계층 구성 파이프라인](#web-tier-config-pipelines)** - HTTPD/Dispatcher 구성을 배포합니다.
 
@@ -73,9 +68,11 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 | 프로덕션 또는 비프로덕션 | 배포 | 전체 스택 | HTTPD/Dispatcher 구성과 함께 백엔드 및 프론트엔드 코드 빌드 동시 배포 | 프론트엔드 코드를 AEM 서버 코드와 동시에 배포해야 하는 경우.<br>프론트엔드 파이프라인 또는 웹 계층 구성 파이프라인이 아직 채택되지 않은 경우. |
 | 프로덕션 또는 비프로덕션 | 배포 | 프론트엔드 | 하나 이상의 클라이언트측 UI 애플리케이션을 포함하는 프론트엔드 코드 빌드 배포 | 여러 개의 동시 프론트엔드 파이프라인 지원<br>전체 스택 배포보다 훨씬 빠름 |
 | 프로덕션 또는 비프로덕션 | 배포 | 웹 계층 구성 | HTTPD/Dispatcher 구성 배포 | 몇 분 만에 배포 |
+| 프로덕션 또는 비프로덕션 | 배포 | 구성 | 트래픽 필터링 규칙 배포 | 몇 분 만에 배포 |
 | 비프로덕션 | 코드 품질 | 전체 스택 | 배포 없이 전체 스택 코드에서 코드 품질 검사 실행 | 여러 파이프라인 지원 |
 | 비프로덕션 | 코드 품질 | 프론트엔드 | 배포 없이 프론트엔드 코드에서 코드 품질 검사 실행 | 여러 파이프라인 지원 |
 | 비프로덕션 | 코드 품질 | 웹 계층 구성 | 배포 없이 Dispatcher 구성에서 코드 품질 검사 실행 | 여러 파이프라인 지원 |
+| 비프로덕션 | 코드 품질 | 구성 | 트래픽 필터링 규칙 배포 |  |
 
 다음 다이어그램은 기존의 단일 프론트엔드 저장소 또는 독립적인 프론트엔드 저장소 설정을 사용하는 Cloud Manager의 파이프라인 구성을 보여 줍니다.
 
@@ -106,6 +103,26 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 * 환경에 해당하는 웹 계층 구성 파이프라인이 존재하지 않는 경우 사용자는 전체 스택 파이프라인을 구성하거나 Dispatcher 구성을 무시할 수 있습니다.
 
 전체 스택 파이프라인은 코드 품질 파이프라인 또는 배포일 수 있습니다.
+
+### 전체 스택 파이프라인 구성 {#configure-full-stack}
+
+전체 스택 파이프라인을 구성하는 방법은 다음 문서를 참조하십시오.
+
+* [프로덕션 파이프라인 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+* [비프로덕션 파이프라인 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
+
+## 배포 파이프라인 구성 {#config-deployment-pipeline}
+
+구성 배포 파이프라인을 사용하여 유지 관리 작업, CDN 규칙 등을 위해 AEM 환경에 구성 설정을 배포할 수 있습니다.
+
+문서를 참조하십시오. [WAF 규칙을 포함한 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 저장소 구성을 관리하여 올바로 배포하는 방법에 대해 알아봅니다.
+
+### 배포 파이프라인 구성 {#configure-config-deployment}
+
+구성 배포 파이프라인을 구성하는 방법은 다음 문서를 참조하십시오.
+
+* [프로덕션 파이프라인 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)
+* [비프로덕션 파이프라인 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)
 
 ## 프론트엔드 파이프라인 {#front-end}
 
@@ -142,14 +159,6 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 
 이 프로세스의 잠재력을 최대한 활용하기 위해 알아야 할 몇 가지 고려 사항 및 이 프로세스가 작동하는 방식에 대한 자세한 내용은 [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)을 참조하십시오.
 
-### 전체 스택 파이프라인 구성 {#configure-full-stack}
-
-전체 스택 파이프라인을 구성하는 방법은 다음 문서를 참조하십시오.
-
-* [프로덕션 파이프라인 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
-* [비프로덕션 파이프라인 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
-
-
 ## 웹 계층 구성 파이프라인 {#web-tier-config-pipelines}
 
 웹 계층 구성 파이프라인을 사용하면 HTTPD/Dispatcher 구성을 다른 코드 변경과 분리하여 AEM 런타임에 독점적으로 배포할 수 있습니다. Dispatcher 구성 변경 사항만 배포하려는 사용자에게 단 몇 분 만에 신속하게 배포할 수 있는 가속화된 파이프라인입니다.
@@ -175,9 +184,15 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 
 웹 계층 구성 파이프라인은 코드 품질 또는 배포 유형일 수 있습니다.
 
-### 웹 계층 구성 파이프라인 구성 {#configure-web-tier-config-pipelines}
+### 웹 계층 파이프라인 구성 {#configure-web-tier}
 
-웹 계층 구성 파이프라인을 구성하는 방법은 다음 문서를 참조하십시오.
+웹 계층 파이프라인을 구성하는 방법은 다음 문서를 참조하십시오.
 
-* [프로덕션 파이프라인 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
-* [비프로덕션 파이프라인 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
+* [프로덕션 파이프라인 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)
+* [비프로덕션 파이프라인 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)
+
+## 파이프라인 유형의 비디오 개요 {#video}
+
+파이프라인 유형에 대한 간략한 개요는 이 짧은 비디오를 참조하십시오.
+
+>[!VIDEO](https://video.tv.adobe.com/v/342363)

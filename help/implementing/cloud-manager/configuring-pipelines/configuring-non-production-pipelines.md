@@ -3,10 +3,10 @@ title: 비프로덕션 파이프라인 구성
 description: 프로덕션 환경에 배포하기 전에 비프로덕션 파이프라인을 구성하여 코드 품질을 테스트하는 방법을 알아봅니다.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1356'
-ht-degree: 100%
+source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+workflow-type: tm+mt
+source-wordcount: '1290'
+ht-degree: 80%
 
 ---
 
@@ -14,6 +14,8 @@ ht-degree: 100%
 # 비프로덕션 파이프라인 구성 {#configuring-non-production-pipelines}
 
 프로덕션 환경에 배포하기 전에 비프로덕션 파이프라인을 구성하여 코드 품질을 테스트하는 방법을 알아봅니다.
+
+사용자에게 다음이 있어야 합니다. **[배포 관리자](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** 비프로덕션 파이프라인을 구성하는 역할입니다.
 
 ## 비프로덕션 파이프라인 {#non-production-pipelines}
 
@@ -62,40 +64,16 @@ ht-degree: 100%
 
 1. **비프로덕션 파이프라인 추가** 대화 상자의 **소스 코드** 탭에서 파이프라인이 처리해야 하는 코드 유형을 선택해야 합니다.
 
-   * **[프론트엔드 코드](#front-end-code)**
    * **[전체 스택 코드](#full-stack-code)**
-   * **[웹 계층 구성](#web-tier-config)**
+   * **[타깃팅된 배포](#targeted-deployment)**
 
-비프로덕션 파이프라인 생성을 완료하는 단계는 선택한 **소스 코드** 옵션에 따라 다릅니다. 파이프라인 구성을 완료할 수 있도록 위의 링크를 따라 이 문서의 다음 섹션으로 이동합니다.
+문서를 참조하십시오. [CI/CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 파이프라인 유형에 대한 자세한 정보입니다.
 
-### 프론트엔드 코드 {#front-end-code}
-
-프론트엔드 코드 파이프라인은 하나 이상의 클라이언트측 UI 애플리케이션을 포함하는 프론트엔드 코드 빌드를 배포합니다. 이 파이프라인 유형에 대한 자세한 내용은 [CI/CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) 문서를 참조하십시오.
-
-프론트엔드 코드 비프로덕션 파이프라인의 구성을 완료하려면 다음 단계를 따릅니다.
-
-1. **소스 코드** 탭에서 다음 옵션을 정의해야 합니다.
-
-   * **적합한 배포 환경** - 파이프라인이 배포 파이프라인인 경우 배포할 환경을 선택해야 합니다.
-   * **저장소** - 이 옵션은 파이프라인에서 코드를 검색해야 하는 git 저장소를 정의합니다.
-
-   >[!TIP]
-   > 
-   >Cloud Manager에서 저장소를 추가하고 관리하는 방법은 [저장소 추가 및 관리](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)를 참조하십시오.
-
-   * **Git 분기** - 이 옵션은 선택한 파이프라인에서 코드를 검색해야 하는 분기를 정의합니다.
-      * 분기 이름의 처음 몇 글자와 이 필드의 자동 완성 기능을 입력합니다. 선택할 수 있는 일치하는 분기를 찾습니다.
-   * **코드 위치** - 이 옵션은 파이프라인이 코드를 검색해야 하는 선택한 저장소 분기의 경로를 정의합니다.
-
-   ![프론트엔드 파이프라인](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-front-end.png)
-
-1. **저장**&#x200B;을 클릭합니다.
-
-파이프라인이 저장되고 이제 **프로그램 개요** 페이지의 **파이프라인** 카드에서 [파이프라인을 관리](managing-pipelines.md)할 수 있습니다.
+비프로덕션 파이프라인 생성을 완료하는 단계는 선택한 소스 코드 유형에 따라 다릅니다. 파이프라인 구성을 완료할 수 있도록 위의 링크를 따라 이 문서의 다음 섹션으로 이동합니다.
 
 ### 전체 스택 코드 {#full-stack-code}
 
-전체 스택 코드 파이프라인은 HTTPD/Dispatcher 구성과 함께 하나 이상의 AEM 서버 애플리케이션을 포함하는 백엔드 및 프론트엔드 코드 빌드를 동시에 배포합니다. 이 파이프라인 유형에 대한 자세한 내용은 [CI/CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline) 문서를 참조하십시오.
+전체 스택 코드 파이프라인은 HTTPD/Dispatcher 구성과 함께 하나 이상의 AEM 서버 애플리케이션을 포함하는 백엔드 및 프론트엔드 코드 빌드를 동시에 배포합니다.
 
 >[!NOTE]
 >
@@ -115,12 +93,12 @@ ht-degree: 100%
    * **Git 분기** - 이 옵션은 선택한 파이프라인에서 코드를 검색해야 하는 분기를 정의합니다.
       * 분기 이름의 처음 몇 글자와 이 필드의 자동 완성 기능을 입력합니다. 선택할 수 있는 일치하는 분기를 찾는 데 유용합니다.
    * **웹 계층 구성 무시** - 이 옵션을 선택하면 파이프라인이 웹 계층 구성을 배포하지 않습니다.
-
    * **파이프라인** - 파이프라인이 배포 파이프라인인 경우 테스트 단계를 실행하도록 할 수 있습니다. 이 단계에서 활성화하려는 옵션을 확인합니다. 옵션을 선택하지 않으면 파이프라인 실행 중에 테스트 단계가 표시되지 않습니다.
 
       * **제품 기능 테스트** - 개발 환경에 대해 [제품 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)를 실행합니다.
       * **사용자 정의 기능 테스트** - 개발 환경에 대해 [사용자 정의 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)를 실행합니다.
       * **사용자 정의 UI 테스트** - 사용자 정의 애플리케이션에 대한 [사용자 정의 UI 테스트](/help/implementing/cloud-manager/ui-testing.md)를 실행합니다.
+      * **경험 감사** - 실행 [경험 감사](/help/implementing/cloud-manager/experience-audit-testing.md)
 
    ![전체 스택 파이프라인](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
@@ -128,19 +106,35 @@ ht-degree: 100%
 
 파이프라인이 저장되고 이제 **프로그램 개요** 페이지의 **파이프라인** 카드에서 [파이프라인을 관리](managing-pipelines.md)할 수 있습니다.
 
-### 웹 계층 구성 {#web-tier-config}
+### 타깃팅된 배포 {#targeted-deployment}
 
-웹 계층 구성 파이프라인은 HTTPD/Dispatcher 구성을 배포합니다. 이 파이프라인 유형에 대한 자세한 내용은 [CI/CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipeline)을 참조하십시오.
+타깃팅된 배포는 AEM 애플리케이션의 선택한 부분에 대해서만 코드를 배포합니다. 이러한 배포에서는 다음을 선택할 수 있습니다. **포함** 다음 코드 유형 중 하나:
+
+* **[구성](#config)** - AEM 환경, 유지 관리 작업, CDN 규칙 등에 대한 설정을 구성합니다.
+   * 문서 보기 [WAF 규칙을 포함한 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 저장소 내 트래픽 필터 규칙을 관리하여 올바르게 배포하는 방법에 대해 알아봅니다.
+* **[프론트엔드 코드](#front-end-code)** - AEM 애플리케이션의 프런트 엔드에 대한 JavaScript 및 CSS를 구성합니다.
+   * 프론트엔드 파이프라인을 사용하면 프론트엔드 개발자에게 더 많은 독립성을 부여하고 개발 프로세스를 가속화할 수 있습니다.
+   * 이 프로세스의 잠재력을 최대한 활용하기 위해 알아야 할 몇 가지 고려 사항 및 이 프로세스가 작동하는 방식에 대한 자세한 내용은 [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 문서를 참조하십시오.
+* **[웹 계층 구성](#web-tier-config)** - 웹 페이지를 저장, 처리 및 클라이언트에 전달하도록 Dispatcher 속성을 구성합니다.
 
 >[!NOTE]
 >
->선택한 환경에 대한 웹 계층 코드 파이프라인이 있는 경우, 이 선택이 비활성화됩니다.
+>* 선택한 환경에 대한 웹 계층 코드 파이프라인이 있는 경우, 이 선택이 비활성화됩니다.
+>* 기존 전체 스택 파이프라인이 환경에 배포되어 있는 경우 동일한 환경에 대한 웹 계층 구성 파이프라인을 생성하면 전체 스택 파이프라인의 기존 웹 계층 구성이 무시됩니다.
+> * 언제든지 환경당 하나의 구성 배포 파이프라인만 있을 수 있습니다.
 
-웹 계층 코드 비프로덕션 파이프라인의 구성을 완료하려면 다음 단계를 따릅니다.
+배포 유형을 선택하면 비프로덕션 대상 배포 파이프라인의 생성을 완료하는 단계가 동일합니다.
 
-1. **소스 코드** 탭에서 다음 옵션을 정의해야 합니다.
+1. 필요한 배포 유형을 선택합니다.
 
-   * **적합한 배포 환경** - 파이프라인이 배포 파이프라인인 경우 배포할 환경을 선택해야 합니다.
+![타깃팅된 배포 옵션](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-targeted-deployment.png)
+
+1. 다음을 정의합니다. **적합한 배포 환경**.
+
+   * 파이프라인이 배포 파이프라인인 경우 배포할 환경을 선택해야 합니다.
+
+1. 아래 **소스 코드**, 다음 옵션을 정의합니다.
+
    * **저장소** - 이 옵션은 파이프라인에서 코드를 검색해야 하는 git 저장소를 정의합니다.
 
    >[!TIP]
@@ -148,25 +142,16 @@ ht-degree: 100%
    >Cloud Manager에서 저장소를 추가하고 관리하는 방법은 [저장소 추가 및 관리](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)를 참조하십시오.
 
    * **Git 분기** - 이 옵션은 선택한 파이프라인에서 코드를 검색해야 하는 분기를 정의합니다.
+      * 분기 이름의 처음 몇 글자와 이 필드의 자동 완성 기능을 입력합니다. 선택할 수 있는 일치하는 분기를 찾습니다.
    * **코드 위치** - 이 옵션은 파이프라인이 코드를 검색해야 하는 선택한 저장소 분기의 경로를 정의합니다.
-      * 웹 계층 구성 파이프라인의 경우, 이 경로는 일반적으로 `conf.d`, `conf.dispatcher.d` 및 `opt-in` 디렉터리를 포함합니다.
-      * 예를 들어 프로젝트 구조가 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en)에서 생성된 경우 경로는 `/dispatcher/src`입니다.
 
-   ![웹 계층 파이프라인](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-web-tier.png)
+   ![배포 파이프라인 구성](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
 
 1. **저장**&#x200B;을 클릭합니다.
 
->[!NOTE]
->
->기존 전체 스택 파이프라인이 환경에 배포되어 있는 경우 동일한 환경에 대한 웹 계층 구성 파이프라인을 생성하면 전체 스택 파이프라인의 기존 웹 계층 구성이 무시됩니다.
-
 파이프라인이 저장되고 이제 **프로그램 개요** 페이지의 **파이프라인** 카드에서 [파이프라인을 관리](managing-pipelines.md)할 수 있습니다.
 
-## 프론트엔드 파이프라인으로 Sites 개발 {#developing-with-front-end-pipeline}
-
-프론트엔드 파이프라인을 사용하면 프론트엔드 개발자에게 더 많은 독립성을 부여하고 개발 프로세스를 가속화할 수 있습니다.
-
-이 프로세스의 잠재력을 최대한 활용하기 위해 알아야 할 몇 가지 고려 사항 및 이 프로세스가 작동하는 방식에 대한 자세한 내용은 [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 문서를 참조하십시오.
+타깃팅된 배포 파이프라인을 실행할 때 구성 [WAF 구성 등](/help/security/traffic-filter-rules-including-waf.md) 파이프라인에서 정의한 환경, 저장소 및 분기에 저장된 경우 배포됩니다.
 
 ## Dispatcher 패키지 건너뛰기 {#skip-dispatcher-packages}
 

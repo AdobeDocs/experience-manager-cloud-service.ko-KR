@@ -2,10 +2,10 @@
 title: 프로그램 편집
 description: 프로덕션 및 샌드박스 프로그램을 만든 후 옵션을 조정하도록 편집하는 방법을 알아봅니다.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
-workflow-type: ht
-source-wordcount: '502'
-ht-degree: 100%
+source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+workflow-type: tm+mt
+source-wordcount: '507'
+ht-degree: 89%
 
 ---
 
@@ -53,15 +53,19 @@ ht-degree: 100%
    * 이 날짜는 정보용으로만 제공됩니다. 프로그램 개요 페이지에서 Go Live 위젯을 트리거합니다. 결국 Adobe Experience Manager(AEM) as a Cloud Service 모범 사례 문서에 대한 제품 내 링크를 제공함으로써 여정에 맞춰 성공적인 Go Live 경험을 제공합니다.
    * 이 탭은 샌드박스 프로그램에 사용할 수 없습니다.
 
+1. 프로그램에 필요한 권한을 사용할 수 있는 경우 **보안** 탭에는 프로그램의 보안 옵션을 수정할 수 있는 위치가 표시됩니다.
+
+   ![보안 설정 편집](assets/edit-program-security.png)
+
+   * 다음 이후 HIPAA를 활성화하거나 비활성화할 수 없음 [프로그램 제작.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+      * Adobe의 HIPAA 준비 솔루션 구현에 대해 [자세히 알아보십시오](https://www.adobe.com/go/hipaa-ready_kr).
+   * 활성화되면 를 설정하여 WAF-DDOS 보호를 구성할 수 있습니다. [비프로덕션 파이프라인.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+
+   {{waf-limited-release}}
+
 1. **업데이트**&#x200B;를 클릭하여 프로그램에 대한 변경 사항을 저장합니다.
 
 솔루션 또는 추가 기능 추가 또는 제거를 포함하여 프로그램을 편집할 때마다 이러한 변경 사항은 다음 배포 이후에 적용됩니다.
-
-프로덕션 프로그램에 향상된 보안이 활성화된 경우, **프로그램 편집** 창에서 추가적인 **향상된 보안** 탭을 사용하여 프로그램에 대해 기능이 활성화되어 있는지 확인할 수 있습니다.
-
-![프로그램에 대해 활성화된 향상된 보안](assets/edit-program-enhanced.png)
-
-프로그램을 제작한 후에는 이 설정을 편집할 수 없습니다. 향상된 보안 옵션에 대한 자세한 내용은 [프로덕션 프로그램 만들기](creating-production-programs.md)를 참조하십시오.
 
 ## 샌드박스 프로그램 삭제 {#delete-sandbox-program}
 
