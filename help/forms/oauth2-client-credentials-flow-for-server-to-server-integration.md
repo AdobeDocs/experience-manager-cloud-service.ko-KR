@@ -3,14 +3,14 @@ title: OAuth 2.0 클라이언트 자격 증명 플로우를 사용하여 AEM For
 description: OAuth 2.0 클라이언트 자격 증명 플로우를 사용하여 Salesforce를 AEM Forms과 통합하는 방법에 대해 알아봅니다.
 Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, salesforce integration with oauth2 using client credential flow, salesforce and client credential integration
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 94%
+source-wordcount: '422'
+ht-degree: 77%
 
 ---
 
-# OAuth 2.0 클라이언트 자격 증명 흐름을 사용한 Salesforce 통합 {#configure-salesforce-with-ouath-2.0-client-credential}
+# OAuth 2.0 클라이언트 자격 증명 플로우를 사용하여 적응형 양식을 Salesforce에 연결 {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -19,8 +19,9 @@ ht-degree: 94%
 
 OAuth 2.0 클라이언트 자격 증명을 사용하여 AEM Forms를 Salesforce 애플리케이션과 통합할 수 있습니다. OAuth 2.0 클라이언트 자격 증명은 사용자 개입 없는 직접 통신을 위한 표준 보안 방법입니다.
 
-![AEM Forms와 Salesforce 애플리케이션 간의 통신을 설정하는 동안의 워크플로](/help/forms/assets/salesforce-workflow.png)
-AEM Forms는 Salesforce 연결 애플리케이션에 정의된 클라이언트 자격 증명(소비자 키 및 소비자 암호)을 교환하여 액세스 토큰을 얻습니다.
+![AEM Forms과 Salesforce 애플리케이션 간의 통신을 설정하는 동안 발생하는 워크플로우](/help/forms/assets/salesforce-workflow.png)
+
+AEM Forms은 Salesforce 연결 애플리케이션에 정의된 클라이언트 자격 증명(소비자 키 및 소비자 암호)을 교환하여 액세스 토큰을 얻습니다.
 
 인증 코드 흐름 인증을 통한 인증에 OAuth 2.0 클라이언트 자격 증명을 사용하면 여러 가지 이점이 있습니다.
 
@@ -38,7 +39,7 @@ Salesforce 애플리케이션과 AEM 환경 간의 통신을 설정하기 전에
 
 ## OAuth 2.0 클라이언트 자격 증명 흐름을 사용한 Salesforce 애플리케이션 구성 {#steps-to-create-aem-datasource-configuration}
 
-OAuth 2.0 클라이언트 자격 증명 인증 설정을 사용하여 Salesforce 애플리케이션을 적응형 양식과 통합하려면 다음 단계를 수행하십시오.
+OAuth 2.0 클라이언트 자격 증명 인증 설정을 사용하여 적응형 양식을 Salesforce 애플리케이션에 연결하려면 다음 단계를 수행하십시오.
 
 1. 작성자 인스턴스에 로그인합니다.
 1. **[!UICONTROL 도구]** > **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL 데이터 소스]**&#x200B;로 이동합니다.
@@ -66,4 +67,6 @@ OAuth 2.0 클라이언트 자격 증명 인증 설정을 사용하여 Salesforce
 1. **[!UICONTROL 연결 테스트]**&#x200B;를 클릭합니다.
 1. 연결에 성공하면 **[!UICONTROL 만들기]** 버튼을 클릭합니다.
 
-이제 [양식 데이터 모델을 만들어](/help/forms/create-form-data-models.md) 구성된 데이터 소스를 적응형 양식과 통합할 수 있습니다.
+이제 다음을 수행할 수 있습니다. [양식 데이터 모델 만들기](/help/forms/create-form-data-models.md) 을 입력하여 적응형 양식을 Salesforce 애플리케이션에 보낼 수 있습니다.
+
+
