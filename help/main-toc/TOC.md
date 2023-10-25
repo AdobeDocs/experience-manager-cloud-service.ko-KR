@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bb7bbe5e31d75a72b3c81939ce560e3ff3979a86
+source-git-commit: 5e6d209729809952b2478fd0a71b32668ba41230
 workflow-type: tm+mt
-source-wordcount: '4331'
-ht-degree: 99%
+source-wordcount: '4336'
+ht-degree: 98%
 
 ---
 
@@ -873,6 +873,7 @@ ht-degree: 99%
          + [IP 허용 목록 적용 및 적용 취소](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [IP 허용 목록 관리](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [라이선스 대시보드](/help/implementing/cloud-manager/license-dashboard.md)
+      + [Cloud Service 컨텐츠 요청 이해](/help/implementing/cloud-manager/content-requests.md)
       + [Cloud Manager FAQ](/help/implementing/cloud-manager/faqs.md)
    + AEM as a Cloud Service용 개발 {#developing}
       + [AEM 프로젝트 구조](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
