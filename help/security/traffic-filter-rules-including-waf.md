@@ -2,10 +2,10 @@
 title: WAF 규칙을 포함한 트래픽 필터 규칙
 description: WAF(Web Application Firewall) 규칙을 포함한 트래픽 필터 규칙 구성
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 1683819d4f11d4503aa0d218ecff6375fc5c54d1
+source-git-commit: 00d3323be28fe12729204ef00e336c7a4c63cda7
 workflow-type: tm+mt
-source-wordcount: '3312'
-ht-degree: 51%
+source-wordcount: '3480'
+ht-degree: 47%
 
 ---
 
@@ -118,6 +118,10 @@ ht-degree: 51%
 
 RDE의 경우 명령이 사용되지만 RDE는 현재 지원되지 않습니다.
 
+**메모**
+
+* 다음을 사용할 수 있습니다. `yq` 를 사용하여 구성 파일의 YAML 형식을 로컬로 확인합니다(예: `yq cdn.yaml`).
+
 ## 트래픽 필터 규칙 구문 {#rules-syntax}
 
 IPS, 사용자 에이전트, 요청 헤더, 호스트 이름, 지역 및 URL과 같은 패턴을 일치하도록 `traffic filter rules`을 구성할 수 있습니다.
@@ -152,7 +156,7 @@ data:
 |---|---|---|---|---|---|
 | 이름 | X | X | `string` | - | 규칙 이름(64자 길이, 영숫자 및 - 만 포함할 수 있음) |
 | when | X | X | `Condition` | - | 기본 구조는 다음과 같습니다.<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>[getter, 조건자 및 여러 조건을 결합하는 방법을 설명하는 아래의 조건 구조 구문을 참조하십시오.](#condition-structure) |
-| action | X | X | `Action` | 로그 | log, allow, block, log 또는 action 오브젝트 기본값은 로그입니다. |
+| action | X | X | `Action` | 로그 | log, allow, block 또는 Action 객체 기본값은 log입니다 |
 | rateLimit | X |   | `RateLimit` | 정의되지 않음 | 속도 제한 구성입니다. 속도 제한은 정의되지 않은 경우 비활성화됩니다.<br><br>예제와 함께 rateLimit 구문을 설명하는 별도의 섹션이 아래에 추가로 있습니다. |
 
 ### 조건 구조 {#condition-structure}
@@ -188,11 +192,11 @@ data:
 
 | **속성** | **유형** | **설명** |
 |---|---|---|
-| reqProperty | `string` | 요청 속성입니다.<br><br>다음 중 하나입니다. `path`, `queryString`, `method`, `tier`, `domain`, `clientIp`, `clientCountry`<br><br>도메인 속성은 요청의 호스트 헤더를 소문자로 변환한 것입니다. 문자열을 비교할 때 유용합니다. 즉, 대소문자 구분으로 인해 일치 항목이 누락되는 일이 없습니다.<br><br>`clientCountry`는 [https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol)에 표시된 두 개의 문자 코드를 사용합니다. |
+| reqProperty | `string` | 요청 속성입니다.<br><br>다음 중 하나:<br><ul><li>`path`: 쿼리 매개 변수 없이 URL의 전체 경로를 반환합니다.</li><li>`queryString`: URL의 쿼리 부분을 반환합니다.</li><li>`method`: 요청에 사용된 HTTP 메서드를 반환합니다.</li><li>`tier`: 다음 중 하나를 반환합니다. `author`, `preview` 또는 `publish`.</li><li>`domain`: 도메인 속성 반환(에 정의됨) `Host` header)(소문자)</li><li>`clientIp`: 클라이언트 IP 반환</li><li>`clientCountry`: 두 문자 코드 반환([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) 클라이언트가 있는 국가를 식별합니다.</li></ul> |
 | reqHeader | `string` | 지정된 이름의 요청 헤더를 반환합니다. |
 | queryParam | `string` | 지정된 이름의 쿼리 매개변수를 반환합니다. |
 | reqCookie | `string` | 지정된 이름의 쿠키를 반환합니다. |
-| postParam | `string` | 본문에서 지정된 이름의 매개 변수를 반환합니다. 본문이 컨텐츠 유형인 경우에만 작동합니다. `application/x-www-form-urlencoded` |
+| postParam | `string` | 요청 본문에서 지정된 이름의 Post 매개 변수를 반환합니다. 본문이 컨텐츠 유형인 경우에만 작동합니다. `application/x-www-form-urlencoded` |
 
 **조건자**
 
@@ -207,6 +211,19 @@ data:
 | **in** | `array[string]` | 제공된 목록에 getter 결과가 포함되어 있는 경우 true |
 | **notIn** | `array[string]` | 제공된 목록에 getter 결과가 포함되어 있지 않은 경우 true |
 | **존재함** | `boolean` | true로 설정되어 있고 속성이 있는 경우 또는 false로 설정되어 있고 속성이 없는 경우 true |
+
+**메모**
+
+* 요청 속성 `clientIp` 은 다음 술어와만 사용할 수 있습니다. `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` 를 사용할 때 IP 범위와 비교할 수도 있습니다. `in` 및 `notIn` 조건자. 다음 예제에서는 클라이언트 IP가 192.168.0.0/24의 IP 범위(192.168.0.0부터 192.168.0.255)에 있는지 평가하는 조건을 구현합니다.
+
+```
+when:
+  reqProperty: clientIp
+  in: [ "192.168.0.0/24" ]
+```
+
+* 다음을 사용하는 것이 좋습니다. [정규 표현식](https://regex101.com/) 및 [Fastly Fiddle](https://fiddle.fastly.dev/) regex를 사용하여 작업하는 경우. 또한 Fastly가 이 문서의 정규 표현식을 처리하는 방법에 대해 자세히 알아볼 수도 있습니다 [기사](https://developer.fastly.com/reference/vcl/regex/#best-practices-and-common-mistakes).
+
 
 ### 액션 구조 {#action-structure}
 
@@ -259,6 +276,8 @@ data:
 * 규칙이 일치하여 차단되면 CDN은 `406` 반환 코드로 응답합니다.
 
 * git 저장소에 액세스할 수 있는 모든 사용자가 암호를 읽을 수 있으므로 구성 파일은 비밀을 포함해서는 안 됩니다.
+
+* Cloud Manager에 정의된 IP 허용 목록이 트래픽 필터 규칙보다 우선합니다.
 
 ## 규칙 예 {#examples}
 
@@ -396,9 +415,10 @@ data:
 | **속성** | **유형** | **기본값** | **의미** |
 |---|---|---|---|
 | limit | 10에서 10000 사이의 정수 | required | 규칙이 트리거되는 요청 비율(CDN POP당)(초당 요청 수)입니다. |
-| window | 정수 열거형: 1, 10 또는 60 | 10 | 요청 속도를 계산하는 샘플링 기간(초). |
+| window | 정수 열거형: 1, 10 또는 60 | 10 | 요청 속도를 계산하는 샘플링 기간(초). 카운터의 정확도는 창의 크기에 따라 달라집니다(큰 창의 정확도가 더 높음). 예를 들어 1초 윈도우에 대해 50% 정확도를, 60초 윈도우에 대해 90% 정확도를 기대할 수 있다. |
 | penalty | 60에서 3600 사이의 정수 | 300(5분) | 일치하는 요청이 차단되는 기간(초 단위로 반올림). |
 | groupBy | 배열[getter] | 없음 | 처리율 제한 장치 카운터는 요청 속성 세트(예: clientIp)로 집계됩니다. |
+
 
 ### 예 {#ratelimiting-examples}
 
