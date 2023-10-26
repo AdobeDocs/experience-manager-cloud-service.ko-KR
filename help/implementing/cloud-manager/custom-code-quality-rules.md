@@ -2,10 +2,10 @@
 title: 사용자 정의 코드 품질 규칙
 description: 이 페이지에서는 코드 품질 테스트의 일부로 Cloud Manager에서 실행되는 사용자 정의 코드 품질 규칙에 대해 설명합니다. 이 규칙은 Adobe Experience Manager Engineering의 모범 사례를 기반으로 합니다.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 57a7cd3fd2bfc34ebcee82832e020cf45887afa9
+source-git-commit: a62312954db0631cf594a27db36bab8a2441360f
 workflow-type: tm+mt
-source-wordcount: '3868'
-ht-degree: 92%
+source-wordcount: '4097'
+ht-degree: 87%
 
 ---
 
@@ -519,6 +519,53 @@ Experience Manager API 영역은 사용이 권장되지 않아 더 이상 사용
 
 그러나 Experience Manager의 컨텍스트에서는 API가 더 이상 사용되지 않지만 다른 컨텍스트에서는 사용되는 경우가 있습니다. 이 규칙은 이 두 번째 클래스를 식별합니다.
 
+### 슬링 모델에서 @Inject과 함께 @Optional 주석 사용 안 함 {#sonarqube-slingmodels-inject-optional}
+
+* **키**: InjectAnnotationWithOptionalInjectionCheck
+* **유형**: 소프트웨어 품질
+* **심각도**: 사소
+* **이후**: 버전 2023.11
+
+Apache Sling 프로젝트는 의 사용을 막고 있습니다. `@Inject` 슬링 모델 컨텍스트에서 주석을 사용하므로 과 결합할 때 성능이 저하될 수 있습니다 `DefaultInjectionStrategy.OPTIONAL` (필드 또는 클래스 수준). 대신 보다 구체적인 주사(예: `@ValueMapValue` 또는 `@OsgiInjector` annotations)를 사용해야 합니다.
+
+다음 확인: [Apache Sling 설명서](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) 권장 주석에 대한 자세한 내용 및 이 권장 사항이 처음에 만들어진 이유는 무엇입니까?
+
+
+### HTTPClient 인스턴스 재사용 {#sonarqube-reuse-httpclient}
+
+* **키**: AEMSRE-870
+* **유형**: 소프트웨어 품질
+* **심각도**: 사소
+* **이후**: 버전 2023.11
+
+AEM 애플리케이션은 종종 HTTP 프로토콜을 사용하여 다른 애플리케이션에 연결하며, Apache HttpClient는 이를 위해 자주 사용되는 라이브러리입니다. 그러나 이러한 HttpClient 개체를 만들면 약간의 오버헤드가 발생하므로 이러한 개체를 가능한 한 재사용해야 합니다.
+
+이 규칙은 이러한 HttpClient 개체가 메서드 내에서 private이 아니라 클래스 수준에서 전역적이므로 재사용할 수 있는지 확인합니다. 이 경우 httpClient 필드는 클래스 또는 의 생성자에 설정해야 합니다. `activate()` 메서드(이 클래스가 OSGi 구성 요소/서비스인 경우).
+
+다음 항목도 확인하십시오. [최적화 안내서](https://hc.apache.org/httpclient-legacy/performance.html) HttpClient를 사용하는 것과 관련된 몇 가지 모범 사례를 보려면 HttpClient를 참조하십시오.
+
+#### 비준수 코드 {#non-compliant-code-14}
+
+```java
+public void doHttpCall() {
+  HttpClient httpclient = HttpClients.createDefault();
+  // do something with the httpclient
+}
+```
+
+#### 준수 코드 {#compliant-code-11}
+
+```java
+public class myClass {
+
+  HttpClient httpclient;
+
+  public void doHttpCall() {
+    // do something with the httpclient
+  }
+
+}
+```
 
 ## OakPAL 콘텐츠 규칙 {#oakpal-rules}
 
