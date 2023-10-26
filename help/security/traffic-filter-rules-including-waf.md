@@ -2,10 +2,10 @@
 title: WAF 규칙을 포함한 트래픽 필터 규칙
 description: WAF(Web Application Firewall) 규칙을 포함한 트래픽 필터 규칙 구성
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 00d3323be28fe12729204ef00e336c7a4c63cda7
+source-git-commit: aca385ff9a44733a6529c7e78e73fc1b138c1177
 workflow-type: tm+mt
-source-wordcount: '3480'
-ht-degree: 47%
+source-wordcount: '3453'
+ht-degree: 45%
 
 ---
 
@@ -227,7 +227,7 @@ when:
 
 ### 액션 구조 {#action-structure}
 
-액션 유형(allow, block, log)을 지정하고 다른 모든 옵션에 기본값을 가정하는 문자열이거나 `type` 필수 필드를 통해 해당 유형에 적용되는 다른 옵션과 함께 규칙 유형을 정의하는 오브젝트일 수 있는 `action` 필드로 지정합니다.
+An `action` 작업(allow, block 또는 log)을 지정하는 문자열이거나, 작업 유형(allow, block 또는 log)과 wafFlags 및/또는 status와 같은 옵션으로 구성된 개체일 수 있습니다.
 
 **액션 유형**
 
@@ -278,6 +278,8 @@ when:
 * git 저장소에 액세스할 수 있는 모든 사용자가 암호를 읽을 수 있으므로 구성 파일은 비밀을 포함해서는 안 됩니다.
 
 * Cloud Manager에 정의된 IP 허용 목록이 트래픽 필터 규칙보다 우선합니다.
+
+* WAF 규칙 일치는 CDN 누락 및 전달에 대한 CDN 로그에만 표시되고 히트는 표시되지 않습니다.
 
 ## 규칙 예 {#examples}
 
@@ -491,7 +493,7 @@ CDN 로그가 최대 5분 지연될 수 있습니다.
 * WAF에 라이센스가 부여되고 활성화된 경우 `waf` 속성은 WAF 플래그가 어떤 규칙에 나열되었는지 여부에 관계없이 감지된 모든 WAF 플래그(예: SQLI)를 나열합니다. 선언할 잠재적인 새 규칙에 대한 통찰력을 제공하기 위한 것입니다.
 * 고객이 선언한 규칙이 일치하지 않고 waf 규칙이 일치하지 않으면 `rules` 속성이 비어 있습니다.
 
-일반적으로 일치하는 규칙은 CDN 적중, 통과 또는 실패 여부에 관계없이 CDN에 대한 모든 요청의 로그 항목에 나타납니다. 단, WAF 규칙은 CDN 적중이 아니라 CDN 실패 또는 통과로 간주되는 CDN 요청에 대해서만 로그 항목에 나타납니다.
+앞에서 언급했듯이 WAF 규칙 일치는 CDN 누락 및 전달에 대한 CDN 로그에만 표시되고 히트는 표시되지 않습니다.
 
 아래 예제는 샘플을 보여 줍니다 `cdn.yaml` 및 두 개의 CDN 로그 항목:
 
