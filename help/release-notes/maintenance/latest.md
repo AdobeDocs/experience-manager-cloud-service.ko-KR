@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: aa9629c3e48ca0bf4654351462a94777af9ed651
+source-git-commit: 6e82bbcc1b83fa9216831f6f746665507a46eec7
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 23%
+source-wordcount: '585'
+ht-degree: 24%
 
 ---
 
@@ -71,8 +71,7 @@ ht-degree: 23%
 
 ### 알려진 문제 {#known-issues-14029}
 
-* CQ-4354836: 프로젝트 콘솔에서 워크플로우를 시작하거나 작업을 만들 수 없습니다.
-* CQ-4354834 : 사용자가 받은 편지함 작업에 주석을 추가할 수 없습니다.
+없음.
 
 ### 임베드된 기술 {#embedded-tech-14029}
 
