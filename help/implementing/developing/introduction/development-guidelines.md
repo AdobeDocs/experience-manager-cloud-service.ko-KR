@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service 개발에 대한 지침과 AMS의 AEM On-Premise 및 AEM과 다른 중요한 방식에 대해 알아봅니다.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 5aa4a049bc6a69f161ad04d2a64ab0871e672432
+source-git-commit: 1683819d4f11d4503aa0d218ecff6375fc5c54d1
 workflow-type: tm+mt
-source-wordcount: '2746'
+source-wordcount: '2733'
 ht-degree: 4%
 
 ---
@@ -69,9 +69,6 @@ Adobe은 제공된 를 사용할 것을 권장합니다 [Apache HttpComponents C
 
 ## 요청 비율 제한 처리 {#rate-limit-handling}
 
->[!NOTE]
->HTTP 오류 응답은 2023년 8월 7일이 있는 주에 503에서 429로 변경됩니다.
->
 AEM에 대한 수신 요청 비율이 정상 수준을 초과하면 AEM은 HTTP 오류 코드 429로 새 요청에 응답합니다. AEM에 프로그래밍 방식으로 호출하는 애플리케이션에서는 지수 백오프 전략을 사용하여 몇 초 후에 다시 시도하면서 방어적으로 코딩을 고려할 수 있습니다. 2023년 8월 중순 이전, AEM은 HTTP 오류 코드 503으로 동일한 조건에 응답했습니다.
 
 ## 클래식 UI 사용자 지정 없음 {#no-classic-ui-customizations}

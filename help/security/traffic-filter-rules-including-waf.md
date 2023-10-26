@@ -2,10 +2,10 @@
 title: WAF 규칙을 포함한 트래픽 필터 규칙
 description: WAF(Web Application Firewall) 규칙을 포함한 트래픽 필터 규칙 구성
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 221f6df73fe660c6f8dbf79affdccdd081ad3906
+source-git-commit: 1683819d4f11d4503aa0d218ecff6375fc5c54d1
 workflow-type: tm+mt
-source-wordcount: '4210'
-ht-degree: 43%
+source-wordcount: '3312'
+ht-degree: 51%
 
 ---
 
@@ -13,18 +13,17 @@ ht-degree: 43%
 # WAF 규칙을 포함한 트래픽 필터 규칙 {#traffic-filter-rules-including-waf-rules}
 
 >[!NOTE]
->
->이 기능은 아직 일반적으로 사용할 수 없습니다. 진행 중인 얼리 어답터 프로그램에 참여하려면 이메일 **aemcs-waf-adopter@adobe.com**&#x200B;으로 귀사 조직의 이름과 해당 기능에 가지고 있는 관심에 대한 맥락을 작성하여 보내 주십시오.
+>이 기능은 11월에 스테이징 및 프로덕션 환경에 대한 점진적 롤아웃을 통해 개발 환경에서 곧 사용할 수 있습니다. 이메일로 스테이징 및 프로덕션에 대한 사전 액세스를 요청할 수 있습니다 **aemcs-waf-adopter@adobe.com**.
 
 트래픽 필터 규칙을 사용하여 CDN 계층에서 요청을 차단하거나 허용할 수 있으며, 이는 다음과 같은 시나리오에서 유용할 수 있습니다.
 
 * 새 사이트가 가동되기 전에 특정 도메인에 대한 액세스를 내부 회사 트래픽으로 제한
-* 체적 DDoS 공격에 덜 취약하도록 비율 제한 설정
+* 체적 DoS 공격에 덜 취약하도록 비율 제한 설정
 * 악의적인 것으로 알려진 IP 주소가 페이지를 타겟팅하지 못하도록 방지
 
-이러한 트래픽 필터 규칙 중 일부는 모든 AEM as a Cloud Service Sites 및 Forms 고객이 사용할 수 있습니다. 주로 IP, 호스트 이름, 경로 및 사용자 에이전트를 포함한 요청 속성 및 요청 헤더에서 작동합니다.
+이러한 트래픽 필터 규칙은 대부분 모든 AEM as a Cloud Service Sites 및 Forms 고객이 사용할 수 있습니다. 주로 IP, 호스트 이름, 경로 및 사용자 에이전트를 포함한 요청 속성 및 요청 헤더에서 작동합니다.
 
-트래픽 필터 규칙의 하위 범주는 Enhanced Security 라이센스 또는 WAF-DDoS Protection Security 라이센스가 필요합니다. 이러한 강력한 규칙은 WAF(Web Application Firewall) 트래픽 필터 규칙(또는 WAF 규칙)이라고 하며 [플래그](#waf-flags-list) 이 문서의 뒷부분에 설명되어 있습니다. Sites 및 Forms 고객은 이 고급 기능의 라이선스에 대한 자세한 내용을 Adobe 계정 팀에 문의할 수 있습니다.
+트래픽 필터 규칙의 하위 범주는 Enhanced Security 라이센스 또는 WAF-DDoS Protection 라이센스가 필요하며 올해 말에 사용할 수 있습니다. 이러한 강력한 규칙은 WAF(Web Application Firewall) 트래픽 필터 규칙(또는 WAF 규칙)이라고 하며 [플래그](#waf-flags-list) 이 문서의 뒷부분에 설명되어 있습니다.
 
 트래픽 필터 규칙은 Cloud Manager 구성 파이프라인을 통해 프로덕션(샌드박스가 아닌) 프로그램의 개발, 스테이지 및 프로덕션 환경 유형에 배포할 수 있습니다. RDE에 대한 지원은 향후에 제공될 것입니다.
 
@@ -40,33 +39,35 @@ ht-degree: 43%
 * **비율 제한 규칙:** 속도 제한 규칙을 사용하여 사이트를 대량 공격으로부터 보호하는 방법에 대해 알아봅니다.
 * **CDN 로그:** 선언된 규칙 및 WAF 플래그가 트래픽과 일치하는 항목을 확인합니다.
 * **대시보드 도구:** CDN 로그를 분석하여 새로운 트래픽 필터 규칙을 제안합니다.
+* **권장 시작 규칙:** 시작할 규칙 세트.
 * **자습서:** 대시보드 도구 를 사용하여 올바른 규칙을 선언하는 방법을 포함하여 이 기능에 대한 실용적인 지식입니다.
-<!-- About the tutorial: sets the context for a linked tutorial, which gives you practical knowledge about the feature, including how to use dashboard tooling to declare the right rules. -->
+
+전자 메일로 트래픽 필터 규칙에 대한 피드백 또는 질문을 할 수 있도록 초대합니다. **aemcs-waf-adopter@adobe.com**.
 
 ## 트래픽 보호 개요 {#traffic-protection-overview}
 
 현재 디지털 환경에서 악의적인 트래픽은 항상 존재하는 위협입니다. Dell은 위험의 심각성을 인식하고 고객 애플리케이션을 보호하고 공격 발생 시 이를 완화할 수 있는 몇 가지 접근 방식을 제공합니다.
 
-가장자리에서 Adobe 관리 CDN은 플러드 및 반사/증폭 공격을 포함하여 네트워크 레이어(레이어 3 및 4)의 DDoS 공격을 흡수합니다.
+가장자리에서 Adobe 관리 CDN은 플러드 및 반사/증폭 공격을 포함하여 네트워크 레이어(레이어 3 및 4)의 DoS 공격을 흡수합니다.
 
-기본적으로 Adobe은 특정 임계값을 초과하는 예기치 않게 높은 트래픽의 버스트로 인한 성능 저하를 방지하기 위해 조치를 취합니다. 사이트 가용성에 영향을 미치는 DDoS 공격이 발생하면 Adobe 운영팀에 경고가 표시되고 이를 완화하기 위한 조치를 취합니다.
+기본적으로 Adobe은 특정 임계값을 초과하는 예기치 않게 높은 트래픽의 버스트로 인한 성능 저하를 방지하기 위해 조치를 취합니다. 사이트 가용성에 영향을 주는 DoS 공격이 발생하면 Adobe 운영팀에 경고가 표시되고 이를 완화하기 위한 조치를 취합니다.
 
 고객은 컨텐츠 전달 흐름의 다양한 계층에서 규칙을 구성하여 애플리케이션 계층 공격(레이어 7)을 완화하기 위한 사전 조치를 취할 수 있습니다.
 
 예를 들어 Apache 계층에서 고객은 다음 중 하나를 구성할 수 있습니다. [dispatcher 모듈](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-access-to-content-filter) 또는 [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=en) 특정 콘텐츠에 대한 액세스를 제한합니다.
 
-또한 이 문서에서 설명하는 바와 같이 트래픽 필터 규칙은 Cloud Manager의 구성 파이프라인을 사용하여 CDN에 배포할 수 있습니다. IP 주소, 경로 및 헤더와 같은 속성을 기반으로 하는 트래픽 요청 기반 트래픽 필터 규칙 외에도 고객은 WAF 규칙이라고 하는 강력한 하위 범주의 트래픽 필터 규칙에 라이선스를 부여할 수 있습니다.
+또한 이 문서에서 설명하는 대로 트래픽 필터 규칙은 Cloud Manager의 구성 파이프라인을 사용하여 Adobe 관리 CDN에 배포할 수 있습니다. IP 주소, 경로 및 헤더와 같은 속성을 기반으로 하는 트래픽 필터 규칙이나 설정 비율 제한을 기반으로 하는 규칙 외에도 고객은 WAF 규칙이라고 하는 강력한 하위 범주의 트래픽 필터 규칙에 라이선스를 부여할 수 있습니다.
 
 ## 제안된 프로세스 {#suggested-process}
 
 다음은 올바른 트래픽 필터 규칙을 제안하기 위한 높은 수준의 권장 종단 간 프로세스입니다.
 
-1. 에 설명된 대로 비프로덕션 및 프로덕션 구성 파이프라인을 구성합니다. [설정](#setup) 섹션.
+1. 다음에 설명된 대로 비프로덕션 및 프로덕션 구성 파이프라인을 구성합니다. [설정](#setup) 섹션.
 1. WAF 트래픽 필터 규칙의 하위 범주에 라이선스를 부여한 고객은 Cloud Manager에서 해당 라이선스를 활성화해야 합니다.
 1. 라이선스가 부여된 경우 WAF 규칙을 비롯한 트래픽 필터 규칙을 사용하는 방법을 구체적으로 이해하려면 자습서를 읽고 시도해 보십시오. 이 자습서에서는 개발 환경에 규칙 배포, 악성 트래픽 시뮬레이션 및 [CDN 로그](#cdn-logs), 및 분석 [대시보드 도구](#dashboard-tooling).
-1. 권장되는 초기 규칙을 복사할 위치: `cdn.yaml` 및 구성을 로그 모드에서 프로덕션에 배포합니다.
-1. 일부 트래픽을 수집한 후 다음을 사용하여 결과를 분석합니다. [대시보드 도구](#dashboard-tooling) 일치하는 항목이 있는지 확인합니다. 긍정 오류(false positive)를 검색하고 필요한 조정을 수행하여 궁극적으로 블록 모드에서 기본 규칙을 활성화합니다.
-1. CDN 로그 분석에 따라 사용자 정의 규칙을 추가하고, 개발 환경에서 시뮬레이션된 트래픽으로 먼저 테스트한 후 로그 모드에서 스테이지 및 프로덕션에 배포하고 차단 모드로 배포합니다.
+1. 권장되는 시작 규칙을 복사할 위치: `cdn.yaml` 로그 모드에서 프로덕션 환경에 구성을 배포합니다.
+1. 일부 트래픽을 수집한 후 다음을 사용하여 결과를 분석합니다. [대시보드 도구](#dashboard-tooling) 일치하는 항목이 있는지 확인합니다. 긍정 오류(false positive)를 검색하고 필요한 조정을 수행하여 궁극적으로 블록 모드에서 시작 규칙을 활성화합니다.
+1. CDN 로그의 분석을 기반으로 사용자 지정 규칙을 추가하고, 로그 모드에서 스테이지 및 프로덕션 환경에 배포하기 전에 먼저 개발 환경에서 시뮬레이션된 트래픽으로 테스트한 다음 차단 모드로 배포합니다.
 1. 지속적으로 트래픽을 모니터링하여 위협 환경이 발전함에 따라 규칙을 변경합니다.
 
 ## 설정 {#setup}
@@ -104,7 +105,7 @@ ht-degree: 43%
 
 <!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
 
-1. WAF 규칙을 구성하려면 신규 및 기존 프로그램 시나리오 모두에 대해 아래에 설명된 대로 Cloud Manager에서 WAF를 활성화해야 합니다. WAF용으로 별도의 라이선스를 구매해야 합니다.
+1. WAF 규칙에 라이센스가 있으면 새 프로그램 시나리오와 기존 프로그램 시나리오에 대해 아래에 설명된 대로 Cloud Manager에서 기능을 활성화해야 합니다.
 
    1. 새 프로그램에서 WAF를 구성하려면 **WAF-DDOS 보호** 의 확인란 **보안** 다음을 수행할 때 탭 [프로덕션 프로그램을 추가합니다.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 
@@ -327,7 +328,7 @@ data:
 
 **예 4**
 
-이 규칙은 경로 요청을 차단합니다. `/block-me`및 가 와(과) 일치하는 모든 요청을 차단함 `SQLI` 또는 `XSS` 패턴. 이 예에는 다음을 참조하는 WAF 트래픽 필터 규칙이 포함되어 있습니다. `SQLI` 및 `XSS` [플래그](#waf-flags-list): 별도의 라이센스가 필요합니다.
+이 규칙은 경로 요청을 차단합니다. `/block-me`및 가 와(과) 일치하는 모든 요청을 차단함 `SQLI` 또는 `XSS` 패턴. 이 예에는 다음을 참조하는 WAF 트래픽 필터 규칙이 포함되어 있습니다. `SQLI` 및 `XSS` [플래그](#waf-flags-list)에는 별도의 라이센스가 필요합니다.
 
 ```
 kind: "CDN"
@@ -384,9 +385,11 @@ data:
 
 ## 비율 제한 규칙 {#rate-limits-rules}
 
-시간 경과에 따라 일치가 특정 속도를 초과하는 경우에만 규칙과 일치하는 트래픽을 차단하는 것이 바람직한 경우가 있습니다. `rateLimit` 속성의 값을 설정하면 규칙 조건과 일치하는 요청의 속도가 제한됩니다.
+특정 조건에 따라 들어오는 요청의 특정 비율을 초과하는 경우 트래픽을 차단하는 것이 바람직한 경우도 있습니다. `rateLimit` 속성의 값을 설정하면 규칙 조건과 일치하는 요청의 속도가 제한됩니다.
 
 속도 제한 규칙은 WAF 플래그를 참조할 수 없습니다. 모든 Sites 및 Forms 고객이 사용할 수 있습니다.
+
+속도 제한은 CDN POP별로 계산됩니다. 예를 들어 몬트리올, 마이애미 및 더블린의 POP에서 초당 각각 80, 90 및 120 요청의 트래픽 속도가 발생하고 속도 제한 규칙이 100의 제한으로 설정된다고 가정해 보겠습니다. 이 경우, 더블린으로의 트래픽만 속도가 제한됩니다.
 
 ### rateLimit 구조 {#ratelimit-structure}
 
@@ -445,7 +448,7 @@ data:
 
 ## CDN 로그 {#cdn-logs}
 
-AEM as a Cloud Service에서 제공하는 CDN 로그 액세스는 캐시 적중률 최적화, CDN 및 WAF 규칙 구성을 포함한 사용 사례에 유용합니다. CDN 로그는 Cloud Manager에서 작성자 또는 게시 서비스를 선택할 때 **로그 다운로드** 대화 상자에 나타납니다.
+AEM as a Cloud Service에서는 캐시 적중률 최적화, 트래픽 필터 규칙 구성 등의 사용 사례에 유용한 CDN 로그에 대한 액세스를 제공합니다. CDN 로그는 Cloud Manager에서 작성자 또는 게시 서비스를 선택할 때 **로그 다운로드** 대화 상자에 나타납니다.
 
 CDN 로그가 최대 5분 지연될 수 있습니다.
 
@@ -463,10 +466,10 @@ CDN 로그가 최대 5분 지연될 수 있습니다.
 
 규칙은 다음의 방식으로 진행됩니다.
 
-* 일치하는 규칙의 고객이 선언한 규칙 이름이 matches 속성에 나열됩니다.
-* 작업 속성은 규칙이 차단, 허용 또는 로깅의 영향을 미쳤는지 여부를 설명합니다.
-* WAF에 라이센스가 부여되고 활성화되어 있으면 구성에 waf 규칙이 나열되었는지 여부에 관계없이 waf 속성은 감지된 모든 waf 규칙(예: SQLI; 고객이 선언한 이름과 독립적임)을 나열합니다.
-* 고객이 선언한 규칙이 일치하지 않고 waf 규칙이 일치하지 않으면 규칙 속성 속성이 비어 있습니다.
+* 일치하는 규칙의 고객이 선언한 규칙 이름은 `match` 특성.
+* 다음 `action` 속성은 규칙이 차단, 허용 또는 로깅의 영향을 미쳤는지 여부를 결정합니다.
+* WAF에 라이센스가 부여되고 활성화된 경우 `waf` 속성은 WAF 플래그가 어떤 규칙에 나열되었는지 여부에 관계없이 감지된 모든 WAF 플래그(예: SQLI)를 나열합니다. 선언할 잠재적인 새 규칙에 대한 통찰력을 제공하기 위한 것입니다.
+* 고객이 선언한 규칙이 일치하지 않고 waf 규칙이 일치하지 않으면 `rules` 속성이 비어 있습니다.
 
 일반적으로 일치하는 규칙은 CDN 적중, 통과 또는 실패 여부에 관계없이 CDN에 대한 모든 요청의 로그 항목에 나타납니다. 단, WAF 규칙은 CDN 적중이 아니라 CDN 실패 또는 통과로 간주되는 CDN 요청에 대해서만 로그 항목에 나타납니다.
 
@@ -561,215 +564,15 @@ Adobe은 Cloud Manager를 통해 다운로드한 CDN 로그를 수집하기 위�
 
 [튜토리얼 보기](#tutorial) 대시보드 도구 사용 방법에 대한 구체적인 지침
 
-## 튜토리얼 {#tutorial}
+## 권장 시작 규칙 {#recommended-starter-rules}
 
-Adobe은 Cloud Manager를 통해 다운로드한 CDN 로그를 수집하기 위해 컴퓨터에 대시보드 도구를 다운로드하는 메커니즘을 제공합니다. 이 도구를 사용하면 트래픽을 분석하여 WAF 규칙을 포함하여 선언할 적절한 트래픽 필터 규칙을 마련할 수 있습니다. 이 섹션에서는 먼저 개발 환경의 대시보드 도구에 익숙해지도록 한 다음 해당 지식을 활용하여 프로덕션 환경에서 규칙을 만드는 방법에 대한 지침을 제공합니다.
-
-대시보드 도구는 다음에서 직접 복제할 수 있습니다. [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) GitHub 리포지토리.
-
-
-### 대시보드 도구 이해하기 {#dashboard-getting-familiar}
-
-1. 개발 환경과 연결된 Cloud Manager 비프로덕션 구성 파이프라인을 만듭니다. 먼저 **배포 파이프라인** 옵션을 선택합니다. 그런 다음 을 선택합니다 **타깃팅된 배포**, Config, 리포지토리 및 git 분기를 실행하고 코드 위치를 /config로 설정합니다.
-
-   ![비프로덕션 파이프라인 선택 배포 추가](/help/security/assets/waf-select-pipeline1.png)
-
-   ![비프로덕션 파이프라인 추가 타깃팅 선택](/help/security/assets/waf-select-pipeline2.png)
-
-[비프로덕션 파이프라인 설정에 대한 자세한 내용은 이 문서 를 참조하십시오.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-
-1. 작업 영역에서 루트 수준에서 폴더 구성을 만들고 이라는 파일을 추가합니다 `cdn.yaml`를 사용하여 간단한 규칙을 선언하고 차단 모드가 아닌 로그 모드로 설정합니다.
+아래의 권장 규칙을 `cdn.yaml` 시작합니다. 로그 모드에서 시작하여 트래픽을 분석하고, 만족하면 차단 모드로 변경합니다. 웹 사이트의 라이브 트래픽의 고유한 특성을 기반으로 규칙을 수정할 수 있습니다.
 
 ```
 kind: "CDN"
 version: "1"
 metadata:
-  envTypes: ["dev"]
-data:
-  trafficFilters:
-    rules:
-    # Log request on simple path
-    - name: log-rule-example
-      when:
-        allOf:
-          - reqProperty: tier
-            matches: "author|publish"
-          - reqProperty: path
-            equals: '/log/me'
-      action: log
-```
-
-1. 구성 파이프라인을 사용하여 변경 사항을 커밋 및 푸시하고 구성을 배포합니다.
-
-   ![구성 파이프라인 실행](/help/security/assets/waf-run-pipeline.png)
-
-1. 구성이 배포되면 액세스를 시도합니다. `https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me` 웹 브라우저나 아래의 curl 명령 사용. 해당 페이지가 존재하지 않으므로 404 오류 페이지가 표시됩니다.
-
-   ```
-   curl -svo /dev/null https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
-   ```
-
-1. Cloud Manager에서 CDN 로그를 다운로드하고 규칙 속성이 규칙 이름과 일치하면서 규칙이 예상대로 일치하는지 확인합니다.
-
-   ```
-   "rules": "match=log-rule-example"
-   ```
-
-   ![로그 다운로드 를 선택합니다](/help/security/assets/waf-download-logs1.png)
-
-   ![로그 다운로드](/help/security/assets/waf-download-logs2.png)
-
-1. 대시보드 도구를 사용하여 도커 이미지를 로드하고 추가 정보를 따라 CDN 로그를 수집합니다. 다음 스크린샷에 표시된 대로 올바른 기간, 올바른 환경 및 올바른 필터를 선택합니다.
-
-   ![대시보드에서 시간 선택](/help/security/assets/dashboard-select-time.png)
-
-   ![대시보드에서 환경 선택](/help/security/assets/dashboard-select-env.png)
-
-1. 올바른 필터가 적용되면 예상 데이터가 로드된 대시보드를 볼 수 있습니다. 아래 스크린샷에서는 아일랜드에 있는 동일한 IP가 웹 브라우저와 curl을 사용하여 지난 2시간 동안 규칙 로그 규칙 예가 3번 트리거되었습니다.
-
-   ![개발 대시보드 데이터 보기](/help/security/assets/dashboard-see-data-logmode.png)
-   ![개발 대시보드 데이터 위젯 보기](/help/security/assets/dashboard-see-data-logmode2.png)
-
-1. 이제 cdn.yaml 를 변경하여 예상대로 페이지가 차단되도록 규칙을 차단 모드로 전환합니다. 그런 다음 앞에서 수행한 대로 구성 파이프라인을 커밋, 푸시 및 트리거합니다.
-
-```
-kind: "CDN"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  trafficFilters:
-    rules:
-    # Log request on simple path
-    - name: log-rule-example
-      when:
-        allOf:
-          - reqProperty: tier
-            matches: "author|publish"
-          - reqProperty: path
-            equals: '/log/me'
-      action: block
-```
-
-1. 구성이 배포되면 액세스를 시도합니다. `https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me` 웹 브라우저나 아래의 curl 명령 사용. 요청이 차단되었음을 나타내는 406 오류 페이지가 표시됩니다.
-
-   ```
-   curl -svo /dev/null https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
-   ```
-
-1. 다시 한 번 Cloud Manager에서 CDN 로그를 다운로드하고(참고: CDN 로그에 새 요청이 노출되는 데 최대 5분이 소요될 수 있음) 이전에 수행한 대로 대시보드 도구에서 가져오십시오. 완료되면 대시보드를 새로 고칩니다. 아래 스크린샷에서 볼 수 있듯이 `/log/me` 은(는) 규칙에 의해 차단됩니다.
-
-   ![제품 대시보드 데이터 보기](/help/security/assets/dashboard-see-data-blockmode.png)
-   ![제품 대시보드 데이터 보기](/help/security/assets/dashboard-see-data-blockmode2.png)
-
-1. WAF 트래픽 필터를 활성화한 경우(기능이 GA인 경우 추가 라이선스가 필요), 로그 모드에서 WAF 트래픽 필터 규칙을 반복하고 규칙을 배포합니다.
-
-```
-kind: "CDN"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  trafficFilters:
-    rules:
-      - name: log-waf-flags
-        when:
-          reqProperty: tier
-          matches: "author|publish"
-        action:
-          type: log
-          wafFlags:
-              - SANS
-              - SIGSCI-IP
-              - TORNODE
-              - NOUA
-              - SCANNER
-              - USERAGENT
-              - PRIVATEFILE
-              - ABNORMALPATH
-              - TRAVERSAL
-              - NULLBYTE
-              - BACKDOOR
-              - LOG4J-JNDI
-              - SQLI
-              - XSS
-              - CODEINJECTION
-              - CMDEXE
-              - NO-CONTENT-TYPE
-              - UTF8
-```
-
-1. 다음과 같은 도구 사용 [니토](https://github.com/sullo/nikto/tree/master) 일치하는 요청을 생성합니다. 아래 명령은 1분 이내에 약 550개의 악의적인 요청을 전송합니다.
-
-   ```
-   ./nikto.pl -useragent "MyAgent (Demo/1.0)" -D V -Tuning 9 -ssl -h https://publish-pXXXXX-eYYYYY.adobeaemcloud.com
-   ```
-
-1. Cloud Manager에서 CDN 로그를 다운로드하고(표시되는 데 최대 5분이 소요될 수 있음) 일치하는 선언된 규칙과 WAF 플래그가 모두 표시되는지 확인합니다.
-
-   보다시피, Nikto에 의해 생성된 여러 요청은 WAF에 의해 악의적인 것으로 플래그가 지정되었습니다. 우리는 Nikto가 CMDEXE, SQLI 및 NULLBYTE 취약성을 악용하려고 시도했음을 알 수 있다. 이제 작업을 로그에서 차단으로 변경하고 Nikto를 사용하여 검사를 다시 트리거하면 이전에 플래그가 지정된 모든 요청이 이번에 차단됩니다.
-
-   ![WAF 데이터 보기](/help/security/assets/dashboard-see-data-waf.png)
-
-
-   요청이 WAF 플래그와 일치할 때마다 선언된 규칙의 일부가 아니더라도 해당 WAF 플래그가 표시됩니다. 따라서 일치 규칙을 아직 선언하지 않은 잠재적으로 새로운 악성 트래픽을 항상 알 수 있습니다. 예:
-
-   ```
-   "rules": "match=log-waf-flags,waf=SQLI,action=blocked"
-   ```
-
-1. 로그 모드에서 속도 제한을 사용하는 규칙을 사용하여 반복합니다. 구성 파이프라인을 커밋, 푸시 및 트리거하여 구성을 적용합니다.
-
-```
-kind: "CDN"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  trafficFilters:
-    rules:
-      - name: limit-requests-client-ip
-        when:
-          reqProperty: tier
-          matches: "author|publish"
-        rateLimit:
-          limit: 10
-          window: 1
-          penalty: 60
-          groupBy:
-            - reqProperty: clientIp
-        action: log
-```
-
-1. 다음과 같은 도구 사용 [Vegeta](https://github.com/tsenart/vegeta) 트래픽을 생성합니다.
-
-   ```
-   echo "GET https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com" | vegeta attack -duration=5s | tee results.bin | vegeta report
-   ```
-
-1. 도구를 실행한 후 CDN 로그를 다운로드하고 대시보드에서 수집하여 속도 제한 규칙이 트리거되었는지 확인할 수 있습니다
-
-   ![WAF 데이터 보기](/help/security/assets/waf-dashboard-ratelimiter-1.png)
-
-   ![WAF 데이터 보기](/help/security/assets/waf-dashboard-ratelimiter-2.png)
-
-   보시다시피 **limit-requests-client-ip** 이(가) 트리거되었습니다.
-
-   트래픽 필터 규칙의 작동 방식을 잘 알고 있으므로 프로덕션 환경으로 이동할 수 있습니다.
-
-### 프로덕션 환경에 규칙 배포 {#dashboard-prod-env}
-
-처음에 규칙을 로그 모드로 선언하여 긍정 오류(false positive)가 없는지 확인해야 합니다. 이는 잘못 차단되는 합법적인 트래픽을 의미합니다.
-
-1. 프로덕션 환경과 연결된 프로덕션 구성 파이프라인을 만듭니다.
-
-1. 아래의 권장 규칙을 cdn.yaml에 복사합니다. 웹 사이트의 라이브 트래픽의 고유한 특성을 기반으로 규칙을 수정할 수 있습니다. 구성 파이프라인을 커밋, 푸시 및 트리거합니다. 규칙이 로그 모드에 있는지 확인합니다.
-
-```
-kind: "CDN"
-version: "1"
-metadata:
-  envTypes: ["dev"]
+  envTypes: ["dev", "stage", "prod"]
 data:
   trafficFilters:
     rules:
@@ -805,7 +608,7 @@ data:
               - CU
               - CI
       action: log
-    # Enable recommended WAF protections (only works if WAF is enabled for your environment)
+    # Enable recommended WAF protections (only works if WAF is licensed enabled for your environment)
     - name: block-waf-flags-globally
       when:
         reqProperty: tier
@@ -831,7 +634,7 @@ data:
           - CMDEXE
           - NO-CONTENT-TYPE
           - UTF8
-    # Disable protection against CMDEXE on /bin
+    # Disable protection against CMDEXE on /bin (only works if WAF is licensed enabled for your environment)
     - name: allow-cdmexe-on-root-bin
       when:
         allOf:
@@ -845,18 +648,14 @@ data:
           - CMDEXE
 ```
 
-1. 인지하고 있을 수 있는 악의적인 트래픽을 차단하기 위해 추가 규칙을 추가합니다. 예를 들어 사이트를 공격하는 특정 IP가 있습니다.
+## 튜토리얼 {#tutorial}
 
-1. 사이트의 트래픽 볼륨에 따라 몇 분, 몇 시간 또는 며칠 후에 Cloud Manager에서 CDN 로그를 다운로드하고 대시보드로 분석합니다.
+[튜토리얼 작업](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) 트래픽 필터 규칙에 대한 실용적인 지식과 경험을 쌓을 수 있습니다.
 
-1. 다음은 몇 가지 고려 사항입니다.
-   1. 선언된 규칙과 일치하는 트래픽은 차트와 요청 로그에 표시되므로 선언된 규칙이 트리거되는지 쉽게 확인할 수 있습니다.
-   1. 트래픽 일치 WAF 플래그는 규칙에 기록하지 않았더라도 차트 및 요청 로그에 표시됩니다. 따라서 항상 새로운 악성 트래픽을 알고 있으며 필요에 따라 새 규칙을 만들 수 있습니다. 선언된 규칙에 반영되지 않은 WAF 플래그를 보고 선언하는 것이 좋습니다.
-   1. 일치하는 규칙의 경우 요청 로그에서 긍정 오류(false positive)를 검사하고 규칙을 필터링할 수 있는지 확인하십시오. 예를 들어 특정 경로에 대해서만 긍정 오류(false positive)일 수 있습니다.
+튜토리얼은 다음 과정을 안내합니다.
 
-1. 적절한 규칙을 설정하여 차단 모드를 설정하고 추가 규칙을 추가하는 것도 고려하십시오. 더 많은 트래픽으로 더 자세히 분석할 때 일부 규칙은 로그 모드로 유지되어야 합니다.
-
-1. 구성을 다시 배포합니다.
-
-1. 자주 사용하는 기준으로 대시보드를 반복하여 분석합니다.
-
+* Cloud Manager 구성 파이프라인 설정
+* 도구를 사용하여 악의적인 트래픽 시뮬레이션
+* WAF 규칙을 포함한 트래픽 필터 규칙 선언
+* 대시보드 도구로 결과 분석
+* 모범 사례
