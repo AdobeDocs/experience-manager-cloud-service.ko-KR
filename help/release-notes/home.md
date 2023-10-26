@@ -2,8 +2,8 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 정보
 description: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 정보
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 531e8901458a52d0329b5dc2256d358fbfb9bbde
-workflow-type: ht
+source-git-commit: a1fc394c13d740b2250ec91340a0fe0e865ecbe3
+workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 | 제품 | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| 버전 | 2023.9.0 |
+| 버전 | 2023.10.0 |
 | 유형 | 지속적인 업데이트 |
 | 가용 일자 | 연속 업데이트 |
 

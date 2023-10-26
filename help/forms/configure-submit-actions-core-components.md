@@ -1,13 +1,12 @@
 ---
 title: 적응형 양식에 대한 제출 액션을 구성하는 방법?
-description: 적응형 양식은 여러 제출 액션을 제공합니다. 제출 액션은 적응형 양식이 제출 후 처리되는 방식을 정의합니다. 기본 제공 제출 액션을 사용하거나 직접 만들 수 있습니다.
-hide: true
-hidefromtoc: true
+description: 적응형 양식은 여러 제출 액션을 제공합니다. 제출 액션은 적응형 양식이 제출 후 처리되는 방식을 정의합니다. 기본 제공 제출 액션을 사용하거나 직접 만들 수 있습니다
+keywords: 적응형 양식에 대한 제출 액션을 선택하고, 적응형 양식을 sharepoint 목록에 연결하고, 적응형 양식을 sharepoint 문서 라이브러리에 연결하고, 적응형 양식을 양식 데이터 모델에 연결하는 방법
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
-workflow-type: ht
-source-wordcount: '3573'
-ht-degree: 100%
+source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+workflow-type: tm+mt
+source-wordcount: '3658'
+ht-degree: 91%
 
 ---
 
@@ -107,22 +106,34 @@ ht-degree: 100%
 
 ## SharePoint에 제출 {#submit-to-sharedrive}
 
-**[!UICONTROL SharePoint에 제출]** 제출 액션은 적응형 양식을 Microsoft® SharePoint Storage와 연결합니다. 양식 데이터 파일, 첨부 파일 또는 기록 문서를 연결된 Microsoft® SharePoint Storage에 제출할 수 있습니다. 적응형 양식에서 **[!UICONTROL SharePoint에 제출]** 제출 액션을 사용하려면
+**[!UICONTROL SharePoint에 제출]** 제출 액션은 적응형 양식을 Microsoft® SharePoint Storage와 연결합니다. 양식 데이터 파일, 첨부 파일 또는 기록 문서를 연결된 Microsoft® SharePoint Storage에 제출할 수 있습니다.
 
-1. [SharePoint 구성 만들기](#create-a-sharepoint-configuration-create-sharepoint-configuration): AEM Forms를 Microsoft® SharePoint Storage에 연결합니다.
+<!--
+Using Submit to SharePoint, you can:
+* [Connect an Adaptive Form to SharePoint Document Library](#connect-af-sharepoint-doc-library)
+* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list)
+-->
+
+### 적응형 양식을 SharePoint 문서 라이브러리에 연결 {#connect-af-sharepoint-doc-library}
+
+을(를) 사용하려면 **[!UICONTROL SharePoint 문서 라이브러리에 제출]** 적응형 양식에서 작업 제출:
+
+1. [SharePoint 문서 라이브러리 구성 만들기](#create-a-sharepoint-configuration-create-sharepoint-configuration): AEM Forms을 Microsoft® Sharepoint 스토리지에 연결합니다.
 2. [적응형 양식에서 SharePoint에 제출 액션 사용](#use-sharepoint-configuartion-in-af): Adaptive Form을 구성된 Microsoft® SharePoint에 연결합니다.
 
-### SharePoint 구성 만들기 {#create-sharepoint-configuration}
+#### SharePoint 문서 라이브러리 구성 만들기 {#create-sharepoint-configuration}
 
-AEM Forms를 Microsoft® SharePoint Storage에 연결하려면
+AEM Forms을 Microsoft® Sharepoint Document Library 스토리지에 연결하려면:
 
-1. **AEM Forms** 인스턴스 > **[!UICONTROL 도구]** > **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL Microsoft® SharePoint]**&#x200B;로 이동합니다.
-1. **구성 컨테이너**&#x200B;를 선택합니다. 구성 컨테이너의 확인란을 클릭하지 마십시오. 구성 컨테이너의 이름을 클릭하여 선택합니다. 선택한 구성 컨테이너에 구성을 저장합니다.
-1. **[!UICONTROL 만들기]**를 클릭합니다. SharePoint 구성 마법사가 나타납니다.
-   ![SharePoint 구성](/help/forms/assets/sharepoint_configuration.png)
+1. 다음으로 이동 **AEM Forms 작성자** 인스턴스 > **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. 을(를) 선택하면 **[!UICONTROL Microsoft® SharePoint]**&#x200B;로 리디렉션됩니다. **[!UICONTROL SharePoint 브라우저]**.
+1. **구성 컨테이너**&#x200B;를 선택합니다. 선택한 구성 컨테이너에 구성을 저장합니다.
+1. 클릭 **[!UICONTROL 만들기]** > **[!UICONTROL SharePoint 문서 라이브러리]** 을 클릭합니다. SharePoint 구성 마법사가 나타납니다.
+
+![SharePoint 구성](/help/forms/assets/sharepoint_configuration.png)
 1. **[!UICONTROL 제목]**, **[!UICONTROL 클라이언트 ID]**, **[!UICONTROL 클라이언트 보안]** 및 **[!UICONTROL OAuth URL]**&#x200B;을 지정합니다. OAuth URL의 클라이언트 ID, 클라이언트 보안, 테넌트 ID를 검색하는 방법에 대한 자세한 내용은 [Microsoft® Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)을 참조하십시오.
    * Microsoft® Azure 포털에서 앱의 `Client ID` 및 `Client Secret`를 검색할 수 있습니다.
-   * Microsoft® Azure 포털에서 리디렉션 URI를 `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`로 추가합니다. `[author-instance]`를 AEM Forms 작성자 인스턴스의 URL로 대체합니다.
+   * Microsoft® Azure 포털에서 리디렉션 URI를 `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`로 추가합니다. `[author-instance]`를 작성자 인스턴스의 URL로 대체합니다.
    * `offline_access` 및 `Sites.Manage.All` API 권한을 추가하여 읽기/쓰기 권한을 제공합니다.
    * OAuth URL 사용: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Microsoft® Azure 포털에서 `<tenant-id>`를 앱의 `tenant-id`로 대체합니다.
 
@@ -132,34 +143,95 @@ AEM Forms를 Microsoft® SharePoint Storage에 연결하려면
 
 1. **[!UICONTROL 연결]**&#x200B;을 클릭합니다. 연결이 완료되면 `Connection Successful` 메시지가 나타납니다.
 
-1. 데이터를 저장할 폴더를 선택하려면 **SharePoint Site** > **문서 라이브러리** > **SharePoint 폴더**&#x200B;를 선택합니다.
+1. 지금, 선택 **SharePoint 사이트** > **문서 라이브러리** > **SharePoint 폴더**&#x200B;를 클릭하여 데이터를 저장합니다.
 
    >[!NOTE]
    >
-   >* 기본적으로 `forms-ootb-storage-adaptive-forms-submission` 폴더는 선택한 SharePoint Site에서 사용할 수 있습니다. 폴더를 사용할 수 없으면 **폴더 만들기**&#x200B;를 사용하여 폴더를 만듭니다.
+   >* 기본적으로, `forms-ootb-storage-adaptive-forms-submission` 은(는) 선택한 SharePoint 사이트에 있습니다.
+   >* 폴더를 다음으로 만들기 `forms-ootb-storage-adaptive-forms-submission`에 아직 없는 경우 `Documents` 다음을 클릭하여 선택한 SharePoint 사이트의 라이브러리 **폴더 만들기**.
 
-이제 적응형 양식에서 **SharePoint에 제출** 제출 액션에 대한 SharePoint Sites 구성을 사용할 수 있습니다.
+이제 적응형 양식의 제출 작업에 이 SharePoint Sites 구성을 사용할 수 있습니다.
 
-### 적응형 양식에서 SharePoint에 제출 액션 사용 {#use-sharepoint-configuartion-in-af}
+#### 적응형 양식에서 SharePoint 문서 라이브러리 구성 사용 {#use-sharepoint-configuartion-in-af}
 
-이전 섹션에서 만든 SharePoint 구성을 사용하여 데이터 또는 기록 문서를 SharePoint 폴더에 저장할 수 있습니다. 적응형 양식에서 SharePoint에 제출 액션을 사용하려면 다음 단계를 수행하십시오.
+적응형 양식에서 생성된 SharePoint 문서 라이브러리 구성을 사용하여 데이터나 생성된 기록 문서를 SharePoint 폴더에 저장할 수 있습니다. 적응형 양식에서 SharePoint 문서 라이브러리 스토리지 구성을 다음으로 사용하려면 다음 단계를 수행하십시오.
 
-1. [적응형 양식](/help/forms/creating-adaptive-form.md)을 만듭니다. 적응형 양식을 만드는 동안 [SharePoint 구성 만들기](#create-sharepoint-configuration)에 사용되는 [!UICONTROL 구성 컨테이너]를 선택합니다.
+1. [적응형 양식](/help/forms/creating-adaptive-form-core-components.md)을 만듭니다.
 
    >[!NOTE]
    >
-   > [!UICONTROL 구성 컨테이너]가 선택되지 않으면 제출 액션 속성 창에 글로벌 [!UICONTROL 스토리지 구성] 폴더가 나타납니다.
+   > * 동일하게 선택 [!UICONTROL 구성 컨테이너] SharePoint 문서 라이브러리 저장소를 생성한 적응형 양식용.
+   > * [!UICONTROL 구성 컨테이너]가 선택되지 않은 경우 제출 액션 속성 창에 글로벌 [!UICONTROL 스토리지 구성] 폴더가 나타납니다.
 
-1. **제출 액션**&#x200B;을 **[!UICONTROL SharePoint에 제출]**&#x200B;로 선택합니다.
-1. 구성된 **[!UICONTROL 스토리지 구성]**&#x200B;을 선택합니다. 양식 데이터와 기록 문서를 저장할 폴더를 SharePoint에 지정합니다.
+1. **제출 액션**&#x200B;을 **[!UICONTROL SharePoint에 제출]**로 선택합니다.
+   ![Sharepoint GIF](/help/forms/assets/sharedrive-video.gif)
+1. 데이터를 저장하려는 경우 **[!UICONTROL 스토리지 구성]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 제출 설정을 저장합니다.
 
-양식을 제출하면 지정된 Microsoft® Sharepoint Storage 위치(폴더)에 데이터가 저장됩니다.
-저장된 데이터의 폴더 구조는 `/folder_name/form_name/year/month/date/submission_id/data`입니다.
+양식을 제출하면 데이터가 지정된 Microsoft® Sharepoint 문서 라이브러리 저장소에 저장됩니다.
+데이터를 저장하는 폴더 구조는 `/folder_name/form_name/year/month/date/submission_id/data`입니다.
+
+<!--
+
+### Connect an Adaptive Form to Microsoft® SharePoint List {#connect-af-sharepoint-list}
+
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
+
+To use the [!UICONTROL Submit to SharePoint List] Submit Action in an Adaptive Form:
+
+1. [Create a SharePoint List Configuration](#create-sharepoint-list-configuration): It connects AEM Forms to your Microsoft® Sharepoint List Storage.
+1. [Use the Submit using Form Data Model in an Adaptive Form](#use-submit-using-fdm): It connects your Adaptive Form to configured Microsoft® SharePoint.
+
+#### Create a SharePoint List Configuration {#create-sharepoint-list-configuration}
+
+To connect AEM Forms to your Microsoft&reg; Sharepoint List:
+
+1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.   
+1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
+1. Click **[!UICONTROL Create]** > **[!UICONTROL SharePoint List]** from the drop-down list. The SharePoint configuration wizard appears.  
+1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+    * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
+    * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
+    * Add the API permissions `offline_access` and `Sites.Manage.All` in the **Microsoft® Graph** tab to provide read/write permissions. Add `AllSites.Manage` permission in the **Sharepoint** tab to interact remotely with SharePoint data.
+    * Use OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft&reg; Azure portal.
+
+      >[!NOTE]
+      >
+      > The **client secret** field is mandatory or optional depends upon your Azure Active Directory application configuration. If your application is configured to use a client secret, it is mandatory to provide the client secret.
+
+1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears.
+1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
+1. Tap **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
+
+
+#### Use the Submit using Form Data Model in an Adaptive Form {#use-submit-using-fdm}
+
+You can use the created SharePoint List configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint List folder. Perform the following steps to use a SharePoint List storage configuration in an Adaptive Form as:
+
+1. [Create a Form Data Model using Microsoft® SharePoint List configuration](/help/forms/create-form-data-models.md)
+1. [Configure the Form Data Model to retrieve and send data](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
+1. [Configure Submit action using a Form Data Model](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+
+When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint List Storage. 
+
+>[!NOTE]
+>
+> In Microsoft® SharePoint List, the following column types are not supported:
+> * image column
+> * metadata column
+> * person column
+> * external data column
+
+-->
 
 ## 양식 데이터 모델을 사용하여 제출 {#submit-using-form-data-model}
 
 **[!UICONTROL 양식 데이터 모델을 사용하여 제출]** 제출 액션은 양식 데이터 모델에 지정된 데이터 모델 오브젝트의 제출된 적응형 양식 데이터를 해당 데이터 소스에 씁니다. 제출 액션을 구성할 때 데이터 소스에 다시 쓰려는 제출된 데이터가 있는 데이터 모델 오브젝트를 선택할 수 있습니다.
+
+양식 데이터 모델 제출 액션을 사용하여 적응형 양식을 Microsoft SharePoint 목록에 연결할 수 있습니다.
 
 또한 양식 데이터 모델과 기록 문서(DoR)를 사용하여 양식 첨부 파일을 데이터 소스에 제출할 수 있습니다. 양식 데이터 모델에 대한 자세한 내용은 [[!DNL AEM Forms] 데이터 통합](data-integration.md)을 참조하십시오.
 
@@ -247,7 +319,11 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ## OneDrive에 제출 {#submit-to-onedrive}
 
-**[!UICONTROL OneDrive에 제출]** 제출 액션은 적응형 양식을 Microsoft® OneDrive와 연결합니다. 양식 데이터, 파일, 첨부 파일 또는 기록 문서를 연결된 Microsoft® OneDrive Storage에 제출할 수 있습니다. 적응형 양식에서 [!UICONTROL OneDrive에 제출] 제출 액션을 사용하려면
+**[!UICONTROL OneDrive에 제출]** 제출 액션은 적응형 양식을 Microsoft® OneDrive와 연결합니다. 양식 데이터, 파일, 첨부 파일 또는 기록 문서를 연결된 Microsoft® OneDrive Storage에 제출할 수 있습니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
+
+적응형 양식에서 [!UICONTROL OneDrive에 제출] 제출 액션을 사용하려면
 
 1. [OneDrive 구성 만들기](#create-a-onedrive-configuration-create-onedrive-configuration): AEM Forms를 Microsoft® OneDrive Storage에 연결합니다.
 2. [적응형 양식에서 OneDrive에 제출 액션 사용](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af): Adaptive Form을 구성된 Microsoft® OneDrive에 연결합니다.
@@ -330,7 +406,7 @@ AEM Forms를 Azure Storage 컨테이너에 연결하려면
 ### 적응형 양식에서 Azure Storage 구성 사용 {#use-azure-storage-configuartion-in-af}
 
 적응형 양식에서 만든 Azure Storage 컨테이너 구성을 사용하여 데이터 또는 생성된 기록 문서를 Azure Storage 컨테이너에 저장할 수 있습니다. 적응형 양식에서 Azure Storage 컨테이너 구성을 다음과 같이 사용하려면 다음 단계를 수행하십시오.
-1. [적응형 양식](/help/forms/creating-adaptive-form.md)을 만듭니다.
+1. [적응형 양식](/help/forms/creating-adaptive-form-core-components.md)을 만듭니다.
 
    >[!NOTE]
    >
@@ -347,6 +423,8 @@ AEM Forms를 Azure Storage 컨테이너에 연결하려면
 데이터를 저장하는 폴더 구조는 `/configuration_container/form_name/year/month/date/submission_id/data`입니다.
 
 구성의 값을 설정하려면 [AEM SDK를 사용하여 OSGi 구성을 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ko#generating-osgi-configurations-using-the-aem-sdk-quickstart)하고 Cloud Service 인스턴스에 [구성을 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ko#deployment-process)합니다.
+
+
 
 
 ## Power Automate에 제출 {#microsoft-power-automate}
@@ -417,3 +495,16 @@ AEM 보안 및 강화 지침의 일부로, 400.jsp, 404.jsp 및 500.jsp와 같�
 양식 데이터 모델이나, 데이터에 `<afData>`, `<afBoundData>` 및 `</afUnboundData>` 태그가 포함되지 않은 스키마에 대해 XML 또는 JSON 데이터 컴플레인이 존재하는 스키마 기반 적응형 양식을 미리 채우는 경우 적응형 양식의 무제한 필드 데이터가 손실됩니다. 스키마는 XML 스키마, JSON 스키마 또는 양식 데이터 모델일 수 있습니다. 무제한 필드는 `bindref` 속성이 없는 적응형 양식 필드입니다.
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
+
+
+## 다음 보기
+
+* [양식에 맞는 스타일 또는 테마 만들기](using-themes-in-core-components.md)
+* [적응형 양식 만들기(핵심 구성 요소)](/help/forms/creating-adaptive-form-core-components.md)
+* [적응형 Forms에 대한 사용자 지정 제출 액션 만들기](/help/forms/custom-submit-action-form.md)
+
+
+## 추가 참조 {#see-also}
+
+{{see-also}}
+

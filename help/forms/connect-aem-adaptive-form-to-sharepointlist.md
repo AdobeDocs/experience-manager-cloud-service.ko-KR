@@ -3,7 +3,9 @@ title: AEM 적응형 양식을 Microsoft® SharePoint 목록에 연결하는 방
 description: 적응형 양식을 Microsoft® SharePoint 목록에 연결합니다. Microsoft® SharePoint 목록을 구성하고 구성을 사용하여 양식 데이터 모델을 만드는 방법을 알아봅니다. 또한 FDM을 적응형 양식과 통합하는 방법에 대해 알아봅니다.
 role: User, Developer
 keywords: AEM 적응형 양식을 Microsoft SharePoint 목록에 연결, 적응형 양식을 Microsoft SharePoint 목록에 연결, AEM 적응형 양식을 Microsoft SharePoint 목록에 통합, 적응형 양식을 Microsoft 목록에 통합, 적응형 양식의 데이터를 SharePoint 목록에 제출, SharePoint 워크플로우를 AEM SharePoint 목록에 제출.
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+hide: true
+hidefromToC: true
+source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 7%

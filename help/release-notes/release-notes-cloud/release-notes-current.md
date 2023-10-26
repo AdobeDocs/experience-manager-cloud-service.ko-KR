@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
+source-git-commit: 6e834244f3de7e615df12b137f2ae90a11e64ad0
 workflow-type: tm+mt
-source-wordcount: '1440'
-ht-degree: 98%
+source-wordcount: '951'
+ht-degree: 54%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 98%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Adobe Experience Manager]인 [!DNL Cloud Service]의 현재 기능 릴리스(2023.9.0)의 날짜는 2023년 9월 28일입니다. 다음 기능 릴리스(2023.10.0)는 2023년 10월 26일에 예정되어 있습니다.
+의 릴리스 날짜 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 기능 릴리스(2023.10.0)는 2023년 10월 26일입니다. 다음 기능 릴리스(2023.11.0)는 2023년 11월 30일에 예정되어 있습니다.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
@@ -34,33 +34,29 @@ ht-degree: 98%
 
 ## 릴리스 비디오 {#release-video}
 
-2023년 9월 릴리스 개요 비디오를 통해 2023.9.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
+2023년 10월 릴리스 개요 비디오를 통해 2023.10.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424826/?quality=12)
-
-## Edge Delivery Services {#edge-delivery}
-
-Edge Delivery는 고객 상호 작용 시점에서 측정 가능한 비즈니스 결과를 도출하기 위해 콘텐츠가 미치는 영향을 극대화하는 데 역점을 둔 구성 가능한 새로운 서비스 세트입니다.
-
-[여기](/help/edge/overview.md)에 있는 문서에서 Edge Delivery Services에 대해 자세히 알아보십시오.
+>[!VIDEO](https://video.tv.adobe.com/v/3425186/?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
+### 새로운 기능 {#assets-features}
+
+**Adobe Express을 위한 AEM Assets 추가 기능**: 이제 Experience Manager Assets에서 다음을 제공합니다. [Adobe Express을 위한 추가 기능](/help/assets/addon-adobe-express.md). 추가 기능을 사용하면 Adobe Express 사용자 인터페이스 내에서 Experience Manager Assets에 저장된 자산에 직접 액세스할 수 있습니다. AEM Assets에서 관리되는 콘텐츠를 Express 캔버스에 배치한 다음 AEM Assets 저장소에 새 콘텐츠 또는 편집된 콘텐츠를 저장할 수 있습니다. 추가 기능은 다음과 같은 주요 이점을 제공합니다.
+
+* AEM의 새 자산을 편집 및 저장하여 콘텐츠 재사용이 늘어남
+
+* 새로운 자산 또는 새로운 버전의 기존 자산을 만드는 데 소요되는 전반적인 시간과 노력이 단축됨
+
+  ![Assets 추가 기능에서 자산 포함](/help/assets/assets/aem-assets-add-on-include-assets.png)
+
 ### Assets 보기의 새로운 기능 {#assets-view-features}
 
-**폴더에 메타데이터 양식 할당**
+* **OneDrive 데이터 원본에서 자산 일괄 가져오기**: 관리자는 이제 다음 작업을 수행할 수 있습니다 [OneDrive에서 AEM Assets으로 많은 자산 가져오기](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). 대량 가져오기에 대해 지원되는 데이터 소스의 업데이트된 목록에는 Azure, AWS, Google Cloud, Dropbox 및 OneDrive가 포함됩니다.
 
-이제 배포 내의 특정 폴더에 메타데이터 양식을 할당할 수 있습니다. 하위 폴더의 자산을 포함한 폴더의 모든 자산에는 할당된 메타데이터 양식에 정의된 속성이 표시됩니다.
+  ![폴더에 메타데이터 양식 할당](/help/assets/assets/bulk-import-source-details-onedrive.png)
 
-![폴더에 메타데이터 양식 할당](/help/release-notes/assets/assign-to-folder.png)
-
-### 관리자 보기의 새로운 기능 {#admin-view-features}
-
-* **AEM Assets as a Cloud Service를 Edge Delivery Services용 문서 기반 작성과의 통합**: AEM Assets를 Edge Delivery Services용 문서 기반 작성과 통합하면 웹 사이트 작성자가 [Microsoft Word 또는 Google Docs에서 문서를 작성하는 동안 AEM Assets 저장소에서 사용 가능한 이미지를 사용할 수 있습니다](/help/edge/using.md#integrate-assets-edge).
-
-* **ZIP 아카이브 추출**: Experience Manager에서 관리하는 ZIP 아카이브를 선택하고, 다운로드하지 않고도 [Experience Manager로 직접 파일을 추출하는](/help/assets/manage-digital-assets.md#extract-zip-archives) 기능.
-
-  ![그룹에 맞는 항목 고정](/help/release-notes/assets/extract-archive.png)
+* **라이브러리에 대한 교차 조직 권한 부여 지원**: 이제 Experience Manager Assets을 사용하여 다른 IMS 조직의 Creative Cloud 라이브러리에 대한 액세스를 구성할 수 있습니다. Creative Cloud과 Experience Manager 간에 최신 제품 간 워크플로우에 더 쉽게 액세스할 수 있도록 하고 크리에이티브에 대한 시간과 노력을 줄일 수 있습니다.
 
 ### [!DNL Experience Manager Assets]에서 사용할 수 있는 프리릴리스 기능 {#prerelease-features-assets}
 
@@ -72,30 +68,17 @@ Edge Delivery는 고객 상호 작용 시점에서 측정 가능한 비즈니스
 
 ### [!DNL Experience Manager Forms]의 새로운 기능 {#forms-features}
 
-* [**Google reCAPTCHA 엔터프라이즈 지원**](/help/forms/captcha-adaptive-forms-core-components.md): 적응형 양식에서 Google reCAPTCHA Enterprise를 사용해 사기 행위 및 스팸 방지 기능을 강화하여 보다 안전한 사용자 환경을 제공합니다. 고급 위험 분석 및 원활한 통합을 통해 실제 사용자가 양식을 쉽게 제출할 수 있는 동시에 봇이 효과적으로 차단됩니다.
+* **적응형 Forms에 대한 사용자 지정 속성**: 사용자 지정 속성(키-값 쌍)을 양식 템플릿 또는 적응형 양식 구성 요소와 연결하여 양식 개발자가 이러한 사용자 지정 속성 값에 따라 조정된 동적 양식 동작을 제공할 수 있습니다. 예를 들어 개발자는 사용자 지정 속성 값을 기반으로 모바일, 데스크탑 또는 웹 플랫폼에서 Headless Forms 구성 요소의 다양한 표현물을 제작할 수 있으므로 다양한 장치에서 사용자 경험을 크게 향상시킬 수 있습니다.
 
-* [**양식용 Experience Cloud 설정 자동화를 사용하는 Adobe Analytics**](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md): 이제 버튼 클릭 몇 번이면 Experience Cloud 설정 자동화를 사용하여 Adobe Analytics를 활성화할 수 있습니다. 이를 통해 AEM Forms as a Cloud Service를 Experience Platform 태그 및 Adobe Analytics와 연결하여 게시된 양식에 대한 성능 지표를 캡처하고 추적할 수 있습니다.
+* **테마 및 템플릿**: 숙련된 전문가와 새로운 양식 작성자 모두에게 권한을 부여하는 맞춤형 새로운 테마와 템플릿을 사용하여 양식 작성 프로세스를 시작하십시오. 적응형 양식 핵심 구성 요소를 사용하여 원활하게 구축되었으며 세심하게 선별된 이 테마 및 템플릿을 사용하면 일반적인 사용 사례에 대한 양식을 신속하게 작성할 수 있습니다.
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3424577/enable-adobe-analytics/?quality=12&learn=on)
+  ![기본 제공 템플릿](/help/forms/assets/form-templates-ootb.png)
 
-* [**적응형 양식용 Adobe Analytics 보고서 템플릿**](/help/forms/view-understand-aem-forms-analytics-reports.md): 이제 Forms as a Cloud Service는 Adobe Analytics 보고서 OOTB를 제공합니다. 이렇게 하면 양식의 성능을 손쉽게 이해할 수 있습니다. 양식 수준 지표를 통해 렌디션, 방문자, 제출, 평균 채우기 시간 등 여러 주요 성과 지표(KPI)에서 양식이 어떻게 수행되는지에 대한 인사이트를 얻습니다. 사용자 행동 및 피드백을 추적하여 혼동을 주는 양식의 영역을 식별하고 양식의 디자인 및 기능을 개선할 수 있습니다.
+### [!DNL Forms]에서 사용할 수 있는 프리릴리스 기능 {#pre-release-features-available-in-forms-channel}
 
-  ![적응형 사용자 참여 Adobe Analytics 보고서](/help/forms/assets/forms-analytics-report.png)
+* **Microsoft SharePoint 목록에 Forms 제출**: AEM Forms은 SharePoint의 목록 기능을 활용할 수 있도록 양식 데이터를 SharePoint 목록에 직접 제출하는 OOTB 통합을 제공합니다.
 
-* **[핵심 구성 요소 기반 적응형 양식의 양식 조각](/help/forms/adaptive-form-fragments-core-components.md)**: 양식 조각으로 양식 작성 경험을 높이면서 중복을 제거하고, 디지털 인벤토리를 최적화하고, 공동 작업을 개선합니다. 이러한 재사용 가능한 구성 요소는 여러 양식에 원활하게 통합되어 일관성 있게 전문가 수준의 양식 작성을 간소화합니다. 양식 조각의 “한번 변경하여 전체 반영” 기능을 통해 재사용성, 표준화와 브랜드 일관성을 보장합니다. 한 위치에서의 업데이트가 이러한 조각을 활용하는 모든 양식에 자동으로 전파되므로 유지 관리 가능성과 효율성이 개선됩니다.
-
-* **[개선된 Adobe Sign 워크플로 단계](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**: Adobe Sign 워크플로 단계는 다음을 포함하도록 개선되었습니다.
-   * **Adobe Sign의 정부 ID 기반 인증**: Adobe Acrobat Sign의 정부 ID 기반 인증은 사용자가 정부에서 발급한 ID(운전면허증, 주민등록증, 여권)를 사용하여 자신의 ID를 인증할 수 있도록 추가 확인 계층을 제공합니다. 신뢰할 수 있는 식별 문서를 활용하여 이 개선된 기능은 서명 프로세스에 신뢰도를 추가하여 보안, 규정 준수 및 사용자 유효성 검사 강화에 필요한 시나리오에 적합합니다.
-
-   * **Adobe Sign 문서의 감사 추적**: 감사 추적 기능을 사용하여 Adobe Sign 문서의 수명 주기에 대한 세부 인사이트를 얻을 수 있습니다. 감사 추적을 사용하여 이제 문서와 관련된 모든 작업과 상호 작용에 대한 포괄적인 기록을 유지 관리할 수 있습니다. 여기에는 각 이벤트의 타임스탬프와 함께 문서를 조회하고, 편집하거나 서명한 사람 등과 같은 세부 정보가 포함됩니다. 이러한 개선된 기능은 규정 준수를 유지하고, 분쟁을 해결하고, 디지털 계약의 무결성을 보장하는 데 중요합니다.
-
-   * **계약 수신자의 새 역할이 서명자 이상으로 확장**: Adobe Acrobat Sign은 계약 수신자의 역할을 서명자 이상으로 확장하여 워크플로 요구 사항에 보다 잘 부합하도록 할 수 있습니다. 활성화되면 계약의 각 수신자는 자신의 역할을 개별 구성할 수 있으며 서명자는 기본 역할입니다.
-
-* **커뮤니케이션 API의 페이지 카운트 지원**: 이제 커뮤니케이션 API를 통해 문서를 검색하는 동시에 문서 내 포함된 페이지의 수에 대한 중요한 정보를 받을 수도 있습니다.
-
-* **[규칙 편집기의 사용자 정의 오류 핸들러로 오류 처리](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**: 이제 외부 서비스에서 반환되는 오류에 따라 사용자 정의 함수를 호출하여 맞춤형 응답을 최종 사용자에게 제공할 수 있습니다. 예를 들어 특정 오류 코드의 백엔드에서 사용자 정의 워크플로를 호출하거나 서비스가 중단되었음을 고객에게 알려 줄 수 있습니다.
-
-* **[64비트 버전의 AEM Forms Designer](/help/forms/installing-configuring-designer.md)**: 64비트 버전의 AEM Forms Designer는 향상된 성능, 확장성과 메모리 관리 기능을 통해 양식 생성 경험을 지원합니다. 64비트 아키텍처를 사용하면 더 크고 복잡한 프로젝트를 간단하게 처리하여 원활한 워크플로 디자인과 최적화된 효율성을 보장할 수 있습니다. 이 혁신적인 릴리스를 통해 양식 디자인 기능을 개선하고 AEM Forms Designer를 진전시킬 수 있습니다.
+  >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
 ### 얼리 어답터 프로그램 {#forms-early-adopter}
 
@@ -103,30 +86,17 @@ Edge Delivery는 고객 상호 작용 시점에서 측정 가능한 비즈니스
 
   공식 이메일 ID에서 “`aem-forms-early-adopter-program@adobe.com`”으로 이메일을 보내 얼리 어답터 프로그램에 참여하여 기능에 대한 액세스 권한을 요청할 수 있습니다.
 
-* **[Headless 적응형 양식](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)**: Headless 적응형 양식을 사용하여 개발자가 기존의 그래픽 사용자 인터페이스가 아닌 API를 통해 액세스하고 상호 작용할 수 있는 대화형 양식을 만들고, 게시하고, 관리할 수 있습니다. Headless 적응형 양식은 다음에 도움이 됩니다.
-
-   * 선택한 프로그래밍 언어로 고품질 다중 채널 양식 작성
-   * 양식을 데스크탑 및 모바일 앱, 웹 사이트 및 채팅 애플리케이션에 기본적으로 통합
-   * 양식 애플리케이션과 함께 독점 UI 구성 요소 재사용
-   * Adobe Experience Manager Forms의 기능 사용
-
-  공식 이메일 ID에서 `aem-forms-headless@adobe.com`으로 이메일을 보내 얼리 어답터 프로그램에 참여할 수 있습니다.
-
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### 캠페인 관련 URL 매개변수에 대한 새로운 CDN 캐싱 비헤이비어 {#cache-url-params}
+### 트래픽 필터 규칙(WAF 포함) {#traffic-filter-rules-waf}
 
-기본적으로 새 환경에서 CDN은 마케팅 관련 쿼리 매개변수를 제거하여 마케팅 캠페인 성과와 캐시 적중률을 높입니다. 기존 환경은 영향을 받지 않습니다. [자세히 알아보기.](/help/implementing/dispatcher/caching.md#marketing-parameters)
+[Adobe 관리 CDN에서 트래픽 필터링](/help/security/traffic-filter-rules-including-waf.md) url, IP 주소 및 사용자 에이전트를 포함한 속성별로 웹 사이트 트래픽과 일치하는 규칙을 선언하거나 사용자 지정 트래픽 속도 제한을 설정하여 DoS 공격을 방지합니다. 또한 고객은 정교한 웹 사이트 위협에 대한 추가 보호를 위해 고급 WAF(Web Application Firewall) 규칙 세트에 라이선스를 부여할 수 있습니다.
 
-### 트래픽 필터 규칙(WAF 규칙 포함) 얼리 어답터 프로그램 {#waf-early-adopter}
+다음을 통해 트래픽 필터 규칙을 숙지할 것을 권장합니다. [튜토리얼 시험 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)! 새 Cloud Manager 구성 파이프라인을 설정하고, 구성 파일에서 규칙을 선언하고, 악성 트래픽에 대한 CDN 로그를 분석하는 과정을 안내합니다.
 
-다음을 기준으로 CDN에서 트래픽을 필터링할 수 있습니다.
-* 요청 헤더 및 속성(예: IP 주소)
-* 악성 트래픽과 관련된 것으로 알려진 트래픽 패턴
+트래픽 필터 규칙은 11월에 스테이징 및 프로덕션 환경에 대한 점진적 롤아웃을 통해 개발 환경에서 사용할 수 있습니다. 이메일로 스테이징 및 프로덕션에 대한 사전 액세스를 요청할 수 있습니다 **aemcs-waf-adopter@adobe.com**.
 
-기능을 사용해 보고 피드백을 공유하고 싶으십니까? 공식 이메일 ID로 **aemcs-waf-adopter@adobe.com**&#x200B;에 이메일을 보내 얼리 어답터 프로그램에 대해 자세히 알아보십시오. 인원이 한정되어 있습니다.
-
-[여기](/help/security/traffic-filter-rules-including-waf.md)에 있는 문서에서 기능에 대해 자세히 알아보십시오.
+고급 WAF 트래픽 필터 규칙은 향상된 보안 또는 WAF-DDoS 보호 제품을 통해 올해 말에 라이선스가 부여될 수 있습니다.
 
 ## Cloud Manager {#cloud-manager}
 

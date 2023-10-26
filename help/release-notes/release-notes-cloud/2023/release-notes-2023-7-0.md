@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.7.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.7.0 릴리스 정보입니다.'
 exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
-source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
+source-git-commit: 75a26cf6f486ce951f1f81b5125026fac9458ab4
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '937'
 ht-degree: 100%
 
 ---
@@ -79,8 +79,6 @@ Experience Manager Assets는 이제 이미지 스마트 태그에 대해 향상�
 ### [!DNL Forms] 프리릴리스에서 사용 가능한 새로운 기능 {#new-features-available-in-forms-channel}
 
 * [**기본 제공 테마**](/help/forms/using-themes-in-core-components.md)**및 템플릿**: 바로 사용할 수 있으며 노련한 전문가와 초보 양식 작성자 모두의 역량을 강화하도록 맞춤화된 OOTB 테마 및 템플릿으로 양식 작성 프로세스를 시작하십시오. 적응형 양식 핵심 구성 요소를 사용하여 원활하게 구축되었으며 세심하게 선별된 이 테마 및 템플릿을 사용하면 일반적인 사용 사례에 대한 양식을 신속하게 작성할 수 있습니다.
-
-  ![기본 제공 템플릿](/help/forms/assets/form-templates-ootb.png)
 
 * **[Headless 양식용 React 구성 요소](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: 이제 기본 제공 React 구성 요소를 사용하여 Headless 적응형 양식 렌디션을 미리 보고 사용자 정의할 수 있습니다. 이러한 구성 요소는 스타일 지정을 위해 적응형 양식 핵심 구성 요소의 BEM 클래스를 활용하므로 특정 요구 사항에 따라 형태를 쉽게 사용자 정의할 수 있습니다.
 
