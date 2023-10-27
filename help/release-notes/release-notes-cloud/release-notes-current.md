@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 6e834244f3de7e615df12b137f2ae90a11e64ad0
+source-git-commit: f1af229fa0fb75a6181eae545ac7e51b31f212f7
 workflow-type: tm+mt
-source-wordcount: '951'
-ht-degree: 54%
+source-wordcount: '920'
+ht-degree: 56%
 
 ---
 
@@ -68,17 +68,12 @@ ht-degree: 54%
 
 ### [!DNL Experience Manager Forms]의 새로운 기능 {#forms-features}
 
-* **적응형 Forms에 대한 사용자 지정 속성**: 사용자 지정 속성(키-값 쌍)을 양식 템플릿 또는 적응형 양식 구성 요소와 연결하여 양식 개발자가 이러한 사용자 지정 속성 값에 따라 조정된 동적 양식 동작을 제공할 수 있습니다. 예를 들어 개발자는 사용자 지정 속성 값을 기반으로 모바일, 데스크탑 또는 웹 플랫폼에서 Headless Forms 구성 요소의 다양한 표현물을 제작할 수 있으므로 다양한 장치에서 사용자 경험을 크게 향상시킬 수 있습니다.
+* **[적응형 Forms에 대한 사용자 지정 속성](/help/forms/template-editor-core-components.md#add-a-custom-group-name-in-the-policy-of-template-editor)**: 사용자 지정 속성(키-값 쌍)을 양식 템플릿 또는 적응형 양식 구성 요소와 연결하여 양식 개발자가 이러한 사용자 지정 속성 값에 따라 조정된 동적 양식 동작을 제공할 수 있습니다. 예를 들어 개발자는 사용자 지정 속성 값을 기반으로 모바일, 데스크탑 또는 웹 플랫폼에서 Headless Forms 구성 요소의 다양한 표현물을 제작할 수 있으므로 다양한 장치에서 사용자 경험을 크게 향상시킬 수 있습니다.
 
 * **테마 및 템플릿**: 숙련된 전문가와 새로운 양식 작성자 모두에게 권한을 부여하는 맞춤형 새로운 테마와 템플릿을 사용하여 양식 작성 프로세스를 시작하십시오. 적응형 양식 핵심 구성 요소를 사용하여 원활하게 구축되었으며 세심하게 선별된 이 테마 및 템플릿을 사용하면 일반적인 사용 사례에 대한 양식을 신속하게 작성할 수 있습니다.
 
   ![기본 제공 템플릿](/help/forms/assets/form-templates-ootb.png)
 
-### [!DNL Forms]에서 사용할 수 있는 프리릴리스 기능 {#pre-release-features-available-in-forms-channel}
-
-* **Microsoft SharePoint 목록에 Forms 제출**: AEM Forms은 SharePoint의 목록 기능을 활용할 수 있도록 양식 데이터를 SharePoint 목록에 직접 제출하는 OOTB 통합을 제공합니다.
-
-  >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
 ### 얼리 어답터 프로그램 {#forms-early-adopter}
 
