@@ -2,13 +2,13 @@
 title: 에 대한 모범 사례 검색 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: 애플리케이션 내에서 에셋의 메타데이터를 검색, 찾기 및 검색하기 위한 모범 사례입니다.
 contentOwner: KK
-source-git-commit: 2c9316431d588241b470c8146c9444dbfc0af5fd
+exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
+source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
 workflow-type: tm+mt
 source-wordcount: '2544'
 ht-degree: 3%
 
 ---
-
 
 # AEM 검색 우수 사례
 

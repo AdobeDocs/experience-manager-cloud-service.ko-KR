@@ -1,13 +1,13 @@
 ---
 title: Cloud Service 컨텐츠 요청 이해
 description: Adobe에서 컨텐츠 요청 라이선스를 구입한 경우 Adobe Experience Cloud as a Service가 측정하는 컨텐츠 요청 유형과 조직의 분석 보고 도구와의 차이에 대해 알아봅니다.
-source-git-commit: e34b21194e35b2f56dd1e7df2165c3fa5c0cb7da
+exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
+source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 12%
 
 ---
-
 
 # Cloud Service 컨텐츠 요청
 
@@ -67,5 +67,3 @@ AEMas a Cloud Service 의 맨 위에 자체 CDN을 가져오는 고객의 경우
 | Commerce integration framework 호출 제외 | 제외됨 | Commerce integration framework에 전달되는 AEM에 대한 요청입니다(URL은 다음으로 시작). `/api/graphql`- 이중 계산을 방지하기 위해 Cloud Service에 대해 청구할 수 없습니다. |
 | 제외 `manifest.json` | 제외됨 | 매니페스트는 API 호출이 아닙니다. 데스크톱이나 휴대폰에 웹 사이트를 설치하는 방법에 대한 정보를 제공하기 위해 여기에 있습니다. Adobe은 JSON 요청을에 계산해서는 안 됩니다. `/etc.clientlibs/*/manifest.json` |
 | 제외 `favicon.ico` | 제외됨 | 반환된 콘텐츠는 HTML 또는 JSON이 아니어야 하지만 SAML 인증 흐름과 같은 일부 시나리오에서 favicons를 HTML으로 반환할 수 있으므로 계산에서 명시적으로 제외됨을 관찰하고 있습니다. |
-
-
