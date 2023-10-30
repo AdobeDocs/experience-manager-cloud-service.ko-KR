@@ -3,10 +3,10 @@ title: 적응형 양식 핵심 구성 요소에서 반복 가능한 패널을 �
 description: 적응형 양식에서 반복 가능한 섹션 또는 필드를 만드는 방법에 대해 알아봅니다.
 role: Architect, Developer, Admin, User
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '1390'
-ht-degree: 7%
+source-wordcount: '1359'
+ht-degree: 6%
 
 ---
 
@@ -229,10 +229,13 @@ XML 스키마와 복합 유형 요소의 minOccours 및 maxOccurs 속성에서 �
 
 {{see-also}}
 
+<!--
 
 >[!MORELIKETHIS]
 >
->* [적응형 양식 만들기](creating-adaptive-form-core-components.md)
->* [양식에 맞는 스타일 또는 테마 만들기](using-themes-in-core-components.md)
->* [규칙 편집기를 사용하여 양식에 동적 동작 추가](rule-editor.md)
->* [다양한 화면 크기 및 장치 유형에 대한 양식 레이아웃 설정](/help/sites-cloud/authoring/features/responsive-layout.md)
+>* [Create an Adaptive Form](creating-adaptive-form-core-components.md)
+>* [Create style or themes for your forms](using-themes-in-core-components.md)
+>* [Add dynamic behavior to forms using the rule editor](rule-editor.md)
+>* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+
+-->

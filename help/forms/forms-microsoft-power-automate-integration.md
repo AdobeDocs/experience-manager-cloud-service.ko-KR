@@ -4,10 +4,10 @@ description: Microsoft® Power Automate와 적응형 양식을 통합합니다.
 hide: true
 hidefromtoc: true
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
 source-wordcount: '1178'
-ht-degree: 17%
+ht-degree: 18%
 
 ---
 
@@ -190,12 +190,18 @@ ht-degree: 17%
         }
 ```
 
-## 추가 참조,
+## 참고 항목
 
 * [적응형 양식 만들기](creating-adaptive-form-core-components.md)
 * [제출 액션 구성](configure-submit-actions-core-components.md)
 * [Microsoft® Power Automate용 Adobe Experience Manager 커넥터](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)
+* [Microsoft Power Automate에 적응형 양식 연결](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+
+
+<!--
 
 >[!MORELIKETHIS]
 >
-* [적응형 양식을 Microsoft Power Automate에 연결](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+>* [Connect Adaptive Form to Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+
+-->

@@ -5,10 +5,10 @@ role: User, Developer
 keywords: AEM 적응형 양식을 Microsoft SharePoint 목록에 연결, 적응형 양식을 Microsoft SharePoint 목록에 연결, AEM 적응형 양식을 Microsoft SharePoint 목록에 통합, 적응형 양식을 Microsoft 목록에 통합, 적응형 양식의 데이터를 SharePoint 목록에 제출, SharePoint 워크플로우를 AEM SharePoint 목록에 제출.
 hide: true
 hidefromToC: true
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 7%
+source-wordcount: '550'
+ht-degree: 6%
 
 ---
 
@@ -86,16 +86,12 @@ Microsoft® SharePoint 목록을 AEM Workflow에 통합하려면
 * [데이터 소스 구성](/help/forms/configuring-submit-actions.md)
 * [양식 데이터 모델 만들기](/help/forms/create-form-data-models.md)
 * [Forms 중심의 AEM 워크플로 사용 - 비즈니스 프로세스 자동화를 위한 단계 참조](/help/forms/aem-forms-workflow-step-reference.md)
-
-## 추가 정보
-
+* [적응형 Forms에 대한 사용자 지정 제출 액션 만들기](/help/forms/custom-submit-action-form.md)
 * [AEM Sites 페이지에 적응형 양식 만들기 또는 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [AEM Sites 페이지에 적응형 양식 포함](/help/forms/embed-adaptive-form-aem-sites.md)
 * [적응형 양식에서 테마 만들기, 사용 및 사용자 지정](/help/forms/using-themes-in-core-components.md)
 
->[!MORELIKETHIS]
->
->* [적응형 Forms에 대한 사용자 지정 제출 액션 만들기](/help/forms/custom-submit-action-form.md)
+
 
 
 

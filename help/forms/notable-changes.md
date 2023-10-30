@@ -3,9 +3,9 @@ title: AEM 6.5 Forms과 AEM Cloud Service 간의 차이점은 무엇입니까?
 description: AEM 6.5 Forms 및 AEM Cloud Services을 비교하고 Cloud Service으로 업그레이드하거나 마이그레이션하기 전에 가장 두드러진 변경 사항에 대해 알아봅니다.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '1350'
+source-wordcount: '1348'
 ht-degree: 0%
 
 ---
@@ -113,13 +113,20 @@ Forms은 문서 생성 및 문서 조작 RESTful API를 as a Cloud Service으로
 
 * 커뮤니케이션 API를 사용하여 맞춤형 문서를 온디맨드로 제작하거나 Forms에서 as a Cloud Service으로 일괄 처리할 수 있습니다. 대화형 통신 및 에이전트 UI 사용 사례에 AEM 6.5 Forms 환경을 사용할 수 있습니다.
 
-## 다음 보기
+## 추가 참조
 
 * [AEM Forms(온-프레미스 및 AMS 환경)에서 AEM Forms as a Cloud Service으로 마이그레이션](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 * [AEM Sites 페이지에 적응형 Forms 추가 또는 생성](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [적응형 양식 만들기(핵심 구성 요소)](/help/forms/creating-adaptive-form-core-components.md)
-
-## 추가 정보
-
 * [AEM Forms as a Cloud Service 소개](/help/forms/home.md)
 * [로컬 개발 환경 및 초기 개발 프로젝트 설정](/help/forms/setup-local-development-environment.md)
+
+
+<!--
+
+## Additional Information
+
+* [Introduction to AEM Forms as a Cloud Service](/help/forms/home.md)
+* [Set up a local development environment and initial development project](/help/forms/setup-local-development-environment.md)
+
+-->

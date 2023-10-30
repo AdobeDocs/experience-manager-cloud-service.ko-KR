@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: f1af229fa0fb75a6181eae545ac7e51b31f212f7
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 56%
+ht-degree: 61%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 56%
 
   ![폴더에 메타데이터 양식 할당](/help/assets/assets/bulk-import-source-details-onedrive.png)
 
-* **라이브러리에 대한 교차 조직 권한 부여 지원**: 이제 Experience Manager Assets을 사용하여 다른 IMS 조직의 Creative Cloud 라이브러리에 대한 액세스를 구성할 수 있습니다. Creative Cloud과 Experience Manager 간에 최신 제품 간 워크플로우에 더 쉽게 액세스할 수 있도록 하고 크리에이티브에 대한 시간과 노력을 줄일 수 있습니다.
+* **라이브러리에 대한 조직 간 권한 지원**: 이제 Experience Manager Assets를 사용하면 다른 IMS 조직의 Creative Cloud Libraries에 대한 액세스를 구성할 수 있습니다. Creative Cloud와 Experience Manager 간의 최신 제품 간 워크플로에 더 쉽게 액세스할 수 있으며 크리에이티브에 소요되는 시간과 노력이 줄어듭니다.
 
 ### [!DNL Experience Manager Assets]에서 사용할 수 있는 프리릴리스 기능 {#prerelease-features-assets}
 

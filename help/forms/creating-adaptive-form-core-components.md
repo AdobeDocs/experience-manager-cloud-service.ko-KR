@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '2326'
+source-wordcount: '2303'
 ht-degree: 67%
 
 ---
@@ -191,15 +191,21 @@ ht-degree: 67%
 1. **[!UICONTROL 저장]**&#x200B;을 탭하여 변경 내용을 저장합니다.
 
 
-## 다음 보기
+<!--
 
-* [양식에 맞는 스타일 또는 테마 만들기](using-themes-in-core-components.md)
-* [규칙 편집기를 사용하여 양식에 동적 동작 추가](rule-editor.md)
-* [다양한 화면 크기 및 장치 유형에 대한 양식 레이아웃 설정](/help/sites-cloud/authoring/features/responsive-layout.md)
-* [샘플 테마 템플릿 및 양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+## See next
+
+* [Create style or themes for your forms](using-themes-in-core-components.md)
+* [Add dynamic behavior to forms using the rule editor](rule-editor.md)
+* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+
+-->
 
 ## 추가 참조 {#see-also}
 
 {{see-also}}
 
+* [규칙 편집기를 사용하여 양식에 동적 동작 추가](rule-editor.md)
+* [다양한 화면 크기 및 장치 유형에 대한 양식 레이아웃 설정](/help/sites-cloud/authoring/features/responsive-layout.md)
 

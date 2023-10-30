@@ -2,9 +2,9 @@
 title: WAF 규칙을 포함한 트래픽 필터 규칙
 description: WAF(Web Application Firewall) 규칙을 포함한 트래픽 필터 규칙 구성
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: aca385ff9a44733a6529c7e78e73fc1b138c1177
+source-git-commit: 8df8322eef7c74932d6feeeb4a7a6045935edd88
 workflow-type: tm+mt
-source-wordcount: '3453'
+source-wordcount: '3473'
 ht-degree: 45%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 45%
 # WAF 규칙을 포함한 트래픽 필터 규칙 {#traffic-filter-rules-including-waf-rules}
 
 >[!NOTE]
->이 기능은 11월에 스테이징 및 프로덕션 환경에 대한 점진적 롤아웃을 통해 개발 환경에서 곧 사용할 수 있습니다. 이메일로 스테이징 및 프로덕션에 대한 사전 액세스를 요청할 수 있습니다 **aemcs-waf-adopter@adobe.com**.
+>이 기능은 이제 개발 환경에서 사용할 수 있으며, 11월 말에 스테이징 및 프로덕션 환경에 대한 점진적 롤아웃이 제공됩니다. 이메일로 스테이징 및 프로덕션에 대한 사전 액세스를 요청할 수 있습니다 **aemcs-waf-adopter@adobe.com**.
 
 트래픽 필터 규칙을 사용하여 CDN 계층에서 요청을 차단하거나 허용할 수 있으며, 이는 다음과 같은 시나리오에서 유용할 수 있습니다.
 
@@ -26,6 +26,8 @@ ht-degree: 45%
 트래픽 필터 규칙의 하위 범주는 Enhanced Security 라이센스 또는 WAF-DDoS Protection 라이센스가 필요하며 올해 말에 사용할 수 있습니다. 이러한 강력한 규칙은 WAF(Web Application Firewall) 트래픽 필터 규칙(또는 WAF 규칙)이라고 하며 [플래그](#waf-flags-list) 이 문서의 뒷부분에 설명되어 있습니다.
 
 트래픽 필터 규칙은 Cloud Manager 구성 파이프라인을 통해 프로덕션(샌드박스가 아닌) 프로그램의 개발, 스테이지 및 프로덕션 환경 유형에 배포할 수 있습니다. RDE에 대한 지원은 향후에 제공될 것입니다.
+
+[튜토리얼 팔로우](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) 이 기능에 대한 구체적인 전문 지식을 신속하게 구축하십시오.
 
 ## 이 문서 구성 방법 {#how-organized}
 
