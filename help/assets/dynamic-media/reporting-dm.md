@@ -4,13 +4,15 @@ description: Dynamic Media 게재 URL에 실패한 오류 보고서를 요청하
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
-source-git-commit: 7ce15cc755c9db589001d543c16312096d88bcf0
+hide: true
+hidefromtoc: true
+exl-id: 2488f813-df15-4dbb-8747-f827ee5925e1
+source-git-commit: aa7429d9ca9f67979303c0b85c9dbd5b8c74c05c
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 4%
 
 ---
-
 
 # 실패한 Dynamic Media 게재 URL에 대한 오류 보고서 요청
 
@@ -31,7 +33,3 @@ ht-degree: 4%
    회사 이름을 모를 경우 [Dynamic Media 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=ko#configuring-dynamic-media-cloud-services) 페이지 위치 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Dynamic Media 구성]**. Dynamic Media 구성 브라우저 페이지에서 **[!UICONTROL 글로벌]**&#x200B;를 선택하고 *[Dynamic_Media_folder_icon]* 확인란을 선택한 다음 을 선택합니다 **[!UICONTROL 편집]**. Dynamic Media 구성 페이지에 액세스하려면 AEM에 관리자 권한이 있어야 합니다.
 
    ![Dynamic Media 구성 페이지에 액세스](/help/assets/dynamic-media/assets/reporting-accessdmconfig.png)
-
-
-
-
