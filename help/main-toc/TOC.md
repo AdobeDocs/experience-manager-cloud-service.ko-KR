@@ -169,7 +169,7 @@ ht-degree: 98%
    + [AEM as a Cloud Service에 대한 IMS 지원](/help/security/ims-support.md)
    + [AEM as a Cloud Service에 대한 Same Site 쿠키 지원](/help/security/same-site-cookie-support.md)
    + [메일 서비스에 대한 OAuth2 지원](/help/security/oauth2-support-for-mail-service.md)
-   + [WAF 규칙을 포함한 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md)
+   + [WAF 규칙이 포함된 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service 보안 고려 사항](/help/security/security-considerations.md)
 + 온보딩 {#onboarding}
    + [여기에서 시작](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
@@ -857,7 +857,7 @@ ht-degree: 98%
          + [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-testing.md)
          + [경험 감사 대시보드](/help/implementing/cloud-manager/experience-audit-dashboard.md)
       + [로그 액세스 및 관리](/help/implementing/cloud-manager/manage-logs.md)
-      + [사용자 지정 권한](/help/implementing/cloud-manager/custom-permissions.md)
+      + [사용자 정의 권한](/help/implementing/cloud-manager/custom-permissions.md)
       + [SLA 보고](/help/implementing/cloud-manager/sla-reporting.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [알림](/help/implementing/cloud-manager/notifications.md)

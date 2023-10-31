@@ -5,7 +5,7 @@ exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 source-git-commit: 88198e9333a7f706fc99e487d8cde84647fa111f
 workflow-type: tm+mt
 source-wordcount: '1747'
-ht-degree: 56%
+ht-degree: 87%
 
 ---
 
@@ -39,31 +39,31 @@ AEM Assets 보기의 일괄 가져오기는 관리자에게 데이터 소스에�
 
 ## Dropbox 개발자 애플리케이션 구성 {#dropbox-developer-application}
 
-Dropbox 계정에서 AEM Assets으로 에셋을 가져오기 전에 Dropbox 개발자 애플리케이션을 만들고 구성합니다.
+Dropbox 계정에서 AEM Assets로 자산을 가져오기 전에 Dropbox 개발자 애플리케이션을 만들고 구성해야 합니다.
 
 다음 단계를 실행합니다.
 
-1. 에 로그인 [Dropbox 계정](https://www.dropbox.com/developers) 및 클릭 **[!UICONTROL 앱 만들기]**.
+1. [Dropbox 계정](https://www.dropbox.com/developers)으로 로그인한 다음 **[!UICONTROL 앱 만들기]**&#x200B;를 클릭합니다.
 
-1. 다음에서 **[!UICONTROL API 선택]** 섹션에서 사용 가능한 라디오 단추만 선택합니다.
+1. **[!UICONTROL API 선택]** 섹션에서 사용 가능한 라디오 버튼만 선택합니다.
 
-1. 다음에서 **[!UICONTROL 필요한 액세스 유형 선택]** 섹션에서 다음 옵션 중 하나를 선택합니다.
+1. **[!UICONTROL 필요한 액세스 유형 선택]** 섹션에서 다음 옵션 중 하나를 선택합니다.
 
-   * 선택 **[!UICONTROL 앱 폴더]**: Dropbox 계정의 애플리케이션 내에서 만든 단일 폴더에 액세스해야 하는 경우.
+   * Dropbox 계정의 애플리케이션 내에 생성된 단일 폴더에 액세스해야 하는 경우 **[!UICONTROL 앱 폴더]**&#x200B;를 선택합니다.
 
-   * 선택 **[!UICONTROL 전체 Dropbox]**, Dropbox 계정 내의 모든 파일 및 폴더에 액세스해야 하는 경우.
+   * Dropbox 계정 내의 모든 파일과 폴더에 액세스해야 하는 경우 **[!UICONTROL 전체 Dropbox]**&#x200B;를 선택합니다.
 
-1. 응용 프로그램의 이름을 지정하고 **[!UICONTROL 앱 만들기]**.
+1. 애플리케이션 이름을 지정하고 **[!UICONTROL 앱 만들기]**&#x200B;를 클릭합니다.
 
-1. 다음에서 **[!UICONTROL 설정]** 응용 프로그램의 탭에서 다음을 **[!UICONTROL 리디렉션 URI]** 섹션:
+1. 애플리케이션의 **[!UICONTROL 설정]** 탭에서 **[!UICONTROL 리디렉션 URI]** 섹션에 다음을 추가합니다.
 
    * https://exc-unifiedcontent.experience.adobe.net
 
-   * https://exc-unifiedcontent.experience-stage.adobe.net (스테이지 환경에만 유효)
+   * https://exc-unifiedcontent.experience-stage.adobe.net(스테이징 환경에만 유효함)
 
-1. 다음에 대한 값을 복사합니다. **[!UICONTROL 앱 키]** 및 **[!UICONTROL 앱 비밀]** 필드. AEM Assets에서 일괄 가져오기 도구를 구성하는 동안 값이 필요합니다.
+1. **[!UICONTROL 앱 키]** 및 **[!UICONTROL 앱 암호]** 필드의 값을 복사합니다. 이 값은 AEM Assets에서 일괄 가져오기 도구를 구성하는 동안 필요합니다.
 
-1. 다음에서 **[!UICONTROL 권한]** 탭에서 다음 권한을 **[!UICONTROL 개별 범위]** 섹션.
+1. **[!UICONTROL 권한]** 탭에서 **[!UICONTROL 개별 범위]** 섹션 내에 다음 권한을 추가합니다.
 
    * account_info.read
 
@@ -73,40 +73,40 @@ Dropbox 계정에서 AEM Assets으로 에셋을 가져오기 전에 Dropbox 개�
 
    * files.content.write
 
-1. 클릭 **[!UICONTROL 제출]** 변경 내용을 저장합니다.
+1. **[!UICONTROL 제출]**&#x200B;을 클릭하여 변경 내용을 저장합니다.
 
-## OneDrive 개발자 응용 프로그램 구성 {#onedrive-developer-application}
+## OneDrive 개발자 애플리케이션 구성 {#onedrive-developer-application}
 
-OneDrive 계정에서 AEM Assets으로 자산을 가져오기 전에 OneDrive 개발자 응용 프로그램을 만들고 구성합니다.
+OneDrive 계정에서 AEM Assets로 자산을 가져오기 전에 OneDrive 개발자 애플리케이션을 만들고 구성해야 합니다.
 
 다음 단계를 실행합니다.
 
-1. 에 로그인 [OneDrive 계정](https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) 및 클릭 **[!UICONTROL 새 등록]**.
+1. [OneDrive 계정](https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)으로 로그인한 다음 **[!UICONTROL 신규 등록]**&#x200B;을 클릭합니다.
 
-1. 응용 프로그램의 이름을 지정하고 다음을 선택합니다. **[!UICONTROL 이 조직 디렉터리의 계정만 해당(Adobe 전용 - 단일 테넌트)]** 출처: **[!UICONTROL 지원되는 계정 유형]**, 및 클릭 **[!UICONTROL 등록]**. 애플리케이션이 정상적으로 생성되었습니다.
+1. 애플리케이션 이름을 지정하고 **[!UICONTROL 지원되는 계정 유형]**&#x200B;에서 **[!UICONTROL 이 조직 디렉터리에 있는 계정만(Adobe에만 해당 - 단일 테넌트)]**&#x200B;을 선택한 다음 **[!UICONTROL 등록]**&#x200B;을 클릭합니다. 애플리케이션이 성공적으로 생성됩니다.
 
-1. 애플리케이션 클라이언트 ID 및 테넌트 ID 필드의 값을 복사합니다. AEM Assets에서 일괄 가져오기 도구를 구성하는 동안 값이 필요합니다.
+1. 애플리케이션 클라이언트 ID 및 테넌트 ID 필드의 값을 복사합니다. 이 값은 AEM Assets에서 일괄 가져오기 도구를 구성하는 동안 필요합니다.
 
 1. 인증서를 추가하려면 다음 단계를 수행하십시오.
-   1. 응용 프로그램 개요 페이지에서 **[!UICONTROL 인증서 또는 암호 추가]** 그런 다음 을 클릭합니다. **[!UICONTROL 새 클라이언트 암호]**.
-   1. 클라이언트 암호 설명 및 만료를 지정하고 **[!UICONTROL 추가]**.
-   1. 클라이언트 암호를 만든 후 **[!UICONTROL 값]** 필드(암호 ID 필드 복사 안 함). AEM Assets에서 일괄 가져오기를 구성하는 동안 필요합니다.
+   1. 애플리케이션 개요 페이지에서 **[!UICONTROL 인증서 또는 암호 추가]**&#x200B;를 클릭한 다음 **[!UICONTROL 새 클라이언트 암호]**&#x200B;를 클릭합니다.
+   1. 클라이언트 암호 설명과 만료를 지정한 다음 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+   1. 클라이언트 암호를 만든 다음에는 **[!UICONTROL 값]** 필드를 복사합니다. 암호 ID 필드는 복사하지 마십시오. 값 필드는 AEM Assets에서 일괄 가져오기를 구성하는 동안 필요합니다.
 
-1. 다음 단계를 실행하여 리디렉션 URI를 추가합니다.
-   1. 응용 프로그램 개요 페이지에서 **[!UICONTROL 리디렉션 URI 추가]** > **[!UICONTROL 플랫폼 추가]** > **[!UICONTROL 웹]**.
-   1. 다음에 추가 **[!UICONTROL 리디렉션 URI]** 섹션:
+1. 리디렉션 URI를 추가하려면 다음 단계를 실행합니다.
+   1. 애플리케이션 개요 페이지에서 **[!UICONTROL 리디렉션 URI 추가]** > **[!UICONTROL 플랫폼 추가]** > **[!UICONTROL 웹]**&#x200B;을 클릭합니다.
+   1. **[!UICONTROL Redirect URI]** 섹션에 다음을 추가합니다.
 
       * https://exc-unifiedcontent.experience.adobe.net
 
-      * https://exc-unifiedcontent.experience-stage.adobe.net (스테이지 환경에만 유효)
+      * https://exc-unifiedcontent.experience-stage.adobe.net(스테이징 환경에만 유효함)
 
-      첫 번째 URI를 추가하고 **[!UICONTROL 구성]** 추가합니다. 다음을 클릭하여 더 추가할 수 있습니다. **[!UICONTROL URI 추가]** 옵션이에서 사용할 수 있음 **[!UICONTROL 웹]** 다음에 대한 섹션 **[!UICONTROL 인증]** 페이지를 가리키도록 업데이트하는 중입니다.
+      첫 번째 URI를 추가하고 **[!UICONTROL 구성]**&#x200B;을 클릭하여 추가합니다. **[!UICONTROL 인증]** 페이지의 **[!UICONTROL 웹]** 섹션에 있는 **[!UICONTROL URI 추가]** 옵션을 클릭하면 더 많은 URI를 추가할 수 있습니다.
 
-1. 다음 단계를 실행하여 애플리케이션에 대한 API 권한을 추가합니다.
-   1. 클릭 **[!UICONTROL API 권한]** 왼쪽 창에서 **[!UICONTROL 권한 추가]**.
-   1. 클릭 **[!UICONTROL Microsoft 그래프]** > **[!UICONTROL 위임된 권한]**. 다음 **[!UICONTROL 권한 선택]** 섹션에는 사용 가능한 권한이 표시됩니다.
-   1. 선택 `offline_access` 의 권한 `OpenId permissions` 및 `Files.ReadWrite.All` 의 권한 `Files`.
-   1. 클릭 **[!UICONTROL 권한 추가]** 업데이트를 저장합니다.
+1. 애플리케이션에 대한 API 권한을 추가하려면 다음 단계를 실행하십시오.
+   1. 왼쪽 창에서 **[!UICONTROL API 권한]**&#x200B;을 클릭하고 **[!UICONTROL 권한 추가]**&#x200B;를 클릭합니다.
+   1. **[!UICONTROL Microsoft Graph]** > **[!UICONTROL 위임된 권한]**&#x200B;을 클릭합니다. **[!UICONTROL 권한 선택]** 섹션에 사용 가능한 권한이 표시됩니다.
+   1. `OpenId permissions`에서 `offline_access` 권한을 선택한 다음 `Files`에서 `Files.ReadWrite.All` 권한을 선택합니다.
+   1. **[!UICONTROL 권한 추가]**&#x200B;를 클릭하여 업데이트를 저장합니다.
 
 
 
@@ -123,9 +123,9 @@ OneDrive 계정에서 AEM Assets으로 자산을 가져오기 전에 OneDrive �
 
    >[!NOTE]
    >
-   >Dropbox을 데이터 소스로 사용하는 경우 다음 규칙에 따라 소스 폴더 경로를 지정합니다.
-   >* 다음을 선택하는 경우 **전체 Dropbox** Dropbox 응용 프로그램을 만드는 동안 자산이 포함된 폴더가 있는 위치 `https://www.dropbox.com/home/bulkimport-assets`, 다음 지정 `bulkimport-assets` 다음에서 **[!UICONTROL 소스 폴더]** 필드.
-   >* 다음을 선택하는 경우 **앱 폴더** Dropbox 응용 프로그램을 만드는 동안 자산이 포함된 폴더가 있는 위치 `https://www.dropbox.com/home/Apps/BulkImportAppFolderScope/bulkimport-assets`, 다음 지정 `bulkimport-assets` 다음에서 **[!UICONTROL 소스 폴더]** 필드, 위치 `BulkImportAppFolderScope` 는 애플리케이션 이름을 나타냅니다. `Apps` 다음 시간 이후에 자동으로 추가됨 `home` 이 경우.
+   >Dropbox를 데이터 소스로 사용하는 경우 다음 규칙에 따라 소스 폴더 경로를 지정합니다.
+   >* Dropbox 애플리케이션 및 `https://www.dropbox.com/home/bulkimport-assets`에 있는 자산이 포함된 폴더를 만드는 동안 **전체 Dropbox**&#x200B;를 선택하는 경우 **[!UICONTROL 소스 폴더]** 필드에서 `bulkimport-assets`를 지정합니다.
+   >* Dropbox 애플리케이션 및 `https://www.dropbox.com/home/Apps/BulkImportAppFolderScope/bulkimport-assets`에 있는 자산이 포함된 폴더를 만드는 동안 **앱 폴더**&#x200B;를 선택하는 경우 **[!UICONTROL 소스 폴더]** 필드에서 `bulkimport-assets`를 지정합니다. 여기에서 `BulkImportAppFolderScope`은 애플리케이션의 이름을 나타냅니다. 이 경우 `Apps`가 `home` 다음에 자동으로 추가됩니다.
 
 1. (선택사항) **[!UICONTROL 가져오기 후 소스 파일 삭제]** 옵션을 선택하여 파일을 Experience Manager Assets로 가져온 후에 소스 데이터 저장소에서 원본 파일을 삭제합니다.
 1. **[!UICONTROL 가져오기 모드]**&#x200B;를 선택합니다. **[!UICONTROL 건너뛰기]**, **[!UICONTROL 바꾸기]** 또는 **[!UICONTROL 버전 만들기]**를 선택합니다. 건너뛰기 모드는 기본값이고, 자산이 이미 존재하는 경우 이 모드에서 수집기는 자산 가져오기를 건너뜁니다.

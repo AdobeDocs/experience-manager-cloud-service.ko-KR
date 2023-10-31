@@ -2,10 +2,10 @@
 title: AEM Headless 번역 여정
 description: AEM의 강력한 번역 도구를 사용하여 Headless 콘텐츠 번역을 통한 가이드 여정을 시작해 보십시오.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
-workflow-type: ht
+source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -66,8 +66,8 @@ Adobe가 AEM을 통해 AEM 관련 Headless 비즈니스 사례를 해결하는 �
 | 0 | AEM Headless 번역 여정 | 이 문서 |
 | 1 | [Headless 콘텐츠 및 AEM에서의 번역 방법에 대해 알아보기](learn-about.md) | Headless 개념, AEM에 매핑하는 방법 및 AEM 번역 이론에 대해 알아봅니다. |
 | 2 | [AEM Headless 번역 시작하기](getting-started.md) | Headless 콘텐츠를 구성하는 방법 및 AEM의 번역 도구의 작동 방식에 대해 알아봅니다. |
-| 3 | [번역 커넥터 구성](configure-connector.md) | AEM을 번역 서비스에 연결하는 방법에 대해 알아봅니다. |
-| 4 | [콘텐츠 번역](translate-content.md) | 번역 커넥터 및 규칙을 사용하여 Headless 콘텐츠를 번역합니다. |
+| 3 | [번역 통합 구성](configure-connector.md) | AEM을 번역 서비스에 연결하는 방법에 대해 알아봅니다. |
+| 4 | [콘텐츠 번역](translate-content.md) | 번역 통합 및 규칙을 사용하여 Headless 콘텐츠를 번역할 수 있습니다. |
 | 5 | [번역된 콘텐츠 게시](publish-content.md) | 기본 콘텐츠를 업데이트할 때 번역된 콘텐츠를 게시하고 번역을 업데이트하는 방법에 대해 알아봅니다. |
 
 ## 다음 단계 {#what-is-next}

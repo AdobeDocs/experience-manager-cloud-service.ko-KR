@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 6e82bbcc1b83fa9216831f6f746665507a46eec7
 workflow-type: tm+mt
 source-wordcount: '585'
-ht-degree: 24%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 24%
 
 ## 릴리스 14029 {#release-14029}
 
-다음은 2023년 10월 25일에 공개적으로 릴리스된 유지 보수 릴리스 14029에 대한 지속적인 개선 사항을 요약합니다. 이 유지 관리 릴리스는 이전 유지 관리 릴리스 13804의 업데이트입니다.
+2023년 10월 25일에 릴리스된 유지 관리 릴리스 14029의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이 유지 관리 릴리스는 이전 유지 관리 릴리스 13804의 업데이트입니다.
 
 이 유지 관리 릴리스(2023.11.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)을 참조하십시오.
 
@@ -27,47 +27,47 @@ ht-degree: 24%
 
 ### 해결된 문제 {#fixed-issues-14029}
 
-* ASSETS-25199: 이미지 핵심 구성 요소에 올바른 스마트 자르기가 표시되지 않음
-* ASSETS-26142: 검색 요청이 실패하거나 중단되면 unified-shell.js customEnvLabel이 설정되거나 다시 시도되지 않습니다.
-* ASSETS-26416: 검색 양식에서 항상 &quot;1일 전&quot;으로 정의된 상대 날짜 조건자
-* ASSETS-27321: 팀 멤버십 변경 시 그룹 캐시 지우기
+* ASSETS-25199: 이미지 코어 구성 요소에 적합한 스마트 자르기가 표시되지 않음
+* ASSETS-26142: 검색 요청이 실패 또는 중단된 경우 Unified-shell.js customEnvLabel이 설정되지 않거나 다시 시도됨
+* ASSETS-26416: 상대적 날짜 조건자는 검색 양식에서 항상 “1일 전”으로 정의됨
+* ASSETS-27321: 팀 멤버십 변경 사항에서 그룹 캐시 지우기
 * ASSETS-27591: 이전 org.json에 대한 종속성 수정
-* 차단 목록에 추가하다 ASSETS-28439: 글로벌 차단 목록이 구성되지 않은 경우 스마트 태그 NPE
-* ASSETS-28612: &quot;repository-api&quot;에서 BlockedTagResolver 수정 사항
-* ASSETS-28634: Adobe 스톡의 Omnisearch 필드에 자산 데이터가 자동으로 추가되지 않습니다
-* ASSETS-28727: 처리 프로필 구성 목록에 지정된 사용자 지정 높이 및 너비 값이 표시되지 않습니다
+* ASSETS-28439: 전역 차단 목록이 구성되지 않은 경우의 스마트 태그 차단 목록 NPE
+* ASSETS-28612: “repository-api”의 BlockedTagResolver 수정
+* ASSETS-28634: Adobe Stock의 Omnisearch 필드에 자산 데이터가 자동으로 추가되지 않음
+* ASSETS-28727: 처리 프로필 구성 목록에 지정된 사용자 정의 높이 및 폭 값이 표시되지 않음
 * ASSETS-29056: 트랜스코딩 렌디션 AEM 표준 처리 프로필 추가
-* ASSETS-29105: RDE 기능 모델의 SecurityProviderRegistration requiredServicePids에 제한 공급자가 누락되었습니다.
-* ASSETS-29106: Adobe 스톡 보기에서 활성화된 통합 쉘에 오류가 발생합니다. AEM
-* ASSETS-29115: 제한 공급자 경로에 대한 구성 속성 제거
-* ASSETS-29208: 서비스 CompleteUploadAssetServlet이 등록되기 전에 작성자 pod로 전송된 요청으로 인해 자산 업로드 시 오류 발생
-* ASSETS-29297: 체크 아웃한 상태로 검색 저장 필터 옵션을 만드는 중 문제 발생
-* ASSETS-29363: 메타데이터 프로필이 IPTC에 대한 기본값을 적용하지 않음
-* ASSETS-29404: 쿼리 제한에 도달하는 링크 공유 보고서
+* ASSETS-29105: RDE 기능 모델의 SecurityProviderRegistration requiredServicePids에 제한 공급자가 없음
+* ASSETS-29106: 통합 셸이 AEM에 활성화되면 Adobe Stock 보기에 오류 발생
+* ASSETS-29115: 제한 공급자 경로의 구성 속성 제거
+* ASSETS-29208: 서비스 CompleteUploadAssetServlet 등록 이전에 작성자 Pod에 전송된 요청으로 인해 자산 업로드 오류 발생
+* ASSETS-29297: 체크아웃된 필터 옵션으로 검색 저장을 생성하는 동안 문제 발생
+* ASSETS-29363: 메타데이터 프로필에서 IPTC의 기본값이 적용되지 않음
+* ASSETS-29404: 링크 공유 보고서가 쿼리 제한에 도달함
 * ASSETS-29431: 이전 기능 플래그 제거
-* ASSETS-29443: Granite 셸 헤더 모드가 &quot;선택&quot;으로 변경될 때 통합 셸 영웅이 계속 표시되고 클릭 가능합니다
-* ASSETS-29476: scene7DAMService.getS7FileReference(asset) API 호출이 예상 값을 반환하지 않습니다.
-* ASSETS-29515: &quot;jcr:lastModifiedBy&quot;: &quot;workflow-process-service&quot;가 있는 자산/노드가 목록 보기에서 &quot;외부 사용자&quot;로 표시됨
-* ASSETS-29579: 관리자가 아닌 사용자가 이미지 집합을 만들 수 없음
+* ASSETS-29443: Granite 셀 헤더 모드가 “선택”으로 변경되면 통합 쉘 Hero가 계속 표시되고 클릭 가능
+* ASSETS-29476: scene7DAMService.getS7FileReference(asset) API 호출은 예상 값을 반환하지 않음
+* ASSETS-29515: “jcr:lastModifiedBy”가 포함된 자산/노드: “workflow-process-service”는 목록 보기에서 “외부 사용자”로 표시됨
+* ASSETS-29579: NonAdmin 사용자는 이미지 세트를 생성할 수 없음
 * ASSETS-29631: 보안 게재/검색에 dam:roles 사용
-* ASSETS-29689: dc:roles(및 새 속성 dam:roles)는 AEM 측에서 필터링되어야 합니다.
-* ASSETS-29738: NullPointerException으로 인해 자산 업로드 제한에 실패함
-* ASSETS-29779: 작은 자산은 Blob 저장소에 없으므로 Webp로 처리할 수 없습니다.
-* ASSETS-29892: 에셋이 많은 폴더에서 메타데이터 내보내기가 실패했습니다.
-* ASSETS-29996: PROD 인스턴스에서만 간헐적으로 에셋을 업로드할 때 수정자로 &quot;외부 사용자&quot;
-* ASSETS-30167: 에셋을 업로드한 후 adobe_dam:restrictions에 대한 HTML이 중단됩니다
-* ASSETS-30276: 링크 공유 UI: assetdetails에서 공유할 수 없음
-* ASSETS-30434: 자산 처리 완료 이벤트가 파이프라인으로 전송되지 않음
+* ASSETS-29689: dc:roles(및 새 속성 dam:roles)는 AEM 측에서 필터링되어야 함
+* ASSETS-29738: NullPointerException으로 인해 자산 업로드 제한 실패
+* ASSETS-29779: Blob 스토리지에 없으므로 소규모 자산은 webp로 처리할 수 없음
+* ASSETS-29892: 자산 수가 많은 폴더에서 메타데이터 내보내기 실패
+* ASSETS-29996: PROD 인스턴스에서만 자산을 간헐적으로 업로드하는 경우 수정자로 “외부 사용자” 설정
+* ASSETS-30167: 자산을 업로드한 후 adobe_dam:restrictions에 대한 HTML이 중단됨
+* ASSETS-30276: 공유 링크 UI: assetdetails에서 공유할 수 없음
+* ASSETS-30434: 자산 처리가 완료되면 이벤트가 파이프라인에 전송되지 않음
 * ASSETS-30519: REDMetricsServletFilter에 RAPI 추가
-* CQ-4354413: QueryBuilder: 대괄호가 있는 쿼리가 xpath로 잘못 변환됩니다.
-* CQ-4354834: 받은 편지함 작업에 주석을 추가할 수 없음
-* CQ-4354836: 프로젝트 콘솔에서 워크플로우를 시작하거나 작업을 만들 수 없습니다.
-* CQ-4354867: ToggleCondition 참조가 InstanceActionServlet에 존재하지 않는 필드를 참조합니다.
+* CQ-4354413: QueryBuilder: 대괄호가 포함된 쿼리가 xpath로 잘못 번역됨
+* CQ-4354834: 받은 편지함 작업에 댓글을 추가할 수 없음
+* CQ-4354836: 프로젝트 콘솔에서 워크플로를 시작하거나 작업을 생성할 수 없음
+* CQ-4354867: ToggleCondition 참조는 InstanceActionServlet에 존재하지 않는 필드를 의미함
 * CQ-4354895: AEM 번역 키트: 10월 12일
-* GRANITE-45560: 이벤트 봉투(Eventing Envelope)의 일반적인 스키마 표현
-* GRANITE-47267: Apache Felix Http Jetty 4.2.18로 업데이트합니다
-* GRANITE-47599: 13323 업그레이드 이후 컨텐츠 가져오기에 실패했습니다(JCRVLT-721).
-* GRANITE-47873: Apache Felix Webconsole 4.9.6으로 업데이트
+* GRANITE-45560: 이벤트 봉투에 공통 스키마 표시
+* GRANITE-47267: Apache Felix Http Jetty 4.2.18 업데이트
+* GRANITE-47599: 13323 업그레이드 이후 콘텐츠 가져오기 실패(JCRVLT-721)
+* GRANITE-47873: Apache Felix Webconsole 4.9.6 업데이트
 
 ### 알려진 문제 {#known-issues-14029}
 

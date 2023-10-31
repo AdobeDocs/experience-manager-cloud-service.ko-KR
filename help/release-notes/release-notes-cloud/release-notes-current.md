@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: f1af229fa0fb75a6181eae545ac7e51b31f212f7
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 61%
+ht-degree: 63%
 
 ---
 
@@ -89,7 +89,7 @@ ht-degree: 61%
 
 다음을 통해 트래픽 필터 규칙을 숙지할 것을 권장합니다. [튜토리얼 시험 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)! 새 Cloud Manager 구성 파이프라인을 설정하고, 구성 파일에서 규칙을 선언하고, 악성 트래픽에 대한 CDN 로그를 분석하는 과정을 안내합니다.
 
-트래픽 필터 규칙은 11월에 스테이징 및 프로덕션 환경에 대한 점진적 롤아웃을 통해 개발 환경에서 사용할 수 있습니다. 이메일로 스테이징 및 프로덕션에 대한 사전 액세스를 요청할 수 있습니다 **aemcs-waf-adopter@adobe.com**.
+트래픽 필터 규칙은 11월에 스테이징 및 프로덕션 환경에 대한 점진적 롤아웃을 통해 개발 환경에서 사용할 수 있습니다. **aemcs-waf-adopter@adobe.com**&#x200B;으로 이메일을 보내어 스테이지 및 프로덕션에 대한 조기 액세스를 요청할 수 있습니다.
 
 고급 WAF 트래픽 필터 규칙은 향상된 보안 또는 WAF-DDoS 보호 제품을 통해 올해 말에 라이선스가 부여될 수 있습니다.
 
