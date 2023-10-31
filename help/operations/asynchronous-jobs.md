@@ -2,16 +2,16 @@
 title: 비동기 작업
 description: Adobe Experience Manager은 리소스 집약적인 일부 작업을 백그라운드 작업으로 비동기적으로 완료하여 성능을 최적화합니다.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
+source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '865'
 ht-degree: 70%
 
 ---
 
 # 비동기 작업 {#asynchronous-operations}
 
-성능에 대한 부정적인 영향을 줄이기 위해 Adobe Experience Manager는 장기 실행 및 리소스 집약적인 특정 작업을 백그라운드 작업으로 비동기적으로 처리합니다. 비동기 처리에는 시스템 리소스의 가용성에 따라 여러 작업을 대기열에 넣고 이를 연속적으로 실행하는 작업이 포함됩니다.
+Adobe 성능에 대한 부정적인 영향을 줄이기 위해 Experience Manager는 장기 실행 및 리소스 집약적인 특정 작업을 백그라운드 작업과 비동기적으로 처리합니다. 비동기 처리에는 시스템 리소스의 가용성에 따라 여러 작업을 대기열에 넣고 이를 연속적으로 실행하는 작업이 포함됩니다.
 
 이러한 작업은 다음과 같습니다.
 
@@ -19,7 +19,6 @@ ht-degree: 70%
 * 여러 참조가 있는 많은 자산 또는 자산 이동
 * 자산 메타데이터의 일괄 내보내기/가져오기
 * 원격 Experience Manager 배포에서 임계값을 초과하는 자산 가져오기
-* 페이지 이동
 * Live Copy 롤아웃
 
 다음에서 비동기 작업의 상태를 볼 수 있습니다. **[!UICONTROL 백그라운드 작업]** 다음 위치에 대시보드: **전역 탐색** -> **도구** -> **일반** -> **작업**.
@@ -124,20 +123,6 @@ AEM은 매일 01:00에 제거 작업을 실행하여 하루 이상 경과한 완
 1. 이 작업 상태에 대한 이메일 알림을 수신하려면 **이메일 알림 활성화** 옵션을 선택합니다. 예를 들어, 성공, 실패 입니다.
 1. 변경 사항을 저장합니다.
 
-### 비동기 페이지 이동 작업 구성 {#configuring-asynchronous-page-move-operations}
-
-이동할 페이지에 대한 참조 수가 임계값 수를 초과하는 경우 이동 작업이 비동기식으로 수행됩니다.
-
-1. 에서 AEM SDK Quickstart Jar의 AEM 웹 콘솔에 로그인합니다. `https://<host>:<port>/system/console` 를 관리자로 사용하십시오.
-1. 다음으로 이동 **OSGi** > **구성**
-1. 웹 콘솔에서 **[!UICONTROL 비동기 페이지 이동 작업 처리 구성]**&#x200B;을 엽니다.
-1. **[!UICONTROL 참조 임계값 수]** 필드에서 페이지 이동 작업의 비동기 처리를 위한 참조 임계값 수를 지정합니다.
-
-   ![페이지 이동 임계값](assets/async-page-move.png)
-
-1. 이 작업 상태에 대한 이메일 알림을 수신하려면 **이메일 알림 활성화** 옵션을 선택합니다. 예를 들어, 성공, 실패 입니다.
-1. 변경 사항을 저장합니다.
-
 ### 비동기 MSM 작업 구성 {#configuring-asynchronous-msm-operations}
 
 1. 에서 AEM SDK Quickstart Jar의 AEM 웹 콘솔에 로그인합니다. `https://<host>:<port>/system/console` 를 관리자로 사용하십시오.
@@ -154,4 +139,3 @@ AEM은 매일 01:00에 제거 작업을 실행하여 하루 이상 경과한 완
 >* [페이지 생성 및 구성](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
 >* [자산 메타데이터 일괄적으로 가져오거나 내보냅니다](/help/assets/metadata-import-export.md).
 >* [연결된 자산을 사용하여 원격 배포에서 DAM 자산을 공유할 수 있습니다](/help/assets/use-assets-across-connected-assets-instances.md).
-

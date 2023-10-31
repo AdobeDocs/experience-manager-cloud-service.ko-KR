@@ -2,10 +2,10 @@
 title: 페이지 생성 및 구성
 description: AEM으로 페이지를 만들고 관리하여 웹 사이트를 구성하는 방법에 대해 알아봅니다.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
-workflow-type: ht
-source-wordcount: '2543'
-ht-degree: 100%
+source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
+workflow-type: tm+mt
+source-wordcount: '2451'
+ht-degree: 99%
 
 ---
 
@@ -373,18 +373,15 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
 #### 비동기 작업 {#asynchronous-actions}
 
-일반적으로 페이지 이동 또는 이름 바꾸기 작업은 즉시 수행됩니다. 이 작업은 동기 처리로 간주되며 작업이 완료될 때까지 UI의 추가 작업이 차단됩니다.
+페이지 이동 작업은 항상 비동기적으로 처리되므로 사용자는 방해받지 않고 UI에서 계속 작성할 수 있습니다.
 
-그러나 영향을 받은 페이지 수가 정의된 제한을 초과하는 경우, 작업은 비동기적으로 처리되므로 페이지 이동 또는 이름 바꾸기 작업에 의해 방해받지 않고 사용자가 UI에서 계속 작성할 수 있습니다.
+* 사용자는 비동기 작업을 수행할 시점을 정의해야 합니다
+   * **이제** 비동기 작업의 실행을 즉시 시작합니다.
+   * **나중에** 사용자는 비동기 작업이 시작될 시기를 정의할 수 있습니다.
 
-* 위의 마지막 단계에서 **이동**&#x200B;을 클릭하면 AEM이 구성된 제한을 확인합니다.
-* 영향을 받는 페이지 수가 제한보다 적은 경우 동기 작업을 수행합니다.
-* 영향을 받는 페이지 수가 제한보다 많은 경우 비동기 작업을 수행합니다.
-   * 사용자는 비동기 작업을 수행할 시점을 정의해야 합니다
-      * **이제** 비동기 작업의 실행을 즉시 시작합니다.
-      * **나중에** 사용자는 비동기 작업이 시작될 시기를 정의할 수 있습니다.
-
-        ![비동기 페이지 이동](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
+<!--
+  ![Asynchronous page move](assets/asynchronous-page-move.png)
+-->
 
 비동기 작업의 상태는 **전역 탐색** -> **도구** -> **작업** -> **작업**&#x200B;의 [**비동기 작업 상태** 대시보드](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)에서 확인할 수 있습니다.
 
