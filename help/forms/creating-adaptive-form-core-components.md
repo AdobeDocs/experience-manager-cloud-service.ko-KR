@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 4cebcd58a0d6fd429cde3d739095c131cc76d9e5
 workflow-type: tm+mt
 source-wordcount: '2303'
 ht-degree: 67%
@@ -205,7 +205,6 @@ ht-degree: 67%
 ## 추가 참조 {#see-also}
 
 {{see-also}}
-
 * [규칙 편집기를 사용하여 양식에 동적 동작 추가](rule-editor.md)
 * [다양한 화면 크기 및 장치 유형에 대한 양식 레이아웃 설정](/help/sites-cloud/authoring/features/responsive-layout.md)
 

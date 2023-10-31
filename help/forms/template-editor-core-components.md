@@ -3,7 +3,7 @@ title: 핵심 구성 요소를 기반으로 적응형 양식 템플릿을 만드
 description: 템플릿 편집기를 사용하여 기본 구조 및 초기 콘텐츠를 정의하는 핵심 구성 요소를 기반으로 적응형 양식 템플릿을 만드십시오.
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 25a1504e2655e414f32dfea20e416889cea06dcc
+source-git-commit: f562d082520037fa1b15272c763d35e93dab137f
 workflow-type: tm+mt
 source-wordcount: '1991'
 ht-degree: 1%
@@ -293,7 +293,6 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 ## 추가 참조 {#see-also}
 
 {{see-also}}
-
 * [양식에 맞는 스타일 또는 테마 만들기](using-themes-in-core-components.md)
 * [적응형 양식 만들기(핵심 구성 요소)](/help/forms/creating-adaptive-form-core-components.md)
 
