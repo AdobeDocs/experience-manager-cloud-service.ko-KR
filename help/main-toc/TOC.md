@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 7b22d8c4d253642c92f6b2121e2883dac375a5c7
+source-git-commit: 4e3cf2276cdd5fb0722aee0e6cec11da951ca49d
 workflow-type: tm+mt
-source-wordcount: '4347'
+source-wordcount: '4357'
 ht-degree: 98%
 
 ---
@@ -548,6 +548,10 @@ ht-degree: 98%
 
    + Adobe Express와 통합 {#integration-adobe-express}
       + [Adobe Express의 AEM Assets 추가 기능](/help/assets/addon-adobe-express.md)
+
+   + Creative Cloud과 통합 {#integration-creative-cloud}
+      + [AEM Assets을 Creative Cloud에 연결](/help/assets/connect-assets-with-creative-cloud.md)
+
 + Forms {#forms}
    + 개요 {#forms-overview}
       + [소개](/help/forms/home.md)
