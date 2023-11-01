@@ -1,12 +1,12 @@
 ---
 title: Edge Delivery Services 시작하기
-description: Edge Delivery Services 시작하기
+description: Edge Delivery Services(EDS) 시작하기
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: 39a7e45e3b367323cb1123227fd806f60d3ea224
+source-git-commit: 34965338015df868778a95582524df08a7c5f136
 workflow-type: tm+mt
-source-wordcount: '877'
-ht-degree: 92%
+source-wordcount: '878'
+ht-degree: 99%
 
 ---
 
@@ -60,7 +60,7 @@ Adobe에서는 Edge Delivery Services에 도움이 되는 세 가지 채널을 �
 
 ### 커뮤니티 리소스에 액세스 {#community-resource}
 
-Adobe은 Edge Delivery Services 및 문서 기반 작성에 대한 최상의 커뮤니티 참여 및 지원을 제공할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 참여 대상 [Experience League 커뮤니티](https://adobe.ly/3Q6kTKl) 질문을 하고, 피드백을 공유하고, 토론을 시작하고, Adobe 전문가 및 AEM Advisors/Champs의 도움을 구하고, 마음이 맞는 개인과 실시간으로 교류합니다. 참여하기 [디스코드 채널](https://discord.gg/aem-live)실시간 상호 작용 및 빠른 아이디어 교환을 위한 보다 캐주얼한 플랫폼입니다.
+Adobe는 사용자에게 Edge Delivery Services와 문서 기반 작성에 대한 최고의 커뮤니티 참여와 지원을 제공하기 위해 최선을 다하고 있습니다. [Experience League 커뮤니티](https://adobe.ly/3Q6kTKl)에 참여하여 질의하고, 피드백을 공유하고, 토론을 시작하고, Adobe 전문가와 AEM Advisor/Champs의 지원을 요청하고, 비슷한 생각을 가진 사람들과 실시간으로 소통할 수 있습니다. 보다 일반적인 플랫폼인 [디스코드 채널](https://discord.gg/aem-live)에 참여하여 실시간으로 상호 작용하고 아이디어를 빠르게 교환할 수 있습니다.
 
 ### 제품 협업 채널에 액세스하는 방법 {#collab-channel}
 
