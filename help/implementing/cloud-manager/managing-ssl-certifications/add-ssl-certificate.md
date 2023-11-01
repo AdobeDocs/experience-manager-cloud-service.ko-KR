@@ -2,10 +2,10 @@
 title: SSL 인증서 추가
 description: Cloud Manager의 셀프서비스 도구를 사용하여 자체 SSL 인증서를 추가하는 방법을 알아봅니다.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '570'
-ht-degree: 100%
+source-git-commit: 6db3565fefe4c826bb40695d0fa84368fd3f283b
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 94%
 
 ---
 
@@ -17,29 +17,9 @@ Cloud Manager의 셀프서비스 도구를 사용하여 자체 SSL 인증서를 
 >
 >인증서를 프로비저닝하는 데 며칠이 걸릴 수 있습니다. 따라서 Adobe는 인증서를 미리 프로비저닝할 것을 권장합니다.
 
-## 인증서 포맷 {#certificate-format}
+## 인증서 요구 사항 {#certificate-requirements}
 
-Cloud Manager와 함께 설치하려면 SSL 인증서 파일이 PEM 포맷이어야 합니다. PEM 포맷의 일반적인 파일 확장명은 `.pem,``crt`, `.cer` 및 `.cert`입니다.
-
-다음 `openssl` 명령을 사용하여 비PEM 인증서를 변환할 수 있습니다.
-
-* PFX를 PEM으로 변환
-
-  ```shell
-  openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
-  ```
-
-* P7B를 PEM으로 변환
-
-  ```shell
-  openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
-  ```
-
-* DER을 PEM으로 변환
-
-  ```shell
-  openssl x509 -inform der -in certificate.cer -out certificate.pem
-  ```
+섹션을 검토하십시오. **인증서 요구 사항** / 문서 [SSL 인증서 관리 소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) 추가하려는 인증서가 AEM as a Cloud Service에서 지원되는지 확인하십시오.
 
 ## 인증서 추가 {#adding-a-cert}
 

@@ -2,10 +2,10 @@
 title: SSL 인증서 관리 소개
 description: Cloud Manager가 SSL 인증서를 설치하기 위한 셀프서비스 도구를 제공하는 방법을 알아봅니다.
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 6db3565fefe4c826bb40695d0fa84368fd3f283b
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 100%
+source-wordcount: '679'
+ht-degree: 99%
 
 ---
 
@@ -49,7 +49,7 @@ AEM as a Cloud Service는 보안 `https` 사이트만 지원합니다.
 * 사용자 정의 도메인이 여러 개인 고객은 도메인을 추가할 때마다 인증서를 업로드하는 것을 원하지 않습니다.
 * 이러한 고객은 여러 도메인이 포함된 하나의 인증서를 사용할 수 있습니다.
 
-## 요구 사항 {#requirements}
+## 인증서 요구 사항 {#requirements}
 
 * AEM as a Cloud Service는 OV(조직 유효성 검사) 또는 EV(확장 유효성 검사) 정책을 준수하는 인증서만 수락합니다.
 * 모든 인증서는 일치하는 2048비트 RSA 개인 키가 있는 신뢰할 수 있는 CA(인증 기관)의 X.509 TLS 인증서여야 합니다.
@@ -57,6 +57,30 @@ AEM as a Cloud Service는 보안 `https` 사이트만 지원합니다.
 * 자체 서명된 인증서는 허용되지 않습니다.
 
 OV 및 EV 인증서는 웹 사이트 소유자, 이메일 발신자 또는 실행 코드나 PDF 문서의 디지털 서명자를 신뢰할 수 있는지 여부를 결정하는 데 사용할 수 있는 추가 CA 검증 정보를 사용자에게 제공합니다. DV 인증서는 이러한 소유권 확인을 허용하지 않습니다.
+
+### 인증서 포맷 {#certificate-format}
+
+Cloud Manager와 함께 설치하려면 SSL 인증서 파일이 PEM 포맷이어야 합니다. PEM 포맷의 일반적인 파일 확장명은 `.pem,``crt`, `.cer` 및 `.cert`입니다.
+
+다음 `openssl` 명령을 사용하여 비PEM 인증서를 변환할 수 있습니다.
+
+* PFX를 PEM으로 변환
+
+  ```shell
+  openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
+  ```
+
+* P7B를 PEM으로 변환
+
+  ```shell
+  openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
+  ```
+
+* DER을 PEM으로 변환
+
+  ```shell
+  openssl x509 -inform der -in certificate.cer -out certificate.pem
+  ```
 
 ## 제한 사항 {#limitations}
 

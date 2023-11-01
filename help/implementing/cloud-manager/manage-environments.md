@@ -2,10 +2,10 @@
 title: 환경 관리
 description: 만들 수 있는 환경 유형 및 Cloud Manager 프로젝트용으로 환경을 만드는 방법에 대해 알아봅니다.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: e636a765cdc1be7cb0d385089e8ccc75b798844a
+source-git-commit: 532f3ac9450d34f3e2a168c04695bafde5a44c9f
 workflow-type: tm+mt
-source-wordcount: '2558'
-ht-degree: 100%
+source-wordcount: '2601'
+ht-degree: 96%
 
 ---
 
@@ -36,6 +36,8 @@ ht-degree: 100%
 >프로덕션 및 스테이징 환경은 쌍으로만 생성됩니다. 스테이징만 만들거나 프로덕션 환경만 만들 수는 없습니다.
 
 ## 환경 추가 {#adding-environments}
+
+환경을 추가하거나 편집하려면 사용자가 **비즈니스 소유자** 역할.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
@@ -234,7 +236,7 @@ Cloud Manager는 파이프라인과 함께 마지막으로 배포된 버전보�
 
 ![환경 탭의 업데이트 옵션](assets/environ-update3.png)
 
-**배포 관리자** 역할을 가진 사용자는 이 옵션을 사용하여 이 환경과 연결된 파이프라인을 최신 AEM 버전으로 업데이트할 수 있습니다.
+을(를) 가진 사용자 **배포 관리자** 또는 **비즈니스 소유자** 역할은 이 옵션을 사용하여 이 환경과 연결된 파이프라인을 최신 AEM 버전으로 업데이트할 수 있습니다.
 
 파이프라인 버전이 공개적으로 사용 가능한 최신 AEM 버전으로 업데이트되면 관련 파이프라인을 실행하여 최신 버전을 환경에 배포하라는 메시지가 표시됩니다.
 
@@ -248,7 +250,7 @@ Cloud Manager는 파이프라인과 함께 마지막으로 배포된 버전보�
 
 ## 개발 환경 삭제 {#deleting-environment}
 
-필요한 권한이 있는 사용자는 개발 환경을 삭제할 수 있습니다.
+을(를) 가진 사용자 **배포 관리자** 또는 **비즈니스 소유자** 역할은 개발 환경을 삭제할 수 있습니다.
 
 **환경** 카드에 있는 프로그램의 **개요** 화면에서 삭제하려는 개발 환경의 줄임표 버튼을 클릭합니다.
 
@@ -287,7 +289,7 @@ Cloud Manager는 파이프라인과 함께 마지막으로 배포된 버전보�
 
 ## 로컬 로그인 {#login-locally}
 
-Adobe Experience Manager에 로컬로 로그인하려면 **환경** 카드에 있는 환경의 줄임표 메뉴에서 **로컬 로그인**&#x200B;을 선택합니다.
+선택 **로컬 로그인** 을 클릭합니다. **환경** Adobe Experience Manager에 로컬로 로그온할 카드입니다.
 
 ![로컬 로그인](assets/environ-login-locally.png)
 
@@ -300,6 +302,8 @@ Adobe Experience Manager에 로컬로 로그인하려면 **환경** 카드에 �
 사용자 정의 도메인 이름은 Cloud Manager for Sites 프로그램에서 게시 및 미리보기 서비스 모두에 대해 지원됩니다. 각 Cloud Manager 환경은 최대 250개의 사용자 정의 도메인을 호스팅할 수 있습니다.
 
 사용자 정의 도메인 이름을 구성하려면 **환경** 탭으로 이동하고 환경을 클릭하여 환경 세부 정보를 봅니다.
+
+Cloud Manager에서 사용자 정의 도메인 이름을 추가하려면 사용자에게 **비즈니스 소유자** 또는 **배포 관리자** 역할이 있어야 합니다.
 
 ![환경 세부 정보](assets/domain-names.png)
 
