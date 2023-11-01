@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 6e82bbcc1b83fa9216831f6f746665507a46eec7
+source-git-commit: 01f148dbe885c96b27f88a88e7020a1008f4c1d3
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 100%
+source-wordcount: '595'
+ht-degree: 98%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 100%
 
 ### 알려진 문제 {#known-issues-14029}
 
-없음.
+* ASSETS-31015: 알 수 없는 파일 확장명을 가진 에셋에 파일을 업로드할 수 없습니다.
 
 ### 임베드된 기술 {#embedded-tech-14029}
 
