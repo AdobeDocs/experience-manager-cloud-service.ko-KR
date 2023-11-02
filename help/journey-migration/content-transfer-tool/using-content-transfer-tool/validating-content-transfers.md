@@ -2,9 +2,9 @@
 title: 콘텐츠 전송 확인
 description: 컨텐츠 전송 도구를 사용하여 컨텐츠 전송의 유효성을 검사합니다
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
+source-git-commit: c8739388ac21dd40d6757815af6f2732991d216b
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1084'
 ht-degree: 2%
 
 ---
@@ -101,7 +101,7 @@ Migration validation took 33 minutes
 
 추출 다이제스트에 있는 수집 다이제스트에서 누락된 항목이 없으므로 성공한 유효성 검사의 예입니다.
 
-비교하기 위해 유효성 검사가 실패한 경우 유효성 검사 보고서의 모양은 다음과 같습니다.
+비교하기 위해 유효성 검사가 실패한 경우(또는 추가 마이그레이션이 수행된 경우) 유효성 검사 보고서의 모양은 다음과 같습니다.
 
 ```
 Beginning publish migration validation. Migration job id=[ac217e5a-a08d-4e81-cbd6-f39f88b174ce]

@@ -2,9 +2,9 @@
 title: 대형 콘텐츠 저장소 처리
 description: 이 섹션에서는 대용량 콘텐츠 저장소 처리에 대해 설명합니다
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 858e10f99e2015a1488bb9e1d0990a553c5f6d04
 workflow-type: tm+mt
-source-wordcount: '1813'
+source-wordcount: '1835'
 ht-degree: 8%
 
 ---
@@ -191,6 +191,9 @@ AzCopy에 문제가 있으면 추출이 즉시 실패하고 추출 로그에 실
 
 오류 전에 복사된 모든 블롭은 후속 실행 시 AzCopy에 의해 자동으로 건너뛰므로 다시 복사할 필요가 없습니다.
 
+>[!TIP]
+>이제 추출 성공 직후 수집이 자동으로 시작되도록 예약할 수 있습니다. 다음을 참조하십시오 [Target에 컨텐츠 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) 추가 정보.
+
 #### 파일 데이터 저장소용 {#file-data-store-extract}
 
 소스 파일 dataStore에 대해 AzCopy가 실행 중이면 다음과 같은 메시지가 로그에 표시되는데, 이는 폴더가 처리 중임을 나타냅니다.
@@ -198,8 +201,7 @@ AzCopy에 문제가 있으면 추출이 즉시 실패하고 추출 로그에 실
 
 ### 5. AzCopy로 수집 {#ingesting-azcopy}
 
-다음을 참조하십시오 [Target에 컨텐츠 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
-- &quot;새 수집&quot; 대화 상자에서 AzCopy(사전 복사) 사용 여부에 대한 지침을 포함하여 Cloud Acceleration Manager(CAM)에서 대상으로 콘텐츠를 수집하는 방법에 대한 일반적인 정보입니다.
+다음을 참조하십시오 [Target에 컨텐츠 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) - &quot;새 수집&quot; 대화 상자에서 AzCopy(사전 복사) 사용 여부에 대한 지침을 포함하여 Cloud Acceleration Manager(CAM)에서 대상으로 콘텐츠를 수집하는 방법에 대한 일반적인 정보입니다.
 
 수집 중에 AzCopy를 활용하려면 Adobe 시 AEM as a Cloud Service 버전(버전 2021.6.5561 이상)을 사용해야 합니다.
 
