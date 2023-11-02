@@ -5,11 +5,11 @@ exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2120'
-ht-degree: 21%
+ht-degree: 22%
 
 ---
 
-# 파트너용 Adobe Experience Manager as a Cloud Service으로 마이그레이션 안내서 {#Overview}
+# 파트너용 Adobe Experience Manager as a Cloud Service 마이그레이션 안내서 {#Overview}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_migration_overview"
@@ -180,7 +180,7 @@ Cloud Manager를 통해 조직은 클라우드에서 Experience Manager을 자�
 
 <br>
 
-### Go-Live 후
+### Go-live 후
 
 Go-live 후 단계에서는 임시 파일을 정리하고, 지속적인 개발을 위한 우수 사례를 검토하고, 로그를 관리해야 합니다.
 

@@ -5,7 +5,7 @@ exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '535'
-ht-degree: 22%
+ht-degree: 24%
 
 ---
 
@@ -36,7 +36,7 @@ CAM(Cloud Acceleration Manager)으로 이동하려면 아래 단계를 따르십
 
    ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/cam-1.png)
 
-### Cloud Acceleration Manager에서 프로젝트 생성 및 관리 {#create-project}
+### Cloud Acceleration Manager에서 프로젝트 만들기 및 관리 {#create-project}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_gettingstarted"

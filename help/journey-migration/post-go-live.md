@@ -1,15 +1,15 @@
 ---
-title: Go-Live 후
+title: Go-live 후
 description: 문제 모니터링 및 성능 향상 방법 알아보기
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: 1b9d49ce1ef8ad4b0a11400b41d8c9b880cbf884
 workflow-type: tm+mt
 source-wordcount: '483'
-ht-degree: 28%
+ht-degree: 29%
 
 ---
 
-# Go-Live 후 {#post-go-live}
+# Go-live 후 {#post-go-live}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
@@ -53,7 +53,7 @@ AEM as a Cloud Service 개발자 환경 디버깅은 개발자 콘솔에서 개�
 
 다음을 참조하십시오 [로그 액세스 및 관리](/help/implementing/cloud-manager/manage-logs.md) 사용자 인터페이스를 통해 또는 Cloud Manager를 통해 API에서 로그에 액세스하고 관리하는 방법을 알아봅니다.
 
-## 지원 문의 {#contacting-support}
+##  지원 센터 문의 {#contacting-support}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"

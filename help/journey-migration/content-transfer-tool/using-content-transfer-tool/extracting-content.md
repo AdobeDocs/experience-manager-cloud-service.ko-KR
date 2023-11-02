@@ -5,13 +5,13 @@ exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 source-git-commit: 031ddfa2da0fc5ecc92267eae1f9dcaac394573d
 workflow-type: tm+mt
 source-wordcount: '713'
-ht-degree: 28%
+ht-degree: 29%
 
 ---
 
 # 소스에서 콘텐츠 추출 {#extracting-content}
 
-## 컨텐츠 전송 도구의 추출 프로세스 {#extraction-process}
+## 콘텐츠 전송의 추출 프로세스 도구 {#extraction-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction"
