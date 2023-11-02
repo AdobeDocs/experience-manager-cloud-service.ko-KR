@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 2f3845495b545f88a1bc5a5feef1a6312f679a26
+source-git-commit: 22cfb23784544947b6a38be0453959913c9e8ccd
 workflow-type: tm+mt
-source-wordcount: '4501'
+source-wordcount: '4519'
 ht-degree: 11%
 
 ---
@@ -266,6 +266,14 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
    >If you select a rendition from the **[!UICONTROL Renditions]** panel, the toolbar changes context and displays only those actions that are relevant to the rendition. Options, such as the Upload Rendition icon is not displayed. To view these options in the toolbar, navigate to the details page for the asset.
 
    이미지 또는 비디오 에셋의 세부 사항 페이지에 표시할 렌디션의 차원을 구성할 수 있습니다. 지정한 차원에 따라 Assets는 정확한 차원이나 가장 가까운 차원을 사용하여 렌디션을 표시합니다.
+
+   다음 접두사는 Adobe 내부에 있으므로 렌디션을 만들 수 없습니다.
+
+   * cq5
+
+   * cqdam
+
+   * cq5dam
 
    To configure rendition dimensions of an image at the asset detail level, overlay the `renditionpicker` node (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) and configure the value of the width property. Configure the property **[!UICONTROL size (Long) in KB]** in place of width to customize rendition on asset detail page based on image size. For size-based customization, the property `preferOriginal` assigns preference to the original if the size of the matched rendition is greater than the original.
 
