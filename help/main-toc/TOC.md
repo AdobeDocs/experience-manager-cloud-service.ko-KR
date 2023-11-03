@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 4e3cf2276cdd5fb0722aee0e6cec11da951ca49d
 workflow-type: tm+mt
 source-wordcount: '4357'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -537,7 +537,7 @@ ht-degree: 98%
       + [보고서 관리](/help/assets/manage-reports-assets-view.md)
       + [태그 관리](/help/assets/tagging-management-assets-view.md)
    + 모범 사례{#best-practices}
-      + [검색 모범 사례](/help/assets/search-best-practices.md)
+      + [모범 사례 검색](/help/assets/search-best-practices.md)
    + Adobe Workfront와 통합 {#integrations}
       + [ [!DNL Adobe Workfront]와 통합](/help/assets/workfront-integrations.md)
       + [자산 메타데이터 매핑 구성](/help/assets/configure-asset-metadata-mapping.md)
@@ -577,13 +577,13 @@ ht-degree: 98%
          + [적응형 양식 분석 보고서 보기 및 이해](/help/forms/view-understand-aem-forms-analytics-reports.md)
          + [Microsoft Power Automate와 적응형 양식 통합](/help/forms/forms-microsoft-power-automate-integration.md)
          + [AEM Sites 페이지에 적응형 양식 임베드](/help/forms/embed-adaptive-form-aem-sites.md)
-         + [핵심 구성 요소 기반의 적응형 양식을 외부 웹 페이지에 임베드](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
-         + [기초 구성 요소 기반 적응형 양식을 외부 웹 페이지에 임베드](/help/forms/embed-adaptive-form-external-web-page.md)
+         + [외부 웹 페이지에 핵심 구성 요소 기반 적응형 양식 임베드](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+         + [외부 웹 페이지에 기초 구성 요소 기반 적응형 양식 임베드](/help/forms/embed-adaptive-form-external-web-page.md)
       + 양식 데이터 모델 {#use-form-data-model}
-         + [데이터베이스 또는 데이터 소스에 AEM Forms 연결](/help/forms/data-integration.md)
+         + [AEM Forms를 데이터베이스 또는 데이터 소스에 연결](/help/forms/data-integration.md)
          + [데이터 소스 구성](/help/forms/configure-data-sources.md)
          + [ [!DNL Microsoft Dynamics] OData 구성](/help/forms/ms-dynamics-odata-configuration.md)
-         + [OAuth 2.0 클라이언트 자격 증명 플로우를 사용하여 적응형 양식을 Salesforce 애플리케이션에 연결](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+         + [OAuth 2.0 클라이언트 자격 증명 흐름을 사용하여 Salesforce 애플리케이션에 적응형 양식 연결](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
          + [ [!DNL Azure] 스토리지 구성](/help/forms/configure-azure-storage.md)
          + [ [!DNL Microsoft Dynamics 365] 및 [!DNL Salesforce] Cloud Service 구성](/help/forms/configure-msdynamics-salesforce.md)
          + [양식 데이터 모델 만들기](/help/forms/create-form-data-models.md)
@@ -879,7 +879,7 @@ ht-degree: 98%
          + [IP 허용 목록 적용 및 적용 취소](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [IP 허용 목록 관리](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [라이선스 대시보드](/help/implementing/cloud-manager/license-dashboard.md)
-      + [Cloud Service 컨텐츠 요청 이해](/help/implementing/cloud-manager/content-requests.md)
+      + [Cloud Service 콘텐츠 요청 이해](/help/implementing/cloud-manager/content-requests.md)
       + [Cloud Manager FAQ](/help/implementing/cloud-manager/faqs.md)
    + AEM as a Cloud Service용 개발 {#developing}
       + [AEM 프로젝트 구조](/help/implementing/developing/introduction/aem-project-content-package-structure.md)

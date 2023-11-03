@@ -2,7 +2,7 @@
 source-git-commit: c20f59770f4eb722d49a96952126993577bfd65e
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 # 스니펫 {#snippets}
@@ -21,7 +21,7 @@ ht-degree: 90%
 >
 >현재 AEM에서는 프로필에 그룹을 할당할 수 없습니다. 대신 사용자를 개별적으로 추가해야 합니다.
 
-## WAF 구성 제한 릴리스 {#waf-limited-release}
+## WAF 구성 제한적 릴리스 {#waf-limited-release}
 
 [!BADGE WAF-DDOS 보호는 2023년 말에 제공될 예정입니다.]{type=Caution tooltip="WAF-DDOS 보호는 2023년 말에 제공될 예정입니다."}
 
@@ -45,7 +45,7 @@ ht-degree: 90%
 * [적응형 양식 데이터를 데이터베이스로 보내기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html)
 * [적응형 양식 데이터를 REST 엔드포인트로 보내기](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [적응형 양식 데이터를 AEM 워크플로로 보내기](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
-* [양식 포털을 사용하여 AEM 웹 사이트에 AEM 적응형 양식 나열](/help/forms/configure-forms-portal.md)
+* [Forms 포털을 사용하여 AEM 웹 사이트에 AEM 적응형 양식 나열](/help/forms/configure-forms-portal.md)
 
 
 
