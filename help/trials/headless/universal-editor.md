@@ -1,13 +1,13 @@
 ---
 title: Universal Editor로 컨텍스트에서 편집
-description: 범용 편집기를 사용하여 구현의 위치 및 컨텍스트에서 콘텐츠의 모든 측면을 편집하는 방법에 대해 알아봅니다.
+description: Universal Editor를 사용하여 모든 구현에서 컨텍스트에서 즉시 콘텐츠의 모든 측면을 편집할 수 있는 방법을 살펴보십시오.
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 source-git-commit: 226df8999d1344ffe8acb2a9ce75b58634300a11
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '971'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 

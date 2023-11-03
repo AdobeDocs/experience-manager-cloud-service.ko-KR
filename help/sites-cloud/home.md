@@ -4,9 +4,9 @@ description: 모든 Adobe AEM Cloud Services 지원 리소스에 대한 전체 �
 landing-page-description: AEM Sites as a Cloud Service로 작성하고 관리하는 방법을 이해합니다.
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
 source-git-commit: ce841a83d46dc1c4fa2edc858e4a0be0af3ac170
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '417'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 * [AEM Sites as a Cloud Service의 주요 변경 사항](sites-cloud-changes.md)
 * [작성 빠른 시작 안내서](authoring/getting-started/quick-start.md)
 * [페이지 게시](authoring/fundamentals/publishing-pages.md)
-* [Edge Delivery Services으로 작성](/help/edge/overview.md)
+* [Edge Delivery Services로 작성](/help/edge/overview.md)
 * [반응형 레이아웃 작성](authoring/features/responsive-layout.md)
 * [템플릿 작성](authoring/features/templates.md)
 * [경험 조각 사용](authoring/fundamentals/experience-fragments.md)
@@ -46,7 +46,7 @@ ht-degree: 98%
 
 ## 기타 Experience Manager 리소스 {#other-resources}
 
-* [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=en)
+* [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=ko)
 * [Dispatcher 설명서](/help/implementing/dispatcher/overview.md)
 * [HTL 설명서](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 * [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)

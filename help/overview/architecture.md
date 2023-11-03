@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service 아키텍처 소개
 description: Adobe Experience Manager as a Cloud Service 아키텍처 소개.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: 13c67c35238c5138120f6d0d4845c759221d65ad
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2015'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ AEM as a Cloud Service에서 사용할 수 있는 환경에는 세 가지 유형
 
 * **개발 환경**: 개발자가 스테이지 및 프로덕션 환경과 동일한 런타임 조건으로 AEM 애플리케이션을 구현할 수 있도록 해 줍니다.
 
-  자세한 내용은 [환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager)를 참조하십시오.
+  자세한 내용은 [환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ko#using-cloud-manager)를 참조하십시오.
 
 * **신속한 개발 환경**: 신규 또는 기존 코드 디버깅을 위한 신속한 개발 반복이 가능합니다.
 
@@ -199,25 +199,25 @@ AEM as a Cloud Service를 위한 새로운 아키텍처에서는 이전 세대�
 
 * 아키텍처는 애플리케이션 코드와 구성에서 애플리케이션 콘텐츠를 완전히 분리합니다. 모든 코드와 구성은 사실상 변경할 수 없으며 작성 및 게시 서비스의 다양한 노드를 만드는 데 사용되는 기준 이미지에 결합됩니다. 그 결과, 각 노드는 같아지고, 코드 및 구성의 변경은 Cloud Manager 파이프라인을 실행해야만 전역적으로 수행할 수 있습니다.
 
-## Edge Delivery Services이 있는 AEM {#aem-with-edge-delivery-services}
+## Edge Delivery Services가 포함된 AEM {#aem-with-edge-delivery-services}
 
-Edge Delivery Services의 추가로 AEM은 참여 및 전환을 유도하는 탁월한 경험을 제공합니다. 이를 위해 AEM은 빠르게 작성 및 개발할 수 있는 영향력이 큰 경험을 제공합니다. Edge Delivery Services은 작성자가 빠르게 업데이트하고 게시할 수 있는 신속한 개발 환경을 가능하게 하는 컴포저블 서비스 세트이며 새로운 사이트가 빠르게 시작됩니다. 그에 따라 Edge Delivery Services를 사용하여 전환을 개선하고, 비용을 절감하고, 최고의 콘텐츠 속도를 제공할 수 있습니다.
+Edge Delivery Services를 추가하면 AEM은 참여 및 전환을 유도하는 탁월한 경험을 제공합니다. 이를 위해 AEM은 빠르게 작성 및 개발할 수 있는 영향력이 큰 경험을 제공합니다. Edge Delivery Services는 콘텐츠를 빠르게 업데이트 및 게시하고 새 사이트를 신속하게 시작할 수 있는 신속한 개발 환경을 지원하는 구성 가능한 서비스 세트입니다. 그에 따라 Edge Delivery Services를 사용하여 전환을 개선하고, 비용을 절감하고, 최고의 콘텐츠 속도를 제공할 수 있습니다.
 
-업데이트된 아키텍처는 다음과 같이 구성됩니다.
+업데이트된 아키텍처는 다음으로 구성됩니다.
 
-* 이제 다양한 편집자를 포함하는 컨텐츠 관리:
+* 이제 콘텐츠 관리에 다음과 같은 편집기 선택이 포함됩니다.
    * Universal Visual Editor
    * 콘텐츠 조각 편집기
    * 페이지 편집기
-   * SharePoint 또는 Google Drive에서 문서 기반 작성
-* 이제 다음을 포함한 경험 전달:
+   * SharePoint 또는 Google 드라이브에서 문서 기반 작성
+* 이제 경험 게재에 다음과 같은 항목이 포함됩니다.
    * Edge Delivery Services
-* 컨텐츠 및 코드의 빠르고 효율적인 전달을 위한 보조 서비스
+* 콘텐츠 및 코드를 빠르고 효율적으로 게재하기 위한 보조 서비스
 
-![AEM as a Cloud Service 개요 - Edge Delivery Services](assets/AEMaaCS-Edge-Architecture.png "AEM as a Cloud Service 개요 - Edge Delivery Services")
+![AEM as a Cloud Service 개요 - Edge Delivery Services 포함](assets/AEMaaCS-Edge-Architecture.png "AEM as a Cloud Service 개요 - Edge Delivery Services 포함")
 
 추가 참조:
 
-* [AEM as a Cloud Service 개요 - Edge Delivery Services](/help/edge/overview.md)
+* [AEM as a Cloud Service 개요 - Edge Delivery Services 포함](/help/edge/overview.md)
 * [Edge Delivery Services 사용](/help/edge/using.md)
-* [Edge Delivery Services을 통해 기본 아키텍처와 중요한 AEM 조각을 as a Cloud Service으로 살펴보십시오.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)
+* [Edge Delivery Services를 사용하여 AEM as a Cloud Service의 기본 아키텍처와 중요한 부분을 살펴보기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)
