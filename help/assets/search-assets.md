@@ -539,7 +539,7 @@ You can create smart collections based on the search criteria. From the **[!UICO
 
 **추가 참조**
 
-* [검색 모범 사례](search-best-practices.md)
+* [모범 사례 검색](search-best-practices.md)
 * [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
 * [자산이 지원되는 파일 형식](file-format-support.md)

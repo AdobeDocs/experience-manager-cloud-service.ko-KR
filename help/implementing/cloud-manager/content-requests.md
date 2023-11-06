@@ -1,11 +1,11 @@
 ---
-title: Cloud Service 컨텐츠 요청 이해
+title: Cloud Service 콘텐츠 요청 이해
 description: Adobe에서 컨텐츠 요청 라이선스를 구입한 경우 Adobe Experience Cloud as a Service가 측정하는 컨텐츠 요청 유형과 조직의 분석 보고 도구와의 차이에 대해 알아봅니다.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
 workflow-type: tm+mt
 source-wordcount: '1171'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 12%
 
 참조: [라이선스 대시보드](/help/implementing/cloud-manager/license-dashboard.md).
 
-## Cloud Service 컨텐츠 요청 이해 {#about-content-request}
+## Cloud Service 콘텐츠 요청 이해 {#about-content-request}
 
 컨텐츠 요청은 AEM(Adobe Experience Manager) AEM as a Cloud Service CDN에서 시작되는 로그 파일의 자동화된 분석을 통해 as a Cloud Service의 에지에서 자동으로 추적되어 HTML(text/html) 또는 JSON(application/json) 컨텐츠를 반환하는 요청을 CDN에서 격리하고 아래에 설명된 여러 포함 및 제외 규칙을 기반으로 합니다. 콘텐츠 요청은 CDN 캐시에서 처리 중이거나 CDN(AEM dispatchers)의 소스로 돌아가는 반환된 콘텐츠와는 독립적으로 발생합니다.
 

@@ -342,7 +342,7 @@ Forms 검색 페이지의 옵션에 대해 아이콘을 잠그면 기본 설정�
 
 **추가 참조**
 
-* [검색 모범 사례](search-best-practices.md)
+* [모범 사례 검색](search-best-practices.md)
 * [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
 * [자산이 지원되는 파일 형식](file-format-support.md)

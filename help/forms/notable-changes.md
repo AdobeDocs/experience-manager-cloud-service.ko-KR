@@ -6,7 +6,7 @@ contentOwner: khsingh
 source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
 source-wordcount: '1348'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -43,7 +43,7 @@ Adobe Experience Manager Forms as a Cloud Service은 Adobe Experience Manager Fo
 
 * 현지화된 적응형 Forms의 URL 규칙은 이제 URL에서 로케일 지정을 지원합니다. 새 URL 규칙을 사용하면 Dispatcher 또는 CDN에서 현지화된 양식을 캐싱할 수 있습니다. Cloud Service 환경에서 URL 형식을 사용합니다 `http://host:port/content/forms/af/<afName>.<locale>.html` 을(를) 대신해 지역화된 버전의 적응형 양식을 요청하려면 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`.
 
-* Adobe Dispatcher 또는 CDN 캐싱을 사용하는 것이 좋습니다. 미리 채워진 양식의 렌더링 속도를 개선하는 데 도움이 됩니다.
+* Dispatcher 또는 CDN 캐싱을 사용하는 것이 좋습니다. 미리 채워진 양식의 렌더링 속도를 개선하는 데 도움이 됩니다.
 
 
 ## 적응형 양식
