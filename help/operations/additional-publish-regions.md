@@ -1,13 +1,13 @@
 ---
 title: 추가 게시 지역
 description: AEM as a Cloud Service가 추가 게시 지역을 지원하여 가용성을 높이고 지연 시간을 줄이는 방법에 대해 알아봅니다.
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
+source-git-commit: 4f11d1958cbfb252f29a7815af8800426d945ebd
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 100%
+source-wordcount: '606'
+ht-degree: 89%
 
 ---
-
 
 # 추가 게시 지역 {#additional-publish-regions}
 
@@ -35,6 +35,11 @@ AEM Sites로 설정된 프로그램에서 추가 게시 지역에 라이선스�
 추가 게시 지역에 라이선스가 부여되면 Cloud Manager를 사용하여 지역을 구성합니다. 세부 지침은 [Cloud Manager 설명서](/help/implementing/cloud-manager/manage-environments.md#multiple-regions)를 참조하십시오.
 
 추가 게시 지역은 스테이지 및 프로덕션 환경에만 적용되지만 RDE 또는 개발 환경에는 적용되지 않습니다.
+
+지역을 사용할 수 없는 경우 Adobe CDN에서 관리하므로 고객이 사용 가능한 지역으로의 트래픽 라우팅을 관리할 필요가 없습니다.
+
+아래 고급 네트워킹 고려 사항 섹션에 설명된 대로, 지역을 사용할 수 없게 될 경우 가용성을 유지하기 위해 고급 네트워킹을 사용하는 고객은 추가 게시 지역별로 이를 구성하는 것이 좋습니다.
+
 
 ## 고급 네트워킹 고려 사항 {#advanced-networking-considerations}
 

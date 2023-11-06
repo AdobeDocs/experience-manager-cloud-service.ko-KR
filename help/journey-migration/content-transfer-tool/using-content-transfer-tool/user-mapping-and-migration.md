@@ -2,9 +2,9 @@
 title: 사용자 매핑 및 주요 마이그레이션
 description: AEMas a Cloud Service 의 사용자 매핑 및 사용자 마이그레이션 개요.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 2fdfb65543fa2942e809aa5d379f4000e40bd517
+source-git-commit: 2f5eeb0333cee13b12edefd0f95541a891e30960
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '1003'
 ht-degree: 9%
 
 ---
@@ -27,7 +27,7 @@ AEM as a Cloud Service의 주요 변경 내용은 작성자 계층 액세스에 
 
 ## 사용자 마이그레이션 세부 정보 {#principal-migration-detail}
 
-컨텐츠 전송 도구 및 Cloud Acceleration Manager 는 마이그레이션 중인 컨텐츠와 관련된 모든 주체를 클라우드 시스템으로 마이그레이션합니다.  컨텐츠 전송 도구는 추출 프로세스 중에 소스 AEM 시스템의 모든 주도자를 복사하여 이 작업을 수행합니다.  그런 다음 CAM 수집은 수집 중인 콘텐츠와 연관된 주도자만 선택하고 마이그레이션합니다.
+컨텐츠 전송 도구 및 Cloud Acceleration Manager 는 마이그레이션 중인 컨텐츠와 관련된 모든 주체를 클라우드 시스템으로 마이그레이션합니다.  컨텐츠 전송 도구는 추출 프로세스 중에 소스 AEM 시스템의 모든 주도자를 복사하여 이 작업을 수행합니다.  그런 다음 CAM 수집은 수집 중인 콘텐츠와 연관된 주도자만 선택하고 마이그레이션합니다. 사용자가 마이그레이션된 컨텐츠의 ACL 또는 CUG 정책에 있는 경우 해당 사용자 및 해당 사용자가 속한 모든 그룹과 상위(상위) 그룹이 모두 마이그레이션됩니다. 또한 콘텐츠의 주도자가 그룹인 경우 모든 하위(하위) 그룹 및 사용자도 마이그레이션됩니다.
 
 ## 사용자 매핑 세부 정보 {#user-mapping-detail}
 
