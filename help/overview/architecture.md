@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 아키텍처 소개
 description: Adobe Experience Manager as a Cloud Service 아키텍처 소개.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 689b672e75c4e4d2fa8f716d93c65418f332a266
+source-git-commit: b610de53d1bd1b120a2642336aac1713444bfd3e
 workflow-type: tm+mt
-source-wordcount: '2656'
+source-wordcount: '2665'
 ht-degree: 13%
 
 ---
@@ -66,7 +66,7 @@ AEM Sites, AEM Assets 또는 AEM Forms 솔루션을 사용하여 프로그램을
 
 AEM 프로그램은 [Edge Delivery Services](/help/edge/overview.md) 또한.
 
-구성하고 나면 AEM에서 Edge Delivery Services을 사용하여 경험을 빌드하는 데 사용되는 GitHub 코드 저장소를 참조할 수 있습니다. 따라서 관련 경험에 새 구성 옵션을 사용할 수 있습니다. 여기에는 Adobe 관리 CDN 설정, 라이센싱 지표 또는 SLA 보고서 액세스 등이 포함됩니다.
+구성하고 나면 AEM에서 Edge Delivery Services을 사용하여 경험을 빌드하는 데 사용되는 GitHub 코드 저장소를 참조할 수 있습니다. 따라서 관련 경험에 새 구성 옵션을 사용할 수 있습니다. 여기에는 Adobe 관리 CDN 설정, 라이선스 지표 또는 SLA 보고서 액세스 등이 포함됩니다.
 
 ## 서비스 아키텍처 {#service-architecture}
 
@@ -198,7 +198,7 @@ Cloud Manager는 AEM 인스턴스에 대한 모든 업데이트를 as a Cloud Se
 
 * 제품 무결성을 보장하기 위해 Adobe이 기여
 * 고객이 제공한 테스트
-   * 기능 테스트: http
+   * 기능 테스트: AEM 작성자 또는 게시 계층에 대한 http 요청을 통해
    * UI 테스트: Selenium 또는 Cypress 기술 기반
 
 이러한 자동화된 테스트는 스테이징 환경에서 실행되므로 스테이징 환경 콘텐츠를 프로덕션 인스턴스의 콘텐츠에 최대한 가깝게 유지하는 것이 중요합니다.
