@@ -2,9 +2,9 @@
 title: AEM Forms의 로컬 개발 환경을 설정하려면 어떻게 해야 합니까?
 description: Adobe Experience Manager Forms as a Cloud Service을 위한 로컬 개발 환경 설정
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: a0433718a223a6d3aa7740232caa17650bce5ff6
 workflow-type: tm+mt
-source-wordcount: '2811'
+source-wordcount: '2847'
 ht-degree: 3%
 
 ---
@@ -266,6 +266,10 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
    * 사용 `includeFormscommunications=y` 고객 커뮤니케이션 기능을 포함하는 데 필요한 Forms 핵심 구성 요소 및 종속성을 포함하는 옵션.
 
+     >[!WARNING]
+     >
+     * 버전 45의 Archetype 프로젝트를 만들 때 [AEM Archetype 프로젝트 폴더]/pom.xml 은 처음에 forms 핵심 구성 요소 버전을 2.0.64로 설정합니다. Archetype 프로젝트를 빌드하거나 배포하기 전에 Forms 핵심 구성 요소 버전을 2.0.62로 업데이트합니다.
+
 1. 로컬 개발 환경에 프로젝트를 배포합니다. 다음 명령을 사용하여 로컬 개발 환경에 배포할 수 있습니다
 
    `mvn -PautoInstallPackage clean install`
@@ -319,7 +323,7 @@ Experience Manager Forms에 대한 Dispatcher 캐시를 as a Cloud Service으로
 ### 캐싱에 대한 고려 사항 {#considerations-about-caching}
 
 * Dispatcher 캐싱 허용 [!DNL AEM Forms] 를 클릭하여 클라이언트에서 적응형 Forms을 미리 채웁니다. 미리 채워진 양식의 렌더링 속도를 향상시킵니다.
-* 보안 콘텐츠 기능 캐싱은 기본적으로 비활성화되어 있습니다. 이 기능을 활성화하기 위해에서 제공하는 지침을 수행할 수 있습니다. [보안 콘텐츠 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=en) 기사
+* 보안 콘텐츠 캐싱 기능은 기본적으로 비활성화되어 있습니다. 이 기능을 활성화하기 위해에서 제공하는 지침을 수행할 수 있습니다. [보안 콘텐츠 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=en) 기사
 * Dispatcher가 일부 적응형 Forms 및 관련 적응형 Forms을 무효화하지 못할 수 있습니다. 이러한 문제를 해결하려면 다음을 참조하십시오. [[!DNL AEM Forms] 캐싱](troubleshooting-caching-performance.md) 문제 해결 섹션에서 을(를) 참조하십시오.
 * 현지화된 적응형 Forms 캐싱:
    * URL 형식 사용 `http://host:port/content/forms/af/<afName>.<locale>.html` 을(를) 대신해 지역화된 버전의 적응형 양식을 요청하려면 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
