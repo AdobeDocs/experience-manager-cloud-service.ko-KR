@@ -2,10 +2,10 @@
 title: Cloud Service 콘텐츠 요청 이해
 description: Adobe에서 컨텐츠 요청 라이선스를 구입한 경우 Adobe Experience Cloud as a Service가 측정하는 컨텐츠 요청 유형과 조직의 분석 보고 도구와의 차이에 대해 알아봅니다.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: dc01da4c85b37f21deb169b941c0cf2a958298b8
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 13%
+source-wordcount: '1164'
+ht-degree: 11%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 13%
 | 서드파티 모니터링 및 보안 도구 | 모니터링 및 보안 검색 도구는 Analytics 보고서에서 추적되지 않는 AEM에 대한 콘텐츠 요청을 생성할 수 있습니다. |
 | API 액세스 | 페이지 또는 Adobe Experience Manager API에 프로그래밍 방식으로 액세스하면 Analytics 보고서에서 추적되지 않는 AEM에 대한 컨텐츠 요청을 생성할 수 있습니다. |
 | 프리페치 요청 | 프리페치 서비스를 사용하여 페이지를 미리 로드하여 속도를 높이면 콘텐츠 요청 트래픽이 크게 증가할 수 있습니다. |
-| DDOS | Adobe는 DDOS 공격의 트래픽을 자동으로 감지하고 필터링하기 위해 모든 노력을 기울이고 있지만, 모든 DDOS 공격을 감지한다고 보장할 수는 없습니다. |
+| DDOS | Adobe은 DDOS 공격의 트래픽을 자동으로 감지하고 필터링하려고 시도하지만 가능한 모든 DDOS 공격을 감지한다는 보장은 없습니다. |
 | 트래픽 차단 | 브라우저에서 추적기 차단을 사용하면 일부 요청이 추적되지 않도록 옵트아웃할 수 있습니다. |
 | 방화벽 | 방화벽이 Analytics 추적을 차단할 수 있습니다. 이 시나리오는 회사 방화벽에서 더 자주 발생합니다. |
 
@@ -59,7 +59,7 @@ AEMas a Cloud Service 의 맨 위에 자체 CDN을 가져오는 고객의 경우
 | HTTP 코드 400-499 | 제외됨 | 콘텐츠가 없거나(404) 다른 콘텐츠 또는 요청 관련 문제가 있으면 방문자에게 오류가 반환됩니다. |
 | HTTP 코드 300-399 | 제외됨 | 서버에서 변경된 사항이 있는지 확인하거나 요청을 다른 리소스로 리디렉션하는 좋은 요청입니다. 여기에는 콘텐츠 자체가 포함되어 있지 않으므로 청구할 수 없습니다. |
 | /libs/*로 이동하는 요청 | 제외됨 | 청구할 수 없는 CSRF 토큰과 같은 AEM 내부 JSON 요청. |
-| DDOS 공격의 트래픽 | 제외됨 | DDOS 보호. AEM은 일부 DDOS 공격을 자동으로 탐지하여 차단합니다. 감지된 경우 DDOS 공격은 청구할 수 없습니다.<br><br>자동 감지된 DDOS 유형:<br>· DDOSBlockedCiphersSHA<br>· DDOSBlockedPattern<br>· DDOSSsuppliousRequest |
+| DDOS 공격의 트래픽 | 제외됨 | DDOS 보호. AEM은 일부 DDOS 공격을 자동으로 탐지하여 차단합니다. 감지된 경우 DDOS 공격은 청구할 수 없습니다. |
 | AEM as a Cloud Service NewRelic 모니터링 | 제외됨 | AEM as a Cloud Service 전역 모니터링. |
 | 고객이 Cloud Service 프로그램을 모니터링할 수 있는 URL | 제외됨 | 외부 가용성을 모니터링하는 권장 URL입니다.<br><br>`/system/probes/health` |
 | AEM as a Cloud Service Pod 준비 서비스 | 제외됨 | 사용자 에이전트: skyline-service-warmup/1.* |

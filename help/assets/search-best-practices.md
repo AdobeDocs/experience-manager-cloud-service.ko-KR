@@ -3,9 +3,9 @@ title: 에 대한 모범 사례 검색 [!DNL Adobe Experience Manager] as a [!DN
 description: 애플리케이션 내에서 에셋의 메타데이터를 검색, 찾기 및 검색하기 위한 모범 사례입니다.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: 8fc09f11127b29a6cd0f56f4e9d217b9756bbb8f
 workflow-type: tm+mt
-source-wordcount: '2544'
+source-wordcount: '2603'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 3%
 
 에서 작업 중인 경우 검색 결과에 유사한 결과가 표시됩니다. **[!UICONTROL 에셋 보기]** 또한.
 
-<!--[Watch a video to perform a simple search in AEM Assets] ()-->
+[AEM Assets에서 기본 검색을 수행하려면 비디오 보기](https://video.tv.adobe.com/v/3425489)
 
 ## 파일 및 폴더 {#files-folders}
 
@@ -67,7 +67,7 @@ ht-degree: 3%
 
 ![파일 및 폴더를 사용하여 검색](assets/files-folders.png)
 
-<!--[Watch a video to perform search in AEM Assets using Files and Folders] ()-->
+[비디오 보기 를 통해 파일 및 폴더를 사용하여 AEM Assets에서 검색 수행](https://video.tv.adobe.com/v/3425487)
 
 ## 연산자 {#operators}
 
@@ -119,7 +119,7 @@ AND 연산자는 옴니 검색에서 두 키워드 사이의 기본 연산자입
 * `car*` 세차, 통신사, 캐리지 등이 있는 에셋을 반환합니다.
 * `*car` modern car, sports car 등으로 자산을 반환합니다.
 
-<!--[Watch a video to perform a search in AEM Assets using wildcards] ()-->
+[와일드카드를 사용하여 AEM Assets에서 검색을 수행하려면 비디오 보기](https://video.tv.adobe.com/v/3425488)
 
 **[!UICONTROL 에셋 보기]** 는 와일드카드 사용을 지원하지 않습니다.
 
@@ -172,8 +172,6 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 1. 필터로 이동합니다. 아래 [!UICONTROL MIME 유형], 선택 [!UICONTROL PDF].
 1. 다음으로 이동 [!UICONTROL 에셋 상태], 선택 [!UICONTROL 모두] 게시된 자산과 게시되지 않은 자산을 모두 포함합니다.
 
-<!--[Watch a video to perform search in AEM Assets using various filters] ()-->
-
 **시나리오 5: PNG를 제외한 모든 이미지 검색**
 
 에셋의 제목이나 메타 설명에 대해 잘 모르는 경우 다양한 검색 필터를 사용하여 검색의 관련성을 높일 수 있습니다. 예를 들어 에셋을에서 검색하려면 **[!UICONTROL 관리자 보기]**&#x200B;을(를) 클릭하고 아래 단계를 수행합니다.
@@ -188,6 +186,8 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 
 1. 검색 필터로 이동합니다.
 1. 필터로 이동합니다. 아래 [!UICONTROL MIME 유형]에서 제공된 MIME 유형을 모두 선택하되 PNG 는 선택 취소합니다.
+
+[필터를 사용하여 AEM Assets에서 검색을 수행하는 비디오 보기](https://video.tv.adobe.com/v/3425486)
 
 ## 고급 검색 {#advanced-search}
 
@@ -240,6 +240,8 @@ When you are unsure about the title or meta description of an asset, you can use
 ![태그를 사용하여 검색](assets/search-tags.png)
 
 에서 작업 중인 경우 검색 결과에 유사한 결과가 표시됩니다. **[!UICONTROL 에셋 보기]** 또한.
+
+[고급 검색을 사용하여 AEM Assets에서 검색을 수행하려면 비디오 보기](https://video.tv.adobe.com/v/3425490)
 
 **시나리오 9: 빨간색 자동차에 대한 유사한 일치 찾기**
 
