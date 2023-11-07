@@ -3,9 +3,9 @@ title: 에 대한 모범 사례 검색 [!DNL Adobe Experience Manager] as a [!DN
 description: 애플리케이션 내에서 에셋의 메타데이터를 검색, 찾기 및 검색하기 위한 모범 사례입니다.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 8fc09f11127b29a6cd0f56f4e9d217b9756bbb8f
+source-git-commit: 780f0dee9a2a0fd7fa63b93bdd8be6bc23eef04f
 workflow-type: tm+mt
-source-wordcount: '2603'
+source-wordcount: '2544'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 3%
 
 에서 작업 중인 경우 검색 결과에 유사한 결과가 표시됩니다. **[!UICONTROL 에셋 보기]** 또한.
 
-[AEM Assets에서 기본 검색을 수행하려면 비디오 보기](https://video.tv.adobe.com/v/3425489)
+>[!VIDEO](https://video.tv.adobe.com/v/3425489)
 
 ## 파일 및 폴더 {#files-folders}
 
@@ -67,7 +67,7 @@ ht-degree: 3%
 
 ![파일 및 폴더를 사용하여 검색](assets/files-folders.png)
 
-[비디오 보기 를 통해 파일 및 폴더를 사용하여 AEM Assets에서 검색 수행](https://video.tv.adobe.com/v/3425487)
+>[!VIDEO](https://video.tv.adobe.com/v/3425487)
 
 ## 연산자 {#operators}
 
@@ -119,7 +119,7 @@ AND 연산자는 옴니 검색에서 두 키워드 사이의 기본 연산자입
 * `car*` 세차, 통신사, 캐리지 등이 있는 에셋을 반환합니다.
 * `*car` modern car, sports car 등으로 자산을 반환합니다.
 
-[와일드카드를 사용하여 AEM Assets에서 검색을 수행하려면 비디오 보기](https://video.tv.adobe.com/v/3425488)
+>[!VIDEO](https://video.tv.adobe.com/v/3425488)
 
 **[!UICONTROL 에셋 보기]** 는 와일드카드 사용을 지원하지 않습니다.
 
@@ -187,7 +187,7 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 1. 검색 필터로 이동합니다.
 1. 필터로 이동합니다. 아래 [!UICONTROL MIME 유형]에서 제공된 MIME 유형을 모두 선택하되 PNG 는 선택 취소합니다.
 
-[필터를 사용하여 AEM Assets에서 검색을 수행하는 비디오 보기](https://video.tv.adobe.com/v/3425486)
+>[!VIDEO](https://video.tv.adobe.com/v/3425486)
 
 ## 고급 검색 {#advanced-search}
 
@@ -241,7 +241,7 @@ When you are unsure about the title or meta description of an asset, you can use
 
 에서 작업 중인 경우 검색 결과에 유사한 결과가 표시됩니다. **[!UICONTROL 에셋 보기]** 또한.
 
-[고급 검색을 사용하여 AEM Assets에서 검색을 수행하려면 비디오 보기](https://video.tv.adobe.com/v/3425490)
+>[!VIDEO](https://video.tv.adobe.com/v/3425490)
 
 **시나리오 9: 빨간색 자동차에 대한 유사한 일치 찾기**
 

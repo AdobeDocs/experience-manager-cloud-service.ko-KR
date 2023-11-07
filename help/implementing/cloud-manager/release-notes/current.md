@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.10.0 �
 description: AEM as a Cloud Service의 Cloud Manager 2023.10.0 릴리스 정보입니다.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: b760b3a65d89b0b4f924379fc460015a58e2ed3e
+source-git-commit: 36f7ece65c1312ff3ac463cd8c6abb2882b99043
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 80%
+source-wordcount: '599'
+ht-degree: 85%
 
 ---
 
@@ -25,26 +25,26 @@ AEM as a Cloud Service의 Cloud Manager 2023.10.0 릴리스 일자는 2023년 10
 
 ## 새로운 기능 {#what-is-new}
 
-* 개선 사항 [색인화](/help/operations/indexing.md) 새 인덱스를 배포할 때 파이프라인 지속 시간이 단축되었습니다.
+* [색인화](/help/operations/indexing.md) 개선으로 새 인덱스를 배포할 때 파이프라인 기간이 단축되었습니다.
    * 개선 사항은 콘텐츠 프로필에 따라 다릅니다.
-* 자동 [개발 환경에 대한 업데이트](/help/implementing/cloud-manager/manage-environments.md#updating-environments) 새 프로그램에 대해 기본적으로 활성화되어 업데이트를 수동으로 실행해야 하는 시간을 절약할 수 있습니다.
-   * 이 업데이트는 단계적으로 배포됩니다.
+* [개발 환경 자동 업데이트](/help/implementing/cloud-manager/manage-environments.md#updating-environments)가 새 프로그램에 대해 기본적으로 활성화되어 있으므로 업데이트를 수동으로 실행하는 데 드는 시간을 절약할 수 있습니다.
+   * 이 업데이트는 단계적으로 출시될 예정입니다.
 * Cloud Manager의 2023년 10월 릴리스에서는 Java 버전이 단계적 출시를 통해 업데이트되고 있습니다.
    * Java 8 및 11과 Maven의 보조 버전이 업데이트되었으며 향후 2개월에 걸쳐 단계적으로 출시될 예정입니다. 새 버전에는 여러 보안 수정 사항과 버그 수정이 포함되어 있습니다. 새 버전은 다음과 같습니다.
-   * *Maven: 3.8.8*
-   * *Java 8 버전: /usr/lib/jvm/jdk1.8.0_371*
-   * *Java 11 버전: /usr/lib/jvm/jdk-11.0.20*
+      * **Maven:** `3.8.8`
+      * **Java 8 버전:** `/usr/lib/jvm/jdk1.8.0_371`
+      * **Java 11 버전:** `/usr/lib/jvm/jdk-11.0.20`
    * 이러한 JDK 업데이트의 보안 및 버그 수정에 대한 자세한 내용은 [OpenJDK 자문](https://openjdk.org/groups/vulnerability/advisories/)을 참조하십시오.
 
 ## 조기 채택 프로그램 {#early-adoption}
 
 조기 채택 프로그램에 참여하여 향후 기능을 테스트할 기회를 얻으십시오.
 
-### 사용자 지정 권한 {#custom-permissions}
+### 사용자 정의 권한 {#custom-permissions}
 
-[Cloud Manager 사용자 지정 권한](/help/implementing/cloud-manager/custom-permissions.md) 에서는 구성 가능한 권한으로 새 사용자 정의 권한 프로필을 만들어 Cloud Manager 사용자의 프로그램, 파이프라인 및 환경에 대한 액세스를 제한할 수 있습니다.
+[Cloud Manager 사용자 정의 권한](/help/implementing/cloud-manager/custom-permissions.md)을 사용하여 Cloud Manager 사용자의 프로그램, 파이프라인 및 환경에 대한 액세스를 제한하는 구성 가능한 권한으로 새 사용자 정의 권한 프로필을 생성할 수 있습니다.
 
-이 새로운 기능을 테스트하고 피드백을 공유하려면 전자 메일을 보내십시오 `Grp-CloudManager-custom-permissions@adobe.com` (Adobe ID과 연계된 이메일 주소).
+이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 `Grp-CloudManager-custom-permissions@adobe.com`에 이메일을 보내주십시오.
 
 ### 셀프서비스 콘텐츠 복원 {#content-restore}
 
@@ -66,3 +66,15 @@ AEM as a Cloud Service의 Cloud Manager 2023.10.0 릴리스 일자는 2023년 10
 대시보드는 웹 앱의 품질을 개선하기 위한 오픈 소스 자동화 도구인 Google Lighthouse를 활용합니다. 공개 또는 인증이 필요한 모든 웹 페이지에 대해 실행할 수 있습니다. 성능, 접근성, 점진적 웹 앱, SEO 등에 대한 감사가 있습니다.
 
 새 대시보드를 테스트해 보고 싶으십니까? Adobe ID와 연결된 이메일로 `aem-lighthouse-pilot@adobe.com`에 이메일을 보내주시면 귀하의 시작을 도와드릴 수 있습니다.
+
+## 알려진 문제 {#known-issues}
+
+알려진 버그 방지 기능이 있습니다. [배포 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) 프로덕션으로 푸시할 수 없습니다.
+
+다음과 같은 경우 **프로덕션에 배포 전 일시 중단** 구성 배포 파이프라인에 옵션이 필요합니다. 버그가 해결될 때까지 다음 방법을 권장합니다.
+
+1. 파이프라인 실행.
+1. 스테이징 환경에서 코드를 테스트합니다.
+1. 배포 및 승인을 사용할 수 있게 되면 **거부**.
+1. 파이프라인을 편집하여 **프로덕션에 배포 전 일시 중단** 옵션을 선택합니다.
+1. 파이프라인을 다시 실행합니다. 스테이징에서 다시 실행된 다음 프로덕션에서 다시 실행됩니다.
