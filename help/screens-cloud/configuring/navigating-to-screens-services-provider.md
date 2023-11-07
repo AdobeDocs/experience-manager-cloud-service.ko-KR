@@ -2,9 +2,9 @@
 title: Screens Services Provider로 이동
 description: 이 페이지에서는 Screens Services Provider로 이동하는 방법에 대해 설명합니다.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: ad5a8656b200ba35a0a6f58afd4be03202138f47
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '292'
 ht-degree: 6%
 
 ---
@@ -38,6 +38,9 @@ ht-degree: 6%
 3. 설정 편집 대화 상자에 다음 세부 정보를 입력합니다.
    * **Url 게시** - AEM 게시 URL(예: `https://publish-p12345-e12345.adobeaemcloud.com`)
    * **작성자 Url** - AEM 작성자 URL(예: `https://author-p12345-e12345.adobeaemcloud.com`)
+
+   >[!NOTE]
+   >AEM 서비스 공급자에서 AEM을 구성하기 전에 Screens Screen 채널을 하나 이상 만들고 게시하십시오. 채널을 만들려면 콘텐츠 공급자에서 /screens.html으로 이동합니다.
 
    ![이미지](/help/screens-cloud/assets/configure/configure-screens4.png)
 
