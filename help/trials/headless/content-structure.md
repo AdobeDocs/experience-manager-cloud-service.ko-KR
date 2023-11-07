@@ -7,7 +7,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: 07f61a3f6a794e18bc2e02e966392cdce3103a81
 workflow-type: tm+mt
 source-wordcount: '1009'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -98,7 +98,7 @@ ht-degree: 98%
 
    * **렌더링 형식:** **콘텐츠 참조** - 모험을 만들 때 이 필드는 이 여행을 나타내는 이미지 자산을 가리킵니다.
    * **필드 레이블:** `Image` - 모험을 만들 때 이 필드에 표시되는 레이블입니다.
-   * **루트 경로:** `/content/dam/aem-demo-assets/en` - 자산 선택기를 사용하여 자산을 검색할 때 시작점 경로를 지정합니다.
+   * **루트 경로:** `/content/dam/aem-demo-assets/en` - 자산 선택기로 자산을 탐색할 때 시작점 경로를 지정합니다.
 
 1. 콘텐츠 조각 모델에 필요한 모든 필드가 추가된 후에 창의 오른쪽 상단에 있는 **저장**&#x200B;을 클릭합니다.
 

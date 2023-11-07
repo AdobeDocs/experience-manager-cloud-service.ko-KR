@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 4e3cf2276cdd5fb0722aee0e6cec11da951ca49d
 workflow-type: tm+mt
 source-wordcount: '4357'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -549,8 +549,8 @@ ht-degree: 99%
    + Adobe Express와 통합 {#integration-adobe-express}
       + [Adobe Express의 AEM Assets 추가 기능](/help/assets/addon-adobe-express.md)
 
-   + Creative Cloud과 통합 {#integration-creative-cloud}
-      + [AEM Assets을 Creative Cloud에 연결](/help/assets/connect-assets-with-creative-cloud.md)
+   + Creative Cloud와의 통합 {#integration-creative-cloud}
+      + [AEM Assets를 Creative Cloud에 연결](/help/assets/connect-assets-with-creative-cloud.md)
 
 + Forms {#forms}
    + 개요 {#forms-overview}
@@ -597,7 +597,7 @@ ht-degree: 99%
             + [적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md)
             + [적응형 양식 조각 만들기](/help/forms/adaptive-form-fragments-core-components.md)
             + [적응형 양식의 테마 만들기 - 핵심 구성 요소](/help/forms/using-themes-in-core-components.md)
-            + [핵심 구성 요소를 기반으로 적응형 양식 템플릿 만들기](/help/forms/template-editor-core-components.md)
+            + [핵심 구성 요소 기반 적응형 템플릿 만들기](/help/forms/template-editor-core-components.md)
             + [적응형 양식의 기록 문서 생성](/help/forms/generate-document-of-record-core-components.md)
             + [기계 번역 또는 인간 번역을 사용하여 적응형 양식 번역](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [리디렉션 페이지 또는 감사 메시지 구성](/help/forms/configure-redirect-page-or-thank-you-message.md)

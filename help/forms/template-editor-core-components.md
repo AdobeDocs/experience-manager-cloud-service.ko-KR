@@ -6,11 +6,11 @@ exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
 source-git-commit: f562d082520037fa1b15272c763d35e93dab137f
 workflow-type: tm+mt
 source-wordcount: '1991'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 핵심 구성 요소를 기반으로 적응형 양식 템플릿 만들기 {#adaptive-form-templates}
+# 핵심 구성 요소 기반 적응형 템플릿 만들기 {#adaptive-form-templates}
 
 양식을 작성할 때 편집기에서 양식 구조, 콘텐츠 및 작업을 정의하는 필드 및 구성 요소를 추가합니다. 에서 필드 및 구성 요소를 추가합니다 `guideRootPanel` 양식 컨테이너. 템플릿 편집기를 사용하면 작성자가 양식을 만드는 데 사용할 수 있는 기본 구조와 초기 콘텐츠가 포함된 템플릿을 만들 수 있습니다.
 
