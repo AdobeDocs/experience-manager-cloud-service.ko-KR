@@ -5,7 +5,9 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: 8dd82c31-f88e-4407-9b6d-c87033d7a823
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+hide: true
+hidefromtoc: true
+source-git-commit: 0712e7bb4f3150fd3361bc77652c6883845f960c
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 35%
@@ -47,14 +49,14 @@ The activity logs to be displayed in the timeline are fetched from the location 
 
 **추가 참조**
 
-* [에셋 번역](translate-assets.md)
+* [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [에셋이 지원되는 파일 형식](file-format-support.md)
-* [에셋 검색](search-assets.md)
-* [연결된 에셋](use-assets-across-connected-assets-instances.md)
-* [에셋 보고서](asset-reports.md)
+* [자산이 지원되는 파일 형식](file-format-support.md)
+* [자산 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [자산 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
-* [에셋 다운로드](download-assets-from-aem.md)
+* [자산 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
