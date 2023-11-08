@@ -4,10 +4,10 @@ description: 에 디지털 에셋 추가 [!DNL Adobe Experience Manager] as a [!
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 4305b334afd3337b849d80e79ca4669802cd4be8
 workflow-type: tm+mt
-source-wordcount: '3156'
-ht-degree: 2%
+source-wordcount: '3188'
+ht-degree: 10%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 2%
 | [자산 콘솔 사용자 인터페이스](#upload-assets) | 가끔 업로드, 누르기 및 끌기, 찾기 업로드. 를 사용하여 많은 에셋을 업로드하지 마십시오. | 모든 사용자 |
 | [API 업로드](#upload-using-apis) | 업로드 중 다이내믹 의사 결정용. | 개발자 |
 | [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | 낮은 볼륨 에셋 수집이지만 마이그레이션용은 아닙니다. | 관리자, 마케터 |
-| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) | 크리에이티브 및 마케터가 지원되는 내에서 자산에 대해 작업할 때 유용합니다 [!DNL Creative Cloud] 데스크탑 앱. | 크리에이티브, 마케터 |
+| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) | 크리에이티브 및 마케터가 지원되는 내에서 자산에 대해 작업할 때 유용합니다 [!DNL Creative Cloud] 데스크탑 앱. | 크리에이티브, 마케터 |
 | [일괄 에셋 수집기](#asset-bulk-ingestor) | 대규모 마이그레이션 및 경우에 따라 대량으로 수집하는 경우에 권장됩니다. 지원되는 데이터 저장소에만 해당됩니다. | 관리자, 개발자 |
 
 ## 에셋 업로드 {#upload-assets}
@@ -58,7 +58,7 @@ ht-degree: 2%
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
-파일(또는 여러 파일)을 업로드하려면 바탕 화면에서 선택하고 사용자 인터페이스(웹 브라우저)를 대상 폴더로 드래그하면 됩니다. 또는 사용자 인터페이스에서 업로드를 시작할 수 있습니다.
+파일(또는 여러 파일)을 업로드하려면 바탕 화면에서 선택하고 사용자 인터페이스(웹 브라우저)를 대상 폴더로 드래그하면 됩니다. 또는 사용자 인터페이스에서 업로드를 시작할 수 있습니다. [!DNL Experience Manager] 은 에셋이 1000개 이상인 폴더를 수용할 수 있습니다. 이미 존재하는 1000개 이상의 항목과 함께 이러한 폴더에 더 많은 항목을 업로드하려는 경우 새 폴더의 업로드 또는 생성이 지연될 수 있습니다.
 
 >[!IMPORTANT]
 >
@@ -181,11 +181,11 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 1. 드롭다운 목록에서 필요한 인증 모드를 선택합니다. **Azure 액세스 키** 에서는 Azure 스토리지 계정에 대한 완전한 액세스를 제공하지만, **Azure SAS 토큰** 관리자는 권한 및 만료 정책을 사용하여 토큰의 기능을 제한할 수 있습니다.
 
-1. 의 데이터 소스에 있는 자산이 포함된 루트 폴더의 이름을 입력합니다. **[!UICONTROL 소스 폴더]** 필드.
+1. **[!UICONTROL 소스 폴더]** 필드에 데이터 소스의 자산이 포함된 루트 폴더의 이름을 입력합니다.
 
 1. (선택 사항) 에셋의 수집 프로세스에 포함할 최소 파일 크기(MB)를 제공합니다. **[!UICONTROL 최소 크기로 필터링]** 필드.
 
-1. (선택 사항) 에셋의 수집 프로세스에 포함할 에셋의 최대 파일 크기(MB)를 제공합니다. **[!UICONTROL 최대 크기로 필터링]** 필드.
+1. (선택 사항) 자산의 최대 파일 크기(MB)를 제공하여 **[!UICONTROL 최대 크기로 필터링]** 필드의 수집 프로세스에 자산을 포함시킵니다.
 
 1. (선택 사항) 의 수집에서 제외할 MIME 유형을 쉼표로 구분한 목록으로 지정합니다. **[!UICONTROL MIME 유형 제외]** 필드. 예, `image/jpeg, image/.*, video/mp4`. 다음을 참조하십시오 [지원되는 모든 파일 형식](/help/assets/file-format-support.md).
 
@@ -193,9 +193,9 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 1. 다음 항목 선택 **[!UICONTROL 가져오기 후 소스 파일 삭제]** 파일을 로 가져온 후 소스 데이터 저장소에서 원본 파일을 삭제하는 옵션 [!DNL Experience Manager].
 
-1. 다음 항목 선택 **[!UICONTROL 가져오기 모드]**. 선택 **건너뛰기**, **바꾸기**, 또는 **버전 만들기**. 건너뛰기 모드가 기본값이며 이 모드에서는 에셋이 이미 있는 경우 수집기가 건너뜁니다. 의 의미를 확인합니다. [버전 바꾸기 및 만들기 옵션](#handling-upload-existing-file).
+1. **[!UICONTROL 가져오기 모드]**&#x200B;를 선택합니다. **건너뛰기**, **바꾸기** 또는 **버전 만들기**&#x200B;를 선택합니다. 건너뛰기 모드는 기본값이고, 자산이 이미 존재하는 경우 이 모드에서 수집기는 자산 가져오기를 건너뜁니다. 의 의미를 확인합니다. [버전 바꾸기 및 만들기 옵션](#handling-upload-existing-file).
 
-1. DAM에서 자산을 가져올 위치를 정의하려면 다음을 수행하십시오. **[!UICONTROL 에셋 Target 폴더]** 필드, 경로를 지정합니다. (예: `/content/dam/imported_assets`)
+1. **[!UICONTROL 자산 대상 폴더]** 필드를 사용하여 자산을 가져올 수 있는 DAM에 위치를 정의하려면 경로를 지정합니다. 예: `/content/dam/imported_assets`
 
 1. (선택 사항) CSV 형식으로 제공된 가져올 메타데이터 파일을 **[!UICONTROL 메타데이터 파일]** 필드. 소스 Blob 위치에 CSV 파일을 지정하고 일괄 가져오기 도구를 구성하는 동안 경로를 참조하십시오. 이 필드에서 참조되는 CSV 파일 형식은 다음과 같을 때 CSV 파일 형식과 동일합니다. [자산 메타데이터 일괄적으로 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html). 을(를) 선택하는 경우 **가져오기 후 소스 파일 삭제** 옵션, 다음을 사용하여 CSV 파일 필터링 **제외** 또는 **MIME 유형 포함** 또는 **경로/파일로 필터링** 필드. 정규 표현식을 사용하여 이러한 필드의 CSV 파일을 필터링할 수 있습니다.
 
@@ -207,7 +207,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ### 구성 편집 {#edit-configuration}
 
-구성 세부 정보를 편집하려면 구성을 선택한 다음 을 클릭합니다 **[!UICONTROL 편집]**. 편집 작업을 수행하는 동안에는 구성 및 가져오기 데이터 소스의 제목을 편집할 수 없습니다.
+구성 세부 정보를 편집하려면 구성을 선택한 다음 을 클릭합니다 **[!UICONTROL 편집]**. 편집 작업을 수행하면서 구성 및 가져오기 데이터 소스의 제목을 편집할 수 없습니다.
 
 ### 구성 삭제 {#delete-configuration}
 
@@ -225,11 +225,11 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ![시험 실행 결과](assets/dry-assets-result.png)
 
-### 일괄 가져오기 중 파일 이름 처리 {#filename-handling-bulkimport}
+### 일괄 가져오기 도중 파일 이름 처리 {#filename-handling-bulkimport}
 
-에셋 또는 폴더를 일괄적으로 가져올 때 [!DNL Experience Manager Assets] 는 가져오기 소스에 존재하는 것의 전체 구조를 가져옵니다. [!DNL Experience Manager] 에셋 및 폴더 이름에서 특수 문자에 대한 내장 규칙을 따르므로 이러한 파일 이름은 삭제해야 합니다. 폴더 이름과 자산 이름 모두에서 사용자가 정의한 제목은 변경되지 않은 상태로 유지되며에 저장됩니다 `jcr:title`.
+자산이나 폴더를 대량으로 가져올 때 [!DNL Experience Manager Assets]는 가져오기 소스에 존재하는 전체 구조를 가져옵니다. [!DNL Experience Manager]는 자산 및 폴더 이름의 특수 문자에 대해 내장된 규칙을 따르므로 이러한 파일 이름을 정리해야 합니다. 폴더 이름과 자산 이름 모두 사용자가 정의한 제목은 변경되지 않으며 `jcr:title`에 저장됩니다.
 
-일괄 가져오기 중, [!DNL Experience Manager] 에셋 및 폴더를 다시 가져오지 않도록 기존 폴더를 찾고, 가져오기가 발생하는 상위 폴더에 적용된 정리 규칙을 확인합니다. 정리 규칙이 상위 폴더에 적용되는 경우 동일한 규칙이 가져오기 소스에 적용됩니다. 새 가져오기의 경우 다음 정리 규칙이 자산 및 폴더의 파일 이름을 관리하는 데 적용됩니다.
+일괄 가져오기 도중 [!DNL Experience Manager]는 자산과 폴더를 다시 가져오는 것을 방지하기 위해 기존 폴더를 찾고, 가져오기가 수행되는 상위 폴더에 적용된 정리 규칙도 확인합니다. 정리 규칙이 상위 폴더에 적용되면 가져오기 소스에도 동일한 규칙이 적용됩니다. 새로운 가져오기의 경우 자산 및 폴더의 파일 이름을 관리하기 위해 다음과 같은 정리 규칙이 적용됩니다.
 
 **일괄 가져오기에서 허용되지 않는 이름**
 
@@ -313,11 +313,11 @@ Following are the file naming conventions that are applied while uploading asset
 
 #### 1회 또는 반복 일괄 가져오기 예약 {#schedule-bulk-import}
 
-1회 또는 반복 대량 가져오기를 예약하려면 다음 단계를 실행합니다.
+일회성 일괄 가져오기 또는 반복 일괄 가져오기를 예약하려면 다음 단계를 실행합니다.
 
 1. 대량 가져오기 구성을 만듭니다.
 1. 구성을 선택하고 다음을 선택합니다. **[!UICONTROL 예약]** 을 클릭합니다.
-1. 일회성 수집을 설정하거나 시간별, 일별 또는 주별 일정을 예약합니다. 클릭 **[!UICONTROL 제출]**.
+1. 일회성 수집을 설정하거나 매시간, 매일 또는 매주 단위로 일정을 예약합니다. **[!UICONTROL 제출]**&#x200B;을 클릭합니다.
 
    ![일괄 수집 작업 예약](assets/bulk-ingest-schedule1.png)
 
@@ -351,7 +351,7 @@ Experience Manager에 작업 내역이 표시됩니다. [일괄 가져오기 작
 
 웹 브라우저 사용자 인터페이스 외에도, [!DNL Experience Manager] 는 데스크탑에서 다른 클라이언트를 지원합니다. 또한 웹 브라우저로 이동할 필요 없이 업로드 환경을 제공합니다.
 
-* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) 에서 에셋에 대한 액세스 제공 [!DNL Experience Manager] Adobe Photoshop, Adobe Illustrator 및 Adobe InDesign 데스크탑 애플리케이션에서 사용할 수 있습니다. 현재 열려 있는 문서를에 업로드할 수 있습니다 [!DNL Experience Manager] 이러한 데스크탑 애플리케이션 내에서 Asset Link Adobe 인터페이스에서 직접 액세스
+* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) 에서 에셋에 대한 액세스 제공 [!DNL Experience Manager] Adobe Photoshop, Adobe Illustrator 및 Adobe InDesign 데스크탑 애플리케이션에서 사용할 수 있습니다. 현재 열려 있는 문서를에 업로드할 수 있습니다 [!DNL Experience Manager] 이러한 데스크탑 애플리케이션 내에서 Asset Link Adobe 인터페이스에서 직접 액세스
 * [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) 는 파일 유형 또는 자산을 처리하는 기본 애플리케이션에 관계없이 데스크탑에서 자산 작업을 간소화합니다. 브라우저 업로드는 플랫 파일 목록 업로드만 지원하므로 로컬 파일 시스템에서 중첩된 폴더 계층의 파일을 업로드하는 것이 유용합니다.
 
 ## 업로드 시 에셋 처리 {#process-when-uploaded}
@@ -417,5 +417,5 @@ Experience Manager에 작업 내역이 표시됩니다. [일괄 가져오기 작
 >
 >* [[!DNL Adobe Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [정보 [!DNL Adobe Asset Link]](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html)
->* [[!DNL Adobe Asset Link] 설명서](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [[!DNL Adobe Asset Link] 설명서](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)
 >* [에셋 업로드에 대한 기술 참조](developer-reference-material-apis.md#asset-upload)
