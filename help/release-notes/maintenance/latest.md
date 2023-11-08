@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: e7e565556b382a662fb8afc5aadaa26d2357e294
+source-git-commit: 2f0a7171f93bb5bc947dba5edb59a8e0e538e052
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 12%
+source-wordcount: '1130'
+ht-degree: 13%
 
 ---
 
@@ -101,9 +101,6 @@ ht-degree: 12%
 * FORMS-11206: 사용자가 적응형 양식에 대해 게시 워크플로우를 예약하려고 할 때 예상대로 작동하지 않습니다.
 * FORMS-11546: Lighthouse가 적응형 양식의 반복된 패널에 대한 ARIA 레이블이 누락되어 접근성에 영향을 미칩니다.
 * FORMS-11095: 전화 번호, 이메일 주소 및 번호 필드에 대해 ARIA 속성이 잘못 정의되어 접근성 문제가 발생합니다.
-* FORMS-9894: 사용자가 잘못된 저장소 경로를 제공하면 출력 서비스 API가 잘못된 오류 코드를 생성합니다. 이로 인해 이 문제가 발생하는 사용자에게 혼동이 발생합니다.
-* FORMS-11404: 다양한 XML 데이터를 리더 확장 PDF과 병합할 때 ImportData 서비스에 일관되지 않은 동작이 표시됩니다. 특히, 한 출력 PDF 문서에 대한 판독기 확장 속성은 정상적으로 유지되지만, 다른 출력 PDF에 대해서는 유지되지 않습니다.
-
 
 ### 알려진 문제 {#known-issues-14157}
 
