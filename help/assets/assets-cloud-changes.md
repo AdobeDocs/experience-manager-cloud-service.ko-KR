@@ -4,9 +4,9 @@ description: '의 주요 변경 내용 [!DNL Adobe Experience Manager Assets] �
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1038'
 ht-degree: 11%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 11%
 
 ## 에셋 마이크로서비스 개발 및 테스트 {#asset-microservices}
 
-에셋 마이크로서비스는 클라우드 서비스를 사용하여 확장 가능하고 탄력적인 에셋 처리 워크플로를 제공합니다. Adobe는 다양한 에셋 유형 및 옵션을 최적으로 처리할 수 있는 클라우드 서비스를 관리합니다. 에셋 마이크로서비스 는 서드파티 렌더링 도구 및 메서드(예: [!DNL ImageMagick]) 구성을 단순화하는 동시에 일반적인 파일 유형에 즉시 사용 가능한 기능을 제공합니다. 이제 다음을 처리할 수 있습니다. [광범위한 파일 유형](/help/assets/file-format-support.md) 이전 버전의 Experience Manager에서 사용할 수 있는 것보다 더 많은 형식을 즉시 제공합니다. 예를 들어 이전에 다음과 같은 타사 솔루션이 필요했던 PSD 및 PSB 형식의 썸네일 추출이 가능합니다. [!DNL ImageMagick]. 의 복잡한 구성은 사용할 수 없습니다. [!DNL ImageMagick] 대상: [!UICONTROL 처리 프로필] 구성. 사용 [!DNL Dynamic Media] 비디오의 고급 FFmpeg 코드 변환의 경우 및 처리 프로필 사용 [mp4 비디오의 기본 코드 변환](/help/assets/manage-video-assets.md#transcode-video).
+자산 마이크로서비스는 클라우드 서비스를 사용하여 확장 가능하고 탄력적인 자산 처리 워크플로를 제공합니다. Adobe는 다양한 자산 유형 및 옵션을 최적으로 처리할 수 있는 클라우드 서비스를 관리합니다. 에셋 마이크로서비스 는 서드파티 렌더링 도구 및 메서드(예: [!DNL ImageMagick]) 구성을 단순화하는 동시에 일반적인 파일 유형에 즉시 사용 가능한 기능을 제공합니다. 이제 다음을 처리할 수 있습니다. [광범위한 파일 유형](/help/assets/file-format-support.md) 이전 버전의 Experience Manager에서 사용할 수 있는 것보다 더 많은 형식을 즉시 제공합니다. 예를 들어 이전에 다음과 같은 타사 솔루션이 필요했던 PSD 및 PSB 형식의 썸네일 추출이 가능합니다. [!DNL ImageMagick]. 의 복잡한 구성은 사용할 수 없습니다. [!DNL ImageMagick] 대상: [!UICONTROL 처리 프로필] 구성. 사용 [!DNL Dynamic Media] 비디오의 고급 FFmpeg 코드 변환의 경우 및 처리 프로필 사용 [mp4 비디오의 기본 코드 변환](/help/assets/manage-video-assets.md#transcode-video).
 
 에셋 마이크로서비스 는 자동으로 프로비저닝되고 에 연결되는 클라우드 네이티브 서비스입니다. [!DNL Experience Manager] Cloud Manager에서 관리되는 고객 프로그램 및 환경에서. 확장 또는 사용자 정의하기 [!DNL Experience Manager], 개발자는 클라우드 환경에서 생성된 렌디션이 있는 기존 콘텐츠 또는 에셋을 사용하여 에셋 테스트 및 다운로드를 사용하여 코드를 테스트하고 확인할 수 있습니다.
 
@@ -51,14 +51,14 @@ ht-degree: 11%
 
 | 기능 또는 사용 사례 | 의 상태 [!DNL Experience Manager] as a [!DNL Cloud Service] | 댓글 |
 |-----|-----|-----|
-| [중복 에셋 감지](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | 다르게 작동 | 다음을 참조하십시오 [작동 방식 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). |
+| [중복 에셋 감지](/help/assets/detect-duplicate-assets.md) | 다르게 작동 | 다음을 참조하십시오 [작동 방식 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). |
 | [배치 전용(FPO) 렌디션](/help/assets/configure-fpo-renditions.md) | 다르게 작동 | 처리 프로필은 에셋 마이크로서비스 를 사용하여 FPO 렌디션을 생성합니다. Experience Manager 6.5에서 다음과 같은 타사 솔루션 [!DNL ImageMagick] 렌디션을 생성하는 데 사용할 수 있습니다. |
 | 메타데이터 원본에 쓰기 | 다르게 작동 | 기본적으로 비활성화됨. 필요한 경우 해당 워크플로우 런처를 활성화합니다. 원본에 쓰기(writeback)는 자산 마이크로서비스에서 처리합니다. |
 | 패키지 관리자를 사용하여 업로드된 자산 처리 | 수동 개입 필요 | 다음을 사용하여 수동으로 재처리 **[!UICONTROL 자산 재처리]** 작업. |
 | MIME 유형 감지 | 지원되지 않음. | 확장이 없거나 잘못된 디지털 에셋을 업로드하는 경우 원하는 대로 처리되지 않을 수 있습니다. 사용자는 DAM에 확장명 없이 이진 파일을 저장할 수 있습니다. 다음을 참조하십시오 [의 MIME 유형 감지 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
 | 조합 자산에 대한 하위 자산 생성 | 지원되지 않음. | 주석과 같은 종속 사용 사례가 이행되지 않을 수 있습니다. 다음을 참조하십시오 [에서 하위 자산 만들기 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). 일부 파일 형식의 PDF 미리 보기는 다음 항목부터 사용할 수 있습니다 [2021.7.0 릴리스](/help/release-notes/release-notes-cloud/release-notes-current.md). |
 | 이미지 편집 | 지원되지 않음 | Experience Manager as a Cloud Service에서는 에셋 편집이 지원되지 않습니다. 다음을 참조하십시오 [Experience Manager 6.5에서 작동 방식](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#editing-images). |
-| 홈 페이지 | 지원되지 않음 | 다음을 참조하십시오 [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
+| 홈 페이지 | 지원되지 않음 | 다음을 참조하십시오 [[!DNL Assets] 의 홈 페이지 경험 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
 | ZIP 아카이브에서 자산 추출 | 지원되지 않음 | 다음을 참조하십시오 [의 ZIP 추출 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
 | 자산 등급 | 지원되지 않음 | 메타데이터 스키마 편집기의 등급 위젯은 지원되지 않습니다. |
 | 콘텐츠 처리 필터 | 지원되지 않음 | 의 인기 있는 사용 사례 `ContentDispositionFilter` 는 관리자가 을 구성할 수 있도록 하기 위한 것입니다. [!DNL Experience Manager] HTML 파일을 제공하고 다운로드하는 대신 인라인으로 PDF 파일을 엽니다. 게시 인스턴스에서는 Dispatcher 구성을 사용하여 처리를 관리할 수 있습니다. 작성자 인스턴스에서 Adobe은 콘텐츠 처리 헤더 수정을 권장하지 않습니다. 다음을 참조하십시오 [의 콘텐츠 처리 필터 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html). |
@@ -69,14 +69,14 @@ ht-degree: 11%
 
 **추가 참조**
 
-* [에셋 번역](translate-assets.md)
+* [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [에셋이 지원되는 파일 형식](file-format-support.md)
-* [에셋 검색](search-assets.md)
-* [연결된 에셋](use-assets-across-connected-assets-instances.md)
-* [에셋 보고서](asset-reports.md)
+* [자산이 지원되는 파일 형식](file-format-support.md)
+* [자산 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [자산 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
-* [에셋 다운로드](download-assets-from-aem.md)
+* [자산 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
@@ -93,4 +93,3 @@ ht-degree: 11%
 >* [주요 변경 내용](/help/release-notes/aem-cloud-changes.md)
 >* [주요 변경 내용 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
 >* [비디오 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
-

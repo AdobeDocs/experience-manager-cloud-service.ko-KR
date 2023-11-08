@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.3.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.3.0 릴리스 정보입니다.'
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
 workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 87%
@@ -44,7 +44,7 @@ ht-degree: 87%
 
 * 이제 [!DNL Experience Manager Assets] 사용자 인터페이스를 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 
-   * 저장소에서 [중복 에셋 감지](/help/assets/manage-digital-assets.md#detect-duplicate-assets)를 구성합니다.
+   * 저장소에서 [중복 에셋 감지](/help/assets/detect-duplicate-assets.md)를 구성합니다.
 
    * 이미지에 [디지털 워터마크 추가](/help/assets/watermark-assets.md)를 구성합니다.
 
