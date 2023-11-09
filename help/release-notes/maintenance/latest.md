@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 2f0a7171f93bb5bc947dba5edb59a8e0e538e052
+source-git-commit: a8651a44300772b5c9706a5fd85e7fefef72e47d
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 13%
+source-wordcount: '1124'
+ht-degree: 14%
 
 ---
 
@@ -13,13 +13,13 @@ ht-degree: 13%
 
 다음 섹션에서는 Experience Manager as a Cloud Service 현재 유지 관리 릴리스의 기술 릴리스 정보에 대해 간략히 소개합니다.
 
-## 릴리스 14157 {#release-14157}
+## 릴리스 14227 {#release-14227}
 
-다음은 2023년 11월 7일에 공개적으로 릴리스된 유지 보수 릴리스 14157에 대한 지속적인 개선 사항을 요약합니다. 이 유지 관리 릴리스는 이전 유지 관리 릴리스 14029의 업데이트입니다.
+다음은 2023년 11월 9일에 공개적으로 릴리스된 유지 보수 릴리스 14227에 대한 지속적인 개선 사항을 요약합니다. 이 유지 관리 릴리스는 이전 유지 관리 릴리스 14029의 업데이트입니다. 유지 관리 릴리스 14227은 14157를 대체하여 한 가지 문제를 수정합니다.
 
 이 유지 관리 릴리스(2023.11.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)을 참조하십시오.
 
-### 개선 사항 {#enhancements-14157}
+### 개선 사항 {#enhancements-14227}
 
 * ASSETS-29631: Assets Cloud: 보안 게재/검색을 위해 dam:roles를 사용합니다.
 * CQ-4354515: 번역: 참조된 리소스의 번역을 표시하지 않는 옵션입니다.
@@ -40,7 +40,7 @@ ht-degree: 13%
 * SITES-16545: 콘텐츠 조각: 콘텐츠 조각 변형의 참조를 검색하기 위한 엔드포인트를 추가합니다.
 * SITES-16853: 콘텐츠 조각: /adobe/sites/cf/fragments/ 제거{fragmentId}/variation/{name}/tags 끝점입니다.
 
-### 해결된 문제 {#fixed-issues-14157}
+### 해결된 문제 {#fixed-issues-14227}
 
 * 다양한 접근성 문제 해결
 * ASSETS-31015: 알 수 없는 파일 확장명을 가진 에셋에 파일을 업로드할 수 없습니다.
@@ -85,7 +85,6 @@ ht-degree: 13%
 * SITES-16243: 콘텐츠 조각: 찾기 및 바꾸기가 Render as: Multiple이 있는 필드에서는 작동하지 않습니다.
 * SITES-16250: 콘텐츠 조각: CF를 패치하면 잘못된 etag 헤더가 반환되는 경우가 있습니다.
 * SITES-16686: 콘텐츠 조각: 콘텐츠 조각 비조각 참조는 상위 참조가 최대 깊이일 때 일련화됩니다.
-* SITES-16234: ContextHub: 타깃팅을 시작할 때 선택한 브랜드 활동 이름 수정 이 표시되지 않습니다.
 * SITES-12880: Fast-Track: Sites > Analytics 설정에 대한 현지화 수정.
 * SITES-16103: 경험 조각: 콘솔 오류로 인해 Target 옵션이 Cloud Service 아래에 표시되지 않습니다.
 * SITES-16001: MSM: 라이브 카피를 생성하는 동안 롤아웃 구성에서 다중 필드 구성 요소를 제외하는 기능.
@@ -102,11 +101,11 @@ ht-degree: 13%
 * FORMS-11546: Lighthouse가 적응형 양식의 반복된 패널에 대한 ARIA 레이블이 누락되어 접근성에 영향을 미칩니다.
 * FORMS-11095: 전화 번호, 이메일 주소 및 번호 필드에 대해 ARIA 속성이 잘못 정의되어 접근성 문제가 발생합니다.
 
-### 알려진 문제 {#known-issues-14157}
+### 알려진 문제 {#known-issues-14227}
 
 없음.
 
-### 임베드된 기술 {#embedded-tech-14157}
+### 임베드된 기술 {#embedded-tech-14227}
 
 | 기술 | 버전 | 링크 |
 |---|---|---|
