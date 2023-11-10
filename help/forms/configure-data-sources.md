@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+source-git-commit: b9fb484135fb2d16758548c525b59f5ba011afb5
 workflow-type: tm+mt
-source-wordcount: '2202'
+source-wordcount: '2203'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 3%
 
 [!DNL Experience Manager Forms] 데이터 통합을 통해 서로 다른 데이터 소스를 구성하고 연결할 수 있습니다. 기본적으로 지원되는 유형은 다음과 같습니다.
 
-* 관계형 데이터베이스 - MySQL, [!DNL Microsoft® SQL Server], [!DNL IBM® DB2®], 및 [!DNL Oracle RDBMS]
+* 관계형 데이터베이스 - MySQL, [!DNL Microsoft® SQL Server], [!DNL IBM® DB2®], postgreSQL 및 [!DNL Oracle RDBMS]
 * RESTful 웹 서비스
 * SOAP 기반 웹 서비스
 * OData 서비스(버전 4.0)
