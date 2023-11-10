@@ -2,12 +2,13 @@
 title: AEM에서 Universal Editor 시작하기
 description: Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 알아봅니다.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: 6c3b286182ae33cafadf51e653c2076d1911e444
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 100%
+source-wordcount: '924'
+ht-degree: 87%
 
 ---
+
 
 # AEM에서 Universal Editor 시작하기 {#getting-started}
 
@@ -109,14 +110,17 @@ Universal Editor 서비스에는 편집 중인 앱의 콘텐츠에 대한 올바
 앱에서 사용되는 연결은 페이지의 `<head>`에 `<meta>` 태그로 저장됩니다.
 
 ```html
-<meta name="urn:adobe:aem:editor:<referenceName>" content="<protocol>:<url>">
+<meta name="urn:adobe:aue:<category>:<referenceName>" content="<protocol>:<url>">
 ```
 
+* `<category>` - 두 가지 옵션을 가진 연결의 분류입니다.
+   * `system` - 연결 끝점의 경우
+   * `config` - 대상 [선택적 구성 설정 정의](#configuration-settings)
 * `<referenceName>` - 연결을 식별하기 위해 문서에서 재사용되는 짧은 이름입니다. 예: `aemconnection`
 * `<protocol>` - Universal Editor 지속성 서비스의 어떤 지속성 플러그인을 사용할 것인지 나타냅니다. 예: `aem`
 * `<url>` - 변경 사항이 지속되어야 하는 시스템의 URL입니다. 예: `http://localhost:4502`
 
-식별자 `adobe:aem:editor`은 Adobe Universal Editor 연결을 의미합니다.
+식별자 `urn:adobe:aue:system`은 Adobe Universal Editor 연결을 의미합니다.
 
 `itemid`는 `urn` 접두사를 사용하여 식별자를 줄입니다.
 
@@ -134,10 +138,12 @@ itemid="urn:<referenceName>:<resource>"
 ### 예시 연결 {#example}
 
 ```html
+<meta name="urn:adobe:aue:system:<referenceName>" content="<protocol>:<url>">
+
 <html>
 <head>
-    <meta name="urn:adobe:aem:editor:aemconnection" content="aem:https://localhost:4502">
-    <meta name="urn:adobe:aem:editor:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
+    <meta name="urn:adobe:aue:system:aemconnection" content="aem:https://localhost:4502">
+    <meta name="urn:adobe:aue:system:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
 </head>
 <body>
         <aside>
@@ -147,9 +153,9 @@ itemid="urn:<referenceName>:<resource>"
               <p itemprop="title" itemtype="text">Journalist</p>
               <img itemprop="avatar" src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" itemtype="image" alt="avatar"/>
             </li>
- 
+
 ...
- 
+
             <li itemscope itemid="urn:fcsconnection:/documents/mytext" itemtype="component">
               <p itemprop="name" itemtype="text">John Smith</p>
               <p itemid="urn:aemconnection/content/example/another-source" itemprop="title" itemtype="text">Photographer</p>
@@ -159,6 +165,28 @@ itemid="urn:<referenceName>:<resource>"
         </aside>
 </body>
 </html>
+```
+
+### 구성 설정 {#configuration-settings}
+
+다음을 사용할 수 있습니다. `config` 필요한 경우 서비스 및 확장 끝점을 설정하려면 연결 URN의 접두사를 사용하십시오.
+
+Adobe이 호스팅하는 유니버설 편집기 서비스를 사용하지 않고 호스팅된 자체 버전을 사용하려면 메타 태그에서 이를 설정할 수 있습니다. 범용 편집기에서 제공하는 기본 서비스 끝점을 덮어쓰려면 고유한 서비스 끝점을 설정합니다.
+
+* 메타 이름 - `urn:adobe:aue:config:service`
+* 메타 콘텐츠 - `content="https://adobe.com"` (예)
+
+```html
+<meta name="urn:adobe:aue:config:service" content="<url>">
+```
+
+페이지에 대해 특정 확장만 활성화하려는 경우 메타 태그에서 설정할 수 있습니다. 확장을 가져오려면 확장 끝점을 설정합니다.
+
+* 메타 이름: `urn:adobe:aue:config:extensions`
+* 메타 콘텐츠: `content="https://adobe.com,https://anotherone.com,https://onemore.com"` (예)
+
+```html
+<meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">
 ```
 
 ## Universal Editor를 사용할 준비 완료 {#youre-ready}

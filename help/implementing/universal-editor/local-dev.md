@@ -2,12 +2,13 @@
 title: Universal Editor를 사용하는 로컬 AEM 개발
 description: Universal Editor가 개발 목적으로 로컬 AEM 인스턴스 편집을 지원하는 방법에 대해 알아봅니다.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
-workflow-type: ht
+source-git-commit: 3b98543098f4125a7d7e5896e5aa46e441a40f32
+workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 100%
 
 ---
+
 
 # Universal Editor를 사용하는 로컬 AEM 개발 {#local-dev-ue}
 
