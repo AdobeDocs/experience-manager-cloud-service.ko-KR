@@ -4,9 +4,9 @@ description: 에 디지털 에셋 추가 [!DNL Adobe Experience Manager] as a [!
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 4305b334afd3337b849d80e79ca4669802cd4be8
+source-git-commit: 408fdf3cac2943fc6c8abfa8d3e94b212a1e455f
 workflow-type: tm+mt
-source-wordcount: '3188'
+source-wordcount: '3211'
 ht-degree: 10%
 
 ---
@@ -384,7 +384,7 @@ Experience Manager에 작업 내역이 표시됩니다. [일괄 가져오기 작
 
 * 다이렉트 이진 업로드는 자산을 업로드하는 새로운 방법입니다. 다음과 같은 제품 기능 및 클라이언트에서 기본적으로 지원됩니다. [!DNL Experience Manager] 사용자 인터페이스, [!DNL Adobe Asset Link], 및 [!DNL Experience Manager] 데스크탑 앱입니다. 고객 기술 팀에서 사용자 정의하거나 확장하는 모든 사용자 지정 코드는 새로운 업로드 API 및 프로토콜을 사용해야 합니다.
 
-* Adobe은 의 각 폴더에 1000개 이하의 에셋을 추가하는 것을 권장합니다. [!DNL Experience Manager Assets]. 폴더에 에셋을 더 추가할 수 있지만 이러한 폴더에 대한 탐색 속도가 느려지는 등의 성능 문제가 발생할 수 있습니다.
+* Adobe은 의 각 폴더에 1000개 이하의 에셋을 추가하는 것을 권장합니다. [!DNL Experience Manager Assets]. 이렇게 하면 &quot;이 디렉터리에 1000개 이상의 항목이 있습니다. 업로드 및 새 폴더 생성이 지연될 수 있습니다.&quot; 폴더에 에셋을 더 추가할 수 있지만 이러한 폴더에 대한 탐색 속도가 느려지는 등의 성능 문제가 발생할 수 있습니다.
 
 * 다음을 선택할 때 **[!UICONTROL 바꾸기]** 다음에서 [!UICONTROL 이름 충돌] 대화 상자에서 새 에셋에 대한 에셋 ID가 다시 생성됩니다. 이 ID는 이전 에셋의 ID와 다릅니다. If [Assets Insights](/help/assets/assets-insights.md) 를 사용하여 노출 또는 클릭을 추적할 수 있습니다. [!DNL Adobe Analytics]로 설정하면 재생성된 에셋 ID가에서 에셋에 대해 캡처된 데이터가 무효화됩니다. [!DNL Analytics].
 
