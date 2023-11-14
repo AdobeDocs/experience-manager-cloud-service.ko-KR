@@ -4,9 +4,9 @@ description: 에 디지털 에셋 추가 [!DNL Adobe Experience Manager] as a [!
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 408fdf3cac2943fc6c8abfa8d3e94b212a1e455f
+source-git-commit: 5dfcf1c5484b978c1a778eb99a09421533234734
 workflow-type: tm+mt
-source-wordcount: '3211'
+source-wordcount: '3179'
 ht-degree: 10%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 10%
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
-파일(또는 여러 파일)을 업로드하려면 바탕 화면에서 선택하고 사용자 인터페이스(웹 브라우저)를 대상 폴더로 드래그하면 됩니다. 또는 사용자 인터페이스에서 업로드를 시작할 수 있습니다. [!DNL Experience Manager] 은 에셋이 1000개 이상인 폴더를 수용할 수 있습니다. 이미 존재하는 1000개 이상의 항목과 함께 이러한 폴더에 더 많은 항목을 업로드하려는 경우 새 폴더의 업로드 또는 생성이 지연될 수 있습니다.
+파일(또는 여러 파일)을 업로드하려면 바탕 화면에서 선택하고 사용자 인터페이스(웹 브라우저)를 대상 폴더로 드래그하면 됩니다. 또는 사용자 인터페이스에서 업로드를 시작할 수 있습니다.
 
 >[!IMPORTANT]
 >
