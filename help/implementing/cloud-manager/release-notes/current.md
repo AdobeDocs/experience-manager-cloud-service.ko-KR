@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.10.0 릴리스 정보
-description: AEM as a Cloud Service의 Cloud Manager 2023.10.0 릴리스 정보입니다.
+title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.11.0 릴리스 정보
+description: AEM as a Cloud Service의 Cloud Manager 2023.11.0 릴리스 정보입니다.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 36f7ece65c1312ff3ac463cd8c6abb2882b99043
+source-git-commit: b51b3c9aed4d9dacbf12a6cad5f8923d82766bd9
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 85%
+source-wordcount: '715'
+ht-degree: 53%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.10.0 릴리스 정보 {#release-notes}
+# Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.11.0 릴리스 정보 {#release-notes}
 
-이 페이지에서는 AEM as a Cloud Service의 Cloud Manager 2023.10.0 릴리스 정보에 대해 설명합니다.
+이 페이지에서는 AEM as a Cloud Service의 Cloud Manager 2023.11.0 릴리스 정보에 대해 설명합니다.
 
 >[!NOTE]
 >
@@ -21,24 +21,27 @@ ht-degree: 85%
 
 ## 릴리스 일자 {#release-date}
 
-AEM as a Cloud Service의 Cloud Manager 2023.10.0 릴리스 일자는 2023년 10월 5일입니다. 다음 릴리스는 2023년 11월 2일에 예정되어 있습니다.
+AEM as a Cloud Service의 Cloud Manager 2023.11.0 릴리스 일자는 2023년 11월 14일입니다. 다음 릴리스는 2023년 12월 7일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
-* [색인화](/help/operations/indexing.md) 개선으로 새 인덱스를 배포할 때 파이프라인 기간이 단축되었습니다.
-   * 개선 사항은 콘텐츠 프로필에 따라 다릅니다.
-* [개발 환경 자동 업데이트](/help/implementing/cloud-manager/manage-environments.md#updating-environments)가 새 프로그램에 대해 기본적으로 활성화되어 있으므로 업데이트를 수동으로 실행하는 데 드는 시간을 절약할 수 있습니다.
-   * 이 업데이트는 단계적으로 출시될 예정입니다.
-* Cloud Manager의 2023년 10월 릴리스에서는 Java 버전이 단계적 출시를 통해 업데이트되고 있습니다.
-   * Java 8 및 11과 Maven의 보조 버전이 업데이트되었으며 향후 2개월에 걸쳐 단계적으로 출시될 예정입니다. 새 버전에는 여러 보안 수정 사항과 버그 수정이 포함되어 있습니다. 새 버전은 다음과 같습니다.
-      * **Maven:** `3.8.8`
-      * **Java 8 버전:** `/usr/lib/jvm/jdk1.8.0_371`
-      * **Java 11 버전:** `/usr/lib/jvm/jdk-11.0.20`
-   * 이러한 JDK 업데이트의 보안 및 버그 수정에 대한 자세한 내용은 [OpenJDK 자문](https://openjdk.org/groups/vulnerability/advisories/)을 참조하십시오.
+* AEM 이제 WAF-DDOS(Web Application Firewall-DDOS protection)를 as a Cloud Service 권한 및 [셀프서비스 방식으로 구성할 수 있습니다.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+* 특화 [배포 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 이제 몇 분 내에 환경 설정, 유지 관리 작업, CDN 규칙 등을 구성하는 데 파이프라인을 사용할 수 있습니다.
+* [콘텐츠 복사 시](/help/implementing/developing/tools/content-copy.md) 이제 더 높은 환경에서 개발 환경으로 개발 환경은 용량이 제한되어 있으므로 대용량 콘텐츠 세트를 복사할 때에는 주의해야 한다는 메시지가 표시됩니다.
+* [파이프라인 실행 세부 정보 페이지](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) 이제 아직 시작하지 않은 단계가 회색으로 표시된 파이프라인 실행의 모든 단계를 표시합니다.
+* 둘 다에서 **[활동](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** 및 **[파이프라인](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** 페이지 에서는 이제 실행 중인 상태의 파이프라인을 클릭하면 파이프라인 실행 요약을 사용할 수 있습니다.
+* 새 항목 **기간** 섹션이 [파이프라인 세부 정보 페이지](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) 여기에는 해당 프로그램의 기록 트렌드를 기반으로 파이프라인 단계의 평균 기간이 포함됩니다.
+* 파이프라인 실행 페이지에서 완료된 단계에 이제 기간이 표시됩니다.
 
 ## 조기 채택 프로그램 {#early-adoption}
 
 조기 채택 프로그램에 참여하여 향후 기능을 테스트할 기회를 얻으십시오.
+
+### GitHub 가져오기 {#byo-github}
+
+GitHub를 사용하여 저장소를 관리하는 경우 [이제 Cloud Manager를 통해 GitHub 저장소 내에서 직접 코드의 유효성을 검사할 수 있습니다.](/help/implementing/cloud-manager/managing-code/byo-github.md) 이 통합을 사용하면 코드를 Adobe 저장소와 일관되게 동기화할 필요가 없으며, 가져오기 요청을 주 분기로 병합하기 전에 이를 확인할 수 있습니다.
+
+이 새로운 기능을 테스트하고 피드백을 공유하려면 (으)로 이메일을 보내십시오. `Grp-CloudManager_BYOG@adobe.com` (Adobe ID과 연계된 이메일 주소).
 
 ### 사용자 정의 권한 {#custom-permissions}
 

@@ -2,10 +2,10 @@
 title: 차이점 및 새로운 기능 - Adobe Experience Manager as a Cloud Service
 description: 차이점 및 새로운 기능 - Adobe Experience Manager(AEM) as a Cloud Service
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 83b5d9a3ff0e9a3c69e36a97a3f733b05f827d3b
 workflow-type: tm+mt
-source-wordcount: '1896'
-ht-degree: 100%
+source-wordcount: '1897'
+ht-degree: 99%
 
 ---
 
@@ -206,7 +206,7 @@ AEM as a Cloud Service에서는 OSGi 번들 및 관련 구성이 관리되는 �
 
 >[!NOTE]
 >
->자세한 내용은 [백업](/help/operations/backup.md), [색인화](/help/operations/indexing.md) 및 [기타 유지 관리 작업](/help/operations/maintenance.md)을 시작하십시오.
+>자세한 내용은 다음으로 시작하십시오. [콘텐츠 복원](/help/operations/backup.md), [색인화](/help/operations/indexing.md), 및 [기타 유지 관리 작업](/help/operations/maintenance.md).
 
 AEM as a Cloud Service를 사용하면 이러한 작업이 자동화되므로 더 이상 서비스를 중단할 필요가 없습니다.
 
