@@ -2,20 +2,20 @@
 title: AEM 양식에 대한 참조 테마 및 템플릿을 가져오는 방법
 description: AEM Forms은 양식을 신속하게 만들 수 있도록 샘플 적응형 양식 테마, 템플릿 및 양식 데이터 모델을 제공합니다.
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: dd0c45352ea402065c7c6fced1394849ed9c316c
+source-git-commit: 046ffed13569ca3f9c104fb4525d28361873277a
 workflow-type: tm+mt
-source-wordcount: '864'
-ht-degree: 24%
+source-wordcount: '868'
+ht-degree: 23%
 
 ---
 
 # 참조 테마, 템플릿 및 양식 데이터 모델 {#reference-themes-templates-and-data-models}
 
 
-| 버전 | 문서 링크 |
+| 적용 대상 | 문서 링크 |
 | -------- | ---------------------------- |
-| 적응형 양식 핵심 구성 요소 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) |
-| AEM as a Cloud Service | 이 문서 |
+| 핵심 구성 요소를 기반으로 하는 적응형 양식 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) |
+| 기초 구성 요소를 기반으로 하는 적응형 양식 | 이 문서 |
 
 <span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
