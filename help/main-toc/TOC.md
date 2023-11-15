@@ -433,7 +433,7 @@ ht-degree: 99%
       + [이미지용 색상 태그](/help/assets/color-tag-images.md)
       + [PDF 문서 관리](/help/assets/manage-pdf-documents.md)
    + [!DNL Assets] 구성, 관리 및 확장 {#admin}
-      + [중복 에셋 감지](/help/assets/detect-duplicate-assets.md)
+      + [중복 자산 감지](/help/assets/detect-duplicate-assets.md)
       + [개발자 문서 및 API 참조](/help/assets/developer-reference-material-apis.md)
       + [폴더 메타데이터 스키마](/help/assets/folder-metadata-schema.md)
       + [이미지 및 비디오 프로필을 사용하여 작업](/help/assets/dynamic-media/about-image-video-profiles.md)
@@ -704,7 +704,7 @@ ht-degree: 99%
       + [디스플레이에 플레이어 할당](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
    + 핵심 제품 기능 사용 {#core-product-features}
       + [비디오에 대한 썸네일 지원](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
-      + [화면 알림 서비스](/help/screens-cloud/using-core-product-features/screens-notification-service.md)
+      + [Screens 알림 서비스](/help/screens-cloud/using-core-product-features/screens-notification-service.md)
    + Screens as a Cloud Service에서 개발 {#developing-screens-cloud}
       + [REST API](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
       + [구성 요소 만들기](/help/screens-cloud/developing/creating-components.md)
