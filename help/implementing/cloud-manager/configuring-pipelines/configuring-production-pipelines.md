@@ -3,9 +3,9 @@ title: 프로덕션 파이프라인 구성
 description: 코드를 빌드하고 프로덕션 환경에 배포하기 위해 프로덕션 파이프라인을 구성하는 방법을 알아봅니다.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: edc5d88b4ffc4e13299d21f6579f5f52c40e0773
+source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1418'
 ht-degree: 80%
 
 ---
@@ -132,7 +132,7 @@ ht-degree: 80%
 >
 >* 선택한 환경에 대한 웹 계층 코드 파이프라인이 있는 경우, 이 선택이 비활성화됩니다.
 >* 기존 전체 스택 파이프라인이 환경에 배포되어 있는 경우 동일한 환경에 대한 웹 계층 구성 파이프라인을 생성하면 전체 스택 파이프라인의 기존 웹 계층 구성이 무시됩니다.
-> * 언제든지 환경당 하나의 구성 배포 파이프라인만 있을 수 있습니다.
+> * 언제든지 환경당 하나의 구성 파이프라인만 있을 수 있습니다.
 
 배포 유형을 선택하면 프로덕션 대상 배포 파이프라인 생성을 완료하는 단계가 동일합니다.
 
@@ -158,7 +158,7 @@ ht-degree: 80%
    * **프로덕션에 배포 전 일시 중지** - 이 옵션은 프로덕션에 배포하기 전에 파이프라인을 일시 중지합니다.
    * **예약됨** - 이 옵션을 사용하면 예약된 프로덕션 배포를 활성화할 수 있습니다. 웹 계층 대상 배포에만 사용할 수 있습니다.
 
-   ![배포 파이프라인 구성](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
+   ![파이프라인 구성](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
 
 1. **저장**&#x200B;을 클릭합니다.
 

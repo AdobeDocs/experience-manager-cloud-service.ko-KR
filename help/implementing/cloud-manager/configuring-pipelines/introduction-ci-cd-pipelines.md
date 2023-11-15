@@ -3,9 +3,9 @@ title: CI/CD 파이프라인
 description: Cloud Manager의 CI/CD 파이프라인과 이를 사용하여 코드를 효율적으로 배포하는 방법에 대해 알아봅니다.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1443'
 ht-degree: 92%
 
 ---
@@ -53,7 +53,7 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 프로덕션 및 비프로덕션 외에도 배포하는 코드 유형에 따라 파이프라인을 구분할 수 있습니다.
 
 * **[전체 스택 파이프라인](#full-stack-pipeline)** - HTTPD/Dispatcher 구성과 함께 하나 이상의 AEM 서버 애플리케이션을 포함하는 백엔드 및 프론트엔드 코드 빌드를 동시에 배포합니다.
-* **[배포 파이프라인 구성](#config-deployment-pipeline)** - AEM 환경, 유지 관리 작업, CDN 규칙 등에 대한 설정을 구성합니다.
+* **[파이프라인 구성](#config-deployment-pipeline)** - AEM 환경, 유지 관리 작업, CDN 규칙 등에 대한 설정을 구성합니다.
 * **[프론트엔드 파이프라인](#front-end)** - 하나 이상의 클라이언트측 UI 애플리케이션을 포함하는 프론트엔드 코드 빌드를 배포합니다.
 * **[웹 계층 구성 파이프라인](#web-tier-config-pipelines)** - HTTPD/Dispatcher 구성을 배포합니다.
 
@@ -111,15 +111,15 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 * [프로덕션 파이프라인 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
 * [비프로덕션 파이프라인 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
 
-## 배포 파이프라인 구성 {#config-deployment-pipeline}
+## 파이프라인 구성 {#config-deployment-pipeline}
 
-구성 배포 파이프라인을 사용하여 유지 관리 작업, CDN 규칙 등을 위해 AEM 환경에 구성 설정을 배포할 수 있습니다.
+구성 파이프라인을 사용하여 유지 관리 작업, CDN 규칙 등을 위해 AEM 환경에 구성 설정을 배포할 수 있습니다.
 
 문서를 참조하십시오. [WAF 규칙을 포함한 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 저장소 구성을 관리하여 올바로 배포하는 방법에 대해 알아봅니다.
 
-### 배포 파이프라인 구성 {#configure-config-deployment}
+### 구성 파이프라인 구성 {#configure-config-deployment}
 
-구성 배포 파이프라인을 구성하는 방법은 다음 문서를 참조하십시오.
+구성 파이프라인을 구성하는 방법은 다음 문서를 참조하십시오.
 
 * [프로덕션 파이프라인 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)
 * [비프로덕션 파이프라인 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)
