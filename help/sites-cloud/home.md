@@ -4,7 +4,7 @@ description: 모든 Adobe AEM Cloud Services 지원 리소스에 대한 전체 �
 landing-page-description: AEM Sites as a Cloud Service로 작성하고 관리하는 방법을 이해합니다.
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
 source-git-commit: ce841a83d46dc1c4fa2edc858e4a0be0af3ac170
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '417'
 ht-degree: 100%
 
