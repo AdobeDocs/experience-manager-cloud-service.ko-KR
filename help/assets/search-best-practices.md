@@ -3,9 +3,9 @@ title: 에 대한 모범 사례 검색 [!DNL Adobe Experience Manager] as a [!DN
 description: 애플리케이션 내에서 에셋의 메타데이터를 검색, 찾기 및 검색하기 위한 모범 사례입니다.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 6638298056f2dae027db4df8c31c3fd59812a56b
+source-git-commit: b3b2cc516743243fbfdcf6189bfd851a1272bf78
 workflow-type: tm+mt
-source-wordcount: '2544'
+source-wordcount: '2520'
 ht-degree: 3%
 
 ---
@@ -38,11 +38,11 @@ ht-degree: 3%
 
 지정 `classic car` 를 검색 키워드로 사용하고 검색을 클릭합니다. 키워드를 입력할 때 드롭다운 목록에서 검색 제안을 볼 수 있습니다. 검색 제안은 Experience Manager 배포에 있는 검색 색인의 콘텐츠를 기반으로 합니다. 드롭다운 메뉴에서 적절한 에셋을 볼 수 없는 경우 Enter 키를 눌러 결과 목록을 확인합니다. 결과는 가장 가까운 일치부터 시작하여 관련성을 기준으로 정렬됩니다.
 
-![기본 검색 방법 1 수행](assets/simple-search-1.png)
+<!--![Performing basic search method 1](assets/simple-search-1.png)-->
 
 큰따옴표(&quot; &quot;)로 검색 키워드를 추가하여 검색을 보다 구체적으로 지정할 수 있습니다. 이 검색에는 지정된 용어가 함께 포함된 에셋만 포함됩니다. 검색 기준은 - `"classic car"`. 따라서 두 용어가 모두 포함된 검색 결과 `classic` 및 `car` 이 표시됩니다.
 
-![정확한 일치 항목 찾기](assets/simple-search-2.png)
+<!--![Finding exact match](assets/simple-search-2.png)-->
 
 에서 작업 중인 경우 검색 결과에 유사한 결과가 표시됩니다. **[!UICONTROL 에셋 보기]** 또한.
 
@@ -65,7 +65,7 @@ ht-degree: 3%
 경로에서 폴더를 선택하고 특정 폴더에서 검색하려면 필요한 폴더로 이동합니다.
 3. 드롭다운 목록에서 파일 을 선택하여 키워드가 있는 모든 파일을 표시합니다 `classic car`.
 
-![파일 및 폴더를 사용하여 검색](assets/files-folders.png)
+<!--![Search using files and folders](assets/files-folders.png)-->
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425487)
 
@@ -164,7 +164,7 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 1. 선택 [!UICONTROL PDF].
 1. 다음으로 이동 [!UICONTROL 상태] > [!UICONTROL 게시] > [!UICONTROL 게시 취소됨].
 
-![필터 예 2](assets/filter-2.png)
+<!--![Filter example 2](assets/filter-2.png)-->
 
 에서 다음 단계를 실행합니다 **[!UICONTROL 에셋 보기]**:
 
@@ -180,7 +180,7 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 1. 필터로 이동합니다. 아래 [!UICONTROL 파일 유형], 확장 [!UICONTROL 이미지] 및 선택 [!UICONTROL 웹 활성화됨]
 1. PNG를 선택 취소합니다.
 
-![지프를 제외한 모든 이미지 검색](assets/images-png.png)
+<!--![Search all images except jeep](assets/images-png.png)-->
 
 에서 언급된 시나리오를 사용하여 에셋을 검색하려면 **[!UICONTROL 에셋 보기]**&#x200B;을(를) 클릭하고 아래 단계를 수행합니다.
 
@@ -203,7 +203,7 @@ Adobe Experience Manager을 사용하면 검색에 여러 기준을 추가할 �
 2. 필터 패널로 이동하고 파일 형식에서 문서 를 선택합니다.
 3. 별표 와일드카드를 사용하여 검색을 구체화합니다. 유형 `"classic car"` 을(를) 포함하는 모든 에셋을 검색하려면 `classic car` 키워드.
 
-![시나리오 6](assets/scenario-6.png)
+<!--![Scenario 6](assets/scenario-6.png)-->
 
 시나리오 6은에서 실행할 수 없습니다. **[!UICONTROL 에셋 보기]** 따라서 와일드카드 사용을 지원하지 않습니다.
 
@@ -213,7 +213,7 @@ Adobe Experience Manager을 사용하면 검색에 여러 기준을 추가할 �
 
 을(를) 입력합니다 `car - classic` 검색창에 키워드를 표시합니다. 필터 패널로 이동하고 파일 형식에서 문서 를 선택합니다. 검색 우선 순위는 다음을 기반으로 합니다. 우선 순위 1: 메타데이터 우선 순위 2: 스마트 태그
 
-![시나리오 7](assets/scenario-7.png)
+<!--![Scenario 7](assets/scenario-7.png)-->
 
 시나리오 7은에서 실행할 수 없습니다. **[!UICONTROL 에셋 보기]** 따라서 와일드카드 사용을 지원하지 않습니다.
 
@@ -237,7 +237,7 @@ When you are unsure about the title or meta description of an asset, you can use
 
 다양한 검색 필터를 사용하여 특정 기준을 캡처할 수 있습니다. 태그는 많은 에셋 간에 식별할 수 있도록 에셋에 할당되는 키워드입니다. 예를 들어 이 시나리오에서는 *지프* 태그에 태그를 추가했습니다. 이렇게 하려면 다음을 입력합니다. `tags:jeep` 검색 창에서 을 클릭합니다. 이 기준을 충족하는 에셋만 검색 결과에 나열됩니다.
 
-![태그를 사용하여 검색](assets/search-tags.png)
+<!--![Search using tags](assets/search-tags.png)-->
 
 에서 작업 중인 경우 검색 결과에 유사한 결과가 표시됩니다. **[!UICONTROL 에셋 보기]** 또한.
 
