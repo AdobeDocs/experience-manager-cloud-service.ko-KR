@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service에 대한 로깅
 description: AEM용 로깅을 as a Cloud Service으로 사용하여 중앙 로깅 서비스의 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 8f20876be6b01e1994fb8f91d4a1b4a113588a3e
+source-git-commit: 12bdd43b870e30984e2812baea956e06ca7c879c
 workflow-type: tm+mt
-source-wordcount: '2657'
+source-wordcount: '2683'
 ht-degree: 10%
 
 ---
@@ -523,7 +523,8 @@ Splunk 전달 기능은 아직 CDN 로그를 지원하지 않습니다.
 "cache": "PASS",
 "status": 200,
 "res_age": 0,
-"pop": "PAR"
+"pop": "PAR",
+"rules": "match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked"
 }
 ```
 
@@ -547,6 +548,8 @@ CDN 로그는 json 형식을 준수한다는 점에서 다른 로그와 구별�
 | *상태* | HTTP 상태 코드입니다(정수 값). |
 | *res_age* | 모든 노드에서 응답이 캐시되는 데 소요되는 시간(초)입니다. |
 | *pop* | CDN 캐시 서버의 데이터센터입니다. |
+| *rules* | 일치하는 모든 이름 [트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 및 WAF 플래그(일치 결과 블록 발생 여부를 나타냄) 일치하는 규칙이 없으면 비어 있습니다. |
+
 
 ## 로그 액세스 방법 {#how-to-access-logs}
 
