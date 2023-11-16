@@ -2,10 +2,10 @@
 title: DNS 레코드 상태 확인
 description: Cloud Manager를 사용하여 DNS 설정이 제대로 구성되고 있는지 확인하는 방법을 알아봅니다.
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '250'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '249'
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ Cloud Manager 내에서 도메인 이름이 AEM as a Cloud Service 웹 사이트
 
 1. **개요** 페이지에서 **환경** 화면으로 이동합니다.
 
-1. 왼쪽 탐색 패널에서 **도메인 설정**&#x200B;을 클릭합니다.
+1. 클릭 **도메인 설정** 을 클릭합니다.
 
 1. 도메인 이름에 대한 **상태** 아이콘을 클릭합니다.
 

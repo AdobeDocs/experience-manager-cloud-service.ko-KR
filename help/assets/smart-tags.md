@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2463'
 ht-degree: 6%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/enhanced-smart-tags.html?lang=en) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/enhanced-smart-tags.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
 디지털 에셋을 다루는 조직은 에셋 메타데이터에서 분류 제어 어휘를 사용하는 경우가 점점 늘어나고 있습니다. 기본적으로 직원, 파트너 및 고객이 디지털 에셋을 참조하고 검색하는 데 일반적으로 사용하는 키워드 목록을 포함합니다. 분류 제어 어휘로 자산에 태그를 지정하면 검색에서 자산을 쉽게 식별하고 검색할 수 있습니다.
@@ -123,7 +123,7 @@ AEM은 기본적으로 스마트 태그를 텍스트 기반 에셋 및 비디오
 1. 필요한 태그와 적절한 태그 구조를 만듭니다. DAM 저장소에서 관련 이미지를 업로드합니다.
 1. 위치 [!DNL Experience Manager] 사용자 인터페이스, 액세스 **[!UICONTROL 에셋]** > **[!UICONTROL 스마트 태그 교육]**.
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 다음을 제공합니다. **[!UICONTROL 제목]**, **[!UICONTROL 설명]**.
-1. 에서 폴더 아이콘을 클릭합니다. **[!UICONTROL 태그]** 필드. 팝업 창이 열립니다.
+1. 에서 폴더 아이콘 클릭 **[!UICONTROL 태그]** 필드. 팝업 창이 열립니다.
 1. 의 기존 태그에서 적절한 태그를 검색하거나 선택합니다 `cq-tags` 를 모델에 추가합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
    >[!NOTE]

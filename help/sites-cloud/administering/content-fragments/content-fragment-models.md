@@ -3,13 +3,13 @@ title: 콘텐츠 조각 모델
 description: 콘텐츠 조각 모델이 AEM에서 콘텐츠 조각의 기반 역할을 하는 방법에 대해 알아봅니다. 이 조각을 통해 Headless 게재 또는 페이지 작성에 사용할 구조화된 콘텐츠를 만들 수 있습니다.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
-workflow-type: ht
-source-wordcount: '3064'
-ht-degree: 100%
+exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '3061'
+ht-degree: 98%
 
 ---
-
 
 # 콘텐츠 조각 모델 {#content-fragment-models}
 
@@ -181,6 +181,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
    * 콘텐츠 조각 콘텐츠를 편집할 때 사용할 탭을 가져올 수 있습니다.
       * 이는 모델 편집기에서 콘텐츠 데이터 유형 목록의 섹션을 구분하는 구분선으로 표시됩니다. 각 인스턴스는 새 탭의 시작을 나타냅니다.
       * 조각 편집기에서 각 인스턴스는 탭으로 표시됩니다.
+
      >[!NOTE]
      >
      >이 데이터 유형은 순전히 서식에 사용되며 AEM GraphQL 스키마에서는 무시됩니다.
@@ -200,7 +201,8 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 * **렌더링 형식**
 조각의 필드를 구현하거나 렌더링하기 위한 다양한 옵션입니다. 이를 통해 작성자에게 필드의 단일 인스턴스가 표시되는지 또는 작성자가 여러 인스턴스를 만들 수 있는지를 정의할 수 있습니다.
 
-* **필드 레이블** **필드 레이블**&#x200B;은 **속성 이름**&#x200B;을 자동으로 생성하며, 이는 필요한 경우 수동으로 업데이트할 수 있습니다.
+* **필드 레이블**
+입력 **필드 레이블** 자동 생성 **속성 이름**&#x200B;필요한 경우 수동으로 업데이트할 수 있습니다.
 
 * **유효성 검사**
 기본 유효성 검사는 **필수** 속성과 같은 메커니즘을 통해 사용할 수 있습니다. 일부 데이터 유형에는 추가 유효성 검사 필드가 있습니다. 자세한 내용은 [유효성 검사](#validation)를 참조하십시오.

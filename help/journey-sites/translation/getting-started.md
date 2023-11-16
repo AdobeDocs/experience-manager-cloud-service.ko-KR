@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '1399'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1398'
+ht-degree: 96%
 
 ---
 
@@ -107,7 +107,7 @@ Sites 콘솔에 액세스하려면 다음 작업을 수행하십시오.
 
    ![페이지 편집](assets/sites-editor-title.png)
 
-언제든지 브라우저의 해당 탭으로 다시 전환하여 Sites 콘솔로 돌아갈 수 있습니다. 사이트 편집기를 사용하여 콘텐츠 작성자 및 대상자에게 표시될 페이지 콘텐츠를 빠르게 볼 수 있습니다.
+언제든지 브라우저의 해당 탭으로 다시 전환하여 Sites 콘솔로 돌아갈 수 있습니다. 사이트 편집기를 사용하면 콘텐츠 작성자 및 대상자가 볼 수 있는 대로 페이지 콘텐츠를 빠르게 볼 수 있습니다.
 
 >[!NOTE]
 >
@@ -201,7 +201,7 @@ AEM Sites 번역 여정의 한 부분을 완료했으므로,
 * AEM이 콘텐츠를 저장하는 방법을 이해할 수 있습니다.
 * AEM의 번역 도구에 익숙해질 수 있습니다.
 
-이 지식을 기반으로 다음 문서인 [번역 커넥터 구성](configure-connector.md)을 검토하여 AEM Sites 번역 여정을 계속하십시오. 여기에서는 AEM을 번역 서비스에 연결하는 방법에 대해 알아보게 됩니다.
+이 지식을 기반으로 다음 문서를 검토하여 AEM Sites 번역 여정을 계속하십시오 [번역 커넥터 구성](configure-connector.md) 여기에서 AEM을 번역 서비스에 연결하는 방법을 배울 수 있습니다.|
 
 ## 추가 리소스 {#additional-resources}
 

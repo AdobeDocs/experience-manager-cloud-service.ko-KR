@@ -2,16 +2,16 @@
 title: 세그먼테이션 이해
 description: 세그먼테이션은 캠페인을 만들 때 중요하게 고려해야 하는 사항입니다
 exl-id: 36a9623a-bb19-498a-a0e9-ef80582b1fcf
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '538'
 ht-degree: 74%
 
 ---
 
 # 세그먼테이션 이해 {#understanding-segmentation}
 
-세그먼테이션은 캠페인을 만들 때 중요하게 고려해야 하는 사항입니다. 대부분의 경우 캠페인을 시작하기 전에 세그먼트가 이미 정의되어 있어야 합니다.
+세그먼테이션은 캠페인을 만들 때 중요하게 고려해야 하는 사항입니다. 대부분의 경우 캠페인을 시작하기 전에 이미 정의된 세그먼트가 있어야 합니다.
 
 사이트 방문자는 사이트를 방문할 때 서로 다른 관심사와 목표를 갖습니다. 이러한 목표를 이해하고 기대치를 충족하는 것은 온라인 마케팅의 중요한 성공 요소입니다.
 

@@ -2,9 +2,9 @@
 title: Screens에서 비디오 표현물 as a Cloud Service 만들기
 description: 이 페이지에서는 Screens as a Cloud Service으로 비디오 렌디션을 만드는 방법에 대해 설명합니다.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '366'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Screens Content Provider에서 as a Cloud Service으로 비디오 렌디션을 �
 
 1. 왼쪽 탐색 모음에서 도구 섹션을 클릭하고 를 클릭합니다. **에셋** 그런 다음 을 클릭합니다. **처리 프로필**.
 
-   ![처리 프로필 클릭](/help/screens-cloud/assets/configure/screens-cp-3.png)
+   ![처리 프로필 을 클릭합니다](/help/screens-cloud/assets/configure/screens-cp-3.png)
 
 1. 클릭 **만들기** 처리 프로필을 만들려면
 
@@ -61,7 +61,7 @@ Screens Content Provider에서 as a Cloud Service으로 비디오 렌디션을 �
 
 1. 스크린 비디오가 보관되는 폴더를 선택하고 **적용**.
 
-   ![적용 을 클릭합니다](/help/screens-cloud/assets/configure/screens-video-6.png)
+   ![적용](/help/screens-cloud/assets/configure/screens-video-6.png)을 클릭합니다
 
    >[!NOTE]
    >

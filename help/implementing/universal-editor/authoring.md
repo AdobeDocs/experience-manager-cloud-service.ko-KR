@@ -2,10 +2,10 @@
 title: Universal Editor로 콘텐츠 작성
 description: 콘텐츠 작성자가 Universal Editor를 사용하여 얼마나 쉽고 직관적으로 콘텐츠를 만들 수 있는지 알아봅니다.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: c6d4300e6e031a4958277fa3bce251ac6aa5dbc9
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2442'
-ht-degree: 73%
+source-wordcount: '2432'
+ht-degree: 71%
 
 ---
 
@@ -38,7 +38,7 @@ Universal Editor로 앱의 콘텐츠를 작성하려면 개발자가 앱을 계�
 
 ## 로그인 {#sign-in}
 
-Universal Editor와 함께 작동하도록 앱이 구성되었으면 Universal Editor에 로그인해야 합니다. 로그인하고 [Universal Editor에 액세스하려면](getting-started.md#request-access) Adobe ID가 필요합니다.
+앱이 유니버설 편집기에서 작동하도록 계측되면 유니버설 편집기에 로그인합니다. 로그인하려면 Adobe ID이 필요합니다. [유니버설 편집기에 액세스할 수 있습니다.](getting-started.md#request-access)
 
 로그인한 후에 [위치 표시줄에 편집하려는 페이지의 URL을 입력하여](#location-bar)[텍스트 콘텐츠](#text-mode) 또는 [미디어 콘텐츠](#media-mode)와 같은 콘텐츠를 편집할 수 있습니다.
 
@@ -146,7 +146,7 @@ Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바�
 
 ![에뮬레이션 옵션](assets/emulation-options.png)
 
-기본적으로 편집기는 브라우저에서 높이 및 폭이 자동으로 정의되는 데스크탑 레이아웃에서 열립니다.
+기본적으로 편집기는 브라우저에서 높이와 너비를 자동으로 정의하는 데스크탑 레이아웃으로 열립니다.
 
 Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있습니다.
 
@@ -192,7 +192,7 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 #### 구성 요소 모드 {#component-mode}
 
-구성 요소 모드에서 콘텐츠 작성자는 다음을 포함한 구성 요소를 클릭하여 편집할 수 있습니다.
+구성 요소 모드에서 콘텐츠 작성자는 다음을 포함하여 편집할 구성 요소를 선택할 수 있습니다.
 
 * 즉시 [일반 텍스트 편집](#editing-content).
 * [리치 텍스트 편집](#editing-rich-text) 속성 레일에 표시되는 추가적인 형식 옵션과 함께 배치됩니다.

@@ -2,10 +2,10 @@
 title: 프로덕션 프로그램 만들기
 description: Cloud Manager를 사용하여 라이브 트래픽을 호스팅하는 자체 프로덕션 프로그램을 만드는 방법을 알아봅니다.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 88%
+source-wordcount: '601'
+ht-degree: 73%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 88%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. 화면 오른쪽 상단에서 **프로그램 추가**&#x200B;를 클릭합니다.
+1. 클릭 **프로그램 추가** 화면 오른쪽 상단에서
 
    ![Cloud Manager 랜딩 페이지](assets/log-in.png)
 
@@ -49,7 +49,7 @@ ht-degree: 88%
 
    ![솔루션 선택](assets/setup-prod-select.png)
 
-1. 솔루션 이름 앞의 V자형 화살표를 클릭하면 **Sites**&#x200B;에서 **Commerce** 추가 기능 옵션을 선택하는 것과 같은 선택적 추가 기능이 표시됩니다.
+1. 솔루션 이름 앞의 V자형 화살표를 클릭하면 **상거래** 추가 기능 옵션 **사이트**.
 
    ![추가 기능 선택](assets/setup-prod-commerce.png)
 
@@ -80,7 +80,7 @@ ht-degree: 88%
 
    ![프로그램 개요](assets/set-up-prod5.png)
 
-언제든지 다른 프로그램으로 전환하거나 개요 페이지로 돌아가서 다른 프로그램을 만들어야 하는 경우 화면 왼쪽 상단에 있는 프로그램 이름을 클릭하여 **다음으로 이동** 옵션을 표시합니다.
+언제든지 다른 프로그램으로 전환하거나 개요 페이지로 돌아가서 다른 프로그램을 만들어야 하는 경우 화면 왼쪽 상단에 있는 프로그램 이름을 클릭하여 **다음으로 이동** 옵션을 선택합니다.
 
 ![다음으로 이동](assets/create-program-a1.png)
 

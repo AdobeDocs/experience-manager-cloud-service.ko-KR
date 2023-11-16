@@ -3,10 +3,10 @@ title: “[!DNL Assets view] 사용자 인터페이스”
 description: ' [!DNL Assets view]의 사용자 인터페이스 및 탐색을 이해합니다.'
 role: User
 exl-id: 534a8084-88f7-410e-b872-719e47e62b10
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 92%
+source-wordcount: '894'
+ht-degree: 90%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 92%
 
 자산을 찾으려면 자산을 `Name`, `Relevancy`, `Size`, `Modified` 및 `Created`의 오름차순 또는 내림차순으로 정렬할 수 있습니다.
 
-폴더로 이동하려면 해당 폴더의 썸네일을 더블 클릭하거나 왼쪽 사이드바에서 폴더를 선택합니다. 폴더의 세부 정보를 보려면 해당 폴더를 선택하고 상단의 도구 모음에서 세부 정보를 클릭하십시오. 계층 구조를 위아래로 탐색하려면 왼쪽 사이드바를 사용하거나 상단의 이동 경로를 사용하십시오.
+폴더로 이동하려면 해당 폴더의 썸네일을 두 번 클릭하거나 왼쪽 사이드바에서 폴더를 선택합니다. 폴더의 세부 정보를 보려면 해당 폴더를 선택하고 상단의 도구 모음에서 세부 정보를 클릭하십시오. 계층 구조를 위아래로 탐색하려면 왼쪽 사이드바를 사용하거나 상단의 이동 경로를 사용하십시오.
 
 ![폴더 검색](assets/browsing-folders.png)
 

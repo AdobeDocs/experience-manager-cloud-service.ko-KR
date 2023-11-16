@@ -2,16 +2,16 @@
 title: AEM as a Cloud Service로의 마이그레이션 여정 시작하기
 description: AEM as a Cloud Service로의 전환에 대한 기본 사항을 숙지하여 마이그레이션 여정 시작
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 87%
+source-wordcount: '582'
+ht-degree: 81%
 
 ---
 
 # AEM as a Cloud Service로의 마이그레이션 여정 시작하기 {#getting-started}
 
-이 AEM as a Cloud Service 마이그레이션 여정 부분에서는 AEM의 On-premise 또는 Adobe Managed Services 설치를 클라우드로 이동하는 기본 사항에 대해 알아봅니다.
+이 AEM as a Cloud Service 마이그레이션 여정 부분에서는 AEM의 온프레미스 또는 Adobe Managed Services 설치를 클라우드로 이동하는 기본 사항에 대해 알아봅니다.
 
 ## 목표 {#objective}
 

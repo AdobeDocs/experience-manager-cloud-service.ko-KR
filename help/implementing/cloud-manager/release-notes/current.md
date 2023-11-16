@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.11.0 �
 description: AEM as a Cloud Service의 Cloud Manager 2023.11.0 릴리스 정보입니다.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 4e2ea040ec14515525424b42f524601d34786cb8
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 51%
+source-wordcount: '745'
+ht-degree: 73%
 
 ---
 
@@ -28,9 +28,9 @@ AEM as a Cloud Service의 Cloud Manager 2023.11.0 릴리스 일자는 2023년 11
 * AEM 이제 WAF-DDOS(Web Application Firewall-DDOS protection)를 as a Cloud Service 권한 및 [셀프서비스 방식으로 구성할 수 있습니다.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 * 특화 [파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 이제 몇 분 내에 WAF 규칙을 포함한 트래픽 필터 규칙을 구성하고 배포할 수 있습니다.
 * [콘텐츠 복사 시](/help/implementing/developing/tools/content-copy.md) 이제 더 높은 환경에서 개발 환경으로 개발 환경은 용량이 제한되어 있으므로 대용량 콘텐츠 세트를 복사할 때에는 주의해야 한다는 메시지가 표시됩니다.
-* [파이프라인 실행 세부 정보 페이지](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) 이제 아직 시작하지 않은 단계가 회색으로 표시된 파이프라인 실행의 모든 단계를 표시합니다.
-* 둘 다에서 **[활동](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** 및 **[파이프라인](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** 페이지 에서는 이제 실행 중인 상태의 파이프라인을 클릭하면 파이프라인 실행 요약을 사용할 수 있습니다.
-* 새 항목 **기간** 섹션이 [파이프라인 세부 정보 페이지](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) 여기에는 해당 프로그램의 기록 트렌드를 기반으로 파이프라인 단계의 평균 기간이 포함됩니다.
+* [파이프라인 실행 세부 정보 페이지](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details)에는 이제 아직 시작되지 않은 단계는 회색으로 바뀌어 모든 파이프라인 실행 단계가 표시됩니다.
+* 이제 **[활동](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** 및 **[파이프라인](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** 페이지에서 실행 상태의 파이프라인을 클릭하면 파이프라인 실행 요약을 사용할 수 있습니다.
+* 새 **기간** 섹션이 해당 프로그램의 과거 트렌드를 기반으로 한 파이프라인 단계의 평균 기간을 포함하는 [파이프라인 세부 정보 페이지](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details)에 추가되었습니다.
 * 다음에서 [파이프라인 실행 페이지,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity-window) 이제 완료된 단계에 기간이 표시됩니다.
 * 실행 [빌드 아티팩트 재사용](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) 이제 해당 아티팩트를 처음 빌드한 실행에 대한 링크가 표시됩니다.
 * 선택할 옵션 **중요한 지표 실패** 이제 을(를) 구성할 수 있습니다. [코드 품질 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 또한.
@@ -40,11 +40,11 @@ AEM as a Cloud Service의 Cloud Manager 2023.11.0 릴리스 일자는 2023년 11
 
 조기 채택 프로그램에 참여하여 향후 기능을 테스트할 기회를 얻으십시오.
 
-### GitHub 가져오기 {#byo-github}
+### 자체 GitHub 가져오기 {#byo-github}
 
-GitHub를 사용하여 저장소를 관리하는 경우 [이제 Cloud Manager를 통해 GitHub 저장소 내에서 직접 코드의 유효성을 검사할 수 있습니다.](/help/implementing/cloud-manager/managing-code/byo-github.md) 이 통합을 사용하면 코드를 Adobe 저장소와 일관되게 동기화할 필요가 없으며, 가져오기 요청을 주 분기로 병합하기 전에 이를 확인할 수 있습니다.
+GitHub를 사용하여 저장소를 관리하는 경우, [이제 Cloud Manager를 통해 GitHub 저장소 내에서 직접 코드의 유효성을 검사할 수 있습니다.](/help/implementing/cloud-manager/managing-code/byo-github.md) 이 통합을 통해 코드를 Adobe 저장소와 지속적으로 동기화할 필요가 없으며, 기본 분기에 병합하기 전에 가져오기 요청을 확인할 수 있습니다.
 
-이 새로운 기능을 테스트하고 피드백을 공유하려면 (으)로 이메일을 보내십시오. `Grp-CloudManager_BYOG@adobe.com` (Adobe ID과 연계된 이메일 주소).
+이러한 새 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 `Grp-CloudManager_BYOG@adobe.com`에 이메일을 보내주십시오.
 
 ### 사용자 정의 권한 {#custom-permissions}
 

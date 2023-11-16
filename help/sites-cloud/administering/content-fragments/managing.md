@@ -3,13 +3,13 @@ title: 콘텐츠 조각 관리
 description: Headless 콘텐츠 기반 또는 페이지 작성을 위해 콘솔과 편집기에서 AEM 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: d381cc80e2c15ea35f9fd23baa78806ce15ec1af
-workflow-type: ht
-source-wordcount: '2540'
-ht-degree: 100%
+exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '2532'
+ht-degree: 96%
 
 ---
-
 
 # 콘텐츠 조각 관리 {#managing-content-fragments}
 
@@ -70,7 +70,7 @@ ht-degree: 100%
 
 ### 콘솔의 기본 구조 및 처리 {#basic-structure-handling-content-fragments-console}
 
-**콘텐츠 조각**&#x200B;을 선택하면 새 탭에서 콘솔이 열립니다.
+선택 **컨텐츠 조각** 새 탭에서 콘솔을 엽니다.
 
 ![콘텐츠 조각 콘솔 - 개요](assets/cf-managing-console-overview.png)
 
@@ -191,17 +191,17 @@ ht-degree: 100%
    * 정보만.
    * [빠른 필터링](#fast-filtering)에 사용할 수 있습니다.
 * **참조자**:
-   * 해당 조각의 모든 [상위 참조](#parent-references-fragment)를 표시하는 대화 상자를 여는 링크가 제공됩니다. 여기에는 콘텐츠 조각, 경험 조각 및 페이지 참조가 포함됩니다. 특정 참조를 열려면 대화 상자에서 **제목**&#x200B;을 클릭합니다.
+   * 해당 조각의 모든 [상위 참조](#parent-references-fragment)를 표시하는 대화 상자를 여는 링크가 제공됩니다. 여기에는 콘텐츠 조각, 경험 조각 및 페이지 참조가 포함됩니다. 특정 참조를 열려면 **제목** 을 클릭합니다.
 
      ![콘텐츠 조각 콘솔 - 참조 대화 상자](assets/cf-managing-console-references-dialog.png)
 
-* **언어**: 모든 [언어](#language-copies-fragment) 사본 표시
+* **언어**: 다음을 나타냅니다. [언어](#language-copies-fragment) 사본
 
    * 콘텐츠 조각과 관련된 총 로컬/[언어](#language-copies-fragment) 사본 수와 함께 콘텐츠 조각 로케일을 표시합니다.
 
      ![콘텐츠 조각 콘솔 - 언어 표시기](assets/cf-managing-console-language-indicator.png)
 
-   * 개수를 클릭/탭하여 모든 언어 사본을 표시하는 대화 상자를 엽니다. 특정 언어 사본을 열려면 대화 상자에서 **제목**&#x200B;을 클릭합니다.
+   * 개수를 클릭/탭하여 모든 언어 사본을 표시하는 대화 상자를 엽니다. 특정 언어 사본을 열려면 **제목** 을 클릭합니다.
 
      ![콘텐츠 조각 콘솔 - 언어 대화 상자](assets/cf-managing-console-languages-dialog.png)
 
@@ -224,7 +224,7 @@ ht-degree: 100%
    >
    >새 조각의 위치를 미리 정의하려면 조각을 만들려는 폴더로 이동하거나 생성 프로세스 중에 위치를 지정할 수 있습니다.
 
-1. **새 콘텐츠 조각** 대화 상자가 열리면 여기에서 다음을 지정할 수 있습니다.
+1. 다음 **새 콘텐츠 조각** 대화 상자가 열리면 여기에서 다음을 지정할 수 있습니다.
 
    * **위치** - 현재 위치로 자동 완성되지만 필요한 경우 다른 위치를 선택할 수 있습니다.
    * **콘텐츠 조각 모델** - 드롭다운 목록에서 조각의 기반으로 사용할 모델을 선택합니다.
@@ -402,7 +402,7 @@ The **Replace** option is available to find, and replace, specified text in your
 * 콘텐츠 조각 콘솔의 **참조** 열
 * [콘텐츠 조각 편집기의 상단 도구 모음에 있는 상위 참조 링크](/help/sites-cloud/administering/content-fragments/authoring.md#view-parent-references)
 
-두 참조를 통해 해당 조각의 모든 상위 참조를 표시하는 대화 상자를 여는 링크가 제공됩니다. 여기에는 콘텐츠 조각, 경험 조각 및 페이지 참조가 포함됩니다. 특정 참조를 열려면 대화 상자에서 **제목** 또는 링크 아이콘을 클릭합니다.
+두 참조를 통해 해당 조각의 모든 상위 참조를 표시하는 대화 상자를 여는 링크가 제공됩니다. 여기에는 콘텐츠 조각, 경험 조각 및 페이지 참조가 포함됩니다. 특정 참조를 열려면 **제목**&#x200B;또는 대화 상자에서 링크 아이콘 을 클릭합니다.
 
 예:
 
@@ -419,7 +419,7 @@ The **Replace** option is available to find, and replace, specified text in your
 
 ![콘텐츠 조각 콘솔 - 언어 표시기](assets/cfc-console-language-indicator.png)
 
-개수를 클릭/탭하여 모든 언어 사본을 표시하는 대화 상자를 엽니다. 특정 언어 사본을 열려면 대화 상자에서 **제목**&#x200B;을 클릭합니다.
+개수를 클릭/탭하여 모든 언어 사본을 표시하는 대화 상자를 엽니다. 특정 언어 사본을 열려면 **제목** 을 클릭합니다.
 
 ![콘텐츠 조각 콘솔 - 언어 대화 상자](assets/cf-managing-console-languages-dialog.png)
 

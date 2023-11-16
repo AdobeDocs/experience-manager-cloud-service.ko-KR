@@ -2,10 +2,10 @@
 title: 론치
 description: 론치를 사용하여 향후 릴리스용 콘텐츠를 효율적으로 개발할 수 있습니다. 현재 페이지를 유지 관리하면서 나중에 게시할 수 있도록 변경할 수도 있습니다.
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '902'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '901'
+ht-degree: 98%
 
 ---
 
@@ -96,7 +96,7 @@ ht-degree: 100%
 
    ![Sites 콘솔의 론치 참조](/help/sites-cloud/authoring/assets/launches-references.png)
 
-1. 적절한 론치를 탭/클릭합니다. 가능한 작업 목록이 표시됩니다.
+1. 적절한 론치를 탭/클릭하면 가능한 작업 목록이 표시됩니다.
 
    ![Sites 콘솔의 론치에 대해 수행하는 작업](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 

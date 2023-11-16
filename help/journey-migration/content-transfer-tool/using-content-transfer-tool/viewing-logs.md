@@ -2,10 +2,10 @@
 title: 컨텐츠 전송 도구에서 마이그레이션 세트에 대한 로그 보기
 description: 컨텐츠 전송 도구에서 마이그레이션 세트에 대한 로그 보기
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
-source-git-commit: 9d236e459f13fec6f0aaf80f588d20760636b9bb
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 39%
+source-wordcount: '244'
+ht-degree: 40%
 
 ---
 
@@ -38,6 +38,6 @@ ht-degree: 39%
 
 ### 수집 로그
 
-수집 로그를 보려면 Cloud Acceleration Manager의 수집 작업 목록으로 이동한 후 원하는 마이그레이션 작업을 찾아 세 점(**...**)을 클릭하여 제품에서 사용할 수 있습니다. 그런 다음 을(를) 클릭하면 됩니다. **로그 다운로드** 로그를 다운로드하려면 다음을 수행하십시오.
+수집 로그를 보려면 Cloud Acceleration Manager의 수집 작업 목록으로 이동한 후 원하는 마이그레이션 작업을 찾아 세 점(**...**)을 클릭하여 제품에서 사용할 수 있습니다. 그런 다음 을(를) 클릭합니다 **로그 다운로드** 로그를 다운로드하려면 다음을 수행하십시오.
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam28.png)

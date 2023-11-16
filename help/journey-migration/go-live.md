@@ -2,9 +2,9 @@
 title: 실행
 description: 코드 및 콘텐츠가 클라우드에 준비되면 마이그레이션을 수행하는 방법을 알아봅니다
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1704'
 ht-degree: 4%
 
 ---
@@ -138,7 +138,7 @@ AEM 소스의 로드는 추출 단계 동안 더 커집니다. 다음 사항에 
 * CDN, SSL 및 DNS를 구성합니다.
    * 자체 CDN을 사용하는 경우 지원 티켓을 입력하여 적절한 라우팅을 구성합니다.
       * 섹션 보기 [고객 CDN이 AEM Managed CDN을 가리킴](/help/implementing/dispatcher/cdn.md#point-to-point-cdn) 자세한 내용은 CDN 설명서 를 참조하십시오.
-      * CDN 공급업체의 설명서에 따라 SSL 및 DNS를 구성해야 합니다.
+      * CDN 공급업체의 설명서에 따라 SSL 및 DNS를 구성합니다.
    * 추가 CDN을 사용하지 않는 경우 다음 설명서에 따라 SSL 및 DNS를 관리합니다.
       * SSL 인증서 관리
          * [SSL 인증서 관리 소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)

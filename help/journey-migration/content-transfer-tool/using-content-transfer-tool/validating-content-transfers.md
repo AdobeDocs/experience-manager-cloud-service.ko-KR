@@ -2,9 +2,9 @@
 title: 콘텐츠 전송 확인
 description: 컨텐츠 전송 도구를 사용하여 컨텐츠 전송의 유효성을 검사합니다
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: c8739388ac21dd40d6757815af6f2732991d216b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1077'
 ht-degree: 2%
 
 ---
@@ -127,7 +127,7 @@ Migration validation took 0 minutes
 
 위의 실패 예제는 수집을 실행한 다음 지우기 를 비활성화한 상태로 동일한 수집을 다시 실행하여 수집 중에 노드가 포함되지 않도록 함으로써 달성했습니다. 모든 것이 대상에 이미 존재합니다.
 
-유효성 검사 보고서는 수집 로그에 포함될 뿐만 아니라 **수집 작업** cloud Acceleration Manager의 사용자 인터페이스. 이렇게 하려면 세 점(**...**) 그런 다음 을 클릭합니다. **유효성 검사 보고서** 을 클릭하여 유효성 검사 보고서를 확인합니다.
+유효성 검사 보고서는 수집 로그에 포함될 뿐만 아니라 **수집 작업** cloud Acceleration Manager의 사용자 인터페이스. 이렇게 하려면 세 점(**...**)을 클릭한 다음 을 클릭합니다 **유효성 검사 보고서** 을 클릭하여 유효성 검사 보고서를 확인합니다.
 
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)

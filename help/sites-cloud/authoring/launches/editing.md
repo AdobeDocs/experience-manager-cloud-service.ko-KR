@@ -2,10 +2,10 @@
 title: 론치 편집
 description: 페이지(또는 페이지 세트)에 대한 론치를 만들면 페이지의 론치 카피에서 콘텐츠를 편집할 수 있습니다.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
 source-wordcount: '553'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 1. [참조의 론치(Sites 콘솔)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)에 액세스하여 사용 가능한 동작을 표시합니다.
 1. **페이지로 이동**&#x200B;을 선택하여 편집할 페이지를 엽니다.
 
-페이지를 편집 시 상단 도구 모음에 **나가기** 및 **탐색** 옵션이 표시됩니다.
+페이지를 편집할 때 상단 도구 모음에 표시와 함께 **나가기** 및 **탐색** 옵션:
 
 ![페이지 편집기에서 나가기 및 론치 탐색](/help/sites-cloud/authoring/assets/launches-edit-01.png)
 

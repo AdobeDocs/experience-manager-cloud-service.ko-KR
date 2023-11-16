@@ -2,10 +2,10 @@
 title: Headless 콘텐츠 및 AEM에서의 번역에 대해 알아보기
 description: Headless 개념, AEM에 매핑하는 방법 및 AEM 번역 이론에 대해 알아봅니다.
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
-workflow-type: ht
-source-wordcount: '743'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '742'
+ht-degree: 97%
 
 ---
 
@@ -57,7 +57,7 @@ AEM은 강력한 도구를 통해 전체 스택 방식으로 기존 웹 페이�
 
 AEM의 강력한 도구를 통해 Headless 방식, 전체 스택 방식 또는 두 가지 모델로 콘텐츠를 동시에 전달할 수 있습니다. 번역 전문가는 동일한 번역 도구 세트를 두 가지 유형의 콘텐츠에 적용하여 통합된 방식으로 콘텐츠를 번역할 수 있습니다.
 
-이후 여정에서는 AEM이 단계별로 콘텐츠를 번역하는 방법에 대한 자세한 내용을 알아봅니다. 단, 높은 수준의 개념은 간단합니다.
+또한 여정에서 AEM이 콘텐츠를 번역하는 방법에 대한 세부 정보를 배우지만 높은 수준에서 개념은 간단합니다.
 
 1. 번역 통합 프레임워크를 구성하여 번역 서비스와의 연결을 정의합니다.
 1. 번역 규칙을 사용하여 번역할 콘텐츠를 정의합니다.

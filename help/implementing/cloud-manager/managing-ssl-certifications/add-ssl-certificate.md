@@ -2,10 +2,10 @@
 title: SSL 인증서 추가
 description: Cloud Manager의 셀프서비스 도구를 사용하여 자체 SSL 인증서를 추가하는 방법을 알아봅니다.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 6db3565fefe4c826bb40695d0fa84368fd3f283b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 94%
+source-wordcount: '552'
+ht-degree: 88%
 
 ---
 
@@ -29,11 +29,11 @@ Cloud Manager를 사용하여 인증서를 추가하려면 다음 단계를 수�
 
 1. **개요** 페이지에서 **환경** 화면으로 이동합니다.
 
-1. 왼쪽 탐색 패널에서 **SSL 인증서**&#x200B;를 클릭합니다. 기존 SSL 인증서의 세부 정보가 포함된 표가 기본 화면에 표시됩니다.
+1. 클릭 **SSL 인증서** 왼쪽 탐색 패널에서 가져옵니다. 기존 SSL 인증서의 세부 정보가 포함된 표가 기본 화면에 표시됩니다.
 
    ![SSL 인증서 추가](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
-1. **SSL 인증서 추가**&#x200B;를 클릭하여 **SSL 인증서 추가** 대화 상자를 엽니다.
+1. 클릭 **SSL 인증서 추가** 열다 **SSL 인증서 추가** 대화 상자.
 
    * **인증서 이름**&#x200B;에 인증서 이름을 입력합니다.
       * 이 이름은 정보 제공의 목적으로만 사용되며 인증서를 쉽게 참조하는 데 도움이 되는 모든 이름을 사용할 수 있습니다.

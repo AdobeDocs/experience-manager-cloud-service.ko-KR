@@ -2,10 +2,10 @@
 title: CMS Headless 개발에 대해 알아보기
 description: 이 AEM Headless 개발자 여정의 부분에서는 Headless 기술과 이를 사용하는 이유에 대해 알아봅니다.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
-workflow-type: ht
-source-wordcount: '1638'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1636'
+ht-degree: 95%
 
 ---
 
@@ -120,7 +120,7 @@ AEM Headless 여정을 시작해 주셔서 감사합니다! 이 문서를 읽고
 * Headless가 필요한 이유와 시점을 이해할 수 있습니다.
 * 높은 수준에서 Headless 개념이 어떻게 사용되는지, 어떻게 상호 연관되는지를 파악할 수 있습니다.
 
-이 지식을 기반으로 다음 문서인 [AEM Headless as a Cloud Service 시작하기](getting-started.md)를 검토하여 AEM Headless 번역 여정을 계속하십시오. 여기에서는 필요한 도구를 설정하는 방법과 Headless 콘텐츠 게재 및 사전 요구 사항에 접근하는 방법에 대해 어떻게 생각하고 있는지에 대해 알아보게 됩니다.
+이 지식을 기반으로 다음 문서를 검토하여 AEM Headless 여정을 계속하십시오 [AEM Headless 시작하기 as a Cloud Service](getting-started.md) 필요한 도구를 설정하는 방법 및 AEM이 headless 콘텐츠 게재 및 그 사전 요구 사항에 접근하는 방법에 대해 고민하는 방법을 배울 수 있습니다.
 
 ## 추가 리소스 {#additional-resources}
 

@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.9.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.9.0 릴리스 정보입니다.'
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1443'
-ht-degree: 99%
+source-wordcount: '1441'
+ht-degree: 98%
 
 ---
 
@@ -115,7 +115,7 @@ Edge Delivery는 고객 상호 작용 시점에서 측정 가능한 비즈니스
 
 ### 캠페인 관련 URL 매개변수에 대한 새로운 CDN 캐싱 비헤이비어 {#cache-url-params}
 
-기본적으로 새 환경에서 CDN은 마케팅 관련 쿼리 매개변수를 제거하여 마케팅 캠페인 성과와 캐시 적중률을 높입니다. 기존 환경은 영향을 받지 않습니다. [자세히 알아보기.](/help/implementing/dispatcher/caching.md#marketing-parameters)
+새 환경의 경우, CDN은 기본적으로 마케팅 캠페인 성능과 캐시 적중률을 높이기 위해 마케팅 관련 쿼리 매개 변수를 제거합니다. 기존 환경은 영향을 받지 않습니다. [자세히 알아보기.](/help/implementing/dispatcher/caching.md#marketing-parameters)
 
 ### 트래픽 필터 규칙(WAF 규칙 포함) 얼리 어답터 프로그램 {#waf-early-adopter}
 

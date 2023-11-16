@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 100%
+source-wordcount: '491'
+ht-degree: 97%
 
 ---
 
@@ -47,7 +47,7 @@ AEM의 번역은 크게 4단계로 구성됩니다.
 1. 번역된 콘텐츠 검토하고 게시합니다.
 
 
-이후 여정에서는 AEM이 단계별로 콘텐츠를 번역하는 방법에 대한 자세한 내용을 알아보게 됩니다.
+또한 여정에서 AEM이 단계별로 콘텐츠를 번역하는 방법에 대한 자세한 내용을 알아봅니다.
 
 ## 다음 단계 {#what-is-next}
 

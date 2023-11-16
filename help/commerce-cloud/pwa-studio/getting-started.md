@@ -5,9 +5,9 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '764'
 ht-degree: 1%
 
 ---
@@ -62,7 +62,7 @@ AEM의 GraphQL 끝점과 PWA Studio을 연결하려면 [PWA Studio을 위한 AEM
 
    탐색 구성 요소 맞춤화에 대한 자세한 내용은에서 확인할 수 있습니다. [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) 및 [확장성 프레임워크](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) PWA Studio 설명서.
 
-1. Apollo 클라이언트는 AEM GraphQL 종단점을 다음 위치에 예상합니다. `<https://pwa-studio/endpoint.js>`. 끝점을 이 위치에 매핑하려면 PWA Studio 응용 프로그램의 UPPER 구성을 사용자 정의해야 합니다. a. AEM_CFM_GRAPHQL 변수를 pwa-root/.env에 추가하고 AEM 콘텐츠 조각 GraphQL 엔드포인트를 가리키도록 조정합니다.
+1. Apollo 클라이언트는 AEM GraphQL 종단점을 다음 위치에 예상합니다. `<https://pwa-studio/endpoint.js>`. 끝점을 이 위치에 매핑하려면 PWA Studio 응용 프로그램의 UPPER 구성을 사용자 지정합니다. a. AEM_CFM_GRAPHQL 변수를 pwa-root/.env에 추가하고 AEM 콘텐츠 조각 GraphQL 엔드포인트를 가리키도록 조정합니다.
 
    예: `AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
 
@@ -93,15 +93,15 @@ AEM 콘텐츠 조각 설명서에 따라 AEM 프로젝트에 대한 GraphQL 엔�
 
 * Adobe Granite 원본 간 리소스 공유 정책(com.adobe.granite.cors.impl.CORSPolicyImpl)
 
-   allowedorigin 속성을 PWA 애플리케이션의 전체 호스트 이름으로 설정합니다.
+  allowedorigin 속성을 PWA 애플리케이션의 전체 호스트 이름으로 설정합니다.
 
-   예:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
+  예:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
 
 * Apache Sling Referrer Filter (org.apache.sling.security.impl.ReferrerFilter.cfg.json)
 
-   allow.hosts 속성을 PWA 응용 프로그램의 호스트 이름으로 설정합니다.
+  allow.hosts 속성을 PWA 응용 프로그램의 호스트 이름으로 설정합니다.
 
-   예: `pwa-studio-test-vflyn.local.pwadev`
+  예: `pwa-studio-test-vflyn.local.pwadev`
 
 두 구성의 전체 예는 여기에서 찾을 수 있습니다. <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 

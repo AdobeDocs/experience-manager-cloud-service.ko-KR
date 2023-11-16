@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에서 캐싱
 description: AEM as a Cloud Service 캐싱의 기본 사항에 대해 알아봅니다.
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 469c5f0e115cc57cf7624aecf5b9f45645f2e99a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2878'
+source-wordcount: '2874'
 ht-degree: 2%
 
 ---
@@ -100,7 +100,7 @@ Define DISABLE_DEFAULT_CACHING
 
 Dispatcher 레이어에서 캐싱 헤더를 수정할 때 너무 광범위하게 캐시하지 않도록 주의하십시오. HTML/텍스트 섹션에서 토론을 참조하십시오 [위](#html-text). 또한 캐시되지 않고 비공개로 유지되어야 하는 에셋이 `LocationMatch` 지시문 필터.
 
-Blob 저장소에 저장된 JCR 리소스(16KB보다 큼)는 일반적으로 AEM에서 302 리디렉션으로 제공됩니다. 이러한 리디렉션은 이전되고 CDN이 뒤따르며 콘텐츠는 Blob 저장소에서 직접 전달됩니다. 이러한 응답에 대해 제한된 헤더 세트만 사용자 정의할 수 있습니다. 예: 맞춤화 `Content-Disposition` 다음과 같이 dispatcher 지시문을 사용해야 합니다.
+Blob 저장소에 저장된 JCR 리소스(16KB보다 큼)는 일반적으로 AEM에서 302 리디렉션으로 제공됩니다. 이러한 리디렉션은 이전되고 CDN이 뒤따르며 콘텐츠는 Blob 저장소에서 직접 전달됩니다. 이러한 응답에 대해 제한된 헤더 세트만 사용자 정의할 수 있습니다. 예: 사용자 정의 `Content-Disposition` 다음과 같이 dispatcher 지시문을 사용해야 합니다.
 
 ```
 <LocationMatch "\.(?i:pdf)$">
@@ -232,7 +232,7 @@ Adobe CDN에서 다음과 같은 리소스에 대한 HEAD 요청을 받는 경�
 
 웹 사이트 URL에는 캠페인의 성공을 추적하는 데 사용되는 마케팅 캠페인 매개 변수가 자주 포함됩니다.
 
-2023년 10월 이상에서 생성된 환경의 경우, CDN은 더 나은 캐시 요청을 위해 일반적인 마케팅 관련 쿼리 매개 변수, 특히 다음 정규 표현식 패턴과 일치하는 매개 변수를 제거합니다.
+2023년 10월 이후에 생성된 환경의 경우, CDN은 더 나은 캐시 요청을 위해 일반적인 마케팅 관련 쿼리 매개 변수, 특히 다음 정규 표현식 패턴과 일치하는 매개 변수를 제거합니다.
 
 ```
 ^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$

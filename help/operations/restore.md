@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 콘텐츠 복원
 description: Cloud Manager를 사용하여 백업에서 AEM as a Cloud Service 콘텐츠를 복원하는 방법에 대해 알아봅니다.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
-source-git-commit: bf8493909fa995ec30d67646aec5b712318dbf75
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 100%
+source-wordcount: '1162'
+ht-degree: 94%
 
 ---
 
@@ -46,13 +46,13 @@ Cloud Manager는 콘텐츠를 복원할 수 있는 두 가지 유형의 백업�
 
 >[!NOTE]
 >
->복원 작업을 시작하려면 **사업주** 또는 **배포 관리자** 역할이 있는 사용자가 로그인해야 합니다.
+>을(를) 가진 사용자 **비즈니스 소유자** 또는 **배포 관리자** 복원 작업을 시작하려면 역할이 로그인해야 합니다.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
 1. 복원을 시작할 프로그램을 클릭합니다.
 
-1. **프로그램 개요** 페이지의 **환경** 카드에서 복원을 시작하고자 하는 환경 옆에 있는 생략 부호를 클릭한 다음 **콘텐츠 복원**&#x200B;을 선택합니다.
+1. 다음에서 **프로그램 개요** 페이지, **환경** 카드를 사용하여 복원을 시작하려는 환경 옆에 있는 줄임표 버튼을 클릭하고 **콘텐츠 복원**.
 
    ![복원 옵션](assets/backup-option.png)
 

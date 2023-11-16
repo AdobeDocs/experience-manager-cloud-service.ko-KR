@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '789'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '788'
+ht-degree: 96%
 
 ---
 
@@ -97,7 +97,7 @@ AEM Sites 번역 여정의 한 부분을 완료했으므로,
 * 번역 규칙의 역할에 대해 이해할 수 있습니다.
 * 나만의 번역 규칙을 정의할 수 있습니다.
 
-이 지식을 기반으로 다음 문서인 [콘텐츠 번역](translate-content.md)을 검토하여 AEM Sites 번역 여정을 계속하십시오. 여기에서는 커넥터와 규칙을 함께 사용하여 콘텐츠를 번역하는 방법에 대해 알아보게 됩니다.
+이 지식을 기반으로 다음 문서를 검토하여 AEM Sites 번역 여정을 계속하십시오 [콘텐츠 번역](translate-content.md) 커넥터와 규칙을 함께 사용하여 콘텐츠를 번역하는 방법에 대해 알아봅니다.
 
 ## 추가 리소스 {#additional-resources}
 

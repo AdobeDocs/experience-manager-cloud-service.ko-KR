@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 177021106fc67e67a8cd6645a6684185331dd6f4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1344'
+source-wordcount: '1340'
 ht-degree: 6%
 
 ---
@@ -89,7 +89,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
   ![대기열 다운로드](assets/queue-download.png)
 
-* 다운로드 파일이 준비되는 동안 **[!UICONTROL 받은 편지함 다운로드]** 다운로드 상태를 보는 옵션입니다. 대량 다운로드의 경우 **[!UICONTROL 새로 고침]** 상태를 업데이트하는 단추입니다.
+* 다운로드 파일이 준비되면 **[!UICONTROL 받은 편지함 다운로드]** 다운로드 상태를 보는 옵션입니다. 대량 다운로드의 경우 **[!UICONTROL 새로 고침]** 상태를 업데이트하는 단추입니다.
 
   ![받은 편지함 다운로드](assets/link-sharing-download-inbox.png)
 

@@ -1,13 +1,13 @@
 ---
 title: 콘솔 사용자 정의
 description: 작성 인스턴스의 콘솔을 사용자 정의할 수 있도록 AEM이 제공하는 다양한 옵션에 대해 알아봅니다.
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
-workflow-type: ht
-source-wordcount: '548'
+exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '546'
 ht-degree: 100%
 
 ---
-
 
 # 콘솔 사용자 정의 {#customizing-consoles}
 

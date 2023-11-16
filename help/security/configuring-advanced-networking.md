@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service에 대한 고급 네트워킹 구성
 description: AEM as a Cloud Service에 대해 VPN 또는 유연한/전용 이그레스 IP 주소와 같은 고급 네트워킹 기능을 구성하는 방법에 대해 알아봅니다.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 46ff33808e710b511db7cfcdad931c14846d8cfe
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3600'
+source-wordcount: '3598'
 ht-degree: 99%
 
 ---
@@ -55,7 +55,7 @@ VPN 및 전용 이그레스 IP 주소가 필요하지 않은 경우, 전용 이�
 프로그램에서 설정한 유연한 포트 이그레스 구성이 준비되면 환경별로 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 엔드포인트를 호출하여 환경 수준에서 네트워킹을 활성화하고 필요한 경우 포트 전달 규칙을 선언해야 합니다. 유연성을 제공하기 위해 환경별로 매개변수를 구성할 수 있습니다.
 
 포트 전달 규칙은 http 또는 https 프로토콜을 사용하는 경우에 한해서만 80/443 이외의 모든 대상 포트에 대해 대상 호스트(포트 포함, 이름 또는 IP)
-집합을 지정하여 선언해야 합니다. http/https를 통해 포트 80/443을 사용하는 클라이언트 연결에서는 연결에 고급 네트워킹 속성을 적용하려면 연결에 프록시 설정을 사용해야 합니다. 각 대상 호스트에 대해 고객은 원하는 대상 포트를 30000에서 30999 사이의 포트에 매핑해야 합니다.
+집합을 지정하여 선언해야 합니다. http/https를 통해 포트 80/443을 사용하는 클라이언트 연결은 연결에 고급 네트워킹 속성을 적용하려면 연결 시 여전히 프록시 설정을 사용해야 합니다. 각 대상 호스트에 대해 고객은 원하는 대상 포트를 30000에서 30999 사이의 포트에 매핑해야 합니다.
 
 API는 몇 초 안에 응답하여 업데이트 상태를 표시해야 하고, 약 10분 후 엔드포인트의 `GET` 메서드는 고급 네트워킹이 활성화되었음을 표시해야 합니다.
 
@@ -494,7 +494,7 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시하고, 약 10분 
   </tr>
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}.inner.adobeaemcloud.net</code></td>
-    <td>VPN의 AEM측에서 고객측으로 이동하는 트래픽의 IP입니다. 고객의 구성 허용 목록에 추가하여 AEM으로부터의 연결만 허용할 수 있습니다.</td>
+    <td>VPN의 AEM 측에서 고객측으로 이동하는 트래픽의 IP입니다. 고객의 구성 허용 목록에 추가하여 AEM으로부터의 연결만 허용할 수 있습니다.</td>
     <td>고객이 AEM으로의 VPN 액세스를 허용하고자 하는 경우 해당 액세스에 사용자 정의 도메인 및/또는 <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 및/또는 <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code>을 매핑하도록 CNAME DNS 항목을 구성해야 합니다.</td>
   </tr>
 </tbody>

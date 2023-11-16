@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 51b048f753fe2e548d0ffdd9e3a903b21032aed7
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
 source-wordcount: '9463'
 ht-degree: 2%
@@ -547,7 +547,7 @@ DASH(Digital Adaptive Streaming over HTTP)는 비디오 스트리밍에 대한 �
 
 **Dynamic Media 계정에서 DASH, 다중 자막 및 다중 오디오 트랙 지원을 활성화하려면 다음을 수행합니다.**
 
-1. [Admin Console을 사용하여 새 지원 사례 만들기 시작](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+1. [Admin Console을 사용하여 새 지원 사례 만들기 시작](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html).
 1. 지원 사례를 생성하려면 다음 정보를 제공하면서 지침을 따르십시오.
 
    * 기본 담당자 이름, 이메일, 전화.
@@ -1041,7 +1041,7 @@ See also [About video thumbnails](/help/assets/dynamic-media/video.md#about-vide
 
    The video's thumbnail image is updated to use the thumbnail you selected. If you later decide to change the thumbnail image, you can return to the **[!UICONTROL Change Thumbnail]** page and select a new one.
 
-   If you configured new default time intervals, or you uploaded a new video to replace the existing video, you will need to have Dynamic Media regenerate the thumbnails.
+   If you configured new default time intervals, or you uploaded a new video to replace the existing video, you need to have Dynamic Media regenerate the thumbnails.
 
    See [Configuring the default time interval that video thumbnails are generated](#configuring-the-default-time-interval-that-video-thumbnails-are-generated).
 

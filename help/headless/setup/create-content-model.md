@@ -2,10 +2,10 @@
 title: 콘텐츠 조각 모델 만들기 - Headless 설정
 description: 콘텐츠 조각 모델을 사용하여 AEM의 Headless 기능으로 만들고 제공할 콘텐츠의 구조를 정의합니다.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
-workflow-type: ht
-source-wordcount: '489'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 정보 설계자는 새 모델이 필요할 때 가끔씩만 콘텐츠 조각 모델을 만듭니다. 이 시작 안내서에서는 모델을 하나만 만들면 됩니다.
 
 1. AEM as a Cloud Service에 로그인하고 메인 메뉴에서 **도구**, **일반**, **콘텐츠 조각 모델**&#x200B;을 선택합니다.
-1. 구성을 생성하여 만들어진 폴더를 탭하거나 클릭합니다.
+1. 구성을 만들어 만든 폴더를 탭하거나 클릭합니다.
 
    ![모델 폴더](../assets/models-folder.png)
 1. **만들기**&#x200B;를 탭하거나 클릭합니다.

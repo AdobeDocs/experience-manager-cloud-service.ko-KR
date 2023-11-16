@@ -2,10 +2,10 @@
 title: 페이지에 워크플로 적용
 description: 작성 시 페이지에서 수행할 워크플로를 불러올 수 있습니다. 하나 이상의 워크플로를 적용할 수도 있습니다.
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 100%
+source-wordcount: '657'
+ht-degree: 93%
 
 ---
 
@@ -52,9 +52,7 @@ ht-degree: 100%
 * [사이트 도구 모음의 [만들기] 옵션](#starting-a-workflow-from-the-sites-toolbar)
 * [Sites 콘솔의 타임라인 레일](#starting-a-workflow-from-the-timeline)
 
-두 경우 모두 다음 작업을 수행해야 합니다.
-
-* [워크플로 만들기 마법사에서 워크플로 세부 사항 지정](#specifying-workflow-details-in-the-create-workflow-wizard)
+두 경우 모두 다음을 수행해야 합니다. [워크플로 만들기 마법사에서 워크플로 세부 사항 지정](#specifying-workflow-details-in-the-create-workflow-wizard).
 
 ### 사이트 도구 모음에서 워크플로 시작 {#starting-a-workflow-from-the-sites-toolbar}
 
@@ -143,6 +141,6 @@ ht-degree: 100%
 
 ## 페이지 편집기에서 워크플로 시작 {#starting-a-workflow-from-the-page-editor}
 
-페이지를 편집할 때 도구 모음에서 **페이지 정보**&#x200B;를 선택할 수 있습니다. 드롭다운 메뉴에는 **워크플로에서 시작** 옵션이 있습니다. 이 옵션을 선택하면 필요한 경우 제목과 함께 필요한 워크플로를 지정할 수 있는 대화 상자가 열립니다.
+페이지를 편집할 때 도구 모음에서 **페이지 정보**&#x200B;를 선택할 수 있습니다. 드롭다운 메뉴에는 **워크플로에서 시작** 옵션이 있습니다. 필요한 경우 제목과 함께 필요한 워크플로를 지정할 수 있는 대화 상자가 열립니다.
 
 ![페이지 편집기에서 워크플로 시작](/help/sites-cloud/authoring/assets/workflows-create-page-editor.png)

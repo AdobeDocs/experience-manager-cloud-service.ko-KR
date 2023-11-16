@@ -4,10 +4,10 @@ description: 중요한 이메일 알림 수신을 관리하기 위해 Admin Cons
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: afb20efe8ed078a508f828c5df4e079f99dfab21
-workflow-type: ht
-source-wordcount: '989'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '985'
+ht-degree: 96%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 100%
 
 ## 새 Cloud Manager 제품 프로필 만들기 {#create-profiles}
 
-알림 수신을 올바르게 설정하려면 두 개의 사용자 프로필을 만들어야 합니다. 이들 단계는 한 번만 수행해야 합니다.
+알림 수신을 올바르게 설정하려면 두 개의 사용자 프로필을 만듭니다. 이 단계는 한 번만 수행됩니다.
 
 1. Admin Console([`https://adminconsole.adobe.com`)에 로그인합니다.](https://adminconsole.adobe.com)
 
@@ -52,7 +52,7 @@ ht-degree: 100%
 
    ![Admin Console의 인스턴스 목록](assets/cloud_manager_instance.png)
 
-1. 구성된 모든 Cloud Manager 제품 프로필 목록이 표시됩니다.
+1. 구성된 모든 Cloud Manager 제품 프로필 목록을 볼 수 있습니다.
 
    ![Admin Console의 제품 프로필](assets/cloud_manager_profiles.png)
 

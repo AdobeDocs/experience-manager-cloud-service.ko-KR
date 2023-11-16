@@ -2,10 +2,10 @@
 title: 콘텐츠 미리보기
 description: AEM 미리보기 서비스를 사용하여 콘텐츠를 시작하기 전에 미리 보는 방법에 대해 알아봅니다.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 1804eacb5399dc38c97ff953031666711b9a0e4f
-workflow-type: ht
-source-wordcount: '316'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '315'
+ht-degree: 90%
 
 ---
 
@@ -26,8 +26,8 @@ AEM은 개발자 및 콘텐츠 작성자가 웹 사이트의 최종 경험이 �
 
 **게시 관리** UI를 사용하여 콘텐츠를 미리보기 서비스에 게시할 수 있습니다.
 
-1. Sites 콘솔에서 미리보기에 전송할 페이지를 선택한 다음 **게시 관리** 버튼을 클릭합니다.
-1. 다음 마법사에서 대상으로 **미리보기**&#x200B;를 선택합니다.
+1. 사이트 콘솔에서 미리보기에 전송할 페이지를 선택한 다음 **게시 관리** 단추를 클릭합니다.
+1. 다음 마법사에서 다음을 선택합니다. **미리 보기** 을(를) 대상으로 합니다.
 
    ![게시 관리](/help/sites-cloud/authoring/assets/previewmanagedpublication.png)
 

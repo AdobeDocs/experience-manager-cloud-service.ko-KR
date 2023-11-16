@@ -2,9 +2,9 @@
 title: 다중 사이트에서 타겟팅된 콘텐츠를 사용하여 작업
 description: 사이트 간 활동, 경험 및 오퍼와 같은 타겟팅된 콘텐츠를 관리해야 하는 경우 타겟팅된 콘텐츠에 대한 AEM의 내장 다중 사이트 지원을 이용할 수 있습니다.
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '2890'
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '2889'
 ht-degree: 100%
 
 ---
@@ -144,7 +144,7 @@ AEM에서 이렇게 하려면 다음 작업을 수행합니다.
 
 >[!NOTE]
 >
->The default area called Master Area is collapsed by default when you tap or click on the name of a brand **until** you create another area. Then, when you select a brand in either the **Activity** or **Offers** console, you see the **Area** console.
+>The default area called Master Area is collapsed by default when you tap or click the name of a brand **until** you create another area. Then, when you select a brand in either the **Activity** or **Offers** console, you see the **Area** console.
 
 새 영역을 만들려면 다음 작업을 수행하십시오.
 

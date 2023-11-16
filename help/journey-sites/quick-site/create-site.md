@@ -2,10 +2,10 @@
 title: 템플릿으로 사이트 생성
 description: 사이트 템플릿을 사용하여 간편하게 새 AEM 사이트를 만드는 방법에 대해 알아봅니다.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1506'
-ht-degree: 100%
+source-wordcount: '1504'
+ht-degree: 98%
 
 ---
 
@@ -81,7 +81,7 @@ AEM 빠른 사이트 생성 여정의 이전 문서인 [Cloud Manager 이해 및
 
 1. 파일 브라우저에서 [이전에 다운로드한](#obtaining-template) 템플릿을 찾은 다음 **업로드**&#x200B;를 탭하거나 클릭합니다.
 
-1. 업로드되면 사용할 수 있는 템플릿 목록에 표시됩니다. 해당 템플릿을 탭하거나 클릭하여 선택한 다음(오른쪽 열에 템플릿에 대한 정보도 표시됨) **다음**&#x200B;을 선택합니다.
+1. 업로드되면 사용할 수 있는 템플릿 목록에 표시됩니다. 탭하거나 클릭하여 선택한 다음(오른쪽 열에 템플릿에 대한 정보도 표시됨) 탭하거나 클릭합니다 **다음**.
 
    ![템플릿 선택](assets/select-site-template.png)
 

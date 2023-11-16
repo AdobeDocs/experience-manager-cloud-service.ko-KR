@@ -2,10 +2,10 @@
 title: 온보딩 준비
 description: 온보딩 프로세스가 시작되기 전에 시스템 관리자가 시스템에 로그인하기 위해 이해해야 하는 몇 가지 준비 단계가 있습니다.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 100%
+source-wordcount: '762'
+ht-degree: 96%
 
 ---
 
@@ -88,4 +88,4 @@ Adobe는 다음으로 표현됩니다.
 * 해당 약정이 온보딩 프로세스에 미치는 영향
 * 온보딩 통화를 준비하는 방법
 
-이제 이러한 준비 단계에 익숙해졌으므로 시스템에 직접 로그인할 준비가 거의 된 것입니다. 그러나 먼저 시스템 관리자의 관점에서 AEM as a Cloud Service가 구성되는 방식에 대한 간략한 개요와 몇 가지 중요한 용어를 알아야 합니다. 여정의 다음 부분인 [AEM as a Cloud Service 용어](terminology.md)를 진행하십시오.
+이제 이러한 준비 단계에 익숙해졌으므로 시스템에 직접 로그인할 준비가 거의 된 것입니다. 그러나 먼저 시스템 관리자의 관점에서 AEM as a Cloud Service이 구성되는 방식에 대한 간략한 개요와 몇 가지 중요한 용어를 알아야 합니다. 여정의 다음 부분인 [AEM as a Cloud Service 용어](terminology.md)를 진행하십시오.

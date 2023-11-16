@@ -2,10 +2,10 @@
 title: Headless 콘텐츠에 대한 번역 통합 구성
 description: AEM을 번역 서비스에 연결하는 방법에 대해 알아봅니다.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1231'
-ht-degree: 100%
+source-wordcount: '1230'
+ht-degree: 97%
 
 ---
 
@@ -132,7 +132,7 @@ Headless 번역 여정의 한 부분을 완료했으므로,
 * AEM 번역 통합 프레임워크의 중요한 매개변수를 이해할 수 있습니다.
 * 번역 서비스에 대해 나만의 연결을 설정할 수 있습니다.
 
-이 지식을 기반으로 다음 문서인 [콘텐츠 번역](translation-rules.md)을 검토하여 AEM Headless 번역 여정을 계속하십시오. 여기에서는 지금까지의 구성을 사용하여 실제로 콘텐츠를 번역하는 방법에 대해 알아보게 됩니다.
+이 지식을 기반으로 다음 문서를 검토하여 AEM Headless 번역 여정을 계속하십시오 [콘텐츠 번역,](translation-rules.md) 여기에서 지금까지 구성을 사용하여 콘텐츠를 실제로 번역하는 방법을 알아볼 수 있습니다.
 
 ## 추가 리소스 {#additional-resources}
 

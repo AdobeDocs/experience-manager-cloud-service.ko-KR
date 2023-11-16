@@ -2,10 +2,10 @@
 title: Cloud Manager 저장소
 description: Cloud Manager에서 git 저장소를 생성, 확인 및 삭제하는 방법을 알아봅니다.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: af8ab1f741c658dcb47bdf0d37e403fcb180631a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 96%
+source-wordcount: '585'
+ht-degree: 87%
 
 ---
 
@@ -36,7 +36,7 @@ Cloud Manager에서 git 저장소를 생성, 확인 및 삭제하는 방법을 �
 
 마법사가 닫히면 새 저장소가 표에 표시됩니다.
 
-표에서 저장소를 선택하고 줄임표 버튼을 클릭한 다음 **저장소 URL 복사**, **보기 및 업데이트** 또는 **삭제**&#x200B;를 선택할 수 있습니다.
+표에서 저장소를 선택하고 줄임표 버튼을 클릭한 다음 를 선택할 수 있습니다 **저장소 URL 복사**, **보기 및 업데이트**, 또는 **삭제**.
 
 ![저장소 옵션](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
@@ -58,9 +58,9 @@ Cloud Manager에서 만들어진 저장소는 파이프라인을 추가하거나
 
 Cloud Manager에서 저장소를 삭제하려면 다음을 따르십시오.
 
-1. **프로그램 개요** 페이지에서 **저장소** 탭을 클릭하고 **저장소** 페이지로 이동합니다.
+1. 다음에서 **프로그램 개요** 페이지를 클릭하고 **저장소** 탭을 클릭하고 다음 위치로 이동합니다. **저장소** 페이지를 가리키도록 업데이트하는 중입니다.
 
-1. 저장소를 선택하고 줄임표 버튼을 클릭한 다음 **삭제**&#x200B;를 선택하여 저장소를 삭제합니다.
+1. 저장소를 선택하고 줄임표 버튼을 클릭한 다음 를 선택합니다. **삭제** 저장소를 삭제합니다.
 
    ![저장소 삭제](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 

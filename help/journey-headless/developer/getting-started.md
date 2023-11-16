@@ -2,10 +2,10 @@
 title: AEM Headless as a Cloud Service 시작하기
 description: 이 AEM Headless 개발자 여정의 부분에서는 AEM Headless 사전 요구 사항에 대해 알아봅니다.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: b302aa1140fc14044e85fd61ed2d361b71e6be34
-workflow-type: ht
-source-wordcount: '3098'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '3096'
+ht-degree: 97%
 
 ---
 
@@ -85,7 +85,7 @@ AEM의 Headless 기능은 몇 가지 주요 기능을 기반으로 합니다. �
 * GraphQL API를 사용하여 콘텐츠 조각에 액세스하고 전달하기 위한 요청을 생성할 수 있습니다.
 * Assets REST API를 사용하면 콘텐츠 조각(및 기타 자산)을 만들고 수정할 수 있습니다.
 
-AEM Headless 여정 후반부에서 해당 API와 이를 사용하는 방법에 대해 알아봅니다. 또는 아래 [추가 리소스](#additional-resources) 섹션에서 추가 설명서를 참조하십시오.
+AEM Headless 여정의 뒷부분에서 이러한 API와 이를 사용하는 방법에 대해 알아봅니다. 또는 다음을 참조하십시오. [추가 리소스](#additional-resources) 아래 섹션에서 더 많은 설명서를 확인할 수 있습니다.
 
 ## Headless 통합 수준 {#integration-levels}
 
@@ -273,7 +273,7 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 * AEM의 Headless 통합 수준을 파악합니다.
 * 범위 측면에서 프로젝트를 정의할 수 있습니다.
 
-다음 문서인 [AEM Headless를 사용한 첫 번째 경험으로의 경로](path-to-first-experience.md)를 검토하여 AEM Headless 여정을 계속하는 것이 좋습니다. 여기에서는 필요한 도구를 설정하는 방법과 AEM에서 데이터를 모델링하는 방법에 대해 어떻게 생각하고 있는지에 대해 알아보게 됩니다.
+다음 문서에서는 AEM Headless 여정을 계속 진행해야 합니다 [AEM Headless를 사용한 첫 번째 경험으로의 경로](path-to-first-experience.md) 필요한 도구를 설정하는 방법과 AEM에서 데이터 모델링에 대해 고민하는 방법을 배울 수 있습니다.
 
 ## 추가 리소스 {#additional-resources}
 

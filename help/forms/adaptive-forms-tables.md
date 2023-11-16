@@ -4,9 +4,9 @@ description: 테이블 구성 요소를 사용하여 적응형 양식에 테이�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2498'
+source-wordcount: '2494'
 ht-degree: 3%
 
 ---
@@ -77,7 +77,7 @@ AEM Forms은 구성 요소 브라우저의 사이드바에 적응형 양식에�
 
 #### 열 추가 또는 삭제
 
-열을 추가하거나 삭제하려면 헤더 섹션의 텍스트 셀을 클릭합니다. 열을 추가하거나 삭제할 수 있는 옵션이 있는 도구 모음이 열립니다.
+열을 추가하거나 삭제하려면 헤더 섹션의 텍스트 셀을 누릅니다. 열 추가 또는 삭제 옵션이 있는 도구 모음이 열립니다.
 
 ![add-delete-move-row-column](assets/add-delet-column.png)
 
@@ -155,7 +155,7 @@ AEM Forms은 구성 요소 브라우저의 사이드바에 적응형 양식에�
 1. 반복 설정 탭에서 테이블의 행 수를 제한할 최소 및 최대 개수를 지정합니다.
 1. **완료**&#x200B;를 클릭합니다.
 
-런타임 또는 미리보기에서 **+** 및 ![삭제 단추](/help/forms/assets/Smock_Delete.svg) 단추를 클릭하여 행을 추가하거나 삭제합니다.
+런타임 또는 미리보기에서 다음을 확인할 수 있습니다. **+** 및 ![삭제 단추](/help/forms/assets/Smock_Delete.svg) 단추를 클릭하여 행을 추가하거나 삭제합니다.
 
 ![동적으로 행 추가-삭제](assets/add-delete-layout.png)
 

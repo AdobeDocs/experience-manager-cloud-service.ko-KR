@@ -2,10 +2,10 @@
 title: 오퍼 생성 및 관리(오퍼 콘솔)
 description: 오퍼 콘솔을 사용하여 활동 경험에서 사용할 수 있는 오퍼를 생성하십시오.
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
 source-wordcount: '1391'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 100%
 
 1. **완료**&#x200B;를 선택하여 확인합니다.
 
-   이제 **경험 조각 오퍼** 콘솔로 이동하면 새 경험 조각과 관련 변형이 표시됩니다.
+   지금 다음 위치로 이동하면 **경험 조각 오퍼** 콘솔에서는 새 경험 조각과 관련 변형을 볼 수 있습니다.
 
 ### 오퍼 템플릿으로 타겟팅 {#targeting-offers-template}
 

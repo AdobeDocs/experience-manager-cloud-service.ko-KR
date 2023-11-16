@@ -2,10 +2,10 @@
 title: 샌드박스 환경 최대 절전 모드 설정 및 해제
 description: 샌드박스 프로그램의 환경이 자동으로 최대 절전 모드로 전환되는 방법과 최대 절전 모드를 해제하는 방법에 대해 알아봅니다.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '685'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 93%
 
 ---
 
@@ -31,7 +31,7 @@ Developer Console에서 샌드박스 프로그램을 수동으로 최대 절전 
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. 최대 절전 모드로 전환하려는 프로그램을 클릭하여 세부 정보를 표시합니다.
+1. 최대 절전 모드로 전환할 프로그램을 클릭하여 세부 정보를 표시합니다.
 
 1. **환경** 카드에서 줄임표 버튼을 클릭하고 **Developer Console**&#x200B;을 선택합니다.
 
@@ -47,7 +47,7 @@ Developer Console에서 샌드박스 프로그램을 수동으로 최대 절전 
 
    ![최대 절전 모드 확인](assets/hibernate-2.png)
 
-최대 절전 모드로 전환되면 **Developer Console** 화면에서 환경에 대한 최대 절전 모드 프로세스 완료 알림이 표시됩니다.
+최대 절전 모드로 전환되면 환경에 대한 최대 절전 모드 프로세스 완료 알림이 **개발자 콘솔** 화면.
 
 ![최대 절전 모드 확인](assets/hibernate-4.png)
 
@@ -65,13 +65,13 @@ Developer Console에서 샌드박스 프로그램을 수동으로 최대 절전 
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. 최대 절전 모드로 전환하려는 프로그램을 클릭하여 세부 정보를 표시합니다.
+1. 최대 절전 모드로 전환할 프로그램을 클릭하여 세부 정보를 표시합니다.
 
 1. **환경** 카드에서 줄임표 버튼을 클릭하고 **Developer Console**&#x200B;을 선택합니다.
 
    * Developer Console에 대한 자세한 내용은 [Developer Console 액세스](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)를 참조하십시오.
 
-1. **최대 절전 모드 해제**&#x200B;를 클릭합니다.
+1. 클릭 **최대 절전 모드 해제**.
 
    ![최대 절전 모드 해제 버튼](assets/de-hibernation-img1.png)
 

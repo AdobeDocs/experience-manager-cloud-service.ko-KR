@@ -2,10 +2,10 @@
 title: 받은 편지함
 description: 받은 편지함에 도착하는 알림을 사용하여 작업을 관리하는 방법에 대해 알아봅니다.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
-workflow-type: ht
-source-wordcount: '914'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '912'
+ht-degree: 98%
 
 ---
 
@@ -47,7 +47,7 @@ AEM 알림 받은 편지함 열기
 
 1. 도구 모음에서 표시기를 클릭/탭합니다.
 
-1. **모두 보기**&#x200B;를 선택합니다. **AEM 받은 편지함**&#x200B;이 열립니다. 받은 편지함은 워크플로, 프로젝트 및 작업의 항목을 표시합니다.
+1. **모두 보기**&#x200B;를 선택합니다. 다음 **AEM 받은 편지함** 열림. 받은 편지함은 워크플로, 프로젝트 및 작업의 항목을 표시합니다.
 1. 기본 보기는 [목록 보기](#inbox-list-view)이나 [캘린더 보기](#inbox-calendar-view)로 전환할 수 있습니다. 이 작업은 보기 선택기(도구 모음, 오른쪽 상단))에서 수행됩니다.
 
    두 보기 모두에 대해 [보기 설정](#inbox-view-settings)을 정의할 수 있습니다. 사용 가능한 옵션은 현재 보기에 따라 다릅니다.
@@ -142,7 +142,7 @@ AEM 알림 받은 편지함 열기
    * 작업 마법사가 시작됨
    * 설명서 페이지가 열림
 
-   예를 들어 **위임**&#x200B;은 다음과 같은 대화 상자가 열립니다.
+   예를 들어, **위임** 대화 상자를 엽니다.
 
    ![받은 편지함 작업 위임](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
 

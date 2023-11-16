@@ -2,10 +2,10 @@
 title: 도메인 이름 상태 확인
 description: Cloud Manager에서 사용자 정의 도메인 이름이 정상적으로 인증되었는지 확인하는 방법을 알아봅니다.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '649'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '647'
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ Cloud Manager 내에서 사용자 정의 도메인 이름의 상태를 확인할
 
 1. **개요** 페이지에서 **환경** 화면으로 이동합니다.
 
-1. 왼쪽 탐색 패널에서 **도메인 설정**&#x200B;을 클릭합니다.
+1. 클릭 **도메인 설정** 을 클릭합니다.
 
 1. 도메인 이름에 대한 **상태** 아이콘을 클릭합니다.
 

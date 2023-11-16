@@ -3,10 +3,10 @@ title: 프로덕션 파이프라인 구성
 description: 코드를 빌드하고 프로덕션 환경에 배포하기 위해 프로덕션 파이프라인을 구성하는 방법을 알아봅니다.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1418'
-ht-degree: 80%
+source-wordcount: '1416'
+ht-degree: 79%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 80%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
-1. **프로그램 개요** 페이지에서 **파이프라인** 카드로 이동하고 **추가**&#x200B;를 클릭하고 **프로덕션 파이프라인 추가**&#x200B;를 선택합니다.
+1. 다음 위치로 이동 **파이프라인** 다음에서 카드 **프로그램 개요** 페이지 및 클릭 **추가** 선택 **프로덕션 파이프라인 추가**.
 
    ![프로그램 관리자의 파이프라인 카드 개요](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 

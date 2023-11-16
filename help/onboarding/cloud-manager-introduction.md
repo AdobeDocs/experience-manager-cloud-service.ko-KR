@@ -2,10 +2,10 @@
 title: Cloud Manager 소개
 description: Cloud Manager가 프로그램, 환경 및 파이프라인을 통해 AEM 프로젝트를 지원하는 방법에 대해 알아봅니다.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 928a3f0d8ee98e211aa03ad3d0fd83b780e98bbc
-workflow-type: ht
-source-wordcount: '861'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '860'
+ht-degree: 99%
 
 ---
 
@@ -32,7 +32,7 @@ Cloud Manager는 AEM as a Cloud Service의 필수 구성 요소이며 팀의 단
 
 1. **Experience Manager**&#x200B;를 선택합니다.
 
-1. **Cloud Manager** 카드에서 **실행**&#x200B;을 클릭합니다.
+1. 다음에서 **Cloud Manager** 카드, 클릭 **시작**
 
 ## Cloud Manager의 역할 기반 권한 {#role-based-permissions}
 

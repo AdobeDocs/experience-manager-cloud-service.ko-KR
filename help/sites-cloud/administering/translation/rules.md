@@ -4,10 +4,10 @@ description: 번역 규칙이 번역이 필요한 콘텐츠를 식별하는 방�
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: ht
-source-wordcount: '1291'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1290'
+ht-degree: 99%
 
 ---
 
@@ -171,7 +171,7 @@ AEM 콘텐츠 번역 기능의 개요를 확인하려면 [다국어 사이트를
 
    ![컨텍스트 선택](../assets/select-context.png)
 
-1. 그런 다음 컨텍스트를 선택하고 **편집**&#x200B;을 선택해야 합니다. 이렇게 하면 번역 규칙 편집기가 열립니다.
+1. 그런 다음 컨텍스트를 선택하고 **편집**&#x200B;을 선택해야 합니다. 그러면 번역 규칙 편집기가 열립니다.
 
    ![번역 규칙 편집기](../assets/translation-rules-editor.png)
 

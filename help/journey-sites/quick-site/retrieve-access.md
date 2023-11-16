@@ -2,10 +2,10 @@
 title: Git 저장소 액세스 정보 가져오기
 description: 프론트엔드 개발자가 Cloud Manager를 사용하여 git 저장소 정보에 액세스하는 방법에 대해 알아봅니다.
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '891'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '889'
+ht-degree: 93%
 
 ---
 
@@ -76,7 +76,7 @@ Cloud Manager 관리자는 귀하를 Cloud Manager 사용자로 온보딩하게 
 
 ## Cloud Manager 액세스 {#access-cloud-manager}
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Adobe Experience Cloud에 로그인하거나 시작 이메일에 제공된 링크를 클릭합니다.
+1. 다음 위치에서 Adobe Experience Cloud에 로그인 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 또는 시작 이메일에 제공된 링크를 클릭합니다.
 
 1. Cloud Manager에 사용할 수 있는 다양한 프로그램이 나열됩니다. Cloud Manager 관리자가 제공한 대로 액세스해야 하는 프로그램을 탭하거나 클릭합니다. AEMaaCS용 프론트엔드 프로젝트를 처음 만드는 경우 사용할 수 있는 프로그램이 하나밖에 없을 수 있습니다.
 
@@ -111,7 +111,7 @@ AEM 빠른 사이트 생성 여정의 한 부분을 완료했으므로,
 * Cloud Manager에 대한 대략적인 내용을 이해할 수 있습니다.
 * 맞춤화를 커밋할 수 있도록 AEM git에 액세스할 수 있는 자격 증명을 가져올 수 있습니다.
 
-이 지식을 기반으로 다음 문서인 [사이트 테마 맞춤화](customize-theme.md)를 검토하여 AEM 빠른 사이트 생성 여정을 계속하십시오. 여기에서는 라이브 AEM 콘텐츠를 사용하여 사이트 테마를 구축하고, 맞춤화하고, 테스트하는 방법에 대해 알아보게 됩니다.
+이 지식을 기반으로 다음 문서를 검토하여 AEM 빠른 사이트 생성 여정을 계속하십시오 [사이트 테마 맞춤화,](customize-theme.md) 라이브 AEM 콘텐츠를 사용하여 사이트 테마를 구축하고, 맞춤화하고, 테스트하는 방법에 대해 알아볼 수 있습니다.
 
 ## 추가 리소스 {#additional-resources}
 

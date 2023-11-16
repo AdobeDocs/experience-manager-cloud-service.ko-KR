@@ -2,10 +2,10 @@
 title: 반응형 레이아웃
 description: AEM에서는 페이지에 대한 응답형 레이아웃을 실현할 수 있습니다.
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '1739'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1734'
+ht-degree: 94%
 
 ---
 
@@ -108,7 +108,7 @@ AEM을 사용하면 디바이스의 폭에 따라 레이아웃을 정의할 수 
 1. 에뮬레이션할 특정 디바이스를 선택하기 위해 다음 중 하나를 수행할 수 있습니다.
 
    * [디바이스 선택] 아이콘을 사용하고 드롭다운 선택기에서 선택합니다.
-   * 에뮬레이터 도구 모음에서 디바이스 표시기 클릭/탭
+   * 에뮬레이터 도구 모음에서 장치 표시기 클릭/탭
 
    ![디바이스 선택 드롭다운](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
 
@@ -120,7 +120,7 @@ AEM을 사용하면 디바이스의 폭에 따라 레이아웃을 정의할 수 
 
    ![접힌 부분](/help/sites-cloud/authoring/assets/responsive-layout-fold.png)
 
-   * 접힌 부분은 콘텐츠에 대한 페이지 줄바꿈으로 간주할 수 있습니다([중단점](#layout-definitions-device-emulation-and-breakpoints)과 혼동하지 않도록 주의하십시오). 이는 스크롤하기 전에 사용자가 디바이스에서 보게 될 내용 일부를 표시하기 위해 편의상 표시됩니다.
+   * 접힌 부분은 콘텐츠에 대한 페이지 줄바꿈으로 간주할 수 있습니다([중단점](#layout-definitions-device-emulation-and-breakpoints)과 혼동하지 않도록 주의하십시오). 이는 스크롤하기 전에 사용자가 디바이스에서 보게 되는 컨텐츠 부분을 표시하기 위해 편의상 표시됩니다.
    * 에뮬레이션 중인 디바이스의 높이가 화면 크기보다 높을 경우 접힌 부분의 선이 표시되지 않습니다.
    * 접힌 부분은 작성자의 편의를 위해 표시되며 게시된 페이지에는 표시되지 않습니다.
 
@@ -136,7 +136,7 @@ AEM을 사용하면 디바이스의 폭에 따라 레이아웃을 정의할 수 
 >
 >아직 사용할 수 없는 경우에는 **레이아웃 컨테이너**&#x200B;를 단락 시스템/페이지에 대해 확실히 활성화해야 합니다. <!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
 
-1. **레이아웃 컨테이너**&#x200B;는 [구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)에서 표준 구성 요소로 사용할 수 있습니다. 여기에서 해당 페이지의 필요한 위치로 드래그하면 **구성 요소를 여기로 드래그하십시오** 플레이스홀더가 나타납니다.
+1. **레이아웃 컨테이너**&#x200B;는 [구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)에서 표준 구성 요소로 사용할 수 있습니다. 여기에서 페이지의 필요한 위치로 드래그하면 그 뒤에 를 볼 수 있습니다. **여기에 구성 요소 드래그** 자리 표시자.
 1. 그런 다음 구성 요소를 레이아웃 컨테이너에 추가할 수 있습니다. 이러한 구성 요소는 실제 콘텐츠를 담게 됩니다.
 
    ![레이아웃 컨테이너](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
@@ -202,7 +202,7 @@ AEM을 사용하면 디바이스의 폭에 따라 레이아웃을 정의할 수 
 
   ![구성 요소 숨기기](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* **레이아웃** 모드에서 **구성 요소를 여기로 드래그하십시오.**&#x200B;를 탭/클릭하여 전체 구성 요소를 선택할 수 있습니다. 이 모드에 대한 도구 모음이 표시됩니다.
+* 위치 **레이아웃** 모드 다음을 탭/클릭할 수 있습니다 **여기에 구성 요소 드래그** 전체 구성 요소를 선택합니다. 이 모드에 대한 도구 모음이 표시됩니다.
 
   도구 모음은 레이아웃 구성 요소의 상태와 이에 속하는 구성 요소에 따라 옵션이 달라집니다. 예:
 

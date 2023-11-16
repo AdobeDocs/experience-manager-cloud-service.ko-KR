@@ -2,10 +2,10 @@
 title: Headless 콘텐츠에 대한 번역 규칙 구성
 description: 번역 규칙을 정의하여 번역할 콘텐츠를 식별하는 방법에 대해 알아봅니다.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 100%
+source-wordcount: '940'
+ht-degree: 96%
 
 ---
 
@@ -100,7 +100,7 @@ Headless 번역 여정의 한 부분을 완료했으므로,
 * 번역 규칙의 역할에 대해 이해할 수 있습니다.
 * 나만의 번역 규칙을 정의할 수 있습니다.
 
-이 지식을 기반으로 다음 문서인 [콘텐츠 번역](translate-content.md)을 검토하여 AEM Headless 번역 여정을 계속하십시오. 여기에서는 통합 및 규칙을 함께 사용하여 Headless 콘텐츠를 번역하는 방법에 대해 알아보게 됩니다.
+이 지식을 기반으로 다음 문서를 검토하여 AEM Headless 번역 여정을 계속하십시오 [콘텐츠 번역](translate-content.md) 통합 및 규칙이 함께 사용하여 headless 콘텐츠를 번역하는 방법을 배울 수 있습니다.
 
 ## 추가 리소스 {#additional-resources}
 

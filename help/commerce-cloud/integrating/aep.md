@@ -1,6 +1,6 @@
 ---
 title: AEM-CIF 핵심 구성 요소 및 Adobe Experience Platform 통합
-description: CIF - Experience Platform 커넥터를 사용하여 AEM 렌더링 제품 페이지에서 Experience Platform으로 상점 이벤트 데이터를 전송하는 방법을 알아봅니다.
+description: CIF - Experience Platform 커넥터를 사용하여 AEM 렌더링 제품 페이지에서 Experience Platform으로 상점 이벤트 데이터를 전송하는 방법에 대해 알아봅니다.
 sub-product: Commerce
 version: Cloud Service
 activity: setup
@@ -11,16 +11,16 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2076'
+source-wordcount: '2074'
 ht-degree: 1%
 
 ---
 
 # AEM-CIF 핵심 구성 요소 및 Adobe Experience Platform 통합 {#aem-cif-aep-integration}
 
-다음 [Commerce Integration Framework (CIF)](https://github.com/adobe/aem-core-cif-components) 핵심 구성 요소는과 원활한 통합을 제공합니다. [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en) 다음과 같은 클라이언트측 상호 작용에서 상점 이벤트 및 해당 데이터 전달 __장바구니에 추가__.
+다음 [Commerce integration framework(CIF)](https://github.com/adobe/aem-core-cif-components) 핵심 구성 요소는과 원활한 통합을 제공합니다. [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en) 다음과 같은 클라이언트측 상호 작용에서 상점 이벤트 및 해당 데이터 전달 __장바구니에 추가__.
 
 다음 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components) project에서 제공하는 JavaScript 라이브러리 [Adobe Commerce용 Adobe Experience Platform 커넥터](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) 상거래 상점 첫 화면에서 이벤트 데이터를 수집할 수 있습니다. 해당 이벤트 데이터는 Experience Platform으로 전송되어 Adobe Analytics 및 Adobe Target과 같은 다른 Adobe Experience Cloud 제품에서 고객 여정을 다루는 360도 프로필을 빌드하는 데 사용됩니다. Adobe Experience Cloud의 다른 제품에 Commerce 데이터를 연결하여 사이트의 사용자 행동을 분석하고, AB 테스트를 수행하고, 개인화된 캠페인을 만드는 등의 작업을 수행할 수 있습니다.
 
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 ## 보내기 `addToCart` Experience Platform 이벤트 데이터 {#send-addtocart-to-aep}
 
-다음 단계는 를 보내는 방법을 보여 줍니다. `addToCart` AEM 렌더링 제품 페이지의 Experience Platform 데이터를 CIF - Experience Platform 커넥터를 사용하여 이벤트 페이지로 복사합니다. Adobe Experience Platform Debugger 브라우저 확장을 사용하면 제출된 데이터를 테스트하고 검토할 수 있습니다.
+다음 단계는 를 보내는 방법을 보여 줍니다. `addToCart` CIF - Experience Platform 커넥터를 사용하여 AEM에서 렌더링된 제품 페이지의 Experience Platform 데이터를 전송합니다. Adobe Experience Platform Debugger 브라우저 확장을 사용하면 제출된 데이터를 테스트하고 검토할 수 있습니다.
 
 ![Adobe Experience Platform Debugger에서 addToCart 이벤트 데이터 검토](../assets/aep-integration/EventData-AEM-AEP.png)
 
@@ -48,7 +48,7 @@ ht-degree: 1%
 
 ### 프로젝트 설정
 
-다음 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?#project) 완전히 새로운 AEM Commerce(CIF) 프로젝트를 만드는 절차.
+다음 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?#project) 새로운 AEM Commerce(CIF) 프로젝트를 만드는 절차.
 
 >[!TIP]
 >
@@ -170,7 +170,7 @@ Maven 빌드 프로세스의 일부로 npm 클린 설치(사용 `npm ci`)가 트
    ]
    ```
 
-### Peregrine 및 CIF 코어 구성 요소 초기화
+### Peregrine 및 CIF 핵심 구성 요소 초기화
 
 React 기반 Peregrine 및 CIF 코어 구성 요소를 초기화하려면 필요한 구성 및 JavaScript 파일을 만듭니다.
 
@@ -347,7 +347,7 @@ React 기반 Peregrine 및 CIF 코어 구성 요소를 초기화하려면 필요
 
 상거래 이벤트 데이터의 구조를 정의하려면 경험 데이터 모델(XDM) 스키마를 만들어야 합니다. 스키마는 데이터의 구조와 형식을 나타내고 유효성을 검사하는 규칙 세트입니다.
 
-1. 브라우저에서 다음 위치로 이동합니다. __Adobe Experience Platform__ 제품 홈 페이지입니다. (예: <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>)
+1. 브라우저에서 다음 위치로 이동합니다. __Adobe Experience Platform__ 제품 홈 페이지입니다. 예: <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>
 
 1. 를 찾습니다. __스키마__ 왼쪽 탐색 섹션의 메뉴에서 __스키마 만들기__ 오른쪽 상단에서 버튼을 클릭하고 __XDM ExperienceEvent__.
 
@@ -370,7 +370,7 @@ React 기반 Peregrine 및 CIF 코어 구성 요소를 초기화하려면 필요
 
 이벤트 데이터를 저장하려면 스키마 정의를 준수하는 데이터 세트를 만들어야 합니다. 데이터 집합은 스키마(열) 및 필드(행)를 포함하는 데이터 수집을 위한 저장소 및 관리 구성입니다.
 
-1. 브라우저에서 다음 위치로 이동합니다. __Adobe Experience Platform__ 제품 홈 페이지입니다. (예: <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>)
+1. 브라우저에서 다음 위치로 이동합니다. __Adobe Experience Platform__ 제품 홈 페이지입니다. 예: <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>
 
 1. 를 찾습니다. __데이터 세트__ 왼쪽 탐색 섹션에 있는 메뉴를 클릭하고 __데이터 세트 만들기__ 오른쪽 상단에서 버튼을 클릭합니다.
 
@@ -397,7 +397,7 @@ React 기반 Peregrine 및 CIF 코어 구성 요소를 초기화하려면 필요
 
 Experience Platform에서 데이터 스트림을 생성하려면 다음 단계를 완료하십시오.
 
-1. 브라우저에서 다음 위치로 이동합니다. __Adobe Experience Platform__ 제품 홈 페이지입니다. (예: <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>)
+1. 브라우저에서 다음 위치로 이동합니다. __Adobe Experience Platform__ 제품 홈 페이지입니다. 예: <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>
 
 1. 를 찾습니다. __데이터스트림__ 왼쪽 탐색 섹션에 있는 메뉴를 클릭하고 __새 데이터스트림__ 오른쪽 상단에서 버튼을 클릭합니다.
 
@@ -438,7 +438,7 @@ Experience Platform에서 데이터 스트림을 생성하려면 다음 단계�
 
 1. Sites 페이지에서 __내 데모 StoreFront > us > en__ 페이지 및 클릭 __편집__ 맨 위의 작업 표시줄에 표시됩니다.
 
-1. 맨 위 작업 막대에서 __게시됨으로 보기__&#x200B;를 클릭한 다음 상점 탐색에서 원하는 카테고리를 클릭합니다.
+1. 맨 위 작업 막대에서 __게시됨으로 보기__&#x200B;을 클릭한 다음 상점 탐색에서 원하는 카테고리를 클릭합니다.
 
 1. 에서 원하는 제품 카드를 클릭합니다. __제품 페이지__&#x200B;을 선택한 다음 을 선택합니다. __색상, 크기__ 을(를) 활성화하려면 __장바구니에 추가__ 단추를 클릭합니다.
 

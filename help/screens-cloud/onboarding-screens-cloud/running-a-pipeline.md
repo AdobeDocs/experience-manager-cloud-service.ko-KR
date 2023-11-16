@@ -2,7 +2,7 @@
 title: 파이프라인 실행
 description: 이 페이지에서는 Cloud Manager에서 Screens용 파이프라인을 Cloud Service 프로젝트로 실행하는 방법에 대해 설명합니다.
 exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 3%
@@ -52,7 +52,7 @@ ht-degree: 3%
 
    ![이미지](/help/screens-cloud/assets/onboarding/run-pipeline4.png)
 
-1. 빌드 프로세스가 완료되면 의 작성자 링크가 표시됩니다. **환경** Cloud Manager 의 카드 **개요** 페이지를 가리키도록 업데이트하는 중입니다.
+1. 빌드 프로세스가 완료되면 다음에서 작성자 링크를 볼 수 있습니다. **환경** Cloud Manager 의 카드 **개요** 페이지를 가리키도록 업데이트하는 중입니다.
 
    ![이미지](/help/screens-cloud/assets/onboarding/run-pipeline5.png)
 

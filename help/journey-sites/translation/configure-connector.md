@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1164'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1163'
+ht-degree: 97%
 
 ---
 
@@ -133,7 +133,7 @@ AEM Sites 번역 여정의 한 부분을 완료했으므로,
 * AEM 번역 통합 프레임워크의 중요한 매개변수를 이해할 수 있습니다.
 * 번역 서비스에 대해 나만의 연결을 설정할 수 있습니다.
 
-이 지식을 기반으로 다음 문서인 [번역 규칙 구성](translation-rules.md)을 검토하여 AEM Sites 번역 여정을 계속하십시오. 여기에서는 번역할 콘텐츠를 정의하는 방법에 대해 알아보게 됩니다.
+이 지식을 기반으로 다음 문서를 검토하여 AEM Sites 번역 여정을 계속하십시오 [번역 규칙 구성,](translation-rules.md) 번역할 콘텐츠를 정의하는 방법을 배울 수 있습니다.
 
 ## 추가 리소스 {#additional-resources}
 

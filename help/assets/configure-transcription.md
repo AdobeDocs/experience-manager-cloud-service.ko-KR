@@ -11,10 +11,10 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1694'
-ht-degree: 93%
+source-wordcount: '1690'
+ht-degree: 89%
 
 ---
 
@@ -57,15 +57,15 @@ ht-degree: 93%
 
 서비스 유형: ![configure-transcription-service](assets/configure-transcription-service.png)
 
-**[!UICONTROL 도구]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure Media Services 구성]**&#x200B;으로 이동합니다. 왼쪽 레일에서 폴더(위치)를 선택하고 [!UICONTROL 만들기] 버튼을 클릭하여 [!DNL Azure] 계정과의 연결을 구성합니다. 이 폴더는 Experience Manager Assets에서 [!DNL Azure] 클라우드 구성이 저장되는 위치입니다. [!DNL Azure] 자격 증명을 입력하고 **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
+**[!UICONTROL 도구]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure Media Services 구성]**&#x200B;으로 이동합니다. 왼쪽 레일에서 폴더(위치)를 선택하고 [!UICONTROL 만들기] 과의 연결을 구성하는 단추 [!DNL Azure] 계정입니다. 이 폴더는 Experience Manager Assets에서 [!DNL Azure] 클라우드 구성이 저장되는 위치입니다. [!DNL Azure] 자격 증명을 입력하고 **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
 
 ### 트랜스크립션에 대한 프로필 처리 구성 {#configure-processing-profile}
 
 [!DNL Azure Media Services]가 Experience Manager Assets에 구성되면 다음 단계에서 에셋 처리 프로필을 만들어 오디오 및 비디오 에셋의 AI 기반 트랜스크립션을 생성합니다. AI 기반 처리 프로필은 [지원된 오디오 또는 비디오 에셋](#supported-file-formats-for-transcription)의 트랜스크립트를 Experience Manager Assets의 렌디션으로 생성하고 원본 에셋이 있는 동일한 폴더에 트랜스크립트(.vtt 파일)를 저장합니다. 따라서 사용자는 에셋과 스크립트 렌디션을 보다 쉽게 검색하고 찾을 수 있습니다.
 
-**[!UICONTROL 도구]** > **[!UICONTROL 에셋]** > **[!UICONTROL 처리 프로필]**&#x200B;로 이동한 다음 **[!UICONTROL 만들기]** 버튼을 클릭하여 오디오 및 비디오 파일의 트랜스크립션을 생성하는 AI 기반 처리 프로필을 만듭니다. 기본적으로 처리 프로필 페이지는 3가지 탭(이미지, 비디오 및 사용자 지정)만을 반영합니다. 단, [!DNL Azure Media Services]가 [!DNL Experience Manager Assets] 인스턴스 에 구성되면 **[!UICONTROL 콘텐츠 AI]** 탭이 표시됩니다. 처리 프로필을 만드는 동안 **[!UICONTROL 콘텐츠 AI]** 탭이 표시되지 않는 경우 [!DNL Azure] 자격 증명을 확인합니다.
+다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 에셋]** > **[!UICONTROL 처리 프로필]** 을(를) 클릭하고 **[!UICONTROL 만들기]** 오디오 및 비디오 파일의 트랜스크립션을 생성하는 AI 기반 처리 프로필을 만드는 단추입니다. 기본적으로 처리 프로필 페이지는 3가지 탭(이미지, 비디오 및 사용자 지정)만을 반영합니다. 단, [!DNL Azure Media Services]가 [!DNL Experience Manager Assets] 인스턴스 에 구성되면 **[!UICONTROL 콘텐츠 AI]** 탭이 표시됩니다. 처리 프로필을 만드는 동안 **[!UICONTROL 콘텐츠 AI]** 탭이 표시되지 않는 경우 [!DNL Azure] 자격 증명을 확인합니다.
 
-**[!UICONTROL 콘텐츠 AI]** 탭에서 **[!UICONTROL 새로 추가]** 버튼을 클릭하여 트랜스크립션을 구성합니다. 드롭다운 목록에서 파일 유형을 선택하여 트랜스크립트를 생성하는 파일 포맷(MIME 유형)을 여기에 포함하고 제외할 수 있습니다. 다음 일러스트레이션에서 지원되는 모든 오디오 및 비디오 파일은 포함되고 텍스트 파일은 제외됩니다.
+다음에서 **[!UICONTROL 콘텐츠 AI]** 탭을 클릭하고 **[!UICONTROL 새로 추가]** 버튼을 클릭하여 트랜스크립션을 구성합니다. 드롭다운 목록에서 파일 유형을 선택하여 트랜스크립트를 생성하는 파일 포맷(MIME 유형)을 여기에 포함하고 제외할 수 있습니다. 다음 일러스트레이션에서 지원되는 모든 오디오 및 비디오 파일은 포함되고 텍스트 파일은 제외됩니다.
 
 **[!UICONTROL 동일한 디렉터리에 VTT 트랜스크립트 만들기]** 토글을 활성화하여 원본 에셋이 있는 동일한 폴더에서 트랜스크립트 렌디션(.vtt 파일)을 만들고 저장합니다. 이 설정에 관계 없이 기본 DAM 에셋 처리 워크플로에서 다른 렌디션이 생성되기도 합니다.
 
@@ -79,7 +79,7 @@ ht-degree: 93%
 
 서비스 유형: ![configure-transcription-service](assets/video-processing-profile2.png)
 
-이제 이 비디오 프로필에서 트랜스크립션을 구성해 주시기 바랍니다. **[!UICONTROL 콘텐츠 AI]** 탭으로 이동하여 **[!UICONTROL 새로 추가]** 버튼을 클릭합니다. 오디오 및 비디오 파일은 포함하고 이미지 및 애플리케이션 파일은 제외합니다. **[!UICONTROL 동일한 디렉터리에 VTT 트랜스크립트 만들기]** 토글을 활성화하고 구성을 저장합니다.
+이제 이 비디오 프로필에서 트랜스크립션을 구성해 주시기 바랍니다. 다음 위치로 이동 **[!UICONTROL 콘텐츠 AI]** 탭을 클릭하고 **[!UICONTROL 새로 추가]** 단추를 클릭합니다. 오디오 및 비디오 파일은 포함하고 이미지 및 애플리케이션 파일은 제외합니다. **[!UICONTROL 동일한 디렉터리에 VTT 트랜스크립트 만들기]** 토글을 활성화하고 구성을 저장합니다.
 
 서비스 유형: ![configure-transcription-service](assets/video-processing-profile1.png)
 

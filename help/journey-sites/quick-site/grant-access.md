@@ -2,10 +2,10 @@
 title: 프론트엔드 개발자에게 액세스 권한 부여
 description: AEM 사이트 git 저장소 및 파이프라인에 액세스할 수 있도록 프론트엔드 개발자를 Cloud Manager에 온보드합니다.
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 100%
+source-wordcount: '784'
+ht-degree: 97%
 
 ---
 
@@ -65,7 +65,7 @@ Cloud Manager에 대한 액세스 권한을 부여하고 사용자에게 사용�
 
    ![제품 프로필](assets/product-profiles.png)
 
-1. 프론트엔드 개발자에게 올바른 프로필을 할당하려면 **사용자** 탭을 탭하거나 클릭한 다음 **사용자 추가** 버튼을 탭하거나 클릭합니다.
+1. 프론트엔드 개발자에게 올바른 프로필을 할당하려면 **사용자** 탭을 클릭한 다음 **사용자 추가** 단추를 클릭합니다.
 
    ![사용자 추가](assets/add-user.png)
 

@@ -3,10 +3,10 @@ title: 쿼리 및 색인화 모범 사례
 description: Adobe의 모범 사례 가이드라인에 기반하여 색인 및 쿼리를 최적화하는 방법에 대해 알아봅니다.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: ddd67a69bea2e2109ce93a91f42e8f365424f80f
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3144'
-ht-degree: 46%
+source-wordcount: '3133'
+ht-degree: 47%
 
 ---
 
@@ -132,15 +132,16 @@ AEM에서 제공하는 as a Cloud Service [쿼리 성능 도구](#query-performa
 
 ### 쿼리 설명
 
-개발자는 쿼리 설명 도구를 사용하여 쿼리 실행 계획을 이해할 수 있습니다(참조) [쿼리 실행 계획 읽기](#reading-query-execution-plan))을 사용하여 쿼리를 실행할 때 사용된 인덱스의 세부 정보를 제공합니다. 쿼리를 예측하거나 성능을 소급하여 분석하기 위해 쿼리가 얼마나 효과적으로 인덱싱되는지를 이해하는 데 사용할 수 있습니다.
+개발자는 쿼리 설명 도구를 사용하여 쿼리 실행 계획을 이해할 수 있습니다(참조) [쿼리 실행 계획 읽기](#reading-query-execution-plan))을 사용하여 쿼리를 실행할 때 사용된 인덱스의 세부 정보를 제공합니다. 쿼리를 색인화하여 성능을 예측하거나 소급하여 분석하는 방법을 이해하는 데 사용할 수 있습니다.
 
 #### 쿼리 설명
 
 쿼리를 설명하려면 다음 작업을 수행하십시오.
+
 * 다음을 사용하여 적절한 쿼리 언어 선택 `Language` 드롭다운입니다.
 * 쿼리 문을 `Query` 필드.
 * 필요한 경우 제공된 확인란을 사용하여 쿼리가 실행되는 방법을 선택합니다.
-   * 기본적으로 쿼리 실행 계획을 식별하기 위해 JCR 쿼리를 실행할 필요가 없습니다(QueryBuilder 쿼리의 경우 아님).
+   * 기본적으로 JCR 쿼리는 쿼리 실행 계획을 식별하기 위해 실행할 필요가 없습니다(QueryBuilder 쿼리의 경우 아님).
    * 쿼리 실행을 위한 세 가지 옵션이 제공됩니다.
       * `Include Execution Time` - 쿼리를 실행하지만 결과를 읽지 않습니다.
       * `Read first page of results` - 쿼리를 실행하고 20개의 결과 중 첫 번째 &#39;페이지&#39;를 읽습니다(쿼리 실행에 대한 모범 사례를 복제합니다).
@@ -238,7 +239,7 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ord
 
 이 쿼리 실행 계획을 수행하면 모든 에셋이 아래에 표시됩니다. `/content/dam` 인덱스에서 읽은 다음 쿼리 엔진에 의해 추가로 필터링됩니다(결과 세트에 인덱싱되지 않은 속성 제한과 일치하는 속성만 포함).
 
-일부 자산만 제한 사항과 일치하는 경우에도 `jcr:content/metadata/myProperty = "My Property Value"`, 요청된 &#39;페이지&#39;의 결과를 (시도) 채우려면 쿼리가 많은 수의 노드를 읽어야 합니다. 이로 인해 쿼리의 성능이 저하될 수 있으며, 이 낮은 쿼리로 표시됩니다 `Read Optimization` 는 쿼리 성능 도구에서 점수를 매기고 많은 수의 노드가 트래버스됨을 나타내는 경고 메시지가 표시될 수 있습니다(참조) [색인 순회](#index-traversal)).
+일부 자산만 제한 사항과 일치하는 경우에도 `jcr:content/metadata/myProperty = "My Property Value"`, 쿼리는 요청된 &#39;페이지&#39;의 결과를 채우기 위해(시도) 많은 노드를 읽어야 합니다. 이로 인해 쿼리의 성능이 저하될 수 있으며, 이 낮은 쿼리로 표시됩니다 `Read Optimization` 는 쿼리 성능 도구에서 점수를 매기고 많은 수의 노드가 트래버스됨을 나타내는 경고 메시지가 표시될 수 있습니다(참조) [색인 순회](#index-traversal)).
 
 이 두 번째 쿼리의 성능을 최적화하려면 `damAssetLucene-9` 색인(`damAssetLucene-9-custom-1`) 다음 속성 정의를 추가합니다.
 

@@ -2,9 +2,9 @@
 title: 콘텐츠 전송 도구 시작하기
 description: 콘텐츠 전송 도구를 시작하는 방법 알아보기
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1427'
 ht-degree: 21%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 21%
 >
 >Cloud Acceleration Manager에서 마이그레이션 세트가 삭제된 경우에도 연결 오류가 발생할 수 있습니다.
 
-소스 AEM 인스턴스가 허용 목록에 추가된 특정 호스트에만 도달할 수 있는 방화벽을 통해 실행되고 있을 수 있습니다. 추출을 성공적으로 실행하려면 AEM을 실행 중인 인스턴스에서 다음 끝점에 액세스해야 합니다.
+소스 AEM 인스턴스가 허용 목록에 추가된 특정 호스트에만 도달할 수 있는 방화벽을 통해 실행되고 있을 수 있습니다. 추출을 성공적으로 실행하려면 AEM을 실행 중인 인스턴스에서 다음 끝점에 액세스할 수 있어야 합니다.
 
 * Azure Blob 스토리지 서비스: `casstorageprod.blob.core.windows.net`
 
@@ -78,7 +78,7 @@ SSL/TLS 연결 문제를 이해하는 것은 때때로 어려울 수 있습니�
 
 1. CAM(Cloud Acceleration Manager)에 로그인한 다음 이전에 만든 CAM 프로젝트를 클릭하여 AEM으로 as a Cloud Service으로 이동할 준비를 평가합니다. CAM 프로젝트를 생성하지 않은 경우 CAM에서 프로젝트 생성 및 관리를 참조하십시오.
 
-1. 을(를) 클릭합니다 **컨텐츠 전송** 카드. 이렇게 하면 마이그레이션 세트 목록 보기로 이동합니다.
+1. 다음을 클릭합니다. **컨텐츠 전송** 카드. 이렇게 하면 마이그레이션 세트 목록 보기로 이동합니다.
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
 
@@ -98,7 +98,7 @@ SSL/TLS 연결 문제를 이해하는 것은 때때로 어려울 수 있습니�
    >
    >이름은 AEM 노드의 동일한 규칙을 따라야 하므로 다음 문자를 포함할 수 없습니다. . / : [ ] | *
 
-1. 이제 목록 보기에 마이그레이션 목록이 표시됩니다. 세 점 기호(**...**) 드롭다운을 열고 을 클릭합니다. **추출 키 복사**. 추출 단계에서 이 키가 필요합니다. 이 추출 키를 복사합니다.
+1. 이제 목록 보기에 마이그레이션 목록이 표시됩니다. 세 점 기호(**...**) 드롭다운을 열고 을 선택합니다. **추출 키 복사**. 추출 단계에서 이 키가 필요합니다. 이 추출 키를 복사합니다.
 
    >[!NOTE]
    >
@@ -161,7 +161,7 @@ Cloud Acceleration Manager에서 만든 마이그레이션 세트를 채우려�
    * A *green cloud* indicates that you can complete the extraction process.
    * A *yellow icon* indicates that you did not create the existing migration set and the specific one is created by some other user in the same instance.
 
-1. Select a migration set and click on **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
+1. Select a migration set and click **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png) -->
 
@@ -175,7 +175,7 @@ Cloud Acceleration Manager에서 만든 마이그레이션 세트를 채우려�
 
 크기 검사를 실행하려면 아래 단계를 따르십시오.
 
-1. 마이그레이션 세트를 선택하고 을(를) 클릭합니다 **크기 확인**.
+1. 마이그레이션 세트를 선택하고 **크기 확인**.
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam8.png)
 
@@ -187,7 +187,7 @@ Cloud Acceleration Manager에서 만든 마이그레이션 세트를 채우려�
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
-1. 다음 이후 **크기 확인** 프로세스가 완료되었습니다. 상태가 다음으로 변경됩니다. **완료됨**. 동일한 마이그레이션 세트를 선택하고 다음을 클릭하십시오. **크기 확인** 결과를 봅니다. 다음은 의 예입니다. **크기 확인** 경고가 없는 결과입니다.
+1. 다음 이후 **크기 확인** 프로세스가 완료되었습니다. 상태가 다음으로 변경됩니다. **완료됨**. 동일한 마이그레이션 세트를 선택하고 **크기 확인** 결과를 봅니다. 다음은 의 예입니다. **크기 확인** 경고가 없는 결과입니다.
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
 

@@ -1,13 +1,13 @@
 ---
 title: 태그 관리
 description: 콘텐츠 정리를 위해 AEM에서 태그를 관리하는 방법을 알아봅니다.
-source-git-commit: af60a2b8f1e2dd7fc55247ecb0251d7b85f63eb3
-workflow-type: ht
-source-wordcount: '2272'
-ht-degree: 100%
+exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '2268'
+ht-degree: 98%
 
 ---
-
 
 # 태그 관리 {#administering-tags}
 
@@ -153,7 +153,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 ## 태그 관리 {#managing-tags}
 
-기존 태그 및 네임스페이스를 관리하고 정리하기 위해 수행할 수 있는 여러 작업이 있습니다. [태그 지정 콘솔](#tagging-console)에서 태그 또는 네임스페이스를 선택하면 이용 가능한 작업이 도구 모음에 표시됩니다.
+기존 태그와 네임스페이스에서 이러한 태그를 관리하고 구성할 수 있는 여러 가지 작업이 있습니다. [태그 지정 콘솔](#tagging-console)에서 태그 또는 네임스페이스를 선택하면 이용 가능한 작업이 도구 모음에 표시됩니다.
 
 * [속성 보기](#viewing-tag-properties)
 * [편집](#editing-tags)
@@ -207,7 +207,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 ### 태그 게시 취소 {#unpublishing-tags}
 
-작성자 인스턴스에서 태그를 비활성화하고 게시 인스턴스에서 제거하려면 게시 취소하면 됩니다.
+작성자 인스턴스에서 태그를 비활성화하고 게시 인스턴스에서 제거하려면 게시를 취소할 수 있습니다.
 
 1. 태그를 게시 취소하려면 [태그 지정 콘솔](#tagging-console)을 엽니다.
 

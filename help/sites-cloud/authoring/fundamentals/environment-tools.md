@@ -2,10 +2,10 @@
 title: 작성 환경 및 도구
 description: AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: ccd4206f029ac77b90f731891ac300c5d3849ef8
-workflow-type: ht
-source-wordcount: '2166'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '2164'
+ht-degree: 98%
 
 ---
 
@@ -73,7 +73,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
   창의 왼쪽에 구성 요소 브라우저가 열립니다.
 
-  구성 요소를 페이지에 추가하려면 필요한 구성 요소를 클릭하고 필요한 위치로 끕니다.
+  페이지에 구성 요소를 추가하려면 필요한 구성 요소를 클릭하고 필요한 위치로 끕니다.
 
   ![데스크탑의 구성 요소 브라우저](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
 
@@ -149,7 +149,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
   창의 왼쪽에 자산 브라우저가 열립니다.
 
-  자산을 페이지에 추가하려면 필요한 자산을 클릭하고 필요한 구성 요소 또는 위치로 드래그합니다.
+  에셋을 페이지에 추가하려면 필요한 에셋을 클릭하고 필요한 구성 요소 또는 위치로 드래그합니다.
 
   ![데스크탑의 자산 브라우저](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
 

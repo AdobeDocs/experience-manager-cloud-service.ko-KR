@@ -2,10 +2,10 @@
 title: 콘텐츠 조각의 참조 사용에 대해 알아보기
 description: 콘텐츠, 다른 조각과 자산(미디어)의 콘텐츠 조각에서 참조를 사용하는 방법에 대해 알아봅니다. Headless CMS 작성에서 중첩된 조각의 필요성과 메커니즘을 소개합니다.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
-workflow-type: ht
-source-wordcount: '712'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '710'
+ht-degree: 97%
 
 ---
 
@@ -39,11 +39,11 @@ AEMaaCS를 통한 작성, 특히 콘텐츠 조각 작성에 대한 소개와 함
 
 ## 콘텐츠 참조 {#content-references}
 
-콘텐츠 참조는 이 작업을 수행하고 이를 통해 다른 콘텐츠를 참조할 수 있습니다. 이러면 콘텐츠 항목을 선택할 수 있는 브라우저가 열립니다.
+콘텐츠 참조는 이 작업을 수행하고 이를 통해 다른 콘텐츠를 참조할 수 있습니다. 그러면 콘텐츠 항목을 선택할 수 있는 브라우저가 열립니다.
 
 ## 자산/미디어 참조 {#assets-media-references}
 
-**자산 삽입** 옵션을 사용하여 텍스트 블록 내에서 자산(예: 이미지 또는 미디어)을 참조할 수 있습니다. 이러면 자산 항목을 선택할 수 있는 브라우저가 열립니다.
+**자산 삽입** 옵션을 사용하여 텍스트 블록 내에서 자산(예: 이미지 또는 미디어)을 참조할 수 있습니다. 이렇게 하면 에셋을 선택할 수 있는 브라우저가 열립니다.
 
 ![콘텐츠 조각 - 자산 삽입](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 

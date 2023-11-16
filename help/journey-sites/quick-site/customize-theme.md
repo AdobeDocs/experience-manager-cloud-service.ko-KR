@@ -2,10 +2,10 @@
 title: 사이트 테마 맞춤화
 description: 라이브 AEM 콘텐츠를 사용하여 사이트 테마를 빌드하고, 맞춤화하고, 테스트하는 방법에 대해 알아봅니다.
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
-source-git-commit: 64509c13abacd6a6b54b58245acbf510feafdffa
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 100%
+source-wordcount: '962'
+ht-degree: 96%
 
 ---
 
@@ -135,7 +135,7 @@ AEM 빠른 사이트 생성 여정의 한 부분을 완료했으므로,
 * 로컬 프록시를 통해 실제 AEM 콘텐츠를 사용하여 테마 맞춤화를 테스트하는 방법을 이해할 수 있습니다.
 * 변경 내용을 AEM git 저장소에 커밋하는 방법을 이해할 수 있습니다.
 
-이 지식을 기반으로 다음 문서인 [맞춤화된 테마 배포](deploy-theme.md)를 검토하여 AEM 빠른 사이트 생성 여정을 계속하십시오. 여기에서는 프론트엔드 파이프라인을 사용하여 테마를 배포하는 방법에 대해 알아보게 됩니다.
+이 지식을 기반으로 다음 문서를 검토하여 AEM 빠른 사이트 생성 여정을 계속하십시오 [맞춤화된 테마 배포,](deploy-theme.md) 프론트엔드 파이프라인을 사용하여 테마를 배포하는 방법에 대해 알아볼 수 있습니다.
 
 ## 추가 리소스 {#additional-resources}
 

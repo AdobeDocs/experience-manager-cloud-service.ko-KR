@@ -3,10 +3,10 @@ title: AEM에서 GraphiQL IDE 사용
 description: Adobe Experience Manager에서 GraphiQL IDE를 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
-workflow-type: ht
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
 source-wordcount: '1141'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -113,7 +113,7 @@ GraphQL을 사용하여 HTTP 캐시 헤더를 구성하여 개별 지속 쿼리�
 
    ![지속 쿼리 HTTP 캐시 헤더](assets/cfm-graphqlapi-headers-01.png "지속 쿼리 HTTP 캐시 헤더")
 
-1. 이 옵션을 선택하면 **캐시 구성** 대화 사자가 열립니다.
+1. 이 옵션을 선택하면 **캐시 구성** 대화 상자:
 
    ![지속 쿼리 HTTP 캐시 헤더 설정](assets/cfm-graphqlapi-headers-02.png "지속 쿼리 HTTP 캐시 헤더 설정")
 
@@ -159,7 +159,7 @@ max-age와 동일하지만 특히 프록시 캐시에 적용됩니다.
 <!--
   >[!NOTE]
   >
-  >The URL will need [encoding before using programmatically](/help/headless/graphql-api/persisted-queries.md#encoding-query-url).
+  >The URL needs [encoding before using programmatically](/help/headless/graphql-api/persisted-queries.md#encoding-query-url).
   >
   >The target environment might need adjusting, depending on your requirements.
 -->

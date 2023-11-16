@@ -2,9 +2,9 @@
 title: 제품 카탈로그 페이지 및 템플릿 관리
 description: 제품 카탈로그 페이지 및 템플릿 관리 방법 알아보기
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '719'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## 지금까지의 스토리 {#story-so-far}
 
-AEM Content and Commerce 작성 여정의 이전 문서에서는 [AEM CIF 작성 기본 사항 시작하기](getting-started.md)를 통해 CIF 작성의 기본 사항을 학습했습니다.
+AEM Content and Commerce 작성 여정의 이전 문서에서는 [AEM CIF 작성 기본 사항 시작하기](getting-started.md), CIF 작성의 기본 사항에 대해 배웠습니다.
 
 이 문서는 이러한 기본 사항을 기반으로 합니다.
 
@@ -61,7 +61,7 @@ Venia storefront는 탐색, 랜딩, 카테고리(PLP), 제품 세부 사항 페�
 
 ### 범주 또는 제품별 템플릿 {#specific}
 
-CIF는 몇 번의 클릭만으로 여러 템플릿을 지원합니다. 다른 템플릿을 만들려면 각 카테고리에서 일반 템플릿을 선택하고 **만들기** 작업.
+CIF은 몇 번의 클릭만으로 여러 템플릿을 지원합니다. 다른 템플릿을 만들려면 각 카테고리에서 일반 템플릿을 선택하고 **만들기** 작업.
 
 ![템플릿 페이지 만들기](assets/create-template-page.png)
 
@@ -93,7 +93,7 @@ CIF는 몇 번의 클릭만으로 여러 템플릿을 지원합니다. 다른 �
 
 ![템플릿 연결 만들기](assets/create-template-associate.png)
 
-기본 홈페이지로 돌아가서 를 클릭합니다. **룩을 쇼핑하다** 특정 템플릿을 보려면 범주를 선택합니다. 다른 모든 범주는 여전히 일반 템플릿을 사용합니다.
+기본 홈페이지로 돌아가서 **룩을 쇼핑하다** 특정 템플릿을 보려면 범주를 선택합니다. 다른 모든 범주는 여전히 일반 템플릿을 사용합니다.
 
 ![템플릿 결과 만들기](assets/create-template-result.png)
 
@@ -107,11 +107,11 @@ CIF는 몇 번의 클릭만으로 여러 템플릿을 지원합니다. 다른 �
 * 일반 템플릿 작동 방식
 * 개별 템플릿을 만들었습니다.
 
-이 지식을 기반으로 다음 문서를 검토하여 여정을 계속하십시오. [단계적 제품 카탈로그 경험 관리](staged-catalog.md): 스테이징된 제품 데이터 및 AEM Launch로 작업하는 방법을 배울 수 있습니다.
+이 지식을 기반으로 다음 문서를 검토하여 여정을 계속하십시오. [단계적 제품 카탈로그 경험 관리](staged-catalog.md): 단계적인 제품 데이터 및 AEM Launch로 작업하는 방법을 배울 수 있습니다.
 
 ## 추가 리소스 {#additional-resources}
 
 문서를 검토하여 여정의 다음 부분으로 넘어가는 것이 좋습니다 [단계적 제품 카탈로그 경험 관리](staged-catalog.md): 다음은 이 문서에 나열된 몇 가지 개념을 자세히 알아보는 추가적인 옵션 리소스이며, headless 여정을 계속 진행할 필요는 없습니다.
 
 * [여러 범주 및 제품 페이지 만들기](/help/commerce-cloud/authoring/multi-template-usage.md)
-* [Experience Manager Cloud Service에 대한 마이그레이션 안내서](/help/commerce-cloud/migration.md) - 이전 버전에서 AEM Commerce Integration Framework(CIF) 추가 기능으로 마이그레이션하는 방법
+* [Experience Manager Cloud Service에 대한 마이그레이션 안내서](/help/commerce-cloud/migration.md) - 이전 버전에서 AEM Commerce integration framework(CIF) 추가 기능으로 마이그레이션하는 방법

@@ -2,9 +2,9 @@
 title: AEM Forms의 로컬 개발 환경을 설정하려면 어떻게 해야 합니까?
 description: Adobe Experience Manager Forms as a Cloud Service을 위한 로컬 개발 환경 설정
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a0433718a223a6d3aa7740232caa17650bce5ff6
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2847'
+source-wordcount: '2846'
 ht-degree: 3%
 
 ---

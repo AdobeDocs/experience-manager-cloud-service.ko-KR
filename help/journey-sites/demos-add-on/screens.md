@@ -2,10 +2,10 @@
 title: 데모 사이트에 대해 AEM Screens 활성화
 description: 제작한 데모 사이트에서 전체 AEM Screens as a Cloud Service 환경을 활성화하는 단계에 대해 알아봅니다.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2666'
-ht-degree: 100%
+source-wordcount: '2665'
+ht-degree: 98%
 
 ---
 
@@ -388,7 +388,7 @@ AEM 참조 데모 추가 기능 여정의 한 부분을 완료했으므로
 * We.Cafe 데모 콘텐츠를 이해할 수 있습니다.
 * We.Cafe에 대해 AEM Screens를 구성하는 방법을 파악할 수 있습니다.
 
-이제 나만의 데모 사이트를 사용하여 AEM Screens의 기능을 살펴볼 준비가 되었습니다. 여정의 다음 섹션인 [데모 사이트 관리](manage.md)로 이동하여 계속하십시오. 여기에서는 데모 사이트 관리에 도움이 되는 도구 및 이를 제거하는 방법에 대해 알아보게 됩니다.
+이제 나만의 데모 사이트를 사용하여 AEM Screens의 기능을 살펴볼 준비가 되었습니다. 여정의 다음 섹션으로 이동합니다. [데모 사이트 관리,](manage.md) 데모 사이트를 관리하는 데 도움이 되는 도구 및 이를 제거하는 방법에 대해 알아봅니다.
 
 또한 [추가 리소스 섹션](#additional-resources)에서 사용할 수 있는 몇 가지 추가 리소스를 확인하여 이 여정에서 확인한 기능들에 대한 자세한 내용을 알아볼 수 있습니다.
 

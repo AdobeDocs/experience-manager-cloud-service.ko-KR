@@ -2,10 +2,10 @@
 title: 페이지 게시
 description: AEM에서 다양한 메커니즘을 사용하여 페이지를 게시 및 게시 취소하는 방법에 대해 알아봅니다.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 100%
+source-wordcount: '1801'
+ht-degree: 97%
 
 ---
 
@@ -100,7 +100,7 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
 빠른 게시로 페이지를 게시하려면 다음 작업을 수행하십시오.
 
-1. Sites 콘솔에서 페이지를 선택하고 **빠른 게시** 버튼을 클릭합니다.
+1. Sites 콘솔에서 페이지를 선택하고 **빠른 게시** 단추를 클릭합니다.
 
    ![게시할 페이지 선택](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -120,7 +120,7 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
 게시 관리를 사용하여 페이지를 게시 또는 게시 취소하려면 다음 작업을 수행하십시오.
 
-1. Sites 콘솔에서 페이지를 선택하고 **게시 관리** 버튼을 클릭합니다.
+1. Sites 콘솔에서 페이지를 선택하고 **게시 관리** 단추를 클릭합니다.
 
    ![게시할 페이지 선택](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -234,7 +234,7 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
 [게시하기 위해 게시 관리를 사용](#manage-publication)하는 것과 같은 방식으로 게시 취소할 수 있습니다.
 
-1. Sites 콘솔에서 페이지를 선택하고 **게시 관리** 버튼을 클릭합니다.
+1. Sites 콘솔에서 페이지를 선택하고 **게시 관리** 단추를 클릭합니다.
 1. **게시 관리** 마법사가 시작됩니다. 첫 번째 단계인 **옵션**&#x200B;에서 기본 옵션인 **게시**&#x200B;를 선택하는 대신 **게시 취소**&#x200B;를 선택합니다.
 
    ![게시 취소 - 옵션](/help/sites-cloud/authoring/assets/publishing-unpublish.png)

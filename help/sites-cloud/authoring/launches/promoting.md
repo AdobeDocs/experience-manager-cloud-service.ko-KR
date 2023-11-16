@@ -2,10 +2,10 @@
 title: 론치 홍보
 description: 게시 전에 콘텐츠를 소스(프로덕션)로 다시 이동하려면 론치 페이지를 홍보해야 합니다.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
-workflow-type: ht
-source-wordcount: '814'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '812'
+ht-degree: 98%
 
 ---
 
@@ -80,7 +80,7 @@ ht-degree: 100%
 
 ## 편집 시 론치 페이지 홍보 {#promoting-launch-pages-when-editing}
 
-론치 페이지를 편집할 때 **론치 홍보** 동작을 **페이지 정보**&#x200B;에서도 사용할 수 있습니다. 이 작업을 수행하면 필요한 정보를 수집하기 위한 마법사가 열립니다.
+론치 페이지를 편집할 때 **론치 홍보** 동작을 **페이지 정보**&#x200B;에서도 사용할 수 있습니다. 필요한 정보를 수집하기 위한 마법사가 열립니다.
 
 ![사이트 정보로 론치 홍보](/help/sites-cloud/authoring/assets/launches-promote-page-info.png)
 

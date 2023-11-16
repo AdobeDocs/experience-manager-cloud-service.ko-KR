@@ -4,10 +4,10 @@ description: Universal Editor를 사용하여 모든 구현에서 컨텍스트�
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
-source-git-commit: 2c7ad41ec44ed2627bfcfe206c1b7ba660cef9c0
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 88%
+source-wordcount: '969'
+ht-degree: 78%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->이 체험판에서 Universal Editor를 사용하려면 크롬을 브라우저로 사용해야 하며 시크릿 모드가 아니어야 합니다. 이는 Universal Editor가 아니라 체험판 환경의 제한 사항입니다.
+>이 체험판에서 유니버설 편집기를 사용하려면 시크릿 모드가 아닌 Chrome을 브라우저로 사용해야 합니다. 이는 Universal Editor가 아니라 체험판 환경의 제한 사항입니다.
 
 Universal Editor를 사용하면 컨텍스트에서 즉시 텍스트를 신속하게 편집할 수 있으므로 간단하고 직관적인 콘텐츠 작성이 가능합니다.
 
@@ -79,7 +79,7 @@ Universal Editor를 사용하면 컨텍스트 내 콘텐츠와 상호 작용할 
 
    ![에뮬레이터 메뉴 항목](assets/do-not-localize/ue-emulator-1.png)
 
-1. 독자가 사용하는 디바이스의 가로세로 비율이 다양할 수 있으므로 편집기는 페이지가 사용자에게 어떻게 표시되는지 확인하기 위해 에뮬레이션 모드를 제공합니다. 예를 들어 세로 모드 모바일 디바이스 옵션을 선택합니다.
+1. Reader은 서로 다른 종횡비를 가진 서로 다른 장치에 있을 수 있으므로 편집기는 페이지가 사용자에게 표시되는 방식을 확인하는 에뮬레이션 모드를 제공합니다. 예를 들어 세로 모드 모바일 디바이스 옵션을 선택합니다.
 
    ![에뮬레이터 메뉴 항목](assets/do-not-localize/ue-emulator-2.png)
 
@@ -87,7 +87,7 @@ Universal Editor를 사용하면 컨텍스트 내 콘텐츠와 상호 작용할 
 
 1. 에뮬레이터를 데스크탑 모드로 되돌립니다.
 
-또한 에뮬레이터의 정확한 차원을 지정하고 에뮬레이션된 디바이스를 회전하면 잠재적인 모든 대상 디바이스에서 콘텐츠를 확인할 수 있습니다.
+에뮬레이터에 정확한 치수를 지정하고 에뮬레이트된 디바이스를 회전시켜 잠재적인 대상 디바이스에서 콘텐츠를 볼 수도 있습니다.
 
 ## 미리보기 및 게시 {#preview}
 
@@ -95,7 +95,7 @@ Universal Editor를 사용하면 컨텍스트 내 콘텐츠와 상호 작용할 
 
 1. 편집기 왼쪽에 있는 모드 레일에서 **미리보기**&#x200B;를 탭하거나 클릭합니다.
 
-1. 이제 주 문서의 **자세히 보기** 링크를 탭하거나 클릭합니다.
+1. 이제 다음을 탭하거나 클릭합니다. **자세히 보기** 기본 기사 링크.
 
    ![미리보기 모드](assets/do-not-localize/ue-preview-publish-1.png)
 
@@ -103,7 +103,7 @@ Universal Editor를 사용하면 컨텍스트 내 콘텐츠와 상호 작용할 
 
    ![뒤로 가기 링크를 사용하여 주 페이지로 돌아가기](assets/do-not-localize/ue-preview-publish-3.png)
 
-1. 이제 편집기의 오른쪽 상단에서 **게시** 버튼을 탭하거나 클릭하여 콘텐츠를 게시합니다.
+1. 이제 다음을 탭하거나 클릭합니다. **게시** 편집기의 오른쪽 상단에 있는 단추를 클릭하여 콘텐츠를 게시합니다.
 
    ![미리보기 및 게시 메뉴 항목](assets/do-not-localize/ue-preview-publish-4.png)
 

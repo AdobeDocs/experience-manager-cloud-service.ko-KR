@@ -2,10 +2,10 @@
 title: SLA 보고
 description: 계약된 SLA(서비스 수준 계약)와 관련하여 프로덕션 AEM 환경의 성능을 확인하는 방법을 알아봅니다.
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
-source-git-commit: 6cf164093cc543fe4847859b248e70efd86efbb1
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 100%
+source-wordcount: '247'
+ht-degree: 95%
 
 ---
 

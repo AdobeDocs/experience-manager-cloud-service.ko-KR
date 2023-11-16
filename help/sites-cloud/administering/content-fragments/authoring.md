@@ -4,10 +4,10 @@ description: 콘텐츠 조각에 대한 콘텐츠를 작성한 다음 목적에 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: b8206ffc0947de4fed085a03a6f90b5ac0f85aab
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2253'
-ht-degree: 99%
+source-wordcount: '2252'
+ht-degree: 98%
 
 ---
 
@@ -88,7 +88,7 @@ ht-degree: 99%
 
 ### 링크 팔로우 {#follow-links}
 
-편집기의 다양한 부분에 링크 아이콘이 표시됩니다. 이를 사용하여 표시된 항목을 열 수 있습니다(예: 콘텐츠 조각 모델, 상위 참조 또는 참조되는 조각).
+편집기의 여러 부분에서 링크 아이콘을 볼 수 있습니다. 이를 사용하여 표시된 항목을 열 수 있습니다(예: 콘텐츠 조각 모델, 상위 참조 또는 참조되는 조각).
 
 ![콘텐츠 조각 편집기 - 링크 아이콘](assets/cf-authoring-link-icon.png)
 

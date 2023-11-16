@@ -2,10 +2,10 @@
 title: 태그 사용
 description: 태그는 웹 사이트에 포함된 콘텐츠를 빠르고 손쉽게 분류할 수 있는 방법입니다.
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
-source-git-commit: a7774ff75fb6bac55d5e931b13597d90bf8d721b
-workflow-type: ht
-source-wordcount: '562'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '560'
+ht-degree: 96%
 
 ---
 

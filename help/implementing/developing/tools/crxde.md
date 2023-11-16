@@ -2,9 +2,9 @@
 title: CRXDE Lite 사용
 description: CRXDE Lite은 AEM 빠른 시작의 일부이며 브라우저 내에서 로컬 개발 환경의 저장소에 액세스하고 수정할 수 있습니다.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1684'
 ht-degree: 1%
 
 ---
@@ -201,7 +201,7 @@ CRXDE Lite을 사용하여 속성을 만들려면 다음 작업을 수행하십�
 1. 브라우저에서 CRXDE Lite을 엽니다.
 1. 다음에서 [**탐색자 창**,](#explorer-pane) 새 속성을 추가할 노드를 선택합니다.
 1. 다음에서 [**속성 탭**](#properties-tab) 아래쪽 창에서 **이름**, **유형**&#x200B;및 **값**.
-1. 클릭 **추가**.
+1. **추가**&#x200B;를 클릭합니다.
 1. 다음을 클릭합니다. [**모두 저장 단추**](#save-all-button) 변경 사항을 서버에 저장합니다.
 
 ## 파일 만들기 {#creating-a-file}

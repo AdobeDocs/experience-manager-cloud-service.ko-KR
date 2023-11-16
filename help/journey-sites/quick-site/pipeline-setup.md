@@ -2,10 +2,10 @@
 title: 파이프라인 설정
 description: 프론트엔드 파이프라인을 만들어 사이트 테마의 맞춤화를 관리할 수 있습니다.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '966'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '965'
+ht-degree: 98%
 
 ---
 
@@ -65,7 +65,7 @@ AEM 빠른 사이트 생성 여정의 이전 문서인 [템플릿으로 사이�
 
 ![Cloud Manager 개요](assets/cloud-manager-overview.png)
 
-액세스한 프로그램의 이름을 참고하거나 URL을 복사합니다. 나중에 프론트엔드 개발자에게 이를 제공해야 합니다.
+액세스한 프로그램의 이름을 참고하거나 URL을 복사합니다. 나중에 프론트엔드 개발자에게 제공해야 합니다.
 
 ## 프론트엔드 파이프라인 제작 {#create-front-end-pipeline}
 

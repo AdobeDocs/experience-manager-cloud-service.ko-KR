@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.10.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.10.0 릴리스 정보입니다.'
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1437'
-ht-degree: 73%
+source-wordcount: '1436'
+ht-degree: 74%
 
 ---
 
@@ -66,7 +66,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### [!DNL Forms]의 베타 기능 {#what-is-new-forms-oct2021-beta}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [커뮤니케이션 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=ko-KR)를 통해 템플릿과 XML 데이터를 결합하여 다양한 형식의 인쇄 문서를 생성할 수 있습니다. 이 서비스를 사용하면 동기화 모드와 배치 모드에서 문서를 생성할 수 있습니다. API를 사용하면 다음과 같은 기능을 제공하는 애플리케이션을 만들 수 있습니다.
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [커뮤니케이션 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=ko-KR)를 통해 템플릿과 XML 데이터를 결합하여 다양한 형식의 인쇄 문서를 생성할 수 있습니다. 이 서비스를 통해 동기화 모드와 배치 모드에서 문서를 생성할 수 있습니다. API를 사용하면 다음과 같은 기능을 제공하는 애플리케이션을 만들 수 있습니다.
 
    * XML 데이터로 템플릿 파일(PDF 및 XDP)을 채워 문서를 생성합니다.
    * 비대화형 PDF 인쇄 스트림을 포함하여 다양한 형식의 출력 양식을 생성합니다.
@@ -79,11 +79,11 @@ Beta 프로그램에 등록하려면 [!DNL formscsbeta@adobe.com]에 문의하�
 
 * CIF 추가 기능은 새 GraphQL API 및 스키마가 포함된 최신 Commerce v2.4.3을 지원합니다
 
-* 작성자는 리치 텍스트 편집기(RTE)를 사용하여 텍스트 필드의 제품 및 카탈로그 페이지에 링크를 추가할 수 있습니다. RTE 도구 모음에 CIF 아이콘이 추가되어 선택기를 열어 컨텍스트를 종료하지 않고도 제품이나 카테고리를 빠르게 검색하고 선택할 수 있습니다.
+* 작성자는 리치 텍스트 편집기(RTE)를 사용하여 텍스트 필드의 제품 및 카탈로그 페이지에 링크를 추가할 수 있습니다. RTE 도구 모음에 CIF 아이콘이 추가되어 선택기를 열어 컨텍스트를 종료하지 않고 제품이나 카테고리를 빠르게 검색하고 선택할 수 있습니다.
 
 * 기존 팝업 장바구니 및 체크아웃이 전용 AEM 장바구니 및 체크아웃 페이지로 대체되었습니다. 이러한 페이지의 구성 요소는 Adobe Commerce의 확장 가능한 Peregrine 구성 요소를 사용하여 빌드됩니다
 
-* 판매자는 Commerce 백엔드를 사용하여 탐색에서 특정 제품 카탈로그 범주를 숨길 수 있습니다. CIF 탐색 핵심 구성 요소는 탐색에서 범주를 표시하거나 숨기기 위해 상거래 백엔드 구성 &quot;메뉴에 포함&quot;을 준수합니다
+* 판매자는 Commerce 백엔드를 사용하여 탐색에서 특정 제품 카탈로그 범주를 숨길 수 있습니다. CIF 탐색 핵심 구성 요소는 상거래 백엔드 구성 &quot;메뉴에 포함&quot;을 준수하여 탐색에서 범주를 표시하거나 숨깁니다
 
 * 범주 또는 제품 페이지를 찾을 수 없는 경우 AEM Storefront Venia가 HTTP 404 오류를 반환합니다.
 

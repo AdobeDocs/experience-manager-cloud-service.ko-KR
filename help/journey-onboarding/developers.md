@@ -4,17 +4,17 @@ description: 시스템 관리자가 필요한 클라우드 리소스를 설정�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '1415'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1411'
+ht-degree: 95%
 
 ---
 
 
 # 개발자 및 배포 관리자 작업 {#developer-deployment-manager}
 
-[온보딩 여정](overview.md)의 이 선택적 부분에서는 개발자와 배포 관리자가 git에 액세스하여 애플리케이션을 개발하고 파이프라인을 사용하여 배포하는 방법을 배웁니다.
+의 이 선택적 부분에서 [온보딩 여정,](overview.md) 개발자와 배포 관리자가 git에 액세스하여 애플리케이션을 개발하고 파이프라인을 사용하여 배포하는 방법을 알아봅니다.
 
 ## 지금까지의 스토리 {#story-so-far}
 
@@ -64,7 +64,7 @@ Cloud Manager에서 셀프서비스 git 계정 관리를 사용하여 git 저장
 
    ![환경 카드의 저장소 정보 액세스 버튼](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-1. **저장소 정보 보기** 버튼을 클릭하여 다음 정보가 표시되는 대화 상자를 엽니다.
+1. 다음을 클릭합니다. **저장소 정보 보기** 볼 대화 상자를 여는 단추:
 
    * Cloud Manager git 저장소의 URL
    * git 사용자 이름
@@ -119,7 +119,7 @@ Cloud Manager에서 셀프서비스 git 계정 관리를 사용하여 git 저장
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
-1. **프로그램 개요** 페이지에서 **파이프라인** 카드로 이동한 다음 이전 섹션에서 만든 파이프라인 옆에 있는 줄임표 버튼을 클릭하고 메뉴에서 **실행**&#x200B;을 선택합니다.
+1. 다음 위치로 이동 **파이프라인** 다음에서 카드 **프로그램 개요** 이전 섹션에서 만든 파이프라인 옆에 있는 줄임표 버튼을 클릭하고 을 선택합니다. **실행** 메뉴에서 삭제할 수 있습니다.
 
 1. 파이프라인 실행이 시작되고 **상태** 열에 표시됩니다.
 

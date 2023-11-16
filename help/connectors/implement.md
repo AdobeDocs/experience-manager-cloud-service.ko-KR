@@ -1,11 +1,11 @@
 ---
 title: AEM 커넥터 구현
-description: AEM 커넥터를 빌드, 테스트 및 구현하는 방법에 대해 알아봅니다. 또한 일반적인 통합 패턴에 대해 알아봅니다.
+description: AEM 커넥터를 빌드하고, 테스트하고, 구현하는 방법을 알아봅니다. 또한 일반적인 통합 패턴에 대해서도 학습합니다.
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
-workflow-type: ht
-source-wordcount: '980'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '979'
+ht-degree: 98%
 
 ---
 

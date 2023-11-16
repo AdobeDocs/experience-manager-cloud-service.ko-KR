@@ -4,10 +4,10 @@ description: 사이트 테마를 손쉽게 맞춤화하고 관리하는 데 도�
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '596'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '595'
+ht-degree: 97%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 100%
 
 현재 테마 버전이 마지막 업데이트의 타임스탬프가 포함된 커밋 해시와 함께 표시됩니다.
 
-**버전 선택**&#x200B;을 탭하거나 클릭하여 이전 테마 버전을 조회합니다.
+탭 또는 클릭 **버전 선택** 를 클릭하여 이전 테마 버전을 볼 수 있습니다.
 
 ![테마 버전 선택](/help/sites-cloud/administering/assets/select-theme-versions.png)
 

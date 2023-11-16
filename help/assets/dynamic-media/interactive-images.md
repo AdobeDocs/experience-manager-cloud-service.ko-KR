@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
 source-wordcount: '4176'
 ht-degree: 2%
@@ -34,7 +34,7 @@ ht-degree: 2%
 
 
 
-이 자습서는 웹 사이트에 대화형 이미지를 통합하는 단계를 설명하는 데 도움이 됩니다.
+이 자습서는 웹 사이트에서 대화형 이미지를 통합하는 단계를 설명하는 데 도움이 됩니다.
 
 대화형 이미지 단계:
 
@@ -405,7 +405,7 @@ Experience Manager Assets에서 반환한 포함 코드에는 다음과 같이 �
              s7interactiveimageviewer.setHandlers({
                 "quickViewActivate": function(inData) {
                     var sku=inData.sku; //SKU for product ID
-                    //To pass other parameter from the hotspot, you will need to add custom parameter during the hotspot setup as parameterName=value
+                    //To pass other parameter from the hotspot, add custom parameter during the hotspot setup as parameterName=value
                     loadQuickView(sku); //Replace this call with your Quickview plugin
                     //See your Quickviewer plugin for the Quickview call
                  },

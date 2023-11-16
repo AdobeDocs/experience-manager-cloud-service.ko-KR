@@ -2,10 +2,10 @@
 title: 작성 기본 사항에 대해 알아보기
 description: 콘텐츠 조각을 사용하여 Headless CMS용 콘텐츠를 작성하는 개념 및 메커니즘에 대해 알아봅니다.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
-workflow-type: ht
-source-wordcount: '1729'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1727'
+ht-degree: 97%
 
 ---
 
@@ -135,7 +135,7 @@ You can view additional information about items using the Rail Selector. This al
 
 ![폴더 만들기 옵션](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-세부 정보를 입력할 수 있는 대화 상자를 연 다음 **만들기**&#x200B;로 확인합니다.
+세부 정보를 입력한 다음 을 확인할 수 있는 대화 상자가 열립니다 **만들기**:
 
 ![폴더 만들기 대화 상자](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
@@ -216,7 +216,7 @@ You can view additional information about items using the Rail Selector. This al
 
 예로 조각은
 
-* 특정 유형의 정보를 포함하여 정보의 여러 부분이 필요할 수 있습니다. Headless 콘텐츠의 경우, 여정 후반부에서 주요 참조에 대해 알아봅니다.
+* 특정 유형의 정보를 포함하여 정보의 여러 부분이 필요할 수 있습니다. Headless 콘텐츠의 경우 참조는 중요합니다(나중에 여정에서 알아보기).
 
 * 긴 텍스트 섹션을 작성할 수 있습니다. 추가 옵션으로 텍스트를 관리하고 서식을 지정할 수 있습니다. 전체 화면 편집기에서 개별 텍스트 필드를 열 수도 있습니다(오른쪽 작은 화면 모양의 아이콘 사용).
 
@@ -240,7 +240,7 @@ You can view additional information about items using the Rail Selector. This al
 
 * **콘텐츠 조각 모델**
 
-  편집기의 오른쪽 패널에 콘텐츠 조각 모델의 이름이 표시됩니다. 이는 모델 편집기로 이동하는 링크이기도 합니다.
+  편집기의 오른쪽 패널에서 콘텐츠 조각 모델의 이름을 볼 수 있습니다. 이는 모델 편집기로 이동하는 링크이기도 합니다.
 콘텐츠 조각 모델은 사용하는 구조를 정의하므로 실제로 콘텐츠 조각에 핵심적인 요소입니다. 하지만 조각을 만들고 편집하는 것은 (일반적으로) 다른 담당자인 콘텐츠 설계자가 해야 하는 일입니다.
 
   >[!NOTE]

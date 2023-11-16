@@ -2,9 +2,9 @@
 title: Eclipse용 AEM 개발자 도구
 description: Apache Sling용 Eclipse 플러그인을 기반으로 하는 Eclipse 플러그인인 AEM Developer Tools for Eclipse를 사용하는 방법에 대해 알아봅니다.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1192'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ AEM 개발자 도구를 사용하기 전에 다음을 수행해야 합니다.
 
 >[!NOTE]
 >
->macOS에서 을(를) 마우스 오른쪽 버튼으로 클릭해야 합니다. **Eclipse.app**&#x200B;을 선택한 다음 을 선택합니다 **패키지 내용 표시** 를 찾으려면 `eclipse.ini`**.**
+>macOS에서 마우스 오른쪽 단추를 클릭해야 합니다. **Eclipse.app**&#x200B;을 선택한 다음 을 선택합니다 **패키지 내용 표시** 를 찾으려면 `eclipse.ini`**.**
 
 ## Eclipse용 AEM 개발자 도구를 설치하는 방법 {#how-to-install-the-aem-developer-tools-for-eclipse}
 
@@ -51,7 +51,7 @@ AEM 개발자 도구를 사용하기 전에 다음을 수행해야 합니다.
 1. 클릭 **추가...**.
 1. 다음에서 **이름** 필드, 입력 `AEM Developer Tools`.
 1. 다음에서 **위치** 필드에서 설치 URL을 복사합니다.
-1. 클릭 **추가**.
+1. **추가**&#x200B;를 클릭합니다.
 1. 둘 다 확인 **AEM** 및 **슬링** plugins.
 1. **다음**&#x200B;을 클릭합니다.
 1. 다음에서 **설치 세부 정보** 창에서 다음을 클릭: **다음** 다시.
@@ -132,7 +132,7 @@ _Eclipse용 Experience Manager 개발 도구_ AEM 프로젝트 및 인스턴스�
 1. 의 콘텐츠 바꾸기 `PROJECT.ui.apps` 이 포함된 프로젝트 `apps` 및 `etc` 패키지의 폴더:
 
    1. 프로젝트 탐색기 패널에서 를 펼칩니다. `PROJECT.ui.apps` > `src` > `main` > `content` > `jcr_root` > `apps`.
-   1. 마우스 오른쪽 버튼으로 클릭 `apps` 폴더 및 선택 **표시 위치** > **시스템 탐색기**.
+   1. 마우스 오른쪽 단추 클릭 `apps` 폴더 및 선택 **표시 위치** > **시스템 탐색기**.
    1. 삭제 `apps` 및 `etc` 이제 보고 여기에 배치해야 하는 폴더 `apps` 및 `etc` 콘텐츠 패키지의 폴더입니다.
    1. Eclipse에서 `PROJECT.ui.apps` 프로젝트 및 선택 **새로 고침**.
 
@@ -190,11 +190,11 @@ _Eclipse용 Experience Manager 개발 도구_ AEM 프로젝트 및 인스턴스�
 1. 모든 변경 사항을 저장해야 합니다. 이제 해당 새 콘텐츠를 AEM 인스턴스와 동기화할 수 있습니다.
 
 1. 서버 패널에서 연결이 시작되었는지 확인하고 시작되지 않은 경우 시작합니다.
-1. 을(를) 클릭합니다 **정리 및 게시** 아이콘.
+1. 다음을 클릭합니다. **정리 및 게시** 아이콘.
 
 완료되면 인스턴스에서 패키지를 실행해야 하며 저장 시 모든 변경 사항이 인스턴스에 자동으로 동기화됩니다.
 
-프로젝트에서 패키지를 다시 빌드하려면 을(를) 마우스 오른쪽 단추로 클릭합니다. `PROJECT.ui.apps` 또는 `PROJECT.ui.content` 및 선택 **다음으로 실행** -> **Maven 설치**.
+프로젝트에서 패키지를 다시 빌드하려면 를 마우스 오른쪽 단추로 클릭합니다. `PROJECT.ui.apps` 또는 `PROJECT.ui.content` 및 선택 **다음으로 실행** -> **Maven 설치**.
 
 이제 내부에 패키지를 사용하여 타겟 폴더를 만들었습니다(예: `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
@@ -214,7 +214,7 @@ Eclipse는 필요한 종속성을 다운로드합니다. 잠시 기다려 주십
 
 ## 추가 정보 {#more-information}
 
-Eclipse용 공식 Apache Sling IDE 툴링 웹사이트는 유용한 정보를 제공합니다.
+Eclipse용 공식 Apache Sling IDE 툴링 웹사이트는 다음과 같은 유용한 정보를 제공합니다.
 
 * 다음 [**Eclipse용 Apache Sling IDE 도구** 사용 안내서](https://sling.apache.org/documentation/development/ide-tooling.html), 이 설명서는 AEM 개발 도구에서 지원하는 전체 개념, 서버 통합 및 배포 기능을 안내합니다.
 * 다음 [문제 해결 섹션](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).

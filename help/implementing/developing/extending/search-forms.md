@@ -2,9 +2,9 @@
 title: 검색 양식 구성
 description: Adobe Experience Manager as a Cloud Service에 대해 Forms 검색을 구성하는 중입니다.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2037'
+source-wordcount: '2035'
 ht-degree: 16%
 
 ---
@@ -220,7 +220,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
     </ul> </td>
   </tr>
   <tr>
-   <td>인사이트</td>
+   <td>Insights</td>
    <td>선택한 Insights 매개 변수에 따라 검색합니다.</td>
    <td>여러 술어로 구성된 복잡한 술어입니다.
     <ul>
@@ -519,7 +519,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
 
   속성 값(절대 문자열 또는 표현식 언어). 예: `cq:Page` 또는
 
-  `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
+  `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`
 
 * **범위 텍스트**
 

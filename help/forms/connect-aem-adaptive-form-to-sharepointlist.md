@@ -1,14 +1,14 @@
 ---
-title: AEM 적응형 양식을 Microsoft® SharePoint 목록에 연결하는 방법
-description: 적응형 양식을 Microsoft® SharePoint 목록에 연결합니다. Microsoft® SharePoint 목록을 구성하고 구성을 사용하여 양식 데이터 모델을 만드는 방법을 알아봅니다. 또한 FDM을 적응형 양식과 통합하는 방법에 대해 알아봅니다.
+title: AEM 적응형 양식을 Microsoft&reg; SharePoint 목록에 연결하는 방법
+description: 적응형 양식을 Microsoft&reg; SharePoint 목록에 연결합니다. Microsoft&reg; SharePoint 목록을 구성하고 구성을 사용하여 양식 데이터 모델을 만드는 방법을 알아봅니다. 또한 FDM을 적응형 양식과 통합하는 방법도 알아봅니다.
 role: User, Developer
 keywords: AEM 적응형 양식을 Microsoft SharePoint 목록에 연결, 적응형 양식을 Microsoft SharePoint 목록에 연결, AEM 적응형 양식을 Microsoft SharePoint 목록에 통합, 적응형 양식을 Microsoft 목록에 통합, 적응형 양식의 데이터를 SharePoint 목록에 제출, SharePoint 워크플로우를 AEM SharePoint 목록에 제출.
 hide: true
 hidefromToC: true
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 6%
+source-wordcount: '539'
+ht-degree: 7%
 
 ---
 
@@ -30,15 +30,15 @@ ht-degree: 6%
 
 Microsoft® SharePoint 목록에 적응형 양식을 연결하기 전에 다음 단계를 수행하십시오.
 
-1. [Microsoft® SharePoint 목록 구성](/help/forms/configure-data-sources.md#configure-microsoft-sharepoint-list)
-1. [Microsoft® SharePoint 목록 구성을 사용하여 양식 데이터 모델 만들기](/help/forms/create-form-data-models.md)
+1. [Microsoft 구성](/help/forms/configure-data-sources.md#configure-microsoft-sharepoint-list)
+1. [Microsoft을 사용하여 양식 데이터 모델 만들기](/help/forms/create-form-data-models.md)
 1. [데이터를 검색하고 전송하도록 양식 데이터 모델 구성](/help/forms/work-with-form-data-model.md#configure-services)
 1. [적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md)
 
 이제 다음과 같은 작업을 수행할 수 있습니다.
 
-* [Microsoft® SharePoint 목록을 적응형 양식에 연결](#connect-an-adaptive-form-to-microsoft-sharepoint-list-connect-af-sharepoint-list)
-* [Microsoft® SharePoint 목록을 AEM 워크플로에 연결](#connect-sharepoint-list-workflow)
+* [Microsoft 연결](#connect-an-adaptive-form-to-microsoft-sharepoint-list-connect-af-sharepoint-list)
+* [Microsoft 연결](#connect-sharepoint-list-workflow)
 
 ## Microsoft® SharePoint 목록에 적응형 양식 연결 {#connect-af-sharepoint-list}
 
@@ -73,7 +73,7 @@ Microsoft® SharePoint 목록을 AEM Workflow에 통합하려면
 
 ## 모범 사례 {#best-practices}
 
-<!-- * For storing data in a tabular format or implementing data permissions, it is advisable to use Microsoft® SharePoint List rather than Microsoft® SharePoint Document Library. -->
+<!-- * For storing data in a tabular format or implementing data permissions, it is advisable to use Microsoft&reg; SharePoint List rather than Microsoft&reg; SharePoint Document Library. -->
 * Microsoft® SharePoint 목록에서는 다음 열 유형이 지원되지 않습니다.
    * 이미지 열
    * 메타데이터 열

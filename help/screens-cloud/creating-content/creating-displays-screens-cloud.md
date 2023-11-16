@@ -2,9 +2,9 @@
 title: Screens에서 디스플레이 제작 및 관리 as a Cloud Service
 description: 이 페이지에서는 Screens as a Cloud Service으로 디스플레이를 만들고 관리하는 방법에 대해 설명합니다.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '659'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 3%
 Screens Services Provider에서 디스플레이를 만들려면 아래 단계를 따르십시오.
 
 1. AEM Cloud Service 인스턴스에서 Screens Services Provider로 이동합니다.
-1. 선택 **표시** 왼쪽 탐색 패널에서 을(를) 클릭하고 **만들기** 화면 오른쪽 상단에서
+1. 선택 **표시** 왼쪽 탐색 패널에서 를 클릭하고 **만들기** 화면 오른쪽 상단에서
 
    ![이미지](/help/screens-cloud/assets/display/disp-1.png)
 
@@ -47,7 +47,7 @@ Screens Services Provider에서 디스플레이를 만들려면 아래 단계를
 
 Screens Services Provider에서 디스플레이를 삭제할 수 있습니다.
 
-디스플레이를 선택하고 을(를) 클릭합니다. **삭제** 아래 그림과 같이 패널 하단에서
+디스플레이를 선택하고 **삭제** 아래 그림과 같이 패널 하단에서
 
 ![이미지](/help/screens-cloud/assets/display/disp-5.png)
 

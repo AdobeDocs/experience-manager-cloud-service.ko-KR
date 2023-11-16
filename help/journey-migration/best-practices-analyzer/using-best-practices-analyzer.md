@@ -1,10 +1,10 @@
 ---
 title: 모범 사례 분석기 사용
-description: 업그레이드 준비 상태를 파악하기 위해 모범 사례 분석기를 사용하는 방법을 알아봅니다.
+description: 모범 사례 분석기를 사용하여 업그레이드 준비 상태를 이해하는 방법에 대해 알아봅니다.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2484'
+source-wordcount: '2478'
 ht-degree: 46%
 
 ---
@@ -95,7 +95,7 @@ Best Practices Analyzer(BPA) 실행을 위한 중요한 고려 사항을 이해�
 
 관련 결과를 필터링하려면 [ACS 커먼즈](https://adobe-consulting-services.github.io/acs-aem-commons/)을(를) 클릭하고 아래 단계를 수행합니다.
 
-1. 페이지 왼쪽에 있는 왼쪽 레일 아이콘을 클릭합니다. 이 경우 **ACS Commons 필터**. 을(를) 클릭합니다 **ACS Commons 필터** 아래 이미지에 표시된 대로 대화형 확인란을 표시합니다.
+1. 페이지 왼쪽에 있는 왼쪽 레일 아이콘을 클릭합니다. 이 경우 **ACS Commons 필터**. 다음을 클릭합니다. **ACS Commons 필터** 아래 이미지에 표시된 대로 대화형 확인란을 표시합니다.
 
    ![이미지](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 

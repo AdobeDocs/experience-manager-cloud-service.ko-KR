@@ -4,10 +4,10 @@ description: Touch UI 및 Adobe Launch를 사용하여 Adobe Target을 AEM as a 
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 957758a8d3c16328e7638356e7ee6df3e561386d
-workflow-type: ht
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -107,7 +107,7 @@ AEM은 Experience Platform Launch와의 획기적인 통합 기능을 제공합�
 **확장 기능**&#x200B;은 핵심 라이브러리 설정을 관리하는 컨테이너입니다. Adobe Target 확장 기능은 최신 웹인 at.js를 위한 Target JavaScript SDK를 사용하여 클라이언트측 구현을 지원합니다. **Adobe Target** 및 **Adobe ContextHub** 확장 기능을 모두 추가합니다.
 
 1. 확장 기능 카탈로그 옵션을 선택한 다음 필터에서 Target을 검색합니다.
-2. **Adobe Target** at.js를 선택한 다음 설치 옵션을 클릭합니다.
+2. 선택 **Adobe Target** at.js를 클릭하고 설치 옵션을 클릭합니다.
    ![Target 검색](assets/search_ext1.png "Target 검색")
 3. **구성** 버튼을 선택합니다. 가져온 Target 계정 자격 증명이 포함된 구성 창 및 이 확장 기능에 대한 at.js 버전이 표시됩니다.
 4. **저장**&#x200B;을 선택하여 Launch 속성에 Target 확장 기능을 추가합니다. **설치된 확장 기능** 목록에 나열된 Target 확장 기능을 확인할 수 있습니다.

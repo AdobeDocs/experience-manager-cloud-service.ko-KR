@@ -2,10 +2,10 @@
 title: 페이지 생성 및 구성
 description: AEM으로 페이지를 만들고 관리하여 웹 사이트를 구성하는 방법에 대해 알아봅니다.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2451'
-ht-degree: 99%
+source-wordcount: '2449'
+ht-degree: 98%
 
 ---
 
@@ -225,7 +225,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
    >
    >해당 위치에 이미 존재하는 이름을 사용하여 페이지를 만들 경우, 번호가 추가되어 변형된 이름이 자동으로 생성됩니다. 예를 들어 `beach`가 이미 존재하는 경우, 새 페이지는 `beach1`이 됩니다.
 
-1. 콘솔로 돌아오면 새 페이지가 보입니다.
+1. 콘솔로 돌아오면 새 페이지를 볼 수 있습니다.
 
    ![결과 새 페이지](/help/sites-cloud/authoring/assets/organizing-create-page-result.png)
 
@@ -309,7 +309,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
    ![이동 버튼](/help/sites-cloud/authoring/assets/move.png)
 
-   이렇게 하면 페이지 이동 마법사가 열립니다.
+   페이지 이동 마법사가 열립니다.
 
 1. 마법사의 **이름 바꾸기** 단계에서 다음 중 하나를 수행할 수 있습니다.
 

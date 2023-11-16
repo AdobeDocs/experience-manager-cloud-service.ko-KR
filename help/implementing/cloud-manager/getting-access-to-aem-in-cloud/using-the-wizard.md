@@ -2,10 +2,10 @@
 title: 프로젝트 제작 마법사
 description: 프로덕션 프로그램을 만든 후 프로젝트를 빠르게 설정하는 데 도움이 되는 프로젝트 제작 마법사에 대해 알아봅니다.
 exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 100%
+source-wordcount: '311'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ Cloud Manger는 프로덕션 프로그램을 만든 후 [AEM Project Archetype](
 
    ![분기 및 프로젝트 만들기](assets/create-wizard2.png)
 
-1. 선택적으로 구분선을 클릭하여 프로젝트의 추가 매개변수를 표시합니다. 기본값은 AEM Project Archetype에서 제공하며 일반적으로 변경할 필요가 없습니다.
+1. 선택적으로 구분선을 클릭하여 프로젝트의 추가 매개 변수를 표시합니다. 기본값은 AEM Project Archetype에서 제공하며 일반적으로 변경할 필요가 없습니다.
 
    ![추가 프로젝트 매개변수](assets/create-wizard5.png)
 

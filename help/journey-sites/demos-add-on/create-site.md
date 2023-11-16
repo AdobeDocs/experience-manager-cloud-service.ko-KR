@@ -2,10 +2,10 @@
 title: 데모 사이트 만들기
 description: 사전 구성된 템플릿 라이브러리를 기반으로 AEM에서 데모 사이트를 제작합니다.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '841'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '838'
+ht-degree: 92%
 
 ---
 
@@ -39,7 +39,7 @@ AEM 참조 데모 추가 기능 여정의 이전 문서인 [프로그램 만들�
 
    ![AEM 작성 환경에 액세스](assets/access-author.png)
 
-1. AEM 메인 메뉴에서 **사이트**&#x200B;를 탭하거나 클릭합니다.
+1. AEM 메인 메뉴에서 을 탭하거나 클릭합니다 **사이트**.
 
    ![사이트에 액세스](assets/access-sites.png)
 
@@ -104,7 +104,7 @@ AEM 참조 데모 추가 기능 여정의 한 부분을 완료했으므로,
 이제 추가 콘텐츠를 사용하여 AEM의 기능을 테스트할 수 있습니다. 다음 두 가지 방법으로 여정을 계속할 수 있습니다.
 
 * AEM Screens 콘텐츠를 정상적으로 데모하고 테스트하려면 이전에 설명한 대로 **We.Cafe 사이트 템플릿**&#x200B;을 기반으로 사이트를 배포했는지 확인하고 [데모 사이트에 대해 AEM Screens 활성화](screens.md)를 계속하십시오.
-* 데모 사이트 콘텐츠만 사용하려는 경우 [데모 사이트 관리](manage.md)를 계속 진행하십시오. 여기에서는 데모 사이트 관리에 도움이 되는 도구 및 이를 제거하는 방법에 대해 알아보게 됩니다.
+* 데모 Sites 콘텐츠만 사용하려는 경우 [데모 사이트 관리,](manage.md) 데모 사이트를 관리하는 데 도움이 되는 도구 및 이를 제거하는 방법에 대해 알아봅니다.
 
 ## 추가 리소스 {#additional-resources}
 
