@@ -3,9 +3,9 @@ title: CI/CD 파이프라인
 description: Cloud Manager의 CI/CD 파이프라인과 이를 사용하여 코드를 효율적으로 배포하는 방법에 대해 알아봅니다.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
+source-git-commit: 8b8f10bfaad2d8d7d409384e01a2c65a588d77e0
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: '1423'
 ht-degree: 92%
 
 ---
@@ -53,7 +53,7 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 프로덕션 및 비프로덕션 외에도 배포하는 코드 유형에 따라 파이프라인을 구분할 수 있습니다.
 
 * **[전체 스택 파이프라인](#full-stack-pipeline)** - HTTPD/Dispatcher 구성과 함께 하나 이상의 AEM 서버 애플리케이션을 포함하는 백엔드 및 프론트엔드 코드 빌드를 동시에 배포합니다.
-* **[파이프라인 구성](#config-deployment-pipeline)** - AEM 환경, 유지 관리 작업, CDN 규칙 등에 대한 설정을 구성합니다.
+* **[파이프라인 구성](#config-deployment-pipeline)** - WAF 규칙을 포함한 트래픽 필터 규칙을 몇 분 내에 구성하고 배포할 수 있습니다.
 * **[프론트엔드 파이프라인](#front-end)** - 하나 이상의 클라이언트측 UI 애플리케이션을 포함하는 프론트엔드 코드 빌드를 배포합니다.
 * **[웹 계층 구성 파이프라인](#web-tier-config-pipelines)** - HTTPD/Dispatcher 구성을 배포합니다.
 
@@ -113,7 +113,7 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 
 ## 파이프라인 구성 {#config-deployment-pipeline}
 
-구성 파이프라인을 사용하여 유지 관리 작업, CDN 규칙 등을 위해 AEM 환경에 구성 설정을 배포할 수 있습니다.
+구성 파이프라인을 사용하여 몇 분 내에 WAF 규칙을 포함한 트래픽 필터 규칙을 구성하고 배포할 수 있습니다.
 
 문서를 참조하십시오. [WAF 규칙을 포함한 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 저장소 구성을 관리하여 올바로 배포하는 방법에 대해 알아봅니다.
 
@@ -129,10 +129,6 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 프론트엔드 코드는 정적 파일로 제공되는 모든 코드입니다. AEM에서 제공하는 UI 코드와 별개이며 사이트 테마, 고객 정의 SPA, SPA 및 기타 솔루션을 포함할 수 있습니다.
 
 프론트엔드 파이프라인은 백엔드 개발과 비동기식 프론트엔드 코드 배포를 가속화하여 팀이 설계 및 개발 프로세스를 간소화할 수 있습니다. 이 전용 파이프라인은 JavaScript 및 CSS를 AEM 배포 계층에 테마로 배포하므로 AEM에서 제공하는 페이지에서 참조할 수 있는 새 테마 버전이 생성됩니다.
-
->[!IMPORTANT]
->
->프론트엔드 파이프라인을 사용하려면 AEM Sites가 활성화되고 AEM 버전이 `2021.10.5933.20211012T154732Z ` 이상이어야 합니다.
 
 >[!NOTE]
 >

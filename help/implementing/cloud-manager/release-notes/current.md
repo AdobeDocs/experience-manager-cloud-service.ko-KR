@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.11.0 �
 description: AEM as a Cloud Service의 Cloud Manager 2023.11.0 릴리스 정보입니다.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 3a9eaa162d62cd3e674f14ba39ed7c96ad271f79
+source-git-commit: 4e2ea040ec14515525424b42f524601d34786cb8
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 51%
@@ -26,7 +26,7 @@ AEM as a Cloud Service의 Cloud Manager 2023.11.0 릴리스 일자는 2023년 11
 ## 새로운 기능 {#what-is-new}
 
 * AEM 이제 WAF-DDOS(Web Application Firewall-DDOS protection)를 as a Cloud Service 권한 및 [셀프서비스 방식으로 구성할 수 있습니다.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-* 특화 [파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 이제 몇 분 내에 환경 설정, 유지 관리 작업, CDN 규칙 등을 구성할 수 있습니다.
+* 특화 [파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 이제 몇 분 내에 WAF 규칙을 포함한 트래픽 필터 규칙을 구성하고 배포할 수 있습니다.
 * [콘텐츠 복사 시](/help/implementing/developing/tools/content-copy.md) 이제 더 높은 환경에서 개발 환경으로 개발 환경은 용량이 제한되어 있으므로 대용량 콘텐츠 세트를 복사할 때에는 주의해야 한다는 메시지가 표시됩니다.
 * [파이프라인 실행 세부 정보 페이지](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) 이제 아직 시작하지 않은 단계가 회색으로 표시된 파이프라인 실행의 모든 단계를 표시합니다.
 * 둘 다에서 **[활동](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** 및 **[파이프라인](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** 페이지 에서는 이제 실행 중인 상태의 파이프라인을 클릭하면 파이프라인 실행 요약을 사용할 수 있습니다.
