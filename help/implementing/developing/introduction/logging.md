@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service에 대한 로깅
 description: AEM용 로깅을 as a Cloud Service으로 사용하여 중앙 로깅 서비스의 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 12bdd43b870e30984e2812baea956e06ca7c879c
+source-git-commit: 9d1aab8f615f9e6aa9751fe978a56c915c9a8797
 workflow-type: tm+mt
-source-wordcount: '2683'
-ht-degree: 10%
+source-wordcount: '2757'
+ht-degree: 9%
 
 ---
 
@@ -556,6 +556,16 @@ CDN 로그는 json 형식을 준수한다는 점에서 다른 로그와 구별�
 ### 클라우드 환경 {#cloud-environments}
 
 클라우드 서비스용 AEM as a Cloud Service 로그는 Cloud Manager 인터페이스를 통해 다운로드하거나 Adobe I/O 명령줄 인터페이스를 사용하여 명령줄에서 로그를 테일링하여 액세스할 수 있습니다. 자세한 내용은 [Cloud Manager 로깅 설명서](/help/implementing/cloud-manager/manage-logs.md).
+
+### 추가 게시 영역에 대한 로그 {#logs-for-additional-publish-regions}
+
+특정 환경에 대해 추가 게시 영역이 활성화된 경우 위에서 언급한 대로 Cloud Manager에서 각 영역에 대한 로그를 다운로드할 수 있습니다.
+
+추가 게시 영역에 대한 AEM 로그 및 Dispatcher 로그는 환경 ID 다음의 처음 3자로 영역을 지정합니다. **nld2** 아래 샘플에서는 네덜란드에 있는 추가 AEM 게시 인스턴스를 참조하며,
+
+```
+cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"
+```
 
 ### 로컬 SDK {#local-sdk}
 

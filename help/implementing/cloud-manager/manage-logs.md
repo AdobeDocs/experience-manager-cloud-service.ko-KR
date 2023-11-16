@@ -2,10 +2,10 @@
 title: 로그 액세스 및 관리
 description: AEM as a Cloud Service에서 개발 프로세스를 지원하기 위해 로그에 액세스하고 관리하는 방법을 알아봅니다.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: c4bd0390fc67b3d8e985c0cd2b1f436ae13420ee
+source-git-commit: 7272f6ebd1b9c4e67985cba0221d8cafbeb1560a
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 87%
+source-wordcount: '345'
+ht-degree: 79%
 
 ---
 
@@ -18,7 +18,7 @@ AEM as a Cloud Service에서 개발 프로세스를 지원하기 위해 로그�
 
 ## 로그 다운로드 {#download-logs}
 
-로그를 다운로드하려면 다음 작업을 수행하십시오.
+로그를 다운로드하려면 다음 작업을 수행하십시오:
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
@@ -32,11 +32,17 @@ AEM as a Cloud Service에서 개발 프로세스를 지원하기 위해 로그�
 
    ![로그 다운로드 대화 상자](assets/download-preview.png)
 
+   만일의 경우 [추가 게시 영역](/help/operations/additional-publish-regions.md) 은 환경에 대해 활성화되어 있으며 아래와 같이 각 지역을 선택하고 로그를 별도로 다운로드할 수 있습니다.
+
+   ![추가 게시 영역에 대한 로그 다운로드](assets/download-publish-region-logs.png)
+
 1. 서비스를 선택한 후 검색하려는 로그 옆에 있는 다운로드 아이콘을 클릭합니다.
 
 **환경** 페이지에서 로그에 액세스할 수도 있습니다.
 
 ![환경의 로그 화면](assets/download-logs.png)
+
+
 
 ## API를 통한 로그 {#logs-through-api}
 
