@@ -4,9 +4,9 @@ description: 적응형 Forms을 AEM Sites 페이지 또는 AEM 외부에서 호�
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3165'
+source-wordcount: '3164'
 ht-degree: 6%
 
 ---
@@ -36,7 +36,7 @@ AEM Forms 제공 **[!UICONTROL 적응형 양식 컨테이너]** 및 **[!UICONTRO
 Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor lets you create seamless data capture experiences within a Sites page using the power of Adaptive Forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. It also lets you use various features of AEM Sites pages like, versioning, targeting, translation, and multi-site manager, enhancing the overall form creation and management experience. Let's explore some of these features:
 
 * **Versioning:** AEM Sites pages offer [robust versioning capabilities](/help/sites-cloud/authoring/features/page-versions.md), allowing you to track and manage different versions of your forms. This enables you to make changes and enhancements to forms while maintaining the ability to roll back to previous versions if needed. Versioning ensures a controlled and organized approach to form development and evolution.
-* **Targeting (Integration with Adobe Target):** With AEM Sites pages targeting capabilities, you can also [personalize the form experience for different audiences](/help/sites-cloud/integrating/integration-adobe-target-ims.md). By leveraging user segments and targeting criteria, you can tailor the form's content, design, or behavior to specific groups of users. This enables you to provide a personalized and relevant form experience, increasing engagement and conversion rates.
+* **Targeting (Integration with Adobe Target):** With AEM Sites pages targeting capabilities, you can also [personalize the form experience for different audiences](/help/sites-cloud/integrating/integration-adobe-target-ims.md). By using user segments and targeting criteria, you can tailor the form's content, design, or behavior to specific groups of users. This enables you to provide a personalized and relevant form experience, increasing engagement and conversion rates.
 * **Translation:** AEM Sites [seamless integration with translation services](/help/sites-cloud/administering/translation/overview.md), allowing you to translate forms into multiple languages easily. This feature simplifies the localization process, ensuring that your forms are accessible to a global audience. You can manage translations efficiently within AEM translation projects, reducing time and effort required for multilingual form support. See considerations section for more information on translation.  
 * **Multi-site Management and Live Copy:** AEM Sites provide robust [Multi-site Management and Live Copy capabilities](/help/sites-cloud/administering/msm/overview.md), enabling you to create and manage multiple websites within a single environment. This feature now lets you reuse forms across different sites, ensuring consistency and reducing duplication efforts. With centralized control and management, you can efficiently maintain and update forms across multiple websites.
 * **Themes:** AEM Sites pages provide a framework for designing and maintaining consistent visual styles across multiple web pages. These define colors, fonts, style sheets, and other visual elements that contribute to the overall look and feel of the website. [You can use the themes designed for an AEM Sites page for an Adaptive Form, saving time and effort](/help/sites-cloud/administering/site-creation/site-themes.md#using-site-themes-using-themes). 
@@ -271,7 +271,7 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
      >
      > AEM Sites 페이지에 여러 양식을 임베드하려면 **[!UICONTROL 폼은 프레임의 전체 너비를 포함합니다.]** 확인란.
 
-   * 다음과 같은 경우 **[!UICONTROL 폼은 프레임의 전체 너비를 포함합니다.]** 확인란이 선택되어 있지 않으면 적응형 양식이 컨테이너의 전체 너비를 포함하지 않습니다. 대신 iframe을 사용하여 양식을 렌더링하고 특정 너비를 초과하여 확장할 수 없습니다. 이 방법은 적응형 양식에 명확한 경계가 있고 컨테이너 내에서 그 옆에 있는 다른 AEM 구성 요소와 공존해야 하는 경우 유용합니다. 이 옵션을 선택하지 않으면 AEM Sites 페이지의 적응형 Forms 하나만 iframe 없이 포함할 수 있습니다.
+   * 다음과 같은 경우 **[!UICONTROL 폼은 프레임의 전체 너비를 포함합니다.]** 확인란이 선택되어 있지 않으면 적응형 양식이 컨테이너의 전체 너비를 포함하지 않습니다. 대신 iframe을 사용하여 양식을 렌더링하고 특정 너비를 초과하여 확장할 수 없습니다. 이 방법은 적응형 양식에 명확한 경계가 있고 컨테이너 내에서 그 옆에 있는 다른 AEM 구성 요소와 공존해야 하는 경우에 유용합니다. 이 옵션을 선택하지 않으면 AEM Sites 페이지의 적응형 Forms 하나만 iframe 없이 포함할 수 있습니다.
 
      >[!NOTE]
      >

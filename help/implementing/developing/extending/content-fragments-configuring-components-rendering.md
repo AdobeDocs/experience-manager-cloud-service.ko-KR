@@ -2,9 +2,9 @@
 title: 렌더링용 구성 요소를 구성하는 콘텐츠 조각
 description: 렌더링용 구성 요소를 구성하는 콘텐츠 조각
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '521'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 6%
 * 고유한 콘텐츠 조각 기반 구성 요소 를 구현해야 합니다.
 * 또한 고급 서비스를 사용해야 합니다.
 
-핵심 구성 요소를 사용하는 것이 좋습니다.
+Adobe은 핵심 구성 요소 사용을 권장합니다.
 
 >[!CAUTION]
 >

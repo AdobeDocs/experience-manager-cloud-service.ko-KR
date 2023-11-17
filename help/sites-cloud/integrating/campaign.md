@@ -4,10 +4,10 @@ description: Adobe Campaign과의 통합을 지원하는 AEM as a Cloud Service�
 feature: Administering
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '175'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Campaign과의 통합을 지원하는 AEM as a Cloud Service의 지원에 
 
 ## Adobe Campaign Classic과 통합 {#acc}
 
-여러 Adobe Campaign Classic(ACC) 버전이 있습니다. AEM as a Cloud Service와의 통합 지원은 구현한 ACC 버전에 따라 다릅니다.
+몇 가지 ACC(Adobe Campaign Classic) 버전이 있습니다. AEM as a Cloud Service와의 통합 지원은 구현한 ACC 버전에 따라 다릅니다.
 
 | ACC 버전 | AEMaaCS와 통합 |
 |---|---|

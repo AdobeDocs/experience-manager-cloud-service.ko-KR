@@ -2,10 +2,10 @@
 title: 대상자 관리
 description: 대상자 콘솔을 사용하여 Adobe Target 계정에 대한 대상자를 만들고, 구성하고 관리하거나 ContextHub용 세그먼트를 관리할 수 있습니다.
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '962'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '932'
+ht-degree: 89%
 
 ---
 
@@ -33,8 +33,8 @@ ContextHub에서 *세그먼트*&#x200B;라고 하는 대상자는 특정 기준�
 
 대상자 콘솔에서 ContextHub 세그먼트를 만들려면 다음 작업을 수행하십시오.
 
-1. 탐색 콘솔에서 **개인화**&#x200B;를 클릭하거나 탭합니다. **대상자**&#x200B;를 클릭하거나 탭합니다.
-1. **ContextHub 세그먼트 만들기**&#x200B;를 탭하거나 클릭합니다.
+1. 탐색 콘솔에서 을 선택합니다. **개인화**. 선택 **대상**.
+1. 선택 **ContextHub 세그먼트 만들기**.
 
    ![세그먼트 작성](/help/sites-cloud/authoring/assets/audiences-create-segment.png)
 
@@ -60,20 +60,20 @@ ContextHub로 세그먼트를 만드는 방법에 대한 자세히 알려면 Con
 
 Adobe Target 대상자를 만들려면 다음 작업을 수행하십시오.
 
-1. 탐색 콘솔에서 **개인화**&#x200B;를 클릭하거나 탭합니다. **대상자**&#x200B;를 클릭하거나 탭합니다.
+1. 탐색 콘솔에서 을 선택합니다. **개인화**. 선택 **대상**.
 
    ![대상자로 이동](/help/sites-cloud/authoring/assets/audiences-navigation.png)
 
-1. 대상자 콘솔에서 **만들기**&#x200B;와 **타깃 대상자 만들기**&#x200B;를 차례로 탭하거나 클릭합니다.
+1. 대상자 콘솔에서 을 선택합니다. **만들기** 그런 다음 **타겟 대상 만들기**.
 
    ![타깃 대상자 만들기](/help/sites-cloud/authoring/assets/audiences-create-target.png)
 
-1. **Adobe Target 구성** 대화 상자에서 타겟 구성을 선택하고 **확인**&#x200B;을 탭하거나 클릭합니다.
-1. 규칙#1 영역에서 속성 유형을 탭하거나 클릭하고 사용 가능한 필드에 특성 정보를 입력합니다. 끝나면 속성의 오른쪽에 있는 확인 표시를 선택하여 저장합니다. 모든 속성에 대해 알려면 [속성 및 속성 옵션](#attributes-and-their-options)을 참조하십시오.
+1. 다음에서 **Adobe Target 구성** 대화 상자에서 타겟 구성을 선택하고 을 선택합니다. **확인**.
+1. Rule#1 영역에서 속성 유형을 선택하고 사용 가능한 필드에 속성 정보를 입력합니다. 끝나면 속성의 오른쪽에 있는 확인 표시를 선택하여 저장합니다. 모든 속성에 대해 알려면 [속성 및 속성 옵션](#attributes-and-their-options)을 참조하십시오.
 1. 다른 규칙을 추가하려면 **규칙 추가**&#x200B;를 클릭합니다. 필요한 만큼 규칙을 입력합니다. 규칙은 부울 연산자 AND와 결합되며 대상자가 활동에 적합하려면 각 규칙의 모든 요구 사항을 충족해야 합니다.
-1. **다음**&#x200B;을 탭하거나 클릭합니다.
-1. 대상자에 사용할 이름을 입력하고 **저장**&#x200B;을 탭하거나 클릭합니다.
-1. **저장**&#x200B;을 탭하거나 클릭합니다. 대상자가 대상자 목록에 표시됩니다.
+1. **다음**&#x200B;을 선택합니다.
+1. 대상자의 이름을 입력하고 선택 **저장**.
+1. **저장**&#x200B;을 선택합니다. 대상자가 대상자 목록에 표시됩니다.
 
 ### 속성 및 해당 옵션 {#attributes-and-their-options}
 
@@ -97,6 +97,6 @@ Adobe Target 대상자를 만들려면 다음 작업을 수행하십시오.
 
 대상자 콘솔에서 원하는 ContextHub 대상자를 편집할 수 있습니다. Adobe Target 대상자를 편집할 수도 있지만, AEM에서 생성된 Adobe Target 대상자만 편집할 수 있습니다.
 
-1. 탐색 콘솔에서 **개인화**&#x200B;를 클릭하거나 탭합니다. **대상자**&#x200B;를 클릭하거나 탭합니다.
-1. 편집하려는 ContextHub 세그먼트 옆에 있는 아이콘을 탭하거나 클릭한 다음 **편집**&#x200B;을 탭하거나 클릭합니다.
+1. 탐색 콘솔에서 을 선택합니다. **개인화**. 선택 **대상**.
+1. 편집할 ContextHub 세그먼트 옆에 있는 아이콘을 선택한 다음 를 선택합니다 **편집**.
 1. 세그먼트 편집기에서 편집을 수행합니다. 자세한 내용은 ContextHub 설명서를 참조하십시오. <!--See the [ContextHub](/help/sites-administering/contexthub-config.md) documentation for more information.-->

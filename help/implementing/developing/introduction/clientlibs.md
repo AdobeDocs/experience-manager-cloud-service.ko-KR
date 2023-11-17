@@ -2,9 +2,9 @@
 title: AEM에서 클라이언트측 라이브러리 as a Cloud Service 사용
 description: AEM은 클라이언트측 코드(clientlib)를 저장소에 저장하고, 카테고리로 구성하고, 각 코드 카테고리가 클라이언트에 제공되는 시기와 방법을 정의할 수 있는 클라이언트측 라이브러리 폴더를 제공합니다
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2552'
+source-wordcount: '2551'
 ht-degree: 1%
 
 ---
@@ -170,7 +170,7 @@ AEM은 클라이언트 라이브러리 폴더를 디버깅하고 테스트하기
 
 ## 추가 클라이언트 라이브러리 폴더 기능 {#additional-features}
 
-AEM의 클라이언트 라이브러리 폴더에서 지원하는 다양한 기능이 있습니다. 그러나 AEMas a Cloud Service 에서는 이러한 기능이 필요하지 않으며, 이러한 기능은 사용하지 않습니다. 완성도를 위해 여기에 나열됩니다.
+AEM의 클라이언트 라이브러리 폴더에서 지원하는 몇 가지 다른 기능이 있습니다. 그러나 AEMas a Cloud Service 에서는 이러한 기능이 필요하지 않으며, 이러한 기능은 사용하지 않습니다. 완성도를 위해 여기에 나열됩니다.
 
 >[!WARNING]
 >

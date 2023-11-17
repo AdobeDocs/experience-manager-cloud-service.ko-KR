@@ -2,10 +2,10 @@
 title: Universal Editor를 사용하는 로컬 AEM 개발
 description: Universal Editor가 개발 목적으로 로컬 AEM 인스턴스 편집을 지원하는 방법에 대해 알아봅니다.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 3b98543098f4125a7d7e5896e5aa46e441a40f32
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 100%
+source-wordcount: '580'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ HTTPS로 보호되는 외부 프레임 내에서 비보안 HTTP 프레임을 로
 
 이를 위해 HTTPS에서 실행하려면 AEM을 설정해야 합니다. 개발 목적으로 자체 서명된 인증서를 사용할 수 있습니다.
 
-제공되는 자체 서명된 인증서를 포함하여 HTTPS에서 실행 중인 AEM을 설정하는 방법에 대한 자세한 내용은 이 문서를 참조하십시오.
+사용할 수 있는 자체 서명된 인증서를 포함하여 HTTPS에서 실행되는 AEM을 설정하는 방법에 대한 자세한 내용은 이 문서 를 참조하십시오.
 
 ## Universal Editor Service 설치 {#install-ue-service}
 
@@ -30,7 +30,7 @@ Universal Editor Service는 Universal Editor와 백엔드 시스템을 바인딩
 
 [NodeJS 버전 16](https://nodejs.org/en/download/releases)은 Universal Editor Service의 로컬 사본을 실행하는 데 필요합니다.
 
-Universal Editor Service는 AEM Engineering에서 직접 배포합니다. 로컬 사본을 얻으려면 VIP 프로그램 엔지니어링 담당자에게 문의하십시오.
+Universal Editor Service는 AEM Engineering에서 직접 배포합니다. 로컬 사본은 VIP 프로그램의 엔지니어에게 문의하십시오.
 
 엔지니어링 담당자는 `universal-editor-service.cjs` 파일을 제공합니다. 이를 로컬 개발 환경으로 저장합니다.
 

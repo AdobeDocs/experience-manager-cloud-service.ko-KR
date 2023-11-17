@@ -2,10 +2,10 @@
 title: 참조 데모 추가 기능 설치 이해
 description: Cloud Manager 및 이를 사용하여 추가 기능을 설치하는 방법에 대해 알아봅니다.
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
 source-wordcount: '956'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -55,7 +55,7 @@ Cloud Manager를 사용하여 필요한 환경 및 도구 등 AEM 프로젝트�
 
 >[!TIP]
 >
->Cloud Manager에 대해 자세히 알아보려면 이 문서의 [추가 리소스](#additional-resources) 섹션을 참조하십시오.
+>Cloud Manager에 대해 자세히 알아보려면 다음을 참조하십시오. [추가 리소스](#additional-resources) 이 문서의 섹션에서 자세한 내용을 확인할 수 있습니다.
 
 ### 프로그램 {#programs}
 

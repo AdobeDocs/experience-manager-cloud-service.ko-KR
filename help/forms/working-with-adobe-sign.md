@@ -6,7 +6,7 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 867b87e0b22fdc4f0466b517e8a04c18fb2dc860
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '3172'
 ht-degree: 3%
@@ -168,13 +168,13 @@ Sign이 활성화된 적응형 양식을 만들려면 다음 작업을 수행하
 
    다음과 같은 경우 **[!UICONTROL Adobe Sign Cloud Service]** 목록이 비어 있습니다. [구성 [!DNL Adobe Sign] 포함 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) 서비스를 구성하는 데 필요한 문서입니다.
 
-   드롭다운에 있는 Cloud Service 목록이 `global` 도구 > 의 폴더 **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. 또한 드롭다운에는 에서 선택한 폴더에 있는 Cloud Service 목록도 있습니다. **[!UICONTROL 구성 컨테이너]** 적응형 양식을 만들 때 필드.
+   드롭다운에는에 있는 Cloud Service이 나열됩니다 `global` 도구 > 의 폴더 **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. 또한 드롭다운 목록에는에서 선택한 폴더에 있는 Cloud Service이 나열됩니다. **[!UICONTROL 구성 컨테이너]** 적응형 양식을 만들 때 필드.
 
 1. 에서 서명 순서 선택 **[!UICONTROL 수신자가 완료할 수 있음]** 대화 상자. 수신자는 적응형 양식에 서명할 수 있습니다 **[!UICONTROL 순차적으로]** - 차례로 받는 사람 또는 **[!UICONTROL 동시에]** - 모든 순서.
 
    한 번에 한 명의 수신자가 Adobe Sign 계약을 순차적으로 받습니다. 수신자가 지정된 작업을 완료하면 계약이 다음 수신자에게 전송됩니다.
 
-   모든 수신자는 동시 순서로 Adobe Sign 계약을 받고 서로 병렬적으로 조치를 취할 수 있습니다.
+   동시 순서로 모든 수신자들이 Adobe Sign 협약을 받고 서로 병렬적으로 행동할 수 있다.
 
 1. 계약 ID 필드를 사용하여 bindref를 계약 ID(agreementId)에 연결합니다. 스키마 기반 양식에 대한 제출 데이터의 afBoundData 섹션에 계약 ID를 추가합니다. 계약 ID는 모든 Adobe Sign 지원 양식에 대해 제출된 데이터의 afSubmissionInfo 섹션에도 추가됩니다. 사용자 지정 코드를 사용하여 계약 상태를 추적하는 데 계약 ID를 사용할 수 있습니다(사용자 지정 구현 필요).
 
@@ -286,7 +286,7 @@ Adobe Sign 계약 ID(agreementId)는 적응형 양식의 제출 데이터에 포
 <!-- Remove when forms portal goes live
 >[!NOTE]
 >
->Data of the Adaptive Form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
+>Data of the Adaptive Form is stored temporarily on Forms Portal. Adobe recommends using [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
 -->
 
 양식 서명 경험이 준비되었습니다. 양식을 미리 보고 서명 환경을 확인할 수 있습니다. 게시된 양식에서 [!DNL Adobe Sign] 수신자가 전자 메일을 통해 서명할 양식을 받을 때 블록 필드가 표시됩니다. 다음의 경우 **[!UICONTROL 수신자 및 인원이 언제 양식 작성됩니까?]** 옵션이 예 로 표시되어 있고 조건이 충족되면 이메일에 계약이 나타나기를 기다리는 대신 제출 후 사용자가 Adobe Sign 계약으로 리디렉션되고 사용자가 문서에 즉시 서명할 수 있습니다.

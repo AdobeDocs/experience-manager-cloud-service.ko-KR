@@ -4,9 +4,9 @@ description: Dynamic Media을 사용하여 웹, 모바일 및 소셜 사이트�
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '397'
 ht-degree: 19%
 
 ---
@@ -81,7 +81,7 @@ Dynamic Media 활성화 에셋에는 다음이 포함됩니다. `pyramid.tiffs`.
 
 ### 자산 보기 변경 {#asset-views-change}
 
-Dynamic Media이 활성화되면 `+` 및 `-` 단추. 클릭/탭하여 특정 영역을 확대할 수도 있습니다. 되돌리기 를 사용하면 원래 버전으로 이동할 수 있으며 대각선 화살표를 클릭하여 이미지를 전체 화면으로 만들 수 있습니다. Dynamic Media 활성화는 다음과 같이 표시됩니다.
+Dynamic Media이 활성화되면 `+` 및 `-` 단추. 특정 영역을 확대/축소하도록 선택할 수도 있습니다. 되돌리기 를 사용하면 원래 버전으로 이동할 수 있으며 대각선 화살표를 클릭하여 이미지를 전체 화면으로 만들 수 있습니다. Dynamic Media 활성화는 다음과 같이 표시됩니다.
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 

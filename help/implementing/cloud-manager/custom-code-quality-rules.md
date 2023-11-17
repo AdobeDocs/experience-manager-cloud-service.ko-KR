@@ -2,9 +2,9 @@
 title: 사용자 정의 코드 품질 규칙
 description: 이 페이지에서는 코드 품질 테스트의 일부로 Cloud Manager에서 실행되는 사용자 정의 코드 품질 규칙에 대해 설명합니다. 이 규칙은 Adobe Experience Manager Engineering의 모범 사례를 기반으로 합니다.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: a62312954db0631cf594a27db36bab8a2441360f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4097'
+source-wordcount: '4095'
 ht-degree: 87%
 
 ---
@@ -542,7 +542,7 @@ AEM 애플리케이션은 종종 HTTP 프로토콜을 사용하여 다른 애플
 
 이 규칙은 이러한 HttpClient 개체가 메서드 내에서 private이 아니라 클래스 수준에서 전역적이므로 재사용할 수 있는지 확인합니다. 이 경우 httpClient 필드는 클래스 또는 의 생성자에 설정해야 합니다. `activate()` 메서드(이 클래스가 OSGi 구성 요소/서비스인 경우).
 
-다음 항목도 확인하십시오. [최적화 안내서](https://hc.apache.org/httpclient-legacy/performance.html) HttpClient를 사용하는 것과 관련된 몇 가지 모범 사례를 보려면 HttpClient를 참조하십시오.
+다음 확인: [최적화 안내서](https://hc.apache.org/httpclient-legacy/performance.html) HttpClient를 사용하는 것과 관련된 몇 가지 모범 사례를 보려면 HttpClient를 참조하십시오.
 
 #### 비준수 코드 {#non-compliant-code-14}
 

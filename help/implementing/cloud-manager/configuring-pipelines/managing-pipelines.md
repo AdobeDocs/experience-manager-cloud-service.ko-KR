@@ -3,10 +3,10 @@ title: 파이프라인 관리
 description: 편집, 실행 및 삭제를 포함하여 기존 파이프라인을 관리하는 방법을 알아봅니다.
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 71%
+source-wordcount: '938'
+ht-degree: 69%
 
 ---
 
@@ -41,7 +41,7 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
-1. 다음에서 **프로그램 개요** 페이지, 탭 또는 클릭 **파이프라인** 탭을으로 전환합니다. **파이프라인** 창.
+1. 다음에서 **프로그램 개요** 페이지에서 **파이프라인** 탭을으로 전환합니다. **파이프라인** 창.
 
 1. 여기서는 **파이프라인 카드**&#x200B;에서와 같이 프로그램의 모든 파이프라인 목록을 볼 수 있을 뿐만 아니라 파이프라인 실행을 시작 및 정지할 수도 있습니다.
 
@@ -57,7 +57,7 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
-1. 다음에서 **프로그램 개요** 페이지, 탭 또는 클릭 **활동** 탭을으로 전환합니다. **활동** 창.
+1. 다음에서 **프로그램 개요** 페이지에서 **활동** 탭을으로 전환합니다. **활동** 창.
 
 1. 여기에서는 현재 실행과 이전 실행을 포함하여 프로그램에 대한 모든 파이프라인 실행 목록을 볼 수 있습니다.
 
@@ -87,7 +87,7 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 
 1. **프로덕션 파이프라인 편집** 또는 **비프로덕션 파이프라인 편집** 대화 상자가 표시되어 파이프라인을 생성할 때 입력한 것과 동일한 세부 정보를 편집할 수 있습니다.
 
-   * 파이프라인에 사용할 수 있는 모든 필드 및 구성 옵션에 대한 자세한 내용은 다음 페이지를 참조하십시오.
+   * 파이프라인에 사용할 수 있는 필드 및 구성 옵션에 대한 자세한 내용은 다음 페이지를 참조하십시오.
       * [프로덕션 파이프라인 구성](configuring-production-pipelines.md)
       * [비프로덕션 파이프라인 구성](configuring-non-production-pipelines.md)
 
@@ -127,7 +127,7 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 
 ![단계 요약](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-step.png)
 
-**기간** 섹션을 표시하려면 **세부 정보 보기** 링크를 탭하거나 클릭합니다. 여기에는 해당 프로그램의 과거 트렌드를 기반으로 한 파이프라인의 평균 기간이 포함됩니다.
+다음 항목 선택 **세부 정보 보기** 표시할 링크 **기간** 섹션. 여기에는 해당 프로그램의 과거 트렌드를 기반으로 한 파이프라인의 평균 기간이 포함됩니다.
 
 ![기간](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
 
@@ -141,20 +141,20 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
-1. 프로그램 개요 페이지에서 취소하려는 파이프라인의 줄임표 버튼을 클릭합니다. **파이프라인** 카드.
+1. 프로그램 개요 페이지에서 취소할 파이프라인의 줄임표 버튼을 클릭합니다. **파이프라인** 카드.
 
    ![파이프라인 취소](/help/implementing/cloud-manager/assets/cancel-pipeline.png)
 
-1. 탭 또는 클릭 **취소**.
+1. 선택 **취소**.
 
 또는 파이프라인 세부 정보 페이지에서 파이프라인을 취소할 수 있습니다.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
-1. 다음 위치로 이동 **파이프라인** 의 탭 **프로그램 개요** 페이지를 연 다음 취소하려는 파이프라인을 탭하거나 클릭합니다.
+1. 다음 위치로 이동 **파이프라인** 의 탭 **프로그램 개요** 페이지를 만들고 취소할 파이프라인을 선택합니다.
 
 1. 실행 중인 파이프라인의 세부 정보 페이지로 이동합니다.
 
    ![파이프라인 세부 정보 취소](/help/implementing/cloud-manager/assets/cancel-pipeline-details.png)
 
-1. 탭 또는 클릭 **취소**.
+1. 선택 **취소**.

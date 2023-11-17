@@ -2,7 +2,7 @@
 title: DocuSign을 적응형 양식과 통합하는 방법
 description: 적응형 양식과 함께 DocuSign을 사용하여 전자 서명을 수집하는 방법에 대해 알아봅니다.
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1559'
 ht-degree: 10%

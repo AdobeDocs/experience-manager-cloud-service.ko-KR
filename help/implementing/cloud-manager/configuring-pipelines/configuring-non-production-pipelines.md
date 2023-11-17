@@ -3,9 +3,9 @@ title: 비프로덕션 파이프라인 구성
 description: 프로덕션 환경에 배포하기 전에 비프로덕션 파이프라인을 구성하여 코드 품질을 테스트하는 방법을 알아봅니다.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1285'
 ht-degree: 80%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 80%
    * **[전체 스택 코드](#full-stack-code)**
    * **[타깃팅된 배포](#targeted-deployment)**
 
-문서를 참조하십시오. [CI/CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 파이프라인 유형에 대한 자세한 정보입니다.
+다음을 참조하십시오 [CI/CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 파이프라인 유형에 대한 자세한 정보입니다.
 
 비프로덕션 파이프라인 생성을 완료하는 단계는 선택한 소스 코드 유형에 따라 다릅니다. 파이프라인 구성을 완료할 수 있도록 위의 링크를 따라 이 문서의 다음 섹션으로 이동합니다.
 

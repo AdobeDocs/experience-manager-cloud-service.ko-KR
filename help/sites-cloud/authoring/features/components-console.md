@@ -2,9 +2,9 @@
 title: 구성 요소 콘솔
 description: 구성 요소 콘솔에서 인스턴스에 대해 정의된 모든 구성 요소를 탐색할 수 있습니다.
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '271'
 ht-degree: 95%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 95%
 
 ### 구성 요소 세부 정보 {#component-details}
 
-특정 구성 요소에 대한 세부 정보를 보려면 필요한 리소스를 탭/클릭합니다. 세 탭에서 다음 정보를 제공합니다.
+특정 구성 요소에 대한 세부 정보를 보려면 필요한 리소스를 선택합니다. 세 탭에서 다음 정보를 제공합니다.
 
 * **속성**
 

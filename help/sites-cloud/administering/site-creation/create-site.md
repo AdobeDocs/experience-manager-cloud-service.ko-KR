@@ -4,10 +4,10 @@ description: AEM을 통해 사이트 템플릿을 사용하여 사이트를 만�
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 93%
+source-wordcount: '756'
+ht-degree: 77%
 
 ---
 
@@ -55,19 +55,19 @@ AEM 빠른 사이트 생성 도구를 사용하면 개발자가 아닌 사용자
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. 화면 오른쪽 상단의 **만들기**&#x200B;를 탭하거나 클릭한 다음 드롭다운 메뉴에서 **템플릿으로 사이트 생성**&#x200B;을 선택합니다.
+1. 선택 **만들기** 화면 오른쪽 상단의 드롭다운 메뉴에서 을(를) 선택합니다. **템플릿의 사이트**.
 
    ![템플릿으로 사이트 생성](../assets/create-site-from-template.png)
 
-1. 사이트 생성 마법사에서 왼쪽 패널 또는 의 기존 템플릿을 탭하거나 클릭합니다 **가져오기** 왼쪽 열의 맨 위에서 새 템플릿을 가져옵니다.
+1. 사이트 생성 마법사의 왼쪽 패널 또는 **가져오기** 왼쪽 열의 맨 위에서 새 템플릿을 가져옵니다.
 
    ![사이트 생성 마법사](../assets/site-creation-wizard.png)
 
-   1. 가져오고자 하는 경우 파일 브라우저에서 사용할 템플릿을 찾은 다음 **업로드**&#x200B;를 탭하거나 클릭합니다.
+   1. 가져오기를 선택한 경우 파일 브라우저에서 사용할 템플릿을 찾아 선택합니다 **업로드**.
 
    1. 업로드되면 사용할 수 있는 템플릿 목록에 표시됩니다.
 
-1. 템플릿을 선택하면 오른쪽 열에 템플릿에 대한 정보가 표시됩니다. 원하는 템플릿을 선택하고 **다음**&#x200B;을 탭하거나 클릭합니다.
+1. 템플릿을 선택하면 오른쪽 열에 템플릿에 대한 정보가 표시됩니다. 원하는 템플릿을 선택하고 **다음**.
 
    ![템플릿 선택](../assets/select-site-template.png)
 
@@ -77,11 +77,11 @@ AEM 빠른 사이트 생성 도구를 사용하면 개발자가 아닌 사용자
    * 사이트 이름은 URL의 일부가 됩니다.
    * 사이트 이름은 [AEM의 페이지 이름 지정 규칙](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices)을 준수해야 합니다.
 
-1. **만들기**&#x200B;를 탭하거나 클릭하면 사이트 템플릿으로부터 사이트가 생성됩니다.
+1. 선택 **만들기** 그리고 사이트는 사이트 템플릿에서 만들어집니다.
 
    ![새 사이트 세부 정보](../assets/create-site-details.png)
 
-1. 표시되는 확인 대화 상자에서 **완료**&#x200B;를 탭하거나 클릭합니다.
+1. 표시되는 확인 대화 상자에서 **완료**.
 
    ![완료 대화 상자](../assets/success.png)
 
@@ -93,10 +93,10 @@ AEM 빠른 사이트 생성 도구를 사용하면 개발자가 아닌 사용자
 
 ## 사이트 맞춤화 {#site-customization}
 
-사이트에 사용할 수 있는 템플릿 이상의 맞춤화가 필요한 경우 몇 가지 옵션을 사용할 수 있습니다.
+사이트에서 사용할 수 있는 템플릿 이상의 맞춤화가 필요한 경우 몇 가지 옵션이 있습니다.
 
-* 사이트 템플릿 또는 최초 콘텐츠를 조정해야 하는 경우 [요구 사항을 충족하도록 사이트 템플릿을 맞춤화할 수 있습니다](site-templates.md).
-* 사이트 스타일을 조정해야 하는 경우 [사이트 테마를 다운로드하여 맞춤화할 수 있습니다](/help/journey-sites/quick-site/overview.md).
-* 사이트 기능을 조정해야 하는 경우 [사이트를 완전히 맞춤화할 수 있습니다](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+* 사이트 구조 또는 초기 콘텐츠를 조정해야 하는 경우 [요구 사항을 충족하도록 사이트 템플릿을 맞춤화할 수 있습니다](site-templates.md).
+* 사이트 스타일을 조정해야 하는 경우, [사이트 테마를 다운로드하고 맞춤화할 수 있습니다](/help/journey-sites/quick-site/overview.md).
+* 사이트 기능을 조정해야 하는 경우 [사이트를 완전히 맞춤화할 수 있습니다.](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 모든 맞춤화는 개발 팀의 지원을 통해 수행해야 합니다.

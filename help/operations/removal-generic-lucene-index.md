@@ -2,9 +2,9 @@
 title: 일반 Lucene 인덱스 제거
 description: 일반 Lucene 색인의 제거 계획과 영향을 받는 방법에 대해 알아봅니다.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1335'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 
 ## 일반 Lucene 인덱스에 대한 잠재적 종속성 {#potential-dependencies}
 
-애플리케이션 및 AEM 설치가 작성자 및 게시 인스턴스 모두에서 일반 Lucene 인덱스에 종속될 수 있는 영역이 많습니다.
+애플리케이션 및 AEM 설치가 작성자 및 게시 인스턴스 모두에서 일반 Lucene 인덱스에 종속될 수 있는 몇 가지 영역이 있습니다.
 
 ### 게시 인스턴스 {#publish-instance}
 
@@ -121,7 +121,7 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 
 ### 작성자 인스턴스 {#author-instance}
 
-고객 애플리케이션 서블릿, OSGi 구성 요소 및 렌더링 스크립트의 쿼리 외에도 일반 Lucene 색인의 작성자별 사용이 여러 개 있을 수 있습니다.
+고객 애플리케이션 서블릿, OSGi 구성 요소 및 렌더링 스크립트의 쿼리 외에도 몇 가지 작성자별 일반 Lucene 인덱스 사용이 있을 수 있습니다.
 
 #### 참조 검색 {#reference-search}
 
@@ -141,15 +141,15 @@ AEM에는 Sling 리소스 유형으로 사용자 지정 대화 상자 구성 요
 
 일반 Lucene 인덱스를 제거하기 전에 `pathfield` 기본 선택기를 사용하여 구성 요소에 대해 검색 상자를 숨기고 을 제공하지 않도록 구성 요소가 업데이트됩니다. `nodeTypes` 속성.
 
-| 검색이 있는 경로 필드 선택기 | 검색 없이 경로 필드 선택 |
+| 검색이 있는 경로 필드 선택기 | 검색이 없는 경로 필드 선택기 |
 |---|---|
-| ![검색이 있는 경로 필드 선택기](assets/index-pathfield-picker-with-search.png) | ![검색 없이 경로 필드 선택](assets/index-pathfield-picker-without-search.png) |
+| ![검색이 있는 경로 필드 선택기](assets/index-pathfield-picker-with-search.png) | ![검색이 없는 경로 필드 선택기](assets/index-pathfield-picker-without-search.png) |
 
 >[!IMPORTANT]
 >
 >**고객 조치 필요**
 >
->고객이 경로 필드 선택기 내에서 검색 기능을 유지하고자 하는 경우 `nodeTypes` 쿼리할 노드 유형을 나열하는 속성을 제공해야 합니다. 에서 쉼표로 구분된 노드 유형 목록으로 지정할 수 있습니다. `String` 속성. 검색이 필요하지 않은 경우 고객의 조치가 필요하지 않습니다.
+>고객이 경로 필드 선택기 내에서 검색 기능을 유지하려는 경우 `nodeTypes` 쿼리할 노드 유형을 나열하는 속성을 제공해야 합니다. 에서 쉼표로 구분된 노드 유형 목록으로 지정할 수 있습니다. `String` 속성. 검색이 필요하지 않은 경우 고객의 조치가 필요하지 않습니다.
 
 >[!NOTE]
 >

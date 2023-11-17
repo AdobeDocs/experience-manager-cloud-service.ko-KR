@@ -3,10 +3,10 @@ title: CI/CD 파이프라인
 description: Cloud Manager의 CI/CD 파이프라인과 이를 사용하여 코드를 효율적으로 배포하는 방법에 대해 알아봅니다.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 8b8f10bfaad2d8d7d409384e01a2c65a588d77e0
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1423'
-ht-degree: 92%
+source-wordcount: '1418'
+ht-degree: 90%
 
 ---
 
@@ -61,7 +61,7 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 
 ### Cloud Manager의 CI-CD 파이프라인 이해 {#understand-pipelines}
 
-다음 표에는 Cloud Manager에서 사용할 수 있는 모든 파이프라인과 그 사용법이 요약되어 있습니다.
+다음 표에는 Cloud Manager에서 사용할 수 있는 파이프라인과 그 사용법이 요약되어 있습니다.
 
 | 파이프라인 유형 | 배포 또는 코드 품질 | 소스 코드 | 용도 | 메모 |
 |--- |--- |--- |---|---|
@@ -115,7 +115,7 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 
 구성 파이프라인을 사용하여 몇 분 내에 WAF 규칙을 포함한 트래픽 필터 규칙을 구성하고 배포할 수 있습니다.
 
-문서를 참조하십시오. [WAF 규칙을 포함한 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 저장소 구성을 관리하여 올바로 배포하는 방법에 대해 알아봅니다.
+다음을 참조하십시오 [WAF 규칙을 포함한 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 저장소 구성을 관리하여 올바로 배포하는 방법에 대해 알아봅니다.
 
 ### 구성 파이프라인 구성 {#configure-config-deployment}
 

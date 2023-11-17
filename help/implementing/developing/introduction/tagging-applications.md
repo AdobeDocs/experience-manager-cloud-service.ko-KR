@@ -2,9 +2,9 @@
 title: AEM 애플리케이션에 태그 지정 빌드
 description: 프로그래밍 방식으로 사용자 지정 AEM 애플리케이션 내에서 태그를 사용하거나 태그를 확장하십시오
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '758'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
 
 ### Tag 개체 검색 {#retrieving-a-tag-object}
 
-A `Tag` 를 통해 검색할 수 있습니다. `TagManager`기존 태그를 해결하거나 새 태그를 만들어 다음을 수행합니다.
+A `Tag` 를 통해 검색할 수 있습니다. `TagManager`기존 태그를 해결하거나 태그를 만들어 다음을 수행합니다.
 
 ```java
 Tag tag = tagManager.resolve("my/tag"); // for existing tags

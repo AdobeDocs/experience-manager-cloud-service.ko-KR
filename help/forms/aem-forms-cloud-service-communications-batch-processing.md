@@ -2,7 +2,7 @@
 title: 간편한 벌크 PDF 생성 - 일괄 처리 기술을 기본으로 제공 - 수백만 개의 PDF 문서 생성에 대한 자체 도움말 안내서!
 description: 브랜드 지향적이고 개인화된 커뮤니케이션을 만드는 방법
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1735'
 ht-degree: 2%

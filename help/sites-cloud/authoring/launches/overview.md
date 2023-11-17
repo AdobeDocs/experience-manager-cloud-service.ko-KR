@@ -2,10 +2,10 @@
 title: 론치
 description: 론치를 사용하여 향후 릴리스용 콘텐츠를 효율적으로 개발할 수 있습니다. 현재 페이지를 유지 관리하면서 나중에 게시할 수 있도록 변경할 수도 있습니다.
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 98%
+source-wordcount: '899'
+ht-degree: 95%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 98%
 
 론치는
 
-* 다중 루트 분기용으로 만들 수도 있습니다. 전체 사이트용으로 론치를 만들 수는 있지만(그리고 거기에서 변경을 수행할 수는 있지만) 전체 사이트를 복사해야 하므로 터무니없는 일입니다. 수백 또는 수천 개의 페이지가 관련되어 있는 경우, 시스템 요구 사항과 성능이 복사 작업과 홍보에 필요한 향후의 비교 작업 모두에 영향을 받습니다.
+* 다중 루트 분기용으로 만들 수도 있습니다. 전체 사이트에 대한 론치를 만들고 여기서 변경 작업을 수행할 수 있지만 전체 사이트를 복사해야 하므로 이 작업은 비현실적일 수 있습니다. 수백 또는 수천 개의 페이지가 관련되어 있는 경우, 시스템 요구 사항과 성능이 복사 작업과 홍보에 필요한 향후의 비교 작업 모두에 영향을 받습니다.
 * 기존 론치에서 론치를 만들 수 있도록 중첩(론치 내 론치)할 수 있으므로, 작성자는 각 론치에 대해 동일한 변경을 여러 번 수행하지 않고 이미 수행된 변경 사항을 이용할 수 있습니다.
 
 이 섹션에서는 Sites 콘솔 또는 [론치 콘솔](#the-launches-console) 내에서 론치 페이지를 만들고, 편집하고, 홍보하고, 필요한 경우 [삭제](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)하는 방법에 대해 설명합니다.
@@ -96,7 +96,7 @@ ht-degree: 98%
 
    ![Sites 콘솔의 론치 참조](/help/sites-cloud/authoring/assets/launches-references.png)
 
-1. 적절한 론치를 탭/클릭하면 가능한 작업 목록이 표시됩니다.
+1. 적절한 론치를 선택하면 가능한 작업 목록이 표시됩니다.
 
    ![Sites 콘솔의 론치에 대해 수행하는 작업](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 

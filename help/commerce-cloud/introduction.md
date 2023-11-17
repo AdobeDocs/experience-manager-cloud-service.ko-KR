@@ -3,10 +3,10 @@ title: 소개 및 개요
 description: 콘텐츠와 커머스 소개 및 개요. Experience Manager 전자 상거래 통합 프레임워크(CIF)는 Adobe의 권장 패턴으로 Experience Cloud를 사용하여 Adobe Commerce의 상거래 서비스와 기타 서드파티 상거래 솔루션을 통합하여 확장할 수 있습니다.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '891'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '890'
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Adobe Experience Manager 콘텐츠 및 상거래를 통해 브랜드 확장과 �
 해당 프로젝트가 복잡한 상거래 솔루션 통합을 처리해야 하기 때문입니다. 상거래 솔루션은 Adobe Commerce Cloud와 같은 상업용 솔루션부터 일련의 사용자 정의 상거래 서비스에 이르기까지 다양할 수 있습니다. 통합은 사용 사례와 생태계에 따라 크게 달라집니다. 일반적으로 여러 위치를 다루며 느낌이 매우 다양합니다.
 
 * 복잡하고 동적인 생태계 통합 (예: 제품 카탈로그)
-* 기업은 효율적인 옴니채널 방식으로 자체 라이프사이클로 제품 콘텐츠 관리해야 함
+* 비즈니스는 효율적이고 옴니채널 방식으로 자체 수명 주기를 통해 제품 컨텐츠를 관리해야 합니다.
 * 헤드를 다양화하기 위해 복잡하고 개인화된 쇼핑 여정 구축
 * 백엔드와 프론트엔드에서 빠르게 적응하고 혁신할 수 있는 기능
 * 성능 극대화(플래시 세일, 블랙 프라이데이 등)를 위해 빌드된 확장 가능하고 안정적인 E2E 인프라 실행. 여기에는 통합 검색 및 캐시 관리가 포함됩니다.

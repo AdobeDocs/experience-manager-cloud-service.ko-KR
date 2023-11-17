@@ -2,10 +2,10 @@
 title: UI 테스트
 description: 사용자 정의 UI 테스트는 사용자 정의 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있는 선택적 기능입니다.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2385'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 99%
 
 AEM은 사용자 정의 애플리케이션에 대한 원활한 업데이트를 보장하기 위해 통합된 [Cloud Manager 품질 게이트](/help/implementing/cloud-manager/custom-code-quality-rules.md) 제품군을 제공합니다 특히 IT 테스트 게이트는 이미 AEM API를 사용한 사용자 정의 테스트의 만들기 및 자동화를 지원합니다.
 
-UI 테스트는 언어 및 프레임워크(예: Cypress, Selenium, Java 및 Maven, JavaScript)에서 다양한 선택을 허용하도록 Docker 이미지에 패키징되어 있습니다. 또한 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 사용하여 UI 테스트 프로젝트를 쉽게 생성할 수 있습니다.
+UI 테스트는 언어 및 프레임워크(예: Cypress, Selenium, Java 및 Maven, JavaScript)에서 다양한 선택을 허용하도록 Docker 이미지에 패키징되어 있습니다. 또한 를 사용하여 UI 테스트 프로젝트를 쉽게 생성할 수 있습니다 [AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 
 Adobe는 실시간 리로딩 및 자동 대기 기능을 제공하여 테스트 중 시간을 절약하고 생산성을 향상시키는 데 도움이 되는 Cypress의 사용을 권장합니다. 또한 Cypress는 간단하고 직관적인 구문을 제공하므로 테스트를 처음 접하는 사용자도 쉽게 배우고 사용할 수 있습니다.
 

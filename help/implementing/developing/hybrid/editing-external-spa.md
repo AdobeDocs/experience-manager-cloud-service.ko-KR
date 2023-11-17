@@ -2,7 +2,7 @@
 title: AEM에서 외부 SPA 편집
 description: 이 문서에서는 독립 실행형 SPA을 AEM 인스턴스에 업로드하고, 편집 가능한 콘텐츠 섹션을 추가하고, 저작을 활성화하는 권장 단계에 대해 설명합니다.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2418'
 ht-degree: 2%
@@ -25,7 +25,7 @@ ht-degree: 2%
 * 다음을 사용하여 기본 AEM SPA 프로젝트 만들기 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties).
    * Forms은 외부 SPA을 포함하도록 업데이트되는 AEM 프로젝트의 기초입니다.
    * 이 문서의 샘플에 대해 Adobe은 시작점을 [WKND SPA 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor).
-* 즉시 통합하고자 하는 작동 중인 외부 React SPA이 있습니다.
+* 즉시 통합할 작업 중인 외부 React SPA이 있습니다.
 
 ## AEM 프로젝트에 SPA 업로드 {#upload-spa-to-aem-project}
 

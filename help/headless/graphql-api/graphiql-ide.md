@@ -3,10 +3,10 @@ title: AEM에서 GraphiQL IDE 사용
 description: Adobe Experience Manager에서 GraphiQL IDE를 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 99%
+source-wordcount: '1137'
+ht-degree: 98%
 
 ---
 
@@ -82,7 +82,7 @@ GraphiQL 로고 바로 아래 왼쪽 중간 패널에 있는 편집기에 새 �
 
 두 경우 모두 편집기 패널에 표시되는 쿼리는 다음 두 가지 작업을 수행하는 경우에 실행되는 쿼리입니다.
 
-* **쿼리 실행** 아이콘 클릭/탭
+* 다음에서 선택 **쿼리 실행** 아이콘
 * 키보드 조합 `Control-Enter` 사용
 
 ## 쿼리 변수 {#query-variables}
@@ -99,7 +99,7 @@ GraphiQL IDE를 사용하여 [쿼리 변수](/help/headless/graphql-api/content-
 
 >[!NOTE]
 >
->자세한 내용은 [지속 쿼리 캐싱](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)을 참조하십시오.
+>다음을 참조하십시오 [지속 쿼리 캐싱](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
 
 >[!NOTE]
 >

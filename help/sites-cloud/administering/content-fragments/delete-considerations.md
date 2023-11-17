@@ -3,13 +3,13 @@ title: 콘텐츠 조각 - 삭제 고려 사항
 description: AEM에서 콘텐츠 조각 삭제 정책을 정의하기 전에 이러한 중요한 고려 사항을 검토하십시오. 콘텐츠 조각은 Headless 콘텐츠를 제공하기 위한 강력한 도구이며 콘텐츠 조각 삭제가 가져오는 영향을 신중하게 고려해야 합니다.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
-workflow-type: ht
-source-wordcount: '452'
-ht-degree: 100%
+exl-id: d1726bff-3aa8-4758-bee7-0cacea1f660a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 92%
 
 ---
-
 
 # 콘텐츠 조각에 대한 고려 사항 삭제 {#delete-considerations-content-fragments}
 
@@ -23,14 +23,14 @@ AEM에서 콘텐츠 조각에 대한 삭제 정책을 정의하기 전에 이러
 
 1. **단일 엔티티로서의 콘텐츠 조각.**
 
-   * **사용 사례**: 콘텐츠 조각을 편집/업데이트하며 **전체 조각을 삭제**&#x200B;해야 하는 사용자.
+   * **사용 사례**: 콘텐츠 조각을 편집/업데이트해야 하는 사용자 - **전체 조각 삭제**.
    * **권한**: 삭제 권한은 사용자 및/또는 그룹 관리를 통해 할당할 수 있습니다.
 
 2. **변형이나 하위 노드와 같이 콘텐츠 조각을 구성하는 여러 하위 엔티티.**
 
    콘텐츠 조각 편집기의 기본 작업을 수행하려면 이러한 임시 하위 요소를 삭제할 수 있어야 합니다. 예를 들어 변형을 조작할 때 또는 메타데이터를 편집하거나 관련 콘텐츠를 관리할 때도 마찬가지입니다.
 
-   * **사용 사례**: 콘텐츠 조각을 편집/업데이트해야 하지만, **전체 조각 삭제는 허용되지 않는** 사용자.
+   * **사용 사례**: 콘텐츠 조각을 편집/업데이트해야 하는 사용자 - **전체 조각 삭제가 허용되지 않음**.
    * **권한**: [편집기 기능에만 필요한 권한](#permissions-required-for-editor-functionality-only)을 참조하십시오.
 
 >[!NOTE]
@@ -76,4 +76,3 @@ AEM에서 콘텐츠 조각에 대한 삭제 정책을 정의하기 전에 이러
 * 모든 콘텐츠 조각의 `jcr:content` 아래에 있는 모든 노드의 경우:
 
    * `jcr:addChildNodes`, `jcr:modifyProperties` 및 `jcr:removeChildNodes`, `jcr:removeNode`
-

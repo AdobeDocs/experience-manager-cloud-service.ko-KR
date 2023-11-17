@@ -6,7 +6,7 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '3869'
 ht-degree: 16%
@@ -33,7 +33,7 @@ ht-degree: 16%
 
 에서 페이지 편집 시 [!UICONTROL 페이지 편집기] 작성자는 타겟 대상으로 다른 에셋의 에셋을 원활하게 검색, 탐색 및 포함할 수 있습니다 [!DNL Assets] 자산 소스 역할을 하는 배포. 관리자는 의 배포를 한 번만 통합합니다 [!DNL Experience Manager] 포함 [!DNL Sites] 의 다른 배포를 통한 기능 [!DNL Experience Manager] 포함 [!DNL Assets] 기능. 연결된 에셋을 통해 사이트의 웹 페이지에서 Dynamic Media 이미지를 사용하고 스마트 자르기 및 이미지 사전 설정과 같은 Dynamic Media 기능을 사용할 수도 있습니다.
 
-의 경우 [!DNL Sites] 작성자는 원격 자산을 읽기 전용 로컬 자산으로 사용할 수 있습니다. 이 기능은 사이트 편집기에서 원격 자산을 원활하게 검색하고 액세스할 수 있도록 지원합니다. Sites에서 전체 에셋 코퍼스를 사용할 수 있어야 하는 기타 사용 사례의 경우 연결된 에셋을 활용하는 대신 에셋을 일괄적으로 마이그레이션하는 것이 좋습니다.
+의 경우 [!DNL Sites] 작성자는 원격 자산을 읽기 전용 로컬 자산으로 사용할 수 있습니다. 이 기능은 사이트 편집기에서 원격 자산을 원활하게 검색하고 액세스할 수 있도록 지원합니다. Sites에서 전체 에셋 코퍼스를 사용할 수 있어야 하는 기타 사용 사례의 경우 연결된 에셋을 사용하는 대신 에셋을 일괄적으로 마이그레이션하는 것이 좋습니다.
 
 ### 사전 요구 사항 및 지원되는 배포 {#prerequisites}
 

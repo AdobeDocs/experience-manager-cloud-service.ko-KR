@@ -2,10 +2,10 @@
 title: AEM Commerce 콘텐츠 작성자 여정
 description: AEM Commerce 작성을 통한 가이드 여정을 시작해 보십시오.
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 95%
+source-wordcount: '453'
+ht-degree: 81%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 95%
 
 ## AEM 설명서 여정 {#documentation-journeys}
 
-[설명서 여정](/help/journey-documentation/documentation-journeys.md)은 AEM을 처음 접할 수 있는 독자가 최소한의 사전 주제 또는 AEM 지식을 전제로 비즈니스 문제를 처음부터 끝까지 이해하고 해결하는 데 도움이 되는 묘사를 제공하여 다양하고 복잡한 주제와 기능을 결합합니다.
+[설명서 여정](/help/journey-documentation/documentation-journeys.md) AEM을 처음 접할 수 있는 독자가 최소한의 사전 주제 또는 AEM 지식을 전제로 비즈니스 문제를 처음부터 끝까지 이해하고 해결하는 데 도움이 되는 묘사를 제공하여 다양하고 복잡한 주제와 기능을 결합합니다.
 
 설명서 여정은 Adobe의 최신 연구, Adobe 컨설턴트의 입증된 구현 경험 및 고객 프로젝트의 피드백을 통해 제공되는 모범 사례 원칙을 중심으로 설계되었습니다.
 
@@ -35,7 +35,7 @@ Adobe가 AEM을 통해 AEM 관련 사이트 비즈니스 사례를 해결하는 
 
 이 여정은 AEM Commerce 콘텐츠 작성자를 위해 설계되었습니다. 이 여정은 카탈로그 페이지, 템플릿 및 전체 제품 경험을 시작하고 관리하기 위한 요구 사항, 단계 및 접근 방식을 제시합니다.
 
-이 여정에서 제공하는 정보는 다른 담당자에게 유용하지만 일부 정보는 특정 역할에 불필요합니다. 추가 역할을 다루는 다가오는 여정은 추후에 업데이트될 예정입니다.
+이 여정의 정보는 다른 담당자에게 유용할 수 있지만 일부 정보는 특정 역할에게 불필요합니다. 추가 역할을 다루는 다가오는 여정은 추후에 업데이트될 예정입니다.
 
 ## 여정 {#the-journey}
 

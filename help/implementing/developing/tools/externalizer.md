@@ -2,9 +2,9 @@
 title: URL 표면화
 description: 외부화는 프로그래밍 방식으로 리소스 경로를 외부 및 절대 URL로 변환할 수 있는 OSGi 서비스입니다.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '651'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,7 @@ AEM as a Cloud Service 인스턴스는 외부에 표시되는 URL을 알 수 없
 
    * **`scheme`** 는 일반적으로 http 또는 https이지만 다른 프로토콜일 수 있습니다.
 
-      * https 링크를 적용하려면 https를 사용하는 것이 좋습니다.
+      * Adobe은 https를 사용하여 https 링크를 적용할 것을 권장합니다.
       * URL의 외부화를 요청할 때 클라이언트 코드가 스키마를 재정의하지 않는 경우에 사용됩니다.
 
    * **`server`** 는 호스트 이름(도메인 이름 또는 ip 주소)입니다.

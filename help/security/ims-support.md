@@ -2,8 +2,8 @@
 title: Adobe Experience Manager as a Cloud Service에 대한 IMS 지원
 description: Adobe Experience Manager as a Cloud Service에 대한 이미지 관리 시스템 지원
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 361881807e8704dfcb27075365cb73a7f659c82d
-workflow-type: ht
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
 source-wordcount: '1978'
 ht-degree: 100%
 
@@ -158,7 +158,7 @@ AEM은 관리 사용자에 대한 로컬 로그인을 계속 지원할 수 있�
 
 ![로컬 로그인](/help/security/assets/ims9.png)
 
-<!-- the above image needs to be updated for skyline -->
+<!-- the above image must be updated for skyline -->
 
 **IMS 기반 로그인**
 

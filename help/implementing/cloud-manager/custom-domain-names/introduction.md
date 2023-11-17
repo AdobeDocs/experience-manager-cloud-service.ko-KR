@@ -2,10 +2,10 @@
 title: 사용자 정의 도메인 이름 소개
 description: Cloud Manager의 UI를 사용하면 사용자 정의 도메인을 추가하여 셀프서비스 방식을 사용하여 사이트를 고유한 브랜드 이름으로 식별할 수 있습니다.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 100%
+source-wordcount: '753'
+ht-degree: 96%
 
 ---
 
@@ -46,7 +46,7 @@ AEM as a Cloud Service는 내장된 콘텐츠 게재 네트워크(CDN) 서비스
 
 ## 워크플로 {#workflow}
 
-사용자 정의 도메인 이름을 추가하려면 DNS 서비스와 Cloud Manager 간의 상호 작용이 필요합니다. 이 때문에 사용자 정의 도메인 이름을 설치, 구성 및 확인하는 데 여러 단계가 필요합니다. 다음 표는 일반적인 오류가 발생할 때 수행할 작업을 포함하여 필요한 단계를 간략히 설명합니다.
+사용자 정의 도메인 이름을 추가하려면 DNS 서비스와 Cloud Manager 간의 상호 작용이 필요합니다. 따라서 사용자 정의 도메인 이름을 설치, 구성 및 확인하는 데 여러 단계가 필요합니다. 다음 표는 일반적인 오류가 발생할 때 수행할 작업을 포함하여 필요한 단계를 간략히 설명합니다.
 
 | 단계 | 설명 | 책임 | 자세히 알아보기 |
 |--- |--- |--- |---|
@@ -66,7 +66,7 @@ AEM as a Cloud Service는 내장된 콘텐츠 게재 네트워크(CDN) 서비스
 
 ## 제한 사항 {#limitations}
 
-AEMaaCS에서 사용자 정의 도메인 이름을 사용하는 데에는 여러 가지 제한 사항이 있습니다.
+AEMaaCS에서 사용자 정의 도메인 이름을 사용하는 데에는 몇 가지 제한 사항이 있습니다.
 
 * 사용자 정의 도메인 이름은 Cloud Manager에서 Sites 프로그램을 위한 게시 및 미리보기 서비스 모두에 대해 지원됩니다. 작성자 서비스를 위한 사용자 정의 도메인은 지원되지 않습니다.
 * 각 Cloud Manager 환경은 환경당 최대 500개의 사용자 정의 도메인을 호스팅할 수 있습니다.

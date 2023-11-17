@@ -4,10 +4,10 @@ description: AEM 대상 선택기를 사용하여 사용할 수 있는 자산을
 contentOwner: Adobe
 role: Admin,User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 96a82439c51c22125c206b4e912e85e0bf603498
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 86%
+source-wordcount: '1904'
+ht-degree: 85%
 
 ---
 
@@ -259,7 +259,7 @@ interface SelectedDestination {
 
 `optionsFormSetup` 속성의 예입니다. 예를 사용하여 선택 사항을 확인할 수 있습니다. `onConfirm` 이벤트에 전달됩니다.
 
-### 새 폴더 만들기 {#create-new-folder}
+### 폴더를 만듭니다 {#create-new-folder}
 
 폴더의 대상 폴더에 폴더를 만들 수 있습니다. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 
@@ -274,7 +274,7 @@ interface SelectedDestination {
 
 ### 정보 {#info}
 
-정보 또는 정보 아이콘을 사용하면 선택한 에셋의 메타데이터를 볼 수 있습니다. 차원, 크기, 설명, 경로, 수정한 날짜 및 만든 날짜 등 다양한 세부 정보가 포함됩니다. 메타데이터 정보를 제공하는 동시에 새 자산을 업로드하거나 복사 또는 만듭니다.
+정보 또는 정보 아이콘을 사용하면 선택한 에셋의 메타데이터를 볼 수 있습니다. 차원, 크기, 설명, 경로, 수정한 날짜 및 만든 날짜 등 다양한 세부 정보가 포함됩니다. 메타데이터 정보는 에셋을 업로드하거나 복사하거나 만드는 동안 제공됩니다.
 
 ### 폴더 선택 {#select-folder}
 

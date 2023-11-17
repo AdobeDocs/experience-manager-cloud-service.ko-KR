@@ -2,10 +2,10 @@
 title: 프로젝트 설정
 description: Maven을 사용하여 AEM 프로젝트를 빌드하는 방법과 자체 프로젝트를 만들 때 준수해야 하는 표준에 대해 알아봅니다.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1404'
-ht-degree: 100%
+source-wordcount: '1399'
+ht-degree: 97%
 
 ---
 
@@ -110,7 +110,7 @@ Cloud Manager를 사용하여 빌드 및 배포하려면 AEM 프로젝트가 다
 
 >[!NOTE]
 >
->암호로 보호된 Maven 저장소의 아티팩트는 이 메커니즘을 통해 배포된 코드가 현재 Cloud Manager의 품질 게이트에 구현된 모든 [코드 품질 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md)을 통해 실행되지 않기 때문에 매우 신중하게 사용해야 합니다. 따라서 AEM에 연결되지 않은 코드에만 드물게 사용해야 합니다 이진과 함께 전체 프로젝트 소스 코드 외에 Java 소스도 배포하는 것이 좋습니다.
+>암호로 보호된 Maven 저장소의 아티팩트는 이 메커니즘을 통해 배포된 코드가 현재 를 통해 실행되지 않으므로 신중하게 사용해야 합니다 [코드 품질 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md) cloud Manager의 품질 게이트에 구현되었습니다. 따라서 AEM에 연결되지 않은 코드에만 드물게 사용해야 합니다 이진과 함께 전체 프로젝트 소스 코드 외에 Java 소스도 배포하는 것이 좋습니다.
 
 Cloud Manager 내에서 암호로 보호된 Maven 저장소를 사용하려면 다음 작업을 수행하십시오.
 

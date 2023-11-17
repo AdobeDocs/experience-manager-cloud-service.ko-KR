@@ -2,10 +2,10 @@
 title: Adobe Express의 AEM Assets 추가 기능
 description: Adobe Express의 AEM Assets 추가 기능을 사용하여 Adobe Express 사용자 인터페이스 내에서 AEM Assets에 저장된 자산에 직접 액세스할 수 있습니다.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 9078e5bb71d9f34dc0416725efc20c0ab74cc939
-workflow-type: ht
-source-wordcount: '485'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '484'
+ht-degree: 96%
 
 ---
 
@@ -28,7 +28,7 @@ AEM Assets 추가 기능을 Adobe Express에 추가하려면 다음 단계를 �
 
 1. Adobe Express 웹 애플리케이션을 엽니다.
 
-1. 새 템플릿이나 프로젝트를 로드하거나 새 자산을 만들어 빈 캔버스를 새로 엽니다.
+1. 새 템플릿 또는 프로젝트를 로드하거나 에셋을 만들어 새 빈 캔버스를 엽니다.
 
 1. 왼쪽 탐색 창에서 사용할 수 있는 **[!UICONTROL 추가 기능]**&#x200B;을 클릭합니다.
 

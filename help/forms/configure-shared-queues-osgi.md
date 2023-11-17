@@ -4,9 +4,9 @@ description: 에서 Forms 중심 워크플로우에 대한 공유 대기열을 �
 topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '839'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # 사용자의 받은 편지함 항목 공유 및 액세스 요청 {#share-and-request-access}
 
-대기열은 사용자의 AEM 받은 편지함에 있는 항목 목록입니다. 사용자에게 할당된 항목 또는 사용자가 구성원으로 있는 그룹에 공유된 항목일 수 있습니다. 받은 편지함에 액세스하여 받은 편지함 항목을 보고 작업을 수행할 수 있습니다. 예를 들어 항목을 다른 사용자와 공유할 수 있습니다.
+대기열은 사용자의 AEM 받은 편지함에 있는 항목 목록입니다. 사용자에게 할당된 항목 또는 사용자가 구성원으로 있는 그룹에 공유된 항목일 수 있습니다. 받은 편지함에 액세스하여 받은 편지함 항목을 보고 작업할 수 있습니다. 예를 들어 항목을 다른 사용자와 공유할 수 있습니다.
 
 받은 편지함 항목을 다른 사용자와 공유할 수도 있습니다. 다른 사용자가 받은 편지함 항목에 액세스할 수 있게 되면 해당 사용자는 공유 항목을 요청하고 적절한 조치를 취할 수 있습니다. 마찬가지로 다른 사용자의 받은 편지함 항목에 대한 액세스를 요청할 수 있습니다.
 

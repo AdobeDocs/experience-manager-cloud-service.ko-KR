@@ -1,13 +1,13 @@
 ---
 title: 페이지 작성 사용자 정의
 description: AEM as a Cloud Service가 페이지 작성 기능을 사용자 정의하기 위해 제공하는 메커니즘에 대해 알아봅니다.
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
-workflow-type: ht
-source-wordcount: '981'
-ht-degree: 100%
+exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '969'
+ht-degree: 96%
 
 ---
-
 
 # 페이지 작성 사용자 정의 {#customizing-page-authoring}
 
@@ -22,7 +22,7 @@ Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 활
 * 작성 clientlib `cq.authoring.editor.sites.page`에 의존합니다.
 * 적절한 `cq.authoring.editor.sites.page.hook` 카테고리에 속합니다.
 
-clientlibs에 대한 자세한 내용은 [AEM as a Cloud Service에서 클라이언트측 라이브러리 사용](/help/implementing/developing/introduction/clientlibs.md) 문서를 참조하십시오.
+다음을 참조하십시오 [AEM에서 클라이언트측 라이브러리 as a Cloud Service 사용](/help/implementing/developing/introduction/clientlibs.md).
 
 ## 오버레이 {#overlays}
 
@@ -30,9 +30,9 @@ clientlibs에 대한 자세한 내용은 [AEM as a Cloud Service에서 클라이
 
 오버레이를 만들 때 원본의 1:1 사본은 필요하지 않습니다. [Sling 리소스 병합](/help/implementing/developing/introduction/sling-resource-merger.md)을 통해 상속되기 때문입니다.
 
-자세한 내용은 [JS 설명서 세트](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)를 참조하십시오.
+자세한 내용은 [JS 설명서 세트](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
 
-오버레이에 대한 자세한 내용은 [Adobe Experience Manager as a Cloud Service용 오버레이](/help/implementing/developing/introduction/overlays.md) 문서를 참조하십시오.
+오버레이에 대한 자세한 내용은 [Adobe Experience Manager as a Cloud Service용 오버레이](/help/implementing/developing/introduction/overlays.md).
 
 ## 새 레이어(모드) 추가 {#add-new-layer-mode}
 

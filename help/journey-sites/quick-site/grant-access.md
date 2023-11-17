@@ -2,10 +2,10 @@
 title: 프론트엔드 개발자에게 액세스 권한 부여
 description: AEM 사이트 git 저장소 및 파이프라인에 액세스할 수 있도록 프론트엔드 개발자를 Cloud Manager에 온보드합니다.
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 97%
+source-wordcount: '778'
+ht-degree: 91%
 
 ---
 
@@ -73,11 +73,11 @@ Cloud Manager에 대한 액세스 권한을 부여하고 사용자에게 사용�
 
    ![팀에 사용자 추가](assets/add-to-team.png)
 
-1. **제품** 선택에서 플러스 기호를 탭하거나 클릭한 다음 **Adobe Experience Manager as a Cloud Service**&#x200B;를 선택하고 사용자에게 **배포 관리자** 및 **개발자** 제품 프로필을 할당합니다.
+1. 다음에서 **제품** 선택 항목을 선택하고 더하기 기호를 선택한 다음 를 선택합니다. **Adobe Experience Manager as a Cloud Service** 및 할당 **배포 관리자** 및 **개발자** 제품 프로필을 사용자에게 보냅니다.
 
    ![팀 프로필 할당](assets/assign-team.png)
 
-1. **저장**&#x200B;을 탭하거나 클릭하면 사용자로 추가한 프론트엔드 개발자에게 시작 이메일이 전송됩니다.
+1. 선택 **저장** 그리고 사용자로 추가한 프론트엔드 개발자에게 시작 이메일이 전송됩니다.
 
 초대된 프론트엔드 개발자는 시작 이메일의 링크를 클릭하고 Adobe ID를 사용하여 로그인함으로써 Cloud Manager에 액세스할 수 있습니다.
 

@@ -4,17 +4,17 @@ description: 사용할 수 있는 강력한 Live Copy 동기화 옵션 및 프�
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2425'
-ht-degree: 99%
+source-wordcount: '2414'
+ht-degree: 97%
 
 ---
 
 
 # Live Copy 동기화 구성 {#configuring-live-copy-synchronization}
 
-Adobe Experience Manager는 다양하고 획기적인 동기화 구성을 제공합니다. Live Copy를 사용하기 전에, 다음 사항을 고려하여 Live Copy를 소스 콘텐츠와 동기화할 방법 및 시기를 정의해야 합니다.
+Adobe Experience Manager은 몇 가지 동기화 구성을 즉시 제공합니다. Live Copy를 사용하기 전에, 다음 사항을 고려하여 Live Copy를 소스 콘텐츠와 동기화할 방법 및 시기를 정의해야 합니다.
 
 1. 기존 롤아웃 구성이 요구 사항을 충족하는지 여부를 결정합니다.
 1. 기존 롤아웃 구성이 요구 사항을 충족하지 않는 경우 나만의 롤아웃 구성을 만들어야 하는지 여부를 결정하십시오.
@@ -68,7 +68,7 @@ Adobe Experience Manager는 다양하고 획기적인 동기화 구성을 제공
 | `contentDelete` | 이 작업은 소스에 존재하지 않는 Live Copy의 노드를 삭제합니다. [**CQ MSM 콘텐츠 삭제 작업** 서비스](#excluding-properties-and-node-types-from-synchronization)를 구성하여 제외할 노드 유형, 단락 항목 및 페이지 속성을 지정합니다. |  |
 | `contentUpdate` | 이 작업은 Live Copy 콘텐츠를 소스의 변경 내용으로 업데이트합니다. [**CQ MSM 콘텐츠 업데이트 작업** 서비스](#excluding-properties-and-node-types-from-synchronization)를 구성하여 제외할 노드 유형, 단락 항목 및 페이지 속성을 지정합니다. |  |
 | `editProperties` | 이 작업은 Live Copy의 속성을 편집합니다. `editMap` 속성은 편집할 속성 및 해당 값을 결정합니다. `editMap` 속성 값은 다음 형식을 사용해야 합니다. <br>`[property_name_n]#[current_value]#[new_value]`<br>`current_value` 및 `new_value`(정규 표현식) `n`(증분 정수)<br>예를 들어 `editMap`에 대한 다음 값을 고려해 보겠습니다.<br>`sling:resourceType#/(contentpage`‖`homepage)#/mobilecontentpage,cq:template#/contentpage#/mobilecontentpage`<br>이 값은 Live Copy 노드의 속성을 다음과 같이 편집합니다.<br>`contentpage` 또는 `homepage`로 설정되어 있는 `sling:resourceType` 속성은 `mobilecontentpage`로 설정됩니다.<br>`contentpage`로 설정되어 있는 `cq:template` 속성은 `mobilecontentpage`로 설정됩니다. | `editMap: (String)`은 속성, 현재 값 및 새 값을 식별합니다. 자세한 내용은 설명서를 참조하십시오. |
-| `notify` | 이 작업은 페이지가 롤아웃되었다는 페이지 이벤트를 전송합니다. 알림을 받으려면 먼저 롤아웃 이벤트를 구독해야 합니다. |  |
+| `notify` | 이 작업은 페이지가 롤아웃되었다는 페이지 이벤트를 전송합니다. 알림을 받으려면 먼저 롤아웃 이벤트에 가입해야 합니다. |  |
 | `orderChildren` | 이 작업은 블루프린트의 순서를 기반으로 하위 노드의 순서를 지정합니다. |  |
 | `referencesUpdate` | 이 동기화 작업은 Live Copy의 참조를 업데이트합니다.<br>Live Copy에서 블루프린트 내 리소스를 나타내는 경로를 검색합니다. 경로를 찾으면 Live Copy 내에서 관련 리소스를 나타내는 경로를 업데이트합니다. 대상이 블루프린트 외부에 있는 참조는 변경되지 않습니다. <br>[**CQ MSM 참조 업데이트 작업** 서비스](#excluding-properties-and-node-types-from-synchronization)를 구성하여 제외할 노드 유형, 단락 항목 및 페이지 속성을 지정합니다. |  |
 | `targetVersion` | 이 작업은 Live Copy의 버전을 생성합니다.<br>이 작업은 롤아웃 구성에 포함된 유일한 동기화 작업이어야 합니다. |  |
@@ -156,8 +156,8 @@ MSM을 사용하면 일반적으로 사용되는 롤아웃 구성 세트를 지�
 
 예를 들어 블루프린트는 [WKND 튜토리얼](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 사이트를 소스 콘텐츠로 사용합니다. 블루프린트에서 사이트가 생성됩니다. 다음 목록의 각 항목은 롤아웃 구성 사용과 관련된 여러 시나리오를 설명합니다.
 
-* 롤아웃 구성을 사용하도록 구성된 블루프린트 페이지 또는 Live Copy 페이지가 없습니다. MSM은 모든 Live Copy 페이지에 시스템 기본 롤아웃 구성을 사용합니다.
-* WKND 사이트의 루트 페이지가 몇 가지 롤아웃 구성을 사용하여 구성되었습니다. MSM은 모든 Live Copy 페이지에 이러한 롤아웃 구성을 사용합니다.
+* 롤아웃 구성을 사용하도록 구성된 블루프린트 페이지 또는 Live Copy 페이지가 없습니다. MSM은 모든 라이브 카피 페이지에 시스템 기본 롤아웃 구성을 사용합니다.
+* WKND 사이트의 루트 페이지가 몇 가지 롤아웃 구성을 사용하여 구성되었습니다. MSM은 모든 라이브 카피 페이지에 이러한 롤아웃 구성을 사용합니다.
 * WKND 사이트의 루트 페이지는 몇 가지 롤아웃 구성을 사용하여 구성되었으며 Live Copy 사이트의 루트 페이지는 다른 롤아웃 구성 세트를 사용하여 구성되었습니다. MSM은 Live Copy 사이트의 루트 페이지에 구성된 롤아웃 구성을 사용합니다.
 
 ### Live Copy 페이지에 대한 롤아웃 구성 설정 {#setting-the-rollout-configurations-for-a-live-copy-page}
@@ -182,7 +182,7 @@ MSM을 사용하면 일반적으로 사용되는 롤아웃 구성 세트를 지�
 
    ![Live Copy 구성 상속 재정의](../assets/live-copy-inherit-override.png)
 
-1. **저장 및 닫기**&#x200B;를 클릭하거나 탭합니다.
+1. 선택 **저장 및 닫기**.
 
 ### 블루프린트 페이지에 대한 롤아웃 구성 설정 {#setting-the-rollout-configuration-for-a-blueprint-page}
 

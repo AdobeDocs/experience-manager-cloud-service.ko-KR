@@ -2,10 +2,10 @@
 title: 페이지 생성 및 구성
 description: AEM으로 페이지를 만들고 관리하여 웹 사이트를 구성하는 방법에 대해 알아봅니다.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2448'
-ht-degree: 97%
+source-wordcount: '2429'
+ht-degree: 87%
 
 ---
 
@@ -16,17 +16,17 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->생성, 복사, 이동, 편집, 삭제와 같은 작업을 페이지에서 수행하기 위해서는 계정에 적절한 액세스 권한과 사용 권한이 있어야 합니다.
+>생성, 복사, 이동, 편집, 삭제와 같은 페이지에서 작업을 수행하려면 계정에 적절한 액세스 권한과 권한이 있어야 합니다.
 >
 >문제가 발생하면 시스템 관리자에게 문의하십시오.
 
 <!--
->Your account needs the [appropriate access rights](/help/sites-administering/security.md) and [permissions](/help/sites-administering/security.md#permissions) to take action on pages such as create, copy, move, edit, and delete.
+>Your account needs the [appropriate access rights](/help/sites-administering/security.md) and [permissions](/help/sites-administering/security.md#permissions) to act on pages such as create, copy, move, edit, and delete.
 -->
 
 >[!TIP]
 >
->페이지를 보다 효율적으로 구성할 수 있도록 해 주고 웹 사이트 콘솔에서 사용할 수 있는 다양한 [키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)가 있습니다.
+>몇 개 있습니다 [키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) 를 사용하면 웹 사이트 콘솔에서 페이지를 보다 효율적으로 구성할 수 있습니다.
 
 {{edge-delivery-authoring}}
 
@@ -70,7 +70,7 @@ ht-degree: 97%
 
 ### 페이지 이름 지정 규칙 {#page-naming-conventions}
 
-새 페이지를 만드는 경우 다음과 같은 두 개의 주요 필드가 있습니다.
+페이지를 만들 때 두 개의 주요 필드가 있습니다.
 
 * **[제목](#title)**:
 
@@ -95,7 +95,7 @@ ht-degree: 97%
 >
 >일부 브라우저(예: 이전 버전의 IE)는 특정 길이까지만 URL을 허용하므로 기술적인 이유로 페이지 이름을 짧게 유지하는 경우도 있습니다.
 
-새 페이지를 생성 시 AEM은 AEM 및 JCR에서 지정한 [규칙에 따라 페이지 이름을 확인](/help/implementing/developing/introduction/naming-conventions.md)합니다.
+페이지를 만들 때 AEM [규칙에 따라 페이지 이름을 확인합니다.](/help/implementing/developing/introduction/naming-conventions.md) AEM 및 JCR에서 적용합니다.
 
 허용되는 최소 문자는 다음과 같습니다.
 
@@ -113,7 +113,7 @@ ht-degree: 97%
 
 #### 제목 {#title}
 
-새 페이지를 만들 때 페이지 **제목**&#x200B;만 제공하면 AEM은 이 문자열에서 페이지 **이름**&#x200B;을 파생하고 AEM 및 JCR에서 지정한 [규칙에 따라 이름을 확인](/help/implementing/developing/introduction/naming-conventions.md)합니다.
+페이지만 제공하는 경우 **제목** 페이지를 만들 때 AEM은 페이지를 파생합니다 **이름** 이 문자열에서 [규칙에 따라 이름 확인](/help/implementing/developing/introduction/naming-conventions.md) AEM 및 JCR에서 적용합니다.
 
 **제목** 필드에는 잘못된 문자가 포함될 수 있지만, 파생되는 이름에서는 잘못된 문자가 대체됩니다. 예:
 
@@ -124,7 +124,7 @@ ht-degree: 97%
 
 #### 이름 {#name}
 
-새 페이지를 만들 때 페이지 **이름**&#x200B;을 제공하면 AEM이 AEM 및 JCR에서 지정한 [규칙에 따라 이름을 확인](/help/implementing/developing/introduction/naming-conventions.md)합니다. **이름** 필드에 잘못된 문자를 제출할 수 없습니다. AEM에서 유효하지 않은 문자를 발견하면 필드가 설명 메시지와 함께 강조 표시됩니다.
+페이지를 제공할 때 **이름** 페이지를 만들 때 AEM [규칙에 따라 이름을 확인합니다.](/help/implementing/developing/introduction/naming-conventions.md) AEM 및 JCR에서 적용합니다. **이름** 필드에 잘못된 문자를 제출할 수 없습니다. AEM에서 유효하지 않은 문자를 발견하면 필드가 설명 메시지와 함께 강조 표시됩니다.
 
 ![유효하지 않은 페이지 이름을 입력하는 예](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -185,7 +185,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
 
 1. 마법사의 첫 번째 단계에서 다음 중 하나를 수행할 수 있습니다.
 
-   * 새 페이지를 만드는 데 사용할 템플릿을 선택한 후 **다음**&#x200B;을 클릭/탭하여 계속 진행합니다.
+   * 새 페이지를 만드는 데 사용할 템플릿을 선택한 다음 를 선택합니다 **다음** 계속합니다.
 
    * 프로세스를 중단하려면 **취소**&#x200B;를 클릭/탭합니다.
 
@@ -193,7 +193,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
 
 1. 마법사의 마지막 단계에서 다음 중 하나를 수행할 수 있습니다.
 
-   * 세 탭을 사용하여 새 페이지에 지정할 [페이지 속성](/help/sites-cloud/authoring/fundamentals/page-properties.md)을 입력한 다음, 실제로 페이지를 만들려면 **만들기**&#x200B;를 클릭/탭합니다.
+   * 세 탭을 사용하여 [페이지 속성](/help/sites-cloud/authoring/fundamentals/page-properties.md) 새 페이지에 할당한 다음 **만들기** 를 클릭하여 페이지를 실제로 만듭니다.
 
    * 선택한 템플릿으로 돌아가려면 **뒤로**&#x200B;를 사용하십시오.
 
@@ -206,7 +206,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
    * **이름**:
 
       * URI를 생성하는 데 사용됩니다. 지정하지 않을 경우 이름이 제목에서 파생됩니다.
-      * 새 페이지를 만들 때 페이지 **이름**&#x200B;을 제공하면 AEM은 AEM 및 JCR에서 지정한 [규칙에 따라 이름을 확인](/help/implementing/developing/introduction/naming-conventions.md)합니다.
+      * 페이지를 제공하는 경우 **이름** 페이지를 만들 때 AEM [규칙에 따라 이름을 확인합니다.](/help/implementing/developing/introduction/naming-conventions.md) AEM 및 JCR에서 적용합니다.
       * **이름** 필드에 **잘못된 문자를 제출**&#x200B;할 수 없습니다. AEM에서 잘못된 문자를 감지하면 필드가 강조 표시되고, 제거/교체가 필요한 문자를 나타내는 설명 메시지가 표시됩니다.
 
    >[!TIP]
@@ -269,7 +269,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
    ![복사](/help/sites-cloud/authoring/assets/copy.png)
 
 1. 페이지의 새 사본을 위한 위치로 이동합니다.
-1. 표시되는 **붙여넣기** 아이콘을 탭하거나 클릭합니다.
+1. 다음 항목 선택 **붙여넣기** 아이콘을 사용할 수 있습니다.
 
    ![붙여넣기](/help/sites-cloud/authoring/assets/paste.png)
 
@@ -279,7 +279,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
 
    ![붙여넣기 대화 상자](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
-1. **붙여넣기** 버튼을 탭하거나 클릭하여 붙여넣기 트랜잭션을 확인하고 새 페이지를 만듭니다.
+1. 다음 항목 선택 **붙여넣기** 단추를 클릭하여 붙여넣기 트랜잭션을 확인하고 새 페이지를 만듭니다.
 
 >[!NOTE]
 >
@@ -313,7 +313,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
 1. 마법사의 **이름 바꾸기** 단계에서 다음 중 하나를 수행할 수 있습니다.
 
-   * 페이지가 이동되면 사용할 페이지의 이름을 지정한 후 **다음**&#x200B;을 클릭/탭하여 다음 단계로 진행합니다.
+   * 페이지가 이동되면 사용할 페이지의 이름을 지정한 다음 을 선택합니다 **다음** 계속합니다.
    * 프로세스를 중단하려면 **취소**&#x200B;를 클릭/탭합니다.
 
    ![페이지 이동 및 이름 바꾸기](/help/sites-cloud/authoring/assets/move-page-rename.png)
@@ -383,7 +383,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
   ![Asynchronous page move](assets/asynchronous-page-move.png)
 -->
 
-비동기 작업의 상태는 **전역 탐색** -> **도구** -> **작업** -> **작업**&#x200B;의 [**비동기 작업 상태** 대시보드](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)에서 확인할 수 있습니다.
+비동기 작업의 상태는 [**비동기 작업 상태** 대시보드](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) 위치: **전역 탐색** > **도구** > **작업** > **작업**
 
 >[!NOTE]
 >

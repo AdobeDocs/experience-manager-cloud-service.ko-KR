@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2643'
-ht-degree: 25%
+source-wordcount: '2599'
+ht-degree: 17%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 25%
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/multilingual-assets.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
-다국어 에셋은 여러 언어로 된 바이너리, 메타데이터 및 태그가 있는 에셋을 의미합니다. 일반적으로 에셋의 바이너리, 메타데이터 및 태그는 한 언어로 된 후 다국어 프로젝트에서 사용할 수 있도록 다른 언어로 번역됩니다. Adobe Experience Manager Assets를 사용하면 워크플로우를 자동화하여 자산(바이너리, 메타데이터 및 태그 포함)을 번역하여 다국어 프로젝트에서 사용할 다른 언어의 자산을 생성할 수 있습니다.
+다국어 에셋은 여러 언어로 된 바이너리, 메타데이터 및 태그가 있는 에셋을 의미합니다. 일반적으로 에셋의 바이너리, 메타데이터 및 태그는 한 언어로 된 후 다국어 프로젝트에서 사용할 수 있도록 다른 언어로 번역됩니다. Adobe Experience Manager Assets을 사용하면 워크플로우를 자동화하여 자산(바이너리, 메타데이터 및 태그 포함)을 번역하여 다국어 프로젝트에서 사용할 다른 언어의 자산을 생성할 수 있습니다.
 
 AEM 에셋 번역을 자동화하려면 번역 서비스 공급업체를 Experience Manager과 통합하고 에셋을 여러 언어로 번역하기 위한 프로젝트를 제작해야 합니다. Experience Manager은 사람 번역 및 기계 번역 워크플로를 지원합니다.
 
@@ -57,7 +57,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 다국어 에셋은 여러 언어로 된 바이너리, 메타데이터 및 태그가 있는 에셋을 의미합니다. 일반적으로 에셋의 바이너리, 메타데이터 및 태그는 한 언어로 된 후 다국어 프로젝트에서 사용할 수 있도록 다른 언어로 번역됩니다.
 
-Adobe Experience Manager Assets에서 다국어 자산은 폴더에 포함되며, 여기서 각 폴더에는 다른 언어의 자산이 포함됩니다.
+Adobe Experience Manager Assets에서 다국어 에셋은 폴더에 포함되며, 각 폴더에는 다른 언어의 에셋이 포함됩니다.
 
 각 언어 폴더를 언어 사본이라고 합니다. 언어 루트라고도 하는 언어 사본의 루트 폴더는 언어 사본에 있는 콘텐츠의 언어를 식별합니다. 예를 들어, `/content/dam/it` 는 이탈리아어 사본의 이탈리아어 루트입니다. 언어 사본은 [올바르게 구성된 언어 루트](#create-a-language-root) 소스 에셋의 번역을 수행할 때 올바른 언어가 타깃팅되도록 합니다.
 
@@ -88,33 +88,33 @@ Adobe Experience Manager Assets에서 다국어 자산은 폴더에 포함되며
 
 예를 들어 샘플 계층의 이탈리아어 언어 사본의 루트 페이지에는 `it` 를 이름 속성으로 설정합니다. 이름 속성은 저장소의 자산 노드 이름으로 사용되므로 자산 경로를 결정합니다. (*&lt;server>:&lt;port>/assets.html/content/dam/it/*)
 
-1. From the Assets console, click/tap **[!UICONTROL Create]** and choose **[!UICONTROL Folder]** from the menu.
+1. 자산 콘솔에서 을 선택합니다. **[!UICONTROL 만들기]** 및 선택 **[!UICONTROL 폴더]** 메뉴에서 삭제할 수 있습니다.
 1. 이름 필드에 다음 형식으로 국가 코드를 입력합니다. `<language-code>`.
-1. **[!UICONTROL 만들기]**&#x200B;를 클릭하거나 탭합니다. 언어 루트는 자산 콘솔에서 만들어집니다.
+1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다. 언어 루트는 자산 콘솔에서 만들어집니다.
 
 ### 언어 루트 보기 {#view-language-roots}
 
 터치에 적합한 UI는 내에서 만들어진 언어 루트 목록을 표시하는 참조 패널을 제공합니다 [!DNL Assets].
 
 1. 자산 콘솔에서 언어 사본을 만들 기본 언어를 선택합니다.
-1. GlobalNav 아이콘을 클릭하거나 탭하고 **[!UICONTROL 참조]** 참조 창을 엽니다.
-1. 참조 창에서 을 클릭하거나 탭합니다 **[!UICONTROL 언어 복사]**. 언어 사본 패널에 자산의 언어 사본이 표시됩니다.
+1. GlobalNav 아이콘을 선택하고 **[!UICONTROL 참조]** 참조 창을 엽니다.
+1. 참조 창에서 다음을 선택합니다 **[!UICONTROL 언어 복사]**. 언어 사본 패널에 자산의 언어 사본이 표시됩니다.
 
 ### 새 번역 프로젝트 만들기 {#create-a-new-translation-project}
 
 이 옵션을 사용하면 번역할 에셋이 번역하려는 언어의 언어 루트에 복사됩니다. 선택한 옵션에 따라 프로젝트 콘솔에서 에셋에 대한 번역 프로젝트가 만들어집니다. 설정에 따라 번역 프로젝트를 수동으로 시작하거나 번역 프로젝트를 만드는 즉시 자동으로 실행할 수 있습니다.
 
 1. Assets UI에서 언어 사본을 만들 소스 폴더를 선택합니다.
-1. Open the **[!UICONTROL References]** pane and click/tap **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]**.
-1. 클릭/탭 **[!UICONTROL 만들기 및 번역]** 맨 아래에
-1. From the **[!UICONTROL Target Languages]** list, select the language(s) for which you want to create a folder structure.
+1. 를 엽니다. **[!UICONTROL 참조]** 창 및 선택 **[!UICONTROL 언어 복사]** 아래에 **[!UICONTROL 사본]**.
+1. 선택 **[!UICONTROL 만들기 및 번역]** 맨 아래에
+1. 다음에서 **[!UICONTROL 타겟 언어]** 폴더 구조를 만들 언어를 선택합니다.
 1. 다음에서 **[!UICONTROL 프로젝트]** 목록, 선택 **[!UICONTROL 새 번역 프로젝트 만들기]**.
 1. In the **[!UICONTROL Project Title]** field, enter a title for the project.
-1. 클릭/탭 **[!UICONTROL 만들기]**. 소스 폴더의 에셋은 4단계에서 선택한 로케일에 대한 대상 폴더로 복사됩니다.
+1. 선택 **[!UICONTROL 만들기]**. 소스 폴더의 에셋은 4단계에서 선택한 로케일에 대한 대상 폴더로 복사됩니다.
 1. 폴더로 이동하려면 언어 사본을 선택하고 **[!UICONTROL 에셋에 표시]**.
 1. 프로젝트 콘솔로 이동합니다. 번역 폴더가 프로젝트 콘솔에 복사됩니다.
 1. 번역 프로젝트를 보려면 폴더를 엽니다.
-1. 프로젝트를 클릭/탭하여 세부 정보 페이지를 엽니다.
+1. 프로젝트를 선택하여 세부 정보 페이지를 엽니다.
 1. 번역 작업의 상태를 보려면 아래쪽의 생략 부호를 클릭합니다 **[!UICONTROL 번역 작업]** 타일. <!-- For more details around job statuses, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->
 1. 에셋 사용자 인터페이스에서 번역된 각 에셋의 속성 페이지를 열어 번역된 메타데이터를 봅니다.
 
@@ -128,18 +128,18 @@ Adobe Experience Manager Assets에서 다국어 자산은 폴더에 포함되며
 
 1. 에셋 UI에서 번역되지 않은 에셋이 포함된 소스 폴더로 이동합니다.
 1. Select an asset you want to translate, and open the **[!UICONTROL Reference pane]**. The **[!UICONTROL Language Copies]** section displays the number of translation copies that are currently available.
-1. Click/tap **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]**. A list of available translation copies is displayed.
-1. 클릭/탭 **[!UICONTROL 만들기 및 번역]** 맨 아래에
-1. From the **[!UICONTROL Target Languages]** list, select the language(s) for which you want to create a folder structure.
+1. 선택 **[!UICONTROL 언어 복사]** 아래에 **[!UICONTROL 사본]**. A list of available translation copies is displayed.
+1. 선택 **[!UICONTROL 만들기 및 번역]** 맨 아래에
+1. 다음에서 **[!UICONTROL 타겟 언어]** 폴더 구조를 만들 언어를 선택합니다.
 1. From the **[!UICONTROL Project]** list, select **[!UICONTROL Add to existing translation project]** to run the translation workflow on the folder.
    >[!NOTE]
    >
    >다음을 선택하면 **[!UICONTROL 기존 번역 프로젝트에 추가]** 옵션을 선택하면 프로젝트 설정이 기존 프로젝트의 설정과 정확히 일치하는 경우에만 번역 프로젝트가 기존 프로젝트에 추가됩니다. 그렇지 않으면 새 프로젝트가 만들어집니다.
 1. 다음에서 **[!UICONTROL 기존 번역 프로젝트]** 목록에서 번역을 위해 에셋을 추가할 프로젝트를 선택합니다.
-1. Click/tap **[!UICONTROL Create]**. The assets to be translated are added to the target folder. The updated folder is listed under the **[!UICONTROL Language Copies]** section.
+1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다. The assets to be translated are added to the target folder. The updated folder is listed under the **[!UICONTROL Language Copies]** section.
 1. 프로젝트 콘솔로 이동한 다음 추가한 기존 번역 프로젝트를 엽니다.
-1. 번역 프로젝트 프로젝트 프로젝트 세부 정보 페이지 보기 를 클릭/탭합니다.
-1. 아래 줄임표 클릭/탭 **번역 작업** 타일을 사용하여 번역 워크플로우에서 에셋을 볼 수 있습니다. 번역 작업 목록에는 자산 메타데이터와 태그에 대한 항목도 표시됩니다. 이 항목들은 자산의 메타데이터와 태그도 번역됨을 나타냅니다.
+1. 번역 프로젝트를 선택하여 프로젝트 세부 정보 페이지를 조회합니다.
+1. 아래 줄임표를 선택합니다. **번역 작업** 타일을 사용하여 번역 워크플로우에서 에셋을 볼 수 있습니다. 번역 작업 목록에는 자산 메타데이터와 태그에 대한 항목도 표시됩니다. 이 항목들은 자산의 메타데이터와 태그도 번역됨을 나타냅니다.
 
    >[!NOTE]
    >
@@ -147,8 +147,8 @@ Adobe Experience Manager Assets에서 다국어 자산은 폴더에 포함되며
    >* 기계 번역을 사용하는 경우 에셋 바이너리는 번역되지 않습니다.
    >* 번역 작업에 추가하는 에셋에 하위 에셋이 포함된 경우, 하위 에셋을 선택하고 이를 제거하여 결함 없이 번역을 진행합니다.
 
-1. 에셋에 대한 번역을 시작하려면 의 화살표를 클릭/탭합니다. **[!UICONTROL 번역 작업]** 타일 및 선택 **[!UICONTROL 시작]** 목록에서 삭제할 수 있습니다. 번역 작업이 시작되었음을 알리는 메시지가 표시됩니다.
-1. 번역 작업의 상태를 보려면 아래 줄임표를 클릭/탭합니다. **[!UICONTROL 번역 작업]** 타일. <!-- For more details, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->
+1. 에셋에 대한 번역을 시작하려면 **[!UICONTROL 번역 작업]** 타일 및 선택 **[!UICONTROL 시작]** 목록에서 삭제할 수 있습니다. 번역 작업이 시작되었음을 알리는 메시지가 표시됩니다.
+1. 번역 작업의 상태를 보려면 아래쪽의 생략 부호를 선택합니다 **[!UICONTROL 번역 작업]** 타일. <!-- For more details, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->
 1. 번역이 완료되면 상태가 검토 준비됨으로 변경됩니다. 에셋 UI로 이동하고 번역된 각 에셋에 대한 속성 페이지를 열어 번역된 메타데이터를 봅니다.
 
 ### 언어 사본 업데이트 {#update-language-copies}
@@ -163,31 +163,31 @@ Adobe Experience Manager Assets에서 다국어 자산은 폴더에 포함되며
 이 옵션을 사용하면 선택한 로케일에 대한 언어 사본을 업데이트하기 위해 에셋 세트가 기존 번역 프로젝트에 추가됩니다.
 
 1. 에셋 UI에서 에셋 폴더를 추가한 소스 폴더를 선택합니다.
-1. Open the **[!UICONTROL References pane]**, and click/tap **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]** to display the list of language copies.
+1. 를 엽니다. **[!UICONTROL 참조 창]**, 및 선택 **[!UICONTROL 언어 복사]** 아래에 **[!UICONTROL 사본]** 언어 사본 목록을 표시합니다.
 1. Select the check box before **[!UICONTROL Language Copies]**, which selects all language copies. Unselect other copies except the language copy (copies) corresponding to the locale(s) to which you want to translate.
-1. 클릭/탭 **[!UICONTROL 언어 사본 업데이트]** 맨 아래에
+1. 선택 **[!UICONTROL 언어 사본 업데이트]** 맨 아래에
 1. 다음에서 **[!UICONTROL 프로젝트]** 목록, 선택 **[!UICONTROL 기존 번역 프로젝트에 추가]**.
 1. 다음에서 **[!UICONTROL 기존 번역 프로젝트]** 목록에서 번역을 위해 에셋을 추가할 프로젝트를 선택합니다.
-1. Click/tap **[!UICONTROL Start]**.
+1. 선택 **[!UICONTROL 시작]**.
 1. 의 9~14단계 참조 [기존 번역 프로젝트에 추가](#add-to-existing-translation-project) 나머지 절차를 완료합니다.
 
 ### 임시 언어 사본 만들기 {#creating-temporary-language-copies}
 
 번역 워크플로우를 실행하여 언어 사본을 원본 에셋의 편집된 버전으로 업데이트하면 번역된 에셋을 승인할 때까지 기존 언어 사본이 유지됩니다. [!DNL Assets] 새로 번역된 에셋을 임시 위치에 저장하고 에셋을 명시적으로 승인한 후 기존 언어 사본을 업데이트합니다. 에셋을 거부하면 언어 사본은 변경되지 않은 상태로 유지됩니다.
 
-1. Click/tap the source root folder under **[!UICONTROL Language Copies]** for which you already created a language copy, and then click/tap **[!UICONTROL Reveal in Assets]** to open the folder in [!DNL Assets].
+1. 아래에서 소스 루트 폴더 선택 **[!UICONTROL 언어 복사]** 언어 사본을 이미 만든 다음 **[!UICONTROL 에셋에 표시]** 에서 폴더를 열려면 [!DNL Assets].
 1. 에셋 UI에서 이미 번역한 에셋을 선택하고 **[!UICONTROL 편집]** 아이콘을 클릭하여 자산을 편집 모드로 엽니다.
 1. 에셋을 편집한 다음 변경 사항을 저장합니다.
 1. 의 2-14단계를 수행합니다. [기존 번역 프로젝트에 추가](#add-to-existing-translation-project) 언어 사본을 업데이트하는 절차.
-1. 아래 줄임표 클릭/탭 **[!UICONTROL 번역 작업]** 타일. 의 자산 목록에서 **[!UICONTROL 번역 작업]** 페이지에서 자산의 번역본이 저장된 임시 위치를 명확하게 볼 수 있습니다.
+1. 아래 줄임표를 선택합니다. **[!UICONTROL 번역 작업]** 타일. 의 자산 목록에서 **[!UICONTROL 번역 작업]** 페이지에서 자산의 번역본이 저장된 임시 위치를 명확하게 볼 수 있습니다.
 1. 옆에 있는 확인란을 선택합니다. **[!UICONTROL 제목]**.
-1. From the toolbar, click/tap **[!UICONTROL Accept Translation]** and then click/tap **[!UICONTROL Accept]** in the dialog to overwrite the translated asset in the target folder with the translated version of the edited asset.
+1. 도구 모음에서 를 선택합니다. **[!UICONTROL 번역 수락]** 다음을 선택합니다. **[!UICONTROL Accept]** 대상 폴더의 번역된 에셋을 편집된 에셋의 번역된 버전으로 덮어쓰는 대화 상자에서
 
    >[!NOTE]
    >
    >번역 워크플로를 활성화하여 대상 에셋을 업데이트하려면 에셋과 메타데이터 모두를 수락하십시오.
 
-   클릭/탭 **[!UICONTROL 번역 거부]** 대상 로케일 루트에 있는 에셋의 원래 번역 버전을 유지하고 편집된 버전을 거부합니다.
+   선택 **[!UICONTROL 번역 거부]** 대상 로케일 루트에 있는 에셋의 원래 번역 버전을 유지하고 편집된 버전을 거부합니다.
 
 1. 에셋 콘솔로 이동하고 번역된 각 에셋에 대한 속성 페이지를 열어 번역된 메타데이터를 봅니다.
 
@@ -229,12 +229,12 @@ For tips on translating metadata for assets efficiently, see [5 Steps to efficie
 Use the **Create structure only** option to create a target folder hierarchy within the target language root to match the hierarchy of the source folder within the source language root. In this case, source assets are copied to the destination folder. However, no translation project is generated.
 
 1. Assets UI에서 타겟 언어 루트에 구조를 만들 소스 폴더를 선택합니다.
-1. Open the **[!UICONTROL References]** pane and click/tap **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]**.
-1. 클릭/탭 **[!UICONTROL 만들기 및 번역]** 맨 아래에
+1. 를 엽니다. **[!UICONTROL 참조]** 창 및 선택 **[!UICONTROL 언어 복사]** 아래에 **[!UICONTROL 사본]**.
+1. 선택 **[!UICONTROL 만들기 및 번역]** 맨 아래에
 1. 다음에서 **[!UICONTROL 타겟 언어]** 목록에서 폴더 구조를 만들 언어를 선택합니다.
 1. From the **[!UICONTROL Project]** list, choose **[!UICONTROL Create structure only]**.
-1. Click/tap **[!UICONTROL Create]**. 대상 언어의 새 구조는 아래에 나열됩니다. **[!UICONTROL 언어 복사]**.
-1. 목록에서 구조를 클릭/탭한 다음 클릭/탭합니다. **[!UICONTROL 에셋에 표시]** 대상 언어 내에서 폴더 구조로 이동합니다.
+1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다. 대상 언어의 새 구조는 아래에 나열됩니다. **[!UICONTROL 언어 복사]**.
+1. 목록에서 구조를 선택한 다음 을 선택합니다. **[!UICONTROL 에셋에 표시]** 대상 언어 내에서 폴더 구조로 이동합니다.
 
 ## 폴더에 번역 클라우드 서비스 적용 {#applying-translation-cloud-services-to-folders}
 
@@ -247,7 +247,7 @@ Adobe Experience Manager을 사용하면 원하는 번역 공급업체에서 클
 번역 클라우드 서비스를 자산 폴더에 직접 적용하면 번역 워크플로를 만들거나 업데이트할 때 번역 서비스를 구성할 필요가 없습니다.
 
 1. Assets 사용자 인터페이스에서 번역 서비스를 적용할 폴더를 선택합니다.
-1. From the toolbar, click/tap the **[!UICONTROL Properties]** icon to display the **[!UICONTROL Folder Properties]** page.
+1. 도구 모음에서 **[!UICONTROL 속성]** 아이콘 표시 **[!UICONTROL 폴더 속성]** 페이지를 가리키도록 업데이트하는 중입니다.
 
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
@@ -260,23 +260,23 @@ Adobe Experience Manager을 사용하면 원하는 번역 공급업체에서 클
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. From the toolbar, click/tap **[!UICONTROL Save]**, and then click **[!UICONTROL OK]** to close the dialog.The translation service is applied to the folder.
+1. 도구 모음에서 를 선택합니다. **[!UICONTROL 저장]**&#x200B;을 클릭한 다음 을 클릭합니다 **[!UICONTROL 확인]** 대화 상자를 닫습니다.번역 서비스가 폴더에 적용됩니다.
 
 ### 사용자 지정 번역 커넥터 적용 {#applying-custom-translation-connector}
 
 If you want to apply a custom connector for the translation services you want to use in translation workflows. 사용자 지정 커넥터를 적용하려면 먼저 다음에서 커넥터를 설치합니다. [패키지 관리자](/help/implementing/developing/tools/package-manager.md). Then, configure the connector from the Cloud Services console. After you configure the connector, it is available in the list of connectors in the Cloud Services tab described in [Applying the translation services](#applying-the-translation-services). After you apply the custom connector and run translation workflows, the **[!UICONTROL Translation Summary]** tile of the translation project displays the connector details under the heads **[!UICONTROL Provider]** and **[!UICONTROL Method]**.
 
 1. 에서 커넥터 설치 [패키지 관리자](/help/implementing/developing/tools/package-manager.md).
-1. Experience Manager 로고를 클릭/탭하고 다음 위치로 이동 **[!UICONTROL 도구 > 배포 > Cloud Service]**.
+1. Experience Manager 로고를 선택하고 다음 위치로 이동합니다 **[!UICONTROL 도구 > 배포 > Cloud Service]**.
 1. Locate the connector you installed under **[!UICONTROL Third Party Services]** in the **[!UICONTROL Cloud Services]** page.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. 클릭/탭 **[!UICONTROL 지금 구성]** 를 여는 링크 **[!UICONTROL 구성 만들기]** 대화 상자.
+1. 다음 항목 선택 **[!UICONTROL 지금 구성]** 를 여는 링크 **[!UICONTROL 구성 만들기]** 대화 상자.
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
-1. Specify a title and a name for the connector, and then click/tap **[!UICONTROL Create]**. The custom connector is available in the list of connectors in the **[!UICONTROL Cloud Services]** tab described in step 5 of [Applying the translation services](#applying-the-translation-services).
+1. 커넥터의 제목과 이름을 지정한 다음 을 선택합니다 **[!UICONTROL 만들기]**. The custom connector is available in the list of connectors in the **[!UICONTROL Cloud Services]** tab described in step 5 of [Applying the translation services](#applying-the-translation-services).
 1. Run any translation workflow described in creating translation projects after you apply the custom connector. Verify the details of the connector in the **[!UICONTROL Translation Summary]** tile of the translation project in the **[!UICONTROL Projects]** console.
 
    ![chlimage_1-220](assets/chlimage_1-220.png)

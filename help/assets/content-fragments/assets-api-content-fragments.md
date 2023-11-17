@@ -3,9 +3,9 @@ title: Assets HTTP API의 Adobe Experience Manager as a Cloud Service 콘텐츠 
 description: Adobe Experience Manager의 Headless 게재 기능의 중요한 부분인 Assets HTTP API의 콘텐츠 조각에 대한 지원에 대해 알아봅니다.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1791'
+source-wordcount: '1788'
 ht-degree: 13%
 
 ---
@@ -257,7 +257,7 @@ A [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) 는 �
 
 >[!NOTE]
 >
->자세한 내용은 [API 참조](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). 특히, [Adobe Experience Manager Assets API - 콘텐츠 조각](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>다음을 참조하십시오. [API 참조](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). 특히, [Adobe Experience Manager Assets API - 콘텐츠 조각](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
 
 ## 제한 사항 {#limitations}
 

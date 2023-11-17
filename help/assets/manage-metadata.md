@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2003'
+source-wordcount: '2000'
 ht-degree: 9%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=en) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
 [!DNL Adobe Experience Manager Assets] 는 모든 에셋에 대한 메타데이터를 유지합니다. 에셋을 보다 쉽게 분류하고 구성할 수 있으며 특정 에셋을 찾는 사람들에게 도움이 됩니다. 에 업로드된 파일에서 메타데이터를 추출하는 기능 포함 [!DNL Experience Manager Assets], 메타데이터 관리는 크리에이티브 워크플로우와 통합됩니다. 에셋으로 메타데이터를 보관하고 관리할 수 있으므로 에셋의 메타데이터를 기반으로 에셋을 자동으로 구성하고 처리할 수 있습니다.
@@ -28,7 +28,7 @@ ht-degree: 9%
 
 ## 메타데이터가 필요한 이유 {#why-metadata}
 
-메타데이터는 데이터에 대한 데이터를 의미합니다. 이와 관련하여 데이터는 디지털 자산, 즉 이미지를 나타냅니다. 메타데이터는 효율적인 에셋 관리에 있어 매우 중요합니다.
+메타데이터는 데이터에 대한 데이터를 의미합니다. 이와 관련하여 데이터는 디지털 자산, 즉 이미지를 나타냅니다. 메타데이터는 효율적인 자산 관리에 있어 매우 중요합니다.
 
 메타데이터는 에셋에 사용할 수 있는 모든 데이터의 집합이지만 해당 이미지에 반드시 포함되지는 않습니다. 메타데이터의 일부 예는 다음과 같습니다.
 
@@ -50,11 +50,11 @@ ht-degree: 9%
 
 더 많은 메타데이터는 에셋을 더 세부적으로 분류하는 데 도움이 되며 디지털 정보의 양이 증가할 때 유용합니다. 파일 이름만 기준으로 수백 개의 파일을 관리할 수 있습니다. 그러나 이 접근 방식은 확장할 수 없습니다. 관련된 사람의 수와 관리하는 자산의 수가 증가하면 부족하다.
 
-메타데이터를 추가하면 에셋이 다음과 같이 되기 때문에 디지털 에셋의 가치가 증가합니다.
+메타데이터를 추가하면 자산이 다음과 같이 되기 때문에 디지털 자산의 가치가 증가합니다.
 
 * 접근성 향상 - 시스템과 사용자가 쉽게 찾을 수 있습니다.
-* 관리 용이성 - 동일한 속성 세트를 가진 에셋을 더 쉽게 찾고 변경 사항을 적용할 수 있습니다.
-* 최대 효율 - 에셋은 더 많은 메타데이터로 더 많은 정보와 컨텍스트를 전달합니다.
+* 관리 용이성 - 동일한 속성 세트를 가진 자산을 더 쉽게 찾고 변경 사항을 적용할 수 있습니다.
+* 최대 효율 - 자산은 더 많은 메타데이터로 더 많은 정보와 컨텍스트를 전달합니다.
 
 이러한 이유로, [!DNL Assets] 은 디지털 에셋에 대한 메타데이터를 생성하고, 관리하고, 교환할 수 있는 적절한 수단을 제공합니다.
 
@@ -115,7 +115,7 @@ ID3 태그는 MP3 파일 형식을 위해 설계되었습니다. 형식에 대�
 
 ### Exif {#exif}
 
-Exif(교환 이미지 파일 형식)는 디지털 사진에서 사용되는 가장 인기 있는 메타데이터 형식입니다. JPEG, TIFF, RIFF 및 WAV와 같은 다양한 파일 형식의 메타데이터 속성에 대한 고정 어휘를 포함하는 방법을 제공합니다. Exif는 메타데이터를 메타데이터 이름과 메타데이터 값의 쌍으로 저장합니다. 이러한 메타데이터 이름-값-쌍을 의 태그와 혼동하지 않도록 태그라고도 합니다 [!DNL Experience Manager]. 최신 디지털 카메라는 Exif 메타데이터를 만들고 최신 그래픽 소프트웨어가 이를 지원합니다. Exif 형식은 특히 이미지에 대한 메타데이터 관리에 사용되는 가장 낮은 공통 분모입니다.
+Exif(교환 이미지 파일 형식)는 디지털 사진에서 사용되는 가장 인기 있는 메타데이터 형식입니다. JPEG, TIFF, RIFF 및 WAV와 같은 다양한 파일 형식으로 메타데이터 속성에 대한 고정 어휘를 임베드하는 방법을 제공합니다. Exif는 메타데이터를 메타데이터 이름과 메타데이터 값의 쌍으로 저장합니다. 이러한 메타데이터 이름-값-쌍을 의 태그와 혼동하지 않도록 태그라고도 합니다 [!DNL Experience Manager]. 최신 디지털 카메라는 Exif 메타데이터를 만들고 최신 그래픽 소프트웨어가 이를 지원합니다. Exif 형식은 특히 이미지에 대한 메타데이터 관리에 사용되는 가장 낮은 공통 분모입니다.
 
 Exif의 주요 제한 사항은 BMP, GIF 또는 PNG와 같은 일부 인기 있는 이미지 파일 형식이 지원되지 않는다는 것입니다.
 
@@ -135,7 +135,7 @@ Enterprise Manager Assets를 사용하면 여러 에셋의 메타데이터를 �
 
 1. 편집할 에셋의 위치로 이동합니다.
 1. 공통 속성을 편집할 자산을 선택합니다.
-1. 도구 모음에서 를 탭/클릭합니다 **[!UICONTROL 속성]** 을(를) 열려면 [!UICONTROL 속성] 선택한 에셋에 대한 페이지입니다.
+1. 도구 모음에서 를 선택합니다. **[!UICONTROL 속성]** 을(를) 열려면 [!UICONTROL 속성] 선택한 에셋에 대한 페이지입니다.
 
    >[!NOTE]
    >
@@ -149,9 +149,8 @@ Enterprise Manager Assets를 사용하면 여러 에셋의 메타데이터를 �
    >* 다음에서 [!UICONTROL 속성] 페이지에서 선택을 취소하여 에셋 목록에서 에셋을 제거할 수 있습니다. 에셋 목록에는 기본적으로 모든 에셋이 선택되어 있습니다. 목록에서 제거하는 에셋의 메타데이터는 업데이트되지 않습니다.
    >* 에셋 목록의 맨 위에서 옆에 있는 확인란을 선택합니다 **[!UICONTROL 제목]** 자산 선택과 목록 지우기 간을 전환합니다.
 
-
-1. 에셋에 대해 다른 메타데이터 스키마를 선택하려면 탭/클릭합니다 **[!UICONTROL 설정]** 을 누르고 원하는 스키마를 선택합니다. 변경 사항을 저장합니다.
-1. To append the new metadata with the existing metadata in fields that contain multiple values, select **[!UICONTROL Append mode]**. If you do not select this option, the new metadata replaces the existing metadata in the fields. Tap/click **[!UICONTROL Submit]**.
+1. 에셋에 대해 다른 메타데이터 스키마를 선택하려면 를 선택합니다. **[!UICONTROL 설정]** 을 누르고 원하는 스키마를 선택합니다. 변경 사항을 저장합니다.
+1. To append the new metadata with the existing metadata in fields that contain multiple values, select **[!UICONTROL Append mode]**. If you do not select this option, the new metadata replaces the existing metadata in the fields. **[!UICONTROL 제출]**&#x200B;을 선택합니다.
 
    >[!CAUTION]
    >
@@ -159,7 +158,7 @@ Enterprise Manager Assets를 사용하면 여러 에셋의 메타데이터를 �
 
 ## 처리 프로필을 사용한 사용자 지정 메타데이터 {#metadata-compute-service}
 
-로서의 에셋 [!DNL Cloud Service] 는 클라우드 네이티브 서비스를 사용하여 에셋에 대한 사용자 지정 메타데이터를 생성할 수 있습니다. 사용자 지정 메타데이터를 생성하도록 처리 프로필을 구성합니다. 다음을 참조하십시오 [처리 프로필 사용 방법](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
+로서의 에셋 [!DNL Cloud Service] 는 클라우드 네이티브 서비스를 사용하여 에셋에 대한 사용자 지정 메타데이터를 생성할 수 있습니다. 처리 프로필을 구성하여 사용자 지정 메타데이터를 생성합니다. 다음을 참조하십시오 [처리 프로필 사용 방법](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
 ![처리 중인 프로필 메타데이터 렌디션](assets/processing-profile-metadata.png)
 
@@ -214,7 +213,7 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 ### Digital Rights Management 메타데이터 {#digital-rights-management-metadata}
 
 * 참조 - [!DNL Creative Commons].
-* [!DNL XMPRights].
+* [!DNL XMPRights]
 * 플러스 - [Picture Licensing Universal System](https://www.useplus.com).
 * 프리즘 - [업계 표준 메타데이터에 대한 게시 요구 사항](https://www.idealliance.org/prism-metadata).
 * PRL - PRISM Rights 언어.
@@ -250,14 +249,14 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 
 **추가 참조**
 
-* [에셋 번역](translate-assets.md)
+* [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [에셋이 지원되는 파일 형식](file-format-support.md)
-* [에셋 검색](search-assets.md)
-* [연결된 에셋](use-assets-across-connected-assets-instances.md)
-* [에셋 보고서](asset-reports.md)
+* [자산이 지원되는 파일 형식](file-format-support.md)
+* [자산 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [자산 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
-* [에셋 다운로드](download-assets-from-aem.md)
+* [자산 다운로드](download-assets-from-aem.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
 * [일괄 메타데이터 가져오기](metadata-import-export.md)
@@ -266,4 +265,3 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 >
 >* [XMP 메타데이터](xmp-metadata.md)
 >* [메타데이터 편집 또는 추가 방법](meta-edit.md)
-

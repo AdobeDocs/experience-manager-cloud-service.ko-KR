@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 릴리스의 릴리스 노트'
 description: "[!DNL Adobe Experience Manager] 2020.7.0용 as a Cloud Service 릴리스 노트"
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 73%
+source-wordcount: '1032'
+ht-degree: 71%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 73%
 
 * 자산 마이크로서비스를 사용하고 일괄 게시 벡엔드를 향상하여 자산 게시를 전체 자산 처리 파이프라인에 필수 요소로 통합함으로서 [!DNL Dynamic Media]의 자산 게시가 더 단순화되고 더 강력해졌습니다.
 
-* 클라우드 서비스 배포와 호환되지 않는 워크플로우 단계에는 이제 [!UICONTROL 워크플로우 모델] 편집기에서 경고가 표시됩니다. 또한 클라우드 서비스 환경에서 기존 워크플로우를 실행할 때 호환되지 않는 워크플로우 단계를 건너뜁니다.
+* 클라우드 서비스 배포와 호환되지 않는 워크플로우 단계에는 이제 [!UICONTROL 워크플로우 모델] 편집기에서 경고가 표시됩니다. 또한 Cloud Service 환경에서 기존 워크플로우를 실행할 때 호환되지 않는 워크플로우 단계를 건너뜁니다.
 
 * 고객이 생성하여 로 배포되는 워크플로 모델 `/conf/global` 의 환경과 연결된 Git 프로젝트에서 [!DNL Cloud Manager] 자동으로에 배포됩니다. `/var` 따라서 다음에서 사용 가능 [!DNL Experience Manager]. 고객이 변경한 `/libs`의 제품 워크플로우 모델은 자동으로 `/var`에 배포되지 않습니다.
 
@@ -88,12 +88,12 @@ ht-degree: 73%
 
 * 이제 Cloud Manager 파이프라인이 고객 설정 변수 및 암호를 지원합니다.
 
-  자세한 내용은 파이프라인 변수 를 참조하십시오.
+  자세한 내용은 파이프라인 변수를 참조하십시오.
 
 * 이제 인증 바인딩된 비공개 Maven 저장소가 지원됩니다.
 
 * 이제 Cloud Manager 빌드 컨테이너가 Java 8과 Java 11을 모두 지원합니다.
-자세한 내용은 Java 11 지원 사용 을 참조하십시오.
+자세한 내용은 Java 11 지원 사용을 참조하십시오.
 
 ### 버그 수정 {#bug-fixes-cm}
 
@@ -105,7 +105,7 @@ ht-degree: 73%
 
 * 코드 품질 프로세스의 일부 오류로 인해 로그 파일이 올바로 생성되지 않을 수 있습니다.
 
-* 새 프로그램을 만들 때 제안된 이름은 기존 프로그램 이름의 복제본을 반환하는 경우가 있습니다.
+* 프로그램을 만들 때 제안된 이름은 기존 프로그램 이름의 복제본을 반환하는 경우가 있습니다.
 
 * 일부 큰 파이프라인 단계 로그를 사용자 인터페이스를 통해 일관되게 다운로드할 수 없습니다.
 

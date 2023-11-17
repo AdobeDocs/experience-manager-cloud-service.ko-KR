@@ -2,9 +2,9 @@
 title: 구성 및 구성 브라우저
 description: AEM(Adobe Experience Manager) 구성과 AEM에서 작업 공간 설정을 관리하는 방법을 이해합니다.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1487'
 ht-degree: 6%
 
 ---
@@ -68,8 +68,8 @@ AEM 내의 다양한 기능에 대해 구성을 만들 수 있습니다.
 
 구성 브라우저를 사용하여 AEM에서 구성을 간단하게 만들 수 있습니다.
 
-1. AEM as a Cloud Service에 로그인하고 메인 메뉴에서 를 선택합니다. **도구** -> **일반** -> **구성 브라우저**.
-1. **만들기**&#x200B;를 탭하거나 클릭합니다.
+1. AEM as a Cloud Service에 로그인하고 메인 메뉴에서 를 선택합니다. **도구** > **일반** > **구성 브라우저**.
+1. **만들기**&#x200B;를 선택합니다.
 1. 구성의 **제목** 및 **이름**&#x200B;을 입력합니다.
 
    ![구성 만들기](assets/configuration-create.png)
@@ -83,7 +83,7 @@ AEM 내의 다양한 기능에 대해 구성을 만들 수 있습니다.
    * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
    * [편집 가능한 템플릿](/help/sites-cloud/authoring/features/templates.md)
    * 다양한 클라우드 구성
-1. **만들기**&#x200B;를 탭하거나 클릭합니다.
+1. **만들기**&#x200B;를 선택합니다.
 
 >[!TIP]
 >
@@ -93,9 +93,9 @@ AEM 내의 다양한 기능에 대해 구성을 만들 수 있습니다.
 
 구성을 작업 영역으로 생각하면 해당 구성에 액세스 권한을 설정하여 누가 해당 작업 영역에 액세스할 수 있고 액세스할 수 없는지 적용할 수 있습니다.
 
-1. AEM as a Cloud Service에 로그인하고 메인 메뉴에서 를 선택합니다. **도구** -> **일반** -> **구성 브라우저**.
+1. AEM as a Cloud Service에 로그인하고 메인 메뉴에서 를 선택합니다. **도구** > **일반** > **구성 브라우저**.
 1. 편집할 구성을 선택한 다음 를 선택합니다 **속성** 도구 모음에서 다음 작업을 수행하십시오.
-1. 구성에 추가하려는 추가 기능을 선택합니다.
+1. 구성에 추가할 추가 기능을 선택합니다.
 
    >[!NOTE]
    >
@@ -110,7 +110,7 @@ AEM 내의 다양한 기능에 대해 구성을 만들 수 있습니다.
 1. 선택한 하나 이상의 사용자 또는 역할에 필요한 액세스 옵션을 선택하고 **추가**.
    ![구성에 액세스 권한 추가](assets/configuration-edit.png)
 1. 단계를 반복하여 사용자 또는 역할을 선택하고 필요에 따라 추가 액세스 권한을 할당할 수 있습니다.
-1. 탭 또는 클릭 **저장 및 닫기** 완료 시.
+1. 선택 **저장 및 닫기** 완료 시.
 
 ## 개발자로서의 구성 {#configurations-developer}
 
@@ -196,9 +196,9 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 ### 구성 사용 {#using-configurations}
 
-AEM의 구성은 슬링 컨텍스트 인식 구성을 기반으로 합니다. Sling 번들은 컨텍스트 인식 구성을 가져오는 데 사용할 수 있는 서비스 API를 제공합니다. 컨텍스트 인식 구성은 이전처럼 컨텐츠 리소스 또는 리소스 트리와 관련된 구성입니다 [위의 예에서 설명한 바와 같습니다.](#developer-example)
+AEM의 구성은 슬링 컨텍스트 인식 구성을 기반으로 합니다. Sling 번들은 컨텍스트 인식 구성을 가져오는 데 사용할 수 있는 서비스 API를 제공합니다. 컨텍스트 인식 구성은 이전처럼 컨텐츠 리소스 또는 리소스 트리와 관련된 구성입니다 [앞의 예에서 설명한 것](#developer-example).
 
-컨텍스트 인식 구성, 예 및 사용 방법에 대한 자세한 내용은 다음을 참조하십시오. [Sling 설명서를 참조하십시오.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
+컨텍스트 인식 구성, 예 및 사용 방법에 대한 자세한 내용은 다음을 참조하십시오. [Sling 설명서입니다.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html).
 
 ### ConfMgr 웹 콘솔 {#confmgr-web-console}
 

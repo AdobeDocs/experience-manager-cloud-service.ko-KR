@@ -4,9 +4,9 @@ description: 이 문서에서는 Experience Manager에서 검색 패싯을 만�
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2506'
+source-wordcount: '2504'
 ht-degree: 21%
 
 ---
@@ -108,7 +108,7 @@ Instead of manually creating a node structure for the options in the CRX reposit
 1. 다음 중 하나를 수행하십시오.
 
    * 다음에서 **[!UICONTROL 속성 이름]** 필드에서는 옵션에 대한 노드를 정의하고 해당 키-값 쌍을 지정하는 JSON 파일의 경로를 언급합니다.
-   * 누르기 ![에셋 추가 아이콘](assets/do-not-localize/aem_assets_add_icon.png) [옵션] 필드 옆에 있는 [필터] 패널에서 제공할 옵션의 표시 텍스트와 값을 지정합니다. 다른 옵션을 추가하려면 을 탭/클릭합니다 ![에셋 추가 아이콘](assets/do-not-localize/aem_assets_add_icon.png) 단계를 반복합니다.
+   * 누르기 ![에셋 추가 아이콘](assets/do-not-localize/aem_assets_add_icon.png) [옵션] 필드 옆에 있는 [필터] 패널에서 제공할 옵션의 표시 텍스트와 값을 지정합니다. 다른 옵션을 추가하려면 다음을 선택합니다. ![에셋 추가 아이콘](assets/do-not-localize/aem_assets_add_icon.png) 단계를 반복합니다.
 
 1. Ensure that **[!UICONTROL Single Select]** is cleared to let the user select multiple options for file types at a time (for example, Images, Documents, Multimedia, and Archives). If you select **[!UICONTROL Single Select]**, the user can select only one option for file types at a time.
 
@@ -145,7 +145,7 @@ Instead of manually creating a node structure for the options in the CRX reposit
 
    ![태그 술어의 일반적인 설정](assets/tags_predicate.png)
 
-1. 다음에서 **[!UICONTROL 설명]** 필드에 선택적 설명을 입력한 다음 클릭/탭합니다. **[!UICONTROL 완료]**.
+1. 다음에서 **[!UICONTROL 설명]** 필드에 선택적 설명을 입력한 다음 을 선택합니다. **[!UICONTROL 완료]**.
 1. 검색 패널로 이동합니다. 다음 **[!UICONTROL 태그]** 조건자가 검색 패널에 추가됩니다.
 1. 에셋을 검색할 태그를 지정하거나 제안 목록에서 선택합니다.
 1. 선택 **[!UICONTROL 모두 일치]** 를 클릭하여 지정한 모든 태그가 포함된 일치 항목을 검색합니다.

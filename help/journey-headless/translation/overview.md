@@ -2,10 +2,10 @@
 title: AEM Headless 번역 여정
 description: AEM의 강력한 번역 도구를 사용하여 Headless 콘텐츠 번역을 통한 가이드 여정을 시작해 보십시오.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 100%
+source-wordcount: '1040'
+ht-degree: 93%
 
 ---
 
@@ -32,7 +32,7 @@ AEM, Headless 및 번역에 대해 잘 알고 있다면 이 여정에 대한 기
 
 ## AEM 설명서 여정 {#documentation-journeys}
 
-[설명서 여정](/help/journey-documentation/documentation-journeys.md)은 AEM을 처음 접할 수 있는 독자가 최소한의 사전 주제 또는 AEM 지식을 전제로 비즈니스 문제를 처음부터 끝까지 이해하고 해결하는 데 도움이 되는 묘사를 제공하여 다양하고 복잡한 주제와 기능을 결합합니다.
+[설명서 여정](/help/journey-documentation/documentation-journeys.md) AEM을 처음 접할 수 있는 독자가 최소한의 사전 주제 또는 AEM 지식을 전제로 비즈니스 문제를 처음부터 끝까지 이해하고 해결하는 데 도움이 되는 묘사를 제공하여 다양하고 복잡한 주제와 기능을 결합합니다.
 
 설명서 여정은 Adobe의 최신 연구, Adobe 컨설턴트의 입증된 구현 경험 및 고객 프로젝트의 피드백을 통해 제공되는 모범 사례 원칙을 중심으로 설계되었습니다.
 
@@ -53,7 +53,7 @@ Adobe가 AEM을 통해 AEM 관련 Headless 비즈니스 사례를 해결하는 �
 | 관리자 | AEM의 기본 설정 및 구성 관리 | 번역 전문가는 관리자와 함께 작업하여 번역 커넥터 설치와 같은 번역에 필요한 구성 변경을 수행합니다. |
 | 콘텐츠 설계자 | Headless 방식으로 사이트에 게재할 데이터에 대한 요구 사항 분석 및 해당 데이터의 구조 정의 | 번역 전문가는 콘텐츠 설계자와 함께 작업하여 콘텐츠를 간편하게 번역할 수 있도록 콘텐츠의 구성을 정의합니다. |
 
-이 여정에서 제공하는 정보는 모든 담당자에게 유용하지만 일부 정보는 특정 역할에 불필요할 수 있습니다. [추가 역할을 다루는 다가오는 여정](/help/journey-documentation/documentation-journeys.md#journeys)은 추후에 업데이트될 예정입니다.
+이 여정의 정보는 모든 담당자에게 유용할 수 있지만 일부 정보는 특정 역할에게 불필요할 수 있습니다. [추가 역할을 다루는 다가오는 여정](/help/journey-documentation/documentation-journeys.md#journeys)은 추후에 업데이트될 예정입니다.
 
 ## Headless 번역 여정 {#the-journey}
 
@@ -78,7 +78,7 @@ Adobe가 AEM을 통해 AEM 관련 Headless 비즈니스 사례를 해결하는 �
 
 설명서 여정에서는 복잡하고 상호 연관된 프로세스 및 기능을 안내하는 내러티브를 제공하여 AEM을 통해 비즈니스 문제를 해결하는 방법을 보여 줍니다. 여정은 한 가지 비즈니스 요구 사항을 충족시키기 위해 여러 기능이 함께 작동하는 방식을 보여 줍니다.
 
-따라서 여정은 독자적으로 설계되었습니다. 하지만 여러 여정이 서로 관련될 수 있습니다. AEM의 강력한 기능들이 함께 작동하는 방법에 대한 자세한 내용은 이들 추가 여정을 확인하십시오.
+따라서 여정은 독자적으로 설계되었습니다. 그러나 이들 중 일부는 서로 관련될 수 있습니다. AEM의 강력한 기능들이 함께 작동하는 방법에 대한 자세한 내용은 이들 추가 여정을 확인하십시오.
 
 * [Headless 작성 여정](/help/journey-headless/author/overview.md) - AEM의 강력하고 유연한 Headless 기능과 각각의 능력, 그리고 사용자의 첫 Headless 프로젝트에서 콘텐츠를 모델링하는 방법에 대한 가이드 여정을 시작해 보십시오.
 * [Headless 설계자 여정](/help/journey-headless/architect/overview.md) - 여기에서 Adobe Experience Manager as a Cloud Service의 강력하고 유연한 Headless 기능을 접해 보고 프로젝트 콘텐츠를 모델링하는 방법을 알아보십시오.

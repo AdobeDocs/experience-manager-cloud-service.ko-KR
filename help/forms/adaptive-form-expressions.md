@@ -1,9 +1,9 @@
 ---
 title: 적응형 양식 표현식이란?
 description: 적응형 Forms 표현식을 사용하여 자동 유효성 검사, 계산을 추가하고 섹션의 가시성을 켜거나 끕니다.
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2697'
+source-wordcount: '2698'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ JavaScript™은 적응형 Forms의 표현식 언어입니다. 모든 표현식�
 
 **`marital_status.value == "married" ? ["1=One", "2=two"] : ["0=Zero"]`.**
 
-다음 값 때마다: **marital_status** 필드가 변경되면 표현식이 다시 시도됩니다. REST 서비스에서 드롭다운을 채울 수도 있습니다. <!-- For detailed information, see [Dynamically populating dropdowns](dynamically-populate-dropdowns.md). -->
+다음 값 때마다: **marital_status** 필드가 변경되면 표현식이 다시 시도됩니다. REST 서비스에서 드롭다운 목록을 채울 수도 있습니다. <!-- For detailed information, see [Dynamically populating dropdowns](dynamically-populate-dropdowns.md). -->
 
 ### 요약 표현식 {#summary}
 

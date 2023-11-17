@@ -2,7 +2,7 @@
 title: 검색 양식 구성
 description: Adobe Experience Manager as a Cloud Service에 대해 Forms 검색을 구성하는 중입니다.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2035'
 ht-degree: 16%
@@ -64,7 +64,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
 
 >[!NOTE]
 >
->에셋 관련 검색 양식에 대한 자세한 내용은 [에셋 - 검색 패싯](/help/assets/search-facets.md)
+>에셋 관련 검색 양식에 대한 자세한 내용은 [에셋 - 검색 패싯](/help/assets/search-facets.md).
 
 
 ## 술어 및 설정 {#predicates-and-their-settings}

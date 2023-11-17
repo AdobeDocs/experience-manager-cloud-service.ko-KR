@@ -2,9 +2,9 @@
 title: 서버측 API용 액세스 토큰 생성
 description: 보안 JWT 토큰을 생성하여 타사 서버와 AEM as a Cloud Service 간의 통신을 용이하게 하는 방법에 대해 알아봅니다
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2090'
+source-wordcount: '2089'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 서버 간 흐름 {#the-server-to-server-flow}
 
-AEM 작성자의 AEM 사용자 또는 AEM 관리자 제품 프로필 멤버인 IMS 조직 관리자 역할이 있는 사용자는 AEM as a Cloud Service에서 자격 증명 세트를 생성할 수 있습니다. 각 자격 증명은 인증서(공개 키), 개인 키 및 `clientId` 및 `clientSecret`. 이러한 자격 증명은 나중에 AEM as a Cloud Service 환경 관리자 역할이 있는 사용자가 검색할 수 있으며 비 AEM 서버에 설치하고 보안 키로 주의 깊게 처리해야 합니다. 이 JSON 형식 파일에는 AEM as a Cloud Service API와 통합하는 데 필요한 모든 데이터가 포함되어 있습니다. 이 데이터는 서명된 JWT 토큰을 생성하는 데 사용되며, IMS(Identity Management 서비스) Adobe과 IMS 액세스 토큰으로 교환됩니다. 그런 다음 이 액세스 토큰을 Bearer 인증 토큰으로 사용하여 AEM에 as a Cloud Service으로 요청할 수 있습니다. 자격 증명의 인증서는 기본적으로 1년 후에 만료되지만, 설명된 대로 필요할 때 새로 고칠 수 있습니다 [여기](#refresh-credentials).
+AEM 작성자의 AEM 사용자 또는 AEM 관리자 제품 프로필 멤버인 IMS 조직 관리자 역할이 있는 사용자는 AEMas a Cloud Service 에서 자격 증명 세트를 생성할 수 있습니다. 각 자격 증명은 인증서(공개 키), 개인 키 및 `clientId` 및 `clientSecret`. 이러한 자격 증명은 나중에 AEM as a Cloud Service 환경 관리자 역할이 있는 사용자가 검색할 수 있으며 비 AEM 서버에 설치하고 보안 키로 주의 깊게 처리해야 합니다. 이 JSON 형식 파일에는 AEM as a Cloud Service API와 통합하는 데 필요한 모든 데이터가 포함되어 있습니다. 이 데이터는 서명된 JWT 토큰을 생성하는 데 사용되며, IMS(Identity Management 서비스) Adobe과 IMS 액세스 토큰으로 교환됩니다. 그런 다음 이 액세스 토큰을 Bearer 인증 토큰으로 사용하여 AEM에 as a Cloud Service으로 요청할 수 있습니다. 자격 증명의 인증서는 기본적으로 1년 후에 만료되지만, 설명된 대로 필요할 때 새로 고칠 수 있습니다 [여기](#refresh-credentials).
 
 서버 간 흐름에는 다음 단계가 포함됩니다.
 
@@ -49,7 +49,7 @@ AEM as a Cloud Service 개발자 콘솔에 대한 액세스 권한이 있는 사
 
 ![자격 증명 보기](/help/implementing/developing/introduction/assets/s2s-viewcredentials.png)
 
-사용자는 나중에 보기 작업을 사용하여 자격 증명을 볼 수 있습니다. 또한 이 문서의 뒷부분에 설명된 대로 사용자는 동일한 기술 계정에 대한 자격 증명을 편집할 수 있습니다. 인증서를 갱신하거나 취소해야 하는 경우에 대해 새 개인 키 또는 인증서를 만들어 이러한 편집을 수행합니다.
+사용자는 나중에 보기 작업을 사용하여 자격 증명을 볼 수 있습니다. 또한 이 문서의 뒷부분에 설명된 대로 사용자는 동일한 기술 계정에 대한 자격 증명을 편집할 수 있습니다. 인증서를 갱신하거나 취소해야 하는 경우에 대해 개인 키 또는 인증서를 생성하여 이 편집을 수행합니다.
 
 AEM as a Cloud Service 환경 관리자 역할이 있는 사용자는 나중에 추가 기술 계정에 대한 자격 증명을 만들 수 있습니다. 이 기능은 API마다 액세스 요구 사항이 다를 때 유용합니다. 예를 들어 읽기 및 읽기/쓰기가 있습니다.
 

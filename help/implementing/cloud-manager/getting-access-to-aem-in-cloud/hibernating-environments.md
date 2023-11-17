@@ -2,10 +2,10 @@
 title: 샌드박스 환경 최대 절전 모드 설정 및 해제
 description: 샌드박스 프로그램의 환경이 자동으로 최대 절전 모드로 전환되는 방법과 최대 절전 모드를 해제하는 방법에 대해 알아봅니다.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 93%
+source-wordcount: '683'
+ht-degree: 85%
 
 ---
 
@@ -51,7 +51,7 @@ Developer Console에서 샌드박스 프로그램을 수동으로 최대 절전 
 
 ![최대 절전 모드 확인](assets/hibernate-4.png)
 
-Developer Console에서 **Pod** 드롭다운 위의 경로에서 **환경** 링크를 클릭하여 최대 절전 모드로 전환할 환경 목록을 확인할 수도 있습니다.
+Developer Console에서 **환경** 위의 경로에서 링크 **Pod** 최대 절전 모드로 전환할 환경 목록에 대한 드롭다운 목록입니다.
 
 ![최대 절전 모드로 전환할 환경 목록](assets/hibernate-1b.png)
 
@@ -88,7 +88,7 @@ Developer Console에서 샌드박스 프로그램을 수동으로 최대 절전 
    ![최대 절전 모드 해제 완료](assets/de-hibernation-img4.png)
 
 
-Developer Console에서 **Pod** 드롭다운 위의 경로에서 **환경** 링크를 클릭하여 최대 절전 모드를 해제할 환경 목록을 확인할 수도 있습니다.
+Developer Console에서 **환경** 위의 경로에서 링크 **Pod** 최대 절전 모드를 해제할 환경 목록에 대한 드롭다운 목록입니다.
 
 ![최대 절전 모드로 전환된 Pod 목록](assets/de-hibernate-1b.png)
 

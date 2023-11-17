@@ -5,9 +5,9 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2585'
+source-wordcount: '2584'
 ht-degree: 18%
 
 ---
@@ -313,7 +313,7 @@ Adobe Developer 콘솔에서 프로젝트 및 API는 Brand Portal 테넌트(조�
 
    ![Create New Integration](assets/create-new-integration1.png)
 
-1. Create a new integration page opens. 
+1. Create an integration page. 
    
    Select your organization from the drop-down list.
 
@@ -377,7 +377,7 @@ IMS 계정을 구성하려면 다음 단계를 수행하십시오.
 >
 >IMS 구성은 하나만 있어야 합니다.
 >
->IMS 구성이 상태 검사를 통과하는지 확인합니다. 구성이 상태 검사를 통과하지 않으면 구성이 잘못된 것입니다. 이 구성을 삭제하고 유효한 새 구성을 만들어야 합니다.
+>IMS 구성이 상태 검사를 통과하는지 확인합니다. 구성이 상태 검사를 통과하지 않으면 구성이 잘못된 것입니다. 이 구성을 삭제하고 다른 유효한 구성을 만들어야 합니다.
 
 ### 클라우드 서비스 구성 {#configure-the-cloud-service}
 

@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 아키텍처 소개
 description: Adobe Experience Manager as a Cloud Service 아키텍처 소개.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: b610de53d1bd1b120a2642336aac1713444bfd3e
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2665'
+ht-degree: 99%
 
 ---
 
@@ -176,7 +176,7 @@ AEM 프로젝트의 코드 및 구성은 변경 사항이 있을 때 배포 파�
    * AEM 작성 및 게시 계층에 대한 서버측 Java 코드 및 OSGI 구성을 저장합니다.
 * AEM 프론트엔드:
    * AEM 작성 및 게시 계층에 대한 클라이언트측 JS, CSS 및 HTML 코드를 저장합니다.
-clientlibs에 대한 자세한 내용은 [AEM as a Cloud Service에서 클라이언트측 라이브러리 사용](/help/implementing/developing/introduction/clientlibs.md)을 참조하십시오.
+clientlib에 대한 자세한 내용은 [AEM에서 클라이언트측 라이브러리 as a Cloud Service 사용.](/help/implementing/developing/introduction/clientlibs.md)
 * AEM 웹 계층:
    * AEM 게시 계층에 대한 Dispatcher 구성 파일을 저장합니다.
 * AEM 구성:

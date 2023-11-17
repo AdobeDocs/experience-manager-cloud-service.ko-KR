@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service에 대한 OSGi 구성
 description: 비밀 값 및 환경별 값이 있는 OSGi 구성
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3318'
+source-wordcount: '3317'
 ht-degree: 1%
 
 ---
@@ -78,10 +78,10 @@ AEM as a Cloud Service 실행 모드는 환경 유형 및 서비스를 기반으
 
 실행 모드에서 지정한 OSGi 구성 값은 다음 방법으로 확인할 수 있습니다.
 
-1. AEM을 Cloud Services 환경으로 열기 [개발자 콘솔](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html)
-1. 다음을 사용하여 검사할 서비스 계층 선택 __Pod__ 드롭다운
+1. AEM을 Cloud Service 환경으로 열기 [개발자 콘솔](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html)
+1. 다음을 사용하여 검사할 서비스 계층 선택 __Pod__ 드롭다운 목록
 1. 선택 __상태__ 탭
-1. 선택 __구성__ 다음에서 __상태 덤프__ 드롭다운
+1. 선택 __구성__ 다음에서 __상태 덤프__ 드롭다운 목록
 1. 선택 __상태 가져오기__ 단추
 
 결과 보기에는 해당 OSGi 구성 값과 함께 선택한 계층에 대한 모든 OSGi 구성 요소 구성이 표시됩니다. 이러한 값은 아래 AEM 프로젝트의 소스 코드에 있는 OSGi 구성 값과 상호 참조할 수 있습니다. `/apps/example/osgiconfig/config.<runmode(s)>`.
@@ -358,7 +358,7 @@ config.dev
 </tr>
 </table>
 
-**예제 2**
+**예 2**
 
 인텐트는 OSGi 속성 값에 대한 것입니다 `my_var1` 는 단계, 프로덕션마다, 세 가지 개발 환경마다 다릅니다. 따라서 값을 설정하려면 Cloud Manager API를 호출해야 합니다 `my_var1` 각 개발 환경에 대해
 
@@ -403,7 +403,7 @@ config.dev
 </tr>
 </table>
 
-**예제 3**
+**예 3**
 
 인텐트는 OSGi 속성 값에 대한 것입니다 `my_var1` 스테이징, 프로덕션 및 개발 환경 중 하나에 대해서만 동일하지만 다른 두 개발 환경에 대해서는 다릅니다. 이 경우 값을 설정하려면 Cloud Manager API를 호출해야 합니다 `my_var1` 스테이지 및 프로덕션과 동일한 값을 가져야 하는 개발 환경을 포함하여 각 개발 환경에 대해. 폴더에 설정된 값을 상속하지 않습니다. **config**.
 

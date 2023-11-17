@@ -2,10 +2,10 @@
 title: 페이지 주석 추가
 description: 주석 모드를 사용해 콘텐츠 검토 프로세스를 지원하기 위해 스티커 메모를 사용하듯이 페이지에 주석 및 스케치를 남깁니다.
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '694'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '676'
+ht-degree: 83%
 
 ---
 
@@ -43,11 +43,11 @@ ht-degree: 100%
 
    ![주석 예제](/help/sites-cloud/authoring/assets/annotation-sketches.png)
 
-1. 주석 대화 상자를 열고 세부 정보를 확인하려면 주석을 클릭하거나 탭합니다.
+1. 주석을 선택하여 주석 대화 상자를 열고 세부 정보를 확인합니다.
 
    ![주석 세부 정보](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
-1. 주석 모드에서 나가 이전에 사용한 모드로 돌아가려면 상단 도구 모음 오른쪽에 있는 x 버튼을 탭하거나 클릭합니다.
+1. 주석 모드를 종료하고 이전에 사용한 모드로 돌아가려면 상단 도구 모음 오른쪽에 있는 x 버튼을 선택합니다.
 
 ## 주석 추가 및 편집 {#annotating-a-component}
 
@@ -55,9 +55,9 @@ ht-degree: 100%
 
 1. 페이지에서 [주석 모드를 시작](#annotate-mode)합니다.
 
-1. 주석 추가를 시작하려면 추석 추가 아이콘(도구 모음 왼쪽의 더하기 기호)을 클릭하거나 탭합니다.
+1. 주석 추가를 시작하려면 [주석 추가] 아이콘(도구 모음 왼쪽의 더하기 기호)을 선택합니다.
 
-1. 필요한 구성 요소(파란색 테두리로 강조 표시되고 주석을 추가할 수 있는 구성 요소)를 클릭하거나 탭하여 주석을 추가하고 대화 상자를 엽니다.
+1. 필요한 구성 요소(파란색 테두리로 강조 표시되어 주석을 추가할 수 있는 구성 요소)를 선택하여 대화 상자를 엽니다.
 
    ![주석 추가](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
@@ -80,9 +80,9 @@ ht-degree: 100%
 
 1. 특정 주석의 편집이 끝나면 다음 작업을 수행할 수 있습니다.
 
-   * 텍스트 표시자를 클릭하거나 탭하여 주석을 엽니다. 열면 전체 텍스트를 보고, 변경 내용을 적용하거나 [주석을 삭제](#deleting-annotations)할 수 있습니다.
+   * 텍스트 표시자를 선택하여 주석을 엽니다. 열면 전체 텍스트를 보고, 변경 내용을 적용하거나 [주석을 삭제](#deleting-annotations)할 수 있습니다.
    * 텍스트 표시자의 위치를 변경합니다.
-   * 스케치 선을 클릭하거나 탭하여 스케치를 선택하고 원하는 위치로 드래그합니다.
+   * 스케치 선을 선택하여 해당 스케치를 선택하고 원하는 위치로 드래그합니다.
    * 구성 요소 이동 또는 복사
       * 모든 관련 주석과 해당 스케치가 이동 또는 복사되지만 단락을 기준으로 해당 위치는 그대로 유지됩니다.
 
@@ -101,9 +101,9 @@ ht-degree: 100%
 
 1. 페이지에서 [주석 모드를 시작](#annotate-mode)합니다.
 
-1. 텍스트 표시자를 클릭/탭하여 주석을 엽니다.
+1. 텍스트 표시자를 선택하여 주석을 엽니다.
 
-1. [삭제] 아이콘을 클릭하거나 탭합니다.
+1. 삭제 아이콘을 선택합니다.
 
    ![주석 삭제](/help/sites-cloud/authoring/assets/annotation-delete.png)
 
@@ -119,7 +119,7 @@ ht-degree: 100%
 
 1. 페이지에서 [주석 모드를 시작](#annotate-mode)합니다.
 
-1. 스케치를 클릭하거나 탭합니다. AEM에서는 진한 파란색 상자로 강조 표시됩니다.
+1. 스케치를 선택합니다. AEM에서는 진한 파란색 상자로 강조 표시됩니다.
 
    ![삭제하려는 스케치를 선택합니다.](/help/sites-cloud/authoring/assets/annotation-sketch-delete.png)
 

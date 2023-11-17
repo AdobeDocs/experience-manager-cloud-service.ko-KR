@@ -2,10 +2,10 @@
 title: AEM 빠른 사이트 생성 여정
 description: 사용하기 쉬운 AEM 빠른 사이트 생성 도구를 통해 AEM 사이트의 프론트엔드 개발을 간소화하고 AEM 백엔드에 대한 지식 없이 사이트를 간편하게 맞춤화할 수 있는 가이드 여정을 시작해 보십시오.
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 96%
+source-wordcount: '1029'
+ht-degree: 89%
 
 ---
 
@@ -29,7 +29,7 @@ AEM 빠른 사이트 생성 도구는 사이트 생성을 위한 개발자 지�
 
 ## AEM 설명서 여정 {#documentation-journeys}
 
-[설명서 여정](/help/journey-documentation/documentation-journeys.md)은 AEM을 처음 접할 수 있는 독자가 최소한의 사전 주제 또는 AEM 지식을 전제로 비즈니스 문제를 처음부터 끝까지 이해하고 해결하는 데 도움이 되는 묘사를 제공하여 다양하고 복잡한 주제와 기능을 결합합니다.
+[설명서 여정](/help/journey-documentation/documentation-journeys.md) AEM을 처음 접할 수 있는 독자가 최소한의 사전 주제 또는 AEM 지식을 전제로 비즈니스 문제를 처음부터 끝까지 이해하고 해결하는 데 도움이 되는 묘사를 제공하여 다양하고 복잡한 주제와 기능을 결합합니다.
 
 설명서 여정은 Adobe의 최신 연구, Adobe 컨설턴트의 입증된 구현 경험 및 고객 프로젝트의 피드백을 통해 제공되는 모범 사례 원칙을 중심으로 설계되었습니다.
 
@@ -67,7 +67,7 @@ Adobe가 AEM을 통해 AEM 관련 사이트 비즈니스 사례를 해결하는 
 
 * AEM 또는 Cloud Manager 관리자이거나 프론트엔드 개발자 및 관리자 역할을 모두 수행하는 경우 또는 AEM의 전체적인 프로세스를 이해하고자 하는 경우, 아래 설명된 대로 [Cloud Manager 이해](cloud-manager.md)를 통해 여정을 처음부터 시작하십시오.
 * 프론트엔드 개발만 담당하며 AEM 및 Cloud Manager 관리자와 상호 작용해야 하는 경우, 바로 [git 저장소 액세스 정보 가져오기](retrieve-access.md)로 건너뛰어 AEM git 저장소에 대한 액세스 권한을 얻고 맞춤화를 시작할 수 있습니다.
-* AEM Sites 및 Cloud Manager가 함께 작동하는 방법에 대해 이미 알고 있으며 바로 구성을 시작하고자 하는 경우, [템플릿으로 새 사이트 생성으로 바로 건너뛸 수 있습니다.](create-site.md)
+* AEM Sites과 Cloud Manager가 함께 작동하는 방법에 대해 이미 알고 있으며 바로 구성을 시작하고자 하는 경우 [템플릿으로 사이트 생성으로 바로 이동합니다.](create-site.md)
 
 ## 추가 리소스 {#additional-resources}
 

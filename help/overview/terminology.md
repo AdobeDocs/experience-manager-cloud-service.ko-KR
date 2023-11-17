@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 소개 - 용어
 description: Adobe Experience Manager as a Cloud Service 소개 - 용어.
 exl-id: a76f68f1-4f84-4844-a099-0952707cd96d
-source-git-commit: e83ce89aedb3c5ea22243d0f86a528286e994338
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ Adobe Experience Manager(AEM) as a Cloud Service와 관련하여 다음과 같�
 
 | 제품 | 설명 |
 |---|---|
-| AEM as a Cloud Service | 클라우드 기반의 AEM 애플리케이션 활용 방법 |
+| AEM as a Cloud Service | AEM 애플리케이션을 사용하는 클라우드 기반 방법 |
 | AEM Assets as a Cloud Service | 더 넓은 Adobe Experience Cloud 및 Adobe Creative Cloud 생태계와 통합하면서도 디지털 에셋을 수집, 처리 및 관리할 수 있는 클라우드 기반의 확장 가능한 솔루션으로서의 DAM(Digital Asset Management) 기능. |
 | AEM Sites as a Cloud Service | AEM Sites 애플리케이션을 사용하는 AEM as a Cloud Service 인스턴스. |
 

@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.1.0 릴리스 정보.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.1.0 릴리스 정보.'
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: fe19e99baa921247f86542c6643c1faf837e7d91
 workflow-type: tm+mt
-source-wordcount: '1074'
-ht-degree: 94%
+source-wordcount: '1072'
+ht-degree: 88%
 
 ---
 
@@ -88,12 +88,12 @@ ht-degree: 94%
 * 향상된 myAccount 구성 요소
 * 제품 추천 구성 요소는 추가 페이지 유형(홈 페이지, 장바구니, 주문 확인)을 지원합니다.
 * **위시리스트**
-   * 로그인한 방문자는 위시리스트에 제품을 추가할 수 있습니다.
-   * myAccount를 통해 위시리스트 및 해당 제품을 관리할 수 있습니다.
-   * “위시리스트에 추가” 버튼은 정책을 통해 구성 요소 수준에서 활성화/비활성화할 수 있습니다(예: 제품 티저, 제품 세부 사항).
+   * 로그인한 방문자는 wantlist에 제품을 추가할 수 있습니다.
+   * myAccount를 통해 wantlist 및 해당 제품을 관리할 수 있습니다.
+   * &quot;wantlist에 추가&quot; 버튼은 정책을 통해 구성 요소 수준에서 활성화/비활성화할 수 있습니다(예: 제품 티저, 제품 세부 사항)
    * 핵심 구성 요소 및 AEM Venia Storefront에서 사용 가능
 
-![위시리스트](/help/assets/CIF/wishlist.png)
+<!-- Image was not found during PR validation despite correct path ![Wishlist](/help/assets/CIF/wantlist.png) -->
 
 ## Cloud Manager {#cloud-manager}
 

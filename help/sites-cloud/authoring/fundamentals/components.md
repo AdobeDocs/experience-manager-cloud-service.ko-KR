@@ -2,16 +2,16 @@
 title: 구성 요소
 description: 구성 요소는 AEM에서 콘텐츠 페이지의 기본적인 작성 빌딩 블록입니다.
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 100%
+source-wordcount: '349'
+ht-degree: 94%
 
 ---
 
 # 구성 요소 {#components}
 
-구성 요소는 AEM(Adobe Experience Manager)에서 콘텐츠 페이지의 기본적인 작성 빌딩 블록입니다. 이미지, 텍스트, 제목 등의 구성 요소를 손쉽게 드래그하여 놓는 것으로 콘텐츠를 작성할 수 있습니다.
+구성 요소는 AEM(Adobe Experience Manager)에서 콘텐츠 페이지의 기본적인 작성 빌딩 블록입니다. 이미지, 텍스트, 제목 등과 같은 구성 요소를 쉽게 끌어다 놓아 콘텐츠를 작성할 수 있습니다.
 
 기본적으로 AEM에는 웹 사이트 작성자에게 광범위한 기능을 제공하는 다양한 구성 요소가 포함되어 있습니다. [페이지를 편집](/help/sites-cloud/authoring/fundamentals/editing-content.md)하고 기본 기능 영역(구성 요소 그룹이라고 함)별로 그룹화할 때 사용하면 필터링에 도움이 됩니다.
 

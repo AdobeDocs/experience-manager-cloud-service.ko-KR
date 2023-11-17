@@ -2,10 +2,10 @@
 title: Headless 콘텐츠 및 AEM에서의 번역에 대해 알아보기
 description: Headless 개념, AEM에 매핑하는 방법 및 AEM 번역 이론에 대해 알아봅니다.
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '742'
-ht-degree: 97%
+ht-degree: 91%
 
 ---
 
@@ -26,7 +26,7 @@ Headless 개념, AEM에 매핑하는 방법 및 AEM 번역 이론에 대해 알�
 
 ![클래식 전체 스택 CMS](/help/journey-headless/developer/assets/full-stack.png)
 
-전체 스택 CMS에서 콘텐츠 조작에 대한 모든 기능은 CMS에 있습니다. 시스템 기능은 CMS 스택의 다양한 구성 요소를 구성합니다. 전체 스택 솔루션은 장점이 많습니다.
+전체 스택 CMS에서 콘텐츠를 조작하는 기능은 CMS에 있습니다. 시스템 기능은 CMS 스택의 다양한 구성 요소를 구성합니다. 전체 스택 솔루션은 장점이 많습니다.
 
 * 유지 관리할 한 개의 시스템이 있습니다.
 * 콘텐츠는 중앙 집중식으로 관리됩니다.
@@ -47,7 +47,7 @@ Headless CMS에 대해 말하자면 CMS는 콘텐츠를 관리하고 소비자�
 
 ![Headless CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
-AR 경험, 웹 샵, 모바일 경험, 프로그레시브 웹 앱(PWA) 등 소비 서비스는 Headless CMS에서 콘텐츠를 가져와 자체 렌더링을 제공합니다. 콘텐츠에 대한 자체 헤드를 처리합니다.
+AR 경험, 웹 샵, 모바일 경험, 점진적 웹 앱(PWA) 등과 같은 다양한 소비 서비스는 Headless CMS에서 콘텐츠를 가져와 자체 렌더링을 제공합니다. 콘텐츠에 대한 자체 헤드를 처리합니다.
 
 헤드가 생략되면 복잡성이 제거되어 CMS를 간소화합니다. 이렇게 하면 실제로 콘텐츠가 필요하고 해당 렌더링에 가장 적합한 서비스로 콘텐츠를 렌더링하는 책임이 이전되기도 합니다.
 

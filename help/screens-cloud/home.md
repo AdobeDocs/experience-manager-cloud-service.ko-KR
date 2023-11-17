@@ -3,10 +3,10 @@ title: AEM Screens as a Cloud Service
 description: AEM Screens와 이 디지털 사이니지 솔루션의 작동 방식에 대해 자세히 알아보십시오.
 landing-page-description: AEM Screens as a Cloud Service에 대해 이해합니다.
 exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 76%
+source-wordcount: '420'
+ht-degree: 72%
 
 ---
 

@@ -2,10 +2,10 @@
 title: ContextHub 데이터를 사용하여 페이지 미리보기
 description: ContextHub 도구 모음은 ContextHub 저장소의 데이터를 표시하고 저장소 데이터를 변경할 수 있도록 해 주며 콘텐츠를 미리 보는 데 유용합니다.
 exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 60%
+source-wordcount: '360'
+ht-degree: 49%
 
 ---
 
@@ -15,7 +15,7 @@ ContextHub 도구 모음은 ContextHub 저장소의 데이터를 표시하고 �
 
 도구 모음은 하나 이상의 UI 모듈이 포함된 일련의 UI 모드로 구성됩니다.
 
-* UI 모드는 도구 모음의 왼쪽에 표시되는 아이콘입니다. 아이콘을 클릭하거나 탭하면 도구 모음에 포함된 UI 모듈이 표시됩니다.
+* UI 모드는 도구 모음의 왼쪽에 표시되는 아이콘입니다. 아이콘을 선택하면 도구 모음에 포함된 UI 모듈이 표시됩니다.
 * UI 모듈은 하나 이상의 ContextHub 저장소에서 가져온 데이터를 표시합니다. 일부 UI 모듈을 사용하면 스토어 데이터를 조작할 수도 있습니다.
 
 ContextHub는 여러 UI 모드 및 UI 모듈을 설치합니다. 관리자가 다음을 수행할 수 있습니다. [구성된 ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) 다른 항목을 표시합니다.
@@ -26,11 +26,11 @@ ContextHub 도구 모음은 미리보기 모드에서 사용할 수 있습니다
 
 ![ContextHub 도구 모음](/help/sites-cloud/authoring/assets/contexthub-toolbar.png)
 
-1. 편집할 수 있도록 페이지가 열린 상태에서 도구 모음의 [미리보기]를 클릭하거나 탭합니다.
+1. 편집할 페이지를 연 상태에서 도구 모음에서 미리보기 를 선택합니다.
 
    ![미리보기 버튼](/help/sites-cloud/authoring/assets/contexthub-preview-button.png)
 
-1. 도구 모음을 표시하려면 ContextHub 아이콘을 클릭하거나 탭합니다.
+1. 도구 모음을 표시하려면 ContextHub 아이콘을 선택합니다.
 
    ![ContextHub 버튼](/help/sites-cloud/authoring/assets/contexthub-button.png)
 
@@ -56,6 +56,6 @@ UI 모듈은 도구 모음에 있는 하나 이상의 ContextHub 저장소에서
 
 ### 전체 화면 모드 {#fullscreen-mode}
 
-팝업 오버레이는 클릭하거나 탭하여 전체 브라우저 창이나 화면을 덮도록 팝업 콘텐츠를 확장하는 아이콘을 포함할 수 있습니다.
+팝업 오버레이는 전체 브라우저 창이나 화면을 덮도록 팝업 콘텐츠를 확장하기 위해 선택한 아이콘을 포함할 수 있습니다.
 
 ![전체 화면 버튼](/help/sites-cloud/authoring/assets/contexthub-fullscreen.png)

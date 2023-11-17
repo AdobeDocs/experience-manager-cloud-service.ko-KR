@@ -2,10 +2,10 @@
 title: DNS 설정 구성
 description: 사용자 정의 도메인 이름에 대한 DNS 설정을 구성하는 방법에 대해 알아봅니다.
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
-source-git-commit: 9fd7c17fce8c11809eabcc6387cbace0ebdc64a2
-workflow-type: ht
-source-wordcount: '338'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '337'
+ht-degree: 95%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 100%
 
 Apex 도메인은 `example.com`과 같은 하위 도메인을 포함하지 않는 사용자 정의 도메인입니다. Apex 도메인은 DNS 공급자를 통해 `A`, `ALIAS` 또는 `ANAME` 레코드로 구성됩니다. Apex 도메인은 특정 IP 주소를 가리켜야 합니다.
 
-도메인 공급자를 통해 도메인의 DNS 설정에 다음 `A` 레코드를 모두 추가합니다.
+다음 추가 `A` 도메인 공급자를 통해 도메인의 DNS 설정에 기록합니다.
 
 * `A RECORD`
 

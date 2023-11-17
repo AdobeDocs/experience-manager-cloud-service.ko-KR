@@ -2,9 +2,9 @@
 title: Screens as a Cloud Service FAQ
 description: 이 페이지에서는 Screens as a Cloud Service FAQ에 대해 설명합니다.
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '454'
 ht-degree: 2%
 
 ---
@@ -38,7 +38,7 @@ scripts=[
 
 ## AEM Screens as a Cloud Service 채널에서 원활한 이미지 렌디션에 어떤 이미지 형식을 권장합니까?{#screens-cloud-image-format}
 
-형식의 이미지를 사용하는 것이 좋습니다 `.png` 및 `.jpeg` 최고의 디지털 사이니지 경험을 위해 AEM Screens as a Cloud Service 채널에서.
+Adobe은 형식의 이미지를 사용할 것을 권장합니다 `.png` 및 `.jpeg` 최고의 디지털 사이니지 경험을 위해 AEM Screens as a Cloud Service 채널에서.
 형식의 이미지 `*.tif` (태그 이미지 파일 형식)은 AEM Screens as a Cloud Service에서 지원되지 않습니다. 채널에 이 이미지 형식이 있으면 플레이어 측에서 이미지가 렌더링되지 않습니다.
 
 ## 개발자 모드(온라인)의 채널이 AEM Screens Player에서 렌더링되지 않는 경우 어떻게 해야 합니까?{#screens-cloud-online-channel-blank-iframe}

@@ -2,10 +2,10 @@
 title: 페이지 게시
 description: AEM에서 다양한 메커니즘을 사용하여 페이지를 게시 및 게시 취소하는 방법에 대해 알아봅니다.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1801'
-ht-degree: 97%
+ht-degree: 94%
 
 ---
 
@@ -224,7 +224,7 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
 ### 편집기에서 게시 취소 {#unpublishing-from-the-editor}
 
-페이지를 편집할 때 해당 페이지의 게시를 취소하려는 경우 [페이지를 게시](#publishing-from-the-editor)한 만큼 **페이지 정보** 메뉴에서 **페이지 게시 취소**&#x200B;를 선택합니다.
+페이지를 편집할 때 해당 페이지의 게시를 취소하려면 을 선택합니다 **페이지 게시 취소** 다음에서 **페이지 정보** 메뉴, 원하는 대로 [페이지 게시](#publishing-from-the-editor).
 
 >[!NOTE]
 >
@@ -258,7 +258,7 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
 Sites 콘솔에서 [게시 관리](#manage-publication) 옵션을 사용하여 이 작업을 수행할 수 있습니다.
 
-1. Sites 콘솔에서 게시 또는 게시 취소하려는 트리의 루트 페이지를 선택하고 **게시 관리**&#x200B;를 선택합니다.
+1. 사이트 콘솔에서 게시 또는 게시 취소하려는 트리의 루트 페이지를 선택하고 을 선택합니다 **게시 관리**.
 1. **게시 관리** 마법사가 시작됩니다. 게시 또는 게시 취소하도록 선택하고 해당 작업이 수행되면 **다음**&#x200B;을 클릭하여 계속 진행합니다.
 1. **범위** 단계에서 루트 페이지를 선택하고 **하위 포함**&#x200B;을 선택합니다.
 

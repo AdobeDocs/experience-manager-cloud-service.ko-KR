@@ -2,10 +2,10 @@
 title: 콘텐츠 검색 및 색인화
 description: AEM as a Cloud Service으로 콘텐츠 검색 및 색인화에 대해 알아봅니다.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2432'
-ht-degree: 30%
+source-wordcount: '2428'
+ht-degree: 29%
 
 ---
 
@@ -67,7 +67,7 @@ AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 C
 
 >[!NOTE]
 >
->`damAssetLucene-8`과 같이 기본 제공 인덱스를 맞춤화하는 경우 CRX DE 패키지 관리자(`/crx/packmgr/`)를 사용하여 *Cloud Service 환경*&#x200B;에서 최신 기본 제공 인덱스 정의를 복사하십시오. 이름 바꾸기 `damAssetLucene-8-custom-1` (또는 이상) 및 XML 파일 내에 사용자 정의를 추가합니다. 이렇게 하면 필요한 구성이 실수로 제거되지 않도록 할 수 있습니다. 예를 들어 `tika` 노드 `/oak:index/damAssetLucene-8/tika` 는 AEM Cloud Service 환경에 배포된 사용자 지정 색인에 필요하지만 로컬 AEM SDK에는 없습니다.
+>기본 제공 색인을 사용자 정의하는 경우, 예 `damAssetLucene-8`에서 최신 기본 제공 인덱스 정의를 복사합니다. *Cloud Service 환경* crx DE 패키지 관리자 사용(`/crx/packmgr/`). 이름 바꾸기 `damAssetLucene-8-custom-1` (또는 이상) 및 XML 파일 내에 사용자 정의를 추가합니다. 이렇게 하면 필요한 구성이 실수로 제거되지 않도록 할 수 있습니다. 예를 들어 `tika` 노드 `/oak:index/damAssetLucene-8/tika` 는 AEM Cloud Service 환경에 배포된 사용자 지정 색인에 필요하지만 로컬 AEM SDK에는 없습니다.
 
 OOTB 인덱스의 사용자 정의를 위해 이 이름 지정 패턴을 따르는 실제 인덱스 정의가 포함된 새 패키지를 준비합니다.
 
@@ -240,7 +240,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!TIP]
 >
->AEM as a Cloud Service의 필수 패키지 구조에 대한 자세한 내용은 문서를 참조하십시오 [AEM 프로젝트 구조](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
+>AEMas a Cloud Service 의 필수 패키지 구조에 대한 자세한 내용은 [AEM 프로젝트 구조](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
 
 ## 순환 배포를 사용한 색인 관리 {#index-management-using-rolling-deployments}
 

@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2642'
-ht-degree: 11%
+source-wordcount: '2638'
+ht-degree: 12%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 11%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-schemas.html?lang=en) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-schemas.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
 조직은 자산 검색, 사용, 상호 운용성 등을 향상시키는 메타데이터 모델을 고안합니다. 올바른 메타데이터 애플리케이션은 메타데이터 기반 워크플로우 및 프로세스를 유지 관리하는 데 불가항력적입니다. 조직 전체의 메타데이터 전략 및 표준을 준수하기 위해 DAM 사용자가 조정할 수 있도록 도와주는 메타데이터 스키마를 사용할 수 있습니다. [!DNL Adobe Experience Manager] 쉽고 유연한 방법으로 메타데이터 스키마를 만들고, 유지하고, 적용할 수 있습니다.
@@ -41,18 +41,18 @@ ht-degree: 11%
 
 [!DNL Experience Manager] 는 다음 메타데이터 스키마 양식 템플릿을 제공합니다.
 
-| 템플릿 |  | 설명 |
+| 템플릿 | | 설명 |
 |---|---|---|
-| [!UICONTROL 기본값] |  | 에셋의 기본 메타데이터 스키마 양식. |
-|  | 다음 자식 폼은 [!UICONTROL 기본값] 양식: |  |
-|  | <ul><li>[!UICONTROL dm_video]</li></ul> | Dynamic Media 비디오용 스키마 양식. |
-|  | <ul><li>[!UICONTROL 이미지]</li></ul> | 다음과 같은 MIME 유형의 이미지에 대한 스키마 양식 `image/jpeg` 및 `image/png`. <br> 다음 [!UICONTROL 이미지] 양식에는 다음과 같은 하위 양식 템플릿이 있습니다. <ul><li> [!UICONTROL jpeg]: 하위 유형이 있는 에셋의 스키마 양식 [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: 하위 유형 TIFF이 있는 에셋의 스키마 양식.</li></ul> |
-|  | <ul><li>[!UICONTROL 애플리케이션]</li></ul> | MIME 유형의 자산에 대한 스키마 양식: `application/pdf` 및 `application/zip`. <br>[!UICONTROL pdf]: 하위 유형 PDF이 있는 에셋의 스키마 양식. |
-|  | <ul><li>[!UICONTROL 비디오]</li></ul> | MIME 유형의 비디오 자산에 대한 스키마 양식: `video/avi` 및 `video/mp4`. |
-| [!UICONTROL 컬렉션] |  | 컬렉션에 대한 스키마 양식입니다. |
-| [!UICONTROL contentfragment] |  | Schema form for Content Fragments. |
-| [!UICONTROL 양식] |  | 이 스키마 양식과 관련된 항목 [!DNL Adobe Experience Manager Forms]. |
-| [!UICONTROL ugc_contentfragment] |  | 소셜 미디어에서 Experience Manager에 통합된 사용자 생성 콘텐츠 부분 및 에셋에 대한 스키마 양식입니다. |
+| [!UICONTROL 기본값] | | 에셋의 기본 메타데이터 스키마 양식. |
+| | 다음 자식 폼은 [!UICONTROL 기본값] 양식: | |
+| | <ul><li>[!UICONTROL dm_video]</li></ul> | Dynamic Media 비디오용 스키마 양식. |
+| | <ul><li>[!UICONTROL 이미지]</li></ul> | 다음과 같은 MIME 유형의 이미지에 대한 스키마 양식 `image/jpeg` 및 `image/png`. <br> 다음 [!UICONTROL 이미지] 양식에는 다음과 같은 하위 양식 템플릿이 있습니다. <ul><li> [!UICONTROL jpeg]: 하위 유형이 있는 에셋의 스키마 양식 [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: 하위 유형 TIFF이 있는 에셋의 스키마 양식.</li></ul> |
+| | <ul><li>[!UICONTROL 애플리케이션]</li></ul> | MIME 유형의 자산에 대한 스키마 양식: `application/pdf` 및 `application/zip`. <br>[!UICONTROL pdf]: 하위 유형 PDF이 있는 에셋의 스키마 양식. |
+| | <ul><li>[!UICONTROL 비디오]</li></ul> | MIME 유형의 비디오 자산에 대한 스키마 양식: `video/avi` 및 `video/mp4`. |
+| [!UICONTROL 컬렉션] | | 컬렉션에 대한 스키마 양식입니다. |
+| [!UICONTROL contentfragment] | | Schema form for Content Fragments. |
+| [!UICONTROL 양식] | | 이 스키마 양식과 관련된 항목 [!DNL Adobe Experience Manager Forms]. |
+| [!UICONTROL ugc_contentfragment] | | 소셜 미디어에서 Experience Manager에 통합된 사용자 생성 콘텐츠 부분 및 에셋에 대한 스키마 양식입니다. |
 
 >[!NOTE]
 >
@@ -97,7 +97,7 @@ ht-degree: 11%
 | [!UICONTROL 날짜] | 날짜 구성 요소를 추가합니다. |
 | [!UICONTROL 드롭다운] | 드롭다운 목록을 추가합니다. |
 | [!UICONTROL 표준 태그] | 태그 추가. |
-| [!UICONTROL 스마트 태그] | 를 추가하여 메타데이터 태그를 자동으로 추가하여 검색 기능을 강화합니다. |
+| [!UICONTROL 스마트 태그] | 메타데이터 태그를 자동으로 추가하여 검색 기능을 보강합니다. |
 | [!UICONTROL 숨김 필드] | 숨겨진 필드를 추가합니다. 에셋이 저장될 때 POST 매개 변수로 전송됩니다. |
 | [!UICONTROL 자산 참조자] | 자산이 참조하는 자산 목록을 보려면 이 구성 요소를 추가하십시오. |
 | [!UICONTROL 자산 참조] | 를 추가하여 에셋을 참조하는 에셋 목록을 표시합니다. |
@@ -173,7 +173,6 @@ Experience Manager을 사용하면 사용자 정의 스키마 양식만 삭제�
 >* 기본 양식에 대한 사용자 지정 변경 내용을 삭제하면 ![잠금 닫힘](assets/do-not-localize/lock_closed_icon.svg) 양식 앞에 다시 나타납니다. 양식이 기본 상태로 되돌려짐을 나타냅니다.
 >* 에서 기본 메타데이터 스키마 양식을 삭제할 수 없습니다. [!DNL Assets].
 
-
 ## MIME 유형에 대한 스키마 양식 {#schema-forms-for-mime-types}
 
 [!DNL Experience Manager] 에서는 다양한 MIME 유형에 대한 기본 양식을 즉시 제공합니다. 하지만 다양한 MIME 유형의 자산에 대한 사용자 정의 양식을 추가할 수 있습니다.
@@ -229,8 +228,8 @@ Create a form under the appropriate form type. For example, to add a template fo
 1. 다음에서 **[!UICONTROL 메타데이터 스키마 Forms]** 페이지에서 `my_default` 폼을 클릭한 다음 **[!UICONTROL 편집]**.
 1. 다음에서 **[!UICONTROL 메타데이터 스키마 편집기]** 페이지에서 스키마 양식에 텍스트 필드를 추가합니다. 예를 들어 레이블이 있는 필드를 추가합니다 **[!UICONTROL 범주]**.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 수정된 양식이에 나열되어 있습니다. **[!UICONTROL 메타데이터 스키마 Forms]** 페이지를 가리키도록 업데이트하는 중입니다.
-1. 클릭/탭 **[!UICONTROL 폴더에 적용]** 을 클릭하여 폴더에 사용자 지정 메타데이터를 적용합니다.
-1. 수정된 스키마를 적용할 폴더를 선택한 다음 클릭/탭합니다 **[!UICONTROL 적용]**.
+1. 선택 **[!UICONTROL 폴더에 적용]** 을 클릭하여 폴더에 사용자 지정 메타데이터를 적용합니다.
+1. 수정된 스키마를 적용할 폴더를 선택한 다음 을 선택합니다 **[!UICONTROL 적용]**.
 1. 폴더에 다른 메타데이터 스키마가 적용된 경우 기존 메타데이터 스키마를 덮어쓰려고 한다는 경고 메시지가 나타납니다. 클릭 **덮어쓰기**.
 1. 클릭 **확인** 성공 메시지를 닫으려면 다음을 수행하십시오.
 1. 수정된 메타데이터 스키마를 적용한 폴더로 이동합니다.
@@ -246,7 +245,7 @@ Create a form under the appropriate form type. For example, to add a template fo
 1. Experience Manager 로고를 클릭한 다음 로 이동합니다. **[!UICONTROL 도구]** > **[!UICONTROL 에셋]** > **[!UICONTROL 메타데이터 스키마]**. The **[!UICONTROL Metadata Schema Forms]** page is displayed.
 1. 기본 메타데이터 양식을 사용자 정의 양식으로 저장합니다. 예를 들어 다음과 같이 저장합니다. `my_default`.
 1. 사용자 정의 양식을 편집합니다. 필수 필드를 추가합니다. 예를 들어 **[!UICONTROL 범주]** 필드를 지정하고 필수 필수로 만듭니다.
-1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 수정된 양식이에 나열되어 있습니다. **[!UICONTROL 메타데이터 스키마 Forms]** 페이지를 가리키도록 업데이트하는 중입니다. 양식을 선택한 다음 클릭하거나 탭합니다. **[!UICONTROL 폴더에 적용]** 을 클릭하여 폴더에 사용자 지정 메타데이터를 적용합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 수정된 양식이에 나열되어 있습니다. **[!UICONTROL 메타데이터 스키마 Forms]** 페이지를 가리키도록 업데이트하는 중입니다. 양식을 선택한 다음 을 선택합니다. **[!UICONTROL 폴더에 적용]** 을 클릭하여 폴더에 사용자 지정 메타데이터를 적용합니다.
 1. 폴더로 이동하고 사용자 정의 양식에 추가한 필수 필드에 대해 메타데이터가 누락된 일부 에셋을 업로드합니다. 필수 필드의 누락된 메타데이터에 대한 메시지가 에셋의 카드 보기에 표시됩니다.
 1. (선택 사항) 액세스 `https://[server]:[port]/system/console/components/`. 구성 및 활성화 `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` 기본적으로 비활성화된 구성 요소입니다. Experience Manager이 에셋에 대한 메타데이터의 유효성을 확인하는 빈도를 설정하십시오.
 
@@ -262,13 +261,13 @@ Create a form under the appropriate form type. For example, to add a template fo
 
 **추가 참조**
 
-* [에셋 번역](translate-assets.md)
+* [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [에셋이 지원되는 파일 형식](file-format-support.md)
-* [에셋 검색](search-assets.md)
-* [연결된 에셋](use-assets-across-connected-assets-instances.md)
-* [에셋 보고서](asset-reports.md)
-* [에셋 다운로드](download-assets-from-aem.md)
+* [자산이 지원되는 파일 형식](file-format-support.md)
+* [자산 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [자산 보고서](asset-reports.md)
+* [자산 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)

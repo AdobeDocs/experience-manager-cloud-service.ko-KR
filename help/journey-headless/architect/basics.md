@@ -2,10 +2,10 @@
 title: 콘텐츠 모델링 기본 사항 알아보기
 description: 콘텐츠 조각을 사용하여 Headless CMS용 콘텐츠 모델링 기본 사항을 알아봅니다.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
-workflow-type: ht
-source-wordcount: '903'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '901'
+ht-degree: 98%
 
 ---
 
@@ -130,7 +130,7 @@ AEM은 콘텐츠를 모델링할 수 있도록 다음 데이터 유형을 제공
 * 개인
 * 상
 
-매우 간단한 것처럼 보이지만 회사에는 CEO와 직원이 있습니다.이 모두 사람이고 각각은 개인으로 정의됩니다.
+간단해 보이지만, 회사는 CEO와 직원을 모두 보유하고 있습니다....이 모두 사람이고 각각은 개인으로 정의됩니다.
 
 개인에게 상 한 개(또는 두 개)가 제공될 수 있습니다.
 

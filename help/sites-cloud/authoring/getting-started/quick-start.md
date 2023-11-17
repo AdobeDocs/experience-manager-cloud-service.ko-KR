@@ -2,10 +2,10 @@
 title: 페이지 작성에 대한 빠른 시작 안내서
 description: 페이지 콘텐츠 작성을 시작하는 데 도움이 되는 빠른 개요 안내서
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1560'
-ht-degree: 91%
+source-wordcount: '1541'
+ht-degree: 85%
 
 ---
 
@@ -51,7 +51,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 >[!NOTE]
 >
->작성 작업을 더 쉽게 해 줄 수 있는 다양한 키보드 단축키가 있습니다.
+>작성 작업을 보다 쉽게 할 수 있는 몇 가지 키보드 단축키가 있습니다.
 >
 >* [페이지 편집 시 키보드 단축키](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
 >* [콘솔용 키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
@@ -93,11 +93,11 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 1. 열 보기:
 
-   * 필요한 리소스에 대한 썸네일을 탭/클릭합니다. 썸네일 위에 확인 표시가 나타나 선택되었음을 나타냅니다.
+   * 필요한 리소스에 대한 썸네일을 선택합니다. 썸네일은 선택된 것으로 표시되는 확인 표시가 오버레이됩니다.
 
 1. 목록 보기:
 
-   * 필요한 리소스에 대한 썸네일을 탭/클릭합니다. 썸네일 위에 확인 표시가 나타나 선택되었음을 나타냅니다.
+   * 필요한 리소스에 대한 썸네일을 선택합니다. 썸네일은 선택된 것으로 표시되는 확인 표시가 오버레이됩니다.
 
 1. 카드 보기:
 
@@ -114,7 +114,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 [빠른 작업](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)을 사용할 수 있습니다.
 
-1. 작업을 수행할 [페이지로 이동](#finding-your-page)합니다.
+1. [페이지로 이동](#finding-your-page) 행동하고 싶으시군요.
 1. 필요한 리소스를 나타내는 카드 위로 마우스 포인터를 가져갑니다. 빠른 작업이 표시됩니다.
 
    ![카드 작업](/help/sites-cloud/authoring/assets/card-actions.png)
@@ -147,7 +147,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    * [페이지의](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) 기존 구성 요소 콘텐츠를 편집합니다.
 
-      * 탭하거나 클릭하여 구성 요소 도구 모음을 엽니다. **편집**(연필) 아이콘을 사용하여 대화 상자를 엽니다.
+      * 둘 중 하나를 선택하여 구성 요소 도구 모음을 엽니다. **편집**(연필) 아이콘을 사용하여 대화 상자를 엽니다.
       * 탭한 상태를 유지하거나 느리게 더블 클릭하여 구성 요소에 대한 즉석 편집기를 엽니다. 사용 가능한 작업이 표시됩니다(일부 구성 요소의 경우, 선택이 제한됨).
       * 사용 가능한 모든 작업을 보려면 다음 아이콘을 사용하여 전체 화면 모드로 들어갑니다.
 
@@ -155,16 +155,16 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    * [기존 구성 요소의 속성 구성](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-edit-dialog)
 
-      * 탭하거나 클릭하여 구성 요소 도구 모음을 엽니다. **구성**(렌치) 아이콘을 사용하여 대화 상자를 엽니다.
+      * 둘 중 하나를 선택하여 구성 요소 도구 모음을 엽니다. **구성**(렌치) 아이콘을 사용하여 대화 상자를 엽니다.
 
    * 다음 방법 중 하나로 [구성 요소를 이동](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component)합니다.
 
       * 필요한 구성 요소를 새 위치로 끕니다.
-      * 탭하거나 클릭하여 구성 요소 도구 모음을 엽니다. 필요한 경우 **잘라내기** 및 **붙여넣기** 아이콘을 사용합니다.
+      * 둘 중 하나를 선택하여 구성 요소 도구 모음을 엽니다. 사용 **잘라내기** 그러면 **붙여넣기** 필요한 아이콘입니다.
 
    * 구성 요소 [복사(및 붙여넣기):](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)
 
-      * 탭하거나 클릭하여 구성 요소 도구 모음을 엽니다. 필요에 따라 **복사** 및 **붙여넣기** 아이콘을 사용합니다.
+      * 둘 중 하나를 선택하여 구성 요소 도구 모음을 엽니다. 사용 **복사** 그러면 **붙여넣기** 필요에 따라 아이콘을 클릭합니다.
 
    >[!NOTE]
    >
@@ -172,7 +172,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    * 구성 요소 [삭제:](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)
 
-      * 탭하거나 클릭하여 구성 요소 도구 모음을 열고 **삭제** 아이콘을 사용합니다.
+      * 을(를) 선택하여 구성 요소 도구 모음을 열고 다음을 사용합니다. **삭제** 아이콘.
 
    * 페이지에 [주석 추가](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations):
 
@@ -292,7 +292,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    ![참조 보기](/help/sites-cloud/authoring/assets/references-list.png)
 
-1. 필요한 참조 유형을 탭/클릭하여 자세한 내용을 표시하고(해당되는 경우) 추가 작업을 수행합니다.
+1. 필요한 참조 유형을 선택하여 세부 정보를 표시하고(해당하는 경우) 추가 작업을 수행합니다.
 
 ### 페이지 버전 생성 {#creating-a-version-of-your-page}
 
@@ -302,7 +302,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    ![타임라인 보기 옵션](/help/sites-cloud/authoring/assets/timeline.png)
 
-1. 타임라인 열 오른쪽 하단에 있는 생략 부호를 탭하거나 클릭하여 다음을 포함한 추가 단추를 표시합니다. **다른 버전으로 저장**.
+1. 타임라인 열 오른쪽 하단에 있는 생략 부호를 선택하여 다음을 포함한 추가 단추를 표시합니다. **다른 버전으로 저장**.
 
    ![타임라인 보기](/help/sites-cloud/authoring/assets/timeline-view.png)
 
@@ -318,7 +318,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    페이지 버전이 이미 저장된 경우, 타임라인에 나열됩니다.
 
-1. 복원할 버전을 탭/클릭합니다. 이렇게 하면 추가 작업 버튼이 표시됩니다.
+1. 복원할 버전을 선택합니다. 그러면 추가 작업 버튼이 표시됩니다.
 
    * **이 버전으로 되돌리기**
 

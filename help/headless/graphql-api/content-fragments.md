@@ -3,10 +3,10 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud Service에서 Headless 콘텐츠 게재를 위해 콘텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: f58581f6f81e60edafd79dd1d305bd479b65eed5
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4922'
-ht-degree: 100%
+source-wordcount: '4921'
+ht-degree: 96%
 
 ---
 
@@ -47,7 +47,7 @@ GraphQL은
   [GraphQL Foundation](https://foundation.graphql.org/)을 참조하십시오.
 
 <!--
-"*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
+"*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world the tools they need to understand and adopt GraphQL.*". 
 -->
 
 GraphQL API에 대한 정보는 기타 여러 리소스 중에서도 특히 다음 섹션을 참조하십시오.
@@ -156,13 +156,13 @@ GraphQL은 GET 요청도 지원하지만 이러한 요청은 지속 쿼리를 �
 
 GraphQL 쿼리는 기본 요청의 AEM 사용자 권한으로 실행됩니다. 사용자에게 일부 조각(자산으로 저장됨)에 대한 읽기 액세스 권한이 없는 경우 이들 조각은 결과 세트의 일부가 되지 않습니다.
 
-또한 GraphQL 쿼리를 실행할 수 있으려면 사용자가 GraphQL 엔드포인트에 대한 액세스 권한을 보유해야 합니다.
+또한 GraphQL 쿼리를 실행할 수 있으려면 사용자에게 GraphQL 엔드포인트에 대한 액세스 권한이 있어야 합니다.
 
 ## 스키마 생성 {#schema-generation}
 
 GraphQL은 강력한 포맷의 API입니다. 즉, 데이터는 유형별로 명확하게 구조화되고 구성되어야 합니다.
 
-GraphQL 사양은 특정 인스턴스에서 데이터의 정보를 얻기 위해 강력한 API를 만드는 방법에 대한 일련의 지침을 제공합니다. 이렇게 하려면 클라이언트가 쿼리에 필요한 모든 유형을 포함하는 [스키마](#schema-generation)를 가져와야 합니다.
+GraphQL 사양은 특정 인스턴스에서 데이터의 정보를 얻기 위해 강력한 API를 만드는 방법에 대한 일련의 지침을 제공합니다. 이렇게 하려면 클라이언트가 [스키마](#schema-generation)쿼리에 필요한 모든 유형을 포함합니다.
 
 콘텐츠 조각의 경우 GraphQL 스키마(구조 및 유형)는 **활성화됨** 상태인 [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) 및 해당 데이터 형식을 기반으로 합니다.
 
@@ -235,9 +235,9 @@ Sites GraphQL 서비스는 콘텐츠 조각 모델에 대한 수정 사항을 �
 
   다양한 [데이터 유형](#Data-types)은 콘텐츠 조각 모델을 구성하는 방법을 기반으로 필드를 만드는 데 사용됩니다. 필드 이름은 **데이터 유형** 탭의 **속성 이름** 필드에서 가져옵니다.
 
-   * 사용자가 특정 데이터 유형을 구성할 때 고려해야 하는 **렌더링 형식** 설정도 있습니다. 예를 들어 드롭다운에서 `multifield`를 선택하여 여러 개의 한 줄 텍스트를 포함하도록 한 줄 텍스트 필드를 구성할 수 있습니다.
+   * 사용자가 특정 데이터 유형을 구성할 때 고려해야 하는 **렌더링 형식** 설정도 있습니다. 예를 들어 를 선택하여 여러 개의 한 줄 텍스트를 포함하도록 한 줄 텍스트 필드를 구성할 수 있습니다 `multifield` 을 클릭합니다.
 
-* AEM용 GraphQL은 또한 여러 [도우미 필드](#helper-fields)를 생성합니다.
+* GraphQL for AEM에서도 여러 항목을 생성합니다 [도우미 필드](#helper-fields).
 
 ### 데이터 유형 {#data-types}
 
@@ -245,7 +245,7 @@ AEM용 GraphQL은 유형 목록을 지원합니다. 지원되는 모든 콘텐�
 
 | 콘텐츠 조각 모델 - 데이터 형식 | GraphQL 유형 | 설명 |
 |--- |--- |--- |
-| 한 줄 텍스트 | `String`, `[String]` | 작성자 이름, 위치 이름 등과 같은 간단한 문자열에 사용됨 |
+| 한 줄 텍스트 | `String`, `[String]` | 작성자 이름, 위치 이름 등과 같은 간단한 문자열에 사용됩니다. |
 | 여러 줄 텍스트 | `String`, `[String]` | 기사의 본문과 같은 텍스트 출력에 사용됨 |
 | 숫자 | `Float`, `[Float]` | 부동 소수점 숫자 및 일반 숫자를 표시하는 데 사용됨 |
 | 부울 | `Boolean` | 확인란을 표시하는 데 사용됨 → 간단한 참/거짓 진술 |
@@ -259,7 +259,7 @@ AEM용 GraphQL은 유형 목록을 지원합니다. 지원되는 모든 콘텐�
 
 ### 도우미 필드 {#helper-fields}
 
-사용자 생성 필드의 데이터 형식 외에도 AEM용 GraphQL은 콘텐츠 조각 식별을 돕거나 콘텐츠 조각에 대한 추가 정보를 제공하기 위해 여러 *도우미* 필드를 생성합니다.
+사용자 생성 필드에 대한 데이터 유형 외에도 GraphQL for AEM에서 여러 데이터 유형을 생성합니다 *도우미* 콘텐츠 조각을 식별하는 데 도움이 되거나 콘텐츠 조각에 대한 추가 정보를 제공하는 필드입니다.
 
 이 [도우미 필드](#helper-fields)는 사용자가 정의한 것과 자동 생성된 것을 구별하기 위해 앞에 `_`로 표시됩니다.
 
@@ -365,7 +365,7 @@ AEM은 또한 GraphQL을 통해 콘텐츠 조각의 메타데이터를 노출합
 
 >[!NOTE]
 >
->원본 데이터(UI에서 *마스터*&#x200B;로 참조됨)는 명시적 변형으로 간주되지 않으므로 `_variations` 필드에는 `master` 변형이 포함되어 있지 않습니다.
+>다음 `_variations` 필드에 다음이 포함되지 않음 `master` 기술적 측면에서 원본 데이터로서의 변형(참조: *기본* UI에서)는 명시적인 변형으로 간주되지 않습니다.
 
 [샘플 쿼리 - 이름이 붙은 변형이 있는 모든 도시](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)를 참조하십시오.
 
@@ -572,7 +572,7 @@ GraphQL 쿼리에서 필터링을 사용하여 특정 데이터를 반환할 수
 
 * 필드 경로를 나타내는 쉼표로 구분된 값 목록입니다.
    * 목록의 첫 번째 필드는 기본 정렬 순서를 정의하고, 두 번째 필드는 기본 정렬 기준의 두 값이 동일한 경우 사용되며, 세 번째 필드는 처음 두 기준이 동일한 경우 사용됩니다.
-   * 점으로 구분된 표기법 (예: field1.subfield.subfield 등)
+   * 점으로 구분된 표기법, 즉 field1.subfield.subfield 등...
 * 선택적 정렬 방향
    * (ASC(오름차순) 또는 DESC(내림차순))이 포함되며, 기본값 ASC가 적용됩니다.
    * 방향은 필드별로 지정할 수 있습니다. 즉, 한 필드는 오름차순으로 정렬하고 다른 필드는 내림차순으로 정렬할 수 있습니다(name, firstName DESC).

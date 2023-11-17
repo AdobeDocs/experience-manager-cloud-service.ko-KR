@@ -2,10 +2,10 @@
 title: 콘솔 사용자 정의
 description: 작성 인스턴스의 콘솔을 사용자 정의할 수 있도록 AEM이 제공하는 다양한 옵션에 대해 알아봅니다.
 exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 100%
+source-wordcount: '525'
+ht-degree: 92%
 
 ---
 
@@ -17,7 +17,7 @@ AEM은 작성 인스턴스의 콘솔(및 [페이지 작성 기능](/help/impleme
 
 Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 제공하면서 표준 기능, 오브젝트 및 메서드를 재사용할 수 있습니다. clientlibs로 사용자 정의할 때 `/apps.` 아래에서 자체적인 clientlib을 만들 수 있습니다. 예를 들어 clientlib이 사용자 정의 구성 요소에 필요한 코드를 보유할 수 있습니다.
 
-clientlibs에 대한 자세한 내용은 [AEM as a Cloud Service에서 클라이언트측 라이브러리 사용](/help/implementing/developing/introduction/clientlibs.md) 문서를 참조하십시오.
+다음을 참조하십시오 [AEM에서 클라이언트측 라이브러리 as a Cloud Service 사용](/help/implementing/developing/introduction/clientlibs.md).
 
 ## 오버레이 {#overlays}
 
@@ -25,11 +25,11 @@ clientlibs에 대한 자세한 내용은 [AEM as a Cloud Service에서 클라이
 
 오버레이는 AEM 콘솔을 확장하는 데 여러 가지 방법으로 사용할 수 있습니다. 다음 섹션에서 몇 가지 예를 제공합니다.
 
-오버레이에 대한 자세한 내용은 [Adobe Experience Manager as a Cloud Service용 오버레이](/help/implementing/developing/introduction/overlays.md) 문서를 참조하십시오.
+참조: [Adobe Experience Manager as a Cloud Service용 오버레이](/help/implementing/developing/introduction/overlays.md).
 
 >[!TIP]
 >
->작성 환경을 사용자 정의하는 옵션에 관심이 있는 경우 [페이지 작성 사용자 정의](/help/implementing/developing/extending/page-authoring.md) 문서를 참조하십시오.
+>작성 환경을 사용자 지정하는 옵션에 관심이 있는 경우 다음을 참조하십시오. [페이지 작성 사용자 지정](/help/implementing/developing/extending/page-authoring.md).
 
 ## 콘솔의 기본 보기 사용자 정의 {#customizing-the-default-view-for-a-console}
 
@@ -117,4 +117,4 @@ clientlibs에 대한 자세한 내용은 [AEM as a Cloud Service에서 클라이
 
 콘솔을 사용할 때 사용자는 흔히 페이지, 구성 요소 또는 자산과 같은 리소스 중에서 선택해야 합니다. 이는 작성자가 항목을 선택해야 하는 목록의 형태를 취할 수 있습니다.
 
-목록을 적당한 크기로 유지하고 사용 사례와도 관련되게 하려면 필터를 사용자 정의 조건자 형태로 구현할 수 있습니다. 자세한 내용은 [페이지 작성 사용자 정의](/help/implementing/developing/extending/page-authoring.md#filtering-resources) 문서를 참조하십시오.
+목록을 적당한 크기로 유지하고 사용 사례와도 관련되게 하려면 필터를 사용자 정의 조건자 형태로 구현할 수 있습니다. 다음을 참조하십시오 [페이지 작성 사용자 지정](/help/implementing/developing/extending/page-authoring.md#filtering-resources) 을 참조하십시오.

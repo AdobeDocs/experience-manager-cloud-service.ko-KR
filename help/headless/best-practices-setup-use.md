@@ -2,9 +2,9 @@
 title: 컨텐츠 조각과 함께 AEM GraphQL 설정 및 사용 모범 사례
 description: 콘텐츠 조각과 함께 AEM GraphQL의 설정 및 사용에 대한 권장 모범 사례에 대해 알아봅니다.
 exl-id: 4d6a5aaa-c8be-4858-ad07-085dc4fb77e7
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '739'
 ht-degree: 40%
 
 ---
@@ -201,7 +201,7 @@ AEM Headless CMS는 개발자가 이미 익숙한 언어, 프레임워크 및 �
 
 ### 추가 리소스
 
-AEM GraphQL 및 콘텐츠 조각에 대한 자세한 내용은 다음을 참조하십시오.
+AEM GraphQL 및 컨텐츠 조각에 대한 자세한 내용은 다음을 참조하십시오.
 
 * [콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
 * [GraphiQL IDE 사용](/help/headless/graphql-api/graphiql-ide.md)

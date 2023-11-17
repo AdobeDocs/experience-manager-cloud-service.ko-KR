@@ -2,10 +2,10 @@
 title: 점진적 웹 앱 기능 활성화
 description: 콘텐츠 작성자는 AEM Sites를 사용하여 코딩이 아닌 간단한 구성을 통해 모든 사이트에 대해 점진적 웹 앱 기능을 활성화할 수 있습니다.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
-workflow-type: ht
-source-wordcount: '2004'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '1998'
+ht-degree: 98%
 
 ---
 
@@ -102,8 +102,8 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 [사전 요구 사항](#prerequisites)을 충족하면 콘텐츠 작성자는 간단하게 사이트에 대해 PWA 기능을 활성화할 수 있습니다. 다음은 이를 수행하는 방법에 대한 간략한 소개입니다. 개별 옵션은 [상세 옵션](#detailed-options) 섹션에 자세히 기재되어 있습니다.
 
 1. AEM에 로그인합니다.
-1. 메인 메뉴에서 **탐색** -> **사이트**&#x200B;를 탭하거나 클릭합니다.
-1. 사이트 프로젝트를 선택한 다음 [**속성**](/help/sites-cloud/authoring/fundamentals/page-properties.md)&#x200B;을 탭 또는 클릭하거나 핫키 `p`를 사용합니다.
+1. 메인 메뉴에서 다음을 선택합니다. **탐색** > **사이트**.
+1. 사이트 프로젝트를 선택하고 을(를) 선택합니다. [**속성**](/help/sites-cloud/authoring/fundamentals/page-properties.md) 또는 핫키 사용 `p`.
 1. **점진적 웹 앱** 탭을 선택한 다음 해당하는 속성을 구성합니다. 최소한 다음과 같은 작업을 수행해야 합니다.
    1. **PWA 활성화** 옵션을 선택합니다.
    1. **시작 URL**&#x200B;을 정의합니다.
@@ -123,7 +123,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
       ![PWA 오프라인 경로 정의](../assets/pwa-offline.png)
 
-1. **저장 및 닫기**&#x200B;를 탭하거나 클릭합니다.
+1. 선택 **저장 및 닫기**.
 
 이제 사이트가 구성되며 [이를 로컬 앱으로 설치](#using-pwa-enabled-site)할 수 있습니다.
 

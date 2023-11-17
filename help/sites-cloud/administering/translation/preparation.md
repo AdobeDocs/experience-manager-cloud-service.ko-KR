@@ -4,10 +4,10 @@ description: 다국어 웹 사이트를 개발할 때 번역을 위한 콘텐츠
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
-workflow-type: ht
-source-wordcount: '769'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '751'
+ht-degree: 87%
 
 ---
 
@@ -71,20 +71,20 @@ ht-degree: 100%
 * `<language-code>` - 지원되는 언어 코드는 ISO-639-1에서 정의된 두 자리 코드입니다(예: `en`).
 * `<language-code>_<country-code>` 또는 `<language-code>-<country-code>` - 지원되는 국가 코드는 ISO 3166에서 정의된 소문자 또는 대문자 두 자리 코드입니다(예: `en_US`, `en_us`, `en_GB`, `en-gb`).
 
-전역 사이트에 대해 선택한 구조에 따라 두 형식 중 하나를 사용할 수 있습니다. 예를 들어 WKND 샘플 사이트의 프랑스어 언어 사본의 루트 페이지에는 **이름** 속성인 `fr`이 있습니다. **이름** 속성은 저장소의 페이지 노드 이름으로 사용되므로 페이지 경로를 결정합니다(`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
+전역 사이트에 대해 선택한 구조에 따라 두 형식 중 하나를 사용할 수 있습니다. 예를 들어 WKND 샘플 사이트의 프랑스어 언어 사본의 루트 페이지에는 **이름** 속성인 `fr`이 있습니다. 다음 **이름** 속성은 저장소의 페이지 노드 이름으로 사용되므로 페이지 경로를 결정합니다(`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
 1. 사이트로 이동합니다.
-1. 언어 사본을 만들려는 사이트를 클릭하거나 탭합니다.
-1. **만들기**&#x200B;를 클릭하거나 탭한 다음 **페이지**&#x200B;를 클릭하거나 탭합니다.
+1. 언어 사본을 만들 사이트를 선택합니다.
+1. 선택 **만들기**&#x200B;을 선택한 다음 을 선택합니다 **페이지**.
 
    ![페이지 제작](../assets/create-page.png)
 
-1. 페이지 템플릿을 선택하고 **다음**&#x200B;을 클릭하거나 탭합니다.
+1. 페이지 템플릿을 선택한 다음 을 선택합니다. **다음**.
 1. **이름** 필드에 국가 코드를 `<language-code>` 또는 `<language-code>_<country-code>`의 형식으로 입력합니다(예: `en`, `en_US`, `en_us`, `en_GB`, `en_gb`). 페이지 제목을 입력합니다.
 
    ![언어 루트 페이지 만들기](../assets/create-language-root.png)
 
-1. **만들기**&#x200B;를 클릭하거나 탭합니다. 확인 대화 상자에서 **완료**&#x200B;를 클릭하거나 탭하여 Sites 콘솔로 돌아가거나, **열기**&#x200B;를 클릭하거나 탭하여 언어 사본을 엽니다.
+1. **만들기**&#x200B;를 선택합니다. 확인 대화 상자에서 다음을 선택합니다. **완료** 사이트 콘솔로 돌아가려면 **열기** 언어 사본을 엽니다.
 
 ## 언어 루트 상태 보기 {#seeing-the-status-of-language-roots}
 
@@ -94,11 +94,11 @@ AEM은 생성된 언어 루트 목록을 표시하는 **참조** 레일을 제�
 
 다음 절차를 통해 [레일 선택기](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)를 사용하여 페이지의 언어 사본을 봅니다.
 
-1. Sites 콘솔에서 사이트의 페이지를 선택한 다음 **참조**&#x200B;를 클릭하거나 탭합니다.
+1. 사이트 콘솔에서 사이트의 페이지를 선택한 다음 을 선택합니다 **참조**.
 
    ![참조 레일 열기](../assets/opening-references-rail.png)
 
-1. 참조 레일에서 **언어 사본**&#x200B;을 클릭하거나 탭합니다. 레일에 웹 사이트의 언어 사본이 표시됩니다.
+1. 참조 레일에서 를 선택합니다. **언어 복사**. 레일에 웹 사이트의 언어 사본이 표시됩니다.
 
 ## 여러 수준의 언어 사본 {#multiple-levels}
 

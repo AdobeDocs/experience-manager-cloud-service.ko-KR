@@ -2,9 +2,9 @@
 title: ContextHub 구성
 description: 컨텍스트 데이터를 저장, 조작 및 표시하기 위한 프레임워크인 Context Hub를 구성하는 방법에 대해 알아봅니다.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1689'
+source-wordcount: '1629'
 ht-degree: 1%
 
 ---
@@ -43,10 +43,10 @@ UI 모드는 도구 모음의 왼쪽에 일련의 아이콘으로 표시됩니�
 
 UI 모드를 관련 ContextHub 모듈 그룹에 추가합니다. UI 모드를 만들면 ContextHub 도구 모음에 나타나는 제목과 아이콘을 제공합니다.
 
-1. Experience Manager 레일에서 도구 > 사이트 > Context Hub 를 클릭하거나 탭합니다.
-1. 기본 구성 컨테이너를 클릭하거나 탭합니다.
-1. Context Hub 구성 을 클릭하거나 탭합니다.
-1. 만들기 버튼을 클릭하거나 탭한 다음 Context Hub UI 모드 를 클릭하거나 탭합니다.
+1. Experience Manager 레일에서 도구 > 사이트 > Context Hub를 선택합니다.
+1. 기본 구성 컨테이너를 선택합니다.
+1. Context Hub 구성을 선택합니다.
+1. 만들기 버튼을 선택한 다음 Context Hub UI 모드 를 선택합니다.
 
    ![UI 모드 추가](assets/contexthub-ui-mode.png)
 
@@ -56,7 +56,7 @@ UI 모드를 관련 ContextHub 모듈 그룹에 추가합니다. UI 모드를 �
    * 모드 아이콘: 의 선택기 [Coral UI 아이콘](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) 사용할 항목: 예 `coral-Icon--user`
    * 활성화됨: ContextHub 도구 모음에 UI 모드를 표시하려면 선택하십시오.
 
-1. 저장을 클릭하거나 탭합니다.
+1. 저장을 선택합니다.
 
 ### UI 모듈 추가 {#adding-a-ui-module}
 
@@ -76,11 +76,11 @@ UI 모듈 속성에는 모듈별 속성에 대한 값을 제공할 수 있는 �
 | [contexthub.tagcloud](sample-modules.md#contexthub-tagcloud-ui-module-type) | 페이지 태그에 대한 통계를 표시합니다. | `tagcloud` |
 | [granite.profile](sample-modules.md#granite-profile-ui-module-type) | 다음을 포함한 현재 사용자의 프로필 정보를 표시합니다. `authorizableID`, `displayName` 및 `familyName`. 값을 변경할 수 있습니다. `displayName` 및 `familyName`. | `profile` |
 
-1. Experience Manager 레일에서 도구 > 사이트 > ContextHub 를 클릭하거나 탭합니다.
-1. UI 모듈을 추가할 구성 컨테이너를 클릭하거나 탭합니다.
+1. Experience Manager 레일에서 도구 > 사이트 > ContextHub를 선택합니다.
+1. UI 모듈을 추가할 구성 컨테이너를 선택합니다.
 1. UI 모듈을 추가할 ContextHub 구성을 클릭하거나 입력합니다.
-1. UI 모듈을 추가할 UI 모드를 클릭하거나 탭합니다.
-1. 만들기 버튼을 클릭하거나 탭한 다음 ContextHub UI 모듈(일반)을 클릭하거나 탭합니다.
+1. UI 모듈을 추가할 UI 모드를 선택합니다.
+1. 만들기 버튼을 선택한 다음 ContextHub UI 모듈(일반)을 선택합니다.
 
    ![ContextHub UI 모듈](assets/contexthub-ui-module.png)
 
@@ -91,7 +91,7 @@ UI 모듈 속성에는 모듈별 속성에 대한 값을 제공할 수 있는 �
    * 활성화됨: ContextHub 도구 모음에 UI 모듈을 표시하려면 선택하십시오.
 
 1. (선택 사항) 기본 저장소 구성을 무시하려면 UI 모듈을 구성할 JSON 개체를 입력합니다.
-1. 저장을 클릭하거나 탭합니다.
+1. 저장을 선택합니다.
 
 ## ContextHub 저장소 만들기 {#creating-a-contexthub-store}
 
@@ -115,14 +115,14 @@ AEM은 스토어의 기반이 될 수 있는 다음 샘플 스토어 후보를 �
 | [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) | 현재 사용자의 프로필 데이터 저장 |
 | [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) | 장치 정보, 브라우저 유형 및 창 방향과 같은 클라이언트에 대한 정보를 저장합니다 |
 
-1. Experience Manager 레일에서 도구 > 사이트 > ContextHub 를 클릭하거나 탭합니다.
-1. 기본 구성 컨테이너를 클릭하거나 탭합니다.
-1. Contexthub 구성 을 클릭하거나 탭합니다.
-1. 저장소를 추가하려면 만들기 아이콘을 클릭하거나 탭한 다음 ContextHub 저장소 구성을 클릭하거나 탭합니다.
+1. Experience Manager 레일에서 도구 > 사이트 > ContextHub를 선택합니다.
+1. 기본 구성 컨테이너를 선택합니다.
+1. Contexthub 구성 선택
+1. 저장소를 추가하려면 만들기 아이콘을 선택한 다음 ContextHub 저장소 구성을 선택합니다.
 
    ![ContextHub 저장소 구성](assets/contexthub-store-configuration.png)
 
-1. 기본 구성 속성에 대한 값을 입력한 후 다음 을 클릭하거나 탭합니다.
+1. 기본 구성 속성에 대한 값을 입력한 후 다음을 선택합니다.
 
    * **구성 제목:** 스토어를 식별하는 제목
    * **저장소 유형:** 스토어의 기반이 되는 스토어 후보의 storeType 속성 값
@@ -130,7 +130,7 @@ AEM은 스토어의 기반이 될 수 있는 다음 샘플 스토어 후보를 �
    * **활성화됨:** 스토어를 활성화하려면 선택
 
 1. (선택 사항) 기본 저장소 구성을 재정의하려면 세부 정보 구성(JSON) 상자에 JSON 개체를 입력합니다.
-1. 저장을 클릭하거나 탭합니다.
+1. 저장을 선택합니다.
 
 ## 예: JSONP 서비스 사용  {#example-using-a-jsonp-service}
 
@@ -205,10 +205,10 @@ ContextHub에 대한 디버깅 모드를 활성화하여 문제를 해결할 수
 
 ContextHub의 구성을 편집하고 옵션을 선택합니다. **디버그**
 
-1. 레일에서 을 클릭하거나 탭합니다 **도구 > 사이트 > ContextHub**
-1. 기본값 클릭 또는 탭 **구성 컨테이너**
-1. 다음 항목 선택 **ContextHub 구성** 및 클릭 또는 탭 **선택한 요소 편집**
-1. 클릭 또는 탭 **디버그** 및 클릭 또는 탭 **저장**
+1. 레일에서 을 선택합니다. **도구 > 사이트 > ContextHub**
+1. 기본값 선택 **구성 컨테이너**
+1. 다음 항목 선택 **ContextHub 구성** 및 선택 **선택한 요소 편집**
+1. 선택 **디버그** 및 선택 **저장**
 
 ### CRXDE를 통해 {#via-crxde}
 
@@ -243,10 +243,10 @@ ContextHub를 비활성화하여 js/css를 로드하고 초기화하지 못하�
 
 * ContextHub의 구성을 편집하고 옵션을 선택합니다. **ContextHub 비활성화**
 
-   1. 레일에서 을 클릭하거나 탭합니다 **도구 > 사이트 > ContextHub**
-   1. 기본값 클릭 또는 탭 **구성 컨테이너**
-   1. 다음 항목 선택 **ContextHub 구성** 및 클릭 또는 탭 **선택한 요소 편집**
-   1. 클릭 또는 탭 **ContextHub 비활성화** 및 클릭 또는 탭 **저장**
+   1. 레일에서 을 선택합니다. **도구 > 사이트 > ContextHub**
+   1. 기본값 선택 **구성 컨테이너**
+   1. 다음 항목 선택 **ContextHub 구성** 및 선택 **선택한 요소 편집**
+   1. 선택 **ContextHub 비활성화** 및 선택 **저장**
 
 또는
 

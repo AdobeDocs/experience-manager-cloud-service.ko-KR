@@ -4,10 +4,10 @@ description: 번역 규칙이 번역이 필요한 콘텐츠를 식별하는 방�
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 99%
+source-wordcount: '1288'
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 99%
 
 **번역에 대해 콘텐츠 모델 필드 사용** 옵션이 활성화된 경우, AEM은 [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)에서 **번역 가능** 필드를 사용하여 해당 필드를 번역할지 여부를 결정하고 그에 따라 자동으로 번역 규칙을 생성합니다. 이 옵션을 사용하면 이전에 생성한 모든 번역 규칙이 대체되며 여기에는 개입이나 추가 단계가 필요하지 않습니다.
 
-번역 규칙을 사용하여 콘텐츠 조각을 번역하려면 번역 통합 프레임워크 구성의 **번역에 대해 콘텐츠 모델 필드 사용** 옵션이 비활성화되어 있어야 하며 아래 설명된 단계를 따라 규칙을 생성해야 합니다.
+번역 규칙을 사용하여 콘텐츠 조각을 번역하려면 **번역을 위해 콘텐츠 모델 필드 활성화** 번역 통합 프레임워크 구성의 옵션이 비활성화되어 있어야 하며 아래 설명된 단계를 따라 규칙을 생성해야 합니다.
 
 ## 개요 {#overview}
 
@@ -167,7 +167,7 @@ AEM 콘텐츠 번역 기능의 개요를 확인하려면 [다국어 사이트를
 
    ![번역 컨텍스트 추가](../assets/add-translation-context.png)
 
-1. 경로 브라우저를 사용하여 필요한 컨텍스트를 선택한 다음 **확인** 버튼을 탭하거나 클릭하여 저장합니다.
+1. 경로 브라우저를 사용하여 필요한 컨텍스트를 선택하고 **확인** 단추를 클릭하여 저장합니다.
 
    ![컨텍스트 선택](../assets/select-context.png)
 

@@ -2,9 +2,9 @@
 title: 인덱스 변환기
 description: AEM as a Cloud Service으로 이동할 준비를 위해 색인 정의를 마이그레이션하는 방법에 대해 알아봅니다.
 exl-id: ac02ca41-eb35-4f24-bf17-d00ce318423d
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '288'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ If [Oak 색인 확인](https://adobe-consulting-services.github.io/acs-aem-commo
 
 ## Index Converter 사용 {#using-index-converter}
 
-* Adobe I/O CLI 의 방법 : 의 방법으로 인덱스 변환기 를 사용하는 것이 좋습니다. `aio-cli-plugin-aem-cloud-service-migration` (Adobe I/O CLI용 AEM as a Cloud Service 코드 리팩터링 플러그인).
+* Adobe I/O CLI 를 통해 : Adobe은 를 통해 인덱스 변환기 를 사용하는 것을 권장합니다. `aio-cli-plugin-aem-cloud-service-migration` (Adobe I/O CLI용 AEM as a Cloud Service 코드 리팩터링 플러그인).
 
   다음을 참조하십시오 **[Git 리소스: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** 을(를) 사용하여 플러그인을 설치하고 사용하는 방법을 알아봅니다.
 

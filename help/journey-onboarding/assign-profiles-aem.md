@@ -4,10 +4,10 @@ description: 클라우드 리소스를 구성한 후 AEM 제품 프로필을 사
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 82%
+source-wordcount: '885'
+ht-degree: 80%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 82%
 
 이 온보딩 여정의 이전 문서를 읽고 나면 [환경 만들기,](create-environments.md) 클라우드 리소스를 구성한 후에는 AEM 제품 프로필을 사용하여 AEM 자체에 대한 액세스 권한을 팀에 부여합니다. 시스템 관리자는 AEM 제품 프로필을 할당하여 이 작업을 수행합니다.
 
-이 문서를 읽은 후에는 다음 사항을 이해할 수 있습니다.
+이 문서를 읽고 나면 다음 사항을 이해할 수 있습니다.
 
 * AEM 제품 프로필의 정의
 * AEM 사용자 제품 프로필에 팀원을 추가하는 방법
@@ -88,7 +88,7 @@ Admin Console에서 AEM 제품 프로필을 보려면 다음 단계를 따르십
 
    ![액세스 관리](/help/journey-onboarding/assets/add-team1.png)
 
-1. 새 탭은 환경의 작성자 인스턴스에 액세스할 수 있는 Admin Console로 이동합니다. 이 개인에게 부여해야 하는 권한에 따라 **AEM 관리자** 또는 **AEM 사용자**&#x200B;를 선택합니다.
+1. 새 탭은 환경의 작성자 인스턴스에 액세스할 수 있는 Admin Console로 이동합니다. 선택 **AEM 관리자** 또는 **AEM 사용자** 권한에 따라 이 개인에게 부여해야 합니다.
 
    ![액세스 할당](/help/journey-onboarding/assets/add-team2.png)
 

@@ -2,10 +2,10 @@
 title: 페이지 콘텐츠 편집
 description: 페이지를 생성하면 콘텐츠를 편집하여 필요한 업데이트를 수행할 수 있습니다.
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2975'
-ht-degree: 96%
+source-wordcount: '2973'
+ht-degree: 95%
 
 ---
 
@@ -341,7 +341,7 @@ ht-degree: 96%
 
    ![페이지 구성 요소의 구성 요소 도구 모음](/help/sites-cloud/authoring/assets/editing-layout-toolbar.png)
 
-   **레이아웃** 작업을 클릭하거나 탭하여 구성 요소의 레이아웃을 조정합니다.
+   다음 항목 선택 **레이아웃** 구성 요소 레이아웃을 조정하는 작업
 
    ![구성 요소 도구 모음의 레이아웃 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 

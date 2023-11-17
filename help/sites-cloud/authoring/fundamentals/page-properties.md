@@ -2,10 +2,10 @@
 title: 페이지 속성 편집
 description: AEM에서 페이지를 관리하는 데 필요한 속성을 정의하는 방법에 대해 알아봅니다.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2280'
-ht-degree: 98%
+source-wordcount: '2270'
+ht-degree: 96%
 
 ---
 
@@ -87,9 +87,9 @@ ht-degree: 98%
   >* 정규 표현식 패턴을 지원하지 않습니다.
   >* 기존 페이지로 설정하면 안 됩니다.
 
-   * **추가** - 페이지의 vanity URL을 정의할 필드를 표시하려면 탭하거나 클릭합니다.
-      * 여러 vanity URL을 추가하려면 다시 탭하거나 클릭합니다.
-      * vanity URL을 삭제하려면 **제거** 아이콘을 탭하거나 클릭합니다.
+   * **추가** - 페이지의 vanity URL을 정의할 필드를 표시하려면 선택합니다.
+      * 여러 을(를) 추가하려면 다시 선택합니다.
+      * 다음 항목 선택 **제거** vanity URL을 삭제하는 아이콘.
    * **vanity URL 리디렉션** - 페이지에서 vanity URL을 사용할지 여부를 나타냅니다.
 
 ### 고급 {#advanced}
@@ -105,7 +105,7 @@ ht-degree: 98%
       * 예를 들어 페이지 `/content/wknd/us/en/magazine/members-only`에 대한 `private`의 별칭을 정의하면 `/content/wknd/us/en/magazine/private`을 통해서도 이 페이지에 액세스할 수 있습니다.
       * 별칭을 만들면 페이지 노드의 `sling:alias` 속성이 설정되며, 이는 저장소 경로가 아닌 리소스에만 영향을 미칩니다.
       * 편집기의 별칭을 통해 액세스하는 페이지는 게시할 수 없습니다. 편집기의 [게시 옵션](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)은 실제 경로를 통해 액세스하는 페이지에 대해서만 사용할 수 있습니다.
-      * 자세한 내용은 [SEO 및 URL 관리 모범 사례 아래의 현지화된 페이지 이름](/help/overview/seo-and-url-management.md#localized-page-names)을 참조하십시오.
+      * 다음을 참조하십시오 [SEO 및 URL 관리 우수 사례에서 현지화된 페이지 이름](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **구성**
 
@@ -147,7 +147,7 @@ ht-degree: 98%
 
 * **추천 이미지**
 
-  추천할 이미지를 선택하고 구성합니다. 페이지를 참조하는 구성 요소(예: 티저, 페이지 목록 등)에 사용됩니다.
+  추천할 이미지를 선택하고 구성합니다. 티저, 페이지 목록 등과 같이 페이지를 참조하는 구성 요소에서 사용됩니다.
 
    * **이미지**
 
@@ -237,7 +237,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->자세한 내용은 [점진적 웹 앱 기능 활성화](/help/sites-cloud/authoring/features/enable-pwa.md)를 참조하십시오.
+>다음을 참조하십시오 [점진적 웹 앱 기능 활성화](/help/sites-cloud/authoring/features/enable-pwa.md).
 
 * **설치 가능한 경험 구성**
 

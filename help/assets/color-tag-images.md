@@ -2,7 +2,7 @@
 title: 이미지용 색상 태그
 description: Adobe Experience Manager Assets를 사용하면 이미지의 색상을 구분하고 이를 태그로 자동으로 적용할 수 있습니다. 그런 다음 이러한 태그를 사용하여 이미지를 검색하고 필터링할 수 있습니다.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: 57d6b50ef5256bf6e8fce84100eed4690b77cb87
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1220'
 ht-degree: 6%
@@ -169,7 +169,7 @@ DAM의 기존 이미지는 색상 태그가 자동으로 지정되지 않습니�
 
 1. 다음으로 이동 **[!UICONTROL 에셋 > 파일]**.
 
-1. 선택 **[!UICONTROL 필터]** 드롭다운 목록에서 클릭합니다.
+1. 선택 **[!UICONTROL 필터]** 을 클릭합니다.
    ![자산 필터링](assets/filter-assets.png)
 
 1. 다음 항목 선택 [AEM Assets 색상 술어](#configure-search-predicate).

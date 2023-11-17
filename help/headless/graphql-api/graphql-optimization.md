@@ -2,9 +2,9 @@
 title: GraphQL 쿼리 최적화
 description: Headless 콘텐츠 게재를 위해 Adobe Experience Manager as a Cloud Service에서 콘텐츠 조각을 필터링, 페이징 및 정렬할 때 GraphQL 쿼리를 최적화하는 방법을 알아봅니다.
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: 2ac93fbe0075cc2c88def444daba613e8b40c018
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1876'
 ht-degree: 65%
 
 ---

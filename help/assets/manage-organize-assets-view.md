@@ -4,10 +4,10 @@ description: ' [!DNL Assets view]에서 에셋을 이동하고, 삭제하고, �
 role: User,Leader
 contentOwner: AG
 exl-id: b01e98b9-0cc2-47c5-9f5b-79b8e6bef39f
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -104,7 +104,7 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 1. 에셋을 선택하고 도구 모음에서 **[!UICONTROL 세부 정보]**&#x200B;를 클릭합니다.
 
-1. **[!UICONTROL 기본]** 탭의 **[!UICONTROL 상태]** 드롭다운 목록에서 에셋 상태를 선택합니다. 가능한 값에는 승인됨, 거부됨 및 상태 없음(기본값)이 포함됩니다.
+1. 다음에서 **[!UICONTROL 기본]** 탭에서 에셋 상태를 선택합니다. **[!UICONTROL 상태]** 드롭다운 목록입니다. 가능한 값에는 승인됨, 거부됨 및 상태 없음(기본값)이 포함됩니다.
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 

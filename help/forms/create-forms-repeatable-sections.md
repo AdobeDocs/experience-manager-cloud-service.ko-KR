@@ -3,9 +3,9 @@ title: 적응형 양식 핵심 구성 요소에서 반복 가능한 패널을 �
 description: 적응형 양식에서 반복 가능한 섹션 또는 필드를 만드는 방법에 대해 알아봅니다.
 role: Architect, Developer, Admin, User
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1357'
 ht-degree: 6%
 
 ---

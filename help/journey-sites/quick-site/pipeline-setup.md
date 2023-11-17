@@ -2,10 +2,10 @@
 title: 파이프라인 설정
 description: 프론트엔드 파이프라인을 만들어 사이트 테마의 맞춤화를 관리할 수 있습니다.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '964'
-ht-degree: 98%
+source-wordcount: '956'
+ht-degree: 95%
 
 ---
 
@@ -57,7 +57,7 @@ AEM 빠른 사이트 생성 여정의 이전 문서인 [템플릿으로 사이�
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Adobe Cloud Manager에 로그인합니다.
 
-1. Cloud Manager에 사용할 수 있는 다양한 프로그램이 나열됩니다. 관리하고자 하는 프로그램을 탭하거나 클릭합니다. AEM as a Cloud Service으로 시작하는 경우 사용할 수 있는 프로그램이 하나밖에 없을 수 있습니다.
+1. Cloud Manager에 사용할 수 있는 다양한 프로그램이 나열됩니다. 관리할 항목을 선택합니다. AEM as a Cloud Service으로 시작하는 경우 사용할 수 있는 프로그램이 하나밖에 없을 수 있습니다.
 
    ![Cloud Manager 프로그램 선택](assets/cloud-manager-select-program.png)
 
@@ -71,7 +71,7 @@ AEM 빠른 사이트 생성 여정의 이전 문서인 [템플릿으로 사이�
 
 Cloud Manager에 액세스했으므로 프론트엔드 개발을 위한 파이프라인을 제작할 수 있습니다.
 
-1. Cloud Manager 페이지의 **파이프라인** 섹션에서 **추가** 버튼을 탭하거나 클릭합니다.
+1. 다음에서 **파이프라인** cloud Manager 페이지의 섹션에서 다음을 선택합니다. **추가** 단추를 클릭합니다.
 
    ![파이프라인](assets/pipelines-add.png)
 
@@ -83,7 +83,7 @@ Cloud Manager에 액세스했으므로 프론트엔드 개발을 위한 파이�
 
    ![파이프라인 구성 추가](assets/add-pipeline-configuration.png)
 
-1. **계속**&#x200B;을 탭하거나 클릭합니다.
+1. 선택 **계속**.
 
 1. **소스 코드** 탭에서:
    * 배포할 코드 유형으로 **프론트엔드 코드**&#x200B;를 선택합니다.
@@ -94,7 +94,7 @@ Cloud Manager에 액세스했으므로 프론트엔드 개발을 위한 파이�
 
    ![파이프라인 추가에 대한 소스 코드 정보](assets/add-pipeline-source-code.png)
 
-1. **저장**&#x200B;을 탭하거나 클릭합니다.
+1. **저장**&#x200B;을 선택합니다.
 
 새 파이프라인이 생성되며 Cloud Manager 창의 **파이프라인** 섹션에 표시됩니다. 파이프라인 이름 뒤에 있는 생략 부호를 탭하거나 클릭하면 필요에 따라 세부 정보를 편집하거나 볼 수 있는 옵션이 표시됩니다.
 

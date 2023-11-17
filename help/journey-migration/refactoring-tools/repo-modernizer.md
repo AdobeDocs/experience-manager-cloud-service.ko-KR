@@ -2,9 +2,9 @@
 title: 저장소 현대화 도구
 description: 기존 프로젝트 패키지를 재구성하고 Adobe Experience Manager as a Cloud Service에 대해 정의된 프로젝트 구조와 호환되도록 하는 방법에 대해 알아봅니다.
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '322'
 ht-degree: 5%
 
 ---
@@ -32,7 +32,7 @@ Repository Modernizer는 다음과 같은 배포 구조를 생성하여 호환�
 
 >[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
 
-* Adobe I/O CLI 를 통해 : 다음을 통해 Repository Modernizer를 사용하는 것이 좋습니다. `aio-cli-plugin-aem-cloud-service-migration` (Adobe I/O CLI용 AEM as a Cloud Service 코드 리팩터링 플러그인).
+* Adobe I/O CLI 를 통해 : Adobe은 를 통해 Repository Modernizer를 사용하는 것을 권장합니다. `aio-cli-plugin-aem-cloud-service-migration` (Adobe I/O CLI용 AEM as a Cloud Service 코드 리팩터링 플러그인).
 
   다음을 참조하십시오 **[Git 리소스: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** 따라서 플러그인을 설치하고 사용하는 방법을 배울 수 있습니다.
 

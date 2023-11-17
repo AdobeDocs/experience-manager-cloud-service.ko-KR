@@ -3,10 +3,10 @@ title: 프로그램 제작
 description: Cloud Manager를 사용하여 첫 번째 프로그램을 만드는 방법을 알아봅니다.
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
-workflow-type: ht
-source-wordcount: '678'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '676'
+ht-degree: 97%
 
 ---
 
@@ -51,7 +51,7 @@ Cloud Manager 프로그램은 일련의 Cloud Manager 환경을 나타냅니다.
 
    ![Cloud Manager 랜딩 페이지](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. 프로그램 만들기 마법사에서 **샌드박스 설정**&#x200B;을 선택한 다음 프로그램 이름을 제공하고 **계속**&#x200B;을 탭하거나 클릭합니다.
+1. 프로그램 만들기 마법사에서 **샌드박스 설정**&#x200B;를 클릭한 다음 프로그램 이름을 입력하고 를 선택합니다 **계속**.
 
    ![프로그램 유형 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
 

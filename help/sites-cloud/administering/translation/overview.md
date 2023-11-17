@@ -4,10 +4,10 @@ description: 다국어 사이트를 위한 콘텐츠를 번역하는 방법에 �
 feature: Language Copy
 role: Admin
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '289'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '288'
+ht-degree: 94%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->언어 복사 기능을 사용하려면 사용자는 `project-administrators` 그룹의 멤버여야 합니다.
+>사용자는 다음 구성원의 구성원이어야 합니다. `project-administrators` 언어 복사 기능을 사용할 그룹입니다.
 
 ## 모범 사례 {#best-practices}
 

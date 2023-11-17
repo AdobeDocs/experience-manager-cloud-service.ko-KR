@@ -4,10 +4,10 @@ description: 사이트 테마를 손쉽게 맞춤화하고 관리하는 데 도�
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 97%
+source-wordcount: '583'
+ht-degree: 83%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 97%
 
 ![테마 소스 다운로드](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
-**테마 소스 다운로드**&#x200B;를 탭하거나 클릭하여 맞춤화 목적으로 사이트 테마의 로컬 사본을 `.zip` 파일로 다운로드합니다.
+선택 **테마 소스 다운로드** 사이트 테마의 로컬 사본을 다음으로 다운로드하려면 `.zip` 사용자 지정을 위한 파일입니다.
 
 ## 템플릿 리소스 다운로드 {#downloading-template-resources}
 
@@ -48,7 +48,7 @@ ht-degree: 97%
 
 ![테마 소스 다운로드](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
-**추가 템플릿 리소스 다운로드**&#x200B;라는 제목 아래의 버튼을 탭하거나 클릭하여 사용할 수 있는 파일의 로컬 사본을 다운로드합니다.
+제목 아래의 버튼을 선택합니다. **추가 템플릿 리소스 다운로드** 사용 가능한 파일의 로컬 복사본을 다운로드하려면 다음을 수행하십시오.
 
 ## 테마 버전 보기 및 변경 {#them-versions}
 
@@ -60,11 +60,11 @@ ht-degree: 97%
 
 현재 테마 버전이 마지막 업데이트의 타임스탬프가 포함된 커밋 해시와 함께 표시됩니다.
 
-탭 또는 클릭 **버전 선택** 를 클릭하여 이전 테마 버전을 볼 수 있습니다.
+선택 **버전 선택** 를 클릭하여 이전 테마 버전을 볼 수 있습니다.
 
 ![테마 버전 선택](/help/sites-cloud/administering/assets/select-theme-versions.png)
 
-변경하고자 하는 버전을 탭하거나 클릭한 다음 **적용**&#x200B;을 탭하거나 클릭하여 변경 내용을 적용합니다.
+변경할 버전을 선택한 다음 를 선택합니다 **적용** 변경할 수 있습니다.
 
 AEM에서 새 테마 버전이 프론트엔드 파이프라인을 통해 배포되었지만 사이트에 적용되지 않았음을 감지하면 알림 아이콘이 표시됩니다.
 
@@ -78,7 +78,7 @@ AEM에서 새 테마 버전이 프론트엔드 파이프라인을 통해 배포�
 
 그러나 사이트 레일을 사용하여 사이트에 대해 프론트엔드 파이프라인을 활성화할 수 있습니다.
 
-사이트 콘솔에 표시되는 사이트 레일을 사용하여 사이트 루트를 선택해 사이트에 대한 테마 정보를 표시한 다음 **프론트엔드 파이프라인 활성화**&#x200B;를 탭하거나 클릭합니다.
+사이트 콘솔에 표시되는 사이트 레일을 사용하여 사이트 루트를 선택해 사이트에 대한 테마 정보를 표시한 다음 을 선택합니다 **프론트엔드 파이프라인 활성화**.
 
 ![프론트엔드 파이프라인 활성화](/help/sites-cloud/administering/assets/enable-fep.png)
 

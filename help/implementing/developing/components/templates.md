@@ -2,9 +2,9 @@
 title: 페이지 템플릿
 description: 페이지 템플릿은 새 페이지의 기반으로 사용되는 페이지를 만들 때 사용됩니다
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3287'
+source-wordcount: '3279'
 ht-degree: 8%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 8%
 
 페이지 템플릿 만들기는 주로 [템플릿 콘솔 및 템플릿 편집기](/help/sites-cloud/authoring/features/templates.md) 템플릿 작성자에 의해 제어됩니다. 이 섹션은 이 프로세스에 대한 개요를 제공하며 다음 기술 수준에서 발생하는 사항에 대한 설명을 제공합니다.
 
-편집 가능 템플릿을 새로 만들 때 다음 작업을 수행합니다.
+편집 가능한 템플릿을 만들 때 다음 작업을 수행하십시오.
 
 1. 만들기 [템플릿용 폴더](#template-folders). 이 작업은 필수는 아니지만 모범 사례에 권장됩니다.
 1. 선택 [템플릿 유형](#template-type). 이 은(는) 다음을 만들기 위해 복사됩니다. [템플릿 정의](#template-definitions).
@@ -197,7 +197,7 @@ ht-degree: 8%
 
 ### 구성 브라우저 사용 {#using-the-configuration-browser}
 
-1. 다음으로 이동 **전역 탐색** -> **도구** > [**구성 브라우저**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+1. 다음으로 이동 **전역 탐색** > **도구** > [**구성 브라우저**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
    기존 폴더는 다음을 포함하여 왼쪽에 나열됩니다. `global` 폴더를 삭제합니다.
 
@@ -211,7 +211,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->다음에서 [구성 브라우저,](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) 전역 폴더를 편집하고 **편집 가능한 템플릿** 이 폴더 내에 템플릿을 만들려면 이 옵션을 사용하는 것이 좋습니다.
+>다음에서 [구성 브라우저,](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) 전역 폴더를 편집하고 **편집 가능한 템플릿** 이 폴더 내에 템플릿을 만들려는 경우 옵션이 사용되지만, 권장되는 방법은 아닙니다.
 
 ### ACL 및 그룹 {#acls-and-groups}
 
@@ -289,9 +289,9 @@ CRXDE를 통해 또는 구성 브라우저를 통해 템플릿 폴더가 만들�
 
 ## 템플릿 유형 {#template-type}
 
-새 템플릿을 만들 때 템플릿 유형을 지정해야 합니다.
+템플릿을 만들 때 템플릿 유형을 지정해야 합니다.
 
-* 템플릿 유형은 템플릿에 템플릿을 효과적으로 제공합니다. 새 템플릿을 만들 때 선택한 템플릿 유형의 구조 및 초기 콘텐츠를 사용하여 새 템플릿을 만듭니다.
+* 템플릿 유형은 템플릿에 템플릿을 효과적으로 제공합니다. 템플릿을 만들 때 선택한 템플릿 유형의 구조 및 초기 콘텐츠를 사용하여 새 템플릿을 만듭니다.
 
    * 템플릿 유형이 복사되어 템플릿이 생성됩니다.
    * 복사가 발생하면 템플릿과 템플릿 유형 간의 유일한 연결은 정보 제공을 위한 정적 참조입니다.
@@ -338,7 +338,7 @@ The [device groups](/help/sites-developing/mobile.md#device-groups) used for an 
 * On the editable template type
 * On the editable template
 
-When creating a new editable template, the value is copied from the template type to the individual template. If the value is not set on the type, it can be set on the template. Once a template is created, there is no inheritance from the type to the template.
+When creating an editable template, the value is copied from the template type to the individual template. If the value is not set on the type, it can be set on the template. Once a template is created, there is no inheritance from the type to the template.
 
 >[!CAUTION]
 >
@@ -432,7 +432,7 @@ GITHUB의 코드
 
 결과 페이지의 구조를 정의합니다.
 
-* 초기 콘텐츠와 병합됩니다( `/initial`)을 클릭하여 새 페이지를 만듭니다.
+* 초기 콘텐츠와 병합됩니다( `/initial`)을 클릭하여 페이지를 만듭니다.
 * 구조에 대한 변경 사항은 템플릿으로 만든 모든 페이지에 반영됩니다.
 * 다음 `root` ( `structure/jcr:content/root`) 노드는 결과 페이지에서 사용할 수 있는 구성 요소 목록을 정의합니다.
    * 템플릿 구조에 정의된 구성 요소는 결과 페이지에서 이동하거나 삭제할 수 없습니다.
@@ -446,7 +446,7 @@ GITHUB의 코드
 새 페이지가 만들어질 때 갖게 될 초기 콘텐츠를 정의합니다.
 
 * 다음 포함: `jcr:content` 새 페이지에 복사되는 노드입니다.
-* 구조와 병합( `/structure`)을 클릭하여 새 페이지를 만듭니다.
+* 구조와 병합( `/structure`)을 클릭하여 페이지를 만듭니다.
 * 생성 후 초기 콘텐츠가 변경되면 기존 페이지가 업데이트되지 않습니다.
 * 다음 `root` 노드에는 최종 페이지에서 사용할 수 있는 항목을 정의하는 구성 요소 목록이 있습니다.
 * 콘텐츠가 구조 모드의 구성 요소에 추가되고 해당 구성 요소의 잠금이 해제된 경우(또는 그 반대의 경우) 이 콘텐츠는 초기 콘텐츠로 사용됩니다.
@@ -545,7 +545,7 @@ GITHUB의 코드
 
 ### 템플릿 가용성 {#template-availability}
 
-사이트 관리 인터페이스에서 새 페이지를 만들 때 사용 가능한 템플릿 목록은 새 페이지의 위치와 각 템플릿에 지정된 배치 제한에 따라 다릅니다.
+사이트 관리 인터페이스에서 페이지를 만들 때 사용 가능한 템플릿 목록은 새 페이지의 위치와 각 템플릿에 지정된 배치 제한에 따라 다릅니다.
 
 다음 속성은 템플릿 여부를 결정합니다 `T` 은 새 페이지를 페이지의 하위 페이지로 배치하는 데 사용할 수 있습니다. `P`. 이러한 각 속성은 경로와의 일치에 사용되는 0개 이상의 정규 표현식을 포함하는 다중 값 문자열입니다.
 

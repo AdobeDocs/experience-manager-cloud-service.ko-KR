@@ -5,7 +5,7 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 6%
@@ -134,7 +134,6 @@ Only the selected folder content and references are published.
 >
 >그러나 기존 사용자 지정을 제거하여 새 사용자 지정을 사용할 수 있습니다 [!DNL Manager Publication] 기능.
 
-
 ## 나중에 자산 게시 {#publish-assets-later}
 
 자산의 게시 워크플로우를 나중 날짜 또는 시간으로 예약하려면 다음 작업을 수행하십시오.
@@ -179,9 +178,10 @@ Only the selected folder content and references are published.
 
 ## 발행 요청 {#request-publication}
 
-다음 `Request Publication` 옵션은에 게시하기 전에 자산의 워크플로를 인증하는 데 도움이 됩니다. [!DNL AEM] 에셋 환경. [!DNL AEM] 는 다양한 사용자에게 다양한 수준의 권한을 제공합니다. 다음을 수행할 수 있습니다. *참여자* 에셋을 업로드하고 있지만 업로드가 확인되면 게시할 수 있습니다. 또한 다음과 같습니다. *관리자* 에셋의 워크플로를 읽고 쓸 수 있도록 관리할 수 있습니다.
+다음 `Request Publication` 옵션은에 게시하기 전에 자산의 워크플로를 인증하는 데 도움이 됩니다. [!DNL AEM] 에셋 환경. [!DNL AEM] 는 다양한 사용자에게 다양한 수준의 권한을 제공합니다. 다음을 수행할 수 있습니다. *참여자* 에셋을 업로드하고 있지만 업로드가 확인되면 게시할 수 있습니다. 또한, *관리자* 에셋의 워크플로를 읽고 쓸 수 있도록 관리할 수 있습니다.
 
 게시 요청 옵션은 다음 사용자가 사용할 수 있습니다.
+
 * **참여자:** 다음을 기여할 수 있는 사용자인 경우 [!DNL AEM] 에셋을 선택한 경우 [!DNL AEM] 에셋 워크플로. `Manage publication` 버튼이 숨겨져 있습니다. 기여자는 에셋을 추가하여 기여할 수만 있고 게시할 수 없으며 워크플로우에 대한 읽기 액세스 권한이 없습니다.
 
 * **워크플로 사용자:** 이 사용자는 자산을 게시할 수 없지만 워크플로우에 대한 읽기 액세스 권한이 있습니다. 워크플로 사용자는 다음과 같은 작업을 수행할 수 있습니다.

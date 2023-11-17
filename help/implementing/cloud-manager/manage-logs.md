@@ -2,10 +2,10 @@
 title: 로그 액세스 및 관리
 description: AEM as a Cloud Service에서 개발 프로세스를 지원하기 위해 로그에 액세스하고 관리하는 방법을 알아봅니다.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 7272f6ebd1b9c4e67985cba0221d8cafbeb1560a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '345'
-ht-degree: 79%
+ht-degree: 74%
 
 ---
 
@@ -36,7 +36,7 @@ AEM as a Cloud Service에서 개발 프로세스를 지원하기 위해 로그�
 
    ![추가 게시 영역에 대한 로그 다운로드](assets/download-publish-region-logs.png)
 
-1. 서비스를 선택한 후 검색하려는 로그 옆에 있는 다운로드 아이콘을 클릭합니다.
+1. 서비스를 선택하면 검색할 로그 옆에 있는 다운로드 아이콘을 클릭합니다.
 
 **환경** 페이지에서 로그에 액세스할 수도 있습니다.
 

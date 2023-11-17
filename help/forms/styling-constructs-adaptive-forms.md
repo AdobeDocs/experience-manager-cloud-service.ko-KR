@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2315'
+source-wordcount: '2316'
 ht-degree: 3%
 
 ---
@@ -276,7 +276,7 @@ HTML 요소 **레이블** 필드에는 클래스가 포함됩니다. **left** �
   </tr>
   <tr>
    <td><p><code>listboxwidget-height</code></p> </td>
-   <td><p>다중 선택 드롭다운의 최대 높이</p> </td>
+   <td><p>다중 선택 드롭다운 목록의 최대 높이</p> </td>
   </tr>
  </tbody>
 </table>

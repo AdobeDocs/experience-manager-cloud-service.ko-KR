@@ -2,9 +2,9 @@
 title: 클라우드 서비스에 콘텐츠 수집
 description: Cloud Acceleration Manager 를 사용하여 마이그레이션 세트의 컨텐츠를 대상 Cloud Service 인스턴스로 수집하는 방법을 알아봅니다.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 28cbdff5756b0b25916f8d9a523ab4745873b5fa
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2324'
+source-wordcount: '2326'
 ht-degree: 7%
 
 ---
@@ -139,7 +139,7 @@ Cloud Acceleration Manager를 사용하여 마이그레이션 세트를 수집�
 >
 > &quot;AEM 버전 업데이트&quot;를 비활성화하기 위해 더 이상 지원 티켓을 기록할 필요가 없습니다.
 
-&quot;AEM 버전 업데이트&quot;가 활성화된 경우(즉, 업데이트가 실행 중이거나 실행 대기 중인 경우) 수집이 시작되지 않고 사용자 인터페이스에 다음 메시지가 표시됩니다. 업데이트가 완료되면 수집을 시작할 수 있습니다. Cloud Manager를 사용하여 프로그램 파이프라인의 현재 상태를 볼 수 있습니다.
+&quot;AEM 버전 업데이트&quot;가 활성 상태인 경우(즉, 업데이트가 실행 중이거나 실행 대기 중인 경우) 수집이 시작되지 않고 사용자 인터페이스에 다음 메시지가 표시됩니다. 업데이트가 완료되면 수집을 시작할 수 있습니다. Cloud Manager를 사용하여 프로그램 파이프라인의 현재 상태를 볼 수 있습니다.
 
 >[!NOTE]
 >
@@ -162,13 +162,14 @@ AEM의 각 노드에는 고유한 UUID가 있어야 합니다. 이 오류는 수
 ### 참조된 노드를 삭제할 수 없어 추가 수집 실패
 
 다음의 또 다른 일반적인 원인 [추가 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 실패는 대상 인스턴스의 특정 노드에 대한 버전 충돌입니다. 이 오류를 식별하려면 Cloud Acceleration Manager UI를 사용하여 수집 로그를 다운로드하고 다음과 같은 항목을 찾습니다.
+
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: 참조된 노드를 삭제할 수 없음: 8a2289f4-b904-4bd0-8410-15e41e0976a8
 
 대상의 노드가 수집과 후속 수집 사이에서 수정된 경우 이 문제가 발생할 수 있습니다 **지우지 않음** 수집 - 새 버전이 만들어집니다. 마이그레이션 세트가 &quot;버전 포함&quot;을 활성화한 상태로 추출된 경우 대상에 버전 내역 및 기타 콘텐츠에서 참조되는 최신 버전이 있으므로 충돌이 발생할 수 있습니다. 수정 버전 노드가 참조되기 때문에 수집 프로세스에서 수정 버전 노드를 삭제할 수 없습니다.
 
 해결책은 불쾌한 노드 없이 다시 추가 추출이 수행될 것을 요구할 수 있다. 또는 문제가 되는 노드의 소규모 마이그레이션 세트를 만들지만 &quot;버전 포함&quot;은 비활성화되어 있습니다.
 
-모범 사례에 따르면 **지우지 않음** 수집은 버전이 포함된 마이그레이션 세트를 사용하여 실행해야 합니다(즉, &quot;include versions&quot;=true 로 추출). 마이그레이션 여정이 완료될 때까지 대상의 컨텐츠를 가능한 한 적게 수정하는 것이 중요합니다. 그렇지 않으면 이러한 충돌이 발생할 수 있습니다.
+모범 사례에 따르면 **지우지 않음** 수집은 버전이 포함된 마이그레이션 세트를 사용하여 실행되어야 합니다(즉, &quot;include versions&quot;=true로 추출). 마이그레이션 여정이 완료될 때까지 대상의 컨텐츠를 가능한 한 적게 수정하는 것이 중요합니다. 그렇지 않으면 이러한 충돌이 발생할 수 있습니다.
 
 ### 수집 취소됨
 

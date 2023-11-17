@@ -2,10 +2,10 @@
 title: Adobe Target으로 콘텐츠 조각 내보내기
 description: 콘텐츠 조각을 Adobe Target으로 내보내 경험을 테스트하고 개인화하는 방법에 대해 알아봅니다.
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '2231'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '2223'
+ht-degree: 96%
 
 ---
 
@@ -163,7 +163,7 @@ Adobe Target의 세그먼트를 동기화하도록 클라우드 구성을 구성
    >1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
    >1. Navigate to **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
    >1. Set the property **disable** to **false**.
-   >1. Tap or click **Save All**.
+   >1. Select **Save All**.
 
    -->
 
@@ -187,7 +187,7 @@ Adobe Target의 세그먼트를 동기화하도록 클라우드 구성을 구성
 
    * **정확한 타겟팅 사용:** 기본적으로 이 확인란은 선택되어 있습니다. 이 확인란을 선택하면 클라우드 서비스 구성은 콘텐츠를 로드하기 전에 컨텍스트가 로드될 때까지 대기합니다. 다음 사항에 주의하십시오.
 
-   * **Adobe Target의 세그먼트 동기화:** Target에서 정의한 세그먼트를 다운로드하여 AEM에서 사용하려면 이 옵션을 선택하십시오. API 유형 속성이 REST인 경우 인라인 세그먼트가 지원되지 않아 항상 Target의 세그먼트를 사용해야 하므로 이 옵션을 선택해야 합니다. (AEM 용어인 “세그먼트”는 Target에서의 “대상자”와 동일합니다.)
+   * **Adobe Target의 세그먼트 동기화:** Target에서 정의한 세그먼트를 다운로드하여 AEM에서 사용하려면 이 옵션을 선택하십시오. API 유형 속성이 REST인 경우 인라인 세그먼트가 지원되지 않고 항상 Target의 세그먼트를 사용해야 하므로 이 옵션을 선택합니다. (AEM 용어인 &#39;segment&#39;는 Target &#39;audience&#39;와 동일합니다.)
 
    * **클라이언트 라이브러리:** 기본값은 AT.js입니다(mbox.js는 더 이상 사용되지 않음).
 
@@ -288,8 +288,8 @@ When you associate a page with the framework, the child pages inherit the associ
 1. In the **Sites** console, navigate to the site that you want to configure.
 1. Using either [quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources), select **View Properties.**
 1. Select the **Cloud Services** tab.
-1. Tap/click **Edit**.
-1. Tap/click **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
+1. Select **Edit**.
+1. Select **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
 
   ![Cloud Service Configurations](assets/chlimage_1-165.png)
 
@@ -299,7 +299,7 @@ When you associate a page with the framework, the child pages inherit the associ
    >
    >Make sure that you select the specific **framework** that you created and not the Target cloud configuration under which it was created.
 
-1. Tap/click **Done**.
+1. Select **Done**.
 1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).)
 
    >[!NOTE]
@@ -313,14 +313,14 @@ When you associate a page with the framework, the child pages inherit the associ
 >
 >이미지와 같은 미디어 자산의 경우 하나의 참조만 Target으로 가져올 수 있습니다. 자산 자체는 AEM Assets 내에 저장되며 AEM 게시 인스턴스에서 전달됩니다.
 >
->이로 인해 콘텐츠 조각 및 관련된 모든 자산은 Target으로 내보내기 전에 게시되어야 합니다.
+>이로 인해 Target으로 내보내기 전에 모든 관련 에셋과 함께 콘텐츠 조각을 게시해야 합니다.
 
 AEM에서 Target으로 콘텐츠 조각을 내보내려면(클라우드 구성 지정 이후):
 
 1. **자산** 콘솔에서 콘텐츠 조각으로 이동합니다.
 1. Target으로 내보내고자 하는 콘텐츠 조각을 선택합니다.
 
-1. **Adobe Target 오퍼로 내보내기**&#x200B;를 탭/클릭합니다.
+1. 선택 **Adobe Target 오퍼로 내보내기**.
 
    ![Adobe Target으로 내보내기](assets/cfm-export-target-01.png)
 
@@ -334,7 +334,7 @@ AEM에서 Target으로 콘텐츠 조각을 내보내려면(클라우드 구성 �
    
    -->
 
-1. 필요에 따라 **게시하지 않고 내보내기** 또는 **게시**&#x200B;를 탭/클릭합니다.
+1. 선택 **게시하지 않고 내보내기** 또는 **게시** 필요에 따라.
 
    >[!NOTE]
    >
@@ -346,7 +346,7 @@ AEM에서 Target으로 콘텐츠 조각을 내보내려면(클라우드 구성 �
    >
    >**게시**&#x200B;를 선택하면 콘텐츠 조각이 즉시 게시되며 Target에 전송됩니다.
 
-1. 확인 대화 상자에서 **확인**&#x200B;을 탭/클릭합니다.
+1. 선택 **확인** 확인 대화 상자에서 확인할 수 있습니다.
 
    이제 콘텐츠 조각은 Target에 있게 됩니다.
 

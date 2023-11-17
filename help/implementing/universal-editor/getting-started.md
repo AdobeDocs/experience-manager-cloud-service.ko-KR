@@ -2,10 +2,10 @@
 title: AEM에서 Universal Editor 시작하기
 description: Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 알아봅니다.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 87%
+source-wordcount: '920'
+ht-degree: 78%
 
 ---
 
@@ -22,7 +22,7 @@ Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번
 
 Universal Editor는 모든 소스의 콘텐츠를 편집할 수 있지만 이 문서에서는 AEM 앱을 예로 사용합니다.
 
-AEM 앱을 온보딩하고 Universal Editor를 사용하도록 계측하는 데는 여러 단계가 있습니다.
+AEM 앱을 온보딩하고 유니버설 편집기를 사용하도록 계측하는 몇 가지 단계가 있습니다.
 
 1. [Universal Editor에 대한 액세스 권한을 요청합니다.](#request-access)
 1. [Universal Editor 핵심 라이브러리를 포함합니다.](#core-library)
@@ -43,13 +43,13 @@ AEM 앱을 온보딩하고 Universal Editor를 사용하도록 계측하는 데�
 
 ## Universal Editor 핵심 라이브러리 포함 {#core-library}
 
-Universal Editor에서 사용하기 위해 앱을 계측하려면 먼저 다음 종속성을 포함해야 합니다.
+범용 편집기에서 사용하기 위해 앱을 계측하려면 먼저 다음 종속성을 포함해야 합니다.
 
 ```javascript
 @adobe/universal-editor-cors
 ```
 
-계측을 활성화하려면 `index.js`에 다음 가져오기를 추가해야 합니다.
+계측을 활성화하려면 다음 가져오기를 `index.js`.
 
 ```javascript
 import "@adobe/universal-editor-cors";
@@ -103,7 +103,7 @@ X-Frame-Options: SAMEORIGIN은 iframe 내에서 AEM 페이지 렌더링을 방�
 
 Universal Editor 서비스에는 편집 중인 앱의 콘텐츠에 대한 올바른 백엔드 시스템을 식별하고 활용하기 위해 [균일 리소스 이름(URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name)이 필요합니다. 따라서 콘텐츠를 다시 콘텐츠 리소스에 매핑하려면 URN 스키마가 필요합니다.
 
-페이지에 추가된 계측 속성은 대부분 [HTML 마이크로데이터](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata)로 구성되는데, 이는 HTML을 더 의미 있게 만들고 HTML 문서를 색인화하는 등의 작업에 사용할 수 있는 업계 표준입니다.
+페이지에 추가된 계측 속성은 대부분 다음으로 구성됩니다 [HTML 마이크로데이터,](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata) HTML을 보다 의미 있게 만들고, HTML 문서를 인덱싱할 수 있도록 하는 데 사용할 수 있는 업계 표준입니다.
 
 ### 연결 만들기 {#connections}
 

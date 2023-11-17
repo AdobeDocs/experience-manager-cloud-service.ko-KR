@@ -6,10 +6,10 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4344'
-ht-degree: 11%
+source-wordcount: '4301'
+ht-degree: 10%
 
 ---
 
@@ -73,7 +73,7 @@ ZIP 파일을 추출하려면 다음 단계를 수행하십시오.
 
 1. 미리보기 모드에서 다음에 대한 확대/축소 옵션을 사용할 수 있습니다. [지원되는 이미지 유형](/help/assets/file-format-support.md) (대화형 편집 사용).
 
-   자산을 확대하려면 탭/클릭합니다 `+` (또는 에셋에서 돋보기를 탭/클릭합니다.) 축소하려면 탭/클릭 `-`. 확대하면 패닝으로 이미지의 모든 영역을 자세히 볼 수 있습니다. 확대/축소 재설정 화살표를 사용하면 원래 보기로 돌아갑니다.
+   자산을 확대하려면 다음을 선택합니다 `+` (또는 에셋에서 돋보기를 선택합니다.) 축소하려면 다음을 선택합니다 `-`. 확대하면 패닝으로 이미지의 모든 영역을 자세히 볼 수 있습니다. 확대/축소 재설정 화살표를 사용하면 원래 보기로 돌아갑니다.
 
    누르기 **[!UICONTROL 재설정]** 뷰를 원래 크기로 재설정합니다.
 
@@ -81,7 +81,7 @@ ZIP 파일을 추출하려면 다음 단계를 수행하십시오.
 
 1. 편집할 메타데이터가 있는 에셋의 위치로 이동합니다.
 
-1. 에셋을 선택하고 탭/클릭합니다 **[!UICONTROL 속성]** 을 클릭하여 자산 속성을 확인합니다. 또는 **[!UICONTROL 속성]** 에셋 카드에 대한 빠른 작업
+1. 에셋을 선택한 다음 을 선택합니다. **[!UICONTROL 속성]** 을 클릭하여 자산 속성을 확인합니다. 또는 **[!UICONTROL 속성]** 에셋 카드에 대한 빠른 작업
 
    ![properties_quickaction](assets/properties_quickaction.png)
 
@@ -106,7 +106,7 @@ ZIP 파일을 추출하려면 다음 단계를 수행하십시오.
    >
    > 태그를 만들려면 다음 위치에 쓰기 권한이 있어야 합니다. `/content/cq:tags/default` crx 저장소의 경로입니다.
 
-1. 탭/클릭 **[!UICONTROL 저장 및 닫기]**.
+1. 선택 **[!UICONTROL 저장 및 닫기]**.
 
 1. Assets 사용자 인터페이스로 이동합니다. 제목, 설명 및 태그를 포함한 편집된 메타데이터 속성은 카드 보기의 자산 카드 및 목록 보기의 관련 열 아래에 표시됩니다.
 
@@ -166,9 +166,9 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 1. 자산 이동 마법사에서 다음 중 하나를 수행합니다.
 
-   * 에셋을 이동한 후 에셋의 이름을 지정합니다. 그런 다음 탭/클릭 **[!UICONTROL 다음]** 계속합니다.
+   * 에셋을 이동한 후 에셋의 이름을 지정합니다. 그런 다음 을 선택합니다 **[!UICONTROL 다음]** 계속합니다.
 
-   * 탭/클릭 **[!UICONTROL 취소]** 프로세스를 중지합니다.
+   * 선택 **[!UICONTROL 취소]** 프로세스를 중지합니다.
 
    >[!NOTE]
    >
@@ -177,20 +177,20 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 1. 다음에서 **[!UICONTROL 대상 선택]** 대화 상자에서 다음 중 하나를 수행합니다.
 
-   * 에셋의 새 위치로 이동한 다음 탭/클릭합니다 **[!UICONTROL 다음]** 계속합니다.
+   * 에셋의 새 위치로 이동한 다음 를 선택합니다 **[!UICONTROL 다음]** 계속합니다.
 
-   * 탭/클릭 **[!UICONTROL 뒤로]** (으)로 돌아가기 **[!UICONTROL 이름 바꾸기]** 화면.
+   * 선택 **[!UICONTROL 뒤로]** (으)로 돌아가기 **[!UICONTROL 이름 바꾸기]** 화면.
 
 1. 이동하는 에셋에 참조하는 페이지, 에셋 또는 컬렉션이 있는 경우 **[!UICONTROL 참조 조정]** 탭 옆에 표시 **[!UICONTROL 대상 선택]** 탭.
 
    다음 중 하나를 수행합니다. **[!UICONTROL 참조 조정]** 화면:
 
-   * 새 세부 사항을 기반으로 조정할 참조를 지정한 다음 탭/클릭합니다 **[!UICONTROL 이동]** 계속합니다.
+   * 새 세부 정보를 기준으로 조정할 참조를 지정한 다음 을 선택합니다 **[!UICONTROL 이동]** 계속합니다.
 
    * 다음에서 **[!UICONTROL 조정]** 열에서 에셋에 대한 참조를 선택/선택 취소합니다.
-   * 탭/클릭 **[!UICONTROL 뒤로]** (으)로 돌아가기 **[!UICONTROL 대상 선택]** 화면.
+   * 선택 **[!UICONTROL 뒤로]** (으)로 돌아가기 **[!UICONTROL 대상 선택]** 화면.
 
-   * 탭/클릭 **[!UICONTROL 취소]** 이동 작업을 중지합니다.
+   * 선택 **[!UICONTROL 취소]** 이동 작업을 중지합니다.
 
    참조를 업데이트하지 않으면 계속해서 자산의 이전 경로를 가리킵니다. 참조를 조정하면 새 에셋 경로로 업데이트됩니다.
 
@@ -198,11 +198,11 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 1. 원본을 제외한 에셋에 대한 렌디션을 추가하거나 제거할 수 있습니다. 렌디션을 추가하거나 제거할 에셋의 위치로 이동합니다.
 
-1. 에셋을 탭/클릭하여 에셋 페이지를 엽니다.
+1. 에셋을 선택하여 에셋 페이지를 엽니다.
 
    <!--![chlimage_1-220](assets/chlimage_1-220.png)-->
 
-1. GlobalNav 아이콘을 탭/클릭한 다음 **[!UICONTROL 표현물]** 목록에서 삭제할 수 있습니다.
+1. GlobalNav 아이콘을 선택하고 **[!UICONTROL 표현물]** 목록에서 삭제할 수 있습니다.
 
    ![renditions_menu](assets/renditions_menu.png)
 
@@ -218,13 +218,13 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    **렌디션 삭제**
 
-   에서 렌디션 선택 **[!UICONTROL 표현물]** 패널을 클릭한 다음 **[!UICONTROL 렌디션 삭제]** 아이콘을 클릭합니다. 에셋 처리가 완료된 후에는 렌디션을 일괄적으로 삭제할 수 없습니다. 개별 에셋의 경우 사용자 인터페이스에서 렌디션을 수동으로 제거할 수 있습니다. 여러 에셋의 경우 사용자 지정할 수 있습니다 [!DNL Experience Manager] 특정 렌디션을 삭제하거나 에셋을 삭제하고 삭제된 에셋을 다시 업로드하려면
+   에서 렌디션 선택 **[!UICONTROL 표현물]** 패널을 선택한 다음 **[!UICONTROL 렌디션 삭제]** 아이콘을 클릭합니다. 에셋 처리가 완료된 후에는 렌디션을 일괄적으로 삭제할 수 없습니다. 개별 에셋의 경우 사용자 인터페이스에서 렌디션을 수동으로 제거할 수 있습니다. 여러 에셋의 경우 사용자 지정할 수 있습니다 [!DNL Experience Manager] 특정 렌디션을 삭제하거나 에셋을 삭제하고 삭제된 에셋을 다시 업로드하려면
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
    **새 렌디션 업로드**
 
-   Navigate to the asset details page for the asset, and tap/click the **[!UICONTROL Add Rendition]** icon in the toolbar to upload a new rendition for the asset.
+   에셋에 대한 에셋 세부 사항 페이지로 이동하고 **[!UICONTROL 렌디션 추가]** 아이콘 을 클릭하여 에셋의 새 렌디션을 업로드합니다.
 
    <!--![chlimage_1-221](assets/chlimage_1-221.png)-->
 
@@ -314,7 +314,7 @@ CUG(폐쇄형 사용자 그룹)는에서 게시된 특정 에셋 폴더에 대�
 
 CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더의 로그인 페이지를 구성할 수도 있습니다.
 
-1. Assets UI에서 폴더를 선택하고 도구 모음에서 속성 아이콘을 탭/클릭하여 속성 페이지를 표시합니다.
+1. Assets UI에서 폴더를 선택하고 도구 모음에서 속성 아이콘을 선택하여 속성 페이지를 표시합니다.
 1. 다음에서 **[!UICONTROL 권한]** 탭, 아래에 구성원 또는 그룹 추가 **[!UICONTROL 폐쇄된 사용자 그룹]**.
 
    ![add_user](assets/add_user.png)
@@ -355,13 +355,13 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 1. Do one of the following to open an asset in edit mode:
 
-    * Select the asset and then click/tap the **[!UICONTROL Edit]** icon in the toolbar.
-    * Tap/click the **[!UICONTROL Edit]** icon that appears on an asset in the Card view.
-    * In the asset page, tap/click the **[!UICONTROL Edit]** icon in the toolbar.
+    * Select the asset and then select the **[!UICONTROL Edit]** icon in the toolbar.
+    * Select the **[!UICONTROL Edit]** icon that appears on an asset in the Card view.
+    * In the asset page, select the **[!UICONTROL Edit]** icon in the toolbar.
 
    ![edit_icon](assets/edit_icon.png)
 
-1. To crop the image, tap/click the **Crop** icon.
+1. To crop the image, select the **Crop** icon.
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
 
@@ -378,15 +378,15 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    ![chlimage_1-229](assets/chlimage_1-229.png)
 
-1. Tap/click the appropriate Rotate icon to rotate the image clockwise or anti-clockwise.
+1. Select the appropriate Rotate icon to rotate the image clockwise or anti-clockwise.
 
    ![chlimage_1-230](assets/chlimage_1-230.png)
 
-1. Tap/click the appropriate Flip icon to flip the image horizontally or vertically.
+1. Select the appropriate Flip icon to flip the image horizontally or vertically.
 
    ![chlimage_1-231](assets/chlimage_1-231.png)
 
-1. Tap/click the **Finish** icon to save the changes.
+1. Select the **Finish** icon to save the changes.
 
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
@@ -425,7 +425,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 >컨텐츠 조각의 경우 [주석은 조각 편집기에서 생성됩니다](content-fragments/content-fragments.md).
 
 1. 주석을 추가할 자산의 위치로 이동합니다.
-1. 탭/클릭 **[!UICONTROL 주석]** 아이콘은 다음 중 하나입니다.
+1. 다음 항목 선택 **[!UICONTROL 주석]** 아이콘은 다음 중 하나입니다.
 
    * [빠른 작업](#quick-actions)
    * 에셋을 선택하거나 에셋 페이지로 이동한 후 도구 모음에서
@@ -454,18 +454,18 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
    >
    >저장하기 전에 여러 주석을 추가할 수 있습니다.
 
-1. 탭/클릭 **[!UICONTROL 닫기]** 주석 모드를 종료합니다.
+1. 선택 **[!UICONTROL 닫기]** 주석 모드를 종료합니다.
 1. 알림을 보려면 Aaron MacDonald의 자격 증명으로 Assets에 로그인하고 **[!UICONTROL 알림]** 알림을 보는 아이콘.
 
    >[!NOTE]
    >
    >비디오 에셋에 주석을 추가할 수도 있습니다. 비디오에 주석을 달 때 플레이어는 일시 중지하여 프레임에 주석을 달 수 있도록 합니다. 자세한 내용은 [비디오 자산 관리](manage-video-assets.md). 그러나 MXF 비디오 포맷은 비디오 주석에서 아직 지원되지 않습니다.
 
-1. 사용자를 구분할 수 있도록 다른 색상을 선택하려면 프로필 아이콘을 클릭/탭한 다음 클릭/탭합니다 **[!UICONTROL 내 환경 설정]**.
+1. 사용자를 구분할 수 있도록 다른 색상을 선택하려면 프로필 아이콘을 선택하고 를 선택합니다 **[!UICONTROL 내 환경 설정]**.
 
    <!--![chlimage_1-237](assets/chlimage_1-237.png)-->
 
-   Specify the desired color in the **[!UICONTROL Annotation Color]** box and then click/tap **[!UICONTROL Accept]**.
+   에서 원하는 색상을 지정합니다. **[!UICONTROL 주석 색상]** 상자를 선택한 다음 **[!UICONTROL Accept]**.
 
 <!-- ![chlimage_1-238](assets/chlimage_1-238.png)-->
 
@@ -485,7 +485,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 1. 자산에 대해 저장된 주석을 보려면 자산의 위치로 이동하여 자산에 대한 자산 페이지를 엽니다.
 
-1. GlobalNav 아이콘을 탭/클릭하고 **[!UICONTROL 타임라인]** 목록에서 삭제할 수 있습니다.
+1. GlobalNav 아이콘을 선택하고 **[!UICONTROL 타임라인]** 목록에서 삭제할 수 있습니다.
 
    <!--![chlimage_1-239](assets/chlimage_1-239.png)-->
 
@@ -493,11 +493,11 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    <!--![chlimage_1-240](assets/chlimage_1-240.png)-->
 
-   에서 주석 탭/클릭 **[!UICONTROL 타임라인]** 패널에서 이미지에 있는 해당 주석을 볼 수 있습니다.
+   에서 주석 선택 **[!UICONTROL 타임라인]** 패널에서 이미지에 있는 해당 주석을 볼 수 있습니다.
 
    <!--![chlimage_1-241](assets/chlimage_1-241.png)-->
 
-   탭/클릭 **[!UICONTROL 삭제]**&#x200B;을 클릭하여 특정 주석을 삭제합니다.
+   선택 **[!UICONTROL 삭제]**&#x200B;을 클릭하여 특정 주석을 삭제합니다.
 
 ### 주석 인쇄 {#printing-annotations}
 
@@ -509,7 +509,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 >
 >주석이 있는 에셋을 PDF으로 인쇄하는 동안 여러 주석을 선택할 수 있습니다.
 
-주석을 인쇄하고 상태를 검토하려면 다음을 탭/클릭합니다 **[!UICONTROL 인쇄]** 아이콘을 클릭하고 마법사의 지시를 따릅니다. 다음 **[!UICONTROL 인쇄]** 아이콘은 자산에 하나 이상의 주석 또는 검토 상태가 할당된 경우에만 도구 모음에 표시됩니다.
+주석을 인쇄하고 상태를 검토하려면 **[!UICONTROL 인쇄]** 아이콘을 클릭하고 마법사의 지시를 따릅니다. 다음 **[!UICONTROL 인쇄]** 아이콘은 자산에 하나 이상의 주석 또는 검토 상태가 할당된 경우에만 도구 모음에 표시됩니다.
 
 1. 에셋 UI에서 에셋에 대한 미리보기 페이지를 엽니다.
 1. 다음 중 하나를 수행하십시오.
@@ -525,7 +525,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    <!--![chlimage_1-243](assets/chlimage_1-243.png)-->
 
-1. 탭/클릭 **[!UICONTROL 인쇄]** 아이콘을 클릭합니다.
+1. 다음 항목 선택 **[!UICONTROL 인쇄]** 아이콘을 클릭합니다.
 
    <!--![chlimage_1-244](assets/chlimage_1-244.png)-->
 
@@ -565,21 +565,21 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 * 에셋의 현재 개정을 봅니다.
 * 자산을 이전 버전으로 복원합니다.
 
-1. 버전을 만들 에셋의 위치로 이동한 다음 해당 에셋 페이지를 열려면 해당 에셋을 탭/클릭하십시오.
+1. 버전을 만들려는 에셋의 위치로 이동한 다음 에셋 페이지를 열려면 해당 에셋을 선택합니다.
 
-1. GlobalNav 아이콘을 탭/클릭하고 **[!UICONTROL 타임라인]** 메뉴에서 삭제할 수 있습니다.
+1. 전역 탐색 아이콘을 선택하고 **[!UICONTROL 타임라인]** 메뉴에서 삭제할 수 있습니다.
 
    ![타임라인](assets/timeline.png)
 
-1. 탭/클릭 **[!UICONTROL 작업]** (화살표) 아이콘을 클릭하면 에셋에서 수행할 수 있는 작업을 확인할 수 있습니다.
+1. 다음 항목 선택 **[!UICONTROL 작업]** (화살표) 아이콘을 클릭하면 에셋에서 수행할 수 있는 작업을 확인할 수 있습니다.
 
    <!--![chlimage_1-249](assets/chlimage_1-249.png)-->
 
-1. 탭/클릭 **[!UICONTROL 다른 버전으로 저장]** 에셋의 버전을 생성하려면 다음을 수행하십시오.
+1. 선택 **[!UICONTROL 다른 버전으로 저장]** 에셋의 버전을 생성하려면 다음을 수행하십시오.
 
 <!--![chlimage_1-250](assets/chlimage_1-250.png)-->
 
-1. 레이블과 댓글을 추가한 다음 **[!UICONTROL 만들기]** 을 클릭하여 버전을 만듭니다. 또는 을 탭/클릭합니다 **취소** 을 눌러 작업을 종료합니다.
+1. 레이블과 댓글을 추가한 다음 **[!UICONTROL 만들기]** 을 클릭하여 버전을 만듭니다. 또는 을 선택합니다. **취소** 을 눌러 작업을 종료합니다.
 
    <!--![chlimage_1-251](assets/chlimage_1-251.png)-->
 
@@ -595,9 +595,9 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    ![save_version](assets/save_version.png)
 
-1. To generate a preview for the version, tap/click **[!UICONTROL Preview Version]**.
+1. 버전에 대한 미리보기를 생성하려면 다음을 선택합니다. **[!UICONTROL 버전 미리 보기]**.
 1. 자산 UI에 이 버전을 표시하려면 을 선택합니다. **[!UICONTROL 이 버전으로 되돌리기]**.
-1. 두 버전을 비교하려면 에셋의 에셋 페이지로 이동하여 현재 버전과 비교할 버전을 탭/클릭합니다.
+1. 두 버전을 비교하려면 에셋의 에셋 페이지로 이동하여 현재 버전과 비교할 버전을 선택합니다.
 
    ![select_version_tocompare](assets/select_version_tocompare.png)
 
@@ -607,16 +607,16 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 ### 자산에 대한 워크플로우 시작 {#starting-a-workflow-on-an-asset}
 
-1. 워크플로우를 시작할 자산의 위치로 이동한 다음 자산을 탭/클릭하여 자산 페이지를 엽니다.
-1. GlobalNav 아이콘을 탭/클릭하고 **[!UICONTROL 타임라인]** 을 클릭하여 타임라인을 표시합니다.
+1. 워크플로우를 시작할 자산의 위치로 이동하고 자산을 선택하여 자산 페이지를 엽니다.
+1. 전역 탐색 아이콘을 선택하고 **[!UICONTROL 타임라인]** 을 클릭하여 타임라인을 표시합니다.
 
    ![timeline-1](assets/timeline-1.png)
 
-1. 탭/클릭 **[!UICONTROL 작업]** (화살표) 아래에 있는 아이콘을 클릭하여 자산에 사용할 수 있는 작업 목록을 엽니다.
+1. 다음 항목 선택 **[!UICONTROL 작업]** (화살표) 아래에 있는 아이콘을 클릭하여 자산에 사용할 수 있는 작업 목록을 엽니다.
 
    <!--![chlimage_1-252](assets/chlimage_1-252.png)-->
 
-1. 탭/클릭 **[!UICONTROL 워크플로우 시작]** 목록에서 삭제할 수 있습니다.
+1. 선택 **[!UICONTROL 워크플로우 시작]** 목록에서 삭제할 수 있습니다.
 
    <!--![chlimage_1-253](assets/chlimage_1-253.png)-->
 
@@ -628,7 +628,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    <!--![chlimage_1-255](assets/chlimage_1-255.png)-->
 
-1. Tap/click **[!UICONTROL Start]** and then tap/click **[!UICONTROL Proceed]** in the dialog to confirm. Each step of workflow is displayed in the timeline as an event.
+1. 선택 **[!UICONTROL 시작]** 다음을 선택합니다. **[!UICONTROL 진행]** 을 클릭합니다. Each step of workflow is displayed in the timeline as an event.
 
    <!--![chlimage_1-256](assets/chlimage_1-256.png)-->
 

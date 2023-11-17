@@ -3,10 +3,10 @@ title: Edge Delivery Services 시작하기
 description: Edge Delivery Services(EDS) 시작하기
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: 34965338015df868778a95582524df08a7c5f136
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 99%
+source-wordcount: '870'
+ht-degree: 92%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 99%
 
 Edge Delivery Services를 사용하여 AEM은 참여 및 전환을 유도하는 탁월한 경험을 제공합니다. 이를 위해 AEM은 빠르게 작성 및 개발할 수 있는 영향력이 큰 경험을 제공합니다. 작성자가 콘텐츠를 빠르게 업데이트 및 게시하고 새 사이트를 신속하게 시작할 수 있는 신속한 개발 환경을 지원하는 구성 가능한 서비스 세트입니다. 그에 따라 Edge Delivery Services를 사용하여 전환을 개선하고, 비용을 절감하고, 최고의 콘텐츠 속도를 제공할 수 있습니다.
 
-Edge Delivery를 활용하여 다음과 같은 작업을 수행할 수 있습니다.
+Edge Delivery를 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 
 * 완벽한 Lighthouse Score를 사용하여 빠른 사이트를 만들고 실제 사용자 모니터링(RUM)을 통해 사이트 실적을 지속적으로 모니터링합니다.
 * 콘텐츠 소스를 분리하여 작성 효율성을 높입니다. 기본 제공되는 AEM 작성과 문서 기반 작성을 모두 사용할 수 있습니다. 따라서 동일한 웹 사이트에서 여러 콘텐츠 소스로 작업할 수 있습니다.
@@ -50,7 +50,7 @@ Edge Delivery Services 사용을 쉽게 시작할 수 있습니다. [시작하�
 
 ## Adobe에서 도움 받기 {#adobe-gethelp}
 
-프로비저닝된 제품 협업 채널(액세스 세부 정보는 아래 참조)을 통해 Adobe 제품 팀과 협력하여 제품 사용 또는 모범 사례에 대한 질문에 답변할 수 있습니다. 서비스 수준 약관(SLT)은 제품 협업 채널을 통해 대화와 연결되지 않습니다. 제품 문제 해결에 추가 조사가 필요하고 응답 SLT를 충족해야 하는 경우 [지원 프로세스](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support)에 따라 지원 티켓을 제출할 수 있습니다.
+프로비저닝된 제품 협업 채널(액세스 세부 정보는 아래 참조)을 통해 Adobe 제품 팀과 협력하여 제품 사용 또는 모범 사례에 대한 질문에 답변할 수 있습니다. 제품 공동 작업 채널을 통한 대화와 연결된 서비스 수준 약관(SLT)이 없습니다. 제품 문제에 추가 조사 및 문제 해결이 필요하고 응답 SLT를 충족해야 하는 경우 다음 사항에 따라 지원 티켓을 제출할 수 있습니다. [지원 프로세스](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support).
 
 Adobe에서는 Edge Delivery Services에 도움이 되는 세 가지 채널을 제공합니다.
 
@@ -73,14 +73,14 @@ Adobe는 사용자에게 Edge Delivery Services와 문서 기반 작성에 대�
 Admin Console을 통해 지원 티켓을 기록하는 단계:
 
 1. 티켓 제목에서 **Edge Delivery**&#x200B;를 추가합니다.
-2. 설명에서 다음 세부 정보를 입력해 주십시오.
+2. 설명에 다음 세부 정보를 입력합니다.
 
    * 라이브 웹 사이트의 URL입니다. 예: [www.mydomain.com].
    * 원본 웹 사이트의 URL(.hlx URL)입니다.
 
 ## 다음 단계 {#whats-next}
 
-다음 문서 검토로 시작하기: [Edge Delivery Services 사용](/help/edge/using.md).
+검토 시작 [Edge Delivery Services 사용](/help/edge/using.md).
 
 ## 유용한 리소스 {#useful-resources}
 

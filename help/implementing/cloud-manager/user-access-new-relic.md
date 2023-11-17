@@ -2,10 +2,10 @@
 title: New Relic One
 description: AEM as a Cloud Service를 위한 New Relic One APM(Application Performance Monitoring) 서비스에 대한 정보와 액세스하는 방법에 대해 알아봅니다.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1730'
-ht-degree: 98%
+source-wordcount: '1728'
+ht-degree: 93%
 
 ---
 
@@ -52,7 +52,7 @@ AEM as a Cloud Service용 New Relic One APM에는 많은 기능이 있습니다.
 
    * 프로그램의 **환경** 화면 상단에 있는 줄임표 버튼을 통해 **사용자 관리** 옵션에 액세스할 수도 있습니다.
 
-1. **New Relic 사용자 관리** 대화 상자에서 추가하려는 사용자의 이름과 성을 입력하고 **추가** 버튼을 클릭합니다. 추가하려는 모든 사용자에 대해 이 단계를 반복합니다.
+1. 다음에서 **New Relic 사용자 관리** 대화 상자에서 추가하려는 사용자의 이름과 성을 입력하고 **추가** 단추를 클릭합니다. 추가하려는 모든 사용자에 대해 이 단계를 반복합니다.
 
    ![사용자 추가](assets/newrelic-add-users.png)
 
@@ -154,7 +154,7 @@ New Relic One에 사용자를 추가하는 경우 다음 제한이 적용됩니�
 >
 >활동이 New Relic One 계정에서 90일 이상 감지되지 않으면 APM 에이전트가 중단됩니다.
 >
->AEMaaCS 환경의 APM 에이전트를 다시 활성화하려면 [AEM 지원 포털](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)을 통해 지원 티켓을 열어 주십시오.
+>다음을 통해 지원 티켓 열기 [AEM 지원 포털](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html) aemaaCS 환경에 대해 APM 에이전트를 다시 활성화하려는 경우.
 
 AEM as a Cloud Service 프로그램용 New Relic One에 대한 추가 도움말 또는 추가 지침을 보려면 [AEM 지원 포털](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)을 사용하여 지원 티켓을 엽니다.
 
@@ -202,4 +202,4 @@ Adobe 지원에서 서비스의 일부로 New Relic One 및 기타 사내 도구
 
 ### New Relic One 계정의 APM 에이전트가 중단됩니다. 어떻게 되었습니까? {#deactivated}
 
-활동이 90일 이상 감지되지 않으면 [APM 에이전트가 중단됩니다](#limitations). AEMaaCS 환경의 APM 에이전트를 다시 활성화하려면 [AEM 지원 포털](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)을 통해 지원 티켓을 열어 주십시오.
+활동이 90일 이상 감지되지 않으면 [APM 에이전트가 중단됩니다](#limitations). 다음을 통해 지원 티켓 열기 [AEM 지원 포털](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html) aemaaCS 환경에 대해 APM 에이전트를 다시 활성화하려는 경우.

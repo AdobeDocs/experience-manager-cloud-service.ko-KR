@@ -1,20 +1,20 @@
 ---
 title: AEM에서 에셋 보기를 통해 얻을 수 있는 이점은 무엇입니까?
-description: AEM에서 에셋 보기의 주요 이점에 대해 자세히 알아보십시오. Adobe는 마케팅 및 크리에이티브 전문가의 역량을 강화하는 전문성을 활용하여, 판도를 바꿀 새로운 사용자 경험을 소개합니다.
+description: AEM에서 에셋 보기의 주요 이점에 대해 자세히 알아보십시오. Adobe은 마케팅 및 크리에이티브 전문가에게 권한을 부여하는 전문 지식을 사용하여 게임을 변화시킬 새로운 사용자 경험을 도입합니다.
 mini-toc-levels: 3
-source-git-commit: 20e0527ebecb6720f39c0a4b2957dc899117d96f
+exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1079'
-ht-degree: 79%
+ht-degree: 76%
 
 ---
-
 
 # 자산 보기 소개 {#assets-view}
 
 ![Assets Essentials 배포](assets/banner-image.jpg)
 
-실시간 콘텐츠 생성 및 게재가 필수적인 오늘날의 급변하는 디지털 중심 환경에서는 다운스트림 마케팅 속도를 위해 설계된 디지털 자산 관리(DAM) 경험이 무엇보다 중요합니다. Adobe는 마케팅 및 크리에이티브 전문가의 역량을 강화하는 전문성을 활용하여, 판도를 바꿀 새로운 사용자 경험을 소개합니다. 이 워크플로 중심 접근 방식은 기업이 동적 디지털 자산을 처리하는 방식을 혁신하여 마케터가 자산을 찾고, 공동 작업하고, 개인화하고, 게재하는 데 효율성을 극대화하도록 합니다. 이처럼 간소화된 워크플로는 콘텐츠 속도를 가속화하고 마케팅 활동을 새로운 차원으로 끌어올립니다.
+실시간 콘텐츠 생성 및 게재가 필수적인 오늘날의 급변하는 디지털 중심 환경에서는 다운스트림 마케팅 속도를 위해 설계된 디지털 자산 관리(DAM) 경험이 무엇보다 중요합니다. Adobe은 마케팅 및 크리에이티브 전문가에게 권한을 부여하는 전문 지식을 사용하여 게임을 변화시킬 새로운 사용자 경험을 도입합니다. 이 워크플로 중심 접근 방식은 기업이 동적 디지털 자산을 처리하는 방식을 혁신하여 마케터가 자산을 찾고, 공동 작업하고, 개인화하고, 게재하는 데 효율성을 극대화하도록 합니다. 이처럼 간소화된 워크플로는 콘텐츠 속도를 가속화하고 마케팅 활동을 새로운 차원으로 끌어올립니다.
 
 Assets에 대해 as a Cloud Service으로 사용할 수 있는 페르소나 기반 경험에 대한 자세한 내용은 을 참조하십시오. [as a Cloud Service Assets 소개](/help/assets/overview.md#persona-based-experiences).
 
@@ -128,9 +128,3 @@ Adobe Photoshop Express와 통합된 자산 보기의 기능을 이해하려면 
 
 * [내 작업 영역](/help/assets/my-workspace-assets-view.md)
 * [자산 보기 사용 시작하기](/help/assets/get-started-assets-view.md)
-
-
-
-
-
-

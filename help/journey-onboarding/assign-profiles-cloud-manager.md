@@ -4,10 +4,10 @@ description: 이 페이지를 따라 Cloud Manager 제품 프로필에 팀원을
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1528'
-ht-degree: 94%
+source-wordcount: '1527'
+ht-degree: 93%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 94%
 
 첫 번째 단계는 사용자에게 Cloud Manager에 대한 액세스 권한을 부여하는 것입니다. Cloud Manager는 철저한 테스트와 최고의 코드 품질을 보장하여 탁월한 경험을 제공할 수 있도록 기업 개발 설정 및 특수 목적으로 구축된 CI/CD 파이프라인을 지원합니다.
 
-이 문서를 읽고 나면 다음과 같은 작업을 수행할 수 있습니다.
+이 문서를 읽고 나면
 
 * 제품 프로필이 무엇인지 이해합니다.
 * Cloud Manager가 무엇인지 이해합니다.
@@ -33,7 +33,7 @@ ht-degree: 94%
 
 ## 사전 요구 사항 {#prerequisites}
 
-제품 프로필에 팀원을 할당하려면 다음을 포함하여 AEM에 as a Cloud Service으로 액세스해야 하는 팀원에 대한 세부 정보가 있어야 합니다.
+제품 프로필에 팀원을 할당하려면 다음을 포함하여 as a Cloud Service으로 AEM에 액세스해야 하는 팀원에 대한 세부 정보가 있어야 합니다.
 
 * 이름
 * 이메일 주소
@@ -181,7 +181,7 @@ Admin Console을 사용하여 Cloud Manager 프로필 목록을 볼 수 있습�
 
 ## 추가 리소스 {#additional-resources}
 
-앞에서 설명한 대로 온보딩 여정을 계속하는 것이 좋습니다. 이 여정의 특정 주제에 대해 자세히 알아보려면 다음과 같은 추가 리소스를 참조하십시오.
+앞에서 설명한 대로 온보딩 여정을 계속하는 것이 좋습니다. 이 여정의 특정 주제에 대해 자세히 알아보려면 다음 리소스를 참조하십시오.
 
 * [Cloud Manager 소개](/help/onboarding/cloud-manager-introduction.md) - Cloud Manager, Cloud Manager 프로그램 및 환경에 대해 알아봅니다.
 * [Cloud Manager 제품 프로필](/help/onboarding/aem-cs-team-product-profiles.md) - AEM as a Cloud Service 팀 및 제품 프로필에 대해 알아봅니다.

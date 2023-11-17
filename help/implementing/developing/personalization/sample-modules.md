@@ -2,9 +2,9 @@
 title: 샘플 ContextHub UI 모듈 유형
 description: ContextHub는 솔루션에서 사용할 수 있는 몇 가지 샘플 UI 모듈을 제공합니다
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1124'
 ht-degree: 1%
 
 ---
@@ -170,7 +170,7 @@ UI 모듈의 소스는 `/libs/granite/contexthub/components/modules/screen-orien
 
 ### 구성 {#configuration-5}
 
-의 인스턴스 `contexthub.screen-orientation` UI 모듈에는 세부 구성 값이 필요하지 않습니다. 다음 JSON 텍스트는 모듈의 기본 구성을 나타냅니다. 다음 사항에 주의하십시오. `clickable` 속성은 입니다. `false` 기본적으로. 설정할 기본 구성을 재정의하는 경우 `clickable` 끝 `true`을 클릭하면 방향을 선택할 수 있는 팝업이 표시됩니다.
+의 인스턴스 `contexthub.screen-orientation` UI 모듈에는 세부 구성 값이 필요하지 않습니다. 다음 JSON 텍스트는 모듈의 기본 구성을 나타냅니다. 다음 `clickable` 속성은 입니다. `false` 기본적으로. 설정할 기본 구성을 재정의하는 경우 `clickable` 끝 `true`을 클릭하면 방향을 선택할 수 있는 팝업이 표시됩니다.
 
 ```javascript
 {

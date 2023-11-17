@@ -2,10 +2,10 @@
 title: AEM 저장소 도구
 description: AEM Repo Tool은 FTP와 비슷한 명령줄을 통해 로컬 파일 시스템과 AEM 서버 간에 JCR 콘텐츠를 전송하는 간단한 솔루션입니다.
 exl-id: fb887ba3-e40b-4ab1-b142-0748c6d9f18e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
@@ -33,7 +33,7 @@ AEM Repo Tool의 소스를 다운로드하려면 아래 연결된 GitHub 프로�
 
 GITHUB의 코드
 
-GitHub에서 이 페이지의 코드를 확인할 수 있습니다
+이 페이지의 코드는 GitHub에서 확인할 수 있습니다
 
 * [GitHub에서 도구 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/tools)
 * 다음으로 프로젝트 다운로드 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/tools/archive/master.zip)

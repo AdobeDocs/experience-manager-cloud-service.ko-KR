@@ -2,9 +2,9 @@
 title: Adobe 컨텐츠 패키지 Maven 플러그인
 description: Content Package Maven 플러그인을 사용하여 AEM 애플리케이션 배포
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1838'
+source-wordcount: '1832'
 ht-degree: 6%
 
 ---
@@ -26,6 +26,7 @@ Adobe Content Package Maven 플러그인을 사용하여 패키지 배포 및 �
 >[!NOTE]
 >
 >패키지 **생성** 은(는) 이제 의 소유입니다. [Apache Jackrabbit FileVault Package Maven 플러그인.](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
+>
 >* 다음 `content-package-maven-plugin` 는 더 이상 릴리스 1.0.2의 패키징을 지원하지 않습니다.
 >* 이 문서에서는 **배포** AEM에 대해 구성된 패키지 중 은 Adobe Content Package Maven 플러그인에 의해 수행됩니다.
 
@@ -35,7 +36,7 @@ AEM은 최신 AEM Project Archetype으로 구현된 패키지 관리 및 프로�
 
 >[!TIP]
 >
->자세한 내용은 [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEM as a Cloud Service 설명서의 문서 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 설명서를 참조하십시오. 둘 다 AEM 6.5에 대해 완전히 지원됩니다.
+>다음을 참조하십시오. [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEM as a Cloud Service 설명서의 문서 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 설명서를 참조하십시오. 둘 다 AEM 6.5에 대해 완전히 지원됩니다.
 
 ## 콘텐츠 패키지 Maven 플러그인 가져오기 {#obtaining-the-content-package-maven-plugin}
 
@@ -267,4 +268,4 @@ rm 목표의 모든 매개변수는 [일반 매개 변수](#common-parameters) �
 
 >[!TIP]
 >
->자세한 내용은 [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEM as a Cloud Service 설명서의 문서 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 설명서를 참조하십시오. 둘 다 AEM 6.5에 대해 완전히 지원됩니다.
+>다음을 참조하십시오. [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEM as a Cloud Service 설명서의 문서 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 설명서를 참조하십시오. 둘 다 AEM 6.5에 대해 완전히 지원됩니다.

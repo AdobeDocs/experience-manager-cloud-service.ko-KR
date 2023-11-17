@@ -2,9 +2,9 @@
 title: ContextHub JavaScript API 참조
 description: ContextHub JavaScript API는 ContextHub 구성 요소가 페이지에 추가되면 스크립트에 사용할 수 있습니다
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4620'
+source-wordcount: '4612'
 ht-degree: 2%
 
 ---
@@ -403,7 +403,7 @@ JSONP 서비스에 대한 마지막 호출 이후 캐시된 원시 응답을 반
 
 #### getServiceDetails() {#getservicedetails}
 
-이 ContextHub.Store.JSONPtore 개체에 대한 서비스 개체를 검색합니다. 서비스 개체에는 서비스 URL을 만드는 데 필요한 모든 정보가 들어 있습니다.
+이 ContextHub.Store.JSONPtore 개체에 대한 서비스 개체를 검색합니다. 서비스 개체에는 서비스 URL을 만드는 데 필요한 정보가 들어 있습니다.
 
 ##### 반환 {#returns-getservicedetails}
 

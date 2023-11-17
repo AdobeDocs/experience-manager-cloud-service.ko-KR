@@ -2,10 +2,10 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] 릴리스 정보'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] 릴리스 정보'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: f5f2c460815d273fe445c6f415dee7776cc18fce
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1355'
-ht-degree: 100%
+source-wordcount: '1352'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->AEM 6.4는 확장 지원이 종료되었습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html)을 참조하십시오. [여기](https://experienceleague.adobe.com/docs/?lang=en)에서 지원되는 버전을 확인하십시오.
+>AEM 6.4는 확장 지원이 종료되었습니다. 다음 참조: [기술 지원 기간](https://helpx.adobe.com/support/programs/eol-matrix.html). [여기](https://experienceleague.adobe.com/docs/?lang=en)에서 지원되는 버전을 확인하십시오.
 
 
 >[!IMPORTANT]
@@ -43,7 +43,7 @@ ht-degree: 100%
 
 * AEM 6.4로 프로젝트 연결 폴더를 구성하는 동안 Experience Manager는 포트폴리오 필드가 있는 프로젝트에서 **[!UICONTROL 하위 폴더]** 및 **[!UICONTROL 연결 폴더 생성]**&#x200B;에 대한 값을 저장하지 않습니다. **[!UICONTROL 정의되지 않음]**&#x200B;으로 업데이트되는 **[!UICONTROL 하위 폴더]**&#x200B;의 값이고 구성을 저장한 후 포트폴리오 필드가 **[!UICONTROL 기본 포트폴리오]**&#x200B;로 자동 업데이트되는 **[!UICONTROL 프로젝트에 연결된 폴더 생성]**&#x200B;의 값입니다.
 
-* 기존의 Workfront 경험을 사용하는 경우, **[!UICONTROL 추가]** 드롭다운 목록에서 사용할 수 있는 **[!UICONTROL 수신인]** 옵션을 사용하면 Experience Manager에서 타깃 대상을 선택할 수 없습니다. **[!UICONTROL 수신인]** 옵션은 **[!UICONTROL 문서 작업]** 드롭다운 목록을 사용하여 올바르게 작동합니다. The **[!UICONTROL 수신인]** 옵션은 새로운 Workfront 경험에서 사용할 수 있는 **[!UICONTROL 추가]** 드롭다운 목록 및 **[!UICONTROL 문서 작업]** 목록에서 올바르게 작동합니다.
+* 클래식 Workfront 환경을 사용하는 경우 **[!UICONTROL 전송 대상]** 옵션이에서 사용할 수 있음 **[!UICONTROL 자세히]** 드롭다운 목록에서는 Experience Manager 내의 대상 을 선택할 수 없습니다. **[!UICONTROL 수신인]** 옵션은 **[!UICONTROL 문서 작업]** 드롭다운 목록을 사용하여 올바르게 작동합니다. The **[!UICONTROL 수신인]** 옵션은 새로운 Workfront 경험에서 사용할 수 있는 **[!UICONTROL 추가]** 드롭다운 목록 및 **[!UICONTROL 문서 작업]** 목록에서 올바르게 작동합니다.
 
 ## 이전 출시 버전 {#previous-releases}
 
@@ -222,4 +222,4 @@ ht-degree: 100%
 
 >[!MORELIKETHIS]
 >
->* Experience Manager 6.5와 [통합 [!DNL Workfront for Experience Manager enhanced connector] ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=ko-KR)
+>* Experience Manager 6.5와 [통합 [!DNL Workfront for Experience Manager enhanced connector] ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=en)

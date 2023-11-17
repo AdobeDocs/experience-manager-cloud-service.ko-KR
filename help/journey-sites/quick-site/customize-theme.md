@@ -2,10 +2,10 @@
 title: 사이트 테마 맞춤화
 description: 라이브 AEM 콘텐츠를 사용하여 사이트 테마를 빌드하고, 맞춤화하고, 테스트하는 방법에 대해 알아봅니다.
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 96%
+source-wordcount: '960'
+ht-degree: 94%
 
 ---
 
@@ -64,7 +64,7 @@ AEM 관리자가 제공한 테마를 편집하고자 하는 위치로 추출하�
 
    ![npm 실행](assets/npm-run-live.png)
 
-1. 프록시 서버가 시작되면 `http://localhost:7001/`로의 브라우저가 자동으로 열립니다. **로컬에서 로그인(관리 작업만 해당)**&#x200B;을 탭하거나 클릭하여 AEM 관리자가 제공한 프록시 사용자 자격 증명을 사용하여 로그인합니다.
+1. 프록시 서버가 시작되면 `http://localhost:7001/`로의 브라우저가 자동으로 열립니다. 선택 **로컬로 로그인(관리 작업만 해당)** AEM 관리자가 제공한 프록시 사용자 자격 증명으로 로그온합니다.
 
    ![로컬에서 로그인](assets/sign-in-locally.png)
 

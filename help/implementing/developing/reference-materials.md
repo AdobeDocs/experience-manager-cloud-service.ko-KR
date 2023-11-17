@@ -2,16 +2,16 @@
 title: API 참조 자료
 description: AEM에는 디지털 경험 프로젝트에 사용할 수 있는 광범위하고 강력한 API가 있습니다.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '662'
 ht-degree: 9%
 
 ---
 
 # API 참조 자료 {#api-reference-materials}
 
-AEM(Adobe Experience Manager)은 애플리케이션 개발 및 AEM 확장을 위한 다양한 API를 제공합니다. AEM은 다양한 오픈 소스 기술을 기반으로 구축되었으며, 이 기술을 사용할 수도 있습니다.
+AEM(Adobe Experience Manager)은 애플리케이션 개발 및 AEM 확장을 위한 다양한 API를 제공합니다. AEM은 여러 오픈 소스 기술 위에 구축되어 있으며, 이 기술을 사용할 수도 있습니다.
 
 ## AEM 코어 API {#core-aem-apis}
 
@@ -19,7 +19,7 @@ AEM(Adobe Experience Manager)은 애플리케이션 개발 및 AEM 확장을 위
 
 | API | 설명 |
 |---|---|
-| [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | 페이지, 에셋, 워크플로 등과 같은 제품 추상화 |
+| [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | 페이지, 에셋, 워크플로우 등과 같은 제품 추상화입니다. |
 | [Granite UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | 다양한 필수 구성 요소를 제공하는 Adobe의 오픈 웹 스택(6.5 Granite 재료는 AEMaaCS에 적용됨) |
 | [Coral UI](https://opensource.adobe.com/coral-spectrum/documentation/) | Adobe 경험에 일관성을 제공하도록 설계된 클라우드 UI에 대한 사용자의 시각적 스타일 |
 
@@ -29,7 +29,7 @@ AEM(Adobe Experience Manager)은 애플리케이션 개발 및 AEM 확장을 위
 
 ## 추가 프레임워크 {#additional-apis}
 
-AEM은 많은 추가 오픈 소스 API를 사용합니다.
+AEM은 몇 가지 추가 오픈 소스 API를 사용합니다.
 
 | API | 설명 |
 |---|---|
@@ -44,7 +44,7 @@ AEM은 기본 설정의 내림차순으로 다음 4개의 기본 Java API 세트
 
 | 우선 순위 | API | 설명 |
 |---|---|---|
-| 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | 페이지, 에셋, 워크플로 등과 같은 제품 추상화 |
+| 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | 페이지, 에셋, 워크플로우 등과 같은 제품 추상화입니다. |
 | 2 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | 리소스, 값 맵 및 HTTP 요청과 같은 REST 및 리소스 기반 추상화입니다. |
 | 3 | [아파치 잭래빗 오크](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | 노드, 속성 및 세션과 같은 데이터 및 콘텐츠 추상화입니다. |
 | 4 | [Apache Felix](https://felix.apache.org/) | 서비스 및 (OSGi) 구성 요소와 같은 OSGi 애플리케이션 컨테이너 추상. |

@@ -4,10 +4,10 @@ description: 콘텐츠 조각에 대한 콘텐츠를 작성한 다음 목적에 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2252'
-ht-degree: 98%
+source-wordcount: '2251'
+ht-degree: 96%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 98%
    * **속성** 탭에서 조각 또는 **변형**&#x200B;에 대한 **제목** 및 **설명**&#x200B;을 업데이트할 수 있습니다.
 * 중앙 패널: 선택한 변형의 실제 필드와 콘텐츠 표시
    * 콘텐츠 편집 허용
-   * **탭 플레이스홀더** 필드가 여기에 표시된 모델 내에서 정의되고 탐색에 사용될 수 있는 경우, 가로 또는 드롭다운 목록 중 하나로 표시됩니다.
+   * **탭 플레이스홀더** 필드가 여기에 표시된 모델 내에서 정의되고 탐색에 사용될 수 있는 경우가로 또는 드롭다운 목록으로 표시됩니다.
 
 ![콘텐츠 조각 편집기 - 개요](assets/cf-authoring-overview.png)
 
@@ -345,7 +345,7 @@ ht-degree: 98%
 
 * **제목**
 * **설명**
-* **태그**: 드롭다운 또는 선택 대화 상자 사용
+* **태그**: 드롭다운 목록 또는 선택 대화 상자 사용
 
   ![콘텐츠 조각 편집기 - 태그 관리](assets/cf-authoring-edit-tags.png)
 
@@ -399,7 +399,7 @@ ht-degree: 98%
 이 기능을 사용하려면 먼저 다음 작업을 수행해야 합니다.
 
 * IT 팀과의 협력을 통해 JSON 출력을 사용하여 콘텐츠 조각을 렌더링할 외부 프론트엔드 애플리케이션을 설정합니다.
-* 외부 프론트엔드 애플리케이션이 설정되면 **기본 미리보기 URL 패턴**&#x200B;을 [적절한 콘텐츠 조각 모델의 속성](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)으로 정의해야 합니다.
+* 외부 프론트엔드 응용 프로그램을 설정하면 **기본 미리보기 URL 패턴** 은(는) (으)로 정의되어야 합니다. [적절한 콘텐츠 조각 모델의 속성](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
 
 URL이 정의되면 **미리보기** 버튼이 활성화됩니다. 이 버튼을 선택하여 콘텐츠 조각을 렌더링할 수 있는 외부 애플리케이션(별도의 탭에서)을 실행할 수 있습니다.
 
@@ -475,8 +475,6 @@ URL이 정의되면 **미리보기** 버튼이 활성화됩니다. 이 버튼을
 </table>
 
 ## 알아 둘 사항 {#good-to-know}
-
-또한
 
 * 콘텐츠 조각을 편집하려면 [적절한 권한](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)이 있어야 합니다. 문제가 발생하는 경우, 시스템 관리자에게 문의하십시오.
 

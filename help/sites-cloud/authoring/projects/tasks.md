@@ -2,10 +2,10 @@
 title: 작업
 description: 작업은 콘텐츠에 대해 수행할 일의 항목들을 나타내며 프로젝트에서 현재 작업의 완료 수준을 판별하는 데 사용됩니다
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '576'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '573'
+ht-degree: 95%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 100%
 
 #### 작업 세부 정보 {#task-details}
 
-특정 작업에 대한 자세한 내용은 작업 목록에서 작업을 탭/클릭한 다음 **여십시오**.
+특정 작업에 대한 자세한 내용은 작업 목록에서 작업을 선택하고 **열기**.
 
 ![작업 세부 정보](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
@@ -63,12 +63,12 @@ ht-degree: 100%
 
 작업을 추가하려면 다음 작업을 수행하십시오.
 
-1. 프로젝트의 **작업** 타일에서 + 아이콘을 탭/클릭합니다. **작업 추가** 창이 열립니다.
+1. 프로젝트에서 **작업** 타일에서 + 아이콘을 선택합니다. **작업 추가** 창이 열립니다.
 1. 작업에 대한 정보를 입력합니다. 작업 제목과 할당 대상 그룹은 필수입니다. 콘텐츠 경로, 설명, 작업 우선 순위 및 기한과 같은 추가 정보는 옵션입니다. 추가로 **고급** 탭을 선택하여 URL의 이름을 지정하는 데 사용되는 작업 이름을 입력할 수 있습니다.
 
    ![작업 추가](/help/sites-cloud/authoring/assets/projects-add-task.png)
 
-1. **만들기**&#x200B;를 탭/클릭합니다.
+1. **만들기**&#x200B;를 선택합니다.
 
 ## 받은 편지함에서 작업 {#working-with-tasks-in-the-inbox}
 

@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service에서 Sling 리소스 병합 사용
 description: Sling 리소스 병합은 리소스에 액세스하고 리소스를 병합하는 서비스를 제공합니다
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1157'
 ht-degree: 2%
 
 ---
@@ -188,7 +188,7 @@ AEM에서 Sling 리소스 병합을 사용하는 목표는 다음과 같습니�
 
 * **노드의 속성을 유지하면서 노드의 하위 항목 숨기기**
 
-  노드, 해당 속성 및 하위 항목이에 정의되어 있습니다 `/libs`. 노드 및 해당 속성은 `/apps` 오버레이/재정의하지만 하위 노드의 일부 또는 전부는 `/apps` 오버레이/무시.
+  노드, 해당 속성 및 하위 항목이에 정의되어 있습니다 `/libs`. 노드 및 해당 속성은 `/apps` 오버레이/재정의하지만 일부 또는 모든 하위 노드가 `/apps` 오버레이/무시.
 
    1. 아래에 해당 노드 만들기 `/apps`
    1. 속성 만들기 `sling:hideChildren`:
@@ -220,7 +220,7 @@ Sling 리소스 병합에는 두 개의 사용자 지정 리소스 공급자가 
 >
 >리소스에 액세스할 때는 적절한 마운트 지점을 사용하는 것이 좋습니다.
 >
->이렇게 하면 Sling 리소스 병합이 호출되고 완전히 병합된 리소스가 반환되어 복제해야 하는 구조가 줄어듭니다. `/libs`).
+>이렇게 하면 Sling 리소스 병합이 호출되고 완전히 병합된 리소스가 반환되어 복제되어야 하는 구조가 줄어듭니다. `/libs`).
 
 * 오버레이:
 

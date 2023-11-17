@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2020.8.0 릴리스 정보입니다.'
 description: "[!DNL Adobe Experience Manager] 2020.8.0용 as a Cloud Service 릴리스 노트"
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 34%
+source-wordcount: '1036'
+ht-degree: 35%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 34%
 
   자세한 내용은 [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-testing.md)를 참조하십시오.
 
-* 이제 Assets 프로그램에서 새로 만든 환경이 스마트 컨텐츠 서비스로 자동 구성됩니다.
+* Assets 프로그램에서 새로 만들어진 환경은 이제 스마트 콘텐츠 서비스로 자동 구성됩니다.
 
 * 최대 절전 모드 환경은 Cloud Manager의 **개요** 페이지에서 최대 절전 모드를 해제할 수 있습니다.
 

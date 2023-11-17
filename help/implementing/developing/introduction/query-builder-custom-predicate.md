@@ -2,10 +2,10 @@
 title: Query Builder의 사용자 지정 설명 평가기 구현
 description: AEM의 Query Builder는 사용자 정의가 가능한 간편한 방법으로 콘텐츠 저장소를 쿼리합니다
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '668'
-ht-degree: 2%
+source-wordcount: '667'
+ht-degree: 4%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 2%
 
 >[!TIP]
 >
->GitHub에서 이 페이지의 코드를 확인할 수 있습니다
+>이 페이지의 코드는 GitHub에서 확인할 수 있습니다
 >
 >* [GitHub에서 aem-search-custom-predicate-evaluator 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
 >* 다음으로 프로젝트 다운로드 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)

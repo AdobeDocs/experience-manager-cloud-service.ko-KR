@@ -1,14 +1,12 @@
 ---
 title: AEM 적응형 양식 핵심 구성 요소를 기반으로 하는 적응형 양식에서 사용자 정의 오류 핸들러 추가
-seo-title: Error Handlers in Adaptive Forms for AEM Adaptive Forms core components
 description: AEM Forms에서는 외부 서비스를 호출하도록 구성된 REST 엔드포인트를 사용하여 양식에 대한 기본 성공 사례와 오류 핸들러를 제공합니다. AEM 적응형 양식에서 기본 오류 핸들러와 사용자 정의 오류 핸들러를 추가할 수 있습니다.
-seo-description: Error handler function and Rule Editor in Adaptive Forms core components helps you to effectively manage and customize error handling. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
 keywords: 사용자 정의 오류 핸들러 추가, 기본 오류 핸들러 추가, 양식에서 오류 핸들러 추가, 규칙 편집기의 호출 서비스를 사용하여 사용자 정의 오류 핸들러 추가, 규칙 편집기를 구성하여 사용자 정의 오류 핸들러 추가, 규칙 편집기를 사용하여 사용자 정의 오류 핸들러 추가
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2410'
 ht-degree: 99%
@@ -252,7 +250,7 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
            console.log("Custom Error Handler processing start...");
            console.log("response:"+JSON.stringify(response));
            console.log("headers:"+JSON.stringify(headers));
-           alert("CustomErrorHandler - Please enter valid PetId.")
+           alert("CustomErrorHandler - Enter valid PetId.")
            globals.invoke('defaultErrorHandler',response, headers)
            console.log("Custom Error Handler processing end...");
        }

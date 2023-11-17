@@ -2,7 +2,7 @@
 title: ContextHub 진단
 description: ContextHub는 ContextHub 프레임워크의 개요를 볼 수 있는 진단 페이지를 제공합니다
 exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 1%
@@ -41,7 +41,7 @@ ContextHub 진단 페이지는 작성된 저장소 및 UI 모듈, 로드된 클�
 
 ## Clientlibs {#clientlibs}
 
-Clientlibs 섹션에는 [클라이언트 라이브러리 폴더](/help/implementing/developing/introduction/clientlibs.md) 이 ContextHub는 로드되었습니다. 클라이언트 라이브러리는 다음과 같이 분류됩니다.
+Clientlibs 섹션에는 모든 항목이 나열됩니다[클라이언트 라이브러리 폴더](/help/implementing/developing/introduction/clientlibs.md) 이 ContextHub는 로드되었습니다. 클라이언트 라이브러리는 다음과 같이 분류됩니다.
 
 * **kernel.js:** ContextHub 프레임워크, 세그먼트 엔진 및 저장소 유형을 구현하는 클라이언트 라이브러리입니다.
 * **ui.js:** ContextHub UI 및 UI 모듈 유형을 구현하는 클라이언트 라이브러리.

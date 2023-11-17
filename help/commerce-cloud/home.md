@@ -3,10 +3,10 @@ title: AEM Content and Commerce
 description: Experience Manager Content 및 Commerce as a Cloud Service를 사용하고 관리하는 방법을 알아봅니다.
 landing-page-description: Experience Manager Content 및 Commerce as a Cloud Service를 사용하고 관리하는 방법을 알아봅니다.
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 88%
+source-wordcount: '369'
+ht-degree: 82%
 
 ---
 
@@ -16,7 +16,8 @@ Experience Manager Content 및 Commerce as a Cloud Service를 사용하고 관�
 
 >[!NOTE]
 >
->AEM 6.5 및 클래식 CIF가 있는 AEM Content and Commerce의 경우 다음을 참조하십시오. [AEM 6.5 Content 및 Commerce](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
+>AEM 6.5 및 클래식 CIF이 있는 AEM Content and Commerce의 경우 다음을 참조하십시오. [AEM 6.5 Content 및 Commerce](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
+>
 
 ## 주요 콘텐츠 및 상거래 문서 {#key-articles}
 

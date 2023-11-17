@@ -2,9 +2,9 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service의 주요 변경 사항
 description: Adobe Experience Manager (AEM) as a Cloud Service의 주요 변경 사항.
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: 30edc83364dd9666b94f54048abc8b7f92ad6ce3
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '868'
 ht-degree: 97%
 
 ---
@@ -79,7 +79,7 @@ OSGi 번들 및 구성에 대한 변경 내용은 CI/CD 파이프라인을 통�
 
 ## 맞춤형 실행 모드가 허용되지 않습니다 {#custom-runmodes}
 
-추가적인 실행 모드나 사용자 정의 실행 모드는 AEM Cloud Service에서 사용할 수 없습니다. AEM Cloud Service에 대해 즉시 사용할 수 있도록 제공되는 실행 모드 목록에 대해서는 문서를 참조하십시오 [AEM에 as a Cloud Service 배포](/help/implementing/deploying/overview.md#runmodes)
+추가적인 실행 모드나 사용자 정의 실행 모드는 AEM Cloud Service에서 사용할 수 없습니다. AEM Cloud Service에서 기본적으로 제공되는 실행 모드 목록은 을 참조하십시오. [AEM에 as a Cloud Service 배포](/help/implementing/deploying/overview.md#runmodes).
 
 ## 복제 에이전트 제거 및 관련 변경 사항 {#replication-agents}
 

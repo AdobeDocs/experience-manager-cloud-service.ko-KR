@@ -2,9 +2,9 @@
 title: Adobe Analytics와 통합할 때 사용되는 IMS 구성
 description: Adobe Analytics와 통합할 때 사용되는 IMS 구성 알아보기
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '908'
 ht-degree: 97%
 
 ---
@@ -35,7 +35,7 @@ Analytics Standard API를 통해 Adobe Experience Manager as a Cloud Service(AEM
 * 귀사의 시스템 관리자는 Admin Console을 사용하여 필요한 개발자를 관련 제품 프로필에 추가해야 합니다.
 
    * 이렇게 하면 관련 개발자에게 Adobe Developer Console을 사용하여 통합을 활성화할 수 있는 권한이 제공됩니다.
-   * 자세한 내용은 [개발자 관리](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)를 참조하십시오.
+   * 다음을 참조하십시오 [개발자 관리](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
 
 
 ## IMS 구성 - 공개 키 생성 {#configuring-ims-generating-a-public-key}

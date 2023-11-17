@@ -2,10 +2,10 @@
 title: Universal Editor 아키텍처
 description: Universal Editor의 아키텍처 및 해당 서비스와 계층 간에 데이터가 흐르는 방식에 대해 알아봅니다.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 100%
+source-wordcount: '650'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Universal Editor의 아키텍처 및 해당 서비스와 계층 간에 데이터
 
 >[!TIP]
 >
->Universal Editor 및 해당 아키텍처가 작동하는 모습을 확인하려면 [AEM에서 Universal Editor 시작하기](getting-started.md) 문서를 참조하여 Universal Editor에 액세스하는 방법 및 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 확인합니다.
+>Universal Editor 및 해당 아키텍처가 작동하는 모습을 보려면 [AEM에서 Universal Editor 시작](getting-started.md)을 참조하여 Universal Editor에 액세스하는 방법 및 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 확인하십시오.
 
 ### 편집기 {#editors}
 
@@ -50,7 +50,7 @@ Universal Editor는 최소한의 SDK를 위해 노력하므로 계측은 원격 
 ### 지속성 레이어 {#persistence-layer}
 
 * **콘텐츠 조각 모델** - 콘텐츠 조각 속성 편집을 위한 레일을 지원하려면 콘텐츠 조각 편집기 및 양식 기반 편집기, 구성 요소별 모델 및 콘텐츠 조각이 필요합니다.
-* **콘텐츠** - 콘텐츠는 AEM, Magento 등 어디에나 저장할 수 있습니다.
+* **콘텐츠** - 컨텐츠는 AEM, Magento 등 어디에나 저장할 수 있습니다.
 
 ![지속성 레이어](assets/persistence-layer.png)
 

@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 14%
+source-wordcount: '686'
+ht-degree: 12%
 
 ---
 
 # 자산 메타데이터 일괄적으로 가져오거나 내보냅니다 {#import-and-export-asset-metadata-in-bulk}
 
-Adobe Experience Manager Assets를 사용하면 CSV 파일을 사용하여 에셋 메타데이터를 일괄적으로 가져올 수 있습니다. CSV 파일을 가져와서 최근에 업로드한 에셋 또는 기존 에셋에 대한 대량 업데이트를 수행할 수 있습니다. 자산 메타데이터를 CSV 형식으로 서드파티 시스템에서 일괄로 수집할 수도 있습니다.
+Adobe Experience Manager Assets을 사용하면 CSV 파일을 사용하여 에셋 메타데이터를 일괄적으로 가져올 수 있습니다. CSV 파일을 가져와서 최근에 업로드한 에셋 또는 기존 에셋에 대한 대량 업데이트를 수행할 수 있습니다. 자산 메타데이터를 CSV 형식으로 서드파티 시스템에서 일괄로 수집할 수도 있습니다.
 
 ## 메타데이터 가져오기 {#import-metadata}
 
@@ -70,8 +70,8 @@ Adobe Experience Manager Assets를 사용하면 CSV 파일을 사용하여 에�
 
 1. 다음에서 **[!UICONTROL 내보낼 속성]** 필드에서 모든 속성을 내보내는지 특정 속성을 내보내는지 여부를 지정합니다. 내보낼 선택적 속성 을 선택하는 경우 원하는 속성을 추가합니다.
 
-1. 도구 모음에서 를 탭/클릭합니다 **[!UICONTROL 내보내기]**. 메타데이터 내보내기를 확인하는 메시지가 표시됩니다. 메시지를 닫습니다.
-1. Open the inbox notification for the export job. Select the job and click **[!UICONTROL Open]** from the toolbar. To download the CSV file with the metadata, tap/click **[!UICONTROL CSV Download]** from the toolbar. **[!UICONTROL 닫기]**&#x200B;를 클릭합니다.
+1. 도구 모음에서 를 선택합니다. **[!UICONTROL 내보내기]**. 메타데이터 내보내기를 확인하는 메시지가 표시됩니다. 메시지를 닫습니다.
+1. Open the inbox notification for the export job. Select the job and click **[!UICONTROL Open]** from the toolbar. 메타데이터가 포함된 CSV 파일을 다운로드하려면 다음을 선택합니다. **[!UICONTROL CSV 다운로드]** 을 클릭합니다. **[!UICONTROL 닫기]**&#x200B;를 클릭합니다.
 
    ![일괄로 내보낸 메타데이터가 포함된 CSV 파일을 다운로드하는 대화 상자](assets/csv_download.png)
 
@@ -79,14 +79,14 @@ Adobe Experience Manager Assets를 사용하면 CSV 파일을 사용하여 에�
 
 **추가 참조**
 
-* [에셋 번역](translate-assets.md)
+* [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [에셋이 지원되는 파일 형식](file-format-support.md)
-* [에셋 검색](search-assets.md)
-* [연결된 에셋](use-assets-across-connected-assets-instances.md)
-* [에셋 보고서](asset-reports.md)
+* [자산이 지원되는 파일 형식](file-format-support.md)
+* [자산 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [자산 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
-* [에셋 다운로드](download-assets-from-aem.md)
+* [자산 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
@@ -94,4 +94,3 @@ Adobe Experience Manager Assets를 사용하면 CSV 파일을 사용하여 에�
 >[!MORELIKETHIS]
 >
 >* [에셋을 일괄로 가져올 때 메타데이터 가져오기](/help/assets/add-assets.md#asset-bulk-ingestor)
-

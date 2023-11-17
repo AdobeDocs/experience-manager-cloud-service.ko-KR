@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 15%
+source-wordcount: '971'
+ht-degree: 7%
 
 ---
 
@@ -36,14 +36,14 @@ ht-degree: 15%
 
 선택한 에셋 유형에 관계없이 저작권 정보를 필수 필드로 표시합니다.
 
-1. 탭/클릭 [!DNL Experience Manager] 로고 및 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 에셋]** > **[!UICONTROL 메타데이터 스키마]**.
-1. In the **[!UICONTROL Schema Forms]** page, select a schema form and then tap/click **[!UICONTROL Edit]** from the toolbar to edit the schema.
+1. 다음 항목 선택 [!DNL Experience Manager] 로고 및 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 에셋]** > **[!UICONTROL 메타데이터 스키마]**.
+1. 다음에서 **[!UICONTROL 스키마 Forms]** 페이지에서 스키마 양식을 선택한 다음 을 선택합니다. **[!UICONTROL 편집]** 을 클릭하여 스키마를 편집합니다.
 
    ![select_form](assets/select_form.png)
 
 1. (선택 사항) 메타데이터 스키마 편집기에서 조건화할 필드를 만듭니다. 에서 이름 및 속성 경로 지정 **[!UICONTROL 설정]** 탭.
 
-   탭을 만들려면 탭/클릭 `+` 탭을 추가한 다음 메타데이터 필드를 추가합니다.
+   탭을 만들려면 다음을 선택합니다 `+` 탭을 추가한 다음 메타데이터 필드를 추가합니다.
 
    ![add_tab](assets/add_tab.png)
 
@@ -53,7 +53,7 @@ ht-degree: 15%
 
 1. 키-값 쌍은 양식 사용자에게 제공되는 옵션입니다. 키-값 쌍을 수동으로 또는 JSON 파일에서 제공할 수 있습니다.
 
-   * 값을 수동으로 지정하려면 다음을 선택합니다 **[!UICONTROL 수동으로 추가]**, 및 탭/클릭 **[!UICONTROL 선택 항목 추가]** 옵션 텍스트와 값을 지정합니다. 예를 들어 비디오, PDF, Word 및 Image 에셋 유형을 지정합니다.
+   * 값을 수동으로 지정하려면 다음을 선택합니다 **[!UICONTROL 수동으로 추가]**, 및 선택 **[!UICONTROL 선택 항목 추가]** 옵션 텍스트와 값을 지정합니다. 예를 들어 비디오, PDF, Word 및 Image 에셋 유형을 지정합니다.
 
    * JSON 파일에서 값을 동적으로 가져오려면 다음을 선택합니다. **[!UICONTROL JSON 경로를 통해 추가]** JSON 파일의 경로를 제공합니다. [!DNL Experience Manager] 양식이 사용자에게 표시될 때 실시간으로 키-값 쌍을 가져옵니다.
 
@@ -80,7 +80,7 @@ ht-degree: 15%
    ![select_dependentfield](assets/select_dependentfield.png)
 
 1. 아래 **[!UICONTROL 요구 사항]**, 을(를) 선택합니다. **[!UICONTROL 필수, 새 규칙 기반]** 옵션을 선택합니다.
-1. Tap/click **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Also choose the field value upon which to create the dependency. In this case, choose **[!UICONTROL Video]**. Tap/click **[!UICONTROL Done]** to save the changes.
+1. 선택 **[!UICONTROL 규칙 추가]** 및 선택 **[!UICONTROL 에셋 유형]** 종속성을 만드는 필드입니다. 종속성을 생성할 필드 값도 선택합니다. In this case, choose **[!UICONTROL Video]**. 선택 **[!UICONTROL 완료]** 변경 내용을 저장합니다.
 
    ![define_rule](assets/define_rule.png)
 
@@ -90,13 +90,13 @@ ht-degree: 15%
 
 1. Under **[!UICONTROL Visibility]**, choose the **[!UICONTROL Visible, based on new rule]** option.
 
-1. Tap/click **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Also choose the field value upon which to create the dependency. In this case, choose **[!UICONTROL Video]**. Tap/click **[!UICONTROL Done]** to save the changes.
+1. 선택 **[!UICONTROL 규칙 추가]** 및 선택 **[!UICONTROL 에셋 유형]** 종속성을 만드는 필드입니다. Also choose the field value upon which to create the dependency. In this case, choose **[!UICONTROL Video]**. 선택 **[!UICONTROL 완료]** 변경 내용을 저장합니다.
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 
    >[!CAUTION]
    >
-   >값을 재설정하려면 공백 또는 인터페이스 내 값 이외의 아무 곳이나 클릭하거나 탭합니다. 값이 재설정된 경우 값을 다시 선택합니다.
+   >값을 재설정하려면 값이 아닌 인터페이스의 아무 곳이나 선택합니다. 값이 재설정된 경우 값을 다시 선택합니다.
 
    >[!NOTE]
    >

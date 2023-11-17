@@ -4,10 +4,10 @@ description: 사이트 테마를 사용하여 더욱 간편하게 사이트를 �
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '562'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '560'
+ht-degree: 98%
 
 ---
 
@@ -50,7 +50,7 @@ AEM은 자동으로 기존 사이트를 프론트엔드 파이프라인을 사�
 Sites 콘솔에서 [사이트 레일](site-rail.md)을 사용하여 사이트를 활성화할 수 있습니다.
 
 1. AEM에 로그인한 다음 **전역 탐색** > **사이트**&#x200B;를 통해 사이트로 이동합니다.
-1. 콘솔에서 사이트를 선택합니다. 사이트의 하위 페이지가 아닌 루트를 선택해야 합니다.
+1. 콘솔에서 사이트를 선택합니다. 하위 페이지가 아닌 사이트 루트를 선택합니다.
 1. 사이트를 선택한 상태로 왼쪽의 [레일 선택기](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)를 연 다음 **사이트**&#x200B;를 선택합니다.
 1. **사이트** 레일에서 **프론트엔드 파이프라인 활성화** 버튼을 클릭합니다.
 

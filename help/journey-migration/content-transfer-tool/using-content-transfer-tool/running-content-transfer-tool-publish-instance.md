@@ -2,10 +2,10 @@
 title: 게시 인스턴스에서 콘텐츠 전송 도구 실행
 description: 게시 인스턴스에서 콘텐츠 전송 도구 실행
 exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 11%
+source-wordcount: '250'
+ht-degree: 12%
 
 ---
 
@@ -24,7 +24,7 @@ CTT(컨텐츠 전송 도구)는 소스 인스턴스에서 대상 인스턴스로
 
 * 작성자 인스턴스에서 사용된 것과 동일한 버전의 콘텐츠 전송 도구를 사용합니다.
 
-* 단일 게시 노드만 마이그레이션하면 됩니다. 추출을 시작하기 전에 로드 밸런서에서 제거해야 합니다.
+* 단일 게시 노드만 마이그레이션해야 합니다. 추출을 시작하기 전에 로드 밸런서에서 제거해야 합니다.
 
 * 게시하기 위해 수집하는 동안 게시 계층은 작성자와 달리 축소되지 않습니다.
 

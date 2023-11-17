@@ -2,9 +2,9 @@
 title: CRXDE Lite 사용
 description: CRXDE Lite은 AEM 빠른 시작의 일부이며 브라우저 내에서 로컬 개발 환경의 저장소에 액세스하고 수정할 수 있습니다.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1685'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ CRXDE Lite 사용자 인터페이스가 브라우저에 다음과 같이 표시�
 
 >[!TIP]
 >
->AEM 메뉴에서 CRXDE Lite에 액세스할 수도 있습니다. 메인 메뉴에서 을 선택합니다. **도구** -> **일반** -> **CRXDE Lite**.
+>AEM 메뉴에서 CRXDE Lite에 액세스할 수도 있습니다. 메인 메뉴에서 을 선택합니다. **도구** > **일반** > **CRXDE Lite**.
 
 ## 사용자 인터페이스 개요 {#overview-of-the-user-interface}
 
@@ -163,7 +163,7 @@ CRXDE Lite의 사용자 인터페이스는 많은 부분을 가지고 있고 많
 
 다른 사용자로 로그인하거나 다시 로그인하려면 이 아이콘을 클릭합니다. 다음 `@crx.default` 는 사용자가 저장소의 기본(및 전용) 작업 공간에 있음을 나타냅니다.
 
-다음 **환경 설정** 옵션은 UI 언어를 설정하고, 저장, 검색, 메모 작성 등과 같은 다양한 작업에 대한 단축키를 보고 사용자 지정하는 데 사용할 수 있습니다.
+다음 **환경 설정** 옵션은 UI 언어를 설정하고, 저장, 검색, 메모 만들기 등과 같은 다양한 작업에 대한 단축키를 보고 사용자 지정하는 데 사용할 수 있습니다.
 
 ## 폴더 만들기 {#creating-a-folder}
 

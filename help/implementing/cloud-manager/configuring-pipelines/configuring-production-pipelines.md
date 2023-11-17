@@ -3,9 +3,9 @@ title: 프로덕션 파이프라인 구성
 description: 코드를 빌드하고 프로덕션 환경에 배포하기 위해 프로덕션 파이프라인을 구성하는 방법을 알아봅니다.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1413'
 ht-degree: 79%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 79%
    * **[전체 스택 코드](#full-stack-code)**
    * **[타깃팅된 배포](#targeted-deployment)**
 
-문서를 참조하십시오. [CI/CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 파이프라인 유형에 대한 자세한 정보입니다.
+다음을 참조하십시오 [CI/CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 파이프라인 유형에 대한 자세한 정보입니다.
 
 프로덕션 파이프라인 생성을 완료하는 단계는 선택한 소스 코드 유형에 따라 다릅니다. 파이프라인 구성을 완료할 수 있도록 위의 링크를 따라 이 문서의 다음 섹션으로 이동합니다.
 

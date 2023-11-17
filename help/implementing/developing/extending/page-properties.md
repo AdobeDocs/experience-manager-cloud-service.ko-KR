@@ -1,13 +1,13 @@
 ---
 title: 페이지 속성 보기 사용자 정의
 description: 작성자가 페이지 속성을 보고 편집하는 방법에 대해 알아봅니다.
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
-workflow-type: ht
-source-wordcount: '364'
-ht-degree: 100%
+exl-id: 363b3c2d-f965-485f-bdae-2ea5b4cecb83
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 92%
 
 ---
-
 
 # 페이지 속성 보기 사용자 정의{#customizing-views-of-page-properties}
 
@@ -70,10 +70,10 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Live Copy와 함께 사용할 페이지 속성을 구성하는 경우 자세한 내용은 [다중 사이트 관리자 확장](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties) 문서를 참조하십시오.
+>라이브 카피와 함께 사용할 페이지 속성을 구성할 때에는 다음을 참조하십시오. [다중 사이트 관리자 확장](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties) 을 참조하십시오.
 
 ## 페이지 속성의 샘플 구성 {#sample-configuration-of-page-properties}
 
 이 샘플은 [`sling:orderBefore`](/help/implementing/developing/introduction/sling-resource-merger.md#properties) 사용을 포함하여 [Sling 리소스 병합](/help/implementing/developing/introduction/sling-resource-merger.md)의 대화 상자 비교 기법을 보여 줍니다. 또한 `cq:showOnCreate` 및 `cq:hideOnEdit` 모두의 사용을 보여 줍니다.
 
-이 페이지의 코드는 [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)에서 확인할 수 있습니다.
+이 페이지의 코드는에서 찾을 수 있습니다. [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog).

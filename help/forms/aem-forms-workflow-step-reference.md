@@ -4,9 +4,9 @@ description: Forms 중심 워크플로를 사용하면 적응형 Forms 기반 �
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: AEM 워크플로 사용, 작업 단계 할당, PDF/A 단계로 전환, 기록된 문서 생성 단계, 워크플로 사용, 문서 서명 단계, 인쇄된 출력 단계 생성, 비대화형 PDF 출력 생성
-source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '7446'
+source-wordcount: '7444'
 ht-degree: 1%
 
 ---
@@ -396,7 +396,7 @@ DDX 호출 단계에는 다음 속성이 있습니다.
 * **[!UICONTROL 서명 프로세스]**: 문서에 순차적 또는 병렬 방식으로 서명하도록 선택할 수 있습니다. 서명자 한 사람이 서명할 문서를 한 번에 순차적으로 받습니다. 첫 번째 서명자가 문서 서명을 완료한 후 문서는 두 번째 서명자에게 전송됩니다. 여러 서명자가 문서에 한 번에 서명할 수 있습니다.
 * **[!UICONTROL 리디렉션 URL]**: 리디렉션 URL을 지정합니다. 문서에 서명한 후 피할당자를 URL로 리디렉션할 수 있습니다. 일반적으로 이 URL에는 감사 메시지나 추가 지침이 포함되어 있습니다.
 * **[!UICONTROL 워크플로 단계]**: 워크플로우에는 여러 단계가 있을 수 있습니다. 이러한 단계는 AEM 받은 편지함에 표시됩니다. 모델 속성에서 이러한 단계를 정의할 수 있습니다( **[!UICONTROL Sidekick]** > **[!UICONTROL 페이지]** > **[!UICONTROL 페이지 속성]** > **[!UICONTROL 단계]**).
-* **[!UICONTROL 수신자 선택]**: 문서에 대한 수신자를 선택하는 방법을 지정합니다. 워크플로우를 사용자 또는 그룹에 동적으로 할당하거나 수신자의 세부 정보를 수동으로 추가할 수 있습니다. 드롭다운에서 수동으로 를 선택하면 이메일, 역할 및 인증 방법과 같은 수신자 세부 정보를 추가합니다.
+* **[!UICONTROL 수신자 선택]**: 문서에 대한 수신자를 선택하는 방법을 지정합니다. 워크플로우를 사용자 또는 그룹에 동적으로 할당하거나 수신자의 세부 정보를 수동으로 추가할 수 있습니다. 드롭다운 목록에서 수동으로 를 선택하면 이메일, 역할 및 인증 방법과 같은 수신자 세부 정보를 추가합니다.
 
   >[!NOTE]
   >
@@ -546,7 +546,7 @@ Send a document directly to a printer. It supports the following printing access
 
 * **[!UICONTROL 다음을 사용하여 콘텐츠 루트 위치 선택]**: 콘텐츠 루트는 양식 디자인에 사용된 상대 에셋을 검색할 URI, 절대 참조 또는 저장소 위치를 지정하는 문자열 값입니다. 예를 들어 양식 디자인이 상대적으로 이미지를 참조하는 경우 `../myImage.gif`, `myImage.gif` 은(는) 다음 위치에 있어야 합니다. `repository://`. 기본값은 입니다. `repository://`저장소의 루트 수준을 가리킵니다.
 
-  애플리케이션에서 자산을 선택하는 경우 컨텐츠 루트 URI 경로의 구조가 올바른지 확인하십시오. 예를 들어 SampleApp이라는 응용 프로그램에서 폼을 선택하고 `SampleApp/1.0/forms/Test.xdp`, 콘텐츠 루트 URI를 다음으로 지정해야 합니다. `repository://administrator@password/Applications/SampleApp/1.0/forms/`, 또는 `repository:/Applications/SampleApp/1.0/forms/` (권한이 null인 경우). 컨텐츠 루트 URI가 이러한 방식으로 지정되면 양식에 있는 참조된 모든 자산의 경로가 이 URI에 대해 확인됩니다.
+  애플리케이션에서 자산을 선택하는 경우 컨텐츠 루트 URI 경로의 구조가 올바른지 확인하십시오. 예를 들어 SampleApp이라는 응용 프로그램에서 폼을 선택하고 `SampleApp/1.0/forms/Test.xdp`, 콘텐츠 루트 URI를 다음으로 지정해야 합니다. `repository://administrator@password/Applications/SampleApp/1.0/forms/`, 또는 `repository:/Applications/SampleApp/1.0/forms/` (권한이 null인 경우). 컨텐츠 루트 URI가 이러한 방식으로 지정되면 양식에 있는 모든 참조된 자산의 경로가 이 URI에 대해 확인됩니다.
 
 * **[!UICONTROL 다음을 사용하여 XCI 파일 선택]**: XCI 파일은 양식 디자인 요소에 사용되는 글꼴 및 기타 속성을 설명하는 데 사용됩니다. 페이로드에 상대적인 XCI 파일을 절대 경로에 두거나 문서 데이터 유형의 변수를 사용할 수 있습니다.
 

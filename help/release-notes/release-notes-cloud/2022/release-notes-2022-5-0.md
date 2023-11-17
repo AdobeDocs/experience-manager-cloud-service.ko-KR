@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.5.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.5.0 릴리스 정보입니다.'
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: fe19e99baa921247f86542c6643c1faf837e7d91
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 75%
+source-wordcount: '789'
+ht-degree: 73%
 
 ---
 
@@ -68,9 +68,9 @@ Experience Manager Assets는 Adobe Sensei AI 기능을 사용하여 이제 [이�
 
 * 제품 관리실에 대한 빠른 액세스: 사이트 편집기에서 한 번의 클릭으로 전체 세부 제품 정보에 쉽게 액세스할 수 있습니다.
 
-  ![위시리스트 사용](/help/assets/CIF/enable-wishlist.png)
+<!-- Image was not found during PR validation despite correct path   ![Enable wantlist](/help/assets/CIF/enable-wishlist.png) -->
 
-* 추가 마케팅 상거래 구성 요소에 대한 지원: 장바구니에 추가 및 위시리스트 콜 투 액션을 표시하도록 구성 요소를 구성할 수 있습니다.
+* 추가 마케팅 상거래 구성 요소에 대한 지원: 장바구니에 추가 및 관심 목록 콜 투 액션을 표시하도록 구성 요소를 구성할 수 있습니다.
 
   ![제품 관리실에 대한 사이트 편집기 단축키](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 

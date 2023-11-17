@@ -5,9 +5,9 @@ uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
 products: SG_EXPERIENCEMANAGER/FORMS
 topic-tags: author
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '726'
 ht-degree: 9%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 9%
    * **템플릿 메시지:** 서명 PDF을 로드하는 동안 표시할 메시지를 지정합니다. Adobe Sign 서비스는 서명 PDF을 준비하고 로드하는 데 시간이 소요됩니다.
    * **서명 서비스:** 다음 항목 선택 **낙서 서명** 옵션을 선택합니다.
 
-   * **CSS 클래스**: 클라이언트 라이브러리의 CSS 클래스(있는 경우)를 지정합니다. 를 사용하는 것이 좋습니다. [테마](themes.md) 및 [인라인 스타일](inline-style-adaptive-forms.md) CSS 클래스 대신
+   * **CSS 클래스**: 클라이언트 라이브러리의 CSS 클래스(있는 경우)를 지정합니다. Adobe은 다음을 권장합니다. [테마](themes.md) 및 [인라인 스타일](inline-style-adaptive-forms.md) CSS 클래스 대신
 
    완료 탭 ![aem_forms_save](assets/aem_forms_save.png) 아이콘 을 클릭하여 변경 내용을 저장합니다. 서명이 구성되었습니다.
 

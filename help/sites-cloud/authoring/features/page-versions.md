@@ -2,10 +2,10 @@
 title: 페이지 버전을 사용하여 작업
 description: AEM에서 페이지 버전을 만들고, 비교하고, 복원하는 방법에 대해 알아봅니다.
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
-workflow-type: ht
-source-wordcount: '1507'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '1505'
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 1. 버전을 만들 페이지로 이동하여 표시합니다.
 1. [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)로 페이지를 선택합니다.
 1. **타임라인** 레일을 엽니다.
-1. 주석 필드 옆에 있는 생략 부호를 클릭/탭하여 옵션을 나열합니다.
+1. 주석 필드 옆에 있는 생략 부호를 선택하여 옵션을 표시합니다.
 
    ![타임라인 레일의 버전](/help/sites-cloud/authoring/assets/versions-timeline-rail.png)
 
@@ -209,7 +209,7 @@ ht-degree: 100%
 
 타임워프는 페이지 편집기의 [모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)입니다. 이를 시작하려면 다른 모드처럼 전환하면 됩니다.
 
-1. 타임워프를 시작하려는 페이지 편집기를 시작한 다음 [모드 선택]에서 **타임워프**&#x200B;를 선택합니다.
+1. 타임워프를 시작할 페이지의 편집기를 시작한 다음 을 선택합니다. **타임워프** 을 선택합니다.
 
    ![타임워프 모드](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 

@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.11.0 �
 description: AEM as a Cloud Service의 Cloud Manager 2023.11.0 릴리스 정보입니다.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 73%
+source-wordcount: '740'
+ht-degree: 60%
 
 ---
 
@@ -44,13 +44,13 @@ AEM as a Cloud Service의 Cloud Manager 2023.11.0 릴리스 일자는 2023년 11
 
 GitHub를 사용하여 저장소를 관리하는 경우, [이제 Cloud Manager를 통해 GitHub 저장소 내에서 직접 코드의 유효성을 검사할 수 있습니다.](/help/implementing/cloud-manager/managing-code/byo-github.md) 이 통합을 통해 코드를 Adobe 저장소와 지속적으로 동기화할 필요가 없으며, 기본 분기에 병합하기 전에 가져오기 요청을 확인할 수 있습니다.
 
-이러한 새 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 `Grp-CloudManager_BYOG@adobe.com`에 이메일을 보내주십시오.
+이 새로운 기능을 테스트하고 피드백을 공유하려면 다음으로 이메일을 보내십시오. `Grp-CloudManager_BYOG@adobe.com` (Adobe ID과 연계된 이메일 주소).
 
 ### 사용자 정의 권한 {#custom-permissions}
 
 [Cloud Manager 사용자 정의 권한](/help/implementing/cloud-manager/custom-permissions.md)을 사용하여 Cloud Manager 사용자의 프로그램, 파이프라인 및 환경에 대한 액세스를 제한하는 구성 가능한 권한으로 새 사용자 정의 권한 프로필을 생성할 수 있습니다.
 
-이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 `Grp-CloudManager-custom-permissions@adobe.com`에 이메일을 보내주십시오.
+이 새로운 기능을 테스트하고 피드백을 공유하려면 다음으로 이메일을 보내십시오. `Grp-CloudManager-custom-permissions@adobe.com` (Adobe ID과 연계된 이메일 주소).
 
 ### 셀프서비스 콘텐츠 복원 {#content-restore}
 
@@ -59,7 +59,7 @@ GitHub를 사용하여 저장소를 관리하는 경우, [이제 Cloud Manager�
 * 이전 24시간 동안 특정 시점 백업 복원
 * 최대 7일 동안 고정 시간 복원
 
-이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일로 `aemcs-restorefrombackup-adopter@adobe.com`에 이메일을 보내주십시오. 참고:
+이 새로운 기능을 테스트하고 피드백을 공유하려면 다음으로 이메일을 보내십시오. `aemcs-restorefrombackup-adopter@adobe.com` Adobe ID과 연계된 이메일.
 
 * 얼리 어답터 프로그램은 개발 환경으로만 제한됩니다.
 * 이 기능에 대한 얼리 어답터 프로그램의 가용성은 제한적입니다.
@@ -71,7 +71,7 @@ GitHub를 사용하여 저장소를 관리하는 경우, [이제 Cloud Manager�
 
 대시보드는 웹 앱의 품질을 개선하기 위한 오픈 소스 자동화 도구인 Google Lighthouse를 활용합니다. 공개 또는 인증이 필요한 모든 웹 페이지에 대해 실행할 수 있습니다. 성능, 접근성, 점진적 웹 앱, SEO 등에 대한 감사가 있습니다.
 
-새 대시보드를 테스트해 보고 싶으십니까? Adobe ID와 연결된 이메일로 `aem-lighthouse-pilot@adobe.com`에 이메일을 보내주시면 귀하의 시작을 도와드릴 수 있습니다.
+새 대시보드를 테스트해 보고 싶으십니까? 다음으로 이메일 보내기 `aem-lighthouse-pilot@adobe.com` Adobe ID과 연결된 이메일을 통해 시작할 수 있습니다.
 
 ## 알려진 문제 {#known-issues}
 

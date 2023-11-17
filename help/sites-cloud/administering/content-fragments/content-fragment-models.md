@@ -4,10 +4,10 @@ description: 콘텐츠 조각 모델이 AEM에서 콘텐츠 조각의 기반 역
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3060'
-ht-degree: 98%
+source-wordcount: '3058'
+ht-degree: 97%
 
 ---
 
@@ -129,7 +129,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
 1. **필드를 제거하려면**
 
-   필요한 필드를 선택한 후 휴지통 아이콘을 클릭/탭합니다. 작업을 확인하는 메시지가 표시됩니다.
+   필수 필드를 선택한 다음 휴지통 아이콘을 선택합니다. 작업을 확인하는 메시지가 표시됩니다.
 
    ![제거](assets/cf-cfmodels-remove-icon.png)
 
@@ -161,7 +161,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 * **날짜 및 시간**
    * 날짜 및/또는 시간을 추가합니다.
 * **열거**
-   * 확인란, 라디오 버튼 또는 드롭다운 필드 세트를 추가합니다.
+   * 확인란, 라디오 버튼 또는 드롭다운 목록 필드 집합 추가
 * **태그**
    * 조각 작성자가 태그의 영역에 액세스하고 선택할 수 있습니다.
 * **콘텐츠 참조**
@@ -196,7 +196,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
   >[!CAUTION]
   >
-  >이전 버전의 AEM에서 만든 모델에 잘못된 문자가 포함되어 있는 경우 해당 문자를 제거하거나 업데이트하십시오.
+  >이전 버전의 AEM에서 만든 모델에 잘못된 문자가 포함되어 있는 경우, 해당 문자를 제거하거나 업데이트하십시오.
 
 * **렌더링 형식**
 조각의 필드를 구현하거나 렌더링하기 위한 다양한 옵션입니다. 이를 통해 작성자에게 필드의 단일 인스턴스가 표시되는지 또는 작성자가 여러 인스턴스를 만들 수 있는지를 정의할 수 있습니다.
@@ -374,7 +374,7 @@ type CompanyModel {
 
 모델을 만든 후에는 모델을 활성화해야 합니다. 활성화한 모델은
 
-* 새 콘텐츠 조각을 만들 때 선택할 수 있습니다.
+* 콘텐츠 조각을 만들 때 선택할 수 있습니다.
 * 콘텐츠 조각 모델 내에서 참조할 수 있습니다.
 * GraphQL에서 사용할 수 있습니다. 그 결과 스키마가 생성됩니다.
 

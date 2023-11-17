@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service SDK
 description: AEM as a Cloud Service 소프트웨어 개발 키트 개요
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
-source-git-commit: 33ba3e88a4116674c70c44a29273a04544b6b39b
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1236'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ AEM as a Cloud Service SDK는 다음 아티팩트로 구성됩니다.
 
 ## SDK용 빌드 {#building-for-the-sdk}
 
-AEM as a Cloud Service SDK는 사용자 지정 코드를 빌드하고 배포하는 데 사용됩니다. 자세한 내용은 [AEM Project Archetype 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en). 높은 수준에서 다음 단계가 수행됩니다.
+AEM as a Cloud Service SDK는 사용자 지정 코드를 빌드하고 배포하는 데 사용됩니다. 다음을 참조하십시오. [AEM Project Archetype 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en). 높은 수준에서 다음 단계가 수행됩니다.
 
 * **컴파일 코드**. 예상대로 소스 코드가 컴파일되어 결과 콘텐츠 패키지가 생성됩니다
 * **아티팩트 작성**. 아티팩트는 이 프로세스 중에 빌드됩니다.
@@ -36,7 +36,7 @@ AEM as a Cloud Service SDK는 사용자 지정 코드를 빌드하고 배포하�
 
 >[!NOTE]
 >
->AEM as a Cloud Service SDK는에서 지원하는 Java 배포 및 버전을 사용하여 빌드해야 합니다. [Cloud Manager의 빌드 환경](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). AEM as a Cloud Service 고객은 다음 위치에서 Oracle JDK를 다운로드할 수 있습니다. [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) Adobe Experience Manager 프로젝트에서 사용할 경우 Adobe의 라이선스 및 Oracle Java 기술에 대한 지원 약관으로 인해 Java 11 확장 지원이 2026년 9월까지 제공됩니다.
+>AEM as a Cloud Service SDK는에서 지원하는 Java 배포 및 버전을 사용하여 빌드해야 합니다. [Cloud Manager의 빌드 환경](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). AEM as a Cloud Service 고객은 다음 위치에서 Oracle JDK를 다운로드할 수 있습니다. [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) Adobe Experience Manager 프로젝트에서 사용할 경우 Adobe의 라이선스 및 Oracle Java 기술에 대한 지원 약관으로 인해 2026년 9월까지 Java 11 확장 지원이 제공됩니다.
 
 ## AEM as a Cloud Service SDK 액세스 {#accessing-the-aem-as-a-cloud-service-sdk}
 

@@ -2,10 +2,10 @@
 title: SPA 편집기 개요
 description: 이 문서에서는 SPA 편집기와 구동하는 방법(AEM 내에서 SPA 편집기와 워크플로의 세부 상호 작용 포함)에 대한 포괄적인 개요를 제공합니다.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1630'
-ht-degree: 100%
+source-wordcount: '1632'
+ht-degree: 96%
 
 ---
 
@@ -21,13 +21,13 @@ React, Angular와 같은 일반적인 SPA 프레임워크를 사용하여 빌드
 
 AEM 내에서 SPA 편집 기능을 활성화하려면 SPA의 JSON 출력과 AEM 저장소의 콘텐츠 모델 간에 매핑을 사용하여 콘텐츠에 대한 변경 사항을 저장해야 합니다.
 
-AEM의 SPA 지원을 통해 페이지 편집기에 로드하는 경우 SPA JS 코드와 상호 작용하는 얇은 JS 레이어를 도입하여 이벤트를 전송할 수 있고 편집 컨트롤 위치를 활성화하여 상황에 맞게 편집할 수 있습니다. 콘텐츠 서비스를 통해 SPA의 콘텐츠를 로드해야 하므로 이 기능이 콘텐츠 서비스 API 엔드포인트 개념에 빌드됩니다.
+AEM의 SPA 지원을 통해 페이지 편집기에 로드하는 경우 SPA JS 코드와 상호 작용하는 얇은 JS 레이어를 도입하여 이벤트를 전송할 수 있고 편집 컨트롤 위치를 활성화하여 상황에 맞게 편집할 수 있습니다. 이 기능은 SPA의 콘텐츠가 Content Services를 통해 로드되어야 하므로 Content Services API Endpoint 개념을 기반으로 합니다.
 
-AEM의 SPA에 대한 자세한 내용은 다음 문서를 참조하십시오.
+AEM의 SPA에 대한 자세한 내용은 다음을 참조하십시오.
 
-* SPA 기술 요구 사항에 대한 [SPA 블루프린트](blueprint.md)
-* React를 통해 간단히 SPA를 둘러보기 위해 [React를 사용하여 AEM에서 SPA 시작하기](getting-started-react.md)
-* Angular를 통해 간단히 SPA를 둘러보기 위해 [Angular를 사용하여 AEM에서 SPA 시작하기](getting-started-angular.md)
+* SPA 기술 요구 사항에 대한 [SPA 블루프린트.](blueprint.md)
+* React를 통해 간단히 SPA를 둘러보기 위해 [React를 사용하여 AEM에서 SPA 시작하기.](getting-started-react.md)
+* Angular를 통해 간단히 SPA를 둘러보기 위해 [Angular를 사용하여 AEM에서 SPA 시작하기.](getting-started-angular.md)
 
 ## 디자인 {#design}
 
@@ -184,6 +184,6 @@ AEM SPA Editor SDK는 Adobe에서 완벽하게 지원하며, 지속적으로 강
 * 구성 편집 (예: 리스너)
 * 실행 취소 / 다시 실행
 * 페이지 비교 및 시간 비틀기
-* 링크 검사기, CDN 재작성 서비스, URL 단축 등 서버측 HTML 재작성 수행 기능
+* 링크 검사기, CDN 재작성기 서비스, URL 단축 등과 같이 서버측에서 HTML 재작성을 수행하는 기능입니다.
 * 개발자 모드
 * AEM 론치

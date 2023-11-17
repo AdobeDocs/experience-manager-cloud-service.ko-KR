@@ -2,9 +2,9 @@
 title: 구성 요소에 대해 JSON 내보내기 활성화
 description: 구성 요소는 모델러 프레임워크를 기반으로 콘텐츠의 JSON 내보내기를 생성하도록 조정할 수 있습니다.
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '462'
 ht-degree: 12%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 12%
 
 JSON 내보내기는 다음을 기반으로 합니다. [Sling 모델](https://sling.apache.org/documentation/bundles/models.html), 및 [Sling 모델 내보내기](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) 프레임워크(자체 의존도) [Jackson 주석](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)).
 
-즉, JSON을 내보내야 하는 구성 요소에는 슬링 모델이 있어야 합니다. 따라서 구성 요소에서 JSON 내보내기를 활성화하려면 다음 두 단계를 따르십시오.
+즉, 구성 요소에 JSON을 내보내야 하는 경우 Sling 모델이 있어야 합니다. 따라서 구성 요소에서 JSON 내보내기를 활성화하려면 다음 두 단계를 따르십시오.
 
 * [구성 요소의 슬링 모델 정의](#define-a-sling-model-for-the-component)
 * [Sling 모델 인터페이스에 주석 달기](#annotate-the-sling-model-interface)
@@ -75,8 +75,6 @@ serialize할 메서드를 정의하려면 모델 인터페이스에 적절한 �
 예를 들어 이미지 핵심 구성 요소의 슬링 모델 구현 및 주석이 달린 인터페이스를 참조하십시오.
 
 ## 관련 설명서 {#related-documentation}
-
-자세한 내용은 다음을 참조하십시오.
 
 * [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md)
 * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)

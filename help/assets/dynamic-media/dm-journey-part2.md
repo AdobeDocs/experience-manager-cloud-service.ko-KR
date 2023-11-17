@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2872'
+source-wordcount: '2870'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ _좋음: 각각 수동으로 생성된 정적 이미지._
 
 _그는 &quot;큰 손이 4개를 가리키고 작은 손이 1을 가리키면 시계 다이얼이 더 잘 보일 수 있기 때문에 이 샷이 정말 갖고 싶었다&quot;고 말했다._
 
-크리에이티브는 이 새로운 정적 이미지들을 모두 다시 촬영해야 할 것이다.
+크리에이티브는 모든 새로운 정적 이미지를 다시 촬영해야 할 것이다.
 
 그러나 Dynamic Media을 사용하면 다른 이미지 사전 설정이 있는 경우 필요할 때마다 이러한 이미지를 사용할 수 있습니다. 이미지 사전 설정은 표준을 적용합니다.
 

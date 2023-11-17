@@ -2,10 +2,10 @@
 title: 코드 품질 테스트
 description: 파이프라인의 코드 품질 테스트가 어떻게 작동하고 배포 품질을 어떻게 개선할 수 있는지 알아봅니다.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 100%
+source-wordcount: '1159'
+ht-degree: 96%
 
 ---
 
@@ -110,7 +110,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 ## 콘텐츠 패키지 검색 최적화 {#content-package-scanning-optimization}
 
-품질 분석 프로세스의 일환으로 Cloud Manager는 Maven 빌드에서 생성된 콘텐츠 패키지에 대한 분석을 수행합니다. Cloud Manager는 이 프로세스를 가속화하기 위한 최적화를 제공하며, 이는 특정 패키징 제한이 관찰될 때 효과적입니다. 가장 중요한 것은 일반적으로 “모든” 패키지라고 하는 단일 콘텐츠 패키지를 출력하는 프로젝트에 대해 수행되는 최적화입니다. 이 패키지에는 빌드에 의해 생성된 여러 다른 콘텐츠 패키지가 포함되어 있으며, 이 패키지는 건너뛰기로 표시됩니다. Cloud Manager가 이 시나리오를 감지하면 “모든” 패키지의 압축을 푸는 대신 개별 콘텐츠 패키지가 직접 스캔되고 종속성에 따라 정렬됩니다. 예를 들어 다음 빌드 출력을 고려해 보십시오.
+품질 분석 프로세스의 일환으로 Cloud Manager는 Maven 빌드에서 생성된 콘텐츠 패키지에 대한 분석을 수행합니다. Cloud Manager는 이 프로세스를 가속화하기 위한 최적화를 제공하며, 이는 특정 패키징 제한이 관찰될 때 효과적입니다. 가장 중요한 것은 일반적으로 &quot;모든&quot; 패키지라고 하는 단일 콘텐츠 패키지를 출력하는 프로젝트에 대해 수행되는 최적화입니다. 이 패키지에는 빌드에 의해 생성된 여러 다른 콘텐츠 패키지가 포함되어 있으며, 이 패키지는 건너뛰기로 표시됩니다. Cloud Manager가 이 시나리오를 감지하면 “모든” 패키지의 압축을 푸는 대신 개별 콘텐츠 패키지가 직접 스캔되고 종속성에 따라 정렬됩니다. 예를 들어 다음 빌드 출력을 고려해 보십시오.
 
 * `all/myco-all-1.0.0-SNAPSHOT.zip` (content-package)
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (skipped-content-package)

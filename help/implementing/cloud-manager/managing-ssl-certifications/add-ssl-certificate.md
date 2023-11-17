@@ -2,9 +2,9 @@
 title: SSL 인증서 추가
 description: Cloud Manager의 셀프서비스 도구를 사용하여 자체 SSL 인증서를 추가하는 방법을 알아봅니다.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '551'
 ht-degree: 88%
 
 ---
@@ -19,7 +19,7 @@ Cloud Manager의 셀프서비스 도구를 사용하여 자체 SSL 인증서를 
 
 ## 인증서 요구 사항 {#certificate-requirements}
 
-섹션을 검토하십시오. **인증서 요구 사항** / 문서 [SSL 인증서 관리 소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) 추가하려는 인증서가 AEM as a Cloud Service에서 지원되는지 확인하십시오.
+섹션 검토 **인증서 요구 사항** / 문서 [SSL 인증서 관리 소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) 를 사용하여 추가하려는 인증서가 AEM as a Cloud Service에서 지원되는지 확인하십시오.
 
 ## 인증서 추가 {#adding-a-cert}
 

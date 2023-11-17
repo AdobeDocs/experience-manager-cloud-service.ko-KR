@@ -4,7 +4,7 @@ description: 구성 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1770'
 ht-degree: 1%
@@ -61,7 +61,7 @@ ht-degree: 1%
 ### 연결된 폴더 구조 구성 {#linked-folder-structure}
 
 1. 클라우드 서비스의 프로젝트 연결 폴더 탭으로 이동합니다.
-1. 연결된 폴더 상위 경로: 연결된 폴더를 만들려는 DAM의 폴더를 선택합니다. 비워 두면 기본값은 /content/dam으로 설정됩니다. Workfront 도구 메타데이터 스키마 및 Workfront 연결된 폴더 메타데이터 스키마가 선택한 폴더에 적용되었는지 확인합니다.
+1. 연결된 폴더 상위 경로: DAM에서 연결된 폴더를 만들 폴더를 선택합니다. 비워 두면 기본값은 /content/dam으로 설정됩니다. Workfront 도구 메타데이터 스키마 및 Workfront 연결된 폴더 메타데이터 스키마가 선택한 폴더에 적용되었는지 확인합니다.
 1. 연결된 폴더 구조: 쉼표로 구분된 값을 입력합니다. 각 값은 다음과 같아야 합니다 `DE:<some-project-custom-form-field>`, Portfolio, 프로그램, 연도, 이름 또는 일부 &quot;리터럴 문자열 값&quot;(따옴표가 있는 마지막 값). 현재 Portfolio,프로그램,연도,DE:프로젝트 유형,이름으로 설정되어 있습니다.
 1. Workfront의 폴더 제목에 구조의 모든 폴더가 포함되어야 하는 경우 폴더 구조 이름 확인란을 사용하여 Workfront에서 연결된 폴더 제목을 작성해야 합니다. 그렇지 않으면 마지막 폴더의 제목입니다.
 1. 하위 폴더 다중 필드를 사용하면 연결된 폴더의 하위 폴더로 만들어야 하는 폴더 목록을 지정할 수 있습니다.
@@ -82,8 +82,8 @@ Workfront 프로젝트와 AEM 폴더 간의 메타데이터 매핑은 AEM 폴더
 
 1. 추가 `jcr:read` 다음에 대한 권한: `/conf/global/settings/dam/adminui-extension/foldermetadataschema` 대상 `wf-workfront-users` 그룹입니다.
 1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 에셋]** > **[!UICONTROL 폴더 메타데이터 스키마]**.
-1. 편집하려는 폴더 메타데이터 스키마 양식을 선택하고 편집을 누릅니다.
-1. 편집하려는 폴더 메타데이터 스키마 양식 필드를 선택하고 오른쪽 패널에서 설정 탭을 선택합니다.
+1. 편집할 폴더 메타데이터 스키마 양식을 선택하고 편집을 누릅니다.
+1. 편집할 폴더 메타데이터 스키마 양식 필드를 선택하고 오른쪽 패널에서 설정 탭을 선택합니다.
 1. 위치 [!UICONTROL Workfront 필드에서 매핑됨] 필드에서 선택한 AEM 폴더 속성에 매핑할 Workfront 필드의 이름을 선택합니다. 사용 가능한 옵션은 다음과 같습니다.
 
    * 프로젝트 사용자 정의 양식 필드
@@ -98,9 +98,9 @@ Adobe Workfront 문서와 에셋 간의 메타데이터 매핑은 AEM 메타데�
 매핑을 구성하려면 다음 단계를 수행합니다.
 
 1. 다음으로 이동 **도구** > **에셋** > **메타데이터 스키마**.
-1. 편집할 메타데이터 스키마 양식을 선택하고 을(를) 클릭합니다. **편집** 또는 메타데이터 스키마를 처음부터 만듭니다.
+1. 편집할 메타데이터 스키마 양식을 선택하고 **편집** 또는 메타데이터 스키마를 처음부터 만듭니다.
 1. 편집하고 선택할 메타데이터 스키마 양식 필드를 선택합니다 **설정** 오른쪽 패널의 탭입니다.
-1. 위치 [!DNL Workfront] 사용자 정의 양식 필드 [!DNL Workfront] 선택한 AEM 속성에 매핑할 필드입니다. 사용 가능한 옵션은 다음과 같습니다.
+1. 위치 [!DNL Workfront] 사용자 정의 양식 필드 [!DNL Workfront] 선택한 AEM 속성에 매핑할 필드. 사용 가능한 옵션은 다음과 같습니다.
 
    * 문서 사용자 정의 양식 필드
    * 프로젝트 사용자 정의 양식 필드

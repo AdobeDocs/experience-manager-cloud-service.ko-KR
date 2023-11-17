@@ -2,10 +2,10 @@
 title: 콘솔용 키보드 단축키
 description: 이러한 키보드 단축키를 사용하여 작성할 때 시간을 절약합니다.
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
-workflow-type: ht
-source-wordcount: '376'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '378'
+ht-degree: 94%
 
 ---
 
@@ -65,7 +65,7 @@ AEM은 자주 사용되는 브라우저에서 이미 사용되고 있는 공통�
 
 ## 키보드 단축키 비활성화 {#deactivating-keyboard-shortcuts}
 
-AEM은 자주 사용하는 일부 기능(편집, 속성, 복사/붙여넣기, 다양한 사이드 레일 메뉴 표시 등)에 대한 키보드 단축키를 제공합니다.
+AEM에서는 일반적으로 사용되는 일부 기능(편집, 속성, 복사/붙여넣기, 다양한 사이드 레일 메뉴 표시 등)에 대한 키보드 단축키를 제공합니다.
 
 키보드 단축키를 사용하지 않거나 특정 접근성 요구 사항이 없는 사용자의 경우 모든 키보드 단축키를 비활성화할 수 있습니다.
 

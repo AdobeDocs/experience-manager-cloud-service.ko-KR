@@ -2,9 +2,9 @@
 title: WAF 규칙이 포함된 트래픽 필터 규칙
 description: 웹 애플리케이션 방화벽(WAF)이 포함된 트래픽 필터 규칙 구성
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: a129c188e9ec6871c86245acb5f0bf0333fdc340
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3441'
+source-wordcount: '3435'
 ht-degree: 97%
 
 ---
@@ -112,8 +112,8 @@ Edge에서 Adobe Managed CDN은 대규모 및 반사/증폭 공격(레이어 3 �
 
 1. RDE 이외의 환경 유형의 경우 Cloud Manager에서 타겟팅 배포 구성 파이프라인을 만드십시오.
 
-   * [프로덕션 파이프라인에 대한 자세한 내용은 이 문서를 참조하십시오.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-   * [비프로덕션 파이프라인에 대한 자세한 내용은 이 문서를 참조하십시오.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+   * [프로덕션 파이프라인 구성 을 참조하십시오](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+   * [비프로덕션 파이프라인 구성 을 참조하십시오](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
 RDE의 경우 명령이 사용되지만 RDE는 현재 지원되지 않습니다.
 
@@ -587,7 +587,7 @@ Adobe는 Cloud Manager를 통해 다운로드한 CDN 로그를 수집하기 위�
 
 ## 권장 스타터 규칙 {#recommended-starter-rules}
 
-아래 권장 규칙을 시작하려는 `cdn.yaml`에 복사할 수 있습니다. 로그 모드에서 시작하여 트래픽을 분석한 다음 결과에 만족하면 차단 모드로 변경하십시오. 웹 사이트 라이브 트래픽의 고유 특성에 따라 규칙을 수정할 수 있습니다.
+아래 권장 규칙을 시작하려는 `cdn.yaml`에 복사할 수 있습니다. 로그 모드에서 시작하여 트래픽을 분석한 다음 결과에 만족하면 차단 모드로 변경하십시오. 웹 사이트의 라이브 트래픽에 대한 고유한 특성을 기반으로 규칙을 수정할 수 있습니다.
 
 ```
 kind: "CDN"

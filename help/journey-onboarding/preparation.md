@@ -2,10 +2,10 @@
 title: 온보딩 준비
 description: 온보딩 프로세스가 시작되기 전에 시스템 관리자가 시스템에 로그인하기 위해 이해해야 하는 몇 가지 준비 단계가 있습니다.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 96%
+source-wordcount: '760'
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 AEM as a Cloud Service는 다양한 솔루션, 추가 기능 및 배포 모델을 사용할 수 있는 강력하고 유연한 도구입니다. 조직에서 사용할 수 있는 솔루션은 온보딩 프로세스의 시작을 안내하는 Adobe와의 약정에 정의되어 있습니다.
 
-이 문서를 읽은 후에는 다음 사항을 이해할 수 있습니다.
+이 문서를 읽고 나면 다음을 이해할 수 있습니다.
 
 * Adobe와의 약정에서 정의하는 내용
 * Adobe가 제공하는 항목
@@ -34,7 +34,7 @@ AEM as a Cloud Service는 다양한 솔루션, 추가 기능 및 배포 모델�
 
 ## 약정 {#contract}
 
-AEM as a Cloud Service에 대한 온보딩은 조직과 Adobe 간에 서명된 약정으로 시작됩니다. 이는 약정에서 다음과 같이 Adobe와 조직 간의 여러 중요한 계약을 지정하기 때문입니다.
+AEM as a Cloud Service에 대한 온보딩은 조직과 Adobe 간에 서명된 약정으로 시작됩니다. 그 이유는 계약이 다음과 같이 Adobe과 조직 간의 몇 가지 중요한 계약을 지정하기 때문입니다.
 
 * 조직에서 사용할 수 있는 솔루션 및 추가 기능
 * 액세스할 수 있는 환경의 수와 유형

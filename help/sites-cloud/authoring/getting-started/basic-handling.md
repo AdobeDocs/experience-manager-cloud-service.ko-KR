@@ -2,10 +2,10 @@
 title: 기본 처리
 description: AEM 탐색 및 기본 사용 방법 익히기
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2970'
-ht-degree: 97%
+source-wordcount: '2943'
+ht-degree: 92%
 
 ---
 
@@ -31,21 +31,21 @@ AEM 사용자 인터페이스는 터치가 활성화되어 있습니다. 터치 
 
 ![탐색 패널](/help/sites-cloud/authoring/assets/navigation.png)
 
-AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트** 콘솔을 기반으로 합니다. **사이트**&#x200B;를 클릭하거나 탭하여 시작합니다.
+AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트** 콘솔을 기반으로 합니다. 선택 **사이트** 시작합니다.
 
 ## 제품 탐색 {#product-navigation}
 
-사용자가 콘솔에 처음 액세스할 때마다 제품 탐색 튜토리얼이 시작됩니다. 잠시 시간을 내어 튜토리얼을 클릭하거나 탭하여 AEM 기본 처리 방법에 대한 개요를 확인하십시오.
+사용자가 콘솔에 처음 액세스할 때마다 제품 탐색 튜토리얼이 시작됩니다. 잠시 시간을 내어 AEM 기본 처리에 대한 개요를 살펴보십시오.
 
 ![탐색 튜토리얼](/help/sites-cloud/authoring/assets/tutorial.png)
 
-개요의 다음 페이지로 이동하려면 **다음**&#x200B;을 클릭하거나 탭합니다. 닫으려면 **닫기**&#x200B;를 클릭 또는 탭하거나 개요 대화 상자의 외부를 클릭 또는 탭합니다.
+선택 **다음** 개요의 다음 페이지로 이동합니다. 선택 **닫기** 닫으려면 개요 대화 상자의 외부를 선택하십시오.
 
 모든 슬라이드를 표시하지 않거나 **다시 표시 안 함** 옵션을 선택하지 않은 한 이후에 콘솔에 액세스하면 개요가 다시 시작됩니다.
 
 ## 전역 탐색 {#global-navigation}
 
-전역 탐색 패널을 사용하여 콘솔 간을 탐색할 수 있습니다. 화면의 왼쪽 상단에 있는 Adobe Experience Manager 링크를 클릭하거나 탭하면 전체 화면 드롭다운으로 트리거됩니다.
+전역 탐색 패널을 사용하여 콘솔 간을 탐색할 수 있습니다. 화면 왼쪽 상단에서 Adobe Experience Manager 링크를 선택하면 전체 화면 드롭다운으로 트리거됩니다.
 
 **닫기**&#x200B;를 클릭하거나 탭하여 전역 탐색 패널을 닫고 이전 위치로 돌아갈 수 있습니다.
 
@@ -79,7 +79,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
 ## 도구 패널 {#tools-panel}
 
-도구 패널에는 유사한 도구 콘솔을 함께 그룹화하는 다양한 범주가 포함된 사이드 패널이 있습니다. 도구 콘솔에서는 웹 사이트, 디지털 자산 및 콘텐츠 저장소의 다른 측면을 관리하는 데 도움이 되는 많은 전문 도구 및 콘솔에 액세스할 수 있습니다.<!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+도구 패널에는 유사한 도구 콘솔을 함께 그룹화하는 다양한 범주가 포함된 사이드 패널이 있습니다. 도구 콘솔에서는 웹 사이트, 디지털 자산 및 콘텐츠 저장소의 다른 측면을 관리하는 데 도움이 되는 몇 가지 전문 도구 및 콘솔에 액세스할 수 있습니다. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
 ![도구 패널](/help/sites-cloud/authoring/assets/tools-panel.png)
 
@@ -304,7 +304,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
    * 탭하거나 클릭하면 리소스 이름과 V자형 화살표가 강조 표시됩니다.
    * 클릭하거나 탭한 리소스의 하위 항목은 클릭하거나 탭한 리소스의 오른쪽에 있는 열에 표시됩니다.
-   * 하위 항목이 없는 리소스 이름을 탭하거나 클릭하면 해당 세부 정보가 마지막 열에 표시됩니다.
+   * 하위 항목이 없는 리소스 이름을 선택하면 해당 세부 정보가 마지막 열에 표시됩니다.
 
 * 썸네일을 탭하거나 클릭하면 리소스가 선택됩니다.
 
@@ -331,7 +331,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
    * 페이지 제목
    * 중요한 날짜(예: 마지막 편집 날짜, 마지막 게시 날짜)
    * 페이지가 잠긴 경우 숨겨진 Live Copy 또는 Live Copy 일부
-   * 필요한 경우 워크플로의 일부로 작업을 수행해야 합니다
+   * 필요한 경우 워크플로우의 일부로 수행해야 합니다
       * 필요한 작업을 나타내는 마커는 [받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)의 항목과 관련되어 있을 수 있습니다.
 
 * 또한 [빠른 작업](#quick-actions)은 선택과 같은 보기, 편집과 같은 일반적인 작업에서 사용할 수 있습니다.
@@ -352,12 +352,12 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
    * 목록의 모든 항목을 선택하면 이 확인란이 선택된 것으로 표시됩니다.
 
-      * 확인란을 클릭하거나 탭하면 모든 항목이 선택 해제됩니다.
+      * 확인란을 선택하여 모두 선택 취소합니다.
 
    * 일부 항목만 선택한 경우 빼기(-) 기호가 표시됩니다.
 
-      * 확인란을 클릭하거나 탭하여 모두 선택합니다.
-      * 확인란을 다시 클릭하거나 탭하면 모든 항목이 선택 해제됩니다.
+      * 확인란을 선택하여 모두 선택합니다.
+      * 확인란을 다시 선택하면 모든 항목이 선택 해제됩니다.
 
 * [보기] 버튼 아래에 있는 **보기 설정** 옵션을 사용하여 표시할 열을 선택합니다. 다음 열이 표시될 수 있습니다.
 
@@ -383,7 +383,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
   ![열 순서](/help/sites-cloud/authoring/assets/column-order.png)
 
-  수직 선택 막대를 클릭하거나 탭하고 항목을 목록의 새 위치로 드래그합니다.
+  수직 선택 막대를 선택하고 항목을 목록의 새 위치로 드래그합니다.
 
   ![목록 순서 지정](/help/sites-cloud/authoring/assets/order-list.png)
 
@@ -471,7 +471,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
 >[!TIP]
 >
->템플릿으로 새 사이트를 만들고 테마를 맞춤화하는 프로세스에 대한 전체적인 설명은 [빠른 사이트 생성 여정](/help/journey-sites/quick-site/overview.md)에서 확인할 수 있습니다.
+>템플릿으로 사이트를 만들고 테마를 맞춤화하는 프로세스에 대한 전체적인 설명은 [빠른 사이트 생성 여정](/help/journey-sites/quick-site/overview.md)에서 확인할 수 있습니다.
 
 ### 필터 {#filter}
 

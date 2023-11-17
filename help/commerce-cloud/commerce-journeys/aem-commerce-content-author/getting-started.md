@@ -2,9 +2,9 @@
 title: CIF 작성 시작하기
 description: CIF 작성 시작하기.
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '778'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ Adobe Experience Manager(AEM) CIF 작성에 대해 알아봅니다.
 
 CIF은 컨텍스트를 종료하지 않고 실시간 제품 데이터에 액세스할 수 있는 기능으로 유니버설 편집기를 확장합니다.
 
-사이드 패널을 열고 드롭다운에서 &#39;Products&#39;를 선택합니다.
+사이드 패널을 열고 드롭다운 목록에서 &#39;제품&#39;을 선택합니다.
 ![제품 유형 선택](assets/asset-finder-overview.png)
 
 제품 카탈로그를 검색하거나 전체 텍스트 검색 필드를 사용하여 제품을 찾을 수 있습니다.

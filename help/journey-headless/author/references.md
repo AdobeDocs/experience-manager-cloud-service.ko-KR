@@ -2,10 +2,10 @@
 title: 콘텐츠 조각의 참조 사용에 대해 알아보기
 description: 콘텐츠, 다른 조각과 자산(미디어)의 콘텐츠 조각에서 참조를 사용하는 방법에 대해 알아봅니다. Headless CMS 작성에서 중첩된 조각의 필요성과 메커니즘을 소개합니다.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 97%
+source-wordcount: '708'
+ht-degree: 95%
 
 ---
 
@@ -58,7 +58,7 @@ AEMaaCS를 통한 작성, 특히 콘텐츠 조각 작성에 대한 소개와 함
 * 개인
 * 상
 
-매우 간단한 것처럼 보이지만 회사에는 CEO와 직원이 있습니다.이 모두 사람이고 각각은 개인으로 정의됩니다.
+간단해 보이지만, 회사는 CEO와 직원을 모두 보유하고 있습니다....이 모두 사람이고 각각은 개인으로 정의됩니다.
 
 개인에게 상 한 개(또는 두 개)가 제공될 수 있습니다.
 

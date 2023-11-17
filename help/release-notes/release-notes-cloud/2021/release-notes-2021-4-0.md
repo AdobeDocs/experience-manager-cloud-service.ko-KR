@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.4.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.4.0 릴리스 정보입니다.'
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1533'
 ht-degree: 41%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 41%
 
 * 속성 페이지에서 메타데이터를 업데이트하도록 선택한 경우 스키마에서 제공하는 옵션이 많으면 인터페이스가 느리게 응답합니다. (CQ-4318538)
 
-* 한 줄 텍스트 필드에 메타데이터 값을 업데이트하고 저장하는 동안 드롭다운 메뉴에서 편집 기능이 비활성화된 경우에도 드롭다운 메뉴의 값이 삭제됩니다. (CQ-4317077)
+* 한 줄 텍스트 필드에 메타데이터 값을 업데이트하고 저장하는 동안 드롭다운 목록 메뉴에서 편집을 비활성화하더라도 드롭다운 목록 메뉴의 값이 삭제됩니다. (CQ-4317077)
 
 * 줄임표를 주석으로 사용하여 에셋을 검토할 수 있습니다. 작은 타원을 사용하면 타원이 인쇄 버전의 주석 번호와 겹칩니다. (CQ-4316792)
 
@@ -97,7 +97,7 @@ ht-degree: 41%
 
   고급 머신 러닝 알고리즘으로 더욱 강력해진 Adobe Sign의 정부 ID 프로세스는 고품질의 수령인 신원 인증을 확보할 수 있는 능력을 전 세계 기업에 제공합니다. 이제 Adobe Sign이 활성화된 적응형 양식에서 정부 ID 신원 인증 방법을 사용할 수 있습니다.
 
-  정부 ID는 수신자에게 다음을 지시하는 프리미엄 신원 인증 방법입니다 [정부에서 발급한 신분증(운전면허증, 주민등록증, 여권) 이미지 업로드](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)를 누르고 해당 문서가 진짜인지 평가합니다.
+  정부 ID는 수신자에게 다음을 지시하는 프리미엄 신원 인증 방법입니다 [정부에서 발급한 신분증(운전면허증, 주민등록증, 여권) 이미지 업로드](https://helpx.adobe.com/kr/in/sign/using/adobesign-authentication-government-id.html)를 누르고 해당 문서가 진짜인지 평가합니다.
 
 * **비동기 적응형 양식 제출을 위한 양식 내 서명 경험 사용 지원**
 
@@ -109,7 +109,7 @@ ht-degree: 41%
 
 * **JSON 유형 변수에 대한 값을 설정하기 위해 리터럴 옵션을 사용하도록 지원**
 
-  리터럴 옵션을 사용하여 AEM Workflow의 변수 설정 단계에서 JSON 유형 변수의 값을 설정할 수 있습니다. 리터럴 옵션을 사용하면 문자열 형태로 JSON을 지정할 수 있습니다.
+  리터럴 옵션을 사용하여 AEM Workflow의 변수 설정 단계에서 JSON 유형 변수의 값을 설정할 수 있습니다. 리터럴 옵션을 사용하면 문자열 포맷으로 JSON을 지정할 수 있습니다.
 
 * **로컬 개발 환경을 사용하여 기록 문서(DoR) 생성**
 

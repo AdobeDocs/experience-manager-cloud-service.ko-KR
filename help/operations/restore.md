@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 콘텐츠 복원
 description: Cloud Manager를 사용하여 백업에서 AEM as a Cloud Service 콘텐츠를 복원하는 방법에 대해 알아봅니다.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 94%
+source-wordcount: '1158'
+ht-degree: 81%
 
 ---
 
@@ -21,7 +21,7 @@ Cloud Manager를 사용하여 백업에서 AEM as a Cloud Service 콘텐츠를 �
 >* 이 기능은 개발 환경에서만 사용할 수 있습니다.
 >* 콘텐츠 복원은 프로그램당 월 2회로 제한됩니다.
 >
->AEM as a Cloud Service의 기존 백업 및 복원 시스템에 대한 자세한 내용은 [AEM as a Cloud Service의 백업 및 복원](/help/operations/backup.md) 문서를 참조하십시오.
+>AEMas a Cloud Service 용 기존 백업 및 복원 시스템에 대한 자세한 내용은 [AEM as a Cloud Service으로 백업 및 복원](/help/operations/backup.md).
 
 ## 개요 {#overview}
 
@@ -58,7 +58,7 @@ Cloud Manager는 콘텐츠를 복원할 수 있는 두 가지 유형의 백업�
 
    * 또는 특정 환경의 환경 세부 정보 페이지에서 **콘텐츠 복원** 탭으로 바로 이동할 수 있습니다.
 
-1. 환경 세부 정보 페이지의 **콘텐츠 복원** 탭에서는 먼저 **복원할 시간** 드롭다운에서 복원 시간대를 선택합니다.
+1. 다음에서 **콘텐츠 복원** 환경 세부 정보 페이지의 탭에서는 먼저 아래에서 복원 시간대를 선택합니다 **복원 시간** 드롭다운 목록입니다.
 
    1. **지난 24시간**&#x200B;을 선택한 경우 인접한 **시간** 필드를 사용하여 지난 24시간 내에서 정확한 복원 시간을 지정할 수 있습니다.
 
@@ -72,13 +72,13 @@ Cloud Manager는 콘텐츠를 복원할 수 있는 두 가지 유형의 백업�
 
    ![사용 가능한 백업](assets/backup-available.png)
 
-1. 정보 아이콘을 사용하여 복원하고자 하는 백업을 찾아 해당 백업에 포함된 코드 및 AEM 릴리스 버전과 관련된 정보를 확인하고 [백업 선택](#choosing-the-right-backup) 시 복원이 미치는 영향을 고려합니다.
+1. 정보 아이콘을 사용하여 복원할 백업을 찾아 해당 백업에 포함된 코드 및 AEM 릴리스 버전과 관련된 정보를 확인하고 다음과 같은 경우 복원이 미치는 영향을 고려합니다 [백업을 선택합니다.](#choosing-the-right-backup)
 
    ![백업 정보](assets/backup-info.png)
 
-   * 복원 옵션에 대해 표시되는 타임스탬프는 사용자의 컴퓨터 시간대를 기준으로 합니다.
+   * 복원 옵션에 대해 표시되는 타임스탬프는 모두 사용자의 컴퓨터 시간대를 기반으로 합니다.
 
-1. 복원 프로세스를 시작하려면 복원할 백업을 나타내는 행 오른쪽 끝에 있는 **복원** 아이콘을 클릭합니다.
+1. 다음을 클릭합니다. **복원** 복원 프로세스를 시작하기 위해 복원할 백업을 나타내는 행의 오른쪽 끝에 있는 아이콘입니다.
 
 1. 다음에서 세부 사항을 검토합니다. **콘텐츠 복원** 대화 상자를 클릭하여 요청을 확인합니다. **복원**.
 

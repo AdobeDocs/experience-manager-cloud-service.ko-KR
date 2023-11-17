@@ -2,10 +2,10 @@
 title: Cloud Manager FAQ
 description: AEM as a Cloud Service의 Cloud Manager에 대해 가장 자주 묻는 질문에 대한 답변을 살펴보십시오.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -108,7 +108,7 @@ Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventA
    * 다음 단계에 따라 로컬 설정에서 문제를 시뮬레이션하십시오.
       1. 최신 AEM SDK jar를 사용하여 로컬로 작성자 및 게시 인스턴스를 설치합니다.
       1. 작성자 인스턴스에 로그온합니다.
-      1. **도구** -> **배포** -> **배포**&#x200B;로 이동합니다.
+      1. 다음으로 이동 **도구** > **배포** > **배포**.
       1. 코드베이스의 일부인 콘텐츠 패키지를 배포하고 대기열이 오류와 함께 차단되는지 확인합니다.
 
 ## aio 명령을 사용하여 변수를 설정할 수 없습니다. 어떻게 해야 합니까? {#set-variable}

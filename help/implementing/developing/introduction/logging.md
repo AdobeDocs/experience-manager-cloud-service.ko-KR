@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service에 대한 로깅
 description: AEM용 로깅을 as a Cloud Service으로 사용하여 중앙 로깅 서비스의 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 9d1aab8f615f9e6aa9751fe978a56c915c9a8797
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2757'
+source-wordcount: '2753'
 ht-degree: 9%
 
 ---

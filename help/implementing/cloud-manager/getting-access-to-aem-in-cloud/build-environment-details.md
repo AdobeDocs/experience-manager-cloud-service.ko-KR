@@ -2,9 +2,9 @@
 title: 빌드 환경
 description: Cloud Manager의 빌드 환경과 코드 빌드 및 테스트 방법에 대해 알아봅니다.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '1004'
 ht-degree: 96%
 
 ---
@@ -179,7 +179,7 @@ Maven `pom.xml` 파일 내에서 사용할 경우, 일반적으로 다음과 유
 
 ## 추가 시스템 패키지 설치 {#installing-additional-system-packages}
 
-완벽한 작동을 위해서는 일부 빌드에 추가 시스템 패키지를 설치해야 합니다. 예를 들어 빌드는 Python 또는 Ruby 스크립트를 호출할 수 있으며 적절한 언어 인터프리터가 설치되어야 합니다. 이 작업은 APT를 호출하기 위해 `pom.xml`에서 [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/)를 호출하여 수행할 수 있습니다. 이 실행은 일반적으로 Cloud Manager 전용 Maven 프로필로 래핑해야 합니다. 이 예에서는 Python을 설치합니다.
+완벽한 작동을 위해서는 일부 빌드에 추가 시스템 패키지를 설치해야 합니다. 예를 들어 빌드는 Python 또는 Ruby 스크립트를 호출할 수 있으며 적절한 언어 인터프리터가 설치되어 있어야 합니다. 이 작업은 APT를 호출하기 위해 `pom.xml`에서 [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/)를 호출하여 수행할 수 있습니다. 이 실행은 일반적으로 Cloud Manager 전용 Maven 프로필로 래핑해야 합니다. 이 예에서는 Python을 설치합니다.
 
 ```xml
         <profile>

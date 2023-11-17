@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2490'
 ht-degree: 15%
@@ -308,7 +308,7 @@ IMS 계정을 구성하려면:
 
 1. 오른쪽 상단에서 사용자 아이콘을 클릭한 다음 을 클릭합니다 **[!UICONTROL 내 환경 설정]**. 다음 **[!UICONTROL 사용자 환경 설정]** 창이 열립니다.
 
-1. 원하는 을 선택합니다 **[!UICONTROL Stock 구성]** 드롭다운 목록에서 **[!UICONTROL Accept]** 구성을 활성화합니다.
+1. 원하는 을 선택합니다 **[!UICONTROL Stock 구성]** 드롭다운 목록에서 을(를) 클릭하고 **[!UICONTROL Accept]** 구성을 활성화합니다.
 
    ![사용자 환경 설정](assets/aem-stock-preferences.png)
 

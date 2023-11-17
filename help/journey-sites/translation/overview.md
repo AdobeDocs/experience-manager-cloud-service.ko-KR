@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '931'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '927'
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ AEM Sites 및 번역 요구 사항을 잘 알고 있다면 이 여정에 대한 
 
 ## AEM 설명서 여정 {#documentation-journeys}
 
-[설명서 여정](/help/journey-documentation/documentation-journeys.md)은 AEM을 처음 접할 수 있는 독자가 최소한의 사전 주제 또는 AEM 지식을 전제로 비즈니스 문제를 처음부터 끝까지 이해하고 해결하는 데 도움이 되는 묘사를 제공하여 다양하고 복잡한 주제와 기능을 결합합니다.
+[설명서 여정](/help/journey-documentation/documentation-journeys.md) AEM을 처음 접할 수 있는 독자가 최소한의 사전 주제 또는 AEM 지식을 전제로 비즈니스 문제를 처음부터 끝까지 이해하고 해결하는 데 도움이 되는 묘사를 제공하여 다양하고 복잡한 주제와 기능을 결합합니다.
 
 설명서 여정은 Adobe의 최신 연구, Adobe 컨설턴트의 입증된 구현 경험 및 고객 프로젝트의 피드백을 통해 제공되는 모범 사례 원칙을 중심으로 설계되었습니다.
 
@@ -47,7 +47,7 @@ Adobe가 AEM을 통해 AEM 관련 사이트 비즈니스 사례를 해결하는 
 | 관리자 | AEM의 기본 설정 및 구성 관리 | 번역 전문가는 관리자와 함께 작업하여 번역 커넥터 설치와 같은 번역에 필요한 구성 변경을 수행합니다. |
 | 콘텐츠 설계자 | 사이트로 제공할 데이터에 대한 요구 사항 분석 및 이러한 데이터의 구조 정의 | 번역 전문가는 콘텐츠 설계자와 함께 작업하여 콘텐츠를 간편하게 번역할 수 있도록 콘텐츠의 구성을 정의합니다. |
 
-이 여정에서 제공하는 정보는 모든 담당자에게 유용하지만 일부 정보는 특정 역할에 불필요할 수 있습니다. [추가 역할을 다루는 다가오는 여정](/help/journey-documentation/documentation-journeys.md#journeys)은 추후에 업데이트될 예정입니다.
+이 여정의 정보는 모든 담당자에게 유용할 수 있지만 일부 정보는 특정 역할에게 불필요할 수 있습니다. [추가 역할을 다루는 다가오는 여정](/help/journey-documentation/documentation-journeys.md#journeys)은 추후에 업데이트될 예정입니다.
 
 ## Sites 번역 여정 {#the-journey}
 

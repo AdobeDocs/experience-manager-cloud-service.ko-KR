@@ -2,10 +2,10 @@
 title: Universal Editor로 콘텐츠 게시
 description: Universal Editor에서 콘텐츠를 게시하는 방법과 앱에서 게시된 콘텐츠를 처리하는 방법에 대해 알아봅니다.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 100%
+source-wordcount: '359'
+ht-degree: 94%
 
 ---
 
@@ -34,4 +34,4 @@ Universal Editor를 통한 게시가 AEM과 다른 부분은 편집기 자체가
 
 Universal Editor의 목적은 특정 패턴을 적용하지 않고 구현을 위한 모든 것을 간단하고 복잡하지 않게 유지하면서 완전히 분리된 방식으로 목표를 달성할 수 있도록 하는 것입니다.
 
-마찬가지로 Universal Editor는 특정 프로젝트에서 콘텐츠를 게재할 계층을 결정하는 방법에 대한 요구 사항을 제공하지 않습니다. 이를 통해 다양한 가능성을 실현하고 프로젝트에서 자체 요구 사항에 가장 적합한 솔루션을 결정할 수 있도록 합니다.
+마찬가지로 Universal Editor는 특정 프로젝트에서 콘텐츠를 게재할 계층을 결정하는 방법에 대한 요구 사항을 제공하지 않습니다. 오히려 몇 가지 가능성을 지원하며 프로젝트에서 자체 요구 사항에 가장 적합한 솔루션을 결정할 수 있습니다.

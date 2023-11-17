@@ -1,9 +1,9 @@
 ---
 title: AMS를 Adobe Experience Manager as a Cloud Service Dispatcher 구성으로 변환
 description: AMS를 Adobe Experience Manager as a Cloud Service Dispatcher 구성으로 변환
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1282'
 ht-degree: 39%
 
 ---

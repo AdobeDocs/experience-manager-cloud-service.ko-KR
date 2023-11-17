@@ -2,9 +2,9 @@
 title: Screens as a Cloud Service에 대한 사용자 정의 구성 요소 개발
 description: 다음 자습서에서는 AEM Screens에 대한 사용자 지정 구성 요소를 만드는 단계를 안내합니다. AEM Screens은 다른 AEM 제품의 많은 기존 디자인 패턴과 기술을 재사용합니다. 이 튜토리얼에서는 AEM Screens용 을 개발할 때 차이점과 특별한 고려 사항을 강조 표시합니다.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2106'
+source-wordcount: '2105'
 ht-degree: 3%
 
 ---
@@ -77,7 +77,7 @@ Screens 프로젝트의 소스 코드는 일반적으로 다중 모듈 Maven 프
    * `/content/dam/we-retail-run`
    * `/content/screens/we-retail-run`
 
-   이 패키지에는 프로젝트에 필요한 시작 콘텐츠 및 구성 구조가 포함되어 있습니다. **`/conf/we-retail-run`** We.Retail 실행 프로젝트에 대한 모든 구성을 포함합니다. **`/content/dam/we-retail-run`** 에는 프로젝트에 대한 디지털 에셋 시작이 포함됩니다. **`/content/screens/we-retail-run`** 에는 Screens 콘텐츠 구조가 포함되어 있습니다. 이러한 모든 경로 아래의 콘텐츠는 주로 AEM에서 업데이트됩니다. 환경(로컬, 개발, 스테이지, 프로덕션) 간의 일관성을 향상시키기 위해 기본 콘텐츠 구조가 소스 제어에 저장되는 경우가 많습니다.
+   이 패키지에는 프로젝트에 필요한 시작 콘텐츠 및 구성 구조가 포함되어 있습니다. **`/conf/we-retail-run`** We.Retail 실행 프로젝트에 대한 모든 구성을 포함합니다. **`/content/dam/we-retail-run`** 에는 프로젝트에 대한 디지털 에셋 시작이 포함됩니다. **`/content/screens/we-retail-run`** 에는 Screens 콘텐츠 구조가 포함되어 있습니다. 이러한 경로 아래의 콘텐츠는 주로 AEM에서 업데이트됩니다. 환경(로컬, 개발, 스테이지, 프로덕션) 간의 일관성을 향상시키기 위해 기본 콘텐츠 구조가 소스 제어에 저장되는 경우가 많습니다.
 
 1. **AEM Screens > We.Retail 실행 프로젝트로 이동합니다.**
 
@@ -125,7 +125,7 @@ AEM Screens에는 기존 WCM Sites 구성 요소에 대해 반드시 true가 아
    <!--/* production: preview authoring mode + unspecified mode (that is, on publish) */-->
    <sly data-sly-test.production="${wcmmode.preview || wcmmode.disabled}" data-sly-include="production.html" />
    
-   <!--/* edit: any other authoring mode, that is, edit, design, scaffolding, etc. */-->
+   <!--/* edit: any other authoring mode, that is, edit, design, scaffolding, and so on. */-->
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
 

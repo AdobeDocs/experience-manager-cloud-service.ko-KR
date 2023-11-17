@@ -2,9 +2,9 @@
 title: 사용자 정의 오류 페이지
 description: AEM에는 사용자 지정할 수 있는 HTTP 오류를 처리하기 위한 표준 오류 핸들러가 포함되어 있습니다.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '571'
 ht-degree: 2%
 
 ---

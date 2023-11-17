@@ -2,9 +2,9 @@
 title: Eclipse용 AEM 개발자 도구
 description: Apache Sling용 Eclipse 플러그인을 기반으로 하는 Eclipse 플러그인인 AEM Developer Tools for Eclipse를 사용하는 방법에 대해 알아봅니다.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1191'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,7 @@ Eclipse에서 관점은 창 내에서 사용할 수 있는 작업 및 보기를 
 
 _Eclipse용 Experience Manager 개발 도구_ AEM 프로젝트 및 인스턴스를 완벽하게 제어할 수 있는 AEM Perspective를 제공합니다. AEM Perspective를 열려면
 
-1. Eclipse 메뉴 모음에서 를 선택합니다. **창** -> **원근감** -> **원근감 열기** -> **기타**.
+1. Eclipse 메뉴 모음에서 를 선택합니다. **창** > **원근감** > **원근감 열기** > **기타**.
 1. 선택 **AEM** 대화 상자에서 다음을 클릭합니다. **열기**.
 
 ![Eclipse의 AEM 관점](assets/eclipse-aem-perspective.png)
@@ -83,7 +83,7 @@ _Eclipse용 Experience Manager 개발 도구_ AEM 프로젝트 및 인스턴스�
 
    >[!NOTE]
    >
-   >m2eclipse에서 Archetype 카탈로그를 스캔해야 하므로 이 단계는 잠시 걸릴 수 있습니다.
+   >m2eclipse는 Archetype 카탈로그를 스캔해야 하므로 이 단계는 잠시 걸릴 수 있습니다.
 
 1. 선택 `com.adobe.granite.archetypes : sample-project-archetype : <highest-number>` 메뉴에서 을(를) 클릭한 다음 **다음**.
 
@@ -139,7 +139,7 @@ _Eclipse용 Experience Manager 개발 도구_ AEM 프로젝트 및 인스턴스�
 1. 그런 다음 동일한 작업을 수행합니다 `PROJECT.ui.content` 콘텐츠 폴더를 다음 패키지 중 하나로 바꿉니다.
 
    1. 프로젝트 탐색기 패널에서 를 펼칩니다. `PROJECT.ui.content` > `src` > `main` > `content` > `jcr_root` > `content`.
-   1. 더 깊은 콘텐츠 폴더를 마우스 오른쪽 단추로 클릭하고 **표시 위치** -> **시스템 탐색기**.
+   1. 더 깊은 콘텐츠 폴더를 마우스 오른쪽 단추로 클릭하고 **표시 위치** > **시스템 탐색기**.
    1. 이제 표시되어야 하는 콘텐츠 폴더를 삭제하고 콘텐츠 패키지의 콘텐츠 폴더를 여기에 배치합니다.
    1. Eclipse에서 `PROJECT.ui.content` 프로젝트 및 선택 **새로 고침**.
 
@@ -194,7 +194,7 @@ _Eclipse용 Experience Manager 개발 도구_ AEM 프로젝트 및 인스턴스�
 
 완료되면 인스턴스에서 패키지를 실행해야 하며 저장 시 모든 변경 사항이 인스턴스에 자동으로 동기화됩니다.
 
-프로젝트에서 패키지를 다시 빌드하려면 를 마우스 오른쪽 단추로 클릭합니다. `PROJECT.ui.apps` 또는 `PROJECT.ui.content` 및 선택 **다음으로 실행** -> **Maven 설치**.
+프로젝트에서 패키지를 다시 빌드하려면 를 마우스 오른쪽 단추로 클릭합니다. `PROJECT.ui.apps` 또는 `PROJECT.ui.content` 및 선택 **다음으로 실행** > **Maven 설치**.
 
 이제 내부에 패키지를 사용하여 타겟 폴더를 만들었습니다(예: `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
@@ -206,7 +206,7 @@ _Eclipse용 Experience Manager 개발 도구_ AEM 프로젝트 및 인스턴스�
 
 1. 생성된 모든 프로젝트를 선택합니다.
 1. 마우스 오른쪽 버튼을 클릭합니다.
-1. 컨텍스트 메뉴에서 을(를) 선택합니다 **Maven** -> **프로젝트 업데이트**.
+1. 컨텍스트 메뉴에서 을(를) 선택합니다 **Maven** > **프로젝트 업데이트**.
 1. 확인 **스냅샷/릴리스 강제 업데이트**.
 1. **확인**&#x200B;을 클릭합니다.
 

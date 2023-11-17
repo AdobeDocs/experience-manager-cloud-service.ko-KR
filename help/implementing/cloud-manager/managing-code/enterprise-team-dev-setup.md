@@ -2,10 +2,10 @@
 title: 엔터프라이즈 개발 팀 설정
 description: 기업 개발 팀을 설정 및 확장하는 방법과 AEM as a Cloud Service를 통해 개발 프로세스를 지원하는 방법을 알아봅니다.
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1437'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -41,7 +41,7 @@ Cloud Manager는 기업의 요구 사항에 맞게 조정할 수 있는 유연�
 
 기업마다 팀 설정, 프로세스 및 개발 워크플로 등의 요구 사항이 다릅니다. 아래에 설명된 설정은 Adobe에서 AEM as a Cloud Service를 기반으로 경험을 제공하는 여러 프로젝트에 사용됩니다.
 
-예를 들어 Adobe Photoshop 또는 Adobe Illustrator와 같은 Adobe Creative Cloud 애플리케이션에는 최종 사용자가 사용할 수 있는 튜토리얼, 샘플 및 안내서와 같은 콘텐츠 리소스가 포함되어 있습니다. 이 콘텐츠는 AEM Cloud 게시 계층에 API를 호출하여 구조화된 콘텐츠를 JSON 스트림으로 검색하고 [AEM as a Cloud Service의 CDN(콘텐츠 게재 네트워크)](/help/implementing/dispatcher/cdn.md#content-delivery)을 활용하여 최적의 성능으로 정형 및 비정형 콘텐츠를 모두 제공함으로써 Headless 방식으로 AEM as a Cloud Service를 사용하는 클라이언트 애플리케이션에서 사용됩니다.
+예를 들어 Adobe Photoshop 또는 Adobe Illustrator와 같은 Adobe Creative Cloud 애플리케이션에는 최종 사용자가 사용할 수 있는 튜토리얼, 샘플 및 안내서와 같은 콘텐츠 리소스가 포함되어 있습니다. 이 콘텐츠는 AEM Cloud 게시 계층에 API를 호출하여 구조화된 콘텐츠를 JSON 스트림으로 검색하고 를 사용하여 Headless 방식으로 AEM as a Cloud Service을 사용하는 클라이언트 애플리케이션에서 사용됩니다. [AEM as a Cloud Service의 CDN(Content Delivery Network)](/help/implementing/dispatcher/cdn.md#content-delivery) 정형 및 비정형 컨텐츠를 최적의 성능으로 제공할 수 있습니다.
 
 이 프로젝트에 기여하는 팀은 다음 프로세스를 따릅니다.
 

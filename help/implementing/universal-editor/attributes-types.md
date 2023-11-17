@@ -2,10 +2,10 @@
 title: 속성 및 유형
 description: Universal Editor에 필요한 데이터 속성 및 유형에 대해 알아봅니다.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 3b98543098f4125a7d7e5896e5aa46e441a40f32
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 100%
+source-wordcount: '679'
+ht-degree: 97%
 
 ---
 
@@ -20,7 +20,7 @@ Universal Editor에서 앱을 편집할 수 있으려면 앱이 적절하게 구
 
 >[!NOTE]
 >
->콘텐츠 유효성 검사는 서버측에서 수행됩니다. Universal Editor는 단순히 데이터 속성을 이용합니다. 모델/구조에 맞는지 확인하는 유효성 검사는 API 수준에서 처리해야 합니다.
+>콘텐츠 유효성 검사는 서버측에서 수행됩니다. Universal Editor는 단순히 데이터 속성을 이용합니다. 모델/구조에 적합한지 확인하는 작업은 API 수준에서 수행해야 합니다.
 
 ## 데이터 속성 {#data-properties}
 

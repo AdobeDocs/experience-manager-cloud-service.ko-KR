@@ -3,13 +3,13 @@ title: Markdown
 description: 콘텐츠 조각 편집기에서 Markdown 구문을 사용하여 손쉽게 페이지 작성 및 Headless 게재에 필요한 콘텐츠를 만들 수 있도록 하는 방법을 이해합니다.
 feature: Content Fragments
 role: User
-source-git-commit: af97fec754edae6216551763fd20cad5ee07179c
-workflow-type: ht
-source-wordcount: '557'
-ht-degree: 100%
+exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '559'
+ht-degree: 96%
 
 ---
-
 
 # Markdown {#markdown}
 

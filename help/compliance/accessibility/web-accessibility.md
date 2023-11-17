@@ -2,8 +2,8 @@
 title: Adobe Experience Manager as a Cloud Service 및 웹 접근성 지침
 description: Adobe Experience Manager as a Cloud Service 및 웹 액세서빌러티 지침 소개
 exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
-workflow-type: ht
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 100%
 
@@ -59,7 +59,7 @@ WCAG 2.1은 [접근성 수준과 이를 준수하는 방법에 대한 지침(관
 <!--
 * [Accessibility in Assets](/help/assets/accessibility.md)
 * [Creating Accessible Adaptive Forms](/help/forms/using/creating-accessible-adaptive-forms.md)
-  Adobe Experience Manager (AEM) includes a number of features and capabilities that enhance the usability of adaptive forms for users with different abilities. The solution also assists form authors in creating accessible adaptive forms.
+  Adobe Experience Manager (AEM) includes several features and capabilities that enhance the usability of adaptive forms for users with different abilities. The solution also assists form authors in creating accessible adaptive forms.
 -->
 
 ## Adobe에서의 접근성 {#accessibility-at-adobe}

@@ -2,10 +2,10 @@
 title: 변형 - 조각 콘텐츠 작성 (에셋 - 콘텐츠 조각)
 description: 변형에서 조각에 대한 콘텐츠를 작성한 다음 목적에 따라 해당 콘텐츠의 변형을 만들 수 있으므로 AEM의 Headless 콘텐츠를 어떻게 더 유연하게 만들 수 있는지 이해합니다.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2532'
-ht-degree: 57%
+source-wordcount: '2530'
+ht-degree: 56%
 
 ---
 
@@ -79,7 +79,7 @@ ht-degree: 57%
 
 ### 전체 화면 편집기 {#full-screen-editor}
 
-여러 줄 텍스트 필드를 편집할 때 전체 화면 편집기를 열 수 있습니다. 실제 텍스트 내에서 탭하거나 클릭한 후 다음 작업 아이콘을 선택합니다.
+여러 줄 텍스트 필드를 편집할 때 전체 화면 편집기를 열 수 있습니다. 실제 텍스트 내에서 를 선택한 다음 다음 작업 아이콘을 선택합니다.
 
 ![전체 화면 편집기 아이콘](assets/cfm-variations-03.png)
 

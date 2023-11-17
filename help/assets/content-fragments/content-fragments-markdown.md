@@ -4,10 +4,10 @@ description: 콘텐츠 조각 편집기에서 Markdown 구문을 사용하여 He
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 83%
+source-wordcount: '578'
+ht-degree: 82%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 83%
 
 >[!NOTE]
 >
->콘텐츠 조각은 사이트 기능이지만 다음과 같이 저장됩니다. **에셋**.
+>콘텐츠 조각은 Sites 기능이지만 **자산**&#x200B;으로 저장됩니다.
 >
->콘텐츠 조각 작성용 편집기에는 두 가지가 있습니다. 이 단원에서는 주로 **에셋** 콘솔. 사이트 설명서 를 참조하십시오. [컨텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md), 새 편집기에 대한 세부 정보(주로 **컨텐츠 조각** console).
+>콘텐츠 조각을 작성하는 두 가지 편집기가 있습니다. 이 단원에서는 주로 **에셋** 콘솔. 사이트 설명서 를 참조하십시오. [컨텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md), 새 편집기에 대한 세부 정보(주로 **컨텐츠 조각** console).
 
 ![Markdown 편집기](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
@@ -105,7 +105,7 @@ ht-degree: 83%
 
     `![Alt text][id]`
 
-여기서 “id”는 정의된 이미지 참조의 이름입니다. 이미지 참조는 링크 참조와 동일한 구문을 사용하여 정의됩니다.
+여기서 &quot;id&quot;는 정의된 이미지 참조의 이름입니다. 이미지 참조는 링크 참조와 동일한 구문을 사용하여 정의됩니다.
 
     `[id]: url/to/image "Optional title attribute"`
 

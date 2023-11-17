@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2463'
+source-wordcount: '2461'
 ht-degree: 6%
 
 ---
@@ -78,7 +78,7 @@ AEM은 기본적으로 스마트 태그를 텍스트 기반 에셋 및 비디오
 
 **수량 및 크기:** 태그당 최소 10개의 이미지와 최대 50개의 이미지.
 
-**일관성**: 태그의 이미지가 시각적으로 유사한지 확인합니다. 동일한 시각적 측면(예: 이미지의 동일한 오브젝트 유형)에 대한 태그를 단일 태그 모델에 함께 추가하는 것이 가장 좋습니다. 예를 들어 이러한 모든 이미지에 태그를 지정하는 것은 좋지 않습니다. `my-party` (훈련용) 시각적으로 유사하지 않기 때문입니다.
+**일관성**: 태그의 이미지가 시각적으로 유사한지 확인합니다. 동일한 시각적 측면(예: 이미지의 동일한 오브젝트 유형)에 대한 태그를 단일 태그 모델에 함께 추가하는 것이 가장 좋습니다. 예를 들어 이러한 이미지에 태그를 지정하는 것은 좋지 않습니다. `my-party` (훈련용) 시각적으로 유사하지 않기 때문입니다.
 
 ![교육 지침을 설명하는 예제 이미지](assets/do-not-localize/coherence.png)
 

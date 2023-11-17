@@ -4,10 +4,10 @@ description: AEM의 강력한 Live Copy 및 다중 사이트 관리자 기능을
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2714'
-ht-degree: 100%
+source-wordcount: '2702'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->MSM은 콘텐츠 조각을 포함하여 자산에도 사용할 수 있습니다. 자세한 내용은 [자산의 MSM을 사용하여 콘텐츠 조각 재사용](/help/assets/reuse-assets-using-msm.md)(자산 콘솔을 통해서만 사용 가능)을 참조하십시오.
+>MSM은 콘텐츠 조각을 포함하여 자산에도 사용할 수 있습니다. 다음을 참조하십시오 [에셋용 MSM을 사용하여 콘텐츠 조각 재사용](/help/assets/reuse-assets-using-msm.md) (자산 콘솔을 통해서만 사용할 수 있습니다.)
 
 ## 가능한 시나리오 {#possible-scenarios}
 
@@ -106,7 +106,7 @@ MSM 및 Live Copy에 대한 다양한 사용 사례가 있습니다. 다음과 �
   >
   >및
   >
-  >* 조정이 필요한 개별 사본 사이의 균형입니다.
+  >* 조정해야 하는 개별 사본 수입니다.
 
 ## UI의 MSM {#msm-from-the-ui}
 
@@ -172,7 +172,7 @@ MSM은 적절한 콘솔에서 다양한 옵션을 사용하여 UI에서 직접 �
 
 >[!TIP]
 >
->오브젝트 이름은 [다중 사이트 관리자 확장](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) 문서를 참조하십시오.
+>다음을 참조하십시오 [다중 사이트 관리자 확장](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) 객체 이름.
 
 ## Live Copy {#live-copies}
 
@@ -278,7 +278,7 @@ Live Copy의 소스는 일반 페이지이거나 블루프린트 구성으로 �
 롤아웃 구성은 Live Copy가 소스 콘텐츠와 동기화되는 시기와 방법을 정의합니다. 롤아웃 구성은 트리거와 하나 이상의 동기화 작업으로 구성됩니다.
 
 * **트리거** - 트리거는 소스 페이지 활성화와 같이 라이브 작업 동기화를 발생시키는 이벤트입니다. MSM은 사용할 수 있는 트리거를 정의합니다.
-* **동기화 작업** - 동기화 작업은 Live Copy에서 수행되어 이를 소스와 동기화합니다. 콘텐츠 복사, 하위 노드 순서 지정, Live Copy 페이지 활성화 등의 작업을 예로 들 수 있습니다. MSM은 다양한 동기화 작업을 제공합니다.
+* **동기화 작업** - 동기화 작업은 Live Copy에서 수행되어 이를 소스와 동기화합니다. 콘텐츠 복사, 하위 노드 순서 지정, Live Copy 페이지 활성화 등의 작업을 예로 들 수 있습니다. MSM은 몇 가지 동기화 작업을 제공합니다.
 
 >[!NOTE]
 >
@@ -296,7 +296,7 @@ Live Copy의 각 페이지 및 구성 요소는 라이브 관계를 통해 소�
 
 Live Copy 페이지에 대한 Live Copy 상속을 **일시 중단**&#x200B;하여 페이지 속성 및 구성 요소를 변경할 수 있습니다. 상속을 일시 중단하면 페이지 속성 및 구성 요소는 더 이상 소스와 동기화되지 않습니다.
 
-개별 페이지 편집 시 작성자는 구성 요소에 대한 **상속을 취소**&#x200B;할 수 있습니다. 상속이 취소되면 라이브 관계가 일시 중단되고 해당 구성 요소에 대한 동기화가 수행되지 않습니다. 상속 및 동기화 취소 작업은 콘텐츠의 하위 섹션을 맞춤화해야 할 때 유용합니다.
+개별 페이지 편집 시 작성자는 구성 요소에 대한 **상속을 취소**&#x200B;할 수 있습니다. 상속이 취소되면 라이브 관계가 일시 중단되고 해당 구성 요소에 대한 동기화가 수행되지 않습니다. 상속 및 동기화 취소는 콘텐츠의 하위 섹션을 사용자 정의해야 할 때 유용합니다.
 
 ### Live Copy 분리 {#detaching-a-live-copy}
 
@@ -319,7 +319,7 @@ Live Copy 페이지에 대한 Live Copy 상속을 **일시 중단**&#x200B;하�
 1. 소스 사이트의 콘텐츠를 개발합니다.
 1. 사용할 롤아웃 구성을 결정합니다.
 
-   1. MSM은 다양한 사용 사례를 충족할 수 있는 [여러 롤아웃 구성을 설치](live-copy-sync-config.md#installed-rollout-configurations)합니다.
+   1. MSM [여러 롤아웃 구성 설치](live-copy-sync-config.md#installed-rollout-configurations) 이를 통해 여러 사용 사례를 충족할 수 있습니다.
    1. 필요한 경우 [롤아웃 구성을 생성](live-copy-sync-config.md#creating-a-rollout-configuration)할 수 있습니다.
 
 1. [사용할 롤아웃 구성을 지정](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use)해야 하는 위치를 결정하고 필요에 따라 구성합니다.

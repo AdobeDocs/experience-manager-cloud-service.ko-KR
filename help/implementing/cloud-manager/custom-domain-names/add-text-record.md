@@ -2,10 +2,10 @@
 title: TXT 레코드 추가
 description: Cloud Manager에서 TXT 레코드를 추가하여 사용자 정의 도메인 이름을 추가하는 방법을 알아봅니다.
 exl-id: d441de29-af41-4d3e-9155-531af9702841
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '329'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 97%
 
 ---
 
@@ -46,4 +46,4 @@ dig TXT _aemverification.example.com -t txt
 
 >[!TIP]
 >
->여러 [DNS 조회 도구](https://www.ultratools.com/tools/dnsLookup)를 사용할 수 있습니다. Google DoH를 사용하여 TXT 레코드 항목을 조회하고 TXT 레코드가 누락되었거나 오류가 있는지 식별할 수 있습니다.
+>몇 개 있습니다 [DNS 조회 도구](https://www.ultratools.com/tools/dnsLookup) 사용 가능. Google DoH를 사용하여 TXT 레코드 항목을 조회하고 TXT 레코드가 누락되었거나 오류가 있는지 식별할 수 있습니다.

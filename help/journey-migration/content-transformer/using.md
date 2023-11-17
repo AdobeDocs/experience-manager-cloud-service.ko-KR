@@ -1,9 +1,10 @@
 ---
 title: 콘텐츠 트랜스포머 사용
 description: AEM으로 as a Cloud Service으로 마이그레이션할 것을 대비하여 콘텐츠 구조를 변형하는 방법에 대해 알아봅니다.
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+exl-id: 40516ff7-5686-42e6-bdd1-c9c6de432b09
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '642'
 ht-degree: 2%
 
 ---
@@ -62,7 +63,7 @@ ht-degree: 2%
    >[!NOTE]
    > 소스 콘텐츠를 변경할 수 있는 모든 작업(`move`/`remove`/`rename`)는 기본적으로 아래에 소스 경로의 백업 패키지를 만듭니다. `/etc/packages/content-transformation` 변환 전. 각 작업 대화 상자에는 백업 패키지 생성을 비활성화/활성화하는 옵션이 있지만, 항상 패키지 생성 활성화를 선택하는 것이 좋습니다.
 
-1. 경로 이동 작업을 위해 만든 백업 패키지의 예는 아래에 나와 있습니다. 설치 를 클릭하여 소스 경로를 다시 가져옵니다. 소스 경로를 다시 원래 위치로 가져오고 변환 중에 이동된 경로는 삭제하지 않습니다. 이동된 위치에서 경로를 삭제하려면 **경로 추가** 위치를 추가하는 버튼(예: `/etc/packages/content-transformation/paths`), 위치를 선택하고 **제거**.
+1. 경로 이동 작업을 위해 만든 백업 패키지의 예는 아래에 나와 있습니다. 설치 를 클릭하여 소스 경로를 다시 가져옵니다. 소스 경로가 원래 위치로 복구될 뿐, 변환 중에 이동된 경로는 삭제되지 않습니다. 이동된 위치에서 경로를 삭제하려면 **경로 추가** 위치를 추가하는 버튼(예: `/etc/packages/content-transformation/paths`), 위치를 선택하고 **제거**.
 
    >[!CAUTION]
    > 삭제하지 않음 `/etc/packages/content-transformation` 백업 패키지가 있는 위치입니다. 이러한 패키지가 더 이상 필요하지 않은 경우에만 이 위치를 삭제하여 저장소 크기를 줄일 수 있습니다.

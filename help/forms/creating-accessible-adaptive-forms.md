@@ -1,15 +1,13 @@
 ---
 title: 액세스 가능한 적응형 Forms을 만드는 방법
 description: AEM Forms은 액세스 가능한 적응형 Forms을 만들 수 있는 도구를 제공하며 접근성 표준을 준수하도록 도와줍니다.
-uuid: 6472bc2d-47ca-4883-88b7-5de0b758fd00
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2025'
+source-wordcount: '2023'
 ht-degree: 0%
 
 ---
@@ -18,7 +16,7 @@ ht-degree: 0%
 
 ## 소개 {#introduction}
 
-액세스 가능한 양식은 특별한 요구 사항이 있는 사용자를 포함하여 모든 사용자가 사용할 수 있는 양식입니다. 적응형 Forms에는 다양한 능력을 가진 사용자의 사용성을 향상시키는 다양한 기능이 포함되어 있습니다. 적응형 Forms에 접근성을 구축하면 가능한 가장 광범위한 콘텐츠 대상자를 사용할 수 있을 뿐만 아니라, 접근성 표준 준수가 요구되는 지역에서 문서를 제공할 때 반드시 필요합니다. [!DNL AEM Forms] 양식 개발자가 접근성 표준을 준수하도록 지원합니다.
+액세스 가능한 양식은 특별한 요구 사항이 있는 사용자를 포함하여 모든 사용자가 사용할 수 있는 양식입니다. 적응형 Forms에는 다양한 능력을 가진 사용자의 사용성을 향상시키는 몇 가지 기능이 포함되어 있습니다. 적응형 Forms에 접근성을 구축하면 가능한 가장 광범위한 콘텐츠 대상자를 사용할 수 있을 뿐만 아니라, 접근성 표준 준수가 요구되는 지역에서 문서를 제공할 때 반드시 필요합니다. [!DNL AEM Forms] 양식 개발자가 접근성 표준을 준수하도록 지원합니다.
 
 작성자는 적응형 양식을 작성하는 동안 액세스 가능한 적응형 양식을 만들려면 다음 사항을 고려해야 합니다.
 

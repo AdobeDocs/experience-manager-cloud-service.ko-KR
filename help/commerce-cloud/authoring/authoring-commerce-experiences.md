@@ -2,9 +2,9 @@
 title: 상거래 경험 작성
 description: 컨텍스트를 종료하지 않고 제품 데이터 및 콘텐츠에 액세스하여 상거래 관련 경험을 효율적으로 작성하고 구축하는 방법을 알아봅니다.
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '718'
 ht-degree: 1%
 
 ---
@@ -77,7 +77,7 @@ CIF 제품 카탈로그 페이지는 즉시 렌더링되는 가상 페이지입�
 
 ### 관련 제품 콘텐츠 액세스 {#associated-content}
 
-유니버설 편집기가 페이지에서 1:n 제품을 인식하면 사이드 패널에 &quot;관련 상거래 콘텐츠&quot; 탭이 자동으로 표시됩니다. 이 탭을 사용하면 작성자가 제품과 함께 태그가 지정된 AEM 콘텐츠에 빠르게 액세스할 수 있습니다(참조) [관련 AEM 콘텐츠를 사용하여 제품 데이터 강화](./enrich-product-associated-content.md) 을 참조하십시오. 이 탭은 페이지에 여러 제품이 있는 경우 콘텐츠 유형 및 특정 제품을 필터링할 수 있는 드롭다운을 제공합니다. 콘텐츠 사용은 &quot;에셋&quot; 탭의 콘텐츠를 사용하는 것과 정확히 동일하게 작동합니다.
+유니버설 편집기가 페이지에서 1:n 제품을 인식하면 사이드 패널에 &quot;관련 상거래 콘텐츠&quot; 탭이 자동으로 표시됩니다. 이 탭을 사용하면 작성자가 제품과 함께 태그가 지정된 AEM 콘텐츠에 빠르게 액세스할 수 있습니다(참조) [관련 AEM 콘텐츠를 사용하여 제품 데이터 강화](./enrich-product-associated-content.md) 을 참조하십시오. 이 탭은 페이지에 여러 제품이 있는 경우 콘텐츠 유형 및 특정 제품을 필터링할 수 있는 드롭다운 목록을 제공합니다. 콘텐츠 사용은 &quot;에셋&quot; 탭의 콘텐츠를 사용하는 것과 정확히 동일하게 작동합니다.
 
 ![제품 데이터 사이드 패널](../assets/authoring/associated-commerce-content-tab.png)
 

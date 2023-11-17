@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 15%
+source-wordcount: '443'
+ht-degree: 7%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 15%
 
    * 에셋 UI에서 에셋을 선택하고 **[!UICONTROL 속성 보기]** 아이콘을 클릭합니다.
    * 에셋 썸네일에서 다음을 선택합니다. **[!UICONTROL 속성 보기]** 빠른 작업.
-   * 에셋 페이지에서 을 클릭/탭합니다. **[!UICONTROL 속성 보기]** 을 클릭합니다.
+   * 에셋 페이지에서 을 선택합니다. **[!UICONTROL 속성 보기]** 을 클릭합니다.
 
-   에셋 페이지에는 에셋의 모든 메타데이터가 표시됩니다. 이 메타데이터는 Experience Manager Assets에 업로드(수집)될 때 자동으로 추출되었습니다.
+   에셋 페이지에는 에셋의 메타데이터가 표시됩니다. 이 메타데이터는 Experience Manager Assets에 업로드(수집)될 때 자동으로 추출되었습니다.
 
-1. Make edits to the metadata under the various tabs, as required, and when completed, click/tap **[!UICONTROL Save]** from the toolbar to save your changes. Click/tap **[!UICONTROL Close]** to return to the Assets web interface.
+1. 필요에 따라 다양한 탭에서 메타데이터를 편집하고, 완료되면 다음을 선택합니다. **[!UICONTROL 저장]** 을 클릭하여 변경 사항을 저장합니다. 선택 **[!UICONTROL 닫기]** 자산 웹 인터페이스로 돌아갑니다.
 
    >[!NOTE]
    >
@@ -49,10 +49,10 @@ ht-degree: 15%
 Experience Manager 내에 고유한 네임스페이스를 추가할 수 있습니다. cq, jcr 및 sling과 같이 사전 정의된 네임스페이스가 있는 것처럼 저장소 메타데이터 및 xml 처리를 위한 네임스페이스를 가질 수 있습니다.
 
 1. 노드 유형 관리 페이지로 이동합니다. *https://&lt;host>:&lt;port>/crx/explorer/nodetypes/index.jsp*.
-1. 클릭 또는 탭 **[!UICONTROL 네임스페이스]** 을 클릭합니다. 창에 네임스페이스 관리 페이지가 표시됩니다.
+1. 선택 **[!UICONTROL 네임스페이스]** 을 클릭합니다. 창에 네임스페이스 관리 페이지가 표시됩니다.
 
-1. 네임스페이스를 추가하려면 을(를) 클릭하거나 탭합니다 **[!UICONTROL 신규]** 맨 아래에
-1. XML 네임스페이스 규칙에서 사용자 지정 네임스페이스를 지정하고(URI 및 ID에 대한 연결된 접두사의 형태로 ID 지정) 을 클릭하거나 탭합니다 **[!UICONTROL 저장]**.
+1. 네임스페이스를 추가하려면 다음을 선택합니다. **[!UICONTROL 신규]** 맨 아래에
+1. XML 네임스페이스 규칙에서 사용자 지정 네임스페이스를 지정하고(URI 및 ID에 연결된 접두사의 형태로 ID를 지정) 다음을 선택합니다 **[!UICONTROL 저장]**.
 
 **추가 참조**
 

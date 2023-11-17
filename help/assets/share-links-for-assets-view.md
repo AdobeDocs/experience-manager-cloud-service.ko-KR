@@ -2,9 +2,9 @@
 title: 에셋으로의 링크 공유 방법
 description: 링크를 생성하고 [!DNL Assets view] 애플리케이션에 대한 액세스 권한이 없는 다른 사용자와 에셋을 공유할 수 있습니다.
 exl-id: 6e05b06c-7436-40e3-acee-c8b1ed218f9e
-source-git-commit: e2efffe0192f7914fd97178884b7938b84fd9a27
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '406'
 ht-degree: 93%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 93%
 
 에셋 또는 에셋을 포함하는 폴더에 대한 링크를 생성하려면:
 
-1. 에셋 및/또는 에셋을 포함하는 폴더를 선택한 다음 **[!UICONTROL 링크 공유]**&#x200B;를 클릭합니다.
+1. 에셋이 포함된 에셋, 폴더 또는 둘 다를 선택하고 **[!UICONTROL 링크 공유]**.
 
 1. 이를 조정하려면 [캘린더] 아이콘을 클릭한 다음 **[!UICONTROL 만료일]** 필드를 사용하여 해당 링크에 대한 만료일을 정의하십시오. `yyyy-mm-dd` 형식으로 날짜를 직접 지정할 수도 있습니다. 링크에 대한 기본적으로 만료일은 공유일로부터 2주로 설정되어 있습니다.
 
@@ -45,7 +45,7 @@ ht-degree: 93%
 
 * [에셋 보기의 에셋에 대한 링크를 공유하려면 비디오 보기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html)
 
-* 다음을 사용하여 제품 피드백 제공 [!UICONTROL 피드백] 자산 보기 사용자 인터페이스에서 사용할 수 있는 옵션
+* Assets 보기 사용자 인터페이스에서 사용 가능한 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백 제공
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백 제공
 

@@ -2,9 +2,9 @@
 title: AEM Headless as a Cloud Service 시작하기
 description: 이 AEM Headless 개발자 여정의 부분에서는 AEM Headless 사전 요구 사항에 대해 알아봅니다.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3095'
+source-wordcount: '3093'
 ht-degree: 96%
 
 ---
@@ -123,7 +123,7 @@ SPA 편집기를 통해 SPA는 AEM에서 콘텐츠를 사용할 뿐만 아니라
 
 ## 요구 사항 및 사전 요구 사항 {#requirements-prerequisites}
 
-AEM Headless 프로젝트를 시작하기 전에 알아 두어야 할 몇 가지 요구 사항이 있습니다.
+Headless AEM 프로젝트를 시작하기 전에 몇 가지 요구 사항이 있습니다.
 
 ### 지식 {#knowledge}
 

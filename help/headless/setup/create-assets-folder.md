@@ -2,10 +2,10 @@
 title: 자산 폴더 만들기 - Headless 설정
 description: AEM 콘텐츠 조각 모델을 사용하여 Headless 콘텐츠의 기반이 되는 콘텐츠 조각의 구조를 정의합니다.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: ht
-source-wordcount: '383'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '377'
+ht-degree: 88%
 
 ---
 
@@ -25,8 +25,8 @@ AEM 콘텐츠 조각 모델을 사용하여 Headless 콘텐츠의 기반이 되�
 
 관리자는 콘텐츠가 만들어질 때 콘텐츠를 구성하기 위해 가끔씩만 폴더를 만들면 됩니다. 이 시작 안내서에서는 폴더를 하나만 만들면 됩니다.
 
-1. AEM as a Cloud Service에 로그인하고 메인 메뉴에서 **탐색 -> 자산 -> 파일**&#x200B;을 선택합니다.
-1. **만들기 -> 폴더**&#x200B;를 탭하거나 클릭합니다.
+1. AEM as a Cloud Service에 로그인하고 메인 메뉴에서 를 선택합니다. **탐색 > 에셋 > 파일**.
+1. 선택 **만들기 > 폴더**.
 1. 폴더의 **제목** 및 **이름**&#x200B;을 입력합니다.
    * **제목**&#x200B;은 설명적이어야 합니다.
    * **이름**&#x200B;은 저장소의 노드 이름이 됩니다.
@@ -38,8 +38,8 @@ AEM 콘텐츠 조각 모델을 사용하여 Headless 콘텐츠의 기반이 되�
 1. **속성** 창에서 **Cloud Services** 탭을 선택합니다.
 1. **클라우드 구성**&#x200B;의 경우 [이전에 생성한 구성](create-configuration.md)을 선택합니다.
    ![자산 폴더 구성](../assets/assets-folder-configure.png)
-1. **저장 및 닫기**&#x200B;를 탭하거나 클릭합니다.
-1. 확인 창에서 **확인**&#x200B;을 탭하거나 클릭합니다.
+1. 선택 **저장 및 닫기**.
+1. 선택 **확인** 확인 창에서 확인할 수 있습니다.
 
    ![확인 창](../assets/assets-folder-confirmation.png)
 

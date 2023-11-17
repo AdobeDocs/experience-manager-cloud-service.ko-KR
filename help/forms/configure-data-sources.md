@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: b9fb484135fb2d16758548c525b59f5ba011afb5
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2203'
+source-wordcount: '2201'
 ht-degree: 3%
 
 ---
@@ -283,7 +283,7 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. 에서 OData 서비�
 
    >[!NOTE]
    >
-   연결할 OAuth 2.0 인증 유형을 선택해야 합니다. [!DNL Microsoft®® Dynamics] 서비스 루트로 OData 끝점을 사용하는 서비스입니다.
+   연결할 OAuth 2.0 인증 유형 선택 [!DNL Microsoft®® Dynamics] 서비스 루트로 OData 끝점을 사용하는 서비스입니다.
 
 1. 누르기 **[!UICONTROL 만들기]** 를 클릭하여 OData 서비스에 대한 클라우드 구성을 만듭니다.
 

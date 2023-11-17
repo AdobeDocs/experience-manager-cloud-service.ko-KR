@@ -2,9 +2,9 @@
 title: 적응형 Forms에서 테마를 만들고 사용하려면 어떻게 해야 합니까?
 description: 테마를 사용하여 스타일을 지정하고 핵심 구성 요소를 사용하여 적응형 양식에 시각적 ID를 제공할 수 있습니다. 여러 적응형 Forms에서 테마를 공유할 수 있습니다.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2677'
+source-wordcount: '2676'
 ht-degree: 5%
 
 ---
@@ -367,7 +367,7 @@ AEM Forms as a Cloud Service 인스턴스에 호스팅된 적응형 양식에 �
 
    ![실행-a-pipleine](/help/forms/assets/canvas-theme-run-pipeline.png)
 
-빌드가 완료되면 작성자 인스턴스에서 테마를 사용할 수 있습니다. 다음 아래에 나타납니다. **[!UICONTROL 스타일]** 새 적응형 양식을 만드는 동안 적응형 양식 만들기 마법사에서 탭으로 이동합니다.
+빌드가 완료되면 작성자 인스턴스에서 테마를 사용할 수 있습니다. 다음 아래에 나타납니다. **[!UICONTROL 스타일]** 적응형 양식을 만드는 동안 적응형 양식 만들기 마법사에서 탭합니다.
 
 ![스타일 탭에서 사용할 수 있는 사용자 정의 테마](/help/forms/assets/custom-theme-style-tab.png)
 
