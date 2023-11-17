@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: a6d43e6d4138305c2f98dfb6e33946d36fb50fe1
 workflow-type: tm+mt
 source-wordcount: '4381'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -844,7 +844,7 @@ ht-degree: 99%
          + [Cloud Manager와 함께 git 사용](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [여러 저장소 사용](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [엔터프라이즈 개발 팀 설정](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-         + [자체 GitHub 저장소 작업](/help/implementing/cloud-manager/managing-code/byo-github.md)
+         + [자체 GitHub 저장소를 사용하여 작업](/help/implementing/cloud-manager/managing-code/byo-github.md)
       + [환경 변수](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI-CD 파이프라인 {#cicd-pipelines}
          + [소개](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
