@@ -2,13 +2,13 @@
 title: GraphQL 지속 쿼리 - Dispatcher에서 캐싱 활성화
 description: Dispatcher는 Adobe Experience Manager 게시 환경 앞에 있는 캐싱 및 보안 계층입니다. AEM Headless에서 지속 쿼리에 대한 캐싱을 활성화할 수 있습니다.
 feature: Dispatcher, GraphQL API
-source-git-commit: 0066bfba3a403791c6a35b1280ae04b576315566
-workflow-type: ht
-source-wordcount: '317'
-ht-degree: 100%
+exl-id: 30a97e56-6699-41c4-a4eb-fc6236667f8f
+source-git-commit: ea5b404e83c11f0057342bff22ba45e6b0ead124
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 81%
 
 ---
-
 
 # GraphQL 지속 쿼리 - Dispatcher에서 캐싱 활성화 {#graphql-persisted-queries-enabling-caching-dispatcher}
 
@@ -37,6 +37,27 @@ ht-degree: 100%
    ```xml
    Define CACHE_GRAPHQL_PERSISTED_QUERIES
    ```
+
+>[!NOTE]
+>
+>지속 쿼리에 대해 Dispatcher 캐싱이 활성화된 경우 다음을 사용 `Define CACHE_GRAPHQL_PERSISTED_QUERIES` an `ETag` Dispatcher가 응답에 헤더를 추가합니다.
+>
+>기본적으로 `ETag` 헤더는 다음 지시문으로 구성됩니다.
+>
+>```
+>FileETag MTime Size 
+>```
+>
+>그러나 이 설정은 응답의 작은 변경 사항을 고려하지 않으므로 지속 쿼리 응답에 사용할 때 문제를 일으킬 수 있습니다.
+>
+>개인을 달성하려면 `ETag` 계산 *각각* 에 고유한 응답 `FileETag Digest` dispatcher 구성에서 설정을 사용해야 합니다.
+>
+>```xml
+><Directory />    
+>   ...    
+>   FileETag Digest
+></Directory> 
+>```
 
 >[!NOTE]
 >
