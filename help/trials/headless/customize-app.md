@@ -4,10 +4,10 @@ description: 샘플 React 앱을 사용하여 AEM as a Cloud Service로 설정�
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 3177832b32c98bf463c763dafe2d9e284dc2ac28
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1044'
-ht-degree: 100%
+source-wordcount: '1040'
+ht-degree: 98%
 
 ---
 
@@ -105,7 +105,7 @@ AEM Headless CMS에 통합될 때 React 앱 내에서 콘텐츠를 업데이트�
 
 1. **산악 바이킹 - 구매 가능** 레이어를 선택합니다.
 
-1. 이 패널에서 새 콜아웃을 만들려면 새로운 구매 가능한 순간 콘텐츠 조각을 만들어야 합니다. **+ 새 조각 만들기** 버튼을 클릭하거나 탭합니다.
+1. 이 패널에서 콜아웃을 만들려면 구매 가능한 순간 콘텐츠 조각을 만듭니다. **+ 새 조각 만들기** 버튼을 클릭하거나 탭합니다.
 
    ![구매 가능한 순간 추가](assets/do-not-localize/add-reference-1-5.png)
 

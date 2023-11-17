@@ -2,10 +2,10 @@
 title: 타겟팅 모드를 사용하여 타겟팅된 콘텐츠 작성
 description: 타겟팅 모드 및 타겟 구성 요소는 경험을 위한 콘텐츠를 만드는 도구를 제공합니다.
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '5409'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '5408'
+ht-degree: 99%
 
 ---
 
@@ -102,7 +102,7 @@ AEM의 타겟팅 모드를 사용하여 타겟팅된 콘텐츠를 작성하십�
 
    >[!NOTE]
    >
-   >새 활동을 생성하고 페이지 또는 그 상위 항목 중 하나에 연결된 Adobe Target 클라우드 구성이 있으면 AEM은 자동으로 Adobe Target을 엔진으로 가정합니다.
+   >활동을 만들고 페이지 또는 그 상위 항목 중 하나에 연결된 Adobe Target 클라우드 구성이 있으면 AEM은 자동으로 Adobe Target을 엔진으로 가정합니다.
 
 1. **타겟팅** 엔진 드롭다운 메뉴에서 타겟팅 엔진을 선택합니다.
 

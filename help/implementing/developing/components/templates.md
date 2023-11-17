@@ -2,9 +2,9 @@
 title: 페이지 템플릿
 description: 페이지 템플릿은 새 페이지의 기반으로 사용되는 페이지를 만들 때 사용됩니다
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3291'
+source-wordcount: '3287'
 ht-degree: 8%
 
 ---
@@ -103,7 +103,7 @@ ht-degree: 8%
 
 1. 콘텐츠 페이지를 만드는 데 사용합니다.
 
-   * 템플릿을 사용하여 새 페이지를 만들 때 정적 템플릿과 편집 가능한 템플릿 간에 눈에 보이는 차이점이 없고 표시가 없습니다.
+   * 템플릿을 사용하여 페이지를 만들 때 정적 템플릿과 편집 가능한 템플릿 간에 눈에 보이는 차이점이 없고 표시가 없습니다.
    * 페이지 작성자의 경우 프로세스가 투명합니다.
 
    페이지 작성자가 템플릿을 사용하여 페이지를 만드는 방법에 대한 자세한 내용은 을 참조하십시오. [페이지 생성 및 구성](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#templates).
@@ -141,11 +141,11 @@ ht-degree: 8%
 >
 >폴더를 중첩할 수 있음에도 불구하고 **템플릿** 콘솔은 평면 구조로 제공됩니다.
 
-표준 AEM 인스턴스에서 `global` 폴더가 템플릿 콘솔에 이미 있습니다. 이 폴더는 기본 템플릿을 보유하며, 현재 폴더에 정책 및/또는 템플릿 유형을 찾을 수 없는 경우 폴백으로 작동합니다. 이 폴더에 기본 템플릿을 추가하거나 새 폴더를 만들 수 있습니다(권장).
+표준 AEM 인스턴스에서 `global` 폴더가 템플릿 콘솔에 이미 있습니다. 이 폴더는 기본 템플릿을 보유하며, 현재 폴더에 정책 및/또는 템플릿 유형을 찾을 수 없는 경우 폴백으로 작동합니다. 이 폴더에 기본 템플릿을 추가하거나 폴더를 만들 수 있습니다(권장).
 
 >[!NOTE]
 >
->사용자 지정된 템플릿을 보유하고 를 사용하지 않도록 새 폴더를 만드는 것이 가장 좋습니다. `global` 폴더를 삭제합니다.
+>가장 좋은 방법은 사용자 지정된 템플릿을 보유하는 폴더를 만들고 `global` 폴더를 삭제합니다.
 
 >[!CAUTION]
 >
@@ -161,7 +161,7 @@ ht-degree: 8%
 
 허용된 모든 항목의 목록이 만들어집니다. 구성이 겹치는 경우( `path`/ `label`)에서 현재 폴더에 가장 가까운 인스턴스만 사용자에게 표시됩니다.
 
-새 폴더를 만들려면 다음 작업을 수행할 수 있습니다.
+폴더를 만들려면 다음 작업을 수행할 수 있습니다.
 
 * 프로그래밍 방식으로 또는 CRXDE Lite 사용
 * 사용 [구성 브라우저](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
@@ -320,7 +320,7 @@ CRXDE를 통해 또는 구성 브라우저를 통해 템플릿 폴더가 만들�
 
 * `/apps/settings/wcm/template-types`
 
-사용자 정의된 템플릿 유형에 대한 정의는 사용자 정의 폴더(권장) 또는 `global`. 예를 들면 다음과 같습니다.
+사용자 정의된 템플릿 유형에 대한 정의는 사용자 정의 폴더(권장) 또는 `global`. 예:
 
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/template-types`
 * `/conf/<my-folder>/settings/wcm/template-types`
@@ -371,7 +371,7 @@ GITHUB의 코드
 
 ## 템플릿 정의 {#template-definitions}
 
-편집 가능한 템플릿에 대한 정의가 저장됩니다 [사용자 정의 폴더](#template-folders) (권장) 또는 `global`. 예를 들면 다음과 같습니다.
+편집 가능한 템플릿에 대한 정의가 저장됩니다 [사용자 정의 폴더](#template-folders) (권장) 또는 `global`. 예:
 
 * `/conf/<my-folder>/settings/wcm/templates`
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/templates`

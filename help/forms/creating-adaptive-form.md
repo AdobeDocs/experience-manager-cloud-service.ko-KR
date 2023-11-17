@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1558'
-ht-degree: 93%
+source-wordcount: '1546'
+ht-degree: 90%
 
 ---
 
@@ -62,17 +62,17 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 * **권한**: 사용자를 [!DNL forms-users]에 추가하여 적응형 양식을 만들 수 있는 권한을 제공합니다. 양식별 사용자 그룹의 자세한 목록은 다음을 참조하십시오. [그룹 및 권한](forms-groups-privileges-tasks.md).
 
-* **적응형 양식 테마**: 테마에 구성 요소 및 패널에 대한 스타일링 세부 정보가 포함됩니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일은 해당 구성 요소에 반영됩니다. [테마를 새로 만들거나](themes.md) [기존 테마를 가져올 수 있습니다](import-export-forms-templates.md#uploading-a-theme). 일부 샘플 테마에 [최신 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project)을 배포할 수도 있습니다.
+* **적응형 양식 테마**: 테마에 구성 요소 및 패널에 대한 스타일링 세부 정보가 포함됩니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일은 해당 구성 요소에 반영됩니다. 다음을 수행할 수 있습니다. [테마 만들기](themes.md) 또는 [기존 테마 가져오기](import-export-forms-templates.md#uploading-a-theme). 일부 샘플 테마에 [최신 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project)을 배포할 수도 있습니다.
 
 * **적응형 양식 템플릿**: 템플릿은 기본 구조를 제공하고 적응형 양식의 모양(레이아웃 및 스타일)을 정의합니다. 특정 속성과 콘텐츠 구조를 포함하는 서식이 미리 지정된 구성 요소가 있습니다. 또한 테마와 제출 액션을 정의하는 옵션이 제공됩니다. 테마는 모양과 느낌을 정의하고 제출 액션은 적응형 양식 제출 시 수행할 작업을 정의합니다. 예: 수집된 데이터를 데이터 소스로 보내기. 클라우드 서비스는 두 가지 유형의 템플릿을 지원합니다.
 
-   * **편집 가능한 템플릿**: [템플릿을 새로 만들거나](template-editor.md) [편집 가능한 기존 템플릿을 가져올 수 있습니다](migrate-to-forms-as-a-cloud-service.md). 또한 [최신 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ko#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.)을 배포하여 일부 편집 가능한 샘플 템플릿을 가져올 수 있습니다.
+   * **편집 가능한 템플릿**: 다음 작업을 수행할 수 있습니다 [만들기](template-editor.md) 또는 [편집 가능한 기존 템플릿 가져오기](migrate-to-forms-as-a-cloud-service.md). 또한 [최신 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ko#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.)을 배포하여 일부 편집 가능한 샘플 템플릿을 가져올 수 있습니다.
 
-   * **정적 템플릿**: 레거시 템플릿으로서 Adobe Managed Services(AMS) 및 온프레미스 AEM Forms 설치(AEM 6.5 Forms 이하)에서 마이그레이션하는 고객에게만 권장됩니다. 이를 통해 정적 템플릿에 대한 기존의 투자를 계속 이용할 수 있습니다. 적응형 양식을 새로 만들 때 편집 가능한 템플릿을 사용하는 것이 좋습니다.
+   * **정적 템플릿**: 레거시 템플릿으로서 Adobe Managed Services(AMS) 및 온프레미스 AEM Forms 설치(AEM 6.5 Forms 이하)에서 마이그레이션하는 고객에게만 권장됩니다. 이를 통해 정적 템플릿에 대한 기존의 투자를 계속 이용할 수 있습니다. 적응형 양식을 만들 때 편집 가능한 템플릿을 사용하십시오.
 
 
 
-## 적응형 양식 만들기 (기초 구성 요소) {#create-an-adaptive-form-foundation-components}
+## 적응형 양식 만들기(기초 구성 요소) {#create-an-adaptive-form-foundation-components}
 
 1. [!DNL Experience Manager Forms] 작성자 인스턴스 액세스. 클라우드 인스턴스 또는 로컬 개발 인스턴스일 수 있습니다.
 
@@ -89,7 +89,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
      >
      > 또한 적응형 양식 편집기를 사용하여 [!UICONTROL 기록 문서] 템플릿을 만들 수 있습니다. 자세한 내용은 [ 적응형 양식 편집기에서 기록 문서 지원](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)을 참조하십시오.
 
-   * 정적 템플릿을 선택하면 데이터, 스타일, 제출, 게재 및 미리보기 옵션은 사용할 수 없습니다. 적응형 양식을 새로 만들 때 편집 가능한 템플릿을 사용하는 것이 좋습니다.
+   * 정적 템플릿을 선택하면 데이터, 스타일, 제출, 게재 및 미리보기 옵션은 사용할 수 없습니다. 적응형 양식을 만들 때 편집 가능한 템플릿을 사용하십시오.
 
 1. **[!UICONTROL 스타일]** 탭에서 테마를 선택합니다.
 

@@ -8,10 +8,10 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2748'
-ht-degree: 100%
+source-wordcount: '2737'
+ht-degree: 97%
 
 ---
 
@@ -38,17 +38,17 @@ ht-degree: 100%
 
 적응형 양식을 만들려면 다음이 필요합니다.
 
-* **해당 환경에 대해 적응형 양식 핵심 구성 요소를 활성화**: 프로그램을 새로 만들 때 적응형 양식 핵심 구성 요소가 이미 환경에 대해 활성화되어 있습니다. Archetype 39 또는 이전 버전을 기반으로 하는 Forms as a Cloud Service 환경을 이용하는 경우, [해당 환경에 대해 적응형 양식 핵심 구성 요소를 활성화](enable-adaptive-forms-core-components.md)하십시오. 환경에 대해 핵심 구성 요소를 활성화하면 **적응형 양식 (핵심 구성 요소)** 템플릿 및 캔버스 테마가 해당 환경에 추가됩니다. 적응형 양식 핵심 구성 요소는 2023.02.0 릴리스 이전의 프리릴리스 일부로 제공되었으므로 사용 중인 AEM SDK 버전이 2023.02.0 이전 버전이라면 [해당 환경에서 `prerelease` 플래그가 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features)되어 있어야 합니다.
+* **환경에 맞는 적응형 Forms 핵심 구성 요소 활성화**: 프로그램을 만들 때 환경에 대한 적응형 Forms 핵심 구성 요소가 이미 활성화되었습니다. Archetype 39 또는 이전 버전을 기반으로 하는 Forms as a Cloud Service 환경을 이용하는 경우, [해당 환경에 대해 적응형 양식 핵심 구성 요소를 활성화](enable-adaptive-forms-core-components.md)하십시오. 환경에 대해 핵심 구성 요소를 활성화하면 **적응형 양식 (핵심 구성 요소)** 템플릿 및 캔버스 테마가 해당 환경에 추가됩니다. 적응형 양식 핵심 구성 요소는 2023.02.0 릴리스 이전의 프리릴리스 일부로 제공되었으므로 사용 중인 AEM SDK 버전이 2023.02.0 이전 버전이라면 [해당 환경에서 `prerelease` 플래그가 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features)되어 있어야 합니다.
 
 * **적응형 양식 템플릿**: 템플릿은 기본 구조를 제공하고 적응형 양식의 모양(레이아웃 및 스타일)을 정의합니다. 특정 속성과 콘텐츠 구조를 포함하는 서식이 미리 지정된 구성 요소가 있습니다. 또한 테마와 제출 액션을 정의하는 옵션이 제공됩니다. 테마는 모양과 느낌을 정의하고 제출 액션은 적응형 양식 제출 시 수행할 작업을 정의합니다. 예: 수집된 데이터를 데이터 소스로 보내기. 클라우드 서비스는 blank라는 OOTB 템플릿을 제공합니다.
 
    * `blank` 템플릿은 새로운 모든 AEM Forms as a Cloud Service 프로그램에 포함됩니다.
    * 패키지 관리자를 통해 참조 패키지를 설치하여 `blank` 템플릿을 AEM Forms as a Cloud Service 프로그램에 추가할 수 있습니다.
-   * 처음부터 [새 적응형 양식 템플릿(핵심 구성 요소)](template-editor.md)을 만들 수도 있습니다.
+   * 다음을 수행할 수도 있습니다. [적응형 Forms 템플릿(핵심 구성 요소) 만들기](template-editor.md) 처음부터.
 
 * **적응형 양식 테마**: 테마에 구성 요소 및 패널에 대한 스타일링 세부 정보가 포함됩니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일은 해당 구성 요소에 반영됩니다.  `Canvas` 템플릿은 새로운 모든 AEM Forms as a Cloud Service 프로그램에 포함됩니다.
   <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
-    * You can also [create a new Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. -->
+    * You can also [create an Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. -->
 
 * **권한**: 사용자를 [!DNL forms-users] 그룹에 추가합니다. [!DNL forms-users] 그룹의 멤버는 적응형 양식을 만들 수 있는 권한이 있습니다. 양식별 사용자 그룹에 대한 세부 목록은 [그룹 및 권한](forms-groups-privileges-tasks.md)을 참조하십시오.
 
@@ -117,13 +117,13 @@ ht-degree: 100%
 
 * **권한**: 사용자를 [!DNL forms-users]에 추가하여 적응형 양식을 만들 수 있는 권한을 제공합니다. 양식별 사용자 그룹에 대한 세부 목록은 [그룹 및 권한](forms-groups-privileges-tasks.md)을 참조하십시오.
 
-* **적응형 양식 테마**: 테마에 구성 요소 및 패널에 대한 스타일링 세부 정보가 포함됩니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일은 해당 구성 요소에 반영됩니다. [테마를 새로 만들거나](themes.md) [기존 테마를 가져올 수 있습니다](import-export-forms-templates.md#uploading-a-theme). 일부 샘플 테마에 [최신 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project)을 배포할 수도 있습니다.
+* **적응형 양식 테마**: 테마에 구성 요소 및 패널에 대한 스타일링 세부 정보가 포함됩니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일은 해당 구성 요소에 반영됩니다. 다음을 수행할 수 있습니다. [테마 만들기](themes.md) 또는 [기존 테마 가져오기](import-export-forms-templates.md#uploading-a-theme). 일부 샘플 테마에 [최신 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project)을 배포할 수도 있습니다.
 
 * **적응형 양식 템플릿**: 템플릿은 기본 구조를 제공하고 적응형 양식의 모양(레이아웃 및 스타일)을 정의합니다. 특정 속성과 콘텐츠 구조를 포함하는 서식이 미리 지정된 구성 요소가 있습니다. 또한 테마와 제출 액션을 정의하는 옵션이 제공됩니다. 테마는 모양과 느낌을 정의하고 제출 액션은 적응형 양식 제출 시 수행할 작업을 정의합니다. 예: 수집된 데이터를 데이터 소스로 보내기. 클라우드 서비스는 두 가지 유형의 템플릿을 지원합니다.
 
-   * **편집 가능한 템플릿**: [템플릿을 새로 만들거나](template-editor.md) [편집 가능한 기존 템플릿을 가져올 수 있습니다](migrate-to-forms-as-a-cloud-service.md). 또한 [최신 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ko#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.)을 배포하여 일부 편집 가능한 샘플 템플릿을 가져올 수 있습니다.
+   * **편집 가능한 템플릿**: 다음 작업을 수행할 수 있습니다 [만들기](template-editor.md) 또는 [편집 가능한 기존 템플릿 가져오기](migrate-to-forms-as-a-cloud-service.md). 또한 [최신 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ko#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.)을 배포하여 일부 편집 가능한 샘플 템플릿을 가져올 수 있습니다.
 
-   * **정적 템플릿**: 레거시 템플릿으로서 Adobe Managed Services(AMS) 및 온프레미스 AEM Forms 설치(AEM 6.5 Forms 이하)에서 마이그레이션하는 고객에게만 권장됩니다. 이를 통해 정적 템플릿에 대한 기존의 투자를 계속 이용할 수 있습니다. 적응형 양식을 새로 만들 때 편집 가능한 템플릿을 사용하는 것이 좋습니다.
+   * **정적 템플릿**: 레거시 템플릿으로서 Adobe Managed Services(AMS) 및 온프레미스 AEM Forms 설치(AEM 6.5 Forms 이하)에서 마이그레이션하는 고객에게만 권장됩니다. 이를 통해 정적 템플릿에 대한 기존의 투자를 계속 이용할 수 있습니다. 적응형 양식을 만들 때 편집 가능한 템플릿을 사용하십시오.
 
 
 ## 적응형 양식 만들기 {#create-an-adaptive-form-foundation-components}
@@ -143,7 +143,7 @@ ht-degree: 100%
      >
      > 또한 적응형 양식 편집기를 사용하여 [!UICONTROL 기록 문서] 템플릿을 만들 수 있습니다. 자세한 내용은 [ 적응형 양식 편집기에서 기록 문서 지원](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)을 참조하십시오.
 
-   * 정적 템플릿을 선택하면 데이터, 스타일, 제출, 게재 및 미리보기 옵션은 사용할 수 없습니다. 적응형 양식을 새로 만들 때 편집 가능한 템플릿을 사용하는 것이 좋습니다.
+   * 정적 템플릿을 선택하면 데이터, 스타일, 제출, 게재 및 미리보기 옵션은 사용할 수 없습니다. 적응형 양식을 만들 때에는 편집 가능한 템플릿을 사용하는 것이 좋습니다.
 
 1. **[!UICONTROL 스타일]** 탭에서 테마를 선택합니다.
 

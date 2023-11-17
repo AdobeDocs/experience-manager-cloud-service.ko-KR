@@ -2,10 +2,10 @@
 title: 다중 사이트에서 타겟팅된 콘텐츠를 사용하여 작업
 description: 사이트 간 활동, 경험 및 오퍼와 같은 타겟팅된 콘텐츠를 관리해야 하는 경우 타겟팅된 콘텐츠에 대한 AEM의 내장 다중 사이트 지원을 이용할 수 있습니다.
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2889'
-ht-degree: 100%
+source-wordcount: '2885'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 사이트가 개인화된 콘텐츠를 공유하는 방식을 설정하려면 다음 절차를 수행해야 합니다.
 
-1. [새 영역을 만들거나](#creating-new-areas) [새 영역을 Live Copy로 만듭니다](#creating-new-areas). 영역에는 구성 요소가 타겟팅되는 위치인 페이지의 *영역*&#x200B;에 사용할 수 있는 모든 활동이 포함됩니다. 새 영역을 만들면 비어 있는 영역이 만들어지지만 새 영역을 Live Copy로 만들면 사이트 구조를 통해 콘텐츠를 상속할 수 있습니다.
+1. [새 영역 만들기](#creating-new-areas) 또는 [영역을 live copy로 만들기](#creating-new-areas). 영역에는 구성 요소가 타겟팅되는 위치인 페이지의 *영역*&#x200B;에 사용할 수 있는 모든 활동이 포함됩니다. 새 영역을 만들면 비어 있는 영역이 만들어지지만 새 영역을 Live Copy로 만들면 사이트 구조를 통해 콘텐츠를 상속할 수 있습니다.
 
 1. 영역에 [사이트 또는 페이지를 연결](#linking-sites-to-an-area)합니다.
 
@@ -119,9 +119,9 @@ ht-degree: 100%
 
 ### 새 영역 만들기와 새 영역을 Live Copy로 만들기 비교 {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
-AEM에서 새 영역을 만들거나 새 영역을 Live Copy로 만들 수 있습니다. 새 영역을 만들면 활동과 해당 활동에 속하는 오퍼, 경험 등과 같은 모든 항목이 그룹화됩니다. 타겟팅된 콘텐츠로 이루어진 완전히 구별되는 세트를 만들거나 타겟팅된 콘텐츠로 이루어진 세트를 공유하려는 경우 새 영역을 만듭니다.
+AEM에서 새 영역을 만들거나 새 영역을 Live Copy로 만들 수 있습니다. 새 영역을 만들면 활동과 해당 활동에 속하는 오퍼, 경험 등과 같은 모든 항목이 그룹화됩니다. 완전히 구별되는 타겟팅된 콘텐츠 세트를 만들거나 타겟팅된 콘텐츠 세트를 공유하려는 경우 영역을 만듭니다.
 
-그러나 두 사이트 사이에 MSM을 통해 상속을 설정했다면 활동을 상속할 수도 있습니다. 이 경우, Live Copy인 새 영역을 만듭니다. 여기서 Y는 X의 Live Copy이므로 모든 활동도 상속합니다.
+그러나 두 사이트 사이에 MSM을 통해 상속을 설정했다면 활동을 상속할 수도 있습니다. 이 경우 영역을 라이브 카피로 만듭니다. 여기서 Y는 X의 라이브 카피이므로 모든 활동도 상속합니다.
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ AEM에서 이렇게 하려면 다음 작업을 수행합니다.
 >
 >The default area called Master Area is collapsed by default when you tap or click the name of a brand **until** you create another area. Then, when you select a brand in either the **Activity** or **Offers** console, you see the **Area** console.
 
-새 영역을 만들려면 다음 작업을 수행하십시오.
+영역을 만들려면 다음 작업을 수행하십시오.
 
 1. **개인화** > **활동** 또는 **오퍼**&#x200B;로 이동한 다음 내 브랜드로 이동합니다.
 1. **영역 만들기**&#x200B;를 탭하거나 클릭합니다.

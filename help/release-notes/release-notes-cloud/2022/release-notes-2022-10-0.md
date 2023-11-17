@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.10.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.10.0 릴리스 정보입니다.'
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 80%
+source-wordcount: '835'
+ht-degree: 78%
 
 ---
 
@@ -69,7 +69,7 @@ ht-degree: 80%
    * **[템플릿 편집기의 양식 데이터 모델](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**: 템플릿 편집기에서 양식 데이터 모델 스키마를 적응형 양식 템플릿에 연결할 수 있습니다. 적응형 양식을 만드는 데 걸리는 시간을 줄이는 데 도움이 됩니다. 또한 이 옵션은 적응형 양식 편집기에도 추가되어 사용자가 기존 양식에 대한 양식 데이터 모델을 선택하거나 변경할 수 있습니다.
    * **[템플릿 편집기의 기록 문서](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**: 이제 템플릿을 사용하여 생성된 모든 양식에 대해 레코드 문서 생성을 표준화할 수 있습니다. 이는 조직 요구 사항에 대한 규정 준수 및 표준화를 강화하는 데 도움이 됩니다.
 
-* **[AEM Sites 페이지에서 적응형 양식 마법사 시작](/help/forms/embed-adaptive-form-aem-sites.md)**: AEM Sites 페이지의 적응형 양식 지원이 확장되었습니다. 이제 AEM Sites 페이지에서 바로 새 적응형 양식을 만들거나 기존 적응형 양식을 임베드할 수 있습니다.
+* **[AEM Sites 페이지에서 적응형 양식 마법사 시작](/help/forms/embed-adaptive-form-aem-sites.md)**: AEM Sites 페이지의 적응형 양식 지원이 확장되었습니다. 이제 AEM Sites 페이지를 유지하면서 적응형 양식을 만들거나 기존 적응형 양식을 임베드할 수 있습니다.
 * **[DoR에서 확인란 및 라디오 버튼의 표시 정렬 변경](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record-customize-the-branding-information-in-document-of-record)**: 이제 기록 문서의 확인란 및 라디오 버튼에 대해 원하는 정렬(가로, 세로, 적응형 양식과 동일)을 설정할 수 있습니다. 이 옵션은 기록 문서에서 확인란 및 라디오 버튼 옵션의 위치를 결정합니다.
 
 ## CIF 추가 기능 {#cloud-services-cif}

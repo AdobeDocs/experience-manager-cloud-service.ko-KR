@@ -4,10 +4,10 @@ description: 서드파티 번역 서비스와 통합한 번역 통합 프레임�
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: ht
-source-wordcount: '1518'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '1517'
+ht-degree: 99%
 
 ---
 
@@ -67,7 +67,7 @@ AEM을 번역 서비스 공급업체에 연결하는 클라우드 구성을 만�
 >
 >AEM 콘텐츠 번역 기능의 개요를 확인하려면 [다국어 사이트를 위한 콘텐츠 번역](overview.md)을 살펴보십시오.
 
-프레임워크 단일 구성은 페이지 콘텐츠와 자산을 어떻게 번역할지 제어합니다. 새 번역 구성을 만들려면:
+프레임워크 단일 구성은 페이지 콘텐츠와 자산을 어떻게 번역할지 제어합니다. 번역 구성을 만들려면 다음 작업을 수행하십시오.
 
 1. [글로벌 내비게이션 메뉴](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)에서 **도구 -> Cloud Services -&amp; 번역 Cloud Services**&#x200B;를 클릭하거나 탭합니다.
 1. 콘텐츠 구조에서 구성을 만들고자 하는 위치로 이동합니다. 보통 특정 사이트를 토대로 하거나 전역일 수 있습니다.

@@ -4,10 +4,10 @@ description: Adobe 엔지니어링 및 컨설팅 팀에서 컴파일한 AEM 다�
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '1420'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '1419'
+ht-degree: 99%
 
 ---
 
@@ -66,7 +66,7 @@ AEM에는 Live Copy를 만들기 위한 두 가지 주요 접근 방식이 있�
 
 다음은 사이트 생성 시 염두에 두어야 할 몇 가지 고려 사항입니다.
 
-* 새 사이트를 만들 때는 [블루프린트 구성](creating-live-copies.md#managing-blueprint-configurations)이 필요합니다.
+* 사이트를 만들려면 [블루프린트 구성](creating-live-copies.md#managing-blueprint-configurations).
 * 새 사이트에 생성할 언어 경로를 선택하려면 해당하는 언어 루트가 블루프린트(소스)에 존재해야 합니다.
 * [새 사이트 Live Copy로 생성](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)되면(**만들기** 및 **사이트** 사용) 이 Live Copy의 처음 두 가지 수준은 *약식*&#x200B;입니다. 페이지의 하위 항목은 라이브 관계에 속하지 않지만, 트리거와 일치하는 라이브 관계가 있는 경우 롤아웃은 계속 적용됩니다.
 

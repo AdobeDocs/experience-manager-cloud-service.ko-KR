@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '4346'
+source-wordcount: '4344'
 ht-degree: 11%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 11%
 >* 유형의 에셋 폴더 공유 `sling:OrderedFolder`은(는) Experience Cloud에 공유할 때 지원되지 않습니다. 폴더를 공유하려면 선택하지 마십시오. [!UICONTROL 주문됨] 폴더를 만들 때.
 >* Experience Manager에서 사용을 허용하지 않음 `subassets` word를 폴더 이름으로 사용합니다. 조합 자산에 대한 하위 자산을 포함하는 노드용으로 예약된 키워드입니다
 
-1. 디지털 자산 폴더에서 새 폴더를 만들 위치로 이동합니다. 메뉴에서 다음을 클릭합니다. **[!UICONTROL 만들기]**. 선택 **[!UICONTROL 새 폴더]**.
+1. 디지털 자산 폴더에서 폴더를 만들 위치로 이동합니다. 메뉴에서 다음을 클릭합니다. **[!UICONTROL 만들기]**. 선택 **[!UICONTROL 새 폴더]**.
 1. 다음에서 **[!UICONTROL 제목]** 필드에 폴더 이름을 입력합니다. 기본적으로 DAM은 사용자가 제공한 제목을 폴더 이름으로 사용합니다. 폴더가 만들어지면 기본값을 재정의하고 다른 폴더 이름을 지정할 수 있습니다.
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 디지털 에셋 폴더에 폴더가 표시됩니다.
 
@@ -54,7 +54,7 @@ ZIP 파일을 추출하려면 다음 단계를 수행하십시오.
 1. 다음을 클릭합니다. **[!UICONTROL 아카이브 추출]** 작업 모음에서 사용할 수 있는 옵션입니다.
 1. 압축된 폴더에서 사용할 수 있는 추출된 에셋을 저장해야 하는 폴더를 선택합니다.
 1. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
-1. 추출하는 동안 파일 이름 충돌을 처리할 적절한 동작을 선택하십시오. 기존 에셋의 새 버전을 만들거나, 에셋을 교체하거나, 두 에셋을 모두 대상 폴더에 유지하거나, 새 에셋의 추출을 건너뛸 수 있습니다.
+1. 추출하는 동안 파일 이름 충돌을 처리할 적절한 동작을 선택하십시오. 기존 에셋의 버전을 만들거나, 에셋을 교체하거나, 두 에셋을 모두 대상 폴더에 유지하거나, 새 에셋의 추출을 건너뛰도록 선택할 수 있습니다.
 1. 클릭 **[!UICONTROL Extract]**. Zip 추출 프로세스가 시작됩니다. 프로세스가 완료되면 대상 폴더에서 추출된 에셋을 볼 수 있습니다.
 
    ![zip 추출](assets/zip-extraction.png)

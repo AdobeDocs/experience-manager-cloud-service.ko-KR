@@ -4,10 +4,10 @@ description: Live Copy를 만들고 동기화하여 사이트 간 콘텐츠를 �
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: 151ef672e847f793b37d220920081ac9fce94edf
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '4308'
-ht-degree: 100%
+source-wordcount: '4307'
+ht-degree: 99%
 
 ---
 
@@ -333,7 +333,7 @@ Live Copy 콘텐츠를 변경하기 위해 다음과 같은 작업을 수행할 
 
 >[!TIP]
 >
->수동으로 Live Copy에 새 페이지를 만드는 경우 새 페이지는 Live Copy에만 적용됩니다. 즉, 해당 페이지와 연결되는 소스 페이지는 존재하지 않습니다.
+>라이브 카피에서 수동으로 페이지를 만드는 경우 새 페이지는 라이브 카피에 로컬이므로 여기에 연결되는 해당 소스 페이지가 없습니다.
 >
 >관계의 일부인 로컬 페이지를 만들 수 있는 가장 좋은 방법은 소스에 로컬 페이지를 만든 다음 딥 롤아웃을 수행하는 것입니다. 이렇게 하면 페이지가 로컬에서 Live Copy로 생성됩니다.
 

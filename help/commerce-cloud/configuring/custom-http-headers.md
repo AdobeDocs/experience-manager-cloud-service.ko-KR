@@ -2,9 +2,9 @@
 title: 사용자 정의 HTTP 헤더
 description: CIF에서 이미 보낸 헤더와 함께 상거래 엔진으로 보낼 사용자 지정 HTTP 헤더를 구성하는 방법에 대해 알아봅니다.
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '285'
 ht-degree: 5%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 ## 개요 {#overview}
 
-백엔드를 보다 세밀하게 제어하기 위해 작성자는 CIF에서 이미 보낸 헤더와 함께 상거래 엔진으로 전송할 사용자 지정 HTTP 헤더를 구성할 수 있습니다. 일반적인 사용 사례에는 HTTP 헤더를 사용하여 상거래 백 엔드의 응답을 제어할 수 있는 다중 저장소 설정이 포함됩니다.
+백엔드를 더 세밀하게 제어하기 위해 작성자는 CIF에서 이미 보낸 헤더와 함께 상거래 엔진으로 전송할 사용자 지정 HTTP 헤더를 구성할 수 있습니다. 일반적인 사용 사례에는 HTTP 헤더를 사용하여 상거래 백 엔드의 응답을 제어할 수 있는 다중 저장소 설정이 포함됩니다.
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ ht-degree: 5%
 프로젝트의 [Cloud Service 구성] 페이지에서 HTTP 헤더 값을 구성할 수 있습니다.
 
 1. 도구 -> Cloud Services -> CIF 구성의 Cloud Service 구성 페이지로 이동합니다.
-1. 기존 구성을 열거나 새 구성 만들기
+1. 기존 구성을 열거나 만듭니다.
 1. &quot;고급&quot; 탭으로 이동하여 &quot;사용자 지정 HTTP 헤더&quot; 다중 필드를 찾습니다. 앞에서 정의한 헤더를 선택하고 값을 할당할 수 있습니다.
 
 위의 클라우드 서비스 구성을 사용하는 구성 요소는 모든 GraphQL 요청과 함께 이러한 HTTP 헤더를 전송합니다.
@@ -36,5 +36,5 @@ ht-degree: 5%
 
 서비스를 통해 표준 헤더 이름을 비롯한 모든 헤더 이름을 정의할 수 있지만, 구성할 때는 사용할 수 없습니다. 즉, 이 기능을 사용하여 표준 HTTP 헤더를 재정의할 수 없습니다. 제한된 헤더 이름 목록을 찾을 수 있음 [여기](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). 이들 외에도 사용할 수 없는 두 개의 헤더가 더 있습니다.
 
-* &quot;스토어&quot; - CIF에서 Adobe Commerce 스토어를 식별하는 데 사용
+* &quot;Store&quot; - CIF에서 Adobe Commerce 스토어를 식별하는 데 사용됨
 * &quot;Preview-Version&quot; - CIF에서 스테이징된 제품을 검색하는 데 사용

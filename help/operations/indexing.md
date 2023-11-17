@@ -2,10 +2,10 @@
 title: 콘텐츠 검색 및 색인화
 description: AEM as a Cloud Service으로 콘텐츠 검색 및 색인화에 대해 알아봅니다.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: d567115445c0a068380e991452d9b976535e3a1d
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2433'
-ht-degree: 31%
+source-wordcount: '2432'
+ht-degree: 30%
 
 ---
 
@@ -47,7 +47,7 @@ AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 C
 2. **업데이트** 새 버전을 추가하여 기존 색인 정의.
 3. **제거** 더 이상 필요하지 않은 색인 정의.
 
-위의 1번과 2번은 각각 Cloud Manager 릴리스 일정에서 사용자 정의 코드 기반의 일부로 새 색인 정의를 생성해야 합니다. 자세한 내용은 [AEM에 as a Cloud Service 배포](/help/implementing/deploying/overview.md) 설명서를 참조하십시오.
+위의 1번과 2번은 해당 Cloud Manager 릴리스 일정에서 사용자 지정 코드 기반의 일부로 색인 정의를 생성해야 합니다. 자세한 내용은 [AEM에 as a Cloud Service 배포](/help/implementing/deploying/overview.md) 설명서를 참조하십시오.
 
 ## 색인 이름 {#index-names}
 

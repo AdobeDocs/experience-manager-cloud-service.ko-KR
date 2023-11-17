@@ -1,17 +1,15 @@
 ---
 title: 적응형 양식 작성 소개
 description: AEM Forms는 적응형 양식 작성을 위한 사용하기 쉽지만 강력한 인터페이스를 제공합니다. 양식을 빌드하는 데 사용할 수 있는 다양한 구성 요소 및 도구를 제공합니다.
-uuid: 3b150507-41b9-47c2-a94c-f85b903b2274
 content-type: reference
 topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2484'
-ht-degree: 100%
+source-wordcount: '2482'
+ht-degree: 99%
 
 ---
 
@@ -54,7 +52,7 @@ XML 및 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생�
 * 표준 양식 구성 요소
 * 자산의 통합 저장소
 
-새 적응형 양식을 만들거나 기존 적응형 양식을 편집하는 경우 다음 UI 요소를 사용합니다.
+기존 적응형 양식을 만들거나 편집할 때 다음 UI 요소를 사용합니다.
 
 * [사이드바](#sidebar)
 * [페이지 도구 모음](#page-toolbar)

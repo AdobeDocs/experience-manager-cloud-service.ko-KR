@@ -2,10 +2,10 @@
 title: AEM Headful 및 Headless
 description: AEM 프로젝트는 Headful 및 Headless model 모델에서 구현될 수 있지만 양자택일은 아닙니다. AEM은 하나의 프로젝트에서 두 모델의 장점을 모두 활용할 수 있는 유연성을 제공합니다.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
-workflow-type: ht
-source-wordcount: '1013'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '1012'
+ht-degree: 97%
 
 ---
 
@@ -43,7 +43,7 @@ Headless 모델에서 콘텐츠는 AEM 저장소에서 관리되지만 REST와 G
 
 >[!NOTE]
 >
->물론, [AEM SPA 편집기 프레임워크를 사용](/help/implementing/developing/hybrid/introduction.md)하여 웹 샵 SPA를 완전히 기능하는 AEM SPA로 다시 구현할 수도 있습니다. 이미 AEM이 있고 새 웹 샵이나 다른 SPA를 생성하는 경우 이는 권장되는 메서드이지만 이 문서의 범위에 적용되지 않습니다.
+>물론, [AEM SPA 편집기 프레임워크를 사용](/help/implementing/developing/hybrid/introduction.md)하여 웹 샵 SPA를 완전히 기능하는 AEM SPA로 다시 구현할 수도 있습니다. 이미 AEM이 있고 웹 샵 또는 다른 SPA을 만들려는 경우 이 방법이 권장되지만 이 문서의 범위를 벗어납니다.
 
 ## SPA 통합 수준 {#integration-levels}
 

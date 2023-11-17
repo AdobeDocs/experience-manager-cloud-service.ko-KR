@@ -5,7 +5,7 @@ role: User, Developer
 keywords: AEM 적응형 양식을 Microsoft SharePoint 목록에 연결, 적응형 양식을 Microsoft SharePoint 목록에 연결, AEM 적응형 양식을 Microsoft SharePoint 목록에 통합, 적응형 양식을 Microsoft 목록에 통합, 적응형 양식의 데이터를 SharePoint 목록에 제출, SharePoint 워크플로우를 AEM SharePoint 목록에 제출.
 hide: true
 hidefromToC: true
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
 source-wordcount: '539'
 ht-degree: 7%
@@ -56,7 +56,7 @@ Microsoft® SharePoint 목록을 AEM Workflow에 통합하려면
 1. [양식 데이터 모델을 호출하는 워크플로우 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)
 
    <!--
-    To create a new workflow with the editor, perform the following steps:
+    To create a workflow with the editor:
     1.  Go to your **AEM Forms Author** instance > **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
     1.  Click **[!UICONTROL Create]** > **[!UICONTROL Create Model]**. The Add Workflow Model dialog appears. 
     1. Specify **[!UICONTROL Title]** and **[!UICONTROL Name (optional)]**.

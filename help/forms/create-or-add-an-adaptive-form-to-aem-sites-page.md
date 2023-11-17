@@ -4,9 +4,9 @@ description: 적응형 양식을 만들거나 AEM Sites 페이지에 추가하�
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: 4cebcd58a0d6fd429cde3d739095c131cc76d9e5
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3212'
+source-wordcount: '3209'
 ht-degree: 20%
 
 ---
@@ -24,7 +24,7 @@ AEM Forms을 사용하면 AEM Sites 페이지에 양식을 원활하게 추가�
 
 AEM 페이지 편집기 를 사용하여 여러 양식을 신속하게 만들고 AEM Sites 페이지에 추가할 수 있습니다. 콘텐츠 작성자는 AEM 페이지 편집기를 사용하여 동적 동작, 유효성 검사, 데이터 통합, 기록 문서 생성 및 비즈니스 프로세스 자동화를 비롯한 적응형 양식 구성 요소의 기능을 사용하여 Sites 페이지 내에서 매끄러운 데이터 캡처 경험을 만들 수 있습니다. 또한 버전 관리, 타겟팅, 번역 및 다중 사이트 관리자와 같은 AEM Sites 페이지의 다양한 기능을 사용할 수 있습니다.
 
-AEM Forms Cloud Service은 적응형 양식 컨테이너 및 적응형 Forms - 임베디드 구성 요소 를 제공합니다. 적응형 양식 컨테이너를 사용하여 AEM Sites 페이지 또는 경험 조각에 새 양식을 만들 수 있습니다. 반면 적응형 Forms - 임베드 구성 요소를 사용하면 적응형 Forms 편집기를 사용하여 기존 적응형 양식을 추가하거나 새 양식을 만들 수 있습니다.
+AEM Forms Cloud Service은 적응형 양식 컨테이너 및 적응형 Forms - 임베디드 구성 요소 를 제공합니다. 적응형 양식 컨테이너를 사용하여 AEM Sites 페이지 또는 경험 조각에서 양식을 만들 수 있습니다. 반면 적응형 Forms - 임베드 구성 요소를 사용하면 기존 적응형 양식을 추가하거나 적응형 Forms 편집기를 사용하여 양식을 만들 수 있습니다.
 
 ![AEM Sites 페이지의 적응형 양식의 예](/help/forms/assets/adaptive-form-in-sites-page.png)
 
@@ -187,7 +187,7 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
    적응형 양식 컨테이너를 새 경험 조각으로 변환하거나 기존 경험 조각에 추가할 수 있는 대화 상자가 나타납니다
 1. 경험 조각 변형으로 변환 대화 상자에서 다음 옵션에 대한 값을 설정합니다.
 
-   * **작업:** 새 경험 조각을 만들거나 기존 경험 조각에 추가를 선택합니다.
+   * **작업:** 을(를) 선택하여 경험 조각을 만들거나 기존 경험 조각에 추가를 선택합니다.
    * **상위 경로:** 경험 조각을 호스팅할 폴더의 경로를 지정합니다. 옵션은 새 경험 조각을 만드는 경우에만 사용할 수 있습니다.
    * **템플릿:** 경험 조각 템플릿의 경로를 지정합니다. 경험 조각 템플릿이 없는 경우 [만들기](/help/implementing/developing/extending/experience-fragments.md). 옵션은 기존 경험 조각에 적응형 양식을 추가하는 데만 사용할 수 있습니다.
    * **조각 제목:** 경험 조각의 제목을 지정합니다. 제목은 경험 조각을 고유하게 식별합니다

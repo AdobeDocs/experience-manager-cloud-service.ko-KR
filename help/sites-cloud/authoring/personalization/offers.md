@@ -2,10 +2,10 @@
 title: 오퍼 생성 및 관리(오퍼 콘솔)
 description: 오퍼 콘솔을 사용하여 활동 경험에서 사용할 수 있는 오퍼를 생성하십시오.
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 98%
+source-wordcount: '1390'
+ht-degree: 96%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->새 경험 조각을 직접 만들고 레거시 오퍼에서 조각으로 콘텐츠를 수동 전송한 다음 레거시 오퍼를 삭제할 수도 있습니다.
+>경험 조각을 직접 만들고 레거시 오퍼의 콘텐츠를 조각으로 수동으로 전송한 다음 레거시 오퍼를 삭제할 수도 있습니다.
 
 >[!CAUTION]
 >

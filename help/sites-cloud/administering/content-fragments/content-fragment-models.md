@@ -4,9 +4,9 @@ description: 콘텐츠 조각 모델이 AEM에서 콘텐츠 조각의 기반 역
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3061'
+source-wordcount: '3060'
 ht-degree: 98%
 
 ---
@@ -354,7 +354,7 @@ type CompanyModel {
 
 * **조각 생성 허용**
 
-  이 기능을 사용하여 조각 작성자가 적절한 모델을 기반으로 새 조각을 만들 수 있습니다.
+  이를 통해 조각 작성자는 적절한 모델을 기반으로 조각을 만들 수 있습니다.
 
    * **조각 참조 합성** - 이 기능을 사용하면 조각 작성자가 여러 조각을 선택하여 합성을 빌드할 수 있습니다.
 

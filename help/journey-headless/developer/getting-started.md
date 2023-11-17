@@ -2,10 +2,10 @@
 title: AEM Headless as a Cloud Service 시작하기
 description: 이 AEM Headless 개발자 여정의 부분에서는 AEM Headless 사전 요구 사항에 대해 알아봅니다.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3096'
-ht-degree: 97%
+source-wordcount: '3095'
+ht-degree: 96%
 
 ---
 
@@ -117,7 +117,7 @@ AEM의 콘텐츠를 기존 외부 서비스로 제공하는 것이 최소 기본
 
 ### 단일 페이지 애플리케이션(SPA) 등 Headless 콘텐츠는 아직 외부에서 사용되지 않았습니다. {#do-not-have-a-spa}
 
-AEM에서 콘텐츠를 Headless 방식으로 사용하는 새 SPA를 만드는 것이 목표라면 콘텐츠 조각 기능을 사용하여 Headless 콘텐츠를 관리하고 AEM의 SPA 편집기 프레임워크로 SPA를 빌드할 수도 있습니다.
+AEM의 콘텐츠를 헤드리스 소비하는 SPA을 만드는 것이 목표라면 콘텐츠 조각과 같은 기능을 사용하여 헤드리스 콘텐츠를 관리하고 AEM SPA Editor 프레임워크를 사용하여 SPA을 구축할 수도 있습니다.
 
 SPA 편집기를 통해 SPA는 AEM에서 콘텐츠를 사용할 뿐만 아니라 콘텐츠 작성자에 의해 AEM 내부에서 완전한 편집이 가능하므로 AEM 내에서 Headless를 유연하게 게재하고 상황에 맞게 편집할 수 있습니다.
 

@@ -2,9 +2,9 @@
 title: 프로젝트 관리
 description: 프로젝트를 사용하면 리소스를 프로젝트 콘솔에서 액세스 및 관리할 수 있는 하나의 엔티티로 그룹화하여 프로젝트를 구성할 수 있습니다.
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '893'
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '892'
 ht-degree: 100%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 100%
 * Product Photo Shoot Project 
 -->
 
-프로젝트를 생성하는 절차는 프로젝트마다 동일합니다. 프로젝트 유형 간의 차이점에는 사용 가능한 [사용자 역할](/help/sites-cloud/authoring/projects/overview.md) 및 [워크플로](/help/sites-cloud/authoring/projects/workflows.md)가 포함됩니다. 새 프로젝트를 생성하는 방법:
+프로젝트를 생성하는 절차는 프로젝트마다 동일합니다. 프로젝트 유형 간의 차이점에는 사용 가능한 [사용자 역할](/help/sites-cloud/authoring/projects/overview.md) 및 [워크플로](/help/sites-cloud/authoring/projects/workflows.md)가 포함됩니다. To create a project:
 
 1. **프로젝트**&#x200B;에서 **만들기**&#x200B;를 탭/클릭하여 **프로젝트 만들기** 마법사를 엽니다.
 1. 템플릿을 선택하고 **다음**&#x200B;을 클릭합니다.
@@ -135,7 +135,7 @@ ht-degree: 100%
 
    >[!NOTE]
    >
-   >프로젝트 타일이 아직 프로젝트에 없을 경우 이 타일을 추가해야 할 수 있습니다. [타일 추가](#adding-items-to-a-tile)를 참조하십시오.
+   프로젝트 타일이 아직 프로젝트에 없을 경우 이 타일을 추가해야 할 수 있습니다. [타일 추가](#adding-items-to-a-tile)를 참조하십시오.
 
 1. **편집**&#x200B;을 탭/클릭합니다.
 1. 선택기를 **활성**&#x200B;에서 **비활성**(또는 그 반대)으로 변경합니다.

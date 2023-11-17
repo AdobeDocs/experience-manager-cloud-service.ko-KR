@@ -2,9 +2,9 @@
 title: 페이지 작성에 대한 빠른 시작 안내서
 description: 페이지 콘텐츠 작성을 시작하는 데 도움이 되는 빠른 개요 안내서
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1561'
+source-wordcount: '1560'
 ht-degree: 91%
 
 ---
@@ -76,7 +76,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 ### 새 페이지 만들기 {#creating-a-new-page}
 
-[새 페이지를 만들려면](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
+종료 [페이지 만들기](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
 
 1. 새 페이지를 만들 [위치로 이동](#finding-your-page)합니다.
 1. **만들기** 아이콘을 사용한 다음 목록에서 **페이지**&#x200B;를 선택합니다.

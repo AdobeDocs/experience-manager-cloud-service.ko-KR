@@ -4,10 +4,10 @@ description: Experience Cloud 설정 자동화는 간단한 UI 마법사 인터�
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 96%
+source-wordcount: '750'
+ht-degree: 92%
 
 ---
 
@@ -50,7 +50,7 @@ Experience Cloud 설정 자동화는 간단한 UI 마법사 인터페이스를 �
 1. **Analytics 통합** 버튼을 탭합니다.
 1. 그 결과로 표시되는 대화 상자에서 **보고서 세트 ID**&#x200B;의 이름을 입력합니다.
 
-   이 문자열은 선택된 AEM 사이트에 대한 분석 데이터를 위한 데이터 저장소인 Adobe Analytics에서 새 [보고서 세트 ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en)를 만들 때 사용됩니다. 제공된 문자열에는 고유성을 위해 환경 및 계층 식별자가 추가됩니다.
+   이 문자열은 [보고서 세트 ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en) 선택한 AEM 사이트에 대한 analytics 데이터를 위한 데이터 저장소인 Adobe Analytics에서. 제공된 문자열에는 고유성을 위해 환경 및 계층 식별자가 추가됩니다.
 
 1. 페이지 및 패널을 새로 고침한 다음 **통합 상태 확인**&#x200B;을 탭하여 자동화 상태를 확인합니다.
 

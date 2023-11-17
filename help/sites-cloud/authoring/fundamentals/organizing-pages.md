@@ -2,10 +2,10 @@
 title: 페이지 생성 및 구성
 description: AEM으로 페이지를 만들고 관리하여 웹 사이트를 구성하는 방법에 대해 알아봅니다.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2449'
-ht-degree: 98%
+source-wordcount: '2448'
+ht-degree: 97%
 
 ---
 
@@ -213,7 +213,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
    >
    >[페이지 이름 지정 규칙](#page-naming-conventions)을 참조하십시오.
 
-   새 페이지를 만드는 데 필요한 최소 정보는 **제목**&#x200B;입니다.
+   페이지를 만드는 데 필요한 최소 정보는 **제목**.
 
    ![페이지 제목 입력](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 

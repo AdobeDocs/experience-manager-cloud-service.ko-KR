@@ -4,10 +4,10 @@ description: 자산 보기에서 메타데이터를 관리하는 방법에 대�
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: cfc105d1-41fc-4418-9905-b2a28a348682
-source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 88%
+source-wordcount: '1556'
+ht-degree: 87%
 
 ---
 
@@ -111,7 +111,7 @@ MIME 하위 유형 > MIME 유형 > `default` 양식 > 기본 제공 양식
 
 작성된 양식은 사용자가 일치하는 MIME 유형의 자산을 업로드할 때 자동으로 적용됩니다.
 
-기존 양식을 재사용하여 새 양식을 만들려면 메타데이터 양식을 선택하고 도구 모음에서 **[!UICONTROL 복사]**&#x200B;를 클릭하고 이름을 입력한 다음 **[!UICONTROL 확인]**&#x200B;을 클릭합니다. 메타데이터 양식을 편집하여 변경할 수 있습니다. 양식을 변경하면 변경 후 업로드된 자산에 적용됩니다. 기존 자산은 변경되지 않습니다.
+기존 양식을 재사용하여 양식을 만들려면 메타데이터 양식을 선택하고 **[!UICONTROL 복사]** 도구 모음에서 이름을 입력하고 를 클릭합니다 **[!UICONTROL 확인]**. 메타데이터 양식을 편집하여 변경할 수 있습니다. 양식을 변경하면 변경 후 업로드된 자산에 적용됩니다. 기존 자산은 변경되지 않습니다.
 
 ## 속성 구성 요소 {#property-components}
 
@@ -145,7 +145,7 @@ MIME 하위 유형 > MIME 유형 > `default` 양식 > 기본 제공 양식
 * [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
-To reuse an existing form to create a new form, do one of these:
+To reuse an existing form to create a form, do one of these:
 
 * Select a metadata form and click **[!UICONTROL Copy]** from the toolbar, provide a name, and click **[!UICONTROL Confirm]**.
 

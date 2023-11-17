@@ -2,9 +2,9 @@
 title: ContextHub 확장
 description: 제공된 ContextHub 저장소 및 모듈이 솔루션 요구 사항을 충족하지 못할 경우 새로운 유형의 ContextHub 저장소 및 모듈을 정의합니다
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
 
 ## ContextHub UI 모듈 유형 작성 {#creating-contexthub-ui-module-types}
 
-다음과 같은 경우 사용자 정의 UI 모듈 유형을 만듭니다. [contextHub와 함께 설치됨](sample-modules.md) 요구 사항을 충족하지 않습니다. UI 모듈 유형을 만들려면 를 확장하여 새 UI 모듈 렌더러를 만듭니다. `ContextHub.UI.BaseModuleRenderer` 클래스를 지정한 다음 `ContextHub.UI`.
+다음과 같은 경우 사용자 정의 UI 모듈 유형을 만듭니다. [contextHub와 함께 설치됨](sample-modules.md) 요구 사항을 충족하지 않습니다. UI 모듈 유형을 만들려면 를 확장하여 UI 모듈 렌더러를 만듭니다. `ContextHub.UI.BaseModuleRenderer` 클래스를 지정한 다음 `ContextHub.UI`.
 
 UI 모듈 렌더러를 만들려면 `Class` ui 모듈을 렌더링하는 논리를 포함하는 개체입니다. 최소한 클래스는 다음 작업을 수행해야 합니다.
 

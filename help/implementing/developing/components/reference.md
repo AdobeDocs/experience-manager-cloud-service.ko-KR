@@ -2,9 +2,9 @@
 title: 구성 요소 참조 안내서
 description: 구성 요소 및 해당 구조에 대한 세부 사항에 대한 개발자 참조 안내서
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3648'
+source-wordcount: '3646'
 ht-degree: 2%
 
 ---
@@ -248,7 +248,7 @@ Content not found
 >See the [AEM Gems session](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html) on customizing dialog fields.
 -->
 
-구성 요소 대화 상자에서 사용할 새 위젯을 만들려면 새 Granite UI 필드 구성 요소를 만들어야 합니다.
+구성 요소 대화 상자에서 사용할 위젯을 만들려면 Granite UI 필드 구성 요소를 만들어야 합니다.
 
 대화 상자를 양식 요소의 간단한 컨테이너로 간주하면 대화 상자 콘텐츠의 기본 콘텐츠도 양식 필드로 볼 수 있습니다. 새 양식 필드를 만들려면 리소스 유형을 만들어야 합니다. 이는 새 구성 요소를 만드는 것과 같습니다. Granite UI는 이러한 작업에서 상속할 일반 필드 구성 요소를 제공합니다(사용). `sling:resourceSuperType`):
 

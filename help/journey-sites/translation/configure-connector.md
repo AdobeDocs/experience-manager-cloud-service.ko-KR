@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1162'
 ht-degree: 97%
 
 ---
@@ -71,7 +71,7 @@ AEM의 번역 통합 프레임워크(TIF)를 서드파티 번역 서비스와 �
 * 인간 번역이 수행되는지 또는 기계 번역이 수행되는지 여부
 * 태그 등 페이지와 연결된 다른 콘텐츠 번역 여부
 
-새 번역 구성을 만들려면:
+번역 구성을 만들려면 다음 작업을 수행하십시오.
 
 1. 전역 탐색 메뉴에서 **도구** -> **클라우드 서비스** -> **번역 클라우드 서비스**&#x200B;를 클릭하거나 탭합니다.
 1. 콘텐츠 구조에서 구성을 만들고자 하는 위치로 이동합니다. 보통 특정 프로젝트를 기반으로 하거나 전역일 수 있습니다.

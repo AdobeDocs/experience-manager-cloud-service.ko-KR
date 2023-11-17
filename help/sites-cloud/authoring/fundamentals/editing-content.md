@@ -2,10 +2,10 @@
 title: 페이지 콘텐츠 편집
 description: 페이지를 생성하면 콘텐츠를 편집하여 필요한 업데이트를 수행할 수 있습니다.
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2978'
-ht-degree: 97%
+source-wordcount: '2975'
+ht-degree: 96%
 
 ---
 
@@ -161,7 +161,7 @@ ht-degree: 97%
 
 ### 자산 브라우저를 사용하여 구성 요소 삽입 {#inserting-a-component-using-the-assets-browser}
 
-[자산 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)에서 자산을 끌어 페이지에 새 구성 요소를 추가할 수도 있습니다. 이렇게 하면 적절한 유형의 새 구성 요소가 자동으로 만들어집니다(자산이 들어 있음).
+[자산 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)에서 자산을 끌어 페이지에 새 구성 요소를 추가할 수도 있습니다. 이렇게 하면 적절한 유형의 구성 요소가 자동으로 만들어집니다(에셋이 들어 있음).
 
 이 동작은 설치에 대해 구성할 수 있습니다. 자세한 내용은 단락 시스템 구성 및 자산 드래그를 통한 구성 요소 인스턴스 생성을 참조하십시오. <!--This behavior can be configured for your installation. See [Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) for further details.-->
 
@@ -261,7 +261,7 @@ ht-degree: 97%
 
 * **경험 조각 변형으로 변환**
 
-  이 작업에서는 선택한 구성 요소에서 새 [경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)을 생성하거나 기존 경험 조각에 추가할 수 있습니다.
+  이렇게 하면 다음을 만들 수 있습니다. [경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) 선택한 구성 요소에서 선택하거나 기존 경험 조각에 추가합니다.
 
   ![경험 조각 변형으로 변환 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 

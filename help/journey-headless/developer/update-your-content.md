@@ -2,8 +2,8 @@
 title: AEM Assets API를 통해 콘텐츠를 업데이트하는 방법
 description: 이 AEM Headless 개발자 여정의 부분에서는 REST API를 통해 콘텐츠 조각의 콘텐츠에 액세스하고 업데이트하는 방법을 대해 알아봅니다.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: b302aa1140fc14044e85fd61ed2d361b71e6be34
-workflow-type: ht
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
 source-wordcount: '1096'
 ht-degree: 100%
 
@@ -198,7 +198,7 @@ Content fragments:
 
 Currently the models that define the structure of a content fragment are not exposed through an HTTP API. Therefore the *consumer* needs to know about the model of a fragment (at least a minimum) - although most information can be inferred from the payload; as data types, etc. are part of the definition.
 
-To create a new content fragment, the (internal repository) path of the model has to be provided.
+To create a content fragment, the (internal repository) path of the model has to be provided.
 
 ### Associated Content {#associated-content}
 

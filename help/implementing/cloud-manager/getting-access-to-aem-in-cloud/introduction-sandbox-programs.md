@@ -2,10 +2,10 @@
 title: 샌드박스 프로그램 소개
 description: 샌드박스 프로그램이 프로덕션 프로그램과 어떻게 다른지 알아봅니다.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 100%
+source-wordcount: '474'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ## 자동 생성 {#auto-creation}
 
-샌드박스 프로그램에는 자동 생성 기능이 있습니다. 새 샌드박스 프로그램을 만들 때마다 Cloud Manager는 자동으로 다음 작업을 수행합니다.
+샌드박스 프로그램에는 자동 생성 기능이 있습니다. 샌드박스 프로그램을 만들 때마다 Cloud Manager는 자동으로 다음 작업을 수행합니다.
 
 * AEM Sites 및 AEM Assets를 프로그램의 솔루션으로 추가합니다.
 * [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 기반으로 하는 샘플 프로젝트로 프로젝트 git 저장소를 설정합니다.

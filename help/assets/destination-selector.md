@@ -3,13 +3,13 @@ title: AEM as a Cloud Service 대상 선택기
 description: AEM 대상 선택기를 사용하여 사용할 수 있는 자산을 원본 자산의 사본으로 표시하고 선택합니다.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: cf783a91d33bc7a42e177ace3ca49844f14a6a79
+exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1908'
+source-wordcount: '1906'
 ht-degree: 86%
 
 ---
-
 
 # 마이크로 프론트엔드 대상 선택기 {#Overview}
 
@@ -212,7 +212,7 @@ interface SelectedDestination {
 
 ### 예 1: 대상 선택기에서 폴더 만들기
 
-대상 선택기 를 사용하면 특정 위치에서 자산을 업로드, 이동 또는 복사할 새 폴더를 만들 수 있습니다.
+대상 선택기 를 사용하면 특정 위치에서 에셋을 업로드하거나, 이동하거나, 복사할 폴더를 만들 수 있습니다.
 
 ![create-folder-destination-selector](assets/create-folder-destination-selector.png)
 
@@ -261,7 +261,7 @@ interface SelectedDestination {
 
 ### 새 폴더 만들기 {#create-new-folder}
 
-폴더의 대상 폴더에 새 폴더를 만들 수 있습니다. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+폴더의 대상 폴더에 폴더를 만들 수 있습니다. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 
 ### 보기 유형 {#types-of-view}
 

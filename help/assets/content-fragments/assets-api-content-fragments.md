@@ -3,9 +3,9 @@ title: Assets HTTP API의 Adobe Experience Manager as a Cloud Service 콘텐츠 
 description: Adobe Experience Manager의 Headless 게재 기능의 중요한 부분인 Assets HTTP API의 콘텐츠 조각에 대한 지원에 대해 알아봅니다.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1793'
+source-wordcount: '1791'
 ht-degree: 13%
 
 ---
@@ -263,7 +263,7 @@ A [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) 는 �
 
 몇 가지 제한 사항이 있습니다.
 
-* **컨텐츠 조각 모델은 현재 지원되지 않습니다**: 읽거나 만들 수 없습니다. 새 콘텐츠 조각을 만들거나 기존 콘텐츠 조각을 업데이트하려면 개발자가 콘텐츠 조각 모델에 대한 올바른 경로를 알고 있어야 합니다. 현재 이러한 기능에 대한 개요를 얻는 유일한 방법은 관리 UI를 사용하는 것입니다.
+* **컨텐츠 조각 모델은 현재 지원되지 않습니다**: 읽거나 만들 수 없습니다. 기존 콘텐츠 조각을 만들거나 업데이트하려면 개발자는 콘텐츠 조각 모델에 대한 올바른 경로를 알고 있어야 합니다. 현재 이러한 기능에 대한 개요를 얻는 유일한 방법은 관리 UI를 사용하는 것입니다.
 * **참조는 무시됩니다.**. 현재 기존 콘텐츠 조각이 참조되는지 여부에 대한 검사가 없습니다. 따라서 예를 들어 콘텐츠 조각을 삭제하면 삭제된 콘텐츠 조각에 대한 참조가 포함된 페이지에 문제가 발생할 수 있습니다.
 * **JSON 데이터 유형** 의 REST API 출력 *JSON 데이터 유형* 은(는) *문자열 기반 출력*.
 

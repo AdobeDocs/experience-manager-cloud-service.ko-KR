@@ -2,7 +2,7 @@
 title: Cloud Manager 및 빠른 사이트 생성 워크플로 이해
 description: Cloud Manager와 이것이 새로운 빠른 사이트 생성 프로세스를 결합하는 방법에 대해 알아봅니다.
 exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 96%

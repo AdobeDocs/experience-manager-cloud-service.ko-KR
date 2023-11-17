@@ -2,9 +2,9 @@
 title: 제품 카탈로그 페이지 및 템플릿 관리
 description: 제품 카탈로그 페이지 및 템플릿 관리 방법 알아보기
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '718'
 ht-degree: 1%
 
 ---

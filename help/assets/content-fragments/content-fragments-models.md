@@ -2,10 +2,10 @@
 title: 컨텐츠 조각 모델(자산 - 컨텐츠 조각)
 description: 콘텐츠 조각 모델이 AEM에서 Headless 콘텐츠의 기반 역할을 하는 방법과 구조화된 콘텐츠로 콘텐츠 조각을 만드는 방법에 대해 알아봅니다.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: f499edbc05b71495c072564bb065a07c34a9e236
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2937'
-ht-degree: 95%
+source-wordcount: '2935'
+ht-degree: 94%
 
 ---
 
@@ -297,7 +297,7 @@ type CompanyModel {
 
 * **조각 생성 허용**
 
-  이 기능을 사용하면 조각 작성자가 적절한 모델을 기반으로 새 조각을 만들 수 있습니다.
+  이를 통해 조각 작성자는 적절한 모델을 기반으로 조각을 만들 수 있습니다.
 
    * **조각 참조 합성** - 이 기능을 사용하면 조각 작성자가 여러 조각을 선택하여 합성을 빌드할 수 있습니다.
 

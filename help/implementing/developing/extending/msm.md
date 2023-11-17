@@ -1,13 +1,13 @@
 ---
 title: 다중 사이트 관리자 확장
 description: 다중 사이트 관리자의 기능을 확장하는 방법에 대해 알아봅니다.
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
-workflow-type: ht
-source-wordcount: '2436'
-ht-degree: 100%
+exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '2435'
+ht-degree: 99%
 
 ---
-
 
 # 다중 사이트 관리자 확장 {#extending-the-multi-site-manager}
 
@@ -165,7 +165,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 ### 롤아웃 구성 만들기 {#create-the-rollout-configuration}
 
-새 롤아웃 구성을 만들려면 다음 작업을 수행하십시오.
+롤아웃 구성을 만들려면 다음 작업을 수행하십시오.
 
 1. `https://<host>:<port>/crx/de`에서 CRXDE Lite를 엽니다.
 

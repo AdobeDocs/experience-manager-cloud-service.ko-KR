@@ -2,9 +2,9 @@
 title: Screens에서 as a Cloud Service 채널 만들기 및 관리
 description: 이 페이지에서는 Screens에서 채널을 as a Cloud Service으로 만들고 관리하는 방법을 설명합니다.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1086'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
 >**전제 조건**
 >안내서의 이 섹션을 시작하기 전에 다음을 검토하십시오. [Screens에서 프로젝트 생성 및 관리 as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
 
-아래 단계에 따라 Screens as a Cloud Service으로 새 시퀀스 채널을 만드십시오.
+아래 단계에 따라 Screens as a Cloud Service으로 시퀀스 채널을 만드십시오.
 
 1. Screens 콘텐츠 공급자로 이동합니다.
 

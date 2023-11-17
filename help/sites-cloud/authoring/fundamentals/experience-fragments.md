@@ -2,10 +2,10 @@
 title: 경험 조각
 description: Adobe Experience Manager as a Cloud Service 경험 조각을 사용하여 경험을 재사용이 가능하고 및 유연하게 만듭니다.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: bad2225e7c5f2554ebd51c0e7e737296c3aa552b
-workflow-type: ht
-source-wordcount: '2044'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '2043'
+ht-degree: 99%
 
 ---
 
@@ -279,7 +279,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 ### 빌딩 블록 작성 {#creating-a-building-block}
 
-새 빌딩 블록을 작성하려면 다음 작업을 수행하십시오.
+빌딩 블록을 생성하려면:
 
 1. 경험 조각 편집기에서 재사용할 구성 요소를 선택합니다.
 

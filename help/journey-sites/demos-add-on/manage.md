@@ -2,9 +2,9 @@
 title: 데모 사이트 관리
 description: 내 데모 사이트를 관리하는 데 도움이 되는 도구 및 이를 제거하는 방법에 대해 알아봅니다.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '943'
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '942'
 ht-degree: 100%
 
 ---
@@ -93,7 +93,7 @@ AEM 기능 세트를 테스트한 다음에는 데모 사이트 또는 이를 �
 축하합니다! AEM 참조 데모 추가 기능 여정을 완료했습니다! 이제
 
 * Cloud Manager의 기본 사항에 대해 이해하고 파이프라인이 AEM에 콘텐츠와 구성을 전달하는 방법을 이해할 수 있습니다.
-* Cloud Manager를 사용하여 새 프로그램을 제작하는 방법을 이해할 수 있습니다.
+* Cloud Manager를 사용하여 프로그램을 제작하는 방법을 이해할 수 있습니다.
 * 새 프로그램에 대해 참조 데모 추가 기능을 활성화하고 파이프라인을 실행하여 추가 기능 콘텐츠를 배포하는 방법을 이해할 수 있습니다.
 * AEM 작성 환경에 액세스하여 템플릿을 기반으로 사이트를 생성하는 방법을 이해할 수 있습니다.
 * 셀프서비스 데모 유틸리티에 액세스하는 방법을 이해할 수 있습니다.

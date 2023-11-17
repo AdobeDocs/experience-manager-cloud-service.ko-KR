@@ -2,9 +2,9 @@
 title: CRXDE Lite 사용
 description: CRXDE Lite은 AEM 빠른 시작의 일부이며 브라우저 내에서 로컬 개발 환경의 저장소에 액세스하고 수정할 수 있습니다.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1684'
+source-wordcount: '1683'
 ht-degree: 1%
 
 ---
@@ -206,7 +206,7 @@ CRXDE Lite을 사용하여 속성을 만들려면 다음 작업을 수행하십�
 
 ## 파일 만들기 {#creating-a-file}
 
-CRXDE Lite으로 새 파일을 만들려면 다음 작업을 수행하십시오.
+CRXDE Lite으로 파일을 만들려면:
 
 1. 브라우저에서 CRXDE Lite을 엽니다.
 1. 다음에서 [**탐색자 창**,](#explorer-pane) 파일을 만들 구성 요소를 마우스 오른쪽 단추로 클릭하고 **만들기**, 그런 다음 **파일 만들기**.

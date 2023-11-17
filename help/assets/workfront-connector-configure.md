@@ -4,9 +4,9 @@ description: 구성 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1770'
 ht-degree: 1%
 
 ---
@@ -98,7 +98,7 @@ Adobe Workfront 문서와 에셋 간의 메타데이터 매핑은 AEM 메타데�
 매핑을 구성하려면 다음 단계를 수행합니다.
 
 1. 다음으로 이동 **도구** > **에셋** > **메타데이터 스키마**.
-1. 편집할 메타데이터 스키마 양식을 선택하고 을(를) 클릭합니다. **편집** 또는 처음부터 새 메타데이터 스키마를 만들 수 있습니다.
+1. 편집할 메타데이터 스키마 양식을 선택하고 을(를) 클릭합니다. **편집** 또는 메타데이터 스키마를 처음부터 만듭니다.
 1. 편집하고 선택할 메타데이터 스키마 양식 필드를 선택합니다 **설정** 오른쪽 패널의 탭입니다.
 1. 위치 [!DNL Workfront] 사용자 정의 양식 필드 [!DNL Workfront] 선택한 AEM 속성에 매핑할 필드입니다. 사용 가능한 옵션은 다음과 같습니다.
 

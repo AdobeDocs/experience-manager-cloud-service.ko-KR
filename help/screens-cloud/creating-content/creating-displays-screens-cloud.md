@@ -2,9 +2,9 @@
 title: Screens에서 디스플레이 제작 및 관리 as a Cloud Service
 description: 이 페이지에서는 Screens as a Cloud Service으로 디스플레이를 만들고 관리하는 방법에 대해 설명합니다.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '657'
 ht-degree: 3%
 
 ---
@@ -67,7 +67,7 @@ Screens Services Provider에서 디스플레이를 삭제할 수 있습니다.
 
 1. 선택 **폴더 숨기기** 다시 닫으십시오.
 
-## 새 폴더를 만드는 방법 {#create-folder}
+## 폴더를 만드는 방법 {#create-folder}
 
 폴더를 만들어 디스플레이를 더욱 효율적으로 구성할 수 있습니다.
 
@@ -86,7 +86,7 @@ Screens Services Provider에서 디스플레이를 삭제할 수 있습니다.
 
    ![이미지](/help/screens-cloud/assets/display/Createfolder2.png)
 
-## 새 중첩 폴더를 만드는 방법 {#nested-folder}
+## 중첩 폴더를 만드는 방법 {#nested-folder}
 
 1. 표시 재고 뷰로 이동합니다.
 
