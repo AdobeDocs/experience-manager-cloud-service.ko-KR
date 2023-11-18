@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '985'
 ht-degree: 3%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 * 쿼리 [!DNL Microsoft Dynamics] 데이터 서버 및 적응형 Forms 미리 채우기
 * 에 데이터 쓰기 [!DNL Microsoft Dynamics] 적응형 양식 제출 시
-* 데이터 쓰기 [!DNL Microsoft Dynamics] 를 통해 양식 데이터 모델에 정의된 사용자 지정 엔티티 또는 그 반대로
+* 데이터 쓰기 [!DNL Microsoft Dynamics] 를 통해 양식 데이터 모델에 정의된 사용자 지정 엔티티 및 그 반대
 
 <!--[!DNL Experience Manager Forms] add-on package also includes reference OData configuration that you can use to quickly integrate [!DNL Microsoft Dynamics] with [!DNL Experience Manager Forms].-->
 
@@ -92,7 +92,7 @@ AD FS(Active Directory Federation Services) 컴퓨터에 OAuth 클라이언트�
 >
 >을 통합하는 동안에만 이 절차를 사용하십시오. [!DNL Experience Manager Forms] 온-프레미스 [!DNL Microsoft Dynamics] 서버입니다.
 
-1. 다음 명령을 실행합니다.
+1. 다음 명령을 실행합니다:
 
    `Add-AdfsClient -ClientId “<Client-ID>” -Name "<name>" -RedirectUri "<redirect-uri>" -GenerateClientSecret`
 

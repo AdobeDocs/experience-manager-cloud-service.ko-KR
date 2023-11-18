@@ -2,10 +2,10 @@
 title: ContextHub 데이터를 사용하여 페이지 미리보기
 description: ContextHub 도구 모음은 ContextHub 저장소의 데이터를 표시하고 저장소 데이터를 변경할 수 있도록 해 주며 콘텐츠를 미리 보는 데 유용합니다.
 exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 49%
+ht-degree: 42%
 
 ---
 
@@ -46,7 +46,7 @@ UI 모듈은 도구 모음에 있는 하나 이상의 ContextHub 저장소에서
 
 ### 팝업 콘텐츠 {#popup-content}
 
-일부 UI 모듈을 클릭하거나 탭하면 팝업 오버레이를 표시합니다. 일반적으로 팝업은 도구 모음에 표시되는 내용 이외의 추가 정보를 포함합니다.
+일부 UI 모듈은 클릭하거나 탭하면 팝업 오버레이를 표시합니다. 일반적으로 팝업에는 도구 모음에 표시되는 내용 이외의 추가 정보가 포함됩니다.
 
 ![ContextHub 프로필 정보](/help/sites-cloud/authoring/assets/contexthub-profile.png)
 

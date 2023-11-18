@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.9.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.9.0 릴리스 정보입니다.'
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1441'
-ht-degree: 96%
+source-wordcount: '1442'
+ht-degree: 95%
 
 ---
 
@@ -120,6 +120,7 @@ Edge Delivery는 고객 상호 작용 시점에서 측정 가능한 비즈니스
 ### 트래픽 필터 규칙(WAF 규칙 포함) 얼리 어답터 프로그램 {#waf-early-adopter}
 
 다음을 기준으로 CDN에서 트래픽을 필터링할 수 있습니다.
+
 * 요청 헤더 및 속성(예: IP 주소)
 * 악성 트래픽과 관련된 것으로 알려진 트래픽 패턴
 

@@ -2,9 +2,9 @@
 title: 페이지 템플릿
 description: 페이지 템플릿은 새 페이지의 기반으로 사용되는 페이지를 만들 때 사용됩니다
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '3279'
+source-wordcount: '3278'
 ht-degree: 8%
 
 ---
@@ -449,7 +449,7 @@ GITHUB의 코드
 * 구조와 병합( `/structure`)을 클릭하여 페이지를 만듭니다.
 * 생성 후 초기 콘텐츠가 변경되면 기존 페이지가 업데이트되지 않습니다.
 * 다음 `root` 노드에는 최종 페이지에서 사용할 수 있는 항목을 정의하는 구성 요소 목록이 있습니다.
-* 콘텐츠가 구조 모드의 구성 요소에 추가되고 해당 구성 요소의 잠금이 해제된 경우(또는 그 반대의 경우) 이 콘텐츠는 초기 콘텐츠로 사용됩니다.
+* 콘텐츠가 구조 모드의 구성 요소에 추가되고 해당 구성 요소의 잠금이 해제된 경우(또는 반대로) 이 콘텐츠는 초기 콘텐츠로 사용됩니다.
 
 ### 레이아웃 {#layout}
 

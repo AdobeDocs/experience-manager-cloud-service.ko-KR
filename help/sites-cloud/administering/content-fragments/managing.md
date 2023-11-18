@@ -4,10 +4,10 @@ description: Headless 콘텐츠 기반 또는 페이지 작성을 위해 콘솔�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2531'
-ht-degree: 94%
+ht-degree: 92%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->프로젝트 팀은 필요한 경우 콘솔과 편집기를 사용자 정의할 수 있습니다. 자세한 내용은 [콘텐츠 조각 콘솔 및 편집기 사용자 정의](/help/implementing/developing/extending/content-fragments-console-and-editor.md)를 참조하십시오.
+>필요한 경우 프로젝트 팀이 콘솔 및 편집기를 사용자 지정할 수 있습니다. 자세한 내용은 [콘텐츠 조각 콘솔 및 편집기 사용자 정의](/help/implementing/developing/extending/content-fragments-console-and-editor.md)를 참조하십시오.
 
 [콘텐츠 조각 모델](#creating-a-content-model)을 정의한 후 이를 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 
@@ -229,7 +229,7 @@ ht-degree: 94%
    * **위치** - 현재 위치로 자동 완성되지만 필요한 경우 다른 위치를 선택할 수 있습니다.
    * **콘텐츠 조각 모델** - 드롭다운 목록에서 조각의 기반으로 사용할 모델을 선택합니다.
    * **제목**
-   * **이름** - **제목**&#x200B;을 기반으로 자동 완성되지만 필요한 경우 편집할 수 있습니다.
+   * **이름** - 다음을 기반으로 자동 완성됨: **제목**, 그러나 필요한 경우 편집할 수 있습니다
    * **설명**
 
    ![새 콘텐츠 조각 대화 상자](assets/cf-managing-new-cf-dialog.png)

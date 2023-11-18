@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2023'
+source-wordcount: '2022'
 ht-degree: 0%
 
 ---
@@ -138,7 +138,7 @@ Ultramarine에서 액세스할 수 있는 테마를 기존 적응형 양식에 �
 
 시각 장애가 있는 사용자는 텍스트와 배경 간의 높은 대비를 통해 디지털 콘텐츠를 읽을 수 있습니다. 충분한 대비가 없으면 일부 사용자의 경우 양식이 불가능하지는 않지만 읽기 어려워질 수 있습니다.
 
-기본 글꼴과 배경색(흰색 배경에 검정색 콘텐츠)을 사용하는 것이 좋습니다. 기본 색상을 변경하는 경우 밝은 배경색에서 어두운 전경색을 선택하거나 그 반대로 선택합니다.
+기본 글꼴과 배경색(흰색 배경에 검정색 콘텐츠)을 사용하는 것이 좋습니다. 기본 색상을 변경하는 경우 밝은 배경색에서 어두운 전경색을 선택하거나 반대로 선택합니다.
 
 <!-- See [Creating custom themes for Adaptive Forms](creating-custom-adaptive-form-themes.md), for more information about changing the color contrast and theme for the Adaptive Forms. -->
 

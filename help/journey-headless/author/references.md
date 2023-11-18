@@ -2,10 +2,10 @@
 title: 콘텐츠 조각의 참조 사용에 대해 알아보기
 description: 콘텐츠, 다른 조각과 자산(미디어)의 콘텐츠 조각에서 참조를 사용하는 방법에 대해 알아봅니다. Headless CMS 작성에서 중첩된 조각의 필요성과 메커니즘을 소개합니다.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 95%
+source-wordcount: '705'
+ht-degree: 88%
 
 ---
 
@@ -27,13 +27,13 @@ AEMaaCS를 통한 작성, 특히 콘텐츠 조각 작성에 대한 소개와 함
    * 콘텐츠 참조
    * 자산/미디어 참조
    * 조각 참조
-   * 텍스트 블록 내 애드혹 참조
+   * 텍스트 블록 내의 즉석 참조
 
 ## 참조란 무엇입니까? {#what-are-references}
 
 참조는 다른 콘텐츠, 자산(이미지에서와 같이) 또는 다른 조각 등 리소스를 연결하는 메커니즘일 뿐입니다. 매우 유사하지만 차이점이 몇 가지 있습니다.
 
-일부 참조에는 전용 데이터 유형(예: 콘텐츠 참조 및 조각 참조)이 있지만 다른 참조는 텍스트 블록 내 참조로 추가됩니다(자산 참조 및 애드혹 참조).
+일부 참조에는 전용 데이터 유형(예: 콘텐츠 참조 및 조각 참조)이 있지만 다른 참조는 단순히 텍스트 블록 내에 참조로 추가됩니다(에셋 참조 및 즉석 참조).
 
 ![콘텐츠 조각 - 참조](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
@@ -96,7 +96,7 @@ AEMaaCS를 통한 작성, 특히 콘텐츠 조각 작성에 대한 소개와 함
 
 ## 애드혹 참조 {#adhoc-references}
 
-애드혹 참조는 텍스트 블록 내에서 간단한 링크로 추가할 수 있습니다.
+즉석 참조는 텍스트 블록 내에 간단한 링크로 추가할 수 있습니다.
 
 ![콘텐츠 조각 - 애드혹 참조](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 

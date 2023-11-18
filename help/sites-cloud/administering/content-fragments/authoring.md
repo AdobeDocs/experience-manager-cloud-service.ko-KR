@@ -4,7 +4,7 @@ description: 콘텐츠 조각에 대한 콘텐츠를 작성한 다음 목적에 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2251'
 ht-degree: 96%
@@ -486,4 +486,4 @@ URL이 정의되면 **미리보기** 버튼이 활성화됩니다. 이 버튼을
 
 * [원본 콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-variations.md)에 대한 자세한 내용은 자산 설명서를 참조하십시오. **자산** 콘솔과 **콘텐츠 조각** 콘솔 모두에서 사용할 수 있습니다.
 
-* 프로젝트 팀은 필요한 경우 편집기를 사용자 정의할 수 있습니다. 자세한 내용은 [콘텐츠 조각 콘솔 및 편집기 사용자 정의](/help/implementing/developing/extending/content-fragments-console-and-editor.md)를 참조하십시오.
+* 필요한 경우 프로젝트 팀이 편집기를 사용자 지정할 수 있습니다. 자세한 내용은 [콘텐츠 조각 콘솔 및 편집기 사용자 정의](/help/implementing/developing/extending/content-fragments-console-and-editor.md)를 참조하십시오.

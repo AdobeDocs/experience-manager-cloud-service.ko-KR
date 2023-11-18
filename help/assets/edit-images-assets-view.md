@@ -3,10 +3,10 @@ title: 이미지 편집
 description: ' [!DNL Adobe Photoshop Express] 기반 옵션을 사용하여 이미지를 편집하고 업데이트된 이미지를 버전으로 저장합니다.'
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: 30b8c9b8eaee6292323dde4b436c29fe8290c910
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 100%
 1. 이미지를 선택하고 **편집**&#x200B;을 클릭합니다.
 2. 왼쪽 창에서 사용할 수 있는 빠른 작업에서 **[!DNL Resize Image]**&#x200B;을 클릭합니다.
 3. 드롭다운 목록의 **[!UICONTROL 크기 조정]**&#x200B;에서 적절한 소셜 미디어 플랫폼을 선택하고 표시되는 옵션에서 이미지 크기 조정을 선택합니다.
-4. 필요한 경우 **[!UICONTROL 이미지 크기 조정]** 필드를 사용하여 이미지 크기를 조정합니다.
+4. 필요한 경우 를 사용하여 이미지 크기 조정 **[!UICONTROL 이미지 크기 조절]** 필드.
 5. **[!DNL Apply]**를 클릭하여 변경 내용을 적용합니다.
    ![Adobe Express를 사용하여 이미지 편집](assets/adobe-express-resize-image.png)
 

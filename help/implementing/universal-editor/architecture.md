@@ -2,10 +2,10 @@
 title: Universal Editor 아키텍처
 description: Universal Editor의 아키텍처 및 해당 서비스와 계층 간에 데이터가 흐르는 방식에 대해 알아봅니다.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 97%
+source-wordcount: '651'
+ht-degree: 93%
 
 ---
 
@@ -34,7 +34,7 @@ Universal Editor의 아키텍처 및 해당 서비스와 계층 간에 데이터
 ### 편집기 {#editors}
 
 * **Universal Editor** - Universal Editor는 계측된 DOM을 사용하여 콘텐츠의 내부 편집을 허용합니다. 필요한 메타데이터에 대한 자세한 내용은 [속성 및 유형](attributes-types.md)을 참조하십시오. AEM의 계측 예시는 [AEM에서 Universal Editor 시작하기](getting-started.md) 문서를 참조하십시오.
-* **속성 레일** - 구성 요소의 일부 속성(예: 캐러셀의 회전 시간 또는 항상 열리거나 닫혀 있어야 하는 아코디언 탭 정보)은 컨텍스트 내에서 편집할 수 없습니다. 이러한 구성 요소 정보를 편집할 수 있도록 편집기의 측면 레일에 양식 기반 편집기가 제공됩니다.
+* **속성 레일** - 회전판의 회전 시간이나 항상 열거나 닫아야 하는 아코디언 탭 등 구성 요소의 일부 속성을 컨텍스트에서 편집할 수 없습니다. 이러한 구성 요소 정보를 편집할 수 있도록 편집기의 측면 레일에 양식 기반 편집기가 제공됩니다.
 
 ### 원격 앱 {#remote-app}
 

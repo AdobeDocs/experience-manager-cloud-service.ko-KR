@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.3.0 릴리스 정보입니다.'
 description: "[!DNL Adobe Experience Manager] 2021.3.0용 as a Cloud Service 릴리스 노트"
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1290'
 ht-degree: 37%
@@ -74,7 +74,7 @@ Adobe 담당자에게 문의하여 데모를 받거나 서비스에 등록할 �
 
 * 이제 제품 세부 사항 구성 요소를 모든 콘텐츠 페이지에서 사용하고 구성할 수 있습니다
 
-* 최신 CIF 코어 구성 요소 버전 v1.9.0이 포함된 CIF Venia 참조 사이트 - 2021.03.25가 릴리스되었습니다. 다음을 참조하십시오 [CIF Venia 참조 사이트](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) 을 참조하십시오.
+* 최신 CIF 핵심 구성 요소 버전 v1.9.0이 포함된 CIF Venia 참조 사이트 - 2021.03.25가 릴리스되었습니다. 다음을 참조하십시오 [CIF Venia 참조 사이트](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) 을 참조하십시오.
 
 * CIF 코어 구성 요소 v1.9.0이 릴리스되었습니다. 다음을 참조하십시오 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) 을 참조하십시오.
 

@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1329'
-ht-degree: 83%
+source-wordcount: '1326'
+ht-degree: 82%
 
 ---
 
@@ -157,7 +157,7 @@ AEM Sites 번역 여정의 이전 문서인 [콘텐츠 번역](configure-connect
 
 * 이제 AEM의 콘텐츠 관리 기능에 대한 기본 사항을 이해할 수 있습니다.
 * AEM의 번역 기능 및 이들과 사이트 콘텐츠의 관련성에 대해 이해할 수 있습니다.
-* 나만의 콘텐츠 번역을 시작할 수 있습니다.
+* 나만의 콘텐츠를 번역해 보세요.
 
 이제 AEM에서 나만의 콘텐츠를 번역할 준비가 완료되었습니다. 그러나 AEM은 강력한 도구로서 다양한 추가 옵션을 제공합니다. 이 여정에서 확인한 기능들에 대한 자세한 내용은 [추가 리소스 섹션](#additional-resources)에서 사용할 수 있는 몇 가지 추가 리소스를 확인하십시오.
 

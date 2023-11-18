@@ -2,10 +2,10 @@
 title: 페이지 게시
 description: AEM에서 다양한 메커니즘을 사용하여 페이지를 게시 및 게시 취소하는 방법에 대해 알아봅니다.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1801'
-ht-degree: 94%
+source-wordcount: '1805'
+ht-degree: 93%
 
 ---
 
@@ -66,7 +66,7 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
    * 게시할 참조가 없으면 페이지가 직접 게시됩니다.
    * 페이지에 게시해야 하는 참조가 있을 경우, **게시 마법사**&#x200B;에 나열되며 여기서 다음과 같은 작업을 수행할 수 있습니다.
-      * 페이지와 함께 게시할 자산, 태그 등 하나를 지정한 다음 **게시**&#x200B;를 사용하여 프로세스를 완료합니다.
+      * 페이지와 함께 게시할 자산, 태그 등을 지정한 다음 사용합니다 **게시** 을 클릭하여 프로세스를 완료합니다.
       * **취소**&#x200B;를 사용하여 작업을 중단합니다.
 
    ![페이지를 사용하여 참조 게시](/help/sites-cloud/authoring/assets/publishing-references.png)

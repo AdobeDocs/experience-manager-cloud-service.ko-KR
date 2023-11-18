@@ -4,10 +4,10 @@ description: 사용할 수 있는 강력한 Live Copy 동기화 옵션 및 프�
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2414'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -174,7 +174,7 @@ MSM을 사용하면 일반적으로 사용되는 롤아웃 구성 세트를 지�
 
    ![상위 페이지에서 Live Copy 상속](../assets/live-copy-inherit.png)
 
-1. 필요한 경우 **Live Copy 상속** 플래그를 조정합니다. 이 옵션이 선택되어 있으면 Live Copy 구성이 모든 하위 항목에 적용됩니다.
+1. 필요한 경우 를 조정합니다. **Live Copy 상속** 플래그. 이 옵션이 선택되어 있으면 Live Copy 구성이 모든 하위 항목에 적용됩니다.
 
 1. **상위 항목에서 롤아웃 구성 상속** 속성을 지우고 목록에서 롤아웃 구성을 한 개 이상 선택합니다.
 

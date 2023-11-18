@@ -2,9 +2,9 @@
 title: Screens as a Cloud Service에 대한 사용자 정의 구성 요소 개발
 description: 다음 자습서에서는 AEM Screens에 대한 사용자 지정 구성 요소를 만드는 단계를 안내합니다. AEM Screens은 다른 AEM 제품의 많은 기존 디자인 패턴과 기술을 재사용합니다. 이 튜토리얼에서는 AEM Screens용 을 개발할 때 차이점과 특별한 고려 사항을 강조 표시합니다.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2105'
+source-wordcount: '2107'
 ht-degree: 3%
 
 ---
@@ -289,7 +289,7 @@ AEM Screens 구성 요소는 편집 모드와 미리보기/프로덕션 모드�
 
    categories 속성은 클라이언트 라이브러리를 식별하는 문자열입니다. cq.screens.componentcategory는 편집 모드와 미리보기/프로덕션 모드 모두에서 사용됩니다. 따라서 sharedclientlib에 정의된 모든 CSS/JS는 모든 모드에서 로드됩니다.
 
-   프로덕션 환경에서는 경로를 /apps에 직접 노출하지 않는 것이 좋습니다. allowProxy 속성은 접두사 of/etc.clientlibs을 통해 클라이언트 라이브러리 CSS 및 JS가 참조되도록 합니다.
+   프로덕션 환경에서는 경로를 /apps에 직접 노출하지 않는 것이 좋습니다. allowProxy 속성은 접두사 of/etc.clientlibs을 통해 클라이언트 라이브러리 CSS 및 JS를 참조하도록 합니다.
 
 1. 파일 만들기: `css.txt` 공유 폴더 아래에 있습니다.
 

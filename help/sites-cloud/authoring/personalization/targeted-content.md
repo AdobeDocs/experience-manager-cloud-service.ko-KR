@@ -2,9 +2,9 @@
 title: 타겟팅 모드를 사용하여 타겟팅된 콘텐츠 작성
 description: 타겟팅 모드 및 타겟 구성 요소는 경험을 위한 콘텐츠를 만드는 도구를 제공합니다.
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '5306'
+source-wordcount: '5304'
 ht-degree: 88%
 
 ---
@@ -585,7 +585,7 @@ Adobe Target을 사용할 경우 목표 및 설정을 구성하려면 다음 작
 
    페이지가 현재 컨텍스트에 대해 타겟팅되는 콘텐츠를 표시하도록 변경됩니다.
 
-1. 표시되는 오퍼에 변경 작업을 수행하려면 타겟팅 모드로 전환합니다. 시뮬레이션 활동을 선택한 상태에서 미리보기 모드에서 구성한 컨텍스트에 대한 오퍼를 편집하십시오.
+1. 표시되는 오퍼를 변경하려면 타겟팅 모드로 전환합니다. 시뮬레이션 활동을 선택한 상태에서 미리보기 모드에서 구성한 컨텍스트에 대한 오퍼를 편집하십시오.
 
 ## 타겟 구성 요소 선택 사항 구성 {#configuring-target-component-options}
 

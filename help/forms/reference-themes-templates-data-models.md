@@ -2,9 +2,9 @@
 title: AEM 양식에 대한 참조 테마 및 템플릿을 가져오는 방법
 description: AEM Forms은 양식을 신속하게 만들 수 있도록 샘플 적응형 양식 테마, 템플릿 및 양식 데이터 모델을 제공합니다.
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 046ffed13569ca3f9c104fb4525d28361873277a
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '867'
 ht-degree: 23%
 
 ---
@@ -116,7 +116,7 @@ FSI 테마는 양식에 대한 미니멀하고 기능적인 모양을 강조합�
 그런 다음 적응형 Forms은 Microsoft Dynamics 365 및 Salesforce 서버와 상호 작용하여 비즈니스 워크플로우를 가능하게 할 수 있습니다. 예:
 
 * 적응형 양식 제출 시 Microsoft Dynamics 365 및 Salesforce에 데이터를 작성합니다.
-* 양식 데이터 모델에 정의된 사용자 지정 엔터티를 통해 Microsoft Dynamics 365 및 Salesforce에서 데이터를 쓰고 그 반대로 할 수 있습니다.
+* 양식 데이터 모델에 정의된 사용자 지정 엔터티를 통해 그리고 역으로 Microsoft Dynamics 365 및 Salesforce에서 데이터를 작성합니다.
 * Microsoft Dynamics 365 및 Salesforce 서버에 데이터를 쿼리하고 적응형 Forms을 미리 채웁니다.
 * Microsoft Dynamics 365 및 Salesforce 서버에서 데이터를 읽습니다.
 

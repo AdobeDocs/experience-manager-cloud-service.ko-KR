@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2020.11.0 릴리스 정보입니다.'
 description: "[!DNL Adobe Experience Manager] 2020.11.0의 as a Cloud Service 릴리스 노트"
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1262'
 ht-degree: 18%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 18%
 
 ### 새로운 기능 {#what-is-new-commerce}
 
-* 최신 CIF 코어 구성 요소 버전 v1.5.0이 포함된 CIF Venia 참조 사이트 - 2020.11.05가 릴리스되었습니다. 다음을 참조하십시오 [CIF Venia 참조 사이트](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) 을 참조하십시오.
+* 최신 CIF 핵심 구성 요소 버전 v1.5.0이 포함된 CIF Venia 참조 사이트 - 2020.11.05가 릴리스되었습니다. 다음을 참조하십시오 [CIF Venia 참조 사이트](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) 을 참조하십시오.
 
 * CIF 코어 구성 요소 v1.5.0이 릴리스되었습니다. 다음을 참조하십시오 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) 을 참조하십시오.
 
@@ -90,7 +90,7 @@ AEM as a Cloud Service 2020.11.0의 Cloud Manager 릴리스 일자는 2020년 11
 ### [!DNL Cloud Manager]의 새로운 기능 {#what-is-new-cm}
 
 * 새 메뉴 옵션 **로컬 로그인** 이제 의 환경 메뉴 옵션에서 사용자가 사용할 수 있습니다. **환경** 카드 및 **환경** 요약 페이지.
-다음을 참조하십시오 [환경 관리](/help/implementing/cloud-manager/manage-environments.md#login-locally) 을 참조하십시오.
+자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md#login-locally)를 참조하십시오.
 
 * Cloud Manager의 **학습** 탭이 UI의 새 이미지로 새로 고쳐졌습니다.
 

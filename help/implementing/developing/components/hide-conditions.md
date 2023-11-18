@@ -2,7 +2,7 @@
 title: 조건 숨기기 사용
 description: 구성 요소 리소스의 렌더링 여부를 판별하기 위해 숨기기 조건을 사용할 수 있습니다.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 2%
@@ -45,7 +45,7 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 * 속성이 유효하려면 속성이 발견되는 범위를 표현해야 합니다(예: `cqDesign.myProperty`).
 * 값은 읽기 전용입니다.
-* 함수(필요한 경우)는 서비스에서 제공하는 특정 세트로 제한해야 합니다.
+* 함수(필요한 경우)는 서비스에서 제공하는 지정된 세트로 제한해야 합니다.
 
 ## 예 {#example}
 

@@ -4,10 +4,10 @@ description: AEM의 강력한 Live Copy 및 다중 사이트 관리자 기능을
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2702'
-ht-degree: 97%
+source-wordcount: '2698'
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 97%
    * 콘텐츠를 한 번 만든 다음
    * 이 콘텐츠를 동일한 사이트의 다른 영역([Live Copy](#live-copies)를 통해) 또는 다른 사이트에서 사용할 수 있습니다.
 * 그런 다음 MSM은 소스 콘텐츠와 해당 Live Copy 간의 라이브 관계를 유지하여 다음 작업을 수행합니다.
-   * 소스 콘텐츠에 변경 내용을 적용하면 소스 및 Live Copy가 동기화됩니다.
+   * 소스 콘텐츠를 변경하면 소스 및 라이브 카피가 동기화됩니다.
    * 개별 하위 페이지 및/또는 구성 요소에 대한 라이브 관계의 연결 해제하여 Live Copy의 콘텐츠만 조정할 수 있습니다.
 
 이 페이지는 MSM을 통한 콘텐츠 재사용에 대한 개요를 제공합니다. 다음 페이지는 관련 문제를 자세히 다룹니다.
@@ -189,7 +189,7 @@ MSM Live Copy는 원본 소스와의 라이브 관계가 유지되는 특정 사
 
 * `/content/wknd/language-masters/en` 아래의 콘텐츠는 소스입니다.
 * `/content/wknd/language-masters/en` 아래의 콘텐츠는 `/content/wknd/us/en/` 및 `/content/wknd/ca/en` 노드 아래에 복사됩니다. 이를 Live Copy라고 합니다.
-* 작성자는 `/content/wknd/language-masters/en` 아래의 페이지에 변경 내용을 적용합니다.
+* 작성자가 아래 페이지 변경 `/content/wknd/language-masters/en`.
 * 트리거되면 MSM은 이러한 변경 내용을 Live Copy에 동기화합니다.
 
 ### Live Copy - 구성 {#live-copies-composition}
@@ -320,10 +320,10 @@ Live Copy 페이지에 대한 Live Copy 상속을 **일시 중단**&#x200B;하�
 1. 사용할 롤아웃 구성을 결정합니다.
 
    1. MSM [여러 롤아웃 구성 설치](live-copy-sync-config.md#installed-rollout-configurations) 이를 통해 여러 사용 사례를 충족할 수 있습니다.
-   1. 필요한 경우 [롤아웃 구성을 생성](live-copy-sync-config.md#creating-a-rollout-configuration)할 수 있습니다.
+   1. 필요한 경우 다음을 수행할 수 있습니다. [롤아웃 구성 만들기](live-copy-sync-config.md#creating-a-rollout-configuration) 필요한 경우.
 
 1. [사용할 롤아웃 구성을 지정](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use)해야 하는 위치를 결정하고 필요에 따라 구성합니다.
-1. 필요한 경우 Live Copy의 소스 콘텐츠를 식별하는 [블루프린트 구성을 생성](creating-live-copies.md#creating-a-blueprint-configuration)합니다.
+1. 필요한 경우 [블루프린트 구성 만들기](creating-live-copies.md#creating-a-blueprint-configuration) 라이브 카피의 소스 콘텐츠를 식별합니다.
 1. [Live Copy를 만듭니다.](creating-live-copies.md#creating-a-live-copy)
 1. 필요에 따라 소스 콘텐츠를 변경합니다. 귀사에서 수립한 일반 콘텐츠 검토 및 승인 프로세스를 사용해야 합니다.
 1. 블루프린트를 [롤아웃](creating-live-copies.md#rolling-out-a-blueprint)하거나 변경 내용으로 [Live Copy를 동기화](creating-live-copies.md#synchronizing-a-live-copy)합니다.

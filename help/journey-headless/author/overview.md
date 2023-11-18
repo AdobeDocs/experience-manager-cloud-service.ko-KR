@@ -2,10 +2,10 @@
 title: AEM Headless 콘텐츠 작성자 여정
 description: AEM의 강력하고 유연한 Headless 기능, 각 능력과 프로젝트의 콘텐츠를 작성하는 방법에 대한 가이드 여정을 받으십시오.
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 91%
+source-wordcount: '873'
+ht-degree: 90%
 
 ---
 
@@ -27,7 +27,7 @@ AEM에서 콘텐츠 조각을 통해 실현됩니다. 필요에 따라 선택하
 
 * Headless 콘텐츠 게재와 이점을 기본적으로 이해할 수 있습니다.
 * AEM의 Headless 기능과 Headless 경험 게재를 위해 이 기능이 함께 작동하는 방식을 이해할 수 있습니다.
-* AEM Headless 프로젝트의 콘텐츠를 작성할 수 있습니다.
+* AEM Headless 프로젝트용 콘텐츠를 작성할 수 있습니다.
 
 ## AEM 설명서 여정 {#documentation-journeys}
 

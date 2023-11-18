@@ -2,10 +2,10 @@
 title: WAF 규칙이 포함된 트래픽 필터 규칙
 description: 웹 애플리케이션 방화벽(WAF)이 포함된 트래픽 필터 규칙 구성
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '3435'
-ht-degree: 97%
+source-wordcount: '3437'
+ht-degree: 95%
 
 ---
 
@@ -102,7 +102,7 @@ Edge에서 Adobe Managed CDN은 대규모 및 반사/증폭 공격(레이어 3 �
 `kind` 매개변수는 `CDN`으로 설정되어야 하며 버전은 스키마 버전(현재 `1`)으로 설정되어야 합니다. 아래 추가 예를 참조하십시오.
 
 
-<!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
+<!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (for example, "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
 
 1. WAF 규칙에 라이선스가 부여된 경우, 신규 및 기존 프로그램 시나리오 모두에 대해 아래에 설명된 대로 Cloud Manager에서 기능을 활성화해야 합니다.
 
@@ -119,7 +119,7 @@ RDE의 경우 명령이 사용되지만 RDE는 현재 지원되지 않습니다.
 
 **메모**
 
-* `yq`을 사용하여 구성 파일(예: `yq cdn.yaml`)의 YAML 서식을 로컬에서 확인할 수 있습니다.
+* 다음을 사용할 수 있습니다. `yq` 구성 파일의 YAML 형식을 로컬로 검증하려면 다음을 수행합니다. `yq cdn.yaml`).
 
 ## 트래픽 필터 규칙 구문 {#rules-syntax}
 
@@ -489,7 +489,7 @@ CDN 로그는 최대 5분 정도 지연될 수 있습니다.
 
 * 고객이 선언한 일치하는 모든 규칙의 이름이 `match` 속성에 나열됩니다.
 * `action` 속성은 규칙이 차단, 허용 또는 로깅에 영향을 주었는지 여부를 결정합니다.
-* WAF에 라이선스가 부여되어 WAF가 활성화되면 `waf` 속성은 규칙에서의 WAF 플래그 나열 여부에 관계없이 감지된 모든 WAF 플래그(예: SQLI)을 나열합니다. 이는 선언할 수 있는 새로운 규칙에 대한 인사이트를 제공하기 위함입니다.
+* WAF에 라이센스가 부여되고 활성화된 경우 `waf` 속성은 WAF 플래그가 어떤 규칙에 나열되었는지 여부에 관계없이 감지된 모든 WAF 플래그(예: SQLI)를 나열합니다. 이는 선언할 수 있는 새로운 규칙에 대한 인사이트를 제공하기 위함입니다.
 * 일치하는 고객이 선언한 규칙과 WAF 규칙이 없는 경우 `rules` 속성이 비어 있습니다.
 
 앞에서 언급했듯이 WAF 규칙 일치는 CDN 누락 및 전달에 대한 CDN 로그에만 표시되고 히트는 표시되지 않습니다.

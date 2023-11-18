@@ -2,10 +2,10 @@
 title: 추가 게시 지역
 description: AEM as a Cloud Service가 추가 게시 지역을 지원하여 가용성을 높이고 지연 시간을 줄이는 방법에 대해 알아봅니다.
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
-source-git-commit: c0c669f847c9ef64b1fa22cfc24ac693c3c8ad90
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 84%
+source-wordcount: '640'
+ht-degree: 80%
 
 ---
 
@@ -55,7 +55,7 @@ AEM Sites로 설정된 프로그램에서 추가 게시 지역에 라이선스�
 
 추가 게시 지역 사용 고려 시 해당 제한 사항을 고려하십시오.
 
-* 추가 게시 지역은 AEM Sites에만 추가할 수 있습니다. 추가 게시 지역은 동일한 프로그램(예: AEM Forms 또는 Adobe Learning Manager)에 배포되는 다른 AEM 솔루션 또는 관련 기능으로 확장되지 않습니다.
+* 추가 게시 지역은 AEM Sites에만 추가할 수 있습니다. 추가 게시 영역은 동일한 프로그램에 배포된 다른 AEM 솔루션 또는 관련 기능(예: AEM Forms 또는 Adobe Learning Manager)으로 확장되지 않습니다.
 * 추가 지역은 관련 권한이 테넌트에 사용되지 않는 경우에만 추가할 수 있습니다.
 * 최대 세 개의 추가 게시 지역을 개별 환경에 추가할 수 있습니다.
 * 추가 지역은 프로덕션 프로그램에서만 사용할 수 있습니다. 샌드박스 프로그램에서는 기능을 사용할 수 없습니다.

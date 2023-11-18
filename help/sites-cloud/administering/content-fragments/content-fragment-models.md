@@ -4,7 +4,7 @@ description: 콘텐츠 조각 모델이 AEM에서 콘텐츠 조각의 기반 역
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3058'
 ht-degree: 97%
@@ -202,7 +202,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 조각의 필드를 구현하거나 렌더링하기 위한 다양한 옵션입니다. 이를 통해 작성자에게 필드의 단일 인스턴스가 표시되는지 또는 작성자가 여러 인스턴스를 만들 수 있는지를 정의할 수 있습니다.
 
 * **필드 레이블**
-입력 **필드 레이블** 자동 생성 **속성 이름**&#x200B;필요한 경우 수동으로 업데이트할 수 있습니다.
+입력 **필드 레이블** 자동 생성 **속성 이름**: 필요한 경우 수동으로 업데이트할 수 있습니다.
 
 * **유효성 검사**
 기본 유효성 검사는 **필수** 속성과 같은 메커니즘을 통해 사용할 수 있습니다. 일부 데이터 유형에는 추가 유효성 검사 필드가 있습니다. 자세한 내용은 [유효성 검사](#validation)를 참조하십시오.

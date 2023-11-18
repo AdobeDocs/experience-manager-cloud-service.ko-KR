@@ -2,9 +2,9 @@
 title: 콘텐츠 전송 확인
 description: 컨텐츠 전송 도구를 사용하여 컨텐츠 전송의 유효성을 검사합니다
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1073'
 ht-degree: 2%
 
 ---

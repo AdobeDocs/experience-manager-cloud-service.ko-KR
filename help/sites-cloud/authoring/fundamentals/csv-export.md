@@ -2,10 +2,10 @@
 title: CSV로 내보내기
 description: 로컬 시스템에서 페이지에 대한 정보를 CSV 파일로 내보내기
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+workflow-type: tm+mt
 source-wordcount: '197'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 100%
 
 CSV 내보내기를 만들려면:
 
-1. **사이트** 콘솔을 열고 필요한 경우 필요한 위치로 이동합니다.
+1. 를 엽니다. **사이트** 콘솔에서 필요한 경우 필요한 위치로 이동합니다.
    * **CSV 보고서** 만들기 옵션은 **Sites** 콘솔을 탐색(목록 보기)할 때 사용할 수 있습니다.
    * 이 옵션은 **만들기** 드롭다운 메뉴의 옵션입니다.
 

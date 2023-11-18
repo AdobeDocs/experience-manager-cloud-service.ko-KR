@@ -2,9 +2,9 @@
 title: React를 사용하여 AEM에서 SPA 시작하기
 description: 이 문서에서는 샘플 SPA 애플리케이션을 제공하고, 구성 방법을 설명하며, React 프레임워크를 사용하여 SPA을 빠르게 시작하고 실행할 수 있도록 해 줍니다.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1139'
+source-wordcount: '1138'
 ht-degree: 10%
 
 ---
@@ -209,7 +209,7 @@ class Image extends Component {
 MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);
 ```
 
-AEM에서 SPA의 핵심 개념은 SPA 구성 요소를 AEM 구성 요소에 매핑하고 콘텐츠가 수정될 때(또는 그 반대) 구성 요소를 업데이트하는 것입니다. 문서 보기 [SPA 편집기 개요](editor-overview.md) 이 커뮤니케이션 모델에 대한 요약 정보를 제공합니다.
+AEM에서 SPA의 핵심 아이디어는 SPA 구성 요소를 AEM 구성 요소에 매핑하고 콘텐츠가 수정될 때(그리고 그와 반대되게) 구성 요소를 업데이트하는 아이디어입니다. 문서 보기 [SPA 편집기 개요](editor-overview.md) 이 커뮤니케이션 모델에 대한 요약 정보를 제공합니다.
 
 `MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);`
 

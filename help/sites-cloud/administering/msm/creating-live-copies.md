@@ -4,10 +4,10 @@ description: Live Copy를 만들고 동기화하여 사이트 간 콘텐츠를 �
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '4270'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 

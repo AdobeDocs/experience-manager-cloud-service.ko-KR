@@ -2,15 +2,15 @@
 title: Screens as a Cloud Service의 Screens 알림 서비스
 description: 이 페이지에서는 Screens as a Cloud Service으로 알림 서비스를 구성하는 방법에 대해 설명합니다.
 index: true
-source-git-commit: 81ce7954479366e40b47325577e1450f3d7a4c29
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 4%
+source-wordcount: '125'
+ht-degree: 6%
 
 ---
 
 
-# 화면 알림 서비스 {#notification-service}
+# Screens 알림 서비스 {#notification-service}
 
 ## 소개 {#introduction}
 

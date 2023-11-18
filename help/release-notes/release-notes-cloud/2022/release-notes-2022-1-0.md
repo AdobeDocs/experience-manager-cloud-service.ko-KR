@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.1.0 릴리스 정보.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.1.0 릴리스 정보.'
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: fe19e99baa921247f86542c6643c1faf837e7d91
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1069'
 ht-degree: 88%
 
 ---

@@ -2,10 +2,10 @@
 title: 프로젝트 관리
 description: 프로젝트를 사용하면 리소스를 프로젝트 콘솔에서 액세스 및 관리할 수 있는 하나의 엔티티로 그룹화하여 프로젝트를 구성할 수 있습니다.
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 85%
+source-wordcount: '875'
+ht-degree: 82%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 85%
 
    ![프로젝트 만들기](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. **제목** 및 **설명**&#x200B;을 정의한 다음 필요한 경우 **썸네일** 이미지를 추가합니다. 사용자와 사용자가 속한 그룹을 추가하거나 삭제할 수도 있습니다. 또한 **고급**&#x200B;을 클릭하여 URL에 사용된 이름을 추가합니다.
+1. 다음을 정의합니다. **제목** 및 **설명** 및 추가 **축소판** 필요한 경우 이미지 사용자와 사용자가 속한 그룹을 추가하거나 삭제할 수도 있습니다. 또한 **고급**&#x200B;을 클릭하여 URL에 사용된 이름을 추가합니다.
 
    ![프로젝트 세부 정보 추가](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -138,7 +138,7 @@ ht-degree: 85%
    프로젝트 타일이 아직 프로젝트에 없을 경우 이 타일을 추가해야 할 수 있습니다. [타일 추가](#adding-items-to-a-tile)를 참조하십시오.
 
 1. **편집**&#x200B;을 선택합니다.
-1. 선택기를 **활성**&#x200B;에서 **비활성**(또는 그 반대)으로 변경합니다.
+1. 다음에서 선택기 변경: **활성** 끝 **비활성** (또는 반대로).
 
    ![프로젝트 활성화](/help/sites-cloud/authoring/assets/projects-add-team.png)
 

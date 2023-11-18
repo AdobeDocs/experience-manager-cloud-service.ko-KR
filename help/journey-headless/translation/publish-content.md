@@ -2,9 +2,9 @@
 title: 번역된 Headless 콘텐츠 게시
 description: 번역된 콘텐츠를 게시하고 콘텐츠가 업데이트될 때 번역을 업데이트하는 방법에 대해 알아봅니다.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1359'
 ht-degree: 83%
 
 ---
@@ -155,7 +155,7 @@ AEM Headless 번역 여정의 이전 문서인 [콘텐츠 번역](configure-conn
 * Headless 콘텐츠 게재에 대한 개요를 살펴볼 수 있습니다.
 * AEM의 Headless 기능에 대한 기본 사항을 이해할 수 있습니다.
 * AEM의 번역 기능 및 이들과 Headless 콘텐츠의 관련성에 대해 이해할 수 있습니다.
-* 자체 Headless 콘텐츠 번역을 시작할 수 있습니다.
+* Headless 콘텐츠 번역을 시작할 수 있습니다.
 
 이제 AEM에서 자체 Headless 콘텐츠를 번역할 준비가 완료되었습니다. 그러나 AEM은 강력한 도구로서 다양한 추가 옵션을 제공합니다. 이 여정에서 확인한 기능들에 대한 자세한 내용은 [추가 리소스 섹션](#additional-resources)에서 사용할 수 있는 몇 가지 추가 리소스를 확인하십시오.
 

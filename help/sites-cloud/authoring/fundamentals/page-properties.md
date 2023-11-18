@@ -2,10 +2,10 @@
 title: 페이지 속성 편집
 description: AEM에서 페이지를 관리하는 데 필요한 속성을 정의하는 방법에 대해 알아봅니다.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2270'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 

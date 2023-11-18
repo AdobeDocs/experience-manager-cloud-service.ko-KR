@@ -3,10 +3,10 @@ title: Edge Delivery Services 사용
 description: Edge Delivery Services 사용 (EDS)
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
-source-git-commit: 34965338015df868778a95582524df08a7c5f136
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 99%
+source-wordcount: '617'
+ht-degree: 97%
 
 ---
 
@@ -33,7 +33,7 @@ Edge Delivery는 GitHub를 활용하므로 고객은 GitHub 저장소에서 바�
 
 ## Sidekick 사용 {#using-sidekick}
 
-AEM Sidekick은 콘텐츠를 쉽게 편집하고, 미리 보고, 게시할 수 있도록 컨텍스트 인식 옵션이 포함된 도구 모음을 제공합니다. AEM Sidekick 확장 기능이 [설치](https://www.hlx.live/docs/sidekick-extension)되면 프로젝트 환경에서나 콘텐츠 편집 시(예: Google Docs에서) 사용할 수 있습니다. 환경에 따라 미리보기, 다시 로드, 편집 및 게시와 같은 몇 가지 액션이 제공됩니다. 미리보기부터 프로덕션까지 Sidekick을 사용하는 경우 환경을 전환할 수도 있으며, 그 반대의 경우도 마찬가지입니다.
+AEM Sidekick은 콘텐츠를 쉽게 편집하고, 미리 보고, 게시할 수 있도록 컨텍스트 인식 옵션이 포함된 도구 모음을 제공합니다. AEM Sidekick 확장 기능이 [설치](https://www.hlx.live/docs/sidekick-extension)되면 프로젝트 환경에서나 콘텐츠 편집 시(예: Google Docs에서) 사용할 수 있습니다. 환경에 따라 미리보기, 다시 로드, 편집 및 게시와 같은 몇 가지 액션이 제공됩니다. 미리보기에서 프로덕션으로, 그리고 반대로 사이드 킥을 사용할 때 환경을 전환할 수도 있습니다.
 
 **게시하려면** 미리보기 페이지에서 Sidekick을 열고 게시 액션을 사용합니다. 게시를 클릭하면 페이지의 현재 미리보기 버전이 라이브 및 프로덕션 환경에서 제공됩니다.
 

@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 7%
@@ -16,7 +16,7 @@ ht-degree: 7%
 
 메타데이터는 검색할 수 있는 에셋에 대한 추가 정보입니다. 이미지를 업로드하면 자동으로 추출됩니다. 기존 메타데이터를 편집하거나 기존 필드에 새 메타데이터 속성을 추가할 수 있습니다(예: 메타데이터 필드가 비어 있는 경우).
 
-기업들은 통제되고 신뢰할 수 있는 메타데이터 어휘를 필요로 하기 때문에, [!DNL Experience Manager Assets] 는 새 메타데이터 속성을 애드혹 추가할 수 없습니다. 작성자는 에셋에 대한 새 메타데이터 필드를 추가할 수 없지만 개발자는 추가할 수 있습니다. 다음을 참조하십시오 [자산에 대한 새 메타데이터 속성 만들기](meta-edit.md#editing-metadata-schema).
+기업들은 통제되고 신뢰할 수 있는 메타데이터 어휘를 필요로 하기 때문에, [!DNL Experience Manager Assets] 는 새 메타데이터 속성을 온디맨드로 추가할 수 없습니다. 작성자는 에셋에 대한 새 메타데이터 필드를 추가할 수 없지만 개발자는 추가할 수 있습니다. 다음을 참조하십시오 [자산에 대한 새 메타데이터 속성 만들기](meta-edit.md#editing-metadata-schema).
 
 ## 에셋의 메타데이터 편집 {#editing-metadata-for-an-asset}
 

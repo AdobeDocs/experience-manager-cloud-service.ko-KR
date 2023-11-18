@@ -2,9 +2,9 @@
 title: 검색 양식 구성
 description: Adobe Experience Manager as a Cloud Service에 대해 Forms 검색을 구성하는 중입니다.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2035'
+source-wordcount: '2033'
 ht-degree: 16%
 
 ---
@@ -480,7 +480,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
 >일반적인 검색 조건자는 다음에서 정의됩니다.
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->이 정보는 참조용이므로 변경할 수 없습니다. `/libs`.
+>이 정보는 참조용이므로 변경해서는 안 됩니다. `/libs`.
 
 <!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
@@ -527,7 +527,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
 
 * **옵션 경로**
 
-  사용자는 술어 설정 탭의 경로 브라우저를 사용하여 경로를 선택할 수 있습니다. 을(를) 선택한 후 **+** 아이콘을 사용하여 유효한 옵션 목록에 선택 항목을 추가한 다음 **-** 필요한 경우 제거할 아이콘입니다.
+  사용자는 술어 설정 탭의 경로 브라우저를 사용하여 경로를 선택할 수 있습니다. 을(를) 선택한 후 **+** 아이콘을 사용하여 유효한 옵션 목록에 선택 항목을 추가한 다음 **-** 아이콘 을 클릭하여 제거할 수 있습니다.
 
   옵션은 사용자가 만든 콘텐츠 노드로서 다음 구조를 갖습니다.
 

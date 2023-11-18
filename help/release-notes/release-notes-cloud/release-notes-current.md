@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: afb3de515336d3d13b392f8fcc4d263f4f063689
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '917'
 ht-degree: 63%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 63%
 
 ### Assets 보기의 새로운 기능 {#assets-view-features}
 
-* **OneDrive 데이터 원본에서 자산 일괄 가져오기**: 관리자는 이제 다음 작업을 수행할 수 있습니다 [OneDrive에서 AEM Assets으로 많은 자산 가져오기](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). 대량 가져오기에 대해 지원되는 데이터 소스의 업데이트된 목록에는 Azure, AWS, Google Cloud, Dropbox 및 OneDrive가 포함됩니다.
+* **OneDrive 데이터 원본에서 자산 일괄 가져오기**: 이제 관리자는 을 수행할 수 있습니다 [OneDrive에서 AEM Assets으로 많은 자산 가져오기](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). 대량 가져오기에 대해 지원되는 데이터 소스의 업데이트된 목록에는 Azure, AWS, Google Cloud, Dropbox 및 OneDrive가 포함됩니다.
 
   ![폴더에 메타데이터 양식 할당](/help/assets/assets/bulk-import-source-details-onedrive.png)
 

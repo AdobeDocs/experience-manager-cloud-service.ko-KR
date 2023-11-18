@@ -2,9 +2,9 @@
 title: SPA 편집기 개요
 description: 이 문서에서는 SPA 편집기와 구동하는 방법(AEM 내에서 SPA 편집기와 워크플로의 세부 상호 작용 포함)에 대한 포괄적인 개요를 제공합니다.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1632'
+source-wordcount: '1633'
 ht-degree: 96%
 
 ---
@@ -181,7 +181,7 @@ AEM SPA Editor SDK는 Adobe에서 완벽하게 지원하며, 지속적으로 강
 * 타겟 모드
 * ContextHub
 * 인라인 이미지 편집
-* 구성 편집 (예: 리스너)
+* 구성 편집(예: 리스너)
 * 실행 취소 / 다시 실행
 * 페이지 비교 및 시간 비틀기
 * 링크 검사기, CDN 재작성기 서비스, URL 단축 등과 같이 서버측에서 HTML 재작성을 수행하는 기능입니다.

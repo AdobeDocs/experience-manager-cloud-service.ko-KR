@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 1%
@@ -144,9 +144,10 @@ ht-degree: 1%
    * 빠른 보기에 포함된 모든 추가 변수를 매핑합니다.
 
       * 업데이트 `loadQuickView(sku,*var1*,*var2*)` 변수를 더 추가하면 를 호출합니다.
+
    * 단순 만들기 `loadQuickView` () 함수가 표시기를 벗어났습니다.
 
-      예를 들어 다음 은 브라우저 콘솔에 SKU 값을 기록합니다.
+     예를 들어 다음 은 브라우저 콘솔에 SKU 값을 기록합니다.
 
    ```xml {.line-numbers}
    function loadQuickView(sku){
@@ -156,9 +157,7 @@ ht-degree: 1%
 
    * 웹 서버에 테스트 HTML 페이지를 업로드하고 엽니다.
 
-      빠른 보기의 변수가 매핑됩니다. 함수 호출이 있습니다. 그리고 브라우저 콘솔은 브라우저 콘솔에 변수 값을 기록합니다. 제공된 샘플 함수를 사용하여 이 작업을 수행합니다.
-
-
+     빠른 보기의 변수가 매핑됩니다. 함수 호출이 있습니다. 그리고 브라우저 콘솔은 브라우저 콘솔에 변수 값을 기록합니다. 제공된 샘플 함수를 사용하여 이 작업을 수행합니다.
 
 1. 이제 함수를 사용하여 빠른 보기에서 간단한 팝업을 호출할 수 있습니다. 다음 예제에서는 `DIV` 팝업용
 1. 팝업 스타일 지정 `DIV` 다음 방식으로. 원하는 대로 스타일을 추가합니다.
@@ -192,7 +191,7 @@ ht-degree: 1%
    <script type="text/javascript">
        function loadQuickView(sku){
            document.getElementById("txtSku").setAttribute("value",sku); // write sku value
-           document.getElementById("quickview_div").style.display="block"; // show popup
+           document.getElementById("quickview_div").style.display="block"; // show pop-up
        }
    </script>
    ```

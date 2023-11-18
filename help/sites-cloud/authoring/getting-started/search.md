@@ -2,10 +2,10 @@
 title: 검색
 description: 포괄적인 검색으로 신속하게 콘텐츠 찾기
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '492'
-ht-degree: 96%
+ht-degree: 91%
 
 ---
 
@@ -41,7 +41,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 콘텐츠를 검색하�
 
    ![검색 위치](/help/sites-cloud/authoring/assets/search-term-location.png)
 
-1. 필요한 경우 위치 필터를 제거(제거할 필터에서 **X** 선택)하여 모든 콘솔/리소스 유형에서 검색할 수 있습니다.
+1. 필요한 경우 위치 필터를 제거할 수 있습니다(선택 **X** 을(를) 제거하여 모든 콘솔/리소스 유형에서 검색할 수 있습니다.
 1. 콘솔 및 관련 리소스 유형에 따라 그룹화된 결과가 표시됩니다.
 
    필수 리소스 유형(예: **모든 사이트 보기**)을 선택하여 드릴다운하거나 추가 작업을 위해 특정 리소스를 선택할 수 있습니다.

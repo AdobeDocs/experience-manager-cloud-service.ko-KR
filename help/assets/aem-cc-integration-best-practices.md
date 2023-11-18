@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3489'
 ht-degree: 15%
@@ -82,7 +82,7 @@ This article focuses primarily on the first two aspects of the collaboration nee
 * [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) 에셋을 게시하기 위해 에셋에 구성 가능한 추가 기능입니다.
 
 * 맞춤형 솔루션은 다음을 기반으로 만들어집니다. [Asset Share Commons](https://opensource.adobe.com/asset-share-commons/) 코드 베이스입니다.
-* Experience Manager [링크 공유](/help/assets/share-assets.md) 링크를 사용하여 자산을 임시로 공유합니다.
+* Experience Manager [링크 공유](/help/assets/share-assets.md) 링크를 사용하여 온디맨드 에셋을 공유할 수 있습니다.
 * [자산 웹 인터페이스](/help/assets/manage-digital-assets.md) Experience Manager 액세스 제어 설정 및 필요한 IT/네트워크 구성 조정을 통해 보호되는 외부 대상 영역을 통해 이러한 외부 사용자에게 Experience Manager에 액세스할 수 있습니다.
 
 ## 주요 개념 및 사용 사례 {#key-concepts-and-use-cases}

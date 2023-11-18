@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.6.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.6.0 릴리스 정보입니다.'
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 79%
+source-wordcount: '637'
+ht-degree: 80%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 79%
 
 ### [!DNL Sites]의 새로운 기능 {#sites-features}
 
-* 새 항목 [사용자 인터페이스](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) 이제 콘텐츠 관리자 및 콘텐츠 작성자가 Headless 사용 사례에 대한 콘텐츠 조각을 효율적으로 관리(게시, 게시 취소, 복사, 이동 등 작업 수행)하고, 검색/필터링하고, 만들 수 있도록 사용할 수 있습니다.
+* 새 항목 [사용자 인터페이스](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) 이제 콘텐츠 관리자 및 콘텐츠 작성자가 Headless 사용 사례에 대한 콘텐츠 조각을 효율적으로 관리(게시, 게시 취소, 복사, 이동 등)하고, 검색/필터링하고, 만들 수 있도록 사용할 수 있습니다.
 
   ![콘텐츠 조각 콘솔](/help/release-notes/assets/cf-ui.png)
 

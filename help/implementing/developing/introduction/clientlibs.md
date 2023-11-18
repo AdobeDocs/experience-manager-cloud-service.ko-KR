@@ -2,7 +2,7 @@
 title: AEM에서 클라이언트측 라이브러리 as a Cloud Service 사용
 description: AEM은 클라이언트측 코드(clientlib)를 저장소에 저장하고, 카테고리로 구성하고, 각 코드 카테고리가 클라이언트에 제공되는 시기와 방법을 정의할 수 있는 클라이언트측 라이브러리 폴더를 제공합니다
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2551'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Clientlib은 AEM에서 CSS 및 JavaScript를 제공하는 내장 솔루션입니
 
 ## 클라이언트측 라이브러리란 무엇입니까? {#what-are-clientlibs}
 
-사이트에서는 클라이언트측에서 처리할 아이콘 및 웹 글꼴과 같은 JavaScript 및 CSS와 정적 리소스가 필요합니다. clientlib은 참조하고(필요한 경우 범주별) 이러한 리소스를 제공하는 AEM 메커니즘입니다.
+사이트에서는 클라이언트측에서 처리할 아이콘 및 웹 글꼴과 같은 JavaScript 및 CSS와 정적 리소스가 필요합니다. clientlib은 필요한 경우 범주별로 참조하고 이러한 리소스를 제공하는 AEM 메커니즘입니다.
 
 AEM은 사이트의 CSS와 JavaScript를 중앙 위치의 단일 파일로 수집하여 HTML 출력에 모든 리소스의 복사본을 하나만 포함하도록 합니다. 이를 통해 게재 효율성을 극대화하고 프록시를 통해 이러한 리소스를 저장소 중앙에서 유지 관리할 수 있어 액세스 보안을 유지할 수 있습니다.
 

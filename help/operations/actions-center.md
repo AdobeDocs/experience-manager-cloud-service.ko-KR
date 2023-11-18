@@ -2,10 +2,10 @@
 title: 액션 센터
 description: 문제 및 기타 중요한 정보에 대해 편리하게 조치를 취할 수 있도록 조치 센터 활용
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '726'
-ht-degree: 98%
+ht-degree: 83%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 98%
 
 AEM as Cloud Service는 최적화에 즉각적인 조치 및 사전 알림 추천이 필요한 중대 인시던트가 발생하면 액션 센터 이메일 알림을 전송합니다. 예로는 차단된 대기열 또는 만료되는 자격 증명 세트가 있습니다. 액션 센터 알림 유형의 전체 세트는 [아래 표](#supported-notification-types)에서 볼 수 있으며 시간이 지남에 따라 확장됩니다.
 
-액션 센터 이메일 알림이 수신되면 클릭하여 AEM as a Cloud Service의 액션 센터를 열 수 있으며, 이때 고객이 취해야 할 조치를 설명하는 추가 컨텍스트를 표시하는 팝업이 함께 열립니다.
+작업 센터 이메일 알림이 수신되면 이 링크를 클릭하여 AEMas a Cloud Service 의 작업 센터를 열 수 있습니다. 이 센터에는 고객이 수행할 작업을 설명하는 추가 컨텍스트가 팝업되어 있습니다.
 
 방금 클릭한 이메일 알림에 대한 정보를 표시하는 것 외에도 액션 센터는 현재 및 이전 알림 세트를 보고 관리할 수 있는 허브 역할을 합니다. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
@@ -35,7 +35,7 @@ AEM as Cloud Service는 최적화에 즉각적인 조치 및 사전 알림 추�
 
 ## 자세한 사용자 흐름 {#detailed-user-flow}
 
-이메일을 클릭하면 클릭한 알림에 대한 컨텍스트를 표시하는 팝업과 경우에 따라 수정 조치를 취하는 방법을 설명하는 추가 정보 링크가 있는 액션 센터로 이동합니다. [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/)에서 액션 센터에 직접 액세스하여 관련 프로그램 및 환경을 선택할 수도 있습니다.
+이메일을 클릭하면 작업 센터로 이동합니다. 이 센터에는 클릭한 알림에 대한 컨텍스트 및 경우에 따라 수정 조치를 수행하는 방법을 설명하는 추가 정보 링크가 표시됩니다. [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/)에서 액션 센터에 직접 액세스하여 관련 프로그램 및 환경을 선택할 수도 있습니다.
 
 ![인시던트 세부 정보](/help/operations/assets/incident-details.png)
 
@@ -45,7 +45,7 @@ AEM as Cloud Service는 최적화에 즉각적인 조치 및 사전 알림 추�
 
 ![알림 목록](/help/operations/assets/notification-list.png)
 
-대부분의 경우 팝업은 문제를 해결하는 데 필요한 모든 컨텍스트를 제공합니다. 단, Adobe 지원에 대한 질문이 있는 경우 팝업에서 **지원에 문의** 링크를 클릭할 수 있습니다. 이렇게 하면 질문을 설명하고 지원 티켓을 만들기 위해 제출할 수 있는 양식이 표시되며, 여기에는 Adobe 지원 엔지니어가 관련 컨텍스트를 확보할 수 있도록 특정 알림에 대한 참조도 포함됩니다.
+대부분의 경우 팝업은 문제를 해결하는 데 필요한 모든 컨텍스트를 제공해야 합니다. 하지만 Adobe 지원에 대한 질문이 있는 경우 **지원 문의** 링크를 클릭합니다. 이렇게 하면 질문을 설명하고 지원 티켓을 만들기 위해 제출할 수 있는 양식이 표시되며, 여기에는 Adobe 지원 엔지니어가 관련 컨텍스트를 확보할 수 있도록 특정 알림에 대한 참조도 포함됩니다.
 
 ![지원에 문의 1](/help/operations/assets/contact-support1.png)
 

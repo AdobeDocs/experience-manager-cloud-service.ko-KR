@@ -3,7 +3,7 @@ title: 쿼리 및 색인화 모범 사례
 description: Adobe의 모범 사례 가이드라인에 기반하여 색인 및 쿼리를 최적화하는 방법에 대해 알아봅니다.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3128'
 ht-degree: 44%
@@ -151,7 +151,7 @@ AEM에서 제공하는 as a Cloud Service [쿼리 성능 도구](#query-performa
 
 ![쿼리 설명 팝업](./assets/query-explanation-popup.png)
 
-선택 후 `Explain`를 선택하면 쿼리 설명(및 선택한 경우 실행) 결과를 설명하는 팝업이 사용자에게 표시됩니다.
+선택 후 `Explain`을 누르면 쿼리 설명(및 실행(선택한 경우) 결과를 설명하는 팝업이 사용자에게 표시됩니다.
 이 팝업에는 -에 대한 세부 사항이 포함됩니다.
 * 쿼리를 실행할 때 사용되는 인덱스(또는 쿼리를 실행할 경우 사용할 인덱스 없음) [저장소 트래버스](#repository-traversal)).
 * 실행 시간 (if `Include Execution Time` 확인란이 선택됨) 및 읽은 결과 수(다음 경우) `Read first page of results` 또는 `Include Node Count` 확인란이 선택되었습니다.)

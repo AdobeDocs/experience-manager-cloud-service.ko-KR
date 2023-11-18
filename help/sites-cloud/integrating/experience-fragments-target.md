@@ -2,7 +2,7 @@
 title: Adobe Target으로 경험 조각 내보내기
 description: 경험 조각을 Adobe Target으로 내보내 경험을 테스트하고 개인화하는 방법에 대해 알아봅니다.
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2246'
 ht-degree: 96%

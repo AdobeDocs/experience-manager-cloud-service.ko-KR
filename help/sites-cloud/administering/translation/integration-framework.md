@@ -4,10 +4,10 @@ description: 서드파티 번역 서비스와 통합한 번역 통합 프레임�
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1499'
-ht-degree: 91%
+ht-degree: 90%
 
 ---
 
@@ -45,7 +45,7 @@ AEM을 번역 서비스 공급업체에 연결하는 클라우드 구성을 만�
 
 커넥터 패키지를 설치하면 커넥터에 대한 클라우드 구성을 만들 수 있습니다. 일반적으로 번역 서비스로 인증하기 위해 자격 증명을 제공해야 합니다. Microsoft Translator 커넥터 클라우드 구성에 대한 자세한 내용은 [Microsoft Translator와 통합](connect-ms-translator.md)을 참조합시오.
 
-필요한 경우 같은 커넥터에 여러 클라우드 구성을 만들 수 있습니다. 예를 들어 같은 공급업체와 진행한 계정 또는 프로젝트에 대해 하나의 구성을 만듭니다.
+필요한 경우 동일한 커넥터에 대해 여러 클라우드 구성을 만들 수 있습니다. 예를 들어 같은 공급업체와 진행한 계정 또는 프로젝트에 대해 하나의 구성을 만듭니다.
 
 연결을 구성하면 이를 사용하는 번역 통합 프레임워크를 만들 수 있습니다.
 

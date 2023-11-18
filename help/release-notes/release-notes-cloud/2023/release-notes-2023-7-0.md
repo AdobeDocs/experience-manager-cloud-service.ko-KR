@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.7.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.7.0 릴리스 정보입니다.'
 exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
-source-git-commit: 75a26cf6f486ce951f1f81b5125026fac9458ab4
-workflow-type: ht
-source-wordcount: '937'
-ht-degree: 100%
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+workflow-type: tm+mt
+source-wordcount: '938'
+ht-degree: 99%
 
 ---
 

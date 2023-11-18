@@ -2,7 +2,7 @@
 title: 샘플 ContextHub UI 모듈 유형
 description: ContextHub는 솔루션에서 사용할 수 있는 몇 가지 샘플 UI 모듈을 제공합니다
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 1%

@@ -2,10 +2,10 @@
 title: 콘텐츠 모델링 기본 사항 알아보기
 description: 콘텐츠 조각을 사용하여 Headless CMS용 콘텐츠 모델링 기본 사항을 알아봅니다.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 98%
+source-wordcount: '900'
+ht-degree: 97%
 
 ---
 
@@ -109,7 +109,7 @@ AEM은 콘텐츠를 모델링할 수 있도록 다음 데이터 유형을 제공
 
 >[!NOTE]
 >
->텍스트 블록 내 링크를 사용하여 드 혹 참조를 만들 수도 있습니다.
+>텍스트 블록 내의 링크를 사용하여 즉석 참조를 생성할 수도 있습니다.
 
 ## 구조 수준 (중첩된 조각) {#levels-of-structure-nested-fragments}
 

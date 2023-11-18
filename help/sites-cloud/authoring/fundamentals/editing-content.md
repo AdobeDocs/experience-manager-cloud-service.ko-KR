@@ -2,7 +2,7 @@
 title: 페이지 콘텐츠 편집
 description: 페이지를 생성하면 콘텐츠를 편집하여 필요한 업데이트를 수행할 수 있습니다.
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2973'
 ht-degree: 95%
@@ -173,7 +173,7 @@ ht-degree: 95%
 
    자산 유형에 적절한 구성 요소가 필요한 위치에 만들어지게 됩니다. 여기에 선택한 자산이 포함됩니다.
 
-1. 필요할 경우 구성 요소를 [편집](#edit-content)합니다.
+1. [편집](#edit-content) 필요한 경우 구성 요소입니다.
 
 >[!NOTE]
 >

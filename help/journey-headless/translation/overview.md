@@ -2,10 +2,10 @@
 title: AEM Headless 번역 여정
 description: AEM의 강력한 번역 도구를 사용하여 Headless 콘텐츠 번역을 통한 가이드 여정을 시작해 보십시오.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 93%
+source-wordcount: '1037'
+ht-degree: 92%
 
 ---
 
@@ -24,7 +24,7 @@ Headless 구현은 전체 스택 솔루션의 기존 방식과 마찬가지로 �
 * Headless 콘텐츠 게재에 대한 개요를 살펴볼 수 있습니다.
 * AEM의 Headless 기능에 대한 기본 사항을 이해할 수 있습니다.
 * AEM의 번역 기능 및 이들과 Headless 콘텐츠의 관련성에 대해 이해할 수 있습니다.
-* 자체 Headless 콘텐츠 번역을 시작할 수 있습니다.
+* Headless 콘텐츠 번역을 시작할 수 있습니다.
 
 목표는 Headless 기술, AEM에서 Headless 콘텐츠를 제공하는 방법과 콘텐츠를 번역하는 방법에 대한 폭넓은 이해를 제공하는 것입니다. 해당 주제에 익숙하지 않은 경우 이 목표를 시작하는 것이 좋습니다.
 

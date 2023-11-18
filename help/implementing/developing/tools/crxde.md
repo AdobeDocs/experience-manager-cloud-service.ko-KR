@@ -2,7 +2,7 @@
 title: CRXDE Lite 사용
 description: CRXDE Lite은 AEM 빠른 시작의 일부이며 브라우저 내에서 로컬 개발 환경의 저장소에 액세스하고 수정할 수 있습니다.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1685'
 ht-degree: 1%

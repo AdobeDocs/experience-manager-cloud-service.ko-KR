@@ -3,10 +3,10 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud Service에서 Headless 콘텐츠 게재를 위해 콘텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '4921'
-ht-degree: 96%
+source-wordcount: '4923'
+ht-degree: 95%
 
 ---
 
@@ -503,7 +503,7 @@ GraphQL 쿼리에서 필터링을 사용하여 특정 데이터를 반환할 수
 
 | 옵션 | 유형 | 설명 |
 |--- |--- |--- |
-| `_ignoreCase` | `String` | 문자열의 대소문자를 무시합니다(예: `time` 값은 `TIME`, `time`, `tImE`, ...과 일치함) |
+| `_ignoreCase` | `String` | 문자열의 대소문자를 무시합니다(예: 값). `time` 일치 `TIME`, `time`, `tImE`, ... |
 | `_sensitiveness` | `Float` | `float` 값의 내부 표현으로 인한 기술적 제한을 해결하기 위해 `float` 값의 특정 여백이 동일하게 간주되도록 합니다. 이 옵션을 사용하면 성능에 부정적인 영향을 미칠 수 있으므로 피해야 합니다. |
 
 표현식은 논리 연산자(`_logOp`)를 사용하여 세트로 결합할 수 있습니다.
@@ -515,7 +515,7 @@ GraphQL 쿼리에서 필터링을 사용하여 특정 데이터를 반환할 수
 
 필터 정의(쿼리에 `filter` 인수로 전달됨)에는 다음이 포함됩니다.
 
-* 각 필드에 대한 하위 정의이며, 필드는 해당 이름을 통해 액세스할 수 있습니다. 예를 들어 데이터(필드) 유형의 `lastName` 필드에 대한 필터에는 `lastName` 필드가 있습니다.
+* 각 필드에 대한 하위 정의이며, 필드는 해당 이름을 통해 액세스할 수 있습니다. 예를 들어 `lastName` 필터 필드 `lastName` 데이터(필드) 유형의 필드
 * 각 하위 정의에는 표현식 세트를 제공하는 `_expressions` 배열과 표현식을 결합해야 하는 논리 연산자를 정의하는 `_logOp` 필드가 포함됩니다.
 * 각 표현식은 필드의 내용과 비교해야 하는 값(`value` 필드)과 연산자(`_operator` 필드)로 정의됩니다.
 
@@ -914,7 +914,7 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 따릅니다. AEM의 GraphQL 쿼리에 몇 가지 확장이 있습니다.
 
 * 하나의 결과가 필요한 경우:
-   * 모델 이름을 사용하십시오. 예: 도시
+   * 모델 이름을 사용하십시오(예: 도시).
 
 * 결과 목록을 기대하는 경우:
    * 모델 이름에 `List`를 추가하십시오. 예: `cityList`

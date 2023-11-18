@@ -2,10 +2,10 @@
 title: AEM Headless 콘텐츠 설계자 여정
 description: AEM의 강력하고 유연한 Headless 기능과 각각의 능력, 그리고 사용자의 첫 Headless 프로젝트에서 콘텐츠를 모델링하는 방법에 대한 가이드 여정을 시작해 보십시오.
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 91%
+source-wordcount: '793'
+ht-degree: 89%
 
 ---
 
@@ -25,7 +25,7 @@ Headless 구현은 전체 스택 솔루션의 기존 방식과 마찬가지로 �
 
 * Headless 콘텐츠 게재와 이점을 이해할 수 있습니다.
 * AEM의 Headless 기능의 콘텐츠를 모델링하는 방법을 이해할 수 있습니다.
-* 첫 번째 AEM Headless 프로젝트의 콘텐츠를 모델링하는 첫 단계를 수행할 수 있습니다.
+* 첫 번째 AEM Headless 프로젝트에 대한 콘텐츠를 모델링하는 첫 번째 단계를 수행합니다.
 
 ## AEM 설명서 여정 {#documentation-journeys}
 

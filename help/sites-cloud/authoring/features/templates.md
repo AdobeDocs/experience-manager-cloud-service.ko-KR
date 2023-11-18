@@ -2,10 +2,10 @@
 title: 페이지 템플릿 만들기
 description: 템플릿은 결과 페이지의 구조를 정의하며, 템플릿 편집기를 사용하여 템플릿을 만들고 유지 관리하는 것은 더 이상 개발자 전용 작업이 아닙니다.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '4538'
-ht-degree: 89%
+source-wordcount: '4535'
+ht-degree: 88%
 
 ---
 
@@ -73,7 +73,7 @@ ht-degree: 89%
    * 또는 `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`에서 바로 사용할 수 있습니다.
 * 필요한 경우 [템플릿용 폴더를 만들 수](#creating-a-template-folder-admin) 있습니다.
 * 처음에는 빈 상태인 [새 템플릿을 만듭니다](#creating-a-new-template-template-author).
-* 필요한 경우 템플릿에 대한 [추가 속성을 정의](#defining-template-properties-template-author)합니다.
+* [추가 속성 정의](#defining-template-properties-template-author) 필요한 경우 템플릿용
 * [템플릿을 편집](#editing-templates-template-authors)하여 다음을 정의합니다.
    * [구조](#editing-a-template-structure-template-author) - 템플릿으로 만든 페이지에서 변경할 수 없는 사전 정의된 콘텐츠입니다.
    * [초기 콘텐츠](#editing-a-template-initial-content-author) - 템플릿으로 만든 페이지에서 변경할 수 있는 사전 정의된 콘텐츠입니다.
@@ -351,8 +351,8 @@ ht-degree: 89%
 
 구성 창은 두 개로 나누어집니다.
 
-* **정책** 아래의 대화 상자 왼쪽에서는 새 정책을 만들거나 기존 정책을 선택할 수 있습니다.
-* **속성** 아래의 대화 상자 오른쪽에서는 구성 요소 유형과 관련된 속성을 설정할 수 있습니다.
+* 아래의 대화 상자 왼쪽에서 **정책**&#x200B;기존 정책을 선택하거나 기존 정책을 선택할 수 있습니다.
+* 아래의 대화 상자 오른쪽에서 **속성**&#x200B;구성 요소 유형과 관련된 속성을 설정할 수 있습니다.
 
 사용 가능한 속성은 선택한 구성 요소에 따라 다릅니다. 예를 들어 텍스트 구성 요소의 경우 속성은 여러 다른 옵션 중에서 복사 및 붙여넣기 옵션, 서식 옵션 및 단락 스타일을 정의합니다.
 

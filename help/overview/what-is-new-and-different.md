@@ -2,10 +2,10 @@
 title: 차이점 및 새로운 기능 - Adobe Experience Manager as a Cloud Service
 description: 차이점 및 새로운 기능 - Adobe Experience Manager(AEM) as a Cloud Service
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1889'
-ht-degree: 94%
+source-wordcount: '1891'
+ht-degree: 93%
 
 ---
 
@@ -182,7 +182,7 @@ AEM as a Cloud Service에서는 OSGi 번들 및 관련 구성이 관리되는 �
 
 코드와 콘텐츠의 명확하게 분리되어 있으므로 개발자는 특정 프로세스를 사용하여 개발의 일부로 콘텐츠를 업데이트할 수 있습니다. 변경 가능한 콘텐츠의 일반적인 사용 사례는 다음과 같습니다.
 
-* 고객 프로젝트의 일부인 표준 *기본* 콘텐츠 (예: 폴더, 템플릿, 워크플로 등)
+* 표준 *기본값* 고객 프로젝트의 일부인 콘텐츠(예: 폴더, 템플릿, 워크플로 등)
 
 * 검색 색인 정의
 

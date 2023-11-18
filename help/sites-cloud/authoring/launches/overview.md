@@ -2,10 +2,10 @@
 title: 론치
 description: 론치를 사용하여 향후 릴리스용 콘텐츠를 효율적으로 개발할 수 있습니다. 현재 페이지를 유지 관리하면서 나중에 게시할 수 있도록 변경할 수도 있습니다.
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 95%
+source-wordcount: '898'
+ht-degree: 94%
 
 ---
 
@@ -102,7 +102,7 @@ ht-degree: 95%
 
 ## 론치 콘솔 {#the-launches-console}
 
-론치 콘솔은 론치에 대한 개요를 제공하며, 나열된 론치에 대해 작업을 수행할 수 있도록 합니다. 이 콘솔은 다음 방법으로 액세스할 수 있습니다.
+론치 콘솔은 론치에 대한 개요를 제공하며 나열된 론치에 대해 조치를 취할 수 있도록 해줍니다. 이 콘솔은 다음 방법으로 액세스할 수 있습니다.
 
 * **도구** 콘솔: **도구**, **사이트**, **론치**
 
