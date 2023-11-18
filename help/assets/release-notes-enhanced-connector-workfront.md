@@ -2,10 +2,10 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] 릴리스 정보'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] 릴리스 정보'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 681d4b9f300280e5a6723bd00a9ccfde0545f401
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 97%
+source-wordcount: '1378'
+ht-degree: 94%
 
 ---
 
@@ -15,20 +15,14 @@ ht-degree: 97%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Workfront for Experience Manager enhanced connector] 최신 버전 1.9.14의 릴리스 일자는 2023년 10월 13일입니다
+의 최신 버전 1.9.15에 대한 릴리스 날짜 [!DNL Workfront for Experience Manager enhanced connector] 은 2023년 11월 17일입니다.
 
 ## 릴리스 하이라이트 {#release-highlights}
 
 최신 버전의 [!DNL Workfront for Experience Manager enhanced connector]에는 다음과 같은 버그 수정 사항이 포함됩니다.
 
-* 이벤트 구독이 고급 설정에서 비활성화되면 **문서 업데이트 이벤트를 구독하는 옵션을 선택하여 AEM 자산 메타데이터를 업데이트**&#x200B;하고, **프로젝트가 완료되면 모든 프로젝트 자산을 Brand Portal에 게시**&#x200B;하고, **댓글 동기화를 활성화**&#x200B;할 수 있습니다.
-
-* Workfront에서 자산을 미리 볼 때 Experience Manager에 저장된 일부 자산이 제대로 렌더링되지 않습니다.
-
-* Experience Manager와 Workfront의 연결을 재구성하는 동안에는 댓글 동기화 업데이트, 삭제, 문서 업데이트 등 이벤트 구독이 제대로 생성되지 않습니다.
-
-* 연결 폴더 생성, 업데이트, 연결 폴더 활성화, 댓글 동기화 활성화 및 비활성화, 커넥터에 대한 고급 설정 저장에 대한 주요 API 성능이 개선되었습니다.
-
+* AEM 폴더 목록을 보는 동안 대화 상자를 로드하는 데 1분 이상 걸립니다.
+* 인증됨 [!DNL Workfront] 사용자가 인증 실패 오류 로그를 지속적으로 받고 있습니다.
 
 >[!NOTE]
 >
@@ -37,7 +31,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->Adobe는 [ [!DNL Workfront for Experience Manager enhanced connector]의 최신 1.9.14 버전 ](/help/assets/workfront-connector-install.md)으로 업그레이드할 것을 권장합니다.
+>Adobe는 [ ](/help/assets/workfront-connector-install.md)의 최신 1.9.15 버전 [!DNL Workfront for Experience Manager enhanced connector]으로 업그레이드할 것을 권장합니다.
 
 ## 알려진 문제 {#known-issues}
 
@@ -46,6 +40,16 @@ ht-degree: 97%
 * 클래식 Workfront 환경을 사용하는 경우 **[!UICONTROL 전송 대상]** 옵션이에서 사용할 수 있음 **[!UICONTROL 자세히]** 드롭다운 목록에서는 Experience Manager 내의 대상 을 선택할 수 없습니다. **[!UICONTROL 수신인]** 옵션은 **[!UICONTROL 문서 작업]** 드롭다운 목록을 사용하여 올바르게 작동합니다. The **[!UICONTROL 수신인]** 옵션은 새로운 Workfront 경험에서 사용할 수 있는 **[!UICONTROL 추가]** 드롭다운 목록 및 **[!UICONTROL 문서 작업]** 목록에서 올바르게 작동합니다.
 
 ## 이전 출시 버전 {#previous-releases}
+
+### 2023년 10월 릴리스 {#october-2023-release}
+
+* 이벤트 구독이 고급 설정에서 비활성화되면 **문서 업데이트 이벤트를 구독하는 옵션을 선택하여 AEM 자산 메타데이터를 업데이트**&#x200B;하고, **프로젝트가 완료되면 모든 프로젝트 자산을 Brand Portal에 게시**&#x200B;하고, **댓글 동기화를 활성화**&#x200B;할 수 있습니다.
+
+* Workfront에서 자산을 미리 볼 때 Experience Manager에 저장된 일부 자산이 제대로 렌더링되지 않습니다.
+
+* Experience Manager와 Workfront의 연결을 재구성하는 동안에는 댓글 동기화 업데이트, 삭제, 문서 업데이트 등 이벤트 구독이 제대로 생성되지 않습니다.
+
+* 연결 폴더 생성, 업데이트, 연결 폴더 활성화, 댓글 동기화 활성화 및 비활성화, 커넥터에 대한 고급 설정 저장에 대한 주요 API 성능이 개선되었습니다.
 
 ### 2023년 9월 릴리스 {#september-2023-release}
 
