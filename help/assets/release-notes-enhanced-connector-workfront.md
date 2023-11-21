@@ -26,12 +26,12 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->AEM 6.4는 확장 지원이 종료되었습니다. 다음 참조: [기술 지원 기간](https://helpx.adobe.com/support/programs/eol-matrix.html). [여기](https://experienceleague.adobe.com/docs/?lang=en)에서 지원되는 버전을 확인하십시오.
+>AEM 6.4는 확장 지원이 종료되었습니다. 다음 참조: [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). [여기](https://experienceleague.adobe.com/docs/?lang=en)에서 지원되는 버전을 확인하십시오.
 
 
 >[!IMPORTANT]
 >
->Adobe는 [ ](/help/assets/workfront-connector-install.md)의 최신 1.9.15 버전 [!DNL Workfront for Experience Manager enhanced connector]으로 업그레이드할 것을 권장합니다.
+>Adobe는 [의 ](/help/assets/workfront-connector-install.md)최신 1.9.15 버전으로 업그레이드[!DNL Workfront for Experience Manager enhanced connector]할 것을 권장합니다.
 
 ## 알려진 문제 {#known-issues}
 
@@ -226,4 +226,4 @@ ht-degree: 94%
 
 >[!MORELIKETHIS]
 >
->* Experience Manager 6.5와 [통합 [!DNL Workfront for Experience Manager enhanced connector] ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=en)
+>* Experience Manager 6.5와 [통합 [!DNL Workfront for Experience Manager enhanced connector] ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=ko-KR)
