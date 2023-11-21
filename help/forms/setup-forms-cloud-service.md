@@ -2,9 +2,9 @@
 title: 설정 방법 [!DNL AEM Forms] as a cloud service 환경?
 description: 설정 및 구성 방법 알아보기 [!DNL AEM Forms] as a Cloud Service 환경.
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '649'
 ht-degree: 17%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 17%
 
 * **AEM 관리자**: AEM 관리자는 사용자 설정, 환경 강화, 데이터 소스 구성, 이메일 구성 및 타사 소프트웨어와 같은 전반적인 구성을 지원합니다. AEM 관리자는 Adobe Analytics, Adobe Target 및 Adobe Sign과 통합하는 것과 같은 통합도 지원합니다.
 
-* **최종 사용자**: 최종 사용자가 게시된 양식과 상호 작용하여 양식을 제출하고, 제출된 양식에 서명하고, 웹 포털을 통해 제출된 애플리케이션을 추적하고, 개인화된 통신을 수신합니다.
+* **최종 사용자**: 사용자가 게시된 양식과 상호 작용하여 양식을 제출하고, 제출된 양식에 서명하고, 웹 포털을 통해 제출된 애플리케이션을 추적하고, 개인화된 통신을 수신합니다.
 
 <!-- While onboarding to the service, assign the following AEM groups to [!DNL AEM Forms] as a Cloud Service based on their role:
 

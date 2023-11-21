@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 10%
@@ -168,7 +168,7 @@ ht-degree: 10%
 
    * 페이지의 오른쪽 위 모서리 근처에서 사전 설정을 적용하려면 **[!UICONTROL 사전 설정]**&#x200B;을 클릭한 다음 사전 설정을 선택하여 모든 에셋에 한 번에 적용합니다.
 
-1. **[!UICONTROL 저장]**&#x200B;을 선택합니다. 새로 만든 회전 세트가 해당 회전 세트를 만든 폴더에 나타납니다.
+1. **[!UICONTROL 저장]**&#x200B;을 선택합니다. 스핀 세트를 만든 폴더에 생성된 스핀 세트가 나타납니다.
 
 ## 스핀 세트 보기 {#viewing-spin-sets}
 

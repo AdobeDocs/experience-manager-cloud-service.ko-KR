@@ -2,9 +2,9 @@
 title: 쿼리 빌더 API
 description: 자산 공유 쿼리 빌더의 기능은 Java&trade; API 및 REST API를 통해 노출됩니다.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2008'
 ht-degree: 0%
 
 ---

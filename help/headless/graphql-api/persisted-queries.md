@@ -3,10 +3,10 @@ title: 지속 GraphQL 쿼리
 description: 성능을 최적화하기 위해 Adobe Experience Manager as a Cloud Service에서 GraphQL 쿼리를 지속하는 방법을 알아봅니다. HTTP GET 메서드를 사용하여 클라이언트 애플리케이션에서 지속 쿼리를 요청할 수 있으며 응답을 Dispatcher 및 CDN 계층에서 캐시할 수 있으므로 궁극적으로 클라이언트 애플리케이션의 성능이 향상됩니다.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1676'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -444,7 +444,7 @@ URL은 다음과 같은 부분들로 나눌 수 있습니다.
 1. “1.0”과 같은 버전 번호를 입력합니다.
 1. **필터** 아래에 새 **필터**&#x200B;를 추가합니다. 경로 파인더를 사용하여 구성 아래에서 `persistentQueries` 폴더를 선택합니다. 예를 들어 `wknd` 구성의 경우, 전체 경로는 `/conf/wknd/settings/graphql/persistentQueries`입니다.
 1. **저장**&#x200B;을 탭하여 새 패키지 정의를 저장하고 대화 상자를 닫습니다.
-1. 새로 만든 패키지 정의에 있는 **빌드** 버튼을 탭합니다.
+1. 탭 **빌드** 생성된 패키지 정의에 있는 단추입니다.
 
 패키지를 빌드하면 다음과 같은 작업을 수행할 수 있습니다.
 

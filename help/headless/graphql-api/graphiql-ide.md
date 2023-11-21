@@ -3,10 +3,10 @@ title: AEM에서 GraphiQL IDE 사용
 description: Adobe Experience Manager에서 GraphiQL IDE를 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 98%
+source-wordcount: '1138'
+ht-degree: 94%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 98%
 * 쿼리에 사용하려는 Sites 구성에 적합한 **엔드포인트**&#x200B;를 선택합니다.
 * 새 쿼리 직접 입력
 * **[지속 쿼리](/help/headless/graphql-api/persisted-queries.md)** 제작 및 액세스
-* 바로 결과를 조회하기 위해 쿼리 실행
+* 쿼리를 실행하여 결과를 즉시 확인
 * **쿼리 변수** 관리
 * **지속 쿼리** 저장 및 관리
 * **게시** 또는 **미리보기** 서비스에 **지속 쿼리** 게시 또는 게시 취소(예: `dev-publish`에/에서)
@@ -105,7 +105,7 @@ GraphiQL IDE를 사용하여 [쿼리 변수](/help/headless/graphql-api/content-
 >
 >Dispatcher의 사용자 정의 재작성 규칙은 AEM 게시의 기본값을 재정의할 수 있습니다.
 >
->위치 일치 패턴을 기반으로 Dispatcher에서 TTL 기반 캐시 제어 헤더를 보내는 경우 필요 시 일치에서 `/graphql/execute.json/*`를 제외할 수 있습니다.
+>위치 일치 패턴을 기반으로 Dispatcher에서 TTL 기반 캐시 제어 헤더를 보내는 경우 필요한 경우 를 제외할 수 있습니다 `/graphql/execute.json/*` 일치 항목에서 제외합니다.
 
 GraphQL을 사용하여 HTTP 캐시 헤더를 구성하여 개별 지속 쿼리에 대해 이러한 매개변수를 제어할 수 있습니다.
 

@@ -3,7 +3,7 @@ title: Dispatcher 도구를 사용하여 확인 및 디버깅
 description: 로컬 유효성 검사, 디버깅, 유연한 모드 파일 구조 및 레거시 모드에서 유연한 모드로 마이그레이션하는 방법에 대해 알아봅니다.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 4a79284d879af1920c839a68be14619d1e35f7e9
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2990'
 ht-degree: 1%
@@ -397,7 +397,7 @@ use the prefix `etc/httpd` in your archive.
 | `conf.d/modsec` |
 | `conf.d/rewrites` |
 
-예를 들어 아래 새로 만든 디렉토리에 파일을 포함할 수 있습니다. `conf.d/includes` 디렉터리는 다음과 같습니다.
+예를 들어 아래의 일부 생성된 디렉토리에 파일을 포함할 수 있습니다 `conf.d/includes` 디렉터리는 다음과 같습니다.
 
 ```
 Include conf.d/includes/mynewdirectory/myincludefile.conf

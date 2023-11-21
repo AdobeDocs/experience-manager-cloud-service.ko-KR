@@ -2,10 +2,10 @@
 title: SPA 소개 및 워크스루
 description: 이 문서에서는 SPA 개념을 소개하고, 작성용 기본 SPA 애플리케이션을 사용하는 과정을 안내하고, 기본 AEM SPA 편집기와 관련되는 방식을 보여 줍니다.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2066'
-ht-degree: 94%
+source-wordcount: '2065'
+ht-degree: 93%
 
 ---
 
@@ -130,7 +130,7 @@ SPA를 빌드하여 AEM SPA 편집기를 사용하는 경우 콘텐츠 작성자
 
 ## SPA 앱 및 AEM SPA 편집기 {#spa-apps-and-the-aem-spa-editor}
 
-SPA가 최종 사용자에게 어떻게 동작하는지 경험한 다음 SPA 페이지를 검사하게 되면 AEM 내 SPA 편집기에서 SAP 앱이 작동하는 방식을 더 잘 파악할 수 있습니다.
+SPA이 사용자를 위해 동작하는 방식을 경험한 다음 SPA 페이지를 검사하면 AEM의 SPA 편집기에서 SAP 앱이 작동하는 방식을 더 잘 이해할 수 있습니다.
 
 ### SPA 애플리케이션 사용 {#using-an-spa-application}
 

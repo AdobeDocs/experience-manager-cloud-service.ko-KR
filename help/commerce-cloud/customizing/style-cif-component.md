@@ -1,6 +1,6 @@
 ---
-title: Adobe Experience Manager CIF 핵심 구성 요소 스타일 지정
-description: Adobe Experience Manager(AEM) CIF 코어 구성 요소 스타일링 방법을 알아봅니다. 이 자습서에서는 클라이언트측 라이브러리 또는 clientlib을 사용하여 AEM Commerce 구현을 위한 CSS 및 JavaScript를 배포하고 관리하는 방법을 다룹니다. 이 튜토리얼에서는 ui.frontend 모듈과 Webpack 프로젝트를 전체 빌드 프로세스에 통합하는 방법에 대해서도 설명합니다.
+title: 스타일 Adobe Experience Manager CIF 핵심 구성 요소
+description: Adobe Experience Manager(AEM) CIF 핵심 구성 요소의 스타일을 지정하는 방법을 알아봅니다. 이 자습서에서는 클라이언트측 라이브러리 또는 clientlib을 사용하여 AEM Commerce 구현을 위한 CSS 및 JavaScript를 배포하고 관리하는 방법을 다룹니다. 이 튜토리얼에서는 ui.frontend 모듈과 Webpack 프로젝트를 전체 빌드 프로세스에 통합하는 방법에 대해서도 설명합니다.
 sub-product: Commerce
 topics: Development
 version: Cloud Service
@@ -11,16 +11,16 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2535'
 ht-degree: 3%
 
 ---
 
-# AEM CIF 핵심 구성 요소 스타일 지정 {#style-aem-cif-core-components}
+# 스타일 AEM CIF 핵심 구성 요소 {#style-aem-cif-core-components}
 
-다음 [CIF 베니아 프로젝트](https://github.com/adobe/aem-cif-guides-venia) 는 사용을 위한 참조 코드 베이스입니다. [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components). 이 자습서에서는 Venia 참조 프로젝트를 검사하고 AEM CIF 코어 구성 요소에서 사용되는 CSS 및 JavaScript를 구성하는 방법을 알아봅니다. 또한 CSS를 사용하여 스타일을 만들어 의 기본 스타일을 **제품 티저** 구성 요소.
+다음 [CIF 베니아 프로젝트](https://github.com/adobe/aem-cif-guides-venia) 는 사용을 위한 참조 코드 베이스입니다. [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components). 이 자습서에서는 Venia 참조 프로젝트를 검사하고 AEM CIF 핵심 구성 요소에서 사용하는 CSS 및 JavaScript를 구성하는 방법을 알아봅니다. 또한 CSS를 사용하여 스타일을 만들어 의 기본 스타일을 **제품 티저** 구성 요소.
 
 >[!TIP]
 >
@@ -28,7 +28,7 @@ ht-degree: 3%
 
 ## 빌드할 내용
 
-이 자습서에서는 카드와 유사한 제품 티저 구성 요소에 대해 새로운 스타일이 구현됩니다. 자습서에서 배운 내용을 다른 CIF 핵심 구성 요소에 적용할 수 있습니다.
+이 자습서에서는 카드와 유사한 제품 티저 구성 요소에 대해 새로운 스타일이 구현됩니다. 자습서에서 학습된 단원은 다른 CIF 핵심 구성 요소에 적용할 수 있습니다.
 
 ![빌드할 내용](../assets/style-cif-component/what-you-will-build.png)
 
@@ -42,7 +42,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> **기존 프로젝트를 마음껏 사용** (CIF가 포함된 AEM Project Archetype 기반) 이 섹션을 건너뜁니다.
+> **기존 프로젝트를 마음껏 사용** (CIF이 포함된 AEM Project Archetype 기반) 이 섹션을 건너뜁니다.
 
 1. 프로젝트를 복제할 수 있도록 다음 git 명령을 실행합니다.
 
@@ -57,7 +57,7 @@ ht-degree: 3%
    $ mvn clean install -PautoInstallPackage,cloud
    ```
 
-1. AEM 인스턴스를 Adobe Commerce 인스턴스에 연결하거나 새로 만든 프로젝트에 구성을 추가할 수 있도록 필요한 OSGi 구성을 추가합니다.
+1. AEM 인스턴스를 Adobe Commerce 인스턴스에 연결하거나 생성된 프로젝트에 구성을 추가할 수 있도록 필요한 OSGi 구성을 추가합니다.
 
 1. 이 시점에서 Adobe Commerce 인스턴스에 연결된 상점 첫 화면의 작업 버전이 있어야 합니다. 다음 위치로 이동 `US` > `Home` 페이지 위치: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 

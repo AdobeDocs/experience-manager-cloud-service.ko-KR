@@ -4,7 +4,7 @@ description: AEM에서 기계 번역 및 인간 번역을 만들고 관리하는
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3971'
 ht-degree: 86%
@@ -455,7 +455,7 @@ Sites 콘솔을 사용하여 콘텐츠를 검토하고, 언어 사본을 비교�
 1. 이동하려는 소스 페이지와 연결된 언어 사본을 게시 취소합니다.
 1. 이 사본을 삭제합니다.
 1. 새로 이동한 소스 페이지에서 새 언어 사본을 만듭니다.
-1. 새로 만든 언어 사본을 게시합니다.
+1. 생성된 언어 사본을 게시합니다.
 
 ## 번역 작업 가져오기 및 내보내기 {#import-export}
 

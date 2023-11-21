@@ -2,7 +2,7 @@
 title: 콘텐츠 변환기 개요
 description: 콘텐츠 변환기를 사용하여 BPA에서 보고한 콘텐츠 관련 문제를 감지하고 해결하는 방법에 대해 알아봅니다.
 exl-id: aa3397ff-3dd6-4c67-9064-cb9b19bf1c73
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 2%
@@ -24,7 +24,7 @@ ht-degree: 2%
 | DOPI | deprecated.ordered.index | 더 이상 사용되지 않는 색인을 제거합니다. |
 | OAUI | non.migrated.oauth.users | AEM 이러한 사용자를 제거하여 as a Cloud Service으로 마이그레이션되지 않도록 하십시오. |
 | PCX | page.complexity.medium <br> page.complexity.high | 페이지/하위 항목을 삭제하거나 다른 위치로 이동하여 AEM as a Cloud Service으로 마이그레이션되지 않도록 하십시오. |
-| REP | forward.replication <br> reverse.replication <br> standard.replication.agent.modification <br> custom.replication.agent.detection | 새로 생성된 복제 에이전트를 제거합니다. <br> 또는 <br> 수정/추가된 속성을 제거합니다. |
+| REP | forward.replication <br> reverse.replication <br> standard.replication.agent.modification <br> custom.replication.agent.detection | 생성된 복제 에이전트를 제거합니다. <br> 또는 <br> 수정/추가된 속성을 제거합니다. |
 | URS | clientlibs.location <br> file.location <br> node.location <br> workflow.location | 마이그레이션 도중 문제가 발생하지 않도록 올바른 위치로 이동하십시오. |
 | URS | node.size | 노드를 임시로 로 이동`/etc/packages/content-transformation/paths` AEM as a Cloud Service으로 마이그레이션되지 않도록 합니다. |
 

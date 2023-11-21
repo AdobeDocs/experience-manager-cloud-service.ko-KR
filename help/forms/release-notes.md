@@ -1,11 +1,11 @@
 ---
-title: AEM Forms as a Cloud Service 릴리스 노트
-description: AEM Forms as a Cloud Service의 새로운 기능, 베타 릴리스, 프리릴리스 정보 등에 대해 알아보십시오.
+title: AEM Forms as a Cloud Service 릴리스 정보
+description: AEM Forms as a Cloud Service의 새로운 기능, Beta 릴리스, 프리릴리스 정보 등에 대해 알 수 있습니다.
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
-source-git-commit: 8074c0e9566b679830a56094bc9b47cb22f4bb4a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2028'
-ht-degree: 98%
+source-wordcount: '2024'
+ht-degree: 90%
 
 ---
 
@@ -31,7 +31,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service는 지속적 개선
 
 ### [!DNL Forms]의 새로운 기능 {#what-is-new-forms-oct-2021}
 
-- **적응형 양식용 Analytics**: 이제 적응형 양식용 Adobe Analytics를 통해, 로그인된 및 로그인되지 않은(익명의) 최종 사용자 행동을 포착하고 추적하여 최종 사용자 인사이트를 수집할 수 있습니다. 이로써 데이터를 기반으로 정보에 입각한 결정을 내려 최종 사용자 경험을 개선할 수 있습니다.
+- **적응형 Forms에 대한 Analytics**: 이제 적응형 Forms용 Adobe Analytics을 통해, 로그인된 및 로그인되지 않은(익명의) 사용자 행동을 포착하고 추적하여 사용자 인사이트를 수집할 수 있습니다. 데이터를 기반으로 정보에 입각한 결정을 내려 사용자 경험을 개선할 수 있습니다.
 
 ### [!DNL Forms] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-forms-oct-2021}
 
@@ -52,7 +52,7 @@ Beta 프로그램에 등록하려면 [!DNL formscsbeta@adobe.com]에 문의하�
 
 - **적응형 양식에서 Adobe Sign 역할 사용**: 비즈니스 및 엔터프라이즈 서비스 수준을 위한 Adobe Sign은 계약 수신자의 역할을 서명자 이상으로 확장하는 옵션을 제공하여 워크플로 요구 사항에 보다 잘 부합하도록 합니다. 이제 [계약의 각 수신자가 적응형 양식에서 자신의 역할을 구성할 수 있으며,](working-with-adobe-sign.md#addsignerstoanadaptiveform) 서명자는 기본 역할입니다.
 
-- **적응형 양식용 Analytics**: 이제 적응형 양식용 [Adobe Analytics를 통해 최종 사용자 행동을 포착하고 추적하여](integrate-aem-forms-with-adobe-analytics.md) 최종 사용자 인사이트를 수집할 수 있습니다. 이로써 데이터를 기반으로 정보에 입각한 결정을 내려 최종 사용자 경험을 개선할 수 있습니다.
+- **적응형 Forms에 대한 Analytics**: 이제 을 캡처하고 [Adobe Analytics을 통해 사용자 동작 추적](integrate-aem-forms-with-adobe-analytics.md) 를 사용하여 적응형 Forms에서 사용자 인사이트를 수집합니다. 데이터를 기반으로 정보에 입각한 결정을 내려 사용자 경험을 개선할 수 있습니다.
 
 - **AEM Forms를 Microsoft Dynamics 및 Salesforce에 손쉽게 연결**: 이 서비스는 Microsoft Dynamics 및 Salesforce를 위한 즉시 사용 가능한 데이터 소스 구성 및 데이터 모델을 제공하여 [개발자가 Microsoft Dynamics 및 Salesforce를 적응형 양식의 데이터 소스로 더 빠르고 간편하게 구성할 수 있게 해 줍니다](configure-msdynamics-salesforce.md).
 
@@ -61,7 +61,7 @@ Beta 프로그램에 등록하려면 [!DNL formscsbeta@adobe.com]에 문의하�
 ### [!DNL Forms]의 베타 기능 {#sep-what-is-new-forms-prerelease}
 
 - **통합 스토리지 커넥터:** 통합 스토리지 커넥터를 사용하여 고객 관리 저장소에서 처리 중인 데이터를 외부화합니다. 예를 들어 민감한 개인 데이터(SPD)가 포함된, 처리 중인 AEM Workflow 데이터(AEM Workflow 변수 데이터)를 고객 관리 저장소에 저장할 수 있습니다.
-  <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
+  <!--* Enable Forms Portal's save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
 - **[!DNL AEM Forms as a Cloud Service - Communications]**: [커뮤니케이션 API](aem-forms-cloud-service-communications.md)를 통해 XDP 템플릿과 XML 데이터를 결합하여 다양한 형식의 인쇄 문서를 생성할 수 있습니다. 이 서비스를 사용하면 동기화 모드에서 문서를 생성할 수 있습니다. API를 사용하면 다음과 같은 기능을 제공하는 애플리케이션을 만들 수 있습니다.
    - XML 데이터로 템플릿 파일을 채워 문서를 생성합니다.
@@ -90,7 +90,7 @@ Beta 프로그램에 등록하려면 [!DNL formscsbeta@adobe.com]에 문의하�
 
   * Enable searching of forms based on a various criteria, such as form properties, metadata, and tags.
 
-  * Lists drafts and submissions related to Adaptive Form created by end user.
+  * Lists drafts and submissions related to Adaptive Form created by user.
 
   -->
 
@@ -110,7 +110,7 @@ Beta 프로그램에 등록하려면 [!DNL formscsbeta@adobe.com]에 문의하�
 
 - **통합 스토리지 커넥터:** 통합 스토리지 커넥터를 사용하여 고객 관리 저장소에서 처리 중인 데이터를 외부화합니다. 예를 들어 다음 작업을 수행할 수 있습니다.
 
-   - Forms 포털 저장 및 재개 기능을 활성화하고 적응형 양식 초안을 고객 관리 데이터 저장소에 저장합니다.
+   - Forms 포털의 저장 및 재개 기능을 활성화하고 적응형 양식 초안을 고객 관리 데이터 저장소에 저장합니다.
    - 민감한 개인 데이터(SPD)가 포함된, 처리 중인 AEM Workflow 데이터(AEM Workflow 변수 데이터)를 고객 관리 저장소에 저장합니다.
 
 - **[!DNL AEM Forms as a Cloud Service - Communications]**: [커뮤니케이션 API](aem-forms-cloud-service-communications.md)를 통해 XDP 템플릿과 XML 데이터를 결합하여 다양한 형식의 인쇄 문서를 생성할 수 있습니다. 이 서비스를 사용하면 동기화 모드에서 문서를 생성할 수 있습니다. API를 사용하면 다음과 같은 기능을 제공하는 애플리케이션을 만들 수 있습니다.
@@ -124,7 +124,7 @@ Beta 프로그램에 등록하려면 [!DNL formscsbeta@adobe.com]에 문의하�
 
 - **적응형 양식에서 Adobe Sign 역할 사용**: 비즈니스 및 엔터프라이즈 서비스 수준을 위한 Adobe Sign은 계약 수신자의 역할을 서명자 이상으로 확장하는 옵션을 제공하여 워크플로 요구 사항에 보다 잘 부합하도록 합니다. 이제 [계약의 각 수신자가 적응형 양식에서 자신의 역할을 구성할 수 있으며,](working-with-adobe-sign.md#addsignerstoanadaptiveform) 서명자는 기본 역할입니다.
 
-- **적응형 양식용 Analytics**: 이제 적응형 양식용 Adobe Analytics를 통해 최종 사용자 행동을 포착하고 추적하여 최종 사용자 인사이트를 수집할 수 있습니다. 이로써 데이터를 기반으로 정보에 입각한 결정을 내려 최종 사용자 경험을 개선할 수 있습니다.
+- **적응형 Forms에 대한 Analytics**: 이제 적응형 Forms용 Adobe Analytics을 통해 사용자 행동을 포착하고 추적하여 사용자 인사이트를 수집할 수 있습니다. 데이터를 기반으로 정보에 입각한 결정을 내려 사용자 경험을 개선할 수 있습니다.
 
 - **AEM Forms를 Microsoft Dynamics 및 Salesforce에 손쉽게 연결**: 이 서비스는 Microsoft Dynamics 및 Salesforce를 위한 즉시 사용 가능한 데이터 소스 구성 및 데이터 모델을 제공하여 [개발자가 Microsoft Dynamics 및 Salesforce를 적응형 양식의 데이터 소스로 더 빠르고 간편하게 구성할 수 있게 해 줍니다](configure-msdynamics-salesforce.md).
 
@@ -209,7 +209,7 @@ Beta 프로그램에 등록하려면 formscsbeta@adobe.com에 문의하십시오
 
   고급 머신 러닝 알고리즘으로 더욱 강력해진 Adobe Sign의 정부 ID 프로세스는 고품질의 수령인 신원 인증을 확보할 수 있는 능력을 전 세계 기업에 제공합니다. 이제 Adobe Sign이 활성화된 적응형 양식에서 정부 ID 신원 인증 방법을 사용할 수 있습니다.
 
-  정부 ID는 [정부에서 발급한 신분증(운전면허증, 주민등록증, 여권)](https://helpx.adobe.com/kr/in/sign/using/adobesign-authentication-government-id.html) 이미지를 수령인이 업로드할 수 있도록 지시하는 방법이며, 그런 다음 해당 문서가 진짜인지 평가합니다.
+  정부 ID는 수신자에게 다음을 지시하는 프리미엄 신원 인증 방법입니다 [정부에서 발급한 신분증(운전면허증, 주민등록증, 여권) 이미지 업로드](https://helpx.adobe.com/kr/in/sign/using/adobesign-authentication-government-id.html)를 누르고 해당 문서가 진짜인지 평가합니다.
 
 - **비동기 적응형 양식 제출을 위한 양식 내 서명 경험 사용 지원**
 

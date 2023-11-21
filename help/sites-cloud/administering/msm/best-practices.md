@@ -4,10 +4,10 @@ description: Adobe 엔지니어링 및 컨설팅 팀에서 컴파일한 AEM 다�
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1418'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -113,9 +113,9 @@ Live Copy에서 페이지를 이동할 때 다음 모범 사례를 고려하십�
    * 이 구성에 다른 작업을 추가하지 마십시오.
 1. 새 구성을 배치합니다.
    * 각 페이지를 Live Copy의 이전 위치에서 삭제할 때 페이지 이동을 완전히 롤아웃하려면 다음 작업을 수행하십시오.
-      * 새로 만든 구성을 표준 롤아웃 구성 앞에 배치합니다. 표준 롤아웃 구성은 이전 위치에서의 페이지 삭제 작업을 처리합니다.
+      * 생성된 구성을 표준 롤아웃 구성 앞에 배치합니다. 표준 롤아웃 구성은 이전 위치에서의 페이지 삭제 작업을 처리합니다.
       * Live Copy의 이전 위치에 각 페이지를 유지하면서 페이지 이동을 롤아웃하려면(즉, 콘텐츠를 복제하려면) 다음 작업을 수행하십시오.
-         * 새로 만든 구성을 표준 롤아웃 구성 뒤에 배치합니다. 이렇게 하면 콘텐츠가 Live Copy에서 삭제되거나 게시에서 비활성화되지 않습니다.
+         * 생성된 구성을 표준 롤아웃 구성 뒤에 배치합니다. 이렇게 하면 콘텐츠가 Live Copy에서 삭제되거나 게시에서 비활성화되지 않습니다.
 
 ## 롤아웃 맞춤화 {#customizing-rollouts}
 

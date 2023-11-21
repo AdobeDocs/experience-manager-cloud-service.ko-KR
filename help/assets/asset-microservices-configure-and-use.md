@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2928'
 ht-degree: 3%
@@ -246,7 +246,7 @@ OSGi 구성을 배포하는 방법은 다음을 참조하십시오. [배포 대�
    * 제목: 자동 시작 워크플로우 비활성화
    * 이름: disable-auto-start-workflow
 1. 선택 __완료__ 워크플로우 모델을 만들려면
-1. __선택__ 및 __편집__ 새로 만든 워크플로우 모델
+1. __선택__ 및 __편집__ 생성된 워크플로 모델
 1. 워크플로우 모델 편집기에서 __1단계__ 모델 정의에서 를 삭제하고
 1. 를 엽니다. __사이드 패널__, 및 선택 __단계__
 1. 드래그 __DAM 자산 업데이트 워크플로우 완료__ 모델 정의로 이동

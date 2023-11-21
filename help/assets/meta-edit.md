@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 7%
@@ -36,7 +36,7 @@ ht-degree: 7%
    >
    >텍스트 필드가 비어 있으면 기존 메타데이터 세트가 없습니다. 필드에 값을 입력하고 저장하여 해당 메타데이터 속성을 추가할 수 있습니다.
 
-에셋의 메타데이터에 대한 모든 변경 사항은 XMP 데이터의 일부로 원래 바이너리에 다시 기록됩니다. 이 작업은 Experience Manager 메타데이터 쓰기 되돌림 워크플로우를 통해 수행됩니다. 기존 속성에 대한 변경 사항(예: `dc:title`)은 덮어쓰기되고 새로 생성된 속성(과 같은 사용자 지정 속성 포함)입니다 `cq:tags`)가 스키마와 함께 추가됩니다.
+에셋의 메타데이터에 대한 모든 변경 사항은 XMP 데이터의 일부로 원래 바이너리에 다시 기록됩니다. 이 작업은 Experience Manager 메타데이터 쓰기 되돌림 워크플로우를 통해 수행됩니다. 기존 속성에 대한 변경 사항(예: `dc:title`)은 덮어쓰기되고 생성된 속성(과 같은 사용자 지정 속성 포함)입니다 `cq:tags`)가 스키마와 함께 추가됩니다.
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 

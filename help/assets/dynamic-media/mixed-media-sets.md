@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1500'
 ht-degree: 14%
@@ -58,7 +58,7 @@ Mixed Media Sets are designated by a banner with the word **[!UICONTROL MixedMed
 
 1. [웹 애플리케이션에 URL 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) 또는 [비디오 또는 이미지 뷰어 포함](/help/assets/dynamic-media/embed-code.md).
 
-   Adobe Experience Manager Assets는 혼합 미디어 세트에 대한 URL 호출을 생성하고 혼합 미디어 세트를 게시한 후 활성화합니다. 에셋을 미리 볼 때 이러한 URL을 복사할 수 있습니다. 또는 웹 사이트에 포함할 수 있습니다.
+   Adobe Experience Manager Assets은 혼합 미디어 세트에 대한 URL 호출을 생성하고 혼합 미디어 세트를 게시한 후 활성화합니다. 에셋을 미리 볼 때 이러한 URL을 복사할 수 있습니다. 또는 웹 사이트에 포함할 수 있습니다.
 
    혼합 미디어 세트를 선택한 다음 왼쪽 레일 드롭다운 메뉴에서 을(를) 선택합니다 **[!UICONTROL 뷰어]**.
 
@@ -118,7 +118,7 @@ Start by uploading the images and videos for your Mixed Media Sets. 사용자는
 
 1. 에셋을 삭제하려면 해당 확인란을 선택하고 을 선택합니다 **[!UICONTROL 자산 삭제]**.
 1. 사전 설정을 적용하려면 다음을 선택합니다 **[!UICONTROL 사전 설정]** 오른쪽 상단 모서리에서 에셋에 적용할 사전 설정을 선택합니다.
-1. **[!UICONTROL 저장]**&#x200B;을 선택합니다. 새로 만든 혼합 미디어 세트가 작성한 폴더에 나타납니다.
+1. **[!UICONTROL 저장]**&#x200B;을 선택합니다. 만든 혼합 미디어 세트가 만든 폴더에 나타납니다.
 
 ## 혼합 미디어 집합 편집 {#editing-mixed-media-sets}
 

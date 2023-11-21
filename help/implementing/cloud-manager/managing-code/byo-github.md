@@ -2,10 +2,10 @@
 title: Cloud Manager에서 자체 GitHub 저장소를 사용하여 작업
 description: 자체 GitHub 저장소에서 작동하도록 Cloud Manager를 설정하는 방법에 대해 알아봅니다.
 feature: Release Information
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 73%
+source-wordcount: '720'
+ht-degree: 70%
 
 ---
 
@@ -75,7 +75,7 @@ ht-degree: 73%
 
 앱을 설치하고 시크릿 파일을 순서에 관계없이 만들 수 있습니다. 그러나 유효성을 검사하려면 두 단계를 모두 완료해야 합니다.
 
-유효성 검사 전까지 저장소는 빨간색 아이콘으로 나열되며, 이는 아직 검증되지 않았고 사용할 수 없음을 나타냅니다.
+유효성 검사 전까지 저장소는 빨간색 아이콘으로 표시되며 이는 아직 유효성이 검사되지 않았으며 아직 사용할 수 없음을 나타냅니다.
 
 ![검증되지 않은 저장소](/help/implementing/cloud-manager/assets/repos/unvalidated-repo.png)
 

@@ -2,7 +2,7 @@
 title: 태그 사용
 description: 태그는 웹 사이트에 포함된 콘텐츠를 빠르고 손쉽게 분류할 수 있는 방법입니다.
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 96%
@@ -47,7 +47,7 @@ ht-degree: 96%
 
 * 개별 태그를 활성화합니다.
 
-  페이지와 마찬가지로 새로 만든 태그를 활성화해야 게시 환경에서 사용할 수 있습니다.
+  페이지와 마찬가지로 작성된 태그를 활성화해야 게시 환경에서 사용할 수 있습니다.
 
 >[!NOTE]
 >

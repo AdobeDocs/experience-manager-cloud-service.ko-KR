@@ -2,10 +2,10 @@
 title: 빌드 환경
 description: Cloud Manager의 빌드 환경과 코드 빌드 및 테스트 방법에 대해 알아봅니다.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1004'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
@@ -157,9 +157,9 @@ $ aio cloudmanager:list-pipeline-variables PIPELINEID
 * 변수에는 영숫자와 밑줄(`_`)만 포함될 수 있습니다.
 * 이름은 모두 대문자로 해야 합니다.
 * 파이프라인당 200개의 변수 제한이 있습니다.
-* 각 이름은 100자 미만이어야 합니다.
+* 각 이름은 100자 이하여야 합니다.
 * 각 `string` 변수 값은 2048자 미만이어야 합니다.
-* 각 `secretString` 유형의 변수 값은 500자 미만이어야 합니다.
+* 각 `secretString` 형식 변수 값은 500자 이하여야 합니다.
 
 Maven `pom.xml` 파일 내에서 사용할 경우, 일반적으로 다음과 유사한 구문을 사용하여 이러한 변수를 Maven 속성에 매핑하는 것이 유용합니다.
 

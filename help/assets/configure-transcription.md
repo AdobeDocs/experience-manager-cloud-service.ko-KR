@@ -1,8 +1,6 @@
 ---
 title: 트랜스크립션 서비스 구성
-seo-title: Configure transcription service
 description: Adobe Experience Manager Assets는 WebVTT (Vtt) 양식의 지원되는 오디오 또는 비디오 파일에서 음성 언어의 텍스트 스크립트를 자동 생성하는  [!DNL Azure Media Services] 로 구성되어 있습니다.
-seo-description: When an audio or video asset is processed in Experience Manager Assets, the AI-based transcription service automatically generates the text transcript rendition of the audio or video asset and stores it at the same location within your Assets repository where the original asset resides. The Experience Manager Assets transcription service allows marketers to effectively manage their audio and video content with added discoverability of the text content and increase the ROI of these assets by supporting accessibility and localization.
 products: SG_EXPERIENCEMANAGER/ASSETS and Experience Manager as a Cloud Service
 sub-product: assets
 content-type: reference
@@ -11,9 +9,9 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1690'
+source-wordcount: '1689'
 ht-degree: 87%
 
 ---
@@ -158,7 +156,7 @@ Experience Manager Assets 인스턴스에 [Dynamic Media가 구성](/help/assets
 ## 알려진 제한 사항 {#known-limitations}
 
 * 트랜스크립션 기능은 최대 10분 동안 비디오가 지원됩니다.
-* 비디오 제목은 80자 미만이어야 합니다.
+* 비디오 제목은 80자 이하여야 합니다.
 * 지원되는 파일 크기는 최대 15GB입니다.
 * 지원되는 최대 처리 시간은 60분입니다.
 * 유료 [!DNL Azure] 계정에서 분당 최대 50개의 동영상을 업로드할 수 있습니다. 단, 체험판 계정에서는 분당 최대 5개의 동영상을 업로드할 수 있습니다.

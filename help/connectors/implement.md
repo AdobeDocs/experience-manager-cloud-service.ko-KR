@@ -2,10 +2,10 @@
 title: AEM 커넥터 구현
 description: AEM 커넥터를 빌드하고, 테스트하고, 구현하는 방법을 알아봅니다. 또한 일반적인 통합 패턴에 대해서도 학습합니다.
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 98%
+source-wordcount: '980'
+ht-degree: 95%
 
 ---
 
@@ -63,7 +63,7 @@ Experience Manager as a Cloud Service [설명서](../overview/introduction.md)�
 
 기존 커넥터는 이전에 한 번 `/etc`로 배치되었을 수 있는 구성을 `/conf`와 같은 상위 수준 폴더로 이동하도록 리팩터링해야 할 수도 있습니다. 이러한 재구성은 AEM 6.5의 일부로 수행되며 이는 [AEM 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)에 기재되어 있습니다.
 
-여러 커넥터를 보유하고 있는 고객에게 깔끔한 저장소 구조를 제공하려면 대부분의 커넥터 코드를 `/apps/connectors/<vendor>` 아래에 배치하는 것이 좋습니다.
+대부분의 커넥터 코드는 아래에 배치하는 것이 좋습니다. `/apps/connectors/<vendor>` 여러 커넥터를 보유하고 있는 고객을 위해 깔끔한 저장소 구조를 홍보합니다.
 
 클라우드 서비스 구성
 -----------------------------

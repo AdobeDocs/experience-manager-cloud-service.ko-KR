@@ -2,7 +2,7 @@
 title: ContextHub
 description: ContextHub는 컨텍스트 데이터를 저장, 조작 및 표시하기 위한 프레임워크입니다
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 1%
@@ -35,7 +35,7 @@ ContextHub를 사용하여 다음을 수행할 수 있습니다.
 
 ## 지속성 {#persistence}
 
-ContextHub 저장소는 클라이언트에 컨텍스트 데이터를 유지합니다. ContextHub JavaScript API를 사용하면 저장소에 액세스하여 데이터를 필요에 따라 작성, 업데이트 및 삭제할 수 있습니다. 따라서 ContextHub는 페이지의 데이터 계층을 나타냅니다.
+ContextHub 저장소는 클라이언트에 컨텍스트 데이터를 유지합니다. ContextHub JavaScript API를 사용하면 저장소에 액세스하여 필요에 따라 데이터를 작성, 업데이트 및 삭제할 수 있습니다. 따라서 ContextHub는 페이지의 데이터 계층을 나타냅니다.
 
 각 ContextHub 저장소는 사전 정의된 저장소 유형의 인스턴스입니다.
 

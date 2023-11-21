@@ -4,10 +4,10 @@ description: 샘플 React 앱을 사용하여 AEM as a Cloud Service로 설정�
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 88%
+source-wordcount: '1019'
+ht-degree: 87%
 
 ---
 
@@ -89,7 +89,7 @@ AEM Headless CMS에 통합될 때 React 앱 내에서 콘텐츠를 업데이트�
 
 1. 선택 **미리 보기** 변경 내용을 보려면 창의 오른쪽 상단에 있어야 합니다. 데모 앱의 미리보기가 새 탭에서 열립니다. 브라우저에서 새로 고침을 클릭하면 앱에서 노란색 반바지가 있는 새 바이커 이미지를 볼 수 있습니다.
 
-이렇게 AEM Headless CMS를 사용하여 앱의 이미지와 자산을 쉽게 업데이트할 수 있습니다.
+AEM Headless CMS를 사용하여 앱의 이미지와 에셋을 쉽게 업데이트할 수 있습니다.
 
 ## 앱에서 새 콘텐츠 조각에 대한 참조 추가 {#create-moment}
 

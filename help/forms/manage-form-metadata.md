@@ -2,9 +2,9 @@
 title: AEM Forms에 대한 메타데이터를 관리하려면 어떻게 해야 합니까?
 description: 메타데이터를 사용하면 에셋을 보다 쉽게 분류하고 구성할 수 있으며 특정 에셋을 찾는 사용자에게 도움이 됩니다.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1743'
+source-wordcount: '1742'
 ht-degree: 6%
 
 ---
@@ -140,7 +140,7 @@ ht-degree: 6%
      <li>HTML</li> 
      <li>PDF</li> 
      <li>모두</li> 
-    </ul> <p>이 옵션은 최종 사용자가 볼 수 있는 Forms 포털에서만 양식의 렌더링 형식을 제한하는 데 사용됩니다.</p> </td> 
+    </ul> <p>이 옵션은 사용자가 볼 수 있는 Forms 포털에서만 양식의 렌더링 형식을 제한하는 데 사용됩니다.</p> </td> 
   </tr> 
   <tr> 
    <td>태그</td> 

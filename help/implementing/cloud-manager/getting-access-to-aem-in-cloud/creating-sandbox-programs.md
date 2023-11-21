@@ -2,10 +2,10 @@
 title: 샌드박스 프로그램 만들기
 description: Cloud Manager를 사용하여 교육, 데모, POC 또는 기타 비프로덕션 목적을 위한 자체 샌드박스 프로그램을 만드는 방법을 알아봅니다.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '442'
-ht-degree: 93%
+ht-degree: 90%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 93%
 
 프로그램 개요 페이지에서 샌드박스 설정의 세부 정보를 보고 환경에 액세스(사용 가능한 경우)할 수 있습니다.
 
-1. Cloud Manager 랜딩 페이지에서 새로 만든 프로그램의 줄임표 버튼을 클릭합니다.
+1. Cloud Manager 랜딩 페이지에서 만든 프로그램의 줄임표 버튼을 클릭합니다.
 
    ![프로그램 개요 액세스](assets/program-overview-sandbox.png)
 

@@ -2,7 +2,7 @@
 title: Screens as a Cloud Service에 대한 사용자 정의 구성 요소 개발
 description: 다음 자습서에서는 AEM Screens에 대한 사용자 지정 구성 요소를 만드는 단계를 안내합니다. AEM Screens은 다른 AEM 제품의 많은 기존 디자인 패턴과 기술을 재사용합니다. 이 튜토리얼에서는 AEM Screens용 을 개발할 때 차이점과 특별한 고려 사항을 강조 표시합니다.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 3%
@@ -423,7 +423,7 @@ Hello World 구성 요소는 시퀀스 채널에서 사용하기 위한 것입�
 
    /apps/settings/wcm/designs/we-retail-run을 가리키는 디자인 구성
 
-1. 새로 만든 유휴 채널을 편집하여 열 수 있습니다.
+1. 만든 유휴 채널을 편집하여 열 수 있습니다.
 
 1. 페이지 모드를 다음으로 전환 **디자인** 모드.
 

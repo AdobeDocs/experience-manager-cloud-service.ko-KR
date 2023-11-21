@@ -2,7 +2,7 @@
 title: AEM에서 외부 SPA 편집
 description: 이 문서에서는 독립 실행형 SPA을 AEM 인스턴스에 업로드하고, 편집 가능한 콘텐츠 섹션을 추가하고, 저작을 활성화하는 권장 단계에 대해 설명합니다.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2418'
 ht-degree: 2%
@@ -111,7 +111,7 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
    ![텍스트 구성 요소 속성](assets/external-spa-text-properties.png)
 
-   이러한 값은 새로 만든 에 속성으로 전달됩니다 `AEMText` React 구성 요소이며 콘텐츠 렌더링에 사용할 수 있습니다.
+   이러한 값은 생성된 파일에 속성으로 전달됩니다 `AEMText` React 구성 요소이며 콘텐츠 렌더링에 사용할 수 있습니다.
 
    ```javascript
    import React from 'react';
@@ -343,7 +343,7 @@ AEM에서 이 구성 요소가 포함된 페이지를 편집할 때 작성자가
 
 1. SPA 라우팅 내에 도우미를 추가합니다.
 
-   * 새로 만든 페이지는 아직 AEM에서 예상 콘텐츠를 렌더링할 수 없습니다. 이유는 라우터에 다음 경로가 필요하기 때문입니다. `/test` 반면 AEM 활성 경로는 `/wknd-spa-react/us/en/test`. URL의 AEM 관련 부분을 수용하려면 SPA 측에 몇 가지 도우미를 추가해야 합니다.
+   * 생성된 페이지는 아직 AEM에서 필요한 콘텐츠를 렌더링할 수 없습니다. 이유는 라우터에 다음 경로가 필요하기 때문입니다. `/test` 반면 AEM 활성 경로는 `/wknd-spa-react/us/en/test`. URL의 AEM 관련 부분을 수용하려면 SPA 측에 몇 가지 도우미를 추가해야 합니다.
 
    ![라우팅 도우미](assets/external-spa-router-helper.png)
 
@@ -356,7 +356,7 @@ AEM에서 이 구성 요소가 포함된 페이지를 편집할 때 작성자가
 
 1. AEM에서 페이지 편집을 확인합니다.
 
-   * AEM에 프로젝트를 배포하고 새로 생성된 로 이동합니다. `test` 페이지를 가리키도록 업데이트하는 중입니다. 이제 페이지 콘텐츠가 렌더링되고 AEM 구성 요소를 편집할 수 있습니다.
+   * AEM에 프로젝트를 배포하고 생성된 항목으로 이동합니다. `test` 페이지를 가리키도록 업데이트하는 중입니다. 이제 페이지 콘텐츠가 렌더링되고 AEM 구성 요소를 편집할 수 있습니다.
 
 ## 프레임워크 제한 사항 {#framework-limitations}
 

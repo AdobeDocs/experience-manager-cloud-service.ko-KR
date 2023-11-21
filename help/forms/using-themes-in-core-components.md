@@ -2,7 +2,7 @@
 title: 적응형 Forms에서 테마를 만들고 사용하려면 어떻게 해야 합니까?
 description: 테마를 사용하여 스타일을 지정하고 핵심 구성 요소를 사용하여 적응형 양식에 시각적 ID를 제공할 수 있습니다. 여러 적응형 Forms에서 테마를 공유할 수 있습니다.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2676'
 ht-degree: 5%
@@ -319,7 +319,7 @@ AEM Forms as a Cloud Service 인스턴스에 호스팅된 적응형 양식에 �
 
 ##### 5.2. 변경 사항을 저장소에 푸시합니다. {#committing-the-changes}
 
-이제 변경 사항을 AEM Forms Cloud Service의 테마 저장소에 푸시합니다. .
+이제 변경 사항을 AEM Forms Cloud Service의 테마 저장소에 푸시합니다.
 
 1. 테마 폴더의 루트로 이동합니다.  이 경우 테마 폴더 이름은 입니다. `aem-forms-theme-canvas`.
 1. 명령 프롬프트 또는 터미널을 엽니다.

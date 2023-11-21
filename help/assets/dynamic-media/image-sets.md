@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 6%
@@ -190,7 +190,7 @@ Image Sets are designated by a banner with the word `IMAGESET`. 또한 이미지
    >
    >이미지 세트를 만들 때 이미지 세트 썸네일을 변경할 수 있습니다. 또는 이미지 세트의 에셋에 따라 Experience Manager이 썸네일을 자동으로 선택하도록 할 수 있습니다. 썸네일을 선택하려면 **[!UICONTROL 썸네일 변경]** 이미지 세트 편집기 페이지의 제목 필드 위에 있습니다. 그런 다음 이미지를 선택합니다(다른 폴더로 이동하여 이미지를 찾을 수도 있음). 썸네일을 선택한 경우 Experience Manager이 이미지 세트에서 썸네일을 생성하도록 결정한 다음 을 선택합니다. **[!UICONTROL 다음으로 전환]** **[!UICONTROL 자동 썸네일]**.
 
-1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 새로 만든 이미지 세트가 작성한 폴더에 나타납니다.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 이미지 세트를 만든 폴더에 이미지 세트가 나타납니다.
 
 ## 이미지 집합 보기 {#viewing-image-sets}
 

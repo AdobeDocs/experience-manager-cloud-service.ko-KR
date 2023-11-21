@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.6.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.6.0 릴리스 정보입니다.'
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1436'
-ht-degree: 48%
+source-wordcount: '1435'
+ht-degree: 49%
 
 ---
 
@@ -102,7 +102,7 @@ AEM as a Cloud Service 2021.6.0의 Cloud Manager 릴리스 일자는 2021년 6�
 * 사용자가 기본 보기와 기본 정렬 매개 변수를 선택할 수 있도록 보기 설정이 개선되었습니다.
 * Linkshare 다운로드 기능은 다운로드 속도를 향상시키는 비동기 다운로드를 사용합니다.
 * 사용자는 속성 술어에 따라 폴더를 검색하고 필터링할 수 있습니다.
-* [!DNL Experience Manager Assets] 에서 제공하는 PDF 뷰어를 임베드합니다. [!DNL Adobe Document Cloud] 을 클릭하여 지원되는 문서를 미리 봅니다. 이 기능을 사용하면 복잡한 처리 없이 PDF 및 기타 다중 페이지 파일을 미리 볼 수 있습니다. 따라서 기능 패리티가 다음과 같이 향상됩니다. [!DNL Experience Manager] 6.5.
+* [!DNL Experience Manager Assets] 다음에서 제공하는 PDF 뷰어 포함 [!DNL Adobe Document Cloud] 을 클릭하여 지원되는 문서를 미리 봅니다. 이 기능을 사용하면 복잡한 처리 없이 PDF 및 기타 다중 페이지 파일을 미리 볼 수 있습니다. 따라서 기능 패리티가 다음과 같이 향상됩니다. [!DNL Experience Manager] 6.5.
 
 ### [!DNL Assets]의 수정된 버그 {#bugs-fixed-assets}
 
@@ -167,7 +167,7 @@ AEM Screens as a Cloud Service 릴리스 날짜는 2021년 6월 24일입니다.
 
 ### 새로운 기능 {#what-is-new-cif}
 
-* 콘텐츠 조각에 대한 새로운 CIF 제품 및 카테고리 참조 데이터 유형(포함) 제품/카테고리 선택기 UI 지원)
+* 컨텐츠 조각에 대한 새로운 CIF 제품 및 카테고리 참조 데이터 유형(포함) 제품/카테고리 선택기 UI 지원)
 * 새 Commerce 콘텐츠 조각 핵심 구성 요소
 * AEM 백엔드에서 전체 텍스트 상거래 검색 지원
 * 상거래 핵심 구성 요소는 Adobe Commerce Sensei Recs 데이터 수집

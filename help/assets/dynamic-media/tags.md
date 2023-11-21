@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '6663'
+source-wordcount: '6661'
 ht-degree: 7%
 
 ---
@@ -52,7 +52,7 @@ Experience Platform 태그와 통합하기 위한 주요 사용 사례는 Experi
 
 ### Adobe Analytics을 사용한 추적 기본 정보  {#about-tracking-using-adobe-analytics}
 
-Adobe Analytics을 사용하면 최종 사용자가 웹 사이트에서 Dynamic Media 뷰어와 상호 작용할 때 수행하는 작업을 추적할 수 있습니다. Adobe Analytics을 사용하면 뷰어별 데이터를 추적할 수도 있습니다. 예를 들어, 자산 이름, 발생한 확대/축소 작업 및 비디오 재생 작업과 함께 보기 로드 이벤트를 추적하고 기록할 수 있습니다.
+Adobe Analytics을 사용하면 사용자가 웹 사이트에서 Dynamic Media 뷰어와 상호 작용할 때 수행하는 작업을 추적할 수 있습니다. Adobe Analytics을 사용하면 뷰어별 데이터를 추적할 수도 있습니다. 예를 들어, 자산 이름, 발생한 확대/축소 작업 및 비디오 재생 작업과 함께 보기 로드 이벤트를 추적하고 기록할 수 있습니다.
 
 Experience Platform 태그에서 의 개념 *데이터 요소* 및 *규칙* 함께 작업하여 Adobe Analytics 추적을 활성화합니다.
 
@@ -221,9 +221,9 @@ Any Dynamic Media viewer has a unique identifier on the web page. 데이터 요�
    * 코어 Experience Platform 태그 확장의 키 누름 이벤트를 트리거로 사용합니다.
    * 다음 값 전송 **[!UICONTROL 확대/축소 비율]** Adobe Analytics에 대한 데이터 요소.
 
-이제 최종 사용자가 두 명의 뷰어가 있는 웹 페이지를 로드한다고 가정합니다. 위치 *viewer1*, 50% 스케일로 확대한 다음 로 확대합니다. *viewer2*, 25% 배율로 확대됩니다. 위치 *viewer1*&#x200B;이미지를 이리저리 회전시키고 마지막으로 키보드의 키를 누릅니다.
+이제 사용자가 두 명의 뷰어가 있는 웹 페이지를 로드한다고 가정합니다. 위치 *viewer1*, 50% 스케일로 확대한 다음 로 확대합니다. *viewer2*, 25% 배율로 확대됩니다. 위치 *viewer1*&#x200B;이미지를 이리저리 회전시키고 마지막으로 키보드의 키를 누릅니다.
 
-최종 사용자의 활동으로 인해 Adobe Analytics에 다음과 같은 두 개의 추적 호출이 수행됩니다.
+사용자의 활동으로 인해 Adobe Analytics에 다음과 같은 두 개의 추적 호출이 수행됩니다.
 
 * 첫 번째 호출은 다음 이유로 발생합니다. **[!UICONTROL TrackPan]** 사용자가 로그인하면 규칙이 트리거됩니다. *viewer1*. 해당 호출은 값으로 50%를 보냅니다. **[!UICONTROL 확대/축소 비율]** 데이터 요소는 규칙이 다음에 의해 트리거됨을 알기 때문입니다. *viewer1* 및 는 해당 배율 값을 가져옵니다.
 * 두 번째 호출은 다음 이유로 발생합니다. **[!UICONTROL TrackKey]** 사용자가 키보드에서 키를 누르면 규칙이 트리거됩니다. 해당 호출은 값으로 25%를 보냅니다. **[!UICONTROL 확대/축소 비율]** 규칙이 뷰어에 의해 트리거되지 않았으므로 데이터 요소입니다. 따라서 데이터 요소는 최신 값을 반환합니다.
@@ -257,7 +257,7 @@ Dynamic Media 뷰어 확장 기능을 사용하면 Dynamic Media 뷰어의 이�
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
-It is possible, however, to use an alternative approach and bypass Data Element creation. Dynamic Media 뷰어 이벤트에서 인수를 직접 참조할 수 있습니다. 이벤트 인수의 정규화된 이름을 **[!UICONTROL 값]** analytics 변수 할당의 입력 필드. 퍼센트(%) 기호로 둘러싸야 합니다. 예를 들어
+It is possible, however, to use an alternative approach and bypass Data Element creation. Dynamic Media 뷰어 이벤트에서 인수를 직접 참조할 수 있습니다. 이벤트 인수의 정규화된 이름을 **[!UICONTROL 값]** analytics 변수 할당의 입력 필드. 퍼센트(%) 기호로 둘러싸야 합니다. 예:
 
 `%event.detail.dm.LOAD.asset%`
 
@@ -519,7 +519,7 @@ Experience Platform 태그의 속성은 모든 설정을 함께 유지하는 명
 
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
-   새로 생성된 속성을 선택한 다음 로 진행합니다. *확장 설치 및 설정*.
+   생성된 속성을 선택한 다음 로 진행합니다. *확장 설치 및 설정*.
 
 ### 확장 설치 및 설정 {#installing-and-setup-of-extensions}
 
@@ -591,7 +591,7 @@ Experience Platform 태그 구성(속성, 확장, 규칙 및 데이터 요소 �
 
 Experience Platform 태그에는 잠재적으로 여러 개발 환경, 하나의 스테이징 환경 및 하나의 프로덕션 환경이 있을 수 있습니다. 기본적으로 Experience Manager의 Experience Platform 태그 클라우드 구성은 Experience Manager 작성자 노드를 Platform Tags의 스테이지 환경으로 지정합니다. Experience Manager 게시 노드는 Experience Platform 태그의 프로덕션 환경을 가리킵니다. 즉, 기본 Experience Manager 설정을 사용하여 Experience Platform 태그 라이브러리를 스테이징 환경에 게시해야 합니다. 이렇게 하면 Experience Manager 작성자에서 사용할 수 있습니다. 그런 다음 Experience Manager 게시에서 사용할 수 있도록 프로덕션 환경에 게시할 수 있습니다.
 
-다음을 참조하십시오 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=ko-KR) Experience Platform 태그 환경에 대한 자세한 내용을 참조하십시오.
+다음을 참조하십시오 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) Experience Platform 태그 환경에 대한 자세한 내용을 참조하십시오.
 
 라이브러리 게시에는 다음 두 단계가 포함됩니다.
 
@@ -606,7 +606,7 @@ Experience Platform 태그에는 잠재적으로 여러 개발 환경, 하나의
 
    ![image2019-7-15_14-43-17](assets/image2019-7-15_14-43-17.png)
 
-1. 새 라이브러리 만들기 페이지의 **[!UICONTROL 이름]** 필드에 새 라이브러리를 설명하는 이름을 입력합니다. 예를 들어
+1. 새 라이브러리 만들기 페이지의 **[!UICONTROL 이름]** 필드에 새 라이브러리를 설명하는 이름을 입력합니다. 예:
 
    *DynamicMediaViewerLib*
 
@@ -798,7 +798,7 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
 1. 페이지의 왼쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 만들기]**.
 1. 다음에서 **[!UICONTROL 일반]** 페이지 (1/3 페이지) / **[!UICONTROL Experience Platform 태그 구성 만들기]** 창에서 다음 필드를 입력합니다.
 
-   * **[!UICONTROL 제목]** - 설명 구성 제목을 입력합니다. (예: `We.Retail Tags cloud configuration`)
+   * **[!UICONTROL 제목]** - 설명 구성 제목을 입력합니다. 예: `We.Retail Tags cloud configuration`
 
    * **[!UICONTROL 연계된 Adobe IMS 구성]** - 이전에 만든 IMS 구성 선택 [Experience Manager IMS 구성](#configuring-aem-ims).
 

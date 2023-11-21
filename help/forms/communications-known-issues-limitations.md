@@ -2,9 +2,9 @@
 title: AEM Forms의 고려 사항, 알려진 문제 및 모범 사례는 무엇입니까?
 description: AEM Forms Communication API에 대한 알려진 문제 및 모범 사례를 고려합니다.
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1748'
+source-wordcount: '1749'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ XFA 스트림이 포함되지 않은 PDF 문서는 PostScript, PCL 또는 ZPL로
 
 프린터 상주 글꼴을 사용하는 양식을 디자인하려면 디자이너에서 프린터에서 사용할 수 있는 글꼴과 일치하는 글꼴 이름을 선택합니다. PCL 또는 PostScript에 대해 지원되는 글꼴 목록은 해당 장치 프로필(XDC 파일)에 있습니다. 또는 다른 서체 이름의 프린터 상주 글꼴에 비프린터 상주 글꼴을 매핑하기 위해 글꼴 매핑을 만들 수 있습니다. 예를 들어 PostScript 시나리오에서 Arial® 글꼴에 대한 참조를 프린터 상주 Helvetica® 서체에 매핑할 수 있습니다.
 
-글꼴이 클라이언트 컴퓨터에 설치되어 있으면 Designer의 드롭다운 목록에서 사용할 수 있습니다. 글꼴이 설치되지 않은 경우 글꼴 이름을 수동으로 지정해야 합니다. Designer의 &quot;사용할 수 없는 글꼴 영구적으로 바꾸기&quot; 옵션을 해제할 수 있습니다. 그렇지 않으면 XDP 파일을 Designer에 저장하면 대체 글꼴 이름이 XDP 파일에 기록됩니다. 프린터 상주 글꼴이 사용되지 않음을 의미합니다.
+글꼴이 클라이언트 컴퓨터에 설치되어 있으면 Designer의 드롭다운 목록에서 사용할 수 있습니다. 글꼴이 설치되지 않은 경우 글꼴 이름을 수동으로 지정해야 합니다. 디자이너의 &quot;사용할 수 없는 글꼴을 영구적으로 바꾸기&quot; 옵션을 해제할 수 있습니다. 그렇지 않으면 XDP 파일을 Designer에 저장하면 대체 글꼴 이름이 XDP 파일에 기록됩니다. 프린터 상주 글꼴이 사용되지 않음을 의미합니다.
 
 두 가지 유형의 OpenType® 글꼴이 있습니다. 한 가지 유형은 PCL이 지원하는 TrueType OpenType® 글꼴입니다. 다른 하나는 CFF OpenType®입니다. PDF 및 PostScript 출력은 포함된 Type-1, TrueType 및 OpenType® 글꼴을 지원합니다. PCL 출력은 임베드된 트루타입 글꼴을 지원합니다.
 

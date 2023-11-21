@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2020.10.0 릴리스 정보입니다.'
 description: "[!DNL Adobe Experience Manager] 2020.10.0의 as a Cloud Service 릴리스 노트"
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1194'
 ht-degree: 29%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 29%
 
 ### [!DNL Forms]의 새로운 기능 {#what-is-new-forms-oct-2021}
 
-* **적응형 Forms에 대한 Analytics**: 이제 적응형 Forms용 Adobe Analytics을 통해, 로그인된 및 로그인되지 않은(익명의) 최종 사용자 행동을 포착하고 추적하여 최종 사용자 인사이트를 수집할 수 있습니다. 이를 통해 비즈니스 사용자는 수집된 인사이트를 기반으로 적응형 양식 콘텐츠, 레이아웃 및 스타일에 대한 올바른 결정을 내릴 수 있습니다.
+* **적응형 Forms에 대한 Analytics**: 이제 적응형 Forms용 Adobe Analytics을 통해 로그인된 및 로그인되지 않은(익명의) 사용자 행동을 포착하고 추적하여 사용자 인사이트를 수집할 수 있습니다. 이를 통해 비즈니스 사용자는 수집된 인사이트를 기반으로 적응형 양식 콘텐츠, 레이아웃 및 스타일에 대한 올바른 결정을 내릴 수 있습니다.
 
 ### [!DNL Forms] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-forms-oct-2021}
 
@@ -63,7 +63,7 @@ Beta 프로그램에 등록하려면 [!DNL formscsbeta@adobe.com]에 문의하�
 
 ### 새로운 기능 {#what-is-new-commerce}
 
-* 최신 CIF 코어 구성 요소 버전 v1.4.0이 포함된 CIF Venia 참조 사이트 - 2020.10.2가 릴리스되었습니다. 다음을 참조하십시오 [CIF Venia 참조 사이트](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) 을 참조하십시오.
+* 최신 CIF 핵심 구성 요소 버전 v1.4.0이 포함된 CIF Venia 참조 사이트 - 2020.10.2가 릴리스되었습니다. 다음을 참조하십시오 [CIF Venia 참조 사이트](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) 을 참조하십시오.
 
 * CIF 코어 구성 요소 v1.4.0이 릴리스되었습니다. 다음을 참조하십시오 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) 을 참조하십시오.
 
@@ -71,7 +71,7 @@ Beta 프로그램에 등록하려면 [!DNL formscsbeta@adobe.com]에 문의하�
 
 * 제품 콘솔 및 피커에 있었던 GraphQL 요청은 HTTP POST을 통해 수행되었습니다. 이 문제는 구성된 경우 GraphQL 요청을 지원하기 위해 아폴로 GraphQL 클라이언트가 GET 클라이언트 OSGi 구성의 설정을 준수하는지 확인하기 위해 수정되었습니다.
 
-* /lib 및 /apps/ 의 구성에 대해 CIF Cloud 구성 UI에 &quot;저장 및 닫기&quot; 버튼이 표시되었습니다. 그러나 이러한 인터페이스는 읽기 전용이므로 UI는 &quot;닫기&quot; 버튼만 표시하도록 수정되었습니다.
+* CIF Cloud 구성 UI에 /lib 및 /apps/의 구성에 대한 &quot;저장 및 닫기&quot; 버튼이 표시됨. 그러나 이러한 인터페이스는 읽기 전용이므로 UI는 &quot;닫기&quot; 버튼만 표시하도록 수정되었습니다.
 
 ## Cloud Manager {#cloud-manager}
 

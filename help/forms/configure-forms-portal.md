@@ -2,9 +2,9 @@
 title: Experience Manager Sites 페이지에서 Forms 포털을 만드는 방법
 description: AEM Sites 페이지에서 Forms 포털을 만들고 기본 핵심 구성 요소를 사용하는 방법을 알아봅니다.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1840'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,7 @@ Form Portal 구성 요소를 사용하여 다음 기능을 추가할 수 있습�
 * 제목 및 설명을 기반으로 양식 검색을 활성화합니다.
 * 사용자 지정 CSS를 사용하여 포털의 모양과 느낌을 사용자 지정합니다.
 * 양식에 대한 링크를 만듭니다.
-* 최종 사용자가 만든 적응형 Forms 관련 초안 및 제출 사항을 나열합니다.
+* 사용자가 만든 적응형 Forms 관련 초안 및 제출 사항을 나열합니다.
 
 ## Forms 포털 페이지의 구성 요소 {#forms-portal-components}
 

@@ -2,10 +2,10 @@
 title: 개인화 및 콘텐츠 타겟팅
 description: AEM으로 개인화되고 타겟팅된 콘텐츠를 만드는 방법 알아보기
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 93%
+source-wordcount: '1054'
+ht-degree: 91%
 
 ---
 
@@ -24,7 +24,7 @@ AEM은 다음을 위한 도구 프레임워크를 제공합니다.
 * 대상자 정의에 대해 알려진 사용자 정보를 확인하는 데 사용되는 규칙을 정의합니다.
 * 타겟팅되고 개인화된 경험을 제공하도록, 현재 최종 사용자에게 해당되는 특정 콘텐츠를 렌더링하도록 페이지를 구성합니다.
 
-다음 개요에서는 AEM as a Cloud Service에서 개인화에 사용되는 몇 가지 용어와 권장되는 작업 순서를 제시합니다.
+다음 개요에서는 AEM의 개인화에 사용되는 몇 가지 용어를 as a Cloud Service으로 사용한 다음, 권장되는 작업 순서를 제시합니다.
 
 ## 경험 {#experience}
 

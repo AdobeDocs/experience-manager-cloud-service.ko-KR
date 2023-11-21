@@ -5,9 +5,9 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '763'
 ht-degree: 1%
 
 ---
@@ -117,7 +117,7 @@ GraphQL 엔드포인트를 공개하기 위해 콘텐츠 패키지를 통해 몇
 
 * Apollo 클라이언트를 사용자 지정하는 대신 AEM과 Adobe Commerce GraphQL 데이터를 결합하는 단일 페더레이션 GraphQL 엔드포인트가 있을 수 있습니다.
 * PWA Studio 애플리케이션은 상향 버전의 프록시 없이 AEM GraphQL 엔드포인트 URL을 직접 사용할 수 있습니다. 프록시를 다른 레이어(예: CDN)로 이동할 수도 있습니다.
-* 가장 적합한 접근 방식은 최종 사용자에게 PWA Studio 애플리케이션을 제공하는 방식에 따라 크게 달라집니다.
+* 사용자에게 가장 적합한 접근 방식은 PWA Studio 애플리케이션을 제공하는 방식에 따라 크게 달라집니다.
 
 이 확장은 두 가지 예와 함께 제공됩니다.
 

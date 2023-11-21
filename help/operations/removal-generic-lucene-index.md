@@ -2,7 +2,7 @@
 title: 일반 Lucene 인덱스 제거
 description: 일반 Lucene 색인의 제거 계획과 영향을 받는 방법에 대해 알아봅니다.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1335'
 ht-degree: 0%
@@ -154,6 +154,7 @@ AEM에는 Sling 리소스 유형으로 사용자 지정 대화 상자 구성 요
 >[!NOTE]
 >
 >콘텐츠 조각 모델 편집기는 Sling 리소스 유형의 특수 경로 필드를 사용합니다 `dam/cfm/models/editor/components/contentreference`.
+>
 > * 현재는 이러한 작업에서 노드 유형을 지정하지 않고 쿼리를 수행하므로 일반 Lucene 인덱스 사용으로 인해 WARN이 기록됩니다.
 > * 이러한 구성 요소의 인스턴스는 곧 자동으로 사용을 기본값으로 설정합니다. `cq:Page` 및 `dam:Asset` 추가적인 고객 조치 없이 노드 유형.
 > * 다음 `nodeTypes` 속성을 추가하여 이러한 기본 노드 유형을 재정의할 수 있습니다.
@@ -169,4 +170,4 @@ Adobe은 위에 언급된 로그 메시지를 모니터링하고 일반 Lucene �
 
 단기적인 완화 차원에서 Adobe은 고객 시스템에 사용자 정의 인덱스 정의를 직접 추가하여 필요에 따라 일반 Lucene 인덱스를 제거하여 발생하는 기능이나 성능 문제를 방지합니다.
 
-이러한 경우 고객은 업데이트된 색인 정의를 제공받고 Cloud Manager를 통해 향후 애플리케이션 릴리스에 이를 포함하도록 권장됩니다.
+이러한 경우 고객은 업데이트된 색인 정의를 제공받으며 Cloud Manager를 통해 향후 애플리케이션 릴리스에 이를 포함하는 것이 좋습니다.

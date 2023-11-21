@@ -2,9 +2,9 @@
 title: 콘텐츠 검색 및 색인화
 description: AEM as a Cloud Service으로 콘텐츠 검색 및 색인화에 대해 알아봅니다.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2428'
+source-wordcount: '2427'
 ht-degree: 29%
 
 ---
@@ -96,7 +96,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 1. 에서 업데이트된 색인 이름으로 새 폴더를 만듭니다. `ui.apps` 디렉터리:
    * 예: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
-2. 구성 파일 추가 `.content.xml` 새로 만든 폴더 내에 있는 사용자 지정 구성을 포함합니다. 다음은 사용자 지정의 예입니다. 파일 이름: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
+2. 구성 파일 추가 `.content.xml` 생성된 폴더 내에 있는 사용자 지정 구성을 사용하여 다음은 사용자 지정의 예입니다. 파일 이름: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -307,7 +307,7 @@ Adobe이 &quot;damAssetLucene&quot; 또는 &quot;cqPageLucene&quot; 같은 기�
 
 ### 현재 제한 사항 {#current-limitations}
 
-색인 관리는 색인 유형만 지원됩니다. `lucene`, 포함 `compatVersion` 을 로 설정 `2`. 내부적으로 다른 색인을 구성하고 쿼리에 사용할 수 있습니다(예: Elasticsearch 색인). 다음에 대해 작성된 쿼리 `damAssetLucene` 색인은 AEM에서 as a Cloud Service으로 실행될 수 있으며 실제로 이 색인의 Elasticsearch 버전에 대해 실행됩니다. 애플리케이션 최종 사용자는 이러한 차이점을 볼 수 없지만, `explain` 기능이 다른 색인을 보고합니다. Lucene 색인과 Elasticsearch 색인의 차이에 대해서는 다음을 참조하십시오. [apache Jackrabbit Oak의 Elasticsearch 설명서](https://jackrabbit.apache.org/oak/docs/query/elastic.html). 고객은 Elasticsearch 색인을 직접 구성할 수 없으며 구성할 필요가 없습니다.
+색인 관리는 색인 유형만 지원됩니다. `lucene`, 포함 `compatVersion` 을 로 설정 `2`. 내부적으로 다른 색인을 구성하고 쿼리에 사용할 수 있습니다(예: Elasticsearch 색인). 다음에 대해 작성된 쿼리 `damAssetLucene` 색인은 AEM as a Cloud Service에서 실제로 이 색인의 Elasticsearch 버전에 대해 실행될 수 있습니다. 이러한 차이는 애플리케이션 사용자에게는 표시되지 않지만 다음과 같은 특정 도구는 표시되지 않습니다. `explain` 기능이 다른 색인을 보고합니다. Lucene 색인과 Elasticsearch 색인의 차이에 대해서는 다음을 참조하십시오. [apache Jackrabbit Oak의 Elasticsearch 설명서](https://jackrabbit.apache.org/oak/docs/query/elastic.html). 고객은 Elasticsearch 색인을 직접 구성할 수 없으며 구성할 필요가 없습니다.
 
 기본 제공 분석기 (즉, 제품과 함께 제공되는 분석기)만 지원됩니다. 사용자 정의 분석기는 지원되지 않습니다.
 

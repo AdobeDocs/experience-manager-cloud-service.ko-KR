@@ -2,10 +2,10 @@
 title: SSL 인증서 관리
 description: Cloud Manager를 사용하여 SSL 인증서의 상태를 확인하는 방법과 SSL 인증서를 편집, 교체, 업데이트 및 삭제하는 방법을 알아봅니다.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 84%
+source-wordcount: '636'
+ht-degree: 78%
 
 ---
 
@@ -66,7 +66,7 @@ SSL 인증서를 삭제하려면 다음 단계를 따르십시오.
 
 ## 기존 CDN 구성 {#pre-existing-cdn}
 
-SSL 인증서에 대한 기존 CDN 구성이 있는 경우, **SSL 인증서** 페이지에는 이러한 구성을 Cloud Manager에서 보고 구성할 수 있도록 UI를 통해 추가하도록 권장하는 정보 메시지가 표시됩니다.
+SSL 인증서에 대한 기존 CDN 구성이 있는 경우 **SSL 인증서** 페이지 - Cloud Manager에서 보고 구성할 수 있도록 UI를 통해 이러한 구성을 추가하도록 권장합니다.
 
 UI를 사용하여 모든 기존 환경 구성이 마이그레이션되면 메시지가 사라집니다. 메시지가 사라지는 데는 영업일 기준 1~2일이 소요될 수 있습니다.
 

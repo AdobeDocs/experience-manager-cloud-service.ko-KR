@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '988'
 ht-degree: 0%
 
 ---
@@ -59,14 +59,16 @@ Adobe 프리미어 프로를 사용하여 360/VR 푸티지를 보고 편집할 �
 
       * 1080p - 1920 x 1080, Full HD 또는 FHD 해상도로 알려짐,
       * 4k, UHD 또는 Ultra HD 해상도로 알려진 2160p - 3840 x 2160. 이 대형 디스플레이 해상도는 프리미엄 TV 세트와 컴퓨터 모니터에서 가장 많이 발견됩니다. 너비가 4000픽셀에 가깝기 때문에 2160p 해상도를 &quot;4k&quot;라고 하는 경우가 많습니다. 즉, 1080p의 4배 픽셀을 제공합니다.
+
    * [사용자 지정 응용 비디오 프로필 만들기](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) (고품질 렌디션 포함) 예를 들어 다음 세 가지 설정이 포함된 응용 비디오 프로필을 만들 수 있습니다.
 
       * Width=auto; Height=720; 비트 전송률=2500kbps
       * Width=auto; Height=1080; 비트 전송률=5000kbps
       * Width=auto; Height=1440; 비트 전송률=6600kbps
+
    * 360 비디오 자산에만 사용되는 폴더에서 360 비디오 콘텐츠를 처리합니다.
 
-   이 방식은 최종 사용자의 네트워크 및 CPU에 더 많은 요구 사항을 제공합니다.
+   이 방법은 사용자의 네트워크 및 CPU에 더 많은 요구 사항을 제공합니다.
 
 1. [폴더에 비디오 업로드](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 
@@ -124,7 +126,8 @@ Start by uploading 360 Videos.
 
    * 뷰어 목록에서 를 선택합니다. **[!UICONTROL Video360VR]**.
 
-      가상 현실(VR) 비디오는 가상 현실 헤드셋을 사용함으로써 액세스되는 몰입형 비디오 콘텐츠이다. 일반 비디오와 마찬가지로 360도 비디오 카메라를 사용하여 비디오를 녹화하고 캡처할 때 VR 비디오를 처음부터 만듭니다.
+     가상 현실(VR) 비디오는 가상 현실 헤드셋을 사용함으로써 액세스되는 몰입형 비디오 콘텐츠이다. 일반 비디오와 마찬가지로 360도 비디오 카메라를 사용하여 비디오를 녹화하고 캡처할 때 VR 비디오를 처음부터 만듭니다.
+
    ![사용자가 Video360VR 뷰어 옵션 위로 마우스 포인터를 가져가는 스크린샷.](assets/6_5_360video-preview-video360vr.png)
    *360 VR 비디오 스크린샷.*
 

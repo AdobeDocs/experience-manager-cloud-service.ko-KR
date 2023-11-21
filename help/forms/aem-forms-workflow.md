@@ -4,7 +4,7 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: 'AEM Forms 워크플로를 사용하여 비즈니스 프로세스 워크플로를 자동화하고 신속하게 구축할 수 있습니다. 예: 검토 및 승인, PDF 생성, Adobe Sign 워크플로.'
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2392'
 ht-degree: 2%
@@ -66,7 +66,7 @@ AEM은 제공된 워크플로우 단계를 사용하여 워크플로우 모델�
 1. 워크플로우 모델 콘솔을 엽니다. 기본 URL은 `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. 선택 **만들기**, 그런 다음 **모델 만들기**. 워크플로 모델 추가 대화 상자가 나타납니다.
 1. 다음을 입력합니다. **제목** 및 **이름** (선택 사항). 예: 담보 대출 신청. 누르기 **완료**.
-1. 새로 만든 워크플로우 모델을 선택한 다음 을 누릅니다 **편집**. 이제 워크플로우 단계를 추가하여 비즈니스 논리를 구축할 수 있습니다. 처음 워크플로우 모델을 만들 때 다음과 같은 내용이 포함됩니다.
+1. 생성된 워크플로 모델을 선택한 다음 을 누릅니다 **편집**. 이제 워크플로우 단계를 추가하여 비즈니스 논리를 구축할 수 있습니다. 처음 워크플로우 모델을 만들 때 다음과 같은 내용이 포함됩니다.
 
    * 단계: 플로우 시작 및 플로우 종료. 이 단계는 워크플로의 시작과 끝을 나타냅니다. 이러한 단계는 필수이며 편집하거나 제거할 수 없습니다.
    * 1단계로 이름이 지정된 예제 참가자 단계입니다. 이 단계는 관리 사용자에게 작업 항목을 할당하도록 구성되었습니다. 이 단계를 제거합니다.

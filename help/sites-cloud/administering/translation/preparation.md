@@ -4,10 +4,10 @@ description: 다국어 웹 사이트를 개발할 때 번역을 위한 콘텐츠
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 87%
+source-wordcount: '752'
+ht-degree: 84%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 87%
 
 처음 사이트 콘텐츠를 작성하는 언어 사본은 언어 마스터입니다. 언어 마스터는 다른 언어로 번역되는 소스입니다.
 
-각각의 사이트 언어 분기를 언어 사본이라고 합니다. 언어 루트라고도 하는 언어 사본의 루트 페이지는 언어 사본에 있는 콘텐츠의 언어를 식별합니다. 예를 들어 `/content/wknd/fr`은 프랑스어 언어 사본의 언어 루트입니다. 언어 사본은 소스 사이트 번역 시 올바른 언어가 타겟팅되도록 [올바르게 구성된 언어 루트](preparation.md#creating-a-language-root)를 사용해야 합니다.
+각각의 사이트 언어 분기를 언어 사본이라고 합니다. 언어 루트라고도 하는 언어 사본의 루트 페이지는 언어 사본에 있는 콘텐츠의 언어를 식별합니다. 예를 들어 `/content/wknd/fr`은 프랑스어 언어 사본의 언어 루트입니다. 언어 사본은 [올바르게 구성된 언어 루트](preparation.md#creating-a-language-root) 소스 사이트의 번역을 수행할 때 올바른 언어가 타깃팅되도록 합니다.
 
 다음 단계를 사용하여 사이트 번역을 준비하십시오.
 

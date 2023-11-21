@@ -2,7 +2,7 @@
 title: 대상자 관리
 description: 대상자 콘솔을 사용하여 Adobe Target 계정에 대한 대상자를 만들고, 구성하고 관리하거나 ContextHub용 세그먼트를 관리할 수 있습니다.
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 89%
@@ -42,7 +42,7 @@ ContextHub에서 *세그먼트*&#x200B;라고 하는 대상자는 특정 기준�
 
    >[!NOTE]
    >
-   >**수정됨**&#x200B;을 탭하거나 클릭하여 수정된 목록을 정렬하면 새로 만든 대상자를 내림차순으로 정렬하여 볼 수 있습니다.
+   >You can sort the modified list by tapping or clicking **Modified** to sort by descending order to see any created audiences.
 
 ContextHub로 세그먼트를 만드는 방법에 대한 자세히 알려면 ContextHub를 사용한 세분화 구성 설명서를 참조하십시오. <!--For further detail about creating segments using ContextHub, see [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md).-->
 

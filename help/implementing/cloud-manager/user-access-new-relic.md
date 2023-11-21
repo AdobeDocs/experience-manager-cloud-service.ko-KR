@@ -2,10 +2,10 @@
 title: New Relic One
 description: AEM as a Cloud Service를 위한 New Relic One APM(Application Performance Monitoring) 서비스에 대한 정보와 액세스하는 방법에 대해 알아봅니다.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1728'
-ht-degree: 93%
+source-wordcount: '1726'
+ht-degree: 92%
 
 ---
 
@@ -120,7 +120,7 @@ New Relic One에 로그인하는 동안 이메일을 확인하라는 메시지�
 
 ## New Relic One 액세스 문제 해결 {#troubleshooting}
 
-[New Relic One 사용자 관리](#manage-users) 섹션에 설명된 대로 New Relic One 사용자로 추가되었는데 원본 계정 확인 이메일을 찾을 수 없는 경우 다음 단계를 따르십시오.
+섹션에 설명된 대로 New Relic One 사용자로 추가된 경우 [New Relic One 사용자 관리](#manage-users) 및 은(는) 원본 계정 확인 이메일을 찾을 수 없습니다. 다음 단계를 따르십시오.
 
 1. New Relic 로그인 페이지([`login.newrelic.com/login`](https://login.newrelic.com/login))로 이동합니다.
 

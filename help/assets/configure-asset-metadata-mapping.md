@@ -2,9 +2,9 @@
 title: Workfront과 Experience Manager Assets 간의 에셋 메타데이터 매핑 구성
 description: Adobe Workfront과 Experience Manager as a Cloud Service 애플리케이션 간에 에셋 메타데이터 필드를 매핑합니다. 메타데이터 필드를 매핑한 결과, Workfront에서 Experience Manager Assets으로 에셋을 전송하면 Experience Manager Assets에서 매핑된 에셋 메타데이터를 볼 수 있습니다.
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1024'
 ht-degree: 4%
 
 ---
@@ -41,7 +41,7 @@ Workfront의 프로젝트 이름, 문서 이름 및 문서 설명 필드에 대�
 
 1. Experience Manager Assets 통합을 선택하고 **[!UICONTROL 편집]**.
 
-1. 클릭 **[!UICONTROL 메타데이터]**. 다음에서 **[!UICONTROL 에셋]** 탭, 매핑 [!UICONTROL 프로젝트] > [!UICONTROL 이름] 에 대한 Workfront 필드 `wm:projectName` Experience Manager Assets 필드. Adobe 정확한 일치 항목을 찾지 못한 경우 Workfront 및 Experience Manager Assets 필드를 매핑할 수 있는 가장 적합한 항목을 찾는 것이 좋습니다. 서로 다른 데이터 유형의 필드를 매핑하지 않아도 됩니다. 예를 들어 날짜 Workfront 필드를 설명 에셋 필드에 매핑합니다.
+1. 클릭 **[!UICONTROL 메타데이터]**. 다음에서 **[!UICONTROL 에셋]** 탭, 매핑 [!UICONTROL 프로젝트] > [!UICONTROL 이름] 에 대한 Workfront 필드 `wm:projectName` Experience Manager Assets 필드. Adobe 정확한 일치 항목을 찾지 못한 경우 Workfront 및 Experience Manager Assets 필드를 매핑할 가장 적합한 항목을 찾는 것이 좋습니다. 서로 다른 데이터 유형의 필드를 매핑하지 않아도 됩니다. 예를 들어 날짜 Workfront 필드를 설명 에셋 필드에 매핑합니다.
 1. 매핑 [!UICONTROL 문서] > [!UICONTROL 이름] 에 대한 Workfront 필드 `wm:documentName` Experience Manager Assets 필드.
 
    ![Workfront에서의 매핑](assets/workfront-metadata-mapping.png)

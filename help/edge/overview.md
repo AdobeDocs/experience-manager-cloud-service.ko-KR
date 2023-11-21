@@ -3,10 +3,10 @@ title: Edge Delivery Services 시작하기
 description: Edge Delivery Services(EDS) 시작하기
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 74%
+source-wordcount: '863'
+ht-degree: 72%
 
 ---
 
@@ -46,7 +46,7 @@ Adobe Target, Analytics 및 Launch에서 Edge Delivery Services을 사용할 수
 
 ## Edge Delivery Services에 대한 액세스 {#getting-access}
 
-Edge Delivery Services 사용을 쉽게 시작할 수 있습니다. [시작하기 - 개발자 튜토리얼](https://www.hlx.live/developer/tutorial) 절차에 따라 시작합니다.
+Edge Delivery Services 사용을 시작하는 것은 쉽습니다. [시작하기 - 개발자 튜토리얼](https://www.hlx.live/developer/tutorial) 절차에 따라 시작합니다.
 
 ## Adobe에서 도움 받기 {#adobe-gethelp}
 

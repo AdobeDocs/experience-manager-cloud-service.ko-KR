@@ -2,10 +2,10 @@
 title: 등록, 로그인 및 사용자 프로필
 description: AEM as a Cloud Service의 등록, 로그인, 사용자 데이터 및 그룹 동기화에 대해 알아봅니다.
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1167'
-ht-degree: 100%
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+workflow-type: tm+mt
+source-wordcount: '1165'
+ht-degree: 93%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 100%
 
 ### AEM Managed {#aem-managed-registration}
 
-사용자 정의 등록 코드를 작성하면 최종 사용자의 사용자 이름 및 암호를 최소한으로 사용하고 AEM에서 로그인할 때 인증에 사용할 수 있는 사용자 레코드를 생성할 수 있습니다. 다음은 이러한 등록 메커니즘을 구성할 때 일반적으로 사용하는 단계입니다.
+사용자 정의 등록 코드를 작성하면 사용자 사용자 이름과 암호를 최소한으로 사용하고 AEM에서 로그인 중에 인증에 사용할 수 있는 사용자 레코드를 생성할 수 있습니다. 다음은 이러한 등록 메커니즘을 구성할 때 일반적으로 사용하는 단계입니다.
 
 1. 등록 정보를 수집하는 사용자 정의 AEM 구성 요소 표시
 1. 제출 후 올바르게 프로비저닝된 서비스 사용자가 다음 작업을 수행
@@ -67,7 +67,7 @@ ht-degree: 100%
 
 **SAML 기반**
 
-고객은 기본 SAML IdP를 통해 SAML 기반 인증을 사용할 수 있습니다. AEM과 함께 IdP를 사용할 때, IdP는 SAML 어설션에 설명된 대로 최종 사용자의 자격 증명을 인증하고, AEM을 통해 사용자 인증을 브로커링하고, 필요에 따라 AEM에서 사용자 레코드를 생성하고, AEM에서 사용자 그룹 멤버십을 관리합니다.
+고객은 기본 SAML IdP를 통해 SAML 기반 인증을 사용할 수 있습니다. AEM에서 IdP를 사용할 때, IdP는 SAML 어설션에 설명된 대로 사용자의 자격 증명을 인증하고, AEM을 통해 사용자 인증을 브로커링하고, 필요에 따라 AEM에서 사용자 레코드를 생성하고, AEM에서 사용자의 그룹 멤버십을 관리합니다.
 
 >[!NOTE]
 >

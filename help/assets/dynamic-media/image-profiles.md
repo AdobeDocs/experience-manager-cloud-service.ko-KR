@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3528'
 ht-degree: 8%
@@ -134,7 +134,7 @@ ht-degree: 8%
 
    ![자르기](assets/crop.png)
 
-1. **[!UICONTROL 저장]**&#x200B;을 선택합니다. 새로 만든 프로필이 사용 가능한 프로필 목록에 나타납니다.
+1. **[!UICONTROL 저장]**&#x200B;을 선택합니다. 생성된 프로파일은 사용 가능한 프로파일 목록에 나타납니다.
 
 ## Dynamic Media 이미지 프로필 편집 또는 삭제 {#editing-or-deleting-image-profiles}
 

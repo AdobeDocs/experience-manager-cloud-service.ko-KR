@@ -2,9 +2,9 @@
 title: Screens에서 플레이어 설치 및 구성 as a Cloud Service
 description: 이 페이지에서는 Screens에서 as a Cloud Service으로 플레이어를 설치하고 구성하는 방법에 대해 설명합니다.
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '581'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,7 @@ AEM Screens 플레이어에서 기본 재생 모니터링을 사용하면 다음
 
 * 현장에서의 빈 화면 또는 깨진 경험에 대한 반응성을 개선합니다.
 
-* 최종 사용자에게 손상된 경험이 표시될 위험을 줄입니다.
+* 사용자에게 손상된 경험을 표시할 위험을 줄입니다.
 
 ### 속성 이해 {#understand-properties}
 

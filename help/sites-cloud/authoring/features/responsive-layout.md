@@ -2,9 +2,9 @@
 title: 반응형 레이아웃
 description: AEM에서는 페이지에 대한 응답형 레이아웃을 실현할 수 있습니다.
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1732'
 ht-degree: 90%
 
 ---
@@ -149,7 +149,7 @@ AEM을 사용하면 디바이스의 폭에 따라 레이아웃을 정의할 수 
 >
 >레이아웃 컨테이너가 단락 시스템이므로 구성 요소를 삭제하면 레이아웃 격자와 컨테이너 내의 모든 구성 요소(및 해당 콘텐츠)가 모두 삭제됩니다.
 
-1. 격자 플레이스홀더에 마우스 커서를 가져다 대거나 탭하면 동작 메뉴가 표시됩니다.
+1. 격자 자리 표시자를 마우스로 가리키거나 탭하면 작업 메뉴가 표시됩니다.
 
    ![레이아웃 컨테이너에 추가](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 

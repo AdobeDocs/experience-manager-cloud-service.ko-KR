@@ -11,7 +11,7 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 43220614f567bdfad17c6ac9c8b3adcc856ff044
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 1%
@@ -57,7 +57,7 @@ ht-degree: 1%
 ![AEM Commerce 프로젝트](../assets/aep-integration/aem-project-with-commerce.png)
 
 
-프로젝트의 루트 디렉터리에서 다음 명령을 실행하여 새로 만든 AEM Commerce 프로젝트를 로컬 AEM SDK에 빌드하고 배포합니다.
+프로젝트의 루트 디렉터리에서 다음 명령을 실행하여 생성된 AEM Commerce 프로젝트를 로컬 AEM SDK에 빌드하고 배포합니다.
 
 ```bash
 $ mvn clean install -PautoInstallSinglePackage
@@ -403,11 +403,11 @@ Experience Platform에서 데이터 스트림을 생성하려면 다음 단계�
 
    ![AEP 데이터스트림 만들기](../assets/aep-integration/AEP-Datastream-Create.png)
 
-1. 다음을 사용하여 데이터스트림 이름 지정 __이름__ 필수 필드. 아래 __이벤트 스키마__ 필드에서 새로 만든 스키마를 선택하고 __저장__.
+1. 다음을 사용하여 데이터스트림 이름 지정 __이름__ 필수 필드. 아래 __이벤트 스키마__ 필드에서 생성된 스키마를 선택하고 __저장__.
 
    ![AEP 데이터 스트림 정의](../assets/aep-integration/AEP-Datastream-Define.png)
 
-1. 새로 생성된 데이터 스트림을 열고 __서비스 추가__.
+1. 생성된 데이터 스트림을 열고 __서비스 추가__.
 
    ![AEP 데이터스트림 추가 서비스](../assets/aep-integration/AEP-Datastream-Add-Service.png)
 

@@ -2,7 +2,7 @@
 title: 기초 구성 요소를 기반으로 하는 적응형 양식에 새 로케일에 대한 지원을 추가하려면 어떻게 합니까?
 description: 적응형 Forms의 경우 즉시 제공된 언어 외에도 더 많은 언어에 대한 로케일을 추가할 수 있습니다.
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 8%
@@ -102,7 +102,7 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
 1. 추가 `<locale-name>` 기본 로케일 값 `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`, 아직 존재하지 않는 경우.
 
 1. 추가 `<locale>` 의 값에 `languages` 다음의 속성 `/etc/languages`.
-1. 에서 새로 만든 폴더 추가 `filter.xml` etc/META-INF/[폴더 계층] 다음으로:
+1. 에서 생성된 폴더 추가 `filter.xml` etc/META-INF/[폴더 계층] 다음으로:
 
    ```
    <filter root="/etc/clientlibs/[locale-name]"/>
