@@ -2,7 +2,7 @@
 title: AEM Forms용 기록 문서(DoR)를 생성하는 방법
 description: 적응형 Forms용 기록 문서(DoR)에 대한 템플릿을 생성하는 방법에 대해 알아봅니다.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 00a905a08de1c14ef0ded7475d2f95abacc50af1
 workflow-type: tm+mt
 source-wordcount: '4139'
 ht-degree: 4%
