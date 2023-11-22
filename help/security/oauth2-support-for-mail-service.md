@@ -2,10 +2,10 @@
 title: 메일 서비스에 대한 OAuth2 지원
 description: Adobe Experience Manager as a Cloud Service의 메일 서비스에 대한 Oauth2 지원
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: c8e8a1c862784976094391d567fac0f9122af8b4
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 98%
+source-wordcount: '712'
+ht-degree: 92%
 
 ---
 
@@ -29,10 +29,12 @@ AEM as a Cloud Service 메일 서비스에 대한 자세한 내용은 [이메일
 1. 생성된 앱으로 이동하여 **API 권한**.
 1. **권한 추가** > **그래프 권한** > **위임된 권한**&#x200B;을 클릭합니다.
 1. 아래의 앱에 대한 권한을 선택한 다음 **권한 추가**&#x200B;를 클릭합니다.
+
+   >[!NOTE]
+   >
+   >권한 구성은 시간이 지남에 따라 발전할 수 있습니다. 예상대로 작동하지 않는 경우 Microsoft과 함께 작업하십시오.
+
    * `https://outlook.office.com/SMTP.Send`
-   * `https://graph.microsoft.com/Mail.Read`
-   * `https://graph.microsoft.com/Mail.Send`
-   * `https://graph.microsoft.com/User.Read`
    * `openid`
    * `offline_access`
    * `email`
@@ -134,15 +136,18 @@ AEM측의 OAuth 구성을 진행하기에 앞서 아래 절차에 따라 accessT
 
 1. 이전 섹션에 설명된 바와 같이 `authUrl`, `tokenUrl` 및 `refreshURL`을 구성하여 입력합니다.
 1. 구성에 다음 범위를 추가합니다.
+
+   >[!NOTE]
+   >
+   >범위는 시간이 지남에 따라 발전할 수 있습니다. 예상대로 작동하지 않는 경우 Microsoft과 함께 작업하십시오.
+
    * `https://outlook.office.com/SMTP.Send`
-   * `https://graph.microsoft.com/Mail.Read`
-   * `https://graph.microsoft.com/Mail.Send`
-   * `https://graph.microsoft.com/User.Read`
    * `openid`
    * `offline_access`
    * `email`
    * `profile`
-1. 다음 구문을 사용하여 OSGi 속성 파일 `called com.day.cq.mailer.DefaultMailService.cfg.json`을 `/apps/<my-project>/osgiconfig/config` 아래에 생성합니다. [이메일 서비스 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=ko-KR)에 설명된 대로 `smtp.host` 및 `smtp.port` 값은 고급 네트워킹 구성을 반영합니다.
+1. OSGI 속성 파일 만들기 `called com.day.cq.mailer.DefaultMailService.cfg.json`
+아래에 `/apps/<my-project>/osgiconfig/config` (아래 구문 포함) [이메일 서비스 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=ko-KR)에 설명된 대로 `smtp.host` 및 `smtp.port` 값은 고급 네트워킹 구성을 반영합니다.
 
    ```
    {
