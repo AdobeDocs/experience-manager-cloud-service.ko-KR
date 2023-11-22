@@ -2,7 +2,7 @@
 title: 기능 테스트
 description: 코드의 품질과 신뢰성을 보장하기 위해 AEM as a Cloud Service 배포 프로세스에 내장된 세 가지 유형의 기능 테스트에 대해 알아봅니다.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 181a0fd3097e1af2c432afbd8d2a170d792918be
+source-git-commit: ad3a82919b2c0561742527b83af20cc89d8a243a
 workflow-type: tm+mt
 source-wordcount: '1416'
 ht-degree: 10%
@@ -55,23 +55,19 @@ Adobe은 여러 개의 내장된 품질 게이트를 제공하는 반면, 다른
 
 모든 테스트 전략의 기초가 되는 AEM 애플리케이션에 대한 단위 테스트를 제공하는 것이 좋습니다. 빠르고 자주 실행하고 일찍 빠르게 피드백을 제공하도록 설계되었습니다. 개발자 워크플로우, 고유한 CI/CD 및 AEM Cloud Service 배포 파이프라인에 긴밀하게 통합됩니다.
 
-JUnit을 사용하여 구현되고 Maven로 실행됩니다. 다음을 참조하십시오.
-[AEM Project Archetype의 핵심 모듈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html#unit-tests)
-AEM 및 시작에 대한 단위 테스트의 예입니다.
+JUnit을 사용하여 구현되고 Maven로 실행됩니다. 다음을 참조하십시오. [AEM Project Archetype의 핵심 모듈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html#unit-tests) AEM 및 시작에 대한 단위 테스트의 예입니다.
 
 ### 코드 품질
 
 이 품질 게이트는 즉시 구성되며 AEM 애플리케이션 코드에서 정적 코드 분석을 실행합니다.
 
-다음을 참조하십시오 [코드 품질 테스트](/help/implementing/cloud-manager/code-quality-testing.md) 및
-[사용자 지정 코드 품질 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md) 추가 정보.
+다음을 참조하십시오 [코드 품질 테스트](/help/implementing/cloud-manager/code-quality-testing.md) 및 [사용자 지정 코드 품질 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md) 추가 정보.
 
 ### 제품 테스트
 
 제품 기능 테스트는 작성 및 복제 작업과 같은 AEM의 핵심 기능에 대한 안정적인 HTTP 통합 테스트(IT) 세트입니다. Adobe은 즉시 사용할 수 있도록 이러한 기능을 제공하고 유지 관리합니다. 사용자 정의 애플리케이션 코드가 AEM 제품의 핵심 기능을 손상시키는 경우 이러한 코드가 배포되지 않도록 하기 위한 것입니다.
 
-Junit을 사용하여 구현되고 Maven을 사용하여 실행되며 official을 사용합니다 [AEM 테스트 클라이언트](https://github.com/adobe/aem-testing-clients).
-제품 테스트 세트는 로 유지됩니다. [오픈 소스 프로젝트](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)는 모범 사례를 따르며 테스트 구현의 좋은 시작점으로 간주될 수 있습니다.
+Junit을 사용하여 구현되고 Maven을 사용하여 실행되며 official을 사용합니다 [AEM 테스트 클라이언트](https://github.com/adobe/aem-testing-clients). 제품 테스트 세트는 로 유지됩니다. [오픈 소스 프로젝트](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)는 모범 사례를 따르며 테스트 구현의 좋은 시작점으로 간주될 수 있습니다.
 
 ### 사용자 정의 기능 테스트
 
@@ -79,15 +75,11 @@ Junit을 사용하여 구현되고 Maven을 사용하여 실행되며 official�
 
 >[!NOTE]
 >
->사용자 정의 기능 테스트는 AEM 애플리케이션에서 사용하는 프로덕션 및 비프로덕션(옵트인) 파이프라인에서 실행되며, 이 파이프라인은 AEM 애플리케이션 배포 및 제품 푸시 업데이트를 변경하므로 애플리케이션이 제대로 작동하도록 하고 릴리스 안전을 높이는 데 도움이 되는 주요 기여입니다.
->고객 기능 테스트는 각 고객에 대한 내부 프리릴리스 유효성 검사 파이프라인에서도 실행되므로 초기 피드백을 제공하는 데 도움이 됩니다.
+>사용자 정의 기능 테스트는 AEM 애플리케이션에서 사용하는 프로덕션 및 비프로덕션(옵트인) 파이프라인에서 실행되며, 이 파이프라인은 AEM 애플리케이션 배포 및 제품 푸시 업데이트를 변경하므로 애플리케이션이 제대로 작동하도록 하고 릴리스 안전을 높이는 데 도움이 되는 주요 기여입니다. 고객 기능 테스트는 각 고객에 대한 내부 프리릴리스 유효성 검사 파이프라인에서도 실행되므로 초기 피드백을 제공하는 데 도움이 됩니다.
 
-파이프라인 실행을 효율적으로 유지하기 위해서는 주요 기능 및 주요 사용자 상호 작용 흐름에 중점을 두는 것이 좋습니다.
-기능 테스트의 실행 시간은 ~15분 이하가 권장됩니다. 이 품질 게이트에 적합하지 않은 모든 기능 테스트 세트는 고객의 개발 흐름 동안 일반적인 고객 유효성 검사 파이프라인의 일부로 실행하는 것이 좋습니다.
+파이프라인 실행을 효율적으로 유지하기 위해서는 주요 기능 및 주요 사용자 상호 작용 흐름에 중점을 두는 것이 좋습니다. 기능 테스트의 실행 시간은 ~15분 이하가 권장됩니다. 이 품질 게이트에 적합하지 않은 모든 기능 테스트 세트는 고객의 개발 흐름 동안 일반적인 고객 유효성 검사 파이프라인의 일부로 실행하는 것이 좋습니다.
 
-다음을 참조하십시오. [오픈 소스 제품 테스트](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) 또는
-[AEM Projects Archetype의 it.test 모듈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/ittests.html)
-예.
+다음을 참조하십시오. [오픈 소스 제품 테스트](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) 또는 [AEM Projects Archetype의 it.test 모듈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/ittests.html) 예.
 
 자세한 내용은 [Java 기능 테스트](/help/implementing/cloud-manager/java-functional-testing.md)를 참조하십시오.
 
@@ -99,27 +91,21 @@ Junit을 사용하여 구현되고 Maven을 사용하여 실행되며 official�
 
 >[!NOTE]
 >
->사용자 지정 UI 테스트는 AEM 애플리케이션에서 사용하는 프로덕션 및 비프로덕션(옵트인) 파이프라인에서 실행되며, 이 파이프라인은 AEM 애플리케이션 변경 배포 및 제품 푸시 업데이트를 변경하므로 애플리케이션이 제대로 작동하는지 확인하고 릴리스 안전성을 높이는 데 도움이 되는 주요 기여입니다.
->고객 UI 테스트는 각 고객에 대한 내부 프리릴리스 유효성 검사 파이프라인에서도 실행되므로 초기 피드백을 제공하는 데 도움이 됩니다.
+>사용자 지정 UI 테스트는 AEM 애플리케이션에서 사용하는 프로덕션 및 비프로덕션(옵트인) 파이프라인에서 실행되며, 이 파이프라인은 AEM 애플리케이션 변경 배포 및 제품 푸시 업데이트를 변경하므로 애플리케이션이 제대로 작동하는지 확인하고 릴리스 안전성을 높이는 데 도움이 되는 주요 기여입니다. 고객 UI 테스트는 각 고객에 대한 내부 프리릴리스 유효성 검사 파이프라인에서도 실행되므로 초기 피드백을 제공하는 데 도움이 됩니다.
 
-파이프라인 실행을 효율적으로 유지하기 위해서는 주요 기능 및 주요 사용자 상호 작용 흐름에 중점을 두는 것이 좋습니다.
-이 품질 게이트에 맞지 않는 전체 UI 테스트 세트는 고객의 개발 흐름 동안 일반적인 고객 유효성 검사 파이프라인의 일부로 실행하는 것이 좋습니다.
+파이프라인 실행을 효율적으로 유지하기 위해서는 주요 기능 및 주요 사용자 상호 작용 흐름에 중점을 두는 것이 좋습니다. 이 품질 게이트에 맞지 않는 전체 UI 테스트 세트는 고객의 개발 흐름 동안 일반적인 고객 유효성 검사 파이프라인의 일부로 실행하는 것이 좋습니다.
 
-다음을 참조하십시오. [오픈 소스 예시 테스트](https://github.com/adobe/aem-test-samples/tree/aem-cloud/) 또는
-[AEM Projects Archetype의 ui.tests 모듈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uitests.html)
-예.
+다음을 참조하십시오. [오픈 소스 예시 테스트](https://github.com/adobe/aem-test-samples/tree/aem-cloud/) 또는 [AEM Projects Archetype의 ui.tests 모듈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uitests.html) 예.
 
 자세한 내용은 [사용자 정의 UI 테스트](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)를 참조하십시오.
 
 ### 경험 감사
 
-경험 감사 품질 게이트가 수행되고 있습니다. [Google 등대](https://developer.chrome.com/docs/lighthouse/overview/)
-고객의 웹 페이지에 대한 감사를 수행합니다.
+경험 감사 품질 게이트가 수행되고 있습니다. [Google 등대](https://developer.chrome.com/docs/lighthouse/overview/) 고객의 웹 페이지에 대한 감사를 수행합니다.
 
 이 품질 게이트는 AEM에서 기본적으로 제공하지만 배포 파이프라인을 차단하지 않습니다. 기본적으로 루트 페이지에 대한 감사(`/`게시 인스턴스의 가 수행됩니다. 감사에 고려되는 최대 25개의 사용자 지정 경로를 구성하여 기여할 수 있습니다.
 
-다음을 참조하십시오 [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-testing.md)
-추가 정보.
+다음을 참조하십시오 [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-testing.md) 추가 정보.
 
 ### 고객 유효성 검사
 
@@ -127,10 +113,7 @@ Junit을 사용하여 구현되고 Maven을 사용하여 실행되며 official�
 
 여기서 원하는 도구와 프레임워크를 선택할 수 있습니다. 고객 기능 테스트 및 사용자 정의 UI 테스트와 달리 AEM as a Cloud Service 관련 제한은 없으므로 여기에서 장기 실행 기능 및 UI 테스트를 수행하는 것이 좋습니다.
 
-모든 도구와 프레임워크를 자유롭게 선택할 수 있지만, HTTP 기반 통합 테스트 및 UI 테스트를 사용자 정의 기능 테스트 및 사용자 정의 UI 테스트 품질 게이트에서 사용할 수 있는 도구 및 프레임워크에 맞추는 것이 좋습니다.
-다음을 통합하는 것이 좋습니다.
-[신속한 개발 환경(RDE)](/help/implementing/developing/introduction/rapid-development-environments.md)
-로컬 테스트 전략에서 AEM 클라우드 환경에 최대한 가깝게 테스트합니다.
+모든 도구와 프레임워크를 자유롭게 선택할 수 있지만, HTTP 기반 통합 테스트 및 UI 테스트를 사용자 정의 기능 테스트 및 사용자 정의 UI 테스트 품질 게이트에서 사용할 수 있는 도구 및 프레임워크에 맞추는 것이 좋습니다. 다음을 통합하는 것이 좋습니다. [신속한 개발 환경(RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) 로컬 테스트 전략에서 AEM 클라우드 환경에 최대한 가깝게 테스트합니다.
 
 ### 수동 테스트
 
