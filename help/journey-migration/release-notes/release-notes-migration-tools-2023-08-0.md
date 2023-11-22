@@ -1,8 +1,9 @@
 ---
 title: AEM as a Cloud Service 릴리스 2023.08.0의 마이그레이션 도구 릴리스 정보
-description: AEM as a Cloud Service 릴리스 2022.08.0의 마이그레이션 도구 릴리스 정보
+description: AEM as a Cloud Service 릴리스 2023.08.0의 마이그레이션 도구 릴리스 정보
 feature: Release Information
-source-git-commit: 9abce12c396ee74d36019218dd8b4fa72f762256
+exl-id: 1c822ece-620a-4866-be5a-065cb6a90204
+source-git-commit: b2322ff4ce27265b7eac37fcc0ea8235cd015ae0
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 13%
@@ -11,7 +12,7 @@ ht-degree: 13%
 
 # AEM as a Cloud Service 릴리스 2023.08.0의 마이그레이션 도구 릴리스 정보 {#release-notes}
 
-이 페이지에서는 AEM as a Cloud Service 2022.08.0의 마이그레이션 도구 릴리스 정보에 대해 간략히 설명합니다.
+이 페이지에서는 AEM as a Cloud Service 2023.08.0의 마이그레이션 도구 릴리스 정보에 대해 간략히 설명합니다.
 
 ## Best Practices Analyzer {#bpa-release}
 

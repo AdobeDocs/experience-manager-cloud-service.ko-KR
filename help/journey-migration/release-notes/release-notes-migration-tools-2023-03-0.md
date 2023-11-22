@@ -1,8 +1,9 @@
 ---
 title: AEM as a Cloud Service 릴리스 2023.03.0의 마이그레이션 도구 릴리스 정보
-description: AEM as a Cloud Service 릴리스 2022.03.0의 마이그레이션 도구 릴리스 정보
+description: AEM as a Cloud Service 릴리스 2023.03.0의 마이그레이션 도구 릴리스 정보
 feature: Release Information
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+exl-id: cdc57cca-e10a-4b0d-b803-910ccc9350a6
+source-git-commit: d7e5a14c2dfee41b4ab5af733218fe58d17871fa
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 10%
@@ -11,7 +12,7 @@ ht-degree: 10%
 
 # AEM as a Cloud Service 릴리스 2023.03.0의 마이그레이션 도구 릴리스 정보 {#release-notes}
 
-이 페이지에서는 AEM as a Cloud Service 2022.03.0의 마이그레이션 도구 릴리스 정보에 대해 간략히 설명합니다.
+이 페이지에서는 AEM as a Cloud Service 2023.03.0의 마이그레이션 도구 릴리스 정보에 대해 간략히 설명합니다.
 
 ## Best Practices Analyzer {#bpa-release}
 
@@ -32,7 +33,7 @@ Best Practices Analyzer v2.1.40의 릴리스 날짜는 2023년 3월 03일입니�
 
 ### 릴리스 날짜 {#release-date-ctt}
 
-컨텐츠 전송 도구 v2.0.16의 릴리스 날짜는 2022년 3월 8일입니다.
+컨텐츠 전송 도구 v2.0.16의 릴리스 날짜는 2023년 3월 8일입니다.
 
 ### 새로운 기능 {#what-is-new-ctt}
 
