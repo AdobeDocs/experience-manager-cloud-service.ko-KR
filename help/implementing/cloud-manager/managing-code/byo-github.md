@@ -2,13 +2,13 @@
 title: Cloud Manager에서 자체 GitHub 저장소를 사용하여 작업
 description: 자체 GitHub 저장소에서 작동하도록 Cloud Manager를 설정하는 방법에 대해 알아봅니다.
 feature: Release Information
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
+source-git-commit: 237b4a8e01af74dbaac0ba1715b5fa95c931be7c
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 70%
 
 ---
-
 
 # Cloud Manager에서 자체 GitHub 저장소를 사용하여 작업 {#byo-github}
 

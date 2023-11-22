@@ -5,15 +5,15 @@ contentOwner: KK
 mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
-source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
+exl-id: 40f63933-4f4e-4318-8d42-4b5c9b01f7cd
+source-git-commit: 237b4a8e01af74dbaac0ba1715b5fa95c931be7c
 workflow-type: tm+mt
 source-wordcount: '182'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
-
-# 중복 에셋 감지 {#detect-duplicate-assets}
+# 중복 자산 감지 {#detect-duplicate-assets}
 
 DAM 사용자가 저장소에 이미 존재하는 에셋을 하나 이상 업로드하는 경우, [!DNL Experience Manager] 복제를 감지하고 사용자에게 알립니다. 중복 검색은 저장소 크기 및 업로드된 에셋 수에 따라 성능에 영향을 줄 수 있으므로 기본적으로 비활성화됩니다.
 
@@ -43,4 +43,3 @@ DAM 사용자가 저장소에 이미 존재하는 에셋을 하나 이상 업로
 >[!NOTE]
 >
 >에셋을 저장소에 업로드하면 Experience Manager에서 중복을 감지하여 처음 100개의 중복 에셋에 대해 알려 줍니다.
-
