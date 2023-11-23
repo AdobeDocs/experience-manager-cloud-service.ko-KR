@@ -2,10 +2,10 @@
 title: WAF 규칙이 포함된 트래픽 필터 규칙
 description: 웹 애플리케이션 방화벽(WAF)이 포함된 트래픽 필터 규칙 구성
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 8407f3142de78ee792bdece327734dd02a4f234b
 workflow-type: tm+mt
-source-wordcount: '3437'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -258,7 +258,6 @@ An `action` 작업(allow, block 또는 log)을 지정하는 문자열이거나, 
 | JSON-ERROR | JSON 인코딩 오류 | “Content-Type” 요청 헤더 내에 JSON을 포함하도록 지정되었지만 JSON 구문 분석 오류가 포함된 POST, PUT 또는 PATCH 요청 본문입니다. 흔히 프로그래밍 오류나 자동화된 요청 또는 악성 요청과 관련이 있습니다. |
 | MALFORMED-DATA | 요청 본문의 형식이 잘못된 데이터 | “Content-Type” 요청 헤더에 따라 형식이 잘못된 POST, PUT 또는 PATCH 요청 본문입니다. 예를 들어 “Content-Type: application/x-www-form-urlencoded” 요청 헤더가 지정되고 json인 POST 본문을 포함하는 경우입니다. 흔히 프로그래밍 오류, 자동화된 요청 또는 악성 요청에 해당합니다. 에이전트 3.2 이상이 필요합니다. |
 | SANS | 악성 IP 트래픽 | 악성 활동에 연루된 것으로 보고된 [SANS 인터넷 스톰 센터](https://isc.sans.edu/) IP 주소 목록입니다. |
-| SIGSCI-IP | 네트워크 효과 | SignalSciences에서 플래그 지정한 IP: 결정 엔진의 악성 신호로 인해 IP가 플래그 지정될 때마다 해당 IP가 모든 고객에게 전파됩니다. 플래그 기간 동안 추가 신호를 포함하는 해당 IP 주소의 후속 요청이 기록됩니다. |
 | NO-CONTENT-TYPE | 누락된 “Content-Type” 요청 헤더 | “Content-Type” 요청 헤더가 없는 POST, PUT 또는 PATCH 요청입니다. 이 경우 기본적으로 애플리케이션 서버는 “Content-Type: text/plain; charset=us-ascii”를 가정하게 됩니다. 자동화된 요청 및 악성 요청 중 대다수에서 “Content Type”이 누락되어 있을 수 있습니다. |
 | NOUA | 사용자 에이전트 없음 | 자동화된 요청 및 악성 요청 중 대다수가 가짜 사용자 에이전트 또는 누락된 사용자 에이전트를 사용하여 요청 주체인 디바이스 유형을 식별하기 어렵게 만듭니다. |
 | TORNODE | Tor 트래픽 | Tor는 사용자의 신원을 숨기는 소프트웨어입니다. Tor 트래픽 스파이크가 발생한다면 공격자가 자신의 위치를 숨기려고 시도하고 있음을 나타낼 수 있습니다. |
@@ -638,7 +637,6 @@ data:
         type: log
         wafFlags:
           - SANS
-          - SIGSCI-IP
           - TORNODE
           - NOUA
           - SCANNER
