@@ -2,7 +2,7 @@
 title: 더 이상 사용되지 않는 API
 description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]에서 더 이상 사용되지 않으며 제거된 API에 관련된 릴리스 정보입니다.'
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: d2c7e3d88b5545eee3e6f1c511088c0f6638cfe7
 workflow-type: tm+mt
 source-wordcount: '1116'
 ht-degree: 100%
@@ -14,9 +14,8 @@ ht-degree: 100%
 다음은 더 이상 사용되지 않는 AEM API 및 해당 API의 예상되는 제거 날짜에 대한 광범위한 목록입니다. 고객은 목표 제거 날짜까지 코드에서 해당 API를 제거해야 합니다. 제거 날짜가 지난 API를 사용하면 로컬 SDK/개발 환경 및 Cloud Manager 빌드 프로세스에서 오류가 발생합니다.
 
 
-<table>
-<thead>
 <table style="table-layout:auto">
+<thead>
   <tr>
     <th>패키지/클래스</th>
     <th>댓글</th>
