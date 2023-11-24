@@ -1,5 +1,5 @@
 ---
-title: AEM Screens과 Adobe Analytics 통합
+title: AEM Screens Cloud와 Adobe Analytics 통합
 seo-title: Adobe Analytics Integration with AEM Screens
 description: 이 페이지를 따라 AEM Screens과 Adobe Analytics의 획기적인 통합에 대해 알아보고 재생 증명을 제공합니다.
 seo-description: Follow this page to learn about out of the box integration of AEM Screens with Adobe Analytics and provides you with a proof of play.
@@ -12,14 +12,15 @@ discoiquuid: b1a0e00e-0368-42c9-8bcd-5f00b4d0990c
 docset: aem65
 role: Admin, Developer
 level: Intermediate
-source-git-commit: bf0a841a5cd5eb278fd3d59484c84d1cee172b4e
+exl-id: e22242ce-e5ce-4486-bba4-e6a89ac4fb5e
+source-git-commit: 75d147886c8151f8b8ac41af907e17b5deff5a9c
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
 
-# AEM Screens과 Adobe Analytics 통합 {#adobe-analytics-integration-with-aem-screens}
+# AEM Screens Cloud와 Adobe Analytics 통합 {#adobe-analytics-integration-with-aem-screens}
 
 이 섹션에서는 다음 주제를 다룹니다.
 
@@ -54,18 +55,15 @@ AEM Screens 고객은 표시된 시간과 기간(집계된) 동안 표시되는 
 
 ![Adobe Analytics과 통합](/help/screens-cloud/assets/analytics-architecture.png)
 
-## AEM Screens 클라우드에서 Adobe Analytics 활성화 {#enabling-adobe-analytics-in-aem-screens-cloud}
+## AEM Screens Cloud에서 Adobe Analytics 활성화 {#enabling-adobe-analytics-in-aem-screens-cloud}
 
 Screens Cloud에서 Adobe 분석을 활성화하려면 Adobe 관계 관리자에게 문의하십시오.
 
-## Screens Analytics: 지원 흐름 {#screens-analytics-enablement-flow}
-
->[!CAUTION]
->
->속성을 구성하기 전에 Adobe 관계 관리자에게 문의하여 티켓을 받으십시오. **Analytics API 키** 및 **Analytics 프로젝트** AEM Screens에서 사용할 수 있습니다.
-
-## AEM Screens에서 Adobe Analytics 서비스 사용 {#using-adobe-analytics-service-in-aem-screens}
+## AEM Screens Cloud에서 Adobe Analytics 서비스 사용 {#using-adobe-analytics-service-in-aem-screens}
 
 이 시나리오는 펌웨어 및 기기 화면 핵심 구성 요소에 있는 분석 서비스의 REST 호출을 통해 Analytics API를 호출하여 특정 사용 사례와 관련된 이벤트를 명시적으로 만들고 보내는 동시에 사용자 지정 개발 채널에서 Analytics로 사용자 지정 메시지를 보낼 수 있는 확장성을 허용합니다.
 
 Analytics 이벤트는 indexedDB에 오프라인으로 저장되고 나중에 청크되어 클라우드로 전송됩니다.
+
+>[!NOTE]
+>이벤트의 시퀀싱 및 표준 데이터 모델에 대한 자세한 내용은 을 참조하십시오. [AEM Screens용 Adobe Analytics 구성](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html) 을 참조하십시오.
