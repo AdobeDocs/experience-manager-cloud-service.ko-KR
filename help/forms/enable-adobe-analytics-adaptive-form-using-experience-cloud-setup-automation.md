@@ -3,9 +3,9 @@ title: 적응형 양식용 Adobe Analytics을 활성화하는 방법
 description: Experience Cloud 설정 자동화를 통해 Adobe Analytics를 적응형 양식에 연결하여 방문자 상호 작용과 참여에 대한 인사이트를 추적할 수 있습니다.
 keywords: Experience Cloud 설정 자동화를 사용하여 적응형 양식용 Adobe Analytics 활성화, Forms의 Adobe Analytics, 적응형 Forms의 Adobe Analytics, Forms 분석 통합, Forms 및 Adobe Analytics 활성화
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: fa107ee89deb217ada2cfbcccb4602a7a6aff125
 workflow-type: tm+mt
-source-wordcount: '1593'
+source-wordcount: '1576'
 ht-degree: 59%
 
 ---
@@ -161,14 +161,13 @@ AEM Sites 페이지에서 적응형 양식에 연결하여 Analytics를 활성�
 
 1. 추가 `customfooterlibs.html` 파일.
 
-       &quot;
-       // customheaderlibs.html
-       &lt;sly data-sly-use.page=&quot;com.adobe.cq.wcm.core.components.models.Page&quot;>
-       &lt;sly data-sly-test=&quot;${page.data &amp;&amp; page.dataLayerClientlibIncluded}&quot; data-sly-call=&quot;${clientlib.js @ categories=&amp;#39;core.forms.components.commons.v1.datalayer&amp;#39;, async=true}&quot;>&lt;/sly>
-       &lt;/sly>
-       
-       &quot;
-   
+   ```
+   // customheaderlibs.html
+   <sly data-sly-use.page="com.adobe.cq.wcm.core.components.models.Page">
+   <sly data-sly-test="${page.data && page.dataLayerClientlibIncluded}" data-sly-call="${clientlib.js @ categories='core.forms.components.commons.v1.datalayer', async=true}"></sly>
+   </sly>
+   ```
+
    다음 `customfooterlibs.html` 는 JavaScript에 사용됩니다.
 
 1. [파이프라인 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) 를 눌러 변경 사항을 배포합니다.
