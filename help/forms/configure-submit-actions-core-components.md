@@ -3,7 +3,7 @@ title: 적응형 양식에 대한 제출 액션을 구성하는 방법?
 description: 적응형 양식은 여러 제출 액션을 제공합니다. 제출 액션은 적응형 양식이 제출 후 처리되는 방식을 정의합니다. 기본 제공 제출 액션을 사용하거나 직접 만들 수 있습니다
 keywords: 적응형 양식에 대한 제출 액션을 선택하고, 적응형 양식을 sharepoint 목록에 연결하고, 적응형 양식을 sharepoint 문서 라이브러리에 연결하고, 적응형 양식을 양식 데이터 모델에 연결하는 방법
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 24b0871e75280d0125c13b1605c0e8b5e555c8e7
 workflow-type: tm+mt
 source-wordcount: '3634'
 ht-degree: 92%
@@ -101,7 +101,6 @@ ht-degree: 92%
 >
 >If you [prefill](prepopulate-adaptive-form-fields.md) a form template, a Form Data Model or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema, or form data model) that does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost.
 
-
 -->
 
 ## SharePoint에 제출 {#submit-to-sharedrive}
@@ -111,8 +110,7 @@ ht-degree: 92%
 <!--
 Using Submit to SharePoint, you can:
 * [Connect an Adaptive Form to SharePoint Document Library](#connect-af-sharepoint-doc-library)
-* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list)
--->
+* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list) -->
 
 ### 적응형 양식을 SharePoint 문서 라이브러리에 연결 {#connect-af-sharepoint-doc-library}
 

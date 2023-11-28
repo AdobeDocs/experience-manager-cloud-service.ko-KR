@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
+source-git-commit: 4d1e70c19caab23df13ed6fdc29b30e41106501f
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 31%
+source-wordcount: '2092'
+ht-degree: 30%
 
 ---
 
@@ -39,8 +39,6 @@ ht-degree: 31%
 1. [!DNL Adobe Acrobat Sign] API 애플리케이션의 자격 증명(클라이언트 ID 및 클라이언트 보안).
 1. (정부 ID 기반 인증만 해당) [인증 방법 활성화](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html#AuditReport) 정부 ID 인증용.
 
-
-
 ### AEM Forms 작성자 및 게시 인스턴스와 Adobe Acrobat Sign 연결 {#configure-adobe-sign-with-aem-forms}
 
 전제 조건이 갖추어지면 다음 단계를 통해 작성자 인스턴스에서 [!DNL AEM Forms]를 사용하여 [!DNL Adobe Acrobat Sign]을 구성하십시오.
@@ -59,27 +57,38 @@ ht-degree: 31%
 
 1. 이제 다음을 수행할 수 있습니다 **[!UICONTROL 솔루션 선택]** 선택 [!DNL Adobe Acrobat Sign].
 
-   ![Adobe Acrobat Sign Solutions for Government](assets/adobe-sign-solution.png)
+   ![Adobe Acrobat Sign Solutions](assets/adobe-sign-solution.png)
+
+<!--
+
+[create URL](#create-a-redirect-url-for-your-aem-instance)
+ -->
 
 1. 현재 브라우저 창의 URL을 메모장에 복사하고 부품을 제거합니다 `/ui#/aem` URL에서 을 구성하는 데 수정된 URL이 필요합니다. [!DNL Adobe Acrobat Sign] 을 사용한 애플리케이션 [!DNL AEM Forms]: 이후 단계에서 사용할 수 있습니다. 누르기 **[!UICONTROL 다음]**.
 
-1. 다음에서 **[!UICONTROL 설정]** 탭, **[!UICONTROL OAuth URL]** 필드에는 기본 URL이 포함되어 있습니다. URL 형식은 다음과 같습니다.
+1. 다음에서 **[!UICONTROL 설정]** 탭,
+   * 다음 **[!UICONTROL OAuth URL]** 필드에는 Adobe Sign 데이터베이스 분할이 포함된 기본 URL이 포함됩니다. URL 형식은 다음과 같습니다.
 
-   `https://<shard>/public/oAuth/v2`
+     `https://<shard>/public/oauth/v2`
 
-   예:
-   `https://secure.na1.echosign.com/public/oauth/v2`
+     예:
+     `https://secure.na1.echosign.com/public/oauth/v2`
+
+   * 다음 **[!UICONTROL 토큰 URL 액세스]** 필드에는 Adobe Sign 데이터베이스 분할이 포함된 기본 URL이 포함됩니다. URL 형식은 다음과 같습니다.
+
+     `https://<shard>/oauth/v2/token`
+
+     예:
+     `https://api.na1.echosign.com/oauth/v2/token`
 
    여기에서
 
    **na1**&#x200B;은 기본값 데이터베이스 분할을 의미합니다. 데이터베이스 분할의 값을 수정할 수 있습니다. [!DNL  Adobe Acrobat Sign] 클라우드 구성이 [올바른 분할](https://helpx.adobe.com/sign/using/identify-account-shard.html)을 가리켜야 합니다.
 
-   Adobe Experience Manager 기능이나 구성 요소에 대한 또 다른 [!DNL Adobe Acrobat Sign] 구성을 생성하는 경우, 모든 [!DNL Adobe Acrobat Sign] 클라우드 구성이 동일한 분할을 가리켜야 합니다.
-
    >[!NOTE]
    >
-   > 유지 **Adobe Acrobat Sign 구성 만들기** 페이지가 열립니다. 닫지 마세요. 다음을 검색할 수 있습니다. **클라이언트 ID** 및 **클라이언트 암호** 에 대한 OAuth 설정을 구성한 후 [!DNL Adobe Acrobat Sign] 다음 단계에 설명된 대로 애플리케이션.
-
+   >* 유지 **Adobe Acrobat Sign 구성 만들기** 페이지가 열립니다. 닫지 마세요. 다음을 검색할 수 있습니다. **클라이언트 ID** 및 **클라이언트 암호** 에 대한 OAuth 설정을 구성한 후 [!DNL Adobe Acrobat Sign] 다음 단계에 설명된 대로 애플리케이션.
+   > * Adobe Sign 계정에 로그인한 후 다음으로 이동합니다. **[!UICONTROL ACROBAT SIGN API]** > **[!UICONTROL API 정보]** > **[!UICONTROL REST API 메서드 설명서]** > **[!UICONTROL OAuth 액세스 토큰]** Adobe Sign OAuth URL 및 액세스 토큰 URL 관련 정보에 액세스합니다.
 
 1. [!DNL Adobe Acrobat Sign] 애플리케이션에 대한 OAuth 설정을 구성합니다.
 
@@ -97,7 +106,7 @@ ht-degree: 31%
 
    [!DNL Adobe Acrobat Sign] 애플리케이션에 대한 OAuth 설정을 구성하고 키를 얻는 방법에 대한 단계별 정보는 [애플리케이션에 대한 oAuth 설정 구성](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) 개발자 문서를 참조하십시오.
 
-   ![OAuth Config](assets/oauthconfig_new.png)
+   ![OAuth Config](/help/forms/assets/oauthconfig-new.png)
 
 1. 로 돌아가기 **[!UICONTROL Adobe Acrobat Sign 구성 만들기]** 페이지를 가리키도록 업데이트하는 중입니다. 다음에서 **[!UICONTROL 설정]** 탭에서 [**[!UICONTROL 클라이언트 ID]** (애플리케이션 ID라고도 함) 및 **[!UICONTROL 클라이언트 암호]**]. 사용 [Adobe Acrobat Sign 애플리케이션의 클라이언트 ID 및 클라이언트 암호](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) 이전 단계에서 을(를) 만들었습니다.
 
@@ -114,6 +123,10 @@ ht-degree: 31%
 1. 위의 모든 단계를 개발자, 스테이지 및 생산 인스턴스(어느 것이든 남은 인스턴스에)에 반복하여, 해당 환경을 위한 [!DNL AEM Forms]를 사용한 [!DNL Adobe Acrobat Sign] 구성을 완료합니다.
 
 이제 다음을 수행할 수 있습니다. [적응형 양식에 Adobe Acrobat Sign 필드 추가 사용](working-with-adobe-sign.md). Cloud Service에 사용되는 구성 컨테이너를 [!DNL Adobe Acrobat Sign]을 위해 활성화하고자 하는 모든 적응형 양식에 추가해야 합니다. 적응형 양식의 속성에서 구성 컨테이너를 지정할 수 있습니다.
+
+>[!NOTE]
+>
+> Adobe Sign 샌드박스를 구성하려면에 설명된 것과 동일한 구성 단계를 따를 수 있습니다 [Adobe Sign](#adobe-sign).
 
 ## AEM Forms과 Adobe Acrobat Sign Solutions for Government 연결 {#adobe-acrobat-sign-for-government}
 
@@ -143,8 +156,8 @@ AEM Forms과 Adobe Acrobat Sign 솔루션 연결을 시작하기 전에 [Adobe A
 1. 다음에서 **[!UICONTROL 구성 만들기]** 대화 상자, 지정 **[!UICONTROL 제목]** 구성의 경우 활성화 **[!UICONTROL 클라우드 구성]**, 및 탭 **[!UICONTROL 만들기]**. 이를 통해 Cloud Service를 저장하는 구성 컨테이너가 생성됩니다. 폴더 이름에는 공백이 없어야 합니다.
 1. 다음으로 이동 **[!UICONTROL 도구]** ![망치](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Acrobat Sign]** 이전 단계에서 생성한 구성 컨테이너를 엽니다. 적응형 양식을 만들 때에서 컨테이너 이름을 지정합니다 **[!UICONTROL 구성 컨테이너]** 필드.
 1. 구성 페이지에서 을 누릅니다. **[!UICONTROL 만들기]** 만들려면 [!DNL Adobe Acrobat Sign] AEM Forms의 구성
-1. 현재 브라우저 창의 URL을 메모장에 복사하고 제거합니다. `/ui#/aem` URL에서 이 URL을 라고 합니다. `re-direct URL`. 다음 섹션에서는 `re-direct URL` 및 `Scopes` Adobe Sign 팀 및 요청 자격 증명(클라이언트 ID 및 클라이언트 암호)과 함께 사용할 수 있습니다.
-
+1. 현재 브라우저 창의 URL을 메모장에 복사하고 제거합니다. `/ui#/aem` URL에서 이 URL을 라고 합니다. `re-direct URL`.
+다음 섹션에서는 `re-direct URL` 및 `Scopes` Adobe Sign 팀 및 요청 자격 증명(클라이언트 ID 및 클라이언트 암호)과 함께 사용할 수 있습니다.
 
 #### 리디렉션 URL 및 범위를 Adobe Sign 팀과 공유하고 자격 증명을 받습니다
 
@@ -166,17 +179,39 @@ Adobe Acrobat Sign for Government Solutions 팀은 `re-direct URL` 또한 Adobe 
 
 #### 수신한 자격 증명을 사용하여 AEM Forms과 Adobe Acrobat Sign Solutions for Government를 연결합니다.
 
-1. 를 엽니다. `re-direct URL` 을 클릭합니다. 을(를) 만들고 적어 두었습니다. `re-direct URL` 의 마지막 단계에서 [AEM 인스턴스에 리디렉션 URL 만들기](#create-redirect-url) 섹션.
+1. 를 엽니다. `re-direct URL` 을 클릭합니다. 을(를) 만들고 적어 두었습니다. `re-direct URL` 의 마지막 단계에서 [AEM 인스턴스에 리디렉션 URL 만들기](#create-a-redirect-url-for-your-aem-instance) 섹션.
 
 1. 다음에서 **[!UICONTROL 일반]** 의 탭 **[!UICONTROL Adobe Sign 구성 만들기]** 페이지, 지정 **[!UICONTROL 이름]** 구성을 보려면 다음을 누르십시오. **[!UICONTROL 다음]**. 다음을 선택적으로 지정할 수 있습니다. **[!UICONTROL 제목]** 을(를) 찾아 선택 **[!UICONTROL 축소판]** 구성. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
 1. 다음에서 **[!UICONTROL 설정]** 의 탭 **[!UICONTROL Adobe Sign 구성 만들기]** 페이지, **[!UICONTROL 솔루션 선택]** 옵션, 선택 [!DNL Adobe Acrobat Sign Solutions for Government].
 
+
    ![Adobe Acrobat Sign Solutions for Government](assets/adobe-sign-for-govt.png)
 
 1. 다음에서 **[!UICONTROL 이메일]** 필드를 생성하고 정부 계정용 Adobe Acrobat Sign Solutions과 연결된 이메일 주소를 지정합니다.
 
-1. 다음 **[!UICONTROL OAuth URL]** 필드는 Adobe Sign 데이터베이스 분할을 지정합니다. 필드에는 기본 URL이 포함되어 있습니다. URL은 변경하지 마십시오.
+1. 다음에서 **[!UICONTROL 설정]** 탭,
+   * 다음 **[!UICONTROL OAuth URL]** 필드에는 Adobe Sign 데이터베이스 분할이 포함된 기본 URL이 포함됩니다. URL 형식은 다음과 같습니다.
+
+     `https://<shard>/api/gateway/adobesignauthservice/api/v1/authorize`
+
+     예:
+     `https://secure.na1.adobesign.us/api/gateway/adobesignauthservice/api/v1/authorize`
+
+   * 다음 **[!UICONTROL 토큰 URL 액세스]** 필드에는 Adobe Sign 데이터베이스 분할이 포함된 기본 URL이 포함됩니다. URL 형식은 다음과 같습니다.
+
+     `https://<shard>/api/gateway/adobesignauthservice/api/v1/token`
+
+     예:
+     `https://secure.na1.adobesign.us/api/gateway/adobesignauthservice/api/v1/token`
+
+   여기에서
+
+   **na1**&#x200B;은 기본값 데이터베이스 분할을 의미합니다. 데이터베이스 분할의 값을 수정할 수 있습니다. [!DNL  Adobe Acrobat Sign] 클라우드 구성이 [올바른 분할](https://helpx.adobe.com/sign/using/identify-account-shard.html)을 가리켜야 합니다.
+
+   >[!NOTE]
+   >
+   > * Adobe Sign 계정에 로그인한 후 다음으로 이동합니다. **[!UICONTROL ACROBAT SIGN API]** > **[!UICONTROL API 정보]** > **[!UICONTROL REST API 메서드 설명서]** > **[!UICONTROL OAuth 액세스 토큰]** Adobe Sign oAuth URL 및 액세스 토큰 URL 관련 정보에 액세스
 
 1. 정부 솔루션 담당자용 Adobe Acrobat Sign에서 공유한 자격 증명 사용([Adobe Professional Services 팀원]) 이전 섹션에서 [**[!UICONTROL 클라이언트 ID]** 및 **[!UICONTROL 클라이언트 암호]**].
 

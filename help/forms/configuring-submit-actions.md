@@ -2,7 +2,7 @@
 title: 적응형 양식에 대한 제출 액션을 구성하는 방법?
 description: 적응형 양식은 여러 제출 액션을 제공합니다. 제출 액션은 적응형 양식이 제출 후 처리되는 방식을 정의합니다. 기본 제공 제출 액션을 사용하거나 직접 만들 수 있습니다.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 24b0871e75280d0125c13b1605c0e8b5e555c8e7
 workflow-type: tm+mt
 source-wordcount: '3428'
 ht-degree: 85%
@@ -54,8 +54,6 @@ ht-degree: 85%
 >[!CAUTION]
 >
 >If you [prefill](prepopulate-adaptive-form-fields.md) a form template, a Form Data Model or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema, or form data model) that does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost.
-
-
 -->
 
 ## REST 엔드포인트에 제출 {#submit-to-rest-endpoint}
@@ -173,10 +171,12 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 ## SharePoint에 제출 {#submit-to-sharedrive}
 
 **[!UICONTROL SharePoint에 제출]** 제출 액션은 적응형 양식을 Microsoft® SharePoint Storage와 연결합니다. 양식 데이터 파일, 첨부 파일 또는 기록 문서를 연결된 Microsoft® SharePoint Storage에 제출할 수 있습니다.
-
-<!-- Using Submit to SharePoint, you can:
+<!--
+Using Submit to SharePoint, you can:
 * [Connect an Adaptive Form to SharePoint Document Library](#connect-af-sharepoint-doc-library)
-* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list) -->
+* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list) 
+
+-->
 
 ### 적응형 양식을 SharePoint 문서 라이브러리에 연결 {#connect-af-sharepoint-doc-library}
 
@@ -194,7 +194,7 @@ AEM Forms을 Microsoft® Sharepoint Document Library 스토리지에 연결하�
 1. **구성 컨테이너**&#x200B;를 선택합니다. 선택한 구성 컨테이너에 구성을 저장합니다.
 1. 클릭 **[!UICONTROL 만들기]** > **[!UICONTROL SharePoint 문서 라이브러리]** 을 클릭합니다. SharePoint 구성 마법사가 나타납니다.
 
-![SharePoint 구성](/help/forms/assets/sharepoint_configuration.png)
+   ![SharePoint 구성](/help/forms/assets/sharepoint_configuration.png)
 1. **[!UICONTROL 제목]**, **[!UICONTROL 클라이언트 ID]**, **[!UICONTROL 클라이언트 보안]** 및 **[!UICONTROL OAuth URL]**&#x200B;을 지정합니다. OAuth URL의 클라이언트 ID, 클라이언트 보안, 테넌트 ID를 검색하는 방법에 대한 자세한 내용은 [Microsoft® Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)을 참조하십시오.
    * Microsoft® Azure 포털에서 앱의 `Client ID` 및 `Client Secret`를 검색할 수 있습니다.
    * Microsoft® Azure 포털에서 리디렉션 URI를 `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`로 추가합니다. `[author-instance]`를 작성자 인스턴스의 URL로 대체합니다.
@@ -236,6 +236,7 @@ AEM Forms을 Microsoft® Sharepoint Document Library 스토리지에 연결하�
 데이터를 저장하는 폴더 구조는 `/folder_name/form_name/year/month/date/submission_id/data`입니다.
 
 <!--
+
 ### Connect an Adaptive Form to Microsoft® SharePoint List {#connect-af-sharepoint-list}
 
 <span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
@@ -268,13 +269,6 @@ To connect AEM Forms to your Microsoft&reg; Sharepoint List:
 1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
 1. Tap **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
 
-    >[!NOTE]
-    >
-    > In Microsoft® SharePoint List, the following column types are not supported:
-    > * image column
-    > * metadata column
-    > * person column
-    > * external data column
 
 #### Use the Submit using Form Data Model in an Adaptive Form {#use-submit-using-fdm}
 
@@ -287,14 +281,14 @@ You can use the created SharePoint List configuration in an Adaptive Form, to sa
 
 When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint List Storage. 
 
-    >[!NOTE]
-    >
-    > In Microsoft® SharePoint List, the following column types are not supported:
-    > * image column
-    > * metadata column
-    > * person column
-    > * external data column
-    
+>[!NOTE]
+>
+> In Microsoft® SharePoint List, the following column types are not supported:
+> * image column
+> * metadata column
+> * person column
+> * external data column
+
 -->
 
 ## OneDrive에 제출 {#submit-to-onedrive}
