@@ -6,10 +6,10 @@ contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 9d2f8794a061c44cab016ab049c8c8ac7b3b2784
+source-git-commit: 9e06c115af2a262859d39bcd5ee0016df2475591
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1825'
+ht-degree: 12%
 
 ---
 
@@ -329,13 +329,13 @@ public interface GuideCaptchaValidator {
 
 `captchaPropertyNodePath` refers to the resource path of the CAPTCHA component in the Sling repository. Use this property to include details specific to the CAPTCHA component. For example, `captchaPropertyNodePath` includes information for the reCAPTCHA cloud configuration configured on the CAPTCHA component. The cloud configuration information provides **[!UICONTROL Site Key]** and **[!UICONTROL Secret Key]** settings for implementing the reCAPTCHA service.
 
-`userResponseToken` refers to the `g_recaptcha_response` that gets generated after solving a CAPTCHA in a form.
+`userResponseToken` refers to the `g_recaptcha_response` that gets generated after solving a CAPTCHA in a form. -->
 
-### Edit reCAPTCHA service domain {#reCAPTCHA-service-domain}
+### reCAPTCHA 서비스 도메인 편집 {#reCAPTCHA-service-domain}
 
-reCAPTCHA service uses `https://www.recaptcha.net/` as the default domain. You can modify the settings to set `https://www.google.com/` or any custom domain name for loading, rendering, and validating the reCAPTCHA service.
+reCAPTCHA 서비스는 `https://www.recaptcha.net/` 을 기본 도메인으로 설정합니다. 설정할 설정을 수정할 수 있습니다 `https://www.google.com/` 또는 reCAPTCHA 서비스 로드, 렌더링 및 유효성 검사를 위한 사용자 지정 도메인 이름입니다.
 
-Set the **[!UICONTROL af.cloudservices.recaptcha.domain]** property of the **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** configuration to specify `https://www.google.com/` or any other custom domain name. The following JSON file displays a sample:
+설정 **[!UICONTROL af.cloudservices.recaptcha.domain]** 의 속성 **[!UICONTROL 적응형 양식 및 대화형 통신 웹 채널 구성]** 지정할 구성 `https://www.google.com/` 또는 기타 모든 사용자 정의 도메인 이름. 다음 JSON 파일에는 샘플이 표시됩니다.
 
 ```json
 {
@@ -343,9 +343,9 @@ Set the **[!UICONTROL af.cloudservices.recaptcha.domain]** property of the **[!U
 }
 ```
 
-To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
+구성의 값을 설정하려면 [AEM SDK를 사용하여 OSGi 구성을 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ko#generating-osgi-configurations-using-the-aem-sdk-quickstart)하고 Cloud Service 인스턴스에 [구성을 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ko#deployment-process)합니다.
 
-## See Also {#see-also}
+## 추가 참조 {#see-also}
 
 {{see-also}}
 
