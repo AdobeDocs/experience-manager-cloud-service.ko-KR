@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service 개발에 대한 지침과 AMS의 AEM On-Premise 및 AEM과 다른 중요한 방식에 대해 알아봅니다.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: c706757857a528a0475f659c6b38110db6f6572a
 workflow-type: tm+mt
-source-wordcount: '2733'
+source-wordcount: '2791'
 ht-degree: 4%
 
 ---
@@ -166,7 +166,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 클라우드 환경의 스레드 덤프는 지속적으로 수집되지만 지금은 셀프서비스 방식으로 다운로드할 수 없습니다. 한편, 문제를 디버깅하는 데 스레드 덤프가 필요한 경우 정확한 시간 창을 지정하여 AEM 지원에 문의하십시오.
 
-## CRX/DE Lite 및 개발자 콘솔 {#crxde-lite-and-developer-console}
+## AEM CRX/DE Lite 및 as a Cloud Service 개발자 콘솔 {#crxde-lite-and-developer-console}
 
 ### 로컬 개발 {#local-development}
 
@@ -176,15 +176,19 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ### AEM as a Cloud Service 개발 도구 {#aem-as-a-cloud-service-development-tools}
 
+>[!NOTE]
+>AEM as a Cloud Service 개발자 콘솔을 유사한 이름과 혼동하면 안 됩니다 [*Adobe Developer 콘솔*](https://developer.adobe.com/developer-console/).
+>
+
 고객은 작성 계층의 개발 환경에서 CRXDE lite에 액세스할 수 있지만, 스테이지나 프로덕션 환경에서는 액세스할 수 없습니다. 변경할 수 없는 저장소(`/libs`, `/apps`)은 런타임 시 쓸 수 없으므로 그렇게 하면 오류가 발생합니다.
 
-대신 개발자 콘솔에서 저장소 브라우저를 실행하여 작성자, 게시 및 미리보기 계층의 모든 환경에 대한 저장소에 읽기 전용 보기를 제공할 수 있습니다. 저장소 브라우저에 대해 자세히 알아보기 [여기](/help/implementing/developing/tools/repository-browser.md).
+대신 AEM as a Cloud Service Developer Console에서 저장소 브라우저를 실행하여 작성자, 게시 및 미리보기 계층의 모든 환경에 대한 저장소에 대한 읽기 전용 보기를 제공할 수 있습니다. 저장소 브라우저에 대해 자세히 알아보기 [여기](/help/implementing/developing/tools/repository-browser.md).
 
-AEM as a Cloud Service 개발자 환경을 디버깅하기 위한 도구 세트는 RDE, 개발, 스테이지 및 프로덕션 환경을 위한 Developer Console에서 사용할 수 있습니다. URL은 다음과 같이 Author 또는 Publish 서비스 URL을 조정하여 결정할 수 있습니다.
+AEM as a Cloud Service 개발자 환경을 디버깅하기 위한 도구 세트는 RDE, 개발, 스테이지 및 프로덕션 환경을 위한 AEM as a Cloud Service Developer Console에서 사용할 수 있습니다. URL은 다음과 같이 Author 또는 Publish 서비스 URL을 조정하여 결정할 수 있습니다.
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
-바로 가기로는 아래 설명된 환경 매개 변수를 기반으로 다음 Cloud Manager CLI 명령을 사용하여 개발자 콘솔을 시작할 수 있습니다.
+바로 가기로는 다음 Cloud Manager CLI 명령을 사용하여 아래에 설명된 환경 매개 변수를 기반으로 AEM as a Cloud Service 개발자 콘솔을 시작할 수 있습니다.
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
@@ -202,11 +206,11 @@ AEM as a Cloud Service 개발자 환경을 디버깅하기 위한 도구 세트�
 
 ![개발 콘솔 3](/help/implementing/developing/introduction/assets/devconsole3.png)
 
-디버깅에 유용하며, 개발자 콘솔에는 쿼리 설명 도구에 대한 링크가 있습니다.
+디버깅에 유용하며, AEM as a Cloud Service Developer Console에는 쿼리 설명 도구에 대한 링크가 있습니다.
 
 ![개발 콘솔 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-프로덕션 프로그램의 경우 Admin Console에서 &quot;Cloud Manager - 개발자 역할&quot;에 의해 개발자 콘솔에 대한 액세스가 정의되지만 샌드박스 프로그램의 경우 제품 프로필이 있는 모든 사용자가 Developer Console을 사용하여 AEM as a Cloud Service에 액세스할 수 있습니다. 모든 프로그램의 경우 &quot;Cloud Manager - 개발자 역할&quot;이 상태 덤프에 필요하며 작성자와 게시 서비스 모두에서 AEM 사용자 또는 AEM 관리자 제품 프로필에 사용자와 사용자가 정의되어야 두 서비스의 데이터를 볼 수 있습니다. 사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+프로덕션 프로그램의 경우 Adobe Admin Console as a Cloud Service Developer Console에 대한 액세스는 AEM의 &quot;Cloud Manager - 개발자 역할&quot;에 의해 정의되며, 샌드박스 프로그램의 경우 AEM as a Cloud Service AEM Developer Console을 as a Cloud Service에 대한 액세스 권한을 제공하는 제품 프로필이 있는 모든 사용자가 사용할 수 있습니다. 모든 프로그램의 경우 &quot;Cloud Manager - 개발자 역할&quot;이 상태 덤프에 필요하며 작성자와 게시 서비스 모두에서 AEM 사용자 또는 AEM 관리자 제품 프로필에 사용자와 사용자가 정의되어야 두 서비스의 데이터를 볼 수 있습니다. 사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 ### 성능 모니터링 {#performance-monitoring}
 
