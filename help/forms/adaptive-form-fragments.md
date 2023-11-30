@@ -7,9 +7,9 @@ topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
-source-git-commit: 237b4a8e01af74dbaac0ba1715b5fa95c931be7c
+source-git-commit: 1d0f8bfd955c9315b01e49d8b1924add996b1599
 workflow-type: tm+mt
-source-wordcount: '2148'
+source-wordcount: '2146'
 ht-degree: 1%
 
 ---
@@ -173,7 +173,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> 적응형 양식에서 없음-양식 조각을 여러 번 사용 하는 경우에는 조각 필드 간의 데이터 동기화 문제가 발생 합니다. 데이터 동기화 문제가 발생 하지 않고 양식의 여러 번 양식 데이터 모델에 연결 되지 않은 단일 [ 양식 단편 (주요 구성 요소를 기반으로 함) ](/help/forms/adaptive-form-fragments-core-components.md) 을 사용할 수 있습니다.
+> 적응형 양식에서 없음-양식 조각을 여러 번 사용 하는 경우에는 조각 필드 간의 데이터 동기화 문제가 발생 합니다. 데이터 동기화 문제가 발생 하지 않고 양식의 여러 번 양식 데이터 모델에 연결 되지 않은 주요 구성 요소 기반 양식 단편 ](/help/forms/adaptive-form-fragments-core-components.md) 을 [ 사용할 수 있습니다.
 
 ## 데이터 바인딩에 대 한 조각의 자동 매핑 {#auto-mapping-of-fragments-for-data-binding}
 
