@@ -3,10 +3,10 @@ title: 에서 에셋을 검색하고 검색하는 방법 알아보기 [!DNL Asse
 description: AEM Assets 보기에서 에셋을 검색하고 검색하는 방법을 알아봅니다. 강력한 검색 기능을 통해 적절한 자산을 빠르게 찾고 콘텐츠 속도를 높일 수 있습니다.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 224529293f87b772c150dd26ce5260a9172c8b68
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 90%
+source-wordcount: '1321'
+ht-degree: 73%
 
 ---
 
@@ -141,6 +141,67 @@ What about temporarily hiding an asset (suspending search on it) from the search
 
 When userA is searching and userB add an asset that matches search results, will the asset display in search as soon as userA refreshes the page? Assuming indexing is near real-time. May not be so for bulk uploads.
 -->
+
+## 검색 결과를 사용하여 작업 {#work-with-search-results}
+
+검색 결과에 표시되는 자산을 선택하고 다음 작업을 수행할 수 있습니다.
+
+* **세부 정보**: 자산 속성을 보고 편집합니다.
+
+* **컬렉션에 추가**: 선택한 자산을 컬렉션에 추가합니다.
+
+* **다운로드**: 자산을 다운로드합니다.
+
+* **삭제**: 자산을 삭제합니다.
+
+* **복사**: 자산을 다른 폴더 위치에 복사합니다.
+
+* **이동**: 자산을 다른 폴더 위치로 이동합니다.
+
+* **이름 바꾸기**: 자산의 이름을 바꿉니다.
+
+* **작업 할당**: 사용자에게 자산에 대한 작업을 할당합니다.
+
+* **링크 공유**: 자산에 대한 [링크 공유](share-links-for-assets-view.md)를 통해 다른 사용자가 액세스하고 다운로드할 수 있도록 합니다.
+
+* **보기**: 자산에서 수행된 [작업을 모니터링](manage-notifications-assets-view.md)합니다.
+
+* **파일 위치 표시**: 자산 폴더 위치로 이동합니다.
+
+* **바로 가기에 고정**: 나중에 필요할 때 더 빠르게 액세스할 수 있도록 [자산을 고정](my-workspace-assets-view.md)합니다. 고정된 모든 항목은 내 작업 영역의 **바로 가기** 섹션에 표시됩니다.
+
+## 첫 번째 홈 페이지 검색 구성 {#configuring-search-first-homepage}
+
+첫 번째 홈 페이지 검색은 다양한 파일과 폴더를 즉시 탐색할 수 있습니다. 정확한 키워드를 알지 못하는 경우에도 자산 유형, 메타데이터, 스마트 태그 및 콘텐츠 자체를 손쉽게 탐색할 수 있습니다. [!DNL Assets view] 에 로그인할 때 표시되는 내용을 제어하여 홈 페이지를 구성할 수 있습니다. [!DNL Assets view].
+
+첫 번째 홈 페이지 검색을 구성하려면 아래 단계를 실행합니다.
+
+1. 다음으로 이동 **[!UICONTROL 설정]** > **[!UICONTROL 일반 설정]**.
+1. 선택 **[!UICONTROL 먼저 검색]**. 검색 첫 번째 관련 구성이 더 열립니다. 다음을 설정할 수 있습니다. [정렬](#setting-alignment-search-bar) 또는 [배경 및 로고 이미지 설정](#setting-background-image-and-logo) 홈 페이지
+
+### 검색 창 정렬 설정 {#setting-alignment-search-bar}
+
+[!DNL Assets view] 검색 막대의 정렬을 변경할 수 있습니다. 검색 막대를 중앙이나 맨 위에 표시할 수 있습니다. 적절한 정렬을 선택하고 **[!UICONTROL 저장]**.
+
+![첫 번째 홈 페이지 정렬 검색](assets/search-first-alignment.png)
+
+### 홈 페이지의 배경 및 로고 이미지 설정 중 {#setting-background-image-and-logo}
+
+첫 번째 검색 홈페이지에 브랜드 로고 및 배경 이미지를 추가할 수 있습니다. 다음 단계를 실행합니다.
+
+1. 다음으로 이동 **[!UICONTROL 배경 및 로고 이미지]** 아래 섹션 **[!UICONTROL 홈페이지]**.
+1. 클릭 **[!UICONTROL 바꾸기]** 기존 에셋 저장소에서 이미지를 찾아봅니다.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. [미리 보기](#preview-configured-homepage) 수정 사항을 거치는 변경 사항.
+
+### 구성된 홈 페이지 미리 보기 {#preview-configured-homepage}
+
+미리 보기하여 첫 번째 홈 페이지 검색의 레이아웃과 서식을 확인할 수 있습니다. 사용 **[!UICONTROL 미리 보기]**, 요구 사항에 따라 레이아웃을 수정하거나 수정할 수 있습니다. 구성된 홈 페이지를 미리 보려면 아래 단계를 수행하십시오.
+
+1. 클릭 **[!UICONTROL 일반 설정]** 및 선택 **[!UICONTROL 먼저 검색]**.
+1. 다음으로 이동 **[!UICONTROL 첫 번째 홈 페이지 검색 사용자 지정]** 및 클릭 **[!UICONTROL 미리 보기]**. 전환 **[!UICONTROL 어두운 테마]** 단추를 클릭하여 어두운 테마 또는 밝은 테마로 홈 페이지를 미리 봅니다.
+1. 클릭 **[!UICONTROL 닫기]** 미리보기 화면을 닫습니다.
+
+   ![첫 번째 홈 페이지 미리 보기 검색](assets/search-first-preview.gif)
 
 ## 다음 단계 {#next-steps}
 

@@ -3,10 +3,10 @@ title: 이미지 편집
 description: ' [!DNL Adobe Photoshop Express] 기반 옵션을 사용하여 이미지를 편집하고 업데이트된 이미지를 버전으로 저장합니다.'
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: e6ff21ee705a1164fdf163ce4f49064d83f149d8
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 98%
+source-wordcount: '1159'
+ht-degree: 76%
 
 ---
 
@@ -79,6 +79,36 @@ Adobe Express를 사용하여 JPEG 이미지를 PNG 형식으로 빠르게 변�
 * 지원되는 이미지 해상도: 차원당 최소 - 50픽셀, 최대 - 6000픽셀
 
 * 지원되는 최대 파일 크기: 17MB
+
+## Adobe Express이 포함된 편집기를 사용하여 이미지 편집 {#edit-using-embedded-editor}
+
+[!DNL Assets view] 는 에셋 저장소에서 직접 이미지를 포괄적인 편집을 제공합니다. 임베드된 편집기는 를 사용하여 이미지를 쉽고 직관적으로 편집할 수 있도록 해줍니다. [!DNL Adobe Express]. 템플릿을 사용하거나 기존 에셋을 수정하여 에셋의 재사용을 가속화합니다. 사전 정의된 요소를 사용하여 에셋을 멋진 모양으로 만들거나 몇 번의 클릭만으로 이미지를 편집하는 빠른 작업을 수행할 수 있습니다.
+
+다음을 사용하여 이미지 편집하기 [!DNL Adobe Express] 포함된 편집기에서 아래 단계를 수행합니다.
+
+1. 에서 이미지 선택 [!DNL Experience Manager] 에셋 리포지토리.
+1. 클릭 **[!UICONTROL Adobe Express에서 열기]**. [!DNL Adobe Express] 화면이 나타납니다.
+
+   ![Adobe Express이 포함된 편집기](assets/embedded-editor.png)
+
+   의 기능을 활용할 수 있습니다. [!DNL Adobe Express] 모든 이미지 편집 관련 작업을 수행하려면 다음을 수행합니다. [이미지 크기 조정](https://helpx.adobe.com/in/express/using/resize-image.html), [배경색 제거 또는 변경](https://helpx.adobe.com/in/express/using/remove-background.html), [이미지 자르기](https://helpx.adobe.com/in/express/using/crop-image.html)및 기타.
+
+1. 이미지 편집이 완료되면 에셋을 새 에셋으로 다운로드하거나 에셋을 새 버전으로 저장할 수 있습니다.
+
+## Adobe Express을 사용하여 새 에셋 만들기 {#create-new-embedded-editor}
+
+[!DNL Assets view] 은 을 사용하여 처음부터 새 템플릿을 만드는 기능을 제공합니다. [!DNL Adobe Express] 포함된 편집기. 을 사용하여 새 에셋을 만들려면 [!DNL Adobe Expresss]을(를) 클릭하고 아래 단계를 수행하십시오.
+
+1. 다음으로 이동 **[!UICONTROL 내 작업 영역]** 및 클릭 **[!UICONTROL 만들기]**. [!DNL Adobe Express] 빈 캔버스 [!DNL Assets view] 사용자 인터페이스.
+1. 다음을 사용하여 콘텐츠 만들기 [템플릿](https://helpx.adobe.com/in/express/using/work-with-templates.html). 그렇지 않으면 다음으로 이동합니다. **[!UICONTROL 내 항목]** 기존 컨텐츠를 수정합니다.
+1. 편집을 완료했으면 **[!UICONTROL 새 자산으로 저장]**.
+1. 생성된 에셋의 대상 경로를 지정합니다.
+
+>[!NOTE]
+>
+>* 수정할 수만 있습니다. `JPEG` 및 `PNG` 형식.
+>* 에셋 크기는 14MB 미만이어야 합니다.
+>* 이미지를 다음과 같이 저장할 수 있습니다. `PDF`, `JPEG`, 또는 `PNG` 형식.
 
 ## [!DNL Adobe Photoshop Express]를 사용하여 이미지 편집 {#edit-using-photoshop-express}
 
