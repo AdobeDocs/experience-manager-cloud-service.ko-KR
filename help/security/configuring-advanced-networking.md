@@ -5,7 +5,7 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '3594'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ VPN 및 전용 이그레스 IP 주소가 필요하지 않은 경우, 전용 이�
 프로그램에서 설정한 유연한 포트 이그레스 구성이 준비되면 환경별로 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 엔드포인트를 호출하여 환경 수준에서 네트워킹을 활성화하고 필요한 경우 포트 전달 규칙을 선언해야 합니다. 유연성을 제공하기 위해 환경별로 매개변수를 구성할 수 있습니다.
 
 포트 전달 규칙은 http 또는 https 프로토콜을 사용하는 경우에 한해서만 80/443 이외의 모든 대상 포트에 대해 대상 호스트(포트 포함, 이름 또는 IP)
-집합을 지정하여 선언해야 합니다. http/https를 통해 포트 80/443을 사용하는 클라이언트 연결은 연결에 고급 네트워킹 속성을 적용하려면 연결 시 여전히 프록시 설정을 사용해야 합니다. 각 대상 호스트에 대해 고객은 원하는 대상 포트를 30000에서 30999 사이의 포트에 매핑해야 합니다.
+집합을 지정하여 선언해야 합니다. http/https를 통해 포트 80/443을 사용하는 클라이언트 연결은 연결에 고급 네트워킹 속성을 적용하려면 연결 시 프록시 설정을 사용해야 합니다. 각 대상 호스트에 대해 고객은 원하는 대상 포트를 30000에서 30999 사이의 포트에 매핑해야 합니다.
 
 API는 몇 초 안에 응답하여 업데이트 상태를 표시해야 하고, 약 10분 후 엔드포인트의 `GET` 메서드는 고급 네트워킹이 활성화되었음을 표시해야 합니다.
 
@@ -196,7 +196,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 전용 이그레스 IP 주소 구성은 [유연한 포트 이그레스](#configuring-flexible-port-egress-provision)와 동일합니다.
 
-주요 차이점은 트래픽은 항상 전용 고유 IP에서 이그레스된다는 것입니다. 해당 IP를 찾으려면 DNS Resolver를 사용하여 `p{PROGRAM_ID}.external.adobeaemcloud.com`과 연계된 IP 주소를 식별하십시오. IP 주소는 변경되지 않지만, 향후에 변경해야 하는 경우 고급 알림이 제공됩니다.
+주요 차이점은 트래픽은 항상 전용 고유 IP에서 이그레스된다는 것입니다. 해당 IP를 찾으려면 DNS Resolver를 사용하여 `p{PROGRAM_ID}.external.adobeaemcloud.com`과 연계된 IP 주소를 식별하십시오. 해당 IP 주소는 변경되지 않지만 향후에 변경해야 하는 경우 고급 알림이 제공됩니다.
 
 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 엔드포인트의 유연한 포트 이그레스에서는 라우팅 규칙을 지원하며 전용 이그레스 IP 주소에서는 `nonProxyHosts` 매개변수를 지원합니다. 이를 통해 전용 IP가 아닌 공유 IP 주소 범위를 통해 라우팅해야 하는 호스트 집합을 선언할 수 있습니다. 이렇게 하면 공유 IP를 통해 이그레스되는 트래픽이 더욱 최적화될 수 있습니다. `nonProxyHost` URL은 `example.com` 또는 `*.example.com`의 패턴을 따르며, 여기서 와일드카드는 도메인의 시작 위치에서만 지원됩니다.
 
@@ -335,7 +335,7 @@ Adobe 조직의 모든 고객 프로그램 및 각 프로그램의 모든 환경
 ## 레거시 전용 이그레스 주소 고객 {#legacy-dedicated-egress-address-customers}
 
 2021년 9월 30일 이전에 전용 이그레스 IP로 프로비저닝된 경우, 전용 이그레스 IP 기능은 HTTP 및 HTTPS 포트만 지원합니다.
-여기에는 암호화 시 HTTP/1.1 및 HTTP/2가 포함됩니다. 또한 하나의 전용 이그레스 엔드포인트는 각각 포트 80/443에서 HTTP/HTTPS를 통해서만 타겟과 통신할 수 있습니다.
+여기에는 암호화 시 HTTP/1.1 및 HTTP/2가 포함됩니다. 또한 하나의 전용 이그레스 엔드포인트는 각각 포트 80/443에서 HTTP/HTTPS를 통해서만 대상과 통신할 수 있습니다.
 
 ## Virtual Private Network(VPN) {#vpn}
 
@@ -370,7 +370,7 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시하고, 약 10분 
 
 `PUT /api/program/<program_id>/network/<network_id>` 엔드포인트를 호출하여 프로그램 수준 VPN 구성을 업데이트할 수 있습니다.
 
-초기 VPN 프로비저닝 후에는 주소 공간을 변경할 수 없습니다. 필요한 경우 고객 지원 팀에 문의하십시오. 또한 `kind` 매개변수(`flexiblePortEgress`, `dedicatedEgressIP` 또는 `VPN`)는 수정할 수 없습니다. 도움이 필요하면 고객 지원 센터에 문의하여 기존 내용과 변경 사유에 대해 설명하고 도움을 얻으십시오.
+최초 VPN 프로비저닝 후에는 주소 공간을 변경할 수 없습니다. 필요한 경우 고객 지원 팀에 문의하십시오. 또한 `kind` 매개변수(`flexiblePortEgress`, `dedicatedEgressIP` 또는 `VPN`)는 수정할 수 없습니다. 도움이 필요하면 고객 지원 센터에 문의하여 기존 내용과 변경 사유에 대해 설명하고 도움을 얻으십시오.
 
 `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` 엔드포인트를 다시 호출하여 환경당 라우팅 규칙을 하위 집합이 아닌 전체 구성 매개변수 집합을 포함하도록 업데이트할 수 있습니다. 일반적으로 환경 업데이트가 적용되는 데 5~10분 정도 소요됩니다.
 
@@ -542,7 +542,7 @@ Header always set Cache-Control private
 
 ## 추가 게시 지역에 대한 고급 네트워킹 구성 {#advanced-networking-configuration-for-additional-publish-regions}
 
-추가 지역이 고급 네트워킹이 이미 구성된 환경에 추가되면 고급 네트워킹 규칙과 일치하는 추가 게시 지역의 트래픽이 기본 지역을 통해 기본적으로 라우팅합니다. 단, 기본 지역을 사용할 수 없을 경우 고급 네트워킹이 추가 지역에서 활성화되지 않으면 고급 네트워킹 트래픽이 삭제됩니다. 지역 중 하나가 중단되는 경우 지연을 최적화하고 가용성을 높이려면 추가 게시 지역에 대해 고급 네트워킹을 활성화해야 합니다. 다음 섹션에서 서로 다른 두 가지 시나리오를 설명합니다.
+추가 지역이 고급 네트워킹이 이미 구성된 환경에 추가되면 고급 네트워킹 규칙과 일치하는 추가 게시 지역의 트래픽이 기본 지역을 통해 기본적으로 라우팅합니다. 단, 기본 지역을 사용할 수 없을 경우 고급 네트워킹이 추가 지역에서 활성화되지 않으면 고급 네트워킹 트래픽이 삭제됩니다. 지역 중 하나가 작동이 중단된 경우 지연 시간을 최적화하고 가용성을 높이려면 추가 게시 지역의 고급 네트워킹을 활성화해야 합니다. 다음 섹션에서 서로 다른 두 가지 시나리오를 설명합니다.
 
 >[!NOTE]
 >
@@ -556,7 +556,7 @@ Header always set Cache-Control private
 
 1. 전용 AEM IP 주소가 허용 목록에 추가되도록 인프라를 잠그면 해당 인프라에서 거부 규칙을 일시적으로 비활성화하는 것이 좋습니다. 이 작업이 완료되지 않으면 새 지역의 IP 주소의 요청이 짧은 기간 동안 자체 인프라에서 거부됩니다. 모든 AEM 지역이 동일한 FQDN(Fully Qualified Domain Name)에서 고급 네트워킹 트래픽을 이그레스하므로(예: `p1234.external.adobeaemcloud.com`) FQDN을 통해 인프라를 잠그는 경우에는 해당되지 않습니다.
 1. 고급 네트워킹 설명서에 따라 Cloud Manager Create Network Infrastructure API에 대한 POST 호출을 통해 이차 지역의 프로그램에서 설정한 네트워킹 인프라를 만듭니다. 기본 지역과 비교하여 페이로드 JSON 구성의 유일한 차이점은 지역 속성입니다.
-1. AEM 트래픽을 허용하기 위해 IP로 인프라를 잠가야 하는 경우 일치하는 IP를 추가합니다 `p1234.external.adobeaemcloud.com`. 지역별로 하나의 IPS가 있어야 합니다.
+1. AEM 트래픽 허용을 위해 IP를 통해 인프라를 잠가야 하는 경우 `p1234.external.adobeaemcloud.com`과 일치하는 IPS를 추가합니다. 지역별로 하나의 IPS가 있어야 합니다.
 
 #### 모든 지역에서 아직 구성되지 않은 고급 네트워킹 {#not-yet-configured}
 

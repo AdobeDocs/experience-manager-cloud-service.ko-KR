@@ -5,7 +5,7 @@ exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2024'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -31,11 +31,11 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service는 지속적 개선
 
 ### [!DNL Forms]의 새로운 기능 {#what-is-new-forms-oct-2021}
 
-- **적응형 Forms에 대한 Analytics**: 이제 적응형 Forms용 Adobe Analytics을 통해, 로그인된 및 로그인되지 않은(익명의) 사용자 행동을 포착하고 추적하여 사용자 인사이트를 수집할 수 있습니다. 데이터를 기반으로 정보에 입각한 결정을 내려 사용자 경험을 개선할 수 있습니다.
+- **적응형 양식용 Analytics**: 이제 적응형 양식용 Adobe Analytics를 통해, 로그인된 및 로그인되지 않은(익명의) 최종 사용자 행동을 포착하고 추적하여 사용자 인사이트를 수집할 수 있습니다. 이로써 데이터를 기반으로 정보에 입각한 결정을 내려 사용자 경험을 개선할 수 있습니다.
 
 ### [!DNL Forms] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-forms-oct-2021}
 
-- **안전한 처리를 위한 AEM Workflow 데이터 외부화**: 민감한 개인 데이터(SPD)가 포함된, 처리 중인 AEM 워크플로 데이터(AEM Workflow 변수 데이터)를 안전히 처리될 수 있도록 고객 관리 저장소에 저장할 수 있습니다. 데이터 요소와 워크플로 변수는 AEM 저장소에 저장되지 않으며 워크플로 처리 중에 고객 관리 저장소에서 필요에 따라 가져옵니다.
+- **안전한 처리를 위한 AEM Workflow 데이터 외부화**: 민감한 개인 데이터(SPD)가 포함된, 처리 중인 AEM 워크플로 데이터(AEM Workflow 변수 데이터)가 안전하게 처리될 수 있도록 고객 관리 저장소에 저장할 수 있습니다. 데이터 요소와 워크플로 변수는 AEM 저장소에 저장되지 않으며 워크플로 처리 중에 고객 관리 저장소에서 필요에 따라 가져옵니다.
 
 ### [!DNL Forms]의 베타 기능 {#sep-what-is-new-forms-oct-prerelease}
 
@@ -52,7 +52,7 @@ Beta 프로그램에 등록하려면 [!DNL formscsbeta@adobe.com]에 문의하�
 
 - **적응형 양식에서 Adobe Sign 역할 사용**: 비즈니스 및 엔터프라이즈 서비스 수준을 위한 Adobe Sign은 계약 수신자의 역할을 서명자 이상으로 확장하는 옵션을 제공하여 워크플로 요구 사항에 보다 잘 부합하도록 합니다. 이제 [계약의 각 수신자가 적응형 양식에서 자신의 역할을 구성할 수 있으며,](working-with-adobe-sign.md#addsignerstoanadaptiveform) 서명자는 기본 역할입니다.
 
-- **적응형 Forms에 대한 Analytics**: 이제 을 캡처하고 [Adobe Analytics을 통해 사용자 동작 추적](integrate-aem-forms-with-adobe-analytics.md) 를 사용하여 적응형 Forms에서 사용자 인사이트를 수집합니다. 데이터를 기반으로 정보에 입각한 결정을 내려 사용자 경험을 개선할 수 있습니다.
+- **적응형 양식용 Analytics**: 이제 적응형 양식용 [Adobe Analytics를 통해 사용자 행동을 포착하고 추적하여](integrate-aem-forms-with-adobe-analytics.md) 사용자 인사이트를 수집할 수 있습니다. 이로써 데이터를 기반으로 정보에 입각한 결정을 내려 사용자 경험을 개선할 수 있습니다.
 
 - **AEM Forms를 Microsoft Dynamics 및 Salesforce에 손쉽게 연결**: 이 서비스는 Microsoft Dynamics 및 Salesforce를 위한 즉시 사용 가능한 데이터 소스 구성 및 데이터 모델을 제공하여 [개발자가 Microsoft Dynamics 및 Salesforce를 적응형 양식의 데이터 소스로 더 빠르고 간편하게 구성할 수 있게 해 줍니다](configure-msdynamics-salesforce.md).
 
@@ -124,7 +124,7 @@ Beta 프로그램에 등록하려면 [!DNL formscsbeta@adobe.com]에 문의하�
 
 - **적응형 양식에서 Adobe Sign 역할 사용**: 비즈니스 및 엔터프라이즈 서비스 수준을 위한 Adobe Sign은 계약 수신자의 역할을 서명자 이상으로 확장하는 옵션을 제공하여 워크플로 요구 사항에 보다 잘 부합하도록 합니다. 이제 [계약의 각 수신자가 적응형 양식에서 자신의 역할을 구성할 수 있으며,](working-with-adobe-sign.md#addsignerstoanadaptiveform) 서명자는 기본 역할입니다.
 
-- **적응형 Forms에 대한 Analytics**: 이제 적응형 Forms용 Adobe Analytics을 통해 사용자 행동을 포착하고 추적하여 사용자 인사이트를 수집할 수 있습니다. 데이터를 기반으로 정보에 입각한 결정을 내려 사용자 경험을 개선할 수 있습니다.
+- **적응형 양식용 Analytics**: 이제 적응형 양식용 Adobe Analytics를 통해 사용자 행동을 포착하고 추적하여 사용자 인사이트를 수집할 수 있습니다. 이로써 데이터를 기반으로 정보에 입각한 결정을 내려 사용자 경험을 개선할 수 있습니다.
 
 - **AEM Forms를 Microsoft Dynamics 및 Salesforce에 손쉽게 연결**: 이 서비스는 Microsoft Dynamics 및 Salesforce를 위한 즉시 사용 가능한 데이터 소스 구성 및 데이터 모델을 제공하여 [개발자가 Microsoft Dynamics 및 Salesforce를 적응형 양식의 데이터 소스로 더 빠르고 간편하게 구성할 수 있게 해 줍니다](configure-msdynamics-salesforce.md).
 
@@ -199,7 +199,7 @@ Beta 프로그램에 등록하려면 formscsbeta@adobe.com에 문의하십시오
 
 - AEM Forms Workflow의 작업 할당 단계에서 액션 버튼의 기본값 아이콘을 코랄 아이콘으로 대체할 때 워크플로가 작동을 멈추고 예외 사항을 기록합니다. 기본값 아이콘을 사용하면 워크플로가 원래대로 작동합니다.
 - 레이아웃 레이어에서 열의 수를 바꾸고 레이어 편집기를 열어 패널에서 일부 구성 요소를 드래그하면 적응형 양식 편집기의 콘텐츠 영역에 사각형의 파란색 상자가 나타나기 시작하고 편집기가 응답하지 않습니다.
-- 적응형 또는 외부 애셋의 URL 제공과 관련된 규칙 편집기 옵션의 오류 메시지가 너무 길고 사용자 친화적이지 않습니다.
+- 적응형 또는 외부 자산의 URL 제공과 관련된 규칙 편집기 옵션의 오류 메시지가 너무 길고 사용자 친화적이지 않습니다.
 
 ## 2021.4.0 {#april-2021-04-0}
 
@@ -209,7 +209,7 @@ Beta 프로그램에 등록하려면 formscsbeta@adobe.com에 문의하십시오
 
   고급 머신 러닝 알고리즘으로 더욱 강력해진 Adobe Sign의 정부 ID 프로세스는 고품질의 수령인 신원 인증을 확보할 수 있는 능력을 전 세계 기업에 제공합니다. 이제 Adobe Sign이 활성화된 적응형 양식에서 정부 ID 신원 인증 방법을 사용할 수 있습니다.
 
-  정부 ID는 수신자에게 다음을 지시하는 프리미엄 신원 인증 방법입니다 [정부에서 발급한 신분증(운전면허증, 주민등록증, 여권) 이미지 업로드](https://helpx.adobe.com/kr/sign/using/adobesign-authentication-government-id.html)를 누르고 해당 문서가 진짜인지 평가합니다.
+  정부 ID는 [정부에서 발급한 신분증(운전면허증, 주민등록증, 여권)](https://helpx.adobe.com/kr/sign/using/adobesign-authentication-government-id.html) 이미지를 수령인이 업로드할 수 있도록 지시하는 방법이며, 그런 다음 해당 문서가 진짜인지 평가합니다.
 
 - **비동기 적응형 양식 제출을 위한 양식 내 서명 경험 사용 지원**
 

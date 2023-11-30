@@ -4,8 +4,8 @@ description: 웹 애플리케이션 방화벽(WAF)이 포함된 트래픽 필터
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: 8407f3142de78ee792bdece327734dd02a4f234b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3388'
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Cloud Manager 구성 파이프라인을 통해 트래픽 필터 규칙을 프로덕션(비샌드박스) 프로그램의 dev, stage 및 prod 환경 유형에 배포할 수 있습니다. RDE에 대한 지원은 향후 제공될 예정입니다.
 
-[튜토리얼 팔로우](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) 이 기능에 대한 구체적인 전문 지식을 신속하게 구축하십시오.
+[튜토리얼을 참고하면](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) 이 기능에 대한 전문 지식을 빠르게 습득할 수 있습니다.
 
 ## 이 문서를 구성하는 방식 {#how-organized}
 
@@ -41,7 +41,7 @@ Cloud Manager 구성 파이프라인을 통해 트래픽 필터 규칙을 프로
 * **권장 스타터 규칙:** 규칙 집합을 시작하는 데 필요한 규칙입니다.
 * **튜토리얼:** 대시보드 도구로 올바른 규칙을 선언하는 방법을 비롯해 기능에 대한 실질적인 지식입니다.
 
-**aemcs-waf-adopter@adobe.com**&#x200B;으로 메일을 보내어 트래픽 필터 규칙에 대한 피드백을 제공하거나 질문을 보내주시기 바랍니다.
+**aemcs-waf-adopter@adobe.com**&#x200B;으로 메일을 보내어 트래픽 필터 규칙에 대한 피드백을 제공하거나 질문을 보내 주시기 바랍니다.
 
 ## 트래픽 보호 개요 {#traffic-protection-overview}
 
@@ -53,7 +53,7 @@ Edge에서 Adobe Managed CDN은 대규모 및 반사/증폭 공격(레이어 3 �
 
 고객은 콘텐츠 게재 흐름의 다양한 레이어에서 규칙을 구성하여 애플리케이션 레이어 공격(레이어 7)을 완화하기 위한 사전 조치를 취할 수 있습니다.
 
-예를 들어, Apache 계층에서 고객은 [Dispatcher 모듈](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko-KR#configuring-access-to-content-filter)과 [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=ko-KR) 중 하나를 구성하여 특정 콘텐츠에 대한 액세스를 제한할 수 있습니다.
+예를 들어 Apache 계층에서 고객은 [Dispatcher 모듈](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko-KR#configuring-access-to-content-filter)과 [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=ko-KR) 중 하나를 구성하여 특정 콘텐츠에 대한 액세스를 제한할 수 있습니다.
 
 이 문서의 설명에 따라 Cloud Manager의 구성 파이프라인을 사용하여 트래픽 필터 규칙을 Adobe Managed CDN에 배포할 수 있습니다. IP 주소, 경로 및 헤더 등 속성 기반의 트래픽 필터 규칙 또는 속도 제한 설정 기반의 규칙 외에도 고객은 WAF 규칙이라는 트래픽 필터 규칙의 강력한 하위 범주에 라이선스를 부여할 수도 있습니다.
 
@@ -65,8 +65,8 @@ Edge에서 Adobe Managed CDN은 대규모 및 반사/증폭 공격(레이어 3 �
 1. WAF 트래픽 필터 규칙의 하위 범주에 라이선스를 부여한 고객은 Cloud Manager에서 해당 규칙을 활성화해야 합니다.
 1. 라이선스가 부여된 경우, WAF 규칙 등 트래픽 필터 규칙을 사용하는 방법을 구체적으로 이해하려면 튜토리얼을 읽고 테스트해 보십시오. 튜토리얼은 개발 환경에 규칙을 배포하고, 악성 트래픽을 시뮬레이션하고, [CDN 로그](#cdn-logs)를 다운로드하고, [대시보드 도구](#dashboard-tooling)로 로그를 분석하는 과정에 대해 소개합니다.
 1. 권장 스타터 규칙을 `cdn.yaml`에 복사하고 로그 모드에서 구성을 프로덕션 환경에 배포하십시오.
-1. 일부 트래픽을 수집한 후, 일치 항목이 있는지 확인하려면 [대시보드 도구](#dashboard-tooling)를 사용하여 결과를 분석하십시오. 긍정 오류를 파악하고 필요한 사항을 조정하여 최종적으로 차단 모드에서 스타터 규칙을 활성화할 수 있습니다.
-1. CDN 로그 분석 기반의 사용자 지정 규칙을 추가하여 먼저 개발 환경에서 시뮬레이션된 트래픽으로 테스트한 후 로그 모드에서 스테이지 및 프로덕션 환경에 배포한 다음 차단 모드에서 배포하십시오.
+1. 일부 트래픽을 수집한 후 일치 항목이 있는지 확인하려면 [대시보드 도구](#dashboard-tooling)를 사용하여 결과를 분석하십시오. 긍정 오류를 파악하고 필요한 사항을 조정하여 최종적으로 차단 모드에서 스타터 규칙을 활성화할 수 있습니다.
+1. CDN 로그 분석 기반의 사용자 정의 규칙을 추가하여 먼저 개발 환경에서 시뮬레이션된 트래픽으로 테스트한 후 로그 모드에서 스테이지 및 프로덕션 환경에 배포한 다음 차단 모드에서 배포하십시오.
 1. 트래픽을 지속적으로 모니터링하면서 위협 환경이 변함에 따라 규칙을 변경하십시오.
 
 ## 설정 {#setup}
@@ -112,14 +112,14 @@ Edge에서 Adobe Managed CDN은 대규모 및 반사/증폭 공격(레이어 3 �
 
 1. RDE 이외의 환경 유형의 경우 Cloud Manager에서 타겟팅 배포 구성 파이프라인을 만드십시오.
 
-   * [프로덕션 파이프라인 구성 을 참조하십시오](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
-   * [비프로덕션 파이프라인 구성 을 참조하십시오](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+   * [프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)을 참조하십시오.
+   * [비프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)을 참조하십시오.
 
 RDE의 경우 명령이 사용되지만 RDE는 현재 지원되지 않습니다.
 
 **메모**
 
-* 다음을 사용할 수 있습니다. `yq` 구성 파일의 YAML 형식을 로컬로 검증하려면 다음을 수행합니다. `yq cdn.yaml`).
+* `yq`을 사용하여 구성 파일(예: `yq cdn.yaml`)의 YAML 서식을 로컬에서 확인할 수 있습니다.
 
 ## 트래픽 필터 규칙 구문 {#rules-syntax}
 
@@ -155,7 +155,7 @@ data:
 |---|---|---|---|---|---|
 | 이름 | X | X | `string` | - | 규칙 이름(64자 길이, 영숫자 및 - 만 포함할 수 있음) |
 | when | X | X | `Condition` | - | 기본 구조는 다음과 같습니다.<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>[getter, 조건자 및 여러 조건을 결합하는 방법을 설명하는 아래의 조건 구조 구문을 참조하십시오.](#condition-structure) |
-| action | X | X | `Action` | 로그 | log, allow, block, 또는 action 오브젝트. 기본값은 log임 |
+| action | X | X | `Action` | 로그 | log, allow, block 또는 action 오브젝트. 기본값은 log임 |
 | rateLimit | X |   | `RateLimit` | 정의되지 않음 | 속도 제한 구성입니다. 속도 제한은 정의되지 않은 경우 비활성화됩니다.<br><br>예제와 함께 rateLimit 구문을 설명하는 별도의 섹션이 아래에 추가로 있습니다. |
 
 ### 조건 구조 {#condition-structure}
@@ -191,7 +191,7 @@ data:
 
 | **속성** | **유형** | **설명** |
 |---|---|---|
-| reqProperty | `string` | 요청 속성입니다.<br><br>다음 중 하나:<br><ul><li>`path`: 쿼리 매개 변수 없이 URL의 전체 경로를 반환합니다.</li><li>`queryString`: URL의 쿼리 부분을 반환합니다.</li><li>`method`: 요청에 사용된 HTTP 메서드를 반환합니다.</li><li>`tier`: `author`, `preview` 또는 `publish` 중 하나를 반환합니다.</li><li>`domain`: (`Host` 헤더에 정의된) 도메인 속성을 소문자로 반환합니다.</li><li>`clientIp`: 클라이언트 IP를 반환합니다.</li><li>`clientCountry`: 두 자리 코드를 반환합니다(클라이언트가 위치한 국가를 식별하는 [https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol)).</li></ul> |
+| reqProperty | `string` | 요청 속성입니다.<br><br>다음 중 하나:<br><ul><li>`path`: 쿼리 매개변수 없이 URL의 전체 경로를 반환합니다.</li><li>`queryString`: URL의 쿼리 부분을 반환합니다.</li><li>`method`: 요청에 사용된 HTTP 메서드를 반환합니다.</li><li>`tier`: `author`, `preview` 또는 `publish` 중 하나를 반환합니다.</li><li>`domain`: (`Host` 헤더에 정의된) 도메인 속성을 소문자로 반환합니다.</li><li>`clientIp`: 클라이언트 IP를 반환합니다.</li><li>`clientCountry`: 두 자리 코드를 반환합니다(클라이언트가 위치한 국가를 식별하는 [https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol)).</li></ul> |
 | reqHeader | `string` | 지정된 이름의 요청 헤더를 반환합니다. |
 | queryParam | `string` | 지정된 이름의 쿼리 매개변수를 반환합니다. |
 | reqCookie | `string` | 지정된 이름의 쿠키를 반환합니다. |
@@ -226,7 +226,7 @@ when:
 
 ### 액션 구조 {#action-structure}
 
-An `action` 작업(allow, block 또는 log)을 지정하는 문자열이거나, 작업 유형(allow, block 또는 log)과 wafFlags 및/또는 status와 같은 옵션으로 구성된 개체일 수 있습니다.
+`action`은 작업(허용, 차단 또는 로그)을 지정하는 문자열이거나 작업 유형(허용, 차단 또는 로그)과 wafFlags 및/또는 상태와 같은 옵션으로 구성된 오브젝트일 수 있습니다.
 
 **액션 유형**
 
@@ -277,7 +277,7 @@ An `action` 작업(allow, block 또는 log)을 지정하는 문자열이거나, 
 
 * Cloud Manager에 정의된 IP 허용 목록은 트래픽 필터 규칙보다 우선합니다.
 
-* WAF 규칙 일치는 CDN 누락 및 전달에 대한 CDN 로그에만 표시되고 히트는 표시되지 않습니다.
+* WAF 규칙 일치는 히트가 아닌 CDN 실패 및 통과에 대한 CDN 로그에만 나타납니다.
 
 ## 규칙 예 {#examples}
 
@@ -408,14 +408,14 @@ data:
 
 속도 제한 규칙은 WAF 플래그를 참조할 수 없습니다. 해당 플래그는 모든 Sites 및 Forms 고객이 사용할 수 있습니다.
 
-속도 제한은 CDN POP당 계산됩니다. 예를 들어, 몬트리올, 마이애미, 더블린의 POP에서 초당 각 80, 90, 120 요청에 대해 트래픽 속도를 경험하고 속도 제한 규칙이 100으로 제한 설정되어 있다고 가정하겠습니다. 이 경우 더블린으로 보내는 트래픽만 속도가 제한됩니다.
+속도 제한은 CDN POP당 계산됩니다. 예를 들어 몬트리올, 마이애미, 더블린의 POP에서 초당 각 80, 90, 120 요청에 대해 트래픽 속도를 경험하고 속도 제한 규칙이 100으로 제한 설정되어 있다고 가정하겠습니다. 이 경우 더블린으로 보내는 트래픽만 속도가 제한됩니다.
 
 ### rateLimit 구조 {#ratelimit-structure}
 
 | **속성** | **유형** | **기본값** | **의미** |
 |---|---|---|---|
 | limit | 10에서 10000 사이의 정수 | required | 규칙이 트리거되는 초당 요청의 요청 속도(CDN POP당)입니다. |
-| window | 정수 열거형: 1, 10 또는 60 | 10 | 요청 속도를 계산하는 샘플링 기간(초). 카운터의 정확도는 창의 크기에 따라 달라집니다(창이 클수록 정확도가 높아짐). 예를 들어, 1초 시간 제한 창에서는 50% 정확도를 기대하고 60초 시간 제한 창에서는 90% 정확도를 기대할 수 있습니다. |
+| window | 정수 열거형: 1, 10 또는 60 | 10 | 요청 속도를 계산하는 샘플링 기간(초). 카운터의 정확도는 창의 크기에 따라 달라집니다(창이 클수록 정확도가 높아짐). 예를 들어 1초 시간 제한 창에서는 50% 정확도를 기대하고 60초 시간 제한 창에서는 90% 정확도를 기대할 수 있습니다. |
 | penalty | 60에서 3600 사이의 정수 | 300(5분) | 일치하는 요청이 차단되는 기간(초 단위로 반올림). |
 | groupBy | 배열[getter] | 없음 | 처리율 제한 장치 카운터는 요청 속성 세트(예: clientIp)로 집계됩니다. |
 
@@ -488,10 +488,10 @@ CDN 로그는 최대 5분 정도 지연될 수 있습니다.
 
 * 고객이 선언한 일치하는 모든 규칙의 이름이 `match` 속성에 나열됩니다.
 * `action` 속성은 규칙이 차단, 허용 또는 로깅에 영향을 주었는지 여부를 결정합니다.
-* WAF에 라이센스가 부여되고 활성화된 경우 `waf` 속성은 WAF 플래그가 어떤 규칙에 나열되었는지 여부에 관계없이 감지된 모든 WAF 플래그(예: SQLI)를 나열합니다. 이는 선언할 수 있는 새로운 규칙에 대한 인사이트를 제공하기 위함입니다.
+* WAF에 라이선스가 부여되어 WAF가 활성화되면 `waf` 속성은 규칙에서의 WAF 플래그 나열 여부에 관계없이 감지된 모든 WAF 플래그(예: SQLI)을 나열합니다. 이는 선언할 수 있는 새로운 규칙에 대한 인사이트를 제공하기 위함입니다.
 * 일치하는 고객이 선언한 규칙과 WAF 규칙이 없는 경우 `rules` 속성이 비어 있습니다.
 
-앞에서 언급했듯이 WAF 규칙 일치는 CDN 누락 및 전달에 대한 CDN 로그에만 표시되고 히트는 표시되지 않습니다.
+앞서 설명한 것처럼 WAF 규칙 일치는 히트가 아닌 CDN 실패 및 통과에 대한 CDN 로그에만 나타납니다.
 
 아래 예에서는 샘플 `cdn.yaml`과 로그 항목 두 개를 보여 줍니다.
 
@@ -586,7 +586,7 @@ Adobe는 Cloud Manager를 통해 다운로드한 CDN 로그를 수집하기 위�
 
 ## 권장 스타터 규칙 {#recommended-starter-rules}
 
-아래 권장 규칙을 시작하려는 `cdn.yaml`에 복사할 수 있습니다. 로그 모드에서 시작하여 트래픽을 분석한 다음 결과에 만족하면 차단 모드로 변경하십시오. 웹 사이트의 라이브 트래픽에 대한 고유한 특성을 기반으로 규칙을 수정할 수 있습니다.
+아래 권장 규칙을 시작하려는 `cdn.yaml`에 복사할 수 있습니다. 로그 모드에서 시작하여 트래픽을 분석한 다음 결과에 만족하면 차단 모드로 변경하십시오. 웹 사이트 라이브 트래픽의 고유 특성에 따라 규칙을 수정할 수 있습니다.
 
 ```
 kind: "CDN"

@@ -1,27 +1,27 @@
 ---
-title: AEM Cloud Service의 AEM Sites에 대한 주요 변경 내용
-description: AEM Cloud Service의 AEM Sites에 대한 주요 변경 내용에 대해 자세히 알아보기
+title: AEM Cloud Service의 AEM Sites에 대한 주요 변경 사항
+description: AEM Cloud Service의 AEM Sites에 대한 주요 변경 사항에 대해 자세히 알아보기
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '535'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
-# AEM Sites as a Cloud Service의 주요 변경 내용 {#notable-changes}
+# AEM Sites as a Cloud Service의 주요 변경 사항 {#notable-changes}
 
-AEM Sites as a Cloud Service는 클라우드 기반 AEM as a Cloud Service 플랫폼의 일부로 경험 관리 기능을 제공합니다. 클라우드 기반 확장성, 가동 시간 및 항상 최신 상태와 같은 AEM as a Cloud Service의 핵심 이점 외에도 AEM Sites as a Cloud Service은 몇 가지 사이트별 변경 사항 및 추가 사항을 제공합니다.
+AEM Sites as a Cloud Service는 클라우드 기반 AEM as a Cloud Service 플랫폼의 일부로 경험 관리 기능을 제공합니다. 클라우드 기반 확장성, 가동 시간 및 최신 상태 유지와 같은 AEM as a Cloud Service의 핵심적인 이점 이외에도, AEM Sites as a Cloud Service는 다양한 사이트별 변경 내용 및 추가 사항을 제공합니다.
 
 >[!NOTE]
->이 문서에서는 AEM Sites에 대한 주요 변경 내용을 조명합니다. AEM as a Cloud Service 및 기타 모듈에 대한 일반적인 변경 내용은 다음을 참조하십시오.
+>이 문서에서는 AEM Sites에 대한 주요 변경 사항을 조명합니다. AEM as a Cloud Service 및 기타 모듈에 대한 일반적인 변경 내용은 다음을 참조하십시오.
 >
 >* [Adobe Experience Manager as a Cloud Service 소개](/help/overview/introduction.md)
 >* [AEM as a Cloud Service 개요 - 새로운 기능 및 차이점](/help/overview/what-is-new-and-different.md)
 >* Adobe Experience Manager as a Cloud Service [아키텍처](/help/overview/architecture.md)
 >* [AEM as a Cloud Service에 대한 주목할 만한 변경 사항 (릴리스 정보)](/help/release-notes/aem-cloud-changes.md)
->* [AEM Assets as a Cloud Service에 대한 주요 변경 내용](/help/assets/assets-cloud-changes.md)
+>* [AEM Assets as a Cloud Service에 대한 주요 변경 사항](/help/assets/assets-cloud-changes.md)
 >* [AEM Assets as a Cloud Service 소개](/help/assets/overview.md)
 >* [Adobe Experience Manager as a Cloud Service 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 

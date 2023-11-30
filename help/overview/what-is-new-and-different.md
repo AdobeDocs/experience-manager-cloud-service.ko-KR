@@ -5,7 +5,7 @@ exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1891'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -36,13 +36,13 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->온프레미스 및 Managed Service 버전에 대한 자세한 내용은 [AEM 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65.html) .
+>온프레미스 및 Managed Service 버전에 대한 자세한 내용은 [AEM 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65.html)를 참조하십시오.
 
 ## 아키텍처 {#architecture}
 
 >[!NOTE]
 >
->자세한 내용은 [아키텍처](/help/overview/architecture.md).
+>자세한 내용은 [아키텍처](/help/overview/architecture.md)를 참조하십시오.
 
 이제 AEM as a Cloud Service에는
 
@@ -87,7 +87,7 @@ AEM 버전 업데이트에는 다음과 같은 두 가지 유형이 있습니다
 
 >[!TIP]
 >
->자세한 내용은 [AEM 버전 업데이트](/help/implementing/deploying/aem-version-updates.md).
+>자세한 내용은 [AEM 버전 업데이트](/help/implementing/deploying/aem-version-updates.md)를 참조하십시오.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -156,9 +156,9 @@ Adobe에서 많은 측면을 담당하므로 AEM as a Cloud service를 사용하
 
 >[!NOTE]
 >
->자세한 내용을 보려면 다음으로 시작할 수 있습니다. [개발 지침](/help/implementing/developing/introduction/development-guidelines.md) 및 [개발 - WKND 자습서](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+>자세한 내용을 알아보려면 [개발 가이드라인](/help/implementing/developing/introduction/development-guidelines.md) 및 [개발 - WKND 튜토리얼](/help/implementing/developing/introduction/develop-wknd-tutorial.md)을 시작할 수 있습니다.
 
-AEM as a Cloud Service를 지원하는 새 아키텍처에는 전반적인 개발자 경험에 대한 몇 가지 주요 변경 내용이 포함됩니다. AEM as a Cloud Service의 주요 목표 중 하나는 숙련된 고객(온프레미스 또는 Adobe Managed Services의 컨텍스트에서 AEM을 사용한 고객)이 맞춤화된 코드 대부분을 다시 작성하지 않고도 AEM as a Cloud Service로 가능한 한 빨리 마이그레이션할 수 있도록 하는 것입니다. 단, 여전히 일부 조정이 필요할 수 있습니다.
+AEM as a Cloud Service를 지원하는 새 아키텍처에는 전반적인 개발자 경험에 대한 몇 가지 주요 변경 사항이 포함됩니다. AEM as a Cloud Service의 주요 목표 중 하나는 숙련된 고객(온프레미스 또는 Adobe Managed Services의 컨텍스트에서 AEM을 사용한 고객)이 맞춤화된 코드 대부분을 다시 작성하지 않고도 AEM as a Cloud Service로 가능한 한 빨리 마이그레이션할 수 있도록 하는 것입니다. 단, 여전히 일부 조정이 필요할 수 있습니다.
 
 ### 클라우드 개발 {#aem-as-a-cloud-service-developing-cloud-development}
 
@@ -182,7 +182,7 @@ AEM as a Cloud Service에서는 OSGi 번들 및 관련 구성이 관리되는 �
 
 코드와 콘텐츠의 명확하게 분리되어 있으므로 개발자는 특정 프로세스를 사용하여 개발의 일부로 콘텐츠를 업데이트할 수 있습니다. 변경 가능한 콘텐츠의 일반적인 사용 사례는 다음과 같습니다.
 
-* 표준 *기본값* 고객 프로젝트의 일부인 콘텐츠(예: 폴더, 템플릿, 워크플로 등)
+* 고객 프로젝트의 일부인 표준 *기본* 콘텐츠 (예: 폴더, 템플릿, 워크플로 등)
 
 * 검색 색인 정의
 
@@ -206,7 +206,7 @@ AEM as a Cloud Service에서는 OSGi 번들 및 관련 구성이 관리되는 �
 
 >[!NOTE]
 >
->자세한 내용을 보려면 다음으로 시작하십시오. [콘텐츠 복원](/help/operations/backup.md), [색인화](/help/operations/indexing.md), 및 [기타 유지 관리 작업](/help/operations/maintenance.md).
+>자세한 내용은 [콘텐츠 복원](/help/operations/backup.md), [색인화](/help/operations/indexing.md) 및 [기타 유지 관리 작업](/help/operations/maintenance.md)을 시작하십시오.
 
 AEM as a Cloud Service를 사용하면 이러한 작업이 자동화되므로 더 이상 서비스를 중단할 필요가 없습니다.
 
@@ -224,11 +224,11 @@ AEM as a Cloud Service를 사용하면 이러한 작업이 자동화되므로 �
 
 >[!NOTE]
 >
->다음을 참조하십시오 [보안 - IMS 지원](/help/security/ims-support.md).
+>[ 보안 - IMS 지원](/help/security/ims-support.md)을 참조하십시오.
 
-AEM as a Cloud Service의 주요 변경 내용은 작성자 계층 액세스에 대한 Adobe ID 사용이 완전히 통합된다는 것입니다.
+AEM as a Cloud Service의 주요 변경 사항은 작성자 계층 액세스에 대한 Adobe ID 사용이 완전히 통합된다는 것입니다.
 
-이를 위해서는 사용자 및 사용자 그룹 관리에 [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html)을 사용해야 합니다. 사용자 프로필 정보가 Adobe Identity Management System(IMS)에서 중앙 집중식으로 관리되어 모든 클라우드 서비스에 공유되므로 사용자 계정을 사용하면 사용자가 Adobe 제품 및 서비스에 액세스할 수 있습니다. AEM에 액세스 권한을 할당하면 이전과 동일하게 AEM as a Cloud Service에서 사용자 계정을 참조할 수 있습니다(예: AEM 보안 사용자 인터페이스에서 역할 및 권한을 정의하기 위해).
+이를 위해서는 사용자 및 사용자 그룹 관리에 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)을 사용해야 합니다. 사용자 프로필 정보가 Adobe Identity Management System(IMS)에서 중앙 집중식으로 관리되어 모든 클라우드 서비스에 공유되므로 사용자 계정을 사용하면 사용자가 Adobe 제품 및 서비스에 액세스할 수 있습니다. AEM에 액세스 권한을 할당하면 이전과 동일하게 AEM as a Cloud Service에서 사용자 계정을 참조할 수 있습니다(예: AEM 보안 사용자 인터페이스에서 역할 및 권한을 정의하기 위해).
 
 이렇게 하면 다음과 같은 이점이 있습니다.
 
@@ -240,7 +240,7 @@ AEM as a Cloud Service의 주요 변경 내용은 작성자 계층 액세스에 
 
 >[!NOTE]
 >
->자세한 내용은 [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md) 는 좋은 시작점입니다.
+>[기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md)를 시작점으로 사용하여 자세한 내용을 확인하십시오.
 
 Sites 및 Assets에 대한 사용자 인터페이스(UI) 작성의 기본 원칙은 이전에 AEM을 사용한 적이 있는 누구에게나 매우 익숙할 것입니다.
 
@@ -266,14 +266,14 @@ Assets 제품에는 클라우드에서의 차세대 자산 프로세싱과 고�
 
 * [Adobe Experience Manager as a Cloud Service 소개](/help/overview/introduction.md)
 * Adobe Experience Manager as a Cloud Service [아키텍처](/help/overview/architecture.md)
-* [AEM as a Cloud Service에 대한 주요 변경 내용 (릴리스 정보)](/help/release-notes/aem-cloud-changes.md)
+* [AEM as a Cloud Service에 대한 주요 변경 사항 (릴리스 정보)](/help/release-notes/aem-cloud-changes.md)
 * [AEM Sites as a Cloud Service의 주요 변경 사항](/help/sites-cloud/sites-cloud-changes.md)
-* [AEM Assets as a Cloud Service에 대한 주요 변경 내용](/help/assets/assets-cloud-changes.md)
+* [AEM Assets as a Cloud Service에 대한 주요 변경 사항](/help/assets/assets-cloud-changes.md)
 * [AEM Assets as a Cloud Service 소개](/help/assets/overview.md)
 * [Adobe Experience Manager as a Cloud Service 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 >[!TIP]
 >
->AEMas a Cloud Service 에 대한 개요가 있을 때 를 검토하여 빠르게 온보딩할 수 있습니다. [온보딩 여정](/help/journey-onboarding/overview.md).
+>AEM as a Cloud Service에 대한 개요가 있으면 [온보딩 여정](/help/journey-onboarding/overview.md)을 검토하여 빠르게 온보딩할 수 있습니다.
 >
 >이미 온보딩했거나 AEM의 기능을 테스트할 준비가 되었습니까? [AEM 참조 데모 추가 기능](/help/journey-sites/demos-add-on/overview.md)을 설치하여 풍부한 예제를 통해 AEM의 강력한 기능을 살펴보십시오.

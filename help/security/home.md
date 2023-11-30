@@ -6,7 +6,7 @@ exl-id: 17a5f951-84e4-4a15-8919-985451e3b527
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '384'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Experience Manager as a Cloud Service의 보안 기능에 대해 자세히
 
 | 사용 안내서 | 설명 |
 |---|---|
-| [개요](/help/overview/home.md) | 이 안내서에서는 소개, 용어, 아키텍처 등을 포함하여 Experience Manager as a Cloud Service에 대한 개요를 제공합니다. |
+| [개요](/help/overview/home.md) | 이 안내서에서는 소개, 용어 및 아키텍처를 포함하여 Experience Manager as a Cloud Service에 대한 개요를 제공합니다. |
 | [릴리스 정보](/help/release-notes/home.md) | 이 안내서에서는 새로운 기능, 더 이상 사용되지 않거나 제거된 기능 및 알려진 문제 등 Experience Manager as a Cloud Service의 최신 릴리스에 대한 중요 정보를 제공합니다. |
 | [온보딩 여정](/help/journey-onboarding/overview.md) | 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service를 시작하는 방법에 대한 요약을 제공합니다. |
 | [사이트 사용 안내서](/help/sites-cloud/home.md) | Experience Manager Sites as a Cloud Service를 통한 작성 및 관리 방법 이해. |
