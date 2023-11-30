@@ -4,10 +4,10 @@ description: Headless 콘텐츠 기반 또는 페이지 작성을 위해 콘솔�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2531'
-ht-degree: 92%
+source-wordcount: '2622'
+ht-degree: 89%
 
 ---
 
@@ -143,10 +143,7 @@ ht-degree: 92%
 * **[이동](/help/assets/manage-digital-assets.md)**
 * **[이름 바꾸기](/help/assets/manage-digital-assets.md)**
 * **[삭제](#deleting-a-fragment)**
-
-<!--
-* **[Replace](#find-and-replace)**
--->
+* **[바꾸기](#find-and-replace)**
 
 >[!NOTE]
 >
@@ -374,13 +371,22 @@ ht-degree: 92%
 >
 >다른 조각 또는 페이지에서 조각이 이미 참조된 경우 경고 메시지가 나타나고 계속 진행할지 확인해야 합니다.
 
-<!--
-## Find and Replace {#find-and-replace}
+## 찾기 및 바꾸기 {#find-and-replace}
 
-The **Replace** option is available to find, and replace, specified text in your selected Content Fragment:
+다음 **바꾸기** 맨 위 도구 모음에서 작업을 사용하여 선택한 콘텐츠 조각에서 지정된 텍스트를 찾고 바꿀 수 있습니다.
 
-![Unpublish dialog](assets/cf-managing-find-replace.png)
--->
+![찾기 및 바꾸기](assets/cf-managing-find-replace.png)
+
+바꾸기 전에 검증 기준을 확인하고 충돌이 발생하면 사용자에게 알려 주기 때문에 교체 문자열을 변경하거나 검증된 인스턴스만 바꿀 수 있습니다.
+
+>[!NOTE]
+>
+>찾기 및 바꾸기 작업은 선택한 최대 20개의 콘텐츠 조각에서만 수행할 수 있습니다(한 번에).
+>
+>콘텐츠 조각을 20개 이상 선택하면 메시지가 표시됩니다 **찾거나 바꿀 수 없음**.
+
+![바꾸기 확인](assets/cf-managing-confirm-replace.png)
+
 
 ## 조각 삭제 {#deleting-a-fragment}
 

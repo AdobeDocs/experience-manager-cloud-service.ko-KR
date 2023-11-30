@@ -4,10 +4,10 @@ description: 콘텐츠 조각에 대한 콘텐츠를 작성한 다음 목적에 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2251'
-ht-degree: 96%
+source-wordcount: '2267'
+ht-degree: 95%
 
 ---
 
@@ -59,6 +59,10 @@ ht-degree: 96%
 * 중앙 패널: 선택한 변형의 실제 필드와 콘텐츠 표시
    * 콘텐츠 편집 허용
    * **탭 플레이스홀더** 필드가 여기에 표시된 모델 내에서 정의되고 탐색에 사용될 수 있는 경우가로 또는 드롭다운 목록으로 표시됩니다.
+
+  >[!NOTE]
+  >
+  >기본 모델의 정의에 따라 필드는 특정 유형의 영향을 받을 수 있습니다. [유효성 검사](/help/assets/content-fragments/content-fragments-models.md#validation).
 
 ![콘텐츠 조각 편집기 - 개요](assets/cf-authoring-overview.png)
 

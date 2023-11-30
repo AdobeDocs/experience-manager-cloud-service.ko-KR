@@ -2,9 +2,9 @@
 title: 변형 - 조각 콘텐츠 작성 (에셋 - 콘텐츠 조각)
 description: 변형에서 조각에 대한 콘텐츠를 작성한 다음 목적에 따라 해당 콘텐츠의 변형을 만들 수 있으므로 AEM의 Headless 콘텐츠를 어떻게 더 유연하게 만들 수 있는지 이해합니다.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2530'
+source-wordcount: '2546'
 ht-degree: 56%
 
 ---
@@ -76,6 +76,10 @@ ht-degree: 56%
   >[메타데이터](/help/assets/content-fragments/content-fragments-metadata.md)의 일부로 (**마스터** 변형에) **태그**&#x200B;가 추가될 수 있음
 
 * [마스터](#managing-variations) 콘텐츠의 **변형 만들기 및 관리.**
+
+>[!NOTE]
+>
+>기본 모델의 정의에 따라 필드는 특정 유형의 영향을 받을 수 있습니다. [유효성 검사](/help/assets/content-fragments/content-fragments-models.md#validation).
 
 ### 전체 화면 편집기 {#full-screen-editor}
 

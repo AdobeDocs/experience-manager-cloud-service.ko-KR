@@ -4,10 +4,10 @@ description: 콘텐츠 조각 모델이 AEM에서 콘텐츠 조각의 기반 역
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '3058'
-ht-degree: 97%
+source-wordcount: '3121'
+ht-degree: 96%
 
 ---
 
@@ -199,7 +199,8 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
   >이전 버전의 AEM에서 만든 모델에 잘못된 문자가 포함되어 있는 경우, 해당 문자를 제거하거나 업데이트하십시오.
 
 * **렌더링 형식**
-조각의 필드를 구현하거나 렌더링하기 위한 다양한 옵션입니다. 이를 통해 작성자에게 필드의 단일 인스턴스가 표시되는지 또는 작성자가 여러 인스턴스를 만들 수 있는지를 정의할 수 있습니다.
+
+  조각의 필드를 구현하거나 렌더링하기 위한 다양한 옵션입니다. 이를 통해 작성자에게 필드의 단일 인스턴스가 표시되는지 또는 작성자가 여러 인스턴스를 만들 수 있는지를 정의할 수 있습니다. 날짜 **다중 필드** 최소 및 최대 항목 수를 정의할 수 있는 데 사용됩니다. 참조 [유효성 검사](#validation) 을 참조하십시오.
 
 * **필드 레이블**
 입력 **필드 레이블** 자동 생성 **속성 이름**: 필요한 경우 수동으로 업데이트할 수 있습니다.
@@ -257,6 +258,14 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
    * 사전 정의된 폭 및/또는 높이 범위(픽셀 단위) 내의 이미지만 참조할 수 있습니다.
 * **조각 참조**
    * 특정 콘텐츠 조각 모델을 테스트합니다.
+* **최소 항목 수** / **최대 항목 수**
+
+  (으)로 정의된 필드 **다중 필드** (다음으로 설정) **렌더링 형식**) 다음 옵션을 사용할 수 있습니다.
+
+   * **최소 항목 수**
+   * **최대 항목 수**
+
+  이러한 인증서는 [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 ## 참조를 사용하여 중첩된 콘텐츠 형성 {#using-references-to-form-nested-content}
 

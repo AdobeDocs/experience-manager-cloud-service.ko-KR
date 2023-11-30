@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 정보
 description: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 정보
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
 source-wordcount: '644'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 97%
 
 | 제품 | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| 버전 | 2023.10.0 |
+| 버전 | 2023.11.0 |
 | 유형 | 지속적인 업데이트 |
 | 가용 일자 | 연속 업데이트 |
 
@@ -42,14 +42,14 @@ ht-degree: 97%
 * [기능 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)
 * [유지 관리 릴리스 정보](/help/release-notes/maintenance/latest.md)
 * [새로운 기능](what-is-new.md)
-* [주요 변경 내용](aem-cloud-changes.md)
+* [주요 변경 사항](aem-cloud-changes.md)
 * [더 이상 사용되지 않는/제거된 기능](deprecated-removed-features.md)
 
 ## Experience Manager as a Cloud Service 안내서 {#aem-guides}
 
 | 사용 안내서 | 설명 |
 |---|---|
-| [개요](/help/overview/home.md) | 이 안내서에서는 Experience Manager as a Cloud Service 소개, 용어 등 개요를 제공합니다. |
+| [개요](/help/overview/home.md) | 이 안내서에서는 소개, 용어를 포함하여 Experience Manager as a Cloud Service에 대한 개요를 제공합니다. |
 | [보안 사용 안내서](/help/security/home.md) | Experience Manager as a Cloud Service 관련 중요 보안 항목에 대해 알아보기. |
 | [온보딩 여정](/help/journey-onboarding/overview.md) | 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service를 시작하는 방법에 대한 요약을 제공합니다. |
 | [사이트 사용 안내서](/help/sites-cloud/home.md) | Experience Manager Sites as a Cloud Service를 통한 작성 및 관리 방법 이해. |
