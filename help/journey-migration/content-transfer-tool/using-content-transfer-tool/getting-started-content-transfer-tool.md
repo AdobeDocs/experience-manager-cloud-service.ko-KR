@@ -5,7 +5,7 @@ exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1424'
-ht-degree: 18%
+ht-degree: 21%
 
 ---
 
@@ -111,7 +111,7 @@ SSL/TLS 연결 문제를 이해하는 것은 때때로 어려울 수 있습니�
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_populate_migrationset"
 >title="마이그레이션 세트 채우기"
->abstract="마이그레이션 세트를 만든 후에는 AEM as a Cloud Service 환경으로 이동해야 하는 소스 인스턴스의 콘텐츠로 채워야 합니다. 이렇게 하려면 소스 인스턴스에 컨텐츠 전송 도구 가 설치되어 있어야 합니다."
+>abstract="마이그레이션 세트를 만든 후에는 AEM as a Cloud Service 환경으로 이동해야 하는 소스 인스턴스의 콘텐츠로 채워야 합니다. 이를 위해 소스 인스턴스에 콘텐츠 전송 도구를 설치해야 합니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=ko-KR" text="콘텐츠 추출하기"
 
 Cloud Acceleration Manager에서 만든 마이그레이션 세트를 채우려면 소스 Adobe Experience Manager(AEM) 인스턴스에 최신 버전의 콘텐츠 전송 도구를 설치해야 합니다. 이 섹션을 통해 마이그레이션 세트를 채우는 방법을 알아보십시오.

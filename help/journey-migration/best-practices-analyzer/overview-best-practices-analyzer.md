@@ -5,7 +5,7 @@ exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 51%
+ht-degree: 65%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 51%
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_overview"
 >title="모범 사례 분석기 개요"
->abstract="모범 사례 분석기는 AEM 모범 사례를 따르지 않는 영역을 표시하여 현재 AEM 구현을 평가합니다. 또한 다음 단계에서 AEM 모범 사례를 채택할 수 있는 지침을 제공합니다. 또한 기존 Adobe Experience Manager(AEM AEM) 배포에서 as a Cloud Service으로 이동할 준비를 평가하는 프로세스를 가속화하는 데 도움이 됩니다."
+>abstract="모범 사례 분석기는 AEM 모범 사례를 따르지 않는 영역을 표시하여 현재 AEM 구현을 평가합니다. 또한 다음 단계에서 AEM 모범 사례를 채택할 수 있는 지침을 제공합니다. 또한 기존 Adobe Experience Manager(AEM) 배포에서 AEM as a Cloud Service로 이동할 준비 상황을 평가하는 프로세스를 가속화할 수 있습니다."
 
-모범 사례 분석기는 AEM 모범 사례를 따르지 않는 영역을 표시하여 현재 AEM 구현을 평가합니다. 또한 다음 단계에서 AEM 모범 사례를 채택할 수 있는 지침을 제공합니다. 또한 기존 Adobe Experience Manager(AEM AEM) 배포에서 as a Cloud Service으로 이동할 준비를 평가하는 프로세스를 가속화하는 데 도움이 됩니다.
+모범 사례 분석기는 AEM 모범 사례를 따르지 않는 영역을 표시하여 현재 AEM 구현을 평가합니다. 또한 다음 단계에서 AEM 모범 사례를 채택할 수 있는 지침을 제공합니다. 또한 기존 Adobe Experience Manager(AEM) 배포에서 AEM as a Cloud Service로 이동할 준비 상황을 평가하는 프로세스를 가속화할 수 있습니다.
 
 이 도구는 AEM as a Cloud Service로의 전환 경로의 첫 번째 단계인 잠재적 리팩터링 영역을 식별하는 보고서를 생성합니다.
 

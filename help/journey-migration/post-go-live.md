@@ -53,7 +53,7 @@ AEM as a Cloud Service 개발자 환경 디버깅은 개발자 콘솔에서 개�
 
 다음을 참조하십시오 [로그 액세스 및 관리](/help/implementing/cloud-manager/manage-logs.md) 사용자 인터페이스를 통해 또는 Cloud Manager를 통해 API에서 로그에 액세스하고 관리하는 방법을 알아봅니다.
 
-##  지원 센터 문의 {#contacting-support}
+## 지원 센터 문의 {#contacting-support}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"
