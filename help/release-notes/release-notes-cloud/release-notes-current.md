@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 0290e40094147a1c85eacf157904c7ef7388c5e7
+source-git-commit: a801e6c605fff46ca07699727f3078c9a285a943
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1297'
 ht-degree: 24%
 
 ---
@@ -146,6 +146,6 @@ ht-degree: 24%
 
 ## 알려진 문제 {#known-issues}
 
-* 사용자가 핵심 구성 요소를 기반으로 하는 적응형 Forms을 제출할 수 없습니다. 이 문제는 핵심 구성 요소 버전 2.0.38 - 2.0.60을 사용하여 빌드된 적응형 Forms에 대해 발생합니다.
+* 핵심 구성 요소를 기반으로 하는 적응형 Forms을 제출할 수 없습니다. 이 문제는 핵심 구성 요소 버전 2.0.38 - 2.0.60을 사용하여 빌드된 적응형 Forms에 대해 발생합니다.
 
   문제를 해결했습니다. 적응형 양식 핵심 구성 요소 버전 2.0.62 이상으로 이동할 수 있습니다. 환경에 맞는 적응형 Forms 핵심 구성 요소 버전을 설정하려면 다음을 수행하십시오. [core.forms.components.version, core.forms.components.af.version 및 core.wcm.components.version 구성 요소의 버전을 설정합니다.](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) Forms as a Cloud Service 저장소 또는 AEM Archetype 기반 프로젝트의 종속성 및 [Forms as a Cloud Service 환경에 변경 사항 배포](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). 다음 위치에서 최신 버전의 적응형 Forms 핵심 구성 요소 종속성을 찾을 수 있습니다. [적응형 Forms 핵심 구성 요소 Git 저장소](https://github.com/adobe/aem-core-forms-components#system-requirements).
