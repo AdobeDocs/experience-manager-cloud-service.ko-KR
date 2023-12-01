@@ -3,10 +3,10 @@ title: 에서 에셋을 검색하고 검색하는 방법 알아보기 [!DNL Asse
 description: AEM Assets 보기에서 에셋을 검색하고 검색하는 방법을 알아봅니다. 강력한 검색 기능을 통해 적절한 자산을 빠르게 찾고 콘텐츠 속도를 높일 수 있습니다.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 224529293f87b772c150dd26ce5260a9172c8b68
+source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 73%
+source-wordcount: '1314'
+ht-degree: 74%
 
 ---
 
@@ -172,7 +172,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 ## 첫 번째 홈 페이지 검색 구성 {#configuring-search-first-homepage}
 
-첫 번째 홈 페이지 검색은 다양한 파일과 폴더를 즉시 탐색할 수 있습니다. 정확한 키워드를 알지 못하는 경우에도 자산 유형, 메타데이터, 스마트 태그 및 콘텐츠 자체를 손쉽게 탐색할 수 있습니다. [!DNL Assets view] 에 로그인할 때 표시되는 내용을 제어하여 홈 페이지를 구성할 수 있습니다. [!DNL Assets view].
+Experience Manager Assets을 사용하면 조직의 기본 랜딩 페이지를 선택할 수 있습니다. 첫 번째 검색을 홈 페이지로 사용할 때 배경 및 로고 이미지를 브랜드와 일치하도록 구성하여 페이지의 브랜딩을 조정할 수 있는 옵션도 있습니다.
 
 첫 번째 홈 페이지 검색을 구성하려면 아래 단계를 실행합니다.
 
@@ -191,7 +191,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 1. 다음으로 이동 **[!UICONTROL 배경 및 로고 이미지]** 아래 섹션 **[!UICONTROL 홈페이지]**.
 1. 클릭 **[!UICONTROL 바꾸기]** 기존 에셋 저장소에서 이미지를 찾아봅니다.
-1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. [미리 보기](#preview-configured-homepage) 수정 사항을 거치는 변경 사항.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. [미리 보기](#preview-configured-homepage) 수정 사항을 검토하기 위한 변경 사항입니다.
 
 ### 구성된 홈 페이지 미리 보기 {#preview-configured-homepage}
 
