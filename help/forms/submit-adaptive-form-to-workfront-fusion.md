@@ -1,0 +1,190 @@
+---
+title: AEM Forms 제출과 Adobe Workfront Fusion 통합
+description: Adobe Workfront Fusion을 사용하면 반복적인 작업에 집중하지 않고 새로운 작업에 집중할 수 있습니다. 양식 제출을 사용하여 Adobe Workfront Fusion을 적응형 양식에 연결할 수 있습니다.
+keywords: 적응형 양식을 Adobe Workfront Fusion, AEM Forms 제출과 Adobe Workfront Fusion 통합, AEM Forms과 Adobe Workfront Fusion, AEM Forms과 Workfront Fusion, AEM Forms, AEM Forms 및 Workfront Fusion에 Workfront Fusion 연결, Workfront Fusion과 AEM Forms을 연결하는 방법 및 Workfront Fusion을 양식에 연결하는 방법
+topic-tags: author, developer
+source-git-commit: b1a5c321d7b765a53c1c38fff9888eb22172edae
+workflow-type: tm+mt
+source-wordcount: '1212'
+ht-degree: 3%
+
+---
+
+
+# Adobe Workfront Fusion에 적응형 양식 제출
+
+[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) 문서 승인 워크플로, 이메일 필터링 및 정렬과 같은 동일한 작업을 반복하는 프로세스를 자동화하여 반복되는 작업 대신 새로운 작업에 집중할 수 있습니다. Adobe Workfront Fusion에는 여러 시나리오가 포함됩니다. 시나리오는 응용 프로그램과 웹 서비스 간에 데이터 전송을 실행하는 일련의 모듈로 구성됩니다. 시나리오에서는 작업을 자동화하기 위해 다양한 단계(모듈)를 추가합니다.
+
+예를 들어 Workfront Fusion을 사용하여 적응형 양식으로 데이터를 수집하고, 데이터를 처리하고, 보관을 위해 데이터를 데이터 저장소로 전송하는 시나리오를 만들 수 있습니다. 시나리오가 설정되면 Workfront Fusion에서는 사용자가 양식을 작성할 때마다 작업을 자동으로 실행하여 데이터 저장소를 원활하게 업데이트합니다.
+
+## Adobe Workfront Fusion 사용의 이점{#advatages-of-workfront-fusion}
+
+Adobe Workfront Fusion과 AEM Forms을 함께 사용할 때의 몇 가지 이점:
+
+- 적응형 Forms으로 캡처된 데이터를 Workfront Fusion 시나리오로 전송
+- 오류 발생 가능성이 낮은 작업 자동화
+- Workfront에 직접 포함되지 않은 조직 관련 요구 사항 맞춤화
+- if/then 문과 같은 간단한 논리와 간단한 결정을 처리합니다.
+
+## AEM Forms을 Adobe Workfront Fusion과 통합하기 위한 사전 요구 사항 {#prerequisites}
+
+Workfront Fusion을 AEM Forms에 연결하는 데 필요한 사전 요구 사항은 다음과 같습니다.
+
+- 유효 [Workfront Fusion 라이선스](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+- 액세스 권한이 있는 AEM 사용자 [개발 콘솔](https://my.cloudmanager.adobe.com/) 끝 [서비스 자격 증명 검색](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+
+## AEM Forms과 Adobe Workfront Fusion 통합
+
+연결하려면 [Workfront fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) 양식에 대해 다음 단계를 수행합니다.
+
+### 1. Workfront 시나리오 만들기 {#workflow-scenario}
+
+Workfront 시나리오를 만들려면 다음 작업을 수행하십시오.
+1. 로그인 [Workfront Fusion 계정](https://app-qa.workfrontfusion.com/).
+1. 클릭 **[!UICONTROL 시나리오]** ![공유 아이콘](/help/forms/assets/Smock_ShareAndroid_18_N.svg) 왼쪽 패널에서
+1. 클릭 **[!UICONTROL 새 시나리오 만들기]** 페이지의 오른쪽 상단 모서리에서 을 참조하십시오. 새 시나리오를 만들 수 있는 페이지가 화면에 표시됩니다.
+1. 선택 **[!UICONTROL 새 시나리오]** 페이지의 왼쪽 상단 모서리에 시나리오의 적절한 이름을 입력합니다.
+1. 물음표를 클릭하고 첫 번째 모듈을 (으)로 추가했는지 확인합니다. **[!UICONTROL AEM Forms]**.
+
+   ![AEM Forms 모듈 추가](/help/forms/assets/workfront-aemforms.png)
+
+   다음 **[!UICONTROL 양식 이벤트 감시]** 대화 상자가 나타납니다.
+
+   >[!NOTE]
+   >
+   > 첫 번째 모듈을으로 추가해야 합니다. **[!UICONTROL AEM Forms]**.
+
+1. 다음 항목 선택 **[!UICONTROL 양식 이벤트 감시]** 대화 상자와 웹후크를 추가하는 창이 나타납니다.
+
+#### 1.1 웹후크 추가 {#add-webhook}
+
+![웹후크 추가](/help/forms/assets/workfront-add-webhook.png)
+
+Webhook를 추가하려면:
+
+1. 클릭 **[!UICONTROL 추가]** 및 a **[!UICONTROL 웹후크 추가]** 대화 상자가 나타납니다.
+1. 웹후크 이름을 지정합니다.
+
+   >[!NOTE]
+   >
+   > 지정된 웹후크 이름이 AEM 인스턴스에 나타나므로 웹후크 이름을 신중하게 선택하는 것이 좋습니다.
+
+1. 클릭 **[!UICONTROL 추가]** 새 연결을 추가합니다. 다음 **[!UICONTROL 연결 만들기]** 대화 상자가 나타납니다.
+
+#### 1.2 웹후크에 연결 추가 {#add-connection}
+
+![연결 추가](/help/forms/assets/workfront-add-connection.png)
+
+연결을 추가하려면:
+
+1. 지정 **[!UICONTROL 연결 이름]** 다음에서 **[!UICONTROL 연결 만들기]** 대화 상자.
+
+1. 선택 **환경** 및 **유형** 을 클릭합니다.
+
+1. 다음을 입력합니다. **인스턴스 URL**.
+
+   >[!NOTE]
+   >
+   > 인스턴스 URL은 특정 AEM Forms 인스턴스를 가리키는 고유한 웹 주소입니다.
+
+   다음을 검색할 수 있습니다. [개발자 콘솔의 서비스 자격 증명](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html) 연결을 만드는 데 필요합니다.
+
+1. 바꾸기 `ims-na1.adobelogin.com` 다음에서 **IMS 엔드포인트** (값: **imsEndpoint** Developer Console의 서비스 자격 증명에서.
+
+   >[!NOTE]
+   >
+   > 유지 `https://` 다음에서 **IMS 엔드포인트** 텍스트 상자를 추가하는 동안 `imsEndpoint` URL.
+
+1. 에서 다음 값을 지정합니다. **[!UICONTROL 연결 만들기]** 대화 상자:
+   - 지정 **클라이언트 ID** 다음 값: **clientId** Developer Console의 서비스 자격 증명에서.
+   - 지정 **클라이언트 암호** 다음 값: **클라이언트 암호** Developer Console의 서비스 자격 증명에서.
+   - 지정 **기술 계정 ID**  다음 값: **id** Developer Console의 서비스 자격 증명에서.
+   - 지정 **조직 ID**  다음 값: **org** Developer Console의 서비스 자격 증명에서.
+   - **메타 범위**  다음 값: **메타스코프** Developer Console의 서비스 자격 증명에서.
+   - **개인 키**  다음 값: **privateKey** Developer Console의 서비스 자격 증명에서.
+
+   >[!NOTE]
+   >
+   >- 대상 **개인 키**, 제거 `\r\n` 값: 부터
+   >  예를 들어 개인 키 값이 다음과 같은 경우:
+   >`\r\nIJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL\r\nMy1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`을(를) 제거한 후 `\r\n` 개인 키에서 키는 다음과 같이 표시되며, 두 값은 모두 별도의 행에 표시됩니다.
+   >
+   >   `IJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL`
+   >
+   >   `My1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`
+   > 
+   >- 또한 를 선택하여 파일에서 개인 키 또는 인증서를 검색할 수 있습니다. **Extract** 단추를 클릭합니다.
+
+1. **계속**&#x200B;을 클릭합니다.
+
+   생성된 연결이 의 드롭다운 목록에 표시되기 시작합니다. **[!UICONTROL 연결]** 다음에서 **[!UICONTROL 웹후크 추가]** 대화 상자.
+
+1. 생성된 연결 선택 **[!UICONTROL 연결]** 을 클릭합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+1. 클릭 **[!UICONTROL 확인]** 시나리오의 변경 내용을 저장합니다.
+
+#### 1.3 Workfront 시나리오 활성화 {#activate-scenario}
+
+시나리오를 활성화하려면:
+1. 클릭 **[!UICONTROL 시나리오]** ![공유 아이콘](/help/forms/assets/Smock_ShareAndroid_18_N.svg) 왼쪽 패널에서
+1. 다음을 클릭합니다. **[!UICONTROL 비활성 시나리오]** 탭.
+1. 다음을 클릭합니다. **설정/해제** AEM Forms 시나리오에 대한 토글 단추입니다.
+
+전환 버튼을 클릭하면 Workfront 시나리오가에 표시되기 시작합니다. **[!UICONTROL 활성 시나리오]** 탭.
+
+>[!NOTE]
+>
+> Workfront 시나리오를 활성화하지 않으면 양식 제출이 감지되지 않고 제출 액션을 Workfront으로 설정하면 제출이 실패합니다.
+
+### 2. Workfront Fusion용 적응형 양식의 제출 동작 구성
+
+Workfont Fusion에 대한 제출 액션을 구성할 수 있는 대상:
+- [새로운 적응형 Forms](#new-af-submit-action)
+- [기존 적응형 양식](#existing-af-submit-action)
+
+#### 2.1 Workfront Fusion용 새 적응형 양식의 제출 작업 구성 {#new-af-submit-action}
+
+Workfront Fusion용 새 적응형 양식의 제출 액션을 구성하려면 다음 작업을 수행하십시오.
+
+1. AEM 인스턴스에 로그인.
+1. 다음으로 이동 **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]** > **[!UICONTROL 만들기]** > **[!UICONTROL 적응형 양식]**. 다음 **[!UICONTROL 양식 만들기]** 마법사가 나타납니다.
+1. 다음에서 적응형 양식 템플릿 선택 **[!UICONTROL 소스]** 탭.
+1. 다음에서 테마 선택 **[!UICONTROL 스타일]** 탭.
+
+   ![Workfront Fusion 작업 제출](/help/forms/assets/workfront-scenario-new-af.png)
+
+1. 다음 항목 선택 **[!UICONTROL Workfront Fusion 시나리오 호출]** 다음에서 **[!UICONTROL 제출]** 탭.
+1. 에서 생성된 웹후크 선택 **[!UICONTROL 옵션]** 의 탭 **[!UICONTROL 속성]** 창.
+
+   >[!NOTE]
+   >
+   > Workfront 시나리오의 웹후크 이름이 **옵션** 드롭다운 목록입니다.
+
+1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
+1. 새 적응형 양식의 이름을 지정하고 **[!UICONTROL 만들기]**.
+
+#### 2.2 Workfront Fusion용 기존 적응형 양식의 제출 동작 구성 {#existing-af-submit-action}
+
+Workfront Fusion용 기존 적응형 양식의 제출 액션을 구성하려면 다음 작업을 수행하십시오.
+
+1. AEM 인스턴스에 로그인.
+1. 다음으로 이동 **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**.
+1. 적응형 양식을 선택하고 편집 모드에서 양식을 엽니다.
+1. 콘텐츠 브라우저를 열고 적응형 양식의 **[!UICONTROL 안내서 컨테이너]** 구성 요소를 선택합니다.
+1. 안내서 컨테이너 속성 ![안내서 속성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭합니다. 적응형 양식 컨테이너 대화 상자가 열립니다.
+
+   ![Workfront Fusion 작업 제출](/help/forms/assets/workfront-scenario-existing-af.png)
+
+1. 를 엽니다. **[!UICONTROL 제출]** 탭.
+1. 다음 항목 선택 **[제출 액션]** 다음으로: **[!UICONTROL Workfront Fusion 시나리오 호출]**
+1. 선택 **[!UICONTROL Workfront Fusion 시나리오]** 을 클릭합니다.
+1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
+
+## 모범 사례 {#best-practices}
+
+- AEM 인스턴스에서는 시나리오 이름을 가져올 수 없으므로 웹후크 이름을 신중하게 선택하는 것이 좋습니다. 나중에 웹후크 이름을 변경하면 AEM Forms 제출 작업 드롭다운 목록에 반영되지 않습니다.
+- 시나리오에는 여러 개의 웹후크 링크가 있을 수 있지만 한 번에 하나의 웹후크 링크만 활성화됩니다. 링크되지 않은 웹후크를 삭제하여 AEM Forms 제출 작업 드롭다운 목록에 표시되지 않도록 하는 것이 좋습니다.
+
+<!-- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to replicate the scenario URLs for the Publish instance. -->
+
+

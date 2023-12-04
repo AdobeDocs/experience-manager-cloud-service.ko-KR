@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: ba7976c192e3696b1367a4f9a5bf0c320a5f258e
 workflow-type: tm+mt
-source-wordcount: '4393'
+source-wordcount: '4420'
 ht-degree: 99%
 
 ---
@@ -247,7 +247,7 @@ ht-degree: 99%
          + [마이그레이션 세트 삭제](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [게시 인스턴스에서 콘텐츠 전송 도구 실행](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [콘텐츠 전송 도구 문제 해결](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
-         + 기존 사용자 매핑 도구 (레거시){#legacy-user-mapping-tool}
+         + 기존 사용자 매핑 도구(레거시){#legacy-user-mapping-tool}
             + [개요](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + [중요 고려 사항](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [사용자 매핑 도구 사용](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
@@ -286,7 +286,7 @@ ht-degree: 99%
          + [CSV로 내보내기](/help/sites-cloud/authoring/fundamentals/csv-export.md)
          + [구성 요소](/help/sites-cloud/authoring/fundamentals/components.md)
          + [모바일 디바이스용 작성](/help/sites-cloud/authoring/fundamentals/mobile.md)
-         + [액세스 가능한 콘텐츠 제작 (WCAG 2.1 적합성)](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
+         + [액세스 가능한 콘텐츠 제작(WCAG 2.1 적합성)](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
          + [문제 해결](/help/sites-cloud/authoring/fundamentals/troubleshooting.md)
          + [키보드 단축키](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
       + 작성 기능 {#features}
@@ -317,12 +317,12 @@ ht-degree: 99%
       + 개인 맞춤화 {#personalization}
          + [개인 맞춤화 개요](/help/sites-cloud/authoring/personalization/overview.md)
          + [ContextHub 데이터를 사용하여 페이지 미리보기](/help/sites-cloud/authoring/personalization/contexthub.md)
-         + [타겟팅 모드를 사용하여 타겟팅된 콘텐츠 작성](/help/sites-cloud/authoring/personalization/targeted-content.md)
-         + [다중 사이트에서 타겟팅된 콘텐츠를 사용하여 작업](/help/sites-cloud/authoring/personalization/multisite-targeted-content.md)
-         + [타겟팅된 콘텐츠에 대한 다중 사이트 관리 구성 방식](/help/sites-cloud/authoring/personalization/multisite-structure.md)
+         + [타기팅 모드를 사용하여 타기팅된 콘텐츠 작성](/help/sites-cloud/authoring/personalization/targeted-content.md)
+         + [다중 사이트에서 타기팅된 콘텐츠를 사용하여 작업](/help/sites-cloud/authoring/personalization/multisite-targeted-content.md)
+         + [타기팅된 콘텐츠에 대한 다중 사이트 관리 구성 방식](/help/sites-cloud/authoring/personalization/multisite-structure.md)
          + [활동 관리](/help/sites-cloud/authoring/personalization/activities.md)
          + [대상자 관리](/help/sites-cloud/authoring/personalization/audiences.md)
-         + [오퍼 생성 및 관리 (오퍼 콘솔)](/help/sites-cloud/authoring/personalization/offers.md)
+         + [오퍼 생성 및 관리(오퍼 콘솔)](/help/sites-cloud/authoring/personalization/offers.md)
          + [세분화 이해](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [ContextHub를 사용하여 세분화 구성](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [등록, 로그인 및 사용자 프로필](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
@@ -585,6 +585,7 @@ ht-degree: 99%
          + [외부 웹 페이지에 핵심 구성 요소 기반 적응형 양식 임베드](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [외부 웹 페이지에 기초 구성 요소 기반 적응형 양식 임베드](/help/forms/embed-adaptive-form-external-web-page.md)
       + 양식 데이터 모델 {#use-form-data-model}
+         + [Adobe Workfront Fusion에 적응형 양식 제출](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [AEM Forms를 데이터베이스 또는 데이터 소스에 연결](/help/forms/data-integration.md)
          + [데이터 소스 구성](/help/forms/configure-data-sources.md)
          + [ [!DNL Microsoft Dynamics] OData 구성](/help/forms/ms-dynamics-odata-configuration.md)
@@ -681,7 +682,7 @@ ht-degree: 99%
    + Screens as a Cloud Service 개요 {#overview}
       + [소개](/help/screens-cloud/introduction/introduction.md)
       + [역할 정의 이해](/help/screens-cloud/introduction/personas-screens-cloud.md)
-      + [Screens Cloud와 Adobe Analytics 통합](/help/screens-cloud/introduction/adobe-analytics-integration-with-screens.md)
+      + [Adobe Analytics와 Screens Cloud 통합](/help/screens-cloud/introduction/adobe-analytics-integration-with-screens.md)
    + Screens as a Cloud Service에 온보딩 {#onboarding-screens-cloud}
       + [최초 로그인](/help/screens-cloud/onboarding-screens-cloud/first-time-login-screens-cloud.md)
       + Cloud Manager에 추가 기능으로서의 Screens 프로그램 추가 {#adding-screens-addon}
@@ -756,7 +757,7 @@ ht-degree: 99%
 + Headless {#headless}
    + [Headless CMS란 무엇입니까?](/help/headless/what-is-headless.md)
    + [AEM Headless 소개](/help/headless/introduction.md)
-   + [개발자 포털 (추가 리소스)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+   + [개발자 포털(추가 리소스)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
    + [모범 사례 - 설정 및 사용](/help/headless/best-practices-setup-use.md)
    + 설정 {#setup}
       + [소개](/help/headless/setup/introduction.md)
@@ -804,7 +805,7 @@ ht-degree: 99%
          + [결합 방법](/help/journey-headless/developer/put-it-all-together.md)
          + [Headless 애플리케이션 실행 방법](/help/journey-headless/developer/go-live.md)
          + [옵션 - AEM을 통해 단일 페이지 애플리케이션을 제작하는 방법](/help/journey-headless/developer/create-spa.md)
-         + [개발자 포털 (추가 리소스)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+         + [개발자 포털(추가 리소스)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
       + Headless 콘텐츠 설계 여정 {#architect}
          + [AEM Headless 콘텐츠 설계 여정 개요](/help/journey-headless/architect/overview.md)
          + [AEM을 통한 Headless용 콘텐츠 모델링 - 소개](/help/journey-headless/architect/introduction.md)
@@ -901,7 +902,7 @@ ht-degree: 99%
       + [AEM 기술 재단](/help/implementing/developing/introduction/aem-technologies.md)
       + [API 참조 자료](/help/implementing/developing/reference-materials.md)
       + [서버측 API용 액세스 토큰 생성](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-      + [서버측 API용 액세스 토큰 생성 (레거시)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
+      + [서버측 API용 액세스 토큰 생성(레거시)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
       + [빠른 사이트 생성 및 프론트엔드 맞춤화](/help/implementing/developing/introduction/quick-site-creation.md)
       + [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [사이트 템플릿 및 테마 맞춤화](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
