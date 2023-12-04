@@ -3,15 +3,17 @@ title: AEM Forms 제출과 Adobe Workfront Fusion 통합
 description: Adobe Workfront Fusion을 사용하면 반복적인 작업에 집중하지 않고 새로운 작업에 집중할 수 있습니다. 양식 제출을 사용하여 Adobe Workfront Fusion을 적응형 양식에 연결할 수 있습니다.
 keywords: 적응형 양식을 Adobe Workfront Fusion, AEM Forms 제출과 Adobe Workfront Fusion 통합, AEM Forms과 Adobe Workfront Fusion, AEM Forms과 Workfront Fusion, AEM Forms, AEM Forms 및 Workfront Fusion에 Workfront Fusion 연결, Workfront Fusion과 AEM Forms을 연결하는 방법 및 Workfront Fusion을 양식에 연결하는 방법
 topic-tags: author, developer
-source-git-commit: b1a5c321d7b765a53c1c38fff9888eb22172edae
+source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1242'
 ht-degree: 3%
 
 ---
 
 
 # Adobe Workfront Fusion에 적응형 양식 제출
+
+<span class="preview"> 이 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 공식 이메일 ID에서 aem-forms-early-adopter-program@adobe.com에 작성하여 얼리어답터 프로그램에 참여하고 기능에 대한 액세스를 요청할 수 있습니다. </span>
 
 [Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) 문서 승인 워크플로, 이메일 필터링 및 정렬과 같은 동일한 작업을 반복하는 프로세스를 자동화하여 반복되는 작업 대신 새로운 작업에 집중할 수 있습니다. Adobe Workfront Fusion에는 여러 시나리오가 포함됩니다. 시나리오는 응용 프로그램과 웹 서비스 간에 데이터 전송을 실행하는 일련의 모듈로 구성됩니다. 시나리오에서는 작업을 자동화하기 위해 다양한 단계(모듈)를 추가합니다.
 

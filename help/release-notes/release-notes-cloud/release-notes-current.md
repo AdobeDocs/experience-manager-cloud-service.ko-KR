@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 8eb087bdda335b0a33e616eb534615396b220369
+source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 24%
+source-wordcount: '1279'
+ht-degree: 23%
 
 ---
 
@@ -103,7 +103,7 @@ ht-degree: 24%
 
 ### 얼리 어답터 프로그램 {#forms-early-adopter}
 
-* **Adobe Workfront Fusion 시나리오에 적응형 양식 제출**: Forms as a Cloud Service에서는 적응형 양식을 Adobe Workfront에 쉽게 연결할 수 있는 획기적인 옵션을 제공합니다. 이렇게 하면 적응형 양식을 Adobe Workfront 시나리오에 제출하는 프로세스가 간소화되므로 적응형 양식 제출 시 Workfront Fusion 시나리오를 트리거할 수 있습니다.
+* **[Adobe Workfront Fusion 시나리오에 적응형 양식 제출](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: Forms as a Cloud Service에서는 적응형 양식을 Adobe Workfront에 쉽게 연결할 수 있는 획기적인 옵션을 제공합니다. 이렇게 하면 적응형 양식을 Adobe Workfront 시나리오에 제출하는 프로세스가 간소화되므로 적응형 양식 제출 시 Workfront Fusion 시나리오를 트리거할 수 있습니다.
 
 * **[오른쪽에서 왼쪽 언어 지원](/help/forms/supporting-new-language-localization-core-components.md)**: 핵심 구성 요소에 빌드된 적응형 Forms은 이제 아랍어, 페르시아어 및 우르두와 같은 오른쪽에서 왼쪽 쓰기(RTL) 언어로 제공될 수 있습니다. RTL 언어는 전 세계 20억 명 이상의 사람들이 사용하고 있습니다. RTL 언어로 된 양식을 사용하면 적응형 양식의 범위를 확장하여 다양한 대상자를 수용하고 RTL 시장을 공략할 수 있습니다. 특정 지역에서는 현지 언어로 양식을 제공하는 것도 법적 의무입니다. 현지 언어를 수용함으로써, 광범위한 대상자에게 문호를 개방할 뿐만 아니라 관련 법률 및 규정을 준수할 수 있습니다.
 

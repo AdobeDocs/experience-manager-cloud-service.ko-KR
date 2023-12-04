@@ -2,10 +2,10 @@
 title: 핵심 구성 요소를 기반으로 새 로케일에 대한 지원을 적응형 양식에 추가하려면 어떻게 합니까?
 description: 적응형 양식에 대한 새 로케일을 추가하는 방법을 알아봅니다.
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: a801e6c605fff46ca07699727f3078c9a285a943
+source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
 workflow-type: tm+mt
-source-wordcount: '1348'
-ht-degree: 5%
+source-wordcount: '1335'
+ht-degree: 4%
 
 ---
 
@@ -15,6 +15,8 @@ ht-degree: 5%
 | -------- | ---------------------------- |
 | 기초 구성 요소 | [여기 클릭](supporting-new-language-localization.md) |
 | 핵심 구성 요소 | 이 문서 |
+
+<span class="preview"> 오른쪽에서 왼쪽 쓰기 언어 지원 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 공식 이메일 ID에서 aem-forms-early-adopter-program@adobe.com에 작성하여 얼리어답터 프로그램에 참여하고 기능에 대한 액세스를 요청할 수 있습니다. </span>
 
 AEM Forms은 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어-브라질어(pt-BR), 중국어(zh-CN), 중국어-대만(zh-TW) 및 한국어(ko-KR) 로케일을 즉시 지원합니다. 힌디어(hi_IN)와 같은 더 많은 로케일에 대한 지원을 추가할 수도 있습니다. 이러한 로케일을 추가하여 적응형 Forms을 아랍어, 페르시아어, 우르두어 등과 같은 RTL(오른쪽에서 왼쪽으로 쓰기) 언어로 표시할 수도 있습니다.
 
@@ -80,7 +82,7 @@ AEM Forms은 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it)
 ### 2. 가이드 현지화 서비스에 새 로케일 추가 {#add-a-locale-to-the-guide-localization-service}
 
 1. 이전 섹션에서 복제된 저장소 폴더를 일반 텍스트 편집기에서 엽니다.
-1. `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config` 폴더로 이동합니다. 다음을 찾을 수 있습니다. `<appid>` 다음에서 `archetype.properties` 프로젝트의 파일입니다.
+1. 다음 위치로 이동 `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config` 폴더를 삭제합니다. 다음을 찾을 수 있습니다. `<appid>` 다음에서 `archetype.properties` 프로젝트의 파일입니다.
 1. 편집할 `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config/Guide Localization Service.cfg.json` 페이지를 엽니다. 파일이 없으면 만듭니다. 지원되는 로케일이 있는 샘플 파일은 다음과 같습니다.
 
    ![샘플 안내서 Localization Service.cfg.json](locales.png)

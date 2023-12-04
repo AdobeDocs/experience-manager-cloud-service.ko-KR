@@ -1,12 +1,12 @@
 ---
-title: 적응형 양식에 대한 제출 액션을 구성하는 방법?
+title: 적응형 양식에 대한 제출 액션을 구성하는 방법
 description: 적응형 양식은 여러 제출 액션을 제공합니다. 제출 액션은 적응형 양식이 제출 후 처리되는 방식을 정의합니다. 기본 제공 제출 액션을 사용하거나 직접 만들 수 있습니다
 keywords: 적응형 양식에 대한 제출 액션을 선택하고, 적응형 양식을 sharepoint 목록에 연결하고, 적응형 양식을 sharepoint 문서 라이브러리에 연결하고, 적응형 양식을 양식 데이터 모델에 연결하는 방법
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 6ebc40b501472025cafffa258e253a53139a0301
+source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
 workflow-type: tm+mt
-source-wordcount: '4063'
-ht-degree: 86%
+source-wordcount: '4006'
+ht-degree: 84%
 
 ---
 
@@ -105,7 +105,7 @@ ht-degree: 86%
 
 ## SharePoint에 제출 {#submit-to-sharedrive}
 
-**[!UICONTROL SharePoint에 제출]** 제출 액션은 적응형 양식을 Microsoft® SharePoint Storage와 연결합니다. 양식 데이터 파일, 첨부 파일 또는 기록 문서를 연결된 Microsoft® SharePoint Storage에 제출할 수 있습니다.
+**[!UICONTROL SharePoint에 제출]** 제출 액션은 적응형 양식을 Microsoft® SharePoint Storage와 연결합니다. 양식 데이터 파일, 첨부 파일 또는 기록 문서를 연결된 Microsoft® Sharepoint Storage에 제출할 수 있습니다.
 
 SharePoint에 제출을 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 * [적응형 양식을 SharePoint 문서 라이브러리에 연결](#connect-af-sharepoint-doc-library)
@@ -205,7 +205,7 @@ AEM Forms을 Microsoft® Sharepoint 목록에 연결하려면:
 
 적응형 양식에서 생성된 SharePoint 목록 구성을 사용하여 데이터나 생성된 기록 문서를 SharePoint 목록에 저장할 수 있습니다. 적응형 양식의 SharePoint 목록을 다음으로 사용하려면 다음 단계를 수행하십시오.
 
-1. [Microsoft® SharePoint 목록 구성을 사용하여 양식 데이터 모델 만들기](/help/forms/create-form-data-models.md)
+1. [Microsoft을 사용하여 양식 데이터 모델 만들기](/help/forms/create-form-data-models.md)
 1. [데이터를 검색하고 전송하도록 양식 데이터 모델 구성](/help/forms/work-with-form-data-model.md#configure-services)
 1. [적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md)
 1. [양식 데이터 모델을 사용하여 제출 작업 구성](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
@@ -215,10 +215,10 @@ AEM Forms을 Microsoft® Sharepoint 목록에 연결하려면:
 >[!NOTE]
 >
 > Microsoft® SharePoint 목록에서는 다음 열 유형이 지원되지 않습니다.
-> * 이미지 열
-> * 메타데이터 열
-> * 개인 열
-> * 외부 데이터 열
+* 이미지 열
+* 메타데이터 열
+* 개인 열
+* 외부 데이터 열
 
 ## 양식 데이터 모델을 사용하여 제출 {#submit-using-form-data-model}
 
@@ -263,7 +263,7 @@ AEM Forms을 Microsoft® Sharepoint 목록에 연결하려면:
 
 >[!NOTE]
 >
->REST URL에서 필드를 매개변수로 전달하려면 필드가 다른 패널에 배치되는 경우에도 모든 필드의 요소 이름이 서로 달라야 합니다.
+REST URL에서 필드를 매개변수로 전달하려면 필드가 다른 패널에 배치되는 경우에도 모든 필드의 요소 이름이 서로 달라야 합니다.
 
 <!-- ## Send PDF via Email {#send-pdf-via-email}
 
@@ -312,7 +312,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ## OneDrive에 제출 {#submit-to-onedrive}
 
-**[!UICONTROL OneDrive에 제출]** 제출 액션은 적응형 양식을 Microsoft® OneDrive와 연결합니다. 양식 데이터, 파일, 첨부 파일 또는 기록 문서를 연결된 Microsoft® OneDrive Storage에 제출할 수 있습니다.
+**[!UICONTROL OneDrive에 제출]** 제출 액션은 적응형 양식을 Microsoft® OneDrive와 연결합니다. 양식 데이터, 파일, 첨부 파일 또는 기록 문서를 연결된 Microsoft® OneDrive 저장소에 제출할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
 
@@ -340,7 +340,7 @@ AEM Forms를 Microsoft® OneDrive Storage에 연결하려면
 
    >[!NOTE]
    >
-   > **클라이언트 보안** 필드는 Azure Active Directory 애플리케이션 구성에 따라 필수 또는 선택 사항입니다. 애플리케이션을 구성하여 클라이언트 보안을 사용하는 경우 클라이언트 보안을 제공해야 합니다.
+   **클라이언트 보안** 필드는 Azure Active Directory 애플리케이션 구성에 따라 필수 또는 선택 사항입니다. 애플리케이션을 구성하여 클라이언트 보안을 사용하는 경우 클라이언트 보안을 제공해야 합니다.
 
 1. **[!UICONTROL 연결]**&#x200B;을 클릭합니다. 연결이 완료되면 `Connection Successful` 메시지가 나타납니다.
 
@@ -348,8 +348,8 @@ AEM Forms를 Microsoft® OneDrive Storage에 연결하려면
 
    >[!NOTE]
    >
-   >* 기본적으로 `forms-ootb-storage-adaptive-forms-submission`은 OneDrive 컨테이너에 존재합니다.
-   > * 아직 존재하지 않는 경우 **폴더 만들기**&#x200B;를 클릭하여 폴더를 `forms-ootb-storage-adaptive-forms-submission`로 만듭니다.
+   * 기본적으로 `forms-ootb-storage-adaptive-forms-submission`은 OneDrive 컨테이너에 존재합니다.
+   * 아직 존재하지 않는 경우 **폴더 만들기**&#x200B;를 클릭하여 폴더를 `forms-ootb-storage-adaptive-forms-submission`로 만듭니다.
 
 이제 적응형 양식에서 제출 액션에 대한 OneDrive 스토리지 구성을 사용할 수 있습니다.
 
@@ -360,8 +360,8 @@ AEM Forms를 Microsoft® OneDrive Storage에 연결하려면
 
    >[!NOTE]
    >
-   > * OneDrive 스토리지가 생성되면 적응형 양식에 대한 [!UICONTROL 구성 컨테이너]를 선택합니다.
-   > * [!UICONTROL 구성 컨테이너]가 선택되지 않은 경우 제출 액션 속성 창에 글로벌 [!UICONTROL 스토리지 구성] 폴더가 나타납니다.
+   * OneDrive 스토리지가 생성되면 적응형 양식에 대한 [!UICONTROL 구성 컨테이너]를 선택합니다.
+   * [!UICONTROL 구성 컨테이너]가 선택되지 않은 경우 제출 액션 속성 창에 글로벌 [!UICONTROL 스토리지 구성] 폴더가 나타납니다.
 
 1. **제출 액션**&#x200B;을 **[!UICONTROL OneDrive에 제출]**로 선택합니다.
    ![OneDrive GIF](/help/forms/assets/onedrive-video.gif)
@@ -403,8 +403,8 @@ AEM Forms를 Azure Storage 컨테이너에 연결하려면
 
    >[!NOTE]
    >
-   > * OneDrive 스토리지가 생성되면 적응형 양식에 대한 [!UICONTROL 구성 컨테이너]를 선택합니다.
-   > * [!UICONTROL 구성 컨테이너]가 선택되지 않은 경우 제출 액션 속성 창에 글로벌 [!UICONTROL 스토리지 구성] 폴더가 나타납니다.
+   * OneDrive 스토리지가 생성되면 적응형 양식에 대한 [!UICONTROL 구성 컨테이너]를 선택합니다.
+   * [!UICONTROL 구성 컨테이너]가 선택되지 않은 경우 제출 액션 속성 창에 글로벌 [!UICONTROL 스토리지 구성] 폴더가 나타납니다.
 
 1. **제출 액션**&#x200B;을 **[!UICONTROL Azure Blob Storage에 제출]**로 선택합니다.
    ![Azure Blob Storage GIF](/help/forms/assets/azure-submit-video.gif)
@@ -469,7 +469,7 @@ AEM Forms를 Azure Storage 컨테이너에 연결하려면
 
 >[!NOTE]
 >
->서버측 유효성 검사는 양식 모델의 유효성을 검사합니다. 별도의 클라이언트 라이브러리를 만들어 유효성을 검사하고 동일한 클라이언트 라이브러리에서 HTML 스타일링과 DOM 조작과 같은 다른 항목과 혼합하지 않는 것이 좋습니다.
+서버측 유효성 검사는 양식 모델의 유효성을 검사합니다. 별도의 클라이언트 라이브러리를 만들어 유효성을 검사하고 동일한 클라이언트 라이브러리에서 HTML 스타일링과 DOM 조작과 같은 다른 항목과 혼합하지 않는 것이 좋습니다.
 
 ### 유효성 검사 표현식에서 사용자 정의 함수 지원 {#supporting-custom-functions-in-validation-expressions-br}
 
