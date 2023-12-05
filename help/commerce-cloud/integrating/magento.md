@@ -3,10 +3,10 @@ title: Commerce integration framework을 사용한 AEM 및 Adobe Commerce 통합
 description: AEM과 Adobe Commerce은 Commerce integration framework(CIF)를 사용하여 원활하게 통합됩니다. CIF을 사용하면 AEM이 Adobe Commerce 인스턴스에 액세스하고 GraphQL을 통해 Adobe Commerce과 통신할 수 있습니다. 또한 AEM 작성자는 제품 및 카테고리 선택기 및 제품 콘솔 을 사용하여 Adobe Commerce에서 온디맨드로 가져온 제품 및 카테고리 데이터를 검색할 수 있습니다. 또한 CIF은 상거래 프로젝트를 가속화할 수 있는 기본 상점 전면을 제공합니다.
 thumbnail: aem-magento-architecture.jpg
 exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6d63328ca17a00e0369c57714409f3f448cb311f
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 12%
+source-wordcount: '439'
+ht-degree: 10%
 
 ---
 
@@ -49,3 +49,8 @@ AEM CIF 핵심 구성 요소를 위한 Adobe Commerce과의 비즈니스 논리 
 >다음 [AEM CIF 핵심 구성 요소 맞춤화](../customizing/customize-cif-components.md) 페이지에는 CIF 핵심 구성 요소를 사용자 지정하는 방법에 대한 자세한 예제와 우수 사례가 있습니다.
 
 프로젝트 내에서 AEM CIF 핵심 구성 요소 및 사용자 지정 프로젝트 구성 요소는 Sling 컨텍스트 인식 구성을 통해 AEM 페이지와 연결된 Adobe Commerce 저장소에 대해 구성된 클라이언트를 쉽게 검색할 수 있습니다.
+
+## 검색 {#search}
+
+CIF은 즉시 사용 가능한 a [검색 핵심 구성 요소](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) 을 기반으로 하는 서버측 렌더링된 검색 경험입니다. [상거래 GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/). 상거래 고객은 다음을 사용할 수 있습니다. [라이브 검색](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=en) 대신, 팔로우 [링크](/help/commerce-cloud/integrating/live-search-plp.md) CIF - Live Search 통합에 대해 자세히 알아보십시오.
+

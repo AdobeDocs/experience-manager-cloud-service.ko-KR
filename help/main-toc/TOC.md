@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ba7976c192e3696b1367a4f9a5bf0c320a5f258e
+source-git-commit: ce98053371c8a40db3935c47356213e712a4e39e
 workflow-type: tm+mt
-source-wordcount: '4420'
+source-wordcount: '4429'
 ht-degree: 99%
 
 ---
@@ -727,6 +727,8 @@ ht-degree: 99%
          + [제품 경험 빌드](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
    + 통합 {#integrations}
       + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
+      + [라이브 검색 CIF 구성 요소](/help/commerce-cloud/integrating/live-search-plp.md)
+      + [라이브 검색 팝오버 CIF 구성 요소](/help/commerce-cloud/integrating/live-search-popover.md)
       + [서드파티 상거래 솔루션](/help/commerce-cloud/integrating/third-party.md)
       + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
    + AEM Storefront {#storefront}
