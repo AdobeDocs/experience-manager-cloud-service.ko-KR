@@ -3,9 +3,9 @@ title: AEM Forms 제출과 Adobe Workfront Fusion 통합
 description: Adobe Workfront Fusion을 사용하면 반복적인 작업에 집중하지 않고 새로운 작업에 집중할 수 있습니다. 양식 제출을 사용하여 Adobe Workfront Fusion을 적응형 양식에 연결할 수 있습니다.
 keywords: 적응형 양식을 Adobe Workfront Fusion, AEM Forms 제출과 Adobe Workfront Fusion 통합, AEM Forms과 Adobe Workfront Fusion, AEM Forms과 Workfront Fusion, AEM Forms, AEM Forms 및 Workfront Fusion에 Workfront Fusion 연결, Workfront Fusion과 AEM Forms을 연결하는 방법 및 Workfront Fusion을 양식에 연결하는 방법
 topic-tags: author, developer
-source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
+source-git-commit: cebdd5c4b1ad9531f2cc2893c2e7900658e451ed
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1240'
 ht-degree: 3%
 
 ---
@@ -144,7 +144,7 @@ Workfont Fusion에 대한 제출 액션을 구성할 수 있는 대상:
 - [새로운 적응형 Forms](#new-af-submit-action)
 - [기존 적응형 양식](#existing-af-submit-action)
 
-#### 2.1 Workfront Fusion용 새 적응형 양식의 제출 작업 구성 {#new-af-submit-action}
+#### Workfront Fusion용 새 적응형 양식의 제출 동작 구성 {#new-af-submit-action}
 
 Workfront Fusion용 새 적응형 양식의 제출 액션을 구성하려면 다음 작업을 수행하십시오.
 
@@ -165,7 +165,7 @@ Workfront Fusion용 새 적응형 양식의 제출 액션을 구성하려면 다
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 1. 새 적응형 양식의 이름을 지정하고 **[!UICONTROL 만들기]**.
 
-#### 2.2 Workfront Fusion용 기존 적응형 양식의 제출 동작 구성 {#existing-af-submit-action}
+#### Workfront Fusion용 기존 적응형 양식의 제출 동작 구성 {#existing-af-submit-action}
 
 Workfront Fusion용 기존 적응형 양식의 제출 액션을 구성하려면 다음 작업을 수행하십시오.
 
@@ -178,7 +178,7 @@ Workfront Fusion용 기존 적응형 양식의 제출 액션을 구성하려면 
    ![Workfront Fusion 작업 제출](/help/forms/assets/workfront-scenario-existing-af.png)
 
 1. 를 엽니다. **[!UICONTROL 제출]** 탭.
-1. 다음 항목 선택 **[제출 액션]** 다음으로: **[!UICONTROL Workfront Fusion 시나리오 호출]**
+1. 다음 항목 선택 **[!UICONTROL 제출 액션]** 다음으로: **[!UICONTROL Workfront Fusion 시나리오 호출]**
 1. 선택 **[!UICONTROL Workfront Fusion 시나리오]** 을 클릭합니다.
 1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
