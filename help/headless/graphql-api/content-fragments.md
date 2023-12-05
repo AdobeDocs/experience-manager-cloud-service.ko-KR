@@ -3,10 +3,10 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud Service에서 Headless 콘텐츠 게재를 위해 콘텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4923'
-ht-degree: 94%
+source-wordcount: '4863'
+ht-degree: 93%
 
 ---
 
@@ -115,7 +115,7 @@ AEM은 쿼리(두 유형 모두)를 Dispatcher 및 CDN에서 [캐시할 수 있�
 
 POST 요청을 사용하는 GraphQL 쿼리는 캐시되지 않으므로 권장되지 않습니다. 따라서 기본 인스턴스에서는 Dispatcher가 이러한 쿼리를 차단하도록 구성됩니다.
 
-GraphQL은 GET 요청도 지원하지만 이러한 요청은 지속 쿼리를 사용하면 피할 수 있는 제한(예: URL 길이)에 도달할 수 있습니다.
+GraphQL은 GET 요청도 지원하지만 이러한 요청은 지속 쿼리를 사용하여 피할 수 있는 제한(예: URL 길이)에 도달할 수 있습니다.
 
 자세한 내용은 [지속 쿼리 캐싱 활성화](/help/headless/deployment/dispatcher-caching.md)를 참조하십시오.
 
@@ -253,7 +253,7 @@ AEM용 GraphQL은 유형 목록을 지원합니다. 지원되는 모든 콘텐�
 | 열거 | `String` | 모델 생성 시 정의된 옵션 목록에서 옵션을 표시하는 데 사용됨 |
 | 태그 | `[String]` | AEM에서 사용되는 태그를 나타내는 문자열 목록을 표시하는 데 사용됨 |
 | 콘텐츠 참조 | `String`, `[String]` | AEM에서 다른 자산에 대한 경로를 표시하는 데 사용됨 |
-| 조각 참조 |  *모델 유형* <br><br>단일 필드:`Model` - 모델 유형, 직접 참조 <br><br> 하나의 참조 유형이 있는 다중 필드:`[Model]` - 유형의 배열`Model`, 배열에서 직접 참조됨 <br><br> 다중 참조 유형이 있는 다중 필드:`[AllFragmentModels]` - 공용 유형의 배열에서 참조되는 모든 모델 유형의 배열 |  모델이 생성될 때 정의된 특정 모델 유형의 다른 콘텐츠 조각을 하나 이상 참조하는 데 사용됨 |
+| 조각 참조 |  *모델 유형* <br><br>단일 필드: `Model` - 모델 유형, 직접 참조됨 <br><br>단일 참조 유형이 있는 다중 필드: `[Model]` - 유형 배열 `Model`, 배열에서 직접 참조됨 <br><br>여러 참조 유형이 있는 다중 필드: `[AllFragmentModels]` - 유니온 유형이 있는 배열에서 참조된 모든 모델 유형의 배열 |  모델이 생성될 때 정의된 특정 모델 유형의 다른 콘텐츠 조각을 하나 이상 참조하는 데 사용됨 |
 
 {style="table-layout:auto"}
 
@@ -519,7 +519,7 @@ GraphQL 쿼리에서 필터링을 사용하여 특정 데이터를 반환할 수
 * 각 하위 정의에는 표현식 세트를 제공하는 `_expressions` 배열과 표현식을 결합해야 하는 논리 연산자를 정의하는 `_logOp` 필드가 포함됩니다.
 * 각 표현식은 필드의 내용과 비교해야 하는 값(`value` 필드)과 연산자(`_operator` 필드)로 정의됩니다.
 
-항목을 `AND`와 결합하고자 하는 경우 `_logOp`를 생략할 수 있으며 동일한지 확인하고자 하는 경우 기본값인 `_operator`를 생략할 수 있습니다.
+다음을 생략할 수 있습니다. `_logOp` 항목을 와 결합하려면 `AND` 및 `_operator` 같음을 확인하려는 경우 기본값이 됩니다.
 
 다음 예는 `Provo`의 `lastName` 또는 `sjö`를 포함하는 모든 사람을 대소문자에 관계없이 필터링하는 전체 쿼리를 보여 줍니다.
 

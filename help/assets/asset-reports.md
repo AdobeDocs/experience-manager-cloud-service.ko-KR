@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '940'
-ht-degree: 12%
+source-wordcount: '935'
+ht-degree: 8%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 12%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=en) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
 에셋 보고를 통해 의 유틸리티를 평가할 수 있습니다. [!DNL Adobe Experience Manager Assets] 배포. 포함 [!DNL Assets], 디지털 에셋에 대한 다양한 보고서를 생성할 수 있습니다. 보고서는 시스템의 사용, 사용자가 에셋과 상호 작용하는 방법, 에셋에 대한 유용한 정보를 제공합니다 <!-- downloaded and --> 공유됨.
@@ -38,7 +38,7 @@ ht-degree: 12%
 * 만료
 * 수정
 * 게시
-* [!DNL Brand Portal] 페이지를
+* [!DNL Brand Portal] 게시
 * 디스크 사용량
 * 파일
 * 공유 링크
@@ -88,7 +88,7 @@ ht-degree: 12%
 
    ![파일 보고서의 세부 정보 페이지](assets/files_report.png)
 
-   The **[!UICONTROL Link Share]** report displays URLs to assets that are shared with external users from within [!DNL Assets]. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. --> The columns are not customizable.
+   다음 **[!UICONTROL 링크 공유]** 내부 외부 사용자와 공유되는 자산의 URL이 보고서에 표시됩니다. [!DNL Assets]. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. --> 열을 사용자 지정할 수 없습니다.
 
    다음 **[!UICONTROL 링크 공유]** 보고서에서는 아래에 표시되는 공유 URL만 게시하므로 하위 폴더 및 렌디션에 대한 옵션을 포함하지 않습니다. `/var/dam/share`.
 
@@ -105,7 +105,7 @@ ht-degree: 12%
    ![보고서 열 선택 또는 선택 취소](assets/custom_columns.png)
 
 1. 클릭 **[!UICONTROL 만들기]** 을 클릭합니다. 보고서 생성이 시작되었음을 알리는 메시지가 표시됩니다.
-1. 다음에서 [!UICONTROL 자산 보고서] 페이지, 보고서 생성 상태는 예를 들어 보고서 작업의 현재 상태를 기반으로 합니다 [!UICONTROL 성공], [!UICONTROL 실패], [!UICONTROL 대기열에 추가됨], 또는 [!UICONTROL 예약됨]. 받은 편지함에도 동일한 상태가 나타납니다.보고서 페이지를 보려면 보고서 링크를 클릭하십시오. 또는 보고서를 선택하고 를 클릭합니다 **[!UICONTROL 보기]** 을 클릭합니다.
+1. 다음에서 [!UICONTROL 자산 보고서] 페이지의 보고서 생성 상태는 다음과 같은 보고서 작업의 현재 상태를 기반으로 합니다. [!UICONTROL 성공], [!UICONTROL 실패], [!UICONTROL 대기열에 추가됨], 또는 [!UICONTROL 예약됨]. 받은 편지함에도 동일한 상태가 나타납니다.보고서 페이지를 보려면 보고서 링크를 클릭하십시오. 또는 보고서를 선택하고 를 클릭합니다 **[!UICONTROL 보기]** 을 클릭합니다.
 
    ![생성된 보고서](assets/report_page.png)
 
@@ -133,7 +133,7 @@ ht-degree: 12%
 * 만료
 * 수정
 * 게시
-* [!DNL Brand Portal] 페이지를
+* [!DNL Brand Portal] 게시
 * 파일
 
 이러한 보고서에 사용자 정의 열을 추가하려면 다음 단계를 수행합니다.
@@ -145,7 +145,7 @@ ht-degree: 12%
 
 1. 제목, 설명, 썸네일, 폴더 경로 및 날짜 범위 등 보고서 세부 사항을 적절히 구성합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
-1. 다음 목록에서 해당 정보를 선택합니다. **[!UICONTROL 기본 열]**. To display a custom column, specify the name of the column under **[!UICONTROL Custom Columns]**.
+1. 다음 목록에서 해당 정보를 선택합니다. **[!UICONTROL 기본 열]**. 사용자 지정 열을 표시하려면 아래에 열의 이름을 지정합니다. **[!UICONTROL 사용자 정의 열]**.
 
    ![보고서의 사용자 지정 열에 대한 이름 지정](assets/custom_columns-1.png)
 
@@ -193,13 +193,13 @@ TBD: How do enable this in CS now? Is it done using some OSGi config now?
 
 **추가 참조**
 
-* [에셋 번역](translate-assets.md)
+* [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [에셋이 지원되는 파일 형식](file-format-support.md)
-* [에셋 검색](search-assets.md)
-* [연결된 에셋](use-assets-across-connected-assets-instances.md)
+* [자산이 지원되는 파일 형식](file-format-support.md)
+* [자산 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
 * [메타데이터 스키마](metadata-schemas.md)
-* [에셋 다운로드](download-assets-from-aem.md)
+* [자산 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)

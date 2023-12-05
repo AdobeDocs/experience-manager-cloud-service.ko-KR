@@ -2,10 +2,10 @@
 title: 페이지에 ContextHub 추가 및 저장소 액세스
 description: 페이지에 ContextHub를 추가하여 ContextHub 기능을 활성화하고 ContextHub JavaScript 라이브러리에 연결합니다
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 1%
+source-wordcount: '897'
+ht-degree: 0%
 
 ---
 
@@ -139,7 +139,7 @@ ContextHub 세그먼트는 `/conf/<site>/settings/wcm/segments` 노드.
 
 >[!WARNING]
 >
->설치된 세그먼트는 프로젝트에 대한 자체 전용 구성을 작성하는 데 도움이 되는 참조 구성으로 제공되며, 이를 직접 사용해서는 안 됩니다.
+>설치된 세그먼트는 프로젝트에 대한 전용 구성을 구축하는 데 도움이 되는 참조 구성으로 제공됩니다. 직접 사용하지 마십시오.
 
 ## ContextHub 디버깅 {#debugging-contexthub}
 

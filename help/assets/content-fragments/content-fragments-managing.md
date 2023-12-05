@@ -1,11 +1,11 @@
 ---
-title: 컨텐츠 조각 관리 (에셋 - 콘텐츠 조각)
+title: 컨텐츠 조각 관리(자산 - 컨텐츠 조각)
 description: Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1876'
-ht-degree: 78%
+source-wordcount: '1873'
+ht-degree: 76%
 
 ---
 
@@ -36,9 +36,9 @@ Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐�
 >
 >콘텐츠 조각은 Sites 기능이지만 **자산**&#x200B;으로 저장됩니다.
 >
->이제는 주로 **[콘텐츠 조각](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** 콘솔과 함께 관리되지만 **자산** 콘솔에서도 계속 관리될 수 있습니다. 이 섹션에서는 다음의 관리에 대해 설명합니다. **에셋** 콘솔.
+>이제 를 통해 주로 관리됩니다. **[컨텐츠 조각](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** 콘솔에서 관리할 수 있습니다. **에셋** 콘솔. 이 섹션에서는 다음의 관리에 대해 설명합니다. **에셋** 콘솔.
 >
->콘텐츠 조각을 작성하는 두 가지 편집기가 있습니다. 이 단원에서는 주로 **에셋** 콘솔. 사이트 설명서 를 참조하십시오. [컨텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md), 새 편집기에 대한 세부 정보(주로 **컨텐츠 조각** console). 두 편집기 모두 상단 도구 모음에 토글 스위치가 있어 다른 편집기에 빠르게 액세스할 수 있습니다.
+>콘텐츠 조각 작성용 편집기에는 두 가지가 있습니다. 이 단원에서는 주로 **에셋** 콘솔. 사이트 설명서 를 참조하십시오. [컨텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md), 새 편집기에 대한 세부 정보(주로 **컨텐츠 조각** console). 두 편집기 모두 상단 도구 모음에 토글 스위치가 있어 다른 편집기에 빠르게 액세스할 수 있습니다.
 
 ## 콘텐츠 조각 만들기 {#creating-content-fragments}
 
@@ -361,7 +361,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 >
 모델이 아직 게시되지 않은 콘텐츠 조각을 게시하는 경우 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
 
-게시 환경에서 사용하려면 콘텐츠 조각을 게시해야 합니다. 이 작업은 표준 Assets 기능을 사용하여 수행됩니다.:
+게시 환경에서 사용하려면 콘텐츠 조각을 게시해야 합니다. 이 작업은 표준 Assets 기능을 사용하여 수행됩니다.
 
 * [빠른 게시](/help/assets/manage-publication.md#quick-publish)
 * [게시 관리](/help/assets/manage-publication.md#manage-publication)

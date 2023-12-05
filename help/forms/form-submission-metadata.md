@@ -4,9 +4,9 @@ description: 사용자 제공 데이터를 사용하여 제출된 양식의 메�
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,8 @@ ht-degree: 0%
 다음 단계를 수행하여 메타데이터에 요소를 추가합니다.
 
 1. 편집 모드에서 적응형 양식을 엽니다.\
-   편집 모드에서 양식을 열려면 양식 관리자에서 양식을 선택하고 을 누릅니다 **[!UICONTROL 열기]**.
-1. 편집 모드에서 구성 요소를 선택하고 을 누릅니다 ![필드 수준](assets/select_parent_icon.svg) > **[!DNL Adaptive Form Container]**&#x200B;을 누른 다음 을 누릅니다 ![cmppr](assets/configure-icon.svg).
+   편집 모드에서 양식을 열려면 양식 관리자에서 양식을 선택하고 을 선택합니다 **[!UICONTROL 열기]**.
+1. 편집 모드에서 구성 요소를 선택하고 ![필드 수준](assets/select_parent_icon.svg) > **[!DNL Adaptive Form Container]**&#x200B;을 선택한 다음 을 선택합니다 ![cmppr](assets/configure-icon.svg).
 1. 사이드바에서 를 클릭합니다. **[!DNL Metadata]**.
 1. 메타데이터 섹션에서 다음을 클릭합니다. **[!DNL Add]**.
 1. 메타데이터 탭의 값 필드를 사용하여 스크립트를 추가합니다. 추가하는 스크립트는 양식의 요소에서 데이터를 수집하고 메타데이터에 공급되는 값을 계산합니다.

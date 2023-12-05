@@ -4,10 +4,10 @@ description: 번역 규칙이 번역이 필요한 콘텐츠를 식별하는 방�
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1288'
-ht-degree: 95%
+ht-degree: 93%
 
 ---
 
@@ -214,7 +214,7 @@ UI에서 **속성** 탭에서 **번역**&#x200B;을 선택/선택 취소할 수 
 
 ### updateDestinationLanguage {#updatedestinationlanguage}
 
-**`updateDestinationLanguage`**&#x200B;는 `jcr:language`와 같이 텍스트가 아닌 언어 코드가 있는 속성에 대해 사용됩니다. 사용자는 텍스트가 아닌 언어 로케일을 소스에서 대상으로 번역하는 것입니다. 이러한 속성은 번역용으로 전송되지 않습니다.
+**`updateDestinationLanguage`** 는 다음과 같은 텍스트가 아닌 언어 코드가 있는 속성에 사용됩니다. `jcr:language`. 사용자는 텍스트가 아닌 언어 로케일을 소스에서 대상으로 번역하는 것입니다. 이러한 속성은 번역용으로 전송되지 않습니다.
 
 UI에서 **속성** 탭에서 **번역**&#x200B;을 선택/선택 해제하여 이 값을 수정할 수 있지만, 여기에는 언어 코드를 값으로 하는 특정 속성만 해당됩니다.
 

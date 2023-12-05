@@ -2,9 +2,9 @@
 title: 적응형 Forms의 레이아웃 기능은 무엇입니까?
 description: 다양한 디바이스에서 적응형 Forms의 레이아웃 및 모습은 레이아웃 설정의 적용을 받습니다. 다양한 레이아웃과 적용 방법을 이해합니다.
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '847'
 ht-degree: 8%
 
 ---
@@ -43,7 +43,7 @@ Before learning about the different layout capabilities of Adaptive Forms, read 
 
 양식 작성자는 루트 패널을 포함하여 적응형 양식의 각 패널과 레이아웃을 연결할 수 있습니다.
 
-패널 레이아웃은에서 사용할 수 있습니다. `/libs/fd/af/layouts/panel` 위치. 패널을 탭하고 을(를) 선택합니다 ![cmppr1](assets/configure-icon.svg) 패널 속성을 봅니다.
+패널 레이아웃은에서 사용할 수 있습니다. `/libs/fd/af/layouts/panel` 위치. 패널을 선택하고 ![cmppr1](assets/configure-icon.svg) 패널 속성을 봅니다.
 
 ![적응형 양식의 루트 패널에 대한 패널 레이아웃 목록](assets/layouts.png)
 

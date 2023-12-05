@@ -4,10 +4,10 @@ description: 다국어 웹 사이트를 개발할 때 번역을 위한 콘텐츠
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 84%
+source-wordcount: '756'
+ht-degree: 75%
 
 ---
 
@@ -68,8 +68,8 @@ ht-degree: 84%
 
 언어 루트를 만들려면 페이지를 만들고 ISO 언어 코드를 **이름** 속성 값으로 사용합니다. 언어 코드는 다음 형식 중 하나여야 합니다.
 
-* `<language-code>` - 지원되는 언어 코드는 ISO-639-1에서 정의된 두 자리 코드입니다(예: `en`).
-* `<language-code>_<country-code>` 또는 `<language-code>-<country-code>` - 지원되는 국가 코드는 ISO 3166에서 정의된 소문자 또는 대문자 두 자리 코드입니다(예: `en_US`, `en_us`, `en_GB`, `en-gb`).
+* `<language-code>` - 지원되는 언어 코드는 ISO-639-1에서 정의된 두 자리 코드입니다(예: ). `en`.
+* `<language-code>_<country-code>` 또는 `<language-code>-<country-code>` - 지원되는 국가 코드는 ISO 3166에서 정의된 소문자 또는 대문자 두 자리 코드입니다. 예: `en_US`, `en_us`, `en_GB`, `en-gb`.
 
 전역 사이트에 대해 선택한 구조에 따라 두 형식 중 하나를 사용할 수 있습니다. 예를 들어 WKND 샘플 사이트의 프랑스어 언어 사본의 루트 페이지에는 **이름** 속성인 `fr`이 있습니다. 다음 **이름** 속성은 저장소의 페이지 노드 이름으로 사용되므로 페이지 경로를 결정합니다(`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
@@ -80,7 +80,7 @@ ht-degree: 84%
    ![페이지 제작](../assets/create-page.png)
 
 1. 페이지 템플릿을 선택한 다음 을 선택합니다. **다음**.
-1. **이름** 필드에 국가 코드를 `<language-code>` 또는 `<language-code>_<country-code>`의 형식으로 입력합니다(예: `en`, `en_US`, `en_us`, `en_GB`, `en_gb`). 페이지 제목을 입력합니다.
+1. 다음에서 **이름** 필드 형식으로 국가 코드를 입력합니다. `<language-code>` 또는 `<language-code>_<country-code>`, 예: `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. 페이지 제목을 입력합니다.
 
    ![언어 루트 페이지 만들기](../assets/create-language-root.png)
 
@@ -102,7 +102,7 @@ AEM은 생성된 언어 루트 목록을 표시하는 **참조** 레일을 제�
 
 ## 여러 수준의 언어 사본 {#multiple-levels}
 
-언어 루트를 언어 사본의 루트로 인식되도록 유지하면서 노드 아래에 그룹화할 수도 있습니다(예: 그룹별).
+언어 루트는 언어 사본의 루트로 인식되는 동안 노드 아래에 그룹화할 수도 있습니다(예: 지역별).
 
 ```text
 /content

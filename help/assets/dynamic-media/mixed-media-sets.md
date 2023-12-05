@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 14%
+source-wordcount: '1507'
+ht-degree: 12%
 
 ---
 
@@ -158,9 +158,9 @@ Start by uploading the images and videos for your Mixed Media Sets. 사용자는
 
    >[!NOTE]
    >
-   >* To edit the assets in a Mixed Media Set - Navigate to the Mixed Media Set. Experience Manager 세트 미리 보기 페이지에서 세트를 열 수 있도록 세트를 탭(선택하지 않음)합니다. 왼쪽 레일에서 드롭다운 캐럿을 선택하여 드롭다운 목록을 연 다음 을 선택합니다 **[!UICONTROL 구성원 설정]**. 구성원 설정 페이지에서 자산을 마우스로 가리킨 다음 을 선택합니다 **[!UICONTROL 편집]** (연필 아이콘) 을 클릭하여 편집 페이지를 엽니다.
+   >* 혼합 미디어 세트의 자산을 편집하려면 - 혼합 미디어 세트로 이동합니다. Experience Manager 세트 미리보기 페이지에서 세트를 열 수 있도록 세트를 선택(선택하지 않음)합니다. 왼쪽 레일에서 드롭다운 캐럿을 선택하여 드롭다운 목록을 연 다음 을 선택합니다 **[!UICONTROL 구성원 설정]**. 구성원 설정 페이지에서 자산을 마우스로 가리킨 다음 을 선택합니다 **[!UICONTROL 편집]** (연필 아이콘) 을 클릭하여 편집 페이지를 엽니다.
    >
-   >* To delete an entire Mixed Media Set - From any viewing mode (such as Card view or Column view), navigate to the Mixed Media Set. 세트를 마우스로 가리킨 다음 을 선택합니다 **[!UICONTROL 선택]** (확인 표시 아이콘) 누르기 **[!UICONTROL 백스페이스]** 키보드에서 또는 을(를) 선택합니다 **[!UICONTROL 자세히]** (세 점의 행), 다음 선택 **[!UICONTROL 삭제]**.
+   >* 전체 혼합 미디어 세트를 삭제하려면 보기 모드(예: 카드 보기 또는 열 보기)에서 혼합 미디어 세트로 이동합니다. 세트를 마우스로 가리킨 다음 을 선택합니다 **[!UICONTROL 선택]** (확인 표시 아이콘) 누르기 **[!UICONTROL 백스페이스]** 키보드에서 또는 을(를) 선택합니다 **[!UICONTROL 자세히]** (세 점의 행), 다음 선택 **[!UICONTROL 삭제]**.
 
 ## 혼합 미디어 집합 미리 보기 {#previewing-mixed-media-sets}
 

@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '5964'
-ht-degree: 3%
+source-wordcount: '5863'
+ht-degree: 2%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 3%
 
 <!-- 
 
-There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now must call a new interactive video
+There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This must now call a new interactive video
 
 -->
 
@@ -318,7 +318,7 @@ MXF 비디오 포맷은 Dynamic Media의 대화형 비디오에 사용할 수 �
         <td>30초</td>
         </tr>
         <tr>
-        <td>1 ~ 2분</td>
+        <td>1-2분</td>
         <td>20초<br /> </td>
         </tr>
         <tr>
@@ -493,7 +493,7 @@ MXF 비디오 포맷은 Dynamic Media의 대화형 비디오에 사용할 수 �
 
    >[!NOTE]
    >
-   When you save your interactive video, an associated `.vtt` file is automatically saved with it. The `.vtt` file is saved to the `_VTT` folder at the root of **[!UICONTROL Assets]**. The file and folder is necessary for your interactive video to play correctly on your website. As such, do not move, edit, or delete the `_VTT` folder or its contents.
+   When you save your interactive video, an associated `.vtt` file is automatically saved with it. 다음 `.vtt` 파일이 `_VTT` 루트에 있는 폴더 **[!UICONTROL 에셋]**. The file and folder is necessary for your interactive video to play correctly on your website. As such, do not move, edit, or delete the `_VTT` folder or its contents.
 
 1. 대화형 비디오를 게시합니다. 게시하면 포함 코드 또는 URL이 만들어지므로 이를 복사하여 웹 사이트 경험에 붙여넣을 수 있습니다.
 

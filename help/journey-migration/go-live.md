@@ -2,9 +2,9 @@
 title: 실행
 description: 코드 및 콘텐츠가 클라우드에 준비되면 마이그레이션을 수행하는 방법을 알아봅니다
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1697'
 ht-degree: 4%
 
 ---
@@ -86,7 +86,7 @@ ht-degree: 4%
 
 **콘텐츠 마이그레이션을 수행하는 동안 AEM 소스에 대한 로드 최적화**
 
-AEM 소스의 로드는 추출 단계 동안 더 커집니다. 다음 사항에 주의해야 합니다.
+AEM 소스의 로드는 추출 단계 동안 더 커집니다. 다음 사항에 주의하십시오.
 
 * 컨텐츠 전송 도구는 4GB의 JVM 힙을 사용하는 외부 Java 프로세스입니다
 * AzCopy가 아닌 버전은 바이너리를 다운로드하고 소스 AEM 작성자의 임시 공간에 저장하여 디스크 I/O를 사용한 다음 네트워크 대역폭을 사용하는 Azure 컨테이너에 업로드합니다

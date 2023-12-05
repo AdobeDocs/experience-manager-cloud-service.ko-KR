@@ -3,10 +3,10 @@ title: 이미지 편집
 description: ' [!DNL Adobe Photoshop Express] 기반 옵션을 사용하여 이미지를 편집하고 업데이트된 이미지를 버전으로 저장합니다.'
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 75%
+source-wordcount: '1136'
+ht-degree: 76%
 
 ---
 
@@ -91,7 +91,7 @@ Express에 액세스할 수 있는 사용자는 이제 AEM Assets 내에서 직�
 
    ![Adobe Express이 포함된 편집기](assets/embedded-editor.png)
 
-   의 기능을 활용할 수 있습니다. [!DNL Adobe Express] 모든 이미지 편집 관련 작업을 수행하려면 다음을 수행합니다. [이미지 크기 조정](https://helpx.adobe.com/in/express/using/resize-image.html), [배경색 제거 또는 변경](https://helpx.adobe.com/in/express/using/remove-background.html), [이미지 자르기](https://helpx.adobe.com/in/express/using/crop-image.html)및 기타.
+   다음의 기능을 사용할 수 있습니다. [!DNL Adobe Express] 모든 이미지 편집 관련 작업을 수행하려면 다음을 수행합니다. [이미지 크기 조정](https://helpx.adobe.com/in/express/using/resize-image.html), [배경색 제거 또는 변경](https://helpx.adobe.com/in/express/using/remove-background.html), [이미지 자르기](https://helpx.adobe.com/in/express/using/crop-image.html)및 기타.
 
 1. 이미지 편집이 완료되면 에셋을 새 에셋으로 다운로드하거나 에셋을 새 버전으로 저장할 수 있습니다.
 

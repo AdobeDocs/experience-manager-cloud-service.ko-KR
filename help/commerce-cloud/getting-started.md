@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1104'
-ht-degree: 3%
+source-wordcount: '1066'
+ht-degree: 1%
 
 ---
 
@@ -107,7 +107,7 @@ CIF 추가 기능 및 [CIF 핵심 구성 요소](https://github.com/adobe/aem-co
 
 이 구성은 다음 단계에 따라 CIF Cloud Service 구성을 통해 프로젝트에 대해 조정할 수 있습니다.
 
-1. AEM에서 도구 -> Cloud Service -> CIF 구성으로 이동합니다.
+1. AEM에서 도구 > Cloud Service > CIF 구성으로 이동합니다.
 
 2. 변경할 상거래 구성을 선택합니다.
 

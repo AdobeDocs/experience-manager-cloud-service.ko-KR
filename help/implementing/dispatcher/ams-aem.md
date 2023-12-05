@@ -3,10 +3,10 @@ title: AMS에서 AEM as a Cloud Service로 Dispatcher 구성 마이그레이션
 description: AMS에서 AEM as a Cloud Service로 Dispatcher 구성 마이그레이션
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1455'
-ht-degree: 16%
+source-wordcount: '1459'
+ht-degree: 7%
 
 ---
 
@@ -102,11 +102,11 @@ $ validator httpd .
 에서 팜 파일 제거 `conf.dispatcher.d/enabled_farms` 이(가) `author`, `unhealthy`, `health`,
 `lc` 또는 `flush` 이름을 입력합니다. 의 모든 팜 파일 `conf.dispatcher.d/available_farms` 에 연결되어 있지 않은 항목도 제거할 수 있습니다.
 
-### 팜 파일 이름 변경
+### 팜 파일 이름 바꾸기
 
 의 모든 팜 `conf.dispatcher.d/enabled_farms` 패턴과 일치하도록 이름을 변경해야 합니다. `*.farm`, 예를 들어 팜 파일 `customerX_farm.any` 이름을 변경해야 함 `customerX.farm`.
 
-### cache 확인
+### 캐시 확인
 
 디렉토리 입력 `conf.dispatcher.d/cache`.
 
@@ -130,7 +130,7 @@ If `conf.dispatcher.d/cache` 은(는) 현재 비어 있습니다. 파일을 복�
 $include "../cache/default_invalidate.any"
 ```
 
-### client headers 확인
+### 클라이언트 헤더 확인
 
 디렉토리 입력 `conf.dispatcher.d/clientheaders`.
 
@@ -257,6 +257,6 @@ $ docker_run.sh out docker.for.mac.localhost:4503 8080
 
 ### 새 Dispatcher 구성 사용
 
-축하합니다! 유효성 검사기가 더 이상 문제를 보고하지 않고 Docker 컨테이너가 아무런 오류 또는 경고 없이 시작하는 경우 구성을 git 저장소의 `dispatcher/src` 하위 디렉토리로 이동할 수 있습니다.
+축하합니다! 유효성 검사기가 더 이상 문제를 보고하지 않고 Docker 컨테이너가 아무런 오류 또는 경고 없이 시작하는 경우 구성을 로 이동할 수 있습니다. `dispatcher/src` git 저장소의 하위 디렉터리.
 
 **AMS Dispatcher 구성 버전 1을 사용하는 고객은 고객 지원 센터에 문의하여 위의 지침을 따를 수 있도록 버전 1에서 버전 2로 마이그레이션하는 데 도움을 얻어야 합니다.**

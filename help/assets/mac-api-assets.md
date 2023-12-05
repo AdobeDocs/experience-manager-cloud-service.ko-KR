@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1587'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=en) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
 ## 개요 {#overview}
@@ -125,7 +125,7 @@ A [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) 는 �
 
 **응답**: 반환된 엔티티의 클래스가 에셋 또는 폴더입니다. 포함된 엔티티의 등록 정보는 각 엔티티의 전체 등록 정보 세트의 하위 집합입니다. 엔티티의 전체 표현을 가져오려면 클라이언트는 링크가 가리키는 URL의 콘텐츠를 `rel` / `self`.
 
-## 폴더를 만듭니다 {#create-a-folder}
+## 폴더 만들기 {#create-a-folder}
 
 를 만듭니다. `sling`: `OrderedFolder` 지정된 경로에서. If `*` 가 노드 이름 대신 제공되면 서블릿은 매개 변수 이름을 노드 이름으로 사용합니다. 요청은 다음 중 하나를 수락합니다.
 

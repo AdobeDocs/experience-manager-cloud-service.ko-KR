@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service에 대한 IMS 지원
 description: Adobe Experience Manager as a Cloud Service에 대한 이미지 관리 시스템 지원
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1978'
-ht-degree: 100%
+source-wordcount: '1917'
+ht-degree: 99%
 
 ---
 
@@ -55,7 +55,7 @@ AEM 고객은 이미 조직이 프로비저닝되어 있어야 하며, IMS 프�
 ![IMS 온보딩](/help/security/assets/ims2.png)
 
 1. 지정된 시스템 관리자는 Cloud Manager에 로그인하라는 초대를 받습니다. Cloud Manager에 로그인한 후 시스템 관리자는 AEM 프로그램 및 환경을 프로비저닝하거나 관리 작업을 위해 Admin Console로 이동하는 것을 선택할 수 있습니다.
-1. 시스템 관리자는 도메인을 요청하여 해당 도메인의 소유권을 확인합니다(예: acme.com).
+1. 시스템 관리자는 도메인을 요청하여 각 도메인의 소유권을 확인합니다(예: acme.com).
 1. 시스템 관리자가 사용자 디렉터리를 설정합니다.
 1. 시스템 관리자는 SSO(Single Sign-On)를 설정하기 위해 Admin Console에서 IDP 구성을 수행합니다.
 1. AEM 관리자는 평소대로 로컬 그룹 및 권한을 관리합니다.

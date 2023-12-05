@@ -2,9 +2,9 @@
 title: 대형 콘텐츠 저장소 처리
 description: 이 섹션에서는 대용량 콘텐츠 저장소 처리에 대해 설명합니다
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 858e10f99e2015a1488bb9e1d0990a553c5f6d04
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1800'
 ht-degree: 8%
 
 ---
@@ -179,7 +179,7 @@ AzCopy의 로그 항목은 추출 로그에 표시되며, 접두사로 c.a.g.s.m
 > 추출의 처음 몇 분 동안은 추출 로그에서 문제의 징후를 면밀히 확인하십시오. 예를 들어 소스 Azure 컨테이너를 찾을 수 없는 경우 기록되는 내용은 다음과 같습니다.
 
 ```
-[AzCopy pre-copy] failed to perform copy command due to error: cannot start job due to error: cannot list files due to reason -> github.com/Azure/azure-storage-blob-go/azblob.newStorageError, github.com/Azure/azure-storage-blob-go@v0.10.1-0.20210407023846-16cf969ec1c3/azblob/zc_storage_error.go:42
+[AzCopy pre-copy] failed to perform copy command due to error: cannot start job due to error: cannot list files due to reason > github.com/Azure/azure-storage-blob-go/azblob.newStorageError, github.com/Azure/azure-storage-blob-go@v0.10.1-0.20210407023846-16cf969ec1c3/azblob/zc_storage_error.go:42
 [AzCopy pre-copy] ===== RESPONSE ERROR (ServiceCode=ContainerNotFound) =====
 [AzCopy pre-copy] Description=The specified container does not exist.
 [AzCopy pre-copy] RequestId:5fb674b9-201e-001b-2a5b-527400000000

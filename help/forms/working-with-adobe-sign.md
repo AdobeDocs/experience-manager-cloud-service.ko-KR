@@ -6,10 +6,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3172'
-ht-degree: 3%
+source-wordcount: '3131'
+ht-degree: 2%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 3%
 Sign이 활성화된 적응형 양식을 만들려면 다음 작업을 수행하십시오.
 
 1. 다음으로 이동 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**.
-1. 누르기 **[!UICONTROL 만들기]** 및 선택 **[!UICONTROL 적응형 양식]**. 템플릿 목록이 나타납니다. 템플릿 선택 및 탭 **[!UICONTROL 다음]**.
+1. 선택 **[!UICONTROL 만들기]** 및 선택 **[!UICONTROL 적응형 양식]**. 템플릿 목록이 나타납니다. 템플릿 선택 및 선택 **[!UICONTROL 다음]**.
 1. 다음에서 **[!UICONTROL 기본]** 탭:
 
    1. 다음을 지정합니다. **[!UICONTROL 이름]** 및 **[!UICONTROL 제목]** 적응형 양식용.
@@ -91,14 +91,14 @@ Sign이 활성화된 적응형 양식을 만들려면 다음 작업을 수행하
 
    * 사용자 정의 양식 템플릿이 없는 경우 **[!UICONTROL 기록 문서 생성]** 옵션을 선택합니다. 옵션을 사용하면 서명을 위해 전송된 문서에 적응형 양식의 모든 필드가 표시됩니다.
 
-1. **[!UICONTROL 만들기를 탭합니다.]** 서명이 활성화된 적응형 양식이 만들어집니다. 다음을 추가할 수 있습니다. [!DNL Adobe Sign] 필드를 양식으로 보내고 서명을 위해 보냅니다.
+1. 선택 **[!UICONTROL 만들기.]** 서명이 활성화된 적응형 양식이 만들어집니다. 다음을 추가할 수 있습니다. [!DNL Adobe Sign] 필드를 양식으로 보내고 서명을 위해 보냅니다.
 
 #### 사용 [!DNL Adobe Sign] 적응형 양식용 {#editafsign}
 
 사용 [!DNL Adobe Sign] 기존 적응형 양식에서:
 
 1. 다음으로 이동 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**.
-1. 적응형 양식을 선택하고 을 누릅니다 **[!UICONTROL 속성]**.
+1. 적응형 양식을 선택하고 **[!UICONTROL 속성]**.
 1. 다음에서 **[!UICONTROL 기본]** 탭에서 [구성 컨테이너](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) 통합하는 동안 생성됨 [!DNL Adobe Sign] 포함 [!DNL AEM Forms].
 1. 다음에서 **[!UICONTROL 양식 모드]** 탭에서 다음 옵션 중 하나를 선택합니다.
 
@@ -106,7 +106,7 @@ Sign이 활성화된 적응형 양식을 만들려면 다음 작업을 수행하
 
    * 사용자 정의 양식 템플릿이 없는 경우 **[!UICONTROL 기록 문서 생성]** 옵션을 선택합니다. 옵션을 사용하면 서명을 위해 전송된 문서에 적응형 양식의 모든 필드가 표시됩니다.
 
-1. 누르기 **[!UICONTROL 저장 및 닫기]**. 적응형 양식이 다음에 대해 활성화되어 있습니다. [!DNL Adobe Sign]. 이제 다음을 추가할 수 있습니다. [!DNL Adobe Sign] 필드를 양식으로 보내고 서명을 위해 보냅니다.
+1. 선택 **[!UICONTROL 저장 및 닫기]**. 적응형 양식이 다음에 대해 활성화되어 있습니다. [!DNL Adobe Sign]. 이제 다음을 추가할 수 있습니다. [!DNL Adobe Sign] 필드를 양식으로 보내고 서명을 위해 보냅니다.
 
 ### 추가 [!DNL Adobe Sign] 적응형 양식에 대한 필드 {#addadobesignfieldstoanadaptiveform}
 
@@ -126,15 +126,15 @@ Sign이 활성화된 적응형 양식을 만들려면 다음 작업을 수행하
    >  * 사용 [!DNL Adobe Sign] 기록 문서를 자동으로 생성하는 적응형 Forms에 대해서만 차단합니다. 기록 문서 또는 적응형 양식 기반의 양식 템플릿을 생성하는 데 사용자 지정 XDP를 사용하는 경우 [!DNL Adobe Sign] 블록은 지원되지 않습니다.
 
 
-1. 다음 항목 선택 **[!UICONTROL Adobe Sign 차단]** 구성 요소 및 탭 **[!UICONTROL 편집]** ![편집](assets/Smock_Edit_18_N.svg) 아이콘. 필드를 추가하고 필드의 형식 지정을 지정하는 옵션을 표시합니다.
+1. 다음 항목 선택 **[!UICONTROL Adobe Sign 차단]** 구성 요소를 선택하고 **[!UICONTROL 편집]** ![편집](assets/Smock_Edit_18_N.svg) 아이콘. 필드를 추가하고 필드의 형식 지정을 지정하는 옵션을 표시합니다.
 
    ![adobe-sign-block-select-fields](assets/adobe-sign-block-select-fields.png)
 
    **A.** 선택 및 추가 [!DNL Adobe Sign] 필드. **B.** 확장 [!DNL Adobe Sign] 전체 화면 보기로 차단
 
-1. 탭 **[!UICONTROL Adobe Sign]** 필드 ![Adobe Sign](assets/adobesign.png) 아이콘. 선택 및 추가 옵션이 표시됩니다 [!DNL Adobe Sign] 필드.
+1. 다음 항목 선택 **[!UICONTROL Adobe Sign]** 필드 ![Adobe Sign](assets/adobesign.png) 아이콘. 선택 및 추가 옵션이 표시됩니다 [!DNL Adobe Sign] 필드.
 
-   확장 **[!UICONTROL 유형]** 을(를) 선택할 드롭다운 필드 [!DNL Adobe Sign] 필드 및 탭 완료 ![저장](assets/save_icon.svg) 선택한 필드를 추가할 아이콘 [!DNL Adobe Sign] 차단합니다. 다음 **[!UICONTROL 유형]** 드롭다운 필드에는 서명, 수신자 정보 및 데이터 필드 유형이 포함됩니다. [!DNL Adobe Sign] AEM과 통합 [!DNL Forms] 다음에 나열된 지원 필드 [!UICONTROL 유형] 드롭다운 상자에만 해당됩니다. 에 대한 자세한 정보 [!DNL Adobe Sign] 필드, 참조 [Adobe Sign 설명서](https://helpx.adobe.com/sign/help/field-types.html).
+   확장 **[!UICONTROL 유형]** 을(를) 선택할 드롭다운 필드 [!DNL Adobe Sign] 필드 및 선택 완료 ![저장](assets/save_icon.svg) 선택한 필드를 추가할 아이콘 [!DNL Adobe Sign] 차단합니다. 다음 **[!UICONTROL 유형]** 드롭다운 필드에는 서명, 수신자 정보 및 데이터 필드 유형이 포함됩니다. [!DNL Adobe Sign] AEM과 통합 [!DNL Forms] 다음에 나열된 지원 필드 [!UICONTROL 유형] 드롭다운 상자에만 해당됩니다. 에 대한 자세한 정보 [!DNL Adobe Sign] 필드, 참조 [Adobe Sign 설명서](https://helpx.adobe.com/sign/help/field-types.html).
 
    ![adobe-sign-block-fields-options](assets/adobe-sign-block-fields-options.png)
 
@@ -149,7 +149,7 @@ Sign이 활성화된 적응형 양식을 만들려면 다음 작업을 수행하
 
 기본, [!DNL Adobe Sign] 은(는) 적응형 양식에 대해 활성화되지 않습니다. 활성화하려면
 
-1. 콘텐츠 브라우저에서 을 누릅니다. **[!UICONTROL 양식 컨테이너]**&#x200B;을 누르고 **[!UICONTROL 구성]** ![구성](assets/Smock_Wrench_18_N.svg) 아이콘. 속성 브라우저를 열고 적응형 양식 컨테이너 속성을 표시합니다.
+1. 콘텐츠 브라우저에서 다음을 선택합니다 **[!UICONTROL 양식 컨테이너]**&#x200B;을(를) 클릭하고 **[!UICONTROL 구성]** ![구성](assets/Smock_Wrench_18_N.svg) 아이콘. 속성 브라우저를 열고 적응형 양식 컨테이너 속성을 표시합니다.
 1. 속성 브라우저에서 **[!UICONTROL 전자 서명]** 아코디언을 선택하고 **[!UICONTROL Adobe Sign 활성화]** 옵션을 선택합니다. 다음을 가능하게 합니다. [!DNL Adobe Sign] 적응형 양식용.
 
 ### 선택 [!DNL Adobe Sign] Cloud Service 및 서명 순서 {#select-adobe-sign-cloud-service-and-signing-order}
@@ -162,7 +162,7 @@ Sign이 활성화된 적응형 양식을 만들려면 다음 작업을 수행하
 
 ![Cloud-service](assets/cloud-service.png)
 
-1. 콘텐츠 브라우저에서 을 누릅니다. **[!UICONTROL 양식 컨테이너]**&#x200B;을 누르고 **[!UICONTROL 구성]** ![구성](assets/Smock_Wrench_18_N.svg) 아이콘. 속성 브라우저를 열고 적응형 양식 컨테이너 속성을 표시합니다.
+1. 콘텐츠 브라우저에서 다음을 선택합니다 **[!UICONTROL 양식 컨테이너]**&#x200B;을(를) 클릭하고 **[!UICONTROL 구성]** ![구성](assets/Smock_Wrench_18_N.svg) 아이콘. 속성 브라우저를 열고 적응형 양식 컨테이너 속성을 표시합니다.
 1. 속성 브라우저에서 **[!UICONTROL 전자 서명]** 아코디언을 선택하고 **[!UICONTROL Adobe Sign 활성화]** 옵션을 선택합니다. 다음을 가능하게 합니다. [!DNL Adobe Sign] 적응형 양식용.
 1. 이미 구성된 목록에서 Cloud Service 선택 [!DNL Adobe Sign] Cloud Service.
 
@@ -178,22 +178,22 @@ Sign이 활성화된 적응형 양식을 만들려면 다음 작업을 수행하
 
 1. 계약 ID 필드를 사용하여 bindref를 계약 ID(agreementId)에 연결합니다. 스키마 기반 양식에 대한 제출 데이터의 afBoundData 섹션에 계약 ID를 추가합니다. 계약 ID는 모든 Adobe Sign 지원 양식에 대해 제출된 데이터의 afSubmissionInfo 섹션에도 추가됩니다. 사용자 지정 코드를 사용하여 계약 상태를 추적하는 데 계약 ID를 사용할 수 있습니다(사용자 지정 구현 필요).
 
-1. [적응형 양식에 수신자 추가](working-with-adobe-sign.md#addsignerstoanadaptiveform) 완료 를 탭합니다. ![저장](assets/save_icon.svg) 아이콘 을 클릭하여 변경 내용을 저장합니다.
+1. [적응형 양식에 수신자 추가](working-with-adobe-sign.md#addsignerstoanadaptiveform) 완료를 선택합니다. ![저장](assets/save_icon.svg) 아이콘 을 클릭하여 변경 내용을 저장합니다.
 
 ### 적응형 양식에 수신자 추가 {#addsignerstoanadaptiveform}
 
 Adobe Sign 계약에 대해 한 명 또는 여러 명의 수신자가 있을 수 있습니다. 수신자를 추가할 때 수신자에 대한 인증 세부 정보를 구성하고 양식 작성기와 수신자가 동일한 사람인지 선택할 수도 있습니다. 수신자에 대한 다양한 세부 정보를 추가하고 제공하려면 다음 단계를 수행하십시오.
 
-1. 콘텐츠 브라우저에서 을 누릅니다. **[!UICONTROL 양식 컨테이너]**&#x200B;을 누르고 **[!UICONTROL 구성]** ![구성](assets/Smock_Wrench_18_N.svg) 아이콘. 적응형 양식 컨테이너 속성이 있는 속성 브라우저를 엽니다.
+1. 콘텐츠 브라우저에서 다음을 선택합니다 **[!UICONTROL 양식 컨테이너]**&#x200B;을(를) 클릭하고 **[!UICONTROL 구성]** ![구성](assets/Smock_Wrench_18_N.svg) 아이콘. 적응형 양식 컨테이너 속성이 있는 속성 브라우저를 엽니다.
 1. 속성 브라우저에서 **[!UICONTROL 전자 서명]** 아코디언을 선택하고 **[!UICONTROL Adobe Sign 활성화]** 옵션을 선택합니다. 다음을 가능하게 합니다. [!DNL Adobe Sign] 적응형 양식용.
-1. 누르기 **[!UICONTROL 수신자 추가]**. 적응형 양식에 수신자를 추가합니다. 적응형 양식에 여러 수신자를 추가할 수 있습니다. 모든 수신자는 적응형 양식 제출에 대한 Adobe Sign 동의를 받습니다.
+1. 선택 **[!UICONTROL 수신자 추가]**. 적응형 양식에 수신자를 추가합니다. 적응형 양식에 여러 수신자를 추가할 수 있습니다. 모든 수신자는 적응형 양식 제출에 대한 Adobe Sign 동의를 받습니다.
    ![phone-details](assets/recipient-settings.png)
 
 1. 다음을 클릭합니다. **[!UICONTROL 편집]** ![편집](assets/Smock_Edit_18_N.svg) 아이콘 - 수신자에 대한 다음 정보를 지정합니다.
 
    * **[!UICONTROL 제목]:** 수신자를 고유하게 식별할 제목을 지정합니다.
 
-   * **[!UICONTROL 해당 수신자 및 인원이 동일한 양식을 작성 중입니까?]:** 선택 **[!UICONTROL 예]**&#x200B;양식 작성기와 첫 번째 수신자가 동일한 경우. <!-- If the option is set to **No,** then do not use the signature step component in the Adaptive Form. If the form contains a Signature Step component, then the field is automatically set to Yes. -->
+   * **[!UICONTROL 수신자 및 인원이 동일한 양식을 작성 중입니까?]:** 선택 **[!UICONTROL 예]**&#x200B;양식 작성기와 첫 번째 수신자가 동일한 경우. <!-- If the option is set to **No,** then do not use the signature step component in the Adaptive Form. If the form contains a Signature Step component, then the field is automatically set to Yes. -->
 
    * **[!UICONTROL 수신자 역할]:** 수신자의 역할을 선택합니다. Adobe Sign for business 및 enterprise 서비스 수준에는 [계약 수신자용 역할](https://helpx.adobe.com/sign/using/set-up-signer-approver-roles.html), 그 이상의 **서명자**&#x200B;워크플로 요구 사항에 보다 잘 부합하도록 합니다.
 
@@ -203,7 +203,7 @@ Adobe Sign 계약에 대해 한 명 또는 여러 명의 수신자가 있을 수
      >
      >첫 번째 수신자 또는 유일한 수신자(단일 수신자가 있는 경우)의 이메일 주소가 와 동일하지 않은지 확인합니다. [!DNL Adobe Sign] AEM Cloud Service 구성에 사용되는 계정입니다.
 
-   * **[!UICONTROL 수신자 인증 방법]:** Adobe Sign 계약을 열기 전에 수신자를 인증하는 방법을 지정하십시오. 전화, 기술 자료, 소셜 ID 기반 인증 및 [정부 ID](https://helpx.adobe.com/kr/sign/using/adobesign-authentication-government-id.html) 대상 [!DNL Adobe Acrobat Sign]. 대상 [!DNL Adobe Acrobat Sign for Government] 전화와 지식 기반 인증 중에서 선택할 수 있습니다.
+   * **[!UICONTROL 수신자 인증 방법]:** Adobe Sign 계약을 열기 전에 수신자를 인증하는 방법을 지정하십시오. 전화, 기술 자료, 소셜 ID 기반 인증 및 [정부 ID](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html) 대상 [!DNL Adobe Acrobat Sign]. 대상 [!DNL Adobe Acrobat Sign for Government] 전화와 지식 기반 인증 중에서 선택할 수 있습니다.
 
    >[!NOTE]
    >
@@ -216,7 +216,7 @@ Adobe Sign 계약에 대해 한 명 또는 여러 명의 수신자가 있을 수
 
    위의 이미지에는 두 가지 예가 있습니다 [!DNL Adobe Sign] 블록: 개인 정보 및 Office 세부 정보
 
-   탭 ![저장](assets/save_icon.svg) 아이콘. 수신자가 추가됩니다.
+   다음 항목 선택 ![저장](assets/save_icon.svg) 아이콘. 수신자가 추가됩니다.
 
 ### 적응형 양식에 대한 제출 액션 선택 {#selectsubmitactionforanadaptiveform}
 
@@ -301,15 +301,15 @@ Adobe Sign 계약 ID(agreementId)는 적응형 양식의 제출 데이터에 포
 
    ![서명 차단](assets/sign-block-new.png)
 
-1. 다음 항목 선택 **[!UICONTROL Adobe Sign 차단]** 구성 요소 및 탭 **[!UICONTROL 편집]** ![편집](assets/Smock_Edit_18_N.svg) 아이콘. 필드를 추가하고 필드의 형식 지정을 지정하는 옵션을 표시합니다.
+1. 다음 항목 선택 **[!UICONTROL Adobe Sign 차단]** 구성 요소를 선택하고 **[!UICONTROL 편집]** ![편집](assets/Smock_Edit_18_N.svg) 아이콘. 필드를 추가하고 필드의 형식 지정을 지정하는 옵션을 표시합니다.
 
    ![adobe-sign-block-select-fields](assets/adobe-sign-block-select-fields.png)
 
    **A.** 선택 및 추가 [!DNL Adobe Sign] 필드. **B.** 확장 [!DNL Adobe Sign] 전체 화면 보기로 차단
 
-1. 탭 **[!UICONTROL Adobe Sign 필드]** ![Adobe Sign](assets/adobesign.png) 아이콘. 선택 및 추가 옵션이 표시됩니다 [!DNL Adobe Sign] 필드.
+1. 다음 항목 선택 **[!UICONTROL Adobe Sign 필드]** ![Adobe Sign](assets/adobesign.png) 아이콘. 선택 및 추가 옵션이 표시됩니다 [!DNL Adobe Sign] 필드.
 
-   확장 **[!UICONTROL 유형]** 선택할 드롭다운 필드 **[!UICONTROL 디지털 서명]** 을 누릅니다. **[!UICONTROL 완료]** 선택한 필드를 추가할 아이콘 [!DNL Adobe Sign] 차단합니다.
+   확장 **[!UICONTROL 유형]** 선택할 드롭다운 필드 **[!UICONTROL 디지털 서명]** 및 선택 **[!UICONTROL 완료]** 선택한 필드를 추가할 아이콘 [!DNL Adobe Sign] 차단합니다.
 
    ![디지털 서명](assets/digital_signatures_new.png)
 
@@ -363,7 +363,7 @@ Adobe Sign 계약 ID(agreementId)는 적응형 양식의 제출 데이터에 포
 
 >[!MORELIKETHIS]
 >
->* [ [!DNL Adobe Sign] 와 통합 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)
+>* [통합 [!DNL Adobe Sign] 포함 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)
 >* [사용에 대한 우수 사례 [!DNL Adobe Sign] 적응형 Forms 사용](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
 
 

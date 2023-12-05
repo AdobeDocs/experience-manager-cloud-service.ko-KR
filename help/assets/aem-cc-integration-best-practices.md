@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3489'
-ht-degree: 15%
+source-wordcount: '3431'
+ht-degree: 14%
 
 ---
 
@@ -57,7 +57,7 @@ This article focuses primarily on the first two aspects of the collaboration nee
 
 ### 사용 사례 및 Adobe 솔루션 매핑 {#mapping-of-use-cases-and-adobe-solutions}
 
-| 사용 사례 | Adobe Asset Link | Experience Manager 데스크탑 앱 | 설명 또는 대체 메서드 |
+| 사용 사례 | Adobe 에셋 링크 | Experience Manager 데스크탑 앱 | 설명 또는 대체 메서드 |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | 검색 - 폴더 찾아보기 | 예 | Experience Manager 웹 UI + 데스크탑 작업 | 네트워크 공유를 탐색할 때 자산의 이진 파일을 다운로드하지 않도록 썸네일을 끕니다. |
 | 검색 - 컬렉션 액세스 | 예 | Experience Manager 웹 UI + 데스크탑 작업 |  |
@@ -97,9 +97,9 @@ This article focuses primarily on the first two aspects of the collaboration nee
 
 * **Minor asset  update/change :** A quick and small change to a digital asset. It is often made in response to a retouching or minor editing request, asset review, or approval (for example, reposition, change text size, adjust saturation/brightness, color, and so on).
 * **Major asset  update/change :** A change to a digital asset that requires considerable work, and sometimes must be done over a longer period of time. It typically includes multiple changes. The asset must be saved multiple times while being updated. Major asset updates typically cause the asset to enter a WIP stage.
-* **DAM:** Digital asset management. In this document, it is synonymous with Experience Manager Assets, unless specifically mentioned otherwise.
+* **DAM:** Digital asset management. 이 문서에서는 특별히 달리 언급되지 않는 한 Experience Manager Assets과 동의어입니다.
 * **Creative user:** A creative professional, who creates digital assets using Creative Cloud apps and services. In some cases, a creative user may be a member of a creative team who may use Creative Cloud, but does not create digital assets (like a creative director or creative team manager).
-* **DAM user:** A typical user of a DAM system. Depending on the organization, a DAM user can be a marketing or a non-marketing user, for example a Line-of-Business (LOB) user, librarian, sales person, and so on.
+* **DAM user:** A typical user of a DAM system. 조직에 따라 DAM 사용자는 마케팅 또는 비마케팅 사용자(예: LOB(Line of Business) 사용자, 라이브러리 관리자, 영업 담당자 등)가 될 수 있습니다.
 
 ### Experience Manager 및 Creative Cloud 통합 사용 시 고려 사항 {#considerations-when-using-aem-and-creative-cloud-integration}
 
@@ -220,7 +220,7 @@ Experience Manager 데스크탑 앱은 기본 앱에서 연 에셋에 대한 네
 * 크리에이티브 에이전시에서 제공하는 에셋 업로드
 * DAM 외부에서 선택한 경우 더 큰 세트에서 선택한 에셋 업로드
 
-이 설명은 데스크탑 사용자의 워크플로의 일반적인 일부로서, 작동적으로(예: 매주 또는 모든 사진 촬영 시) 파일을 업로드하는 것을 말합니다. 대규모 자산 마이그레이션은 여기에서 다루지 않습니다.
+이 설명은 데스크톱 사용자의 워크플로의 일반적인 일부로서, 파일을 조작적으로(예: 매주 또는 사진 촬영 시 마다) 업로드하는 것을 말합니다. 대규모 자산 마이그레이션은 여기에서 다루지 않습니다.
 
 다음과 같은 업로드 기능을 사용할 수 있습니다.
 

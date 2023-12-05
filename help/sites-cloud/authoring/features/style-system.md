@@ -2,10 +2,10 @@
 title: 스타일 시스템
 description: 스타일 시스템을 사용하여 템플릿 작성자는 페이지에서 구성 요소를 편집할 때 콘텐츠 작성자가 선택할 수 있도록 구성 요소의 콘텐츠 정책에 스타일 클래스를 정의할 수 있습니다. 이러한 스타일은 보다 유연하게 사용할 수 있도록 구성 요소를 시각적으로 변형한 대체물일 수 있습니다.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1317'
-ht-degree: 88%
+source-wordcount: '1305'
+ht-degree: 87%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 88%
 
 1. 그러면 AEM 페이지 작성자는 구성 요소 도구 모음의 스타일 메뉴를 통해 페이지 편집기에서 디자인된 스타일을 선택할 수 있습니다.
 
-AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 CSS 및 JavaScript의 모든 개발을 AEM 없이도 수행할 수 있습니다.
+마지막 세 단계만 실제로 AEM에서 수행됩니다. 즉, 필요한 CSS 및 JavaScript의 모든 개발을 AEM 없이도 수행할 수 있습니다.
 
 실제로 스타일을 구현할 때는 AEM에서 배포를 수행하고 원하는 템플릿의 구성 요소 내에서 선택하기만 하면 됩니다.
 

@@ -4,10 +4,10 @@ description: 적응형 Forms을 AEM Sites 페이지 또는 AEM 외부에서 호�
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3164'
-ht-degree: 6%
+source-wordcount: '3145'
+ht-degree: 5%
 
 ---
 
@@ -51,7 +51,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 다음 옵션을 사용하여 이 기능을 최대한 활용할 수 있습니다.
 
-* **[승인된 템플릿을 사용하여 적응형 양식을 만들고 AEM Sites 페이지에 임베드합니다](#embed-form-using-adaptive-form-wizzard-aem-sites):** 사전 승인된 템플릿을 활용하여 조직의 브랜딩 지침 및 디자인 표준에 맞는 적응형 Forms을 신속하게 만들고 포함할 수 있습니다.
+* **[승인된 템플릿을 사용하여 적응형 양식을 만들고 AEM Sites 페이지에 임베드합니다](#embed-form-using-adaptive-form-wizzard-aem-sites):** 사전 승인된 템플릿을 사용하여 조직의 브랜딩 지침 및 디자인 표준에 맞는 적응형 Forms을 신속하게 만들고 포함할 수 있습니다.
 
 * **[AEM Sites 페이지에 기존 양식 포함](#embed-an-adaptive-form-in-sites-editor):** 이미 만든 양식을 웹 사이트에 쉽게 통합하여 방문자가 직접 상호 작용할 수 있도록 할 수 있습니다.
 
@@ -74,7 +74,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 새 적응형 양식 또는 기존 적응형 양식 임베드를 시작하기 전에 **[!UICONTROL 적응형 Forms - 포함(v2)]**, 활성화 **적응형 Forms 핵심 구성 요소** 및 추가 **적응형 Forms 클라이언트 라이브러리** AEM Sites 페이지로:
 
-+++  AEM Cloud Service 환경에 맞는 적응형 양식 핵심 구성 요소를 활성화합니다
++++  AEM Cloud Service 환경을 위한 적응형 Forms 핵심 구성 요소 활성화
 
 [AEM Forms as a Cloud Service 환경에 맞는 적응형 양식 핵심 구성 요소가 활성화되어 있는지](enable-adaptive-forms-core-components.md) 확인합니다.
 
@@ -201,7 +201,7 @@ Sites 페이지에 기존 적응형 양식을 포함하려면 다음 작업을 �
 
 1. 편집 모드에서 AEM Sites 페이지를 엽니다.
 1. 을(를) 드래그 앤 드롭합니다 **[!UICONTROL 적응형 Forms - 포함(v2)]** 구성 요소 브라우저의 구성 요소를 사이트 페이지로 복사합니다.
-1. 탭 **[!UICONTROL 적응형 Forms - 포함]** 사이트 페이지의 구성 요소 및 탭 ![적응형 양식 컨테이너 속성](/help/forms/assets/configure-icon.svg) 작업 표시줄에 표시됩니다. 다음 **[!UICONTROL 적응형 Forms 편집 - 포함(v2)]** 대화 상자가 열립니다.
+1. 다음 항목 선택 **[!UICONTROL 적응형 Forms - 포함]** Sites 페이지에서 구성 요소를 선택하고 ![적응형 양식 컨테이너 속성](/help/forms/assets/configure-icon.svg) 작업 표시줄에 표시됩니다. 다음 **[!UICONTROL 적응형 Forms 편집 - 포함(v2)]** 대화 상자가 열립니다.
 1. 에 포함할 적응형 양식을 검색하여 선택하십시오. **[!UICONTROL 자산 경로]**.
 1. 설정을 저장합니다. 이제 적응형 양식이 페이지에 포함됩니다.
 
@@ -215,7 +215,7 @@ Sites 페이지에 기존 적응형 양식을 포함하려면 다음 작업을 �
 
 1. 편집 모드에서 경험 조각을 엽니다.
 1. 을(를) 드래그 앤 드롭합니다 **[!UICONTROL 적응형 Forms - 포함(v2)]** 구성 요소 브라우저의 구성 요소를 경험 조각으로 복사합니다.
-1. 탭 **[!UICONTROL 적응형 Forms - 포함]** 경험 조각의 구성 요소 및 탭 ![적응형 양식 컨테이너 속성](/help/forms/assets/configure-icon.svg) 작업 표시줄에 표시됩니다. 다음 **[!UICONTROL 적응형 Forms 편집 - 포함(v2)]** 대화 상자가 열립니다.
+1. 다음 항목 선택 **[!UICONTROL 적응형 Forms - 포함]** 경험 조각의 구성 요소 및 선택 ![적응형 양식 컨테이너 속성](/help/forms/assets/configure-icon.svg) 작업 표시줄에 표시됩니다. 다음 **[!UICONTROL 적응형 Forms 편집 - 포함(v2)]** 대화 상자가 열립니다.
 1. 에 포함할 적응형 양식을 검색하여 선택하십시오. **[!UICONTROL 자산 경로]**.
 1. 설정을 저장합니다. 이제 적응형 양식이 경험 조각에 임베드됩니다.
 
@@ -310,9 +310,9 @@ To embed an Adaptive Form using the **[!UICONTROL Adaptive Forms - Embed]** comp
    >
    >Multiple Adaptive Forms - Embed components on a page are not supported.
 
-1. To create and embed a new form, on the component toolbar, tap the **Create Form** icon. A window to create the form opens. 
+1. To create and embed a new form, on the component toolbar, select the **Create Form** icon. A window to create the form opens. 
 
-1. Tap the embedded Adaptive Forms - Embed component in the sites page, and then tap ![settings_icon](assets/settings_icon.png) on the action bar. The **[!UICONTROL Edit Adaptive Forms - Embed]** dialog opens.
+1. Select the embedded Adaptive Forms - Embed component in the sites page, and then select ![settings_icon](assets/settings_icon.png) on the action bar. The **[!UICONTROL Edit Adaptive Forms - Embed]** dialog opens.
 1. In the Edit Adaptive Forms - Embed dialog, specify the following.
 
     **Asset Type:** Select the type of asset to embed. 
@@ -356,7 +356,7 @@ AEM sites 페이지에 임베드된 적응형 양식을 게시하기 위한 다�
 임베드된 적응형 양식의 구성 또는 속성을 수정하려면 다음 중 하나를 수행합니다.
 
 * 각 편집기에서 적응형 양식의 원본 양식을 열고 수정합니다.
-* 편집 모드로 사이트 페이지 내에서 적응형 양식을 탭한 다음 을 누릅니다 **[!UICONTROL 새 창에서 편집]**. 원본 양식은 편집 모드에서 열리고 수정할 수 있습니다.
+* 편집 모드로 사이트 페이지 내에서 적응형 양식을 선택한 다음 을 선택합니다. **[!UICONTROL 새 창에서 편집]**. 원본 양식은 편집 모드에서 열리고 수정할 수 있습니다.
 
 >[!NOTE]
 >

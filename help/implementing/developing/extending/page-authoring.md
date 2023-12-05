@@ -2,10 +2,10 @@
 title: 페이지 작성 사용자 정의
 description: AEM as a Cloud Service가 페이지 작성 기능을 사용자 정의하기 위해 제공하는 메커니즘에 대해 알아봅니다.
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 96%
+source-wordcount: '937'
+ht-degree: 94%
 
 ---
 
@@ -158,7 +158,7 @@ MSM 보기를 위한 레이어(모드)를 만드는 방법을 보여 주는 샘�
 
 ## 새 페이지 작업 추가 {#add-a-new-page-action}
 
-페이지 도구 모음에 새 페이지 작업을 추가합니다(예: **Sites로 돌아가기**(콘솔) 작업).
+페이지 도구 모음에 새 페이지 작업을 추가하려면(예: ) **사이트로 돌아가기** (콘솔) 작업.
 
 ### 코드 샘플 {#code-sample-3}
 

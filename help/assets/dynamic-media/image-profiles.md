@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3528'
-ht-degree: 8%
+source-wordcount: '3555'
+ht-degree: 5%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 8%
   </tr>
   <tr>
    <td>반경</td>
-   <td>선명하게 하기가 적용되는 가장자리 픽셀 주위의 픽셀 수를 결정합니다. 고대비 이미지의 경우 1~2를 입력합니다. 작은 값은 가장자리 픽셀만 선명하게 하고 큰 값은 넓은 폭의 픽셀을 선명하게 합니다. 정확한 값은 이미지의 크기에 따라 다릅니다. 기본값은 0.2입니다. 범위는 0~250입니다.</td>
+   <td>선명하게 하기가 적용되는 가장자리 픽셀 주위의 픽셀 수를 결정합니다. 고해상도 이미지의 경우 1~2를 입력합니다. 낮은 값은 가장자리 픽셀만 선명하게 하고 높은 값은 넓은 폭의 픽셀을 선명하게 합니다. 올바른 값은 이미지의 크기에 따라 다릅니다. 기본값은 0.2입니다. 범위는 0~250입니다.</td>
   </tr>
   <tr>
    <td>임계값</td>
@@ -178,7 +178,7 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 #### 속성에서 폴더에 Dynamic Media 이미지 프로필 적용 {#applying-image-profiles-to-folders-from-properties}
 
-1. Experience Manager 로고를 탭하고 다음 위치로 이동 **[!UICONTROL 에셋]**.
+1. Experience Manager 로고를 선택하고 다음으로 이동 **[!UICONTROL 에셋]**.
 1. 다음으로 이동 *폴더* (에셋이 아님) 이미지 프로필을 적용할 대상 입니다.
 1. 현재 보기에 따라 다음 중 하나를 수행합니다.
    * 카드 보기에서 포인터를 폴더 위에 놓은 다음 확인 표시를 선택하여 선택합니다.

@@ -2,10 +2,10 @@
 title: 받은 편지함
 description: 받은 편지함에 도착하는 알림을 사용하여 작업을 관리하는 방법에 대해 알아봅니다.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 95%
+source-wordcount: '910'
+ht-degree: 90%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 95%
 
 ## 헤더의 받은 편지함 {#inbox-in-the-header}
 
-어떤 콘솔에서든 헤더에는 받은 편지함의 현재 알림 수가 표시됩니다. 표시기를 열어서 작업이 필요한 페이지에 바로 가거나 받은 편지함에 액세스할 수도 있습니다.
+어떤 콘솔에서든 헤더에는 받은 편지함의 현재 알림 수가 표시됩니다. 작업을 필요로 하는 페이지에 빠르게 액세스하거나 받은 편지함에 액세스할 수 있도록 표시기를 열 수도 있습니다.
 
 ![헤더의 받은 편지함 개요](/help/sites-cloud/authoring/assets/inbox-header.png)
 

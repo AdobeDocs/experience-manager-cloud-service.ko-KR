@@ -2,10 +2,10 @@
 title: 페이지 작성에 대한 빠른 시작 안내서
 description: 페이지 콘텐츠 작성을 시작하는 데 도움이 되는 빠른 개요 안내서
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1541'
-ht-degree: 85%
+ht-degree: 80%
 
 ---
 
@@ -47,7 +47,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
       * [미리보기 모드](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)
       * [게시됨으로 보기](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 
-* 버전이 페이지 편집기에서 시작/작성되지 않습니다. 이제는 **Sites** 콘솔에서 수행됩니다(선택한 리소스에 대한 **만들기** 또는 [타임라인](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)을 통해).
+* 버전이 페이지 편집기에서 시작/작성되지 않습니다. 이제 다음에서 이 작업을 수행합니다. **사이트** 콘솔(다음 중 하나를 통해) **만들기** 또는 [타임라인](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) (선택한 리소스)에 사용할 수 있습니다.
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 1. Adobe Experience Manager 링크(왼쪽 상단)를 선택하면 트리거되는(드롭다운) **전역 탐색**&#x200B;에서 **Sites** 옵션을 사용하여 [Sites](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) 콘솔을 엽니다.
 
-1. 해당 페이지를 탭/클릭하여 트리 아래로 탐색합니다. 페이지 리소스가 표시되는 방식은 사용 중인 보기([카드, 목록 또는 열](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources))에 따라 다릅니다.
+1. 해당 페이지를 탭/클릭하여 트리 아래로 탐색합니다. 페이지 리소스가 표시되는 방식은 사용 중인 보기에 따라 다릅니다. - [카드, 목록 또는 열](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources):
 
    ![선택 항목 보기 드롭다운](/help/sites-cloud/authoring/assets/views.png)
 
@@ -103,7 +103,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    * [필요한 리소스를 선택](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)하여 선택 모드에 들어갑니다. 이렇게 하는 방법은 디바이스에 따라 다릅니다.
 
-      * 모바일 디바이스에서: 카드를 길게 탭
+      * 모바일 장치에서: 카드를 길게 선택
       * 데스크탑 디바이스에서: 확인 표시 아이콘으로 표시되는 [빠른 작업](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) 사용
 
    * 카드 위에 확인 표시가 나타나 페이지가 선택되었음을 알려 줍니다.
@@ -148,7 +148,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
    * [페이지의](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) 기존 구성 요소 콘텐츠를 편집합니다.
 
       * 둘 중 하나를 선택하여 구성 요소 도구 모음을 엽니다. **편집**(연필) 아이콘을 사용하여 대화 상자를 엽니다.
-      * 탭한 상태를 유지하거나 느리게 더블 클릭하여 구성 요소에 대한 즉석 편집기를 엽니다. 사용 가능한 작업이 표시됩니다(일부 구성 요소의 경우, 선택이 제한됨).
+      * 선택하고 길게 누르거나 느리게 더블 클릭하여 구성 요소에 대한 즉석 편집기를 엽니다. 사용 가능한 작업이 표시됩니다(일부 구성 요소의 경우, 선택이 제한됨).
       * 사용 가능한 모든 작업을 보려면 다음 아이콘을 사용하여 전체 화면 모드로 들어갑니다.
 
         ![전체 화면 버튼](/help/sites-cloud/authoring/assets/full-screen.png)

@@ -2,10 +2,10 @@
 title: 사용자 정의 HTTP 헤더
 description: CIF에서 이미 보낸 헤더와 함께 상거래 엔진으로 보낼 사용자 지정 HTTP 헤더를 구성하는 방법에 대해 알아봅니다.
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 5%
+source-wordcount: '279'
+ht-degree: 3%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 5%
 
 프로젝트의 [Cloud Service 구성] 페이지에서 HTTP 헤더 값을 구성할 수 있습니다.
 
-1. 도구 -> Cloud Services -> CIF 구성의 Cloud Service 구성 페이지로 이동합니다.
+1. 도구 > Cloud Services > CIF 구성의 Cloud Service 구성 페이지로 이동합니다.
 1. 기존 구성을 열거나 만듭니다.
 1. &quot;고급&quot; 탭으로 이동하여 &quot;사용자 지정 HTTP 헤더&quot; 다중 필드를 찾습니다. 앞에서 정의한 헤더를 선택하고 값을 할당할 수 있습니다.
 

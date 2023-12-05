@@ -2,10 +2,10 @@
 title: AEM 커넥터 구현
 description: AEM 커넥터를 빌드하고, 테스트하고, 구현하는 방법을 알아봅니다. 또한 일반적인 통합 패턴에 대해서도 학습합니다.
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 95%
+source-wordcount: '935'
+ht-degree: 94%
 
 ---
 
@@ -14,7 +14,7 @@ AEM 커넥터 구현
 
 다음은 [AEM 커넥터](https://www.adobe.io/apis/experiencecloud/aem/aemconnectors.html) 구축에 유용한 참고 자료이며, 커넥터 [제출](submit.md) 및 [유지](maintain.md) 지침과 함께 읽어야 합니다.
 
-AEM에 대한 개발자 라이선스는 [Adobe Exchange 프로그램](https://partners.adobe.com/exchangeprogram/experiencecloud)을 통해 획득할 수 있습니다.
+AEM에 대한 개발자 라이선스는 [Adobe 교환 프로그램](https://partners.adobe.com/exchangeprogram/experiencecloud).
 
 일반적인 통합 패턴
 ---------------------------

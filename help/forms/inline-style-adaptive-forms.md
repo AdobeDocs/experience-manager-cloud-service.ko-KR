@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 11%
+source-wordcount: '761'
+ht-degree: 10%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 11%
 
 구성 요소에 인라인 스타일을 추가하려면 다음 작업을 수행하십시오.
 
-1. 양식 편집기에서 양식을 열고 모드를 스타일 모드로 변경합니다. 모드를 스타일 모드로 변경하려면 페이지 도구 모음에서 를 누릅니다 ![캔버스 드롭다운](assets/Smock_ChevronDown.svg) > **[!UICONTROL 스타일]**.
-1. 페이지에서 구성 요소를 선택하고 편집 버튼을 탭합니다 ![편집 단추](assets/edit.svg). 스타일 속성이 사이드바에서 열립니다.
+1. 양식 편집기에서 양식을 열고 모드를 스타일 모드로 변경합니다. 모드를 스타일 모드로 변경하려면 페이지 도구 모음에서 를 선택합니다 ![캔버스 드롭다운](assets/Smock_ChevronDown.svg) > **[!UICONTROL 스타일]**.
+1. 페이지에서 구성 요소를 선택하고 편집 버튼을 선택합니다 ![편집 단추](assets/edit.svg). 스타일 속성이 사이드바에서 열립니다.
 
    사이드바의 양식 계층 구조 트리에서 구성 요소를 선택할 수도 있습니다. 양식 계층 구조 트리는 사이드바에서 양식 객체로 사용할 수 있습니다.
 
@@ -46,7 +46,7 @@ ht-degree: 11%
    * [!UICONTROL 고급] (구성 요소에 대한 사용자 지정 CSS를 쓸 수 있습니다.)
 
 1. 마찬가지로 다음과 같은 구성 요소의 다른 부분에 스타일을 적용할 수 있습니다. [!UICONTROL 위젯], [!UICONTROL 캡션], 및 [!UICONTROL 도움말].
-1. 누르기 **[!UICONTROL 완료]** 변경 사항을 확인하거나 **[!UICONTROL 취소]** 변경 내용을 취소합니다.
+1. 선택 **[!UICONTROL 완료]** 변경 사항을 확인하거나 **[!UICONTROL 취소]** 변경 내용을 취소합니다.
 
 ## 예: 필드 구성 요소의 인라인 스타일 {#example-inline-styles-for-a-field-component}
 
@@ -81,7 +81,7 @@ ht-degree: 11%
   <tr>
    <td><p>레이블</p> </td>
    <td><p>Dimension 및 위치 &gt; 너비</p> </td>
-   <td><p>100px</p> </td>
+   <td><p>100픽셀</p> </td>
    <td><p>레이블의 너비를 100px로 수정합니다.</p> </td>
   </tr>
   <tr>
@@ -111,9 +111,9 @@ ht-degree: 11%
 
 ## 스타일 복사 및 붙여넣기 {#copy-paste-styles}
 
-적응형 양식의 한 구성 요소에서 다른 구성 요소로 스타일을 복사하여 붙여넣을 수도 있습니다. 다음에서 **[!UICONTROL 스타일]** 모드, 구성 요소를 탭한 다음 복사 아이콘을 탭합니다. ![복사](assets/property-copy-icon.svg).
+적응형 양식의 한 구성 요소에서 다른 구성 요소로 스타일을 복사하여 붙여넣을 수도 있습니다. 다음에서 **[!UICONTROL 스타일]** 모드에서 구성 요소를 선택하고 복사 아이콘을 선택합니다 ![복사](assets/property-copy-icon.svg).
 
-같은 유형의 다른 구성 요소를 탭하고 붙여넣기 아이콘을 탭합니다 ![복사](assets/Smock_Paste_18_N.svg) 복사한 스타일을 붙여넣습니다. 스타일 지우기 아이콘을 탭할 수도 있습니다 ![복사](assets/clear-style-icon.svg) 적용된 스타일을 지웁니다.
+같은 유형의 다른 구성 요소를 선택하고 붙여넣기 아이콘을 선택합니다 ![복사](assets/Smock_Paste_18_N.svg) 복사한 스타일을 붙여넣습니다. 스타일 지우기 아이콘을 선택할 수도 있습니다 ![복사](assets/clear-style-icon.svg) 적용된 스타일을 지웁니다.
 
 ## 구성 요소의 여러 상태에 대한 스타일 설정 {#set-styles-for-states}
 
@@ -121,15 +121,15 @@ ht-degree: 11%
 
 구성 요소 상태에 대한 스타일을 정의하려면 다음을 수행합니다.
 
-1. 다음에서 **[!UICONTROL 스타일]** 모드, 구성 요소를 탭한 다음 편집 아이콘을 탭합니다. ![편집](assets/Smock_Edit_18_N.svg).
+1. 다음에서 **[!UICONTROL 스타일]** 모드에서 구성 요소를 선택하고 편집 아이콘을 선택합니다 ![편집](assets/Smock_Edit_18_N.svg).
 
 1. 를 사용하여 구성 요소의 상태를 선택합니다 **[!UICONTROL 시/도]** 드롭다운 목록입니다.
 
    ![상태 선택](assets/select-state.png)
 
-1. 선택한 구성 요소 상태의 스타일을 정의하고 을 누릅니다 ![저장](assets/save_icon.svg) 속성을 저장합니다.
+1. 선택한 구성 요소 상태의 스타일을 정의하고 을(를) 선택합니다. ![저장](assets/save_icon.svg) 속성을 저장합니다.
 
-성공 및 오류 상태를 시뮬레이션할 수도 있습니다. 확장 아이콘을 탭하여 **[!UICONTROL 시뮬레이트 성공]** 및 **[!UICONTROL 시뮬레이트 오류]** 옵션.
+성공 및 오류 상태를 시뮬레이션할 수도 있습니다. 확장 아이콘을 선택하여 **[!UICONTROL 시뮬레이트 성공]** 및 **[!UICONTROL 시뮬레이트 오류]** 옵션.
 
 ![상태 시뮬레이션](assets/simulate-states.png)
 

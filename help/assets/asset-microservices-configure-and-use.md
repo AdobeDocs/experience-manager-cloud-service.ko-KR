@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2928'
+source-wordcount: '2859'
 ht-degree: 3%
 
 ---
@@ -167,7 +167,7 @@ Experience Manager이 이러한 폴더에 업로드되거나 업데이트된 에
 
 >[!TIP]
 >
->한 개의 처리 프로필만이 폴더에 적용될 수 있습니다. 렌디션을 더 생성하려면 기존 처리 프로필에 렌디션 정의를 더 추가합니다.
+>한 개의 처리 프로필만 폴더에 적용할 수 있습니다. 렌디션을 더 생성하려면 기존 처리 프로필에 렌디션 정의를 더 추가합니다.
 
 처리 프로필이 폴더에 적용되면 구성된 추가 처리 프로필을 사용하여 이 폴더 또는 하위 폴더에 업로드된(또는 업데이트된) 모든 새 자산이 처리됩니다. 이 처리는 표준 기본 프로필에 포함됩니다.
 

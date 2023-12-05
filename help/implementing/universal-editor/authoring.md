@@ -2,10 +2,10 @@
 title: Universal Editor로 콘텐츠 작성
 description: 콘텐츠 작성자가 Universal Editor를 사용하여 얼마나 쉽고 직관적으로 콘텐츠를 만들 수 있는지 알아봅니다.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2398'
-ht-degree: 58%
+source-wordcount: '2387'
+ht-degree: 55%
 
 ---
 
@@ -172,7 +172,7 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 >[!TIP]
 >
->Universal Editor로 게시하는 방법에 대한 자세한 내용은 [Universal Editor로 콘텐츠 게시](publishing.md) 문서를 참조하십시오.
+>문서 보기 [유니버설 편집기로 콘텐츠 게시](publishing.md) 유니버설 편집기로 게시에 대한 자세한 내용을 보려면.
 
 ### 모드 레일 {#rail}
 
@@ -232,7 +232,7 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 ![구성 요소 세부 정보](assets/component-details.png)
 
-일부 구성 요소에는 표시 및/또는 편집할 수 있는 세부 정보가 포함되지 않습니다.
+일부 구성 요소에 표시 및/또는 편집할 수 있는 세부 정보가 있는 것은 아닙니다.
 
 >[!TIP]
 >
@@ -407,14 +407,14 @@ Enter/Return 키를 누르거나 텍스트 상자 바깥쪽을 선택하여 변�
 
 콘텐츠 편집을 마치면 콘텐츠를 탐색하여 다른 페이지의 콘텐츠에서 어떻게 보이는지 확인하고 싶은 경우가 많습니다. [미리보기 모드](#preview-mode)에서 링크를 클릭하여 독자처럼 콘텐츠를 탐색할 수 있습니다. 콘텐츠는 게시될 때 편집기에서 렌더링됩니다.
 
-미리보기 모드에서 콘텐츠를 탭하거나 클릭하면 콘텐츠 독자에게 반응하는 것처럼 반응합니다. 편집할 내용을 선택하려면 다음으로 전환합니다. [구성 요소 모드.](#component-mode)
+미리보기 모드에서 콘텐츠를 탭하거나 클릭하면 콘텐츠 판독기와 동일하게 반응합니다. 편집할 내용을 선택하려면 다음으로 전환합니다. [구성 요소 모드.](#component-mode)
 
 ## 추가 리소스 {#additional-resources}
 
 Universal Editor에 대해 자세히 알아보려면 다음 문서를 참조하십시오.
 
 * [Universal Editor 소개](introduction.md) - Universal Editor를 통해 모든 구현에서 콘텐츠의 모든 측면을 편집하여 뛰어난 경험을 제공하고, 콘텐츠 속도를 높이고, 최신 개발자 경험을 제공하는 방법에 대해 알아봅니다.
-* [Universal Editor로 콘텐츠 게시](publishing.md) - Universal Editor에서 콘텐츠를 게시하는 방법과 앱에서 게시된 콘텐츠를 처리하는 방법에 대해 알아봅니다.
+* [유니버설 편집기로 콘텐츠 게시](publishing.md) - 유니버설 편집기에서 콘텐츠를 게시하는 방법과 앱에서 게시된 콘텐츠를 처리하는 방법에 대해 알아봅니다.
 * [AEM에서 Universal Editor 시작하기](getting-started.md) - Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 알아봅니다.
 * [Universal Editor 아키텍처](architecture.md) - Universal Editor의 아키텍처 및 해당 서비스와 계층 간에 데이터가 흐르는 방식에 대해 알아봅니다.
 * [속성 및 유형](attributes-types.md) - Universal Editor에 필요한 데이터 속성 및 유형에 대해 알아봅니다.

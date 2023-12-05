@@ -2,10 +2,10 @@
 title: 경험 감사 대시보드
 description: Experience Audit에서 배포 프로세스를 검증하는 방법을 알아보고, 명확하고 유용한 대시보드 인터페이스를 통해 배포된 변경 사항이 성능, 접근성, 모범 사례 및 SEO에 대한 기준 표준을 충족하는지 확인하는 데 도움이 됩니다.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '830'
-ht-degree: 73%
+source-wordcount: '824'
+ht-degree: 70%
 
 ---
 
@@ -77,7 +77,7 @@ Cloud Manager의 경험 감사를 통해 사이트에서 사용자의 경험을 
 
 ![Lighthouse 점수 그래프](assets/lighthouse-scores.png)
 
-그래프의 각 지점은 해당 월의 모든 배포에 대한 평균입니다.
+그래프의 각 지점은 관심 월의 모든 배포에 대한 평균입니다.
 
 프로덕션 파이프라인 실행 페이지로 돌아가려면 브라우저에서 뒤로 화살표를 선택하기만 하면 됩니다.
 

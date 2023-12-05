@@ -8,10 +8,10 @@ content-type: reference
 feature: 3D Assets
 role: User
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
-source-git-commit: 347da5edf4c8ad2ae72284f4e1a4003493596194
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2260'
-ht-degree: 3%
+source-wordcount: '2252'
+ht-degree: 2%
 
 ---
 
@@ -48,9 +48,9 @@ Dynamic Media은 다음과 같은 3D 파일 형식을 지원합니다.
 
 다음 단계별 워크플로 설명은 Dynamic Media에서 3D 자산을 빠르게 시작하고 실행하는 데 도움이 되도록 설계되었습니다.
 
-Dynamic Media에서 3D 에셋으로 작업하기 전에 [!DNL Experience Manager] 관리자가 이미 Dynamic Media Cloud Services을 활성화하고 구성했습니다.
+Dynamic Media에서 3D 에셋으로 작업하기 전에 [!DNL Experience Manager] 관리자가 이미 Dynamic Media Cloud Service을 활성화하고 구성했습니다.
 
-다음을 참조하십시오 [Dynamic Media Cloud Services 구성](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
+다음을 참조하십시오 [Dynamic Media Cloud Service 구성](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
 1. **3D 자산 업로드**
 
@@ -63,16 +63,16 @@ Dynamic Media에서 3D 에셋으로 작업하기 전에 [!DNL Experience Manager
 
       * [디지털 자산 구성](/help/assets/organize-assets.md)
       * [3D 자산 검색](/help/assets/search-assets.md)
+
    * 3D 자산 보기
 
       * [3D 자산 보기 및 상호 작용](#viewing-three-d-assets)
       * [차원 뷰어 사전 설정 관리](/help/assets/dynamic-media/managing-viewer-presets.md)
+
    * 3D 자산 메타데이터 작업
 
       * [디지털 에셋용 메타데이터 관리](/help/assets/manage-digital-assets.md#editing-properties)
       * [메타데이터 스키마](/help/assets/metadata-schemas.md)
-
-
 
 1. **3D 자산 게시**
 
@@ -120,9 +120,9 @@ Dynamic Media에서 3D 에셋으로 작업하기 전에 [!DNL Experience Manager
    | **카메라 돌리기** | 3D 장면 및 개체 주위로 보기를 궤도 회전합니다. | 마우스 왼쪽 단추를 클릭하고 드래그합니다. | 한 손가락으로 + 드래그. |
    | **카메라 회전** | 보기를 왼쪽, 오른쪽, 위쪽 또는 아래쪽으로 회전합니다. | 마우스 오른쪽 단추를 클릭하고 드래그하십시오. | 두 손가락으로 + 드래그. |
    | **카메라 확대/축소** | 3D 장면의 영역 안과 밖으로 이동합니다. | 스크롤 휠입니다. | 손가락 두 개 조입니다. |
-   | **카메라를 가운데로 다시 맞춤** | 카메라를 3D 장면의 개체에 있는 점에 다시 가운데로 맞춥니다. | 두 번 클릭합니다. | 두 번 탭합니다. |
-   | **재설정** | 페이지의 오른쪽 하단 모서리 근처에서 재설정 아이콘을 선택하여 보기 대상 지점을 3D 에셋의 가운데로 복원합니다. 또한 재설정을 사용하면 카메라를 더 가깝게 또는 더 멀리 이동하여 에셋을 전체적으로 적절한 보기 크기로 표시할 수 있습니다. |  |  |
-   | **전체 화면 모드** | 전체 화면 모드로 전환하려면 페이지의 오른쪽 아래 모서리에서 전체 화면 아이콘을 선택합니다. |  |  |
+   | **카메라를 가운데로 다시 맞춤** | 카메라를 3D 장면의 개체에 있는 점에 다시 가운데로 맞춥니다. | 두 번 클릭합니다. | 두 번 선택합니다. |
+   | **재설정** | 페이지의 오른쪽 하단 모서리 근처에서 재설정 아이콘을 선택하여 보기 대상 지점을 3D 에셋의 가운데로 복원합니다. 또한 재설정을 사용하면 카메라를 더 가깝게 또는 더 멀리 이동하여 에셋을 전체적으로 적절한 보기 크기로 표시할 수 있습니다. |   |   |
+   | **전체 화면 모드** | 전체 화면 모드로 전환하려면 페이지의 오른쪽 아래 모서리에서 전체 화면 아이콘을 선택합니다. |   |   |
 
 1. 페이지의 오른쪽 상단 모서리에서 을(를) 선택합니다. **[!UICONTROL 닫기]** 자산 페이지로 돌아갑니다.
 
@@ -143,7 +143,7 @@ Dynamic Media에서 3D 에셋으로 작업하기 전에 [!DNL Experience Manager
    * 페이지 오른쪽 상단 근처에서 **[!UICONTROL 미리 보기]** 입장하기 **[!UICONTROL 미리 보기]** 모드.
    * 삭제 `/editor.html` 를 입력합니다.
 
-에 표시되는 완전 대화형 3D 에셋    ![3D 미디어 구성 요소 내부에 표시되는 3D 자산](/help/assets/dynamic-media/assets/3d-asset-in-3d-mediaa.png)
+   ![3D 미디어 구성 요소 내부에 표시되는 3D 자산](/help/assets/dynamic-media/assets/3d-asset-in-3d-mediaa.png)
 에 표시되는 완전 대화형 3D 에셋 **[!UICONTROL 미리 보기]** 모드.
 
 1. 다음 기간 동안 **[!UICONTROL 미리 보기]** mode에서 다음 중 하나를 수행합니다.
@@ -153,9 +153,9 @@ Dynamic Media에서 3D 에셋으로 작업하기 전에 [!DNL Experience Manager
    | **카메라 돌리기** | 3D 장면 및 개체 주위로 보기를 궤도 회전합니다. | 마우스 왼쪽 단추를 클릭하고 드래그합니다. | 한 손가락으로 + 드래그. |
    | **카메라 회전** | 보기를 왼쪽, 오른쪽, 위쪽 또는 아래쪽으로 회전합니다. | 마우스 오른쪽 단추를 클릭하고 드래그하십시오. | 두 손가락으로 + 드래그. |
    | **카메라 확대/축소** | 3D 장면의 영역 안과 밖으로 이동합니다. | 스크롤 휠입니다. | 손가락 두 개 조입니다. |
-   | **카메라를 가운데로 다시 맞춤** | 카메라를 3D 장면의 개체에 있는 점에 다시 가운데로 맞춥니다. | 두 번 클릭합니다. | 두 번 탭합니다. |
-   | **재설정** | 페이지의 오른쪽 하단 모서리 근처에서 재설정 아이콘을 선택하여 보기 대상 지점을 3D 에셋의 가운데로 복원합니다. 또한 재설정을 사용하면 카메라를 더 가깝게 또는 더 멀리 이동하여 에셋을 전체적으로 적절한 보기 크기로 표시할 수 있습니다. |  |  |
-   | **전체 화면 모드** | 전체 화면 모드로 전환하려면 페이지의 오른쪽 아래 모서리에서 전체 화면 아이콘을 선택합니다. |  |  |
+   | **카메라를 가운데로 다시 맞춤** | 카메라를 3D 장면의 개체에 있는 점에 다시 가운데로 맞춥니다. | 두 번 클릭합니다. | 두 번 선택합니다. |
+   | **재설정** | 페이지의 오른쪽 하단 모서리 근처에서 재설정 아이콘을 선택하여 보기 대상 지점을 3D 에셋의 가운데로 복원합니다. 또한 재설정을 사용하면 카메라를 더 가깝게 또는 더 멀리 이동하여 에셋을 전체적으로 적절한 보기 크기로 표시할 수 있습니다. |   |   |
+   | **전체 화면 모드** | 전체 화면 모드로 전환하려면 페이지의 오른쪽 아래 모서리에서 전체 화면 아이콘을 선택합니다. |   |   |
 
 ## 3D 미디어 구성 요소 작업 정보 {#working-with-three-d-media-component}
 
@@ -178,7 +178,7 @@ Dynamic Media에는 사용할 수 있는 Dynamic Media 3D 미디어 구성 요�
 1. 빈 영역을 선택하고 연결된 도구 모음을 열려면 **[!UICONTROL 레이아웃 컨테이너]** 지역.
 1. 도구 모음에서 **[!UICONTROL 정책]** 아이콘을 클릭하여 엽니다. **[!UICONTROL 정책 편집기]**.
 1. 다음에서 **[!UICONTROL 속성]** 섹션, **[!UICONTROL 허용된 구성 요소]** 탭, 다음으로 스크롤 **[!UICONTROL Dynamic Media]**&#x200B;를 클릭한 다음 목록을 확장하고 을(를) 선택합니다 **[!UICONTROL 3D 미디어]**.
-1. 누르기 **[!UICONTROL 완료]** 변경 사항을 저장하고 **[!UICONTROL 정책 편집기]**.
+1. 선택 **[!UICONTROL 완료]** 변경 사항을 저장하고 **[!UICONTROL 정책 편집기]**.
 
    이제 이 템플릿을 사용하는 모든 페이지에 Dynamic Media 3D 미디어 구성 요소를 배치할 수 있습니다.
 
@@ -256,12 +256,12 @@ Dynamic Media은 다음과 같이 지원되는 다양한 3D 파일 형식을 허
 
    ![3d-asset-quick-publish](/help/assets/dynamic-media/assets/3d-asset-quick-publisha.png)
 
-1. 누르기 **[!UICONTROL 닫기]** 대화 상자를 종료하고 에셋 세부 정보 페이지로 돌아갑니다.
+1. 선택 **[!UICONTROL 닫기]** 대화 상자를 종료하고 에셋 세부 정보 페이지로 돌아갑니다.
 1. 3D 에셋의 파일 이름 왼쪽에 있는 드롭다운 목록에서 를 선택합니다 **[!UICONTROL 표현물]**.
 
-   ![3d-asset-renditions](/help/assets/dynamic-media/assets/3d-asset-renditionsa.png)
+   ![3d 자산 표현물](/help/assets/dynamic-media/assets/3d-asset-renditionsa.png)
 
-1. 누르기 **[!UICONTROL 원본]**. 3D 자산이 게시(또는 &quot;활성화&quot;)될 때 **[!UICONTROL URL]** 다음 3D 자산 조건이 모두 충족되면 페이지의 왼쪽 하단 모서리 근처에 단추가 표시됩니다.
+1. 선택 **[!UICONTROL 원본]**. 3D 자산이 게시(또는 &quot;활성화&quot;)될 때 **[!UICONTROL URL]** 다음 3D 자산 조건이 모두 충족되면 페이지의 왼쪽 하단 모서리 근처에 단추가 표시됩니다.
    * 3D 자산은 지원되는 형식(GLB, OBJ, STL 및 USDZ)입니다.
    * 3D 자산이 Dynamic Media 이미지 프로덕션 시스템(IPS)에 수집되었습니다.
    * 3D 자산이 게시됩니다.
@@ -276,8 +276,8 @@ Dynamic Media은 다음과 같이 지원되는 다양한 3D 파일 형식을 허
 
 * **[!UICONTROL URL]** - 사용 **[!UICONTROL URL]** 서드파티 웹 컨텐츠 관리 시스템을 사용 중이고 차원 뷰어를 사용하여 Dynamic Media 3D 자산을 웹 페이지에 연결하려는 경우.
 
-   다음을 참조하십시오 [웹 애플리케이션에 URL 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
+  다음을 참조하십시오 [웹 애플리케이션에 URL 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
 
-* **[!UICONTROL 포함]** - 사용 **[!UICONTROL 포함]** 차원 뷰어를 사용하여 웹 페이지에 포함된 Dynamic Media 3D 자산을 보려는 경우. You copy the embed code to the clipboard so you can paste it in your web pages. Editing of the is not permitted in the **[!UICONTROL Embed Code]** dialog box.
+* **[!UICONTROL 포함]** - 사용 **[!UICONTROL 포함]** 차원 뷰어를 사용하여 웹 페이지에 포함된 Dynamic Media 3D 자산을 보려는 경우. You copy the embed code to the clipboard so you can paste it in your web pages. 에서는 코드를 편집할 수 없습니다. **[!UICONTROL 포함]** 대화 상자.
 
-   다음을 참조하십시오 [웹 페이지에 Dynamic Media 비디오, 이미지 뷰어 또는 차원 뷰어 포함](/help/assets/dynamic-media/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).
+  다음을 참조하십시오 [웹 페이지에 Dynamic Media 비디오, 이미지 뷰어 또는 차원 뷰어 포함](/help/assets/dynamic-media/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).

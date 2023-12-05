@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '5562'
-ht-degree: 8%
+source-wordcount: '5496'
+ht-degree: 6%
 
 ---
 
@@ -83,7 +83,7 @@ Experience Manager Assets은 기본적으로 다음 두 속성에 대한 Facet �
 
 2023년 8월 현재 Experience Manager Assets에는 의 새 버전 9가 포함되어 있습니다. `damAssetLucene` 색인입니다. 이전 버전, `damAssetLucene-8` 및 아래에서 `statistical` 각 검색 패싯 수에 대한 항목 샘플에 대한 액세스 제어를 확인하는 모드입니다.
 
-`damAssetLucene-9` Oak 쿼리 패싯 계산의 동작을 로 변경하여 더 이상 기본 검색 색인에서 반환된 패싯 수에 대한 액세스 제어를 평가하지 않도록 합니다. 이로써 색 응답 시간이 빨라집니다. 그 결과, 사용자에게 액세스 권한이 없는 에셋을 포함하는 Facet 카운트 값이 표시될 수 있습니다. 이러한 사용자는 해당 에셋의 경로를 포함하여 다른 세부 정보에 액세스, 다운로드 또는 읽거나 에셋에 대한 추가 정보를 얻을 수 없습니다.
+`damAssetLucene-9` 는 기본 검색 색인에 의해 반환된 패싯 카운트에 대한 액세스 제어를 더 이상 평가하지 않도록 Oak 쿼리 패싯 카운트의 동작을 변경하여 검색 응답 시간이 더 빨라집니다. 그 결과, 사용자에게 액세스 권한이 없는 에셋을 포함하는 Facet 카운트 값이 표시될 수 있습니다. 이러한 사용자는 해당 에셋의 경로를 포함하여 다른 세부 정보에 액세스, 다운로드 또는 읽거나 에셋에 대한 추가 정보를 얻을 수 없습니다.
 
 이전 동작으로 전환해야 하는 경우(`statistical` mode), 참조 [콘텐츠 검색 및 색인화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html) 의 사용자 지정 버전을 만들려면 `damAssetLucene-9` 색인입니다. Adobe은 로 전환하지 않는 것이 좋습니다. `secure` 검색 응답 시간에 미치는 영향(결과 세트 크기가 큰 경우)으로 인한 모드입니다.
 
@@ -144,7 +144,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 1. 다음에서 [!DNL Assets] 사용자 인터페이스에서 에셋에 대한 속성 페이지를 엽니다. 클릭 **[!UICONTROL 고급]** 및 클릭 **[!UICONTROL 추가]** 아래에 **[!UICONTROL 검색 키워드에 대한 개선]**.
 1. 다음에서 **[!UICONTROL Search Promote]** 상자에서 이미지 검색을 강화할 키워드를 지정한 다음 **[!UICONTROL 추가]**. 동일한 방법으로 여러 키워드를 지정할 수 있습니다.
-1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다. 이 키워드에 대해 홍보한 자산이 상위 검색 결과 중에 나타납니다.
+1. 클릭 **[!UICONTROL 저장 및 닫기]**. 이 키워드에 대해 홍보한 자산이 상위 검색 결과 중에 나타납니다.
 
 타겟팅된 키워드에 대한 검색 결과에서 일부 에셋의 등급을 높여 이점을 활용할 수 있습니다. 아래 예제 비디오를 참조하십시오. 자세한 내용은 [에서 검색 [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
 
@@ -154,7 +154,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ## 검색 결과를 표시하도록 자산 배치 크기 구성 {#configure-asset-batch-size}
 
-관리자는 검색을 수행할 때 표시되는 자산의 배치 크기를 구성할 수 있습니다. 아래로 스크롤하여 결과를 로드하는 경우 자산 검색 결과는 구성된 여러 배치 크기 번호로 표시됩니다. 200, 500, 1,000개 자산의 사용 가능한 배치 크기 중에서 선택할 수 있습니다. 낮은 배치 크기 번호를 설정하면 검색 응답 시간이 빨라집니다.
+이제 관리자는 사용자가 검색을 수행할 때 표시되는 에셋의 배치 크기를 구성할 수 있습니다. 아래로 스크롤하여 결과를 로드하는 경우 자산 검색 결과는 구성된 여러 배치 크기 번호로 표시됩니다. 200, 500, 1,000개 자산의 사용 가능한 배치 크기 중에서 선택할 수 있습니다. 낮은 배치 크기 번호를 설정하면 검색 응답 시간이 빨라집니다.
 
 예를 들어 결과 개수 제한을 200개의 에셋으로 배치 크기로 설정한 경우, Experience Manager Assets은 검색 수행을 시작할 때 200개의 에셋의 배치 크기를 검색 결과에 표시합니다. 아래로 스크롤하여 검색 결과를 탐색하면 다음 200개의 자산 배치가 표시됩니다. 검색 쿼리와 일치하는 모든 에셋이 표시될 때까지 프로세스가 계속됩니다.
 
@@ -183,7 +183,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ### 유사한 이미지 찾기 {#visualsearch}
 
-To find images that are visually similar to a user-selected image, click **[!UICONTROL Find Similar]** option from the card view of an image or from the toolbar. [!DNL Experience Manager]는 사용자가 선택한 이미지와 유사한 DAM 저장소에서 스마트 태그가 지정된 이미지를 표시합니다. 
+To find images that are visually similar to a user-selected image, click **[!UICONTROL Find Similar]** option from the card view of an image or from the toolbar. [!DNL Experience Manager] 는 사용자가 선택한 이미지와 유사한 DAM 저장소에서 스마트 태그가 지정된 이미지를 표시합니다.
 
 ![카드 보기의 옵션을 사용하여 유사한 이미지 찾기](assets/search_find_similar.png)
 
@@ -195,7 +195,7 @@ To find images that are visually similar to a user-selected image, click **[!UIC
 
 ### Dynamic Media assets {#dmassets}
 
-You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** from the **[!UICONTROL Filters]** panel. It filters and displays assets such as image sets, carousels, mixed media sets, and spin sets.
+You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** from the **[!UICONTROL Filters]** panel. 이미지 세트, 회전 메뉴, 혼합 미디어 세트 및 스핀 세트와 같은 에셋을 필터링하고 표시합니다.
 
 ### 메타데이터 필드의 특정 값을 사용하는 GQL 검색 {#gql-search}
 
@@ -284,7 +284,7 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 
 | 이름 | 값 | 예 | 용도 |
 |---|---|---|---|
-| 리소스 접미사(B) | URL의 리소스 접미사 폴더 경로: [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | 특정 폴더(예: 폴더 포함)가 선택된 상태로 자산 선택기를 실행하려면 `/content/dam/we-retail/en/activities` 선택한 경우 URL의 형식은 다음과 같아야 합니다. `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | 자산 선택기를 시작할 때 특정 폴더를 선택해야 하는 경우 리소스 접미사로 전달합니다. |
+| 리소스 접미사(B) | URL의 리소스 접미사 폴더 경로: [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | 특정 폴더(예: 폴더)가 선택된 상태로 자산 선택기를 실행하려면 `/content/dam/we-retail/en/activities` 선택한 경우 URL의 형식은 다음과 같아야 합니다. `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | 자산 선택기를 시작할 때 특정 폴더를 선택해야 하는 경우 리소스 접미사로 전달합니다. |
 | `mode` | 단일, 다중 | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | 다중 모드에서는 에셋 선택기를 사용하여 여러 에셋을 동시에 선택할 수 있습니다. |
 | `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | 이러한 매개 변수를 사용하여 자산 선택기를 [Granite] 대화 상자로 엽니다. 이 옵션은 Granite 경로 필드를 통해 자산 선택기를 시작하고 pickerSrc URL로 구성하는 경우에만 적용할 수 있습니다. |
 | `root` | &lt;folder_path> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | 이 옵션을 사용하여 자산 선택기의 루트 폴더를 지정합니다. 이 경우 에셋 선택기를 사용하면 루트 폴더 아래에서 하위 에셋(직접/간접)만 선택할 수 있습니다. |
@@ -329,7 +329,7 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 * 전체 텍스트 검색은 다음과 같은 연산자를 지원합니다. `-` 및 `^`. 이러한 문자를 문자열 리터럴로 검색하려면 검색 표현식을 큰따옴표로 묶습니다. 예를 들어, `"Notebook - Beauty"` 대신 `Notebook - Beauty`.
 * 검색 결과가 너무 많으면 [검색 범위](#scope) 을 눌러 원하는 에셋에 대해 제로인을 수행합니다. 특정 파일 유형, 특정 위치, 특정 메타데이터 등과 같은 원하는 에셋을 더 잘 찾는 방법에 대한 아이디어가 있을 때 가장 잘 작동합니다.
 
-* **태깅**: 태그를 사용하여 보다 효율적으로 검색 및 검색할 수 있는 에셋을 분류할 수 있습니다. 태그 지정은 적절한 분류 체계를 다른 사용자 및 워크플로에 전파하는 데 도움이 됩니다. [!DNL Experience Manager] 은 사용 및 교육으로 자산에 태그를 지정하는 데 계속 더 능숙해지는 Adobe Sensei의 인위적인 인텔리전트 서비스를 사용하여 자산에 자동으로 태그를 지정하는 메서드를 제공합니다. 에셋을 검색할 때 스마트 태그가 팩토링됩니다. 기본 제공 검색 기능과 함께 작동합니다. 다음을 참조하십시오 [검색 동작](#searchbehavior). 검색 결과가 표시되는 순서를 최적화하려면 다음을 수행할 수 있습니다 [검색 순위 높이기](#searchrank) 몇 개 중 일부 자산을 선택합니다.
+* **태깅**: 태그를 사용하여 보다 효율적으로 검색 및 검색할 수 있는 에셋을 분류할 수 있습니다. 태깅은 적절한 분류법을 다른 사용자 및 워크플로우에 전달하는 데 도움이 됩니다. [!DNL Experience Manager] 은 사용 및 교육으로 자산에 태그를 지정하는 데 계속 더 능숙해지는 Adobe Sensei의 인위적인 인텔리전트 서비스를 사용하여 자산에 자동으로 태그를 지정하는 메서드를 제공합니다. 에셋을 검색할 때 스마트 태그가 팩토링됩니다. 기본 제공 검색 기능과 함께 작동합니다. 다음을 참조하십시오 [검색 동작](#searchbehavior). 검색 결과가 표시되는 순서를 최적화하려면 다음을 수행할 수 있습니다 [검색 순위 높이기](#searchrank) 몇 개 중 일부 자산을 선택합니다.
 
 * **색인화**: 인덱싱된 메타데이터 및 에셋만 검색 결과에 반환됩니다. 더 나은 적용 범위와 성능을 위해 적절한 색인화를 보장하고 모범 사례를 따르십시오. 다음을 참조하십시오 [색인화](#searchindex).
 
@@ -466,7 +466,7 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 
 ### 검색 결과 정렬 {#sort}
 
-필요한 에셋을 더 빨리 검색하려면 검색 결과를 정렬하십시오. 검색 결과를 목록 보기에서 정렬할 수 있으며 다음을 선택할 때만 가능합니다. **[[!UICONTROL 파일]](#searchui)** 다음에서 **[!UICONTROL 필터]** 패널. [!DNL Assets] uses server-side sorting to quickly sort all the assets (howsoever numerous) within a folder or results of a search query. Server-side sorting provides faster and more accurate results than client-side sorting.
+필요한 에셋을 더 빨리 검색하려면 검색 결과를 정렬하십시오. 검색 결과를 목록 보기에서 정렬할 수 있으며 다음을 선택할 때만 가능합니다. **[[!UICONTROL 파일]](#searchui)** 다음에서 **[!UICONTROL 필터]** 패널. [!DNL Assets] 는 서버측 정렬을 사용하여 폴더 또는 검색 쿼리 결과 내의 모든 에셋(그러나 그 수가 많음)을 빠르게 정렬합니다. Server-side sorting provides faster and more accurate results than client-side sorting.
 
 목록 보기에서 모든 폴더의 에셋을 정렬할 수 있는 것처럼 검색 결과를 정렬할 수 있습니다. 정렬은 이름, 제목, 상태, Dimension, 크기, 등급, 사용량, (날짜) 생성됨, (날짜) 수정됨, (날짜) 게시됨, 워크플로우 및 체크아웃됨 열에서 작동합니다.
 
@@ -531,7 +531,7 @@ You can create smart collections based on the search criteria. From the **[!UICO
 | 검색 결과가 너무 많습니다. | 광범위한 검색 매개 변수. | 제한 고려: [검색 범위](#scope). 스마트 태그를 사용하면 예상보다 많은 검색 결과를 얻을 수 있습니다. 다음을 참조하십시오 [스마트 태그를 사용한 검색 동작](#withsmarttags). |
 | 관련이 없거나 부분적으로 관련된 검색 결과. | 스마트 태깅으로 검색 동작이 변경됩니다. | 이해 [스마트 태그 지정 후 검색 변경 방법](#withsmarttags). |
 | 자산에 대한 자동 완성 제안이 없습니다. | 새로 업로드한 자산은 아직 색인화되지 않았습니다. Omnisearch 막대에 검색 키워드를 입력할 때 메타데이터를 즉시 제안으로 사용할 수 없습니다. | [!DNL Experience Manager] 는 배경 작업을 실행하여 새로 업로드되거나 업데이트된 모든 에셋의 메타데이터를 인덱싱한 다음 제안 목록에 메타데이터를 추가하기 전에 시간 초과 기간(기본적으로 1시간)이 만료될 때까지 대기합니다. |
-| 검색 결과 없음. | <ul><li>쿼리와 일치하는 에셋이 없습니다. </li><li> 검색 쿼리 앞에 공백을 추가했습니다. </li><li> 지원되지 않는 메타데이터 필드에 검색한 키워드가 포함되어 있습니다.</li><li> 에셋의 휴무 중 검색. </li></ul> | <ul><li>다른 키워드를 사용하여 검색합니다. 또는 스마트 태깅 또는 유사성 검색을 사용하여 검색 결과를 향상시킬 수 있습니다. </li><li>[알려진 제한 사항](#limitations).</li><li>모든 메타데이터 필드는 검색용으로 고려되지 않습니다. 다음을 참조하십시오 [범위](#scope).</li><li>필요한 에셋에 대해 나중에 검색하거나 정시 및 휴무를 수정합니다.</li></ul> |
+| 검색 결과가 없습니다. | <ul><li>쿼리와 일치하는 에셋이 없습니다. </li><li> 검색 쿼리 앞에 공백을 추가했습니다. </li><li> 지원되지 않는 메타데이터 필드에 검색한 키워드가 포함되어 있습니다.</li><li> 에셋의 휴무 중 검색. </li></ul> | <ul><li>다른 키워드를 사용하여 검색합니다. 또는 스마트 태깅 또는 유사성 검색을 사용하여 검색 결과를 향상시킬 수 있습니다. </li><li>[알려진 제한 사항](#limitations).</li><li>모든 메타데이터 필드는 검색용으로 고려되지 않습니다. 다음을 참조하십시오 [범위](#scope).</li><li>필요한 에셋에 대해 나중에 검색하거나 정시 및 휴무를 수정합니다.</li></ul> |
 | 검색 필터 또는 술어를 사용할 수 없습니다. | <ul><li>검색 필터가 구성되지 않았습니다.</li><li>로그인에 사용할 수 없습니다.</li><li>(가능성이 낮음) 사용 중인 배포에서 검색 옵션이 사용자 지정되지 않습니다.</li></ul> | <ul><li>관리자에게 문의하여 검색 사용자 지정을 사용할 수 있는지 확인하십시오.</li><li>관리자에게 문의하여 계정에 사용자 지정을 사용할 수 있는 권한/권한이 있는지 확인하십시오.</li><li>관리자에게 문의하여 다음에 사용할 수 있는 사용자 지정 사항을 확인하십시오. [!DNL Assets] 사용 중인 배포.</li></ul> |
 | 시각적으로 유사한 이미지를 검색할 때 예상 이미지가 누락됩니다. | <ul><li>에서 이미지를 사용할 수 없음 [!DNL Experience Manager].</li><li>이미지가 인덱싱되지 않았습니다. 일반적으로 최근에 업로드된 경우.</li><li>이미지가 스마트 태그가 지정되지 않았습니다.</li></ul> | <ul><li>에 이미지 추가 [!DNL Assets].</li><li>관리자에게 문의하여 저장소를 다시 색인화하십시오. 또한 적절한 색인을 사용하고 있는지 확인하십시오.</li><li>관련 에셋에 스마트 태그를 지정하려면 관리자에게 문의하십시오.</li></ul> |
 | 시각적으로 유사한 영상을 검색할 때, 무관한 영상이 표시된다. | 시각적 검색 동작. | [!DNL Experience Manager] 는 관련성이 있을 수 있는 에셋을 가능한 한 많이 표시합니다. 연관성이 낮은 이미지가 있는 경우 결과에 추가되지만 검색 순위가 낮습니다. 검색 결과를 아래로 스크롤하면 검색된 에셋의 일치 품질과 관련성이 감소합니다. |
@@ -539,7 +539,7 @@ You can create smart collections based on the search criteria. From the **[!UICO
 
 **추가 참조**
 
-* [모범 사례 검색](search-best-practices.md)
+* [검색 모범 사례](search-best-practices.md)
 * [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
 * [자산이 지원되는 파일 형식](file-format-support.md)

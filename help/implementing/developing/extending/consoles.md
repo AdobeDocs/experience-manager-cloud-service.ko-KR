@@ -2,10 +2,10 @@
 title: 콘솔 사용자 정의
 description: 작성 인스턴스의 콘솔을 사용자 정의할 수 있도록 AEM이 제공하는 다양한 옵션에 대해 알아봅니다.
 exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 92%
+source-wordcount: '516'
+ht-degree: 87%
 
 ---
 
@@ -15,7 +15,7 @@ AEM은 작성 인스턴스의 콘솔(및 [페이지 작성 기능](/help/impleme
 
 ## Clientlibs {#clientlibs}
 
-Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 제공하면서 표준 기능, 오브젝트 및 메서드를 재사용할 수 있습니다. clientlibs로 사용자 정의할 때 `/apps.` 아래에서 자체적인 clientlib을 만들 수 있습니다. 예를 들어 clientlib이 사용자 정의 구성 요소에 필요한 코드를 보유할 수 있습니다.
+Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 제공하면서 표준 기능, 오브젝트 및 메서드를 재사용할 수 있습니다. clientlibs를 사용하여 사용자 정의하는 경우 `/apps.` 예를 들어 사용자 지정 구성 요소에 필요한 코드를 보유할 수 있습니다.
 
 다음을 참조하십시오 [AEM에서 클라이언트측 라이브러리 as a Cloud Service 사용](/help/implementing/developing/introduction/clientlibs.md).
 

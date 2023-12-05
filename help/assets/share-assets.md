@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 6%
+source-wordcount: '1290'
+ht-degree: 3%
 
 ---
 
@@ -64,7 +64,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 1. 에셋 또는 에셋을 포함하는 폴더를 선택합니다. 도구 모음에서 를 클릭합니다 **[!UICONTROL 링크 공유]**.
 1. 다음 **[!UICONTROL 링크 공유]** 에서 자동 생성된 에셋 링크가 포함된 대화 상자가 나타납니다. **[!UICONTROL 링크 공유]** 필드.
 
-   * 이메일 주소 상자에 링크를 공유할 사용자의 이메일 ID를 입력합니다. You can share the link with multiple users. 사용자가 조직의 멤버인 경우 드롭다운 목록에 표시되는 제안 사항에서 이메일 ID를 선택합니다. 사용자가 외부 사용자인 경우 전체 이메일 ID를 입력하고 키를 누릅니다 **[!UICONTROL 입력]**; 이메일 ID가 사용자 목록에 추가됩니다.
+   * 이메일 주소 상자에 링크를 공유할 사용자의 이메일 ID를 입력합니다. 여러 사용자와 링크를 공유할 수 있습니다. 사용자가 조직의 멤버인 경우 드롭다운 목록에 표시되는 제안 사항에서 이메일 ID를 선택합니다. 사용자가 외부 사용자인 경우 전체 이메일 ID를 입력하고 키를 누릅니다 **[!UICONTROL 입력]**; 이메일 ID가 사용자 목록에 추가됩니다.
 
    * 다음에서 **[!UICONTROL 제목]** 상자에 제목을 입력하여 공유된 에셋의 용도를 지정합니다.
    * 다음에서 **[!UICONTROL 메시지]** 필요한 경우 상자에 메시지를 입력합니다.
@@ -223,7 +223,7 @@ Before you can share assets as links, configure the email service.
 
 When you download assets from the link shared using the Link Sharing feature, Experience Manager compresses the asset hierarchy from the repository and then returns the asset in a ZIP file. However, in the absence of limits to the amount of data that can be compressed in a ZIP file, huge amounts of data is subjected to compression, which causes out of memory errors in JVM. To secure the system from a potential denial of service attack due to this situation, you can configure the maximum size of the downloaded files. If uncompressed size of the asset exceeds the configured value, asset download requests are rejected. The default value is 100 MB.
 
-1. Click/Tap the Experience Manager logo and then go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. Select the Experience Manager logo and then go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the web console, locate the **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuration.
 1. Open the configuration in edit mode, and modify the value of the **[!UICONTROL Max Content Size (uncompressed)]** parameter.
 1. Save the changes.

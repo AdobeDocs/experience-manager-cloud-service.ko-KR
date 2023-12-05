@@ -2,9 +2,9 @@
 title: SPA 소개 및 워크스루
 description: 이 문서에서는 SPA 개념을 소개하고, 작성용 기본 SPA 애플리케이션을 사용하는 과정을 안내하고, 기본 AEM SPA 편집기와 관련되는 방식을 보여 줍니다.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2045'
 ht-degree: 93%
 
 ---
@@ -38,7 +38,7 @@ SPA 편집기는 AEM 내에서 SPA를 지원하는 복합 솔루션을 제공합
 
 >[!CAUTION]
 >
->이 문서는 데모용으로만 [WKND SPA Project 앱](https://github.com/adobe/aem-guides-wknd-spa)을 사용합니다. 프로젝트 작업에 사용해서는 안 됩니다.
+>이 문서는 데모용으로만 [WKND SPA Project 앱](https://github.com/adobe/aem-guides-wknd-spa)을 사용합니다. 프로젝트 작업에는 사용하지 마십시오.
 
 >[!TIP]
 >

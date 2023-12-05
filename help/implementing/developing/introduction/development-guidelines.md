@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service 개발에 대한 지침과 AMS의 AEM On-Premise 및 AEM과 다른 중요한 방식에 대해 알아봅니다.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: c706757857a528a0475f659c6b38110db6f6572a
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2791'
+source-wordcount: '2745'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,7 @@ AEM을 as a Cloud Service으로 업데이트하는 동안 이전 코드와 새 �
 
 ## 파일 시스템의 상태 {#state-on-the-filesystem}
 
-인스턴스의 파일 시스템을 AEM as a Cloud Service으로 사용하면 안 됩니다. 이 디스크는 사용 후 삭제되며 인스턴스가 재활용될 때 삭제됩니다. 단일 요청 처리와 관련된 임시 스토리지에 파일 시스템을 제한적으로 사용할 수 있지만 대용량 파일에 대해 남용되어서는 안 됩니다. 리소스 사용 할당량에 부정적인 영향을 주고 디스크 제한에 걸릴 수 있기 때문입니다.
+인스턴스의 파일 시스템을 AEM as a Cloud Service으로 사용하지 마십시오. 이 디스크는 사용 후 삭제되며 인스턴스가 재활용될 때 삭제됩니다. 단일 요청 처리와 관련된 임시 스토리지에 파일 시스템을 제한적으로 사용할 수 있지만 대용량 파일에 대해 남용되어서는 안 됩니다. 리소스 사용 할당량에 부정적인 영향을 주고 디스크 제한에 걸릴 수 있기 때문입니다.
 
 파일 시스템 사용이 지원되지 않는 예를 들어 게시 계층은 지속되어야 하는 모든 데이터가 장기 저장을 위해 외부 서비스로 전달되도록 해야 합니다.
 
@@ -47,7 +47,7 @@ AEM을 as a Cloud Service으로 업데이트하는 동안 이전 코드와 새 �
 
 문제를 최소화하기 위해, 장기 실행 작업은 가능한 경우 피해야 하고, 최소한으로 재개할 수 있어야 합니다. 이러한 작업을 실행하는 경우 최소 한 번 이상의 보장이 있는 Sling 작업을 사용하면 작업이 중단되면 가능한 한 빨리 재실행됩니다. 그러나 처음부터 다시 시작하면 안 된다. 이러한 작업을 예약하려면 다음을 사용하는 것이 좋습니다. [Sling 작업](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) 이와 같은 스케줄러는 최소 한 번 이상 실행되도록 합니다.
 
-실행을 보장할 수 없으므로 Sling Commons 스케줄러를 예약에 사용하면 안 됩니다. 그것은 단지 그것이 예정되어 있을 가능성이 더 높습니다.
+실행이 보장되지 않으므로 예약에 Sling Commons 스케줄러를 사용하지 마십시오. 그것은 단지 그것이 예정되어 있을 가능성이 더 높습니다.
 
 마찬가지로, 관찰 이벤트(JCR 이벤트 또는 Sling 리소스 이벤트)에 대한 연기와 같이 비동기적으로 발생하는 모든 작업은 실행을 보장할 수 없으므로 주의하여 사용해야 합니다. 이는 현재 AEM 배포에 이미 해당됩니다.
 
@@ -109,7 +109,7 @@ AEM as a Cloud Service은 타사 고객 코드에 대한 Touch UI만 지원합�
 
 로컬 개발의 경우 로그 항목이 `/crx-quickstart/logs` 폴더를 삭제합니다.
 
-클라우드 환경에서 개발자는 Cloud Manager를 통해 로그를 다운로드하거나 명령줄 도구를 사용하여 로그를 추적할 수 있습니다. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+클라우드 환경에서 개발자는 Cloud Manager를 통해 로그를 다운로드하거나 명령줄 도구를 사용하여 로그를 추적할 수 있습니다. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **로그 수준 설정**
 
@@ -172,7 +172,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 로컬 개발의 경우 개발자는 CRXDE Lite(`/crx/de`) 및 AEM 웹 콘솔(`/system/console`).
 
-로컬 개발(SDK 사용)에서 `/apps` 및 `/libs` 는 직접 쓸 수 있으며, 이는 상위 수준 폴더를 변경할 수 없는 클라우드 환경과는 다릅니다.
+로컬 개발 시(SDK 사용) `/apps` 및 `/libs` 는 직접 쓸 수 있으며, 이는 상위 수준 폴더를 변경할 수 없는 클라우드 환경과는 다릅니다.
 
 ### AEM as a Cloud Service 개발 도구 {#aem-as-a-cloud-service-development-tools}
 

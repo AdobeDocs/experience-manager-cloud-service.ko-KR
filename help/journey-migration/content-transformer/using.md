@@ -1,15 +1,15 @@
 ---
-title: 콘텐츠 트랜스포머 사용
+title: 컨텐츠 변환기 사용
 description: AEM으로 as a Cloud Service으로 마이그레이션할 것을 대비하여 콘텐츠 구조를 변형하는 방법에 대해 알아봅니다.
 exl-id: 40516ff7-5686-42e6-bdd1-c9c6de432b09
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 2%
+source-wordcount: '630'
+ht-degree: 1%
 
 ---
 
-# 콘텐츠 트랜스포머 사용 {#using-ct}
+# 컨텐츠 변환기 사용 {#using-ct}
 
 ## 콘텐츠 변환기 사용에 대한 중요한 고려 사항 {#imp-considerations-ct}
 
@@ -55,7 +55,7 @@ ht-degree: 2%
 1. 모든 문제 또는 특정 문제를 선택하고 이를 해결하기 위해 이동하거나 제거하거나 이름을 바꿀 수 있습니다. 을 사용하여 사용자 정의 경로를 추가할 수도 있습니다. **경로 추가** 오른쪽 상단의 버튼입니다.
 
    >[!NOTE]
-   > 이동 작업을 사용할 때는 모든 경로를 하나의 폴더(예: 아래)로만 이동하는 것이 좋습니다 `/etc/packages/content-transformation/paths`) 따라서 백업 패키지를 설치하여 인스턴스를 원래 상태로 되돌리면 폴더 (`/etc/packages/content-transformation/paths`)은 저장소 크기를 줄이기 위해 제거 작업을 사용하여 삭제할 수 있습니다.
+   > 이동 작업을 사용할 때는 모든 경로를 하나의 폴더(예: 아래)로만 이동하는 것이 좋습니다. `/etc/packages/content-transformation/paths`) 따라서 백업 패키지를 설치하여 인스턴스를 원래 상태로 되돌리면 폴더 (`/etc/packages/content-transformation/paths`)은 저장소 크기를 줄이기 위해 제거 작업을 사용하여 삭제할 수 있습니다.
 
    ![이미지](/help/journey-migration/content-transformer/assets/ct-5.png)
    ![이미지](/help/journey-migration/content-transformer/assets/ct-6.png)

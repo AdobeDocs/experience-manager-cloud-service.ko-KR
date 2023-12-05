@@ -4,10 +4,10 @@ description: AEM을 Microsoft Translator에 연결하여 번역 워크플로를 
 feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 83%
+source-wordcount: '487'
+ht-degree: 81%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 83%
 | 속성 | 설명 |
 |---|---|
 | 번역 레이블 | 번역 서비스의 표시 이름 |
-| 번역 속성 | (옵션) 사용자 생성 콘텐츠의 경우, 번역된 텍스트 옆에 표시되는 속성 (예: `Translations by Microsoft`) |
+| 번역 속성 | (선택 사항) 사용자 생성 콘텐츠의 경우, 번역된 텍스트 옆에 표시되는 속성(예: ) `Translations by Microsoft` |
 | 작업 영역 ID | (옵션) 사용할 맞춤화된 Microsoft Translator 엔진의 ID |
 | 구독 키 | Microsoft Translator에 대한 Microsoft 구독 키 |
 
@@ -50,7 +50,7 @@ ht-degree: 83%
    ![번역 구성 편집](../assets/edit-translation-config.png)
 
 1. 선택 **연결** 연결을 확인합니다.
-1. 선택 **저장 및 닫기**.
+1. **저장 후 닫기**&#x200B;를 선택합니다.
 
 ## Microsoft Translator 체험판 라이선스 구성 업그레이드 {#upgrading-the-microsoft-translator-trial-license-configuration}
 

@@ -1,21 +1,17 @@
 ---
 title: AEM Screens Cloud와 Adobe Analytics 통합
-seo-title: Adobe Analytics Integration with AEM Screens
 description: 이 페이지를 따라 AEM Screens과 Adobe Analytics의 획기적인 통합에 대해 알아보고 재생 증명을 제공합니다.
-seo-description: Follow this page to learn about out of the box integration of AEM Screens with Adobe Analytics and provides you with a proof of play.
-uuid: 80d61af7-bf4d-46ca-a026-99a666c2e1a0
 contentOwner: trushton
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Cloud/SCREENS
 topic-tags: administering
-discoiquuid: b1a0e00e-0368-42c9-8bcd-5f00b4d0990c
 docset: aem65
 role: Admin, Developer
 level: Intermediate
 exl-id: e22242ce-e5ce-4486-bba4-e6a89ac4fb5e
-source-git-commit: 75d147886c8151f8b8ac41af907e17b5deff5a9c
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
@@ -49,7 +45,7 @@ AEM Screens과 Adobe Analytics 통합은 다음을 적용합니다 *목표*:
 
 ## 아키텍처 세부 정보 {#architectural-details}
 
-AEM Screens 고객은 표시된 시간과 기간(집계된) 동안 표시되는 콘텐츠를 이해하려고 합니다. 이는 간판 솔루션의 일반적인 기능입니다. AEM Screens은 자체 분석을 구축하는 대신 Adobe Analytics을 활용하므로, 위치에 표시된 콘텐츠를 다른 데이터 소스와 상호 연관시키는 데 도움이 되는 크로스 채널 분석이라는 시장에서 고유한 기능을 달성할 수 있습니다.
+AEM Screens 고객은 표시된 시간과 기간(집계된) 동안 표시되는 콘텐츠를 이해하려고 합니다. 이는 간판 솔루션의 일반적인 기능입니다. AEM Screens은 자체 분석을 구축하는 대신 Adobe Analytics을 사용하며, 이를 통해 위치에 표시된 콘텐츠를 다른 데이터 소스와 상호 연관시키는 데 도움이 되는 크로스 채널 분석이라는 시장에서 고유한 기능을 달성할 수 있습니다.
 
 다음 아키텍처 다이어그램은 AEM Screens과 Adobe Analytics 통합에 대해 설명합니다.
 
@@ -66,4 +62,4 @@ Screens Cloud에서 Adobe 분석을 활성화하려면 Adobe 관계 관리자에
 Analytics 이벤트는 indexedDB에 오프라인으로 저장되고 나중에 청크되어 클라우드로 전송됩니다.
 
 >[!NOTE]
->이벤트의 시퀀싱 및 표준 데이터 모델에 대한 자세한 내용은 을 참조하십시오. [AEM Screens용 Adobe Analytics 구성](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html) 을 참조하십시오.
+>이벤트의 시퀀싱 및 표준 데이터 모델에 대한 자세한 내용은 [AEM Screens용 Adobe Analytics 구성](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html) 을 참조하십시오.

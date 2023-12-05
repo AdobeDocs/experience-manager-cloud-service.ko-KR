@@ -4,10 +4,10 @@ description: Forms 중심 워크플로를 사용하면 적응형 Forms 기반 �
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: AEM 워크플로 사용, 작업 단계 할당, PDF/A 단계로 전환, 기록된 문서 생성 단계, 워크플로 사용, 문서 서명 단계, 인쇄된 출력 단계 생성, 비대화형 PDF 출력 생성
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '7448'
-ht-degree: 1%
+source-wordcount: '7367'
+ht-degree: 0%
 
 ---
 
@@ -185,7 +185,7 @@ PDF/A로 변환 단계에는 다음과 같은 속성이 있습니다.
 
 ## 이메일 전송 단계 {#send-email-step}
 
-이메일 단계를 사용하여 전자 메일(예: 기록 문서, 적응형 양식 링크 포함 이메일)을 보낼 수 있습니다 <!-- , link of an interactive communication-->또는 PDF 문서가 첨부되어 있습니다. 이메일 전송 단계 지원 [HTML 이메일](https://en.wikipedia.org/wiki/HTML_email). HTML 이메일은 응답하며 수신자의 이메일 클라이언트 및 화면 크기에 맞게 조정됩니다. HTML 이메일 템플릿을 사용하여 이메일의 모양, 색상 구성표 및 비헤이비어를 정의할 수 있습니다.
+전자 메일 단계를 사용하여 전자 메일(예: 기록 문서, 적응형 양식 링크 포함)을 보낼 수 있습니다 <!-- , link of an interactive communication-->또는 PDF 문서가 첨부되어 있습니다. 이메일 전송 단계 지원 [HTML 이메일](https://en.wikipedia.org/wiki/HTML_email). HTML 이메일은 응답하며 수신자의 이메일 클라이언트 및 화면 크기에 맞게 조정됩니다. HTML 이메일 템플릿을 사용하여 이메일의 모양, 색상 구성표 및 비헤이비어를 정의할 수 있습니다.
 
 이메일 단계는 일별 CQ 메일 서비스를 사용하여 이메일을 전송합니다. 이메일 단계를 사용하기 전에 이메일 서비스가 구성되어 있는지 확인하십시오. 기본적으로 이메일은 HTTP 및 HTTPs 프로토콜만 지원합니다. [지원 팀에 문의](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) 포트를 통해 이메일을 전송하고 환경에 대한 SMTP 프로토콜을 사용하도록 설정합니다. 제한은 플랫폼의 보안을 향상시키는 데 도움이 됩니다.
 

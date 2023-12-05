@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1548'
-ht-degree: 2%
+source-wordcount: '1512'
+ht-degree: 1%
 
 ---
 
@@ -37,17 +37,17 @@ ht-degree: 2%
 에 설명된 대로 양식 데이터 모델에서 사용할 데이터 소스를 구성했는지 확인합니다. [데이터 소스 구성](configure-data-sources.md). 구성된 데이터 소스를 기반으로 양식 데이터 모델을 만들려면 다음을 수행하십시오.
 
 1. 위치 [!DNL Experience Manager] 작성자 인스턴스, 다음으로 이동 **[!UICONTROL Forms > 데이터 통합]**.
-1. 누르기 **[!UICONTROL 만들기 > 양식 데이터 모델]**.
+1. 선택 **[!UICONTROL 만들기 > 양식 데이터 모델]**.
 1. 양식 데이터 모델 만들기 대화 상자에서
 
    * 양식 데이터 모델의 이름을 지정합니다.
    * (**선택 사항**) 양식 데이터 모델의 제목, 설명 및 태그를 지정합니다.
-   * (**선택 사항이며 데이터 소스가 구성된 경우에만 적용할 수 있습니다**) 옆에 있는 확인 표시 아이콘을 누릅니다. **[!UICONTROL 데이터 소스 구성]** 필드 를 선택하고 사용할 데이터 소스에 대한 클라우드 서비스가 있는 구성 노드를 선택합니다. 다음 페이지에서 선택할 수 있는 데이터 소스 목록을 선택한 구성 노드에서 사용할 수 있는 데이터 소스로 제한합니다. 단, 모두 [!DNL Experience Manager] 사용자 프로필 데이터 소스는 기본적으로 나열됩니다. 구성 노드를 선택하지 않으면 모든 구성 노드의 데이터 소스가 나열됩니다.
+   * (**선택 사항이며 데이터 소스가 구성된 경우에만 적용할 수 있습니다**) 옆에 있는 확인 표시 아이콘을 선택합니다. **[!UICONTROL 데이터 소스 구성]** 필드 를 선택하고 사용할 데이터 소스에 대한 클라우드 서비스가 있는 구성 노드를 선택합니다. 다음 페이지에서 선택할 수 있는 데이터 소스 목록을 선택한 구성 노드에서 사용할 수 있는 데이터 소스로 제한합니다. 단, 모두 [!DNL Experience Manager] 사용자 프로필 데이터 소스는 기본적으로 나열됩니다. 구성 노드를 선택하지 않으면 모든 구성 노드의 데이터 소스가 나열됩니다.
 
-1. 누르기 **[!UICONTROL 다음]**.
+1. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 
 1. (**데이터 소스가 구성된 경우에만 적용 가능**) **[!UICONTROL 데이터 소스 선택]** 화면에 사용 가능한 데이터 소스(있는 경우)가 나열됩니다. 양식 데이터 모델에서 사용할 데이터 소스를 선택합니다.
-1. 누르기 **[!UICONTROL 만들기]** 확인 대화 상자에서 다음을 누릅니다. **[!UICONTROL 열기]** 을 클릭하여 양식 데이터 모델 편집기를 엽니다.
+1. 선택 **[!UICONTROL 만들기]** 확인 대화 상자에서 **[!UICONTROL 열기]** 을 클릭하여 양식 데이터 모델 편집기를 엽니다.
 
    양식 데이터 모델 편집기 UI의 다양한 구성 요소를 검토해 보겠습니다.
 
@@ -71,12 +71,12 @@ ht-degree: 2%
 
 기존 양식 데이터 모델에 데이터 소스를 추가하거나 업데이트하려면 다음을 수행합니다.
 
-1. 다음으로 이동 **[!UICONTROL Forms > 데이터 통합]**&#x200B;데이터 소스를 추가하거나 업데이트할 양식 데이터 모델을 선택한 다음 를 누릅니다 **[!UICONTROL 속성]**.
+1. 다음으로 이동 **[!UICONTROL Forms > 데이터 통합]**&#x200B;데이터 소스를 추가하거나 업데이트할 양식 데이터 모델을 선택한 다음 를 선택합니다 **[!UICONTROL 속성]**.
 1. 양식 데이터 모델 속성에서 **[!UICONTROL 소스 업데이트]** 탭.
 
    다음에서 **[!UICONTROL 소스 업데이트]** 탭:
 
-   * 에서 찾아보기 아이콘을 탭합니다. **[!UICONTROL 컨텍스트 인식 구성]** 필드를 지정하고 추가하려는 데이터 소스에 대한 클라우드 구성이 있는 구성 노드를 선택합니다. 노드를 선택하지 않으면 클라우드 구성은 `global` 을 탭하면 노드가 나열됩니다. **[!UICONTROL 소스 추가]**.
+   * 에서 찾아보기 아이콘 선택 **[!UICONTROL 컨텍스트 인식 구성]** 필드를 지정하고 추가하려는 데이터 소스에 대한 클라우드 구성이 있는 구성 노드를 선택합니다. 노드를 선택하지 않으면 클라우드 구성은 `global` 를 선택하면 노드가 나열됩니다. **[!UICONTROL 소스 추가]**.
 
    * 새 데이터 소스를 추가하려면 **[!UICONTROL 소스 추가]** 및 양식 데이터 모델에 추가할 데이터 소스를 선택합니다. 모든 데이터 소스가에 구성됨 `global` 선택한 구성 노드가 있으면 표시됩니다.
 
@@ -85,7 +85,7 @@ ht-degree: 2%
 
      ![fdm-properties](assets/fdm-properties.png)
 
-1. 누르기 **[!UICONTROL 저장 및 닫기]** 업데이트를 저장합니다.
+1. 선택 **[!UICONTROL 저장 및 닫기]** 업데이트를 저장합니다.
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ PID로 OSGi 출하 시 구성 파일 생성 `org.apache.sling.caconfig.impl.over
       1. 로컬 개발 인스턴스에서 `/system/console/configMgr`를 클릭하고, 다음과 같은 이름의 공장 OSGi 구성을 선택합니다. **[!UICONTROL Apache Sling 컨텍스트 인식 구성 재정의 공급자: OSGi 구성]**.
       1. 설명을 입력합니다.
       1. 선택 **[!UICONTROL 활성화됨]**.
-      1. 재정의에서 sling 재정의 구문에서 환경에 따라 변경해야 하는 필드를 제공합니다. 자세한 내용은 [Apache Sling 컨텍스트 인식 구성 - 재정의](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). 예: `cloudconfigs/fdm/{configName}/url="newURL"`
+      1. 재정의에서 sling 재정의 구문에서 환경에 따라 변경해야 하는 필드를 제공합니다. 자세한 내용은 [Apache Sling 컨텍스트 인식 구성 - 재정의](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). 예를 들어, `cloudconfigs/fdm/{configName}/url="newURL"`.
 을(를) 선택하여 여러 재정의를 추가할 수 있습니다. **[!UICONTROL +]**.
       1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
       1. OSGi 구성 JSON을 가져오려면 의 단계를 따릅니다. [AEM SDK 빠른 시작을 사용하여 OSGi 구성 생성](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).

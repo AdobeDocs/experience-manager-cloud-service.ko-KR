@@ -2,10 +2,10 @@
 title: 비동기 작업
 description: Adobe Experience Manager은 리소스 집약적인 일부 작업을 백그라운드 작업으로 비동기적으로 완료하여 성능을 최적화합니다.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 70%
+source-wordcount: '856'
+ht-degree: 64%
 
 ---
 
@@ -55,7 +55,7 @@ AEM이 비동기 방식으로 작업을 처리할 때마다 [받은 편지함](/
 
    ![stop_icon](assets/async-stop-icon.png)
 
-1. 설명 및 로그 등 추가 세부 사항을 보려면 작업을 선택하고 도구 모음에서 **[!UICONTROL 열기]**&#x200B;를 클릭합니다.
+1. 설명 및 로그 등 추가 세부 정보를 보려면 작업을 선택하고 **[!UICONTROL 열기]** 을 클릭합니다.
 
    ![open_icon](assets/async-open-icon.png)
 

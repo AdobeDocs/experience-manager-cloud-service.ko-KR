@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 4d1e70c19caab23df13ed6fdc29b30e41106501f
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2092'
-ht-degree: 30%
+source-wordcount: '2001'
+ht-degree: 28%
 
 ---
 
@@ -44,16 +44,16 @@ ht-degree: 30%
 전제 조건이 갖추어지면 다음 단계를 통해 작성자 인스턴스에서 [!DNL AEM Forms]를 사용하여 [!DNL Adobe Acrobat Sign]을 구성하십시오.
 
 1. AEM Forms 작성자 인스턴스에서 **[!UICONTROL 도구]** ![망치](assets/hammer.png) > **[!UICONTROL 일반]** > **[!UICONTROL 구성 브라우저]**.
-1. 다음에서 **[!UICONTROL 구성 브라우저]** 페이지, 탭 **[!UICONTROL 만들기]**.
-1. 다음에서 **[!UICONTROL 구성 만들기]** 대화 상자, 지정 **[!UICONTROL 제목]** 구성의 경우 활성화 **[!UICONTROL 클라우드 구성]**, 및 탭 **[!UICONTROL 만들기]**. 이를 통해 Cloud Service를 저장하는 구성 컨테이너가 생성됩니다. 폴더 이름에는 공백이 없어야 합니다.
+1. 다음에서 **[!UICONTROL 구성 브라우저]** 페이지, 선택 **[!UICONTROL 만들기]**.
+1. 다음에서 **[!UICONTROL 구성 만들기]** 대화 상자, 지정 **[!UICONTROL 제목]** 구성의 경우 활성화 **[!UICONTROL 클라우드 구성]**, 및 선택 **[!UICONTROL 만들기]**. 이를 통해 Cloud Service를 저장하는 구성 컨테이너가 생성됩니다. 폴더 이름에는 공백이 없어야 합니다.
 1. 다음으로 이동 **[!UICONTROL 도구]** ![망치](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Acrobat Sign]** 이전 단계에서 생성한 구성 컨테이너를 엽니다.
 
    >[!NOTE]
    >
    >적응형 양식을 만들 때에서 컨테이너 이름을 지정합니다 **[!UICONTROL 구성 컨테이너]** 필드.
 
-1. 구성 페이지에서 을 누릅니다. **[!UICONTROL 만들기]** 만들려면 [!DNL Adobe Acrobat Sign] AEM Forms의 구성
-1. 다음에서 **[!UICONTROL 일반]** 의 탭 **[!UICONTROL Adobe Acrobat Sign 구성 만들기]** 페이지, 지정 **[!UICONTROL 이름]** 구성을 보려면 다음을 누르십시오. **[!UICONTROL 다음]**. 다음을 선택적으로 지정할 수 있습니다. **[!UICONTROL 제목]** 을(를) 찾아 선택 **[!UICONTROL 축소판]** 구성.
+1. 구성 페이지에서 을 선택합니다 **[!UICONTROL 만들기]** 만들려면 [!DNL Adobe Acrobat Sign] AEM Forms의 구성
+1. 다음에서 **[!UICONTROL 일반]** 의 탭 **[!UICONTROL Adobe Acrobat Sign 구성 만들기]** 페이지, 지정 **[!UICONTROL 이름]** 을(를) 위해 다음을 선택합니다. **[!UICONTROL 다음]**. 다음을 선택적으로 지정할 수 있습니다. **[!UICONTROL 제목]** 을(를) 찾아 선택 **[!UICONTROL 축소판]** 구성.
 
 1. 이제 다음을 수행할 수 있습니다 **[!UICONTROL 솔루션 선택]** 선택 [!DNL Adobe Acrobat Sign].
 
@@ -64,7 +64,7 @@ ht-degree: 30%
 [create URL](#create-a-redirect-url-for-your-aem-instance)
  -->
 
-1. 현재 브라우저 창의 URL을 메모장에 복사하고 부품을 제거합니다 `/ui#/aem` URL에서 을 구성하는 데 수정된 URL이 필요합니다. [!DNL Adobe Acrobat Sign] 을 사용한 애플리케이션 [!DNL AEM Forms]: 이후 단계에서 사용할 수 있습니다. 누르기 **[!UICONTROL 다음]**.
+1. 현재 브라우저 창의 URL을 메모장에 복사하고 부품을 제거합니다 `/ui#/aem` URL에서 을 구성하는 데 수정된 URL이 필요합니다. [!DNL Adobe Acrobat Sign] 을 사용한 애플리케이션 [!DNL AEM Forms]: 이후 단계에서 사용할 수 있습니다. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 
 1. 다음에서 **[!UICONTROL 설정]** 탭,
    * 다음 **[!UICONTROL OAuth URL]** 필드에는 Adobe Sign 데이터베이스 분할이 포함된 기본 URL이 포함됩니다. URL 형식은 다음과 같습니다.
@@ -93,7 +93,7 @@ ht-degree: 30%
 1. [!DNL Adobe Acrobat Sign] 애플리케이션에 대한 OAuth 설정을 구성합니다.
 
    1. 브라우저 창을 열고 [!DNL Adobe Acrobat Sign] 개발자 계정에 로그인합니다.
-   1. 다음에 대해 구성된 애플리케이션 선택 [!DNL AEM Forms], 및 탭 **[!UICONTROL 애플리케이션에 대한 OAuth 구성]**.
+   1. 다음에 대해 구성된 애플리케이션 선택 [!DNL AEM Forms], 및 선택 **[!UICONTROL 애플리케이션에 대한 OAuth 구성]**.
    1. 다음에서 **[!UICONTROL 리디렉션 URL]** 상자에서 이전 단계(8단계)에서 복사한 URL을 추가하고 을 클릭합니다. **[!UICONTROL 저장]**.
    1. 에 대해 다음 범위 활성화 [!DNL Adobe Acrobat Sign] 애플리케이션 및 클릭 **[!UICONTROL 저장]**.
 
@@ -112,11 +112,11 @@ ht-degree: 30%
 
 1. 다음 항목 선택 **[!UICONTROL 첨부 파일에 Adobe Acrobat Sign 사용]** 적응형 양식에 첨부된 파일을 해당 파일에 추가하는 옵션 [!DNL Adobe Acrobat Sign] 서명을 위해 문서를 보냈습니다.
 
-1. 누르기 **[!UICONTROL Adobe Acrobat Sign에 연결]**. 자격 증명을 입력하라는 메시지가 뜨면 **사용자 이름** 및 **암호** 생성 시 사용된 계정 [!DNL Adobe Acrobat Sign] 응용 프로그램. 확인을 요청하는 경우 다음에 대한 액세스 권한: `your developer account`, 클릭 **[!UICONTROL 액세스 허용]**. 자격 증명이 올바르고 [!DNL Adobe Acrobat Sign] 개발자 계정에 대한 [!DNL AEM Forms]의 액세스를 허용하면 아래에 제시된 것과 비슷한 성공 메시지가 표시됩니다.
+1. 선택 **[!UICONTROL Adobe Acrobat Sign에 연결]**. 자격 증명을 입력하라는 메시지가 뜨면 **사용자 이름** 및 **암호** 생성 시 사용된 계정 [!DNL Adobe Acrobat Sign] 응용 프로그램. 확인을 요청하는 경우 다음에 대한 액세스 권한: `your developer account`, 클릭 **[!UICONTROL 액세스 허용]**. 자격 증명이 올바르고 [!DNL Adobe Acrobat Sign] 개발자 계정에 대한 [!DNL AEM Forms]의 액세스를 허용하면 아래에 제시된 것과 비슷한 성공 메시지가 표시됩니다.
 
    ![Adobe Acrobat Sign 클라우드 구성 성공](assets/adobe-sign-cloud-configuration-success.png)
 
-1. 누르기 **[!UICONTROL 만들기]** 을(를) 만들려면 [!DNL Adobe Acrobat Sign] 구성.
+1. 선택 **[!UICONTROL 만들기]** 을(를) 만들려면 [!DNL Adobe Acrobat Sign] 구성.
 
 1. 구성을 선택하고 **[!UICONTROL 게시]**&#x200B;을 클릭하고 구성을 선택한 다음 을 클릭합니다 **[!UICONTROL 게시]**. 해당 게시 환경에 구성이 복사됩니다.
 
@@ -152,10 +152,10 @@ AEM Forms과 Adobe Acrobat Sign 솔루션 연결을 시작하기 전에 [Adobe A
 #### AEM 인스턴스에 대한 리디렉션 URL 만들기
 
 1. Forms as a Cloud Service 작성자 인스턴스에서 **[!UICONTROL 도구]** ![망치](assets/hammer.png) > **[!UICONTROL 일반]** > **[!UICONTROL 구성 브라우저]**.
-1. 다음에서 **[!UICONTROL 구성 브라우저]** 페이지, 탭 **[!UICONTROL 만들기]**.
-1. 다음에서 **[!UICONTROL 구성 만들기]** 대화 상자, 지정 **[!UICONTROL 제목]** 구성의 경우 활성화 **[!UICONTROL 클라우드 구성]**, 및 탭 **[!UICONTROL 만들기]**. 이를 통해 Cloud Service를 저장하는 구성 컨테이너가 생성됩니다. 폴더 이름에는 공백이 없어야 합니다.
+1. 다음에서 **[!UICONTROL 구성 브라우저]** 페이지, 선택 **[!UICONTROL 만들기]**.
+1. 다음에서 **[!UICONTROL 구성 만들기]** 대화 상자, 지정 **[!UICONTROL 제목]** 구성의 경우 활성화 **[!UICONTROL 클라우드 구성]**, 및 선택 **[!UICONTROL 만들기]**. Cloud Service을 저장하는 구성 컨테이너를 만듭니다. 폴더 이름에는 공백이 없어야 합니다.
 1. 다음으로 이동 **[!UICONTROL 도구]** ![망치](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Acrobat Sign]** 이전 단계에서 생성한 구성 컨테이너를 엽니다. 적응형 양식을 만들 때에서 컨테이너 이름을 지정합니다 **[!UICONTROL 구성 컨테이너]** 필드.
-1. 구성 페이지에서 을 누릅니다. **[!UICONTROL 만들기]** 만들려면 [!DNL Adobe Acrobat Sign] AEM Forms의 구성
+1. 구성 페이지에서 을 선택합니다 **[!UICONTROL 만들기]** 만들려면 [!DNL Adobe Acrobat Sign] AEM Forms의 구성
 1. 현재 브라우저 창의 URL을 메모장에 복사하고 제거합니다. `/ui#/aem` URL에서 이 URL을 라고 합니다. `re-direct URL`.
 다음 섹션에서는 `re-direct URL` 및 `Scopes` Adobe Sign 팀 및 요청 자격 증명(클라이언트 ID 및 클라이언트 암호)과 함께 사용할 수 있습니다.
 
@@ -181,7 +181,7 @@ Adobe Acrobat Sign for Government Solutions 팀은 `re-direct URL` 또한 Adobe 
 
 1. 를 엽니다. `re-direct URL` 을 클릭합니다. 을(를) 만들고 적어 두었습니다. `re-direct URL` 의 마지막 단계에서 [AEM 인스턴스에 리디렉션 URL 만들기](#create-a-redirect-url-for-your-aem-instance) 섹션.
 
-1. 다음에서 **[!UICONTROL 일반]** 의 탭 **[!UICONTROL Adobe Sign 구성 만들기]** 페이지, 지정 **[!UICONTROL 이름]** 구성을 보려면 다음을 누르십시오. **[!UICONTROL 다음]**. 다음을 선택적으로 지정할 수 있습니다. **[!UICONTROL 제목]** 을(를) 찾아 선택 **[!UICONTROL 축소판]** 구성. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+1. 다음에서 **[!UICONTROL 일반]** 의 탭 **[!UICONTROL Adobe Sign 구성 만들기]** 페이지, 지정 **[!UICONTROL 이름]** 을(를) 위해 다음을 선택합니다. **[!UICONTROL 다음]**. 다음을 선택적으로 지정할 수 있습니다. **[!UICONTROL 제목]** 을(를) 찾아 선택 **[!UICONTROL 축소판]** 구성. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
 1. 다음에서 **[!UICONTROL 설정]** 의 탭 **[!UICONTROL Adobe Sign 구성 만들기]** 페이지, **[!UICONTROL 솔루션 선택]** 옵션, 선택 [!DNL Adobe Acrobat Sign Solutions for Government].
 
@@ -217,13 +217,13 @@ Adobe Acrobat Sign for Government Solutions 팀은 `re-direct URL` 또한 Adobe 
 
 1. 다음 항목 선택 **[!UICONTROL 첨부 파일에 Adobe Acrobat Sign 사용]** 적응형 양식에 첨부된 파일을 해당 파일에 추가하는 옵션 [!DNL Adobe Acrobat Sign] 서명을 위해 문서를 보냈습니다.
 
-1. 누르기 **[!UICONTROL Adobe Sign에 연결]**. 자격 증명을 입력하라는 메시지가 뜨면 [!DNL Adobe Acrobat Sign] 애플리케이션 생성 시 사용한 계정의 사용자 이름과 비밀번호를 입력합니다. 다음에 대한 액세스를 확인해달라는 메시지가 뜨는 경우 `your developer account`, 클릭 **[!UICONTROL 액세스 허용]**. 자격 증명이 올바르고 [!DNL Adobe Acrobat Sign] 개발자 계정에 대한 [!DNL AEM Forms]의 액세스를 허용하면 아래에 제시된 것과 비슷한 성공 메시지가 표시됩니다.
+1. 선택 **[!UICONTROL Adobe Sign에 연결]**. 자격 증명을 입력하라는 메시지가 뜨면 [!DNL Adobe Acrobat Sign] 애플리케이션 생성 시 사용한 계정의 사용자 이름과 비밀번호를 입력합니다. 다음에 대한 액세스를 확인해달라는 메시지가 뜨는 경우 `your developer account`, 클릭 **[!UICONTROL 액세스 허용]**. 자격 증명이 올바르고 [!DNL Adobe Acrobat Sign] 개발자 계정에 대한 [!DNL AEM Forms]의 액세스를 허용하면 아래에 제시된 것과 비슷한 성공 메시지가 표시됩니다.
 
    ![Adobe Acrobat Sign 클라우드 구성 성공](assets/adobe-sign-cloud-configuration-success.png)
 
    <!-- > When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Acrobat Sign] application. When asked to confirm access for `your developer account`, Click **[!UICONTROL Allow Access]**. -->
 
-1. 누르기 **[!UICONTROL 만들기]** 을 클릭하여 구성을 만듭니다.
+1. 선택 **[!UICONTROL 만들기]** 을 클릭하여 구성을 만듭니다.
 
 1. 구성을 선택하고 **[!UICONTROL 게시]**&#x200B;을 클릭하고 구성을 선택한 다음 을 클릭합니다 **[!UICONTROL 게시]**. 해당 게시 환경에 구성이 복제됩니다.
 

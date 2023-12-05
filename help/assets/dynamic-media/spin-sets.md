@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 10%
+source-wordcount: '1956'
+ht-degree: 8%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 10%
 
 | 제한 유형 | 모범 사례 | 제한 적용됨 |
 | --- | --- | --- |
-| 2D 세트당 최대 행/열 수 | 세트당 12~18개 이미지 | 1000 |
+| 2D 세트당 최대 행/열 수 | 세트당 12~18개 이미지 | 1000년 |
 
 참조: [Dynamic Media 제한 사항](/help/assets/dynamic-media/limitations.md).
 
@@ -38,13 +38,13 @@ ht-degree: 10%
 
 스핀 세트를 빠르게 시작하고 실행하려면 다음 단계를 따르십시오.
 
-1. 옵션. [일괄처리 집합 사전 설정 만들기](/help/assets/dynamic-media/batch-set-presets-dm.md) 새 에셋 폴더에 적용합니다.
+1. 선택 사항입니다. [일괄처리 집합 사전 설정 만들기](/help/assets/dynamic-media/batch-set-presets-dm.md) 새 에셋 폴더에 적용합니다.
 
    일괄처리 집합 사전 설정을 사용하면 회전 집합 생성을 자동화할 수 있습니다.
 
    >[!IMPORTANT]
    >
-   >Batch sets are created by the IPS (Image Production System) as part of asset ingestion.
+   >배치 세트는 IPS(이미지 프로덕션 시스템)가 자산 수집의 일부로 만듭니다.
 
 1. [여러 보기에 대한 이미지 업로드](#uploading-assets-for-spin-sets).
 
@@ -128,7 +128,7 @@ ht-degree: 10%
 
 **스핀 세트를 만들려면:**
 
-1. 자산에서 회전 집합을 만들려는 위치로 이동하여 을 선택합니다 **[!UICONTROL 만들기]**&#x200B;을 선택한 다음 을 선택합니다 **[!UICONTROL 회전 집합]**. You can also create the set from inside a folder that contains your assets.
+1. 자산에서 회전 집합을 만들려는 위치로 이동하여 을 선택합니다 **[!UICONTROL 만들기]**&#x200B;을 선택한 다음 을 선택합니다 **[!UICONTROL 회전 집합]**. 에셋이 포함된 폴더 내에서 세트를 만들 수도 있습니다.
 
    ![6_5_spinset-createpulldownmenu](assets/6_5_spinset-createpulldownmenu.png)
 
@@ -144,7 +144,7 @@ ht-degree: 10%
 
    * [회전 집합 편집기] 페이지의 왼쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 자산 추가]**.
 
-   * 스핀 세트 편집기 페이지 가운데 있는 아래에서 **[!UICONTROL 자산 선택기를 열려면 탭하십시오.]**.
+   * 스핀 세트 편집기 페이지 가운데 있는 아래에서 **[!UICONTROL 자산 선택기를 열려면 선택하십시오.]**.
 
    회전 집합에 포함할 자산을 선택합니다. Selected assets have a checkmark icon over them. 완료되면 페이지의 오른쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 선택]**.
 

@@ -5,9 +5,9 @@ uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
-source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '994'
 ht-degree: 1%
 
 ---
@@ -137,7 +137,7 @@ Forms 중심의 AEM 워크플로 및 기능에 대한 자세한 내용은 다음
 
    1. 다음으로 이동 `https://'[server]:[port]'/aem/start.html` 관리자 자격 증명으로 로그인합니다.
    1. 다음으로 이동 **[!UICONTROL 도구 > 워크플로 > 인스턴스]**.
-   1. 사용자에 대한 관련 워크플로우 인스턴스를 선택하고 을 누릅니다 **[!UICONTROL 종료]** 실행 중인 인스턴스를 종료합니다.
+   1. 사용자의 관련 워크플로우 인스턴스를 선택하고 **[!UICONTROL 종료]** 실행 중인 인스턴스를 종료합니다.
 
       워크플로우 인스턴스 작업에 대한 자세한 내용은 [워크플로우 인스턴스 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/workflows/overview.html#authoring).
 

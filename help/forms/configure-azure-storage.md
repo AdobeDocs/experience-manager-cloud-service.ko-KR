@@ -2,14 +2,14 @@
 title: Azure 스토리지를 구성하는 방법
 description: 양식을 Azure 스토리지 서버와 통합하는 방법을 알아봅니다.
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '583'
 ht-degree: 1%
 
 ---
 
-# [!DNL Azure]스토리지 구성 {#configure-azure-storage}
+# 구성 [!DNL Azure] 스토리지 {#configure-azure-storage}
 
 
 ![데이터 통합](assets/data-integeration.png)
@@ -26,10 +26,10 @@ ht-degree: 1%
 이러한 단계를 실행하기 전에 [!DNL Azure] 저장소 계정 및 액세스 권한 부여 액세스 키 [!DNL Azure] 저장소 계정입니다.
 
 1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Azure 스토리지]**.
-1. 구성을 만들 폴더를 선택하고 을 누릅니다 **[!UICONTROL 만들기]**.
+1. 구성을 생성할 폴더를 선택하고 **[!UICONTROL 만들기]**.
 1. 에서 구성의 제목을 지정합니다. **[!UICONTROL 제목]** 필드.
 1. 의 이름을 지정합니다. [!DNL Azure] 의 저장소 계정 **[!UICONTROL Azure 스토리지 계정]** 필드.
-1. 에서 Azure 스토리지 계정에 액세스할 키를 지정합니다. **[!UICONTROL Azure 액세스 키]** 필드 및 탭 **[!UICONTROL 저장]**.
+1. 에서 Azure 스토리지 계정에 액세스할 키를 지정합니다. **[!UICONTROL Azure 액세스 키]** 필드 및 선택 **[!UICONTROL 저장]**.
 
 ## 양식 데이터 모델 만들기 {#create-azure-form-data-model}
 
@@ -41,13 +41,13 @@ ht-degree: 1%
 
 추가하려면 [!DNL Azure] 서비스:
 
-1. 편집 모드에서 **[!UICONTROL 서비스]** 왼쪽 창에서 섹션 을 탭하고 **[!UICONTROL 선택 항목 추가]**. 선택한 서비스가 **[!UICONTROL 서비스]** 양식 데이터 모델 탭
+1. 편집 모드에서 **[!UICONTROL 서비스]** 왼쪽 창에서 섹션을 선택하고 **[!UICONTROL 선택 항목 추가]**. 선택한 서비스가 **[!UICONTROL 서비스]** 양식 데이터 모델 탭
 
    ![선택한 서비스 추가](assets/select-services.png)
 
 1. 다음에서 **[!UICONTROL 서비스]** 탭에서 서비스를 선택하고 **[!UICONTROL 속성 편집]**. 서비스를 기반으로 서비스에 대한 입력 또는 출력 모델 개체를 정의합니다.
 
-1. 누르기 **[!UICONTROL 저장]** 을 클릭하여 양식 데이터 모델을 저장합니다.
+1. 선택 **[!UICONTROL 저장]** 을 클릭하여 양식 데이터 모델을 저장합니다.
 
    다음 표에서는 사용 가능한 [!DNL Azure] 서비스:
 
@@ -92,9 +92,9 @@ ht-degree: 1%
 
 데이터 모델 개체 속성을 검색 키로 정의하려면 다음을 수행합니다.
 
-1. 다음에서 **[!UICONTROL 모델]** 탭에서 데이터 모델 개체 속성을 선택하고 을 누릅니다. **[!UICONTROL 속성 편집]**.
+1. 다음에서 **[!UICONTROL 모델]** 탭에서 데이터 모델 개체 속성을 선택하고 **[!UICONTROL 속성 편집]**.
 1. 전환 **[!UICONTROL 검색 키]** 옵션을 켜짐 상태로 전환합니다. 이 옵션은 기본 데이터 유형에만 사용할 수 있습니다.
-1. 누르기 **[!UICONTROL 완료]** 그런 다음 을 누릅니다 **[!UICONTROL 저장]** 을 클릭하여 양식 데이터 모델을 저장합니다.
+1. 선택 **[!UICONTROL 완료]** 다음을 선택합니다. **[!UICONTROL 저장]** 을 클릭하여 양식 데이터 모델을 저장합니다.
 
 데이터 모델 개체 속성을 검색 키로 정의한 후 해시 값은 Azure 인덱스 태그에 저장되고 Base64 인코딩 값은 Azure 메타데이터에 저장됩니다.
 

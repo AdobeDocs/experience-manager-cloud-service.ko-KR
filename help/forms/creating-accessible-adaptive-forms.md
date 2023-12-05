@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2022'
+source-wordcount: '2018'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Ultramarine-Accessible 테마는 참조 테마입니다. 적응형 양식의 색
 
 1. 테마 패키지를 다운로드합니다.
 1. 다음으로 이동 **[!UICONTROL Experience Manager]** > **[!UICONTROL 탐색]** ![탐색](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** AEM 인스턴스에서 참조할 수 있습니다.
-1. 누르기 **[!UICONTROL 만들기]** > **[!UICONTROL 파일 업로드]**. x Ultramarine-Accessible-Theme.zip 파일을 선택하여 업로드합니다. 테마를 AEM 인스턴스에 업로드합니다.
+1. 선택 **[!UICONTROL 만들기]** > **[!UICONTROL 파일 업로드]**. x Ultramarine-Accessible-Theme.zip 파일을 선택하여 업로드합니다. 테마를 AEM 인스턴스에 업로드합니다.
 
 ## 적응형 양식에 액세스
 
@@ -58,8 +58,8 @@ Ultramarine-Accessible 테마는 참조 테마입니다. 적응형 양식의 색
 Ultramarine에서 액세스할 수 있는 테마를 기존 적응형 양식에 적용합니다. 테마를 적용하려면:
 
 1. 편집할 적응형 양식을 엽니다.
-1. 구성 요소를 선택하고 상위 아이콘을 탭합니다. 컨텍스트 메뉴에서 을 누릅니다 **[!UICONTROL 적응형 양식 컨테이너]** 그런 다음 구성 아이콘을 탭합니다.
-1. 속성 브라우저에서 Ultramarine-Accessible 테마를 선택하고 을 누릅니다 **[!UICONTROL 저장]** 아이콘.
+1. 구성 요소를 선택하고 상위 아이콘을 선택합니다. 컨텍스트 메뉴에서 을(를) 선택합니다 **[!UICONTROL 적응형 양식 컨테이너]** 그런 다음 구성 아이콘을 선택합니다.
+1. 속성 브라우저에서 Ultramarine-Accessible 테마를 선택하고 **[!UICONTROL 저장]** 아이콘.
 1. 브라우저 창을 새로 고칩니다. 테마는 적응형 양식에 적용됩니다.
 
 액세스 가능한 테마를 적용한 후 아래에 나열된 추가 수정 사항을 수행합니다. 액세스 가능한 테마에서 다루는 접근성 수정 사항과 더불어 수정 사항이 있습니다.
@@ -100,7 +100,7 @@ Ultramarine에서 액세스할 수 있는 테마를 기존 적응형 양식에 �
 
 [액세스 가능성] 옵션을 사용하려면 다음 단계를 수행합니다.
 
-1. 구성 요소를 선택하고 을 누릅니다 ![cmppr](assets/cmppr.png).
+1. 구성 요소를 선택하고 ![cmppr](assets/cmppr.png).
 1. 클릭 **[!UICONTROL 접근성]** 사이드바에서 원하는 접근성 옵션을 선택합니다.
 
 ### 양식 구성 요소의 접근성 옵션 {#accessibility-options-in-form-components}
@@ -128,7 +128,7 @@ Ultramarine에서 액세스할 수 있는 테마를 기존 적응형 양식에 �
 
 텍스트가 양식에서 개체 및 그 목적을 설명하도록 하십시오. 이미지가 나타나면 화면 판독기가 이 대체 텍스트를 읽습니다. 이미지에는 항상 대체 텍스트를 지정해야 합니다.
 
-이미지 구성 요소를 선택하고 을 누릅니다 ![cmppr](assets/cmppr.png). 사이드바의 속성 아래에서 이미지에 대한 대체 텍스트를 지정합니다.
+이미지 구성 요소를 선택하고 ![cmppr](assets/cmppr.png). 사이드바의 속성 아래에서 이미지에 대한 대체 텍스트를 지정합니다.
 
 ![이미지에 대한 대체 텍스트](assets/image-properties.png)
 
@@ -157,7 +157,7 @@ Ultramarine에서 액세스할 수 있는 테마를 기존 적응형 양식에 �
 | 양식의 채워진 데이터 재설정 | Alt+R |
 | 양식 제출 | Alt+S |
 
-또한 다양한 키보드 단축키 를 사용할 수 있습니다. **[!UICONTROL 날짜 선택]** 적응형 Forms의 구성 요소 바로 가기 키를 활성화하려면 **[!UICONTROL 날짜 선택]** 구성 요소 및 탭 ![구성](assets/configure-icon.svg) 속성을 엽니다. 다음에서 **[!UICONTROL 패턴]** 섹션에서 **[!UICONTROL 유형]** 및 **[!UICONTROL 패턴]** 드롭다운 목록입니다. 속성을 저장하여 의 바로 가기 키 사용 **[!UICONTROL 날짜 선택]** 구성 요소.
+또한 다양한 키보드 단축키 를 사용할 수 있습니다. **[!UICONTROL 날짜 선택]** 적응형 Forms의 구성 요소 바로 가기 키를 활성화하려면 **[!UICONTROL 날짜 선택]** 구성 요소 및 선택 ![구성](assets/configure-icon.svg) 속성을 엽니다. 다음에서 **[!UICONTROL 패턴]** 섹션에서 **[!UICONTROL 유형]** 및 **[!UICONTROL 패턴]** 드롭다운 목록입니다. 속성을 저장하여 의 바로 가기 키 사용 **[!UICONTROL 날짜 선택]** 구성 요소.
 
 적응형 Forms에서 날짜 선택기 구성 요소에 사용할 수 있는 키보드 단축키는 다음과 같습니다.
 

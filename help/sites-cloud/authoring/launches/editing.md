@@ -1,11 +1,11 @@
 ---
 title: 론치 편집
-description: 페이지(또는 페이지 세트)에 대한 론치를 만들면 페이지의 론치 카피에서 콘텐츠를 편집할 수 있습니다.
+description: 페이지(또는 페이지 세트)에 대한 론치를 만든 후 페이지의 론치 카피에서 콘텐츠를 편집할 수 있습니다.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 96%
+source-wordcount: '551'
+ht-degree: 87%
 
 ---
 

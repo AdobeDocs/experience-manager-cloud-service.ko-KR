@@ -2,10 +2,10 @@
 title: 기본 처리
 description: AEM 탐색 및 기본 사용 방법 익히기
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2945'
-ht-degree: 91%
+source-wordcount: '2943'
+ht-degree: 89%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 91%
 >[!NOTE]
 >
 >* 몇 가지 기능을 일부 콘솔에서 사용할 수 없거나, 추가 기능을 일부 콘솔에서 사용할 수 있습니다. 개별 콘솔에 대한 특정 정보 및 관련 기능은 다른 페이지에서 더 자세히 다룹니다.
->* AEM 전체에서 키보드 단축키를 사용할 수 있습니다. 특히 [콘솔을 사용하고](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) [페이지를 편집할 때 ](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)이러한 키보드 단축키를 사용할 수 있습니다.
+>* AEM 전체에서 키보드 단축키를 사용할 수 있습니다. 특히 다음의 경우에 [콘솔 사용](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) 및 [페이지 편집](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
 
 {{edge-delivery-authoring}}
 
 ## 터치 지원 UI {#a-touch-enabled-ui}
 
-AEM 사용자 인터페이스는 터치가 활성화되어 있습니다. 터치 활성화 인터페이스를 사용하면 탭, 길게 누르기, 밀기 등과 같은 동작을 통해 소프트웨어와 상호 작용할 수 있습니다. AEM UI는 터치를 지원하므로 휴대 전화 또는 태블릿과 같은 터치 디바이스에서 터치 제스처를 사용할 수 있습니다. 그러나 기존 데스크탑 디바이스에서 마우스 동작도 사용할 수 있으므로 콘텐츠를 작성하는 방법을 유연하게 선택할 수 있습니다.
+AEM 사용자 인터페이스는 터치가 활성화되어 있습니다. 터치 지원 인터페이스를 사용하면 터치를 사용하여 선택, 길게 터치 및 스와이프와 같은 제스처를 통해 소프트웨어와 상호 작용할 수 있습니다. AEM UI는 터치를 지원하므로 휴대 전화 또는 태블릿과 같은 터치 디바이스에서 터치 제스처를 사용할 수 있습니다. 그러나 기존 데스크탑 디바이스에서 마우스 동작도 사용할 수 있으므로 콘텐츠를 작성하는 방법을 유연하게 선택할 수 있습니다.
 
 ## 첫 단계 {#first-steps}
 
@@ -53,7 +53,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
 전역 탐색에는 다음과 같은 두 개의 패널이 있으며 화면의 왼쪽 여백에 아이콘으로 표시됩니다.
 
-* **[탐색](#navigation-panel)** - 나침반으로 표시되며 AEM에 로그인할 경우 기본 패널입니다.
+* **[탐색](#navigation-panel)** - AEM에 로그인할 때 나침반 및 기본 패널로 표시됨
 * **[도구](#tools-panel)** - 망치로 표시됨
 
 이러한 패널에서 사용 가능한 옵션은 아래에 설명되어 있습니다.
@@ -255,9 +255,9 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
 | 보기 | 터치 선택 | 데스크탑 선택 | 터치 선택 해제 | 데스크탑 선택 해제 |
 |---|---|---|---|---|
-| 열 | 썸네일 탭 | 썸네일 클릭 | 썸네일 탭 | 썸네일 클릭 |
-| 카드 | 카드를 길게 탭 | 마우스를 위에 놓고 확인 표시 빠른 작업 사용 | 카드 탭 | 카드 클릭 |
-| 목록 | 썸네일 탭 | 썸네일 클릭 | 썸네일 탭 | 썸네일 클릭 |
+| 열 | 썸네일 선택 | 썸네일 클릭 | 썸네일 선택 | 썸네일 클릭 |
+| 카드 | 카드를 선택하고 길게 | 마우스를 위에 놓고 확인 표시 빠른 작업 사용 | 카드 선택 | 카드 클릭 |
+| 목록 | 썸네일 선택 | 썸네일 클릭 | 썸네일 선택 | 썸네일 클릭 |
 
 #### 모두 선택 {#select-all}
 
@@ -436,7 +436,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
          * 내역 정보가 저장되지 않는 임시 워크플로 제외 <!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
       * 모두 표시
 
-* 선택한 항목에 대한 댓글 추가/보기 이벤트 목록 맨 아래쪽에 **주석** 상자가 표시됩니다. 댓글을 입력(입력 후 Return 키)하면 댓글이 등록되고 이 댓글은 **댓글** 또는 **모두 표시**&#x200B;를 선택하면 표시됩니다.
+* 선택한 항목에 대한 댓글 추가/보기 이벤트 목록 맨 아래쪽에 **주석** 상자가 표시됩니다. Typing a comment followed by Return will register the comment. It is shown when **Comments** or **Show All** is selected.
 
 * 특정 콘솔에는 추가 기능이 있습니다. 예를 들면 [Sites 콘솔]에서 다음과 같은 작업을 수행할 수 있습니다.
 

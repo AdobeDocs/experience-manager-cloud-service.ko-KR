@@ -2,10 +2,10 @@
 title: AEM Headless as a Cloud Service 시작하기
 description: 이 AEM Headless 개발자 여정의 부분에서는 AEM Headless 사전 요구 사항에 대해 알아봅니다.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3093'
-ht-degree: 96%
+source-wordcount: '3057'
+ht-degree: 99%
 
 ---
 
@@ -85,7 +85,7 @@ AEM의 Headless 기능은 몇 가지 주요 기능을 기반으로 합니다. �
 * GraphQL API를 사용하여 콘텐츠 조각에 액세스하고 전달하기 위한 요청을 생성할 수 있습니다.
 * Assets REST API를 사용하면 콘텐츠 조각(및 기타 자산)을 만들고 수정할 수 있습니다.
 
-AEM Headless 여정의 뒷부분에서 이러한 API와 이를 사용하는 방법에 대해 알아봅니다. 또는 다음을 참조하십시오. [추가 리소스](#additional-resources) 아래 섹션에서 더 많은 설명서를 확인할 수 있습니다.
+AEM Headless 여정 후반부에서 해당 API와 이를 사용하는 방법에 대해 알아봅니다. 또는 아래 [추가 리소스](#additional-resources) 섹션에서 추가 설명서를 참조하십시오.
 
 ## Headless 통합 수준 {#integration-levels}
 
@@ -117,13 +117,13 @@ AEM의 콘텐츠를 기존 외부 서비스로 제공하는 것이 최소 기본
 
 ### 단일 페이지 애플리케이션(SPA) 등 Headless 콘텐츠는 아직 외부에서 사용되지 않았습니다. {#do-not-have-a-spa}
 
-AEM의 콘텐츠를 헤드리스 소비하는 SPA을 만드는 것이 목표라면 콘텐츠 조각과 같은 기능을 사용하여 헤드리스 콘텐츠를 관리하고 AEM SPA Editor 프레임워크를 사용하여 SPA을 구축할 수도 있습니다.
+AEM에서 콘텐츠를 Headless 방식으로 사용하는 SPA를 만드는 것이 목표라면 콘텐츠 조각 기능을 사용하여 Headless 콘텐츠를 관리하고 AEM의 SPA 편집기 프레임워크로 SPA를 빌드할 수도 있습니다.
 
 SPA 편집기를 통해 SPA는 AEM에서 콘텐츠를 사용할 뿐만 아니라 콘텐츠 작성자에 의해 AEM 내부에서 완전한 편집이 가능하므로 AEM 내에서 Headless를 유연하게 게재하고 상황에 맞게 편집할 수 있습니다.
 
 ## 요구 사항 및 사전 요구 사항 {#requirements-prerequisites}
 
-Headless AEM 프로젝트를 시작하기 전에 몇 가지 요구 사항이 있습니다.
+AEM Headless 프로젝트를 시작하기 전에 알아 두어야 할 몇 가지 요구 사항이 있습니다.
 
 ### 지식 {#knowledge}
 
@@ -181,7 +181,7 @@ Headless AEM 프로젝트를 시작하기 전에 몇 가지 요구 사항이 있
 
 콘텐츠 업데이트 워크플로를 명확히 알립니다. 시스템이 지원해야 하는 승인 프로세스는 무엇입니까? AEM 워크플로를 사용하여 이 프로세스를 자동화할 수 있습니까?
 
-[콘텐츠 계층](#content-hierarchy)을 사용하여 번역을 보다 쉽게 할 수 있습니다.
+사용자 [콘텐츠 계층](#content-hierarchy) 를 사용하여 보다 쉽게 번역할 수 있습니다.
 
 AEM Headless 번역 여정 링크를 포함하여 AEM 워크플로 및 번역 도구에 대한 추가 설명서는 [추가 리소스](#additional-resources) 섹션을 참조하십시오.
 
@@ -273,7 +273,7 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 * AEM의 Headless 통합 수준을 파악합니다.
 * 범위 측면에서 프로젝트를 정의할 수 있습니다.
 
-다음 문서에서는 AEM Headless 여정을 계속 진행해야 합니다 [AEM Headless를 사용한 첫 번째 경험으로의 경로](path-to-first-experience.md) 필요한 도구를 설정하는 방법과 AEM에서 데이터 모델링에 대해 고민하는 방법을 배울 수 있습니다.
+다음 문서인 [AEM Headless를 사용한 첫 번째 경험으로의 경로](path-to-first-experience.md)를 검토하여 AEM Headless 여정을 계속하는 것이 좋습니다. 여기에서는 필요한 도구를 설정하는 방법과 AEM에서 데이터를 모델링하는 방법에 대해 어떻게 생각하고 있는지에 대해 알아봅니다.
 
 ## 추가 리소스 {#additional-resources}
 
@@ -293,7 +293,7 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 * [AEM 워크플로](/help/sites-cloud/authoring/workflows/overview.md) - AEM에서 워크플로를 자동화하는 방법에 대한 기술 설명서
 * [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md) - 콘텐츠 조각에 대한 기술 설명서.
 * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - 콘텐츠 조각 모델에 대한 기술 설명서.
-* [GraphQL 기술 설명서](https://graphql.org) - GraphQL 정의 (외부 링크)
+* [GraphQL 기술 설명서](https://graphql.org) - GraphQL 정의(외부 링크)
 * [GraphQL API](/help/headless/graphql-api/content-fragments.md) - 콘텐츠 조각에 액세스하고 전달하기 위한 요청을 만드는 방법에 대한 기술 설명서
 * [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) - 콘텐츠 조각(및 기타 자산)을 만들고 수정하는 방법에 대한 기술 설명서
 * [지속 쿼리](/help/headless/graphql-api/persisted-queries.md) - AEM의 지속 쿼리에 대한 기술 설명서

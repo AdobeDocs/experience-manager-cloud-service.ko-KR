@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collections,Asset Management
 role: User
 exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2400'
-ht-degree: 19%
+source-wordcount: '2391'
+ht-degree: 18%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 19%
 
 ### 정적 참조를 사용하여 컬렉션 만들기 {#create-a-collection-with-static-references}
 
-정적 참조(예: 에셋, 폴더, 컬렉션, 스핀 세트 및 이미지 세트에 대한 참조가 있는 컬렉션)를 만들 수 있습니다.
+정적 참조가 포함된 컬렉션(예: 에셋, 폴더, 컬렉션, 스핀 세트 및 이미지 세트에 대한 참조가 포함된 컬렉션)을 만들 수 있습니다.
 
 1. 다음 위치로 이동 **[!UICONTROL 컬렉션]** 콘솔.
 1. 도구 모음에서 를 선택합니다. **[!UICONTROL 만들기]**.
@@ -88,7 +88,7 @@ ht-degree: 19%
    >
    >다음을 선택하는 경우 **[!UICONTROL 공용]**, 스마트 컬렉션을 만든 후에는 소유자 역할이 있는 모든 사용자가 스마트 컬렉션을 사용할 수 있습니다. 을(를) 취소하면 **[!UICONTROL 공용]** 옵션을 사용하면 DAM 사용자 그룹이 더 이상 스마트 컬렉션과 연결되지 않습니다.
 
-1. 선택 **[!UICONTROL 저장]** 스마트 컬렉션을 만든 다음 메시지 상자를 닫아 프로세스를 완료합니다. The new smart collection is also added to the **[!UICONTROL Saved Searches]** list.
+1. 선택 **[!UICONTROL 저장]** 스마트 컬렉션을 만든 다음 메시지 상자를 닫아 프로세스를 완료합니다. 새 스마트 컬렉션도 **[!UICONTROL 저장한 검색 결과]** 목록을 표시합니다.
 The label of the **[!UICONTROL Create Smart Selection]** button changes to **[!UICONTROL Edit Smart Selection]**. To edit the settings of the smart collection, select **[!UICONTROL Files]** from the **[!UICONTROL Files &amp; Folders]** list. 그런 다음 **[!UICONTROL 스마트 선택 항목 편집]** 단추를 클릭합니다.
 
 ## 컬렉션에 에셋 추가 {#add-assets-to-a-collection}
@@ -231,7 +231,7 @@ Enterprise Manager Assets Adobe을 사용하면 많은 컬렉션의 메타데이
 
 In the Assets user interface, you can search or filter assets based on certain rules, search criteria, or custom search facets. If you save these as **[!UICONTROL Saved Searches]**, you can access them later from the **[!UICONTROL Saved Searches]** list in the Filter panel. Creating a saved search also creates a smart collection.
 
-Saved searches are created when you create a smart collection. Smart collections are automatically added to the **[!UICONTROL Saved Searches]** list. The Saved Searches query for the collection is saved in the `dam:query` property in CRXDE at the relative location `/content/dam/collections/`. 목록에 표시된 저장된 검색에서 및 저장할 수 있는 검색에는 제한이 없습니다.
+Saved searches are created when you create a smart collection. Smart collections are automatically added to the **[!UICONTROL Saved Searches]** list. 컬렉션에 대한 저장된 검색 쿼리가 `dam:query` 상대 위치의 CRXDE에 있는 속성 `/content/dam/collections/`. 목록에 표시된 저장된 검색에서 및 저장할 수 있는 검색에는 제한이 없습니다.
 
 >[!NOTE]
 >
@@ -254,7 +254,7 @@ Saved searches are created when you create a smart collection. Smart collections
 
 1. 컬렉션 콘솔에서 워크플로우를 실행할 컬렉션을 선택합니다.
 1. GlobalNav 아이콘을 선택하고 **[!UICONTROL 타임라인]** 목록에서 삭제할 수 있습니다.
-1. 타임라인에서 하단의 캐럿 아이콘을 선택하거나 탭한 다음 을 선택합니다 **[!UICONTROL 워크플로우 시작]**.
+1. 타임라인에서 하단의 캐럿 아이콘을 선택한 다음 을 선택합니다 **[!UICONTROL 워크플로우 시작]**.
 1. In the **[!UICONTROL Start Workflow]** section, select a workflow model from the list. For example, select the **[!UICONTROL DAM Update Asset]** model.
 1. 워크플로우의 제목을 입력하고 선택 **[!UICONTROL 시작]**.
 1. 대화 상자에서 다음을 선택합니다. **[!UICONTROL 진행]**. 워크플로우는 컬렉션의 모든 에셋에서 실행됩니다.

@@ -9,10 +9,10 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1689'
-ht-degree: 87%
+source-wordcount: '1663'
+ht-degree: 86%
 
 ---
 
@@ -83,7 +83,7 @@ ht-degree: 87%
 
 처리 프로필이 오디오 및 비디오 파일의 트랜스크립션에 맞게 구성되면 다음 방법 중 하나를 사용하여 이 처리 프로필을 폴더에 적용할 수 있습니다.
 
-* **[!UICONTROL 도구]** > **[!UICONTROL 에셋]** > **[!UICONTROL 처리 프로필]**&#x200B;에서 처리 프로필 정의를 선택하고 **[!UICONTROL 폴더에 프로필 적용]** 액션을 사용합니다. 콘텐츠 브라우저를 사용하여 특정 폴더로 이동하고, 폴더를 선택하고, 프로필의 애플리케이션을 확인할 수 있습니다.
+* 에서 처리 프로필 정의를 선택합니다. **[!UICONTROL 도구]** > **[!UICONTROL 에셋]** > **[!UICONTROL 처리 프로필]**, 및 사용 **[!UICONTROL 폴더에 프로필 적용]** 작업. 콘텐츠 브라우저를 사용하여 특정 폴더로 이동하고, 폴더를 선택하고, 프로필의 애플리케이션을 확인할 수 있습니다.
 * Assets 사용자 인터페이스에서 폴더를 선택하고 **[!UICONTROL 속성]** 액션을 클릭하여 폴더 속성을 엽니다. **[!UICONTROL 에셋 처리]** 탭을 클릭하고 **[!UICONTROL 처리 프로필]** 목록에서 폴더에 적합한 처리 프로필을 선택합니다. 변경 내용을 저장하려면 **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
 
   서비스 유형: ![configure-transcription-service](assets/video-processing-profile3.png)

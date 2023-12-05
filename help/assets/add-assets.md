@@ -4,10 +4,10 @@ description: 에 디지털 에셋 추가 [!DNL Adobe Experience Manager] as a [!
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3179'
-ht-degree: 10%
+source-wordcount: '3137'
+ht-degree: 8%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 10%
 
 [!DNL Assets] 다음과 같은 업로드 방법을 제공합니다. Adobe은 업로드 옵션을 사용하기 전에 사용 사례와 업로드 옵션의 적용 가능성을 이해하는 것을 권장합니다.
 
-| 업로드 방법 | 사용 시기? | 기본 담당자 |
+| 업로드 방법 | 사용 시기 | 기본 담당자 |
 |---------------------|----------------|-----------------|
 | [자산 콘솔 사용자 인터페이스](#upload-assets) | 가끔 업로드, 누르기 및 끌기, 찾기 업로드. 를 사용하여 많은 에셋을 업로드하지 마십시오. | 모든 사용자 |
 | [API 업로드](#upload-using-apis) | 업로드 중 다이내믹 의사 결정용. | 개발자 |
@@ -37,7 +37,7 @@ ht-degree: 10%
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
-   You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
+   You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Select the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
    The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
@@ -193,7 +193,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 1. 다음 항목 선택 **[!UICONTROL 가져오기 후 소스 파일 삭제]** 파일을 로 가져온 후 소스 데이터 저장소에서 원본 파일을 삭제하는 옵션 [!DNL Experience Manager].
 
-1. **[!UICONTROL 가져오기 모드]**&#x200B;를 선택합니다. **건너뛰기**, **바꾸기** 또는 **버전 만들기**&#x200B;를 선택합니다. 건너뛰기 모드는 기본값이고, 자산이 이미 존재하는 경우 이 모드에서 수집기는 자산 가져오기를 건너뜁니다. 의 의미를 확인합니다. [버전 바꾸기 및 만들기 옵션](#handling-upload-existing-file).
+1. **[!UICONTROL 가져오기 모드]**&#x200B;를 선택합니다. **건너뛰기**, **바꾸기** 또는 **버전 만들기**&#x200B;를 선택합니다. 건너뛰기 모드가 기본값이며 이 모드에서는 에셋이 이미 있는 경우 수집기가 건너뜁니다. 의 의미를 확인합니다. [버전 바꾸기 및 만들기 옵션](#handling-upload-existing-file).
 
 1. **[!UICONTROL 자산 대상 폴더]** 필드를 사용하여 자산을 가져올 수 있는 DAM에 위치를 정의하려면 경로를 지정합니다. 예: `/content/dam/imported_assets`
 
@@ -207,7 +207,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ### 구성 편집 {#edit-configuration}
 
-구성 세부 정보를 편집하려면 구성을 선택한 다음 을 클릭합니다 **[!UICONTROL 편집]**. 편집 작업을 수행하면서 구성 및 가져오기 데이터 소스의 제목을 편집할 수 없습니다.
+구성 세부 정보를 편집하려면 구성을 선택한 다음 을 클릭합니다 **[!UICONTROL 편집]**. 편집 작업을 수행하는 동안에는 구성 및 가져오기 데이터 소스의 제목을 편집할 수 없습니다.
 
 ### 구성 삭제 {#delete-configuration}
 

@@ -2,10 +2,10 @@
 title: ContextHub 구성
 description: 컨텍스트 데이터를 저장, 조작 및 표시하기 위한 프레임워크인 Context Hub를 구성하는 방법에 대해 알아봅니다.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1629'
-ht-degree: 1%
+source-wordcount: '1609'
+ht-degree: 0%
 
 ---
 
@@ -53,7 +53,7 @@ UI 모드를 관련 ContextHub 모듈 그룹에 추가합니다. UI 모드를 �
 1. 다음 속성에 대한 값을 제공합니다.
 
    * UI 모드 제목: UI 모드를 식별하는 제목
-   * 모드 아이콘: 의 선택기 [Coral UI 아이콘](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) 사용할 항목: 예 `coral-Icon--user`
+   * 모드 아이콘: 의 선택기 [Coral UI 아이콘](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) 사용할 항목(예: ) `coral-Icon--user`
    * 활성화됨: ContextHub 도구 모음에 UI 모드를 표시하려면 선택하십시오.
 
 1. 저장을 선택합니다.
@@ -78,7 +78,7 @@ UI 모듈 속성에는 모듈별 속성에 대한 값을 제공할 수 있는 �
 
 1. Experience Manager 레일에서 도구 > 사이트 > ContextHub를 선택합니다.
 1. UI 모듈을 추가할 구성 컨테이너를 선택합니다.
-1. UI 모듈을 추가할 ContextHub 구성을 클릭하거나 입력합니다.
+1. UI 모듈을 추가할 ContextHub 구성을 선택하거나 입력합니다.
 1. UI 모듈을 추가할 UI 모드를 선택합니다.
 1. 만들기 버튼을 선택한 다음 ContextHub UI 모듈(일반)을 선택합니다.
 

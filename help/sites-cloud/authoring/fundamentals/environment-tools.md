@@ -2,17 +2,17 @@
 title: 작성 환경 및 도구
 description: AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2161'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
 
 # 작성 환경 및 도구 {#authoring-the-environment-and-tools}
 
-AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다. 제공된 도구는 다양한 콘솔 및 페이지 편집기에서 액세스할 수 있습니다.
+AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다. 제공된 도구는 다양한 콘솔 및 페이지 편집기에서 액세스됩니다.
 
 {{edge-delivery-authoring}}
 
@@ -108,7 +108,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 ![사이드 패널 전환](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
-사이드 패널을 열 때는 왼쪽에서 밀어서 열게 됩니다. 필요한 경우 **자산** 탭을 선택합니다.
+사이드 패널을 열 때는 왼쪽에서 밀어서 열게 됩니다. 다음 항목 선택 **에셋** 필요한 경우 탭입니다.
 
 ![자산 브라우저 버튼](/help/sites-cloud/authoring/assets/assets-browser-button.png)
 
@@ -226,7 +226,7 @@ AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다�
 
 * **수신 링크**: 페이지를 참조하는 페이지 목록과 함께, 특정 링크를 선택할 때 그러한 페이지 중 하나를 **편집**&#x200B;하기 위해 직접 액세스할 수 있는 권한 제공.
 
-   * (예: 목록 구성 요소에서) 동적으로 생성된 링크가 아닌 정적 링크만 표시할 수 있습니다.
+   * 동적으로 생성된 링크가 아닌 정적 링크만 표시할 수 있습니다(예: 목록 구성 요소에서).
 
 * **참조** 구성 요소를 사용하여 빌린 콘텐츠와 빌려준 콘텐츠의 인스턴스: 여기서 참조하는/참조한 페이지로 이동할 수 있음
 * [론치](/help/sites-cloud/authoring/launches/overview.md): 관련 론치에 대한 액세스 권한 제공

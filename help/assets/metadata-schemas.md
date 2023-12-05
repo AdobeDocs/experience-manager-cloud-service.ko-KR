@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2638'
-ht-degree: 12%
+source-wordcount: '2627'
+ht-degree: 9%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 12%
 | | <ul><li>[!UICONTROL 애플리케이션]</li></ul> | MIME 유형의 자산에 대한 스키마 양식: `application/pdf` 및 `application/zip`. <br>[!UICONTROL pdf]: 하위 유형 PDF이 있는 에셋의 스키마 양식. |
 | | <ul><li>[!UICONTROL 비디오]</li></ul> | MIME 유형의 비디오 자산에 대한 스키마 양식: `video/avi` 및 `video/mp4`. |
 | [!UICONTROL 컬렉션] | | 컬렉션에 대한 스키마 양식입니다. |
-| [!UICONTROL contentfragment] | | Schema form for Content Fragments. |
+| [!UICONTROL contentfragment] | | 콘텐츠 조각에 대한 스키마 양식. |
 | [!UICONTROL 양식] | | 이 스키마 양식과 관련된 항목 [!DNL Adobe Experience Manager Forms]. |
 | [!UICONTROL ugc_contentfragment] | | 소셜 미디어에서 Experience Manager에 통합된 사용자 생성 콘텐츠 부분 및 에셋에 대한 스키마 양식입니다. |
 
@@ -96,13 +96,13 @@ ht-degree: 12%
 | [!UICONTROL 숫자] | 숫자 구성 요소를 추가합니다. |
 | [!UICONTROL 날짜] | 날짜 구성 요소를 추가합니다. |
 | [!UICONTROL 드롭다운] | 드롭다운 목록을 추가합니다. |
-| [!UICONTROL 표준 태그] | 태그 추가. |
+| [!UICONTROL 표준 태그] | 태그를 추가합니다. |
 | [!UICONTROL 스마트 태그] | 메타데이터 태그를 자동으로 추가하여 검색 기능을 보강합니다. |
-| [!UICONTROL 숨김 필드] | 숨겨진 필드를 추가합니다. 에셋이 저장될 때 POST 매개 변수로 전송됩니다. |
-| [!UICONTROL 자산 참조자] | 자산이 참조하는 자산 목록을 보려면 이 구성 요소를 추가하십시오. |
+| [!UICONTROL 숨겨진 필드] | 숨겨진 필드를 추가합니다. 에셋이 저장될 때 POST 매개 변수로 전송됩니다. |
+| [!UICONTROL 참조한 자산] | 자산이 참조하는 자산 목록을 보려면 이 구성 요소를 추가하십시오. |
 | [!UICONTROL 자산 참조] | 를 추가하여 에셋을 참조하는 에셋 목록을 표시합니다. |
 | [!UICONTROL 제품 참조] | 를 추가하여 자산과 연결된 제품 목록을 표시합니다. |
-| [!UICONTROL 상황에 맞는 메타데이터] | 를 추가하여 자산의 속성 페이지에서 다른 메타데이터 탭의 표시를 제어합니다. |
+| [!UICONTROL 상황별 메타데이터] | 를 추가하여 자산의 속성 페이지에서 다른 메타데이터 탭의 표시를 제어합니다. |
 
 <!-- TBD: Ratings are not available in Experience Manager as a Cloud Service. Removed via cqdoc-18089 ticket. 
 | [!UICONTROL Asset Rating]        | Add to display options for rating the asset.                                       |
@@ -150,7 +150,7 @@ Instead of specifying properties for the options in the **[!UICONTROL Settings]*
 
 #### 스키마 양식에서 탭 추가 또는 삭제 {#add-delete-a-tab-in-the-schema-form}
 
-The schema editor lets you add or delete a tab. The default schema form includes the **[!UICONTROL Basic]**, **[!UICONTROL Advanced]** , **[!UICONTROL IPTC]**, and **[!UICONTROL IPTC Extension]** tabs.
+The schema editor lets you add or delete a tab. 기본 스키마 양식에는 **[!UICONTROL 기본]**, **[!UICONTROL 고급]** , **[!UICONTROL IPTC]**, 및 **[!UICONTROL IPTC 확장]** 탭.
 
 ![메타데이터 스키마 양식의 기본 탭](assets/metadata-schema-form-tabs.png)
 
@@ -179,7 +179,7 @@ Experience Manager을 사용하면 사용자 정의 스키마 양식만 삭제�
 
 ### MIME 유형에 대한 새 양식 추가 {#adding-new-forms-for-mime-types}
 
-Create a form under the appropriate form type. For example, to add a template for the `image/png` subtype, create the form under the &quot;image&quot; forms. The title for the schema form is the subtype name. In this case, the title is `png`.
+적절한 양식 유형에서 양식을 만듭니다. 예를 들어 의 템플릿을 추가하려면 `image/png` 하위 유형인 경우 &quot;이미지&quot; 양식 아래에 양식을 만듭니다. The title for the schema form is the subtype name. 이 경우 제목은 입니다. `png`.
 
 #### 다양한 MIME 유형에 기존 스키마 템플릿 사용 {#use-an-existing-schema-template-for-various-mime-types}
 
@@ -223,11 +223,11 @@ Create a form under the appropriate form type. For example, to add a template fo
 에셋의 메타데이터 상속은 계층의 최상위 폴더에 적용되는 스키마를 기반으로 합니다. 동일한 스키마가 하위 폴더에 적용되거나 하위 폴더에 상속됩니다. 하위 폴더 수준에서 다른 스키마가 적용되면 상속이 중지됩니다.
 
 1. 위치 [!DNL Experience Manager] 인터페이스, 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 에셋]** > **[!UICONTROL 메타데이터 스키마]**. The **[!UICONTROL Metadata Schema Forms]** page is displayed.
-1. 양식 앞의 확인란(예: 기본 메타데이터 양식)을 선택하고 **[!UICONTROL 복사]** 사용자 정의 양식으로 저장합니다. 양식에 대한 사용자 정의 이름 지정(예: ) `my_default`. 또는 사용자 정의 양식을 만들 수 있습니다.
+1. 기본 메타데이터 양식과 같은 양식 앞에 있는 확인란을 선택하고 **[!UICONTROL 복사]** 사용자 정의 양식으로 저장합니다. 양식에 대한 사용자 정의 이름 지정(예: ) `my_default`. 또는 사용자 정의 양식을 만들 수 있습니다.
 
 1. 다음에서 **[!UICONTROL 메타데이터 스키마 Forms]** 페이지에서 `my_default` 폼을 클릭한 다음 **[!UICONTROL 편집]**.
 1. 다음에서 **[!UICONTROL 메타데이터 스키마 편집기]** 페이지에서 스키마 양식에 텍스트 필드를 추가합니다. 예를 들어 레이블이 있는 필드를 추가합니다 **[!UICONTROL 범주]**.
-1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 수정된 양식이에 나열되어 있습니다. **[!UICONTROL 메타데이터 스키마 Forms]** 페이지를 가리키도록 업데이트하는 중입니다.
+1. 클릭 **[!UICONTROL 저장]**. 수정된 양식이에 나열되어 있습니다. **[!UICONTROL 메타데이터 스키마 Forms]** 페이지를 가리키도록 업데이트하는 중입니다.
 1. 선택 **[!UICONTROL 폴더에 적용]** 을 클릭하여 폴더에 사용자 지정 메타데이터를 적용합니다.
 1. 수정된 스키마를 적용할 폴더를 선택한 다음 을 선택합니다 **[!UICONTROL 적용]**.
 1. 폴더에 다른 메타데이터 스키마가 적용된 경우 기존 메타데이터 스키마를 덮어쓰려고 한다는 경고 메시지가 나타납니다. 클릭 **덮어쓰기**.
@@ -245,7 +245,7 @@ Create a form under the appropriate form type. For example, to add a template fo
 1. Experience Manager 로고를 클릭한 다음 로 이동합니다. **[!UICONTROL 도구]** > **[!UICONTROL 에셋]** > **[!UICONTROL 메타데이터 스키마]**. The **[!UICONTROL Metadata Schema Forms]** page is displayed.
 1. 기본 메타데이터 양식을 사용자 정의 양식으로 저장합니다. 예를 들어 다음과 같이 저장합니다. `my_default`.
 1. 사용자 정의 양식을 편집합니다. 필수 필드를 추가합니다. 예를 들어 **[!UICONTROL 범주]** 필드를 지정하고 필수 필수로 만듭니다.
-1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 수정된 양식이에 나열되어 있습니다. **[!UICONTROL 메타데이터 스키마 Forms]** 페이지를 가리키도록 업데이트하는 중입니다. 양식을 선택한 다음 을 선택합니다. **[!UICONTROL 폴더에 적용]** 을 클릭하여 폴더에 사용자 지정 메타데이터를 적용합니다.
+1. 클릭 **[!UICONTROL 저장]**. 수정된 양식이에 나열되어 있습니다. **[!UICONTROL 메타데이터 스키마 Forms]** 페이지를 가리키도록 업데이트하는 중입니다. 양식을 선택한 다음 을 선택합니다. **[!UICONTROL 폴더에 적용]** 을 클릭하여 폴더에 사용자 지정 메타데이터를 적용합니다.
 1. 폴더로 이동하고 사용자 정의 양식에 추가한 필수 필드에 대해 메타데이터가 누락된 일부 에셋을 업로드합니다. 필수 필드의 누락된 메타데이터에 대한 메시지가 에셋의 카드 보기에 표시됩니다.
 1. (선택 사항) 액세스 `https://[server]:[port]/system/console/components/`. 구성 및 활성화 `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` 기본적으로 비활성화된 구성 요소입니다. Experience Manager이 에셋에 대한 메타데이터의 유효성을 확인하는 빈도를 설정하십시오.
 

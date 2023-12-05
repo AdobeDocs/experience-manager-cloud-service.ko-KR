@@ -2,9 +2,9 @@
 title: AEM Forms용 통합 스토리지 커넥터(USC)를 구성하는 방법
 description: AEM Forms용 USC(Unified Storage Connector)를 관리하는 방법을 알아봅니다. USC(통합 스토리지 커넥터)를 사용하여 AEM Forms을 외부 데이터 스토리지에 연결합니다.
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: c33f59cb56decf1e5bbbe0b5bb084e906585e702
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '642'
 ht-degree: 0%
 
 ---
@@ -26,10 +26,10 @@ Azure 스토리지 구성을 만들고 USC(통합 스토리지 커넥터)를 사
 다음 단계를 수행하여 [!DNL Azure] 스토리지 구성:
 
 1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Azure 스토리지]**.
-1. 구성을 만들 폴더를 선택하고 을 누릅니다 **[!UICONTROL 만들기]**.
+1. 구성을 생성할 폴더를 선택하고 **[!UICONTROL 만들기]**.
 1. 에서 구성의 제목을 지정합니다. **[!UICONTROL 제목]** 필드.
 1. 의 이름을 지정합니다. [!DNL Azure] 의 저장소 계정 **[!UICONTROL Azure 스토리지 계정]** 필드.
-1. 에서 Azure 스토리지 계정에 액세스할 키를 지정합니다. **[!UICONTROL Azure 액세스 키]** 필드 및 탭 **[!UICONTROL 저장]**.
+1. 에서 Azure 스토리지 계정에 액세스할 키를 지정합니다. **[!UICONTROL Azure 액세스 키]** 필드 및 선택 **[!UICONTROL 저장]**.
 
 ### AEM 워크플로우용 통합 스토리지 커넥터(USC) 구성 {#configure-unified-storage-connector-workflows}
 
@@ -39,17 +39,17 @@ AEM Workflow용 통합 스토리지 커넥터(USC)를 구성하려면 다음 단
 
 1. 다음에서 **[!UICONTROL 워크플로]** 섹션, 선택 **[!UICONTROL Azure]** 스토리지 드롭다운 목록에서 선택하십시오.
 1. 다음을 지정합니다. [azure 스토리지 구성에 대한 구성 경로](#create-azure-storage-configuration) 다음에서 **[!UICONTROL 스토리지 구성 경로]** 필드.
-1. 누르기 **[!UICONTROL 게시]** 그런 다음 을 누릅니다 **[!UICONTROL 저장]** 구성을 저장합니다.
+1. 선택 **[!UICONTROL 게시]** 다음을 선택합니다. **[!UICONTROL 저장]** 구성을 저장합니다.
 
 ### 외부 데이터 스토리지에 대한 AEM Workflow 모델 구성 {#configure-workflow-external-data-storage}
 
 외부 데이터 스토리지에 대한 AEM Workflow 모델을 구성하려면 다음 단계를 수행합니다.
 
 1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로]** > **[!UICONTROL 모델]**.
-1. 모델 이름을 선택하고 을 누릅니다 **[!UICONTROL 편집]**.
-1. 페이지 정보 아이콘을 탭하고 을 누릅니다 **[!UICONTROL 속성 열기]**.
+1. 모델 이름을 선택하고 **[!UICONTROL 편집]**.
+1. 페이지 정보 아이콘을 선택하고 **[!UICONTROL 속성 열기]**.
 1. 선택 **[!UICONTROL 워크플로 데이터 스토리지 외부화]**.
-1. 누르기 **[!UICONTROL 저장 및 닫기]** 속성을 저장합니다.
+1. 선택 **[!UICONTROL 저장 및 닫기]** 속성을 저장합니다.
 
 >[!NOTE]
 >

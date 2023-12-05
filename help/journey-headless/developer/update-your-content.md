@@ -2,10 +2,10 @@
 title: AEM Assets API를 통해 콘텐츠를 업데이트하는 방법
 description: 이 AEM Headless 개발자 여정의 부분에서는 REST API를 통해 콘텐츠 조각의 콘텐츠에 액세스하고 업데이트하는 방법을 대해 알아봅니다.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 97%
+source-wordcount: '1052'
+ht-degree: 100%
 
 ---
 
@@ -163,7 +163,7 @@ The response will contain paging information as part of the `properties` section
 
 Folders act as containers for assets and other folders. They reflect the structure of the AEM content repository.
 
-The Assets REST API exposes access to the properties of a folder; for example its name, title, and so on Assets are exposed as child entities of folders, and sub-folders.
+The Assets REST API exposes access to the properties of a folder; for example, its name, title, and so on Assets are exposed as child entities of folders, and sub-folders.
 
 >[!NOTE]
 >
@@ -254,7 +254,7 @@ API 참조 설명서에 지원되는 요청의 정확한 형식을 정의합니�
 
 >[!NOTE]
 >
->API 참조 참조 [Adobe Experience Manager Assets API - 콘텐츠 조각](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>API 참조 [Adobe Experience Manager Assets API - 콘텐츠 조각](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)을 참조하십시오.
 
 ### 읽기/게재 {#read-delivery}
 
@@ -293,14 +293,14 @@ API 참조 설명서에 지원되는 요청의 정확한 형식을 정의합니�
 
 ### 삭제 {#delete}
 
-사용법은 다음과 같습니다.
+사용은 다음을 통해서입니다.
 
 `DELETE /{cfParentPath}/{cfName}`
 
 AEM Assets REST API 사용에 대한 자세한 내용은 다음을 참조하십시오.
 
-* Adobe Experience Manager Assets HTTP API (추가 리소스)
-* AEM Assets HTTP API의 콘텐츠 조각 지원 (추가 리소스)
+* Adobe Experience Manager Assets HTTP API(추가 리소스)
+* AEM Assets HTTP API의 콘텐츠 조각 지원(추가 리소스)
 
 ## 다음 단계 {#whats-next}
 

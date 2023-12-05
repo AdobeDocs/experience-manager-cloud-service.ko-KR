@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1347'
-ht-degree: 9%
+source-wordcount: '1333'
+ht-degree: 8%
 
 ---
 
@@ -738,7 +738,7 @@ JSON 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 �
 
 1. 다음 위치에서 Experience Manager 웹 콘솔로 이동 `https://server:host/system/console/configMgr`.
 1. 찾기 **[!UICONTROL 적응형 양식 및 대화형 통신 웹 채널 구성]**.
-1. 을 눌러 구성을 편집 모드로 엽니다.
+1. 을(를) 선택하여 편집 모드로 구성을 엽니다.
 1. 다음 항목 선택 **[!UICONTROL 스키마 준수 데이터 생성]** 확인란.
 1. 설정을 저장합니다.
 

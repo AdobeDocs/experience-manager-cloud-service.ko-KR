@@ -2,10 +2,10 @@
 title: AEM 기술 재단
 description: AEM이 구조화되고 JCR, Sling 및 OSGi와 같은 기본 기술이 포함된 AEM의 기술 기반에 대한 개요입니다.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2144'
-ht-degree: 1%
+source-wordcount: '2130'
+ht-degree: 0%
 
 ---
 
@@ -226,7 +226,7 @@ Sling을 사용하여 특정 엔티티를 렌더링하는 스크립트를 지정
 * 동안 `/y`
    * 계층 구조는 `[ c, a, <default>]`
 
-이유는 `/y` 이(가) `sling:resourceSuperType` 반면, 속성 `/x` 에서 지원되지 않으므로 해당 슈퍼타입을 리소스 유형에서 가져옵니다.
+이유는 `/y` 다음 포함: `sling:resourceSuperType` 반면, 속성 `/x` 에서 지원되지 않으므로 해당 슈퍼타입을 리소스 유형에서 가져옵니다.
 
 #### Sling 스크립트를 직접 호출할 수 없음 {#sling-scripts-cannot-be-called-directly}
 

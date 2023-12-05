@@ -2,10 +2,10 @@
 title: 샘플 ContextHub 저장소 후보
 description: ContextHub는 솔루션에서 사용할 수 있는 몇 가지 샘플 저장소 후보를 제공합니다
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 2%
+source-wordcount: '457'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,7 @@ ContextHub는 솔루션에서 사용할 수 있는 몇 가지 샘플 저장소 �
 
 >[!WARNING]
 >
->샘플 저장소 후보는 프로젝트에 대한 자체 전용 구성을 작성하는 데 도움이 되는 참조 구성으로 제공되므로 이를 직접 사용해서는 안 됩니다.
+>샘플 저장소 후보는 프로젝트에 대한 자체 전용 구성을 작성하는 데 도움이 되는 참조 구성으로 제공됩니다. 직접 사용하지 마십시오.
 
 ## aem.segmentation 샘플 저장소 후보 {#aem-segmentation-sample-store-candidate}
 

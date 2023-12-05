@@ -2,10 +2,10 @@
 title: AEM Forms의 로컬 개발 환경을 설정하려면 어떻게 해야 합니까?
 description: Adobe Experience Manager Forms as a Cloud Service을 위한 로컬 개발 환경 설정
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2846'
-ht-degree: 3%
+source-wordcount: '2682'
+ht-degree: 2%
 
 ---
 
@@ -89,7 +89,7 @@ You can use the [development tools](https://experienceleague.adobe.com/docs/expe
 1. 다음 위치로 이동 **[!UICONTROL AEM as a Cloud Service]** 탭.
 1. 게시한 날짜별로 내림차순으로 정렬합니다.
 1. 최신 Adobe Experience Manager as a Cloud Service SDK, Experience Manager Forms 기능 아카이브(AEM Forms 추가 기능), 양식 참조 에셋 또는 Forms Designer를 클릭합니다.
-1. EULA를 검토하고 수락합니다. 탭 **[!UICONTROL 다운로드]** 단추를 클릭합니다.
+1. EULA를 검토하고 수락합니다. **[!UICONTROL 다운로드]** 버튼을 선택합니다.
 
 ## AEM 프로젝트용 개발 도구 설정 {#setup-development-tools-for-AEM-projects}
 
@@ -307,7 +307,7 @@ Experience Manager Forms에 대한 Dispatcher 캐시를 as a Cloud Service으로
    #}
    ```
 
-   with
+   포함
 
    ```json
    /ignoreUrlParams {
@@ -323,7 +323,7 @@ Experience Manager Forms에 대한 Dispatcher 캐시를 as a Cloud Service으로
 ### 캐싱에 대한 고려 사항 {#considerations-about-caching}
 
 * Dispatcher 캐싱 허용 [!DNL AEM Forms] 를 클릭하여 클라이언트에서 적응형 Forms을 미리 채웁니다. 미리 채워진 양식의 렌더링 속도를 향상시킵니다.
-* 보안 콘텐츠 캐싱 기능은 기본적으로 비활성화되어 있습니다. 이 기능을 활성화하기 위해에서 제공하는 지침을 수행할 수 있습니다. [보안 콘텐츠 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=en) 기사
+* 보안 콘텐츠 기능 캐싱은 기본적으로 비활성화되어 있습니다. 이 기능을 활성화하기 위해에서 제공하는 지침을 수행할 수 있습니다. [보안 콘텐츠 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=en) 기사
 * Dispatcher가 일부 적응형 Forms 및 관련 적응형 Forms을 무효화하지 못할 수 있습니다. 이러한 문제를 해결하려면 다음을 참조하십시오. [[!DNL AEM Forms] 캐싱](troubleshooting-caching-performance.md) 문제 해결 섹션에서 을(를) 참조하십시오.
 * 현지화된 적응형 Forms 캐싱:
    * URL 형식 사용 `http://host:port/content/forms/af/<afName>.<locale>.html` 을(를) 대신해 지역화된 버전의 적응형 양식을 요청하려면 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
@@ -387,7 +387,7 @@ For information about troubleshooting, stopping local AEM environment, run modes
 
 1. 양식 데이터 모델 다운로드
 
-1. 편집 가능한 템플릿, 클라우드 구성 및 워크플로우 모델을 내보냅니다. 기존 SDK에서 이전에 언급된 모든 항목을 내보내려면 [CRX-Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ko-KR) 다음 필터 사용:
+1. 편집 가능한 템플릿, 클라우드 구성 및 워크플로우 모델을 내보냅니다. 기존 SDK에서 이전에 언급된 모든 항목을 내보내려면 [CRX-Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html) 다음 필터 사용:
 
    * /conf/ReferenceEditableTemplates
    * /conf/global/settings/cloudconfigs

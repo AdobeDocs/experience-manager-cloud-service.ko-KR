@@ -2,9 +2,9 @@
 title: 콘텐츠 조각 모델 만들기 - Headless 설정
 description: 콘텐츠 조각 모델을 사용하여 AEM의 Headless 기능으로 만들고 제공할 콘텐츠의 구조를 정의합니다.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '477'
 ht-degree: 88%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 88%
    * 선택되지 않음 - 새 모델이 **초안** 모드에서 만들어집니다.
 
 1. 아직 활성화되지 않은 경우 모델을 사용하려면 **활성화됨** 상태여야 합니다.
-   1. 방금 만든 모델을 선택한 다음 를 선택합니다 **사용**.
+   1. 생성한 모델을 선택한 다음 를 선택합니다 **사용**.
 
       ![모델 활성화](../assets/models-enable.png)
    1. 확인 대화 상자에서 **활성화**&#x200B;를 탭하거나 클릭하여 모델 활성화를 확인합니다.

@@ -2,9 +2,9 @@
 title: 적응형 Forms에서 테마를 만들고 사용하려면 어떻게 해야 합니까?
 description: 테마를 사용하여 스타일을 지정하고 핵심 구성 요소를 사용하여 적응형 양식에 시각적 ID를 제공할 수 있습니다. 여러 적응형 Forms에서 테마를 공유할 수 있습니다.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2676'
+source-wordcount: '2610'
 ht-degree: 5%
 
 ---
@@ -124,7 +124,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 1. `aem-forms-theme-canvas` 폴더로 이동합니다.
 
-1. 다음 명령을 실행합니다:
+1. 다음 명령을 실행합니다.
 
    ```
          code .
@@ -167,7 +167,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ##### 구성 요소 수준 스타일 설정 {#component-based-customization}
 
-특정 적응형 양식 핵심 구성 요소의 글꼴, 색상, 크기 및 기타 CSS 속성을 변경할 수도 있습니다. 예를 들어 버튼, 확인란, 컨테이너, 바닥글 등이 있습니다. 특정 구성 요소의 CSS 파일을 편집하여 단추 또는 확인란의 스타일을 지정하여 해당 구성 요소를 조직의 스타일에 맞출 수 있습니다. 구성 요소의 스타일을 사용자 정의하려면 다음을 수행합니다.
+특정 적응형 양식 핵심 구성 요소의 글꼴, 색상, 크기 및 기타 CSS 속성을 변경할 수도 있습니다. 예를 들어, 단추, 확인란, 컨테이너, 바닥글 등이 있습니다. 특정 구성 요소의 CSS 파일을 편집하여 단추 또는 확인란의 스타일을 지정하여 해당 구성 요소를 조직의 스타일에 맞출 수 있습니다. 구성 요소의 스타일을 사용자 정의하려면 다음을 수행합니다.
 
 1. 파일 열기 `<your-theme-sources>/src/components/<component>/<component.scss>` 편집할 수 있습니다. 예를 들어 버튼 구성 요소의 글꼴 색상을 변경하려면 `<your-theme-sources>/src/components/button/button.scss`, 파일 을 참조하십시오.
 1. 요구 사항에 따라 의 값을 변경합니다. 예를 들어 마우스를 가리킬 때 버튼 구성 요소의 색상을 변경하려면 `green`, 값 변경 `color: $white` 의 속성 `cmp-adaptiveform-button__widget:hover` 클래스-16진수 코드 `#12B453` 또는 기타 그림자 `green`. 최종 코드는 다음과 같습니다.
@@ -377,7 +377,7 @@ AEM Forms as a Cloud Service 인스턴스에 호스팅된 적응형 양식에 �
 
 1. AEM Forms 작성자 인스턴스에 로그인합니다.
 
-1. 누르기 **Adobe Experience Manager** > **Forms** > **Forms 및 문서**.
+1. 선택 **Adobe Experience Manager** > **Forms** > **Forms 및 문서**.
 
 1. 클릭 **만들기** > **적응형 Forms**. 적응형 양식 만들기 마법사가 열립니다.
 

@@ -1,15 +1,15 @@
 ---
-title: Angular를 사용하여 AEM에서 SPA 시작하기
+title: angular을 사용하여 AEM에서 SPA 시작하기
 description: 이 문서에서는 샘플 SPA 애플리케이션을 제공하고, 구성 방법을 설명하며, Angular 프레임워크를 사용하여 SPA을 빠르게 시작하고 실행할 수 있도록 해 줍니다.
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 12%
+source-wordcount: '981'
+ht-degree: 6%
 
 ---
 
-# Angular를 사용하여 AEM에서 SPA 시작하기 {#getting-started-with-spas-in-aem-using-angular}
+# angular을 사용하여 AEM에서 SPA 시작하기 {#getting-started-with-spas-in-aem-using-angular}
 
 SPA(단일 페이지 애플리케이션)는 웹 사이트 사용자에게 적합한 멋진 경험을 제공할 수 있습니다. 개발자는 SPA 프레임워크를 사용하여 사이트를 작성하려고 하며 작성자는 SPA 프레임워크를 사용하여 빌드된 사이트의 AEM 내 콘텐츠를 원활하게 편집하려고 합니다.
 
@@ -266,13 +266,13 @@ AEM에서 SPA의 핵심 아이디어는 SPA 구성 요소를 AEM 구성 요소�
 
 단일 페이지 애플리케이션 내의 구성 요소가 정보를 공유하는 것은 정기적으로 필요합니다. 이 작업을 수행하는 방법에는 다음과 같이 복잡성이 증가하는 순서로 나열되는 몇 가지 방법이 권장됩니다.
 
-* **옵션 1:** 순수 개체 지향 솔루션으로 util 클래스를 사용하는 등의 방법으로 논리를 중앙 집중화하고 필요한 구성 요소에 브로드캐스트합니다.
+* **옵션 1:** 순수 개체 지향 솔루션으로 util 클래스를 사용하는 등 논리를 중앙 집중화하고 필요한 구성 요소로 브로드캐스트할 수 있습니다.
 * **옵션 2:** NgRx와 같은 상태 라이브러리를 사용하여 구성 요소 상태를 공유합니다.
 * **옵션 3:** 컨테이너 구성 요소를 사용자 정의하고 확장하여 개체 계층 구조를 활용합니다.
 
 ## 다음 단계 {#next-steps}
 
-* [React를 사용하여 AEM에서 SPA 시작하기](getting-started-react.md) React를 통해 AEM에서 기본 SPA를 빌드하여 SPA 편집기에서 작업하는 방법을 표시함.
+* [React를 사용하여 AEM에서 SPA 시작하기](getting-started-react.md) 는 React를 사용하여 AEM에서 SPA 편집기로 작동하도록 기본 SPA을 빌드한 방법을 보여 줍니다.
 * [SPA 편집기 개요](editor-overview.md)는 AEM과 SPA 간의 커뮤니케이션 모델에 대해 자세히 설명합니다.
 * [WKND SPA 프로젝트](wknd-tutorial.md) 는 AEM에서 간단한 SPA 프로젝트를 구현하는 단계별 자습서입니다.
 * [SPA용 동적 모델과 구성 요소 간 매핑](model-to-component-mapping.md) 구성 요소 매핑에 대한 동적 모델과 AEM의 SPA 내에서 작동하는 방식에 대해 설명합니다.

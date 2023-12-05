@@ -2,10 +2,10 @@
 title: Workfront과 Experience Manager Assets 간의 에셋 메타데이터 매핑 구성
 description: Adobe Workfront과 Experience Manager as a Cloud Service 애플리케이션 간에 에셋 메타데이터 필드를 매핑합니다. 메타데이터 필드를 매핑한 결과, Workfront에서 Experience Manager Assets으로 에셋을 전송하면 Experience Manager Assets에서 매핑된 에셋 메타데이터를 볼 수 있습니다.
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 4%
+source-wordcount: '1005'
+ht-degree: 3%
 
 ---
 
@@ -62,7 +62,7 @@ Workfront에서 Experience Manager Assets으로 이미지를 전송하려면 다
 
 1. 클릭 **[!UICONTROL 전송 대상]**&#x200B;그런 다음 Experience Manager Assets Essentials 통합 이름을 선택합니다.
 
-   ![AEM으로 전송](assets/send-to-aem.png)
+   ![AEM으로 보내기](assets/send-to-aem.png)
 
 1. 에셋의 대상 폴더를 선택한 다음 **[!UICONTROL 폴더 선택]**.
 
@@ -95,7 +95,7 @@ Experience Manager Assets as a Cloud Service에서 새 메타데이터 양식을
 
       `wm` 는 네임스페이스 이름을 참조하고 `projectName` 는 속성 제목을 나타냅니다. 사용 `namespace:propertyTitle` 메타데이터 필드 매핑을 정의하는 형식입니다.
 
-      ![AEM으로 전송](assets/metadata-schema-mapping.png)
+      ![AEM으로 보내기](assets/metadata-schema-mapping.png)
 
 1. 다음을 클릭합니다. **[!UICONTROL 양식 작성]** 탭을 누른 다음 드래그 **[!UICONTROL 한 줄 텍스트]** 구성 요소를 양식에 추가합니다. 양식에서 구성 요소를 클릭합니다. 다음에서 **[!UICONTROL 양식 작성]** 탭:
 

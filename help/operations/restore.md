@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 콘텐츠 복원
 description: Cloud Manager를 사용하여 백업에서 AEM as a Cloud Service 콘텐츠를 복원하는 방법에 대해 알아봅니다.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 81%
+source-wordcount: '1157'
+ht-degree: 77%
 
 ---
 
@@ -111,7 +111,7 @@ Cloud Manager의 셀프서비스 복원 프로세스는 콘텐츠를 AEM으로�
 
 ![활동 복원](assets/backup-activity.png)
 
-백업에 대한 정보 아이콘을 클릭하면 해당 백업에 대한 로그를 다운로드할 수 있을 뿐만 아니라 복원이 시작된 시점의 스냅샷과 데이터 간의 차이점을 포함한 코드 세부 정보를 검사할 수 있습니다.
+백업에 대한 정보 아이콘을 클릭하면 해당 백업에 대한 로그를 다운로드하고 복원이 시작된 시점의 스냅샷과 데이터 간의 차이점을 포함한 코드 세부 정보를 검사할 수 있습니다.
 
 ## 오프사이트 백업 {#offsite-backup}
 

@@ -4,10 +4,10 @@ description: Adobe 엔지니어링 및 컨설팅 팀에서 컴파일한 AEM 다�
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1418'
-ht-degree: 96%
+source-wordcount: '1413'
+ht-degree: 95%
 
 ---
 

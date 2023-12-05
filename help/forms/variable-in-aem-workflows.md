@@ -2,9 +2,9 @@
 title: AEM Workflow 단계에 변수를 추가하려면 어떻게 해야 합니까?
 description: 변수를 만들고 변수 값을 설정하고에서 사용하는 방법을 알아봅니다. [!DNL AEM Forms] 워크플로우 단계.
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '1928'
 ht-degree: 1%
 
 ---
@@ -46,8 +46,8 @@ ArrayList 데이터 유형을 사용하여 변수 컬렉션을 생성합니다. 
 변수를 생성하려면 다음을 수행합니다.
 
 1. AEM 인스턴스에서 도구로 이동합니다 ![망치 아이콘](assets/hammer-icon.svg) > 워크플로우 > 모델.
-1. 누르기 **[!UICONTROL 만들기]** 워크플로우 모델의 제목과 선택적 이름을 지정합니다. 모델을 선택하고 을 누릅니다. **[!UICONTROL 편집]**.
-1. 워크플로우 모델의 사이드 킥에서 사용할 수 있는 변수 아이콘을 탭한 다음 을 누릅니다 **[!UICONTROL 변수 추가]**.
+1. 선택 **[!UICONTROL 만들기]** 워크플로우 모델의 제목과 선택적 이름을 지정합니다. 모델을 선택한 다음 를 선택합니다. **[!UICONTROL 편집]**.
+1. 워크플로우 모델의 사이드 킥에서 사용할 수 있는 변수 아이콘을 선택하고 를 선택합니다. **[!UICONTROL 변수 추가]**.
 
    ![변수 추가](assets/variables_add_variable_new.png)
 
@@ -59,7 +59,7 @@ ArrayList 데이터 유형을 사용하여 변수 컬렉션을 생성합니다. 
    * 양식 데이터 모델 - 양식 데이터 모델 경로를 지정합니다.
    * ArrayList - 컬렉션의 하위 유형을 지정합니다.
 
-1. 변수에 대한 선택적 설명을 지정하고 을 누릅니다 ![done_icon](assets/Smock_Checkmark_18_N.svg) 변경 내용을 저장합니다. 변수는 왼쪽 창에서 사용할 수 있는 목록에 표시됩니다.
+1. 변수에 대한 선택적 설명을 지정하고 을 선택합니다 ![done_icon](assets/Smock_Checkmark_18_N.svg) 변경 내용을 저장합니다. 변수는 왼쪽 창에서 사용할 수 있는 목록에 표시됩니다.
 
 변수를 만들 때 다음 방법을 고려하십시오.
 
@@ -92,11 +92,11 @@ JSON 점 표기법 또는 XPATH 표기법을 사용하여 JSON 또는 XML 유형
 
 변수 간에 매핑을 추가하려면 다음을 수행합니다.
 
-1. 워크플로 편집 페이지에서 워크플로 모델의 사이드 킥에 있는 단계 아이콘을 탭합니다.
-1. 을(를) 드래그 앤 드롭합니다 **[!UICONTROL 변수 설정]** 워크플로우 편집기로 이동하여 단계를 탭하고 선택합니다. ![configure_icon](assets/Smock_Wrench_18_N.svg) (구성).
+1. 워크플로 편집 페이지에서 워크플로 모델의 사이드 킥에 사용할 수 있는 단계 아이콘을 선택합니다.
+1. 을(를) 드래그 앤 드롭합니다 **[!UICONTROL 변수 설정]** 워크플로우 편집기로 이동하고 단계를 선택한 다음 를 선택합니다. ![configure_icon](assets/Smock_Wrench_18_N.svg) (구성).
 1. 변수 설정 대화 상자에서 **[!UICONTROL 매핑]** > **[!UICONTROL 매핑 추가]**.
 1. 다음에서 **변수 매핑** 섹션에서 데이터를 저장할 변수를 선택하고 매핑 모드를 선택한 다음 변수에 저장할 값을 지정합니다. 매핑 모드는 변수의 유형에 따라 다릅니다.
-1. 더 많은 변수를 매핑하여 의미 있는 표현식을 만듭니다. 누르기 ![done_icon](assets/Smock_Checkmark_18_N.svg) 변경 내용을 저장합니다.
+1. 더 많은 변수를 매핑하여 의미 있는 표현식을 만듭니다. 선택 ![done_icon](assets/Smock_Checkmark_18_N.svg) 변경 내용을 저장합니다.
 
 ### 예제 1: XML 변수를 쿼리하여 문자열 변수의 값을 설정합니다. {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -161,7 +161,7 @@ OR 분할은 워크플로우에 분할을 만들고 그 후 하나의 분기만 
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
-마찬가지로 외부 스크립트 경로를 선택하거나 라우팅 표현식에 대한 ECMA 스크립트를 지정하여 활성 분기를 평가합니다. 누르기 **[!UICONTROL 분기 이름 변경]** 을 눌러 분기의 대체 이름을 지정합니다.
+마찬가지로 외부 스크립트 경로를 선택하거나 라우팅 표현식에 대한 ECMA 스크립트를 지정하여 활성 분기를 평가합니다. 선택 **[!UICONTROL 분기 이름 변경]** 을 눌러 분기의 대체 이름을 지정합니다.
 
 <!-- For more examples, see [Create a workflow model](aem-forms-workflow.md#create-a-workflow-model). -->
 
@@ -267,9 +267,9 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ## 변수 편집 {#edit-a-variable}
 
-1. 워크플로 편집 페이지에서 워크플로 모델의 사이드 킥에 있는 변수 아이콘을 탭합니다. 왼쪽 창의 변수 섹션에는 기존 변수가 모두 표시됩니다.
-1. 탭 ![편집](assets/edit.svg) (편집) 아이콘을 클릭합니다.
-1. 변수 정보를 편집하고 을 누릅니다 ![done_icon](assets/Smock_Checkmark_18_N.svg) 변경 내용을 저장합니다. 다음을 편집할 수 없습니다. **[!UICONTROL 이름]** 및 **[!UICONTROL 유형]** 변수에 대한 필드입니다.
+1. 워크플로 편집 페이지에서 워크플로 모델의 사이드 킥에 사용할 수 있는 변수 아이콘을 선택합니다. 왼쪽 창의 변수 섹션에는 기존 변수가 모두 표시됩니다.
+1. 다음 항목 선택 ![편집](assets/edit.svg) (편집) 아이콘을 클릭합니다.
+1. 변수 정보를 편집하고 ![done_icon](assets/Smock_Checkmark_18_N.svg) 변경 내용을 저장합니다. 다음을 편집할 수 없습니다. **[!UICONTROL 이름]** 및 **[!UICONTROL 유형]** 변수에 대한 필드입니다.
 
 ## 변수 삭제 {#delete-a-variable}
 
@@ -277,9 +277,9 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 변수를 삭제하려면 다음을 수행하십시오.
 
-1. 워크플로 편집 페이지에서 워크플로 모델의 사이드 킥에 있는 변수 아이콘을 탭합니다. 왼쪽 창의 변수 섹션에는 기존 변수가 모두 표시됩니다.
-1. 삭제하려는 변수 이름 옆에 있는 삭제 아이콘을 탭합니다.
-1. 누르기 ![done_icon](assets/Smock_Checkmark_18_N.svg) 을 클릭하여 변수를 확인하고 삭제합니다.
+1. 워크플로 편집 페이지에서 워크플로 모델의 사이드 킥에 사용할 수 있는 변수 아이콘을 선택합니다. 왼쪽 창의 변수 섹션에는 기존 변수가 모두 표시됩니다.
+1. 삭제하려는 변수 이름 옆에 있는 삭제 아이콘을 선택합니다.
+1. 선택 ![done_icon](assets/Smock_Checkmark_18_N.svg) 을 클릭하여 변수를 확인하고 삭제합니다.
 
 ## 참조 {#references}
 

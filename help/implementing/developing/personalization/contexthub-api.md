@@ -2,9 +2,9 @@
 title: ContextHub JavaScript API 참조
 description: ContextHub JavaScript API는 ContextHub 구성 요소가 페이지에 추가되면 스크립트에 사용할 수 있습니다
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4613'
+source-wordcount: '4602'
 ht-degree: 2%
 
 ---
@@ -442,7 +442,7 @@ A `string` 서비스 URL을 나타내는 값입니다.
    * `eventDeferring`: 32.
    * `eventing`: 이 저장소의 ContextHub.Utils.Eventing 개체입니다. 기본값은 입니다 `ContextHub.eventing` 개체.
    * `persistence`: 이 저장소의 ContextHub.Utils.Persistence 개체입니다. 기본적으로 메모리 지속성이 사용됩니다(JavaScript 개체).
-   * `service`: (오브젝트)
+   * `service`: (객체)
       * `host`: (문자열) 서버 이름 또는 IP 주소입니다.
       * `jsonp`: (부울) 값이 true이면 서비스가 JSONP 서비스이고 그렇지 않으면 false입니다. true인 경우 `{callback: "ContextHub.Callbacks.*Object.name*}`개체가 추가됨 `service.params`.
       * `params`: (오브젝트) 오브젝트 속성으로 표시되는 URL 매개 변수입니다. 매개 변수 이름과 값은 각각 개체 속성 이름과 값입니다.

@@ -4,10 +4,10 @@ description: 를 구성하는 방법에 대해 알아봅니다. [!DNL Adobe Expe
 contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4298'
-ht-degree: 4%
+source-wordcount: '4303'
+ht-degree: 2%
 
 ---
 
@@ -228,7 +228,7 @@ The paste-as-Microsoft-Word (`paste-wordhtml`) 모드에서는 붙여넣을 때 
 
 그런 다음 참조할 스타일 시트의 위치를 지정합니다.
 
-1. 텍스트 구성 요소의 루트 노드로 이동합니다. 예 `/apps/<myProject>/components/text`.
+1. 텍스트 구성 요소의 루트 노드로 이동합니다(예: ). `/apps/<myProject>/components/text`.
 1. 속성 추가 `externalStyleSheets` 의 상위 노드로 `<rtePlugins-node>`:
 
    * **이름** `externalStyleSheets`
@@ -329,7 +329,7 @@ RTE로 작성된 모든 텍스트는 블록 태그 내에 배치되며 기본값
 
 >[!NOTE]
 >
->블록 태그인 경우, 예: `<hr>` 태그를 단락에 할당할 수 없습니다. 태그에 대한 유효한 사용 사례가 아닙니다. `paraformat` 플러그인입니다.
+>예를 들어 블록 태그가 인 경우 `<hr>` 태그를 단락에 할당할 수 없습니다. 태그에 대한 유효한 사용 사례가 아닙니다. `paraformat` 플러그인입니다.
 
 단락 서식 플러그인을 처음 활성화하면 기본 단락 서식을 사용할 수 없습니다. 팝업 목록이 비어 있습니다. 작성자에게 단락 형식을 제공하려면 다음을 수행합니다.
 

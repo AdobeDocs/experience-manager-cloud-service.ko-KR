@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service에 대한 로깅
 description: AEM용 로깅을 as a Cloud Service으로 사용하여 중앙 로깅 서비스의 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2753'
+source-wordcount: '2720'
 ht-degree: 9%
 
 ---
@@ -190,14 +190,14 @@ Sling LogManager 팩토리에 대한 OSGi 구성을 통해 사용자 지정 Java
 
 AEM as a Cloud Service의 HTTP 요청 로깅을 통해 AEM에 수행된 HTTP 요청과 그 HTTP 응답을 시간 순서대로 파악할 수 있습니다. 이 로그는 AEM에 대한 HTTP 요청과 이 요청이 처리되고 응답하는 순서를 이해하는 데 유용합니다.
 
-이 로그를 이해하는 핵심은 HTTP 요청 및 응답 쌍을 해당 ID로 매핑하는 것입니다(대괄호의 숫자 값으로 표시됨). 요청 및 해당 응답에는 로그에서 다른 HTTP 요청 및 응답이 간헐적으로 포함되어 있는 경우가 많습니다.
+이 로그를 이해하는 핵심은 HTTP 요청 및 응답 쌍을 해당 ID로 매핑하는 것입니다(대괄호의 숫자 값으로 표시됨). 종종 요청 및 해당 응답에는 다른 HTTP 요청과 응답이 로그에 있는 요청 사이에 끼어있습니다.
 
 **예제 로그**
 
 ```
-29/Apr/2020:19:14:21 +0000 [137] -> POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+29/Apr/2020:19:14:21 +0000 [137] > POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
-29/Apr/2020:19:14:22 +0000 [139] -> GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+29/Apr/2020:19:14:22 +0000 [139] > GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
 29/Apr/2020:19:14:21 +0000 [137] <- 201 text/html 111ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
@@ -453,8 +453,8 @@ Define REWRITE_LOG_LEVEL debug
 <td>/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/responsivegrid/image.coreimg.100.500.jpeg/1572236359031/ayo-ogunseinde-237739.jpeg</td>
 </tr>
 <tr>
-<td>기간</td>
-<td>1949ms</td>
+<td>지속 시간</td>
+<td>1949밀리초</td>
 </tr>
 <tr>
 <td>농장</td>

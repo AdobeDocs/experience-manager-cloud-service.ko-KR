@@ -3,10 +3,10 @@ title: 지속 GraphQL 쿼리
 description: 성능을 최적화하기 위해 Adobe Experience Manager as a Cloud Service에서 GraphQL 쿼리를 지속하는 방법을 알아봅니다. HTTP GET 메서드를 사용하여 클라이언트 애플리케이션에서 지속 쿼리를 요청할 수 있으며 응답을 Dispatcher 및 CDN 계층에서 캐시할 수 있으므로 궁극적으로 클라이언트 애플리케이션의 성능이 향상됩니다.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1676'
-ht-degree: 98%
+source-wordcount: '1656'
+ht-degree: 97%
 
 ---
 
@@ -257,7 +257,7 @@ query getAdventuresByActivity($activity: String!) {
 <AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
 ```
 
-`%3B`는 `;`에 대한 UTF-8 인코딩이며 `%3D`는 `=`에 대한 인코딩입니다. 실행할 지속 쿼리에 대해 쿼리 변수 및 특수 문자를 [올바르게 인코딩](#encoding-query-url)해야 합니다.
+UTF-8 인코딩 `%3B` 다음에 대한 `;` 및 `%3D` 다음에 대한 인코딩입니다. `=`. 실행할 지속 쿼리에 대해 쿼리 변수 및 특수 문자를 [올바르게 인코딩](#encoding-query-url)해야 합니다.
 
 ## 지속 쿼리 캐싱 {#caching-persisted-queries}
 
@@ -443,8 +443,8 @@ URL은 다음과 같은 부분들로 나눌 수 있습니다.
 1. 패키지 정의 대화 상자에서 **일반**&#x200B;에 “wknd-persistent-queries”와 같은 **이름**&#x200B;을 입력합니다.
 1. “1.0”과 같은 버전 번호를 입력합니다.
 1. **필터** 아래에 새 **필터**&#x200B;를 추가합니다. 경로 파인더를 사용하여 구성 아래에서 `persistentQueries` 폴더를 선택합니다. 예를 들어 `wknd` 구성의 경우, 전체 경로는 `/conf/wknd/settings/graphql/persistentQueries`입니다.
-1. **저장**&#x200B;을 탭하여 새 패키지 정의를 저장하고 대화 상자를 닫습니다.
-1. 탭 **빌드** 생성된 패키지 정의에 있는 단추입니다.
+1. 선택 **저장** 새 패키지 정의를 저장하고 대화 상자를 닫습니다.
+1. 다음 항목 선택 **빌드** 생성된 패키지 정의에 있는 단추입니다.
 
 패키지를 빌드하면 다음과 같은 작업을 수행할 수 있습니다.
 

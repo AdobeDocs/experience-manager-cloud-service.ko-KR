@@ -2,9 +2,9 @@
 title: Experience Manager Sites 페이지에서 Forms 포털을 만드는 방법
 description: AEM Sites 페이지에서 Forms 포털을 만들고 기본 핵심 구성 요소를 사용하는 방법을 알아봅니다.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1840'
+source-wordcount: '1785'
 ht-degree: 4%
 
 ---
@@ -89,7 +89,7 @@ AEM Forms as a Cloud Service에서 즉시 사용 가능한 Forms 포털 구성 �
 이러한 단계를 실행하기 전에 Azure 스토리지 계정과 액세스 키가 있고에 대한 액세스 권한을 부여했는지 확인하십시오. [!DNL Azure] 저장소 계정입니다.
 
 1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Azure 스토리지]**.
-1. 구성을 만들 폴더를 선택하고 을 누릅니다 **[!UICONTROL 만들기]**.
+1. 구성을 생성할 폴더를 선택하고 **[!UICONTROL 만들기]**.
 1. 에서 구성의 제목을 지정합니다. **[!UICONTROL 제목]** 필드.
 1. 의 이름을 지정합니다. [!DNL Azure] 의 저장소 계정 **[!UICONTROL Azure 스토리지 계정]** 필드.
 
@@ -100,7 +100,7 @@ AEM Workflow용 통합 스토리지 커넥터를 구성하려면 다음 단계�
 1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Forms]** > **[!UICONTROL 통합 스토리지 커넥터]**.
 1. 다음에서 **[!UICONTROL Forms 포털]** 섹션, 선택 **[!UICONTROL Azure]** 다음에서 **[!UICONTROL 스토리지]** 드롭다운 목록입니다.
 1. 다음을 지정합니다. [azure 스토리지 구성에 대한 구성 경로](#create-azure-storage-configuration) 다음에서 **[!UICONTROL 스토리지 구성 경로]** 필드.
-1. 누르기 **[!UICONTROL 게시]** 그런 다음 을 누릅니다 **[!UICONTROL 저장]** 구성을 저장합니다.
+1. 선택 **[!UICONTROL 게시]** 다음을 선택합니다. **[!UICONTROL 저장]** 구성을 저장합니다.
 
 ## Forms 포털 구성 요소 활성화 {#enable-forms-portal-components}
 
@@ -112,11 +112,11 @@ Adobe Experience Manager(AEM) 사이트에서 핵심 구성 요소(기본 포털
 
 포털 구성 요소를 추가 및 구성하여 AEM을 사용하여 작성된 웹 사이트에서 Forms 포털을 만들고 사용자 지정할 수 있습니다. 다음을 확인합니다. [구성 요소가 활성화되었습니다.](#enable-forms-portal-components) Forms 포털에서 사용하기 전에.
 
-구성 요소를 추가하려면 구성 요소 창에서 페이지의 레이아웃 컨테이너로 구성 요소를 드래그 앤 드롭하거나 레이아웃 컨테이너에서 추가 아이콘을 탭하고 [!UICONTROL 새 구성 요소 삽입] 대화 상자.
+구성 요소를 추가하려면 구성 요소 창에서 페이지의 레이아웃 컨테이너로 구성 요소를 드래그 앤 드롭하거나 레이아웃 컨테이너에서 추가 아이콘을 선택하고 [!UICONTROL 새 구성 요소 삽입] 대화 상자.
 
 ### 초안 및 제출 구성 요소 구성 {#configure-drafts-submissions-component}
 
-초안 및 제출 구성 요소에는 나중에 제출한 양식을 완료하기 위해 초안으로 저장된 양식이 표시됩니다. 구성하려면 구성 요소를 탭한 다음 을 탭합니다 ![구성 아이콘](assets/configure_icon.png). 다음에서 [!UICONTROL 초안 및 제출] 대화 상자에서 초안 또는 제출된 양식으로 양식 목록을 표시하는 제목을 지정합니다. 구성 요소에 초안 양식이나 제출된 양식을 카드 또는 목록 형식으로 나열할지 여부도 선택합니다.
+초안 및 제출 구성 요소에는 나중에 제출한 양식을 완료하기 위해 초안으로 저장된 양식이 표시됩니다. 구성하려면 구성 요소를 선택한 다음 을 선택합니다. ![구성 아이콘](assets/configure_icon.png). 다음에서 [!UICONTROL 초안 및 제출] 대화 상자에서 초안 또는 제출된 양식으로 양식 목록을 표시하는 제목을 지정합니다. 구성 요소에 초안 양식이나 제출된 양식을 카드 또는 목록 형식으로 나열할지 여부도 선택합니다.
 
 ![초안 아이콘](assets/drafts-component.png)
 
@@ -128,7 +128,7 @@ Adobe Experience Manager(AEM) 사이트에서 핵심 구성 요소(기본 포털
 
 ![검색 및 목록 작성기 아이콘](assets/search-and-lister-component.png)
 
-구성하려면 구성 요소를 탭한 다음 을 탭합니다 ![구성 아이콘](assets/configure_icon.png). 다음 [!UICONTROL 검색 및 목록 작성자] 대화 상자가 열립니다.
+구성하려면 구성 요소를 선택한 다음 을 선택합니다. ![구성 아이콘](assets/configure_icon.png). 다음 [!UICONTROL 검색 및 목록 작성자] 대화 상자가 열립니다.
 
 1. 다음에서 [!UICONTROL 표시] 탭에서 다음을 구성합니다.
    * 위치 **[!UICONTROL 제목]**, 검색 및 목록 구성 요소의 제목을 지정합니다. 직설적인 제목을 사용하면 양식 목록에서 빠른 검색을 수행할 수 있습니다.
@@ -140,7 +140,7 @@ Adobe Experience Manager(AEM) 사이트에서 핵심 구성 요소(기본 포털
 
 ### 링크 구성 요소 구성 {#configure-link-component}
 
-링크 구성 요소를 사용하여 페이지에서 적응형 양식에 대한 링크를 제공할 수 있습니다. 구성하려면 구성 요소를 탭한 다음 을 탭합니다 ![구성 아이콘](assets/configure_icon.png). 다음 [!UICONTROL 링크 구성 요소 편집] 대화 상자가 열립니다.
+링크 구성 요소를 사용하여 페이지에서 적응형 양식에 대한 링크를 제공할 수 있습니다. 구성하려면 구성 요소를 선택한 다음 을 선택합니다. ![구성 아이콘](assets/configure_icon.png). 다음 [!UICONTROL 링크 구성 요소 편집] 대화 상자가 열립니다.
 
 1. 다음에서 [!UICONTROL 표시] 탭에서 링크가 나타내는 양식을 쉽게 식별할 수 있도록 링크 캡션 및 도구 설명을 제공합니다.
 1. 다음에서 [!UICONTROL 자산 정보] 탭에서 에셋이 저장되는 저장소 경로를 지정합니다.
@@ -151,13 +151,14 @@ Adobe Experience Manager(AEM) 사이트에서 핵심 구성 요소(기본 포털
 모든 수신자가 서명식을 완료한 경우에만 적응형 양식을 제출하도록 구성할 수 있습니다. Adobe Sign을 사용하여 설정을 구성하려면 아래 단계를 따르십시오.
 
 1. 작성자 인스턴스에서 편집 모드로 적응형 양식을 엽니다.
-1. 왼쪽 창에서 속성 아이콘을 탭하고 **[!UICONTROL 전자 서명]** 옵션을 선택합니다.
+1. 왼쪽 창에서 등록 정보 아이콘을 선택하고 **[!UICONTROL 전자 서명]** 옵션을 선택합니다.
 1. 선택 **[!UICONTROL Adobe Sign 활성화]**. 다양한 구성 옵션이 표시됩니다.
 1. 다음에서 [!UICONTROL 양식 제출] 섹션에서 **[!UICONTROL 모든 수신자가 서명식을 완료한 후]** 양식 제출 액션을 구성하는 옵션입니다. 여기서 서명은 모든 수신자에게 먼저 양식이 전송됩니다. 모든 수신자가 양식에 서명하면 양식이 제출됩니다.
 
 ## 적응형 Forms을 초안으로 저장 {#save-adaptive-forms-as-drafts}
 
 양식을 나중에 완성하기 위해 초안으로 저장할 수 있습니다. 양식을 초안으로 저장하는 두 가지 방법이 있습니다.
+
 * 양식 구성 요소에 &quot;양식 저장&quot; 규칙(예: 버튼)을 만듭니다. 버튼을 클릭하면 규칙이 트리거되고 양식이 초안으로 저장됩니다.
 * 자동 저장 기능을 활성화하십시오. 지정된 이벤트나 구성된 시간 간격 후에 양식을 저장합니다.
 
@@ -166,12 +167,12 @@ Adobe Experience Manager(AEM) 사이트에서 핵심 구성 요소(기본 포털
 버튼 등 양식 구성 요소에 &quot;양식 저장&quot; 규칙을 만들려면 아래 단계를 수행합니다.
 
 1. 작성자 인스턴스에서 편집 모드로 적응형 양식을 엽니다.
-1. 왼쪽 창에서 을 누릅니다. ![구성 요소 아이콘](assets/components_icon.png) 을(를) 끌어서 놓습니다. [!UICONTROL 단추] 구성 요소를 양식에 추가합니다.
-1. 탭 [!UICONTROL 단추] 구성 요소를 마우스로 가리킨 다음 ![구성 아이콘](assets/configure_icon.png).
-1. 탭 [!UICONTROL 규칙 편집] 아이콘을 클릭하여 규칙 편집기를 엽니다.
-1. 누르기 **[!UICONTROL 만들기]** 을 클릭하여 규칙을 구성하고 생성할 수 있습니다.
+1. 왼쪽 창에서 을(를) 선택합니다 ![구성 요소 아이콘](assets/components_icon.png) 을(를) 끌어서 놓습니다. [!UICONTROL 단추] 구성 요소를 양식에 추가합니다.
+1. 다음 항목 선택 [!UICONTROL 단추] 구성 요소를 선택한 다음 ![구성 아이콘](assets/configure_icon.png).
+1. 다음 항목 선택 [!UICONTROL 규칙 편집] 아이콘을 클릭하여 규칙 편집기를 엽니다.
+1. 선택 **[!UICONTROL 만들기]** 을 클릭하여 규칙을 구성하고 생성할 수 있습니다.
 1. 다음에서 [!UICONTROL 날짜] 섹션에서 &quot;클릭됨&quot;을 선택하고 [!UICONTROL 그러면] 섹션에서 &quot;양식 저장&quot; 옵션을 선택합니다.
-1. 누르기 **[!UICONTROL 완료]** 을 눌러 규칙을 저장합니다.
+1. 선택 **[!UICONTROL 완료]** 을 눌러 규칙을 저장합니다.
 
 ### 자동 저장 사용 {#enable-auto-save}
 

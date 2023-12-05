@@ -2,10 +2,10 @@
 title: Cloud Manager FAQ
 description: AEM as a Cloud Service의 Cloud Manager에 대해 가장 자주 묻는 질문에 대한 답변을 살펴보십시오.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 99%
+source-wordcount: '961'
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 99%
 빌드를 Java™ 8에서 11로 전환하려고 하면 AEM Cloud Manager 빌드가 실패할 수 있습니다. 다음 오류가 발생하면 `maven-scr-plugin`을 제거하고 모든 OSGi 주석을 OSGi R6 주석으로 전환해야 합니다.
 
 ```text
-[main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
+[main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 > [Help 1]
 ```
 
 이 플러그인을 제거하는 방법에 대한 지침은 [여기](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/)를 참조하십시오.
@@ -108,7 +108,7 @@ Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventA
    * 다음 단계에 따라 로컬 설정에서 문제를 시뮬레이션하십시오.
       1. 최신 AEM SDK jar를 사용하여 로컬로 작성자 및 게시 인스턴스를 설치합니다.
       1. 작성자 인스턴스에 로그온합니다.
-      1. 다음으로 이동 **도구** > **배포** > **배포**.
+      1. **도구** > **배포** > **배포**&#x200B;로 이동합니다.
       1. 코드베이스의 일부인 콘텐츠 패키지를 배포하고 대기열이 오류와 함께 차단되는지 확인합니다.
 
 ## aio 명령을 사용하여 변수를 설정할 수 없습니다. 어떻게 해야 합니까? {#set-variable}

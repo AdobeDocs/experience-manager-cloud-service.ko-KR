@@ -5,16 +5,16 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3629'
+source-wordcount: '3587'
 ht-degree: 9%
 
 ---
 
 # 이미지 사전 설정 관리{#managing-image-presets}
 
-이미지 사전 설정을 사용하면 Adobe Experience Manager Assets가 다양한 크기, 다른 형식 또는 동적으로 생성된 다른 이미지 속성으로 이미지를 동적으로 전달할 수 있습니다. 각 이미지 사전 설정은 이미지를 표시하기 위한 미리 정의된 크기 조정 및 서식 지정 명령 컬렉션을 나타냅니다. 이미지 사전 설정을 만들 때 이미지 게재 크기를 선택합니다. 또한 보기 위해 이미지가 전달될 때 이미지의 모양이 최적화되도록 서식 지정 명령을 선택합니다.
+이미지 사전 설정을 사용하면 Adobe Experience Manager Assets에서 다른 크기, 다른 형식 또는 동적으로 생성되는 다른 이미지 속성으로 이미지를 동적으로 전달할 수 있습니다. 각 이미지 사전 설정은 이미지를 표시하기 위한 미리 정의된 크기 조정 및 서식 지정 명령 컬렉션을 나타냅니다. 이미지 사전 설정을 만들 때 이미지 게재 크기를 선택합니다. 또한 보기 위해 이미지가 전달될 때 이미지의 모양이 최적화되도록 서식 지정 명령을 선택합니다.
 
 관리자는 에셋 내보내기를 위한 사전 설정을 만들 수 있습니다. 사용자는 이미지를 내보낼 때 사전 설정을 선택할 수 있으며, 이 사전 설정은 관리자가 지정하는 사양으로 이미지 형식을 다시 지정할 수도 있습니다.
 
@@ -54,7 +54,7 @@ Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스한 �
 >
 >을 선택하면 시스템에 다양한 렌디션이 표시됩니다 **[!UICONTROL 표현물]** 를 클릭합니다. 표시되는 이미지 사전 설정의 수를 늘리거나 줄일 수 있습니다. 다음을 참조하십시오 [표시되는 이미지 사전 설정 수 늘리기](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
-### Adobe Illustrator(AI), PostScript ®(EPS) 및 PDF 파일 형식 {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+### Adobe Illustrator(AI), PostScript®(EPS) 및 PDF 파일 형식 {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
 이러한 파일 형식의 동적 변환을 생성할 수 있도록 AI, EPS 및 PDF 파일의 수집을 지원하려면 이미지 사전 설정을 만들기 전에 다음 정보를 검토하십시오.
 
@@ -88,7 +88,7 @@ Dynamic Media을 사용하여 AI, EPS 또는 PDF 파일에 대한 동적 변환�
 
 액세스 권한 `Rasterize PDF/AI Image Preview Rendition` 다음을 통해 구성 요소 옵션 처리 `DAM Update Asset` 워크플로입니다.
 
-왼쪽 상단에서 Adobe Experience Manager 를 선택하고 다음 위치로 이동합니다. **[!UICONTROL 도구]** > **[!UICONTROL 워크플로]** > **[!UICONTROL 모델]**. 워크플로 모델 페이지에서 을 선택합니다. **[!UICONTROL DAM 자산 업데이트]**&#x200B;을 클릭한 다음 도구 모음에서 를 선택합니다 **[!UICONTROL 편집]**. DAM 자산 업데이트 워크플로우 페이지에서 를 두 번 탭합니다. `Rasterize PDF/AI Image Preview Rendition` 프로세스 구성 요소를 사용하여 단계 속성 대화 상자를 엽니다.
+왼쪽 상단에서 Adobe Experience Manager 를 선택하고 다음 위치로 이동합니다. **[!UICONTROL 도구]** > **[!UICONTROL 워크플로]** > **[!UICONTROL 모델]**. 워크플로 모델 페이지에서 을 선택합니다. **[!UICONTROL DAM 자산 업데이트]**&#x200B;을 클릭한 다음 도구 모음에서 를 선택합니다 **[!UICONTROL 편집]**. DAM 자산 업데이트 워크플로우 페이지에서 `Rasterize PDF/AI Image Preview Rendition` 프로세스 구성 요소를 사용하여 단계 속성 대화 상자를 엽니다.
 
 #### PDF/AI 이미지 미리 보기 렌디션 옵션 래스터화 {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -101,7 +101,7 @@ PDF 또는 AI 워크플로 래스터화 인수
 | MIME 유형 | application/pdf<br>application/postscript<br>application/illustrator | PDF 또는 Illustrator 문서로 간주되는 문서 MIME 유형 목록입니다. |
 | 최대 너비 | 2048 | 생성된 미리 보기 렌디션의 최대 너비(픽셀 단위)입니다. |
 | 최대 높이 | 2048 | 생성된 미리 보기 렌디션의 최대 높이(픽셀 단위)입니다. |
-| 해결 | 72 | 첫 번째 페이지를 래스터화하는 해상도(ppi)(인치당 픽셀 수)입니다. |
+| 해결 방법 | 72 | 첫 번째 페이지를 래스터화하는 해상도(ppi)(인치당 픽셀 수)입니다. |
 
 기본 프로세스 인수를 사용하면 PDF/AI 문서의 첫 번째 페이지가 72ppi로 래스터화되고 생성된 미리보기 이미지의 크기가 2048 x 2048픽셀로 조정됩니다. 일반 배포의 경우 해상도를 최소 150ppi 이상으로 높일 수 있습니다. 예를 들어, 300ppi의 미국 문자 크기 문서에는 각각 최대 너비와 높이가 2550 x 3300픽셀이 필요합니다.
 
@@ -138,7 +138,7 @@ Dynamic Media 통합에서 사용하는 스크립트는 다음과 같습니다.
 
 With the **[!UICONTROL Dynamic Media Process Image Assets]** step, thumbnails are generated by the image server, and this configuration is independent of the configuration applied to the **[!UICONTROL Process Thumbnails]** step. Generating thumbnails through the **[!UICONTROL Process Thumbnails]** step is the slowest and most memory intensive way to create thumbnails.
 
-썸네일 크기 조정은 다음 형식으로 정의됩니다. **[!UICONTROL 폭:height:가운데]**, 예 `80:80:false`. 폭과 높이는 축소판의 크기를 픽셀 단위로 결정합니다. 중심 값은 false 또는 true입니다. true로 설정하면 썸네일 이미지의 크기가 구성에 지정된 것과 정확히 일치함을 나타냅니다. 크기가 조정된 이미지가 더 작으면 축소판 내에서 가운데에 표시됩니다.
+썸네일 크기 조정은 다음 형식으로 정의됩니다. **[!UICONTROL 폭:height:가운데]**, 예: `80:80:false`. 폭과 높이는 축소판의 크기를 픽셀 단위로 결정합니다. 중심 값은 false 또는 true입니다. true로 설정하면 썸네일 이미지의 크기가 구성에 지정된 것과 정확히 일치함을 나타냅니다. 크기가 조정된 이미지가 더 작으면 축소판 내에서 가운데에 표시됩니다.
 
 >[!NOTE]
 >
@@ -146,7 +146,6 @@ With the **[!UICONTROL Dynamic Media Process Image Assets]** step, thumbnails ar
 >
 >* 비디오에 대한 썸네일 크기는 **[!UICONTROL FFmpeg 썸네일]** 단계, **[!UICONTROL 프로세스]** 아래의 탭 **[!UICONTROL 인수]**.
 >
-
 
 **이미지 썸네일 크기를 구성하려면:**
 
@@ -179,7 +178,7 @@ With the **[!UICONTROL Dynamic Media Process Image Assets]** step, thumbnails ar
 
    ![chlimage_1-495](assets/chlimage_1-495.png)
 
-1. limit 속성에서 원하는 숫자로 변경합니다. 예를 들면 다음과 같습니다 `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
+1. limit 속성에서 숫자를 원하는 숫자로 변경합니다(예: ). `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. 선택 **[!UICONTROL 모두 저장]**.
 
 ### 이미지 사전 설정 만들기 {#creating-image-presets}
@@ -192,7 +191,7 @@ With the **[!UICONTROL Dynamic Media Process Image Assets]** step, thumbnails ar
 
 이러한 파일 형식의 동적 렌디션을 생성할 수 있도록 AI, PDF 및 EPS 파일 수집을 지원하려면 이미지 사전 설정을 만들기 전에 다음 정보를 검토하십시오.
 
-다음을 참조하십시오 [Adobe Illustrator(AI), PostScript ®(EPS) 및 PDF 파일 형식](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
+다음을 참조하십시오 [Adobe Illustrator(AI), PostScript®(EPS) 및 PDF 파일 형식](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
 
 이 파일 형식의 동적 변환을 생성할 수 있도록 INDD 파일 수집을 지원하려면 이미지 사전 설정을 만들기 전에 다음 정보를 검토하십시오.
 
@@ -233,7 +232,7 @@ With the **[!UICONTROL Dynamic Media Process Image Assets]** step, thumbnails ar
 
 이미지 사전 설정을 만들거나 편집할 때 이 섹션에 설명된 옵션이 있습니다. 또한 Adobe은 다음과 같은 &quot;모범 사례&quot; 옵션 선택 사항을 시작할 것을 권장합니다.
 
-* **[!UICONTROL Format]** (**[!UICONTROL Basic]** tab) - Select **[!UICONTROL JPEG]** or another format that meets your requirements. All web browsers support the JPEG image format; it offers a good balance between small files sizes and image quality. However, JPEG format images use a lossy compression scheme that can introduce unwanted image artifacts if the compression setting is too low. For that reason, Adobe recommends setting the compression quality to 75. This setting offers a good balance between image quality and small file size.
+* **[!UICONTROL 형식]** (**[!UICONTROL 기본]** tab) - 선택 **[!UICONTROL JPEG]** 또는 요구 사항을 충족하는 다른 형식일 수 있습니다. All web browsers support the JPEG image format; it offers a good balance between small files sizes and image quality. However, JPEG format images use a lossy compression scheme that can introduce unwanted image artifacts if the compression setting is too low. For that reason, Adobe recommends setting the compression quality to 75. This setting offers a good balance between image quality and small file size.
 
 * **[!UICONTROL Enable Simple Sharpening]** - Do not select **[!UICONTROL Enable Simple Sharpening]** (this sharpening filter offers less control than Unsharp Masking settings).
 
@@ -244,8 +243,8 @@ With the **[!UICONTROL Dynamic Media Process Image Assets]** step, thumbnails ar
 | 필드 | 설명 |
 | --- | --- |
 | **이름** | 공백 없이 수사적 이름을 입력합니다. 사용자가 이 이미지 사전 설정을 식별하는 데 도움이 되도록 이름에 이미지 크기 사양을 포함하십시오. |
-| **폭과 높이** | 이미지가 표시될 크기를 픽셀로 입력합니다. 폭과 높이는 0픽셀보다 커야 합니다. 값이 0이면 사전 설정이 만들어지지 않습니다. 두 값이 모두 비어 있으면 반응형 이미지 사전 설정이 만들어집니다. |
-| **형식** | 메뉴에서 형식을 선택합니다.<br>선택 중 **JPEG** 은 다음과 같은 기타 옵션을 제공합니다.<br>· **품질** - JPEG 품질 척도는 1-100입니다. 슬라이더를 드래그하면 배율이 표시됩니다.<br>· **JPG 색차 다운샘플링 활성화** - 눈은 고주파 휘도보다 고주파 색상 정보에 덜 민감하므로 JPEG 이미지는 이미지 정보를 휘도와 색상 성분으로 나눕니다. JPEG 이미지가 압축되면 광도 구성 요소는 최대 해상도로 유지되는 반면, 색상 구성 요소는 픽셀 그룹의 평균에 의해 다운샘플링됩니다. 다운샘플링은 체감 품질에 거의 영향을 미치지 않으면서 데이터 양을 1/2 또는 1/3 줄입니다. 회색 음영 이미지에는 다운샘플링을 적용할 수 없습니다. 이 기법은 대비가 높은 이미지(예: 오버레이된 텍스트가 있는 이미지)에 유용한 압축의 양을 줄입니다.<br><br>선택 중 **GIF** 또는 **알파 포함 GIF** 는 다음 추가 정보를 제공합니다 **GIF 색상 양자화** 옵션:<br>· **유형** - 선택 **자동 선택** (기본값), **웹**, 또는 **Macintosh**. 다음을 선택하는 경우 **알파 포함 GIF**, Macintosh 옵션을 사용할 수 없습니다.<br>· **디더** - 선택 **분산** 또는 **끔**.<br>· **색상 수** - 2-256을 입력합니다.<br>· **색상 목록** - 쉼표로 구분된 목록을 입력합니다. 예를 들어, 흰색, 회색 및 검은색의 경우 `000000,888888,ffffff`.<br><br>선택 중 **PDF**, **TIFF**, 또는 **알파 포함 TIFF** 은 다음 추가 옵션을 제공합니다.<br>· **압축** - 압축 알고리즘을 선택합니다. PDF에 대한 알고리즘 옵션은 다음과 같습니다 **없음**, **Zip**, 및 **Jpeg**; TIFF의 경우 **없음**, **LZW**, **Jpeg**, 및 **Zip**; 알파 포함 TIFF의 경우 **없음**, **LZW**, 및 **Zip**.<br><br>선택 중 **PNG**, **알파 포함 PNG**, 또는 **EPS** 는 추가 옵션을 제공하지 않습니다. |
+| **너비 및 높이** | 이미지가 표시될 크기를 픽셀로 입력합니다. 폭과 높이는 0픽셀보다 커야 합니다. 값이 0이면 사전 설정이 만들어지지 않습니다. 두 값이 모두 비어 있으면 반응형 이미지 사전 설정이 만들어집니다. |
+| **형식** | 메뉴에서 형식을 선택합니다.<br>선택 중 **JPEG** 은 다음과 같은 기타 옵션을 제공합니다.<br>· **품질** - JPEG 품질 척도는 1-100입니다. 슬라이더를 드래그하면 배율이 표시됩니다.<br>· **JPG 색차 다운샘플링 활성화** - 눈은 고주파 휘도보다 고주파 색상 정보에 덜 민감하므로 JPEG 이미지는 이미지 정보를 휘도와 색상 성분으로 나눕니다. JPEG 이미지가 압축되면 광도 구성 요소는 최대 해상도로 유지되는 반면, 색상 구성 요소는 픽셀 그룹의 평균에 의해 다운샘플링됩니다. 다운샘플링은 체감 품질에 거의 영향을 미치지 않으면서 데이터 양을 1/2 또는 1/3 줄입니다. 회색 음영 이미지에는 다운샘플링을 적용할 수 없습니다. 이 기법은 대비가 높은 이미지(예: 오버레이된 텍스트가 있는 이미지)에 유용한 압축의 양을 줄입니다.<br><br>선택 중 **GIF** 또는 **알파 포함 GIF** 는 다음 추가 정보를 제공합니다 **GIF 색상 양자화** 옵션:<br>· **유형** - 선택 **자동 선택** (기본값), **웹**, 또는 **Macintosh**. 다음을 선택하는 경우 **Alpha이 있는 GIF**, Macintosh 옵션을 사용할 수 없습니다.<br>· **디더** - 선택 **분산** 또는 **끔**.<br>· **색상 수** - 2-256을 입력합니다.<br>· **색상 목록** - 쉼표로 구분된 목록을 입력합니다. 예를 들어, 흰색, 회색 및 검은색의 경우 `000000,888888,ffffff`.<br><br>선택 중 **PDF**, **TIFF**, 또는 **알파 포함 TIFF** 은 다음 추가 옵션을 제공합니다.<br>· **압축** - 압축 알고리즘을 선택합니다. PDF에 대한 알고리즘 옵션은 다음과 같습니다 **없음**, **Zip**, 및 **Jpeg**; TIFF의 경우 **없음**, **LZW**, **Jpeg**, 및 **Zip**; Alpha이 있는 TIFF의 경우 **없음**, **LZW**, 및 **Zip**.<br><br>선택 중 **PNG**, **Alpha 포함 PNG**, 또는 **EPS** 는 추가 옵션을 제공하지 않습니다. |
 | **선명하게 하기** | 선택 **단순 선명 활성화** 모든 크기 조절 후 이미지에 기본 선명하게 하기 필터를 적용합니다. 선명하게 하기는 다른 크기의 이미지를 표시할 때 발생하는 흐릿함을 보상하는 데 도움이 될 수 있습니다. |
 
 #### 고급 탭 옵션 {#advanced-tab-options}
@@ -345,43 +344,43 @@ With the **[!UICONTROL Dynamic Media Process Image Assets]** step, thumbnails ar
 
 * [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html) - 부정적인 이미지 효과를 위해 각 색상 구성 요소를 반전시킵니다.
 
-   ```xml {.line-numbers}
-   &op_invert=1
-   ```
+  ```xml {.line-numbers}
+  &op_invert=1
+  ```
 
-   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
+  ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
 * [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html) - 이미지에 흐림 효과 필터를 적용합니다.
 
-   ```xml {.line-numbers}
-   &op_blur=7
-   ```
+  ```xml {.line-numbers}
+  &op_blur=7
+  ```
 
-   ![6_5_imagepreset-edit-blur](assets/6_5_imagepreset-edit-blur.png)
+  ![6_5_imagepreset-edit-blur](assets/6_5_imagepreset-edit-blur.png)
 
 * 결합된 명령 - op_blur 및 op-invert
 
-   ```xml {.line-numbers}
-   &op_invert=1&op_blur=7
-   ```
+  ```xml {.line-numbers}
+  &op_invert=1&op_blur=7
+  ```
 
-   ![chlimage_1-80](assets/chlimage_1-501.png)
+  ![chlimage_1-80](assets/chlimage_1-501.png)
 
 * [op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html) - 밝기를 줄이거나 늘립니다.
 
-   ```xml {.line-numbers}
-   &op_brightness=58
-   ```
+  ```xml {.line-numbers}
+  &op_brightness=58
+  ```
 
-   ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
+  ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
 * [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html) - 이미지 불투명도를 조정합니다. 전경 불투명도를 줄일 수 있습니다.
 
-   ```xml {.line-numbers}
-   opac=29
-   ```
+  ```xml {.line-numbers}
+  opac=29
+  ```
 
-   ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
+  ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
 
 ### 이미지 사전 설정 편집 {#modifying-image-presets}
 

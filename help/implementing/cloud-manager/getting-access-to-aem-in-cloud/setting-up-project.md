@@ -2,10 +2,10 @@
 title: 프로젝트 설정
 description: Maven을 사용하여 AEM 프로젝트를 빌드하는 방법과 자체 프로젝트를 만들 때 준수해야 하는 표준에 대해 알아봅니다.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '1399'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -120,7 +120,7 @@ Cloud Manager 내에서 암호로 보호된 Maven 저장소를 사용하려면 �
 Cloud Manager 빌드 프로세스가 시작되면 다음 작업을 수행하십시오.
 
 * 이 파일의 `<servers>` 요소는 Cloud Manager에서 제공하는 기본 `settings.xml` 파일에 병합됩니다.
-   * `adobe` 및 `cloud-manager`로 시작하는 서버 ID는 예약된 것으로 간주되며 사용자 정의 서버에서 사용해서는 안 됩니다.
+   * 다음으로 시작하는 서버 ID `adobe` 및 `cloud-manager` 예약된 것으로 간주됩니다. 사용자 지정 서버에서는 사용하지 마십시오.
    * 이러한 접두사 중 하나와 일치하지 않는 서버 ID 또는 기본 ID `central`은 Cloud Manager에서 미러링되지 않습니다.
 * 이 파일이 있는 경우 서버 ID는 `pom.xml` 파일 내의 `<repository>` 및/또는 `<pluginRepository>` 요소 내부에서 참조됩니다.
 * 일반적으로 이러한 `<repository>` 및/또는 `<pluginRepository>` 요소는 [Cloud Manager별 프로필](#activating-maven-profiles-in-cloud-manager) 내에 포함되지만 반드시 필요한 것은 아닙니다.

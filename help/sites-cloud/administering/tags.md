@@ -2,10 +2,10 @@
 title: 태그 관리
 description: 콘텐츠 정리를 위해 AEM에서 태그를 관리하는 방법을 알아봅니다.
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2210'
-ht-degree: 78%
+source-wordcount: '2200'
+ht-degree: 73%
 
 ---
 
@@ -62,7 +62,7 @@ AEM(Adobe Experience Manager)에서 태그는 다음의 속성일 수 있습니�
 태그 지정 콘솔에 액세스하려면 다음 작업을 수행하십시오.
 
 1. 관리 권한으로 작성 환경에 로그인합니다.
-1. 글로벌 탐색 메뉴에서 **`Tools`** > **`General`** ->
+1. 전역 탐색 메뉴에서 을(를) 선택합니다 **`Tools`** > **`General`** >
    **`Tagging`**&#x200B;을 선택합니다.
 
 ![AEM의 태그 지정 콘솔](/help/sites-cloud/administering/assets/tagging-console.png)
@@ -91,7 +91,7 @@ AEM(Adobe Experience Manager)에서 태그는 다음의 속성일 수 있습니�
 
 1. 필요한 정보를 입력하고 다음을 선택합니다. **만들기**.
 
-네임스페이스가 만들어집니다. 태그 지정 콘솔에서 네임스페이스는 가장 낮은 수준(콘솔의 가장 왼쪽 열)에 있으며, 폴더 아이콘으로 표시되어 다른 태그의 “컨테이너” 또는 그룹화 역할을 담당한다는 특성을 나타냅니다.
+네임스페이스가 만들어집니다. 태깅 콘솔에서 네임스페이스는 가장 낮은 수준(콘솔의 맨 왼쪽 열)에 있으며 폴더 아이콘으로 표시되며, 이는 해당 특성을 &quot;컨테이너&quot; 또는 다른 태그 그룹화로 반영합니다.
 
 이제 이 네임스페이스에서 [새 태그를 만들거나](#creating-tags), [기존 태그를 관리](#managing-tags)할 수 있습니다.
 
@@ -135,7 +135,7 @@ AEM에서 다른 콘텐츠를 만들 때와 마찬가지로 태그(또는 네임
 
    ![콘솔에서 태그 선택](assets/select-tags.png)
 
-1. **태그 게시** 대화 상자에서 선택한 태그를 게시할 것인지 확인합니다. 선택 **게시**.
+1. **태그 게시** 대화 상자에서 선택한 태그를 게시할 것인지 확인합니다. **게시**&#x200B;를 선택합니다.
 
    ![태그 게시 확인 모달](assets/publish-tag.png)
 
@@ -163,7 +163,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 * [병합](#merging-tags)
 * [삭제](#deleting-tags)
 
-도구 모음에 사용 가능한 공간이 부족한 경우 줄임표 아이콘을 선택하면 추가 옵션을 확인할 수 있습니다.
+도구 모음에 사용 가능한 공간이 충분하면 생략 부호 아이콘 뒤에 추가 옵션을 사용할 수 있습니다.
 
 ### 태그 속성 보기 {#viewing-tag-properties}
 
@@ -215,7 +215,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
    ![콘솔에서 태그 선택](assets/select-tags.png)
 
-1. **태그 게시 취소** 대화 상자에서 선택한 태그를 게시 취소할 것인지 확인합니다. 선택 **게시**.
+1. **태그 게시 취소** 대화 상자에서 선택한 태그를 게시 취소할 것인지 확인합니다. **게시**&#x200B;를 선택합니다.
 
    ![태그 게시 확인 모달](assets/unpublish-tag.png)
 
@@ -243,7 +243,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
    ![태그 참조의 세부 정보 보기](assets/tag-references-detail.png)
 
-목록에서 참조하는 콘텐츠를 마우스로 가리키거나 탭하면 콘텐츠의 전체 경로가 표시됩니다.
+마우스로 가리키거나 목록에서 참조 콘텐츠를 선택하여 콘텐츠의 전체 경로를 표시합니다.
 
 보기 모드 및 레일 선택에 대한 자세한 내용은 [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
@@ -304,7 +304,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 1. AEM은 태그가 참조되지 않았는지 확인합니다.
 
-   1. 참조가 없으면 AEM에서 최종 삭제 확인을 요청합니다. **삭제**&#x200B;를 선택합니다
+   1. 참조가 없으면 AEM에서 최종 삭제 확인을 요청합니다. 선택 **삭제**
 
       ![참조를 찾을 수 없음](assets/no-references-found.png)
 
@@ -359,7 +359,7 @@ Tag permissions are ['secure (by default)'](/help/sites-administering/production
 
 1. 번역할 태그를 선택한 다음 를 선택합니다 **편집** 을 클릭합니다.
 
-1. **태그 편집** 대화 상자의 **지역화** 열에서 대상 언어(예: 독일어)를 선택합니다.
+1. 다음에서 **태그 편집** 대화 상자, **로컬라이제이션** 열에서 대상 언어(예: 독일어)를 선택합니다.
 
 1. **독일어** 필드가 나타나면 번역된 제목을 입력합니다.
 

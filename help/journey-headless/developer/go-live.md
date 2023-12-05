@@ -2,10 +2,10 @@
 title: Headless 애플리케이션 실행 방법
 description: 이 AEM Headless 개발자 여정의 부분에서는 Git에서 로컬 코드를 가져오고 CI/CD 파이프라인용 Cloud Manager Git으로 이동하여 Headless 애플리케이션을 라이브로 배포하는 방법에 대해 알아봅니다.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 98%
+source-wordcount: '1060'
+ht-degree: 95%
 
 ---
 
@@ -67,7 +67,7 @@ AEM Headless 애플리케이션을 실행할 수 있도록 준비하려면 아�
 
 업데이트가 Cloud Manager에 업로드되면 [Cloud Manager의 CI/CD 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)을 사용하여 AEM as a Cloud Service에 배포할 수 있습니다.
 
-Cloud Manager CI/CD 파이프라인을 사용하여 코드 배포를 시작할 수 있습니다. 이 파이프라인은 광범위하게 적용됩니다 [여기](/help/implementing/deploying/overview.md).
+[여기에서](/help/implementing/deploying/overview.md) 전반적으로 다룬 Cloud Manager CI/CD 파이프라인을 사용하여 코드 배포를 시작할 수 있습니다.
 
 ## 성능 모니터링 {#performance-monitoring}
 
@@ -83,7 +83,7 @@ Cloud Manager CI/CD 파이프라인을 사용하여 코드 배포를 시작할 �
       * 사용자, 요청 및 로드 수 확인
 * 앱 및 공간별 성능 보고서 액세스
    * 서버가 가동되면 일반 지표가 녹색/주황색/빨간색인지 확인한 다음 특정 앱 문제를 식별합니다.
-   * 위에서 앱이나 공간(예: Photoshop 데스크탑, 페이월)으로 필터링한 동일한 보고서 열기
+   * 앱 또는 공간으로 필터링된 위의 동일한 보고서를 엽니다(예: Photoshop 데스크탑, 유료화).
    * Splunk 로그 API를 사용하여 서비스 및 애플리케이션 성능에 액세스
    * 다른 문제가 있는 경우 고객 지원 팀에 문의하십시오.
 
@@ -124,7 +124,7 @@ Cloud Manager CI/CD 파이프라인을 사용하여 코드 배포를 시작할 �
 
 ### 단일 페이지 애플리케이션 살펴보기 {#explore-spa}
 
-하지만 AEM의 Headless 스토어는 여기서 멈추지 않습니다. [여정의 일부 시작하기](getting-started.md#integration-levels)에서 AEM이 Headless 게재와 기존 전체 스택 모델뿐만 아니라 두 가지 장점을 결합한 하이브리드 모델을 지원하는 방법에 대해 간략하게 논의했던 것으로 기억할지 모릅니다.
+하지만 AEM의 Headless 스토어는 여기서 멈추지 않습니다. 다음 내용에 대해 알고 있을 수 있습니다. [여정의 시작 부분](getting-started.md#integration-levels) AEM이 헤드리스 게재 및 기존 전체 스택 모델을 지원할 뿐만 아니라 두 가지 장점을 모두 결합한 하이브리드 모델을 지원할 수 있는 방법에 대해 간략하게 설명했습니다.
 
 프로젝트에 이러한 종류의 유연성이 필요한 경우 부가적인 여정인 [AEM을 통해 단일 페이지 애플리케이션(SPA)을 제작하는 방법](create-spa.md)(옵션)을 계속 진행합니다.
 

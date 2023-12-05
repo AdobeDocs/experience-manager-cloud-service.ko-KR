@@ -2,10 +2,10 @@
 title: 기능 테스트
 description: 코드의 품질과 신뢰성을 보장하기 위해 AEM as a Cloud Service 배포 프로세스에 내장된 세 가지 유형의 기능 테스트에 대해 알아봅니다.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: ad3a82919b2c0561742527b83af20cc89d8a243a
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1416'
-ht-degree: 10%
+source-wordcount: '1354'
+ht-degree: 9%
 
 ---
 
@@ -55,7 +55,7 @@ Adobe은 여러 개의 내장된 품질 게이트를 제공하는 반면, 다른
 
 모든 테스트 전략의 기초가 되는 AEM 애플리케이션에 대한 단위 테스트를 제공하는 것이 좋습니다. 빠르고 자주 실행하고 일찍 빠르게 피드백을 제공하도록 설계되었습니다. 개발자 워크플로우, 고유한 CI/CD 및 AEM Cloud Service 배포 파이프라인에 긴밀하게 통합됩니다.
 
-JUnit을 사용하여 구현되고 Maven로 실행됩니다. 다음을 참조하십시오. [AEM Project Archetype의 핵심 모듈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html#unit-tests) AEM 및 시작에 대한 단위 테스트의 예입니다.
+JUnit을 사용하여 구현되고 Maven로 실행됩니다. 다음을 참조하십시오 [AEM Project Archetype의 핵심 모듈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html#unit-tests) AEM 및 시작에 대한 단위 테스트의 예입니다.
 
 ### 코드 품질
 
@@ -67,7 +67,7 @@ JUnit을 사용하여 구현되고 Maven로 실행됩니다. 다음을 참조하
 
 제품 기능 테스트는 작성 및 복제 작업과 같은 AEM의 핵심 기능에 대한 안정적인 HTTP 통합 테스트(IT) 세트입니다. Adobe은 즉시 사용할 수 있도록 이러한 기능을 제공하고 유지 관리합니다. 사용자 정의 애플리케이션 코드가 AEM 제품의 핵심 기능을 손상시키는 경우 이러한 코드가 배포되지 않도록 하기 위한 것입니다.
 
-Junit을 사용하여 구현되고 Maven을 사용하여 실행되며 official을 사용합니다 [AEM 테스트 클라이언트](https://github.com/adobe/aem-testing-clients). 제품 테스트 세트는 로 유지됩니다. [오픈 소스 프로젝트](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)는 모범 사례를 따르며 테스트 구현의 좋은 시작점으로 간주될 수 있습니다.
+Junit을 사용하여 구현되고 Maven을 사용하여 실행되며 공식적인 [AEM 테스트 클라이언트](https://github.com/adobe/aem-testing-clients). 제품 테스트 세트는 로 유지됩니다. [오픈 소스 프로젝트](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)는 모범 사례를 따르며 테스트 구현의 좋은 시작점으로 간주될 수 있습니다.
 
 ### 사용자 정의 기능 테스트
 
@@ -75,11 +75,11 @@ Junit을 사용하여 구현되고 Maven을 사용하여 실행되며 official�
 
 >[!NOTE]
 >
->사용자 정의 기능 테스트는 AEM 애플리케이션에서 사용하는 프로덕션 및 비프로덕션(옵트인) 파이프라인에서 실행되며, 이 파이프라인은 AEM 애플리케이션 배포 및 제품 푸시 업데이트를 변경하므로 애플리케이션이 제대로 작동하도록 하고 릴리스 안전을 높이는 데 도움이 되는 주요 기여입니다. 고객 기능 테스트는 각 고객에 대한 내부 프리릴리스 유효성 검사 파이프라인에서도 실행되므로 초기 피드백을 제공하는 데 도움이 됩니다.
+>사용자 정의 기능 테스트는 AEM 애플리케이션에서 사용하는 프로덕션 및 비프로덕션(옵트인) 파이프라인에서 실행되며, 이 파이프라인은 AEM 애플리케이션 변경 배포 및 제품 푸시 업데이트를 변경하므로 애플리케이션이 제대로 작동하고 릴리스 안전성을 높이는 데 도움이 되는 주요 기여입니다. 고객 기능 테스트는 각 고객에 대한 내부 프리릴리스 유효성 검사 파이프라인에서도 실행되므로 초기 피드백을 제공하는 데 도움이 됩니다.
 
-파이프라인 실행을 효율적으로 유지하기 위해서는 주요 기능 및 주요 사용자 상호 작용 흐름에 중점을 두는 것이 좋습니다. 기능 테스트의 실행 시간은 ~15분 이하가 권장됩니다. 이 품질 게이트에 적합하지 않은 모든 기능 테스트 세트는 고객의 개발 흐름 동안 일반적인 고객 유효성 검사 파이프라인의 일부로 실행하는 것이 좋습니다.
+파이프라인 실행을 효율적으로 유지하려면 주요 기능 및 주요 사용자 상호 작용 흐름에 중점을 두는 것이 좋습니다. 기능 테스트에 대한 실행 시간은 ~15분 이하가 권장됩니다. 이 품질 게이트에 적합하지 않은 모든 기능 테스트 세트는 고객의 개발 흐름 동안 일반적인 고객 유효성 검사 파이프라인의 일부로 실행하는 것이 좋습니다.
 
-다음을 참조하십시오. [오픈 소스 제품 테스트](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) 또는 [AEM Projects Archetype의 it.test 모듈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/ittests.html) 예.
+다음을 참조하십시오 [오픈 소스 제품 테스트](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) 또는 [AEM Projects Archetype의 it.test 모듈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/ittests.html) 예.
 
 자세한 내용은 [Java 기능 테스트](/help/implementing/cloud-manager/java-functional-testing.md)를 참조하십시오.
 
@@ -87,7 +87,7 @@ Junit을 사용하여 구현되고 Maven을 사용하여 실행되며 official�
 
 고객별 개발에 대한 위험 제어를 극대화하려면 Adobe에서 중요한 UI 테스트를 AEMCS에 캡처하도록 강력히 권장합니다. 이러한 기여는 수가 다소 제한적이지만 고객 경험에 가장 큰 영향을 미치기 위한 것입니다.
 
-테스트는 도커 이미지로 패키지화되어 있으며 가능한 한 휘발되도록 설계되었습니다(Cypress, Selenium, Java, Javascript 등 지원). 이러한 테스트는 사용자 정의 기능 테스트와 동일한 특성과 목적을 따릅니다.
+테스트는 도커 이미지로 패키지화되어 있으며 가능한 한 휘발되도록 설계되었습니다(Cypress, Selenium, Java 및 Javascript 지원). 이러한 테스트는 사용자 정의 기능 테스트와 동일한 특성과 목적을 따릅니다.
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Junit을 사용하여 구현되고 Maven을 사용하여 실행되며 official�
 
 파이프라인 실행을 효율적으로 유지하기 위해서는 주요 기능 및 주요 사용자 상호 작용 흐름에 중점을 두는 것이 좋습니다. 이 품질 게이트에 맞지 않는 전체 UI 테스트 세트는 고객의 개발 흐름 동안 일반적인 고객 유효성 검사 파이프라인의 일부로 실행하는 것이 좋습니다.
 
-다음을 참조하십시오. [오픈 소스 예시 테스트](https://github.com/adobe/aem-test-samples/tree/aem-cloud/) 또는 [AEM Projects Archetype의 ui.tests 모듈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uitests.html) 예.
+다음을 참조하십시오 [오픈 소스 예시 테스트](https://github.com/adobe/aem-test-samples/tree/aem-cloud/) 또는 [AEM Projects Archetype의 ui.tests 모듈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uitests.html) 예.
 
 자세한 내용은 [사용자 정의 UI 테스트](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)를 참조하십시오.
 
@@ -111,7 +111,7 @@ Junit을 사용하여 구현되고 Maven을 사용하여 실행되며 official�
 
 고객 유효성 검사 품질 게이트는 고객의 애플리케이션 변경 사항이 AEM 클라우드 배포 파이프라인에 도달하기 전에 실행되는 고객 자신의 테스트 전략 및 노력에 대한 자리 표시자입니다.
 
-여기서 원하는 도구와 프레임워크를 선택할 수 있습니다. 고객 기능 테스트 및 사용자 정의 UI 테스트와 달리 AEM as a Cloud Service 관련 제한은 없으므로 여기에서 장기 실행 기능 및 UI 테스트를 수행하는 것이 좋습니다.
+여기에서 원하는 도구 및 프레임워크를 선택할 수 있습니다. 고객 기능 테스트 및 사용자 정의 UI 테스트와 달리 AEM as a Cloud Service 관련 제한은 없으므로 여기에서 장기 실행 기능 및 UI 테스트를 수행하는 것이 좋습니다.
 
 모든 도구와 프레임워크를 자유롭게 선택할 수 있지만, HTTP 기반 통합 테스트 및 UI 테스트를 사용자 정의 기능 테스트 및 사용자 정의 UI 테스트 품질 게이트에서 사용할 수 있는 도구 및 프레임워크에 맞추는 것이 좋습니다. 다음을 통합하는 것이 좋습니다. [신속한 개발 환경(RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) 로컬 테스트 전략에서 AEM 클라우드 환경에 최대한 가깝게 테스트합니다.
 

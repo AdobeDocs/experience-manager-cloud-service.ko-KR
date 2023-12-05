@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1409'
-ht-degree: 20%
+source-wordcount: '1396'
+ht-degree: 21%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 20%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-config.html?lang=en) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-config.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
 메타데이터 프로필을 사용하면 폴더 내의 에셋에 기본 메타데이터를 적용할 수 있습니다. 메타데이터 프로필을 만들어 폴더에 적용합니다. 이후에 폴더에 업로드하는 모든 에셋은 메타데이터 프로필에서 구성한 기본 메타데이터를 상속합니다.
@@ -27,9 +27,9 @@ Experience Manager Assets의 프로필 사용과 관련된 중요한 개념은 �
 ## 메타데이터 프로필 추가 {#adding-a-metadata-profile}
 
 1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 에셋]** > **[!UICONTROL 메타데이터 프로필]**&#x200B;을 클릭한 다음 을 클릭합니다 **[!UICONTROL 만들기]**.
-1. 메타데이터 프로필의 제목(예: 샘플 메타데이터)을 입력하고 을 누릅니다 **[!UICONTROL 제출]**. 메타데이터 프로필에 대한 편집 양식이 표시됩니다.
+1. 메타데이터 프로필의 제목(예: 샘플 메타데이터)을 입력하고 다음을 선택합니다. **[!UICONTROL 제출]**. 메타데이터 프로필에 대한 편집 양식이 표시됩니다.
 1. 구성 요소를 클릭하고 **[!UICONTROL 설정]** 탭. 예를 들어 **[!UICONTROL 설명]** 구성 요소를 확인하고 속성을 편집합니다.
-다음에 대한 다음 속성을 편집합니다. **[!UICONTROL 설명]** 구성 요소:
+다음에 대한 속성을 편집합니다. **[!UICONTROL 설명]** 구성 요소:
 
    * **[!UICONTROL 필드 레이블]** - 메타데이터 속성의 표시 이름입니다. 사용자 참조용으로만 사용됩니다.
    * **[!UICONTROL 속성에 매핑]** - 이 속성의 값은 저장소에 저장된 에셋 노드에 대한 상대 경로/이름을 제공합니다. 값은 항상 다음으로 시작해야 합니다. `./` 경로가 자산의 노드 아래에 있음을 나타내기 때문입니다.
@@ -53,7 +53,7 @@ Experience Manager Assets의 프로필 사용과 관련된 중요한 개념은 �
 | 날짜 | 필드 레이블, 속성에 매핑, 기본값 |
 | 표준 태그 | 필드 레이블, 속성에 매핑, 기본값, 설명 |
 
-1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다. 메타데이터 프로필이 의 프로필 목록에 추가됩니다 **[!UICONTROL 메타데이터 프로필]** 페이지를 가리키도록 업데이트하는 중입니다.
+1. 클릭 **[!UICONTROL 완료]**. 메타데이터 프로필이 의 프로필 목록에 추가됩니다 **[!UICONTROL 메타데이터 프로필]** 페이지를 가리키도록 업데이트하는 중입니다.
 
 ## 메타데이터 프로필 복사 {#copying-a-metadata-profile}
 
@@ -95,7 +95,7 @@ Folders that have a profile already assigned to it are indicated by the display 
 #### 속성에서 폴더에 메타데이터 프로필 적용 {#applying-metadata-profiles-to-folders-from-properties}
 
 1. 왼쪽 레일에서 **[!UICONTROL 에셋]** 그런 다음 메타데이터 프로필을 적용할 폴더로 이동합니다.
-1. 폴더에서 확인 표시를 클릭하거나 클릭하여 선택한 다음 클릭하거나 클릭합니다 **속성**.
+1. 폴더에서 확인 표시를 선택하여 선택한 다음 을 선택합니다 **속성**.
 1. 다음 항목 선택 **[!UICONTROL 메타데이터 프로필]** 탭을 클릭하고 드롭다운 메뉴에서 프로필을 선택한 다음 를 클릭합니다. **[!UICONTROL 저장]**. Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name.
 
 ### 메타데이터 프로필을 전체적으로 적용 {#applying-a-metadata-profile-globally}
@@ -108,7 +108,7 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 * 다음으로 이동 `https://[aem_server]/mnt/overlay/dam/gui/content/assets/v2/foldersharewizard.html/content/dam` 적절한 프로필을 적용하고 **[!UICONTROL 저장]**.
 
-* 다음 CRXDE Lite으로 이동합니다. `/content/dam/jcr:content`. 속성 추가 `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`. 클릭 **모두 저장**.
+* 다음 CRXDE Lite으로 이동합니다. `/content/dam/jcr:content`. 속성 추가 `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`. **모두 저장**&#x200B;을 클릭합니다.
 
 ## 폴더에서 메타데이터 프로필 제거 {#removing-a-metadata-profile-from-folders}
 

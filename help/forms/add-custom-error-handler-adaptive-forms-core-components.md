@@ -6,10 +6,10 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2410'
-ht-degree: 99%
+source-wordcount: '2329'
+ht-degree: 97%
 
 ---
 
@@ -193,8 +193,8 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 오류 응답이 표준 스키마나 서버측 유효성 검사 실패에 있는 경우, 기본 오류 핸들러를 지원하여 오류 응답을 필드에 표시합니다.
 [규칙 편집기의 호출 서비스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=ko-KR#invoke) 작업을 통해 기본 오류 핸들러를 사용하는 방법을 이해하려면 두 필드, **펫 ID** 및 **펫 이름**&#x200B;을 사용하여 간단한 적응형 양식의 예를 살펴본 다음 **펫 ID** 필드의 기본 오류 핸들러를 사용하여 외부 서비스를 호출하도록 구성된 REST 엔드포인트에서 반환된 다양한 오류를 확인합니다(예: `200 - OK`,`404 - Not Found`, `400 - Bad Request`). 규칙 편집기의 서비스 호출 작업을 통해 기본 오류 핸들러를 추가하려면 다음 단계를 실행합니다.
 
-1. 작성 모드에서 적응형 양식을 열고 양식 구성 요소를 선택한 다음 **[!UICONTROL 규칙 편집기]**&#x200B;를 탭하여 규칙 편집기를 엽니다.
-1. **[!UICONTROL 만들기]**&#x200B;를 탭합니다.
+1. 작성 모드에서 적응형 양식을 열고 양식 구성 요소를 선택하고 을 선택합니다 **[!UICONTROL 규칙 편집기]** 규칙 편집기를 엽니다.
+1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. 규칙의 **날짜** 섹션에서 조건을 만듭니다. 예: **펫 ID 필드의 날짜[ 이름]**&#x200B;이 변경되었습니다. 선택이 **상태 선택** 드롭다운 목록에서 변경되었습니다.
 1. **Then** 섹션의 **작업 선택** 드롭다운 목록에서 **[!UICONTROL 호출 서비스]**&#x200B;를 선택합니다.
 1. **입력** 섹션에서 **사후 서비스**&#x200B;와 해당 데이터 바인딩을 선택합니다. 예: **펫 ID**&#x200B;의 유효성을 검사하려면 **사후 서비스**&#x200B;를 **GET/pet/{petId}**&#x200B;으로 선택하고 **입력** 섹션에서 **펫 ID**&#x200B;를 선택합니다.
@@ -236,7 +236,7 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 1. `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/`로 이동하고 `clientlibs`로서 `ClientLibraryFolder`를 만듭니다.
 1. `js`라는 이름의 폴더를 만듭니다.
 1. `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` 폴더로 이동합니다.
-1. 예: JavaScript 파일을 추가합니다`function.js`. 파일은 사용자 정의 오류 핸들러의 코드로 구성됩니다.
+1. JavaScript 파일 추가(예: ) `function.js`. 파일은 사용자 정의 오류 핸들러의 코드로 구성됩니다.
 다음 코드를 JavaScript 파일에 추가하여 REST 서비스 엔드포인트가 수신한 응답과 헤더를 브라우저 콘솔에 표시해 보겠습니다.
 
    ```javascript
@@ -303,8 +303,8 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 
 **[!UICONTROL 규칙 편집기의 호출 서비스]** 작업을 통해 사용자 정의 오류 핸들러를 사용하려면
 
-1. 작성 모드에서 적응형 양식을 열고 양식 구성 요소를 선택한 다음 **[!UICONTROL 규칙 편집기]**&#x200B;를 탭하여 규칙 편집기를 엽니다.
-1. **[!UICONTROL 만들기]**&#x200B;를 탭합니다.
+1. 작성 모드에서 적응형 양식을 열고 양식 구성 요소를 선택하고 을 선택합니다 **[!UICONTROL 규칙 편집기]** 규칙 편집기를 엽니다.
+1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. 규칙의 **날짜** 섹션에서 조건을 만듭니다. 예: **[펫 ID 필드 이름]**&#x200B;이 변경되면 **상태 선택** 드롭다운 목록에서 선택이 **변경됩니다**.
 1. **Then** 섹션의 **작업 선택** 드롭다운 목록에서 **[!UICONTROL 호출 서비스]**&#x200B;를 선택합니다.
 1. **입력** 섹션에서 **사후 서비스**&#x200B;와 해당 데이터 바인딩을 선택합니다. 예: **펫 ID**&#x200B;의 유효성을 검사하려면 **사후 서비스**&#x200B;를 **GET/pet/{petId}**&#x200B;으로 선택하고 **입력** 섹션에서 **펫 ID**&#x200B;를 선택합니다.
@@ -334,7 +334,7 @@ If the server validation error message does not display in the standard format, 
 
 Before adding custom handler, you must configure the adaptive form for asynchronous submission. Execute the following steps:
 
-1. In adaptive form authoring mode, select the Form Container object and tap ![adaptive form properties](assets/configure_icon.png) to open its properties.
+1. In adaptive form authoring mode, select the Form Container object and select ![adaptive form properties](assets/configure_icon.png) to open its properties.
 1. In the **[!UICONTROL Submission]** properties section, enable **[!UICONTROL Use asynchronous submission]**.
 1. Select **[!UICONTROL Revalidate on server]** to validate the input field values on server before submission.
 1. Select the Submit Action:
@@ -344,7 +344,7 @@ Before adding custom handler, you must configure the adaptive form for asynchron
 
     ![adaptive form submission properties](assets/af_submission_properties.png)
 
-1. Tap ![Save](assets/save_icon.png) to save the properties.
+1. Select ![Save](assets/save_icon.png) to save the properties.
 
 ### Add custom error handler on Adaptive Form submission {#add-custom-error-handler-af-submission}
 
@@ -352,10 +352,10 @@ AEM Forms provides out-of-the-box success and error handlers for form submission
 
 Execute the following steps to add custom error handler on Adaptive Form submission:
 
-1. Open an Adaptive Form in authoring mode, select any form object, and tap  to open the rule editor.
-1. Select **[!UICONTROL Form]** in the Form Objects tree and tap **[!UICONTROL Create]**.
+1. Open an Adaptive Form in authoring mode, select any form object, and select  to open the rule editor.
+1. Select **[!UICONTROL Form]** in the Form Objects tree and select **[!UICONTROL Create]**.
 1. Select **[!UICONTROL Error in Submission]** from the Event drop-down list.
-1. Write a rule to convert custom error structure to the standard error structure and tap **[!UICONTROL Done]** to save the rule.
+1. Write a rule to convert custom error structure to the standard error structure and select **[!UICONTROL Done]** to save the rule.
 
 The following is a sample code to convert a custom error structure to the standard error structure:
 

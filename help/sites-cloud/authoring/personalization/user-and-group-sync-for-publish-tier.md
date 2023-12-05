@@ -2,10 +2,10 @@
 title: 등록, 로그인 및 사용자 프로필
 description: AEM as a Cloud Service의 등록, 로그인, 사용자 데이터 및 그룹 동기화에 대해 알아봅니다.
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 93%
+source-wordcount: '1132'
+ht-degree: 90%
 
 ---
 
@@ -113,7 +113,7 @@ AEM as a Cloud Service에서는 쿠키 기반의 고정 세션이 활성화되�
 
 ## 데이터 동기화 {#data-synchronization}
 
-웹 사이트 최종 사용자는 모든 웹 페이지 요청마다, 심지어 다른 브라우저를 사용하여 로그인할 때에도 일관된 경험을 기대합니다. 그러나 자신이 모를 때에도 이들 최종 사용자는 게시 계층 인프라의 서로 다른 서버 노드로 이동합니다. AEM as a Cloud Service는 게시 계층의 모든 노드에 걸쳐 `/home` 폴더 계층 구조(사용자 프로필 정보, 그룹 멤버십 등)를 빠르게 동기화함으로써 이를 수행합니다.
+웹 사이트 최종 사용자는 모든 웹 페이지 요청마다, 심지어 다른 브라우저를 사용하여 로그인할 때에도 일관된 경험을 기대합니다. 그러나 자신이 모를 때에도 이들 최종 사용자는 게시 계층 인프라의 서로 다른 서버 노드로 이동합니다. AEM as a Cloud Service에서는 를 빠르게 동기화하여 이 작업을 수행합니다. `/home` 게시 계층의 모든 노드에 걸친 폴더 계층 구조(사용자 프로필 정보, 그룹 멤버십 등).
 
 다른 AEM 솔루션과 달리 AEM as a Cloud Service의 사용자 및 그룹 멤버십 동기화는 지점 간 메시징 접근 방식을 사용하지 않으며, 대신 고객 구성이 필요하지 않은 게시-구독 접근 방식을 구현합니다.
 

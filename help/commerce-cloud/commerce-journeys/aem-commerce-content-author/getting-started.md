@@ -1,11 +1,11 @@
 ---
 title: CIF 작성 시작하기
-description: CIF 작성 시작하기.
+description: CIF 작성 시작하기
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '778'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -45,7 +45,7 @@ CIF은 컨텍스트를 종료하지 않고 실시간 제품 데이터에 액세�
 
 ### 제품 선택기
 
-폴더 아이콘을 클릭하면 선택기 모달 UI가 열립니다(예: 제품 티저)
+폴더 아이콘을 클릭하면 선택기 모달 UI(예: 제품 티저)가 열립니다
 ![제품 선택기](assets/product-picker-open.png)
 
 왼쪽의 카탈로그 구조를 탐색하거나 검색하면 제품을 찾을 수 있습니다. 전체 텍스트 검색은 선택한 카테고리를 준수하고 검색 결과를 이 카테고리로 제한합니다.
@@ -57,7 +57,7 @@ CIF은 컨텍스트를 종료하지 않고 실시간 제품 데이터에 액세�
 
 ### 범주 선택기
 
-제품 선택기처럼 작동합니다. 폴더 아이콘을 클릭하면 선택기 모달 UI가 열립니다(예: 범주 캐러셀)
+제품 선택기처럼 작동합니다. 폴더 아이콘을 클릭하면 선택기 모달 UI가 열립니다(예: 카테고리 캐러셀)
 ![범주 선택기](assets/category-picker-open.png)
 
 왼쪽의 카탈로그 구조를 탐색하고 범주를 선택합니다.

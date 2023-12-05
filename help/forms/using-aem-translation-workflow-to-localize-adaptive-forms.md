@@ -6,9 +6,9 @@ content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '533'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 1%
 [기록 문서 설정](generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [기록 문서의 브랜딩 정보 사용자 정의](generate-document-of-record-for-non-xfa-based-adaptive-forms.md) 및 브라우저 로케일이 시스템 언어를 사용하여 적응형 양식을 지역화한 것과 동일한 언어로 설정되어 있는지 확인합니다. 브라우저 로케일은 기록 문서의 브랜딩 정보를 현지화하는 데 도움이 됩니다.
-1. 현지화된 기록 문서를 보려면 미리보기 생성 을 탭합니다. 기록 문서 PDF이 생성되고 브라우저의 새 탭에서 열립니다.
+1. 현지화된 기록 문서를 보려면 미리보기 생성을 선택합니다. 기록 문서 PDF이 생성되고 브라우저의 새 탭에서 열립니다.
 
 <!-- ## Localizing an Adaptive Form and its Document of Record using Human Translation {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
 

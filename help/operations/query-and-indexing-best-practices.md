@@ -3,10 +3,10 @@ title: 쿼리 및 색인화 모범 사례
 description: Adobe의 모범 사례 가이드라인에 기반하여 색인 및 쿼리를 최적화하는 방법에 대해 알아봅니다.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3127'
-ht-degree: 44%
+source-wordcount: '3088'
+ht-degree: 43%
 
 ---
 
@@ -173,7 +173,7 @@ AEM에서 제공하는 as a Cloud Service [쿼리 성능 도구](#query-performa
 * 3개 제한 사항
    * 노드 유형 (`dam:Asset`)
    * 경로(하위 항목) `/content/dam`)
-   * 속성 (`jcr:content/metadata/dc:title = "My Title"`)
+   * 속성(`jcr:content/metadata/dc:title = "My Title"`)
 * 정렬 기준: `jcr:created` 속성
 
 이 쿼리를 설명하면 다음 플랜이 생성됩니다.
@@ -213,7 +213,7 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +j
 * 3개 제한 사항
    * 노드 유형 (`dam:Asset`)
    * 경로(하위 항목) `/content/dam`)
-   * 속성 (`jcr:content/metadata/myProperty = "My Property Value"`)
+   * 속성(`jcr:content/metadata/myProperty = "My Property Value"`)
 * 정렬 기준: `jcr:created` 속성**
 
 이 쿼리를 설명하면 다음 플랜이 생성됩니다.

@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2201'
-ht-degree: 3%
+source-wordcount: '2121'
+ht-degree: 2%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 3%
 다음을 사용하여 관계형 데이터베이스를 구성할 수 있습니다. [!DNL Experience Manager] 웹 콘솔 구성 다음 작업을 수행합니다.
 
 1. 다음으로 이동 [!DNL Experience Manager] 웹 콘솔 위치 `https://server:host/system/console/configMgr`.
-1. 찾기 **[!UICONTROL Day Commons JDBC 연결 풀]** 구성. 을 눌러 구성을 편집 모드로 엽니다.
+1. 찾기 **[!UICONTROL Day Commons JDBC 연결 풀]** 구성. 을(를) 선택하여 편집 모드로 구성을 엽니다.
 
    ![JDBC 커넥터 풀](/help/forms/assets/jdbc_connector.png)
 
@@ -74,7 +74,7 @@ ht-degree: 3%
    >
    > 다음을 참조하십시오 [JDBC DataSourcePool을 사용한 SQL 연결](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) 를 참조하십시오.
 
-1. 누르기 **[!UICONTROL 저장]** 구성을 저장합니다.
+1. 선택 **[!UICONTROL 저장]** 구성을 저장합니다.
 
 이제 양식 데이터 모델과 함께 구성된 관계형 데이터베이스를 사용할 수 있습니다.
 
@@ -83,7 +83,7 @@ ht-degree: 3%
 You can configure [!DNL Experience Manager] user profile using User Profile Connector configuration in [!DNL Experience Manager] Web Console. Do the following:
 
 1. Go to [!DNL Experience Manager] web console at `https://[server]:[port]/system/console/configMgr`.
-1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and tap to open the configuration in edit mode.
+1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and select to open the configuration in edit mode.
 1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model. Use the following format to specify user profile properties:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
@@ -97,7 +97,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
    >
    >The **&#42;** in the above example denotes all nodes under the `profile/empLocation/` node in [!DNL Experience Manager] user profile in CRXDE structure. It means that the Form Data Model can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. However, the nodes that contain the specified property must follow a consistent structure.
 
-1. Tap **[!UICONTROL Save]** to save the configuration. -->
+1. Select **[!UICONTROL Save]** to save the configuration. -->
 
 ## 클라우드 서비스 구성을 위한 폴더 구성 {#cloud-folder}
 
@@ -111,15 +111,15 @@ RESTful, SOAP 및 OData 서비스에 대한 클라우드 서비스를 구성하�
    * 다음을 참조하십시오. [구성 브라우저](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html) 설명서 를 참조하십시오.
 1. 클라우드 구성에 대한 전역 폴더를 활성화하려면 다음을 수행하거나 클라우드 서비스 구성에 대한 다른 폴더를 만들고 구성하려면 이 단계를 건너뜁니다.
 
-   1. 다음에서 **[!UICONTROL 구성 브라우저]**&#x200B;를 선택하고 `global` 폴더 및 탭 **[!UICONTROL 속성]**.
+   1. 다음에서 **[!UICONTROL 구성 브라우저]**&#x200B;를 선택하고 `global` 폴더 및 선택 **[!UICONTROL 속성]**.
 
    1. 다음에서 **[!UICONTROL 구성 속성]** 대화 상자, 활성화 **[!UICONTROL 클라우드 구성]**.
 
-   1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 탭하여 구성을 저장하고 대화 상자를 종료합니다.
+   1. 선택 **[!UICONTROL 저장 및 닫기]** 구성을 저장하고 대화 상자를 종료합니다.
 
-1. 다음에서 **[!UICONTROL 구성 브라우저]**, 탭 **[!UICONTROL 만들기]**.
+1. 다음에서 **[!UICONTROL 구성 브라우저]**, 선택 **[!UICONTROL 만들기]**.
 1. 다음에서 **[!UICONTROL 구성 만들기]** 대화 상자에서 폴더의 제목을 지정하고 활성화합니다. **[!UICONTROL 클라우드 구성]**.
-1. 누르기 **[!UICONTROL 만들기]** 을 클릭하여 클라우드 서비스 구성에 대해 활성화된 폴더를 만듭니다.
+1. 선택 **[!UICONTROL 만들기]** 을 클릭하여 클라우드 서비스 구성에 대해 활성화된 폴더를 만듭니다.
 
 ## RESTful 웹 서비스 구성 {#configure-restful-web-services}
 
@@ -127,11 +127,11 @@ RESTful 웹 서비스는 [Swagger 사양](https://swagger.io/specification/v2/) 
 
 ### Open API 사양 버전 2.0에 대한 RESTful 서비스 구성 {#configure-restful-services-open-api-2.0}
 
-1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Service > 데이터 소스]**. 클라우드 구성을 만들려는 폴더를 탭하여 선택합니다.
+1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Service > 데이터 소스]**. 클라우드 구성을 만들 폴더를 선택하려면 를 선택합니다.
 
    다음을 참조하십시오 [클라우드 서비스 구성을 위한 폴더 구성](configure-data-sources.md#cloud-folder) 클라우드 서비스 구성을 위한 폴더 만들기 및 구성에 대한 정보를 제공합니다.
 
-1. 누르기 **[!UICONTROL 만들기]** 을(를) 열려면 **[!UICONTROL 데이터 소스 구성 만들기 마법사]**. 구성의 이름 및 제목(선택 사항)을 지정하고 다음을 선택합니다. **[!UICONTROL RESTful 서비스]** 다음에서 **[!UICONTROL 서비스 유형]** 드롭다운에서 필요한 경우 구성에 대한 썸네일 이미지를 검색하여 선택한 다음 를 누릅니다 **[!UICONTROL 다음]**.
+1. 선택 **[!UICONTROL 만들기]** 을(를) 열려면 **[!UICONTROL 데이터 소스 구성 만들기 마법사]**. 구성의 이름 및 제목(선택 사항)을 지정하고 다음을 선택합니다. **[!UICONTROL RESTful 서비스]** 다음에서 **[!UICONTROL 서비스 유형]** 드롭다운에서 필요한 경우 구성에 대한 썸네일 이미지를 검색하여 선택하고 **[!UICONTROL 다음]**.
 1. RESTful 서비스에 대해 다음 세부 정보를 지정합니다.
 
    * 에서 URL 또는 파일 선택 [!UICONTROL Swagger 소스] 드롭다운을 선택한 다음 그에 따라 [!DNL Swagger URL] (으)로[!DNL  Swagger] 정의 파일 또는 업로드 [!DNL Swagger] 로컬 파일 시스템의 파일입니다.
@@ -148,15 +148,15 @@ RESTful 웹 서비스는 [Swagger 사양](https://swagger.io/specification/v2/) 
 
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
-1. 누르기 **[!UICONTROL 만들기]** RESTful 서비스에 대한 클라우드 구성을 만듭니다.
+1. 선택 **[!UICONTROL 만들기]** RESTful 서비스에 대한 클라우드 구성을 만듭니다.
 
 ### Open API 사양 버전 3.0에 대한 RESTful 서비스 구성 {#configure-restful-services-open-api-3.0}
 
-1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Service > 데이터 소스]**. 클라우드 구성을 만들려는 폴더를 탭하여 선택합니다.
+1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Service > 데이터 소스]**. 클라우드 구성을 만들 폴더를 선택하려면 를 선택합니다.
 
    다음을 참조하십시오 [클라우드 서비스 구성을 위한 폴더 구성](configure-data-sources.md#cloud-folder) 클라우드 서비스 구성을 위한 폴더 만들기 및 구성에 대한 정보를 제공합니다.
 
-1. 누르기 **[!UICONTROL 만들기]** 을(를) 열려면 **[!UICONTROL 데이터 소스 구성 만들기 마법사]**. 구성의 이름 및 제목(선택 사항)을 지정하고 다음을 선택합니다. **[!UICONTROL RESTful 서비스]** 다음에서 **[!UICONTROL 서비스 유형]** 드롭다운에서 필요한 경우 구성에 대한 썸네일 이미지를 검색하여 선택한 다음 를 누릅니다 **[!UICONTROL 다음]**.
+1. 선택 **[!UICONTROL 만들기]** 을(를) 열려면 **[!UICONTROL 데이터 소스 구성 만들기 마법사]**. 구성의 이름 및 제목(선택 사항)을 지정하고 다음을 선택합니다. **[!UICONTROL RESTful 서비스]** 다음에서 **[!UICONTROL 서비스 유형]** 드롭다운에서 필요한 경우 구성에 대한 썸네일 이미지를 검색하여 선택하고 **[!UICONTROL 다음]**.
 1. RESTful 서비스에 대해 다음 세부 정보를 지정합니다.
 
    * 에서 URL 또는 파일 선택 [!UICONTROL Swagger 소스] 드롭다운을 선택한 다음 그에 따라 [!DNL Swagger 3.0 URL] (으)로[!DNL  Swagger] 정의 파일 또는 업로드 [!DNL Swagger] 로컬 파일 시스템의 파일입니다.
@@ -167,7 +167,7 @@ RESTful 웹 서비스는 [Swagger 사양](https://swagger.io/specification/v2/) 
 
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
-1. 누르기 **[!UICONTROL 만들기]** RESTful 서비스에 대한 클라우드 구성을 만듭니다.
+1. 선택 **[!UICONTROL 만들기]** RESTful 서비스에 대한 클라우드 구성을 만듭니다.
 
 RESTful 서비스 Open API 사양 버전 3.0에서 지원되지 않는 일부 작업은 다음과 같습니다.
 * 콜백
@@ -208,7 +208,7 @@ RESTful 서비스 Open API 사양 버전 3.0에서 지원되지 않는 일부 �
 } 
 ```
 
-1. 누르기 **[!UICONTROL REST 데이터 소스에 대한 양식 데이터 모델 HTTP 클라이언트 구성]**.
+1. 선택 **[!UICONTROL REST 데이터 소스에 대한 양식 데이터 모델 HTTP 클라이언트 구성]**.
 
 1. 다음에서 [!UICONTROL REST 데이터 소스에 대한 양식 데이터 모델 HTTP 클라이언트 구성] 대화 상자:
 
@@ -228,11 +228,11 @@ SOAP 기반 웹 서비스는 다음을 사용하여 설명합니다. [WSDL(웹 �
 
 에서 SOAP 기반 웹 서비스를 구성하려면 [!DNL Experience Manager] as a Cloud Service으로 웹 서비스용 WSDL URL이 있는지 확인하고 다음을 수행합니다.
 
-1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Service > 데이터 소스]**. 클라우드 구성을 만들려는 폴더를 탭하여 선택합니다.
+1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Service > 데이터 소스]**. 클라우드 구성을 만들 폴더를 선택하려면 를 선택합니다.
 
    다음을 참조하십시오 [클라우드 서비스 구성을 위한 폴더 구성](configure-data-sources.md#cloud-folder) 클라우드 서비스 구성을 위한 폴더 만들기 및 구성에 대한 정보를 제공합니다.
 
-1. 누르기 **[!UICONTROL 만들기]** 을(를) 열려면 **[!UICONTROL 데이터 소스 구성 만들기 마법사]**. 구성의 이름 및 제목(선택 사항)을 지정하고 다음을 선택합니다. **[!UICONTROL SOAP 웹 서비스]** 다음에서 **[!UICONTROL 서비스 유형]** 드롭다운에서 필요한 경우 구성에 대한 썸네일 이미지를 검색하여 선택한 다음 를 누릅니다 **[!UICONTROL 다음]**.
+1. 선택 **[!UICONTROL 만들기]** 을(를) 열려면 **[!UICONTROL 데이터 소스 구성 만들기 마법사]**. 구성의 이름 및 제목(선택 사항)을 지정하고 다음을 선택합니다. **[!UICONTROL SOAP 웹 서비스]** 다음에서 **[!UICONTROL 서비스 유형]** 드롭다운에서 필요한 경우 구성에 대한 썸네일 이미지를 검색하여 선택하고 **[!UICONTROL 다음]**.
 1. SOAP 웹 서비스에 대해 다음을 지정하십시오.
 
    * 웹 서비스용 WSDL URL입니다.
@@ -244,7 +244,7 @@ SOAP 기반 웹 서비스는 다음을 사용하여 설명합니다. [WSDL(웹 �
 
      <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
-1. 누르기 **[!UICONTROL 만들기]** 를 클릭하여 SOAP 웹 서비스에 대한 클라우드 구성을 만듭니다.
+1. 선택 **[!UICONTROL 만들기]** 를 클릭하여 SOAP 웹 서비스에 대한 클라우드 구성을 만듭니다.
 
 ### SOAP 웹 서비스 WSDL에서 가져오기 구문 사용 {#enable-import-statements}
 
@@ -269,11 +269,11 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. 에서 OData 서비�
 > 양식 데이터 모델 지원 [OData 버전 4](https://www.odata.org/documentation/).
 >를 구성하는 단계별 안내서입니다. [!DNL Microsoft®® Dynamics 365], 온라인 또는 온프레미스에서 다음을 참조하십시오. [[!DNL Microsoft® Dynamics] OData 구성](ms-dynamics-odata-configuration.md).
 
-1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Service > 데이터 소스]**. 클라우드 구성을 만들려는 폴더를 탭하여 선택합니다.
+1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Service > 데이터 소스]**. 클라우드 구성을 만들 폴더를 선택하려면 를 선택합니다.
 
    다음을 참조하십시오 [클라우드 서비스 구성을 위한 폴더 구성](#cloud-folder) 클라우드 서비스 구성을 위한 폴더 만들기 및 구성에 대한 정보를 제공합니다.
 
-1. 누르기 **[!UICONTROL 만들기]** 을(를) 열려면 **[!UICONTROL 데이터 소스 구성 만들기 마법사]**. 구성의 이름 및 제목(선택 사항)을 지정하고 다음을 선택합니다. **[!UICONTROL OData 서비스]** 다음에서 **[!UICONTROL 서비스 유형]** 드롭다운에서 필요한 경우 구성에 대한 썸네일 이미지를 검색하여 선택한 다음 를 누릅니다 **[!UICONTROL 다음]**.
+1. 선택 **[!UICONTROL 만들기]** 을(를) 열려면 **[!UICONTROL 데이터 소스 구성 만들기 마법사]**. 구성의 이름 및 제목(선택 사항)을 지정하고 다음을 선택합니다. **[!UICONTROL OData 서비스]** 다음에서 **[!UICONTROL 서비스 유형]** 드롭다운에서 필요한 경우 구성에 대한 썸네일 이미지를 검색하여 선택하고 **[!UICONTROL 다음]**.
 1. OData 서비스에 대해 다음 세부 정보를 지정합니다.
 
    * 구성할 OData 서비스의 서비스 루트 URL입니다.
@@ -285,7 +285,7 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. 에서 OData 서비�
    >
    연결할 OAuth 2.0 인증 유형 선택 [!DNL Microsoft®® Dynamics] 서비스 루트로 OData 끝점을 사용하는 서비스입니다.
 
-1. 누르기 **[!UICONTROL 만들기]** 를 클릭하여 OData 서비스에 대한 클라우드 구성을 만듭니다.
+1. 선택 **[!UICONTROL 만들기]** 를 클릭하여 OData 서비스에 대한 클라우드 구성을 만듭니다.
 
 <!--
 ## Configure Microsoft® SharePoint List {#config-sharepoint-list}
@@ -309,7 +309,7 @@ To save data in a tabular form use, Microsoft® SharePoint List. To configure a 
 
 1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears.
 1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
-1. Tap **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
+1. Select **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
 
 -->
 
@@ -319,11 +319,11 @@ When you enable mutual authentication for form data model, both the data source 
 
 1. Upload the private key (certificate) to [!DNL Experience Manager Forms] server. To upload the private key:
    1. Log in to your [!DNL Experience Manager Forms] server as an administrator.
-   1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**. Select the `fd-cloudservice` user and tap **[!UICONTROL Properties]**.
-   1. Open the **[!UICONTROL Keystore]** tab, expand the **[!UICONTROL Add Private Key from KeyStore file]** option, upload the KeyStore File, specify the aliases, passwords, and tap **[!UICONTROL Submit]**. The Certificate is uploaded.  The private key alias is mentioned in the certificate and set while creating the certificate.
+   1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**. Select the `fd-cloudservice` user and select **[!UICONTROL Properties]**.
+   1. Open the **[!UICONTROL Keystore]** tab, expand the **[!UICONTROL Add Private Key from KeyStore file]** option, upload the KeyStore File, specify the aliases, passwords, and select **[!UICONTROL Submit]**. The Certificate is uploaded.  The private key alias is mentioned in the certificate and set while creating the certificate.
 1. Upload trust certificate to Global Trust Store. To upload the certificate:
    1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Trust Store]**.
-   1. Expand the **[!UICONTROL Add Certificate from CER file]** option, tap **[!UICONTROL Select Certificate File]**, upload the certificate, and tap **[!UICONTROL Submit]**.
+   1. Expand the **[!UICONTROL Add Certificate from CER file]** option, select **[!UICONTROL Select Certificate File]**, upload the certificate, and select **[!UICONTROL Submit]**.
 1. Configure [SOAP](#configure-soap-web-services) or [RESTful](#configure-restful-web-services) web services as the data source and select **[!UICONTROL Mutual authentication]** as the authentication type. If you configure multiple self-signed certificates for `fd-cloudservice` user, specify the Key Alias name for the certificate.-->
 
 ## 다음 단계 {#next-steps}

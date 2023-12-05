@@ -2,10 +2,10 @@
 title: AEM에서의 콘텐츠 조각 모델 만들기에 대해 알아보기
 description: 콘텐츠 조각 모델을 사용하여 Headless CMS용 콘텐츠를 모델링하는 개념 및 메커니즘에 대해 알아봅니다.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 96%
 <!--
 ## Enabling Content Fragment Models {#enabling-content-fragment-models}
 
-At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools -> General -> Configuration Browser. You can either select to configure the global entry, or create a configuration. For example:
+At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools > General > Configuration Browser. You can either select to configure the global entry, or create a configuration. For example:
 
 ![Define configuration](/help/sites-cloud/administering/content-fragments/assets/cfm-conf-01.png)
 
@@ -39,7 +39,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## 콘텐츠 조각 모델 만들기 {#creating-content-fragment-models}
 
-그런 다음 콘텐츠 조각 모델을 만들고 구조를 정의할 수 있습니다. **도구** -> **일반** -> **콘텐츠 조각 모델**&#x200B;에서 수행할 수 있습니다.
+그런 다음 콘텐츠 조각 모델을 만들고 구조를 정의할 수 있습니다. 이 작업은 아래에서 수행할 수 있습니다. **도구** > **일반** > **컨텐츠 조각 모델**.
 
 ![도구의 콘텐츠 조각 모델](assets/cfm-tools.png)
 
@@ -53,7 +53,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## 콘텐츠 조각 모델 정의 {#defining-content-fragment-models}
 
-새 모델을 처음 열면 왼쪽에 큰 빈 공간이 있고 긴 목록이 표시됩니다. **데이터 유형** 오른쪽:
+새 모델을 처음 열면 왼쪽에는 큰 공백이, 오른쪽에는 긴 **데이터 유형** 목록이 표시됩니다.
 
 ![빈 모델](/help/sites-cloud/administering/content-fragments/assets/cfm-models-03.png)
 

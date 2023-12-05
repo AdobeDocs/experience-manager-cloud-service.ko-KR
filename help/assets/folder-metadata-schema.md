@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 12%
+source-wordcount: '1059'
+ht-degree: 9%
 
 ---
 
 # 폴더 메타데이터 스키마 {#folder-metadata-schema}
 
-[!DNL Adobe Experience Manager Assets]을 사용하면 폴더 속성 페이지에 표시되는 레이아웃 및 메타데이터를 정의하는 자산 폴더에 대한 메타데이터 스키마를 생성할 수 있습니다. 
+[!DNL Adobe Experience Manager Assets] 폴더 속성 페이지에 표시되는 레이아웃 및 메타데이터를 정의하는 자산 폴더에 대한 메타데이터 스키마를 생성할 수 있습니다.
 
 ## 폴더 메타데이터 스키마 양식 추가 {#add-a-folder-metadata-schema-form}
 
@@ -90,7 +90,7 @@ ht-degree: 12%
   </tr>
   <tr>
    <td><p>표준 태그</p> </td>
-   <td><p> 태그 추가. </p> </td>
+   <td><p> 태그를 추가합니다. </p> </td>
   </tr>
   <tr>
    <td><p>숨김 필드</p> </td>

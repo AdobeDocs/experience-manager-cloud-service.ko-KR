@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 5%
+source-wordcount: '746'
+ht-degree: 3%
 
 ---
 
@@ -31,18 +31,18 @@ ht-degree: 5%
 
 적응형 양식에 대한 비동기 제출을 구성하려면 다음 작업을 수행하십시오.
 
-1. 적응형 양식 작성 모드에서 양식 컨테이너 개체를 선택하고 을 누릅니다 ![cmppr1](assets/configure-icon.svg) 속성을 엽니다.
+1. 적응형 양식 작성 모드에서 양식 컨테이너 개체를 선택하고 ![cmppr1](assets/configure-icon.svg) 속성을 엽니다.
 1. 다음에서 **[!UICONTROL 제출]** 속성 섹션, 활성화 **[!UICONTROL 비동기 제출 사용]**.
 1. 다음에서 **[!UICONTROL 제출 시]** 섹션에서 다음 옵션 중 하나를 선택하여 양식 제출에 성공합니다.
 
    * **[!UICONTROL URL로 리디렉션]**: 양식 제출 시 지정된 URL 또는 페이지로 리디렉션합니다. URL을 지정하거나 **[!UICONTROL 리디렉션 URL/경로]** 필드.
    * **[!UICONTROL 메시지 표시]**: 양식 제출 시 메시지를 표시합니다. 아래 텍스트 필드에 메시지를 작성할 수 있습니다. **[!UICONTROL 메시지 표시]** 옵션을 선택합니다. 텍스트 필드는 서식 있는 텍스트 서식을 지원합니다.
 
-1. 누르기 ![check-button1](assets/save_icon.svg) 속성을 저장합니다.
+1. 선택 ![check-button1](assets/save_icon.svg) 속성을 저장합니다.
 
 ## 비동기 제출 작동 방식 {#how-asynchronous-submission-works}
 
-[!DNL Experience Manager Forms] 는 양식 제출을 위한 기본 성공 및 오류 핸들러를 제공합니다. 핸들러는 서버 응답을 기반으로 실행되는 클라이언트측 함수입니다. 양식을 제출하면 유효성 검사를 위해 데이터가 서버로 전송되며, 이 서버는 제출에 대한 성공 또는 오류 이벤트에 대한 정보와 함께 응답을 클라이언트에 반환합니다. 정보가 매개변수로서 관련 핸들러에 전달되면 함수를 실행할 수 있습니다.
+[!DNL Experience Manager Forms] 는 양식 제출을 위한 기본 성공 및 오류 핸들러를 제공합니다. 핸들러는 서버 응답을 기반으로 실행되는 클라이언트측 함수입니다. 양식을 제출하면 유효성 검사를 위해 데이터가 서버로 전송되며, 이 서버는 제출에 대한 성공 또는 오류 이벤트에 대한 정보와 함께 응답을 클라이언트에 반환합니다. 정보는 관련 핸들러에 매개 변수로 전달되어 함수를 실행합니다.
 
 또한 양식 작성자와 개발자는 양식 수준에서 규칙을 작성하여 기본 핸들러를 재정의할 수 있습니다. 자세한 내용은 [규칙을 사용하여 기본 처리기 재정의](#custom).
 
@@ -108,11 +108,11 @@ ht-degree: 5%
 
 성공 및 오류 이벤트를 처리하는 규칙을 작성하려면 다음 단계를 수행하십시오.
 
-1. 작성 모드에서 적응형 양식을 열고 양식 개체를 선택한 다음 을 누릅니다 ![edit-rules1](assets/edit-rules-icon.svg) 규칙 편집기를 엽니다.
-1. 선택 **[!UICONTROL 양식]** 양식 개체 트리에서 다음을 누릅니다 **[!UICONTROL 만들기]**.
+1. 작성 모드에서 적응형 양식을 열고 양식 개체를 선택한 다음 를 선택합니다 ![edit-rules1](assets/edit-rules-icon.svg) 규칙 편집기를 엽니다.
+1. 선택 **[!UICONTROL 양식]** 양식 개체 트리에서 을(를) 선택하고 **[!UICONTROL 만들기]**.
 1. 선택 **[!UICONTROL 제출 완료]** 또는 **[!UICONTROL 제출 실패]** 다음에서 **[!UICONTROL 상태 선택]** 드롭다운 목록입니다.
 1. 정의 **[!UICONTROL 그러면]** 선택한 상태에 대한 작업입니다. 예를 들어 을 선택합니다. **[!UICONTROL 다음으로 이동]** 그런 다음 URL을 입력하거나 붙여넣습니다. 를 사용하여 모든 함수를 드래그할 수도 있습니다. **[!UICONTROL 함수]** 탭으로 규칙을 복사합니다.
 
    ![제출 핸들러 성공](assets/form-submission-handler.png)
 
-1. 누르기 **[!UICONTROL 완료]** 을 눌러 규칙을 저장합니다.
+1. 선택 **[!UICONTROL 완료]** 을 눌러 규칙을 저장합니다.

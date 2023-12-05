@@ -2,10 +2,10 @@
 title: 워크플로에 참여
 description: 워크플로는 일반적으로 페이지나 자산에 대해 사람이 활동을 수행해야 하는 단계를 포함합니다.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1507'
-ht-degree: 79%
+ht-degree: 78%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 79%
   ![받은 편지함의 알림](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
 * 페이지 편집기를 사용하는 경우, 상태 표시줄에 다음 내용이 표시됩니다.
-   * 페이지에 적용되는 워크플로의 이름: 예를 들어 활성화 요청.
+   * 페이지에 적용되는 워크플로의 이름(예: 활성화 요청).
    * 워크플로의 현재 단계에 대해 현재 사용자가 사용할 수 있는 모든 작업: 예를 들어 완료, 위임, 세부 사항 보기.
    * 페이지가 적용되는 워크플로의 수. 다음과 같은 작업을 수행할 수 있습니다.
       * 왼쪽/오른쪽 화살표를 사용하여 다양한 워크플로의 상태 정보를 탐색할 수 있습니다.

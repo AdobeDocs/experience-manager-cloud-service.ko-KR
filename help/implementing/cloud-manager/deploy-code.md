@@ -2,10 +2,10 @@
 title: 코드 배포
 description: AEM as a Cloud Service에서 Cloud Manager 파이프라인을 사용하여 코드를 배포하는 방법에 대해 알아봅니다.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 96%
+source-wordcount: '1190'
+ht-degree: 94%
 
 ---
 
@@ -151,7 +151,7 @@ _전체 스택 코드 파이프라인 유형만 코드 스캔, 기능 테스트,
 
 ### 재실행 API {#reexecute-API}
 
-UI에서 사용할 수 있으며, [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution)를 사용하여 재실행을 트리거하고, 재실행으로 트리거된 실행을 식별할 수도 있습니다.
+UI에서 사용할 수 있을 뿐만 아니라 [cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) 재실행을 트리거하고 재실행으로 트리거된 실행을 식별합니다.
 
 #### 재실행 트리거 {#reexecute-deployment-api}
 

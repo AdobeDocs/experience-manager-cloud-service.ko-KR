@@ -1,17 +1,17 @@
 ---
-title: AEM - Commerce Integration Framework를 사용하여 Commerce 통합 FAQ
-description: AEM - Commerce Integration Framework를 사용하여 Commerce 통합 FAQ
+title: AEM - Commerce integration framework FAQ를 사용한 상거래 통합
+description: AEM - Commerce integration framework FAQ를 사용한 상거래 통합
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '963'
 ht-degree: 0%
 
 ---
 
-# AEM - Commerce Integration Framework를 사용하여 Commerce 통합 FAQ
+# AEM - Commerce integration framework FAQ를 사용한 상거래 통합
 
-## 1. CIF GraphQL은 상거래에만 사용됩니까? 또는 AEM JCR에서 작성된 콘텐츠를 쿼리하는 데 사용할 수 있습니까?
+## 1. CIF GraphQL은 상업용으로만 사용됩니까? 또는 AEM JCR에서 작성된 콘텐츠를 쿼리하는 데 사용할 수 있습니까?
 
 Adobe은 모든 상거래 관련 데이터를 위한 공식 상거래 API로 Adobe Commerce의 GraphQL API를 채택했습니다. 따라서 AEM은 GraphQL을 사용하여 I/O Runtime을 통해 Adobe Commerce 및 상거래 엔진과 상거래 데이터를 교환합니다. 이 GraphQL API는 콘텐츠 조각에 액세스하기 위해 AEM GraphQL API와 독립적입니다.
 
@@ -23,7 +23,7 @@ Adobe은 모든 상거래 관련 데이터를 위한 공식 상거래 API로 Ado
 
 ## 3. 커머스 솔루션이 어디에 배포되었는지가 중요합니까? (온프레미스 또는 클라우드)
 
-아니요. 상거래 솔루션이 배포되는 위치는 중요하지 않습니다. CIF와 AEM Storefront는 배포 모델에 관계없이 작동합니다. 그러나 솔루션이 권장 E2E 참조 아키텍처를 사용하여 배포된 경우 일반적인 엔터프라이즈 고객 프로필을 나타내는 성능 KPI에 대해 E2E 테스트를 실행할 수 있습니다. 이 방법은 벤치마크로 사용할 수 있는 추가 정보를 제공합니다.
+아니요. 상거래 솔루션이 배포되는 위치는 중요하지 않습니다. CIF 및 AEM storefront는 배포 모델에 관계없이 작동합니다. 그러나 솔루션이 권장 E2E 참조 아키텍처를 사용하여 배포된 경우 일반적인 엔터프라이즈 고객 프로필을 나타내는 성능 KPI에 대해 E2E 테스트를 실행할 수 있습니다. 이 방법은 벤치마크로 사용할 수 있는 추가 정보를 제공합니다.
 
 ## 4. AEM에서 카탈로그 페이지 또는 제품 페이지는 어떻게 생성됩니까? AEM에서는 어떻게 지속됩니까?
 
@@ -33,7 +33,7 @@ Adobe은 모든 상거래 관련 데이터를 위한 공식 상거래 API로 Ado
 
 AEM Cloud Service과 함께 사용되는 CIF 추가 기능을 사용하면 데이터를 상거래 솔루션에서 AEM on-demand로 전달할 수 있습니다. 따라서 상거래 솔루션에 업데이트가 있는 경우 실시간 푸시 또는 일괄 처리 프로세스가 아닙니다.
 
-## 6. CIF가 포함된 AEM은 어떤 카탈로그 크기를 지원합니까?
+## 6. AEM with CIF은 어떤 카탈로그 크기를 지원합니까?
 
 이는 고려해야 하는 몇 가지 추가 측면에 따라 다릅니다. 카탈로그 데이터 및 페이지의 캐시 비율은 얼마입니까? 피크 시간 동안 몇 개의 동시 요청을 예상합니까? 상거래 솔루션의 API는 얼마나 확장 가능합니까?
 
@@ -53,9 +53,9 @@ Adobe은 Dispatcher에 캐시된 페이지에 대한 TTL 기반 캐시 무효화
 
 제품 검색 참조 구현이 제공되지만 콘텐츠가 포함된 통합 검색은 제공되지 않습니다. 이 기능은 고객별로 다르며 프로젝트별 수준에서 더 잘 해결됩니다.
 
-## 11. Search는 AEM 및 commerce에서 CIF를 사용하여 어떻게 작동합니까?
+## 11. CIF을 사용하여 AEM 및 commerce에서 검색은 어떻게 작동합니까?
 
-CIF는 검색 창 및 검색 결과 구성 요소를 제공합니다. 검색 창 구성 요소는 검색어와 함께 GraphQL 요청을 상거래 솔루션으로 보낸 다음, 제품 이름, 가격, SLUG 등이 포함된 제품 목록을 반환합니다. 그런 다음 검색 결과 구성 요소는 AEM에서 만든 검색 결과 페이지의 갤러리 보기에 검색 결과를 표시합니다. 검색은 기본 전체 텍스트 검색을 지원합니다. SLUG/url 키를 사용하여 PDP에 대한 참조를 빌드합니다.
+CIF은 검색 창 및 검색 결과 구성 요소를 제공합니다. 검색 창 구성 요소는 검색어와 함께 GraphQL 요청을 상거래 솔루션으로 보낸 다음, 제품 이름, 가격, SLUG 등이 포함된 제품 목록을 반환합니다. 그런 다음 검색 결과 구성 요소는 AEM에서 만든 검색 결과 페이지의 갤러리 보기에 검색 결과를 표시합니다. 검색은 기본 전체 텍스트 검색을 지원합니다. SLUG/url 키를 사용하여 PDP에 대한 참조를 빌드합니다.
 
 ## 12. 제품 데이터를 MSM이나 번역에서 어떻게 사용할 수 있습니까?
 
@@ -65,7 +65,7 @@ CIF는 검색 창 및 검색 결과 구성 요소를 제공합니다. 검색 창
 
 Adobe은 AEM에서 마케팅 관련 데이터 및 콘텐츠를 관리할 것을 권장합니다. 콘텐츠 조각을 사용하여 상거래 솔루션의 제품 데이터를 추가 속성으로 장식하거나 비정형 콘텐츠에 대한 경험 조각을 만들어 제품과 연결할 수 있습니다.
 
-## 14. 전체 프레젠테이션 레이어에서 AEM을 사용할 때 PCI 규정 준수를 보장하려면 어떻게 해야 합니까?
+## 14. 전체 프레젠테이션 레이어에서 AEM을 사용할 때 PCI 규정 준수를 어떻게 보장할 수 있습니까?
 
 Adobe은 추상화된 결제 방법을 사용할 것을 권장합니다. 이렇게 하면 브라우저 클라이언트가 결제 게이트웨이 공급자와 직접 통신하므로 Adobe 또는 상거래 솔루션이 카드 소지자 데이터를 보관하거나 전달하지 못합니다. 이 방식에서는 레벨 3 PCI 규정 준수만 필요합니다. 그러나 직원이 시스템 및 데이터와 상호 작용하는 방식과 같이 완전한 PCI 준수로 간주할 추가 사항이 있습니다. Adobe Commerce PCI 규정 준수에 대한 자세한 내용은 [PCI 규정 준수 요구 사항](https://business.adobe.com/products/magento/pci-compliance.html).
 

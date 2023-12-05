@@ -2,10 +2,10 @@
 title: 적응형 양식에 각주를 추가하는 방법
 description: 적응형 양식의 각주에 대해 리치 텍스트 편집기(RTE)를 사용하십시오.
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 13%
+source-wordcount: '429'
+ht-degree: 12%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 13%
 적응형 Forms에 각주를 추가하려면 다음 단계를 수행하십시오.
 1. 에서 적응형 양식 열기 **편집** 모드.
 1. 구성 요소 브라우저에서 **[!UICONTROL 텍스트]** 구성 요소를 적응형 양식에 추가합니다.
-1. 다음 항목 선택 **[!UICONTROL 텍스트]** 추가한 구성 요소 및 탭 ![cmppr](assets/configure-icon.svg) 속성을 편집합니다.
+1. 다음 항목 선택 **[!UICONTROL 텍스트]** 추가하고 선택한 구성 요소 ![cmppr](assets/configure-icon.svg) 속성을 편집합니다.
 
    ![적응형 Forms 각주](/help/forms/assets/footnote_rte.png)
 

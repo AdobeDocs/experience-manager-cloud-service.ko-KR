@@ -2,10 +2,10 @@
 title: 렌더링용 구성 요소를 구성하는 콘텐츠 조각
 description: 렌더링용 구성 요소를 구성하는 콘텐츠 조각
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 6%
+source-wordcount: '519'
+ht-degree: 5%
 
 ---
 
@@ -86,7 +86,7 @@ OSGi 구성은 다음과 같습니다.
    <td>렌더링할 요소의 이름이 포함된 속성의 이름입니다. 예:<code>elementName</code></td>
   </tr>
   <tr>
-   <td><strong>변화 속성</strong><br /> </td>
+   <td><strong>변형 속성</strong><br /> </td>
    <td><code>dam.cfm.component.variationProp</code></td>
    <td>렌더링할 변형의 이름을 포함하는 속성의 이름입니다. 예:<code>variationName</code></td>
   </tr>

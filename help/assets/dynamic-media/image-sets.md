@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2134'
-ht-degree: 6%
+source-wordcount: '2145'
+ht-degree: 3%
 
 ---
 
@@ -35,7 +35,7 @@ Image Sets are designated by a banner with the word `IMAGESET`. 또한 이미지
 | 제한 유형 | 모범 사례 | 제한 적용됨 |
 | --- | --- | --- |
 | 세트당 중복 에셋 수 | 중복 항목 없음 | 20 |
-| 세트당 최대 이미지 수 | 세트당 5-10개 이미지 | 1000 |
+| 세트당 최대 이미지 수 | 세트당 5-10개 이미지 | 1000년 |
 
 참조: [Dynamic Media 제한 사항](/help/assets/dynamic-media/limitations.md).
 
@@ -43,13 +43,13 @@ Image Sets are designated by a banner with the word `IMAGESET`. 또한 이미지
 
 빠르게 시작하고 실행하려면:
 
-1. 옵션. [일괄처리 집합 사전 설정 만들기](/help/assets/dynamic-media/batch-set-presets-dm.md) 회전 집합 이미지가 업로드되는 새 폴더에 적용합니다.
+1. 선택 사항입니다. [일괄처리 집합 사전 설정 만들기](/help/assets/dynamic-media/batch-set-presets-dm.md) 회전 집합 이미지가 업로드되는 새 폴더에 적용합니다.
 
    일괄처리 집합 사전 설정을 사용하면 이미지 집합 생성을 자동화할 수 있습니다.
 
    >[!IMPORTANT]
    >
-   >Batch sets are created by the IPS (Image Production System) as part of asset ingestion.
+   >배치 세트는 IPS(이미지 프로덕션 시스템)가 자산 수집의 일부로 만듭니다.
 
 1. [여러 보기를 위한 기본 소스 이미지 업로드](#uploading-assets-in-image-sets).
 
@@ -128,7 +128,7 @@ Image Sets are designated by a banner with the word `IMAGESET`. 또한 이미지
 >[!NOTE]
 >
 >다음을 통해 이미지 세트를 자동으로 만들 수도 있습니다. [일괄처리 집합 사전 설정](/help/assets/dynamic-media/batch-set-presets-dm.md).
->**Important:** Batch sets are created by the IPS (Image Production System) as part of asset ingestion.
+>**중요 사항:** 배치 세트는 IPS(이미지 프로덕션 시스템)가 자산 수집의 일부로 만듭니다.
 
 세트에 자산을 추가하면 영숫자 순서로 자산이 자동으로 추가됩니다. 자산이 추가된 후 수동으로 순서를 변경하거나 정렬할 수 있습니다.
 
@@ -148,9 +148,9 @@ Image Sets are designated by a banner with the word `IMAGESET`. 또한 이미지
 **이미지 집합을 생성하려면 다음을 수행합니다.**
 
 1. Adobe Experience Manager에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스합니다.
-1. 누르기 **[!UICONTROL 탐색]** > **[!UICONTROL 에셋]**. 이미지 집합을 만들려는 위치로 이동한 다음, **[!UICONTROL 만들기]** > **[!UICONTROL 이미지 집합]** 이미지 세트 편집기 페이지를 엽니다.
+1. 선택 **[!UICONTROL 탐색]** > **[!UICONTROL 에셋]**. 이미지 집합을 만들려는 위치로 이동한 다음, **[!UICONTROL 만들기]** > **[!UICONTROL 이미지 집합]** 이미지 세트 편집기 페이지를 엽니다.
 
-   You can also create the set from inside a folder that contains your assets.
+   에셋이 포함된 폴더 내에서 세트를 만들 수도 있습니다.
 
    ![6_5_imagesets-createpulldown](assets/6_5_imagesets-createpulldown.png)
 
@@ -164,7 +164,7 @@ Image Sets are designated by a banner with the word `IMAGESET`. 또한 이미지
 
    * 이미지 세트 편집기 페이지의 중간 부분에서 다음을 선택합니다 **[!UICONTROL 자산 선택기를 열려면 탭하십시오.]**.
 
-   이미지 세트에 포함할 자산을 탭하여 선택합니다. 선택한 에셋에는 확인 표시 아이콘이 있습니다. 완료되면 페이지의 오른쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 선택]**.
+   이미지 세트에 포함할 자산을 선택하려면 를 선택합니다. 선택한 에셋에는 확인 표시 아이콘이 있습니다. 완료되면 페이지의 오른쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 선택]**.
 
    자산 선택기를 사용하여 키워드를 입력하고 를 선택하여 자산을 검색할 수 있습니다 **[!UICONTROL 반환]**. You can also apply filters to refine your search results. You can filter by path, collection, file type, and tag. 필터를 선택한 다음 **[!UICONTROL 필터]** 아이콘을 클릭합니다. 보기 아이콘을 선택하고 을 선택하여 보기 변경 **[!UICONTROL 열 보기]**, **[!UICONTROL 카드 보기]**, 또는 **[!UICONTROL 목록 보기]**.
 
@@ -190,7 +190,7 @@ Image Sets are designated by a banner with the word `IMAGESET`. 또한 이미지
    >
    >이미지 세트를 만들 때 이미지 세트 썸네일을 변경할 수 있습니다. 또는 이미지 세트의 에셋에 따라 Experience Manager이 썸네일을 자동으로 선택하도록 할 수 있습니다. 썸네일을 선택하려면 **[!UICONTROL 썸네일 변경]** 이미지 세트 편집기 페이지의 제목 필드 위에 있습니다. 그런 다음 이미지를 선택합니다(다른 폴더로 이동하여 이미지를 찾을 수도 있음). 썸네일을 선택한 경우 Experience Manager이 이미지 세트에서 썸네일을 생성하도록 결정한 다음 을 선택합니다. **[!UICONTROL 다음으로 전환]** **[!UICONTROL 자동 썸네일]**.
 
-1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 이미지 세트를 만든 폴더에 이미지 세트가 나타납니다.
+1. 클릭 **[!UICONTROL 저장]**. 이미지 세트를 만든 폴더에 이미지 세트가 나타납니다.
 
 ## 이미지 집합 보기 {#viewing-image-sets}
 
@@ -236,7 +236,7 @@ Image Sets are designated by a banner with the word `IMAGESET`. 또한 이미지
 
    * 이미지 세트 자산을 마우스로 가리킨 다음, **[!UICONTROL 편집]** (연필 아이콘).
    * 이미지 세트 자산을 마우스로 가리킨 다음, **[!UICONTROL 선택]** (확인 표시 아이콘) 을 선택한 다음 을 선택합니다 **[!UICONTROL 편집]** 을 클릭합니다.
-   * 이미지 세트 자산을 탭한 다음 을 선택합니다. **[!UICONTROL 편집]** (연필 아이콘) 을 클릭하여 열 수 있습니다.
+   * 이미지 세트 에셋에서 을 선택한 다음 을 선택합니다. **[!UICONTROL 편집]** (연필 아이콘) 을 클릭하여 열 수 있습니다.
 
 1. 이미지 세트의 이미지를 편집하려면 다음 중 하나를 수행하십시오.
 
@@ -255,7 +255,7 @@ Image Sets are designated by a banner with the word `IMAGESET`. 또한 이미지
    >
    >이미지 세트에서 이미지를 편집할 수 있습니다. 세트로 이동하고 선택 **[!UICONTROL 구성원 설정]** 왼쪽 레일에서. 편집 창을 열려면 에셋에서 연필 아이콘을 선택합니다.
 
-1. 누르기 **[!UICONTROL 저장]** 편집을 마치면
+1. 선택 **[!UICONTROL 저장]** 편집을 마치면
 
 ## 이미지 집합 미리 보기 {#previewing-image-sets}
 

@@ -2,10 +2,10 @@
 title: 페이지 템플릿
 description: 페이지 템플릿은 새 페이지의 기반으로 사용되는 페이지를 만들 때 사용됩니다
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3278'
-ht-degree: 8%
+source-wordcount: '3267'
+ht-degree: 4%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 8%
 
    * 콘텐츠 정책은 구성 요소의 디자인 속성을 정의합니다.
 
-      * 예: 사용 가능한 구성 요소 또는 최소/최대 크기.
+      * 예를 들어 사용 가능한 구성 요소 또는 최소/최대 차원이 있습니다.
 
    * 이러한 속성은 템플릿(및 템플릿으로 만든 페이지)에 적용될 수 있습니다.
 
@@ -74,7 +74,7 @@ ht-degree: 8%
 
    정책에 대한 기술적인 세부 정보는 다음을 참조하십시오. [컨텐츠 정책](#content-policies) 이 문서에서.
 
-   **초기 콘텐츠**
+   **초기 컨텐츠**
 
    * 초기 콘텐츠 는 템플릿을 기반으로 페이지를 처음 만들 때 표시되는 콘텐츠를 정의합니다.
    * 그런 다음 페이지 작성자는 초기 콘텐츠를 편집할 수 있습니다.
@@ -86,7 +86,7 @@ ht-degree: 8%
    **레이아웃**
 
    * 디바이스 범위에 대한 템플릿 레이아웃을 정의할 수 있습니다.
-   * 템플릿에 대한 반응형 레이아웃은 페이지 작성의 경우와 마찬가지로 작동합니다.
+   * 템플릿에 대한 응답형 레이아웃은 페이지 작성의 경우와 마찬가지로 작동합니다.
 
    템플릿 작성자가 템플릿 레이아웃을 정의하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/features/templates.md#editing-a-template-layout-template-author).
 
@@ -141,7 +141,7 @@ ht-degree: 8%
 >
 >폴더를 중첩할 수 있음에도 불구하고 **템플릿** 콘솔은 평면 구조로 제공됩니다.
 
-표준 AEM 인스턴스에서 `global` 폴더가 템플릿 콘솔에 이미 있습니다. 이 폴더는 기본 템플릿을 보유하며, 현재 폴더에 정책 및/또는 템플릿 유형을 찾을 수 없는 경우 폴백으로 작동합니다. 이 폴더에 기본 템플릿을 추가하거나 폴더를 만들 수 있습니다(권장).
+표준 AEM 인스턴스에서 `global` 폴더가 템플릿 콘솔에 이미 있습니다. 이 폴더는 기본 템플릿을 보유하며, 현재 폴더에 정책 및/또는 템플릿 유형이 없는 경우 폴백으로 작동합니다. 이 폴더에 기본 템플릿을 추가하거나 폴더를 만들 수 있습니다(권장).
 
 >[!NOTE]
 >
@@ -207,7 +207,7 @@ ht-degree: 8%
    * **제목**: 구성 폴더의 제목 제공
    * **편집 가능한 템플릿**: 이 폴더 내에서 편집 가능한 템플릿을 허용하려면 선택
 
-1. **만들기**&#x200B;를 클릭합니다
+1. 클릭 **만들기**
 
 >[!NOTE]
 >
@@ -364,7 +364,7 @@ GitHub에서 사용 가능한 편집 가능한 예제 템플릿을 기준으로 
 
 GITHUB의 코드
 
-이 페이지의 코드는 GitHub에서 확인할 수 있습니다
+GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * [GitHub에서 aem-sites-example-custom-template-type 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type)
 * 다음으로 프로젝트 다운로드 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type/archive/master.zip)
@@ -425,7 +425,7 @@ GITHUB의 코드
 
 * **이름**: `jcr:title`
 * **이름**: `status`
-   * ``**유형**: `String`
+   * &quot;**유형**: `String`
    * **값**: `draft`, `enabled` 또는 `disabled`
 
 ### 구조 {#structure}
@@ -459,7 +459,7 @@ GITHUB의 코드
 
 ### 컨텐츠 정책 {#content-policies}
 
-콘텐츠 정책은 구성 요소의 디자인 속성을 정의합니다. 예: 사용 가능한 구성 요소 또는 최소/최대 크기. 이러한 속성은 템플릿(및 템플릿으로 만든 페이지)에 적용될 수 있습니다. 템플릿 편집기에서 컨텐츠 정책을 만들고 선택할 수 있습니다.
+콘텐츠 정책은 구성 요소의 디자인 속성을 정의합니다. 예: 사용 가능한 구성 요소 또는 최소/최대 크기. 템플릿과 템플릿으로 만든 페이지에 적용할 수 있습니다. 템플릿 편집기에서 컨텐츠 정책을 만들고 선택할 수 있습니다.
 
 * 속성 `cq:policy`, `root` 노드
   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
@@ -593,7 +593,7 @@ GITHUB의 코드
 
 #### 하위 페이지에 사용되는 템플릿 제한 {#limiting-templates-used-in-child-pages}
 
-주어진 페이지에서 하위 페이지를 만드는 데 사용할 수 있는 템플릿을 제한하려면 `cq:allowedTemplates` 다음의 속성 `jcr:content` 하위 페이지로 허용할 템플릿 목록을 지정할 페이지의 노드입니다. 예를 들어, 목록의 각 값은 허용된 하위 페이지에 대한 템플릿의 절대 경로여야 합니다 `/apps/wknd/templates/page-content`.
+주어진 페이지에서 하위 페이지를 만드는 데 사용할 수 있는 템플릿을 제한하려면 `cq:allowedTemplates` 다음의 속성 `jcr:content` 하위 페이지로 허용할 템플릿 목록을 지정할 페이지의 노드입니다. 목록의 각 값은 허용된 하위 페이지에 대한 템플릿의 절대 경로여야 합니다(예: ). `/apps/wknd/templates/page-content`.
 
 다음을 사용할 수 있습니다. `cq:allowedTemplates` 템플릿의 속성  `jcr:content` 이 템플릿을 사용하는 작성된 모든 페이지에 이 구성을 적용할 노드
 

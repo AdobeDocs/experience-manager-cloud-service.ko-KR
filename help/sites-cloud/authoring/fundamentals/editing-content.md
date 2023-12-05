@@ -2,10 +2,10 @@
 title: 페이지 콘텐츠 편집
 description: 페이지를 생성하면 콘텐츠를 편집하여 필요한 업데이트를 수행할 수 있습니다.
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2973'
-ht-degree: 95%
+source-wordcount: '2974'
+ht-degree: 94%
 
 ---
 
@@ -322,7 +322,7 @@ ht-degree: 95%
 
 단락 구성 요소 이동
 
-1. 탭한 상태나 클릭한 상태로 유지하여 이동할 단락을 선택합니다.
+1. 선택-및-유지 또는 클릭-및-유지로 이동할 단락을 선택합니다.
 1. 단락을 새 위치로 드래그합니다. AEM에서 단락을 둘 수 있는 위치를 보여 줍니다. 단락을 원하는 위치에 놓습니다.
 
    ![구성 요소 이동](/help/sites-cloud/authoring/assets/editing-moving-component.png)
@@ -541,5 +541,5 @@ AEM에는 사용자가 수행한 작업 내역이 순서대로 저장됩니다. 
 >
 >* 파일 및 이미지 변경을 취소하거나 재실행하려면 특수 권한이 필요합니다.
 >* 파일 및 이미지 변경의 실행 취소 내역은 최소 10시간 동안 유지됩니다. 이 시간이 지나면 변경을 취소하지 못할 수 있습니다. 관리자는 기본 시간인 10시간을 변경할 수 있습니다.
->* 시스템 관리자는 인스턴스에 대한 요구 사항에 따라 실행 취소/재실행 기능의 다양한 측면을 구성할 수 있습니다.
+>* 시스템 관리자는 인스턴스에 대한 요구 사항에 따라 실행 취소/다시 실행 기능의 다양한 측면을 구성할 수 있습니다.
 <!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->

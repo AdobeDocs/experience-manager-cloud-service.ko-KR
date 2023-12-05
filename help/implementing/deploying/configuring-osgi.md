@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service에 대한 OSGi 구성
 description: 비밀 값 및 환경별 값이 있는 OSGi 구성
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3317'
+source-wordcount: '3265'
 ht-degree: 1%
 
 ---
@@ -191,14 +191,14 @@ AEM SDK Quickstart Jar의 AEM 웹 콘솔 을 사용하여 OSGi 구성 요소를 
 
 1. 에서 AEM SDK Quickstart Jar의 AEM 웹 콘솔에 로그인합니다. `https://<host>:<port>/system/console` 관리 사용자로
 1. 다음으로 이동 **OSGi** > **구성**
-1. 구성하려면 OSGi 구성 요소를 찾은 다음 제목을 탭하여 편집합니다
+1. 구성하려면 OSGi 구성 요소를 찾아 편집할 제목을 선택합니다
    ![OSGi 구성](./assets/configuring-osgi/configuration.png)
 1. 필요에 따라 웹 UI를 통해 OSGi 구성 속성 값을 편집합니다
 1. 안전한 위치에 영구 ID(PID)를 기록합니다. 이는 나중에 OSGi 구성 JSON을 생성하는 데 사용됩니다
-1. 저장 을 누릅니다.
+1. 저장 선택
 1. OSGi > OSGi 설치 관리자 구성 프린터로 이동합니다.
 1. 5단계에서 복사한 PID에 붙여넣고 직렬화 포맷이 &quot;OSGi 구성자 JSON&quot;으로 설정되어 있는지 확인합니다.
-1. 인쇄 탭
+1. 인쇄 선택
 1. JSON 형식의 OSGi 구성이 직렬화된 구성 속성 섹션에 표시됩니다
    ![OSGi 설치 관리자 구성 프린터](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
 1. IDE에서 `ui.apps` 프로젝트, 구성 폴더 찾기 또는 만들기(`/apps/.../config.<runmode>`) 실행 모드를 대상으로 하는 새 OSGi 구성을 적용해야 합니다.

@@ -2,7 +2,7 @@
 title: 제품 카탈로그 페이지 및 템플릿 관리
 description: 제품 카탈로그 페이지 및 템플릿 관리 방법 알아보기
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 1%
@@ -89,7 +89,7 @@ CIF은 몇 번의 클릭만으로 여러 템플릿을 지원합니다. 다른 �
 
 ![템플릿 만들기 ](assets/create-template-picker.png)
 
-이제 이 템플릿을 특정 범주에 할당해야 합니다. 에서 속성 열기 **페이지 정보** 메뉴를 클릭하고 commerce 탭으로 전환합니다. 폴더 아이콘을 클릭하여 **룩을 쇼핑하다** 카테고리 선택기의 카테고리입니다. 확인란을 활성화하여 템플릿에 여러 카테고리를 할당하고 하위 카테고리를 포함할 수도 있습니다.
+이제 이 템플릿을 특정 카테고리에 할당해야 합니다. 에서 속성 열기 **페이지 정보** 메뉴를 클릭하고 commerce 탭으로 전환합니다. 폴더 아이콘을 클릭하여 **룩을 쇼핑하다** 카테고리 선택기의 카테고리입니다. 확인란을 활성화하여 템플릿에 여러 카테고리를 할당하고 하위 카테고리를 포함할 수도 있습니다.
 
 ![템플릿 연결 만들기](assets/create-template-associate.png)
 

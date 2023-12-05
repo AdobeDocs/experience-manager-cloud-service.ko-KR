@@ -2,10 +2,10 @@
 title: 다중 사이트 관리자 확장
 description: 다중 사이트 관리자의 기능을 확장하는 방법에 대해 알아봅니다.
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2429'
-ht-degree: 95%
+source-wordcount: '2337'
+ht-degree: 93%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 95%
 
    * `getName` - 작업의 이름을 반환합니다.
 
-      * 이름은 작업을 참조하는 데 사용됩니다(예: 롤아웃 구성에서).
+      * 이 이름은 작업을 참조하는 데 사용됩니다(예: 롤아웃 구성).
 
    * `execute` - 작업의 내용을 수행합니다.
 
@@ -175,7 +175,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 1. 이 위치 아래에서 다음 속성을 사용하여 노드를 만듭니다.
 
-   * **이름**: 롤아웃 구성의 노드 이름(예: `contentCopy` 또는 `workflow`)
+   * **이름**: 롤아웃 구성의 노드 이름(예: ) `contentCopy` 또는 `workflow`
    * **유형**: `cq:RolloutConfig`
 
 1. 이 노드에 다음 속성을 추가합니다.
@@ -204,7 +204,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 `cq:LiveSyncAction` 유형의 하위 노드를 추가하여 롤아웃 구성에 동기화 작업을 추가합니다. 동기화 작업 노드의 순서에 따라 작업이 발생하는 순서가 결정됩니다.
 
-1. CRXDE Lite에서 [롤아웃 구성](#create-the-rollout-configuration) 노드(예: `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`)를 선택합니다.
+1. CRXDE Lite에서 [롤아웃 구성](#create-the-rollout-configuration) 노드(예: ) `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`.
 
 1. 다음 노드 속성을 사용하여 노드를 만듭니다.
 

@@ -2,10 +2,10 @@
 title: 추가 게시 지역
 description: AEM as a Cloud Service가 추가 게시 지역을 지원하여 가용성을 높이고 지연 시간을 줄이는 방법에 대해 알아봅니다.
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 80%
+source-wordcount: '638'
+ht-degree: 78%
 
 ---
 
@@ -20,7 +20,7 @@ AEM Sites로 설정된 프로그램에서 추가 게시 지역에 라이선스�
 
 >[!NOTE]
 >
->이 기능은 현재 AEM Sites에서만 사용할 수 있습니다. 샌드박스 프로그램에는 적용될 수 없습니다. 또한 추가 게시 지역 기능을 사용하려면 프로그램을 AEM 릴리스 버전 12142 이상으로 업데이트해야 합니다.
+>이 기능은 현재 AEM Sites에서만 사용할 수 있습니다. 샌드박스 프로그램에는 적용될 수 없습니다. 또한 추가 게시 영역 기능을 사용하려면 프로그램을 AEM 릴리스 버전 12142 이상으로 업데이트해야 합니다.
 
 ## 사용 사례 {#use-cases}
 

@@ -3,10 +3,10 @@ title: AEM에서 GraphQL 엔드포인트 관리
 description: Headless 콘텐츠 게재용 Adobe Experience Manager as a Cloud Service에서 GraphQL 엔드포인트를 관리하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 90%
+source-wordcount: '512'
+ht-degree: 88%
 
 ---
 
@@ -91,4 +91,4 @@ GraphQL 엔드포인트를 활성화하려면 먼저 적절한 구성이 필요�
 >
 >게시 인스턴스에서 GraphQL 쿼리가 서버에 과부하를 줄 수 있으므로 보안 문제가 발생할 수 있습니다.
 >
->엔드포인트에 [사용 사례에 적합한 ACL](/help/headless/security/permissions.md)을 설정해야 합니다.
+>설정 [사용 사례에 적합한 ACL](/help/headless/security/permissions.md) 끝점에 있습니다.

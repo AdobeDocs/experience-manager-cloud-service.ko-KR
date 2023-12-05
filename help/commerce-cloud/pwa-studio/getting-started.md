@@ -5,10 +5,10 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 1%
+source-wordcount: '719'
+ht-degree: 0%
 
 ---
 
@@ -105,7 +105,7 @@ AEM 콘텐츠 조각 설명서에 따라 AEM 프로젝트에 대한 GraphQL 엔�
 
 두 구성의 전체 예는 여기에서 찾을 수 있습니다. <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 
-GraphQL 엔드포인트를 공개하기 위해 콘텐츠 패키지를 통해 몇 가지 샘플 콘텐츠 조각 모델 및 데이터를 준비했습니다. 이러한 기능은 PWA Studio 확장과 함께 제공된 React 구성 요소와 함께 잘 작동합니다.
+GraphQL 엔드포인트를 공개하기 위해 콘텐츠 패키지를 통해 준비된 몇 가지 샘플 콘텐츠 조각 모델 및 데이터가 있습니다. 이러한 기능은 PWA Studio 확장과 함께 제공된 React 구성 요소와 함께 잘 작동합니다.
 
 ## 사용 방법 {#how-to-use}
 

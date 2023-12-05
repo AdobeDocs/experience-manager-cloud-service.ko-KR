@@ -4,10 +4,10 @@ description: 이 문서에서는 Experience Manager에서 검색 패싯을 만�
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2504'
-ht-degree: 21%
+source-wordcount: '2498'
+ht-degree: 19%
 
 ---
 
@@ -33,7 +33,7 @@ Adobe Experience Manager Assets의 전사적 배포는 많은 에셋을 저장�
 전체 텍스트 검색의 경우 `Fulltext` 양식에 대한 조건자입니다. 속성 조건자를 사용하여 지정한 단일 속성과 일치하는 에셋을 검색합니다. 옵션 술어를 사용하여 특정 속성에 대해 하나 이상의 값과 일치하는 에셋을 검색합니다. 지정된 날짜 범위 내에서 생성된 에셋을 검색하려면 날짜 범위 술어를 추가하십시오.
 
 1. Experience Manager 로고를 클릭한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL Forms 검색]**.
-1. Forms 검색 페이지에서 을 선택합니다. **[!UICONTROL 에셋 관리자 검색 레일]**, 다음 탭  **편집** ![aemassets_edit](assets/aemassets_edit.png).
+1. Forms 검색 페이지에서 을 선택합니다. **[!UICONTROL 에셋 관리자 검색 레일]**&#x200B;을 선택한 다음 을 선택합니다.  **편집** ![aemassets_edit](assets/aemassets_edit.png).
 
    ![자산 관리자 검색 레일을 찾아 선택합니다](assets/assets_admin_searchrail.png)
 
@@ -49,7 +49,7 @@ Adobe Experience Manager Assets의 전사적 배포는 많은 에셋을 저장�
 
    *그림: 설정 탭을 사용하여 필요한 술어 옵션을 제공합니다.*
 
-1. In the **[!UICONTROL Property Name]** field, specify a valid name for the metadata property you want to associate with the predicate. It is the name based on which the search is performed. For example, enter `jcr:content/metadata/dc:description` or `./jcr:content/metadata/dc:description`. 선택 대화 상자에서 기존 노드를 선택할 수도 있습니다.
+1. In the **[!UICONTROL Property Name]** field, specify a valid name for the metadata property you want to associate with the predicate. It is the name based on which the search is performed. 예를 들어, 을 입력합니다. `jcr:content/metadata/dc:description` 또는 `./jcr:content/metadata/dc:description`. 선택 대화 상자에서 기존 노드를 선택할 수도 있습니다.
 
    ![속성 이름 필드의 술어와 메타데이터 속성 연결](assets/property_settings.png)
 
@@ -63,7 +63,7 @@ Adobe Experience Manager Assets의 전사적 배포는 많은 에셋을 저장�
    변경 사항을 제출하기 전에 검색 양식 미리 보기
 
 1. 미리보기를 닫으려면 **[!UICONTROL 닫기]** ![닫기](assets/do-not-localize/close_icon.png) 미리 보기의 오른쪽 상단 모서리에서
-1. 누르기 **[!UICONTROL 완료]** 설정을 저장합니다.
+1. 선택 **[!UICONTROL 완료]** 설정을 저장합니다.
 1. Assets 사용자 인터페이스의 검색 패널로 이동합니다. 속성 조건자가 패널에 추가됩니다.
 1. 텍스트 상자에 검색할 에셋에 대한 설명을 입력합니다. 예를 들어 &quot;Adobe&quot;를 입력합니다. 검색을 수행하면 &quot;Adobe&quot;와 일치하는 설명이 있는 에셋이 검색 결과에 나열됩니다.
 
@@ -101,14 +101,14 @@ Instead of manually creating a node structure for the options in the CRX reposit
 >
 >옵션 조건자는 설명된 동작을 보여 주기 위해 속성 조건자를 포함하는 사용자 지정 래퍼입니다. 현재 기능을 기본적으로 지원하는 데 사용할 수 있는 REST 끝점이 없습니다.
 
-1. Experience Manager 로고를 탭한 다음 로 이동합니다. **[!UICONTROL 도구 > 일반 > Forms 검색]**.
-1. From the **[!UICONTROL Search Forms]** page, select **[!UICONTROL Assets Admin Search Rail]**, then tap the Edit icon.
+1. Experience Manager 로고를 선택한 다음 로 이동합니다. **[!UICONTROL 도구 > 일반 > Forms 검색]**.
+1. 다음에서 **[!UICONTROL Forms 검색]** 페이지, 선택 **[!UICONTROL 에셋 관리자 검색 레일]**&#x200B;를 클릭한 다음 편집 아이콘을 선택합니다.
 1. In the **[!UICONTROL Edit Search Form]** page, drag **[!UICONTROL Options Predicate]** from the **[!UICONTROL Select Predicate]** tab to the main pane.
-1. In the **[!UICONTROL Settings]** tab, enter a label and a name for the property. For example, to search assets based on their format, specify a user-friendly name for the label, for example **[!UICONTROL File Type]**. Specify the property based on which the search is to be performed in the property field, for example `jcr:content/metadata/dc:format.`
+1. In the **[!UICONTROL Settings]** tab, enter a label and a name for the property. 예를 들어, 해당 형식을 기반으로 하여 에셋을 검색하려면 레이블에 대해 사용자에게 친숙한 이름(예: )을 지정하십시오. **[!UICONTROL 파일 유형]**. 속성 필드에서 검색을 수행할 기준 속성을 지정합니다(예: ). `jcr:content/metadata/dc:format.`
 1. 다음 중 하나를 수행하십시오.
 
    * 다음에서 **[!UICONTROL 속성 이름]** 필드에서는 옵션에 대한 노드를 정의하고 해당 키-값 쌍을 지정하는 JSON 파일의 경로를 언급합니다.
-   * 누르기 ![에셋 추가 아이콘](assets/do-not-localize/aem_assets_add_icon.png) [옵션] 필드 옆에 있는 [필터] 패널에서 제공할 옵션의 표시 텍스트와 값을 지정합니다. 다른 옵션을 추가하려면 다음을 선택합니다. ![에셋 추가 아이콘](assets/do-not-localize/aem_assets_add_icon.png) 단계를 반복합니다.
+   * 선택 ![에셋 추가 아이콘](assets/do-not-localize/aem_assets_add_icon.png) [옵션] 필드 옆에 있는 [필터] 패널에서 제공할 옵션의 표시 텍스트와 값을 지정합니다. 다른 옵션을 추가하려면 다음을 선택합니다. ![에셋 추가 아이콘](assets/do-not-localize/aem_assets_add_icon.png) 단계를 반복합니다.
 
 1. Ensure that **[!UICONTROL Single Select]** is cleared to let the user select multiple options for file types at a time (for example, Images, Documents, Multimedia, and Archives). If you select **[!UICONTROL Single Select]**, the user can select only one option for file types at a time.
 
@@ -124,11 +124,11 @@ Instead of manually creating a node structure for the options in the CRX reposit
 다음 `Multi Value Property` 조건자를 사용하면 에셋에서 여러 값을 검색할 수 있습니다. 에 여러 제품 이미지가 있는 시나리오를 고려하십시오. [!DNL Assets] 각 이미지에 대한 메타데이터에는 제품과 연관된 SKU 번호가 포함됩니다. 이 술어를 사용하여 여러 SKU 번호를 기반으로 제품 이미지를 검색할 수 있습니다.
 
 1. Experience Manager 로고를 클릭한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL Forms 검색]**.
-1. Forms 검색 페이지에서 다음을 선택합니다. **[!UICONTROL 에셋 관리자 검색 레일]**, 탭 **편집** ![aemassets_edit](assets/aemassets_edit.png).
+1. Forms 검색 페이지에서 다음을 선택합니다. **[!UICONTROL 에셋 관리자 검색 레일]**, 선택 **편집** ![aemassets_edit](assets/aemassets_edit.png).
 1. In the Edit Search Form page, drag a **[!UICONTROL Multi Value Property Predicate]** from the **[!UICONTROL Select Predicate]** tab to the main pane.
 1. 다음에서 **[!UICONTROL 설정]** 탭에서 술어에 대한 레이블 및 자리 표시자 텍스트를 입력합니다. 속성 필드에서 검색을 수행할 기준 속성 이름을 지정합니다(예: ). `jcr:content/metadata/dc:value`. 선택 대화 상자 를 사용하여 노드를 선택할 수도 있습니다.
 1. Ensure that **[!UICONTROL Delimiter Support]** is selected. In the **[!UICONTROL Input Delimiters]** field, specify delimiters to separate individual values. By default, comma is specified as the delimiter. You can specify a different delimiter.
-1. 다음에서 **설명** 필드에서 선택적 설명을 입력한 다음 을 누릅니다 **[!UICONTROL 완료]**.
+1. 다음에서 **설명** 필드에 선택적 설명을 입력한 다음 을 선택합니다. **[!UICONTROL 완료]**.
 1. Navigate to the Filters panel in the Assets user interface. The **[!UICONTROL Multi Value Property]** predicate is added to the panel.
 1. 다중 값 필드에 구분 기호로 구분된 여러 값을 지정하고 검색을 수행합니다. 술어는 사용자가 지정하는 값에 대해 정확히 일치하는 텍스트를 가져옵니다.
 
@@ -137,7 +137,7 @@ Instead of manually creating a node structure for the options in the CRX reposit
 다음 `Tags` 조건자를 사용하면 에셋에 대한 태그 기반 검색을 수행할 수 있습니다. 기본적으로, [!DNL Assets] 지정한 태그를 기반으로 하나 이상의 태그 일치 항목을 에셋에서 검색합니다. 즉, 검색 쿼리는 지정된 태그를 사용하여 OR 작업을 수행합니다. 그러나 모든 태그 일치 옵션을 사용하여 지정한 모든 태그가 포함된 에셋을 검색할 수 있습니다.
 
 1. Experience Manager 로고를 클릭한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL Forms 검색]**.
-1. Forms 검색 페이지에서 을 선택합니다. **[!UICONTROL 에셋 관리자 검색 레일]** 그런 다음 을 누릅니다 **편집** ![aemassets_edit](assets/aemassets_edit.png).
+1. Forms 검색 페이지에서 을 선택합니다. **[!UICONTROL 에셋 관리자 검색 레일]** 다음을 선택합니다. **편집** ![aemassets_edit](assets/aemassets_edit.png).
 1. 검색 양식 편집 페이지에서 을 드래그합니다. **[!UICONTROL 태그 조건자]** 설명 선택 탭에서 기본 창으로 이동합니다.
 1. 설정 탭에서 술어에 대한 자리 표시자 텍스트를 입력합니다. 속성 필드에서 검색을 수행할 기준 속성 이름을 지정합니다(예: ). `jcr:content/metadata/cq:tags`. 또는 선택 대화 상자에서 CRXDE의 노드를 선택할 수 있습니다.
 1. 태그 목록의 다양한 태그를 채우도록 이 술어의 루트 태그 경로 속성을 구성합니다.
@@ -325,8 +325,8 @@ Forms 검색 페이지의 옵션에 대해 아이콘을 잠그면 기본 설정�
 기본 검색 패싯을 복원하려면 다음 단계를 수행합니다.
 
 1. 선택 **[!UICONTROL 에셋 관리자 검색 레일]** 다음에서 **[!UICONTROL Forms 검색]** 페이지를 가리키도록 업데이트하는 중입니다.
-1. 누르기 **[!UICONTROL 삭제]** ![삭제 아이콘](assets/do-not-localize/deleteoutline.png) 을 클릭합니다.
-1. 확인 대화 상자에서 다음을 누릅니다. **[!UICONTROL 삭제]** 사용자 지정 변경 내용을 제거합니다.
+1. 선택 **[!UICONTROL 삭제]** ![삭제 아이콘](assets/do-not-localize/deleteoutline.png) 을 클릭합니다.
+1. 확인 대화 상자에서 다음을 선택합니다 **[!UICONTROL 삭제]** 사용자 지정 변경 내용을 제거합니다.
 
    After you delete the custom changes to search facets, the Lock icon reappears before **[!UICONTROL Assets Admin Search Rail]** in the **[!UICONTROL Search Forms]** page.
 
@@ -342,7 +342,7 @@ Forms 검색 페이지의 옵션에 대해 아이콘을 잠그면 기본 설정�
 
 **추가 참조**
 
-* [모범 사례 검색](search-best-practices.md)
+* [검색 모범 사례](search-best-practices.md)
 * [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
 * [자산이 지원되는 파일 형식](file-format-support.md)

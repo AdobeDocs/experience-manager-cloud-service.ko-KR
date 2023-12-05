@@ -4,10 +4,10 @@ description: AEM에서 기계 번역 및 인간 번역을 만들고 관리하는
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3971'
-ht-degree: 86%
+source-wordcount: '3960'
+ht-degree: 85%
 
 ---
 
@@ -142,7 +142,7 @@ Sites 콘솔에서 번역 프로젝트를 바로 만들고 업데이트할 수 �
    >
    >번역 프로젝트의 타겟 언어 세트는 참조 레일에 표시되는 언어 사본의 경로와 일치해야 합니다.
 
-1. 선택 **업데이트**.
+1. **업데이트**&#x200B;를 선택합니다.
 
 ### 언어 사본 구조 만들기 {#creating-the-structure-of-a-language-copy}
 
@@ -166,7 +166,7 @@ Sites 콘솔에서 번역 프로젝트를 바로 만들고 업데이트할 수 �
 
    ![구조만 만들기](../assets/language-copy-structure-only.png)
 
-1. 선택 **업데이트**.
+1. **업데이트**&#x200B;를 선택합니다.
 
 ### 번역 메모리 업데이트 {#updating-translation-memory}
 
@@ -338,7 +338,7 @@ Sites 콘솔이 아닌 프로젝트 콘솔을 사용하고자 하는 경우 번�
 
    ![번역 프로젝트 속성](../assets/translation-project-properties-basic.png)
 
-1. 선택 **저장 및 닫기**.
+1. **저장 후 닫기**&#x200B;를 선택합니다.
 
 ### 번역 작업 범위 지정 {#scoping-a-translation-job}
 
@@ -463,7 +463,7 @@ AEM은 여러 번역 솔루션 및 인터페이스를 제공하지만 수동으�
 
 ### 번역 작업 내보내기 {#exporting-a-translation-job}
 
-번역 작업 콘텐츠를 다운로드하여 커넥터를 통해 AEM과 통합되지 않은 번역 공급업체에게 전송하거나 콘텐츠를 검토할 수 있습니다.
+번역 작업의 콘텐츠를 다운로드하여 커넥터를 통해 AEM과 통합되지 않은 번역 공급업체에 전송하거나 콘텐츠를 검토할 수 있습니다.
 
 1. 번역 작업 타일의 드롭다운 메뉴에서 을(를) 선택합니다 **내보내기**.
 1. 대화 상자에서 을 선택합니다. **내보낸 파일 다운로드**&#x200B;필요한 경우 웹 브라우저 대화 상자를 사용하여 파일을 저장합니다.
@@ -471,7 +471,7 @@ AEM은 여러 번역 솔루션 및 인터페이스를 제공하지만 수동으�
 
 ### 번역 작업 가져오기 {#importing-a-translation-job}
 
-번역 공급업체가 커넥터를 통해 AEM과 통합되지 않아 번역된 콘텐츠를 귀하에게 전송한 경우 이를 AEM으로 가져올 수 있습니다.
+번역된 컨텐츠는 커넥터를 통해 AEM과 통합되지 않아 번역 공급업체에서 전송한 번역된 컨텐츠를 AEM으로 가져올 수 있습니다.
 
 1. 번역 작업 타일의 드롭다운 메뉴에서 을(를) 선택합니다 **가져오기**.
 1. 웹 브라우저의 대화 상자를 사용하여 내보낼 파일을 선택합니다.

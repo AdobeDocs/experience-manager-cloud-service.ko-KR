@@ -3,10 +3,10 @@ title: AEM을 통해 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐
 description: AEM으로 GraphQL을 사용하여 샘플 콘텐츠 및 쿼리 탐색을 통해 Headless 방식으로 콘텐츠를 제공하는 방법을 배웁니다.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: 667cac9153947d1c236ff1117fc7200883416d8d
 workflow-type: tm+mt
-source-wordcount: '1752'
-ht-degree: 100%
+source-wordcount: '1754'
+ht-degree: 98%
 
 ---
 
@@ -45,7 +45,7 @@ GraphQL 쿼리를 시작하고 이들 쿼리가 AEM 콘텐츠 조각과 함께 �
 >
 >다음 중 하나에서 쿼리 편집기에 액세스할 수 있습니다.
 >
->* **도구** -> **일반** -> **GraphQL 쿼리 편집기**
+>* **도구** > **일반** > **GraphQL 쿼리 편집기**
 >* 직접 (예: `http://localhost:4502/aem/graphiql.html`)
 
 >[!NOTE]
@@ -362,7 +362,7 @@ query {
 }
 ```
 
-### 샘플 쿼리 - 모든 도시의 이름 City Break로 태그됨 {#sample-names-all-cities-tagged-city-breaks}
+### 샘플 쿼리 - 구/군/시 구분으로 태그가 지정된 모든 구의 이름 {#sample-names-all-cities-tagged-city-breaks}
 
 다음 작업을 수행하는 경우:
 
@@ -1349,7 +1349,7 @@ query {
 
 >[!NOTE]
 >
->`fragments` 필드에는 `fragment-reference` 데이터 유형이 있고, `Article` 모델이 선택됩니다. 쿼리는 `fragments`의 배열로 `[Article]` 제공.
+>`fragments` 필드에는 `fragment-reference` 데이터 유형이 있고, `Article` 모델이 선택됩니다. 쿼리 전달 `fragments` 의 배열로서 `[Article]`.
 
 ```graphql
 {

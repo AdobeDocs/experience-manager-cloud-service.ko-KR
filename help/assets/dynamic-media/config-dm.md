@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service에서 Dynamic Media을 
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3794'
-ht-degree: 3%
+source-wordcount: '3811'
+ht-degree: 2%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 3%
 >* [스마트 이미징](/help/assets/dynamic-media/imaging-faq.md)
 >* [캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 >* [핫링크 보호](/help/assets/dynamic-media/hotlink-protection.md)
->* [콘텐츠의 HTTP/2 전달](/help/assets/dynamic-media/http2faq.md)
+>* [컨텐츠의 HTTP/2 전달](/help/assets/dynamic-media/http2faq.md)
 >* CDN 수준에서 URL 리디렉션
 >* Akamai ChinaCDN(중국에서 최적의 전송을 위해)
 
@@ -311,9 +311,9 @@ Dynamic Media에서 처리하는 자산 유형을 정의하고 고급 자산 처
 1. mimeTypes 폴더에서 MIME 유형을 선택합니다.
 1. CRXDE Lite 페이지 오른쪽의 아래쪽에서 다음을 수행합니다.
 
-   * 을(를) 두 번 탭합니다. **[!UICONTROL 활성화됨]** 필드. 기본적으로 모든 에셋 MIME 유형이 활성화됩니다( 로 설정). **[!UICONTROL true]**) - 자산이 처리를 위해 Dynamic Media에 동기화됨을 의미합니다. 이 자산 MIME 유형을 처리 대상에서 제외하려면 이 설정을 다음으로 변경하십시오. **[!UICONTROL false]**.
+   * 두 번 선택 **[!UICONTROL 활성화됨]** 필드. 기본적으로 모든 에셋 MIME 유형이 활성화됩니다( 로 설정). **[!UICONTROL true]**) - 자산이 처리를 위해 Dynamic Media에 동기화됨을 의미합니다. 이 자산 MIME 유형을 처리 대상에서 제외하려면 이 설정을 다음으로 변경하십시오. **[!UICONTROL false]**.
 
-   * 두 번 누르기 **[!UICONTROL jobParam]** 연결된 텍스트 필드를 엽니다. 다음을 참조하십시오 [지원되는 MIME 유형](/help/assets/file-format-support.md) 특정 MIME 유형에 사용할 수 있는 허용된 처리 매개 변수 값 목록.
+   * 두 번 선택 **[!UICONTROL jobParam]** 연결된 텍스트 필드를 엽니다. 다음을 참조하십시오 [지원되는 MIME 유형](/help/assets/file-format-support.md) 특정 MIME 유형에 사용할 수 있는 허용된 처리 매개 변수 값 목록.
 
 1. 다음 중 하나를 수행하십시오.
    * 더 많은 MIME 유형을 편집하려면 3-4단계를 반복합니다.
@@ -336,7 +336,7 @@ Experience Manager Assets에서 지원되지 않는 형식에 대한 사용자 �
 
    ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
 
-1. On the page, scroll down to the name *Adobe CQ Scene7 Asset MIME type Service* as seen the following screenshot. To the right of the name, tap the **[!UICONTROL Edit the configuration values]** (pencil icon).
+1. On the page, scroll down to the name *Adobe CQ Scene7 Asset MIME type Service* as seen the following screenshot. 이름 오른쪽에서 **[!UICONTROL 구성 값 편집]** (연필 아이콘).
 
    ![구성 값 편집](assets/2019-08-02_16-44-56.png)
 
@@ -369,7 +369,7 @@ Experience Manager Assets에서 지원되지 않는 형식에 대한 사용자 �
 
    ![CRXDE Lite에서 DWG 파일 편집](assets/crxdelite_cqdoc-14627.png)
 
-1. MIME 유형 사용 `image_vnd.dwg` 에서 아직 선택됨 **[!UICONTROL 속성]** 탭, **[!UICONTROL 활성화됨]** 행, 아래 **[!UICONTROL 값]** 열 머리글에서 값을 두 번 탭합니다. 다음 **[!UICONTROL 값]** 드롭다운 목록이 열립니다.
+1. MIME 유형 사용 `image_vnd.dwg` 에서 아직 선택됨 **[!UICONTROL 속성]** 탭, **[!UICONTROL 활성화됨]** 행, 아래 **[!UICONTROL 값]** 열 머리글에서 값을 두 번 선택합니다. 다음 **[!UICONTROL 값]** 드롭다운 목록이 열립니다.
 1. 유형 `false` 필드(또는 선택)에서 **[!UICONTROL false]** 드롭다운 목록에서).
 
    ![CRXDE Lite에서 MIME 유형 편집](assets/2019-08-02_16-60-30.png)

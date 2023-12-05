@@ -1,11 +1,11 @@
 ---
-title: 적응형 양식에 대한 제출 액션을 구성하는 방법?
+title: 적응형 양식에 대한 제출 액션을 구성하는 방법
 description: 적응형 양식은 여러 제출 액션을 제공합니다. 제출 액션은 적응형 양식이 제출 후 처리되는 방식을 정의합니다. 기본 제공 제출 액션을 사용하거나 직접 만들 수 있습니다.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 0e6c4e6745a03e0d48c535e2e113d2a7e5ff4e78
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3859'
-ht-degree: 80%
+source-wordcount: '3805'
+ht-degree: 79%
 
 ---
 
@@ -170,7 +170,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ## SharePoint에 제출 {#submit-to-sharedrive}
 
-**[!UICONTROL SharePoint에 제출]** 제출 액션은 적응형 양식을 Microsoft® SharePoint Storage와 연결합니다. 양식 데이터 파일, 첨부 파일 또는 기록 문서를 연결된 Microsoft® SharePoint Storage에 제출할 수 있습니다.
+**[!UICONTROL SharePoint에 제출]** 제출 액션은 적응형 양식을 Microsoft® SharePoint Storage와 연결합니다. 양식 데이터 파일, 첨부 파일 또는 기록 문서를 연결된 Microsoft® Sharepoint Storage에 제출할 수 있습니다.
 
 SharePoint에 제출을 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 * [적응형 양식을 SharePoint 문서 라이브러리에 연결](#connect-af-sharepoint-doc-library)
@@ -264,7 +264,7 @@ AEM Forms을 Microsoft® Sharepoint 목록에 연결하려면:
 
 1. **[!UICONTROL 연결]**&#x200B;을 클릭합니다. 연결이 완료되면 `Connection Successful` 메시지가 나타납니다.
 1. 선택 **[!UICONTROL SharePoint 사이트]** 및 **[!UICONTROL SharePoint 목록]** 을 클릭합니다.
-1. 누르기 **[!UICONTROL 만들기]** Microsoft® SharePointList에 대한 클라우드 구성을 만듭니다.
+1. 선택 **[!UICONTROL 만들기]** Microsoft® SharePointList에 대한 클라우드 구성을 만듭니다.
 
 
 #### 적응형 양식에서 양식 데이터 모델을 사용하여 제출 {#use-submit-using-fdm}

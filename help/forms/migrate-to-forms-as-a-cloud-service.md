@@ -9,10 +9,10 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1583'
-ht-degree: 6%
+source-wordcount: '1430'
+ht-degree: 1%
 
 ---
 
@@ -97,7 +97,7 @@ AEM Forms AEM 6.5에서 as a Cloud Service 환경으로 원활하게 전환하�
 1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 컨텐츠 마이그레이션]**.
 
 1. 를 엽니다. **[!UICONTROL 마이그레이션을 위한 Forms 준비]** 카드. 브라우저에는 다섯 가지 옵션이 표시됩니다.
-   * **[!UICONTROL AEM Forms 에셋 마이그레이션]**
+   * **[!UICONTROL AEM Forms Assets 마이그레이션]**
    * **[!UICONTROL 적응형 Forms 맞춤형 구성 요소 마이그레이션]**
    * **[!UICONTROL 적응형 Forms 템플릿 마이그레이션]**
    * **[!UICONTROL AEM Forms 클라우드 구성 마이그레이션]**
@@ -105,20 +105,20 @@ AEM Forms AEM 6.5에서 as a Cloud Service 환경으로 원활하게 전환하�
 
 1. 옵션을 하나씩 사용하여 다음을 만듭니다. [!DNL AEM Forms] 호환 가능한 자산 [!DNL AEM] as a Cloud Service:
 
-   1. 누르기 **[!UICONTROL AEM Forms Assets 마이그레이션]**&#x200B;을 클릭하고 다음 화면에서 을 누릅니다. **[!UICONTROL 마이그레이션 시작]**. 에서 적응형 Forms 및 테마를 만듭니다. [!DNL AEM Forms] 호환 가능한 환경 [!DNL AEM] AS A CLOUD SERVICE .
+   1. 선택 **[!UICONTROL AEM Forms Assets 마이그레이션]**&#x200B;을 클릭하고 다음 화면에서 을(를) 선택합니다. **[!UICONTROL 마이그레이션 시작]**. 에서 적응형 Forms 및 테마를 만듭니다. [!DNL AEM Forms] 호환 가능한 환경 [!DNL AEM] AS A CLOUD SERVICE .
 
-   1. 누르기 **[!UICONTROL 적응형 Forms 맞춤형 구성 요소 마이그레이션]** 그리고 사용자 지정 구성 요소 마이그레이션 페이지에서 을 누릅니다. **[!UICONTROL 마이그레이션 시작]**. 적응형 Forms 및 구성 요소 오버레이용으로 개발된 모든 맞춤형 구성 요소를 [!DNL AEM Forms] 호환 가능한 환경 [!DNL AEM] AS A CLOUD SERVICE .
+   1. 선택 **[!UICONTROL 적응형 Forms 맞춤형 구성 요소 마이그레이션]** 그리고 사용자 지정 구성 요소 마이그레이션 페이지에서 **[!UICONTROL 마이그레이션 시작]**. 적응형 Forms 및 구성 요소 오버레이용으로 개발된 모든 맞춤형 구성 요소를 [!DNL AEM Forms] 호환 가능한 환경 [!DNL AEM] AS A CLOUD SERVICE .
 
-   1. 누르기 **[!UICONTROL 적응형 Forms 템플릿 마이그레이션]** 그리고 사용자 지정 구성 요소 마이그레이션 페이지에서 을 누릅니다. **[!UICONTROL 마이그레이션 시작]**. 다음 위치에 적응형 양식 템플릿을 만듭니다. `/apps` 또는 `/conf` 와 호환되는 AEM 템플릿 편집기를 사용하여 생성 [!DNL AEM] AS A CLOUD SERVICE .
+   1. 선택 **[!UICONTROL 적응형 Forms 템플릿 마이그레이션]** 그리고 사용자 지정 구성 요소 마이그레이션 페이지에서 **[!UICONTROL 마이그레이션 시작]**. 다음 위치에 적응형 양식 템플릿을 만듭니다. `/apps` 또는 `/conf` 와 호환되는 AEM 템플릿 편집기를 사용하여 생성 [!DNL AEM] AS A CLOUD SERVICE .
 
-   1. 누르기 **[!UICONTROL AEM Forms 클라우드 구성 마이그레이션]** 그런 다음 구성 마이그레이션 페이지에서 을 누릅니다. **[!UICONTROL 마이그레이션 시작]**. 다음 Cloud Service을 업데이트하고 새 위치로 이동합니다.
+   1. 선택 **[!UICONTROL AEM Forms 클라우드 구성 마이그레이션]** 그런 다음 [구성 마이그레이션] 페이지에서 **[!UICONTROL 마이그레이션 시작]**. 다음 Cloud Service을 업데이트하고 새 위치로 이동합니다.
 
       * 양식 데이터 모델 Cloud Service
       * Google reCAPTCHA Cloud Service
-      * [!DNL Adobe Sign] 클라우드 서비스
+      * [!DNL Adobe Sign] Cloud Service
       * Adobe Fonts Cloud Service
 
-   1. 누르기 **[!UICONTROL 코드 편집기 스크립트 마이그레이션]**, 재사용 가능한 기능을 저장할 위치를 지정하고 을 탭합니다**[!UICONTROL 마이그레이션 시작].
+   1. 선택 **[!UICONTROL 코드 편집기 스크립트 마이그레이션]**, 재사용 가능한 기능을 저장할 위치를 지정하고 을 선택합니다**[!UICONTROL 마이그레이션 시작].
 
    Cloud Service은 규칙 편집기 스크립트를 지원하지 않습니다. 다음 **[!UICONTROL 코드 편집기 스크립트 마이그레이션]** 도구는 사용자 환경의 모든 규칙 스크립트를 재사용 가능한 기능으로 변환하고 재사용 가능한 기능을 적절한 위치의 시각적 편집기에 적용합니다. 이러한 재사용 가능한 기능은 클라이언트 라이브러리 형태로 저장되며 기존 기능을 그대로 유지하는 데 도움이 됩니다. 이 도구는 생성된 재사용 가능한 기능을 해당 적응형 Forms에 자동으로 적용합니다.
 

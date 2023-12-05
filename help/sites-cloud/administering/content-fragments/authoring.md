@@ -4,10 +4,10 @@ description: 콘텐츠 조각에 대한 콘텐츠를 작성한 다음 목적에 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2267'
-ht-degree: 95%
+source-wordcount: '2266'
+ht-degree: 92%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 95%
 * 콘텐츠 조각을 통해 게재된 렌더링된 경험을 [미리보기](#preview-content-fragment)할 수 있습니다.
 * 편집기에서 [게시](#publish-content-fragment) 및 [게시 취소](#unpublish-content-fragment)할 수 있습니다.
 * 편집기에서 연결된 [언어 사본을 보고 열](#view-language-copies) 수 있습니다.
-* 편집기에서 [버전 세부 사항을 볼](#view-version-history) 수 있습니다. 선택한 버전으로 되돌릴 수도 있습니다.
+* 다음에 대한 기능: [버전 세부 사항 보기](#view-version-history) 를 입력합니다. 선택한 버전으로 되돌릴 수도 있습니다.
 * [상위 참조를 보고 열](#view-parent-references) 수 있습니다.
 * [구조 트리](#structure-tree)를 사용하여 콘텐츠 조각과 해당 참조의 계층적 보기를 실행할 수 있습니다.
 
@@ -58,7 +58,7 @@ ht-degree: 95%
    * **속성** 탭에서 조각 또는 **변형**&#x200B;에 대한 **제목** 및 **설명**&#x200B;을 업데이트할 수 있습니다.
 * 중앙 패널: 선택한 변형의 실제 필드와 콘텐츠 표시
    * 콘텐츠 편집 허용
-   * **탭 플레이스홀더** 필드가 여기에 표시된 모델 내에서 정의되고 탐색에 사용될 수 있는 경우가로 또는 드롭다운 목록으로 표시됩니다.
+   * if **탭 자리 표시자** 필드는 여기에 표시된 모델 내에서 정의되며, 탐색하는 데 사용할 수 있습니다. 필드는 가로로 표시되거나 드롭다운 목록으로 표시됩니다.
 
   >[!NOTE]
   >
@@ -92,7 +92,7 @@ ht-degree: 95%
 
 ### 링크 팔로우 {#follow-links}
 
-편집기의 여러 부분에서 링크 아이콘을 볼 수 있습니다. 이를 사용하여 표시된 항목을 열 수 있습니다(예: 콘텐츠 조각 모델, 상위 참조 또는 참조되는 조각).
+편집기의 여러 부분에서 링크 아이콘을 볼 수 있습니다. 이 옵션은 표시된 항목(예: 콘텐츠 조각 모델, 상위 참조 또는 참조되는 조각)을 여는 데 사용할 수 있습니다.
 
 ![콘텐츠 조각 편집기 - 링크 아이콘](assets/cf-authoring-link-icon.png)
 
@@ -472,7 +472,7 @@ URL이 정의되면 **미리보기** 버튼이 활성화됩니다. 이 버튼을
    <td><p> <img src="assets/cf-authoring-json-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>탭 플레이스홀더</b></p><p>실제 아이콘으로 표시되지 않지만 <b>탭 플레이스홀더</b>는 왼쪽 패널에 표시됩니다. <br>중앙 패널에 가로로 표시되거나 드롭다운 목록(아이콘이 너무 많아 가로로 표시할 수 없는 경우)에도 표시됩니다.</p> </td>
+   <td><p><b>탭 플레이스홀더</b></p><p>실제 아이콘으로 표시되지 않지만 <b>탭 플레이스홀더</b>는 왼쪽 패널에 표시됩니다. <br>또한 표시된 대로 가로로 중앙 패널에 표시되거나, 가로로 표시할 내용이 너무 많은 경우 드롭다운 목록에 표시됩니다.</p> </td>
    <td><p> <img src="assets/cf-authoring-tab-icon.png"> </p></td>
   </tr>
  </tbody>

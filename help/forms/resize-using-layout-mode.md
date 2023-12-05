@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 7%
+source-wordcount: '1138'
+ht-degree: 5%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 7%
 
 ## 구성 요소 크기 조정 {#resize-components}
 
-1. 레이아웃 모드에서 구성 요소를 탭하여 크기를 조정합니다. 파란색 점은 응답형 격자의 시작과 끝에 표시됩니다.
+1. 레이아웃 모드에서 크기를 조정할 구성 요소를 선택합니다. 파란색 점은 응답형 격자의 시작과 끝에 표시됩니다.
 1. 파란색 점을 드래그 앤 드롭하여 응답형 격자에서 구성 요소의 위치를 정의합니다.
 
    ![레이아웃 모드를 사용한 크기 조정](assets/layout_mode_resize_new_updated1.png)
@@ -59,7 +59,7 @@ ht-degree: 7%
 **목표:** 표 구성 요소와 이미지 구성 요소를 삽입하고 적응형 양식에서 서로 평행하게 배치하려고 합니다.
 
 1. 다음을 사용하여 표 및 이미지 구성 요소 삽입 [!UICONTROL 편집] 를 입력합니다. 이미지 구성 요소가 테이블 구성 요소 뒤에 표시됩니다.
-1. 다음으로 전환 [!UICONTROL 레이아웃] 을(를) 클릭하고 탭하기 [!UICONTROL 표] 구성 요소. 구성 요소 크기를 조정하기 위한 파란색 점이 1열과 12열에 표시됩니다.
+1. 다음으로 전환 [!UICONTROL 레이아웃] 을(를) 클릭하고 [!UICONTROL 표] 구성 요소. 구성 요소 크기를 조정하기 위한 파란색 점이 1열과 12열에 표시됩니다.
 1. 열 12의 파란색 점을 응답형 격자의 열 6으로 드래그합니다.
 
    ![테이블의 끝점 정의](assets/layout_mode_end_point_table_new.png)
@@ -74,7 +74,7 @@ ht-degree: 7%
 
 개별 구성 요소 대신 전체 패널의 크기를 조정하려면 다음 단계를 수행하십시오.
 
-1. 패널에서 크기를 조정할 구성 요소를 탭하고 선택합니다 ![상위 선택](assets/select_parent_icon.svg)패널 이 구성 요소의 바로 상위 항목인 경우 드롭다운 목록에서 첫 번째 옵션을 선택합니다.
+1. 패널에서 크기를 조정할 구성 요소를 선택하고 ![상위 선택](assets/select_parent_icon.svg)패널 이 구성 요소의 바로 상위 항목인 경우 드롭다운 목록에서 첫 번째 옵션을 선택합니다.
 
    파란색 점은 응답형 격자의 시작과 끝에 표시됩니다.
 
@@ -85,13 +85,13 @@ ht-degree: 7%
 
 다음 단계를 실행하여 패널의 열 수를 정의합니다.
 
-1. 위치 **[!UICONTROL 편집]** 모드, 패널을 탭하고 선택 ![구성](assets/configure-icon.svg), 및 선택 **[!UICONTROL 응답형 - 탐색 없이 페이지에 있는 모든 항목]** 옵션에서 **[!UICONTROL 패널 레이아웃]** 드롭다운 목록입니다.
+1. 위치 **[!UICONTROL 편집]** 모드, 패널 선택, 선택 ![구성](assets/configure-icon.svg), 및 선택 **[!UICONTROL 응답형 - 탐색 없이 페이지에 있는 모든 항목]** 옵션에서 **[!UICONTROL 패널 레이아웃]** 드롭다운 목록입니다.
 
-1. ![저장](assets/save_icon.svg)을 탭하여 변경 내용을 저장합니다.
+1. 선택 ![저장](assets/save_icon.svg) 속성을 저장합니다.
 
-1. 다음에서 **[!UICONTROL 레이아웃]** 모드, 패널에서 구성 요소 중 하나를 탭하고 ![상위 선택](assets/select_parent_icon.svg)을 누르고 패널을 선택합니다.
+1. 다음에서 **[!UICONTROL 레이아웃]** 모드, 패널에서 구성 요소 중 하나를 선택하고 ![상위 선택](assets/select_parent_icon.svg)을 누르고 패널을 선택합니다.
 
-1. 누르기 ![다중 열](assets/multi-column.svg) 드롭다운 목록에서 열 수를 선택합니다. 열의 수는 1에서 12 사이일 수 있습니다. 패널은 다중 열 레이아웃으로 나뉘어집니다.
+1. 선택 ![다중 열](assets/multi-column.svg) 드롭다운 목록에서 열 수를 선택합니다. 열의 수는 1에서 12 사이일 수 있습니다. 패널은 다중 열 레이아웃으로 나뉘어집니다.
 
 ![레이아웃 모드의 다중 열](assets/multi-column-layout.png)
 
@@ -106,7 +106,7 @@ ht-degree: 7%
 새 응답형 격자를 활성화하려면 다음 단계를 수행하십시오.
 
 1. 선택 **[!UICONTROL 레이아웃]** (이)가 표시되는 드롭다운 목록에서 **[!UICONTROL 미리 보기]** 옵션을 선택합니다. 레이아웃 모드 활성화 확인이 표시됩니다.
-1. 누르기 **[!UICONTROL 예]** 을(를) 활성화하려면 **[!UICONTROL 레이아웃]** 를 입력합니다.
+1. 선택 **[!UICONTROL 예]** 을(를) 활성화하려면 **[!UICONTROL 레이아웃]** 를 입력합니다.
 
 ### 새 반응형 레이아웃으로 적응형 양식에 이전 단편 포함 {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
 
@@ -116,7 +116,7 @@ ht-degree: 7%
 
 새 반응형 레이아웃이 포함된 조각을 이전 반응형 레이아웃이 있는 적응형 양식에 포함하는 경우, 양식에 대해 레이아웃 모드를 활성화하고 조각을 다시 포함할 것인지 묻는 메시지가 표시됩니다.
 
-레이아웃 모드를 활성화하려면 **[!UICONTROL 레이아웃]** (이)가 표시되는 드롭다운 목록에서 **[!UICONTROL 미리 보기]** 옵션 및 탭 **[!UICONTROL 예]** 확인할 수 있습니다. 선택 **[!UICONTROL 편집]** 를 입력하여 조각을 다시 포함할 수 있습니다.
+레이아웃 모드를 활성화하려면 **[!UICONTROL 레이아웃]** (이)가 표시되는 드롭다운 목록에서 **[!UICONTROL 미리 보기]** 옵션 및 선택 **[!UICONTROL 예]** 확인할 수 있습니다. 선택 **[!UICONTROL 편집]** 를 입력하여 조각을 다시 포함할 수 있습니다.
 
 ## 이전 반응형 레이아웃이 있는 양식의 레이아웃 모드 비활성화 {#disable-layout-mode-for-forms-with-old-responsive-layout}
 
@@ -125,12 +125,12 @@ ht-degree: 7%
 레이아웃 모드를 비활성화하려면 다음 단계를 수행하십시오.
 
 1. 선택 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL 템플릿]** 및 의 양식에 사용된 템플릿 열기 **[!UICONTROL 편집]** 모드.
-1. 왼쪽 창에서 양식 컨테이너 를 선택하고 을 누릅니다 **[!UICONTROL 정책.]**
+1. 왼쪽 창에서 양식 컨테이너 를 선택하고 을(를) 선택합니다. **[!UICONTROL 정책.]**
 
    ![레이아웃 모드 비활성화](assets/policy_disable_layout_mode.png)
 
-1. 탭 **[!UICONTROL 레이아웃 설정]** 탭하고 선택 **[!UICONTROL 레이아웃 모드 비활성화]**.
-1. 누르기 ![변경 내용 저장](assets/save_icon.svg) 템플릿 속성을 저장합니다.
+1. 다음 항목 선택 **[!UICONTROL 레이아웃 설정]** 탭하고 선택 **[!UICONTROL 레이아웃 모드 비활성화]**.
+1. 선택 ![변경 내용 저장](assets/save_icon.svg) 템플릿 속성을 저장합니다.
 
 ## 추가 참조 {#see-also}
 

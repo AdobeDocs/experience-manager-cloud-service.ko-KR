@@ -3,10 +3,10 @@ title: 핵심 구성 요소를 기반으로 적응형 양식 템플릿을 만드
 description: 템플릿 편집기를 사용하여 기본 구조 및 초기 콘텐츠를 정의하는 핵심 구성 요소를 기반으로 적응형 양식 템플릿을 만드십시오.
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 2%
+source-wordcount: '1961'
+ht-degree: 5%
 
 ---
 
@@ -46,13 +46,13 @@ Experience Manager은 템플릿을 구성할 수 있는 전역 폴더를 제공�
 
 폴더를 만든 후 폴더를 열고 다음 단계를 수행하여 템플릿을 만듭니다.
 
-1. 누르기 **[!UICONTROL 만들기]** 을(를) 생성한 폴더 내에서 선택합니다.
-1. 다음에서 **[!UICONTROL 템플릿 유형 선택]** 섹션, 선택 **[!UICONTROL 적응형 양식(핵심 구성 요소) 템플릿]** 및 탭 **[!UICONTROL 다음]**.
+1. 선택 **[!UICONTROL 만들기]** 을(를) 생성한 폴더 내에서 선택합니다.
+1. 다음에서 **[!UICONTROL 템플릿 유형 선택]** 섹션, 선택 **[!UICONTROL 적응형 양식(핵심 구성 요소) 템플릿]** 및 선택 **[!UICONTROL 다음]**.
 
-1. 다음에서 **[!UICONTROL 템플릿 세부 정보]** 섹션, 다음을 제공합니다. **템플릿 제목** 및 탭 **[!UICONTROL 만들기]**.
+1. 다음에서 **[!UICONTROL 템플릿 세부 정보]** 섹션, 다음을 제공합니다. **템플릿 제목** 및 선택 **[!UICONTROL 만들기]**.
 설명을 입력할 수도 있습니다.
 
-1. 누르기 **[!UICONTROL 완료]** 콘솔로 돌아가거나 **[!UICONTROL 열기]** 를 클릭하여 편집기에서 템플릿을 엽니다.
+1. 선택 **[!UICONTROL 완료]** 콘솔로 돌아가거나 **[!UICONTROL 열기]** 를 클릭하여 편집기에서 템플릿을 엽니다.
 
 ## 템플릿 편집기 UI {#template-editor-ui}
 
@@ -119,7 +119,7 @@ Header and footer are added in the Initial Content layer.
 
 초기 컨텐츠 옵션을 선택하면 템플릿의 적응형 양식 컨테이너가 편집을 위한 적응형 양식처럼 열립니다. 템플릿과 연결된 적응형 Forms을 만드는 동안 변경할 수 있는 사전 정의된 콘텐츠를 만들 수 있습니다. 적응형 양식 작성과 마찬가지로 테마 선택 및 작업 제출과 같은 초기 설정을 지정할 수 있습니다.
 
-양식 작성자는 이 필드를 기반으로 양식을 만듭니다. 컨텐츠 흐름 구조는 템플릿의 초기 컨텐츠 레이어에 지정됩니다. 양식 템플릿의 초기 콘텐츠를 편집하는 것으로 전환하려면 페이지 도구 모음에서 미리 보기 전에 을 누릅니다 ![캔버스 드롭다운](assets/canvas-drop-down.png) **>** **[!UICONTROL 초기 컨텐츠]**.
+양식 작성자는 이 필드를 기반으로 양식을 만듭니다. 컨텐츠 흐름 구조는 템플릿의 초기 컨텐츠 레이어에 지정됩니다. 양식 템플릿의 초기 콘텐츠를 편집하는 것으로 전환하려면 페이지 도구 모음에서 미리 보기 전에 을 선택합니다. ![캔버스 드롭다운](assets/canvas-drop-down.png) **>** **[!UICONTROL 초기 컨텐츠]**.
 
 ![초기 컨텐츠 레이어에 머리글 및 바닥글 추가됨](assets/header-and-footer.png)
 
@@ -145,7 +145,7 @@ Header and footer are added in the Initial Content layer.
 
 1. 다음으로 이동 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 도구]** > **[!UICONTROL 템플릿]**을 클릭하고 템플릿을 만든 폴더를 엽니다.
 생성한 템플릿이 초안으로 표시됩니다.
-1. 템플릿을 선택하고 을 누릅니다 **[!UICONTROL 사용]** 을 클릭합니다.
+1. 템플릿을 선택하고 **[!UICONTROL 사용]** 을 클릭합니다.
 적응형 양식을 만들 때 템플릿을 선택하라는 메시지가 표시되면 템플릿이 나열된 것을 볼 수 있습니다.
 
 ## 템플릿 가져오기 또는 내보내기 {#importing-or-exporting-a-template}
@@ -160,7 +160,7 @@ Header and footer are added in the Initial Content layer.
 
 작성자가 [!UICONTROL 양식 데이터 모델 스키마] 템플릿 편집기의 적응형 양식 템플릿을 참조하십시오. 이를 통해 작성자는 템플릿 편집기에서 스키마를 선택할 수 있습니다. 스키마를 템플릿에 연결하면 양식 작성자가 템플릿을 기반으로 양식을 만들 때 양식에 대해 스키마가 미리 선택됩니다. 양식 작성자가 스키마 사용을 규제하고 양식 작성자의 시간도 절약할 수 있습니다. 템플릿 편집기에서 양식 데이터 모델 스키마를 선택하려면 다음을 수행하십시오.
 
-1. 누르기 **[!UICONTROL 컨텐츠 브라우저]** 왼쪽에 있습니다.
+1. 선택 **[!UICONTROL 컨텐츠 브라우저]** 왼쪽에 있습니다.
 1. 양식 컨테이너로 이동 **[!UICONTROL 설정]**.
 1. 선택 **[!UICONTROL 데이터 모델]**.
 1. 다음을 통해 양식 데이터 모델 선택 **[!UICONTROL 양식 데이터 모델 선택]** 구성을 저장합니다.
@@ -185,7 +185,7 @@ Change the layer from **Structure** to **Initial Content**, and start adding con
 * You can drag-drop the panel component from the components browser in the sidebar.
 * You can add child panel of the `guideRootPanel` from the component toolbar.
 
-To create the General Information and Professional Information tabs, add two panels in the child panel of the `guideRootPanel`. Select the panels and tap ![cmppr](assets/configure-icon.svg) to open the properties in the sidebar. Change the element names as `general-info` and `professional-info`, and titles as General Information and Professional Information respectively. In the sidebar, tap content to open the content browser. In the Form Objects tab, select `guideRootPanel`. In the editor, the guideRootPanel is selected. Tap ![cmppr](assets/configure-icon.svg) in the component toolbar to open its properties. In the Panel Layout field, select **[!UICONTROL Tabs on Top]** and tap **[!UICONTROL Done]**. The tabbed template structure is applied.
+To create the General Information and Professional Information tabs, add two panels in the child panel of the `guideRootPanel`. Select the panels and select ![cmppr](assets/configure-icon.svg) to open the properties in the sidebar. Change the element names as `general-info` and `professional-info`, and titles as General Information and Professional Information respectively. In the sidebar, select content to open the content browser. In the Form Objects tab, select `guideRootPanel`. In the editor, the guideRootPanel is selected. Select ![cmppr](assets/configure-icon.svg) in the component toolbar to open its properties. In the Panel Layout field, select **[!UICONTROL Tabs on Top]** and select **[!UICONTROL Done]**. The tabbed template structure is applied.
 
 ### Adding content in tabs {#adding-content-in-tabs}
 
@@ -200,7 +200,7 @@ After you have added fields, you can add buttons such as Submit and Reset.
 
 ### 템플릿 정책을 사용하여 적응형 양식 구성 요소에 사용자 지정 속성 추가
 
-사용자 지정 속성을 사용하면 양식 템플릿을 사용하여 사용자 지정 속성(키-값 쌍)을 적응형 양식 핵심 구성 요소에 연결할 수 있습니다. 사용자 지정 속성이에 반영됩니다. **[!UICONTROL 속성]** 구성 요소의 헤드리스 렌디션 섹션에 자세히 설명되어 있습니다. 이를 통해 사용자 지정 속성 값에 따라 조정되는 동적 양식 비헤이비어를 만들 수 있습니다. 예를 들어 개발자는 모바일, 데스크탑 또는 웹 플랫폼용 Headless Forms 구성 요소의 다양한 표현물을 디자인할 수 있으므로 다양한 장치에서 사용자 경험을 크게 향상시킬 수 있습니다.
+사용자 정의 속성을 사용하면 양식 템플릿을 사용하여 사용자 정의 속성(키-값 쌍)을 적응형 양식 핵심 구성 요소에 연결할 수 있습니다. 사용자 지정 속성이에 반영됩니다. **[!UICONTROL 속성]** 구성 요소의 헤드리스 렌디션 섹션에 자세히 설명되어 있습니다. 사용자 정의 속성 값에 따라 조정되는 동적 양식 동작을 만들 수 있습니다. 예를 들어 개발자는 모바일, 데스크탑 또는 웹 플랫폼을 위한 헤드리스 양식 구성 요소의 다양한 표현을 디자인하여 다양한 디바이스에서 사용자 경험을 크게 향상시킬 수 있습니다.
 
 적응형 양식 핵심 구성 요소 필드에 사용자 지정 속성을 추가하는 단계는 다음과 같습니다.
 
@@ -224,10 +224,10 @@ After you have added fields, you can add buttons such as Submit and Reset.
 #### 핵심 구성 요소의 편집 대화 상자에서 사용자 지정 그룹 이름 선택 {#select-a-custom-group-name}
 
 1. 편집 모드에서 적응형 양식을 엽니다.
-1. 템플릿 편집기에서 사용자 지정 속성이 정의된 구성 요소를 탭하고 을 누릅니다 ![settings_icon](assets/configure-icon.svg) 구성 요소의 편집 대화 상자를 엽니다.
+1. 템플릿 편집기에서 사용자 지정 속성이 정의된 구성 요소를 선택하고 ![settings_icon](assets/configure-icon.svg) 구성 요소의 편집 대화 상자를 엽니다.
 1. 다음 항목 선택 **[!UICONTROL 고급]** 탭.
 1. 에서 사용자 정의 속성 그룹 이름 선택 **[!UICONTROL 사용자 지정 속성 선택]** 드롭다운. 정의된 모든 사용자 정의 그룹 이름은 드롭다운 목록에서 자동으로 채워집니다.
-1. 누르기 **[!UICONTROL 완료]** 속성을 저장합니다.
+1. 선택 **[!UICONTROL 완료]** 속성을 저장합니다.
 
 ![사용자 정의 속성 그룹 이름 선택](/help/forms/assets/select-custom-properties-group-name.png)
 

@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
 exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '614'
 ht-degree: 7%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 7%
    >
    >비공개 폴더에 `Owner` 역할. 따라서 관리자는 개인 폴더에서 일부 소유자 구성원을 제거할 수 없습니다. 그러나 개인 폴더에서 기존 소유자(및 관리자 자체)를 제거하려면 관리자가 다른 사용자를 소유자로 추가해야 합니다.
 
-1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다. 사용자가 할당된 역할에 따라 사용자가에 로그인할 때 개인 폴더에 대한 권한 집합이 할당됩니다. [!DNL Assets].
+1. 클릭 **[!UICONTROL 저장 및 닫기]**. 사용자가 할당된 역할에 따라 사용자가에 로그인할 때 개인 폴더에 대한 권한 집합이 할당됩니다. [!DNL Assets].
 1. 클릭 **[!UICONTROL 확인]** 확인 메시지를 닫습니다.
 1. 폴더를 공유하는 사용자는 사용자 인터페이스에서 공유 알림을 받습니다.
 

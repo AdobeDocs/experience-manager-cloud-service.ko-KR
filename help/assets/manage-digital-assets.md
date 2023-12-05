@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4301'
+source-wordcount: '4270'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=ko) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
 이 문서에서는에서 에셋을 관리하고 편집하는 방법을 설명합니다. [!DNL Adobe Experience Manager Assets]. 관리하려면 [!DNL Content Fragments], 참조 [[!DNL Content Fragments]](content-fragments/content-fragments.md) 에셋.
@@ -69,13 +69,13 @@ ZIP 파일을 추출하려면 다음 단계를 수행하십시오.
 에셋을 미리 보려면 다음 단계를 수행합니다.
 
 1. 에셋 사용자 인터페이스에서 미리 보려는 에셋의 위치로 이동합니다.
-1. 원하는 에셋을 탭하여 엽니다.
+1. 원하는 자산을 선택하여 엽니다.
 
 1. 미리보기 모드에서 다음에 대한 확대/축소 옵션을 사용할 수 있습니다. [지원되는 이미지 유형](/help/assets/file-format-support.md) (대화형 편집 사용).
 
    자산을 확대하려면 다음을 선택합니다 `+` (또는 에셋에서 돋보기를 선택합니다.) 축소하려면 다음을 선택합니다 `-`. 확대하면 패닝으로 이미지의 모든 영역을 자세히 볼 수 있습니다. 확대/축소 재설정 화살표를 사용하면 원래 보기로 돌아갑니다.
 
-   누르기 **[!UICONTROL 재설정]** 뷰를 원래 크기로 재설정합니다.
+   선택 **[!UICONTROL 재설정]** 뷰를 원래 크기로 재설정합니다.
 
 ## 속성 편집 {#editing-properties}
 
@@ -106,7 +106,7 @@ ZIP 파일을 추출하려면 다음 단계를 수행하십시오.
    >
    > 태그를 만들려면 다음 위치에 쓰기 권한이 있어야 합니다. `/content/cq:tags/default` crx 저장소의 경로입니다.
 
-1. 선택 **[!UICONTROL 저장 및 닫기]**.
+1. **[!UICONTROL 저장 후 닫기]**&#x200B;를 선택합니다.
 
 1. Assets 사용자 인터페이스로 이동합니다. 제목, 설명 및 태그를 포함한 편집된 메타데이터 속성은 카드 보기의 자산 카드 및 목록 보기의 관련 열 아래에 표시됩니다.
 
@@ -340,7 +340,7 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 
 빠른 작업 아이콘은 한 번에 하나의 에셋에 사용할 수 있습니다. 장치에 따라 다음 작업을 수행하여 빠른 작업 아이콘을 표시합니다.
 
-* 터치 장치: 터치 및 홀드. 예를 들어 iPad에서 빠른 작업이 표시되도록 에셋을 길게 탭할 수 있습니다.
+* 터치 장치: 터치 및 홀드. 예를 들어 iPad에서 빠른 작업이 표시되도록 자산을 선택하고 유지할 수 있습니다.
 * 비-터치 장치: 마우스 포인터. 예를 들어 데스크탑 디바이스에서 포인터를 자산 썸네일 위에 두면 빠른 작업 표시줄이 표시됩니다.
 
 <!-- Hiding this topic via cqdoc-18707

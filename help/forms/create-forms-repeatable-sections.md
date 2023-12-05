@@ -3,10 +3,10 @@ title: 적응형 양식 핵심 구성 요소에서 반복 가능한 패널을 �
 description: 적응형 양식에서 반복 가능한 섹션 또는 필드를 만드는 방법에 대해 알아봅니다.
 role: Architect, Developer, Admin, User
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 6%
+source-wordcount: '1256'
+ht-degree: 2%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 6%
 ![접근성 탭](/help/forms/assets/repeat-panel.png)
 
 패널이 반복 가능하도록 하려면 다음 단계를 수행하십시오.
-1. 패널 컨테이너를 선택하고 탭합니다. ![cmppr](/help/forms/assets/cmppr.png).
+1. 패널 컨테이너를 선택하고 을(를) 선택합니다 ![cmppr](/help/forms/assets/cmppr.png).
 1. 다음을 클릭합니다. **반복 패널** 토글을 다음으로 전환 **패널이 반복 가능하도록 설정**.
 1. 설정 **최소 반복** 반복 가능한 최소 섹션에 필요한 경우 다음을 설정할 수 있습니다 **최소 반복** 패널을 복원하지 않거나 반복된 패널을 제거하려면 0으로 설정합니다. 기본적으로 최소 반복 값은 0입니다.
 1. 설정 **최대 반복** 필요한 횟수만큼 패널을 반복하려면 기본적으로 값이 무한대입니다.
@@ -63,7 +63,7 @@ ht-degree: 6%
 
 반복할 패널의 상위 항목에는 패널의 반복 인스턴스를 관리하기 위한 추가 버튼이 포함되어 있어야 합니다. 상위에 단추를 삽입하고 단추에 스크립트를 활성화하려면 다음 단계를 수행하십시오.
 
-1. 추가 **버튼 구성 요소** (으)로 변경되었습니다. 아래 예제 비디오에서 레이블 이름이 인 버튼 구성 요소 **추가** 및 필드 이름 **패널 추가**&#x200B;가 사용됩니다. 구성 요소를 선택하고 을 누릅니다 ![규칙 편집](/help/forms/assets/edit-rules.png). 버튼 구성 요소의 규칙이 규칙 편집기에 열립니다.
+1. 추가 **버튼 구성 요소** (으)로 변경되었습니다. 아래 예제 비디오에서 레이블 이름이 인 버튼 구성 요소 **추가** 및 필드 이름 **패널 추가**&#x200B;가 사용됩니다. 구성 요소를 선택하고 을 선택합니다. ![규칙 편집](/help/forms/assets/edit-rules.png). 버튼 구성 요소의 규칙이 규칙 편집기에 열립니다.
 1. 규칙 편집기 창에서 **만들기**.
 
    선택 **비주얼 편집기** 양식 개체 및 함수 행에서
@@ -84,7 +84,7 @@ ht-degree: 6%
 
 패널의 상위에는 반복 가능한 패널의 인스턴스를 삭제하려면 삭제 단추가 있어야 합니다. 상위에 단추를 삽입하고 단추에 스크립트를 활성화하여 반복 가능한 패널을 삭제하려면 다음 단계를 수행하십시오.
 
-1. 추가 **버튼 구성 요소** 패널의 상위, 아래 비디오에서 레이블 이름이 인 버튼 구성 요소 **삭제** 및 필드 이름 **DeletePanel** 를 사용합니다. 구성 요소를 선택하고 을 누릅니다 ![규칙 편집](/help/forms/assets/edit-rules.png). 버튼 구성 요소의 규칙이 규칙 편집기에 열립니다.
+1. 추가 **버튼 구성 요소** 패널의 상위, 아래 비디오에서 레이블 이름이 인 버튼 구성 요소 **삭제** 및 필드 이름 **DeletePanel** 를 사용합니다. 구성 요소를 선택하고 을 선택합니다. ![규칙 편집](/help/forms/assets/edit-rules.png). 버튼 구성 요소의 규칙이 규칙 편집기에 열립니다.
 1. 규칙 편집기 창에서 **만들기**.
 
    선택 **비주얼 편집기** 양식 개체 및 함수 행에서
@@ -151,8 +151,8 @@ ht-degree: 6%
 
 A panel has various layouts options. The Layout for accordian design option has out of the box support for repeatable panels. Perform the following steps to repeatable panel with Layout for accordian design option:
 
-1. On the parent of panel to be repeated, tap ![cmppr](assets/cmppr.png). You can see the properties in the sidebar. In the **Layout** drop-down, select **Accordion**.
-1. On a panel, which is to be repeated, tap ![cmppr](assets/cmppr.png). You can see the panel properties in the sidebar. Enable the **Make Panel Repeatable** tab, and specify value for the **Maximum** and **Minimum** fields.
+1. On the parent of panel to be repeated, select ![cmppr](assets/cmppr.png). You can see the properties in the sidebar. In the **Layout** drop-down, select **Accordion**.
+1. On a panel, which is to be repeated, select ![cmppr](assets/cmppr.png). You can see the panel properties in the sidebar. Enable the **Make Panel Repeatable** tab, and specify value for the **Maximum** and **Minimum** fields.
 
    Now, you can use the plus (+) and delete ( ![delete-panel](assets/delete-panel.png)) buttons to add and remove the panels.
 

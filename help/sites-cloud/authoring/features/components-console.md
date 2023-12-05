@@ -2,10 +2,10 @@
 title: 구성 요소 콘솔
 description: 구성 요소 콘솔에서 인스턴스에 대해 정의된 모든 구성 요소를 탐색할 수 있습니다.
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 95%
+ht-degree: 92%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 95%
 
 구성 요소 콘솔에서 인스턴스에 대해 정의된 모든 구성 요소를 탐색하고 각 구성 요소에 대한 주요 정보를 볼 수 있습니다.
 
-**도구 ->** **일반 ->** **구성 요소**&#x200B;에서 액세스할 수 있습니다. 구성 요소에 대한 트리 구조가 없으므로 목록 보기만 사용할 수 있습니다.
+다음에서 액세스할 수 있습니다 **도구 >** **일반 >** **구성 요소**. 구성 요소에 대한 트리 구조가 없으므로 목록 보기만 사용할 수 있습니다.
 
 ![구성 요소 콘솔](/help/sites-cloud/authoring/assets/components-console.png)
 

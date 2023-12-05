@@ -4,10 +4,10 @@ description: 사용자 매핑 도구 사용(기존)
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 2%
+source-wordcount: '806'
+ht-degree: 1%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 2%
 
 사용자 매핑 도구는 컨텐츠 전송 도구에 통합되어 있습니다. 다음에서 컨텐츠 전송 도구를 다운로드할 수 있습니다. [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). 최신 버전에 대한 자세한 내용은 [최신 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-1. Adobe Experience Manager을 선택하고 도구 -> 로 이동합니다. **작업** -> **컨텐츠 마이그레이션**.
+1. Adobe Experience Manager을 선택하고 도구 > 로 이동합니다. **작업** > **컨텐츠 마이그레이션**.
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access1.png)
 

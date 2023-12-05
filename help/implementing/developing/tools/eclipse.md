@@ -2,9 +2,9 @@
 title: Eclipse용 AEM 개발자 도구
 description: Apache Sling용 Eclipse 플러그인을 기반으로 하는 Eclipse 플러그인인 AEM Developer Tools for Eclipse를 사용하는 방법에 대해 알아봅니다.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1191'
+source-wordcount: '1138'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ AEM 개발자 도구를 사용하기 전에 다음을 수행해야 합니다.
 1. 클릭 **추가...**.
 1. 다음에서 **이름** 필드, 입력 `AEM Developer Tools`.
 1. 다음에서 **위치** 필드에서 설치 URL을 복사합니다.
-1. **추가**&#x200B;를 클릭합니다.
+1. 클릭 **추가**.
 1. 둘 다 확인 **AEM** 및 **슬링** plugins.
 1. **다음**&#x200B;을 클릭합니다.
 1. 다음에서 **설치 세부 정보** 창에서 다음을 클릭: **다음** 다시.
@@ -196,7 +196,7 @@ _Eclipse용 Experience Manager 개발 도구_ AEM 프로젝트 및 인스턴스�
 
 프로젝트에서 패키지를 다시 빌드하려면 를 마우스 오른쪽 단추로 클릭합니다. `PROJECT.ui.apps` 또는 `PROJECT.ui.content` 및 선택 **다음으로 실행** > **Maven 설치**.
 
-이제 내부에 패키지를 사용하여 타겟 폴더를 만들었습니다(예: `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
+이제 내부에 패키지를 사용하여 타겟 폴더를 만듭니다(예: `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
 ## 문제 해결 {#troubleshooting}
 

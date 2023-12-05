@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '631'
-ht-degree: 6%
+source-wordcount: '621'
+ht-degree: 5%
 
 ---
 
@@ -16,12 +16,12 @@ ht-degree: 6%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/previewing-3d-assets.html?lang=ko-KR) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/previewing-3d-assets.html?lang=ko-KR) |
 | AEM as a Cloud Service | 이 문서 |
 
 Experience Manager Assets은 3D 에셋의 수집, 관리, 미리보기 및 전달을 지원합니다.
 
-자동으로 생성된 축소판 렌디션이나 대화형 3D 뷰어로 3D 에셋을 미리 볼 수 있습니다. 대화형 3D 뷰어는 Experience Manager의 에셋 세부 사항 페이지에서 사용할 수 있습니다. 뷰어에는 3D 장면 주위로 회전, 확대/축소 및 패닝할 수 있는 대화형 카메라 컨트롤 컬렉션이 포함되어 있습니다.
+자동으로 생성된 축소판 렌디션이나 대화형 3D 뷰어로 3D 자산을 미리 볼 수 있습니다. 대화형 3D 뷰어는 Experience Manager의 에셋 세부 사항 페이지에서 사용할 수 있습니다. 뷰어에는 3D 장면 주위로 회전, 확대/축소 및 패닝할 수 있는 대화형 카메라 컨트롤 컬렉션이 포함되어 있습니다.
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
@@ -90,7 +90,7 @@ Experience Manager은 기본적으로 다음 파일 형식에 대해 대화형 3
    | **카메라 돌리기** | 3D 장면 및 개체 주위로 보기를 궤도 회전합니다. | 마우스 왼쪽 단추를 클릭하고 드래그합니다. | 한 손가락으로 + 드래그. |
    | **카메라 회전** | 보기를 왼쪽, 오른쪽, 위쪽 또는 아래쪽으로 회전합니다. | 마우스 오른쪽 단추를 클릭하고 드래그하십시오. | 두 손가락으로 + 드래그. |
    | **카메라 확대/축소** | 3D 장면의 영역 안과 밖으로 이동합니다. | 스크롤 휠입니다. | 손가락 두 개 조입니다. |
-   | **카메라를 가운데로 다시 맞춤** | 카메라를 3D 장면의 개체에 있는 점에 다시 가운데로 맞춥니다. | 두 번 클릭합니다. | 두 번 탭합니다. |
+   | **카메라를 가운데로 다시 맞춤** | 카메라를 3D 장면의 개체에 있는 점에 다시 가운데로 맞춥니다. | 두 번 클릭합니다. | 두 번 선택합니다. |
    | **재설정** | 페이지의 오른쪽 하단 모서리 근처에서 재설정 아이콘을 선택하여 보기 대상 지점을 3D 에셋의 가운데로 복원합니다. 또한 재설정을 사용하면 카메라를 더 가깝게 또는 더 멀리 이동하여 에셋을 전체적으로 적절한 보기 크기로 표시할 수 있습니다. |   |   |
    | **전체 화면 모드** | 전체 화면 모드로 전환하려면 페이지의 오른쪽 아래 모서리에서 전체 화면 아이콘을 선택합니다. |   |   |
 

@@ -2,10 +2,10 @@
 title: 적응형 Forms에 대한 기록 문서를 생성하는 방법
 description: 적응형 Forms 핵심 구성 요소용 기록 문서(DoR)에 대한 템플릿을 생성하는 방법에 대해 알아봅니다.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3106'
-ht-degree: 2%
+source-wordcount: '3108'
+ht-degree: 1%
 
 ---
 
@@ -39,7 +39,7 @@ XFA 템플릿(XDP 파일)을 AEM Forms 인스턴스에 업로드합니다. XFA �
 
 1. Experience Manager 작성자 인스턴스에서 **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서].**
 1. 양식을 선택하거나 적응형 양식을 만들고 **[!UICONTROL 속성]**.
-1. 속성 창에서 을 누릅니다. **[!UICONTROL 양식 모델]**.
+1. 속성 창에서 다음을 선택합니다. **[!UICONTROL 양식 모델]**.
 1. 다음에서  **[!UICONTROL 양식 모델]** 탭, **[!UICONTROL 다음에서 선택]** 드롭다운, 선택 **[!UICONTROL 양식 데이터 모델]**, **[!UICONTROL 스키마]** 또는 **[!UICONTROL 없음]**. 양식을 만들 때 양식 모델을 선택할 수도 있습니다.
 1. 양식 모델 탭의 기록 문서 템플릿 구성 섹션에서 다음을 선택합니다. **양식 템플릿을 기록 문서 템플릿으로 연결**. 이 옵션을 선택하면 컴퓨터에서 사용할 수 있는 모든 XFA 템플릿(XDP 파일)이 표시됩니다. 적절한 파일을 선택합니다. 또한 적응형 양식 및 선택한 XFA 템플릿(XDP 파일)에 동일한 스키마(데이터 스키마)를 사용해야 합니다.
 1. 클릭 **[!UICONTROL 완료.]**
@@ -52,7 +52,7 @@ Adobe Acrobat PDF(Acroform)을 AEM Forms 인스턴스에 업로드합니다. 기
 
 1. Experience Manager 작성자 인스턴스에서 **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서].**
 1. 양식 선택 또는 **[!UICONTROL 적응형 양식 만들기]**, 및 클릭 **[!UICONTROL 속성]**.
-1. 속성 창에서 을 누릅니다. **[!UICONTROL 양식 모델]**.
+1. 속성 창에서 다음을 선택합니다. **[!UICONTROL 양식 모델]**.
 1. 다음에서  **[!UICONTROL 양식 모델]** 탭, **[!UICONTROL 다음에서 선택]** 드롭다운, 선택 **[!UICONTROL 양식 데이터 모델]**, **[!UICONTROL 스키마]** 또는 **[!UICONTROL 없음]**. 양식을 만들 때 양식 모델을 선택할 수도 있습니다.
 1. 양식 모델 탭의 기록 문서 템플릿 구성 섹션에서 다음을 선택합니다. **양식 템플릿을 기록 문서 템플릿으로 연결**. 이 옵션을 선택하면 컴퓨터에서 사용할 수 있는 모든 Acrobat PDF(Acroform)가 표시됩니다. 사용할 Acroform을 선택합니다.
 1. 클릭 **[!UICONTROL 완료.]**
@@ -73,7 +73,7 @@ Adobe Acrobat PDF(Acroform)을 AEM Forms 인스턴스에 업로드합니다. 기
 
 1. Experience Manager 작성자 인스턴스에서 **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서].**
 1. 양식을 선택하거나 적응형 양식을 만들고 **[!UICONTROL 속성]**.
-1. 속성 창에서 을 누릅니다. **[!UICONTROL 양식 모델]**.
+1. 속성 창에서 다음을 선택합니다. **[!UICONTROL 양식 모델]**.
 1. 다음에서  **[!UICONTROL 양식 모델]** 탭, **[!UICONTROL 다음에서 선택]** 드롭다운, 선택 **[!UICONTROL 양식 데이터 모델]**, **[!UICONTROL 스키마]** 또는 **[!UICONTROL 없음]**. 양식을 만들 때 양식 모델을 선택할 수도 있습니다.
 1. 양식 모델 탭의 기록 문서 템플릿 구성 섹션에서 다음을 선택합니다. **기록 문서 생성**.
 1. 클릭 **[!UICONTROL 완료.]**
@@ -317,10 +317,10 @@ When you select a form model, configure Document of Record using options availab
 
 기록 문서 탭에 입력하는 브랜딩 정보를 현지화하려면 브라우저의 로케일이 적절하게 설정되어 있는지 확인하십시오. 기록 문서의 브랜딩 정보를 사용자 정의하려면 다음 단계를 수행합니다.
 
-1. 기록 문서에서 패널(루트 패널)을 선택한 다음 을 누릅니다 ![구성](assets/configure.png).
-1. 누르기 ![도르탑](assets/dortab.png). 기록 문서 탭이 나타납니다.
+1. 기록 문서에서 패널(루트 패널)을 선택한 다음 을 선택합니다 ![구성](assets/configure.png).
+1. 선택 ![도르탑](assets/dortab.png). 기록 문서 탭이 나타납니다.
 1. 기록 문서를 렌더링하기 위한 기본 템플릿 또는 사용자 지정 템플릿을 선택합니다. 기본 템플릿을 선택하면 템플릿 드롭다운 아래에 기록 문서의 축소판 미리 보기가 나타납니다.
-1. 기본 또는 사용자 지정 템플릿 선택 여부에 따라 다음 속성의 일부 또는 전체가 기록 문서 탭에 표시됩니다. 아래 언급된 등록 정보를 지정하여 기록 문서의 모양을 정의합니다.
+1. 기본 또는 사용자 지정 템플릿 선택 여부에 따라 다음 속성 중 일부 또는 모든 속성이 기록 문서 탭에 나타납니다. 아래 언급된 등록 정보를 지정하여 기록 문서의 모양을 정의합니다.
 
    1. **기본 속성**:
       * **템플릿**: 사용자 지정 템플릿을 선택하려면에서 XDP를 검색하여 선택하십시오 [!DNL AEM Forms] 서버입니다. 에서 사용할 수 없는 템플릿을 사용하려는 경우 [!DNL AEM Forms] 서버, 먼저 XDP를 [!DNL AEM Forms] 서버입니다.
@@ -343,7 +343,7 @@ When you select a form model, configure Document of Record using options availab
 
 
 
-   1. **마스터 페이지  속성**:
+   1. **기본 페이지 속성**:
       * **로고 이미지**: 적응형 양식에서 로고 이미지를 사용하거나, DAM에서 로고 이미지를 선택하거나, 컴퓨터에서 로고 이미지를 업로드할 수 있습니다.
       * **양식 제목**: DoR의 제목
       * **머리글 텍스트**: 기록 문서의 머리글 섹션에 나타나는 텍스트입니다.
@@ -351,7 +351,7 @@ When you select a form model, configure Document of Record using options availab
       * **면책조항**: 기록 문서에 대한 권한 및 의무의 범위를 지정하는 텍스트입니다.
       * **면책조항 텍스트**: 면책조항 텍스트.
 
-      ![마스터 페이지  속성](/help/forms/assets/dorpropertiesimg.png)
+      ![기본 페이지 속성](/help/forms/assets/dorpropertiesimg.png)
 
    >[!NOTE]
    >
@@ -369,7 +369,7 @@ When you select a form model, configure Document of Record using options availab
    </proto>
    ```
 
-1. 브랜딩 변경 사항을 저장하려면 을 누릅니다 **[!UICONTROL 완료]**.
+1. 브랜딩 변경 사항을 저장하려면 **[!UICONTROL 완료]**.
 
 
 

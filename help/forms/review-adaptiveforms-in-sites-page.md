@@ -4,10 +4,10 @@ description: 검토는 검토자가 작업 할당 단계를 사용하여 적응�
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 5%
+source-wordcount: '338'
+ht-degree: 4%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 5%
 1. 편집 모드에서 작성자 인스턴스를 엽니다.
 1. 다음으로 이동 **[!UICONTROL 도구]** >  **[!UICONTROL 워크플로]** >  **[!UICONTROL 모델]** > **[!UICONTROL 만들기]** > **[!UICONTROL 모델 만들기]**
 1. 워크플로우의 제목 을 지정하고 **[작업 할당]** 단계
-1. 누르기 ![settings_icon](assets/settings_icon.png) 작업 표시줄에 표시됩니다. 다음 **[!UICONTROL 작업 할당]** 대화 상자가 열립니다.
+1. 선택 ![settings_icon](assets/settings_icon.png) 작업 표시줄에 표시됩니다. 다음 **[!UICONTROL 작업 할당]** 대화 상자가 열립니다.
 1. 열기 [!UICONTROL 양식 및 문서] tab 키를 누른 상태로 열기 [!UICONTROL 미리 채워짐] 드롭다운 및 지정:
 
    * 다음을 사용하여 입력 데이터 파일 선택
@@ -44,7 +44,7 @@ ht-degree: 5%
 이제 사이트의 페이지에서 적응형 양식 컨테이너 구성 요소의 제출 액션을 구성합니다.
 
 1. 사이트의 페이지로 이동합니다.
-1. 누르기 ![settings_icon](assets/settings_icon.png) 적응형 양식 컨테이너. 다음 **[!UICONTROL 적응형 양식 컨테이너]** 대화 상자가 열립니다.
+1. 선택 ![settings_icon](assets/settings_icon.png) 적응형 양식 컨테이너. 다음 **[!UICONTROL 적응형 양식 컨테이너]** 대화 상자가 열립니다.
 1. 를 엽니다. **[!UICONTROL 제출]** 탭 및 지정 **[!UICONTROL 제출 액션]** 끝 [AEM 워크플로우 호출](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#invoke-an-aem-workflow)
 
 1. 클릭 [완료] 설정을 저장합니다.

@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.3.0 릴리스 정보입니다.'
 description: "[!DNL Adobe Experience Manager] 2021.3.0용 as a Cloud Service 릴리스 노트"
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 37%
+source-wordcount: '1271'
+ht-degree: 33%
 
 ---
 
@@ -86,7 +86,7 @@ Adobe 담당자에게 문의하여 데모를 받거나 서비스에 등록할 �
 ## 릴리스 일자 {#release-date-cm-march}
 
 AEM as a Cloud Service 2021.3.0의 Cloud Manager 릴리스 일자는 2021년 3월 11일입니다.
-다음 릴리스는 2021년 4월 08일에 예정되어 있습니다.
+다음 릴리스는 2021년 4월 8일 금요일에 예정되어 있습니다.
 
 ### 새로운 기능 {#what-is-new-march}
 
@@ -94,7 +94,7 @@ AEM as a Cloud Service 2021.3.0의 Cloud Manager 릴리스 일자는 2021년 3�
 
 * 이제 필수 권한이 있는 사용자는 프로그램을 편집하여 셀프서비스 방식으로 다음과 같은 작업을 수행할 수 있습니다.
 
-   * Assets가 있는 기존 프로그램에 Sites 솔루션을 추가하거나 그 반대로 할 수 있습니다.
+   * Assets가 있는 기존 프로그램에 Sites 솔루션을 추가하거나, 그 반대도 마찬가지입니다.
    * Sites와 Assets가 모두 있는 기존 프로그램에서 Sites 또는 Assets를 제거할 수 있습니다.
    * 두 번째 미사용 솔루션 권한을 기존 프로그램에 추가하거나 새 프로그램으로 추가합니다.
 
@@ -147,7 +147,7 @@ AEM as a Cloud Service 2021.3.0의 Cloud Manager 릴리스 일자는 2021년 3�
 ### 컨텐츠 전송 도구의 새로운 기능 {#what-is-new-ctt-march}
 
 * CTT는 이제 `/apps` 대신 `/libs` 특정 페이지에 대한 브라우저 책갈피가 더 이상 유효하지 않을 수 있습니다.
-* CTT가 설치되면 사용자는 추가 수준을 탐색하여 콘텐츠 전송 페이지로 이동해야 합니다. 다음을 참조하십시오 [컨텐츠 전송 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ko-KR) 을 참조하십시오.
+* CTT가 설치되면 사용자는 추가 수준을 탐색하여 콘텐츠 전송 페이지로 이동해야 합니다. 다음을 참조하십시오 [컨텐츠 전송 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html) 을 참조하십시오.
 
 ### 버그 수정 {#bug-fixes-ctt-march}
 

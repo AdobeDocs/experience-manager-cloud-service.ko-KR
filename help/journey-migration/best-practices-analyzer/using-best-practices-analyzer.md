@@ -2,10 +2,10 @@
 title: 모범 사례 분석기 사용
 description: 모범 사례 분석기를 사용하여 업그레이드 준비 상태를 이해하는 방법에 대해 알아봅니다.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2476'
-ht-degree: 45%
+source-wordcount: '2418'
+ht-degree: 42%
 
 ---
 
@@ -57,7 +57,7 @@ Best Practices Analyzer(BPA) 실행을 위한 중요한 고려 사항을 이해�
 
 모범 사례 분석기 보고서를 보는 방법에 대해 알아보려면 이 섹션을 따르십시오.
 
-1. Adobe Experience Manager 를 선택하고 도구 -> 로 이동합니다. **작업** -> **모범 사례 분석기**.
+1. Adobe Experience Manager 를 선택하고 도구 > 로 이동합니다. **작업** > **모범 사례 분석기**.
 
    ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
@@ -125,7 +125,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_interpreting"
 >title="모범 사례 분석기 보고서 해석"
->abstract="UI와 CSV와 같이 BPA 보고서 출력을 볼 수 있는 두 가지 옵션이 있습니다. AEM 인스턴스에서 모범 사례 분석기 도구를 실행하면 UI 보고서가 도구 창의 결과로 표시됩니다. 보고서의 CSV 형식에는 패턴 탐지기 출력에서 생성된 정보가 포함되어 있으며 카테고리 유형, 하위 유형 및 중요도 수준별로 정렬 및 구성됩니다."
+>abstract="UI와 CSV와 같이 BPA 보고서 출력을 볼 수 있는 두 가지 옵션이 있습니다. AEM 인스턴스에서 모범 사례 분석기 도구를 실행하면 UI 보고서가 도구 창의 결과로 표시됩니다. 보고서의 CSV 형식에는 패턴 탐지기 출력에서 생성된 정보가 포함되어 있으며 범주 유형, 하위 유형 및 중요도 수준별로 정렬 및 구성됩니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=ko-KR#analysis-report" text="Best Practices Analysis 보고서 검토"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=ko-KR" text="모범 사례 분석기 보고서 범주 이해"
 
@@ -233,7 +233,7 @@ HTTP 인터페이스를 통해 보고서의 생성을 시작하는 간단한 방
 
 ## 관리자 정보
 
-### 캐시 새로 고침 조정 {#cache-adjustment}
+### 캐시 수명 조정 {#cache-adjustment}
 
 기본 BPA 캐시 수명은 24시간입니다. 보고서를 새로 고치고 캐시를 다시 생성하는 옵션과 함께 AEM 인스턴스와 HTTP 인터페이스 모두에서 이 기본값은 BPA의 대부분의 사용에 적절할 수 있습니다. 보고서 생성 시간이 AEM 인스턴스에 대해 특히 긴 경우 보고서 재생성을 최소화하기 위해 캐시 수명을 조정할 수 있습니다.
 

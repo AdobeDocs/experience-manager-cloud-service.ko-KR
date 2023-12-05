@@ -2,10 +2,10 @@
 title: Cloud Service 콘텐츠 요청 이해
 description: Adobe에서 컨텐츠 요청 라이선스를 구입한 경우 Adobe Experience Cloud as a Service가 측정하는 컨텐츠 요청 유형과 조직의 분석 보고 도구와의 차이에 대해 알아봅니다.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 11%
+source-wordcount: '1165'
+ht-degree: 10%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 11%
 
 ## Cloud Service 컨텐츠 요청 분산{#content-requests-variances}
 
-콘텐츠 요청은 다음 표에 요약된 바와 같이 조직의 Analytics 보고 도구와 차이가 있을 수 있습니다. 일반적으로 Analytics 도구는 클라이언트측 계측을 통해 데이터를 수집합니다 <b>를 사용하면 안 됨</b> 특정 사이트에 대한 콘텐츠 요청 수를 보고하려면 종종 트리거되는 사용자 동의에 의존하기 때문에 트래픽의 상당 부분을 누락합니다. Analytics 도구는 로그 파일에 서버측에서 데이터를 수집하거나, AEM as a Cloud Service을 기반으로 자체 CDN을 추가하는 고객을 위한 CDN 보고서를 더 나은 개수를 제공합니다. 페이지 보기 수와 관련 성능에 대한 보고를 위해 Adobe RUM 데이터 서비스 가 Adobe 권장 옵션입니다.
+콘텐츠 요청은 다음 표에 요약된 바와 같이 조직의 Analytics 보고 도구와 차이가 있을 수 있습니다. 일반적으로, *금지* 클라이언트측 계측을 통해 데이터를 수집하는 analytics 도구를 사용하여 특정 사이트에 대한 콘텐츠 요청 수를 보고합니다. 이는 종종 트리거되는 사용자 동의에 의존하기 때문에 트래픽의 상당한 부분이 누락되기 때문입니다. Analytics 도구는 로그 파일에 서버측에서 데이터를 수집하거나, AEM as a Cloud Service을 기반으로 자체 CDN을 추가하는 고객을 위한 CDN 보고서를 더 나은 개수를 제공합니다. 페이지 보기 수 및 관련 성능에 대한 보고를 위해 Adobe RUM 데이터 서비스 가 Adobe 권장 옵션입니다.
 
 | 차이가 나는 이유 | 설명 |
 |---|---|
@@ -43,11 +43,11 @@ AEMas a Cloud Service 의 맨 위에 자체 CDN을 가져오는 고객의 경우
 
 | 요청 유형 | 콘텐츠 요청 | 설명 |
 | --- | --- | --- |
-| HTTP 코드 100-299 | 포함 | 이는 모든 콘텐츠 또는 일부 콘텐츠를 제공하는 일반 요청입니다. |
-| 자동화를 위한 HTTP 라이브러리 | 포함 | 예:<br>· Amazon CloudFront<br>· Apache Http 클라이언트<br>· 비동기 Http 클라이언트<br>· Axios<br>· 아쥬레우스<br>· 컬<br>· GitHub 노드 가져오기<br>· 폭풍<br>· Go-http-client<br>· Headless Chrome<br>· Java™ 클라이언트<br>· 저지<br>· 노드 포함<br>· okhttp<br>· Python 요청<br>· Reactor Netty<br>· 위젯<br>· WinHttp |
-| 모니터링 및 상태 확인 도구 | 포함 | 사이트의 특정 측면을 모니터링하기 위해 고객이 설정합니다. 가용성 또는 실제 사용자 성능 등을 예로 들 수 있습니다. 사용 `/system/probes/health` 끝점이며 사이트의 실제 HTML 페이지는 아닙니다.<br>예:<br>· Amazon-Route53-Health-Check-Service<br>· EyeMonIT_bot_version_0.1_[(https://www.eyemon.it/)](https://www.eyemon.it/)<br>· Investics-Site24x7<br>· Mozilla/5.0+(호환 가능, UptimeRobot/2.0; [https://uptimerobot.com/](https://uptimerobot.com/))<br>· ThousandEyes-Dragonfly-x1<br>· OmtrBot/1.0<br>· WebMon/2.0.0 |
-| `<link rel="prefetch">` 요청 | 포함 | 다음 페이지 로드 속도를 높이기 위해 고객은 사용자가 링크를 클릭하기 전에 이미 캐시에 있도록 브라우저에서 페이지 세트를 로드하도록 할 수 있습니다. *정신: 이렇게 하면 트래픽이 크게 증가합니다*- 프리페치된 페이지 수에 따라 다릅니다. |
-| Adobe Analytics 또는 Google Analytics 보고를 차단하는 트래픽 | 포함 | 사이트 방문자는 Google Analytics 또는 Adobe Analytics의 정확성에 영향을 주는 개인 정보 보호 소프트웨어(광고 차단기 등)를 설치하는 것이 더 일반적입니다. AEM as a Cloud Service은 클라이언트측이 아닌 Adobe 운영 인프라의 첫 번째 진입점에 대한 요청을 계산합니다. |
+| HTTP 코드 100-299 | 포함됨 | 이는 모든 콘텐츠 또는 일부 콘텐츠를 제공하는 일반 요청입니다. |
+| 자동화를 위한 HTTP 라이브러리 | 포함됨 | 예:<br>· Amazon CloudFront<br>· Apache Http 클라이언트<br>· 비동기 Http 클라이언트<br>· Axios<br>· 아쥬레우스<br>· 컬<br>· GitHub 노드 가져오기<br>· 폭풍<br>· Go-http-client<br>· Headless Chrome<br>· Java™ 클라이언트<br>· 저지<br>· 노드 포함<br>· okhttp<br>· Python 요청<br>· Reactor Netty<br>· 위젯<br>· WinHttp |
+| 모니터링 및 상태 확인 도구 | 포함됨 | 사이트의 특정 측면을 모니터링하기 위해 고객이 설정합니다. 가용성 또는 실제 사용자 성능 등을 예로 들 수 있습니다. 사용 `/system/probes/health` 끝점이며 사이트의 실제 HTML 페이지는 아닙니다.<br>예:<br>· Amazon-Route53-Health-Check-Service<br>· EyeMonIT_bot_version_0.1_[(https://www.eyemon.it/)](https://www.eyemon.it/)<br>· Investics-Site24x7<br>· Mozilla/5.0+(호환 가능, UptimeRobot/2.0; [https://uptimerobot.com/](https://uptimerobot.com/))<br>· ThousandEyes-Dragonfly-x1<br>· OmtrBot/1.0<br>· WebMon/2.0.0 |
+| `<link rel="prefetch">` 요청 | 포함됨 | 다음 페이지 로드 속도를 높이기 위해 고객은 사용자가 링크를 클릭하기 전에 이미 캐시에 있도록 브라우저에서 페이지 세트를 로드하도록 할 수 있습니다. *정신: 이렇게 하면 트래픽이 크게 증가합니다*- 프리페치된 페이지 수에 따라 다릅니다. |
+| Adobe Analytics 또는 Google Analytics 보고를 차단하는 트래픽 | 포함됨 | 사이트 방문자는 Google Analytics 또는 Adobe Analytics의 정확성에 영향을 주는 개인 정보 보호 소프트웨어(광고 차단기 등)를 설치하는 것이 더 일반적입니다. AEM as a Cloud Service은 클라이언트측이 아닌 Adobe 운영 인프라의 첫 번째 진입점에 대한 요청을 계산합니다. |
 
 참조: [라이선스 대시보드](/help/implementing/cloud-manager/license-dashboard.md).
 

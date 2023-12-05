@@ -2,10 +2,10 @@
 title: 반응형 레이아웃
 description: AEM에서는 페이지에 대한 응답형 레이아웃을 실현할 수 있습니다.
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1732'
-ht-degree: 90%
+source-wordcount: '1737'
+ht-degree: 86%
 
 ---
 
@@ -49,7 +49,7 @@ AEM에서는 메커니즘을 조합하여 페이지에 대한 반응형 레이�
 
 >[!TIP]
 >
->Adobe는 반응형 레이아웃의 [GitHub 설명서](https://adobe-marketing-cloud.github.io/aem-responsivegrid/)를 프론트엔드 개발자에게 참조용으로 제공하여 AEM 외부 그리드를 사용할 수 있도록 합니다. 예를 들어 나중에 사용하기 위해 AEM 사이트에 대한 정적 HTML mock-up을 생성할 때 이를 사용할 수 있습니다.
+>Adobe 제공 [GitHub 설명서](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) 응답형 레이아웃 을 프런트엔드 개발자에게 참조용으로 제공하여 AEM 외부의 AEM 그리드를 사용할 수 있도록 합니다. 예를 들어 나중에 AEM 사이트에 대한 정적 HTML mock-up을 생성할 때 이를 사용할 수 있습니다.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ AEM을 사용하면 디바이스의 폭에 따라 레이아웃을 정의할 수 
 
    에뮬레이터 도구 모음은 추가 레이아웃 옵션을 표시합니다.
 
-   * **디바이스 회전** - 디바이스를 세로(수직) 방향에서 가로(수평) 방향으로 또는 그 반대로 회전할 수 있습니다.
+   * **장치 회전** - 장치를 세로(수직) 방향에서 가로(수평) 방향으로 역으로 회전할 수 있습니다.
 
    ![디바이스 회전 가로 버튼](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
    ![디바이스 회전 세로 버튼](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)
@@ -149,7 +149,7 @@ AEM을 사용하면 디바이스의 폭에 따라 레이아웃을 정의할 수 
 >
 >레이아웃 컨테이너가 단락 시스템이므로 구성 요소를 삭제하면 레이아웃 격자와 컨테이너 내의 모든 구성 요소(및 해당 콘텐츠)가 모두 삭제됩니다.
 
-1. 격자 자리 표시자를 마우스로 가리키거나 탭하면 작업 메뉴가 표시됩니다.
+1. 격자 자리 표시자를 마우스로 가리키거나 선택하면 작업 메뉴가 표시됩니다.
 
    ![레이아웃 컨테이너에 추가](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 

@@ -6,10 +6,10 @@ contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 9e06c115af2a262859d39bcd5ee0016df2475591
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1825'
-ht-degree: 12%
+source-wordcount: '1747'
+ht-degree: 10%
 
 ---
 
@@ -40,7 +40,7 @@ CAPTCHA(컴퓨터와 인간을 구분하기 위해 완전히 자동화된 공공
 
 양식 작성자는 Google의 reCAPTCHA 서비스를 사용하여 적응형 Forms에서 reCAPTCHA를 구현할 수 있습니다. 사이트 보호를 위한 고급 CAPTCHA 기능을 제공합니다. reCAPTCHA 작동 방식에 대한 자세한 내용은 [Google recaptcha](https://developers.google.com/recaptcha/). reCAPTCHA 서비스는 다음을 포함합니다 [!DNL reCAPTCHA v2] 및 [!DNL reCAPTCHA Enterprise] 를 통합할 수 있습니다. [!DNL AEM Forms]. 요구 사항에 따라 reCAPTCHA 서비스를 구성하여 다음을 활성화할 수 있습니다.
 
-![reCAPTCHA](/help/forms/assets/recaptcha_new.png)
+![reCAPT차](/help/forms/assets/recaptcha_new.png)
 
 * [AEM Forms의 reCAPTCHA Enterprise](#steps-to-implement-reCAPTCHA-enterprise-in-forms)
 * [AEM Forms의 reCAPTCHA v2](#steps-to-implement-reCAPTCHA-v2-in-forms)
@@ -54,21 +54,21 @@ CAPTCHA(컴퓨터와 인간을 구분하기 위해 완전히 자동화된 공공
 
    1. **[!UICONTROL 도구 > 일반 > 구성 브라우저]**&#x200B;로 이동합니다.
    1. 폴더를 선택하거나 폴더를 만들고 다음 단계를 사용하여 클라우드 구성에 대해 폴더를 활성화하십시오.
-      1. 구성 브라우저에서 폴더를 선택하고 을 누릅니다 **[!UICONTROL 속성]**.
+      1. 구성 브라우저에서 폴더를 선택하고 **[!UICONTROL 속성]**.
       1. 구성 속성 대화 상자에서 다음을 활성화합니다 **[!UICONTROL 클라우드 구성]**.
-      1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 탭하여 구성을 저장하고 대화 상자를 종료합니다.
+      1. 선택 **[!UICONTROL 저장 및 닫기]** 구성을 저장하고 대화 상자를 종료합니다.
 
 1. 클라우드 서비스 구성 [!DNL reCAPTCHA Enterprise].
 
    1. Experience Manager 작성자 인스턴스에서 ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]**.
-   1. 누르기 **[!UICONTROL reCAPT차]**. Configurations 페이지가 열립니다. 만든 구성 컨테이너를 선택한 다음 탭합니다. **[!UICONTROL 만들기]**.
+   1. 선택 **[!UICONTROL reCAPT차]**. Configurations 페이지가 열립니다. 생성한 구성 컨테이너를 선택하고 을(를) 선택합니다 **[!UICONTROL 만들기]**.
    1. 다음으로 버전 선택 [!DNL reCAPTCHA Enterprise] 및 reCAPTCHA Enterprise 서비스에 대한 이름, 프로젝트 ID, 사이트 키 및 API 키(2단계에서 획득)를 지정합니다.
    1. 키 유형을 선택합니다. 키 유형은 에서 구성한 사이트 키와 동일해야 합니다. [Google 클라우드 프로젝트](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin), 예: **확인란 사이트 키** 또는 **점수 기반 사이트 키**.
    1. 지정 [0~1 범위의 임계값 점수](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores). 임계값 점수보다 크거나 같은 점수는 인간 상호 작용을 식별하고, 그렇지 않으면 봇 상호 작용으로 간주됩니다.
-   1. 누르기 **[!UICONTROL 만들기]** 을 클릭하여 클라우드 서비스 구성을 생성합니다.
+   1. 선택 **[!UICONTROL 만들기]** 을 클릭하여 클라우드 서비스 구성을 생성합니다.
 
 <!--
-    1. In the Edit Component dialog, specify the name, project ID, site key, API key (obtained in steps 2 and 3), select the key type, and enter the threshold score. Tap **[!UICONTROL Save Settings]** and then tap **[!UICONTROL OK]** to complete the configuration.
+    1. In the Edit Component dialog, specify the name, project ID, site key, API key (obtained in steps 2 and 3), select the key type, and enter the threshold score. Select **[!UICONTROL Save Settings]** and then select **[!UICONTROL OK]** to complete the configuration.
 -->
 
 reCAPTCHA Enterprise 서비스가 활성화되면 적응형 양식에서 사용할 수 있습니다. 다음을 참조하십시오 [적응형 양식에서 CAPTCHA 사용](#using-reCAPTCHA).
@@ -83,16 +83,16 @@ reCAPTCHA Enterprise 서비스가 활성화되면 적응형 양식에서 사용�
 1. 클라우드 서비스에 대한 구성 컨테이너를 만듭니다.
    1. **[!UICONTROL 도구 > 일반 > 구성 브라우저]**&#x200B;로 이동합니다.
    1. 폴더를 선택하거나 폴더를 만들고 다음 단계를 사용하여 클라우드 구성에 대해 폴더를 활성화하십시오.
-      1. 구성 브라우저에서 폴더를 선택하고 을 누릅니다 **[!UICONTROL 속성]**.
+      1. 구성 브라우저에서 폴더를 선택하고 **[!UICONTROL 속성]**.
       1. 구성 속성 대화 상자에서 다음을 활성화합니다 **[!UICONTROL 클라우드 구성]**.
-      1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 탭하여 구성을 저장하고 대화 상자를 종료합니다.
+      1. 선택 **[!UICONTROL 저장 및 닫기]** 구성을 저장하고 대화 상자를 종료합니다.
 
 1. reCAPTCHA v2에 대한 클라우드 서비스를 구성합니다.
 
    1. AEM 작성자 인스턴스에서 ![tools-1](assets/tools-1.png) > **Cloud Service**.
-   1. 누르기 **[!UICONTROL reCAPT차]**. Configurations 페이지가 열립니다. 만든 구성 컨테이너를 선택한 다음 탭합니다. **[!UICONTROL 만들기]**.
-   1. 다음으로 버전 선택 [!DNL reCAPTCHA v2] , reCAPTCHA 서비스(1단계에서 획득)에 대한 이름, 사이트 키 및 비밀 키를 지정하고 을 누릅니다 **[!UICONTROL 만들기]** 을 클릭하여 클라우드 서비스 구성을 생성합니다.
-   1. 구성 요소 편집 대화 상자에서 1단계에서 얻은 사이트 및 비밀 키를 지정합니다. 누르기 **[!UICONTROL 설정 저장]** 그런 다음 을 누릅니다 **확인** 구성을 완료합니다.
+   1. 선택 **[!UICONTROL reCAPT차]**. Configurations 페이지가 열립니다. 생성한 구성 컨테이너를 선택하고 을(를) 선택합니다 **[!UICONTROL 만들기]**.
+   1. 다음으로 버전 선택 [!DNL reCAPTCHA v2] , reCAPTCHA 서비스(1단계에서 획득)에 대한 이름, 사이트 키 및 암호 키 를 지정하고 을 선택합니다. **[!UICONTROL 만들기]** 을 클릭하여 클라우드 서비스 구성을 생성합니다.
+   1. 구성 요소 편집 대화 상자에서 1단계에서 얻은 사이트 및 비밀 키를 지정합니다. 선택 **[!UICONTROL 설정 저장]** 다음을 선택합니다. **확인** 구성을 완료합니다.
 
    reCAPTCHA 서비스가 구성되면 적응형 양식에서 사용할 수 있습니다. 자세한 내용은 [적응형 양식에서 CAPTCHA 사용](#using-reCAPTCHA).
 
@@ -116,7 +116,7 @@ reCAPTCHA Enterprise 서비스가 활성화되면 적응형 양식에서 사용�
    >* 적응형 양식에서 Captcha 구성 요소를 두 개 이상 사용하는 것은 지원되지 않습니다. 또한 소극적 로드로 표시된 패널 또는 조각에서는 CAPTCHA를 사용하지 않는 것이 좋습니다.
    >* reCaptcha는 시간에 민감하며 약 2~3분 후에 만료됩니다. 따라서 적응형 양식에서 Captcha 구성 요소를 제출 단추 바로 앞에 배치하는 것이 좋습니다.
 
-1. 추가한 Captcha 구성 요소를 선택하고 을 누릅니다 ![cmppr](assets/cmppr.png) 속성을 편집합니다.
+1. 추가한 Captcha 구성 요소를 선택하고 ![cmppr](assets/cmppr.png) 속성을 편집합니다.
 1. CAPTCHA 위젯의 제목을 지정합니다. 기본값은 입니다. **Captcha**. 선택 **제목 숨기기** 제목을 표시하지 않으려는 경우
 1. 다음에서 **Captcha 서비스** 드롭다운, 선택 **reCAPT차** 에 설명된 대로 구성한 경우 reCAPTCHA 서비스를 활성화하려면 다음을 수행하십시오 [Google의 reCAPTCHA 서비스](#google-reCAPTCHA).
 1. 다음에 대한 설정 드롭다운에서 구성을 선택합니다. **reCAPTCHA 엔터프라이즈** 또는 **reCAPTCHA v2**
@@ -219,11 +219,11 @@ reCAPTCHA Enterprise 서비스가 활성화되면 적응형 양식에서 사용�
 
 ### 규칙에 따라 CAPTCHA 구성 요소 표시 또는 숨기기 {#show-hide-captcha}
 
-적응형 양식의 구성 요소에 적용하는 규칙에 따라 CAPTCHA 구성 요소를 표시하거나 숨기도록 선택할 수 있습니다. 구성 요소를 탭하고 을 선택합니다. ![규칙 편집](assets/edit-rules-icon.svg), 및 탭 **[!UICONTROL 만들기]** 을 클릭하여 규칙을 만듭니다. 규칙 만들기에 대한 자세한 내용은 [규칙 편집기](rule-editor.md).
+적응형 양식의 구성 요소에 적용하는 규칙에 따라 CAPTCHA 구성 요소를 표시하거나 숨기도록 선택할 수 있습니다. 구성 요소를 선택하고 ![규칙 편집](assets/edit-rules-icon.svg), 및 선택 **[!UICONTROL 만들기]** 을 클릭하여 규칙을 만듭니다. 규칙 만들기에 대한 자세한 내용은 [규칙 편집기](rule-editor.md).
 
 예를 들어 CAPTCHA 구성 요소는 양식의 통화 값 필드에 25000보다 큰 값이 있는 경우에만 적응형 양식에 표시해야 합니다.
 
-탭 **[!UICONTROL 통화 값]** 양식에 필드를 입력하고 다음 규칙을 만듭니다.
+다음 항목 선택 **[!UICONTROL 통화 값]** 양식에 필드를 입력하고 다음 규칙을 만듭니다.
 
 ![규칙 표시 또는 숨기기](assets/rules-show-hide-captcha.png)
 
@@ -239,17 +239,17 @@ reCAPTCHA Enterprise 서비스가 활성화되면 적응형 양식에서 사용�
 
 적응형 양식을 제출할 때 CAPTCHA의 유효성을 자동으로 검사하려면 다음 작업을 수행하십시오.
 
-1. CAPTCHA 구성 요소를 탭하고 을 선택합니다 ![cmppr](assets/configure-icon.svg) 구성 요소 속성을 봅니다.
+1. CAPTCHA 구성 요소를 선택하고 ![cmppr](assets/configure-icon.svg) 구성 요소 속성을 봅니다.
 1. 다음에서 **[!UICONTROL CAPTCHA 유효성 검사]** 섹션, 선택 **[!UICONTROL 양식 제출 시 CAPTCHA 유효성 검사]**.
-1. 누르기 ![완료](assets/save_icon.svg) 구성 요소 속성을 저장합니다.
+1. 선택 ![완료](assets/save_icon.svg) 구성 요소 속성을 저장합니다.
 
 #### 사용자 작업 및 조건에 대한 CAPTCHA 유효성 검사 {#validate-captcha-user-action}
 
 조건 및 사용자 작업을 기반으로 CAPTCHA의 유효성을 검사하려면 다음을 수행하십시오.
 
-1. CAPTCHA 구성 요소를 탭하고 을 선택합니다 ![cmppr](assets/configure-icon.svg) 구성 요소 속성을 봅니다.
+1. CAPTCHA 구성 요소를 선택하고 ![cmppr](assets/configure-icon.svg) 구성 요소 속성을 봅니다.
 1. 다음에서 **[!UICONTROL CAPTCHA 유효성 검사]** 섹션, 선택 **[!UICONTROL 사용자 작업에 대한 CAPTCHA 유효성 검사]**.
-1. 누르기 ![완료](assets/save_icon.svg) 구성 요소 속성을 저장합니다.
+1. 선택 ![완료](assets/save_icon.svg) 구성 요소 속성을 저장합니다.
 
 [!DNL Experience Manager Forms] 다음을 제공합니다 `ValidateCAPTCHA` 사전 정의된 조건을 사용하여 CAPTCHA의 유효성을 검사하기 위한 API입니다. 사용자 지정 제출 액션을 사용하거나 적응형 양식의 구성 요소에 대한 규칙을 정의하여 API를 호출할 수 있습니다.
 
@@ -275,7 +275,7 @@ if (slingRequest.getParameter("numericbox1614079614831").length() >= 5) {
 
 1. 다음을 포함하는 스크립트 추가 `ValidateCAPTCHA` 사용자 지정 제출 액션에 대한 API입니다. 사용자 지정 제출 액션에 대한 자세한 내용은 [적응형 Forms에 대한 사용자 지정 제출 액션 만들기](custom-submit-action-form.md).
 1. 에서 사용자 지정 제출 액션의 이름을 선택합니다. **[!UICONTROL 제출 액션]** 드롭다운 목록 **[!UICONTROL 제출]** 적응형 양식의 속성입니다.
-1. 누르기 **[!UICONTROL 제출]**. CAPTCHA는에 정의된 조건을 기반으로 유효성이 검사됩니다. `ValidateCAPTCHA` 사용자 지정 제출 액션의 API입니다.
+1. 선택 **[!UICONTROL 제출]**. CAPTCHA는에 정의된 조건을 기반으로 유효성이 검사됩니다. `ValidateCAPTCHA` 사용자 지정 제출 액션의 API입니다.
 
 **옵션 2: 사용 [!DNL Experience Manager Forms] 양식을 제출하기 전에 사용자 작업에서 CAPTCHA의 유효성을 검사하기 위한 CAPTCHA API 확인**
 

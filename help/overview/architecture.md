@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 아키텍처 소개
 description: Adobe Experience Manager as a Cloud Service 아키텍처 소개.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2665'
-ht-degree: 99%
+source-wordcount: '2658'
+ht-degree: 98%
 
 ---
 
@@ -135,7 +135,7 @@ AEM as a Cloud Service의 상위 수준 구성 가능 서비스 목록은 콘텐
    * 라이선스 지표(예: 콘텐츠 요청, 스토리지, 사용자) 또는 사용 보고서(예: 업로드, 다운로드 수)와 같은 고객 데이터를 노출하는 일을 담당합니다.
    * 고객 데이터는 API를 통해, 그리고 제품 사용자 인터페이스(예: Cloud Manager) 내에서 노출될 수 있습니다.
 * 실제 사용자 지표(RUM) 서비스:
-   * 고객 경험(예: 페이지 조회수, 핵심 웹 바이탈, 전환 이벤트)에서 주요 지표를 수집하고 관련 쿼리(예: 지난 7일 동안 특정 도메인에 대한 상위 페이지 조회수)에 응답하는 일을 담당합니다.
+   * 고객 경험에서 주요 지표(예: 페이지 보기 수, 핵심 웹 변수, 전환 이벤트)를 수집하고, 관련 쿼리(예: 지난 7일 동안 주어진 도메인에 대한 상위 페이지 보기 수)에 응답할 책임이 있습니다.
 * 자산 컴퓨팅 서비스:
    * 업로드된 이미지, 비디오, 문서(예: PDF 및 Adobe Photoshop 파일) 처리를 담당합니다. 처리에서는 Adobe Sensei를 사용하여 이미지 및 비디오 메타데이터(예: 설명 태그 또는 주 색상 톤)를 추출한 다음 Adobe Photoshop 및 Adobe Lightroom API와 같은 API에 액세스하여 렌디션(예: 다양한 크기 또는 형식)을 생성할 수 있습니다.
 * Identity Management Service(IMS):
@@ -176,7 +176,7 @@ AEM 프로젝트의 코드 및 구성은 변경 사항이 있을 때 배포 파�
    * AEM 작성 및 게시 계층에 대한 서버측 Java 코드 및 OSGI 구성을 저장합니다.
 * AEM 프론트엔드:
    * AEM 작성 및 게시 계층에 대한 클라이언트측 JS, CSS 및 HTML 코드를 저장합니다.
-clientlib에 대한 자세한 내용은 [AEM에서 클라이언트측 라이브러리 as a Cloud Service 사용.](/help/implementing/developing/introduction/clientlibs.md)
+clientlibs에 대한 자세한 내용은 [AEM as a Cloud Service에서 클라이언트측 라이브러리 사용](/help/implementing/developing/introduction/clientlibs.md)을 참조하십시오.
 * AEM 웹 계층:
    * AEM 게시 계층에 대한 Dispatcher 구성 파일을 저장합니다.
 * AEM 구성:

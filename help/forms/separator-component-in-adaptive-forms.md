@@ -5,9 +5,9 @@ uuid: f8d2aed3-52aa-437f-bfe3-0c8779e7986c
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '313'
 ht-degree: 4%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 4%
 
 분리자 구성 요소의 속성을 지정하려면 다음을 수행합니다.
 
-1. 분리자 구성 요소를 선택하고 을 누릅니다 ![cmppr](assets/cmppr.png). 사이드바에서 속성이 열립니다.
+1. 분리자 구성 요소를 선택하고 ![cmppr](assets/cmppr.png). 사이드바에서 속성이 열립니다.
 1. CSS 속성을 지정할 수 있도록 인라인 CSS 속성 섹션에서 탭을 클릭합니다. 예: a. 필드 탭에서 **항목 추가**. 필드가 두 개인 행이 추가됩니다.
 1. 왼쪽의 첫 번째 필드에 적용할 CSS3 속성을 지정합니다. 예를 들어, **테두리**. 아래쪽 화살표 단추를 클릭하여 속성을 선택할 수도 있습니다. 드롭다운 목록은 완전하지 않으며 이 필드에 지원되는 CSS3 속성 이름을 지정할 수 있습니다.
 1. 인접 필드에서 지정된 CSS3 속성에 유효한 값을 지정합니다. 예를 들어, **3 픽셀 단색 검정**.

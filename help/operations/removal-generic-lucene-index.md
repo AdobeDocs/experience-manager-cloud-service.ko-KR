@@ -2,9 +2,9 @@
 title: 일반 Lucene 인덱스 제거
 description: 일반 Lucene 색인의 제거 계획과 영향을 받는 방법에 대해 알아봅니다.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1345'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ AEM에서 전체 텍스트 쿼리는 다음 함수를 사용하는 쿼리입니�
 
 이러한 쿼리는 색인을 사용하지 않으면 결과를 반환할 수 없습니다. 경로 또는 속성 제한만 포함하는 쿼리와 달리, 인덱스를 찾을 수 없는 전체 텍스트 제한(따라서 순회가 수행됨)이 포함된 쿼리는 항상 0개의 결과를 반환합니다.
 
-일반 Lucene 인덱스(`/oak:index/lucene-*`)는 AEM 6.0 / Oak 1.0 이후 존재하여 다음과 같은 일부 경로가 있지만 대부분의 저장소 계층 구조에서 전체 텍스트 검색을 제공합니다. `/jcr:system` 및 `/var` 이 항목에서 항상 제외되었습니다. 그러나 이 색인은 주로 더 구체적인 노드 유형에 대한 색인으로 대체되었습니다(예: `damAssetLucene-*` 대상: `dam:Asset` 전체 텍스트와 속성 검색을 모두 지원하는 노드 유형)
+일반 Lucene 인덱스(`/oak:index/lucene-*`)는 AEM 6.0 / Oak 1.0 이후 존재하여 다음과 같은 일부 경로가 있지만 대부분의 저장소 계층 구조에서 전체 텍스트 검색을 제공합니다. `/jcr:system` 및 `/var` 이 항목에서 항상 제외되었습니다. 그러나 이 색인은 주로 보다 구체적인 노드 유형에 대한 색인으로 대체되었습니다(예: `damAssetLucene-*` 대상: `dam:Asset` 전체 텍스트와 속성 검색을 모두 지원하는 노드 유형)
 
 AEM 6.5에서 일반 Lucene 색인은 더 이상 사용되지 않는 것으로 표시되어 이후 버전에서 제거됨을 나타냅니다. 이후 다음 로그 스니펫에서 설명한 대로 색인이 사용되면 WARN이 기록됩니다.
 

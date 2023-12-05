@@ -2,10 +2,10 @@
 title: DocuSign을 적응형 양식과 통합하는 방법
 description: 적응형 양식과 함께 DocuSign을 사용하여 전자 서명을 수집하는 방법에 대해 알아봅니다.
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1559'
-ht-degree: 10%
+source-wordcount: '1534'
+ht-degree: 7%
 
 ---
 
@@ -126,14 +126,14 @@ AEM Forms as a Cloud Service에서는 DocuSign에 대한 사용자 지정 제출
 
 1. 다음으로 이동 **[!UICONTROL 도구]** ![망치](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL DocuSign]** 구성을 호스팅할 폴더를 선택하십시오.
 
-1. 구성 페이지에서 을 누릅니다. **[!UICONTROL 만들기]** 만들려면 [!DNL DocuSign] AEM Forms의 구성
-1. 다음에서 **[!UICONTROL 일반]** 의 탭 **[!UICONTROL DocuSign 구성 만들기]** 페이지, 지정 **[!UICONTROL 이름]** 구성을 보려면 다음을 누르십시오. **[!UICONTROL 다음]**. 다음을 선택적으로 지정할 수 있습니다. **[!UICONTROL 제목]**.
+1. 구성 페이지에서 을 선택합니다. **[!UICONTROL 만들기]** 만들려면 [!DNL DocuSign] AEM Forms의 구성
+1. 다음에서 **[!UICONTROL 일반]** 의 탭 **[!UICONTROL DocuSign 구성 만들기]** 페이지, 지정 **[!UICONTROL 이름]** 을(를) 위해 다음을 선택합니다. **[!UICONTROL 다음]**. 다음을 선택적으로 지정할 수 있습니다. **[!UICONTROL 제목]**.
 
 1. 현재 브라우저 창의 URL을 메모장에 복사합니다. 이 URL은 이후 단계에서 [!DNL AEM Forms]를 사용해 [!DNL DocuSign]을 구성하는 데 필요합니다.
 
 1. [!DNL DocuSign] 애플리케이션에 대한 OAuth 설정을 구성합니다.
 
-   1. 브라우저 창을 열고 [!DNL DocuSign][ 개발자 계정에 로그인합니다](https://admindemo.docusign.com/apps-and-keys).
+   1. 브라우저 창을 열고 로그인 [!DNL DocuSign] [개발자 계정](https://admindemo.docusign.com/apps-and-keys).
    1. 에 대해 구성된 앱 열기 [!DNL AEM Forms].
    1. 다음에서 **[!UICONTROL 리디렉션 URI]** 상자에서 이전 단계에서 복사한 URL을 추가하고 을 클릭합니다. **[!UICONTROL 저장]**.
    1. 통합 및 암호 키를 메모해 둡니다.
@@ -146,9 +146,9 @@ AEM Forms as a Cloud Service에서는 DocuSign에 대한 사용자 지정 제출
 
 1. 다음을 지정합니다. **[!UICONTROL 클라이언트 ID]** (DocuSign 통합 키) 및 **[!UICONTROL 클라이언트 암호]** (DocuSign 비밀 키).
 
-1. 누르기 **[!UICONTROL DocuSign에 연결]**. 자격 증명을 입력하라는 메시지가 뜨면 [!DNL DocuSign] 애플리케이션 생성 시 사용한 계정의 사용자 이름과 비밀번호를 입력합니다. 다음에 대한 액세스를 확인해달라는 메시지가 뜨는 경우 `your developer account`, 클릭 **[!UICONTROL 액세스 허용]**. 자격 증명이 올바르면 성공 메시지가 나타납니다.
+1. 선택 **[!UICONTROL DocuSign에 연결]**. 자격 증명을 입력하라는 메시지가 뜨면 [!DNL DocuSign] 애플리케이션 생성 시 사용한 계정의 사용자 이름과 비밀번호를 입력합니다. 다음에 대한 액세스를 확인해달라는 메시지가 뜨는 경우 `your developer account`, 클릭 **[!UICONTROL 액세스 허용]**. 자격 증명이 올바르면 성공 메시지가 나타납니다.
 
-1. 누르기 **[!UICONTROL 만들기]** 을(를) 만들려면 [!DNL DocuSign] 구성.
+1. 선택 **[!UICONTROL 만들기]** 을(를) 만들려면 [!DNL DocuSign] 구성.
 
 1. 구성을 선택하고 **[!UICONTROL 게시]**&#x200B;을 클릭하고 구성을 선택한 다음 을 클릭합니다 **[!UICONTROL 게시]**. 해당 게시 환경에 구성이 복사됩니다.
 
@@ -168,7 +168,7 @@ AEM Forms as a Cloud Service에서는 DocuSign에 대한 사용자 지정 제출
 Sign이 활성화된 적응형 양식을 만들려면 다음 작업을 수행하십시오.
 
 1. 다음으로 이동 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**.
-1. 누르기 **[!UICONTROL 만들기]** 및 선택 **[!UICONTROL 적응형 양식]**. 템플릿 목록이 나타납니다. 템플릿 선택 및 탭 **[!UICONTROL 다음]**.
+1. 선택 **[!UICONTROL 만들기]** 및 선택 **[!UICONTROL 적응형 양식]**. 템플릿 목록이 나타납니다. 템플릿 선택 및 선택 **[!UICONTROL 다음]**.
 1. 다음에서 **[!UICONTROL 기본]** 탭:
 
    1. 다음을 지정합니다. **[!UICONTROL 이름]** 및 **[!UICONTROL 제목]** 적응형 양식용.
@@ -183,23 +183,23 @@ Sign이 활성화된 적응형 양식을 만들려면 다음 작업을 수행하
 
    - 사용자 정의 양식 템플릿이 없는 경우 **[!UICONTROL 기록 문서 생성]** 옵션을 선택합니다. 옵션을 사용하면 서명을 위해 전송된 문서에 적응형 양식의 모든 필드가 표시됩니다.
 
-1. **[!UICONTROL 만들기를 탭합니다.]** 서명이 활성화된 적응형 양식이 만들어집니다. 다음을 추가할 수 있습니다. [!DNL DocuSign] 필드를 양식으로 보내고 서명을 위해 보냅니다.
-1. 편집 모드에서 적응형 양식을 엽니다. 다음에서 **[!UICONTROL 콘텐츠]** 탭에서 다음을 누릅니다. **[!UICONTROL 양식 컨테이너]** 및 탭 ![구성](assets/configure-icon.svg).
+1. 선택 **[!UICONTROL 만들기.]** 서명이 활성화된 적응형 양식이 만들어집니다. 다음을 추가할 수 있습니다. [!DNL DocuSign] 필드를 양식으로 보내고 서명을 위해 보냅니다.
+1. 편집 모드에서 적응형 양식을 엽니다. 다음에서 **[!UICONTROL 콘텐츠]** 탭에서 **[!UICONTROL 양식 컨테이너]** 및 선택 ![구성](assets/configure-icon.svg).
 
 1. 다음에서 **[!UICONTROL 제출]** 섹션, 선택 **[!UICONTROL DocuSign 전자 서명으로 제출]** 다음에서 **[!UICONTROL 제출 액션]** 드롭다운 목록입니다.
 
-1. 다음에서 **[!UICONTROL 작업 구성]** 섹션, 탭 **[!UICONTROL 추가]** 수신자를 추가하고 수신자의 이메일 주소를 지정합니다. 누르기 **[!UICONTROL 추가]** 수신자를 더 추가하려면 다시 시도하십시오.
+1. 다음에서 **[!UICONTROL 작업 구성]** 섹션, 선택 **[!UICONTROL 추가]** 수신자를 추가하고 수신자의 이메일 주소를 지정합니다. 선택 **[!UICONTROL 추가]** 수신자를 더 추가하려면 다시 시도하십시오.
 
 1. 에서 이메일 메시지의 제목을 지정합니다. **[!UICONTROL 이메일 제목]** 필드. 선택 **첨부 파일 포함** 전자 메일 메시지에 첨부 파일을 포함합니다.
 
-1. ![저장](assets/save_icon.svg)을 탭하여 변경 내용을 저장합니다.
+1. 선택 ![저장](assets/save_icon.svg) 속성을 저장합니다.
 
 #### 사용 [!DNL DocuSign] 적응형 양식용 {#editafsign}
 
 사용 [!DNL DocuSign] 기존 적응형 양식에서:
 
 1. 다음으로 이동 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**.
-1. 적응형 양식을 선택하고 을 누릅니다 **[!UICONTROL 속성]**.
+1. 적응형 양식을 선택하고 **[!UICONTROL 속성]**.
 1. 다음에서 **[!UICONTROL 기본]** 탭에서 [구성 컨테이너](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) 통합하는 동안 생성됨 [!DNL DocuSign] 포함 [!DNL AEM Forms].
 1. 다음에서 **[!UICONTROL 양식 모델]** 탭에서 다음 옵션 중 하나를 선택합니다.
 
@@ -207,14 +207,14 @@ Sign이 활성화된 적응형 양식을 만들려면 다음 작업을 수행하
 
    - 사용자 정의 양식 템플릿이 없는 경우 **[!UICONTROL 기록 문서 생성]** 옵션을 선택합니다. 옵션을 사용하면 서명을 위해 전송된 문서에 적응형 양식의 모든 필드가 표시됩니다.
 
-1. 누르기 **[!UICONTROL 저장 및 닫기]**. 적응형 양식이 다음에 대해 활성화되어 있습니다. [!DNL DocuSign]. 이제 다음을 추가할 수 있습니다. [!DNL DocuSign] 필드를 양식으로 보내고 서명을 위해 보냅니다.
+1. 선택 **[!UICONTROL 저장 및 닫기]**. 적응형 양식이 다음에 대해 활성화되어 있습니다. [!DNL DocuSign]. 이제 다음을 추가할 수 있습니다. [!DNL DocuSign] 필드를 양식으로 보내고 서명을 위해 보냅니다.
 
-1. 편집 모드에서 적응형 양식을 엽니다. 다음에서 **[!UICONTROL 콘텐츠]** 탭에서 다음을 누릅니다. **[!UICONTROL 양식 컨테이너]** 및 탭 ![구성](assets/configure-icon.svg).
+1. 편집 모드에서 적응형 양식을 엽니다. 다음에서 **[!UICONTROL 콘텐츠]** 탭에서 **[!UICONTROL 양식 컨테이너]** 및 선택 ![구성](assets/configure-icon.svg).
 
 1. 다음에서 **[!UICONTROL 제출]** 섹션, 선택 **[!UICONTROL DocuSign 전자 서명으로 제출]** 다음에서 **[!UICONTROL 제출 액션]** 드롭다운 목록입니다.
 
-1. 다음에서 **[!UICONTROL 작업 구성]** 섹션, 탭 **[!UICONTROL 추가]** 수신자를 추가하고 수신자의 이메일 주소를 지정합니다. 누르기 **[!UICONTROL 추가]** 수신자를 더 추가하려면 다시 시도하십시오.
+1. 다음에서 **[!UICONTROL 작업 구성]** 섹션, 선택 **[!UICONTROL 추가]** 수신자를 추가하고 수신자의 이메일 주소를 지정합니다. 선택 **[!UICONTROL 추가]** 수신자를 더 추가하려면 다시 시도하십시오.
 
 1. 에서 이메일 메시지의 제목을 지정합니다. **[!UICONTROL 이메일 제목]** 필드. 선택 **첨부 파일 포함** 전자 메일 메시지에 첨부 파일을 포함합니다.
 
-1. ![저장](assets/save_icon.svg)을 탭하여 변경 내용을 저장합니다.
+1. 선택 ![저장](assets/save_icon.svg) 속성을 저장합니다.

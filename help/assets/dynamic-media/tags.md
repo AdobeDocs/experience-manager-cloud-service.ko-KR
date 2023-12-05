@@ -1,18 +1,18 @@
 ---
-title: Dynamic Media 뷰어를 Analytics 및 Adobe Experience Platform 태그와 통합
+title: Dynamic Media 뷰어를 Adobe Analytics 및 Experience Platform 태그와 통합
 description: Experience Platform 태그 및 Dynamic Media 뷰어 5.13용 Dynamic Media 뷰어 확장에 대해 알아봅니다. 이를 통해 Adobe Analytics 및 Platform Tags 고객은 Experience Platform 태그 구성에서 Dynamic Media 뷰어에 고유한 이벤트 및 데이터를 사용할 수 있습니다.
 contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '6661'
-ht-degree: 7%
+source-wordcount: '6701'
+ht-degree: 6%
 
 ---
 
-# Dynamic Media 뷰어를 Analytics 및 Adobe Experience Platform 태그와 통합 {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
+# Dynamic Media 뷰어를 Adobe Analytics 및 Experience Platform 태그와 통합 {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
 ## Adobe Analytics 및 Experience Platform 태그와 Dynamic Media Viewer 통합이란 무엇입니까? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
@@ -506,7 +506,7 @@ Experience Platform 태그를 구성하면 통합에 대해 다음과 같이 설
 
 Experience Platform 태그의 속성은 모든 설정을 함께 유지하는 명명된 구성입니다. 구성 설정 라이브러리가 생성되고 다른 환경 수준(개발, 스테이징 및 프로덕션)에 게시됩니다.
 
-참조: [탭 속성 구성](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html).
+참조: [선택 속성 구성](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html).
 
 **Experience Platform 태그에서 속성을 만들려면 다음 작업을 수행하십시오.**
 
@@ -555,7 +555,7 @@ On the Install Extension page, enter the Report Suite ID in the **[!UICONTROL De
 
 다음을 참조하십시오 [Adobe Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html).
 
-* (옵션. 비디오 추적이 필요한 경우에만 필요함) *오디오 및 비디오용 Adobe Medium 분석* 확장
+* (선택 사항입니다. 비디오 추적이 필요한 경우에만 필요함) *오디오 및 비디오용 Adobe Medium 분석* 확장
 
 추적 서버 필드를 입력합니다. 에 대한 추적 서버 *오디오 및 비디오용 Adobe Medium 분석* 확장 프로그램이 Adobe Analytics에 사용되는 추적 서버와 다릅니다. 템플릿을 따릅니다 `<trackingNamespace>.hb.omtrdc.net`, 여기서 `<trackingNamespace>` 은 프로비저닝 이메일의 정보입니다.
 
@@ -748,7 +748,7 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
    * **[!UICONTROL 제목]** - 설명 계정 제목을 입력합니다.
    * **[!UICONTROL 인증 서버]** - 이전에 연 통합 세부 정보 페이지로 돌아갑니다. 다음 항목 선택 **[!UICONTROL JWT]** 탭. 아래 강조 표시된 대로 경로 없이 서버 이름을 복사합니다.
 
-   Return to the **[!UICONTROL Account]** page, then paste the name into the respective field.
+   (으)로 돌아가기 **[!UICONTROL 계정]** 페이지를 만든 다음 해당 필드에 이름을 붙여넣습니다.
 예를 들어, `https://ims-na1.adobelogin.com/`
 (예제 서버 이름은 설명용으로만 사용됩니다.)
 
@@ -793,7 +793,7 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
 
    샘플 목적으로만, **`We.Retail`** 아래 스크린샷에서 사이트가 선택되어 있습니다.
 
-   ![2019-07-26_12-20-06](assets/2019-07-26_12-20-06.png)
+   ![2019년 7월 26일 12월 20일](assets/2019-07-26_12-20-06.png)
 
 1. 페이지의 왼쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 만들기]**.
 1. 다음에서 **[!UICONTROL 일반]** 페이지 (1/3 페이지) / **[!UICONTROL Experience Platform 태그 구성 만들기]** 창에서 다음 필드를 입력합니다.

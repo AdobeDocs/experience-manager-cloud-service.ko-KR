@@ -4,10 +4,10 @@ description: Headless 콘텐츠 기반 또는 페이지 작성을 위해 콘솔�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2622'
-ht-degree: 89%
+source-wordcount: '2617'
+ht-degree: 88%
 
 ---
 
@@ -85,7 +85,7 @@ ht-degree: 89%
    * 트리의 특정 분기를 선택할 수 있습니다.
    * 중첩된 폴더를 표시하도록 크기를 조정할 수 있습니다.
 * 기본/오른쪽 패널 - 여기에서 다음 작업을 수행할 수 있습니다.
-   * 선택한 트리 분기에 있는 모든 콘텐츠 조각 목록 표시:
+   * 선택한 트리 분기에 있는 모든 콘텐츠 조각 목록을 확인합니다.
       * 선택한 폴더의 콘텐츠 조각이 표시되고 모든 하위 폴더가 표시됩니다.
          * 위치는 이동 경로로 표시됩니다. 위치를 변경하는 데에도 사용할 수 있습니다.
       * [각 조각에 대한 정보가 표시됩니다.](#information-content-fragments)
@@ -226,7 +226,7 @@ ht-degree: 89%
    * **위치** - 현재 위치로 자동 완성되지만 필요한 경우 다른 위치를 선택할 수 있습니다.
    * **콘텐츠 조각 모델** - 드롭다운 목록에서 조각의 기반으로 사용할 모델을 선택합니다.
    * **제목**
-   * **이름** - 다음을 기반으로 자동 완성됨: **제목**, 그러나 필요한 경우 편집할 수 있습니다
+   * **이름** - 다음을 기반으로 자동 완성됨: **제목**, 그러나 필요한 경우 편집할 수 있습니다.
    * **설명**
 
    ![새 콘텐츠 조각 대화 상자](assets/cf-managing-new-cf-dialog.png)

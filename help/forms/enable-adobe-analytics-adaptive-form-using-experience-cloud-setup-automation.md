@@ -1,12 +1,12 @@
 ---
 title: 적응형 양식용 Adobe Analytics을 활성화하는 방법
 description: Experience Cloud 설정 자동화를 통해 Adobe Analytics를 적응형 양식에 연결하여 방문자 상호 작용과 참여에 대한 인사이트를 추적할 수 있습니다.
-keywords: Experience Cloud 설정 자동화를 사용하여 적응형 양식용 Adobe Analytics 활성화, Forms의 Adobe Analytics, 적응형 Forms의 Adobe Analytics, Forms 분석 통합, Forms 및 Adobe Analytics 활성화
+keywords: Experience Cloud 설정 자동화를 사용하여 적응형 양식에 Adobe Analytics 활성화, Forms에서 Adobe Analytics 활성화, 적응형 Forms에서 Adobe Analytics, Forms 분석 통합, Forms 및 Adobe Analytics
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: fa107ee89deb217ada2cfbcccb4602a7a6aff125
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 59%
+source-wordcount: '1555'
+ht-degree: 58%
 
 ---
 
@@ -93,7 +93,7 @@ Forms as a Cloud Service 환경에서 앞에서 설명한 것을 사용할 수 �
 1. 클라우드 서비스의 구성 컨테이너 만들기:
    1. **[!UICONTROL 도구 > 일반 > 구성 브라우저]**&#x200B;로 이동합니다.
    1. 구성 컨테이너를 선택하거나 만들고 **[!UICONTROL 클라우드 구성]** 폴더를 활성화합니다
-   1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 탭하여 구성을 저장하고 대화 상자를 종료합니다.
+   1. 선택 **[!UICONTROL 저장 및 닫기]** 구성을 저장하고 대화 상자를 종료합니다.
 1. AEM 인스턴스에서 **[Forms]** >> **[양식 및 문서]**&#x200B;로 이동합니다.
 1. **[!UICONTROL 구성 컨테이너]**&#x200B;에서 **[!UICONTROL 양식]** >> **[!UICONTROL 속성]**&#x200B;을 선택한 다음 1단계의 **[!UICONTROL 구성 브라우저]**&#x200B;에서 만들거나 선택한 구성 컨테이너를 선택합니다.
 1. 왼쪽 레일에서 작업 패널을 선택하고 **Analytics 설정** 및 **Adobe Analytics 활성화**&#x200B;를 클릭합니다.
@@ -210,7 +210,7 @@ AEM Sites 페이지에서 적응형 양식에 연결하여 Analytics를 활성�
 
 1. 클릭 **게시 플로우** 왼쪽이요
 1. 클릭 **라이브러리 추가** 원하는 이름을 입력합니다.
-1. 다음에서 **환경** 오른쪽의 드롭다운에서 을(를) 선택합니다. **개발**.
+1. 다음에서 **환경** 오른쪽의 드롭다운에서 **개발**.
 1. 클릭 **변경된 모든 리소스 추가**.
 1. 클릭 **개발에 저장 및 구축**.
 

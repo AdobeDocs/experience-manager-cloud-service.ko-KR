@@ -2,10 +2,10 @@
 title: 경험 조각
 description: Adobe Experience Manager as a Cloud Service 경험 조각을 사용하여 경험을 재사용이 가능하고 및 유연하게 만듭니다.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2042'
-ht-degree: 99%
+source-wordcount: '2035'
+ht-degree: 97%
 
 ---
 
@@ -64,7 +64,7 @@ Adobe Experience Manager as a Cloud Service 내 경험 조각은
 * 경험을 재사용하고자 할 때
    * 경험을 동일하거나 유사한 콘텐츠에서 재사용.
 * 서드파티의 콘텐츠 게재 플랫폼으로 AEM을 사용할 때
-   * AEM을 콘텐츠 게재 플랫폼으로 사용하려는 솔루션.
+   * AEM을 컨텐츠 전달 플랫폼으로 사용하려는 모든 솔루션.
    * 서드파티 터치포인트에 콘텐츠 임베드.
 * 다양한 변형 또는 표현물에 대한 경험이 있는 경우.
    * 채널 또는 컨텍스트별 변형.

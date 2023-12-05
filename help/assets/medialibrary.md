@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 9%
+source-wordcount: '578'
+ht-degree: 7%
 
 ---
 
@@ -25,7 +25,7 @@ Define what is not included
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/medialibrary.html?lang=ko-KR) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/medialibrary.html?lang=ko-KR) |
 | AEM as a Cloud Service | 이 문서 |
 
 [!DNL Adobe Experience Manager] platform은 다양한 자산 관리 기능을 제공합니다. Media Library을 사용하면 저장소에 적은 수의 에셋을 업로드하고, 웹 페이지에서 해당 에셋을 검색 및 사용할 수 있으며, 에셋에 대한 간단한 에셋 관리 작업을 수행할 수 있습니다.
@@ -64,7 +64,7 @@ Media Library은 다음과 같은 사용 사례를 광범위하게 다룹니다.
 Media Library 기능을 사용하려면 기본값을 사용합니다 [!DNL Experience Manager] 사용자 인터페이스. Media Library은 [!DNL Experience Manager Sites] 를 설치하고 별도의 인터페이스나 추가 기능을 필요로 하지 않습니다. 기존 인터페이스를 사용하여 Media Library 사용자는 다음 작업을 수행할 수 있습니다.
 
 * 폴더를 만들어 자산을 구성합니다.
-* 에셋 업로드.
+* 에셋을 업로드합니다.
 * 자산을 게시합니다.
 * 에셋을 편집하고, 이동하고, 복사합니다.
 * 에셋을 검색, 필터링 및 검색(유사성 검색 포함)합니다.
@@ -115,5 +115,5 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 
 >[!MORELIKETHIS]
 >
->* [의 DAM 기능 [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html)
+>* [의 DAM 기능 [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=ko-KR)
 >* [[!DNL Experience Manager] as a [!DNL Cloud Service] 제품 설명](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
