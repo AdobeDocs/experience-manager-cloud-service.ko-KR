@@ -1,7 +1,7 @@
 ---
-source-git-commit: c20f59770f4eb722d49a96952126993577bfd65e
-workflow-type: ht
-source-wordcount: '262'
+source-git-commit: 8bc20c66aad7bf4befdd28db2c628a1535ae375b
+workflow-type: tm+mt
+source-wordcount: '205'
 ht-degree: 100%
 
 ---
@@ -14,12 +14,6 @@ ht-degree: 100%
 ## Edge Delivery Services 작성 {#edge-delivery-authoring}
 
 [!BADGE Edge Delivery Services용 AEM 콘텐츠를 작성하려면 여기를 클릭합니다.]{type=Positive url="/help/edge/overview.md" tooltip="Edge Delivery Services용 AEM 콘텐츠 작성"}
-
-## 그룹을 프로필에 할당하는 IMS 지원 {#ims-group-profiles}
-
->[!NOTE]
->
->현재 AEM에서는 프로필에 그룹을 할당할 수 없습니다. 대신 사용자를 개별적으로 추가해야 합니다.
 
 ## WAF 구성 제한적 릴리스 {#waf-limited-release}
 
