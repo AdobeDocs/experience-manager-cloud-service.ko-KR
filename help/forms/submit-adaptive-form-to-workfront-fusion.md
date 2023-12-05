@@ -3,7 +3,7 @@ title: AEM Forms 제출과 Adobe Workfront Fusion 통합
 description: Adobe Workfront Fusion을 사용하면 반복적인 작업에 집중하지 않고 새로운 작업에 집중할 수 있습니다. 양식 제출을 사용하여 Adobe Workfront Fusion을 적응형 양식에 연결할 수 있습니다.
 keywords: 적응형 양식을 Adobe Workfront Fusion, AEM Forms 제출과 Adobe Workfront Fusion 통합, AEM Forms과 Adobe Workfront Fusion, AEM Forms과 Workfront Fusion, AEM Forms, AEM Forms 및 Workfront Fusion에 Workfront Fusion 연결, Workfront Fusion과 AEM Forms을 연결하는 방법 및 Workfront Fusion을 양식에 연결하는 방법
 topic-tags: author, developer
-source-git-commit: cebdd5c4b1ad9531f2cc2893c2e7900658e451ed
+source-git-commit: 68314ca09594d3c4c5639363326117b89b733a4d
 workflow-type: tm+mt
 source-wordcount: '1240'
 ht-degree: 3%
@@ -128,6 +128,7 @@ Webhook를 추가하려면:
 #### 1.3 Workfront 시나리오 활성화 {#activate-scenario}
 
 시나리오를 활성화하려면:
+
 1. 클릭 **[!UICONTROL 시나리오]** ![공유 아이콘](/help/forms/assets/Smock_ShareAndroid_18_N.svg) 왼쪽 패널에서
 1. 다음을 클릭합니다. **[!UICONTROL 비활성 시나리오]** 탭.
 1. 다음을 클릭합니다. **설정/해제** AEM Forms 시나리오에 대한 토글 단추입니다.
