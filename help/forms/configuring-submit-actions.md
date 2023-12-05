@@ -2,10 +2,10 @@
 title: 적응형 양식에 대한 제출 액션을 구성하는 방법
 description: 적응형 양식은 여러 제출 액션을 제공합니다. 제출 액션은 적응형 양식이 제출 후 처리되는 방식을 정의합니다. 기본 제공 제출 액션을 사용하거나 직접 만들 수 있습니다.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 4e5a730f59a7594085319435bfe1ea3a7368bfc2
 workflow-type: tm+mt
-source-wordcount: '3805'
-ht-degree: 79%
+source-wordcount: '3913'
+ht-degree: 76%
 
 ---
 
@@ -28,6 +28,7 @@ ht-degree: 79%
 * [OneDrive에 제출](#submit-to-onedrive)
 * [Azure Blob 스토리지에 제출](#azure-blob-storage)
 * [Power Automate에 제출](#microsoft-power-automate)
+* [Workfront Fusion에 제출](#workfront-fusion)
 
 다음을 수행할 수도 있습니다. [기본 제출 액션 확장](custom-submit-action-form.md) 고유한 제출 액션을 만들 수 있습니다.
 
@@ -403,6 +404,13 @@ AEM Forms를 Azure Storage 컨테이너에 연결하려면
 적응형 양식 편집기는 **Microsoft® Power Automate 흐름 호출** 제출 액션을 제공하여 적응형 양식 데이터, 첨부 파일 및 기록 문서를 Power Automate Cloud Flow로 전송합니다. 제출 작업을 사용하여 캡처된 데이터를 Microsoft® Power Automate로 전송하려면 [Forms as a Cloud Service 인스턴스를 Microsoft® Power Automate와 연결](forms-microsoft-power-automate-integration.md)합니다.
 
 성공적으로 구성한 후 [Microsoft® Power Automate 흐름 호출](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) 제출 액션을 사용하여 데이터를 Power Automate 흐름으로 전송합니다.
+
+## Workfront Fusion에 제출 {#workfront-fusion}
+
+제출 시 Workfront Fusion에 데이터를 제출하도록 적응형 양식을 구성할 수 있습니다. Workfront Fusion을 사용하면 동일한 작업을 반복해서 반복하지 않고 새로운 작업에 집중할 수 있도록 프로세스를 자동화할 수 있습니다. 이 제품은 단순하고 복잡한 작업을 모두 자동화하여 시간을 절약하고 일관된 프로세스 실행을 보장합니다.
+
+적응형 Forms 편집기는 **Workfront Fusion 시나리오 호출** Workfront Fusion 시나리오에 적응형 Forms 데이터 또는 첨부 파일을 전송하는 작업을 제출합니다. 제출 액션을 사용하여 캡처된 데이터를 Workfront Fusion 시나리오에 보내려면 다음을 참조하십시오. [Adobe Workfront Fusion에 적응형 양식 제출](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
+
 
 ## 동기 제출 또는 비동기 제출 사용 {#use-synchronous-or-asynchronous-submission}
 
