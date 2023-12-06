@@ -3,15 +3,15 @@ title: Admin Console 액세스
 description: 온보딩에 필요한 준비와 AEMaaCS 구조의 기본 사항을 이해했으면 처음으로 Admin Console에 로그인할 준비가 된 것입니다.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1097'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 # Admin Console 액세스 {#accessing-admin-console}
 
-의 이 부분에서 [온보딩 여정,](overview.md) 시스템에 처음 로그인하기 전에 필요한 준비에 대해 배웁니다.
+이 [온보딩 여정](overview.md) 부분에서는 시스템에 처음 로그인하기 전에 필요한 준비에 대해 배웁니다.
 
 ## 목표 {#objective}
 
@@ -30,7 +30,7 @@ Adobe Admin Console은 Adobe 제품 라이선스 및 사용자를 관리하는 �
 
 ## Adobe ID {#adobe-id}
 
-Admin Console에 로그인하려면 Adobe ID이 필요합니다. Adobe ID는 AEM as a Cloud Service 또는 Adobe 솔루션에 로그인하고 액세스하는 데 필요한 특정 이메일 주소에 연결된 계정입니다. Adobe ID를 사용하면 단일 계정과 연결된 모든 Adobe 플랜 및 제품을 유지할 수 있습니다.
+Admin Console에 로그인하려면 Adobe ID가 필요합니다. Adobe ID는 AEM as a Cloud Service 또는 Adobe 솔루션에 로그인하고 액세스하는 데 필요한 특정 이메일 주소에 연결된 계정입니다. Adobe ID를 사용하면 단일 계정과 연결된 모든 Adobe 플랜 및 제품을 유지할 수 있습니다.
 
 시스템 관리자가 Admin Console에서 팀을 설정할 때 Adobe ID로 사용할 이메일 주소를 지정합니다.
 
@@ -40,7 +40,7 @@ Adobe ID에는 세 가지 유형이 있습니다.
 
 * **Enterprise ID**: 조직은 일반적으로 사용자 계정에 대한 제어를 강화하기를 원합니다. 시스템 관리자만 Enterprise ID를 만들 수 있으며 조직에서 이러한 계정을 소유하고 Adobe는 호스트 역할만 합니다.
 
-* **Federated ID**: Federated ID를 사용하면 조직이 계정에 대한 완전한 소유권과 제어 권한을 갖습니다. 이렇게 하려면 조직에서 Adobe Experience Cloud을 SAML2 SSO(Single Sign-On) 시스템과 통합해야 합니다. 이를 통해 사용자는 Adobe에서 호스팅하는 계정이 아닌 조직의 SSO 시스템에 대해 인증할 수 있습니다.
+* **Federated ID**: Federated ID를 사용하면 조직이 계정에 대한 완전한 소유권과 제어 권한을 갖습니다. 이렇게 하려면 조직에서 Adobe Experience Cloud를 SAML2 SSO(Single Sign-On) 시스템과 통합해야 합니다. 이를 통해 사용자는 Adobe에서 호스팅하는 계정이 아닌 조직의 SSO 시스템에 대해 인증할 수 있습니다.
 
 시스템 관리자는 Enterprise ID 또는 Federated ID를 설정하기 전에 Personal ID를 사용하여 자신과 팀을 AEM as a Cloud Service에 온보딩하기로 결정할 수 있습니다. Enterprise ID 또는 Federated ID가 설정되면 멤버가 해당 ID를 사용하도록 전환할 수 있습니다.
 
@@ -50,11 +50,11 @@ Admin Console을 사용하여 팀 내 사용자를 관리하려면 먼저 자신
 
 1. 시스템 관리자는 온보딩 프로세스의 일부로 Adobe로부터 여러 개의 이메일을 받게 됩니다. 액세스 권한이 부여된 조직 이름에 대한 정보를 제공하는 시작 이메일을 찾습니다.
 
-1. 다음을 클릭합니다. **시작** Admin Console으로 이동하려면 시작 이메일에 연결합니다. 이메일을 찾을 수 없는 경우 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)에서 Admin Console로 직접 브라우저를 엽니다.
+1. 시작 이메일의 **시작하기** 링크를 클릭하여 Admin Console로 이동합니다. 이메일을 찾을 수 없는 경우 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)에서 Admin Console로 직접 브라우저를 엽니다.
 
    ![시작 이메일](/help/journey-onboarding/assets/get-started-email.png)
 
-1. Adobe ID를 사용하여 로그인합니다. 로그인에 성공하면 **개요** Adobe Admin Console 페이지.
+1. Adobe ID를 사용하여 로그인합니다. 로그인에 성공하면 Adobe Admin Console의 **개요** 페이지가 표시됩니다.
 
    ![Admin Console](/help/journey-onboarding/assets/get-started1.png)
 
@@ -66,7 +66,7 @@ Admin Console을 사용하여 팀 내 사용자를 관리하려면 먼저 자신
 
    ![관리자 검토](/help/journey-onboarding/assets/get-started2.png)
 
-1. 을(를) 클릭한 후 **관리자** 다음에서 **사용자** 카드를 통해 Adobe ID 이메일, 사용자 이름, 이름 또는 성을 입력하여 검색할 수 있습니다.
+1. **사용자** 카드에서 **관리자**&#x200B;를 클릭하면 Adobe ID 이메일, 사용자 이름, 이름 또는 성을 입력하여 검색할 수 있습니다.
 
    ![사용자 검색](/help/journey-onboarding/assets/get-started3.png)
 
@@ -94,7 +94,7 @@ AEM as a Cloud Service는 IMS를 사용하여 AEM과 나머지 Adobe Experience 
 
 ## 다음 단계 {#whats-next}
 
-이 문서를 읽고 나면
+지금까지 이 문서를 통해 다음과 같은 성과를 달성했습니다.
 
 * Adobe ID가 무엇인지 이해합니다.
 * Admin Console에 로그인할 수 있습니다.

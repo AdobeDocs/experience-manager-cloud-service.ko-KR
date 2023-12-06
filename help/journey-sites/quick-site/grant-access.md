@@ -3,9 +3,9 @@ title: 프론트엔드 개발자에게 액세스 권한 부여
 description: AEM 사이트 git 저장소 및 파이프라인에 액세스할 수 있도록 프론트엔드 개발자를 Cloud Manager에 온보드합니다.
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '778'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 91%
 
 AEM 사이트 git 저장소 및 파이프라인에 액세스할 수 있도록 프론트엔드 개발자를 Cloud Manager에 온보드합니다.
 
-## 지금까지의 이야기 {#story-so-far}
+## 지금까지의 스토리 {#story-so-far}
 
 AEM 빠른 사이트 생성 여정의 이전 문서인 [파이프 라인 설정](pipeline-setup.md)에서는 프론트엔드 파이프라인을 제작하여 사이트 테마 맞춤화를 관리하는 방법에 대해 알아보았습니다. 여기에서 알게 된 내용은 다음과 같습니다.
 
@@ -65,7 +65,7 @@ Cloud Manager에 대한 액세스 권한을 부여하고 사용자에게 사용�
 
    ![제품 프로필](assets/product-profiles.png)
 
-1. 프론트엔드 개발자에게 올바른 프로필을 할당하려면 **사용자** 탭을 클릭한 다음 **사용자 추가** 단추를 클릭합니다.
+1. 프론트엔드 개발자에게 올바른 프로필을 할당하려면 **사용자** 탭을 선택한 다음 **사용자 추가** 버튼을 선택합니다.
 
    ![사용자 추가](assets/add-user.png)
 
@@ -73,11 +73,11 @@ Cloud Manager에 대한 액세스 권한을 부여하고 사용자에게 사용�
 
    ![팀에 사용자 추가](assets/add-to-team.png)
 
-1. 다음에서 **제품** 선택 항목을 선택하고 더하기 기호를 선택한 다음 를 선택합니다. **Adobe Experience Manager as a Cloud Service** 및 할당 **배포 관리자** 및 **개발자** 제품 프로필을 사용자에게 보냅니다.
+1. **제품** 선택에서 플러스 기호를 선택한 다음 **Adobe Experience Manager as a Cloud Service**&#x200B;를 선택하고 사용자에게 **배포 관리자** 및 **개발자** 제품 프로필을 할당합니다.
 
    ![팀 프로필 할당](assets/assign-team.png)
 
-1. 선택 **저장** 그리고 사용자로 추가한 프론트엔드 개발자에게 시작 이메일이 전송됩니다.
+1. **저장**&#x200B;을 선택하면 사용자로 추가한 프론트엔드 개발자에게 시작 이메일이 전송됩니다.
 
 초대된 프론트엔드 개발자는 시작 이메일의 링크를 클릭하고 Adobe ID를 사용하여 로그인함으로써 Cloud Manager에 액세스할 수 있습니다.
 
@@ -93,7 +93,7 @@ Cloud Manager에 대한 액세스 권한을 부여하고 사용자에게 사용�
 
 ## 다음 단계 {#what-is-next}
 
-AEM 빠른 사이트 생성 여정의 한 부분을 완료했으므로 다음을 이해할 수 있습니다.
+AEM 빠른 사이트 생성 여정의 한 부분을 완료했으므로 이제 다음과 같은 사항을 이해할 수 있습니다.
 
 * 프론트엔드 개발자를 사용자로 추가하는 방법
 * 프론트엔드 개발자에게 필요한 역할을 부여하는 방법
@@ -104,4 +104,4 @@ AEM 빠른 사이트 생성 여정의 한 부분을 완료했으므로 다음을
 
 다음 문서인 [프론트엔드 개발자 자격 증명 가져오기](retrieve-access.md)를 검토하여 빠른 사이트 생성 여정의 다음 부분으로 넘어가는 것이 좋습니다. 다음은 이 문서에 나열된 몇 가지 개념을 자세히 알아보는 추가적인 옵션 리소스이며, 이들 리소스를 여정에서 계속 사용할 필요는 없습니다.
 
-* [온보딩 여정](/help/journey-onboarding/overview.md) - 이 가이드는 팀이 구성되어 AEM as a Cloud Service에 액세스할 수 있도록 하는 출발점이 됩니다.
+* [온보딩 여정](/help/journey-onboarding/overview.md) - 이 안내서는 팀이 구성되어 AEM as a Cloud Service에 액세스할 수 있도록 하는 출발점이 됩니다.

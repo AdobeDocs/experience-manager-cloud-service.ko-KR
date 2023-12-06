@@ -3,9 +3,9 @@ title: AEM as a Headless CMS 작성 - 소개
 description: 프로젝트 콘텐츠를 작성하는 Adobe Experience Manager as a Cloud Service as a Headless CMS 기능 사용 소개.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '690'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 96%
 * **대상자**: 초급
 * **목표**: Headless 작성과 관련된 개념 및 용어를 소개합니다.
 
-## 콘텐츠 관리 시스템 (CMS) {#content-management-system}
+## 콘텐츠 관리 시스템(CMS) {#content-management-system}
 
 콘텐츠 관리 시스템이란 무엇입니까?
 
@@ -61,7 +61,7 @@ Headless는 웹에 해당 콘텐츠를 표시하는 방식에서 사실상 콘�
 
 따라서 콘텐츠 모델링(데이터 모델링이라고도 함)은 또 다른 기술 용어입니다. 작성자가 관심을 가져야 하는 이유는 무엇입니까?
 
-Headless 애플리케이션이 콘텐츠에 액세스하여 이를 사용하여 작업을 수행하려면 콘텐츠에 사전 정의된 구조가 있어야 합니다. 콘텐츠를 자유 형식으로 유지할 수 있지만 애플리케이션 구조는 *매우* 복잡해질 수 있습니다.
+Headless 애플리케이션이 콘텐츠에 액세스하고 관련 작업을 수행하려면 콘텐츠는 사전 정의된 구조를 갖추고 있어야 합니다. 콘텐츠를 자유 형식으로 유지할 수 있지만 애플리케이션 구조는 *매우* 복잡해질 수 있습니다.
 
 기본적으로 콘텐츠에서 준수해야 할 구조를 정의하는 프로세스에는 데이터 모델링이라는 모델 디자인이 포함됩니다.
 

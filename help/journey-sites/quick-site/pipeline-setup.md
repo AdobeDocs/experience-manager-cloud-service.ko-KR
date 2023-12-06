@@ -3,9 +3,9 @@ title: 파이프라인 설정
 description: 프론트엔드 파이프라인을 만들어 사이트 테마의 맞춤화를 관리할 수 있습니다.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '956'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 95%
 AEM 빠른 사이트 생성 여정의 이전 문서인 [템플릿으로 사이트 생성](create-site.md)에서는 사이트 템플릿을 사용하여 나중에 프론트엔드 도구를 사용하여 맞춤화할 수 있는 AEM 사이트를 간단하게 만드는 방법에 대해 알아보았습니다. 여기에서 알게 된 내용은 다음과 같습니다.
 
 * AEM 사이트 템플릿을 얻는 방법을 이해할 수 있습니다.
-* 템플릿을 사용하여 사이트를 만드는 방법을 알아봅니다.
+* 템플릿을 사용하여 사이트를 만드는 방법을 이해할 수 있습니다.
 * 새 사이트에서 템플릿을 다운로드하여 프론트엔드 개발자에게 제공하는 방법을 파악할 수 있습니다.
 
 이 문서는 이러한 기본 사항을 기본으로 하며, 이를 통해 프론트엔드 개발자가 나중에 여정에서 사용하여 프론트엔드 맞춤화를 배포할 프론트엔드 파이프라인을 설정할 수 있습니다.
@@ -57,7 +57,7 @@ AEM 빠른 사이트 생성 여정의 이전 문서인 [템플릿으로 사이�
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Adobe Cloud Manager에 로그인합니다.
 
-1. Cloud Manager에 사용할 수 있는 다양한 프로그램이 나열됩니다. 관리할 항목을 선택합니다. AEM as a Cloud Service으로 시작하는 경우 사용할 수 있는 프로그램이 하나밖에 없을 수 있습니다.
+1. Cloud Manager에 사용할 수 있는 다양한 프로그램이 나열됩니다. 관리하고자 하는 프로그램을 선택합니다. AEM as a Cloud Service으로 시작하는 경우 사용할 수 있는 프로그램이 하나밖에 없을 수 있습니다.
 
    ![Cloud Manager 프로그램 선택](assets/cloud-manager-select-program.png)
 
@@ -65,13 +65,13 @@ AEM 빠른 사이트 생성 여정의 이전 문서인 [템플릿으로 사이�
 
 ![Cloud Manager 개요](assets/cloud-manager-overview.png)
 
-액세스한 프로그램의 이름을 참고하거나 URL을 복사합니다. 나중에 프론트엔드 개발자에게 제공해야 합니다.
+액세스한 프로그램의 이름을 참고하거나 URL을 복사합니다. 나중에 프론트엔드 개발자에게 이를 제공해야 합니다.
 
 ## 프론트엔드 파이프라인 제작 {#create-front-end-pipeline}
 
 Cloud Manager에 액세스했으므로 프론트엔드 개발을 위한 파이프라인을 제작할 수 있습니다.
 
-1. 다음에서 **파이프라인** cloud Manager 페이지의 섹션에서 다음을 선택합니다. **추가** 단추를 클릭합니다.
+1. Cloud Manager 페이지의 **파이프라인** 섹션에서 **추가** 버튼을 선택합니다.
 
    ![파이프라인](assets/pipelines-add.png)
 
@@ -83,7 +83,7 @@ Cloud Manager에 액세스했으므로 프론트엔드 개발을 위한 파이�
 
    ![파이프라인 구성 추가](assets/add-pipeline-configuration.png)
 
-1. 선택 **계속**.
+1. **계속**&#x200B;을 선택합니다.
 
 1. **소스 코드** 탭에서:
    * 배포할 코드 유형으로 **프론트엔드 코드**&#x200B;를 선택합니다.

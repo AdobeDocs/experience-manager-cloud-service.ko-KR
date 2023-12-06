@@ -3,9 +3,9 @@ title: KPI 액세스
 description: KPI에 액세스하고 보고 프로세스를 정의하는 방법에 대해 알아보기
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '544'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Adobe Experience Manager 출시를 시작하기에 앞서 프로젝트와 관련
 
 2018년 연구에서 IDC는 몇몇 대기업이 Adobe Experience Manager를 사용할 때 주목한 비즈니스 가치를 분석했습니다. 평균적으로 Experience Manager Sites를 사용하는 조직에서는 디지털 경험 팀의 생산성이 23% 향상되었고, 일부 에디토리얼 변경에 필요한 시간이 64% 단축되었으며, 월간 사이트 방문 횟수가 10% 증가했습니다. Experience Manager Assets를 사용하는 기업에서는 디지털 자산 팀의 생산성이 19% 증가했고, 새 자산 생성 시간이 47% 단축되었으며, 마케팅 캠페인 출시에 필요한 시간이 20% 감소했습니다.
 
-동일한 극적인 성과를 실현하려면 조직에서 Experience Manager 구현에 대한 명확한 목표를 가지고 있어야 합니다. 또한 모든 사용자가 그러한 목표에 집중하는 데 도움이 되는 KPI를 확보해야 합니다.
+동일한 극적인 성과를 실현하려면 귀사는 Experience Manager 구현에 대해 명확한 목표를 세워야 합니다. 또한 모든 사용자가 그러한 목표에 집중하는 데 도움이 되는 KPI를 확보해야 합니다.
 
 ## KPI 액세스
 
@@ -47,7 +47,7 @@ KPI를 평가할 때 다음 사항을 확인하십시오.
 1. 보고서 형식은 무엇인가?
 1. 보고서는 어떤 방식으로 전달될 것인가?
 
-Experience Manager 출시 후 강력한 KPI 세트를 통해 귀사의 진행 상황을 신속하게 파악할 수 있습니다. KPI 중 하나를 충족하지 못할 경우, 팀이 Experience Manager를 사용하는 방식을 조정해야 합니다. KPI 타겟 중 하나를 빠르게 초과 달성한다면 이는 축하할 일입니다. 그러나 훨씬 더 나은 결과를 얻기 위해 목표를 재수정해야 합니다.
+Experience Manager 출시 후 강력한 KPI 세트를 통해 귀사의 진행 상황을 신속하게 파악할 수 있습니다. KPI 중 하나를 충족하지 못할 경우, 팀이 Experience Manager를 사용하는 방식을 조정해야 합니다. KPI 타깃 중 하나를 빠르게 초과 달성한다면 이는 축하할 일입니다. 그러나 훨씬 더 나은 결과를 얻기 위해 목표를 재수정해야 합니다.
 
 >[!TIP]
 >

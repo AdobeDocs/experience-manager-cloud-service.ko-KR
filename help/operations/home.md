@@ -4,9 +4,9 @@ description: 색인화 및 유지 관리 작업과 같은 Experience Manager as 
 landing-page-description: 색인화 및 유지 관리 작업과 같은 Experience Manager as a Cloud Service가 수행하는 백엔드 작업에 대해 알아보고 질문에 대한 답변을 찾아보십시오.
 exl-id: ad50434c-1b4c-4e04-be91-2556d773cfbd
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '400'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 95%
 
 | 사용 안내서 | 설명 |
 |---|---|
-| [개요](/help/overview/home.md) | 이 안내서에서는 소개, 용어, 아키텍처 등을 포함하여 Experience Manager as a Cloud Service에 대한 개요를 제공합니다. |
+| [개요](/help/overview/home.md) | 이 안내서에서는 소개, 용어 및 아키텍처를 포함하여 Experience Manager as a Cloud Service에 대한 개요를 제공합니다. |
 | [릴리스 정보](/help/release-notes/home.md) | 이 안내서에서는 새로운 기능, 더 이상 사용되지 않거나 제거된 기능 및 알려진 문제 등 Experience Manager as a Cloud Service의 최신 릴리스에 대한 중요 정보를 제공합니다. |
 | [보안 사용 안내서](/help/security/home.md) | Experience Manager as a Cloud Service 관련 중요 보안 항목에 대해 알아보기. |
 | [온보딩 여정](/help/journey-onboarding/overview.md) | 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service를 시작하는 방법에 대한 요약을 제공합니다. |

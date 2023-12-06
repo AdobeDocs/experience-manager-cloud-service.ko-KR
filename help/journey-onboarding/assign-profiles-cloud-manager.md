@@ -5,16 +5,16 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1527'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 
 # Cloud Manager 제품 프로필에 팀원 할당 {#assign-team-members}
 
-의 이 부분에서 [온보딩 여정,](overview.md) cloud Manager 제품 프로필에 팀원을 할당하는 방법을 배웁니다.
+이 [온보딩 여정](overview.md) 부분에서는 Cloud Manager 제품 프로필에 팀원을 할당하는 방법을 배웁니다.
 
 ## 목표 {#objective}
 
@@ -33,7 +33,7 @@ ht-degree: 92%
 
 ## 사전 요구 사항 {#prerequisites}
 
-제품 프로필에 팀원을 할당하려면 다음을 포함하여 as a Cloud Service으로 AEM에 액세스해야 하는 팀원에 대한 세부 정보가 있어야 합니다.
+제품 프로필에 팀원을 할당하려면 다음을 포함하여 AEM as a Cloud Service에 액세스해야 하는 팀원에 대한 세부 정보가 필요합니다.
 
 * 이름
 * 이메일 주소
@@ -73,7 +73,7 @@ Admin Console을 사용하여 Cloud Manager 프로필 목록을 볼 수 있습�
 
    ![Cloud Manager](/help/journey-onboarding/assets/assign-team2.png)
 
-1. 사전 구성된 Cloud Manager 제품 프로필 목록을 볼 수 있습니다.
+1. 사전 구성된 Cloud Manager 제품 프로필 목록이 표시됩니다.
 
    ![제품 프로필](/help/journey-onboarding/assets/assign-team3.png)
 
@@ -170,18 +170,18 @@ Admin Console을 사용하여 Cloud Manager 프로필 목록을 볼 수 있습�
 
 축하합니다! 새로 구성된 Cloud Manager 팀(**비즈니스 소유자** 프로필에 할당된 자신 포함)이 설정되었습니다. 이제 한 단계만 실행하면 **비즈니스 소유자** 역할로 Cloud Manager에 로그인하고 클라우드 리소스를 생성할 수 있습니다.
 
-이 온보딩 여정 부분에서는 Admin Console의 프로필에 팀원을 할당하는 방법을 배웠습니다. 이제 다음과 같은 작업을 수행할 수 있습니다.
+이 온보딩 여정 부분에서는 Admin Console의 프로필에 팀원을 할당하는 방법을 배웠습니다. 이제
 
 * 제품 프로필이 무엇인지 이해합니다.
 * Cloud Manager가 무엇인지 이해합니다.
 * Cloud Manager의 세 가지 중요한 제품 프로필인 **비즈니스 소유자**, **배포 관리자**, and **개발자**&#x200B;를 알게 됩니다.
 * Cloud Manager 제품 프로필에 팀원을 할당할 수 있습니다.
 
-이제 다음 문서를 검토하여 온보딩 여정을 계속할 준비가 되었습니다 [Cloud Manager 액세스,](cloud-manager.md) 여기에서 Cloud Manager에 액세스하고 프로젝트 리소스를 만드는 방법을 배울 수 있습니다.
+이제 온보딩 여정을 계속하여 [Cloud Manager 액세스](cloud-manager.md) 문서를 검토하고 Cloud Manager에 액세스하여 프로젝트 리소스를 생성하는 방법을 배울 준비가 되었습니다.
 
 ## 추가 리소스 {#additional-resources}
 
-앞에서 설명한 대로 온보딩 여정을 계속하는 것이 좋습니다. 이 여정의 특정 주제에 대해 자세히 알아보려면 다음 리소스를 참조하십시오.
+앞에서 설명한 대로 온보딩 여정을 계속하는 것이 좋습니다. 이 여정의 특정 주제에 대해 자세히 알아보려면 다음과 같은 추가 리소스를 참조하십시오.
 
 * [Cloud Manager 소개](/help/onboarding/cloud-manager-introduction.md) - Cloud Manager, Cloud Manager 프로그램 및 환경에 대해 알아봅니다.
 * [Cloud Manager 제품 프로필](/help/onboarding/aem-cs-team-product-profiles.md) - AEM as a Cloud Service 팀 및 제품 프로필에 대해 알아봅니다.

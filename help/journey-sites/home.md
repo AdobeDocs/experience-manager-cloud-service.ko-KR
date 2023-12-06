@@ -3,9 +3,9 @@ title: AEM Sites 여정
 description: 여기에서 AEM의 강력한 사이트 도구를 이해하는 데 사용할 수 있는 가이드 여정 개요를 살펴보십시오.
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '414'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 82%
 
 ## AEM 설명서 여정 {#documentation-journeys}
 
-[설명서 여정](/help/journey-documentation/documentation-journeys.md) AEM을 처음 접할 수 있는 독자가 최소한의 사전 주제 또는 AEM 지식을 전제로 비즈니스 문제를 처음부터 끝까지 이해하고 해결하는 데 도움이 되는 묘사를 제공하여 다양하고 복잡한 주제와 기능을 결합합니다.
+[설명서 여정](/help/journey-documentation/documentation-journeys.md)은 AEM을 처음 접할 수 있는 독자가 최소한의 사전 주제 또는 AEM 지식을 전제로 비즈니스 문제를 처음부터 끝까지 이해하고 해결하는 데 도움이 되는 묘사를 제공하여 다양하고 복잡한 주제와 기능을 결합합니다.
 
 설명서 여정은 Adobe의 최신 연구, Adobe 컨설턴트의 입증된 구현 경험 및 고객 프로젝트의 피드백을 통해 제공되는 모범 사례 원칙을 중심으로 설계되었습니다.
 
@@ -31,7 +31,7 @@ Sites 여정은 다양한 담당자를 위해 설계되었으며, 다양한 관�
 
 개별 여정은 특정 담당자 또는 대상자를 위해 정의되지만, 독자와 상호 작용하는 추가적인 담당자도 정의할 수 있습니다.
 
-여정의 정보는 여러 담당자에게 유용할 수 있지만, 여정은 특정 담당자를 대상으로 하고 일부 정보는 특정 역할에게 불필요할 수 있습니다.
+이 여정에서 제공하는 정보는 여러 담당자에게 유용하지만, 일부 여정은 특정 담당자를 대상으로 하며 일부 정보는 특정 역할에게 불필요할 수 있습니다.
 
 ## Sites 여정 {#sites-journeys}
 

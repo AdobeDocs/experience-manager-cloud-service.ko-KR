@@ -3,9 +3,9 @@ title: Cloud Manager 및 빠른 사이트 생성 워크플로 이해
 description: Cloud Manager와 이것이 새로운 빠른 사이트 생성 프로세스를 결합하는 방법에 대해 알아봅니다.
 exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1127'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -117,7 +117,7 @@ AEM 빠른 사이트 생성 여정의 한 부분을 완료했으므로,
 * AEM Sites 및 Cloud Manager를 함께 사용하여 프론트엔드 개발을 용이하게 하는 방법을 이해할 수 있습니다.
 * AEM 지식이 필요하지 않도록 프론트엔드 맞춤화 단계를 AEM에서 완전히 분리하는 방법을 파악할 수 있습니다.
 
-이 지식을 기반으로 다음 문서를 검토하여 AEM 빠른 사이트 생성 여정을 계속하십시오 [템플릿으로 사이트 생성,](create-site.md) 템플릿을 사용하여 간편하게 새 AEM 사이트를 만드는 방법에 대해 알아볼 수 있습니다.
+이 지식을 기반으로 다음 문서인 [템플릿으로 사이트 생성](create-site.md)을 검토하여 AEM 빠른 사이트 생성 여정을 계속하십시오. 여기에서는 템플릿을 사용하여 간편하게 새 AEM 사이트를 만드는 방법에 대해 알아보게 됩니다.
 
 ## 추가 리소스 {#additional-resources}
 

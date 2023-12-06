@@ -3,9 +3,9 @@ title: 콘텐츠 모델링 기본 사항 알아보기
 description: 콘텐츠 조각을 사용하여 Headless CMS용 콘텐츠 모델링 기본 사항을 알아봅니다.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '900'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -109,9 +109,9 @@ AEM은 콘텐츠를 모델링할 수 있도록 다음 데이터 유형을 제공
 
 >[!NOTE]
 >
->텍스트 블록 내의 링크를 사용하여 즉석 참조를 생성할 수도 있습니다.
+>텍스트 블록 내 링크를 사용하여 임시 참조를 만들 수도 있습니다.
 
-## 구조 수준 (중첩된 조각) {#levels-of-structure-nested-fragments}
+## 구조 수준(중첩된 조각) {#levels-of-structure-nested-fragments}
 
 콘텐츠 모델링의 경우 **조각 참조** 데이터 유형을 사용하여 여러 수준의 구조와 관계를 만들 수 있습니다.
 
@@ -130,7 +130,7 @@ AEM은 콘텐츠를 모델링할 수 있도록 다음 데이터 유형을 제공
 * 개인
 * 상
 
-간단해 보이지만, 회사는 CEO와 직원을 모두 보유하고 있습니다....이 모두 사람이고 각각은 개인으로 정의됩니다.
+매우 간단한 것처럼 보이지만 회사에는 CEO와 직원이 있습니다.이 모두 사람이고 각각은 개인으로 정의됩니다.
 
 개인에게 상 한 개(또는 두 개)가 제공될 수 있습니다.
 

@@ -3,15 +3,15 @@ title: AEM as a Cloud Service 용어
 description: AEMaaCS에 로그인하기 전에 시스템 용어와 기본 구조를 이해하는 것이 좋습니다.
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '463'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 # AEM as a Cloud Service 용어 {#terminology}
 
-의 이 부분에서 [온보딩 여정,](overview.md) AEM as a Cloud Service의 일부 용어와 기본 구조를 배웁니다.
+이 [온보딩 여정](overview.md) 부분에서는 AEM as a Cloud Service의 일부 용어와 기본 구조를 배웁니다.
 
 ## 목표 {#objective}
 
@@ -19,7 +19,7 @@ ht-degree: 81%
 
 AEM as a Cloud Service는 강력하고 유연한 도구이며, 도구를 사용하려면 해당 조직과 해당 도구를 설명하는 데 사용되는 용어 및 언어에 익숙해야 합니다. 이 문서에는 시스템 사용을 시작하기 전에 이해해야 하는 몇 가지 주요 용어가 요약되어 있습니다.
 
-이 문서를 읽고 나면 다음을 이해할 수 있습니다.
+이 문서를 읽은 후에는 다음 사항을 이해할 수 있습니다.
 
 * AEMaaCS를 구성하는 다양한 계층
 * 각 계층이 수행하는 작업의 기본 사항
@@ -44,7 +44,7 @@ AEM as a Cloud Service는 강력하고 유연한 도구이며, 도구를 사용�
    * WKND Media 사업부를 위한 Assets 프로그램 1개
 * WKND Magazine 및 WKND Media 프로그램은 모두 개발, 스테이징 및 프로덕션 **환경**&#x200B;을 가질 수 있습니다.
 * **저장소**&#x200B;는 WKND Magazine 및 WKND Media에 대한 사용자 정의 코드 및 애플리케이션을 유지 관리하는 데 사용됩니다.
-* 다양 **도구 및 워크플로** 저장소 전체에서 CI/CD 파이프라인, 액세스 로그, 액세스 AEM 등을 사용하여 코드를 배포합니다.
+* CI/CD 파이프라인, 액세스 로그, 액세스 AEM 등을 통해 코드를 배포하기 위해 저장소 전체에서 다양한 **도구 및 워크플로**&#x200B;가 사용됩니다.
 
 ## 다음 단계 {#what-is-next}
 
@@ -53,4 +53,4 @@ AEM as a Cloud Service는 강력하고 유연한 도구이며, 도구를 사용�
 * AEMaaCS를 구성하는 다양한 계층
 * 각 계층이 수행하는 작업의 기본 사항
 
-이 지식을 기반으로 다음 문서를 검토하여 AEM 온보딩 여정을 계속하십시오 [Admin Console 액세스](admin-console.md)- 콘솔에 액세스하고 시스템 관리자로서 상태를 확인하는 방법을 배울 수 있습니다.
+이 지식을 기반으로 다음 문서인 [Admin Console 액세스](admin-console.md) 문서를 검토하여 AEM 온보딩 여정을 계속하십시오. 여기에서 콘솔에 액세스하고 시스템 관리자로서 상태를 확인하는 방법을 배울 수 있습니다.

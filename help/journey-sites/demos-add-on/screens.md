@@ -3,9 +3,9 @@ title: 데모 사이트에 대해 AEM Screens 활성화
 description: 제작한 데모 사이트에서 전체 AEM Screens as a Cloud Service 환경을 활성화하는 단계에 대해 알아봅니다.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2665'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -100,9 +100,9 @@ We.Cafe 지점의 레이아웃은 다음과 같습니다.
 
 ![We.Cafe 콘텐츠](assets/wecafe-content.png)
 
-We.Cafe 데모 콘텐츠를 준비했으므로 AEM Screens을 테스트하는 방법을 선택할 수 있습니다.
+We.Cafe 데모 콘텐츠를 준비했으므로 AEM Screens를 테스트하는 방법을 선택할 수 있습니다.
 
-* AEM Sites 콘솔 내에 있는 콘텐츠만 탐색하려는 경우에서 더 많은 콘텐츠를 살펴보고 검색해 보십시오 [추가 리소스](#additional-resources) 섹션! 추가로 작업을 수행할 필요는 없습니다.
+* AEM Sites 콘솔 내에 있는 콘텐츠만 탐색하고자 하는 경우 [추가 리소스](#additional-resources) 섹션에서 더 많은 콘텐츠를 살펴보고 검색해 보십시오! 추가로 작업을 수행할 필요는 없습니다.
 * AEM Screens의 모든 동적 기능을 경험하고자 하는 경우 다음 섹션인 [Screens 콘텐츠를 동적으로 변경](#dynamically-change)으로 계속 진행하십시오.
 
 ## Screens 콘텐츠를 동적으로 변경 {#dynamically-change}
@@ -145,7 +145,7 @@ AEM Sites와 마찬가지로 AEM Screens는 컨텍스트를 기반으로 콘텐�
 
 API 키를 사용하여 Google Sheets 데이터 교환을 허용하려면 Google Sheets API를 활성화해야 합니다.
 
-1. 에서 Google 클라우드 콘솔로 돌아갑니다. `https://console.cloud.google.com` 프로젝트에 대해 을(를) 구성한 다음 햄버거 메뉴를 사용하여 **API 및 서비스 > 라이브러리**.
+1. `https://console.cloud.google.com`에서 프로젝트용 Google 클라우드 콘솔로 돌아간 다음 햄버거 메뉴를 사용하여 **API 및 서비스 > 라이브러리**&#x200B;를 선택합니다.
 
    ![API 라이브러리](assets/api-library.png)
 
@@ -221,9 +221,9 @@ AEM Screens는 컨텍스트를 기반으로 콘텐츠를 동적으로 변경할 
 
 시트의 값은 데모 목적으로 변경될 수 있습니다. ContextHub는 이 사실을 인식하고 콘텐츠를 업데이트된 온도에 따라 채널에서 조정합니다.
 
-1. AEMaaCS 작성자 인스턴스에서 **전역 탐색 > 도구 > 사이트 > ContextHub**.
+1. AEMaaCS 작성자 인스턴스에서 **전역 탐색 > 도구 > 사이트 > ContextHub**&#x200B;로 이동합니다.
 1. **We.Cafe 웹 사이트 템플릿**&#x200B;에서 Screens 프로젝트를 만들 때 해당 프로젝트에 입력한 것과 같은 이름의 구성 컨테이너를 선택합니다.
-1. 선택 **구성 > ContextHub 구성 > Google 시트** 그런 다음 을 클릭합니다. **다음** 오른쪽 상단에서
+1. **구성 > ContextHub 구성 > Google Sheets**&#x200B;를 선택하고 오른쪽 상단에서 **다음**&#x200B;을 클릭합니다.
 1. 구성에는 이미 사전 구성된 JSON 데이터가 있어야 합니다. 다음은 변경해야 하는 두 가지 값입니다.
    1. `[your Google Sheets id]`를 [이전에 저장한](#create-spreadsheet) 시트 ID로 대체합니다.
    1. `[your Google API Key]`를 [이전에 저장한](#create-api-key) API 키로 대체합니다.
@@ -236,7 +236,7 @@ AEM Screens는 컨텍스트를 기반으로 콘텐츠를 동적으로 변경할 
 이제 AEM Screens 및 ContextHub가 기상 서비스에 연결되었으므로 이를 테스트하여 Screens가 어떻게 콘텐츠를 동적으로 업데이트하는지 확인할 수 있습니다.
 
 1. 샌드박스 작성자 인스턴스에 액세스합니다.
-1. 를 통해 사이트 콘솔로 이동합니다. **전역 탐색 > 사이트** 다음 페이지를 선택합니다 **화면 > &lt;project-name> > 채널 > Entrance Morning (세로)**.
+1. **전역 탐색 > 사이트**&#x200B;를 통해 Sites 콘솔로 이동하고 **Screens > &lt;프로젝트 이름> > 채널 > Entrance Morning(세로)**&#x200B;을 선택합니다.
 
    ![데모 프로젝트 콘텐츠 선택](assets/project-content.png)
 
@@ -325,7 +325,7 @@ AEMaaCS의 채널 편집기에서 데모를 미리 볼 수 있습니다.
 
    ![Screens 조직 확인](assets/screens-org.png)
 
-1. 왼쪽 패널에서 **플레이어 관리 > 등록 코드** 그런 다음 을 클릭합니다. **코드 만들기** 화면 오른쪽 상단에서.
+1. 왼쪽 패널에서 **플레이어 관리 > 등록 코드**&#x200B;를 클릭한 다음 화면 오른쪽 상단의 **코드 만들기**&#x200B;를 클릭합니다.
 
 ![등록 코드](assets/registration-codes.png)
 
@@ -360,7 +360,7 @@ AEMaaCS의 채널 편집기에서 데모를 미리 볼 수 있습니다.
 
    ![Screens 조직 확인](assets/screens-org.png)
 
-1. 왼쪽 패널에서 **플레이어 관리 > 플레이어** 이전에 설치 및 등록한 플레이어가 표시됩니다.
+1. 왼쪽 패널에서 **플레이어 관리 > 플레이어**&#x200B;를 클릭하면 이전에 설치하고 등록한 플레이어가 표시됩니다.
 
    ![플레이어](assets/players.png)
 
@@ -388,7 +388,7 @@ AEM 참조 데모 추가 기능 여정의 한 부분을 완료했으므로
 * We.Cafe 데모 콘텐츠를 이해할 수 있습니다.
 * We.Cafe에 대해 AEM Screens를 구성하는 방법을 파악할 수 있습니다.
 
-이제 나만의 데모 사이트를 사용하여 AEM Screens의 기능을 살펴볼 준비가 되었습니다. 여정의 다음 섹션으로 이동합니다. [데모 사이트 관리,](manage.md) 데모 사이트를 관리하는 데 도움이 되는 도구 및 이를 제거하는 방법에 대해 알아봅니다.
+이제 나만의 데모 사이트를 사용하여 AEM Screens의 기능을 살펴볼 준비가 되었습니다. 여정의 다음 섹션인 [데모 사이트 관리](manage.md)로 이동하여 계속하십시오. 여기에서는 데모 사이트 관리에 도움이 되는 도구 및 이를 제거하는 방법에 대해 알아봅니다.
 
 또한 [추가 리소스 섹션](#additional-resources)에서 사용할 수 있는 몇 가지 추가 리소스를 확인하여 이 여정에서 확인한 기능들에 대한 자세한 내용을 알아볼 수 있습니다.
 

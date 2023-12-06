@@ -5,16 +5,16 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '577'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
 # AEM 사용자 작업 {#aem-user-tasks}
 
-의 이 선택적 부분에서 [온보딩 여정,](overview.md) AEM AEM 사용자가 as a Cloud Service으로 컨텐츠를 작성하는 방법에 대해 알아봅니다.
+[온보딩 여정](overview.md)의 이 선택적 부분에서는 AEM 사용자가 AEM as a Cloud Service에 액세스하여 콘텐츠를 작성하는 방법을 배웁니다.
 
 ## 지금까지의 스토리 {#story-so-far}
 
@@ -34,7 +34,7 @@ ht-degree: 93%
 
 이 문서를 읽고 난 후에는 다음 방법을 이해할 수 있습니다.
 
-* Cloud Manager 액세스.
+* Cloud Manager 액세스
 * AEM as a Cloud Service의 인스턴스 로그인
 
 ## 사전 요구 사항 {#prerequisites}
@@ -52,7 +52,7 @@ AEM 작성자는 AEM에 로그인해야 콘텐츠 생성을 시작할 수 있습
 
 1. Cloud Manager의 **프로그램 및 제품** 페이지에서 적절한 프로그램을 선택하여 **개요** 페이지를 시작합니다. 액세스할 프로그램이 확실하지 않은 경우 시스템 관리자에게 문의하십시오.
 
-1. 다음에서 **개요** cloud Manager의 페이지에서 작성자 링크를 클릭합니다. **환경** 카드.
+1. Cloud Manager의 **개요** 페이지에서 **환경** 카드의 작성자 링크를 클릭합니다.
 
    ![환경 카드](/help/journey-onboarding/assets/author-environ.png)
 

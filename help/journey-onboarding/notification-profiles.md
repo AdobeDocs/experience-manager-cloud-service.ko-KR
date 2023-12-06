@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '982'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 94%
 
 ## 개요 {#overview}
 
-때때로 AdobeAEM 는 as a Cloud Service 환경과 관련하여 사용자에게 연락합니다. 제품 내 알림 외에도 Adobe는 때때로 알림을 위해 이메일을 사용합니다. 이러한 이메일 알림에는 두 가지 유형이 있습니다.
+때때로 Adobe는 AEM as a Cloud Service 환경과 관련하여 사용자에게 연락을 취합니다. 제품 내 알림 외에도 Adobe는 때때로 알림을 위해 이메일을 사용합니다. 이러한 이메일 알림에는 두 가지 유형이 있습니다.
 
 * **문제 알림** - 이러한 알림은 문제 중에 또는 Adobe가 AEM as a Cloud Service 환경의 잠재적 가용성 문제를 식별한 경우 전송됩니다.
 * **사전 알림** - 이러한 알림은 Adobe 지원 팀원이 AEM as a Cloud Service 환경에 도움이 될 수 있는 잠재적인 최적화 또는 권장 사항에 대한 지침을 제공하고자 할 때 전송됩니다.
@@ -52,7 +52,7 @@ ht-degree: 94%
 
    ![Admin Console의 인스턴스 목록](assets/cloud_manager_instance.png)
 
-1. 구성된 모든 Cloud Manager 제품 프로필 목록을 볼 수 있습니다.
+1. 구성된 모든 Cloud Manager 제품 프로필 목록이 표시됩니다.
 
    ![Admin Console의 제품 프로필](assets/cloud_manager_profiles.png)
 
@@ -148,4 +148,4 @@ Federated ID가 이미 존재하는 사용자를 추가하려면 다음 단계�
 
 온보딩 여정의 콘텐츠를 능가하려는 경우 다음은 추가적인 옵션 리소스입니다.
 
-* [작업 센터](/help/operations/actions-center.md) - 문제 및 기타 중요한 정보에 대해 편리하게 조치할 수 있도록 조치 센터를 활용하십시오.
+* [액션 센터](/help/operations/actions-center.md) - 액션 센터를 활용하여 인시던트 및 기타 중요한 정보에 대해 편리하게 조치를 취할 수 있습니다.

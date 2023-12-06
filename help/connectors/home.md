@@ -4,9 +4,9 @@ description: 커넥터와 그 기능에 대해 자세히 알아보고 Experience
 landing-page-description: 커넥터와 그 기능에 대해 자세히 알아보고 Experience Manager에서 이들 유용한 도구를 구현하는 방법에 대해 알아봅니다.
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '397'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 

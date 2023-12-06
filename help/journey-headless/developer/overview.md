@@ -4,9 +4,9 @@ description: Adobe Experience Manager(AEM) as a Headless CMS를 사용하여 Hea
 landing-page-description: Headless 콘텐츠 게재 및 구현을 이해합니다. 비즈니스 내부에서 전략을 개발하는 방법에 대해 자세히 알아봅니다.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1095'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -28,11 +28,11 @@ Adobe Experience Manager Headless CMS를 처음 사용하는 개발자용 설명
 
 AEM의 Headless 구현은 콘텐츠 조각 모델 및 콘텐츠 조각을 사용하여 구조화되고 채널 중립적이며 재사용 가능한 콘텐츠 조각과 크로스 채널 게재를 만드는 데 중점을 둡니다. 이를 실현하려면 전체 스택 솔루션의 기존 방식과 마찬가지로 페이지 및 구성 요소 관리를 생략합니다. 디지털 경험을 구현하기 위한 현대적이고 동적인 개발 패턴입니다.
 
-이 안내서는 AEM의 Headless 구현 주제를 안내하므로 이 작업을 완료하면 다음 작업을 수행할 수 있습니다.
+이 안내서는 AEM의 Headless 구현 주제를 안내하므로 작업이 완료되면 다음 작업을 수행할 수 있습니다.
 
 * Headless 콘텐츠 게재와 이점을 완전하게 이해할 수 있습니다.
 * AEM의 Headless 기능과 Headless 경험 게재를 위해 이 기능이 함께 작동하는 방식을 이해할 수 있습니다.
-* 첫 번째 AEM Headless 프로젝트를 구현하는 첫 번째 단계를 수행하십시오.
+* 첫 번째 AEM Headless 프로젝트를 구현하는 첫 단계를 수행할 수 있습니다.
 
 >[!TIP]
 >
@@ -46,7 +46,7 @@ AEM의 Headless 구현은 콘텐츠 조각 모델 및 콘텐츠 조각을 사용
 
 | 담당자 | 설명 | 이 여정에서의 역할 |
 |---|---|---|
-| 개발자 (타깃 대상자) | 다양한 소스의 콘텐츠를 사용하는 Headless 애플리케이션을 개발한 경험 | 이 여정의 타깃 대상자 |
+| 개발자(타깃 대상자) | 다양한 소스의 콘텐츠를 사용하는 Headless 애플리케이션을 개발한 경험 | 이 여정의 타깃 대상자 |
 | 콘텐츠 작성자 | Headless 방식으로 사이트에 게재되는 콘텐츠 생성 및 관리 | 콘텐츠 작성자는 개발자가 Headless 방식으로 게재하는 콘텐츠를 만듭니다. |
 | 관리자 | AEM의 기본 설정 및 구성 관리 | 개발자는 관리자와 협력하여 개발에 필요한 구성을 변경할 수 있습니다. |
 | 콘텐츠 설계자 | Headless 방식으로 사이트에 게재할 데이터에 대한 요구 사항 분석 및 해당 데이터의 구조 정의 | 개발자는 콘텐츠 설계자와 협력하여 데이터 구조와 데이터를 Headless 방식으로 게재하기 위한 요구 사항을 이해할 수 있습니다. |
@@ -92,7 +92,7 @@ AEM의 강력한 기능들이 함께 작동하는 방법에 대한 자세한 내
 * [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [AEM Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 직접 해 보면서 배우는 것을 선호하고 기존 AEM을 알고 있다면 API 및 프레임워크로 구성된 실습형 튜토리얼을 사용하여 AEM Headless에 빌드된 애플리케이션을 만들고 사용해 보십시오.
 * [AEM Headless 번역 여정](/help/journey-headless/translation/overview.md) - 이 설명서 여정을 통해 Headless 기술, AEM에서 Headless 콘텐츠를 제공하는 방법과 콘텐츠를 번역하는 방법을 폭넓게 이해할 수 있습니다.
-* [Headless 작성 여정](/help/journey-headless/author/overview.md) - AEM의 강력하고 유연한 Headless 기능과 각각의 능력, 그리고 사용자의 첫 Headless 프로젝트에서 콘텐츠를 모델링하는 방법에 대한 가이드 여정을 시작해 보십시오.
+* [Headless 작성 여정](/help/journey-headless/author/overview.md) - AEM의 강력하고 유연한 Headless 기능과 각각의 능력, 그리고 귀하의 첫 Headless 프로젝트에서 콘텐츠를 모델링하는 방법에 대한 가이드 여정을 시작해 보십시오.
 * [Headless 설계자 여정](/help/journey-headless/architect/overview.md) - 여기에서 Adobe Experience Manager as a Cloud Service의 강력하고 유연한 Headless 기능을 접해 보고 프로젝트 콘텐츠를 모델링하는 방법을 알아보십시오.
 * [AEM as a Cloud Service 기술 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - AEM 및 Headless 기술에 대해 확실히 이해하고 있다면 바로 심화 기술 문서를 확인합니다.
    * [AEM as a Headless CMS 소개](/help/headless/introduction.md)

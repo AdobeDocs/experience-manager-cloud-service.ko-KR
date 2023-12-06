@@ -3,9 +3,9 @@ title: 데이터 보호 및 데이터 개인정보 보호 규정 - Adobe Experie
 description: EU 일반 데이터 보호 규정(GDPR), 캘리포니아 소비자 개인정보 보호법 및 새 AEM as a Cloud Service 프로젝트 구현 시 이들 규정을 준수하는 방법을 포함하여 다양한 데이터 보호 및 데이터 개인정보 보호 규정에 대한 Adobe Experience Manager as a Cloud Service Sites 지원에 대해 알아봅니다.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1023'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->개인정보 보호 문제에 대한 Adobe의 대응 및 Adobe 고객에게 의미하는 바에 대한 자세한 내용은 [Adobe 개인정보 보호 센터](https://www.adobe.com/privacy.html)를 참조하십시오.
+>개인정보 보호 문제에 대한 Adobe의 대응 및 Adobe 고객에게 의미하는 바에 대한 자세한 내용은 [Adobe 개인정보 보호 센터](https://www.adobe.com/kr/privacy.html)를 참조하십시오.
 
 Adobe Experience Manager as a Cloud Service Sites는 고객의 데이터 개인정보 보호 및 보호 규정 준수 제어를 도울 준비가 되었습니다. 이 페이지에서는 AEM Sites에서 이러한 요청을 처리하는 절차에 대해 안내합니다. 저장된 개인 데이터의 위치와 수동으로 또는 코드로 해당 데이터를 제거하는 방법에 대해서도 설명합니다.
 
-자세한 내용은 [Adobe의 개인정보 보호 센터](https://www.adobe.com/privacy.html)를 참조하십시오.
+자세한 내용은 [Adobe의 개인정보 보호 센터](https://www.adobe.com/kr/privacy.html)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Adobe Experience Manager의 경우 사용자에 대한 옵트인/옵트아웃 �
 옵트아웃 방법
 
 1. 다음으로 이동합니다.
-   [Adobe 개인정보 보호 센터 - 옵트아웃](https://www.adobe.com/privacy/opt-out.html)
+   [Adobe 개인정보 보호 센터 - 옵트아웃](https://www.adobe.com/kr/privacy/opt-out.html)
 
 1. **서비스** - **Experience Cloud 서비스 사용 데이터**&#x200B;로 스크롤합니다.
 
@@ -70,7 +70,7 @@ Adobe Experience Manager의 경우 사용자에 대한 옵트인/옵트아웃 �
 
    >[!NOTE]
    >
-   > 자세한 설명은 **2. 개인정보 보호** 섹션([Adobe 일반 사용 약관](https://www.adobe.com/legal/terms.html))에 기재되어 있습니다.
+   > 자세한 설명은 **2. 개인정보 보호** 섹션([Adobe 일반 사용 약관](https://www.adobe.com/kr/legal/terms.html))에 기재되어 있습니다.
 
 ## Analytics Foundation {#analytics-foundation}
 
@@ -132,7 +132,7 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
 
 * 브라우저의 콘솔 사용. 예를 들어
 
-   * 크롬:
+   * Chrome:
 
       * Developer Tools > Application > Storage를 엽니다.
 
@@ -169,7 +169,7 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
 
    * ContextHub에서는 다음 데이터 지속성 계층을 제공합니다.
 
-      * `ContextHub.Utils.Persistence.Modes.LOCAL` (기본값)
+      * `ContextHub.Utils.Persistence.Modes.LOCAL`(기본값)
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
@@ -182,7 +182,7 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
 
 * 브라우저의 콘솔 사용:
 
-   * 크롬 - Developer Tools > Application > Storage 열기:
+   * Chrome - Developer Tools > Application > Storage 열기:
 
       * Local Storage > (웹 사이트) > ContextHubPersistence
       * Session Storage > (웹 사이트) > ContextHubPersistence
@@ -198,7 +198,7 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
 
    * ContextHub에서는 다음 데이터 지속성 계층을 제공합니다.
 
-      * `ContextHub.Utils.Persistence.Modes.LOCAL` (기본값)
+      * `ContextHub.Utils.Persistence.Modes.LOCAL`(기본값)
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
@@ -242,7 +242,7 @@ ContextHub 지속성 지우기:
 
 * 모든 ContextHub 지속성 계층을 지우려면 모든 레이어에 대해 적절한 코드를 호출해야 합니다.
 
-   * `ContextHub.Utils.Persistence.Modes.LOCAL` (기본값)
+   * `ContextHub.Utils.Persistence.Modes.LOCAL`(기본값)
    * `ContextHub.Utils.Persistence.Modes.SESSION`
    * `ContextHub.Utils.Persistence.Modes.COOKIE`
    * `ContextHub.Utils.Persistence.Modes.WINDOW`
