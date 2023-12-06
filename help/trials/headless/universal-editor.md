@@ -35,7 +35,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->이 체험판에서 Universal Editor를 사용하려면 크롬을 브라우저로 사용해야 하며 시크릿 모드가 아니어야 합니다. 이는 Universal Editor가 아니라 체험판 환경의 제한 사항입니다.
+>이 체험판에서 Universal Editor를 사용하려면 Chrome을 브라우저로 사용해야 하며 시크릿 모드가 아니어야 합니다. 이는 Universal Editor가 아니라 체험판 환경의 제한 사항입니다.
 
 Universal Editor를 사용하면 컨텍스트에서 즉시 텍스트를 신속하게 편집할 수 있으므로 간단하고 직관적인 콘텐츠 작성이 가능합니다.
 

@@ -317,9 +317,9 @@ ht-degree: 99%
       + 개인 맞춤화 {#personalization}
          + [개인 맞춤화 개요](/help/sites-cloud/authoring/personalization/overview.md)
          + [ContextHub 데이터를 사용하여 페이지 미리보기](/help/sites-cloud/authoring/personalization/contexthub.md)
-         + [타기팅 모드를 사용하여 타기팅된 콘텐츠 작성](/help/sites-cloud/authoring/personalization/targeted-content.md)
-         + [다중 사이트에서 타기팅된 콘텐츠를 사용하여 작업](/help/sites-cloud/authoring/personalization/multisite-targeted-content.md)
-         + [타기팅된 콘텐츠에 대한 다중 사이트 관리 구성 방식](/help/sites-cloud/authoring/personalization/multisite-structure.md)
+         + [타겟팅 모드를 사용하여 타겟팅된 콘텐츠 작성](/help/sites-cloud/authoring/personalization/targeted-content.md)
+         + [다중 사이트에서 타겟팅된 콘텐츠를 사용하여 작업](/help/sites-cloud/authoring/personalization/multisite-targeted-content.md)
+         + [타겟팅된 콘텐츠에 대한 다중 사이트 관리 구성 방식](/help/sites-cloud/authoring/personalization/multisite-structure.md)
          + [활동 관리](/help/sites-cloud/authoring/personalization/activities.md)
          + [대상자 관리](/help/sites-cloud/authoring/personalization/audiences.md)
          + [오퍼 생성 및 관리(오퍼 콘솔)](/help/sites-cloud/authoring/personalization/offers.md)
