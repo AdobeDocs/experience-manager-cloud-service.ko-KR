@@ -3,10 +3,10 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud Service에서 Headless 콘텐츠 게재를 위해 콘텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 7aeab6ab7dcd933a1d02514b6eea752527055c77
 workflow-type: tm+mt
-source-wordcount: '4863'
-ht-degree: 93%
+source-wordcount: '4910'
+ht-degree: 92%
 
 ---
 
@@ -1035,6 +1035,15 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
 ## 인증 {#authentication}
 
 [콘텐츠 조각의 원격 AEM GraphQL 쿼리 인증](/help/headless/security/authentication.md)을 참조하십시오.
+
+## 제한 사항 {#limitations}
+
+잠재적인 문제로부터 보호하기 위해 쿼리에 적용되는 기본 제한 사항이 있습니다.
+
+* 쿼리에 1M(1024 * 1024)자를 초과할 수 없습니다.
+* 쿼리에 15000개 이상의 토큰을 포함할 수 없습니다.
+* 쿼리에 200000개 이상의 공백 토큰을 포함할 수 없습니다.
+* 쿼리 깊이는 500을 초과할 수 없습니다.
 
 ## FAQ {#faqs}
 
