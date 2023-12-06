@@ -11,9 +11,9 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: d9d4ed55722920a8528056defbc0d8a411dd6807
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1866'
 ht-degree: 1%
 
 ---
@@ -215,10 +215,9 @@ React 기반 Peregrine 및 CIF 코어 구성 요소를 초기화하려면 필요
            baseUrl: storeConfig.storeRootUrl
        },
        eventsCollector: {
-           // Enable the Experience Platform Connector and define the org and datastream to use
-           aep: {
-               orgId: // TODO: add your orgId
-               datastreamId: // TODO: add your datastreamId
+           eventForwarding: {
+               commerce: true,
+               aep: false,
            }
        }
    };
@@ -432,7 +431,7 @@ Experience Platform에서 데이터 스트림을 생성하려면 다음 단계�
 
 ## 트리거 `addToCart` 이벤트 및 데이터 수집 확인 {#event-trigger-verify}
 
-위의 단계에서는 AEM Commerce 및 Experience Platform 설정을 완료합니다. 이제 다음을 트리거할 수 있습니다. `addToCart` Experience Platform 디버거 및 데이터 세트를 사용하여 데이터 수집 이벤트 및 확인 __지표 및 그래프__ 제품 UI에서 전환합니다.
+위의 단계에서는 AEM Commerce 및 Experience Platform 설정을 완료합니다. 이제 다음을 트리거할 수 있습니다. `addToCart` 이벤트 및 를 사용하여 데이터 수집 확인 [Snowploy 검사기](https://chromewebstore.google.com/detail/snowplow-inspector/maplkdomeamdlngconidoefjpogkmljm?pli=1) 및 데이터 세트 __지표 및 그래프__ 제품 UI에서 전환합니다.
 
 이벤트를 트리거하려면 로컬 설정에서 AEM author 또는 publish 서비스를 사용할 수 있습니다. 예를 들어, 계정에 로그인하여 AEM 작성자를 사용하십시오.
 
@@ -443,9 +442,7 @@ Experience Platform에서 데이터 스트림을 생성하려면 다음 단계�
 1. 에서 원하는 제품 카드를 클릭합니다. __제품 페이지__&#x200B;을 선택한 다음 을 선택합니다. __색상, 크기__ 을(를) 활성화하려면 __장바구니에 추가__ 단추를 클릭합니다.
 
 
-1. 를 엽니다. __Adobe Experience Platform Debugger__ 브라우저의 확장 패널에서 확장을 선택한 다음 __Experience Platform Wed SDK__ 왼쪽 레일에서.
-
-   ![AEP 디버거](../assets/aep-integration/AEP-Debugger.png)
+1. 를 엽니다. __Snowploy 검사기__ 브라우저의 확장 패널에서 확장을 선택한 다음 __Experience Platform Wed SDK__ 왼쪽 레일에서.
 
 
 1. (으)로 돌아가기 __제품 페이지__ 및 클릭 __장바구니에 추가__ 단추를 클릭합니다. 이렇게 하면 데이터가 Experience Platform으로 전송됩니다. 다음 __Adobe Experience Platform Debugger__ 확장은 이벤트 세부 사항을 표시합니다.
@@ -462,9 +459,9 @@ Experience Platform에서 데이터 스트림을 생성하려면 다음 단계�
 
 ## 구현 세부 사항 {#implementation-details}
 
-다음 [CIF Experience Platform 커넥터](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) 의 맨 위에 빌드됨 [Adobe Commerce용 Experience Platform 커넥터](https://marketplace.magento.com/magento-experience-platform-connector.html), 의 일부 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) 프로젝트.
+다음 [CIF Experience Platform 커넥터](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) 의 맨 위에 빌드됨 [Adobe Commerce용 데이터 연결](https://marketplace.magento.com/magento-experience-platform-connector.html), 의 일부 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) 프로젝트.
 
-PWA Studio 프로젝트를 사용하면 Adobe Commerce 또는 Magento Open Source에서 제공하는 Progressive Web Application(PWA) 상점 전면을 만들 수 있습니다. 이 프로젝트에는 이라는 구성 요소 라이브러리도 포함되어 있습니다. [페레그린](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) 시각적 구성 요소에 논리를 추가하는 경우. 다음 [페레그린 도서관](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) 는에서 사용하는 사용자 지정 React 후크도 제공합니다. [Experience Platform 커넥터](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) 을 Experience Platform과 원활하게 통합합니다.
+PWA Studio 프로젝트를 사용하면 Adobe Commerce 또는 Magento Open Source에서 제공하는 Progressive Web Application(PWA) 상점 전면을 만들 수 있습니다. 이 프로젝트에는 이라는 구성 요소 라이브러리도 포함되어 있습니다. [페레그린](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) 시각적 구성 요소에 논리를 추가하는 경우. 다음 [페레그린 도서관](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) 는에서 사용하는 사용자 지정 React 후크도 제공합니다. [CIF Experience Platform 커넥터](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) 을 Experience Platform과 원활하게 통합합니다.
 
 
 ## 지원되는 이벤트 {#supported-events}
