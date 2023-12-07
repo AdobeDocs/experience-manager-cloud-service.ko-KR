@@ -5,7 +5,7 @@ exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '672'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ AEM as a Cloud Service 메일 서비스에 대한 자세한 내용은 [이메일
 
    >[!NOTE]
    >
-   >권한 구성은 시간이 지남에 따라 발전할 수 있습니다. 예상대로 작동하지 않는 경우 Microsoft을 사용하여 작업합니다.
+   >권한 구성은 시간이 지나면서 발전할 수 있습니다. 예상대로 작동하지 않는 경우 Microsoft을 사용하여 작업합니다.
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
@@ -139,15 +139,14 @@ AEM측의 OAuth 구성을 진행하기에 앞서 아래 절차에 따라 accessT
 
    >[!NOTE]
    >
-   >범위는 시간이 지남에 따라 발전할 수 있습니다. 예상대로 작동하지 않는 경우 Microsoft을 사용하여 작업합니다.
+   >범위는 시간이 지나면서 발전할 수 있습니다. 예상대로 작동하지 않는 경우 Microsoft을 사용하여 작업합니다.
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
    * `offline_access`
    * `email`
    * `profile`
-1. OSGI 속성 파일 만들기 `called com.day.cq.mailer.DefaultMailService.cfg.json`
-아래에 `/apps/<my-project>/osgiconfig/config` (아래 구문 포함) [이메일 서비스 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=ko-KR)에 설명된 대로 `smtp.host` 및 `smtp.port` 값은 고급 네트워킹 구성을 반영합니다.
+1. 아래 구문을 사용하여 `/apps/<my-project>/osgiconfig/config` 아래에 `called com.day.cq.mailer.DefaultMailService.cfg.json`이라는 OSGI 속성 파일을 만듭니다. [이메일 서비스 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=ko-KR)에 설명된 대로 `smtp.host` 및 `smtp.port` 값은 고급 네트워킹 구성을 반영합니다.
 
    ```
    {
