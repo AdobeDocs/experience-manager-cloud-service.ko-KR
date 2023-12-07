@@ -3,7 +3,7 @@ title: ' [!DNL Workfront for Experience Manager enhanced connector] 릴리스 �
 description: ' [!DNL Workfront for Experience Manager enhanced connector] 릴리스 정보'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: 16aa0241dd954b7f66523d746827d81b956578bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1379'
 ht-degree: 100%
 

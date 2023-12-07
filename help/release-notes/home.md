@@ -3,7 +3,7 @@ title: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 정보
 description: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 정보
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '644'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ## 릴리스 준비 방법 {#how-to-prepare}
 
-[!DNL Adobe Experience Manager] as a Cloud Service의 지속적인 릴리스 모델과 함께, 애플리케이션은 지속적으로 업데이트됩니다. 업데이트에는 기능 릴리스와 유지 관리 릴리스의 두 가지 유형이 있습니다.
+[!DNL Adobe Experience Manager] as a Cloud Service의 지속적인 릴리스 모델을 통해 애플리케이션은 자동으로 업데이트됩니다. 업데이트에는 기능 릴리스와 유지 관리 릴리스의 두 가지 유형이 있습니다.
 
 * [기능 릴리스는 예측 가능한 월별 주기로 수행되며 새로운 기능 및 제품 혁신에 초점을 맞춥니다.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 * [유지 관리 릴리스](/help/release-notes/maintenance/latest.md)는 수시로 수행되며 보안 업데이트, 버그 수정 및 성능 개선에 초점을 맞춥니다. 이를 통해 [!DNL Adobe Experience Manager] as a Cloud Service는 항상 중요한 수정 사항을 최신 상태로 유지할 수 있습니다.
@@ -28,11 +28,11 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->프리릴리스는 월별 기능 릴리스에 대해서만 수행되며, 주요 릴리스를 위해 수행되지 않습니다.
+>프리릴리스는 주요 업데이트가 아닌 월별 기능 릴리스에 대해서만 수행됩니다.
 
 릴리스를 준비하려면:
 
-1. 달력에 미리 표시: [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)에 월별 릴리스의 주요 날짜를 확인하고 달력에 표시하여 릴리스를 준비하기 위한 주요 활동을 준비하십시오.
+1. 달력에 미리 표시: [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)에 월별 릴리스의 주요 일자를 확인하고 달력에 표시하여 릴리스를 준비하기 위한 주요 활동을 준비하십시오.
 1. 릴리스 정보 검토: [최신 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)를 읽고 릴리스 및 프리릴리스 기능에 익숙해지십시오.
 1. 새로운 기능 액세스 및 체험: 비프로덕션 환경에서 [프리릴리스 채널](/help/release-notes/prerelease.md)을 활성화하여 맞춤형 환경에서 평가할 기능을 사용해 보십시오.
 1. 사용자 교육: 설명서 및 Experience League 리소스를 사용하여 사용자에게 새로운 기능에 대한 최신 정보를 제공하여 빠르게 숙달되도록 하십시오.
