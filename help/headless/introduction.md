@@ -5,7 +5,7 @@ landing-page-description: Adobe Experience Manager as a Cloud Service에서 Head
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: ht
-source-wordcount: '701'
+source-wordcount: '694'
 ht-degree: 100%
 
 ---
