@@ -2,9 +2,9 @@
 title: 클라우드 서비스에 콘텐츠 수집
 description: Cloud Acceleration Manager 를 사용하여 마이그레이션 세트의 컨텐츠를 대상 Cloud Service 인스턴스로 수집하는 방법을 알아봅니다.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 250682b96e2eaa2ed872e6f626c0a13dc19720f2
+source-git-commit: a66724cf76e4562710e458aeeea0d54ea9efb9aa
 workflow-type: tm+mt
-source-wordcount: '2313'
+source-wordcount: '2315'
 ht-degree: 5%
 
 ---
@@ -132,8 +132,8 @@ Cloud Acceleration Manager를 사용하여 마이그레이션 세트를 수집�
 
 * AEM은 환경 상태를 as a Cloud Service으로 유지하며 경우에 따라 다양한 일반적인 이유로 마이그레이션 서비스를 다시 시작해야 합니다. 서비스를 다시 시작하는 경우에는 해당 서비스에 연결할 수 없지만 결국 사용할 수 있습니다.
 * 인스턴스에서 다른 프로세스가 실행되고 있을 수 있습니다. 예를 들어 다음과 같습니다. [AEM 버전 업데이트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) 업데이트를 적용하는 중입니다. 시스템이 사용 중이고 마이그레이션 서비스를 정기적으로 사용할 수 없습니다. 해당 프로세스가 완료되면 수집 시작을 다시 시도할 수 있습니다.
-* 다음과 같은 경우 [IP 허용 목록이 적용되었습니다.](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) cloud Manager를 통해 Cloud Acceleration Manager가 마이그레이션 서비스에 도달하는 것을 차단합니다. 주소가 동적이므로 수집에 IP 주소를 추가할 수 없습니다. 현재 유일한 해결 방법은 수집이 실행되는 동안 IP 허용 목록을 비활성화하는 것입니다.
-* 조사가 필요한 다른 이유가 있을 수 있다. 계속해서 수집이 실패하면 Adobe 고객 지원 센터에 문의하십시오.
+* 다음과 같은 경우 [IP 허용 목록이 적용되었습니다.](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) cloud Manager를 통해 Cloud Acceleration Manager가 마이그레이션 서비스에 도달하는 것을 차단합니다. 주소가 동적이므로 수집에 IP 주소를 추가할 수 없습니다. 현재 유일한 해결 방법은 수집 및 색인화 프로세스 중에 IP 허용 목록을 비활성화하는 것입니다.
+* 조사가 필요한 다른 이유가 있을 수 있다. 수집 또는 색인화에 계속 오류가 발생하면 Adobe 고객 지원 센터에 문의하십시오.
 
 ### AEM 버전 업데이트 및 수집
 
