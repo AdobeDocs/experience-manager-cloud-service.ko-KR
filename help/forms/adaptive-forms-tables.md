@@ -2,9 +2,9 @@
 title: 적응형 양식에 표를 추가하는 방법
 description: 테이블 구성 요소를 사용하여 적응형 양식에 테이블을 추가하십시오. 응답형 레이아웃과 함께 테이블 구성 요소를 사용하여 XDP 테이블 요소를 추가할 수 있습니다.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '2476'
 ht-degree: 2%

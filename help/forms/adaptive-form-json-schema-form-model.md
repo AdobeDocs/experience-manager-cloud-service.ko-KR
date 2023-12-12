@@ -1,11 +1,11 @@
 ---
 title: 적응형 양식에 대한 JSON 스키마를 디자인하는 방법
 description: 적응형 양식에 대한 JSON 스키마를 만들고 스키마를 기반으로 적응형 양식을 만들어 스키마 컴플레인 데이터를 생성하는 방법에 대해 알아봅니다.
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1333'
 ht-degree: 8%

@@ -1,11 +1,11 @@
 ---
 title: 규칙 편집기를 사용하여 양식 필드에 규칙을 추가하여 동적 동작을 추가하고 복잡한 논리를 적응형 양식에 작성하는 방법
 description: 적응형 Forms 규칙 편집기를 사용하면 코딩 또는 스크립팅 없이 다이내믹 동작을 추가하고 복잡한 논리를 양식에 빌드할 수 있습니다.
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '6457'
 ht-degree: 1%

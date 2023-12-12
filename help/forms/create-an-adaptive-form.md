@@ -1,17 +1,17 @@
 ---
 title: 적응형 양식을 만드는 방법은?
 description: 단계별 튜토리얼을 통해 모바일 반응이 좋은 적응형 양식을 만드는 방법에 대해 알아봅니다. 이러한 양식은 여러 디바이스에 매끄럽게 적응하여 원활한 경험을 보장합니다.
-keywords: 적응형 양식, 모바일 양식, 반응형 양식, HTML5 양식
+keywords: 적응형 Forms, 반응형 Forms, HTML5 Forms
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
-source-wordcount: '2675'
-ht-degree: 91%
+source-wordcount: '2673'
+ht-degree: 90%
 
 ---
 

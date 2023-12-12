@@ -1,8 +1,9 @@
 ---
 title: 테마를 만들고 사용하여 적응형 양식의 스타일을 어떻게 지정할 수 있습니까?
 description: 적응형 양식 테마를 사용하여 적응형 양식에 스타일을 지정하고 시각적 ID를 제공합니다. 여러 적응형 Forms에서 테마를 공유할 수 있습니다.
+feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '5558'
 ht-degree: 2%

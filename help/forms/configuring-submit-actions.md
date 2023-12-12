@@ -1,8 +1,9 @@
 ---
 title: 적응형 양식에 대한 제출 액션을 구성하는 방법
 description: 적응형 양식은 여러 제출 액션을 제공합니다. 제출 액션은 적응형 양식이 제출 후 처리되는 방식을 정의합니다. 기본 제공 제출 액션을 사용하거나 직접 만들 수 있습니다.
+feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 738a0ceeb0a8cc9b08a1871ef3b2939cbcf2f80a
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '3913'
 ht-degree: 76%

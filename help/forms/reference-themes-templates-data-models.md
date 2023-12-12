@@ -1,11 +1,12 @@
 ---
 title: AEM 양식에 대한 참조 테마 및 템플릿을 가져오는 방법
 description: AEM Forms은 양식을 신속하게 만들 수 있도록 샘플 적응형 양식 테마, 템플릿 및 양식 데이터 모델을 제공합니다.
+feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 23%
+source-wordcount: '772'
+ht-degree: 13%
 
 ---
 
@@ -108,7 +109,7 @@ FSI 테마는 양식에 대한 미니멀하고 기능적인 모양을 강조합�
 * 기본
 * 비어 있음
 
-기본 템플릿을 사용하면 등록 양식을 신속하게 만들 수 있습니다. 적응형 Forms 기초 구성 요소의 기능을 미리 보는 데에도 사용할 수 있습니다. 데이터를 섹션별로 표시하기 위한 마법사 레이아웃이 제공됩니다. 빈 템플릿을 사용하여 빈 캔버스에서 적응형 양식을 만들기 시작합니다.
+기본 템플릿을 사용하면 등록 양식을 신속하게 만들 수 있습니다. 적응형 Forms 기초 구성 요소의 기능을 미리 보는 데에도 사용할 수 있습니다. 또한 데이터의 섹션별 표시를 위한 마법사 레이아웃을 제공합니다. 빈 템플릿을 사용하여 빈 캔버스에서 적응형 양식을 만들기 시작합니다.
 
 
 ## 참조 양식 데이터 모델 {#reference-models}

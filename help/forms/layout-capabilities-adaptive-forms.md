@@ -1,8 +1,9 @@
 ---
 title: 적응형 Forms의 레이아웃 기능은 무엇입니까?
 description: 다양한 디바이스에서 적응형 Forms의 레이아웃 및 모습은 레이아웃 설정의 적용을 받습니다. 다양한 레이아웃과 적용 방법을 이해합니다.
+feature: Adaptive Forms, Foundation Components
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 8%

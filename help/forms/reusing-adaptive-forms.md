@@ -2,10 +2,11 @@
 title: 적응형 양식의 메타데이터 속성을 재사용하려면 어떻게 해야 합니까?
 description: 기존 적응형 양식의 용도를 효율적으로 변경하여 새 적응형 양식을 만드는 방법을 살펴보십시오.
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
+feature: Adaptive Forms, Foundation Components
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '601'
 ht-degree: 12%
 
 ---
@@ -68,7 +69,7 @@ ht-degree: 12%
 
    적응형 Forms에서 사용되는 XFA/XSD를 변경할 수 있습니다. 이러한 적응형 Forms을 변경하는 방법은 다음을 참조하십시오. [양식 메타데이터 관리](manage-form-metadata.md)
 
-1. **재게시:**
+1. **다시 게시:**
 
    붙여넣은 에셋이 복사한 에셋과 다릅니다. 최종 사용자가 사용할 수 있도록 새 에셋으로 게시할 수 있습니다. 에셋을 게시하는 방법을 알려면 <!-- see [Publishing and unpublishing forms](publishing-unpublishing-forms.md) -->
 

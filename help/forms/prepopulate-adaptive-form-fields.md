@@ -2,11 +2,12 @@
 title: 적응형 양식 필드를 미리 채우는 방법
 description: 기존 데이터를 사용하여 적응형 양식의 필드를 미리 채우면 사용자가 소셜 프로필로 로그인하여 양식의 기본 정보를 미리 채울 수 있습니다.
 topic-tags: develop
+feature: Adaptive Forms, Foundation Components
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
 workflow-type: tm+mt
-source-wordcount: '2041'
-ht-degree: 4%
+source-wordcount: '2007'
+ht-degree: 3%
 
 ---
 

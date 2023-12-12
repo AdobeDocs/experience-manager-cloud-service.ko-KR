@@ -1,8 +1,9 @@
 ---
 title: 적응형 양식에 각주를 추가하는 방법
 description: 적응형 양식의 각주에 대해 리치 텍스트 편집기(RTE)를 사용하십시오.
+feature: Adaptive Forms, Foundation Components
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 12%

@@ -1,10 +1,11 @@
 ---
 title: AEM Forms에 대한 메타데이터를 관리하려면 어떻게 해야 합니까?
 description: 메타데이터를 사용하면 에셋을 보다 쉽게 분류하고 구성할 수 있으며 특정 에셋을 찾는 사용자에게 도움이 됩니다.
+feature: Adaptive Forms, Foundation Components
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
 workflow-type: tm+mt
-source-wordcount: '1742'
+source-wordcount: '1733'
 ht-degree: 6%
 
 ---
@@ -29,7 +30,7 @@ ht-degree: 6%
 
 위치 [!DNL AEM Forms]: 에셋과 연결된 메타데이터 속성 목록은 에셋의 유형에 따라 다릅니다. 또한 사용자 지정 메타데이터 속성을 추가하면 해당 사용자 지정 메타데이터가 추가된 유형의 모든 에셋에 추가됩니다.
 
-### 자산 유형 {#asset-types}
+### 에셋 유형 {#asset-types}
 
 지원되는 자산 유형은 다음과 같습니다 [!DNL AEM Forms]:
 

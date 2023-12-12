@@ -1,9 +1,9 @@
 ---
 title: 적응형 양식 기반의 핵심 구성 요소를 번역하려면 어떻게 해야 합니까?
 description: AEM Forms에서 양식 데이터 모델을 만들고, 샘플 데이터 및 서비스로 모델을 테스트하고, 모델에 대한 다양한 옵션을 구성하는 방법에 대해 알아봅니다.
-feature: Adaptive Forms
+feature: Adaptive Forms, Core Components
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 4%

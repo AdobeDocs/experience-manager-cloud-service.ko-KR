@@ -3,8 +3,9 @@ title: AEM 적응형 양식에서 Google reCAPTCHA를 사용하는 방법
 description: Google reCAPTCHA 서비스를 통해 손쉽게 양식 보안을 강화할 수 있습니다. 내부의 단계별 가이드!
 topic-tags: Adaptive Forms, author
 keywords: Google reCAPTCHA 서비스, 적응형 Forms, CAPTCHA 과제, 보트 방지, 핵심 구성 요소, 양식 제출 보안, 양식 스팸 방지
+feature: Adaptive Forms, Core Components
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '918'
 ht-degree: 11%

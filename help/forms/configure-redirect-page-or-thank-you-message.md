@@ -1,14 +1,14 @@
 ---
 title: 리디렉션 페이지 또는 감사 메시지를 구성하는 방법
 description: 양식을 만드는 동안 양식 작성자가 구성할 수 있는 감사 메시지를 표시하거나 웹 페이지로 리디렉션하는 방법에 대해 알아봅니다.
-feature: Adaptive Forms
+feature: Adaptive Forms, Core Components
 role: User
 level: Intermediate
 exl-id: 27decf88-a2ab-4b52-b6ae-babb1d3abdaa
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
 workflow-type: tm+mt
 source-wordcount: '239'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 양식 작성자는 양식을 제출한 후 양식 사용자가 리디렉션되는 각 양식에 대한 페이지를 구성할 수 있습니다.
 
-**관련됨**
+**관련 항목**
 
 * [리디렉션 페이지 구성(Foundation Forms)](configuring-redirect-page.md)
 

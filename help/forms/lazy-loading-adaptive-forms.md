@@ -1,11 +1,11 @@
 ---
 title: 어떻게 하면 소극적 로드로 대형 양식의 성능을 향상시킬 수 있습니까?
 description: 소극적 로드를 사용하여 대형 양식의 성능을 개선하는 방법에 대해 알아봅니다. 지연 로드는 양식 조각이 표시될 때까지 양식 조각의 초기화 및 로드를 지연하여 크고 복잡한 적응형 Forms의 성능을 크게 향상시킵니다.
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 7%

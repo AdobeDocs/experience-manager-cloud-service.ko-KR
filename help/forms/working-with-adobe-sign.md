@@ -2,11 +2,11 @@
 title: 적응형 양식에서 Adobe Sign을 사용하려면 어떻게 해야 합니까?
 description: 적응형 양식의 Adobe Sign을 사용하여 양식 수신자가 선택한 장치 및 위치에서 양식에 전자 서명할 수 있습니다.
 topic-tags: develop
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '3131'
 ht-degree: 2%

@@ -1,8 +1,9 @@
 ---
 title: 핵심 구성 요소를 기반으로 새 로케일에 대한 지원을 적응형 양식에 추가하려면 어떻게 합니까?
 description: 적응형 양식에 대한 새 로케일을 추가하는 방법을 알아봅니다.
+feature: Adaptive Forms, Core Components
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1333'
 ht-degree: 4%

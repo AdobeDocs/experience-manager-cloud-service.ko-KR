@@ -1,11 +1,11 @@
 ---
 title: 적응형 Forms을 만드는 방법
 description: 정보 수집 및 처리를 간소화하는 적응형 양식을 만드는 방법에 대해 알아봅니다. 또한 양식 데이터 모델을 기반으로 적응형 양식을 만드는 방법에 대해 알아봅니다.
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 81%

@@ -1,13 +1,13 @@
 ---
 title: 적응형 양식에 대한 사용자 지정 제출 액션을 만드는 방법
 description: 적응형 Forms에 대한 사용자 지정 제출 액션을 만들어 데이터를 나머지 끝점에 제출하기 전에 제출을 지연하고 처리하고, 데이터 저장소에 저장하고, 기타 사용자 지정 기능을 수행하는 방법에 대해 알아봅니다.
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1670'
 ht-degree: 1%
 
 ---
