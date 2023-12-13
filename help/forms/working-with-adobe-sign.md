@@ -6,9 +6,9 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: e81da7414335e00411942adeb41978d39f172b52
 workflow-type: tm+mt
-source-wordcount: '3131'
+source-wordcount: '3242'
 ht-degree: 2%
 
 ---
@@ -160,7 +160,7 @@ Sign이 활성화된 적응형 양식을 만들려면 다음 작업을 수행하
 
 서명 Cloud Service 및 순서를 선택하려면 다음을 수행하십시오.
 
-![Cloud-service](assets/cloud-service.png)
+![Cloud-service](/help/forms/assets/adobe-sign-cloud-service.png)
 
 1. 콘텐츠 브라우저에서 다음을 선택합니다 **[!UICONTROL 양식 컨테이너]**&#x200B;을(를) 클릭하고 **[!UICONTROL 구성]** ![구성](assets/Smock_Wrench_18_N.svg) 아이콘. 속성 브라우저를 열고 적응형 양식 컨테이너 속성을 표시합니다.
 1. 속성 브라우저에서 **[!UICONTROL 전자 서명]** 아코디언을 선택하고 **[!UICONTROL Adobe Sign 활성화]** 옵션을 선택합니다. 다음을 가능하게 합니다. [!DNL Adobe Sign] 적응형 양식용.
@@ -170,6 +170,10 @@ Sign이 활성화된 적응형 양식을 만들려면 다음 작업을 수행하
 
    드롭다운에는에 있는 Cloud Service이 나열됩니다 `global` 도구 > 의 폴더 **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. 또한 드롭다운 목록에는에서 선택한 폴더에 있는 Cloud Service이 나열됩니다. **[!UICONTROL 구성 컨테이너]** 적응형 양식을 만들 때 필드.
 
+1. 옵션을 선택하여 다음을 사용하여 제출 액션을 구성합니다. **[!UICONTROL 양식 제출]**. 다음 중 한 가지 옵션을 선택할 수 있습니다.
+   * **양식 제출(및 서명을 위한 계약서 전송)**: 이 옵션은 양식을 즉시 제출한 다음 서명용 양식을 수신자에게 보냅니다.
+   * **양식 제출(모든 수신자가 서명식을 완료한 후)**: 이 옵션은 모든 서명자가 서명 프로세스를 완료한 후에만 적응형 Forms을 제출합니다. 모든 서명자에 대한 서명 상태를 확인하도록 간격을 구성할 수 있습니다. 자세한 내용은  [구성 [!DNL Adobe Acrobat Sign] 예약](/help/forms/adobe-sign-integration-adaptive-forms.md#configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status).
+
 1. 에서 서명 순서 선택 **[!UICONTROL 수신자가 완료할 수 있음]** 대화 상자. 수신자는 적응형 양식에 서명할 수 있습니다 **[!UICONTROL 순차적으로]** - 차례로 받는 사람 또는 **[!UICONTROL 동시에]** - 모든 순서.
 
    한 번에 한 명의 수신자가 Adobe Sign 계약을 순차적으로 받습니다. 수신자가 지정된 작업을 완료하면 계약이 다음 수신자에게 전송됩니다.
@@ -177,6 +181,10 @@ Sign이 활성화된 적응형 양식을 만들려면 다음 작업을 수행하
    동시 순서로 모든 수신자들이 Adobe Sign 협약을 받고 서로 병렬적으로 행동할 수 있다.
 
 1. 계약 ID 필드를 사용하여 bindref를 계약 ID(agreementId)에 연결합니다. 스키마 기반 양식에 대한 제출 데이터의 afBoundData 섹션에 계약 ID를 추가합니다. 계약 ID는 모든 Adobe Sign 지원 양식에 대해 제출된 데이터의 afSubmissionInfo 섹션에도 추가됩니다. 사용자 지정 코드를 사용하여 계약 상태를 추적하는 데 계약 ID를 사용할 수 있습니다(사용자 지정 구현 필요).
+
+   >[!NOTE]
+   >
+   > 양식 데이터 모델을 사용하여 적응형 양식을 만들면 계약 ID 필드가 대화 상자에 표시됩니다.
 
 1. [적응형 양식에 수신자 추가](working-with-adobe-sign.md#addsignerstoanadaptiveform) 완료를 선택합니다. ![저장](assets/save_icon.svg) 아이콘 을 클릭하여 변경 내용을 저장합니다.
 

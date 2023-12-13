@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 821c243ab2d8ce1468c80c36d01b5c4c8f2bec76
 workflow-type: tm+mt
-source-wordcount: '2001'
-ht-degree: 28%
+source-wordcount: '2033'
+ht-degree: 24%
 
 ---
 
@@ -231,9 +231,12 @@ Adobe Acrobat Sign for Government Solutions 팀은 `re-direct URL` 또한 Adobe 
 
 이제 다음을 수행할 수 있습니다. [적응형 양식에서 Adobe Acrobat Sign 필드 추가 사용](working-with-adobe-sign.md) 또는 [AEM 워크플로](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step). Cloud Service 구성에 사용되는 구성 컨테이너를 활성화할 모든 적응형 Forms에 추가해야 합니다 [!DNL Adobe Acrobat Sign]. 적응형 양식의 속성에서 구성 컨테이너를 지정할 수 있습니다.
 
-## (AEM Workflow만 해당) [!DNL Adobe Acrobat Sign] 스케줄러를 구성하여 서명 상태 동기화 {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
+## 구성 [!DNL Adobe Acrobat Sign] 서명 상태를 동기화하는 스케줄러 {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
 
-[!DNL Adobe Acrobat Sign] 워크플로 단계를 사용해 적응형 양식에 서명할 때, 워크플로 단계의 구성에 따라 양식이 서명자들 간에 전달되거나 모든 서명자에게 동시에 전달될 수 있습니다. [!DNL Adobe Acrobat Sign]이 활성화된 적응형 양식은 모든 서명자가 서명 프로세스를 완료한 후에만 Experience Manager Forms Server에 제출됩니다.
+AEM Forms as a Cloud Service에서는 정의된 간격으로 서명자 상태를 확인하는 스케줄러 서비스를 제공합니다. 스케줄러 서비스를 구성하는 시나리오는 다음과 같습니다.
+
+* 를 사용하는 경우 [양식 제출(모든 수신자가 서명식을 완료한 후)](/help/forms/working-with-adobe-sign.md#select-adobe-sign-cloud-service-and-signing-order) 문서에 서명하려면 모든 서명자가 양식에 서명한 후에만 양식을 제출합니다.
+* 를 사용하는 경우 [AEM 워크플로에서 서명 단계](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step) 문서에 서명하려면 서명 단계에서 모든 서명자가 문서에 서명할 때까지 기다렸다가 워크플로우의 다음 단계로 진행합니다.
 
 기본값으로 [!DNL Adobe Acrobat Sign] 스케줄러 서비스는 서명자 응답을 24시간마다 점검(가져옴)합니다. 해당 환경에 맞게 기본값 간격을 변경할 수 있습니다.
 
