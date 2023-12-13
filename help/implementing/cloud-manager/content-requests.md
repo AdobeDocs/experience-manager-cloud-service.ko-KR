@@ -2,16 +2,35 @@
 title: Cloud Service 콘텐츠 요청 이해
 description: Adobe에서 컨텐츠 요청 라이선스를 구입한 경우 Adobe Experience Cloud as a Service가 측정하는 컨텐츠 요청 유형과 조직의 분석 보고 도구와의 차이에 대해 알아봅니다.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 949f0ec1aa89fd05813bc9ffb02a75fb0ad84a32
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 10%
+source-wordcount: '2690'
+ht-degree: 4%
 
 ---
 
 # Cloud Service 컨텐츠 요청
 
-## Cloud Service 컨텐츠 요청 분산{#content-requests-variances}
+## 소개 {#introduction}
+
+Cloud Service 컨텐츠 요청은 서버측 데이터 수집을 통해 측정됩니다. 컬렉션은 CDN 로그 분석을 통해 활성화됩니다.
+
+>[!NOTE]
+>또한 제한된 수의 [얼리 어답터 고객](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter), 클라이언트측 컬렉션도 RUM(Real User Monitoring) 측정을 통해 활성화될 수 있습니다. 다음에서 설명서를 참조하여 자세한 내용을 알 수 있습니다. [이 문서](#real-user-monitoring-for-aem-as-a-cloud-service).
+
+## Cloud Service 콘텐츠 요청 이해 {#understaing-cloud-service-content-requests}
+
+컨텐츠 요청은 AEM as a Cloud Service CDN에서 시작되는 로그 파일의 자동화된 분석을 통해 Adobe Experience Manager as a Cloud Service의 에지에서 서버측에서 자동으로 수집됩니다. 이 작업은 HTML을 반환하는 요청을 격리하여 수행됩니다 `(text/html)` 또는 JSON `(application /Json)` 아래에 설명된 여러 포함 및 제외 규칙을 기반으로 하는 CDN의 콘텐츠. 콘텐츠 요청은 CDN 캐시에서 처리 중인 반환된 콘텐츠 또는 CDN(AEM dispatchers)의 소스로 돌아가는 콘텐츠와는 독립적으로 발생합니다.
+
+클라이언트측 컬렉션인 RUM(Real User Monitoring) 데이터 서비스 는 사용자 상호 작용을 보다 정확하게 반영하여 웹 사이트 참여에 대한 신뢰할 수 있는 측정을 보장합니다. 이를 통해 고객은 페이지 트래픽 및 성능에 대한 고급 통찰력을 얻을 수 있습니다. 이는 Adobe 관리 CDN 또는 Adobe이 아닌 관리 CDN을 사용하는 두 고객 모두에게 유용합니다. 또한 이제 Adobe이 아닌 관리 CDN을 사용하는 고객에 대해 자동 트래픽 보고를 활성화할 수 있으므로 트래픽 보고서를 Adobe과 공유할 필요가 없습니다.
+
+AEM as a Cloud Service을 기반으로 자체 CDN을 가져오는 고객의 경우 서버측 보고는 라이선스가 부여된 콘텐츠 요청과 비교하는 데 사용할 수 없는 숫자를 생성합니다. 이러한 수치는 외부 CDN의 끝에서 고객이 측정해야 합니다. 이러한 고객, 클라이언트측 보고 및 관련 성능, [Adobe RUM 데이터 서비스](#real-user-monitoring-for-aem-as-a-cloud-service) 는 Adobe 권장 옵션입니다. 다음을 참조하십시오. [릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter) 을 참조하십시오.
+
+## 서버측 컬렉션 {#serverside-collection}
+
+검색 인덱스나 서비스를 새로 고치기 위해 사이트를 정기적으로 방문하는 잘 알려진 서비스를 포함하여 잘 알려진 봇을 제외하는 규칙이 있습니다.
+
+### Cloud Service 컨텐츠 요청 분산 {#content-requests-variances}
 
 콘텐츠 요청은 다음 표에 요약된 바와 같이 조직의 Analytics 보고 도구와 차이가 있을 수 있습니다. 일반적으로, *금지* 클라이언트측 계측을 통해 데이터를 수집하는 analytics 도구를 사용하여 특정 사이트에 대한 콘텐츠 요청 수를 보고합니다. 이는 종종 트리거되는 사용자 동의에 의존하기 때문에 트래픽의 상당한 부분이 누락되기 때문입니다. Analytics 도구는 로그 파일에 서버측에서 데이터를 수집하거나, AEM as a Cloud Service을 기반으로 자체 CDN을 추가하는 고객을 위한 CDN 보고서를 더 나은 개수를 제공합니다. 페이지 보기 수 및 관련 성능에 대한 보고를 위해 Adobe RUM 데이터 서비스 가 Adobe 권장 옵션입니다.
 
@@ -31,15 +50,7 @@ ht-degree: 10%
 
 참조: [라이선스 대시보드](/help/implementing/cloud-manager/license-dashboard.md).
 
-## Cloud Service 콘텐츠 요청 이해 {#about-content-request}
-
-컨텐츠 요청은 AEM(Adobe Experience Manager) AEM as a Cloud Service CDN에서 시작되는 로그 파일의 자동화된 분석을 통해 as a Cloud Service의 에지에서 자동으로 추적되어 HTML(text/html) 또는 JSON(application/json) 컨텐츠를 반환하는 요청을 CDN에서 격리하고 아래에 설명된 여러 포함 및 제외 규칙을 기반으로 합니다. 콘텐츠 요청은 CDN 캐시에서 처리 중이거나 CDN(AEM dispatchers)의 소스로 돌아가는 반환된 콘텐츠와는 독립적으로 발생합니다.
-
-AEMas a Cloud Service 의 맨 위에 자체 CDN을 가져오는 고객의 경우, 이 추적은 라이선스가 부여된 콘텐츠 요청과 비교하는 데 사용할 수 없는 숫자를 생성하며, 이 숫자는 외부 CDN의 끝에서 고객이 측정해야 합니다.
-
-검색 인덱스나 서비스를 새로 고치기 위해 사이트를 정기적으로 방문하는 잘 알려진 서비스를 포함하여 잘 알려진 봇을 제외하는 규칙이 있습니다.
-
-### 포함된 콘텐츠 요청 유형{#included-content-requests}
+### 포함된 콘텐츠 요청 유형 {#included-content-requests}
 
 | 요청 유형 | 콘텐츠 요청 | 설명 |
 | --- | --- | --- |
@@ -51,7 +62,7 @@ AEMas a Cloud Service 의 맨 위에 자체 CDN을 가져오는 고객의 경우
 
 참조: [라이선스 대시보드](/help/implementing/cloud-manager/license-dashboard.md).
 
-### 제외된 콘텐츠 요청 유형{#excluded-content-request}
+### 제외된 콘텐츠 요청 유형 {#excluded-content-request}
 
 | 요청 유형 | 콘텐츠 요청 | 설명 |
 | --- | --- | --- |
@@ -67,3 +78,103 @@ AEMas a Cloud Service 의 맨 위에 자체 CDN을 가져오는 고객의 경우
 | Commerce integration framework 호출 제외 | 제외됨 | Commerce integration framework에 전달되는 AEM에 대한 요청입니다(URL은 다음으로 시작). `/api/graphql`- 이중 계산을 방지하기 위해 Cloud Service에 대해 청구할 수 없습니다. |
 | 제외 `manifest.json` | 제외됨 | 매니페스트는 API 호출이 아닙니다. 데스크톱이나 휴대폰에 웹 사이트를 설치하는 방법에 대한 정보를 제공하기 위해 여기에 있습니다. Adobe은 JSON 요청을에 계산해서는 안 됩니다. `/etc.clientlibs/*/manifest.json` |
 | 제외 `favicon.ico` | 제외됨 | 반환된 콘텐츠는 HTML 또는 JSON이 아니어야 하지만 SAML 인증 흐름과 같은 일부 시나리오에서 favicons를 HTML으로 반환할 수 있으므로 계산에서 명시적으로 제외됨을 관찰하고 있습니다. |
+
+## 클라이언트측 컬렉션 {#cliendside-collection}
+
+## AEM as a Cloud Service에 대한 RUM(Real User Monitoring) {#real-user-monitoring-for-aem-as-a-cloud-service}
+
+>[!INFO]
+>
+>이 기능은 얼리어답터 프로그램에서만 사용할 수 있습니다.
+>AEM Cloud Service 버전을 사용해야 합니다. **2023.11.14227** RUM 데이터 서비스를 활성화하기 위한 이상입니다.
+
+### 개요 {#overview}
+
+RUM(Real User Monitoring)은 웹 사이트 또는 애플리케이션의 디지털 사용자 경험을 실시간으로 캡처하고 분석하는 일종의 성능 모니터링 기술입니다. 웹 애플리케이션의 실시간 성능에 대한 가시성을 제공하며 최종 사용자 경험을 정확하게 파악할 수 있습니다.
+
+RUM(Real User Monitoring)은 URL 시작부터 요청이 다시 브라우저로 제공될 때까지 주요 성능 지표에 대한 심층적인 통찰력을 제공합니다. 이러한 모든 통찰력은 개발자가 최종 사용자가 쉽게 사용할 수 있도록 애플리케이션을 향상시키는 데 도움이 됩니다.
+
+### RUM 데이터 모니터링 서비스의 혜택을 누리는 사람 {#who-can-benefit-from-rum-data-monitoring-service}
+
+RUM 데이터 서비스는 Adobe 상호 작용을 보다 정확하게 반영하여 기존 서버측 CDN 로그 페이지 보기 수와 비교할 수 있는 클라이언트측 페이지 보기 수를 반영하여 웹 사이트 참여에 대한 안정적인 측정을 보장하므로 사용자의 CDN을 사용하는 사용자에게 유용합니다. 또한 자체 CDN을 사용하는 고객의 경우 Adobe은 이제 자신에 대한 페이지 보기 수를 포함하는 자동 트래픽 보고를 간소화할 수 있습니다. 즉, 트래픽 보고서를 Adobe과 공유할 필요가 없습니다.
+
+또한 Adobe의 CDN을 사용하는 고객과 자체 CDN을 사용하는 고객 모두에게 페이지 성능에 대한 고급 통찰력을 얻을 수 있는 좋은 기회입니다.
+
+### RUM(Real User Monitoring) 데이터 서비스의 작동 방식 이해 {#understand-how-the-rum-data-service-works}
+
+Adobe Experience Manager은 RUM(Real User Monitoring)을 사용하여 고객 및 Adobe이 Adobe Experience Manager 기반 사이트와 방문자가 상호 작용하는 방법을 이해하고, 성능 문제를 진단하고, 실험의 효과를 측정할 수 있도록 합니다. RUM은 샘플링을 통해 방문자의 개인 정보를 보존하며 - 모든 페이지 보기의 일부만 모니터링됩니다 - 모든 개인 식별 정보(PII)를 신중하게 제외합니다.
+
+### RUM(Real User Monitoring) 및 개인정보 보호 {#rum-and-privacy}
+
+Adobe Experience Manager의 Real User Monitoring은 방문자 개인 정보를 보존하고 데이터 수집을 최소화하도록 설계되었습니다. 이는 방문자인 경우 방문 중인 사이트에서 개인 정보를 수집하지 않거나 Adobe이 사용할 수 없음을 의미합니다.
+
+사이트 운영자는 이 기능을 통해 모니터링을 활성화하는 데 추가 옵트인이 필요하지 않음을 의미합니다. 따라서 최종 사용자가 RUM 모니터링 활성화에 동의하는 추가 팝업은 없습니다.
+
+### RUM 데이터 샘플링 {#rum-data-sampling}
+
+기존 웹 분석 솔루션은 모든 단일 방문자에 대한 데이터를 수집하려고 합니다. Adobe Experience Manager의 실제 사용자 모니터링은 극히 일부 페이지 보기에서 정보만 캡처합니다. RUM(Real User Monitoring)은 Analytics를 대체하는 것이 아니라 샘플링하고 익명화하기 위한 것입니다. 기본적으로 페이지는 1:100 샘플링 비율을 갖습니다. 사이트 운영자는 오늘을 기준으로 샘플링 속도를 늘리거나 줄이도록 이 숫자를 구성할 수 없습니다. 총 트래픽을 정확하게 추정하기 위해 100개의 페이지 보기마다 하나의 세부 데이터를 취합하여 전체 트래픽에 대한 신뢰할 수 있는 근사치를 제공합니다.&quot;
+
+데이터 수집 여부는 페이지 보기 단위로 페이지 보기에서 결정되므로 여러 페이지 간 상호 작용을 추적하는 것이 사실상 불가능해진다. RUM에는 방문, 방문자 또는 세션에 대한 개념이 없으며 페이지 보기에만 해당됩니다. 이것은 계획적인 것이다.
+
+### 수집 중인 데이터 {#what-data-is-being-collected}
+
+RUM(Real User Monitoring)은 개인 식별 정보가 수집되는 것을 방지하기 위해 설계되었습니다. Adobe Experience Manager의 Real User Monitoring에서 수집할 수 있는 전체 정보 세트는 다음과 같습니다.
+
+* 방문 중인 사이트의 호스트 이름(예: ) `experienceleague.adobe.com`
+* 페이지를 표시하는 데 사용되는 광범위한 사용자 에이전트 유형(예: 데스크탑 또는 모바일)
+* 다음과 같은 데이터 수집 시간: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
+* 방문 중인 페이지의 URL(예: ): `https://experienceleague.adobe.com/docs`
+* 레퍼러 URL(사용자가 링크를 따라간 경우, 현재 페이지에 연결된 페이지의 URL)
+* 다음과 유사한 형식으로 임의로 생성된 페이지 보기의 ID입니다. `2Ac6`
+* 샘플링 속도의 가중치 또는 역입니다. 예: `100`. 즉, 100개 중 한 개의 페이지 보기만 기록됩니다
+* 체크포인트 또는 페이지를 로드하거나 방문자로서 상호 작용하는 순서에 따른 특정 이벤트의 이름
+* 위에서 언급한 체크포인트에 대해 사용자가 상호 작용하는 DOM 요소의 소스 또는 식별자입니다. 예를 들어 이미지일 수 있습니다
+* 위에서 언급한 체크포인트에 대해 사용자가 상호 작용하는 대상 또는 외부 페이지 또는 리소스에 대한 링크입니다. 예를 들어`https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
+* 방문자의 체감 품질을 설명하는 핵심 웹 바이탈(CWV) 성능 지표, 가장 큰 컨텐츠 페인트(LCP), 첫 번째 입력 지연(FID) 및 누적 레이아웃 이동(CLS)입니다.
+
+### RUM(Real User Monitoring) 데이터 서비스를 설정하는 방법 {#how-to-set-up-them-rum-data-service}
+
+* 얼리 어답터 프로그램에 참여하려면 다음으로 이메일을 보내주십시오. `aemcs-rum-adopter@adobe.com`, Adobe ID과 연결된 이메일 주소에서 프로덕션, 스테이징 및 개발 환경의 도메인 이름과 함께 그런 다음 Adobe의 제품 팀이 RUM(Real User Monitoring) 데이터 서비스를 활성화합니다.
+* 이 작업이 완료되면 Adobe의 제품 팀이 고객 공동 작업 채널을 만듭니다.
+* Adobe의 제품 팀이 페이지 보기 수 및 를 볼 수 있는 도메인 키 및 데이터 대시보드 URL을 제공하기 위해 연락할 것입니다. [핵심 웹 바이탈(CWV)](https://web.dev/vitals/) 클라이언트측 RUM(Real User Monitoring) 컬렉션에서 수집한 지표.
+* 그런 다음 도메인 키를 사용하여 데이터 대시보드 URL에 액세스하고 지표를 보는 방법에 대해 안내합니다.
+
+### RUM(Real User Monitoring) 데이터가 사용되는 방식 {#how-rum-data-is-being-used}
+
+RUM 데이터는 다음 목적에 유용합니다.
+
+* 고객 사이트의 성능 병목 현상을 파악하고 해결하기 위한 방법
+* 자체 CDN을 사용하는 고객을 위한 페이지 보기 수를 포함하는 간소화된 자동 트래픽 보고로, Adobe과 트래픽 보고서를 공유할 필요가 없습니다.
+* Adobe Experience Manager이 호환성을 높이기 위해 동일한 페이지에서 다른 스크립트(예: 분석, 타기팅 또는 외부 라이브러리)와 상호 작용하는 방법을 이해합니다.
+
+### 페이지 보기 수 및 성능 지표의 제한 사항 및 차이 이해 {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
+
+이 데이터를 분석할 때 RUM(Real User Monitoring)에서 보고하는 페이지 보기 및 기타 성능 지표에 차이가 있을 수도 있고 없을 수도 있습니다. 이러한 분산은 실시간, 클라이언트측 모니터링에 내재된 여러 가지 요인에 기인할 수 있습니다. 고객이 RUM 데이터를 해석할 때 유의해야 할 주요 고려 사항은 다음과 같습니다.
+
+1. **추적기 차단**
+
+   * 추적기 차단기 또는 개인 정보 보호 확장을 사용하는 최종 사용자는 추적 스크립트의 실행을 제한하므로 RUM(Real User Monitoring)의 데이터 수집을 방해할 수 있습니다. 이 제한 사항으로 인해 페이지 보기 수와 사용자 상호 작용이 제대로 보고되지 않아 실제 사이트 활동과 RUM에서 캡처한 데이터 간에 불일치가 발생할 수 있습니다.
+
+1. **API/JSON 호출 캡처의 제한 사항**
+
+   * RUM 데이터 서비스는 클라이언트측 경험에 중점을 두며 현재 백엔드 API 또는 JSON 호출을 캡처하지 않습니다. RUM(Real User Monitoring) 데이터에서 이러한 호출을 제외하면 CDN Analytics에서 측정한 콘텐츠 요청에서 차이가 발생합니다.
+
+### FAQ {#faq}
+
+1. **모니터링에 포함하거나 제외할 경로를 구성하려면 어떻게 해야 합니까?**
+
+   고객은 다음 변수를 사용하여 Cloud Manager의 구성 내에서 환경 변수를 설정하여 모니터링할 URL을 포함하거나 제외하도록 경로를 구성할 수 있습니다. `AEM_WEBVITALS_EXCLUDE` 및 `AEM_WEBVITALS_INCLUDE_PATHS`
+
+   기본적으로 &#39;include&#39; 설정은 &#39;/content&#39;를 타깃팅하도록 구성되어 있습니다. 여기서 구성해야 하는 경로는 브라우저에 표시되는 URL 경로가 아니라 시스템 내의 콘텐츠 경로입니다. 이러한 구분은 특정 요구 사항에 맞게 구성을 정확하게 설정하고 사용자 지정하는 데 중요합니다.
+
+1. **Adobe은 상호 작용이 고객 관리 CDN에 도달하기 전에 또는 상호 작용이 고객 관리 CDN에 도달하는 시점에 모든 페이지 보기를 추적할 수 있습니까?**
+
+   예.
+
+1. **고객이 RUM 데이터 서비스 스크립트를 Dynatrace와 같은 서드파티 시스템과 통합할 수 있습니까?**
+
+   예.
+
+1. **다음 페인트에 대한 상호 작용&quot;, &quot;첫 번째 바이트에 대한 시간&quot; 및 &quot;첫 번째 만족도 페인트&quot; 웹 바이탈 지표가 수집됩니까?**
+
+   다음 페인트에 대한 상호 작용(INP) 및 첫 번째 바이트에 대한 시간(TTFB)이 수집됩니다.  지금은 첫 번째 컨텐트가 수집되지 않습니다.

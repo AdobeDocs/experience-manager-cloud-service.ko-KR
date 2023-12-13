@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 97f08d3474ad395d3228fb848a546927e6431050
+source-git-commit: 475505fc8b5eb63c3563e8fabb28f515ff690393
 workflow-type: tm+mt
 source-wordcount: '4456'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -728,8 +728,8 @@ ht-degree: 98%
          + [제품 경험 빌드](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
    + 통합 {#integrations}
       + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
-      + [라이브 검색 CIF 구성 요소](/help/commerce-cloud/integrating/live-search-plp.md)
-      + [라이브 검색 팝오버 CIF 구성 요소](/help/commerce-cloud/integrating/live-search-popover.md)
+      + [실시간 검색 CIF 구성 요소](/help/commerce-cloud/integrating/live-search-plp.md)
+      + [실시간 검색 팝오버 CIF 구성 요소](/help/commerce-cloud/integrating/live-search-popover.md)
       + [서드파티 상거래 솔루션](/help/commerce-cloud/integrating/third-party.md)
       + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
    + AEM Storefront {#storefront}
@@ -1053,7 +1053,7 @@ ht-degree: 98%
    + [셀프서비스 복원](/help/operations/restore.md)
    + [비동기 작업](/help/operations/asynchronous-jobs.md)
    + [일반 Lucene 인덱스 제거](/help/operations/removal-generic-lucene-index.md)
-   + [쿼리 및 색인화 모범 사례](/help/operations/query-and-indexing-best-practices.md)
+   + [쿼리 및 색인 지정 우수 사례](/help/operations/query-and-indexing-best-practices.md)
 + 규정 준수 {#compliance}
    + [AEM as a Cloud Service 규정 준수](/help/compliance/home.md)
    + 데이터 개인정보 보호 및 보호 준비 {#data-privacy}
