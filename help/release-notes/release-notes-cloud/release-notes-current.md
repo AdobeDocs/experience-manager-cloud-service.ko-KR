@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ac7af61751c3cf751a7370b454855c5361fabe02
+source-git-commit: acaf2371886b161ce5e8b9f9a9771267703bb32d
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 89%
+source-wordcount: '1278'
+ht-degree: 100%
 
 ---
 
@@ -41,12 +41,6 @@ ht-degree: 89%
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### 얼리 어답터 프로그램 {#sites-early-adopter}
-
-**다음을 활용할 수 있습니다. [RUM(Real User Monitoring) 데이터 서비스](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** 클라이언트측 컬렉션을 AEM as a Cloud Service으로 활성화하려면
-
-RUM(Real User Monitoring) 데이터 서비스는 사용자 상호 작용을 보다 정확하게 반영하여 웹 사이트 참여를 안정적으로 측정합니다. 페이지 성능에 대한 고급 통찰력을 얻을 수 있는 좋은 기회입니다. 이는 Adobe 관리 CDN 또는 Adobe 비관리 CDN을 사용하는 고객에게 유용합니다. 또한 비 Adobe 관리 CDN을 사용하는 고객의 경우 이제 자동화된 트래픽 보고를 사용할 수 있으므로 트래픽 보고서를 Adobe과 공유할 필요가 없습니다.
-
-이 새로운 기능을 테스트하고 피드백을 공유하려면 (으)로 이메일을 보내십시오. `aemcs-rum-adopter@adobe.com`, Adobe ID과 연결된 이메일 주소에서 프로덕션, 스테이징 및 개발 환경의 도메인 이름과 함께 그런 다음 Adobe의 제품 팀이 RUM(Real User Monitoring) 데이터 서비스를 활성화합니다.
 
 **[콘텐츠 조각에서 문자열 찾기 및 바꾸기](/help/sites-cloud/administering/content-fragments/managing.md#find-and-replace-find-and-replace)**: 콘텐츠 조각 콘솔을 통해 사용자가 여러 콘텐츠 조각에 나타나는 문자열을 한 번에 쉽고 직관적으로 바꿀 수 있으며, 이를 통해 콘텐츠 속도를 높일 수 있습니다.
 

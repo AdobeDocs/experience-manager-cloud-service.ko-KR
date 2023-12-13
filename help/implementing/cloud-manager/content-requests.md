@@ -2,7 +2,7 @@
 title: Cloud Service 콘텐츠 요청 이해
 description: Adobe에서 컨텐츠 요청 라이선스를 구입한 경우 Adobe Experience Cloud as a Service가 측정하는 컨텐츠 요청 유형과 조직의 분석 보고 도구와의 차이에 대해 알아봅니다.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 949f0ec1aa89fd05813bc9ffb02a75fb0ad84a32
+source-git-commit: e31b05f0cef6c5ca3a1c00b757eac013aa43bb90
 workflow-type: tm+mt
 source-wordcount: '2690'
 ht-degree: 4%
@@ -81,7 +81,7 @@ AEM as a Cloud Service을 기반으로 자체 CDN을 가져오는 고객의 경�
 
 ## 클라이언트측 컬렉션 {#cliendside-collection}
 
-## AEM as a Cloud Service에 대한 RUM(Real User Monitoring) {#real-user-monitoring-for-aem-as-a-cloud-service}
+### AEM as a Cloud Service에 대한 RUM(Real User Monitoring) {#real-user-monitoring-for-aem-as-a-cloud-service}
 
 >[!INFO]
 >
