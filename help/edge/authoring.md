@@ -2,9 +2,9 @@
 title: Edge Delivery Services 컨텐츠 작성
 description: 컨텐츠 작성과 Edge Delivery Services 간의 연동 및 Edge Delivery Services을 통해 AEM 컨텐츠를 작성하는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services
-source-git-commit: f6e1c5de57ee0297abdf6b03faf550a266dfac32
+source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '461'
 ht-degree: 14%
 
 ---
@@ -21,7 +21,7 @@ Edge Delivery Services을 사용하면 쉽고 빠르고 유연하게 작성할 �
 
 문서 기반 작성의 경우 Microsoft Word 및 Google Docs 등 다양한 소스로 작업할 수 있습니다. 이러한 소스의 문서는 웹 사이트의 페이지가 됩니다. 제목, 목록, 이미지, 글꼴 요소 및 비디오는 모두 초기 소스에서 내 웹 사이트로 전송할 수 있습니다. SEO 용도로 메타데이터를 추가하거나 블록을 사용하여 구조화된 콘텐츠로 작업하고 기능을 추가할 수 있습니다.
 
-문서 기반 작성에 대한 자세한 내용은 을 참조하십시오. [이 문서는 Edge Delivery Services 설명서에 있습니다.](https://www.aem.live/docs/authoring)
+문서 기반 작성에 대한 자세한 내용은 을 참조하십시오. [이 문서는 Edge Delivery Services 설명서에 있습니다.](/help/edge/docs/authoring.md)
 
 ## 유니버설 편집기 작성 {#universal-editor}
 
@@ -40,7 +40,7 @@ as a Cloud Service으로 Edge Delivery ServicesAEM 를 사용할 때 가장 기�
    * 콘텐츠는 AEM에 저장된 상태로 유지됩니다.
    * AEM은 수집에 필요한 의미 체계 HTML을 렌더링합니다.
    * 컨텐츠가 Edge Delivery Services에 게시됩니다.
-1. [Edge Delivery Services](https://www.aem.live/home) 100% Lighthouse 점수를 확인합니다.
+1. [Edge Delivery Services](/help/edge/developer/keeping-it-100.md) 100% Lighthouse 점수를 확인합니다.
 
 블록은 Edge Delivery Services이 제공하는 페이지의 기본 구성 요소입니다. 작성자는 Adobe에 의해 표준으로 제공되는 기본 블록 또는 개발자에 의해 프로젝트에 맞게 사용자 지정된 블록 중에서 선택할 수 있습니다.
 

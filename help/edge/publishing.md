@@ -2,9 +2,9 @@
 title: Edge Delivery Services 컨텐츠 게시
 description: 컨텐츠 게시가 Edge Delivery Services에서 작동하는 방법 및 Edge Delivery Services에서 AEM 컨텐츠를 게시하는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services
-source-git-commit: f6e1c5de57ee0297abdf6b03faf550a266dfac32
+source-git-commit: e3bbcfa3fcef1ed1e5b6cf2da5a17c7e636b9539
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Edge Delivery Services을 사용하면 콘텐츠 소스에 관계없이 콘텐츠를 원활하게 게시할 수 있습니다.
 
-* 문서 기반 콘텐츠 - 다음을 참조하십시오. [섹션 게시](https://www.aem.live/docs/#publish) Edge Delivery Services 설명서.
+* 문서 기반 콘텐츠 - 다음을 참조하십시오. [섹션 게시](/help/edge/docs/authoring.md) Edge Delivery Services 설명서.
 * AEM 콘텐츠 - 아래 세부 정보를 참조하십시오.
 
 ## AEM에서 플로우 게시 {#publishing-flow}

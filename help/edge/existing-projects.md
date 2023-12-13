@@ -2,9 +2,9 @@
 title: 기존 AEM 프로젝트와 함께 Edge Delivery Services 사용
 description: 기존 AEM 프로젝트에서 Edge Delivery Services의 이점을 활용하는 방법을 알아봅니다
 feature: Edge Delivery Services
-source-git-commit: f6e1c5de57ee0297abdf6b03faf550a266dfac32
+source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ AEM 페이지 편집기는 [AEM 구성 요소](/help/implementing/developing/com
 
 1단계에서는 기존 AEM 사이트 구조, 구성 요소 및 작성 도구를 계속 사용할 수 있습니다. 웹 사이트 렌더링은 JavaScript 및 CSS를 사용하는 블록을 사용하여 다시 빌드되고 Edge Delivery Services을 통해 전달됩니다.
 
-다음을 참조하십시오. [섹션 작성](https://www.aem.live/docs/#build) Edge Delivery 서비스를 위한 블록 및 개발 방법에 대한 자세한 내용은 Edge Delivery Services 설명서 를 참조하십시오.
+다음을 참조하십시오. [섹션 작성](/help/edge/developer/block-collection.md) Edge Delivery 서비스를 위한 블록 및 개발 방법에 대한 자세한 내용은 Edge Delivery Services 설명서 를 참조하십시오.
 
 AEM에서 렌더링된 HTML 출력을 변환하여 Edge Delivery Services으로 보내려면 App Builder의 변환기가 필요합니다.
 
