@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 021fa3631aae7aa202c544deb3685daf4dc71aa7
+source-git-commit: 46575e36a7037bee7c33c94748fc0fc92880ea87
 workflow-type: tm+mt
-source-wordcount: '4434'
+source-wordcount: '4437'
 ht-degree: 99%
 
 ---
@@ -786,6 +786,7 @@ ht-degree: 99%
       + [GraphQL 쿼리 최적화](/help/headless/graphql-api/graphql-optimization.md)
       + [최적화된 GraphQL 필터링을 위해 콘텐츠 조각 업데이트](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [샘플 GraphQL 쿼리](/help/headless/graphql-api/sample-queries.md)
+      + [GraphQL 쿼리 문제 해결](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
    + [콘텐츠 조각 REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
    + 보안 {#security}
       + [권한](/help/headless/security/permissions.md)
