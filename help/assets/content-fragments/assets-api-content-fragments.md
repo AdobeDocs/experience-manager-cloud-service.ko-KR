@@ -3,10 +3,10 @@ title: Assets HTTP API의 Adobe Experience Manager as a Cloud Service 콘텐츠 
 description: Adobe Experience Manager의 Headless 게재 기능의 중요한 부분인 Assets HTTP API의 콘텐츠 조각에 대한 지원에 대해 알아봅니다.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 38cb2605e2133e858c60644084cf515a03b54f60
 workflow-type: tm+mt
-source-wordcount: '1788'
-ht-degree: 13%
+source-wordcount: '1747'
+ht-degree: 11%
 
 ---
 
@@ -30,9 +30,13 @@ Adobe Experience Manager(AEM) Headless 전달 기능의 중요한 부분인 Asse
 >
 >Assets HTTP API의 현재 구현은 [나머지](https://en.wikipedia.org/wiki/Representational_state_transfer) 아키텍처 스타일입니다.
 
+>[!NOTE]
+>
+>Experience Manager API에 대한 최신 정보를 확인하려면 다음을 방문하십시오. [ADOBE EXPERIENCE MANAGER AS A CLOUD SERVICE API](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+
 다음 [Assets REST API](/help/assets/mac-api-assets.md) Adobe Experience Manager as a Cloud Service용 개발자가 CRUD(만들기, 읽기, 업데이트, 삭제) 작업을 통해 HTTP API를 통해 직접 콘텐츠(AEM에 저장됨)에 액세스할 수 있습니다.
 
-API를 사용하면 JavaScript 프론트엔드 애플리케이션에 컨텐츠 서비스를 제공하여 Adobe Experience Manager as a Cloud Service as a Headless CMS(컨텐츠 관리 시스템)를 운영할 수 있습니다. 아니면 HTTP 요청을 실행하고 JSON 응답을 처리할 수 있는 다른 애플리케이션입니다.
+API를 사용하면 JavaScript 프론트엔드 애플리케이션에 컨텐츠 서비스를 제공하여 Adobe Experience Manager as a Cloud Service as a Headless CMS(컨텐츠 관리 시스템)를 운영할 수 있습니다. 또는 HTTP 요청을 실행하고 JSON 응답을 처리할 수 있는 다른 모든 애플리케이션.
 
 예를 들어, [단일 페이지 애플리케이션(SPA)](/help/implementing/developing/hybrid/introduction.md)프레임워크 기반 또는 사용자 지정 에서는 HTTP API를 통해 제공되는 콘텐츠(종종 JSON 형식)가 필요합니다.
 
@@ -147,9 +151,9 @@ Assets REST API가 특정 인증 요구 사항 없이 환경 내에서 사용되
 
 >[!NOTE]
 >
->자세한 내용은 다음 문서를 참조하십시오.
+>자세한 내용은 다음을 참조하십시오.
 >
->* [CORS/AEM 설명](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ko-KR)
+>* [CORS/AEM 설명](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en)
 >* [비디오 - AEM을 사용하여 CORS용 개발(04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=en)
 >
 

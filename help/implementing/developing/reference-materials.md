@@ -2,10 +2,10 @@
 title: API 참조 자료
 description: AEM에는 디지털 경험 프로젝트에 사용할 수 있는 광범위하고 강력한 API가 있습니다.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 3434d51c9b0bad02b0c3f0836341f671c9405182
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 9%
+source-wordcount: '594'
+ht-degree: 4%
 
 ---
 
@@ -26,6 +26,10 @@ AEM(Adobe Experience Manager)은 애플리케이션 개발 및 AEM 확장을 위
 <!---
 |Editor core JavaScript API reference|Provides all the base objects and concepts to support authoring of content resources|
 --->
+
+>[!NOTE]
+>
+>Experience Manager API에 대한 최신 정보를 확인하려면 다음을 방문하십시오. [ADOBE EXPERIENCE MANAGER AS A CLOUD SERVICE API](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 ## 추가 프레임워크 {#additional-apis}
 

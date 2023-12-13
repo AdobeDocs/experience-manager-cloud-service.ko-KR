@@ -2,10 +2,10 @@
 title: AEM 게재 API를 통해 콘텐츠에 액세스하는 방법
 description: 이 AEM Headless 개발자 여정의 부분에서는 GraphQL 쿼리를 통해 콘텐츠 조각의 콘텐츠에 액세스하는 방법을 대해 알아봅니다.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 0d0b91551582040c39d57b29c8f2141c2ff6d553
 workflow-type: tm+mt
-source-wordcount: '1335'
-ht-degree: 99%
+source-wordcount: '1344'
+ht-degree: 98%
 
 ---
 
@@ -356,6 +356,7 @@ query {
 
 ## 추가 리소스 {#additional-resources}
 
+* [ADOBE EXPERIENCE MANAGER AS A CLOUD SERVICE API](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
 * [GraphQL.org](https://graphql.org)
    * [스키마](https://graphql.org/learn/schema/)
    * [변수](https://graphql.org/learn/queries/#variables)
