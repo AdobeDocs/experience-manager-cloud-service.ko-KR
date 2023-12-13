@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 46575e36a7037bee7c33c94748fc0fc92880ea87
+source-git-commit: 97f08d3474ad395d3228fb848a546927e6431050
 workflow-type: tm+mt
-source-wordcount: '4437'
-ht-degree: 99%
+source-wordcount: '4456'
+ht-degree: 98%
 
 ---
 
@@ -755,8 +755,12 @@ ht-degree: 99%
    + [마이그레이션](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
 + Edge Delivery Services {#edge-delivery}
-   + [Edge Delivery 시작](/help/edge/overview.md)
+   + [AEM 및 Edge Delivery Services](/help/edge/overview.md)
    + [Edge Delivery 사용](/help/edge/using.md)
+   + [Edge 전달을 위한 콘텐츠 작성](/help/edge/authoring.md)
+   + [Edge 전달을 위한 콘텐츠 게시](/help/edge/publishing.md)
+   + [Edge 전달을 위한 개발](/help/edge/developing.md)
+   + [기존 프로젝트 및 Edge 게재](/help/edge/existing-projects.md)
 + Headless {#headless}
    + [Headless CMS란 무엇입니까?](/help/headless/what-is-headless.md)
    + [AEM Headless 소개](/help/headless/introduction.md)
