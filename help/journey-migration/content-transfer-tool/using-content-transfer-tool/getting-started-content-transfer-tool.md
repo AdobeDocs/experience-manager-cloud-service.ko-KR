@@ -2,10 +2,10 @@
 title: 콘텐츠 전송 도구 시작하기
 description: 콘텐츠 전송 도구를 시작하는 방법 알아보기
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 0161477e5248267224fe6d637a192f409161f6d3
 workflow-type: tm+mt
-source-wordcount: '1424'
-ht-degree: 21%
+source-wordcount: '1362'
+ht-degree: 16%
 
 ---
 
@@ -18,10 +18,10 @@ ht-degree: 21%
 >id="aemcloud_ctt_download"
 >title="다운로드"
 >abstract="소프트웨어 배포 포털에서 콘텐츠 전송 도구를 zip 파일로 다운로드할 수 있습니다. 패키지 관리자를 통해 소스 AEM(Adobe Experience Manager) 인스턴스에 패키지를 설치할 수 있습니다. 최신 버전을 다운로드하십시오."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ko-KR" text="릴리스 정보"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="릴리스 정보"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="소프트웨어 배포 포털"
 
-소프트웨어 배포 포털에서 콘텐츠 전송 도구를 zip 파일로 다운로드할 수 있습니다. 다음을 통해 패키지를 설치할 수 있습니다. [패키지 관리자](/help/implementing/developing/tools/package-manager.md) 소스 Adobe Experience Manager(AEM) 인스턴스에서 다음을 수행합니다. 최신 버전을 다운로드하십시오. 최신 버전에 대한 자세한 내용은 [릴리스 정보](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ko-KR).
+소프트웨어 배포 포털에서 콘텐츠 전송 도구를 zip 파일로 다운로드할 수 있습니다. 다음을 통해 패키지를 설치할 수 있습니다. [패키지 관리자](/help/implementing/developing/tools/package-manager.md) 소스 Adobe Experience Manager(AEM) 인스턴스에서 다음을 수행합니다. 최신 버전을 다운로드해야 합니다. 최신 버전에 대한 자세한 내용은 [릴리스 정보](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html).
 
 버전 2.0.0 이상만 지원되며 최신 버전을 사용하는 것이 좋습니다.
 
@@ -45,7 +45,7 @@ ht-degree: 21%
 
 SSL/TLS 연결 문제를 이해하는 것은 때때로 어려울 수 있습니다. 추출 프로세스 중 연결 문제를 해결하려면 다음 단계에 따라 소스 AEM 환경의 시스템 콘솔을 통해 SSL 로깅을 활성화할 수 있습니다.
 
-1. 다음 위치로 이동하여 소스 인스턴스의 Adobe Experience Manager 웹 콘솔로 이동합니다. **도구 - 작업 - 웹 콘솔** 또는 을 통해 URL로 바로 이동할 수 있습니다 *https://serveraddress:serverport/system/console/configMgr*
+1. 다음 위치로 이동하여 소스 인스턴스의 Adobe Experience Manager 웹 콘솔로 이동합니다. **도구 > 작업 > 웹 콘솔** 또는 을 통해 URL로 바로 이동할 수 있습니다 *https://serveraddress:serverport/system/console/configMgr*
 1. 검색 대상 **컨텐츠 전송 도구 추출 서비스 구성**
 1. 연필 아이콘 버튼을 사용하여 구성 값을 편집합니다
 1. 활성화 **추출을 위해 SSL 로깅 활성화** 설정 후 누르기 **저장**:
@@ -55,7 +55,7 @@ SSL/TLS 연결 문제를 이해하는 것은 때때로 어려울 수 있습니�
 >[!NOTE]
 >이 플래그는 SSL 문제 디버깅에만 사용됩니다. 추출을 실행하기 전에 많은 양의 디스크 공간이 필요할 수 있으므로 플래그가 비활성화되어 있는지 확인하십시오. 이로 인해 드라이브 용량이 채워지고 추출 프로세스가 실패할 수 있습니다.
 
-## 컨텐츠 전송 도구 실행 {#running-tool}
+## 콘텐츠 전송 도구 실행 {#running-tool}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_demo"
@@ -78,7 +78,7 @@ SSL/TLS 연결 문제를 이해하는 것은 때때로 어려울 수 있습니�
 
 1. CAM(Cloud Acceleration Manager)에 로그인한 다음 이전에 만든 CAM 프로젝트를 클릭하여 AEM으로 as a Cloud Service으로 이동할 준비를 평가합니다. CAM 프로젝트를 생성하지 않은 경우 CAM에서 프로젝트 생성 및 관리를 참조하십시오.
 
-1. 다음을 클릭합니다. **컨텐츠 전송** 카드. 이렇게 하면 마이그레이션 세트 목록 보기로 이동합니다.
+1. 다음을 클릭합니다. **컨텐츠 전송** 카드가 있어야 마이그레이션 세트 목록 보기를 열 수 있습니다.
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
 
@@ -114,11 +114,11 @@ SSL/TLS 연결 문제를 이해하는 것은 때때로 어려울 수 있습니�
 >abstract="마이그레이션 세트를 만든 후에는 AEM as a Cloud Service 환경으로 이동해야 하는 소스 인스턴스의 콘텐츠로 채워야 합니다. 이를 위해 소스 인스턴스에 콘텐츠 전송 도구를 설치해야 합니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=ko-KR" text="콘텐츠 추출하기"
 
-Cloud Acceleration Manager에서 만든 마이그레이션 세트를 채우려면 소스 Adobe Experience Manager(AEM) 인스턴스에 최신 버전의 콘텐츠 전송 도구를 설치해야 합니다. 이 섹션을 통해 마이그레이션 세트를 채우는 방법을 알아보십시오.
+Cloud Acceleration Manager에서 만든 마이그레이션 세트를 채우려면 소스 Adobe Experience Manager(AEM) 인스턴스에 최신 버전의 컨텐츠 전송 도구를 설치합니다. 마이그레이션 세트를 채우는 방법을 알아보려면 이 섹션을 따르십시오.
 
 1. 소스 Adobe Experience Manager 인스턴스에 최신 버전의 컨텐츠 전송 도구를 설치한 후 로 이동합니다. **작업 - 컨텐츠 마이그레이션**
 
-1. 클릭 **마이그레이션 세트 만들기**
+1. 클릭 **마이그레이션 세트 만들기**.
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
@@ -126,7 +126,7 @@ Cloud Acceleration Manager에서 만든 마이그레이션 세트를 채우려�
 
    >[!NOTE]
    >
-   >추출 키가 유효하고 만료에 가깝지 않은지 확인하십시오. 다음 위치에서 이 정보를 가져올 수 있습니다. **마이그레이션 세트 만들기** 추출 키를 붙여넣은 후 대화 상자를 표시합니다. 연결 오류가 발생하는 경우 다음을 참조하십시오. [소스 환경 연결](#source-environment-connectivity) 추가 정보.
+   >추출 키가 유효하고 만료 날짜가 아닌지 확인하십시오. 다음 위치에서 이 정보를 가져올 수 있습니다. **마이그레이션 세트 만들기** 추출 키를 붙여넣은 후 대화 상자를 표시합니다. 연결 오류가 발생하는 경우 다음을 참조하십시오. [소스 환경 연결](#source-environment-connectivity) 추가 정보.
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
 

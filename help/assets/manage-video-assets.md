@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 0d5f95cc2e7378f09c8f6c4bc3858e7b42c07924
 workflow-type: tm+mt
-source-wordcount: '4937'
-ht-degree: 7%
+source-wordcount: '4905'
+ht-degree: 6%
 
 ---
 
@@ -73,8 +73,7 @@ Google은 정기적으로 사용자 인터페이스를 변경합니다. 따라�
 
 **Google Cloud 설정을 구성하려면 다음 작업을 수행하십시오.**
 
-1. Google 계정을 만듭니다.
-   [https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp](https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp)
+1. [Google 계정 만들기](https://accounts.google.com/lifecycle/flows/signup?flowEntry=SignUp&amp;flowName=GlifWebSignIn&amp;service=mail&amp;dsh=S-1878016829%3A1702493284416645&amp;theme=glif).
 
    이미 Google 계정이 있는 경우 다음 단계로 건너뛸 수 있습니다.
 
@@ -227,7 +226,7 @@ YouTube 구성 만들기 페이지를 열어 두십시오. 잠시 후 다시 돌
 
    원할 경우 선택적으로 설명을 추가할 수 있습니다.
 
-1. 선택 **[!UICONTROL 추가]**.
+1. **[!UICONTROL 추가]**&#x200B;를 선택합니다.
 1. YouTube/Google 확인이 표시됩니다. Google Cloud 계정에 아직 로그인하지 않은 경우 이 단계를 건너뜁니다.
 
    * Google 프로젝트 ID와 연결된 Google 사용자 이름 및 암호와 위의 JSON 텍스트를 입력합니다.
@@ -298,7 +297,7 @@ YouTube 계정 설정 대화 상자를 열어 두십시오. 잠시 후 대화 �
 
 비디오 업로드 시 YouTube 속성 설정을 선택적으로 자동화할 수 있습니다. Experience Manager에서 메타데이터 처리 프로필을 만듭니다.
 
-To create the metadata processing profile, you are first going to copy values from the **[!UICONTROL Field Label]**, **[!UICONTROL Map to property]**, and **[!UICONTROL Choices]** fields, all found in Metadata Schemas for video. Then, you build your YouTube video metadata processing profile by adding those values to it.
+To create the metadata processing profile, you are first going to copy values from the **[!UICONTROL Field Label]**, **[!UICONTROL Map to property]**, and **[!UICONTROL Choices]** fields, all found in Metadata Schemas for video. 그런 다음 이러한 값을 추가하여 YouTube 비디오 메타데이터 처리 프로필을 빌드합니다.
 
 **업로드한 비디오에 대한 기본 YouTube 속성 설정을 자동화하려면 다음을 수행하십시오.**
 
@@ -458,7 +457,7 @@ YouTube에서 컨텐츠를 제거하려면 Experience Manager에서 **[!UICONTRO
 
    ![chlimage_1-429](/help/assets/dynamic-media/assets/chlimage_1-429.png)
 
-   * 목록 보기에서 비디오 인코딩 진행률이 **[!UICONTROL 처리 상태]** 열. If there is an error, this message displays in that same column.
+   * 목록 보기에서 비디오 인코딩 진행률이 **[!UICONTROL 처리 상태]** 열. 오류가 있는 경우 이 메시지가 동일한 열에 표시됩니다.
 
    ![chlimage_1-430](/help/assets/dynamic-media/assets/chlimage_1-430.png)
 
