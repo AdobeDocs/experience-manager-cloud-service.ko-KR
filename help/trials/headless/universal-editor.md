@@ -7,7 +7,7 @@ exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '936'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
 >title="Universal Editor로 컨텍스트에서 편집"
->abstract="Headless 앱에서 범용 편집기를 사용하여 컨텍스트 편집에서 작성자의 손끝에 낮은 마찰을 주는 방법을 살펴보십시오."
+>abstract="Headless 앱이 Universal Editor를 사용하여 작성자가 컨텍스트에서 손쉽게 편집을 수행할 수 있도록 하는 방법을 확인하십시오."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
 >title="Universal Editor 실행"
->abstract="이 안내서에서는 범용 편집기를 살펴보고 이를 통해 모든 구현에서 콘텐츠의 모든 측면을 편집할 수 있으므로 콘텐츠 속도가 향상되는 방법을 살펴봅니다.<br><br>아래를 클릭하여 새 탭에서 이 모듈을 실행한 다음 이 안내서를 따르십시오."
+>abstract="이 안내서에서는 Universal Editor를 살펴보고, 이를 통해 누구나 어떤 구현에서든 콘텐츠의 모든 측면을 편집할 수 있도록 하여 콘텐츠 속도를 향상시키는 방법에 대해 알아봅니다.<br><br>아래를 클릭하여 새 탭에서 이 모듈을 실행한 다음 이 안내서를 따르십시오."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
