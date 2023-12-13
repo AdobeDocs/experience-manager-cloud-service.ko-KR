@@ -2,10 +2,10 @@
 title: 클라우드 서비스에 콘텐츠 수집
 description: Cloud Acceleration Manager 를 사용하여 마이그레이션 세트의 컨텐츠를 대상 Cloud Service 인스턴스로 수집하는 방법을 알아봅니다.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: a66724cf76e4562710e458aeeea0d54ea9efb9aa
+source-git-commit: b674b3d8cd89675ed30c1611edec2281f0f1cb05
 workflow-type: tm+mt
-source-wordcount: '2315'
-ht-degree: 5%
+source-wordcount: '2392'
+ht-degree: 4%
 
 ---
 
@@ -35,7 +35,7 @@ Cloud Acceleration Manager를 사용하여 마이그레이션 세트를 수집�
       * 마이그레이션 세트는 장기간 사용하지 않으면 만료되므로 추출이 수행된 후 비교적 곧 수집이 발생할 것으로 예상됩니다. 리뷰 [마이그레이션 세트 만료](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 을 참조하십시오.
 
    >[!TIP]
-   > 추출이 현재 실행 중인 경우 대화 상자에 추출이 표시됩니다. 추출이 완료되면 수집이 자동으로 시작됩니다. 추출이 실패하거나 중지되면 수집 작업이 취소됩니다.
+   > 추출이 실행 중인 경우 대화 상자에 추출이 표시됩니다. 추출이 완료되면 자동으로 수집이 시작됩니다. 추출이 실패하거나 중지되면 수집 작업이 취소됩니다.
 
    * **대상:** 대상 환경을 선택합니다. 이 환경에서는 마이그레이션 세트의 콘텐츠가 수집됩니다.
       * 수집은 RDE(빠른 개발 환경) 대상을 지원하지 않으며, 사용자가 액세스할 수 있는 경우에도 가능한 대상 선택으로 표시되지 않습니다.
@@ -45,11 +45,11 @@ Cloud Acceleration Manager를 사용하여 마이그레이션 세트를 수집�
       * 소스가 `Author`로 수집하는 것이 좋습니다. `Author` 대상의 계층입니다. 마찬가지로 소스가 `Publish`, 대상은 다음과 같아야 합니다. `Publish` 또한.
 
    >[!NOTE]
-   > 대상 계층이 `Author`, 작성자 인스턴스는 수집 기간 동안 종료되며 사용자(예: 작성자 또는 유지 관리를 수행하는 모든 사용자)는 사용할 수 없게 됩니다. 그 이유는 시스템을 보호하고, 손실되거나 수집 충돌을 야기할 수 있는 변경 사항을 방지하기 위함입니다. 팀이 이 사실을 알고 있는지 확인합니다. 또한 환경은 작성자 수집 중에 최대 절전 모드로 표시됩니다.
+   > 대상 계층이 `Author`, 작성자 인스턴스는 수집 기간 동안 종료되며 사용자(예: 작성자 또는 유지 관리를 수행하는 모든 사용자)는 사용할 수 없게 됩니다. 그 이유는 시스템을 보호하기 위해서이며, 손실되거나 수집 충돌을 야기할 수 있는 모든 변경 사항을 방지합니다. 팀이 이 사실을 알고 있는지 확인합니다. 또한 환경은 작성자 수집 중에 최대 절전 모드로 표시됩니다.
 
    * **지우기:** 다음을 선택합니다. `Wipe` 값
       * 다음 **지우기** 옵션은 수집의 시작 지점을 설정합니다. If **지우기** 가 활성화되면 모든 콘텐츠를 포함하는 대상이 Cloud Manager에 지정된 AEM 버전으로 재설정됩니다. 활성화되지 않은 경우 대상은 현재 콘텐츠를 시작점으로 유지합니다.
-      * 이 옵션은 다음을 수행합니다 **아님** 콘텐츠 수집이 수행되는 방식에 영향을 줍니다. 수집은 항상 컨텐츠 대체 전략을 사용하며 _아님_ 컨텐츠 병합 전략 **지우기** 및 **지우지 않음** 마이그레이션 세트를 수집하면 대상의 동일한 경로에 있는 콘텐츠를 덮어씁니다. 예를 들어 마이그레이션 세트에 `/content/page1` 대상에 이미 다음 항목이 포함되어 있음 `/content/page1/product1`, 수집하면 전체 `page1` 경로 및 해당 하위 페이지: `product1`을 클릭하고 마이그레이션 세트의 콘텐츠로 대체합니다. 이는 다음을 수행할 때 신중하게 계획해야 함을 의미합니다. **지우지 않음** 유지 관리해야 하는 콘텐츠가 포함된 대상으로의 수집
+      * 이 옵션은 다음을 수행합니다 **아님** 콘텐츠 수집이 수행되는 방식에 영향을 줍니다. 수집은 항상 컨텐츠 대체 전략을 사용하며 _아님_ 컨텐츠 병합 전략 **지우기** 및 **지우지 않음** 마이그레이션 세트를 수집하면 대상의 동일한 경로에 있는 콘텐츠를 덮어씁니다. 예를 들어 마이그레이션 세트에 `/content/page1` 대상에 이미 다음 항목이 포함되어 있음 `/content/page1/product1`, 수집하면 전체 제거 `page1` 경로 및 해당 하위 페이지: `product1`을 클릭하고 마이그레이션 세트의 콘텐츠로 대체합니다. 이는 다음을 수행할 때 신중하게 계획해야 함을 의미합니다. **지우지 않음** 유지 관리해야 하는 콘텐츠가 포함된 대상으로의 수집
 
    >[!IMPORTANT]
    > 다음과 같은 경우 **지우기** 수집이 활성화되고 대상 Cloud Service 인스턴스에 대한 사용자 권한을 포함하여 기존 저장소 전체가 재설정됩니다. 이 재설정은 에 추가된 관리자 사용자에게도 적용됩니다. **관리자** 수집을 시작하려면 그룹 및 해당 사용자를 관리자 그룹에 다시 추가해야 합니다.
@@ -78,7 +78,7 @@ Cloud Acceleration Manager를 사용하여 마이그레이션 세트를 수집�
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="추가 수집"
->abstract="이전 컨텐츠 전송 활동 이후 수정된 컨텐츠를 이동하려면 추가 기능을 사용합니다. 수집이 완료되면 로그에서 오류/경고를 확인하십시오. 모든 오류는 보고된 문제를 처리하거나 Adobe 고객 지원 센터에 문의하여 즉시 해결해야 합니다."
+>abstract="이전 컨텐츠 전송 활동 이후 수정된 컨텐츠를 이동하려면 추가 기능을 사용합니다. 수집이 완료되면 로그에서 오류 또는 경고를 확인하십시오. 모든 오류는 보고된 문제를 처리하거나 Adobe 고객 지원 센터에 문의하여 즉시 해결해야 합니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=ko-KR" text="로그 보기"
 
 컨텐츠 전송 도구에는 다음을 수행하여 차등 컨텐츠를 추출할 수 있는 기능이 있습니다. *추가* 마이그레이션 세트. 이렇게 하면 모든 콘텐츠를 다시 추출할 필요 없이 이전 추출 후 변경된 콘텐츠만 포함하도록 마이그레이션 세트를 수정할 수 있습니다.
@@ -97,7 +97,7 @@ Cloud Acceleration Manager를 사용하여 마이그레이션 세트를 수집�
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="콘텐츠 수집 문제 해결"
->abstract="수집 로그 및 설명서를 참조하여 수집이 실패할 수 있는 일반적인 이유에 대한 해결책을 찾고, 문제를 해결하는 방법을 찾아 수집을 다시 실행하십시오."
+>abstract="수집 로그 및 설명서를 참조하여 수집이 실패할 수 있는 일반적인 이유에 대한 해결책을 찾고 문제를 해결하는 방법을 알아보십시오. 수정되면 수집을 다시 실행할 수 있습니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html" text="콘텐츠 전송 확인"
 
 ### CAM에서 마이그레이션 토큰을 검색할 수 없음 {#cam-unable-to-retrieve-the-migration-token}
@@ -132,10 +132,10 @@ Cloud Acceleration Manager를 사용하여 마이그레이션 세트를 수집�
 
 * AEM은 환경 상태를 as a Cloud Service으로 유지하며 경우에 따라 다양한 일반적인 이유로 마이그레이션 서비스를 다시 시작해야 합니다. 서비스를 다시 시작하는 경우에는 해당 서비스에 연결할 수 없지만 결국 사용할 수 있습니다.
 * 인스턴스에서 다른 프로세스가 실행되고 있을 수 있습니다. 예를 들어 다음과 같습니다. [AEM 버전 업데이트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) 업데이트를 적용하는 중입니다. 시스템이 사용 중이고 마이그레이션 서비스를 정기적으로 사용할 수 없습니다. 해당 프로세스가 완료되면 수집 시작을 다시 시도할 수 있습니다.
-* 다음과 같은 경우 [IP 허용 목록이 적용되었습니다.](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) cloud Manager를 통해 Cloud Acceleration Manager가 마이그레이션 서비스에 도달하는 것을 차단합니다. 주소가 동적이므로 수집에 IP 주소를 추가할 수 없습니다. 현재 유일한 해결 방법은 수집 및 색인화 프로세스 중에 IP 허용 목록을 비활성화하는 것입니다.
+* 다음과 같은 경우 [IP 허용 목록이 적용되었습니다.](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) cloud Manager를 통해 Cloud Acceleration Manager가 마이그레이션 서비스에 도달하는 것을 차단합니다. 주소가 동적이므로 수집에 IP 주소를 추가할 수 없습니다. 현재, 유일한 해결책은 수집 및 인덱싱 프로세스 동안 IP 허용 목록을 비활성화하는 것이다.
 * 조사가 필요한 다른 이유가 있을 수 있다. 수집 또는 색인화에 계속 오류가 발생하면 Adobe 고객 지원 센터에 문의하십시오.
 
-### AEM 버전 업데이트 및 수집
+### AEM 버전 업데이트 및 수집 {#aem-version-updates-and-ingestions}
 
 [AEM 버전 업데이트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) 최신 AEM as a Cloud Service 버전을 최신 상태로 유지하기 위해 환경에 자동으로 적용됩니다. 수집이 수행될 때 업데이트가 트리거되면 환경 손상 등 예측할 수 없는 결과가 발생할 수 있습니다.
 
@@ -149,11 +149,11 @@ Cloud Acceleration Manager를 사용하여 마이그레이션 세트를 수집�
 
 >[!NOTE]
 >
-> &quot;AEM 버전 업데이트&quot;는 환경의 파이프라인에서 실행되며 파이프라인이 지워질 때까지 대기합니다. 업데이트가 예상보다 오래 큐에 있는 경우 사용자 지정 워크플로우에 의도하지 않게 파이프라인이 잠겨 있지 않은지 확인하십시오.
+> &quot;AEM 버전 업데이트&quot;는 환경의 파이프라인에서 실행되며 파이프라인이 지워질 때까지 기다립니다. 업데이트가 예상보다 오래 큐에 있는 경우 사용자 지정 워크플로우에 의도하지 않게 파이프라인이 잠겨 있지 않은지 확인하십시오.
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### 고유성 제약 조건 위반으로 인한 추가 수집 실패
+### 고유성 제약 조건 위반으로 인한 추가 수집 실패 {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
 의 일반적인 원인 [추가 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 실패는 노드 id의 충돌입니다. 이 오류를 식별하려면 Cloud Acceleration Manager UI를 사용하여 수집 로그를 다운로드하고 다음과 같은 항목을 찾습니다.
 
@@ -165,7 +165,7 @@ AEM의 각 노드에는 고유한 UUID가 있어야 합니다. 이 오류는 수
 
 이 충돌은 수동으로 해결해야 합니다. 콘텐츠에 익숙한 사용자는 두 노드 중 삭제할 노드를 참조하는 다른 콘텐츠를 염두에 두고 결정해야 합니다. 해결책은 불쾌한 노드 없이 다시 추가 추출이 수행될 것을 요구할 수 있다.
 
-### 참조된 노드를 삭제할 수 없어 추가 수집 실패
+### 참조된 노드를 삭제할 수 없어 추가 수집 실패 {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
 
 다음의 또 다른 일반적인 원인 [추가 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 실패는 대상 인스턴스의 특정 노드에 대한 버전 충돌입니다. 이 오류를 식별하려면 Cloud Acceleration Manager UI를 사용하여 수집 로그를 다운로드하고 다음과 같은 항목을 찾습니다.
 
@@ -175,11 +175,17 @@ AEM의 각 노드에는 고유한 UUID가 있어야 합니다. 이 오류는 수
 
 해결책은 불쾌한 노드 없이 다시 추가 추출이 수행될 것을 요구할 수 있다. 또는 문제가 되는 노드의 소규모 마이그레이션 세트를 만들지만 &quot;버전 포함&quot;은 비활성화되어 있습니다.
 
-모범 사례에 따르면 **지우지 않음** 수집은 버전이 포함된 마이그레이션 세트를 사용하여 실행되어야 합니다(즉, &quot;include versions&quot;=true로 추출). 마이그레이션 여정이 완료될 때까지 대상의 컨텐츠를 가능한 한 적게 수정하는 것이 중요합니다. 그렇지 않으면 이러한 충돌이 발생할 수 있습니다.
+모범 사례에 따르면 **지우지 않음** 수집은 버전이 포함된 마이그레이션 세트를 사용하여 실행해야 합니다. 마이그레이션 여정이 완료될 때까지 대상의 콘텐츠를 가능한 한 적게 수정하는 것이 중요합니다. 그렇지 않으면 이러한 충돌이 발생할 수 있습니다.
 
-### 수집 취소됨
+### 큰 노드 속성 값으로 인한 수집 실패 {#ingestion-failure-due-to-large-node-property-values}
 
-실행 중인 추출을 소스 마이그레이션 세트로 사용하여 생성된 수집은 해당 추출이 성공할 때까지 인내심을 가지고 기다리며, 이 시점에서 정상적으로 시작됩니다. 추출이 실패하거나 중지되면 수집 및 색인 지정 작업이 시작되지 않고 취소됩니다. 이 경우 추출을 확인하여 실패한 이유를 확인하고 문제를 해결한 다음 추출을 다시 시작합니다. 고정 추출이 실행되면 새 수집을 예약할 수 있습니다.
+MongoDB에 저장된 노드 속성 값은 16MB를 초과할 수 없습니다. 노드 값이 지원되는 크기를 초과하면 수집이 실패하고 로그에 `BSONObjectTooLarge` 오류 및 최대값을 초과하는 노드를 지정합니다. MongoDB 제한 사항입니다.
+
+다음을 참조하십시오. `Node property value in MongoDB` 의 메모 [컨텐츠 전송 도구 사전 요구 사항](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) 자세한 내용 및 모든 큰 노드를 찾는 데 도움이 될 수 있는 Oak 도구에 대한 링크입니다. 크기가 큰 모든 노드가 복구되면 추출 및 수집을 다시 실행합니다.
+
+### 수집 취소됨 {#ingestion-rescinded}
+
+실행 중인 추출을 소스 마이그레이션 세트로 사용하여 생성된 수집은 해당 추출이 성공할 때까지 잠시 기다렸다가 이 시점에서 정상적으로 시작됩니다. 추출이 실패하거나 중지되면 수집 및 색인 지정 작업이 시작되지 않고 취소됩니다. 이 경우 추출을 확인하여 실패한 이유를 확인하고 문제를 해결한 다음 추출을 다시 시작합니다. 고정 추출이 실행되면 새 수집을 예약할 수 있습니다.
 
 ## 다음 단계 {#whats-next}
 
