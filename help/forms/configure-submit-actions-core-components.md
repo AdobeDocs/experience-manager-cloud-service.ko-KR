@@ -4,9 +4,9 @@ description: 적응형 양식은 여러 제출 액션을 제공합니다. 제출
 keywords: 적응형 양식에 대한 제출 액션을 선택하고, 적응형 양식을 sharepoint 목록에 연결하고, 적응형 양식을 sharepoint 문서 라이브러리에 연결하고, 적응형 양식을 양식 데이터 모델에 연결하는 방법
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: c2bf362a9949b3d6d427a28821056a0cc9edfa85
 workflow-type: tm+mt
-source-wordcount: '4114'
+source-wordcount: '4102'
 ht-degree: 82%
 
 ---
@@ -171,8 +171,6 @@ AEM Forms을 Microsoft® Sharepoint Document Library 스토리지에 연결하�
 데이터를 저장하는 폴더 구조는 `/folder_name/form_name/year/month/date/submission_id/data`입니다.
 
 ### Microsoft® SharePoint 목록에 적응형 양식 연결 {#connect-af-sharepoint-list}
-
-<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)을 통해 액세스할 수 있습니다. </span>
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
