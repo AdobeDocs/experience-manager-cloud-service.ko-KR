@@ -2,20 +2,17 @@
 title: 사용자 정의 권한
 description: 사용자 지정 권한을 사용하여 구성 가능한 권한으로 사용자 지정 권한 프로필을 만들어 Cloud Manager 사용자의 프로그램, 파이프라인 및 환경에 대한 액세스를 제한하는 방법에 대해 알아봅니다.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 3891a55ff48f48de4e55e0229e9f76e5bf500cb3
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1515'
 ht-degree: 38%
 
 ---
 
+
 # 사용자 정의 권한 {#custom-permissions}
 
 사용자 지정 권한을 사용하여 구성 가능한 권한으로 사용자 지정 권한 프로필을 만들어 Cloud Manager 사용자의 프로그램, 파이프라인 및 환경에 대한 액세스를 제한하는 방법에 대해 알아봅니다.
-
->[!NOTE]
->
->이 기능은 [얼리 어답터 프로그램](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)에만 사용할 수 있습니다.
 
 ## 소개 {#introduction}
 

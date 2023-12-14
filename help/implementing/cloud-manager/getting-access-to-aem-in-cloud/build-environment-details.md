@@ -2,10 +2,10 @@
 title: 빌드 환경
 description: Cloud Manager의 빌드 환경과 코드 빌드 및 테스트 방법에 대해 알아봅니다.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 3e7d3113b25e9b4058130bf3352a612f36ef5c63
 workflow-type: tm+mt
-source-wordcount: '1004'
-ht-degree: 94%
+source-wordcount: '1029'
+ht-degree: 91%
 
 ---
 
@@ -18,10 +18,10 @@ Cloud Manager의 빌드 환경과 코드 빌드 및 테스트 방법에 대해 �
 
 Cloud Manager는 특수 빌드 환경을 사용하여 코드를 빌드하고 테스트합니다.
 
-* 빌드 환경은 Linux 기반이며, Ubuntu 18.04에서 파생되었습니다.
+* 빌드 환경은 Linux 기반이며, Ubuntu 22.04에서 파생되었습니다.
 * Apache Maven 3.8.8이 설치되어 있습니다.
 * 설치된 Java 버전은 Oracle JDK 8u371 및 Oracle JDK 11.0.20입니다.
-* 기본적으로 `JAVA_HOME` 환경 변수는 Oracle JDK 8u371을 포함하는 `/usr/lib/jvm/jdk1.8.0_371`로 설정됩니다. 다음을 참조하십시오. [대체 Maven 실행 JDK 버전](#alternate-maven-jdk-version) 섹션에 자세히 설명되어 있습니다.
+* 기본적으로 `JAVA_HOME` 환경 변수가 로 설정되어 있습니다 `/usr/lib/jvm/jdk1.8.0_371` oracle JDK 8u371을 포함합니다. 다음을 참조하십시오. [대체 Maven 실행 JDK 버전](#alternate-maven-jdk-version) 섹션에 자세히 설명되어 있습니다.
 * 필요한 몇 가지 추가 시스템 패키지가 설치되어 있습니다.
    * `bzip2`
    * `unzip`
@@ -35,6 +35,7 @@ Cloud Manager는 특수 빌드 환경을 사용하여 코드를 빌드하고 테
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven은 `adobe-public`이라는 프로필을 사용하여 자동으로 공개 Adobe 아티팩트 저장소를 포함하는 `settings.xml` 파일로 시스템 수준에서 구성됩니다. 자세한 내용은 [Adobe 공개 Maven 저장소](https://repo1.maven.org/)를 참조하십시오.
+* Node.js 18은에서 사용할 수 있습니다. [프론트엔드 및 전체 스택 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
 
 >[!NOTE]
 >

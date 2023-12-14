@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.11.0 릴리스 정보
-description: AEM as a Cloud Service의 Cloud Manager 2023.11.0 릴리스 정보입니다.
+title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.12.0 릴리스 정보
+description: AEM as a Cloud Service의 Cloud Manager 2023.12.0 릴리스 정보입니다.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: be38ca5bf79d401fc12c1422c270a2ee84bbbad2
-workflow-type: ht
-source-wordcount: '735'
-ht-degree: 100%
+source-git-commit: 3e7d3113b25e9b4058130bf3352a612f36ef5c63
+workflow-type: tm+mt
+source-wordcount: '772'
+ht-degree: 54%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.11.0 릴리스 정보 {#release-notes}
+# Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.12.0 릴리스 정보 {#release-notes}
 
-이 페이지에서는 AEM as a Cloud Service의 Cloud Manager 2023.11.0 릴리스 정보에 대해 설명합니다.
+이 페이지에서는 AEM as a Cloud Service의 Cloud Manager 2023.12.0 릴리스 정보에 대해 설명합니다.
 
 >[!NOTE]
 >
@@ -21,36 +21,42 @@ ht-degree: 100%
 
 ## 릴리스 일자 {#release-date}
 
-AEM as a Cloud Service의 Cloud Manager 2023.11.0 릴리스 일자는 2023년 11월 14일입니다. 다음 릴리스는 2023년 12월 7일에 예정되어 있습니다.
+AEM Cloud Manager 릴리스 2023.12.0의 as a Cloud Service 릴리스 날짜는 2023년 12월 14일입니다. 다음 릴리스는 2024년 1월 18일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
-* 웹 애플리케이션 방화벽-DDOS 보호(WAF-DDOS)를 이제 AEM as a Cloud Service 권한의 일부로 구매할 수 있으며 [셀프서비스 방식으로 구성할 수 있습니다.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-* 전문[ 구성 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)이 이제 몇 분 안에 WAF 규칙을 포함한 트래픽 필터 규칙을 구성하고 배포할 수 있습니다.
-* [콘텐츠를](/help/implementing/developing/tools/content-copy.md) 상위 환경에서 개발 환경으로 복사할 경우, 이제 개발 환경의 용량이 제한되므로 대량의 콘텐츠 세트를 복사할 때 주의하라는 메시지가 표시됩니다.
-* [파이프라인 실행 세부 정보 페이지](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details)에는 이제 아직 시작되지 않은 단계는 회색으로 바뀌어 모든 파이프라인 실행 단계가 표시됩니다.
-* 이제 **[활동](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** 및 **[파이프라인](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** 페이지에서 실행 상태의 파이프라인을 선택하면 파이프라인 실행 요약을 사용할 수 있습니다.
-* 새 **기간** 섹션이 해당 프로그램의 과거 트렌드를 기반으로 한 파이프라인 단계의 평균 기간을 포함하는 [파이프라인 세부 정보 페이지](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details)에 추가되었습니다.
-* [파이프라인 실행 페이지](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity-window)에서 이제 완료된 단계에 기간이 표시됩니다.
-* [빌드 아티팩트를 재사용](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse)하는 실행이 이제 해당 아티팩트를 처음으로 빌드한 실행에 대한 링크를 표시합니다.
-* 이제 [코드 품질 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)에 대해서도 **중요한 지표 장애**&#x200B;를 선택하는 옵션을 구성할 수 있습니다.
-
+* [Cloud Manager 사용자 정의 권한](/help/implementing/cloud-manager/custom-permissions.md)을 사용하여 Cloud Manager 사용자의 프로그램, 파이프라인 및 환경에 대한 액세스를 제한하는 구성 가능한 권한으로 새 사용자 정의 권한 프로필을 생성할 수 있습니다.
+   * 이 기능은 2024년 2월 Cloud Manager 릴리스에서 완료될 것으로 예상됨에 따라 단계적으로 출시될 예정입니다.
+   * (으)로 이메일을 보내십시오. `Grp-CloudManager-custom-permissions@adobe.com` 더 빨리 활성화하고자 하는 경우 Adobe ID과 연계된 이메일 주소에서.
+* 이제 컨테이너 빌드는 Node.js 버전 18 을 지원합니다. [프론트엔드 파이프라인.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
+* 새로 생성된 Cloud Manager 프로그램의 경우 [연결된 New Relic 하위 계정](/help/implementing/cloud-manager/user-access-new-relic.md) 은 기본적으로 활성화되지 않습니다.
+   * New Relic 하위 계정에 90일 이상 액세스하지 않은 기존 프로그램의 경우 비활성화됩니다.
+   * New Relic 하위 계정을 사용하려면 Cloud Manager를 통해 옵트인해야 합니다.
+* Java 8 및 11용 부 버전 롤아웃 및 Maven 업데이트 [Cloud Manager의 10월 릴리스에서 발표 및 시작](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) 완료되었습니다.
+   * 프론트엔드 및 전체 스택 파이프라인에 대해 노드 18에 대한 지원이 추가되었습니다.
+   * Java 8 부 버전이 다음으로 업데이트되었습니다. `jdk1.8.0_371`.
+   * Java 11 부 버전이 (으)로 업데이트되었습니다. `jdk-11.0.20`.
+   * Java 17에 대한 지원이 추가되었습니다.
+   * Maven이 3.8.8로 업데이트되었습니다.
+   * 빌드 컨테이너 기본 이미지가 Ubuntu 22.04로 업데이트되었습니다.
 
 ## 조기 채택 프로그램 {#early-adoption}
 
 Adobe의 조기 채택 프로그램에 참여하여 향후 기능을 테스트할 기회를 얻으십시오.
+
+### RUM(Real User Monitoring)을 통한 클라이언트측 수집 {#rum}
+
+다음을 활용할 수 있습니다. [RUM(Real User Monitoring) 데이터 서비스](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) 클라이언트측 컬렉션을 AEM as a Cloud Service으로 활성화하려면
+
+RUM(Real User Monitoring) 데이터 서비스는 사용자 상호 작용을 보다 정확하게 반영하여 웹 사이트 참여를 안정적으로 측정합니다. 페이지 성능에 대한 고급 통찰력을 얻을 수 있는 좋은 기회입니다. 이는 Adobe 관리 CDN 또는 Adobe이 아닌 관리 CDN을 사용하는 고객에게 유용합니다. 비 Adobe 관리 CDN을 사용하는 고객의 경우 이제 자동화된 트래픽 보고를 사용할 수 있으므로 트래픽 보고서를 Adobe과 공유할 필요가 없습니다.
+
+이 새로운 기능을 테스트하고 피드백을 공유하려면 (으)로 이메일을 보내십시오. `aemcs-rum-adopter@adobe.com` 사용 중인 Adobe ID과 연결된 이메일 주소입니다. 이메일에 프로덕션, 스테이징 및 개발 환경의 도메인 이름을 포함하십시오.  이 기능에 대한 얼리 어답터 프로그램의 가용성은 제한적입니다.
 
 ### 자체 GitHub 가져오기 {#byo-github}
 
 GitHub를 사용하여 저장소를 관리하는 경우, [이제 Cloud Manager를 통해 GitHub 저장소 내에서 직접 코드의 유효성을 검사할 수 있습니다.](/help/implementing/cloud-manager/managing-code/byo-github.md) 이 통합을 통해 코드를 Adobe 저장소와 지속적으로 동기화할 필요가 없으며, 기본 분기에 병합하기 전에 가져오기 요청을 확인할 수 있습니다.
 
 이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일로 `Grp-CloudManager_BYOG@adobe.com`에 이메일 주소를 보내 주십시오.
-
-### 사용자 정의 권한 {#custom-permissions}
-
-[Cloud Manager 사용자 정의 권한](/help/implementing/cloud-manager/custom-permissions.md)을 사용하여 Cloud Manager 사용자의 프로그램, 파이프라인 및 환경에 대한 액세스를 제한하는 구성 가능한 권한으로 새 사용자 정의 권한 프로필을 생성할 수 있습니다.
-
-이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일로 `Grp-CloudManager-custom-permissions@adobe.com`에 이메일 주소를 보내 주십시오.
 
 ### 셀프서비스 콘텐츠 복원 {#content-restore}
 
@@ -72,15 +78,3 @@ GitHub를 사용하여 저장소를 관리하는 경우, [이제 Cloud Manager�
 대시보드는 웹 앱의 품질을 개선하기 위한 오픈 소스 자동화 도구인 Google Lighthouse를 사용합니다. 공개 또는 인증이 필요한 모든 웹 페이지에 대해 실행할 수 있습니다. 성능, 접근성, 점진적 웹 앱, SEO 등에 대한 감사가 있습니다.
 
 새 대시보드를 테스트해 보고 싶으십니까? Adobe ID와 연결된 이메일로 `aem-lighthouse-pilot@adobe.com`에 이메일을 보내 주시면 귀하의 시작을 도와드릴 수 있습니다.
-
-## 알려진 문제 {#known-issues}
-
-[ 구성 파이프라인이](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) 프로덕션으로 푸시되지 않도록 방해하는 알려진 버그가 있습니다.
-
-**프로덕션에 배포 전 일시 중지** 옵션이 구성 파이프라인에 옵션이 필요한 경우, 버그가 해결될 때까지 제안되는 해결 방법은 다음과 같습니다.
-
-1. 파이프라인 실행.
-1. 스테이징 환경에서 코드를 테스트합니다.
-1. 배포 및 승인이 가능해지면 **거부**&#x200B;를 클릭합니다.
-1. 파이프라인을 편집하면&#x200B;**프로덕션에 배포 전 일시 중지** 옵션을 비활성화할 수 있습니다.
-1. 파이프라인을 다시 실행하면 스테이징 단계와 프로덕션 단계에서 다시 실행할 수 있습니다.

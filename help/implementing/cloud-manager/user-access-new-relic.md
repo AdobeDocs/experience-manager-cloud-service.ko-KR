@@ -2,10 +2,10 @@
 title: New Relic One
 description: AEM as a Cloud Service를 위한 New Relic One APM(Application Performance Monitoring) 서비스에 대한 정보와 액세스하는 방법에 대해 알아봅니다.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 3891a55ff48f48de4e55e0229e9f76e5bf500cb3
 workflow-type: tm+mt
-source-wordcount: '1726'
-ht-degree: 92%
+source-wordcount: '1843'
+ht-degree: 80%
 
 ---
 
@@ -20,7 +20,7 @@ Adobe는 애플리케이션의 모니터링, 가용성 및 성능에 중점을 �
 
 이 문서에서는 성능을 지원하고 AEM as a Cloud Service를 최대한 활용할 수 있도록 AEM as a Cloud Service 환경에서 활성화된 New Relic One APM(Application Performance Monitoring) 기능에 대한 액세스를 관리하는 방법을 설명합니다.
 
-새 프로덕션 프로그램이 만들어지면 AEM as a Cloud Service 프로그램과 연결된 New Relic One 하위 계정이 자동으로 만들어집니다.
+새 프로덕션 프로그램이 만들어지면 AEM as a Cloud Service 프로그램과 연결된 New Relic One 하위 계정이 자동으로 만들어집니다. [이 하위 계정을 활성화해야 합니다.](#activate-sub-account) 데이터 수집을 시작합니다.
 
 ## 기능 {#transaction-monitoring}
 
@@ -33,6 +33,28 @@ AEM as a Cloud Service용 New Relic One APM에는 많은 기능이 있습니다.
 * 인프라 수준 모니터링 및 애플리케이션(Adobe Experience Manager) 모니터링의 주요 지표를 결합하여 전체적인 성능 최적화
 
 * New Relic Insights 지표 내에서 AEM as a Cloud Service JMX Mbeans 및 상태 확인을 직접 노출하여 애플리케이션 스택 성능 및 상태 지표에 대한 심층 검사 허용
+
+## New Relic One 하위 계정 활성화 {#activate-sub-account}
+
+새로 만든 프로그램의 경우 New Relic One 하위 계정이 생성됩니다. 그러나 데이터를 수집하려면 활성화해야 합니다. 이 작업은 자동으로 수행되지 않습니다. 하위 계정을 활성화하려면 다음 단계를 따르십시오.
+
+>[!NOTE]
+>
+>의 사용자 **비즈니스 소유자** 또는 **배포 관리자** New Relic One 하위 계정을 관리하려면 역할이 로그인해야 합니다.
+
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
+
+1. New Relic One 사용자를 관리할 프로그램을 클릭합니다.
+
+1. 의 맨 아래에서 **환경** 카드 개요 페이지에서 줄임표 버튼을 클릭하고 다음을 선택합니다. **New Relic 활성화**.
+
+   ![사용자 관리](assets/newrelic-activate-sub-account.png)
+
+   * 프로그램의 **환경** 화면 상단에 있는 줄임표 버튼을 통해 **사용자 관리** 옵션에 액세스할 수도 있습니다.
+
+1. [파이프라인 실행](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) 하위 계정 활성화를 완료하기 위해 동일한 환경을 성공적으로 완료합니다.
+
+하위 계정이 비활성화되면 데이터 수집이 없습니다.
 
 ## New Relic One 사용자 관리 {#manage-users}
 
@@ -66,7 +88,7 @@ AEM as a Cloud Service용 New Relic One APM에는 많은 기능이 있습니다.
 >
 >New Relic One 사용자를 관리하는 경우, 액세스 권한을 얻으려면 자신을 사용자로 추가해야 합니다. **비즈니스 소유자** 또는 **배포 관리자**&#x200B;가 되는 것만으로는 New Relic One에 액세스할 수 없습니다. 자신을 사용자로 만들어야 합니다.
 
-## New Relic One 사용자 계정 활성화 {#activate-account}
+## New Relic One 사용자 계정 활성화 {#activate-user-account}
 
 미리보기 섹션 [New Relic One 사용자 관리](#manage-users)에 설명된 대로 New Relic One 사용자 계정이 만들어지면 New Relic에서 해당 사용자에게 제공된 주소로 확인 이메일을 보냅니다. 이러한 계정을 사용하려면 사용자가 먼저 암호를 재설정하여 New Relic으로 계정을 활성화해야 합니다.
 
@@ -118,7 +140,7 @@ New Relic One에 로그인하는 동안 이메일을 확인하라는 메시지�
 
 도움이 더 필요하면 [AEM 지원 포털](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)을 사용하여 지원 티켓을 여십시오.
 
-## New Relic One 액세스 문제 해결 {#troubleshooting}
+## New Relic One 사용자 액세스 문제 해결 {#troubleshooting}
 
 섹션에 설명된 대로 New Relic One 사용자로 추가된 경우 [New Relic One 사용자 관리](#manage-users) 및 은(는) 원본 계정 확인 이메일을 찾을 수 없습니다. 다음 단계를 따르십시오.
 
@@ -152,11 +174,11 @@ New Relic One에 사용자를 추가하는 경우 다음 제한이 적용됩니�
 
 >[!NOTE]
 >
->활동이 New Relic One 계정에서 90일 이상 감지되지 않으면 APM 에이전트가 중단됩니다.
+>New Relic One 하위 계정에서 90일 이상 활동이 감지되지 않으면 APM 에이전트가 중지됩니다.
 >
->다음을 통해 지원 티켓 열기 [AEM 지원 포털](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html) aemaaCS 환경에 대해 APM 에이전트를 다시 활성화하려는 경우.
+>의 동일한 단계를 따르십시오. [New Relic One 하위 계정 활성화](#activate-sub-account) 이 문서의 섹션을 통해 New Relic One 하위 계정을 다시 활성화할 수 있습니다.
 
-AEM as a Cloud Service 프로그램용 New Relic One에 대한 추가 도움말 또는 추가 지침을 보려면 [AEM 지원 포털](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)을 사용하여 지원 티켓을 엽니다.
+as a Cloud Service 프로그램의 New Relic One AEM 제공에 대한 추가 도움말 또는 추가 지침을 보려면 [AEM 지원 포털.](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)
 
 ## New Relic One에 대해 자주 묻는 질문 {#faqs}
 
@@ -202,4 +224,4 @@ Adobe 지원에서 서비스의 일부로 New Relic One 및 기타 사내 도구
 
 ### New Relic One 계정의 APM 에이전트가 중단됩니다. 어떻게 되었습니까? {#deactivated}
 
-활동이 90일 이상 감지되지 않으면 [APM 에이전트가 중단됩니다](#limitations). 다음을 통해 지원 티켓 열기 [AEM 지원 포털](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html) aemaaCS 환경에 대해 APM 에이전트를 다시 활성화하려는 경우.
+활동이 90일 이상 감지되지 않으면 [APM 에이전트가 중단됩니다](#limitations). 의 동일한 단계를 따르십시오. [New Relic One 하위 계정 활성화](#activate-sub-account) 이 문서의 섹션을 통해 New Relic One 하위 계정을 다시 활성화할 수 있습니다.
