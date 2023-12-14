@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 475505fc8b5eb63c3563e8fabb28f515ff690393
+source-git-commit: a768eddbddb4b418b228839fdf5a9cdaf1488991
 workflow-type: tm+mt
-source-wordcount: '4456'
-ht-degree: 99%
+source-wordcount: '4545'
+ht-degree: 97%
 
 ---
 
@@ -761,6 +761,45 @@ ht-degree: 99%
    + [Edge 전달을 위한 콘텐츠 게시](/help/edge/publishing.md)
    + [Edge 전달을 위한 개발](/help/edge/developing.md)
    + [기존 프로젝트 및 Edge 게재](/help/edge/existing-projects.md)
+   + Edge 게재 애플리케이션 구축 {#build}
+      + [시작하기 - 개발자 자습서](/help/edge/developer/tutorial.md)
+      + [프로젝트 구조](/help/edge/developer/anatomy-of-a-franklin-project.md)
+      + [컬렉션 차단](/help/edge/developer/block-collection.md)
+      + [스프레드시트](/help/edge/developer/spreadsheets.md)
+      + [Forms](/help/edge/developer/forms.md)
+      + [색인화](/help/edge/developer/indexing.md)
+      + [100 유지](/help/edge/developer/keeping-it-100.md)
+      + [마크업 - 섹션](/help/edge/developer/markup-sections-blocks.md)
+      + [파비콘](/help/edge/developer/favicon.md)
+      + [사용자 지정 헤더](/help/edge/docs/custom-headers.md)
+      + [개발자를 위한 우수 사례](/help/edge/docs/dev-collab-and-good-practices.md)
+   + Edge 게재 응용 프로그램 게시 {#publish}
+      + [작성](/help/edge/docs/authoring.md)
+      + [벌크 메타데이터](/help/edge/docs/bulk-metadata.md)
+      + [Slack 보트](/help/edge/docs/slack.md)
+      + [자리 표시자](/help/edge/docs/placeholders.md)
+      + [Sitemap](/help/edge/developer/sitemap.md)
+      + [SharePoint 설정](/help/edge/docs/setup-customer-sharepoint.md)
+   + Edge 게재 애플리케이션 실행 {#launch}
+      + [실행 체크리스트](/help/edge/docs/go-live-checklist.md)
+      + [푸시 무효화](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
+      + [Cloudflare Worker 설치](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
+      + [Akamai 설정](/help/edge/docs/byo-cdn-akamai-setup.md)
+      + [Fastly 설정](/help/edge/docs/byo-cdn-fastly-setup.md)
+      + [리디렉션](/help/edge/docs/redirects.md)
+   + Edge 게재를 위한 리소스 {#resources}
+      + Sidekick {#sidekick}
+         + [Sidekick 사용](/help/edge/docs/sidekick.md)
+         + [확장 설치](/help/edge/docs/sidekick-extension.md)
+         + [프로젝트 구성자](https://www.aem.live/tools/sidekick/)
+         + [Sidekick 라이브러리](/help/edge/docs/sidekick-library.md)
+      + [FAQ](/help/edge/docs/faq.md)
+      + [관리 API](https://www.aem.live/docs/admin.html)
+      + [status.hlx.live](https://status.hlx.live/history)
+      + 도구 {#tools}
+         + [Sidekick Chrome 확장 프로그램](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+         + [Github 보트](https://github.com/apps/aem-code-sync)
+         + [감사 로그](/help/edge/docs/auditlog.md)
 + Headless {#headless}
    + [Headless CMS란 무엇입니까?](/help/headless/what-is-headless.md)
    + [AEM Headless 소개](/help/headless/introduction.md)
