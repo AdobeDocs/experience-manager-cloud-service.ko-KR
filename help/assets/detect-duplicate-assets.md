@@ -6,7 +6,7 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 40f63933-4f4e-4318-8d42-4b5c9b01f7cd
-source-git-commit: f18b8cf1922f05c0d7da2c58fb0a57bc5ff3d3b7
+source-git-commit: e882e89afa213f3423efe497585994eb91186fd7
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 9%
@@ -14,12 +14,12 @@ ht-degree: 9%
 ---
 
 
+# 중복 자산 감지 {#detect-duplicate-assets}
+
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | 이 문서 |
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=en) |
-
-# 중복 자산 감지 {#detect-duplicate-assets}
+| AEM as a Cloud Service | 이 문서 |
 
 DAM 사용자가 저장소에 이미 존재하는 에셋을 하나 이상 업로드하는 경우, [!DNL Experience Manager] 복제를 감지하고 사용자에게 알립니다. 중복 검색은 저장소 크기 및 업로드된 에셋 수에 따라 성능에 영향을 줄 수 있으므로 기본적으로 비활성화됩니다.
 

@@ -4,20 +4,19 @@ description: 자산 선택기를 사용하여 애플리케이션 내에서 자�
 contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: f18b8cf1922f05c0d7da2c58fb0a57bc5ff3d3b7
+source-git-commit: e882e89afa213f3423efe497585994eb91186fd7
 workflow-type: tm+mt
 source-wordcount: '2371'
 ht-degree: 91%
 
 ---
 
+# 마이크로 프론트엔드 자산 선택기 {#Overview}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | 이 문서 |
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-selector.html?lang=en) |
-
-# 마이크로 프론트엔드 자산 선택기 {#Overview}
+| AEM as a Cloud Service | 이 문서 |
 
 마이크로 프론트엔드 자산 선택기는 [!DNL Experience Manager Assets as a Cloud Service] 저장소와 간편하게 통합하는 사용자 인터페이스를 제공하므로 사용자는 해당 저장소에서 사용 가능한 디지털 자산을 탐색 또는 검색하고 애플리케이션 작성 경험에 사용할 수 있습니다.
 
