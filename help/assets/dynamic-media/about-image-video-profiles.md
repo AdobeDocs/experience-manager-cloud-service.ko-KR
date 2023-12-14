@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: f9f82c144e6f919ed9b82caf9e1bc0408a352fd6
+source-git-commit: 34038d954802b7f8e31441d5c5e4ea90380e7a20
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Dynamic Media 이미지 프로필 또는 Dynamic Media 비디오 프로필을 �
 
 처음으로 처리가 실패한 자산에 대해 재처리 워크플로우를 실행할 수 있습니다. 이미지 프로필이나 비디오 프로필을 편집하지 않았거나 이미지 프로필이나 비디오 프로필을 이미 적용한 경우에도 언제든지 자산 폴더에서 재처리 워크플로우를 실행할 수 있습니다.
 
-기본값 50개에서 최대 1000개의 자산까지 재처리 워크플로우의 배치 크기를 조정할 수 있습니다(선택 사항). 를 실행할 때 _Scene7: 에셋 재처리_ 폴더의 워크플로우에서는 에셋이 일괄로 그룹화된 다음 처리를 위해 Dynamic Media 서버로 전송됩니다. 처리 후에는에서 전체 배치 세트에 있는 각 에셋의 메타데이터가 업데이트됩니다. [!DNL Adobe Experience Manager]. 배치 크기가 크면 처리가 지연될 수 있습니다. 또는 배치 크기가 너무 작으면 Dynamic Media 서버로 너무 많은 라운드트립이 발생할 수 있습니다.
+기본값 50개에서 최대 1000개의 자산까지 재처리 워크플로우의 배치 크기를 조정할 수 있습니다(선택 사항). 를 실행할 때 _Dynamic Media 재처리_ 폴더의 워크플로우에서는 에셋이 일괄로 그룹화된 다음 처리를 위해 Dynamic Media 서버로 전송됩니다. 처리 후에는에서 전체 배치 세트에 있는 각 에셋의 메타데이터가 업데이트됩니다. [!DNL Adobe Experience Manager]. 배치 크기가 크면 처리가 지연될 수 있습니다. 또는 배치 크기가 너무 작으면 Dynamic Media 서버로 너무 많은 라운드트립이 발생할 수 있습니다.
 
 다음을 참조하십시오 [재처리 워크플로우의 배치 크기 조정](#adjusting-load).
 
