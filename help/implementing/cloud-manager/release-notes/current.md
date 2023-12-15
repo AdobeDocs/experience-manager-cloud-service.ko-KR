@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.12.0 �
 description: AEM as a Cloud Service의 Cloud Manager 2023.12.0 릴리스 정보입니다.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: b3a338f469ea04d2c31204149d619931a55f2b24
+source-git-commit: 71ce915413cd968a78a33b7a52d02e09841e1707
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 54%
+source-wordcount: '787'
+ht-degree: 53%
 
 ---
 
@@ -37,6 +37,8 @@ AEM Cloud Manager 릴리스 2023.12.0의 as a Cloud Service 릴리스 날짜는 
    * Java 8 부 버전이 다음으로 업데이트되었습니다. `jdk1.8.0_371`.
    * Java 11 부 버전이 (으)로 업데이트되었습니다. `jdk-11.0.20`.
    * Maven이 3.8.8로 업데이트되었습니다.
+      * 이제 Maven이 모든 비보안 기능을 비활성화합니다. `http://*` 미러는 기본적으로 사용됩니다.
+      * [Adobe 추천](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 사용자는 HTTP 대신 HTTPS를 사용하도록 Maven 저장소를 업데이트합니다.
    * 빌드 컨테이너 기본 이미지가 Ubuntu 22.04로 업데이트되었습니다.
 
 ## 조기 채택 프로그램 {#early-adoption}

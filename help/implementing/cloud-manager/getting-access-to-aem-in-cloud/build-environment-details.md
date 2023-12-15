@@ -2,10 +2,10 @@
 title: 빌드 환경
 description: Cloud Manager의 빌드 환경과 코드 빌드 및 테스트 방법에 대해 알아봅니다.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 3e7d3113b25e9b4058130bf3352a612f36ef5c63
+source-git-commit: f59959bc10e502d85d3f4797dcf4ad0490d233f4
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 91%
+source-wordcount: '1177'
+ht-degree: 79%
 
 ---
 
@@ -20,6 +20,7 @@ Cloud Manager는 특수 빌드 환경을 사용하여 코드를 빌드하고 테
 
 * 빌드 환경은 Linux 기반이며, Ubuntu 22.04에서 파생되었습니다.
 * Apache Maven 3.8.8이 설치되어 있습니다.
+   * Adobe은 사용자를 권장합니다. [http 대신 HTTPS를 사용하도록 Maven 저장소를 업데이트합니다.](#https-maven)
 * 설치된 Java 버전은 Oracle JDK 8u371 및 Oracle JDK 11.0.20입니다.
 * 기본적으로 `JAVA_HOME` 환경 변수가 로 설정되어 있습니다 `/usr/lib/jvm/jdk1.8.0_371` oracle JDK 8u371을 포함합니다. 다음을 참조하십시오. [대체 Maven 실행 JDK 버전](#alternate-maven-jdk-version) 섹션에 자세히 설명되어 있습니다.
 * 필요한 몇 가지 추가 시스템 패키지가 설치되어 있습니다.
@@ -40,6 +41,14 @@ Cloud Manager는 특수 빌드 환경을 사용하여 코드를 빌드하고 테
 >[!NOTE]
 >
 >Cloud Manager에서는 `jacoco-maven-plugin`의 특정 버전을 정의하지는 않지만 사용되는 버전은 `0.7.5.201505241946` 이상이어야 합니다.
+
+## HTTPS Maven 저장소 {#https-maven}
+
+Cloud Manager [릴리스 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) maven 3.8.8에 대한 업데이트가 포함된 빌드 환경에 대한 롤링 업데이트(릴리스 2023.12.0으로 완료)가 시작되었습니다. Maven 3.8.1에 도입된 중요한 변화는 잠재적인 취약성을 완화하기 위한 보안 개선이었습니다. 특히 Maven은 이제 모든 비보안 기능을 비활성화합니다 `http://*` 다음에 요약된 대로 기본적으로 미러 [Maven 릴리스 노트](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+
+이러한 보안 향상으로 인해 일부 사용자는 빌드 단계 동안, 특히 비보안 HTTP 연결을 사용하는 Maven 저장소에서 아티팩트를 다운로드할 때 문제가 발생할 수 있습니다.
+
+업데이트된 버전에 대한 원활한 경험을 보장하기 위해, Adobe은 사용자가 HTTP 대신 HTTPS를 사용하도록 Maven 저장소를 업데이트할 것을 권장합니다. 이러한 조정은 보안 통신 프로토콜로 전환되는 업계의 추세와 일치하며 안전하고 안정적인 빌드 프로세스를 유지하는 데 도움이 됩니다.
 
 ### 특정 Java 버전 사용 {#using-java-support}
 
