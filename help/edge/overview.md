@@ -6,7 +6,7 @@ exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 source-git-commit: 9d26a4835dc331f2ff8b741a4c14847ead611874
 workflow-type: tm+mt
 source-wordcount: '838'
-ht-degree: 48%
+ht-degree: 50%
 
 ---
 
@@ -51,7 +51,7 @@ Edge Delivery Services 사용을 쉽게 시작할 수 있습니다. 다음을 �
 
 ## Adobe에서 도움 받기 {#adobe-gethelp}
 
-프로비저닝된 제품 협업 채널(액세스 세부 정보는 아래 참조)을 통해 Adobe 제품 팀과 협력하여 제품 사용 또는 모범 사례에 대한 질문에 답변할 수 있습니다. 제품 공동 작업 채널을 통한 대화와 연결된 SLT(서비스 수준 목표)가 없습니다. 제품 문제에 추가 조사 및 문제 해결이 필요하고 응답 SLT를 충족해야 하는 경우 다음 사항에 따라 지원 티켓을 제출할 수 있습니다. [지원 프로세스입니다.](https://experienceleague.adobe.com/?support-tab=home#support)
+프로비저닝된 제품 협업 채널(액세스 세부 정보는 아래 참조)을 통해 Adobe 제품 팀과 협력하여 제품 사용 또는 모범 사례에 대한 질문에 답변할 수 있습니다. 서비스 수준 목표(SLTs)는 제품 협업 채널을 통해 대화와 연결되지 않습니다. 제품 문제에 추가 조사 및 문제 해결이 필요하고 응답 SLT를 충족해야 하는 경우 다음 사항에 따라 지원 티켓을 제출할 수 있습니다. [지원 프로세스입니다.](https://experienceleague.adobe.com/?support-tab=home#support)
 
 Adobe에서는 Edge Delivery Services에 도움이 되는 세 가지 채널을 제공합니다.
 
