@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.12.0 �
 description: AEM as a Cloud Service의 Cloud Manager 2023.12.0 릴리스 정보입니다.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 71ce915413cd968a78a33b7a52d02e09841e1707
+source-git-commit: c0fc4b2ced046a1e975aca99463cdfa03462f2f4
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '784'
 ht-degree: 53%
 
 ---
@@ -32,8 +32,8 @@ AEM Cloud Manager 릴리스 2023.12.0의 as a Cloud Service 릴리스 날짜는 
 * 새로 생성된 Cloud Manager 프로그램의 경우 [연결된 New Relic 하위 계정](/help/implementing/cloud-manager/user-access-new-relic.md) 은 기본적으로 활성화되지 않습니다.
    * New Relic 하위 계정에 90일 이상 액세스하지 않은 기존 프로그램의 경우 비활성화됩니다.
    * New Relic 하위 계정을 사용하려면 Cloud Manager를 통해 옵트인해야 합니다.
-* Java 8 및 11용 부 버전 롤아웃 및 Maven 업데이트 [Cloud Manager의 10월 릴리스에서 발표 및 시작](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) 완료되었습니다.
-   * 프론트엔드 및 전체 스택 파이프라인에 대해 노드 18에 대한 지원이 추가되었습니다.
+* 에 대한 업데이트 롤아웃 [빌드 환경](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 다음 작업: [Cloud Manager의 10월 릴리스에서 발표 및 시작](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) 완료되었습니다.
+   * 에 대해 노드 18에 대한 지원이 추가되었습니다. [프론트엔드 및 전체 스택 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
    * Java 8 부 버전이 다음으로 업데이트되었습니다. `jdk1.8.0_371`.
    * Java 11 부 버전이 (으)로 업데이트되었습니다. `jdk-11.0.20`.
    * Maven이 3.8.8로 업데이트되었습니다.
