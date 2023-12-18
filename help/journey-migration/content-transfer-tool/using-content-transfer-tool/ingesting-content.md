@@ -2,10 +2,10 @@
 title: 클라우드 서비스에 콘텐츠 수집
 description: Cloud Acceleration Manager 를 사용하여 마이그레이션 세트의 컨텐츠를 대상 Cloud Service 인스턴스로 수집하는 방법을 알아봅니다.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: b674b3d8cd89675ed30c1611edec2281f0f1cb05
+source-git-commit: 4c8565d60ddcd9d0675822f37e77e70dd42c0c36
 workflow-type: tm+mt
-source-wordcount: '2392'
-ht-degree: 4%
+source-wordcount: '2407'
+ht-degree: 5%
 
 ---
 
@@ -78,7 +78,7 @@ Cloud Acceleration Manager를 사용하여 마이그레이션 세트를 수집�
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="추가 수집"
->abstract="이전 컨텐츠 전송 활동 이후 수정된 컨텐츠를 이동하려면 추가 기능을 사용합니다. 수집이 완료되면 로그에서 오류 또는 경고를 확인하십시오. 모든 오류는 보고된 문제를 처리하거나 Adobe 고객 지원 센터에 문의하여 즉시 해결해야 합니다."
+>abstract="추가 기능을 사용하여 이전 콘텐츠 전송 활동 이후 수정된 콘텐츠를 이동합니다. 수집이 완료되면 로그에서 오류 또는 경고를 확인하십시오. 모든 오류는 보고된 문제를 처리하거나 Adobe 고객 지원 센터에 문의하여 즉시 해결해야 합니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=ko-KR" text="로그 보기"
 
 컨텐츠 전송 도구에는 다음을 수행하여 차등 컨텐츠를 추출할 수 있는 기능이 있습니다. *추가* 마이그레이션 세트. 이렇게 하면 모든 콘텐츠를 다시 추출할 필요 없이 이전 추출 후 변경된 콘텐츠만 포함하도록 마이그레이션 세트를 수정할 수 있습니다.
@@ -159,9 +159,11 @@ Cloud Acceleration Manager를 사용하여 마이그레이션 세트를 수집�
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: 고유성 제약 조건이 속성을 위반했습니다 [jcr:uuid] 값 a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
 
-AEM의 각 노드에는 고유한 UUID가 있어야 합니다. 이 오류는 수집되는 노드가 대상 인스턴스의 다른 경로에 있는 노드와 동일한 uuid를 가지고 있음을 나타냅니다.
-이 상황은 노드가 소스에서 추출과 후속 추출 사이에서 이동되면 발생할 수 있습니다 [추가 추출](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
-대상의 노드가 수집과 후속 추가 수집 사이에서 이동된 경우에도 이 문제가 발생할 수 있습니다.
+AEM의 각 노드에는 고유한 UUID가 있어야 합니다. 이 오류는 수집되는 노드의 UUID가 대상 인스턴스의 다른 경로에 있는 노드의 UUID와 동일함을 나타냅니다. 이러한 상황은 다음 두 가지 이유로 발생할 수 있습니다.
+
+* 노드는 소스에서 추출과 후속 추출 사이에서 이동됩니다 [추가 추출](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)
+   * _기억_: 추가 추출의 경우, 노드가 소스에 더 이상 존재하지 않더라도 마이그레이션 세트에 계속 존재합니다.
+* 대상의 노드가 수집과 후속 추가 수집 사이에서 이동됩니다.
 
 이 충돌은 수동으로 해결해야 합니다. 콘텐츠에 익숙한 사용자는 두 노드 중 삭제할 노드를 참조하는 다른 콘텐츠를 염두에 두고 결정해야 합니다. 해결책은 불쾌한 노드 없이 다시 추가 추출이 수행될 것을 요구할 수 있다.
 
