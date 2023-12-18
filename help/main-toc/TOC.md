@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 27542d5436732aea1ac0e2b331dc7f172a16f2af
+source-git-commit: 7734a0f476d6f5a4e8f15ee3c0e6a9d89797b2b9
 workflow-type: tm+mt
-source-wordcount: '4555'
+source-wordcount: '4557'
 ht-degree: 97%
 
 ---
@@ -919,6 +919,7 @@ ht-degree: 97%
       + [사용자 정의 권한](/help/implementing/cloud-manager/custom-permissions.md)
       + [SLA 보고](/help/implementing/cloud-manager/sla-reporting.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
+      + [Dynatrace OneAgent](/help/implementing/cloud-manager/dynatrace-oneagent.md)
       + [알림](/help/implementing/cloud-manager/notifications.md)
       + SSL 인증서 {#manage-ssl-certificates}
          + [소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
