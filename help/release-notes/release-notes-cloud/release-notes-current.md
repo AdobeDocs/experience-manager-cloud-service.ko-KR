@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: a5121436b2e48302fcf14478764aede1495e089c
+source-git-commit: 17903c6e44afd1742d21b7fc7dbe4d7c63fe8b6b
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 71%
+source-wordcount: '828'
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 71%
 
 ## 릴리스 일자 {#release-date}
 
-의 릴리스 날짜 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 기능 릴리스(2023.12.0)는 2023년 12월 14일입니다. 다음 기능 릴리스(2024.1.0)는 2023년 1월 25일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 기능 릴리스(2023.12.0)의 릴리스 일자는 2023년 12월 14일입니다. 다음 기능 릴리스(2024.1.0)는 2023년 1월 25일에 예정되어 있습니다.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
@@ -46,20 +46,28 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ### 얼리 어답터 프로그램 {#sites-early-adopter}
 
-**다음을 활용할 수 있습니다. [RUM(Real User Monitoring) 데이터 서비스](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** 클라이언트측 컬렉션을 AEM as a Cloud Service으로 활성화하려면
+**[실제 사용자 모니터링(RUM) 데이터 서비스](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**&#x200B;를 활용하여 AEM as a Cloud Service에 대한 클라이언트측 컬렉션을 활성화할 수 있습니다.
 
-RUM(Real User Monitoring) 데이터 서비스는 사용자 상호 작용을 보다 정확하게 반영하여 웹 사이트 참여를 안정적으로 측정합니다. 페이지 성능에 대한 고급 통찰력을 얻을 수 있는 좋은 기회입니다. 이는 Adobe 관리 CDN 또는 Adobe 비관리 CDN을 사용하는 고객에게 유용합니다. 또한 비 Adobe 관리 CDN을 사용하는 고객의 경우 이제 자동화된 트래픽 보고를 사용할 수 있으므로 트래픽 보고서를 Adobe과 공유할 필요가 없습니다.
+실제 사용자 모니터링(RUM) 데이터 서비스는 사용자 상호 작용을 보다 정확하게 반영하여 웹 사이트 참여에 대한 안정적인 측정을 보장합니다. 이를 통해 페이지 성능에 대한 고급 인사이트를 얻을 수 있습니다. 이는 Adobe가 관리하는 CDN 또는 Adobe가 관리하지 않는 CDN을 사용하는 고객 모두에게 유용합니다. 또한 Adobe가 관리하지 않는 CDN을 사용하는 고객의 경우 이제 자동화된 트래픽 보고를 활성화할 수 있으므로 트래픽 보고서를 Adobe와 공유할 필요가 없습니다.
 
-이 새로운 기능을 테스트하고 피드백을 공유하려면 (으)로 이메일을 보내십시오. `aemcs-rum-adopter@adobe.com`, Adobe ID과 연결된 이메일 주소에서 프로덕션, 스테이징 및 개발 환경의 도메인 이름과 함께 그런 다음 Adobe의 제품 팀이 RUM(Real User Monitoring) 데이터 서비스를 활성화합니다.
+이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소를 통해 프로덕션, 단계 및 개발 환경에 대한 도메인 이름과 함께 `aemcs-rum-adopter@adobe.com`으로 이메일을 보내 주십시오. 그러면 Adobe 제품 팀에서 실제 사용자 모니터링(RUM) 데이터 서비스를 활성화합니다.
 
-
-<!--
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New Features in Admin View {#admin-view-features}
+### 자산 보기의 새로운 기능 {#assets-view-features}
 
+**Adobe Firefly으로 GenAI 이미지 만들기**
 
+Adobe Firefly 텍스트-이미지 간 기능의 통합으로 검색 쿼리를 기반으로 새 이미지를 만듭니다(Adobe Firefly 라이선스 필요).
+
+![에셋 Firefly 통합](/help/assets/assets/assets-firefly-integration.png)
+
+**유사한 이미지 찾기**
+
+이제 Experience Manager Assets 저장소에서 이미지를 선택하고 유사한 이미지를 보고 컨텐츠를 쉽게 찾을 수 있습니다.
+
+<!--
 
 * **Smart tags blocklist**: Experience Manager Assets now enables you to define a list of blocked tags. These tags are automatically removed from the auto-generated smart tags when you upload assets to the repository. This capability performs tags governance and saves a lot of time as you can add a tag to the block list and AEM Assets automatically excludes it from the list of tags for any of the assets that are added to the repository.
 
@@ -72,7 +80,7 @@ RUM(Real User Monitoring) 데이터 서비스는 사용자 상호 작용을 보�
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### 의 새로운 기능 [!DNL Experience Manager Forms] {#forms-features}
+### 의 새로운 기능[!DNL Experience Manager Forms] {#forms-features}
 
 * **[Microsoft® SharePoint 목록을 사용하여 적응형 양식 연결](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: AEM Forms는 양식 데이터를 SharePoint 목록에 직접 제출하는 OOTB 통합을 제공하므로, SharePoint의 목록 기능을 사용할 수 있습니다. Microsoft SharePoint List를 양식 데이터 모델의 데이터 소스로 구성하고 **양식 데이터 모델을 사용하여 제출** 제출 작업을 사용하여 적응형 양식을 SharePoint 목록과 연결할 수 있습니다.
 
@@ -98,7 +106,7 @@ RUM(Real User Monitoring) 데이터 서비스는 사용자 상호 작용을 보�
 
 ### CDN 구성 얼리 어답터 프로그램 {#cdn-config-early-adopter}
 
-최근에 릴리스된 외에도 [트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md)선택적 라이센스 가능한 WAF(Web Application Firewall) 규칙이 포함된 를 사용하면 구성 파이프라인을 사용하여 다른 유형의 CDN 구성을 선언하고 배포할 수 있습니다. 다음을 포함한 사용 사례에 대해 의견을 들려 주시기 바랍니다.
+선택적으로 라이선스를 부여할 수 있는 WAF(웹 애플리케이션 방화벽) 규칙을 포함하는 최근 릴리스된 [트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 외에도 구성 파이프라인을 사용하여 다른 유형의 CDN 구성을 선언하고 배포할 수 있습니다. 다음을 포함한 사용 사례에 대해 의견을 들려 주시기 바랍니다.
 * 301/302 클라이언트측 리디렉션
 * 에지의 요청을 임의의 출처로 프록시 처리
 * URL 변환
