@@ -5,16 +5,16 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: e2d79742c2097748d736bc4d2d2046711d978fc5
 workflow-type: tm+mt
-source-wordcount: '3217'
-ht-degree: 15%
+source-wordcount: '3166'
+ht-degree: 13%
 
 ---
 
 # 페이지에 Dynamic Media 에셋 추가{#adding-dynamic-media-assets-to-pages}
 
-웹 사이트에서 사용하는 자산에 Dynamic Media 기능을 추가하기 위해 **Dynamic Media**, **대화형 미디어**, **파노라마 미디어**, 또는 **Video 360 Media** 구성 요소를 페이지에서 바로 사용할 수 있습니다. 레이아웃 모드로 전환하고 Dynamic Media 구성 요소를 활성화합니다. Then you add these components to the page and add assets to the component. The Dynamic Media components are smart - they know whether you are adding an image or a video and the configuration options available change accordingly.
+웹 사이트에서 사용하는 자산에 Dynamic Media 기능을 추가하기 위해 **Dynamic Media**, **대화형 미디어**, **파노라마 미디어**, 또는 **Video 360 Media** 구성 요소를 페이지에서 바로 사용할 수 있습니다. 레이아웃 모드로 전환하고 Dynamic Media 구성 요소를 활성화합니다. 그런 다음 이러한 구성 요소를 페이지에 추가하고 에셋을 구성 요소에 추가합니다. The Dynamic Media components are smart - they know whether you are adding an image or a video and the configuration options available change accordingly.
 
 을 사용하는 경우 Dynamic Media 에셋을 페이지에 바로 추가합니다 [!DNL Adobe Experience Manager] 을 WCM으로 설정합니다. If you are using a third-party for your WCM, either [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) or [embed](/help/assets/dynamic-media/embed-code.md) your assets. 응답형 타사 웹 사이트의 경우 다음을 참조하십시오. [응답형 사이트에 최적화된 이미지 제공](/help/assets/dynamic-media/responsive-site.md).
 
@@ -125,13 +125,13 @@ Dynamic Media 구성 요소는 편리합니다. 이미지를 추가하든 비디
 >
 >그러나 페이지 내에서 동일한 유형의 자산을 사용하는 모든 Dynamic Media 구성 요소에 대해 동일한 뷰어 사전 설정을 사용할 수 있습니다.
 
-Dynamic Media 구성 요소를 추가하고 **[!UICONTROL Dynamic Media 설정]**&#x200B;이 비어 있거나 자산을 제대로 추가할 수 없는 경우, 다음을 확인하십시오.
+Dynamic Media 구성 요소를 추가할 때 **[!UICONTROL Dynamic Media 설정]** 이(가) 비어 있거나 자산을 제대로 추가할 수 없습니다. 다음을 확인하십시오.
 
 * 이미지에 피라미드형 tiff 파일이 있습니다. Dynamic Media을 활성화하기 전에 가져온 이미지에는 피라미드형 tiff 파일이 없습니다.
 
 #### 이미지 작업 시 {#when-working-with-images}
 
-Dynamic Media 구성 요소를 사용하면 이미지 세트, 스핀 세트 및 혼합 미디어 세트를 포함한 다이내믹 이미지를 추가할 수 있습니다. 확대하거나 축소할 수 있고, 해당하는 경우 스핀 세트 내의 이미지를 회전하거나 다른 유형의 세트에서 이미지를 선택할 수 있습니다.
+Dynamic Media 구성 요소를 사용하여 이미지 세트, 스핀 세트 및 혼합 미디어 세트를 포함한 다이내믹 이미지를 추가할 수 있습니다. 확대하거나 축소할 수 있고, 해당하는 경우 스핀 세트 내의 이미지를 회전하거나 다른 유형의 세트에서 이미지를 선택할 수 있습니다.
 
 구성 요소에서 바로 뷰어 사전 설정, 이미지 사전 설정 또는 이미지 형식을 구성할 수도 있습니다. 이미지가 반응하도록 하려면 중단점을 설정하거나 반응형 이미지 사전 설정을 적용할 수 있습니다.
 
@@ -190,7 +190,7 @@ Dynamic Media 구성 요소를 사용하면 이미지 세트, 스핀 세트 및 
 
 #### 비디오 작업 시 {#when-working-with-video}
 
-Dynamic Media 구성 요소를 사용하여 웹 페이지에 다이내믹 비디오를 추가하십시오. 구성 요소를 편집할 때 페이지에서 비디오를 재생하기 위해 사전 정의된 비디오 뷰어 사전 설정을 사용하도록 선택할 수 있습니다.
+Dynamic Media 구성 요소를 사용하여 웹 페이지에 동적 비디오를 추가하십시오. 구성 요소를 편집할 때 페이지에서 비디오를 재생하기 위해 사전 정의된 비디오 뷰어 사전 설정을 사용하도록 선택할 수 있습니다.
 
 ![chlimage_1-173](assets/chlimage_1-540.png)
 
@@ -334,7 +334,7 @@ Both the aspect ratio and keyword criteria apply to panoramic assets for the ass
 
 ### 구성 요소: Video 360 Media {#video-media-component}
 
-사용 **[!UICONTROL Video 360 Media]** 웹 페이지에서 등각 사각형 비디오를 렌더링할 구성 요소입니다. 그렇게 함으로써 방, 재산, 위치, 풍경, 또는 의료 절차에 대한 몰입적인 시청 경험이 보장된다.
+사용 **[!UICONTROL Video 360 Media]** 웹 페이지에서 등각 사각형 비디오를 렌더링할 구성 요소입니다. 그렇게 함으로써 방, 재산, 위치, 풍경, 또는 의료 절차에 대한 몰입형 시청 경험이 보장된다.
 
 평면 디스플레이에서 재생하는 동안 사용자는 시야각을 제어할 수 있습니다. 모바일 장치에서 재생하는 경우 일반적으로 내장된 자이로스코프 컨트롤을 사용합니다.
 
