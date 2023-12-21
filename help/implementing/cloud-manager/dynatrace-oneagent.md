@@ -1,9 +1,9 @@
 ---
 title: Dynatrace OneAgent
 description: Dynatrace의 OneAgent를 AEM과 함께 as a Cloud Service으로 사용하는 방법에 대해 알아봅니다.
-source-git-commit: 2e70c8be73915bea860b98e02c08772bb4f5dcd2
+source-git-commit: 9379e6a1ec323ff4f05e994e9265da1363b4a3df
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,11 @@ Dynatrace OneAgent 고객은 고객 지원 티켓을 통해 연결을 요청하�
 
 | **필드** | **설명** |
 |---|---|
-| Dynatrace 환경 URL | Dynatrace 환경 URL.<br><br>Dynatrace SaaS 고객의 경우 형식은 다음과 같습니다. `https://<environment>.live.dynatrace.com`.<br><br>Dynatrace Managed 고객의 경우 형식은 다음과 같습니다 `https://<your-managed-url>/e/<environmentId>` |
+| Dynatrace 환경 URL | Dynatrace 환경 URL.<br><br>Dynatrace SaaS 고객의 경우 형식은 다음과 같습니다. `https://<you-environment-id>.live.dynatrace.com`.<br><br>Dynatrace Managed 고객의 경우 형식은 다음과 같습니다 `https://<your-managed-url>/e/<environmentId>` |
 | Dynatrace 환경 ID | 환경 URL에서 찾을 수 있는 Dynatrace 환경 ID |
 | Dynatrace 환경 토큰 | OneAgent 환경 토큰입니다. 이 항목을 만드는 방법은 Dynatrace 설명서 를 참조하십시오.<br><br>이는 비밀로 간주되어야 하므로 적절한 보안 방법을 사용하십시오. 예를 들어 암호는 와 같은 웹 사이트에서 보호합니다. **zerobin.net**&#x200B;고객 지원 티켓에서 암호와 함께 참조할 수 있는 입니다. |
 | Dynatrace API 액세스 토큰 | Dynatrace 환경의 API 액세스 토큰입니다. 이 항목을 만드는 방법은 Dynatrace 설명서 를 참조하십시오.<br><br>이는 비밀로 간주되어야 하므로 적절한 보안 방법을 사용하십시오. 예를 들어 암호는 와 같은 웹 사이트에서 보호합니다. **zerobin.net**&#x200B;고객 지원 티켓에서 암호와 함께 참조할 수 있는 입니다.<br><br>참고: 이는 Dynatrace Managed에만 필요합니다. |
-| Dynatrace 대상 포트 | Dynatrace 대상 포트입니다.<br><br>참고: 이는 Dynatrace Managed에만 필요합니다. |
+| Dynatrace ActiveGate 포트 | OneAgent가 연결해야 하는 DynamicRace ActiveGate 포트입니다.<br><br>참고: 이는 Dynatrace Managed에만 필요합니다. |
 | AEM 환경 ID | 모니터링할 AEM 환경 ID. |
 
 
