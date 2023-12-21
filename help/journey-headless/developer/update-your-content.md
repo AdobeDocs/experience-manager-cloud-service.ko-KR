@@ -3,9 +3,9 @@ title: AEM Assets API를 통해 콘텐츠를 업데이트하는 방법
 description: 이 AEM Headless 개발자 여정의 부분에서는 REST API를 통해 콘텐츠 조각의 콘텐츠에 액세스하고 업데이트하는 방법을 대해 알아봅니다.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 source-git-commit: 31b0eecd01ee319aaf700505293530fec129b00f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1061'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -321,7 +321,7 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 
 ## 추가 리소스 {#additional-resources}
 
-* [ADOBE EXPERIENCE MANAGER AS A CLOUD SERVICE API](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
+* [Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 * [콘텐츠 조각 REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [API 참조](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
