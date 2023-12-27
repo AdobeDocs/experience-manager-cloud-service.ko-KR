@@ -2,9 +2,9 @@
 title: Universal Editor를 사용하는 로컬 AEM 개발
 description: Universal Editor가 개발 목적으로 로컬 AEM 인스턴스 편집을 지원하는 방법에 대해 알아봅니다.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 0546f3cee8df3d7134021e32670b40030d56cd84
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '576'
 ht-degree: 92%
 
 ---
@@ -88,8 +88,8 @@ Universal Editor는 페이지 구성 방식에 따라 페이지를 편집하는 
 
 로컬 Universal Editor Service를 사용하여 페이지를 편집하려면 다음 메타 태그를 설정해야 합니다.
 
-```
-<meta name="urn:adobe:aem:editor:endpoint" content="https://localhost:8000">
+```html
+<meta name="urn:adobe:aue:config:service" content="https://localhost:8000">
 ```
 
 설정되면 모든 콘텐츠 업데이트 호출이 기본 Universal Editor Service 대신 `https://localhost:8000`으로 이동하는 것을 확인할 수 있습니다.
