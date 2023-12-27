@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 4c8565d60ddcd9d0675822f37e77e70dd42c0c36
 workflow-type: tm+mt
 source-wordcount: '2407'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -97,7 +97,7 @@ Cloud Acceleration Manager를 사용하여 마이그레이션 세트를 수집�
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="콘텐츠 수집 문제 해결"
->abstract="수집 로그 및 설명서를 참조하여 수집이 실패할 수 있는 일반적인 이유에 대한 해결책을 찾고 문제를 해결하는 방법을 알아보십시오. 수정되면 수집을 다시 실행할 수 있습니다."
+>abstract="수집 로그 및 설명서를 참조하여 수집이 실패할 수 있는 일반적인 이유에 대한 솔루션을 찾고 문제를 해결하는 방법을 찾으십시오. 문제가 해결되면 수집을 다시 실행할 수 있습니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html" text="콘텐츠 전송 확인"
 
 ### CAM에서 마이그레이션 토큰을 검색할 수 없음 {#cam-unable-to-retrieve-the-migration-token}
