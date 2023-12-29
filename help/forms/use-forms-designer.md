@@ -1,10 +1,10 @@
 ---
 title: Forms Designer를 사용하여 기록 문서(DoR) 템플릿 및 양식 조각을 만들려면 어떻게 해야 합니까?
 description: 사용 [!DNL AEM Forms] 기록 문서 템플릿 및 양식 조각을 만드는 디자이너입니다.
-exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+feature: Forms Designer
+source-git-commit: b2769134c2e744f41cbb7e8a3cf08c622cdc07ca
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '123'
 ht-degree: 0%
 
 ---
