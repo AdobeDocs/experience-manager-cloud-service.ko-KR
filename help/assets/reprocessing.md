@@ -2,10 +2,10 @@
 title: 디지털 자산 재처리
 description: 디지털 에셋을 재처리하는 다양한 방법에 대해 알아봅니다
 contentOwner: KK
-source-git-commit: 3fb72e0768c44506b0f20f99a48cea837d722387
+source-git-commit: cb8eb56d07163f46aec252c70a3ec3b0273d97cf
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 1%
+source-wordcount: '685'
+ht-degree: 0%
 
 ---
 
@@ -33,21 +33,21 @@ ht-degree: 1%
 
    ![자산 옵션 재처리](assets/reprocessing-assets-options.png)
 
-* **[!UICONTROL 전체 프로세스]:** 기본 프로필, 사용자 지정 프로필, 동적 처리(구성된 경우) 및 사후 처리 워크플로를 포함한 전체 프로세스를 실행하려면 이 옵션을 선택합니다.
-* **[!UICONTROL 고급]:** 고급 재처리를 선택하려면 이 옵션을 선택하십시오.
+   * **[!UICONTROL 전체 프로세스]:** 기본 프로필, 사용자 지정 프로필, 동적 처리(구성된 경우) 및 사후 처리 워크플로를 포함한 전체 프로세스를 실행하려면 이 옵션을 선택합니다.
+   * **[!UICONTROL 고급]:** 고급 재처리를 선택하려면 이 옵션을 선택하십시오.
 
-  ![고급 자산 재처리 옵션](assets/reprocessing-assets-options-advanced.png)
+     ![고급 자산 재처리 옵션](assets/reprocessing-assets-options-advanced.png)
 
-다음 고급 옵션 중에서 선택합니다.
+     다음 고급 옵션 중에서 선택합니다.
 
-* **[!UICONTROL 기본 미리 보기 변환]:** 기본적으로 미리 본 렌디션을 재처리하려면 이 옵션을 선택합니다.
+      * **[!UICONTROL 기본 미리 보기 변환]:** 기본적으로 미리 본 렌디션을 재처리하려면 이 옵션을 선택합니다.
 
-* **[!UICONTROL 메타데이터]:** 선택한 에셋에 대한 메타데이터 정보 및 스마트 태그를 추출하려는 경우 이 옵션을 선택합니다.
+      * **[!UICONTROL 메타데이터]:** 선택한 에셋에 대한 메타데이터 정보 및 스마트 태그를 추출하려는 경우 이 옵션을 선택합니다.
 
-* **[!UICONTROL 처리 프로필]:** 선택한 프로파일을 재처리하려면 이 옵션을 선택합니다. 다음을 선택할 수 있습니다. **[!UICONTROL 전체 프로세스]** 폴더 수준에서 할당된 기본 처리 및 사용자 지정 프로필을 포함하는 옵션입니다.
-  <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
+      * **[!UICONTROL 처리 프로필]:** 선택한 프로파일을 재처리하려면 이 옵션을 선택합니다. 다음을 선택할 수 있습니다. **[!UICONTROL 전체 프로세스]** 폴더 수준에서 할당된 기본 처리 및 사용자 지정 프로필을 포함하는 옵션입니다.
+        <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
 
-* **[!UICONTROL 사후 처리 워크플로]:** 처리 프로필을 사용하여 달성할 수 없는 에셋에 대한 추가 처리가 필요한 경우 이 옵션을 선택합니다. 추가적인 사후 처리 워크플로우를 구성에 추가할 수 있습니다. 후 처리를 사용하면 에셋 마이크로서비스를 사용하여 구성 가능한 처리 위에 완전히 맞춤화된 처리를 추가할 수 있습니다.
+      * **[!UICONTROL 사후 처리 워크플로]:** 처리 프로필을 사용하여 달성할 수 없는 에셋에 대한 추가 처리가 필요한 경우 이 옵션을 선택합니다. 추가적인 사후 처리 워크플로우를 구성에 추가할 수 있습니다. 후 처리를 사용하면 에셋 마이크로서비스를 사용하여 구성 가능한 처리 위에 완전히 맞춤화된 처리를 추가할 수 있습니다.
 
 다음을 참조하십시오 [자산 마이크로서비스 및 처리 프로필 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en) 처리 프로필 및 사후 처리 워크플로우에 대해 자세히 알아봅니다.
 
@@ -71,7 +71,7 @@ ht-degree: 1%
 
 ### 스마트 자르기 {#reprocessing-smart-crop}
 
-자세한 내용 [Dynamic Media 스마트 자르기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=ko) 특정 자르기(**[!UICONTROL 스마트 자르기]** 업로드한 에셋에 대한 구성(및 픽셀 자르기)과 선명하게 하기.
+자세한 내용 [Dynamic Media 스마트 자르기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en) 특정 자르기(**[!UICONTROL 스마트 자르기]** 업로드한 에셋에 대한 구성(및 픽셀 자르기)과 선명하게 하기.
 
 ### 메타데이터 {#reprocessing-metadata}
 
