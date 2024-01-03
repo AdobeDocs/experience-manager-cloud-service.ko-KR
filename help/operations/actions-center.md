@@ -2,10 +2,10 @@
 title: 액션 센터
 description: 문제 및 기타 중요한 정보에 대해 편리하게 조치를 취할 수 있도록 조치 센터 활용
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: dca00a8913fb8fd159a69675b8f4ffa67441faa4
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 83%
+source-wordcount: '734'
+ht-degree: 78%
 
 ---
 
@@ -63,14 +63,14 @@ AEM as a Cloud Service에는 여러 유형의 알림이 있지만 아래 그림�
 |---|---|---|---|
 | 운영 인시던트 | 즉각적인 조치가 필요한 중대 인시던트 | “인시던트 알림 - Cloud Service” 제품 프로필에 할당된 사용자 | X |
 | 사전 알림 추천 | 계획을 수립해야 하는 최적화 | “사전 알림 - Cloud Service” 제품 프로필에 할당된 사용자 | X |
-| Cloud Manager 파이프라인 상태 | 파이프라인 상태에 대한 정보 | 비즈니스 소유자 역할, 프로그램 관리자 역할 또는 배포 관리자 역할이 주어진 사용자, [Experience Cloud 환경 설정](https://experience.adobe.com/preferences)에서 선택한 “기타” 확인란, [여기에 설명된](/help/implementing/cloud-manager/notifications.md) 바와 같이. |   |
+| Cloud Manager 파이프라인 상태 | 파이프라인 상태에 대한 정보 | 비즈니스 소유자, 프로그램 관리자 또는 배포 관리자 역할을 가진 사용자가에서 &quot;기타&quot; 확인란이 선택됨 [Experience Cloud 환경 설정](https://experience.adobe.com/preferences), 로서의 [여기에 설명됨](/help/implementing/cloud-manager/notifications.md). |   |
 
 ## 지원되는 알림 유형 {#supported-notification-types}
 
 다음 표는 액션 센터에서 현재 지원되는 알림 유형 목록입니다. 알림은 현재 프로덕션 환경으로 제한됩니다.
 
 | 알림 유형 | 관련 제품 프로필 | 수정 조치 |
-|---|---|---|
+|---------------------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 차단된 복제 대기열 | 인시던트 | [복제 문서](/help/operations/replication.md#troubleshooting)의 지침에 따라 대기열 차단을 해제합니다. |
+| 잘못된 지속 GraphQL 쿼리 | 인시던트 | 를 참조하여 잘못된 GraphQL 쿼리를 수정합니다. [지속 GraphQL 쿼리 문제 해결 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html?lang=en) |
 | 만료되는 S2S 인증서 | 사전 알림 | [서버측 API용 액세스 토큰 생성 문서](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)에서 자격 증명을 새로 고치는 방법에 대해 알아보십시오. |
-
