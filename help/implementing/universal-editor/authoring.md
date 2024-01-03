@@ -2,10 +2,10 @@
 title: Universal Editor로 콘텐츠 작성
 description: 콘텐츠 작성자가 Universal Editor를 사용하여 얼마나 쉽고 직관적으로 콘텐츠를 만들 수 있는지 알아봅니다.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: e33cdaf9147fc0276920fad974984d5703dba530
 workflow-type: tm+mt
-source-wordcount: '2387'
-ht-degree: 55%
+source-wordcount: '2179'
+ht-degree: 57%
 
 ---
 
@@ -44,11 +44,10 @@ Universal Editor로 앱의 콘텐츠를 작성하려면 개발자가 앱을 계�
 
 ## UI 이해 {#ui}
 
-UI는 크게 다섯 가지 영역으로 나뉩니다.
+UI는 이러한 기본 영역으로 나뉩니다.
 
 * [Experience Cloud 헤더](#experience-cloud-header)
-* [Universal Editor 헤더](#universal-editor-header)
-* [모드 레일](#mode-rail)
+* [범용 편집기 도구 모음](#universal-editor-toolbar)
 * [편집기](#editor)
 * [속성 레일](#properties-rail)
 
@@ -96,11 +95,11 @@ Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Clou
 
 ![사용자 속성](assets/user-properties.png)
 
-### Universal Editor 헤더 {#universal-editor-header}
+### 범용 편집기 도구 모음 {#universal-editor-toolbar}
 
-Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바로 아래에 있습니다.](#experience-cloud-header) 현재 페이지를 게시하고 편집할 다른 페이지에 바로 갈 수 있습니다.
+범용 편집기 도구 모음은 항상 아래 화면 상단에 있습니다 [Experience Cloud 헤더입니다.](#experience-cloud-header) 현재 페이지를 게시하고 편집할 다른 페이지에 바로 갈 수 있습니다.
 
-![Universal Editor 헤더](assets/universal-editor-header.png)
+![범용 편집기 도구 모음](assets/universal-editor-toolbar.png)
 
 #### 홈 버튼 {#home-button}
 
@@ -132,7 +131,7 @@ Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바�
 
 #### 인증 헤더 설정 {#authentication-settings}
 
-인증 암호를 설정해야 하는 경우 인증 헤더 설정 아이콘을 선택합니다.
+필요한 경우 인증 헤더 설정 아이콘 선택 [로컬 개발을 위해 사용자 지정 인증 헤더를 설정합니다.](/help/implementing/universal-editor/developer-overview.md#auth-header)
 
 ![인증 헤더 설정 단추](assets/authentication-header-settings.png)
 
@@ -154,6 +153,16 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 * 폭과 높이 정의
 * 방향 변경
 
+#### 미리보기 모드 {#preview-mode}
+
+미리보기 모드의 페이지는 게시된 서비스에 표시되는 것처럼 편집기에서 렌더링된 페이지입니다. 이렇게 하면 콘텐츠 작성자는 링크 등을 클릭하여 콘텐츠를 탐색할 수 있습니다.
+
+![미리보기 모드](assets/preview-mode.png)
+
+>[!TIP]
+>
+>단축키 사용 `P` 을 클릭하여 미리 보기 모드에서 또는 미리 보기 모드로 전환합니다.
+
 #### 앱 미리보기 열기 {#open-app-preview}
 
 앱 미리 보기 열기 아이콘을 선택하여 편집기에서 벗어난 자체 브라우저 탭에서 현재 편집 중인 페이지를 열고 콘텐츠를 미리 봅니다.
@@ -174,47 +183,13 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 >
 >문서 보기 [유니버설 편집기로 콘텐츠 게시](publishing.md) 유니버설 편집기로 게시에 대한 자세한 내용을 보려면.
 
-### 모드 레일 {#rail}
-
-모드 레일은 홈 버튼 바로 아래에 있으며 항상 편집기의 왼쪽에 표시됩니다. 다양한 사용 모드 간에 편집기를 쉽게 전환할 수 있습니다.
-
-![모드 레일](assets/mode-rail.png)
-
-#### 미리보기 모드 {#preview-mode}
-
-미리보기 모드의 페이지는 게시된 서비스에 표시되는 것처럼 편집기에서 렌더링된 페이지입니다. 이렇게 하면 콘텐츠 작성자는 링크 등을 클릭하여 콘텐츠를 탐색할 수 있습니다.
-
-![미리보기 모드](assets/preview-mode.png)
-
->[!TIP]
->
->단축키 `P`를 사용하여 미리보기 모드로 전환합니다.
-
-#### 구성 요소 모드 {#component-mode}
-
-구성 요소 모드에서 콘텐츠 작성자는 다음을 포함하여 편집할 구성 요소를 선택할 수 있습니다.
-
-* 즉시 [일반 텍스트 편집](#editing-content).
-* [리치 텍스트 편집](#editing-rich-text) 속성 레일에 표시되는 추가적인 형식 옵션과 함께 배치됩니다.
-* [미디어 콘텐츠 편집](#editing-media)
-* [콘텐츠 조각 편집](#edit-content-fragment)
-
-![구성 요소 모드](assets/component-mode.png)
-
-구성 요소를 선택하면 해당 컨텐츠의 세부 사항이 [속성 레일입니다.](#properties-rail) 콘텐츠 유형에 따라 즉석 또는 속성 레일에서 편집할 수 있습니다.
-
->[!TIP]
->
->단축키 사용 `C` 구성 요소 모드로 전환합니다.
-
 ### 편집기 {#editor}
 
 편집기는 창의 대부분을 차지하며 [위치 표시줄](#location-bar)에 지정된 페이지가 렌더링되는 곳입니다.
 
-* 편집기가 인 경우 [구성 요소 모드,](#component-mode) 컨텐츠는 편집할 수 있지만 링크를 따라갈 수는 없습니다.
-* 편집기가 [미리보기 모드](#preview-mode)에 있는 경우 콘텐츠를 탐색하고 링크를 따라갈 수 있지만, 콘텐츠를 편집할 수 없습니다.
-
 ![편집기](assets/editor.png)
+
+편집기가 [미리보기 모드](#preview-mode)에 있는 경우 콘텐츠를 탐색하고 링크를 따라갈 수 있지만, 콘텐츠를 편집할 수 없습니다.
 
 ### 속성 레일 {#properties-rail}
 
@@ -254,7 +229,7 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 ##### 편집 {#edit}
 
-다음 시기 [구성 요소 모드,](#component-mode) 선택한 구성 요소에 대한 편집 옵션이 속성 레일에 나타납니다. 속성 레일에서 선택한 구성 요소를 편집할 수 있습니다. 선택한 구성 요소가 콘텐츠 조각인 경우 편집 버튼을 선택할 수도 있습니다.
+편집할 때 선택한 구성 요소에 대한 옵션이 속성 레일에 나타나고 여기서 선택한 구성 요소를 편집할 수 있습니다. 선택한 구성 요소가 콘텐츠 조각인 경우 편집 버튼을 선택할 수도 있습니다.
 
 ![편집 아이콘](assets/edit.png)
 
@@ -294,19 +269,19 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 ## 콘텐츠 편집 {#editing-content}
 
-콘텐츠 편집은 간단하고 직관적입니다. 위치 [구성 요소 모드](#component-mode)를 클릭하고 편집기의 콘텐츠 위로 마우스를 가져가면 편집 가능한 콘텐츠가 파란색 상자로 강조 표시됩니다.
+콘텐츠 편집은 간단하고 직관적입니다. 편집기에서 콘텐츠 위로 마우스를 가져가면 편집 가능한 콘텐츠가 파란색 상자로 강조 표시됩니다.
 
 ![편집 가능한 콘텐츠는 파란색 상자로 강조 표시됩니다](assets/editable-content.png)
 
 >[!TIP]
 >
->구성 요소 모드에서 컨텐츠를 탭하거나 클릭하면 편집할 수 있도록 선택됩니다. 링크를 따라 콘텐츠를 탐색하려면 다음으로 전환합니다. [미리 보기 모드.](#preview-mode)
+>기본적으로 콘텐츠를 탭하거나 클릭하면 편집할 콘텐츠가 선택됩니다. 링크를 따라 콘텐츠를 탐색하려면 다음으로 전환합니다. [미리 보기 모드.](#preview-mode)
 
 선택한 콘텐츠에 따라 즉석 편집 옵션이 다를 수 있으며, 의 콘텐츠에 대한 추가 정보 및 옵션이 있을 수 있습니다. [속성 레일입니다.](#properties-rail)
 
 ### 일반 텍스트 편집 {#edit-plain-text}
 
-에 있는 경우 [구성 요소 모드](#component-mode) 일반 텍스트 구성 요소를 선택하고 구성 요소를 두 번 클릭하거나 두 번 탭하여 텍스트를 편집할 수 있습니다.
+구성 요소를 두 번 클릭하거나 두 번 탭하여 텍스트를 편집할 수 있습니다.
 
 ![콘텐츠 편집](assets/editing-content.png)
 
@@ -320,7 +295,7 @@ Enter/Return 키를 누르거나 텍스트 상자 바깥쪽을 선택하여 변�
 
 ### 리치 텍스트 편집 {#edit-rich-text}
 
-에 있는 경우 [구성 요소 모드](#component-mode) 리치 텍스트 구성 요소를 선택하고 구성 요소를 두 번 클릭하거나 두 번 탭하여 텍스트를 편집할 수 있습니다.
+구성 요소를 두 번 클릭하거나 두 번 탭하여 텍스트를 편집할 수 있습니다.
 
 Enter/Return 키를 누르거나 텍스트 상자 바깥쪽을 선택하여 변경 내용을 저장합니다.
 
@@ -330,25 +305,20 @@ Enter/Return 키를 누르거나 텍스트 상자 바깥쪽을 선택하여 변�
 
 ### 미디어 편집 {#edit-media}
 
-에 있는 경우 [구성 요소 모드](#component-mode) 이미지를 선택하면 속성 레일에서 세부 정보를 볼 수 있습니다.
+속성 레일에서 세부 사항을 볼 수 있습니다.
 
 ![미디어 편집](assets/ue-edit-media.png)
 
-다음 항목 선택 **바꾸기** 속성 레일에서 선택한 이미지의 미리 보기 아래에 있는 단추를 클릭하여 이미지를 자산 라이브러리의 다른 이미지로 바꿉니다.
-
+1. 속성 레일에서 선택한 이미지의 미리보기를 탭하거나 클릭합니다.
 1. 자산을 선택할 수 있는 [자산 선택기](/help/assets/asset-selector.md#using-asset-selector) 창이 열립니다.
 1. 새 자산을 선택하려면 를 선택합니다.
 1. 선택 **선택** 에셋이 교체된 속성 레일로 돌아갑니다.
 
 변경 사항은 콘텐츠에 자동으로 저장됩니다.
 
->[!TIP]
->
->단축키 `R`을 사용해 자산 선택기를 열어 선택한 이미지를 바꿉니다.
-
 ### 콘텐츠 조각 편집 {#edit-content-fragment}
 
-에 있는 경우 [구성 요소 모드](#component-mode) 다음 중 하나를 선택합니다. [컨텐츠 조각,](/help/sites-cloud/administering/content-fragments/overview.md) 속성 레일에서 세부 사항을 편집할 수 있습니다.
+을(를) 선택하는 경우 [컨텐츠 조각,](/help/sites-cloud/administering/content-fragments/overview.md) 속성 레일에서 세부 사항을 편집할 수 있습니다.
 
 ![콘텐츠 조각 편집](assets/ue-edit-cf.png)
 
@@ -407,7 +377,7 @@ Enter/Return 키를 누르거나 텍스트 상자 바깥쪽을 선택하여 변�
 
 콘텐츠 편집을 마치면 콘텐츠를 탐색하여 다른 페이지의 콘텐츠에서 어떻게 보이는지 확인하고 싶은 경우가 많습니다. [미리보기 모드](#preview-mode)에서 링크를 클릭하여 독자처럼 콘텐츠를 탐색할 수 있습니다. 콘텐츠는 게시될 때 편집기에서 렌더링됩니다.
 
-미리보기 모드에서 콘텐츠를 탭하거나 클릭하면 콘텐츠 판독기와 동일하게 반응합니다. 편집할 내용을 선택하려면 다음으로 전환합니다. [구성 요소 모드.](#component-mode)
+미리보기 모드에서 콘텐츠를 탭하거나 클릭하면 콘텐츠 판독기와 동일하게 반응합니다. 편집할 컨텐츠를 선택하려면 를 끄십시오 [미리 보기 모드.](#preview-mode)
 
 ## 추가 리소스 {#additional-resources}
 
