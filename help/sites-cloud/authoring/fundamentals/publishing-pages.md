@@ -2,9 +2,9 @@
 title: 페이지 게시
 description: AEM에서 다양한 메커니즘을 사용하여 페이지를 게시 및 게시 취소하는 방법에 대해 알아봅니다.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: c05cf17749f63e713e4fb3fbf2a840a9f82877b3
+source-git-commit: 00520bff0f3b0d36610d8601077198856c8b71dd
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1927'
 ht-degree: 87%
 
 ---
@@ -52,7 +52,7 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
 >[!NOTE]
 >
->페이지 순서를 유지하려면 [게시 관리](#manage-publication) 하위 페이지와 함께 상위 페이지를 한 번에 게시하려면 다음 작업을 수행하십시오.
+>페이지 순서를 유지하려면 다음을 사용해야 합니다 [게시 관리](#manage-publication) 하위 페이지와 함께 상위 페이지를 한 번에 게시하려면 다음 작업을 수행하십시오.
 >
 >페이지 순서는 보장되지 않습니다.
 >* 하위 페이지만 게시하도록 선택한 경우(상위 페이지에 주문 정보가 있기 때문)
@@ -128,7 +128,7 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
 >[!NOTE]
 >
->페이지 순서를 유지하려면 **게시 관리** 상위 페이지를 하위 페이지와 함께 단일 작업으로 게시하는 방법.
+>페이지 순서를 유지하려면 다음을 사용해야 합니다 **게시 관리** 상위 페이지를 하위 페이지와 함께 단일 작업으로 게시하는 방법.
 >
 >페이지 순서는 보장되지 않습니다.
 >* 하위 페이지만 게시하도록 선택한 경우(상위 페이지에 주문 정보가 있기 때문)
