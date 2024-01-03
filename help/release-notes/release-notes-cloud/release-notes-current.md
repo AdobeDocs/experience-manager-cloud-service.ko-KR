@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 17903c6e44afd1742d21b7fc7dbe4d7c63fe8b6b
 workflow-type: tm+mt
 source-wordcount: '828'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -57,15 +57,15 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ### 자산 보기의 새로운 기능 {#assets-view-features}
 
-**Adobe Firefly으로 GenAI 이미지 만들기**
+**Adobe Firefly를 통해 생성형 AI 이미지 제작**
 
-Adobe Firefly 텍스트-이미지 간 기능의 통합으로 검색 쿼리를 기반으로 새 이미지를 만듭니다(Adobe Firefly 라이선스 필요).
+Adobe Firefly의 텍스트를 이미지로 변환 기능을 통한 검색 쿼리를 기반으로 새 이미지를 만듭니다(Adobe Firefly 라이선스 필요).
 
-![에셋 Firefly 통합](/help/assets/assets/assets-firefly-integration.png)
+![Assets Firefly 통합](/help/assets/assets/assets-firefly-integration.png)
 
-**유사한 이미지 찾기**
+**유사 이미지 찾기**
 
-이제 Experience Manager Assets 저장소에서 이미지를 선택하고 유사한 이미지를 보고 컨텐츠를 쉽게 찾을 수 있습니다.
+이제 Experience Manager Assets 저장소에서 이미지를 선택하고 유사한 이미지를 조회하여 원하는 콘텐츠를 손쉽게 찾을 수 있습니다.
 
 <!--
 
