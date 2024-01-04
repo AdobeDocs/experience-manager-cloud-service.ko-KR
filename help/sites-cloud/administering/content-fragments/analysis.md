@@ -1,15 +1,15 @@
 ---
 title: 콘텐츠 조각 분석
-description: 콘텐츠 조각의 구조 및 콘텐츠 게재를 이해합니다. Headless 게재와 페이지 작성에 대한 모든 정보를 제공합니다.
+description: 콘텐츠 전달에 사용되는 콘텐츠 조각의 구조를 이해합니다. Headless 게재 및 페이지 작성과 관련된 정보를 제공합니다.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
-workflow-type: ht
-source-wordcount: '128'
-ht-degree: 100%
+exl-id: d9268c1a-bfe6-4df7-bad9-6007dd79e0aa
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # 콘텐츠 조각 구조 분석 {#analyzing-content-fragments-structure}
 
@@ -19,7 +19,7 @@ Experience Manager(AEM)은 조각의 구조를 보고 분석할 수 있는 몇 �
 
 ## 참조 {#references}
 
-구조는 다음 참조를 사용하여 만들어집니다.
+다중 레이어 구조는 참조를 사용하여 빌드됩니다.
 
 * [참조용 데이터 유형은 콘텐츠 조각 모델에 정의되어 있습니다.](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#using-references-to-form-nested-content)
 * 작성 시 다음 작업을 수행할 수 있습니다.

@@ -1,15 +1,15 @@
 ---
 title: Content 조각 콘솔의 키보드 단축키
-description: 콘텐츠 조각 관리를 위한 일부 키보드 단축키를 포함하여 AEM 전체에서 사용할 수 있는 다양한 키보드 단축키
+description: 콘텐츠 조각 관리를 위한 선택 항목을 포함하여 AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 676173813b6ea4defeafe25c95be9668d32aac38
-workflow-type: ht
-source-wordcount: '222'
-ht-degree: 100%
+exl-id: 24eefa31-4081-4b4a-af98-c6299b213cea
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # Content 조각 콘솔의 키보드 단축키 {#keyboard-shortcuts-content-fragments-console}
 

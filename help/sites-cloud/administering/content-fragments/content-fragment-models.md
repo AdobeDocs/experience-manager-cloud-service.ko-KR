@@ -1,13 +1,13 @@
 ---
 title: 콘텐츠 조각 모델
-description: 콘텐츠 조각 모델이 AEM에서 콘텐츠 조각의 기반 역할을 하는 방법에 대해 알아봅니다. 이 조각을 통해 Headless 게재 또는 페이지 작성에 사용할 구조화된 콘텐츠를 만들 수 있습니다.
+description: 콘텐츠 조각 모델이 AEM에서 콘텐츠 조각을 위한 기반 역할을 하여 Headless 게재 또는 페이지 작성에 사용할 구조화된 콘텐츠를 만드는 방법에 대해 알아봅니다.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '3121'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

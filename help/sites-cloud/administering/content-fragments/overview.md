@@ -1,15 +1,15 @@
 ---
 title: 콘텐츠 조각 작업 개요
-description: Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각을 사용하여 Headless 게재에 이상적인 페이지 독립적 콘텐츠를 디자인하고, 작성하고, 선별하고, 사용하는 방법과 페이지 작성에 대해 알아봅니다.
+description: AEM의 콘텐츠 조각을 as a Cloud Service으로 사용하여 Headless 게재 및 페이지 작성에 이상적인 콘텐츠를 만들고 사용하는 방법에 대해 알아봅니다.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
-workflow-type: ht
-source-wordcount: '1823'
-ht-degree: 100%
+exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # 콘텐츠 조각 작업 개요 {#overview-working-with-content-fragments}
 

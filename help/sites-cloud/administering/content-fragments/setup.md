@@ -1,15 +1,15 @@
 ---
 title: 콘텐츠 조각 - 설정
-description: 콘텐츠 조각 및 GraphQL 기능을 활성화하여 AEM Headless 게재 기능을 사용하는 방법에 대해 알아봅니다.
+description: AEM Headless 게재 기능 및 페이지 작성에 사용할 기능인 콘텐츠 조각 및 GraphQL을 활성화하는 방법을 알아봅니다.
 feature: Content Fragments
 role: Developer, Architect
-source-git-commit: 676173813b6ea4defeafe25c95be9668d32aac38
-workflow-type: ht
-source-wordcount: '388'
-ht-degree: 100%
+exl-id: 3974d698-1e7d-4a5f-a6d5-cbf8d96b4095
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # 콘텐츠 조각 - 설정 {#content-fragments-setup}
 
