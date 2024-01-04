@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 4968921cadcee7eb023d5761abfa0373a24c5ed2
-workflow-type: ht
-source-wordcount: '4560'
-ht-degree: 100%
+source-git-commit: cfae48067df75dae54822dc0c6f868cca75887d4
+workflow-type: tm+mt
+source-wordcount: '4565'
+ht-degree: 99%
 
 ---
 
@@ -1106,11 +1106,14 @@ ht-degree: 100%
       + [WCAG 2.1에 대한 빠른 안내서](/help/compliance/accessibility/quick-guide-wcag.md)
 + Universal Editor {#universal-editor}
    + [Universal Editor 소개](/help/implementing/universal-editor/introduction.md)
-   + [Universal Editor로 콘텐츠 작성](/help/implementing/universal-editor/authoring.md)
-   + [Universal Editor로 콘텐츠 게시](/help/implementing/universal-editor/publishing.md)
-   + [AEM에서 Universal Editor 시작하기](/help/implementing/universal-editor/getting-started.md)
-   + [Universal Editor 개발자 개요](/help/implementing/universal-editor/developer-overview.md)
    + [Universal Editor 아키텍처](/help/implementing/universal-editor/architecture.md)
-   + [속성 및 유형](/help/implementing/universal-editor/attributes-types.md)
-   + [Universal Editor 인증](/help/implementing/universal-editor/authentication.md)
-   + [Universal Editor를 사용하는 로컬 AEM 개발](/help/implementing/universal-editor/local-dev.md)
+   + 작성 {#developing}
+      + [Universal Editor로 콘텐츠 작성](/help/implementing/universal-editor/authoring.md)
+      + [Universal Editor로 콘텐츠 게시](/help/implementing/universal-editor/publishing.md)
+   + 개발 {#developing}
+      + [AEM에서 Universal Editor 시작하기](/help/implementing/universal-editor/getting-started.md)
+      + [Universal Editor 개발자 개요](/help/implementing/universal-editor/developer-overview.md)
+      + [속성 및 유형](/help/implementing/universal-editor/attributes-types.md)
+      + [Universal Editor 인증](/help/implementing/universal-editor/authentication.md)
+      + [Universal Editor를 사용하는 로컬 AEM 개발](/help/implementing/universal-editor/local-dev.md)
+      + [유니버설 편집기 호출](/help/implementing/universal-editor/calls.md)

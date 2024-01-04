@@ -1,26 +1,28 @@
 ---
 title: Universal Editor로 콘텐츠 게시
-description: Universal Editor에서 콘텐츠를 게시하는 방법과 앱에서 게시된 콘텐츠를 처리하는 방법에 대해 알아봅니다.
+description: 유니버설 편집기가 콘텐츠를 게시하는 방법과 앱에서 게시된 콘텐츠를 처리하는 방법에 대해 알아봅니다.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 82%
+ht-degree: 55%
 
 ---
 
 
 # Universal Editor로 콘텐츠 게시 {#publishing}
 
-Universal Editor에서 콘텐츠를 게시하는 방법과 앱에서 게시된 콘텐츠를 처리하는 방법에 대해 알아봅니다.
+유니버설 편집기가 콘텐츠를 게시하는 방법과 앱에서 게시된 콘텐츠를 처리하는 방법에 대해 알아봅니다.
+
+{{universal-editor-status}}
 
 ## AEM과의 유사점 {#similarities}
 
-Universal Editor로 콘텐츠를 게시하는 프로세스는 AEM 사용자에게 익숙한 방식으로 작동합니다. AEM에서 게시할 때 콘텐츠는 작성자 계층에서 게시 계층으로 복제됩니다.
+AEM 사용자의 경우 범용 편집기를 사용하여 콘텐츠를 게시하는 프로세스는 익숙한 대로 작동합니다. AEM에서 게시할 때 콘텐츠는 작성자 계층에서 게시 계층으로 복제됩니다.
 
 ## 차이점 {#differences}
 
-Universal Editor를 통한 게시가 AEM과 다른 부분은 편집기 자체가 아닌 Universal Editor가 가능하게 하는 앱의 외부 호스팅입니다.
+유니버설 편집기로 게시할 때 약간 다른 점은 편집기 자체가 아니라, 유니버설 편집기가 가능하게 하는 앱의 외부 호스팅입니다.
 
 외부에서 호스팅되는 경우 작성자가 편집기 내에서 앱을 열 때 작성자 계층에서 콘텐츠가 로드되고 방문자가 앱에 액세스할 때 게시 계층에서 콘텐츠가 로드되도록 하는 것이 해당 웹 앱의 관심사입니다.
 

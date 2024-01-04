@@ -2,9 +2,9 @@
 title: Universal Editor로 콘텐츠 작성
 description: 콘텐츠 작성자가 Universal Editor를 사용하여 얼마나 쉽고 직관적으로 콘텐츠를 만들 수 있는지 알아봅니다.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: e33cdaf9147fc0276920fad974984d5703dba530
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
-source-wordcount: '2179'
+source-wordcount: '2165'
 ht-degree: 57%
 
 ---
@@ -13,6 +13,8 @@ ht-degree: 57%
 # Universal Editor로 콘텐츠 작성 {#authoring}
 
 콘텐츠 작성자가 Universal Editor를 사용하여 얼마나 쉽고 직관적으로 콘텐츠를 만들 수 있는지 알아봅니다.
+
+{{universal-editor-status}}
 
 ## 소개 {#introduction}
 
@@ -23,10 +25,6 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 >[!TIP]
 >
 >Universal Editor에 대한 자세한 소개는 [Universal Editor 소개](introduction.md) 문서를 참조하십시오.
-
->[!NOTE]
->
->Universal Editor는 아직 개발 중입니다. 현재 모든 콘텐츠 유형을 편집할 수 없습니다.
 
 ## 앱 준비 {#prepare-app}
 

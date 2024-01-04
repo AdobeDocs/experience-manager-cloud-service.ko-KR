@@ -2,10 +2,10 @@
 title: Universal Editor를 사용하는 로컬 AEM 개발
 description: Universal Editor가 개발 목적으로 로컬 AEM 인스턴스 편집을 지원하는 방법에 대해 알아봅니다.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 0546f3cee8df3d7134021e32670b40030d56cd84
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '576'
-ht-degree: 92%
+ht-degree: 87%
 
 ---
 
@@ -14,7 +14,11 @@ ht-degree: 92%
 
 Universal Editor가 개발 목적으로 로컬 AEM 인스턴스 편집을 지원하는 방법에 대해 알아봅니다.
 
-이 문서에서는 Universal Editor를 사용하여 AEM을 로컬로 개발할 수 있도록 HTTPS에서 Universal Editor Service의 로컬 사본과 함께 AEM을 실행하는 방법을 설명합니다.
+{{universal-editor-status}}
+
+## 개요 {#overview}
+
+이 문서에서는 범용 편집기를 사용하여 AEM에서 로컬로 개발할 수 있도록 범용 편집기 서비스의 로컬 복사본과 함께 HTTPS로 AEM을 실행하는 방법을 설명합니다.
 
 ## HTTPS에서 실행할 AEM 설정 {#aem-https}
 

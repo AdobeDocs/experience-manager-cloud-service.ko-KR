@@ -1,7 +1,7 @@
 ---
 title: AEM 개발자를 위한 유니버설 편집기 개요
 description: 범용 편집기의 작동 방식과 프로젝트에서 사용하는 방법에 관심이 있는 AEM 개발자인 경우, 이 문서는 범용 편집기에서 작동하도록 WKND 프로젝트를 계측하여 전체적인 소개를 제공합니다.
-source-git-commit: 4219ce35ed353bef0592bc088c0b5df8c6c9cc6f
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '3082'
 ht-degree: 1%
@@ -12,6 +12,8 @@ ht-degree: 1%
 # AEM 개발자를 위한 유니버설 편집기 개요 {#developer-overview}
 
 범용 편집기의 작동 방식과 프로젝트에서 사용하는 방법에 관심이 있는 AEM 개발자인 경우, 이 문서는 범용 편집기에서 작동하도록 WKND 프로젝트를 계측하여 전체적인 소개를 제공합니다.
+
+{{universal-editor-status}}
 
 ## 용도 {#purpose}
 

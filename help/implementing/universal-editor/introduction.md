@@ -2,10 +2,10 @@
 title: Universal Editor 소개
 description: 유니버설 편집기를 통해 Headless 및 Headful 환경의 WYSIWYG(보이는 그대로) 편집을 활성화하는 방법에 대해 알아봅니다. 콘텐츠 작성자가 탁월한 경험을 제공하고 콘텐츠 속도를 높이며 최신 개발자 경험을 제공하는 데 도움이 되는 방식에 대해 살펴보십시오.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '925'
-ht-degree: 89%
+ht-degree: 85%
 
 ---
 
@@ -13,6 +13,8 @@ ht-degree: 89%
 # Universal Editor 소개 {#introduction}
 
 유니버설 편집기를 통해 Headless 및 Headful 환경의 WYSIWYG(보이는 그대로) 편집을 활성화하는 방법에 대해 알아봅니다. 콘텐츠 작성자가 탁월한 경험을 제공하고 콘텐츠 속도를 높이며 최신 개발자 경험을 제공하는 데 도움이 되는 방식에 대해 살펴보십시오.
+
+{{universal-editor-status}}
 
 ## 배경 {#background}
 
@@ -43,7 +45,7 @@ Universal Editor를 사용하기 위한 구현 요구 사항은 매우 간단하
 콘텐츠 작성자는 이전에 AEM 페이지 편집기에서 제공한 것과 동일하게 강력한 편집 환경을 이용할 수 있어야 합니다. Universal Editor를 사용하면 콘텐츠 작성자가 **모든** 콘텐츠를 시각적으로 상황에 맞게 편집할 수 있으며 다음이 지원됩니다.
 
 * **AEM 페이지 구조** - 경험 조각을 포함하여 `cq:Pages`의 중첩된 `cq:Components`
-* **AEM 콘텐츠 조각** - 경험의 맥락에서 표시되는 콘텐츠 조각에서 콘텐츠 편집.
+* **AEM 콘텐츠 조각** - 경험 컨텍스트에 표시되는 콘텐츠 조각의 콘텐츠를 편집합니다.
 * **문서** - 개념 증명에 따르면 Word, Excel, Google Docs 또는 Markdown 문서도 같은 방식으로 편집할 수 있습니다(WIP).
 
 ### 모든 측면 {#any-aspect}
@@ -89,7 +91,7 @@ Universal Editor에 예정된 향후 기능에 대한 자세한 내용은 Adobe 
 Universal Editor에 대해 자세히 알아보려면 다음 문서를 참조하십시오.
 
 * [Universal Editor로 콘텐츠 작성](authoring.md) - 콘텐츠 작성자가 Universal Editor를 사용하여 콘텐츠를 만드는 것이 얼마나 쉽고 직관적인지 알아봅니다.
-* [Universal Editor로 콘텐츠 게시](publishing.md) - Universal Editor에서 콘텐츠를 게시하는 방법과 앱에서 게시된 콘텐츠를 처리하는 방법에 대해 알아봅니다.
+* [유니버설 편집기로 콘텐츠 게시](publishing.md) - 유니버설 편집기에서 콘텐츠를 게시하는 방법과 앱에서 게시된 콘텐츠를 처리하는 방법에 대해 알아봅니다.
 * [AEM에서 Universal Editor 시작하기](getting-started.md) - Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 알아봅니다.
 * [Universal Editor 아키텍처](architecture.md) - Universal Editor의 아키텍처 및 해당 서비스와 계층 간에 데이터가 흐르는 방식에 대해 알아봅니다.
 * [속성 및 유형](attributes-types.md) - Universal Editor에 필요한 데이터 속성 및 유형에 대해 알아봅니다.
