@@ -2,7 +2,7 @@
 title: 모범 사례 분석기 사용
 description: 모범 사례 분석기를 사용하여 업그레이드 준비 상태를 이해하는 방법에 대해 알아봅니다.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '2418'
 ht-degree: 42%
@@ -126,7 +126,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >id="aemcloud_bpa_interpreting"
 >title="모범 사례 분석기 보고서 해석"
 >abstract="UI와 CSV와 같이 BPA 보고서 출력을 볼 수 있는 두 가지 옵션이 있습니다. AEM 인스턴스에서 모범 사례 분석기 도구를 실행하면 UI 보고서가 도구 창의 결과로 표시됩니다. 보고서의 CSV 형식에는 패턴 탐지기 출력에서 생성된 정보가 포함되어 있으며 범주 유형, 하위 유형 및 중요도 수준별로 정렬 및 구성됩니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=ko-KR#analysis-report" text="Best Practices Analysis 보고서 검토"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#analysis-report" text="Best Practices Analysis 보고서 검토"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=ko-KR" text="모범 사례 분석기 보고서 범주 이해"
 
 AEM 인스턴스에서 모범 사례 분석기 도구를 실행하면 보고서가 도구 창의 결과로 표시됩니다.

@@ -2,10 +2,10 @@
 title: 콘텐츠 전송 도구 사전 요구 사항
 description: 컨텐츠 전송 도구 사전 요구 사항을 숙지하십시오
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
-source-git-commit: 5964801192fc4a50b7f04852e3128f8218ca4cc5
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 17%
+source-wordcount: '500'
+ht-degree: 11%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 17%
 >id="aemcloud_ctt_prereqs"
 >title="콘텐츠 전송 도구 사용에 대한 중요 고려 사항"
 >abstract="Java™ 및 AEM 버전, 지원되는 데이터 저장소 유형, 사용자 그룹 고려 사항 등 콘텐츠 전송 도구를 사용하기 위한 중요 고려 사항을 검토하십시오."
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=ko-KR" text="컨텐츠 전송 도구 사용에 대한 중요한 고려 사항"
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=ko-KR#best-practices" text="모범 사례 및 지침"
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=ko-KR" text="콘텐츠 전송 도구 사용에 대한 중요 고려 사항"
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#best-practices" text="모범 사례 및 지침"
 
 다음 표에는 컨텐츠 전송 도구를 사용하기 위한 사전 요구 사항이 요약되어 있습니다.
 
