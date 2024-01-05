@@ -1,27 +1,27 @@
 ---
-title: 변형 - 조각 콘텐츠 작성 (에셋 - 콘텐츠 조각)
-description: 변형에서 조각에 대한 콘텐츠를 작성한 다음 목적에 따라 해당 콘텐츠의 변형을 만들 수 있으므로 AEM의 Headless 콘텐츠를 어떻게 더 유연하게 만들 수 있는지 이해합니다.
+title: 변형 - 조각 컨텐츠 작성(자산 - 컨텐츠 조각)
+description: 콘텐츠 조각 변형을 통해 조각에 대한 콘텐츠를 작성한 다음 목적에 따라 해당 콘텐츠의 변형을 만들어 유연성을 높이는 방법을 이해합니다.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '2546'
-ht-degree: 56%
+source-wordcount: '2474'
+ht-degree: 53%
 
 ---
 
 # 변형 - 조각 콘텐츠 작성{#variations-authoring-fragment-content}
 
-[변형](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 는 AEM 콘텐츠 조각의 중요한 기능입니다. 이는 특정 채널 및 시나리오에서 사용할 마스터 콘텐츠의 사본을 만들고 편집할 수 있도록 해 Headless 콘텐츠 전달을 보다 유연하게 만들기 때문입니다.
+[변형](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 는 AEM(Content Experience Manager) as a Cloud Service의 Adobe 조각에서 중요한 기능입니다. 따라서 파일의 복사본을 만들고 편집할 수 있습니다. **기본** 특정 채널 및 시나리오에서 사용할 컨텐츠. 특히 Headless 콘텐츠 전달을 보다 유연하게 만듭니다.
 
 >[!NOTE]
 >
 >콘텐츠 조각은 Sites 기능이지만 **자산**&#x200B;으로 저장됩니다.
 >
->콘텐츠 조각을 작성하는 두 가지 편집기가 있습니다. 이 단원에서는 주로 **에셋** 콘솔. 사이트 설명서 를 참조하십시오. [컨텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md), 새 편집기에 대한 세부 정보(주로 **컨텐츠 조각** console).
+>콘텐츠 조각 작성용 편집기에는 두 가지가 있습니다. 이 단원에서는 주로 **에셋** 콘솔. 사이트 설명서 를 참조하십시오. [컨텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md), 새 편집기에 대한 세부 정보(주로 **컨텐츠 조각** console).
 
 다음에서 **변형** 탭 다음과 같은 작업을 수행할 수 있습니다.
 
-* 조각에 사용할 [콘텐츠 입력,](#authoring-your-content)
+* [콘텐츠 입력](#authoring-your-content) 조각에 대해
 * [마스터](#managing-variations) 콘텐츠의 **변형 만들기 및 관리**
 
 편집 중인 데이터 유형에 따라 다양한 다른 작업을 수행하십시오. 예를 들면 다음과 같습니다.
@@ -198,7 +198,7 @@ Markdown을 사용하여 텍스트 서식을 지정할 수 있습니다. 다음�
 
 옵션 **새 콘텐츠 조각** 조각을 만들 수 있습니다. 이를 위해 편집기에서 콘텐츠 조각 만들기 마법사의 변형이 열립니다.
 
-**콘텐츠 조각을 만들려면 다음 작업을 수행하십시오.**
+**컨텐츠 조각을 만들려면 다음 작업을 수행하십시오.**
 
 1. 필요한 폴더로 이동한 다음 선택합니다.
 1. **다음**&#x200B;을 선택합니다.

@@ -1,17 +1,23 @@
 ---
 title: 관련 컨텐츠(자산 - 컨텐츠 조각)
-description: AEM 관련 콘텐츠 기능이 연결을 제공하여 조각과 함께 에셋을 선택적으로 사용할 수 있도록 하는 방법을 이해합니다.
+description: AEM 콘텐츠 조각의 관련 콘텐츠 기능이 연결을 제공하여 조각과 함께 에셋을 선택적으로 사용할 수 있도록 하는 방법을 이해합니다.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 51%
+source-wordcount: '281'
+ht-degree: 45%
 
 ---
 
 # 관련 콘텐츠{#associated-content}
 
-AEM 관련 콘텐츠 기능은 조각이 콘텐츠 페이지에 추가될 때 에셋을 조각과 함께 선택적으로 사용할 수 있도록 연결을 제공합니다. Headless 콘텐츠 전달을 위한 유연성 제공 [페이지에서 콘텐츠 조각을 사용할 때 액세스할 수 있는 다양한 에셋 제공](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) 적절한 에셋을 검색하는 데 필요한 시간을 줄이는 데도 도움이 됩니다.
+AEM(Adobe Experience Manager)의 콘텐츠 조각 as a Cloud Service의 경우, 관련 콘텐츠 기능(원본 편집기에서 사용 가능)이 연결을 제공하여 에셋을 조각과 함께 선택적으로 사용할 수 있도록 합니다. 다음과 같은 방법으로 유연성을 제공합니다. [콘텐츠 조각을 사용할 때 액세스할 수 있는 다양한 에셋 제공](/help/assets/content-fragments/content-fragments.md#using-associated-content)를 사용하면 적절한 에셋을 검색하는 데 필요한 시간을 줄일 수 있습니다. 이 기능은 Headless 콘텐츠 게재 및 페이지 작성 둘 다에 사용할 수 있습니다.
+
+>[!NOTE]
+>
+>콘텐츠 조각은 Sites 기능이지만 **자산**&#x200B;으로 저장됩니다.
+>
+>콘텐츠 조각 작성용 편집기에는 두 가지가 있습니다. 이 단원에서는 주로 **에셋** 콘솔.
 
 ## 관련 콘텐츠 추가 {#adding-associated-content}
 

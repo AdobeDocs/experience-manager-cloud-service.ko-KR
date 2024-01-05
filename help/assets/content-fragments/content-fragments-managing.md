@@ -1,17 +1,17 @@
 ---
 title: 컨텐츠 조각 관리(자산 - 컨텐츠 조각)
-description: Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
+description: Headless 콘텐츠의 기반으로 또는 페이지 작성을 위해 Assets 콘솔을 사용하여 AEM 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '1873'
-ht-degree: 76%
+source-wordcount: '1885'
+ht-degree: 75%
 
 ---
 
 # 콘텐츠 조각 관리 {#managing-content-fragments}
 
-Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
+Headless 콘텐츠의 기반으로 또는 페이지 작성을 위해 Assets 콘솔을 사용하여 AEM 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
 
 [콘텐츠 조각 모델](#creating-a-content-model)을 정의한 후 이를 사용하여 [콘텐츠 조각을 작성할](#creating-a-content-fragment) 수 있습니다.
 

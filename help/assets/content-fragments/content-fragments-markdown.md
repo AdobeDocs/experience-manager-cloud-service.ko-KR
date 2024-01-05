@@ -4,22 +4,22 @@ description: 콘텐츠 조각 편집기에서 Markdown 구문을 사용하여 He
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 82%
+source-wordcount: '586'
+ht-degree: 80%
 
 ---
 
 # Markdown {#markdown}
 
-다음과 같은 경우: [작성](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), 콘텐츠 조각 편집기는 *Markdown* headless 콘텐츠를 쉽게 작성할 수 있는 구문:
+다음과 같은 경우: [작성](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), 콘텐츠 조각 편집기는 *Markdown* headless 게재 또는 페이지 작성에 대한 콘텐츠를 쉽게 작성할 수 있는 구문:
 
 >[!NOTE]
 >
 >콘텐츠 조각은 Sites 기능이지만 **자산**&#x200B;으로 저장됩니다.
 >
->콘텐츠 조각을 작성하는 두 가지 편집기가 있습니다. 이 단원에서는 주로 **에셋** 콘솔. 사이트 설명서 를 참조하십시오. [컨텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md), 새 편집기에 대한 세부 정보(주로 **컨텐츠 조각** console).
+>콘텐츠 조각 작성용 편집기에는 두 가지가 있습니다. 이 단원에서는 주로 **에셋** 콘솔. 사이트 설명서 를 참조하십시오. [컨텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md), 새 편집기에 대한 세부 정보(주로 **컨텐츠 조각** console).
 
 ![Markdown 편집기](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
