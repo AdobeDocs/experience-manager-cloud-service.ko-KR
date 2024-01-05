@@ -4,9 +4,9 @@ description: AEM as a Cloud Service의 Cloud Manager 2023.12.0 릴리스 정보�
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: c0fc4b2ced046a1e975aca99463cdfa03462f2f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '784'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ AEM as a Cloud Service의 Cloud Manager 2023.12.0 릴리스 일자는 2023년 12
    * [프론트엔드 및 전체 스택 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)의 Node 18에 대한 지원이 추가되었습니다.
    * Java 8 보조 버전이 `jdk1.8.0_371`로 업데이트되었습니다.
    * Java 11 보조 버전이 `jdk-11.0.20`로 업데이트되었습니다.
-   * Maven이 3.8.8로 업데이트되었습니다.
+   * Maven이 3.8.8 버전으로 업데이트되었습니다.
       * Maven은 이제 기본적으로 모든 안전하지 않은 `http://*` 미러를 비활성화합니다.
       * [Adobe](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)는 사용자가 HTTP 대신 HTTPS를 사용하도록 Maven 저장소를 업데이트할 것을 권장합니다.
    * 빌드 컨테이너 기본 이미지가 Ubuntu 22.04로 업데이트되었습니다.

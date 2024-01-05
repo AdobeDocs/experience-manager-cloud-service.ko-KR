@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리�
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 17903c6e44afd1742d21b7fc7dbe4d7c63fe8b6b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '828'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### 자산 보기의 새로운 기능 {#assets-view-features}
+### Assets 보기의 새로운 기능 {#assets-view-features}
 
 **Adobe Firefly를 통해 생성형 AI 이미지 제작**
 

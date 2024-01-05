@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 4fc676bd975e44234b478ba57f12cbf0f4f5ba45
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '371'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 83%
 
 ## 릴리스 14697 {#release-14697}
 
-다음은 2023년 12월 18일에 공개적으로 릴리스된 유지 보수 릴리스 14697에 대한 지속적인 개선 사항을 요약한 것입니다. 문제가 14538 릴리스 정보를 대체합니다. 이전 유지 관리 릴리스는 릴리스 14227.
+2023년 12월 18일에 릴리스된 유지 관리 릴리스 14697의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이는 문제가 있었던 릴리스 14538을 대체합니다. 이전 유지 관리 릴리스는 릴리스 14227이었습니다.
 
-2023.12.0 기능 활성화는 이 유지 관리 릴리스에 대한 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)을 참조하십시오.
+이 유지 관리 릴리스(2023.12.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)을 참조하십시오.
 
 ### 개선 사항 {#enhancements-14697}
 
@@ -39,7 +39,7 @@ ht-degree: 83%
 * ASSETS-31297: 다이내믹 미디어에서 복사된 자산 삭제를 방지합니다.
 * ASSETS-30811: Blocktag 서비스 바인딩에 대한 참조 업데이트입니다.
 * GRANITE-46418: AEM의 Sling 이벤트 업데이트: GaugeSupport에는 RegisterWithSuffix(SLING-11918)의 무한 재귀가 있습니다.
-* GRANITE-48937: Omnisearch가 aem/start.html 페이지에서 작동하지 않는 유지 관리 릴리스 14538의 회귀 문제를 해결합니다.
+* GRANITE-48937: Omnisearch가 aem/start.html 페이지에서 작동하지 않는 유지 관리 릴리스 14538의 회귀 문제가 해결되었습니다.
 
 ### 알려진 문제 {#known-issues-14697}
 
