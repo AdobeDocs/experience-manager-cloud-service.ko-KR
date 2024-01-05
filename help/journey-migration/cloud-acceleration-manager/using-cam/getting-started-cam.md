@@ -2,10 +2,10 @@
 title: Cloud Acceleration Manager 시작하기
 description: 이 페이지에서는 Cloud Acceleration Manager를 사용하고 시작하는 방법에 대한 개요를 제공합니다.
 exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 24%
+source-wordcount: '514'
+ht-degree: 21%
 
 ---
 
@@ -42,7 +42,7 @@ CAM(Cloud Acceleration Manager)으로 이동하려면 아래 단계를 따르십
 >id="aemcloud_cam_gettingstarted"
 >title="Cloud Acceleration Manager 시작하기"
 >abstract="프로젝트를 만들고 AEM as a Cloud Service로의 여정을 시작합니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/introduction-cam/benefits-cam.html?lang=ko-KR" text="Cloud Acceleration Manager 사용 시 장점"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/introduction-cam/benefits-cam.html" text="Cloud Acceleration Manager 사용 시 장점"
 
 CAM(Cloud Acceleration Manager)의 랜딩 페이지를 사용하여 여러 프로젝트를 만들고 편집할 수 있습니다.
 
@@ -97,4 +97,4 @@ CAM(Cloud Acceleration Manager)의 랜딩 페이지를 사용하여 여러 프�
 
 ## 다음 단계 {#whats-next}
 
-Cloud Acceleration Manager에 로그인하는 방법과 프로젝트를 만드는 방법을 배운후 의 다음 단계를 검토할 준비가 되었습니다. [준비 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en).
+Cloud Acceleration Manager에 로그인하는 방법과 프로젝트를 만드는 방법을 배운후 의 다음 단계를 검토할 준비가 되었습니다. [준비 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html).

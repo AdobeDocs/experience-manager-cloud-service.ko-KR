@@ -2,10 +2,10 @@
 title: KPI 액세스
 description: KPI에 액세스하고 보고 프로세스를 정의하는 방법에 대해 알아보기
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
-source-wordcount: '544'
-ht-degree: 100%
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
+workflow-type: tm+mt
+source-wordcount: '532'
+ht-degree: 99%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 100%
 >id="aemcloud_assesskpis"
 >title="KPI 평가"
 >abstract="Adobe Experience Manager 출시를 시작하기에 앞서 프로젝트와 관련된 모든 사용자는 귀사의 상위 3개 KPI가 무엇이며 이들이 왜 중요한지 이해해야 합니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=ko" text="KPI 정렬"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=ko" text="적합한 팀 선택"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="KPI 정렬"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html" text="적합한 팀 선택"
 
 Adobe Experience Manager 출시를 시작하기에 앞서 프로젝트와 관련된 모든 사용자는 귀사의 상위 3개 KPI가 무엇이며 이들이 왜 중요한지 이해해야 합니다.
 

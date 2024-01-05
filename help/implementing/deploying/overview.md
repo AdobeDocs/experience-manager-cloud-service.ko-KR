@@ -3,7 +3,7 @@ title: AEM as a Cloud Service에 배포
 description: AEM as a Cloud Service에 배포할 때의 기본 사항 및 모범 사례에 대해 알아봅니다.
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '3429'
 ht-degree: 98%
@@ -175,7 +175,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="패키지 관리자 - 변경 가능한 콘텐츠 패키지 마이그레이션"
 >abstract="콘텐츠 패키지를 “일회성”으로 설치해야 하는 사용 사례에서 패키지 관리자 사용에 대해 알아봅니다. 설치에는 프로덕션 문제를 디버깅하기 위해 프로덕션에서 스테이징으로 특정 콘텐츠를 가져오고 온프레미스 환경에서 AEM Cloud 환경 등으로 소형 콘텐츠 패키지를 이전하는 등의 작업이 포함됩니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ko-KR" text="콘텐츠 전송 도구"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html" text="콘텐츠 전송 도구"
 
 콘텐츠 패키지를 “일회성”으로 설치해야 하는 사용 사례가 있습니다. 예를 들면 프로덕션 문제를 디버깅하기 위해 프로덕션에서 스테이징으로 특정 콘텐츠를 가져오기 등이 있습니다. 해당 시나리오의 경우, [패키지 관리자](/help/implementing/developing/tools/package-manager.md)를 AEM as a Cloud Service의 환경으로 사용할 수 있습니다.
 

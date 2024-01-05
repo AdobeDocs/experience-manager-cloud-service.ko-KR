@@ -2,9 +2,9 @@
 title: 준비 단계
 description: AEM 설치를 클라우드로 이동할 준비가 되었는지 확인할 수 있도록 수행해야 하는 단계에 대해 알아봅니다.
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
-source-wordcount: '2066'
+source-wordcount: '1900'
 ht-degree: 6%
 
 ---
@@ -49,7 +49,7 @@ AEM as a Cloud Service은 AEM 프로젝트 관리를 위한 많은 새로운 기
 <tbody>
   <tr>
     <td>변경 가능한 필터 및 변경 불가능한 필터를 해당 패키지로 구분</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html?lang=en">AEM as a Cloud Service 주요 변경 사항</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#mutable-vs-immutable">AEMas a Cloud Service 용 AEM 프로젝트 구조</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html">AEM as a Cloud Service 주요 변경 사항</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#mutable-vs-immutable">AEMas a Cloud Service 용 AEM 프로젝트 구조</a></td>
     <td>AEM as a Cloud Service으로 배포할 수 있는 단일 패키지에는 주로 자체 패키지로 구분된 변경 가능한 콘텐츠 및 변경 불가능한 콘텐츠를 포함하는 하위 패키지가 있을 수 있습니다.</td>
   </tr>
   <tr>
@@ -89,12 +89,12 @@ AEM as a Cloud Service은 AEM 프로젝트 관리를 위한 많은 새로운 기
   </tr>
   <tr>
     <td>비동기 작업으로 전환</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/asynchronous-jobs.html?lang=en#configuring-asynchronous-msm-operations">비동기 작업 구성</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/asynchronous-jobs.html#configuring-asynchronous-msm-operations">비동기 작업 구성</a></td>
     <td>환경의 전체 성능을 향상시키기 위해 특정 작업은 비동기 모드에서 실행됩니다. 비동기 작업은 시스템 리소스를 사용할 수 있을 때 큐에 추가되어 실행됩니다.</td>
   </tr>
   <tr>
     <td>토큰 기반 인증 및 통합 전략</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#the-server-to-server-flow">서버측 API용 액세스 토큰 생성</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication">토큰 기반 인증 자습서</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow">서버측 API용 액세스 토큰 생성</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication">토큰 기반 인증 자습서</a></td>
     <td>AEM 외부의 시스템은 AEM 내에서 HTTP 작업을 수행하려고 하는 것이 일반적입니다.<br>AEM에서 암호를 사용하여 로컬 사용자 이름을 만드는 데 의존하지 않고 여기에 설명된 전략을 구현하는 것이 좋습니다.</td>
   </tr>
   <tr>
@@ -104,32 +104,32 @@ AEM as a Cloud Service은 AEM 프로젝트 관리를 위한 많은 새로운 기
   </tr>
   <tr>
     <td>DAM 자산 업데이트 워크플로우</td>
-    <td><a href="https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html?lang=en">Asset compute 서비스</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html">Asset compute 서비스</a></td>
     <td>DAM 자산 업데이트 워크플로우의 일부인 미디어 처리 단계가 이제 Asset compute 서비스로 대체됩니다</td>
   </tr>
   <tr>
     <td>AEM as a Cloud Service의 자산 업로드 방법 및 지원되는 워크플로우 프로세스 단계</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis.html?lang=en#post-processing-workflows-steps">API 비교 및 지원되는 WF 프로세스 단계 업로드</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis.html#post-processing-workflows-steps">API 비교 및 지원되는 WF 프로세스 단계 업로드</a></td>
     <td>AEM as a Cloud Service에서 에셋의 업로드 또는 다운로드 중에 에셋이 바이너리 스토리지에서 바로 또는 바이너리 스토리지 외부로 스트리밍됩니다. <br>일부 워크플로우 프로세스 단계는 AEMaaCS에서 지원되지 않습니다.</td>
   </tr>
   <tr>
     <td>워크플로 런처</td>
     <td></td>
-    <td>코드에서 기본 제공 또는 사용자 지정 DAM 자산 업데이트 워크플로우를 트리거하는 워크플로우 런처를 제거합니다. <br>AEM에 as a Cloud Service으로 업로드된 모든 자산은 자산 처리 서비스에서 처리됩니다. 사용자 지정 단계는 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en#post-processing-workflows"> 사후 처리 워크플로</a> 사후 처리 워크플로를 설정하고 구성하는 방법에 대해 설명합니다.</td>
+    <td>코드에서 기본 제공 또는 사용자 지정 DAM 자산 업데이트 워크플로우를 트리거하는 워크플로우 런처를 제거합니다. <br>AEM에 as a Cloud Service으로 업로드된 모든 자산은 자산 처리 서비스에서 처리됩니다. 사용자 지정 단계는 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows"> 사후 처리 워크플로</a> 사후 처리 워크플로를 설정하고 구성하는 방법에 대해 설명합니다.</td>
   </tr>
   <tr>
     <td>사용자 지정 렌디션 단계</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en">처리 프로필</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html">처리 프로필</a></td>
     <td>사용자 지정 렌디션 생성, 이미지 변환 또는 비디오 인코딩은 해당 처리 프로필을 만들어 Asset Processing Service로 오프로드해야 합니다.</td>
   </tr>
   <tr>
     <td>콘텐츠 검색 및 색인화</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=en">콘텐츠 검색 및 색인화 변경 사항</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html">콘텐츠 검색 및 색인화 변경 사항</a></td>
     <td>인덱스의 기본 처리 및 시작 시기에 상당한 변화가 있습니다.<br>배포하는 코드에서 관리하기 전에 Oak 색인을 완전히 이해하고 리팩터링합니다.</td>
   </tr>
   <tr>
     <td>일부 유지 관리 작업은 구성할 수 없음</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/maintenance.html?lang=en">AEM as a Cloud Service 유지 관리 작업</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/maintenance.html">AEM as a Cloud Service 유지 관리 작업</a></td>
     <td>AEM as a Cloud Service으로 특정 유지 관리 작업만 구성할 수 있습니다.</td>
   </tr>
   <tr>
@@ -139,17 +139,17 @@ AEM as a Cloud Service은 AEM 프로젝트 관리를 위한 많은 새로운 기
   </tr>
   <tr>
     <td>Dispatcher 구성 및 캐싱</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=en">클라우드의 디스패처</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=en#other-content">캐시 관리<br></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html">클라우드의 디스패처</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content">캐시 관리<br></td>
     <td>Dispatcher 구성은 특정 구조를 따라야 합니다.<br>구성은 코드의 일부로 관리되고 Cloud Manager 파이프라인을 통해 배포되어야 합니다.</td>
   </tr>
   <tr>
     <td>백업 및 복원</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html?lang=en">AEM as a Cloud Service 백업 및 복원</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html">AEM as a Cloud Service 백업 및 복원</a></td>
     <td></td>
   </tr>
   <tr>
     <td>인증 변경 사항</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en">AEM as a Cloud Service에 대한 IMS 지원</td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html">AEM as a Cloud Service에 대한 IMS 지원</td>
     <td>Cloud Service으로 이동하기 전에 작성자 및 게시 모두에서 SAML 2.0 통합을 이전에 사용 중이었던 경우 주요 변경 사항은 AEM as a Cloud Service Author가 Adobe IMS와만 통합된다는 것입니다. 그러나 AEM as a Cloud Service 게시 계층은 여전히 SAML 또는 기타 인증 통합을 사용할 수 있습니다. AEM as a Cloud Service에서는 작성자, 관리 및 개발 사용자에 대해서만 IMS 인증 지원 서비스를 제공합니다. IMS 인증은 사이트 방문자와 같은 고객 사이트의 외부 최종 사용자를 지원하지 않습니다.</td>
   </tr>
 </tbody>
@@ -171,7 +171,7 @@ AEM as a Cloud Service으로 도입된 변경 사항을 숙지한 후에는 기�
 
 다음으로 이러한 각 단계가 무엇을 의미하는지 자세히 살펴봅니다.
 
-### 클라우드 서비스 준비 평가 {#assess-cloud-readiness}
+### Cloud Service 준비 평가 {#assess-cloud-readiness}
 
 첫 번째 단계는 기존 AEM 버전에서 Cloud ServiceAEM 로 이동할 준비를 평가하고 리팩터링이 as a Cloud Service과 호환되어야 하는 영역을 결정하는 것입니다.
 

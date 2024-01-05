@@ -2,10 +2,10 @@
 title: 적합한 사람, 적합한 역할
 description: 적절한 사람을 선택하고 프로젝트에 적합한 역할을 할당하는 방법에 대해 알아봅니다.
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 100%
+source-wordcount: '832'
+ht-degree: 99%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 100%
 >id="aemcloud_chooseteam"
 >title="적합한 팀 선택"
 >abstract="Adobe Experience Manager 배포를 정상적으로 이끌 수 있도록 적합한 인력을 배치하십시오."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=ko" text="KPI 정렬"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=ko" text="KPI 평가"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="KPI 정렬"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html" text="KPI 평가"
 
 조직 내 여러 부서에서 디지털 환경의 다양한 측면을 보일 수 있습니다. 거버넌스를 갖추지 않으면 끝없는 논쟁과 내분, 혼란의 상황이 발생할 것입니다.
 

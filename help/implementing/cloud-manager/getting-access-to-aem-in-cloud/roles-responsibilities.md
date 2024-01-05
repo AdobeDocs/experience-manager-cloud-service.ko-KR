@@ -1,10 +1,10 @@
 ---
 title: 역할 및 책임
 description: 역할 및 책임
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 100%
+source-wordcount: '484'
+ht-degree: 99%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 100%
 >id="aemcloud_raci"
 >title="역할 및 책임"
 >abstract="Adobe는 Experience Manager as a Cloud Service의 프로비저닝, 개발, 스테이징 및 프로덕션과 관련된 일련의 서비스를 제공합니다. 솔루션의 개발 및 배포가 가능한 한 효율적으로 진행되려면 여기에 설명된 대로 고객과 사용자 정의자가 자신의 역할을 이해하고 수행하는 것이 중요합니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=ko" text="적합한 사람, 적합한 역할 선택"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=ko" text="KPI 정렬"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html" text="적합한 사람, 적합한 역할 선택"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="KPI 정렬"
 
 <br></br>
 Adobe는 Experience Manager as a Cloud Service의 프로비저닝, 개발, 스테이징 및 프로덕션과 관련된 일련의 서비스를 제공합니다. 솔루션의 개발 및 배포가 가능한 한 효율적으로 진행되려면 아래에 설명된 대로 고객과 사용자 정의자가 자신의 역할을 이해하고 수행하는 것이 중요합니다.
