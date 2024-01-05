@@ -1,29 +1,29 @@
 ---
-title: 범용 편집기의 필드 유형
-description: 범용 편집기가 지원하는 다양한 유형의 필드와 나만의 앱에 사용할 수 있는 계측기에 대해 알아봅니다.
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+title: 필드 유형
+description: 나만의 앱을 계측하는 방법에 대한 예제를 통해 유니버설 편집기가 구성 요소 레일에서 편집할 수 있는 다양한 유형의 필드에 대해 알아봅니다.
+source-git-commit: b1a188d01371665b4375087847625d89e47d8927
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 7%
+source-wordcount: '278'
+ht-degree: 8%
 
 ---
 
 
-# 범용 편집기의 필드 유형 {#field-types}
+# 필드 유형 {#field-types}
 
-범용 편집기가 지원하는 다양한 유형의 필드와 나만의 앱에 사용할 수 있는 계측기에 대해 알아봅니다.
+나만의 앱을 계측하는 방법에 대한 예제를 통해 유니버설 편집기가 구성 요소 레일에서 편집할 수 있는 다양한 유형의 필드에 대해 알아봅니다.
 
 {{universal-editor-status}}
 
 ## 개요 {#overview}
 
-범용 편집기에서 사용할 앱을 조정할 때 구성 요소를 계측하고 편집기에서 조작할 수 있는 데이터 유형을 정의해야 합니다.
+범용 편집기에서 사용할 앱을 조정할 때 구성 요소를 계측하고 편집기의 구성 요소 레일에서 조작할 수 있는 데이터 유형을 정의해야 합니다.
 
-이 문서에서는 편집기에서 사용할 수 있는 필드 유형에 대한 개요를 제공합니다.
+이 문서에서는 예제 구성과 함께 사용할 수 있는 필드 유형에 대한 개요를 제공합니다.
 
 >[!TIP]
 >
->범용 편집기에 사용할 앱을 계측하는 방법에 익숙하지 않은 경우 문서를 참조하십시오 [AEM 개발자를 위한 유니버설 편집기 개요.](help/implementing/universal-editor/developer-overview.md)
+>범용 편집기에 사용할 앱을 계측하는 방법에 익숙하지 않은 경우 문서를 참조하십시오 [AEM 개발자를 위한 유니버설 편집기 개요.](/help/implementing/universal-editor/developer-overview.md)
 
 ## 부울 {#boolean}
 

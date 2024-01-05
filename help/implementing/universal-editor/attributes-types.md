@@ -1,24 +1,24 @@
 ---
-title: 속성 및 유형
-description: Universal Editor에 필요한 데이터 속성 및 유형에 대해 알아봅니다.
+title: 속성 및 항목 유형
+description: 범용 편집기에 필요한 데이터 특성 및 항목 유형에 대해 알아봅니다.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+source-git-commit: 7550491de94f1e2cbb28b07f8abbdaded5aa04ea
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 87%
+source-wordcount: '686'
+ht-degree: 81%
 
 ---
 
 
 # 속성 및 유형 {#attributes-types}
 
-Universal Editor에 필요한 데이터 속성 및 유형에 대해 알아봅니다.
+범용 편집기에 필요한 데이터 특성 및 항목 유형에 대해 알아봅니다.
 
 {{universal-editor-status}}
 
 ## 소개 {#introduction}
 
-Universal Editor에서 앱을 편집할 수 있으려면 앱이 적절하게 구성되어야 합니다. 여기에는 편집기가 앱의 콘텐츠를 편집하는 데 필요한 적절한 메타데이터가 포함됩니다. 이 문서는 이러한 메타데이터의 속성과 유형에 대해 자세히 설명합니다.
+Universal Editor에서 앱을 편집할 수 있으려면 앱이 적절하게 구성되어야 합니다. 여기에는 편집기가 앱의 콘텐츠를 편집하는 데 필요한 적절한 메타데이터가 포함됩니다. 이 문서에서는 해당 메타데이터의 특성 및 항목 유형에 대해 자세히 설명합니다.
 
 >[!NOTE]
 >
