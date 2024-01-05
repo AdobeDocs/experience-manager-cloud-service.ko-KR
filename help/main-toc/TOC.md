@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: cfae48067df75dae54822dc0c6f868cca75887d4
+source-git-commit: c04b9391059e66b343fe2ecab90e26179b2172ac
 workflow-type: tm+mt
-source-wordcount: '4565'
+source-wordcount: '4567'
 ht-degree: 99%
 
 ---
@@ -781,6 +781,7 @@ ht-degree: 99%
       + [플레이스홀더](/help/edge/docs/placeholders.md)
       + [Sitemap](/help/edge/developer/sitemap.md)
       + [SharePoint 설정](/help/edge/docs/setup-customer-sharepoint.md)
+      + [Slack 봇](/help/edge/docs/slack.md)
    + Edge Delivery 애플리케이션 론치 {#launch}
       + [실행 체크리스트](/help/edge/docs/go-live-checklist.md)
       + [푸시 무효화](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
