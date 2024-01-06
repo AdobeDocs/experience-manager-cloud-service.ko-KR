@@ -2,7 +2,7 @@
 title: 실행
 description: 코드 및 콘텐츠가 클라우드에 준비되면 마이그레이션을 수행하는 방법을 알아봅니다
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 75d702cf45e38da4b7259907e7f707b6f18bd428
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '1721'
 ht-degree: 4%
@@ -126,7 +126,7 @@ AEM 소스의 로드는 추출 단계 동안 더 커집니다. 다음 사항에 
 * 최종 컨텐츠 추가 작업을 수행합니다.
 * Dispatcher 구성의 유효성을 검사합니다.
    * 로컬에서 Dispatcher 구성, 유효성 검사 및 시뮬레이션을 용이하게 하는 로컬 Dispatcher 유효성 검사기를 사용하십시오
-      * [로컬 Dispatcher 도구를 설정합니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=en#prerequisites)
+      * [로컬 Dispatcher 도구를 설정합니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html#prerequisites)
    * 가상 호스트 구성을 주의 깊게 검토하십시오.
       * 가장 쉬운(그리고 기본) 솔루션은 다음을 포함하는 것입니다. `ServerAlias *` 의 가상 호스트 파일에서 `/dispatcher/src/conf.d/available_vhostsfolder`.
          * 이렇게 하면 제품 기능 테스트, Dispatcher 캐시 무효화 및 클론이 사용하는 호스트 별칭이 작동할 수 있습니다.
@@ -152,7 +152,7 @@ AEM 소스의 로드는 추출 단계 동안 더 커집니다. 다음 사항에 
       * TTL은 서버에 업데이트를 요청하기 전에 DNS 레코드가 캐시에 남아 있는 시간입니다.
       * TTL이 매우 높은 경우 DNS 레코드 업데이트가 전파되는 데 시간이 더 오래 걸립니다.
 * 비즈니스 요구 사항 및 목표를 충족하는 성능 및 보안 테스트를 실행합니다.
-   * 스테이지 환경에서 테스트를 수행합니다.  생산과 크기가 같습니다.
+   * 스테이지 환경에서 테스트를 수행합니다.  이는 프로덕션 크기와 동일합니다.
    * 개발 환경의 크기가 단계 및 프로덕션과 동일하지 않습니다.
 * 잘라내어 새로운 배포나 콘텐츠 업데이트 없이 실제 Go-Live가 수행되도록 하십시오.
 * Admin Console 사용자 알림 프로필을 만듭니다. 다음을 참조하십시오 [알림 프로필](/help/journey-onboarding/notification-profiles.md)

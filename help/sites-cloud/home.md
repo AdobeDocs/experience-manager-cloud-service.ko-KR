@@ -3,9 +3,9 @@ title: Experience Manager as a Cloud Service Sites를 위한 리소스 지원
 description: 모든 Adobe AEM Cloud Services 지원 리소스에 대한 전체 목록을 살펴보십시오. AEM Sites as Cloud Service 관련 질문에 대한 답변을 찾아보십시오.
 landing-page-description: AEM Sites as a Cloud Service로 작성하고 관리하는 방법을 이해합니다.
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
-source-git-commit: ce841a83d46dc1c4fa2edc858e4a0be0af3ac170
-workflow-type: ht
-source-wordcount: '417'
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+workflow-type: tm+mt
+source-wordcount: '383'
 ht-degree: 100%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 100%
 
 ## 기타 Experience Manager 리소스 {#other-resources}
 
-* [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=ko)
+* [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [Dispatcher 설명서](/help/implementing/dispatcher/overview.md)
 * [HTL 설명서](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 * [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)

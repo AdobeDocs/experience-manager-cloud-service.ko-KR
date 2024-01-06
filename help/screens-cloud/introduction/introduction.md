@@ -2,10 +2,10 @@
 title: AEM Screens as a Cloud Service 소개
 description: 이 페이지는 Adobe Experience Manager Screens as a Cloud Service에 대한 소개로 사용됩니다.
 exl-id: b1cc0a63-ecd3-4d89-ac49-f384cc610cdc
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
-workflow-type: ht
-source-wordcount: '391'
-ht-degree: 100%
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+workflow-type: tm+mt
+source-wordcount: '373'
+ht-degree: 99%
 
 ---
 
@@ -19,9 +19,9 @@ AEM Screens as a Cloud Service는 마케터가 대규모 동적 디지털 경험
 
 Screens as a Cloud Service에는 다음의 두 가지 주요 구성 요소가 있습니다.
 
-* **[Content Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=ko-KR)**&#x200B;는 AEM Cloud Service 또는 AMS(Adobe Managed Services)에서 실행되는 Screens 추가 기능입니다. Screens Content Provider를 통해 콘텐츠 작성자는 채널을 만들고 관리할 수 있습니다. 콘텐츠 작성자는 세부적인 디스플레이 생성 또는 플레이어 등록에 대한 걱정 없이 새 콘텐츠를 추가하고 콘텐츠를 편집할 수 있습니다. Content Provider는 개발 콘텐츠, 디스플레이 또는 플레이어 등록의 기본 세부 정보에서 추상적인 개념을 제공합니다.
+* **[Content Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html)**&#x200B;는 AEM Cloud Service 또는 AMS(Adobe Managed Services)에서 실행되는 Screens 추가 기능입니다. Screens Content Provider를 통해 콘텐츠 작성자는 채널을 만들고 관리할 수 있습니다. 콘텐츠 작성자는 세부적인 디스플레이 생성 또는 플레이어 등록에 대한 걱정 없이 새 콘텐츠를 추가하고 콘텐츠를 편집할 수 있습니다. Content Provider는 개발 콘텐츠, 디스플레이 또는 플레이어 등록의 기본 세부 정보에서 추상적인 개념을 제공합니다.
 
-* **[Services Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=ko-KR)**&#x200B;는 Adobe I/O Runtime에서 실행되는 디지털 사이니지 관리 서비스입니다. Screens Services Provider를 사용하여 콘텐츠를 채널에 추가하면 콘텐츠 작성자, 개발자 및 관리자는 콘텐츠 재생 디스플레이와 플레이어를 관리할 수 있습니다. 또한 Screens Services Provider는 고급 수준에서 재생되는 콘텐츠의 위치와 시기를 오케스트레이터에게 알려 줍니다.
+* **[Services Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html)**&#x200B;는 Adobe I/O Runtime에서 실행되는 디지털 사이니지 관리 서비스입니다. Screens Services Provider를 사용하여 콘텐츠를 채널에 추가하면 콘텐츠 작성자, 개발자 및 관리자는 콘텐츠 재생 디스플레이와 플레이어를 관리할 수 있습니다. 또한 Screens Services Provider는 고급 수준에서 재생되는 콘텐츠의 위치와 시기를 오케스트레이터에게 알려 줍니다.
 
 
 ## 아키텍처 개요 {#architectural-overview}

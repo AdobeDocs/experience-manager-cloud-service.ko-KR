@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager 사용 시 장점
 description: 이 페이지에서는 Cloud Acceleration Manager 사용의 주요 이점을 조명합니다.
 exl-id: d7a6c4f6-0f50-4f44-8a62-4a5769c76bd5
-source-git-commit: fac037b59753ba1de960df47311c1febc2059d27
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '245'
 ht-degree: 34%
 
 ---
@@ -39,4 +39,4 @@ Cloud Acceleration Manager를 사용하면 다음과 같은 주요 이점이 있
 
 ## 다음 단계 {#whats-next}
 
-Cloud Acceleration Manager에 대해 알게 되면 이제 및 를 사용할 준비가 된 것입니다 [Cloud Acceleration Manager 시작](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
+Cloud Acceleration Manager에 대해 알게 되면 이제 및 를 사용할 준비가 된 것입니다 [Cloud Acceleration Manager 시작](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=ko-KR).

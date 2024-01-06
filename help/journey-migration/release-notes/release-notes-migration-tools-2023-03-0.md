@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 릴리스 2023.03.0의 마이그레이션 도구 �
 description: AEM as a Cloud Service 릴리스 2023.03.0의 마이그레이션 도구 릴리스 정보
 feature: Release Information
 exl-id: cdc57cca-e10a-4b0d-b803-910ccc9350a6
-source-git-commit: d7e5a14c2dfee41b4ab5af733218fe58d17871fa
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 10%
+source-wordcount: '301'
+ht-degree: 7%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 10%
 
 ### 릴리스 날짜 {#release-date-bpa}
 
-Best Practices Analyzer v2.1.40의 릴리스 날짜는 2023년 3월 03일입니다.
+Best Practices Analyzer v2.1.40의 릴리스 날짜는 2023년 3월 3일입니다.
 
 ### 새로운 기능 {#what-is-new-bpa}
 
@@ -37,8 +37,8 @@ Best Practices Analyzer v2.1.40의 릴리스 날짜는 2023년 3월 03일입니�
 
 ### 새로운 기능 {#what-is-new-ctt}
 
-* 사용자 매핑이 간소화되었으며 컨텐츠 추출 단계에 통합되었습니다. 설정이 필요하지 않으며 기본적으로 사용자가 콘텐츠 추출을 시작할 때 사용자 매핑이 자동으로 수행됩니다. 필요한 경우 사용자는 사용자 매핑을 비활성화할 수 있습니다. 자세히 알아보기 [여기.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html?lang=en#user-mapping-detail)
-* 다음을 사용하는 사전 복사 단계: [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) 는 컨텐츠 전송 도구와 통합되어 컨텐츠 추출 속도를 크게 향상했습니다. 이 버전의 CTT가 설치되면 사전 복사가 자동으로 구성 및 설치됩니다. 기본적으로 추출이 시작되면 200GB를 초과하는 마이그레이션 세트에 대해 사전 복사가 자동으로 실행됩니다. 필요한 경우 사용자는 비활성화할 수 있습니다. 자세히 알아보기 [여기.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en)
+* 사용자 매핑이 간소화되었으며 컨텐츠 추출 단계에 통합되었습니다. 설정이 필요하지 않으며 기본적으로 사용자가 콘텐츠 추출을 시작할 때 사용자 매핑이 자동으로 수행됩니다. 필요한 경우 사용자는 사용자 매핑을 비활성화할 수 있습니다. 자세히 알아보기 [여기.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html#user-mapping-detail)
+* 다음을 사용하는 사전 복사 단계: [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) 는 컨텐츠 전송 도구와 통합되어 컨텐츠 추출 속도를 크게 향상했습니다. 이 버전의 CTT가 설치되면 사전 복사가 자동으로 구성 및 설치됩니다. 기본적으로 추출이 시작되면 200GB를 초과하는 마이그레이션 세트에 대해 사전 복사가 자동으로 실행됩니다. 필요한 경우 사용자는 비활성화할 수 있습니다. 자세히 알아보기 [여기.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html)
 * 이제 Windows 서버에서 CTT를 사용할 수 있습니다.
 
 ### 버그 수정 {#bug-fixes-ctt}

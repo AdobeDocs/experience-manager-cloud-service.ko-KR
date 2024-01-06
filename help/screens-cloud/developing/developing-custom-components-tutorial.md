@@ -2,10 +2,10 @@
 title: Screens as a Cloud Service에 대한 사용자 정의 구성 요소 개발
 description: 다음 자습서에서는 AEM Screens에 대한 사용자 지정 구성 요소를 만드는 단계를 안내합니다. AEM Screens은 다른 AEM 제품의 많은 기존 디자인 패턴과 기술을 재사용합니다. 이 튜토리얼에서는 AEM Screens용 을 개발할 때 차이점과 특별한 고려 사항을 강조 표시합니다.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '2107'
-ht-degree: 3%
+source-wordcount: '2042'
+ht-degree: 2%
 
 ---
 
@@ -28,12 +28,12 @@ ht-degree: 3%
 
 1. 로컬 개발 환경
 
-튜토리얼 단계 및 스크린샷은 다음을 사용하여 수행됩니다. **CRXDE Lite**. IDE를 사용하여 자습서를 완료할 수도 있습니다. IDE를 사용하여 개발하는 방법에 대한 자세한 정보 [AEM과 함께 여기에서 찾을 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=en)
+튜토리얼 단계 및 스크린샷은 다음을 사용하여 수행됩니다. **CRXDE Lite**. IDE를 사용하여 자습서를 완료할 수도 있습니다. IDE를 사용하여 개발하는 방법에 대한 자세한 정보 [AEM과 함께 여기에서 찾을 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)
 
 
 ## 프로젝트 설정 {#project-setup}
 
-Screens 프로젝트의 소스 코드는 일반적으로 다중 모듈 Maven 프로젝트로 관리됩니다. 튜토리얼을 신속하게 수행하기 위해 다음을 사용하여 프로젝트가 사전 생성되었습니다. [AEM Project Archetype 13](https://github.com/adobe/aem-project-archetype). 에 대한 추가 세부 정보 [maven AEM Project Archetype으로 프로젝트를 만드는 방법은 여기에서 확인할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=en).
+Screens 프로젝트의 소스 코드는 일반적으로 다중 모듈 Maven 프로젝트로 관리됩니다. 튜토리얼을 신속하게 수행하기 위해 다음을 사용하여 프로젝트가 사전 생성되었습니다. [AEM Project Archetype 13](https://github.com/adobe/aem-project-archetype). 에 대한 추가 세부 정보 [maven AEM Project Archetype으로 프로젝트를 만드는 방법은 여기에서 확인할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html).
 
 1. 다음을 사용하여 다음 패키지를 다운로드하여 설치합니다. [CRX 패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp):
 
@@ -129,7 +129,7 @@ AEM Screens에는 기존 WCM Sites 구성 요소에 대해 반드시 true가 아
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
 
-   Screens 구성 요소에는 각 구성 요소에 따라 두 개의 서로 다른 렌더링 필요 [작성 모드](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html?lang=en#page-modes) 사용 중:
+   Screens 구성 요소에는 각 구성 요소에 따라 두 개의 서로 다른 렌더링 필요 [작성 모드](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html#page-modes) 사용 중:
 
    1. **프로덕션**: 미리보기 또는 게시 모드(wcmmode=disabled)
    1. **편집**: 편집, 디자인, 스캐폴딩, 개발자 등 기타 모든 작성 모드에 사용됩니다.
@@ -376,7 +376,7 @@ AEM Screens 구성 요소는 편집 모드와 미리보기/프로덕션 모드�
 
 ## 디자인 페이지 만들기 {#design-page}
 
-AEM Screens 사용 [정적 페이지 템플릿](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html?lang=ko) 및 [디자인 구성](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html?lang=en) 글로벌 변경 사항. 디자인 구성은 채널에서 Parsys에 대해 허용되는 구성 요소를 구성하는 데 자주 사용됩니다. 가장 좋은 방법은 이러한 구성을 앱별 방법으로 저장하는 것입니다.
+AEM Screens 사용 [정적 페이지 템플릿](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html) 및 [디자인 구성](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html) 글로벌 변경 사항. 디자인 구성은 채널에서 Parsys에 대해 허용되는 구성 요소를 구성하는 데 자주 사용됩니다. 가장 좋은 방법은 이러한 구성을 앱별 방법으로 저장하는 것입니다.
 
 We.Retail 실행 프로젝트에 관련된 모든 구성을 저장하는 We.Retail 실행 디자인 페이지가 아래에 만들어집니다.
 

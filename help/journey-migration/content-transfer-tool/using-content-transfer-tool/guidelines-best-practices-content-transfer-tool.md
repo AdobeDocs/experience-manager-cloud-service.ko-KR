@@ -2,10 +2,10 @@
 title: 컨텐츠 전송 도구 사용에 대한 지침 및 우수 사례
 description: 콘텐츠 전송 도구 사용에 대한 지침과 모범 사례에 대해 알아봅니다.
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 5f805122fb52d7f5268075bd7a6a0232e7e8d2ff
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1432'
-ht-degree: 16%
+source-wordcount: '1401'
+ht-degree: 15%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 16%
 
 다음 지침 및 모범 사례는 새 버전의 콘텐츠 전송 도구에 적용됩니다.
 
-* 실행 [개정 정리](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) 및 [데이터 저장소 일관성 검사](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=ko) 다음에 있음 **소스** 잠재적인 문제를 식별하고 저장소의 크기를 줄일 수 있습니다.
+* 실행 [개정 정리](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) 및 [데이터 저장소 일관성 검사](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html) 다음에 있음 **소스** 잠재적인 문제를 식별하고 저장소의 크기를 줄일 수 있습니다.
 
 * Adobe 수집 단계에서는 다음을 사용하여 수집을 실행하는 것이 좋습니다. *지우기* 모드는 target Adobe Experience Manager(AEM) Cloud Service 환경의 기존 저장소(작성자 또는 게시)가 삭제되는 경우에 활성화됩니다. 그런 다음 마이그레이션 세트 데이터로 업데이트합니다. 이 모드는 현재 콘텐츠 위에 마이그레이션 세트가 적용되는 지우지 않음 모드보다 빠릅니다.
 

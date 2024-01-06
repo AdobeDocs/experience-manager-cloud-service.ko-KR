@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.6.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.6.0 릴리스 정보입니다.'
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1435'
-ht-degree: 49%
+source-wordcount: '1432'
+ht-degree: 47%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 49%
 
 >[!NOTE]
 >
->릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
 
 ## 릴리스 일자 {#release-date}
 
@@ -153,7 +153,7 @@ AEM Screens as a Cloud Service 릴리스 날짜는 2021년 6월 24일입니다.
 ### 새로운 기능 {#what-is-new-screens-june}
 
 >[!NOTE]
->다음을 참조하십시오 [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=en) Screens의 성공적인 설치, 구성 및 실행에 필요한 기본 지식에 대한 설명서를 as a Cloud Service으로 제공하고 세부 개념 기술 설명서에 연결합니다.
+>다음을 참조하십시오 [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html) Screens의 성공적인 설치, 구성 및 실행에 필요한 기본 지식에 대한 설명서를 as a Cloud Service으로 제공하고 세부 개념 기술 설명서에 연결합니다.
 
 * Bulk Device Registration Management는 대량의 플레이어 디바이스를 프로비저닝하는 것이 더 빠르고 효율적이라는 것을 의미합니다.
 
@@ -182,7 +182,7 @@ AEM Screens as a Cloud Service 릴리스 날짜는 2021년 6월 24일입니다.
 
 ### 새로운 기능 {#what-is-new-ctt-latest}
 
-* 옵션 지원 [사전 복사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) ctt에서 사용할 단계가 추가되었습니다. 사전 복사 단계는 소스 AEM 인스턴스가 Amazon S3 또는 Azure Blob Storage 데이터 저장소를 사용하도록 구성된 경우 컨텐츠 전송 활동의 추출 및 수집 단계를 크게 가속화하는 데 사용할 수 있습니다.
+* 옵션 지원 [사전 복사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) ctt에서 사용할 단계가 추가되었습니다. 사전 복사 단계는 소스 AEM 인스턴스가 Amazon S3 또는 Azure Blob Storage 데이터 저장소를 사용하도록 구성된 경우 컨텐츠 전송 활동의 추출 및 수집 단계를 크게 가속화하는 데 사용할 수 있습니다.
 
 * 사용자가 수집 단계 중 위험 시점에 도달하면 수집을 중지하고 데이터를 손상시킬 수 있는 문제를 방지하기 위해 CTT에 보호 기능이 추가되었습니다.
 

@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.8.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.8.0 릴리스 정보입니다.'
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
-workflow-type: ht
-source-wordcount: '1687'
-ht-degree: 100%
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+workflow-type: tm+mt
+source-wordcount: '1691'
+ht-degree: 95%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 
 ### [!DNL Experience Manager Sites]의 새로운 기능 {#sites-features}
 
-* 이제 사용자는 [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=ko-KR)을 사용하여 콘텐츠 조각에 메타데이터로 적용된 태그를 보고 검색할 수 있습니다. 사용자가 더 이상 이 기능을 사용하기 위해 자산 UI로 전환할 필요가 없으므로 컨텍스트 전환이 줄어들고 효율성이 향상됩니다.
+* 이제 사용자는 [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)을 사용하여 콘텐츠 조각에 메타데이터로 적용된 태그를 보고 검색할 수 있습니다. 사용자가 더 이상 이 기능을 사용하기 위해 자산 UI로 전환할 필요가 없으므로 컨텍스트 전환이 줄어들고 효율성이 향상됩니다.
 
   ![콘텐츠 조각 콘솔에서 태그 지정](/help/assets/content-fragments-console-tags.png)
 * 이제 AEM as a Cloud Service에서 새 콘텐츠 조각 편집기를 사용할 수 있습니다. 이를 통해 콘텐츠 작성자는 콘텐츠를 편집하는 동안 작성 작업을 간소화하고 다른 앱 간 전환의 필요성을 줄여 생산성을 높일 수 있습니다.
@@ -70,11 +70,11 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
   ![데이터 소스에서 자산 일괄 가져오기](/help/release-notes/assets/bulk-import.png)
 
-* **Adobe Express에서 제공하는 이미지 편집 도구**: AEM Assets 내에서 바로 사용할 수 있는 [Adobe Express 기반의 쉽고 직관적인 이미지 편집 도구](/help/assets/edit-images-assets-view.md)를 사용하면 콘텐츠 재사용률과 콘텐츠 속도를 높일 수 있습니다.
+* **Adobe Express 기반 이미지 편집 도구**: 쉽고 직관적 [Adobe Express 기반의 이미지 편집 도구](/help/assets/edit-images-assets-view.md) AEM Assets 내에서 바로 사용할 수 있으므로 콘텐츠 재사용을 높이고 콘텐츠 속도를 가속화할 수 있습니다.
 
   ![Adobe Express를 사용하여 이미지 편집](/help/release-notes/assets/edit-adobe-express.png)
 
-* **내 작업 영역 바로 가기 항목을 고정하면서 유연성 유지**: 선택 사항을 기반으로 [내 작업 영역의 바로 가기 섹션](/help/assets/my-workspace-assets-view.md)에 표시되도록 사용자, 조직 전체 또는 그룹 목록에 맞는 항목을 선택하고 고정할 수 있는 기능.
+* **내 작업 영역 빠른 액세스에 대한 항목을 고정할 때의 유연성**: 사용자, 전체 조직 또는 그룹 목록에 대해 항목을 선택하고 고정하여 [내 작업 영역의 빠른 액세스 섹션](/help/assets/my-workspace-assets-view.md) 를 참조하십시오.
 
   ![그룹에 맞는 항목 고정](/help/release-notes/assets/pin-items-for-groups.png)
 

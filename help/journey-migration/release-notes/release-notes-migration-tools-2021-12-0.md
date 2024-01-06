@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 릴리스 2021.12.0의 마이그레이션 도구 �
 description: AEM as a Cloud Service 릴리스 2021.12.0의 마이그레이션 도구 릴리스 정보
 feature: Release Information
 exl-id: 4155e1c0-cd40-4cbc-9d6c-b106d68a2db5
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 46%
+source-wordcount: '251'
+ht-degree: 45%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 46%
 이 페이지에서는 AEM as a Cloud Service 2021.12.0의 마이그레이션 도구 릴리스 정보에 대해 간략히 설명합니다.
 
 >[!NOTE]
->Adobe Experience Manager as a Cloud Service의 최신 릴리스 정보를 보려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=ko-kr)를 클릭하십시오.
+>Adobe Experience Manager as a Cloud Service의 최신 릴리스 정보를 보려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ko-KR)를 클릭하십시오.
 
 ## Best Practices Analyzer {#bpa-release}
 
@@ -43,5 +43,5 @@ ht-degree: 46%
 
 ### 새로운 기능 {#what-is-new-ctt}
 
-* 사용자가 비활성화할 수 있도록 컨텐츠 전송 도구의 수집 단계에 추가된 토글 [사전 복사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 수집 중. 수집 속도를 최적화하려면 작은 마이그레이션 세트에 대해 수집 중 사전 복사를 비활성화하거나 마지막 수집 이후 몇 개의 블롭만 추가된 경우 비활성화해야 합니다.
+* 사용자가 비활성화할 수 있도록 컨텐츠 전송 도구의 수집 단계에 추가된 토글 [사전 복사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) 수집 중. 수집 속도를 최적화하려면 작은 마이그레이션 세트에 대해 수집 중 사전 복사를 비활성화하거나 마지막 수집 이후 몇 개의 블롭만 추가된 경우 비활성화해야 합니다.
 * 사용자 매핑은 한 번에 2000명의 사용자를 확보할 수 있는 향상된 사용자 관리 API를 사용하도록 업데이트되어 성능이 크게 향상되었습니다.

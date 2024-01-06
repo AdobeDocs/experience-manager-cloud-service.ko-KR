@@ -2,10 +2,10 @@
 title: Cloud Manager에서 기존 프로그램에 Screens 추가 기능 추가
 description: Cloud Manager for Screens에서 기존 프로그램에 as a Cloud Service으로 Screens 추가 기능을 추가하는 방법에 대해 알아봅니다.
 exl-id: 0f9a2c21-2d45-470e-a096-443741f9f2ab
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 6%
+source-wordcount: '244'
+ht-degree: 3%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 6%
 이 섹션에서는 Cloud Manager에서 기존 프로그램에 추가 기능으로서 Screens를 추가하는 방법에 대해 설명합니다.
 
 >[!NOTE]
->다음을 참조하십시오 [프로그램 및 프로그램 유형 이해](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=en) cloud Manager 프로그램에 대해 자세히 알아보십시오.
+>다음을 참조하십시오 [프로그램 및 프로그램 유형 이해](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html) cloud Manager 프로그램에 대해 자세히 알아보십시오.
 
 ## 목표 {#objective}
 
@@ -27,7 +27,7 @@ ht-degree: 6%
 1. 다음으로 이동 [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
-   >다음을 참조하십시오 [Cloud Manager 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html?lang=ko) Cloud Manager에 대해 자세히 알아보십시오.
+   >다음을 참조하십시오 [Cloud Manager 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html) Cloud Manager에 대해 자세히 알아보십시오.
 
 1. 프로젝트로 이동한 다음 **프로그램 편집** cloud Manager의 옵션 **개요** 페이지를 가리키도록 업데이트하는 중입니다.
 

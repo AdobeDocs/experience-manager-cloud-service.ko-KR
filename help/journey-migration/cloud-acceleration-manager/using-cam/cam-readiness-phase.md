@@ -2,10 +2,10 @@
 title: Cloud Acceleration Manager의 준비 단계
 description: 이 페이지에서는 Cloud Acceleration Manager의 준비 단계에 대한 개요를 제공합니다.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 6%
+source-wordcount: '944'
+ht-degree: 4%
 
 ---
 
@@ -45,7 +45,7 @@ Cloud Acceleration Manager에서 프로젝트를 생성했으면 이제 준비 �
    1. 다음 위치로 이동 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 우수 사례 분석기를 포털에 다운로드하고 zip 파일로 다운로드합니다.
 
       >[!NOTE]
-      >리뷰 [Best Practices Analyzer 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#imp-considerations) 를 사용하여 BPA를 실행하는 방법을 알아봅니다.
+      >리뷰 [Best Practices Analyzer 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html#imp-considerations) 를 사용하여 BPA를 실행하는 방법을 알아봅니다.
 
    1. 보고서를 CSV 형식으로 내보내기
 
@@ -159,7 +159,7 @@ Cloud Acceleration Manager에서 프로젝트를 생성했으면 이제 준비 �
 ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->다음을 참조하십시오 [모범 사례 분석기 보고서 해석](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) 결과 카테고리 및 중요도 수준에 대해 알아봅니다.
+>다음을 참조하십시오 [모범 사례 분석기 보고서 해석](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html) 결과 카테고리 및 중요도 수준에 대해 알아봅니다.
 
 #### 모범 사례 평가 {#best-practices-assessment}
 
@@ -220,4 +220,4 @@ Cloud Acceleration Manager에서 프로젝트를 생성했으면 이제 준비 �
 
 ## 다음 단계 {#whats-next}
 
-Cloud Acceleration Manager에 로그인하는 방법과 프로젝트를 만드는 방법을 배운다면 이제 의 다음 단계를 검토할 준비가 된 것입니다. [구현 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).
+Cloud Acceleration Manager에 로그인하는 방법과 프로젝트를 만드는 방법을 배운다면 이제 의 다음 단계를 검토할 준비가 된 것입니다. [구현 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html).

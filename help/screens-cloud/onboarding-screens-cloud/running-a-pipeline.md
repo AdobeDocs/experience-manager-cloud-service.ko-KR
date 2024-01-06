@@ -2,10 +2,10 @@
 title: 파이프라인 실행
 description: 이 페이지에서는 Cloud Manager에서 Screens용 파이프라인을 Cloud Service 프로젝트로 실행하는 방법에 대해 설명합니다.
 exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 3%
+source-wordcount: '271'
+ht-degree: 4%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 3%
 이 섹션에서는 Cloud Manager에서 파이프라인을 실행하고 프로그램에 대한 코드를 배포하는 방법을 설명합니다.
 
 >[!NOTE]
->다음을 참조하십시오 [CI-CD 파이프라인 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=en) 및 [코드 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=en) cloud Manager에서 프로그램에 대한 파이프라인을 실행하는 방법을 알아봅니다.
+>다음을 참조하십시오 [CI-CD 파이프라인 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html) 및 [코드 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html) cloud Manager에서 프로그램에 대한 파이프라인을 실행하는 방법을 알아봅니다.
 
 ## 목표 {#objective}
 
@@ -35,14 +35,14 @@ ht-degree: 3%
 1. 다음에서 옵션을 선택합니다. **파이프라인 설정** 마법사. **저장**&#x200B;을 클릭합니다.
 
    >[!NOTE]
-   >파이프라인 설정 마법사의 옵션에 대한 자세한 내용은 다음을 참조하십시오. [Cloud Manager에서 파이프라인 설정 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=en) 을 참조하십시오.
+   >파이프라인 설정 마법사의 옵션에 대한 자세한 내용은 다음을 참조하십시오. [Cloud Manager에서 파이프라인 설정 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html) 을 참조하십시오.
 
    ![이미지](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
 
 1. 설정 파이프라인이 완료되면 콜 투 액션 카드가 업데이트됩니다.
 
    >[!NOTE]
-   >Cloud Manager의 배포 단계에 대한 자세한 내용은 다음을 참조하십시오. [코드 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=en) 을 참조하십시오.
+   >Cloud Manager의 배포 단계에 대한 자세한 내용은 다음을 참조하십시오. [코드 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html) 을 참조하십시오.
 
    ![이미지](/help/screens-cloud/assets/onboarding/run-pipeline3.png)
 

@@ -2,10 +2,10 @@
 title: 복제
 description: AEM as a Cloud Service으로 배포 및 복제 문제 해결에 대해 알아봅니다.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1341'
-ht-degree: 41%
+source-wordcount: '1312'
+ht-degree: 39%
 
 ---
 
@@ -57,13 +57,13 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
 
 원래 모델을 호출하지 마십시오. 대신 먼저 모델을 복사하고 해당 복사본을 호출해야 합니다.
 
-모든 워크플로와 마찬가지로 API를 통해 호출할 수도 있습니다. 자세한 내용은 [프로그래밍 방식으로 워크플로우와 상호 작용](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=ko-kr#extending-aem).
+모든 워크플로와 마찬가지로 API를 통해 호출할 수도 있습니다. 자세한 내용은 [프로그래밍 방식으로 워크플로우와 상호 작용](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
 
 또는 다음을 사용하는 워크플로 모델을 만들 수 있습니다. `Publish Content Tree` 프로세스 단계:
 
 1. AEM as a Cloud Service 홈페이지에서 **도구 - 워크플로 - 모델**.
 1. 워크플로우 모델 페이지에서 를 누릅니다. **만들기** 화면의 오른쪽 상단에 있습니다.
-1. 모델에 제목과 이름을 추가합니다. 자세한 내용은 [워크플로 모델 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)를 참조하십시오..
+1. 모델에 제목과 이름을 추가합니다. 자세한 내용은 [워크플로우 모델 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
 1. 목록에서 생성된 모델을 선택하고 키를 누릅니다 **편집**
 1. 다음 창에서 프로세스 단계를 현재 모델 플로우로 드래그하여 놓습니다.
 

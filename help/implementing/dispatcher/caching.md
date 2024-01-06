@@ -3,10 +3,10 @@ title: AEM as a Cloud Service에서 캐싱
 description: AEM as a Cloud Service 캐싱의 기본 사항에 대해 알아봅니다.
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '2873'
-ht-degree: 2%
+source-wordcount: '2775'
+ht-degree: 1%
 
 ---
 
@@ -42,7 +42,7 @@ Define DISABLE_DEFAULT_CACHING
   ```
 
   >[!NOTE]
-  >Surrogate-Control 헤더는 Adobe 관리 CDN에 적용됩니다. 를 사용하는 경우 [고객 관리 CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN): CDN 공급자에 따라 다른 헤더가 필요할 수 있습니다.
+  >Surrogate-Control 헤더는 Adobe 관리 CDN에 적용됩니다. 를 사용하는 경우 [고객 관리 CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html#point-to-point-CDN): CDN 공급자에 따라 다른 헤더가 필요할 수 있습니다.
 
   전역 캐시 제어 헤더나 넓은 정규식과 일치하는 유사한 캐시 헤더를 설정할 때 주의해서 사용해야 하는 콘텐츠에 해당 헤더가 적용되지 않도록 합니다. 규칙이 세분화된 방식으로 적용되도록 하려면 여러 지시문을 사용하는 것이 좋습니다. 이를 통해 AEM은 Dispatcher 설명서에 설명된 대로 Dispatcher에서 캐시할 수 없다고 감지한 항목에 적용되었음을 감지하는 경우 캐시 헤더를 as a Cloud Service으로 제거합니다. AEM에서 항상 캐싱 헤더를 적용하도록 하려면 다음을 추가할 수 있습니다. **`always`** 옵션은 다음과 같습니다.
 
@@ -240,7 +240,7 @@ Adobe CDN에서 다음과 같은 리소스에 대한 HEAD 요청을 받는 경�
 
 이 동작을 비활성화하려면 지원 티켓을 제출하십시오.
 
-2023년 10월 이전에 생성된 환경의 경우 Dispatcher 구성을 `ignoreUrlParams` 다음으로 속성: [여기에 문서화됨](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+2023년 10월 이전에 생성된 환경의 경우 Dispatcher 구성을 `ignoreUrlParams` 다음으로 속성: [여기에 문서화됨](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
 
 
 ## 디스패처 캐시 무효화 {#disp}

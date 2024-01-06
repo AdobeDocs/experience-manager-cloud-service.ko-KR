@@ -3,9 +3,9 @@ title: 클라우드의 Dispatcher
 description: Dispatcher 도구, 지원되는 Apache 모듈, 레거시 및 유연한 모드에 대해 알아봅니다.
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '716'
 ht-degree: 100%
 
 ---
@@ -50,7 +50,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 Dispatcher 도구를 사용하여 프로젝트의 Dispatcher 구성을 확인하고 디버그합니다. 프로젝트의 Dispatcher 구성이 유연한 모드 또는 레거시 모드로 구조화되어 있는지 여부에 따라 아래 참조 페이지에서 해당 도구를 사용하는 방법에 대해 자세히 알아봅니다.
 
-* **유연한 모드** - 권장 모드이면서 [AEM Archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko) 이상에 대한 기본값으로 Cloud Manager 2021.7.0 릴리스 이후에 생성된 새 환경의 Cloud Manager에서도 사용됩니다. 고객은 폴더와 파일을 추가하여 이 모드를 활성화할 수 있습니다`opt-in/USE_SOURCES_DIRECTLY`. 보다 유연한 이 모드를 사용하게 되면 레거시 모드에서 단일 `rewrite.rules` 파일이 필수였던 rewrites 폴더의 파일 구조에는 제한 사항이 없습니다. 또한 추가할 수 있는 규칙 수에는 제한 사항이 없습니다. 폴더 구조 및 로컬 유효성 확인에 대한 자세한 내용은 [Dispatcher 도구를 사용하여 확인 및 디버깅](/help/implementing/dispatcher/validation-debug.md)을 참조하십시오.
+* **유연한 모드** - 권장 모드이면서 [AEM Archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 이상에 대한 기본값으로 Cloud Manager 2021.7.0 릴리스 이후에 생성된 새 환경의 Cloud Manager에서도 사용됩니다. 고객은 폴더와 파일을 추가하여 이 모드를 활성화할 수 있습니다`opt-in/USE_SOURCES_DIRECTLY`. 보다 유연한 이 모드를 사용하게 되면 레거시 모드에서 단일 `rewrite.rules` 파일이 필수였던 rewrites 폴더의 파일 구조에는 제한 사항이 없습니다. 또한 추가할 수 있는 규칙 수에는 제한 사항이 없습니다. 폴더 구조 및 로컬 유효성 확인에 대한 자세한 내용은 [Dispatcher 도구를 사용하여 확인 및 디버깅](/help/implementing/dispatcher/validation-debug.md)을 참조하십시오.
 
 * **레거시 모드** - Dispatcher 구성 레거시 모드의 폴더 구조 및 로컬 유효성 확인에 대한 자세한 내용은 [Dispatcher 도구를 사용하여 확인 및 디버깅(레거시)](/help/implementing/dispatcher/validation-debug-legacy.md)을 참조하십시오.
 

@@ -2,14 +2,14 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2020.12.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2020.12.0 릴리스 정보입니다.'
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 12%
+source-wordcount: '652'
+ht-degree: 11%
 
 ---
 
-# [!DNL Adobe Experience Manager]as a Cloud Service 릴리스 정보 {#release-notes}
+# 의 릴리스 정보 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 다음 섹션에서는 의 일반 릴리스 정보에 대해 간략히 소개합니다. [!DNL Experience Manager] as a Cloud Service.
 
@@ -64,7 +64,7 @@ Adobe Experience Manager(AEM) as a Cloud Service 2020.12.0의 Cloud Manager 릴�
 
 ### [!DNL Code Refactoring Tools]의 새로운 기능 {#what-is-new-crt}
 
-* 새로운 버전의 AIO-CLI 플러그인이 출시되었습니다. 이 플러그인의 최신 버전에는 AEM Dispatcher Converter 및 Repository Modernizer에 대한 버그 수정이 포함되어 있으며 새 유틸리티인 Index Converter도 지원합니다. 다음을 참조하십시오 [통합 경험](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html?lang=en#benefits) 여기서 이 플러그인에 대해 자세히 알아볼 수 있습니다.
+* 새로운 버전의 AIO-CLI 플러그인이 출시되었습니다. 이 플러그인의 최신 버전에는 AEM Dispatcher Converter 및 Repository Modernizer에 대한 버그 수정이 포함되어 있으며 새 유틸리티인 Index Converter도 지원합니다. 다음을 참조하십시오 [통합 경험](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html#benefits) 여기서 이 플러그인에 대해 자세히 알아볼 수 있습니다.
 
 * AEM Index Converter는 고객의 사용자 지정 Oak 색인 정의를 as a Cloud Service으로 호환되는 Oak 색인 정의로 변환하는 데 사용할 수 있는 유틸리티입니다. 다음을 참조하십시오 [인덱스 변환기](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) 을 참조하십시오.
 

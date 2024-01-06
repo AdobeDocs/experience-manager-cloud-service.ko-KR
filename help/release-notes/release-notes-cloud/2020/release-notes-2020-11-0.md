@@ -2,14 +2,14 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2020.11.0 릴리스 정보입니다.'
 description: "[!DNL Adobe Experience Manager] 2020.11.0의 as a Cloud Service 릴리스 노트"
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1262'
-ht-degree: 18%
+source-wordcount: '1223'
+ht-degree: 15%
 
 ---
 
-# [!DNL Adobe Experience Manager]as a Cloud Service 릴리스 정보 {#release-notes}
+# 의 릴리스 정보 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 다음 섹션에서는 의 일반 릴리스 정보에 대해 간략히 소개합니다. [!DNL Experience Manager] as a Cloud Service.
 
@@ -34,7 +34,7 @@ ht-degree: 18%
 
 * **일괄 에셋 수집**: 를 사용하는 확장 가능한 클라우드 기반 수집 서비스를 고객에게 제공합니다. [!DNL Experience Manager] 자산 마이크로서비스를 포함한 as a Cloud Service 아키텍처. 주요 사용 사례에는 모니터링, 보고 및 예약을 통한 대규모 수집이 포함되며, 일반적인 클라우드 업로드 도구를 사용하여 에셋을 클라우드 데이터 저장소로 초기 전송할 수 있습니다. 다음을 참조하십시오 [일괄 에셋 수집기 도구](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-  이 도구는 시스템 관리자, 컨설턴트 또는 구현 파트너 담당자를 위한 것입니다. 이 기능은 대량의 수집을 허용하며 초기 수집 또는 가끔 대량의 수집 중에 이상적으로 사용됩니다. 소규모 수집 작업의 경우 [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) 또는 [자산 사용자 인터페이스를 사용하여 업로드](/help/assets/add-assets.md#upload-assets).
+  이 도구는 시스템 관리자, 컨설턴트 또는 구현 파트너 담당자를 위한 것입니다. 이 기능은 대량의 수집을 허용하며 초기 수집 또는 가끔 대량의 수집 중에 이상적으로 사용됩니다. 소규모 수집 작업의 경우 [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html) 또는 [자산 사용자 인터페이스를 사용하여 업로드](/help/assets/add-assets.md#upload-assets).
 
   ![대량 가져오기 구성](/help/assets/assets/bulk-import-config-low-res.png)
 
@@ -113,7 +113,7 @@ AEM as a Cloud Service 2020.11.0의 Cloud Manager 릴리스 일자는 2020년 11
 
 ### SDK Build Analyzer {#analyzers}
 
-AEM as a Cloud Service SDK Build Analyzer Maven 플러그인은 누락된 종속성을 포함하여 Maven 프로젝트의 문제를 감지합니다. Cloud Manager를 사용하여 클라우드 환경에 배포하기 전에 개발자에게 로컬 개발 중에 문제를 발견할 수 있는 기회를 제공합니다. 자세한 내용은 설명서 를 참조하십시오. [여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=ko-KR#developing) 및 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk).
+AEM as a Cloud Service SDK Build Analyzer Maven 플러그인은 누락된 종속성을 포함하여 Maven 프로젝트의 문제를 감지합니다. 개발자는 Cloud Manager를 사용하여 클라우드 환경으로 배포하기 전에 로컬 개발 중에 문제를 발견할 수 있습니다. 자세한 내용은 설명서 를 참조하십시오. [여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html#developing) 및 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html#building-for-the-sdk).
 
 ### 기타 {#others-foundation}
 

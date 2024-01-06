@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.3.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.3.0 릴리스 정보입니다.'
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 84%
+source-wordcount: '1158'
+ht-degree: 83%
 
 ---
 
@@ -113,7 +113,7 @@ ht-degree: 84%
 
 ### 새로운 기능 {#what-is-new-ctt}
 
-* 점검 크기 가드레일 - 콘텐츠 전송 도구 점검 크기 기능을 사용하여 콘텐츠 전송 실패율을 줄일 수 있습니다.  Check Size 기능을 사용하여 1) 사용자에게 디스크 공간이 충분한지 여부를 `crx-quickstart` 추출하기 전에 하위 디렉터리, 2) 마이그레이션 세트 크기를 예측하고 지원되는지 확인합니다. 이러한 검사 중 하나 또는 둘 다 위반한 경우 CTT UI에 경고가 표시됩니다. 이 가드레일을 사용하여 콘텐츠 전송 실패를 방지하고, Adobe 고객 지원 센터와 주도적으로 마이그레이션 옵션에 대해 논의할 수 있습니다. 다음을 참조하십시오 [마이그레이션 세트 크기 및 디스크 공간 확인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ko#migration-set-size) 을 참조하십시오.
+* 점검 크기 가드레일 - 콘텐츠 전송 도구 점검 크기 기능을 사용하여 콘텐츠 전송 실패율을 줄일 수 있습니다.  Check Size 기능을 사용하여 1) 사용자에게 디스크 공간이 충분한지 여부를 `crx-quickstart` 추출하기 전에 하위 디렉터리, 2) 마이그레이션 세트 크기를 예측하고 지원되는지 확인합니다. 이러한 검사 중 하나 또는 둘 다 위반한 경우 CTT UI에 경고가 표시됩니다. 이 가드레일을 사용하여 콘텐츠 전송 실패를 방지하고, Adobe 고객 지원 센터와 주도적으로 마이그레이션 옵션에 대해 논의할 수 있습니다. 다음을 참조하십시오 [마이그레이션 세트 크기 및 디스크 공간 확인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#migration-set-size) 을 참조하십시오.
 
 ## Best Practices Analyzer {#bpa-release}
 

@@ -3,10 +3,10 @@ title: AEM Screens as a Cloud Service
 description: AEM Screens와 이 디지털 사이니지 솔루션의 작동 방식에 대해 자세히 알아보십시오.
 landing-page-description: AEM Screens as a Cloud Service에 대해 이해합니다.
 exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
-source-wordcount: '420'
-ht-degree: 100%
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 98%
 
 ---
 
@@ -15,16 +15,16 @@ ht-degree: 100%
 이 페이지에서 AEM Screens와 이 디지털 사이니지 솔루션의 작동 방식에 대해 보다 깊이 이해할 수 있습니다. 자습 리소스를 확인하고 새로운 기능에 대해 알아보십시오.
 
 >[!NOTE]
->AEM 6.5가 포함된 AEM Screens의 경우 [AEM Screens 사용 안내서 ](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=ko)를 참조하십시오.
+>AEM 6.5가 포함된 AEM Screens의 경우 [AEM Screens 사용 안내서 ](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)를 참조하십시오.
 
 
 ## 주요 콘텐츠 및 AEM Screens as a Cloud Service 문서 {#key-articles}
 
-* [소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/overview/introduction.html?lang=ko-KR)
-* [온보딩](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=ko-KR)
-* [Screens 서비스 및 콘텐츠 제공자 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=ko-KR)
-* [Screens as a Cloud Service에서 프로젝트 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=ko-KR)
-* [Screens 플레이어 설치](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=ko-KR)
+* [소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/overview/introduction.html)
+* [온보딩](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html)
+* [Screens 서비스 및 콘텐츠 제공자 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html)
+* [Screens as a Cloud Service에서 프로젝트 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html)
+* [Screens 플레이어 설치](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html)
 
 ## Experience Manager as a Cloud Service 안내서 {#aem-guides}
 

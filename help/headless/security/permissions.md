@@ -3,9 +3,9 @@ title: Headless 콘텐츠에 대한 권한 고려 사항
 description: Adobe Experience Manager를 사용한 Headless 구현에 대한 다양한 권한 및 ACL 고려 사항에 대해 알아봅니다. Author 및 Publish 환경 모두에 필요한 다양한 가상 사용자 및 잠재적 권한 수준을 이해합니다.
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '811'
 ht-degree: 96%
 
 ---
@@ -22,7 +22,7 @@ Author 서비스는 내부 사용자가 콘텐츠를 만들고 관리하고 게�
 
 가장 좋은 방법은 AEM의 그룹에 권한을 설정하는 것입니다. 로컬 그룹이라고도 하는 이러한 그룹은 AEM Author 환경 내에서 관리할 수 있습니다.
 
-그룹 멤버십을 관리하는 가장 쉬운 방법은 Adobe IMS(Identity Management System) 그룹을 사용하고 [IMS 그룹을 로컬 AEM 그룹에 할당](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en#managing-permissions-in-aem)하는 것입니다.
+그룹 멤버십을 관리하는 가장 쉬운 방법은 Adobe IMS(Identity Management System) 그룹을 사용하고 [IMS 그룹을 로컬 AEM 그룹에 할당](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#managing-permissions-in-aem)하는 것입니다.
 
 ![Admin Console 권한 흐름](assets/admin-console-aem-group-permissions.png)
 

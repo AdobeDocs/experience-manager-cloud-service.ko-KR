@@ -2,10 +2,10 @@
 title: Screens 콘텐츠 공급자 사용
 description: 이 페이지에서는 Screens 콘텐츠 공급자를 사용하여 콘텐츠를 만드는 방법에 대해 설명합니다.
 exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 14%
+source-wordcount: '377'
+ht-degree: 15%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 14%
 
 ## 목표 {#objective}
 
-다음 섹션에서는 설치를 마친 후 Screens Content Provider를 사용하는 방법에 대해 설명합니다 [Screens Services 공급자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en).
+다음 섹션에서는 설치를 마친 후 Screens Content Provider를 사용하는 방법에 대해 설명합니다 [Screens Services 공급자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html).
 
 ## Screens Content Provider 사용 {#screens-content-provider}
 
 >[!NOTE]
 >**전제 조건**
->이 섹션을 읽기 전에 다음을 참조하십시오 [Screens Services Provider 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en) Screens Services Provider에서 이 사용자 인터페이스로 이동하는 방법을 알아봅니다.
+>이 섹션을 읽기 전에 다음을 참조하십시오 [Screens Services Provider 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html) Screens Services Provider에서 이 사용자 인터페이스로 이동하는 방법을 알아봅니다.
 
 아래 단계에 따라 Screens Content Provider에 로그인합니다.
 
@@ -40,7 +40,7 @@ ht-degree: 14%
    ![Cloud Manager의 개요 페이지에 대한 아이콘은 도구 모음의 맨 왼쪽에 표시됩니다.](/help/screens-cloud/assets/configure/screens-cp-1.png)
 
    >[!NOTE]
-   >프로그램을 만들지 않은 경우 [Screens에 처음 as a Cloud Service 로그인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en). 이 항목에서는 Cloud Manager에서 Screens as a Cloud Service으로 프로그램을 추가하는 과정을 안내합니다.
+   >프로그램을 만들지 않은 경우 [Screens에 처음 as a Cloud Service 로그인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html). 이 항목에서는 Cloud Manager에서 Screens as a Cloud Service으로 프로그램을 추가하는 과정을 안내합니다.
 
 1. 에서 링크를 선택합니다. **환경** Screens Content Provider에 액세스할 수 있는 카드입니다.
 
@@ -56,4 +56,4 @@ ht-degree: 14%
 
 ## 다음 단계 {#whats-next}
 
-Screens 콘텐츠 공급자로 이동하는 방법에 대해 알아보았으므로, 이제 문서를 검토하여 Screens as a Cloud Service 여정을 계속하십시오. [Screens에서 프로젝트 생성 및 관리 as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en).
+Screens 콘텐츠 공급자로 이동하는 방법에 대해 알아보았으므로, 이제 문서를 검토하여 Screens as a Cloud Service 여정을 계속하십시오. [Screens에서 프로젝트 생성 및 관리 as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html).

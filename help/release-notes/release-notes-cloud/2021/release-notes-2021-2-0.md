@@ -2,15 +2,15 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.2.0 릴리스 정보입니다.'
 description: "[!DNL Adobe Experience Manager] 2021.2.0용 as a Cloud Service 릴리스 노트"
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1228'
-ht-degree: 34%
+source-wordcount: '1185'
+ht-degree: 32%
 
 ---
 
 
-# [!DNL Adobe Experience Manager]as a Cloud Service 릴리스 정보 {#release-notes}
+# 의 릴리스 정보 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 다음 섹션에서는 의 일반 릴리스 정보에 대해 간략히 소개합니다. [!DNL Experience Manager] as a Cloud Service.
 
@@ -55,7 +55,7 @@ ht-degree: 34%
 
 * 에셋은 다음을 사용하여 소싱 할 수 있습니다. [!DNL Experience Manager Assets Brand Portal]. 새로운 마케팅 캠페인, 사진 촬영 및 프로젝트를 위해 에이전시 사용자로부터 에셋을 소싱하는 데 도움이 됩니다.
 
-* [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 은(는) 사전 구성된 을(를) 가질 수 있습니다 [!DNL Brand Portal] 인스턴스. 다음 [!DNL Cloud Manager] 사용자가 활성화 가능 [!DNL Brand Portal] 날짜 [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. 다음을 참조하십시오 [Brand Portal 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=ko-KR).
+* [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 은(는) 사전 구성된 을(를) 가질 수 있습니다 [!DNL Brand Portal] 인스턴스. 다음 [!DNL Cloud Manager] 사용자가 활성화 가능 [!DNL Brand Portal] 날짜 [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. 다음을 참조하십시오 [Brand Portal 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
 
 * 이제 기업은 다음을 사용하여 자산을 소싱할 수 있습니다. [!DNL Brand Portal]. 에셋 소싱 기능 사용 [!DNL Brand Portal] 고객이 에이전시 사용자와 협력하여 새로운 마케팅 캠페인, 사진 촬영 및 프로젝트에 대한 에셋을 소싱할 수 있도록 지원합니다. 다음을 참조하십시오 [에서 에셋 소싱 [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
 
@@ -78,7 +78,7 @@ ht-degree: 34%
 
 * 연결된 콘텐츠로 빠르게 이동하는 작업을 포함하여 연결된 에셋 및 경험 조각을 표시하도록 제품 콘솔 속성을 확장했습니다.
 
-* 최신 CIF 코어 구성 요소 버전 v1.8.0이 포함된 CIF Venia 참조 사이트 - 2021.02.24가 릴리스되었습니다. 다음을 참조하십시오 [CIF Venia 참조 사이트](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) 을 참조하십시오.
+* 최신 CIF 핵심 구성 요소 버전 v1.8.0이 포함된 CIF Venia 참조 사이트 - 2021.02.24가 릴리스되었습니다. 다음을 참조하십시오 [CIF Venia 참조 사이트](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) 을 참조하십시오.
 
 * CIF 코어 구성 요소 v1.8.0이 릴리스되었습니다. 다음을 참조하십시오 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) 을 참조하십시오.
 
@@ -91,7 +91,7 @@ AEM as a Cloud Service 2021.2.0의 Cloud Manager 릴리스 일자는 2021년 2�
 ### 새로운 기능 {#what-is-new-cloud-manager}
 
 
-* 이제 Assets 고객은 Cloud Manager UI를 통해 셀프서비스 방식으로 Brand Portal 인스턴스를 배포할 시기와 위치를 선택할 수 있습니다. Assets 솔루션이 포함된 일반(샌드박스가 아닌) 프로그램의 경우 이제 Brand Portal을 프로덕션 환경에서 프로비저닝할 수 있습니다. 프로비저닝은 프로덕션 환경에서 한 번만 수행할 수 있습니다.
+* 이제 Assets 고객은 Cloud Manager UI를 통해 셀프서비스 방식으로 Brand Portal 인스턴스를 배포할 시기와 위치를 선택할 수 있습니다. Assets 솔루션이 포함된 일반(샌드박스가 아닌) 프로그램의 경우, 이제 Brand Portal을 프로덕션 환경에서 프로비저닝할 수 있습니다. 프로비저닝은 프로덕션 환경에서 한 번만 수행할 수 있습니다.
 
 * 프로젝트 및 샌드박스 만들기에 사용되는 AEM Project Archetype이 버전 25로 업데이트되었습니다.
 
@@ -131,7 +131,7 @@ AEM as a Cloud Service 2021.2.0의 Cloud Manager 릴리스 일자는 2021년 2�
 
 ### 릴리스 일자 {#release-date-ctt-feb}
 
-콘텐츠 전송 도구 v1.2.2의 릴리스 날짜는 2021년 2월 01일입니다.
+컨텐츠 전송 도구 v1.2.2의 릴리스 날짜는 2021년 2월 1일입니다.
 
 ### 컨텐츠 전송 도구의 새로운 기능 {#what-is-new-ctt}
 
@@ -159,7 +159,7 @@ Best Practices Analyzer v2.1.2의 릴리스 날짜는 2021년 2월 18일입니�
 ### 코드 리팩터링 도구의 새로운 기능 {#what-is-new-crt}
 
 * 새로운 버전의 AIO-CLI 플러그인이 출시되었습니다. 이 플러그인의 최신 버전에는 Repository Modernizer에 대한 몇 가지 버그 수정이 포함되어 있습니다.
-다음을 참조하십시오 [통합 경험](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) 이 플러그인에 대해 자세히 알아보십시오.
+다음을 참조하십시오 [통합 경험](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) 이 플러그인에 대해 자세히 알아보십시오.
 
 ### 버그 수정 {#bug-fixes-crt}
 

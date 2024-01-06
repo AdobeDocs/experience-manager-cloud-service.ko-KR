@@ -2,10 +2,10 @@
 title: Screens에서 프로젝트 만들기 as a Cloud Service
 description: Screens에서 프로젝트를 as a Cloud Service으로 만드는 방법에 대해 알아봅니다.
 exl-id: 89e3ac28-7537-413d-b63b-abd2bbae6cb7
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 2%
+source-wordcount: '326'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ Screens as a Cloud Service에서 새 프로젝트를 구현하는 첫 번째 단
 1. Screens 콘텐츠 공급자로 이동합니다.
 
    >[!NOTE]
-   >다음을 참조하십시오 [Screens Content Provider 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en) Screens Content Provider에 액세스하여 프로젝트를 만드는 방법을 살펴볼 수 있습니다.
+   >다음을 참조하십시오 [Screens Content Provider 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html) Screens Content Provider에 액세스하여 프로젝트를 만드는 방법을 살펴볼 수 있습니다.
 
 1. 작업 표시줄의 오른쪽 위 모서리 근처에서 **스크린 프로젝트 만들기**.
 

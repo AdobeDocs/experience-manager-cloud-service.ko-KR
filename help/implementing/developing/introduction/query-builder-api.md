@@ -2,9 +2,9 @@
 title: 쿼리 빌더 API
 description: 자산 공유 쿼리 빌더의 기능은 Java&trade; API 및 REST API를 통해 노출됩니다.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '2008'
+source-wordcount: '1830'
 ht-degree: 0%
 
 ---
@@ -27,9 +27,9 @@ REST API는 JSON으로 전송되는 응답과 함께 HTTP를 통해 동일한 �
 
 ## Gem 세션 {#gem-session}
 
-[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=en) 는 Adobe 전문가가 Adobe Experience Manager에 제공하는 일련의 기술적인 분석입니다.
+[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html) 는 Adobe 전문가가 Adobe Experience Manager에 제공하는 일련의 기술적인 분석입니다.
 
-다음을 수행할 수 있습니다. [쿼리 빌더 전용 세션 검토](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html?lang=en) 을 참조하십시오.
+다음을 수행할 수 있습니다. [쿼리 빌더 전용 세션 검토](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html) 을 참조하십시오.
 
 ## 샘플 쿼리 {#sample-queries}
 

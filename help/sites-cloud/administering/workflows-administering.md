@@ -1,12 +1,13 @@
 ---
 title: 워크플로 인스턴스 관리
-description: 워크플로 인스턴스 관리 방법 알아보기 워크플로 콘솔 사용
+description: 워크플로 콘솔을 사용하여 워크플로 인스턴스를 관리하는 방법 알아보기
 feature: Administering
 role: Admin
-source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
-workflow-type: ht
-source-wordcount: '1288'
-ht-degree: 100%
+exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+workflow-type: tm+mt
+source-wordcount: '1286'
+ht-degree: 98%
 
 ---
 
@@ -46,7 +47,7 @@ ht-degree: 100%
 
    >[!NOTE]
    >
-   > 정상적인 워크플로 인스턴스를 유지 관리하려면 [정기적인 워크플로 인스턴스 제거](#regular-purging-of-workflow-instances)의 모범 사례 또는 [워크플로 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=ko)를 따라야 합니다.
+   > 정상적인 워크플로 인스턴스를 유지 관리하려면 [정기적인 워크플로 인스턴스 제거](#regular-purging-of-workflow-instances)의 모범 사례 또는 [워크플로 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html)를 따라야 합니다.
 
 ## 워크플로 인스턴스 검색 {#search-workflow-instances}
 
@@ -109,7 +110,8 @@ ht-degree: 100%
 
 워크플로가 실패하면 AEM은 **실패** 콘솔을 제공하므로 원래 원인을 처리하고 나면 이를 조사하고 적절한 조치를 취할 수 있습니다.
 
-* **실패 세부 정보** - 창을 열어 다음을 표시합니다. **실패 메시지**, **단계 및 **실패 누적**
+* **실패 세부 사항**
+창을 열어 다음을 표시합니다. **실패 메시지**, **단계 및 **실패 스택**.
 
 * **내역 열기** - 워크플로 내역의 세부 정보를 표시합니다.
 
@@ -262,5 +264,3 @@ public interface UserMetaDataPersistenceProvider {
  
 } 
 ```
-
-

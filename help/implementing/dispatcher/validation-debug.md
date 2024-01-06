@@ -3,9 +3,9 @@ title: Dispatcher 도구를 사용하여 확인 및 디버깅
 description: 로컬 유효성 검사, 디버깅, 유연한 모드 파일 구조 및 레거시 모드에서 유연한 모드로 마이그레이션하는 방법에 대해 알아봅니다.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '2990'
+source-wordcount: '2971'
 ht-degree: 1%
 
 ---
@@ -611,7 +611,7 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## 레거시 모드에서 유연한 모드로 마이그레이션 {#migrating}
 
-Cloud Manager 2021.7.0 릴리스를 통해 새로운 Cloud Manager 프로그램은 [AEM Archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko-KR) 또는 그 이상(파일을 포함) **opt-in/USE_SOURCES_DIRECTLY**. 의 이전 제한 사항을 제거합니다. [레거시 모드](/help/implementing/dispatcher/validation-debug-legacy.md) 또한 SDK 및 런타임에서 개선된 방법으로 구성을 확인하고 배포하는 문제가 발생할 수 있습니다. Dispatcher 구성에 이 파일이 없는 경우 마이그레이션하는 것이 좋습니다. 안전한 전환을 보장하려면 다음 단계를 따르십시오.
+Cloud Manager 2021.7.0 릴리스를 통해 새로운 Cloud Manager 프로그램은 [AEM Archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 또는 그 이상(파일을 포함) **opt-in/USE_SOURCES_DIRECTLY**. 의 이전 제한 사항을 제거합니다. [레거시 모드](/help/implementing/dispatcher/validation-debug-legacy.md) 또한 SDK 및 런타임에서 개선된 방법으로 구성을 확인하고 배포하는 문제가 발생할 수 있습니다. Dispatcher 구성에 이 파일이 없는 경우 마이그레이션하는 것이 좋습니다. 안전한 전환을 보장하려면 다음 단계를 따르십시오.
 
 1. **로컬 테스트.** 최신 Dispatcher 도구 SDK를 사용하여 폴더 및 파일을 추가합니다 `opt-in/USE_SOURCES_DIRECTLY`. Dispatcher가 로컬에서 작동하는지 테스트할 수 있도록 이 문서의 &quot;로컬 유효성 검사&quot; 지침을 따르십시오.
 1. **클라우드 개발 테스트:**

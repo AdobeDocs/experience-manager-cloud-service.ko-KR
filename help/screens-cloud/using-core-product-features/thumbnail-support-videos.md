@@ -3,9 +3,9 @@ title: 화면의 비디오에 대한 썸네일 as a Cloud Service 지원
 description: 이 페이지에서는 Screens의 비디오에 대한 썸네일 지원을 as a Cloud Service으로 추가하는 방법에 대해 설명합니다.
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '548'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 1%
 1. 기존 Screens 채널로 이동하거나 채널을 만듭니다.
 
    >[!NOTE]
-   >채널을 만들고 채널에 컨텐츠를 추가하는 방법은 을 참조하십시오. [Screens에서 채널 만들기 및 as a Cloud Service 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en).
+   >채널을 만들고 채널에 컨텐츠를 추가하는 방법은 을 참조하십시오. [Screens에서 채널 만들기 및 as a Cloud Service 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html).
 
 1. 채널을 선택합니다. 작업 표시줄에서 을(를) 클릭합니다 **편집** 를 클릭하여 편집기를 엽니다.
 

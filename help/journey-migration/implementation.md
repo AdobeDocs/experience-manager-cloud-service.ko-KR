@@ -2,10 +2,10 @@
 title: 구현 단계
 description: 코드 및 콘텐츠를 클라우드로 마이그레이션할 준비가 되었는지 확인
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '2339'
-ht-degree: 10%
+source-wordcount: '2282'
+ht-degree: 9%
 
 ---
 
@@ -71,8 +71,8 @@ Cloud Service으로 전환하는 정확한 단계는 구입한 시스템과 사�
 
 
 * 계획 시 AEM as a Cloud Service과 호환되도록 리팩터링해야 하는 영역 목록을 갖는 것이 좋습니다. 다음을 검토할 수 있습니다. [개발 지침](/help/implementing/developing/introduction/development-guidelines.md) Cloud Service을 위해 코드를 리팩터링하고 최적화하는 방법에 대한 자세한 내용.
-* 방법 자세히 알아보기 [구성 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=en#what-is-a-configuration) AEM에서 as a Cloud Service.
-* 를 다운로드하여 로컬 개발 환경을 설정하는 방법에 대해 알아봅니다. [AEM AS A CLOUD SERVICE SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en)
+* 방법 자세히 알아보기 [구성 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html#what-is-a-configuration) AEM에서 as a Cloud Service.
+* 를 다운로드하여 로컬 개발 환경을 설정하는 방법에 대해 알아봅니다. [AEM AS A CLOUD SERVICE SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)
 * 마지막으로, 다음을 숙지하십시오. [AEM as a Cloud Service Java API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
 또한 다음을 수행할 수도 있습니다.
@@ -104,8 +104,8 @@ Adobe은 일부 코드 리팩터링 작업을 가속화하는 데 도움이 되�
 
 * [자산 워크플로우 마이그레이션](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md): 자산 처리 워크플로우를 자동으로 마이그레이션하는 데 사용되는 도구입니다
 * [Dispatcher 변환기](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md): 기존 Dispatcher 구성을 AEM as a Cloud Service으로 사용할 수 있는 형식으로 변환하는 도구입니다.
-* [저장소 현대화 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html?lang=en): AEM 다중 모드 프로젝트를 입력으로 취하여 AEM as a Cloud Service 프로젝트로 변환하는 도구입니다
-* [인덱스 변환기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html?lang=en): 인덱스를 AEM as a Cloud Service과 호환되는 양식으로 변환하는 도구입니다
+* [저장소 현대화 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html): AEM 다중 모드 프로젝트를 입력으로 취하여 AEM as a Cloud Service 프로젝트로 변환하는 도구입니다
+* [인덱스 변환기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html): 인덱스를 AEM as a Cloud Service과 호환되는 양식으로 변환하는 도구입니다
 * [현대화 도구](/help/journey-migration/refactoring-tools/aem-modernization-tools.md): 기존 AEM 기능을 AEMas a Cloud Service 의 현대적이고 지원되는 기능으로 변환하는 데 사용할 수 있는 유틸리티의 세트입니다.
 
 로컬 개발 환경을 설정했으면 를 참조하여 AEM as a Cloud Service SDK에 익숙해집니다. [설명서](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
@@ -175,7 +175,7 @@ One more important datapoint is the amount of time it takes to complete the [use
 
 다음 표는 일반적인 마이그레이션 계획을 보여 줍니다.
 
-| 마이그레이션 반복 | 시작 일자 | 예상 종료 일자 | 종속성 | 예상 기간(일) | 추가 세부 정보/작업 항목 |
+| 마이그레이션 반복 | 시작 날짜 | 예상 종료 일자 | 종속성 | 예상 기간(일) | 추가 세부 정보/작업 항목 |
 |---|---|---|---|---|---|
 | PRDCLONE-AUTHOR-INITIAL-USRMAP-CSSTAGE-AUTHOR |   |   |   |   |   |
 | PRDCLONE-PUBLISH-TOPUP-CSSTAGE-AUTHOR |   |   |   |   |   |

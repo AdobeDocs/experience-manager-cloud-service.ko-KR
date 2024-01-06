@@ -4,7 +4,7 @@ description: 사용자 매핑 도구 사용(기존)
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 1%
@@ -94,7 +94,7 @@ ht-degree: 1%
 
    >[!IMPORTANT]
    >
-   >* 사용자 매핑이 완료되면 이동 경로를 사용하여 콘텐츠 마이그레이션 페이지로 다시 이동할 수 있습니다. 사용자 매핑 카드에 상태와 타임스탬프가 표시됩니다. 클릭 **컨텐츠 전송** 마이그레이션 세트를 만들어 추출을 실행할 수 있습니다. 다음을 참조하십시오 [컨텐츠 전송 도구 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#running-tool) 을 참조하십시오.
+   >* 사용자 매핑이 완료되면 이동 경로를 사용하여 콘텐츠 마이그레이션 페이지로 다시 이동할 수 있습니다. 사용자 매핑 카드에 상태와 타임스탬프가 표시됩니다. 클릭 **컨텐츠 전송** 마이그레이션 세트를 만들어 추출을 실행할 수 있습니다. 다음을 참조하십시오 [컨텐츠 전송 도구 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) 을 참조하십시오.
 
 ### 사용자 매핑 프로세스 다시 시작 {#resume-user-mapping-process}
 

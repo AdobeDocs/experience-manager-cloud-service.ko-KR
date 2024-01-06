@@ -2,9 +2,9 @@
 title: Screens에서 디스플레이 제작 및 관리 as a Cloud Service
 description: 이 페이지에서는 Screens as a Cloud Service으로 디스플레이를 만들고 관리하는 방법에 대해 설명합니다.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '649'
 ht-degree: 3%
 
 ---
@@ -133,4 +133,4 @@ Screens Services Provider에서 디스플레이를 삭제할 수 있습니다.
 
 ## 다음 단계 {#whats-next}
 
-이제 프로젝트용 디스플레이를 만들고 관리하는 방법에 대해 알아보았으므로, 다음 문서를 검토하여 Screens as a Cloud Service 여정을 계속해야 합니다 [화면 내 디스플레이에 채널 할당 as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=en).
+이제 프로젝트용 디스플레이를 만들고 관리하는 방법에 대해 알아보았으므로, 다음 문서를 검토하여 Screens as a Cloud Service 여정을 계속해야 합니다 [화면 내 디스플레이에 채널 할당 as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html).

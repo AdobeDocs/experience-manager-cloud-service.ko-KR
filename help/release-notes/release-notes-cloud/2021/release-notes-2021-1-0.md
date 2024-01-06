@@ -2,15 +2,15 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.1.0 릴리스 정보입니다.'
 description: "[!DNL Adobe Experience Manager] 2021.1.0의 as a Cloud Service 릴리스 노트"
 exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '854'
-ht-degree: 24%
+source-wordcount: '791'
+ht-degree: 21%
 
 ---
 
 
-# [!DNL Adobe Experience Manager]as a Cloud Service 릴리스 정보 {#release-notes}
+# 의 릴리스 정보 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 다음 섹션에서는 의 일반 릴리스 정보에 대해 간략히 소개합니다. [!DNL Experience Manager] as a Cloud Service.
 
@@ -52,7 +52,7 @@ ht-degree: 24%
 
 * 제품 경험 관리: 에셋 및 경험 조각에 대한 새로운 &#39;Commerce&#39; 속성 탭입니다. 이 탭에서는 제품/범주를 에셋 및 경험 조각에 연결할 수 있습니다. 탭에는 연결된 제품/범주에 대한 실시간 데이터와 제품 콘솔에 세부 정보를 표시하는 링크도 표시됩니다.
 
-* 최신 CIF 코어 구성 요소 버전 v1.7.0이 포함된 CIF Venia 참조 사이트 - 2021.02.02가 릴리스되었습니다. 다음을 참조하십시오 [CIF Venia 참조 사이트](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) 을 참조하십시오.
+* 최신 CIF 핵심 구성 요소 버전 v1.7.0이 포함된 CIF Venia 참조 사이트 - 2021.02.02가 릴리스되었습니다. 다음을 참조하십시오 [CIF Venia 참조 사이트](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) 을 참조하십시오.
 
 * CIF 코어 구성 요소 v1.7.0이 릴리스되었습니다. 다음을 참조하십시오 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0) 을 참조하십시오.
 
@@ -74,7 +74,7 @@ AEM as a Cloud Service 2021.1.0의 Cloud Manager 릴리스 일자는 2021년 1�
 
 ### [!DNL Code Refactoring Tools]의 새로운 기능 {#what-is-new-crt}
 
-* 새로운 버전의 AIO-CLI 플러그인이 출시되었습니다. 이 플러그인의 최신 버전에는 AEM Dispatcher Converter 및 Repository Modernizer에 대한 버그 수정이 포함되어 있으며 새 유틸리티인 Index Converter도 지원합니다. 다음을 참조하십시오 [통합 경험](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) 이 플러그인에 대해 자세히 알아보십시오.
+* 새로운 버전의 AIO-CLI 플러그인이 출시되었습니다. 이 플러그인의 최신 버전에는 AEM Dispatcher Converter 및 Repository Modernizer에 대한 버그 수정이 포함되어 있으며 새 유틸리티인 Index Converter도 지원합니다. 다음을 참조하십시오 [통합 경험](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) 이 플러그인에 대해 자세히 알아보십시오.
 
 * AEM Index Converter는 고객의 사용자 지정 OAK 색인 정의를 as a Cloud Service으로 호환되는 OAK 색인 정의로 변환하는 데 사용할 수 있는 유틸리티입니다. 다음을 참조하십시오 [인덱스 변환기](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) 을 참조하십시오.
 
@@ -88,7 +88,7 @@ AEM as a Cloud Service 2021.1.0의 Cloud Manager 릴리스 일자는 2021년 1�
 
 ### 새로운 기능 {#what-is-new-foundation}
 
-* 서버 간 인증된 API 호출 - 적절한 액세스 토큰을 생성하여 외부 애플리케이션과 AEM as a Cloud Service 환경 간에 인증된 서버 간 API 호출을 수행합니다. 읽기를 통해 자세히 알아보기 [설명서](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) 또는 다음을 참조하십시오. [튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication).
+* 서버 간 인증된 API 호출 - 적절한 액세스 토큰을 생성하여 외부 애플리케이션과 AEM as a Cloud Service 환경 간에 인증된 서버 간 API 호출을 수행합니다. 읽기를 통해 자세히 알아보기 [설명서](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) 또는 다음을 참조하십시오. [튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication).
 
 ### SDK Build Analyzer {#sdk-build-analyzers}
 
@@ -99,13 +99,13 @@ AEM as a Cloud Service SDK Build Analyzer Maven 플러그인은 누락된 종속
 * repoinit analyzer
 * bundle-nativecode
 
-자세한 내용은 [여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=ko-KR#developing)에서 설명서를 참조하십시오.
+자세한 내용은 [여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html#developing)에서 설명서를 참조하십시오.
 
 ## 클라우드 전환 도구 {#code-transition-tools}
 
 ### 릴리스 일자 {#release-date-ctt}
 
-콘텐츠 전송 도구 v1.2.2의 릴리스 날짜는 2021년 2월 01일입니다.
+컨텐츠 전송 도구 v1.2.2의 릴리스 날짜는 2021년 2월 1일입니다.
 
 ### [!DNL Content Transfer Tool]의 새로운 기능 {#what-is-new-ctt}
 
