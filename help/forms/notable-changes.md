@@ -3,9 +3,9 @@ title: AEM 6.5 Forms과 AEM Cloud Service 간의 차이점은 무엇입니까?
 description: AEM 6.5 Forms 및 AEM Cloud Services을 비교하고 Cloud Service으로 업그레이드하거나 마이그레이션하기 전에 가장 두드러진 변경 사항에 대해 알아봅니다.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 0acaea02ad4ba647373eedecb444e9a7911d108d
 workflow-type: tm+mt
-source-wordcount: '1348'
+source-wordcount: '1317'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ Adobe Experience Manager Forms as a Cloud Service은 Adobe Experience Manager Fo
 
 * 기본적으로 이메일은 HTTP 및 HTTPs 프로토콜만 지원합니다. [지원 팀에 문의](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) 포트를 통해 이메일을 전송하고 환경에 대한 SMTP 프로토콜을 사용하도록 설정합니다.
 
-## 지역화
+## 로컬라이제이션
 
 * 현지화된 적응형 Forms의 URL 규칙은 이제 URL에서 로케일 지정을 지원합니다. 새 URL 규칙을 사용하면 Dispatcher 또는 CDN에서 현지화된 양식을 캐싱할 수 있습니다. Cloud Service 환경에서 URL 형식을 사용합니다 `http://host:port/content/forms/af/<afName>.<locale>.html` 을(를) 대신해 지역화된 버전의 적응형 양식을 요청하려면 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`.
 
@@ -52,7 +52,9 @@ Adobe Experience Manager Forms as a Cloud Service은 Adobe Experience Manager Fo
 
   다음 [마이그레이션 유틸리티](/help/forms/migrate-to-forms-as-a-cloud-service.md) 는 코드 편집기에서 만든 사용자 지정 규칙이 있는 양식을 마이그레이션하는 데 도움이 됩니다. 유틸리티는 이러한 규칙을 Forms as a Cloud Service에서 지원되는 사용자 지정 함수로 변환합니다. 규칙 편집기와 함께 재사용 가능한 기능을 사용하여 규칙 스크립트로 얻은 결과를 계속 얻을 수 있습니다. 다음 `onSubmitError` 또는 `onSubmitSuccess` 이제 함수를 규칙 편집기에서 작업으로 사용할 수 있습니다.
 
-* **미리 채우기 서비스:** 기본적으로 미리 채우기 서비스는 AEM 6.5 Forms의 서버에서 데이터를 병합하는 것과 반대로 클라이언트에서 데이터를 적응형 양식과 병합합니다. 이 기능은 적응형 양식을 미리 채우는 데 필요한 시간을 개선하는 데 도움이 됩니다. Adobe Experience Manager Forms 서버에서 병합 작업을 실행하도록 언제든지 구성할 수 있습니다.
+<!--* **Prefill Service:** By default, the prefill service merges data with an Adaptive Form at client as opposed to merging data on Server in AEM 6.5 Forms. The feature helps improve the time required to prefill an Adaptive Form. You can always configure to run the merge action on the Adobe Experience Manager Forms Server.-->
+
+* **미리 채우기 서비스:** 미리 채우기 서비스는 서버에서 데이터를 가져오고 를 병합하여 클라이언트측의 적응형 Forms을 미리 채웁니다. 이 기능은 적응형 양식을 작성하는 데 필요한 시간을 개선하는 데 도움이 됩니다. 언제든지 을 구성할 수 있습니다. [미리 채우기 서비스](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/prefill-service-adaptive-forms-article-use.html) Adobe Experience Manager Forms 서버에서 병합 작업을 실행합니다.
 
 * **제출 액션:** 다음 **이메일** 제출 액션은 첨부 파일을 전송하고 이메일에 기록 문서(DoR)를 첨부할 수 있는 옵션을 제공합니다. 다음 대신 사용할 수 있습니다. **전자 메일을 PDF으로** 작업은 AEM 6.5 Forms에서 사용할 수 있습니다.
 
