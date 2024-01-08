@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에서 캐싱
 description: AEM as a Cloud Service 캐싱의 기본 사항에 대해 알아봅니다.
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 8351e5e60c7ec823a399cbbdc0f08d2704f12ccf
 workflow-type: tm+mt
-source-wordcount: '2775'
+source-wordcount: '2865'
 ht-degree: 1%
 
 ---
@@ -241,6 +241,28 @@ Adobe CDN에서 다음과 같은 리소스에 대한 HEAD 요청을 받는 경�
 이 동작을 비활성화하려면 지원 티켓을 제출하십시오.
 
 2023년 10월 이전에 생성된 환경의 경우 Dispatcher 구성을 `ignoreUrlParams` 다음으로 속성: [여기에 문서화됨](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
+
+마케팅 매개 변수를 무시할 수 있는 방법에는 두 가지가 있습니다. (첫 번째 플러그인이 쿼리 매개 변수를 통해 캐시 무효화를 무시하는 것이 좋습니다.)
+
+1. 모든 매개 변수를 무시하고 사용된 매개 변수를 선택적으로 허용합니다.
+다음 예에서만 `page` 및 `product` 매개 변수는 무시되지 않으며 요청은 게시자에게 전달됩니다.
+
+```
+/ignoreUrlParams {
+   /0001 { /glob "*" /type "allow" }
+   /0002 { /glob "page" /type "deny" }
+   /0003 { /glob "product" /type "deny" }
+}
+```
+
+1. 마케팅 매개 변수를 제외한 모든 매개 변수를 허용합니다. 파일 [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) 는 무시할 일반적으로 사용되는 마케팅 매개 변수의 목록을 정의합니다. Adobe은 이 파일을 업데이트하지 않습니다. 사용자가 마케팅 공급자에 따라 확장할 수 있습니다.
+
+```
+/ignoreUrlParams {
+   /0001 { /glob "*" /type "deny" }
+   $include "../cache/marketing_query_parameters.any"
+}
+```
 
 
 ## 디스패처 캐시 무효화 {#disp}
