@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 7550491de94f1e2cbb28b07f8abbdaded5aa04ea
+source-git-commit: 65893c0c0dee37bed8ecfbb06a12e7c093c4397c
 workflow-type: tm+mt
-source-wordcount: '4570'
+source-wordcount: '4573'
 ht-degree: 99%
 
 ---
@@ -1119,3 +1119,4 @@ ht-degree: 99%
       + [Universal Editor 인증](/help/implementing/universal-editor/authentication.md)
       + [Universal Editor를 사용하는 로컬 AEM 개발](/help/implementing/universal-editor/local-dev.md)
       + [유니버설 편집기 호출](/help/implementing/universal-editor/calls.md)
+      + [UI 맞춤화](/help/implementing/universal-editor/customizing.md)

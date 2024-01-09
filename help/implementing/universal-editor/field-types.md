@@ -1,10 +1,10 @@
 ---
 title: 필드 유형
 description: 나만의 앱을 계측하는 방법에 대한 예제를 통해 유니버설 편집기가 구성 요소 레일에서 편집할 수 있는 다양한 유형의 필드에 대해 알아봅니다.
-source-git-commit: b1a188d01371665b4375087847625d89e47d8927
+source-git-commit: 44073e27ce7eb35bc0d71cb963c1bd0f14183f00
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 8%
+source-wordcount: '358'
+ht-degree: 7%
 
 ---
 
@@ -281,3 +281,58 @@ ht-degree: 8%
 }
 ```
 
+## 탭 {#tab}
+
+탭에서는 다른 입력 필드를 여러 탭에서 함께 그룹화하여 작성자의 레이아웃 구성을 개선할 수 있습니다.
+
+A `tab` 정의는 배열의 구분 기호로 생각할 수 있습니다. `fields`. 다음에 오는 모든 것 `tab` 이(가) 새 `tab` 이 발생하면 다음 항목이 새 탭에 배치됩니다.
+
+모든 탭 위에 표시되는 항목을 포함하려면 탭 앞에 항목을 정의해야 합니다.
+
+### 샘플 {#sample-tab}
+
+```json
+{
+  "id": "title",
+  "fields": [
+    {
+      "component": "tab",
+      "label": "Tab",
+      "name": "tab1"
+    },
+    {
+      "component": "text-input",
+      "name": "tab-response",
+      "value": "",
+      "placeholder": "Tab? I can't give you a tab unless you order something.",
+      "label": "Lou",
+      "valueType": "string"
+    },
+    {
+      "component": "tab",
+      "label": "Pepsi Free",
+      "name": "tab2"
+    },
+    {
+      "component": "text-input",
+      "name": "pepsi-free-response",
+      "value": "",
+      "placeholder": "You want a Pepsi, pal, you're gonna pay for it.",
+      "label": "Mr. Carruthers",
+      "valueType": "string"
+    },
+    {
+      "component": "select",
+      "name": "without-sugar",
+      "value": "coffee",
+      "label": "Something without sugar",
+      "valueType": "string",
+      "options": [
+        { "name": "Coffee", "value": "coffee" },
+        { "name": "Hot Coffee", "value": "hot-coffee" },
+        { "name": "Hotter Coffee", "value": "hotter-coffee" }
+      ]
+    }
+  ]
+}
+```
