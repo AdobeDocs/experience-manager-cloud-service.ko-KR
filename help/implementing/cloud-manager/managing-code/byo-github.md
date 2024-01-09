@@ -3,12 +3,13 @@ title: Cloud Manager에서 자체 GitHub 저장소를 사용하여 작업
 description: 자체 GitHub 저장소에서 작동하도록 Cloud Manager를 설정하는 방법에 대해 알아봅니다.
 feature: Release Information
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
-source-git-commit: 237b4a8e01af74dbaac0ba1715b5fa95c931be7c
+source-git-commit: ce9d65179d9cc1f02f786516554e07c95a89484d
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 70%
 
 ---
+
 
 # Cloud Manager에서 자체 GitHub 저장소를 사용하여 작업 {#byo-github}
 
@@ -54,7 +55,7 @@ ht-degree: 70%
    ![비공개 저장소 소유권 유효성 검사](/help/implementing/cloud-manager/assets/repos/private-repo-validate.png)
 
 1. Cloud Manager는 GitHub 앱을 사용하여 저장소와 안전하게 상호 작용합니다.
-   * GitHub 조직의 소유자는 `https://github.com/apps/cloud-manager-for-aem-stage`에 있는 앱을 설치하고 저장소에 대한 액세스 권한을 부여해야 합니다.
+   * GitHub 조직의 소유자는 `https://github.com/apps/cloud-manager-for-aem`에 있는 앱을 설치하고 저장소에 대한 액세스 권한을 부여해야 합니다.
    * 이 작업을 수행하는 방법에 대한 자세한 내용은 GitHub 설명서 를 참조하십시오.
 
 1. 보안 강화를 위해 저장소의 기본 분기에 시크릿 파일을 만들어야 합니다. 선택 **생성**.
