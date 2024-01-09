@@ -4,9 +4,9 @@ description: 적응형 양식은 여러 제출 액션을 제공합니다. 제출
 keywords: 적응형 양식에 대한 제출 액션을 선택하고, 적응형 양식을 sharepoint 목록에 연결하고, 적응형 양식을 sharepoint 문서 라이브러리에 연결하고, 적응형 양식을 양식 데이터 모델에 연결하는 방법
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: c2bf362a9949b3d6d427a28821056a0cc9edfa85
+source-git-commit: 3cd10760fa48f4aa1810877f79476be744f048d1
 workflow-type: tm+mt
-source-wordcount: '4102'
+source-wordcount: '4090'
 ht-degree: 82%
 
 ---
@@ -20,7 +20,8 @@ ht-degree: 82%
 | -------- | ---------------------------- |
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service | 이 문서 |
-| 적용 대상 | ✅ 적응형 양식 핵심 구성 요소, ❎ [적응형 양식 기초 구성 요소](/help/forms/configuring-submit-actions.md) |
+
+<!--| Applies to     | ✅ Adaptive Form Core Components, ❎ [Adaptive Form Foundation Components](/help/forms/configuring-submit-actions.md)          |-->
 
 
 제출 액션을 사용하면 적응형 양식을 통해 캡처되는 데이터의 대상을 선택할 수 있습니다. 사용자가 적응형 양식에서 **[!UICONTROL 제출]** 버튼을 클릭하면 제출 액션이 트리거됩니다. 핵심 구성 요소를 기반으로 하는 적응형 양식의 Forms as a Cloud Service는 다수의 사전 빌드된 제출 액션을 제공합니다. 이러한 기본 제공 제출 액션을 통해 다음과 같은 작업을 수행할 수 있습니다.
