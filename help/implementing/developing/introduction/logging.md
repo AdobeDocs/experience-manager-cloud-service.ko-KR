@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service에 대한 로깅
 description: AEM용 로깅을 as a Cloud Service으로 사용하여 중앙 로깅 서비스의 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 3d53f81bfe9b180f19590a70d72b6bf62a7ab732
 workflow-type: tm+mt
-source-wordcount: '2720'
-ht-degree: 9%
+source-wordcount: '2755'
+ht-degree: 8%
 
 ---
 
@@ -397,7 +397,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 
 mod_rewrite 로그 레벨은 파일에서 REWRITE_LOG_LEVEL 변수에 의해 정의됩니다 `conf.d/variables/global.var`.
 
-error, warn, info, debug 및 trace1 - trace8로 설정할 수 있으며 기본값은 warn입니다. RewriteRules를 디버깅하려면 로그 수준을 trace2로 높이는 것이 좋습니다.
+error, warn, info, debug 및 trace1 - trace8로 설정할 수 있으며 기본값은 warn입니다. RewriteRules를 디버깅하려면 로그 수준을 trace2로 높이는 것이 좋습니다. 다음을 사용하여 규칙 다시 작성을 디버그하는 것이 좋습니다. [Dispatcher SDK](../../dispatcher/validation-debug.md). AEM as a Cloud Service의 최대 로그 수준은 `debug`. 따라서 현재 클라우드에서 재작성 규칙을 디버깅하는 것이 효과적으로 불가능합니다.
 
 다음을 참조하십시오. [mod_rewrite 모듈 설명서](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) 추가 정보.
 
