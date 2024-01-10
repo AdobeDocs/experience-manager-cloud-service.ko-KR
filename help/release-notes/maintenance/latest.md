@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 4fc676bd975e44234b478ba57f12cbf0f4f5ba45
-workflow-type: ht
-source-wordcount: '371'
-ht-degree: 100%
+source-git-commit: 0b4c820159f918cb9b3a93d9ab36dc26b1d8da47
+workflow-type: tm+mt
+source-wordcount: '381'
+ht-degree: 97%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 100%
 
 ### 알려진 문제 {#known-issues-14697}
 
-없음.
+* GRANITE-49031: 회귀 결과 `@JsonIgnore` 임시 필드에서 주석이 무시되고 있습니다.
 
 ### 임베드된 기술 {#embedded-tech-14697}
 
