@@ -4,8 +4,8 @@ description: 문제 모니터링 및 성능 향상 방법 알아보기
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 29%
+source-wordcount: '459'
+ht-degree: 21%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 29%
 >id="aemcloud_golive_troubleshooting"
 >title="AEM 문제 해결"
 >abstract="지속적인 개발을 목적으로 모범 사례를 검토하고 개발자 콘솔 및 CRXDE Lite 등의 도구와 함께 로그를 관리하여 AEM 문제를 해결할 수 있습니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=ko-KR" text="로그 액세스 및 관리"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=ko-KR#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 개발 도구"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html" text="로그 액세스 및 관리"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 개발 도구"
 
 이 여정은 마지막 부분이므로 마이그레이션이 완료된 후 문제를 모니터링하고 성능을 향상시키는 방법에 대해 알아봅니다. 임시 파일을 정리하고, 지속적인 개발을 위한 우수 사례를 검토하고, 로그를 관리해야 합니다.
 
@@ -40,7 +40,7 @@ AEM as a Cloud Service 개발자 환경 디버깅은 개발자 콘솔에서 개�
 
 ## CRXDE Lite {#crxde-lite}
 
-사용자는 개발 환경에서 CRXDE Lite에 액세스할 수 있지만, 스테이지나 프로덕션 환경에서는 액세스할 수 없습니다.
+사용자는 개발 환경의 CRXDE Lite에 액세스할 수 있지만 스테이지나 프로덕션 환경에서는 액세스할 수 없습니다.
 
 >[!IMPORTANT]
 >다음과 같이 변경할 수 없는 저장소에 쓰기 `/libs` 및 `/apps` 런타임 시 오류가 발생합니다. 또한 스테이징 및 프로덕션 환경을 위한 개발자 도구에 대한 액세스 권한이 없습니다.

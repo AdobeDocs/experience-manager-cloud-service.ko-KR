@@ -4,7 +4,7 @@ description: Cloud Manager가 SSL 인증서를 설치하기 위한 셀프서비�
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 source-git-commit: 6db3565fefe4c826bb40695d0fa84368fd3f283b
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '664'
 ht-degree: 99%
 
 ---

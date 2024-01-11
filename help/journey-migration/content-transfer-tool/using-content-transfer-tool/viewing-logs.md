@@ -4,8 +4,8 @@ description: 컨텐츠 전송 도구에서 마이그레이션 세트에 대한 �
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 40%
+source-wordcount: '231'
+ht-degree: 36%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 40%
 >id="aemcloud_ctt_logs"
 >title="로그 보기"
 >abstract="수집 추출이 완료되면 로그에서 오류/경고를 확인하십시오. 모든 오류는 보고된 문제를 처리하거나 Adobe 지원 센터에 문의하여 즉시 해결해야 합니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ko-KR#troubleshooting" text="문제 해결"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#troubleshooting" text="문제 해결"
 >additional-url="https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html" text="Adobe 지원 센터 문의"
 
 각 단계(추출 및 수집)가 완료되면 로그를 확인하여 오류를 찾습니다.  모든 오류는 보고된 문제를 처리하거나 Adobe 지원 센터에 문의하여 즉시 해결해야 합니다.

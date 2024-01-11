@@ -62,7 +62,7 @@ SSL/TLS 연결 문제를 이해하는 것은 때때로 어려울 수 있습니�
 >title="콘텐츠 전송 도구 실행"
 >abstract="콘텐츠 전송 도구를 사용하여 콘텐츠를 AEM as a Cloud Service(작성자/게시)에 마이그레이션하는 방법을 알아보십시오."
 >additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" 데모 보기"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=ko-KR#migration" text="튜토리얼 - 콘텐츠 전송 도구 사용하기"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="튜토리얼 - 콘텐츠 전송 도구 사용하기"
 
 다음 섹션은 새 버전의 콘텐츠 전송 도구에 적용됩니다. 이 섹션을 따라 컨텐츠 전송 도구를 사용하여 컨텐츠를 AEM as a Cloud Service으로 마이그레이션하는 방법을 알아보십시오.
 
@@ -72,7 +72,7 @@ SSL/TLS 연결 문제를 이해하는 것은 때때로 어려울 수 있습니�
 >id="aemcloud_ctt_extraction_setup"
 >title="추출 설정 단계"
 >abstract="마이그레이션 세트를 만들고 관리하는 방법과 추출 키를 복사하는 방법을 알아보십시오."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=ko-KR#migration" text="튜토리얼 - 콘텐츠 전송 도구 사용하기"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="튜토리얼 - 콘텐츠 전송 도구 사용하기"
 
 <!-- Contextualhelp id "aemcloud_ctt_extraction_setup" must be added here -->
 
@@ -112,7 +112,7 @@ SSL/TLS 연결 문제를 이해하는 것은 때때로 어려울 수 있습니�
 >id="aemcloud_ctt_populate_migrationset"
 >title="마이그레이션 세트 채우기"
 >abstract="마이그레이션 세트를 만든 후에는 AEM as a Cloud Service 환경으로 이동해야 하는 소스 인스턴스의 콘텐츠로 채워야 합니다. 이를 위해 소스 인스턴스에 콘텐츠 전송 도구를 설치해야 합니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=ko-KR" text="콘텐츠 추출하기"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html" text="콘텐츠 추출하기"
 
 Cloud Acceleration Manager에서 만든 마이그레이션 세트를 채우려면 소스 Adobe Experience Manager(AEM) 인스턴스에 최신 버전의 컨텐츠 전송 도구를 설치합니다. 마이그레이션 세트를 채우는 방법을 알아보려면 이 섹션을 따르십시오.
 

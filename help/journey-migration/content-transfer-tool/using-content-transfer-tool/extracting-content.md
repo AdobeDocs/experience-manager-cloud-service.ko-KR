@@ -4,8 +4,8 @@ description: 소스 AEM(Adobe Experience Manager) 인스턴스에서 콘텐츠�
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 source-git-commit: 858e10f99e2015a1488bb9e1d0990a553c5f6d04
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 28%
+source-wordcount: '728'
+ht-degree: 19%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 28%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction"
 >title="콘텐츠 추출"
->abstract="추출이란 소스 Adobe Experience Manager(AEM) 인스턴스에서 마이그레이션 세트라고 하는 임시 영역으로 콘텐츠를 추출하는 것입니다. 마이그레이션 세트는 소스 AEM 인스턴스와 클라우드 서비스 AEM 인스턴스 간에 전송된 콘텐츠를 임시 저장할 수 있도록 Adobe가 제공하는 클라우드 저장소 영역입니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ko-KR#top-up-extraction-process" text="추가 추출"
+>abstract="추출이란 소스 Adobe Experience Manager(AEM) 인스턴스에서 마이그레이션 세트라고 하는 임시 영역으로 콘텐츠를 추출하는 것입니다. 마이그레이션 세트는 소스 AEM 인스턴스와 Cloud Service AEM 인스턴스 간에 전송된 콘텐츠를 임시 저장할 수 있도록 Adobe가 제공하는 클라우드 저장소 영역입니다."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-extraction-process" text="추가 추출"
 
 
 컨텐츠 전송 도구에서 마이그레이션 세트를 추출하려면 아래 단계를 따르십시오.
@@ -66,7 +66,7 @@ ht-degree: 28%
 콘텐츠 전송 도구에는 이전 콘텐츠 전송 활동 이후 수행된 변경 사항만 전송할 수 있는 차등 콘텐츠 추가를 지원하는 기능이 있습니다.
 
 >[!NOTE]
->처음 콘텐츠 전송 후 클라우드 서비스에서 라이브로 전환되기 전에 최종 차등 콘텐츠 전송에 대한 콘텐츠 고정 기간을 단축하기 위해 자주 차등 콘텐츠 추가를 수행하는 것이 좋습니다. 첫 번째 전체 추출에 사전 복사 단계를 사용한 경우 후속 추가 추출에 대해 사전 복사를 건너뛸 수 있습니다(추가 마이그레이션 세트 크기가 200GB 미만인 경우). 그 이유는 전체 과정에 시간이 추가될 수 있기 때문이다.
+>초기 컨텐츠 전송 후 Cloud Service으로 시작하기 전에 최종 차등 컨텐츠 전송에 대한 컨텐츠 고정 기간을 단축하기 위해 자주 차등 컨텐츠 추가를 수행하는 것이 좋습니다. 첫 번째 전체 추출에 사전 복사 단계를 사용한 경우 후속 추가 추출에 대해 사전 복사를 건너뛸 수 있습니다(추가 마이그레이션 세트 크기가 200GB 미만인 경우). 그 이유는 전체 과정에 시간이 추가될 수 있기 때문이다.
 >또한, 기존 콘텐츠의 콘텐츠 구조는 초기 추출을 수행한 시점부터 추가 추출을 실행할 때까지 변경되지 않는 것이 필수적입니다. 초기 추출 이후 구조가 변경된 콘텐츠에서는 추가 작업을 실행할 수 없습니다. 마이그레이션 프로세스 중에 이를 제한해야 합니다.
 
 추출 프로세스가 완료되면 추가 추출 방법을 사용하여 델타 컨텐츠를 전송할 수 있습니다.
@@ -77,7 +77,7 @@ ht-degree: 28%
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam19.png)
 
-1. **마이그레이션 세트 추출** 대화 상자가 표시됩니다. 클릭 **Extract**.
+1. 다음 **마이그레이션 세트 추출** 대화 상자가 표시됩니다. 클릭 **Extract**.
 
    >[!IMPORTANT]
    >**추출 중에 스테이징 컨테이너 덮어쓰기** 옵션을 비활성화해야 합니다.

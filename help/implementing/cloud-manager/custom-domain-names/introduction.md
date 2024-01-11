@@ -4,7 +4,7 @@ description: Cloud Manager의 UI를 사용하면 사용자 정의 도메인을 �
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '741'
 ht-degree: 96%
 
 ---

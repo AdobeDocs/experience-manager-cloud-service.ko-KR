@@ -4,7 +4,7 @@ description: IP 허용 목록을 통해 사용자가 AEM as a Cloud Service의 �
 exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 source-git-commit: f0edd0e3deeba89dcbd2dc1a07859138b24e2220
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '292'
 ht-degree: 100%
 
 ---

@@ -6,7 +6,7 @@ exl-id: be9597a3-056c-436c-a09e-15a03567c85a
 source-git-commit: 6fb2701fc2a4dc1cb9e8ea31134f0b3f2bb6bdf9
 workflow-type: tm+mt
 source-wordcount: '1470'
-ht-degree: 79%
+ht-degree: 85%
 
 ---
 
@@ -30,9 +30,9 @@ ht-degree: 79%
 
    * 직접 검색하여 최근에 본 자산으로 작업을 시작하십시오. 검색 상자를 클릭하고 제안에서 최근에 본 자산을 선택합니다.
 
-## Adobe Firefly을 사용하여 에셋 검색
+## Adobe Firefly를 사용하여 자산 검색
 
-에셋 폴더에서 사용할 수 없는 에셋을 찾고 있는 경우 [!UICONTROL Adobe Firefly] 내의 자산 검색 기능 [!UICONTROL Adobe Experience Manager Assets]. 지정된 폴더에 저장되지 않은 에셋을 효율적으로 검색할 수 있습니다. 이 기능은 현재 Express 권한이 있는 사용자만 액세스할 수 있습니다. <br> 예를 들어 키워드를 사용하여 에셋을 검색할 수 있습니다 `Bugatti Type 57`. 검색 시 `Bugatti Type 57`, 결과를 찾을 수 없습니다.
+에셋 폴더에서 사용할 수 없는 에셋을 찾고 있는 경우 [!UICONTROL Adobe Firefly] 내의 자산 검색 기능 [!UICONTROL Adobe Experience Manager Assets]. 지정된 폴더에 저장되지 않은 에셋을 효율적으로 검색할 수 있습니다. 이 기능은 현재 Express 권한이 있는 사용자만 액세스할 수 있습니다. <br> 예를 들어 `Bugatti Type 57` 키워드를 사용하여 자산을 검색할 수 있습니다. `Bugatti Type 57`을 검색하면 결과를 찾을 수 없습니다.
 
 ![Firefly 통합](assets/firefly-integration.jpg)
 *그림: 자산 폴더에서 Bugatti Type 57에 대한 결과가 없습니다.*
@@ -42,7 +42,7 @@ ht-degree: 79%
 ![Firefly 통합](assets/bugatti-type-57.jpg)
 *그림: 에셋 검색 Adobe Firefly 기능을 사용하여 검색된 에셋을 참조합니다.*
 
-샘플 에셋이 화면에 표시됩니다. 쉽게 액세스할 수 있도록 이러한 에셋을 선호하는 폴더에 업로드할 수 있습니다.
+샘플 자산이 화면에 표시됩니다. 손쉽게 액세스할 수 있도록 이들 자산을 원하는 폴더에 업로드할 수 있습니다.
 
 ## 검색 결과 필터링 {#refine-search-results}
 
@@ -159,7 +159,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 검색 결과에 표시되는 자산을 선택하고 다음 작업을 수행할 수 있습니다.
 
-* **유사한 이미지 찾기**: 메타데이터 및 스마트 태그를 기반으로 에셋 UI에서 유사한 이미지 에셋을 찾습니다.
+* **유사 이미지 찾기**: 메타데이터 및 스마트 태그를 기반으로 Assets UI에서 유사한 이미지 자산을 찾습니다.
 
 * **세부 정보**: 자산 속성을 보고 편집합니다.
 
@@ -169,9 +169,9 @@ When userA is searching and userB add an asset that matches search results, will
 
 * **바로 가기에 고정**: 나중에 필요할 때 더 빠르게 액세스할 수 있도록 [자산을 고정](my-workspace-assets-view.md)합니다. 고정된 모든 항목은 내 작업 영역의 **바로 가기** 섹션에 표시됩니다.
 
-* **Adobe Express에서 열기**: Adobe Experience Manager Assets 화면에서 통합 Adobe Express의 이미지를 편집합니다.
+* **Adobe Express에서 열기**: Adobe Experience Manager Assets 화면의 통합 Adobe Express에서 이미지를 편집합니다.
 
-* **편집**: Adobe Express을 사용하여 이미지를 편집합니다.
+* **편집**: Adobe Express를 사용하여 이미지를 편집합니다.
 
 * **링크 공유**: 자산에 대한 [링크 공유](share-links-for-assets-view.md)를 통해 다른 사용자가 액세스하고 다운로드할 수 있도록 합니다.
 
