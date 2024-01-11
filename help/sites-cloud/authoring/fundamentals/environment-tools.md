@@ -2,7 +2,7 @@
 title: 작성 환경 및 도구
 description: AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
 workflow-type: tm+mt
 source-wordcount: '2161'
 ht-degree: 89%
@@ -102,7 +102,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 
 ## 자산 브라우저 {#assets-browser}
 
-자산 브라우저에는 현재 페이지에서 직접 사용할 수 있는 모든 [자산](/help/assets/home.md)이 표시됩니다.
+자산 브라우저에는 현재 페이지에서 직접 사용할 수 있는 모든 [자산](/help/assets/overview.md)이 표시됩니다.
 
 자산 브라우저는 사이드 패널 내의 탭이며 [구성 요소 브라우저](#components-browser) 및 [콘텐츠 트리](#content-tree)와 함께 있습니다. 사이드 패널을 열려면(또는 닫으려면) 도구 모음의 왼쪽 상단에 있는 아이콘을 사용합니다.
 

@@ -2,10 +2,10 @@
 title: 환경 관리
 description: 만들 수 있는 환경 유형 및 Cloud Manager 프로젝트용으로 환경을 만드는 방법에 대해 알아봅니다.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: efca024511b5d79553864fbcefda3649ab7af7b6
+source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
 workflow-type: tm+mt
 source-wordcount: '2607'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
@@ -18,18 +18,18 @@ ht-degree: 88%
 
 필수 권한이 있는 사용자는 특정 테넌트가 사용할 수 있는 범위 내에서 다음과 같은 환경 유형을 만들 수 있습니다.
 
-* **프로덕션 + 스테이징** - 프로덕션 환경과 스테이징 환경은 쌍으로 구성되며 각각 프로덕션 및 테스트 목적으로 사용됩니다. 스테이지 환경에서 성능 및 보안 테스트를 수행합니다. 생산과 크기가 같습니다.
+* **프로덕션 + 스테이징** - 프로덕션 환경과 스테이징 환경은 쌍으로 구성되며 각각 프로덕션 및 테스트 목적으로 사용됩니다. 스테이지 환경에서 성능 및 보안 테스트를 수행합니다. 이는 프로덕션 크기와 동일합니다.
 
-* **개발** - 개발 환경은 개발 및 테스트 목적으로 만들 수 있으며 비프로덕션 파이프라인에만 연결할 수 있습니다.  개발 환경은 스테이지 및 프로덕션과 같은 크기를 가지고 있지 않으므로 성능 및 보안 테스트를 수행하는 데 사용해서는 안 됩니다.
+* **개발** - 개발 환경은 개발 및 테스트 목적으로 만들 수 있으며 비프로덕션 파이프라인에만 연결할 수 있습니다.  개발 환경은 스테이징 및 프로덕션과 크기가 동일하지 않으며 성능 및 보안 테스트를 수행하는 데 사용해서는 안 됩니다.
 
 * **신속한 개발** - 개발자는 신속한 개발 환경(RDE)을 통해 변경 사항을 신속하게 배포하고 검토할 수 있으므로 로컬 개발 환경에서 작동하는 것으로 입증된 기능을 테스트하데 필요한 시간을 최소화할 수 있습니다. RDE 사용 방법에 대한 자세한 내용은 [신속한 개발 환경 설명서](/help/implementing/developing/introduction/rapid-development-environments.md)를 참조하십시오.
 
 개별 환경의 기능은 환경의 [프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)에서 활성화된 솔루션에 따라 다릅니다.
 
-* [Sites](/help/sites-cloud/home.md)
-* [Assets](/help/assets/home.md)
+* [Sites](/help/overview/introduction.md)
+* [Assets](/help/assets/overview.md)
 * [Forms](/help/forms/home.md)
-* [Screens](/help/screens-cloud/home.md)
+* [Screens](/help/screens-cloud/introduction/introduction.md)
 
 >[!NOTE]
 >

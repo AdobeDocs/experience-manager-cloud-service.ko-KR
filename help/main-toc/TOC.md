@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 65893c0c0dee37bed8ecfbb06a12e7c093c4397c
+source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
 workflow-type: tm+mt
-source-wordcount: '4573'
+source-wordcount: '4538'
 ht-degree: 99%
 
 ---
@@ -16,7 +16,6 @@ ht-degree: 99%
 
 # Experience Manager as a Cloud Service 도움말 {#content}
 
-+ [AEMaaCS 홈](/help/overview/home.md)
 + 개요 {#overview}
    + [AEM as a Cloud Service 소개](/help/overview/introduction.md)
    + [새로운 기능 및 차이점](/help/overview/what-is-new-and-different.md)
@@ -169,9 +168,8 @@ ht-degree: 99%
    + [더 이상 사용되지 않는 API](/help/release-notes/deprecated-apis.md)
    + [프리릴리스 채널](/help/release-notes/prerelease.md)
 + 보안 {#security}
-   + [AEM as a Cloud Service 보안](/help/security/home.md)
-   + [AEM as a Cloud Service에 대한 고급 네트워킹 구성](/help/security/configuring-advanced-networking.md)
    + [AEM as a Cloud Service 보안 개요](/help/security/cloud-service-security-overview.md)
+   + [AEM as a Cloud Service에 대한 고급 네트워킹 구성](/help/security/configuring-advanced-networking.md)
    + [AEM as a Cloud Service에 대한 IMS 지원](/help/security/ims-support.md)
    + [AEM as a Cloud Service에 대한 Same Site 쿠키 지원](/help/security/same-site-cookie-support.md)
    + [메일 서비스에 대한 OAuth2 지원](/help/security/oauth2-support-for-mail-service.md)
@@ -261,7 +259,6 @@ ht-degree: 99%
       + [AEM Dispatcher 변환기](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
       + [AEM 현대화 도구](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + Sites {#sites}
-   + [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
    + [AEM Cloud Service의 AEM Sites에 대한 주요 변경 내용](/help/sites-cloud/sites-cloud-changes.md)
    + 작성 {#authoring}
       + 시작하기 {#getting-started}
@@ -396,7 +393,6 @@ ht-degree: 99%
       + [Adobe Target으로 경험 조각 내보내기](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign과 통합](/help/sites-cloud/integrating/campaign.md)
 + Assets {#assets}
-   + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
    + [개요 및 새로운 기능](/help/assets/overview.md)
    + [ [!DNL Assets] as a [!DNL Cloud Service] 주요 변경 내용](/help/assets/assets-cloud-changes.md)
    + [[!DNL Assets] 아키텍처](/help/assets/architecture.md)
@@ -681,7 +677,6 @@ ht-degree: 99%
       + [설치 및 구성](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher 및 CDN 캐싱](/help/forms/troubleshooting-caching-performance.md)
 + Screens {#screens-as-cloud-service}
-   + [AEM Screens as a Cloud Service](/help/screens-cloud/home.md)
    + Screens as a Cloud Service 개요 {#overview}
       + [소개](/help/screens-cloud/introduction/introduction.md)
       + [역할 정의 이해](/help/screens-cloud/introduction/personas-screens-cloud.md)
@@ -718,9 +713,8 @@ ht-degree: 99%
       + [Screens as a Cloud Service에 대한 사용자 정의 구성 요소 개발](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
    + [Screens as a Cloud Service FAQ](/help/screens-cloud/screens-cloud-faqs.md)
 + Content and Commerce {#content-and-commerce}
-   + [AEM Content and Commerce](/help/commerce-cloud/home.md)
-   + [AEM Content and Commerce as a Cloud Service의 주요 변경 내용](/help/commerce-cloud/changes.md)
    + [소개 및 개요](/help/commerce-cloud/introduction.md)
+   + [AEM Content and Commerce as a Cloud Service의 주요 변경 내용](/help/commerce-cloud/changes.md)
    + 상거래 여정 {#journeys}
       + 콘텐츠 작성 여정 {#author}
          + [AEM Content and Commerce 콘텐츠 작성 여정](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
@@ -1079,7 +1073,6 @@ ht-degree: 99%
       + [AEM as a Cloud Service의 CDN](/help/implementing/dispatcher/cdn.md)
       + [AEM as a Cloud Service에서 캐싱](/help/implementing/dispatcher/caching.md)
 + 커넥터 {#connectors}
-   + [AEM as a Cloud Service용 커넥터 구현](/help/connectors/home.md)
    + [AEM 커넥터 구현](/help/connectors/implement.md)
    + [AEM 커넥터 제출](/help/connectors/submit.md)
    + [AEM 커넥터 유지 관리](/help/connectors/maintain.md)

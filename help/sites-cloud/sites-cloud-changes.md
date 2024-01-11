@@ -1,11 +1,11 @@
 ---
 title: AEM Cloud Service의 AEM Sites에 대한 주요 변경 사항
-description: AEM Cloud Service의 AEM Sites에 대한 주요 변경 사항에 대해 자세히 알아보기
+description: AEM Cloud Service에서 AEM Sites의 주목할 만한 변경 사항에 대해 as a Cloud Service으로 AEM Sites을 작성하고 관리하는 방법을 이해합니다.
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 96%
+source-wordcount: '527'
+ht-degree: 95%
 
 ---
 
@@ -41,7 +41,7 @@ AEM Cloud service에서는 전통적으로 UI를 차단하는 작업이 백그�
 
 >[!NOTE]
 >
->시스템 사용자는 이 새 기능을 사용하기 위해 변경할 필요가 없습니다. 이는 AEM의 이전 온프레미스 버전의 비헤이비어에 대한 변경 내용으로 기재되어 있습니다.
+>시스템 사용자는 이러한 새로운 기능을 사용하기 위해 변경 작업을 수행할 필요가 없습니다. 이는 AEM의 이전 온프레미스 버전의 비헤이비어에 대한 변경 내용으로 기재되어 있습니다.
 
 ## 새로운 참조 사이트 및 튜토리얼 {#new-reference-site-and-tutorial}
 

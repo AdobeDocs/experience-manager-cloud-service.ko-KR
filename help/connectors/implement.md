@@ -1,13 +1,14 @@
 ---
 title: AEM 커넥터 구현
-description: AEM 커넥터를 빌드하고, 테스트하고, 구현하는 방법을 알아봅니다. 또한 일반적인 통합 패턴에 대해서도 학습합니다.
+description: 커넥터와 그 기능에 대해 자세히 알아보고 Experience Manager에서 이들 유용한 도구를 구현하는 방법에 대해 알아봅니다.
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
 workflow-type: tm+mt
 source-wordcount: '935'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
+
 
 AEM 커넥터 구현
 =============================
