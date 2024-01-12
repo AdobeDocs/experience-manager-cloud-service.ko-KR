@@ -4,9 +4,9 @@ description: 구성 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: e49d536dc918861604f3e5d19608eb69d038c49a
+source-git-commit: 4bda798113d85b800cb088d150f8c9d453c9ec3e
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1767'
 ht-degree: 1%
 
 ---
@@ -69,6 +69,7 @@ ht-degree: 1%
 1. 프로젝트 상태: 연결된 폴더를 만들기 위해 프로젝트를 설정해야 하는 상태를 선택합니다.
 1. 포트폴리오가 있는 프로젝트에 연결된 폴더를 만듭니다. 연결된 폴더를 만들 수 있도록 프로젝트가 속해야 하는 Portfolio 목록입니다. 모든 프로젝트 포트폴리오에 대해 연결된 폴더를 만들려면 이 목록을 비워 두십시오.
 1. 사용자 정의 양식 필드가 있는 프로젝트에 연결된 폴더를 만듭니다. 사용자 정의 양식 필드 및 연결된 폴더를 만들 수 있도록 프로젝트에 있어야 하는 해당 값. 비워 두면 이 구성은 무시됩니다. 선택 `CUSTOM FORMS: Create DAM Linked Folder` 필드 및 입력 `Yes` 을 누릅니다.
+1. 권한 구성: 이러한 권한을 구성하고, `jcr:all permissions for /conf/workfront-tools/settings/cloudconfigs` 대상: `wf-workfront-users group`.
 1. 연결된 폴더의 자동 생성 활성화를 클릭합니다. 이벤트 구독 탭으로 돌아가면 이제 이벤트 만들기가 한 개 있습니다.
 
 ![연결된 폴더 구성](/help/assets/assets/wf-linked-folder-config.png)
