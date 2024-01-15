@@ -1,10 +1,12 @@
 ---
 title: 간편한 벌크 PDF 생성 - 일괄 처리 기술을 기본으로 제공 - 수백만 개의 PDF 문서 생성에 대한 자체 도움말 안내서!
 description: 브랜드 지향적이고 개인화된 커뮤니케이션을 만드는 방법
+feature: Adaptive Forms, APIs
+role: Admin, Developer, User
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
-source-wordcount: '1735'
+source-wordcount: '1706'
 ht-degree: 2%
 
 ---
@@ -90,7 +92,7 @@ Microsoft Azure 스토리지에서 다음을 만듭니다. [컨테이너](https:
 1. 도구 > Cloud Service > Azure 스토리지로 이동합니다.
 1. 구성을 호스팅할 폴더를 열고 [만들기]를 클릭합니다. 전역 폴더를 사용하거나 폴더를 만듭니다.
 1. 서비스에 연결할 구성 및 자격 증명의 이름을 지정합니다. 다음을 수행할 수 있습니다. [Microsoft Azure 스토리지 포털에서 이러한 자격 증명을 검색합니다.](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys).
-1. 만들기를 클릭합니다.
+1. 만들기 를 클릭합니다.
 
 이제 Experience Manager 인스턴스를 Microsoft Azure Storage에 연결하고 필요한 경우 이 인스턴스를 사용하여 콘텐츠를 저장하고 읽을 수 있습니다.
 
@@ -106,7 +108,7 @@ Microsoft Azure 스토리지에서 다음을 만듭니다. [컨테이너](https:
 1. 스토리지 구성 경로에서 고객 소유 Azure 스토리지 계정의 자격 증명이 포함된 클라우드 구성을 검색하여 선택합니다.
 1. 소스 폴더에서 Azure 저장소 컨테이너의 이름과 레코드가 포함된 폴더를 지정합니다.
 1. 대상 폴더에서 생성된 문서를 저장할 Azure 스토리지 컨테이너 및 폴더의 경로를 지정합니다.
-1. 만들기를 클릭합니다.
+1. 만들기 를 클릭합니다.
 
 이제 Experience Manager 인스턴스가 Microsoft Azure Storage에 연결되고 데이터를 검색하여 Microsoft Azure Storage의 특정 위치로 보내도록 구성되었습니다.
 

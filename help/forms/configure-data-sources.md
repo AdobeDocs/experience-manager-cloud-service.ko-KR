@@ -1,11 +1,11 @@
 ---
 title: 데이터 소스를 구성하는 방법
 description: RESTful 웹 서비스, SOAP 기반 웹 서비스 및 OData 서비스를 양식 데이터 모델의 데이터 소스로 구성하는 방법에 대해 알아봅니다.
-feature: Form Data Model
+feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '2121'
 ht-degree: 2%

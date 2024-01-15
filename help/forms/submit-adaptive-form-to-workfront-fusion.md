@@ -3,13 +3,15 @@ title: AEM Forms 제출과 Adobe Workfront Fusion 통합
 description: Adobe Workfront Fusion을 사용하면 반복적인 작업에 집중하지 않고 새로운 작업에 집중할 수 있습니다. 양식 제출을 사용하여 Adobe Workfront Fusion을 적응형 양식에 연결할 수 있습니다.
 keywords: 적응형 양식을 Adobe Workfront Fusion, AEM Forms 제출과 Adobe Workfront Fusion 통합, AEM Forms과 Adobe Workfront Fusion, AEM Forms과 Workfront Fusion, AEM Forms, AEM Forms 및 Workfront Fusion에 Workfront Fusion 연결, Workfront Fusion과 AEM Forms을 연결하는 방법 및 Workfront Fusion을 양식에 연결하는 방법
 topic-tags: author, developer
-source-git-commit: 68314ca09594d3c4c5639363326117b89b733a4d
+feature: Adaptive Forms
+role: Admin, User
+exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
 source-wordcount: '1240'
 ht-degree: 3%
 
 ---
-
 
 # Adobe Workfront Fusion에 적응형 양식 제출
 
@@ -189,5 +191,3 @@ Workfront Fusion용 기존 적응형 양식의 제출 액션을 구성하려면 
 - 시나리오에는 여러 개의 웹후크 링크가 있을 수 있지만 한 번에 하나의 웹후크 링크만 활성화됩니다. 링크되지 않은 웹후크를 삭제하여 AEM Forms 제출 작업 드롭다운 목록에 표시되지 않도록 하는 것이 좋습니다.
 
 <!-- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to replicate the scenario URLs for the Publish instance. -->
-
-

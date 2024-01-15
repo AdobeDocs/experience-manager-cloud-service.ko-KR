@@ -1,11 +1,11 @@
 ---
 title: 양식 데이터 모델을 만드는 방법
 description: 적응형 양식 또는 AEM Workflow를 사용하여 양식 데이터 모델(FDM)을 만들고, 데이터를 데이터 소스로 전송하거나 검색하는 방법에 대해 알아봅니다.
-feature: Form Data Model
+feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '1512'
 ht-degree: 1%

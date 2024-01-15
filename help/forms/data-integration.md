@@ -1,11 +1,13 @@
 ---
 title: 데이터베이스를 연결하는 방법 [!DNL AEM Forms] as a Cloud Service?
 description: 적응형 양식 또는 AEM Workflow에서 RESTful 웹 서비스, SOAP 기반 웹 서비스 및 OData 서비스에 데이터를 검색하고 저장합니다.
+feature: Adaptive Forms, Form Data Model
+role: Admin, User
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 596cd08a98b1d9d47825438e1d64b6db3f847271
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 2%
+source-wordcount: '537'
+ht-degree: 3%
 
 ---
 

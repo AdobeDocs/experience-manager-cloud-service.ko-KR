@@ -1,11 +1,13 @@
 ---
 title: 적응형 Forms 및 통신 API를 위한 AEM Forms as a Cloud Service 아키텍처
 description: 의 아키텍처 이해 [!DNL AEM Forms] 플랫폼의 확장성, 복원력 및 성능 측면에 대해 as a Cloud Service으로 알아볼 수 있습니다.
+role: Admin, Developer, User
+feature: Adaptive Forms
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 5%
+source-wordcount: '1033'
+ht-degree: 2%
 
 ---
 
@@ -67,7 +69,7 @@ AEM 콘텐츠/데이터를 게시 서비스에서 작성자 서비스로 전송�
 
 ### Adobe 서비스
 
-**자동화된 양식 전환 서비스**
+**Automated forms conversion 서비스**
 
 [Automated forms conversion 서비스](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) 는 PDF 및 XFA 양식을 장치 친화적인 반응형 및 HTML5 기반 적응형 양식으로 자동 변환합니다.
 
@@ -96,7 +98,7 @@ Forms은 Blob Store, 데이터베이스 또는 스토리지 서비스와 같은 
 
 ### Cloud Manager
 
-Cloud Manager는 의 필수 구성 요소입니다. [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=ko-KR). 고객의 운영 및 개발자 담당자를 위한 단일 진입점입니다. AEM 프로그램 및 환경을 관리할 수 있는 곳입니다. Cloud Manager는 다음과 같은 AEM as a Cloud Service의 주요 구성 요소를 만들고 구성할 수 있는 셀프서비스 포털로 발전해 왔습니다.
+Cloud Manager는 의 필수 구성 요소입니다. [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html). 고객의 운영 및 개발자 담당자를 위한 단일 진입점입니다. AEM 프로그램 및 환경을 관리할 수 있는 곳입니다. Cloud Manager는 다음과 같은 AEM as a Cloud Service의 주요 구성 요소를 만들고 구성할 수 있는 셀프서비스 포털로 발전해 왔습니다.
 
 * 프로그램 만들기 및 관리
 * 프로그램 내에서 AEM 환경 만들기 및 관리

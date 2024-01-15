@@ -2,7 +2,9 @@
 title: AEM Forms에서 부재 중 설정을 구성하는 방법
 description: 원활한 워크플로우 실행을 위해 부재 중 또는 부재 중 작업을 위임할 수 있습니다.
 exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Adaptive Forms, Workflow
+role: Admin, User
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 4%

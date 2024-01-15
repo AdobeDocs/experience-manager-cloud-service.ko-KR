@@ -1,11 +1,11 @@
 ---
 title: 적응형 양식에 대한 양식 데이터 모델을 만들려면 어떻게 해야 합니까?
 description: FDM(양식 데이터 모델)을 기반으로 적응형 Forms 및 조각을 만드는 방법에 대해 알아봅니다. FDM에서 데이터 모델 개체에 대한 샘플 데이터를 생성하고 편집합니다.
-feature: Form Data Model
-role: User
+feature: Adaptive Forms, Form Data Model
+role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '1213'
 ht-degree: 2%

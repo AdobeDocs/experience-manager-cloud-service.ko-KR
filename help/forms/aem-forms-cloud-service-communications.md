@@ -2,7 +2,9 @@
 title: Forms as a Cloud Service을 사용하여 데이터를 XDP 및 PDF 템플릿과 병합하거나 PCL, ZPL 및 PostScript 형식으로 출력을 생성하는 방법
 description: XDP 및 PDF 템플릿과 데이터 자동 병합 또는 PCL, ZPL 및 PostScript 형식으로 출력 생성
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Adaptive Forms, APIs
+role: Admin, Developer, User
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 6%

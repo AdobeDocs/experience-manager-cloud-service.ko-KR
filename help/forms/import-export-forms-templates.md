@@ -2,8 +2,9 @@
 title: AEM Forms 인스턴스에서 적응형 Forms 또는 PDF forms을 가져오고 내보내고 구성하는 방법
 description: 적응형 Forms, PDF forms, 테마 및 기타 지원 자산을 AEM 인스턴스로/에서 마이그레이션하는 방법에 대해 알아봅니다.
 topic-tags: forms-manager
-exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+role: Admin, User
+feature: Adaptive Forms
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 0%

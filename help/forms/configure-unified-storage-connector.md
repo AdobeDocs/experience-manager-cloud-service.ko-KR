@@ -1,8 +1,10 @@
 ---
 title: AEM Forms용 통합 스토리지 커넥터(USC)를 구성하는 방법
 description: AEM Forms용 USC(Unified Storage Connector)를 관리하는 방법을 알아봅니다. USC(통합 스토리지 커넥터)를 사용하여 AEM Forms을 외부 데이터 스토리지에 연결합니다.
+role: Admin, Developer, User
+feature: Adaptive Forms, Workflow
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 0%

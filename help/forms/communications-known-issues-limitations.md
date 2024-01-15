@@ -2,9 +2,11 @@
 title: AEM Forms의 고려 사항, 알려진 문제 및 모범 사례는 무엇입니까?
 description: AEM Forms Communication API에 대한 알려진 문제 및 모범 사례를 고려합니다.
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Adaptive Forms
+role: Admin, Developer, User
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1733'
 ht-degree: 0%
 
 ---

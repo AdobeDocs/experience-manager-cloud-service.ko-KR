@@ -2,7 +2,9 @@
 title: AEM Workflow 단계에 변수를 추가하려면 어떻게 해야 합니까?
 description: 변수를 만들고 변수 값을 설정하고에서 사용하는 방법을 알아봅니다. [!DNL AEM Forms] 워크플로우 단계.
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Adaptive Forms, Workflow
+role: Admin, User
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '1928'
 ht-degree: 1%

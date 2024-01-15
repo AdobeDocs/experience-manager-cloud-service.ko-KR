@@ -1,18 +1,18 @@
 ---
 title: 적응형 양식 분석 보고서 보기 및 이해
 description: 적응형 양식은 Adobe Analytics와 원활하게 통합되어 게시된 양식 및 문서에 대한 성능 지표를 캡처하고 추적합니다.
-keywords: 적응형 양식 분석 보고서 보기 및 이해, Adobe 분석 보고서, Forms 분석 보고서
+keywords: 적응형 Forms 분석 보고서, Adobe 분석 보고서, Forms 분석 보고서 보기 및 이해
 topic-tags: develop
 feature: Adaptive Forms
-role: User
+role: Admin, User
 level: Intermediate
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+exl-id: 756dee1f-4685-4783-961d-b172a5bd0692
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
-source-wordcount: '988'
-ht-degree: 98%
+source-wordcount: '976'
+ht-degree: 97%
 
 ---
-
 
 # 적응형 양식 분석 보고서 보기 및 이해 {#viewing-and-understanding-aem-forms-analytics-reports}
 

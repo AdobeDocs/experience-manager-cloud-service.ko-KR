@@ -2,11 +2,13 @@
 title: 외부 웹 페이지에 적응형 양식을 임베드하는 방법
 description: 웹 사이트에 적응형 Forms을 임베드하는 방법에 대해 알아봅니다.
 topic-tags: author
+role: Admin, Developer, User
 feature: Adaptive Forms
-source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
+exl-id: 00b8cd79-bf2d-4001-b2d6-1b020c868008
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '1015'
-ht-degree: 51%
+source-wordcount: '1003'
+ht-degree: 50%
 
 ---
 
@@ -96,7 +98,7 @@ ht-degree: 51%
 
 1. 임베드된 코드에서
 
-   * 값 변경 *options.path* 적응형 양식의 게시 URL 경로가 포함된 변수입니다. AEM 서버가 컨텍스트 경로에서 실행 중인 경우, URL에 컨텍스트 경로가 포함되어 있는지 확인합니다. 확장명을 포함하여 항상 적응형 양식의 전체 이름을 표시합니다.  예를 들어 위의 코드와 적응형 양식은 동일한 AEM Forms 서버에 있으므로 이 예제에서는 적응형 양식의 컨텍스트 경로를 사용합니다 `/content/forms/af/locbasic.html`.
+   * 값 변경 *options.path* 적응형 양식의 게시 URL 경로가 포함된 변수입니다. AEM 서버가 컨텍스트 경로에서 실행 중인 경우, URL에 컨텍스트 경로가 포함되어 있는지 확인합니다. 확장을 포함한 적응형 양식의 전체 이름을 항상 언급하십시오. 예를 들어 위의 코드와 적응형 양식은 동일한 AEM Forms 서버에 있으므로 이 예제에서는 적응형 양식의 컨텍스트 경로를 사용합니다 `/content/forms/af/locbasic.html`.
    * 바꾸기 *options.dataRef* (URL로 전달할 속성 포함) dataref 변수를 사용하여 다음을 수행할 수 있습니다. [적응형 양식 미리 채우기](/help/forms/prepopulate-adaptive-form-fields.md).
    * 바꾸기 *options.themePath* 를 사용하십시오. 또는 요청 속성을 사용하여 테마 경로를 지정할 수 있습니다.
    * CSS 선택기는 적응형 양식이 임베드된 양식 컨테이너의 CSS 선택기입니다. 예: 위 예에서 .customafsection css 클래스는 CSS 선택기입니다.

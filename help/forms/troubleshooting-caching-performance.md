@@ -2,11 +2,13 @@
 title: AEM Forms as a Cloud Service에 대한 캐싱 관련 문제를 해결하려면 어떻게 합니까?
 description: AEM Forms as a Cloud Service의 캐싱 관련 문제를 해결합니다.
 contentOwner: khsingh
+feature: Adaptive Forms, Troubleshooting
+role: User
 exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 2%
+source-wordcount: '381'
+ht-degree: 1%
 
 ---
 
@@ -33,7 +35,7 @@ Cloud Service 환경에서 적응형 Forms 캐시를 구성하거나 사용하�
 문제를 해결하려면 다음 단계를 수행하십시오.
 
 1. Experience Manager 프로젝트를 엽니다.
-1. 편집할 `dispatcher/scr/conf.d/rewrites/rewrite.rules`을 엽니다.
+1. 를 엽니다. `dispatcher/scr/conf.d/rewrites/rewrite.rules` 편집할 수 있습니다.
 1. 를 엽니다. `conf.d/httpd-dispatcher.conf` 또는 런타임 시 로드되도록 구성된 기타 모든 구성 파일입니다.
 1. 다음 코드를 파일에 추가하고 저장합니다. 샘플 코드이며 환경에 맞게 수정합니다.
 

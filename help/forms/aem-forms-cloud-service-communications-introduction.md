@@ -3,7 +3,9 @@ title: Forms as a Cloud Service 통신 API란 무엇입니까?
 description: 통신 API를 사용하여 문서에 서명, 인증 또는 보호하고, PDF 생성 프로세스를 자동화하고, PDF 문서를 다른 형식으로 변환합니다.
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Adaptive Forms, APIs
+role: Admin, Developer, User
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
 source-wordcount: '1429'
 ht-degree: 77%

@@ -2,16 +2,18 @@
 title: ' [!DNL AEM Forms] as a Cloud Service 소개'
 description: AEM Forms를 통해 업무용 양식을 제작하고 비즈니스 프로세스 워크플로를 만들 수 있고, 문서 서비스를 사용하여 문서를 생성하고 보호할 수 있습니다.
 landing-page-description: AEM as a Cloud Service에서 양식을 사용하는 방법을 이해합니다.
+role: Admin, Developer, User
+feature: Adaptive Forms
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
-source-wordcount: '1149'
-ht-degree: 100%
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+workflow-type: tm+mt
+source-wordcount: '972'
+ht-degree: 99%
 
 ---
 
 
-# 소개 AEM Forms as a Cloud Service {#introduction}
+# AEM Forms as a Cloud Service 소개 {#introduction}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
