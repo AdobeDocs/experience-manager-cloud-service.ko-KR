@@ -3,9 +3,9 @@ title: 적합한 사람, 적합한 역할
 description: 적절한 사람을 선택하고 프로젝트에 적합한 역할을 할당하는 방법에 대해 알아봅니다.
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '832'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

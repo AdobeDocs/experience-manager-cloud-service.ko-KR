@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.8.0 릴리�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.8.0 릴리스 정보입니다.'
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1691'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -70,11 +70,11 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
   ![데이터 소스에서 자산 일괄 가져오기](/help/release-notes/assets/bulk-import.png)
 
-* **Adobe Express 기반 이미지 편집 도구**: 쉽고 직관적 [Adobe Express 기반의 이미지 편집 도구](/help/assets/edit-images-assets-view.md) AEM Assets 내에서 바로 사용할 수 있으므로 콘텐츠 재사용을 높이고 콘텐츠 속도를 가속화할 수 있습니다.
+* **Adobe Express에서 제공하는 이미지 편집 도구**: AEM Assets 내에서 바로 사용할 수 있는 [Adobe Express 기반의 쉽고 직관적인 이미지 편집 도구](/help/assets/edit-images-assets-view.md)를 사용하면 콘텐츠 재사용률과 콘텐츠 속도를 높일 수 있습니다.
 
   ![Adobe Express를 사용하여 이미지 편집](/help/release-notes/assets/edit-adobe-express.png)
 
-* **내 작업 영역 빠른 액세스에 대한 항목을 고정할 때의 유연성**: 사용자, 전체 조직 또는 그룹 목록에 대해 항목을 선택하고 고정하여 [내 작업 영역의 빠른 액세스 섹션](/help/assets/my-workspace-assets-view.md) 를 참조하십시오.
+* **내 작업 영역 바로 가기 항목을 고정하면서 유연성 유지**: 원하는 경우 [내 작업 영역의 바로 가기 섹션](/help/assets/my-workspace-assets-view.md)에 표시되도록 전체 조직 또는 그룹 목록에 맞는 항목을 선택하고 고정할 수 있는 기능입니다.
 
   ![그룹에 맞는 항목 고정](/help/release-notes/assets/pin-items-for-groups.png)
 

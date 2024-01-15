@@ -3,9 +3,9 @@ title: 통합 셸의 AEM as a Cloud Service
 description: Unified Shell에서 AEM as a Cloud Service의 이점에 대해 알아봅니다.
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '390'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
