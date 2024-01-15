@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
+source-git-commit: 8a74f027c7fe16c3bd23a8627bc9c82e8840cb77
 workflow-type: tm+mt
-source-wordcount: '4538'
+source-wordcount: '4544'
 ht-degree: 99%
 
 ---
@@ -656,6 +656,8 @@ ht-degree: 99%
             + [접근성 높은 적응형 양식 만들기](/help/forms/creating-accessible-adaptive-forms.md)
          + [Forms 포털 구성](/help/forms/configure-forms-portal.md)
          + [검토 만들기 및 관리](/help/forms/create-reviews-forms.md)
+      + [적응형 양식 키워드](/help/forms/adaptive-forms-keywords.md)
+      + [양식 미리 보기](/help/forms/previewing-forms.md)
    + 양식 중심 워크플로 {#create-form-centric-workflows}
       + [워크플로 + 단계 참조에서 양식 중심 단계 사용](/help/forms/aem-forms-workflow-step-reference.md)
       + [양식 중심 워크플로에서 변수 사용](/help/forms/variable-in-aem-workflows.md)
@@ -1111,5 +1113,5 @@ ht-degree: 99%
       + [필드 유형](/help/implementing/universal-editor/field-types.md)
       + [Universal Editor 인증](/help/implementing/universal-editor/authentication.md)
       + [Universal Editor를 사용하는 로컬 AEM 개발](/help/implementing/universal-editor/local-dev.md)
-      + [유니버설 편집기 호출](/help/implementing/universal-editor/calls.md)
+      + [Universal Editor 호출](/help/implementing/universal-editor/calls.md)
       + [UI 맞춤화](/help/implementing/universal-editor/customizing.md)

@@ -1,13 +1,13 @@
 ---
 title: 적응형 양식을 미리 보는 방법
 description: 사용자는 게시 또는 활성화 전에 양식을 미리 보고 예상치에 부합하도록 할 수 있습니다. 미리 보기 옵션은 지원되는 양식 유형에 따라 다를 수 있습니다.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+role: Admin, Developer, User
+feature: Adaptive Forms
+source-git-commit: 6511c4273ca3d394d98a61e8acb4d3cb03c243d5
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 3%
+source-wordcount: '336'
+ht-degree: 2%
 
 ---
 
@@ -28,10 +28,10 @@ ht-degree: 3%
    <td><strong>에셋 유형</strong><br /> </td>
    <td><strong>사용 가능한 미리보기 옵션</strong><br /> </td>
   </tr>
-  <tr>
-   <td>문서</td>
-   <td>PDF 미리보기</td>
-  </tr>
+  <!--<tr>
+   <td>Document</td>
+   <td>PDF preview</td>
+  </tr>-->
   <tr>
    <td>PDF 양식</td>
    <td>PDF 미리 보기 및 데이터를 사용한 미리 보기<br /> </td>
@@ -40,10 +40,10 @@ ht-degree: 3%
    <td>적응형 양식</td>
    <td>데이터를 사용하여 HTML 미리 보기 및 HTML 미리 보기</td>
   </tr>
-  <tr>
-   <td>양식 템플릿</td>
-   <td>PDF 미리 보기, 데이터를 사용한 PDF 미리 보기, HTML 미리 보기, 데이터를 사용한 HTML 미리 보기<br /> </td>
-  </tr>
+  <!--<tr>
+   <td>Form Template</td>
+   <td>PDF preview, PDF preview with Data, HTML preview, HTML preview with Data<br /> </td>
+  </tr>-->
  </tbody>
 </table>
 
@@ -61,7 +61,7 @@ ht-degree: 3%
 
    * HTML으로 미리 보기
    * 데이터를 포함한 미리 보기
-   * PDF으로 미리 보기(양식 서식 파일에 사용 가능)
+     <!--* Preview as PDF (available for form templates)-->
 
 ## 데이터를 포함한 미리 보기 {#preview-with-data}
 

@@ -1,13 +1,12 @@
 ---
 title: 적응형 Forms 예약 키워드란 무엇입니까?
 description: 적응형 Forms에서 식별자로 사용할 수 없는 예약된 키워드입니다.
-uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+role: Admin, Developer, User
+feature: Adaptive Forms
+source-git-commit: 6511c4273ca3d394d98a61e8acb4d3cb03c243d5
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '205'
 ht-degree: 4%
 
 ---
