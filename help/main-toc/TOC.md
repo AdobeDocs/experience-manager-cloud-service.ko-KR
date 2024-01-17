@@ -163,7 +163,7 @@ ht-degree: 99%
    + Experience Manager 강화 커넥터용 Workfront 릴리스 정보{#workfront}
       + [Experience Manager 강화 커넥터용 Workfront 최신 릴리스 정보](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [새로운 기능](/help/release-notes/what-is-new.md)
-   + [AEM Cloud Service의 주요 변경 내용](/help/release-notes/aem-cloud-changes.md)
+   + [AEM Cloud Service의 주요 변경 사항](/help/release-notes/aem-cloud-changes.md)
    + [사용이 중단되거나 제거된 기능 및 API](/help/release-notes/deprecated-removed-features.md)
    + [프리릴리스 채널](/help/release-notes/prerelease.md)
 + 보안 {#security}
@@ -258,7 +258,7 @@ ht-degree: 99%
       + [AEM Dispatcher 변환기](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
       + [AEM 현대화 도구](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + Sites {#sites}
-   + [AEM Cloud Service의 AEM Sites에 대한 주요 변경 내용](/help/sites-cloud/sites-cloud-changes.md)
+   + [AEM Cloud Service의 AEM Sites에 대한 주요 변경 사항](/help/sites-cloud/sites-cloud-changes.md)
    + 작성 {#authoring}
       + 시작하기 {#getting-started}
          + [페이지 작성에 대한 빠른 시작 안내서](/help/sites-cloud/authoring/getting-started/quick-start.md)
@@ -393,7 +393,7 @@ ht-degree: 99%
       + [Adobe Campaign과 통합](/help/sites-cloud/integrating/campaign.md)
 + Assets {#assets}
    + [개요 및 새로운 기능](/help/assets/overview.md)
-   + [ [!DNL Assets] as a [!DNL Cloud Service] 주요 변경 내용](/help/assets/assets-cloud-changes.md)
+   + [ [!DNL Assets] as a [!DNL Cloud Service] 주요 변경 사항](/help/assets/assets-cloud-changes.md)
    + [[!DNL Assets] 아키텍처](/help/assets/architecture.md)
    + [지원되는 파일 형식](/help/assets/file-format-support.md)
    + [자산 마이크로서비스 개요](/help/assets/asset-microservices-overview.md)
@@ -559,7 +559,7 @@ ht-degree: 99%
    + 개요 {#forms-overview}
       + [소개](/help/forms/home.md)
       + [주요 Adobe Experience Manager Forms 혁신 사항](/help/forms/latest-innovations.md)
-      + [주요 변경 내용](/help/forms/notable-changes.md)
+      + [주요 변경 사항](/help/forms/notable-changes.md)
       + [아키텍처](/help/forms/aem-forms-cloud-service-architecture.md)
       + [자주 묻는 질문](/help/forms/faq.md)
       + [알려진 문제](/help/forms/known-issues.md)
@@ -715,7 +715,7 @@ ht-degree: 99%
    + [Screens as a Cloud Service FAQ](/help/screens-cloud/screens-cloud-faqs.md)
 + Content and Commerce {#content-and-commerce}
    + [소개 및 개요](/help/commerce-cloud/introduction.md)
-   + [AEM Content and Commerce as a Cloud Service의 주요 변경 내용](/help/commerce-cloud/changes.md)
+   + [AEM Content and Commerce as a Cloud Service의 주요 변경 사항](/help/commerce-cloud/changes.md)
    + 상거래 여정 {#journeys}
       + 콘텐츠 작성 여정 {#author}
          + [AEM Content and Commerce 콘텐츠 작성 여정](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
@@ -1113,4 +1113,4 @@ ht-degree: 99%
       + [Universal Editor 인증](/help/implementing/universal-editor/authentication.md)
       + [Universal Editor를 사용하는 로컬 AEM 개발](/help/implementing/universal-editor/local-dev.md)
       + [Universal Editor 호출](/help/implementing/universal-editor/calls.md)
-      + [UI 맞춤화 ](/help/implementing/universal-editor/customizing.md)
+      + [UI 맞춤화](/help/implementing/universal-editor/customizing.md)
