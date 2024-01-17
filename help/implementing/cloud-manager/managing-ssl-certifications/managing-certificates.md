@@ -2,10 +2,10 @@
 title: SSL 인증서 관리
 description: Cloud Manager를 사용하여 SSL 인증서의 상태를 확인하는 방법과 SSL 인증서를 편집, 교체, 업데이트 및 삭제하는 방법을 알아봅니다.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 78%
+source-wordcount: '644'
+ht-degree: 75%
 
 ---
 
@@ -30,7 +30,8 @@ SSL 인증서 페이지에서 SSL 인증서의 상태에 대한 개요를 파악
 
 인증서가 만료되면 만료된 인증서와 함께 사용 중인 모든 도메인이 더 이상 작동하지 않습니다. 다음 단계를 통해 인증서를 업데이트하면 도메인이 계속해서 원하는 대로 작동할 수 있습니다.
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
+1. 에서 Cloud Manager에 로그인합니다. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 적절한 조직 선택
+1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 화면에서 프로그램을 선택합니다.
 1. **개요** 페이지에서 **환경** 화면으로 이동합니다.
 1. **환경** 화면에서 **SSL 인증서** 화면으로 이동합니다.
 1. 프로그램에 성공적으로 설치된 각 SSL 인증서에 대한 행이 있는 표를 볼 수 있습니다. 업데이트하려는 인증서 행의 맨 오른쪽 끝에 있는 줄임표 버튼을 클릭하고 을 선택합니다 **보기 및 업데이트**.

@@ -2,10 +2,10 @@
 title: 프로덕션 프로그램 만들기
 description: Cloud Manager를 사용하여 라이브 트래픽을 호스팅하는 자체 프로덕션 프로그램을 만드는 방법을 알아봅니다.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 79d3ec7f5ede84fd989b7d5440739ec9560a547f
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 73%
+source-wordcount: '599'
+ht-degree: 64%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 73%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. 클릭 **프로그램 추가** 화면 오른쪽 상단에서
+1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 화면, 탭 또는 클릭 **프로그램 추가** 을 클릭합니다.
 
    ![Cloud Manager 랜딩 페이지](assets/log-in.png)
 
@@ -30,15 +30,13 @@ ht-degree: 73%
 
    ![프로그램 만들기 마법사](assets/create-production-program.png)
 
-1. 필요한 경우, 파일 브라우저에서 이미지를 선택하려면 이미지 파일을 **프로그램 이미지 추가** 타깃으로 드래그 앤 드롭하거나 클릭하여 이미지를 프로그램에 추가할 수 있습니다. 선택 **계속**.
+1. 필요한 경우, 파일 브라우저에서 이미지를 선택하려면 이미지 파일을 **프로그램 이미지 추가** 타깃으로 드래그 앤 드롭하거나 클릭하여 이미지를 프로그램에 추가할 수 있습니다. **계속**&#x200B;을 선택합니다.
 
 1. 필요한 권한이 있는 경우 **보안** 탭이 표시되고 활성화 옵션을 제공합니다. **HIPAA** 및/또는 **WAF-DDOS 보호** 프로덕션 프로그램용입니다. 생성 중인 프로그램에 필요한 경우 해당 옵션을 선택한 다음 선택합니다 **계속**.
 
    * 프로그램 생성 후에는 HIPAA를 활성화하거나 비활성화할 수 없습니다.
       * Adobe의 HIPAA 준비 솔루션 구현에 대해 [자세히 알아보십시오](https://www.adobe.com/go/hipaa-ready_kr).
    * 활성화되면 를 설정하여 WAF-DDOS 보호를 구성할 수 있습니다. [비프로덕션 파이프라인.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-
-   {{waf-limited-release}}
 
    ![보안 옵션](assets/create-production-program-security.png)
 
@@ -60,7 +58,7 @@ ht-degree: 73%
    ![계획된 Go-Live 날짜 정의](assets/setup-go-live.png)
 
    * 이 날짜는 언제든지 편집할 수 있습니다.
-   * 이 날짜는 정보용으로만 제공되며 프로그램 개요 페이지에서 Go Live 위젯을 트리거하여 AEM as a Cloud Service 모범 사례 문서에 대한 제품 내 링크를 적시에 제공함으로써 여정에 맞춰 성공적이고 원활한 Go Live 경험을 제공합니다.
+   * 이 날짜는 정보 제공용으로만 사용되며 [**프로그램 개요** 페이지](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) 성공적이고 원활한 Go-Live 경험을 통해 여정에 맞춰 적시에 AEM as a Cloud Service 모범 사례 설명서에 대한 제품 내 링크를 제공할 수 있습니다.
 
 1. **만들기**&#x200B;를 클릭합니다.
 

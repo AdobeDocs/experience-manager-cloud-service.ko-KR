@@ -2,10 +2,10 @@
 title: 사용자 정의 도메인 이름 추가
 description: Cloud Manager를 사용하여 사용자 정의 도메인 이름을 추가하는 방법을 알아봅니다.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 85%
+source-wordcount: '636'
+ht-degree: 79%
 
 ---
 
@@ -18,7 +18,7 @@ Cloud Manager의 두 위치에서 사용자 정의 도메인 이름을 추가할
 
 >[!NOTE]
 >
->Cloud Manager에서 사용자 정의 도메인 이름을 추가하려면 사용자에게 **비즈니스 소유자** 또는 **배포 관리자** 역할이 있어야 합니다., Fastly CDN을 사용하고 있어야 합니다.
+>사용자에게 다음이 있어야 합니다. **비즈니스 소유자** 또는 **배포 관리자** cloud Manager에서 사용자 정의 도메인 이름을 추가할 역할이며 Fastly CDN을 사용해야 합니다.
 
 ## 도메인 설정 페이지에서 사용자 정의 도메인 이름 추가 {#adding-cdn-settings}
 
@@ -26,7 +26,9 @@ Cloud Manager의 두 위치에서 사용자 정의 도메인 이름을 추가할
 
 **도메인 설정** 페이지에서 사용자 정의 도메인 이름을 추가하려면 다음 단계를 따르십시오. 이러한 단계는 Fastly를 기반으로 합니다. 다른 CDN을 사용하는 경우 사용하기로 선택한 CDN으로 도메인을 구성해야 합니다.
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
+
+1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 화면에서 프로그램을 선택합니다.
 
 1. **개요** 페이지에서 **환경** 화면으로 이동합니다.
 

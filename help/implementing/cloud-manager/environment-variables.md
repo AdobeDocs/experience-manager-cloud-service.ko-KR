@@ -2,10 +2,10 @@
 title: Cloud Manager 환경 변수
 description: 표준 환경 변수는 Cloud Manager를 통해 구성 및 관리할 수 있으며 OSGi 구성에서 사용할 런타임 환경에 제공됩니다.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 86%
+source-wordcount: '992'
+ht-degree: 85%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 86%
 >환경 변수를 추가하거나 수정하려면 [**배포 관리자** 역할](/help/onboarding/cloud-manager-introduction.md#role-based-premissions)의 멤버여야 합니다.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Adobe Cloud Manager에 로그인합니다.
-1. Cloud Manager에 사용할 수 있는 다양한 프로그램이 나열됩니다. 관리할 항목을 선택합니다.
+1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 화면에서 관리할 항목을 선택합니다.
 1. 선택한 프로그램의 **환경** 탭을 선택한 다음 왼쪽 탐색 패널에서 환경 변수를 생성할 환경을 선택합니다.
 1. 환경 세부 정보 내에서 **구성** 탭을 선택한 다음 **추가**&#x200B;를 선택하여 **환경 구성** 대화 상자를 엽니다.
    * 환경 변수를 처음 추가하는 경우 **구성 추가** 페이지의 중앙에 있는 단추입니다. 이 버튼 또는 **추가**&#x200B;를 사용하여 **환경 구성** 대화 상자를 열 수 있습니다.

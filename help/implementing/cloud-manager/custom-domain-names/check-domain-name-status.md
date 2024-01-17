@@ -2,10 +2,10 @@
 title: 도메인 이름 상태 확인
 description: Cloud Manager에서 사용자 정의 도메인 이름이 정상적으로 인증되었는지 확인하는 방법을 알아봅니다.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 88%
+source-wordcount: '651'
+ht-degree: 87%
 
 ---
 
@@ -14,7 +14,9 @@ ht-degree: 88%
 
 Cloud Manager 내에서 사용자 정의 도메인 이름의 상태를 확인할 수 있습니다.
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
+
+1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 화면에서 프로그램을 선택합니다.
 
 1. **개요** 페이지에서 **환경** 화면으로 이동합니다.
 

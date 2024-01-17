@@ -2,10 +2,10 @@
 title: IP 허용 목록 관리
 description: Cloud Manager에서 IP 허용 목록을 보고, 편집하고, 삭제하고, 상태를 확인하는 방법을 알아봅니다.
 exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 98%
+source-wordcount: '789'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,8 @@ Cloud Manager에서 IP 허용 목록을 보고, 편집하고, 삭제하고, 상�
 
 **비즈니스 소유자** 또는 **배포 관리자** 역할의 사용자는 다음 단계에 따라 IP 허용 목록을 보고 업데이트할 수 있습니다.
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
+1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 화면에서 프로그램을 선택합니다.
 1. **개요** 페이지에서 **환경** 화면으로 이동합니다.
 1. **환경** 화면에서 **IP 허용 목록** 페이지로 이동합니다.
 1. 보거나 업데이트하려는 IP 허용 목록의 행을 식별합니다.

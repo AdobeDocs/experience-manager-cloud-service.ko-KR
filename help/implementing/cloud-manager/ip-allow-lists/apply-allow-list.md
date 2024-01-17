@@ -2,10 +2,10 @@
 title: IP 허용 목록 적용 및 적용 취소
 description: 환경에 IP 허용 목록을 적용 및 적용 취소하는 방법을 알아봅니다.
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 84%
+source-wordcount: '275'
+ht-degree: 81%
 
 ---
 
@@ -18,7 +18,9 @@ IP 허용 목록을 적용할 때 목록의 정의에 포함된 모든 IP 범위
 
 **비즈니스 소유자** 또는 **배포 관리자** 역할의 사용자는 다음 단계에 따라 IP 허용 목록을 적용할 수 있습니다.
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
+
+1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 화면에서 프로그램을 선택합니다.
 1. **개요** 페이지에서 **환경** 화면으로 이동합니다.
 1. **환경** 화면에서 특정 환경 세부 정보 페이지로 이동하고 **IP 허용 목록** 표로 이동합니다.
 1. IP 허용 목록과 이를 적용할 작성자 또는 게시 서비스를 선택할 수 있도록 표 상단의 입력 필드를 사용합니다.

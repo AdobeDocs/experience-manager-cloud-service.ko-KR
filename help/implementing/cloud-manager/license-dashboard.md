@@ -2,10 +2,10 @@
 title: 라이선스 대시보드
 description: Cloud Manager는 조직 또는 테넌트가 사용할 수 있는 AEMaaCS 제품 권한을 쉽게 볼 수 있도록 대시보드를 제공합니다.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: fbfb5d3ee8dbc8bc4cbe118fd4ce97284f712bb4
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 66%
+source-wordcount: '661'
+ht-degree: 58%
 
 ---
 
@@ -30,7 +30,7 @@ Cloud Manager 라이선스 대시보드를 사용하면 다음 정보에 쉽게 
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. 제품 개요 페이지에서 **라이선스** 탭으로 전환합니다.
+1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 화면, 다음으로 전환 **라이선스** 탭.
 
 ![라이선스 대시보드](assets/license-dashboard.png)
 
@@ -55,7 +55,7 @@ Cloud Manager 라이선스 대시보드를 사용하면 다음 정보에 쉽게 
 
 ### 콘텐츠 요청이란? {#what-is-a-content-request}
 
-콘텐츠 요청은 콘텐츠 또는 데이터를 HTML 포맷을 사용하여 페이지 보기로 전달하거나 JSON 포맷을 사용하여 API 호출로 전달하기 위해 AEM Sites 또는 콘텐츠 게재 네트워크와 같은 고객 제공 캐싱 시스템으로 들어오는 요청입니다.
+콘텐츠 요청은 콘텐츠 또는 데이터를 페이지 조회수로 또는 JSON 포맷으로 API 호출로 전달하기 위해 AEM Sites HTML 또는 콘텐츠 전달 네트워크와 같은 고객 제공 캐싱 시스템으로 들어오는 요청입니다.
 
 콘텐츠 요청은 각 페이지 보기 또는 5개의 API 호출마다 계산되며, 콘텐츠 요청을 수신하기 위한 첫 번째 캐싱 시스템의 인그레스에서 측정됩니다. 콘텐츠 요청은 프로덕션 환경에 대해서만 계산됩니다.
 

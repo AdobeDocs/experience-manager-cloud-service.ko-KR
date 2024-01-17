@@ -1,7 +1,7 @@
 ---
-source-git-commit: 6a370269317621f09f0dcdc7f701d7c8a4891ea4
-workflow-type: ht
-source-wordcount: '236'
+source-git-commit: 79d3ec7f5ede84fd989b7d5440739ec9560a547f
+workflow-type: tm+mt
+source-wordcount: '212'
 ht-degree: 100%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 100%
 ## Edge Delivery Services 작성 {#edge-delivery-authoring}
 
 [!BADGE Edge Delivery Services용 AEM 콘텐츠를 작성하려면 여기를 클릭합니다.]{type=Positive url="/help/edge/overview.md" tooltip="Edge Delivery Services용 AEM 콘텐츠 작성"}
-
-## WAF 구성 제한적 릴리스 {#waf-limited-release}
-
-[!BADGE WAF-DDOS 보호 기능은 2023년 말에 제공될 예정입니다.]{type=Caution tooltip="WAF-DDOS 보호 기능은 2023년 말에 제공될 예정입니다."}
 
 ## Universal Editor 상태 {#universal-editor-status}
 
