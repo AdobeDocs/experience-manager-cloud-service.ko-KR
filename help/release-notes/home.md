@@ -3,7 +3,7 @@ title: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 정보
 description: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 정보
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '345'
 ht-degree: 100%
 
@@ -44,4 +44,4 @@ ht-degree: 100%
 * [유지 관리 릴리스 정보](/help/release-notes/maintenance/latest.md)
 * [새로운 기능](what-is-new.md)
 * [주요 변경 사항](aem-cloud-changes.md)
-* [더 이상 사용되지 않는/제거된 기능](deprecated-removed-features.md)
+* [사용 중단되거나 제거된 기능](deprecated-removed-features.md)
