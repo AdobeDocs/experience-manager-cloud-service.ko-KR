@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.5.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.5.0 릴리스 정보입니다.'
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 720430af374636878b42ce346ca9c61ab089709b
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 47%
+source-wordcount: '1355'
+ht-degree: 45%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 47%
 
 >[!NOTE]
 >
->릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
 
 ## 릴리스 일자 {#release-date}
 
@@ -31,7 +31,7 @@ ht-degree: 47%
 
 * [프리릴리스 채널](/help/release-notes/prerelease.md): 프로덕션에 출시되기 전에 예정된 기능을 한 달 동안 미리 볼 수 있습니다!
 
-* [API 사용 중단](/help/release-notes/deprecated-apis.md)AEM : as a Cloud Service에 대해 사용 중단된 최신 API 목록을 사용할 수 있습니다.
+* [API 사용 중단](/help/release-notes/deprecated-removed-features.md)AEM : as a Cloud Service에 대해 사용 중단된 최신 API 목록을 사용할 수 있습니다.
 
 * [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html): 더 이상 사용되지 않는 Java API 확인 및 기타 개선 사항이 포함된 최신 버전으로 Maven 프로젝트를 업데이트합니다.
 
@@ -80,7 +80,7 @@ ht-degree: 47%
 
 ### [!DNL Forms]의 예정된 베타 기능 {#what-is-new-forms-prerelease}
 
-Output as a Cloud service: Output 서비스는 XDP 템플릿과 XML 데이터를 결합하여 다양한 형식의 인쇄 문서를 생성할 수 있도록 합니다. 이 서비스를 사용하면 동기화 모드와 비동기 배치 모드에서 문서를 생성할 수 있습니다. Output 서비스를 사용하면 다음과 같은 기능을 제공하는 애플리케이션을 만들 수 있습니다.
+Output as a Cloud service: Output 서비스는 XDP 템플릿과 XML 데이터를 결합하여 다양한 형식의 인쇄 문서를 생성할 수 있도록 합니다. 이 서비스를 사용하면 동기화 모드와 비동기화 배치 모드에서 문서를 생성할 수 있습니다. Output 서비스를 사용하면 다음과 같은 기능을 제공하는 애플리케이션을 만들 수 있습니다.
 
 * XML 데이터로 템플릿 파일을 채워 최종 양식 문서를 생성합니다.
 * 비대화형 PDF 인쇄 스트림을 포함하여 다양한 형식의 출력 양식을 생성합니다.
@@ -90,9 +90,9 @@ Beta 프로그램에 등록하려면 formscsbeta@adobe.com에 문의하십시오
 
 ### [!DNL Forms]의 수정된 버그 {#forms-bugs-fixed}
 
-* AEM Forms Workflow의 작업 할당 단계에서 액션 버튼의 기본값 아이콘을 코랄 아이콘으로 대체할 때 워크플로우가 작동을 멈추고 예외 사항을 기록합니다. 기본값 아이콘을 사용하면 워크플로가 원래대로 작동합니다.
+* AEM Forms Workflow의 작업 할당 단계에서 액션 버튼의 기본값 아이콘을 코랄 아이콘으로 대체할 때 워크플로가 작동을 멈추고 예외 사항을 기록합니다. 기본값 아이콘을 사용하면 워크플로가 원래대로 작동합니다.
 * 레이아웃 레이어에서 열의 수를 바꾸고 레이어 편집기를 열어 패널에서 일부 구성 요소를 드래그하면 적응형 양식 편집기의 콘텐츠 영역에 사각형의 파란색 상자가 나타나기 시작하고 편집기가 응답하지 않습니다.
-* 적응형 또는 외부 애셋의 URL 제공과 관련된 규칙 편집기 옵션의 오류 메시지가 너무 길고 사용자 친화적이지 않습니다.
+* 적응형 또는 외부 자산의 URL 제공과 관련된 규칙 편집기 옵션의 오류 메시지가 너무 길고 사용자 친화적이지 않습니다.
 
 
 ## Cloud Manager {#cloud-manager}
@@ -102,7 +102,7 @@ Beta 프로그램에 등록하려면 formscsbeta@adobe.com에 문의하십시오
 ### 릴리스 일자 {#release-date-cm-may}
 
 AEM as a Cloud Service 2021.5.0의 Cloud Manager 릴리스 일자는 2021년 5월 6일입니다.
-다음 릴리스는 2021년 6월 03일에 예정되어 있습니다.
+다음 릴리스는 2021년 6월 3일 금요일에 예정되어 있습니다.
 
 ### 새로운 기능 {#what-is-new-may}
 

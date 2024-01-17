@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8a74f027c7fe16c3bd23a8627bc9c82e8840cb77
+source-git-commit: e25f3e74fa7fa18b92ffe0c40a19f20442d4c7a0
 workflow-type: tm+mt
 source-wordcount: '4544'
 ht-degree: 99%
@@ -164,8 +164,7 @@ ht-degree: 99%
       + [Experience Manager 강화 커넥터용 Workfront 최신 릴리스 정보](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [새로운 기능](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service의 주요 변경 내용](/help/release-notes/aem-cloud-changes.md)
-   + [더 이상 사용되지 않는/제거된 기능](/help/release-notes/deprecated-removed-features.md)
-   + [더 이상 사용되지 않는 API](/help/release-notes/deprecated-apis.md)
+   + [사용이 중단되거나 제거된 기능 및 API](/help/release-notes/deprecated-removed-features.md)
    + [프리릴리스 채널](/help/release-notes/prerelease.md)
 + 보안 {#security}
    + [AEM as a Cloud Service 보안 개요](/help/security/cloud-service-security-overview.md)
@@ -1114,4 +1113,4 @@ ht-degree: 99%
       + [Universal Editor 인증](/help/implementing/universal-editor/authentication.md)
       + [Universal Editor를 사용하는 로컬 AEM 개발](/help/implementing/universal-editor/local-dev.md)
       + [Universal Editor 호출](/help/implementing/universal-editor/calls.md)
-      + [UI 맞춤화](/help/implementing/universal-editor/customizing.md)
+      + [UI 맞춤화 ](/help/implementing/universal-editor/customizing.md)
