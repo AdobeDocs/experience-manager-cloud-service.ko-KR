@@ -4,7 +4,7 @@ description: 색인화 및 유지 관리 작업과 같은 Experience Manager as 
 landing-page-description: 색인화 및 유지 관리 작업과 같은 Experience Manager as a Cloud Service가 수행하는 백엔드 작업에 대해 알아보고 질문에 대한 답변을 찾아보십시오.
 exl-id: ad50434c-1b4c-4e04-be91-2556d773cfbd
 source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '107'
 ht-degree: 100%
 
