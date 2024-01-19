@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service에 대한 로깅
 description: AEM용 로깅을 as a Cloud Service으로 사용하여 중앙 로깅 서비스의 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 3d53f81bfe9b180f19590a70d72b6bf62a7ab732
+source-git-commit: 35959a1cd47e9ea1b93aeddc3eb72cf03c44eda8
 workflow-type: tm+mt
-source-wordcount: '2755'
+source-wordcount: '2776'
 ht-degree: 8%
 
 ---
@@ -537,7 +537,7 @@ CDN 로그는 json 형식을 준수한다는 점에서 다른 로그와 구별�
 | *timestamp* | TLS 종료 후 요청이 시작된 시간입니다. |
 | *ttfb* | *Time To First Byte(첫 번째 바이트까지의 시간)*&#x200B;의 약어입니다. 요청이 시작된 후 응답 본문의 스트리밍이 시작되기까지의 시간 간격입니다. |
 | *cli_ip* | 클라이언트 IP 주소입니다. |
-| *cli_country* | 클라이언트 국가의 2글자 [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) Alpha-2 국가 코드입니다. |
+| *cli_country* | 클라이언트 국가의 2글자 [ISO 3166-1](https://en.wikipedia.org/wiki/kr/ISO_3166-1) Alpha-2 국가 코드입니다. |
 | *rid* | 요청을 고유하게 식별하는 데 사용되는 요청 헤더의 값입니다. |
 | *req_ua* | 해당 HTTP 요청을 담당하는 사용자 에이전트입니다. |
 | *host* | 요청이 의도한 대상 기관입니다. |
@@ -611,7 +611,7 @@ Splunk 계정이 있는 고객은 고객 지원 티켓을 통해 AEM Cloud Servi
 
 Splunk로 전송된 로그와 관련된 네트워크 대역폭은 고객의 네트워크 I/O 사용의 일부로 간주됩니다.
 
-Splunk 전달은 아직 CDN 로그를 지원하지 않습니다.
+CDN 로그는 새 지원 티켓 요청을 위해 Splunk에 전달됩니다. 이미 Splunk 전달이 활성화된 고객은 향후 CDN 로그를 추가할 수 있습니다.
 
 ### Splunk 전달 활성화 {#enabling-splunk-forwarding}
 
