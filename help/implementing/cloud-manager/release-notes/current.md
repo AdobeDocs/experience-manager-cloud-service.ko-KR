@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2024.1.0 릴
 description: AEM as a Cloud Service의 Cloud Manager 2024.1.0 릴리스 정보입니다.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: a00eb97859f679ade3a4a6d89a427735451ebd70
+source-git-commit: 06f534e6541bd04e005f3acf1edbb3e372c1cd0d
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 96%
+source-wordcount: '673'
+ht-degree: 80%
 
 ---
 
@@ -21,7 +21,12 @@ ht-degree: 96%
 
 ## 릴리스 일자 {#release-date}
 
-Cloud Manager 릴리스 2024.1.0의 AEM as a Cloud Service 릴리스 날짜는 2024년 1월 18일입니다.
+Cloud Manager 릴리스 2024.1.0의 AEM as a Cloud Service 릴리스 날짜는 2024년 1월 18일입니다. 다음 릴리스는 2024년 2월 16일에 예정되어 있습니다.
+
+## 새로운 기능 {#what-is-new}
+
+* 이제 Cloud Manager가 주 서버에 대해서만 만료 날짜를 확인합니다 [인증서,](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) 그러나 중간 인증서에도 사용됩니다.
+* CDN [로그](/help/implementing/cloud-manager/manage-logs.md) 이제 압축된 형식으로 반환됩니다.
 
 ## 조기 채택 프로그램 {#early-adoption}
 
@@ -61,3 +66,8 @@ GitHub를 사용하여 저장소를 관리하는 경우, [이제 Cloud Manager�
 대시보드는 웹 앱의 품질을 개선하기 위한 오픈 소스 자동화 도구인 Google Lighthouse를 사용합니다. 공개 또는 인증이 필요한 모든 웹 페이지에 대해 실행할 수 있습니다. 성능, 접근성, 점진적 웹 앱, SEO 등에 대한 감사가 있습니다.
 
 새 대시보드를 테스트해 보고 싶으십니까? Adobe ID와 연결된 이메일로 `aem-lighthouse-pilot@adobe.com`에 이메일을 보내 주시면 귀하의 시작을 도와드릴 수 있습니다.
+
+## 버그 수정 {#bug-fixes}
+
+* 구성 파일의 위치가 제대로 설정되지 않은 경우 빌드 단계에서 구성 파이프라인이 실패하고 명확하지 않은 오류 메시지가 표시되는 오류가 수정되었습니다. 이제 오류 메시지가 명확해지고 사용자가 구성 파일의 위치가 올바른지 확인해야 함을 나타냅니다.
+* 빌드 단계가 상태로 완료되는 경우 `FAILED` 으로 인해 `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`이제 대상 분기와 병합 충돌로 인한 오류로 제대로 설명되어 있습니다.
