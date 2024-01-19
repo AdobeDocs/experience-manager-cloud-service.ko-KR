@@ -5,10 +5,10 @@ Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, sale
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 75%
+source-wordcount: '482'
+ht-degree: 64%
 
 ---
 
@@ -24,6 +24,8 @@ OAuth 2.0 클라이언트 자격 증명을 사용하여 AEM Forms를 Salesforce 
 ![AEM Forms과 Salesforce 애플리케이션 간의 통신을 설정하는 동안 발생하는 워크플로우](/help/forms/assets/salesforce-workflow.png)
 
 AEM Forms은 Salesforce 연결 애플리케이션에 정의된 클라이언트 자격 증명(소비자 키 및 소비자 암호)을 교환하여 액세스 토큰을 얻습니다.
+
+AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 제출 액션을 제공합니다. 다음에서 이러한 옵션에 대해 자세히 알아볼 수 있습니다. [적응형 양식 제출 액션](/help/forms/configure-submit-actions-core-components.md) 기사.
 
 인증 코드 흐름 인증을 통한 인증에 OAuth 2.0 클라이언트 자격 증명을 사용하면 여러 가지 이점이 있습니다.
 
@@ -69,6 +71,9 @@ OAuth 2.0 클라이언트 자격 증명 인증 설정을 사용하여 적응형 
 1. **[!UICONTROL 연결 테스트]**&#x200B;를 클릭합니다.
 1. 연결에 성공하면 **[!UICONTROL 만들기]** 버튼을 클릭합니다.
 
-이제 다음을 수행할 수 있습니다. [양식 데이터 모델 만들기](/help/forms/create-form-data-models.md) 을 입력하여 적응형 양식을 Salesforce 애플리케이션에 보낼 수 있습니다.
+
+Salesforce 애플리케이션을 구성한 후 양식 데이터 모델을 만드는 동안 이 구성을 사용할 수 있습니다. 자세한 내용은 [양식 데이터 모델 만들기](create-form-data-models.md). [양식 데이터 모델 제출 작업 구성](/help/forms/using-form-data-model.md) 데이터를 Salesforce 애플리케이션으로 전송하는 적응형 양식용.
+
+비즈니스 워크플로우에서 양식 데이터 모델을 만들고 사용하는 방법에 대한 자세한 내용은 다음을 참조하십시오. [데이터 통합](data-integration.md).
 
 

@@ -1,8 +1,8 @@
 ---
-source-git-commit: 79d3ec7f5ede84fd989b7d5440739ec9560a547f
+source-git-commit: 2f567d45a6ba2dfb4dd3346e8510bcb04113eefb
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 100%
+source-wordcount: '264'
+ht-degree: 91%
 
 ---
 # 스니펫 {#snippets}
@@ -43,5 +43,16 @@ ht-degree: 100%
 * [적응형 양식 데이터를 AEM 워크플로로 보내기](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [Forms 포털을 사용하여 AEM 웹 사이트에 AEM 적응형 양식 나열](/help/forms/configure-forms-portal.md)
 
+## 적응형 양식 제출 액션 {#af-submit-action}
 
-
+* [이메일 보내기](/help/forms/configure-submit-action-send-email.md)
+* [SharePoint에 제출](/help/forms/configure-submit-action-sharepoint.md)
+* [양식 데이터 모델을 사용하여 제출](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
+* [Azure Blob 스토리지에 제출](/help/forms/configure-submit-action-azure-blob-storage.md)
+* [REST 엔드포인트에 제출](/help/forms/configure-submit-action-restpoint.md)
+* [OneDrive에 제출](/help/forms/configure-submit-action-onedrive.md)
+* [AEM Workflow 호출](/help/forms/configure-submit-action-workflow.md)
+* [Power Automate에 제출](/help/forms/forms-microsoft-power-automate-integration.md)
+* [Workfront Fusion에 제출](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+* [적응형 양식을 Salesforce 애플리케이션에 연결](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Microsoft® Dynamics OData에 적응형 양식 연결](/help/forms/ms-dynamics-odata-configuration.md)

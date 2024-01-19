@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 104dfd255185816983674026a84337624a851d9a
+source-git-commit: cb817f2ce94a1618fd8dd73834f663e8aaed2b7f
 workflow-type: tm+mt
-source-wordcount: '4551'
-ht-degree: 99%
+source-wordcount: '4600'
+ht-degree: 98%
 
 ---
 
@@ -609,6 +609,12 @@ ht-degree: 99%
             + [리디렉션 페이지 또는 감사 메시지 구성](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [반복 가능한 섹션으로 양식 만들기](/help/forms/create-forms-repeatable-sections.md)
             + [적응형 양식에 대한 제출 액션 구성](/help/forms/configure-submit-actions-core-components.md)
+            + [Azure Blob 스토리지에 적응형 양식 제출](/help/forms/configure-submit-action-azure-blob-storage.md)
+            + [Microsoft® OneDrive에 적응형 양식 제출](/help/forms/configure-submit-action-onedrive.md)
+            + [적응형 양식을 위한 SharePoint 스토리지 구성](/help/forms/configure-submit-action-sharepoint.md)
+            + [AEM 적응형 양식과 AEM Workflow 통합](/help/forms/configure-submit-action-workflow.md)
+            + [적응형 Forms에 대한 REST 엔드포인트에 제출 액션 구성](/help/forms/configure-submit-action-restpoint.md)
+            + [적응형 양식에 대한 이메일 제출 전송 작업 구성](/help/forms/configure-submit-action-send-email.md)
             + [적응형 양식에서 Google reCAPTCHA 사용](/help/forms/captcha-adaptive-forms-core-components.md)
             + [적응형 양식에서 사용자 정의 오류 핸들러 추가](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [핵심 구성 요소 기반 적응형 양식의 로케일 추가](/help/forms/supporting-new-language-localization-core-components.md)

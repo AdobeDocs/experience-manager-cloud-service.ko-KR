@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 7cf7883e133d58145b5b3e1bb6ba8eb21ebad5d9
 workflow-type: tm+mt
-source-wordcount: '1240'
+source-wordcount: '1273'
 ht-degree: 3%
 
 ---
@@ -21,21 +21,23 @@ ht-degree: 3%
 
 예를 들어 Workfront Fusion을 사용하여 적응형 양식으로 데이터를 수집하고, 데이터를 처리하고, 보관을 위해 데이터를 데이터 저장소로 전송하는 시나리오를 만들 수 있습니다. 시나리오가 설정되면 Workfront Fusion에서는 사용자가 양식을 작성할 때마다 작업을 자동으로 실행하여 데이터 저장소를 원활하게 업데이트합니다.
 
+AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 제출 액션을 제공합니다. 다음에서 이러한 옵션에 대해 자세히 알아볼 수 있습니다. [적응형 양식 제출 액션](/help/forms/configure-submit-actions-core-components.md)  기사.
+
 ## Adobe Workfront Fusion 사용의 이점{#advatages-of-workfront-fusion}
 
 Adobe Workfront Fusion과 AEM Forms을 함께 사용할 때의 몇 가지 이점:
 
-- 적응형 Forms으로 캡처된 데이터를 Workfront Fusion 시나리오로 전송
-- 오류 발생 가능성이 낮은 작업 자동화
-- Workfront에 직접 포함되지 않은 조직 관련 요구 사항 맞춤화
-- if/then 문과 같은 간단한 논리와 간단한 결정을 처리합니다.
+* 적응형 Forms으로 캡처된 데이터를 Workfront Fusion 시나리오로 전송
+* 오류 발생 가능성이 낮은 작업 자동화
+* Workfront에 직접 포함되지 않은 조직 관련 요구 사항 맞춤화
+* if/then 문과 같은 간단한 논리와 간단한 결정을 처리합니다.
 
 ## AEM Forms을 Adobe Workfront Fusion과 통합하기 위한 사전 요구 사항 {#prerequisites}
 
 Workfront Fusion을 AEM Forms에 연결하는 데 필요한 사전 요구 사항은 다음과 같습니다.
 
-- 유효 [Workfront Fusion 라이선스](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
-- 액세스 권한이 있는 AEM 사용자 [개발 콘솔](https://my.cloudmanager.adobe.com/) 끝 [서비스 자격 증명 검색](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+* 유효 [Workfront Fusion 라이선스](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* 액세스 권한이 있는 AEM 사용자 [개발 콘솔](https://my.cloudmanager.adobe.com/) 끝 [서비스 자격 증명 검색](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## AEM Forms과 Adobe Workfront Fusion 통합
 
@@ -100,16 +102,16 @@ Webhook를 추가하려면:
    > 유지 `https://` 다음에서 **IMS 엔드포인트** 텍스트 상자를 추가하는 동안 `imsEndpoint` URL.
 
 1. 에서 다음 값을 지정합니다. **[!UICONTROL 연결 만들기]** 대화 상자:
-   - 지정 **클라이언트 ID** 다음 값: **clientId** Developer Console의 서비스 자격 증명에서.
-   - 지정 **클라이언트 암호** 다음 값: **클라이언트 암호** Developer Console의 서비스 자격 증명에서.
-   - 지정 **기술 계정 ID**  다음 값: **id** Developer Console의 서비스 자격 증명에서.
-   - 지정 **조직 ID**  다음 값: **org** Developer Console의 서비스 자격 증명에서.
-   - **메타 범위**  다음 값: **메타스코프** Developer Console의 서비스 자격 증명에서.
-   - **개인 키**  다음 값: **privateKey** Developer Console의 서비스 자격 증명에서.
+   * 지정 **클라이언트 ID** 다음 값: **clientId** Developer Console의 서비스 자격 증명에서.
+   * 지정 **클라이언트 암호** 다음 값: **클라이언트 암호** Developer Console의 서비스 자격 증명에서.
+   * 지정 **기술 계정 ID**  다음 값: **id** Developer Console의 서비스 자격 증명에서.
+   * 지정 **조직 ID**  다음 값: **org** Developer Console의 서비스 자격 증명에서.
+   * **메타 범위**  다음 값: **메타스코프** Developer Console의 서비스 자격 증명에서.
+   * **개인 키**  다음 값: **privateKey** Developer Console의 서비스 자격 증명에서.
 
    >[!NOTE]
    >
-   >- 대상 **개인 키**, 제거 `\r\n` 값: 부터
+   >* 대상 **개인 키**, 제거 `\r\n` 값: 부터
    >  예를 들어 개인 키 값이 다음과 같은 경우:
    >`\r\nIJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL\r\nMy1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`을(를) 제거한 후 `\r\n` 개인 키에서 키는 다음과 같이 표시되며, 두 값은 모두 별도의 행에 표시됩니다.
    >
@@ -117,7 +119,7 @@ Webhook를 추가하려면:
    >
    >   `My1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`
    > 
-   >- 또한 를 선택하여 파일에서 개인 키 또는 인증서를 검색할 수 있습니다. **Extract** 단추를 클릭합니다.
+   >* 또한 를 선택하여 파일에서 개인 키 또는 인증서를 검색할 수 있습니다. **Extract** 단추를 클릭합니다.
 
 1. **계속**&#x200B;을 클릭합니다.
 
@@ -144,8 +146,8 @@ Webhook를 추가하려면:
 ### 2. Workfront Fusion용 적응형 양식의 제출 동작 구성
 
 Workfont Fusion에 대한 제출 액션을 구성할 수 있는 대상:
-- [새로운 적응형 Forms](#new-af-submit-action)
-- [기존 적응형 양식](#existing-af-submit-action)
+* [새로운 적응형 Forms](#new-af-submit-action)
+* [기존 적응형 양식](#existing-af-submit-action)
 
 #### Workfront Fusion용 새 적응형 양식의 제출 동작 구성 {#new-af-submit-action}
 
@@ -187,7 +189,11 @@ Workfront Fusion용 기존 적응형 양식의 제출 액션을 구성하려면 
 
 ## 모범 사례 {#best-practices}
 
-- AEM 인스턴스에서는 시나리오 이름을 가져올 수 없으므로 웹후크 이름을 신중하게 선택하는 것이 좋습니다. 나중에 웹후크 이름을 변경하면 AEM Forms 제출 작업 드롭다운 목록에 반영되지 않습니다.
-- 시나리오에는 여러 개의 웹후크 링크가 있을 수 있지만 한 번에 하나의 웹후크 링크만 활성화됩니다. 링크되지 않은 웹후크를 삭제하여 AEM Forms 제출 작업 드롭다운 목록에 표시되지 않도록 하는 것이 좋습니다.
+* AEM 인스턴스에서는 시나리오 이름을 가져올 수 없으므로 웹후크 이름을 신중하게 선택하는 것이 좋습니다. 나중에 웹후크 이름을 변경하면 AEM Forms 제출 작업 드롭다운 목록에 반영되지 않습니다.
+* 시나리오에는 여러 개의 웹후크 링크가 있을 수 있지만 한 번에 하나의 웹후크 링크만 활성화됩니다. 링크되지 않은 웹후크를 삭제하여 AEM Forms 제출 작업 드롭다운 목록에 표시되지 않도록 하는 것이 좋습니다.
 
 <!-- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to replicate the scenario URLs for the Publish instance. -->
+
+## 관련 문서
+
+{{af-submit-action}}

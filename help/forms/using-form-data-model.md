@@ -5,10 +5,10 @@ feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
 workflow-type: tm+mt
-source-wordcount: '1213'
-ht-degree: 2%
+source-wordcount: '1288'
+ht-degree: 7%
 
 ---
 
@@ -120,11 +120,25 @@ Edit Properties dialog for an interactive communication-->
 
 사용자가 양식 데이터 모델을 기반으로 양식을 제출할 때 데이터 모델 개체에 대해 제출된 데이터를 해당 데이터 소스에 기록하도록 양식을 구성할 수 있습니다. 이 사용 사례를 달성하려면 [!DNL Experience Manager Forms] 제공 [양식 데이터 모델 제출 액션](configuring-submit-actions.md): 양식 데이터 모델을 기반으로 하는 적응형 Forms에 대해서만 즉시 사용할 수 있습니다. 데이터 소스에 데이터 모델 개체에 대해 제출된 데이터를 기록합니다.
 
-양식 데이터 모델 제출 액션을 구성하려면 적응형 양식 컨테이너 속성을 열고 을 선택합니다 **[!UICONTROL 양식 데이터 모델을 사용하여 제출]** 제출 아코디언 아래의 제출 액션 드롭다운에서 참조할 수 있습니다. 그런 다음 데이터 모델 개체를 찾아보고 **[!UICONTROL 제출할 데이터 모델 개체의 이름]** 드롭다운. 속성을 저장합니다.
+양식 데이터 모델 제출 액션을 구성하려면 다음 작업을 수행하십시오.
 
-양식 제출 시 구성된 데이터 모델 개체의 데이터가 해당 데이터 소스에 기록됩니다.
+1. 콘텐츠 브라우저를 열고 적응형 양식의 **[!UICONTROL 안내서 컨테이너]** 구성 요소를 선택합니다.
+1. 안내서 컨테이너 속성 ![안내서 속성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭합니다. 적응형 양식 컨테이너 대화 상자가 열립니다.
+1. **[!UICONTROL 제출]** 탭을 클릭합니다.
+1. 다음에서 **[!UICONTROL 제출 액션]** 드롭다운 목록에서 다음을 선택합니다. **[!UICONTROL 양식 데이터 모델을 사용하여 제출]**.
+
+   ![작업 구성](/help/forms/assets/configure-submit-action-invoke-fdm.png)
+
+1. 다음을 지정합니다. **[!UICONTROL 제출할 데이터 모델]**.
+1. 클릭 **[!UICONTROL 완료]**
+
+양식 제출 시 구성된 데이터 모델 개체의 데이터가 해당 데이터 소스에 기록됩니다. 또한 양식 데이터 모델과 기록 문서(DoR)를 사용하여 양식 첨부 파일을 데이터 소스에 제출할 수 있습니다. 양식 데이터 모델에 대한 자세한 내용은 [[!DNL AEM Forms] 데이터 통합](data-integration.md)을 참조하십시오.
 
 <!--![data-submission](assets/data-submission.png)-->
+
+>[!NOTE]
+>
+> AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 제출 액션을 제공합니다. 다음에서 이러한 옵션에 대해 자세히 알아볼 수 있습니다. [적응형 양식 제출 액션](/help/forms/configure-submit-actions-core-components.md)  기사.
 
 이진 데이터 모델 개체 속성을 사용하여 데이터 소스에 양식 첨부 파일을 제출할 수도 있습니다. 다음을 수행하여 첨부 파일을 JDBC 데이터 소스에 제출합니다.
 

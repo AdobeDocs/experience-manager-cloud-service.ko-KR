@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '1000'
 ht-degree: 2%
 
 ---
@@ -35,6 +35,9 @@ ht-degree: 2%
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
 <!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service(OData 서비스)는 모든 실행 모드에서 사용할 수 있습니다. 의 실행 모드 구성에 대한 자세한 내용은 [!DNL Experience Manager] 인스턴스를 참조하십시오. [실행 모드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#runmodes).
+
+AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 제출 액션을 제공합니다. 다음에서 이러한 옵션에 대해 자세히 알아볼 수 있습니다. [적응형 양식 제출 액션](/help/forms/configure-submit-actions-core-components.md)  기사.
+
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -70,7 +73,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->을 통합하는 동안에만 이 절차를 사용하십시오. [!DNL Experience Manager Forms] 온-프레미스 [!DNL Microsoft Dynamics] 서버입니다.
+> 을 통합하는 동안에만 이 절차를 사용하십시오. [!DNL Experience Manager Forms] 온-프레미스 [!DNL Microsoft Dynamics] 서버입니다.
 
 1. 구성 [!DNL Microsoft Dynamics] 에 설명된 대로 IFD에 대한 온-프레미스 인스턴스 [IFD 구성 [!DNL Microsoft Dynamics]](https://technet.microsoft.com/en-us/library/dn609803.aspx).
 1. Windows PowerShell을 사용하여 다음 명령을 실행하여 IFD 사용 시 클레임 설정을 구성합니다. [!DNL Microsoft Dynamics]:
@@ -158,14 +161,16 @@ To review the form data model, go to **[!UICONTROL Form Data Model egrations]**.
  Form Data Model 
 ![default-fdm-1](assets/default-fdm-1.png)-->
 
-MS Dynamics OData Cloud User 양식 데이터 모델 ce) 클라우드 서비스를 구성한 후 양식 데이터 모델을 생성하는 동안 서비스를 사용할 수 있습니다. 자세한 내용은 [양식 데이터 모델 만들기](create-form-data-models.md).
+MS Dynamics OData 클라우드 서비스를 구성한 후 양식 데이터 모델을 만드는 동안 서비스를 사용할 수 있습니다. 자세한 내용은 [양식 데이터 모델 만들기](create-form-data-models.md).
 
-다음으로 양식 데이터 모델 모델을 기반으로 적응형 양식을 만들어 다음과 같은 다양한 적응형 양식 사용 사례에 사용할 수 있습니다.
+다음으로, 적응형 양식 기반 양식 데이터 모델을 만들어 다음과 같은 다양한 적응형 양식 사용 사례에 사용할 수 있습니다.
 
 * 다음에서 정보를 쿼리하여 적응형 양식 미리 채우기 [!DNL Microsoft Dynamics] 엔티티 및 서비스
 * 호출 [!DNL Microsoft Dynamics] 적응형 양식 규칙을 사용하여 양식 데이터 모델에 정의된 서버 작업
 * 제출된 양식 데이터를 다음에 쓰기 [!DNL Microsoft Dynamics] 엔티티
 
 <!--It is recommended to create a copy of the Form Data Model provided with the [!DNL Experience Manager Forms] package and configure data models and services to suit your requirements. It will ensure that any future updates to the package do not override your form data model.-->
+
+다음을 수행할 수 있습니다. [양식 데이터 모델 제출 액션 구성](/help/forms/using-form-data-model.md) 적응형 양식에서 Microsoft Dynamics OData로 데이터를 보낼 수 있습니다.
 
 비즈니스 워크플로우에서 양식 데이터 모델을 만들고 사용하는 방법에 대한 자세한 내용은 다음을 참조하십시오. [데이터 통합](data-integration.md).
