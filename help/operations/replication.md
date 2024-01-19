@@ -2,7 +2,7 @@
 title: 복제
 description: AEM as a Cloud Service으로 배포 및 복제 문제 해결에 대해 알아봅니다.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 3249f17e6ecb341880597577e1f2a48653a7a88a
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 39%
@@ -89,7 +89,7 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
 
 * `includeChildren`(부울 값, 기본값: `false`) 값 `false` 은 경로만 게시됨을 의미합니다. `true` 하위 항목도 게시됨을 의미합니다.
 * `replicateAsParticipant`(부울 값, 기본값: `false`) `true`로 구성된 경우 복제는 참가자 단계를 수행한 원칙의 `userid`를 사용합니다.
-* `enableVersion`(부울 값, 기본값: `true`) 이 매개변수는 복제 시 새 버전을 만들지 여부를 결정합니다.
+* `enableVersion`(부울 값, 기본값: `false`) 이 매개변수는 복제 시 새 버전을 만들지 여부를 결정합니다.
 * `agentId`(문자열 값, 기본값은 게시용 에이전트만 사용됨을 의미합니다.) agentId를 명시하는 것이 좋습니다(예: 값을 “게시”로 설정). 에이전트 설정 `preview` 은 미리보기 서비스에 게시합니다.
 * `filters` (문자열 값, 기본값은 모든 경로가 활성화됨을 의미합니다.) 사용 가능한 값은 다음과 같습니다.
    * `onlyActivated` - (이미) 활성화된 페이지만 활성화합니다. 재활성화의 한 형태로 작동합니다.
