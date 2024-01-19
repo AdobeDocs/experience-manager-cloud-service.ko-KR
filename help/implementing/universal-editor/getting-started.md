@@ -2,10 +2,10 @@
 title: AEM에서 Universal Editor 시작하기
 description: Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 알아봅니다.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+source-git-commit: febaec244b4400b8d7fc5a5d8a4f75b4f4505d6f
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 76%
+source-wordcount: '903'
+ht-degree: 71%
 
 ---
 
@@ -35,7 +35,7 @@ AEM 앱을 온보딩하고 유니버설 편집기를 사용하도록 계측하�
 
 ## Universal Editor에 대한 액세스 권한 요청 {#request-access}
 
-먼저 Universal Editor에 대한 액세스 권한을 요청해야 합니다. [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor) 로그인으로 이동하여 Universal Editor에 대한 액세스 권한이 있는지 확인하십시오.
+먼저 Universal Editor에 대한 액세스 권한을 요청해야 합니다. 열기 [`https://experience.adobe.com/#/aem/editor&quot;](https://experience.adobe.com/#/aem/editor), 로그인 및 범용 편집기에 대한 액세스 권한이 있는지 확인합니다.
 
 액세스 권한이 없는 경우 같은 페이지에 링크된 양식을 통해 요청할 수 있습니다.
 
@@ -59,7 +59,7 @@ import "@adobe/universal-editor-cors";
 
 ### 비 React 앱의 대안 {#alternative}
 
-React 앱을 구현하지 않거나 서버측 렌더링이 필요한 경우 다음을 문서 본문에 포함하는 방법이 있습니다.
+React 앱을 구현하지 않거나 서버측 렌더링이 필요한 경우 대체 방법은 문서 본문에 다음 사항을 포함하는 것입니다.
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
@@ -124,10 +124,10 @@ Universal Editor 서비스에는 편집 중인 앱의 콘텐츠에 대한 올바
 
 식별자 `urn:adobe:aue:system`은 Adobe Universal Editor 연결을 의미합니다.
 
-`itemid`는 `urn` 접두사를 사용하여 식별자를 줄입니다.
+`data-aue-resource`는 `urn` 접두사를 사용하여 식별자를 줄입니다.
 
 ```html
-itemid="urn:<referenceName>:<resource>"
+data-aue-resource="urn:<referenceName>:<resource>"
 ```
 
 * `<referenceName>` - `<meta>` 태그에 언급되는 명명된 참조입니다. 예: `aemconnection`

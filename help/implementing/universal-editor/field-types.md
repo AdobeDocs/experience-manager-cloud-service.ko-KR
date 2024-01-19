@@ -1,7 +1,8 @@
 ---
 title: 필드 유형
 description: 나만의 앱을 계측하는 방법에 대한 예제를 통해 유니버설 편집기가 구성 요소 레일에서 편집할 수 있는 다양한 유형의 필드에 대해 알아봅니다.
-source-git-commit: 44073e27ce7eb35bc0d71cb963c1bd0f14183f00
+exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
+source-git-commit: 7ef3efa6e074778b7b3e3a8159056200b2663b30
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 7%

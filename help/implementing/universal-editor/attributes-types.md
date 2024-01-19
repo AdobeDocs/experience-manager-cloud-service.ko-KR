@@ -2,10 +2,10 @@
 title: 속성 및 항목 유형
 description: 범용 편집기에 필요한 데이터 특성 및 항목 유형에 대해 알아봅니다.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 7550491de94f1e2cbb28b07f8abbdaded5aa04ea
+source-git-commit: febaec244b4400b8d7fc5a5d8a4f75b4f4505d6f
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 81%
+ht-degree: 82%
 
 ---
 
@@ -28,13 +28,13 @@ Universal Editor에서 앱을 편집할 수 있으려면 앱이 적절하게 구
 
 | 데이터 속성 | 설명 |
 |---|---|
-| `itemid` | 리소스에 대한 URN은 [AEM에서 Universal Editor 시작하기 문서의 페이지 계측](getting-started.md#instrument-thepage) 섹션을 참조하십시오. |
-| `itemprop` | 리소스의 속성은 [AEM에서 Universal Editor 시작하기 문서의 페이지 계측](getting-started.md#instrument-thepage) 섹션을 참조하십시오. |
-| `itemtype` | 편집 가능한 항목 유형(예: 텍스트, 이미지 및 참조) |
-| `data-editor-itemfilter` | 사용할 수 있는 참조 정의 |
-| `data-editor-itemlabel` | 편집기에 표시되는 선택 가능한 항목에 대한 사용자 정의 레이블 정의 <br>`itemmodel`이 설정된 경우, 레이블은 모델을 통해 검색 |
-| `data-editor-itemmodel` | 속성 레일에서 양식 기반의 편집에 사용될 모델 정의 |
-| `data-editor-behavior` | 독립적 텍스트 또는 이미지가 구성 요소를 모방하여 이동할 수 있게 하거나 삭제할 수 있게 하는 등 계측의 비헤이비어를 정의합니다 |
+| `data-aue-resource` | 리소스에 대한 URN은 [AEM에서 Universal Editor 시작하기 문서의 페이지 계측](getting-started.md#instrument-thepage) 섹션을 참조하십시오. |
+| `data-aue-prop` | 리소스의 속성은 [AEM에서 Universal Editor 시작하기 문서의 페이지 계측](getting-started.md#instrument-thepage) 섹션을 참조하십시오. |
+| `data-aue-type` | 편집 가능한 항목 유형(예: 텍스트, 이미지 및 참조) |
+| `data-aue-filter` | 사용할 수 있는 참조 정의 |
+| `data-aue-label` | 편집기에 표시되는 선택 가능한 항목에 대한 사용자 정의 레이블 정의 <br>`itemmodel`이 설정된 경우, 레이블은 모델을 통해 검색 |
+| `data-aue-model` | 속성 레일에서 양식 기반의 편집에 사용될 모델 정의 |
+| `data-aue-behavior` | 독립적 텍스트 또는 이미지가 구성 요소를 모방하여 이동할 수 있게 하거나 삭제할 수 있게 하는 등 계측의 비헤이비어를 정의합니다 |
 
 ## 항목 유형 {#item-types}
 
@@ -47,14 +47,14 @@ Universal Editor에서 앱을 편집할 수 있으려면 앱이 적절하게 구
 | `component` | 편집 가능 항목은 구성 요소입니다. 추가 기능을 추가하지 않습니다. DOM의 이동/삭제 가능한 부분을 표시하고 속성 레일 및 해당 필드를 여는 데 필요함 | 필수 | 해당 사항 없음 | 해당 사항 없음 | 옵션 | 옵션 | 해당 사항 없음 |
 | `reference` | 편집 가능한 는 콘텐츠 조각, 경험 조각 또는 제품과 같은 참조입니다 | 상황에 따라 다름 <br>아래 참조 | 상황에 따라 다름 <br>아래 참조 | 옵션<br>콘텐츠 조각, 제품 또는 참조 선택기에 전달되는 경험 조각 필터 조건 목록 | 옵션 | 옵션 | 해당 사항 없음 |
 
-사용 사례에 따라 다름 `itemprop` 또는 `itemid`가 필요할 수도 있고 필요하지 않을 수도 있습니다. 예:
+사용 사례에 따라 다름 `data-aue-prop` 또는 `data-aue-resource`가 필요할 수도 있고 필요하지 않을 수도 있습니다. 예:
 
-* GraphQL을 통해 콘텐츠 조각을 쿼리하고 상황에 따라 목록을 편집할 수 있도록 하려면 `itemid`가 필요합니다.
-* 참조된 콘텐츠 조각의 콘텐츠를 렌더링하는 구성 요소가 있고 구성 요소 내에서 참조를 업데이트하려는 경우 `itemprop`이 필요합니다.
+* GraphQL을 통해 콘텐츠 조각을 쿼리하고 상황에 따라 목록을 편집할 수 있도록 하려면 `data-aue-resource`가 필요합니다.
+* 참조된 콘텐츠 조각의 콘텐츠를 렌더링하는 구성 요소가 있고 구성 요소 내에서 참조를 업데이트하려는 경우 `data-aue-prop`이 필요합니다.
 
 ## 동작 {#behaviors}
 
-| `data-editor-behavior` | 설명 |
+| `data-aue-behavior` | 설명 |
 |---|---|
 | `component` | 독립 실행형 텍스트, 서식 있는 텍스트 및 미디어 모방 구성 요소를 허용하여 페이지에서 이동 및 삭제할 수 있도록 하는 데 사용됩니다. |
 | `container` | 컨테이너를 자체 구성 요소로 취급하여 페이지에서 이동 및 삭제할 수 있도록 하는 데 사용됩니다. |

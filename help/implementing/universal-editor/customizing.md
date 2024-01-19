@@ -1,10 +1,11 @@
 ---
 title: UI 맞춤화
 description: 콘텐츠 작성자의 요구 사항을 지원하도록 범용 편집기의 UI를 사용자 지정할 수 있는 다양한 확장 지점에 대해 알아봅니다.
-source-git-commit: 65893c0c0dee37bed8ecfbb06a12e7c093c4397c
+exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
+source-git-commit: 7ef3efa6e074778b7b3e3a8159056200b2663b30
 workflow-type: tm+mt
 source-wordcount: '100'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 

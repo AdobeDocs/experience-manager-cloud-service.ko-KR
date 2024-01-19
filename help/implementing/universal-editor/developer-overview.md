@@ -1,9 +1,10 @@
 ---
 title: AEM 개발자를 위한 유니버설 편집기 개요
 description: 범용 편집기의 작동 방식과 프로젝트에서 사용하는 방법에 관심이 있는 AEM 개발자인 경우, 이 문서는 범용 편집기에서 작동하도록 WKND 프로젝트를 계측하여 전체적인 소개를 제공합니다.
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
+source-git-commit: d7154fcec9cf6e3cb00ce8e434e38544294df165
 workflow-type: tm+mt
-source-wordcount: '3082'
+source-wordcount: '3112'
 ht-degree: 1%
 
 ---
@@ -36,6 +37,7 @@ ht-degree: 1%
    * [WKND 데모 사이트를 설치해야 합니다.](https://github.com/adobe/aem-guides-wknd)
 * [유니버설 편집기에 액세스](/help/implementing/universal-editor/getting-started.md#onboarding)
 * [로컬 유니버설 편집기 서비스](/help/implementing/universal-editor/local-dev.md) 개발 목적으로 실행
+   * 브라우저를 다음 위치로 이동해야 합니다. [로컬 서비스 자체 서명된 인증서를 허용합니다.](/help/implementing/universal-editor/local-dev.md#editing)
 
 웹 개발에 대한 일반적인 익숙함을 넘어, 이 문서는 AEM 개발에 대한 기본적인 익숙함을 전제로 합니다. AEM 개발에 경험이 없는 경우 검토를 고려하십시오 [계속하기 전에 WKND 튜토리얼을 참조하십시오.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
 
@@ -164,7 +166,7 @@ WKND 앱의 페이지 구성 요소에 필요한 JavaScript 라이브러리를 �
 
 이제 WKND 페이지가 유니버설 편집기에 성공적으로 로드되고 JavaScript 라이브러리가 로드되어 편집기를 앱에 연결합니다.
 
-그러나 범용 편집기에서 페이지와 상호 작용할 수 없다는 것을 빠르게 알아차렸을 수 있습니다. 범용 편집기에서 페이지를 실제로 편집할 수 없습니다. 범용 편집기에서 콘텐츠를 편집하려면 콘텐츠를 작성할 위치를 알 수 있도록 연결을 정의해야 합니다. 로컬 개발의 경우 다음 위치에서 로컬 AEM 개발 인스턴스에 다시 작성해야 합니다. `https://localhost:8443`.
+그러나 범용 편집기에서 페이지와 상호 작용할 수 없다는 것을 알 수 있습니다. 범용 편집기에서 페이지를 실제로 편집할 수 없습니다. 범용 편집기에서 콘텐츠를 편집하려면 콘텐츠를 작성할 위치를 알 수 있도록 연결을 정의해야 합니다. 로컬 개발의 경우 다음 위치에서 로컬 AEM 개발 인스턴스에 다시 작성해야 합니다. `https://localhost:8443`.
 
 1. CRXDE Lite를 엽니다.
 
@@ -227,10 +229,9 @@ WKND 앱의 페이지 구성 요소에 필요한 JavaScript 라이브러리를 �
 1. 첫 번째 끝에서 `div` 약 26행에서 구성 요소에 대한 계기 세부 사항을 추가합니다.
 
    ```text
-   itemscope
-   itemid="urn:aem:${resource.path}"
-   itemtype="component"
-   data-editor-itemlabel="Teaser"
+   data-aue-resource="urn:aem:${resource.path}"
+   data-aue-type="component"
+   data-aue-label="Teaser"
    ```
 
 1. 클릭 **모두 저장** 도구 모음에서 를 클릭하고 범용 편집기를 다시 로드합니다.
@@ -262,9 +263,9 @@ WKND 앱의 페이지 구성 요소에 필요한 JavaScript 라이브러리를 �
 1. 의 끝에 다음 속성을 삽입합니다. `h2` 태그(17행 근처)
 
    ```text
-   itemprop="jcr:title"
-   itemtype="text"
-   data-editor-itemlabel="Title"
+   data-aue-prop="jcr:title"
+   data-aue-type="text"
+   data-aue-label="Title"
    ```
 
 1. 클릭 **모두 저장** 도구 모음에서 를 클릭하고 범용 편집기를 다시 로드합니다.
@@ -281,15 +282,14 @@ WKND 앱의 페이지 구성 요소에 필요한 JavaScript 라이브러리를 �
 
 티저 구성 요소를 계측하여 유니버설 편집기로 식별했습니다.
 
-* `itemscope` 는 이 항목을 유니버설 편집기의 항목으로 식별합니다.
-* `itemid` 는 편집 중인 AEM의 리소스를 식별합니다.
-* `itemtype` 는 항목을 페이지 구성 요소(컨테이너 대신)로 취급해야 함을 정의합니다.
-* `data-editor-itemlabel` 선택한 티저의 UI에 사용자에게 친숙한 레이블을 표시합니다.
+* `data-aue-resource` 는 편집 중인 AEM의 리소스를 식별합니다.
+* `data-aue-type` 는 항목을 페이지 구성 요소(컨테이너 대신)로 취급해야 함을 정의합니다.
+* `data-aue-label` 선택한 티저의 UI에 사용자에게 친숙한 레이블을 표시합니다.
 
 티저 구성 요소 내에 제목 구성 요소를 계측했습니다.
 
-* `itemprop` 는 작성된 JCR 속성입니다.
-* `itemtype` 은 속성을 편집하는 방법입니다. 이 경우 텍스트 편집기는 제목이므로 리치 텍스트 편집기를 사용합니다.
+* `data-aue-prop` 는 작성된 JCR 속성입니다.
+* `data-aue-type` 은 속성을 편집하는 방법입니다. 이 경우 텍스트 편집기는 제목이므로 리치 텍스트 편집기를 사용합니다.
 
 ## 인증 헤더 정의 {#auth-header}
 
@@ -299,13 +299,13 @@ WKND 앱의 페이지 구성 요소에 필요한 JavaScript 라이브러리를 �
 
 그러나 브라우저를 다시 로드하면 이전 제목이 다시 로드됩니다. 이는 범용 편집기가 AEM 인스턴스에 연결하는 방법을 알고 있지만 JCR에 변경 사항을 다시 작성하기 위해 AEM 인스턴스를 인증할 수 없기 때문입니다.
 
-브라우저 개발자 도구의 네트워크 탭을 표시하고 다음을 검색하십시오. `update`을 클릭하여 제목을 편집하려고 하면 500 오류가 발생합니다.
+브라우저 개발자 도구의 네트워크 탭을 표시하고 다음을 검색하십시오. `update`을 클릭하여 제목을 편집하려고 하면 401 오류가 발생합니다.
 
 ![제목을 편집하려고 할 때 오류 발생](assets/dev-edit-error.png)
 
 범용 편집기를 사용하여 프로덕션 AEM 콘텐츠를 편집할 때 범용 편집기는 JCR에 다시 쓸 수 있도록 AEM에 인증하기 위해 편집기에 로그온할 때 사용한 것과 동일한 IMS 토큰을 사용합니다.
 
-로컬로 개발하는 경우 AEM ID 공급자를 사용할 수 없으므로 인증 헤더를 명시적으로 설정하여 인증하는 방법을 수동으로 제공해야 합니다.
+로컬에서 개발하는 경우 IMS 토큰은 Adobe 소유 도메인에만 전달되므로 AEM ID 공급자를 사용할 수 없습니다. 인증 헤더를 명시적으로 설정하여 수동으로 인증하는 방법을 제공해야 합니다.
 
 1. 범용 편집기 인터페이스에서 **인증 헤더** 아이콘을 클릭합니다.
 
@@ -323,22 +323,24 @@ WKND 앱의 페이지 구성 요소에 필요한 JavaScript 라이브러리를 �
 
 ```json
 {
-  "op": "patch",
-  "connections": {
-    "aem": "aem:https://localhost:8443"
-  },
-  "path": {
-    "itemid": "urn:aem:/content/wknd/language-masters/en/jcr:content/root/container/carousel/item_1571954853062",
-    "itemtype": "text",
-    "itemprop": "jcr:title"
+  "connections": [
+    {
+      "name": "aem",
+      "protocol": "aem",
+      "uri": "https://localhost:8443"
+    }
+  ],
+  "target": {
+    "resource": "urn:aem:/content/wknd/language-masters/en/jcr:content/root/container/carousel/item_1571954853062",
+    "type": "text",
+    "prop": "jcr:title"
   },
   "value": "Tiny Toon Adventures"
 }
 ```
 
-* `op` 은 작업이며, 이 경우 편집된 필드의 기존 컨텐츠의 패치입니다.
 * `connections` 로컬 AEM 인스턴스에 대한 연결입니다.
-* `path` 는 JCR에서 업데이트되는 정확한 노드 및 속성입니다
+* `target` 는 JCR에서 업데이트되는 정확한 노드 및 속성입니다
 * `value` 은(는) 귀하가 업데이트한 것입니다.
 
 변경 사항이 JCR에서 지속됨을 확인할 수 있습니다.
@@ -357,7 +359,7 @@ WKND 앱의 페이지 구성 요소에 필요한 JavaScript 라이브러리를 �
 
 편집은 현재 티저 제목의 인라인 편집으로 제한됩니다. 그러나 그 자리에 있는 편집이 충분하지 않은 경우가 있습니다. 키보드 입력을 통해 티저의 제목과 같은 텍스트를 편집할 수 있습니다. 그러나 보다 복잡한 항목은 브라우저에서 렌더링되는 방식과 별도로 구조화된 데이터를 표시하고 편집할 수 있어야 합니다. 속성 레일은 다음과 같습니다.
 
-이제 앱을 업데이트하여 속성 레일을 사용하여 편집합니다. 이를 위해 앱의 페이지 구성 요소에 대한 헤더 파일로 돌아가며, 여기에서 로컬 AEM 개발 인스턴스 및 로컬 범용 편집기 서비스에 대한 연결을 이미 설정했습니다. 여기에서 앱에서 편집할 수 있는 구성 요소와 해당 데이터 모델을 정의해야 합니다.
+편집할 속성 레일을 사용하도록 앱을 업데이트하려면 앱의 페이지 구성 요소의 헤더 파일로 돌아갑니다. 여기에서 로컬 AEM 개발 인스턴스와 로컬 유니버설 편집기 서비스에 대한 연결을 이미 설정했습니다. 여기에서 앱에서 편집할 수 있는 구성 요소와 해당 데이터 모델을 정의해야 합니다.
 
 1. CRXDE Lite를 엽니다.
 
@@ -369,10 +371,10 @@ WKND 앱의 페이지 구성 요소에 필요한 JavaScript 라이브러리를 �
 
    ![customheaderlibs.html 파일 편집](assets/dev-instrument-properties-rail.png)
 
-1. 필드를 파일 끝에 매핑하는 데 필요한 스크립트를 추가합니다.
+1. 파일 끝에 구성 요소를 정의하는 데 필요한 스크립트를 추가합니다.
 
    ```html
-   <script type="application/vnd.adobe.aem.editor.component-definition+json">
+   <script type="application/vnd.adobe.aue.component+json">
    {
      "groups": [
        {
@@ -388,29 +390,69 @@ WKND 앱의 페이지 구성 요소에 필요한 JavaScript 라이브러리를 �
                    "resourceType": "wknd/components/teaser"
                  }
                }
-             },
-             "model": {
-               "id": "teaser",
-               "fields": [
-                 {
-                   "component": "text-input",
-                   "name": "jcr:title",
-                   "label": "Title",
-                   "valueType": "string"
-                 },
-                 {
-                   "component": "text-area",
-                   "name": "jcr:description",
-                   "label": "Description",
-                   "valueType": "string"
+             }
+           },
+           {
+             "title": "Title",
+             "id": "title",
+             "plugins": {
+               "aem": {
+                 "page": {
+                   "resourceType": "wknd/components/title"
                  }
-               ]
+               }
              }
            }
          ]
        }
      ]
    }
+   </script>
+   ```
+
+1. 그 아래에 파일 끝에 모델을 정의하는 데 필요한 스크립트를 추가합니다.
+
+   ```html
+   <script type="application/vnd.adobe.aue.model+json">
+   [
+     {
+       "id": "teaser",
+       "fields": [
+         {
+           "component": "text-input",
+           "name": "jcr:title",
+           "label": "Title",
+           "valueType": "string"
+         },
+         {
+           "component": "text-area",
+           "name": "jcr:description",
+           "label": "Description",
+           "valueType": "string"
+         }
+       ]
+     },
+     {
+       "id": "title",
+       "fields": [
+         {
+           "component": "select",
+           "name": "type",
+           "value": "h1",
+           "label": "Type",
+           "valueType": "string",
+           "options": [
+             { "name": "h1", "value": "h1" },
+             { "name": "h2", "value": "h2" },
+             { "name": "h3", "value": "h3" },
+             { "name": "h4", "value": "h4" },
+             { "name": "h5", "value": "h5" },
+             { "name": "h6", "value": "h6" }
+           ]
+         }
+       ]
+     }
+   ]
    </script>
    ```
 
@@ -457,15 +499,17 @@ WKND 앱의 페이지 구성 요소에 필요한 JavaScript 라이브러리를 �
 
    ![teaser.html 파일 편집](assets/dev-edit-teaser.png)
 
-1. 첫 번째 끝에서 `div` 약 32행, 다음 `itemscope` 이전에 추가한 속성에서 티저 구성 요소가 사용할 모델에 대한 계기 세부 정보를 추가합니다.
+1. 첫 번째 끝에서 `div` 약 32행 이전에 추가한 속성 뒤에 티저 구성 요소에서 사용할 모델에 대한 계기 세부 사항을 추가합니다.
 
    ```text
-   data-editor-itemmodel="teaser"
+   data-aue-model="teaser"
    ```
 
 1. 클릭 **모두 저장** 도구 모음에서 를 클릭하고 범용 편집기를 다시 로드합니다.
 
-1. 티저의 제목을 클릭하여 한 번 더 편집합니다.
+이제 구성 요소에 대해 계측된 속성 레일을 테스트할 준비가 되었습니다.
+
+1. 유니버설 편집기에서 티저의 제목을 클릭하여 다시 편집합니다.
 
 1. 속성 레일을 클릭하여 속성 탭을 표시하고 방금 계측한 필드를 확인합니다.
 
@@ -489,7 +533,7 @@ WKND 앱의 페이지 구성 요소에 필요한 JavaScript 라이브러리를 �
 
    ![customheaderlibs.html 파일 편집](assets/dev-instrument-styles.png)
 
-1. 에 추가 항목 추가 `fields` 스타일 필드에 대한 배열입니다. 새 필드를 삽입하기 전에 마지막 필드 뒤에 쉼표를 추가해야 합니다.
+1. 모델 정의 스크립트에서 `fields` 스타일 필드에 대한 배열입니다. 새 필드를 삽입하기 전에 마지막 필드 뒤에 쉼표를 추가해야 합니다.
 
    ```json
    {
