@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
+source-git-commit: 39d788854c086b7f4c45d77bfea42fa687e08769
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1002'
 ht-degree: 2%
 
 ---
@@ -174,3 +174,7 @@ MS Dynamics OData 클라우드 서비스를 구성한 후 양식 데이터 모�
 다음을 수행할 수 있습니다. [양식 데이터 모델 제출 액션 구성](/help/forms/using-form-data-model.md) 적응형 양식에서 Microsoft Dynamics OData로 데이터를 보낼 수 있습니다.
 
 비즈니스 워크플로우에서 양식 데이터 모델을 만들고 사용하는 방법에 대한 자세한 내용은 다음을 참조하십시오. [데이터 통합](data-integration.md).
+
+## 관련 문서
+
+{{af-submit-action}}

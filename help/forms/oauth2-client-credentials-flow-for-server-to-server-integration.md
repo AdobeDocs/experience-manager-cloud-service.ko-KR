@@ -5,9 +5,9 @@ Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, sale
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
-source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
+source-git-commit: 39d788854c086b7f4c45d77bfea42fa687e08769
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '484'
 ht-degree: 64%
 
 ---
@@ -75,5 +75,9 @@ OAuth 2.0 클라이언트 자격 증명 인증 설정을 사용하여 적응형 
 Salesforce 애플리케이션을 구성한 후 양식 데이터 모델을 만드는 동안 이 구성을 사용할 수 있습니다. 자세한 내용은 [양식 데이터 모델 만들기](create-form-data-models.md). [양식 데이터 모델 제출 작업 구성](/help/forms/using-form-data-model.md) 데이터를 Salesforce 애플리케이션으로 전송하는 적응형 양식용.
 
 비즈니스 워크플로우에서 양식 데이터 모델을 만들고 사용하는 방법에 대한 자세한 내용은 다음을 참조하십시오. [데이터 통합](data-integration.md).
+
+## 관련 문서
+
+{{af-submit-action}}
 
 
