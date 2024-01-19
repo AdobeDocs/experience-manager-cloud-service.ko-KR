@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: cb817f2ce94a1618fd8dd73834f663e8aaed2b7f
+source-git-commit: 8d9cd4c580058299eea8a391b0b341751d3f2104
 workflow-type: tm+mt
-source-wordcount: '4600'
+source-wordcount: '4609'
 ht-degree: 98%
 
 ---
@@ -1012,6 +1012,7 @@ ht-degree: 98%
          + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
          + [통합 실행](/help/implementing/developing/hybrid/launch-integration.md)
          + [SPA 참조 문서](/help/implementing/developing/hybrid/reference-materials.md)
+         + [Sling 모델 내보내기를 통한 ResourceResolver 직렬화 허용 안 함](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)
    + 개발자 도구 {#developer-tools}
       + [개발자 모드](/help/implementing/developing/tools/developer-mode.md)
       + [Eclipse용 AEM 개발자 도구](/help/implementing/developing/tools/eclipse.md)
