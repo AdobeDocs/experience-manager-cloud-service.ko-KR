@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에서 캐싱
 description: AEM as a Cloud Service 캐싱의 기본 사항에 대해 알아봅니다.
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 8351e5e60c7ec823a399cbbdc0f08d2704f12ccf
+source-git-commit: 28537409c5974ff8ade30207f16cc62b45c47616
 workflow-type: tm+mt
-source-wordcount: '2865'
+source-wordcount: '2894'
 ht-degree: 1%
 
 ---
@@ -223,6 +223,10 @@ AEM 레이어는 기본적으로 Blob 콘텐츠를 캐시하지 않습니다.
         Header set Age 0
      </LocationMatch>
      ```
+
+### CDN 캐시 적중률 분석 중 {#analyze-chr}
+
+다음을 참조하십시오. [캐시 적중률 분석 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html) 대시보드를 사용하여 CDN 로그를 다운로드하고 사이트의 캐시 해시 비율을 분석하는 방법에 대한 정보입니다.
 
 ### HEAD 요청 동작 {#request-behavior}
 
