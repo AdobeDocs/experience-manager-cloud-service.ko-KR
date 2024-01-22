@@ -3,24 +3,25 @@ title: Adobe Experience Manager as a Cloud Service에 대한 OSGi 구성
 description: 비밀 값 및 환경별 값이 있는 OSGi 구성
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
 workflow-type: tm+mt
-source-wordcount: '3265'
+source-wordcount: '3269'
 ht-degree: 1%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service에 대한 OSGi 구성 {#configuring-osgi-for-aem-as-a-cloud-service}
 
->[!NOTE]
->
->AEM에는 Cloud Manager 사용자 인터페이스를 사용하여 2021.12.0 릴리스로 표준 환경 변수를 구성하는 기능이 도입되었습니다. 자세한 내용은 설명서 를 참조하십시오. [여기](/help/implementing/cloud-manager/environment-variables.md).
+# Adobe Experience Manager as a Cloud Service에 대한 OSGi 구성 {#configuring-osgi-for-aem-as-a-cloud-service}
 
 [OSGi](https://www.osgi.org/) 는 AEM(Adobe Experience Manager)의 기술 스택에 있는 기본 요소입니다. AEM 및 해당 구성의 합성 번들을 제어하는 데 사용됩니다.
 
 OSGi는 애플리케이션을 작고 재사용 가능한 공동 작업 구성 요소에서 구성할 수 있는 표준화된 기본 요소를 제공합니다. 이러한 구성 요소는 애플리케이션으로 구성하고 배포할 수 있습니다. 이렇게 하면 개별적으로 중지, 설치 및 시작할 수 있으므로 OSGi 번들을 손쉽게 관리할 수 있습니다. 상호 종속성이 자동으로 처리됩니다. 각 OSGi 구성 요소는 다양한 번들 중 하나에 포함됩니다. 자세한 내용은 [OSGi 사양](https://help.eclipse.org/latest/index.jsp).
 
 AEM 코드 프로젝트의 일부인 구성 파일을 통해 OSGi 구성 요소에 대한 구성 설정을 관리할 수 있습니다.
+
+>[!TIP]
+>
+>Cloud Manager를 사용하여 환경 변수를 구성할 수 있습니다. 자세한 내용은 설명서 를 참조하십시오. [여기.](/help/implementing/cloud-manager/environment-variables.md)
 
 ## OSGi 구성 파일 {#osgi-configuration-files}
 
@@ -478,6 +479,10 @@ config.dev
 >
 >사용된 Cloud Manager API에 &quot;배포 관리자 - Cloud Service&quot; 역할이 할당되었는지 확인합니다. 다른 역할은 아래 명령을 모두 실행할 수 없습니다.
 
+>[!TIP]
+>
+>Cloud Manager를 사용하여 환경 변수를 구성할 수도 있습니다. 자세한 내용은 설명서 를 참조하십시오. [여기.](/help/implementing/cloud-manager/environment-variables.md)
+
 ### API를 통한 값 설정 {#setting-values-via-api}
 
 API를 호출하면 일반적인 고객 코드 배포 파이프라인과 유사한 새로운 변수와 값이 클라우드 환경에 배포됩니다. 작성자 및 게시 서비스가 다시 시작되고 새 값을 참조합니다(일반적으로 몇 분 정도 소요됨).
@@ -486,8 +491,8 @@ API를 호출하면 일반적인 고객 코드 배포 파이프라인과 유사�
 PATCH /program/{programId}/environment/{environmentId}/variables
 ```
 
-```
-]
+```json
+[
         {
                 "name" : "MY_VAR1",
                 "value" : "plaintext value",

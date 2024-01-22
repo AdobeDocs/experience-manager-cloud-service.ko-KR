@@ -2,12 +2,13 @@
 title: 사용자 정의 도메인 이름 추가
 description: Cloud Manager를 사용하여 사용자 정의 도메인 이름을 추가하는 방법을 알아봅니다.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 52466e091cf6e0ab1ac620e15568c04881a3b63a
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 79%
+source-wordcount: '680'
+ht-degree: 73%
 
 ---
+
 
 # 사용자 정의 도메인 이름 추가 {#adding-cdn}
 
@@ -60,15 +61,19 @@ CDN 배포에는 유효한 SSL 인증서와 성공적인 TXT 확인이 필요합
 
 다양한 상태와 잠재적인 문제를 해결하는 방법에 대한 자세한 내용은 [사용자 정의 도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 문서를 참조하십시오.
 
+>[!TIP]
+>
+>의 필요성에 대한 다음 문서를 검토하십시오. [다음으로 CNAME 또는 A 레코드 추가](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) 사용자 정의 도메인에 DNS 레코드를 추가할 때 작업이 두 배로 증가하지 않도록 합니다. TXT 항목과 CNAME 또는 A 레코드를 관리 DNS 서버에서 동시에 설정할 수 있습니다.
+
+>[!TIP]
+>
+>TXT 레코드에 대한 자세한 내용은 [TXT 레코드 추가](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)를 참조하십시오.
+
 >[!NOTE]
 >
 >DNS 전파 지연으로 인해 DNS 확인을 처리하는 데 몇 시간이 걸릴 수 있습니다.
 >
 >Cloud Manager는 소유권을 확인하고 도메인 설정 표에 표시되는 상태를 업데이트합니다. 자세한 내용은 [사용자 정의 도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)을 참조하십시오.
-
->[!TIP]
->
->TXT 레코드에 대한 자세한 내용은 [TXT 레코드 추가](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)를 참조하십시오.
 
 ## 환경 페이지에서 사용자 정의 도메인 이름 추가 {#adding-cdn-environments}
 

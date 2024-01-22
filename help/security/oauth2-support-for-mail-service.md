@@ -2,12 +2,13 @@
 title: 메일 서비스에 대한 OAuth2 지원
 description: Adobe Experience Manager as a Cloud Service의 메일 서비스에 대한 Oauth2 지원
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: ht
-source-wordcount: '672'
-ht-degree: 100%
+source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
+workflow-type: tm+mt
+source-wordcount: '680'
+ht-degree: 95%
 
 ---
+
 
 # 메일 서비스에 대한 OAuth2 지원 {#oauth2-support-for-the-mail-service}
 
@@ -164,7 +165,7 @@ AEM측의 OAuth 구성을 진행하기에 앞서 아래 절차에 따라 accessT
    ```
 
 1. Outlook의 경우 `smtp.host` 구성 값은 `smtp.office365.com`입니다.
-1. 런타임 시 [여기](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api)에 설명된 바와 같이 Cloud Manager 변수 API를 사용하여 `refreshToken values` 및 `clientSecret` 보안을 전달합니다. 변수 `SECRET_SMTP_OAUTH_REFRESH_TOKEN` 및 `SECRET_SMTP_OAUTH_CLIENT_SECRET`의 값을 정의해야 합니다.
+1. 런타임 시 `refreshToken values` 및 `clientSecret` 설명된 대로 Cloud Manager 변수 API를 사용한 암호 [여기](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) 또는 를 사용하여 [변수를 추가할 Cloud Manager.](/help/implementing/cloud-manager/environment-variables.md) 변수의 값 `SECRET_SMTP_OAUTH_REFRESH_TOKEN`  및 `SECRET_SMTP_OAUTH_CLIENT_SECRET` 를 정의해야 합니다.
 
 ### 문제 해결 {#troubleshooting}
 
