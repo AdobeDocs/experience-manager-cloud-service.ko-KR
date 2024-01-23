@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 백업 및 복원
 description: AEM as a Cloud Service으로 백업 및 복원에 대해 알아보기
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 83b5d9a3ff0e9a3c69e36a97a3f733b05f827d3b
+source-git-commit: b77ee0697e8f6f4aeaa6651336588f1c5321abd1
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 27%
+source-wordcount: '539'
+ht-degree: 24%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 27%
 
 >[!CAUTION]
 >
->이 기능은 코드나 콘텐츠에 심각한 문제가 발생한 경우에만 사용해야 합니다. 복원된 백업 시간과 현재 시간 사이의 최근 데이터는 손실됩니다. 또한 스테이징이 이전 버전으로 복원됩니다.
+>이 기능은 코드나 콘텐츠에 심각한 문제가 발생한 경우에만 사용해야 합니다. 복원된 백업 시간과 현재 시간 사이의 최근 데이터는 손실됩니다. 스테이징도 이전 버전으로 복원됩니다. 최근 데이터를 유지하려면 복원하기 전에 컨텐츠 패키지를 통해 내보내고 복원된 저장소에 다시 설치해야 합니다.
 
 ## 사용 방법 {#how-to-use}
 
