@@ -5,11 +5,11 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 source-git-commit: cb2c883fbadc5347dbe5fc50337abc41d4f5cec3
 workflow-type: tm+mt
 source-wordcount: '2068'
-ht-degree: 77%
+ht-degree: 78%
 
 ---
 
-# 사용이 중단되거나 제거된 기능 및 API {#deprecated-and-removed-features-apis}
+# 사용 중단되거나 제거된 기능 및 API {#deprecated-and-removed-features-apis}
 
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
@@ -37,7 +37,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 | [!DNL Sites] | **소셜 미디어 상태**&#x200B;에 대한 경험 조각 속성. | 해당 기능은 곧 제거됩니다. |
 | [!DNL Sites] | 템플릿 기반 간단 콘텐츠 조각. | 현재는 [모델 기반 구조 콘텐츠 조각](/help/assets/content-fragments/content-fragments-models.md)입니다. |
 | [!DNL Assets] | `DAM Asset Update` 수집된 이미지를 처리하는 워크플로입니다. | 이제 에셋 수집은 [에셋 마이크로서비스](/help/assets/asset-microservices-overview.md)를 사용합니다. |
-| [!DNL Assets] | 에셋을에 바로 업로드 [!DNL Experience Manager]. 다음을 참조하십시오 [더 이상 사용되지 않는 에셋 업로드 API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | [다이렉트 이진 업로드](/help/assets/add-assets.md)를 사용합니다. 기술적인 세부 정보는 [직접 업로드 API](/help/assets/developer-reference-material-apis.md#upload-binary)를 참조하십시오. |
+| [!DNL Assets] | 자산을 [!DNL Experience Manager]에 직접 업로드합니다. [지원 중단된 자산 업로드 API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api)를 참조하십시오. | [다이렉트 이진 업로드](/help/assets/add-assets.md)를 사용합니다. 기술적인 세부 정보는 [직접 업로드 API](/help/assets/developer-reference-material-apis.md#upload-binary)를 참조하십시오. |
 | [!DNL Assets] | [!DNL ImageMagick]과 같은 호출 명령줄 도구를 포함하여 `DAM Asset Update` 워크플로의 [일부 워크플로 단계](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)는 지원되지 않습니다. | [에셋 마이크로서비스](/help/assets/asset-microservices-overview.md)는 많은 워크플로에 대한 대체 기능을 제공합니다. 사용자 정의 처리에는 [사후 처리 워크플로](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)를 사용하십시오. |
 | [!DNL Assets] | 비디오의 FFmpeg 코드 변환. | FFmpeg 썸네일 생성의 경우 [에셋 마이크로서비스](/help/assets/asset-microservices-overview.md)를 사용합니다. FFmpeg 코드 변환의 경우 [Dynamic Media](/help/assets/manage-video-assets.md)를 사용합니다. |
 | [!DNL Foundation] | 복제 에이전트의 “배치” 탭 아래에 있는 트리 복제 UI(2021년 9월 30일 이후 제거) | [게시 관리](/help/operations/replication.md#manage-publication) 또는 [콘텐츠 트리 게시 워크플로](/help/operations/replication.md#publish-content-tree-workflow) 접근 방식 |
@@ -47,15 +47,15 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 
 이 섹션에서는 [!DNL Experience Manager] 및 [!DNL Experience Manager] as a [!DNL Cloud Service]에서 제거된 기능이 나열됩니다.
 
-| 영역 | 특별 포함 | 대체 | 목표 제거 날짜 |
+| 영역 | 기능 | 대체 | 목표 제거 날짜 |
 | ------------ | ------------------ | ----------- | ------------------- |
 | 사용자 인터페이스 | 클래식 UI는 제품 사용자 인터페이스에서 제거됩니다. 링크 검사기, 버전 제거 및 일부 클라우드 서비스 구성과 같은 일부 선택 기능에서 몇 가지 클래식 UI 대화 상자를 사용할 수 있습니다. 예정된 [제품 업데이트](/help/release-notes/home.md) 이후에는 클래식 UI를 사용할 수 없습니다. | 표준 UI | 제거됨 |
 | [!DNL Dynamic Media] | [!DNL Experience Manager] as a [!DNL Cloud Service]에서 [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html?lang=ko-KR#integration)과 [Dynamic Media 하이브리드 모드](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html?lang=ko-KR#dynamic)와의 이전 통합을 사용할 수 없습니다. | [!DNL Experience Manager] as a [!DNL Cloud Service]에 제공되는 [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)를 사용하십시오. | 제거됨 |
 | [!DNL Sites] | 포털 디렉터 및 포틀릿 구성 요소 | 이들 기능은 [!DNL Experience Manager] 6.4에서 더 이상 사용되지 않으며 이제 [!DNL Experience Manager]에서 제거되었습니다. | 제거됨 |
 | [!DNL Sites] | 디자인 가져오기 | 런타임 시 [!DNL Experience Manager] 저장소의 변경 불가능한 섹션을 사용할 수 없으므로 이 기능은 제거되었습니다. | 제거됨 |
 | [!DNL Assets] | Marketing Cloud Assets 핵심 서비스 및 Creative Cloud 서비스와 공유 중인 [!DNL Assets]를 사용할 수 없습니다. | [!DNL Adobe Creative Cloud]와의 통합은 [Adobe Asset Link](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)를 사용하십시오. | 제거됨 |
-| [!DNL Foundation] | Apache Sling 데이터 소스 지원(OSGi 번들 org.apache.sling.datasource) | 해당 없음 | 제거됨 |
-| [!DNL Foundation] | JST 스크립팅 템플릿 지원(OSGi 번들 org.apache.sling.scripting.jst) | 해당 없음 | 제거됨 |
+| [!DNL Foundation] | Apache Sling 데이터 소스 지원(OSGi 번들 org.apache.sling.datasource) | 해당 사항 없음 | 제거됨 |
+| [!DNL Foundation] | JST 스크립팅 템플릿 지원(OSGi 번들 org.apache.sling.scripting.jst) | 해당 사항 없음 | 제거됨 |
 | [!DNL Foundation] | Apache Felix Http Whiteboard 지원 | OSGi Http Whiteboard | 2022년 3월 |
 | [!DNL Foundation] | com.adobe.granite.oauth.server 지원 | Adobe IMS 통합 | 2023년 3월 |
 
@@ -207,7 +207,7 @@ OSGI 구성에 대한 추가 정보는 다음에서 확인할 수 있습니다. 
 다음은 더 이상 사용되지 않는 AEM API 및 해당 API의 예상되는 제거 날짜에 대한 광범위한 목록입니다. 고객은 목표 제거 날짜까지 코드에서 해당 API를 제거해야 합니다. 제거 날짜가 지난 API를 사용하면 로컬 SDK/개발 환경 및 Cloud Manager 빌드 프로세스에서 오류가 발생합니다.
 
 <details>
-  <summary>를 확장하여 더 이상 사용되지 않는 API 목록을 확인합니다.</summary>
+  <summary>더 이상 사용되지 않는 API 목록을 보려면 펼쳐보십시오.</summary>
 <table style="table-layout:auto">
   <tr>
     <th>패키지/클래스</th>
@@ -338,7 +338,7 @@ OSGI 구성에 대한 추가 정보는 다음에서 확인할 수 있습니다. 
   </tr>
   <tr>
     <td>org.apache.jackrabbit.vault.util.xml<br>org.apache.jackrabbit.vault.util.xml.serialize</td>
-    <td>Apache Xerces와 관련된 Util 클래스는 주요 버전 변경이 발생하는 후속 릴리스에서 제거됩니다. 이러한 Util이 Filevault에서 내부용으로 사용되므로 해당 API는 공개 API 영역에서 더 이상 사용되지 않습니다.</td>
+    <td>Apache Xerces와 관련된 Util 클래스는 주요 버전 변경이 발생하는 후속 릴리스에서 제거됩니다. 이들 Util은 Filevault에서 내부용으로 사용되므로 해당 API는 공개 API 영역에서 더 이상 사용되지 않습니다.</td>
     <td>9/1/21</td>
     <td>제거됨</td>
   <tr>
