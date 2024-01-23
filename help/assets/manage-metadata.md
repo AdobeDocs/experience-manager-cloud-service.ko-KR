@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: fa57e0438a7570551785375c4e5a57fa38fd2f6f
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 9%
+source-wordcount: '1953'
+ht-degree: 8%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 9%
 
 ## 메타데이터가 필요한 이유 {#why-metadata}
 
-메타데이터는 데이터에 대한 데이터를 의미합니다. 이와 관련하여 데이터는 디지털 자산, 즉 이미지를 나타냅니다. 메타데이터는 효율적인 자산 관리에 있어 매우 중요합니다.
+메타데이터는 데이터에 대한 데이터를 의미합니다. 이와 관련하여 데이터는 디지털 자산, 즉 이미지를 나타냅니다. 메타데이터는 효율적인 에셋 관리에 중요합니다.
 
 메타데이터는 에셋에 사용할 수 있는 모든 데이터의 집합이지만 해당 이미지에 반드시 포함되지는 않습니다. 메타데이터의 일부 예는 다음과 같습니다.
 
@@ -60,18 +60,53 @@ ht-degree: 9%
 
 ## 메타데이터 유형 {#types-of-metadata}
 
-두 가지 기본 메타데이터 유형은 기술 메타데이터와 설명 메타데이터입니다.
+메타데이터는 기술, 정보 및 관리 메타데이터로 분류됩니다.
 
-기술 메타데이터는 디지털 에셋을 처리하는 소프트웨어 애플리케이션에 유용하며 수동으로 유지해서는 안 됩니다. [!DNL Experience Manager Assets] 및 기타 소프트웨어는 자동으로 기술 메타데이터를 결정하고 에셋이 수정되면 메타데이터가 변경될 수 있습니다. 에셋의 사용 가능한 기술 메타데이터는 에셋의 파일 유형에 따라 크게 달라집니다. 기술 메타데이터의 몇 가지 예는 다음과 같습니다.
+### 기술 메타데이터
 
-* 파일 크기입니다.
-* 이미지의 Dimension(높이 및 너비).
-* 오디오 또는 비디오 파일의 비트 전송률입니다.
-* 이미지의 해상도(세부 정보 수준)입니다.
+기술 메타데이터는 디지털 에셋의 기술적 측면에 중점을 두며, 다음과 관련된 중요한 정보를 제공합니다.
 
-설명 메타데이터는 에셋이 속한 비즈니스 등 애플리케이션 도메인과 관련된 메타데이터입니다. 설명 메타데이터는 자동으로 확인할 수 없습니다. 수동 또는 반자동으로 생성됩니다. 예를 들어 GPS 지원 카메라는 위도와 경도를 자동으로 추적하고 이미지에 지오태그를 추가할 수 있습니다.
+* 파일 크기
+* 형식
+* 해결 방법
+* 크기
+* 색상 모드
 
-수사적 메타데이터 정보를 수동으로 생성하는 비용이 많이 듭니다. 따라서 소프트웨어 시스템 및 조직 간의 메타데이터 교환을 쉽게 하기 위해 표준이 수립됩니다. [!DNL Experience Manager Assets] 는 메타데이터 관리를 위한 모든 관련 표준을 지원합니다.
+이러한 유형의 메타데이터는 사용자가 디지털 에셋을 이해하고 효율적으로 사용하는 데 도움이 됩니다.
+
+### 정보 메타데이터
+
+정보 메타데이터는 콘텐츠 이해를 높이고 콘텐츠 검색 및 검색 기능을 지원하기 위해 설명 정보를 제공합니다. 여기에는 키워드, 캡션 및 설명이 포함됩니다. <br>예를 들어 Experience Manager Assets에서 비디오를 관리할 때 다음 정보 메타데이터를 포함할 수 있습니다.
+
+* **키워드**: 마케팅, 제품 출시, 프로모션
+* **캡션**: 흥미로운 기능을 갖춘 최신 제품 소개
+* **설명**: 비디오 콘텐츠에 대한 자세한 개요입니다.
+
+### 관리 메타데이터
+
+관리 메타데이터는 디지털 자산의 관리적 측면을 다룬다. 디지털 자산 관리 시스템 내에서 자산의 전체 라이프사이클을 액세스 제어, 규정 준수 및 관리할 수 있습니다. 여기에는 다음과 관련된 정보가 포함됩니다.
+
+* 자산 소유권
+* 사용 권한
+* 권한
+* 기타 관리 세부 정보
+
+이 메타데이터 유형을 사용하면 효과적인 에셋 관리, 액세스 제어 및 규정 준수가 가능합니다.
+
+<!-- Learn more about [metadata best practices](metadata-best-practices.md) to manage your digital assets effectively. -->
+
+<!-- The two basic types of metadata are technical metadata and descriptive metadata.
+
+Technical metadata is useful for software applications that are dealing with digital assets and should not be maintained manually. [!DNL Experience Manager Assets] and other software automatically determine technical metadata and the metadata may change when the asset is modified. The available technical metadata of an asset depends largely on the file type of the asset. Some examples of technical metadata are:
+
+* Size of a file.
+* Dimensions (height and width) of an image.
+* Bit rate of an audio or video file.
+* Resolution (level of detail) of an image.
+
+Descriptive metadata is metadata concerned with the application domain, for example, the business that an asset is coming from. Descriptive metadata cannot be determined automatically. It is created manually or semi-automatically. For example, a GPS-enabled camera can automatically track the latitude and longitude and add geotag the image.
+
+The cost of manually creating descriptive metadata information is high. So, standards are established to ease the exchange of metadata across software systems and organizations. [!DNL Experience Manager Assets] supports all relevant standards for metadata management. -->
 
 ## 메타데이터 및 마지막 수정 {#last-modification}
 
@@ -164,7 +199,7 @@ Enterprise Manager Assets를 사용하면 여러 에셋의 메타데이터를 �
 
 >[!TIP]
 >
->한 개의 처리 프로필만이 폴더에 적용될 수 있습니다. 폴더의 에셋에 여러 처리를 적용하려면 단일 처리 프로필에 더 많은 옵션을 추가합니다. 예를 들어 단일 프로필은 렌디션을 생성하고, 자산을 트랜스코딩하고, 사용자 지정 메타데이터를 생성하는 등의 작업을 수행할 수 있습니다. 각 작업에 대해 MIME 유형 필터를 적용하여 필요한 파일 형식에 대해 적절한 작업이 트리거되도록 할 수 있습니다.
+>한 개의 처리 프로필만 폴더에 적용할 수 있습니다. 폴더의 에셋에 여러 처리를 적용하려면 단일 처리 프로필에 더 많은 옵션을 추가합니다. 예를 들어 단일 프로필은 렌디션을 생성하고, 자산을 트랜스코딩하고, 사용자 지정 메타데이터를 생성하는 등의 작업을 수행할 수 있습니다. 각 작업에 대해 MIME 유형 필터를 적용하여 필요한 파일 형식에 대해 적절한 작업이 트리거되도록 할 수 있습니다.
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
