@@ -165,7 +165,7 @@ ht-degree: 98%
       + [Experience Manager 강화 커넥터용 Workfront 최신 릴리스 정보](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [새로운 기능](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service의 주요 변경 사항](/help/release-notes/aem-cloud-changes.md)
-   + [사용이 중단되거나 제거된 기능 및 API](/help/release-notes/deprecated-removed-features.md)
+   + [사용 중단되거나 제거된 기능 및 API](/help/release-notes/deprecated-removed-features.md)
    + [프리릴리스 채널](/help/release-notes/prerelease.md)
 + 보안 {#security}
    + [AEM as a Cloud Service 보안 개요](/help/security/cloud-service-security-overview.md)
@@ -663,7 +663,7 @@ ht-degree: 98%
          + [Forms 포털 구성](/help/forms/configure-forms-portal.md)
          + [검토 만들기 및 관리](/help/forms/create-reviews-forms.md)
       + [적응형 양식 키워드](/help/forms/adaptive-forms-keywords.md)
-      + [양식 미리 보기](/help/forms/previewing-forms.md)
+      + [양식 미리보기](/help/forms/previewing-forms.md)
    + 양식 중심 워크플로 {#create-form-centric-workflows}
       + [워크플로 + 단계 참조에서 양식 중심 단계 사용](/help/forms/aem-forms-workflow-step-reference.md)
       + [양식 중심 워크플로에서 변수 사용](/help/forms/variable-in-aem-workflows.md)
