@@ -1,9 +1,9 @@
 ---
 title: 반응형 디자인
-description: 응답형 설계를 사용하면 동일한 경험을 여러 방향의 여러 디바이스에서 효과적으로 표시할 수 있습니다
-source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
+description: 반응형 설계를 통해 동일한 경험을 여러 방향의 여러 디바이스에서 효과적으로 표시할 수 있습니다.
+source-git-commit: c9ee24e7b9f10ebbf9425dff66103e097701c8e4
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -68,3 +68,66 @@ CSS 파일에서 타겟팅하는 장치의 속성을 기반으로 미디어 쿼�
 * 클라이언트 라이브러리 폴더의 css.txt 파일에서 어셈블된 CSS 파일에 필요한 CSS 파일 목록을 정렬합니다.
 
 다음 [WKND 자습서](develop-wknd-tutorial.md) 은 이 전략을 사용하여 사이트 디자인에 스타일을 정의합니다. WKND에서 사용하는 CSS 파일은 다음 위치에 있습니다. `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`.
+
+### AEM 페이지에서 미디어 쿼리 사용 {#using-media-queries-with-aem-pages}
+
+[WKND 샘플 프로젝트](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 사용 [페이지 핵심 구성 요소,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html) 페이지 정책을 통해 clientlib을 포함합니다.
+
+자체 페이지 구성 요소가 페이지 핵심 구성 요소를 기반으로 하지 않는 경우 해당 구성 요소의 HTL 또는 JSP 스크립트에 클라이언트 라이브러리 폴더를 포함할 수도 있습니다. 이렇게 하면 반응형 그리드가 작동하는 데 필요한 미디어 쿼리가 있는 CSS 파일이 생성되고 참조됩니다.
+
+#### HTL {#htl}
+
+```html
+<sly data-sly-use.clientlib="${'/libs/granite/sightly/templates/clientlib.html'}">
+<sly data-sly-call="${clientlib.all @ categories='apps.weretail.all'}"/>
+```
+
+#### JSP {#jsp}
+
+```xml
+<ui:includeClientLib categories="apps.weretail.all"/>
+```
+
+JSP 스크립트는 스타일 시트를 참조하는 다음 HTML 코드를 생성합니다.
+
+```xml
+<link rel="stylesheet" href="/etc/designs/weretail/clientlibs-all.css" type="text/css">
+<link href="/etc/designs/weretail.css" rel="stylesheet" type="text/css">
+```
+
+## 특정 장치에 대한 미리 보기 {#previewing-for-specific-devices}
+
+에뮬레이터를 사용하면 페이지를 다양한 뷰포트 크기로 미리 볼 수 있으므로 응답형 디자인의 동작을 테스트할 수 있습니다. 사이트 콘솔에서 페이지를 편집할 때 **에뮬레이터** 아이콘을 클릭하여 에뮬레이터를 표시합니다.
+
+![도구 모음의 에뮬레이터 아이콘](assets/emulator-icon.png)
+
+에뮬레이터 도구 모음에서 를 탭하거나 클릭합니다. **장치** 아이콘을 클릭하면 장치를 선택할 수 있는 드롭다운 메뉴가 표시됩니다. 장치를 선택하면 페이지가 뷰포트 크기에 맞게 변경됩니다.
+
+![에뮬레이터 도구 모음](assets/emulator.png)
+
+### 장치 그룹 지정 {#specifying-device-groups}
+
+에 표시되는 장치 그룹을 지정하려면 **장치** 목록, 추가 `cq:deviceGroups` 에 대한 속성 `jcr:content` 사이트의 템플릿 페이지에 있는 노드. 속성 값은 장치 그룹 노드에 대한 경로 배열입니다.
+
+예를 들어 WKND 사이트의 템플릿 페이지는 `/conf/wknd/settings/wcm/template-types/empty-page/structure`. 및 `jcr:content` 그 아래에 있는 노드에는 다음 속성이 포함됩니다.
+
+* 이름: `cq:deviceGroups`
+* 유형: `String[]`
+* 값: `mobile/groups/responsive`
+
+장치 그룹 노드는 `/etc/mobile/groups` 폴더를 삭제합니다.
+
+## 응답형 이미지 {#responsive-images}
+
+반응형 페이지는 렌더링되는 장치에 동적으로 적응하여 사용자에게 더 나은 경험을 제공합니다. 하지만 페이지 로드 시간을 최소화하기 위해 자산을 중단점 및 장치에 최적화하는 것도 중요합니다.
+
+[핵심 구성 요소의 이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html) 응용 이미지 선택과 같은 기능입니다.
+
+* 기본적으로 이미지 구성 요소는 [적응형 이미지 서블릿](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html) 적절한 표현물을 전달할 수 있습니다.
+* [웹에 최적화된 이미지 제공](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) 는 DAM의 이미지 에셋을 WebP 형식으로 전달하고 이미지의 다운로드 크기를 평균 약 25% 줄일 수 있는 간단한 정책 확인란을 통해서도 사용할 수 있습니다.
+
+## 레이아웃 컨테이너 {#layout-container}
+
+AEM 레이아웃 컨테이너를 사용하면 응답형 레이아웃을 효율적이고 효과적으로 구현하여 페이지 차원을 클라이언트 뷰포트에 맞출 수 있습니다.
+
+문서를 참조하십시오. [레이아웃 컨테이너 및 레이아웃 모드 구성](/help/sites-cloud/administering/responsive-layout.md) 레이아웃 컨테이너의 작동 방식과 콘텐츠에 대한 반응형 레이아웃을 활성화하는 방법에 대한 자세한 정보입니다.
