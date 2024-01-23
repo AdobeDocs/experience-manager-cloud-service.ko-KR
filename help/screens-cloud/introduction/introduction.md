@@ -1,11 +1,11 @@
 ---
 title: AEM Screens as a Cloud Service 소개
-description: AEM Screens을 as a Cloud Service으로 이해합니다.
+description: AEM Screens as a Cloud Service에 대해 이해합니다.
 exl-id: b1cc0a63-ecd3-4d89-ac49-f384cc610cdc
 source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
 workflow-type: tm+mt
 source-wordcount: '365'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
