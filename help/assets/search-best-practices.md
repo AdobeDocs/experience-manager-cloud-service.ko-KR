@@ -3,10 +3,10 @@ title: 에 대한 모범 사례 검색 [!DNL Adobe Experience Manager] as a [!DN
 description: 애플리케이션 내에서 에셋의 메타데이터를 검색, 찾기 및 검색하기 위한 모범 사례입니다.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 47003c9aa0faefc01a9935c53a5a78938c37cf66
+source-git-commit: 6397a300de13c5e4f6ee5828de1ba76a1677c227
 workflow-type: tm+mt
-source-wordcount: '2521'
-ht-degree: 3%
+source-wordcount: '2527'
+ht-degree: 2%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 [!DNL Adobe Experience Manager Assets] 는 더 높은 컨텐츠 속도를 달성하는 데 도움이 되는 강력한 자산 검색 방법을 제공합니다. 경우에 따라 적절한 자산을 찾는 것은 어렵고 시간이 많이 걸릴 수 있습니다. 따라서 에서 에셋 검색 기능 [!DNL Adobe Experience Manager Assets] 는 크리에이티브 사용자의 추가 사용, 비즈니스 사용자 및 마케터의 강력한 자산 관리 또는 DAM 관리자의 관리를 위한 디지털 자산 관리 시스템 사용의 중심입니다.
 
-이 도움말 문서에는 AEM 사용자가 기본에서 고급 수준까지 검색할 수 있도록 지원하기 위한 다양한 시나리오의 도움을 받는 AEM 검색 모범 사례가 포함되어 있습니다.
+이 도움말 문서에는 AEM 사용자가 기본에서 고급 수준까지 검색을 수행하는 데 도움이 되는 다양한 시나리오의 도움말과 함께 AEM 검색 모범 사례가 포함되어 있습니다.
 
 ## Experience Manager 검색 액세스 {#access-experience-manager-search}
 
@@ -255,7 +255,11 @@ AEM에서 검색을 수행하는 동안 선택한 에셋과 유사한 에셋을 
 
 1. 검색 창을 확인합니다. 선택한 에셋의 썸네일이 검색 요구 사항을 나타내는 검색 막대에 표시됩니다. 그 결과 유사한 스마트 태그가 있는 에셋을 반환합니다.
 
-**[!UICONTROL 에셋 보기]** 은(는) 을 지원하지 않습니다. [!UICONTROL 유사 항목 찾기] 옵션을 선택합니다.
+에서 다음 단계를 실행합니다 **[!UICONTROL 에셋 보기]**:
+
+1. 요구 사항에 따라 에셋을 검색합니다.
+1. 이미지 선택 > 다음으로 이동 [!UICONTROL 유사한 이미지 찾기] 맨 위의 navbar에 있는 옵션입니다.
+색상 및 메타데이터가 유사한 에셋 컬렉션으로 이동합니다.
 
 ## 사용자 정의 검색 패싯 {#custom-search-facets}
 
@@ -279,7 +283,7 @@ to be added later
 
 1. From the Assets user interface, open the properties page for the asset. 클릭 [!UICONTROL 고급] 및 클릭 [!UICONTROL 추가] 아래에 [!UICONTROL 검색 키워드에 대한 개선].
 2. [검색 홍보] 상자에서 이미지 검색을 강화할 키워드를 지정한 다음 을 클릭합니다 [!UICONTROL 추가]. 동일한 방법으로 여러 키워드를 지정할 수 있습니다.
-3. [!UICONTROL 저장 및 닫기]를 클릭합니다. 이 키워드에 대해 홍보한 자산이 상위 검색 결과 중에 나타납니다.
+3. 클릭 [!UICONTROL 저장 및 닫기]. 이 키워드에 대해 홍보한 자산이 상위 검색 결과 중에 나타납니다.
 
 ## Experience Manager에서 검색 수행 중 주목할 만한 사항 {#notable-things}
 
@@ -415,11 +419,6 @@ The newly added assets are not indexed.
             <li> 콘텐츠 조각 모델
             </ul> 
         </td>
-        <td> 지원되지 않음 </td>
-    </tr>
-     <tr>
-        <td> 유사 항목 찾기 </td>
-        <td> 지원됨 </td>
         <td> 지원되지 않음 </td>
     </tr>
 </table>
