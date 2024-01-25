@@ -2,10 +2,10 @@
 title: 자산 보기에서 태그를 관리하는 방법은 무엇입니까?
 description: 자산 보기에서 태그를 관리하는 방법을 알아보십시오. 태그는 보다 효율적으로 찾아보고 검색할 수 있는 자산을 분류하는 데 유용합니다.
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: ea0978d09ce74d37487cd921496b03acbfd632d0
 workflow-type: tm+mt
-source-wordcount: '1416'
-ht-degree: 100%
+source-wordcount: '1256'
+ht-degree: 95%
 
 ---
 
@@ -29,11 +29,11 @@ ht-degree: 100%
 
 * 태그 지정을 사용하면 작성자가 공통 분류 체계를 통해 서로 다른 자산을 쉽게 구성할 수 있습니다. 작성자는 공통 태그로 자산을 빠르게 검색하고 구성할 수 있습니다.
 
-* 계층적 태그는 매우 유연하며 논리적인 방식으로 용어를 구성하는 훌륭한 방법입니다. 네임스페이스, 태그 및 하위 태그를 통해 전체 분류 체계 시스템을 나타낼 수 있습니다.
+* 계층적 태그는 매우 유연하며 논리적인 방식으로 용어를 구성하는 훌륭한 방법입니다. 네임스페이스, 태그 및 서브태그를 통해 전체 분류 체계를 표현할 수 있다.
 
 * 태그는 시간이 지나면서 조직의 어휘가 변경됨에 따라 발전할 수 있습니다.
 
-* 관리자 보기에서 관리되는 태그는 자산 보기에서 관리되는 태그와 동기화 상태를 유지하여 메타데이터 거버넌스와 무결성을 보장합니다.
+* Assets에서 as a Cloud Service으로 관리되는 태그는 Assets 보기에서 관리되는 태그와 동기화 상태를 유지하므로 메타데이터 거버넌스와 무결성을 보장합니다.
 
 자산에 태그를 적용하려면 먼저 네임스페이스를 만든 다음 태그를 만들고 추가해야 합니다. 태그를 만들어 기존 네임스페이스에 추가할 수도 있습니다. 루트 수준에서 만드는 모든 태그는 표준 태그 네임스페이스에 자동으로 추가됩니다. 그런 다음 태그 필드를 메타데이터 양식에 추가하여 자산 세부 정보 페이지에 표시할 수 있습니다. 이러한 설정을 구성하고 나면 자산에 태그 적용을 시작할 수 있습니다.
 
@@ -43,7 +43,7 @@ ht-degree: 100%
 
 ![태그 지정 관리](assets/tagging-taxonomy-management.png)
 
-태그 병합, 이름 바꾸기, 지역화 및 게시를 포함하여 이 문서에서 언급된 것 이상의 추가 기능을 관리자 보기에서 사용할 수 있습니다.
+태그 병합, 이름 바꾸기, 지역화 및 게시를 포함하여 이 문서에서 언급된 것 이상의 추가 기능을 Assets as a Cloud Service에서 사용할 수 있습니다.
 
 ## 네임스페이스 만들기 {#creating-a-namespace}
 
@@ -59,7 +59,6 @@ ht-degree: 100%
 
    <!--
     >[!NOTE]
-    >
     >You can use `Name` as a primary key if you are using any other metadata management tool is the source of truth for taxonomy values, you can use the name as a primary key.
     >
     -->
@@ -77,13 +76,6 @@ ht-degree: 100%
    이 예에서 왼쪽 이미지는 `Path` 경로에 표시된 네임스페이스 `automobile-four-wheeler` 바로 아래에 있는 태그를 나타냅니다. 오른쪽 이미지는 태그 내에 하위 태그를 추가한 예입니다. 네임스페이스 외에 `Path` 필드에 다른 태그 이름 `jeep` 및 `jeep-meridian`이 있습니다.
 1. 태그의 제목, 이름, 설명을 지정하고 `Save`를 클릭합니다.
 
-
-   >[!NOTE]
-   >
-   >* `Title` 및 `Name` 필드는 필수이며 `Description` 필드는 선택 사항입니다.
-   >* 기본적으로 이 도구는 제목 필드에 입력한 텍스트를 복사하고 공백이나 특수 문자(. &amp; / \ : * ? [ ] | &quot; %)를 제거한 후 이름으로 저장합니다.
-   >* `Title` 필드는 나중에 업데이트할 수 있지만 `Name` 필드는 읽기 전용입니다.
-
 ## 표준 태그에 태그 추가 {#adding-tags-to-standard-tags}
 
 구조화되지 않은 태그 또는 계층이 없는 태그는 `Standard Tags` 네임스페이스 아래에 저장됩니다. 또한 관리되는 분류 체계에 영향을 주지 않고 추가 설명 용어를 추가하려는 경우 해당 값을 `Standard Tags` 아래에 저장할 수 있습니다. 시간이 지남에 따라 구조화된 네임스페이스에서 이러한 값을 이동할 수 있습니다. 또한 `Standard Tags` 네임스페이스를 키워드에 대한 자유 형식 항목으로 사용할 수 있습니다.
@@ -91,10 +83,11 @@ ht-degree: 100%
 표준 태그를 만들려면 루트 수준에서 `Create Tag`를 클릭합니다. 제목, 이름, 설명을 지정한 다음 `Save`를 클릭합니다.
 
 ![표준 태그에 태그 추가](assets/adding-tags-to-standard-tags.png)
-
+<!--
 >[!NOTE]
 >
->관리자 보기를 사용하여 `Standard Tags` 네임스페이스를 삭제하면 루트 수준에서 만들어진 태그가 사용 가능한 태그 목록에 표시되지 않습니다.
+>If you delete `Standard Tags` namespace using Assets as a Cloud Service, the tags created at the root-level do not display in the list of available tags. 
+-->
 
 ## 태그로 이동 {#moving-tags}
 
@@ -117,7 +110,7 @@ ht-degree: 100%
 >[!NOTE]
 >
 >* 태그의 `Name`은 업데이트할 수 없습니다. 태그의 루트 경로도 태그 이름을 기반으로 합니다. `Title` 필드를 업데이트해도 경로는 동일하게 유지됩니다.
->* 병합, 지역화 및 게시와 같은 추가 작업은 관리자 보기에서 가능합니다.
+>* 병합, 지역화 및 게시와 같은 추가 작업은 Assets as a Cloud Service에서 가능합니다.
 
 ## 태그 삭제 {#deleting-tags}
 
@@ -136,7 +129,7 @@ ht-degree: 100%
 
 ## 메타데이터 양식에 태그 구성 요소 추가 {#adding-tags-to-metadata-form}
 
-태그 구성 요소는 `default` 메타데이터 양식에 자동으로 추가됩니다. 템플릿을 사용하거나 처음부터 직접 [메타데이터 양식](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=en#metadata-forms)을 설계할 수 있습니다. 기존 메타데이터 양식 템플릿을 사용하지 않는 경우 메타데이터 양식을 수정하고 태그 구성 요소를 추가할 수 있습니다. 메타데이터 속성 매핑은 자동으로 채워지며 현재로서는 수정할 수 없습니다. 관리자 보기의 사용자는 사용자 정의 네임스페이스를 사용하여 태그 값을 저장하도록 매핑을 업데이트하고 루트 경로를 사용하여 계층의 하위 집합만 노출할 수 있습니다.
+태그 구성 요소는 `default` 메타데이터 양식에 자동으로 추가됩니다. 템플릿을 사용하거나 처음부터 직접 [메타데이터 양식](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=en#metadata-forms)을 설계할 수 있습니다. 기존 메타데이터 양식 템플릿을 사용하지 않는 경우 메타데이터 양식을 수정하고 태그 구성 요소를 추가할 수 있습니다. 메타데이터 속성 매핑은 자동으로 채워지며 현재로서는 수정할 수 없습니다. Assets as a Cloud Service 사용자는 사용자 정의 네임스페이스를 사용하여 태그 값을 저장하도록 매핑을 업데이트하고 루트 경로를 사용하여 계층의 하위 집합만 노출할 수 있습니다.
 
 메타데이터 양식에 태그 구성 요소를 추가하는 방법을 보려면 이 빠른 비디오를 시청하십시오.
 
@@ -151,32 +144,10 @@ ht-degree: 100%
    ![자산 태그 지정](assets/adding-tags-to-assets.png)
 
 1. 하나 이상의 태그를 선택합니다. 하위 태그는 상위 태그 또는 네임스페이스와 함께 자동으로 선택됩니다.
-자산 보기에서 수정된 태그는 관리자 보기에도 적용됩니다.
+에셋 보기에서 수정된 태그는 에셋 as a Cloud Service으로 적용됩니다.
 
-## 제한 사항 {#limitations}
-
-다음 고급 분류 기능은 현재 자산 보기에서 사용할 수 없으며 관리자 보기를 통해서만 액세스할 수 있습니다.
-
-* **지역화:** 모든 지역화는 관리자 보기에서 이루어져야 합니다.
-* **루트 경로:** 루트 경로는 구성할 수 없습니다. 분류 체계 관리에 저장된 모든 네임스페이스는 자산 보기의 태그 속성에 표시됩니다.
-* **표준 태그:** 관리자 보기에서 적용된 표준 태그는 자산 보기에도 표시됩니다. 자산 세부 정보 페이지의 자산 보기에서는 새 표준 태그를 추가할 수 없습니다. 표준 태그에 저장된 기존 값은 자산 세부 정보 페이지에 적용됩니다.
-* **사용자 정의 네임스페이스:** 태그는 사용자 정의 네임스페이스에 매핑할 수 없습니다.
-* **참조 보기:** 관리자는 자산 보기에서 태그 사용 현황을 볼 수 있습니다. 태그를 현재 사용 중인 모든 자산이 나타납니다. 그러나 관리자는 참조의 태그를 사용하여 개별 자산을 볼 수 없습니다.
-
-<!--
-*   Overview
-*   Benefits
-*   Prerequisites and Permissions
-*   Configuration
-*   Managing Tags
-    *   Creating a Namespace
-    *   Adding Tags to a Namespace
-    *   Adding Tags to Standard Tags
-    *   Moving Tags
-    *   Editing Tags
-    *   Deleting Tags
-*   Applying Tags
-    *   Adding Tags to the Metadata form
-    *   Adding Tags to Assets
-*   Limitations
--->
+>[!NOTE]
+>
+>* `Title` 및 `Name` 필드는 필수이며 `Description` 필드는 선택 사항입니다.
+>* 기본적으로 이 도구는 제목 필드에 입력한 텍스트를 복사하고 공백이나 특수 문자(. &amp; / \ : * ? [ ] | &quot; %)를 제거한 후 이름으로 저장합니다.
+>* `Title` 필드는 나중에 업데이트할 수 있지만 `Name` 필드는 읽기 전용입니다.

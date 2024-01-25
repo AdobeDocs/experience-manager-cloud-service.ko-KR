@@ -2,25 +2,34 @@
 title: Assets 보기에서 태그 관리
 description: Assets 보기의 보고서 섹션에 있는 데이터에 액세스하여 제품 및 기능 사용을 평가하고 주요 성공 지표에 대한 통찰력을 도출합니다.
 exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
-source-git-commit: e6ff21ee705a1164fdf163ce4f49064d83f149d8
+source-git-commit: c9ec348d7e65f4bb69b93a39b9ad7192485d8db4
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 97%
+source-wordcount: '814'
+ht-degree: 92%
 
 ---
 
 # 보고서 관리 {#manage-reports}
 
->[!CONTEXTUALHELP]
->id="assets_reports"
->title="보고서"
->abstract="자산 보고는 관리자가 Adobe Experience Manager Assets 보기 환경의 활동을 조회할 수 있도록 해 줍니다. 이 데이터는 사용자가 콘텐츠 및 제품과 상호 작용하는 방법에 대한 유용한 정보를 제공합니다. 관리자 제품 프로필에 할당된 모든 사용자는 Insights 대시보드에 액세스하거나 사용자 정의 보고서를 만들 수 있습니다."
-
-자산 보고는 관리자가 Adobe Experience Manager Assets 보기 환경의 활동을 조회할 수 있도록 해 줍니다. 이 데이터는 사용자가 콘텐츠 및 제품과 상호 작용하는 방법에 대한 유용한 정보를 제공합니다.
+자산 보고는 관리자가 Adobe Experience Manager Assets 보기 환경의 활동을 조회할 수 있도록 해 줍니다. 이 데이터는 사용자가 콘텐츠 및 제품과 상호 작용하는 방법에 대한 유용한 정보를 제공합니다. 모든 사용자는 인사이트 대시보드에 액세스할 수 있으며 관리자 제품 프로필에 할당된 사용자는 사용자 정의 보고서를 만들 수 있습니다.
 
 ## 보고서 액세스 {#access-reports}
 
 Assets 보기 관리자 제품 프로필에 할당된 모든 사용자는 [인사이트] 대시보드에 액세스하거나 Assets 보기에서 사용자 정의 보고서를 만들 수 있습니다.
+
+보고서에 액세스하려면 **[!UICONTROL 설정]** 아래의 **[!UICONTROL 보고서]**&#x200B;로 이동합니다.
+
+![보고서](assets/reports.png)
+<!--
+In the **[!UICONTROL Reports]** screen, various components are shown in the tabular format which includes the following:
+
+* **Title**: Title of the report
+* **Type**: Determines whether the report is uploaded or downloaded to the repository
+* **Description**: Provide details of the report that was given during uploading/downloading the report
+* **Status**: Determines whether the report is completed, under progress, or deleted.
+* **Author**: Provides email of the author who has uploaded/downloaded the report.
+* **Created**: Gives information of the date when the report was generated.
+-->
 
 ## 인사이트 보기 {#view-live-statistics}
 
@@ -32,9 +41,9 @@ Assets 보기를 사용하면 [인사이트] 대시보드를 사용하여 Assets
 
 ![Insights](assets/insights.png)
 
-* **다운로드**: 지난 30일 또는 12개월 동안 Assets 보기 환경에서 다운로드된 자산 수를 선 차트로 표시합니다.
+* **다운로드**: 지난 30일 또는 12개월 동안 자산 보기 환경에서 다운로드한 자산 수를 선 그래프로 표시합니다.
 
-* **업로드**: 지난 30일 또는 12개월 동안 Assets 보기 환경에 업로드된 자산 수를 선 차트로 표시합니다.
+* **업로드**: 지난 30일 또는 12개월 동안 자산 보기 환경에 업로드된 자산 수를 선 그래프로 표시합니다.
 
 <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
@@ -46,11 +55,10 @@ Assets 보기를 사용하면 [인사이트] 대시보드를 사용하여 Assets
 
 * **인기 검색어**: 지난 30일 또는 12개월 동안 Assets 보기 환경에서 해당 용어가 검색된 횟수와 함께 가장 많이 검색된 용어를 표 형식으로 표시합니다.
 
-<!--
-
-* **Storage usage**: The storage usage, in gigabytes (GB), for the Assets view environment, for the last 30 days or 12 months represented using a bar chart.
-
--->
+  <!--
+   ![Insights](assets/insights1.png)
+   ![Insights](assets/insights2.png)
+   -->
 
 ## 다운로드 보고서 만들기 {#create-download-report}
 
