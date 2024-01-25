@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: fd1c3d1e524e5882ae04ca784b618ddba123bdd6
+source-git-commit: 4b05e8f8ae554e7c0881134ef24ca8ce35e3e2bf
 workflow-type: tm+mt
-source-wordcount: '4975'
+source-wordcount: '4976'
 ht-degree: 6%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 6%
 
 ### 비디오 자산 미리 보기
 
-에서 MP4 변환을 미리 볼 수 있습니다. [!DNL Assets] 사용자 인터페이스. 비디오 자산을 미리 보려면 다음 단계를 따르십시오.
+에서 지원되는 렌디션으로 비디오를 미리 볼 수 있습니다. [!DNL Assets] 사용자 인터페이스. 비디오 자산을 미리 보려면 다음 단계를 따르십시오.
 
 1. 지원되는 형식의 비디오 자산을 업로드할 대상 [!DNL Experience Manager Assets]. 에 대해 자세히 알아보기 [지원되는 비디오 형식](file-format-support.md#video-formats). <br>업로드되면 비디오 에셋이 처리되고 미리 보기 렌디션이 생성됩니다.
 1. 자산을 클릭하고 을(를) 선택합니다. ![세부 정보 옵션](assets/do-not-localize/details_icon.svg) **[!UICONTROL 세부 사항]**  을 클릭하여 제품에서 사용할 수 있습니다. 비디오 에셋이 비디오 뷰어에서 열립니다.
