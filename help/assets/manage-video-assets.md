@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 517412d3f9d79a35bd1c25bd0eb09c0dee63c9af
+source-git-commit: fd1c3d1e524e5882ae04ca784b618ddba123bdd6
 workflow-type: tm+mt
-source-wordcount: '4904'
+source-wordcount: '4975'
 ht-degree: 6%
 
 ---
@@ -25,12 +25,34 @@ ht-degree: 6%
 
 ## 비디오 자산 업로드 및 미리 보기 {#upload-and-preview-video-assets}
 
-[!DNL Adobe Experience Manager Assets] 확장 MP4를 사용하여 비디오 에셋에 대한 미리 보기를 생성합니다. 에서 렌디션을 미리 볼 수 있습니다. [!DNL Assets] 사용자 인터페이스.
+지원되는 형식의 비디오 에셋을에 업로드하고 미리 볼 수 있습니다. [!DNL Experience Manager Assets].
+<!-- It generates previews for video assets with the extension MP4. -->
 
-1. 디지털 에셋 폴더 또는 하위 폴더에서 디지털 에셋을 추가할 위치로 이동합니다.
-1. 에셋을 업로드하려면 **[!UICONTROL 만들기]** 도구 모음에서 를 선택하고 을 선택합니다. **[!UICONTROL 파일]**. 또는 사용자 인터페이스에서 파일을 드래그합니다. 다음을 참조하십시오 [에셋 업로드](manage-digital-assets.md#uploading-assets) 을 참조하십시오.
-1. 카드 보기에서 비디오를 미리 보려면 **[!UICONTROL 재생]** ![재생 옵션](assets/do-not-localize/play.png) 비디오 자산에 대한 옵션입니다. 카드 보기에서만 비디오를 일시 중지하거나 재생할 수 있습니다. 다음 [!UICONTROL 재생] 및 [!UICONTROL 일시 중지] 목록 보기에서 옵션을 사용할 수 없습니다.
-1. 자산 세부 사항 페이지에서 비디오를 미리 보려면 을 선택합니다. **[!UICONTROL 편집]** 카드에서요. 비디오는 브라우저의 기본 비디오 플레이어에서 재생됩니다. 비디오를 전체 화면으로 재생, 일시 중지, 볼륨 조절 및 확대/축소가 가능합니다.
+### 비디오 자산 업로드
+
+비디오 자산을 업로드하려면 다음 단계를 따르십시오.
+
+1. 디지털 에셋 폴더 또는 하위 폴더에서 에셋을 추가해야 하는 위치로 이동합니다.
+1. 클릭 **[!UICONTROL 만들기]** 도구 모음에서 를 선택하고 을 선택합니다. **[!UICONTROL 파일]**. <br>또는 사용자 인터페이스에서 파일을 드래그합니다.
+자세히 알아보기 [에셋 업로드](manage-digital-assets.md#uploading-assets) 위치: [!DNL Experience Manager Assets].
+
+<!-- 1. To preview a video in the card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
+1. To preview the video in the asset details page, select **[!UICONTROL Edit]** on the card. The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen. -->
+
+### 비디오 자산 미리 보기
+
+에서 MP4 변환을 미리 볼 수 있습니다. [!DNL Assets] 사용자 인터페이스. 비디오 자산을 미리 보려면 다음 단계를 따르십시오.
+
+1. 지원되는 형식의 비디오 자산을 업로드할 대상 [!DNL Experience Manager Assets]. 에 대해 자세히 알아보기 [지원되는 비디오 형식](file-format-support.md#video-formats). <br>업로드되면 비디오 에셋이 처리되고 미리 보기 렌디션이 생성됩니다.
+1. 자산을 클릭하고 을(를) 선택합니다. ![세부 정보 옵션](assets/do-not-localize/details_icon.svg) **[!UICONTROL 세부 사항]**  을 클릭하여 제품에서 사용할 수 있습니다. 비디오 에셋이 비디오 뷰어에서 열립니다.
+1. 다음을 클릭합니다. ![재생 옵션](assets/do-not-localize/play.png) ( 비디오 썸네일의 아이콘) <br>비디오를 전체 화면으로 재생, 일시 중지, 볼륨 조절 및 확대/축소가 가능합니다.
+
+의 기존 비디오 자산 [!DNL Experience Manager Assets], 다음을 수행해야 합니다. **[!UICONTROL 재처리]** 의 에셋 [!DNL Experience Manager] 를 클릭하여 비디오 미리 보기 기능을 활성화합니다. 방법 알아보기 [디지털 자산 재처리](reprocessing.md) 위치: [!DNL Experience Manager].
+
+### 비디오 미리보기의 제한 사항
+
+* 렌디션이 생성되더라도 MXF 파일에는 비디오 미리보기가 표시되지 않습니다.
+* WebM 파일은 웹 브라우저에서 기본적으로 재생할 수 있으므로 미리 보기 변환을 생성하지 않습니다.
 
 ## 비디오 자산 게시 {#publish-video-assets}
 

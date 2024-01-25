@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
+source-git-commit: 4c1525fd51956d3d788a91f58978a9c885e6daa5
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 10%
+source-wordcount: '1409'
+ht-degree: 32%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 10%
 * 키 [이미징 파일 형식](#image-formats).
 * [Camera Raw 파일 형식](#camera-raw-formats) Canon, Nikon, Fujifilm, Olympus 및 기타 제조업체(Adobe Camera Raw 제공)를 비롯한 다양한 카메라
 * 공통 [문서 형식](#document-formats), Microsoft® Office 및 Open Document 형식 포함.
-* Wide range of [video](#video-formats) and [audio](#audio-formats) formats.
+* 의 광범위한 [비디오](#video-formats) 및 [오디오](#audio-formats) 형식.
 
 다음 범례에서는 각 형식에 대한 지원 수준을 설명합니다.
 
@@ -147,31 +147,31 @@ ht-degree: 10%
 
 ## 비디오 형식 {#video-formats}
 
-| 파일 형식 | 썸네일 생성 | 메타데이터 추출 | 너비/높이 |
-| ----------- | -------------------- | ------------------- | ------------ |
-| 3G2 | - | ✓ | - |
-| 3GP | - | ✓ | - |
-| AVI | ✓ | ✓ | ✓ |
-| DIVX | ✓ | - | ✓ |
-| F4V | ✓ | ✓ | ✓ |
-| FLV | ✓ | ✓ | ✓ |
-| M2T | ✓ | - | ✓ |
-| M2TS | ✓ | - | ✓ |
-| M2V | ✓ | - | ✓ |
-| M4V | ✓ | ✓ | ✓ |
-| MKV | ✓ | - | ✓ |
-| MOV | ✓ | ✓ | ✓ |
-| MP4 | ✓ | ✓ | ✓ |
-| MPEG | ✓ | ✓ | ✓ |
-| 마일 | ✓ | ✓ | ✓ |
-| MTS | ✓ | - | ✓ |
-| MXF | ✓ | - | ✓ |
-| OGV | ✓ | - | ✓ |
-| QT | ✓ | - | ✓ |
-| R3D | - | ✓ | ✓ |
-| SWF | ✓ | - | ✓ |
-| WebM | ✓ | - | ✓ |
-| WMV | ✓ | ✓ | ✓ |
+| 파일 형식 | 썸네일 생성 | 메타데이터 추출 | 너비/높이 | 미리보기 |
+| ----------- | -------------------- | ------------------- | ------------ | ------- |
+| 3G2 | - | ✓ | - | - |
+| 3GP | - | ✓ | - | - |
+| AVI | ✓ | ✓ | ✓ | ✓ |
+| DIVX | ✓ | - | ✓ | ✓ |
+| F4V | ✓ | ✓ | ✓ | ✓ |
+| FLV | ✓ | ✓ | ✓ | ✓ |
+| M2T | ✓ | - | ✓ | ✓ |
+| M2TS | ✓ | - | ✓ | ✓ |
+| M2V | ✓ | - | ✓ | ✓ |
+| M4V | ✓ | ✓ | ✓ | ✓ |
+| MKV | ✓ | - | ✓ | ✓ |
+| MOV | ✓ | ✓ | ✓ | ✓ |
+| MP4 | ✓ | ✓ | ✓ | ✓ |
+| MPEG | ✓ | ✓ | ✓ | ✓ |
+| 마일 | ✓ | ✓ | ✓ | ✓ |
+| MTS | ✓ | - | ✓ | ✓ |
+| MXF | ✓ | - | ✓ | ✓ |
+| OGV | ✓ | - | ✓ | ✓ |
+| QT | ✓ | - | ✓ | ✓ |
+| R3D | - | ✓ | ✓ | ✓ |
+| SWF | ✓ | - | ✓ | ✓ |
+| WebM | ✓ | - | ✓ | ✓ |
+| WMV | ✓ | ✓ | ✓ | ✓ |
 
 ## 오디오 형식 {#audio-formats}
 
@@ -234,7 +234,7 @@ ht-degree: 10%
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [이미지](/help/assets/dynamic-media/image-sets.md), [혼합 미디어](/help/assets/dynamic-media/mixed-media-sets.md), 및 [회전](/help/assets/dynamic-media/spin-sets.md) |
 | PICT | ✓ | - | - | - | - | - |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [이미지](/help/assets/dynamic-media/image-sets.md), [혼합 미디어](/help/assets/dynamic-media/mixed-media-sets.md), 및 [회전](/help/assets/dynamic-media/spin-sets.md) |
-| PSD   ‡ | ✓ | - | - | - | - | - |
+| PSD ‡ | ✓ | - | - | - | - | - |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [이미지](/help/assets/dynamic-media/image-sets.md), [혼합 미디어](/help/assets/dynamic-media/mixed-media-sets.md), 및 [회전](/help/assets/dynamic-media/spin-sets.md) |
 
 ‡ 병합된 이미지가 PSD 파일에서 추출됩니다. 에서 생성된 이미지입니다. [!DNL Adobe Photoshop] 및 가 PSD 파일에 포함됩니다. 설정에 따라 병합된 이미지가 실제 이미지가 될 수도 있고 그렇지 않을 수도 있습니다.
@@ -263,13 +263,13 @@ ht-degree: 10%
 
 **추가 참조**
 
-* [에셋 번역](translate-assets.md)
+* [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [에셋 검색](search-assets.md)
-* [연결된 에셋](use-assets-across-connected-assets-instances.md)
-* [에셋 보고서](asset-reports.md)
+* [자산 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [자산 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
-* [에셋 다운로드](download-assets-from-aem.md)
+* [자산 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
