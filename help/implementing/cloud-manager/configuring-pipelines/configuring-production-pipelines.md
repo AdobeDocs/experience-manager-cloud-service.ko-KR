@@ -3,9 +3,9 @@ title: 프로덕션 파이프라인 구성
 description: 코드를 빌드하고 프로덕션 환경에 배포하기 위해 프로덕션 파이프라인을 구성하는 방법을 알아봅니다.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 04c65018734f95e8245a6922d5a05c5486a4ffa4
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1422'
 ht-degree: 72%
 
 ---
@@ -123,18 +123,17 @@ ht-degree: 72%
 
 타깃팅된 배포는 AEM 애플리케이션의 선택한 부분에 대해서만 코드를 배포합니다. 이러한 배포에서는 다음을 선택할 수 있습니다. **포함** 다음 코드 유형 중 하나:
 
-* **[구성](#config)** - AEM 환경, 유지 관리 작업, CDN 규칙 등에 대한 설정을 구성합니다.
+* **구성** - AEM 환경에서 트래픽 필터 규칙에 대한 설정을 구성합니다.
    * 문서 보기 [WAF 규칙을 포함한 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 저장소 구성을 관리하여 올바로 배포하는 방법에 대해 알아봅니다.
-* **[프론트엔드 코드](#front-end-code)** - AEM 애플리케이션의 프런트 엔드에 대한 JavaScript 및 CSS를 구성합니다.
+   * 타깃팅된 배포 파이프라인을 실행할 때 [WAF 구성](/help/security/traffic-filter-rules-including-waf.md) 파이프라인에서 정의한 환경, 저장소 및 분기에 저장된 경우 배포됩니다.
+   * 언제든지 환경당 하나의 구성 파이프라인만 있을 수 있습니다.
+* **프론트엔드 코드** - AEM 애플리케이션의 프런트 엔드에 대한 JavaScript 및 CSS를 구성합니다.
    * 프론트엔드 파이프라인을 사용하면 프론트엔드 개발자에게 더 많은 독립성을 부여하고 개발 프로세스를 가속화할 수 있습니다.
    * 이 프로세스의 잠재력을 최대한 활용하기 위해 알아야 할 몇 가지 고려 사항 및 이 프로세스가 작동하는 방식에 대한 자세한 내용은 [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 문서를 참조하십시오.
-* **[웹 계층 구성](#web-tier-config)** - 웹 페이지를 저장, 처리 및 클라이언트에 전달하도록 Dispatcher 속성을 구성합니다.
-
->[!NOTE]
->
->* 선택한 환경에 대한 웹 계층 코드 파이프라인이 있는 경우, 이 선택이 비활성화됩니다.
->* 기존 전체 스택 파이프라인이 환경에 배포되어 있는 경우 동일한 환경에 대한 웹 계층 구성 파이프라인을 생성하면 전체 스택 파이프라인의 기존 웹 계층 구성이 무시됩니다.
-> * 언제든지 환경당 하나의 구성 파이프라인만 있을 수 있습니다.
+* **웹 계층 구성** - 웹 페이지를 저장, 처리 및 클라이언트에 전달하도록 Dispatcher 속성을 구성합니다.
+   * 문서 보기 [CI/CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 을 참조하십시오.
+   * 선택한 환경에 대한 웹 계층 코드 파이프라인이 있는 경우, 이 선택이 비활성화됩니다.
+   * 기존 전체 스택 파이프라인이 환경에 배포되어 있는 경우 동일한 환경에 대한 웹 계층 구성 파이프라인을 생성하면 전체 스택 파이프라인의 기존 웹 계층 구성이 무시됩니다.
 
 배포 유형을 선택하면 프로덕션 대상 배포 파이프라인 생성을 완료하는 단계가 동일합니다.
 
@@ -165,8 +164,6 @@ ht-degree: 72%
 1. **저장**&#x200B;을 클릭합니다.
 
 파이프라인이 저장되고 이제 **프로그램 개요** 페이지의 **파이프라인** 카드에서 [파이프라인을 관리](managing-pipelines.md)할 수 있습니다.
-
-타깃팅된 배포 파이프라인을 실행할 때 구성 [WAF 구성 등](/help/security/traffic-filter-rules-including-waf.md) 파이프라인에서 정의한 환경, 저장소 및 분기에 저장된 경우 배포됩니다.
 
 ## Dispatcher 패키지 건너뛰기 {#skip-dispatcher-packages}
 
