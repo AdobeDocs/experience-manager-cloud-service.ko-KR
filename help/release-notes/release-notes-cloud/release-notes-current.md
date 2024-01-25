@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 17903c6e44afd1742d21b7fc7dbe4d7c63fe8b6b
-workflow-type: ht
-source-wordcount: '828'
-ht-degree: 100%
+source-git-commit: fa106c2e3fec70971e2c54572199e35c24db0aa7
+workflow-type: tm+mt
+source-wordcount: '751'
+ht-degree: 63%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 기능 릴리스(2023.12.0)의 릴리스 일자는 2023년 12월 14일입니다. 다음 기능 릴리스(2024.1.0)는 2023년 1월 25일에 예정되어 있습니다.
+의 릴리스 날짜 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 기능 릴리스(2024.1.0)는 2024년 1월 25일입니다. 다음 기능 릴리스(2024.2.0)는 2024년 2월 29일에 예정되어 있습니다.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
@@ -44,45 +44,41 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### 얼리 어답터 프로그램 {#sites-early-adopter}
+### AEM Sites의 Extension Manager {#sites-extension-manager}
 
-**[실제 사용자 모니터링(RUM) 데이터 서비스](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**&#x200B;를 활용하여 AEM as a Cloud Service에 대한 클라이언트측 컬렉션을 활성화할 수 있습니다.
+**새로운 항목 탐색 [AEM Sites의 Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/)** UI 확장을 구성하여 AEM 설정을 개인화합니다.
 
-실제 사용자 모니터링(RUM) 데이터 서비스는 사용자 상호 작용을 보다 정확하게 반영하여 웹 사이트 참여에 대한 안정적인 측정을 보장합니다. 이를 통해 페이지 성능에 대한 고급 인사이트를 얻을 수 있습니다. 이는 Adobe가 관리하는 CDN 또는 Adobe가 관리하지 않는 CDN을 사용하는 고객 모두에게 유용합니다. 또한 Adobe가 관리하지 않는 CDN을 사용하는 고객의 경우 이제 자동화된 트래픽 보고를 활성화할 수 있으므로 트래픽 보고서를 Adobe와 공유할 필요가 없습니다.
+![AEM Sites의 Extension Manager](/help/assets/sites/extension-manager/homepage.png)
 
-이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소를 통해 프로덕션, 단계 및 개발 환경에 대한 도메인 이름과 함께 `aemcs-rum-adopter@adobe.com`으로 이메일을 보내 주십시오. 그러면 Adobe 제품 팀에서 실제 사용자 모니터링(RUM) 데이터 서비스를 활성화합니다.
+AEM Sites의 Extension Manager을 통해 개발자와 실무자는 AEM Sites의 기능을 향상시키기 위해 구축된 UI 확장에 액세스, 관리 및 맞춤화할 수 있습니다.
+Extension Manager을 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 
+* 인스턴스별로 확장을 활성화하거나 비활성화합니다.
+* 확장 매개 변수를 구성합니다.
+* 확장을 미리 보고 공유 가능한 미리 보기 링크를 생성합니다.
+* 대화형 데모를 통해 UI 확장성 기능 살펴보기
+* 자사 확장을 통해 Adobe의 실험 기능에 액세스합니다.
+
+UI 확장에 대한 피드백 및 새로운 사용 사례를 적극적으로 찾고 있습니다. 연결하려면 다음으로 전자 메일을 보내십시오. `uix@adobe.com`.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Assets 보기의 새로운 기능 {#assets-view-features}
+### 관리자 보기 프리릴리스 기능 {#admin-view-prerelease}
 
-**Adobe Firefly를 통해 생성형 AI 이미지 제작**
+**지원되는 모든 비디오 유형에 대한 렌디션 미리 보기**
 
-Adobe Firefly의 텍스트를 이미지로 변환 기능을 통한 검색 쿼리를 기반으로 새 이미지를 만듭니다(Adobe Firefly 라이선스 필요).
+이제 Experience Manager Assets은 처리 프로필 구성 없이도 기본적으로 지원되는 모든 비디오 유형의 미리보기 렌디션을 생성합니다
 
-![Assets Firefly 통합](/help/assets/assets/assets-firefly-integration.png)
+### 에셋 보기 {#assets-view-features}
 
-**유사 이미지 찾기**
+**스마트 태그 차단 목록**
 
-이제 Experience Manager Assets 저장소에서 이미지를 선택하고 유사한 이미지를 조회하여 원하는 콘텐츠를 손쉽게 찾을 수 있습니다.
+이제 Assets Essentials를 사용하면 자산을 저장소에 업로드할 때 자산에 스마트 태그로 추가하면 안 되는 단어로 구성된 차단 목록을 정의할 수 있습니다. 이 기능은 브랜드 규정 준수를 유지하는 데 도움이 되며 스마트 태그를 조정해야 하는 번거로움을 제거해 줍니다.
 
-<!--
+![차단 목록에 추가하다 스마트 태그](/help/assets/assets/block-tags.png)
 
-* **Smart tags blocklist**: Experience Manager Assets now enables you to define a list of blocked tags. These tags are automatically removed from the auto-generated smart tags when you upload assets to the repository. This capability performs tags governance and saves a lot of time as you can add a tag to the block list and AEM Assets automatically excludes it from the list of tags for any of the assets that are added to the repository.
-
-  ![storage usage insights](/help/assets/assets/block-tags.png)
-
-
-**Video Preview**: AEM Assets now generates preview renditions of all supported video formats by default, without the need to configure a processing profile.
-
--->
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
-
-### 의 새로운 기능[!DNL Experience Manager Forms] {#forms-features}
-
-* **[Microsoft® SharePoint 목록을 사용하여 적응형 양식 연결](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: AEM Forms는 양식 데이터를 SharePoint 목록에 직접 제출하는 OOTB 통합을 제공하므로, SharePoint의 목록 기능을 사용할 수 있습니다. Microsoft SharePoint List를 양식 데이터 모델의 데이터 소스로 구성하고 **양식 데이터 모델을 사용하여 제출** 제출 작업을 사용하여 적응형 양식을 SharePoint 목록과 연결할 수 있습니다.
 
 <!-- 
 
@@ -104,18 +100,13 @@ Adobe Firefly의 텍스트를 이미지로 변환 기능을 통한 검색 쿼리
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### CDN 구성 얼리 어답터 프로그램 {#cdn-config-early-adopter}
+### Dynatrace 지원 {#dynatrace}
 
-선택적으로 라이선스를 부여할 수 있는 WAF(웹 애플리케이션 방화벽) 규칙을 포함하는 최근 릴리스된 [트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 외에도 구성 파이프라인을 사용하여 다른 유형의 CDN 구성을 선언하고 배포할 수 있습니다. 다음을 포함한 사용 사례에 대해 의견을 들려 주시기 바랍니다.
-* 301/302 클라이언트측 리디렉션
-* 에지의 요청을 임의의 출처로 프록시 처리
-* URL 변환
-* 요청 또는 응답 헤더 설정 또는 수정
-* CDN이 AEM에 연결할 수 없는 경우의 사용자 정의 오류 페이지
-* 사용자 이름/암호로 인증
-* 기타 유용한 CDN 구성
+Dynatrace 고객은 AEM 사용을 모니터링할 수 있습니다. [읽기 방법](/help/implementing/cloud-manager/dynatrace.md) 애플리케이션 성능 모니터링을 위해 Dynatrace 환경과의 연결을 요청합니다. 모든 고객이 사용할 수 있는 New Relic APM은 Dynatrace가 활성화된 경우 데이터 수집을 중단합니다.
 
-공식 이메일 ID에서 **aemcs-cdn-config-adopter@adobe.com**&#x200B;으로 이메일을 보내 피드백을 알려 주십시오.
+### 사이트 테마 및 사이트 템플릿을 사용하는 프론트엔드 코드에 대한 RDE 지원: 얼리 어답터 프로그램 {#rde-frontend-early-adopter}
+
+[신속한 개발 환경(RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) 이제 다음을 기반으로 프론트엔드 코드 지원 [사이트 테마](/help/sites-cloud/administering/site-creation/site-themes.md) 및 [사이트 템플릿](/help/sites-cloud/administering/site-creation/site-templates.md), 얼리 어답터용 RDE를 사용하면 이 작업은 RDE가 아닌 명령줄 지시문을 사용하여 수행됩니다. [프론트엔드 파이프라인](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). 에게 문의하십시오. **aemcs-rde-support@adobe.com** 사용해 보고 피드백을 제공해 주십시오.
 
 ## Cloud Manager {#cloud-manager}
 

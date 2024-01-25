@@ -3,10 +3,10 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud Service에서 Headless 콘텐츠 게재를 위해 콘텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 055d510f8bd3a227c2c51d7f0dea561f06f9b4fd
+source-git-commit: fd0f0fdfc0aaf02d631b9bf909fcb1e1431f5401
 workflow-type: tm+mt
-source-wordcount: '4924'
-ht-degree: 92%
+source-wordcount: '4994'
+ht-degree: 89%
 
 ---
 
@@ -715,7 +715,7 @@ query {
 
 웹에 최적화된 이미지 게재를 통해 Graphql 쿼리를 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 
-* AEM Assets 이미지에 대한 URL 요청
+* DAM 에셋 이미지에 URL 요청( 참조: **콘텐츠 참조**)
 
 * 이미지의 특정 렌디션이 자동으로 생성되고 반환되도록 쿼리와 함께 매개변수 전달
 
@@ -735,9 +735,19 @@ AEM을 사용해 다음을 할 수 있습니다.
 
 GraphQL의 솔루션으로 다음과 같은 작업을 수행할 수 있습니다.
 
-* `ImageRef` 참조에 `_dynamicUrl` 사용
+* URL 요청: `_dynamicUrl` 다음에 있음 `ImageRef` 참조
 
-* 필터가 정의된 목록 헤더에 `_assetTransform` 추가
+* 매개 변수 전달: 추가 `_assetTransform` 필터가 정의된 목록 헤더로
+
+<!-- 
+>[!NOTE]
+>
+>A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
+>* `_dynamicUrl` : a DAM asset
+>* `_dmS7Url` : a Dynamic Media asset
+> 
+>If the image referenced is a DAM asset then the value for `_dmS7Url` will be `null`. See [Dynamic Media asset delivery by URL in GraphQL queries](#dynamic-media-asset-delivery-by-url).
+-->
 
 ### 변환 요청의 구조 {#structure-transformation-request}
 
@@ -902,7 +912,7 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
      >
      >후행 `;`은 매개변수 목록을 완전히 종료하려면 필수입니다.
 
-### 이미지 게재의 제한 사항 {#image-delivery-limitations}
+### 웹에 최적화된 이미지 제공의 제한 사항 {#web-optimized-image-delivery-limitations}
 
 다음과 같은 제한 사항이 있습니다.
 
@@ -912,6 +922,58 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 
    * 작성자에 대한 캐싱 없음
    * 게시 시 캐싱 - 최대 수명 10분 (클라이언트에서 변경할 수 없음)
+
+<!--
+## Dynamic Media asset delivery by URL in GraphQL queries{#dynamic-media-asset-delivery-by-url}
+
+GraphQL for AEM Content Fragments allows you to request a URL to an AEM Dynamic Media (Scene7) asset (referenced by a **Content Reference**).
+
+The solution in GraphQL means you can:
+
+* use `_dmS7Url` on the `ImageRef` reference
+
+>[!NOTE]
+>
+>For this you need to have a [Dynamic Media Cloud Configuration](/help/assets/dynamic-media/config-dm.md). 
+>
+>This adds the `dam:scene7File` and `dam:scene7Domain` attributes on the asset's metadata when it is created.
+
+>[!NOTE]
+>
+>A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
+>
+>* `_dmS7Url` : a Dynamic Media asset
+>* `_dynamicUrl` : a DAM asset
+> 
+>If the image referenced is a Dynamic Media asset then the value for `_dynamicURL` will be `null`. See [web-optimized image delivery in GraphQL queries](#web-optimized-image-delivery-in-graphql-queries).
+
+### Sample query for Dynamic Media asset delivery by URL {#sample-query-dynamic-media-asset-delivery-by-url}
+
+The following is a sample query:
+* for multiple Content Fragments of type `team` and `person`
+
+```graphql
+query allTeams {
+  teamList {
+    items {
+      _path
+      title
+      teamMembers {
+        fullName
+        profilePicture {
+          __typename
+          ... on ImageRef{
+            _dmS7Url
+            height
+            width
+          }
+        }
+      }
+    }
+  }
+} 
+```
+-->
 
 ## AEM용 GraphQL - 확장 요약 {#graphql-extensions}
 
@@ -985,19 +1047,28 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
 
          * [샘플 쿼리 - 이름이 붙은 변형이 있는 모든 도시](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)를 참조하십시오
 
-   * [이미지 게재](#image-delivery):
+   * 이미지 게재용:
 
-      * `ImageRef`: `_dynamicUrl` 참조
+      * `_authorURL`: AEM 작성자의 이미지 에셋에 대한 전체 URL
+      * `_publishURL`: AEM Publish의 이미지 자산에 대한 전체 URL
 
-      * `_assetTransform`: 필터가 정의된 목록 헤더
+      * 대상 [웹에 최적화된 이미지 제공](#web-optimized-image-delivery-in-graphql-queries) (DAM 자산의 경우):
 
-      * 다음을 참조하십시오.
+         * `_dynamicUrl`: 웹에 최적화된 DAM 에셋의 전체 URL `ImageRef` 참조
 
-         * [전체 매개변수가 포함된 이미지 게재를 위한 샘플 쿼리](#image-delivery-full-parameters)
+           >[!NOTE]
+           >
+           >`_dynamicUrl` 는 웹에 최적화된 DAM 에셋에 사용할 기본 URL이며, 를 사용해야 합니다. `_path`, `_authorUrl`, 및 `_publishUrl` 가능한 한.
 
-         * [지정된 단일 매개변수가 있는 이미지 게재를 위한 샘플 쿼리](#image-delivery-single-specified-parameter)
+         * `_assetTransform`: 필터가 정의된 목록 헤더의 매개 변수를 전달합니다
 
-   * `_tags`: 태그가 포함된 콘텐츠 조각 ID 또는 변형 표시, `cq:tags` 식별자 배열,
+         * 다음을 참조하십시오.
+
+            * [전체 매개 변수를 사용하여 웹에 최적화된 이미지 제공을 위한 샘플 쿼리](#web-optimized-image-delivery-full-parameters)
+
+            * [지정된 단일 매개 변수를 사용하여 웹에 최적화된 이미지 제공을 위한 샘플 쿼리](#web-optimized-image-delivery-single-query-variable)
+
+   * `_tags`: 태그가 포함된 콘텐츠 조각 또는 변형의 ID를 표시합니다. 이 배열은 `cq:tags` 식별자.
 
       * [샘플 쿼리 - City Break로 태그된 모든 도시의 이름](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks) 참조
       * [특정 태그가 첨부된 주어진 모델의 콘텐츠 조각 변형에 대한 샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag) 참조
@@ -1028,6 +1099,13 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
 * 중첩된 조각 쿼리 시 대체:
 
    * 주어진 변형이 중첩된 조각에 존재하지 않으면&#x200B;**마스터** 변형이 반환됩니다.
+
+<!-- between dynamicURL and tags -->
+<!--
+    * `_dmS7Url`: on the `ImageRef` reference for the delivery of the URL to a [Dynamic Media asset](#dynamic-media-asset-delivery-by-url)
+
+      * See [Sample query for Dynamic Media asset delivery by URL](#sample-query-dynamic-media-asset-delivery-by-url)
+-->
 
 ## 외부 웹 사이트에서 GraphQL 엔드포인트 쿼리 {#query-graphql-endpoint-from-external-website}
 

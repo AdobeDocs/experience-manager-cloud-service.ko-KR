@@ -1,17 +1,17 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.11.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.11.0 릴리스 정보입니다.'
-source-git-commit: c33874869bccae1e9837b30827a655e70636dd56
+exl-id: 19cff082-80aa-445c-9462-5e319b7fe0e9
+source-git-commit: 07a799cf374bbd1ce0fe5d85433bf12d1d5ee648
 workflow-type: tm+mt
 source-wordcount: '1286'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
-
 # [!DNL Adobe Experience Manager] as a Cloud Service 2023.11.0 릴리스 정보 {#release-notes}
 
-다음 섹션에서는 [!DNL Experience Manager] as a Cloud Service의 최신 버전 기능 릴리스 정보에 대해 간략히 소개합니다.
+다음 섹션에서는 [!DNL Experience Manager] as a Cloud Service의 2023.11.0 버전 기능 릴리스 정보에 대해 간략히 소개합니다.
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ ht-degree: 97%
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### 자산 보기의 새로운 기능 {#assets-view-features}
+### Assets 보기의 새로운 기능 {#assets-view-features}
 
 * **AEM Assets에 임베드된 Adobe Express 편집기**: 이제 Express 액세스 권한이 있는 사용자는 AEM Assets 내에서 직접 사용 가능한 Adobe Express 및 Adobe Firefly의 통합 이미지 편집 및 제작 도구를 사용하여 콘텐츠 재사용을 개선하고 콘텐츠 속도를 높일 수 있습니다.
 
@@ -78,7 +78,7 @@ ht-degree: 97%
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### 의 새로운 기능 [!DNL Experience Manager Forms] {#forms-features}
+### 의 새로운 기능[!DNL Experience Manager Forms] {#forms-features}
 
 * **[확인란 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: 이제 핵심 구성 요소를 기반으로 하는 적응형 양식에 확인란 구성 요소를 포함할 수 있습니다. 이를 통해 사용자는 특정 옵션을 선택하거나 선택 취소하는 이진 선택을 할 수 있습니다. 확인란은 일반적으로 클릭하거나 탭하여 두 가지 상태(선택됨 및 선택 취소됨) 사이를 전환할 수 있는 작은 상자 형태입니다. 확인란은 예/아니요 또는 참/거짓 선택을 표시하는 데 사용되는 일반적인 양식 요소입니다.
 

@@ -2,10 +2,10 @@
 title: 신속한 개발 환경
 description: 클라우드 환경에서 신속한 개발 반복을 위해 빠른 개발 환경을 사용하는 방법에 대해 알아봅니다.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 43f76a3f1e0bb52ca9d44982b2bb2b37064edf9f
 workflow-type: tm+mt
-source-wordcount: '3304'
-ht-degree: 5%
+source-wordcount: '3414'
+ht-degree: 4%
 
 ---
 
@@ -66,7 +66,7 @@ Cloud Manager를 사용하여 프로그램에 대한 RDE를 생성할 수 있도
 
 1. **저장**&#x200B;을 클릭하여 지정된 환경을 추가합니다.
 
-이제 **개요** 화면의 **환경** 카드에 새 환경이 표시됩니다.
+다음 **개요** 이제 화면에 새 환경이 **환경** 카드.
 
 생성 시 RDE는 가장 최근에 사용할 수 있는 AEM 버전으로 설정됩니다. Cloud Manager를 사용하여 수행할 수도 있는 RDE 재설정은 RDE를 순환시키고 가장 최근에 사용할 수 있는 AEM 버전으로 설정합니다.
 
@@ -310,6 +310,56 @@ The analyser found the following errors for publish :
 
 위의 코드 샘플은 번들이 해결되지 않는 경우의 동작을 보여 줍니다. 이 경우 &quot;스테이징됨&quot;이며 다른 코드 설치를 통해 요구 사항(이 경우 누락된 가져오기)이 충족되는 경우에만 설치됩니다.
 
+<u>사이트 테마 및 사이트 템플릿을 기반으로 프론트엔드 코드 배포</u>
+
+>[!NOTE]
+>
+>이 기능은 아직 GA는 아니지만 얼리어답터가 사용할 수 있습니다. 에게 문의하십시오. **aemcs-rde-support@adobe.com** 사용해 보고 피드백을 제공해 주십시오.
+
+RDE는 다음을 기반으로 프론트엔드 코드 지원 [사이트 테마](/help/sites-cloud/administering/site-creation/site-themes.md) 및 [사이트 템플릿](/help/sites-cloud/administering/site-creation/site-templates.md). RDE에서는 Cloud Manager가 아닌 명령줄 지시문을 사용하여 프론트엔드 패키지를 배포합니다 [프론트엔드 파이프라인](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) 다른 환경 유형에 사용됩니다.
+
+평소대로 npm을 사용하여 프론트엔드 패키지를 빌드합니다.
+
+`npm run build`
+
+다음을 생성합니다. `dist/` 프론트엔드 패키지 폴더에 `package.json` 파일 및 `dist` 폴더:
+
+```
+ls ./path-to-frontend-pkg-folder/
+...
+dist
+package.json
+```
+이제 프론트엔드 패키지 폴더를 가리키면 프론트엔드 패키지를 RDE에 배포할 준비가 되었습니다.
+
+```
+aio aem:rde:install -t frontend ./path-to-frontend-pkg-folder/
+...
+#1: deploy completed for frontend frontend-pipeline.zip on author,publish - done by ... at 2024-01-18T15:33:22.898Z
+Logs:
+> Deployed artifact wknd-1.0.0-1705592008-26e7ec1a
+> with workspace hash 692021864642a20d6d298044a927d66c0d9cf2adf42d4cca0c800a378ac3f8d3
+```
+
+또는 를 압축할 수 있습니다. `package.json` 파일 및 `dist` 해당 zip 파일을 폴더에 저장하고 배포합니다.
+
+`zip -r frontend-pkg.zip ./path-to-frontend-pkg-folder/dist ./path-to-frontend-pkg-folder/package.json`
+
+```
+aio aem:rde:install -t frontend frontend-pkg.zip
+...
+#1: deploy completed for frontend frontend-pipeline.zip on author,publish - done by ... at 2024-01-18T15:33:22.898Z
+Logs:
+> Deployed artifact wknd-1.0.0-1705592008-26e7ec1a
+> with workspace hash 692021864642a20d6d298044a927d66c0d9cf2adf42d4cca0c800a378ac3f8d3
+```
+
+>[!NOTE]
+>
+>프론트엔드 패키지의 파일 이름은 다음 명명 규칙을 준수해야 합니다.
+> * &quot;dist&quot; 폴더, npm 빌드 출력 패키지 폴더
+> * npm 종속성 패키지용 &quot;package.json&quot; 파일
+
 ### RDE 상태 확인 {#checking-rde-status}
 
 RDE CLI를 사용하여 RDE 플러그인을 통해 배포된 내용과 같이 환경을 배포할 준비가 되었는지 확인할 수 있습니다.
@@ -470,8 +520,9 @@ RDE는 여러 가지 면에서 클라우드 개발 환경과 유사하지만 코
 또한 다음 고려 사항을 참고하십시오.
 
 * RDE에는 미리보기 계층이 포함되지 않음
-* RDE는 현재 Cloud Manager 프론트엔드 파이프라인을 사용하여 배포된 프론트엔드 코드를 보고 디버깅할 수 없습니다.
 * RDE는 현재 프리릴리스 채널을 지원하지 않습니다.
+* 를 기반으로 프론트엔드 코드 보기 및 디버깅에 대한 RDE 지원 [사이트 테마](/help/sites-cloud/administering/site-creation/site-themes.md) 및 [사이트 템플릿](/help/sites-cloud/administering/site-creation/site-templates.md) 배포된 는 아직 GA 준비가 되지 않았으며 얼리어답터에서 사용할 수 있습니다. 에게 문의하십시오. **aemcs-rde-support@adobe.com** 사용해 보고 피드백을 제공해 주십시오.
+
 
 
 ## 몇 개의 RDE가 필요합니까? {#how-many-rds-do-i-need}

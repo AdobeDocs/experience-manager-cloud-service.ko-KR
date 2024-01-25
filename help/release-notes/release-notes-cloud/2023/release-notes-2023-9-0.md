@@ -2,17 +2,17 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.9.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.9.0 릴리스 정보입니다.'
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 3bec7e0387a5e04a7748a3b7341c17a993c6feb9
 workflow-type: tm+mt
-source-wordcount: '1441'
-ht-degree: 95%
+source-wordcount: '1440'
+ht-degree: 98%
 
 ---
 
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2023.9.0 릴리스 정보 {#release-notes}
 
-다음 섹션에서는 [!DNL Experience Manager] as a Cloud Service의 최신 버전 기능 릴리스 정보에 대해 간략히 소개합니다.
+다음 섹션에서는 [!DNL Experience Manager] as a Cloud Service의 2023.9.0 버전 기능 릴리스 정보에 대해 간략히 소개합니다.
 
 >[!NOTE]
 >
@@ -22,7 +22,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
 
 ## 릴리스 일자 {#release-date}
 
@@ -85,7 +85,7 @@ Edge Delivery는 고객 상호 작용 시점에서 측정 가능한 비즈니스
 * **[핵심 구성 요소 기반 적응형 양식의 양식 조각](/help/forms/adaptive-form-fragments-core-components.md)**: 양식 조각으로 양식 작성 경험을 높이면서 중복을 제거하고, 디지털 인벤토리를 최적화하고, 공동 작업을 개선합니다. 이러한 재사용 가능한 구성 요소는 여러 양식에 원활하게 통합되어 일관성 있게 전문가 수준의 양식 작성을 간소화합니다. 양식 조각의 “한번 변경하여 전체 반영” 기능을 통해 재사용성, 표준화와 브랜드 일관성을 보장합니다. 한 위치에서의 업데이트가 이러한 조각을 활용하는 모든 양식에 자동으로 전파되므로 유지 관리 가능성과 효율성이 개선됩니다.
 
 * **[개선된 Adobe Sign 워크플로 단계](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**: Adobe Sign 워크플로 단계는 다음을 포함하도록 개선되었습니다.
-   * **Adobe Sign의 정부 ID 기반 인증**: Adobe Acrobat Sign의 정부 ID 기반 인증은 사용자가 정부에서 발급한 ID(운전면허증, 주민등록증, 여권)를 사용하여 자신의 ID를 인증할 수 있도록 추가 확인 계층을 제공합니다. 이 향상된 기능은 신뢰할 수 있는 ID 문서를 사용함으로써 서명 프로세스에 대한 신뢰도가 한층 높아져 강화된 보안, 규정 준수 및 사용자 유효성 검사가 필요한 시나리오에 이상적입니다.
+   * **Adobe Sign의 정부 ID 기반 인증**: Adobe Acrobat Sign의 정부 ID 기반 인증은 사용자가 정부에서 발급한 ID(운전면허증, 주민등록증, 여권)를 사용하여 자신의 ID를 인증할 수 있도록 추가 확인 계층을 제공합니다. 신뢰할 수 있는 식별 문서를 사용하여 이 개선된 기능은 서명 프로세스에 신뢰도를 추가하여 보안, 규정 준수 및 사용자 유효성 검사 강화에 필요한 시나리오에 적합합니다.
 
    * **Adobe Sign 문서의 감사 추적**: 감사 추적 기능을 사용하여 Adobe Sign 문서의 수명 주기에 대한 세부 인사이트를 얻을 수 있습니다. 감사 추적을 사용하여 이제 문서와 관련된 모든 작업과 상호 작용에 대한 포괄적인 기록을 유지 관리할 수 있습니다. 여기에는 각 이벤트의 타임스탬프와 함께 문서를 조회하고, 편집하거나 서명한 사람 등과 같은 세부 정보가 포함됩니다. 이러한 개선된 기능은 규정 준수를 유지하고, 분쟁을 해결하고, 디지털 계약의 무결성을 보장하는 데 중요합니다.
 

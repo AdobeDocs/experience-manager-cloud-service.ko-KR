@@ -1,17 +1,17 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.10.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.10.0 릴리스 정보입니다.'
-source-git-commit: d79335bde72a2517939e9bfc07a75ab7a8b6b0b9
+exl-id: 81a6cbd2-7101-429b-8572-2650c5bea963
+source-git-commit: 811a8f4d83a1034737c23b1707a24b52742fef55
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 95%
+source-wordcount: '918'
+ht-degree: 93%
 
 ---
 
-
 # [!DNL Adobe Experience Manager] as a Cloud Service 2023.10.0 릴리스 정보 {#release-notes}
 
-다음 섹션에서는 [!DNL Experience Manager] as a Cloud Service의 최신 버전 기능 릴리스 정보에 대해 간략히 소개합니다.
+다음 섹션에서는 [!DNL Experience Manager] as a Cloud Service의 2023.10.0 버전 기능 릴리스 정보에 대해 간략히 소개합니다.
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
 
 ## 릴리스 일자 {#release-date}
 
@@ -55,7 +55,7 @@ ht-degree: 95%
 
   ![폴더에 메타데이터 양식 할당](/help/assets/assets/bulk-import-source-details-onedrive.png)
 
-* **라이브러리에 대한 조직 간 권한 지원**: 이제 Experience Manager Assets를 사용하면 다른 IMS 조직의 Creative Cloud Libraries에 대한 액세스를 구성할 수 있습니다. Creative Cloud와 Experience Manager 간의 최신 제품 간 워크플로에 더 쉽게 액세스할 수 있으며 크리에이티브에 소요되는 시간과 노력이 줄어듭니다.
+* **라이브러리에 대한 교차 조직 권한 부여 지원**: 이제 Experience Manager Assets을 사용하여 다른 IMS 조직의 Creative Cloud 라이브러리에 대한 액세스를 구성할 수 있습니다. Creative Cloud와 Experience Manager 간의 최신 제품 간 워크플로에 더 쉽게 액세스할 수 있으며 크리에이티브에 소요되는 시간과 노력이 줄어듭니다.
 
 ### [!DNL Experience Manager Assets]에서 사용할 수 있는 프리릴리스 기능 {#prerelease-features-assets}
 
