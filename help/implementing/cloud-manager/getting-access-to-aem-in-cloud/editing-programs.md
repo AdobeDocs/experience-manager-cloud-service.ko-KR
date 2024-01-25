@@ -2,10 +2,10 @@
 title: 프로그램 관리 및 편집
 description: 프로덕션 및 샌드박스 프로그램을 만든 후 옵션을 조정하도록 편집하는 방법을 알아봅니다.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 0d60c19638707262dab7f290f84fa873b694bc22
+source-git-commit: 2dfae31e32d375c82c4f690624e48f7f09feb4df
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 43%
+source-wordcount: '773'
+ht-degree: 32%
 
 ---
 
@@ -99,38 +99,21 @@ ht-degree: 43%
 
    ![프로그램 편집 옵션](assets/edit-program-overview.png)
 
-1. **프로그램 편집** 페이지가 열립니다. **일반** 탭에서 프로그램 이름과 설명을 편집합니다.
-
-   * 프로그램에 대해 솔루션을 하나 이상 선택해야 합니다.
+1. 다음 **프로그램 편집** 에 대한 페이지가 열립니다. **일반** 탭.
 
    ![일반 탭](assets/edit-program-prod1.png)
 
-1. **솔루션 및 추가 기능** 탭에서 프로그램에 대한 솔루션을 수정합니다.
-
-   ![솔루션 선택](assets/edit-prg.png)
-
-1. 솔루션 이름 앞의 V자형 화살표를 클릭하면 **Sites**&#x200B;에서 **Commerce** 추가 기능 옵션을 선택하는 것과 같은 선택적 추가 기능이 표시됩니다.
-
-   ![추가 기능 편집](assets/edit-program-add-on.png)
-
-1. **Go-Live 설정** 탭에서 프로그램의 계획된 Go-Live 날짜를 수정합니다.
-
-   ![Go-Live 설정 편집](assets/edit-program-go-live.png)
-
-   * 이 날짜는 정보용으로만 제공됩니다. 프로그램 개요 페이지에서 Go Live 위젯을 트리거합니다. 결국 Adobe Experience Manager(AEM) as a Cloud Service 모범 사례 문서에 대한 제품 내 링크를 제공함으로써 여정에 맞춰 성공적인 Go Live 경험을 제공합니다.
-   * 이 탭은 샌드박스 프로그램에 사용할 수 없습니다.
-
-1. 프로그램에 필요한 권한을 사용할 수 있는 경우 **보안** 탭에는 프로그램의 보안 옵션을 수정할 수 있는 위치가 표시됩니다.
-
-   ![보안 설정 편집](assets/edit-program-security.png)
-
-   * 다음 이후 HIPAA를 활성화하거나 비활성화할 수 없음 [프로그램 제작.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-      * Adobe의 HIPAA 준비 솔루션 구현에 대해 [자세히 알아보십시오](https://www.adobe.com/go/hipaa-ready_kr).
-   * 활성화되면 를 설정하여 WAF-DDOS 보호를 구성할 수 있습니다. [비프로덕션 파이프라인.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+1. 프로그램 편집에 사용할 수 있는 옵션은 프로그램을 만들 때와 동일합니다.
+   * 문서를 참조하십시오. [프로덕션 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) 및 [샌드박스 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) 개별 옵션에 대한 자세한 내용을 보려면 를 참조하십시오.
+   * [추가 옵션](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) 조직의 권한에 따라 프로덕션 프로그램에서 사용할 수 있습니다.
 
 1. **업데이트**&#x200B;를 클릭하여 프로그램에 대한 변경 사항을 저장합니다.
 
-솔루션 또는 추가 기능 추가 또는 제거를 포함하여 프로그램을 편집할 때마다 이러한 변경 사항은 다음 배포 이후에 적용됩니다.
+프로그램에 대한 변경 사항이 저장됩니다.
+
+>[!NOTE]
+>
+>솔루션 또는 추가 기능 추가 또는 제거를 포함하여 프로그램을 편집할 때마다 이러한 변경 사항은 다음 배포 이후에 적용됩니다.
 
 ## 샌드박스 프로그램 삭제 {#delete-sandbox-program}
 
