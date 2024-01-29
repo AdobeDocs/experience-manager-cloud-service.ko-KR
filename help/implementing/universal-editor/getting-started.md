@@ -2,10 +2,10 @@
 title: AEM에서 Universal Editor 시작하기
 description: Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 알아봅니다.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 453cbaeabd28223cac5e732a551aa71f5a425839
+source-git-commit: f9d584d7b117c24224079f581802f5f126890304
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 71%
+source-wordcount: '871'
+ht-degree: 73%
 
 ---
 
@@ -104,8 +104,6 @@ X-Frame-Options: SAMEORIGIN은 iframe 내에서 AEM 페이지 렌더링을 방�
 ## 페이지 계측 {#instrument-page}
 
 Universal Editor 서비스에는 편집 중인 앱의 콘텐츠에 대한 올바른 백엔드 시스템을 식별하고 활용하기 위해 [균일 리소스 이름(URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name)이 필요합니다. 따라서 콘텐츠를 다시 콘텐츠 리소스에 매핑하려면 URN 스키마가 필요합니다.
-
-페이지에 추가된 계측 속성은 대부분 다음으로 구성됩니다 [HTML 마이크로데이터,](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata) HTML을 보다 의미 있게 만들고, HTML 문서를 인덱싱할 수 있도록 하는 데 사용할 수 있는 업계 표준입니다.
 
 ### 연결 만들기 {#connections}
 
