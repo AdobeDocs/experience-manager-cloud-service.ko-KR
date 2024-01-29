@@ -3,9 +3,9 @@ title: ' [!DNL Workfront for Experience Manager enhanced connector] 릴리스 �
 description: ' [!DNL Workfront for Experience Manager enhanced connector] 릴리스 정보'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: b1c5df329e45128704ae82f49673c6a755a61a73
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1573'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -15,27 +15,27 @@ ht-degree: 89%
 
 ## 릴리스 일자 {#release-date}
 
-의 최신 버전 1.9.16에 대한 릴리스 날짜 [!DNL Workfront for Experience Manager enhanced connector] 는 2024년 1월 19일입니다.
+[!DNL Workfront for Experience Manager enhanced connector] 최신 버전 1.9.16의 릴리스 일자는 2024년 1월 19일입니다
 
 ## 릴리스 하이라이트 {#release-highlights}
 
 최신 버전의 [!DNL Workfront for Experience Manager enhanced connector]에는 다음과 같은 버그 수정 사항이 포함됩니다.
 
-* 다음 [!DNL Workfront] 에서 구성 [!DNL CRX DE] 현재 은(는) 을(를) 저장하지 않습니다. `project ID`읽기 전용 권한을 적용할 때 오류가 발생합니다. 방법 자세히 알아보기 [권한 구성](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders).
+* 현재 [!DNL CRX DE]의 [!DNL Workfront] 구성은 `project ID`를 저장하지 않으므로, 읽기 전용 권한을 적용할 때 오류가 발생합니다. [권한 구성](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders) 방법에 대해 자세히 알아보십시오.
 
-* 기본 제공 색인 정의에 사용자 지정 속성을 추가하는 방법에 대한 공개 설명서가 없습니다. 자세히 알아보기 [사용자 지정 속성 추가](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#metadata-schema-mapping).
+* 기본 제공 색인 정의에 사용자 정의 속성을 추가하는 방법에 대한 공개 설명서가 없습니다. [사용자 정의 속성 추가](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#metadata-schema-mapping)에 대해 자세히 알아보십시오.
 
-* 향상된 커넥터에서 연결 구성을 삭제하면 이벤트 구독 및 기타 저장된 구성에 큰 영향을 주어 이전 URL을 가리킵니다.
+* 강화 커넥터에서 연결 구성을 삭제하면 이벤트 구독 및 기타 저장된 구성에 큰 영향을 미치며, 이전 URL을 가리키게 됩니다.
 
-* Forms 추가 기능 패키지를 설치해도 **[!UICONTROL 라우터 전환]**, 실패로 이어짐 [!DNL WFEC AMS environment Toggle] 기능.
+* Forms 추가 기능 패키지를 설치해도 **[!UICONTROL 토글 라우터]**&#x200B;가 설치되지 않아 [!DNL WFEC AMS environment Toggle] 기능이 실패하게 됩니다.
 
-* EWC 설정에서 이벤트 구독을 활성화하면 다음과 같이 API 호출 오류가 반복됩니다. `HTTP 400` 설정할 때 오류 발생 [!DNL Workfront] 처음 커넥터를 개선했습니다.
+* EWC 설정에서 이벤트 구독을 활성화하면 처음 [!DNL Workfront] 강화 커넥터를 설정할 때 `HTTP 400` 오류와 함께 API 호출이 반복적으로 실패합니다.
 
-* Workfront에서 연결된 폴더 자산에 대한 댓글을 삭제하면 AEM에서 연결된 폴더 경로를 찾을 수 없습니다.
+* Workfront에서 연결된 폴더 자산에 대한 댓글을 삭제하면 AEM에서 연결된 폴더 경로를 찾지 못합니다.
 
-* AEM에서 대용량 파일 자산에 대한 지원이 충분하지 않으면 4바이트 크기 문제가 발생합니다.
+* AEM에서 대용량 파일 자산에 대한 지원이 부족하면 4바이트 크기 문제가 발생합니다.
 
-* 연결된 폴더, 문서 업데이트 및 메모 업데이트의 중요 흐름에 대한 요청 처리 시간이 없습니다.
+* 연결된 폴더, 문서 업데이트 및 메모 업데이트의 중요한 흐름에 대한 요청 시간 처리가 없습니다.
 
 >[!NOTE]
 >

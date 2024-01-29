@@ -3,9 +3,9 @@ title: 더 이상 사용되지 않는/제거된 기능
 description: ' [!DNL Adobe Experience Manager]  [!DNL Cloud Service]에서 더 이상 사용되지 않으며 제거된 기능에 관련된 릴리스 정보입니다.'
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 source-git-commit: cb2c883fbadc5347dbe5fc50337abc41d4f5cec3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2068'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -36,12 +36,12 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 | ------------ | ------------------ | ----------- |
 | [!DNL Sites] | **소셜 미디어 상태**&#x200B;에 대한 경험 조각 속성. | 해당 기능은 곧 제거됩니다. |
 | [!DNL Sites] | 템플릿 기반 간단 콘텐츠 조각. | 현재는 [모델 기반 구조 콘텐츠 조각](/help/assets/content-fragments/content-fragments-models.md)입니다. |
-| [!DNL Assets] | `DAM Asset Update` 수집된 이미지를 처리하는 워크플로입니다. | 이제 에셋 수집은 [에셋 마이크로서비스](/help/assets/asset-microservices-overview.md)를 사용합니다. |
+| [!DNL Assets] | `DAM Asset Update` 수집된 이미지를 처리하는 워크플로입니다. | 이제 자산 수집은 [자산 마이크로서비스](/help/assets/asset-microservices-overview.md)를 사용합니다. |
 | [!DNL Assets] | 자산을 [!DNL Experience Manager]에 직접 업로드합니다. [지원 중단된 자산 업로드 API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api)를 참조하십시오. | [다이렉트 이진 업로드](/help/assets/add-assets.md)를 사용합니다. 기술적인 세부 정보는 [직접 업로드 API](/help/assets/developer-reference-material-apis.md#upload-binary)를 참조하십시오. |
-| [!DNL Assets] | [!DNL ImageMagick]과 같은 호출 명령줄 도구를 포함하여 `DAM Asset Update` 워크플로의 [일부 워크플로 단계](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)는 지원되지 않습니다. | [에셋 마이크로서비스](/help/assets/asset-microservices-overview.md)는 많은 워크플로에 대한 대체 기능을 제공합니다. 사용자 정의 처리에는 [사후 처리 워크플로](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)를 사용하십시오. |
-| [!DNL Assets] | 비디오의 FFmpeg 코드 변환. | FFmpeg 썸네일 생성의 경우 [에셋 마이크로서비스](/help/assets/asset-microservices-overview.md)를 사용합니다. FFmpeg 코드 변환의 경우 [Dynamic Media](/help/assets/manage-video-assets.md)를 사용합니다. |
+| [!DNL Assets] | [!DNL ImageMagick]과 같은 호출 명령줄 도구를 포함하여 `DAM Asset Update` 워크플로의 [일부 워크플로 단계](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)는 지원되지 않습니다. | [자산 마이크로서비스](/help/assets/asset-microservices-overview.md)는 많은 워크플로에 대한 대체 기능을 제공합니다. 사용자 정의 처리에는 [사후 처리 워크플로](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)를 사용하십시오. |
+| [!DNL Assets] | 비디오의 FFmpeg 코드 변환. | FFmpeg 썸네일 생성의 경우 [자산 마이크로서비스](/help/assets/asset-microservices-overview.md)를 사용합니다. FFmpeg 코드 변환의 경우 [Dynamic Media](/help/assets/manage-video-assets.md)를 사용합니다. |
 | [!DNL Foundation] | 복제 에이전트의 “배치” 탭 아래에 있는 트리 복제 UI(2021년 9월 30일 이후 제거) | [게시 관리](/help/operations/replication.md#manage-publication) 또는 [콘텐츠 트리 게시 워크플로](/help/operations/replication.md#publish-content-tree-workflow) 접근 방식 |
-| [!DNL Foundation] | 복제 에이전트 관리 화면의 배포 탭과 복제 API를 사용하면 10MB가 넘는 콘텐츠 패키지를 복제할 수 없습니다. 대신 다음 중 하나를 사용하십시오. [게시 관리](/help/operations/replication.md#manage-publication) 또는 [콘텐츠 트리 워크플로 게시](/help/operations/replication.md#publish-content-tree-workflow) |
+| [!DNL Foundation] | 복제 에이전트 관리 화면의 배포 탭과 복제 API를 사용하면 10MB가 넘는 콘텐츠 패키지를 복제할 수 없습니다. 대신 [게시 관리](/help/operations/replication.md#manage-publication) 또는 [콘텐츠 트리 게시 워크플로](/help/operations/replication.md#publish-content-tree-workflow)를 사용하십시오. |
 
 ## 제거된 기능 {#removed-features}
 
@@ -59,34 +59,34 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 | [!DNL Foundation] | Apache Felix Http Whiteboard 지원 | OSGi Http Whiteboard | 2022년 3월 |
 | [!DNL Foundation] | com.adobe.granite.oauth.server 지원 | Adobe IMS 통합 | 2023년 3월 |
 
-## OSGi 구성 {#osgi-configuration}
+## OSGI 구성 {#osgi-configuration}
 
-아래 두 목록은 고객이 구성할 수 있는 사항을 설명하는 AEM as a Cloud Service OSGi 구성 표면을 반영합니다.
+아래 두 목록은 AEM as a Cloud Service OSGi 구성 표면을 반영하여, 고객이 구성할 수 있는 항목을 설명합니다.
 
-1. 고객 코드로 구성하지 않아야 하는 OSGi 구성 목록
-1. 속성을 구성할 수 있지만 표시된 유효성 검사 규칙을 준수해야 하는 OSGi 구성 목록입니다. 이러한 규칙에는 속성 선언이 필요한지 여부, 속성 유형 및 경우에 따라 허용되는 값 범위가 포함됩니다.
+1. 고객 코드로 구성하면 안 되는 OSGi 구성 목록
+1. 속성을 구성할 수 있지만 표시된 유효성 검사 규칙을 준수해야 하는 OSGi 구성 목록입니다. 이러한 규칙에는 속성 선언이 필요한지 여부, 해당 유형 및 경우에 따라 허용되는 값 범위가 포함됩니다.
 
-OSGI 구성이 나열되지 않으면 고객 코드로 구성할 수 있습니다.
+OSGI 구성이 나열되지 않은 경우, 고객 코드로 구성되었을 수 있습니다.
 
-이러한 규칙은 Cloud Manager 빌드 프로세스 중에 검증됩니다. 시간이 지남에 따라 추가 규칙을 추가할 수 있으며 예상 적용 날짜가 표에 명시되어 있습니다. 고객은 목표 시행 날짜까지 이러한 규칙을 준수해야 합니다. 제거 날짜 이후에 규칙을 준수하지 않으면 Cloud Manager 빌드 프로세스에서 오류가 발생합니다. Maven 프로젝트에는 [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html) 로컬 SDK 개발 중에 OSGI 구성 오류에 플래그를 지정합니다.
+Cloud Manager 빌드 프로세스 중에 이러한 규칙의 유효성이 검사됩니다. 시간이 지남에 따라 다른 규칙이 추가될 수 있으며, 예상 시행 일자는 표에 명시되어 있습니다. 고객은 목표 시행 일자까지 이러한 규칙을 준수해야 합니다. 제거 날짜 이후에 규칙을 준수하지 않으면 Cloud Manager 빌드 프로세스에서 오류가 발생합니다. Maven 프로젝트에는 로컬 SDK 개발 중 OSGI 구성 오류에 플래그를 지정하도록 [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html)을 포함해야 합니다.
 
-OSGI 구성에 대한 추가 정보는 다음에서 확인할 수 있습니다. [이 위치](/help/implementing/deploying/configuring-osgi.md).
+OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying/configuring-osgi.md)에서 확인할 수 있습니다.
 
-수정할 수 없는 +++OSGi 구성
-* **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (공고일: 2021년 4월 30일, 시행일: 2021년 7월 31일)
-* **`com.day.cq.auth.impl.cug.CugSupportImpl`** (공고일: 2021년 4월 30일, 시행일: 2021년 7월 31일)
-* **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (공고일: 2021년 4월 30일, 시행일: 2021년 7월 31일)
-* **`org.apache.felix.http (Factory)`** (공고일: 2021년 4월 30일, 시행일: 2021년 7월 31일)
-* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (공고일: 2021년 8월 25일, 시행일: 2021년 11월 26일)
++++수정할 수 없는 OSGi 구성입니다.
+* **`org.apache.felix.webconsole.internal.servlet.OsgiManager`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
+* **`com.day.cq.auth.impl.cug.CugSupportImpl`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
+* **`com.day.cq.jcrclustersupport.ClusterStartLevelController`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
+* **`org.apache.felix.http (Factory)`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
+* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`**(공지 일자: 2021년 8월 25일, 시행 일자: 2021년 11월 26일)
 +++
 
-+++OSGi 구성은 빌드 유효성 검사 규칙에 따릅니다.
-* **`org.apache.felix.eventadmin.impl.EventAdmin`** (공고일: 2021년 4월 30일, 시행일: 2021년 7월 31일)
++++OSGi 구성에는 빌드 유효성 검사 규칙이 적용됩니다.
+* **`org.apache.felix.eventadmin.impl.EventAdmin`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
 * `org.apache.felix.eventadmin.ThreadPoolSize`
    * 유형: 정수
-   * 필수 범위: 2-100
+   * 필수 범위: 2~100
 * `org.apache.felix.eventadmin.AsyncToSyncThreadRatio`
-   * 유형: double
+   * 유형: 중복 요소
 * `org.apache.felix.eventadmin.Timeout`
    * 유형: 정수
 * `org.apache.felix.eventadmin.RequireTopic`
@@ -94,10 +94,10 @@ OSGI 구성에 대한 추가 정보는 다음에서 확인할 수 있습니다. 
 * `org.apache.felix.eventadmin.IgnoreTimeout`
    * 필수
    * 유형: 문자열 배열
-   * 필수 범위: 적어도 다음 중 하나를 포함해야 합니다. `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`
+   * 필수 범위: 적어도 `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`를 모두 포함해야 함
 * `org.apache.felix.eventadmin.IgnoreTopic`
    * 유형: 문자열 배열
-* **`org.apache.felix.http`** (공고일: 2021년 4월 30일, 시행일: 2021년 7월 31일)
+* **`org.apache.felix.http`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
    * `org.apache.felix.http.timeout`
       * 유형: 정수
    * `org.apache.felix.http.session.timeout`
@@ -160,15 +160,15 @@ OSGI 구성에 대한 추가 정보는 다음에서 확인할 수 있습니다. 
       * 유형: 문자열 배열
    * `org.apache.felix.http.session.uniqueid`
       * 유형: 부울
-* **`org.apache.sling.scripting.cache`** (공고일: 2021년 4월 30일, 시행일: 2021년 7월 31일)
+* **`org.apache.sling.scripting.cache`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
    * `org.apache.sling.scripting.cache.size`
       * 유형: 정수
-      * 필수 범위: >= 2048
+      * 필수 범위: >= 2,048
    * `org.apache.sling.scripting.cache.additional_extensions`
       * 필수
       * 유형: 문자열 배열
       * 필수 범위: js를 포함해야 함
-* **`com.day.cq.mailer.DefaultMailService`** (공고일: 2021년 4월 30일, 시행일: 2021년 7월 31일)
+* **`com.day.cq.mailer.DefaultMailService`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
    * `smtp.host`
       * 유형: 문자열
    * `smtp.port`
@@ -190,10 +190,10 @@ OSGI 구성에 대한 추가 정보는 다음에서 확인할 수 있습니다. 
       * 유형: 부울
    * `oauth.flow`
       * 유형: 부울
-* **`org.apache.sling.commons.log.LogManager.factory.config`** (공고일: 21/11/16, 시행일: 21/21/2/16)
+* **`org.apache.sling.commons.log.LogManager.factory.config`**(공지 일자: 2021년 11월 16일, 시행 일자: 2021년 2월 16일)
    * `org.apache.sling.commons.log.level`
-      * 유형: 열거형
-      * 필수 범위: 정보, 디버그 또는 TRACE
+      * 유형: 열거
+      * 필수 범위: INFO, DEBUG 또는 TRACE
    * `org.apache.sling.commons.log.names`
       * 유형: 문자열
    * `org.apache.sling.commons.log.file`
