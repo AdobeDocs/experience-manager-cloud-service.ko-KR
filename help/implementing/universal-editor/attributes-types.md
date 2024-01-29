@@ -2,7 +2,7 @@
 title: 속성 및 항목 유형
 description: 범용 편집기에 필요한 데이터 특성 및 항목 유형에 대해 알아봅니다.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: febaec244b4400b8d7fc5a5d8a4f75b4f4505d6f
+source-git-commit: 453cbaeabd28223cac5e732a551aa71f5a425839
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 82%
@@ -38,7 +38,7 @@ Universal Editor에서 앱을 편집할 수 있으려면 앱이 적절하게 구
 
 ## 항목 유형 {#item-types}
 
-| `itemtype` | 설명 | `itemid` | `itemprop` | `data-editor-itemfilter` | `data-editor-itemlabel` | `data-editor-itemmodel` | `data-editor-behvior` |
+| `data-aue-type` | 설명 | `data-aue-resource` | `data-aue-prop` | `data-aue-filter` | `data-aue-label` | `data-aue-model` | `data-aue-behavior` |
 |---|---|---|---|---|---|---|---|
 | `text` | 텍스트는 HTML 태그 내에서 편집할 수 있지만 간단한 텍스트 형식으로만 사용할 수 있으며 서식 있는 텍스트 형식(예: 제목 구성 요소에 일반적으로 사용되는 텍스트 형식)은 사용 불가 | 옵션 | 필수 | 해당 사항 없음 | 옵션 | 해당 사항 없음 | 옵션 |
 | `richtext` | 전체 서식 있는 텍스트 기능으로 텍스트 편집 가능. RTE는 오른쪽 편집기 패널에 표시됨 | 옵션 | 필수 | 해당 사항 없음 | 옵션 | 해당 사항 없음 | 옵션 |
