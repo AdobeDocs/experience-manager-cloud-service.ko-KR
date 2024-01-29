@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 796dbcfefc6ed5e1b937a0c45ec1b3987c3c2af3
 workflow-type: tm+mt
 source-wordcount: '4615'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -611,12 +611,12 @@ ht-degree: 98%
             + [리디렉션 페이지 또는 감사 메시지 구성](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [반복 가능한 섹션으로 양식 만들기](/help/forms/create-forms-repeatable-sections.md)
             + [적응형 양식에 대한 제출 액션 구성](/help/forms/configure-submit-actions-core-components.md)
-            + [Azure Blob 스토리지에 적응형 양식 제출](/help/forms/configure-submit-action-azure-blob-storage.md)
+            + [Azure Blob Storage에 적응형 양식 제출](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [Microsoft® OneDrive에 적응형 양식 제출](/help/forms/configure-submit-action-onedrive.md)
-            + [적응형 양식을 위한 SharePoint 스토리지 구성](/help/forms/configure-submit-action-sharepoint.md)
+            + [적응형 양식에 대한 SharePoint Storage 구성](/help/forms/configure-submit-action-sharepoint.md)
             + [AEM 적응형 양식과 AEM Workflow 통합](/help/forms/configure-submit-action-workflow.md)
-            + [적응형 Forms에 대한 REST 엔드포인트에 제출 액션 구성](/help/forms/configure-submit-action-restpoint.md)
-            + [적응형 양식에 대한 이메일 제출 전송 작업 구성](/help/forms/configure-submit-action-send-email.md)
+            + [적응형 양식의 REST 엔드포인트에 제출 액션 구성](/help/forms/configure-submit-action-restpoint.md)
+            + [적응형 양식의 이메일 보내기 제출 액션 구성](/help/forms/configure-submit-action-send-email.md)
             + [적응형 양식에서 Google reCAPTCHA 사용](/help/forms/captcha-adaptive-forms-core-components.md)
             + [적응형 양식에서 사용자 정의 오류 핸들러 추가](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [핵심 구성 요소 기반 적응형 양식의 로케일 추가](/help/forms/supporting-new-language-localization-core-components.md)
@@ -1014,7 +1014,7 @@ ht-degree: 98%
          + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
          + [통합 실행](/help/implementing/developing/hybrid/launch-integration.md)
          + [SPA 참조 문서](/help/implementing/developing/hybrid/reference-materials.md)
-         + [Sling 모델 내보내기를 통한 ResourceResolver 직렬화 허용 안 함](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)
+         + [Sling Model 내보내기를 통한 ResourceResolver 직렬화 허용 안 함](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)
    + 개발자 도구 {#developer-tools}
       + [개발자 모드](/help/implementing/developing/tools/developer-mode.md)
       + [Eclipse용 AEM 개발자 도구](/help/implementing/developing/tools/eclipse.md)
