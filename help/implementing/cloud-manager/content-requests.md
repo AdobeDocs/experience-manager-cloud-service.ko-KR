@@ -2,10 +2,10 @@
 title: Cloud Service 콘텐츠 요청 이해
 description: Adobe에서 컨텐츠 요청 라이선스를 구입한 경우 Adobe Experience Cloud as a Service가 측정하는 컨텐츠 요청 유형과 조직의 분석 보고 도구와의 차이에 대해 알아봅니다.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: e31b05f0cef6c5ca3a1c00b757eac013aa43bb90
+source-git-commit: 6212ad20cb427d6b2ccd4c467d571832f923ed2a
 workflow-type: tm+mt
-source-wordcount: '2690'
-ht-degree: 4%
+source-wordcount: '2683'
+ht-degree: 5%
 
 ---
 
@@ -96,9 +96,13 @@ RUM(Real User Monitoring)은 URL 시작부터 요청이 다시 브라우저로 �
 
 ### RUM 데이터 모니터링 서비스의 혜택을 누리는 사람 {#who-can-benefit-from-rum-data-monitoring-service}
 
-RUM 데이터 서비스는 Adobe 상호 작용을 보다 정확하게 반영하여 기존 서버측 CDN 로그 페이지 보기 수와 비교할 수 있는 클라이언트측 페이지 보기 수를 반영하여 웹 사이트 참여에 대한 안정적인 측정을 보장하므로 사용자의 CDN을 사용하는 사용자에게 유용합니다. 또한 자체 CDN을 사용하는 고객의 경우 Adobe은 이제 자신에 대한 페이지 보기 수를 포함하는 자동 트래픽 보고를 간소화할 수 있습니다. 즉, 트래픽 보고서를 Adobe과 공유할 필요가 없습니다.
+RUM 데이터 서비스는 Adobe의 CDN을 활용하든 자체 CDN을 활용하든 모든 고객에게 유용합니다. 사용자 상호 작용을 보다 정확하게 반영하여 클라이언트측 페이지 보기 수를 반영하여 웹 사이트 참여를 안정적으로 측정할 수 있습니다.
 
-또한 Adobe의 CDN을 사용하는 고객과 자체 CDN을 사용하는 고객 모두에게 페이지 성능에 대한 고급 통찰력을 얻을 수 있는 좋은 기회입니다.
+특히 Adobe CDN 사용자의 경우 클라이언트측 페이지 보기 수와 서버측 CDN 로그를 직접 비교하기 위해 사용자 상호 작용을 정확하게 추적합니다.
+
+자체 CDN을 사용하는 고객의 경우 이제 Adobe이 이러한 페이지 보기를 직접 통합하여 별도의 보고서가 필요 없으므로 간소화된 트래픽 보고의 이점을 얻을 수 있습니다.
+
+또한 모든 고객은 페이지 성능에 대한 깊은 통찰력을 얻어 디지털 경험을 효과적으로 최적화할 수 있습니다.
 
 ### RUM(Real User Monitoring) 데이터 서비스의 작동 방식 이해 {#understand-how-the-rum-data-service-works}
 
@@ -134,7 +138,7 @@ RUM(Real User Monitoring)은 개인 식별 정보가 수집되는 것을 방지�
 
 ### RUM(Real User Monitoring) 데이터 서비스를 설정하는 방법 {#how-to-set-up-them-rum-data-service}
 
-* 얼리 어답터 프로그램에 참여하려면 다음으로 이메일을 보내주십시오. `aemcs-rum-adopter@adobe.com`, Adobe ID과 연결된 이메일 주소에서 프로덕션, 스테이징 및 개발 환경의 도메인 이름과 함께 그런 다음 Adobe의 제품 팀이 RUM(Real User Monitoring) 데이터 서비스를 활성화합니다.
+* 얼리 어답터 프로그램에 참여하려면 다음으로 이메일을 보내주십시오. `aemcs-rum-adopter@adobe.com`, Adobe ID과 연결된 이메일 주소에서 프로덕션, 스테이징 및 개발 환경의 도메인 이름과 함께 그러면 Adobe 제품 팀에서 실제 사용자 모니터링(RUM) 데이터 서비스를 활성화합니다.
 * 이 작업이 완료되면 Adobe의 제품 팀이 고객 공동 작업 채널을 만듭니다.
 * Adobe의 제품 팀이 페이지 보기 수 및 를 볼 수 있는 도메인 키 및 데이터 대시보드 URL을 제공하기 위해 연락할 것입니다. [핵심 웹 바이탈(CWV)](https://web.dev/vitals/) 클라이언트측 RUM(Real User Monitoring) 컬렉션에서 수집한 지표.
 * 그런 다음 도메인 키를 사용하여 데이터 대시보드 URL에 액세스하고 지표를 보는 방법에 대해 안내합니다.
