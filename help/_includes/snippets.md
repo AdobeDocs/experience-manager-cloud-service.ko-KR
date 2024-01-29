@@ -1,8 +1,8 @@
 ---
 source-git-commit: 2f567d45a6ba2dfb4dd3346e8510bcb04113eefb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '264'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 # 스니펫 {#snippets}
@@ -54,5 +54,5 @@ ht-degree: 91%
 * [AEM Workflow 호출](/help/forms/configure-submit-action-workflow.md)
 * [Power Automate에 제출](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Workfront Fusion에 제출](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [적응형 양식을 Salesforce 애플리케이션에 연결](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Salesforce 애플리케이션에 적응형 양식 연결](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
 * [Microsoft® Dynamics OData에 적응형 양식 연결](/help/forms/ms-dynamics-odata-configuration.md)
