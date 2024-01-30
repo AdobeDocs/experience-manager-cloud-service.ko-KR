@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 8c33426c38b087c83b945572374089ad9cb44daf
+source-git-commit: 77d38f03f18eb6b0fdc2f2eec5b2dc4b608b8057
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '781'
 ht-degree: 61%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 61%
 
 ![AEM Sites의 Extension Manager](/help/assets/sites/extension-manager/homepage.png)
 
-AEM Sites의 Extension Manager을 통해 개발자와 실무자는 AEM Sites의 기능을 향상시키기 위해 구축된 UI 확장에 액세스, 관리 및 맞춤화할 수 있습니다.
+AEM Sites의 Extension Manager을 통해 개발자와 실무자는 액세스하고, 관리하고, 맞춤화할 수 있습니다 [UI 확장](https://developer.adobe.com/uix/docs/) 빌드 대상 [Adobe 앱 빌더](https://developer.adobe.com/app-builder/) AEM Sites의 기능을 개선합니다.
 Extension Manager을 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 
 * 인스턴스별로 확장을 활성화하거나 비활성화합니다.
