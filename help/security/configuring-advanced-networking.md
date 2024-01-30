@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service에 대한 고급 네트워킹 구성
 description: AEM as a Cloud Service에 대해 VPN 또는 유연한/전용 이그레스 IP 주소와 같은 고급 네트워킹 기능을 구성하는 방법에 대해 알아봅니다.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: ht
-source-wordcount: '3526'
-ht-degree: 100%
+source-git-commit: dfeeaca8341abec5d4fd518957baf6936a21aea3
+workflow-type: tm+mt
+source-wordcount: '3540'
+ht-degree: 99%
 
 ---
 
@@ -349,6 +349,7 @@ VPN을 사용하면 작성자, 게시 또는 미리보기에서 온프레미스 
 
 * 지원은 단일 VPN 연결로 제한됩니다.
 * VPN 연결에는 Splunk 전달 기능을 사용할 수 없습니다.
+* 개인 호스트 이름을 확인하려면 게이트웨이 주소 공간에 DNS Resolver를 나열해야 합니다.
 
 ### 만들기 {#vpn-creation}
 
