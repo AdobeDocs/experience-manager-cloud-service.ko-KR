@@ -3,10 +3,10 @@ title: AEM 및 Edge Delivery Services
 description: AEM as a Cloud Service가 Edge Delivery Services에서 제공하는 성능과 완벽한 Lighthouse Score를 통해 얻을 수 있는 이점을 알아봅니다.
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: 9d26a4835dc331f2ff8b741a4c14847ead611874
-workflow-type: ht
-source-wordcount: '838'
-ht-degree: 100%
+source-git-commit: 7d28a3a8304d79ecc3143bdc9373134d312af49d
+workflow-type: tm+mt
+source-wordcount: '868'
+ht-degree: 96%
 
 ---
 
@@ -42,6 +42,8 @@ Edge Delivery Services 문서에 대한 추가 참조:
 ## Edge Delivery Services 및 기타 Adobe Experience Cloud 제품 {#edge-other-products}
 
 Edge Delivery Services는 Adobe Experience Manager의 일부이므로 Edge Delivery Services 및 AEM Sites는 동일한 도메인에서 함께 존재할 수 있습니다. 이는 대규모 웹 사이트의 일반적인 사용 사례입니다. 게다가 Edge Delivery Services의 콘텐츠는 AEM Sites 페이지에서 간단히 사용할 수 있으며 그 반대의 경우도 마찬가지입니다.
+
+다음을 참조하십시오. [Edge Delivery Services을 사용한 AEM 작성을 위한 개발자 시작 안내서](/help/edge/edge-dev-getting-started.md) AEM 및 Edge Delivery Services을 사용하여 작성할 프로젝트를 시작하는 방법에 대해 알아봅니다.
 
 Adobe Target, Analytics, Launch와 함께 Edge Delivery Services를 사용할 수도 있습니다.
 

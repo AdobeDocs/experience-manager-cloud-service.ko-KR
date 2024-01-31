@@ -2,17 +2,17 @@
 title: Edge Delivery Services 컨텐츠 작성
 description: 컨텐츠 작성과 Edge Delivery Services 간의 연동 및 Edge Delivery Services을 통해 AEM 컨텐츠를 작성하는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services
-source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
+exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
+source-git-commit: 7d28a3a8304d79ecc3143bdc9373134d312af49d
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 14%
+source-wordcount: '491'
+ht-degree: 15%
 
 ---
 
-
 # Edge Delivery Services 컨텐츠 작성 {#authoring-edge}
 
-Edge Delivery Services을 사용하면 쉽고 빠르고 유연하게 작성할 수 있습니다. Edge Delivery Services을 위한 컨텐츠를 작성하는 두 가지 옵션이 있습니다.
+Edge Delivery Services를 사용하여 쉽고, 빠르고, 유연하게 콘텐츠를 작성할 수 있습니다. Edge Delivery Services을 위한 컨텐츠를 작성하는 두 가지 옵션이 있습니다.
 
 * [문서 기반 작성](#document-based) - Microsoft Word 또는 Google 문서 등
 * [유니버설 편집기](#universal-editor) - AEM 내 콘텐츠 작성을 위한 최신 UI
@@ -53,6 +53,8 @@ as a Cloud Service으로 Edge Delivery ServicesAEM 를 사용할 때 가장 기�
 ![블록 속성 구성](assets/block-properties.png)
 
 범용 편집기를 사용하여 작성하는 방법에 대한 자세한 내용은 문서를 참조하십시오 [범용 편집기로 콘텐츠 작성](/help/implementing/universal-editor/authoring.md)
+
+다음을 참조하십시오. [Edge Delivery Services을 사용한 AEM 작성을 위한 개발자 시작 안내서](/help/edge/edge-dev-getting-started.md) AEM 및 Edge Delivery Services을 사용하여 작성할 프로젝트를 시작하는 방법에 대해 알아봅니다.
 
 ## 시작하는 방법 {#how-to-get-started}
 

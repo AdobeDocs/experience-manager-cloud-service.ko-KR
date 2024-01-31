@@ -1,8 +1,8 @@
 ---
-source-git-commit: 2f567d45a6ba2dfb4dd3346e8510bcb04113eefb
-workflow-type: ht
-source-wordcount: '264'
-ht-degree: 100%
+source-git-commit: 45b263651f6139b1c7f83ff3485186b272ba1a4f
+workflow-type: tm+mt
+source-wordcount: '302'
+ht-degree: 87%
 
 ---
 # 스니펫 {#snippets}
@@ -56,3 +56,7 @@ ht-degree: 100%
 * [Workfront Fusion에 제출](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Salesforce 애플리케이션에 적응형 양식 연결](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
 * [Microsoft® Dynamics OData에 적응형 양식 연결](/help/forms/ms-dynamics-odata-configuration.md)
+
+## Edge Delivery Services 조기 액세스로 AEM 작성 {#aem-authoring-edge-early-access}
+
+[!BADGE 조기 액세스 기술 - Slack 채널의 AEM Sites 랩에서 이 기능에 대해 질문하십시오!]{type=Informative url="/help/edge/docs/slack.md" tooltip="Edge Delivery Services을 사용하여 AEM 작성은 조기 액세스 기술입니다."}
