@@ -1,95 +1,298 @@
 ---
-title: 필드 유형
-description: 나만의 앱을 계측하는 방법에 대한 예제를 통해 유니버설 편집기가 구성 요소 레일에서 편집할 수 있는 다양한 유형의 필드에 대해 알아봅니다.
+title: 모델 정의, 필드 및 구성 요소 유형
+description: 예가 포함된 속성 레일에서 유니버설 편집기가 편집할 수 있는 필드 및 구성 요소 유형에 대해 알아봅니다. 모델 정의를 만들고 구성 요소에 연결하여 나만의 앱을 계측하는 방법을 이해합니다.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: 7ef3efa6e074778b7b3e3a8159056200b2663b30
+source-git-commit: c721e2f5f14e9d1c069e1dd0a00609980db6bd9d
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 7%
+source-wordcount: '1000'
+ht-degree: 11%
 
 ---
 
 
-# 필드 유형 {#field-types}
+# 모델 정의, 필드 및 구성 요소 유형 {#field-types}
 
-나만의 앱을 계측하는 방법에 대한 예제를 통해 유니버설 편집기가 구성 요소 레일에서 편집할 수 있는 다양한 유형의 필드에 대해 알아봅니다.
+예가 포함된 속성 레일에서 유니버설 편집기가 편집할 수 있는 필드 및 구성 요소 유형에 대해 알아봅니다. 모델 정의를 만들고 구성 요소에 연결하여 나만의 앱을 계측하는 방법을 이해합니다.
 
 {{universal-editor-status}}
 
 ## 개요 {#overview}
 
-범용 편집기에서 사용할 앱을 조정할 때 구성 요소를 계측하고 편집기의 구성 요소 레일에서 조작할 수 있는 데이터 유형을 정의해야 합니다.
+범용 편집기에서 사용할 앱을 조정할 때 구성 요소를 계측하고 편집기의 속성 레일에서 조작할 수 있는 필드와 구성 요소 유형을 정의해야 합니다. 모델을 만든 다음 구성 요소에서 해당 모델에 연결하면 됩니다.
 
-이 문서에서는 예제 구성과 함께 사용할 수 있는 필드 유형에 대한 개요를 제공합니다.
+이 문서에서는 예제 구성과 함께 사용 가능한 모델 정의 및 필드와 구성 요소 유형에 대한 개요를 제공합니다.
 
 >[!TIP]
 >
 >범용 편집기에 사용할 앱을 계측하는 방법에 익숙하지 않은 경우 문서를 참조하십시오 [AEM 개발자를 위한 유니버설 편집기 개요.](/help/implementing/universal-editor/developer-overview.md)
 
-## 부울 {#boolean}
+## 모델 정의 구조 {#model-structure}
 
-부울 필드는 확인란으로 렌더링된 간단한 true/false 값을 저장합니다.
+범용 편집기의 속성 레일을 통해 구성 요소를 구성하려면 모델 정의가 존재하고 구성 요소에 연결되어 있어야 합니다.
 
-### 샘플 {#sample-boolean}
+모델 정의는 모델 배열로 시작하는 JSON 구조입니다.
+
+```json
+[
+  {
+    "id": "model-id",        // must be unique
+    "fields": []             // array of fields which shall be rendered in the properties rail
+  }
+]
+```
+
+다음을 참조하십시오. **[필드](#fields)** 을(를) 정의하는 방법에 대한 자세한 내용은 이 문서의 섹션을 참조하십시오. `fields` 배열입니다.
+
+컴포넌트와 함께 모델 정의를 사용하려면 `data-aue-model` 속성을 사용할 수 있습니다.
+
+```html
+<div data-aue-resource="urn:datasource:/content/path" data-aue-type="component"  data-aue-model="model-id">Click me</div>
+```
+
+## 모델 정의 로드 {#loading-model}
+
+모델이 만들어지면 외부 파일로 참조할 수 있습니다.
+
+```html
+<script type="application/vnd.adobe.aue.model+json" src="<url-of-model-definition>"></script>
+```
+
+또는 모델을 인라인으로 정의할 수도 있습니다.
+
+```html
+<script type="application/vnd.adobe.aue.model+json">
+  { ... model definition ... }
+</script>
+```
+
+## 필드 {#fields}
+
+필드 개체에는 다음과 같은 형식 정의가 있습니다.
+
+| 구성 | 값 유형 | 설명 | 필수 |
+|---|---|---|---|
+| `component` | `ComponentType` | 구성 요소의 렌더러 | 예 |
+| `name` | `string` | 데이터가 지속되어야 하는 속성 | 예 |
+| `label` | `FieldLabel` | 필드 레이블 | 예 |
+| `description` | `FieldDescription` | 필드 설명 | 아니요 |
+| `placeholder` | `string` | 필드에 대한 자리 표시자 | 아니요 |
+| `value` | `FieldValue` | 기본값 | 아니요 |
+| `valueType` | `ValueType` | 표준 유효성 검사이며 다음과 같을 수 있습니다. `string`, `string[]`, `number`, `date`, `boolean` | 아니요 |
+| `required` | `boolean` | 필수 필드임 | 아니요 |
+| `readOnly` | `boolean` | 필드가 읽기 전용임 | 아니요 |
+| `hidden` | `boolean` | 기본적으로 필드가 숨겨져 있음 | 아니요 |
+| `condition` | `RulesLogic` | 필드를 표시하거나 숨기는 규칙 | 아니요 |
+| `multi` | `boolean` | 필드가 다중 필드입니까 | 아니요 |
+| `validation` | `ValidationType` | 필드에 대한 유효성 검사 규칙 | 아니요 |
+| `raw` | `unknown` | 구성 요소에서 사용할 수 있는 원시 데이터 | 아니요 |
+
+### 구성 요소 유형 {#component-types}
+
+다음은 필드를 렌더링하는 데 사용할 수 있는 구성 요소 유형입니다.
+
+#### AEM 태그 {#aem-tag}
+
+AEM 태그 구성 요소 유형을 사용하면 구성 요소에 태그를 첨부하는 데 사용할 수 있는 AEM 태그 선택기를 사용할 수 있습니다.
+
+##### 샘플 {#sample-aem-tag}
 
 ```json
 {
-  "fields": [   
-   {
+  "id": "aem-tag-picker",
+  "fields": [
+    {
+      "component": "aem-tag",
+      "label": "AEM Tag Picker",
+      "name": "cq:tags",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+##### 스크린샷 {#screenshot-aem-tag}
+
+![AEM 태그 구성 요소 유형의 스크린샷](assets/component-types/aem-tag-picker.png)
+
+#### AEM 컨텐츠 {#aem-content}
+
+AEM 콘텐츠 구성 요소 유형 은 콘텐츠 참조를 설정하는 데 사용할 수 있는 AEM 콘텐츠 선택기를 활성화합니다.
+
+##### 샘플 {#sample-aem-content}
+
+```json
+{
+  "id": "aem-content-picker",
+  "fields": [
+    {
+      "component": "aem-content",
+      "name": "reference",
+      "value": "",
+      "label": "AEM Content Picker",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+##### 스크린샷 {#screenshot-aem-content}
+
+![AEM 콘텐츠 구성 요소 유형의 스크린샷](assets/component-types/aem-content-picker.png)
+
+#### 부울 {#boolean}
+
+부울 구성 요소 유형은 토글로 렌더링된 간단한 true/false 값을 저장합니다. 추가 유효성 검사 유형을 제공합니다.
+
+| 유효성 검사 유형 | 값 유형 | 설명 | 필수 |
+|---|---|---|---|
+| `customErrorMsg` | `string` | 입력한 값이 부울 값이 아닌 경우 표시되는 메시지 | 아니요 |
+
+##### 샘플 {#sample-boolean}
+
+```json
+{
+  "id": "boolean",
+  "fields": [
+    {
       "component": "boolean",
+      "label": "Boolean",
+      "name": "boolean",
+      "valueType": "boolean"
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another-boolean",
+  "fields": [
+    {
+      "component": "boolean",
+      "label": "Boolean",
+      "name": "boolean",
       "valueType": "boolean",
-      "name": "field1",
-      "label": "Boolean Field",
-      "description": "This is a boolean field.",
-      "required": true,
-      "placeholder": null,
       "validation": {
-        "customErrorMsg": "This is an error."
+        "customErrorMsg": "Think, McFly. Think!"
       }
     }
   ]
 }
 ```
 
-## 확인란 그룹 {#checkbox-group}
+##### 스크린샷 {#screenshot-boolean}
 
-부울과 유사하게 확인란 그룹을 사용하여 여러 개의 true/false 항목을 선택할 수 있습니다.
+![부울 구성 요소 유형의 스크린샷](assets/component-types/boolean.png)
 
-### 샘플 {#sample-checkbox-group}
+#### 확인란 그룹 {#checkbox-group}
+
+부울과 유사하게 확인란 그룹 구성 요소 유형을 사용하면 여러 개의 확인란으로 렌더링된 참/거짓 항목을 선택할 수 있습니다.
+
+##### 샘플 {#sample-checkbox-group}
 
 ```json
 {
-  "fields": [   
-   {
+  "id": "checkbox-group",
+  "fields": [
+    {
       "component": "checkbox-group",
-      "valueType": "string-array",
-      "name": "field1",
       "label": "Checkbox Group",
-      "description": "This is a checkbox group.",
-      "required": true,
-      "placeholder": null,
+      "name": "checkbox",
+      "valueType": "string[]",
       "options": [
-        { "name": "First option", "value": "one" },
-        { "name": "Second option", "value": "two" },
-        { "name": "Third option", "value": "three" }
+        { "name": "Option 1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
       ]
     }
   ]
 }
 ```
 
-## 날짜/시간 {#date-time}
+#### 스크린샷 {#screenshot-checkbox-group}
 
-날짜 시간 필드는 날짜, 시간 또는 이들의 조합을 특정할 수 있도록 한다.
+![확인란 그룹 구성 요소 유형의 스크린샷](assets/component-types/checkbox-group.png)
 
-### 샘플 {#sample-date-time}
+#### 컨테이너 {#container}
+
+컨테이너 구성 요소 유형은 구성 요소를 그룹화할 수 있습니다. 추가 구성을 제공합니다.
+
+| 구성 | 값 유형 | 설명 | 필수 |
+|---|---|---|---|
+| `collapsible` | `boolean` | 컨테이너를 접을 수 있습니까 | 아니요 |
+
+##### 샘플 {#sample-container}
+
+```json
+ {
+  "id": "container",
+  "fields": [
+    {
+      "component": "container",
+      "label": "Container",
+      "name": "container",
+      "valueType": "string",
+      "collapsible": true,
+      "fields": [
+        {
+          "component": "text-input",
+          "label": "Simple Text 1",
+          "name": "text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "label": "Simple Text 2",
+          "name": "text2",
+          "valueType": "string"
+        }
+      ]
+    }
+  ]
+}
+```
+
+##### 스크린샷 {#screenshot-container}
+
+![컨테이너 구성 요소 유형의 스크린샷](assets/component-types/container.png)
+
+#### 날짜/시간 {#date-time}
+
+날짜 시간 구성 요소 유형을 사용하면 날짜, 시간 또는 이들의 조합을 지정할 수 있습니다. 추가 구성을 제공합니다.
+
+| 구성 | 값 유형 | 설명 | 필수 |
+|---|---|---|---|
+| `displayFormat` | `string` | 날짜 문자열을 표시할 형식 | 예 |
+| `valueFormat` | `string` | 날짜 문자열을 저장할 형식 | 예 |
+
+또한 추가 유효성 검사 유형을 제공합니다.
+
+| 유효성 검사 유형 | 값 유형 | 설명 | 필수 |
+|---|---|---|---|
+| `customErrorMsg` | `string` | 다음과 같은 경우에 표시되는 메시지 `valueFormat` 충족되지 않음 | 아니요 |
+
+##### 샘플 {#sample-date-time}
 
 ```json
 {
-  "fields": [   
-      {
+  "id": "date-time",
+  "fields": [
+    {
       "component": "date-time",
-      "valueType": "date-time",
+      "label": "Date & Time",
+      "name": "date",
+      "valueType": "date"
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another-date-time",
+  "fields": [
+    {
+      "component": "date-time",
+       "valueType": "date-time",
       "name": "field1",
       "label": "Date Time",
       "description": "This is a date time field that stores both date and time.",
@@ -133,15 +336,103 @@ ht-degree: 7%
 }
 ```
 
-## 숫자 {#number}
+##### 스크린샷 {#screenshot-date-time}
 
-숫자 필드를 사용하면 숫자를 입력할 수 있습니다.
+![날짜 시간 구성 요소 유형의 스크린샷](assets/component-types/date-time.png)
 
-### 샘플 {#sample-number}
+#### 다중 선택 {#multiselect}
+
+다중 선택 구성 요소 유형은 선택 가능한 요소를 그룹화하는 기능을 포함하여 드롭다운에서 선택할 여러 항목을 제공합니다.
+
+##### 샘플 {#sample-multiselect}
 
 ```json
 {
-  "fields": [   
+  "id": "multiselect",
+  "fields": [
+    {
+      "component": "multiselect",
+      "name": "multiselect",
+      "label": "Multi Select",
+      "valueType": "string",
+      "options": [
+        { "name": "Option 1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
+      ]
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "multiselect-grouped",
+  "fields": [
+    {
+      "component": "multiselect",
+      "name": "property",
+      "label": "Multiselect field",
+      "valueType": "string",
+      "required": true,
+      "maxSize": 2,
+      "options": [
+        {
+          "name": "Theme",
+          "children": [
+            { "name": "Light", "value": "light" },
+            { "name": "Dark",  "value": "dark" }
+          ]
+        },
+        {
+          "name": "Type",
+          "children": [
+            { "name": "Alpha", "value": "alpha" },
+            { "name": "Beta", "value": "beta" },
+            { "name": "Gamma", "value": "gamma" }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+##### 스크린샷 {#screenshot-multiselect}
+
+![다중 선택 구성 요소 유형의 스크린샷](assets/component-types/multiselect.png)
+![그룹화가 포함된 다중 선택 구성 요소 유형의 스크린샷](assets/component-types/multiselect-group.png)
+
+#### 숫자 {#number}
+
+숫자 구성 요소 유형을 사용하여 숫자를 입력할 수 있습니다. 추가 유효성 검사 유형을 제공합니다.
+
+| 유효성 검사 유형 | 값 유형 | 설명 | 필수 |
+|---|---|---|---|
+| `numberMin` | `number` | 허용되는 최소 수 | 아니요 |
+| `numberMax` | `number` | 허용되는 최대 수 | 아니요 |
+| `customErrorMsg` | `string` | 다음과 같은 경우에 표시되는 메시지 `numberMin` 또는 `numberMax` 충족되지 않음 | 아니요 |
+
+##### 샘플 {#sample-number}
+
+```json
+{
+  "id": "number",
+  "fields": [
+    {
+      "component": "number",
+      "name": "number",
+      "label": "Number",
+      "valueType": "number",
+      "value": 0
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another-number",
+  "fields": [
    {
       "component": "number",
       "valueType": "number",
@@ -151,189 +442,239 @@ ht-degree: 7%
       "required": true,
       "placeholder": null,
       "validation": {
-        "numberMin": null,
-        "numberMax": null,
-        "customErrorMsg": "Please don't do that."
+        "numberMin": 0,
+        "numberMax": 88,
+        "customErrorMsg": "You also need 1.21 gigawatts."
       }
     }
   ]
 }
 ```
 
-## 라디오 그룹 {#radio-group}
+##### 스크린샷 {#screenshot-number}
 
-라디오 그룹을 사용하면 확인란 그룹과 유사한 그룹으로 렌더링된 여러 옵션에서 상호 배타적으로 선택할 수 있습니다.
+![번호 구성 요소 유형의 스크린샷](assets/component-types/number.png)
 
-### 샘플 {#sample-radio-group}
+#### 라디오 그룹 {#radio-group}
+
+라디오 그룹 구성 요소 유형을 사용하면 확인란 그룹과 유사한 그룹으로 렌더링된 여러 옵션에서 상호 배타적으로 선택할 수 있습니다.
+
+##### 샘플 {#sample-radio-group}
 
 ```json
 {
-  "fields": [   
-   {
+  "id": "radio-group",
+  "fields": [
+    {
       "component": "radio-group",
-      "valueType": "string",
-      "name": "field1",
       "label": "Radio Group",
-      "description": "This is a radio group.",
-      "required": true,
-      "placeholder": null,
+      "name": "radio",
+      "valueType": "string",
       "options": [
-        { "name": "Option One", "value": "one" },
-        { "name": "Option Two", "value": "two" },
-        { "name": "Option Three", "value": "three" }
+        { "name": "Option 1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
       ]
     }
   ]
 }
 ```
 
-## 참조 {#reference}
+##### 스크린샷 {#screenshot-radio-group}
 
-참조를 사용하면 현재 개체에서 다른 데이터 개체를 참조로 지정할 수 있습니다.
+![라디오 그룹 구성 요소 유형의 스크린샷](assets/component-types/radio.png)
 
-## 선택 {#select}
+#### 참조 {#reference}
 
-선택 을 사용하면 드롭다운 메뉴에서 사전 정의된 옵션을 하나 이상 선택할 수 있습니다.
+참조 구성 요소 유형을 사용하면 현재 개체에서 다른 데이터 개체를 참조할 수 있습니다.
 
-### 샘플 {#sample-select}
-
-```json
-{
-  "fields": [   
-   {
-      "component": "select",
-      "valueType": "string",
-      "name": "field1",
-      "label": "Select",
-      "description": "This is a select.",
-      "required": true,
-      "placeholder": null,
-      "options": [
-        { "name": "Option One", "value": "one" },
-        { "name": "Option Two", "value": "two" },
-        { "name": "Option Three", "value": "three" }
-      ],
-      "emptyOption": true
-    }
-  ]
-}
-```
-
-## 텍스트 영역 {#text-area}
-
-텍스트 영역을 사용하면 여러 줄 텍스트를 입력할 수 있습니다.
-
-### 샘플 {#sample-text-area}
+##### 샘플 {#sample-reference}
 
 ```json
 {
-  "fields": [   
-   {
-      "component": "text-area",
-      "valueType": "string",
-      "name": "field1",
-      "label": "Text Area",
-      "description": "This is a text area.",
-      "required": true,
-      "multi": true,
-      "placeholder": null,
-      "mimeType": "text/x-markdown"
-    }
-  ]
-}
-```
-
-## 텍스트 입력 {#text-input}
-
-텍스트 입력을 사용하면 한 줄의 텍스트를 입력할 수 있습니다.
-
-### 샘플 {#sample-text-input}
-
-```json
-{
-  "fields": [   
-   {
-      "component": "text-input",
-      "valueType": "string",
-      "name": "field1",
-      "label": "Text Input",
-      "description": "This is a text input.",
-      "required": true,
-      "multi": true,
-      "placeholder": null
-    },
+  "id": "reference",
+  "fields": [
     {
-      "component": "text-input",
-      "valueType": "string",
-      "name": "field2",
-      "label": "Another Text Input",
-      "description": "This is a text input with validation.",
-      "required": true,
-      "multi": true,
-      "placeholder": null,
-      "validation": {
-        "minLength": 5,
-        "maxLength": 10,
-        "regExp": "^foo:.*",
-        "customErrorMsg": "I'm sorry, Dave. I can't do that."
-      }
+      "component": "reference",
+      "label": "Reference",
+      "name": "reference",
+      "valueType": "string"
     }
   ]
 }
 ```
 
-## 탭 {#tab}
+##### 스크린샷 {#screenshot-reference}
 
-탭에서는 다른 입력 필드를 여러 탭에서 함께 그룹화하여 작성자의 레이아웃 구성을 개선할 수 있습니다.
+![참조 구성 요소 유형의 스크린샷](assets/component-types/reference.png)
+
+#### 선택 {#select}
+
+구성 요소 유형 선택을 사용하면 드롭다운 메뉴의 사전 정의된 옵션 목록에서 단일 옵션을 선택할 수 있습니다.
+
+##### 샘플 {#sample-select}
+
+```json
+{
+  "id": "select",
+  "fields": [
+    {
+      "component": "select",
+      "label": "Select",
+      "name": "select",
+      "valueType": "string",
+      "options": [
+        { "name": "Option 1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
+      ]
+    }
+  ]
+}
+```
+
+##### 스크린샷 {#screenshot-select}
+
+![선택한 구성 요소 유형의 스크린샷](assets/component-types/select.png)
+
+#### 탭 {#tab}
+
+탭 구성 요소 유형을 사용하면 여러 탭에서 다른 입력 필드를 함께 그룹화하여 작성자의 레이아웃 구성을 향상시킬 수 있습니다.
 
 A `tab` 정의는 배열의 구분 기호로 생각할 수 있습니다. `fields`. 다음에 오는 모든 것 `tab` 이(가) 새 `tab` 이 발생하면 다음 항목이 새 탭에 배치됩니다.
 
 모든 탭 위에 표시되는 항목을 포함하려면 탭 앞에 항목을 정의해야 합니다.
 
-### 샘플 {#sample-tab}
+##### 샘플 {#sample-tab}
 
 ```json
 {
-  "id": "title",
+  "id": "tab",
   "fields": [
     {
       "component": "tab",
-      "label": "Tab",
+      "label": "Tab 1",
       "name": "tab1"
     },
     {
       "component": "text-input",
-      "name": "tab-response",
-      "value": "",
-      "placeholder": "Tab? I can't give you a tab unless you order something.",
-      "label": "Lou",
+      "label": "Text 1",
+      "name": "text1",
       "valueType": "string"
     },
     {
       "component": "tab",
-      "label": "Pepsi Free",
+      "label": "Tab 2",
       "name": "tab2"
     },
     {
       "component": "text-input",
-      "name": "pepsi-free-response",
-      "value": "",
-      "placeholder": "You want a Pepsi, pal, you're gonna pay for it.",
-      "label": "Mr. Carruthers",
+      "label": "Text 2",
+      "name": "text2",
       "valueType": "string"
-    },
-    {
-      "component": "select",
-      "name": "without-sugar",
-      "value": "coffee",
-      "label": "Something without sugar",
-      "valueType": "string",
-      "options": [
-        { "name": "Coffee", "value": "coffee" },
-        { "name": "Hot Coffee", "value": "hot-coffee" },
-        { "name": "Hotter Coffee", "value": "hotter-coffee" }
-      ]
     }
   ]
 }
 ```
+
+##### 스크린샷 {#screenshot-tab}
+
+![탭 구성 요소 유형의 스크린샷](assets/component-types/tab.png)
+
+#### 텍스트 영역 {#text-area}
+
+텍스트 영역을 사용하면 여러 줄의 서식 있는 텍스트를 입력할 수 있습니다. 추가 유효성 검사 유형을 제공합니다.
+
+| 유효성 검사 유형 | 값 유형 | 설명 | 필수 |
+|---|---|---|---|
+| `maxSize` | `number` | 허용되는 최대 문자 수 | 아니요 |
+| `customErrorMsg` | `string` | 다음과 같은 경우에 표시되는 메시지 `maxSize` 초과됨 | 아니요 |
+
+##### 샘플 {#sample-text-area}
+
+```json
+{
+  "id": "richtext",
+  "fields": [
+    {
+      "component": "text-area",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another-richtext",
+  "fields": [
+    {
+      "component": "text-area",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string",
+      "validation": {
+        "maxSize": 1000,
+        "customErrorMsg": "That's about as funny as a screen door on a battleship."
+      }
+    }
+  ]
+}
+```
+
+##### 스크린샷 {#screenshot-text-area}
+
+![텍스트 영역 구성 요소 유형의 스크린샷](assets/component-types/richtext.png)
+
+#### 텍스트 입력 {#text-input}
+
+텍스트 입력을 사용하면 한 줄의 텍스트를 입력할 수 있습니다.  여기에는 추가 유효성 검사 유형이 포함됩니다.
+
+| 유효성 검사 유형 | 값 유형 | 설명 | 필수 |
+|---|---|---|---|
+| `minLength` | `number` | 허용되는 최소 문자 수 | 아니요 |
+| `maxLength` | `number` | 허용되는 최대 문자 수 | 아니요 |
+| `regExp` | `string` | 입력 텍스트가 일치해야 하는 정규 표현식 | 아니요 |
+| `customErrorMsg` | `string` | 다음과 같은 경우에 표시되는 메시지 `minLength`, `maxLength`, 및/또는 `regExp` 위반됨/위반됨 | 아니요 |
+
+##### 샘플 {#sample-text-input}
+
+```json
+{
+  "id": "simpletext",
+  "fields": [
+    {
+      "component": "text-input",
+      "name": "text",
+      "label": "Simple Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another simpletext",
+  "fields": [
+    {
+      "component": "text-input",
+      "name": "text",
+      "label": "Simple Text",
+      "valueType": "string",
+      "description": "This is a text input with validation.",
+      "required": true,
+      "validation": {
+        "minLength": 1955,
+        "maxLength": 1985,
+        "regExp": "^foo:.*",
+        "customErrorMsg": "Why don't you make like a tree and get outta here?"
+      }
+    }
+  ]
+}
+```
+
+##### 스크린샷 {#screenshot-text-input}
+
+![텍스트 입력 구성 요소 유형의 스크린샷](assets/component-types/simpletext.png)
