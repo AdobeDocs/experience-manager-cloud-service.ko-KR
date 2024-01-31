@@ -2,9 +2,9 @@
 title: Edge Delivery Services을 사용한 AEM 작성을 위한 개발자 시작 안내서
 description: 이 안내서를 사용하면 Edge Delivery Services 및 컨텐츠 작성용 범용 편집기를 사용하여 새 Adobe Experience Manager 사이트를 시작하고 실행할 수 있습니다
 feature: Edge Delivery Services
-source-git-commit: eae751441435949296eb76a7e9b4103393860a8d
+source-git-commit: 5967bd78b9c23cf3451ac3b0ec2118da5200ddc1
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -48,8 +48,6 @@ AEM에서는 두 개의 서로 다른 콘텐츠 편집기를 제공하며 상황
    ![저장소 프로젝트 복사](assets/edge-dev-getting-started/use-template-project.png)
 
 1. 기본적으로 저장소가 사용자에게 할당됩니다. 필요에 따라 변경하고 저장소 이름과 설명을 입력한 다음 을(를) 클릭합니다. **저장소 만들기**.
-
-   * 저장소는 다음과 같아야 합니다. **공용**.
 
    ![저장소 만들기](assets/edge-dev-getting-started/create-repo.png)
 
