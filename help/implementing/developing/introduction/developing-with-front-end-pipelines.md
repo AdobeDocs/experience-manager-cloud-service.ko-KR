@@ -2,9 +2,9 @@
 title: 프론트엔드 파이프라인으로 Sites 개발
 description: 프론트엔드 파이프라인을 사용하면 프론트엔드 개발자에게 더 많은 독립성을 부여하고 개발 프로세스를 가속화할 수 있습니다. 이 문서에서는 제공되어야 하는 프론트엔드 빌드 프로세스의 몇 가지 특정 고려 사항에 대해 설명합니다.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: de2d4355894d166d47f49a22af773b9e2c19e67b
+source-git-commit: 74e4c4cc57dbdc78b6c93efe78c856bdafbae477
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1169'
 ht-degree: 1%
 
 ---
@@ -20,17 +20,22 @@ ht-degree: 1%
 
 ## 프론트엔드 빌드 계약 {#front-end-build-contract}
 
-와 유사 [전체 스택 빌드 환경,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 프론트엔드 파이프라인에는 자체 환경이 있습니다. 개발자는 다음 프론트엔드 빌드 계약이 준수되는 한 이 파이프라인에서 어느 정도 유연성이 있습니다.
+와 유사 [전체 스택 빌드 환경,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 프론트엔드 파이프라인에는 자체 환경이 있습니다. 개발자는 다음 프론트엔드 빌드 계약이 준수되는 한 이 파이프라인을 유연하게 사용할 수 있습니다.
 
-프론트엔드 파이프라인을 사용하려면 프론트엔드 Node.js 프로젝트가 `build` 프론트엔드 파이프라인에서 배포되는 빌드를 생성하는 스크립트 지시문입니다. 즉, Cloud Manager는 명령을 사용합니다 `npm run build` 에 배포 가능한 프로젝트를 생성하려면 `dist` 폴더를 삭제합니다.
+프론트엔드 파이프라인을 사용하려면 프론트엔드 Node.js 프로젝트가 `build` 배포되는 빌드를 생성하는 스크립트 지시문입니다. 이는 Cloud Manager가 명령을 사용하기 때문입니다 `npm run build` 프론트엔드 빌드에 대해 배포 가능한 프로젝트를 생성하려면 다음을 수행하십시오.
 
-의 콘텐츠 `dist` 폴더는 궁극적으로 Cloud Manager 파이프라인에서 AEM에 as a Cloud Service으로 배포되는 것입니다.
+의 결과 콘텐츠 `dist` 폴더는 정적 파일로 제공하는 Cloud Manager에서 최종적으로 배포하는 것입니다. 이러한 파일은 AEM 외부에서 호스팅되지만 `/content/...` 배포된 환경의 URL.
 
-### 노드 버전 {#node-versions}
+## 노드 버전 {#node-versions}
 
-기본적으로 프론트엔드 파이프라인은 노드 14를 사용하지만 12, 16 및 18도 사용할 수 있습니다.
+프론트엔드 빌드 환경은 다음 Node.js 버전을 지원합니다.
 
-다음을 사용할 수 있습니다. `NODE_VERSION` 환경 변수를 사용하여 원하는 버전을 설정합니다.
+* 12
+* 14(기본값)
+* 16
+* 18
+
+다음을 사용할 수 있습니다. `NODE_VERSION` [환경 변수](/help/implementing/cloud-manager/environment-variables.md) 원하는 버전을 설정합니다.
 
 ## 단일 진실 소스 {#single-source-of-truth}
 
