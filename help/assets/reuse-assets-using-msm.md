@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 9e0aefa096a493df22860d0194a0a76f3eaf2390
 workflow-type: tm+mt
-source-wordcount: '3403'
-ht-degree: 12%
+source-wordcount: '3400'
+ht-degree: 10%
 
 ---
 
@@ -166,7 +166,7 @@ MSM은 소스 에셋과 해당 라이브 카피 간에 라이브 관계를 유�
 * 특정 라이브 카피에 대해 관계를 일시 중단하거나 롤아웃 구성을 변경합니다.
 * 라이브 카피 개요 콘솔에 액세스합니다.
 
-소스 에셋 또는 폴더를 선택하고 왼쪽 레일을 연 다음 **[!UICONTROL 참조]**. Alternatively, select an asset or folder and use the keyboard shortcut `Alt + 4`.
+소스 에셋 또는 폴더를 선택하고 왼쪽 레일을 연 다음 **[!UICONTROL 참조]**. 또는 에셋 또는 폴더를 선택하고 키보드 단축키를 사용합니다 `Alt + 4`.
 
 ![선택한 소스에 대해 참조 레일에서 사용할 수 있는 작업 및 정보](assets/referencerail_source.png)
 
@@ -186,7 +186,7 @@ MSM은 소스 에셋과 해당 라이브 카피 간에 라이브 관계를 유�
 * 에서 특정 라이브 카피 열기 또는 표시 [!DNL Experience Manager] 사용자 인터페이스.
 * 업데이트 롤아웃
 
-Select a live copy asset or folder, open the left rail, and click **[!UICONTROL References]**. Alternatively, select an asset or folder and use the keyboard shortcut `Alt + 4`.
+Select a live copy asset or folder, open the left rail, and click **[!UICONTROL References]**. 또는 에셋 또는 폴더를 선택하고 키보드 단축키를 사용합니다 `Alt + 4`.
 
 ![Actions available in the References rail for the selected live copy](assets/referencerail_livecopy.png)
 
@@ -248,8 +248,8 @@ To see the statuses and information related to a synchronize action, see [Inform
 다음에 대한 라이브 카피 상속을 취소할 수 있습니다.
 
 * 메타데이터 필드
-* 컨텐츠 조각 변형
-* 컨텐츠 조각 데이터 필드
+* [컨텐츠 조각 변형](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
+* [컨텐츠 조각 데이터 필드](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
 
 이 경우 항목은 더 이상 소스 구성 요소와 동기화되지 않습니다. 필요한 경우 나중에 상속을 활성화할 수 있습니다.
 
@@ -319,7 +319,7 @@ However, you have the flexibility to make local modifications to a live copy to 
 
 1. 소스 폴더를 선택합니다. 클릭 **[!UICONTROL 속성]** 을 클릭합니다. 또는 키보드 단축키를 사용합니다 `p`.
 1. Click **[!UICONTROL Live Copy Source]**. To open the console, click **[!UICONTROL Live Copy Overview]**.
-1. In this dashboard, select a live copy asset from a live copy folder. Click the desired actions from the toolbar. The actions available are **[!UICONTROL Synchronize]**, **[!UICONTROL Reset]**, **[!UICONTROL Suspend]**, and **[!UICONTROL Detach]**. 선택한 소스 폴더와 라이브 관계에 있는 모든 라이브 카피 폴더의 에셋에 대해 이러한 작업을 신속하게 시작할 수 있습니다.
+1. In this dashboard, select a live copy asset from a live copy folder. Click the desired actions from the toolbar. 사용 가능한 작업은 다음과 같습니다 **[!UICONTROL 동기화]**, **[!UICONTROL 재설정]**, **[!UICONTROL 일시 중단]**, 및 **[!UICONTROL 분리]**. 선택한 소스 폴더와 라이브 관계에 있는 모든 라이브 카피 폴더의 에셋에 대해 이러한 작업을 신속하게 시작할 수 있습니다.
 
    ![라이브 카피 개요 콘솔에서 라이브 카피 폴더의 많은 에셋을 쉽게 업데이트할 수 있습니다](assets/livecopyconsole_update_many_assets.png)
 
