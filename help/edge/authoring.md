@@ -1,61 +1,61 @@
 ---
-title: Edge Delivery Services 컨텐츠 작성
-description: 컨텐츠 작성과 Edge Delivery Services 간의 연동 및 Edge Delivery Services을 통해 AEM 컨텐츠를 작성하는 방법에 대해 알아봅니다.
+title: Edge Delivery Services용 콘텐츠 작성
+description: Edge Delivery Services를 통한 콘텐츠 작성 방법과 Edge Delivery Services를 사용한 AEM 콘텐츠 작성 방법을 알아보십시오.
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 source-git-commit: 7d28a3a8304d79ecc3143bdc9373134d312af49d
 workflow-type: tm+mt
 source-wordcount: '491'
-ht-degree: 15%
+ht-degree: 93%
 
 ---
 
-# Edge Delivery Services 컨텐츠 작성 {#authoring-edge}
+# Edge Delivery Services용 콘텐츠 작성 {#authoring-edge}
 
-Edge Delivery Services를 사용하여 쉽고, 빠르고, 유연하게 콘텐츠를 작성할 수 있습니다. Edge Delivery Services을 위한 컨텐츠를 작성하는 두 가지 옵션이 있습니다.
+Edge Delivery Services를 사용하여 쉽고, 빠르고, 유연하게 콘텐츠를 작성할 수 있습니다. Edge Delivery Services용 콘텐츠를 작성하기 위한 두 가지 옵션이 있습니다.
 
-* [문서 기반 작성](#document-based) - Microsoft Word 또는 Google 문서 등
-* [유니버설 편집기](#universal-editor) - AEM 내 콘텐츠 작성을 위한 최신 UI
+* [문서 기반 작성](#document-based) - Microsoft Word 또는 Google Docs 등
+* [Universal Editor](#universal-editor) - AEM 내 콘텐츠 작성용 최신 UI
 
 ## 문서 기반 작성 {#document-based}
 
 문서 기반 작성의 경우 Microsoft Word 및 Google Docs 등 다양한 소스로 작업할 수 있습니다. 이러한 소스의 문서는 웹 사이트의 페이지가 됩니다. 제목, 목록, 이미지, 글꼴 요소 및 비디오는 모두 초기 소스에서 내 웹 사이트로 전송할 수 있습니다. SEO 용도로 메타데이터를 추가하거나 블록을 사용하여 구조화된 콘텐츠로 작업하고 기능을 추가할 수 있습니다.
 
-문서 기반 작성에 대한 자세한 내용은 을 참조하십시오. [이 문서는 Edge Delivery Services 설명서에 있습니다.](/help/edge/docs/authoring.md)
+문서 기반 작성에 대한 자세한 내용은 [Edge Delivery Services 설명서의 이 문서](/help/edge/docs/authoring.md)를 참조하십시오.
 
-## 유니버설 편집기 작성 {#universal-editor}
+## Universal Editor 작성 {#universal-editor}
 
-as a Cloud Service으로 Edge Delivery ServicesAEM 를 사용할 때 가장 기본적인 사실은 사용자가 작성하는 콘텐츠가 AEMas a Cloud Service 에서 지속된다는 것입니다.
+AEM as a Cloud Service와 함께 Edge Delivery Services를 사용할 때 이해해야 할 가장 기본적인 사실은 작성한 콘텐츠가 AEM as a Cloud Service로 유지된다는 것입니다.
 
-![Edge Delivery Services에서 AEM 작성 작동 방식](assets/how-aem-edge-works.png)
+![Edge Delivery Services와 함께 작동하는 AEM 작성 방식](assets/how-aem-edge-works.png)
 
-1. [AEM 작성 환경](/help/sites-cloud/authoring/getting-started/quick-start.md) 는 새 페이지, 경험 조각, 콘텐츠 조각 등의 만들기와 같은 콘텐츠 관리에 사용됩니다.
-   * 워크플로우, MSM, 번역, 론치 등과 같은 AEM의 모든 기능을 사용할 수 있습니다.
-1. [유니버설 편집기](/help/implementing/universal-editor/authoring.md) 는 AEM에서 관리되는 콘텐츠를 작성하는 데 사용됩니다.
-   * 유니버설 편집기는 콘텐츠 작성을 위한 새롭고 현대적인 UI를 제공합니다.
-   * 작성을 위해 AEM에서는 HTML을 렌더링하지만 Edge Delivery Services의 스크립트, 스타일, 아이콘 및 기타 리소스를 포함합니다.
-   * 범용 편집기를 사용하지만 모든 변경 사항은 AEM으로 유지됩니다.
-   * 범용 편집기는 아직 AEM 페이지 편집기와 기능 패리티가 아니며 일부 AEM 기능은 범용 편집기에서 사용하지 못할 수 있습니다.
-1. 범용 편집기로 작성하고 AEM에 지속되는 콘텐츠는 Edge Delivery Services에 게시됩니다.
-   * 콘텐츠는 AEM에 저장된 상태로 유지됩니다.
-   * AEM은 수집에 필요한 의미 체계 HTML을 렌더링합니다.
-   * 컨텐츠가 Edge Delivery Services에 게시됩니다.
-1. [Edge Delivery Services](/help/edge/developer/keeping-it-100.md) 100% Lighthouse 점수를 확인합니다.
+1. [AEM 작성 환경](/help/sites-cloud/authoring/getting-started/quick-start.md)은 새 페이지 생성, 경험 조각, 콘텐츠 조각 등과 같은 콘텐츠 관리에 사용됩니다.
+   * 워크플로, MSM, 번역, 실행 등의 모든 AEM 기능을 사용할 수 있습니다.
+1. [Universal Editor](/help/implementing/universal-editor/authoring.md)는 AEM에서 관리되는 콘텐츠를 작성하는 데 사용됩니다.
+   * Universal Editor는 콘텐츠 작성을 위한 새로운 최신 UI를 제공합니다.
+   * AEM은 작성을 위해 HTML을 렌더링하지만, Edge Delivery Services의 스크립트, 스타일, 아이콘 및 기타 리소스를 포함합니다.
+   * Universal Editor가 사용되지만, 모든 변경 사항은 AEM에 유지됩니다.
+   * Universal Editor는 아직 AEM 페이지 편집기가 있는 기능 패리티에 없으며, 일부 AEM 기능은 Universal Editor에서 사용하지 못할 수도 있습니다.
+1. Universal Editor로 작성하고 AEM에 유지하는 콘텐츠는 Edge Delivery Services에 게시됩니다.
+   * 콘텐츠는 AEM에 계속 저장됩니다.
+   * AEM은 수집에 필요한 유의미한 HTML을 렌더링합니다.
+   * 콘텐츠는 Edge Delivery Services에 게시됩니다.
+1. [Edge Delivery Services](/help/edge/developer/keeping-it-100.md)는 100%의 Lighthouse 점수를 보장합니다.
 
-블록은 Edge Delivery Services이 제공하는 페이지의 기본 구성 요소입니다. 작성자는 Adobe에 의해 표준으로 제공되는 기본 블록 또는 개발자에 의해 프로젝트에 맞게 사용자 지정된 블록 중에서 선택할 수 있습니다.
+블록은 Edge Delivery Services에서 제공하는 페이지의 기본 구성 요소입니다. 작성자는 Adobe에서 표준으로 제공하는 기본 블록 또는 개발자가 프로젝트에 맞게 사용자 정의한 블록 중에서 선택할 수 있습니다.
 
-범용 편집기는 블록을 드래그 앤 드롭하여 콘텐츠를 작성할 수 있는 현대적이고 직관적인 GUI를 제공합니다.
+Universal Editor는 블록을 드래그 앤 드롭하여 콘텐츠를 작성할 수 있는 직관적인 최신 GUI를 제공합니다.
 
-![범용 편집기에서 블록 드래그 앤 드롭](assets/blocks.png)
+![Universal Editor에서 블록 드래그 앤 드롭](assets/blocks.png)
 
-그런 다음 속성 레일에서 블록의 세부 사항을 구성할 수 있습니다.
+그런 다음 속성 레일에서 블록의 세부 정보를 구성할 수 있습니다.
 
 ![블록 속성 구성](assets/block-properties.png)
 
-범용 편집기를 사용하여 작성하는 방법에 대한 자세한 내용은 문서를 참조하십시오 [범용 편집기로 콘텐츠 작성](/help/implementing/universal-editor/authoring.md)
+Universal Editor를 사용하여 작성하는 방법에 대한 자세한 내용은 [Universal Editor를 사용하여 콘텐츠 작성](/help/implementing/universal-editor/authoring.md)을 참조하십시오.
 
 다음을 참조하십시오. [Edge Delivery Services을 사용한 AEM 작성을 위한 개발자 시작 안내서](/help/edge/edge-dev-getting-started.md) AEM 및 Edge Delivery Services을 사용하여 작성할 프로젝트를 시작하는 방법에 대해 알아봅니다.
 
-## 시작하는 방법 {#how-to-get-started}
+## 시작 방법 {#how-to-get-started}
 
 이 기능에 액세스하려면 Adobe 담당자에게 문의하십시오.

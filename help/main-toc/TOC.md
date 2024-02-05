@@ -404,7 +404,7 @@ ht-degree: 99%
       + [마이크로 프론트엔드 자산 선택기](/help/assets/asset-selector.md)
       + [마이크로 프론트엔드 대상 선택기](/help/assets/destination-selector.md)
       + [자산 공유](/help/assets/share-assets.md)
-      + [에셋 재처리](/help/assets/reprocessing.md)
+      + [자산 재처리](/help/assets/reprocessing.md)
       + [활동 및 DAM 작업 모니터링](/help/assets/assets-activity-history.md)
       + [자산 마이크로서비스 사용 시작하기](/help/assets/asset-microservices-configure-and-use.md)
       + [자산 추가 및 업로드](/help/assets/add-assets.md)
@@ -924,7 +924,7 @@ ht-degree: 99%
       + [사용자 정의 권한](/help/implementing/cloud-manager/custom-permissions.md)
       + [SLA 보고](/help/implementing/cloud-manager/sla-reporting.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
-      + [디나트라스](/help/implementing/cloud-manager/dynatrace.md)
+      + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [알림](/help/implementing/cloud-manager/notifications.md)
       + SSL 인증서 {#manage-ssl-certificates}
          + [소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
