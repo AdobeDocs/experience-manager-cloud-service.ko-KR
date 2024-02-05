@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a1a87a27d73d7472ec02de37621123bbdd3876b4
+source-git-commit: d2090fd8bee3ec3d25eb3a00925a61404d2f8b8d
 workflow-type: tm+mt
-source-wordcount: '4635'
+source-wordcount: '4630'
 ht-degree: 99%
 
 ---
@@ -1056,7 +1056,6 @@ ht-degree: 99%
       + [경험 조각 확장](/help/implementing/developing/extending/experience-fragments.md)
       + [콘텐츠 조각 맞춤화 및 확장](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [렌더링용 구성 요소를 구성하는 콘텐츠 조각](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
-      + [콘텐츠 조각 콘솔 맞춤화](/help/implementing/developing/extending/content-fragment-console-customizing.md)
       + [콘텐츠 조각 콘솔 및 편집기 맞춤화](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
       + 검색 양식 관리 {#manage-search-forms}
          + [검색 양식 구성](/help/implementing/developing/extending/search-forms.md)
