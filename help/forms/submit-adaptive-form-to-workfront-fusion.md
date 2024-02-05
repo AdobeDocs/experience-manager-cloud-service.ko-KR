@@ -6,7 +6,7 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 7cf7883e133d58145b5b3e1bb6ba8eb21ebad5d9
+source-git-commit: 52e1f57b82aec25ad61024f357016dbb5498ca1b
 workflow-type: tm+mt
 source-wordcount: '1273'
 ht-degree: 3%
@@ -22,6 +22,7 @@ ht-degree: 3%
 예를 들어 Workfront Fusion을 사용하여 적응형 양식으로 데이터를 수집하고, 데이터를 처리하고, 보관을 위해 데이터를 데이터 저장소로 전송하는 시나리오를 만들 수 있습니다. 시나리오가 설정되면 Workfront Fusion에서는 사용자가 양식을 작성할 때마다 작업을 자동으로 실행하여 데이터 저장소를 원활하게 업데이트합니다.
 
 AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 제출 액션을 제공합니다. 다음에서 이러한 옵션에 대해 자세히 알아볼 수 있습니다. [적응형 양식 제출 액션](/help/forms/configure-submit-actions-core-components.md)  기사.
+
 
 ## Adobe Workfront Fusion 사용의 이점{#advatages-of-workfront-fusion}
 
