@@ -2,10 +2,10 @@
 title: 속성 및 항목 유형
 description: 범용 편집기에 필요한 데이터 특성 및 항목 유형에 대해 알아봅니다.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 453cbaeabd28223cac5e732a551aa71f5a425839
+source-git-commit: ff8a832d61e42ac17ca37e5a3c41e39119879af6
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 82%
+ht-degree: 80%
 
 ---
 
@@ -30,11 +30,11 @@ Universal Editor에서 앱을 편집할 수 있으려면 앱이 적절하게 구
 |---|---|
 | `data-aue-resource` | 리소스에 대한 URN은 [AEM에서 Universal Editor 시작하기 문서의 페이지 계측](getting-started.md#instrument-thepage) 섹션을 참조하십시오. |
 | `data-aue-prop` | 리소스의 속성은 [AEM에서 Universal Editor 시작하기 문서의 페이지 계측](getting-started.md#instrument-thepage) 섹션을 참조하십시오. |
-| `data-aue-type` | 편집 가능한 항목 유형(예: 텍스트, 이미지 및 참조) |
+| `data-aue-type` | [편집 가능한 항목 유형](#item-types) (예: 텍스트, 이미지 및 참조) |
 | `data-aue-filter` | 사용할 수 있는 참조 정의 |
 | `data-aue-label` | 편집기에 표시되는 선택 가능한 항목에 대한 사용자 정의 레이블 정의 <br>`itemmodel`이 설정된 경우, 레이블은 모델을 통해 검색 |
 | `data-aue-model` | 속성 레일에서 양식 기반의 편집에 사용될 모델 정의 |
-| `data-aue-behavior` | 독립적 텍스트 또는 이미지가 구성 요소를 모방하여 이동할 수 있게 하거나 삭제할 수 있게 하는 등 계측의 비헤이비어를 정의합니다 |
+| `data-aue-behavior` | 다음을 정의합니다 [계기의 동작](#behaviors) 예를 들어, 독립형 텍스트 또는 이미지는 구성 요소를 모방하여 이동할 수 있거나 삭제할 수 있습니다 |
 
 ## 항목 유형 {#item-types}
 
