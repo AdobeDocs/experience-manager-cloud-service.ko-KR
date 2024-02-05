@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: deed2af943290bfab0a20b50083e2a741e7e8dfe
+source-git-commit: a1a87a27d73d7472ec02de37621123bbdd3876b4
 workflow-type: tm+mt
-source-wordcount: '4623'
+source-wordcount: '4635'
 ht-degree: 99%
 
 ---
@@ -678,6 +678,9 @@ ht-degree: 99%
       + [Forms Designer를 사용하여 템플릿 만들기](/help/forms/use-forms-designer.md)
       + [PDF 문서에서 사용자 정의 글꼴 사용하기](/help/forms/use-custom-fonts.md)
       + [알려진 문제, 모범 사례 및 자주 묻는 질문](/help/forms/communications-known-issues-limitations.md)
+   + 거래 보고서 {#using-communications}
+      + [거래 보고서 청구 가능 API](/help/forms/transaction-reports-billable-apis.md)
+      + [사용자 지정 구현에 대한 트랜잭션 기록](/help/forms/record-transaction-custom-implementation.md)
    + 개발자 API 참조 {#aem-forms-developer-api-reference}
       + [적응형 양식 API 참조](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms Cloud Service 커뮤니케이션 API 참조](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
