@@ -1,11 +1,12 @@
 ---
-description: Adobe Experience Manager은 웹 사이트의 특정 섹션에 게시된 모든 페이지의 인덱스를 유지하는 방법을 제공합니다. 일반적으로 페이지 또는 콘텐츠 조각에 대한 목록을 작성하고, 피드를 제공하고, 검색 및 필터링 사용 사례를 활성화하는 데 사용됩니다.
+description: Adobe Experience Manager는 웹 사이트의 특정 섹션에 게시된 모든 페이지의 색인을 유지하는 방법을 제공합니다. 이는 일반적으로 목록, 피드를 작성하고 페이지 또는 콘텐츠 조각에 대한 검색 및 필터링 사용 사례를 활성화하는 데 사용됩니다.
 title: 색인화
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 8ca968fd-73af-4082-bfc5-0737fdd8a5be
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '45'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 

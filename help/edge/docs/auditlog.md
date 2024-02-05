@@ -1,11 +1,12 @@
 ---
-description: 관리 및 인덱싱 작업은 관리 끝점을 통해 쿼리할 수 있는 감사 로그에 기록됩니다.
+description: 관리 및 색인화 작업은 관리 엔드포인트를 통해 쿼리할 수 있는 감사 로그에 기록됩니다.
 title: 감사 로그
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 18751843-d2c9-44d7-b354-4c551a1a634c
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '22'
-ht-degree: 18%
+ht-degree: 100%
 
 ---
 

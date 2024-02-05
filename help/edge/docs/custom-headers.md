@@ -1,14 +1,15 @@
 ---
-description: '경우에 따라 사용자 지정 HTTP 응답 헤더를 리소스에 적용하는 것이 유용합니다(예: CORS 허용). 헤더를 지정하려면 Sharepoint 또는 Google Drive의 웹 사이트 "/.headers.xlsx" 또는 Google Drive의 "headers"라는 SharePoint 폴더에 Excel 통합 문서나 Google Sheets 통합 문서를 만드십시오.'
-title: 사용자 지정 HTTP 응답 헤더
+description: CORS를 허용하기 위해 사용자 정의 HTTP 응답 헤더를 리소스에 적용하는 것이 유용한 경우도 있습니다. 헤더를 지정하려면 SharePoint의 경우 `headers.xlsx`나 Google Drive의 경우 `headers`라는 Sharepoint 또는 Google Drive 웹 사이트의 `/.helix` 폴더에 Excel 통합 문서 또는 Google Sheets 통합 문서를 만듭니다.
+title: 사용자 정의 HTTP 응답 헤더
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: ae386f02-05fd-4a6a-8285-58f207fed7bc
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '65'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# 사용자 지정 HTTP 응답 헤더
+# 사용자 정의 HTTP 응답 헤더
 
 {{$include b42d32e7-04c5-4afc-8085-7213e70db68a}}

@@ -1,13 +1,14 @@
 ---
-description: Slack은 전용 Slack 채널을 통해 진행되며 Adobe 팀과 Slack 봇 모두 질문에 답변할 수 있습니다.
+description: Slack 전용 채널을 통해 Slack을 이용할 수 있으며, Adobe 팀과 Slack 봇이 귀하의 질문에 답변해 드립니다.
 title: Slack 봇
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: c04b9391059e66b343fe2ecab90e26179b2172ac
-workflow-type: tm+mt
+exl-id: 22633bb5-35e9-4d56-b7a4-ecf6128da5e0
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '28'
-ht-degree: 14%
+ht-degree: 100%
 
 ---
 

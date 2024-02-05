@@ -1,11 +1,12 @@
 ---
-description: '"**참고**: Adobe을 사용하는 프로젝트의 경우<https: adobe.sharepoint.com="">) 여기에서 계속하십시오."'
+description: '**참고**: Adobe의 Sharepoint(&lt;https://adobe.sharepoint.com&gt;)를 사용하는 프로젝트의 경우, 여기에서 계속하십시오.'
 title: Sharepoint 사용 방법
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
-source-wordcount: '19'
-ht-degree: 0%
+exl-id: c0feb7bc-5418-4f93-bcfc-072cfe2e97bd
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
+source-wordcount: '20'
+ht-degree: 100%
 
 ---
 

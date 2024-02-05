@@ -1,11 +1,12 @@
 ---
-description: '''경우에 따라 웹 사이트에 메타데이터를 일괄적으로 적용하는 것이 유용합니다. 일반적인 사용 사례는 다음과 같습니다.'
+description: '메타데이터를 웹 사이트에 일괄 적용하는 것이 유용한 경우도 있습니다. 일반적인 사용 사례:'
 title: 대량 메타데이터
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 2d56c4e9-1a0f-470b-8c42-bc48f61ea3eb
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '22'
-ht-degree: 18%
+ht-degree: 100%
 
 ---
 
