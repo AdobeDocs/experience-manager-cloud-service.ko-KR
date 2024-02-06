@@ -1,18 +1,18 @@
 ---
-title: UI 맞춤화
-description: 콘텐츠 작성자의 요구 사항을 지원하도록 범용 편집기의 UI를 사용자 지정할 수 있는 다양한 확장 지점에 대해 알아봅니다.
+title: 범용 편집기 작성 경험 사용자 지정
+description: 콘텐츠 작성자의 요구 사항을 지원하도록 범용 편집기의 UI를 사용자 지정할 수 있는 다양한 확장 지점 및 기타 기능에 대해 알아봅니다.
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
-source-git-commit: 1bc65e65e6ce074a050e21137ce538b5c086665f
+source-git-commit: f04ab32093371ff425c4e196872738867d9ed528
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 3%
+source-wordcount: '302'
+ht-degree: 0%
 
 ---
 
 
-# UI 맞춤화 {#customizing-ui}
+# 범용 편집기 작성 경험 사용자 지정 {#customizing-ue}
 
-콘텐츠 작성자의 요구 사항을 지원하도록 범용 편집기의 UI를 사용자 지정할 수 있는 다양한 확장 지점에 대해 알아봅니다.
+콘텐츠 작성자의 요구 사항을 지원하도록 범용 편집기의 작성 환경을 사용자 정의할 수 있는 다양한 확장 지점 및 기타 기능에 대해 알아봅니다.
 
 ## 게시 비활성화 {#disable-publish}
 
@@ -59,3 +59,40 @@ data-aue-filter="container-filter"
    }
 ]
 ```
+
+## 속성 레일에서 조건부로 구성 요소 표시 및 숨기기 {#conditionally-hide}
+
+일반적으로 작성자가 구성 요소를 사용할 수 있지만 의미가 없는 상황이 있을 수 있습니다. 이러한 경우 를 추가하여 속성 레일에서 구성 요소를 숨길 수 있습니다 `condition` 속성 [구성 요소 모델의 필드.](/help/implementing/universal-editor/field-types.md#fields)
+
+다음을 사용하여 조건을 정의할 수 있습니다. [JsonLogic 스키마.](https://jsonlogic.com/) 조건이 true이면 필드가 표시됩니다. 조건이 false이면 필드가 숨겨집니다.
+
+### 샘플 모델 {#sample-model}
+
+```json
+ {
+    "id": "conditionally-revealed-component",
+    "fields": [
+      {
+        "component": "boolean",
+        "label": "Shall the text field be revealed?",
+        "name": "reveal",
+        "valueType": "boolean"
+      },
+      {
+        "component": "text-input",
+        "label": "Hidden text field",
+        "name": "hidden-text",
+        "valueType": "string",
+        "condition": { "===": [{"var" : "reveal"}, true] }
+      }
+    ]
+ }
+```
+
+#### 조건 False {#false}
+
+![숨겨진 텍스트 필드](assets/hidden.png)
+
+#### 조건 True {#true}
+
+![표시된 텍스트 필드](assets/shown.png)
