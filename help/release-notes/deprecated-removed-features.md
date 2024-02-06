@@ -2,8 +2,8 @@
 title: 더 이상 사용되지 않는/제거된 기능
 description: ' [!DNL Adobe Experience Manager]  [!DNL Cloud Service]에서 더 이상 사용되지 않으며 제거된 기능에 관련된 릴리스 정보입니다.'
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: cb2c883fbadc5347dbe5fc50337abc41d4f5cec3
-workflow-type: ht
+source-git-commit: 1da8d9395df3dd2efee7f6a57197aa3f2b27b1a4
+workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 100%
 
@@ -58,149 +58,6 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 | [!DNL Foundation] | JST 스크립팅 템플릿 지원(OSGi 번들 org.apache.sling.scripting.jst) | 해당 사항 없음 | 제거됨 |
 | [!DNL Foundation] | Apache Felix Http Whiteboard 지원 | OSGi Http Whiteboard | 2022년 3월 |
 | [!DNL Foundation] | com.adobe.granite.oauth.server 지원 | Adobe IMS 통합 | 2023년 3월 |
-
-## OSGI 구성 {#osgi-configuration}
-
-아래 두 목록은 AEM as a Cloud Service OSGi 구성 표면을 반영하여, 고객이 구성할 수 있는 항목을 설명합니다.
-
-1. 고객 코드로 구성하면 안 되는 OSGi 구성 목록
-1. 속성을 구성할 수 있지만 표시된 유효성 검사 규칙을 준수해야 하는 OSGi 구성 목록입니다. 이러한 규칙에는 속성 선언이 필요한지 여부, 해당 유형 및 경우에 따라 허용되는 값 범위가 포함됩니다.
-
-OSGI 구성이 나열되지 않은 경우, 고객 코드로 구성되었을 수 있습니다.
-
-Cloud Manager 빌드 프로세스 중에 이러한 규칙의 유효성이 검사됩니다. 시간이 지남에 따라 다른 규칙이 추가될 수 있으며, 예상 시행 일자는 표에 명시되어 있습니다. 고객은 목표 시행 일자까지 이러한 규칙을 준수해야 합니다. 제거 날짜 이후에 규칙을 준수하지 않으면 Cloud Manager 빌드 프로세스에서 오류가 발생합니다. Maven 프로젝트에는 로컬 SDK 개발 중 OSGI 구성 오류에 플래그를 지정하도록 [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html)을 포함해야 합니다.
-
-OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying/configuring-osgi.md)에서 확인할 수 있습니다.
-
-+++수정할 수 없는 OSGi 구성입니다.
-* **`org.apache.felix.webconsole.internal.servlet.OsgiManager`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
-* **`com.day.cq.auth.impl.cug.CugSupportImpl`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
-* **`com.day.cq.jcrclustersupport.ClusterStartLevelController`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
-* **`org.apache.felix.http (Factory)`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
-* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`**(공지 일자: 2021년 8월 25일, 시행 일자: 2021년 11월 26일)
-+++
-
-+++OSGi 구성에는 빌드 유효성 검사 규칙이 적용됩니다.
-* **`org.apache.felix.eventadmin.impl.EventAdmin`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
-* `org.apache.felix.eventadmin.ThreadPoolSize`
-   * 유형: 정수
-   * 필수 범위: 2~100
-* `org.apache.felix.eventadmin.AsyncToSyncThreadRatio`
-   * 유형: 중복 요소
-* `org.apache.felix.eventadmin.Timeout`
-   * 유형: 정수
-* `org.apache.felix.eventadmin.RequireTopic`
-   * 유형: 부울
-* `org.apache.felix.eventadmin.IgnoreTimeout`
-   * 필수
-   * 유형: 문자열 배열
-   * 필수 범위: 적어도 `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`를 모두 포함해야 함
-* `org.apache.felix.eventadmin.IgnoreTopic`
-   * 유형: 문자열 배열
-* **`org.apache.felix.http`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
-   * `org.apache.felix.http.timeout`
-      * 유형: 정수
-   * `org.apache.felix.http.session.timeout`
-      * 유형: 정수
-   * `org.apache.felix.http.jetty.threadpool.max`
-      * 유형: 정수
-   * `org.apache.felix.http.jetty.headerBufferSize`
-      * 유형: 정수
-   * `org.apache.felix.http.jetty.requestBufferSize`
-      * 유형: 정수
-   * `org.apache.felix.http.jetty.responseBufferSize`
-      * 유형: 정수
-   * `org.apache.felix.http.jetty.maxFormSize`
-      * 유형: 정수
-   * `org.apache.felix.https.jetty.session.cookie.httpOnly`
-      * 유형: 부울
-   * `org.apache.felix.https.jetty.session.cookie.secure`
-      * 유형: 부울
-   * `org.eclipse.jetty.servlet.SessionIdPathParameterName`
-      * 유형: 문자열
-   * `org.eclipse.jetty.servlet.CheckingRemoteSessionIdEncoding`
-      * 유형: 부울
-   * `org.eclipse.jetty.servlet.SessionCookie`
-      * 유형: 문자열
-   * `org.eclipse.jetty.servlet.SessionDomain`
-      * 유형: 문자열
-   * `org.eclipse.jetty.servlet.SessionPath`
-      * 유형: 문자열
-   * `org.eclipse.jetty.servlet.MaxAge`
-      * 유형: 정수
-   * `org.eclipse.jetty.servlet.SessionScavengingInterval`
-      * 유형: 정수
-   * `org.apache.felix.jetty.gziphandler.enable`
-      * 유형: 부울
-   * `org.apache.felix.jetty.gzip.minGzipSize`
-      * 유형: 정수
-   * `org.apache.felix.jetty.gzip.compressionLevel`
-      * 유형: 정수
-   * `org.apache.felix.jetty.gzip.inflateBufferSize`
-      * 유형: 정수
-   * `org.apache.felix.jetty.gzip.syncFlush`
-      * 유형: 부울
-   * `org.apache.felix.jetty.gzip.excludedUserAgents`
-      * 유형: 문자열
-   * `org.apache.felix.jetty.gzip.includedMethods`
-      * 유형: 문자열 배열
-   * `org.apache.felix.jetty.gzip.excludedMethods`
-      * 유형: 문자열 배열
-   * `org.apache.felix.jetty.gzip.includedPaths`
-      * 유형: 문자열 배열
-   * `org.apache.felix.jetty.gzip.excludedPaths`
-      * 유형: 문자열 배열
-   * `org.apache.felix.jetty.gzip.includedMimeTypes`
-      * 유형: 문자열 배열
-   * `org.apache.felix.jetty.gzip.excludedMimeTypes`
-      * 유형: 문자열 배열
-   * `org.apache.felix.http.session.invalidate`
-      * 유형: 부울
-   * `org.apache.felix.http.session.container.attribute`
-      * 유형: 문자열 배열
-   * `org.apache.felix.http.session.uniqueid`
-      * 유형: 부울
-* **`org.apache.sling.scripting.cache`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
-   * `org.apache.sling.scripting.cache.size`
-      * 유형: 정수
-      * 필수 범위: >= 2,048
-   * `org.apache.sling.scripting.cache.additional_extensions`
-      * 필수
-      * 유형: 문자열 배열
-      * 필수 범위: js를 포함해야 함
-* **`com.day.cq.mailer.DefaultMailService`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
-   * `smtp.host`
-      * 유형: 문자열
-   * `smtp.port`
-      * 유형: 정수
-      * 필수 범위: 465, 587 또는 25
-   * `smtp.user`
-      * 유형: 문자열
-   * `smtp.password`
-      * 유형: 문자열
-   * `from.address`
-      * 유형: 문자열
-   * `smtp.ssl`
-      * 유형: 문자열
-   * `smtp.starttls`
-      * 유형: 부울
-   * `smtp.requiretls`
-      * 유형: 부울
-   * `debug.email`
-      * 유형: 부울
-   * `oauth.flow`
-      * 유형: 부울
-* **`org.apache.sling.commons.log.LogManager.factory.config`**(공지 일자: 2021년 11월 16일, 시행 일자: 2021년 2월 16일)
-   * `org.apache.sling.commons.log.level`
-      * 유형: 열거
-      * 필수 범위: INFO, DEBUG 또는 TRACE
-   * `org.apache.sling.commons.log.names`
-      * 유형: 문자열
-   * `org.apache.sling.commons.log.file`
-      * 유형: 문자열
-   * `org.apache.sling.commons.log.additiv`
-      * 유형: 부울
-+++
 
 ## AEM API {#aem-apis}
 
@@ -413,3 +270,147 @@ OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying
 </tbody>
 </table>
 </details>
+
+## OSGI 구성 {#osgi-configuration}
+
+아래 두 목록은 AEM as a Cloud Service OSGi 구성 표면을 반영하여, 고객이 구성할 수 있는 항목을 설명합니다.
+
+1. 고객 코드로 구성하면 안 되는 OSGi 구성 목록
+1. 속성을 구성할 수 있지만 표시된 유효성 검사 규칙을 준수해야 하는 OSGi 구성 목록입니다. 이러한 규칙에는 속성 선언이 필요한지 여부, 해당 유형 및 경우에 따라 허용되는 값 범위가 포함됩니다.
+
+OSGI 구성이 나열되지 않은 경우, 고객 코드로 구성되었을 수 있습니다.
+
+Cloud Manager 빌드 프로세스 중에 이러한 규칙의 유효성이 검사됩니다. 시간이 지남에 따라 다른 규칙이 추가될 수 있으며, 예상 시행 일자는 표에 명시되어 있습니다. 고객은 목표 시행 일자까지 이러한 규칙을 준수해야 합니다. 제거 날짜 이후에 규칙을 준수하지 않으면 Cloud Manager 빌드 프로세스에서 오류가 발생합니다. Maven 프로젝트에는 로컬 SDK 개발 중 OSGI 구성 오류에 플래그를 지정하도록 [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html)을 포함해야 합니다.
+
+OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying/configuring-osgi.md)에서 확인할 수 있습니다.
+
++++수정할 수 없는 OSGi 구성입니다.
+* **`org.apache.felix.webconsole.internal.servlet.OsgiManager`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
+* **`com.day.cq.auth.impl.cug.CugSupportImpl`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
+* **`com.day.cq.jcrclustersupport.ClusterStartLevelController`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
+* **`org.apache.felix.http (Factory)`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
+* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`**(공지 일자: 2021년 8월 25일, 시행 일자: 2021년 11월 26일)
++++
+
++++OSGi 구성에는 빌드 유효성 검사 규칙이 적용됩니다.
+* **`org.apache.felix.eventadmin.impl.EventAdmin`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
+* `org.apache.felix.eventadmin.ThreadPoolSize`
+   * 유형: 정수
+   * 필수 범위: 2~100
+* `org.apache.felix.eventadmin.AsyncToSyncThreadRatio`
+   * 유형: 중복 요소
+* `org.apache.felix.eventadmin.Timeout`
+   * 유형: 정수
+* `org.apache.felix.eventadmin.RequireTopic`
+   * 유형: 부울
+* `org.apache.felix.eventadmin.IgnoreTimeout`
+   * 필수
+   * 유형: 문자열 배열
+   * 필수 범위: 적어도 `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`를 모두 포함해야 함
+* `org.apache.felix.eventadmin.IgnoreTopic`
+   * 유형: 문자열 배열
+* **`org.apache.felix.http`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
+   * `org.apache.felix.http.timeout`
+      * 유형: 정수
+   * `org.apache.felix.http.session.timeout`
+      * 유형: 정수
+   * `org.apache.felix.http.jetty.threadpool.max`
+      * 유형: 정수
+   * `org.apache.felix.http.jetty.headerBufferSize`
+      * 유형: 정수
+   * `org.apache.felix.http.jetty.requestBufferSize`
+      * 유형: 정수
+   * `org.apache.felix.http.jetty.responseBufferSize`
+      * 유형: 정수
+   * `org.apache.felix.http.jetty.maxFormSize`
+      * 유형: 정수
+   * `org.apache.felix.https.jetty.session.cookie.httpOnly`
+      * 유형: 부울
+   * `org.apache.felix.https.jetty.session.cookie.secure`
+      * 유형: 부울
+   * `org.eclipse.jetty.servlet.SessionIdPathParameterName`
+      * 유형: 문자열
+   * `org.eclipse.jetty.servlet.CheckingRemoteSessionIdEncoding`
+      * 유형: 부울
+   * `org.eclipse.jetty.servlet.SessionCookie`
+      * 유형: 문자열
+   * `org.eclipse.jetty.servlet.SessionDomain`
+      * 유형: 문자열
+   * `org.eclipse.jetty.servlet.SessionPath`
+      * 유형: 문자열
+   * `org.eclipse.jetty.servlet.MaxAge`
+      * 유형: 정수
+   * `org.eclipse.jetty.servlet.SessionScavengingInterval`
+      * 유형: 정수
+   * `org.apache.felix.jetty.gziphandler.enable`
+      * 유형: 부울
+   * `org.apache.felix.jetty.gzip.minGzipSize`
+      * 유형: 정수
+   * `org.apache.felix.jetty.gzip.compressionLevel`
+      * 유형: 정수
+   * `org.apache.felix.jetty.gzip.inflateBufferSize`
+      * 유형: 정수
+   * `org.apache.felix.jetty.gzip.syncFlush`
+      * 유형: 부울
+   * `org.apache.felix.jetty.gzip.excludedUserAgents`
+      * 유형: 문자열
+   * `org.apache.felix.jetty.gzip.includedMethods`
+      * 유형: 문자열 배열
+   * `org.apache.felix.jetty.gzip.excludedMethods`
+      * 유형: 문자열 배열
+   * `org.apache.felix.jetty.gzip.includedPaths`
+      * 유형: 문자열 배열
+   * `org.apache.felix.jetty.gzip.excludedPaths`
+      * 유형: 문자열 배열
+   * `org.apache.felix.jetty.gzip.includedMimeTypes`
+      * 유형: 문자열 배열
+   * `org.apache.felix.jetty.gzip.excludedMimeTypes`
+      * 유형: 문자열 배열
+   * `org.apache.felix.http.session.invalidate`
+      * 유형: 부울
+   * `org.apache.felix.http.session.container.attribute`
+      * 유형: 문자열 배열
+   * `org.apache.felix.http.session.uniqueid`
+      * 유형: 부울
+* **`org.apache.sling.scripting.cache`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
+   * `org.apache.sling.scripting.cache.size`
+      * 유형: 정수
+      * 필수 범위: >= 2,048
+   * `org.apache.sling.scripting.cache.additional_extensions`
+      * 필수
+      * 유형: 문자열 배열
+      * 필수 범위: js를 포함해야 함
+* **`com.day.cq.mailer.DefaultMailService`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
+   * `smtp.host`
+      * 유형: 문자열
+   * `smtp.port`
+      * 유형: 정수
+      * 필수 범위: 465, 587 또는 25
+   * `smtp.user`
+      * 유형: 문자열
+   * `smtp.password`
+      * 유형: 문자열
+   * `from.address`
+      * 유형: 문자열
+   * `smtp.ssl`
+      * 유형: 문자열
+   * `smtp.starttls`
+      * 유형: 부울
+   * `smtp.requiretls`
+      * 유형: 부울
+   * `debug.email`
+      * 유형: 부울
+   * `oauth.flow`
+      * 유형: 부울
+* **`org.apache.sling.commons.log.LogManager.factory.config`**(공지 일자: 2021년 11월 16일, 시행 일자: 2021년 2월 16일)
+   * `org.apache.sling.commons.log.level`
+      * 유형: 열거
+      * 필수 범위: INFO, DEBUG 또는 TRACE
+   * `org.apache.sling.commons.log.names`
+      * 유형: 문자열
+   * `org.apache.sling.commons.log.file`
+      * 유형: 문자열
+   * `org.apache.sling.commons.log.additiv`
+      * 유형: 부울
++++
+
