@@ -1,15 +1,15 @@
 ---
-title: 디나트라스
+title: Dynatrace
 description: AEMas a Cloud Service 으로 Dynatrace를 사용하는 방법에 대해 알아보십시오.
 exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
-source-git-commit: a234f2a00c51bcb23b0c52feac9971259d26b8c3
+source-git-commit: fec3aa6debec49014406ab241c3ce0338ec5a1d2
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
 
-# 디나트라스 {#dynatrace}
+# Dynatrace {#dynatrace}
 
 AdobeAEM 는 Dynatrace를 사용하여 엔터프라이즈 배포의 일부로 as a Cloud Service을 모니터링하고, 잠재적인 문제의 원인을 파악하고, 필요에 따라 문제를 해결하기 위한 조치를 취하는 기능을 제공합니다.
 
@@ -27,13 +27,13 @@ Dynatrace 고객은 고객 지원 티켓을 통해 연결을 요청하여 AEM �
 
 | **필드** | **설명** |
 |---|---|
-| Dynatrace 환경 URL | Dynatrace 환경 URL.<br><br>Dynatrace SaaS 고객의 경우 형식은 다음과 같습니다. `https://<your-environment-id>.live.dynatrace.com`.<br><br>Dynatrace Managed 고객의 경우 형식은 다음과 같습니다 `https://<your-managed-url>/e/<environmentId>` |
-| Dynatrace 환경 ID | Dynatrace 환경 ID입니다. 다음을 참조하십시오. [Dynatrace 환경 정보 가져오기](#get-dynatrace-env-info) 이걸 어떻게 구해야 할지. |
-| Dynatrace 환경 토큰 | Dynatrace 환경 토큰. 다음을 참조하십시오. [Dynatrace 환경 정보 가져오기](#get-dynatrace-env-info) 이걸 어떻게 구해야 할지.<br><br>이는 비밀로 간주되어야 하므로 적절한 보안 방법을 사용하십시오. 예를 들어 암호는 와 같은 웹 사이트에서 보호합니다. **zerobin.net**&#x200B;고객 지원 티켓에서 암호와 함께 참조할 수 있는 입니다. |
-| Dynatrace API 액세스 토큰 | Dynatrace 환경의 API 액세스 토큰입니다.  다음을 참조하십시오. [Dynatrace API 액세스 토큰 만들기](#create-dynatrace-access-token) 을(를) 만드는 방법에 대해 설명합니다.<br><br>이는 비밀로 간주되어야 하므로 적절한 보안 방법을 사용하십시오. 예를 들어 암호는 와 같은 웹 사이트에서 보호합니다. **zerobin.net**&#x200B;고객 지원 티켓에서 암호와 함께 참조할 수 있는 입니다.<br><br>참고: 이는 Dynatrace Managed에만 필요합니다. |
-| Dynatrace ActiveGate 포트 | AEM 통합이 연결해야 하는 Dynatrace ActiveGate 포트입니다.<br><br>참고: 이는 Dynatrace Managed에만 필요합니다. |
-| Dynatrace ActiveGate 네트워크 영역 | 사용자 [Dynatrace ActiveGate 네트워크 영역](https://docs.dynatrace.com/docs/manage/network-zones) 데이터 센터 및 네트워크 지역 간에 AEM 모니터링 데이터를 효율적으로 라우팅합니다.<br><br>참고: Dynatrace ActiveGate 네트워크 영역은 선택 사항입니다. |
-| AEM 환경 ID | 모니터링할 AEM 환경 ID. |
+| [!DNL Dynatrace Environment URL] | Dynatrace 환경 URL.<br><br>Dynatrace SaaS 고객의 경우 형식은 다음과 같습니다. `https://<your-environment-id>.live.dynatrace.com`.<br><br>Dynatrace Managed 고객의 경우 형식은 다음과 같습니다 `https://<your-managed-url>/e/<environmentId>` |
+| [!DNL Dynatrace Environment ID] | Dynatrace 환경 ID입니다. 다음을 참조하십시오. [Dynatrace 환경 정보 가져오기](#get-dynatrace-env-info) 이걸 어떻게 구해야 할지. |
+| [!DNL Dynatrace Environment Token] | Dynatrace 환경 토큰. 다음을 참조하십시오. [Dynatrace 환경 정보 가져오기](#get-dynatrace-env-info) 이걸 어떻게 구해야 할지.<br><br>이는 비밀로 간주되어야 하므로 적절한 보안 방법을 사용하십시오. 예를 들어 암호는 와 같은 웹 사이트에서 보호합니다. **zerobin.net**&#x200B;고객 지원 티켓에서 암호와 함께 참조할 수 있는 입니다. |
+| [!DNL Dynatrace API access token] | Dynatrace 환경의 API 액세스 토큰입니다.  다음을 참조하십시오. [Dynatrace API 액세스 토큰 만들기](#create-dynatrace-access-token) 을(를) 만드는 방법에 대해 설명합니다.<br><br>이는 비밀로 간주되어야 하므로 적절한 보안 방법을 사용하십시오. 예를 들어 암호는 와 같은 웹 사이트에서 보호합니다. **zerobin.net**&#x200B;고객 지원 티켓에서 암호와 함께 참조할 수 있는 입니다.<br><br>참고: 이는 Dynatrace Managed에만 필요합니다. |
+| [!DNL Dynatrace ActiveGate Port] | AEM 통합이 연결해야 하는 Dynatrace ActiveGate 포트입니다.<br><br>참고: 이는 Dynatrace Managed에만 필요합니다. |
+| [!DNL Dynatrace ActiveGate Network Zone] | 사용자 [Dynatrace ActiveGate 네트워크 영역](https://docs.dynatrace.com/docs/manage/network-zones) 데이터 센터 및 네트워크 지역 간에 AEM 모니터링 데이터를 효율적으로 라우팅합니다.<br><br>참고: Dynatrace ActiveGate 네트워크 영역은 선택 사항입니다. |
+| [!DNL AEM Environment ID(s)] | 모니터링할 AEM 환경 ID. |
 
 >[!NOTE]
 >
@@ -43,13 +43,13 @@ Dynatrace 고객은 고객 지원 티켓을 통해 연결을 요청하여 AEM �
 ## Dynatrace API 액세스 토큰 만들기 {#create-dynatrace-access-token}
 
 1. Dynatrace 환경에 로그인합니다.
-1. Dynatrace 메뉴에서 관리 > 토큰 액세스로 이동합니다.
-1. 새 토큰 생성을 선택합니다.
-1. 토큰 이름을 정의합니다.
+1. 다음에서 [!DNL Dynatrace] 메뉴, 이동 [!DNL Manage] > [!DNL Access tokens].
+1. 선택 [!DNL Generate new token].
+1. 정의 [!DNL token name].
 
-1. 선택 사항: 만료 날짜를 설정합니다. 만료되기 전에 새 토큰을 생성하십시오.
-1. 토큰 범위를 PaaS 통합 - 설치 관리자 다운로드로 설정
-1. 토큰 생성을 선택합니다.
+1. 선택 사항: [!DNL expiration date]. 만료되기 전에 새 토큰을 생성하십시오.
+1. 설정 [!DNL token scope] 끝 [!DNL PaaS integration - Installer download]
+1. 선택 [!DNL Generate token].
 1. 생성된 액세스 토큰을 복사하여 안전한 장소에 저장합니다.
 
 
