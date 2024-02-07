@@ -2,10 +2,10 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] 릴리스 정보'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] 릴리스 정보'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: b1c5df329e45128704ae82f49673c6a755a61a73
-workflow-type: ht
-source-wordcount: '1573'
-ht-degree: 100%
+source-git-commit: 439ae08bb606d6d335fa189e99c1b483f636683e
+workflow-type: tm+mt
+source-wordcount: '1624'
+ht-degree: 96%
 
 ---
 
@@ -15,11 +15,34 @@ ht-degree: 100%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Workfront for Experience Manager enhanced connector] 최신 버전 1.9.16의 릴리스 일자는 2024년 1월 19일입니다
+의 최신 버전 1.9.17에 대한 릴리스 날짜 [!DNL Workfront for Experience Manager enhanced connector] 는 2024년 2월 7일입니다.
 
 ## 릴리스 하이라이트 {#release-highlights}
 
 최신 버전의 [!DNL Workfront for Experience Manager enhanced connector]에는 다음과 같은 버그 수정 사항이 포함됩니다.
+
+* AEM Cloud 고객이 커넥터를 구성하고 설정할 수 있도록 토글 기능을 활성화합니다.
+
+* 닫기 `resourceResolver` 기본 세션을 명시적으로 닫지 않으면 AEM 인스턴스에서 세션 누수가 발생합니다. Resource Resolver를 자동으로 닫으면 세션이 묵시적으로 닫히지 않으므로 세션을 명시적으로 닫는 것이 중요합니다.
+
+>[!NOTE]
+>
+>AEM 6.4는 확장 지원이 종료되었습니다. [ 기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html)을 참조하십시오. [여기](https://experienceleague.adobe.com/docs/?lang=en)에서 지원되는 버전을 확인하십시오.
+
+
+>[!IMPORTANT]
+>
+>Adobe는 [의 ](/help/assets/workfront-connector-install.md)최신 1.9.17 버전으로 업그레이드[!DNL Workfront for Experience Manager enhanced connector]할 것을 권장합니다.
+
+## 알려진 문제 {#known-issues}
+
+* AEM 6.4로 프로젝트 연결 폴더를 구성하는 동안 Experience Manager는 포트폴리오 필드가 있는 프로젝트에서 **[!UICONTROL 하위 폴더]** 및 **[!UICONTROL 연결 폴더 생성]**&#x200B;에 대한 값을 저장하지 않습니다. **[!UICONTROL 정의되지 않음]**&#x200B;으로 업데이트되는 **[!UICONTROL 하위 폴더]**&#x200B;의 값이고 구성을 저장한 후 포트폴리오 필드가 **[!UICONTROL 기본 포트폴리오]**&#x200B;로 자동 업데이트되는 **[!UICONTROL 프로젝트에 연결된 폴더 생성]**&#x200B;의 값입니다.
+
+* 기존의 Workfront 경험을 사용하는 경우, **[!UICONTROL 추가]** 드롭다운 목록에서 사용할 수 있는 **[!UICONTROL 수신인]** 옵션을 사용하면 Experience Manager에서 타깃 대상을 선택할 수 없습니다. **[!UICONTROL 수신인]** 옵션은 **[!UICONTROL 문서 작업]** 드롭다운 목록을 사용하여 올바르게 작동합니다. The **[!UICONTROL 수신인]** 옵션은 새로운 Workfront 경험에서 사용할 수 있는 **[!UICONTROL 추가]** 드롭다운 목록 및 **[!UICONTROL 문서 작업]** 목록에서 올바르게 작동합니다.
+
+## 이전 출시 버전 {#previous-releases}
+
+### 2024년 1월 릴리스 {#january-2023-release}
 
 * 현재 [!DNL CRX DE]의 [!DNL Workfront] 구성은 `project ID`를 저장하지 않으므로, 읽기 전용 권한을 적용할 때 오류가 발생합니다. [권한 구성](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders) 방법에 대해 자세히 알아보십시오.
 
@@ -36,23 +59,6 @@ ht-degree: 100%
 * AEM에서 대용량 파일 자산에 대한 지원이 부족하면 4바이트 크기 문제가 발생합니다.
 
 * 연결된 폴더, 문서 업데이트 및 메모 업데이트의 중요한 흐름에 대한 요청 시간 처리가 없습니다.
-
->[!NOTE]
->
->AEM 6.4는 확장 지원이 종료되었습니다. [ 기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html)을 참조하십시오. [여기](https://experienceleague.adobe.com/docs/?lang=en)에서 지원되는 버전을 확인하십시오.
-
-
->[!IMPORTANT]
->
->Adobe는 [의 ](/help/assets/workfront-connector-install.md)최신 1.9.16 버전으로 업그레이드[!DNL Workfront for Experience Manager enhanced connector]할 것을 권장합니다.
-
-## 알려진 문제 {#known-issues}
-
-* AEM 6.4로 프로젝트 연결 폴더를 구성하는 동안 Experience Manager는 포트폴리오 필드가 있는 프로젝트에서 **[!UICONTROL 하위 폴더]** 및 **[!UICONTROL 연결 폴더 생성]**&#x200B;에 대한 값을 저장하지 않습니다. **[!UICONTROL 정의되지 않음]**&#x200B;으로 업데이트되는 **[!UICONTROL 하위 폴더]**&#x200B;의 값이고 구성을 저장한 후 포트폴리오 필드가 **[!UICONTROL 기본 포트폴리오]**&#x200B;로 자동 업데이트되는 **[!UICONTROL 프로젝트에 연결된 폴더 생성]**&#x200B;의 값입니다.
-
-* 기존의 Workfront 경험을 사용하는 경우, **[!UICONTROL 추가]** 드롭다운 목록에서 사용할 수 있는 **[!UICONTROL 수신인]** 옵션을 사용하면 Experience Manager에서 타깃 대상을 선택할 수 없습니다. **[!UICONTROL 수신인]** 옵션은 **[!UICONTROL 문서 작업]** 드롭다운 목록을 사용하여 올바르게 작동합니다. The **[!UICONTROL 수신인]** 옵션은 새로운 Workfront 경험에서 사용할 수 있는 **[!UICONTROL 추가]** 드롭다운 목록 및 **[!UICONTROL 문서 작업]** 목록에서 올바르게 작동합니다.
-
-## 이전 출시 버전 {#previous-releases}
 
 ### 2023년 11월 릴리스 {#november-2023-release}
 
