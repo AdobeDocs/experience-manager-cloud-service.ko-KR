@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3d5901e6543b0b5d3214e69c5119367eeb71bf07
+source-git-commit: c986f817b2dc81e03b9c6f725d8754f017a585dd
 workflow-type: tm+mt
 source-wordcount: '4633'
 ht-degree: 99%
@@ -78,15 +78,15 @@ ht-degree: 99%
    + AEMaaCS 유지 관리 릴리스 정보 {#maintenance}
       + [현재 유지 관리 릴리스 정보](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
-         + [2023.11.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2023/2023.11.0.md)
-         + [2023.10.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2023/2023.10.0.md)
-         + [2023.9.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2023/2023.9.0.md)
-         + [2023.8.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2023/2023.8.0.md)
-         + [2023.7.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2023/2023.7.0.md)
-         + [2023.6.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2023/2023.6.0.md)
-         + [2023.4.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2023/2023.4.0.md)
-         + [2023.2.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2023/2023.2.0.md)
-         + [2023.1.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2023/2023.1.0.md)
+         + [2023.11.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2023/2023-11-0.md)
+         + [2023.10.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2023/2023-10-0.md)
+         + [2023.9.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2023/2023-9-0.md)
+         + [2023.8.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2023/2023-8-0.md)
+         + [2023.7.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2023/2023-7-0.md)
+         + [2023.6.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2023/2023-6-0.md)
+         + [2023.4.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2023/2023-4-0.md)
+         + [2023.2.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2023/2023-2-0.md)
+         + [2023.1.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2023/2023-1-0.md)
    + Cloud Manager 릴리스 정보 {#cloud-manager}
       + [최신 릴리스 정보](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
