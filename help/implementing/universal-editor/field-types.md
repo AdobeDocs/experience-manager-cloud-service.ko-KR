@@ -2,9 +2,9 @@
 title: 모델 정의, 필드 및 구성 요소 유형
 description: 예가 포함된 속성 레일에서 유니버설 편집기가 편집할 수 있는 필드 및 구성 요소 유형에 대해 알아봅니다. 모델 정의를 만들고 구성 요소에 연결하여 나만의 앱을 계측하는 방법을 이해합니다.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: c721e2f5f14e9d1c069e1dd0a00609980db6bd9d
+source-git-commit: 550d26cde3d6b7be419bc9df70db8894851361c6
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1004'
 ht-degree: 11%
 
 ---
@@ -81,7 +81,7 @@ ht-degree: 11%
 | `required` | `boolean` | 필수 필드임 | 아니요 |
 | `readOnly` | `boolean` | 필드가 읽기 전용임 | 아니요 |
 | `hidden` | `boolean` | 기본적으로 필드가 숨겨져 있음 | 아니요 |
-| `condition` | `RulesLogic` | 필드를 표시하거나 숨기는 규칙 | 아니요 |
+| `condition` | `RulesLogic` | 다음을 기반으로 필드를 표시하거나 숨기는 규칙: [조건](/help/implementing/universal-editor/customizing.md#conditionally-hide) | 아니요 |
 | `multi` | `boolean` | 필드가 다중 필드입니까 | 아니요 |
 | `validation` | `ValidationType` | 필드에 대한 유효성 검사 규칙 | 아니요 |
 | `raw` | `unknown` | 구성 요소에서 사용할 수 있는 원시 데이터 | 아니요 |

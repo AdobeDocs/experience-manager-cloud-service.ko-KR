@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: f04ab32093371ff425c4e196872738867d9ed528
+source-git-commit: 3d5901e6543b0b5d3214e69c5119367eeb71bf07
 workflow-type: tm+mt
-source-wordcount: '4631'
+source-wordcount: '4633'
 ht-degree: 99%
 
 ---
@@ -766,11 +766,12 @@ ht-degree: 99%
 + Edge Delivery Services {#edge-delivery}
    + [AEM 및 Edge Delivery Services](/help/edge/overview.md)
    + [Edge Delivery 사용](/help/edge/using.md)
+   + [개발자 시작 안내서](/help/edge/edge-dev-getting-started.md)
    + [Edge Delivery용 콘텐츠 작성](/help/edge/authoring.md)
    + [Edge Delivery용 콘텐츠 게시](/help/edge/publishing.md)
    + [Edge Delivery용 개발](/help/edge/developing.md)
+   + [콘텐츠 모델링](/help/edge/content-modeling.md)
    + [기존 프로젝트 및 Edge Delivery](/help/edge/existing-projects.md)
-   + [개발자 시작 안내서](/help/edge/edge-dev-getting-started.md)
    + Edge Delivery 애플리케이션 빌드 {#build}
       + [시작하기 - 개발자 튜토리얼](/help/edge/developer/tutorial.md)
       + [프로젝트의 구조](/help/edge/developer/anatomy-of-a-franklin-project.md)
