@@ -3,7 +3,7 @@ title: KPI 액세스
 description: KPI에 액세스하고 보고 프로세스를 정의하는 방법에 대해 알아보기
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 100%
 
