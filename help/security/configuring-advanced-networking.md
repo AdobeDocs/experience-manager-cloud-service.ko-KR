@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에 대한 고급 네트워킹 구성
 description: AEM as a Cloud Service에 대해 VPN 또는 유연한/전용 이그레스 IP 주소와 같은 고급 네트워킹 기능을 구성하는 방법에 대해 알아봅니다.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: dfeeaca8341abec5d4fd518957baf6936a21aea3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3540'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ AEM as a Cloud Service는 Cloud Manager API를 사용하여 구성할 수 있는
 * [전용 이그레스 IP 주소](#dedicated-egress-IP-address) - AEM as a Cloud Service의 트래픽을 고유 IP에서 생성되도록 구성합니다.
 * [Virtual Private Network(VPN)](#vpn) - VPN 기술을 보유한 고객에 대해 고객 인프라 및 AEM as a Cloud Service 간의 트래픽을 보호합니다.
 
-이 문서에서는 구성 방법을 포함하여 이러한 옵션 각각에 대해 자세히 설명합니다. 일반적인 구성 전략으로, 프로그램 수준에서 `/networkInfrastructures` API 엔드포인트가 호출되어 원하는 고급 네트워킹 유형을 선언한 다음 각 환경에 대해 `/advancedNetworking` 엔드포인트가 호출되어 인프라를 활성화하고 환경별 매개변수를 구성합니다. 각 형식 구문, 샘플 요청 및 응답은 Cloud Manager API 설명서에 기재된 적절한 엔드포인트를 참조하십시오.
+이 문서에서는 구성 방법을 포함하여 이들 옵션 각각에 대해 자세히 설명합니다. 일반적인 구성 전략으로, 프로그램 수준에서 `/networkInfrastructures` API 엔드포인트가 호출되어 원하는 고급 네트워킹 유형을 선언한 다음 각 환경에 대해 `/advancedNetworking` 엔드포인트가 호출되어 인프라를 활성화하고 환경별 매개변수를 구성합니다. 각 형식 구문, 샘플 요청 및 응답은 Cloud Manager API 설명서에 기재된 적절한 엔드포인트를 참조하십시오.
 
 프로그램에서 단일 고급 네트워킹 변형을 프로비저닝할 수 있습니다. 유연한 포트 이그레스와 전용 이그레스 IP 주소 사이에서 결정할 때, 특정 IP 주소가 필요하지 않은 경우 Adobe에서 유연한 포트 이그레스 트래픽의 성능을 최적화할 수 있으므로 유연한 포트 이그레스를 선택하는 것이 좋습니다.
 
@@ -343,13 +343,13 @@ VPN을 사용하면 작성자, 게시 또는 미리보기에서 온프레미스 
 
 또한 VPN을 사용하면 VPN을 지원하는 CRM 공급업체와 같은 SaaS 공급업체에 연결하거나 기업 네트워크에서 AEM as a Cloud Service 작성자, 미리보기 또는 게시에 연결할 수 있습니다.
 
-대부분의 IPSec 기술이 내장된 VPN 디바이스가 지원됩니다. **RouteBased 구성 지침** 열에 기재된 정보에 따라 [이 페이지](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable)의 디바이스 목록을 참조하십시오. 표에 설명된 대로 디바이스를 구성하십시오.
+대부분의 IPSec 기술이 내장된 VPN 디바이스가 지원됩니다. **RouteBased 구성 지침** 열에 기재된 정보에 따라 [이 페이지](https://docs.microsoft.com/ko-kr/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable)의 디바이스 목록을 참조하십시오. 표에 설명된 대로 디바이스를 구성하십시오.
 
 ### 일반적인 고려 사항 {#general-vpn-considerations}
 
 * 지원은 단일 VPN 연결로 제한됩니다.
 * VPN 연결에는 Splunk 전달 기능을 사용할 수 없습니다.
-* 개인 호스트 이름을 확인하려면 게이트웨이 주소 공간에 DNS Resolver를 나열해야 합니다.
+* 비공개 호스트 이름을 확인하려면 DNS 확인자가 게이트웨이 주소 공간에 나열되어야 합니다.
 
 ### 만들기 {#vpn-creation}
 
@@ -377,7 +377,7 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시하고, 약 10분 
 
 ### VPN 비활성화 {#disabling-the-vpn}
 
-특정 환경에 대한 VPN을 비활성화하려면 `DELETE /program/{programId}/environment/{environmentId}/advancedNetworking`을 호출하십시오. 자세한 내용은 [API 설명서](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration)를 참조하십시오.
+특정 환경에 대한 VPN을 비활성화하려면 `DELETE /program/{programId}/environment/{environmentId}/advancedNetworking`을 호출하십시오. 자세한 내용은 [API 설명서](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration)에서 확인할 수 있습니다.
 
 ### 트래픽 라우팅 {#vpn-traffic-routing}
 
@@ -490,7 +490,7 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시하고, 약 10분 
   </tr>
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}-gateway.external.adobeaemcloud.com</code></td>
-    <td>해당 없음</td>
+    <td>해당 사항 없음</td>
     <td>AEM측 VPN 게이트웨이의 IP입니다. 고객의 네트워크 엔지니어링 팀에서 이 IP를 사용하여 특정 IP 주소의 VPN 게이트웨이에 대한 VPN 연결만 허용할 수 있습니다. </td>
   </tr>
   <tr>
