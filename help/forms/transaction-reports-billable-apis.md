@@ -4,10 +4,10 @@ description: 트랜잭션으로 계산되는 모든 API 목록
 feature: Adaptive Forms, Foundation Components
 hide: true
 hidefromtoc: true
-source-git-commit: a1a87a27d73d7472ec02de37621123bbdd3876b4
+source-git-commit: 7318c5e65fc03bfebbf5fb43e4edc30ffbb53909
 workflow-type: tm+mt
-source-wordcount: '1334'
-ht-degree: 4%
+source-wordcount: '1598'
+ht-degree: 3%
 
 ---
 
@@ -31,44 +31,42 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링에 필요한 여�
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_submission_graph_en"
 >title="양식 제출 추적기"
->abstract="전체 수에 대한 통합 보기를 사용하여 간편하게 양식 제출을 추적하거나 인스턴스별 세부 정보를 살펴볼 수 있습니다. 직관적인 막대 그래프를 사용하여 트렌드를 식별하고 인스턴스를 비교하며 정보에 입각한 결정을 한눈에 내릴 수 있습니다."
+>abstract="직관적인 추적 대시보드를 사용하여 AEM Forms 게시 인스턴스에서 양식 제출을 간편하게 모니터링합니다. 그래프는 현재 인스턴스에 대한 데이터를 제공하므로 트렌드를 신속하게 분석하고 정보에 입각한 결정을 내릴 수 있습니다. 다른 인스턴스의 제출 데이터의 경우 해당 인스턴스의 대시보드에 액세스하면 됩니다."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_conversions_graph_en"
 >title="양식 전환 추적기"
->abstract="총 카운트 요약을 통해 양식 전환을 간편하게 탭하거나 각 AEM Forms 인스턴스에 대한 세부 정보를 살펴볼 수 있습니다. 읽기 쉬운 막대 그래프는 트렌드를 파악하고, 인스턴스를 비교하고, 정보에 기반한 결정을 내리는 데 도움이 됩니다."
+>abstract="총 전환 수에 대한 요약을 포함하여 양식 전환에 대한 정보를 얻을 수 있습니다. 그래프는 현재 AEM Forms 게시 인스턴스와 관련된 데이터를 제공하여 트렌드를 신속하게 분석하고 정보에 입각한 결정을 내릴 수 있습니다. 다른 인스턴스의 전환 데이터를 보려면 해당 인스턴스의 대시보드에 액세스합니다."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
 >title="평균 양식 생성 기간"
->abstract="그래프는 양식을 만드는 데 걸린 평균 시간을 보여 줍니다. 그래프의 각 막대는 특정 양식을 나타내고 막대의 높이는 해당 기간 동안 양식을 만드는 데 걸린 평균 기간을 나타냅니다. 이 그래프를 분석하면 사용자가 다양한 기간 동안 또는 다른 컨텍스트 내에서 양식 작성의 효율성과 속도를 이해함으로써 잠재적인 개선 사항에 대한 통찰력을 얻을 수 있습니다."
+>abstract="그래프는 양식을 만드는 데 걸린 평균 시간을 보여 줍니다. 그래프의 각 막대는 특정 양식을 나타내고 막대의 높이는 해당 기간 동안 양식을 만드는 데 걸린 평균 기간을 나타냅니다. 이 그래프를 분석하면 사용자가 다양한 기간 동안 또는 다른 컨텍스트 내에서 양식 작성의 효율성과 속도를 이해함으로써 잠재적인 개선 사항에 대한 통찰력을 얻을 수 있습니다. 그래프는 현재 AEM Forms 작성자 인스턴스와 관련된 데이터를 제공합니다. 다른 인스턴스의 데이터를 보려면 해당 인스턴스의 대시보드에 액세스합니다."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
 >title="평균 양식 작성 기간"
->abstract="그래프는 편집하기 위해 양식을 연 첫 날부터 측정한 양식을 만들고 게시하는 데 걸린 평균 시간을 표시합니다. 각 막대는 양식의 특정 기간에 해당하며, 막대 높이는 양식 개발 시작부터 최종 및 게시까지 걸린 평균 시간을 나타냅니다."
+>abstract="그래프는 편집하기 위해 양식을 연 첫 날부터 측정한 양식을 만들고 게시하는 데 걸린 평균 시간을 표시합니다. 각 막대는 양식의 특정 기간에 해당하며, 막대 높이는 양식 개발 시작부터 최종 및 게시까지 걸린 평균 시간을 나타냅니다. 그래프는 현재 AEM Forms 작성자 인스턴스와 관련된 데이터를 제공합니다. 다른 인스턴스의 데이터를 보려면 해당 인스턴스의 대시보드에 액세스합니다."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_newForms_graph_en"
 >title="새로운 Forms 추적기"
->abstract="그래프는 특정 기간 동안 새로 생성된 양식의 수 또는 빈도에 대한 정보를 제공합니다. 그래프의 각 막대는 일, 주 또는 월과 같은 고유한 측정 단위를 나타냅니다. 각 막대의 높이는 해당 특정 간격 동안 새로 만든 양식의 수량이나 빈도를 나타냅니다."
+>abstract="그래프는 특정 기간 동안 새로 생성된 양식의 수 또는 빈도에 대한 정보를 제공합니다. 그래프의 각 막대는 일, 주 또는 월과 같은 고유한 측정 단위를 나타냅니다. 각 막대의 높이는 해당 특정 간격 동안 새로 만든 양식의 수량이나 빈도를 나타냅니다. 그래프는 현재 AEM Forms 작성자 인스턴스와 관련된 데이터를 제공합니다. 다른 인스턴스의 데이터를 보려면 해당 인스턴스의 대시보드에 액세스합니다."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
 >title="Forms 추적기 게시됨"
->abstract="그래프는 특정 기간 동안 성공적으로 게시된 양식의 수 또는 빈도에 대한 정보를 제공합니다. 이를 통해 시간에 따른 양식 게시의 트렌드, 패턴 또는 변형을 이해하고, 생산성을 모니터링하거나, 최대 게시 기간을 식별하거나, 양식 게시 프로세스의 변경 성공 여부를 평가할 수 있습니다."
+>abstract="그래프는 특정 기간 동안 성공적으로 게시된 양식의 수 또는 빈도에 대한 정보를 제공합니다. 이를 통해 시간에 따른 양식 게시의 트렌드, 패턴 또는 변형을 이해하고, 생산성을 모니터링하거나, 최대 게시 기간을 식별하거나, 양식 게시 프로세스의 변경 성공 여부를 평가할 수 있습니다. 그래프는 현재 AEM Forms 게시 인스턴스와 관련된 데이터를 제공합니다. 다른 인스턴스의 전환 데이터를 보려면 해당 인스턴스의 대시보드에 액세스합니다."
 
-<!-- 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formFragments_graph_en"
->title="Form Fragments Tracker"
->abstract="This graph helps you see how many form fragments people use in their forms. It gives you a sense of how popular or common these reusable parts are in form building."
+>title="Forms 추적기 게시됨"
+>abstract="이 그래프는 사용자가 양식에서 사용하는 양식 조각의 수를 확인하는 데 도움이 됩니다. 양식 빌드에서 이러한 재사용 가능한 부품이 얼마나 인기 있는지 또는 공통되는지 파악할 수 있습니다. 그래프는 현재 AEM Forms 게시 인스턴스와 관련된 데이터를 제공합니다. 다른 인스턴스의 전환 데이터를 보려면 해당 인스턴스의 대시보드에 액세스합니다."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
->title="Average Duration for Form Fragments Creation"
->abstract= "The graph displays the average time taken to create a form fragment, measured from the initial day the form fragment was opened for editing. Each bar corresponds to a specific time frame for a form fragment, with the bar height indicating the average time taken from the start of form fragment development to its finalization and publication."
-
+>title="Forms 추적기 게시됨"
+>abstract="그래프는 편집을 위해 양식 조각을 연 첫 날부터 측정한 양식 조각을 만드는 데 걸린 평균 시간을 표시합니다. 각 막대는 양식 조각의 특정 기간에 해당하며, 막대 높이는 양식 조각 개발 시작부터 최종 및 게시까지 걸린 평균 시간을 나타냅니다. 그래프는 현재 AEM Forms 게시 인스턴스와 관련된 데이터를 제공합니다. 다른 인스턴스의 전환 데이터를 보려면 해당 인스턴스의 대시보드에 액세스합니다."
 
 <!-- 
 
