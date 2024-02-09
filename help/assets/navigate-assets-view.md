@@ -3,10 +3,10 @@ title: “[!DNL Assets view] 사용자 인터페이스”
 description: ' [!DNL Assets view]의 사용자 인터페이스 및 탐색을 이해합니다.'
 role: User
 exl-id: 534a8084-88f7-410e-b872-719e47e62b10
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2f701c527b5aac9d604cbfe857df90c3e8bf6054
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 89%
+source-wordcount: '922'
+ht-degree: 81%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 89%
 * [컬렉션](/help/assets/manage-collections-assets-view.md): 컬렉션은 Adobe Experience Manager Assets 보기 내의 에셋, 폴더 또는 기타 컬렉션 세트입니다. 컬렉션을 사용하여 사용자 간에 자산을 공유합니다. 폴더와 달리 컬렉션에는 서로 다른 위치의 자산이 포함될 수 있습니다. 사용자와 여러 컬렉션을 공유할 수 있습니다. 각 컬렉션에는 자산에 대한 참조가 포함되어 있습니다. 자산의 참조 무결성은 컬렉션에 간에 유지됩니다.
 
 * [인사이트](/help/assets/manage-reports-assets-view.md#view-live-statistics): [!DNL Assets view]의 대시보드에서 실시간 인사이트를 볼 수 있습니다. Assets 보기를 사용하면 [인사이트] 대시보드를 사용하여 Assets 보기 환경에 대한 실시간 데이터를 볼 수 있습니다. 지난 30일 동안 또는 지난 12개월 동안의 실시간 이벤트 지표를 볼 수 있습니다.
-* **휴지통**: 루트 **[!UICONTROL Assets]** 폴더에서 삭제된 자산을 나열합니다. 휴지통 폴더에서 자산을 선택하여 원래 위치로 복원하거나 영구적으로 삭제할 수 있습니다. 키워드를 지정하거나 표준 또는 사용자 정의 필터를 적용하여 휴지통 폴더 내에서 적절한 자산을 검색할 수도 있습니다. 표준 및 사용자 지정 필터 사용에 대한 자세한 내용은 [자산 보기에서 자산 검색](/help/assets/search-assets-view.md).
+* **휴지통**: 루트 **[!UICONTROL Assets]** 폴더에서 삭제된 자산을 나열합니다. 휴지통 폴더에서 자산을 선택하여 원래 위치로 복원하거나 영구적으로 삭제할 수 있습니다. 키워드를 지정하거나 자산 상태, 파일 유형, MIME 유형, 이미지 크기, 자산 만들기, 수정 및 만료 날짜와 같은 필터를 적용하고 현재 사용자가 삭제한 자산별로 필터링할 수 있습니다. 사용자 지정 필터를 적용하여 휴지통 폴더 내의 적절한 자산을 검색할 수도 있습니다. 표준 및 사용자 지정 필터 사용에 대한 자세한 내용은 방법 [자산 보기에서 자산 검색](/help/assets/search-assets-view.md).
 * **설정**: 을 사용하여 에셋 보기의 다양한 옵션을 구성할 수 있습니다 **설정**&#x200B;메타데이터 양식, 보고서 및 분류 관리 등의 데이터를 내보낼 수 있습니다.
 
 <!-- TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
