@@ -2,9 +2,9 @@
 title: Cloud Service 콘텐츠 요청 이해
 description: Adobe에서 컨텐츠 요청 라이선스를 구입한 경우 Adobe Experience Cloud as a Service가 측정하는 컨텐츠 요청 유형과 조직의 분석 보고 도구와의 차이에 대해 알아봅니다.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 6212ad20cb427d6b2ccd4c467d571832f923ed2a
+source-git-commit: 13a2aad1fc8080fb0d5060fcc31c9b71f1a833ca
 workflow-type: tm+mt
-source-wordcount: '2683'
+source-wordcount: '2682'
 ht-degree: 5%
 
 ---
@@ -81,7 +81,7 @@ AEM as a Cloud Service을 기반으로 자체 CDN을 가져오는 고객의 경�
 
 ## 클라이언트측 컬렉션 {#cliendside-collection}
 
-### AEM as a Cloud Service에 대한 RUM(Real User Monitoring) {#real-user-monitoring-for-aem-as-a-cloud-service}
+### AEM as a Cloud Service을 위한 실제 사용자 모니터링 서비스 {#real-user-monitoring-service-for-aem-as-a-cloud-service}
 
 >[!INFO]
 >
@@ -94,7 +94,7 @@ RUM(Real User Monitoring)은 웹 사이트 또는 애플리케이션의 디지�
 
 RUM(Real User Monitoring)은 URL 시작부터 요청이 다시 브라우저로 제공될 때까지 주요 성능 지표에 대한 심층적인 통찰력을 제공합니다. 이러한 모든 통찰력은 개발자가 최종 사용자가 쉽게 사용할 수 있도록 애플리케이션을 향상시키는 데 도움이 됩니다.
 
-### RUM 데이터 모니터링 서비스의 혜택을 누리는 사람 {#who-can-benefit-from-rum-data-monitoring-service}
+### 누가 실제 사용자 모니터링 서비스를 활용할 수 있습니까? {#who-can-benefit-from-rum-service}
 
 RUM 데이터 서비스는 Adobe의 CDN을 활용하든 자체 CDN을 활용하든 모든 고객에게 유용합니다. 사용자 상호 작용을 보다 정확하게 반영하여 클라이언트측 페이지 보기 수를 반영하여 웹 사이트 참여를 안정적으로 측정할 수 있습니다.
 
@@ -104,17 +104,17 @@ RUM 데이터 서비스는 Adobe의 CDN을 활용하든 자체 CDN을 활용하�
 
 또한 모든 고객은 페이지 성능에 대한 깊은 통찰력을 얻어 디지털 경험을 효과적으로 최적화할 수 있습니다.
 
-### RUM(Real User Monitoring) 데이터 서비스의 작동 방식 이해 {#understand-how-the-rum-data-service-works}
+### Real User Monitoring Service 작동 방식 이해 {#understand-how-the-rum-service-works}
 
 Adobe Experience Manager은 RUM(Real User Monitoring)을 사용하여 고객 및 Adobe이 Adobe Experience Manager 기반 사이트와 방문자가 상호 작용하는 방법을 이해하고, 성능 문제를 진단하고, 실험의 효과를 측정할 수 있도록 합니다. RUM은 샘플링을 통해 방문자의 개인 정보를 보존하며 - 모든 페이지 보기의 일부만 모니터링됩니다 - 모든 개인 식별 정보(PII)를 신중하게 제외합니다.
 
-### RUM(Real User Monitoring) 및 개인정보 보호 {#rum-and-privacy}
+### Real User Monitoring Service 및 개인 정보 {#rum-service-and-privacy}
 
 Adobe Experience Manager의 Real User Monitoring은 방문자 개인 정보를 보존하고 데이터 수집을 최소화하도록 설계되었습니다. 이는 방문자인 경우 방문 중인 사이트에서 개인 정보를 수집하지 않거나 Adobe이 사용할 수 없음을 의미합니다.
 
 사이트 운영자는 이 기능을 통해 모니터링을 활성화하는 데 추가 옵트인이 필요하지 않음을 의미합니다. 따라서 최종 사용자가 RUM 모니터링 활성화에 동의하는 추가 팝업은 없습니다.
 
-### RUM 데이터 샘플링 {#rum-data-sampling}
+### Real User Monitoring 서비스 데이터 샘플링 {#rum-service-data-sampling}
 
 기존 웹 분석 솔루션은 모든 단일 방문자에 대한 데이터를 수집하려고 합니다. Adobe Experience Manager의 실제 사용자 모니터링은 극히 일부 페이지 보기에서 정보만 캡처합니다. RUM(Real User Monitoring)은 Analytics를 대체하는 것이 아니라 샘플링하고 익명화하기 위한 것입니다. 기본적으로 페이지는 1:100 샘플링 비율을 갖습니다. 사이트 운영자는 오늘을 기준으로 샘플링 속도를 늘리거나 줄이도록 이 숫자를 구성할 수 없습니다. 총 트래픽을 정확하게 추정하기 위해 100개의 페이지 보기마다 하나의 세부 데이터를 취합하여 전체 트래픽에 대한 신뢰할 수 있는 근사치를 제공합니다.&quot;
 
@@ -136,14 +136,14 @@ RUM(Real User Monitoring)은 개인 식별 정보가 수집되는 것을 방지�
 * 위에서 언급한 체크포인트에 대해 사용자가 상호 작용하는 대상 또는 외부 페이지 또는 리소스에 대한 링크입니다. 예를 들어`https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
 * 방문자의 체감 품질을 설명하는 핵심 웹 바이탈(CWV) 성능 지표, 가장 큰 컨텐츠 페인트(LCP), 첫 번째 입력 지연(FID) 및 누적 레이아웃 이동(CLS)입니다.
 
-### RUM(Real User Monitoring) 데이터 서비스를 설정하는 방법 {#how-to-set-up-them-rum-data-service}
+### Real User Monitoring Service 설정 방법 {#how-to-set-up-the-rum-service}
 
 * 얼리 어답터 프로그램에 참여하려면 다음으로 이메일을 보내주십시오. `aemcs-rum-adopter@adobe.com`, Adobe ID과 연결된 이메일 주소에서 프로덕션, 스테이징 및 개발 환경의 도메인 이름과 함께 그러면 Adobe 제품 팀에서 실제 사용자 모니터링(RUM) 데이터 서비스를 활성화합니다.
 * 이 작업이 완료되면 Adobe의 제품 팀이 고객 공동 작업 채널을 만듭니다.
 * Adobe의 제품 팀이 페이지 보기 수 및 를 볼 수 있는 도메인 키 및 데이터 대시보드 URL을 제공하기 위해 연락할 것입니다. [핵심 웹 바이탈(CWV)](https://web.dev/vitals/) 클라이언트측 RUM(Real User Monitoring) 컬렉션에서 수집한 지표.
 * 그런 다음 도메인 키를 사용하여 데이터 대시보드 URL에 액세스하고 지표를 보는 방법에 대해 안내합니다.
 
-### RUM(Real User Monitoring) 데이터가 사용되는 방식 {#how-rum-data-is-being-used}
+### 실제 사용자 모니터링 서비스 데이터가 사용되는 방식 {#how-rum-service-data-is-being-used}
 
 RUM 데이터는 다음 목적에 유용합니다.
 
