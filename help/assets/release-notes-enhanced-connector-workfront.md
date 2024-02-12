@@ -3,9 +3,9 @@ title: ' [!DNL Workfront for Experience Manager enhanced connector] 릴리스 �
 description: ' [!DNL Workfront for Experience Manager enhanced connector] 릴리스 정보'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: 439ae08bb606d6d335fa189e99c1b483f636683e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1624'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -15,15 +15,15 @@ ht-degree: 96%
 
 ## 릴리스 일자 {#release-date}
 
-의 최신 버전 1.9.17에 대한 릴리스 날짜 [!DNL Workfront for Experience Manager enhanced connector] 는 2024년 2월 7일입니다.
+[!DNL Workfront for Experience Manager enhanced connector] 최신 버전 1.9.17의 릴리스 일자는 2024년 2월 7일입니다.
 
 ## 릴리스 하이라이트 {#release-highlights}
 
 최신 버전의 [!DNL Workfront for Experience Manager enhanced connector]에는 다음과 같은 버그 수정 사항이 포함됩니다.
 
-* AEM Cloud 고객이 커넥터를 구성하고 설정할 수 있도록 토글 기능을 활성화합니다.
+* AEM Cloud 고객이 커넥터를 구성하고 설정할 수 있도록 토글 기능이 활성화되었습니다.
 
-* 닫기 `resourceResolver` 기본 세션을 명시적으로 닫지 않으면 AEM 인스턴스에서 세션 누수가 발생합니다. Resource Resolver를 자동으로 닫으면 세션이 묵시적으로 닫히지 않으므로 세션을 명시적으로 닫는 것이 중요합니다.
+* 기본 세션을 명시적으로 닫지 않고 `resourceResolver`를 닫으면 AEM 인스턴스에서 세션 누출이 발생합니다. Resource Resolver가 자동으로 닫혀도 세션이 암시적으로 닫히지 않으므로 세션을 명시적으로 닫는 것이 중요합니다.
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ ht-degree: 96%
 
 >[!IMPORTANT]
 >
->Adobe는 [의 ](/help/assets/workfront-connector-install.md)최신 1.9.17 버전으로 업그레이드[!DNL Workfront for Experience Manager enhanced connector]할 것을 권장합니다.
+>Adobe는 [!DNL Workfront for Experience Manager enhanced connector]의 [최신 1.9.17 버전으로 업그레이드](/help/assets/workfront-connector-install.md)할 것을 권장합니다.
 
 ## 알려진 문제 {#known-issues}
 
@@ -79,7 +79,7 @@ ht-degree: 96%
 
 * Experience Manager 강화 커넥터는 Workfront에서 모든 이벤트 구독을 가져오는 동시에 프로젝트에 대한 이벤트 구독을 삭제합니다. 이 경우 애플리케이션의 성능에 영향을 미칠 수 있습니다.
 
-* Workfront의 자산이 Experience Manager로 전송되면 자산 MIME 유형이 Experience Manager Assets Essentials 내의 `dc:format` 속성으로 설정되지 않습니다.
+* Workfront의 자산이 Experience Manager로 전송되면 자산 MIME 유형이 Experience Manager 내의 `dc:format` 속성으로 설정되지 않습니다.
 
 * Experience Manager 고급 커넥터에 저장된 Workfront 프로젝트 ID에 중복 항목이 포함됩니다.
 
