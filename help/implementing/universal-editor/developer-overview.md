@@ -2,9 +2,9 @@
 title: AEM 개발자를 위한 유니버설 편집기 개요
 description: 범용 편집기의 작동 방식과 프로젝트에서 사용하는 방법에 관심이 있는 AEM 개발자인 경우, 이 문서는 범용 편집기에서 작동하도록 WKND 프로젝트를 계측하여 전체적인 소개를 제공합니다.
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
-source-git-commit: d7154fcec9cf6e3cb00ce8e434e38544294df165
+source-git-commit: 3dff6fa71c29da70daba80176d2fe51ef1e05200
 workflow-type: tm+mt
-source-wordcount: '3112'
+source-wordcount: '3139'
 ht-degree: 1%
 
 ---
@@ -150,7 +150,7 @@ WKND 앱의 페이지 구성 요소에 필요한 JavaScript 라이브러리를 �
 1. 파일 끝에 JavaScript 라이브러리를 추가합니다.
 
    ```html
-   <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js"></script>
+   <script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>
    ```
 
 1. 클릭 **모두 저장** 그런 다음 유니버설 편집기를 다시 로드합니다.
@@ -183,6 +183,8 @@ WKND 앱의 페이지 구성 요소에 필요한 JavaScript 라이브러리를 �
    ```html
    <meta name="urn:adobe:aue:system:aem" content="aem:https://localhost:8443">
    ```
+
+   * 항상 최신 버전의 라이브러리를 사용하는 것이 좋습니다. 이전 버전이 필요한 경우 문서를 참조하십시오. [AEM에서 범용 편집기 시작하기](/help/implementing/universal-editor/getting-started.md#alternative)
 
 1. 로컬 유니버설 편집기 서비스에 연결하는 데 필요한 메타데이터를 파일 끝에 추가합니다.
 

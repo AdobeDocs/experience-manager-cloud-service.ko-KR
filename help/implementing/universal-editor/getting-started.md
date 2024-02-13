@@ -2,10 +2,10 @@
 title: AEM에서 Universal Editor 시작하기
 description: Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 알아봅니다.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: f9d584d7b117c24224079f581802f5f126890304
+source-git-commit: 3dff6fa71c29da70daba80176d2fe51ef1e05200
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 73%
+source-wordcount: '921'
+ht-degree: 69%
 
 ---
 
@@ -62,8 +62,15 @@ import "@adobe/universal-editor-cors";
 React 앱을 구현하지 않거나 서버측 렌더링이 필요한 경우 대체 방법은 문서 본문에 다음 사항을 포함하는 것입니다.
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
+<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST" async></script>
 ```
+
+항상 최신 버전을 사용하는 것이 좋지만, 변경 사항이 있을 경우 이전 버전의 서비스를 참조할 수 있습니다.
+
+* `https://universal-editor-service.experiencecloud.live/corslib/LATEST` - 최신 UE CORS 라이브러리
+* `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST` - 최신 UE CORS 라이브러리 버전 2.x
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST` - 최신 UE CORS 라이브러리 버전 2.1.x
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1.1`- 정확한 UE CORS 라이브러리 버전 2.1.1
 
 ## 필요한 OSGi 구성 추가 {#osgi-configurations}
 
