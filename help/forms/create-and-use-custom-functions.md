@@ -5,10 +5,10 @@ keywords: 사용자 지정 함수를 추가하고, 사용자 지정 함수를 �
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: 28020b05e4aaaa3f066943e0504f05e307c7020b
+source-git-commit: 1fb7fece71eec28219ce36c72d628867a222b618
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 8%
+source-wordcount: '779'
+ht-degree: 10%
 
 ---
 
@@ -43,7 +43,7 @@ function ValidateEmail(inputText)
 
 ### 사용자 정의 함수 사용 {#uses-of-custom-function}
 
-적응형 Forms에서 사용자 정의 함수를 사용하는 몇 가지 장점은 다음과 같습니다.
+적응형 Forms에서 사용자 정의 함수를 사용할 때의 장점은 다음과 같습니다.
 
 * **데이터 조작**: 사용자 정의 함수는 양식 필드에 입력된 데이터를 조작하고 처리합니다.
 * **데이터 유효성 검사**: 사용자 정의 기능을 사용하면 양식 입력에 대한 사용자 정의 검사를 수행하고 지정된 오류 메시지를 제공할 수 있습니다.
@@ -90,7 +90,7 @@ Some of the examples to create Arrow functions are:
 
 * **필수 jsdoc 주석이 있는 함수 표현식**
 
-다음 형식의 사용자 지정 함수를 만들어 적응형 양식의 규칙 편집기에 나열합니다. 예:
+적응형 양식의 규칙 편집기에 사용자 정의 함수를 나열하려면 다음 형식으로 사용자 정의 함수를 만듭니다.
 
 ```javascript
     /**
@@ -118,7 +118,7 @@ The functions that are not supported in the custom function list are:
 
 >[!NOTE]
 >
-> 다음을 확인할 수 있습니다. `error.log` 사용자 지정 함수와 같은 오류가 발생한 경우 파일이 규칙 편집기에 나열되지 않습니다.
+> 다음을 확인할 수 있습니다. `error.log` 사용자 지정 함수가 규칙 편집기에 나열되지 않는 등의 오류에 대한 파일입니다.
 
 <!--The `error.log` file also displays the methods and parameters that are not supported for custom functions. -->
 
@@ -136,13 +136,13 @@ The functions that are not supported in the custom function list are:
 클라이언트 라이브러리를 추가하여 사용자 정의 함수를 추가할 수 있습니다. 클라이언트 라이브러리를 만들려면 다음 단계를 수행하십시오.
 
 1. [AEM Forms as a Cloud Service 저장소 복제](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#accessing-git).
-1. `[AEM Forms as a Cloud Service repository folder]/apps/` 폴더 아래에 폴더를 만듭니다. 예: `experience-league`로 지정된 폴더 만들기
-1. `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/`로 이동하고 `es6clientlibs`로서 `ClientLibraryFolder`를 만듭니다.
-1. 속성 추가 `categories`문자열 유형 값이 인 `es6customfunctions` (으)로 `es6clientlibs` 폴더를 삭제합니다.
+1. `[AEM Forms as a Cloud Service repository folder]/apps/` 폴더 아래에 폴더를 만듭니다. 예를 들어 이라는 폴더를 만듭니다. `experience-league`.
+1. 다음으로 이동 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` 및 만들기 `ClientLibraryFolder`. 예를 들어 클라이언트 라이브러리 폴더를 다음과 같이 만듭니다. `es6clientlibs`.
+1. 속성 추가 `categories` 문자열 유형 값 포함. 예를 들어 값을 할당합니다 `es6customfunctions` (으)로 `categories` 속성 `es6clientlibs` 폴더를 삭제합니다.
 
    >[!NOTE]
    >
-   >`es6customfunctions`는 예제 범주입니다. 범주의 이름을 선택할 수 있습니다.
+   > 다음에 대한 모든 이름을 선택할 수 있습니다. `client library folder` 및 `categories` 속성.
 
 1. `js`라는 이름의 폴더를 만듭니다.
 1. `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/es6clientlibs/js` 폴더로 이동합니다.
@@ -150,7 +150,7 @@ The functions that are not supported in the custom function list are:
 
    >[!NOTE]
    >
-   >* 사용자 정의 함수에 대한 코드가 포함된 JavaScript 파일에 오류가 있는 경우 사용자 정의 함수가 적응형 양식의 규칙 편집기에 나열되지 않습니다. 다음을 확인할 수도 있습니다. `error.log` 파일에 오류가 표시됩니다.
+   > 사용자 정의 함수에 대한 코드가 포함된 JavaScript 파일에 오류가 있는 경우 사용자 정의 함수가 적응형 양식의 규칙 편집기에 나열되지 않습니다. 다음을 확인할 수도 있습니다. `error.log` 파일에 오류가 표시됩니다.
 
    <!-- 
     >* AEM Adaptive Form supports the caching of custom functions. If the JavaScript is modified, the caching becomes invalidated, and it is parsed. You can see a message as `Fetched following custom functions list from cache` in the `error.log` file.  -->
@@ -179,18 +179,22 @@ The functions that are not supported in the custom function list are:
 
 ### 적응형 양식에 클라이언트 라이브러리 추가{#use-custom-function}
 
-클라이언트 라이브러리를 추가한 후 적응형 양식에서 사용합니다. 을(를) 사용하면 [사용자 정의 함수를 양식의 규칙으로 사용](/help/forms/rule-editor.md#custom-functions). 적응형 양식에 클라이언트 라이브러리를 추가하려면 다음 단계를 수행하십시오.
+클라이언트 라이브러리를 Forms CS 환경에 배포한 후에는 적응형 양식에서 해당 기능을 사용하십시오. 적응형 양식에 클라이언트 라이브러리를 추가하려면
 
-1. 편집 모드에서 양식을 엽니다.
-편집 모드에서 양식을 열려면 양식을 선택하고 을 선택합니다 **[!UICONTROL 열기]**.
-1. 편집 모드에서 구성 요소를 선택한 다음 를 선택합니다 ![필드 수준](assets/select_parent_icon.svg) > **[!UICONTROL 적응형 양식 컨테이너]**&#x200B;을 선택한 다음 을 선택합니다 ![cmppr](assets/configure-icon.svg).
-1. 사이드바의 클라이언트 라이브러리 이름 아래에서 클라이언트 라이브러리를 추가합니다. ( `es6customfunctions` 예제에서.)
+1. 편집 모드에서 양식을 엽니다. 편집 모드에서 양식을 열려면 양식을 선택하고 을 선택합니다 **[!UICONTROL 편집]**.
+1. 콘텐츠 브라우저를 열고 적응형 양식의 **[!UICONTROL 안내서 컨테이너]** 구성 요소를 선택합니다.
+1. 안내서 컨테이너 속성 ![안내서 속성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭합니다. 적응형 양식 컨테이너 대화 상자가 열립니다.
+1. 를 엽니다. **[!UICONTROL 기본]** 탭을 클릭하고 이름 선택 **[!UICONTROL 클라이언트 라이브러리 범주]** 드롭다운 목록에서(이 경우 `es6customfunctions`).
 
    ![사용자 정의 함수 클라이언트 라이브러리 추가](/help/forms/assets/clientlib-custom-function.png)
 
-규칙 편집기에서 사용자 지정 함수를 사용할 규칙을 만듭니다.
+1. 클릭 **[!UICONTROL 완료]** .
+
+이제 규칙 편집기에서 사용자 정의 함수를 사용하는 규칙을 만들 수 있습니다.
 
 <!--
+
+Create a rule to use custom function in the rule editor. 
 
 ### Support for the optional parameters in custom functions{#support-for-optional-parameter}
 
