@@ -2,9 +2,9 @@
 title: Cloud Service 콘텐츠 요청 이해
 description: Adobe에서 컨텐츠 요청 라이선스를 구입한 경우 Adobe Experience Cloud as a Service가 측정하는 컨텐츠 요청 유형과 조직의 분석 보고 도구와의 차이에 대해 알아봅니다.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 13a2aad1fc8080fb0d5060fcc31c9b71f1a833ca
+source-git-commit: 9033820fa0dc8eee181e3f581675f45cf11e694a
 workflow-type: tm+mt
-source-wordcount: '2682'
+source-wordcount: '2688'
 ht-degree: 5%
 
 ---
@@ -16,13 +16,13 @@ ht-degree: 5%
 Cloud Service 컨텐츠 요청은 서버측 데이터 수집을 통해 측정됩니다. 컬렉션은 CDN 로그 분석을 통해 활성화됩니다.
 
 >[!NOTE]
->또한 제한된 수의 [얼리 어답터 고객](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter), 클라이언트측 컬렉션도 RUM(Real User Monitoring) 측정을 통해 활성화될 수 있습니다. 다음에서 설명서를 참조하여 자세한 내용을 알 수 있습니다. [이 문서](#real-user-monitoring-for-aem-as-a-cloud-service).
+>또한 제한된 수의 [얼리 어답터 고객](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter)또한 클라이언트 측 수집은 Real User Monitoring 서비스 측정을 통해 활성화될 수 있습니다. 다음에서 설명서를 참조하여 자세한 내용을 알 수 있습니다. [이 문서](#real-user-monitoring-for-aem-as-a-cloud-service).
 
 ## Cloud Service 콘텐츠 요청 이해 {#understaing-cloud-service-content-requests}
 
 컨텐츠 요청은 AEM as a Cloud Service CDN에서 시작되는 로그 파일의 자동화된 분석을 통해 Adobe Experience Manager as a Cloud Service의 에지에서 서버측에서 자동으로 수집됩니다. 이 작업은 HTML을 반환하는 요청을 격리하여 수행됩니다 `(text/html)` 또는 JSON `(application /Json)` 아래에 설명된 여러 포함 및 제외 규칙을 기반으로 하는 CDN의 콘텐츠. 콘텐츠 요청은 CDN 캐시에서 처리 중인 반환된 콘텐츠 또는 CDN(AEM dispatchers)의 소스로 돌아가는 콘텐츠와는 독립적으로 발생합니다.
 
-클라이언트측 컬렉션인 RUM(Real User Monitoring) 데이터 서비스 는 사용자 상호 작용을 보다 정확하게 반영하여 웹 사이트 참여에 대한 신뢰할 수 있는 측정을 보장합니다. 이를 통해 고객은 페이지 트래픽 및 성능에 대한 고급 통찰력을 얻을 수 있습니다. 이는 Adobe 관리 CDN 또는 Adobe이 아닌 관리 CDN을 사용하는 두 고객 모두에게 유용합니다. 또한 이제 Adobe이 아닌 관리 CDN을 사용하는 고객에 대해 자동 트래픽 보고를 활성화할 수 있으므로 트래픽 보고서를 Adobe과 공유할 필요가 없습니다.
+클라이언트측 컬렉션인 Real User Monitoring Service 는 사용자 상호 작용을 보다 정확하게 반영하여 웹 사이트 참여를 신뢰성 있게 측정합니다. 이를 통해 고객은 페이지 트래픽 및 성능에 대한 고급 통찰력을 얻을 수 있습니다. 이는 Adobe 관리 CDN 또는 Adobe이 아닌 관리 CDN을 사용하는 두 고객 모두에게 유용합니다. 또한 이제 Adobe이 아닌 관리 CDN을 사용하는 고객에 대해 자동 트래픽 보고를 활성화할 수 있으므로 트래픽 보고서를 Adobe과 공유할 필요가 없습니다.
 
 AEM as a Cloud Service을 기반으로 자체 CDN을 가져오는 고객의 경우 서버측 보고는 라이선스가 부여된 콘텐츠 요청과 비교하는 데 사용할 수 없는 숫자를 생성합니다. 이러한 수치는 외부 CDN의 끝에서 고객이 측정해야 합니다. 이러한 고객, 클라이언트측 보고 및 관련 성능, [Adobe RUM 데이터 서비스](#real-user-monitoring-for-aem-as-a-cloud-service) 는 Adobe 권장 옵션입니다. 다음을 참조하십시오. [릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter) 을 참조하십시오.
 
@@ -90,9 +90,9 @@ AEM as a Cloud Service을 기반으로 자체 CDN을 가져오는 고객의 경�
 
 ### 개요 {#overview}
 
-RUM(Real User Monitoring)은 웹 사이트 또는 애플리케이션의 디지털 사용자 경험을 실시간으로 캡처하고 분석하는 일종의 성능 모니터링 기술입니다. 웹 애플리케이션의 실시간 성능에 대한 가시성을 제공하며 최종 사용자 경험을 정확하게 파악할 수 있습니다.
+실시간 사용자 모니터링 서비스는 웹 사이트 또는 애플리케이션의 디지털 사용자 경험을 실시간으로 캡처하고 분석하는 일종의 성능 모니터링 기술입니다. 웹 애플리케이션의 실시간 성능에 대한 가시성을 제공하며 최종 사용자 경험을 정확하게 파악할 수 있습니다.
 
-RUM(Real User Monitoring)은 URL 시작부터 요청이 다시 브라우저로 제공될 때까지 주요 성능 지표에 대한 심층적인 통찰력을 제공합니다. 이러한 모든 통찰력은 개발자가 최종 사용자가 쉽게 사용할 수 있도록 애플리케이션을 향상시키는 데 도움이 됩니다.
+Real User Monitoring 서비스는 URL 시작부터 요청이 다시 브라우저로 제공될 때까지 주요 성능 지표에 대한 심도 있는 통찰력을 제공합니다. 이 모든 통찰력을 통해 개발자는 최종 사용자가 쉽게 사용할 수 있도록 애플리케이션을 향상시킬 수 있습니다.
 
 ### 누가 실제 사용자 모니터링 서비스를 활용할 수 있습니까? {#who-can-benefit-from-rum-service}
 
@@ -110,19 +110,19 @@ Adobe Experience Manager은 RUM(Real User Monitoring)을 사용하여 고객 및
 
 ### Real User Monitoring Service 및 개인 정보 {#rum-service-and-privacy}
 
-Adobe Experience Manager의 Real User Monitoring은 방문자 개인 정보를 보존하고 데이터 수집을 최소화하도록 설계되었습니다. 이는 방문자인 경우 방문 중인 사이트에서 개인 정보를 수집하지 않거나 Adobe이 사용할 수 없음을 의미합니다.
+Adobe Experience Manager의 Real User Monitoring 서비스는 방문자 개인 정보를 보존하고 데이터 수집을 최소화하도록 설계되었습니다. 이는 방문자인 경우 방문 중인 사이트에서 개인 정보를 수집하지 않거나 Adobe이 사용할 수 없음을 의미합니다.
 
 사이트 운영자는 이 기능을 통해 모니터링을 활성화하는 데 추가 옵트인이 필요하지 않음을 의미합니다. 따라서 최종 사용자가 RUM 모니터링 활성화에 동의하는 추가 팝업은 없습니다.
 
 ### Real User Monitoring 서비스 데이터 샘플링 {#rum-service-data-sampling}
 
-기존 웹 분석 솔루션은 모든 단일 방문자에 대한 데이터를 수집하려고 합니다. Adobe Experience Manager의 실제 사용자 모니터링은 극히 일부 페이지 보기에서 정보만 캡처합니다. RUM(Real User Monitoring)은 Analytics를 대체하는 것이 아니라 샘플링하고 익명화하기 위한 것입니다. 기본적으로 페이지는 1:100 샘플링 비율을 갖습니다. 사이트 운영자는 오늘을 기준으로 샘플링 속도를 늘리거나 줄이도록 이 숫자를 구성할 수 없습니다. 총 트래픽을 정확하게 추정하기 위해 100개의 페이지 보기마다 하나의 세부 데이터를 취합하여 전체 트래픽에 대한 신뢰할 수 있는 근사치를 제공합니다.&quot;
+기존 웹 분석 솔루션은 모든 단일 방문자에 대한 데이터를 수집하려고 합니다. Adobe Experience Manager의 Real User Monitoring 서비스는 극히 일부 페이지 보기의 정보만 캡처합니다. Real User Monitoring 서비스 데이터는 Analytics를 대체하는 것이 아니라 샘플링하고 익명화하기 위한 것입니다. 기본적으로 페이지는 1:100 샘플링 비율을 갖습니다. 사이트 운영자는 오늘을 기준으로 샘플링 속도를 늘리거나 줄이도록 이 숫자를 구성할 수 없습니다. 총 트래픽을 정확하게 추정하기 위해 100개의 페이지 보기마다 하나의 세부 데이터를 취합하여 전체 트래픽에 대한 신뢰할 수 있는 근사치를 제공합니다.&quot;
 
 데이터 수집 여부는 페이지 보기 단위로 페이지 보기에서 결정되므로 여러 페이지 간 상호 작용을 추적하는 것이 사실상 불가능해진다. RUM에는 방문, 방문자 또는 세션에 대한 개념이 없으며 페이지 보기에만 해당됩니다. 이것은 계획적인 것이다.
 
 ### 수집 중인 데이터 {#what-data-is-being-collected}
 
-RUM(Real User Monitoring)은 개인 식별 정보가 수집되는 것을 방지하기 위해 설계되었습니다. Adobe Experience Manager의 Real User Monitoring에서 수집할 수 있는 전체 정보 세트는 다음과 같습니다.
+Real User Monitoring 서비스는 개인 식별 정보가 수집되는 것을 방지하기 위해 고안되었습니다. Adobe Experience Manager의 Real User Monitoring 서비스에서 수집할 수 있는 전체 정보 세트는 다음과 같습니다.
 
 * 방문 중인 사이트의 호스트 이름(예: ) `experienceleague.adobe.com`
 * 페이지를 표시하는 데 사용되는 광범위한 사용자 에이전트 유형(예: 데스크탑 또는 모바일)
@@ -140,7 +140,7 @@ RUM(Real User Monitoring)은 개인 식별 정보가 수집되는 것을 방지�
 
 * 얼리 어답터 프로그램에 참여하려면 다음으로 이메일을 보내주십시오. `aemcs-rum-adopter@adobe.com`, Adobe ID과 연결된 이메일 주소에서 프로덕션, 스테이징 및 개발 환경의 도메인 이름과 함께 그러면 Adobe 제품 팀에서 실제 사용자 모니터링(RUM) 데이터 서비스를 활성화합니다.
 * 이 작업이 완료되면 Adobe의 제품 팀이 고객 공동 작업 채널을 만듭니다.
-* Adobe의 제품 팀이 페이지 보기 수 및 를 볼 수 있는 도메인 키 및 데이터 대시보드 URL을 제공하기 위해 연락할 것입니다. [핵심 웹 바이탈(CWV)](https://web.dev/vitals/) 클라이언트측 RUM(Real User Monitoring) 컬렉션에서 수집한 지표.
+* Adobe의 제품 팀이 페이지 보기 수 및 를 볼 수 있는 도메인 키 및 데이터 대시보드 URL을 제공하기 위해 연락할 것입니다. [핵심 웹 바이탈(CWV)](https://web.dev/vitals/) 클라이언트측 Real User Monitoring 서비스 컬렉션에서 수집한 지표.
 * 그런 다음 도메인 키를 사용하여 데이터 대시보드 URL에 액세스하고 지표를 보는 방법에 대해 안내합니다.
 
 ### 실제 사용자 모니터링 서비스 데이터가 사용되는 방식 {#how-rum-service-data-is-being-used}
@@ -157,11 +157,11 @@ RUM 데이터는 다음 목적에 유용합니다.
 
 1. **추적기 차단**
 
-   * 추적기 차단기 또는 개인 정보 보호 확장을 사용하는 최종 사용자는 추적 스크립트의 실행을 제한하므로 RUM(Real User Monitoring)의 데이터 수집을 방해할 수 있습니다. 이 제한 사항으로 인해 페이지 보기 수와 사용자 상호 작용이 제대로 보고되지 않아 실제 사이트 활동과 RUM에서 캡처한 데이터 간에 불일치가 발생할 수 있습니다.
+   * 추적기 차단기 또는 개인 정보 보호 확장을 사용하는 최종 사용자는 이러한 도구가 추적 스크립트의 실행을 제한하므로 Real User Monitoring 서비스의 데이터 수집을 방해할 수 있습니다. 이 제한 사항으로 인해 페이지 보기 수와 사용자 상호 작용이 제대로 보고되지 않아 실제 사이트 활동과 RUM에서 캡처한 데이터 간에 불일치가 발생할 수 있습니다.
 
 1. **API/JSON 호출 캡처의 제한 사항**
 
-   * RUM 데이터 서비스는 클라이언트측 경험에 중점을 두며 현재 백엔드 API 또는 JSON 호출을 캡처하지 않습니다. RUM(Real User Monitoring) 데이터에서 이러한 호출을 제외하면 CDN Analytics에서 측정한 콘텐츠 요청에서 차이가 발생합니다.
+   * RUM 데이터 서비스는 클라이언트측 경험에 중점을 두며 현재 백엔드 API 또는 JSON 호출을 캡처하지 않습니다. Real User Monitoring 서비스 데이터에서 이러한 호출을 제외하면 CDN Analytics에서 측정한 콘텐츠 요청에서 차이가 발생합니다.
 
 ### FAQ {#faq}
 
