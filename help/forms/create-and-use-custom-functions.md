@@ -5,9 +5,9 @@ keywords: 사용자 지정 함수를 추가하고, 사용자 지정 함수를 �
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: 94a290964a92f8c6ed353d9c77f3dd3b8a5598a4
+source-git-commit: 28020b05e4aaaa3f066943e0504f05e307c7020b
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '763'
 ht-degree: 8%
 
 ---
@@ -64,11 +64,11 @@ jsdoc 주석을 사용하거나 사용하지 않고 사용자 지정 함수를 �
             // code to be executed
         }
 ```
+<!--
 
-* **필수 jsdoc 주석이 있는 화살표 기능**
+* **Arrow function with mandatory jsdoc comment**
 
-Arrow 함수를 만드는 몇 가지 예는 다음과 같습니다.
-
+Some of the examples to create Arrow functions are:
 ```javascript
     /**
     * test function
@@ -82,7 +82,6 @@ Arrow 함수를 만드는 몇 가지 예는 다음과 같습니다.
     };
 ```
 
-<!-- 
     * @param {string=} b another parameter description
       /** */
     testFunction1=(a) => (return a)
