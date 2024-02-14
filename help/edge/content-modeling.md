@@ -1,9 +1,9 @@
 ---
 title: Edge Delivery Services 프로젝트를 사용한 AEM 작성을 위한 콘텐츠 모델링
 description: Edge Delivery Services 프로젝트를 사용하여 AEM 작성에 콘텐츠 모델링이 작동하는 방식과 자체 콘텐츠를 모델링하는 방법에 대해 알아봅니다.
-source-git-commit: 8f3c7524ae8ee642a9aee5989e03e6584a664eba
+source-git-commit: e9c882926baee001170bad2265a1085e03cdbedf
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '2097'
 ht-degree: 1%
 
 ---
@@ -109,16 +109,19 @@ Edge Delivery Services에 AEM 작성을 사용하는 경우 작성자에게 컨�
 
 * 다음을 사용해야 합니다. `core/franklin/components/block/v1/block` 리소스 유형(AEM에서 블록 논리의 일반 구현)입니다.
 * 블록의 테이블 헤더에 렌더링될 블록 이름을 정의해야 합니다.
+   * 블록 이름은 블록을 장식할 적절한 스타일과 스크립트를 가져오는 데 사용됩니다.
 * 다음을 정의할 수 있습니다. [모델 ID.](/help/implementing/universal-editor/field-types.md#model-structure)
+   * 모델 ID는 구성 요소의 모델에 대한 참조로, 속성 레일에서 작성자가 사용할 수 있는 필드를 정의합니다.
 * 다음을 정의할 수 있습니다. [필터 ID.](/help/implementing/universal-editor/customizing.md#filtering-components)
+   * 필터 ID는 구성 요소의 필터에 대한 참조로, 블록 또는 섹션에 추가할 수 있는 하위 항목 또는 사용할 수 있는 RTE 기능을 제한하는 방식으로 작성 동작을 변경할 수 있습니다.
 
-이 모든 정보는 블록이 페이지에 추가될 때 AEM에 저장됩니다.
+이 모든 정보는 블록이 페이지에 추가될 때 AEM에 저장됩니다. 리소스 유형 또는 블록 이름이 누락된 경우 블록이 페이지에서 렌더링되지 않습니다.
 
 >[!WARNING]
 >
->가능한 한 사용자 지정 AEM 구성 요소를 구현할 필요는 없습니다. AEM에서 제공하는 Edge Delivery Services의 구성 요소만으로도 충분하고 특정 가드 레일을 제공하여 개발을 용이하게 합니다.
+>가능한 한 사용자 지정 AEM 구성 요소를 구현할 필요가 없거나 구현이 권장되지 않습니다. AEM에서 제공하는 Edge Delivery Services의 구성 요소만으로도 충분하고 특정 가드 레일을 제공하여 개발을 용이하게 합니다.
 >
->Adobe 따라서 사용자 지정 AEM 리소스 유형을 사용하지 않는 것이 좋습니다.
+>AEM에서 제공하는 구성 요소는에서 사용할 수 있는 마크업을 렌더링합니다. [helix-html2md](https://github.com/adobe/helix-html2md) Edge Delivery Services에 게시 및 게시하는 사람 [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) 범용 편집기에서 페이지를 로드할 때. 마크업은 AEM과 시스템의 다른 부분 간의 안정적인 계약이며 사용자 정의를 허용하지 않습니다. 따라서 프로젝트는 구성 요소를 변경하지 말아야 하며 사용자 지정 구성 요소를 사용하지 말아야 합니다.
 
 ### 블록 구조 {#block-structure}
 
@@ -130,7 +133,9 @@ Edge Delivery Services에 AEM 작성을 사용하는 경우 작성자에게 컨�
 
 다음 예제에서는 이미지가 먼저 모델에서 정의되고 텍스트가 두 번째로 정의됩니다. 따라서 이미지가 먼저 렌더링되고 텍스트가 두 번째로 렌더링됩니다.
 
-##### 데이터 {#data-simple}
+>[!BEGINTABS]
+
+>[!TAB 데이터]
 
 ```json
 {
@@ -142,7 +147,7 @@ Edge Delivery Services에 AEM 작성을 사용하는 경우 작성자에게 컨�
 }
 ```
 
-##### 마크업 {#markup-simple}
+>[!TAB 마크업]
 
 ```html
 <div class="hero">
@@ -161,6 +166,20 @@ Edge Delivery Services에 AEM 작성을 사용하는 경우 작성자에게 컨�
 </div>
 ```
 
+>[!TAB 표]
+
+```text
++---------------------------------------------+
+| Hero                                        |
++=============================================+
+| ![Helix - a shape like a corkscrew][image0] |
++---------------------------------------------+
+| # Welcome to AEM                            |
++---------------------------------------------+
+```
+
+>[!ENDTABS]
+
 일부 유형의 값을 사용하면 마크업에서 의미 체계를 유추할 수 있으며 속성이 단일 셀에 결합됩니다. 이 동작은 섹션에 설명되어 있습니다 [형식 유추.](#type-inference)
 
 #### 키-값 블록 {#key-value}
@@ -171,7 +190,9 @@ Edge Delivery Services에 AEM 작성을 사용하는 경우 작성자에게 컨�
 
 예를 들면 다음과 같습니다. [섹션 메타데이터.](/help/edge/developer/markup-sections-blocks.md#sections) 이 사용 사례에서 블록은 키-값 쌍 테이블로 렌더링하도록 구성될 수 있다. 섹션을 참조하십시오. [섹션 및 섹션 메타데이터](#sections-metadata) 추가 정보.
 
-##### 데이터 {#data-key-value}
+>[!BEGINTABS]
+
+>[!TAB 데이터]
 
 ```json
 {
@@ -184,7 +205,7 @@ Edge Delivery Services에 AEM 작성을 사용하는 경우 작성자에게 컨�
 }
 ```
 
-##### 마크업 {#markup-key-value}
+>[!TAB 마크업]
 
 ```html
 <div class="featured-articles">
@@ -203,13 +224,31 @@ Edge Delivery Services에 AEM 작성을 사용하는 경우 작성자에게 컨�
 </div>
 ```
 
+>[!TAB 표]
+
+```text
++-----------------------------------------------------------------------+
+| Featured Articles                                                     |
++=======================================================================+
+| source   | [/content/site/articles.json](/content/site/articles.json) |
++-----------------------------------------------------------------------+
+| keywords | Developer,Courses                                          |
++-----------------------------------------------------------------------+
+| limit    | 4                                                          |
++-----------------------------------------------------------------------+
+```
+
+>[!ENDTABS]
+
 #### 컨테이너 블록 {#container}
 
 앞의 두 구조는 모두 단일 차원인 등록 정보 목록을 가집니다. 컨테이너 블록은 자식 항목(일반적으로 동일한 유형 또는 모델)을 추가할 수 있으므로 2차원입니다. 이러한 블록은 여전히 단일 열이 있는 행으로 렌더링된 자체 속성을 먼저 지원합니다. 그러나 각 항목이 행으로 렌더링되고 각 속성이 해당 행 내에서 열로 렌더링되는 하위 항목도 추가할 수 있습니다.
 
 다음 예에서 블록은 연결된 아이콘 목록을 하위 항목으로 허용하며, 이때 각 연결된 아이콘에는 이미지와 링크가 있습니다. 다음 사항에 주목합니다. [필터 ID](/help/implementing/universal-editor/customizing.md#filtering-components) 필터 구성을 참조하려면 블록의 데이터를 설정합니다.
 
-##### 데이터 {#data-container}
+>[!BEGINTABS]
+
+>[!TAB 데이터]
 
 ```json
 {
@@ -232,7 +271,7 @@ Edge Delivery Services에 AEM 작성을 사용하는 경우 작성자에게 컨�
 }
 ```
 
-##### 마크업 {#markup-container}
+>[!TAB 마크업]
 
 ```html
 <div class="our-partners">
@@ -263,6 +302,22 @@ Edge Delivery Services에 AEM 작성을 사용하는 경우 작성자에게 컨�
   </div>
 </div>
 ```
+
+>[!TAB 표]
+
+```text
++------------------------------------------------------------ +
+| Our Partners                                                |
++=============================================================+
+| Our community of partners is ...                            |
++-------------------------------------------------------------+
+| ![Icon of Foo][image0] | [https://foo.com](https://foo.com) |
++-------------------------------------------------------------+
+| ![Icon of Bar][image1] | [https://bar.com](https://bar.com) |
++-------------------------------------------------------------+
+```
+
+>[!ENDTABS]
 
 ### 블록에 대한 의미 체계 콘텐츠 모델 만들기 {#creating-content-models}
 
@@ -300,7 +355,9 @@ Edge Delivery Services을 사용하여 AEM을 작성하는 경우 리치 텍스�
 
 ##### 이미지 {#image-collapse}
 
-###### 데이터 {#data-image}
+>[!BEGINTABS]
+
+>[!TAB 데이터]
 
 ```json
 {
@@ -309,7 +366,7 @@ Edge Delivery Services을 사용하여 AEM을 작성하는 경우 리치 텍스�
 }
 ```
 
-###### 마크업 {#markup-image}
+>[!TAB 마크업]
 
 ```html
 <picture>
@@ -317,9 +374,19 @@ Edge Delivery Services을 사용하여 AEM을 작성하는 경우 리치 텍스�
 </picture>
 ```
 
+>[!TAB 표]
+
+```text
+![A red car on a road][image0]
+```
+
+>[!ENDTABS]
+
 ##### 링크 및 단추 {#links-buttons-collapse}
 
-###### 데이터 {#data-links-buttons}
+>[!BEGINTABS]
+
+>[!TAB 데이터]
 
 ```json
 {
@@ -330,7 +397,7 @@ Edge Delivery Services을 사용하여 AEM을 작성하는 경우 리치 텍스�
 }
 ```
 
-###### 마크업 {#markup-links-buttons}
+>[!TAB 마크업]
 
 아니요 `linkType`, 또는 `linkType=default`
 
@@ -354,9 +421,21 @@ Edge Delivery Services을 사용하여 AEM을 작성하는 경우 리치 텍스�
 </em>
 ```
 
+>[!TAB 표]
+
+```text
+[adobe.com](https://www.adobe.com "Navigate to adobe.com")
+**[adobe.com](https://www.adobe.com "Navigate to adobe.com")**
+_[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
+```
+
+>[!ENDTABS]
+
 ##### 제목 {#headings-collapse}
 
-###### 데이터 {#data-headings}
+>[!BEGINTABS]
+
+>[!TAB 데이터]
 
 ```json
 {
@@ -365,19 +444,31 @@ Edge Delivery Services을 사용하여 AEM을 작성하는 경우 리치 텍스�
 }
 ```
 
-###### 마크업 {#markup-headings}
+>[!TAB 마크업]
 
 ```html
 <h2>Getting started</h2>
 ```
 
+>[!TAB 표]
+
+```text
+## Getting started
+```
+
+>[!ENDTABS]
+
 #### 요소 그룹화 {#element-grouping}
 
 While [필드 접기](#field-collapse) 는 여러 속성을 하나의 의미 요소로 결합하는 것이고, 요소 그룹화는 여러 의미 요소를 하나의 셀로 연결하는 것입니다. 이 기능은 작성자가 만들 수 있는 요소의 유형 및 수를 제한해야 하는 사용 사례에 특히 유용합니다.
 
-예를 들어 작성자는 최대 2개의 콜 투 액션 버튼과 결합된 자막, 제목 및 단일 단락 설명만 만들어야 합니다. 이러한 요소를 함께 그룹화하면 추가 작업 없이 스타일을 지정할 수 있는 시맨틱 마크업이 생성됩니다.
+예를 들어, 티저 구성 요소를 통해 작성자는 최대 2개의 콜 투 액션 버튼과 결합된 자막, 제목 및 단일 단락 설명만 만들 수 있습니다. 이러한 요소를 함께 그룹화하면 추가 작업 없이 스타일을 지정할 수 있는 시맨틱 마크업이 생성됩니다.
 
-##### 데이터 {#data-grouping}
+요소 그룹화에서는 이름 지정 규칙을 사용합니다. 여기서 그룹 이름은 그룹의 각 속성과 밑줄로 구분됩니다. 그룹 속성의 필드 축소는 이전에 설명한 대로 작동합니다.
+
+>[!BEGINTABS]
+
+>[!TAB 데이터]
 
 ```json
 {
@@ -397,7 +488,7 @@ While [필드 접기](#field-collapse) 는 여러 속성을 하나의 의미 요
 }
 ```
 
-##### 마크업 {#markup-grouping}
+>[!TAB 마크업]
 
 ```html
 <div class="teaser">
@@ -419,6 +510,24 @@ While [필드 접기](#field-collapse) 는 여러 속성을 하나의 의미 요
   </div>
 </div>
 ```
+
+>[!TAB 표]
+
+```text
++-------------------------------------------------+
+| Teaser                                          |
++=================================================+
+| ![A group of people sitting on a stage][image0] |
++-------------------------------------------------+
+| Adobe Experience Cloud                          |
+| ## Welcome to AEM                               |
+| Join us in this ask me everything session ...   |
+| [More Details](https://link.to/more-details)    |
+| [RSVP](https://link.to/sign-up)                 |
++-------------------------------------------------+
+```
+
+>[!ENDTABS]
 
 ## 섹션 및 섹션 메타데이터 {#sections-metadata}
 
@@ -500,18 +609,17 @@ Edge Delivery Services의 콘텐츠 모델은 섹션에 포함된 기본 콘텐�
 
 이러한 테이블을 만들려면 페이지를 만들고 사이트 콘솔에서 메타데이터 템플릿을 사용하십시오.
 
->[!NOTE]
->
->메타데이터 스프레드시트를 편집할 때 다음으로 전환해야 합니다. **미리 보기** 모드: 편집기내에서가 아니라 페이지 자체에서 작성되므로 발생합니다.
-
-스프레드시트의 페이지 속성에서 URL과 함께 필요한 메타데이터 필드를 정의합니다. 그런 다음 페이지 경로 또는 페이지 경로 패턴당 메타데이터를 추가합니다. 여기서 URL 필드는 AEM의 콘텐츠 경로가 아닌 매핑된 공개 경로와 관련이 있습니다.
+스프레드시트의 페이지 속성에서 URL과 함께 필요한 메타데이터 필드를 정의합니다. 그런 다음 페이지 경로 또는 페이지 경로 패턴당 메타데이터를 추가합니다.
 
 스프레드시트를 게시하기 전에 경로 매핑에도 스프레드시트가 추가되었는지 확인하십시오.
 
-```text
-mappings:
-  - /content/site/:/
-  - /content/site/metadata:/metadata.json
+```json
+{
+  "mappings": [
+    "/content/site/:/",
+    "/content/site/metadata:/metadata.json"
+  ]
+}
 ```
 
 ### 페이지 속성 {#page-properties}
