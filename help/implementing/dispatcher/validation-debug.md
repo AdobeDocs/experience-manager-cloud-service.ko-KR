@@ -3,9 +3,9 @@ title: Dispatcher 도구를 사용하여 확인 및 디버깅
 description: 로컬 유효성 검사, 디버깅, 유연한 모드 파일 구조 및 레거시 모드에서 유연한 모드로 마이그레이션하는 방법에 대해 알아봅니다.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: 2cb57347856568da979b34832ce12cce295841dd
 workflow-type: tm+mt
-source-wordcount: '2971'
+source-wordcount: '3028'
 ht-degree: 1%
 
 ---
@@ -300,7 +300,7 @@ Cloud Manager 배포 중 `httpd -t` 구문 검사도 실행되며 모든 오류�
 
 >[!NOTE]
 >
-다음을 참조하십시오. [자동 재로드 및 유효성 검사](#automatic-loading) 실행을 위한 효율적인 대안을 위한 섹션 `validate.sh` 각 구성 수정 후.
+>다음을 참조하십시오. [자동 재로드 및 유효성 검사](#automatic-loading) 실행을 위한 효율적인 대안을 위한 섹션 `validate.sh` 각 구성 수정 후.
 
 ### 단계 1 {#first-phase}
 
@@ -440,8 +440,8 @@ Windows 탐색기에서 경로를 복사하여 붙여넣은 다음 명령 프롬
 
 >[!NOTE]
 >
-Windows 사용자는 Windows 10 Professional 또는 Docker를 지원하는 기타 배포를 사용해야 합니다. 이 요구 사항은 로컬 컴퓨터에서 Dispatcher를 실행하고 디버깅하기 위한 전제 조건입니다.
-Windows와 macOS Adobe 모두에서 Docker Desktop을 사용하는 것이 좋습니다.
+>Windows 사용자는 Windows 10 Professional 또는 Docker를 지원하는 기타 배포를 사용해야 합니다. 이 요구 사항은 로컬 컴퓨터에서 Dispatcher를 실행하고 디버깅하기 위한 전제 조건입니다.
+>Windows와 macOS Adobe 모두에서 Docker Desktop을 사용하는 것이 좋습니다.
 
 이 단계는 `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
 
@@ -510,13 +510,13 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 
 >[!NOTE]
 >
-AEM as a Cloud Service 환경의 경우 debug가 최대 세부 정보 수준입니다. 추적 로그 수준은 지원되지 않으므로 클라우드 환경에서 작업할 때 이 수준을 설정하지 않아야 합니다.
+>AEM as a Cloud Service 환경의 경우 debug가 최대 세부 정보 수준입니다. 추적 로그 수준은 지원되지 않으므로 클라우드 환경에서 작업할 때 이 수준을 설정하지 않아야 합니다.
 
 ### 자동 재로드 및 유효성 검사 {#automatic-reloading}
 
 >[!NOTE]
 >
-Windows 운영 체제의 제한으로 인해 이 기능은 macOS 및 Linux® 사용자만 사용할 수 있습니다.
+>Windows 운영 체제의 제한으로 인해 이 기능은 macOS 및 Linux® 사용자만 사용할 수 있습니다.
 
 로컬 유효성 검사를 실행하는 대신(`validate.sh`) 및 docker 컨테이너 시작(`docker_run.sh`) 구성을 수정할 때마다 `docker_run_hot_reload.sh` 스크립트. 스크립트는 구성 변경 사항을 감시하고 자동으로 다시 로드한 다음 유효성 검사를 다시 실행합니다. 이 옵션을 사용하면 디버깅할 때 상당한 시간을 절약할 수 있습니다.
 
@@ -546,6 +546,25 @@ Cloud manager validator 2.0.43
 2022/07/04 09:53:55 No issues found
 INFO Mon Jul  4 09:53:55 UTC 2022: Testing with fresh base configuration files.
 INFO Mon Jul  4 09:53:55 UTC 2022: Apache httpd informationServer version: Apache/2.4.54 (Unix)
+```
+
+### 사용자 정의 환경 변수 삽입 {#environment-variables}
+
+사용자 지정 환경 변수는 별도의 파일에서 설정하고 에서 참조하여 Dispatcher SDK와 함께 사용할 수 있습니다. `ENV_FILE` 로컬 dispatcher를 시작하기 전에 환경 변수를 설정합니다.
+
+사용자 지정 환경 변수가 있는 파일은 다음과 같습니다.
+
+```
+COMMERCE_ENDPOINT=commerce-host
+AEM_HTTP_PROXY_HOST=host.docker.internal
+AEM_HTTP_PROXY_PORT=8000
+```
+
+또한 다음 명령을 사용하여 로컬 Dispatcher SDK에서 사용할 수 있습니다.
+
+```
+export ENV_FILE=custom.env
+./bin/docker_run.sh src/dispatcher docker.for.mac.localhost:4503 8080
 ```
 
 ## 환경당 다른 Dispatcher 구성 {#different-dispatcher-configurations-per-environment}
@@ -621,7 +640,7 @@ Cloud Manager 2021.7.0 릴리스를 통해 새로운 Cloud Manager 프로그램�
 
    >[!NOTE]
    >
-   유연한 모드에서는 절대 경로 대신 상대 경로를 사용해야 합니다.
+   >유연한 모드에서는 절대 경로 대신 상대 경로를 사용해야 합니다.
 1. **프로덕션에 배포:**
    * 파일 커밋 `opt-in/USE_SOURCES_DIRECTLY` 프로덕션 파이프라인에서 클라우드 스테이지 및 프로덕션 환경에 배포되는 git 분기에
    * Cloud Manager를 사용하여 스테이징에 배포합니다.
