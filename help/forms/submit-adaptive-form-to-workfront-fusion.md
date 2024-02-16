@@ -6,7 +6,7 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 3e1e1eba822bf3156ef563b88269cdef2298e951
+source-git-commit: 94519d3c7d2f927f046628d9ce057209556e847d
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 4%
@@ -35,7 +35,7 @@ AEM Forms as a Cloud Service에서는 적응형 양식을 Adobe Workfront Fusion
 
 Workfront Fusion과 AEM Forms 간에 연결을 설정하려면 다음 조건을 충족해야 합니다.
 
-* 유효 [Workfront 및 Workfront Fusion 라이선스](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* 유효 [Workfront 및 Workfront Fusion 라이센스](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
 * 액세스 권한이 있는 AEM 사용자 [개발 콘솔](https://my.cloudmanager.adobe.com/) 끝 [서비스 자격 증명 검색](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## AEM Forms과 Adobe Workfront Fusion 통합
@@ -135,7 +135,7 @@ Webhook를 추가하려면:
 
 ### 2. Workfront Fusion용 적응형 양식의 제출 동작 구성
 
-Workfont Fusion에 대한 제출 액션을 구성할 수 있는 대상:
+Workfront Fusion에 대한 제출 액션을 구성할 수 있는 대상:
 * [새로운 적응형 Forms](#new-af-submit-action)
 * [기존 적응형 양식](#existing-af-submit-action)
 
