@@ -2,10 +2,10 @@
 title: 빌드 환경
 description: Cloud Manager의 빌드 환경과 코드 빌드 및 테스트 방법에 대해 알아봅니다.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 30f2eaf4d2edba13e875cd1bfe767e83a2b7f1a5
+source-git-commit: cb4c9711fc9c57546244b5b362027c255e5abc35
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 93%
+source-wordcount: '1023'
+ht-degree: 91%
 
 ---
 
@@ -19,10 +19,10 @@ Cloud Manager의 빌드 환경과 코드 빌드 및 테스트 방법에 대해 �
 Cloud Manager는 특수 빌드 환경을 사용하여 코드를 빌드하고 테스트합니다.
 
 * 빌드 환경은 Linux 기반이며 Ubuntu 22.04에서 파생되었습니다.
-* Apache Maven 3.8.8이 설치되어 있습니다.
+* Apache Maven 3.9.4이 설치되어 있습니다.
    * Adobe는 사용자가 [HTTP 대신 HTTPS를 사용하도록 Maven 저장소를 업데이트할 것을 권장합니다.](#https-maven)
-* 설치된 Java 버전은 Oracle JDK 8u371 및 Oracle JDK 11.0.20입니다.
-* 기본적으로 `JAVA_HOME` 환경 변수가 로 설정되어 있습니다 `/usr/lib/jvm/jdk1.8.0_371` oracle JDK 8u371을 포함합니다. 다음을 참조하십시오. [대체 Maven 실행 JDK 버전](#alternate-maven-jdk-version) 섹션에 자세히 설명되어 있습니다.
+* 설치된 Java 버전은 Oracle JDK 8u401 및 Oracle JDK 11.0.22입니다.
+* 기본적으로 `JAVA_HOME` 환경 변수가 로 설정되어 있습니다 `/usr/lib/jvm/jdk1.8.0_401` oracle JDK 8u401을 포함합니다. 다음을 참조하십시오. [대체 Maven 실행 JDK 버전](#alternate-maven-jdk-version) 섹션에 자세히 설명되어 있습니다.
 * 필요한 몇 가지 추가 시스템 패키지가 설치되어 있습니다.
    * `bzip2`
    * `unzip`
@@ -120,7 +120,7 @@ Cloud Manager [릴리스 2023.10.0](/help/implementing/cloud-manager/release-not
 
 전체 Maven 실행에 대한 JDK로 Java 8 또는 Java 11을 선택할 수도 있습니다. 툴체인 옵션과 달리 툴체인 구성이 툴체인 인식 Maven 플러그인에 여전히 적용되는 경우 툴체인 구성도 설정되어 있지 않는 한 모든 플러그인에 사용되는 JDK가 변경됩니다. 따라서 [Apache Maven Enforcer 플러그인](https://maven.apache.org/enforcer/maven-enforcer-plugin/)을 사용한 Java 버전 확인 및 시행이 작동합니다.
 
-이렇게 하려면 파이프라인에서 사용하는 git 저장소 분기에 `.cloudmanager/java-version`이라는 파일을 생성합니다. 이 파일은 콘텐츠 11 또는 8을 가질 수 있습니다. 다른 모든 값은 무시됩니다. 11을 지정하면 Oracle 11이 사용되고 `JAVA_HOME` 환경 변수가 `/usr/lib/jvm/jdk-11.0.2`로 설정됩니다. 8을 지정하면 Oracle 8이 사용되고 `JAVA_HOME` 환경 변수가 `/usr/lib/jvm/jdk1.8.0_202`로 설정됩니다.
+이렇게 하려면 파이프라인에서 사용하는 git 저장소 분기에 `.cloudmanager/java-version`이라는 파일을 생성합니다. 이 파일은 콘텐츠 11 또는 8을 가질 수 있습니다. 다른 모든 값은 무시됩니다. 11을 지정하면 Oracle 11이 사용되고 `JAVA_HOME` 환경 변수가 `/usr/lib/jvm/jdk-11.0.22`로 설정됩니다. 8을 지정하면 Oracle 8이 사용되고 `JAVA_HOME` 환경 변수가 `/usr/lib/jvm/jdk1.8.0_401`로 설정됩니다.
 
 ## 환경 변수 {#environment-variables}
 
@@ -147,44 +147,7 @@ Cloud Manager [릴리스 2023.10.0](/help/implementing/cloud-manager/release-not
 
 빌드 프로세스가 git 저장소에 배치하기에 부적절하거나 동일한 분기를 사용하는 파이프라인 실행 간에 달라져야 하는 특정 구성 변수에 따라 달라질 수 있습니다.
 
-Cloud Manager를 사용하면 파이프라인 단위로 Cloud Manager API 또는 Cloud Manager CLI를 통해 이러한 변수를 구성할 수 있습니다. 변수는 일반 텍스트로 저장되거나 사용하지 않을 때 암호화될 수 있습니다. 두 경우 모두 `pom.xml` 파일 또는 다른 빌드 스크립트 내에서 참조할 수 있는 환경 변수로 빌드 환경 내에서 변수를 사용할 수 있습니다.
-
-이 CLI 명령은 변수를 설정합니다.
-
-```shell
-$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test
-```
-
-이 명령은 변수를 나열합니다.
-
-```shell
-$ aio cloudmanager:list-pipeline-variables PIPELINEID
-```
-
-변수 이름은 다음 규칙을 준수해야 합니다.
-
-* 변수에는 영숫자와 밑줄(`_`)만 포함될 수 있습니다.
-* 이름은 모두 대문자로 해야 합니다.
-* 파이프라인당 200개의 변수 제한이 있습니다.
-* 각 이름은 100자 이하여야 합니다.
-* 각 `string` 변수 값은 2048자 미만이어야 합니다.
-* 각 `secretString` 형식 변수 값은 500자 이하여야 합니다.
-
-Maven `pom.xml` 파일 내에서 사용할 경우, 일반적으로 다음과 유사한 구문을 사용하여 이러한 변수를 Maven 속성에 매핑하는 것이 유용합니다.
-
-```xml
-        <profile>
-            <id>cmBuild</id>
-            <activation>
-                <property>
-                    <name>env.CM_BUILD</name>
-                </property>
-            </activation>
-            <properties>
-                <my.custom.property>${env.MY_CUSTOM_VARIABLE}</my.custom.property> 
-            </properties>
-        </profile>
-```
+문서를 참조하십시오. [파이프라인 변수 구성](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) 추가 정보
 
 ## 추가 시스템 패키지 설치 {#installing-additional-system-packages}
 
