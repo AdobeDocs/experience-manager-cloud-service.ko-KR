@@ -3,10 +3,11 @@ title: 설정 방법 [!DNL AEM Forms] as a cloud service 환경?
 description: 설정 및 구성 방법 알아보기 [!DNL AEM Forms] as a Cloud Service 환경.
 role: Admin, Developer, User
 feature: Adaptive Forms
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
+source-git-commit: 7fe779602f52081dc785074bdc0f374665b908e6
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 14%
+source-wordcount: '609'
+ht-degree: 6%
 
 ---
 
@@ -46,21 +47,24 @@ ht-degree: 14%
 
 * (샌드박스만 해당) 서비스를 온보딩한 후 [만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=en) 및 [실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html) 프로덕션 및 비프로덕션 파이프라인 모두. 의 최신 기능을 활성화하고 제공합니다. [!DNL AEM Forms] as a Cloud Service으로 사용 가능합니다.
 
-Forms as a Cloud Service을 사용하여 적응형 양식(디지털 등록)을 만들거나 고객 커뮤니케이션을 생성할 수 있습니다. 완료 후 [온보딩](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html) (으)로 [!DNL Adobe Experience Manager] as a Cloud Service으로 다음 작업 중 하나를 수행하여 디지털 등록 또는 고객 커뮤니케이션 기능을 활성화합니다. 두 기능을 모두 활성화할 수도 있습니다.
+Forms as a Cloud Service을 사용하여 적응형 양식(디지털 등록)을 만들거나 고객 커뮤니케이션을 생성할 수 있습니다. 완료 후 [온보딩](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html) (으)로 [!DNL Adobe Experience Manager] as a Cloud Service으로 다음 작업을 수행하여 Forms - 디지털 등록 또는 고객 커뮤니케이션 기능을 활성화합니다. <!--You can also enable both the features-->:
 
 1. Cloud Manager에 로그인하고 AEM Forms as a Cloud Service 인스턴스를 엽니다.
+1. 프로그램 편집 옵션을 열고 솔루션 및 추가 기능 탭으로 이동합니다.
 
-1. 프로그램 편집 옵션을 열고 솔루션 및 추가 기능 탭으로 이동하여 **[!UICONTROL 양식 - 커뮤니케이션]** 옵션을 선택합니다.
+   * 프로덕션 환경이 있는 경우 다음을 선택합니다 **[!UICONTROL Forms - 커뮤니케이션]** Forms - 디지털 등록 및 Forms - 커뮤니케이션 추가 기능을 활성화하는 옵션입니다.
 
-   ![커뮤니케이션](assets/communications.png)
+     ![커뮤니케이션](assets/communications.png)
 
-   **[!UICONTROL 양식 - 디지털 등록]** 옵션이 이미 활성화된 경우 **[!UICONTROL 양식 - 커뮤니케이션 추가 기능]** 옵션을 선택합니다.
+   <!-- If you have already enabled the **[!UICONTROL Forms - Digital Enrollment]** option, then select the **[!UICONTROL Forms - Communications Add-On]** option. ![Addon](assets/add-on.png) -->
 
-   ![추가 기능](assets/add-on.png)
+   * 샌드박스 환경이 있는 경우 다음을 선택합니다. **[!UICONTROL Forms]** Forms - 디지털 등록 및 Forms - 통신 추가 기능을 활성화하려면 다음을 수행하십시오.
+
+     ![양식 디지털 등록 선택](assets/forms-digital-enrollment1.png)
+
 
 1. **[!UICONTROL 업데이트]**&#x200B;를 클릭합니다.
-
-1. 빌드 파이프라인을 실행합니다. 빌드 파이프라인이 성공하면 환경에 통신 API가 활성화됩니다.
+1. 빌드 파이프라인을 실행합니다. 빌드 파이프라인이 성공하면 선택한 솔루션이 환경에 대해 활성화됩니다.
 
 >[!NOTE]
 >
