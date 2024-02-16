@@ -6,10 +6,10 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 52e1f57b82aec25ad61024f357016dbb5498ca1b
+source-git-commit: 8546e6286bea5f603b1e011a76c206b178337ab7
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 3%
+source-wordcount: '1238'
+ht-degree: 4%
 
 ---
 
@@ -41,6 +41,8 @@ Workfront Fusion을 AEM Forms에 연결하는 데 필요한 사전 요구 사항
 * 액세스 권한이 있는 AEM 사용자 [개발 콘솔](https://my.cloudmanager.adobe.com/) 끝 [서비스 자격 증명 검색](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## AEM Forms과 Adobe Workfront Fusion 통합
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
 연결하려면 [Workfront fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) 양식에 대해 다음 단계를 수행합니다.
 
@@ -129,16 +131,7 @@ Webhook를 추가하려면:
 1. 생성된 연결 선택 **[!UICONTROL 연결]** 을 클릭합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 1. 클릭 **[!UICONTROL 확인]** 시나리오의 변경 내용을 저장합니다.
-
-#### 1.3 Workfront 시나리오 활성화 {#activate-scenario}
-
-시나리오를 활성화하려면:
-
-1. 클릭 **[!UICONTROL 시나리오]** ![공유 아이콘](/help/forms/assets/Smock_ShareAndroid_18_N.svg) 왼쪽 패널에서
-1. 다음을 클릭합니다. **[!UICONTROL 비활성 시나리오]** 탭.
-1. 다음을 클릭합니다. **설정/해제** AEM Forms 시나리오에 대한 토글 단추입니다.
-
-전환 버튼을 클릭하면 Workfront 시나리오가에 표시되기 시작합니다. **[!UICONTROL 활성 시나리오]** 탭.
+1. 시나리오를 활성화하려면 시나리오 편집기에서 켜기/끄기 토글 버튼을 클릭합니다.
 
 >[!NOTE]
 >
