@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 8546e6286bea5f603b1e011a76c206b178337ab7
+source-git-commit: 3e1e1eba822bf3156ef563b88269cdef2298e951
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1241'
 ht-degree: 4%
 
 ---
@@ -21,28 +21,24 @@ ht-degree: 4%
 
 예를 들어 Workfront Fusion을 사용하여 적응형 양식으로 데이터를 수집하고, 데이터를 처리하고, 보관을 위해 데이터를 데이터 저장소로 전송하는 시나리오를 만들 수 있습니다. 시나리오가 설정되면 Workfront Fusion에서는 사용자가 양식을 작성할 때마다 작업을 자동으로 실행하여 데이터 저장소를 원활하게 업데이트합니다.
 
-AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 제출 액션을 제공합니다. 다음에서 이러한 옵션에 대해 자세히 알아볼 수 있습니다. [적응형 양식 제출 액션](/help/forms/configure-submit-actions-core-components.md)  기사.
+AEM Forms as a Cloud Service에서는 적응형 양식을 Adobe Workfront Fusion에 연결하고 제출할 수 있는 OOTB 커넥터를 제공합니다. Adobe Workfront Fusion에 양식을 제출하면 다음과 같은 몇 가지 이점이 있습니다.
+* 양식 제출 데이터를 Workfront Fusion 워크플로우로 원활하게 전송할 수 있었습니다.
+* 양식 제출로 트리거된 다양한 작업을 자동화하는 데 도움이 됩니다. 여기에는 수동 개입 없이 프로젝트 시작, 특정 팀원에게 작업 할당, 알림 전송 및 프로젝트 상태 업데이트가 포함될 수 있습니다.
+* Workfront Fusion 내에서 캡처된 모든 양식 제출물은 프로젝트 관련 정보에 대한 단일 소스로 제공됩니다
 
 
-## Adobe Workfront Fusion 사용의 이점{#advatages-of-workfront-fusion}
+<!--  AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.-->
 
-Adobe Workfront Fusion과 AEM Forms을 함께 사용할 때의 몇 가지 이점:
-
-* 적응형 Forms으로 캡처된 데이터를 Workfront Fusion 시나리오로 전송
-* 오류 발생 가능성이 낮은 작업 자동화
-* Workfront에 직접 포함되지 않은 조직 관련 요구 사항 맞춤화
-* if/then 문과 같은 간단한 논리와 간단한 결정을 처리합니다.
+>[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
 ## AEM Forms을 Adobe Workfront Fusion과 통합하기 위한 사전 요구 사항 {#prerequisites}
 
-Workfront Fusion을 AEM Forms에 연결하는 데 필요한 사전 요구 사항은 다음과 같습니다.
+Workfront Fusion과 AEM Forms 간에 연결을 설정하려면 다음 조건을 충족해야 합니다.
 
-* 유효 [Workfront Fusion 라이선스](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* 유효 [Workfront 및 Workfront Fusion 라이선스](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
 * 액세스 권한이 있는 AEM 사용자 [개발 콘솔](https://my.cloudmanager.adobe.com/) 끝 [서비스 자격 증명 검색](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## AEM Forms과 Adobe Workfront Fusion 통합
-
->[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
 연결하려면 [Workfront fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) 양식에 대해 다음 단계를 수행합니다.
 
