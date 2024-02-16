@@ -2,10 +2,10 @@
 title: 로그 액세스 및 관리
 description: AEM as a Cloud Service에서 개발 프로세스를 지원하기 위해 로그에 액세스하고 관리하는 방법을 알아봅니다.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 178af74512e74ff401588b68c73fa4661acec704
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 71%
+source-wordcount: '346'
+ht-degree: 68%
 
 ---
 
@@ -43,8 +43,6 @@ AEM as a Cloud Service에서 개발 프로세스를 지원하기 위해 로그�
 **환경** 페이지에서 로그에 액세스할 수도 있습니다.
 
 ![환경의 로그 화면](assets/download-logs.png)
-
-
 
 ## API를 통한 로그 {#logs-through-api}
 
@@ -86,6 +84,10 @@ Environment Id Service    Name
 ```
 
 ### 추가 리소스 {#resources}
+
+>[!TIP]
+>
+>체크아웃 [이 비디오 리소스](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) AEM as a Cloud Service 디버깅에 대해 자세히 알아보십시오.
 
 Cloud Manager API 및 Adobe I/O CLI에 대한 자세한 내용은 다음 추가 리소스를 참조하십시오.
 
