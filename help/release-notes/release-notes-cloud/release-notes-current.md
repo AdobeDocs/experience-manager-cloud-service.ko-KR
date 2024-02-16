@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 03293f49e583d8b40bafd95bbc89c9ba5c024da8
-workflow-type: ht
+source-git-commit: e2c1d30c035fc1f664efbd15fee977f5488dc5f8
+workflow-type: tm+mt
 source-wordcount: '937'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 기능 릴리스(2024.1.0)의 릴리스 일자는 2024년 1월 25일입니다. 다음 기능 릴리스(2024.2.0)는 2024년 2월 29일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 기능 릴리스(2024.1.0)의 릴리스 일자는 2024년 1월 25일입니다. 다음 기능 릴리스(2024.3.0)는 2024년 3월 28일에 예정되어 있습니다.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
@@ -116,3 +116,4 @@ Dynatrace 고객은 자신의 AEM 사용 현황을 모니터링할 수 있습니
 ## 마이그레이션 도구 {#migration-tools}
 
 [여기](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)에서 마이그레이션 도구의 전체 목록을 찾을 수 있습니다.
+
