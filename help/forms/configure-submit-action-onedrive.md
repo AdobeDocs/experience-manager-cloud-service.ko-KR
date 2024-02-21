@@ -3,10 +3,10 @@ Title: How to submit data from an Adaptive Form to Microsoft® OneDrive?
 Description: Explore the streamlined process of connecting AEM Forms with Microsoft® OneDrive using the Submit to OneDrive Submit Action. Learn the step-by-step guide to configure OneDrive and set up submission actions for efficient data storage and retrieval
 keywords: AEM Forms OneDrive 통합, AEM Forms를 사용하여 Microsoft OneDrive, OneDrive 구성 설정에 연결
 feature: Adaptive Forms, Core Components
-source-git-commit: 95af49839d206f67ac02116730229f5b0531c5bb
+source-git-commit: 20458e710502e445cf5c8f582a1d183bdac75c8d
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 67%
+source-wordcount: '587'
+ht-degree: 68%
 
 ---
 
@@ -24,7 +24,7 @@ AEM Forms과 Microsoft® OneDrive의 원활한 통합의 이점 중 일부는 �
 * OneDrive의 장치 간 접근성을 통해 저장된 양식 데이터를 다른 플랫폼에서 쉽게 사용할 수 있습니다. 사용자는 데스크탑, 노트북, 태블릿, 모바일 기기에서 제출된 데이터, 첨부 파일, 문서에 접근할 수 있어 접근성과 유연성이 향상된다.
 * AEM Forms와 OneDrive를 통합하면 효율적인 데이터 저장을 위한 안정적이고 확장 가능한 솔루션을 제공합니다. 파일, 첨부 파일, 기록 문서 등 모든 적응형 양식 제출을 OneDrive에 편리하게 저장하여 체계적이고 접근 가능한 데이터를 유지할 수 있습니다.
 
-## OneDrive를 응용 프로그램에 연결
+## 적응형 양식에 OneDrive 연결
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
 

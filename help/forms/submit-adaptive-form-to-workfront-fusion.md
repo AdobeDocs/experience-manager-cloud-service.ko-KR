@@ -6,10 +6,10 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 94519d3c7d2f927f046628d9ce057209556e847d
+source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
 workflow-type: tm+mt
-source-wordcount: '1241'
-ht-degree: 4%
+source-wordcount: '1255'
+ht-degree: 3%
 
 ---
 
@@ -40,11 +40,17 @@ Workfront Fusion과 AEM Forms 간에 연결을 설정하려면 다음 조건을 
 
 ## AEM Forms과 Adobe Workfront Fusion 통합
 
-연결하려면 [Workfront fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) 양식에 대해 다음 단계를 수행합니다.
-
 ### 1. Workfront 시나리오 만들기 {#workflow-scenario}
 
-Workfront 시나리오를 만들려면 다음 작업을 수행하십시오.
+Workfront 시나리오를 만들려면 다음 단계를 수행하십시오.
+
+1. [시나리오 만들기](#create-scenario)
+1. [시나리오에 웹 후크 추가](#add-webhook)
+1. [웹 후크에 연결 추가](#add-connection)
+
+#### 시나리오 만들기 {#create-scenario}
+
+시나리오를 만들려면 다음 작업을 수행하십시오.
 1. 로그인 [Workfront Fusion 계정](https://app-qa.workfrontfusion.com/).
 1. 클릭 **[!UICONTROL 시나리오]** ![공유 아이콘](/help/forms/assets/Smock_ShareAndroid_18_N.svg) 왼쪽 패널에서
 1. 클릭 **[!UICONTROL 새 시나리오 만들기]** 페이지의 오른쪽 상단 모서리에서 을 참조하십시오. 새 시나리오를 만들 수 있는 페이지가 화면에 표시됩니다.
@@ -61,7 +67,7 @@ Workfront 시나리오를 만들려면 다음 작업을 수행하십시오.
 
 1. 다음 항목 선택 **[!UICONTROL 양식 이벤트 감시]** 대화 상자와 웹후크를 추가하는 창이 나타납니다.
 
-#### 1.1 웹후크 추가 {#add-webhook}
+#### 웹후크 추가 {#add-webhook}
 
 ![웹후크 추가](/help/forms/assets/workfront-add-webhook.png)
 
@@ -76,7 +82,7 @@ Webhook를 추가하려면:
 
 1. 클릭 **[!UICONTROL 추가]** 새 연결을 추가합니다. 다음 **[!UICONTROL 연결 만들기]** 대화 상자가 나타납니다.
 
-#### 1.2 웹후크에 연결 추가 {#add-connection}
+#### 웹후크에 연결 추가 {#add-connection}
 
 ![연결 추가](/help/forms/assets/workfront-add-connection.png)
 

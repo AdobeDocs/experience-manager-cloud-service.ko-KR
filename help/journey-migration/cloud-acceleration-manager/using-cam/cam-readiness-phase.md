@@ -2,10 +2,10 @@
 title: Cloud Acceleration Manager의 준비 단계
 description: 이 페이지에서는 Cloud Acceleration Manager의 준비 단계에 대한 개요를 제공합니다.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: f99395870d076d47ef53b01c9fc6579a9f8788a2
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 4%
+source-wordcount: '984'
+ht-degree: 6%
 
 ---
 
@@ -60,10 +60,13 @@ Cloud Acceleration Manager에서 프로젝트를 생성했으면 이제 준비 �
 
    ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
+   >[!NOTE]
+   >여러 보고서를 업로드하는 경우, 항상 세부 정보가 표시되는 보고서가 가장 최근 생성 날짜(업로드 날짜가 아님)인 보고서입니다.
+
 1. CAM의 모범 사례 분석 대시보드를 검토하고 탐색합니다. 다음을 참조하십시오 [모범 사례 분석 보고서 검토](#analysis-report) 을 참조하십시오.
 
    >[!NOTE]
-   >새 보고서를 업로드하면 모든 평가가 재설정됩니다.
+   >새 보고서를 업로드하면 이전에 로드된 보고서보다 최신인 경우 모든 평가가 재설정됩니다.
 
 ### 인쇄 미리 보기 사용 {#print-preview-cam}
 
@@ -86,12 +89,12 @@ Cloud Acceleration Manager에서 프로젝트를 생성했으면 이제 준비 �
 
 ### 추세선 보기 사용 {#trendline-view-cam}
 
-프로젝트에 BPA(모범 사례 분석기) 보고서를 두 개 이상 업로드할 때 다음을 선택할 수 있습니다. **추세선 보기** 기록 BPA 보고서의 결과를 보고 비교하는 옵션입니다.
+프로젝트에 둘 이상의 고유한 BPA(모범 사례 분석기) 보고서를 업로드할 때 다음을 선택할 수 있습니다. **추세선 보기** 기록 BPA 보고서의 결과를 보고 비교하는 옵션입니다.
 
 트렌드 라인 옵션에서 보고서를 보려면 아래 단계를 따르십시오.
 
 >[!NOTE]
->프로젝트에 BPA 보고서를 두 개 이상 업로드하면 **...** 아이콘.
+>프로젝트에 둘 이상의 고유한 BPA 보고서를 업로드하면 **...** 아이콘. 보고서는 호스트와 생성 시간이 동일한 경우 동일한 것으로(고유하지 않음) 간주됩니다.
 
 1. 프로젝트로 이동한 다음 **리뷰** 다음에서 **모범 사례 분석** 의 카드 **준비 상태** 단계.
 
@@ -100,9 +103,6 @@ Cloud Acceleration Manager에서 프로젝트를 생성했으면 이제 준비 �
 1. 클릭 **...**.
 
    ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
-
-   >[!IMPORTANT]
-   >표시되는 보고서는 항상 최신 보고서 날짜가 있는 보고서입니다.
 
 1. 드롭다운 목록에서 **추세선 보기**&#x200B;을 참조하십시오.
 

@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d76273ddcbcf5013713e515e39dde8f42bbbf425
+source-git-commit: 0604838311bb9ab195789fad755b0910e09519fd
 workflow-type: tm+mt
-source-wordcount: '4648'
-ht-degree: 99%
+source-wordcount: '4711'
+ht-degree: 98%
 
 ---
 
@@ -89,7 +89,7 @@ ht-degree: 99%
          + [2023.1.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2023/2023-1-0.md)
    + Cloud Manager 릴리스 정보 {#cloud-manager}
       + [최신 릴리스 정보](/help/implementing/cloud-manager/release-notes/current.md)
-      + 20 {#2024}
+      + 2024 {#2024}
          + [2024.1.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2024/2024-1-0.md)
       + 2023 {#2023}
          + [2023.12.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md)
@@ -614,8 +614,8 @@ ht-degree: 99%
             + [반복 가능한 섹션으로 양식 만들기](/help/forms/create-forms-repeatable-sections.md)
             + [적응형 양식에 대한 제출 액션 구성](/help/forms/configure-submit-actions-core-components.md)
             + [Azure Blob Storage에 적응형 양식 제출](/help/forms/configure-submit-action-azure-blob-storage.md)
-            + [Microsoft® OneDrive에 적응형 양식 제출](/help/forms/configure-submit-action-onedrive.md)
-            + [적응형 양식에 대한 SharePoint Storage 구성](/help/forms/configure-submit-action-sharepoint.md)
+            + [Microsoft에 적응형 양식 제출](/help/forms/configure-submit-action-onedrive.md)
+            + [Microsoft에 적응형 양식 연결](/help/forms/configure-submit-action-sharepoint.md)
             + [AEM 적응형 양식과 AEM Workflow 통합](/help/forms/configure-submit-action-workflow.md)
             + [적응형 양식의 REST 엔드포인트에 제출 액션 구성](/help/forms/configure-submit-action-restpoint.md)
             + [적응형 양식의 이메일 보내기 제출 액션 구성](/help/forms/configure-submit-action-send-email.md)
@@ -681,9 +681,9 @@ ht-degree: 99%
       + [Forms Designer를 사용하여 템플릿 만들기](/help/forms/use-forms-designer.md)
       + [PDF 문서에서 사용자 정의 글꼴 사용하기](/help/forms/use-custom-fonts.md)
       + [알려진 문제, 모범 사례 및 자주 묻는 질문](/help/forms/communications-known-issues-limitations.md)
-   + 거래 보고서 {#using-communications}
+   + 트랜잭션 보고서 {#using-communications}
       + [트랜잭션 보고서 과금 가능한 API](/help/forms/transaction-reports-billable-apis.md)
-      + [사용자 지정 구현에 대한 트랜잭션 기록](/help/forms/record-transaction-custom-implementation.md)
+      + [사용자 정의 구현을 위한 트랜잭션 레코드](/help/forms/record-transaction-custom-implementation.md)
    + 개발자 API 참조 {#aem-forms-developer-api-reference}
       + [적응형 양식 API 참조](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms Cloud Service 커뮤니케이션 API 참조](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -802,6 +802,21 @@ ht-degree: 99%
       + [Akamai 설정](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Fastly 설정](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [리디렉션](/help/edge/docs/redirects.md)
+   + Edge 게재 Forms 구축 {#build-forms}
+      + [개요](/help/edge/docs/forms/overview.md)
+      + 시작하기 {#getting-started-eds-forms}
+         + [양식 만들기 및 미리 보기](/help/edge/docs/forms/create-forms.md)
+         + [데이터를 전송할 양식 활성화](/help/edge/docs/forms/submit-forms.md)
+         + [사이트 페이지에 양식 게시](/help/edge/docs/forms/publish-eds-forms.md)
+         + [양식 필드에 유효성 검사 추가](/help/edge/docs/forms/validate-forms.md)
+         + [테마 및 양식 스타일 변경](/help/edge/docs/forms/style-theme-forms.md)
+      + 고급 기능 {#advanced-features-eds-forms}
+         + [양식 단편 만들기 및 양식에 추가](/help/edge/docs/forms/form-fragments.md)
+         + [양식 번역](/help/edge/docs/forms/translate-forms.md)
+         + [양식에 반복 가능한 섹션 추가](/help/edge/docs/forms/repeatable-forms.md)
+         + [양식에 reCAPTCHA 적용](/help/edge/docs/forms/recaptacha-forms.md)
+         + [사용자 지정 구성 요소 만들기](/help/edge/docs/forms/custom-components-forms.md)
+         + [감사 인사 페이지 추가](/help/edge/docs/forms/thank-you-page-form.md)
    + Edge Delivery용 리소스 {#resources}
       + Sidekick {#sidekick}
          + [Sidekick 사용](/help/edge/docs/sidekick.md)
@@ -1132,4 +1147,4 @@ ht-degree: 99%
       + [Universal Editor 인증](/help/implementing/universal-editor/authentication.md)
       + [Universal Editor를 사용하는 로컬 AEM 개발](/help/implementing/universal-editor/local-dev.md)
       + [Universal Editor 호출](/help/implementing/universal-editor/calls.md)
-      + [범용 편집기 사용자 지정](/help/implementing/universal-editor/customizing.md)
+      + [Universal Editor 사용자 정의](/help/implementing/universal-editor/customizing.md)

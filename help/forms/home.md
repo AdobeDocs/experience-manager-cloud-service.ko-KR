@@ -5,8 +5,8 @@ landing-page-description: AEM as a Cloud Service에서 양식을 사용하는 �
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: ht
+source-git-commit: f2752673dcaa0762bb55719cee23765aa8ecde96
+workflow-type: tm+mt
 source-wordcount: '972'
 ht-degree: 100%
 
@@ -26,7 +26,6 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service]는 기업이 복잡한 
 이 서비스는 항상 최신 상태를 유지하고 항상 사용 가능하며 항상 학습합니다. 조직은 [!DNL AEM Forms] as a Cloud Service를 사용하여 로컬 인프라 없이도 클라우드에서 이러한 모든 기능을 사용할 수 있습니다. 또한 이 서비스는 항상 최신 기능을 유지하므로 조직은 복잡한 업그레이드 주기를 겪을 필요가 없습니다.
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service]는 고객 여정의 모든 단계를 지원하는 고객 중심 솔루션입니다.
-
 
 ## 등록과 온보딩 경험 디지털화 및 간소화
 
