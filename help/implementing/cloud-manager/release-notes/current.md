@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 4a41de9da557be562bb2ff5773c7954f76a9acc7
 workflow-type: tm+mt
 source-wordcount: '725'
-ht-degree: 80%
+ht-degree: 97%
 
 ---
 
@@ -25,12 +25,12 @@ AEM as a Cloud Service의 Cloud Manager 2024.2.0 릴리스 날짜는 2024년 2�
 
 ## 새로운 기능 {#what-is-new}
 
-* Cloud Manager는 이제 의 셀프서비스 관리를 지원합니다. [파이프라인 변수](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) cloud Manager UI를 통해
-* [미리보기 서비스](/help/implementing/cloud-manager/manage-environments.md#access-preview-sevice) 이제 미리보기 서비스 기능이 롤아웃되기 전에 생성된 환경에 대해 활성화됩니다.
+* Cloud Manager는 이제 Cloud Manager UI를 통해 [파이프라인 변수](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)의 셀프서비스 관리를 지원합니다.
+* 이제 미리보기 서비스가 출시되기 전에 생성된 환경에 대해 [미리보기 서비스](/help/implementing/cloud-manager/manage-environments.md#access-preview-sevice)가 활성화됩니다.
 * [Cloud Manager 사용자 정의 권한](/help/implementing/cloud-manager/custom-permissions.md)을 사용하여 Cloud Manager 사용자의 프로그램, 파이프라인 및 환경에 대한 액세스를 제한하는 구성 가능한 권한으로 새 사용자 정의 권한 프로필을 생성할 수 있습니다.
-   * 이 기능은 를 통해 단계적으로 배포되기 시작했습니다. [2023년 12월 릴리스](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md) 및 은 2024년 2월 20일에 완료됩니다.
-* 모든 새 환경의 경우 [환경 제품 프로필](/help/onboarding/aem-cs-team-product-profiles.md) 프로필 설명, 환경 유형, 번호 및 프로그램 번호의 조합을 기반으로 이름이 보다 사용자에게 친숙한 포맷이 됩니다.
-* [빌드 환경](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 는 Maven 버전 3.9.4 및 JDK 버전 jdk-11.0.22 및 jdk1.8.0_401로 업데이트되었습니다.
+   * 이 기능은 [2023년 12월 릴리스](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md)부터 단계적으로 출시되었으며 최종 출시는 2024년 2월 20일에 완료될 예정입니다.
+* 모든 새로운 환경의 경우 [환경 제품 프로필](/help/onboarding/aem-cs-team-product-profiles.md) 이름은 프로필 설명, 환경 유형, 번호 및 프로그램 번호의 조합을 기반으로 보다 사용자에게 친숙한 포맷으로 변경됩니다.
+* [빌드 환경](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)이 Maven 버전 3.9.4 및 JDK 버전 jdk-11.0.22 및 jdk1.8.0_401로 업데이트되었습니다.
 
 ## 조기 채택 프로그램 {#early-adoption}
 
@@ -73,4 +73,4 @@ GitHub를 사용하여 저장소를 관리하는 경우, [이제 Cloud Manager�
 
 ## 버그 수정 {#bug-fixes}
 
-* 빌드 컨테이너의 JDK가 다음 문제를 해결하는 버전으로 업데이트되었습니다 [8313765.](https://bugs.openjdk.org/browse/JDK-8313765)
+* 빌드 컨테이너의 JDK가 [JDK-8313765](https://bugs.openjdk.org/browse/JDK-8313765)을 해결하는 버전으로 업데이트되었습니다.
