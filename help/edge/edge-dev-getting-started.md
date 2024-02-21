@@ -3,9 +3,9 @@ title: Edge Delivery Services를 사용한 AEM 작성을 위한 개발자 시작
 description: 이 안내서는 콘텐츠 작성을 위한 Edge Delivery Services 및 Universal Editor를 사용하여 새로운 Adobe Experience Manager 사이트를 시작하고 실행하는 데 도움이 됩니다.
 feature: Edge Delivery Services
 source-git-commit: 224cfe9853e8974c33b0e53e961a02d54f875a35
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '989'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -165,6 +165,6 @@ Universal Editor를 사용하여 새 사이트 편집을 마쳤다면 콘텐츠�
 
 ## 다음 단계 {#next-steps}
 
-이제 작업 중인 AEM에서 Edge Delivery Services 프로젝트를 시작했으므로 나만의 블록을 만들고 스타일을 지정할 수 있습니다.
+Edge Delivery Services 프로젝트와 함께 작동하는 AEM이 있으므로, 자체 블록을 만들고 스타일을 지정할 수 있습니다.
 
-안내서를 참조하십시오 [범용 편집기에서 사용하기 위해 계측된 블록 만들기](/help/edge/create-block.md) 추가 정보.
+자세한 내용은 [Universal Editor에 사용하도록 구성된 블록 만들기](/help/edge/create-block.md) 안내서를 참조하십시오.
