@@ -4,9 +4,9 @@ description: 완벽한 형태를 만들어, 빨리! ⚡ AEM Forms Edge Delivery 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: f37a99cd5cbfb745cb591e3be2a46a5f52139cb2
+source-git-commit: b94bd6cd70af541444fda1d03f502b4588fd879b
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '924'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## 사전 요구 사항
 
-* Github 계정이 있습니다.
+* GitHub 계정이 있습니다.
 * Google Sheets 또는 Microsoft SharePoint에 액세스할 수 있습니다.
 * Git, HTML, CSS 및 JavaScript의 기본 사항을 이해합니다.
 * 로컬 개발을 위해 노드 및 NPM이 설치되어 있습니다.
@@ -36,14 +36,14 @@ ht-degree: 1%
 
 AEM Forms Edge Delivery에는 캡처된 데이터를 캡처하고 저장할 양식을 쉽게 만들 수 있도록 양식 블록이 포함되어 있습니다. Edge Delivery Service 프로젝트에 양식 블록을 포함하려면 다음을 수행하십시오.
 
-1. 로컬 개발 환경에서 EDS(Edge Delivery Service) 프로젝트 폴더로 이동합니다.
+1. 다음 위치로 이동 `blocks` 로컬 개발 환경의 EDS(Edge Delivery Service) 프로젝트 폴더에 있는 폴더
 
 
    ```Shell
-   cd [EDS Project folder]
+   cd [EDS Project folder]/blocks
    ```
 
-1. 다음 이름의 폴더 만들기 `form` EDS 프로젝트 디렉토리 아래에 예를 들어 EDS 프로젝트의 디렉터리 아래에 `Portal`, 폴더 만들기 `form`.
+1. 다음 이름의 폴더 만들기 `form` 다음 아래에 `blocks` 디렉토리. 예를 들어 EDS 프로젝트의 디렉터리 아래에 `Portal`, 폴더 만들기 `form`.
 
    ```Shell
    mkdir form
@@ -54,62 +54,82 @@ AEM Forms Edge Delivery에는 캡처된 데이터를 캡처하고 저장할 양�
 
    ```shell
    cp -R <source:path of the form block> <destination: path of the form folder created in the previous step>
-   
-   For example
-   
-   cp -R Documents/afb/blocks/form Documents/portal/blocks/
    ```
 
-1. GitHub의 Edge 게재 서비스 프로젝트에 &#39;양식&#39; 폴더 및 기본 파일을 체크인합니다.
+   **예를 들어,**
+
+
+   ```shell
+   cp -R ../../afb/blocks/form ../../fantastic-computing-machine/blocks 
+   ```
+
+
+
+1. GitHub의 Edge 게재 서비스 프로젝트에 &#39;양식&#39; 폴더 및 기본 파일을 체크 인합니다.
 
    ```Shell
+   cd ..
    git add .
    git commit -m "Added form block"
    git push origin
    ```
 
-   이제 EDS 양식을 렌더링할 준비가 되었습니다.
+   양식 블록이 EDS 프로젝트에 추가됩니다. 이제 양식을 만들어 사이트에 추가할 수 있습니다.
 
    >[!NOTE]
    >
-   > * 가져오기 요청/eds 프로젝트 빌드가 실패하고 가져오기 관련 오류가 발생하는 경우 `franklin-lib.js` 파일, 가져오기 문을 업데이트하여 `aem.js` 파일 대신 `franklin-lib.js` 파일.
-   > * 린팅 오류가 발생하면 언제든지 무시하십시오. 린팅 검사를 무시하려면에서 package.json 파일로 이동하여 &quot;lint&quot; 스크립트를 업데이트합니다 `"lint": "npm run lint:js && npm run lint:css"` 끝 `"lint": "echo 'skipping linting for now'"`. 그런 다음 변경 사항을 package.json 파일에 커밋합니다.
+   > * &quot;&#39;../../scripts/lib-franklin.js&#39; 모듈에 대한 경로를 확인할 수 없습니다.&quot; 오류가 발생하면 `[EDS Project]/blocks/forms/form.js` 파일. import 문에서 `franklin-lib.js` 파일이 포함된 파일 `aem.js` 파일.
+   > * 린팅 오류가 발생하면 언제든지 무시하십시오. 린팅 검사를 무시하려면 `[EDS Project]\package.json` 에서 &quot;lint&quot; 스크립트를 파일링하고 업데이트합니다. `"lint": "npm run lint:js && npm run lint:css"` 끝 `"lint": "echo 'skipping linting for now'"`. 파일을 저장하고 GitHub 프로젝트에 커밋합니다.
 
 ## Microsoft Excel 또는 Google Sheet를 사용하여 양식 만들기 {#create-a-form-for-an-eds-project}
 
-웹 사이트 개발자가 양식을 만들고 웹 사이트 방문자로부터 수집할 정보를 선택할 수 있도록 하는 것이 유용합니다. 작성자는 복잡한 프로세스 대신 스프레드시트를 사용하여 양식을 쉽게 설정할 수 있습니다. 올바른 열 헤더를 추가한 다음 양식 블록을 사용하여 웹 사이트에 번거롭게 표시해야 합니다. 양식을 만들려면 다음 작업을 수행하십시오.
+복잡한 프로세스 대신 스프레드시트를 사용하여 양식을 쉽게 만들 수 있습니다. 먼저 스프레드시트에 행 및 열 헤더를 추가할 수 있습니다. 여기서 각 행은 양식 필드를 정의하고 각 열 헤더는 해당 양식 필드의 속성을 정의합니다.
 
-1. Microsoft SharePoint 또는 Google 드라이브의 AEM Edge 배달 프로젝트 디렉터리 아래 아무 곳에나 Microsoft Excel 통합 문서 또는 Google 시트를 만듭니다.
+예를 들어 다음 스프레드시트에서 행은 의 필드를 정의합니다 `contact us` 양식 및 열 머리글은 해당 필드의 속성을 정의합니다.
 
-1. AEM 사용자(예: `helix@adobe.com`)을 프로젝트에 대해 구성한 경우 시트에 대한 편집 권한이 있습니다.
+![연락처 스프레드시트](/help/edge/assets/contact-us-form-spreadsheet.png)
 
-1. 만든 통합 문서를 열고 기본 시트의 이름을 &quot;shared-default&quot;로 변경합니다.
+양식을 만들려면 다음 작업을 수행하십시오.
 
-   ![기본 시트의 이름을 &quot;shared-default&quot;로 바꿉니다.](/help/edge/assets/rename-sheet-to-helix-default.png)
+1. Microsoft SharePoint 또는 Google 드라이브에서 AEM Edge 게재 프로젝트 폴더를 엽니다.
 
-1. 의 내용을 복사합니다. [연락처 스프레드시트](https://docs.google.com/spreadsheets/d/12jvYjo1a3GOV30IqPY6_7YaCQtUmzWpFhoiOHDcjB28/edit?usp=drive_link) 스프레드시트로 복사합니다.
+1. AEM Edge 배달 프로젝트 디렉터리 아래 아무 곳에나 Microsoft Excel 통합 문서 또는 Google 시트를 만듭니다. 예를 들어, 라는 이름의 스프레드시트를 만듭니다 `contact-us` Google 드라이브의 AEM Edge 게재 프로젝트 디렉터리입니다.
 
-   ![연락처 스프레드시트](/help/edge/assets/contact-us-form-spreadsheet.png)
+1. 시트가 AEM 사용자와 공유되어 있는지 확인합니다(예: `helix@adobe.com`) [프로젝트에 대해 구성됨](https://www.aem.live/docs/setup-customer-sharepoint) 및 사용자는 시트에 대한 편집 권한이 있습니다.
+
+1. 생성한 스프레드시트를 열고 기본 시트의 이름을 &quot;shared-default&quot;로 변경합니다.
+
+   ![기본 시트의 이름을 &quot;shared-default&quot;로 바꿉니다.](/help/edge/assets/rename-sheet-to-shared-default.png)
+
+1. 양식의 필드를 추가하려면 행 및 열 머리글을 `shared-default` 시트. 여기서 각 행은 양식 필드를 정의하고 각 열 머리글은 [속성](/help/edge/docs/forms/eds-form-field-properties))을 참조하십시오.
+
+   빠르게 시작하려면 의 내용을 복사할 수 있습니다. [연락처 스프레드시트](https://docs.google.com/spreadsheets/d/12jvYjo1a3GOV30IqPY6_7YaCQtUmzWpFhoiOHDcjB28/edit?usp=drive_link) 스프레드시트로 복사합니다.
+
+   >[!VIDEO](https://video.tv.adobe.com/v/3427468?quality=12&learn=on)
 
 1. 사용 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 를 클릭하여 시트를 미리 보고 게시합니다.
+
+   ![AEM Sidekick을 사용하여 시트 미리보기 및 게시](/help/edge/assets/preview-form.png)
 
    미리보기 및 게시 시 브라우저는 시트의 콘텐츠를 JSON 형식으로 표시하는 새 탭을 엽니다. 나중에 양식을 렌더링하는 데 필요하므로 라이브 URL을 메모해 두십시오.
 
    URL 형식은 다음과 같습니다.
 
-   ```shell
+   ```JSON
    https://<branch>--<repository>--<owner>.hlx.live/<form>.json
    
    For example, https://main--portal--wkndforms.hlx.live/contact-us.json
    ```
 
+
+
 ## EDS(Edge Delivery Service) 페이지를 사용하여 양식 미리 보기 {#add-a-form-to-your-eds-page}
 
-지금까지 EDS 프로젝트에 대한 양식 블록을 활성화하고 양식 구조를 준비했습니다. 이제 양식을 EDS 페이지에 포함하고 렌더링하려면 다음을 수행하십시오.
+지금까지 EDS 프로젝트에 대한 양식 블록을 활성화하고 양식 구조를 준비했습니다. 이제 양식을 미리 보려면 다음을 수행하십시오.
 
 1. Microsoft SharePoint 또는 Google 드라이브의 AEM Edge 게재 프로젝트 디렉토리로 이동합니다.
 
-1. 페이지에 양식을 추가하려면 해당 문서 파일을 엽니다. 예를 들어 색인 파일을 엽니다.
+1. 양식을 호스팅할 문서 파일을 만들거나 엽니다. 예를 들어 색인 파일을 엽니다.
 
 1. 문서 내에서 양식을 추가할 위치로 이동합니다.
 
@@ -117,24 +137,30 @@ AEM Forms Edge Delivery에는 캡처된 데이터를 캡처하고 저장할 양�
 
    ![](/help/edge/assets/form-block-in-sites-page-example.png)
 
-   두 번째 행에는 이전 섹션에서 기록한 URL을 하이퍼링크로 포함합니다.
+   두 번째 행에는 이전 섹션에서 기록한 URL을 하이퍼링크로 포함합니다. 미리보기 URL(.page URL) 또는 게시 URL(.live)을 사용할 수 있습니다. 미리보기 URL은 프로덕션용 양식 및 게시 URL을 빌드하거나 테스트하는 동안 사용할 수 있습니다.
 
-1. 사용 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 을 클릭하여 페이지를 미리 보고 게시합니다. 양식이 렌더링됩니다.
+   >[!IMPORTANT]
+   >
+   >
+   > URL이 일반 텍스트로 언급되지 않았는지 확인합니다. 하이퍼링크로 추가해야 합니다.
 
-   예를 들어 다음은 을 기반으로 하는 양식입니다 [연락처 스프레드시트](https://docs.google.com/spreadsheets/d/12jvYjo1a3GOV30IqPY6_7YaCQtUmzWpFhoiOHDcjB28/edit?usp=drive_link):
+1. 사용 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 을 클릭하여 페이지를 미리 봅니다. 이제 페이지에 양식이 표시됩니다. 예를 들어 다음은 을 기반으로 하는 양식입니다 [연락처 스프레드시트](https://docs.google.com/spreadsheets/d/12jvYjo1a3GOV30IqPY6_7YaCQtUmzWpFhoiOHDcjB28/edit?usp=drive_link):
 
 
-   ![연락처(EDS 양식)](/help/edge/assets/eds-form.png)
+   ![샘플 EDS 양식](/help/edge/assets/eds-form.png)
 
-   양식 블록은 양식을 렌더링하지만 아직 데이터를 수락할 준비가 되지 않았습니다. 제출 단추를 클릭하면 다음과 유사한 오류가 발생합니다.
+   이제 양식을 작성하고 제출 단추를 클릭하면 스프레드시트가 아직 데이터를 수락하도록 설정되지 않았으므로 다음과 유사한 오류가 발생합니다.
 
    ![양식 제출 오류](/help/edge/assets/form-error.png)
 
-   [데이터를 허용하도록 시트 준비](/help/edge/docs/forms/submit-forms.md). 데이터를 수락하기 위해 준비하는 시트 게시물에 데이터를 제출할 수 있습니다.
+
+   다음 단계는 [데이터를 허용하도록 스프레드시트 준비](/help/edge/docs/forms/submit-forms.md).
+
 
 
 ## 더 보기
 
+* [양식 필드 속성](/help/edge/docs/forms/eds-form-field-properties)
 * [양식 만들기 및 미리 보기](/help/edge/docs/forms/create-forms.md)
 * [데이터를 전송할 양식 활성화](/help/edge/docs/forms/submit-forms.md)
 * [사이트 페이지에 양식 게시](/help/edge/docs/forms/publish-eds-forms.md)

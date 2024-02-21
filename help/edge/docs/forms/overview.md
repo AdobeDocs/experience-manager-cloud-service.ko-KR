@@ -4,9 +4,9 @@ description: 최고 성능을 위해 구축된 AEM Forms Edge Delivery Service�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 9c084461f5a99f2417b5cc34e851f703fe328f7d
+source-git-commit: b94bd6cd70af541444fda1d03f502b4588fd879b
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ AEM Forms Edge Delivery Service는 다음과 같은 이점을 제공합니다.
 
 <style>
     .card-container {
-        width: calc(33% - 10px);
+        width: calc(33.33% - 10px);;
         margin: 5px;
         border: 1px solid #ccc;
         border-radius: 5px;
@@ -65,113 +65,53 @@ AEM Forms Edge Delivery Service는 다음과 같은 이점을 제공합니다.
         </a>
         <p>여러 양식에서 사전 구성된 조각을 재사용합니다.</p>
     </div>
-    <!-- Repeat the same structure for other cards -->
-
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: -5px;">
-  <div class="card-container">
+    <div class="card-container">
         <a href="/help/edge/docs/forms/translate-forms.md">  
-          <img src="/help/edge/assets/smock_abc_18_n.svg" alt="EDS 양식 번역" style="border-radius: 5px;"> </b>
-          <br><b style="margin-top: 5px;">양식 번역</b>
-      </a>
-      <p>비용을 억제하면서 양식의 범위를 확장하십시오.</p>
-  </div>
-  <div class="card-container">
-      <a href="/help/edge/docs/forms/style-theme-forms.md">
-          <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Eds 양식에 스타일 또는 테마 적용" style="border-radius: 5px;"> </b>
-          <br><b style="margin-top: 5px;">테마 맞춤화</b>
-      </a>
-      <p>여러 양식에 동일한 테마를 적용하여 일관된 브랜드 이미지를 만듭니다.</p>
-  </div>
-  <div class="card-container">
-    <a href="/help/edge/docs/forms/repeatable-forms.md">  
-      <img src="/help/edge/assets/smock_addto_18_n.svg" alt="EDS 양식에 반복 가능한 섹션 추가" alt="EDS 양식에서 양식 단편 사용" style="border-radius: 5px;"> </b>
-          <br><b style="margin-top: 5px;">반복 가능한 섹션 추가</b>
-      </a>
-      <p>반복 가능한 섹션을 간편하게 만들어 양식에 추가합니다.</p>
-  </div>
-
-
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: -5px;">
-  <div class="card-container">
-    <a href="/help/edge/docs/forms/custom-components-forms.md"> 
-      <img src="/help/edge/assets/smock_userdeveloper_18_n.svg" alt="표준 JavaScript 및 CSS를 사용하여 사용자 정의 양식 구성 요소 만들기"  style="border-radius: 5px;"> </b>
-          <br><b style="margin-top: 5px;">사용자 지정 구성 요소 만들기</b>
-      </a>
-      <p>표준 JavaScript 및 CSS를 설정하여 구성 요소 및 테마를 만듭니다.</p>
-  </div>
-  <div class="card-container">
-    <a href="/help/edge/docs/forms/recaptacha-forms.md">  
-      <img src="/help//edge/assets/smock_keyclock_18_n.svg" alt="EDS 양식에서 reCAPTCHA 사용" style="border-radius: 5px;"> </b>
-          <br><b style="margin-top: 5px;">reCAPTCHA 사용</b>
-      </a>
-      <p>강력한 스팸 및 보트 보호를 위해 OOTB reCAPTCHA 통합을 사용하십시오.</p>
-  </div>
-  <div class="card-container">
-    <a href="/help/edge/docs/forms/create-forms.md#manually-configure-a-spreadsheet-to-accept-data">   
-      <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="양식 제출" alt="EDS 양식에서 양식 단편 사용" style="border-radius: 5px;"> </b>
-          <br><b style="margin-top: 5px;">스프레드시트에 양식 제출</b>
-      </a>
-      <p>양식을 Microsoft Excel 또는 Google Sheets에 직접 제출합니다.</p>
-  </div>
-</div>
+            <img src="/help/edge/assets/smock_abc_18_n.svg" alt="EDS 양식 번역" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">양식 번역</b>
+        </a>
+        <p>비용을 억제하면서 양식의 범위를 확장하십시오.</p>
+    </div>
+    <div class="card-container">
+        <a href="/help/edge/docs/forms/style-theme-forms.md">
+            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Eds 양식에 스타일 또는 테마 적용" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">테마 맞춤화</b>
+        </a>
+        <p>여러 양식에 동일한 테마를 적용하여 일관된 브랜드 이미지를 만듭니다.</p>
+    </div>
+    <div class="card-container">
+        <a href="/help/edge/docs/forms/repeatable-forms.md">  
+            <img src="/help/edge/assets/smock_addto_18_n.svg" alt="EDS 양식에 반복 가능한 섹션 추가" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">반복 가능한 섹션 추가</b>
+        </a>
+        <p>반복 가능한 섹션을 간편하게 만들어 양식에 추가합니다.</p>
+    </div>
+    <div class="card-container">
+        <a href="/help/edge/docs/forms/custom-components-forms.md"> 
+            <img src="/help/edge/assets/smock_userdeveloper_18_n.svg" alt="표준 JavaScript 및 CSS를 사용하여 사용자 정의 양식 구성 요소 만들기"  style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">사용자 지정 구성 요소 만들기</b>
+        </a>
+        <p>표준 JavaScript 및 CSS를 사용하여 구성 요소 및 테마를 만들 수 있습니다.</p>
+    </div>
+    <div class="card-container">
+        <a href="/help/edge/docs/forms/recaptacha-forms.md">  
+            <img src="/help//edge/assets/smock_keyclock_18_n.svg" alt="EDS 양식에서 reCAPTCHA 사용" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">reCAPTCHA 사용</b>
+        </a>
+        <p>강력한 스팸 및 보트 보호를 위해 OOTB reCAPTCHA 통합을 사용하십시오.</p>
+    </div>
+    <div class="card-container">
+        <a href="/help/edge/docs/forms/create-forms.md#manually-configure-a-spreadsheet-to-accept-data">   
+            <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="양식 제출" alt="EDS 양식에서 양식 단편 사용" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">스프레드시트에 양식 제출</b>
+        </a>
+        <p>양식을 Microsoft Excel 또는 Google Sheets에 직접 제출합니다.</p>
+    </div>
 </div>
 
-</div>
-<!-- Repeat the same structure for other cards -->
 
 </br>
 
-<!-- 
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 5px;">
-    <div style="width: 30%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-sizing: border-box;">
-       <a href="/help/edge/docs/forms/create-forms.md"> <img src="/help/edge/assets/smock_devices_18_n.svg"alt="Create a form using eds forms" style="width: 75px, Height: 50px; border-radius: 5px;"> 
-        <b style="margin-top: 10px;"> Create a form</b> </a>
-        <p> Create forms that that load and render quickly and automatically reflows on mobile devices.</p> <a href="/help/edge/docs/forms/create-forms.md"> </a>
-    </div>
-    <div style="width: 30%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-sizing: border-box;">
-        <a href="/help/edge/docs/forms/validate-forms.md"> <img src="/help/edge/assets/smock_condition_18_n.svg" alt="Add validations to form fields" style="width: 75px, Height: 50px; border-radius: 5px;"> 
-        <b style="margin-top: 10px;">Apply field validations</b> </a>
-        <p>Reduce errors and frustration by checking form inputs for proper formatting.</p>
-    </div>
-    <div style="width: 30%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-sizing: border-box;">
-        <a href="/help/edge/docs/forms/form-fragments.md">  <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Use Form Fragments in an EDS Form" style="width: 75px, Height: 50px; border-radius: 5px;"> 
-        <b style="margin-top: 10px;">Create form fragments</b> </a>
-        <p>Reuse preconfigured fragments across multiple forms.</p>
-    </div>
-    <div style="width: 30%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-sizing: border-box;">
-        <a href="/help/edge/docs/forms/translate-forms.md">  <img src="/help/edge/assets/smock_abc_18_n.svg" alt="Translate an EDS Form" style="width: 75px, Height: 50px; border-radius: 5px;"> 
-        <b style="margin-top: 10px;">Translate a form </b> </a>
-        <p>Extend the reach of your forms while keeping costs in check.</p>
-    </div>
-    <div style="width: 30%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-sizing: border-box;">
-        <a href="/help/edge/docs/forms/style-theme-forms.md">  <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Apply styles or themes to an eds form" style="width: 75px, Height: 50px; border-radius: 5px;"> 
-        <b style="margin-top: 10px;">Customize a theme</b> </a>
-        <p>Create a consistent brand image by applying same theme across forms. </p>
-    </div>
-    <div style="width: 30%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-sizing: border-box;">
-        <a href="/help/edge/docs/forms/repeatable-forms.md">  <img src="/help/edge/assets/smock_addto_18_n.svg" alt="Add repeatable sections to an EDS Form" style="width: 75px, Height: 50px; border-radius: 5px;"> 
-        <b style="margin-top: 10px;">Add repeatable sections</b> </a>
-        <p>Effortlessly create and add repeatable sections to a form.</p>
-    </div>
-   <div style="width: 30%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-sizing: border-box;">
-         <a href="/help/edge/docs/forms/custom-components-forms.md"> <img src="/help/edge/assets/smock_userdeveloper_18_n.svg" alt="Create custom forms components using standard JavaScript and CSS" style="width: 75px, Height: 50px; border-radius: 5px;">  
-        <b style="margin-top: 10px;">Create custom components</b> </a>
-        <p>Use standard JavaScript and CSS to create components and themes.</p>
-    </div>
-    <div style="width: 30%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-sizing: border-box;">
-         <a href="/help/edge/docs/forms/recaptacha-forms.md">  <img src="/help//edge/assets/smock_keyclock_18_n.svg" alt="Use reCAPTCHA in an EDS Form" style="width: 75px, Height: 50px; border-radius: 5px;"> 
-        <b style="margin-top: 10px;">Use reCAPTCHA</b> </a>
-        <p>Use OOTB reCAPTCHA integration for robust spam and bot protection.</p>
-    </div>
-        <div style="width: 30%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-sizing: border-box;">
-        <a href="/help/edge/docs/forms/create-forms.md#manually-configure-a-spreadsheet-to-accept-data">   <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="Submit form" style="width: 75px, Height: 50px; border-radius: 5px;"> 
-        <b style="margin-top: 10px;">Submit form to spreadsheet</b> </a>
-        <p>Submit forms directly to your Microsoft Excel or Google Sheets.</p>
-    </div>
-    
-</div>
-
--->
 
 
 
