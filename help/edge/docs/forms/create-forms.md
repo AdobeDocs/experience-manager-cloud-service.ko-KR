@@ -4,9 +4,9 @@ description: 완벽한 형태를 만들어, 빨리! ⚡ AEM Forms Edge Delivery 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: b94bd6cd70af541444fda1d03f502b4588fd879b
+source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '932'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,8 @@ ht-degree: 1%
 
 ![Edge 게재 시작 Forms](/help/edge/assets/getting-started-with-eds-forms.png)
 
-## EDS(Edge Delivery Service) 프로젝트에 양식 블록 추가 {#add-forms-block-to-an-eds-project}
+
+## 1단계: Edge Delivery Service(EDS) 프로젝트에 양식 블록 추가 {#add-forms-block-to-an-eds-project}
 
 AEM Forms Edge Delivery에는 캡처된 데이터를 캡처하고 저장할 양식을 쉽게 만들 수 있도록 양식 블록이 포함되어 있습니다. Edge Delivery Service 프로젝트에 양식 블록을 포함하려면 다음을 수행하십시오.
 
@@ -81,7 +82,7 @@ AEM Forms Edge Delivery에는 캡처된 데이터를 캡처하고 저장할 양�
    > * &quot;&#39;../../scripts/lib-franklin.js&#39; 모듈에 대한 경로를 확인할 수 없습니다.&quot; 오류가 발생하면 `[EDS Project]/blocks/forms/form.js` 파일. import 문에서 `franklin-lib.js` 파일이 포함된 파일 `aem.js` 파일.
    > * 린팅 오류가 발생하면 언제든지 무시하십시오. 린팅 검사를 무시하려면 `[EDS Project]\package.json` 에서 &quot;lint&quot; 스크립트를 파일링하고 업데이트합니다. `"lint": "npm run lint:js && npm run lint:css"` 끝 `"lint": "echo 'skipping linting for now'"`. 파일을 저장하고 GitHub 프로젝트에 커밋합니다.
 
-## Microsoft Excel 또는 Google Sheet를 사용하여 양식 만들기 {#create-a-form-for-an-eds-project}
+## 2단계: Microsoft Excel 또는 Google Sheet를 사용하여 양식 만들기
 
 복잡한 프로세스 대신 스프레드시트를 사용하여 양식을 쉽게 만들 수 있습니다. 먼저 스프레드시트에 행 및 열 헤더를 추가할 수 있습니다. 여기서 각 행은 양식 필드를 정의하고 각 열 헤더는 해당 양식 필드의 속성을 정의합니다.
 
@@ -123,7 +124,7 @@ AEM Forms Edge Delivery에는 캡처된 데이터를 캡처하고 저장할 양�
 
 
 
-## EDS(Edge Delivery Service) 페이지를 사용하여 양식 미리 보기 {#add-a-form-to-your-eds-page}
+## 3단계: EDS(Edge Delivery Service) 페이지를 사용하여 양식 미리보기
 
 지금까지 EDS 프로젝트에 대한 양식 블록을 활성화하고 양식 구조를 준비했습니다. 이제 양식을 미리 보려면 다음을 수행하십시오.
 
@@ -153,8 +154,9 @@ AEM Forms Edge Delivery에는 캡처된 데이터를 캡처하고 저장할 양�
 
    ![양식 제출 오류](/help/edge/assets/form-error.png)
 
+## 다음 단계
 
-   다음 단계는 [데이터를 허용하도록 스프레드시트 준비](/help/edge/docs/forms/submit-forms.md).
+다음 단계는 [데이터를 허용하도록 스프레드시트 준비](/help/edge/docs/forms/submit-forms.md).
 
 
 

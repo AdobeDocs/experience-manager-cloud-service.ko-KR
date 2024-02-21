@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0604838311bb9ab195789fad755b0910e09519fd
+source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
 workflow-type: tm+mt
-source-wordcount: '4711'
+source-wordcount: '4692'
 ht-degree: 98%
 
 ---
@@ -810,13 +810,13 @@ ht-degree: 98%
          + [사이트 페이지에 양식 게시](/help/edge/docs/forms/publish-eds-forms.md)
          + [양식 필드에 유효성 검사 추가](/help/edge/docs/forms/validate-forms.md)
          + [테마 및 양식 스타일 변경](/help/edge/docs/forms/style-theme-forms.md)
-      + 고급 기능 {#advanced-features-eds-forms}
-         + [양식 단편 만들기 및 양식에 추가](/help/edge/docs/forms/form-fragments.md)
-         + [양식 번역](/help/edge/docs/forms/translate-forms.md)
-         + [양식에 반복 가능한 섹션 추가](/help/edge/docs/forms/repeatable-forms.md)
-         + [양식에 reCAPTCHA 적용](/help/edge/docs/forms/recaptacha-forms.md)
-         + [사용자 지정 구성 요소 만들기](/help/edge/docs/forms/custom-components-forms.md)
-         + [감사 인사 페이지 추가](/help/edge/docs/forms/thank-you-page-form.md)
+      + 기능 {#advanced-features-eds-forms}
+         + [양식 단편](/help/edge/docs/forms/form-fragments.md)
+         + [반복 가능한 섹션](/help/edge/docs/forms/repeatable-forms.md)
+         + [번역](/help/edge/docs/forms/translate-forms.md)
+         + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
+         + [감사 인사 페이지](/help/edge/docs/forms/thank-you-page-form.md)
+         + [사용자 지정 구성 요소](/help/edge/docs/forms/custom-components-forms.md)
    + Edge Delivery용 리소스 {#resources}
       + Sidekick {#sidekick}
          + [Sidekick 사용](/help/edge/docs/sidekick.md)

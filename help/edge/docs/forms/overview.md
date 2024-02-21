@@ -4,9 +4,9 @@ description: 최고 성능을 위해 구축된 AEM Forms Edge Delivery Service�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: b94bd6cd70af541444fda1d03f502b4588fd879b
+source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ AEM Forms Edge Delivery Service는 다음과 같은 이점을 제공합니다.
 
 * **작성 및 제출 간소화**: 기존의 작성 환경 대신 Microsoft Excel 또는 Google Sheets와 같은 친숙한 도구를 사용하여 양식을 만듭니다. 양식을 Microsoft Excel 또는 Google 시트에 직접 제출하고 에코시스템을 사용하여 제출된 데이터를 쉽게 처리할 수 있습니다.
 
-## AEM Forms Edge Delivery Service 시작
+## 기본 사항으로 시작
 
 <div>
 
