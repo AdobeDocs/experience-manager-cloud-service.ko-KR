@@ -4,7 +4,7 @@ description: 최고 성능을 위해 구축된 AEM Forms Edge Delivery Service�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 6fc55366119662ed803008f4cec8731e43120942
+source-git-commit: 9c084461f5a99f2417b5cc34e851f703fe328f7d
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%
@@ -89,8 +89,7 @@ AEM Forms Edge Delivery Service는 다음과 같은 이점을 제공합니다.
       </a>
       <p>반복 가능한 섹션을 간편하게 만들어 양식에 추가합니다.</p>
   </div>
-</div>
-<!-- Repeat the same structure for other cards -->
+
 
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: -5px;">
   <div class="card-container">
@@ -116,6 +115,9 @@ AEM Forms Edge Delivery Service는 다음과 같은 이점을 제공합니다.
   </div>
 </div>
 </div>
+
+</div>
+<!-- Repeat the same structure for other cards -->
 
 </br>
 
