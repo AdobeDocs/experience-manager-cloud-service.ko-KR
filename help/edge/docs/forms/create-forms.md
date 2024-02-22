@@ -4,9 +4,9 @@ description: 완벽한 형태를 만들어, 빨리! ⚡ AEM Forms Edge Delivery 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
+source-git-commit: 7b497791c70fd588b7e8c9a94caa218189d3153a
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '891'
 ht-degree: 1%
 
 ---
@@ -28,43 +28,21 @@ ht-degree: 1%
 ## 시작하기 전
 
 * EDS(Edge Delivery Service) 프로젝트를 설정하고 복제합니다. 다음을 참조하십시오 [개발자 자습서](https://www.aem.live/developer/tutorial) 을 참조하십시오.
-* 복제 [Forms 블록 저장소](https://github.com/adobe/afb). 여기에는 양식을 렌더링하는 데 필요한 Form 블록이 포함됩니다.
+* 복제 [Forms 블록 저장소](https://github.com/adobe/afb).
 
-![Edge 게재 시작 Forms](/help/edge/assets/getting-started-with-eds-forms.png)
+  ![Edge 게재 시작 Forms](/help/edge/assets/getting-started-with-eds-forms.png)
 
 
-## 1단계: Edge Delivery Service(EDS) 프로젝트에 양식 블록 추가 {#add-forms-block-to-an-eds-project}
+## 양식 만들기
+
+
++++ 1단계: Edge Delivery Service(EDS) 프로젝트에 양식 블록을 추가합니다.
 
 AEM Forms Edge Delivery에는 캡처된 데이터를 캡처하고 저장할 양식을 쉽게 만들 수 있도록 양식 블록이 포함되어 있습니다. Edge Delivery Service 프로젝트에 양식 블록을 포함하려면 다음을 수행하십시오.
 
-1. 다음 위치로 이동 `blocks` 로컬 개발 환경의 EDS(Edge Delivery Service) 프로젝트 폴더에 있는 폴더
+1. 다음으로 이동 `[cloned Forms Block repository folder]`/blocks/
 
-
-   ```Shell
-   cd [EDS Project folder]/blocks
-   ```
-
-1. 다음 이름의 폴더 만들기 `form` 다음 아래에 `blocks` 디렉토리. 예를 들어 EDS 프로젝트의 디렉터리 아래에 `Portal`, 폴더 만들기 `form`.
-
-   ```Shell
-   mkdir form
-   ```
-
-
-1. 추가 [Forms 차단](https://github.com/adobe/afb/tree/main/blocks/form) 파일을 &#39;form&#39; 폴더에 저장합니다.
-
-   ```shell
-   cp -R <source:path of the form block> <destination: path of the form folder created in the previous step>
-   ```
-
-   **예를 들어,**
-
-
-   ```shell
-   cp -R ../../afb/blocks/form ../../fantastic-computing-machine/blocks 
-   ```
-
-
+1. 다음을 복사합니다. `forms` 폴더 위치: `[Cloned EDS Project repository folder]\blocks` 폴더를 삭제합니다.
 
 1. GitHub의 Edge 게재 서비스 프로젝트에 &#39;양식&#39; 폴더 및 기본 파일을 체크 인합니다.
 
@@ -79,10 +57,13 @@ AEM Forms Edge Delivery에는 캡처된 데이터를 캡처하고 저장할 양�
 
    >[!NOTE]
    >
-   > * &quot;&#39;../../scripts/lib-franklin.js&#39; 모듈에 대한 경로를 확인할 수 없습니다.&quot; 오류가 발생하면 `[EDS Project]/blocks/forms/form.js` 파일. import 문에서 `franklin-lib.js` 파일이 포함된 파일 `aem.js` 파일.
+   > * &quot;&#39;../../scripts/lib-franklin.js&#39; 모듈에 대한 경로를 확인할 수 없습니다.&quot; 오류가 발생하면 `[EDS Project]/blocks/forms/form.js` 파일. import 문에서 `lib-franklin.js` 파일이 포함된 파일 `aem.js` 파일.
    > * 린팅 오류가 발생하면 언제든지 무시하십시오. 린팅 검사를 무시하려면 `[EDS Project]\package.json` 에서 &quot;lint&quot; 스크립트를 파일링하고 업데이트합니다. `"lint": "npm run lint:js && npm run lint:css"` 끝 `"lint": "echo 'skipping linting for now'"`. 파일을 저장하고 GitHub 프로젝트에 커밋합니다.
 
-## 2단계: Microsoft Excel 또는 Google Sheet를 사용하여 양식 만들기
++++
+
++++ 2단계: Microsoft Excel 또는 Google Sheet를 사용하여 양식 만들기
+
 
 복잡한 프로세스 대신 스프레드시트를 사용하여 양식을 쉽게 만들 수 있습니다. 먼저 스프레드시트에 행 및 열 헤더를 추가할 수 있습니다. 여기서 각 행은 양식 필드를 정의하고 각 열 헤더는 해당 양식 필드의 속성을 정의합니다.
 
@@ -122,15 +103,16 @@ AEM Forms Edge Delivery에는 캡처된 데이터를 캡처하고 저장할 양�
    For example, https://main--portal--wkndforms.hlx.live/contact-us.json
    ```
 
++++
 
++++ 3단계: EDS(Edge Delivery Service) 페이지를 사용하여 양식 미리보기
 
-## 3단계: EDS(Edge Delivery Service) 페이지를 사용하여 양식 미리보기
 
 지금까지 EDS 프로젝트에 대한 양식 블록을 활성화하고 양식 구조를 준비했습니다. 이제 양식을 미리 보려면 다음을 수행하십시오.
 
-1. Microsoft SharePoint 또는 Google 드라이브의 AEM Edge 게재 프로젝트 디렉토리로 이동합니다.
+1. Microsoft SharePoint 또는 Google 드라이브 계정으로 이동하여 AEM Edge 게재 프로젝트 디렉터리를 엽니다.
 
-1. 양식을 호스팅할 문서 파일을 만들거나 엽니다. 예를 들어 색인 파일을 엽니다.
+1. 양식을 포함할 문서 파일을 엽니다. 예를 들어 색인 파일을 엽니다. 새 파일을 만들 수도 있습니다.
 
 1. 문서 내에서 양식을 추가할 위치로 이동합니다.
 
@@ -153,6 +135,9 @@ AEM Forms Edge Delivery에는 캡처된 데이터를 캡처하고 저장할 양�
    이제 양식을 작성하고 제출 단추를 클릭하면 스프레드시트가 아직 데이터를 수락하도록 설정되지 않았으므로 다음과 유사한 오류가 발생합니다.
 
    ![양식 제출 오류](/help/edge/assets/form-error.png)
+
++++
+
 
 ## 다음 단계
 
