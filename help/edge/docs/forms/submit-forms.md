@@ -1,18 +1,18 @@
 ---
-title: 스프레드시트에서 Forms으로 - 양식 블록 필드 유효성 검사 마스터하기
-description: 스프레드시트 및 양식 블록 필드를 사용하여 강력한 양식을 더 빨리 만드십시오! 이 안내서는 EDS Forms 블록 필드에 대한 사용자 지정 유효성 검사를 작성하는 데 도움이 됩니다.
+title: 데이터를 허용하도록 스프레드시트 준비
+description: 스프레드시트 및 양식 블록 필드를 사용하여 강력한 양식을 더 빨리 만드십시오!
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: c1a01dd256d39531c6091410e38a744688e71aaa
+source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '994'
 ht-degree: 0%
 
 ---
 
 
-# 양식을 활성화하여 데이터 보내기
+# 데이터를 허용하도록 스프레드시트 준비
 
 다음 작업을 완료하면 [양식을 만들고 미리보기](/help/edge/docs/forms/create-forms.md)해당 스프레드시트가 데이터 수신을 시작할 수 있도록 활성화해야 합니다.
 
@@ -20,15 +20,15 @@ ht-degree: 0%
 
 스프레드시트를 활성화하려면 다음을 수행합니다.
 
-1. 양식이 있는 스프레드시트를 열고 시트를 추가한 다음 시트 이름을 로 변경합니다. `incoming`.
+1. 양식이 있는 스프레드시트를 열고 새 시트를 추가하고 이름을 로 변경합니다. `incoming`.
 
    >[!WARNING]
    >
-   > 다음과 같은 경우 `incoming` 시트가 없습니다. AEM이 이 통합 문서로 데이터를 전송하지 않습니다.
+   > 다음과 같은 경우 `incoming` 시트가 없으면 AEM에서 데이터를 스프레드시트로 보내지 않습니다.
 
-1. 다음에서 `incoming` 시트, 모든 열 머리글을 다음으로 미러링 `Name` 의 열(양식 필드 이름) `shared-default` 시트.
+1. 양식 필드 이름, 값 대칭복사 `Name` 열의`shared-default` 시트, 머리글에 추가 `incoming` 시트.
 
-   다음 예제에서는 &quot;contact-us&quot; 양식에 대한 헤더를 표시합니다.
+   의 각 값 `Name` 열 `shared-default` 제출 단추를 제외한 시트는에서 머리글 역할을 합니다. `incoming` 시트. 예를 들어 &quot;contact-us&quot; 양식의 헤더를 보여 주는 다음 이미지를 생각해 보십시오.
 
    ![담당자 양식 필드](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
@@ -77,9 +77,9 @@ ht-degree: 0%
    >
    >이전에 시트를 미리 보았더라도 를 생성한 후 다시 미리 보아야 합니다 `incoming` 첫 번째 시트입니다.
 
-1. 에서 적절한 헤더를 생성하도록 POST 요청을 보냅니다. `incoming` 시트 및 추가 `shared-default` 스프레드 시트에 시트(아직 존재하지 않는 경우).
+1. 에서 적절한 헤더를 생성하도록 POST 요청을 보냅니다. `incoming` 시트 및 추가 `shared-default` 시트가 아직 없는 경우 스프레드 시트에 추가합니다.
 
-   시트 설정을 위한 POST 요청 서식을 지정하는 방법을 이해하려면 [관리 API 설명서](https://www.hlx.live/docs/admin.html#tag/form). 아래에 제공된 예제를 볼 수 있습니다.
+   시트 설정을 위한 POST 요청 서식을 지정하는 방법을 이해하려면 [관리 API 설명서](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). 아래에 제공된 예제를 볼 수 있습니다.
 
    **요청**
 

@@ -4,9 +4,9 @@ description: 최고 성능을 위해 구축된 AEM Forms Edge Delivery Service�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
+source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -14,15 +14,25 @@ ht-degree: 0%
 
 # AEM Forms Edge 게재 서비스 {#aem-forms-edge-delivery-service-overview}
 
-AEM Forms Edge Delivery Service는 Adobe에서 제공하는 구성 가능한 서비스로, 효과가 크고 성능이 빠른 웹 양식을 제작하여 제공할 수 있습니다. 이 컴포저블 서비스는 Adobe Experience Manager(AEM)와 원활하게 통합되어 직관적이고 효율적인 워크플로우를 통해 영향력이 크고 번개처럼 빠른 웹 양식을 디자인, 빌드 및 배포할 수 있도록 해 줍니다.
-
-AEM Forms Edge Delivery Service는 다음과 같은 이점을 제공합니다.
+AEM Forms Edge Delivery Service는 Adobe에서 제공하는 구성 가능한 서비스로, 효과가 크고 성능이 빠른 웹 양식을 제작하여 제공할 수 있습니다. 이 서비스를 사용하여 다음을 수행할 수 있습니다.
 
 * **시각적으로 놀라운 형태 제작**: 깔끔하고 자그마한 디자인을 버리고 브랜드 정체성을 반영하는 다이내믹하고 현대적인 양식으로 사용자를 사로잡습니다. 사전 제작된 구성 요소를 활용하거나 사용자 지정 구성 요소를 만들어 비전을 빠르고 쉽게 실현할 수 있습니다.
 
 * **완벽한 등대 점수로 양식 작성**: 느린 인터넷 연결에서도 빠르게 로드하고 렌더링하는 양식을 빌드합니다. 로드 시간이 빨라지고 사용자 경험이 최적화되면 양식 완료율이 높아지고 전환율이 향상됩니다.
 
 * **작성 및 제출 간소화**: 기존의 작성 환경 대신 Microsoft Excel 또는 Google Sheets와 같은 친숙한 도구를 사용하여 양식을 만듭니다. 양식을 Microsoft Excel 또는 Google 시트에 직접 제출하고 에코시스템을 사용하여 제출된 데이터를 쉽게 처리할 수 있습니다.
+
+
+이 구성 가능한 서비스는 콘텐츠 소스에서 분리되며 사용자가 선호하는 작성 도구를 사용할 수 있으므로 콘텐츠를 유연하게 만들 수 있습니다.
+
+![Edge 게재 양식 작성 도구](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+
+콘텐츠 작성자는 Microsoft Excel 또는 Google Sheets(문서 기반 작성), JSON 편집기 또는 WYSIWYG 편집용 AEM Forms 적응형 Forms 편집기(AEM Forms 프로젝트)와 같은 익숙한 도구를 사용하여 양식을 디자인하고 만들 수 있습니다.
+
+>[!NOTE]
+>
+>
+> WYSIWYG 편집 기능 및 크로스 워크 영역은 얼리 어답터 프로그램으로 제공됩니다. 공식 이메일 ID에서 aem-forms-early-adopter-program@adobe.com에 작성하여 얼리어답터 프로그램에 참여하고 기능에 대한 액세스를 요청할 수 있습니다.
 
 ## 기본 사항으로 시작
 
@@ -47,7 +57,7 @@ AEM Forms Edge Delivery Service는 다음과 같은 이점을 제공합니다.
     <div class="card-container">
         <a href="/help/edge/docs/forms/create-forms.md">
             <img src="/help/edge/assets/smock_devices_18_n.svg" alt="eds 양식을 사용하여 양식 만들기" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">양식 만들기</b>
+            <br><b style="margin-top: 5px;">Google Sheets 또는 Microsoft Excel을 사용하여 양식 만들기</b>
         </a>
         <p>모바일 장치에서 빠르고 자동으로 리플로우되는 양식을 만듭니다.</p>
     </div>
