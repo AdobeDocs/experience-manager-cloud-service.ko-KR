@@ -2,9 +2,9 @@
 title: Screens 콘텐츠 공급자 사용
 description: 이 페이지에서는 Screens 콘텐츠 공급자를 사용하여 콘텐츠를 만드는 방법에 대해 설명합니다.
 exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: f7ed7c63fd141c6a9817e4718edb31425b14a761
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '383'
 ht-degree: 15%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 15%
 
 ## 목표 {#objective}
 
-다음 섹션에서는 설치를 마친 후 Screens Content Provider를 사용하는 방법에 대해 설명합니다 [Screens Services 공급자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html).
+다음 섹션에서는 설정한 후 Screens Content Provider에서 채널을 만드는 방법에 대해 설명합니다 [Screens Services 공급자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=ko-KR).
 
 ## Screens Content Provider 사용 {#screens-content-provider}
 
@@ -46,7 +46,7 @@ ht-degree: 15%
 
    ![Screens Content Provider에 액세스할 수 있는 환경 카드에서 강조 표시된 링크입니다.](/help/screens-cloud/assets/configure/screens-cp-2.png)
 
-   Screens Content Provider에 로그인하면 이제 콘텐츠 재생에서 콘텐츠를 만들 수 있습니다.
+   Screens 콘텐츠 공급자에 로그인한 후 Screens > 콘텐츠 공급자로 이동합니다. 이제 콘텐츠 재생을 위한 콘텐츠를 만들 준비가 되었습니다.
 
    Screens 콘텐츠 공급자를 사용하여 다음 항목을 만들고 관리합니다.
 
