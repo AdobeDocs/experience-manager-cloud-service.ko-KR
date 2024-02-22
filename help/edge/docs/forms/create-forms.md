@@ -4,9 +4,9 @@ description: 완벽한 형태를 만들어, 빨리! ⚡ AEM Forms Edge Delivery 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 7b497791c70fd588b7e8c9a94caa218189d3153a
+source-git-commit: c1a01dd256d39531c6091410e38a744688e71aaa
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '889'
 ht-degree: 1%
 
 ---
@@ -18,33 +18,31 @@ ht-degree: 1%
 
 이러한 양식은 Microsoft Excel 또는 Google Sheets 파일에 직접 데이터를 제출하므로 Google Sheets, Microsoft Excel 및 Microsoft Sharepoint의 생생한 에코시스템과 강력한 API를 사용하여 제출된 데이터를 쉽게 처리하거나 기존 비즈니스 워크플로우를 시작할 수 있습니다.
 
+![Edge 게재 시작 Forms](/help/edge/assets/getting-started-with-eds-forms.png)
+
+
 ## 사전 요구 사항
 
-* GitHub 계정이 있습니다.
-* Google Sheets 또는 Microsoft SharePoint에 액세스할 수 있습니다.
-* Git, HTML, CSS 및 JavaScript의 기본 사항을 이해합니다.
-* 로컬 개발을 위해 노드 및 NPM이 설치되어 있습니다.
-
-## 시작하기 전
+시작하기 전에 다음 단계를 완료했는지 확인하십시오.
 
 * EDS(Edge Delivery Service) 프로젝트를 설정하고 복제합니다. 다음을 참조하십시오 [개발자 자습서](https://www.aem.live/developer/tutorial) 을 참조하십시오.
-* 복제 [Forms 블록 저장소](https://github.com/adobe/afb).
-
-  ![Edge 게재 시작 Forms](/help/edge/assets/getting-started-with-eds-forms.png)
+* 복제 [Forms 블록 저장소](https://github.com/adobe/afb). EDS Sites 페이지에서 양식을 렌더링하는 코드가 포함되어 있습니다.
+* Google Sheets 또는 Microsoft SharePoint에 액세스할 수 있는지 확인합니다.
 
 
 ## 양식 만들기
-
 
 +++ 1단계: Edge Delivery Service(EDS) 프로젝트에 양식 블록을 추가합니다.
 
 AEM Forms Edge Delivery에는 캡처된 데이터를 캡처하고 저장할 양식을 쉽게 만들 수 있도록 양식 블록이 포함되어 있습니다. Edge Delivery Service 프로젝트에 양식 블록을 포함하려면 다음을 수행하십시오.
 
-1. 다음으로 이동 `[cloned Forms Block repository folder]`/blocks/
+1. 다음으로 이동 `[cloned Forms Block repository folder]/blocks/`.
 
-1. 다음을 복사합니다. `forms` 폴더 위치: `[Cloned EDS Project repository folder]\blocks` 폴더를 삭제합니다.
+1. 다음을 복사합니다. `forms` 폴더 위치: `[Cloned EDS Project repository folder]/blocks` 폴더를 삭제합니다.
 
-1. GitHub의 Edge 게재 서비스 프로젝트에 &#39;양식&#39; 폴더 및 기본 파일을 체크 인합니다.
+   >[!VIDEO](https://video.tv.adobe.com/v/3427487?quality=12&learn=on)
+
+1. 체크인 `form` 폴더 및 기본 파일을 GitHub의 Edge 게재 서비스 프로젝트에 추가합니다.
 
    ```Shell
    cd ..
@@ -112,7 +110,7 @@ AEM Forms Edge Delivery에는 캡처된 데이터를 캡처하고 저장할 양�
 
 1. Microsoft SharePoint 또는 Google 드라이브 계정으로 이동하여 AEM Edge 게재 프로젝트 디렉터리를 엽니다.
 
-1. 양식을 포함할 문서 파일을 엽니다. 예를 들어 색인 파일을 엽니다. 새 파일을 만들 수도 있습니다.
+1. 양식을 포함할 문서 파일을 엽니다. 예를 들어 색인 파일을 엽니다. 새 문서 파일을 만들 수도 있습니다.
 
 1. 문서 내에서 양식을 추가할 위치로 이동합니다.
 
