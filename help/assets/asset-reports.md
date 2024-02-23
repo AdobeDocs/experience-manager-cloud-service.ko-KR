@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 22fc488cd507a3504c472eab3dea8daa7e63b81c
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 8%
@@ -107,7 +107,8 @@ ht-degree: 8%
 1. 클릭 **[!UICONTROL 만들기]** 을 클릭합니다. 보고서 생성이 시작되었음을 알리는 메시지가 표시됩니다.
 1. 다음에서 [!UICONTROL 자산 보고서] 페이지의 보고서 생성 상태는 다음과 같은 보고서 작업의 현재 상태를 기반으로 합니다. [!UICONTROL 성공], [!UICONTROL 실패], [!UICONTROL 대기열에 추가됨], 또는 [!UICONTROL 예약됨]. 받은 편지함에도 동일한 상태가 나타납니다.보고서 페이지를 보려면 보고서 링크를 클릭하십시오. 또는 보고서를 선택하고 를 클릭합니다 **[!UICONTROL 보기]** 을 클릭합니다.
 
-   ![생성된 보고서](assets/report_page.png)
+   <!--![A generated report](assets/report_page.png)-->
+   ![생성된 보고서 상태](assets/report-status.JPG)
 
    클릭 **[!UICONTROL 다운로드]** 을 클릭하여 보고서를 CSV 형식으로 다운로드합니다.
 
