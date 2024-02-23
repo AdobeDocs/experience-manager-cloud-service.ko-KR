@@ -4,9 +4,9 @@ description: 최고 성능을 위해 구축된 AEM Forms Edge Delivery Service�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
+source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
@@ -27,12 +27,12 @@ AEM Forms Edge Delivery Service는 Adobe에서 제공하는 구성 가능한 서
 
 ![Edge 게재 양식 작성 도구](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
 
-콘텐츠 작성자는 Microsoft Excel 또는 Google Sheets(문서 기반 작성), JSON 편집기 또는 WYSIWYG 편집용 AEM Forms 적응형 Forms 편집기(AEM Forms 프로젝트)와 같은 익숙한 도구를 사용하여 양식을 디자인하고 만들 수 있습니다.
+콘텐츠 작성자는 Microsoft Excel 또는 Google Sheets(문서 기반 작성), JSON 파일(Headless 작성) 또는 AEM Forms 적응형 Forms 편집기(WYSIWYG 작성)와 같은 익숙한 도구를 사용하여 양식을 디자인하고 만들 수 있습니다.
 
 >[!NOTE]
 >
 >
-> WYSIWYG 편집 기능 및 크로스 워크 영역은 얼리 어답터 프로그램으로 제공됩니다. 공식 이메일 ID에서 aem-forms-early-adopter-program@adobe.com에 작성하여 얼리어답터 프로그램에 참여하고 기능에 대한 액세스를 요청할 수 있습니다.
+> WYSIWYG 작성 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 공식 이메일 ID에서 aem-forms-early-adopter-program@adobe.com에 작성하여 얼리어답터 프로그램에 참여하고 기능에 대한 액세스를 요청할 수 있습니다.
 
 ## 기본 사항으로 시작
 
@@ -67,13 +67,12 @@ AEM Forms Edge Delivery Service는 Adobe에서 제공하는 구성 가능한 서
             <br><b style="margin-top: 5px;">필드 유효성 검사 적용</b>
         </a>
         <p>양식 입력에서 적절한 형식을 확인함으로써 오류와 어려움을 줄일 수 있습니다.</p>
-    </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/form-fragments.md">
-            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="EDS 양식에서 양식 단편 사용" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">양식 단편 만들기</b>
+    </div>    <div class="card-container">
+        <a href="/help/edge/docs/forms/style-theme-forms.md">
+            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Eds 양식에 스타일 또는 테마 적용" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">테마 맞춤화</b>
         </a>
-        <p>여러 양식에서 사전 구성된 조각을 재사용합니다.</p>
+        <p>여러 양식에 동일한 테마를 적용하여 일관된 브랜드 이미지를 만듭니다.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/translate-forms.md">  
@@ -83,11 +82,11 @@ AEM Forms Edge Delivery Service는 Adobe에서 제공하는 구성 가능한 서
         <p>비용을 억제하면서 양식의 범위를 확장하십시오.</p>
     </div>
     <div class="card-container">
-        <a href="/help/edge/docs/forms/style-theme-forms.md">
-            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Eds 양식에 스타일 또는 테마 적용" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">테마 맞춤화</b>
+        <a href="/help/edge/docs/forms/form-fragments.md">
+            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="EDS 양식에서 양식 단편 사용" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">양식 단편 만들기</b>
         </a>
-        <p>여러 양식에 동일한 테마를 적용하여 일관된 브랜드 이미지를 만듭니다.</p>
+        <p>여러 양식에서 사전 구성된 조각을 재사용합니다.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/repeatable-forms.md">  

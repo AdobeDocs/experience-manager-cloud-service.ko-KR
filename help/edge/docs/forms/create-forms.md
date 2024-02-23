@@ -4,9 +4,9 @@ description: 완벽한 형태를 만들어, 빨리! ⚡ AEM Forms Edge Delivery 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
+source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '913'
 ht-degree: 1%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 1%
 
 시작하기 전에 다음 단계를 완료했는지 확인하십시오.
 
-* EDS(Edge Delivery Service) 프로젝트를 설정하고 복제합니다. 다음을 참조하십시오 [개발자 자습서](https://www.aem.live/developer/tutorial) 을 참조하십시오. EDS(Edge Delivery Service) 프로젝트의 로컬 폴더는 다음과 같습니다. `[EDS Project repository]` 이 문서에서.
-* 복제 [Forms 블록 저장소](https://github.com/adobe/afb). EDS 웹 페이지에서 양식을 렌더링하는 코드가 포함되어 있습니다. Forms 블록 저장소의 로컬 폴더는 다음과 같이 참조됩니다. `[Forms Block repository]` 이 문서에서.
+* EDS(Edge Delivery Service) 프로젝트를 설정하고 복제합니다. 다음을 참조하십시오 [개발자 자습서](https://www.aem.live/developer/tutorial) 을 참조하십시오. 이 문서에서는 EDS(Edge Delivery Service) 프로젝트의 로컬 폴더를 참조하십시오. `[EDS Project repository]` .
+* 복제 [Forms 블록 저장소](https://github.com/adobe/afb). EDS 웹 페이지에서 양식을 렌더링하는 코드가 포함되어 있습니다. 이 문서에서는 Forms 블록 저장소의 로컬 폴더를 다음과 같이 합니다. `[Forms Block repository]` 이 문서에서.
 * Google Sheets 또는 Microsoft SharePoint에 액세스할 수 있는지 확인합니다.
 
 
@@ -42,7 +42,7 @@ AEM Forms Edge Delivery에는 캡처된 데이터를 캡처하고 저장할 양�
 
 1. 체크인 `form` 폴더 및 기본 파일을 GitHub의 Edge 게재 서비스 프로젝트에 추가합니다.
 
-   양식 블록이 Github의 EDS 프로젝트 저장소에 추가됩니다. Github 빌드가 실패하지 않는지 확인합니다.
+   양식 블록이 GitHub의 EDS 프로젝트 저장소에 추가됩니다. GitHub 빌드가 실패하지 않는지 확인합니다.
 
    * &quot;&#39;../../scripts/lib-franklin.js&#39; 모듈에 대한 경로를 확인할 수 없습니다.&quot; 오류가 발생하면 `[EDS Project]/blocks/forms/form.js` 파일. import 문에서 `lib-franklin.js` 파일이 포함된 파일 `aem.js` 파일.
 
