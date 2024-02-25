@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
-workflow-type: ht
-source-wordcount: '820'
-ht-degree: 100%
+source-git-commit: b3bfc841f0609e1e529c97dd1f11d16de561701c
+workflow-type: tm+mt
+source-wordcount: '892'
+ht-degree: 92%
 
 ---
 
@@ -59,6 +59,10 @@ Assets 보기에 액세스하는 방법 및 관리자 보기에서 제공하는 
 Edge Delivery를 사용하면 작성자가 콘텐츠를 빠르게 업데이트 및 게시하고 새 사이트를 신속하게 시작할 수 있는 빠르고 매력적인 웹 사이트를 제작할 수 있습니다.
 
 AEM Assets를 Edge Delivery Services용 문서 기반 작성과 통합하면 웹 사이트 작성자가 Microsoft Word 또는 Google Docs에서 문서를 작성하는 동안 AEM Assets 저장소에서 사용 가능한 이미지를 사용할 수 있습니다. 자세한 내용은 [AEM Assets를 문서 기반 작성과 통합](/help/edge/using.md#integrate-assets-edge)을 참조하십시오.
+
+## Adobe Journey Optimizer과 통합 {#integration-with-ajo}
+
+[Adobe Journey Optimizer](https://business.adobe.com/products/journey-optimizer/adobe-journey-optimizer.html) 는 고객에게 지능적인 의사 결정과 통찰력을 통해 옴니채널 캠페인을 제공할 수 있도록 여정 관리를 간소화합니다. Journey Optimizer을 사용하여 메시지를 디자인할 때 Journey Optimizer 인터페이스 내에서 자산 as a Cloud Service 저장소에 직접 액세스할 수 있습니다. 사용자는 Experience Manager Assets의 임베드된 사용자 인터페이스를 사용하여 에셋에 액세스할 수 있습니다. 자세한 내용은 [Experience Manager Assets을 사용하여 에셋 만들기 및 관리](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html).
 
 ## 새 자산 기능 {#whats-new-assets}
 
