@@ -2,9 +2,9 @@
 title: 모델 정의, 필드 및 구성 요소 유형
 description: 예가 포함된 속성 레일에서 유니버설 편집기가 편집할 수 있는 필드 및 구성 요소 유형에 대해 알아봅니다. 모델 정의를 만들고 구성 요소에 연결하여 나만의 앱을 계측하는 방법을 이해합니다.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: bbe02f66b5bce3b919be4abd3b2de482a235b6ee
+source-git-commit: fcdba895510b0c428a4274092c8b314fd36f5c7d
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1144'
 ht-degree: 10%
 
 ---
@@ -89,6 +89,23 @@ ht-degree: 10%
 ### 구성 요소 유형 {#component-types}
 
 다음은 필드를 렌더링하는 데 사용할 수 있는 구성 요소 유형입니다.
+
+| 설명 | 구성 요소 유형 |
+|---|---|
+| [AEM 태그](#aem-tag) | `aem-tag` |
+| [AEM 컨텐츠](#aem-content) | `aem-content` |
+| [부울](#boolean) | `boolean` |
+| [확인란 그룹](#checkbox-group) | `checkbox-group` |
+| [컨테이너](#container) | `container` |
+| [날짜/시간](#date-time) | `date-time` |
+| [다중 선택](#multiselect) | `multiselect` |
+| [숫자](#number) | `number` |
+| [라디오 그룹](#radio-group) | `radio-group` |
+| [참조](#reference) | `reference` |
+| [리치 텍스트](#rich-text) | `rich-text` |
+| [선택](#select) | `select` |
+| [탭](#tab) | `tab` |
+| [텍스트](#text) | `text` |
 
 #### AEM 태그 {#aem-tag}
 
@@ -624,6 +641,59 @@ AEM 콘텐츠 구성 요소 유형 은 콘텐츠 참조를 설정하는 데 사�
 
 >[!ENDTABS]
 
+#### 리치 텍스트 {#rich-text}
+
+서식 있는 텍스트를 사용하면 여러 줄의 서식 있는 텍스트를 입력할 수 있습니다. 추가 유효성 검사 유형을 제공합니다.
+
+| 유효성 검사 유형 | 값 유형 | 설명 | 필수 |
+|---|---|---|---|
+| `maxSize` | `number` | 허용되는 최대 문자 수 | 아니요 |
+| `customErrorMsg` | `string` | 다음과 같은 경우에 표시되는 메시지 `maxSize` 초과됨 | 아니요 |
+
+>[!BEGINTABS]
+
+>[!TAB 샘플 1]
+
+```json
+{
+  "id": "richtext",
+  "fields": [
+    {
+      "component": "richtext",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+>[!TAB 샘플 2]
+
+```json
+{
+  "id": "another-richtext",
+  "fields": [
+    {
+      "component": "richtext",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string",
+      "validation": {
+        "maxSize": 1000,
+        "customErrorMsg": "That's about as funny as a screen door on a battleship."
+      }
+    }
+  ]
+}
+```
+
+>[!TAB 스크린샷]
+
+![텍스트 영역 구성 요소 유형의 스크린샷](assets/component-types/richtext.png)
+
+>[!ENDTABS]
+
 #### 선택 {#select}
 
 구성 요소 유형 선택을 사용하면 드롭다운 메뉴의 사전 정의된 옵션 목록에서 단일 옵션을 선택할 수 있습니다.
@@ -704,62 +774,9 @@ A `tab` 정의는 배열의 구분 기호로 생각할 수 있습니다. `fields
 
 >[!ENDTABS]
 
-#### 텍스트 영역 {#text-area}
+#### 텍스트 {#text}
 
-텍스트 영역을 사용하면 여러 줄의 서식 있는 텍스트를 입력할 수 있습니다. 추가 유효성 검사 유형을 제공합니다.
-
-| 유효성 검사 유형 | 값 유형 | 설명 | 필수 |
-|---|---|---|---|
-| `maxSize` | `number` | 허용되는 최대 문자 수 | 아니요 |
-| `customErrorMsg` | `string` | 다음과 같은 경우에 표시되는 메시지 `maxSize` 초과됨 | 아니요 |
-
->[!BEGINTABS]
-
->[!TAB 샘플 1]
-
-```json
-{
-  "id": "richtext",
-  "fields": [
-    {
-      "component": "text-area",
-      "name": "rte",
-      "label": "Rich Text",
-      "valueType": "string"
-    }
-  ]
-}
-```
-
->[!TAB 샘플 2]
-
-```json
-{
-  "id": "another-richtext",
-  "fields": [
-    {
-      "component": "text-area",
-      "name": "rte",
-      "label": "Rich Text",
-      "valueType": "string",
-      "validation": {
-        "maxSize": 1000,
-        "customErrorMsg": "That's about as funny as a screen door on a battleship."
-      }
-    }
-  ]
-}
-```
-
->[!TAB 스크린샷]
-
-![텍스트 영역 구성 요소 유형의 스크린샷](assets/component-types/richtext.png)
-
->[!ENDTABS]
-
-#### 텍스트 입력 {#text-input}
-
-텍스트 입력을 사용하면 한 줄의 텍스트를 입력할 수 있습니다.  여기에는 추가 유효성 검사 유형이 포함됩니다.
+텍스트를 사용하면 한 줄의 텍스트를 입력할 수 있습니다.  여기에는 추가 유효성 검사 유형이 포함됩니다.
 
 | 유효성 검사 유형 | 값 유형 | 설명 | 필수 |
 |---|---|---|---|
@@ -777,7 +794,7 @@ A `tab` 정의는 배열의 구분 기호로 생각할 수 있습니다. `fields
   "id": "simpletext",
   "fields": [
     {
-      "component": "text-input",
+      "component": "text",
       "name": "text",
       "label": "Simple Text",
       "valueType": "string"
@@ -793,7 +810,7 @@ A `tab` 정의는 배열의 구분 기호로 생각할 수 있습니다. `fields
   "id": "another simpletext",
   "fields": [
     {
-      "component": "text-input",
+      "component": "text",
       "name": "text",
       "label": "Simple Text",
       "valueType": "string",
@@ -812,6 +829,6 @@ A `tab` 정의는 배열의 구분 기호로 생각할 수 있습니다. `fields
 
 >[!TAB 스크린샷]
 
-![텍스트 입력 구성 요소 유형의 스크린샷](assets/component-types/simpletext.png)
+![텍스트 구성 요소 유형의 스크린샷](assets/component-types/simpletext.png)
 
 >[!ENDTABS]
