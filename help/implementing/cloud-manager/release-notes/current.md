@@ -4,9 +4,9 @@ description: AEM as a Cloud Service의 Cloud Manager 2024.2.0 릴리스 정보�
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 4a41de9da557be562bb2ff5773c7954f76a9acc7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '725'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 97%
 
 ## 릴리스 일자 {#release-date}
 
-AEM as a Cloud Service의 Cloud Manager 2024.2.0 릴리스 날짜는 2024년 2월 15일입니다. 다음 릴리스는 2024년 3월 16일에 예정되어 있습니다.
+AEM as a Cloud Service의 Cloud Manager 2024.2.0 릴리스 일자는 2024년 2월 15일입니다. 다음 릴리스는 2024년 3월 16일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
@@ -46,7 +46,7 @@ Adobe의 조기 채택 프로그램에 참여하여 향후 기능을 테스트�
 
 ### 자체 GitHub 가져오기 {#byo-github}
 
-GitHub를 사용하여 저장소를 관리하는 경우, [이제 Cloud Manager를 통해 GitHub 저장소 내에서 직접 코드의 유효성을 검사할 수 있습니다.](/help/implementing/cloud-manager/managing-code/byo-github.md) 이 통합을 통해 코드를 Adobe 저장소와 지속적으로 동기화할 필요가 없으며, 기본 분기에 병합하기 전에 가져오기 요청을 확인할 수 있습니다. 이 기능은 공개 GitHub 전용입니다. 자체 호스팅 GitHub에 대해서는 지원되지 않습니다.
+GitHub를 사용하여 저장소를 관리하는 경우, [이제 Cloud Manager를 통해 GitHub 저장소 내에서 직접 코드의 유효성을 검사할 수 있습니다.](/help/implementing/cloud-manager/managing-code/byo-github.md) 이 통합을 통해 코드를 Adobe 저장소와 지속적으로 동기화할 필요가 없으며 기본 분기에 병합하기 전에 가져오기 요청을 확인할 수 있습니다. 이 기능은 공개 GitHub 전용입니다. 자체 호스팅 GitHub에 대해서는 지원되지 않습니다.
 
 이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일로 `Grp-CloudManager_BYOG@adobe.com`에 이메일 주소를 보내 주십시오.
 
