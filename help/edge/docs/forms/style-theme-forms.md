@@ -4,9 +4,9 @@ description: AEM Forms Edge 게재 서비스 양식의 테마 및 스타일 맞�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
+source-git-commit: 59ed012f10a20939c846c8fff088534c5638f3db
 workflow-type: tm+mt
-source-wordcount: '1285'
+source-wordcount: '1268'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Forms은 웹 사이트에서 사용자가 데이터를 입력할 수 있도록 �
 * 입력: `input` 요소는 입력할 데이터 유형을 정의합니다. 예를 들어 텍스트, 숫자, 이메일이 있습니다.
 * 설명(선택 사항): `div` 클래스 `field-description` 는 사용자에 대한 추가 정보 또는 지침을 제공합니다.
 
-**예**
+**HTML 구조의 예**
 
 ```HTML
 <div class="form-text-wrapper form-first-name field-wrapper" data-required="true">
@@ -99,7 +99,7 @@ Forms은 웹 사이트에서 사용자가 데이터를 입력할 수 있도록 �
 </div>
 ```
 
-#### 일반 구성 요소용 CSS 선택기
+**일반 구성 요소용 CSS 선택기**
 
 ```CSS
 .form-{Type}-wrapper input {
@@ -121,7 +121,7 @@ Forms은 웹 사이트에서 사용자가 데이터를 입력할 수 있도록 �
 * `.form-{Type}-wrapper`: 외부를 타깃팅합니다 `div` 필드 형식을 기반으로 하는 요소입니다. 예를 들어, `.form-text-wrapper` 는 모든 텍스트 입력 필드를 타깃팅합니다.
 * `.form-{Name}`: 특정 필드 이름을 기반으로 요소를 추가로 선택합니다. 예를 들어, `.form-first-name` 는 &quot;이름&quot; 텍스트 필드를 타깃팅합니다.
 
-**예:**
+**일반 구성 요소에 대한 CSS 선택기 예**
 
 ```CSS
 /*Target all text input fields */
@@ -159,7 +159,7 @@ Forms은 웹 사이트에서 사용자가 데이터를 입력할 수 있도록 �
 </div>
 ```
 
-**예**
+**예제 HTML 구조**
 
 ```HTML
     <div class="form-drop-down-wrapper form-country field-wrapper" data-required="true">
@@ -173,7 +173,7 @@ Forms은 웹 사이트에서 사용자가 데이터를 입력할 수 있도록 �
    </div>
 ```
 
-#### 드롭다운 구성 요소용 CSS 선택기
+#### 드롭다운 구성 요소에 대한 CSS 선택기 예
 
 ```CSS
 /* Target the outer wrapper */
@@ -265,98 +265,95 @@ Forms은 웹 사이트에서 사용자가 데이터를 입력할 수 있도록 �
 </div>
 ```
 
-#### 라디오 및 확인란 그룹용 CSS 선택기
+**라디오 및 확인란 그룹에 대한 CSS 선택기 예**
 
-**외부 래퍼 타겟팅**
-
-
-```CSS
-   /* Targets all radio group wrappers */
-.form-radio-group-wrapper {
-  margin-bottom: 20px; /* Adds space between radio groups */
-}
-
-/* Targets all checkbox group wrappers */
-.form-checkbox-group-wrapper {
-  margin-bottom: 20px; /* Adds space between checkbox groups */
-}
-```
-
-이러한 선택기는 라디오 및 확인란 그룹의 가장 바깥쪽 컨테이너를 대상으로 하므로 전체 그룹 구조에 일반 스타일을 적용할 수 있습니다. 이 기능은 간격, 정렬 또는 기타 레이아웃 관련 속성을 설정하는 데 유용합니다.
-
-**타겟팅 그룹 레이블**
-
-```CSS
-.form-radio-group-wrapper .field-label,
-.form-checkbox-group-wrapper .field-label {
- font-weight: bold; /* Makes the group label bold */
-}
-```
-
-이 선택기는 `.field-label` 라디오 및 확인란 그룹 래퍼 모두에 포함된 요소입니다. 이렇게 하면 이러한 그룹에 대해 특별히 레이블을 스타일링할 수 있으므로 더 눈에 띌 수 있습니다.
-
-**개별 입력 및 레이블 타겟팅**
-
-```CSS
-/* Styling radio buttons */
-.form-radio-group-wrapper input[type="radio"] {
-  margin-right: 5px; /* Adds space between the input and its label */
-} 
-
-/* Styling radio button labels */
-.form-radio-group-wrapper label {
-  font-size: 15px; /* Changes the label font size */
-}
-
-/* Styling checkboxes */
-.form-checkbox-group-wrapper input[type="checkbox"] {
-  margin-right: 5px;  /* Adds space between the input and its label */ 
-}
-
-/* Styling checkbox labels */
-.form-checkbox-group-wrapper label {
-  font-size: 15px; /* Changes the label font size */
-}
-```
-
-이러한 선택기는 개별 라디오 단추, 확인란 및 관련 레이블을 더욱 세밀하게 제어할 수 있습니다. 이를 사용하여 크기 조정, 간격 조정 또는 보다 뚜렷한 시각적 스타일을 적용할 수 있습니다.
+* 외부 래퍼 타깃팅: 이 선택기는 라디오 및 확인란 그룹의 가장 바깥쪽 컨테이너를 타깃팅하여 전체 그룹 구조에 일반 스타일을 적용할 수 있습니다. 이 기능은 간격, 정렬 또는 기타 레이아웃 관련 속성을 설정하는 데 유용합니다.
 
 
-**라디오 단추 및 확인란 모양 사용자 지정**
-
-```CSS
-/* Hide the default radio button or checkbox */
-.form-radio-group-wrapper input[type="radio"],
-.form-checkbox-group-wrapper input[type="checkbox"] {
-  opacity: 0; 
-  position: absolute; 
-}
-
-/* Create a custom radio button */
-.form-radio-group-wrapper input[type="radio"] + label::before { 
-  content: "";
-  display: inline-block;
-  width: 16px; 
-  height: 16px; 
-  border: 2px solid #ccc; 
-  border-radius: 50%;
-  margin-right: 5px;
-}
-
-.form-radio-group-wrapper input[type="radio"]:checked + label::before {
-  background-color: #007bff; 
-}
-
-/* Create a custom checkbox */
-/* Similar styling as above, with adjustments for a square shape */
-```
-
-이 기법은 기본 입력을 숨기고 :before 및 :after 의사 요소를 사용하여 &#39;확인됨&#39; 상태에 따라 모양을 변경하는 사용자 지정 시각적 개체를 만듭니다.
+  ```CSS
+     /* Targets all radio group wrappers */
+  .form-radio-group-wrapper {
+    margin-bottom: 20px; /* Adds space between radio groups */
+  }
+  
+  /* Targets all checkbox group wrappers */
+  .form-checkbox-group-wrapper {
+    margin-bottom: 20px; /* Adds space between checkbox groups */
+  }
+  ```
 
 
-## 필드 스타일 지정
+* 타겟팅 그룹 레이블: 이 선택기는 `.field-label` 라디오 및 확인란 그룹 래퍼 모두에 포함된 요소입니다. 이렇게 하면 이러한 그룹에 대해 특별히 레이블을 스타일링할 수 있으므로 더 눈에 띌 수 있습니다.
 
-앞에서 설명한 일반적인 스타일 지정 기법 외에도 특정 유형이나 개별 이름을 기반으로 양식 필드 스타일을 지정할 수도 있습니다. 이렇게 하면 양식 모양을 보다 세밀하게 제어하고 사용자 지정할 수 있습니다.
+  ```CSS
+  .form-radio-group-wrapper .field-label,
+  .form-checkbox-group-wrapper .field-label {
+   font-weight: bold; /* Makes the group label bold */
+  }
+  ```
+
+
+
+* 개별 입력 및 레이블 타깃팅: 이러한 선택기는 개별 라디오 버튼, 확인란 및 관련 레이블을 더욱 세밀하게 제어할 수 있습니다. 이를 사용하여 크기 조정, 간격 조정 또는 보다 뚜렷한 시각적 스타일을 적용할 수 있습니다.
+
+  ```CSS
+  /* Styling radio buttons */
+  .form-radio-group-wrapper input[type="radio"] {
+    margin-right: 5px; /* Adds space between the input and its   label */
+  } 
+  
+  /* Styling radio button labels */
+  .form-radio-group-wrapper label {
+    font-size: 15px; /* Changes the label font size */
+  }
+  
+  /* Styling checkboxes */
+  .form-checkbox-group-wrapper input[type="checkbox"] {
+    margin-right: 5px;  /* Adds space between the input and its  label */ 
+  }
+  
+  /* Styling checkbox labels */
+  .form-checkbox-group-wrapper label {
+    font-size: 15px; /* Changes the label font size */
+  }
+  ```
+
+
+
+
+* 라디오 단추 및 확인란 모양 사용자 지정: 이 기법은 기본 입력을 숨기고 :before 및 :after 의사 요소를 사용하여 &#39;선택됨&#39; 상태에 따라 모양을 변경하는 사용자 지정 시각적 개체를 만듭니다.
+
+  ```CSS
+  /* Hide the default radio button or checkbox */
+  .form-radio-group-wrapper input[type="radio"],
+  .form-checkbox-group-wrapper input[type="checkbox"] {
+    opacity: 0; 
+    position: absolute; 
+  }
+  
+  /* Create a custom radio button */
+  .form-radio-group-wrapper input[type="radio"] + label::before { 
+    content: "";
+    display: inline-block;
+    width: 16px; 
+    height: 16px; 
+    border: 2px solid #ccc; 
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .form-radio-group-wrapper input[type="radio"]:checked +  label::before {
+    background-color: #007bff; 
+  }
+  
+  /* Create a custom checkbox */
+  /* Similar styling as above, with adjustments for a square shape  */
+  ```
+
+
+## 구성 요소 스타일링
+
+특정 유형 또는 개별 이름을 기준으로 양식 필드의 스타일을 지정할 수도 있습니다. 이렇게 하면 양식 모양을 보다 세밀하게 제어하고 사용자 지정할 수 있습니다.
 
 ### 필드 유형에 따른 스타일 지정
 
@@ -388,7 +385,7 @@ CSS 선택기를 사용하여 특정 필드 유형을 대상으로 하고 스타
 * 다음 `data-required` 속성은 필드가 필수인지 아니면 선택 사항인지를 나타냅니다.
 * 각 필드에는 해당 레이블, 입력 요소 및 자리 표시자 및 설명과 같은 잠재적인 추가 요소가 있습니다.
 
-예:
+**예제 CSS 선택기**
 
 ```CSS
 /* Target all text input fields */
@@ -403,7 +400,7 @@ CSS 선택기를 사용하여 특정 필드 유형을 대상으로 하고 스타
 }
 ```
 
-### 특정 필드 유형 스타일링
+### 필드 이름을 기반으로 스타일링
 
 이름별로 개별 필드를 타겟팅하여 고유한 스타일을 적용할 수도 있습니다.
 
@@ -416,7 +413,7 @@ CSS 선택기를 사용하여 특정 필드 유형을 대상으로 하고 스타
 </div>
 ```
 
-**CSS 선택기**
+**CSS 선택기 예**
 
 ```CSS
 .form-otp input {
@@ -424,6 +421,6 @@ CSS 선택기를 사용하여 특정 필드 유형을 대상으로 하고 스타
 }
 ```
 
-* 선택기: 이 CSS는 클래스가 있는 요소 내에 있는 모든 입력 요소를 타깃팅합니다 `form-otp`. HTML 구조는 양식 블록의 규칙을 따르며, &quot;form-otp&quot; 클래스로 표시된 컨테이너가 &quot;otp&quot;라는 이름의 필드를 보유하고 있음을 의미합니다.
+이 CSS는 클래스를 갖는 요소 내에 있는 모든 입력 요소를 타겟팅합니다 `form-otp`. 양식의 HTML 구조는 양식 블록의 규칙을 따르므로 &quot;form-otp&quot; 클래스로 표시된 컨테이너가 &quot;otp&quot; 이름의 필드를 보유하고 있음을 의미합니다.
 
-* 속성 및 값: 코드가 적용됩니다 `letter-spacing: 2px`. 이 CSS 속성은 입력 필드의 텍스트 콘텐츠 내에서 개별 문자 사이의 간격을 제어합니다.
+
