@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '1943'
-ht-degree: 3%
+source-wordcount: '1916'
+ht-degree: 2%
 
 ---
 
@@ -36,7 +36,7 @@ Possible topics to cover in this article are below.
 
 [!DNL Experience Manager] 는 다음 표준에 대한 다양한 수준의 지원을 제공합니다.
 
-* [웹 콘텐츠 접근성 지침(WCAG) 2.1](https://www.w3.org/TR/WCAG/).
+* [웹 컨텐츠 액세스 가능성 지침(WCAG) 2.1](https://www.w3.org/TR/WCAG/).
 * [회생법 제508조 개정](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines).
 * [Accessibility Initiative - W3C에서 제공하는 WAI-ARIA(Accessible Rich Internet Applications)](https://www.w3.org/WAI/standards-guidelines/aria/).
 * [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549).
@@ -80,7 +80,7 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 
 ### 의 키보드 단축키 [!DNL Assets] {#keyboard-shortcuts}
 
-의 다음 작업 [!DNL Assets] 나열된 키보드 단축키를 사용합니다. 에 적용되는 대부분의 키보드 단축키 [!DNL Experience Manager] 콘솔은에 적용됩니다. [!DNL Assets]. 다음을 참조하십시오 [콘솔용 키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md). 방법 보기 [키보드 단축키 활성화 또는 비활성화](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+의 다음 작업 [!DNL Assets] 나열된 키보드 단축키를 사용합니다. 에 적용되는 대부분의 키보드 단축키 [!DNL Experience Manager] 콘솔은에 적용됩니다. [!DNL Assets]. 다음을 참조하십시오 [콘솔용 키보드 단축키](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md). 방법 보기 [키보드 단축키 활성화 또는 비활성화](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 | 사용자 인터페이스 또는 시나리오 | 키보드 단축키 | 작업 |
 |---|---|---|
@@ -93,7 +93,7 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 | [!DNL Assets] 콘솔 | `Alt + 3` | 표시 [!UICONTROL 타임라인] 선택한 에셋. |
 | [!DNL Assets] 콘솔 | `Alt + 4` | 선택한 자산의 라이브 카피 참조를 엽니다. |
 | [!DNL Assets] 콘솔 | `Alt + 5` | 선택한 폴더 내에서 검색 및 검색을 호출합니다. |
-| 에셋 또는 폴더가 선택되었습니다. | 백스페이스 | 선택한 에셋 또는 폴더를 삭제합니다. |
+| 에셋 또는 폴더가 선택되었습니다. | 백스페이스키 | 선택한 에셋 또는 폴더를 삭제합니다. |
 | 에셋 또는 폴더가 선택되었습니다. | `p` | 선택한 자산의 속성 페이지를 엽니다. |
 | 에셋 또는 폴더가 선택되었습니다. | `e` | 선택한 자산을 편집합니다. |
 | 에셋 또는 폴더가 선택되었습니다. | `m` | 선택한 자산을 이동합니다. |

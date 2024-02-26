@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service를 위한 SEO 및 URL 관리 모범 사례
 description: Adobe Experience Manager as a Cloud Service를 위한 SEO 및 URL 관리 모범 사례
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '3539'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -209,7 +209,7 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
 
 >[!NOTE]
 >
->`sling:alias` 속성은 [ 페이지 속성을 편집할 때 별칭 속성](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)을 사용하여 설정할 수 있습니다.
+>`sling:alias` 속성은 [ 페이지 속성을 편집할 때 별칭 속성](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced)을 사용하여 설정할 수 있습니다.
 
 #### /etc/map {#etc-map}
 
@@ -458,7 +458,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-또한 XML 사이트 맵에 대해 구현된 기능은 다양한 사용 사례에서도 사용할 수 있습니다(예: 페이지 헤드에 표준 링크 또는 대체 언어 추가). 자세한 내용은 [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) 인터페이스를 참조하십시오.
+또한 XML 사이트맵에 대해 구현된 기능은 다양한 사용 사례에서도 사용할 수 있습니다(예: 페이지 헤드에 표준 링크 또는 대체 언어 추가). 자세한 내용은 [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) 인터페이스를 참조하십시오.
 
 ### 레거시 URL에 대해 301 리디렉션 생성 {#creating-redirects-for-legacy-urls}
 

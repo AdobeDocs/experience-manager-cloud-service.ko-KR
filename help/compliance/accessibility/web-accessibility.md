@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 및 웹 접근성 지침
 description: Adobe Experience Manager as a Cloud Service 및 웹 액세서빌러티 지침 소개
 exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '369'
 ht-degree: 100%
 
 ---
@@ -45,7 +45,7 @@ WCAG 2.1은 [접근성 수준과 이를 준수하는 방법에 대한 지침(관
 
 * WCAG 2.1의 구체적인 특징은 [WCAG 2.1에 대한 빠른 안내서](/help/compliance/accessibility/quick-guide-wcag.md)에 설명되어 있습니다.
 
-* [액세스 가능한 콘텐츠 만들기](/help/sites-cloud/authoring/fundamentals/accessible-content.md)에서는 AEM과 어떻게 관련되는지를 자세히 설명합니다.
+* [액세스 가능한 콘텐츠 만들기](/help/sites-cloud/authoring/page-editor/accessible-content.md)에서는 AEM과 어떻게 관련되는지를 자세히 설명합니다.
 
 >[!NOTE]
 >

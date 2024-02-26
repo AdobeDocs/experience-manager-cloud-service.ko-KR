@@ -2,7 +2,7 @@
 title: 페이지 템플릿
 description: 페이지 템플릿은 새 페이지의 기반으로 사용되는 페이지를 만들 때 사용됩니다
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
 source-wordcount: '3267'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 페이지를 만들 때 템플릿을 선택해야 합니다. 페이지 템플릿은 새 페이지의 기반으로 사용됩니다. 템플릿은 결과 페이지의 구조, 초기 콘텐츠 및 사용할 수 있는 구성 요소(디자인 속성)를 정의합니다. 여기에는 다음과 같은 몇 가지 이점이 있습니다.
 
-* 페이지 템플릿을 사용하면 전문 작성자는 다음과 같은 작업을 수행할 수 있습니다 [템플릿 만들기 및 편집](/help/sites-cloud/authoring/features/templates.md).
+* 페이지 템플릿을 사용하면 전문 작성자는 다음과 같은 작업을 수행할 수 있습니다 [템플릿 만들기 및 편집](/help/sites-cloud/authoring/sites-console/templates.md).
    * 이러한 전문 작성자를 라고 합니다. **템플릿 작성자**
    * 템플릿 작성자는 의 멤버여야 합니다. `template-authors` 그룹입니다.
 * 페이지 템플릿에서 만든 모든 페이지에 대한 동적 연결은 유지됩니다. 이렇게 하면 템플릿에 대한 모든 변경 사항이 페이지 자체에 반영됩니다.
@@ -30,7 +30,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->이 문서에서는 사용자가 이미 템플릿 만들기 및 편집에 익숙하다고 가정합니다. 작성 문서 참조 [페이지 템플릿 만들기](/help/sites-cloud/authoring/features/templates.md)템플릿 작성자에게 노출된 편집 가능한 템플릿의 기능에 대해 자세히 설명합니다.
+>이 문서에서는 사용자가 이미 템플릿 만들기 및 편집에 익숙하다고 가정합니다. 작성 문서 참조 [페이지 템플릿 만들기](/help/sites-cloud/authoring/sites-console/templates.md)템플릿 작성자에게 노출된 편집 가능한 템플릿의 기능에 대해 자세히 설명합니다.
 
 >[!TIP]
 >
@@ -38,7 +38,7 @@ ht-degree: 4%
 
 ## 새 템플릿 만들기 {#creating-a-new-template}
 
-페이지 템플릿 만들기는 주로 [템플릿 콘솔 및 템플릿 편집기](/help/sites-cloud/authoring/features/templates.md) 템플릿 작성자에 의해 제어됩니다. 이 섹션은 이 프로세스에 대한 개요를 제공하며 다음 기술 수준에서 발생하는 사항에 대한 설명을 제공합니다.
+페이지 템플릿 만들기는 주로 [템플릿 콘솔 및 템플릿 편집기](/help/sites-cloud/authoring/sites-console/templates.md) 템플릿 작성자에 의해 제어됩니다. 이 섹션은 이 프로세스에 대한 개요를 제공하며 다음 기술 수준에서 발생하는 사항에 대한 설명을 제공합니다.
 
 편집 가능한 템플릿을 만들 때 다음 작업을 수행하십시오.
 
@@ -58,7 +58,7 @@ ht-degree: 4%
    * 페이지 작성자가 구성 요소를 추가 및 제거할 수 있도록 하려면 템플릿에 단락 시스템을 추가하십시오.
    * 초기 콘텐츠를 정의할 수 있도록 하려면 구성 요소 잠금을 해제했다가 다시 잠글 수 있습니다.
 
-   템플릿 작성자가 구조를 정의하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
+   템플릿 작성자가 구조를 정의하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-structure-template-author).
 
    구조에 대한 기술적인 세부 정보는 를 참조하십시오. [구조](#structure) 이 문서에서.
 
@@ -70,7 +70,7 @@ ht-degree: 4%
 
    * 이러한 속성은 템플릿(및 템플릿으로 만든 페이지)에 적용될 수 있습니다.
 
-   템플릿 작성자가 정책을 정의하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
+   템플릿 작성자가 정책을 정의하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-structure-template-author).
 
    정책에 대한 기술적인 세부 정보는 다음을 참조하십시오. [컨텐츠 정책](#content-policies) 이 문서에서.
 
@@ -79,7 +79,7 @@ ht-degree: 4%
    * 초기 콘텐츠 는 템플릿을 기반으로 페이지를 처음 만들 때 표시되는 콘텐츠를 정의합니다.
    * 그런 다음 페이지 작성자는 초기 콘텐츠를 편집할 수 있습니다.
 
-   템플릿 작성자가 구조를 정의하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/features/templates.md#editing-a-template-initial-content-author).
+   템플릿 작성자가 구조를 정의하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-initial-content-author).
 
    초기 콘텐츠에 대한 자세한 내용은 [초기 컨텐츠](#initial-content) 이 문서에서.
 
@@ -88,7 +88,7 @@ ht-degree: 4%
    * 디바이스 범위에 대한 템플릿 레이아웃을 정의할 수 있습니다.
    * 템플릿에 대한 응답형 레이아웃은 페이지 작성의 경우와 마찬가지로 작동합니다.
 
-   템플릿 작성자가 템플릿 레이아웃을 정의하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/features/templates.md#editing-a-template-layout-template-author).
+   템플릿 작성자가 템플릿 레이아웃을 정의하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-layout-template-author).
 
    템플릿 레이아웃에 대한 자세한 내용은 [레이아웃](#layout) 이 문서에서.
 
@@ -97,7 +97,7 @@ ht-degree: 4%
    * 페이지 작성자가 템플릿을 사용하거나 사용할 수 없게 하기 위해 템플릿을 활성화하거나 비활성화할 수 있습니다.
    * 특정 페이지 분기에서 템플릿을 사용하거나 사용할 수 없게 지정할 수 있습니다.
 
-   템플릿 작성자가 템플릿을 활성화하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author).
+   템플릿 작성자가 템플릿을 활성화하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/sites-console/templates.md#enabling-and-allowing-a-template-template-author).
 
    템플릿 활성화에 대한 기술적인 세부 정보는 다음을 참조하십시오. [템플릿 활성화 및 허용](#enabling-and-allowing-a-template-for-use)이 문서의 e
 
@@ -106,7 +106,7 @@ ht-degree: 4%
    * 템플릿을 사용하여 페이지를 만들 때 정적 템플릿과 편집 가능한 템플릿 간에 눈에 보이는 차이점이 없고 표시가 없습니다.
    * 페이지 작성자의 경우 프로세스가 투명합니다.
 
-   페이지 작성자가 템플릿을 사용하여 페이지를 만드는 방법에 대한 자세한 내용은 을 참조하십시오. [페이지 생성 및 구성](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#templates).
+   페이지 작성자가 템플릿을 사용하여 페이지를 만드는 방법에 대한 자세한 내용은 을 참조하십시오. [페이지 생성 및 구성](/help/sites-cloud/authoring/sites-console/organizing-pages.md#templates).
 
    편집 가능한 템플릿을 사용하여 페이지를 만드는 방법에 대한 자세한 내용은 [결과 컨텐츠 페이지](#resultant-content-pages) 이 문서에서.
 
@@ -355,7 +355,7 @@ When creating an editable template, the value is copied from the template type t
 
 다른 템플릿의 기반으로 사용할 수 있는 템플릿을 생성한 경우 이 템플릿을 템플릿 유형으로 복사할 수 있습니다.
 
-1. 임의의 페이지 템플릿처럼 템플릿을 만듭니다. [여기에 문서화되어 있음](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author)템플릿 유형의 기반으로 사용됩니다.
+1. 임의의 페이지 템플릿처럼 템플릿을 만듭니다. [여기에 문서화되어 있음](/help/sites-cloud/authoring/sites-console/templates.md#creating-a-new-template-template-author)템플릿 유형의 기반으로 사용됩니다.
 1. CRXDE Lite을 사용하여 `templates` 에 대한 노드 `template-types` 노드 아래의 [템플릿 폴더](#template-folders).
 1. 에서 템플릿 삭제 `templates` 노드 아래의 [템플릿 폴더](#template-folders).
 1. 아래에 있는 템플릿 사본에서 `template-types` 노드, 모두 삭제 `cq:template` 및 `cq:templateType` 모든 속성 `jcr:content` 노드.
@@ -453,7 +453,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 ### 레이아웃 {#layout}
 
-날짜 [템플릿 편집 레이아웃을 정의할 수 있습니다](/help/sites-cloud/authoring/features/templates.md), 는 을 사용합니다. [표준 반응형 레이아웃](/help/sites-cloud/authoring/features/responsive-layout.md).
+날짜 [템플릿 편집 레이아웃을 정의할 수 있습니다](/help/sites-cloud/authoring/sites-console/templates.md), 는 을 사용합니다. [표준 반응형 레이아웃](/help/sites-cloud/authoring/page-editor/responsive-layout.md).
 
 <!-- that can also be [configured](/help/sites-administering/configuring-responsive-layout.md). -->
 
@@ -484,7 +484,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
    템플릿을 사용하려면 다음 방법 중 하나로 템플릿을 활성화해야 합니다.
 
-   * [템플릿 활성화](/help/sites-cloud/authoring/features/templates.md) 다음에서 **템플릿** 콘솔.
+   * [템플릿 활성화](/help/sites-cloud/authoring/sites-console/templates.md) 다음에서 **템플릿** 콘솔.
 
    * 에서 상태 속성 설정 `jcr:content` 노드.
 
@@ -499,7 +499,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 1. **허용된 템플릿**
 
-   * [에서 허용되는 템플릿 경로 정의 **페이지 속성**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) 하위 분기의 적절한 페이지 또는 루트 페이지
+   * [에서 허용되는 템플릿 경로 정의 **페이지 속성**](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) 하위 분기의 적절한 페이지 또는 루트 페이지
    * 속성을 설정합니다.
      `cq:allowedTemplates`
 다음에서 `jcr:content` 필요한 분기의 노드입니다.

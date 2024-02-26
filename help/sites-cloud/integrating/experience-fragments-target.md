@@ -2,7 +2,7 @@
 title: Adobe Target으로 경험 조각 내보내기
 description: 경험 조각을 Adobe Target으로 내보내 경험을 테스트하고 개인화하는 방법에 대해 알아봅니다.
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '2184'
 ht-degree: 96%
@@ -16,7 +16,7 @@ ht-degree: 96%
 >* AEM 경험 조각은 Adobe Target의 기본 작업 영역으로 내보내집니다.
 >* [Adobe Target과 통합](/help/sites-cloud/integrating/integrating-adobe-target.md)의 지침에 따라 Adobe Target과 AEM을 통합해야 합니다.
 
-Adobe Experience Manager as a Cloud Service(AEM)에서 생성한 [경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)을 Adobe Target(Target)으로 내보낼 수 있습니다. 그런 다음 Target 활동의 오퍼로 사용하여 경험을 대규모로 테스트하고 개인화할 수 있습니다.
+Adobe Experience Manager as a Cloud Service(AEM)에서 생성한 [경험 조각](/help/sites-cloud/authoring/fragments/content-fragments.md)을 Adobe Target(Target)으로 내보낼 수 있습니다. 그런 다음 Target 활동의 오퍼로 사용하여 경험을 대규모로 테스트하고 개인화할 수 있습니다.
 
 세 가지 옵션 중 하나를 사용하여 경험 조각을 Adobe Target으로 내보낼 수 있습니다.
 
@@ -288,7 +288,7 @@ After you create a Target framework in AEM, associate your web pages with the fr
 When you associate a page with the framework, the child pages inherit the association.
 
 1. In the **Sites** console, navigate to the site that you want to configure.
-1. Using either [quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources), select **View Properties.**
+1. Using either [quick actions](/help/sites-cloud/authoring/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/basic-handling.md#selecting-resources), select **View Properties.**
 1. Select the **Cloud Services** tab.
 1. Select **Edit**.
 1. Select **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
@@ -302,7 +302,7 @@ When you associate a page with the framework, the child pages inherit the associ
    >Make sure that you select the specific **framework** that you created and not the Target cloud configuration under which it was created.
 
 1. Select **Done**.
-1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).)
+1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md).)
 
    >[!NOTE]
    >
@@ -344,7 +344,7 @@ AEM에서 Target으로 경험 조각을 내보내려면(클라우드 구성 지�
 
    >[!NOTE]
    >
-   >내보내기에 대한 [다양한 세부 정보](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#details-of-your-experience-fragment)는 콘솔의 **목록 보기** 및 **속성**&#x200B;에서 볼 수 있습니다.
+   >내보내기에 대한 [다양한 세부 정보](/help/sites-cloud/authoring/fragments/content-fragments.md#details-of-your-experience-fragment)는 콘솔의 **목록 보기** 및 **속성**&#x200B;에서 볼 수 있습니다.
 
    >[!NOTE]
    >
@@ -352,7 +352,7 @@ AEM에서 Target으로 경험 조각을 내보내려면(클라우드 구성 지�
 
 >[!NOTE]
 >
->또는 [페이지 정보](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) 메뉴의 비슷한 명령을 사용하여 페이지 편집기에서 내보내기를 수행할 수 있습니다.
+>또는 [페이지 정보](/help/sites-cloud/authoring/page-editor/introduction.md#page-information) 메뉴의 비슷한 명령을 사용하여 페이지 편집기에서 내보내기를 수행할 수 있습니다.
 
 ## Adobe Target에서 경험 조각 사용 {#using-your-experience-fragments-in-adobe-target}
 

@@ -4,8 +4,8 @@ description: 콘텐츠 동기화를 위해 Live Copy 상태를 신속하게 이�
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 100%
 
@@ -32,8 +32,8 @@ ht-degree: 100%
 
 **사이트** 콘솔의 **참조** 측면 패널에서 **Live Copy 개요**&#x200B;를 열 수 있습니다.
 
-1. **사이트** 콘솔에서 [블루프린트 페이지를 검색한 다음 선택합니다](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. **[참조](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** 레일을 연 다음 **Live Copy**&#x200B;를 선택합니다.
+1. **사이트** 콘솔에서 [블루프린트 페이지를 검색한 다음 선택합니다](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. **[참조](/help/sites-cloud/authoring/basic-handling.md#references)** 레일을 연 다음 **Live Copy**&#x200B;를 선택합니다.
 
    ![참조 레일의 Live Copy](../assets/live-copy-references.png)
 

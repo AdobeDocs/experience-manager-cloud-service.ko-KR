@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1391'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ AEM 콘텐츠 번역을 시작하기 전에 알아 두어야 할 몇 가지 요�
 
 >[!TIP]
 >
->AEM과 같은 대규모 CMS 사용에 익숙하지 않은 경우 계속 진행하기 전에 [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md) 설명서를 검토하는 것이 좋습니다. 기본 처리 설명서는 여정의 일부가 아닙니다. 검토를 완료하면 이 페이지로 돌아오십시오.
+>AEM과 같은 대규모 CMS 사용에 익숙하지 않은 경우 계속 진행하기 전에 [기본 처리](/help/sites-cloud/authoring/basic-handling.md) 설명서를 검토하는 것이 좋습니다. 기본 처리 설명서는 여정의 일부가 아닙니다. 검토를 완료하면 이 페이지로 돌아오십시오.
 
 ### 도구 {#tools}
 
@@ -101,7 +101,7 @@ Sites 콘솔에 액세스하려면 다음 작업을 수행하십시오.
 
    ![편집할 페이지 선택](assets/sites-editor-select-page.png)
 
-1. 다음 항목 선택 **편집** 옵션을 선택합니다.
+1. 도구 모음에서 **편집** 옵션을 선택합니다.
 1. 사이트 편집기가 열리고 편집을 위해 선택한 페이지가 새 브라우저 탭에 로드됩니다.
 1. 콘텐츠 위로 마우스를 가져다 대거나 콘텐츠를 탭하면 개별 구성 요소에 대한 선택기가 표시됩니다. 구성 요소는 페이지를 구성하는 드래그 앤 드롭 기본 구성 요소입니다.
 
@@ -207,7 +207,7 @@ AEM Sites 번역 여정의 한 부분을 완료했으므로,
 
 다음 문서인 [번역 커넥터 구성](configure-connector.md)을 검토하여 번역 여정의 다음 부분으로 넘어가는 것이 좋습니다. 다음은 이 문서에 나열된 몇 가지 개념을 자세히 알아보는 추가적인 옵션 리소스이며, 이들 리소스를 여정에서 계속 사용할 필요는 없습니다.
 
-* [AEM 기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md) - 콘텐츠 찾기와 같은 필수 작업을 편안하게 탐색하고 수행할 수 있도록 AEM UI의 기본 사항에 대해 알아봅니다.
+* [AEM 기본 처리](/help/sites-cloud/authoring/basic-handling.md) - 콘텐츠 찾기와 같은 필수 작업을 편안하게 탐색하고 수행할 수 있도록 AEM UI의 기본 사항에 대해 알아봅니다.
 * [번역할 콘텐츠 식별](/help/sites-cloud/administering/translation/rules.md) - 번역 규칙이 번역이 필요한 콘텐츠를 식별하는 방법에 대해 알아봅니다.
 * [번역 통합 프레임워크 구성](/help/sites-cloud/administering/translation/integration-framework.md) - 번역 통합 프레임워크를 서드파티 번역 서비스와 통합하도록 구성하는 방법에 대해 알아봅니다.
 * [번역 프로젝트 관리](/help/sites-cloud/administering/translation/managing-projects.md) - AEM에서 기계 번역 및 인간 번역을 만들고 관리하는 방법에 대해 알아봅니다.

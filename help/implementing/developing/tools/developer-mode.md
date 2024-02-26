@@ -4,16 +4,16 @@ seo-title: Developer Mode
 description: 개발자 모드에서는 현재 페이지에 대한 정보를 개발자에게 제공하는 몇 가지 탭이 있는 사이드 패널이 열립니다
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '527'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 # 개발자 모드 {#developer-mode}
 
-AEM에서 페이지를 편집할 때 몇 가지 [모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 개발자 모드를 포함하여 을 사용할 수 있습니다. 개발자 모드에서는 현재 페이지에 대한 기술 정보를 개발자에게 제공하는 몇 가지 탭이 있는 사이드 패널이 열립니다.
+AEM에서 페이지를 편집할 때 몇 가지 [모드](/help/sites-cloud/authoring/sites-console/introduction.md#page-modes) 개발자 모드를 포함하여 을 사용할 수 있습니다. 개발자 모드에서는 현재 페이지에 대한 기술 정보를 개발자에게 제공하는 몇 가지 탭이 있는 사이드 패널이 열립니다.
 
 다음 두 가지 탭이 있습니다.
 
@@ -41,7 +41,7 @@ AEM에서 페이지를 편집할 때 몇 가지 [모드](/help/sites-cloud/autho
 
 패널은 두 개의 탭으로 나뉘어 있습니다.
 
-* **[구성 요소](#components)** - 다음과 유사한 구성 요소 트리를 보여 줍니다 [콘텐츠 트리](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree) 작성자용
+* **[구성 요소](#components)** - 다음과 유사한 구성 요소 트리를 보여 줍니다 [콘텐츠 트리](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#content-tree) 작성자용
 * **[오류](#errors)** - 문제가 발생하면 각 구성 요소에 대한 세부 정보가 표시됩니다.
 
 ### 구성 요소 탭 {#components}
@@ -55,7 +55,7 @@ AEM에서 페이지를 편집할 때 몇 가지 [모드](/help/sites-cloud/autho
 * 트리를 확장하고 트리 내에서 특정 구성 요소를 선택할 수 있습니다. 선택 항목을 통해 다음과 같은 구성 요소 세부 정보에 액세스할 수 있습니다.
    * 저장소 경로
    * 스크립트 링크(CRXDE Lite에서 액세스)
-   * 에 표시되는 구성 요소 세부 사항 [구성 요소 콘솔](/help/sites-cloud/authoring/features/components-console.md)
+   * 에 표시되는 구성 요소 세부 사항 [구성 요소 콘솔](/help/sites-cloud/authoring/components-console.md)
 * 트리에서 선택한 구성 요소는 편집기에서 파란색 테두리로 표시됩니다.
 
 이 구성 요소 탭은 다음 작업을 수행하는 데 도움이 됩니다.
@@ -72,11 +72,11 @@ AEM에서 페이지를 편집할 때 몇 가지 [모드](/help/sites-cloud/autho
    * 구성 요소를 렌더링하는 데 사용되는 모든 구성 요소 스크립트.
    * 특정 구성 요소에 대한 저장소 콘텐츠 경로입니다.
 
-     ![세부 정보 보기](assets/developer-mode-view-details.png)
+     ![세부 사항 보기](assets/developer-mode-view-details.png)
 
 * **스크립트 편집:** CRXDE Lite에서 구성 요소 스크립트를 여는 링크입니다.
 
-* **구성 요소 세부 사항 보기:** 내의 구성 요소에 대한 세부 정보를 엽니다. [구성 요소 콘솔](/help/sites-cloud/authoring/features/components-console.md).
+* **구성 요소 세부 사항 보기:** 내의 구성 요소에 대한 세부 정보를 엽니다. [구성 요소 콘솔](/help/sites-cloud/authoring/components-console.md).
 
 V자 버튼을 탭하거나 클릭하여 구성 요소 항목을 확장하면 다음도 표시됩니다.
 

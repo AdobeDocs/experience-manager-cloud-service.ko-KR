@@ -4,10 +4,10 @@ description: 서드파티 번역 서비스와 통합한 번역 통합 프레임�
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '1499'
-ht-degree: 90%
+source-wordcount: '1465'
+ht-degree: 92%
 
 ---
 
@@ -67,10 +67,10 @@ AEM을 번역 서비스 공급업체에 연결하는 클라우드 구성을 만�
 >
 >AEM 콘텐츠 번역 기능의 개요를 확인하려면 [다국어 사이트를 위한 콘텐츠 번역](overview.md)을 살펴보십시오.
 
-프레임워크 단일 구성은 페이지 콘텐츠와 자산을 어떻게 번역할지 제어합니다. 번역 구성을 만들려면 다음 작업을 수행하십시오.
+프레임워크 단일 구성은 페이지 콘텐츠와 자산을 어떻게 번역할지 제어합니다. 번역 구성을 만들려면:
 
-1. 다음에서 [전역 탐색 메뉴,](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) 선택 **도구 > Cloud Service 및 번역 Cloud Service**.
-1. 콘텐츠 구조에서 구성을 만들려는 위치로 이동합니다. 보통 특정 사이트를 토대로 하거나 전역일 수 있습니다.
+1. 다음에서 [전역 탐색 메뉴,](/help/sites-cloud/authoring/basic-handling.md#global-navigation) 선택 **도구 > Cloud Service 및 번역 Cloud Service**.
+1. 콘텐츠 구조에서 구성을 만들고자 하는 위치로 이동합니다. 보통 특정 사이트를 토대로 하거나 전역일 수 있습니다.
 1. 필드에 다음 정보를 입력한 다음 을 선택합니다 **만들기**.:
    1. 드롭다운 메뉴에서 **구성 유형**&#x200B;을 선택합니다.
    1. 구성의 **제목**&#x200B;을 입력합니다. **제목**&#x200B;을 통해 **클라우드 서비스** 콘솔 및 페이지 속성 드롭다운 목록에서 구성을 식별합니다.
@@ -131,7 +131,7 @@ AEM을 번역 서비스 공급업체에 연결하는 클라우드 구성을 만�
 1. 사이트 콘솔에서 구성 및 선택할 페이지를 선택합니다 **속성 보기**.
 1. **클라우드 서비스** 탭을 선택합니다.
 1. 다음에서 **구성 추가** 드롭다운 목록에서 구성을 선택합니다.
-1. 선택 **저장 및 닫기**.
+1. **저장 후 닫기**&#x200B;를 선택합니다.
 
 ### 페이지를 번역 통합 프레임워크와 연결 {#associating-pages-with-a-translation-integration-framework}
 
@@ -140,4 +140,4 @@ AEM을 번역 서비스 공급업체에 연결하는 클라우드 구성을 만�
 1. 사이트 콘솔에서 구성 및 선택할 페이지를 선택합니다 **속성 보기**.
 1. **클라우드 서비스** 탭을 선택합니다.
 1. 다음에서 **구성 추가** 드롭다운 목록에서 구성을 선택합니다.
-1. 선택 **저장 및 닫기**.
+1. **저장 후 닫기**&#x200B;를 선택합니다.

@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: e2d79742c2097748d736bc4d2d2046711d978fc5
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '3166'
 ht-degree: 13%
@@ -309,7 +309,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 Panoramic Media 구성 요소는 구면 파노라마 이미지인 에셋용입니다. 이러한 이미지들은 방, 속성, 위치 또는 풍경의 360° 시청 경험을 제공한다. 이미지가 구면 파노라마로 적합하려면 다음 중 하나 또는 둘 다 있어야 합니다.
 
 * 종횡비는 2:1입니다.
-* 키워드로 태그 지정됨 `equirectangular` 또는 (`spherical` + `panorama`) 또는 (`spherical` + `panoramic`). 다음을 참조하십시오 [태그 사용](/help/sites-cloud/authoring/features/tags.md).
+* 키워드로 태그 지정됨 `equirectangular` 또는 (`spherical` + `panorama`) 또는 (`spherical` + `panoramic`). 다음을 참조하십시오 [태그 사용](/help/sites-cloud/authoring/sites-console/tags.md).
 
 Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the **[!UICONTROL Panoramic Media]** WCM component.
 

@@ -4,7 +4,7 @@ description: Adobe Experience Manager as a Cloud Service에서 Dynamic Media을 
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '3811'
 ht-degree: 2%
@@ -115,7 +115,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    >새 Dynamic Media Experience Manager 구성의 설정을 마치면 as a Cloud Service의 받은 편지함 내에 상태 알림을 받게 됩니다.
    >
    >이 받은 편지함 알림은 구성이 성공했는지 여부를 알려줍니다.
-   > 다음을 참조하십시오 [새 Dynamic Media 구성 문제 해결](#troubleshoot-dm-config) 및 [받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md) 추가 정보.
+   > 다음을 참조하십시오 [새 Dynamic Media 구성 문제 해결](#troubleshoot-dm-config) 및 [받은 편지함](/help/sites-cloud/authoring/inbox.md) 추가 정보.
 
 1. Dynamic Media 컨텐츠가 게시되기 전에 안전하게 미리 보기 위해 Experience Manager은 토큰 기반 유효성 검사를 as a Cloud Service으로 사용하므로 Experience Manager 작성자는 기본적으로 Dynamic Media 컨텐츠를 미리 봅니다. 그러나 다음을 수행할 수 있습니다. *허용 목록* 사용자에게 안전한 미리 보기 콘텐츠에 대한 액세스 권한을 제공하는 더 많은 IP Experience Manager as a Cloud Service에서 이 작업을 설정하려면 다음을 참조하십시오. [이미지 서버에 대한 Dynamic Media 게시 설정 구성 - 보안 탭](/help/assets/dynamic-media/dm-publish-settings.md#security-tab). <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
@@ -139,7 +139,7 @@ ACL(액세스 제어 목록) 권한 사용과 같이 구성을 추가로 사용�
 
 ![Experience Manager 받은 편지함 오류](/help/assets/dynamic-media/assets/dmconfig-inbox-failure.png)
 
-참조: [받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md).
+참조: [받은 편지함](/help/sites-cloud/authoring/inbox.md).
 
 **새 Dynamic Media 구성 문제를 해결하려면 다음을 수행하십시오.**
 

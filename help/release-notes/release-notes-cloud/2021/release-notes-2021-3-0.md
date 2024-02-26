@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.3.0 릴리스 정보입니다.'
 description: "[!DNL Adobe Experience Manager] 2021.3.0용 as a Cloud Service 릴리스 노트"
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 33%
@@ -18,7 +18,7 @@ ht-degree: 33%
 
 >[!NOTE]
 >
->릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
 
 ## 릴리스 일자 {#release-date}
 
@@ -27,7 +27,7 @@ ht-degree: 33%
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-* [사이트의 점진적 웹 앱(PWA) 버전](/help/sites-cloud/authoring/features/enable-pwa.md) 이제 간단한 구성을 통해 프로젝트 수준에서 을(를) 활성화할 수 있습니다.
+* [사이트의 점진적 웹 앱(PWA) 버전](/help/sites-cloud/authoring/sites-console/enable-pwa.md) 이제 간단한 구성을 통해 프로젝트 수준에서 을(를) 활성화할 수 있습니다.
 * 콘텐츠 조각 모델 확장 - 이제 여러 줄 텍스트 데이터 유형을 다중 필드 목록으로 정의할 수 있습니다.
 * 콘텐츠 조각 편집기 UX 개선 사항 - 중첩된 하위 조각이 이제 이동 경로에 표시되며 게시, 저장 및 저장 종료 작업에 대한 보기가 개선되었습니다.
 

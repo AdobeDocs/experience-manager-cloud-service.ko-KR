@@ -2,10 +2,10 @@
 title: 콘텐츠 조각 맞춤화 및 확장
 description: 컨텐츠 조각은 표준 자산을 확장합니다. 이를 맞춤화하는 방법에 대해 알아봅니다.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 3%
+source-wordcount: '1689'
+ht-degree: 1%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 Adobe Experience Manager as a Cloud Service 내에서 컨텐츠 조각은 표준 자산을 확장합니다. 다음을 참조하십시오.
 
-* [컨텐츠 조각 생성 및 관리](/help/sites-cloud/administering/content-fragments/overview.md) 및 [컨텐츠 조각으로 페이지 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 콘텐츠 조각에 대한 자세한 내용은 을 참조하십시오.
+* [컨텐츠 조각 생성 및 관리](/help/sites-cloud/administering/content-fragments/overview.md) 및 [컨텐츠 조각으로 페이지 작성](/help/sites-cloud/authoring/fragments/content-fragments.md) 콘텐츠 조각에 대한 자세한 내용은 을 참조하십시오.
 
 * [자산 관리](/help/assets/manage-digital-assets.md) 표준 에셋에 대한 자세한 내용을 보려면 .
 
@@ -96,7 +96,7 @@ CFM(콘텐츠 조각 관리)은 다음과 같이 Adobe Experience Manager(AEM) �
 >
 >다음 [콘텐츠 조각 구성 요소는 핵심 구성 요소의 일부입니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html). 다음을 참조하십시오 [핵심 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) 을 참조하십시오.
 
-다른 에셋 유형과 마찬가지로 AEM 페이지에서 콘텐츠 조각을 참조할 수 있습니다. AEM에서 제공하는 **[콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)** - a [페이지에 콘텐츠 조각을 포함할 수 있는 구성 요소](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). 이를 확장할 수도 있습니다. **[컨텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)** 핵심 구성 요소입니다.
+다른 에셋 유형과 마찬가지로 AEM 페이지에서 콘텐츠 조각을 참조할 수 있습니다. AEM에서 제공하는 **[콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)** - a [페이지에 콘텐츠 조각을 포함할 수 있는 구성 요소](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page). 이를 확장할 수도 있습니다. **[컨텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)** 핵심 구성 요소입니다.
 
 * 구성 요소는 `fragmentPath` 속성을 사용하여 실제 콘텐츠 조각을 참조합니다. 다음 `fragmentPath` 속성은 다른 에셋 유형의 유사한 속성과 동일한 방식으로 처리됩니다(예: 콘텐츠 조각을 다른 위치로 이동할 때).
 

@@ -5,8 +5,8 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
-workflow-type: ht
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 100%
 
@@ -62,5 +62,5 @@ AEM Sites 번역 여정을 시작해 주셔서 감사합니다! 지금까지 이
 
 다음 문서인 [AEM Sites 번역 시작하기](getting-started.md)를 검토하여 사이트 번역 여정의 다음 부분으로 넘어가는 것이 좋습니다. 다음은 이 문서에 나열된 몇 가지 개념을 자세히 알아보는 추가적인 옵션 리소스이며, 이들 리소스를 여정에서 계속 사용할 필요는 없습니다.
 
-* [페이지 작성에 대한 빠른 시작 안내서](/help/sites-cloud/authoring/getting-started/quick-start.md) - AEM Sites를 사용하여 콘텐츠를 만드는 데 가장 중요한 개념에 대한 간략한 개요
+* [페이지 작성에 대한 빠른 시작 안내서](/help/sites-cloud/authoring/quick-start.md) - AEM Sites를 사용하여 콘텐츠를 만드는 데 가장 중요한 개념에 대한 간략한 개요
 * [MSM 및 번역](/help/sites-cloud/administering/msm-and-translation.md) - AEM의 다중 사이트 관리자에 대한 세부 정보 및 번역 도구 사용 방법

@@ -2,9 +2,9 @@
 title: 비동기 작업
 description: Adobe Experience Manager은 리소스 집약적인 일부 작업을 백그라운드 작업으로 비동기적으로 완료하여 성능을 최적화합니다.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '854'
 ht-degree: 64%
 
 ---
@@ -31,7 +31,7 @@ Adobe 성능에 대한 부정적인 영향을 줄이기 위해 Experience Manage
 
 ## 비동기 작업 상태 모니터링 {#monitor-the-status-of-asynchronous-operations}
 
-AEM이 비동기 방식으로 작업을 처리할 때마다 [받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md) 및 이메일(활성화된 경우)을 통해 알림을 받게 됩니다.
+AEM이 비동기 방식으로 작업을 처리할 때마다 [받은 편지함](/help/sites-cloud/authoring/inbox.md) 및 이메일(활성화된 경우)을 통해 알림을 받게 됩니다.
 
 비동기 작업의 상태를 자세히 보려면 **[!UICONTROL 백그라운드 작업]** 페이지를 가리키도록 업데이트하는 중입니다.
 
@@ -136,6 +136,6 @@ AEM은 매일 01:00에 제거 작업을 실행하여 하루 이상 경과한 완
 
 >[!MORELIKETHIS]
 >
->* [페이지 생성 및 구성](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
+>* [페이지 관리](/help/sites-cloud/authoring/sites-console/managing-pages.md)
 >* [자산 메타데이터 일괄적으로 가져오거나 내보냅니다](/help/assets/metadata-import-export.md).
 >* [연결된 자산을 사용하여 원격 배포에서 DAM 자산을 공유할 수 있습니다](/help/assets/use-assets-across-connected-assets-instances.md).

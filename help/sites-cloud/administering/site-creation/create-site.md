@@ -4,10 +4,10 @@ description: AEM을 통해 사이트 템플릿을 사용하여 사이트를 만�
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 77%
+source-wordcount: '755'
+ht-degree: 80%
 
 ---
 
@@ -55,7 +55,7 @@ AEM 빠른 사이트 생성 도구를 사용하면 개발자가 아닌 사용자
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. 선택 **만들기** 화면 오른쪽 상단의 드롭다운 메뉴에서 을(를) 선택합니다. **템플릿의 사이트**.
+1. 화면 오른쪽 상단의 **만들기**&#x200B;를 선택한 다음 드롭다운 메뉴에서 **템플릿으로 사이트 생성**&#x200B;을 선택합니다.
 
    ![템플릿으로 사이트 생성](../assets/create-site-from-template.png)
 
@@ -75,13 +75,13 @@ AEM 빠른 사이트 생성 도구를 사용하면 개발자가 아닌 사용자
 
    * 브라우저의 제목 표시줄에 사이트 제목이 표시됩니다.
    * 사이트 이름은 URL의 일부가 됩니다.
-   * 사이트 이름은 [AEM의 페이지 이름 지정 규칙](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices)을 준수해야 합니다.
+   * 사이트 이름은 [AEM의 페이지 이름 지정 규칙](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices)을 준수해야 합니다.
 
 1. 선택 **만들기** 그리고 사이트는 사이트 템플릿에서 만들어집니다.
 
    ![새 사이트 세부 정보](../assets/create-site-details.png)
 
-1. 표시되는 확인 대화 상자에서 **완료**.
+1. 표시되는 확인 대화 상자에서 **완료**&#x200B;를 선택합니다.
 
    ![완료 대화 상자](../assets/success.png)
 

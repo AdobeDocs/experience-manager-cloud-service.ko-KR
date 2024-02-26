@@ -2,7 +2,7 @@
 title: 작업
 description: 작업은 콘텐츠에 대해 수행할 일의 항목들을 나타내며 프로젝트에서 현재 작업의 완료 수준을 판별하는 데 사용됩니다
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 95%
@@ -76,6 +76,6 @@ ht-degree: 95%
 
 ![받은 편지함의 작업](/help/sites-cloud/authoring/assets/projects-task-inbox.png)
 
-작업을 완료하려면 작업을 선택하고 **완료**&#x200B;를 클릭하십시오. 작업에 정보를 추가한 다음 **완료**&#x200B;를 클릭합니다. 자세한 내용은 [받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)을 참조하십시오.
+작업을 완료하려면 작업을 선택하고 **완료**&#x200B;를 클릭하십시오. 작업에 정보를 추가한 다음 **완료**&#x200B;를 클릭합니다. 자세한 내용은 [받은 편지함](/help/sites-cloud/authoring/inbox.md)을 참조하십시오.
 
 ![작업 알림](/help/sites-cloud/authoring/assets/projects-task-notifications.png)

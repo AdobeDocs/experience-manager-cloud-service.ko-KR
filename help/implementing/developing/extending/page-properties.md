@@ -2,16 +2,16 @@
 title: 페이지 속성 보기 사용자 정의
 description: 작성자가 페이지 속성을 보고 편집하는 방법에 대해 알아봅니다.
 exl-id: 363b3c2d-f965-485f-bdae-2ea5b4cecb83
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '352'
 ht-degree: 92%
 
 ---
 
 # 페이지 속성 보기 사용자 정의{#customizing-views-of-page-properties}
 
-모든 페이지에는 사용자가 보고 편집할 수 있는 [속성](/help/sites-cloud/authoring/fundamentals/page-properties.md) 세트가 있습니다. 일부는 페이지를 만들 때 필요하며(만들기 보기), 일부는 나중에 보고 편집할 수 있습니다(편집 보기). 이러한 페이지 속성은 해당 페이지 구성 요소의 대화 상자(`cq:dialog`)를 통해 정의하고 제공합니다.
+모든 페이지에는 사용자가 보고 편집할 수 있는 [속성](/help/sites-cloud/authoring/sites-console/page-properties.md) 세트가 있습니다. 일부는 페이지를 만들 때 필요하며(만들기 보기), 일부는 나중에 보고 편집할 수 있습니다(편집 보기). 이러한 페이지 속성은 해당 페이지 구성 요소의 대화 상자(`cq:dialog`)를 통해 정의하고 제공합니다.
 
 모든 페이지 속성의 기본 상태는 다음과 같습니다.
 
@@ -39,7 +39,7 @@ ht-degree: 92%
 
 페이지 구성 요소의 대화 상자를 구성하고 적절한 노드 속성을 적용하여 사용 가능한 필드를 구성할 수도 있습니다.
 
-예를 들어 기본적으로 [**페이지 만들기** 마법사](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)에는 **기타 제목 및 설명** 아래에 그룹화된 필드가 표시됩니다. 이를 숨기려면 다음과 같이 구성하십시오.
+예를 들어 기본적으로 [**페이지 만들기** 마법사](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page)에는 **기타 제목 및 설명** 아래에 그룹화된 필드가 표시됩니다. 이를 숨기려면 다음과 같이 구성하십시오.
 
 1. `/apps` 아래에서 페이지 구성 요소를 만듭니다.
 1. 페이지 구성 요소의 `basic` 섹션에 대해 재정의를 만듭니다([Sling 리소스 병합](/help/implementing/developing/introduction/sling-resource-merger.md)에서 제공되는 *대화 상자 비교* 사용). 예를 들면 다음과 같습니다.

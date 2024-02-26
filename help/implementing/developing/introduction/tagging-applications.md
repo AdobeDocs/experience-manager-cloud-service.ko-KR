@@ -2,9 +2,9 @@
 title: AEM 애플리케이션에 태그 지정 빌드
 description: 프로그래밍 방식으로 사용자 지정 AEM 애플리케이션 내에서 태그를 사용하거나 태그를 확장하십시오
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '717'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 태그 지정에 대한 관련 정보:
 
-* 다음을 참조하십시오 [태그 사용](/help/sites-cloud/authoring/features/tags.md) 콘텐츠 작성자로 콘텐츠에 태그를 지정하는 방법에 대한 자세한 정보.
+* 다음을 참조하십시오 [태그 사용](/help/sites-cloud/authoring/sites-console/tags.md) 콘텐츠 작성자로 콘텐츠에 태그를 지정하는 방법에 대한 자세한 정보.
 * 태그 작성 및 관리 방법과 컨텐츠 태그가 적용되는 항목에 대한 관리자 관점의 태그 관리를 참조하십시오.
 
 ## 태깅 API 개요 {#overview-of-the-tagging-api}

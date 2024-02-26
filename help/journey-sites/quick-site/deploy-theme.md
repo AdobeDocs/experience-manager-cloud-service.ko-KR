@@ -2,10 +2,10 @@
 title: 맞춤화된 테마 배포
 description: 파이프라인을 사용하여 사이트 테마를 배포하는 방법에 대해 알아봅니다.
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
-source-wordcount: '1014'
-ht-degree: 100%
+source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
+workflow-type: tm+mt
+source-wordcount: '1002'
+ht-degree: 95%
 
 ---
 
@@ -112,7 +112,9 @@ AEM은 강력한 도구로서 다양한 추가 옵션을 제공합니다. 이 �
 * [AEM 사이트 테마](https://github.com/adobe/aem-site-template-standard-theme-e2e) - AEM 사이트 테마의 GitHub 저장소입니다.
 * [npm](https://www.npmjs.com) - 사이트를 간편하게 빌드하기 위해 사용하는 AEM 테마는 npm을 기반으로 합니다.
 * [Webpack](https://webpack.js.org) - 사이트를 간편하게 빌드하기 위해 사용하는 AEM 테마는 Webpack을 사용합니다.
-* [페이지 생성 및 관리](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - 템플릿으로 AEM 사이트를 만든 다음 추가로 맞춤화하고자 하는 경우 이 안내서에서 AEM 사이트의 페이지를 관리하는 방법에 대한 내용을 살펴볼 수 있습니다.
+* [페이지 구성](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - 이 안내서에서는 AEM 사이트의 페이지를 구성하는 방법에 대해 자세히 설명합니다.
+* [페이지 생성](/help/sites-cloud/authoring/sites-console/creating-pages.md) - 이 안내서에서는 사이트에 새 페이지를 추가하는 방법에 대해 자세히 설명합니다.
+* [페이지 관리](/help/sites-cloud/authoring/sites-console/managing-pages.md) - 이 안내서에서는 이동, 복사 및 삭제를 포함하여 사이트 페이지를 관리하는 방법에 대해 자세히 설명합니다.
 * [패키지를 사용하여 작업하는 방법](/help/implementing/developing/tools/package-manager.md) - 패키지를 사용하여 저장소 콘텐츠를 가져오고 내보낼 수 있습니다. 이 문서에서는 AEM 6.5의 패키지를 사용하여 작업하는 방법에 대해 설명합니다(AEMaaCS에도 적용됨).
 * [온보딩 여정](/help/journey-onboarding/overview.md) - 이 안내서는 팀이 구성되어 AEM as a Cloud Service에 액세스할 수 있도록 하는 출발점이 됩니다.
 * [Adobe Experience Manager Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) - Cloud Manager의 기능에 대한 자세한 내용은 Cloud Manager 설명서를 살펴보십시오.

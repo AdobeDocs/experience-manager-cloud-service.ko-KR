@@ -2,7 +2,7 @@
 title: 페이지 작성 사용자 정의
 description: AEM as a Cloud Service가 페이지 작성 기능을 사용자 정의하기 위해 제공하는 메커니즘에 대해 알아봅니다.
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 94%
@@ -36,7 +36,7 @@ Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 활
 
 ## 새 레이어(모드) 추가 {#add-new-layer-mode}
 
-페이지를 편집할 때 다양한 [모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)를 사용할 수 있습니다. 이러한 모드는 [레이어](/help/implementing/developing/introduction/ui-structure.md#layer)를 사용하여 구현됩니다. 이를 통해 동일한 페이지 콘텐츠에 대해 서로 다른 유형의 기능에 액세스할 수 있습니다. 표준 AEM 모드로는 편집, 레이아웃, 개발자, 타임워프, Live Copy 상태, 타겟팅이 있습니다.
+페이지를 편집할 때 다양한 [모드](/help/sites-cloud/authoring/page-editor/introduction.md#page-modes)를 사용할 수 있습니다. 이러한 모드는 [레이어](/help/implementing/developing/introduction/ui-structure.md#layer)를 사용하여 구현됩니다. 이를 통해 동일한 페이지 콘텐츠에 대해 서로 다른 유형의 기능에 액세스할 수 있습니다. 표준 AEM 모드로는 편집, 레이아웃, 개발자, 타임워프, Live Copy 상태, 타겟팅이 있습니다.
 
 ### 레이어 예: Live Copy 상태 {#layer-example-live-copy-status}
 

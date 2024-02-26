@@ -1,7 +1,7 @@
 ---
 title: 레이아웃 컨테이너 및 레이아웃 모드 구성
 description: 콘텐츠 작성자가 반응형 레이아웃을 사용할 수 있도록 레이아웃 컨테이너 및 레이아웃 모드를 구성하는 방법을 알아봅니다.
-source-git-commit: 4ae0ae4fbf8f6a97434628f5f6049720c6c43118
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 3%
@@ -11,11 +11,11 @@ ht-degree: 3%
 
 # 레이아웃 컨테이너 및 레이아웃 모드 구성 {#configuring-layout-container-and-layout-mode}
 
-[응답형 레이아웃](/help/sites-cloud/authoring/features/responsive-layout.md) 를 구현하기 위한 메커니즘입니다. [반응형 웹 디자인.](https://en.wikipedia.org/wiki/Responsive_web_design) 이를 통해 콘텐츠 작성자는 사용자가 사용하는 디바이스에 따라 레이아웃과 차원이 다른 웹 페이지를 만들 수 있습니다.
+[응답형 레이아웃](/help/sites-cloud/authoring/page-editor/responsive-layout.md) 를 구현하기 위한 메커니즘입니다. [반응형 웹 디자인.](https://en.wikipedia.org/wiki/Responsive_web_design) 이를 통해 콘텐츠 작성자는 사용자가 사용하는 디바이스에 따라 레이아웃과 차원이 다른 웹 페이지를 만들 수 있습니다.
 
 AEM에서는 메커니즘을 조합하여 페이지에 대한 반응형 레이아웃을 실현합니다.
 
-* **[레이아웃 컨테이너](/help/sites-cloud/authoring/features/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)** - 이 구성 요소는 응답형 그리드 내에 구성 요소를 추가 및 배치할 수 있도록 해주는 그리드 단락 시스템을 제공합니다.
+* **[레이아웃 컨테이너](/help/sites-cloud/authoring/page-editor/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)** - 이 구성 요소는 응답형 그리드 내에 구성 요소를 추가 및 배치할 수 있도록 해주는 그리드 단락 시스템을 제공합니다.
    * 페이지의 기본 parsys로 사용하거나 구성 요소 브라우저에서 작성자가 사용할 수 있습니다.
    * 기본값 **레이아웃 컨테이너** 구성 요소는 `/libs/wcm/foundation/components/responsivegrid`.
    * 레이아웃 컨테이너를 정의할 수 있습니다.
@@ -23,8 +23,8 @@ AEM에서는 메커니즘을 조합하여 페이지에 대한 반응형 레이�
       * 를 페이지의 기본 parsys로 사용합니다.
       * 구성 요소와 기본 parsys 모두로.
          * 레이아웃 컨테이너를 페이지의 표준으로 사용할 수 있으며, 사용자가 이 내에 레이아웃 컨테이너를 더 추가할 수 있습니다(예: 열 제어 달성).
-* **[레이아웃 모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md)** - 레이아웃 컨테이너를 페이지에 배치하면 **레이아웃** 응답 그리드 내에 컨텐츠를 배치하는 모드입니다.
-* **[에뮬레이터](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate)** - 구성 요소의 크기를 대화 방식으로 변경하여 디바이스/창 크기에 따라 레이아웃을 다시 정렬하는 응답형 웹 사이트를 만들고 편집할 수 있습니다. 그러면 사용자는 콘텐츠가 에뮬레이터를 사용하여 어떻게 렌더링될지 알 수 있습니다.
+* **[레이아웃 모드](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)** - 레이아웃 컨테이너를 페이지에 배치하면 **레이아웃** 응답 그리드 내에 컨텐츠를 배치하는 모드입니다.
+* **[에뮬레이터](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate)** - 구성 요소의 크기를 대화 방식으로 변경하여 디바이스/창 크기에 따라 레이아웃을 다시 정렬하는 응답형 웹 사이트를 만들고 편집할 수 있습니다. 그러면 사용자는 콘텐츠가 에뮬레이터를 사용하여 어떻게 렌더링될지 알 수 있습니다.
 
 이러한 응답형 격자 메커니즘을 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 
@@ -220,9 +220,9 @@ AEM에서는 LESS를 사용하여 필요한 CSS의 일부를 생성하지만 이
 
 작성자가 컨텐츠 페이지에 응답형 그리드를 더 추가할 수 있도록 하려면 페이지에 대해 레이아웃 컨테이너 구성 요소를 활성화해야 합니다. 다음 중 하나를 사용하여 이 작업을 수행할 수 있습니다.
 
-* **작성자 환경 사용** - [페이지 템플릿 편집](/help/sites-cloud/authoring/features/templates.md) 를 클릭하여 페이지에 대한 레이아웃 컨테이너를 활성화합니다.
+* **작성자 환경 사용** - [페이지 템플릿 편집](/help/sites-cloud/authoring/sites-console/templates.md) 를 클릭하여 페이지에 대한 레이아웃 컨테이너를 활성화합니다.
 * **구성 요소 정의** - 사용 `allowedComponent` 또는 구성 요소를 정의할 때 정적 포함이 있습니다.
 
 ### 레이아웃 컨테이너의 그리드 구성 {#configure-the-grid-of-the-layout-container}
 
-레이아웃 컨테이너의 각 특정 인스턴스에 사용할 수 있는 열 수를 구성할 수 있습니다 [페이지 템플릿을 편집합니다.](/help/sites-cloud/authoring/features/templates.md)
+레이아웃 컨테이너의 각 특정 인스턴스에 사용할 수 있는 열 수를 구성할 수 있습니다 [페이지 템플릿을 편집합니다.](/help/sites-cloud/authoring/sites-console/templates.md)

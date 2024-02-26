@@ -2,7 +2,7 @@
 title: 개인화 및 콘텐츠 타겟팅
 description: AEM으로 개인화되고 타겟팅된 콘텐츠를 만드는 방법 알아보기
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 89%
@@ -88,7 +88,7 @@ AEM의 타겟팅 모드를 사용하여 [타겟팅된 콘텐츠를 작성](/help
 
 경험을 구성하는 그룹화된 구성 요소 세트입니다.
 
-[경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) 은 콘텐츠와 정보(스타일링 등)로 구성되어 경험을 만듭니다. 페이지 작성 시 직접 사용할 수 있습니다. AEM 페이지의 하위 집합으로 생각할 수 있습니다. 이를 통해 콘텐츠 작성자가 Sites 페이지와 서드파티 시스템을 비롯한 여러 채널에서 콘텐츠를 재사용할 수 있습니다.
+[경험 조각](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) 은 콘텐츠와 정보(스타일링 등)로 구성되어 경험을 만듭니다. 페이지 작성 시 직접 사용할 수 있습니다. AEM 페이지의 하위 집합으로 생각할 수 있습니다. 이를 통해 콘텐츠 작성자가 Sites 페이지와 서드파티 시스템을 비롯한 여러 채널에서 콘텐츠를 재사용할 수 있습니다.
 
 개인화의 예로 제목, 이미지, 설명 및 콜 투 액션 버튼을 결합하여 티저 경험을 형성할 수 있습니다. 경험 조각 사용은 Adobe Target 개인화 사용의 핵심 부분입니다.
 

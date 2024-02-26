@@ -4,9 +4,9 @@ description: AEM의 강력한 Live Copy 및 다중 사이트 관리자 기능을
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '2698'
+source-wordcount: '2702'
 ht-degree: 96%
 
 ---
@@ -132,7 +132,7 @@ MSM은 적절한 콘솔에서 다양한 옵션을 사용하여 UI에서 직접 �
 
 * **참조** (**Sites**)
 
-   * [참조](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) 레일은 적절한 작업에 대한 액세스 권한과 함께 **Live Copy**&#x200B;에 대한 정보를 제공합니다.
+   * [참조](/help/sites-cloud/authoring/basic-handling.md#references) 레일은 적절한 작업에 대한 액세스 권한과 함께 **Live Copy**&#x200B;에 대한 정보를 제공합니다.
 
 * **Live Copy 개요** (**Sites**)
 

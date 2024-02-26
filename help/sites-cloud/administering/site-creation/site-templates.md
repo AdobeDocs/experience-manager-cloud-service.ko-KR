@@ -4,10 +4,10 @@ description: AEM 사이트 템플릿을 통해 사이트 구조 및 초기 콘�
 feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 84%
+source-wordcount: '556'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ AEM 사이트 템플릿을 통해 사이트 구조 및 초기 콘텐츠를 미�
 
 >[!NOTE]
 >
->AEM 사이트 템플릿을 [페이지 템플릿과 혼동하면 안 됩니다](/help/sites-cloud/authoring/features/templates.md). 사이트 템플릿은 사이트의 전반적인 구조를 정의하는 역할을 합니다. 페이지 템플릿은 개별 페이지의 구조 및 초기 콘텐츠를 정의합니다.
+>AEM 사이트 템플릿을 [페이지 템플릿과 혼동하면 안 됩니다](/help/sites-cloud/authoring/sites-console/templates.md). 사이트 템플릿은 사이트의 전반적인 구조를 정의하는 역할을 합니다. 페이지 템플릿은 개별 페이지의 구조 및 초기 콘텐츠를 정의합니다.
 >
 >AEM 사이트 템플릿을 [AEM 사이트 테마와 혼동하면 안 됩니다](site-themes.md). AEM 사이트 테마는 AEM 사이트에 대한 스타일 정보만 포함합니다. AEM 사이트 템플릿은 사이트 구조 및 최초 콘텐츠를 정의하며 [빠른 사이트 생성](create-site.md)을 위한 AEM 사이트 테마를 포함합니다.
 
@@ -37,11 +37,11 @@ AEM에 여러 템플릿을 추가한 다음, [사이트를 만드는](create-sit
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. 선택 **만들기** 화면 오른쪽 상단의 드롭다운 메뉴에서 을(를) 선택합니다. **템플릿의 사이트**.
+1. 화면 오른쪽 상단의 **만들기**&#x200B;를 선택한 다음 드롭다운 메뉴에서 **템플릿으로 사이트 생성**&#x200B;을 선택합니다.
 
    ![템플릿으로 사이트 생성](../assets/create-site-from-template.png)
 
-1. 사이트 생성 마법사에서 다음을 선택합니다 **가져오기** 왼쪽 열의 맨 위에 있습니다.
+1. 사이트 생성 마법사에서 왼쪽 열 상단에 있는 **가져오기**&#x200B;를 선택합니다.
 
    ![사이트 생성 마법사](../assets/site-creation-wizard.png)
 
@@ -61,7 +61,7 @@ AEM에 여러 템플릿을 추가한 다음, [사이트를 만드는](create-sit
 
 * `files`: UI 키트, XD 파일 및 기타 파일이 포함된 폴더
 * `previews`: 사이트 템플릿의 스크린샷이 포함된 폴더
-* `site`: 페이지 템플릿, 페이지 등 이 템플릿으로 만든 각 사이트에 대해 복사된 콘텐츠의 콘텐츠 패키지
+* `site`: 이 템플릿으로 생성된 각 사이트에 대해 복사된 콘텐츠의 콘텐츠 패키지입니다(예: 페이지 템플릿, 페이지 등).
 * `theme`: 의 소스 [사이트 테마](site-themes.md) 를 사용하여 CSS, JavaScript 등을 포함하여 사이트의 외관을 수정합니다.
 
 ## 표준 사이트 템플릿 {#standard-site-template}

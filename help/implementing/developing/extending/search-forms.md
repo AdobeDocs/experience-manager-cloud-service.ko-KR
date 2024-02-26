@@ -2,16 +2,16 @@
 title: 검색 양식 구성
 description: Adobe Experience Manager as a Cloud Service에 대해 Forms 검색을 구성하는 중입니다.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
-source-wordcount: '2033'
-ht-degree: 16%
+source-wordcount: '2036'
+ht-degree: 9%
 
 ---
 
 # 검색 양식 구성 {#configuring-search-forms}
 
-Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites-cloud/authoring/getting-started/search.md) 메커니즘.
+Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites-cloud/authoring/search.md) 메커니즘.
 
 이와 함께 콘텐츠를 필터링하는 데 도움이 되는 사전 정의된 옵션 세트도 있습니다. 여기에는 다음과 같이 사전 정의된 패싯이 포함됩니다. **수정한 날짜**, **게시 상태**, 또는 **라이브 카피 상태** 필요한 리소스로 신속하게 드릴다운할 수 있도록 지원합니다.
 
@@ -19,9 +19,9 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
 
 이러한 목표를 함께 사용하면 다음 위치에서 빠르고 쉽게 콘텐츠를 찾을 수 있습니다.
 
-* [검색 및 필터링](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
-* [레일 선택기](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
-* 다음 [에셋 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) (페이지 편집 시)
+* [검색 및 필터링](/help/sites-cloud/authoring/search.md#search-and-filter)
+* [레일 선택기](/help/sites-cloud/authoring/basic-handling.md#rail-selector)
+* 다음 [에셋 브라우저](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) (페이지 편집 시)
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
 
 * **도구**
    * **일반**
-      * **검색 양식**
+      * **Forms 검색**
 
 ## 기본 Forms {#default-forms}
 
@@ -43,7 +43,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
 
 사용할 수 있는 기본 구성(알파벳순으로 나열됨)은 다음과 같습니다.
 
-* **자산 관리자 검색 레일**
+* **에셋 관리자 검색 레일**
 * **페이지 편집기(문서 검색)**
 * **페이지 편집기(경험 조각 검색)**
 * **페이지 편집기(이미지 검색)**
@@ -58,7 +58,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
 * **사이트 관리자 검색 레일**
 * **코드 조각 관리자 검색 레일**
 * **Stock 관리자 검색 레일**
-* **컨텐츠 조각 모델 검색 레일**
+* **콘텐츠 조각 모델 검색 레일**
 * **프로젝트 관리자 검색 레일**
 * **프로젝트 번역 검색 레일**
 
@@ -105,7 +105,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
    <td>작성자에 따라 검색합니다.</td>
    <td>
     <ul>
-     <li>자리 표시자</li>
+     <li>플레이스홀더</li>
      <li>속성 이름*</li>
      <li>설명</li>
     </ul> 
@@ -117,7 +117,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
    <td>
     <ul>
      <li>필드 레이블</li>
-     <li>자리 표시자</li>
+     <li>플레이스홀더</li>
      <li>설명</li>
     </ul> 
    </td>
@@ -138,7 +138,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
    <td>작성자는 특정 구성 요소가 있는 페이지를 검색/필터링할 수 있습니다. 예를 들어 이미지 갤러리가 있습니다.<br /> </td>
    <td>
     <ul>
-     <li>자리 표시자</li>
+     <li>플레이스홀더</li>
      <li>속성 이름*</li>
      <li>속성 깊이</li>
      <li>설명</li>
@@ -150,7 +150,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
    <td>
     <ul>
      <li>필드 레이블</li>
-     <li>자리 표시자</li>
+     <li>플레이스홀더</li>
      <li>속성 이름*</li>
      <li>범위 텍스트(시작)*</li>
      <li>범위 텍스트(종료)*</li>
@@ -195,7 +195,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
    <td>전체 텍스트 검색에 대한 검색 조건자입니다. "jcr:contains" 연산자와 매핑됩니다.</td>
    <td>
     <ul>
-     <li>자리 표시자</li>
+     <li>플레이스홀더</li>
      <li>속성 이름</li>
      <li>설명</li>
     </ul> </td>
@@ -245,7 +245,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
    <td>
     <ul>
      <li>필드 레이블</li>
-     <li>자리 표시자</li>
+     <li>플레이스홀더</li>
      <li>속성 이름*</li>
      <li>구분 기호 지원</li>
      <li>입력 구분 기호</li>
@@ -268,7 +268,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
     </ul> </td>
   </tr>
   <tr>
-   <td>옵션 속성</td>
+   <td>Options 속성</td>
    <td>하나 이상의 옵션 속성을 검색합니다.</td>
    <td>
     <ul>
@@ -286,7 +286,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
    <td>
     <ul>
      <li>필드 레이블</li>
-     <li>속성 이름 게시*</li>
+     <li>게시 속성 이름*</li>
      <li>잠긴 페이지 속성 이름*</li>
      <li>설명</li>
     </ul> </td>
@@ -306,7 +306,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
    <td>미리 정의된 루트 경로에서 검색할 경로 브라우저를 제공합니다.</td>
    <td>
     <ul>
-     <li>자리 표시자</li>
+     <li>플레이스홀더</li>
      <li>루트 경로</li>
      <li>설명</li>
     </ul> 
@@ -328,7 +328,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
    <td>
     <ul>
      <li>필드 레이블</li>
-     <li>자리 표시자</li>
+     <li>플레이스홀더</li>
      <li>속성 이름</li>
      <li>부분 검색</li>
      <li>대소문자 구분 안 함</li>
@@ -405,7 +405,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
    <td>
     <ul>
      <li>필드 레이블</li>
-     <li>자리 표시자</li>
+     <li>플레이스홀더</li>
      <li>속성 이름*</li>
      <li>일치하는 모든 태그 옵션 표시</li>
      <li>루트 태그 경로</li>
@@ -417,7 +417,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
    <td>선택한 템플릿에 따라 검색합니다.</td>
    <td>
     <ul>
-     <li>자리 표시자</li>
+     <li>플레이스홀더</li>
      <li>속성 이름*</li>
      <li>설명</li>
     </ul> 

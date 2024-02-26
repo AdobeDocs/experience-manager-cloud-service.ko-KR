@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
+source-git-commit: 3896dd657acdfc9feca1d3f624512dc23da084d4
 workflow-type: tm+mt
-source-wordcount: '4692'
+source-wordcount: '4713'
 ht-degree: 98%
 
 ---
@@ -264,42 +264,50 @@ ht-degree: 98%
 + Sites {#sites}
    + [AEM Cloud Service의 AEM Sites에 대한 주요 변경 사항](/help/sites-cloud/sites-cloud-changes.md)
    + 작성 {#authoring}
-      + 시작하기 {#getting-started}
-         + [페이지 작성에 대한 빠른 시작 안내서](/help/sites-cloud/authoring/getting-started/quick-start.md)
-         + [작성 개념](/help/sites-cloud/authoring/getting-started/concepts.md)
-         + [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md)
-         + [검색](/help/sites-cloud/authoring/getting-started/search.md)
-         + [계정 환경 구성](/help/sites-cloud/authoring/getting-started/account-environment.md)
-         + [받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)
-         + [키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-      + [Headless 콘텐츠 작성 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
-      + 작성 기본 사항 {#fundamentals}
-         + [환경 및 도구](/help/sites-cloud/authoring/fundamentals/environment-tools.md)
-         + [페이지 주석 추가](/help/sites-cloud/authoring/fundamentals/annotations.md)
-         + [새 사이트 생성](/help/sites-cloud/authoring/fundamentals/create-site.md)
-         + [페이지 생성 및 구성](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
-         + [페이지 콘텐츠 편집](/help/sites-cloud/authoring/fundamentals/editing-content.md)
-         + [리치 텍스트 편집기](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
-         + [페이지 속성](/help/sites-cloud/authoring/fundamentals/page-properties.md)
-         + [콘텐츠 미리보기](/help/sites-cloud/authoring/fundamentals/previewing-content.md)
-         + [페이지 게시](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)
-         + [콘텐츠 조각](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-         + [경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)
-         + [CSV로 내보내기](/help/sites-cloud/authoring/fundamentals/csv-export.md)
-         + [구성 요소](/help/sites-cloud/authoring/fundamentals/components.md)
-         + [모바일 디바이스용 작성](/help/sites-cloud/authoring/fundamentals/mobile.md)
-         + [액세스 가능한 콘텐츠 제작(WCAG 2.1 적합성)](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
-         + [문제 해결](/help/sites-cloud/authoring/fundamentals/troubleshooting.md)
-         + [키보드 단축키](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-      + 작성 기능 {#features}
-         + [페이지 템플릿](/help/sites-cloud/authoring/features/templates.md)
-         + [스타일 시스템](/help/sites-cloud/authoring/features/style-system.md)
-         + [페이지 버전](/help/sites-cloud/authoring/features/page-versions.md)
-         + [페이지 비교](/help/sites-cloud/authoring/features/page-diff.md)
-         + [구성 요소 콘솔](/help/sites-cloud/authoring/features/components-console.md)
-         + [반응형 레이아웃](/help/sites-cloud/authoring/features/responsive-layout.md)
-         + [태그 사용](/help/sites-cloud/authoring/features/tags.md)
-         + [점진적 웹 앱 기능 활성화](/help/sites-cloud/authoring/features/enable-pwa.md)
+      + [페이지 작성에 대한 빠른 시작 안내서](/help/sites-cloud/authoring/quick-start.md)
+      + [기본 처리](/help/sites-cloud/authoring/basic-handling.md)
+      + [작성 및 게시](/help/sites-cloud/authoring/author-publish.md)
+      + [작성 방법](/help/sites-cloud/authoring/authoring-methods.md)
+      + [검색](/help/sites-cloud/authoring/search.md)
+      + [계정 환경 구성](/help/sites-cloud/authoring/account-environment.md)
+      + [받은 편지함](/help/sites-cloud/authoring/inbox.md)
+      + [구성 요소 콘솔](/help/sites-cloud/authoring/components-console.md)
+      + [경로 선택](/help/sites-cloud/authoring/path-selection.md)
+      + [문제 해결](/help/sites-cloud/authoring/troubleshooting.md)
+      + 사이트 콘솔 {#sites-console}
+         + [사이트 콘솔](/help/sites-cloud/authoring/sites-console/introduction.md)
+         + [콘솔 사이드 패널](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
+         + [새 사이트 생성](/help/sites-cloud/authoring/sites-console/create-site.md)
+         + [페이지 구성](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+         + [페이지 생성](/help/sites-cloud/authoring/sites-console/creating-pages.md)
+         + [페이지 관리](/help/sites-cloud/authoring/sites-console/managing-pages.md)
+         + [페이지 속성](/help/sites-cloud/authoring/sites-console/page-properties.md)
+         + [페이지 미리보기](/help/sites-cloud/authoring/sites-console/previewing-content.md)
+         + [페이지 게시](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
+         + [페이지 템플릿](/help/sites-cloud/authoring/sites-console/templates.md)
+         + [페이지 버전](/help/sites-cloud/authoring/sites-console/page-versions.md)
+         + [페이지 비교](/help/sites-cloud/authoring/sites-console/page-diff.md)
+         + [태그 사용](/help/sites-cloud/authoring/sites-console/tags.md)
+         + [점진적 웹 앱 기능 활성화](/help/sites-cloud/authoring/sites-console/enable-pwa.md)
+         + [키보드 단축키](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)
+         + [CSV로 내보내기](/help/sites-cloud/authoring/sites-console/csv-export.md)
+      + 페이지 편집기 {#page-editor}
+         + [페이지 편집기](/help/sites-cloud/authoring/page-editor/introduction.md)
+         + [편집기 사이드 패널](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
+         + [페이지 편집](/help/sites-cloud/authoring/page-editor/edit-content.md)
+         + [페이지 주석 추가](/help/sites-cloud/authoring/page-editor/annotations.md)
+         + [리치 텍스트 편집기](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
+         + [반응형 레이아웃](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
+         + [구성 요소](/help/sites-cloud/authoring/page-editor/components.md)
+         + [모바일 디바이스용 작성](/help/sites-cloud/authoring/page-editor/mobile.md)
+         + [액세스 가능한 콘텐츠 제작(WCAG 2.1 적합성)](/help/sites-cloud/authoring/page-editor/accessible-content.md)
+         + [키보드 단축키](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
+         + [스타일 시스템](/help/sites-cloud/authoring/page-editor/style-system.md)
+         + [다시 실행 취소 제한 사항](/help/sites-cloud/authoring/page-editor/undo-redo.md)
+      + 조각 {#fragments}
+         + [콘텐츠 조각](/help/sites-cloud/authoring/fragments/content-fragments.md)
+         + [경험 조각](/help/sites-cloud/authoring/fragments/experience-fragments.md)
+         + [Headless 콘텐츠 작성 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
       + 프로젝트 {#projects}
          + [프로젝트를 사용하여 작업](/help/sites-cloud/authoring/projects/overview.md)
          + [프로젝트 관리](/help/sites-cloud/authoring/projects/managing.md)
@@ -345,6 +353,7 @@ ht-degree: 98%
          + [프론트엔드 파이프라인 활성화](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
          + [Site Rail 사용](/help/sites-cloud/administering/site-creation/site-rail.md)
          + [사이트 템플릿](/help/sites-cloud/administering/site-creation/site-templates.md)
+         + [반응형 레이아웃](/help/sites-cloud/administering/responsive-layout.md)
          + [사이트 테마](/help/sites-cloud/administering/site-creation/site-themes.md)
          + AEM 빠른 사이트 생성 여정 {#quick-site}
             + [AEM 빠른 사이트 생성 이해](/help/journey-sites/quick-site/overview.md)
@@ -998,6 +1007,7 @@ ht-degree: 98%
          + [페이지 비교](/help/implementing/developing/introduction/page-diff.md)
          + [편집기 제한 사항](/help/implementing/developing/introduction/editor-limitations.md)
          + [이름 지정 규칙](/help/implementing/developing/introduction/naming-conventions.md)
+         + [반응형 디자인](/help/implementing/developing/introduction/responsive-design.md)
          + 구성 요소 및 템플릿 {#components-templates}
             + [구성 요소 개요](/help/implementing/developing/components/overview.md)
             + [템플릿](/help/implementing/developing/components/templates.md)

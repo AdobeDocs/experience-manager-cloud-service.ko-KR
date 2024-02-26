@@ -2,9 +2,9 @@
 title: Headless 콘텐츠 번역
 description: 번역 커넥터를 사용하여 Headless 콘텐츠를 번역합니다.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
-source-wordcount: '2119'
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
+source-wordcount: '2120'
 ht-degree: 100%
 
 ---
@@ -249,4 +249,4 @@ Headless 번역 여정의 한 부분을 완료했으므로,
 다음 문서인 [번역된 콘텐츠 게시](publish-content.md)를 검토하여 Headless 번역 여정의 다음 부분으로 넘어가는 것이 좋습니다. 다음은 이 문서에 나열된 몇 가지 개념을 자세히 알아보는 추가적인 옵션 리소스이며, 이들 리소스를 Headless 여정에서 계속 사용할 필요는 없습니다.
 
 * [번역 프로젝트 관리](/help/sites-cloud/administering/translation/managing-projects.md) - 인간 번역 워크플로 및 다국어 프로젝트와 같은 번역 프로젝트 및 추가 기능의 세부 정보에 대해 알아봅니다.
-* [작성 환경 및 도구](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) - AEM은 강력한 경로 브라우저를 포함하여 콘텐츠 구성 및 편집을 위한 다양한 메커니즘을 제공합니다.
+* [작성 환경 및 도구](/help/sites-cloud/authoring/path-selection.md#path-selection) - AEM은 강력한 경로 브라우저를 포함하여 콘텐츠 구성 및 편집을 위한 다양한 메커니즘을 제공합니다.

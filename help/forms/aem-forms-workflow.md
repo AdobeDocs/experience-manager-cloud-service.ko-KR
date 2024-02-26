@@ -4,7 +4,7 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: 'AEM Forms 워크플로를 사용하여 비즈니스 프로세스 워크플로를 자동화하고 신속하게 구축할 수 있습니다. 예: 검토 및 승인, PDF 생성, Adobe Sign 워크플로.'
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '2373'
 ht-degree: 1%
@@ -165,7 +165,7 @@ AEM은 제공된 워크플로우 단계를 사용하여 워크플로우 모델�
    <td>선택 <a href="prepopulate-adaptive-form-fields.md#aem-forms-custom-prefill-service" target="_blank">미리 채우기 서비스</a> 적응형 양식용.<br /> </td>
   </tr>
   <tr>
-   <td>워크플로우 모델</td>
+   <td>워크플로 모델</td>
    <td>선택 <a href="aem-forms-workflow.md#create-a-workflow-model">워크플로 모델</a> 응용 프로그램용. 워크플로우 모델은 비즈니스 프로세스의 로직과 플로우로 구성됩니다. </td>
   </tr>
   <tr>
@@ -197,7 +197,7 @@ AEM은 제공된 워크플로우 단계를 사용하여 워크플로우 모델�
 
 ### AEM 받은 편지함에서 애플리케이션 제출 {#inbox}
 
-만든 워크플로우 응용 프로그램은 받은 편지함에서 응용 프로그램으로 사용할 수 있습니다. 의 멤버인 사용자 [!DNL workflow-users] 그룹은 연결된 워크플로우를 트리거하는 애플리케이션을 작성하고 제출할 수 있습니다. AEM 받은 편지함을 사용하여 응용 프로그램을 제출하고 작업을 관리하는 방법에 대한 자세한 내용은 [AEM 받은 편지함에서 Forms 애플리케이션 및 작업 관리](manage-applications-inbox.md).
+만든 워크플로우 응용 프로그램은 받은 편지함에서 응용 프로그램으로 사용할 수 있습니다. 의 멤버인 사용자 [!DNL workflow-users] 그룹은 연결된 워크플로우를 트리거하는 애플리케이션을 작성하고 제출할 수 있습니다. AEM 받은 편지함을 사용하여 응용 프로그램을 제출하고 작업을 관리하는 방법에 대한 자세한 내용은 [AEM 받은 편지함에서 Forms 애플리케이션 및 작업 관리](manage-applications-/help/sites-cloud/authoring/inbox.md).
 
 <!-- ### Submitting an application from [!DNL AEM Forms] App {#afa}
 

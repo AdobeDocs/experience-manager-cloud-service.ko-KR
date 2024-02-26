@@ -2,10 +2,10 @@
 title: 경험 조각 개요
 description: Adobe Experience Manager as a Cloud Service 경험 조각을 확장합니다.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 29d8d08899bb60b2bf3027ed32dbcdca3a73e671
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '1646'
-ht-degree: 1%
+source-wordcount: '1642'
+ht-degree: 0%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 ## 기본 사항 {#the-basics}
 
-An [경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) 는 페이지 내에서 참조할 수 있는 컨텐츠 및 레이아웃을 포함한 하나 이상의 구성 요소 그룹입니다.
+An [경험 조각](/help/sites-cloud/authoring/fragments/content-fragments.md) 는 페이지 내에서 참조할 수 있는 컨텐츠 및 레이아웃을 포함한 하나 이상의 구성 요소 그룹입니다.
 
 경험 조각 기본, 변형 또는 두 가지 모두 는 다음을 사용합니다.
 
@@ -80,7 +80,7 @@ Adobe은 오버레이를 사용하여 재작성기를 구성할 것을 권장합
 
 에서 감지한 경험 조각 템플릿을 만들려면 **경험 조각 만들기** 마법사에서는 다음 규칙 세트 중 하나를 따라야 합니다.
 
-1. 모두:
+1. 두 가지 모두:
 
    1. 템플릿의 리소스 유형(초기 노드)은 다음 항목에서 상속해야 합니다.
       `cq/experience-fragments/components/xfpage`
@@ -89,7 +89,7 @@ Adobe은 오버레이를 사용하여 재작성기를 구성할 것을 권장합
       `experience-fragments`
 이 패턴을 통해 사용자는 /content/experience-fragments에서 경험 조각을 다음과 같이 만들 수 있습니다. `cq:allowedTemplates` 이 폴더의 속성에는 다음으로 시작하는 이름이 있는 모든 템플릿이 포함됩니다. `experience-fragment`. 고객은 이 속성을 업데이트하여 자체 명명 구성표 또는 템플릿 위치를 포함할 수 있습니다.
 
-1. [허용된 템플릿](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) 경험 조각 콘솔에서 구성할 수 있습니다.
+1. [허용된 템플릿](/help/sites-cloud/authoring/fragments/content-fragments.md#configure-allowed-templates-folder) 경험 조각 콘솔에서 구성할 수 있습니다.
 
 <!--
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
@@ -112,7 +112,7 @@ Adobe은 오버레이를 사용하여 재작성기를 구성할 것을 권장합
 The only additional configuration is to ensure that the components are [allowed on the template, this is achieved with the Content Policy](/help/sites-developing/page-templates-editable.md#content-policies).
 -->
 
-## 경험 조각 링크 재작성자 공급자 - HTML {#the-experience-fragment-link-rewriter-provider-html}
+## 경험 조각 링크 재작성기 공급자 - HTML {#the-experience-fragment-link-rewriter-provider-html}
 
 AEM에서는 경험 조각을 만들 수 있습니다. 경험 조각:
 
@@ -204,7 +204,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 이 서비스는 다양한 링크에 액세스할 수 있도록 경험 조각을 Target으로 내보내기 재작성에 연결하는 데 사용됩니다.
 
-예, `ComponentService`:
+예를 들어, `ComponentService`:
 
 ```java
 import com.adobe.cq.xf.ExperienceFragmentLinkRewriterProvider;

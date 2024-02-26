@@ -2,10 +2,10 @@
 title: 컨텐츠 조각 모델(자산 - 컨텐츠 조각)
 description: 콘텐츠 조각 모델이 AEM에서 Headless 콘텐츠의 기반 역할을 하여 구조화된 콘텐츠로 콘텐츠 조각을 만들 수 있는 방법에 대해 알아봅니다.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '3011'
-ht-degree: 89%
+ht-degree: 87%
 
 ---
 
@@ -78,9 +78,9 @@ AEM의 콘텐츠 조각 모델은 의 콘텐츠 구조를 정의합니다. [콘�
 
         >[!CAUTION]
         >
-        >데이터 유형의 **속성 이름** 속성을 수동으로 업데이트할 때에는 이름에 A-Z, a-z, 0-9 및 밑줄(_)만 포함해야 합니다.
+        데이터 유형의 **속성 이름** 속성을 수동으로 업데이트할 때에는 이름에 A-Z, a-z, 0-9 및 밑줄(_)만 포함해야 합니다.
         >
-        >이전 버전의 AEM에서 만든 모델에 잘못된 문자가 포함되어 있는 경우, 해당 문자를 제거하거나 업데이트하십시오.
+        이전 버전의 AEM에서 만든 모델에 잘못된 문자가 포함되어 있는 경우, 해당 문자를 제거하거나 업데이트하십시오.
 
      예:
 
@@ -135,7 +135,7 @@ AEM의 콘텐츠 조각 모델은 의 콘텐츠 구조를 정의합니다. [콘�
 조각 편집기에서 각 인스턴스는 탭으로 표시됩니다.
      >[!NOTE]
      >
-     >이 데이터 유형은 순전히 서식에 사용되며 AEM GraphQL 스키마에서는 무시됩니다.
+     이 데이터 유형은 순전히 서식에 사용되며 AEM GraphQL 스키마에서는 무시됩니다.
 
 ## 속성 {#properties}
 
@@ -147,7 +147,7 @@ AEM의 콘텐츠 조각 모델은 의 콘텐츠 구조를 정의합니다. [콘�
 
   >[!CAUTION]
   >
-  >이전 버전의 AEM에서 만든 모델에 잘못된 문자가 포함되어 있는 경우, 해당 문자를 제거하거나 업데이트하십시오.
+  이전 버전의 AEM에서 만든 모델에 잘못된 문자가 포함되어 있는 경우, 해당 문자를 제거하거나 업데이트하십시오.
 
 * **렌더링 형식**
 조각의 필드를 구현하거나 렌더링하기 위한 다양한 옵션입니다. 종종 이 속성을 사용하여 작성자에게 필드의 단일 인스턴스가 표시되는지 또는 작성자가 여러 인스턴스를 만들 수 있는지를 정의할 수 있습니다. 날짜 **다중 필드** 최소 및 최대 항목 수를 정의할 수 있는 데 사용됩니다. 참조 [유효성 검사](#validation) 을 참조하십시오.
@@ -177,15 +177,15 @@ AEM의 콘텐츠 조각 모델은 의 콘텐츠 구조를 정의합니다. [콘�
 
   >[!NOTE]
   >
-  >언어 루트별로 고유성이 보장됩니다.
+  언어 루트별로 고유성이 보장됩니다.
 
   >[!NOTE]
   >
-  >변형은 동일한 조각의 변형과 동일한 *고유* 값을 가질 수 있지만, 다른 조각의 변형에 사용되는 것과 동일한 값을 가질 수는 없습니다.
+  변형은 동일한 조각의 변형과 동일한 *고유* 값을 가질 수 있지만, 다른 조각의 변형에 사용되는 것과 동일한 값을 가질 수는 없습니다.
 
   >[!CAUTION]
   >
-  >MSM(콘텐츠 조각의 복사본 생성)을 사용하려면 다음을 수행합니다. **고유** 해당 콘텐츠 조각 모델에 사용되는 모든 데이터 유형에서 제약 조건을 제거해야 합니다.
+  MSM(콘텐츠 조각의 복사본 생성)을 사용하려면 다음을 수행합니다. **고유** 해당 콘텐츠 조각 모델에 사용되는 모든 데이터 유형에서 제약 조건을 제거해야 합니다.
 
 * 특정 데이터 유형 및 그 속성에 대한 자세한 내용은 **[콘텐츠 참조](#content-reference)**&#x200B;를 참조하십시오.
 
@@ -237,18 +237,16 @@ AEM의 콘텐츠 조각 모델은 의 콘텐츠 구조를 정의합니다. [콘�
    * 구조화된 데이터를 포함/검색할 수 있습니다.
      >[!NOTE]
      >
-     >이 방법은 특히 [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠를 게재](/help/assets/content-fragments/content-fragments-graphql.md)할 때 함께 사용할 수 있습니다.
+     이 방법은 특히 [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠를 게재](/help/assets/content-fragments/content-fragments-graphql.md)할 때 함께 사용할 수 있습니다.
    * 최종 조각에서 하나 이상의 참조에 대해 구성할 수 있습니다.
 
 >[!NOTE]
 >
->AEM은 다음에 대한 재발 방지 기능을 제공합니다.
+AEM은 다음에 대한 재발 방지 기능을 제공합니다.
 >
->* 콘텐츠 참조
->  따라서 사용자가 현재 조각에 대한 참조를 추가할 수 없습니다. 이로 인해 빈 조각 참조 선택기 대화 상자가 나타날 수 있습니다.
+* 컨텐츠 참조 사용자가 현재 조각에 대한 참조를 추가할 수 없습니다. 이로 인해 빈 조각 참조 선택기 대화 상자가 나타날 수 있습니다.
 >
->* GraphQL의 조각 참조
->  서로 참조하는 여러 콘텐츠 조각을 반환하는 복합 쿼리를 만들면 첫 번째 발생 시 null을 반환합니다.
+* GraphQL의 조각 참조 서로 참조하는 여러 콘텐츠 조각을 반환하는 딥 쿼리를 만들면 처음 발생할 때 null을 반환합니다.
 
 ### 콘텐츠 참조 {#content-reference}
 
@@ -290,7 +288,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->이는 특히 [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠를 게재](/help/assets/content-fragments/content-fragments-graphql.md)할 때 함께 사용할 수 있습니다.
+이는 특히 [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠를 게재](/help/assets/content-fragments/content-fragments-graphql.md)할 때 함께 사용할 수 있습니다.
 
 표준 속성 외에 다음을 정의할 수 있습니다.
 
@@ -316,9 +314,9 @@ type CompanyModel {
 
 >[!NOTE]
 >
->재발 방지 메커니즘을 사용할 수 있습니다. 이는 사용자가 조각 참조에서 현재 콘텐츠 조각을 선택할 수 없도록 합니다. 이로 인해 빈 조각 참조 선택기 대화 상자가 나타날 수 있습니다.
+재발 방지 메커니즘을 사용할 수 있습니다. 이는 사용자가 조각 참조에서 현재 콘텐츠 조각을 선택할 수 없도록 합니다. 이로 인해 빈 조각 참조 선택기 대화 상자가 나타날 수 있습니다.
 >
->또한 GraphQL에는 조각 참조에 대한 재발 방지 기능이 있습니다. 서로 참조하는 두 개의 콘텐츠 조각 간에 복합 쿼리를 만들면 null을 반환합니다.
+또한 GraphQL에는 조각 참조에 대한 재발 방지 기능이 있습니다. 서로 참조하는 두 개의 콘텐츠 조각 간에 복합 쿼리를 만들면 null을 반환합니다.
 
 ## 콘텐츠 조각 모델 - 속성 {#content-fragment-model-properties}
 
@@ -333,7 +331,7 @@ type CompanyModel {
 
      >[!NOTE]
      >
-     >다음에서만 사용됩니다. *신규* 콘텐츠 조각 편집기. 다음을 참조하십시오 [컨텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) 추가 정보.
+     다음에서만 사용됩니다. *신규* 콘텐츠 조각 편집기. 다음을 참조하십시오 [컨텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) 추가 정보.
 
 
 ## 콘텐츠 조각 모델 활성화 또는 비활성화 {#enabling-disabling-a-content-fragment-model}
@@ -383,7 +381,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->이 메커니즘은 페이지의 고급 속성에서 페이지 및 그 하위 페이지에 대해 [페이지 템플릿을 허용](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author)하는 것과 유사합니다.
+이 메커니즘은 페이지의 고급 속성에서 페이지 및 그 하위 페이지에 대해 [페이지 템플릿을 허용](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author)하는 것과 유사합니다.
 
 **허용되는 콘텐츠 조각 모델**&#x200B;에 대해 **정책**&#x200B;을 구성하려면 다음 작업을 수행합니다.
 
@@ -417,7 +415,7 @@ type CompanyModel {
 
 >[!CAUTION]
 >
->콘텐츠 조각 모델을 삭제하면 종속된 조각이 영향을 받을 수 있습니다.
+콘텐츠 조각 모델을 삭제하면 종속된 조각이 영향을 받을 수 있습니다.
 
 콘텐츠 조각 모델을 삭제하려면
 
@@ -428,7 +426,7 @@ type CompanyModel {
 
    >[!NOTE]
    >
-   >참조되는 모델의 경우, 경고가 표시됩니다. 적절하게 조치하십시오.
+   참조되는 모델의 경우, 경고가 표시됩니다. 적절하게 조치하십시오.
 
 ## 콘텐츠 조각 모델 게시 {#publishing-a-content-fragment-model}
 
@@ -444,7 +442,7 @@ type CompanyModel {
 
    >[!NOTE]
    >
-   >모델이 아직 게시되지 않은 콘텐츠 조각을 게시하는 경우, 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
+   모델이 아직 게시되지 않은 콘텐츠 조각을 게시하는 경우, 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
 
 ## 콘텐츠 조각 모델 게시 취소 {#unpublishing-a-content-fragment-model}
 
@@ -462,7 +460,7 @@ type CompanyModel {
 
 ![사용 중인 모델 게시 취소 시 표시되는 콘텐츠 조각 모델 오류 메시지](assets/cfm-model-unpublish-error.png)
 
-이 메시지는 [참조](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) 패널을 확인하여 자세히 조사하도록 제안합니다.
+이 메시지는 [참조](/help/sites-cloud/authoring/basic-handling.md#references) 패널을 확인하여 자세히 조사하도록 제안합니다.
 
 ![참조의 콘텐츠 조각 모델](assets/cfm-model-references.png)
 
@@ -532,6 +530,6 @@ type CompanyModel {
 
      >[!NOTE]
      >
-     >맨 위에는 여전히 경고가 표시될 수 있지만, 이는 모델이 기존 콘텐츠 조각에서 이미 사용 중임을 의미합니다.
+     맨 위에는 여전히 경고가 표시될 수 있지만, 이는 모델이 기존 콘텐츠 조각에서 이미 사용 중임을 의미합니다.
 
    * **취소**&#x200B;를 선택하면 콘솔로 돌아갑니다.

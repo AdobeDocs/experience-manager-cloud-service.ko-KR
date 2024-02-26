@@ -3,7 +3,7 @@ title: 적응형 Forms에서 테마를 만들고 사용하려면 어떻게 해�
 description: 테마를 사용하여 스타일을 지정하고 핵심 구성 요소를 사용하여 적응형 양식에 시각적 ID를 제공할 수 있습니다. 여러 적응형 Forms에서 테마를 공유할 수 있습니다.
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
 source-wordcount: '2610'
 ht-degree: 5%
@@ -348,7 +348,7 @@ AEM Forms as a Cloud Service 인스턴스에 호스팅된 적응형 양식에 �
 
 ##### 5.3 프론트엔드 파이프라인 실행 {#run-a-frontend-pipeline}
 
-테마는 [프론트엔드 파이프라인.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html)을 따르지 않는 경우입니다. 테마를 배포하려면 다음 단계를 수행하십시오.
+테마는 [프론트엔드 파이프라인.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). 테마를 배포하려면 다음 단계를 수행하십시오.
 
 1. AEM Cloud Manager 저장소에 로그인합니다.
 1. 클릭 **[!UICONTROL 추가]** 단추 **[!UICONTROL 파이프라인]** 섹션.
@@ -415,7 +415,7 @@ AEM Forms as a Cloud Service 인스턴스에 호스팅된 적응형 양식에 �
 
 ## See next
 
-* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
 * [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
@@ -431,7 +431,7 @@ AEM Forms as a Cloud Service 인스턴스에 호스팅된 적응형 양식에 �
 ## 추가 참조 {#see-also}
 
 {{see-also}}
-* [다양한 화면 크기 및 장치 유형에 대한 양식 레이아웃 설정](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [다양한 화면 크기 및 장치 유형에 대한 양식 레이아웃 설정](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [적응형 Forms(핵심 구성 요소)를 위한 기록 문서 생성](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [반복 가능한 섹션이 포함된 적응형 Forms 만들기](/help/forms/create-forms-repeatable-sections.md)
 * [샘플 테마 템플릿 및 양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)

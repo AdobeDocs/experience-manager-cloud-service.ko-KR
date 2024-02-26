@@ -2,9 +2,9 @@
 title: SPA의 구성 요소 합성
 description: AEM 단일 페이지 애플리케이션(SPA) 편집기와 함께 작동하는 다른 구성 요소로 구성된 구성 요소인 복합 구성 요소를 직접 만드는 방법을 알아봅니다.
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '782'
 ht-degree: 1%
 
 ---
@@ -156,7 +156,7 @@ function Home() {
     itemPath='root/responsivegrid' />
    ```
 
-1. 생성된 항목 추가 `wknd-spa/components/imagecard` 구성 요소를 컨테이너 구성 요소에 대해 허용된 구성 요소로 변환 [페이지 템플릿에서](/help/sites-cloud/authoring/features/templates.md).
+1. 생성된 항목 추가 `wknd-spa/components/imagecard` 구성 요소를 컨테이너 구성 요소에 대해 허용된 구성 요소로 변환 [페이지 템플릿에서](/help/sites-cloud/authoring/sites-console/templates.md).
 
 이제 `imagecard` 구성 요소를 AEM 편집기의 컨테이너에 직접 추가할 수 있습니다.
 

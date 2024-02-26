@@ -4,10 +4,10 @@ description: 콘솔 및 편집기에서 AEM 콘텐츠 조각을 관리하고, He
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2620'
+ht-degree: 87%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 >다음과 같은 경우 콘텐츠 조각을 사용할 수 있습니다.
 >
 >* [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠 게재](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md) 시,
->* 페이지 작성 시([콘텐츠 조각을 사용하여 페이지 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 참조).
+>* 페이지 작성 시([콘텐츠 조각을 사용하여 페이지 작성](/help/sites-cloud/authoring/fragments/content-fragments.md) 참조).
 
 >[!NOTE]
 >
@@ -345,7 +345,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->또한 [조각을 사용하는 페이지를 게시](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)하면 해당 조각은 페이지 참조에 나열됩니다.
+>또한 [조각을 사용하는 페이지를 게시](/help/sites-cloud/authoring/fragments/content-fragments.md#publishing)하면 해당 조각은 페이지 참조에 나열됩니다.
 
 ## 조각 게시 취소 {#unpublishing-a-fragment}
 

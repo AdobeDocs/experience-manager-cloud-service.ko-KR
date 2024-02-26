@@ -2,8 +2,8 @@
 title: 작성 기본 사항에 대해 알아보기
 description: 콘텐츠 조각을 사용하여 Headless CMS용 콘텐츠를 작성하는 개념 및 메커니즘에 대해 알아봅니다.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
-workflow-type: ht
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 100%
 
@@ -267,21 +267,21 @@ You can view additional information about items using the Rail Selector. This al
 
 ## 추가 리소스 {#additional-resources}
 
-* [작성 개념](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [작성 개념](/help/sites-cloud/authoring/author-publish.md)
 
-* [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md) - 이 페이지는 주로 **Sites** 콘솔을 기반으로 하지만 여러/대부분의 기능은 **자산** 콘솔에서의 **콘텐츠 조각** 작성과 관련성이 있기도 합니다.
+* [기본 처리](/help/sites-cloud/authoring/basic-handling.md) - 이 페이지는 주로 **Sites** 콘솔을 기반으로 하지만 여러/대부분의 기능은 **자산** 콘솔에서의 **콘텐츠 조각** 작성과 관련성이 있기도 합니다.
 
-   * [탐색 패널](/help/sites-cloud/authoring/getting-started/basic-handling.md#navigation-panel)
+   * [탐색 패널](/help/sites-cloud/authoring/basic-handling.md#navigation-panel)
 
-   * [헤더](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)
+   * [헤더](/help/sites-cloud/authoring/basic-handling.md#the-header)
 
-   * [액션 툴바](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
+   * [액션 툴바](/help/sites-cloud/authoring/basic-handling.md#actions-toolbar)
 
-   * [빠른 작업](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
+   * [빠른 작업](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
 
-   * [리소스 보기 및 선택](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+   * [리소스 보기 및 선택](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)
 
-   * [레일 선택기](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+   * [레일 선택기](/help/sites-cloud/authoring/basic-handling.md#rail-selector)
 
 * [콘텐츠 조각을 사용하여 작업](/help/sites-cloud/administering/content-fragments/overview.md)
 

@@ -2,8 +2,8 @@
 title: 콘텐츠 모델링 기본 사항 알아보기
 description: 콘텐츠 조각을 사용하여 Headless CMS용 콘텐츠 모델링 기본 사항을 알아봅니다.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
-workflow-type: ht
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 100%
 
@@ -153,8 +153,8 @@ AEM은 콘텐츠를 모델링할 수 있도록 다음 데이터 유형을 제공
 
    * [콘텐츠 조각 모델 - 데이터 형식](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
-* [작성 개념](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [작성 개념](/help/sites-cloud/authoring/author-publish.md)
 
-* [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md) - 이 페이지는 주로 **Sites** 콘솔을 기반으로 하지만 여러/대부분의 기능은 **자산** 콘솔에서의 **콘텐츠 조각** 작성과 관련성이 있기도 합니다.
+* [기본 처리](/help/sites-cloud/authoring/basic-handling.md) - 이 페이지는 주로 **Sites** 콘솔을 기반으로 하지만 여러/대부분의 기능은 **자산** 콘솔에서의 **콘텐츠 조각** 작성과 관련성이 있기도 합니다.
 
 * [콘텐츠 조각을 사용하여 작업](/help/sites-cloud/administering/content-fragments/overview.md)

@@ -2,7 +2,7 @@
 title: AEM 태그 지정 프레임워크
 description: 콘텐츠에 태그를 지정하고 AEM 태깅 인프라를 사용하여 분류 및 구성합니다.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 태깅을 사용하면 컨텐츠를 분류하고 구성할 수 있습니다. 태그는 네임스페이스와 분류법으로 분류할 수 있습니다. 태그 사용에 대한 자세한 내용은 다음을 참조하십시오.
 
-* 다음을 참조하십시오 [태그 사용](/help/sites-cloud/authoring/features/tags.md) 콘텐츠 작성자로 콘텐츠에 태그를 지정하는 방법에 대한 자세한 정보.
+* 다음을 참조하십시오 [태그 사용](/help/sites-cloud/authoring/sites-console/tags.md) 콘텐츠 작성자로 콘텐츠에 태그를 지정하는 방법에 대한 자세한 정보.
 * 태그 작성 및 관리 방법과 컨텐츠 태그가 적용되는 항목에 대한 관리자 관점의 태그 관리를 참조하십시오.
 
 이 문서에서는 AEM에서 태그 지정을 지원하는 기본 프레임워크와 개발자로 사용하는 방법에 대해 중점적으로 다룹니다.

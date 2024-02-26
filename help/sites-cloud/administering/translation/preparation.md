@@ -4,7 +4,7 @@ description: 다국어 웹 사이트를 개발할 때 번역을 위한 콘텐츠
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 75%
@@ -92,7 +92,7 @@ AEM은 생성된 언어 루트 목록을 표시하는 **참조** 레일을 제�
 
 ![언어 루트](../assets/language-roots.png)
 
-다음 절차를 통해 [레일 선택기](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)를 사용하여 페이지의 언어 사본을 봅니다.
+다음 절차를 통해 [레일 선택기](/help/sites-cloud/authoring/basic-handling.md#rail-selector)를 사용하여 페이지의 언어 사본을 봅니다.
 
 1. 사이트 콘솔에서 사이트의 페이지를 선택한 다음 을 선택합니다 **참조**.
 

@@ -2,16 +2,16 @@
 title: 편집기 제한 사항
 description: 터치 지원 UI의 편집기는 오버레이를 사용하여 iframe에 한정된 컨텐츠와 상호 작용합니다. 이러한 상호 작용은 편집자와 개발자의 사용에 모두 제한을 만듭니다.
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 10%
+source-wordcount: '315'
+ht-degree: 6%
 
 ---
 
 # 편집기 제한 사항 {#editor-limitations}
 
-터치 지원 UI의 편집기는 오버레이를 사용하여 iframe에 한정된 컨텐츠와 상호 작용합니다. 이러한 상호 작용은 편집자와 개발자의 사용에 모두 제한을 만듭니다. 이 페이지에서는 이러한 제한 사항을 요약하고 가능한 경우 해결 방법 또는 해결 방법을 제공합니다.
+터치 지원 UI의 편집기는 오버레이를 사용하여 iframe에 한정된 컨텐츠와 상호 작용합니다. 이러한 상호 작용은 편집기와 개발자의 사용에 모두 제한을 만듭니다. 이 페이지에서는 이러한 제한 사항을 요약하고 가능한 경우 해결 방법 또는 해결 방법을 제공합니다.
 
 ## 기능 제한 사항 {#functional-limitations}
 
@@ -19,9 +19,9 @@ ht-degree: 10%
 
 ### 링크가 활성화되지 않음 {#links-not-active}
 
-날짜 [페이지 편집](/help/sites-cloud/authoring/fundamentals/editing-content.md), 링크가 활성화되지 않았습니다.
+날짜 [페이지 편집](/help/sites-cloud/authoring/page-editor/edit-content.md), 링크가 활성화되지 않았습니다.
 
-* [다음으로 전환 **미리 보기** 모드](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode) 을 클릭하여 콘텐츠의 링크를 사용하여 탐색할 수 있습니다.
+* [다음으로 전환 **미리 보기** 모드](/help/sites-cloud/authoring/page-editor/introduction.md#preview-mode) 을 클릭하여 콘텐츠의 링크를 사용하여 탐색할 수 있습니다.
 
 ### 구조 페이지 {#structure-pages}
 

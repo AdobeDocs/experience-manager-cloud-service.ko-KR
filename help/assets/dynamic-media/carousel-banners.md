@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Carousel Banners
 role: User
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '4534'
+source-wordcount: '4492'
 ht-degree: 1%
 
 ---
@@ -241,7 +241,7 @@ ht-degree: 1%
 
 핫스팟 또는 이미지 맵을 추가할 때 빠른 보기 팝업 표시, 하이퍼링크 또는 경험 조각으로 정의할 수 있습니다.
 
-다음을 참조하십시오 [경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+다음을 참조하십시오 [경험 조각](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!NOTE]
 >
@@ -259,11 +259,11 @@ ht-degree: 1%
 >
 >이미지 배너에 핫스팟을 추가하면 핫스팟 정보가 이미지의 위치를 기준으로 동일한 메타데이터 위치에 저장됩니다. 이 점은 대화형 이미지인지 아니면 회전 배너인지에 관계없이 true입니다. 이 기능은 정의된 핫스팟 데이터와 함께 동일한 이미지를 두 뷰어에서 쉽게 재사용할 수 있음을 의미합니다.
 >
-그러나 회전 배너는 핫스팟을 포함할 수도 있는 이미지에 대한 이미지 맵을 지원하지만 대화형 이미지는 지원하지 않습니다. 동일한 이미지를 사용하는 대화형 이미지 또는 회전 배너를 만들려면 이 팁을 기억하십시오. 동일한 이미지의 별도의 복사본을 대신 사용하여 대화형 이미지 및 회전식 배너를 만드는 것이 좋습니다.
+>그러나 회전 배너는 핫스팟을 포함할 수도 있는 이미지에 대한 이미지 맵을 지원하지만 대화형 이미지는 지원하지 않습니다. 동일한 이미지를 사용하는 대화형 이미지 또는 회전 배너를 만들려면 이 팁을 기억하십시오. 동일한 이미지의 별도의 복사본을 대신 사용하여 대화형 이미지 및 회전식 배너를 만드는 것이 좋습니다.
 
 >[!NOTE]
 >
-핫스팟이 있는 대화형 이미지를 편집하고 이미지를 자르는 경우 핫스팟이 제거됩니다.
+>핫스팟이 있는 대화형 이미지를 편집하고 이미지를 자르는 경우 핫스팟이 제거됩니다.
 
 <!-- See also [Adding Image Maps](/help/assets/image-maps.md). -->
 
@@ -302,7 +302,7 @@ ht-degree: 1%
 
         >[!NOTE]
         >
-        대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.
+        >대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.
 
       * 독립형 고객인 경우 href 텍스트 필드에 연결된 웹 페이지에 대한 전체 URL 경로를 지정합니다.
 
@@ -313,15 +313,15 @@ ht-degree: 1%
    * 선택 **[!UICONTROL 경험 조각]**.
 
       * Experience Manager Sites 고객인 경우 검색 아이콘(돋보기)을 선택하여 경험 조각 페이지를 엽니다. 핫스팟 관리 페이지로 돌아가려면 사용할 경험 조각을 선택한 다음 페이지의 오른쪽 상단 모서리에서 을 선택합니다. **[!UICONTROL 선택]**.
-다음을 참조하십시오 [경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+다음을 참조하십시오 [경험 조각](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
       * 배너에 표시되는 경험 조각의 너비와 높이를 지정합니다.
 
         >[!NOTE]
         >
-        경험 조각에 뷰어를 포함할 때 회전 배너의 소셜 미디어 공유 도구가 지원되지 않습니다.
+        >경험 조각에 뷰어를 포함할 때 회전 배너의 소셜 미디어 공유 도구가 지원되지 않습니다.
         >
-        이 점을 해결하려면 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 사용하거나 만들 수 있습니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.
+        >이 점을 해결하려면 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 사용하거나 만들 수 있습니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.
 
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
@@ -338,7 +338,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-관리자가 아닌 사용자를 **[!UICONTROL dam-users]** 그룹: 회전 배너를 만들거나 편집할 수 있습니다. 만들거나 편집하는 데 문제가 있는 경우 사용자를 다음에 추가할 수 있는 시스템 관리자에게 문의하십시오. **[!UICONTROL dam-users]** 그룹입니다.
+>관리자가 아닌 사용자를 **[!UICONTROL dam-users]** 그룹: 회전 배너를 만들거나 편집할 수 있습니다. 만들거나 편집하는 데 문제가 있는 경우 사용자를 다음에 추가할 수 있는 시스템 관리자에게 문의하십시오. **[!UICONTROL dam-users]** 그룹입니다.
 
 회전판 세트에 대해 다음과 같은 다양한 편집 작업을 수행할 수 있습니다.
 
@@ -371,7 +371,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   핫스팟이 있는 대화형 이미지를 편집하고 이미지를 자르는 경우 핫스팟이 제거됩니다.
+   >핫스팟이 있는 대화형 이미지를 편집하고 이미지를 자르는 경우 핫스팟이 제거됩니다.
 
 ## (선택 사항) 회전 배너 미리 보기 {#optional-previewing-carousel-banners}
 
@@ -392,7 +392,7 @@ ht-degree: 1%
 
    ![experience_fragment-carouselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. **[!UICONTROL 미리보기]**&#x200B;를 선택합니다.
+1. 선택 **[!UICONTROL 미리 보기]**.
 1. 연결된 작업을 테스트하려면 이미지에서 핫스팟 또는 이미지 맵을 선택합니다.
 
 **뷰어 목록에서 회전 배너를 미리 보려면 다음을 수행하십시오.**
@@ -408,9 +408,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-회전 배너에 핫스팟이 있는 기존 대화형 이미지를 사용하는 경우 회전 배너를 게시한 후 대화형 이미지를 별도로 게시해야 합니다.
+>회전 배너에 핫스팟이 있는 기존 대화형 이미지를 사용하는 경우 회전 배너를 게시한 후 대화형 이미지를 별도로 게시해야 합니다.
 >
-또한, 캐러셀 배너에 사용하는 기존의 게시된 대화형 이미지를 수정하는 경우, 해당 변경 사항이 캐러셀 배너에 반영되도록 대화형 이미지를 게시하십시오.
+>또한, 캐러셀 배너에 사용하는 기존의 게시된 대화형 이미지를 수정하는 경우, 해당 변경 사항이 캐러셀 배너에 반영되도록 대화형 이미지를 게시하십시오.
 
 다음을 참조하십시오 [Dynamic Media Assets 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) 회전 배너를 게시하는 방법에 대한 정보입니다.
 
@@ -420,7 +420,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 페이지로 드래그하여 회전식 배너를 페이지에 바로 추가할 수 있습니다. 다음을 참조하십시오 [페이지에 Dynamic Media 에셋 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+>Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 페이지로 드래그하여 회전식 배너를 페이지에 바로 추가할 수 있습니다. 다음을 참조하십시오 [페이지에 Dynamic Media 에셋 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 그러나 독립형 Experience Manager Assets 고객인 경우 수동으로 웹 사이트 랜딩 페이지에 캐러셀 배너를 추가할 수 있습니다.
 

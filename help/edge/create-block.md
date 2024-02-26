@@ -1,8 +1,8 @@
 ---
 title: Universal Editor에 사용하도록 구성된 블록 만들기
 description: Edge Delivery Services 프로젝트를 통해 AEM 작성 시 Universal Editor에 사용하도록 구성된 블록을 만드는 방법에 대해 알아봅니다.
-source-git-commit: 40e404c743102f1de8b3d959597836f04f0c0fef
-workflow-type: ht
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
 source-wordcount: '1205'
 ht-degree: 100%
 
@@ -130,7 +130,7 @@ Adobe는 3단계 방식으로 블록을 개발할 것을 권장합니다.
 
 이제 기본 인용 블록이 정의되어 샘플 프로젝트에 커밋되었기 때문에 기존 페이지에 인용 블록을 추가할 수 있습니다.
 
-1. 브라우저에서 AEM as a Cloud Service에 로그인합니다. [Sites 콘솔을 사용하여](/help/sites-cloud/authoring/getting-started/basic-handling.md) [Edge Delivery Services를 사용한 AEM 작성을 위한 개발자 시작 안내서](/help/edge/edge-dev-getting-started.md)의 안내서에서 만든 사이트로 이동하고 페이지를 선택합니다.
+1. 브라우저에서 AEM as a Cloud Service에 로그인합니다. [Sites 콘솔을 사용하여](/help/sites-cloud/authoring/basic-handling.md) [Edge Delivery Services를 사용한 AEM 작성을 위한 개발자 시작 안내서](/help/edge/edge-dev-getting-started.md)의 안내서에서 만든 사이트로 이동하고 페이지를 선택합니다.
 
    * 이 경우 `index`는 설명 목적으로 사용됩니다.
 

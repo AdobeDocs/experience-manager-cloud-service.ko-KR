@@ -4,16 +4,16 @@ description: AEM의 콘텐츠 조각을 as a Cloud Service으로 사용하여 He
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1792'
+ht-degree: 98%
 
 ---
 
 # 콘텐츠 조각 작업 개요 {#overview-working-with-content-fragments}
 
-Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각을 사용하여 [페이지 독립적 콘텐츠](/help/sites-cloud/authoring/fundamentals/content-fragments.md)를 디자인, 작성, 조정 및 게시할 수 있습니다. 이를 통해 Headless 게재에 이상적인 여러 위치 및 여러 채널에서 사용할 수 있도록 콘텐츠를 준비하고 페이지를 작성할 수 있습니다.
+Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각을 사용하여 [페이지 독립적 콘텐츠](/help/sites-cloud/authoring/fragments/content-fragments.md)를 디자인, 작성, 조정 및 게시할 수 있습니다. 이를 통해 Headless 게재에 이상적인 여러 위치 및 여러 채널에서 사용할 수 있도록 콘텐츠를 준비하고 페이지를 작성할 수 있습니다.
 
 >[!IMPORTANT]
 >
@@ -27,7 +27,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각을 사용�
 >
 >* [콘텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md)용 **자산** 콘솔 사용
 >* [*원래* 콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-variations.md) 사용,
->* [페이지 작성에 콘텐츠 조각](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 사용,
+>* [페이지 작성에 콘텐츠 조각](/help/sites-cloud/authoring/fragments/content-fragments.md) 사용,
 
 
 콘텐츠 조각에는 구조화된 콘텐츠가 포함되어 있습니다.
@@ -74,7 +74,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 
 >[!NOTE]
 >
->**콘텐츠 조각** 및 **[경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**&#x200B;은 AEM 내의 다양한 기능입니다.
+>**콘텐츠 조각** 및 **[경험 조각](/help/sites-cloud/authoring/fragments/content-fragments.md)**&#x200B;은 AEM 내의 다양한 기능입니다.
 >* **콘텐츠 조각**&#x200B;은 정의 및 구조를 갖지만 추가적인 시각적 디자인 및/또는 레이아웃을 포함하지 않는 에디토리얼 콘텐츠입니다. 텍스트, 숫자, 날짜 등과 같은 구조화된 데이터에 액세스하는 데 사용할 수 있습니다.
 >* **경험 조각**&#x200B;은 전체적으로 배치된 콘텐츠, 즉 웹 페이지 조각입니다.
 >
@@ -94,7 +94,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 * [콘텐츠 조각 편집기 사용](/help/sites-cloud/administering/content-fragments/authoring.md) - 조각 편집, (미리보기 또는 프로덕션에) 게시 및 참조
 * 편집기를 사용하여 콘텐츠 조각의 구조 [분석](/help/sites-cloud/administering/content-fragments/analysis.md)
 * [Headless 방식으로 애플리케이션에 게재하기 위해 GraphQL을 사용하여 조각에 액세스합니다](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
-* [또는 페이지를 작성하는 데 조각을 사용합니다.](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
+* [또는 페이지를 작성하는 데 조각을 사용합니다.](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 >* [콘텐츠 조각 렌더링용 구성 요소 구성](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [AEM Assets HTTP API의 콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
->* [콘텐츠 조각을 사용하여 페이지 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
+>* [콘텐츠 조각을 사용하여 페이지 작성](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 ## 기본과 변형 {#main-and-variations}
 
@@ -172,7 +172,7 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 
 * [AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)를 사용하여 콘텐츠 게재에 액세스할 수 있습니다.
 
-* [콘텐츠 조각 구성 요소(참조 구성 요소)를 통해 페이지 편집기](/help/sites-cloud/authoring/fundamentals/content-fragments.md)에서 사용 가능합니다.
+* [콘텐츠 조각 구성 요소(참조 구성 요소)를 통해 페이지 편집기](/help/sites-cloud/authoring/fragments/content-fragments.md)에서 사용 가능합니다.
 
    * [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)는 페이지 작성자가 사용할 수 있습니다. 이를 통해 페이지 작성자는 HTML 또는 JSON 포맷으로 필요한 콘텐츠 조각을 참조 및 게재할 수 있습니다.
 
@@ -257,7 +257,7 @@ Headless 콘텐츠 게재에 콘텐츠 조각을 사용하려면 다음 사항�
 * 한 개의 **콘텐츠 조각 구성 요소**
 
    * 조각을 HTML 및/또는 JSON 형식으로 게재하는 데 중요합니다.
-   * [페이지에서 조각을 참조](/help/sites-cloud/authoring/fundamentals/content-fragments.md)하는 데 필요합니다.
+   * [페이지에서 조각을 참조](/help/sites-cloud/authoring/fragments/content-fragments.md)하는 데 필요합니다.
    * 채널 등과 같이 조각의 레이아웃 및 게재를 담당합니다.
    * 조각은 레이아웃을 정의하고 일부 또는 모든 요소/변형 및 관련 콘텐츠를 게재하기 위해 하나 이상의 전용 구성 요소를 필요로 합니다.
    * 작성 중인 페이지에 조각을 드래그하면 필요한 구성 요소가 자동으로 연결됩니다.

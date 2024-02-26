@@ -2,16 +2,16 @@
 title: 구성 요소 개요
 description: 구성 요소는 웹 사이트에 콘텐츠를 표시할 특정 기능을 실현하는 모듈식 단위입니다.
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
-workflow-type: ht
-source-wordcount: '386'
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
+source-wordcount: '376'
 ht-degree: 100%
 
 ---
 
 # 구성 요소 개요 {#components-overview}
 
-이 페이지는 [페이지 작성에 사용되는](/help/sites-cloud/authoring/fundamentals/components.md) 구성 요소와 같은 Adobe Experience Manager(AEM) 구성 요소에 대한 개요를 제공합니다.
+이 페이지는 [페이지 작성에 사용되는](/help/sites-cloud/authoring/page-editor/components.md) 구성 요소와 같은 Adobe Experience Manager(AEM) 구성 요소에 대한 개요를 제공합니다.
 
 ## 구성 요소란 무엇입니까? {#what-are-components}
 
@@ -48,7 +48,7 @@ AEM as a Cloud Service와 함께 핵심 구성 요소를 제공하고, [WKND 튜
 
 ### 사용 가능한 구성 요소 보기 {#viewing-available-components}
 
-AEM 인스턴스에 사용 가능한 모든 구성 요소에 대한 개요를 보려면 [구성 요소 콘솔](/help/sites-cloud/authoring/features/components-console.md)을 사용하십시오.
+AEM 인스턴스에 사용 가능한 모든 구성 요소에 대한 개요를 보려면 [구성 요소 콘솔](/help/sites-cloud/authoring/components-console.md)을 사용하십시오.
 
 또는 CRXDE Lite를 사용하여 저장소에 사용 가능한 모든 구성 요소 목록을 가져올 수도 있습니다.
 

@@ -11,16 +11,16 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
-source-wordcount: '2535'
-ht-degree: 3%
+source-wordcount: '2342'
+ht-degree: 0%
 
 ---
 
 # 스타일 AEM CIF 핵심 구성 요소 {#style-aem-cif-core-components}
 
-다음 [CIF 베니아 프로젝트](https://github.com/adobe/aem-cif-guides-venia) 는 사용을 위한 참조 코드 베이스입니다. [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components). 이 자습서에서는 Venia 참조 프로젝트를 검사하고 AEM CIF 핵심 구성 요소에서 사용하는 CSS 및 JavaScript를 구성하는 방법을 알아봅니다. 또한 CSS를 사용하여 스타일을 만들어 의 기본 스타일을 **제품 티저** 구성 요소.
+다음 [CIF Venia 프로젝트](https://github.com/adobe/aem-cif-guides-venia) 는 사용을 위한 참조 코드 베이스입니다. [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components). 이 자습서에서는 Venia 참조 프로젝트를 검사하고 AEM CIF 핵심 구성 요소에서 사용하는 CSS 및 JavaScript를 구성하는 방법을 알아봅니다. 또한 CSS를 사용하여 스타일을 만들어 의 기본 스타일을 **제품 티저** 구성 요소.
 
 >[!TIP]
 >
@@ -182,7 +182,7 @@ Storefront의 테마/스타일을 렌더링하는 CSS 및 JavaScript는 AEM에�
 
    **clientlib-cif** - 다음의 필요한 종속성을 단순히 임베드하는 빈 클라이언트 라이브러리 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components). 범주는 다음과 같습니다 `venia.cif`.
 
-   **clientlib-grid** - AEM 반응형 그리드 기능을 활성화하는 CSS를 포함합니다. AEM 그리드를 사용하면 [레이아웃 모드](/help/sites-cloud/authoring/features/responsive-layout.md) 를 통해 콘텐츠 작성자는 AEM 편집기에서 구성 요소의 크기를 조정할 수 있습니다. 범주는 다음과 같습니다 `venia.grid` 및 가 `venia.base` 라이브러리입니다.
+   **clientlib-grid** - AEM 반응형 그리드 기능을 활성화하는 CSS를 포함합니다. AEM 그리드를 사용하면 [레이아웃 모드](/help/sites-cloud/authoring/page-editor/responsive-layout.md) 를 통해 콘텐츠 작성자는 AEM 편집기에서 구성 요소의 크기를 조정할 수 있습니다. 범주는 다음과 같습니다 `venia.grid` 및 가 `venia.base` 라이브러리입니다.
 
 1. Inspect the files `customheaderlibs.html` 및 `customfooterlibs.html` 아래에 `ui.apps/src/main/content/jcr_root/apps/venia/components/page`:
 
@@ -467,13 +467,13 @@ IDE 및 생성된 프로젝트로 돌아갑니다.
 
 AEM은 성능을 위해 클라이언트 라이브러리를 캐시하려고 시도합니다. 코드 배포 후 이전 파일이 제공되는 경우가 있습니다. 다음을 사용하여 AEM 클라이언트 라이브러리 캐시를 수동으로 무효화할 수 있습니다. [클라이언트 라이브러리 다시 빌드 도구](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html). *Invalidate Caches는 AEM이 클라이언트 라이브러리의 이전 버전을 캐시했다고 의심되는 경우 선호되는 방법입니다. 라이브러리 리빌딩은 비효율적이고 시간이 많이 소요됩니다.*
 
-## 축하합니다 {#congratulations}
+## 축하합니다. {#congratulations}
 
 첫 번째 AEM CIF 핵심 구성 요소의 스타일을 완료하고 Webpack 개발 서버를 사용했습니다!
 
 ## 보너스 챌린지 {#bonus-challenge}
 
-사용 [AEM 스타일 시스템](/help/sites-cloud/authoring/features/style-system.md) 콘텐츠 작성자가 켜거나 끌 수 있는 두 가지 스타일을 만듭니다. [스타일 시스템을 사용하여 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html) 에는 이 작업을 수행하는 방법에 대한 자세한 단계 및 정보가 포함되어 있습니다.
+사용 [AEM 스타일 시스템](/help/sites-cloud/authoring/page-editor/style-system.md) 콘텐츠 작성자가 켜거나 끌 수 있는 두 가지 스타일을 만듭니다. [스타일 시스템을 사용하여 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html) 에는 이 작업을 수행하는 방법에 대한 자세한 단계 및 정보가 포함되어 있습니다.
 
 ![보너스 챌린지 - 스타일 시스템](../assets/style-cif-component/bonus-challenge.png)
 

@@ -4,10 +4,10 @@ description: 콘텐츠 조각 관리를 위한 선택 항목을 포함하여 AEM
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 24eefa31-4081-4b4a-af98-c6299b213cea
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '223'
+ht-degree: 93%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 몇 가지 키보드 단축키를 콘텐츠 조각 콘솔에서 사용할 수 있습니다.
 
-AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 일부는 [페이지 편집](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)에 적용되고 일부는 [일반적인 콘솔 사용](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)에 적용됩니다.
+AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 일부는 [페이지 편집](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)에 적용되고 일부는 [일반적인 콘솔 사용](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)에 적용됩니다.
 
 >[!NOTE]
 >
@@ -38,11 +38,11 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 | 하나 이상의 콘텐츠 조각을 선택합니다 | `u` | 게시 취소 대화 상자를 엽니다 |
 | 모든 열린 대화 상자 | `esc` | 대화 상자가 해제됩니다 |
 
-데스크탑 사용자는 다양한 키보드 단축키를 사용할 수 있습니다. 일부는 [페이지 편집](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)에 적용되고 일부는 일반적인 [콘솔 사용](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)에 적용됩니다.
+데스크탑 사용자는 다양한 키보드 단축키를 사용할 수 있습니다. 일부는 [페이지 편집](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)에 적용되고 일부는 일반적인 [콘솔 사용](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)에 적용됩니다.
 
 >[!NOTE]
 >
->편집기 키보드 단축키는 [콘솔 단축키가 비활성화](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md#deactivating-keyboard-shortcuts)된 경우에도 항상 활성 상태를 유지합니다.
+>편집기 키보드 단축키는 [콘솔 단축키가 비활성화](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md#deactivating-keyboard-shortcuts)된 경우에도 항상 활성 상태를 유지합니다.
 
 ## OS별 보조 키 {#os-specific-modifier-keys}
 

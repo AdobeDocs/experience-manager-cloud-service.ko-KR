@@ -2,7 +2,7 @@
 title: 페이지에 워크플로 적용
 description: 작성 시 페이지에서 작동할 워크플로를 불러올 수 있습니다. 하나 이상의 워크플로를 적용할 수도 있습니다.
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 83%
@@ -70,7 +70,7 @@ ht-degree: 83%
 
 **타임라인**&#x200B;에서는 선택한 리소스에 적용할 워크플로를 시작할 수 있습니다.
 
-1. [리소스를 선택](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)한 다음 [타임라인](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)을 엽니다(또는 타임라인을 연 다음 리소스 선택).
+1. [리소스를 선택](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)한 다음 [타임라인](/help/sites-cloud/authoring/basic-handling.md#timeline)을 엽니다(또는 타임라인을 연 다음 리소스 선택).
 1. 설명 필드 옆에 있는 화살표를 사용하여 **워크플로 시작**&#x200B;을 표시할 수 있습니다.
 
    ![타임라인에서 워크플로 만들기](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
@@ -116,7 +116,7 @@ ht-degree: 83%
 
 1. **범위** 단계에서 다음을 선택할 수 있습니다.
 
-   * **콘텐츠 추가** 을(를) 열려면 [경로 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) 추가 리소스를 선택합니다. 브라우저에서 다음을 선택합니다. **선택** 워크플로 인스턴스에 컨텐츠를 추가합니다.
+   * **콘텐츠 추가** 을(를) 열려면 [경로 브라우저](/help/sites-cloud/authoring/path-selection.md) 추가 리소스를 선택합니다. 브라우저에서 다음을 선택합니다. **선택** 워크플로 인스턴스에 컨텐츠를 추가합니다.
 
    * 추가 작업을 보기 위한 기존 리소스:
 

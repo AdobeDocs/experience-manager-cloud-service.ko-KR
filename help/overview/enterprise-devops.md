@@ -2,8 +2,8 @@
 title: 엔터프라이즈 DevOps
 description: 배포를 지우고 공동 작업을 간소화하는 데 필요한 프로세스, 방법 및 커뮤니케이션에 대해 알아봅니다.
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
-workflow-type: ht
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 100%
 
@@ -66,7 +66,7 @@ Adobe Experience Manager (AEM) as a Cloud Service는 일반적으로 서로 다�
 
 ### 프로덕션 - 작성 및 게시 {#production-author-and-publish}
 
-프로덕션 환경은 구현을 [작성 및 게시](/help/sites-cloud/authoring/getting-started/concepts.md)하는 데 필요한 환경으로 구성됩니다.
+프로덕션 환경은 구현을 [작성 및 게시](/help/sites-cloud/authoring/author-publish.md)하는 데 필요한 환경으로 구성됩니다.
 
 프로덕션 환경은 한 개 이상의 작성자 인스턴스와 한 개의 게시 인스턴스로 구성됩니다.
 

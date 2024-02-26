@@ -2,7 +2,7 @@
 title: 워크플로에 참여
 description: 워크플로는 일반적으로 페이지나 자산에 대해 사람이 활동을 수행해야 하는 단계를 포함합니다.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '1507'
 ht-degree: 78%
@@ -24,11 +24,11 @@ ht-degree: 78%
 
 작업 항목이 할당되면(예: **콘텐츠 승인**) 다양한 경고 및/또는 알림이 표시됩니다.
 
-* [알림](/help/sites-cloud/authoring/getting-started/inbox.md) 표시기(도구 모음)가 증가합니다.
+* [알림](/help/sites-cloud/authoring/inbox.md) 표시기(도구 모음)가 증가합니다.
 
   ![알림 도구 모음](/help/sites-cloud/authoring/assets/workflows-notifications.png)
 
-* 항목이 알림 [받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)에 나열됩니다.
+* 항목이 알림 [받은 편지함](/help/sites-cloud/authoring/inbox.md)에 나열됩니다.
 
   ![받은 편지함의 알림](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
@@ -72,7 +72,7 @@ ht-degree: 78%
 
 다음 절차를 사용하여 작업 항목을 완료하십시오.
 
-1. **[AEM 받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)**&#x200B;을 엽니다.
+1. **[AEM 받은 편지함](/help/sites-cloud/authoring/inbox.md)**&#x200B;을 엽니다.
 1. 작업을 수행할 워크플로우 항목을 선택합니다(썸네일 선택).
 1. 도구 모음에서 **완료**&#x200B;를 선택합니다.
 1. 다음 **작업 항목 완료** 대화 상자가 열립니다. 다음 항목 선택 **다음 단계** 드롭다운 선택기에서 **댓글** 필요한 경우.
@@ -82,7 +82,7 @@ ht-degree: 78%
 
 다음 절차를 사용하여 작업 항목을 완료하십시오.
 
-1. [편집할 페이지](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)를 엽니다.
+1. [편집할 페이지](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing)를 엽니다.
 1. 상단의 상태 표시줄에서 **완료**&#x200B;를 선택합니다.
 1. 다음 **작업 항목 완료** 대화 상자가 열립니다. 다음 항목 선택 **다음 단계** 드롭다운 선택기에서 **댓글** 필요한 경우.
 1. **확인**&#x200B;을 사용하여 단계를 완료합니다(또는 **취소**&#x200B;를 사용하여 작업 취소).
@@ -131,7 +131,7 @@ ht-degree: 78%
 
 다음 절차를 사용하여 작업 항목을 위임하십시오.
 
-1. **[AEM 받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)**&#x200B;을 엽니다.
+1. **[AEM 받은 편지함](/help/sites-cloud/authoring/inbox.md)**&#x200B;을 엽니다.
 1. 작업을 수행할 워크플로우 항목을 선택합니다(썸네일 선택).
 1. 도구 모음에서 **위임**&#x200B;을 선택합니다.
 1. 대화 상자가 열립니다. 다음을 지정합니다. **사용자** 드롭다운 선택기에서(또는 그룹일 수 있음) **댓글** 필요한 경우.
@@ -141,7 +141,7 @@ ht-degree: 78%
 
 다음 절차를 사용하여 작업 항목을 위임하십시오.
 
-1. [편집할 페이지](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)를 엽니다.
+1. [편집할 페이지](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing)를 엽니다.
 1. 상단의 상태 표시줄에서 **위임**&#x200B;을 선택합니다.
 1. 대화 상자가 열립니다. 다음을 지정합니다. **사용자** 드롭다운 선택기에서(또는 그룹일 수 있음) **댓글** 필요한 경우.
 1. **확인**&#x200B;을 사용하여 단계를 완료합니다(또는 **취소**&#x200B;를 사용하여 작업 취소).
@@ -181,7 +181,7 @@ ht-degree: 78%
 
 다음 절차를 사용하여 뒤 단계로 이동하십시오.
 
-1. **[AEM 받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)**&#x200B;을 엽니다.
+1. **[AEM 받은 편지함](/help/sites-cloud/authoring/inbox.md)**&#x200B;을 엽니다.
 1. 작업을 수행할 워크플로우 항목을 선택합니다(썸네일 선택).
 1. **뒤로 이동**&#x200B;을 선택하여 대화 상자를 엽니다.
 1. 다음을 지정합니다. **이전 단계** 및 추가 **댓글** 필요한 경우.
@@ -191,7 +191,7 @@ ht-degree: 78%
 
 다음 절차를 사용하여 뒤 단계로 이동하십시오.
 
-1. [편집할 페이지](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)를 엽니다.
+1. [편집할 페이지](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing)를 엽니다.
 1. 상단의 상태 표시줄에서 **뒤로 이동**&#x200B;을 선택합니다.
 1. 다음을 지정합니다. **이전 단계** 및 추가 **댓글** 필요한 경우.
 1. **확인**&#x200B;을 사용하여 단계를 완료합니다(또는 **취소**&#x200B;를 사용하여 작업 취소).
@@ -242,7 +242,7 @@ ht-degree: 78%
 
 워크플로 항목을 열고 세부 사항을 보려면 다음 작업을 수행하십시오.
 
-1. **[AEM 받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)**&#x200B;을 엽니다.
+1. **[AEM 받은 편지함](/help/sites-cloud/authoring/inbox.md)**&#x200B;을 엽니다.
 1. 작업을 수행할 워크플로우 항목을 선택합니다(썸네일 선택).
 1. **열기**&#x200B;를 선택하여 정보 탭을 엽니다.
 1. 필요한 경우 적절한 작업을 선택하고 세부 정보를 제공한 다음 을(를) 확인합니다. **확인** (또는 **취소**).
@@ -252,7 +252,7 @@ ht-degree: 78%
 
 워크플로 항목을 열고 세부 사항을 보려면 다음 작업을 수행하십시오.
 
-1. [편집할 페이지](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)를 엽니다.
+1. [편집할 페이지](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing)를 엽니다.
 1. 작업 표시줄에서 **세부 정보 보기**&#x200B;를 선택하여 정보 탭을 엽니다.
 1. 필요한 경우 적절한 작업을 선택하고 세부 정보를 제공한 다음 을(를) 확인합니다. **확인** (또는 **취소**).
 1. **저장** 또는 **취소**&#x200B;를 선택하여 종료합니다.
@@ -263,7 +263,7 @@ ht-degree: 78%
 
 워크플로 인스턴스의 페이로드 및 리소스를 보려면 다음 작업을 수행하십시오.
 
-1. **[AEM 받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)**&#x200B;을 엽니다.
+1. **[AEM 받은 편지함](/help/sites-cloud/authoring/inbox.md)**&#x200B;을 엽니다.
 1. 작업을 수행할 워크플로우 항목을 선택합니다(썸네일 선택).
 1. 도구 모음에서 **페이로드 보기**&#x200B;를 선택하여 대화 상자를 엽니다.
    * 워크플로 패키지는 단순히 저장소 내 경로에 대한 포인터 컬렉션이므로 여기에 항목을 추가/제거/수정하여 워크플로 패키지에서 참조되는 내용을 조정할 수 있습니다. **리소스 정의** 구성 요소를 사용하여 새 항목을 추가하십시오.

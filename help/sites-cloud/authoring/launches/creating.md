@@ -2,10 +2,10 @@
 title: 론치 만들기
 description: 론치를 만들어 향후 활성화할 수 있도록 기존 웹 페이지의 새 버전 업데이트를 활성화할 수 있습니다.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1042'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 99%
 
 론치를 만들어 향후 활성화할 수 있도록 기존 웹 페이지의 새 버전 업데이트를 활성화합니다. 론치를 만들 때에는 제목과 소스 페이지를 지정합니다.
 
-* 제목은 작성자가 액세스하여 작업할 수 있는 [참조](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) 레일에 표시됩니다.
+* 제목은 작성자가 액세스하여 작업할 수 있는 [참조](/help/sites-cloud/authoring/sites-console/console-side-panel.md#references) 레일에 표시됩니다.
 * 소스 페이지의 하위 페이지는 기본적으로 론치에 포함됩니다. 원할 경우 소스 페이지만 사용할 수 있습니다.
 * 기본적으로, [Live Copy](/help/sites-cloud/administering/msm/overview.md)는 소스 페이지 변경에 따라 자동으로 론치 페이지를 업데이트합니다. 정적 사본을 만들어 자동 변경을 방지하도록 지정할 수 있습니다.
 
@@ -27,7 +27,7 @@ ht-degree: 99%
 >
 >이들 페이지는 편집할 수 없습니다. 다음과 같은 메시지가 표시됩니다.
 >
->* **이 페이지는 론치의 일부가 아닙니다. 프로덕션 페이지로 이동하십시오.**
+>* **이 페이지는 론치의 일부가 아닙니다. 프로덕션 페이지로 이동**
 
 ## 론치 만들기 {#creating-a-launch}
 
@@ -48,7 +48,7 @@ Sites 또는 론치 콘솔에서 론치를 만들 수 있습니다.
 
    >[!NOTE]
    >
-   >**사이트** 콘솔에서 **만들기**&#x200B;를 선택하기 전에 [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)를 사용하여 페이지를 선택할 수도 있습니다.
+   >**사이트** 콘솔에서 **만들기**&#x200B;를 선택하기 전에 [선택 모드](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)를 사용하여 페이지를 선택할 수도 있습니다.
    >
    >이렇게 하면 선택한 페이지가 초기 소스 페이지로 사용됩니다.
 
@@ -114,7 +114,7 @@ Sites 또는 론치 콘솔에서 론치를 만들 수 있습니다.
 >
 >다른 템플릿이 사용되면 새 페이지가 빈 상태로 표시됩니다. 다른 페이지 구조로 인해 콘텐츠가 복사되지 않습니다.
 >
->이 메커니즘을 사용하면 [기존 페이지](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)의 템플릿을 변경할 수 있습니다. 단, 콘텐츠 손실을 고려해야 합니다.
+>이 메커니즘을 사용하면 [기존 페이지](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page)의 템플릿을 변경할 수 있습니다. 단, 콘텐츠 손실을 고려해야 합니다.
 
 ### 중첩 론치 만들기 {#creating-a-nested-launch}
 

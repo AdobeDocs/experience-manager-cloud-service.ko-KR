@@ -2,7 +2,7 @@
 title: 론치 편집
 description: 페이지(또는 페이지 세트)에 대한 론치를 만든 후 페이지의 론치 카피에서 콘텐츠를 편집할 수 있습니다.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 87%
@@ -48,15 +48,15 @@ Live Copy는 *소스 분기에서* *론치 분기로* 콘텐츠를 동기화하�
 
 적용한 변경 내용을 추적하기 위해 **참조**&#x200B;에서 론치를 확인하고 론치 페이지를 소스 페이지와 비교할 수 있습니다.
 
-1. **사이트** 콘솔에서 [론치의 소스 페이지를 검색한 다음 그 중 하나를 선택합니다](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. **[참조](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** 패널을 열고 **론치**&#x200B;를 선택합니다.
+1. **사이트** 콘솔에서 [론치의 소스 페이지를 검색한 다음 그 중 하나를 선택합니다](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. **[참조](/help/sites-cloud/authoring/basic-handling.md#references)** 패널을 열고 **론치**&#x200B;를 선택합니다.
 1. 특정 론치를 선택한 다음, **소스와 비교**&#x200B;를 선택합니다.
 
    ![론치를 소스와 비교](/help/sites-cloud/authoring/assets/launches-compare.png)
 
 1. 두 페이지(론치 및 소스)가 나란히 열립니다.
 
-   이 기능의 사용에 대한 자세한 내용은 [페이지 비교](/help/sites-cloud/authoring/features/page-diff.md)를 참조하십시오.
+   이 기능의 사용에 대한 자세한 내용은 [페이지 비교](/help/sites-cloud/authoring/sites-console/page-diff.md)를 참조하십시오.
 
 ## 사용된 소스 페이지 변경 {#changing-the-source-pages-used}
 

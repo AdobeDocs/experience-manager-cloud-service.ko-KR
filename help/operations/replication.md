@@ -2,7 +2,7 @@
 title: 복제
 description: AEM as a Cloud Service으로 배포 및 복제 문제 해결에 대해 알아봅니다.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 3249f17e6ecb341880597577e1f2a48653a7a88a
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 39%
@@ -31,11 +31,11 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
 
 이 기능을 사용하면 게시 관리 접근 방식을 통해 가능한 추가 옵션 없이 선택한 페이지를 즉시 게시할 수 있습니다.
 
-자세한 내용은 [게시 관리](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication)를 참조하십시오.
+자세한 내용은 [게시 관리](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication)를 참조하십시오.
 
 ### 설정 및 해제 시간 - 트리거 구성 {#on-and-off-times-trigger-configuration}
 
-**설정 시간** 및 **해제 시간**&#x200B;의 추가적인 활용 방법은 [페이지 속성의 기본 탭](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)에서 확인할 수 있습니다.
+**설정 시간** 및 **해제 시간**&#x200B;의 추가적인 활용 방법은 [페이지 속성의 기본 탭](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)에서 확인할 수 있습니다.
 
 이 기능에 대한 자동 복제를 구현하려면 **자동 복제** 다음에서 [OSGi 구성](/help/implementing/deploying/configuring-osgi.md) **설정/해제 트리거 구성**:
 
@@ -47,7 +47,7 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
 
 나중에 게시 옵션에 대해 폴더의 하위 항목을 포함하면 이 문서에 설명된 콘텐츠 트리 게시 워크플로가 호출됩니다.
 
-게시 관리에 대한 자세한 내용은 [게시 기본 사항 설명서](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication)를 참조하십시오.
+게시 관리에 대한 자세한 내용은 [게시 기본 사항 설명서](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication)를 참조하십시오.
 
 ### 콘텐츠 트리 게시 워크플로 {#publish-content-tree-workflow}
 

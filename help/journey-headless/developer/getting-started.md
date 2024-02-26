@@ -2,10 +2,10 @@
 title: AEM Headless as a Cloud Service 시작하기
 description: 이 AEM Headless 개발자 여정의 부분에서는 AEM Headless 사전 요구 사항에 대해 알아봅니다.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '3057'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -181,7 +181,7 @@ AEM Headless 프로젝트를 시작하기 전에 알아 두어야 할 몇 가지
 
 콘텐츠 업데이트 워크플로를 명확히 알립니다. 시스템이 지원해야 하는 승인 프로세스는 무엇입니까? AEM 워크플로를 사용하여 이 프로세스를 자동화할 수 있습니까?
 
-사용자 [콘텐츠 계층](#content-hierarchy) 를 사용하여 보다 쉽게 번역할 수 있습니다.
+[콘텐츠 계층](#content-hierarchy)을 사용하여 번역을 수월하게 할 수 있습니다.
 
 AEM Headless 번역 여정 링크를 포함하여 AEM 워크플로 및 번역 도구에 대한 추가 설명서는 [추가 리소스](#additional-resources) 섹션을 참조하십시오.
 
@@ -284,10 +284,10 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 * [AEM as a Headless CMS 소개](/help/headless/introduction.md)
 * [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [AEM Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 이 실습 튜토리얼을 사용하여 AEM을 통해 콘텐츠를 Headless 엔드포인트를 게재하는 옵션을 사용하는 방법을 살펴보고 자신에게 적합한 옵션을 선택합니다.
-* [GraphQL API를 사용한 Headless 콘텐츠 관리](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - 이 과정에 따라 AEM에서 구현되는 GraphQL API의 개요를 확인합니다. AdobeID를 통한 인증이 필수입니다.
+* [GraphQL API를 사용한 Headless 콘텐츠 관리](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - 이 과정에 따라 AEM에서 구현되는 GraphQL API의 개요를 확인합니다. Adobe ID를 통한 인증이 필요합니다.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - 이 GitHub 프로젝트에는 AEM의 GraphQL API를 강조 표시하는 예제 애플리케이션이 포함됩니다.
-* [작성 개념](/help/sites-cloud/authoring/getting-started/concepts.md) - 작성-게시 설정의 세부 정보가 포함된 AEM의 작성 환경을 대한 기술 설명서
-* [페이지 게시](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) - AEM에서 콘텐츠 게시에 대한 기술 설명서
+* [작성 개념](/help/sites-cloud/authoring/author-publish.md) - 작성-게시 설정의 세부 정보가 포함된 AEM의 작성 환경을 대한 기술 설명서
+* [페이지 게시](/help/sites-cloud/authoring/sites-console/publishing-pages.md) - AEM에서 콘텐츠 게시에 대한 기술 설명서
 * [이름 지정 규칙](/help/implementing/developing/introduction/naming-conventions.md) - AEM에서 페이지 이름 지정 제한 사항에 대한 기술 설명서
 * [다중 사이트 관리자 및 번역](/help/sites-cloud/administering/msm-and-translation.md) - AEM의 강력한 번역 기능에 대한 기술 설명서
 * [AEM 워크플로](/help/sites-cloud/authoring/workflows/overview.md) - AEM에서 워크플로를 자동화하는 방법에 대한 기술 설명서

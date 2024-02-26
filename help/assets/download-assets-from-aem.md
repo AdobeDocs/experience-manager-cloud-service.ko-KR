@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '1329'
 ht-degree: 4%
@@ -42,7 +42,7 @@ ht-degree: 4%
 
 Experience Manager은 에셋 수량 및 크기를 기반으로 다운로드 경험을 최적화합니다. 사용자 인터페이스에서 실시간으로 더 작은 파일이 다운로드됩니다. [!DNL Experience Manager] 단일 에셋을 ZIP 아카이브에 포함하는 대신 원본 파일에 대한 단일 에셋 요청을 직접 다운로드하여 더 빠른 다운로드를 허용합니다. Experience Manager은 비동기 요청으로 대규모 다운로드를 지원합니다. 100GB보다 큰 다운로드 요청은 최대 크기가 각각 100MB인 여러 ZIP 아카이브로 분할됩니다.
 
-기본적으로, [!DNL Experience Manager] 에서 알림 트리거 [[!DNL Experience Manager] 받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md) 다운로드 아카이브를 생성할 때.
+기본적으로, [!DNL Experience Manager] 에서 알림 트리거 [[!DNL Experience Manager] 받은 편지함](/help/sites-cloud/authoring/inbox.md) 다운로드 아카이브를 생성할 때.
 
 ![받은 편지함 알림](assets/inbox-notification-for-large-downloads.png)
 

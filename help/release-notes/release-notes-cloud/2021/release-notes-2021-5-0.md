@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.5.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.5.0 릴리스 정보입니다.'
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: 720430af374636878b42ce346ca9c61ab089709b
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1355'
 ht-degree: 45%
@@ -39,7 +39,7 @@ ht-degree: 45%
 
 ### [!DNL Sites]의 새로운 기능 {#what-is-new-sites}
 
-* 곧 새 의 콘텐츠를 확인할 수 있습니다. [계층 미리 보기](/help/sites-cloud/authoring/fundamentals/previewing-content.md) 게시 계층에서 보고 느끼게 될 최종 경험 디자인을 시뮬레이션합니다. 게시 또는 미리보기 중에서 게시 대상을 선택할 수 있는 AEM Sites Managed 게시 마법사에서 활성화됩니다. 미리보기 의 경험은 전용 URL을 통해 액세스할 수 있습니다. 미리보기에서 유효성 검사 후 평소와 같이 컨텐츠를 작성자에서 게시로 게시할 수 있습니다. AEM as a Cloud Service 환경에서 미리보기 서비스 활성화는 향후 몇 주 이내에 점진적으로 롤아웃될 예정입니다.
+* 곧 새 의 콘텐츠를 확인할 수 있습니다. [계층 미리 보기](/help/sites-cloud/authoring/sites-console/previewing-content.md) 게시 계층에서 보고 느끼게 될 최종 경험 디자인을 시뮬레이션합니다. 게시 또는 미리보기 중에서 게시 대상을 선택할 수 있는 AEM Sites Managed 게시 마법사에서 활성화됩니다. 미리보기 의 경험은 전용 URL을 통해 액세스할 수 있습니다. 미리보기에서 유효성 검사 후 평소와 같이 컨텐츠를 작성자에서 게시로 게시할 수 있습니다. AEM as a Cloud Service 환경에서 미리보기 서비스 활성화는 향후 몇 주 이내에 점진적으로 롤아웃될 예정입니다.
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

@@ -2,9 +2,9 @@
 title: 론치 홍보
 description: 게시 전에 콘텐츠를 소스(프로덕션)로 다시 이동하려면 론치 페이지를 홍보해야 합니다.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '812'
 ht-degree: 98%
 
 ---
@@ -44,12 +44,12 @@ ht-degree: 98%
 
 1. 열기:
    * 소스 페이지 탐색 시 **Sites 콘솔**:
-      1. [참조 레일](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)을 연 다음 [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md)를 사용하여 필요한 소스 페이지를 선택합니다. 순서는 중요하지 않으므로 필요한 소스 페이지를 선택한 다음 참조 레일을 열 수도 있습니다. 모든 참조가 표시됩니다.
+      1. [참조 레일](/help/sites-cloud/authoring/sites-console/console-side-panel.md#references)을 연 다음 [선택 모드](/help/sites-cloud/authoring/basic-handling.md)를 사용하여 필요한 소스 페이지를 선택합니다. 순서는 중요하지 않으므로 필요한 소스 페이지를 선택한 다음 참조 레일을 열 수도 있습니다. 모든 참조가 표시됩니다.
       1. 특정 론치 목록을 표시하려면 **론치**(예: 론치(1))를 선택합니다.
       1. 사용 가능한 동작을 표시하려면 특정 론치를 선택합니다.
       1. **론치 홍보**&#x200B;를 선택하여 마법사를 엽니다.
    * 론치 페이지 탐색 시 **Sites 콘솔**:
-      1. [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md)를 사용하여 필요한 론치 페이지를 선택합니다.
+      1. [선택 모드](/help/sites-cloud/authoring/basic-handling.md)를 사용하여 필요한 론치 페이지를 선택합니다.
       1. 도구 모음에 **홍보** 작업이 표시됩니다.
    * **론치** 콘솔:
       1. 론치를 선택합니다(썸네일 선택).

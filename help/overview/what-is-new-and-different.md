@@ -2,7 +2,7 @@
 title: 차이점 및 새로운 기능 - Adobe Experience Manager as a Cloud Service
 description: 차이점 및 새로운 기능 - Adobe Experience Manager(AEM) as a Cloud Service
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: d4502c7558fca7ecee89b2ce9429fd1c749d8e92
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1883'
 ht-degree: 100%
@@ -240,7 +240,7 @@ AEM as a Cloud Service의 주요 변경 사항은 작성자 계층 액세스에 
 
 >[!NOTE]
 >
->[기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md)를 시작점으로 사용하여 자세한 내용을 확인하십시오.
+>[기본 처리](/help/sites-cloud/authoring/basic-handling.md)를 시작점으로 사용하여 자세한 내용을 확인하십시오.
 
 Sites 및 Assets에 대한 사용자 인터페이스(UI) 작성의 기본 원칙은 이전에 AEM을 사용한 적이 있는 누구에게나 매우 익숙할 것입니다.
 

@@ -2,7 +2,7 @@
 title: 페이지 속성의 일괄 편집 구성
 description: 한 번에 여러 페이지의 속성을 편집할 수 있도록 일괄 편집을 구성하는 방법에 대해 알아봅니다.
 exl-id: 0d10c6b9-8643-479d-adc1-4066d227e83d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 94%
@@ -11,7 +11,7 @@ ht-degree: 94%
 
 # 페이지 속성의 일괄 편집 구성 {#configuring-bulk-editing-of-page-properties}
 
-[페이지 속성의 일괄 편집](/help/sites-cloud/authoring/fundamentals/page-properties.md#from-the-sites-console-multiple-pages)을 통해 한 번에 여러 페이지의 속성을 편집할 수 있습니다.
+[페이지 속성의 일괄 편집](/help/sites-cloud/authoring/sites-console/page-properties.md#from-the-sites-console-multiple-pages)을 통해 한 번에 여러 페이지의 속성을 편집할 수 있습니다.
 
 ## 고려 사항 {#considerations}
 

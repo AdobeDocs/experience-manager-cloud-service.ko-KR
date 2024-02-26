@@ -2,10 +2,10 @@
 title: AEM에서의 콘텐츠 조각 모델 만들기에 대해 알아보기
 description: 콘텐츠 조각 모델을 사용하여 Headless CMS용 콘텐츠를 모델링하는 개념 및 메커니즘에 대해 알아봅니다.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## 콘텐츠 조각 모델 만들기 {#creating-content-fragment-models}
 
-그런 다음 콘텐츠 조각 모델을 만들고 구조를 정의할 수 있습니다. 이 작업은 아래에서 수행할 수 있습니다. **도구** > **일반** > **컨텐츠 조각 모델**.
+그런 다음 콘텐츠 조각 모델을 만들고 구조를 정의할 수 있습니다. **도구** > **일반** > **콘텐츠 조각 모델**&#x200B;에서 수행할 수 있습니다.
 
 ![도구의 콘텐츠 조각 모델](assets/cfm-tools.png)
 
@@ -108,9 +108,9 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## 추가 리소스 {#additional-resources}
 
-* [작성 개념](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [작성 개념](/help/sites-cloud/authoring/author-publish.md)
 
-* [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md) - 이 페이지는 주로 **Sites** 콘솔을 기반으로 하지만 여러/대부분의 기능은 **일반** 콘솔에서의 **콘텐츠 조각 모델** 이동 및 작업 수행과 관련성이 있기도 합니다.
+* [기본 처리](/help/sites-cloud/authoring/basic-handling.md) - 이 페이지는 주로 **Sites** 콘솔을 기반으로 하지만 여러/대부분의 기능은 **일반** 콘솔에서의 **콘텐츠 조각 모델** 이동 및 작업 수행과 관련성이 있기도 합니다.
 
 * [콘텐츠 조각을 사용하여 작업](/help/sites-cloud/administering/content-fragments/overview.md)
 

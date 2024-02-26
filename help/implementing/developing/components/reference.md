@@ -2,10 +2,10 @@
 title: 구성 요소 참조 안내서
 description: 구성 요소 및 해당 구조에 대한 세부 사항에 대한 개발자 참조 안내서
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
-source-wordcount: '3642'
-ht-degree: 2%
+source-wordcount: '3481'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ WKND 튜토리얼은 대부분의 사용 사례를 다루므로, 이 문서는 �
 
 이 섹션에서는 구성 요소를 개발할 때 필요한 세부 사항을 소개하는 주요 개념과 문제를 다룹니다.
 
-### 계획 {#planning}
+### 계획 수립 {#planning}
 
 구성 요소를 실제로 구성하거나 코딩하기 전에 다음 사항을 문의해야 합니다.
 
@@ -103,7 +103,7 @@ AEM 구성 요소의 구조는 강력하고 유연합니다. 주요 부분은 �
 * **루트 노드**:
    * `<mycomponent> (cq:Component)` - 구성 요소의 계층 노드
 * **중요한 속성**:
-   * `jcr:title` - 구성 요소 제목: 예를 들어 구성 요소가 [구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) 및 [구성 요소 콘솔](/help/sites-cloud/authoring/features/components-console.md)
+   * `jcr:title` - 구성 요소 제목: 예를 들어 구성 요소가 [구성 요소 브라우저](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) 및 [구성 요소 콘솔](/help/sites-cloud/authoring/components-console.md)
    * `jcr:description` - 구성 요소에 대한 설명. 구성 요소 브라우저 및 구성 요소 콘솔에서 마우스 오버 힌트로 사용됩니다.
    * 섹션 보기 [구성 요소 아이콘](#component-icon) (세부 사항)
 * **중요한 하위 노드**:
@@ -141,7 +141,7 @@ AEM 구성 요소의 구조는 강력하고 유연합니다. 주요 부분은 �
 
 상위 구성 요소에서 아이콘 상속을 취소하려면 빈 을 설정합니다. `abbreviation` 구성 요소의 속성은 기본 동작으로 되돌아갑니다.
 
-다음 [구성 요소 콘솔](/help/sites-cloud/authoring/features/components-console.md#component-details) 특정 구성 요소의 아이콘이 정의되는 방식을 표시합니다.
+다음 [구성 요소 콘솔](/help/sites-cloud/authoring/components-console.md#component-details) 특정 구성 요소의 아이콘이 정의되는 방식을 표시합니다.
 
 #### SVG 아이콘 예 {#svg-icon-example}
 
@@ -166,7 +166,7 @@ AEM 구성 요소의 구조는 강력하고 유연합니다. 주요 부분은 �
 | 이름 | 유형 | 설명 |
 |---|---|---|
 | `.` | `cq:Component` | 현재 구성 요소를 나타냅니다. 구성 요소가 노드 유형입니다. `cq:Component`. |
-| `componentGroup` | `String` | 다음에서 구성 요소를 선택할 수 있는 그룹을 나타냅니다. [구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). 다음으로 시작하는 값 `.` 다른 구성 요소가 상속되는 기본 구성 요소와 같이 UI에서 선택할 수 없는 구성 요소에 사용됩니다. |
+| `componentGroup` | `String` | 다음에서 구성 요소를 선택할 수 있는 그룹을 나타냅니다. [구성 요소 브라우저](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). 다음으로 시작하는 값 `.` 다른 구성 요소가 상속되는 기본 구성 요소와 같이 UI에서 선택할 수 없는 구성 요소에 사용됩니다. |
 | `cq:isContainer` | `Boolean` | 이는 구성 요소가 컨테이너 구성 요소이므로 단락 시스템과 같은 다른 구성 요소를 포함할 수 있는지 여부를 나타냅니다. |
 | `cq:dialog` | `nt:unstructured` | 구성 요소에 대한 편집 대화 상자 정의입니다. |
 | `cq:design_dialog` | `nt:unstructured` | 구성 요소에 대한 디자인 대화 상자의 정의입니다. |
@@ -199,7 +199,7 @@ AEM 구성 요소의 구조는 강력하고 유연합니다. 주요 부분은 �
 
 ### 대화 상자 {#dialogs}
 
-대화 상자는 작성자가 콘텐츠 페이지에서 구성 요소를 구성하고 해당 구성 요소에 대한 입력을 제공할 수 있는 인터페이스를 제공하므로 구성 요소의 핵심 요소입니다. 다음을 참조하십시오. [작성 설명서](/help/sites-cloud/authoring/fundamentals/editing-content.md) 콘텐츠 작성자가 구성 요소와 상호 작용하는 방법에 대한 자세한 내용.
+대화 상자는 작성자가 콘텐츠 페이지에서 구성 요소를 구성하고 해당 구성 요소에 대한 입력을 제공할 수 있는 인터페이스를 제공하므로 구성 요소의 핵심 요소입니다. 다음을 참조하십시오. [작성 설명서](/help/sites-cloud/authoring/page-editor/edit-content.md) 콘텐츠 작성자가 구성 요소와 상호 작용하는 방법에 대한 자세한 내용.
 
 구성 요소의 복잡성에 따라 대화 상자에 하나 이상의 탭이 필요할 수 있습니다.
 
@@ -221,9 +221,9 @@ AEM 구성 요소에 대한 대화 상자:
 
 ### 디자인 대화 상자 {#design-dialogs}
 
-디자인 대화 상자는 콘텐츠를 편집하고 구성하는 데 사용되는 대화 상자와 유사하지만, 템플릿 작성자가 페이지 템플릿에서 해당 구성 요소에 대한 디자인 세부 정보를 미리 구성하고 제공할 수 있는 인터페이스를 제공합니다. 그런 다음 콘텐츠 작성자는 페이지 템플릿을 사용하여 콘텐츠 페이지를 만듭니다. 다음을 참조하십시오. [템플릿 설명서](/help/sites-cloud/authoring/features/templates.md) 템플릿 생성 방법에 대한 자세한 내용
+디자인 대화 상자는 콘텐츠를 편집하고 구성하는 데 사용되는 대화 상자와 유사하지만, 템플릿 작성자가 페이지 템플릿에서 해당 구성 요소에 대한 디자인 세부 정보를 미리 구성하고 제공할 수 있는 인터페이스를 제공합니다. 그런 다음 콘텐츠 작성자는 페이지 템플릿을 사용하여 콘텐츠 페이지를 만듭니다. 다음을 참조하십시오. [템플릿 설명서](/help/sites-cloud/authoring/sites-console/templates.md) 템플릿 생성 방법에 대한 자세한 내용
 
-[페이지 템플릿을 편집할 때 디자인 대화 상자가 사용됩니다](/help/sites-cloud/authoring/features/templates.md)모든 구성 요소에 필요한 것은 아니지만. 예를 들어 **제목** 및 **이미지 구성 요소** 둘 다 디자인 대화 상자가 있지만 **소셜 미디어 공유 구성 요소** 그렇지 않습니다.
+[페이지 템플릿을 편집할 때 디자인 대화 상자가 사용됩니다](/help/sites-cloud/authoring/sites-console/templates.md)모든 구성 요소에 필요한 것은 아니지만. 예를 들어 **제목** 및 **이미지 구성 요소** 둘 다 디자인 대화 상자가 있지만 **소셜 미디어 공유 구성 요소** 그렇지 않습니다.
 
 ### Coral UI 및 Granite UI {#coral-and-granite}
 
@@ -278,7 +278,7 @@ Content not found
 
 구성 요소를 정의한 후 사용할 수 있도록 해야 합니다. 구성 요소를 템플릿에서 사용할 수 있도록 하려면 템플릿의 레이아웃 컨테이너 정책에서 구성 요소를 활성화해야 합니다.
 
-다음을 참조하십시오. [템플릿 설명서](/help/sites-cloud/authoring/features/templates.md) 템플릿 생성 방법에 대한 자세한 내용
+다음을 참조하십시오. [템플릿 설명서](/help/sites-cloud/authoring/sites-console/templates.md) 템플릿 생성 방법에 대한 자세한 내용
 
 ### 구성 요소 및 구성 요소가 만드는 콘텐츠 {#components-and-the-content-they-create}
 
@@ -469,7 +469,7 @@ Granite UI 및 Granite UI 위젯의 필드 유효성 검사는 다음을 사용�
 
 ![구성 요소 구조의 README.md](assets/components-documentation.png)
 
-그러면 이 Markdown이 [구성 요소 콘솔](/help/sites-cloud/authoring/features/components-console.md).
+그러면 이 Markdown이 [구성 요소 콘솔](/help/sites-cloud/authoring/components-console.md).
 
 ![구성 요소 콘솔에 표시되는 README.md](assets/components-documentation-console.png)
 

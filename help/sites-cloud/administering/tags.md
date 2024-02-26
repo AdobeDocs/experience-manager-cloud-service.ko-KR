@@ -2,7 +2,7 @@
 title: 태그 관리
 description: 콘텐츠 정리를 위해 AEM에서 태그를 관리하는 방법을 알아봅니다.
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '2200'
 ht-degree: 73%
@@ -16,7 +16,7 @@ ht-degree: 73%
 AEM(Adobe Experience Manager)에서 태그는 다음의 속성일 수 있습니다.
 
 * 페이지의 콘텐츠 노드
-   * 자세한 내용은 [태그 사용](/help/sites-cloud/authoring/features/tags.md) 문서를 참조하십시오.
+   * 자세한 내용은 [태그 사용](/help/sites-cloud/authoring/sites-console/tags.md) 문서를 참조하십시오.
 * 자산의 메타데이터 노드
    * 자세한 내용은 [디지털 자산에 대한 메타데이터 관리](/help/assets/manage-metadata.md) 문서를 참조하십시오.
 
@@ -183,7 +183,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
    ![태그 속성 보기](assets/tag-properties.png)
 
-보기 모드 및 레일 선택에 대한 자세한 내용은 [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
+보기 모드 및 레일 선택에 대한 자세한 내용은 [기본 처리](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 ### 태그 편집 {#editing-tags}
 
@@ -245,7 +245,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 마우스로 가리키거나 목록에서 참조 콘텐츠를 선택하여 콘텐츠의 전체 경로를 표시합니다.
 
-보기 모드 및 레일 선택에 대한 자세한 내용은 [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
+보기 모드 및 레일 선택에 대한 자세한 내용은 [기본 처리](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 ### 태그로 이동 {#moving-tags}
 

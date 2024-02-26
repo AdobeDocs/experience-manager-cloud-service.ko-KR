@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Panoramic Images
 role: User
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 15%
+source-wordcount: '149'
+ht-degree: 1%
 
 ---
 
@@ -25,12 +25,11 @@ ht-degree: 15%
 업로드한 에셋이 파노라마 이미지 뷰어에 사용하려는 구면 파노라마 이미지로서 적합하려면, 에셋에 다음 중 하나 또는 둘 다 있어야 합니다.
 
 * 종횡비가 2입니다.
-
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* 키워드로 태그 지정됨 `equirectangular`, 또는 `spherical`및 `panorama`, 또는 `spherical` 및 `panoramic`. 다음을 참조하십시오 [태그 사용](/help/sites-cloud/authoring/features/tags.md).
+* 키워드로 태그 지정됨 `equirectangular`, 또는 `spherical`및 `panorama`, 또는 `spherical` 및 `panoramic`. 다음을 참조하십시오 [태그 사용](/help/sites-cloud/authoring/sites-console/tags.md).
 
-Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the `Panoramic Media` WCM component.
+종횡비와 키워드 기준은 모두 자산 세부 사항 페이지 및 의 파노라마 자산에 적용됩니다. `Panoramic Media` WCM 구성 요소입니다.
 
 파노라마 이미지 뷰어에 사용할 자산을 업로드하려면 다음을 참조하십시오. [에셋 업로드](/help/assets/manage-digital-assets.md#uploading-assets).
 

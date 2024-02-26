@@ -4,7 +4,7 @@ description: Live Copy를 만들고 동기화하여 사이트 간 콘텐츠를 �
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '4270'
 ht-degree: 94%
@@ -53,7 +53,7 @@ ht-degree: 94%
 
 블루프린트 구성을 만들려면 다음 작업을 수행하십시오.
 
-1. **도구** 메뉴로 [이동](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)한 다음 **사이트** 메뉴를 선택합니다.
+1. **도구** 메뉴로 [이동](/help/sites-cloud/authoring/basic-handling.md#global-navigation)한 다음 **사이트** 메뉴를 선택합니다.
 1. **블루프린트**&#x200B;를 선택하여 **블루프린트 구성** 콘솔을 엽니다.
 
    ![블루프린트 구성](../assets/blueprint-configurations.png)
@@ -72,7 +72,7 @@ ht-degree: 94%
 
 기존 블루프린트 구성을 편집하거나 삭제할 수 있습니다.
 
-1. **도구** 메뉴로 [이동](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)한 다음 **사이트** 메뉴를 선택합니다.
+1. **도구** 메뉴로 [이동](/help/sites-cloud/authoring/basic-handling.md#global-navigation)한 다음 **사이트** 메뉴를 선택합니다.
 1. **블루프린트**&#x200B;를 선택하여 **블루프린트 구성** 콘솔을 엽니다.
 
    ![블루프린트 구성](../assets/blueprint-configurations.png)
@@ -211,7 +211,7 @@ Live Copy 페이지의 속성에는 다음과 같은 Live Copy에 대한 정보�
 
 ### 블루프린트 페이지의 Live Copy 보기 {#seeing-the-live-copies-of-a-blueprint-page}
 
-블루프린트 구성에서 참조하는 블루프린트 페이지는 현재 (블루프린트) 페이지를 소스로 사용하는 Live Copy 페이지 목록을 제공합니다. 이 목록을 사용하여 Live Copy를 계속 추적할 수 있습니다. 이 목록은 [페이지 속성](/help/sites-cloud/authoring/fundamentals/page-properties.md)의 **블루프린트** 탭에 표시됩니다.
+블루프린트 구성에서 참조하는 블루프린트 페이지는 현재 (블루프린트) 페이지를 소스로 사용하는 Live Copy 페이지 목록을 제공합니다. 이 목록을 사용하여 Live Copy를 계속 추적할 수 있습니다. 이 목록은 [페이지 속성](/help/sites-cloud/authoring/sites-console/page-properties.md)의 **블루프린트** 탭에 표시됩니다.
 
 ![페이지 속성의 블루프린트 탭](../assets/live-copy-blueprint-tab.png)
 
@@ -249,7 +249,7 @@ Live Copy 페이지의 속성에는 다음과 같은 Live Copy에 대한 정보�
 
 #### 참조 레일에서 블루프린트 롤아웃 {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. **사이트** 콘솔에서 Live Copy의 페이지를 선택한 다음 도구 모음에서 **[참조](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** 패널을 엽니다.
+1. **사이트** 콘솔에서 Live Copy의 페이지를 선택한 다음 도구 모음에서 **[참조](/help/sites-cloud/authoring/basic-handling.md#references)** 패널을 엽니다.
 1. 목록에서 **블루프린트** 옵션을 선택하여 이 페이지와 연결된 블루프린트를 표시합니다.
 1. 목록에서 필요한 블루프린트를 선택합니다.
 1. **롤아웃**&#x200B;을 선택합니다.
@@ -575,8 +575,8 @@ Live Copy 페이지를 선택하면 Live Copy 개요](live-copy-overview.md#usin
 
 적용한 변경 내용을 추적하기 위해 **참조**&#x200B;에서 블루프린트 페이지를 확인하고 이를 Live Copy 페이지와 비교할 수 있습니다.
 
-1. **사이트** 콘솔에서 [블루프린트 또는 Live Copy 페이지를 검색한 다음 선택합니다](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. **[참조](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** 패널을 연 다음 컨텍스트에 따라 다음 중 하나를 선택합니다.
+1. **사이트** 콘솔에서 [블루프린트 또는 Live Copy 페이지를 검색한 다음 선택합니다](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. **[참조](/help/sites-cloud/authoring/basic-handling.md#references)** 패널을 연 다음 컨텍스트에 따라 다음 중 하나를 선택합니다.
 
    * **블루프린트**
    * **Live Copy**
@@ -592,7 +592,7 @@ Live Copy 페이지를 선택하면 Live Copy 개요](live-copy-overview.md#usin
 
 1. Live Copy 및 블루프린트 페이지가 나란히 열립니다.
 
-   비교 기능 사용에 대한 전체 정보는 [페이지 비교](/help/sites-cloud/authoring/features/page-diff.md)를 참조하십시오.
+   비교 기능 사용에 대한 전체 정보는 [페이지 비교](/help/sites-cloud/authoring/sites-console/page-diff.md)를 참조하십시오.
 
 ## Live Copy 분리 {#detaching-a-live-copy}
 

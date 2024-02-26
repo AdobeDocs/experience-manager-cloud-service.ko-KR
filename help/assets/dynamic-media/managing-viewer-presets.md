@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '4326'
 ht-degree: 8%
@@ -114,7 +114,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
    <td><p>파노라마 이미지 및 PanoramicVR 뷰어는 구형의 파노라마 이미지를 렌더링하여 사용자가 공간, 속성, 위치 또는 풍경을 360° 뷰잉할 수 있도록 합니다.</p> <p>업로드된 이미지가 구면 파노라마로 적합하려면 다음 중 하나 또는 둘 다 있어야 합니다.</p>
     <ul>
      <li>종횡비는 2:1입니다.</li>
-     <li>키워드로 태그 지정됨 <code>equirectangular</code>, 또는 <code>spherical</code> 및 <code>panorama</code>, 또는 <code>spherical </code>및 <code>panoramic</code>. 다음을 참조하십시오 <a href="/help/sites-cloud/authoring/features/tags.md">태그 사용</a>.</li>
+     <li>키워드로 태그 지정됨 <code>equirectangular</code>, 또는 <code>spherical</code> 및 <code>panorama</code>, 또는 <code>spherical </code>및 <code>panoramic</code>. 다음을 참조하십시오 <a href="/help/sites-cloud/authoring/sites-console/tags.md">태그 사용</a>.</li>
     </ul> <p>종횡비와 키워드 기준은 모두 자산 세부 사항 페이지 및 "파노라마 미디어" WCM 구성 요소의 파노라마 자산에 적용됩니다.</p></td>
   </tr>
     <tr>

@@ -3,16 +3,16 @@ title: 콘텐츠를 작성할 리치 텍스트 편집기 구성 [!DNL Adobe Expe
 description: 콘텐츠를 작성할 리치 텍스트 편집기 구성 [!DNL Adobe Experience Manager] as a Cloud Service.
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1858'
 ht-degree: 0%
 
 ---
 
 # 리치 텍스트 편집기 구성 {#configure-the-rich-text-editor}
 
-리치 텍스트 편집기(RTE)는 작성자에게 텍스트 콘텐츠를 편집할 수 있는 다양한 기능을 제공합니다. WYSIWYG 텍스트 편집 환경을 위해 아이콘, 선택 상자, 도구 모음 및 메뉴가 제공됩니다. 관리자는 작성 구성 요소에서 사용할 수 있는 기능을 활성화, 비활성화 및 확장하도록 RTE를 구성합니다. 작성자가 [작성에 RTE 사용](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) 웹 컨텐츠.
+리치 텍스트 편집기(RTE)는 작성자에게 텍스트 콘텐츠를 편집할 수 있는 다양한 기능을 제공합니다. WYSIWYG 텍스트 편집 환경을 위해 아이콘, 선택 상자, 도구 모음 및 메뉴가 제공됩니다. 관리자는 작성 구성 요소에서 사용할 수 있는 기능을 활성화, 비활성화 및 확장하도록 RTE를 구성합니다. 작성자가 [작성에 RTE 사용](/help/sites-cloud/authoring/page-editor/rich-text-editor.md) 웹 컨텐츠.
 
 이를 구성하는 데 필요한 RTE 개념 및 단계는 아래에 나와 있습니다.
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 작성자가 사용할 수 있는 사용자 인터페이스 이해 {#understand-rte-ui}
 
-RTE 인터페이스는 [반응형 디자인](/help/sites-cloud/authoring/features/responsive-layout.md) 작성 환경용입니다. 인터페이스는 터치 및 데스크탑 디바이스에서 사용하도록 설계되었습니다.
+RTE 인터페이스는 [반응형 디자인](/help/sites-cloud/authoring/page-editor/responsive-layout.md) 작성 환경용입니다. 인터페이스는 터치 및 데스크탑 디바이스에서 사용하도록 설계되었습니다.
 
 ![리치 텍스트 편집기 도구 모음](assets/rte-toolbar-full-screen-mode.png)
 
@@ -95,12 +95,12 @@ RTE의 기본 기능은 의 값에 따라 활성화되거나 비활성화됩니�
 | 플러그인 ID | 기능 | 설명 |
 |--- |--- |--- |
 | 편집 | `cut`, `copy`, `paste-default`, `paste-plaintext`, `paste-wordhtml` | [잘라내기, 복사 및 세 가지 붙여넣기 모드](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles). |
-| 핀드레플레이스 | `find`, `replace` | 찾기 및 바꾸기. |
+| 핀드레플레이스 | `find`, `replace` | 찾아 바꾸기. |
 | 형식 | `bold`, `italic`, `underline` | [기본 텍스트 서식](configure-rich-text-editor-plug-ins.md#textstyles). |
 | 이미지 | `image` | 기본 이미지 지원(콘텐츠 또는 콘텐츠 파인더에서 드래그). 브라우저에 따라 작성자에 대한 지원 동작이 다릅니다 |
 | 키 | - | 이 값을 정의하려면 다음을 참조하십시오 [탭 크기](configure-rich-text-editor-plug-ins.md#tabsize). |
 | 양쪽 맞춤 | `justifyleft`, `justifycenter`, `justifyright` | 단락 정렬. |
-| links | `modifylink`, `unlink`, `anchor` | [하이퍼링크 및 앵커](configure-rich-text-editor-plug-ins.md#linkstyles). |
+| 링크 | `modifylink`, `unlink`, `anchor` | [하이퍼링크 및 앵커](configure-rich-text-editor-plug-ins.md#linkstyles). |
 | 목록 | `ordered`, `unordered`, `indent`, `outdent` | 이 플러그인은 두 가지 작업을 모두 제어합니다. [들여쓰기 및 목록](configure-rich-text-editor-plug-ins.md#indentmargin); 중첩된 목록 포함. |
 | misctools | `specialchars`, `sourceedit` | 기타 도구를 사용하면 작성자가 입력할 수 있습니다. [특수 문자](configure-rich-text-editor-plug-ins.md#spchar) 또는 HTML 소스를 편집합니다. 또한 다음을 추가할 수 있습니다 [특수 문자 범위](configure-rich-text-editor-plug-ins.md#definerangechar) 고유한 목록을 정의하려는 경우 |
 | Paraformat | `paraformat` | 기본 단락 형식은 단락, 제목 1, 제목 2 및 제목 3 입니다(`<p>`, `<h1>`, `<h2>`, 및 `<h3>`). 다음을 수행할 수 있습니다. [더 많은 단락 형식 추가](configure-rich-text-editor-plug-ins.md#paraformats) 또는 목록을 확장합니다. |
@@ -152,7 +152,7 @@ RTE 플러그인의 자세한 구성은 다음을 참조하십시오. [rte 플�
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-다음 [코어 구성 요소 텍스트 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) 템플릿 편집기에서 사용자 인터페이스를 콘텐츠 정책으로 사용하여 여러 RTE 플러그인을 구성할 수 있으므로 기술 구성이 필요하지 않습니다. 콘텐츠 정책은 이 문서에 설명된 대로 RTE UI 구성에서 작동할 수 있습니다. 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/features/templates.md) 및 [핵심 구성 요소 개발자 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
+다음 [코어 구성 요소 텍스트 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) 템플릿 편집기에서 사용자 인터페이스를 콘텐츠 정책으로 사용하여 여러 RTE 플러그인을 구성할 수 있으므로 기술 구성이 필요하지 않습니다. 콘텐츠 정책은 이 문서에 설명된 대로 RTE UI 구성에서 작동할 수 있습니다. 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/sites-console/templates.md) 및 [핵심 구성 요소 개발자 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >참조용으로 기본 텍스트 구성 요소(표준 설치의 일부로 제공)는 다음에서 찾을 수 있습니다.
 >
@@ -214,11 +214,11 @@ RTE 플러그인의 자세한 구성은 다음을 참조하십시오. [rte 플�
 
 구분 기호(`|`) 옵션 그룹 사이에 을 지정할 수 있습니다. `-`.
 
-인라인 또는 전체 화면 모드 아래의 팝업 노드에는 사용 중인 팝업 오버 목록이 포함됩니다. 아래에 있는 각 하위 노드 `popovers` 노드의 이름은 플러그인(예: format) 이름을 따서 지정합니다. 여기에는 플러그인의 기능 목록이 포함된 속성 &#39;items&#39;가 있습니다(예: format#bold).
+인라인 또는 전체 화면 모드 아래의 팝업 노드에는 사용 중인 팝업 오버 목록이 포함됩니다. 아래에 있는 각 하위 노드 `popovers` 노드의 이름은 플러그인(예: format) 이름을 따서 지정합니다. 여기에는 플러그인의 기능 목록을 포함하는 속성 &#39;items&#39;가 있습니다(예: format#bold).
 
 ## RTE 사용자 인터페이스 설정 및 콘텐츠 정책 {#rtecontentpolicies}
 
-관리자는 위에서 설명한 대로 구성을 수행하는 대신 콘텐츠 정책을 사용하여 RTE 옵션을 제어할 수 있습니다. 콘텐츠 정책은 의 일부로 사용할 때 구성 요소의 디자인 속성을 정의합니다. [편집 가능한 템플릿](/help/sites-cloud/authoring/features/templates.md). 예를 들어 RTE를 사용하는 텍스트 구성 요소를 편집 가능한 템플릿과 함께 사용하는 경우 콘텐츠 정책에서 굵게 옵션을 사용할 수 있고 몇 가지 단락 서식 옵션을 사용할 수 있도록 정의할 수 있습니다. 콘텐츠 정책은 재사용이 가능하며 여러 템플릿에 적용할 수 있습니다.
+관리자는 위에서 설명한 대로 구성을 수행하는 대신 콘텐츠 정책을 사용하여 RTE 옵션을 제어할 수 있습니다. 콘텐츠 정책은 의 일부로 사용할 때 구성 요소의 디자인 속성을 정의합니다. [편집 가능한 템플릿](/help/sites-cloud/authoring/sites-console/templates.md). 예를 들어 RTE를 사용하는 텍스트 구성 요소를 편집 가능한 템플릿과 함께 사용하는 경우 콘텐츠 정책에서 굵게 옵션을 사용할 수 있고 몇 가지 단락 서식 옵션을 사용할 수 있도록 정의할 수 있습니다. 콘텐츠 정책은 재사용이 가능하며 여러 템플릿에 적용할 수 있습니다.
 
 RTE에서 사용할 수 있는 옵션은 사용자 인터페이스 구성에서 콘텐츠 정책으로 다운스트림됩니다.
 
@@ -280,5 +280,5 @@ RTE 도구 모음에 표시되는 Coral 아이콘과 사용 가능한 명령 간
 >[!MORELIKETHIS]
 >
 >* [RTE 플러그인 구성](configure-rich-text-editor-plug-ins.md)
->* [작성을 위해 리치 텍스트 편집기 사용](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
+>* [작성을 위해 리치 텍스트 편집기 사용](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
 >* [액세스 가능한 사이트에 대한 RTE 구성](rte-accessible-content.md)

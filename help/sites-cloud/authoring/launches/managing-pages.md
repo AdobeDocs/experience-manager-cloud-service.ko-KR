@@ -2,7 +2,7 @@
 title: 론치에서 페이지 관리
 description: 론치에서 새 페이지를 만들 수 있습니다. 원하지 않는 페이지를 삭제할 수도 있습니다.
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 89%
@@ -58,7 +58,7 @@ ht-degree: 89%
 
 1. [론치에서 원하는 위치로 이동합니다](#navigate-structure-of-launch).
 
-1. **만들기**&#x200B;를 선택하여 평소와 같이 [페이지를 생성](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)합니다.
+1. **만들기**&#x200B;를 선택하여 평소와 같이 [페이지를 생성](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page)합니다.
 
 ## 론치에서 페이지 제거 {#remove-pages-from-launch}
 
@@ -66,4 +66,4 @@ ht-degree: 89%
 
 1. [론치에서 원하는 위치로 이동합니다](#navigate-structure-of-launch).
 
-1. **삭제**&#x200B;를 선택하여 평소와 같이 [페이지를 삭제](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page)합니다.
+1. **삭제**&#x200B;를 선택하여 평소와 같이 [페이지를 삭제](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page)합니다.

@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 4b05e8f8ae554e7c0881134ef24ca8ce35e3e2bf
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '4976'
 ht-degree: 6%
@@ -197,7 +197,7 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 필요합니�
 
 ### 게시용 태그 추가 {#adding-tags-for-publishing}
 
-비디오에 YouTube을 게시하려면 Experience Manager이 태그를 하나 이상의 YouTube 채널에 연결합니다. 게시할 태그를 추가하려면 다음을 참조하십시오. [태그 관리](/help/sites-cloud/authoring/features/tags.md).
+비디오에 YouTube을 게시하려면 Experience Manager이 태그를 하나 이상의 YouTube 채널에 연결합니다. 게시할 태그를 추가하려면 다음을 참조하십시오. [태그 관리](/help/sites-cloud/authoring/sites-console/tags.md).
 
 또는 Experience Manager에서 기본 태그를 사용하려는 경우 이 작업을 건너뛰고 다음으로 이동할 수 있습니다. [Experience Manager에서 YouTube 설정](#setting-up-youtube-in-aem).
 
@@ -390,11 +390,11 @@ To create the metadata processing profile, you are first going to copy values fr
 
 >[!NOTE]
 >
-YouTube에서 콘텐츠를 게시하기 위해 Experience Manager은 **[!UICONTROL YouTube에 게시]** 워크플로를 사용하면 진행 상황을 모니터링하고 오류 정보를 볼 수 있습니다.
+>YouTube에서 콘텐츠를 게시하기 위해 Experience Manager은 **[!UICONTROL YouTube에 게시]** 워크플로를 사용하면 진행 상황을 모니터링하고 오류 정보를 볼 수 있습니다.
 >
-다음을 참조하십시오 [비디오 인코딩 및 YouTube 게시 진행 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress).
+>다음을 참조하십시오 [비디오 인코딩 및 YouTube 게시 진행 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress).
 >
-자세한 진행 정보는 복제 아래의 YouTube 로그를 모니터링할 수 있습니다. 그러나 이러한 모니터링에는 관리자 액세스 권한이 필요합니다.
+>자세한 진행 정보는 복제 아래의 YouTube 로그를 모니터링할 수 있습니다. 그러나 이러한 모니터링에는 관리자 액세스 권한이 필요합니다.
 
 **비디오를 YouTube 채널에 게시하려면:**
 
@@ -430,7 +430,7 @@ YouTube에서 콘텐츠를 게시하기 위해 Experience Manager은 **[!UICONTR
 
 >[!NOTE]
 >
-YouTube URL은 비디오 자산을 YouTube에 게시하기 전까지 복사할 수 없습니다.
+>YouTube URL은 비디오 자산을 YouTube에 게시하기 전까지 복사할 수 없습니다.
 
 YouTube URL을 웹 애플리케이션에 연결하려면 다음을 수행하십시오.
 
@@ -448,13 +448,13 @@ Experience Manager에서 비디오 에셋의 게시를 취소하면 비디오가
 
 >[!CAUTION]
 >
-YouTube 내에서 직접 비디오를 제거하는 경우 Experience Manager은 알지 못하며 비디오가 여전히 YouTube에 게시된 것처럼 계속 동작합니다. 항상 Experience Manager을 통해 YouTube에서 비디오 자산의 게시를 취소합니다.
+>YouTube 내에서 직접 비디오를 제거하는 경우 Experience Manager은 알지 못하며 비디오가 여전히 YouTube에 게시된 것처럼 계속 동작합니다. 항상 Experience Manager을 통해 YouTube에서 비디오 자산의 게시를 취소합니다.
 
 >[!NOTE]
 >
-YouTube에서 컨텐츠를 제거하려면 Experience Manager에서 **[!UICONTROL YouTube에서 게시 취소]** 워크플로를 사용하면 진행 상황을 모니터링하고 오류 정보를 볼 수 있습니다.
+>YouTube에서 컨텐츠를 제거하려면 Experience Manager에서 **[!UICONTROL YouTube에서 게시 취소]** 워크플로를 사용하면 진행 상황을 모니터링하고 오류 정보를 볼 수 있습니다.
 >
-다음을 참조하십시오 [비디오 인코딩 및 YouTube 게시 진행 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress).
+>다음을 참조하십시오 [비디오 인코딩 및 YouTube 게시 진행 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 **YouTube에서 제거하기 위해 비디오 게시를 취소하려면 다음을 수행하십시오.**
 
@@ -495,19 +495,19 @@ YouTube에서 컨텐츠를 제거하려면 Experience Manager에서 **[!UICONTRO
 
    >[!NOTE]
    >
-   의 여러 워크플로우 구성으로 인해 실패/오류 메시지가 최종적으로 기록되는 데 시간이 오래 걸릴 수 있습니다. **[!UICONTROL 다시 시도]**, **[!UICONTROL 재시도 지연]**, 및 **[!UICONTROL timeout]** 출처: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), 예를 들면 다음과 같습니다.
+   >의 여러 워크플로우 구성으로 인해 실패/오류 메시지가 최종적으로 기록되는 데 시간이 오래 걸릴 수 있습니다. **[!UICONTROL 다시 시도]**, **[!UICONTROL 재시도 지연]**, 및 **[!UICONTROL timeout]** 출처: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), 예를 들면 다음과 같습니다.
    >
-   * Apache Sling 작업 큐 구성
-   * Adobe Granite 워크플로 외부 프로세스 작업 핸들러
-   * Granite 워크플로우 시간 초과 큐
+   >* Apache Sling 작업 큐 구성
+   >* Adobe Granite 워크플로 외부 프로세스 작업 핸들러
+   >* Granite 워크플로우 시간 초과 큐
    >
-   다음을 조정할 수 있습니다. **[!UICONTROL 다시 시도]**, **[!UICONTROL 재시도 지연]**, 및 **[!UICONTROL timeout]** 이러한 구성의 속성.
+   >다음을 조정할 수 있습니다. **[!UICONTROL 다시 시도]**, **[!UICONTROL 재시도 지연]**, 및 **[!UICONTROL timeout]** 이러한 구성의 속성.
 
 1. For workflows in progress, see Workflow Instances available from **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Instances]**.
 
    >[!NOTE]
    >
-   에 액세스하려면 관리 권한이 필요합니다. **[!UICONTROL 도구]** 메뉴 아래의 제품에서 사용할 수 있습니다.
+   >에 액세스하려면 관리 권한이 필요합니다. **[!UICONTROL 도구]** 메뉴 아래의 제품에서 사용할 수 있습니다.
 
    ![chlimage_1-433](/help/assets/dynamic-media/assets/chlimage_1-433.png)
 
@@ -521,25 +521,25 @@ YouTube에서 컨텐츠를 제거하려면 Experience Manager에서 **[!UICONTRO
 
    >[!NOTE]
    >
-   에 액세스하려면 관리 권한이 필요합니다. **[!UICONTROL 도구]** 메뉴 아래의 제품에서 사용할 수 있습니다.
+   >에 액세스하려면 관리 권한이 필요합니다. **[!UICONTROL 도구]** 메뉴 아래의 제품에서 사용할 수 있습니다.
 
    ![chlimage_1-435](/help/assets/dynamic-media/assets/chlimage_1-435.png)
 
    >[!NOTE]
    >
-   의 여러 워크플로우 구성으로 인해 오류 메시지가 최종적으로 기록되는 데 시간이 오래 걸릴 수 있습니다. **[!UICONTROL 다시 시도]**, **[!UICONTROL 재시도 지연]**, 및 **[!UICONTROL timeout]** 출처: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), 예를 들면 다음과 같습니다.
+   >의 여러 워크플로우 구성으로 인해 오류 메시지가 최종적으로 기록되는 데 시간이 오래 걸릴 수 있습니다. **[!UICONTROL 다시 시도]**, **[!UICONTROL 재시도 지연]**, 및 **[!UICONTROL timeout]** 출처: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), 예를 들면 다음과 같습니다.
    >
-   * Apache Sling 작업 큐 구성
-   * Adobe Granite 워크플로 외부 프로세스 작업 핸들러
-   * Granite 워크플로우 시간 초과 큐
+   >* Apache Sling 작업 큐 구성
+   >* Adobe Granite 워크플로 외부 프로세스 작업 핸들러
+   >* Granite 워크플로우 시간 초과 큐
    >
-   다음을 조정할 수 있습니다. **[!UICONTROL 다시 시도]**, **[!UICONTROL 재시도 지연]**, 및 **[!UICONTROL timeout]** 이러한 구성의 속성.
+   >다음을 조정할 수 있습니다. **[!UICONTROL 다시 시도]**, **[!UICONTROL 재시도 지연]**, 및 **[!UICONTROL timeout]** 이러한 구성의 속성.
 
 1. For completed workflows, see Workflow Archive available from **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Archive]**. The **[!UICONTROL Workflow Archive]** lists all completed workflow activities.
 
    >[!NOTE]
    >
-   에 액세스하려면 관리 권한이 필요합니다. **[!UICONTROL 도구]** 메뉴 아래의 제품에서 사용할 수 있습니다.
+   >에 액세스하려면 관리 권한이 필요합니다. **[!UICONTROL 도구]** 메뉴 아래의 제품에서 사용할 수 있습니다.
 
    ![chlimage_1-436](/help/assets/dynamic-media/assets/chlimage_1-436.png)
 
@@ -609,7 +609,7 @@ For YouTube publishing jobs, do the following:
 
 >[!NOTE]
 >
-MXF 비디오 포맷은 비디오 자산 주석에서 아직 지원되지 않습니다.
+>MXF 비디오 포맷은 비디오 자산 주석에서 아직 지원되지 않습니다.
 
 1. 다음에서 [!DNL Assets] 콘솔, 선택 **[!UICONTROL 편집]** 에셋 세부 사항 페이지를 표시하려면 에셋 카드에서 를 선택합니다.
 1. 비디오를 재생하려면 **[!UICONTROL 미리 보기]**.
@@ -649,5 +649,5 @@ MXF 비디오 포맷은 비디오 자산 주석에서 아직 지원되지 않습
 
 >[!MORELIKETHIS]
 >
-* [Dynamic Media 비디오 설명서](/help/assets/dynamic-media/video.md).
-* [처리 프로필의 사용, 유형 및 구성에 대해 자세히 알아보기](/help/assets/asset-microservices-configure-and-use.md).
+>* [Dynamic Media 비디오 설명서](/help/assets/dynamic-media/video.md).
+>* [처리 프로필의 사용, 유형 및 구성에 대해 자세히 알아보기](/help/assets/asset-microservices-configure-and-use.md).

@@ -4,7 +4,7 @@ description: AEM을 Microsoft Translator에 연결하여 번역 워크플로를 
 feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 81%
@@ -34,7 +34,7 @@ ht-degree: 81%
 
 다음 절차를 통해 Microsoft Translator 구성이 생성됩니다.
 
-1. 다음에서 [탐색 패널,](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) 선택 **도구** > **Cloud Service** > **번역 Cloud Service**.
+1. 다음에서 [탐색 패널,](/help/sites-cloud/authoring/basic-handling.md#first-steps) 선택 **도구** > **Cloud Service** > **번역 Cloud Service**.
 1. 구성을 만들 위치로 이동합니다. 일반적으로 이는 사이트 루트에 있거나 전역 기본 구성일 수 있습니다.
 1. **만들기** 버튼을 선택합니다.
 1. 구성을 정의합니다.
@@ -56,7 +56,7 @@ ht-degree: 81%
 
 Microsoft Translation 구성 페이지는 프로덕션 시스템에 적합한 계정 구독을 얻기 위한 Microsoft 웹 사이트로 간편하게 이동할 수 있는 링크를 제공합니다.
 
-1. 다음에서 [탐색 패널,](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) 선택 **도구** > **Cloud Service** > **번역 Cloud Service**.
+1. 다음에서 [탐색 패널,](/help/sites-cloud/authoring/basic-handling.md#first-steps) 선택 **도구** > **Cloud Service** > **번역 Cloud Service**.
 1. 기존 Microsoft Translator 구성을 선택합니다.
 1. **편집**&#x200B;을 선택합니다.
 1. 다음에서 **구성 편집** 창, 선택 **구독 업그레이드**. 서비스에 대한 세부 정보가 포함된 Microsoft 웹 페이지가 열립니다.
@@ -65,13 +65,13 @@ Microsoft Translation 구성 페이지는 프로덕션 시스템에 적합한 �
 
 Microsoft Translation 구성 페이지는 Microsoft Translator 엔진을 맞춤화하기 위한 Microsoft 웹 사이트로 간편하게 이동할 수 있는 링크를 제공합니다.
 
-1. 다음에서 [탐색 패널,](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) 선택 **도구** > **Cloud Service** > **번역 Cloud Service**.
+1. 다음에서 [탐색 패널,](/help/sites-cloud/authoring/basic-handling.md#first-steps) 선택 **도구** > **Cloud Service** > **번역 Cloud Service**.
 1. 기존 Microsoft Translator 구성을 선택합니다.
 1. **편집**&#x200B;을 선택합니다.
 1. 다음에서 **구성 편집** 창, 선택 **Translator 맞춤화**. 화면에 표시되는 Microsoft 웹 페이지를 사용하여 서비스를 맞춤화합니다.
 
 ## Translator 서비스 구성 활성화 {#activating-the-translator-service-configurations}
 
-게시 인스턴스에 복제되는 번역된 콘텐츠를 지원하려면 클라우드 서비스 구성을 활성화해야 합니다. [트리 게시](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-and-unpublishing-a-tree) 방법을 사용하여 Microsoft Translator 구성을 저장하는 저장소 노드를 활성화하십시오. 해당 노드는 다음과 같은 상위 노드 아래에 위치합니다.
+게시 인스턴스에 복제되는 번역된 콘텐츠를 지원하려면 클라우드 서비스 구성을 활성화해야 합니다. [트리 게시](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-and-unpublishing-a-tree) 방법을 사용하여 Microsoft Translator 구성을 저장하는 저장소 노드를 활성화하십시오. 해당 노드는 다음과 같은 상위 노드 아래에 위치합니다.
 
 * `/libs/settings/cloudconfigs/translation/msft-translation`

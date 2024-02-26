@@ -2,7 +2,7 @@
 title: 컨텐츠 조각 관리(자산 - 컨텐츠 조각)
 description: Headless 콘텐츠의 기반으로 또는 페이지 작성을 위해 Assets 콘솔을 사용하여 AEM 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1885'
 ht-degree: 75%
@@ -29,7 +29,7 @@ Headless 콘텐츠의 기반으로 또는 페이지 작성을 위해 Assets 콘�
 >
 >다음과 같은 경우 콘텐츠 조각을 사용할 수 있습니다.
 >
->* 페이지 작성 시([콘텐츠 조각을 사용하여 페이지 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 참조)
+>* 페이지 작성 시([콘텐츠 조각을 사용하여 페이지 작성](/help/sites-cloud/authoring/fragments/content-fragments.md) 참조)
 >* [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠 게재](/help/assets/content-fragments/content-fragments-graphql.md) 시
 
 >[!NOTE]
@@ -94,7 +94,7 @@ Headless 콘텐츠의 기반으로 또는 페이지 작성을 위해 Assets 콘�
 **자산** 콘솔에서 컨텐츠 조각에 다양한 작업을 사용할 수 있습니다.
 
 * 도구 모음에서 조각을 선택한 후 모든 적절한 작업이 가능합니다.
-* 개별 조각 카드에 사용할 수 있는 작업의 일부로서 [빠른 작업](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)이 있습니다.
+* 개별 조각 카드에 사용할 수 있는 작업의 일부로서 [빠른 작업](/help/sites-cloud/authoring/basic-handling.md#quick-actions)이 있습니다.
 
 ![도구 모음의 작업](assets/cfm-managing-02.png)
 
@@ -299,16 +299,16 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!NOTE]
 >
-댓글은
+>댓글은
 >
-* 모든 자산에 대한 표준 기능입니다.
-* 타임라인에서 만들어집니다.
-* 조각 자산과 관련되어 있습니다.
+>* 모든 자산에 대한 표준 기능입니다.
+>* 타임라인에서 만들어집니다.
+>* 조각 자산과 관련되어 있습니다.
 >
-주석(콘텐츠 조각)은
+>주석(콘텐츠 조각)은
 >
-* 조각 편집기에서 입력됩니다.
-* 조각 내의 선택된 텍스트 세그먼트에 대한 것입니다.
+>* 조각 편집기에서 입력됩니다.
+>* 조각 내의 선택된 텍스트 세그먼트에 대한 것입니다.
 >
 
 예:
@@ -339,7 +339,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!NOTE]
 >
-조각을 비교할 때에는 조각 콘텐츠를 편집할 수 없습니다.
+>조각을 비교할 때에는 조각 콘텐츠를 편집할 수 없습니다.
 
 ![변형 비교](assets/cfm-managing-06.png)
 
@@ -357,9 +357,9 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!CAUTION]
 >
-조각이 모델을 기반으로 한다면 [모델이 게시되었는지](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model) 확인해야 합니다.
+>조각이 모델을 기반으로 한다면 [모델이 게시되었는지](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model) 확인해야 합니다.
 >
-모델이 아직 게시되지 않은 콘텐츠 조각을 게시하는 경우 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
+>모델이 아직 게시되지 않은 콘텐츠 조각을 게시하는 경우 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
 
 게시 환경에서 사용하려면 콘텐츠 조각을 게시해야 합니다. 이 작업은 표준 Assets 기능을 사용하여 수행됩니다.
 
@@ -371,11 +371,11 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 * 생성 후, 사용 [자산 콘솔에서 사용할 수 있는 작업](#actions-for-a-content-fragment-assets-console).
 * 다음에서 [콘텐츠 조각 편집기](#toolbar-actions-in-the-content-fragment-editor).
 
-또한 다음을 수행하는 경우 [조각을 사용하는 페이지 게시](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); 페이지 참조에 조각이 나열됩니다.
+또한 다음을 수행하는 경우 [조각을 사용하는 페이지 게시](/help/sites-cloud/authoring/fragments/content-fragments.md#publishing); 페이지 참조에 조각이 나열됩니다.
 
 >[!CAUTION]
 >
-조각이 게시 및/또는 참조된 후 작성자가 편집을 위해 조각을 다시 열면 AEM에 경고가 표시됩니다. 조각 변경 사항이 참조된 페이지에도 영향을 준다는 것을 경고하기 위한 것입니다.
+>조각이 게시 및/또는 참조된 후 작성자가 편집을 위해 조각을 다시 열면 AEM에 경고가 표시됩니다. 조각 변경 사항이 참조된 페이지에도 영향을 준다는 것을 경고하기 위한 것입니다.
 
 ## 조각 삭제 {#deleting-a-fragment}
 
@@ -386,11 +386,11 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
    >[!NOTE]
    >
-   **삭제** 작업은 빠른 작업으로 사용할 수 없습니다.
+   >**삭제** 작업은 빠른 작업으로 사용할 수 없습니다.
 
 3. 도구 모음에서 **삭제**&#x200B;를 선택합니다.
 4. **삭제** 작업을 확인합니다.
 
    >[!CAUTION]
    >
-   조각이 페이지에서 이미 참조되어 있다면 경고 메시지가 표시되고 **강제 삭제**&#x200B;로 진행하겠다고 확인해야 합니다. 해당 콘텐츠 조각 구성 요소와 함께 조각이 모든 콘텐츠 페이지에서 삭제됩니다.
+   >조각이 페이지에서 이미 참조되어 있다면 경고 메시지가 표시되고 **강제 삭제**&#x200B;로 진행하겠다고 확인해야 합니다. 해당 콘텐츠 조각 구성 요소와 함께 조각이 모든 콘텐츠 페이지에서 삭제됩니다.
