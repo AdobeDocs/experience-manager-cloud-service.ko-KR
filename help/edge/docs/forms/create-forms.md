@@ -4,9 +4,9 @@ description: 완벽한 형태를 만들어, 빨리! ⚡ AEM Forms Edge Delivery 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
+source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '980'
 ht-degree: 1%
 
 ---
@@ -18,13 +18,15 @@ ht-degree: 1%
 
 이러한 양식은 Microsoft Excel 또는 Google Sheets 파일에 직접 데이터를 제출하므로 Google Sheets, Microsoft Excel 및 Microsoft Sharepoint의 생생한 에코시스템과 강력한 API를 사용하여 제출된 데이터를 쉽게 처리하거나 기존 비즈니스 워크플로우를 시작할 수 있습니다.
 
+AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식을 쉽게 만들 수 있도록 양식 블록을 제공합니다. 양식 만들기를 시작하려면 AEM EDS 프로젝트에 양식 블록을 포함할 수 있습니다. 시작하겠습니다.
+
 
 ## 사전 요구 사항
 
 시작하기 전에 다음 단계를 완료했는지 확인하십시오.
 
-* EDS(Edge Delivery Service) 프로젝트를 설정하고 복제합니다. 다음을 참조하십시오 [개발자 자습서](https://www.aem.live/developer/tutorial) 을 참조하십시오. 이 문서에서는 EDS(Edge Delivery Service) 프로젝트의 로컬 폴더를 참조하십시오. `[EDS Project repository]` .
-* 복제 [Forms 블록 저장소](https://github.com/adobe/afb). EDS 웹 페이지에서 양식을 렌더링하는 코드가 포함되어 있습니다. 이 문서에서는 Forms 블록 저장소의 로컬 폴더를 다음과 같이 합니다. `[Forms Block repository]` 이 문서에서.
+* AEM Boilerplate를 사용하여 EDS(Edge Delivery Service) Github 프로젝트를 설정하고 로컬 컴퓨터에서 해당 Github 저장소를 복제합니다. 다음을 참조하십시오 [개발자 자습서](https://www.aem.live/developer/tutorial) 을 참조하십시오. 이 문서에서는 EDS(Edge Delivery Service) 프로젝트의 로컬 폴더를 참조하십시오. `[EDS Project repository]` .
+* 복제 [Forms 블록 저장소](https://github.com/adobe/afb) 로컬 컴퓨터에서. EDS 웹 페이지에서 양식을 렌더링하는 코드가 포함되어 있습니다. 이 문서에서는 Forms 블록 저장소의 로컬 폴더를 다음과 같이 합니다. `[Forms Block repository]`.
 * Google Sheets 또는 Microsoft SharePoint에 액세스할 수 있는지 확인합니다.
 
 
@@ -32,13 +34,11 @@ ht-degree: 1%
 
 +++ 1단계: Edge Delivery Service(EDS) 프로젝트에 양식 블록을 추가합니다.
 
-AEM Forms Edge Delivery에는 캡처된 데이터를 캡처하고 저장할 양식을 쉽게 만들 수 있도록 양식 블록이 포함되어 있습니다. Edge Delivery Service 프로젝트에 양식 블록을 포함하려면 다음을 수행하십시오.
+다음 `Form block` eds 사이트에 양식을 추가하는 기능이 포함되어 있습니다. 블록은 AEM Boilerplate을 사용하여 생성된 프로젝트에 포함되지 않습니다. Edge Delivery Service 프로젝트에 양식 블록을 포함하려면 다음을 수행하십시오.
 
-1. 다음으로 이동 `[Forms Block repository]/blocks` 및 복사 `forms` 폴더를 삭제합니다.
+1. 다음 위치로 이동 `[Forms Block repository]/blocks` 로컬 컴퓨터의 폴더를 복사하고 `form` 폴더를 삭제합니다.
 
-1. 다음으로 이동 `[EDS Project repository]/blocks/` 및 붙여넣기 `forms` 폴더를 삭제합니다.
-
-   >[!VIDEO](https://video.tv.adobe.com/v/3427487?quality=12&learn=on)
+1. 다음 위치로 이동 `[EDS Project repository]/blocks/` 로컬 컴퓨터의 폴더를 붙여 넣고 `form` 폴더를 삭제합니다.
 
 1. 체크인 `form` 폴더 및 기본 파일을 GitHub의 Edge 게재 서비스 프로젝트에 추가합니다.
 

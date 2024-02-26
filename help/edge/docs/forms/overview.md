@@ -4,9 +4,9 @@ description: 최고 성능을 위해 구축된 AEM Forms Edge Delivery Service�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
+source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
@@ -20,19 +20,14 @@ AEM Forms Edge Delivery Service는 Adobe에서 제공하는 구성 가능한 서
 
 * **완벽한 등대 점수로 양식 작성**: 느린 인터넷 연결에서도 빠르게 로드하고 렌더링하는 양식을 빌드합니다. 로드 시간이 빨라지고 사용자 경험이 최적화되면 양식 완료율이 높아지고 전환율이 향상됩니다.
 
-* **작성 및 제출 간소화**: 기존의 작성 환경 대신 Microsoft Excel 또는 Google Sheets와 같은 친숙한 도구를 사용하여 양식을 만듭니다. 양식을 Microsoft Excel 또는 Google 시트에 직접 제출하고 에코시스템을 사용하여 제출된 데이터를 쉽게 처리할 수 있습니다.
+* **작성 및 제출 간소화**: Microsoft Excel 또는 Google Sheets(문서 기반 작성), JSON 파일(Headless 작성) 또는 적응형 Forms 편집기(WYSIWYG 작성)와 같이 익숙한 작성 도구를 사용하여 양식을 디자인하고 만듭니다. 이 서비스는 콘텐츠 소스에서 분리되며 선호하는 작성 도구를 사용할 수 있으므로 콘텐츠를 유연하게 만들 수 있습니다.
 
+  ![Edge 게재 양식 작성 도구](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
 
-이 구성 가능한 서비스는 콘텐츠 소스에서 분리되며 사용자가 선호하는 작성 도구를 사용할 수 있으므로 콘텐츠를 유연하게 만들 수 있습니다.
-
-![Edge 게재 양식 작성 도구](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
-
-콘텐츠 작성자는 Microsoft Excel 또는 Google Sheets(문서 기반 작성), JSON 파일(Headless 작성) 또는 AEM Forms 적응형 Forms 편집기(WYSIWYG 작성)와 같은 익숙한 도구를 사용하여 양식을 디자인하고 만들 수 있습니다.
-
->[!NOTE]
->
->
-> WYSIWYG 작성 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 공식 이메일 ID에서 aem-forms-early-adopter-program@adobe.com에 작성하여 얼리어답터 프로그램에 참여하고 기능에 대한 액세스를 요청할 수 있습니다.
+  >[!NOTE]
+  >
+  >
+  > WYSIWYG 작성 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 공식 이메일 ID에서 aem-forms-early-adopter-program@adobe.com에 작성하여 얼리어답터 프로그램에 참여하고 기능에 대한 액세스를 요청할 수 있습니다.
 
 ## 기본 사항으로 시작
 
