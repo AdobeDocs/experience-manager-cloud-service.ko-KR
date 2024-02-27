@@ -1,13 +1,13 @@
 ---
-title: AEM Forms Edge 게재 서비스 양식의 테마 및 스타일 맞춤화
-description: AEM Forms Edge 게재 서비스 양식의 테마 및 스타일 맞춤화
+title: AEM Forms Edge Delivery Service 양식의 테마 및 스타일 사용자 정의
+description: AEM Forms Edge Delivery Service 양식의 테마 및 스타일 사용자 정의
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 59ed012f10a20939c846c8fff088534c5638f3db
+source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
 workflow-type: tm+mt
 source-wordcount: '1268'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -248,7 +248,7 @@ Forms은 웹 사이트에서 사용자가 데이터를 입력할 수 있도록 �
 ```
 
 
-#### 라디오 그룹 HTML 구조
+#### 확인란 그룹 HTML 구조
 
 ```HTML
 <div class="form-checkbox-group-wrapper form-{Name} field-wrapper" data-required={required}>
