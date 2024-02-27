@@ -2,7 +2,7 @@
 title: AEM에서 컨텐츠를 작성하는 방법
 description: AEM에서 콘텐츠를 작성할 수 있는 다양한 방법과 그 차이점을 알아봅니다.
 feature: Authoring
-source-git-commit: 85b99fc0b0eb20b24f27d06159a52d4339a3c962
+source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 1%
@@ -49,7 +49,7 @@ AEM 콘텐츠 조각 편집기에 대한 자세한 내용은 문서를 참조하
 
 >[!NOTE]
 >
->다음 *신규* 이 섹션에서 강조 표시된 편집기는 온라인 Adobe Experience Manager(AEM) as a Cloud Service에서만 사용할 수 있습니다.
+>다음 *신규* AEMas a Cloud Service 용으로 로컬에서 개발할 때는 이 섹션에서 강조 표시된 편집기를 사용할 수 없습니다.
 >
 >다음 [*원본* 콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-variations.md) 을 사용할 수도 있습니다.
 
@@ -61,11 +61,11 @@ AEM 콘텐츠 조각 편집기에 대한 자세한 내용은 문서를 참조하
 
 범용 편집기는 AEM 내의 사이트 콘솔을 통해 액세스할 수 있지만, AEM 콘텐츠뿐만 아니라 적절하게 계측된 외부 콘텐츠도 작성할 수 있는 강력한 성능과 콘텐츠에 관계없는 유연성을 제공합니다.
 
-유니버설 편집기에 대한 자세한 내용은 문서를 참조하십시오. [범용 편집기로 콘텐츠 작성](/help/implementing/universal-editor/authoring.md)
+유니버설 편집기에 대한 자세한 내용은 문서를 참조하십시오. [범용 편집기로 콘텐츠 작성](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 ## 문서 기반 작성 {#document-based}
 
-Edge Delivery 서비스를 사용하는 경우 콘텐츠를 AEM 콘솔 외부에 있는 Microsoft Word 또는 Google 문서와 같은 기존 문서로 작성하도록 선택할 수 있습니다.
+Edge Delivery 서비스를 사용하는 경우 콘텐츠를 의 외부에 있는 Microsoft Word 또는 Google 문서와 같은 기존 문서로 작성하도록 선택할 수 있습니다 [AEM **사이트** 콘솔.](/help/sites-cloud/authoring/sites-console/introduction.md)
 
 ![문서 기반 콘텐츠 편집](assets/authoring-methods-document.jpg)
 

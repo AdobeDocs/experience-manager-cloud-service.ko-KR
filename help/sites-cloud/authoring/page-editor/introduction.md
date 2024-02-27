@@ -1,17 +1,21 @@
 ---
 title: AEM 페이지 편집기
 description: AEM 페이지 편집기는 콘텐츠를 작성하는 데 유용한 도구입니다.
-source-git-commit: f11635b799a9154ff3fcaac5faca429a12f7a62b
+source-git-commit: 91ce6a0c880436327f4dd333a2eb3d36a4e89a4d
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 40%
+source-wordcount: '1431'
+ht-degree: 39%
 
 ---
 
 
 # AEM 페이지 편집기 {#editing-page-content}
 
-페이지가에 생성되면 **사이트** 콘솔에서는 콘텐츠 작성을 위한 강력한 도구인 AEM 페이지 편집기를 사용하여 페이지 콘텐츠를 편집할 수 있습니다.
+페이지가에 생성되면 [**사이트** 콘솔,](/help/sites-cloud/authoring/sites-console/introduction.md) 콘텐츠 작성을 위한 강력한 도구인 AEM 페이지 편집기를 사용하여 페이지 콘텐츠를 편집할 수 있습니다.
+
+>[!NOTE]
+>
+>에서 페이지 편집 시 [**사이트** 콘솔,](/help/sites-cloud/authoring/sites-console/introduction.md) 콘솔에서 페이지의 [템플릿:](/help/sites-cloud/authoring/sites-console/templates.md) 이 문서에 설명된 페이지 편집기 또는 [유니버설 편집기.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 >[!NOTE]
 >

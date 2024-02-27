@@ -1,10 +1,10 @@
 ---
 title: 페이지 관리
 description: 이동, 복사 및 삭제를 포함하여 AEM에서 웹 사이트의 페이지를 관리하는 방법에 대해 알아봅니다.
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
 workflow-type: tm+mt
-source-wordcount: '1236'
-ht-degree: 69%
+source-wordcount: '1271'
+ht-degree: 66%
 
 ---
 
@@ -42,7 +42,9 @@ ht-degree: 69%
 
    ![편집 버튼](/help/sites-cloud/authoring/assets/edit.png)
 
-1. 페이지가 열리고, 원하는 대로 [페이지를 편집](/help/sites-cloud/authoring/page-editor/edit-content.md)할 수 있습니다.
+1. 페이지가 열리고, 필요에 따라 페이지를 편집할 수 있습니다. 선택한 페이지를 만든 방법에 따라 **편집** 그러면 적절한 편집기가 열립니다.
+   * [페이지 편집기](/help/sites-cloud/authoring/page-editor/introduction.md) - AEM 페이지 편집기로 만든 페이지의 경우
+   * [유니버설 편집기](/help/sites-cloud/authoring/universal-editor/authoring.md) - 범용 편집기로 만든 페이지
 
 ## 페이지 복사 및 붙여넣기 {#copying-and-pasting-a-page}
 

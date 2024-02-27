@@ -2,10 +2,10 @@
 title: 페이지 게시
 description: AEM에서 다양한 메커니즘을 사용하여 페이지를 게시 및 게시 취소하는 방법에 대해 알아봅니다.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
 workflow-type: tm+mt
-source-wordcount: '1927'
-ht-degree: 87%
+source-wordcount: '1936'
+ht-degree: 83%
 
 ---
 
@@ -39,8 +39,9 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
 다음 위치에 따라 게시할 수 있습니다.
 
-* [페이지 편집기에서](#publishing-from-the-editor)
-* [Sites 콘솔에서](#publishing-from-the-console)
+* [페이지 편집기에서](#publishing-from-the-page-editor)
+* [다음에서 ](#publishing-from-the-sites-console)
+* [유니버설 편집기에서](/help/sites-cloud/authoring/universal-editor/publishing.md)
 
 >[!NOTE]
 >
@@ -62,9 +63,9 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 >
 > 추가적인 가능성은 [페이지 속성의 기본 탭](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)에서 **설정 시간** 및 **해제 시간**&#x200B;을 참조하십시오.
 
-### 편집기에서 게시 {#publishing-from-the-editor}
+### 페이지 편집기에서 게시 {#publishing-from-the-page-editor}
 
-페이지를 편집하는 경우 편집기에서 직접 게시할 수 있습니다.
+에서 페이지를 편집하는 경우 [페이지 편집기,](/help/sites-cloud/authoring/page-editor/introduction.md) 편집기에서 직접 게시할 수 있습니다.
 
 1. **페이지 정보** 아이콘을 선택하여 메뉴를 열고 **페이지 게시** 옵션을 엽니다.
 
@@ -89,15 +90,15 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
 >[!NOTE]
 >
->편집기에서 게시하면 약식 공개가 아닙니다. 즉, 선택한 페이지만 게시되며 하위 페이지는 게시되지 않습니다.
+>페이지 편집기에서 게시하면 약식 게시가 됩니다. 즉, 선택한 페이지만 게시되고 하위 페이지는 게시되지 않습니다.
 
 >[!NOTE]
 >
 >편집기의 [별칭](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced)을 통해 액세스하는 페이지는 게시할 수 없습니다. 편집기의 [게시] 옵션은 실제 경로를 통해 액세스하는 페이지에 대해서만 사용할 수 있습니다.
 
-### 콘솔에서 게시 {#publishing-from-the-console}
+### 사이트 콘솔에서 게시 {#publishing-from-the-sites-console}
 
-사이트 콘솔에는 게시에 대한 두 가지 옵션이 있습니다.
+다음에서 **사이트** 콘솔에는 두 가지 게시 옵션이 있습니다.
 
 * [빠른 게시](#quick-publish)
 * [게시 관리](#manage-publication)

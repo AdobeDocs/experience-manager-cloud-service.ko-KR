@@ -1,10 +1,10 @@
 ---
 title: 사이트 콘솔
 description: 사이트 콘솔을 사용하여 AEM 페이지를 관리하고 구성하는 방법에 대해 알아봅니다.
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 91ce6a0c880436327f4dd333a2eb3d36a4e89a4d
 workflow-type: tm+mt
-source-wordcount: '1596'
-ht-degree: 47%
+source-wordcount: '1628'
+ht-degree: 46%
 
 ---
 
@@ -231,16 +231,18 @@ ht-degree: 47%
 
 작업 도구 모음은 콘솔에서 리소스를 선택한 경우에만 나타납니다. 작업 도구 모음에서 사용할 수 있는 작업은 선택한 특정 항목에서 수행할 수 있는 작업을 반영하도록 변경됩니다. 가장 일반적인 작업은 다음과 같습니다.
 
-* [만들기](#create-action) - 새 콘텐츠 또는 콘텐츠 관련 작업 만들기
-* [편집](/help/sites-cloud/authoring/page-editor/introduction.md) - 페이지 편집
-* [속성](/help/sites-cloud/authoring/sites-console/page-properties.md) - 페이지 속성 창을 엽니다.
-* [잠금](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - 다른 사용자가 변경하지 못하도록 페이지 잠금
-* [복사](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) - 페이지 복사
-* [이동](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) - 페이지 이동 또는 이름 바꾸기
-* [빠른 게시](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - 페이지를 즉시 게시
-* [게시 관리](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - 게시할 페이지 예약
-* [복원](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - 페이지 또는 페이지 트리의 버전 복원
-* [삭제](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) - 페이지 삭제
+* [**만들기**](#create-action) - 새 콘텐츠 또는 콘텐츠 관련 작업 만들기
+* **편집** - 선택한 페이지를 만든 방법에 따라 **편집** 그러면 적절한 편집기가 열립니다.
+   * [페이지 편집기](/help/sites-cloud/authoring/page-editor/introduction.md) - AEM 페이지 편집기로 만든 페이지의 경우
+   * [유니버설 편집기](/help/sites-cloud/authoring/universal-editor/authoring.md) - 범용 편집기로 만든 페이지
+* [**속성**](/help/sites-cloud/authoring/sites-console/page-properties.md) - 페이지 속성 창을 엽니다.
+* [**잠금**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - 다른 사용자가 변경하지 못하도록 페이지 잠금
+* [**복사**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) - 페이지 복사
+* [**이동**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) - 페이지 이동 또는 이름 바꾸기
+* [**빠른 게시**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - 페이지를 즉시 게시
+* [**게시 관리**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - 게시할 페이지 예약
+* [**복원**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - 페이지 또는 페이지 트리의 버전 복원
+* [**삭제**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) - 페이지 삭제
 
 일부 창은 공간이 제한되어 있으므로 도구 모음이 사용할 수 있는 공간보다 바로 길어질 수 있습니다. 이 경우 추가 옵션이 표시됩니다. 생략 부호(세 점 또는 **...**) 나머지 모든 작업을 포함하는 드롭다운 선택기를 엽니다.
 
@@ -248,13 +250,13 @@ ht-degree: 47%
 
 ### 작업 만들기 {#create-action}
 
-만들기 작업은 새 페이지 및 유사한 항목을 만들기 위한 도구 모음 버튼과 유사한 옵션을 제공합니다.
+만들기 작업은 다음과 유사한 옵션을 제공합니다. [**만들기** 도구 모음 단추](#create-button) 새 페이지 및 유사한 항목을 만들 때 사용합니다.
 
 또한 페이지 관련 작업을 만들 수 있는 기능도 제공합니다.
 
-* [워크플로](/help/sites-cloud/authoring/workflows/overview.md) - 페이지에 워크플로우 적용
-* [버전](/help/sites-cloud/authoring/sites-console/page-versions.md) - 페이지 버전 만들기
+* [**워크플로**](/help/sites-cloud/authoring/workflows/overview.md) - 페이지에 워크플로우 적용
+* [**버전**](/help/sites-cloud/authoring/sites-console/page-versions.md) - 페이지 버전 만들기
 
 ## 템플릿
 
-[열 보기](/help/sites-cloud/authoring/basic-handling.md#column-view) 또는 [목록 보기](/help/sites-cloud/authoring/basic-handling.md#list-view)에서 페이지를 선택하면 페이지의 기본 템플릿을 쉽게 볼 수 있습니다.
+[**열 보기**](/help/sites-cloud/authoring/basic-handling.md#column-view) 또는 [**목록 보기**](/help/sites-cloud/authoring/basic-handling.md#list-view)&#x200B;에서 페이지를 선택하면 페이지의 기본 템플릿을 쉽게 볼 수 있습니다.

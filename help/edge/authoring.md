@@ -3,7 +3,7 @@ title: Edge Delivery Services용 콘텐츠 작성
 description: Edge Delivery Services를 통한 콘텐츠 작성 방법과 Edge Delivery Services를 사용한 AEM 콘텐츠 작성 방법을 알아보십시오.
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 100%
@@ -31,7 +31,7 @@ AEM as a Cloud Service와 함께 Edge Delivery Services를 사용할 때 이해�
 
 1. [AEM 작성 환경](/help/sites-cloud/authoring/quick-start.md)은 새 페이지 생성, 경험 조각, 콘텐츠 조각 등과 같은 콘텐츠 관리에 사용됩니다.
    * 워크플로, MSM, 번역, 실행 등의 모든 AEM 기능을 사용할 수 있습니다.
-1. [Universal Editor](/help/implementing/universal-editor/authoring.md)는 AEM에서 관리되는 콘텐츠를 작성하는 데 사용됩니다.
+1. [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)는 AEM에서 관리되는 콘텐츠를 작성하는 데 사용됩니다.
    * Universal Editor는 콘텐츠 작성을 위한 새로운 최신 UI를 제공합니다.
    * AEM은 작성을 위해 HTML을 렌더링하지만, Edge Delivery Services의 스크립트, 스타일, 아이콘 및 기타 리소스를 포함합니다.
    * Universal Editor가 사용되지만, 모든 변경 사항은 AEM에 유지됩니다.
@@ -52,7 +52,7 @@ Universal Editor는 블록을 드래그 앤 드롭하여 콘텐츠를 작성할 
 
 ![블록 속성 구성](assets/block-properties.png)
 
-Universal Editor를 사용하여 작성하는 방법에 대한 자세한 내용은 [Universal Editor를 사용하여 콘텐츠 작성](/help/implementing/universal-editor/authoring.md)을 참조하십시오.
+Universal Editor를 사용하여 작성하는 방법에 대한 자세한 내용은 [Universal Editor를 사용하여 콘텐츠 작성](/help/sites-cloud/authoring/universal-editor/authoring.md)을 참조하십시오.
 
 AEM 및 Edge Delivery Services를 사용하여 자신의 프로젝트를 작성하는 방법을 알아보려면 [Edge Delivery Services를 사용한 AEM 작성을 위한 개발자 시작 안내서](/help/edge/edge-dev-getting-started.md)를 참조하십시오.
 

@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5786283b75f28d594aea923a6d3490a9582a73a9
+source-git-commit: 87552743ef13d122864a676637138f72f87d8500
 workflow-type: tm+mt
 source-wordcount: '4721'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -305,6 +305,9 @@ ht-degree: 98%
          + [키보드 단축키](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
          + [스타일 시스템](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [다시 실행 취소 제한 사항](/help/sites-cloud/authoring/page-editor/undo-redo.md)
+      + Universal Editor {#universal-editor}
+         + [Universal Editor로 콘텐츠 작성](/help/sites-cloud/authoring/universal-editor/authoring.md)
+         + [Universal Editor로 콘텐츠 게시](/help/sites-cloud/authoring/universal-editor/publishing.md)
       + 조각 {#fragments}
          + [콘텐츠 조각](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [경험 조각](/help/sites-cloud/authoring/fragments/experience-fragments.md)
@@ -812,16 +815,16 @@ ht-degree: 98%
       + [Akamai 설정](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Fastly 설정](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [리디렉션](/help/edge/docs/redirects.md)
-   + Edge 게재 Forms 구축 {#build-forms}
+   + Edge Delivery 양식 빌드 {#build-forms}
       + [개요](/help/edge/docs/forms/overview.md)
       + 시작하기 {#getting-started-eds-forms}
          + [양식 만들기 및 미리 보기](/help/edge/docs/forms/create-forms.md)
-         + [데이터를 전송할 양식 활성화](/help/edge/docs/forms/submit-forms.md)
+         + [양식을 활성화하여 데이터 전송](/help/edge/docs/forms/submit-forms.md)
          + [사이트 페이지에 양식 게시](/help/edge/docs/forms/publish-eds-forms.md)
          + [양식 필드에 유효성 검사 추가](/help/edge/docs/forms/validate-forms.md)
-         + [테마 및 양식 스타일 변경](/help/edge/docs/forms/style-theme-forms.md)
+         + [양식의 테마 및 스타일 변경](/help/edge/docs/forms/style-theme-forms.md)
       + 기능 {#advanced-features-eds-forms}
-         + [양식 단편](/help/edge/docs/forms/form-fragments.md)
+         + [양식 조각](/help/edge/docs/forms/form-fragments.md)
          + [반복 가능한 섹션](/help/edge/docs/forms/repeatable-forms.md)
          + [번역](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
@@ -1028,6 +1031,18 @@ ht-degree: 98%
             + [사용자 정의 조건자 평가자 구현](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [사용자 정의 오류 페이지](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM 노드 유형](/help/implementing/developing/introduction/node-types.md)
+      + Universal Editor {#universal-editor}
+         + [Universal Editor 소개](/help/implementing/universal-editor/introduction.md)
+         + [Universal Editor 아키텍처](/help/implementing/universal-editor/architecture.md)
+         + [AEM에서 Universal Editor 시작하기](/help/implementing/universal-editor/getting-started.md)
+         + [Universal Editor 개발자 개요](/help/implementing/universal-editor/developer-overview.md)
+         + [속성 및 항목 유형](/help/implementing/universal-editor/attributes-types.md)
+         + [모델 정의, 필드 및 구성 요소 유형](/help/implementing/universal-editor/field-types.md)
+         + [Universal Editor 인증](/help/implementing/universal-editor/authentication.md)
+         + [Universal Editor를 사용하는 로컬 AEM 개발](/help/implementing/universal-editor/local-dev.md)
+         + [Universal Editor 호출](/help/implementing/universal-editor/calls.md)
+         + [이벤트](/help/implementing/universal-editor/events.md)
+         + [Universal Editor 사용자 정의](/help/implementing/universal-editor/customizing.md)
       + [Headless 경험 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
       + 하이브리드 및 SPA 개발 {#hybrid}
          + [AEM을 통한 하이브리드 및 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
@@ -1144,19 +1159,3 @@ ht-degree: 98%
    + 접근성 {#accessibility}
       + [AEM as a Cloud Service 및 웹 접근성 지침](/help/compliance/accessibility/web-accessibility.md)
       + [WCAG 2.1에 대한 빠른 안내서](/help/compliance/accessibility/quick-guide-wcag.md)
-+ Universal Editor {#universal-editor}
-   + [Universal Editor 소개](/help/implementing/universal-editor/introduction.md)
-   + [Universal Editor 아키텍처](/help/implementing/universal-editor/architecture.md)
-   + 작성 {#developing}
-      + [Universal Editor로 콘텐츠 작성](/help/implementing/universal-editor/authoring.md)
-      + [Universal Editor로 콘텐츠 게시](/help/implementing/universal-editor/publishing.md)
-   + 개발 {#developing}
-      + [AEM에서 Universal Editor 시작하기](/help/implementing/universal-editor/getting-started.md)
-      + [Universal Editor 개발자 개요](/help/implementing/universal-editor/developer-overview.md)
-      + [속성 및 항목 유형](/help/implementing/universal-editor/attributes-types.md)
-      + [모델 정의, 필드 및 구성 요소 유형](/help/implementing/universal-editor/field-types.md)
-      + [Universal Editor 인증](/help/implementing/universal-editor/authentication.md)
-      + [Universal Editor를 사용하는 로컬 AEM 개발](/help/implementing/universal-editor/local-dev.md)
-      + [Universal Editor 호출](/help/implementing/universal-editor/calls.md)
-      + [Universal Editor 사용자 정의](/help/implementing/universal-editor/customizing.md)
-      + [이벤트](/help/implementing/universal-editor/events.md)

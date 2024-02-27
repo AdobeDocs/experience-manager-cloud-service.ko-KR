@@ -1,10 +1,10 @@
 ---
 title: 페이지 생성
 description: 사이트 콘솔을 사용하여 웹 사이트의 새 페이지를 만드는 방법에 대해 알아봅니다.
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 0ba8faaa14d09d09fce5846bfff77287bfbd94c7
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 64%
+source-wordcount: '461'
+ht-degree: 28%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 64%
 
       * URI를 생성하는 데 사용됩니다. 지정하지 않을 경우 이름이 제목에서 파생됩니다.
       * 페이지를 제공하는 경우 **이름** 페이지를 만들 때 AEM [규칙에 따라 이름을 확인합니다.](/help/implementing/developing/introduction/naming-conventions.md) AEM 및 JCR에서 적용합니다.
-      * **이름** 필드에 **잘못된 문자를 제출**&#x200B;할 수 없습니다. AEM에서 잘못된 문자를 감지하면 필드가 강조 표시되고, 제거/교체가 필요한 문자를 나타내는 설명 메시지가 표시됩니다.
+      * **이름** 필드에 **잘못된 문자를 제출**&#x200B;할 수 없습니다. AEM에서 유효하지 않은 문자를 발견하면 필드가 강조 표시되고 제거/교체가 필요한 문자를 나타내는 설명 메시지가 표시됩니다.
 
    >[!TIP]
    >
@@ -67,18 +67,22 @@ ht-degree: 64%
 
    ![페이지 제목 입력](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 
-1. **만들기**&#x200B;를 클릭하여 프로세스를 완료하고 새 페이지를 만듭니다. 확인 대화 상자에 페이지를 즉시 **열지** 또는 콘솔로 돌아갈지(**완료**) 여부를 묻는 메시지가 표시됩니다.
+1. 탭 또는 클릭 **만들기** 을 클릭하여 프로세스를 완료하고 새 페이지를 만듭니다. 확인 대화 상자에 다음을 원하는지 여부가 표시됩니다. **열기** 페이지를 즉시 표시하거나 콘솔로 돌아갑니다(**완료**). 하나를 선택하여 페이지 작성 프로세스를 종료합니다.
 
    ![페이지 작성 성공](/help/sites-cloud/authoring/assets/organizing-create-page-success.png)
 
-   >[!NOTE]
-   >
-   >해당 위치에 이미 존재하는 이름을 사용하여 페이지를 만들 경우, 번호가 추가되어 변형된 이름이 자동으로 생성됩니다. 예를 들어 `beach`가 이미 존재하는 경우, 새 페이지는 `beach1`이 됩니다.
+   * 다음을 선택하는 경우 **열기**, **사이트** 콘솔은 다음 중 하나의 새 페이지 템플릿에 따라 적절한 편집기를 엽니다.
+      * [페이지 편집기](/help/sites-cloud/authoring/page-editor/introduction.md)
+      * [유니버설 편집기](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
-1. 콘솔로 돌아오면 새 페이지를 볼 수 있습니다.
+콘솔로 돌아오면 새 페이지를 볼 수 있습니다.
 
-   ![결과 새 페이지](/help/sites-cloud/authoring/assets/organizing-create-page-result.png)
+![결과 새 페이지](/help/sites-cloud/authoring/assets/organizing-create-page-result.png)
+
+>[!NOTE]
+>
+>동일한 위치에 이미 존재하는 이름을 사용하여 페이지를 만드는 경우 AEM에서는 숫자를 추가하여 지정된 이름의 변형 페이지를 만듭니다. 예를 들어 다음과 같습니다. `beach` 이미 존재합니다. 새 페이지는 `beach1`.
 
 >[!CAUTION]
 >
->페이지가 만들어지면 해당 템플릿을 변경할 수 없습니다. 대신 [새 템플릿으로 론치를 만들 수는 있지만](/help/sites-cloud/authoring/launches/creating.md#create-launch-with-new-template) 그렇게 되면 존재하는 콘텐츠는 모두 잃게 됩니다.
+>페이지가 만들어지면 해당 템플릿을 변경할 수 없습니다. [새 템플릿을 사용하여 론치 만들기](/help/sites-cloud/authoring/launches/creating.md#create-launch-with-new-template), 이렇게 하면 기존 컨텐츠가 손실되지만
