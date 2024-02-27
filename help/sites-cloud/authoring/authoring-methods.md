@@ -2,9 +2,9 @@
 title: AEM에서 컨텐츠를 작성하는 방법
 description: AEM에서 콘텐츠를 작성할 수 있는 다양한 방법과 그 차이점을 알아봅니다.
 feature: Authoring
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+source-git-commit: 85b99fc0b0eb20b24f27d06159a52d4339a3c962
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '554'
 ht-degree: 1%
 
 ---
@@ -43,9 +43,15 @@ AEM 콘텐츠 조각 편집기는 headless 콘텐츠를 만들기 위한 선택 
 
 ![AEM 콘텐츠 조각 편집기](assets/authoring-methods-cf-editor.png)
 
-AEM 콘텐츠 조각 편집기는 headless 게재에 이상적인 구조화된 콘텐츠를 만들고 관리하기 위한 명확하고 편리한 인터페이스를 제공합니다.
+AEM 콘텐츠 조각 편집기는 headless 게재에 이상적인 구조화된 콘텐츠를 만들고 관리하기 위한 명확한 인터페이스를 제공합니다.
 
-AEM 콘텐츠 조각 편집기에 대한 자세한 내용은 문서를 참조하십시오. [컨텐츠 조각 관리.](/help/assets/content-fragments/content-fragments-managing.md)
+AEM 콘텐츠 조각 편집기에 대한 자세한 내용은 문서를 참조하십시오. [컨텐츠 조각 관리](/help/sites-cloud/administering/content-fragments/managing.md) 및 [컨텐츠 조각 작성](/help/sites-cloud/administering/content-fragments/managing.md).
+
+>[!NOTE]
+>
+>다음 *신규* 이 섹션에서 강조 표시된 편집기는 온라인 Adobe Experience Manager(AEM) as a Cloud Service에서만 사용할 수 있습니다.
+>
+>다음 [*원본* 콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-variations.md) 을 사용할 수도 있습니다.
 
 ## Universal Editor {#universal-editor}
 
