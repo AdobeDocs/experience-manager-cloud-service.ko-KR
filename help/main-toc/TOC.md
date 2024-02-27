@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 87552743ef13d122864a676637138f72f87d8500
+source-git-commit: 784cf3600cec4f0bde72e6a1e491095f56d5e5b3
 workflow-type: tm+mt
-source-wordcount: '4721'
+source-wordcount: '4730'
 ht-degree: 99%
 
 ---
@@ -723,6 +723,7 @@ ht-degree: 99%
       + [Screens Content Provider 사용](/help/screens-cloud/configuring/using-screens-content-provider.md)
       + [Screens 비디오 렌디션 만들기](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
       + [Screens as a Cloud Service에 대한 Dispatcher 구성](/help/screens-cloud/configuring/dispatcher-configurations-screens-cloud.md)
+      + [as a Cloud Service으로 스크린에 대한 타임라인 보기 구성](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
    + 콘텐츠 만들기 {#create-content}
       + [Screens Content Provider에서 프로젝트 만들기 및 관리](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
       + [Screens Content Provider에서 채널 만들기 및 관리](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)
