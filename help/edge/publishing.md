@@ -25,7 +25,7 @@ Universal Editor를 사용하여 AEM 콘텐츠를 작성하는 경우, Universal
 
 >[!NOTE]
 >
->작성 UI 또는 워크플로우에서 게시된 경로는 하루에 최대 5000개까지 허용됩니다. 대량 게시 작업 부하를 유발하는 통합은 지원되지 않습니다.
+>작성 UI 또는 워크플로에서 게시된 경로는 하루에 최대 5000개까지 허용됩니다. 대량 게시 작업 부하를 유발하는 통합은 지원되지 않습니다.
 
 ![AEM에서 Edge Delivery Services로 게시할 때 정보 흐름](assets/publishing-flow.png)
 

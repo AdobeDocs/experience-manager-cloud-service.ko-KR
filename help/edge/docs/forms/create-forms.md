@@ -16,7 +16,7 @@ ht-degree: 60%
 
 오늘날의 디지털 시대에는 사용자 친화적인 양식을 만드는 것이 모든 조직에 필수적입니다. AEM Forms Edge Delivery를 사용하면 Word 또는 Google Docs와 같은 익숙한 도구를 사용하여 양식을 만들 수 있습니다.
 
-이러한 양식은 데이터를 Microsoft Excel 또는 Google Sheets 파일에 직접 제출하므로 Google Sheets, Microsoft Excel 및 Microsoft Sharepoint의 활발한 에코시스템과 강력한 API를 사용하여 쉽게 제출 데이터를 처리하거나 기존 비즈니스 워크플로우를 시작할 수 있습니다.
+이러한 양식은 데이터를 Microsoft Excel 또는 Google Sheets 파일에 직접 제출하므로 Google Sheets, Microsoft Excel 및 Microsoft Sharepoint의 활발한 에코시스템과 강력한 API를 사용하여 쉽게 제출 데이터를 처리하거나 기존 비즈니스 워크플로를 시작할 수 있습니다.
 
 AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식을 쉽게 만들 수 있도록 양식 블록을 제공합니다. 양식 만들기를 시작하려면 AEM EDS 프로젝트에 양식 블록을 포함할 수 있습니다. 시작하겠습니다.
 
@@ -47,7 +47,7 @@ AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식�
 
    * “모듈 &#39;../../scripts/lib-franklin.js&#39;에 대한 경로를 확인할 수 없음” 오류가 발생하는 경우 `[EDS Project]/blocks/forms/form.js` 파일을 엽니다. import 문에서 `lib-franklin.js` 파일을 `aem.js` 파일로 바꿉니다.
 
-   * 린팅 오류가 발생하면 무시해도 됩니다. 린팅 검사를 우회하려면 `[EDS Project]\package.json`  파일을 열고 `"lint": "npm run lint:js && npm run lint:css"`의 “lint” 스크립트를 `"lint": "echo 'skipping linting for now'"`로 업데이트합니다. 파일을 저장하고 GitHub 프로젝트에 커밋합니다.
+   * 린팅 오류가 발생하면 무시해도 됩니다. 린팅 검사를 우회하려면 `[EDS Project]\package.json` 파일을 열고 `"lint": "npm run lint:js && npm run lint:css"`의 “lint” 스크립트를 `"lint": "echo 'skipping linting for now'"`로 업데이트합니다. 파일을 저장하고 GitHub 프로젝트에 커밋합니다.
 
 이제 양식을 만들어 사이트에 추가할 수 있습니다.
 
@@ -125,7 +125,7 @@ AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식�
 
    ![샘플 EDS 양식](/help/edge/assets/eds-form.png)
 
-   이제 양식을 작성하고 제출 버튼을 클릭하면, 스프레드시트가 아직 데이터를 허용하도록 설정되지 않았기 때문에 다음과 유사한 오류가 발생합니다.
+   이제 양식을 작성하고 제출 버튼을 클릭하면 스프레드시트가 아직 데이터를 허용하도록 설정되지 않았기 때문에 다음과 유사한 오류가 발생합니다.
 
    ![양식 제출 시 오류](/help/edge/assets/form-error.png)
 
