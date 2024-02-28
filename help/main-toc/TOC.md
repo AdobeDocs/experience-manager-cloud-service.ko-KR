@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+source-git-commit: 41976a70f5566c79a0e14d5d4e1396dbdee12046
 workflow-type: tm+mt
-source-wordcount: '4730'
+source-wordcount: '4733'
 ht-degree: 99%
 
 ---
@@ -705,6 +705,7 @@ ht-degree: 99%
    + 문제 해결 {#troubleshooting-aem-forms-cloud-service}
       + [설치 및 구성](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher 및 CDN 캐싱](/help/forms/troubleshooting-caching-performance.md)
+      + [AEM SDK 다시 시작](/help/forms/restart-aem-sdk.md)
 + Screens {#screens-as-cloud-service}
    + Screens as a Cloud Service 개요 {#overview}
       + [소개](/help/screens-cloud/introduction/introduction.md)

@@ -3,9 +3,10 @@ title: AEM Forms의 로컬 개발 환경을 설정하려면 어떻게 해야 합
 description: Adobe Experience Manager Forms as a Cloud Service을 위한 로컬 개발 환경 설정
 role: Admin, Developer, User
 feature: Adaptive Forms
-source-git-commit: 58325cccf218eb2176868879842a795d1c91d8a6
+exl-id: 12877a77-094f-492a-af58-cffafecf79ae
+source-git-commit: 1ec17aebe4eb003b24f5036288a8836aabddb77a
 workflow-type: tm+mt
-source-wordcount: '2682'
+source-wordcount: '2724'
 ht-degree: 2%
 
 ---
@@ -129,7 +130,12 @@ Adobe Experience Manager Forms as a Cloud Service 기능 아카이브는 로컬 
 
 1. crx-quickstart/install 디렉토리로 이동합니다. 폴더가 없으면 만듭니다.
 
-1. AEM 인스턴스를 중지하고 [!DNL AEM Forms] 추가 기능 아카이브, `aem-forms-addon-<version>.far`를 클릭하고 인스턴스를 다시 시작합니다.
+1. AEM 인스턴스를 중지하고 [!DNL AEM Forms] 추가 기능 아카이브, `aem-forms-addon-<version>.far`을 클릭하여 제품에서 사용할 수 있습니다.
+1. 활성 명령 창으로 이동한 다음 키를 누릅니다. `Ctrl + C` sdk를 다시 시작하는 명령입니다.
+
+   >[!NOTE]
+   >
+   > SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
 
 ### 사용자 및 권한 구성 {#configure-users-and-permissions}
 
@@ -242,7 +248,7 @@ AEM Forms as a Cloud Service은 기록 문서를 보다 쉽게 개발하고 다�
 >[!NOTE]
 >
 > AEM Archetype 버전 30 이상 기반 프로젝트를 설정하여 AEM Forms as a Cloud Service으로 Microsoft® Dynamics 365 및 Salesforce 양식 데이터 모델을 가져오고 사용할 수 있습니다.
-AEM Forms as a Cloud Service으로 Tranquil, Urbane 및 Ultramarine 테마를 가져오고 사용하려면 AEM Archetype 버전 32 이상 기반 프로젝트를 설정하십시오.
+> AEM Forms as a Cloud Service으로 Tranquil, Urbane 및 Ultramarine 테마를 가져오고 사용하려면 AEM Archetype 버전 32 이상 기반 프로젝트를 설정하십시오.
 
 프로젝트를 설정하려면 다음을 수행하십시오.
 
@@ -269,7 +275,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
      >[!WARNING]
      >
-     * 버전 45의 Archetype 프로젝트를 만들 때 [AEM Archetype 프로젝트 폴더]/pom.xml 은 처음에 forms 핵심 구성 요소 버전을 2.0.64로 설정합니다. Archetype 프로젝트를 빌드하거나 배포하기 전에 Forms 핵심 구성 요소 버전을 2.0.62로 업데이트합니다.
+     >* 버전 45의 Archetype 프로젝트를 만들 때 [AEM Archetype 프로젝트 폴더]/pom.xml 은 처음에 forms 핵심 구성 요소 버전을 2.0.64로 설정합니다. Archetype 프로젝트를 빌드하거나 배포하기 전에 Forms 핵심 구성 요소 버전을 2.0.62로 업데이트합니다.
 
 1. 로컬 개발 환경에 프로젝트를 배포합니다. 다음 명령을 사용하여 로컬 개발 환경에 배포할 수 있습니다
 
