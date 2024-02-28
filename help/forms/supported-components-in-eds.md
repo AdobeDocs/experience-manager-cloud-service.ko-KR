@@ -1,13 +1,17 @@
 ---
-description: 이 자습서에는 EDS 의 구성 요소와 관련된 모든 정보가 포함되어 있습니다.
-title: 양식 블록에서 지원되는 양식 구성 요소 - 개발자 자습서
+title: AEM Forms Edge 게재 서비스 양식 구성 요소
+description: 최고 성능을 위해 구축된 AEM Forms Edge Delivery Service를 통해 향후 간소화된 데이터 수집 및 사용자 참여를 구상할 수 있습니다. 이 문서에서는 EDD 양식에 즉시 사용할 수 있는 모든 양식 구성 요소를 나열합니다.
 feature: Edge Delivery Services
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+hide: true
+hidefromtoc: true
+source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '871'
 ht-degree: 5%
 
 ---
+
+
 
 
 # 양식 블록 에지 게재에서 지원되는 HTML 구성 요소

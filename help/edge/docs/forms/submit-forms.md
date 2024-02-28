@@ -4,7 +4,7 @@ description: 스프레드시트 및 양식 블록 필드를 사용하여 강력�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
+source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 61%
@@ -16,7 +16,10 @@ ht-degree: 61%
 
 다음 작업을 완료하면 [양식을 만들고 미리보기](/help/edge/docs/forms/create-forms.md)해당 스프레드시트가 데이터 수신을 시작할 수 있도록 활성화해야 합니다.
 
+<!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
+
+-->
 
 스프레드시트를 활성화하려면 다음을 수행합니다.
 

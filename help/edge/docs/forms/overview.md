@@ -4,30 +4,53 @@ description: 최고의 성능을 위해 구축된 AEM Forms Edge Delivery Servic
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 69%
+source-wordcount: '418'
+ht-degree: 65%
 
 ---
 
 
 # AEM Forms Edge Delivery Service {#aem-forms-edge-delivery-service-overview}
 
-AEM Forms Edge Delivery Service는 효과가 뛰어나고 성능이 빠른 웹 양식을 만들고 게재할 수 있도록 Adobe에서 제공하는 구성 가능한 서비스입니다. 이 서비스를 사용하여 다음을 수행할 수 있습니다.
 
-* **멋진 양식으로 사용자 Captivate**: 사전 빌드된 구성 요소 라이브러리를 사용하여 복잡하고 매력적인 양식을 쉽게 빌드합니다. 쉽게 reCAPTCHA를 통합하고, 양식을 이메일로 직접 제출하고, Sharepoint, Azure Storage 및 Amazon S3와 같은 보안 스토리지 솔루션에 원활한 파일 업로드를 허용합니다. 자신만의 사용자 정의 양식 구성 요소를 만들어 자신만의 고유한 비전을 실현할 수도 있습니다.
+<div>
+&lt;style="font-family: Arial, sans-serif; margin: 0; padding: 0;"&gt;
+    <main class="content">
+      <section class="content-section">
+        <p style="line-height: 1.5;">AEM Forms Edge Delivery Service는 효과가 뛰어나고 성능이 빠른 웹 양식을 만들고 게재할 수 있도록 Adobe에서 제공하는 구성 가능한 서비스입니다. 이 서비스를 사용하여 다음을 수행할 수 있습니다.</p>
+        </section> <section class="content-section">
+        <h2 style="font-size: 20px; margin-bottom: 10px;">멋진 양식으로 사용자 Captivate</h2>
+        <img src="/help/edge/assets/enrollment-form.png" alt="등록 양식" style="float: left; margin: 0 20px 20px 0; width: 150px;">
+        <p style="line-height: 1.5;">사전 빌드된 구성 요소 라이브러리를 사용하여 복잡하고 매력적인 양식을 쉽게 빌드할 수 있습니다. 쉽게 reCAPTCHA를 통합하고, 양식을 이메일로 직접 제출하고, Sharepoint, Azure Storage 및 Amazon S3와 같은 보안 스토리지 솔루션에 원활한 파일 업로드를 허용합니다. 자신만의 사용자 정의 양식 구성 요소를 만들어 자신만의 고유한 비전을 실현할 수도 있습니다.</p>
+        </section> <section class="content-section">
+        <h2 style="font-size: 20px; margin-bottom: 10px;">완벽한 등대 점수로 양식 작성</h2>
+        <img src="/help/edge/assets/lighthouse-forms.png" alt="귀하의 양식에 대한 완벽한 lighthouse 점수" style="float: right; margin: 20px 0 0 20px; width: 150px;">
+        <p style="line-height: 1.5;"> 느린 인터넷 연결에서도 빠르게 로드하고 렌더링하는 양식을 빌드합니다. 로드 시간이 빠르고 사용자 경험이 최적화되어 있으면 양식 작성률을 높이고 전환율을 향상할 수 있습니다.</p>
+        </section>
+        <section class="content-section">
+        <h2 style="font-size: 20px; margin-bottom: 10px;">원하는 도구를 사용하여 디지털 등록 환경 만들기</h2>
+        <img src="/help/edge/assets/edge-delivery-forms-authoring-tools.png" alt="등록 양식" style="float: left; margin: 0 20px 20px 0; width: 150px;">
+        <p style="line-height: 1.5;">콘텐츠 소스를 분리하여 작성 효율성을 높입니다. 기본 제공되는 AEM 작성과 문서 기반 작성을 모두 사용할 수 있습니다. 따라서 동일한 웹 사이트에서 여러 컨텐츠 소스로 작업하고 Microsoft Excel, Google Sheets 또는 AEM Editors와 같은 원하는 작성 도구를 사용할 수 있습니다.</p>
+        </section>
+</div>
 
-  ![등록 양식](/help/edge/assets/enrollment-form.png)
 
-* **Lighthouse 점수가 만점인 양식 작성**: 느린 인터넷 연결에서도 빠르게 로드되고 렌더링되는 양식을 작성합니다. 로드 시간이 빠르고 사용자 경험이 최적화되어 있으면 양식 작성률을 높이고 전환율을 향상할 수 있습니다.
+<!-- >
+* **Captivate users with stunning forms**: 
+Build complex and engaging forms with ease using a library of pre-built components. Easily integrate reCAPTCHA, submit forms directly to email, and allow seamless file uploads to secure storage solutions like Sharepoint, Azure Storage, and Amazon S3. Even create your own custom forms components to bring your unique vision to life. 
 
-  ![귀하의 양식에 대한 완벽한 lighthouse 점수](/help/edge/assets/lighthouse-forms.png)
+    ![Enrollment forms](/help/edge/assets/enrollment-form.png)
 
-* **원하는 도구를 사용하여 디지털 등록 환경 만들기**: 콘텐츠 소스를 분리하여 작성 효율성을 높입니다. 기본 제공되는 AEM 작성과 문서 기반 작성을 모두 사용할 수 있습니다. 따라서 동일한 웹 사이트에서 여러 컨텐츠 소스로 작업하고 Microsoft Excel, Google Sheets 또는 AEM Editors와 같은 원하는 작성 도구를 사용할 수 있습니다.
+* **Build forms with perfect lighthouse score**: Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.
 
-  ![Edge 게재 양식 작성 도구](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+    ![perfect lighthouse score for your forms](/help/edge/assets/lighthouse-forms.png)
 
+* **Create digital enrollment experiences with tools of your choice**: Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and document-based authoring. As such, you can work with multiple content sources on the same website and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or AEM Editors.
+
+    ![Edge Delivery forms authoring tools](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+    
 <!--
 * **Measure customer impact and deliver effective forms**: Use our RUM dashboards to visualize form performance and identify areas for improvement. Experiment with different versions and continuously optimize your forms for maximum effectiveness, ensuring you capture the data you need and drive better business outcomes.
 
