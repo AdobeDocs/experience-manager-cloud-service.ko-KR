@@ -4,39 +4,27 @@ description: 최고의 성능을 위해 구축된 AEM Forms Edge Delivery Servic
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: 6fbeb94d3547d50e93ab80aee5d6458e51edb1da
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 63%
+source-wordcount: '419'
+ht-degree: 51%
 
 ---
 
 
-# AEM Forms Edge Delivery Service {#aem-forms-edge-delivery-service-overview}
+# AEM Forms Edge Delivery Service
 
+AEM Forms Edge Delivery Service는 Adobe에서 제공하는 구성 가능한 서비스로, 효과가 크고 성능이 빠른 웹 양식을 제작하여 제공할 수 있습니다.
 
-<div style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
-        <main class="content">
-            <section class="content-section">
-                <p style="line-height: 1.5;">AEM Forms Edge Delivery Service는 효과가 뛰어나고 성능이 빠른 웹 양식을 만들고 게재할 수 있도록 Adobe에서 제공하는 구성 가능한 서비스입니다. 이 서비스를 사용하여 다음을 수행할 수 있습니다.</p>
-            </section>
-            <section class="content-section"></br>
-                <h2 style="font-size: 20px; margin-bottom: 10px;">멋진 양식으로 사용자 Captivate</h2>
-                <img src="/help/edge/assets/enrollment-form.png" alt="등록 양식" style="float: left; margin: 0 20px 20px 0; width: 30%;">
-                <p style="line-height: 1.5;">사전 빌드된 구성 요소 라이브러리를 사용하여 복잡하고 매력적인 양식을 쉽게 빌드할 수 있습니다. 쉽게 reCAPTCHA를 통합하고, 양식을 이메일로 직접 제출하고, Sharepoint, Azure Storage 및 Amazon S3와 같은 보안 스토리지 솔루션에 원활한 파일 업로드를 허용합니다. 자신만의 사용자 정의 양식 구성 요소를 만들어 자신만의 고유한 비전을 실현할 수도 있습니다.</p>
-            </section>
-            <section class="content-section"></br>
-                <h2 style="font-size: 20px; margin-bottom: 10px;">완벽한 등대 점수로 양식 작성</h2>
-                <img src="/help/edge/assets/lighthouse-forms.png" alt="귀하의 양식에 대한 완벽한 lighthouse 점수" style="float: right; margin: 20px 0 0 20px; width: 30%;">
-                <p style="line-height: 1.5;"> 느린 인터넷 연결에서도 빠르게 로드하고 렌더링하는 양식을 빌드합니다. 로드 시간이 빠르고 사용자 경험이 최적화되어 있으면 양식 작성률을 높이고 전환율을 향상할 수 있습니다.</p>
-            </section>
-            <section class="content-section"></br>
-                <h2 style="font-size: 20px; margin-bottom: 10px;">원하는 도구를 사용하여 디지털 등록 환경 만들기</h2>
-                <img src="/help/edge/assets/edge-delivery-forms-authoring-tools.png" alt="등록 양식" style="float: left; margin: 0 20px 20px 0; width: 30%;">
-                <p style="line-height: 1.5;">콘텐츠 소스를 분리하여 작성 효율성을 높입니다. 기본 제공되는 AEM 작성과 문서 기반 작성을 모두 사용할 수 있습니다. 따라서 동일한 웹 사이트에서 여러 컨텐츠 소스로 작업하고 Microsoft Excel, Google Sheets 또는 AEM Editors와 같은 원하는 작성 도구를 사용할 수 있습니다.</p>
-            </section>
-        </main>
-    </div>
+![EDS Forms 주요 기능](/help/edge/assets/eds-forms-key-features.png)
+
+이 서비스를 사용하여 다음을 수행할 수 있습니다.
+
+* **멋진 양식으로 사용자 Captivate**: 사전 빌드된 구성 요소 라이브러리를 사용하여 복잡하고 매력적인 양식을 쉽게 빌드합니다. 쉽게 reCAPTCHA를 통합하고, 양식을 이메일로 직접 제출하고, Sharepoint, Azure Storage 및 Amazon S3와 같은 보안 스토리지 솔루션에 원활한 파일 업로드를 허용합니다. 자신만의 사용자 정의 양식 구성 요소를 만들어 자신만의 고유한 비전을 실현할 수도 있습니다.
+
+* **원하는 도구를 사용하여 디지털 등록 환경 만들기**: 콘텐츠 소스를 분리하여 작성 효율성을 높입니다. 기본적으로 문서 기반 작성(Microsoft 365 및 Google Workspace)과 AEM 작성(AEM 편집기)을 모두 사용할 수 있습니다. 따라서 동일한 웹 사이트에서 여러 컨텐츠 소스로 작업하고 Microsoft Excel, Google Sheets 또는 적응형 Forms 편집기와 같은 원하는 작성 도구를 사용할 수 있습니다.
+
+* **완벽한 Lighthouse 점수로 양식 작성**: 느린 인터넷 연결에서도 빠르게 로드하고 렌더링하는 양식을 빌드합니다. 로드 시간이 빠르고 사용자 경험이 최적화되어 있으면 양식 작성률을 높이고 전환율을 향상할 수 있습니다.
 
 
 <!-- >
@@ -66,7 +54,7 @@ Build complex and engaging forms with ease using a library of pre-built componen
 
     -->
 
-## 기본 사항부터 시작
+## 양식 만들기 시작
 
 <div>
 
