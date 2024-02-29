@@ -4,9 +4,9 @@ description: 최고 성능을 위해 구축된 AEM Forms Edge Delivery Service�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
+source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '872'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 5%
 
 AEM Forms Edge 게재에는 양식 블록이 포함되어 있습니다. 양식 블록을 사용하면 캡처한 데이터를 캡처하고 저장할 양식을 쉽게 만들 수 있습니다.
 
-양식 블록은 텍스트, 이메일, 번호, 날짜 등과 같은 HTML-5 구성 요소를 지원합니다. 또한 텍스트 영역, 선택 및 필드 세트 요소를 지원하며 HTML-5의 기본인 입력 유효성 검사 기능을 포함합니다. 양식 블록은 일관성을 보장하기 위해 모든 필드 유형 및 컨테이너에 대해 균일한 HTML 구조를 생성합니다. 귀하도 [필드 유형 스타일 지정](https://adobe-rnd.github.io/form-block/customization/styling_form) 사용 `form.css` 파일.
+양식 블록은 텍스트, 이메일, 번호, 날짜 등과 같은 OOTB HTML-5 구성 요소를 지원합니다. 또한 텍스트 영역, 선택 및 필드 세트 요소를 지원하며 HTML-5의 기본인 입력 유효성 검사 기능을 포함합니다. 양식 블록은 일관성을 보장하기 위해 모든 필드 유형 및 컨테이너에 대해 균일한 HTML 구조를 생성합니다. 귀하도 [필드 유형 스타일 지정](https://adobe-rnd.github.io/form-block/customization/styling_form) 사용 `form.css` 파일.
 
 ## 양식 블록에서 지원되는 HTML 5 입력 유형
 

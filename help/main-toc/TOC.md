@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 41976a70f5566c79a0e14d5d4e1396dbdee12046
+source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
 workflow-type: tm+mt
-source-wordcount: '4733'
-ht-degree: 99%
+source-wordcount: '4748'
+ht-degree: 98%
 
 ---
 
@@ -825,6 +825,7 @@ ht-degree: 99%
          + [사이트 페이지에 양식 게시](/help/edge/docs/forms/publish-eds-forms.md)
          + [양식 필드에 유효성 검사 추가](/help/edge/docs/forms/validate-forms.md)
          + [양식의 테마 및 스타일 변경](/help/edge/docs/forms/style-theme-forms.md)
+         + [규칙을 사용하여 양식에 동적 동작 추가](/help/edge/docs/forms/rules-forms.md)
       + 기능 {#advanced-features-eds-forms}
          + [양식 조각](/help/edge/docs/forms/form-fragments.md)
          + [반복 가능한 섹션](/help/edge/docs/forms/repeatable-forms.md)
@@ -832,6 +833,8 @@ ht-degree: 99%
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [감사 인사 페이지](/help/edge/docs/forms/thank-you-page-form.md)
          + [사용자 정의 구성 요소](/help/edge/docs/forms/custom-components-forms.md)
+      + 참조 {#forms-references}
+         + [양식 블록 구성 요소 목록](/help/edge/docs/forms/form-components.md)
    + Edge Delivery용 리소스 {#resources}
       + Sidekick {#sidekick}
          + [Sidekick 사용](/help/edge/docs/sidekick.md)

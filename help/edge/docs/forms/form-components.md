@@ -4,9 +4,9 @@ description: 최고 성능을 위해 구축된 AEM Forms Edge Delivery Service�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
+source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '275'
 ht-degree: 5%
 
 ---
@@ -57,8 +57,8 @@ ht-degree: 5%
    </td>
   </tr>
       <tr>
-   <td>플레이스홀더</td>
-   <td>텍스트, 검색, URL, 전화, 이메일, 암호 및 번호</td>
+   <td>설명</td>
+   <td>모든 필드에 적용 가능</td>
    <td> 자리 표시자 속성은 필드에 예상되는 정보의 종류에 대한 간단한 힌트를 사용자에게 제공합니다.
    </td>
   </tr>
