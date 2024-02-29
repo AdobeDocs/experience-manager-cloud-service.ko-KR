@@ -4,7 +4,7 @@ description: 최고의 성능을 위해 구축된 AEM Forms Edge Delivery Servic
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e21b681b12e90110436c7319797809c8d6b75eea
+source-git-commit: 39bb45b285fcd938d44b9748aa8559b89a3636b2
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 48%
@@ -16,8 +16,6 @@ ht-degree: 48%
 
 Adobe의 AEM Forms Edge Delivery Service를 통해 양식 생성을 간소화하고 완료율을 높일 수 있습니다. 이 강력하고 컴포저블 서비스는 탁월한 성능과 시각적인 매력으로 엔터프라이즈급 양식을 구축할 수 있도록 해줍니다. AEM은 사용자 경험과 비즈니스 목표 모두에 우선 순위를 두므로 빠르게 로드할 수 있고 양식 완성도를 높일 수 있습니다.
 
-![EDS Forms 주요 기능](/help/edge/assets/eds-forms-key-features.png){width="70%"}
-
 이 서비스를 사용하여 다음을 수행할 수 있습니다.
 
 * **멋진 양식으로 사용자 Captivate**: 사전 빌드된 구성 요소 라이브러리를 사용하여 복잡하고 매력적인 양식을 쉽게 빌드합니다. 쉽게 reCAPTCHA를 통합하고, 양식을 이메일로 직접 제출하고, Sharepoint, Azure Storage 및 Amazon S3와 같은 보안 스토리지 솔루션에 원활한 파일 업로드를 허용합니다. 자신만의 사용자 정의 양식 구성 요소를 만들어 자신만의 고유한 비전을 실현할 수도 있습니다.
@@ -26,6 +24,7 @@ Adobe의 AEM Forms Edge Delivery Service를 통해 양식 생성을 간소화하
 
 * **완벽한 Lighthouse 점수로 양식 작성**: 느린 인터넷 연결에서도 빠르게 로드하고 렌더링하는 양식을 빌드합니다. 로드 시간이 빠르고 사용자 경험이 최적화되어 있으면 양식 작성률을 높이고 전환율을 향상할 수 있습니다.
 
+  <img src="/help/edge/assets/eds-forms-key-features.png" alt="EDS Forms 주요 기능" style = "width=`80%`; align=`center`; border: 1px solid;padding: 15px;">
 
 <!-- >
 * **Captivate users with stunning forms**: 
