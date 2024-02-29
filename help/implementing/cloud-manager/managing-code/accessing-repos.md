@@ -2,12 +2,13 @@
 title: 저장소 액세스
 description: Cloud Manager의 셀프서비스 git 계정 관리를 사용하여 git 저장소에 액세스하고 관리하는 방법을 알아봅니다.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 1b24fa084577f2ba0dc718ee35d12e42ac9d609c
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 94%
+source-wordcount: '270'
+ht-degree: 85%
 
 ---
+
 
 # 저장소 액세스 {#accessing-repos}
 
@@ -23,7 +24,7 @@ Cloud Manager를 사용하면 파이프라인 카드에 있는 **저장소 정�
 
    ![환경 카드의 저장소 정보 액세스 버튼](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-1. 다음을 클릭합니다. **저장소 정보 보기** 볼 대화 상자를 여는 단추:
+1. **저장소 정보 보기** 버튼을 클릭하여 다음 정보가 표시되는 대화 상자를 엽니다.
 
    * Cloud Manager git 저장소의 URL
    * git 사용자 이름
@@ -40,3 +41,9 @@ Cloud Manager를 사용하면 파이프라인 카드에 있는 **저장소 정�
 >[!NOTE]
 >
 >**저장소 정보 액세스** 옵션은 **개발자** 또는 **배포 관리자** 역할이 있는 사용자에게 표시됩니다.
+
+## 액세스 암호 취소 {#revoke-password}
+
+액세스 암호는 언제든지 취소할 수 있습니다. 그렇게 해 주십시오 [이 요청에 대한 지원 티켓을 만듭니다.](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support)
+
+티켓은 우선순위가 높은 것으로 처리되며 하루 안에 취소되어야 합니다.
