@@ -4,42 +4,58 @@ description: 최고의 성능을 위해 구축된 AEM Forms Edge Delivery Servic
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 39bb45b285fcd938d44b9748aa8559b89a3636b2
+source-git-commit: 1c6e44fd6652d93ba73bc2eb3604cd08eae7a33c
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 48%
+source-wordcount: '610'
+ht-degree: 43%
 
 ---
 
 
 # AEM Forms Edge Delivery Service
 
-Adobe의 AEM Forms Edge Delivery Service를 통해 양식 생성을 간소화하고 완료율을 높일 수 있습니다. 이 강력하고 컴포저블 서비스는 탁월한 성능과 시각적인 매력으로 엔터프라이즈급 양식을 구축할 수 있도록 해줍니다. AEM은 사용자 경험과 비즈니스 목표 모두에 우선 순위를 두므로 빠르게 로드할 수 있고 양식 완성도를 높일 수 있습니다.
+Adobe Systems AEM Forms Edge Delivery Service를 통해 양식 작성을 간소화하고 완료율을 드라이브 높일 수 있습니다. 이 강력하고 구성 가능한 서비스를 사용하면 탁월한 성능과 시각적 매력을 갖춘 엔터프라이즈급 양식을 빌드 할 수 있습니다. AEM은 사용자 경험 및 비즈니스 목표 모두를 우선시하여 번개처럼 빠른 로딩 시간과 향상된 양식 완성을 보장합니다.
 
 이 서비스를 사용하여 다음을 수행할 수 있습니다.
 
-* **멋진 양식으로 사용자 Captivate**: 사전 빌드된 구성 요소 라이브러리를 사용하여 복잡하고 매력적인 양식을 쉽게 빌드합니다. 쉽게 reCAPTCHA를 통합하고, 양식을 이메일로 직접 제출하고, Sharepoint, Azure Storage 및 Amazon S3와 같은 보안 스토리지 솔루션에 원활한 파일 업로드를 허용합니다. 자신만의 사용자 정의 양식 구성 요소를 만들어 자신만의 고유한 비전을 실현할 수도 있습니다.
+* **멋진 양식**&#x200B;으로 사용자 사로잡기: 사전 설치 구성 요소 라이브러리를 사용하여 복잡하고 매력적인 양식을 쉽게 작성할 수 있습니다. reCAPTCHA를 쉽게 통합하고, 양식을 이메일로 직접 제출하고, Sharepoint, Azure Storage 및 Amazon S3와 좋아요 보안 스토리지 솔루션에 원활하게 파일을 업로드할 수 있습니다. 사용자 지정 양식 구성 요소를 만들어 고유한 비전을 실현할 수도 있습니다.
 
-* **원하는 도구를 사용하여 디지털 등록 환경 만들기**: 콘텐츠 소스를 분리하여 작성 효율성을 높입니다. 기본적으로 문서 기반 작성(Microsoft 365 및 Google Workspace)과 AEM 작성(AEM 편집기)을 모두 사용할 수 있습니다. 따라서 동일한 웹 사이트에서 여러 컨텐츠 소스로 작업하고 Microsoft Excel, Google Sheets 또는 적응형 Forms 편집기와 같은 원하는 작성 도구를 사용할 수 있습니다.
+* **원하는** 도구로 디지털 등록 환경 만들기: 컨텐츠 소스를 분리하여 작성 효율성을 높입니다. 기본적으로 문서 기반 작성(Microsoft 365 및 Google 작업 영역)과 AEM 작성(AEM 편집기)을 모두 사용할 수 있습니다. 따라서 동일한 웹 사이트에서 여러 컨텐츠 소스로 작업하고 Microsoft Excel, Google 스프레드시트 또는 적응형 Forms 편집기와 같은 선호하는 작성 도구를 사용할 수 있습니다.
 
-* **완벽한 Lighthouse 점수로 양식 작성**: 느린 인터넷 연결에서도 빠르게 로드하고 렌더링하는 양식을 빌드합니다. 로드 시간이 빠르고 사용자 경험이 최적화되어 있으면 양식 작성률을 높이고 전환율을 향상할 수 있습니다.
+* **완벽한 Lighthouse 점수**&#x200B;로 양식 작성: 느린 인터넷 연결에서 빠르게 로드되고 균일 렌더링되는 양식을 작성합니다. 로드 시간이 빠르고 사용자 경험이 최적화되어 있으면 양식 작성률을 높이고 전환율을 향상할 수 있습니다.
 
-  <img src="/help/edge/assets/eds-forms-key-features.png" alt="EDS Forms 주요 기능" style = "width=`80%`; align=`center`; border: 1px solid;padding: 15px;">
+  <div>
+    <style>
+    .image-container {
+    width: 80%;
+    text-align: center; 
+    }
+    .image-container img {
+        width: 70%; /* Set image width to 70% of the container */
+        border: .5px solid; /* Maintain the border style */
+        padding: 15px; /* Maintain the padding */
+    }
+</style>
+    <div class="image-container">
+    <img src="/help/edge/assets/eds-forms-key-features.png" alt="EDS Forms 주요 기능">
+    </div>
 
-<!-- >
-* **Captivate users with stunning forms**: 
-Build complex and engaging forms with ease using a library of pre-built components. Easily integrate reCAPTCHA, submit forms directly to email, and allow seamless file uploads to secure storage solutions like Sharepoint, Azure Storage, and Amazon S3. Even create your own custom forms components to bring your unique vision to life. 
 
-    ![Enrollment forms](/help/edge/assets/enrollment-form.png)
+</div>
+&lt;!-- &gt;
+* **멋진 양식으로 사용자 사로잡기**: 
+사전 설치 구성 요소 라이브러리를 사용하여 복잡하고 매력적인 양식을 쉽게 작성할 수 있습니다. reCAPTCHA를 쉽게 통합하고, 양식을 이메일로 직접 제출하고, Sharepoint, Azure Storage 및 Amazon S3와 좋아요 보안 스토리지 솔루션에 원활하게 파일을 업로드할 수 있습니다. 사용자 지정 양식 구성 요소를 만들어 고유한 비전을 실현할 수도 있습니다.
 
-* **Build forms with perfect lighthouse score**: Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.
+    ![입학 양식] (/help/edge/assets/enrollment-form.png)
 
-    ![perfect lighthouse score for your forms](/help/edge/assets/lighthouse-forms.png)
+* **Lighthouse 점수가 만점인 양식 작성**: 느린 인터넷 연결에서도 빠르게 로드되고 렌더링되는 양식을 작성합니다. 로드 시간이 빠르고 사용자 경험이 최적화되어 있으면 양식 작성률을 높이고 전환율을 향상할 수 있습니다.
 
-* **Create digital enrollment experiences with tools of your choice**: Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and document-based authoring. As such, you can work with multiple content sources on the same website and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or AEM Editors.
+  ![양식에 대한 완벽한 등대 점수](/help/edge/assets/lighthouse-forms.png)
 
-    ![Edge Delivery forms authoring tools](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
-    
+* **원하는** 도구로 디지털 등록 환경 만들기: 컨텐츠 소스를 분리하여 작성 효율성을 높입니다. 기본 제공되는 AEM 작성과 문서 기반 작성을 모두 사용할 수 있습니다. 따라서 동일한 웹 사이트에서 여러 컨텐츠 소스로 작업하고 Microsoft Excel, Google 스프레드시트 또는 AEM 편집기와 같은 선호하는 작성 도구를 사용할 수 있습니다.
+
+  ![Edge Delivery 양식 작성 도구](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+
 <!--
 * **Measure customer impact and deliver effective forms**: Use our RUM dashboards to visualize form performance and identify areas for improvement. Experiment with different versions and continuously optimize your forms for maximum effectiveness, ensuring you capture the data you need and drive better business outcomes.
 
@@ -75,8 +91,8 @@ Build complex and engaging forms with ease using a library of pre-built componen
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: -5px;">
     <div class="card-container">
         <a href="/help/edge/docs/forms/create-forms.md">
-            <img src="/help/edge/assets/smock_devices_18_n.svg" alt="EDS 양식을 사용하여 양식 만들기" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Google Sheets 또는 Microsoft Excel을 사용하여 양식 만들기</b>
+            <img src="/help/edge/assets/smock_devices_18_n.svg" alt="EDS 양식을 사용하여 양식 만들기" style="border-radius: 5px;"></b><br><b style="margin-top: 5px;">Google 스프레드시트 또는 Microsoft Excel을 사용하여 양식 만들기
+            </b>
         </a>
         <p>모바일 디바이스에서 빠르게 로드 및 렌더링되고 자동으로 재배치되는 양식을 만듭니다.</p>
     </div>
@@ -103,8 +119,8 @@ Build complex and engaging forms with ease using a library of pre-built componen
     </div> 
             <div class="card-container">
         <a href="/help/edge/docs/forms/rules-forms.md">
-            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="규칙을 사용하여 양식에 동적 동작 추가" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">규칙을 사용하여 양식에 동적 동작 추가</b>
+            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="규칙을 사용하여 양식에 동적 동작 추가" style="border-radius: 5px;"></b><br><b style="margin-top: 5px;">규칙을 사용하여 양식에 동적 동작 추가
+            </b>
         </a>
         <p>여러 양식에서 사전 구성된 조각을 재사용합니다.</p>
     </div>
