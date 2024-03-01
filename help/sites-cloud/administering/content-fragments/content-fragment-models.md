@@ -4,10 +4,10 @@ description: 콘텐츠 조각 모델이 AEM에서 콘텐츠 조각을 위한 기
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: e5a48cfd042c0e8d7448007854e1f73bded8cf7f
 workflow-type: tm+mt
-source-wordcount: '3125'
-ht-degree: 92%
+source-wordcount: '3209'
+ht-degree: 89%
 
 ---
 
@@ -43,6 +43,12 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
    ![제목 및 설명](assets/cf-cfmodels-create.png)
 
 1. **만들기**&#x200B;를 사용하여 빈 모델을 저장합니다. 작업의 성공을 나타내는 메시지가 표시되면 **열기**&#x200B;를 선택하여 모델을 즉시 편집하거나 **완료**&#x200B;를 선택하여 콘솔로 돌아갈 수 있습니다.
+
+>[!CAUTION]
+>
+>참조된 여러 조각에 대해 쿼리하는 경우 다양한 조각 모델에 이름이 같지만 유형이 다른 필드 이름이 있는 것은 권장되지 않습니다.
+>
+>자세한 내용은 을 참조하십시오. [컨텐츠 조각과 함께 사용하기 위한 AEM GraphQL API - 제한 사항](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### 콘텐츠 조각 모델 - 속성 {#content-fragment-model-properties}
 
@@ -290,6 +296,12 @@ AEM은 다음에 대한 재발 방지 기능을 제공합니다.
 * 콘텐츠 참조 이렇게 하면 사용자가 현재 조각에 대한 참조를 추가할 수 없으며 빈 조각 참조 선택기 대화 상자가 나타날 수 있습니다.
 >
 * GraphQL의 조각 참조 서로 참조하는 여러 콘텐츠 조각을 반환하는 딥 쿼리를 만들면 첫 번째 발생 시 null을 반환합니다.
+
+>[!CAUTION]
+>
+참조된 여러 조각에 대해 쿼리하는 경우 다양한 조각 모델에 이름이 같지만 유형이 다른 필드 이름이 있는 것은 권장되지 않습니다.
+>
+자세한 내용은 을 참조하십시오. [컨텐츠 조각과 함께 사용하기 위한 AEM GraphQL API - 제한 사항](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### 콘텐츠 참조 {#content-reference}
 

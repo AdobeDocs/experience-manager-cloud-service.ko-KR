@@ -3,10 +3,10 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud Service에서 Headless 콘텐츠 게재를 위해 콘텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: fd0f0fdfc0aaf02d631b9bf909fcb1e1431f5401
+source-git-commit: a8fbf0a9a1f7e12b6a668544b1a67d8551abf1b7
 workflow-type: tm+mt
-source-wordcount: '4994'
-ht-degree: 89%
+source-wordcount: '5135'
+ht-degree: 86%
 
 ---
 
@@ -1125,6 +1125,31 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
 * 쿼리에 1M(1024 * 1024)자를 초과할 수 없습니다.
 * 쿼리에 15000개 이상의 토큰을 포함할 수 없습니다.
 * 쿼리에 200000개 이상의 공백 토큰을 포함할 수 없습니다.
+
+또한 다음 사항을 알고 있어야 합니다.
+
+* GraphQL 쿼리에 두 개(또는 이상) 모델에서 이름이 같은 필드가 포함되어 있으면 필드 충돌 오류가 반환됩니다.
+
+   * 여기서
+
+      * 두 개(또는 그 이상의 모델)가 허용된 참조로 정의된 경우 가능한 참조로 사용됩니다 **모델 유형** 콘텐츠 조각 참조.
+
+     및:
+
+      * 이 두 모델에는 공통 이름을 갖는 필드가 있습니다. 즉, 두 모델에서 동일한 이름이 발생합니다.
+
+     및
+
+      * 이러한 필드는 다른 데이터 유형입니다.
+
+   * 예:
+
+      * 모델이 다른 두 개(또는 이상) 조각인 경우(예: `M1`, `M2`)는 다른 조각에서 가능한 참조(콘텐츠 참조 또는 조각 참조)로 사용됩니다. 예를 들면 다음과 같습니다. `Fragment1` `MultiField/List`
+      * 다른 모델이 있는 이 두 조각(`M1`, `M2`)에는 이름은 같지만 유형은 다른 필드가 있습니다.
+예시:
+         * `M1.Title` 다음으로: `Text`
+         * `M2.Title` 다음으로: `Text/MultiField`
+      * GraphQL 쿼리에 다음이 포함되어 있으면 필드 충돌 오류가 발생합니다. `Title` 필드.
 
 ## FAQ {#faqs}
 
