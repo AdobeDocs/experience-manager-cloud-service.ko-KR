@@ -1,13 +1,13 @@
 ---
-title: EDS 양식의 감사 인사 페이지 구성
-description: 사용자 경험을 최적화하고 사용자 여정을 간소화하기 위해 EDS Forms에 대한 감사 페이지 및 리디렉션을 구성하는 방법에 대해 알아봅니다.
+title: 제출 후 감사 페이지 또는 리디렉션 양식 구성
+description: 사용자 경험을 최적화하고 사용자 여정을 간소화하기 위해 감사 페이지 및 Forms 블록의 리디렉션을 구성하는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: cadeccd916884ca2437e2b2684771c181cc8281e
+source-git-commit: d6b1048c44022da47a9d7443f564a2ff9d1802cf
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 7%
+source-wordcount: '608'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 7%
 적응형 Forms 블록에서 기본 동작은 감사 페이지를 표시하는 것입니다. 그러나 특정 요구 사항에 맞게 이 환경을 조정할 수 있는 유연성을 가지게 됩니다. 옵션은 다음과 같습니다.
 
 * [브랜드 및 커뮤니케이션 목표에 맞게 감사 페이지 및 메시지 구성](#configuring-the-thank-you-page-and-message)
-* [제출 후 다른 페이지로 사용자 리디렉션](#redirect-users-to-another-page-post-submission), 여정 향상
+* [추가 작업을 위해 사용자를 다른 페이지 사후 제출로 리디렉션합니다.](#redirect-users-to-another-page-post-submission)
 
 ## 감사 페이지 및 메시지 구성
 
@@ -43,10 +43,10 @@ ht-degree: 7%
 
 기본적으로 적응형 Forms 블록은 사용자를 &quot;감사합니다&quot; 페이지로 리디렉션합니다. 사용자를 기본 &quot;감사합니다&quot; 페이지가 아닌 다른 페이지로 리디렉션하려면 다음 두 가지 옵션이 있습니다.
 
-* 기존 &quot;감사합니다&quot; 페이지를 다른 페이지로 바꾸거나
-* &quot;감사합니다&quot; 페이지를 선택한 다른 페이지로 리디렉션합니다.
+* [&quot;감사합니다&quot; 페이지를 다른 페이지로 바꿉니다.](#replace-the-existing-thankyou-page)
+* [&quot;감사합니다&quot; 페이지 리디렉션에 웹 사이트 리디렉션 사용](#use-website-redirects-for-thankyou-page-redirection)
 
-### 기존 &quot;감사합니다&quot; 페이지 바꾸기
+### &quot;감사합니다&quot; 페이지 바꾸기
 
 1. 를 엽니다.[EDS 프로젝트]편집할 /blocks/form/form.js&quot; 파일입니다.
 1. 변경 `thankyou` 다음 행에서 선택한 페이지로 이동합니다.
@@ -70,9 +70,15 @@ ht-degree: 7%
 1. 페이지가 EDS 프로젝트 폴더에 있는지 확인하고 게시합니다.
 
 
-### 웹 사이트 리디렉션 사용
+### &quot;감사합니다&quot; 페이지 리디렉션에 웹 사이트 리디렉션 사용
 
-웹 사이트 리디렉션을 구성하여 &quot;감사합니다&quot; 페이지를 다른 페이지로 보냅니다. 다음을 참조하십시오. [리디렉션 설명서](https://www.aem.live/docs/redirects) 자세한 지침은 을 참조하십시오.
+양식 제출 후 사용자를 다른 페이지로 리디렉션하면 관련 정보를 제공하고, 작업을 확인하고, 사용자에게 원하는 결과를 안내하여 사용자 경험을 향상시킬 수 있습니다. 예:
+
+* 사용자가 구매 양식을 완료한 후 결제 페이지로 리디렉션되어 안전하게 트랜잭션을 완료할 수 있습니다.
+* 이벤트 또는 웨비나에 대한 등록 양식을 제출하면 사용자는 날짜, 시간 및 위치와 같은 이벤트 세부 사항을 표시하는 확인 페이지로 리디렉션됩니다.
+
+&quot;감사합니다&quot; 페이지를 다른 페이지로 리디렉션하려면 [웹 사이트 리디렉션](https://www.aem.live/docs/redirects) 스프레드시트입니다.
+
 
 ## 더 보기
 
