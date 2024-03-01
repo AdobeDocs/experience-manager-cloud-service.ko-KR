@@ -4,10 +4,10 @@ description: AEM에서 기계 번역 및 인간 번역을 만들고 관리하는
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: ae500923bac34689a28b9ff0bc78586f725829de
 workflow-type: tm+mt
-source-wordcount: '3960'
-ht-degree: 85%
+source-wordcount: '4011'
+ht-degree: 83%
 
 ---
 
@@ -448,14 +448,26 @@ Sites 콘솔을 사용하여 콘텐츠를 검토하고, 언어 사본을 비교�
 
 ## 소스 페이지 이동 또는 이름 바꾸기 {#move-source}
 
-이미 번역된 소스 페이지가 [이름이 변경되거나 이동됨](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page)이동 후 페이지를 다시 번역하면 새 페이지 이름/위치를 기반으로 언어 사본이 생성됩니다. 이전 이름/위치를 기반으로 하는 이전 언어 사본은 여전히 존재합니다.
+이미 번역된 소스 페이지가 필요한 경우 [이름이 변경되거나 이동됨](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page)이동 후 페이지를 다시 번역하면 새 페이지 이름/위치를 기반으로 언어 사본이 만들어집니다. 이전 이름/위치를 기반으로 한 이전 언어 사본은 여전히 존재합니다. 이를 방지하기 위해 이동 후 언어 복사 업데이트 기능을 사용할 수 있습니다.
 
-이 시나리오에서 가장 좋은 방법은 다음 절차를 따르는 것입니다.
+1. 언어 사본이 있는 페이지를 이동합니다.
+1. 언어 사본 루트를 선택합니다.
+1. 를 엽니다. **참조** 패널.
+1. 선택 **언어 사본**.
+1. 업데이트할 타겟 언어를 선택합니다.
+1. 선택 **언어 사본 업데이트**.
 
-1. 이동하려는 소스 페이지와 연결된 언어 사본을 게시 취소합니다.
-1. 이 사본을 삭제합니다.
-1. 새로 이동한 소스 페이지에서 새 언어 사본을 만듭니다.
-1. 생성된 언어 사본을 게시합니다.
+   ![언어 사본 업데이트](../assets/translation-move-to.png)
+
+1. 클릭 **업데이트**. A [시작](/help/sites-cloud/authoring/launches/promoting.md) 이(가) 생성됩니다.
+1. 필요한 언어 루트로 이동하여 선택합니다.
+1. 사용 **참조** 패널, 선택 **론치**.
+
+   ![promote-launch-번역](../assets/promote-launch-translation.png)
+
+1. 생성된 론치를 클릭하고 를 클릭합니다. **출시 홍보**.
+
+이제 소스 페이지와 관련 언어 사본이 이동되었습니다.
 
 ## 번역 작업 가져오기 및 내보내기 {#import-export}
 
