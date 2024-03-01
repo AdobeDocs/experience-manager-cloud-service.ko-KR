@@ -4,35 +4,46 @@ description: 사용자 경험을 최적화하고 사용자 여정을 간소화�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
+source-git-commit: cadeccd916884ca2437e2b2684771c181cc8281e
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 2%
+source-wordcount: '545'
+ht-degree: 7%
 
 ---
 
 
-# 적응형 Forms 블록에서 감사 페이지 및 리디렉션 구성
+# 제출 후 감사 페이지 또는 리디렉션 양식 표시
 
-감사 페이지 및 리디렉션은 사용자에게 양식 제출 후 확인, 명확한 커뮤니케이션 및 원활한 탐색을 제공하는 사용자 경험 향상에 중요한 측면입니다.
+사용자가 양식을 제출한 후 감사 페이지나 리디렉션을 통해 원활한 경험을 제공하는 것이 중요합니다. 이러한 요소는 성공적인 제출을 확인할 뿐만 아니라 사용자 만족도를 높이고 여정에서 이를 더욱 안내합니다.
 
-## 감사 인사 페이지 구성
+* **감사 인사 페이지**: 감사 페이지는 사용자 경험의 초석으로, 브랜드 정체성을 강화하면서 안심을 제공하고 중요한 정보를 전달합니다. 사용자의 행동을 직접 인정하는 역할을 하여 완결성과 만족감을 키운다.
 
-감사 페이지는 사용자에게 안심시키는 역할을 하며 조직이 브랜드 정체성을 강화하는 동시에 필수 정보를 전달할 수 있도록 합니다. EDS Forms에 대한 감사 페이지를 구성하려면 다음 단계를 따르십시오.
+* **리디렉션**: 리디렉션은 사용자를 관련 대상으로 안내하고, 참여를 최적화하고, 궁극적으로 전환율을 높이는 데 중추적 역할을 합니다. 리디렉션을 통해 여정의 다음 단계로 원활하게 안내함으로써 원활한 탐색 경험을 보장합니다. 예를 들어 초기 세부 정보를 수집한 후 사용자를 결제 페이지로 리디렉션합니다.
+
+적응형 Forms 블록에서 기본 동작은 감사 페이지를 표시하는 것입니다. 그러나 특정 요구 사항에 맞게 이 환경을 조정할 수 있는 유연성을 가지게 됩니다. 옵션은 다음과 같습니다.
+
+* [브랜드 및 커뮤니케이션 목표에 맞게 감사 페이지 및 메시지 구성](#configuring-the-thank-you-page-and-message)
+* [제출 후 다른 페이지로 사용자 리디렉션](#redirect-users-to-another-page-post-submission), 여정 향상
+
+## 감사 페이지 및 메시지 구성
+
+적응형 Forms 블록의 기본 동작은 제출 시 &quot;감사합니다&quot; 페이지를 표시하는 것입니다. 다음 단계에 따라 적응형 Forms 블록에 대한 &quot;감사합니다&quot; 페이지를 구성하십시오.
 
 1. Microsoft SharePoint 또는 Google Workspace에서 AEM Edge 게재 프로젝트 폴더에 액세스합니다.
 1. 프로젝트 디렉터리 내에 &quot;감사합니다&quot;라는 Microsoft Word 또는 Google 문서 파일을 만듭니다.
-1. 감사 메시지를 &quot;감사합니다&quot; 파일에 추가합니다.
+1. 감사 메시지를 &quot;감사합니다&quot; 파일에 추가합니다. </br>
+
    ![감사 인사 페이지 예](/help/edge/assets/sample-thankyou-page.png)
-1. AEM Sidekick을 활용하여 &quot;감사합니다&quot; 파일을 미리 보고 게시합니다.
 
-## 제출 후 사용자 리디렉션
+1. AEM Sidekick을 사용하여 &quot;감사합니다&quot; 파일을 미리 보고 게시합니다.
 
-리디렉션을 사용하면 관련 대상으로 사용자를 안내하고, 참여를 최적화하고, 전환율을 높여 원활한 사용자 여정을 수행할 수 있습니다.
+적응형 Forms 블록은 양식 제출 시 &quot;감사합니다&quot; 페이지를 표시합니다.
+
+## 사용자를 다른 페이지 사후 제출로 리디렉션
 
 기본적으로 적응형 Forms 블록은 사용자를 &quot;감사합니다&quot; 페이지로 리디렉션합니다. 사용자를 기본 &quot;감사합니다&quot; 페이지가 아닌 다른 페이지로 리디렉션하려면 다음 두 가지 옵션이 있습니다.
 
-* 기존의 &quot;감사합니다&quot; 페이지를 다른 페이지로 바꾸거나
+* 기존 &quot;감사합니다&quot; 페이지를 다른 페이지로 바꾸거나
 * &quot;감사합니다&quot; 페이지를 선택한 다른 페이지로 리디렉션합니다.
 
 ### 기존 &quot;감사합니다&quot; 페이지 바꾸기
@@ -63,4 +74,12 @@ ht-degree: 2%
 
 웹 사이트 리디렉션을 구성하여 &quot;감사합니다&quot; 페이지를 다른 페이지로 보냅니다. 다음을 참조하십시오. [리디렉션 설명서](https://www.aem.live/docs/redirects) 자세한 지침은 을 참조하십시오.
 
+## 더 보기
 
+* [양식 구성 요소](/help/edge/docs/forms/form-components.md)
+* [양식 필드 속성](/help/edge/docs/forms/eds-form-field-properties)
+* [양식 만들기 및 미리 보기](/help/edge/docs/forms/create-forms.md)
+* [양식을 활성화하여 데이터 전송](/help/edge/docs/forms/submit-forms.md)
+* [사이트 페이지에 양식 게시](/help/edge/docs/forms/publish-eds-forms.md)
+* [양식 필드에 유효성 검사 추가](/help/edge/docs/forms/validate-forms.md)
+* [양식의 테마 및 스타일 변경](/help/edge/docs/forms/style-theme-forms.md)
