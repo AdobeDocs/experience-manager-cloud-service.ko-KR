@@ -2,10 +2,10 @@
 title: 컨텐츠 조각을 사용한 작업(자산 - 컨텐츠 조각)
 description: Adobe Experience Manager(AEM as a Cloud Service)의 컨텐츠 조각을 사용하여 페이지 작성 및 Headless 게재에 이상적인 페이지 독립적인 컨텐츠를 디자인하고, 작성하고, 선별하고, 사용하는 방법에 대해 알아봅니다. 또한 MSM과 함께 사용할 수 있는 방법입니다.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: a213d94b6c5bd4eaaf78b8384b96e1d99104874d
 workflow-type: tm+mt
-source-wordcount: '2222'
-ht-degree: 60%
+source-wordcount: '2228'
+ht-degree: 59%
 
 ---
 
@@ -113,16 +113,6 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 >[!NOTE]
 >
 >AEM은 조각 콘텐츠 번역도 지원합니다. 자세한 내용은 [자산 번역](/help/assets/translate-assets.md)을 참조하십시오.
-
-## MSM을 통해 에셋용 콘텐츠 조각 재사용 {#reusing-content-fragments-with-msm-assets}
-
-를 통해 액세스할 때 **에셋** 콘솔에서 MSM을 사용하고 조각에 대한 라이브 카피를 만들 수 있습니다.
-
-자세한 내용은 [에셋용 MSM을 사용하여 콘텐츠 조각 재사용](/help/assets/reuse-assets-using-msm.md). 이를 통해 다음을 수행할 수 있습니다. [상속](/help/assets/content-fragments/content-fragments-variations.md#inheritance) 변형과 조각의 개별 필드 모두에 사용됩니다.
-
->[!CAUTION]
->
->MSM(콘텐츠 조각의 복사본 생성)을 사용하려면 다음을 수행합니다. **고유** 각 데이터 세트에 사용된 모든 데이터 유형에서 제약 조건을 제거해야 합니다 [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md).
 
 ## 콘텐츠 유형 {#content-type}
 
@@ -297,6 +287,21 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
    * 채널 등과 같이 조각의 레이아웃 및 게재를 담당합니다.
    * 조각은 레이아웃을 정의하고 일부 또는 모든 요소/변형 및 관련 컨텐츠를 게재하기 위해 하나 이상의 전용 구성 요소를 필요로 합니다.
    * 작성 중인 페이지에 조각을 드래그하면 필요한 구성 요소가 자동으로 연결됩니다.
+
+## MSM을 통해 콘텐츠 조각 재사용(에셋용) {#reusing-content-fragments-with-msm-assets}
+
+를 통해 액세스할 때 **에셋** 콘솔에서 MSM을 사용하고 조각에 대한 라이브 카피를 만들 수 있습니다.
+
+자세한 내용은 다음을 참조하십시오.
+
+* [MSM을 사용하여 콘텐츠 조각 재사용(에셋용)](/help/assets/content-fragments/content-fragments-msm.md)
+* [자산에 MSM을 사용하여 자산 재사용](/help/assets/reuse-assets-using-msm.md).
+
+이를 통해 다음이 가능합니다. [상속](/help/assets/content-fragments/content-fragments-variations.md#inheritance) 변형과 조각의 개별 필드 모두에 사용됩니다.
+
+>[!CAUTION]
+>
+>MSM(콘텐츠 조각의 복사본 생성)을 사용하려면 다음을 수행합니다. **고유** 각 데이터 세트에 사용된 모든 데이터 유형에서 제약 조건을 제거해야 합니다 [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md).
 
 ## 사용 예 {#example-usage}
 

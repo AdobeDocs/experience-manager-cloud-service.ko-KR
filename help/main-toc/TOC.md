@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 05e4adb0d7ada0f7cea98858229484bf8cca0d16
+source-git-commit: 974650c0f268de8ecff7fdb693cdd1e32efb2e1c
 workflow-type: tm+mt
-source-wordcount: '4749'
+source-wordcount: '4748'
 ht-degree: 98%
 
 ---
@@ -470,7 +470,7 @@ ht-degree: 98%
    + 자산 공유 및 배치 {#brand-portal}
       + [ [!DNL Brand Portal]을 사용하여 [!DNL Assets] 구성](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [ [!DNL Brand Portal]에 자산 게시](/help/assets/publish-to-brand-portal.md)
-      + [ [!DNL Brand Portal] 에서 [!DNL Assets]로 자산 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ko-KR)
+      + [ [!DNL Brand Portal] 에서 [!DNL Assets]로 자산 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
    + 콘텐츠 조각 {#content-fragments}
       + [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)
       + [콘텐츠 조각 및 GraphQL을 사용하여 Headless 게재](/help/assets/content-fragments/content-fragments-graphql.md)
@@ -484,7 +484,7 @@ ht-degree: 98%
       + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
       + [구조 트리](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [미리보기 - JSON 표현식](/help/assets/content-fragments/content-fragments-json-preview.md)
-      + [자산의 MSM을 사용하여 콘텐츠 조각 재사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=ko-KR)
+      + [MSM을 사용하여 콘텐츠 조각 재사용(에셋용)](/help/assets/content-fragments/content-fragments-msm.md)
    + Dynamic Media {#dynamicmedia}
       + Dynamic Media 여정: 기본 사항 {#dm-journey}
          + [1부: Dynamic Media 소개 - 사용 사례 - 자산이 시스템을 통해 이동하는 방법](/help/assets/dynamic-media/dm-journey-part1.md)
@@ -638,7 +638,7 @@ ht-degree: 98%
             + [사용자 정의 함수 만들기 및 사용](/help/forms/create-and-use-custom-functions.md)
       + 기초 구성 요소 {#authoring-adaptive-forms-foundation-components}
          + PDF 양식을 적응형 양식으로 변환 {#afcs}
-            + [자동 양식 전환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ko-KR)
+            + [자동 양식 전환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
             + [기존 PDF 양식을 적응형 양식으로 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=ko-KR)
             + [전환된 양식 검토 및 수정](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=ko-KR#welcome-to-review-and-correct-editor)
          + 적응형 양식 만들기 {#create-an-adaptive-form-on-forms-cs}

@@ -2,7 +2,7 @@
 title: 변형 - 조각 컨텐츠 작성(자산 - 컨텐츠 조각)
 description: 콘텐츠 조각 변형을 통해 조각에 대한 콘텐츠를 작성한 다음 목적에 따라 해당 콘텐츠의 변형을 만들어 유연성을 높이는 방법을 이해합니다.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+source-git-commit: a213d94b6c5bd4eaaf78b8384b96e1d99104874d
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 53%
@@ -402,7 +402,7 @@ Markdown을 사용하여 텍스트 서식을 지정할 수 있습니다. 다음�
 
 ## 상속 {#inheritance}
 
-상속은 콘텐츠를 한 조각에서 다른 조각으로 자동으로 푸시할 수 있는 메커니즘입니다. 상속된 필드 및 변형은 의 산물일 수 있습니다. [다중 사이트 관리](/help/assets/content-fragments/content-fragments.md#reusing-content-fragments-with-msm-assets).
+상속은 콘텐츠를 한 조각에서 다른 조각으로 자동으로 푸시할 수 있는 메커니즘입니다. 상속된 필드 및 변형은 의 산물일 수 있습니다. [다중 사이트 관리](/help/assets/content-fragments/content-fragments-msm.md).
 
 상속을 취소(그런 다음 다시 활성화)할 수 있습니다. 조각이 라이브 카피의 일부인 경우 컨텍스트에 따라 변형에 사용하거나 개별 필드에 사용할 수 있습니다.
 
