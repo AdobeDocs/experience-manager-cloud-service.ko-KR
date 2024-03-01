@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: 05e4adb0d7ada0f7cea98858229484bf8cca0d16
 workflow-type: tm+mt
-source-wordcount: '4748'
+source-wordcount: '4749'
 ht-degree: 98%
 
 ---
@@ -845,7 +845,7 @@ ht-degree: 98%
       + [관리 API](https://www.aem.live/docs/admin.html)
       + [AEM 상태](https://www.aemstatus.net)
       + 도구 {#tools}
-         + [Sidekick Chrome 확장 기능](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+         + [AEM Sidekick Chrome 확장 프로그램](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
          + [Github 봇](https://github.com/apps/aem-code-sync)
          + [감사 로그](/help/edge/docs/auditlog.md)
 + Headless {#headless}
