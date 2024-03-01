@@ -4,10 +4,10 @@ description: Package Manager를 사용하여 패키지 관리를 하는 AE의 �
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 422b4d98e2665e332ff65a3638a02282064b2bea
 workflow-type: tm+mt
-source-wordcount: '3774'
-ht-degree: 4%
+source-wordcount: '3769'
+ht-degree: 3%
 
 ---
 
@@ -109,7 +109,7 @@ Package Manager 는 네 가지 주요 기능 영역으로 나뉩니다.
 * **패키지 목록** - 왼쪽 탐색 패널의 선택 항목별로 필터링되고 정렬된 인스턴스의 패키지 목록입니다.
 * **활동 로그** - 이 패널은 처음에 최소화되며, 패키지를 빌드하거나 설치할 때와 같은 패키지 관리자의 활동을 자세히 설명하도록 확장됩니다. [작업 로그] 탭에는 다음과 같은 추가 버튼이 있습니다.
    * **로그 지우기**
-   * **표시 / 숨기기**
+   * **표시/숨기기**
 * **도구 모음** - 도구 모음에는 왼쪽 탐색 패널 및 패키지 목록에 대한 새로 고침 버튼과 패키지를 검색, 생성 및 업로드하기 위한 버튼이 포함되어 있습니다.
 
 ![패키지 관리자 UI](assets/package-manager-ui.png)
@@ -123,7 +123,7 @@ Package Manager 는 네 가지 주요 기능 영역으로 나뉩니다.
 패키지 세부 사항을 확장할 때 사용할 수 있는 도구 모음 버튼을 통해 패키지에서 수행할 수 있는 여러 작업이 있습니다.
 
 * [편집](#edit-package)
-* [작성](#building-a-package)
+* [빌드](#building-a-package)
 * [다시 설치](#reinstalling-packages)
 * [다운로드](#downloading-packages-to-your-file-system)
 
@@ -207,7 +207,7 @@ Package Manager 는 네 가지 주요 기능 영역으로 나뉩니다.
 
 ![종속성 탭](assets/dependencies.png)
 
-| 필드 | 설명 | 예/세부 사항 |
+| 필드 | 설명 | 예제/세부 정보 |
 |---|---|---|
 | 테스트 대상 | 이 패키지가 타겟팅되거나 호환되는 제품 이름 및 버전입니다. | `AEMaaCS` |
 | 해결된 문제 | 이 패키지로 수정된 버그의 세부 사항을 나열할 수 있는 텍스트 필드로, 한 줄에 하나의 버그가 있습니다. | - |
@@ -218,7 +218,7 @@ Package Manager 는 네 가지 주요 기능 영역으로 나뉩니다.
 
 ![고급 설정 탭](assets/advanced-settings.png)
 
-| 필드 | 설명 | 예/세부 사항 |
+| 필드 | 설명 | 예제/세부 정보 |
 |---|---|---|
 | 이름 | 패키지 공급자의 이름 | `WKND Media Group` |
 | URL | 공급자의 URL | `https://wknd.site` |
@@ -282,7 +282,7 @@ Package Manager 는 네 가지 주요 기능 영역으로 나뉩니다.
 
 1. 클릭 **빌드**. 대화 상자에 기존 패키지 내용을 덮어쓰게 되므로 패키지를 빌드할 것인지 확인하는 메시지가 표시됩니다.
 
-1. **확인**&#x200B;을 클릭합니다. AEM은 패키지를 빌드하여 활동 목록에서와 같이 패키지에 추가된 모든 컨텐츠를 나열합니다. 완료 시 AEM에 패키지가 작성되었다는 확인이 표시되고 대화 상자를 닫을 때 패키지 목록 정보가 업데이트됩니다.
+1. 클릭 **확인**. AEM은 패키지를 빌드하여 활동 목록에서와 같이 패키지에 추가된 모든 컨텐츠를 나열합니다. 완료 시 AEM에 패키지가 작성되었다는 확인이 표시되고 대화 상자를 닫을 때 패키지 목록 정보가 업데이트됩니다.
 
 >[!TIP]
 >
@@ -612,4 +612,4 @@ AEM 패키지를 사용하여 AEMaaCS 환경에서 콘텐츠를 만들고 공유
 
 [소프트웨어 배포](https://downloads.experiencecloud.adobe.com) 로컬 개발 AEM SDK에서 사용할 AEM 패키지를 제공합니다. 소프트웨어 배포에 제공된 AEM 패키지는 Adobe 지원에서 명시적으로 승인하지 않는 한 AEMaaCS 클라우드 환경에 설치하지 않아야 합니다.
 
-자세한 내용은 [소프트웨어 배포 설명서](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+자세한 내용은 다음을 참조하십시오. [소프트웨어 배포 설명서.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
