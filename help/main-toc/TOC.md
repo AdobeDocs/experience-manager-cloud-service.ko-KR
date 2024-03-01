@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 974650c0f268de8ecff7fdb693cdd1e32efb2e1c
+source-git-commit: b7b9dbfa7f939828d66a785daecf84c917923c37
 workflow-type: tm+mt
-source-wordcount: '4748'
+source-wordcount: '4751'
 ht-degree: 98%
 
 ---
@@ -781,8 +781,8 @@ ht-degree: 98%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [마이그레이션](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
-+ Edge Delivery Services {#edge-delivery}
-   + [AEM 및 Edge Delivery Services](/help/edge/overview.md)
++ Edge Delivery Services이 있는 AEM {#edge-delivery}
+   + [Edge Delivery Services 시작](/help/edge/overview.md)
    + [Edge Delivery 사용](/help/edge/using.md)
    + [개발자 시작 안내서](/help/edge/edge-dev-getting-started.md)
    + [Edge Delivery용 콘텐츠 작성](/help/edge/authoring.md)
