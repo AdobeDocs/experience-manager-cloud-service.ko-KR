@@ -2,16 +2,16 @@
 title: 컨텐츠 조각을 사용한 작업(자산 - 컨텐츠 조각)
 description: Adobe Experience Manager(AEM as a Cloud Service)의 컨텐츠 조각을 사용하여 페이지 작성 및 Headless 게재에 이상적인 페이지 독립적인 컨텐츠를 디자인하고, 작성하고, 선별하고, 사용하는 방법에 대해 알아봅니다. 또한 MSM과 함께 사용할 수 있는 방법입니다.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: a213d94b6c5bd4eaaf78b8384b96e1d99104874d
+source-git-commit: 02b96c27f985492396cfbd262b9fec450ec8d2c8
 workflow-type: tm+mt
-source-wordcount: '2228'
-ht-degree: 59%
+source-wordcount: '2222'
+ht-degree: 60%
 
 ---
 
 # 콘텐츠 조각을 사용하여 작업 {#working-with-content-fragments}
 
-Adobe Experience Manager(AEM) as a Cloud Service으로 콘텐츠 조각을 사용하여 디자인, 만들기, 조정 및 제작 작업을 수행할 수 있습니다. [페이지에 영향을 받지 않는 콘텐츠 게시](/help/sites-cloud/authoring/fragments/content-fragments.md). 이를 통해 Headless 게재에 이상적인, 여러 위치/여러 채널에서 사용할 준비가 된 콘텐츠를 준비할 수 있습니다. 또한 다음과 함께 사용할 수도 있습니다. [콘텐츠를 재사용할 수 있는 다중 사이트 관리](#reusing-content-fragments-with-msm-assets).
+Adobe Experience Manager(AEM) as a Cloud Service으로 콘텐츠 조각을 사용하여 디자인, 만들기, 조정 및 제작 작업을 수행할 수 있습니다. [페이지에 영향을 받지 않는 콘텐츠 게시](/help/sites-cloud/authoring/fragments/content-fragments.md). 이를 통해 Headless 게재에 이상적인, 여러 위치/여러 채널에서 사용할 준비가 된 콘텐츠를 준비할 수 있습니다. 또한 다음과 함께 사용할 수도 있습니다. [콘텐츠를 재사용할 수 있는 다중 사이트 관리](#reusing-content-fragments-with-msm).
 
 콘텐츠 조각에는 구조화된 콘텐츠가 포함되어 있습니다.
 
@@ -50,7 +50,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 * [관련 콘텐츠 사용](/help/assets/content-fragments/content-fragments-assoc-content.md) - 관련 콘텐츠 추가
 * [메타데이터 - 조각 속성](/help/assets/content-fragments/content-fragments-metadata.md) - 조각 속성 보기 및 편집
 * 사용 [콘텐츠를 전달할 수 있도록 GraphQL과 함께 콘텐츠 조각](/help/assets/content-fragments/content-fragments-graphql.md) 애플리케이션에 사용할 수 있습니다. 이를 위해 다음을 미리 볼 수 있습니다. [JSON 출력](/help/assets/content-fragments/content-fragments-json-preview.md).
-* [에셋용 MSM을 사용하여 콘텐츠 조각 재사용](#reusing-content-fragments-with-msm-assets)
+* [MSM을 사용하여 콘텐츠 조각 재사용](#reusing-content-fragments-with-msm)
 
 >[!NOTE]
 >
@@ -288,13 +288,13 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
    * 조각은 레이아웃을 정의하고 일부 또는 모든 요소/변형 및 관련 컨텐츠를 게재하기 위해 하나 이상의 전용 구성 요소를 필요로 합니다.
    * 작성 중인 페이지에 조각을 드래그하면 필요한 구성 요소가 자동으로 연결됩니다.
 
-## MSM을 통해 콘텐츠 조각 재사용(에셋용) {#reusing-content-fragments-with-msm-assets}
+## MSM을 사용하여 콘텐츠 조각 재사용 {#reusing-content-fragments-with-msm}
 
 를 통해 액세스할 때 **에셋** 콘솔에서 MSM을 사용하고 조각에 대한 라이브 카피를 만들 수 있습니다.
 
 자세한 내용은 다음을 참조하십시오.
 
-* [MSM을 사용하여 콘텐츠 조각 재사용(에셋용)](/help/assets/content-fragments/content-fragments-msm.md)
+* [MSM을 사용하여 콘텐츠 조각 재사용](/help/assets/content-fragments/content-fragments-msm.md)
 * [자산에 MSM을 사용하여 자산 재사용](/help/assets/reuse-assets-using-msm.md).
 
 이를 통해 다음이 가능합니다. [상속](/help/assets/content-fragments/content-fragments-variations.md#inheritance) 변형과 조각의 개별 필드 모두에 사용됩니다.
