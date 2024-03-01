@@ -4,9 +4,9 @@ description: AEM Forms Edge Delivery Service 양식의 테마 및 스타일 사�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1271'
 ht-degree: 1%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 1%
 
 # 양식 필드 스타일링
 
-Forms은 웹 사이트에서 사용자가 데이터를 입력할 수 있도록 하는 데 중요합니다. 이 안내서에서는 내에서 다양한 양식 필드를 스타일링하는 기본 사항을 다룹니다. [양식 블록](/help/edge/docs/forms/create-forms.md)를 사용하면 시각적으로 호소력 있고 사용자에게 친숙한 양식을 만들 수 있습니다.
+Forms은 웹 사이트에서 사용자가 데이터를 입력할 수 있도록 하는 데 중요합니다. 이 안내서에서는 내에서 다양한 양식 필드를 스타일링하는 기본 사항을 다룹니다. [적응형 양식 블록](/help/edge/docs/forms/create-forms.md)를 사용하면 시각적으로 호소력 있고 사용자에게 친숙한 양식을 만들 수 있습니다.
 
 ## 양식 필드 유형 이해
 
-스타일링에 들어가기 전에 양식 블록에서 지원하는 일반적인 양식 필드 유형을 검토해 보겠습니다.
+스타일링에 들어가기 전에 적응형 양식 블록에서 지원하는 일반적인 양식 필드 유형을 검토해 보겠습니다.
 
 * 입력 필드: 여기에는 텍스트 입력, 이메일 입력, 암호 입력 등이 포함됩니다.
 * 확인란 그룹: 여러 옵션을 선택하는 데 사용됩니다.
@@ -35,7 +35,7 @@ Forms은 웹 사이트에서 사용자가 데이터를 입력할 수 있도록 �
 * 상자 모델: CSS 상자 모델은 패딩, 테두리 및 여백으로 둘러싸인 컨텐츠 영역으로 HTML 요소의 구조를 설명합니다.
 * Flexbox/Grid: CSS Flexbox 및 Grid 레이아웃은 반응형 및 유연한 디자인을 만들기 위한 강력한 도구입니다.
 
-## 양식 블록을 위한 양식 스타일링
+## 적응형 양식 블록을 위한 양식 스타일링
 
 양식 블록은 양식 구성 요소를 선택하고 스타일을 지정하는 프로세스를 단순화하는 표준화된 HTML 구조를 제공합니다.
 

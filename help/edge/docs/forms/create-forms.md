@@ -4,21 +4,21 @@ description: 완벽한 양식을 빠르게 제작하십시오. ⚡ AEM Forms Edg
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 39bb45b285fcd938d44b9748aa8559b89a3636b2
+source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1147'
 ht-degree: 17%
 
 ---
 
 
-# EDS(Edge Delivery Service) 사이트에 대한 양식 만들기
+# 적응형 양식 블록을 사용하여 양식 만들기
 
 오늘날의 디지털 시대에는 사용자 친화적인 양식을 만드는 것이 모든 조직에 필수적입니다. AEM Forms Edge Delivery를 사용하면 Word 또는 Google Docs와 같은 익숙한 도구를 사용하여 양식을 만들 수 있습니다.
 
 이러한 양식은 데이터를 Microsoft Excel 또는 Google Sheets 파일에 직접 제출하므로 Google Sheets, Microsoft Excel 및 Microsoft Sharepoint의 활발한 에코시스템과 강력한 API를 사용하여 쉽게 제출 데이터를 처리하거나 기존 비즈니스 워크플로를 시작할 수 있습니다.
 
-AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식을 쉽게 만들 수 있도록 양식 블록을 제공합니다. 양식 만들기를 시작하려면 AEM EDS 프로젝트에 양식 블록을 포함할 수 있습니다. 시작하겠습니다.
+AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식을 쉽게 만들 수 있도록 적응형 양식 블록이라고 하는 블록을 제공합니다. AEM EDS 프로젝트에 적응형 양식 블록을 포함하여 양식 만들기를 시작할 수 있습니다. 시작하겠습니다.
 
 
 ## 사전 요구 사항
@@ -26,23 +26,23 @@ AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식�
 시작하기 전에 다음 단계를 완료했는지 확인하십시오.
 
 * AEM Boilerplate를 사용하여 EDS(Edge Delivery Service) GitHub 프로젝트를 설정하고 로컬 컴퓨터에서 해당 GitHub 리포지토리를 복제합니다. 다음을 참조하십시오 [개발자 자습서](https://www.aem.live/developer/tutorial) 을 참조하십시오. 이 문서에서는 EDS(Edge Delivery Service) 프로젝트의 로컬 폴더를 참조하십시오. `[EDS Project repository]` .
-* 복제 [Forms 블록 저장소](https://github.com/adobe/afb) 로컬 컴퓨터에서. EDS 웹 페이지에서 양식을 렌더링하는 코드가 포함되어 있습니다. 이 문서에서는 Forms 블록 저장소의 로컬 폴더를 다음과 같이 합니다. `[Forms Block repository]`.
 * Google Sheets 또는 Microsoft SharePoint에 액세스할 수 있는지 확인합니다. Microsoft SharePoint을 컨텐츠 소스로 설정하려면 를 참조하십시오. [Sharepoint 사용 방법](https://www.aem.live/docs/setup-customer-sharepoint)
 
 
 
 ## 양식 만들기
 
-+++ 1단계: Edge Delivery Service(EDS) 프로젝트에 양식 블록을 추가합니다.
++++ 1단계: 적응형 양식 블록을 EDS(Edge Delivery Service) 프로젝트에 추가합니다.
 
-양식 블록은 사용자가 Edge Delivery Service 사이트에 대한 양식을 만들 수 있는 권한을 부여합니다. 그러나 이 블록은 기본 AEM 보일러판에 포함되지 않습니다(Edge Delivery Service 프로젝트를 만드는 데 사용됨). 양식 블록을 Edge Delivery Service 프로젝트에 원활하게 통합하려면 다음을 수행하십시오.
+적응형 양식은 사용자가 Edge 게재 서비스 사이트용 양식을 만들 수 있도록 합니다. 그러나 이 블록은 기본 AEM 보일러판에 포함되지 않습니다(Edge Delivery Service 프로젝트를 만드는 데 사용됨). 적응형 양식 블록을 Edge Delivery Service 프로젝트에 원활하게 통합하려면 다음을 수행하십시오.
 
-1. **양식 블록 저장소를 찾습니다.** 액세스 [Forms 블록 저장소]/blocks 폴더를 로컬 컴퓨터에 복사하고 `form` 폴더를 삭제합니다.
-1. **양식 블록을 EDS 프로젝트에 붙여넣습니다.**
+1. **적응형 양식 블록 리포지토리 복제**: 복제 [적응형 양식 블록 저장소](https://github.com/adobe/afb) 로컬 컴퓨터에서. EDS 웹 페이지에서 양식을 렌더링하는 코드가 포함되어 있습니다. 이 문서에서는 Forms 블록 저장소의 로컬 폴더를 다음과 같이 합니다. `[Adaptive Form block repository]`.
+1. **적응형 양식 블록 저장소를 찾습니다.** 액세스 [적응형 양식 블록 저장소]/blocks 폴더를 로컬 컴퓨터에 복사하고 `form` 폴더를 삭제합니다.
+1. **적응형 양식 블록을 EDS 프로젝트에 붙여넣습니다.**
 다음 위치로 이동 [EDS 프로젝트 저장소]로컬 컴퓨터의 /blocks/ 폴더를 만들고 양식 폴더를 붙여 넣습니다.
 1. **GitHub에 변경 사항 커밋:** 양식 폴더 및 기본 파일을 GitHub의 Edge 게재 서비스 프로젝트에 체크 인합니다.
 
-이 단계를 완료하면 양식 블록이 GitHub의 EDS(Edge Delivery Service) 프로젝트 저장소에 성공적으로 통합됩니다.
+이 단계를 완료하면 적응형 양식 블록이 GitHub의 EDS(Edge Delivery Service) 프로젝트 저장소에 성공적으로 추가됩니다. 이제 양식을 만들어 EDS Sites 페이지에 추가할 수 있습니다.
 
 
 **GitHub 빌드 문제 해결**
@@ -90,7 +90,7 @@ AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식�
 
    ![AEM Sidekick을 사용하여 시트 미리 보기](/help/edge/assets/preview-form.png)
 
-   미리보기 및 게시 시 새 브라우저 탭에 시트의 콘텐츠가 JSON 형식으로 표시됩니다. 다음 섹션에서 양식을 렌더링하는 데 필요하므로 미리 보기 URL을 캡처해야 합니다. URL 형식은 다음과 같습니다.
+   미리 볼 때 새 브라우저 탭에 시트의 콘텐츠가 JSON 형식으로 표시됩니다. 다음 섹션의 양식을 렌더링하는 데 필요하므로 미리 보기 URL을 캡처해야 합니다. URL 형식은 다음과 같습니다.
 
 
    ```JSON
@@ -111,7 +111,7 @@ AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식�
 +++ 3단계: EDS(Edge Delivery Service) 페이지를 사용하여 양식을 미리 봅니다.
 
 
-지금까지 양식 블록을 EDS 프로젝트에 추가하고 양식 구조를 준비했습니다. 이제 양식을 미리 보려면 다음 작업을 수행하십시오.
+지금까지 적응형 양식 블록을 EDS 프로젝트에 추가하고 양식 구조를 준비했습니다. 이제 양식을 미리 보려면 다음 작업을 수행하십시오.
 
 1. **프로젝트 디렉터리에 액세스:** Microsoft SharePoint 또는 Google 드라이브 계정을 열고 AEM Edge 게재 프로젝트 디렉터리로 이동합니다.
 
@@ -119,7 +119,7 @@ AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식�
 
 1. **원하는 위치로 이동합니다.** 양식을 추가하려는 문서 내에서 원하는 위치로 이동합니다.
 
-1. **양식 블록 추가:** 아래 그림과 같이 파일에 &#39;Form&#39;이라는 블록을 삽입합니다.
+1. **적응형 양식 블록 추가:** 아래 그림과 같이 파일에 &#39;Form&#39;이라는 블록을 삽입합니다.
 
    | 양식 |
    |---|

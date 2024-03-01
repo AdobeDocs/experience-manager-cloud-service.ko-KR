@@ -4,10 +4,10 @@ description: 스프레드시트 및 양식 블록 필드를 사용하여 강력�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
+source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 61%
+source-wordcount: '996'
+ht-degree: 56%
 
 ---
 
@@ -160,7 +160,7 @@ Admin API를 사용하여 스프레드시트에서 데이터를 허용하도록 
 1. 원하는 제목을 입력하고 필드 아래에 Slack 알림에 표시할 필드 이름을 입력합니다. 각 제목은 쉼표로 구분되어야 합니다(예: 이름, 이메일).
 
 
-이제 시트가 데이터를 수신하도록 설정되었으며, [양식 블록을 사용하여 양식을 미리 보거나](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page)  [POST 요청을 사용](#use-admin-apis-to-send-data-to-your-sheet)하여 시트로 데이터 전송을 시작할 수 있습니다.
+이제 데이터를 수신하도록 시트가 설정되어 있습니다. 다음을 수행할 수 있습니다. [적응형 양식 블록을 사용하여 양식 미리 보기](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) 또는 [POST 요청 사용](#use-admin-apis-to-send-data-to-your-sheet) 데이터를 시트로 보내기 시작합니다.
 
 >[!WARNING]
 >
@@ -168,7 +168,7 @@ Admin API를 사용하여 스프레드시트에서 데이터를 허용하도록 
 
 ## 시트로 데이터 전송 {#send-data-to-your-sheet}
 
-데이터를 수신하도록 시트를 설정한 후 [양식 블록을 사용하여 양식을 미리 보거나](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page)  [Admin API를 사용](#use-admin-apis-to-send-data-to-your-sheet)하여 시트로 데이터 전송을 시작할 수 있습니다.
+시트가 데이터를 수신하도록 설정되면 다음 작업을 수행할 수 있습니다 [적응형 양식 블록을 사용하여 양식 미리 보기](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) 또는 [관리 API 사용](#use-admin-apis-to-send-data-to-your-sheet) 데이터를 시트로 보내기 시작합니다.
 
 ### Admin API를 사용하여 시트에 데이터 전송
 
