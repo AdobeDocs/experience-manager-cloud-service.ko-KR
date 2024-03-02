@@ -4,9 +4,9 @@ description: 스프레드시트 및 적응형 양식 블록 필드를 사용하�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1000'
 ht-degree: 56%
 
 ---
@@ -14,7 +14,10 @@ ht-degree: 56%
 
 # 데이터를 허용하도록 스프레드시트 준비
 
+![문서 기반 작성 에코시스템](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
+
 다음 작업을 완료하면 [양식을 만들고 미리보기](/help/edge/docs/forms/create-forms.md)해당 스프레드시트가 데이터 수신을 시작할 수 있도록 활성화해야 합니다.
+
 
 <!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
@@ -43,6 +46,7 @@ ht-degree: 56%
 
 
 필드 이름이 추가되면 `incoming` 시트, 양식을 제출할 준비가 되었습니다. 양식을 미리 보고 이를 사용하여 시트에 데이터를 제출할 수 있습니다.
+
 
 스프레드시트에서 다음 변경 사항도 관찰할 수 있습니다.
 

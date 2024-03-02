@@ -4,9 +4,9 @@ description: AEM Forms Edge Delivery Services 양식 게시
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '557'
 ht-degree: 10%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 10%
 # 양식 게시
 
 데이터 수집 또는 제출을 위해 고객과 양식을 공유할 준비가 되면 이를 게시하여 고객이 양식을 쉽게 사용할 수 있도록 할 수 있습니다.
+
+![문서 기반 작성 에코시스템](/help/edge/assets/document-based-authoring-workflow-publish-form.png)
 
 ## 전제 조건
 

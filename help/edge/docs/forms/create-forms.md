@@ -4,7 +4,7 @@ description: 완벽한 양식을 빠르게 제작하십시오. ⚡ AEM Forms Edg
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 17%
@@ -18,7 +18,7 @@ ht-degree: 17%
 
 이러한 양식은 데이터를 Microsoft Excel 또는 Google Sheets 파일에 직접 제출하므로 Google Sheets, Microsoft Excel 및 Microsoft Sharepoint의 활발한 에코시스템과 강력한 API를 사용하여 쉽게 제출 데이터를 처리하거나 기존 비즈니스 워크플로를 시작할 수 있습니다.
 
-![문서 기반 작성 에코시스템](/help/edge/assets/document-based-authoring-workflow.png)
+![문서 기반 작성 에코시스템](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
 AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식을 쉽게 만들 수 있도록 적응형 양식 블록이라고 하는 블록을 제공합니다. AEM EDS 프로젝트에 적응형 양식 블록을 포함하여 양식 만들기를 시작할 수 있습니다. 시작하겠습니다.
 
