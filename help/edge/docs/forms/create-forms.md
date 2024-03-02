@@ -4,7 +4,7 @@ description: 완벽한 양식을 빠르게 제작하십시오. ⚡ AEM Forms Edg
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 68b60d33e6ccfe27452cfea76603e4d7d29f0c6e
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 17%
@@ -18,7 +18,7 @@ ht-degree: 17%
 
 이러한 양식은 데이터를 Microsoft Excel 또는 Google Sheets 파일에 직접 제출하므로 Google Sheets, Microsoft Excel 및 Microsoft Sharepoint의 활발한 에코시스템과 강력한 API를 사용하여 쉽게 제출 데이터를 처리하거나 기존 비즈니스 워크플로를 시작할 수 있습니다.
 
-![문서 기반 작성 에코시스템](/help/edge/assets/document-based-authoring.png)
+![문서 기반 작성 에코시스템](/help/edge/assets/document-based-authoring-workflow.png)
 
 AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식을 쉽게 만들 수 있도록 적응형 양식 블록이라고 하는 블록을 제공합니다. AEM EDS 프로젝트에 적응형 양식 블록을 포함하여 양식 만들기를 시작할 수 있습니다. 시작하겠습니다.
 
@@ -38,7 +38,7 @@ AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식�
 
 적응형 양식은 사용자가 Edge 게재 서비스 사이트용 양식을 만들 수 있도록 합니다. 그러나 이 블록은 기본 AEM 보일러판에 포함되지 않습니다(Edge Delivery Service 프로젝트를 만드는 데 사용됨). 적응형 양식 블록을 Edge Delivery Service 프로젝트에 원활하게 통합하려면 다음을 수행하십시오.
 
-1. **적응형 양식 블록 리포지토리 복제**: 복제 [적응형 양식 블록 저장소](https://github.com/adobe/afb) 로컬 컴퓨터에서. EDS 웹 페이지에서 양식을 렌더링하는 코드가 포함되어 있습니다. 이 문서에서는 Forms 블록 저장소의 로컬 폴더를 다음과 같이 합니다. `[Adaptive Form block repository]`.
+1. **적응형 양식 블록 저장소 복제**: 복제 [적응형 양식 블록 저장소](https://github.com/adobe/afb) 로컬 컴퓨터에서. EDS 웹 페이지에서 양식을 렌더링하는 코드가 포함되어 있습니다. 이 문서에서는 Forms 블록 저장소의 로컬 폴더를 다음과 같이 합니다. `[Adaptive Form Block repository]`.
 1. **적응형 양식 블록 저장소를 찾습니다.** 액세스 [적응형 양식 블록 저장소]/blocks 폴더를 로컬 컴퓨터에 복사하고 `form` 폴더를 삭제합니다.
 1. **적응형 양식 블록을 EDS 프로젝트에 붙여넣습니다.**
 다음 위치로 이동 [EDS 프로젝트 저장소]로컬 컴퓨터의 /blocks/ 폴더를 만들고 양식 폴더를 붙여 넣습니다.
@@ -113,7 +113,7 @@ AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식�
 +++ 3단계: EDS(Edge Delivery Service) 페이지를 사용하여 양식을 미리 봅니다.
 
 
-지금까지 적응형 양식 블록을 EDS 프로젝트에 추가하고 양식 구조를 준비했습니다. 이제 양식을 미리 보려면 다음 작업을 수행하십시오.
+지금까지 EDS 프로젝트에 적응형 양식 블록을 추가하고 양식 구조를 준비했습니다. 이제 양식을 미리 보려면 다음 작업을 수행하십시오.
 
 1. **프로젝트 디렉터리에 액세스:** Microsoft SharePoint 또는 Google 드라이브 계정을 열고 AEM Edge 게재 프로젝트 디렉터리로 이동합니다.
 

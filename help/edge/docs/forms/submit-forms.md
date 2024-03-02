@@ -1,12 +1,12 @@
 ---
 title: 데이터를 허용하도록 스프레드시트 준비
-description: 스프레드시트 및 양식 블록 필드를 사용하여 강력한 양식을 더 빨리 만드십시오!
+description: 스프레드시트 및 적응형 양식 블록 필드를 사용하여 강력한 양식을 더 빨리 만드십시오!
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '997'
 ht-degree: 56%
 
 ---

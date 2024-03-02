@@ -4,25 +4,25 @@ description: 최고의 성능을 위해 구축된 AEM Forms Edge Delivery Servic
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1c6e44fd6652d93ba73bc2eb3604cd08eae7a33c
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 43%
+source-wordcount: '866'
+ht-degree: 30%
 
 ---
 
 
 # AEM Forms Edge Delivery Service
 
-Adobe Systems AEM Forms Edge Delivery Service를 통해 양식 작성을 간소화하고 완료율을 드라이브 높일 수 있습니다. 이 강력하고 구성 가능한 서비스를 사용하면 탁월한 성능과 시각적 매력을 갖춘 엔터프라이즈급 양식을 빌드 할 수 있습니다. AEM은 사용자 경험 및 비즈니스 목표 모두를 우선시하여 번개처럼 빠른 로딩 시간과 향상된 양식 완성을 보장합니다.
+Adobe의 AEM Forms Edge Delivery Service를 통해 양식 생성을 간소화하고 완료율을 높일 수 있습니다. 이 강력하고 컴포저블 서비스는 탁월한 성능과 시각적인 매력으로 엔터프라이즈급 양식을 구축할 수 있도록 해줍니다. AEM은 사용자 경험과 비즈니스 목표 모두에 우선 순위를 두므로 빠르게 로드할 수 있고 양식 완성도를 높일 수 있습니다.
 
 이 서비스를 사용하여 다음을 수행할 수 있습니다.
 
-* **멋진 양식**&#x200B;으로 사용자 사로잡기: 사전 설치 구성 요소 라이브러리를 사용하여 복잡하고 매력적인 양식을 쉽게 작성할 수 있습니다. reCAPTCHA를 쉽게 통합하고, 양식을 이메일로 직접 제출하고, Sharepoint, Azure Storage 및 Amazon S3와 좋아요 보안 스토리지 솔루션에 원활하게 파일을 업로드할 수 있습니다. 사용자 지정 양식 구성 요소를 만들어 고유한 비전을 실현할 수도 있습니다.
+* **멋진 양식으로 사용자 Captivate**: 사전 빌드된 구성 요소 라이브러리를 사용하여 복잡하고 매력적인 양식을 쉽게 빌드합니다. 쉽게 reCAPTCHA를 통합하고, 양식을 이메일로 직접 제출하고, Sharepoint, Azure Storage 및 Amazon S3와 같은 보안 스토리지 솔루션에 원활한 파일 업로드를 허용합니다. 자신만의 사용자 정의 양식 구성 요소를 만들어 자신만의 고유한 비전을 실현할 수도 있습니다.
 
-* **원하는** 도구로 디지털 등록 환경 만들기: 컨텐츠 소스를 분리하여 작성 효율성을 높입니다. 기본적으로 문서 기반 작성(Microsoft 365 및 Google 작업 영역)과 AEM 작성(AEM 편집기)을 모두 사용할 수 있습니다. 따라서 동일한 웹 사이트에서 여러 컨텐츠 소스로 작업하고 Microsoft Excel, Google 스프레드시트 또는 적응형 Forms 편집기와 같은 선호하는 작성 도구를 사용할 수 있습니다.
+* **원하는 도구를 사용하여 디지털 등록 환경 만들기**: 콘텐츠 소스를 분리하여 작성 효율성을 높입니다. 기본적으로 문서 기반 작성(Microsoft 365 및 Google Workspace)과 AEM 작성(AEM 편집기)을 모두 사용할 수 있습니다. 따라서 동일한 웹 사이트에서 여러 컨텐츠 소스로 작업하고 Microsoft Excel, Google Sheets 또는 적응형 Forms 편집기와 같은 원하는 작성 도구를 사용할 수 있습니다.
 
-* **완벽한 Lighthouse 점수**&#x200B;로 양식 작성: 느린 인터넷 연결에서 빠르게 로드되고 균일 렌더링되는 양식을 작성합니다. 로드 시간이 빠르고 사용자 경험이 최적화되어 있으면 양식 작성률을 높이고 전환율을 향상할 수 있습니다.
+* **완벽한 Lighthouse 점수로 양식 작성**: 느린 인터넷 연결에서도 빠르게 로드하고 렌더링하는 양식을 빌드합니다. 로드 시간이 빠르고 사용자 경험이 최적화되어 있으면 양식 작성률을 높이고 전환율을 향상할 수 있습니다.
 
   <div>
     <style>
@@ -42,19 +42,17 @@ Adobe Systems AEM Forms Edge Delivery Service를 통해 양식 작성을 간소�
 
 
 </div>
-&lt;!-- &gt;
-* **멋진 양식으로 사용자 사로잡기**: 
-사전 설치 구성 요소 라이브러리를 사용하여 복잡하고 매력적인 양식을 쉽게 작성할 수 있습니다. reCAPTCHA를 쉽게 통합하고, 양식을 이메일로 직접 제출하고, Sharepoint, Azure Storage 및 Amazon S3와 좋아요 보안 스토리지 솔루션에 원활하게 파일을 업로드할 수 있습니다. 사용자 지정 양식 구성 요소를 만들어 고유한 비전을 실현할 수도 있습니다.
+&lt;!— &gt; **Captivate 사용자에게 멋진 양식 제공**: 사전 설치된 구성 요소 라이브러리를 사용하여 복잡하고 매력적인 양식을 쉽게 구축할 수 있습니다. 쉽게 reCAPTCHA를 통합하고, 양식을 이메일로 직접 제출하고, Sharepoint, Azure Storage 및 Amazon S3와 같은 보안 스토리지 솔루션에 원활한 파일 업로드를 허용합니다. 자신만의 사용자 정의 양식 구성 요소를 만들어 자신만의 고유한 비전을 실현할 수도 있습니다.
 
-    ![입학 양식] (/help/edge/assets/enrollment-form.png)
+    ![등록 양식](/help/edge/assets/enrollment-form.png)
 
 * **Lighthouse 점수가 만점인 양식 작성**: 느린 인터넷 연결에서도 빠르게 로드되고 렌더링되는 양식을 작성합니다. 로드 시간이 빠르고 사용자 경험이 최적화되어 있으면 양식 작성률을 높이고 전환율을 향상할 수 있습니다.
 
-  ![양식에 대한 완벽한 등대 점수](/help/edge/assets/lighthouse-forms.png)
+  ![귀하의 양식에 대한 완벽한 lighthouse 점수](/help/edge/assets/lighthouse-forms.png)
 
-* **원하는** 도구로 디지털 등록 환경 만들기: 컨텐츠 소스를 분리하여 작성 효율성을 높입니다. 기본 제공되는 AEM 작성과 문서 기반 작성을 모두 사용할 수 있습니다. 따라서 동일한 웹 사이트에서 여러 컨텐츠 소스로 작업하고 Microsoft Excel, Google 스프레드시트 또는 AEM 편집기와 같은 선호하는 작성 도구를 사용할 수 있습니다.
+* **원하는 도구를 사용하여 디지털 등록 환경 만들기**: 콘텐츠 소스를 분리하여 작성 효율성을 높입니다. 기본 제공되는 AEM 작성과 문서 기반 작성을 모두 사용할 수 있습니다. 따라서 동일한 웹 사이트에서 여러 컨텐츠 소스로 작업하고 Microsoft Excel, Google Sheets 또는 AEM Editors와 같은 원하는 작성 도구를 사용할 수 있습니다.
 
-  ![Edge Delivery 양식 작성 도구](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+  ![Edge 게재 양식 작성 도구](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
 
 <!--
 * **Measure customer impact and deliver effective forms**: Use our RUM dashboards to visualize form performance and identify areas for improvement. Experiment with different versions and continuously optimize your forms for maximum effectiveness, ensuring you capture the data you need and drive better business outcomes.
@@ -68,6 +66,21 @@ Adobe Systems AEM Forms Edge Delivery Service를 통해 양식 작성을 간소�
     > WYSIWYG authoring capability, integrated services, and customer impact measuring features are available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
 
     -->
+
+## 주요 기능
+
+* **HTML5 기반 양식 필드 구성 요소**: AEM Forms Edge Delivery Service를 통해 유효한 HTML5를 기반으로 하는 양식 필드를 사용하여 사용자 친화적인 대화형 양식을 만들 수 있습니다 [입력 유형](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">텍스트 영역</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">선택</a>, 및 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">필드 세트</a>  구성 요소. 이러한 구성 요소는 다양한 유형의 데이터 수집에 적합하며 특정 요구 사항에 맞게 쉽게 사용자 지정할 수 있습니다.
+
+* **접근성**: 양식 블록의 필드에 액세스할 수 있습니다. 각 레이블은 해당 입력 요소와 연결되고 연결을 위해 ID가 자동으로 생성됩니다. 필드와 연결된 설명은 Aria-describedby 속성을 통해 연결됩니다. 표준 Tab/Shift + Tab 키를 사용하는 키보드 탐색이 지원됩니다.
+
+* **양식 규칙**: 사용자 입력 또는 사전 정의된 조건에 따라 필드 가시성, 유효성 검사 및 동작을 조정하는 논리를 만듭니다. 규칙은 양식에 지능을 추가하는 유연하고 직관적인 방법을 제공하여 사용자 입력에 따라 원활하게 조정되도록 합니다.
+
+* **파일 업로드**: 원활한 파일 첨부 기능을 통해 양식을 향상시킬 수 있습니다. 사용자로부터 문서, 이미지 또는 기타 파일을 수집해야 하는 경우 적응형 양식 블록을 사용하면 파일 업로드 기능을 손쉽게 통합할 수 있습니다. 사용자 지정 처리 옵션을 사용하면 특정 요구 사항에 맞게 파일 업로드 프로세스를 조정할 수 있습니다.
+
+* **양식 유효성 검사**: 제출하기 전에 양식의 유효성을 검사하고 유효하지 않은 필드에 오류 메시지가 표시된 상태로 사용자에게 표시됩니다. 이러한 오류를 표시하기 위해 다양한 패턴을 사용할 수 있습니다.
+
+* **Forms 스타일링**: 각 양식 필드에는 사용자 지정 CSS 또는 JavaScript 파일을 사용하여 추가로 데코레이트할 수 있는 고정된 HTML 구조가 있습니다. CSS/JS의 타겟팅 필드에 대한 선택기는 유형 및 이름을 기반으로 제공됩니다.
+
 
 ## 양식 만들기 시작
 
@@ -91,8 +104,8 @@ Adobe Systems AEM Forms Edge Delivery Service를 통해 양식 작성을 간소�
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: -5px;">
     <div class="card-container">
         <a href="/help/edge/docs/forms/create-forms.md">
-            <img src="/help/edge/assets/smock_devices_18_n.svg" alt="EDS 양식을 사용하여 양식 만들기" style="border-radius: 5px;"></b><br><b style="margin-top: 5px;">Google 스프레드시트 또는 Microsoft Excel을 사용하여 양식 만들기
-            </b>
+            <img src="/help/edge/assets/smock_devices_18_n.svg" alt="EDS 양식을 사용하여 양식 만들기" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Google Sheets 또는 Microsoft Excel을 사용하여 양식 만들기</b>
         </a>
         <p>모바일 디바이스에서 빠르게 로드 및 렌더링되고 자동으로 재배치되는 양식을 만듭니다.</p>
     </div>
@@ -119,8 +132,8 @@ Adobe Systems AEM Forms Edge Delivery Service를 통해 양식 작성을 간소�
     </div> 
             <div class="card-container">
         <a href="/help/edge/docs/forms/rules-forms.md">
-            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="규칙을 사용하여 양식에 동적 동작 추가" style="border-radius: 5px;"></b><br><b style="margin-top: 5px;">규칙을 사용하여 양식에 동적 동작 추가
-            </b>
+            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="규칙을 사용하여 양식에 동적 동작 추가" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">규칙을 사용하여 양식에 동적 동작 추가</b>
         </a>
         <p>여러 양식에서 사전 구성된 조각을 재사용합니다.</p>
     </div>
