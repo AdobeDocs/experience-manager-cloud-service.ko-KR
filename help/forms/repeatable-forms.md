@@ -2,9 +2,9 @@
 description: 이 자습서에는 양식 섹션을 반복 가능하게 만드는 지침이 포함되어 있습니다
 title: Edge Delivery Services에서 반복 가능한 섹션
 feature: Edge Delivery Services
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '475'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## 사전 요구 사항
 
-AEM Boilerplate를 사용하여 EDS(Edge Delivery Service) Github 프로젝트를 설정하고 로컬 컴퓨터에서 해당 Github 저장소를 복제합니다. 자세한 내용은 [개발자 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial.html)을 참조하십시오.
+AEM Boilerplate를 사용하여 EDS(Edge Delivery Service) GitHub 프로젝트를 설정하고 로컬 컴퓨터에서 해당 GitHub 리포지토리를 복제합니다. 자세한 내용은 [개발자 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial.html)을 참조하십시오.
 
 ## Edge 게재에서 반복 가능한 섹션
 

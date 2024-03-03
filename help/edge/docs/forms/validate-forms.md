@@ -4,7 +4,7 @@ description: 스프레드시트 및 적응형 양식 블록 필드를 사용하�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 17%
@@ -33,6 +33,6 @@ URL: 이 필드 유형은 유효한 URL 형식에 대해 사용자 입력의 유
 
 * [양식 만들기 및 미리 보기](/help/edge/docs/forms/create-forms.md)
 * [양식을 활성화하여 데이터 전송](/help/edge/docs/forms/submit-forms.md)
-* [사이트 페이지에 양식 게시](/help/edge/docs/forms/publish-eds-forms.md)
+* [사이트 페이지에 양식 게시](/help/edge/docs/forms/publish-forms.md)
 * [양식 필드에 유효성 검사 추가](/help/edge/docs/forms/validate-forms.md)
 * [양식의 테마 및 스타일 변경](/help/edge/docs/forms/style-theme-forms.md)

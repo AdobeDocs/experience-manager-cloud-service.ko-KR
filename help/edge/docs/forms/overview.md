@@ -4,10 +4,10 @@ description: 최고의 성능을 위해 구축된 AEM Forms Edge Delivery Servic
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 30%
+source-wordcount: '814'
+ht-degree: 26%
 
 ---
 
@@ -27,13 +27,10 @@ Adobe의 AEM Forms Edge Delivery Service를 통해 양식 생성을 간소화하
   <div>
     <style>
     .image-container {
-    width: 80%;
     text-align: center; 
     }
     .image-container img {
-        width: 100%; /* Set image width to 100% of the container */
-        border: .5px solid; /* Maintain the border style */
-        padding: 15px; /* Maintain the padding */
+        width: 100%; /* Set image width to 100% of the container 
     }
 </style>
     <div class="image-container">
@@ -42,6 +39,8 @@ Adobe의 AEM Forms Edge Delivery Service를 통해 양식 생성을 간소화하
 
 
 </div>
+
+<!--
 
 <!--
 
@@ -62,6 +61,7 @@ Adobe의 AEM Forms Edge Delivery Service를 통해 양식 생성을 간소화하
 
     
     >[!NOTE]
+    >[!NOTE]
     >
     >
     > WYSIWYG authoring capability, integrated services, and customer impact measuring features are available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
@@ -70,17 +70,24 @@ Adobe의 AEM Forms Edge Delivery Service를 통해 양식 생성을 간소화하
 
 ## 주요 기능
 
-* **HTML5 기반 양식 필드 구성 요소**: AEM Forms Edge Delivery Service를 통해 유효한 HTML5를 기반으로 하는 양식 필드를 사용하여 사용자 친화적인 대화형 양식을 만들 수 있습니다 [입력 유형](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">텍스트 영역</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">선택</a>, 및 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">필드 세트</a>  구성 요소. 이러한 구성 요소는 다양한 유형의 데이터 수집에 적합하며 특정 요구 사항에 맞게 쉽게 사용자 지정할 수 있습니다.
+* **HTML5 기반 양식 필드 구성 요소**: AEM Forms Edge Delivery Service를 통해 HTML 5를 기반으로 양식 구성 요소를 사용하여 사용자 친화적인 대화형 양식을 만들 수 있습니다 [입력 유형](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">텍스트 영역</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">선택</a>, 및 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">필드 세트</a>  요소. 이러한 구성 요소는 다양한 유형의 데이터 수집에 적합하며 특정 요구 사항에 맞게 쉽게 사용자 지정할 수 있습니다.
 
 * **접근성**: 양식 블록의 필드에 액세스할 수 있습니다. 각 레이블은 해당 입력 요소와 연결되고 연결을 위해 ID가 자동으로 생성됩니다. 필드와 연결된 설명은 Aria-describedby 속성을 통해 연결됩니다. 표준 Tab/Shift + Tab 키를 사용하는 키보드 탐색이 지원됩니다.
 
-* **양식 규칙**: 사용자 입력 또는 사전 정의된 조건에 따라 필드 가시성, 유효성 검사 및 동작을 조정하는 논리를 만듭니다. 규칙은 양식에 지능을 추가하는 유연하고 직관적인 방법을 제공하여 사용자 입력에 따라 원활하게 조정되도록 합니다.
+* **스타일링**: 각 양식 필드에는 사용자 지정 CSS 또는 JavaScript 파일을 사용하여 쉽게 데코레이트할 수 있는 고정된 HTML 구조가 있습니다. CSS 및 JS의 타겟팅 필드에 대한 선택기는 유형 및 이름을 기반으로 제공됩니다. 표준화된 구조로 인해 새 선택기를 쉽게 만들 수 있습니다.
 
-* **파일 업로드**: 원활한 파일 첨부 기능을 통해 양식을 향상시킬 수 있습니다. 사용자로부터 문서, 이미지 또는 기타 파일을 수집해야 하는 경우 적응형 양식 블록을 사용하면 파일 업로드 기능을 손쉽게 통합할 수 있습니다. 사용자 지정 처리 옵션을 사용하면 특정 요구 사항에 맞게 파일 업로드 프로세스를 조정할 수 있습니다.
+* **규칙**: 사용자 입력 또는 사전 정의된 조건에 따라 필드 가시성, 유효성 검사 및 동작을 조정하는 논리를 쉽게 만들 수 있습니다. 규칙은 양식에 지능을 추가하는 유연하고 직관적인 방법을 제공하여 사용자 입력에 따라 원활하게 조정되도록 합니다.
 
-* **양식 유효성 검사**: 제출하기 전에 양식의 유효성을 검사하고 유효하지 않은 필드에 오류 메시지가 표시된 상태로 사용자에게 표시됩니다. 이러한 오류를 표시하기 위해 다양한 패턴을 사용할 수 있습니다.
+* **유효성 검사**: 제출하기 전에 양식의 유효성을 검사하고 유효하지 않은 필드에 오류 메시지가 표시된 상태로 사용자에게 표시됩니다. 이러한 오류를 표시하기 위해 다양한 패턴을 사용할 수 있습니다.
 
-* **Forms 스타일링**: 각 양식 필드에는 사용자 지정 CSS 또는 JavaScript 파일을 사용하여 추가로 데코레이트할 수 있는 고정된 HTML 구조가 있습니다. CSS/JS의 타겟팅 필드에 대한 선택기는 유형 및 이름을 기반으로 제공됩니다.
+요청에 따라 사용할 수 있는 몇 가지 고급 기능이 있습니다.
+
+* **파일 업로드**: 양식에 파일 첨부 기능을 추가할 수 있습니다. 사용자의 문서, 이미지 또는 기타 파일을 수집해야 하는 경우에도 파일 업로드 기능을 사용하면 편리합니다. 사용자 지정 처리 옵션을 사용하면 특정 요구 사항에 맞게 파일 업로드 프로세스를 조정할 수 있습니다.
+
+* **reCAPT차**: 기본 제공(OOTB) 지원을 통해 Google reCAPTCHA를 양식에 원활하게 통합할 수 있습니다. 원활하고 중단 없는 사용자 경험을 유지하면서 사기 활동, 스팸 및 남용으로부터 양식을 보호합니다.
+
+* **양식 제출 시 이메일 알림 보내기**: 번거로운 수동 후속 조치를 제거하고 양식 제출을 위한 내장된 이메일 자동화를 통해 적시에 통신할 수 있습니다. 이 통합 솔루션을 사용하면 웹 사이트에서 누군가 양식을 작성할 때마다 양식 데이터 전송을 포함하여 관련 당사자에게 쉽게 알릴 수 있습니다. 복잡한 구성이나 추가 도구가 필요 없으며 즉시 사용할 수 있습니다.
+
 
 ## 워크플로
 

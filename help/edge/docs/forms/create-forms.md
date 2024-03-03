@@ -4,7 +4,7 @@ description: 완벽한 양식을 빠르게 제작하십시오. ⚡ AEM Forms Edg
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 17%
@@ -81,7 +81,7 @@ AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식�
 
    ![기본 시트의 이름을 “shared-default”로 바꾸기](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. 양식 필드를 추가하려면 &#39;shared-default&#39; 시트에 행과 열 머리글을 삽입합니다. 각 행은 다음을 나타냅니다. [양식 필드](/help/edge/docs/forms/form-components.md), 열 헤더가 해당 필드를 정의하는 경우 [속성](/help/edge/docs/forms/eds-form-field-properties).
+1. 양식 필드를 추가하려면 &#39;shared-default&#39; 시트에 행과 열 머리글을 삽입합니다. 각 행은 다음을 나타냅니다. [양식 필드](/help/edge/docs/forms/form-components.md#available-components), 열 헤더가 해당 필드를 정의하는 경우 [속성](/help/edge/docs/forms/form-components.md#components-properties).
 
    빠르게 시작하려면 의 콘텐츠를 복사하는 것이 좋습니다. [조회 스프레드시트](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) 스프레드시트로 이동합니다. 콘텐츠를 복사한 후 스프레드시트를 저장합니다.
 
@@ -159,6 +159,6 @@ AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식�
 * [양식 필드 속성](/help/edge/docs/forms/eds-form-field-properties)
 * [양식 만들기 및 미리 보기](/help/edge/docs/forms/create-forms.md)
 * [양식을 활성화하여 데이터 전송](/help/edge/docs/forms/submit-forms.md)
-* [사이트 페이지에 양식 게시](/help/edge/docs/forms/publish-eds-forms.md)
+* [사이트 페이지에 양식 게시](/help/edge/docs/forms/publish-forms.md)
 * [양식 필드에 유효성 검사 추가](/help/edge/docs/forms/validate-forms.md)
 * [양식의 테마 및 스타일 변경](/help/edge/docs/forms/style-theme-forms.md)

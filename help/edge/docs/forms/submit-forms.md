@@ -4,10 +4,10 @@ description: 스프레드시트 및 적응형 양식 블록 필드를 사용하�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 56%
+source-wordcount: '1003'
+ht-degree: 55%
 
 ---
 
@@ -18,6 +18,7 @@ ht-degree: 56%
 
 다음 작업을 완료하면 [양식을 만들고 미리보기](/help/edge/docs/forms/create-forms.md)해당 스프레드시트가 데이터 수신을 시작할 수 있도록 활성화해야 합니다.
 
+![문서 기반 작성 에코시스템](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 <!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
@@ -46,6 +47,7 @@ ht-degree: 56%
 
 
 필드 이름이 추가되면 `incoming` 시트, 양식을 제출할 준비가 되었습니다. 양식을 미리 보고 이를 사용하여 시트에 데이터를 제출할 수 있습니다.
+
 
 
 스프레드시트에서 다음 변경 사항도 관찰할 수 있습니다.
@@ -290,6 +292,6 @@ POST 본문에서 양식 데이터의 형식을 지정할 수 있는 몇 가지 
 
 * [양식 만들기 및 미리 보기](/help/edge/docs/forms/create-forms.md)
 * [양식을 활성화하여 데이터 전송](/help/edge/docs/forms/submit-forms.md)
-* [사이트 페이지에 양식 게시](/help/edge/docs/forms/publish-eds-forms.md)
+* [사이트 페이지에 양식 게시](/help/edge/docs/forms/publish-forms.md)
 * [양식 필드에 유효성 검사 추가](/help/edge/docs/forms/validate-forms.md)
 * [양식의 테마 및 스타일 변경](/help/edge/docs/forms/style-theme-forms.md)

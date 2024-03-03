@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
 source-wordcount: '4751'
 ht-degree: 98%
@@ -822,7 +822,7 @@ ht-degree: 98%
       + 시작하기 {#getting-started-eds-forms}
          + [양식 만들기 및 미리 보기](/help/edge/docs/forms/create-forms.md)
          + [양식을 활성화하여 데이터 전송](/help/edge/docs/forms/submit-forms.md)
-         + [사이트 페이지에 양식 게시](/help/edge/docs/forms/publish-eds-forms.md)
+         + [사이트 페이지에 양식 게시](/help/edge/docs/forms/publish-forms.md)
          + [양식 필드에 유효성 검사 추가](/help/edge/docs/forms/validate-forms.md)
          + [양식의 테마 및 스타일 변경](/help/edge/docs/forms/style-theme-forms.md)
          + [규칙을 사용하여 양식에 동적 동작 추가](/help/edge/docs/forms/rules-forms.md)

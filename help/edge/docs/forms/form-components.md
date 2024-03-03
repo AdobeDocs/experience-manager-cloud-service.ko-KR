@@ -4,17 +4,18 @@ description: 이 문서에서는 AEM Forms Edge Delivery Service에서 사용할
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 6%
+source-wordcount: '965'
+ht-degree: 5%
 
 ---
 
 
-# 양식 구성 요소 및 속성에 대한 개발자 안내서: AEM Forms Edge Delivery Service
+# 양식 구성 요소 및 속성: AEM Forms Edge 전송 서비스
 
 AEM Forms Edge Delivery Service를 통해 다양한 구성 요소를 사용하여 사용자 친화적인 대화형 양식을 만들 수 있습니다. 이러한 구성 요소는 다양한 유형의 데이터 수집에 적합하며 특정 요구 사항에 맞게 쉽게 사용자 지정할 수 있습니다.
+
 
 ![일부 구성 요소 및 속성이 있는 샘플 스프레드시트](/help/edge/assets/sample-form-in-spreadsheet.png)
 
@@ -41,6 +42,8 @@ AEM Forms Edge Delivery Service를 통해 다양한 구성 요소를 사용하�
 
 
 
+
+
 ## 구성 요소 속성
 
 각 양식 구성 요소에는 양식 구성 요소의 비헤이비어와 모양을 제어할 수 있는 다양한 속성이 포함되어 있습니다. 적응형 양식 블록 구성 요소에서 지원하는 속성은 다음과 같습니다.
@@ -48,6 +51,7 @@ AEM Forms Edge Delivery Service를 통해 다양한 구성 요소를 사용하�
 
 | 속성 | 적용 가능한 구성 요소 | 세부 사항 |
 |--------------|------------------------------|----------------------------------------------------------------------|
+| 유형 | 모두 | 구성 요소의 유형을 지정합니다. 이 속성은 입력 필드의 동작 및 모양을 결정합니다. 예를 들어 텍스트 입력의 경우 유형은 &quot;text&quot;, 이메일 입력의 경우 &quot;email&quot;, 암호 입력의 경우 &quot;password&quot;일 수 있습니다. 적응형 양식 블록 지원  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">모든 유효한 HTML5 입력 유형</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">텍스트 영역</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">선택</a>, 및 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">필드 세트</a> 형식: |
 | 유형 | 모두 | 구성 요소의 유형을 지정합니다. 이 속성은 입력 필드의 동작 및 모양을 결정합니다. 예를 들어 텍스트 입력의 경우 유형은 &quot;text&quot;, 이메일 입력의 경우 &quot;email&quot;, 암호 입력의 경우 &quot;password&quot;일 수 있습니다. 적응형 양식 블록 지원  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">모든 유효한 HTML5 입력 유형</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">텍스트 영역</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">선택</a>, 및 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">필드 세트</a> 형식: |
 | 이름 | 모두 | 양식 제출을 위한 구성 요소를 식별합니다. 이름 속성은 양식 데이터가 서버에 제출될 때 사용자 입력을 특정 필드와 연결하는 데 사용됩니다. |
 | 레이블 | 모두 | 사용자에게 컨텍스트 정보를 제공합니다. 레이블은 구성 요소 옆에 표시되는 텍스트로서, 사용자가 입력할 정보에 대한 지침을 제공합니다. |
@@ -201,6 +205,6 @@ Here is the table which outlines how core components correspond to their HTML-5 
 
 - [양식 만들기 및 미리 보기](/help/edge/docs/forms/create-forms.md)
 - [양식을 활성화하여 데이터 전송](/help/edge/docs/forms/submit-forms.md)
-- [사이트 페이지에 양식 게시](/help/edge/docs/forms/publish-eds-forms.md)
+- [사이트 페이지에 양식 게시](/help/edge/docs/forms/publish-forms.md)
 - [양식 필드에 유효성 검사 추가](/help/edge/docs/forms/validate-forms.md)
 - [양식의 테마 및 스타일 변경](/help/edge/docs/forms/style-theme-forms.md)
