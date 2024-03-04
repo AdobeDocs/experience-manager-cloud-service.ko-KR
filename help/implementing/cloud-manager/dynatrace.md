@@ -2,7 +2,7 @@
 title: Dynatrace
 description: AEMas a Cloud Service 와 함께 Dynatrace을 사용하는 방법에 대해 알아봅니다.
 exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
-source-git-commit: d6f5a365a48a8b20b69db6895f895c9d172d58a7
+source-git-commit: 4fe8ed9c3f7b6589878da3317d15fede819bad54
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
@@ -56,19 +56,22 @@ Dynatrace 라이선싱에 대한 자세한 내용은 [Dynatrace Platform 구독]
 
 1. Dynatrace 환경에 대한 다음 API 요청을 실행합니다.
 
-`curl -X GET "<environmentUrl>/api/v1/deployment/installer/agent/connectioninfo" -H "accept: application/json" -H "Authorization: Api-Token <accessToken>"`
+   ```
+   curl -X GET "<environmentUrl>/api/v1/deployment/installer/agent/connectioninfo" -H "accept: application/json" -H "Authorization: Api-Token <accessToken>"
+   ```
 
-바꾸기 `<environmentUrl>` Dynatrace 환경 URL 및 `<accessToken>` API 액세스 토큰을 생성합니다.
+
+   바꾸기 `<environmentUrl>` Dynatrace 환경 URL 및 `<accessToken>` API 액세스 토큰을 생성합니다.
 
 1. 다음을 복사합니다. `<environmentId>` 및 `<environmentToken>` 응답 페이로드에서 가져온 다음 안전한 위치에 저장합니다.
 
-```
-{
-   "tenantUUID": "<environmentId>",
-   "tenantToken": "<environmentToken>",
-   "communicationEndpoints": [...]
-}
-```
+   ```
+   {
+      "tenantUUID": "<environmentId>",
+      "tenantToken": "<environmentToken>",
+      "communicationEndpoints": [...]
+   }
+   ```
 
 ### Dynatrace API 액세스 토큰 만들기 {#create-dynatrace-access-token}
 
