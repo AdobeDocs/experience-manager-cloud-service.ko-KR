@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 4c1525fd51956d3d788a91f58978a9c885e6daa5
+source-git-commit: ea61a794788ee2a59e05727fa3c4fd4fc1ca9956
 workflow-type: tm+mt
-source-wordcount: '1409'
-ht-degree: 32%
+source-wordcount: '1427'
+ht-degree: 33%
 
 ---
 
@@ -227,15 +227,19 @@ ht-degree: 32%
 ## Dynamic Media - 지원되는 래스터 이미지 형식 {#image-support-dynamic-media}
 
 | 형식 | 업로드 (입력 형식) | 이미지 사전 설정 만들기(출력 형식) | 동적 렌디션 미리 보기 | 동적 렌디션 전달 | 동적 렌디션 다운로드 | 이 형식을 지원하는 형식 설정 |
-| ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- | ---------------------------------- |
-| BMP | ✓ | - | - | - | - | [이미지](/help/assets/dynamic-media/image-sets.md), [혼합 미디어](/help/assets/dynamic-media/mixed-media-sets.md), 및 [회전](/help/assets/dynamic-media/spin-sets.md) |
-| EPS | ✓ | ✓ | ✓ | ✓ | ✓ | - |
-| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+|---|:---:|:---:|:---:|:---:|:---:| --- |
+| AVIF | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| BMP | ✓ | − | − | − | − | [이미지](/help/assets/dynamic-media/image-sets.md), [혼합 미디어](/help/assets/dynamic-media/mixed-media-sets.md), 및 [회전](/help/assets/dynamic-media/spin-sets.md) |
+| [EPS](/help/assets/dynamic-media/managing-image-presets.md#adobe-illustrator-ai-postscript&reg;-eps-and-pdf-file-formats-adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | − |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − |
+| HEIC | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [이미지](/help/assets/dynamic-media/image-sets.md), [혼합 미디어](/help/assets/dynamic-media/mixed-media-sets.md), 및 [회전](/help/assets/dynamic-media/spin-sets.md) |
-| PICT | ✓ | - | - | - | - | - |
+| PICT | ✓ | − | − | − | − | − |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [이미지](/help/assets/dynamic-media/image-sets.md), [혼합 미디어](/help/assets/dynamic-media/mixed-media-sets.md), 및 [회전](/help/assets/dynamic-media/spin-sets.md) |
-| PSD ‡ | ✓ | - | - | - | - | - |
+| PSD ‡ | ✓ | − | − | − | − | − |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [이미지](/help/assets/dynamic-media/image-sets.md), [혼합 미디어](/help/assets/dynamic-media/mixed-media-sets.md), 및 [회전](/help/assets/dynamic-media/spin-sets.md) |
+| WEBP | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+<!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
 ‡ 병합된 이미지가 PSD 파일에서 추출됩니다. 에서 생성된 이미지입니다. [!DNL Adobe Photoshop] 및 가 PSD 파일에 포함됩니다. 설정에 따라 병합된 이미지가 실제 이미지가 될 수도 있고 그렇지 않을 수도 있습니다.
 

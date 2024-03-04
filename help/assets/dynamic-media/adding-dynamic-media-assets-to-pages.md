@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+source-git-commit: 74254387de1761f25127180787453e681181d97a
 workflow-type: tm+mt
 source-wordcount: '3166'
 ht-degree: 13%
@@ -149,7 +149,7 @@ Dynamic Media 구성 요소를 사용하여 이미지 세트, 스핀 세트 및 
 
 * **[!UICONTROL 뷰어 수정자]** - 뷰어 수정자는 &amp; 구분 기호가 있는 name=value 쌍의 형태로 구성되며 뷰어 참조 가이드에 설명된 대로 뷰어를 변경할 수 있습니다. 뷰어 수정자의 예는 다음과 같습니다. `posterimage=img.jpg&caption=text.vtt,1` 는 비디오 썸네일에 대해 다른 이미지를 설정하고 닫힌 캡션/자막 파일을 비디오와 연결합니다.
 
-* **[!UICONTROL 이미지 사전 설정]** - 드롭다운 목록에서 기존 이미지 사전 설정을 선택합니다. 보려는 이미지 사전 설정이 표시되지 않을 경우 표시되도록 설정해야 합니다. 이미지 사전 설정 관리를 참조하십시오. 이미지 사전 설정을 사용 중이고 이와 반대로 뷰어 사전 설정을 선택할 수 없습니다.
+* **[!UICONTROL 이미지 사전 설정]** - 드롭다운 목록에서 기존 이미지 사전 설정을 선택합니다. 보려는 이미지 사전 설정이 표시되지 않을 경우 표시되도록 설정해야 합니다. 다음을 참조하십시오 [이미지 사전 설정 관리](/help/assets/dynamic-media/managing-image-presets.md). 이미지 사전 설정을 사용 중이고 이와 반대로 뷰어 사전 설정을 선택할 수 없습니다.
 
   이미지 세트, 스핀 세트 또는 혼합 미디어 세트를 보는 경우에는 이 선택 사항을 사용할 수 없습니다.
 
