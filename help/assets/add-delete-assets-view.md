@@ -2,10 +2,9 @@
 title: 저장소에 에셋 업로드
 description: 에셋을  [!DNL Assets view]에 업로드하고, 업로드 상태를 보고, 업로드 관련 문제를 해결합니다.
 role: User
-exl-id: a85a4455-4456-48af-aee9-f05300677605
-source-git-commit: df82681338f8ca1a34df6118cbddc6642aa8d4b5
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '825'
 ht-degree: 91%
 
 ---
@@ -82,7 +81,7 @@ ht-degree: 91%
 
 >[!TIP]
 >
->[!DNL Creative Cloud] 데스크탑 애플리케이션 내에서 직접 DAM 저장소로 에셋을 업로드할 수 있습니다. 
+>내에서 직접 DAM 저장소로 에셋을 업로드할 수 있습니다. [!DNL Creative Cloud] 데스크탑 애플리케이션.
 <!--TBD
 See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/assets/integration-assets-view.md).
 -->
@@ -103,7 +102,7 @@ See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/asset
 
 * [에셋 보기의 에셋 업로드에 대한 비디오 보기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html)
 
-* 다음을 사용하여 제품 피드백 제공 [!UICONTROL 피드백] 자산 보기 사용자 인터페이스에서 사용할 수 있는 옵션
+* Assets 보기 사용자 인터페이스에서 사용 가능한 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백 제공
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백 제공
 

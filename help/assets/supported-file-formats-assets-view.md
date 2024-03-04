@@ -3,11 +3,10 @@ title: 지원되는 파일 형식
 description: ' [!DNL Assets view]의 다양한 사용 사례에 대해 지원되는 파일 형식'
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
-exl-id: bc44e98d-446e-41ff-b5b4-9dc324834630
-source-git-commit: 6cb30ffda6c0de04e5cb3d01341b59c9ee75b335
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 96%
+source-wordcount: '515'
+ht-degree: 100%
 
 ---
 
@@ -122,7 +121,7 @@ ht-degree: 96%
 
 ## 다음 단계 {#next-steps}
 
-* 다음을 사용하여 제품 피드백 제공 [!UICONTROL 피드백] 자산 보기 사용자 인터페이스에서 사용할 수 있는 옵션
+* Assets 보기 사용자 인터페이스에서 사용 가능한 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백 제공
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백 제공
 

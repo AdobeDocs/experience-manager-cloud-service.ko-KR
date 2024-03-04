@@ -1,10 +1,9 @@
 ---
 title: 에셋으로의 링크 공유 방법
 description: 링크를 생성하고 [!DNL Assets view] 애플리케이션에 대한 액세스 권한이 없는 다른 사용자와 에셋을 공유할 수 있습니다.
-exl-id: 6e05b06c-7436-40e3-acee-c8b1ed218f9e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '397'
 ht-degree: 93%
 
 ---

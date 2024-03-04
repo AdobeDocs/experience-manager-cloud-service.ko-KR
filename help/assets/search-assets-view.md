@@ -2,8 +2,7 @@
 title: 에서 에셋을 검색하고 검색하는 방법 알아보기 [!DNL Assets view]?
 description: AEM Assets 보기에서 에셋을 검색하고 검색하는 방법을 알아봅니다. 강력한 검색 기능을 통해 적절한 에셋을 빠르게 찾고 콘텐츠 속도를 높일 수 있습니다.
 role: User
-exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 7b815a83e4e93c024403fab02f9a9b4ba8685007
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
 source-wordcount: '1543'
 ht-degree: 91%

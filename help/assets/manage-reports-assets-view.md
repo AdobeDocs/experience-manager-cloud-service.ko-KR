@@ -1,8 +1,7 @@
 ---
 title: Assets 보기에서 태그 관리
 description: Assets 보기의 보고서 섹션에 있는 데이터에 액세스하여 제품 및 기능 사용을 평가하고 주요 성공 지표에 대한 통찰력을 도출합니다.
-exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
-source-git-commit: c9ec348d7e65f4bb69b93a39b9ad7192485d8db4
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 92%

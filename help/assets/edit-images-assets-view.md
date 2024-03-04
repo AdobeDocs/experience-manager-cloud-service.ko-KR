@@ -2,8 +2,7 @@
 title: 이미지 편집
 description: ' [!DNL Adobe Photoshop Express] 기반 옵션을 사용하여 이미지를 편집하고 업데이트된 이미지를 버전으로 저장합니다.'
 role: User
-exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: e9092054062f01eac51bd79c680f4012653f88e7
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
 source-wordcount: '1251'
 ht-degree: 79%

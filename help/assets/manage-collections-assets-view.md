@@ -1,10 +1,9 @@
 ---
 title: 컬렉션 관리
 description: 컬렉션은 Experience Manager Assets 보기 내의 에셋 세트입니다. 컬렉션을 사용하여 사용자 간에 에셋을 공유합니다.
-exl-id: 33c889f5-c989-4772-9591-db62f50e5c80
-source-git-commit: d198b3f0c7d8469a376ba7a3e95e57c84f835dbb
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '789'
 ht-degree: 89%
 
 ---
@@ -158,7 +157,7 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 
 ## 컬렉션 링크 공유 {#share-collection-links}
 
-[!DNL Assets view]에서 링크를 생성하고 [!DNL Assets view] 애플리케이션에 대한 액세스 권한이 없는 외부 관련자와 컬렉션 내의 컬렉션 및 에셋을 공유할 수 있습니다. 해당 링크에 대한 만료일을 정의한 다음 이메일 또는 메시징 서비스와 같이 선호하는 커뮤니케이션 수단을 사용하여 다른 사용자와 공유할 수 있습니다. 링크 수신자는 자산을 미리 보고 다운로드할 수 있습니다.
+[!DNL Assets view]에서 링크를 생성하고 [!DNL Assets view] 애플리케이션에 대한 액세스 권한이 없는 외부 관련자와 컬렉션 내의 컬렉션 및 에셋을 공유할 수 있습니다. 해당 링크에 대한 만료일을 정의한 다음 이메일 또는 메시징 서비스와 같이 선호하는 커뮤니케이션 수단을 사용하여 다른 사용자와 공유할 수 있습니다. 링크 수신자는 자산을 미리보고 다운로드할 수 있습니다.
 
 ![에셋에 대한 링크 공유](assets/share-link-collections.png)
 

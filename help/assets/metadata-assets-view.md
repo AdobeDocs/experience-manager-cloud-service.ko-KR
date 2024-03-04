@@ -3,8 +3,7 @@ title: 자산 보기에서 메타데이터를 관리하는 방법
 description: 자산 보기에서 메타데이터를 관리하는 방법에 대해 알아봅니다. 메타데이터 관리 기능이 향상되어 에셋의 액세스 가능성, 관리 용이성 및 완성도가 향상됩니다.
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
-exl-id: cfc105d1-41fc-4418-9905-b2a28a348682
-source-git-commit: ef2a883e99823b1109eba598e89ea25a661e389b
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
 source-wordcount: '1667'
 ht-degree: 87%
