@@ -3,7 +3,7 @@ title: 데모 사이트 만들기
 description: 사전 구성된 템플릿 라이브러리를 기반으로 AEM에서 데모 사이트를 제작합니다.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '809'
 ht-degree: 100%
 

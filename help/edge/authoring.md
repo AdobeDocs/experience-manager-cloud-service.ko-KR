@@ -4,7 +4,7 @@ description: Edge Delivery Services를 통한 콘텐츠 작성 방법과 Edge De
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '491'
 ht-degree: 100%
 
