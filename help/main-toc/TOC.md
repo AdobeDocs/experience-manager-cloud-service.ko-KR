@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 2359f66c961d7678d07af12aa8173ad9169dff9c
 workflow-type: tm+mt
 source-wordcount: '4761'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -178,7 +178,7 @@ ht-degree: 98%
    + [메일 서비스에 대한 OAuth2 지원](/help/security/oauth2-support-for-mail-service.md)
    + [WAF 규칙이 포함된 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service 보안 고려 사항](/help/security/security-considerations.md)
-   + [Adobe Developer 콘솔에서 JWT 자격 증명 사용 중단](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [Adobe Developer Console에서 JWT 자격 증명 사용 중단](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 + 온보딩 {#onboarding}
    + [여기에서 시작](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=ko-KR)
    + 온보딩 여정 {#journey}
@@ -275,12 +275,12 @@ ht-degree: 98%
       + [구성 요소 콘솔](/help/sites-cloud/authoring/components-console.md)
       + [경로 선택](/help/sites-cloud/authoring/path-selection.md)
       + [문제 해결](/help/sites-cloud/authoring/troubleshooting.md)
-      + 사이트 콘솔 {#sites-console}
-         + [사이트 콘솔](/help/sites-cloud/authoring/sites-console/introduction.md)
+      + Sites 콘솔 {#sites-console}
+         + [Sites 콘솔](/help/sites-cloud/authoring/sites-console/introduction.md)
          + [콘솔 사이드 패널](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
          + [새 사이트 생성](/help/sites-cloud/authoring/sites-console/create-site.md)
          + [페이지 구성](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
-         + [페이지 생성](/help/sites-cloud/authoring/sites-console/creating-pages.md)
+         + [페이지 만들기](/help/sites-cloud/authoring/sites-console/creating-pages.md)
          + [페이지 관리](/help/sites-cloud/authoring/sites-console/managing-pages.md)
          + [페이지 속성](/help/sites-cloud/authoring/sites-console/page-properties.md)
          + [페이지 미리보기](/help/sites-cloud/authoring/sites-console/previewing-content.md)
@@ -304,7 +304,7 @@ ht-degree: 98%
          + [액세스 가능한 콘텐츠 제작(WCAG 2.1 적합성)](/help/sites-cloud/authoring/page-editor/accessible-content.md)
          + [키보드 단축키](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
          + [스타일 시스템](/help/sites-cloud/authoring/page-editor/style-system.md)
-         + [다시 실행 취소 제한 사항](/help/sites-cloud/authoring/page-editor/undo-redo.md)
+         + [다시 실행 실행 취소 제한 사항](/help/sites-cloud/authoring/page-editor/undo-redo.md)
       + Universal Editor {#universal-editor}
          + [Universal Editor로 콘텐츠 작성](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [Universal Editor로 콘텐츠 게시](/help/sites-cloud/authoring/universal-editor/publishing.md)
@@ -725,7 +725,7 @@ ht-degree: 98%
       + [Screens Content Provider 사용](/help/screens-cloud/configuring/using-screens-content-provider.md)
       + [Screens 비디오 렌디션 만들기](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
       + [Screens as a Cloud Service에 대한 Dispatcher 구성](/help/screens-cloud/configuring/dispatcher-configurations-screens-cloud.md)
-      + [as a Cloud Service으로 스크린에 대한 타임라인 보기 구성](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
+      + [Screens as a Cloud Service에 대한 타임라인 보기 구성](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
    + 콘텐츠 만들기 {#create-content}
       + [Screens Content Provider에서 프로젝트 만들기 및 관리](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
       + [Screens Content Provider에서 채널 만들기 및 관리](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)
