@@ -1,11 +1,11 @@
 ---
 title: Java™ 기능 테스트
 description: AEM as a Cloud Service를 위한 Java™ 기능 테스트를 작성하는 방법을 알아봅니다.
-exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
-workflow-type: ht
-source-wordcount: '844'
-ht-degree: 100%
+exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
+source-git-commit: e463979df1f705283f29d954f9869d85f0a96465
+workflow-type: tm+mt
+source-wordcount: '877'
+ht-degree: 92%
 
 ---
 
@@ -111,6 +111,25 @@ Adobe가 제품 기능 테스트를 작성하는 데 사용하는 것과 동일�
 >
 > 더 많은 리소스가 필요한 경우, 고객 지원 사례를 만들고 사용 사례를 설명하십시오. Adobe 팀에서 귀하의 요청을 검토하고 적절한 지원을 제공할 것입니다.
 
+#### 종속성
+
+* aem-cloud-testing-clients:
+
+기능 테스트를 실행하는 데 사용되는 컨테이너화된 인프라의 향후 변경 사항에는 라이브러리가 필요합니다. [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) 최소 버전 이상으로 업데이트하기 위해 사용자 정의 기능 테스트에 사용됨 **1.2.1**
+다음에서 종속성을 확인하십시오. `it.tests/pom.xml` 이(가) 업데이트되었습니다.
+
+```
+<dependency>
+   <groupId>com.adobe.cq</groupId>
+   <artifactId>aem-cloud-testing-clients</artifactId>
+   <version>1.2.1</version>
+</dependency>
+```
+
+>[!NOTE]
+>
+>이 변경 사항은 2024년 4월 6일 이후에 필요합니다.
+>종속성 라이브러리를 업데이트하지 않으면 &quot;사용자 정의 기능 테스트&quot; 단계에서 파이프라인 오류가 발생합니다.
 
 ### 로컬 테스트 실행 {#local-test-execution}
 
@@ -153,3 +172,4 @@ mvn verify -Plocal \
     -Dit.publish.user=<user> \
     -Dit.publish.password=<password>
 ```
+
