@@ -3,9 +3,9 @@ title: AMS에서 AEM as a Cloud Service로 Dispatcher 구성 마이그레이션
 description: AMS에서 AEM as a Cloud Service로 Dispatcher 구성 마이그레이션
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 6023a13eb4ea0533ba2f6cd00fb9f824b08a3f4a
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1499'
 ht-degree: 7%
 
 ---
@@ -19,6 +19,7 @@ AEM as a Cloud Service의 Apache 및 Dispatcher 구성은 AMS 구성과 매우 �
 * AEM as a Cloud Service에서는 일부 Apache 지시문이 사용되지 않을 수 있습니다(예: `Listen` 또는 `LogLevel`)
 * AEM as a Cloud Service에서는 일부 Dispatcher 구성만 include 파일에 넣을 수 있으며 해당 이름이 중요합니다. 예를 들어 다른 호스트에서 재사용하려는 필터 규칙은 이라는 파일에 넣어야 합니다. `filters/filters.any`. 자세한 내용은 참조 페이지 를 참조하십시오.
 * AEM as a Cloud Service에는 다음을 사용하여 작성된 필터 규칙을 허용하지 않도록 하는 추가 유효성 검사가 있습니다. `/glob` 보안 문제를 방지합니다. 이유 `deny *` 이(가) 대신 사용됨 `allow *` (사용할 수 없음) 고객은 로컬에서 Dispatcher를 실행하고 시행착오를 수행하며, 로그를 확인하여 Dispatcher 필터가 차단할 경로를 정확히 파악하여 추가할 수 있는 이점을 얻을 수 있습니다.
+* AEM as a Cloud Service에서는 현재 다음을 적극 권장합니다. [dispatcher 구성의 유연한 소스 모드 사용을 옵트인](/help/implementing/dispatcher/disp-overview.md#validation-debug) 예: 웹 계층 구성 파이프라인을 사용하거나 구성 파일의 수 및 구조에 대해 보다 유연하게 대처할 수 있습니다.
 
 ## AMS에서 AEM as a Cloud Service으로 Dispatcher 구성을 마이그레이션하기 위한 지침
 
