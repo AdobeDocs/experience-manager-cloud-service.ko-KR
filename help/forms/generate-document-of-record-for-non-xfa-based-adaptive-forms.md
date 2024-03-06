@@ -3,9 +3,9 @@ title: AEM Forms용 기록 문서(DoR)를 생성하는 방법
 description: 적응형 Forms용 기록 문서(DoR)에 대한 템플릿을 생성하는 방법에 대해 알아봅니다.
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 51d72edcde18503e9e4d83eaf51e28658d9ee5e6
 workflow-type: tm+mt
-source-wordcount: '4124'
+source-wordcount: '4170'
 ht-degree: 3%
 
 ---
@@ -345,13 +345,18 @@ When you select a form model, configure Document of Record using options availab
       * **템플릿**: 사용자 지정 템플릿을 선택하면에서 XDP 선택 을 찾아봅니다. [!DNL AEM Forms] 서버입니다. 에 아직 없는 템플릿을 사용하려면 [!DNL AEM Forms] 서버, 먼저 XDP를 [!DNL AEM Forms] 서버입니다.
       * **강조 색상**: 문서 또는 레코드 PDF에서 머리글 텍스트 및 구분 기호를 렌더링하는 색상입니다.
       * **글꼴 모음**: 기록 문서 PDF 내 텍스트의 글꼴 모음
+
+        >[!NOTE]
+        >
+        > AEM Forms은 PDF 파일과 원활하게 통합되는 다양한 기본 제공 글꼴을 제공합니다. 지원되는 글꼴 목록을 보려면 [여기를 클릭하십시오](/help/forms/supported-out-of-the-box-fonts.md).
+
       * **데이터 모델에 바인딩되지 않은 양식 개체 포함**: 속성을 설정하면 기록 문서의 스키마 기반 적응형 양식에서 바인딩되지 않은 필드가 포함됩니다.
       * **기록 문서에서 숨겨진 필드 제외**: 속성을 설정하면 기록 문서에서 제외할 숨겨진 필드가 식별됩니다.
       * **패널 설명 숨기기**: 속성을 설정하면 패널/테이블에 대한 설명이 기록 문서에서 제외됩니다. 패널 및 테이블에 적용할 수 있습니다.
 
       ![기본 속성](/help/forms/assets/basicpropertiesdor.png)
 
-   1. **양식 필드 속성**:
+   2. **양식 필드 속성**:
       * **확인란 및 라디오 버튼 구성 요소의 경우 선택한 값만 표시합니다**: 속성을 설정하면 확인란 및 라디오 버튼의 선택한 값만 표시됩니다. [!UICONTROL 기록 문서].
       * **다중 값에 대한 구분 기호**: 쉼표나 줄 바꿈과 같은 구분 기호를 선택하여 여러 값을 표시할 수 있습니다.
       * **옵션 정렬**: 원하는 정렬(가로, 세로, 적응형 양식과 동일)을 선택하여 확인란이나 라디오 단추와 같은 필드에 대한 정렬을 설정할 수 있습니다 [!UICONTROL 기록 문서]. 기본적으로 수직 정렬은 의 필드에 대해 설정됩니다 [!UICONTROL 기록 문서]. 에서 속성 설정 [!UICONTROL 양식 필드 속성] DoR의 은 [!UICONTROL 항목 정렬] 를 참조하십시오. 이 경우 다음을 선택합니다 [!UICONTROL 적응형 양식과 동일] 옵션을 선택하면 적응형 양식 작성자 인스턴스에 구성된 대로 정렬이 사용됩니다. [!UICONTROL 기록 문서] 필드.
@@ -359,7 +364,7 @@ When you select a form model, configure Document of Record using options availab
 
       ![양식 필드 속성](/help/forms/assets/formfieldpropertiesdor.png)
 
-   1. **기본 페이지 속성**:
+   3. **기본 페이지 속성**:
       * **로고 이미지**: 적응형 양식에서 로고 이미지를 사용하거나, DAM에서 로고 이미지를 선택하거나, 컴퓨터에서 로고 이미지를 업로드할 수 있습니다.
       * **양식 제목**: DoR의 제목
       * **머리글 텍스트**: 기록 문서의 머리글 섹션에 나타나는 텍스트입니다.
@@ -476,6 +481,11 @@ XCI 파일은 문서의 다양한 속성을 설정하는 데 도움이 됩니다
 | config/present/pdf/pdfa/conformance | PDF/A 사양과 호환 레벨을 지정합니다. |
 | config/present/pdf/version | 생성할 PDF 문서의 버전을 지정합니다. |
 | config/present/pdf/version/map | 문서의 대체 글꼴을 지정합니다. |
+
+>[!NOTE]
+>
+> AEM Forms은 PDF 파일과 원활하게 통합되는 다양한 기본 제공 글꼴을 제공합니다. 지원되는 글꼴 목록을 보려면 [여기를 클릭하십시오](/help/forms/supported-out-of-the-box-fonts.md).
+
 
 ### Forms as a Cloud Service 환경에서 사용자 지정 XCI 파일 사용
 

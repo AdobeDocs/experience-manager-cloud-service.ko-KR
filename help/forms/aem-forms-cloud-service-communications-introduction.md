@@ -5,10 +5,10 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
 workflow-type: tm+mt
-source-wordcount: '1429'
-ht-degree: 77%
+source-wordcount: '1452'
+ht-degree: 76%
 
 ---
 
@@ -134,6 +134,10 @@ When such an interactive PDF document is flattened using the Communications APIs
 ### PDF/A호환 문서로 변환하고 확인합니다.
 
 문서 조작 API를 사용하여 PDF 문서를 PDF/A 호환 문서로 변환하고 PDF 문서가 PDF/A 호환인지 여부를 확인할 수 있습니다. PDF/A는 문서 내용을 장기간 보존하기 위한 보관 형식입니다. 글꼴이 문서 내에 임베드되어 있고 파일이 압축 해제되어 있습니다. 따라서 PDF/A 문서는 일반적으로 표준 PDF 문서보다 큽니다. 또한 PDF/A 문서에는 오디오 및 비디오 콘텐츠가 포함되지 않습니다.
+
+>[!NOTE]
+>
+> AEM Forms은 PDF 파일과 원활하게 통합되는 다양한 기본 제공 글꼴을 제공합니다. 지원되는 글꼴 목록을 보려면 [여기를 클릭하십시오](/help/forms/supported-out-of-the-box-fonts.md).
 
 <!-- 
 

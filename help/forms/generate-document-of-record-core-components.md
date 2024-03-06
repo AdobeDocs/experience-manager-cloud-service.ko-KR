@@ -3,9 +3,9 @@ title: 적응형 Forms에 대한 기록 문서를 생성하는 방법
 description: 적응형 Forms 핵심 구성 요소용 기록 문서(DoR)에 대한 템플릿을 생성하는 방법에 대해 알아봅니다.
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
 workflow-type: tm+mt
-source-wordcount: '3108'
+source-wordcount: '3131'
 ht-degree: 1%
 
 ---
@@ -327,6 +327,10 @@ When you select a form model, configure Document of Record using options availab
       * **템플릿**: 사용자 지정 템플릿을 선택하려면에서 XDP를 검색하여 선택하십시오 [!DNL AEM Forms] 서버입니다. 에서 사용할 수 없는 템플릿을 사용하려는 경우 [!DNL AEM Forms] 서버, 먼저 XDP를 [!DNL AEM Forms] 서버입니다.
       * **강조 색상**: 기록 문서 PDF에서 머리글 텍스트 및 구분 문자 줄이 렌더링되는 색입니다.
       * **글꼴 모음**: 기록 문서 PDF 내 텍스트의 글꼴 모음
+
+        >[!NOTE]
+        >
+        > AEM Forms은 PDF 파일과 원활하게 통합되는 다양한 기본 제공 글꼴을 제공합니다. 지원되는 글꼴 목록을 보려면 [여기를 클릭하십시오](/help/forms/supported-out-of-the-box-fonts.md).
 
       * **데이터 모델에 바인딩되지 않은 양식 개체 포함**: 속성을 설정하면 기록 문서에 있는 스키마 기반 적응형 양식의 바인딩되지 않은 필드가 포함됩니다.
 
