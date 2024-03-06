@@ -2,9 +2,9 @@
 title: 실행
 description: 코드 및 콘텐츠가 클라우드에 준비되면 마이그레이션을 수행하는 방법을 알아봅니다
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 8baea95d57ce1e92e0e7083c161c9fee395fcb8e
 workflow-type: tm+mt
-source-wordcount: '1721'
+source-wordcount: '1771'
 ht-degree: 4%
 
 ---
@@ -156,6 +156,9 @@ AEM 소스의 로드는 추출 단계 동안 더 커집니다. 다음 사항에 
    * 개발 환경의 크기가 단계 및 프로덕션과 동일하지 않습니다.
 * 잘라내어 새로운 배포나 콘텐츠 업데이트 없이 실제 Go-Live가 수행되도록 하십시오.
 * Admin Console 사용자 알림 프로필을 만듭니다. 다음을 참조하십시오 [알림 프로필](/help/journey-onboarding/notification-profiles.md)
+* 웹 사이트에서 허용해서는 안 되는 트래픽을 제어하도록 트래픽 필터 규칙 을 구성하는 것이 좋습니다.
+   * 속도 제한 트래픽 필터 규칙은 DDoS 공격에 효과적인 도구가 될 수 있습니다. WAF 규칙이라고 하는 특별한 범주의 트래픽 필터 규칙에는 별도의 라이센스가 필요합니다.
+   * 자세한 내용은 설명서 를 참조하십시오 [제안된 시작 규칙](/help/security/traffic-filter-rules-including-waf.md#recommended-starter-rules).
 
 마이그레이션을 수행하는 동안 작업을 다시 수정해야 하는 경우 언제든지 목록을 참조할 수 있습니다.
 
