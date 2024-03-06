@@ -1,10 +1,10 @@
 ---
 title: Adobe Developer Console에서 JWT 자격 증명 사용 중단
 description: AEM의 Adobe Developer Console에서 JWT 자격 증명 사용 중단이 미치는 영향에 대해 알아봅니다.
-source-git-commit: a354786f1ddfe50b01def85d3c83da09c6a35d2f
+source-git-commit: b684d39d53b1895b8e20e5c6aca084033cfcf4b9
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 86%
+source-wordcount: '555'
+ht-degree: 87%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 86%
 
 >[!NOTE]
 >
->AEM as a Cloud Service 고객은 다음을 참조해야 합니다 [이 문서](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html) 추가 정보.
+>AEM 6.5 고객은 다음을 참조해야 합니다 [이 문서](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html) 추가 정보.
 
 Adobe 고객은 [Adobe Developer Console](https://developer.adobe.com/console)을 사용하여 다양한 API에 액세스할 수 있는 자격 증명을 생성합니다. 고객은 OAuth 서버 간 자격 증명에서 단일 페이지 앱에 이르기까지 다양한 자격 증명 유형 중에서 선택합니다. 이러한 자격 증명 유형 중 하나인 서비스 계정(JWT) 자격 증명은 OAuth 서버 간 자격 증명이 마련되어 더 이상 사용되지 않습니다. 2024년 5월 1일 이후에는 새 서비스 계정(JWT) 사용자 인증 정보를 생성할 수 없으며 기존 JWT 사용자 인증 정보는 2025년 1월 1일 이후에는 작동하지 않습니다. [사용 중단에 대해 살펴보십시오](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
 
