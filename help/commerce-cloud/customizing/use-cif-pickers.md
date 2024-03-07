@@ -8,9 +8,9 @@ activity: develop
 audience: developer
 feature: Commerce Integration Framework
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: ddf9632c0aad1fd5a3c2fb02fe1c9673ae4eb029
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ AEM Content &amp; Commerce Authoring은 AEM 작성자 및 마케터가 상거래
 
 ## 제품 선택기 {#product-picker}
 
-프로젝트 구성 요소에서 제품 선택기를 사용하려면 개발자가 를 추가해야 합니다. `commerce/gui/components/common/cifproductfield` 구성 요소 대화 상자로 이동합니다. 예를 들어 cq에 대해 다음 을 사용하십시오:dialog:
+프로젝트 구성 요소에서 제품 선택기를 사용하려면 개발자가 를 추가해야 합니다. `commerce/gui/components/common/cifproductfield` 구성 요소 대화 상자로 이동합니다. 예를 들어 다음을 사용합니다. `cq:dialog`:
 
 ```xml
 <product jcr:primaryType="nt:unstructured"

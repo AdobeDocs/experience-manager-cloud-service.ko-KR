@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
+source-git-commit: ddf9632c0aad1fd5a3c2fb02fe1c9673ae4eb029
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1669'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 적응형 양식에 파일을 첨부할 때 서버는 적응형 양식 제출 후 첨부 파일의 유효성을 검사하고 다음과 같은 경우 오류 메시지를 반환합니다.
 
-* 첨부 파일에는 (.)로 시작하는 파일 이름이 포함됩니다. 문자, 포함 \ / : * ? &quot; &lt; > | ; % $ 문자 또는 에는 다음과 같은 Windows 운영 체제용으로 예약된 특수 파일 이름이 포함되어 있습니다. `nul`, `prn`, `con`, `lpt`, 또는 `com`.
+* 첨부 파일에는 (.)로 시작하는 파일 이름이 포함됩니다. 문자, 포함 \ / : * ? &quot; &lt; > | ; % $ 문자 또는 다음과 같은 Windows 운영 체제용으로 예약된 특수 파일 이름 포함 `nul`, `prn`, `con`, `lpt`, 또는 `com`.
 
 * 첨부 파일의 크기는 0바이트입니다.
 
@@ -97,7 +97,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 * **addfields.jsp**: 이 스크립트는 변환 중에 HTML 파일에 추가되는 작업 필드를 제공합니다. 이 스크립트를 사용하여 post.user.jsp 스크립트에서 제출 중에 필요한 숨겨진 입력 POST을 추가합니다.
 * **dialog.xml**: 이 스크립트는 CQ 구성 요소 대화 상자와 유사합니다. 작성자가 맞춤화하는 구성 정보를 제공합니다. 필드는 제출 액션을 선택하면 적응형 양식 편집 대화 상자의 제출 액션 탭에 표시됩니다.
-* **post.POST.jsp**: 제출 서블릿은 제출한 데이터와 이전 섹션의 추가 데이터로 이 스크립트를 호출합니다. POST 이 페이지에서 작업을 실행하는 것에 대한 언급은 post.user.jsp 스크립트를 실행하는 것을 의미합니다. 제출 액션을 적응형 양식 편집 대화 상자에 표시할 적응형 Forms에 등록하려면 다음 속성을 sling에 추가합니다:Folder:
+* **post.POST.jsp**: 제출 서블릿은 제출한 데이터와 이전 섹션의 추가 데이터로 이 스크립트를 호출합니다. POST 이 페이지에서 작업을 실행하는 것에 대한 언급은 post.user.jsp 스크립트를 실행하는 것을 의미합니다. 제출 액션을 적응형 양식 편집 대화 상자에 표시할 적응형 Forms에 등록하려면 다음 속성을 추가합니다. `sling:Folder`:
 
    * **guideComponentType** 문자열 및 값 유형의 **fd/af/components/guidesubmittype**
    * **가이드 데이터 모델** 제출 액션을 적용할 수 있는 적응형 양식의 유형을 지정하는 문자열 유형입니다. <!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsd** 는 XSD 기반 적응형 Forms에 대해 지원됩니다. **기본** 는 XDP 또는 XSD를 사용하지 않는 적응형 Forms에 대해 지원됩니다. 여러 유형의 적응형 Forms에 작업을 표시하려면 해당 문자열을 추가합니다. 각 문자열은 쉼표로 구분합니다. 예를 들어에 작업을 표시하도록 하려면 <!--XFA- and -->XSD 기반 적응형 Forms, 값을 다음으로 지정 <!--**xfa** and--> **xsd**.
