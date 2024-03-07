@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 75767d4553e44a73154c28b3a8ff4c9267b6f863
+source-git-commit: ca65bb637c70e35ff7d7749ed7e1e66e11cdb315
 workflow-type: tm+mt
 source-wordcount: '4774'
 ht-degree: 98%
@@ -420,7 +420,7 @@ ht-degree: 98%
       + [마이크로 프론트엔드 자산 선택기](/help/assets/asset-selector.md)
       + [마이크로 프론트엔드 대상 선택기](/help/assets/destination-selector.md)
       + [자산 공유](/help/assets/share-assets.md)
-      + [자산 재처리](/help/assets/reprocessing.md)
+      + [자산 재처리 중](/help/assets/reprocessing.md)
       + [활동 및 DAM 작업 모니터링](/help/assets/assets-activity-history.md)
       + [자산 마이크로서비스 사용 시작하기](/help/assets/asset-microservices-configure-and-use.md)
       + [자산 추가 및 업로드](/help/assets/add-assets.md)
