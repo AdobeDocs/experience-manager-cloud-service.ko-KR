@@ -1,13 +1,13 @@
 ---
 title: Adobe Developer Console에서 JWT 자격 증명 사용 중단
 description: AEM의 Adobe Developer Console에서 JWT 자격 증명 사용 중단이 미치는 영향에 대해 알아봅니다.
-source-git-commit: b684d39d53b1895b8e20e5c6aca084033cfcf4b9
+exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 87%
 
 ---
-
 
 # Adobe Developer Console에서 JWT 자격 증명 사용 중단 {#jwt-credentials-deprecation-in-adobe-developer-console}
 
@@ -57,4 +57,3 @@ AEM 고객은 AEM Author UI를 사용하여 다른 모든 Adobe 솔루션과의 
 Cloud Manager는 AEM as a Cloud Service 환경으로 프로비저닝할 때 JWT 자격 증명을 사용하여 Adobe Developer Console 프로젝트를 자동 생성합니다. 아래 스크린샷에 표시된 것처럼 이 프로젝트는 읽기 전용으로 표시되어 있습니다. 고객은 이러한 프로젝트를 OAuth 서버 간 자격 증명으로 마이그레이션할 수 없으며 시도해서는 안 됩니다. 대신 Adobe는 자격 증명을 더 이상 사용할 수 없게 되기 전에 이러한 프로젝트를 Adobe에서 자체적으로 마이그레이션합니다.
 
 ![자동 생성된 프로젝트](/help/security/assets/jwt-deprecation-autogen-projects.png)
-
