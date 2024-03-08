@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: b51ee1ebffc63b56a5b758395427f5587bd165da
+source-git-commit: 87f76de41074debb2acc8ef4f71baf174d0d01ad
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1168'
 ht-degree: 9%
 
 ---
@@ -102,7 +102,11 @@ ht-degree: 9%
 
 ### 알려진 문제 {#known-issues-15262}
 
-없음.
+#### `UnsupportedClassVersionError` 업그레이드 후 CM 파이프라인 빌드 단계에서 `aem-sdk-api` 버전 `2024.2.15262.20240224T002940Z-231200`
+
+새 버전의 aem-sdk-api에는 Cloud Manager 빌드 환경 기본 JDK 버전 1.8과 호환되지 않는 Java 11 타겟으로 컴파일된 클래스가 포함되어 있습니다. 이 업데이트를 사용하려면 Maven이 JDK 11을 사용하여 실행되어야 합니다.
+
+고객에게 다음을 추가하는 것이 좋습니다. `.cloudmanager/java-version` 다음 내용이 포함된 git 저장소의 루트에 파일을 추가합니다. `11`. [빌드 환경 / Maven JDK 버전 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/build-environment-details.html?lang=en#alternate-maven-jdk-version)
 
 ### 변경 공지 {#change-notice-15262}
 
