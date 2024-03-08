@@ -2,9 +2,9 @@
 title: 사용자 정의 코드 품질 규칙
 description: 이 페이지에서는 코드 품질 테스트의 일부로 Cloud Manager에서 실행되는 사용자 정의 코드 품질 규칙에 대해 설명합니다. 이 규칙은 Adobe Experience Manager Engineering의 모범 사례를 기반으로 합니다.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '4095'
+source-wordcount: '4167'
 ht-degree: 87%
 
 ---
@@ -101,7 +101,7 @@ public class DoThis implements Runnable {
 protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
   String messageFormat = request.getParameter("messageFormat");
   request.getResource().getValueMap().put("some property", String.format(messageFormat, "some text"));
-  response.sendStatus(HttpServletResponse.SC_OK);
+  response.sendStatus (HttpServletResponse.SC_OK);
 }
 ```
 
@@ -120,7 +120,7 @@ Experience Manager 애플리케이션 내부에서 HTTP 요청을 실행할 때 
 @Reference
 private HttpClientBuilderFactory httpClientBuilderFactory;
  
-public void dontDoThis() {
+public void dontDoThis () {
   HttpClientBuilder builder = httpClientBuilderFactory.newBuilder();
   HttpClient httpClient = builder.build();
 
@@ -149,7 +149,7 @@ public void dontDoThisEither() {
 @Reference
 private HttpClientBuilderFactory httpClientBuilderFactory;
  
-public void doThis() {
+public void doThis () {
   HttpClientBuilder builder = httpClientBuilderFactory.newBuilder();
   RequestConfig requestConfig = RequestConfig.custom()
     .setConnectTimeout(5000)
@@ -162,7 +162,7 @@ public void doThis() {
   // do something with the client
 }
 
-public void orDoThis() {
+public void orDoThis () {
   URL url = new URL("http://www.google.com");
   URLConnection urlConnection = url.openConnection();
   urlConnection.setConnectTimeout(5000);
@@ -194,7 +194,7 @@ public void orDoThis() {
 #### 비준수 코드 {#non-compliant-code-4}
 
 ```java
-public void dontDoThis(Session session) throws Exception {
+public void dontDoThis (Session session) throws Exception {
   ResourceResolver resolver = factory.getResourceResolver(Collections.singletonMap("user.jcr.session", (Object)session));
   // do some stuff with the resolver
 }
@@ -203,7 +203,7 @@ public void dontDoThis(Session session) throws Exception {
 #### 준수 코드 {#compliant-code-2}
 
 ```java
-public void doThis(Session session) throws Exception {
+public void doThis (Session session) throws Exception {
   ResourceResolver resolver = null;
   try {
     resolver = factory.getResourceResolver(Collections.singletonMap("user.jcr.session", (Object)session));
@@ -215,7 +215,7 @@ public void doThis(Session session) throws Exception {
   }
 }
 
-public void orDoThis(Session session) throws Exception {
+public void orDoThis (Session session) throws Exception {
   try (ResourceResolver resolver = factory.getResourceResolver(Collections.singletonMap("user.jcr.session", (Object) session))){
     // do something with the resolver
   }
@@ -254,7 +254,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 #### 비준수 코드 {#non-compliant-code-6}
 
 ```java
-public void dontDoThis() throws Exception {
+public void dontDoThis () throws Exception {
   try {
     someOperation();
   } catch (Exception e) {
@@ -267,7 +267,7 @@ public void dontDoThis() throws Exception {
 #### 준수 코드 {#compliant-code-3}
 
 ```java
-public void doThis() {
+public void doThis () {
   try {
     someOperation();
   } catch (Exception e) {
@@ -275,7 +275,7 @@ public void doThis() {
   }
 }
 
-public void orDoThis() throws MyCustomException {
+public void orDoThis () throws MyCustomException {
   try {
     someOperation();
   } catch (Exception e) {
@@ -296,7 +296,7 @@ public void orDoThis() throws MyCustomException {
 #### 비준수 코드 {#non-compliant-code-7}
 
 ```java
-public void dontDoThis() throws Exception {
+public void dontDoThis () throws Exception {
   logger.error("something went wrong");
   throw new RuntimeException("something went wrong");
 }
@@ -305,7 +305,7 @@ public void dontDoThis() throws Exception {
 #### 준수 코드 {#compliant-code-4}
 
 ```java
-public void doThis() throws Exception {
+public void doThis () throws Exception {
   throw new RuntimeException("something went wrong");
 }
 ```
@@ -350,7 +350,7 @@ public void doGet() throws Exception {
 #### 비준수 코드 {#non-compliant-code-9}
 
 ```java
-public void dontDoThis() {
+public void dontDoThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -362,7 +362,7 @@ public void dontDoThis() {
 #### 준수 코드 {#compliant-code-6}
 
 ```java
-public void doThis() {
+public void doThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -383,7 +383,7 @@ public void doThis() {
 #### 비준수 코드 {#non-compliant-code-10}
 
 ```java
-public void dontDoThis() {
+public void dontDoThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -395,7 +395,7 @@ public void dontDoThis() {
 #### 준수 코드 {#compliant-code-7}
 
 ```java
-public void doThis() {
+public void doThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -416,7 +416,7 @@ public void doThis() {
 #### 비준수 코드 {#non-compliant-code-11}
 
 ```java
-public void dontDoThis() {
+public void dontDoThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -428,7 +428,7 @@ public void dontDoThis() {
 #### 준수 코드 {#compliant-code-8}
 
 ```java
-public void doThis() {
+public void doThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -449,7 +449,7 @@ Experience Manager에서의 로깅은 항상 로깅 프레임워크(SLF4J)를 �
 #### 비준수 코드 {#non-compliant-code-12}
 
 ```java
-public void dontDoThis() {
+public void dontDoThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -461,7 +461,7 @@ public void dontDoThis() {
 #### 준수 코드 {#compliant-code-9}
 
 ```java
-public void doThis() {
+public void doThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -482,7 +482,7 @@ public void doThis() {
 #### 비준수 코드 {#non-compliant-code-13}
 
 ```java
-public boolean dontDoThis(Resource resource) {
+public boolean dontDoThis (Resource resource) {
   return resource.isResourceType("/libs/foundation/components/text");
 }
 ```
@@ -490,7 +490,7 @@ public boolean dontDoThis(Resource resource) {
 #### 준수 코드 {#compliant-code-10}
 
 ```java
-public void doThis(Resource resource) {
+public void doThis (Resource resource) {
   return resource.isResourceType("foundation/components/text");
 }
 ```
@@ -524,7 +524,7 @@ Experience Manager API 영역은 사용이 권장되지 않아 더 이상 사용
 * **키**: InjectAnnotationWithOptionalInjectionCheck
 * **유형**: 소프트웨어 품질
 * **심각도**: 사소
-* **이후**: 버전 2023.11
+* **다음 이후**: 버전 2023.11
 
 Apache Sling 프로젝트는 의 사용을 막고 있습니다. `@Inject` 슬링 모델 컨텍스트에서 주석을 사용하므로 과 결합할 때 성능이 저하될 수 있습니다 `DefaultInjectionStrategy.OPTIONAL` (필드 또는 클래스 수준). 대신 보다 구체적인 주사(예: `@ValueMapValue` 또는 `@OsgiInjector` annotations)를 사용해야 합니다.
 
@@ -536,7 +536,7 @@ Apache Sling 프로젝트는 의 사용을 막고 있습니다. `@Inject` 슬링
 * **키**: AEMSRE-870
 * **유형**: 소프트웨어 품질
 * **심각도**: 사소
-* **이후**: 버전 2023.11
+* **다음 이후**: 버전 2023.11
 
 AEM 애플리케이션은 종종 HTTP 프로토콜을 사용하여 다른 애플리케이션에 연결하며, Apache HttpClient는 이를 위해 자주 사용되는 라이브러리입니다. 그러나 이러한 HttpClient 개체를 만들면 약간의 오버헤드가 발생하므로 이러한 개체를 가능한 한 재사용해야 합니다.
 
@@ -986,7 +986,7 @@ Experience Manager as a Cloud Service에서는 사용자 정의 검색 인덱스
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
-Experience Manager as a Cloud Service에서는 사용자 정의 검색 인덱스 정의(즉, `oak:QueryIndexDefinition` 유형의 노드)에 `reindex`라는 속성을 포함할 수 없습니다. 이 속성을 사용하는 색인화는 Experience Manager as a Cloud Service로 마이그레이션하기 전에 업데이트해야 합니다. 자세한 내용은 [콘텐츠 검색 및 색인화](/help/operations/indexing.md#how-to-use) 문서를 참조하십시오.
+Experience Manager as a Cloud Service에서는 사용자 정의 검색 인덱스 정의(즉, `oak:QueryIndexDefinition` 유형의 노드)에 `reindex`라는 속성을 포함할 수 없습니다. 이 속성을 사용하는 인덱싱은 Experience Manager as a Cloud Service으로 마이그레이션하기 전에 업데이트해야 합니다. 자세한 내용은 [콘텐츠 검색 및 색인화](/help/operations/indexing.md#how-to-use) 문서를 참조하십시오.
 
 ### 사용자 지정 DAM 에셋 Lucene 노드는 &#39;queryPaths&#39;를 지정하지 않아야 합니다. {#oakpal-damAssetLucene-queryPaths}
 

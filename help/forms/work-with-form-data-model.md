@@ -5,7 +5,7 @@ feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '4087'
 ht-degree: 0%
@@ -432,7 +432,7 @@ OData 서비스에서는 탐색 속성을 사용하여 두 데이터 모델 개�
 다음은 유효성 검사 플래그를 다음으로 설정하는 예제입니다. **전체**:
 
 ```java
-operationOptions.setValidationOptions(ValidationOptions.FULL);
+operationOptions.setValidationOptions (ValidationOptions.FULL);
 ```
 
 >[!NOTE]

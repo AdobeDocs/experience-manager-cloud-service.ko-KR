@@ -5,7 +5,7 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 5acbd7a56f18ee4c3d8b8f04ab17ad44fe6f0647
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '1931'
 ht-degree: 7%
@@ -76,7 +76,7 @@ ht-degree: 7%
 
 >[!IMPORTANT]
 >
-위의 단계를 내부가 아닌 외부 애플리케이션에서 실행합니다. [!DNL Experience Manager] JVM
+>위의 단계를 내부가 아닌 외부 애플리케이션에서 실행합니다. [!DNL Experience Manager] JVM
 
 이 접근 방식은 자산 업로드의 확장 가능하고 더 성능 있는 처리를 제공합니다. 과 비교한 차이점 [!DNL Experience Manager] 6.5는 다음과 같습니다.
 
@@ -85,11 +85,11 @@ ht-degree: 7%
 
 >[!NOTE]
 >
-오픈 소스에서 이 접근 방식을 구현하려면 클라이언트 코드 를 참조하십시오 [aem 업로드 라이브러리](https://github.com/adobe/aem-upload).
+>오픈 소스에서 이 접근 방식을 구현하려면 클라이언트 코드 를 참조하십시오 [aem 업로드 라이브러리](https://github.com/adobe/aem-upload).
 >
-[!IMPORTANT]
+>[!IMPORTANT]
 >
-경우에 따라 변경 사항이 Experience ManagerCloud Service 에 있는 스토리지의 일관적인 특성으로 인해 요청 간에 완전히 전파되지 않을 수 있습니다. 필수 폴더 생성이 전파되지 않아 업로드 호출을 시작하거나 완료하는 응답이 404개로 늘어납니다. 클라이언트는 404 개의 응답을 예상해야 하며, 백오프 전략을 사용하여 재시도를 구현하여 응답들을 처리해야 합니다.
+>경우에 따라 변경 사항이 Experience ManagerCloud Service 에 있는 스토리지의 일관적인 특성으로 인해 요청 간에 완전히 전파되지 않을 수 있습니다. 필수 폴더 생성이 전파되지 않아 업로드 호출을 시작하거나 완료하는 응답이 404개로 늘어납니다. 클라이언트는 404 개의 응답을 예상해야 하며, 백오프 전략을 사용하여 재시도를 구현하여 응답들을 처리해야 합니다.
 
 ### 업로드 시작 {#initiate-upload}
 
@@ -159,7 +159,7 @@ CDN 에지 노드는 요청된 바이너리 업로드를 가속화하는 데 도
 
 >[!NOTE]
 >
-업로드 알고리즘에 대한 자세한 내용은 [공식 기능 설명서](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) 및 [API 설명서](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) Apache Jackrabbit Oak 프로젝트에서.
+>업로드 알고리즘에 대한 자세한 내용은 [공식 기능 설명서](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) 및 [API 설명서](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) Apache Jackrabbit Oak 프로젝트에서.
 
 ### 업로드 완료 {#complete-upload}
 
@@ -179,7 +179,7 @@ CDN 에지 노드는 요청된 바이너리 업로드를 가속화하는 데 도
 
 >[!NOTE]
 >
-에셋이 존재하고 모두 존재하지 않는 경우 `createVersion` nor `replace` 을 지정한 다음 [!DNL Experience Manager] 는 에셋의 현재 버전을 새 바이너리로 업데이트합니다.
+>에셋이 존재하고 모두 존재하지 않는 경우 `createVersion` nor `replace` 을 지정한 다음 [!DNL Experience Manager] 는 에셋의 현재 버전을 새 바이너리로 업데이트합니다.
 
 시작 프로세스와 마찬가지로 전체 요청 데이터에는 두 개 이상의 파일에 대한 정보가 포함될 수 있습니다.
 
@@ -215,7 +215,7 @@ function debug() {
 }
 
 # Function to check if a file exists
-function file_exists() {
+function file_exists () {
     [ -e "$1" ]
 }
 
@@ -431,7 +431,7 @@ echo "File upload completed successfully."
 
 >[!NOTE]
 >
-aem 업로드 라이브러리와 명령줄 도구는 모두 [node-httptransfer 라이브러리](https://github.com/adobe/node-httptransfer/)
+>aem 업로드 라이브러리와 명령줄 도구는 모두 [node-httptransfer 라이브러리](https://github.com/adobe/node-httptransfer/)
 
 ### 더 이상 사용되지 않는 에셋 업로드 API {#deprecated-asset-upload-api}
 
@@ -444,9 +444,9 @@ aem 업로드 라이브러리와 명령줄 도구는 모두 [node-httptransfer �
 
 >[!MORELIKETHIS]
 >
-* [오픈 소스 AEM 업로드 라이브러리](https://github.com/adobe/aem-upload).
-* [오픈 소스 명령줄 도구](https://github.com/adobe/aio-cli-plugin-aem).
-* [직접 업로드를 위한 Apache Jackrabbit Oak 설명서](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
+>* [오픈 소스 AEM 업로드 라이브러리](https://github.com/adobe/aem-upload).
+>* [오픈 소스 명령줄 도구](https://github.com/adobe/aio-cli-plugin-aem).
+>* [직접 업로드를 위한 Apache Jackrabbit Oak 설명서](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
 
 ## 에셋 처리 및 사후 처리 워크플로 {#post-processing-workflows}
 
@@ -551,4 +551,4 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!MORELIKETHIS]
 >
-* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+>* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).

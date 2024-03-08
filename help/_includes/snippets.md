@@ -1,8 +1,8 @@
 ---
-source-git-commit: 45b263651f6139b1c7f83ff3485186b272ba1a4f
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 87%
+source-wordcount: '331'
+ht-degree: 100%
 
 ---
 # 스니펫 {#snippets}
@@ -55,8 +55,17 @@ ht-degree: 87%
 * [Power Automate에 제출](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Workfront Fusion에 제출](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Salesforce 애플리케이션에 적응형 양식 연결](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
-* [Microsoft® Dynamics OData에 적응형 양식 연결](/help/forms/ms-dynamics-odata-configuration.md)
+* [Microsoft에 적응형 양식 연결](/help/forms/ms-dynamics-odata-configuration.md)
 
-## Edge Delivery Services 조기 액세스로 AEM 작성 {#aem-authoring-edge-early-access}
+## Edge Delivery Services 얼리 액세스를 통한 AEM 작성 {#aem-authoring-edge-early-access}
 
-[!BADGE 조기 액세스 기술 - Slack 채널의 AEM Sites 랩에서 이 기능에 대해 질문하십시오!]{type=Informative url="/help/edge/docs/slack.md" tooltip="Edge Delivery Services을 사용하여 AEM 작성은 조기 액세스 기술입니다."}
+[!BADGE 얼리 액세스 기술 - Slack 채널의 AEM Sites Labs에서 제공하는 이 기능에 대해 문의하십시오!]{type=Informative url="/help/edge/docs/slack.md" tooltip="Edge Delivery Services를 사용한 AEM 작성은 얼리 액세스 기술입니다."}
+
+## 참고 항목 {#see-also-forms-eds}
+
+* [양식 구성 요소](/help/edge/docs/forms/form-components.md)
+* [양식 만들기 및 미리 보기](/help/edge/docs/forms/create-forms.md)
+* [양식을 활성화하여 데이터 전송](/help/edge/docs/forms/submit-forms.md)
+* [사이트 페이지에 양식 게시](/help/edge/docs/forms/publish-forms.md)
+* [양식 필드에 유효성 검사 추가](/help/edge/docs/forms/validate-forms.md)
+* [양식의 테마 및 스타일 변경](/help/edge/docs/forms/style-theme-forms.md)

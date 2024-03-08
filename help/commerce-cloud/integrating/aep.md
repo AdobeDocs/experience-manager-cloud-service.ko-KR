@@ -11,7 +11,7 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 05e4adb0d7ada0f7cea98858229484bf8cca0d16
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 1%
@@ -175,7 +175,7 @@ Maven 빌드 프로세스의 일부로 npm 클린 설치(사용 `npm ci`)가 트
 
 React 기반 Peregrine 및 CIF 코어 구성 요소를 초기화하려면 필요한 구성 및 JavaScript 파일을 만듭니다.
 
-1. 모듈 위치로 이동 `ui.frontend` 하고 다음 폴더를 만듭니다. `src/main/webpack/components/commerce/App`
+1. 다음 위치로 이동 `ui.frontend` 을(를) 모듈화하고 다음 폴더를 만듭니다. `src/main/webpack/components/commerce/App`
 
 1. 만들기 `config.js` 다음 내용이 포함된 파일:
 
@@ -249,7 +249,7 @@ React 기반 Peregrine 및 CIF 코어 구성 요소를 초기화하려면 필요
    import { enhancer, reducers } from '@magento/peregrine/lib/store';
    
    const storage = new BrowserPersistence();
-   const store = createStore(combineReducers(reducers), enhancer);
+   const store = createStore(combineReducers (reducers), enhancer);
    
    storage.setItem('store_view_code', config.storeView);
    
@@ -263,7 +263,7 @@ React 기반 Peregrine 및 CIF 코어 구성 요소를 초기화하려면 필요
        // listen for add-to-cart events and enable forwarding to the magento storefront events sdk
        useAddToCartEvent(({ mse }));
        // enable CIF specific event forwarding to the Adobe Client Data Layer
-       useDataLayerEvents();
+       useDataLayerEvents ();
    
        useEffect(() => {
            // implement a proper marketing opt-in, for demo purpose you hard-set the consent cookie
@@ -323,13 +323,13 @@ React 기반 Peregrine 및 CIF 코어 구성 요소를 초기화하려면 필요
    };
    ```
 
-   다음과 `EventCollectorContext` 같은 React 컨텍스트를 내보냅니다.
+   다음 `EventCollectorContext` 는 다음과 같은 React 컨텍스트를 내보냅니다.
 
-   - commerce-events-sdk 및 commerce-events-collector 라이브러리를 로드합니다.
-   - Experience Platform 및/또는 ACDS에 대해 지정된 구성으로 초기화합니다
-   - Peregrine의 모든 이벤트를 구독하고 이를 이벤트 SDK에 전달합니다.
+   - commerce-events-sdk 및 commerce-events-collector 라이브러리,
+   - 는 Experience Platform 및/또는 ACDS에 대해 주어진 구성으로 초기화합니다.
+   - Peregrine에서 모든 이벤트를 구독하고 이벤트 SDK에 전달합니다.
 
-   여기에서 구현 세부 정보를 `EventCollectorContext` [검토할 수 있습니다](https://github.com/adobe/aem-core-cif-components/blob/3d4e44d81fff2f398fd2376d24f7b7019f20b31b/extensions/experience-platform-connector/src/events-collector/EventCollectorContext.js).
+   의 구현 세부 사항을 검토할 수 있습니다. `EventCollectorContext` [여기](https://github.com/adobe/aem-core-cif-components/blob/3d4e44d81fff2f398fd2376d24f7b7019f20b31b/extensions/experience-platform-connector/src/events-collector/EventCollectorContext.js).
 
 ### 업데이트된 AEM 프로젝트 빌드 및 배포
 
@@ -345,7 +345,7 @@ React 기반 Peregrine 및 CIF 코어 구성 요소를 초기화하려면 필요
 
 ### 상거래 필드 그룹으로 스키마 만들기
 
-상거래 이벤트 데이터의 구조를 정의하려면 경험 데이터 모델(XDM) 스키마를 만들어야 합니다. 스키마는 데이터의 구조와 포맷 형식을 나타내고 유효성을 검사하는 일련의 규칙입니다.
+상거래 이벤트 데이터의 구조를 정의하려면 경험 데이터 모델(XDM) 스키마를 만들어야 합니다. 스키마는 데이터의 구조와 형식을 나타내고 유효성을 검사하는 규칙 세트입니다.
 
 1. 브라우저에서 다음 위치로 이동합니다. __Adobe Experience Platform__ 제품 홈 페이지입니다. 예: <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>
 
@@ -353,18 +353,18 @@ React 기반 Peregrine 및 CIF 코어 구성 요소를 초기화하려면 필요
 
    ![AEP 스키마 만들기](../assets/aep-integration/AEP-Schema-EventSchema-1.png)
 
-1. 스키마 속성 > 표시 이름&#x200B;__필드를 사용하여 스키마 이름을 지정하고 컴퍼지션 > 필드 그룹 > 버튼 추가__&#x200B;를 사용하여 ____&#x200B;필드 그룹을 추가합니다.
+1. 다음을 사용하여 스키마 이름 지정 __스키마 속성 > 표시 이름__ 필드 및 추가  __컴포지션 > 필드 그룹 > 추가__ 단추를 클릭합니다.
 
    ![AEP 스키마 정의](../assets/aep-integration/AEP-Schema-Definition.png)
 
-1. __필드 그룹 추가 대화 상자에서 를 검색 `Commerce`하고 상거래 세부 사항__ 확인란을 선택한 __다음 필드 그룹____추가를 클릭합니다__.
+1. 다음에서 __필드 그룹 추가__ 대화 상자, 검색 `Commerce`를 선택하고 __상거래 세부 정보__ 확인란을 선택하고 __필드 그룹 추가__.
 
    ![AEP 스키마 정의](../assets/aep-integration/AEP-Schema-Field-Group.png)
 
 
 >[!TIP]
 >
->[자세한 내용은 스키마 구성](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html) 기본을 참조하십시오.
+>다음을 참조하십시오. [스키마 컴포지션 기본 사항](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html) 추가 정보.
 
 ### 데이터 세트 만들기
 
@@ -432,9 +432,9 @@ Experience Platform에서 데이터 스트림을 생성할 수 있도록 다음 
 
 ## 트리거 `addToCart` 이벤트 및 데이터 수집 확인 {#event-trigger-verify}
 
-위의 단계에서는 AEM Commerce 및 Experience Platform 설정을 완료합니다. 이제 Google 크롬 확장 _프로그램 Snowplow Inspector_&#x200B;를 사용하여 이벤트를 트리거 `addToCart` 하고 데이터 수집 확인할 수 있으며 제품 UI에서 데이터 세트 __지표 및 그래프__ 토글을 사용할 수 있습니다.
+위의 단계에서는 AEM Commerce 및 Experience Platform 설정을 완료합니다. 이제 다음을 트리거할 수 있습니다. `addToCart` Google Chrome 확장 기능을 사용한 이벤트 및 데이터 수집 확인 _Snowploy 검사기_ 및 데이터 세트 __지표 및 그래프__ 제품 UI에서 전환합니다.
 
-이벤트를 트리거하려면 로컬 설정에서 AEM 작성자 또는 게시 서비스를 사용할 수 있습니다. 이 예에서는 계정에 로깅하여 AEM 작성자를 사용하십시오.
+이벤트를 트리거하려면 로컬 설정에서 AEM 작성자 또는 게시 서비스를 사용할 수 있습니다. 이 예에서는 계정에 로그인하여 AEM 작성자를 사용합니다.
 
 1. Sites 페이지에서 __내 데모 StoreFront > us > en__ 페이지 및 클릭 __편집__ 맨 위의 작업 표시줄에 표시됩니다.
 
@@ -443,10 +443,10 @@ Experience Platform에서 데이터 스트림을 생성할 수 있도록 다음 
 1. 에서 원하는 제품 카드를 클릭합니다. __제품 페이지__&#x200B;을 선택한 다음 을 선택합니다. __색상, 크기__ 을(를) 활성화하려면 __장바구니에 추가__ 단추를 클릭합니다.
 
 
-1. 브라우저의 확장 패널에서 Snowplow Inspector 확장을 __열고 왼쪽 레일에서 Experience Platform Wed SDK__&#x200B;를 선택합니다&#x200B;__.__
+1. 를 엽니다. __Snowploy 검사기__ 브라우저의 확장 패널에서 확장을 선택한 다음 __Experience Platform Wed SDK__ 왼쪽 레일에서.
 
 
-1. 제품 페이지 페이지로 돌아가&#x200B;__서 장바구니__&#x200B;에 추가 버튼 단추를 클릭합니다&#x200B;__.__ 이렇게 하면 데이터가 Experience Platform으로 전송됩니다. 다음 __Adobe Experience Platform Debugger__ 확장은 이벤트 세부 사항을 표시합니다.
+1. (으)로 돌아가기 __제품 페이지__ 및 클릭 __장바구니에 추가__ 단추를 클릭합니다. 이렇게 하면 데이터가 Experience Platform으로 전송됩니다. 다음 __Adobe Experience Platform Debugger__ 확장은 이벤트 세부 사항을 표시합니다.
 
    ![AEP 디버거 장바구니에 추가 이벤트 데이터](../assets/aep-integration/AEP-Debugger-AddToCart-EventData.png)
 
@@ -469,17 +469,17 @@ PWA Studio 프로젝트를 사용하면 Adobe Commerce 또는 Magento Open Sourc
 
 현재 지원되는 이벤트는 다음과 같습니다.
 
-__Experience XDM Events:__
+__경험 XDM 이벤트:__
 
 1. 장바구니에 추가(AEM)
 1. 페이지 보기(AEM)
 1. 제품 보기(AEM)
-1. Search 요청 전송됨(AEM)
-1. Search 응답 수신(AEM)
+1. 검색 요청 전송됨(AEM)
+1. 검색 응답 수신됨(AEM)
 
-Peregrine 구성](https://developer.adobe.com/commerce/pwa-studio/guides/packages/peregrine/) 요소가 AEM Commerce 프로젝트에서 재사용되는 경우[:
+날짜 [페레그린 구성 요소](https://developer.adobe.com/commerce/pwa-studio/guides/packages/peregrine/) AEM Commerce 프로젝트에서 재사용됩니다.
 
-__Experience XDM Events:__
+__경험 XDM 이벤트:__
 
 1. 장바구니에서 제거
 1. 장바구니 열기

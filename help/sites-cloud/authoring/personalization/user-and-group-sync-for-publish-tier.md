@@ -2,7 +2,7 @@
 title: 등록, 로그인 및 사용자 프로필
 description: AEM as a Cloud Service의 등록, 로그인, 사용자 데이터 및 그룹 동기화에 대해 알아봅니다.
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 90%
@@ -37,7 +37,7 @@ ht-degree: 90%
 
 1. 등록 정보를 수집하는 사용자 정의 AEM 구성 요소 표시
 1. 제출 후 올바르게 프로비저닝된 서비스 사용자가 다음 작업을 수행
-   1. UserManager API의 `findAuthorizables()` 방법 중 하나를 사용하여 기존 사용자가 이미 존재하지 않는지 확인
+   1. UserManager API의 `findAuthorizables ()` 방법 중 하나를 사용하여 기존 사용자가 이미 존재하지 않는지 확인
    1. UserManager API의 `createUser()` 방법 중 하나를 사용하여 사용자 레코드 생성
    1. Authorizable 인터페이스의 `setProperty()` 방법을 사용하여 캡처된 프로필 데이터 유지
 1. 선택적 플로우 (예: 사용자에게 이메일 유효성 확인 요구)

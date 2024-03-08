@@ -3,9 +3,9 @@ title: AEM Workflow에서 사용자를 선택하는 방법
 description: 에 대한 사용자 또는 그룹을 선택하는 방법 알아보기 [!DNL AEM Forms] 런타임에 워크플로가 수행됩니다.
 content-type: troubleshooting
 topic-tags: publish
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '853'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 ECMAScript는 스크립팅 언어입니다. 클라이언트측 스크립팅 및 서버 애플리케이션에 사용됩니다. ECMAScript를 사용하여 사용자 또는 그룹을 동적으로 선택하려면 다음 단계를 수행하십시오.
 
-1. CRXDE Lite를 엽니다. URL은 `https://'[server]:[port]'/crx/de/index.jsp`
+1. CRXDE Lite 열기. URL은 `https://'[server]:[port]'/crx/de/index.jsp`
 1. 다음 경로에서 확장명이 .ecma인 파일을 만듭니다. 경로(노드 구조)가 없는 경우 만듭니다.
 
    * (작업 할당 단계의 경로) `/apps/fd/dashboard/scripts/participantChooser`
@@ -43,9 +43,9 @@ ECMAScript는 스크립팅 언어입니다. 클라이언트측 스크립팅 및 
       |--- |--- |--- |
       | jcr:title | 문자열 | 스크립트 이름을 지정합니다. 예를 들어 가장 가까운 필드 에이전트를 선택합니다. 이 이름은 작업 할당 및 문서 서명 단계에 표시됩니다. |
 
-   1. **모두 저장**&#x200B;을 클릭합니다. AEM Workflow의 구성 요소에서 스크립트를 선택할 수 있습니다.
+   1. 클릭 **모두 저장**. AEM Workflow의 구성 요소에서 스크립트를 선택할 수 있습니다.
 
-      ![스크립트](assets/script.png)
+      ![script](assets/script.png)
 
 ### 사용자 또는 그룹을 동적으로 선택하는 샘플 ECMAScript {#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group}
 
@@ -76,7 +76,7 @@ var path = workflowData.getPayload().toString();
 >에 ECMAScript 사용 시 [!DNL Adobe Sign], 스크립트는 /apps/fd/workflow/scripts/adobesign/의 crx-repository에 있어야 하며 사용자 목록을 반환하려면 getAdobeSignRecipients 라는 함수를 사용해야 합니다.
 
 ```javascript
-function getAdobeSignRecipients() {
+function getAdobeSignRecipients () {
 
     var recipientSetInfos = new Packages.java.util.ArrayList();
 
@@ -99,10 +99,10 @@ function getAdobeSignRecipients() {
     email = "example@example.com";
     
     recipientInfo.setEmail(email);
-    recipientInfo.setSecurityOptions(securityOptions);
+    recipientInfo.setSecurityOptions (securityOptions);
     
     recipientInfoList.add(recipientInfo);
-    recipientInfoSet.setMemberInfos(recipientInfoList);
+    recipientInfoSet.setMemberInfos (recipientInfoList);
     recipientSetInfos.add(recipientInfoSet);
 
     return recipientSetInfos;
@@ -279,7 +279,7 @@ import org.apache.felix.scr.annotations.Service;
 
 @Component(metatype = false)
 public class DummyRecipientChoser implements RecipientInfoSpecifier {
-    public List<RecipientSetInfo> getAdobeSignRecipients(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap args) throws WorkflowException {
+    public List<RecipientSetInfo> getAdobeSignRecipients (WorkItem workItem, WorkflowSession workflowSession, MetaDataMap args) throws WorkflowException {
 
         List<RecipientSetInfo> recipientSetInfos = new ArrayList<RecipientSetInfo>();
 
@@ -303,11 +303,11 @@ public class DummyRecipientChoser implements RecipientInfoSpecifier {
                 email = "example@example.com";
 
                 recipientInfo1.setEmail(email);
-                recipientInfo1.setSecurityOptions(securityOptions);
+                recipientInfo1.setSecurityOptions (securityOptions);
 
                 recipientInfoList.add(recipientInfo1);  //Add member
 
-                recipientInfoSet1.setMemberInfos(recipientInfoList);
+                recipientInfoSet1.setMemberInfos (recipientInfoList);
 
                 //Second Recipient
 
@@ -328,11 +328,11 @@ public class DummyRecipientChoser implements RecipientInfoSpecifier {
 
                 RecipientInfo recipientInfo2  = new RecipientInfo();
                 recipientInfo2.setEmail(email);
-                recipientInfo2.setSecurityOptions(securityOptions);
+                recipientInfo2.setSecurityOptions (securityOptions);
 
                 recipientInfoList2.add(recipientInfo2);  //Add member
 
-                recipientInfoSet2.setMemberInfos(recipientInfoList2);
+                recipientInfoSet2.setMemberInfos (recipientInfoList2);
 
                 //*********************************
 

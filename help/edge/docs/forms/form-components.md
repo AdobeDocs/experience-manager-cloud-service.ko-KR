@@ -4,17 +4,17 @@ description: 이 문서에서는 AEM Forms Edge Delivery Service에서 사용할
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: 7d087d41-9313-482a-a905-8955b0999781
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '964'
 ht-degree: 6%
 
 ---
 
-
 # 양식 구성 요소 및 속성: AEM Forms Edge 전송 서비스
 
-AEM Forms Edge Delivery Service를 통해 다양한 구성 요소를 사용하여 사용자 친화적인 대화형 양식을 만들 수 있습니다. 이러한 구성 요소는 다양한 유형의 데이터 수집에 적합하며 특정 요구 사항에 맞게 쉽게 사용자 지정할 수 있습니다.
+AEM Forms Edge Delivery Services를 사용하면 다양한 구성 요소를 사용하여 사용자 친화적인 대화형 양식을 만들 수 있습니다. 이러한 구성 요소는 다양한 유형의 데이터 수집에 적합하며 특정 요구 사항에 맞게 쉽게 사용자 지정할 수 있습니다.
 
 
 ![일부 구성 요소 및 속성이 있는 샘플 스프레드시트](/help/edge/assets/sample-form-in-spreadsheet.png)

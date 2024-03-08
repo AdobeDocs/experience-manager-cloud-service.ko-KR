@@ -1,16 +1,16 @@
 ---
-title: AEM Forms Edge Delivery Service 양식의 테마 및 스타일 사용자 정의
-description: AEM Forms Edge Delivery Service 양식의 테마 및 스타일 사용자 정의
+title: AEM Forms Edge Delivery Services Form의 테마 및 스타일 맞춤화
+description: AEM Forms Edge Delivery Services Form의 테마 및 스타일 맞춤화
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '1275'
-ht-degree: 90%
+source-wordcount: '1767'
+ht-degree: 63%
 
 ---
-
 
 # 양식 필드 스타일 지정
 
@@ -90,7 +90,7 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 **HTML 구조의 예**
 
 ```HTML
-<div class="form-text-wrapper form-first-name field-wrapper" data-required="true">
+<div class="text-wrapper field-first-name field-wrapper" data-required="true">
   <label for="firstName" class="field-label">First Name</label>
   <input type="text" placeholder="Enter your first name" maxlength="50" id="firstName" name="firstName" aria-describedby="firstName-description">
   <div class="field-description" aria-live="polite" id="firstName-description">
@@ -102,24 +102,33 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 **일반 구성 요소용 CSS 선택기**
 
 ```CSS
-.form-{Type}-wrapper input {
+/* Target all input fields within any .{Type}-wrapper  */
+.{Type}-wrapper  {
   /* Add your styles here */
   border: 1px solid #ccc;
   padding: 8px;
   border-radius: 4px;
 }
 
-
-.form-{Name} input {
+/* Target all input fields within any .{Type}-wrapper  */
+.{Type}-wrapper input {
   /* Add your styles here */
   border: 1px solid #ccc;
   padding: 8px;
   border-radius: 4px;
+}
+
+/* Target any element with the class field-{Name}  */
+.field-{Name} {
+  /* Add your styles here */
+  /* This could be used for styles specific to all elements with field-{Name} class, not just inputs */
 }
 ```
 
-* `.form-{Type}-wrapper`: 필드 유형에 따라 외부 `div` 요소를 타겟팅합니다. 예를 들어 `.form-text-wrapper`는 모든 텍스트 입력 필드를 타겟팅합니다.
-* `.form-{Name}`: 특정 필드 이름을 기반으로 요소를 추가로 선택합니다. 예를 들어 `.form-first-name`은 “이름” 텍스트 필드를 타겟팅합니다.
+* `.{Type}-wrapper`: 필드 유형에 따라 외부 `div` 요소를 타겟팅합니다. 예를 들어, `.text-wrapper` 는 모든 텍스트 필드를 타깃팅합니다.
+* `.field-{Name}`: 특정 필드 이름을 기반으로 요소를 추가로 선택합니다. 예를 들어, `.field-first-name` 는 &quot;이름&quot; 텍스트 필드를 타깃팅합니다. 반면에 이 선택기는 필드가 있는 요소를 타겟팅하는 데 사용할 수 있습니다.{Name} 수업, 조심하는 것이 중요하다. 이 경우 입력 자체뿐만 아니라 레이블 및 설명 요소를 타겟팅하므로 입력 필드를 스타일링하는 데 그다지 유용하지 않습니다. 일반적으로 텍스트 입력 필드(.text-wrapper input)를 타깃팅하는 데 사용하는 선택기와 같이 더 구체적인 선택기를 사용하는 것이 좋습니다.
+
+
 
 **일반 구성 요소용 CSS 선택기의 예**
 
@@ -150,34 +159,36 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 #### HTML 구조
 
 ```HTML
-<div class="form-drop-down-wrapper form-{Name} field-wrapper" data-required={required}>
-  <label for="{FieldId}" class="field-label">First Name</label>
-  <select id="{FieldId}" name="{Name}"><option></option><option></option></select>
-  <div class="field-description" aria-live="polite" id="{FieldId}-description">
+<div class="{Type}-wrapper field-{Name} field-wrapper" data-required={required}>
+   <label for="{FieldId}" class="field-label">First Name</label>
+   <select id="{FieldId}" name="{Name}"><option></option><option></option></select>
+   <div class="field-description" aria-live="polite" id="{FieldId}-description">
     Hint - First name should be minimum 3 characters and a maximum of 10 characters.
-  </div>
+   </div>
 </div>
 ```
 
 **HTML 구조의 예**
 
 ```HTML
-    <div class="form-drop-down-wrapper form-country field-wrapper" data-required="true">
-      <label for="country" class="field-label">Country</label>
-      <select id="country" name="country">
-         <option value="">Select Country</option>
-         <option value="US">United States</option>
-         <option value="CA">Canada</option>
-    </select>
-   <div class="field-description" aria-live="polite" id="country-description">Please select your country of residence.</div>
-   </div>
+<div class="drop-down-wrapper field-country field-wrapper" data-required="true">
+  <label for="country" class="field-label">Country</label>
+  <select id="country" name="country">
+    <option value="">Select Country</option>
+    <option value="US">United States</option>
+    <option value="CA">Canada</option>
+  </select>
+  <div class="field-description" aria-live="polite" id="country-description">
+    Please select your country of residence.
+  </div>
+</div>
 ```
 
 #### 드롭다운 구성 요소용 CSS 선택기 예
 
 ```CSS
 /* Target the outer wrapper */
-.form-drop-down-wrapper {
+.drop-down-wrapper {
   /* Add your styles here */
   display: flex;
   flex-direction: column;
@@ -185,13 +196,13 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 }
 
 /* Style the label */
-.form-drop-down-wrapper .field-label {
+.drop-down-wrapper .field-label {
   margin-bottom: 5px;
   font-weight: bold;
 }
 
 /* Style the dropdown itself */
-.form-drop-down-wrapper select {
+.drop-down-wrapper select {
   border: 1px solid #ccc;
   padding: 8px;
   border-radius: 4px;
@@ -203,11 +214,11 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 }
 
 /* Optional: Style the dropdown arrow */
-.form-drop-down-wrapper select::-ms-expand {
+.drop-down-wrapper select::-ms-expand {
   display: none; /* Hide the default arrow for IE11 */
 }
 
-.form-drop-down-wrapper select::after {
+.drop-down-wrapper select::after {
   content: "\25BC";
   font-size: 12px;
   color: #ccc;
@@ -219,7 +230,7 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 }
 ```
 
-* 래퍼 타겟팅: 첫 번째 선택기(`.form-drop-down-wrapper`)는 외부 래퍼 요소를 타겟팅하여 스타일이 전체 드롭다운 구성 요소에 적용되도록 합니다.
+* 래퍼 타겟팅: 첫 번째 선택기(`.drop-down-wrapper`)는 외부 래퍼 요소를 타겟팅하여 스타일이 전체 드롭다운 구성 요소에 적용되도록 합니다.
 * Flexbox 레이아웃: Flexbox는 깔끔한 레이아웃을 위해 레이블, 드롭다운 및 설명을 수직으로 정렬합니다.
 * 레이블 스타일: 더 굵은 글꼴 두께와 약간의 여백으로 레이블을 돋보이게 합니다.
 * 드롭다운 스타일링: 테두리, 패딩 및 둥근 모퉁이로 선택 요소를 세련되게 합니다.
@@ -271,25 +282,25 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 
 
   ```CSS
-     /* Targets all radio group wrappers */
-  .form-radio-group-wrapper {
-    margin-bottom: 20px; /* Adds space between radio groups */
-  }
+     /* Targets radio group wrappers */
+       .radio-group-wrapper {
+       margin-bottom: 20px; /* Adds space between radio groups */  
+     }
   
-  /* Targets all checkbox group wrappers */
-  .form-checkbox-group-wrapper {
-    margin-bottom: 20px; /* Adds space between checkbox groups */
-  }
+     /* Targets checkbox group wrappers */
+     .checkbox-group-wrapper {
+     margin-bottom: 20px; /* Adds space between checkbox groups */
+     }
   ```
 
 
 * 타겟팅 그룹 레이블: 이 선택기는 라디오 및 확인란 그룹 래퍼 내의 `.field-label` 요소를 타겟팅합니다. 이를 통해 해당 그룹에 맞게 레이블 스타일을 지정할 수 있으며 잠재적으로 더 돋보이게 만들 수 있습니다.
 
   ```CSS
-  .form-radio-group-wrapper .field-label,
-  .form-checkbox-group-wrapper .field-label {
-   font-weight: bold; /* Makes the group label bold */
-  }
+   .radio-group-wrapper legend,
+   .checkbox-group-wrapper legend {
+     font-weight: bold; /* Makes the group label bold */
+   }
   ```
 
 
@@ -298,24 +309,24 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 
   ```CSS
   /* Styling radio buttons */
-  .form-radio-group-wrapper input[type="radio"] {
-    margin-right: 5px; /* Adds space between the input and its   label */
-  } 
+   .radio-group-wrapper input[type="radio"] {
+     margin-right: 5px; /* Adds space between the input and its label */
+   }
   
-  /* Styling radio button labels */
-  .form-radio-group-wrapper label {
-    font-size: 15px; /* Changes the label font size */
-  }
+   /* Styling radio button labels */
+   .radio-group-wrapper label {
+     font-size: 15px; /* Changes the label font size */
+   }
   
   /* Styling checkboxes */
-  .form-checkbox-group-wrapper input[type="checkbox"] {
-    margin-right: 5px;  /* Adds space between the input and its  label */ 
-  }
+   .checkbox-group-wrapper input[type="checkbox"] {
+     margin-right: 5px; /* Adds space between the input and its label */
+   }
   
-  /* Styling checkbox labels */
-  .form-checkbox-group-wrapper label {
-    font-size: 15px; /* Changes the label font size */
-  }
+   /* Styling checkbox labels */
+   .checkbox-group-wrapper label {
+     font-size: 15px; /* Changes the label font size */
+   }
   ```
 
 
@@ -325,30 +336,352 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 
   ```CSS
   /* Hide the default radio button or checkbox */
-  .form-radio-group-wrapper input[type="radio"],
-  .form-checkbox-group-wrapper input[type="checkbox"] {
-    opacity: 0; 
-    position: absolute; 
-  }
+     .radio-group-wrapper input[type="radio"],
+     .checkbox-group-wrapper input[type="checkbox"] {
+       opacity: 0;
+       position: absolute;
+     }
   
-  /* Create a custom radio button */
-  .form-radio-group-wrapper input[type="radio"] + label::before { 
-    content: "";
-    display: inline-block;
-    width: 16px; 
-    height: 16px; 
-    border: 2px solid #ccc; 
-    border-radius: 50%;
-    margin-right: 5px;
-  }
+     /* Create a custom radio button */
+     .radio-group-wrapper input[type="radio"] + label::before {
+       /* ... styles for custom radio button ... */
+     }
   
-  .form-radio-group-wrapper input[type="radio"]:checked +  label::before {
-    background-color: #007bff; 
-  }
+     .radio-group-wrapper input[type="radio"]:checked + label::before {
+       /* ... styles for checked radio button ... */
+     }
   
-  /* Create a custom checkbox */
-  /* Similar styling as above, with adjustments for a square shape  */
+     /* Create a custom checkbox */
+     /* Similar styling as above, with adjustments for a square shape  */
+     .checkbox-group-wrapper input[type="checkbox"] + label::before {
+       /* ... styles for custom checkbox ... */
+     }
+  
+     .checkbox-group-wrapper input[type="checkbox"]:checked + label::before {
+       /* ... styles for checked checkbox ... */
+     }
   ```
+
+### 패널/컨테이너 구성 요소
+
+#### HTML 구조
+
+```HTML
+<fieldset class="panel-wrapper field-{PanelName} field-wrapper">
+  <legend for="{id}" class="field-label" data-visible="false">bannerComponent</legend>
+  <div class="{Type}-wrapper field-{Name} field-wrapper">
+    <label for="{FieldId}" class="field-label">First Name</label>
+    <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}">
+    <div class="field-description" aria-live="polite" id="{FieldId}-description">
+      Hint - First name should be minimum 3 characters and a maximum of 10 characters.
+    </div>
+  </div>
+</fieldset>
+```
+
+**HTML 구조의 예**
+
+```HTML
+<fieldset class="panel-wrapper field-login field-wrapper">
+  <legend for="login" class="field-label" data-visible="false">Login Information</legend>
+  <div class="text-wrapper field-username field-wrapper">
+    <label for="username" class="field-label">Username</label>
+    <input type="text" placeholder="Enter your username" maxlength="50" id="username" name="username">
+    <div class="field-description" aria-live="polite" id="username-description">
+      Please enter your username or email address.
+    </div>
+  </div>
+  <div class="password-wrapper field-password field-wrapper">
+    <label for="password" class="field-label">Password</label>
+    <input type="password" placeholder="Enter your password" maxlength="20" id="password" name="password">
+    <div class="field-description" aria-live="polite" id="password-description">
+      Your password must be at least 8 characters long.
+    </div>
+  </div>
+</fieldset>
+```
+
+* 필드 집합 요소는 클래스 panel-wrapper 및 패널 이름을 기반으로 하는 스타일을 위한 추가 클래스(필드 로그인)와 함께 패널 컨테이너 역할을 합니다.
+* 범례 요소(<legend>)는 &quot;로그인 정보&quot; 텍스트와 클래스 필드 레이블을 사용하여 패널 제목 역할을 합니다. data-visible=&quot;false&quot; 속성을 JavaScript와 함께 사용하여 제목의 가시성을 제어할 수 있습니다.
+* 필드 세트 내에서 다중 입니다.{Type}-wrapper 요소(.text-wrapper 및 .password-wrapper)는 패널 내의 개별 양식 필드를 나타냅니다.
+* 각 래퍼에는 앞의 예제와 유사한 레이블, 입력 필드 및 설명이 포함되어 있습니다.
+
+#### CSS 선택기 및 예제
+
+1. 패널 타깃팅:
+
+```CSS
+  /* Target the entire panel container */
+  .panel-wrapper {
+    /* Add your styles here (e.g., border, padding, background color) */
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+ }
+```
+
+* 다음 `.panel-wrapper` 선택기는 클래스 패널 래퍼로 모든 요소에 스타일을 지정하여 모든 패널에 일관된 모양을 만듭니다.
+
+1. 패널 제목 타깃팅:
+
+```CSS
+  /* Target the legend element (panel title) */
+  .panel-wrapper legend {
+    /* Add your styles here (e.g., font-weight, font-size) */
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd; /* Optional: create a separation line */
+  }
+```
+
+* 다음 `.panel-wrapper legend` 선택기는 패널 내의 범례 요소를 스타일링하여 제목을 시각적으로 두드러지게 합니다.
+
+
+1. 패널 내의 개별 필드 타겟팅:
+
+```CSS
+/* Target all form field wrappers within a panel */
+.panel-wrapper .{Type}-wrapper {
+  /* Add your styles here (e.g., margin) */
+  margin-bottom: 10px;
+}
+```
+
+* 다음 `.panel-wrapper .{Type}-wrapper` 선택기가 를 가진 모든 래퍼를 타겟팅합니다. `.{Type}-wrapper` 패널 내의 클래스를 사용하여 양식 필드 사이의 간격에 스타일을 지정할 수 있습니다.
+
+1. 특정 필드 타겟팅(선택 사항):
+
+```CSS
+  /* Target the username field wrapper */
+  .panel-wrapper .text-wrapper.field-username {
+    /* Add your styles here (specific to username field) */
+  }
+
+  /* Target the password field wrapper */
+  .panel-wrapper .password-wrapper.field-password {
+    /* Add your styles here (specific to password field) */
+  }
+```
+
+* 이러한 선택적 선택기를 사용하면 패널 내의 특정 필드 래퍼를 대상으로 사용자 이름 필드를 강조 표시하는 것과 같은 고유한 스타일을 지정할 수 있습니다.
+
+### 반복 가능 패널
+
+#### HTML 구조
+
+```HTML
+<fieldset class="panel-wrapper field-{PanelName} field-wrapper">
+  <legend for="{id}" class="field-label" data-visible="false">bannerComponent</legend>
+  <div class="{Type}-wrapper field-{Name} field-wrapper">
+    <label for="{FieldId}" class="field-label">First Name</label>
+    <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}">
+    <div class="field-description" aria-live="polite" id="{FieldId}-description">
+      Hint - First name should be minimum 3 characters and a maximum of 10 characters.
+    </div>
+</fieldset>
+```
+
+**HTML 구조의 예**
+
+```HTML
+<fieldset class="panel-wrapper field-contact field-wrapper" data-repeatable="true">
+  <legend for="contact-1" class="field-label" data-visible="false">Contact Information</legend>
+  <div class="text-wrapper field-name field-wrapper">
+    <label for="name-1" class="field-label">Name</label>
+    <input type="text" placeholder="Enter your name" maxlength="50" id="name-1" name="contacts[0].name">
+    <div class="field-description" aria-live="polite" id="name-1-description">
+      Please enter your full name.
+    </div>
+  </div>
+  <div class="email-wrapper field-email field-wrapper">
+    <label for="email-1" class="field-label">Email</label>
+    <input type="email" placeholder="Enter your email address" maxlength="100" id="email-1" name="contacts[0].email">
+    <div class="field-description" aria-live="polite" id="email-1-description">
+      Please enter a valid email address.
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="panel-wrapper field-contact field-wrapper" data-repeatable="true">
+  <legend for="contact-2" class="field-label" data-visible="false">Contact Information</legend>
+  <div class="text-wrapper field-name field-wrapper">
+    <label for="name-2" class="field-label">Name</label>
+    <input type="text" placeholder="Enter your name" maxlength="50" id="name-2" name="contacts[1].name">
+    <div class="field-description" aria-live="polite" id="name-2-description">
+      Please enter your full name.
+    </div>
+  </div>
+  <div class="email-wrapper field-email field-wrapper">
+    <label for="email-2" class="field-label">Email</label>
+    <input type="email" placeholder="Enter your email address" maxlength="100" id="email-2" name="contacts[1].email">
+    <div class="field-description" aria-live="polite" id="email-2-description">
+      Please enter a valid email address.
+    </div>
+  </div>
+</fieldset>
+```
+
+각 패널은 추가 속성이 있는 단일 패널 예제와 동일한 구조를 갖습니다.
+
+* data-repeatable=&quot;true&quot;: 이 속성은 JavaScript 또는 프레임워크를 사용하여 패널을 동적으로 반복할 수 있음을 나타냅니다.
+
+* 고유 ID 및 이름: 패널 내의 각 요소에는 패널의 색인을 기반으로 하는 고유 ID(예: name-1, email-1)와 이름 속성(예: name=&quot;contacts)이 있습니다[0].name&quot;) 형식으로 프로필 스크립트에서 참조할 수 있었습니다. 이렇게 하면 여러 패널이 제출될 때 적절한 데이터 수집이 가능합니다.
+
+
+
+#### CSS 선택기 및 예제
+
+* 반복 가능한 모든 패널 타기팅:
+
+```CSS
+  /* Target all panels with the repeatable attribute */
+  .panel-wrapper[data-repeatable="true"] {
+    /* Add your styles here (e.g., border, margin) */
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+```
+
+선택기는 반복할 수 있는 모든 패널에 스타일을 지정하여 일관된 모양과 느낌을 유지합니다.
+
+
+* 패널 내의 개별 필드 타겟팅:
+
+```CSS
+/* Target all form field wrappers within a repeatable panel */
+.panel-wrapper[data-repeatable="true"] .{Type}-wrapper {
+  /* Add your styles here (e.g., margin) */
+  margin-bottom: 10px;
+}
+```
+이 선택기는 필드 간의 일관된 간격을 유지하면서 반복 가능한 패널 내의 모든 필드 래퍼를 스타일링합니다.
+
+* 특정 필드 타겟팅(패널 내):
+
+```CSS
+/* Target the name field wrapper within the first panel */
+.panel-wrapper[data-repeatable="true"][data-index="0"] .text-wrapper.field-name {
+  /* Add your styles here (specific to first name field) */
+}
+
+/* Target all
+```
+
+### 파일 첨부
+
+
+```HTML
+<div class="file-wrapper field-{FileName} field-wrapper">
+  <legend for="{id}" class="field-label" data-visible="false"> File Attachment </legend>
+  <div class="file-drag-area">
+    <div class="file-dragIcon"></div>
+    <div class="file-dragText">Drag and Drop To Upload</div>
+    <button class="file-attachButton" type="button">Attach</button>
+    <input type="file" accept="audio/*, video/*, image/*, text/*, application/pdf" id="{id}" name="{FileName}" autocomplete="off" multiple="" required="required">
+  </div>
+  <div class="files-list">
+    <div data-index="0" class="file-description">
+      <span class="file-description-name">ClaimForm.pdf</span>
+      <span class="file-description-size">26 kb</span>
+      <button class="file-description-remove" type="button"></button>
+    </div>
+  </div>
+</div>
+```
+
+**HTML 구조의 예**
+
+
+```HTML
+<div class="file-wrapper field-claim_form field-wrapper">
+  <legend for="claim_form" class="field-label" data-visible="false">File Attachment</legend>
+  <div class="file-drag-area">
+    <div class="file-dragIcon"></div>
+    <div class="file-dragText">Drag and Drop To Upload</div>
+    <button class="file-attachButton" type="button">Attach</button>
+  </div>
+  <input type="file" accept="audio/*, video/*, image/*, text/*, application/pdf" id="claim_form"
+         name="claim_form" autocomplete="off" multiple="" required="required" data-max-file-size="2MB">
+  <div class="files-list">
+    </div>
+</div>
+```
+
+* 클래스 속성은 첨부 파일(claim_form)에 대해 제공된 이름을 사용합니다.
+* 입력 요소의 ID 및 이름 속성은 파일 첨부 파일 이름(claim_form)과 일치합니다.
+* 처음에 파일 목록 섹션이 비어 있습니다. 파일이 업로드되면 JavaScript로 동적으로 채워집니다.
+
+
+**CSS 선택기 및 예:**
+
+* 전체 파일 첨부 구성 요소 타겟팅:
+
+```CSS
+/* Target the entire file attachment component */
+.file-wrapper {
+  /* Add your styles here (e.g., border, padding) */
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+```
+
+이 선택기는 범례, 드래그 영역, 입력 필드 및 목록을 포함한 전체 파일 첨부 구성 요소의 스타일을 지정합니다.
+
+* 특정 요소 타깃팅:
+
+```CSS
+/* Target the drag and drop area */
+.file-wrapper .file-drag-area {
+  /* Add your styles here (e.g., background color, border) */
+  background-color: #f0f0f0;
+  border: 1px dashed #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Target the file input element */
+.file-wrapper input[type="file"] {
+  /* Add your styles here (e.g., hide the default input) */
+  display: none;
+}
+
+/* Target individual file descriptions within the list (populated dynamically) */
+.file-wrapper .files-list .file-description {
+  /* Add your styles here (e.g., margin, display) */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+/* Target the file name within the description */
+.file-wrapper .files-list .file-description .file-description-name {
+  /* Add your styles here (e.g., font-weight) */
+  font-weight: bold;
+}
+
+/* Target the file size within the description */
+.file-wrapper .files-list .file-description .file-description-size {
+  /* Add your styles here (e.g., font-size) */
+  font-size: 0.8em;
+}
+
+/* Target the remove button within the description */
+.file-wrapper .files-list .file-description .file-description-remove {
+  /* Add your styles here (e.g., background color, hover effect) */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+```
+
+이러한 선택기를 사용하면 파일 첨부 구성 요소의 여러 부분에 대해 개별적으로 스타일을 지정할 수 있습니다. 디자인 환경 설정에 맞게 스타일을 조정할 수 있습니다.
 
 
 ## 구성 요소 스타일 지정
@@ -362,25 +695,25 @@ CSS 선택기를 사용하여 특정 필드 유형을 타겟팅하고 스타일�
 **HTML 구조의 예**
 
 ```HTML
-<div class="form-text-wrapper form-name field-wrapper" data-required="true">
+<div class="text-wrapper field-name field-wrapper" data-required="true">
   <label for="name" class="field-label">Name</label>
   <input type="text" placeholder="Enter your name" maxlength="50" id="name" name="name">
 </div>
 
-<div class="form-number-wrapper form-age field-wrapper" data-required="true">
+<div class="number-wrapper field-age field-wrapper" data-required="true">
   <label for="age" class="field-label">Age</label>
   <input type="number" placeholder="Enter your age" id="age" name="age">
 </div>
 
-<div class="form-email-wrapper form-email field-wrapper" data-required="true">
+<div class="email-wrapper field-email field-wrapper" data-required="true">
   <label for="email" class="field-label">Email Address</label>
   <input type="email" placeholder="Enter your email" id="email" name="email">
 </div>
 ```
 
 * 각 필드는 여러 클래스가 있는 `div` 요소로 래핑됩니다.
-   * `form-{Type}-wrapper`: 필드 유형을 식별합니다. (예: `form-text-wrapper`, `form-number-wrapper`, `form-email-wrapper`)
-   * `form-{Name}`: 이름으로 필드를 식별합니다. (예: `form-name`, `form-age`, `form-email`)
+   * `{Type}-wrapper`: 필드 유형을 식별합니다. (예: `form-text-wrapper`, `form-number-wrapper`, `form-email-wrapper`)
+   * `field-{Name}`: 이름으로 필드를 식별합니다. (예: `form-name`, `form-age`, `form-email`)
    * `field-wrapper`: 모든 필드 래퍼에 대한 일반 클래스입니다.
 * `data-required` 속성은 필드가 필수인지 선택 사항인지를 나타냅니다.
 * 각 필드에는 해당 레이블, 입력 요소 및 자리 표시자 및 설명과 같은 잠재적인 추가 요소가 포함되어 있습니다.
@@ -389,12 +722,12 @@ CSS 선택기를 사용하여 특정 필드 유형을 타겟팅하고 스타일�
 
 ```CSS
 /* Target all text input fields */
-.form-text-wrapper input {
+.text-wrapper input {
   /* Add your styles here */
 }
 
 /* Target all number input fields */
-.form-number-wrapper input {
+.number-wrapper input {
   /* Add your styles here */
   letter-spacing: 2px; /* Example for adding letter spacing to all number fields */
 }
@@ -407,7 +740,7 @@ CSS 선택기를 사용하여 특정 필드 유형을 타겟팅하고 스타일�
 **HTML 구조의 예**
 
 ```HTML
-<div class="form-number-wrapper form-otp field-wrapper" data-required="true">
+<div class="number-wrapper field-otp field-wrapper" data-required="true">
   <label for="otp" class="field-label">OTP</label>
   <input type="number" placeholder="Enter your OTP" maxlength="6" id="otp" name="otp">
 </div>
@@ -416,11 +749,10 @@ CSS 선택기를 사용하여 특정 필드 유형을 타겟팅하고 스타일�
 **CSS 선택기의 예**
 
 ```CSS
-.form-otp input {
+.field-otp input {
    letter-spacing: 2px
 }
 ```
 
-이 CSS는 `form-otp` 클래스가 있는 요소 내에 위치한 모든 입력 요소를 타겟팅합니다. 양식의 HTML 구조는 적응형 양식 블록의 규칙을 따르며, &quot;form-otp&quot; 클래스로 표시된 컨테이너가 &quot;otp&quot; 이름의 필드를 보유하고 있음을 의미합니다.
-
+이 CSS는 `field-otp` 클래스가 있는 요소 내에 위치한 모든 입력 요소를 타겟팅합니다. 양식의 HTML 구조는 적응형 양식 블록의 규칙을 따르며, &quot;field-otp&quot; 클래스로 표시된 컨테이너가 &quot;otp&quot;라는 이름의 필드를 보유하고 있음을 의미합니다.
 

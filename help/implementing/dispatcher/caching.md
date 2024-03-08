@@ -3,7 +3,7 @@ title: AEM as a Cloud Service에서 캐싱
 description: AEM as a Cloud Service 캐싱의 기본 사항에 대해 알아봅니다.
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 28537409c5974ff8ade30207f16cc62b45c47616
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '2894'
 ht-degree: 1%
@@ -301,7 +301,7 @@ Adobe은 표준 캐시 헤더를 사용하여 콘텐츠 전달 수명 주기를 
 <table style="table-layout:auto">
  <tbody>
   <tr>
-    <th>N/A</th>
+    <th>해당 사항 없음</th>
     <th>계층 가용성</th>
     <th>중복 제거 </th>
     <th>보증 </th>
@@ -434,7 +434,7 @@ public class InvalidatedHandler implements EventHandler {
 
         String distributionType = (String) event.getProperty(DISTRIBUTION_TYPE);
 
-        if (INVALIDATE.name().equals(distributionType)) {
+        if (INVALIDATE.name().equals (distributionType)) {
             boolean isLeader = discoveryService.getTopology().getLocalInstance().isLeader();
             // process the OSGi event on the leader author instance
             if (isLeader) {
@@ -472,11 +472,11 @@ public class InvalidatedHandler implements EventHandler {
 
 ```
 String[] paths = …
-ReplicationOptions options = new ReplicationOptions();
-options.setSynchronous(true);
+ReplicationOptions options = new ReplicationOptions ();
+options.setSynchronous (true);
 options.setFilter( new AgentFilter {
   public boolean isIncluded (Agent agent) {
-   return agent.getId().equals("flush");
+   return agent.getId().equals ("flush");
   }
 });
 

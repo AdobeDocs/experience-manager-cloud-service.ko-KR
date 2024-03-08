@@ -2,13 +2,13 @@
 title: Edge Delivery Services를 사용한 AEM 작성을 위한 개발자 시작 안내서
 description: 이 안내서는 콘텐츠 작성을 위한 Edge Delivery Services 및 Universal Editor를 사용하여 새로운 Adobe Experience Manager 사이트를 시작하고 실행하는 데 도움이 됩니다.
 feature: Edge Delivery Services
-source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
-workflow-type: ht
-source-wordcount: '989'
-ht-degree: 100%
+exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+workflow-type: tm+mt
+source-wordcount: '988'
+ht-degree: 99%
 
 ---
-
 
 # Edge Delivery Services로 AEM 작성 {#edge-dev-getting-started}
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 이 안내서를 시작하기 전에 다음을 포함한 Edge Delivery Services의 기본 사항을 숙지하고 액세스할 수 있어야 합니다.
 
-* [Edge Delivery Service 튜토리얼](/help/edge/developer/tutorial.md)이 완료되었습니다.
+* 다음을 완료했습니다. [Edge Delivery Servicestutorial.](/help/edge/developer/tutorial.md)
 * [AEM Cloud Service 샌드박스](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)에 액세스할 수 있습니다.
 * [동일한 샌드박스 환경에서 Universal Editor를 활성화](/help/implementing/universal-editor/getting-started.md)했습니다.
 

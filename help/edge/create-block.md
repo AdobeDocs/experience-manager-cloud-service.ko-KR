@@ -1,13 +1,13 @@
 ---
 title: Universal Editor에 사용하도록 구성된 블록 만들기
 description: Edge Delivery Services 프로젝트를 통해 AEM 작성 시 Universal Editor에 사용하도록 구성된 블록을 만드는 방법에 대해 알아봅니다.
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: ht
-source-wordcount: '1205'
-ht-degree: 100%
+exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+workflow-type: tm+mt
+source-wordcount: '1204'
+ht-degree: 99%
 
 ---
-
 
 # Universal Editor에 사용하도록 구성된 블록 만들기 {#create-block}
 
@@ -21,7 +21,7 @@ Edge Delivery Services 프로젝트를 통해 AEM 작성 시 Universal Editor에
 
 이 안내서에는 Edge Delivery Services 프로젝트 및 Universal Editor를 사용한 AEM 작성에 대한 기존 지식이 필요합니다. 이 안내서를 시작하기 전에 Edge Delivery Services에 액세스하고 다음을 포함한 기본 사항을 숙지해야 합니다.
 
-* [Edge Delivery Service 튜토리얼](/help/edge/developer/tutorial.md)이 완료되었습니다.
+* 다음을 완료했습니다. [Edge Delivery Servicestutorial.](/help/edge/developer/tutorial.md)
 * [AEM Cloud Service 샌드박스](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)에 액세스할 수 있습니다.
 * [동일한 샌드박스 환경에서 Universal Editor를 활성화](/help/implementing/universal-editor/getting-started.md)했습니다.
 * [Edge Delivery Services를 사용한 AEM 작성을 위한 개발자 시작 안내서](/help/edge/edge-dev-getting-started.md)의 안내서를 완료하셨습니다.

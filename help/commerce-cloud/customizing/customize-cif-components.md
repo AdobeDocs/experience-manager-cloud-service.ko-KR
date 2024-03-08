@@ -11,7 +11,7 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: 05e4adb0d7ada0f7cea98858229484bf8cca0d16
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '2298'
 ht-degree: 1%
@@ -20,11 +20,11 @@ ht-degree: 1%
 
 # AEM CIF 핵심 구성 요소 사용자 지정 {#customize-cif-components}
 
-CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia)는 [CIF 코어 구성 요소를](https://github.com/adobe/aem-core-cif-components) 사용하기 [위한 참조 코드 베이스입니다. 이 튜토리얼에서는 제품 티저](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) 구성 요소를 더 확장[하여 Adobe Systems Commerce의 사용자 지정 속성을 표시합니다. 또한 AEM 및 Adobe Systems Commerce 간의 GraphQL 통합 및 CIF 코어 구성 요소에서 제공하는 확장 후크에 대해서도 자세히 알아봅니다.
+다음 [CIF Venia 프로젝트](https://github.com/adobe/aem-cif-guides-venia) 는 사용을 위한 참조 코드 베이스입니다. [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components). 이 자습서에서는 [제품 티저](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) Adobe Commerce에서 사용자 지정 특성을 표시할 구성 요소입니다. 또한 AEM과 Adobe Commerce 간의 GraphQL 통합 및 CIF 핵심 구성 요소에서 제공하는 확장 후크에 대해서도 자세히 알아봅니다.
 
 >[!TIP]
 >
-> [고유한 상거래 구현을 시작할 때 AEM 프로젝트 전형](https://github.com/adobe/aem-project-archetype)을 사용하십시오.
+> 사용 [AEM 프로젝트 원형](https://github.com/adobe/aem-project-archetype) 고유한 상거래 구현을 시작할 때.
 
 ## 빌드할 내용
 
@@ -34,17 +34,17 @@ Venia 브랜드는 최근 지속 가능한 재료를 사용하여 일부 제품�
 
 ## 사전 요구 사항 {#prerequisites}
 
-이 튜토리얼 완료에는 로컬 개발 환경이 필요합니다. 이 환경에는 Adobe Systems Commerce 인스턴스에 구성 및 연결된 실행 중인 AEM 인스턴스가 포함되어 있습니다. AEM as a Cloud Service SDK](../develop.md)로 로컬 개발을 설정하기 위한 [요구 사항 및 단계를 검토합니다. 튜토리얼을 완전히 팔로우하려면 Adobe Systems Commerce에서 제품에](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) 속성을 추가할 [수 있는 권한이 필요합니다.
+이 자습서를 완료하려면 로컬 개발 환경이 필요합니다. 이 환경에는 Adobe Commerce 인스턴스에 구성 및 연결된 AEM의 실행 중인 인스턴스가 포함되어 있습니다. 에 대한 요구 사항 및 단계 검토 [AEM as a Cloud Service SDK를 사용하여 로컬 개발 설정](../develop.md). 자습서를 완전히 따르려면 을 추가할 권한이 필요합니다 [제품에 대한 속성](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) Adobe Commerce.
 
-또한 코드 샘플 및 자습서를 실행하려면 GraphiQL 또는 브라우저 확장과 같은 [GraphQL](https://github.com/graphql/graphiql) IDE가 필요합니다. 브라우저 확장을 설치하는 경우 요청 헤더를 설정할 수 있는지 확인하십시오. 구글 크롬(Google Chrome) _에서 알테어 GraphQL 클라이언트(Altair GraphQL Client_ )는 이 작업을 수행할 수 있는 확장 프로그램 중 하나입니다.
+다음과 같은 GraphQL IDE도 필요합니다. [GraphiQL](https://github.com/graphql/graphiql) 또는 코드 샘플 및 튜토리얼을 실행하는 브라우저 확장입니다. 브라우저 확장을 설치하는 경우 요청 헤더를 설정할 수 있는지 확인합니다. Google Chrome에서 _알테어 GraphQL 클라이언트_ 는 작업을 수행할 수 있는 하나의 확장입니다.
 
 ## Venia 프로젝트 복제 {#clone-venia-project}
 
-[Venia 프로젝트를](https://github.com/adobe/aem-cif-guides-venia) 복제 한 다음 기본 스타일을 재정의합니다.
+복제 [베니아 프로젝트](https://github.com/adobe/aem-cif-guides-venia)기본 스타일을 재정의합니다.
 
 >[!NOTE]
 >
-> **기존 프로젝트** (CIF가 포함된 AEM Project Archetype 기반)를 사용하고 이 섹션을 건너뛰는 것이 무료 좋습니다.
+> **기존 프로젝트를 마음껏 사용** (CIF이 포함된 AEM Project Archetype 기반) 이 섹션을 건너뜁니다.
 
 1. 프로젝트를 복제할 수 있도록 다음 git 명령을 실행합니다.
 
@@ -104,19 +104,19 @@ AEM에 표시되는 제품 및 제품 데이터는 Adobe Commerce에 저장됩�
    ![Valeria 제품 검색](../assets/customize-cif-components/search-valeria-product.png)
 
 1. 제품 보기에서 **속성 추가** > **새 속성 만들기**.
-1. 다음 값으로 속성&#x200B;**새로 만들기 양식을 작성**&#x200B;합니다(다른 값은 기본 설정 그대로 두기).
+1. 다음을 입력하십시오. **새 속성** 다음 값이 있는 양식(다른 값에 대한 기본 설정 남김)
 
    | 필드 집합 | 필드 레이블 | 값 |
    | ----------------------------- | ------------------ | ---------------- |
-   | 속성 속성 | 속성 라벨링 | **환경 친화적 인** |
-   | 속성 속성 | 카탈로그 입력 유형 | **예/아니오** |
+   | 속성 속성 | 속성 레이블 | **환경 친화적** |
+   | 속성 속성 | 카탈로그 입력 유형 | **예/아니요** |
    | 고급 속성 속성 | 속성 코드 | **환경 친화적** |
 
    ![새 속성 양식](../assets/customize-cif-components/attribute-new-form.png)
 
    클릭 **속성 저장** 완료 시.
 
-1. 제품 아래쪽으로 스크롤하여 를 확장합니다. **속성** 제목. 새 항목을 볼 수 있습니다. **환경 친화적** 필드. 토글을 예&#x200B;**로 전환합니다**.
+1. 제품 아래쪽으로 스크롤하여 를 확장합니다. **속성** 제목. 새 항목을 볼 수 있습니다. **환경 친화적** 필드. 토글을 다음으로 전환 **예**.
 
    ![예로 전환](../assets/customize-cif-components/eco-friendly-toggle-yes.png)
 
@@ -139,14 +139,14 @@ AEM에 표시되는 제품 및 제품 데이터는 Adobe Commerce에 저장됩�
 
 AEM 코드로 이동하기 전에 다음을 살펴보는 것이 좋습니다. [GraphQL 개요](https://devdocs.magento.com/guides/v2.4/graphql/) GraphQL IDE 사용. AEM과의 Adobe Commerce 통합은 주로 일련의 GraphQL 쿼리를 통해 수행됩니다. GraphQL 쿼리를 이해하고 수정하는 것은 CIF 핵심 구성 요소를 확장할 수 있는 주요 방법 중 하나입니다.
 
-다음, GraphQL IDE를 사용하여 속성이 제품 속성 집합에 추가되었는지 `eco_friendly` 확인합니다. 이 튜토리얼 스크린샷은 알테어 GraphQL 클라이언트&#x200B;_구글 크롬 확장 프로그램을_&#x200B;사용하고 있습니다.
+그런 다음 GraphQL IDE를 사용하여 `eco_friendly` 제품 속성 집합에 속성이 추가되었습니다. 이 자습서의 스크린샷은 _알테어 GraphQL 클라이언트_ Google Chrome 확장 프로그램.
 
-1. GraphQL IDE를 열고 IDE 또는 확장 프로그램의 URL 표시줄에 URL `http://<commerce-server>/graphql` 을 입력합니다.
-2. [이전 연습에서 사용된 제품의 SKU **위치는 다음**&#x200B;제품 쿼리를](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) `YOUR_SKU` 추가합니다.
+1. GraphQL IDE를 열고 URL을 입력합니다 `http://<commerce-server>/graphql` IDE 또는 확장의 URL 표시줄에서 을 클릭합니다.
+2. 다음 추가 [products 쿼리](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) 위치 `YOUR_SKU` 은(는) **SKU** 이전 연습에서 사용된 제품:
 
    ```json
      {
-       products(
+       products (
        filter: { sku: { eq: "YOUR_SKU" } }
        ) {
            items {
@@ -158,7 +158,7 @@ AEM 코드로 이동하기 전에 다음을 살펴보는 것이 좋습니다. [G
    }
    ```
 
-3. 쿼리를 실행하면 다음과 같은 좋아요 응답을 받게 됩니다.
+3. 쿼리를 실행하면 다음과 같은 응답을 받게 됩니다.
 
    ```json
    {
@@ -186,7 +186,7 @@ AEM 코드로 이동하기 전에 다음을 살펴보는 것이 좋습니다. [G
 
 ## 제품 티저의 슬링 모델 업데이트 {#updating-sling-model-product-teaser}
 
-그런 다음 Sling 모델을 구현하여 제품 티저의 비즈니스 논리를 확장합니다. [Sling 모델은](https://sling.apache.org/documentation/bundles/models.html) 구성 요소에 필요한 구현 비즈니스 로직 주석 &quot;POJO&quot;(Plain Old Java™ Objects)로 구동됩니다. Sling 모델은 구성 요소의 일부로 HTL 스크립트와 함께 사용됩니다. 다음 [Sling 모델의 전달 패턴](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) 따라서 기존 제품 티저 모델의 일부를 확장할 수 있습니다.
+그런 다음 Sling 모델을 구현하여 제품 티저의 비즈니스 논리를 확장합니다. [Sling 모델](https://sling.apache.org/documentation/bundles/models.html) 구성 요소에 필요한 비즈니스 논리를 구현하는 주석 기반의 &quot;POJO&quot;(일반 이전 Java™ 개체)입니다. 슬링 모델은 HTL 스크립트와 함께 구성 요소의 일부로 사용됩니다. 다음 [Sling 모델의 전달 패턴](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) 따라서 기존 제품 티저 모델의 일부를 확장할 수 있습니다.
 
 Sling 모델은 Java™으로 구현되며 는에서 찾을 수 있습니다. **코어** 생성된 프로젝트의 모듈입니다.
 
@@ -289,9 +289,9 @@ Sling 모델은 Java™으로 구현되며 는에서 찾을 수 있습니다. **
 
    >[!NOTE]
    >
-   > 이 `createdAt()` 메서드는 제품 인터페이스](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java)의 [일부로 구현되었습니다. 일반적으로 발견되는 대부분의 스키마 속성이 구현되었으므로 진정한 사용자 지정 속성에만 사용하십시오 `addCustomSimpleField` .
+   > 다음 `createdAt()` 메서드는 의 일부로 구현되었습니다. [제품 인터페이스](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java). 일반적으로 발견되는 대부분의 스키마 속성이 구현되었으므로 `addCustomSimpleField` 를 참조하십시오.
 
-1. Java™ 코드를 디버그 할 수 있도록 로거를 추가하십시오.
+1. Java™ 코드를 디버깅할 수 있도록 로거를 추가합니다.
 
    ```java
    import org.slf4j.Logger;
@@ -303,7 +303,7 @@ Sling 모델은 Java™으로 구현되며 는에서 찾을 수 있습니다. **
    private static final Logger LOGGER = LoggerFactory.getLogger(MyProductTeaserImpl.class);
    ```
 
-1. 다음, 메소드를 `isEcoFriendly()` 구현하십시오 :
+1. 그런 다음 를 구현합니다. `isEcoFriendly()` 방법:
 
    ```java
    @Override
@@ -312,7 +312,7 @@ Sling 모델은 Java™으로 구현되며 는에서 찾을 수 있습니다. **
        Integer ecoFriendlyValue;
        try {
            ecoFriendlyValue = productRetriever.fetchProduct().getAsInteger(ECO_FRIENDLY_ATTRIBUTE);
-           if(ecoFriendlyValue != null && ecoFriendlyValue.equals(Integer.valueOf(1))) {
+           if(ecoFriendlyValue != null && ecoFriendlyValue.equals (Integer.valueOf(1))) {
                LOGGER.info("*** Product is Eco Friendly**");
                return true;
            }
@@ -324,21 +324,21 @@ Sling 모델은 Java™으로 구현되며 는에서 찾을 수 있습니다. **
    }
    ```
 
-   위의 방법에서는제품 `productRetriever` 을가져 오는 데 사용되고 `getAsInteger()` 이 방법은 속성의 `eco_friendly` 값을 가져 오는 데 사용됩니다. 이전에 실행한 GraphQL 쿼리를 기반으로 속성이 &quot;Yes **&quot;**&#x200B;로 설정될 때 `eco_friendly` 예상되는 값이 실제로 1 **의 정수**&#x200B;임을 알 수 있습니다.
+   위의 메서드에서 `productRetriever` 제품 및 을 가져오는 데 사용됩니다. `getAsInteger()` 메서드는 의 값을 가져오는 데 사용됩니다 `eco_friendly` 특성. 이전에 실행한 GraphQL 쿼리에 따르면, `eco_friendly` 속성이 &quot;로 설정되어 있습니다.**예**&quot;은(는) 실제로 의 정수입니다. **1**.
 
-   이제 Sling 모델이 업데이트되었으므로 Sling 모델을 기반으로 환경 친화적&#x200B;**표시기**&#x200B;를 실제로 표시하도록 구성 요소 마크업을 업데이트해야 합니다.
+   슬링 모델 이 업데이트되었으므로 의 표시기를 실제로 표시하려면 구성 요소 마크업을 업데이트해야 합니다. **환경 친화적** Sling 모델을 기반으로 합니다.
 
-## 제품 티저의 마크업 사용자 지정 {#customize-markup-product-teaser}
+## 제품 티저의 마크업 맞춤화 {#customize-markup-product-teaser}
 
-AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크업을 수정하는 것입니다. 이 편집은 구성 요소가 마크업을 렌더링하는 데 사용하는 HTL 스크립트를](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) 재정의[하여 수행됩니다. HTL(HTML 템플릿 언어)은 AEM 구성 요소가 작성된 컨텐츠를 기반으로 마크업을 동적으로 렌더링하는 데 사용하는 경량 템플릿 언어로, 구성 요소를 재사용할 수 있습니다. 예를 들어 제품 티저를 여러 번 재사용하여 다른 제품을 표시할 수 있습니다.
+AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크업을 수정하는 것입니다. 이 편집은 다음을 재정의하여 수행됩니다. [HTL 스크립트](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) 구성 요소가 마크업을 렌더링하는 데 사용하는 경우입니다. HTML 템플릿 언어(HTL)는 AEM 구성 요소가 작성된 콘텐츠를 기반으로 마크업을 동적으로 렌더링하는 데 사용하는 간단한 템플릿 언어이므로 구성 요소를 재사용할 수 있습니다. 예를 들어 제품 티저를 반복하여 재사용하여 다른 제품을 표시할 수 있습니다.
 
-이 경우 티저 위에 배너를 렌더링하여 제품이 사용자 지정 속성을 기반으로 &quot;친환경적&quot;임을 나타내려고 합니다. 구성 요소의 마크업을](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) 사용자 지정하기 위한 [디자인 패턴은 AEM CIF 코어 구성 요소뿐만 아니라 모든 AEM 구성 요소의 표준입니다.
+이 경우 티저의 맨 위에 배너를 렌더링하여 사용자 지정 속성에 따라 제품이 &quot;친환경적&quot;임을 표시하려고 합니다. 의 디자인 패턴 [마크업 사용자 정의](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) 구성 요소 는 AEM CIF 핵심 구성 요소뿐만 아니라 모든 AEM 구성 요소에 대해 표준입니다.
 
 >[!NOTE]
 >
-> CIF 제품 및 카테고리 선택기를 사용하여 구성 요소를 사용자 지정하는 경우 이 제품 티저 또는 CIF 페이지 구성 요소를 좋아요 표시하고 구성 요소 대화 상자에 필요한 `cif.shell.picker` clientlib을 포함해야 합니다. 자세한 내용은 CIF 제품 및 카테고리 선택기](use-cif-pickers.md) 사용을 참조하십시오[.
+> 이 제품 티저 또는 CIF 페이지 구성 요소와 같은 CIF 제품 및 카테고리 선택기를 사용하여 구성 요소를 사용자 지정하는 경우 필수 요소를 포함해야 합니다 `cif.shell.picker` 구성 요소 대화 상자의 clientlib. 다음을 참조하십시오 [CIF 제품 및 범주 선택기 사용](use-cif-pickers.md) 을 참조하십시오.
 
-1. IDE에서 모듈 탐색 및 확장하고 폴더 계층 구조를 다음과 같이 확장 `ui.apps` 합니다. 파일을 검사합니다 `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` `.content.xml` .
+1. IDE에서 를 탐색하고 확장합니다. `ui.apps` 모듈을 만들고 폴더 계층 구조를 확장합니다. `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` 및 검사 `.content.xml` 파일.
 
    ![제품 티저 ui.apps](../assets/customize-cif-components/product-teaser-ui-apps-ide.png)
 
@@ -352,7 +352,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
        componentGroup="Venia - Commerce"/>
    ```
 
-   위의 구성 요소 정의는 프로젝트의 제품 티저 구성 요소를 위한 것입니다. 속성 `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`에 주목하십시오. 이 속성 은 프록시 구성 요소를](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components) 만드는 [예입니다. AEM CIF 코어 구성 요소에서 제품 티저 HTL 스크립트를 복사하여 붙여넣는 대신 를 `sling:resourceSuperType` 사용하여 모든 기능을 상속할 수 있습니다.
+   위의 구성 요소 정의는 프로젝트의 제품 티저 구성 요소에 대한 것입니다. 속성에 주목합니다 `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. 이 속성은 다음을 만드는 예제입니다. [프록시 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). AEM CIF 핵심 구성 요소에서 제품 티저 HTL 스크립트를 복사하여 붙여넣는 대신 `sling:resourceSuperType` 모든 기능을 상속합니다.
 
 1. 파일 열기 `productteaser.html`. 이 파일은 `productteaser.html` 파일 위치: [CIF 제품 티저](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html).
 
@@ -411,15 +411,15 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
 
    이 선은 슬링 모델이 제대로 배포되고 올바른 구성 요소에 매핑되었음을 나타냅니다.
 
-1. **제품 티저가 추가된 http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html) 의 [Venia Home 페이지** 새로 고침합니다.
+1. 로 새로 고침 **Venia 홈 페이지** 위치: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html) 제품 티저가 추가된 위치입니다.
 
-   ![Eco Friendly 메시지 표시](../assets/customize-cif-components/eco-friendly-text-displayed.png)
+   ![친환경 메시지 표시됨](../assets/customize-cif-components/eco-friendly-text-displayed.png)
 
-   제품 `eco_friendly` 속성이 예&#x200B;**로 설정된**&#x200B;경우 페이지 페이지에 &quot;Eco Friendly&quot;라는 텍스트가 표시되어야 합니다. 다른 제품으로 전환하여 동작 변화를 확인하십시오.
+   제품에 다음이 있는 경우 `eco_friendly` 속성이 로 설정됨 **예**, 페이지에 &quot;환경 친화적&quot;이라는 텍스트가 표시됩니다. 동작 변경을 확인하려면 다른 제품으로 전환해 보십시오.
 
-1. 다음 AEM `error.log` 을 열어 추가된 로그 구문을 확인합니다. 그만큼 `error.log` 에 있습니다 `<AEM SDK Install Location>/crx-quickstart/logs/error.log`.
+1. 다음 AEM 열기 `error.log` 추가된 로그 문을 확인합니다. 다음 `error.log` 다음 위치에 있음 `<AEM SDK Install Location>/crx-quickstart/logs/error.log`.
 
-   AEM 로그를 Search하여 Sling 모델에 추가된 로그 구문을 확인합니다.
+   AEM 로그를 검색하여 Sling 모델에 추가된 로그 문을 확인합니다.
 
    ```plain
    2020-08-28 12:57:03.114 INFO [com.venia.core.models.commerce.MyProductTeaserImpl] *** Product is Eco Friendly**
@@ -436,7 +436,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
 
 이 시점에서 을(를) 표시할 시기에 대한 논리입니다 **환경 친화적** 배지가 작동하지만 일반 텍스트에서 일부 스타일을 사용할 수 있습니다. 그런 다음 아이콘과 스타일을 `ui.frontend` 구현을 완료하는 모듈입니다.
 
-1. 다운로드 [eco_friendly.svg](../assets/customize-cif-components/eco_friendly.svg) 파일. 이 파일은 친환경&#x200B;**배지로**&#x200B;사용됩니다.
+1. 다운로드 [eco_friendly.svg](../assets/customize-cif-components/eco_friendly.svg) 파일. 이 파일은 다음으로 사용됩니다. **환경 친화적** 배지.
 1. IDE로 돌아가서 `ui.frontend` 폴더를 삭제합니다.
 1. 추가 `eco_friendly.svg` 에 파일 `ui.frontend/src/main/resources/images` 폴더:
 
@@ -498,7 +498,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
 
 - [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 - [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)
-- [AEM CIF 코어 구성 요소 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/customize-cif-components.html)
+- [AEM CIF 핵심 구성 요소 맞춤화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/customize-cif-components.html)
 - [핵심 구성 요소 사용자 정의](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
-- [AEM Sites 시작](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)
-- [CIF 제품 및 카테고리 선택기 사용](use-cif-pickers.md)
+- [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)
+- [CIF 제품 및 범주 선택기 사용](use-cif-pickers.md)

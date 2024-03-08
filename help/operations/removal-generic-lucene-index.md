@@ -2,7 +2,7 @@
 title: 일반 Lucene 인덱스 제거
 description: 일반 Lucene 색인의 제거 계획과 영향을 받는 방법에 대해 알아봅니다.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '1345'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Adobe이 &quot;일반 Lucene&quot; 인덱스(`/oak:index/lucene-*`)을 Adobe Exp
 
 AEM에서 전체 텍스트 쿼리는 다음 함수를 사용하는 쿼리입니다.
 
-* `jcr:contains()` JCR XPATH에서
+* `jcr:contains ()` JCR XPATH에서
 * `CONTAINS` JCR-SQL2에서
 
 이러한 쿼리는 색인을 사용하지 않으면 결과를 반환할 수 없습니다. 경로 또는 속성 제한만 포함하는 쿼리와 달리, 인덱스를 찾을 수 없는 전체 텍스트 제한(따라서 순회가 수행됨)이 포함된 쿼리는 항상 0개의 결과를 반환합니다.
@@ -27,7 +27,7 @@ AEM에서 전체 텍스트 쿼리는 다음 함수를 사용하는 쿼리입니�
 AEM 6.5에서 일반 Lucene 색인은 더 이상 사용되지 않는 것으로 표시되어 이후 버전에서 제거됨을 나타냅니다. 이후 다음 로그 스니펫에서 설명한 대로 색인이 사용되면 WARN이 기록됩니다.
 
 ```text
-org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'search term') and isdescendantnode(a, '/content/mysite') /* xpath: /jcr:root/content/mysite//*[jcr:contains(.,"search term")] */ fullText="search" "term", path=/content/mysite//*). Change the query or the index definitions.
+org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains (*, 'search term') and isdescendantnode(a, '/content/mysite') /* xpath: /jcr:root/content/mysite//*[jcr:contains (.,"search term")] */ fullText="search" "term", path=/content/mysite//*). Change the query or the index definitions.
 ```
 
 최근 AEM 버전에서는 매우 적은 수의 기능을 지원하는 데 일반 Lucene 색인이 사용되었습니다. 다른 색인을 사용하도록 다시 작업하거나 이 색인에 대한 종속성을 제거하기 위해 수정합니다.
@@ -35,7 +35,7 @@ org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is
 예를 들어 다음 예제와 같은 참조 조회 쿼리는 이제 의 인덱스를 사용해야 합니다. `/oak:index/pathreference`, 색인만 `String` jcr 경로를 찾는 정규 표현식과 일치하는 속성 값입니다.
 
 ```text
-//*[jcr:contains(., '"/content/dam/mysite"')]
+//*[jcr:contains (., '"/content/dam/mysite"')]
 ```
 
 대규모 고객 데이터 볼륨을 지원하기 위해 Adobe은 더 이상 새로운 AEM as a Cloud Service 환경에서 일반 Lucene 인덱스를 만들지 않습니다. 또한 Adobe은 기존 저장소에서 인덱스를 제거합니다. [타임라인 보기](#timeline) 자세한 내용은 이 문서 끝에 있습니다.
@@ -49,7 +49,7 @@ Adobe은 이미 다음을 통해 색인 비용을 조정했습니다. `costPerEn
 다른 전체 텍스트 인덱스로 쿼리를 처리할 수 없는 경우 일반 Lucene 인덱스가 현재 대체 항목으로 사용됩니다. 더 이상 사용되지 않는 이 색인을 사용하면 다음과 유사한 메시지가 WARN 수준에서 기록됩니다.
 
 ```text
-org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*). Change the query or the index definitions.
+org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains (*, 'test') /* xpath: //*[jcr:contains (.,"test")] */ fullText="test", path=*). Change the query or the index definitions.
 ```
 
 경우에 따라 Oak가 다른 전체 텍스트 인덱스(예: `/oak:index/pathreference`) 전체 텍스트 쿼리를 지원하지만 쿼리 문자열이 인덱스 정의의 정규 표현식과 일치하지 않으면 메시지가 WARN 수준에서 기록되며 쿼리가 결과를 반환하지 않을 수 있습니다.
@@ -61,7 +61,7 @@ org.apache.jackrabbit.oak.query.QueryImpl Potentially improper use of index /oak
 일반 Lucene 색인이 제거되면, 전체 텍스트 쿼리에서 적절한 색인 정의를 찾을 수 없는 경우 아래에 표시된 것처럼 메시지가 경고 수준으로 기록됩니다.
 
 ```text
-org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results are returned
+org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains (*, 'test') /* xpath: //*[jcr:contains (.,"test")] */ fullText="test", path=*); no results are returned
 ```
 
 >[!IMPORTANT]
@@ -85,8 +85,8 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 가장 간단한 경우는 노드 유형이 지정되지 않았으므로 이를 암시하는 쿼리일 수 있습니다 `nt:base` 또는 `nt:base` 명시적으로 지정된 항목:
 
 ```text
-/jcr:root/content/mysite//*[jcr:contains(., 'search term')]
-/jcr:root/content/mysite//element(*, nt:base)[jcr:contains(., 'search term')]
+/jcr:root/content/mysite//*[jcr:contains (., 'search term')]
+/jcr:root/content/mysite//element(*, nt:base)[jcr:contains (., 'search term')]
 ```
 
 >[!IMPORTANT]
@@ -98,13 +98,13 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 예를 들어 페이지 또는 그 아래의 합계 와 일치하는 결과를 반환하도록 쿼리를 수정할 수 있습니다. `cq:Page node`. 따라서 쿼리는 다음과 같이 될 수 있습니다.
 
 ```text
-/jcr:root/content/mysite//element(*, cq:Page)[jcr:contains(., 'search term')]
+/jcr:root/content/mysite//element(*, cq:Page)[jcr:contains (., 'search term')]
 ```
 
 다른 경우, 쿼리는 노드 유형을 지정할 수 있지만 다음과 같은 다른 전체 텍스트 인덱스로 처리할 수 없는 전체 텍스트 제한을 포함할 수 있습니다.
 
 ```text
-/jcr:root/content/dam//element(*, dam:Asset)[jcr:contains(jcr:content/metadata/@cq:tags, 'NewsTopics:cateogries/domestic'))]
+/jcr:root/content/dam//element(*, dam:Asset)[jcr:contains (jcr:content/metadata/@cq:tags, 'NewsTopics:cateogries/domestic'))]
 ```
 
 이 경우 쿼리에 `dam:Asset` 노드 유형이지만 상대에 대한 전체 텍스트 제한이 포함되어 있음 `jcr:content/metadata/@cq:tags` 속성.
@@ -136,7 +136,7 @@ AEM에는 Sling 리소스 유형으로 사용자 지정 대화 상자 구성 요
 현재, 없는 경우 `nodeTypes` 속성이 있으면 기본 검색 쿼리에서 `nt:base` node 형식이므로 일반적으로 다음과 유사한 WARN 메시지를 로깅하는 일반 Lucene 인덱스를 사용할 수 있습니다.
 
 ```text
-20.01.2022 18:56:06.412 *WARN* [127.0.0.1 [1642704966377] POST /mnt/overlay/granite/ui/content/coral/foundation/form/pathfield/picker.result.single.html HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') and isdescendantnode(a, '/content') /* xpath: /jcr:root/content//element(*, nt:base)[(jcr:contains(., 'test'))] order by @jcr:score descending */ fullText="test", path=/content//*). Change the query or the index definitions.
+20.01.2022 18:56:06.412 *WARN* [127.0.0.1 [1642704966377] POST /mnt/overlay/granite/ui/content/coral/foundation/form/pathfield/picker.result.single.html HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains (*, 'test') and isdescendantnode(a, '/content') /* xpath: /jcr:root/content//element(*, nt:base)[(jcr:contains (., 'test'))] order by @jcr:score descending */ fullText="test", path=/content//*). Change the query or the index definitions.
 ```
 
 일반 Lucene 인덱스를 제거하기 전에 `pathfield` 기본 선택기를 사용하여 구성 요소에 대해 검색 상자를 숨기고 을 제공하지 않도록 구성 요소가 업데이트됩니다. `nodeTypes` 속성.

@@ -2,7 +2,7 @@
 title: 다중 사이트 관리자 확장
 description: 다중 사이트 관리자의 기능을 확장하는 방법에 대해 알아봅니다.
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '2337'
 ht-degree: 93%
@@ -478,7 +478,7 @@ Eclipse 컴파일러가 `LiveActionFactory` 코드에서 사용되는 클래스�
       return null;
      }
      @Deprecated
-     public String[] getPropertiesNames() {
+     public String[] getPropertiesNames () {
       return null;
      }
      @Deprecated

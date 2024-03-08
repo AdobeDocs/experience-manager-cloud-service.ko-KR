@@ -4,13 +4,13 @@ description: 완벽한 양식을 빠르게 제작하십시오. ⚡ AEM Forms Edg
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '1150'
-ht-degree: 26%
+source-wordcount: '1165'
+ht-degree: 20%
 
 ---
-
 
 # 적응형 양식 블록을 사용하여 양식 만들기
 
@@ -27,24 +27,26 @@ AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식�
 
 시작하기 전에 다음 단계를 완료했는지 확인하십시오.
 
-* AEM Boilerplate를 사용하여 EDS(Edge Delivery Service) GitHub 프로젝트를 설정하고 로컬 컴퓨터에서 해당 GitHub 리포지토리를 복제합니다. 자세한 내용은 [개발자 튜토리얼](https://www.aem.live/developer/tutorial)을 참조하십시오. 이 문서에서 Edge Delivery Service(EDS) 프로젝트의 로컬 폴더란 `[EDS Project repository]`를 말합니다.
+* AEM Boilerplate를 사용하여 Edge Delivery Services(EDS) GitHub 프로젝트를 설정하고 로컬 컴퓨터에서 해당 GitHub 리포지토리를 복제합니다. 자세한 내용은 [개발자 튜토리얼](https://www.aem.live/developer/tutorial)을 참조하십시오. 이 문서에서는 EDS(Edge Delivery Services) 프로젝트의 로컬 폴더를 `[EDS Project repository]` .
 * Google Sheets 또는 Microsoft SharePoint에 액세스할 수 있는지 확인하십시오. Microsoft SharePoint을 컨텐츠 소스로 설정하려면 를 참조하십시오. [Sharepoint 사용 방법](https://www.aem.live/docs/setup-customer-sharepoint)
 
 
 
 ## 양식 만들기
 
-+++ 1단계: 적응형 양식 블록을 EDS(Edge Delivery Service) 프로젝트에 추가합니다.
++++ 1단계: 적응형 양식 블록을 Edge Delivery Services(EDS) 프로젝트에 추가합니다.
 
-적응형 양식은 사용자가 Edge 게재 서비스 사이트용 양식을 만들 수 있도록 합니다. 그러나 이 블록은 기본 AEM 보일러판에 포함되지 않습니다(Edge Delivery Service 프로젝트를 만드는 데 사용됨). 적응형 양식 블록을 Edge Delivery Service 프로젝트에 원활하게 통합하려면 다음을 수행하십시오.
+적응형 양식은 사용자가 Edge Delivery Services Site용 양식을 만들 수 있도록 합니다. 하지만 이 블록은 기본 AEM 보일러판에 포함되지 않습니다(Edge Delivery Services 프로젝트를 만드는 데 사용됨). 적응형 양식 블록을 Edge Delivery Services 프로젝트에 매끄럽게 통합하려면 다음 작업을 수행하십시오.
 
-1. **적응형 양식 블록 저장소 복제**: 복제 [적응형 양식 블록 저장소](https://github.com/adobe/afb) 로컬 컴퓨터에서. 여기에는 EDS 웹 페이지에 양식을 렌더링하는 코드가 포함되어 있습니다. 이 문서에서 양식 블록 저장소의 로컬 폴더란 `[Adaptive Form Block repository]`를 말합니다.
-1. **적응형 양식 블록 저장소를 찾습니다.** 액세스 [적응형 양식 블록 저장소]/blocks 폴더를 로컬 컴퓨터에 복사하고 `form` 폴더를 삭제합니다.
-1. **적응형 양식 블록을 EDS 프로젝트에 붙여넣습니다.**
-다음 위치로 이동 [EDS 프로젝트 저장소]로컬 컴퓨터의 /blocks/ 폴더를 만들고 양식 폴더를 붙여 넣습니다.
-1. **GitHub에 변경 사항 커밋:** 양식 폴더 및 기본 파일을 GitHub의 Edge 게재 서비스 프로젝트에 체크 인합니다.
+1. **적응형 양식 블록 저장소 복제**: 복제 [적응형 양식 블록 저장소](https://github.com/adobe-rnd/form-block) 로컬 컴퓨터에서. 여기에는 EDS 웹 페이지에 양식을 렌더링하는 코드가 포함되어 있습니다. 이 문서에서 양식 블록 저장소의 로컬 폴더란 `[Adaptive Form Block repository]`를 말합니다.
+1. **적응형 양식 블록 저장소를 찾습니다.** 액세스 [적응형 양식 블록 저장소]/blocks/src 폴더를 만들고 해당 콘텐츠를 복사합니다.
 
-이 단계를 완료하면 적응형 양식 블록이 GitHub의 EDS(Edge Delivery Service) 프로젝트 저장소에 성공적으로 추가됩니다. 이제 양식을 만들어 EDS Sites 페이지에 추가할 수 있습니다.
+1. 로컬 컴퓨터에서 다음을 복사합니다. `form` 폴더를 삭제합니다.
+1. **적응형 양식 블록의 코드를 EDS 프로젝트에 붙여넣습니다.**
+다음 위치로 이동 [EDS 프로젝트 저장소]로컬 컴퓨터의 /blocks/ 폴더를 만들고 &#39;form&#39; 폴더를 만듭니다. 붙여넣기 `[Adaptive Form Block repository]/blocks/src content`, 특정 단계에 복사됨 `[EDS Project repository]/blocks/form` 폴더를 삭제합니다.
+1. **GitHub에 변경 사항 커밋:** 체크인 `[EDS Project repository]/blocks/form` 폴더 및 그 기본 파일을 GitHub의 Edge Delivery Services 프로젝트에 추가합니다.
+
+이 단계를 완료하면 적응형 양식 블록이 GitHub의 Edge Delivery Services(EDS) 프로젝트 저장소에 성공적으로 추가됩니다. 이제 양식을 만들어 EDS Sites 페이지에 추가할 수 있습니다.
 
 
 **GitHub 빌드 문제 해결**
@@ -57,13 +59,11 @@ AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식�
 * **린팅 오류 처리:**
 만약 당신이 어떤 린팅 오류라도 발견한다면, 당신은 그것들을 우회할 수 있다. 를 엽니다. [EDS 프로젝트]/package.json 파일을 만들고 &quot;lint&quot; 스크립트를 &quot;lint&quot;: &quot;npm run lint:js &amp;&amp; npm run lint:css&quot;에서 &quot;lint&quot;: &quot;echo &#39;skipping linting for now&#39;&quot;로 수정합니다. 파일을 저장하고 변경 내용을 GitHub 프로젝트에 커밋합니다.
 
-
-
 +++
 
 +++ 2단계: Microsoft Excel 또는 Google 시트를 사용하여 양식을 작성합니다.
 
-복잡한 프로세스를 탐색하는 대신 스프레드시트를 사용하여 손쉽게 양식을 만들 수 있습니다. 먼저 스프레드시트에 행 및 열 헤더를 추가할 수 있습니다. 여기서 각 행은 양식 필드를 나타내고 각 열 헤더는 해당 필드의 속성을 정의합니다.
+복잡한 프로세스를 탐색하는 대신 스프레드시트를 사용하여 손쉽게 양식을 만들 수 있습니다. 양식 구조를 구성할 행과 열을 정의할 수 있습니다. 각 행은 개인을 나타냅니다 [양식 필드](/help/edge/docs/forms/form-components.md#available-components) 및 열 머리글은 해당 [필드 속성](/help/edge/docs/forms/form-components.md#components-properties).
 
 예를 들어 행이 다음에 대한 필드를 아웃라인하는 스프레드시트를 생각해 보십시오. `enquiry` 양식 및 열 머리글은 속성을 정의합니다.
 
@@ -96,7 +96,7 @@ AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식�
 
 
    ```JSON
-       https://<branch>--<repository>--<owner>.hlx.live/<form>.json
+       https://<branch>--<repository>--<owner>.hlx.live/<form-path>/<form-file-name>.json
    ```
 
    * `<branch>` 는 GitHub 저장소의 분기를 나타냅니다.
@@ -110,7 +110,7 @@ AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식�
 
 +++
 
-+++ 3단계: Edge Delivery Service(EDS) 페이지를 사용하여 양식을 미리 봅니다.
++++ 3단계: EDS(Edge Delivery Services) 페이지를 사용하여 양식을 미리 봅니다.
 
 
 지금까지 EDS 프로젝트에 적응형 양식 블록을 추가하고 양식 구조를 준비했습니다. 이제 양식을 미리 보려면 다음 작업을 수행하십시오.
@@ -121,7 +121,7 @@ AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식�
 
 1. **원하는 위치로 이동합니다.** 양식을 추가하려는 문서 내에서 원하는 위치로 이동합니다.
 
-1. **적응형 양식 블록 추가:** 아래 그림과 같이 파일에 &#39;Form&#39;이라는 블록을 삽입합니다.
+1. **적응형 양식 블록 추가:** 양식을 렌더링할 양식 블록을 만듭니다. [삽입] > [표]를 선택하고 하나의 열과 두 개의 행 표를 만듭니다. 테이블 이름을 &quot;Form&quot;으로 지정하고 미리 보기 URL을 두 번째 행에 붙여 넣습니다. 아래 그림과 같이 URL의 형식이 일반 텍스트가 아닌 하이퍼링크로 지정되어 있는지 확인합니다.
 
    | 양식 |
    |---|
@@ -153,12 +153,4 @@ AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식�
 
 
 
-## 더 보기
 
-* [양식 구성 요소](/help/edge/docs/forms/form-components.md)
-* [양식 필드 속성](/help/edge/docs/forms/eds-form-field-properties)
-* [양식 만들기 및 미리 보기](/help/edge/docs/forms/create-forms.md)
-* [양식을 활성화하여 데이터 전송](/help/edge/docs/forms/submit-forms.md)
-* [사이트 페이지에 양식 게시](/help/edge/docs/forms/publish-forms.md)
-* [양식 필드에 유효성 검사 추가](/help/edge/docs/forms/validate-forms.md)
-* [양식의 테마 및 스타일 변경](/help/edge/docs/forms/style-theme-forms.md)

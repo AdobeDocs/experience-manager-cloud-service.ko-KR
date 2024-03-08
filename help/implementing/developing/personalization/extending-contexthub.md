@@ -2,7 +2,7 @@
 title: ContextHub 확장
 description: 제공된 ContextHub 저장소 및 모듈이 솔루션 요구 사항을 충족하지 못할 경우 새로운 유형의 ContextHub 저장소 및 모듈을 정의합니다
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -76,7 +76,7 @@ UI 모듈 렌더러를 만들려면 `Class` ui 모듈을 렌더링하는 논리�
 ```javascript
 ;(function() {
 
-    var SurferinfoRenderer = new Class({
+    var SurferinfoRenderer = new Class ({
         extend: ContextHub.UI.BaseModuleRenderer,
 
         defaultConfig: {

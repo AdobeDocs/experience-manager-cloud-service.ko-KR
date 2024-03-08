@@ -2,7 +2,7 @@
 title: Cloud Service 콘텐츠 요청 이해
 description: Adobe에서 컨텐츠 요청 라이선스를 구입한 경우 Adobe Experience Cloud as a Service가 측정하는 컨텐츠 요청 유형과 조직의 분석 보고 도구와의 차이에 대해 알아봅니다.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 9033820fa0dc8eee181e3f581675f45cf11e694a
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '2688'
 ht-degree: 5%
@@ -175,7 +175,7 @@ RUM 데이터는 다음 목적에 유용합니다.
 
    예.
 
-1. **고객이 RUM 데이터 서비스 스크립트를 Dynatrace와 같은 서드파티 시스템과 통합할 수 있습니까?**
+1. **고객이 RUM 데이터 서비스 스크립트를 Dynatrace과 같은 서드파티 시스템과 통합할 수 있습니까?**
 
    예.
 

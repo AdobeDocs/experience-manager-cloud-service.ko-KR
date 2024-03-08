@@ -2,7 +2,7 @@
 title: ContextHub JavaScript API 참조
 description: ContextHub JavaScript API는 ContextHub 구성 요소가 페이지에 추가되면 스크립트에 사용할 수 있습니다
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '4602'
 ht-degree: 2%
@@ -83,7 +83,7 @@ ContextHub 개체는 모든 저장소에 대한 액세스를 제공합니다.
 다음 예제에서는 모든 스토어를 검색한 다음 지리적 위치 스토어를 검색합니다.
 
 ```javascript
-var allStores = ContextHub.getAllStores();
+var allStores = ContextHub.getAllStores ();
 var geoloc = allStores.geolocation
 ```
 
@@ -127,7 +127,7 @@ ContextHub 세그먼트에 대한 액세스를 제공합니다.
 
 ### 함수(ContextHub.SegmentEngine.SegmentManager) {#functions-contexthub-segmentengine-segmentmanager}
 
-#### getResolvedSegments() {#getresolvedsegments}
+#### getResolvedSegments () {#getresolvedsegments}
 
 현재 컨텍스트에서 확인된 세그먼트를 반환합니다. 이 함수에는 매개 변수가 없습니다.
 
@@ -155,7 +155,7 @@ A `ContextHub.Utils.Persistence` 개체. 기본값 및 초기화에 대한 자�
 
 ### 함수(ContextHub.Store.Core) {#functions-contexthub-store-core}
 
-#### addAllItems(tree, options) {#addallitems-tree-options}
+#### addAllItems(트리, 옵션) {#addallitems-tree-options}
 
 데이터 개체 또는 배열을 저장소 데이터와 병합합니다. 개체 또는 배열의 각 키/값 쌍은 저장소를 통해 `setItem` 함수):
 
@@ -213,7 +213,7 @@ A `boolean` 값:
 
 키의 값을 나타내는 개체입니다.
 
-#### getKeys(includeInternals) {#getkeys-includeinternals}
+#### getKeys (includeInternals) {#getkeys-includeinternals}
 
 스토어에서 키를 검색합니다. 필요한 경우 ContextHub 프레임워크에서 내부적으로 사용되는 키를 검색할 수 있습니다.
 
@@ -225,7 +225,7 @@ A `boolean` 값:
 
 키 이름의 배열( `string` 값).
 
-#### getReferences() {#getreferences}
+#### getReferences () {#getreferences}
 
 저장소에서 참조를 검색합니다.
 
@@ -536,12 +536,12 @@ A `boolean` 값이 true이면 쿠키가 있음을 나타냅니다.
 ##### 예 {#example-exists}
 
 ```javascript
-if (ContextHub.Utils.Cookie.exists("name")) {
+if (ContextHub.Utils.Cookie.exists ("name")) {
    // conditionally-executed code
 }
 ```
 
-#### getAllItems(filter) {#getallitems-filter}
+#### getAllItems(필터) {#getallitems-filter}
 
 필터와 일치하는 키가 있는 모든 쿠키를 반환합니다.
 
@@ -560,7 +560,7 @@ if (ContextHub.Utils.Cookie.exists("name")) {
 ##### 예 {#example-getallitems}
 
 ```javascript
-ContextHub.Utils.Cookie.getAllItems([/^cq-authoring/, /^cq-editor/])
+ContextHub.Utils.Cookie.getAllItems ([/^cq-authoring/, /^cq-editor/])
 ```
 
 #### getItem(key) {#getitem-key-1}
@@ -581,7 +581,7 @@ ContextHub.Utils.Cookie.getAllItems([/^cq-authoring/, /^cq-editor/])
 ContextHub.Utils.Cookie.getItem("name");
 ```
 
-#### getKeys(filter) {#getkeys-filter}
+#### getKeys(필터) {#getkeys-filter}
 
 필터와 일치하는 기존 쿠키의 배열을 반환합니다.
 
@@ -600,7 +600,7 @@ ContextHub.Utils.Cookie.getItem("name");
 ##### 예 {#example-getkeys-1}
 
 ```javascript
-ContextHub.Utils.Cookie.getKeys([/^cq-authoring/, /^cq-editor/])
+ContextHub.Utils.Cookie.getKeys ([/^cq-authoring/, /^cq-editor/])
 ```
 
 #### removeItem(key, options) {#removeitem-key-options-1}
@@ -911,7 +911,7 @@ Object {
 }
 ```
 
-#### getKeys() {#getkeys}
+#### getKeys () {#getkeys}
 
 개체의 데이터 트리에서 모든 키를 검색합니다. 선택적으로 특정 키의 하위 키만 검색할 수 있습니다. 선택적으로 검색된 키의 정렬 순서를 지정할 수도 있습니다.
 
@@ -946,7 +946,7 @@ myObject {
 }
 ```
 
-다음 `ContextHub.Utils.JSON.tree.getKeys(myObject);` script는 다음 배열을 반환합니다.
+다음 `ContextHub.Utils.JSON.tree.getKeys (myObject);` script는 다음 배열을 반환합니다.
 
 ```javascript
 ["/location", "/location/city", "/location/country", "/location/latitude", "/location/longitude", "/location/weather", "/location/weather/humidity", "/location/weather/precipitation", "/location/weather/temperature", "/location/weather/wind"]
@@ -1096,7 +1096,7 @@ myObject = ContextHub.Utils.JSON.tree.setItem(myObject, myKey, myValue);
 
 등록된 저장소 후보를 나타내는 개체입니다. 요청한 스토어 유형이 등록되지 않으면 오류가 발생합니다.
 
-#### getSupportedStoreTypes() {#getsupportedstoretypes}
+#### getSupportedStoreTypes () {#getsupportedstoretypes}
 
 저장소 후보로 등록된 저장소 유형의 이름을 반환합니다. 이 함수에는 매개 변수가 필요하지 않습니다.
 

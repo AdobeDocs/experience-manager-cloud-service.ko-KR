@@ -4,13 +4,13 @@ description: 사용자 경험을 최적화하고 사용자 여정을 간소화�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 6%
 
 ---
-
 
 # 제출 후 감사 페이지 또는 리디렉션 양식 표시
 
@@ -63,9 +63,9 @@ ht-degree: 6%
 
    >[!NOTE]
    >
-   > Microsoft SharePoint 또는 Google Workspace의 Edge Delivery Service 프로젝트 폴더에 이름이 동일한 페이지가 있는지 확인합니다. 페이지가 존재하지 않는 경우 계속해서 페이지를 만들고 게시합니다.
+   > Microsoft SharePoint 또는 Google Workspace의 Edge Delivery Services 프로젝트 폴더에 이름이 동일한 페이지가 있는지 확인합니다. 페이지가 존재하지 않는 경우 계속해서 페이지를 만들고 게시합니다.
 
-1. 업데이트된 &#39;form.js&#39; 폴더 및 그 기본 파일을 GitHub의 Edge Delivery Service 프로젝트에 체크 인합니다. 이 업데이트를 통해 양식이 지정된 업데이트된 페이지로 리디렉션됩니다.
+1. 업데이트된 &#39;form.js&#39; 폴더 및 그 기본 파일을 GitHub의 Edge Delivery Services 프로젝트에 체크 인합니다. 이 업데이트를 통해 양식이 지정된 업데이트된 페이지로 리디렉션됩니다.
 
 1. 페이지가 EDS 프로젝트 폴더에 있는지 확인하고 게시합니다.
 

@@ -2,7 +2,7 @@
 title: AEM 애플리케이션에 태그 지정 빌드
 description: 프로그래밍 방식으로 사용자 지정 AEM 애플리케이션 내에서 태그를 사용하거나 태그를 확장하십시오
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 1%
@@ -80,10 +80,10 @@ Resource node = tag.adaptTo(Resource.class);
 
 ```java
 // Getting the tags of a Resource:
-Tag[] tags = tagManager.getTags(resource);
+Tag[] tags = tagManager.getTags (resource);
 
 // Setting tags to a Resource:
-tagManager.setTags(resource, tags);
+tagManager.setTags (resource, tags);
 ```
 
 ### 태그 검색 {#searching-for-tags}
@@ -144,8 +144,8 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 * [`com.day.cq.tagging.Tag`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/Tag.html)
    * `getLocalizedTitle(Locale locale)`
-   * `getLocalizedTitlePaths()`
-   * `getLocalizedTitles()`
+   * `getLocalizedTitlePaths ()`
+   * `getLocalizedTitles ()`
    * `getTitle(Locale locale)`
    * `getTitlePath(Locale locale)`
 * [`com.day.cq.tagging.TagManager`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/TagManager.html)

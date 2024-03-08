@@ -4,13 +4,13 @@ description: 스프레드시트 및 적응형 양식 블록 필드를 사용하�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: 16e1d42a-42d0-4335-ba81-feedea7ed7d7
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 82%
+source-wordcount: '237'
+ht-degree: 80%
 
 ---
-
 
 # 양식 필드에 유효성 검사 추가
 
@@ -29,10 +29,4 @@ URL: 이 필드 유형은 유효한 URL 포맷에 대해 사용자 입력의 유
 전화번호: 이 필드 유형은 전화번호용으로 특별히 설계되었으며 특정 국가 포맷을 기반으로 유효성 검사를 트리거할 수 있습니다(일반적으로 지원되지 않음).
 
 
-## 더 보기
 
-* [양식 만들기 및 미리 보기](/help/edge/docs/forms/create-forms.md)
-* [양식을 활성화하여 데이터 전송](/help/edge/docs/forms/submit-forms.md)
-* [사이트 페이지에 양식 게시](/help/edge/docs/forms/publish-forms.md)
-* [양식 필드에 유효성 검사 추가](/help/edge/docs/forms/validate-forms.md)
-* [양식의 테마 및 스타일 변경](/help/edge/docs/forms/style-theme-forms.md)
