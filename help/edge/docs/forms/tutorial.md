@@ -4,10 +4,10 @@ description: 이 튜토리얼은 새로운 AEM(Adobe Experience Manager Forms) �
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 30dfe0cfd7f845ba7a27699db22f8c4e61a0f7ed
+source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
 workflow-type: tm+mt
-source-wordcount: '1803'
-ht-degree: 12%
+source-wordcount: '1786'
+ht-degree: 10%
 
 ---
 
@@ -43,7 +43,7 @@ AEM Forms Boilerplate 템플릿을 사용하면 적응형 Forms 블록으로 사
 
 ### AEM Forms 보일러플레이트 저장소 템플릿 시작
 
-1. AEM 프로젝트용 Github 저장소를 만듭니다. 저장소를 생성하려면:
+1. AEM 프로젝트용 GitHub 저장소를 만듭니다. 저장소를 생성하려면:
    1. 다음으로 이동 [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms).
 
       ![AEM Forms Boilerplate](/help/edge/assets/aem-forms-boilerplate.png)
@@ -65,7 +65,7 @@ AEM Forms Boilerplate 템플릿을 사용하면 적응형 Forms 블록으로 사
    >[!NOTE]
    >
    >
-   > IP 필터링과 함께 Github Enterprise를 사용하는 경우 허용 목록에 다음 IP를 추가할 수 있습니다. 3.227.118.73
+   > IP 필터링과 함께 GitHub Enterprise를 사용하는 경우 허용 목록에 추가하다에 다음 IP를 추가할 수 있습니다. 3.27.118.73
 
    축하합니다! 새 웹 사이트가 실행 중입니다. `https://<branch>--<repo>--<owner>.hlx.page/`.
 
@@ -79,11 +79,11 @@ AEM Forms Boilerplate 템플릿을 사용하면 적응형 Forms 블록으로 사
 
 ### 고유한 콘텐츠 소스 연결
 
-새로 만든 Github 저장소는 다음을 가리킵니다 [Google 드라이브 폴더에 저장된 컨텐츠 예](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). 이 읽기 전용 콘텐츠는 양식에 좋은 시작점을 제공합니다. 자유롭게 자신의 Google 드라이브에 복사하고 필요에 맞게 사용자 지정할 수 있습니다.
+새로 만든 GitHub 저장소는 다음을 가리킵니다 [Google 드라이브 폴더에 저장된 컨텐츠 예](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). 이 읽기 전용 콘텐츠는 양식에 좋은 시작점을 제공합니다. 자유롭게 자신의 Google 드라이브에 복사하고 필요에 맞게 사용자 지정할 수 있습니다.
 
 ![Google 드라이브의 샘플 컨텐츠](/help/edge/assets/folder-with-sample-content.png)
 
-샘플 콘텐츠를 자신의 콘텐츠 폴더로 복사하고 Github 저장소를 자신의 콘텐츠 폴더로 지정하려면 다음을 수행하십시오.
+샘플 콘텐츠를 자신의 콘텐츠 폴더로 복사하고 GitHub 저장소를 자신의 콘텐츠 폴더로 지정하려면 다음을 수행하십시오.
 
 1. Google 드라이브 또는 Microsoft SharePoint에서 AEM 콘텐츠에만 해당하는 새 폴더를 만듭니다. 이 문서에서는 Microsoft SharePoint에서 만든 폴더를 사용합니다.
 
@@ -106,7 +106,7 @@ AEM Forms Boilerplate 템플릿을 사용하면 적응형 Forms 블록으로 사
 
       ![샘플 콘텐츠 다운로드](/help/edge/assets/download-sample-content.png)
 
-      다음 `index`, `nav`, 및 `footer` 파일은 페이지의 기본 레이아웃을 정의하며 프로젝트 전체에서 거의 변경되지 않습니다. 또한 대부분의 다른 콘텐츠 파일과 다른 특정 구조를 가지고 있습니다. 이러한 파일을 검사하면 AEM 프로젝트에서 콘텐츠가 구성되는 방식을 파악할 수 있습니다.
+      다음 `index`, `nav`, 및 `footer` 파일은 페이지의 기본 레이아웃을 정의하며 프로젝트 전체에서 거의 변경되지 않습니다. 또한 대부분의 다른 콘텐츠 파일과 다른 특정 구조를 가지고 있습니다. 이러한 파일을 검사하면 AEM Projects에서 콘텐츠가 구성되는 방식을 파악할 수 있습니다.
 
 
    1. 이 파일을 Microsoft SharePoint 또는 Google 드라이브 폴더에 업로드합니다.
@@ -119,7 +119,7 @@ AEM Forms Boilerplate 템플릿을 사용하면 적응형 Forms 블록으로 사
 
    1. AEM Forms Boilerplate을 사용하여 이전에 만든 GitHub 저장소로 이동합니다.
    1. 를 엽니다. `fstab.yaml` 편집할 수 있습니다.
-   1. 기존 참조를 AEM 사용자와 공유한 폴더 경로(helix@adobe.com)로 바꿉니다.
+   1. 기존 참조를 AEM 사용자와 공유한 폴더의 경로로 바꿉니다(helix@adobe.com).
 
       ![Google 드라이브의 샘플 컨텐츠](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -164,11 +164,11 @@ AEM Forms Boilerplate 템플릿을 사용하면 적응형 Forms 블록으로 사
 
    ![핀 AEM Sidekick](/help/edge/assets/pin-aem-sidekick.png)
 
-1. Sidekick Chrome 확장을 설정하려면 이전에 공유한 Google Drive 또는 Microsoft SharePoint 폴더로 이동한 다음 브라우저 도구 모음에서 확장 아이콘을 마우스 오른쪽 단추로 클릭하고 를 선택합니다 `Add this project`.
+1. Sidekick Chrome 확장 기능을 설정하려면 이전에 공유한 Google Drive 또는 Microsoft SharePoint 폴더로 이동한 다음 브라우저 도구 모음에서 확장 기능 아이콘을 마우스 오른쪽 단추로 클릭하고 를 선택합니다 `Add this project`.
 
    ![AEM Sidekick - 프로젝트 추가](/help/edge/assets/aem-sidekick-add-a-project.png)
 
-   확장이 설치되고 프로젝트가 추가되면 바로 Google 드라이브에서 콘텐츠를 미리 보고 게시할 준비가 된 것입니다.
+   확장이 설치되고 프로젝트가 추가되면 Google 드라이브에서 콘텐츠를 미리 보고 게시할 준비가 된 것입니다.
 
 1. Microsoft SharePoint 또는 Google Drive 폴더의 모든 문서를 선택합니다. Ctrl 키(Windows/Linux) 또는 Cmd 키(Mac)를 누른 채로 을 클릭하여 여러 문서를 선택할 수 있습니다.
 
@@ -204,7 +204,7 @@ AEM Forms Boilerplate 템플릿을 사용하면 적응형 Forms 블록으로 사
 
 ![문의 양식](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-필드 레이블을 업데이트하는 것부터 시작하겠습니다. 편집할 &#39;조회&#39; 시트를 열고 제출 버튼의 레이블을 다음으로 변경 `Let's Chat`을 클릭하고 사이드 킥을 사용하여 게시합니다.
+필드 레이블 업데이트부터 시작하겠습니다. 편집할 &#39;조회&#39; 시트를 열고 제출 버튼의 레이블을 다음으로 변경 `Let's Chat`을 클릭하고 사이드 킥을 사용하여 게시합니다.
 
 ![문의 양식](/help/edge/assets/enquiry-form-preview-publish.png)
 
@@ -233,7 +233,7 @@ AEM Forms Boilerplate 템플릿을 사용하면 적응형 Forms 블록으로 사
        npm install -g @adobe/aem-cli
    ```
 
-1. Github 프로젝트 복제: 다음 명령을 사용하여 GitHub에서 프로젝트 저장소를 복제하고 바꾸기 <owner> 저장소 소유자 및 <repo> 저장소 이름:
+1. GitHub 프로젝트 복제: 다음 명령을 사용하여 GitHub에서 프로젝트 저장소를 복제하고 바꾸기 <owner> 저장소 소유자 및 <repo> 저장소 이름:
 
    ```
    git clone https://github.com/<owner>/<repo>
@@ -281,7 +281,7 @@ AEM Forms Boilerplate 템플릿을 사용하면 적응형 Forms 블록으로 사
 “모듈 “../../scripts/lib-franklin.js”에 대한 경로를 확인할 수 없음” 오류가 발생하는 경우 [EDS Project]/blocks/forms/form.js 파일로 이동합니다. lib-franklin.js 파일을 aem.js 파일로 바꿔 import 문을 업데이트합니다.
 
 * **린팅 오류 처리**:
-린팅 오류가 발생하는 경우 우회할 수 있습니다. [EDS Project]/package.json 파일을 연 다음 &quot;lint&quot; 스크립트를 &quot;lint&quot;: &quot;npm run lint:js &amp;&amp; npm run lint:css&quot;에서 “lint“: &quot;lint&quot;: &quot;echo &#39;skipping linting for now&#39;&quot;로 수정합니다. 파일을 저장하고 변경 사항을 GitHub 프로젝트에 커밋합니다.
+린팅 오류가 발생하는 경우 우회할 수 있습니다. 를 엽니다. [EDS 프로젝트]/package.json 파일을 참조하고 다음에서 &quot;lint&quot; 스크립트를 수정합니다. `"lint": "npm run lint:js && npm run lint:css"` 끝 `"lint": "echo 'skipping linting for now'"`. 파일을 저장하고 변경 사항을 GitHub 프로젝트에 커밋합니다.
 
 
 ## 참고 항목
@@ -289,9 +289,4 @@ AEM Forms Boilerplate 템플릿을 사용하면 적응형 Forms 블록으로 사
 * [Google Sheets 또는 Microsoft Excel을 사용하여 양식 만들기](/help/edge/docs/forms/create-forms.md)
 * [양식을 Microsoft Excel 또는 Google Sheets에 직접 제출](/help/edge/docs/forms/submit-forms.md)
 * [양식 보기 변경](/help/edge/docs/forms/style-theme-forms.md)
-
-
-
-
-
 

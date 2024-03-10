@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '652'
 ht-degree: 19%
 
 ---
@@ -31,7 +31,7 @@ Adobe의 AEM Forms Edge Delivery Services을 통해 양식 생성을 간소화�
 
 ![Edge Delivery 아키텍처](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
-Edge Delivery Services는 웹 사이트에서 콘텐츠를 작성하는 방법을 보다 유연하게 제공하는 구성 가능한 서비스 세트입니다. 앞에서 설명한 대로 두 가지를 모두 사용할 수 있습니다 [AEM 콘텐츠 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) 포함 [AEM 작성](/help/implementing/universal-editor/introduction.md) 뿐만 아니라 [문서 기반 작성](https://www.aem.live/docs/authoring)
+Edge Delivery Services는 웹 사이트에서 콘텐츠를 작성하는 방법을 보다 유연하게 제공하는 구성 가능한 서비스 세트입니다. AEM 컨텐츠 관리를 사용할 수 있는 대상: [AEM 작성](/help/forms/creating-adaptive-form-core-components.md) 뿐만 아니라 [문서 기반 작성](/help/edge/docs/forms/create-forms.md)
 
 예를 들어 Microsoft Excel 또는 Google Sheets에서 직접 콘텐츠를 사용할 수 있습니다. 즉, 이러한 소스의 콘텐츠가 웹 사이트의 양식이 될 수 있습니다. 새 콘텐츠는 리빌드 프로세스 없이 즉시 추가됩니다.
 
