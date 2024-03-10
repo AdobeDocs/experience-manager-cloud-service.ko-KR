@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: ea61a794788ee2a59e05727fa3c4fd4fc1ca9956
+source-git-commit: 320967ee4cd5a92639b60b00750343222b307aef
 workflow-type: tm+mt
-source-wordcount: '1427'
+source-wordcount: '1415'
 ht-degree: 33%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 33%
 
 ## Adobe 형식 {#adobe-formats}
 
-| 파일 형식 | 썸네일 생성 | 전체 텍스트 추출 | 메타데이터 추출 | 너비/높이 |
+| 파일 포맷 | 썸네일 생성 | 전체 텍스트 추출 | 메타데이터 추출 | 너비/높이 |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
 | AI | ✓ | - | ✓ | ✓ |
 | 콜라주 | - | - | ✓ | - |
@@ -55,7 +55,7 @@ ht-degree: 33%
 
 ## 이미지 형식 {#image-formats}
 
-| 파일 형식 | 썸네일 생성 | 메타데이터 추출 | 너비/높이 | 자르기 |
+| 파일 포맷 | 썸네일 생성 | 메타데이터 추출 | 너비/높이 | 자르기 |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
 | BMP | ✓ | - | ✓ | ✓ |
 | EPS | ✓ | ✓ | - | - |
@@ -89,7 +89,7 @@ ht-degree: 33%
 
 ## [!DNL Camera Raw] 형식 {#camera-raw-formats}
 
-| 파일 형식 | 썸네일 생성 | 메타데이터 추출 | 너비/높이 |
+| 파일 포맷 | 썸네일 생성 | 메타데이터 추출 | 너비/높이 |
 | ----------- | -------------------- | ------------------- | ------------ |
 | 3FR | ✓ | ✓ | ✓ |
 | ARW | ✓ | ✓ | ✓ |
@@ -123,7 +123,7 @@ ht-degree: 33%
 
 에셋 관리 기능에 대해 지원되는 문서 형식은 다음과 같습니다.
 
-| 파일 형식 | 썸네일 생성 | 전체 텍스트 추출 | 너비/높이 | 메타데이터 관리 | [연결된 자산](use-assets-across-connected-assets-instances.md) | 전체 문서 미리 보기 |
+| 파일 포맷 | 썸네일 생성 | 전체 텍스트 추출 | 너비/높이 | 메타데이터 관리 | [연결된 자산](use-assets-across-connected-assets-instances.md) | 전체 문서 미리 보기 |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |--------|
 | DOC | - | - | - | ✓ | ✓ | ✓ |
 | DOCX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -147,7 +147,7 @@ ht-degree: 33%
 
 ## 비디오 형식 {#video-formats}
 
-| 파일 형식 | 썸네일 생성 | 메타데이터 추출 | 너비/높이 | 미리보기 |
+| 파일 포맷 | 썸네일 생성 | 메타데이터 추출 | 너비/높이 | 미리보기 |
 | ----------- | -------------------- | ------------------- | ------------ | ------- |
 | 3G2 | - | ✓ | - | - |
 | 3GP | - | ✓ | - | - |
@@ -228,17 +228,17 @@ ht-degree: 33%
 
 | 형식 | 업로드 (입력 형식) | 이미지 사전 설정 만들기(출력 형식) | 동적 렌디션 미리 보기 | 동적 렌디션 전달 | 동적 렌디션 다운로드 | 이 형식을 지원하는 형식 설정 |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
-| AVIF | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| AVIF | − | − | − | ✓ | − | − |
 | BMP | ✓ | − | − | − | − | [이미지](/help/assets/dynamic-media/image-sets.md), [혼합 미디어](/help/assets/dynamic-media/mixed-media-sets.md), 및 [회전](/help/assets/dynamic-media/spin-sets.md) |
-| [EPS](/help/assets/dynamic-media/managing-image-presets.md#adobe-illustrator-ai-postscript&reg;-eps-and-pdf-file-formats-adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | − |
+| [EPS](/help/assets/dynamic-media/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − |
-| HEIC | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| HEIC | − | − | − | ✓ | − | − |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [이미지](/help/assets/dynamic-media/image-sets.md), [혼합 미디어](/help/assets/dynamic-media/mixed-media-sets.md), 및 [회전](/help/assets/dynamic-media/spin-sets.md) |
 | PICT | ✓ | − | − | − | − | − |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [이미지](/help/assets/dynamic-media/image-sets.md), [혼합 미디어](/help/assets/dynamic-media/mixed-media-sets.md), 및 [회전](/help/assets/dynamic-media/spin-sets.md) |
 | PSD ‡ | ✓ | − | − | − | − | − |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [이미지](/help/assets/dynamic-media/image-sets.md), [혼합 미디어](/help/assets/dynamic-media/mixed-media-sets.md), 및 [회전](/help/assets/dynamic-media/spin-sets.md) |
-| WEBP | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| WEBP | − | − | − | ✓ | − | − |
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
 ‡ 병합된 이미지가 PSD 파일에서 추출됩니다. 에서 생성된 이미지입니다. [!DNL Adobe Photoshop] 및 가 PSD 파일에 포함됩니다. 설정에 따라 병합된 이미지가 실제 이미지가 될 수도 있고 그렇지 않을 수도 있습니다.
@@ -258,7 +258,7 @@ ht-degree: 33%
 
 참조: [지원되는 3D 형식](/help/assets/file-format-support.md#support-3d-formats)
 
-| 3D 파일 확장명 | 파일 형식 | MIME 유형 | 메모 |
+| 3D 파일 확장명 | 파일 포맷 | MIME 유형 | 메모 |
 |---|---|---|---|
 | GLB | 이진 GL 전송 | model/gltf-binary | 재료 및 텍스처를 단일 자산으로 포함합니다. |
 | OBJ | WaveFront 3D 개체 파일 | application/x-tgif | |
