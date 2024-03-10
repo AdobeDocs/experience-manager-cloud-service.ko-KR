@@ -5,29 +5,29 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 82%
+source-wordcount: '821'
+ht-degree: 72%
 
 ---
 
-# 적응형 양식 블록을 사용하여 양식 만들기
+# 적응형 Forms 블록을 사용하여 양식 만들기
 
-오늘날의 디지털 시대에는 사용자 친화적인 양식을 만드는 것이 모든 조직에 필수적입니다. AEM Forms Edge Delivery를 사용하면 Word 또는 Google Docs와 같은 익숙한 도구를 사용하여 양식을 만들 수 있습니다.
+AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식을 쉽게 만들 수 있도록 적응형 Forms 블록이라고 하는 블록을 제공합니다. 다음을 수행할 수 있습니다. [적응형 Forms 블록이 사전 장착된 새 AEM 프로젝트 만들기](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) 또는 [기존 AEM 프로젝트에 적응형 Forms 블록 추가](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
 이러한 양식은 데이터를 Microsoft Excel 또는 Google Sheets 파일에 직접 제출하므로 Google Sheets, Microsoft Excel 및 Microsoft Sharepoint의 활발한 에코시스템과 강력한 API를 사용하여 쉽게 제출 데이터를 처리하거나 기존 비즈니스 워크플로를 시작할 수 있습니다.
 
 ![문서 기반 작성 생태계](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
-AEM Forms Edge Delivery는 데이터를 캡처하고 캡처한 데이터를 저장하는 양식을 쉽게 만들 수 있는 적응형 양식 블록이라는 블록을 제공합니다. AEM EDS 프로젝트에 적응형 양식 블록을 포함하여 양식 만들기를 시작할 수 있습니다. 시작하기
+
 
 
 ## 사전 요구 사항
 
 시작하기 전에 다음 단계를 완료했는지 확인하십시오.
 
-* 설정 [AEM Forms boilerplate을 사용하는 AEM 프로젝트](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) 또는 [기존 AEM 프로젝트에 적응형 양식 블록 추가](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) 로컬 컴퓨터에서 해당 GitHub 리포지토리를 복제합니다.
+* 설정 [AEM Forms boilerplate을 사용하는 AEM 프로젝트](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) 또는 [기존 AEM 프로젝트에 적응형 Forms 블록 추가됨](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) 로컬 컴퓨터에서 해당 GitHub 리포지토리를 복제합니다.
 이 문서에서는 EDS(Edge Delivery Services) 프로젝트의 로컬 폴더를 `[EDS Project repository]` .
 * Google Sheets 또는 Microsoft SharePoint에 액세스할 수 있는지 확인하십시오. Microsoft SharePoint를 콘텐츠 소스로 설정하려면 [Sharepoint 사용 방법](https://www.aem.live/docs/setup-customer-sharepoint)을 참조하십시오.
 
@@ -37,19 +37,19 @@ AEM Forms Edge Delivery는 데이터를 캡처하고 캡처한 데이터를 저�
 
 <!-- 
 
-+++ Step 1: Add the Adaptive Form Block to your Edge Delivery Services (EDS) project.
++++ Step 1: Add the Adaptive Forms Block to your Edge Delivery Services (EDS) project.
 
-The Adaptive  empowers users to create forms for an Edge Delivery ServicesSite. However, this block isn't included in the default AEM boilerplate (used to create an Edge Delivery Services project). To seamlessly integrate the Adaptive Form Block into your Edge Delivery Services project:
+The Adaptive  empowers users to create forms for an Edge Delivery ServicesSite. However, this block isn't included in the default AEM boilerplate (used to create an Edge Delivery Services project). To seamlessly integrate the Adaptive Forms Block into your Edge Delivery Services project:
 
-1. **Clone the Adaptive Form Block repository**: Clone the [Adaptive Form Block repository](https://github.com/adobe-rnd/form-block) on your local machine. It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Adaptive Form Block repository]`.
-1. **Locate the Adaptive Form Block Repository:** Access the [Adaptive Form Block repository]/blocks/src folder and copy its content. 
+1. **Clone the Adaptive Forms Block repository**: Clone the [Adaptive Forms Block repository](https://github.com/adobe-rnd/form-block) on your local machine. It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Adaptive Forms Block repository]`.
+1. **Locate the Adaptive Forms Block Repository:** Access the [Adaptive Forms Block repository]/blocks/src folder and copy its content. 
 
 1. on your local machine and copy the `form` folder. 
-1. **Paste the Adaptive Form Block's code into your EDS Project:**
-Navigate to the [EDS Project repository]/blocks/ folder on your local machine and create a 'form' folder. Paste the `[Adaptive Form Block repository]/blocks/src content`, copied in perevious step to the `[EDS Project repository]/blocks/form` folder.
+1. **Paste the Adaptive Forms Block's code into your EDS Project:**
+Navigate to the [EDS Project repository]/blocks/ folder on your local machine and create a 'form' folder. Paste the `[Adaptive Forms Block repository]/blocks/src content`, copied in perevious step to the `[EDS Project repository]/blocks/form` folder.
 1. **Commit Changes to GitHub:** Check in the `[EDS Project repository]/blocks/form` folder and its underlying files to your Edge Delivery Services project on GitHub.
 
-After completing these steps, the Adaptive Form Block is successfully added to your Edge Delivery Services (EDS) project repository on GitHub. You can now create and add forms to a EDS Sites page.
+After completing these steps, the Adaptive Forms Block is successfully added to your Edge Delivery Services (EDS) project repository on GitHub. You can now create and add forms to a EDS Sites page.
  
 
 **Troubleshooting GitHub build issues**
@@ -118,7 +118,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 +++ 2단계: EDS(Edge Delivery Services) 페이지를 사용하여 양식을 미리 봅니다.
 
 
-지금까지 EDS 프로젝트에 적응형 양식 블록을 추가하고 양식의 구조를 준비했습니다. 이제 양식을 미리 보려면 다음 작업을 수행하십시오.
+지금까지 EDS 프로젝트에 적응형 Forms 블록을 추가하고 양식 구조를 준비했습니다. 이제 양식을 미리 보려면 다음 작업을 수행하십시오.
 
 1. **프로젝트 디렉터리에 액세스**: Microsoft SharePoint 또는 Google Drive 계정을 열고 AEM Edge Delivery 프로젝트 디렉터리로 이동합니다.
 
@@ -126,7 +126,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 1. **원하는 위치로 이동**: 양식을 추가하려는 문서 내에서 원하는 위치로 이동합니다.
 
-1. **적응형 양식 블록 추가:** 양식을 렌더링할 양식 블록을 만듭니다. [삽입] > [표]를 선택하고 하나의 열과 두 개의 행 표를 만듭니다. 테이블 이름을 &quot;Form&quot;으로 지정하고 미리 보기 URL을 두 번째 행에 붙여 넣습니다. 아래 그림과 같이 URL의 형식이 일반 텍스트가 아닌 하이퍼링크로 지정되어 있는지 확인합니다.
+1. **적응형 Forms 블록 추가:** 양식을 렌더링할 양식 블록을 만듭니다. [삽입] > [표]를 선택하고 하나의 열과 두 개의 행 표를 만듭니다. 테이블 이름을 &quot;Form&quot;으로 지정하고 미리 보기 URL을 두 번째 행에 붙여 넣습니다. 아래 그림과 같이 URL의 형식이 일반 텍스트가 아닌 하이퍼링크로 지정되어 있는지 확인합니다.
 
    | 양식 |
    |---|

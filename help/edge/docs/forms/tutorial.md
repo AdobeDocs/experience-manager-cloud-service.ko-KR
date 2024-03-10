@@ -4,10 +4,10 @@ description: 이 튜토리얼은 새로운 AEM(Adobe Experience Manager Forms) �
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
-source-wordcount: '1567'
-ht-degree: 13%
+source-wordcount: '1770'
+ht-degree: 12%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 13%
 
 이러한 양식은 데이터를 Microsoft Excel 또는 Google Sheets 파일에 직접 제출하므로 Google Sheets, Microsoft Excel 및 Microsoft Sharepoint의 활발한 에코시스템과 강력한 API를 사용하여 쉽게 제출 데이터를 처리하거나 기존 비즈니스 워크플로를 시작할 수 있습니다.
 
-AEM Forms은 캡처된 데이터를 캡처하고 저장할 양식을 쉽게 생성할 수 있도록 적응형 양식 블록이라고 하는 블록을 제공합니다.
+AEM Forms은 캡처된 데이터를 캡처하고 저장할 양식을 쉽게 생성할 수 있도록 적응형 Forms 블록이라고 하는 블록을 제공합니다. 적응형 Forms 블록이 사전 장착된 새 AEM 프로젝트를 생성하거나 적응형 Forms 블록을 기존 AEM 프로젝트에 추가할 수 있습니다.
 
 이 AEM Forms 자습서에서는 새 Adobe Experience Manager(AEM) Forms 프로젝트를 사용하여 사용자 정의 양식을 만들고, 미리 보고, 게시하는 과정을 안내합니다. 기존 AEM 프로젝트에 적응형 Forms 블록을 추가하는 방법도 배우게 됩니다.
 
@@ -39,18 +39,19 @@ AEM Forms은 캡처된 데이터를 캡처하고 저장할 양식을 쉽게 생�
 
 ## 적응형 Forms 블록이 사전 장착된 새 AEM 프로젝트 만들기
 
-AEM Forms Boilerplate 템플릿을 사용하면 적응형 양식 블록으로 사전 구성된 AEM 프로젝트를 빠르게 시작할 수 있습니다. AEM 모범 사례를 따르고 양식을 바로 빌드하는 가장 빠르고 쉬운 방법입니다.
+AEM Forms Boilerplate 템플릿을 사용하면 적응형 Forms 블록으로 사전 구성된 AEM 프로젝트를 빠르게 시작할 수 있습니다. AEM 모범 사례를 따르고 양식을 바로 빌드하는 가장 빠르고 쉬운 방법입니다.
 
 ### AEM Forms 보일러플레이트 저장소 템플릿 시작
 
-1. Github 계정에 로그인합니다.
-1. 다음으로 이동 [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms).
+1. AEM 프로젝트용 Github 저장소를 만듭니다. 저장소를 생성하려면:
+   1. 다음으로 이동 [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms).
 
-   ![AEM Forms Boilerplate](/help/edge/assets/aem-forms-boilerplate.png)
-1. 클릭 **이 템플릿 사용** 및 선택 **새 저장소 만들기** 옵션을 선택한 다음 이 저장소를 만들 위치를 선택하십시오.
-   ![AEM Forms Boilerplate를 사용하여 새 저장소 만들기](/help/edge/assets/create-new-repository-using-aem-forms-boilerplate.png)
+      ![AEM Forms Boilerplate](/help/edge/assets/aem-forms-boilerplate.png)
+   1. 다음을 클릭합니다. **이 템플릿 사용** 옵션을 선택하고 **새 저장소 만들기** 옵션을 선택합니다. 새 저장소 만들기 화면이 열립니다.
 
-   Adobe은 저장소를 public으로 설정할 것을 권장합니다. 새 저장소 만들기 화면에서 **공용** 옵션을 선택합니다.
+      ![AEM Forms Boilerplate를 사용하여 새 저장소 만들기](/help/edge/assets/create-new-repository-using-aem-forms-boilerplate.png)
+
+   1. 새 저장소 만들기 화면에서 **소유자**, 및 지정 **저장소 이름** . Adobe은 저장소를 로 설정할 것을 권장합니다. **공용**. 따라서 **공용** 옵션 및 클릭 **저장소 만들기**.
 
    ![저장소를 공개로 설정](/help/edge/assets/create-a-new-repo-keep-it-public.png)
 
@@ -61,35 +62,43 @@ AEM Forms Boilerplate 템플릿을 사용하면 적응형 양식 블록으로 �
 
    ![저장소를 공개로 설정](/help/edge/assets/install-aem-code-sync-app-for-your-repo.png)
 
-       >[!NOTE]
-       >
-       >
-       > IP 필터링과 함께 Github Enterprise를 사용하는 경우 허용 목록에 다음 IP를 추가할 수 있습니다. 3.227.118.73
-   
-   축하합니다! 새 웹 사이트가 실행 중입니다. `https://<branch>--<repo>--<owner>.hlx.page/`. 위의 예에서는 다음과 같습니다 [https://main--wefinance--wkndforms.hlx.page/](https://main--wefinance--wkndforms.hlx.page/).
+   >[!NOTE]
+   >
+   >
+   > IP 필터링과 함께 Github Enterprise를 사용하는 경우 허용 목록에 다음 IP를 추가할 수 있습니다. 3.227.118.73
+
+   축하합니다! 새 웹 사이트가 실행 중입니다. `https://<branch>--<repo>--<owner>.hlx.page/`.
 
    * `<branch>`는 GitHub 저장소의 분기를 나타냅니다.
    * `<repository>`는 GitHub 저장소를 나타냅니다.
    * `<owner>`는 GitHub 저장소를 호스팅하는 GitHub 계정의 사용자 이름을 나타냅니다.
 
+   예를 들어 분기 이름이 인 경우 `main`, 리포지토리: `wefinance`, 그리고 소유자는 `wkndforms`, 웹 사이트 실행 위치: [https://main--wefinance--wkndforms.hlx.page/](https://main--wefinance--wkndforms.hlx.page/).
 
-### Google 드라이브를 사용하여 고유한 콘텐츠 소스 연결
 
-GitHub에서 포크된 Boilerplate 저장소는 다음을 가리킵니다 [Google 드라이브 폴더에 저장된 컨텐츠 예](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). 이 읽기 전용 콘텐츠는 양식에 좋은 시작점을 제공합니다. 자유롭게 자신의 Google 드라이브에 복사하고 필요에 맞게 사용자 지정할 수 있습니다.
+
+### 고유한 콘텐츠 소스 연결
+
+새로 만든 Github 저장소는 다음을 가리킵니다 [Google 드라이브 폴더에 저장된 컨텐츠 예](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). 이 읽기 전용 콘텐츠는 양식에 좋은 시작점을 제공합니다. 자유롭게 자신의 Google 드라이브에 복사하고 필요에 맞게 사용자 지정할 수 있습니다.
 
 ![Google 드라이브의 샘플 컨텐츠](/help/edge/assets/folder-with-sample-content.png)
 
-자신의 콘텐츠를 연결하려면
+샘플 콘텐츠를 자신의 콘텐츠 폴더로 복사하고 Github 저장소를 자신의 콘텐츠 폴더로 지정하려면 다음을 수행하십시오.
 
 1. Google 드라이브 또는 Microsoft SharePoint에서 AEM 콘텐츠에만 해당하는 새 폴더를 만듭니다. 이 문서에서는 Microsoft SharePoint에서 만든 폴더를 사용합니다.
 
 1. Adobe Experience Manager 사용자(helix@adobe.com)와 폴더를 공유합니다.
 
-   ![액세스 관리 옵션을 사용하여 AEM 사용자와 폴더 공유](/help/edge/assets/share-folder-with-aem-user.png)
+   ![액세스 관리 옵션을 사용하여 AEM 사용자와 폴더 공유 - SharePoint](/help/edge/assets/share-folder-with-aem-user.png)
+
+   ![액세스 관리 옵션을 사용하여 AEM 사용자 - Google 드라이브와 폴더 공유](/help/edge/assets/share-google-drive-folder.png)
+
 
    Adobe Experience Manager 사용자에게 폴더에 대한 편집 권한을 제공했는지 확인합니다.
 
-   ![AEM 사용자와 폴더 공유, 편집 권한 제공](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png)
+   ![AEM 사용자와 폴더 공유, 편집 권한 제공-SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png)
+
+   ![AEM 사용자와 폴더 공유, 편집 권한 제공 - Google 드라이브](/help/edge/assets/add-aem-user-google-folder.png)
 
 1. 다음을 복사합니다. [Google 드라이브 폴더에 저장된 컨텐츠 예](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_) 폴더로 이동합니다. 복사하려면:
 
@@ -108,7 +117,6 @@ GitHub에서 포크된 Boilerplate 저장소는 다음을 가리킵니다 [Googl
 
 1. 이제 콘텐츠 폴더를 설정했으므로 이전에 AEM Forms Boilerplate을 사용하여 만든 GitHub의 프로젝트에 연결해야 합니다. 연결하려면:
 
-   1. Github 계정에 로그인합니다.
    1. AEM Forms Boilerplate을 사용하여 이전에 만든 GitHub 저장소로 이동합니다.
    1. 를 엽니다. `fstab.yaml` 편집할 수 있습니다.
    1. 기존 참조를 AEM 사용자와 공유한 폴더 경로(helix@adobe.com)로 바꿉니다.
@@ -132,17 +140,15 @@ GitHub에서 포크된 Boilerplate 저장소는 다음을 가리킵니다 [Googl
 
 
 
-   1. 참조를 업데이트하고 모든 것이 정상인 경우 업데이트된 &#39;fsatb.yaml 파일을 커밋하십시오. 이렇게 하면 작업이 저장되고 콘텐츠 폴더가 웹 사이트에 연결됩니다.
+   1. 업데이트된 항목 커밋 `fsatb.yaml` 파일, 참조를 업데이트하면 모든 것이 정상입니다. 빌드 문제가 발생하는 경우 다음을 참조하십시오. [GitHub 빌드 문제 해결](#troubleshooting-github-build-issues).
+
+
 
       ![업데이트된 fsatab.yaml 파일 커밋](/help/edge/assets/commit-updated-fstab-yaml.png)
 
+      이렇게 하면 콘텐츠 폴더가 웹 사이트에 연결됩니다. 참조를 업데이트하면 처음에 &quot;404 찾을 수 없음&quot; 오류가 발생할 수 있습니다. 이는 콘텐츠가 아직 미리보기되지 않았기 때문입니다. 다음 섹션에서는 콘텐츠 작성 및 미리보기를 시작하는 방법을 설명합니다.
 
-      >[!NOTE]
-      >
-      >
-      >참조를 업데이트하면 처음에 &quot;404 찾을 수 없음&quot; 오류가 발생할 수 있습니다. 이는 콘텐츠가 아직 미리보기되지 않았기 때문입니다. 다음 섹션에서는 콘텐츠 작성 및 미리보기를 시작하는 방법을 설명합니다.
-
-
+      ![업데이트된 fsatab.yaml 파일 커밋](/help/edge/assets/aem-forms-project-folder-error.png)
 
 ### 콘텐츠 미리보기 및 게시
 
@@ -175,8 +181,8 @@ GitHub에서 포크된 Boilerplate 저장소는 다음을 가리킵니다 [Googl
    파일을 미리 보면 새 브라우저 탭에 문서가 표시됩니다. 샘플 양식을 미리 보려면 다음 URL로 이동하십시오.
 
 
-   ```JSON
-       https://<branch>--<repository>--<owner>.hlx.live/<form-path>/<form-file-name>.json
+   ```HTML
+   https://<branch>--<repository>--<owner>.hlx.live
    ```
 
    * `<branch>`는 GitHub 저장소의 분기를 나타냅니다.
@@ -190,7 +196,32 @@ GitHub에서 포크된 Boilerplate 저장소는 다음을 가리킵니다 [Googl
 
 
 
-   [https://main--wefinance--wkndforms.hlx.page/enquiry](https://main--wefinance--wkndforms.hlx.page/enquiry).
+   [https://main--wefinance--wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).
+
+### 양식 업데이트
+
+1. Microsoft SharePoint 또는 Google 드라이브 폴더로 이동합니다.
+
+1. 를 엽니다. `enquiry.xlsx` 편집할 수 있습니다.
+
+   ![문의 양식](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+
+1. 제출 단추의 레이블을 다음으로 변경 `Let's Chat`.
+
+   ![문의 양식](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+
+1. AEM Sidekick을 사용하여 미리보기 및 게시 `enquiry.xlsx` 파일.
+
+   ![문의 양식](/help/edge/assets/enquiry-form-preview-publish.png)
+
+1. 조회 양식을 미리 보려면 다음 URL로 이동하십시오.
+
+
+   ```HTML
+   https://<branch>--<repository>--<owner>.hlx.page/enquiry
+   ```
+
+   제출 단추의 레이블이 업데이트됩니다. 이제 양식을 작성하고 제출 단추를 클릭하면 스프레드시트가 유효하지 않기 때문에 다음과 유사한 오류가 발생합니다 [아직 데이터를 수락하도록 설정](/help/edge/docs/forms/submit-forms.md).
 
 
 ### 스타일 및 기능 개발 시작
@@ -232,9 +263,9 @@ GitHub에서 포크된 Boilerplate 저장소는 다음을 가리킵니다 [Googl
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427789)
 
-기존 AEM 프로젝트가 있는 경우 적응형 양식 블록을 현재 프로젝트에 통합하여 양식 만들기를 시작할 수 있습니다. 통합하려면:
+기존 AEM 프로젝트가 있는 경우 적응형 Forms 블록을 현재 프로젝트에 통합하여 양식 만들기를 시작할 수 있습니다. 통합하려면:
 
-1. 적응형 양식 블록 저장소 https://github.com/adobe-rnd/aem-boilerplate-forms 를 컴퓨터에 복제합니다.
+1. 적응형 Forms 블록 저장소 https://github.com/adobe-rnd/aem-boilerplate-forms 를 컴퓨터에 복제합니다.
 
 1. 다운로드한 폴더 내에서 `blocks/form` 폴더를 삭제합니다. 이 폴더를 복사합니다. 이제 AEM 프로젝트의 로컬로 이동합니다. `blocks` 폴더를 복사한 양식 폴더를 여기에 붙여 넣습니다.
 
@@ -244,7 +275,7 @@ GitHub에서 포크된 Boilerplate 저장소는 다음을 가리킵니다 [Googl
 이번 단계가 끝났습니다! 적응형 Forms 블록은 이제 AEM 프로젝트의 일부입니다. AEM 페이지에 양식을 만들고 추가할 수 있습니다.
 
 
-### GitHub 빌드 문제 해결
+## GitHub 빌드 문제 해결
 
 잠재적인 문제를 해결하면 GitHub 빌드 프로세스를 원활하게 할 수 있습니다.
 
@@ -253,6 +284,14 @@ GitHub에서 포크된 Boilerplate 저장소는 다음을 가리킵니다 [Googl
 
 * **린팅 오류 처리**:
 린팅 오류가 발생하는 경우 우회할 수 있습니다. [EDS Project]/package.json 파일을 연 다음 &quot;lint&quot; 스크립트를 &quot;lint&quot;: &quot;npm run lint:js &amp;&amp; npm run lint:css&quot;에서 “lint“: &quot;lint&quot;: &quot;echo &#39;skipping linting for now&#39;&quot;로 수정합니다. 파일을 저장하고 변경 사항을 GitHub 프로젝트에 커밋합니다.
+
+
+## 참고 항목
+
+* [Google Sheets 또는 Microsoft Excel을 사용하여 양식 만들기](/help/edge/docs/forms/create-forms.md)
+* [양식을 Microsoft Excel 또는 Google Sheets에 직접 제출](/help/edge/docs/forms/submit-forms.md)
+* [양식 보기 변경](/help/edge/docs/forms/style-theme-forms.md)
+
 
 
 

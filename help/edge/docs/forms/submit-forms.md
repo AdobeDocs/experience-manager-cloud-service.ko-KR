@@ -1,11 +1,11 @@
 ---
 title: 데이터를 수신할 스프레드시트 준비
-description: 스프레드시트 및 적응형 양식 블록 필드를 사용하여 강력한 양식을 더 빨리 만드십시오!
+description: 스프레드시트 및 적응형 Forms 블록 필드를 사용하여 강력한 양식을 더 빨리 만드십시오!
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 71%
@@ -17,7 +17,7 @@ ht-degree: 71%
 
 [양식을 만들고 미리 본](/help/edge/docs/forms/create-forms.md) 후에는 해당 스프레드시트를 활성화하여 데이터 수신을 시작할 차례입니다.
 
-![문서 기반 작성 에코시스템](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
+![문서 기반 작성 생태계](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 <!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
@@ -55,7 +55,7 @@ ht-degree: 71%
 
 필드 이름이 `incoming` 시트에 추가되면 양식 제출을 수락할 준비가 됩니다. 양식을 미리 보고 이를 사용하여 시트에 데이터를 제출할 수 있습니다.
 
-데이터를 수신하도록 시트가 설정되면 다음 작업을 수행할 수 있습니다 [적응형 양식 블록을 사용하여 양식 미리 보기](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) 또는 [POST 요청 사용](#use-admin-apis-to-send-data-to-your-sheet) 데이터를 시트로 보내기 시작합니다.
+데이터를 수신하도록 시트가 설정되면 다음 작업을 수행할 수 있습니다 [적응형 Forms 블록을 사용하여 양식 미리 보기](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) 또는 [POST 요청 사용](#use-admin-apis-to-send-data-to-your-sheet) 데이터를 시트로 보내기 시작합니다.
 
 >[!WARNING]
 >
@@ -172,7 +172,7 @@ Admin API를 사용하여 스프레드시트에서 데이터를 수신하도록 
 
 ## 시트로 데이터 전송 {#send-data-to-your-sheet}
 
-시트가 데이터를 수신하도록 설정되면 다음 작업을 수행할 수 있습니다 [적응형 양식 블록을 사용하여 양식 미리 보기](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) 또는 [관리 API 사용](#use-admin-apis-to-send-data-to-your-sheet) 데이터를 시트로 보내기 시작합니다.
+시트가 데이터를 수신하도록 설정되면 다음 작업을 수행할 수 있습니다 [적응형 Forms 블록을 사용하여 양식 미리 보기](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) 또는 [관리 API 사용](#use-admin-apis-to-send-data-to-your-sheet) 데이터를 시트로 보내기 시작합니다.
 
 ### Admin API를 사용하여 시트에 데이터 전송
 

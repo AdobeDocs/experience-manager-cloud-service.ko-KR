@@ -5,71 +5,71 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 062d5a88-48ca-421f-bf0d-1483e3cfee28
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
 source-wordcount: '565'
-ht-degree: 8%
+ht-degree: 96%
 
 ---
 
 # 양식에 반복 가능한 섹션 추가
 
-적응형 양식 블록은 양식의 섹션 또는 구성 요소를 반복 가능하도록 추가하거나 만들 수 있는 기능을 제공합니다. 이를 통해 같은 유형의 데이터에 여러 번 정보를 입력할 수 있어 근무경력이나 학력 등 정보수집이 용이하다.
+적응형 Forms 블록은 양식의 섹션 또는 구성 요소를 반복 가능하게 추가하거나 만들 수 있는 기능을 제공합니다. 이를 통해 사용자는 경력이나 학력 등과 같은 정보를 수집하기 쉽도록 동일한 데이터 유형에 대한 정보를 여러 번 입력할 수 있습니다.
 
-예를 들어 개인의 작업 경험에 대한 정보를 수집하는 데 사용되는 양식을 생각해 보십시오. 각 이전 작업의 세부 정보를 캡처하는 반복 가능한 섹션이 있을 수 있습니다. 반복 가능 섹션에는 일반적으로 회사 이름, 직책, 고용 날짜 및 직무 책임과 같은 필드가 포함됩니다. 사용자는 반복 가능 섹션의 여러 인스턴스를 추가하여 보유하고 있는 각 작업에 대한 정보를 입력할 수 있습니다.
+예를 들어 개인 경력에 대한 정보를 수집하는 데 사용되는 양식을 고려해 보십시오. 이전 작업의 세부 정보를 캡처하는 반복 가능한 섹션이 있을 수 있습니다. 반복 가능한 섹션은 일반적으로 회사 이름, 직책, 고용일, 직무 등과 같은 필드를 포함합니다. 사용자는 반복 가능한 섹션의 여러 인스턴스를 추가하여 각 직무에 대한 정보를 입력할 수 있습니다.
 
 
 
-이 문서의 끝 부분에서는 다음 방법을 배웁니다.
+이 문서가 작성되면 다음 방법을 파악할 수 있습니다.
 
-* [양식에 반복 가능한 섹션 만들기](#add-repeatable-sections-to-a-form)
-* [양식의 최소 또는 최대 반복 횟수 설정](#set-minimum-or-maximum-number-of-repetitions-for-a-repeatable-section)
+* [양식에서 반복 가능한 섹션을 만드는 방법](#add-repeatable-sections-to-a-form)
+* [양식에서 최소 또는 최대 반복 횟수를 설정하는 방법](#set-minimum-or-maximum-number-of-repetitions-for-a-repeatable-section)
 
-## 반복 가능한 섹션 만들기
+## 반복 가능한 섹션을 만드는 방법
 
-양식에서 반복 가능한 섹션을 만들면 사용자가 동일한 데이터 세트의 여러 인스턴스를 입력할 수 있으므로 반복 정보를 효율적으로 수집할 수 있습니다. 양식에 반복 가능한 섹션을 만들려면 다음 작업을 수행하십시오.
+양식에서 반복 가능한 섹션을 만들면 사용자는 동일한 데이터 세트의 여러 인스턴스를 입력하여 반복적인 정보를 효율적으로 수집할 수 있습니다. 양식에서 반복 가능한 섹션을 만들려면
 
-1. Microsoft SharePoint 또는 Google Workspace에서 Edge Deliver 프로젝트 폴더로 이동하여 스프레드시트를 엽니다.
+1. Microsoft SharePoint 또는 Google Workspace의 Edge Delivery 프로젝트 폴더로 이동하여 스프레드시트를 엽니다.
 
-1. 을(를) 사용하여 양식 필드 추가 `type` 속성이 로 설정됨 `fieldset`
-1. 지정 `Name` 필드의 을 참조하십시오. 이름 속성은 반복 가능한 섹션을 만드는 데 사용됩니다.
-1. 설정을 통한 반복 기능 활성화 `repeatable` 끝 `true`.
-1. 설명 지정 `label` 필드용입니다. 반복 가능 섹션의 머리글 역할을 합니다.
+1. `type` 속성이 `fieldset`로 설정된 상태에서 양식 필드 추가
+1. 필드 `Name`을 지정합니다. 이름 속성은 반복 가능한 섹션을 만드는 데 사용됩니다.
+1. `repeatable`를 `true`로 설정하여 반복 기능을 활성화합니다.
+1. 필드에 설명 `label`을 지정합니다. 반복 가능한 섹션의 제목으로 사용됩니다.
 
-   Job 지원 양식 내의 고용 내역 섹션에 대한 설명은 아래 이미지를 참조하십시오.
+   입사지원서 양식 내 근무 경력 섹션에 대한 일러스트레이션은 아래 이미지를 참조하십시오.
 
    ![](/help/edge/assets/repeatable-section-example-job-application-form.png)
 
-1. 섹션에 포함할 각 필드에 대해 다음을 설정합니다. `Fieldset` 3단계에서 선택한 것과 동일한 이름의 속성입니다.
+1. 섹션에 포함할 각 필드에 대해 해당 `Fieldset` 속성을 3단계에서 선택한 동일한 이름으로 설정합니다.
 
-   예를 들어 을 지정합니다. `experience` 에 포함할 모든 관련 필드의 필드 집합 속성에서 `employment history` 섹션.
+   예를 들어 `employment history` 섹션에 포함될 모든 관련 필드의 Fieldset 속성에 `experience`를 지정합니다.
 
    ![반복 가능한 섹션 필드 및 해당 속성의 예](/help/edge/assets/repeatable-section--mention-fieldset-name-example-job-application-form.png)
 
-1. 사용 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 를 클릭하여 시트를 미리 보고 게시합니다. 반복 가능 섹션이 양식에 추가됩니다.
+1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content)을 사용하여 시트를 미리 보고 게시합니다. 반복 가능한 섹션이 양식에 추가됩니다.
 
-   반복 가능 섹션 아래에서 사용자는 직관적인 방법을 찾을 수 있습니다 **추가** 단추, 여러 섹션을 쉽게 추가할 수 있습니다.
+   반복 가능한 섹션 아래에서 사용자는 직관적인 **추가** 버튼을 찾아 여러 섹션을 간편하게 추가할 수 있습니다.
 
-   ![반복 가능한 섹션, 추가 단추, 여러 섹션 추가 ](/help/edge/assets/repeatable-section-example.png)
+   ![반복 가능한 섹션, 여러 섹션을 추가하는 추가 버튼 ](/help/edge/assets/repeatable-section-example.png)
 
 
-## 최소 및 최대 반복 설정
+## 최소 및 최대 반복 횟수 설정
 
-형식 설계에서는 반복 가능한 섹션의 최소 및 최대 반복을 설정하는 것이 좋습니다. 이를 통해 사용자를 효과적으로 안내하면서 제어 및 일관성을 확립할 수 있습니다. 최소 또는 최대 반복 횟수를 설정하려면
+양식 디자인에서 반복 가능한 섹션의 최소 및 최대 반복 횟수를 설정하는 것이 좋습니다. 이렇게 하면 사용자를 효과적으로 안내하면서 제어 기능을 설정하고 일관성을 유지할 수 있습니다. 최소 또는 최대 반복 횟수를 설정하려면
 
-1. Microsoft SharePoint 또는 Google Workspace에서 Edge Deliver 프로젝트 폴더로 이동하여 스프레드시트를 엽니다.
+1. Microsoft SharePoint 또는 Google Workspace의 Edge Delivery 프로젝트 폴더로 이동하여 스프레드시트를 엽니다.
 
-1. 의 필드용 `type` `fieldset` 및 `repeatable` 속성이 로 설정됨 `true`:
+1. `type`, `fieldset` 및 `repeatable` 속성의 필드가 `true`로 설정된 경우
 
-   * 설정 `min` 속성을 사용하여 구역을 반복할 수 있는 최소 횟수를 지정합니다.
+   * `min` 속성을 설정하여 섹션을 반복할 수 있는 최소 횟수를 지정합니다.
 
-   * 설정 `max` 속성을 사용하여 섹션을 반복할 수 있는 최대 횟수를 지정합니다.
+   * `max` 속성을 설정하여 섹션을 반복할 수 있는 최대 횟수를 지정합니다.
 
-   ![최소 및 최대 속성을 설정하여 섹션을 반복할 수 있는 횟수를 지정합니다](/help/edge/assets/repeatable-section-set-min-max.png)
+   ![최소 및 최대 속성을 설정하여 섹션을 반복할 수 있는 횟수를 지정합니다.](/help/edge/assets/repeatable-section-set-min-max.png)
 
 1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content)을 사용하여 시트를 미리 보고 게시합니다.
 
-   반복 가능한 섹션을 추가하면 사용자는 직관적인 방법을 찾게 됩니다 **삭제** 아이콘을 클릭하면 반복 가능한 섹션을 더 쉽게 제거할 수 있습니다. 추가한 후에는 이러한 섹션을 `min` 속성. 이렇게 하면 양식 완료에 대해 설정된 최소 요구 사항을 준수할 수 있습니다.
+   반복 가능한 섹션이 추가되면 사용자는 직관적인 **삭제** 아이콘을 찾아 반복 가능한 섹션을 더 쉽게 제거할 수 있습니다. 추가되면 이 세션은 `min` 속성으로 지정된 인스턴스보다 더 적은 수의 인스턴스로 줄어들 수 없습니다. 이렇게 하면 양식을 완성하는 데 필요한 최소 요구 사항을 준수할 수 있습니다.
 
 <!--
 
@@ -81,7 +81,7 @@ The form allows users to provide personal information, including details of the 
 
 ## Prerequisites
 
-The [Adaptive Form block is enabled](/help/edge/docs/forms/create-forms.md) for your Edge Delivery Services project. 
+The [Adaptive Forms Block is enabled](/help/edge/docs/forms/create-forms.md) for your Edge Delivery Services project. 
 
 ## Add a repeatable section to a form 
 
