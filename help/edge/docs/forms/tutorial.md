@@ -4,9 +4,9 @@ description: 이 튜토리얼은 새로운 AEM(Adobe Experience Manager Forms) �
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 30dfe0cfd7f845ba7a27699db22f8c4e61a0f7ed
 workflow-type: tm+mt
-source-wordcount: '1770'
+source-wordcount: '1803'
 ht-degree: 12%
 
 ---
@@ -198,31 +198,29 @@ AEM Forms Boilerplate 템플릿을 사용하면 적응형 Forms 블록으로 사
 
    [https://main--wefinance--wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).
 
-### 양식 업데이트
+### 양식 만들기
 
-1. Microsoft SharePoint 또는 Google 드라이브 폴더로 이동합니다.
+샘플 콘텐츠에는 &quot;조회&quot; 양식의 템플릿 역할을 하는 &quot;조회&quot; 시트가 포함되어 있습니다. 시트의 각 행은 [양식 필드](/help/edge/docs/forms/form-components.md#available-components)및 열 머리글은 [필드 속성](/help/edge/docs/forms/form-components.md#available-components). 이 샘플 양식을 사용하면 양식 빌드를 미리 시작할 수 있습니다.
 
-1. 를 엽니다. `enquiry.xlsx` 편집할 수 있습니다.
+![문의 양식](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-   ![문의 양식](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+필드 레이블을 업데이트하는 것부터 시작하겠습니다. 편집할 &#39;조회&#39; 시트를 열고 제출 버튼의 레이블을 다음으로 변경 `Let's Chat`을 클릭하고 사이드 킥을 사용하여 게시합니다.
 
-1. 제출 단추의 레이블을 다음으로 변경 `Let's Chat`.
+![문의 양식](/help/edge/assets/enquiry-form-preview-publish.png)
 
-   ![문의 양식](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
-
-1. AEM Sidekick을 사용하여 미리보기 및 게시 `enquiry.xlsx` 파일.
-
-   ![문의 양식](/help/edge/assets/enquiry-form-preview-publish.png)
-
-1. 조회 양식을 미리 보려면 다음 URL로 이동하십시오.
+업데이트된 조회 양식을 미리 보려면 다음 URL로 이동하십시오.
 
 
-   ```HTML
-   https://<branch>--<repository>--<owner>.hlx.page/enquiry
-   ```
+```HTML
+    https://<branch>--<repository>--<owner>.hlx.page/enquiry
+       
+```
 
-   제출 단추의 레이블이 업데이트됩니다. 이제 양식을 작성하고 제출 단추를 클릭하면 스프레드시트가 유효하지 않기 때문에 다음과 유사한 오류가 발생합니다 [아직 데이터를 수락하도록 설정](/help/edge/docs/forms/submit-forms.md).
+제출 단추의 레이블이 (으)로 업데이트됩니다. `Let's Chat`.
 
+![문의 양식](/help/edge/assets/updated-form.png)
+
+새 양식 만들기 및 게시에 대한 자세한 내용은 [양식 만들기](/help/edge/docs/forms/create-forms.md) 가이드.
 
 ### 스타일 및 기능 개발 시작
 
