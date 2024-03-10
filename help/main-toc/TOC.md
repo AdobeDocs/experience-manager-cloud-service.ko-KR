@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ca65bb637c70e35ff7d7749ed7e1e66e11cdb315
+source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
 workflow-type: tm+mt
-source-wordcount: '4774'
-ht-degree: 98%
+source-wordcount: '4776'
+ht-degree: 99%
 
 ---
 
@@ -181,7 +181,7 @@ ht-degree: 98%
    + [AEM as a Cloud Service 보안 고려 사항](/help/security/security-considerations.md)
    + [Adobe Developer Console에서 JWT 자격 증명 사용 중단](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 + 온보딩 {#onboarding}
-   + [여기에서 시작](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=ko-KR)
+   + [여기에서 시작](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + 온보딩 여정 {#journey}
       + [온보딩 여정 개요](/help/journey-onboarding/overview.md)
       + [온보딩 준비](/help/journey-onboarding/preparation.md)
@@ -485,7 +485,7 @@ ht-degree: 98%
       + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
       + [구조 트리](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [미리보기 - JSON 표현식](/help/assets/content-fragments/content-fragments-json-preview.md)
-      + [MSM을 사용하여 콘텐츠 조각 재사용(에셋용)](/help/assets/content-fragments/content-fragments-msm.md)
+      + [MSM(자산용)을 사용하여 콘텐츠 조각 재사용](/help/assets/content-fragments/content-fragments-msm.md)
    + Dynamic Media {#dynamicmedia}
       + Dynamic Media 여정: 기본 사항 {#dm-journey}
          + [1부: Dynamic Media 소개 - 사용 사례 - 자산이 시스템을 통해 이동하는 방법](/help/assets/dynamic-media/dm-journey-part1.md)
@@ -637,7 +637,7 @@ ht-degree: 98%
             + [적응형 양식에서 사용자 정의 오류 핸들러 추가](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [핵심 구성 요소 기반 적응형 양식의 로케일 추가](/help/forms/supporting-new-language-localization-core-components.md)
             + [사용자 정의 함수 만들기 및 사용](/help/forms/create-and-use-custom-functions.md)
-            + [핵심 구성 요소를 기반으로 적응형 양식에 규칙 추가](/help/forms/rule-editor-core-components.md)
+            + [핵심 구성 요소 기반 적응형 양식에 규칙 추가](/help/forms/rule-editor-core-components.md)
       + 기초 구성 요소 {#authoring-adaptive-forms-foundation-components}
          + PDF 양식을 적응형 양식으로 변환 {#afcs}
             + [자동 양식 전환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -784,8 +784,8 @@ ht-degree: 98%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [마이그레이션](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
-+ Edge Delivery Services이 있는 AEM {#edge-delivery}
-   + [Edge Delivery Services 시작](/help/edge/overview.md)
++ Edge Delivery Services가 포함된 AEM {#edge-delivery}
+   + [Edge Delivery Services 시작하기](/help/edge/overview.md)
    + [Edge Delivery 사용](/help/edge/using.md)
    + [개발자 시작 안내서](/help/edge/edge-dev-getting-started.md)
    + [Edge Delivery용 콘텐츠 작성](/help/edge/authoring.md)
@@ -823,12 +823,13 @@ ht-degree: 98%
    + Edge Delivery 양식 빌드 {#build-forms}
       + [개요](/help/edge/docs/forms/overview.md)
       + 시작하기 {#getting-started-eds-forms}
+         + [시작](/help/edge/docs/forms/tutorial.md)
          + [양식 만들기 및 미리 보기](/help/edge/docs/forms/create-forms.md)
          + [양식을 활성화하여 데이터 전송](/help/edge/docs/forms/submit-forms.md)
          + [사이트 페이지에 양식 게시](/help/edge/docs/forms/publish-forms.md)
          + [양식 필드에 유효성 검사 추가](/help/edge/docs/forms/validate-forms.md)
          + [양식의 테마 및 스타일 변경](/help/edge/docs/forms/style-theme-forms.md)
-         + [규칙을 사용하여 양식에 동적 동작 추가](/help/edge/docs/forms/rules-forms.md)
+         + [규칙을 사용하여 양식에 동적 비헤이비어 추가](/help/edge/docs/forms/rules-forms.md)
          + [감사 인사 페이지](/help/edge/docs/forms/thank-you-page-form.md)
       + 기능 {#advanced-features-eds-forms}
          + [양식 조각](/help/edge/docs/forms/form-fragments.md)
@@ -848,7 +849,7 @@ ht-degree: 98%
       + [관리 API](https://www.aem.live/docs/admin.html)
       + [AEM 상태](https://www.aemstatus.net)
       + 도구 {#tools}
-         + [AEM Sidekick Chrome 확장 프로그램](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+         + [AEM Sidekick Chrome 확장 기능](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
          + [Github 봇](https://github.com/apps/aem-code-sync)
          + [감사 로그](/help/edge/docs/auditlog.md)
 + Headless {#headless}
@@ -1093,7 +1094,7 @@ ht-degree: 98%
       + [ContextHub 진단](/help/implementing/developing/personalization/contexthub-diagnostics.md)
       + [ContextHub 확장](/help/implementing/developing/personalization/extending-contexthub.md)
       + [ContextHub API](/help/implementing/developing/personalization/contexthub-api.md)
-      + [ContextHub를 사용하여 세분화 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=ko-KR)
+      + [ContextHub를 사용하여 세분화 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html)
    + AEM as a Cloud Service 구성 및 확장 {#configuring-and-extending}
       + App Builder를 사용하여 AEM 확장{#app-builder}
          + [Adobe Developer App Builder를 사용하여 AEM 확장](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)

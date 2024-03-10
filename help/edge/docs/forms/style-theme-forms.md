@@ -5,20 +5,20 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 63%
+source-wordcount: '1819'
+ht-degree: 65%
 
 ---
 
 # 양식 필드 스타일 지정
 
-Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이트에서 사용자 상호 작용에 중요한 역할을 합니다. 이 안내서에서는 내에서 다양한 양식 필드를 스타일링하는 기본 사항을 다룹니다. [적응형 양식 블록](/help/edge/docs/forms/create-forms.md)를 사용하면 시각적으로 호소력 있고 사용자에게 친숙한 양식을 만들 수 있습니다.
+Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이트에서 사용자 상호 작용에 중요한 역할을 합니다. 이 안내서에서는 [적응형 양식 블록](/help/edge/docs/forms/create-forms.md) 내의 다양한 양식 필드 스타일 지정에 대한 기본 사항을 다루므로 시각적으로 매력적이고 사용자 친화적인 양식을 만드는 데 도움이 됩니다.
 
 ## 양식 필드 유형 이해
 
-스타일링에 들어가기 전에 적응형 양식 블록에서 지원하는 일반적인 양식 필드 유형을 검토해 보겠습니다.
+스타일 지정을 시작하기 전에 양식 블록에서 지원하는 일반적인 적응형 양식 필드 유형을 검토해 보겠습니다.
 
 * 입력 필드: 여기에는 텍스트 입력, 이메일 입력, 암호 입력 등이 포함됩니다.
 * 확인란 그룹: 여러 옵션을 선택하는 데 사용됩니다.
@@ -35,11 +35,11 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 * 상자 모델: CSS 상자 모델은 HTML 요소의 구조를 패딩, 테두리 및 여백으로 둘러싸인 콘텐츠 영역으로 기술합니다.
 * Flexbox/격자: CSS Flexbox 및 격자 레이아웃은 반응성이 뛰어나고 유연한 디자인을 만들기 위한 강력한 도구입니다.
 
-## 적응형 양식 블록을 위한 양식 스타일링
+## 적응형 양식 블록의 양식 스타일 지정
 
-적응형 양식 블록은 양식 구성 요소를 선택하고 스타일링하는 프로세스를 단순화하는 표준화된 HTML 구조를 제공합니다.
+적응형 양식 블록은 표준화된 HTML 구조를 제공하여 양식 구성 요소 선택 및 스타일 지정 프로세스를 단순화합니다.
 
-* **기본 스타일 업데이트**: `/blocks/form/form.css file`을 편집하여 양식의 기본 스타일을 수정할 수 있습니다. 이 파일은 다단계 마법사 양식을 지원하여 양식에 대한 포괄적인 스타일을 제공합니다. 양식 전반에 걸쳐 손쉬운 사용자 정의, 유지 관리 및 균일한 스타일 지정을 위해 사용자 정의 CSS 변수 사용을 강조합니다. 적응형 양식 블록을 프로젝트에 추가하는 방법에 대한 지침은 [양식 만들기](/help/edge/docs/forms/create-forms.md).
+* **기본 스타일 업데이트**: `/blocks/form/form.css file`을 편집하여 양식의 기본 스타일을 수정할 수 있습니다. 이 파일은 다단계 마법사 양식을 지원하여 양식에 대한 포괄적인 스타일을 제공합니다. 양식 전반에 걸쳐 손쉬운 사용자 정의, 유지 관리 및 균일한 스타일 지정을 위해 사용자 정의 CSS 변수 사용을 강조합니다. 프로젝트에 적응형 양식 블록을 추가하는 방법에 대한 지침은 [양식 만들기](/help/edge/docs/forms/create-forms.md)를 참조하십시오.
 
 * **사용자 정의**: 기본 `forms.css`를 베이스로 사용하고 이를 사용자 정의하여 구성 요소의 모양과 느낌을 수정하면 시각적으로 매력적이고 사용자 친화적인 구성 요소를 만들 수 있습니다. 파일 구조를 조직하고 양식 스타일을 유지하여 웹 사이트 전체에서 디자인의 일관성을 유지합니다.
 
@@ -51,7 +51,7 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 
 * **양식 스타일 지정:** 이 섹션에서는 선택기를 사용하여 양식 구성 요소의 스타일을 지정해 특정 HTML 요소를 타겟팅하는 데 중점을 둡니다. 입력 필드, 텍스트 영역, 확인란, 라디오 버튼, 파일 입력, 양식 레이블 및 설명에 대한 스타일을 정의합니다.
 
-* **마법사 스타일 지정(해당하는 경우):** 이 섹션에서는 각 단계가 한 번에 하나씩 표시되는 다단계 형식인 마법사 레이아웃의 스타일을 지정하는 데 중점을 둡니다. 마법사 컨테이너, 필드 세트, 범례, 탐색 버튼 및 반응형 레이아웃에 대한 스타일을 정의합니다.
+* **마법사 스타일 지정(해당하는 경우):** 이 섹션에서는 각 단계가 한 번에 하나씩 표시되는 다단계 형식인 마법사 레이아웃의 스타일을 지정하는 데 중점을 둡니다. 마법사 컨테이너, Fieldset, 범례, 탐색 버튼 및 반응형 레이아웃에 대한 스타일을 정의합니다.
 
 * **미디어 쿼리:** 다양한 화면 크기를 위한 스타일을 제공하여 그에 따라 레이아웃과 스타일을 조정할 수 있습니다.
 
@@ -60,7 +60,7 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 
 ## 구성 요소 구조
 
-적응형 양식 블록은 다양한 양식 요소에 대해 일관된 HTML 구조를 제공하여 더 쉬운 스타일링 및 관리를 보장합니다. 스타일 지정을 위해 CSS를 사용하여 구성 요소를 조작할 수 있습니다.
+적응형 양식 블록은 다양한 양식 요소에 대해 일관된 HTML 구조를 제공하므로 스타일 지정과 관리를 더 용이하게 해 줍니다. 스타일 지정을 위해 CSS를 사용하여 구성 요소를 조작할 수 있습니다.
 
 ### 일반 구성 요소(드롭다운, 라디오 그룹 및 확인란 그룹 제외):
 
@@ -69,18 +69,18 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 #### HTML 구조
 
 ```HTML
-<div class="form-{Type}-wrapper form-{Name} field-wrapper" data-required={Required}>
-  <label for="{FieldId}" class="field-label">Field Label</label>
-  <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id="{FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
-  <div class="field-description" aria-live="polite" id="{FieldId}-description">
-    Hint - Description of the field.
-  </div>
+<div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
+   <label for="{FieldId}" class="field-label">First Name</label>
+   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
+   <div class="field-description" aria-live="polite" id="{FieldId}-description">
+    Hint - First name should be minimum 3 characters and a maximum of 10 characters.
+   </div>
 </div>
 ```
 
-* 클래스: div 요소에는 특정 요소 및 스타일을 타겟팅하기 위한 여러 클래스가 있습니다. CSS 선택기가 양식 필드의 스타일을 지정하려면 `form-{Type}-wrapper` 또는 `form-{Name}`이(가) 필요합니다.
-   * {Type}: 필드 유형으로 구성 요소를 식별합니다. 그 예로는 텍스트(form-text-wrapper), 숫자(form-number-wrapper), 날짜(form-date-wrapper)가 있습니다.
-   * {Name}: 이름으로 구성 요소를 식별합니다. 필드 이름에는 영숫자 문자만 사용할 수 있으며 이름에 있는 여러 개의 연속 대시는 하나의 대시`(-)`로 대체됩니다. 필드 이름의 시작 및 끝에 있는 대시는 제거됩니다. 그 예로는 이름(form-first-name field-wrapper)이 있습니다.
+* 클래스: div 요소에는 특정 요소 및 스타일을 타겟팅하기 위한 여러 클래스가 있습니다. CSS 선택기가 양식 필드의 스타일을 지정하려면 `{Type}-wrapper` 또는 `field-{Name}`이(가) 필요합니다.
+   * {Type}: 필드 유형으로 구성 요소를 식별합니다. 예: 텍스트(텍스트 래퍼), 숫자(숫자 래퍼), 날짜(날짜 래퍼).
+   * {Name}: 이름으로 구성 요소를 식별합니다. 필드 이름에는 영숫자 문자만 사용할 수 있으며 이름에 있는 여러 개의 연속 대시는 하나의 대시`(-)`로 대체됩니다. 필드 이름의 시작 및 끝에 있는 대시는 제거됩니다. 예: 이름 (field-first-name field-wrapper).
    * {FieldId}: 자동으로 생성된 필드의 고유 식별자입니다.
    * {Required}: 필드가 필수인지 여부를 나타내는 부울입니다.
 * 레이블: `label` 요소는 필드에 대한 설명 텍스트를 제공하고 `for` 속성을 사용하여 이를 입력 요소와 연결합니다.
@@ -135,7 +135,7 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 ```CSS
 /*Target all text input fields */
 
-.form-text-wrapper input {
+text-wrapper input {
   border: 1px solid #ccc;
   padding: 8px;
   border-radius: 4px;
@@ -143,7 +143,7 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 
 /*Target all fields with name first-name*/
 
-.form-first-name input {
+first-name input {
   border: 1px solid #ccc;
   padding: 8px;
   border-radius: 4px;
@@ -237,43 +237,110 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 * 배경색: 시각적인 조화를 위해 일관된 배경색을 설정합니다.
 * 화살표 맞춤화: 선택적 스타일로 기본 드롭다운 화살표를 숨기고 유니코드 문자와 위치 지정을 사용하여 사용자 정의 화살표를 만듭니다.
 
-### 라디오 및 확인란 그룹
+### 라디오 그룹
 
-드롭다운 구성 요소와 유사하게 라디오 및 확인란 그룹에는 고유한 HTML 구조 및 CSS 고려 사항이 있습니다.
+드롭다운 구성 요소와 마찬가지로 라디오 그룹에는 고유한 HTML 구조 및 CSS 구조가 있습니다.
 
 #### 라디오 그룹 HTML 구조
 
 ```HTML
-<div class="form-checkbox-group-wrapper form-{Name} field-wrapper" data-required={required}>
-  <label class="field-label">{Label Text}</label>
-  <div class="checkbox-group">
-    <input type="checkbox" id="{FieldId}-1" name="{Name}" value="{Value1}">
-    <label for="{FieldId}-1">{Option 1 Text}</label>
-    <input type="checkbox" id="{FieldId}-2" name="{Name}" value="{Value2}">
-    <label for="{FieldId}-2">{Option 2 Text}</label>
-    </div>
-  <div class="field-description" aria-live="polite" id="{FieldId}-description">
-    Hint - Select multiple options (if applicable).
-  </div>
-</div>
+<fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
+   <legend for="{FieldId}" class="field-label">....</legend>
+   <% for each radio in Group %>
+   <div class="radio-wrapper field-{Name}">
+      <input type="radio" value="" id="{UniqueId}" data-field-type="radio-group" name="{FieldId}">
+      <label for="{UniqueId}" class="field-label">...</label>
+   </div>
+   <% end for %>
+</fieldset>
 ```
 
+#### HTML 구조 예
+
+```HTML
+<fieldset class="radio-group-wrapper field-color field-wrapper" id="color_preference" name="color_preference" data-required="true">
+  <legend for="color_preference" class="field-label">Favorite Color:</legend>
+  <% for each radio in Group %>
+    <div class="radio-wrapper field-color">
+      <input type="radio" value="red" id="color_red" data-field-type="radio-group" name="color_preference">
+      <label for="color_red" class="field-label">Red</label>
+    </div>
+    <div class="radio-wrapper field-color">
+      <input type="radio" value="green" id="color_green" data-field-type="radio-group" name="color_preference">
+      <label for="color_green" class="field-label">Green</label>
+    </div>
+    <div class="radio-wrapper field-color">
+      <input type="radio" value="blue" id="color_blue" data-field-type="radio-group" name="color_preference">
+      <label for="color_blue" class="field-label">Blue</label>
+    </div>
+  <% end for %>
+</fieldset>
+```
+
+#### 드롭다운 구성 요소용 CSS 선택기 예
+
+* 필드 세트 타겟팅
+
+```CSS
+  .radio-group-wrapper {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+```
+
+이 선택기는 클래스 radio-group-wrapper가 있는 모든 필드 세트를 타겟팅합니다. 이 기능은 전체 라디오 그룹에 일반 스타일을 적용하는 데 유용합니다.
+
+* 타겟팅 라디오 단추 레이블
+
+```CSS
+.radio-wrapper label {
+    font-weight: normal;
+    margin-right: 10px;
+  }
+```
+
+* 이름을 기반으로 특정 필드 세트 내의 모든 라디오 버튼 레이블 타깃팅
+
+```CSS
+.field-color .radio-wrapper label {
+  /* Your styles here */
+}
+```
+
+### 확인란 그룹
 
 #### 확인란 그룹 HTML 구조
 
 ```HTML
-<div class="form-checkbox-group-wrapper form-{Name} field-wrapper" data-required={required}>
-  <label class="field-label">{Label Text}</label>
-  <div class="checkbox-group">
-    <input type="checkbox" id="{FieldId}-1" name="{Name}" value="{Value1}">
-    <label for="{FieldId}-1">{Option 1 Text}</label>
-    <input type="checkbox" id="{FieldId}-2" name="{Name}" value="{Value2}">
-    <label for="{FieldId}-2">{Option 2 Text}</label>
-    </div>
-  <div class="field-description" aria-live="polite" id="{FieldId}-description">
-    Hint - Select multiple options (if applicable).
+<fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
+   <legend for="{FieldId}" class="field-label">....</legend>
+   <% for each radio in Group %>
+   <div class="radio-wrapper field-{Name}">
+      <input type="checkbox" value="" id="{UniqueId}" data-field-type="checkbox-group" name="{FieldId}">
+      <label for="{UniqueId}" class="field-label">...</label>
+   </div>
+   <% end for %>
+</fieldset>
+```
+
+#### HTML 구조 예
+
+```HTML
+<fieldset class="checkbox-group-wrapper field-topping field-wrapper" id="topping_preference" name="topping_preference" data-required="false">
+  <legend for="topping_preference" class="field-label">Pizza Toppings:</legend>
+  <div class="checkbox-wrapper field-topping">
+    <input type="checkbox" value="pepperoni" id="topping_pepperoni" data-field-type="checkbox-group" name="topping_preference">
+    <label for="topping_pepperoni" class="field-label">Pepperoni</label>
   </div>
-</div>
+  <div class="checkbox-wrapper field-topping">
+    <input type="checkbox" value="mushrooms" id="topping_mushrooms" data-field-type="checkbox-group" name="topping_preference">
+    <label for="topping_mushrooms" class="field-label">Mushrooms</label>
+  </div>
+  <div class="checkbox-wrapper field-topping">
+    <input type="checkbox" value="onions" id="topping_onions" data-field-type="checkbox-group" name="topping_preference">
+    <label for="topping_onions" class="field-label">Onions</label>
+  </div>
+</fieldset>
 ```
 
 **라디오 및 체크박스 그룹용 CSS 선택기의 예**
