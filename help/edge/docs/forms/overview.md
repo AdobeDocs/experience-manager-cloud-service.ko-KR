@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
+source-git-commit: 67d9eaaf18725403f6a152b04e022cdca6902de0
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '932'
 ht-degree: 2%
 
 ---
@@ -41,6 +41,13 @@ Edge Delivery Services는 GitHub를 사용하므로 고객은 GitHub 저장소�
 ![설치 AEM Sidekick](/help/edge/assets/install-aem-sidekick.png)
 
 AEM Forms Edge Delivery Services은 다음과 같은 양식 블록을 제공합니다. [적응형 Forms 블록](/help/edge/docs/forms/create-forms.md) Edge Delivery Services 사이트에 양식을 추가합니다.
+
+다음 중에서 선택 [문서 기반 작성](#document-based-authoring-features) 및 [AEM 작성](#aem-authoring-features) 특정 요구 사항에 따라 다릅니다.
+
+이름 및 전자 메일(연락처 양식, 리드 생성 양식 또는 서비스 요청 양식)과 같은 기본 정보를 수집하는 간단한 양식의 경우 스프레드시트로 이동하려면 데이터만 필요합니다. [문서 기반 작성](/help/edge/docs/forms/create-forms.md) 딱 맞네요. Google 문서의 문서처럼 이러한 양식을 작성할 수 있습니다.
+
+여러 패널, 복잡한 규칙 및 비즈니스 로직, 데이터 조작, 외부 시스템과의 통합 또는 AEM 기능을 사용한 간소화된 워크플로가 필요한 경우와 같이 양식이 더 복잡해지면 [AEM 작성](/help/forms/creating-adaptive-form-core-components.md) 더 나은 선택입니다.
+
 
 ### 문서 기반 작성 및 AEM 작성의 주요 기능
 
@@ -119,6 +126,13 @@ AEM 작성(적응형 Forms 편집기 사용)은 양식 작성을 위한 WYSIWYG 
 * Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics 등 다양한 데이터 소스에 데이터를 제출하는 작업을 포함하여 양식 제출을 처리하기 위해 여러 제출 작업을 구성할 수 있습니다.
 
 기본적으로 AEM Authoring은 문서 기반 작성의 토대를 기반으로 구축되므로 복잡한 양식을 만들고 관리하는 데 필요한 고급 툴킷을 제공합니다.
+
+### 작성 워크플로
+
+![문서 기반 작성](/help/edge/assets/document-based-authoring-workflow.png)
+
+![AEM 작성](/help/edge/assets/aem-authoring-workflow.png)
+
 
 ## 양식 만들기 시작
 
