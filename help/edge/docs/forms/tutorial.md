@@ -4,9 +4,9 @@ description: 이 튜토리얼은 새로운 AEM(Adobe Experience Manager Forms) �
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
+source-git-commit: 14171647dce7d2f6ce985616035eefa62c6955db
 workflow-type: tm+mt
-source-wordcount: '1786'
+source-wordcount: '1878'
 ht-degree: 10%
 
 ---
@@ -106,7 +106,7 @@ AEM Forms Boilerplate 템플릿을 사용하면 적응형 Forms 블록으로 사
 
       ![샘플 콘텐츠 다운로드](/help/edge/assets/download-sample-content.png)
 
-      다음 `index`, `nav`, 및 `footer` 파일은 페이지의 기본 레이아웃을 정의하며 프로젝트 전체에서 거의 변경되지 않습니다. 또한 대부분의 다른 콘텐츠 파일과 다른 특정 구조를 가지고 있습니다. 이러한 파일을 검사하면 AEM Projects에서 콘텐츠가 구성되는 방식을 파악할 수 있습니다.
+      다음 `nav` 및 `footer` 파일은 페이지의 기본 레이아웃을 정의하며 프로젝트 전체에서 거의 변경되지 않습니다. 또한 대부분의 다른 콘텐츠 파일과 다른 특정 구조를 가지고 있습니다. 이러한 파일을 검사하면 AEM Projects에서 콘텐츠가 구성되는 방식을 파악할 수 있습니다.
 
 
    1. 이 파일을 Microsoft SharePoint 또는 Google 드라이브 폴더에 업로드합니다.
@@ -148,7 +148,7 @@ AEM Forms Boilerplate 템플릿을 사용하면 적응형 Forms 블록으로 사
 
       이렇게 하면 콘텐츠 폴더가 웹 사이트에 연결됩니다. 참조를 업데이트하면 처음에 &quot;404 찾을 수 없음&quot; 오류가 발생할 수 있습니다. 이는 콘텐츠가 아직 미리보기되지 않았기 때문입니다. 다음 섹션에서는 콘텐츠 작성 및 미리보기를 시작하는 방법을 설명합니다.
 
-      ![업데이트된 fsatab.yaml 파일 커밋](/help/edge/assets/aem-forms-project-folder-error.png)
+
 
 ### 콘텐츠 미리보기 및 게시
 
@@ -204,9 +204,22 @@ AEM Forms Boilerplate 템플릿을 사용하면 적응형 Forms 블록으로 사
 
 ![문의 양식](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-필드 레이블 업데이트부터 시작하겠습니다. 편집할 &#39;조회&#39; 시트를 열고 제출 버튼의 레이블을 다음으로 변경 `Let's Chat`을 클릭하고 사이드 킥을 사용하여 게시합니다.
+필드 레이블 업데이트부터 시작하겠습니다. 편집할 &#39;조회&#39; 시트를 열고 제출 버튼의 레이블을 다음으로 변경 `Let's Chat` AEM Sidekick 를 사용하여 파일을 미리 보고 게시할 수 있습니다.
 
 ![문의 양식](/help/edge/assets/enquiry-form-preview-publish.png)
+
+파일을 미리 보거나 게시하면 파일의 JSON 버전이 새 탭에 나타납니다. 파일의 미리보기(.hlx.page) 또는 게시(.hlx.live) URL을 복사합니다.
+
+![양식 스프레드시트의 JSON](/help/edge/assets//preview-and-publish-enquiry-form.png)
+
+를 엽니다. `enquiry` 을 클릭하고 양식 블록의 URL을 이전 단계에서 복사한 파일의 URL로 바꿉니다. URL이 하이퍼링크인지 확인합니다.
+
+![스프레드시트의 URL에 대한 .json URL이 포함된 조회 파일](/help/edge/assets/enquiry-doc-to-embed-form.png)
+
+AEM Sidekick을 사용하여 조회 문서를 미리 보고 게시할 수 있습니다.
+
+![스프레드시트의 URL에 대한 .json URL이 포함된 조회 파일](/help/edge/assets/preview-and-publish-enquiry-document.png)
+
 
 업데이트된 조회 양식을 미리 보려면 다음 URL로 이동하십시오.
 
