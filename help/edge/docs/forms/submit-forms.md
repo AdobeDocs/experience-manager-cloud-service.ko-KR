@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 71%
@@ -17,7 +17,7 @@ ht-degree: 71%
 
 [양식을 만들고 미리 본](/help/edge/docs/forms/create-forms.md) 후에는 해당 스프레드시트를 활성화하여 데이터 수신을 시작할 차례입니다.
 
-![문서 기반 작성 생태계](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
+![문서 기반 작성 에코시스템](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 <!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)

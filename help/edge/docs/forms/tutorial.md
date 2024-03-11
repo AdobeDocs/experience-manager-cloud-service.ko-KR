@@ -4,7 +4,7 @@ description: 이 튜토리얼은 새로운 AEM(Adobe Experience Manager Forms) �
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 14171647dce7d2f6ce985616035eefa62c6955db
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '1878'
 ht-degree: 10%
@@ -18,11 +18,11 @@ ht-degree: 10%
 
 이러한 양식은 데이터를 Microsoft Excel 또는 Google Sheets 파일에 직접 제출하므로 Google Sheets, Microsoft Excel 및 Microsoft Sharepoint의 활발한 에코시스템과 강력한 API를 사용하여 쉽게 제출 데이터를 처리하거나 기존 비즈니스 워크플로를 시작할 수 있습니다.
 
-AEM Forms은 캡처된 데이터를 캡처하고 저장할 양식을 쉽게 생성할 수 있도록 적응형 Forms 블록이라고 하는 블록을 제공합니다. 적응형 Forms 블록이 사전 장착된 새 AEM 프로젝트를 생성하거나 적응형 Forms 블록을 기존 AEM 프로젝트에 추가할 수 있습니다.
+AEM Forms은 캡처된 데이터를 캡처하고 저장할 양식을 쉽게 생성할 수 있도록 적응형 Forms 블록이라고 하는 블록을 제공합니다. 적응형 Forms 블록으로 사전 구성된 새 AEM 프로젝트를 만들거나 적응형 Forms 블록을 기존 AEM 프로젝트에 추가할 수 있습니다.
 
 이 AEM Forms 자습서에서는 새 Adobe Experience Manager(AEM) Forms 프로젝트를 사용하여 사용자 정의 양식을 만들고, 미리 보고, 게시하는 과정을 안내합니다. 기존 AEM 프로젝트에 적응형 Forms 블록을 추가하는 방법도 배우게 됩니다.
 
-* **[적응형 Forms 블록이 사전 장착된 새 AEM 프로젝트 만들기](#create-a-new-eds-project-pre-equipped-with-adaptive-forms-block)**
+* **[적응형 Forms 블록으로 사전 구성된 새 AEM 프로젝트 만들기](#create-a-new-eds-project-pre-configured-with-adaptive-forms-block)**
 * **[기존 AEM 프로젝트에 적응형 Forms 블록 추가](#add-adaptive-forms-block-to-an-existing-eds-project)**
 
 
@@ -37,7 +37,7 @@ AEM Forms은 캡처된 데이터를 캡처하고 저장할 양식을 쉽게 생�
 **앞장 서!** 이 자습서에서는 macOS, Chrome 및 Visual Studio 코드를 사용합니다. 다른 설정에 맞게 단계를 조정할 수 있지만 스크린샷 및 특정 UI 요소는 선택한 운영 체제, 브라우저 및 코드 편집기에 따라 다를 수 있습니다.
 
 
-## 적응형 Forms 블록이 사전 장착된 새 AEM 프로젝트 만들기
+## 적응형 Forms 블록으로 사전 구성된 새 AEM 프로젝트 만들기
 
 AEM Forms Boilerplate 템플릿을 사용하면 적응형 Forms 블록으로 사전 구성된 AEM 프로젝트를 빠르게 시작할 수 있습니다. AEM 모범 사례를 따르고 양식을 바로 빌드하는 가장 빠르고 쉬운 방법입니다.
 

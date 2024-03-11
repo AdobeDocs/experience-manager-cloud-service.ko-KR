@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 아키텍처 소개
-description: Adobe Experience Manager as a Cloud Service 아키텍처 소개.
+description: Adobe Experience Manager as a Cloud Service 아키텍처 소개
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 25af074bcb32e47732b27bacf10c8d3435299440
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '2713'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -82,8 +82,7 @@ AEM as a Cloud Service의 상위 수준 구성 가능 서비스 목록은 콘텐
 웹 콘텐츠 관리를 위한 웹 기반 인터페이스(연결된 API 포함)를 제공합니다. 이는 다음과 같은 두 가지 접근 방식 모두에 적용됩니다.
    * Headful - 페이지 편집기 및 Universal Editor를 통해
    * Headless - 콘텐츠 조각 편집기를 통해
-* 문서 기반 작성 계층:
-다음과 같은 표준 애플리케이션을 사용하여 콘텐츠를 작성할 수 있습니다.
+* 문서 기반 작성 계층: 다음과 같은 표준 애플리케이션을 사용하여 컨텐츠를 작성할 수 있습니다.
    * Microsoft Word 및 Excel - SharePoint를 통해
    * Google Docs 및 Sheets - Google Drive를 통해
 
@@ -93,7 +92,7 @@ AEM as a Cloud Service의 상위 수준 구성 가능 서비스 목록은 콘텐
    * 표준 AEM 게시자 및 Dispatcher 팜을 실행하여 게시된 콘텐츠와 결합된 웹 페이지 및 API 콘텐츠(예: GraphQL)의 동적 렌더링을 허용합니다.
    * 주로 서버측 애플리케이션 논리를 기반으로 합니다.
 * Edge Delivery 게시 계층:
-   * AEM 작성 계층 또는 문서 기반 작성 계층과 같은 다양한 콘텐츠 소스의 웹 페이지 및 API 콘텐츠를 동적으로 렌더링할 수 있습니다.
+   * AEM 작성자 계층 또는 문서 기반 작성 계층과 같은 다양한 콘텐츠 소스의 웹 페이지 및 API 콘텐츠를 동적으로 렌더링할 수 있습니다.
    * 클라이언트측 애플리케이션 논리를 기반으로 하며 최대 성능을 위해 설계됩니다.
 
 다음과 같은 주요 인접 서비스도 있습니다.
@@ -160,9 +159,9 @@ AEM 미리보기 계층은 단일 AEM 노드로 구성되어 있습니다. 게�
 
 Edge Delivery Services는 가장 효율적인 방식으로 페이지를 어셈블하기 위해 CDN 및 서버리스 인프라를 기반으로 운영됩니다. 리소스가 요청되면 서버리스 인프라는 게시된 콘텐츠를 유의미한 HTML로 변환하고 CDN의 원본 역할을 합니다.
 
-유의미한 HTML로 전환하는 작업은 AEM 작성 계층 또는 문서 기반 작성 환경에서 제공되는 게시된 콘텐츠에서 발생합니다.
+시맨틱 HTML으로 변환은 AEM 작성자 계층 또는 문서 기반 작성 환경에서 제공되는 게시된 콘텐츠에서 발생합니다.
 
-다음 다이어그램은 Microsoft Word(문서 기반 작성)에서 Sites 콘텐츠를 편집하고 Edge Delivery에 게시하는 방법을 보여 줍니다. 또한 다양한 편집기를 사용하는 기존 AEM 게시 방법을 보여 줍니다.
+다음 다이어그램은 Microsoft Word(문서 기반 작성)에서 사이트 콘텐츠를 편집하고 Edge Delivery에 게시하는 방법을 보여 줍니다. 또한 다양한 편집기를 사용하는 기존 AEM 게시 방법을 보여 줍니다.
 
 ![AEM Sites as a Cloud Service - Edge Delivery Services 포함](assets/architecture-aem-edge-author-publish.png "AEM Sites as a Cloud Service - Edge Delivery Services 포함")
 

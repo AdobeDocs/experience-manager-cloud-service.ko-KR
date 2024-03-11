@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 66%
@@ -14,11 +14,11 @@ ht-degree: 66%
 
 # 적응형 Forms 블록을 사용하여 양식 만들기
 
-AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식을 쉽게 만들 수 있도록 적응형 Forms 블록이라고 하는 블록을 제공합니다. 다음을 수행할 수 있습니다. [적응형 Forms 블록이 사전 장착된 새 AEM 프로젝트 만들기](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) 또는 [기존 AEM 프로젝트에 적응형 Forms 블록 추가](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
+AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식을 쉽게 만들 수 있도록 적응형 Forms 블록이라고 하는 블록을 제공합니다. 다음을 수행할 수 있습니다. [적응형 Forms 블록으로 사전 구성된 새 AEM 프로젝트 만들기](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) 또는 [기존 AEM 프로젝트에 적응형 Forms 블록 추가](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
 이러한 양식은 데이터를 Microsoft Excel 또는 Google Sheets 파일에 직접 제출하므로 Google Sheets, Microsoft Excel 및 Microsoft Sharepoint의 활발한 에코시스템과 강력한 API를 사용하여 쉽게 제출 데이터를 처리하거나 기존 비즈니스 워크플로를 시작할 수 있습니다.
 
-![문서 기반 작성 생태계](/help/edge/assets/document-based-authoring-workflow-create-form.png)
+![문서 기반 작성 에코시스템](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
 
 
@@ -27,7 +27,7 @@ AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식�
 
 시작하기 전에 다음 단계를 완료했는지 확인하십시오.
 
-* 설정 [AEM Forms boilerplate을 사용하는 AEM 프로젝트](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) 또는 [기존 AEM 프로젝트에 적응형 Forms 블록 추가됨](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) 로컬 컴퓨터에서 해당 GitHub 리포지토리를 복제합니다.
+* 설정 [AEM Forms boilerplate을 사용하는 AEM 프로젝트](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) 또는 [기존 AEM 프로젝트에 적응형 Forms 블록 추가됨](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) 로컬 컴퓨터에서 해당 GitHub 리포지토리를 복제합니다.
 이 문서에서는 EDS(Edge Delivery Services) 프로젝트의 로컬 폴더를 `[EDS Project repository]`.
 * Google Sheets 또는 Microsoft SharePoint에 액세스할 수 있는지 확인하십시오. Microsoft SharePoint을 컨텐츠 소스로 설정하려면 를 참조하십시오. [Sharepoint 사용 방법](https://www.aem.live/docs/setup-customer-sharepoint).
 

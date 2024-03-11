@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: b3bfc841f0609e1e529c97dd1f11d16de561701c
-workflow-type: ht
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+workflow-type: tm+mt
 source-wordcount: '892'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -54,11 +54,11 @@ DAM 라이브러리 관리자, 개발자 및 상위 사용자는 계속해서 �
 
 Assets 보기에 액세스하는 방법 및 관리자 보기에서 제공하는 일부 간소화에 대한 자세한 내용은 [Assets 보기 소개](/help/assets/assets-view-introduction.md)를 참조하십시오.
 
-## Edge Delivery Services용 문서 기반 작성과의 통합 {#integrate-doc-authoring-edge-and-assets}
+## Edge Delivery Services을 위한 문서 기반 작성과 통합 {#integrate-doc-authoring-edge-and-assets}
 
 Edge Delivery를 사용하면 작성자가 콘텐츠를 빠르게 업데이트 및 게시하고 새 사이트를 신속하게 시작할 수 있는 빠르고 매력적인 웹 사이트를 제작할 수 있습니다.
 
-AEM Assets를 Edge Delivery Services용 문서 기반 작성과 통합하면 웹 사이트 작성자가 Microsoft Word 또는 Google Docs에서 문서를 작성하는 동안 AEM Assets 저장소에서 사용 가능한 이미지를 사용할 수 있습니다. 자세한 내용은 [AEM Assets를 문서 기반 작성과 통합](/help/edge/using.md#integrate-assets-edge)을 참조하십시오.
+Edge Delivery Services을 위한 문서 기반 작성과 AEM Assets을 통합하여 웹 사이트 작성자가 Microsoft Word 또는 Google 문서에서 문서를 작성하는 동안 AEM Assets 저장소에서 사용할 수 있는 이미지를 사용할 수 있도록 합니다. 자세한 내용은 [문서 기반 작성과 AEM Assets 통합](/help/edge/using.md#integrate-assets-edge).
 
 ## Adobe Journey Optimizer와 통합 {#integration-with-ajo}
 

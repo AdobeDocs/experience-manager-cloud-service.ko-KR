@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '530'
 ht-degree: 97%
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 데이터를 수집하거나 제출하기 위해 고객과 양식을 공유할 준비가 되면 고객이 양식을 쉽게 사용할 수 있도록 양식을 게시하기만 하면 됩니다.
 
-![문서 기반 작성 생태계](/help/edge/assets/document-based-authoring-workflow-publish-form.png)
+![문서 기반 작성 에코시스템](/help/edge/assets/document-based-authoring-workflow-publish-form.png)
 
 ## 전제 조건
 

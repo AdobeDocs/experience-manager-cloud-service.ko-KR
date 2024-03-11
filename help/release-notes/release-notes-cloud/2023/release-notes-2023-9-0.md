@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.9.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.9.0 릴리스 정보입니다.'
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
-source-git-commit: 3bec7e0387a5e04a7748a3b7341c17a993c6feb9
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 98%
+ht-degree: 95%
 
 ---
 
@@ -56,7 +56,7 @@ Edge Delivery는 고객 상호 작용 시점에서 측정 가능한 비즈니스
 
 ### 관리자 보기의 새로운 기능 {#admin-view-features}
 
-* **AEM Assets as a Cloud Service를 Edge Delivery Services용 문서 기반 작성과의 통합**: AEM Assets를 Edge Delivery Services용 문서 기반 작성과 통합하면 웹 사이트 작성자가 [Microsoft Word 또는 Google Docs에서 문서를 작성하는 동안 AEM Assets 저장소에서 사용 가능한 이미지를 사용할 수 있습니다](/help/edge/using.md#integrate-assets-edge).
+* **AEM Assets as a Cloud Service과 Edge Delivery Services을 위한 문서 기반 작성 통합**: 웹 사이트 작성자가 AEM Assets을 Edge Delivery Services을 위한 문서 기반 작성과 통합하여 [Microsoft Word 또는 Google 문서에서 문서를 작성하는 동안 AEM Assets 저장소에서 사용할 수 있는 이미지 사용](/help/edge/using.md#integrate-assets-edge).
 
 * **ZIP 아카이브 추출**: Experience Manager에서 관리하는 ZIP 아카이브를 선택하고, 다운로드하지 않고도 [Experience Manager로 직접 파일을 추출하는](/help/assets/manage-digital-assets.md#extract-zip-archives) 기능.
 

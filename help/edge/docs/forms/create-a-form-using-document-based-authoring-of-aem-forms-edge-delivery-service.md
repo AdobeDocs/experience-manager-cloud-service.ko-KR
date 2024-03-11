@@ -4,17 +4,17 @@ description: 완벽한 양식을 빠르게 제작하십시오. ⚡ AEM Forms Edg
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: f2752673dcaa0762bb55719cee23765aa8ecde96
-workflow-type: ht
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+workflow-type: tm+mt
 source-wordcount: '889'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
 
 # AEM Forms Edge Delivery Service에 대한 문서 기반 작성을 사용하여 양식 만들기
 
-오늘날의 디지털 시대에는 사용자 친화적인 양식을 만드는 것이 모든 조직에 필수적입니다. AEM Forms Edge Delivery의 문서 기반 작성을 사용하면 Word 또는 Google Docs와 같은 익숙한 도구를 사용하여 양식을 만들 수 있습니다. 이러한 양식은 데이터를 Microsoft Excel 또는 Google Sheets 파일에 직접 제출하므로 Google Sheets, Microsoft Excel 및 Microsoft Sharepoint의 활발한 에코시스템과 강력한 API를 사용하여 쉽게 제출 데이터를 처리하거나 기존 비즈니스 워크플로를 시작할 수 있습니다.
+오늘날의 디지털 시대에는 사용자 친화적인 양식을 만드는 것이 모든 조직에 필수적입니다. AEM Forms Edge Delivery의 문서 기반 작성을 통해 Word 또는 Google Docs와 같은 친숙한 도구를 사용하여 양식을 만들 수 있습니다. 이러한 양식은 Microsoft Excel 또는 Google Sheets 파일에 직접 데이터를 제출하므로 Google Sheets, Microsoft Excel 및 Microsoft Sharepoint의 생생한 에코시스템과 강력한 API를 사용하여 제출된 데이터를 쉽게 처리하거나 기존 비즈니스 워크플로우를 시작할 수 있습니다.
 
 이 안내서에서는 다음과 같은 사항을 다룹니다.
 

@@ -2,13 +2,13 @@
 title: AEM에서 컨텐츠를 작성하는 방법
 description: AEM에서 콘텐츠를 작성할 수 있는 다양한 방법과 그 차이점을 알아봅니다.
 feature: Authoring
-source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
+exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '554'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
-
 
 # AEM에서 컨텐츠를 작성하는 방법 {#authoring-methods}
 
@@ -63,12 +63,12 @@ AEM 콘텐츠 조각 편집기에 대한 자세한 내용은 문서를 참조하
 
 유니버설 편집기에 대한 자세한 내용은 문서를 참조하십시오. [범용 편집기로 콘텐츠 작성](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
-## 문서 기반 작성 {#document-based}
+## 문서 기반 작성  {#document-based}
 
 Edge Delivery 서비스를 사용하는 경우 콘텐츠를 의 외부에 있는 Microsoft Word 또는 Google 문서와 같은 기존 문서로 작성하도록 선택할 수 있습니다 [AEM **사이트** 콘솔.](/help/sites-cloud/authoring/sites-console/introduction.md)
 
 ![문서 기반 콘텐츠 편집](assets/authoring-methods-document.jpg)
 
-문서 기반 작성을 통해 작성자는 이미 알고 있는 도구를 사용할 수 있으며, 여전히 AEM Edge Delivery Services의 속도와 성능을 활용하여 콘텐츠를 게시할 수 있습니다. 문서 기반 작성에는 AEM 콘솔을 사용할 필요가 없습니다.
+문서 기반 작성 을 통해 작성자는 이미 알고 있는 도구를 사용할 수 있으며 AEM Edge Delivery Services의 속도와 성능을 통해 콘텐츠를 게시할 수 있습니다. 문서 기반 작성에서는 AEM 콘솔을 사용할 필요가 없습니다.
 
 문서 기반 작성에 대한 자세한 내용은 문서를 참조하십시오. [Edge Delivery Services 컨텐츠 작성.](/help/edge/authoring.md)
