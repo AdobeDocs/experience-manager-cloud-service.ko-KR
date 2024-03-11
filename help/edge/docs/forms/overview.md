@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -27,21 +27,20 @@ AEM Forms Edge Delivery Services은 작성자가 새로운 양식을 신속하�
 
 ## AEM Forms Edge Delivery Services 개요 {#edge-overview}
 
-다음 다이어그램은 Microsoft Excel 또는 Google 시트(문서 기반 작성 )에서 양식을 편집하고 Edge Delivery Services에 게시하는 방법을 보여 줍니다. 또한 적응형 Forms 편집기(AEM 작성)를 사용한 AEM 게시 방법을 보여 줍니다.
+AEM Forms Edge Delivery Services는 웹 사이트에서 양식을 작성하는 방법에 대해 높은 수준의 유연성을 제공하는 구성 가능한 서비스 세트입니다. AEM 컨텐츠 관리를 사용할 수 있는 대상: [AEM 작성](/help/forms/creating-adaptive-form-core-components.md) 뿐만 아니라 [문서 기반 작성](/help/edge/docs/forms/create-forms.md). AEM Forms Edge Delivery Services은 다음과 같은 양식 블록을 제공하기도 합니다. [적응형 Forms 블록](/help/edge/docs/forms/create-forms.md) Edge Delivery Services 사이트에 양식을 추가합니다.
+
+예를 들어 양식을 직접 Microsoft Excel 또는 Google Sheets에서 작성하면 이들 스프레드시트는 웹 사이트용 양식으로 변환됩니다. 새 양식 필드와 같은 모든 새 양식 또는 양식 콘텐츠는 재구축 프로세스 없이 웹 사이트에서 즉시 사용할 수 있습니다.
+
+다음 다이어그램은 Microsoft Excel 또는 Google 시트(문서 기반 작성)에서 양식을 편집하고 Edge Delivery Services에 게시하는 방법을 보여 줍니다. 또한 적응형 Forms 편집기(AEM 작성)를 사용한 AEM 게시 방법을 보여 줍니다.
 
 ![Edge Delivery 아키텍처](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
-AEM Forms Edge Delivery Services는 웹 사이트에서 양식을 작성하는 방법에 대해 높은 수준의 유연성을 제공하는 구성 가능한 서비스 세트입니다. AEM 컨텐츠 관리를 사용할 수 있는 대상: [AEM 작성](/help/forms/creating-adaptive-form-core-components.md) 뿐만 아니라 [문서 기반 작성](/help/edge/docs/forms/create-forms.md).
-
-예를 들어 양식을 직접 Microsoft Excel 또는 Google Sheets에서 작성하면 이들 스프레드시트는 웹 사이트용 양식으로 변환됩니다. 새 양식 필드와 같은 모든 새 양식 또는 양식 콘텐츠는 재구축 프로세스 없이 웹 사이트에서 즉시 사용할 수 있습니다.
 
 AEM Forms Edge Delivery Services은 GitHub를 사용하므로 고객은 GitHub 저장소에서 직접 코드를 관리하고 배포할 수 있습니다. 예를 들어 다음 중 하나로 양식을 작성할 수 있습니다. [Google Sheets 또는 Microsoft Excel](/help/edge/docs/forms/create-forms.md) 및 양식의 구성 요소는 GitHub에서 CSS 및 JavaScript를 사용하여 개발할 수 있습니다.
 
 준비가 되면 다음을 사용할 수 있습니다. [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content), 콘텐츠 업데이트를 미리 보고 게시하기 위한 chrome 브라우저 확장 프로그램.
 
 ![설치 AEM Sidekick](/help/edge/assets/install-aem-sidekick.png)
-
-AEM Forms Edge Delivery Services은 다음과 같은 양식 블록을 제공합니다. [적응형 Forms 블록](/help/edge/docs/forms/create-forms.md) Edge Delivery Services 사이트에 양식을 추가합니다.
 
 다음 중에서 선택 [문서 기반 작성](#document-based-authoring-features) 및 [AEM 작성](#aem-authoring-features) 특정 요구 사항에 따라 다릅니다.
 

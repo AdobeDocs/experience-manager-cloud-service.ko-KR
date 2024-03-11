@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '1819'
+source-wordcount: '1821'
 ht-degree: 60%
 
 ---
@@ -823,3 +823,6 @@ CSS 선택기를 사용하여 특정 필드 유형을 타겟팅하고 스타일�
 
 이 CSS는 `field-otp` 클래스가 있는 요소 내에 위치한 모든 입력 요소를 타겟팅합니다. 양식의 HTML 구조는 적응형 Forms 블록의 규칙을 따르며, 이는 &quot;field-otp&quot; 클래스로 표시된 컨테이너가 &quot;otp&quot;라는 이름의 필드를 보유하고 있음을 의미합니다.
 
+## 참고 항목
+
+{{see-more-forms-eds}}

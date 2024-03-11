@@ -1,5 +1,5 @@
 ---
-source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 82%
@@ -61,7 +61,7 @@ ht-degree: 82%
 
 [!BADGE 얼리 액세스 기술 - Slack 채널의 AEM Sites Labs에서 제공하는 이 기능에 대해 문의하십시오!]{type=Informative url="/help/edge/docs/slack.md" tooltip="Edge Delivery Services를 사용한 AEM 작성은 얼리 액세스 기술입니다."}
 
-## 더 보기 {#see-more-forms-eds}
+## 참고 항목 {#see-more-forms-eds}
 
 * [AEM Forms Edge Delivery Services 시작](/help/edge/docs/forms/tutorial.md)
 * [Google Sheets 또는 Microsoft Excel을 사용하여 양식 만들기](/help/edge/docs/forms/create-forms.md)

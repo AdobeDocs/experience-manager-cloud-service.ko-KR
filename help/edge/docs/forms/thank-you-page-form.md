@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '608'
-ht-degree: 81%
+source-wordcount: '576'
+ht-degree: 80%
 
 ---
 
@@ -80,12 +80,6 @@ ht-degree: 81%
 “감사” 페이지를 다른 페이지로 리디렉션하려면 [웹 사이트 리디렉션](https://www.aem.live/docs/redirects) 스프레드시트를 사용할 수 있습니다.
 
 
-## 더 보기
+## 참고 항목
 
-* [양식 구성 요소](/help/edge/docs/forms/form-components.md)
-* [양식 필드 속성](/help/edge/docs/forms/eds-form-field-properties)
-* [양식 만들기 및 미리 보기](/help/edge/docs/forms/create-forms.md)
-* [양식을 활성화하여 데이터 전송](/help/edge/docs/forms/submit-forms.md)
-* [사이트 페이지에 양식 게시](/help/edge/docs/forms/publish-forms.md)
-* [양식 필드에 유효성 검사 추가](/help/edge/docs/forms/validate-forms.md)
-* [양식의 테마 및 스타일 변경](/help/edge/docs/forms/style-theme-forms.md)
+{{see-more-forms-eds}}

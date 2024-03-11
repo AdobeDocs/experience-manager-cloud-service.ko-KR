@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 66%
+source-wordcount: '805'
+ht-degree: 61%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 66%
 
 AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식을 쉽게 만들 수 있도록 적응형 Forms 블록이라고 하는 블록을 제공합니다. 다음을 수행할 수 있습니다. [적응형 Forms 블록으로 사전 구성된 새 AEM 프로젝트 만들기](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) 또는 [기존 AEM 프로젝트에 적응형 Forms 블록 추가](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
-이러한 양식은 데이터를 Microsoft Excel 또는 Google Sheets 파일에 직접 제출하므로 Google Sheets, Microsoft Excel 및 Microsoft Sharepoint의 활발한 에코시스템과 강력한 API를 사용하여 쉽게 제출 데이터를 처리하거나 기존 비즈니스 워크플로를 시작할 수 있습니다.
+이러한 양식은 Microsoft Excel 또는 Google Sheets 파일에 직접 데이터를 제출하므로 Google Sheets, Microsoft Excel 및 Microsoft SharePoint의 생생한 에코시스템과 강력한 API를 사용하여 제출된 데이터를 쉽게 처리하거나 기존 비즈니스 워크플로우를 시작할 수 있습니다.
 
 ![문서 기반 작성 에코시스템](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
@@ -29,7 +29,7 @@ AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식�
 
 * 설정 [AEM Forms boilerplate을 사용하는 AEM 프로젝트](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) 또는 [기존 AEM 프로젝트에 적응형 Forms 블록 추가됨](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) 로컬 컴퓨터에서 해당 GitHub 리포지토리를 복제합니다.
 이 문서에서는 EDS(Edge Delivery Services) 프로젝트의 로컬 폴더를 `[EDS Project repository]`.
-* Google Sheets 또는 Microsoft SharePoint에 액세스할 수 있는지 확인하십시오. Microsoft SharePoint을 컨텐츠 소스로 설정하려면 를 참조하십시오. [Sharepoint 사용 방법](https://www.aem.live/docs/setup-customer-sharepoint).
+* Google Sheets 또는 Microsoft SharePoint에 액세스할 수 있는지 확인하십시오. Microsoft SharePoint을 컨텐츠 소스로 설정하려면 를 참조하십시오. [SharePoint 사용 방법](https://www.aem.live/docs/setup-customer-SharePoint).
 
 
 
@@ -82,7 +82,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
    ![Google 드라이브의 샘플 컨텐츠](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
 
-1. [프로젝트에 지정된 구성에 따라](https://www.aem.live/docs/setup-customer-sharepoint) 시트가 해당 AEM 사용자(예: `helix@adobe.com`)와 공유되고 있는지 확인합니다. 사용자에게 시트에 대한 편집 권한을 부여합니다.
+1. [프로젝트에 지정된 구성에 따라](https://www.aem.live/docs/setup-customer-SharePoint) 시트가 해당 AEM 사용자(예: `helix@adobe.com`)와 공유되고 있는지 확인합니다. 사용자에게 시트에 대한 편집 권한을 부여합니다.
 
 1. 작성된 스프레드시트를 연 다음 기본 시트 이름을 “shared-default”로 바꿉니다.
 
@@ -165,4 +165,6 @@ Ensure a smooth GitHub build process by addressing potential issues:
 [스프레드시트를 준비](/help/edge/docs/forms/submit-forms.md)하여 양식 제출 시 데이터를 수신합니다.
 
 
+## 참고 항목
 
+{{see-more-forms-eds}}

@@ -4,10 +4,10 @@ description: 이 튜토리얼은 새로운 AEM(Adobe Experience Manager Forms) �
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '1878'
-ht-degree: 10%
+source-wordcount: '1854'
+ht-degree: 8%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 10%
 
 오늘날의 디지털 시대에는 사용자 친화적인 양식을 만드는 것이 모든 조직에 필수적입니다. AEM Forms Edge Delivery Services(EDS)를 사용하면 Google 문서 및 Microsoft Office와 같은 친숙한 도구를 사용하여 양식을 만들 수 있습니다.
 
-이러한 양식은 데이터를 Microsoft Excel 또는 Google Sheets 파일에 직접 제출하므로 Google Sheets, Microsoft Excel 및 Microsoft Sharepoint의 활발한 에코시스템과 강력한 API를 사용하여 쉽게 제출 데이터를 처리하거나 기존 비즈니스 워크플로를 시작할 수 있습니다.
+이러한 양식은 Microsoft Excel 또는 Google Sheets 파일에 직접 데이터를 제출하므로 Google Sheets, Microsoft Excel 및 Microsoft SharePoint의 생생한 에코시스템과 강력한 API를 사용하여 제출된 데이터를 쉽게 처리하거나 기존 비즈니스 워크플로우를 시작할 수 있습니다.
 
 AEM Forms은 캡처된 데이터를 캡처하고 저장할 양식을 쉽게 생성할 수 있도록 적응형 Forms 블록이라고 하는 블록을 제공합니다. 적응형 Forms 블록으로 사전 구성된 새 AEM 프로젝트를 만들거나 적응형 Forms 블록을 기존 AEM 프로젝트에 추가할 수 있습니다.
 
@@ -127,16 +127,16 @@ AEM Forms Boilerplate 템플릿을 사용하면 적응형 Forms 블록으로 사
       Microsoft SharePoint을 사용하는 경우 폴더 경로는 다음 형식을 사용합니다.
 
       ```HTML
-      https://<tenant>.sharepoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
+      https://<tenant>.SharePoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
       ```
 
       예:
 
       ```HTML
-      https://adobe.sharepoint.com/sites/wkndforms/Shared%20Documents/wefinance
+      https://adobe.SharePoint.com/sites/wkndforms/Shared%20Documents/wefinance
       ```
 
-      Microsoft SharePoint 내에서 를 사용하여 파일을 관리하는 방법에 대한 자세한 내용은 [Adobe Sharepoint 사용 방법](https://www.aem.live/docs/setup-customer-sharepoint).
+      Microsoft SharePoint 내에서 를 사용하여 파일을 관리하는 방법에 대한 자세한 내용은 [Adobe SharePoint 사용 방법](https://www.aem.live/docs/setup-customer-SharePoint).
 
 
 
@@ -299,7 +299,5 @@ AEM Sidekick을 사용하여 조회 문서를 미리 보고 게시할 수 있습
 
 ## 참고 항목
 
-* [Google Sheets 또는 Microsoft Excel을 사용하여 양식 만들기](/help/edge/docs/forms/create-forms.md)
-* [양식을 Microsoft Excel 또는 Google Sheets에 직접 제출](/help/edge/docs/forms/submit-forms.md)
-* [양식 보기 변경](/help/edge/docs/forms/style-theme-forms.md)
+{{see-more-forms-eds}}
 
