@@ -2,10 +2,10 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] 릴리스 정보'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] 릴리스 정보'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 439ae08bb606d6d335fa189e99c1b483f636683e
-workflow-type: ht
-source-wordcount: '1624'
-ht-degree: 100%
+source-git-commit: 411793f140a2a9cf482d820382d41de843a97e87
+workflow-type: tm+mt
+source-wordcount: '1648'
+ht-degree: 97%
 
 ---
 
@@ -13,17 +13,14 @@ ht-degree: 100%
 
 다음 섹션에서는 [!DNL Workfront for Experience Manager enhanced connector]의 일반 릴리스 정보에 대해 간략히 설명합니다.
 
-## 릴리스 일자 {#release-date}
-
-[!DNL Workfront for Experience Manager enhanced connector] 최신 버전 1.9.17의 릴리스 일자는 2024년 2월 7일입니다.
+의 최신 버전 1.9.18에 대한 릴리스 날짜 [!DNL Workfront for Experience Manager enhanced connector] 는 2024년 3월 8일입니다.
 
 ## 릴리스 하이라이트 {#release-highlights}
 
-최신 버전의 [!DNL Workfront for Experience Manager enhanced connector]에는 다음과 같은 버그 수정 사항이 포함됩니다.
+의 최신 버전 [!DNL Workfront for Experience Manager enhanced connector] 에는 다음 버그 수정이 포함됩니다.
 
-* AEM Cloud 고객이 커넥터를 구성하고 설정할 수 있도록 토글 기능이 활성화되었습니다.
-
-* 기본 세션을 명시적으로 닫지 않고 `resourceResolver`를 닫으면 AEM 인스턴스에서 세션 누출이 발생합니다. Resource Resolver가 자동으로 닫혀도 세션이 암시적으로 닫히지 않으므로 세션을 명시적으로 닫는 것이 중요합니다.
+* Workfront에서 다중 자산 업로드를 처리하면 문제가 발생합니다.
+* Workfront을 사용하여 Experience Manager에서 폴더를 검색할 때 닫는 따옴표를 추가하지 않음 `SERVER_ERROR`.
 
 >[!NOTE]
 >
@@ -32,7 +29,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->Adobe는 [!DNL Workfront for Experience Manager enhanced connector]의 [최신 1.9.17 버전으로 업그레이드](/help/assets/workfront-connector-install.md)할 것을 권장합니다.
+>Adobe는 [!DNL Workfront for Experience Manager enhanced connector]의 [최신 1.9.18 버전으로 업그레이드](/help/assets/workfront-connector-install.md)할 것을 권장합니다.
 
 ## 알려진 문제 {#known-issues}
 
@@ -41,6 +38,12 @@ ht-degree: 100%
 * 기존의 Workfront 경험을 사용하는 경우, **[!UICONTROL 추가]** 드롭다운 목록에서 사용할 수 있는 **[!UICONTROL 수신인]** 옵션을 사용하면 Experience Manager에서 타깃 대상을 선택할 수 없습니다. **[!UICONTROL 수신인]** 옵션은 **[!UICONTROL 문서 작업]** 드롭다운 목록을 사용하여 올바르게 작동합니다. The **[!UICONTROL 수신인]** 옵션은 새로운 Workfront 경험에서 사용할 수 있는 **[!UICONTROL 추가]** 드롭다운 목록 및 **[!UICONTROL 문서 작업]** 목록에서 올바르게 작동합니다.
 
 ## 이전 출시 버전 {#previous-releases}
+
+### 2024년 2월 릴리스 {#february-2023-release}
+
+* AEM Cloud 고객이 커넥터를 구성하고 설정할 수 있도록 토글 기능이 활성화되었습니다.
+
+* 기본 세션을 명시적으로 닫지 않고 `resourceResolver`를 닫으면 AEM 인스턴스에서 세션 누출이 발생합니다. Resource Resolver가 자동으로 닫혀도 세션이 암시적으로 닫히지 않으므로 세션을 명시적으로 닫는 것이 중요합니다.
 
 ### 2024년 1월 릴리스 {#january-2023-release}
 
