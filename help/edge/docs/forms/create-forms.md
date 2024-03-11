@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 72%
+source-wordcount: '803'
+ht-degree: 66%
 
 ---
 
@@ -28,8 +28,8 @@ AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식�
 시작하기 전에 다음 단계를 완료했는지 확인하십시오.
 
 * 설정 [AEM Forms boilerplate을 사용하는 AEM 프로젝트](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) 또는 [기존 AEM 프로젝트에 적응형 Forms 블록 추가됨](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) 로컬 컴퓨터에서 해당 GitHub 리포지토리를 복제합니다.
-이 문서에서는 EDS(Edge Delivery Services) 프로젝트의 로컬 폴더를 `[EDS Project repository]` .
-* Google Sheets 또는 Microsoft SharePoint에 액세스할 수 있는지 확인하십시오. Microsoft SharePoint를 콘텐츠 소스로 설정하려면 [Sharepoint 사용 방법](https://www.aem.live/docs/setup-customer-sharepoint)을 참조하십시오.
+이 문서에서는 EDS(Edge Delivery Services) 프로젝트의 로컬 폴더를 `[EDS Project repository]`.
+* Google Sheets 또는 Microsoft SharePoint에 액세스할 수 있는지 확인하십시오. Microsoft SharePoint을 컨텐츠 소스로 설정하려면 를 참조하십시오. [Sharepoint 사용 방법](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
 
@@ -80,6 +80,8 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 1. AEM Edge Delivery 프로젝트 디렉터리 내의 어느 곳에나 Microsoft Excel 통합 문서 또는 Google 시트를 만듭니다. 예를 들어 Google Drive의 AEM Edge Delivery 프로젝트 디렉터리에 `enquiry`라는 스프레드시트를 만듭니다.
 
+   ![Google 드라이브의 샘플 컨텐츠](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
+
 1. [프로젝트에 지정된 구성에 따라](https://www.aem.live/docs/setup-customer-sharepoint) 시트가 해당 AEM 사용자(예: `helix@adobe.com`)와 공유되고 있는지 확인합니다. 사용자에게 시트에 대한 편집 권한을 부여합니다.
 
 1. 작성된 스프레드시트를 연 다음 기본 시트 이름을 “shared-default”로 바꿉니다.
@@ -87,6 +89,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
    ![기본 시트의 이름을 “shared-default”로 바꾸기](/help/edge/assets/rename-sheet-to-shared-default.png)
 
 1. 양식 필드를 추가하려면 “shared-default” 시트에 행과 열 헤더를 삽입합니다. 각 행은 해당 필드 [속성](/help/edge/docs/forms/form-components.md#components-properties)을 정의하는 열 헤더로 [양식 필드](/help/edge/docs/forms/form-components.md#available-components)를 나타내야 합니다.
+
 
    빠른 시작을 하려면 [문의 스프레드시트](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) 콘텐츠를 스프레드시트에 복사하는 것이 좋습니다. 콘텐츠를 복사하면 스프레드시트를 저장합니다.
 
@@ -118,19 +121,24 @@ Ensure a smooth GitHub build process by addressing potential issues:
 +++ 2단계: EDS(Edge Delivery Services) 페이지를 사용하여 양식을 미리 봅니다.
 
 
-지금까지 EDS 프로젝트에 적응형 Forms 블록을 추가하고 양식 구조를 준비했습니다. 이제 양식을 미리 보려면 다음 작업을 수행하십시오.
+지금까지 당신은 폼의 구조를 준비했습니다. 이제 양식을 미리 보려면 다음 작업을 수행하십시오.
 
-1. **프로젝트 디렉터리에 액세스**: Microsoft SharePoint 또는 Google Drive 계정을 열고 AEM Edge Delivery 프로젝트 디렉터리로 이동합니다.
+1. Microsoft SharePoint 또는 Google Drive의 계정으로 연 다음 AEM Edge Delivery 프로젝트 디렉터리로 이동합니다.
 
-1. **문서에 양식 임베드:** 문서 파일(예: index 파일)을 열어 양식을 임베드합니다. 또는 새 문서를 만들 수 있습니다.
 
-1. **원하는 위치로 이동**: 양식을 추가하려는 문서 내에서 원하는 위치로 이동합니다.
 
-1. **적응형 Forms 블록 추가:** 양식을 렌더링할 양식 블록을 만듭니다. [삽입] > [표]를 선택하고 하나의 열과 두 개의 행 표를 만듭니다. 테이블 이름을 &quot;Form&quot;으로 지정하고 미리 보기 URL을 두 번째 행에 붙여 넣습니다. 아래 그림과 같이 URL의 형식이 일반 텍스트가 아닌 하이퍼링크로 지정되어 있는지 확인합니다.
+1. 문서 파일(예: 인덱스 파일)을 열어 양식을 포함합니다. 또는 새 문서를 만들 수 있습니다.
+
+1. 양식을 추가하려는 문서 내에서 원하는 위치로 이동합니다.
+
+1. 양식을 렌더링할 양식 블록을 만듭니다. [삽입] > [표]를 선택하고 하나의 열과 두 개의 행 표를 만듭니다. 테이블 이름을 &quot;Form&quot;으로 지정하고 미리 보기 URL을 두 번째 행에 붙여 넣습니다. 아래 그림과 같이 URL의 형식이 일반 텍스트가 아닌 하이퍼링크로 지정되어 있는지 확인합니다.
 
    | 양식 |
    |---|
-   | [https://main--portal--wkndforms.hlx.live/enquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json) |
+   | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+
+
+   ![웹 페이지에 적응형 Forms 블록 추가](/help/edge/assets/add-adaptive-forms-block.png)
 
    이 블록은 양식이 임베드된 자리 표시자 역할을 합니다. 블록의 두 번째 행에서 `<form>.json` 파일의 미리보기 URL을 하이퍼링크로 추가합니다.
 

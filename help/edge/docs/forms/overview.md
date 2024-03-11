@@ -5,43 +5,46 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
+source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 19%
+source-wordcount: '823'
+ht-degree: 2%
 
 ---
 
 # AEM Forms Edge Delivery Services
 
-Adobe의 AEM Forms Edge Delivery Services을 통해 양식 생성을 간소화하고 완료율을 높일 수 있습니다. 이러한 강력하고 컴포저블 서비스를 통해 탁월한 성능과 시각적 매력으로 엔터프라이즈급 양식을 구축할 수 있습니다. AEM은 사용자 경험과 비즈니스 목표 모두에 우선 순위를 두므로 빠르게 로드할 수 있고 양식 전환이 증가합니다.
+AEM Forms Edge Delivery Services은 작성자가 빠르게 업데이트하고 게시할 수 있는 신속한 개발 환경을 활성화하고 새로운 양식을 신속하게 시작할 수 있는 컴포저블 서비스 세트입니다.
 
-이들 서비스를 통해 다음과 같은 작업을 수행할 수 있습니다.
+AEM Forms Edge Delivery Services은 참여 및 전환을 유도하는 탁월한 양식 경험을 제공하여 작성 및 개발이 매우 용이한 영향을 미치는 경험을 가능하게 합니다.
 
-* **탁월한 등록 경험 구축**: 느린 인터넷 연결에서도 빠르게 로드하고 렌더링하는 등록 경험을 빌드합니다. 로드 시간이 빠르고 사용자 경험이 최적화되어 있으면 양식 작성률을 높이고 전환율을 향상할 수 있습니다.
+이러한 서비스를 통해 다음을 수행할 수 있습니다.
 
-* **선택한 도구로 등록 경험 만들기**: 콘텐츠 소스를 분리하여 작성 효율성을 높입니다. 기본적으로 두 가지를 모두 사용할 수 있습니다. **문서 기반 작성** (Microsoft SharePoint 또는 Google 드라이브) 및 **AEM 작성** (적응형 Forms 편집기). 따라서 동일한 양식에서 여러 컨텐츠 소스로 작업하고 Microsoft Excel, Google Sheets 또는 적응형 Forms 편집기와 같은 원하는 작성 도구를 사용할 수 있습니다.
+* **원하는 도구를 사용하여 등록 경험을 만들 수 있습니다.** 콘텐츠 소스를 분리하여 작성 효율성을 높입니다. 기본적으로 문서 기반 작성(Microsoft SharePoint 또는 Google 드라이브)과 AEM 작성(적응형 Forms 편집기)을 모두 사용할 수 있습니다. 따라서 동일한 양식에서 여러 컨텐츠 소스로 작업하고 Microsoft Excel, Google Sheets 또는 적응형 Forms 편집기와 같은 원하는 작성 도구를 사용할 수 있습니다.
 
-* **개발자에게 친숙한 도구 세트 사용:** AEM Forms은 일반 HTML, 최신 CSS 및 바닐라 JavaScript를 사용하여 일반적인 오버헤드 없이 탁월한 경험을 만듭니다. HTML, CSS 및 JS에 대한 기본 지식을 갖춘 개발자는 고유한 구성 요소를 빌드할 수 있어야 하며 특정 언어나 프레임워크를 학습할 필요가 없어야 합니다. 파이프라인이나 대기가 필요하지 않습니다. 코드를 Github에 체크 인하면 변경 사항이 활성화됩니다. 또한 파이프라인이나 기다리지 않고 Github에서 코드를 체크인하면 변경 사항이 활성 상태가 됩니다.
+* **탁월한 디지털 등록 경험을 제공합니다.** 빠르게 로드하고 렌더링하는 디지털 등록 경험을 제공합니다. 더 빠른 로드 시간과 최적화된 사용자 경험은 더 높은 양식 완료 및 전환율에 기여합니다.
 
+* **개발자에게 친숙한 도구 세트 사용:** AEM Forms은 일반 HTML, 최신 CSS 및 바닐라 JavaScript를 사용하여 특정 프레임워크의 가파른 학습 곡선을 피하고 예외적인 경험을 만듭니다. 기본 웹 개발 기술을 보유한 개발자는 양식 구성 요소 및 경험을 사용자 정의하고 쉽게 빌드할 수 있습니다. 파이프라인이 실행될 때까지 기다릴 필요가 없습니다. 코드를 Github에 체크 인하기만 하면 변경 사항이 활성화됩니다.
 
 ## AEM Forms Edge Delivery Services 개요 {#edge-overview}
 
-다음 다이어그램은 Microsoft Excel 또는 Google Sheets에서 콘텐츠를 편집하고(문서 기반 편집) Edge Delivery Services에 게시하는 방법을 보여 줍니다. 또한 적응형 Forms 편집기를 사용한 AEM 게시 방법을 보여줍니다.
+다음 다이어그램은 Microsoft Excel 또는 Google Sheets에서 양식을 편집하고(문서 기반 편집) Edge Delivery Services에 게시하는 방법을 보여 줍니다. 또한 적응형 Forms 편집기를 사용한 AEM 게시 방법을 보여줍니다.
 
 ![Edge Delivery 아키텍처](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
-Edge Delivery Services는 웹 사이트에서 콘텐츠를 작성하는 방법을 보다 유연하게 제공하는 구성 가능한 서비스 세트입니다. AEM 컨텐츠 관리를 사용할 수 있는 대상: [AEM 작성](/help/forms/creating-adaptive-form-core-components.md) 뿐만 아니라 [문서 기반 작성](/help/edge/docs/forms/create-forms.md)
+AEM Forms Edge Delivery Services는 웹 사이트에서 양식을 작성하는 방법에 대해 높은 수준의 유연성을 제공하는 구성 가능한 서비스 세트입니다. AEM 컨텐츠 관리를 사용할 수 있는 대상: [AEM 작성](/help/forms/creating-adaptive-form-core-components.md) 뿐만 아니라 [문서 기반 작성](/help/edge/docs/forms/create-forms.md).
 
-예를 들어 Microsoft Excel 또는 Google Sheets에서 직접 콘텐츠를 사용할 수 있습니다. 즉, 이러한 소스의 콘텐츠가 웹 사이트의 양식이 될 수 있습니다. 새 콘텐츠는 리빌드 프로세스 없이 즉시 추가됩니다.
+예를 들어 양식을 직접 Microsoft Excel 또는 Google Sheets에서 작성하면 이들 스프레드시트는 웹 사이트용 양식으로 변환됩니다. 새 양식 필드와 같은 모든 새 양식 콘텐츠는 재구축 프로세스 없이 웹 사이트에서 즉시 사용할 수 있습니다.
 
-Edge Delivery Services는 GitHub를 사용하므로 고객은 GitHub 저장소에서 바로 코드를 관리 및 배포할 수 있습니다. 예를 들어 Google Sheets 또는 Microsoft Excel에서 양식을 작성할 수 있으며 GitHub에서 CSS와 JavaScript를 사용하여 양식의 구성 요소를 개발할 수 있습니다. 준비가 되면 Sidekick 브라우저 확장 기능을 사용하여 콘텐츠 업데이트를 미리 보고 게시할 수 있습니다.
+Edge Delivery Services는 GitHub를 사용하므로 고객은 GitHub 저장소에서 바로 코드를 관리 및 배포할 수 있습니다. 예를 들어 다음 중 하나로 양식을 작성할 수 있습니다. [Google Sheets 또는 Microsoft Excel](/help/edge/docs/forms/create-forms.md) 및 양식의 구성 요소는 GitHub에서 CSS 및 JavaScript를 사용하여 개발할 수 있습니다. 준비가 되면 다음을 사용할 수 있습니다. [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content) 콘텐츠 업데이트를 미리 보고 게시하기 위한 브라우저 확장입니다.
+
+![설치 AEM Sidekick](/help/edge/assets/install-aem-sidekick.png)
 
 AEM Forms Edge Delivery Services은 다음과 같은 양식 블록을 제공합니다. [적응형 Forms 블록](/help/edge/docs/forms/create-forms.md) Edge Delivery Services 사이트에 양식을 추가합니다.
 
-### AEM Forms Edge Delivery Services의 주요 기능
+### 문서 기반 작성 및 AEM 작성의 주요 기능
 
-문서 기반 작성 기본 기능 세트와 AEM 작성은 문서 기반 작성 이상의 추가 기능을 잠금 해제하여 보다 복잡하고 대화형 양식을 작성할 수 있도록 합니다. 다음 표에는 두 기능의 주요 사항이 나와 있습니다.
+문서 기반 작성은 기본적인 기능 세트를 제공하며 AEM 작성은 문서 기반 작성 이외의 추가 기능을 잠금 해제하여 보다 복잡하고 대화형 양식을 작성할 수 있도록 해 줍니다. 문서 기반 작성 및 AEM 작성의 주요 기능은 다음과 같습니다.
 
 <!-- 
 
@@ -89,37 +92,45 @@ AEM Authoring unlocks additional capabilities beyond the document-based authorin
 
 -->
 
-|                                           | 문서 기반 작성 | AEM 작성(적응형 Forms 편집기) |
-| ----------------------------------------- | ------------------------ | ------------------------------------ |
-| **양식 기능** |                          |                                      |
-| 액세스 가능한 구성 요소 | ✓ | ✓ |
-| 표준화된 HTML 구조 | ✓ | ✓ |
-| 규칙 및 유효성 검사 | ✓ | ✓ |
-| 첨부 파일(파일 업로드) | ✓ | ✓ |
-| Google recaptcha | ✓ | ✓ |
-| 사용자 지정 구성 요소 | ✓ | ✓ |
-| 전자 메일로 제출 | ✓ | ✓ |
-| **고급 기능** |                          |                                      |
-| 시각적 규칙 편집기를 사용하는 고급 규칙 |                          | ✓ |
-| 서버측 확장성 |                          | ✓ |
-| 여러 제출 액션 |                          | ✓ |
-| **양식 디자인 및 관리** |                          |                                      |
-| WYSIWYG 편집용 적응형 Forms 편집기 |                          | ✓ |
-| **통합** |                          |                                      |
-| 기록 문서 |                          | ✓ |
-| Adobe Sign과 통합 |                          | ✓ |
-| Adobe Analytics과의 통합 |                          | ✓ |
-| Marketo과 통합 |                          | ✓ |
-| 여러 데이터 소스와 통합 |                          | ✓ |
-| 여러 제출 액션 |                          | ✓ |
+#### 문서 기반 작성 기능
 
+문서 기반 작성을 사용하면 Microsoft Excel 또는 Google Sheets와 같은 익숙한 도구를 사용하여 양식을 만들 수 있습니다. 이러한 양식은 다음과 같은 기능을 제공합니다.
+
+* 액세스 가능한 구성 요소로 사용자 친화적 인 환경을 제공합니다.
+* 일관된 렌더링을 위해 표준화된 HTML 구조.
+* 데이터 정확성을 보장하는 규칙 및 유효성 검사.
+* 추가 정보 수집을 위한 첨부 파일 옵션.
+* 스팸 보호를 위한 Google reCAPTCHA 통합.
+* 특정 요구 사항에 맞게 사용자 정의 양식 구성 요소를 만들 수 있습니다.
+* 양식 데이터를 Microsoft Excel 또는 Google Sheets 또는 이메일 주소로 직접 제출합니다.
+
+#### AEM 작성 기능
+
+AEM 작성(적응형 Forms 편집기 사용)은 양식 작성을 위한 WYSIWYG 인터페이스를 제공하고 문서 기반 작성의 모든 기능과 광범위한 추가 기능을 제공합니다.
+
+* 복잡한 논리를 만들기 위한 고급 규칙 편집기.
+* 사용자 정의 기능을 위한 서버측 확장성.
+* 간편한 양식 생성 및 시각화를 위한 WYSIWYG 편집 환경.
+* 제출된 데이터의 변조 불가능한 아카이브를 만드는 기록 문서 기능.
+* 전자 서명을 위해 Adobe Sign과 통합.
+* Adobe Workfront Fusion과 통합하여 양식 제출 시 Adobe Workfront Fusion 시나리오를 트리거합니다.
+* 양식을 미리 채우고 데이터를 제출하기 위해 다양한 데이터 소스와 통합됩니다.
+* 데이터 구조 및 다양한 데이터 소스와의 상호 작용을 정의하기 위한 양식 데이터 모델
+* Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics 등 다양한 데이터 소스에 데이터를 제출하는 작업을 포함하여 양식 제출을 처리하기 위해 여러 제출 작업을 구성할 수 있습니다.
+
+기본적으로 AEM Authoring은 문서 기반 작성의 토대를 기반으로 구축되므로 복잡한 양식을 만들고 관리하는 데 필요한 고급 툴킷을 제공합니다.
 
 ## 양식 만들기 시작
 
-* [시작하기 - 개발자 자습서](/help/edge/docs/forms/tutorial.md)
+* [AEM Forms Edge Delivery Services 시작](/help/edge/docs/forms/tutorial.md)
 * [Google Sheets 또는 Microsoft Excel을 사용하여 양식 만들기](/help/edge/docs/forms/create-forms.md)
-* [양식을 Microsoft Excel 또는 Google Sheets에 직접 제출](/help/edge/docs/forms/submit-forms.md)
-* [양식 보기 변경](/help/edge/docs/forms/style-theme-forms.md)
+* [Google Sheets 또는 Microsoft Excel 파일을 설정하여 데이터 &#x200B; 수락 시작](/help/edge/docs/forms/submit-forms.md)
+* [양식을 게시하고 데이터 수집 시작](/help/edge/docs/forms/publish-forms.md)
+* [양식의 모양 사용자 지정&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
+* [양식에 반복 가능한 섹션 추가&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
+* [양식 제출 후 사용자 정의 감사 메시지 &#x200B; 표시](/help/edge/docs/forms/thank-you-page-form.md)
+* [적응형 양식 블록 구성 요소 및 속성](/help/edge/docs/forms/form-components.md)
+
 
 
 <!-- 
