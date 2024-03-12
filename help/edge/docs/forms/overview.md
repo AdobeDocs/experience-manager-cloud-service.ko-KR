@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 8ff0363fbb97aac85733fc9444819fa4d6f12805
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -16,18 +16,17 @@ ht-degree: 0%
 
 AEM Forms Edge Delivery Services은 작성자가 새로운 양식을 신속하게 업데이트, 게시 및 실행할 수 있는 신속한 개발 환경을 구현하는 구성 가능한 서비스 세트입니다. 이러한 서비스는 참여 및 전환을 유도하는 효과적이고 영향력이 큰 양식 경험을 제공합니다. 이러한 양식 경험은 작성 및 개발하기 쉽습니다.
 
-
 이러한 서비스를 통해 다음을 수행할 수 있습니다.
 
 * **원하는 도구를 사용하여 등록 경험을 만들 수 있습니다.** 콘텐츠 소스를 분리하여 작성 효율성을 높입니다. 기본적으로 문서 기반 작성(Microsoft SharePoint 또는 Google 드라이브)과 AEM 작성(적응형 Forms 편집기)을 모두 사용할 수 있습니다. 동일한 양식 사이트에서 여러 컨텐츠 소스로 작업하고 Microsoft Excel, Google Sheets 또는 적응형 Forms 편집기와 같은 원하는 작성 도구를 사용할 수 있습니다.
 
 * **탁월한 디지털 등록 경험을 제공합니다.** 빠르게 로드하고 렌더링하는 디지털 등록 경험을 제공합니다. 더 빠른 로드 시간과 최적화된 사용자 경험은 더 높은 양식 완료 및 전환율에 기여합니다.
 
-* **개발자에게 친숙한 도구 세트 사용:** AEM Forms은 일반 HTML, 최신 CSS 및 바닐라 JavaScript를 사용하여 특정 프레임워크의 가파른 학습 곡선을 피하고 예외적인 경험을 만듭니다. 기본 웹 개발 기술을 보유한 개발자는 양식 구성 요소 및 경험을 사용자 정의하고 쉽게 빌드할 수 있습니다. 파이프라인이 실행될 때까지 기다릴 필요가 없습니다. 코드를 Github에 체크 인하기만 하면 변경 사항이 활성화됩니다.
+* **개발자에게 친숙한 도구 세트 사용:** AEM Forms Edge Delivery Services은 일반 HTML, 최신 CSS 및 바닐라 JavaScript를 사용하여 특정 프레임워크의 가파른 학습 곡선을 피하고 탁월한 경험을 만듭니다. 기본 웹 개발 기술을 보유한 개발자는 양식 구성 요소 및 경험을 사용자 정의하고 쉽게 빌드할 수 있습니다. 파이프라인이 실행될 때까지 기다릴 필요가 없습니다. 코드를 GitHub에 체크 인하기만 하면 변경 사항이 라이브됩니다.
 
 ## AEM Forms Edge Delivery Services 개요 {#edge-overview}
 
-AEM Forms Edge Delivery Services는 웹 사이트에서 양식을 작성하는 방법에 대해 높은 수준의 유연성을 제공하는 구성 가능한 서비스 세트입니다. AEM 컨텐츠 관리를 사용할 수 있는 대상: [AEM 작성](/help/forms/creating-adaptive-form-core-components.md) 뿐만 아니라 [문서 기반 작성](/help/edge/docs/forms/create-forms.md). AEM Forms Edge Delivery Services은 다음과 같은 양식 블록을 제공하기도 합니다. [적응형 Forms 블록](/help/edge/docs/forms/create-forms.md) Edge Delivery Services 사이트에 양식을 추가합니다.
+AEM Forms Edge Delivery 서비스를 통해 웹 사이트에서 양식을 작성하는 방법을 매우 유연하게 수행할 수 있습니다. 을 사용하여 콘텐츠 및 양식을 작성할 수 있습니다. [AEM 작성](/help/forms/creating-adaptive-form-core-components.md) 뿐만 아니라 [문서 기반 작성](/help/edge/docs/forms/create-forms.md). AEM Forms Edge Delivery Services은 다음과 같은 양식 블록을 제공합니다. [적응형 Forms 블록](/help/edge/docs/forms/create-forms.md) Edge Delivery Services 사이트에 양식을 추가합니다.
 
 예를 들어 양식을 직접 Microsoft Excel 또는 Google Sheets에서 작성하면 이들 스프레드시트는 웹 사이트용 양식으로 변환됩니다. 새 양식 필드와 같은 모든 새 양식 또는 양식 콘텐츠는 재구축 프로세스 없이 웹 사이트에서 즉시 사용할 수 있습니다.
 
@@ -35,69 +34,22 @@ AEM Forms Edge Delivery Services는 웹 사이트에서 양식을 작성하는 �
 
 ![Edge Delivery 아키텍처](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
+AEM Forms Edge Delivery Services은 GitHub를 사용하므로 고객은 GitHub 저장소에서 직접 코드를 관리하고 배포할 수 있습니다. 예를 들어 다음 중 하나로 양식을 작성할 수 있습니다. [Google Sheets](/help/edge/docs/forms/create-forms.md) 또는 [Microsoft Excel](/help/edge/docs/forms/create-forms.md) GitHub 저장소에서 CSS 및 JavaScript를 사용하여 양식의 구성 요소를 개발할 수 있습니다.
 
-AEM Forms Edge Delivery Services은 GitHub를 사용하므로 고객은 GitHub 저장소에서 직접 코드를 관리하고 배포할 수 있습니다. 예를 들어 다음 중 하나로 양식을 작성할 수 있습니다. [Google Sheets 또는 Microsoft Excel](/help/edge/docs/forms/create-forms.md) 및 양식의 구성 요소는 GitHub에서 CSS 및 JavaScript를 사용하여 개발할 수 있습니다.
+양식이 준비되면 [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content), 콘텐츠 업데이트를 미리 보고 게시하기 위한 chrome 브라우저 확장 프로그램.
 
-준비가 되면 다음을 사용할 수 있습니다. [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content), 콘텐츠 업데이트를 미리 보고 게시하기 위한 chrome 브라우저 확장 프로그램.
+![설치 AEM Sidekick](/help/edge/assets/aem-sidekick-preview-publish-forms.png)
 
-![설치 AEM Sidekick](/help/edge/assets/install-aem-sidekick.png)
+다음 중에서 선택 [문서 기반 작성](#document-based-authoring-features) 및 [AEM 작성](#aem-authoring-features) 은 특정 요구 사항에 따라 다릅니다.
 
-다음 중에서 선택 [문서 기반 작성](#document-based-authoring-features) 및 [AEM 작성](#aem-authoring-features) 특정 요구 사항에 따라 다릅니다.
+* 몇 가지 필드(예: 양식, 리드 생성 양식 또는 서비스 요청 양식)가 있는 기본 정보를 수집하는 간단한 양식과 스프레드시트를 사용하여 빠른 데이터 연결이 필요한 경우 [문서 기반 작성](#document-based-authoring-features) 잘 맞네요. Google Sheets 또는 Microsoft Excel에서 문서를 작성하는 것처럼 이러한 양식을 작성할 수 있습니다.
 
-이름 및 전자 메일(연락처 양식, 리드 생성 양식 또는 서비스 요청 양식)과 같은 기본 정보를 수집하는 간단한 양식의 경우 스프레드시트로 이동하려면 데이터만 필요합니다. [문서 기반 작성](/help/edge/docs/forms/create-forms.md) 딱 맞네요. Google Sheets 또는 Microsoft Excel에서 문서를 작성하는 것처럼 이러한 양식을 작성할 수 있습니다.
-
-여러 패널, 복잡한 규칙 및 비즈니스 로직, 데이터 조작, 외부 시스템과의 통합 또는 AEM 기능을 사용한 간소화된 워크플로가 필요한 경우와 같이 양식이 더 복잡해지면 [AEM 작성](/help/forms/creating-adaptive-form-core-components.md) 더 나은 선택입니다.
+* 여러 패널이 필요한 양식, 복잡한 규칙 및 비즈니스 로직, 데이터 조작, 외부 시스템과의 통합 또는 AEM 기능을 사용한 간소화된 워크플로와 같은 복잡한 양식의 경우 다음을 수행합니다 [AEM 작성](#aem-authoring-features) 더 나은 선택입니다.
 
 
 ### 문서 기반 작성 및 AEM 작성의 주요 기능
 
 문서 기반 작성은 기본 기능 세트를 제공하며 AEM 작성은 문서 기반 작성 이외의 추가 기능을 잠금 해제하고 보다 복잡하고 대화형 양식을 작성할 수 있도록 해 줍니다. 문서 기반 작성 및 AEM 작성의 주요 기능은 다음과 같습니다.
-
-<!-- 
-
->[!BEGINTABS]
-
->[!TAB Document-based Authoring ]
-
-Document-based Authoring  is a versatile option suitable for creating simple forms with essential functionalities. It allows you to integrate various input types like text fields, dropdown menus, and radio buttons, enabling you to collect user data effectively. It offers a basic version of rules to add dynamic behaviour to forms. Key features of Document-based Authoring  are: 
-
-* **[HTML5-based Form Field components](/help/edge/docs/forms/form-components.md)**: AEM Forms Edge Delivery Services allow you to create user-friendly and interactive forms using form components based on HTML5 [input types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a>  elements. These components cater to different types of data collection and can be easily customized to fit your specific needs.  
-
-* **Accessibility**: The fields in the form block are accessible. Each label is linked with its respective input element, and IDs are auto-generated for linking. Descriptions associated with fields are linked via the aria-describedby attribute. Keyboard navigation using the standard Tab/Shift + Tab keys is supported.
-
-* **[Styling](/help/edge/docs/forms/style-theme-forms.md)**: Each form field has a fixed HTML structure that can be easily decorated using custom CSS or JavaScript files. Selectors for targeting fields in CSS and JS are provided based on type and name. You can easily create new selectors due to the standradized structure and style your form. 
-
-* **Basic Rules**: Easily create logic that adjusts field visibility, validation, and behavior based on user input or predefined conditions. Rules offer a flexible and intuitive way to add intelligence to your forms, ensuring they adapt seamlessly based on user inputs.
-
-* **Validations**: Before submission, the form is validated, and invalid fields are appropriately marked with error messages displayed to the user. Adaptive Forms Block support all the HTML form validation, supported by modern browsers, and provide additional validation mechanism like validation script, file size, file type, overall file size, and more. 
-
-* **File Uploads**: You can add file attachment capabilities to your forms. Whether you need to gather documents, images, or other files from your users, file upload functionality serves you effortlessly. With custom handling options available, you can tailor the file upload process to suit your specific requirements.
-
-* **reCAPTCHA**: Benefit from seamless integration of Google reCAPTCHA into your forms with our out-of-the-box (OOTB) support. Safeguard your forms against fraudulent activities, spam, and abuse, while maintaining a smooth and uninterrupted user experience. Adaptive Forms Block supports reCaptcha V3 and reCaptcha Enterprise. 
-
-* **Send email notification on form submission**: Eliminate the hassle of manual follow-ups and ensure timely communication with our built-in email automation for form submissions. This integrated solution lets you effortlessly notify relevant parties, including sending form data, whenever someone fills out a form on your website. No need for complex configurations or additional tools – it's ready to use out of the box.
-
->[!TAB AEM Authoring]
-
-AEM Authoring unlocks additional capabilities beyond the Document-based Authoring , empowering you to build more complex and interactive forms. In additon to the features of Document-based Authoring , AEM authoring offers the following additional features:  
-
-* Advanced Rules: Define logic-based actions within your forms. You can use rules to conditionally show or hide form sections, pre-populate fields based on user input, and perform various validations to ensure data integrity.
-
-* Server-side extensibility: Extend the functionalities of your forms by integrating them with server-side logic. This allows you to perform complex calculations, interact with external systems, and automate specific tasks based on user actions within the form.
-* Streamline workflows and data management: Leverage the power of AEM to:
-    * Design user-friendly forms using AEM editors.
-    * Generate a "Document of Record" for secure and tamper-proof archiving of submitted data.
-    * Facilitate e-signing with Adobe Sign for a smooth and secure signing experience.
-    * Automate business processes through AEM workflows, triggering actions based on form submissions.
-    * Effortlessly integrate with various data sources, enabling seamless data flow and exchange.
-
->[!ENDTABS]
-
-
-
-## Start creating forms
-
--->
 
 #### 문서 기반 작성 기능
 
@@ -123,11 +75,16 @@ AEM 작성은 양식 작성을 위한 WYSIWYG 인터페이스(적응형 Forms �
 * Adobe Workfront Fusion과 통합하여 양식 제출 시 Adobe Workfront Fusion 시나리오를 트리거합니다.
 * 양식을 미리 채우고 데이터를 제출하기 위해 다양한 데이터 소스와 통합됩니다.
 * 데이터 구조 및 다양한 데이터 소스와의 상호 작용을 정의하기 위한 양식 데이터 모델
-* Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics 등 다양한 데이터 소스에 데이터를 제출하는 작업을 포함하여 양식 제출을 처리하기 위해 여러 제출 작업을 구성할 수 있습니다.
+* Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics 등 다양한 데이터 소스에 데이터를 제출하는 작업을 포함하여 양식 제출을 처리하기 위해 여러 제출 작업 중에서 선택할 수 있습니다.
 
-기본적으로 AEM 작성은 문서 기반 작성 을 기반으로 하므로 복잡한 양식을 만들고 관리할 수 있는 고급 툴킷을 제공합니다.
+본질적으로, [AEM 작성](/help/forms/creating-adaptive-form-core-components.md) 을 기반으로 구축 [문서 기반 작성](/help/edge/docs/forms/create-forms.md)복잡한 양식을 만들고 관리하기 위한 고급 툴킷을 제공합니다.
 
-### 작성 워크플로
+### AEM Forms Edge Delivery Services: 작성. Forms 게시 및 제출
+
+다음 다이어그램은 문서 기반 작성 및 AEM 작성을 사용하여 양식을 작성, 게시 및 제출하는 프로세스를 보여 줍니다.
+
+
+
 
 ![문서 기반 작성 ](/help/edge/assets/document-based-authoring-workflow.png)
 
@@ -144,6 +101,7 @@ AEM 작성은 양식 작성을 위한 WYSIWYG 인터페이스(적응형 Forms �
 * [양식에 반복 가능한 섹션 추가&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [양식 제출 후 사용자 정의 감사 메시지 &#x200B; 표시](/help/edge/docs/forms/thank-you-page-form.md)
 * [적응형 양식 블록 구성 요소 및 속성](/help/edge/docs/forms/form-components.md)
+
 
 
 
