@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 97%
+source-wordcount: '545'
+ht-degree: 92%
 
 ---
 
@@ -20,9 +20,10 @@ ht-degree: 97%
 
 ## 전제 조건
 
-* 다음 [적응형 Forms 블록이 GitHub의 EDS 프로젝트에 대해 활성화됩니다](/help/edge/docs/forms/create-forms.md).
+* 을 기반으로 하는 AEM 프로젝트가 있습니다. [AEM Forms 보일러 플레이트](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) 또는 [기존 AEM 프로젝트에 적응형 Forms 블록 추가됨](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)
 * 양식 전체를 테스트하여 사용할 준비가 되었습니다.
 * [스프레드시트를 구성하여](/help/edge/docs/forms/submit-forms.md) 데이터를 수신할 수 있습니다.
+
 
 ## 양식 게시
 
@@ -74,7 +75,9 @@ ht-degree: 97%
 
    | 양식 |
    |---|
-   | [https://main--portal--wkndforms.hlx.live/enquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json) |
+   | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+
+   ![파일에 &#39;Form&#39;이라는 블록 추가](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
    이 블록은 양식이 임베드된 자리 표시자 역할을 합니다. 블록의 두 번째 행에서 `<form>.json` 파일의 URL을 하이퍼링크로 추가합니다.
 
@@ -86,20 +89,16 @@ ht-degree: 97%
    개발 또는 테스트 목적으로는 미리보기 URL(.page URL)을 사용하고, 프로덕션용으로는 게시 URL(.live)을 사용합니다. 다음은 미리보기 및 게시 URL의 예입니다.
 
    **미리보기 URL**
-| 양식  |
-|---|
-| [https://main--portal--wkndforms.hlx.page/enquiry.json](https://main--portal--wkndforms.hlx.page/enquiry.json)  |
+| 양식 | |—| | [https://main--wefinance--wkndforms.hlx.page/enquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json)  |
 
 
    **게시 URL**
-| 양식  |
-|---|
-| [https://main--portal--wkndforms.hlx.live/enquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json)  |
+| 양식 | |—| | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json)  |
 
 1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content)을 사용하여 웹 페이지를 미리 봅니다. 이제 페이지에 양식이 표시됩니다. 예를 들어 다음은 [문의 스프레드시트](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0)를 기반으로 한 양식입니다.
 
 
-   [![샘플 EDS 양식](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.hlx.live/)
+   ![샘플 EDS 양식](/help/edge/assets/eds-form.png)
 
 1. AEM Sidekick을 사용하여 양식을 게시합니다. 이제 고객은 양식을 작성하여 제출할 수 있습니다.
 

@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '937'
 ht-degree: 92%
 
 ---
@@ -64,3 +64,6 @@ AEM Forms Edge Delivery Services를 사용하면 다양한 구성 요소를 사�
 | 선택됨 | 확인란, 라디오 | 기본적으로 필드가 선택되었는지 여부를 결정합니다. 선택됨 속성은 확인란 및 라디오 입력과 함께 사용되는 부울 속성입니다. true로 설정되면 양식 로드 시 기본적으로 필드가 선택되었음을 나타냅니다. |
 | Fieldset | 모두 | 필드를 그룹화하여 양식 내에 시각적으로 구별되는 섹션을 만듭니다. Fieldset 요소는 양식 내 관련 필드를 그룹화하여 시각적으로 구별되는 필드를 만들어 구성 및 사용자 경험을 개선할 수 있습니다. </br> Fieldset 내에 필드 세트를 구성하려면 `fieldset` 속성을 사용하고 해당 이름 속성을 지정하면 됩니다. 아래 예에서는 효율적인 구성을 위해 라디오 버튼이 단일 Fieldset 내에서 어떻게 캡슐화되는지 보여 줍니다. ![Fieldset 예](/help/edge/assets/fieldset-example.png) |
 
+## 참고 항목
+
+{{see-more-forms-eds}}

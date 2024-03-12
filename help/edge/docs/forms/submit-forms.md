@@ -5,17 +5,17 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '973'
-ht-degree: 71%
+source-wordcount: '994'
+ht-degree: 65%
 
 ---
 
 # 데이터를 수신할 스프레드시트 준비
 
 
-[양식을 만들고 미리 본](/help/edge/docs/forms/create-forms.md) 후에는 해당 스프레드시트를 활성화하여 데이터 수신을 시작할 차례입니다.
+다음 작업을 완료하면 [양식을 만들고 미리보기](/help/edge/docs/forms/create-forms.md)해당 스프레드시트가 데이터 수신을 시작할 수 있도록 활성화해야 합니다. 스프레드시트가 데이터를 수락하도록 수동으로 활성화하거나 관리 API를 사용하여 스프레드시트가 데이터를 수락하도록 활성화할 수 있습니다.
 
 ![문서 기반 작성 에코시스템](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -24,7 +24,10 @@ ht-degree: 71%
 
 -->
 
-스프레드시트를 활성화하려면:
+
+## 스프레드시트가 데이터를 수락하도록 수동으로 활성화
+
+스프레드시트가 데이터를 허용하도록 활성화하려면
 
 1. 양식이 있는 스프레드시트를 열고 새 시트를 추가한 다음 이름을 `incoming`으로 바꿉니다.
 
@@ -61,8 +64,7 @@ ht-degree: 71%
 >
 >  “shared-default” 시트에는 공개적으로 액세스 가능해서는 안 되는 개인 식별 정보나 민감한 데이터가 포함되어서는 안 됩니다.
 
-
-## (선택 사항) Admin API를 사용하여 스프레드시트에서 데이터를 수신하도록 설정
+### Admin API를 사용하여 스프레드시트에서 데이터를 허용하도록 설정
 
 양식에 POST 요청을 보내 양식이 데이터를 받아들이고 `incoming` 시트의 헤더를 구성할 수 있도록 할 수도 있습니다. POST 요청을 받으면 서비스는 요청 본문을 분석하고 데이터 수집에 필요한 필수 헤더와 시트를 자동으로 생성합니다.
 
@@ -151,7 +153,6 @@ Admin API를 사용하여 스프레드시트에서 데이터를 수신하도록 
    이제 양식이 데이터를 수신할 수 있습니다. 또한 스프레드시트에서 다음과 같은 변경 내용을 확인할 수 있습니다.
 
 ## 데이터를 수락하도록 활성화되면 시트가 자동으로 변경됩니다.
-
 
 시트가 데이터를 수신하도록 설정되면 스프레드시트에서 다음 변경 사항이 관찰됩니다.
 
@@ -284,7 +285,7 @@ POST 본문에서 양식 데이터의 형식을 지정할 수 있는 몇 가지 
     https://main--portal--wkndforms.hlx.live/contact-us
   ```
 
-다음으로 감사 인사 메시지를 사용자 정의하거나, [감사 인사 페이지를 구성](/help/edge/docs/forms/thank-you-page-form.md)하거나, [리디렉션을 설정](/help/edge/docs/forms/thank-you-page-form.md)할 수 있습니다.
+다음으로, 다음을 수행할 수 있습니다. [감사 메시지 사용자 정의](/help/edge/docs/forms/thank-you-page-form.md).
 
 ## 참고 항목
 

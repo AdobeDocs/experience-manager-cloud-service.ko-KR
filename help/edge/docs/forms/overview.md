@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 8ff0363fbb97aac85733fc9444819fa4d6f12805
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -79,16 +79,20 @@ AEM 작성은 양식 작성을 위한 WYSIWYG 인터페이스(적응형 Forms �
 
 본질적으로, [AEM 작성](/help/forms/creating-adaptive-form-core-components.md) 을 기반으로 구축 [문서 기반 작성](/help/edge/docs/forms/create-forms.md)복잡한 양식을 만들고 관리하기 위한 고급 툴킷을 제공합니다.
 
-### AEM Forms Edge Delivery Services: 작성. Forms 게시 및 제출
+>[!NOTE]
+>
+>
+> AEM 작성 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 관심이 있는 경우, 기능에 대한 액세스를 요청하려면 회사 주소에서 aem-forms-ea@adobe.com으로 빠른 이메일을 보내십시오.
+
+### AEM Forms Edge Delivery Services: Forms 작성, 게시 및 제출
 
 다음 다이어그램은 문서 기반 작성 및 AEM 작성을 사용하여 양식을 작성, 게시 및 제출하는 프로세스를 보여 줍니다.
-
-
-
 
 ![문서 기반 작성 ](/help/edge/assets/document-based-authoring-workflow.png)
 
 ![AEM 작성](/help/edge/assets/aem-authoring-workflow.png)
+
+
 
 
 ## 양식 만들기 시작
@@ -101,6 +105,17 @@ AEM 작성은 양식 작성을 위한 WYSIWYG 인터페이스(적응형 Forms �
 * [양식에 반복 가능한 섹션 추가&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [양식 제출 후 사용자 정의 감사 메시지 &#x200B; 표시](/help/edge/docs/forms/thank-you-page-form.md)
 * [적응형 양식 블록 구성 요소 및 속성](/help/edge/docs/forms/form-components.md)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
