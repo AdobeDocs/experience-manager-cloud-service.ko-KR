@@ -6,10 +6,10 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
-source-git-commit: e0607ff37572a586f5a83f2974054ebfb4b7d98f
+source-git-commit: d75d448d631da7af3a37192f0890a38c760ab09b
 workflow-type: tm+mt
-source-wordcount: '2309'
-ht-degree: 97%
+source-wordcount: '2331'
+ht-degree: 96%
 
 ---
 
@@ -255,6 +255,7 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
        return true; // true - call default error handler, false - don't call default error handler.
    }
    ```
+   위의 코드에서 `return true` 기본 오류 처리기를 자동으로 호출합니다. 기본 오류 처리기가 기본적으로 호출되지 않도록 하려면 다음을 포함하십시오. `return false`.
 
    >[!NOTE]
    >
