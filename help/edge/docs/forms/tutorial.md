@@ -4,9 +4,9 @@ description: 이 튜토리얼은 새로운 AEM(Adobe Experience Manager Forms) �
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: d0298f3c15264bfa7421ccf0cde752f164829c02
 workflow-type: tm+mt
-source-wordcount: '1854'
+source-wordcount: '1850'
 ht-degree: 8%
 
 ---
@@ -18,12 +18,9 @@ ht-degree: 8%
 
 이러한 양식은 Microsoft Excel 또는 Google Sheets 파일에 직접 데이터를 제출하므로 Google Sheets, Microsoft Excel 및 Microsoft SharePoint의 생생한 에코시스템과 강력한 API를 사용하여 제출된 데이터를 쉽게 처리하거나 기존 비즈니스 워크플로우를 시작할 수 있습니다.
 
-AEM Forms은 캡처된 데이터를 캡처하고 저장할 양식을 쉽게 생성할 수 있도록 적응형 Forms 블록이라고 하는 블록을 제공합니다. 적응형 Forms 블록으로 사전 구성된 새 AEM 프로젝트를 만들거나 적응형 Forms 블록을 기존 AEM 프로젝트에 추가할 수 있습니다.
+AEM Forms은 캡처된 데이터를 캡처하고 저장할 양식을 쉽게 생성할 수 있도록 적응형 Forms 블록이라고 하는 블록을 제공합니다. 다음을 수행할 수 있습니다. [적응형 Forms 블록으로 사전 구성된 새 AEM 프로젝트 만들기](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) 또는 [기존 AEM 프로젝트에 적응형 Forms 블록 추가](#add-adaptive-forms-block-to-your-existing-aem-project).
 
-이 AEM Forms 자습서에서는 새 Adobe Experience Manager(AEM) Forms 프로젝트를 사용하여 사용자 정의 양식을 만들고, 미리 보고, 게시하는 과정을 안내합니다. 기존 AEM 프로젝트에 적응형 Forms 블록을 추가하는 방법도 배우게 됩니다.
-
-* **[적응형 Forms 블록으로 사전 구성된 새 AEM 프로젝트 만들기](#create-a-new-eds-project-pre-configured-with-adaptive-forms-block)**
-* **[기존 AEM 프로젝트에 적응형 Forms 블록 추가](#add-adaptive-forms-block-to-an-existing-eds-project)**
+이 AEM Forms 자습서에서는 새 Adobe Experience Manager(AEM) Forms 프로젝트를 사용하여 사용자 정의 양식을 만들고, 미리 보고, 게시하는 과정을 안내합니다.
 
 
 
@@ -79,7 +76,7 @@ AEM Forms Boilerplate 템플릿을 사용하면 적응형 Forms 블록으로 사
 
 ### 고유한 콘텐츠 소스 연결
 
-새로 만든 GitHub 저장소는 다음을 가리킵니다 [Google 드라이브 폴더에 저장된 컨텐츠 예](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). 이 읽기 전용 콘텐츠는 양식에 좋은 시작점을 제공합니다. 자유롭게 자신의 Google 드라이브에 복사하고 필요에 맞게 사용자 지정할 수 있습니다.
+새로 만든 GitHub 저장소는 다음을 가리킵니다 [Google 드라이브 폴더에 저장된 컨텐츠 예](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). 이 읽기 전용 콘텐츠는 양식에 좋은 시작점을 제공합니다. 자유롭게 자신의 Google 드라이브에 복사하고 필요에 맞게 사용자 지정할 수 있습니다.
 
 ![Google 드라이브의 샘플 컨텐츠](/help/edge/assets/folder-with-sample-content.png)
 
@@ -127,7 +124,7 @@ AEM Forms Boilerplate 템플릿을 사용하면 적응형 Forms 블록으로 사
       Microsoft SharePoint을 사용하는 경우 폴더 경로는 다음 형식을 사용합니다.
 
       ```HTML
-      https://<tenant>.SharePoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
+      https://<tenant>.SharePoint.com/sites/<sp-site>/Shared%20Documents/<folder-name>
       ```
 
       예:
@@ -193,8 +190,6 @@ AEM Forms Boilerplate 템플릿을 사용하면 적응형 Forms 블록으로 사
    `https://<branch>--<repo>--<owner>.hlx.page/enquiry` URL.
 
    예를 들어 프로젝트의 저장소 이름이 &quot;wefinance&quot;이고 계정 소유자 &quot;wkndforms&quot; 아래에 있으며 &quot;main&quot; 분기를 사용하는 경우 URL은 다음과 같습니다.
-
-
 
    [https://main--wefinance--wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).
 
@@ -274,9 +269,16 @@ AEM Sidekick을 사용하여 조회 문서를 미리 보고 게시할 수 있습
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427789)
 
-기존 AEM 프로젝트가 있는 경우 적응형 Forms 블록을 현재 프로젝트에 통합하여 양식 만들기를 시작할 수 있습니다. 통합하려면:
+기존 AEM 프로젝트가 있는 경우 적응형 Forms 블록을 현재 프로젝트에 통합하여 양식 만들기를 시작할 수 있습니다.
 
-1. 적응형 Forms 블록 저장소 https://github.com/adobe-rnd/aem-boilerplate-forms 를 컴퓨터에 복제합니다.
+>[!NOTE]
+>
+>
+> 이 단계는 로 빌드된 프로젝트에 적용됩니다. [AEM Boilerplate](https://github.com/adobe/aem-boilerplate). 를 사용하여 AEM 프로젝트를 만든 경우 [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), 이 단계를 건너뛸 수 있습니다.
+
+통합하려면:
+
+1. 적응형 Forms 블록 저장소를 복제합니다. [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms) 컴퓨터에 연결하십시오.
 
 1. 다운로드한 폴더 내에서 `blocks/form` 폴더를 삭제합니다. 이 폴더를 복사합니다. 이제 AEM 프로젝트의 로컬로 이동합니다. `blocks` 폴더를 복사한 양식 폴더를 여기에 붙여 넣습니다.
 
