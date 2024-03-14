@@ -4,7 +4,7 @@ description: Adobe Experience Manager Forms as a Cloud Service을 위한 로컬 
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: e84d3ad2d7b549092ab7c616bead2f14f59be8c9
+source-git-commit: a86e68f9dd195512a689943b303225a48b5f8a23
 workflow-type: tm+mt
 source-wordcount: '2723'
 ht-degree: 2%
@@ -231,10 +231,11 @@ AEM Forms as a Cloud Service은 기록 문서를 보다 쉽게 개발하고 다�
 
    * Linux® 또는 Apple macOS
 
-   ```Shell
-       export AEM_HOME=[local AEM Author installation]
-       ./sdk.sh start
-   ```
+     ```Shell
+     % export AEM_HOME=[local AEM Author installation]
+     % ./sdk.sh start
+     ```
+
 
    >[!NOTE]
    >
