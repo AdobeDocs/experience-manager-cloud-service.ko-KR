@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
+source-git-commit: f4cf79e2cd71a390741987cfcf034e6eed02432d
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ AEM Forms Edge Delivery 서비스를 통해 웹 사이트에서 양식을 작성
 
 다음 다이어그램은 Microsoft Excel 또는 Google 시트(문서 기반 작성)에서 양식을 편집하고 Edge Delivery Services에 게시하는 방법을 보여 줍니다. 또한 적응형 Forms 편집기(AEM 작성)를 사용한 AEM 게시 방법을 보여 줍니다.
 
-![Edge Delivery 아키텍처](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
+![Edge Delivery Services 및 AEM에 게시](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
 AEM Forms Edge Delivery Services은 GitHub를 사용하므로 고객은 GitHub 저장소에서 직접 코드를 관리하고 배포할 수 있습니다. 예를 들어 다음 중 하나로 양식을 작성할 수 있습니다. [Google Sheets](/help/edge/docs/forms/create-forms.md) 또는 [Microsoft Excel](/help/edge/docs/forms/create-forms.md) GitHub 저장소에서 CSS 및 JavaScript를 사용하여 양식의 구성 요소를 개발할 수 있습니다.
 

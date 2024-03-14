@@ -5,24 +5,22 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: d0298f3c15264bfa7421ccf0cde752f164829c02
+source-git-commit: f4cf79e2cd71a390741987cfcf034e6eed02432d
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '805'
 ht-degree: 61%
 
 ---
 
 # 적응형 Forms 블록을 사용하여 양식 만들기
 
+>[!VIDEO](https://video.tv.adobe.com/v/3427881?quality=12&learn=on)
+
 AEM Forms Edge Delivery는 캡처된 데이터를 캡처하고 저장할 양식을 쉽게 만들 수 있도록 적응형 Forms 블록이라고 하는 블록을 제공합니다. 다음을 수행할 수 있습니다. [적응형 Forms 블록으로 사전 구성된 새 AEM 프로젝트 만들기](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) 또는 [기존 AEM 프로젝트에 적응형 Forms 블록 추가](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
 이러한 양식은 Microsoft Excel 또는 Google Sheets 파일에 직접 데이터를 제출하므로 Google Sheets, Microsoft Excel 및 Microsoft SharePoint의 생생한 에코시스템과 강력한 API를 사용하여 제출된 데이터를 쉽게 처리하거나 기존 비즈니스 워크플로우를 시작할 수 있습니다.
 
 ![문서 기반 작성 에코시스템](/help/edge/assets/document-based-authoring-workflow-create-form.png)
-
-
-![비디오](https://video.tv.adobe.com/v/3427881?quality=12&learn=on)
-
 
 
 ## 사전 요구 사항
