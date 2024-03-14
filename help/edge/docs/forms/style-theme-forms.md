@@ -3,14 +3,15 @@ title: AEM Forms Edge Delivery Services Form의 테마 및 스타일 맞춤화
 description: AEM Forms Edge Delivery Services Form의 테마 및 스타일 맞춤화
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '2012'
-ht-degree: 44%
+source-wordcount: '2014'
+ht-degree: 41%
 
 ---
 
-# 양식 필드 스타일 지정
+
+# 양식 모양 사용자 지정
 
 Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이트에서 사용자 상호 작용에 중요한 역할을 합니다. CSS(Cascading Style Sheet)를 사용하여 양식의 필드에 스타일을 지정하여 양식의 시각적 프레젠테이션을 강화하고 사용자 경험을 향상시킬 수 있습니다.
 
@@ -39,7 +40,7 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 
 이해 [기본 CSS 개념](https://www.w3schools.com/css/css_intro.asp) 은 특정 양식 필드를 스타일링하기 전에 매우 중요합니다.
 
-* [선택기](https://www.w3schools.com/css/css_selectors.asp): CSS 선택기를 사용하면 스타일을 지정할 특정 HTML 요소를 타깃팅할 수 있습니다. 요소 선택기, 클래스 선택기 또는 ID 선택기를 사용할 수 있습니다.
+* [선택기](https://www.w3schools.com/css/css_selectors.asp): CSS 선택기를 사용하여 스타일을 지정할 특정 HTML 요소를 타깃팅할 수 있습니다. 요소 선택기, 클래스 선택기 또는 ID 선택기를 사용할 수 있습니다.
 * [속성](https://www.w3schools.com/css/css_syntax.asp): CSS 속성은 요소의 시각적 모양을 정의합니다. 스타일 양식 필드의 일반적인 속성에는 색상, 배경색, 테두리, 패딩, 여백 등이 포함됩니다.
 * [상자 모델](https://www.w3schools.com/css/css_boxmodel.asp): CSS 상자 모델은 HTML 요소의 구조를 패딩, 테두리 및 여백으로 둘러싸인 콘텐츠 영역으로 설명합니다.
 * Flexbox/Grid: CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) 및 [격자 레이아웃](https://www.w3schools.com/css/css_grid.asp) 는 반응형 및 유연한 설계를 위한 강력한 도구입니다.
@@ -87,7 +88,7 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 </div>
 ```
 
-* 클래스: div 요소에는 특정 요소 및 스타일을 타겟팅하기 위한 여러 클래스가 있습니다. CSS 선택기가 양식 필드의 스타일을 지정하려면 `{Type}-wrapper` 또는 `field-{Name}`이(가) 필요합니다.
+* 클래스: div 요소에는 특정 요소 및 스타일을 타겟팅하기 위한 여러 클래스가 있습니다. 다음이 필요합니다. `{Type}-wrapper` 또는 `field-{Name}` 클래스를 사용하여 CSS 선택기를 개발하여 양식 필드를 스타일링할 수 있습니다.
    * {Type}: 필드 유형으로 구성 요소를 식별합니다. 예: 텍스트(텍스트 래퍼), 숫자(숫자 래퍼), 날짜(날짜 래퍼).
    * {Name}: 이름으로 구성 요소를 식별합니다. 필드 이름에는 영숫자 문자만 사용할 수 있으며 이름에 있는 여러 개의 연속 대시는 하나의 대시`(-)`로 대체됩니다. 필드 이름의 시작 및 끝에 있는 대시는 제거됩니다. 예: 이름 (field-first-name field-wrapper).
    * {FieldId}: 자동으로 생성된 필드의 고유 식별자입니다.
@@ -144,7 +145,7 @@ Forms는 사용자가 데이터를 입력할 수 있도록 해 주며 웹 사이
 
 
 
-**일반 구성 요소용 CSS 선택기의 예**
+**일반 구성 요소에 대한 CSS 선택기 예**
 
 ```CSS
 /*Target all text input fields */
@@ -262,7 +263,7 @@ first-name input {
 
 드롭다운 구성 요소와 마찬가지로 라디오 그룹에는 고유한 HTML 구조 및 CSS 구조가 있습니다.
 
-+++ 라디오 그룹 HTML 구조
++++ 라디오 그룹의 HTML 구조
 
 ```HTML
 <fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -300,7 +301,7 @@ first-name input {
 
 +++
 
-+++ 드롭다운 구성 요소용 CSS 선택기
++++ 라디오 그룹용 CSS 선택기
 
 * 필드 세트 타겟팅
 
@@ -334,7 +335,7 @@ first-name input {
 
 ### 확인란 그룹
 
-+++ 확인란 그룹 HTML 구조
++++ 확인란 그룹의 HTML 구조
 
 ```HTML
 <fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -370,7 +371,7 @@ first-name input {
 
 +++
 
-+++ 예: 라디오 및 확인란 그룹에 대한 CSS 선택기**
++++ 확인란 그룹용 CSS 선택기
 
 * 외부 래퍼 타겟팅: 이들 선택기는 라디오 및 확인란 그룹의 가장 바깥쪽 컨테이너를 타겟팅하여 전체 그룹 구조에 일반 스타일을 적용할 수 있습니다. 이는 간격, 정렬 또는 기타 레이아웃 관련 속성을 설정하는 데 유용합니다.
 
@@ -796,9 +797,9 @@ first-name input {
 
 ### 필드 유형에 따른 스타일 지정
 
-CSS 선택기를 사용하여 특정 필드 유형을 타겟팅하고 스타일을 일관되게 적용할 수 있습니다.
+CSS 선택기를 사용하여 특정 필드 유형을 대상으로 하고 스타일을 일관되게 적용할 수 있습니다.
 
-**HTML 구조**
++++ HTML 구조
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -837,8 +838,10 @@ CSS 선택기를 사용하여 특정 필드 유형을 타겟팅하고 스타일�
 * 각 필드에는 해당 레이블, 입력 요소 및 자리 표시자 및 설명과 같은 잠재적인 추가 요소가 포함되어 있습니다.
 
 
++++
 
-**CSS 선택기의 예**
+
++++ 예제 CSS 선택기
 
 ```CSS
 /* Target all text input fields */
@@ -853,13 +856,13 @@ CSS 선택기를 사용하여 특정 필드 유형을 타겟팅하고 스타일�
 }
 ```
 
-
++++
 
 ### 필드 이름에 따른 스타일 지정
 
 이름별로 개별 필드를 타겟팅하여 고유한 스타일을 적용할 수도 있습니다.
 
-**HTML 구조**
++++ HTML 구조
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -883,7 +886,9 @@ CSS 선택기를 사용하여 특정 필드 유형을 타겟팅하고 스타일�
 </div>
 ```
 
-**CSS 선택기의 예**
++++
+
++++ CSS 선택기 예
 
 ```CSS
 .field-otp input {
@@ -891,7 +896,11 @@ CSS 선택기를 사용하여 특정 필드 유형을 타겟팅하고 스타일�
 }
 ```
 
+
+
 이 CSS는 `field-otp` 클래스가 있는 요소 내에 위치한 모든 입력 요소를 타겟팅합니다. 양식의 HTML 구조는 적응형 Forms 블록의 규칙을 따르며, 이는 &quot;field-otp&quot; 클래스로 표시된 컨테이너가 &quot;otp&quot;라는 이름의 필드를 보유하고 있음을 의미합니다.
+
++++
 
 ## 참고 항목
 

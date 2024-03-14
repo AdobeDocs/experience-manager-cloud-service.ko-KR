@@ -3,14 +3,14 @@ title: 데이터를 수신할 스프레드시트 준비
 description: 스프레드시트 및 적응형 Forms 블록 필드를 사용하여 강력한 양식을 더 빨리 만드십시오!
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 65%
+source-wordcount: '1001'
+ht-degree: 64%
 
 ---
 
-# 데이터를 수신할 스프레드시트 준비
+# 데이터 수신을 시작하려면 Google Sheets 또는 Microsoft Excel 파일을 설정하십시오.
 
 
 다음 작업을 완료하면 [양식을 만들고 미리보기](/help/edge/docs/forms/create-forms.md)해당 스프레드시트가 데이터 수신을 시작할 수 있도록 활성화해야 합니다. 스프레드시트가 데이터를 수락하도록 수동으로 활성화하거나 관리 API를 사용하여 스프레드시트가 데이터를 수락하도록 활성화할 수 있습니다.

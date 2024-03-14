@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1104afb8a990c04e7d6bc2f5690a887218598f4b
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '4794'
-ht-degree: 99%
+source-wordcount: '4813'
+ht-degree: 98%
 
 ---
 
@@ -826,21 +826,21 @@ ht-degree: 99%
       + [개요](/help/edge/docs/forms/overview.md)
       + 시작하기 {#getting-started-eds-forms}
          + [시작](/help/edge/docs/forms/tutorial.md)
-         + [양식 만들기 및 미리 보기](/help/edge/docs/forms/create-forms.md)
-         + [양식을 활성화하여 데이터 전송](/help/edge/docs/forms/submit-forms.md)
-         + [사이트 페이지에 양식 게시](/help/edge/docs/forms/publish-forms.md)
+         + [Google Sheets 또는 Microsoft Excel을 사용하여 양식 만들기](/help/edge/docs/forms/create-forms.md)
+         + [Google Sheets 또는 Microsoft Excel 파일을 설정하여 데이터 &#x200B; 수락 시작](/help/edge/docs/forms/submit-forms.md)
+         + [양식을 게시하고 데이터 수집 시작](/help/edge/docs/forms/publish-forms.md)
          + [양식 필드에 유효성 검사 추가](/help/edge/docs/forms/validate-forms.md)
-         + [양식의 테마 및 스타일 변경](/help/edge/docs/forms/style-theme-forms.md)
+         + [양식의 모양 사용자 지정&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
          + [규칙을 사용하여 양식에 동적 비헤이비어 추가](/help/edge/docs/forms/rules-forms.md)
          + [양식 제출 후 사용자 정의 감사 메시지 표시](/help/edge/docs/forms/thank-you-page-form.md)
       + 기능 {#advanced-features-eds-forms}
          + [양식 조각](/help/edge/docs/forms/form-fragments.md)
-         + [반복 가능한 섹션](/help/edge/docs/forms/repeatable-forms.md)
+         + [양식에 반복 가능한 섹션 추가&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
          + [번역](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [사용자 정의 구성 요소](/help/edge/docs/forms/custom-components-forms.md)
       + 참조 {#forms-references}
-         + [양식 블록 구성 요소 목록](/help/edge/docs/forms/form-components.md)
+         + [적응형 양식 블록 구성 요소 및 속성](/help/edge/docs/forms/form-components.md)
    + Edge Delivery용 리소스 {#resources}
       + Sidekick {#sidekick}
          + [Sidekick 사용](/help/edge/docs/sidekick.md)

@@ -3,14 +3,14 @@ title: AEM Forms Edge Delivery Services 양식 게시
 description: AEM Forms Edge Delivery Services 양식 게시
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 92%
+source-wordcount: '549'
+ht-degree: 90%
 
 ---
 
-# 양식 게시
+# 양식을 게시하고 데이터 수집 시작
 
 데이터를 수집하거나 제출하기 위해 고객과 양식을 공유할 준비가 되면 고객이 양식을 쉽게 사용할 수 있도록 양식을 게시하기만 하면 됩니다.
 
