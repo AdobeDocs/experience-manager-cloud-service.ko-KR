@@ -2,10 +2,8 @@
 title: 양식에 반복 가능한 섹션 추가
 description: EDS 양식에 반복 가능한 섹션 추가
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
 exl-id: 062d5a88-48ca-421f-bf0d-1483e3cfee28
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 96%
@@ -17,8 +15,6 @@ ht-degree: 96%
 적응형 Forms 블록은 양식의 섹션 또는 구성 요소를 반복 가능하게 추가하거나 만들 수 있는 기능을 제공합니다. 이를 통해 사용자는 경력이나 학력 등과 같은 정보를 수집하기 쉽도록 동일한 데이터 유형에 대한 정보를 여러 번 입력할 수 있습니다.
 
 예를 들어 개인 경력에 대한 정보를 수집하는 데 사용되는 양식을 고려해 보십시오. 이전 작업의 세부 정보를 캡처하는 반복 가능한 섹션이 있을 수 있습니다. 반복 가능한 섹션은 일반적으로 회사 이름, 직책, 고용일, 직무 등과 같은 필드를 포함합니다. 사용자는 반복 가능한 섹션의 여러 인스턴스를 추가하여 각 직무에 대한 정보를 입력할 수 있습니다.
-
-
 
 이 문서가 작성되면 다음 방법을 파악할 수 있습니다.
 

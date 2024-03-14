@@ -2,10 +2,8 @@
 title: AEM Forms Edge Delivery Services Form의 테마 및 스타일 맞춤화
 description: AEM Forms Edge Delivery Services Form의 테마 및 스타일 맞춤화
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-source-git-commit: f4cf79e2cd71a390741987cfcf034e6eed02432d
+source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
 source-wordcount: '2012'
 ht-degree: 44%

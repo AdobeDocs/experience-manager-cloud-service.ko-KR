@@ -2,12 +2,10 @@
 title: AEM Forms Edge Delivery Services 개요
 description: 최고 성능을 위해 구축된 AEM Forms Edge Delivery Services을 통해 간소화된 데이터 수집 및 사용자 참여의 미래를 구상할 수 있습니다.
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: f4cf79e2cd71a390741987cfcf034e6eed02432d
+source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '1017'
 ht-degree: 0%
 
 ---
@@ -20,7 +18,7 @@ AEM Forms Edge Delivery Services은 작성자가 새로운 양식을 신속하�
 
 * **원하는 도구를 사용하여 등록 경험을 만들 수 있습니다.** 콘텐츠 소스를 분리하여 작성 효율성을 높입니다. 기본적으로 문서 기반 작성(Microsoft SharePoint 또는 Google 드라이브)과 AEM 작성(적응형 Forms 편집기)을 모두 사용할 수 있습니다. 동일한 양식 사이트에서 여러 컨텐츠 소스로 작업하고 Microsoft Excel, Google Sheets 또는 적응형 Forms 편집기와 같은 원하는 작성 도구를 사용할 수 있습니다.
 
-* **탁월한 디지털 등록 경험을 제공합니다.** 빠르게 로드하고 렌더링하는 디지털 등록 경험을 제공합니다. 더 빠른 로드 시간과 최적화된 사용자 경험은 더 높은 양식 완료 및 전환율에 기여합니다.
+* **탁월한 디지털 등록 경험을 제공합니다.** RUM(실시간 사용자 모니터링)을 통해 양식 성능을 빠르고 지속적으로 모니터링하는 로드 및 렌더링의 디지털 등록 경험을 제공합니다. 더 빠른 로드 시간과 최적화된 사용자 경험은 더 높은 양식 완료 및 전환율에 기여합니다.
 
 * **개발자에게 친숙한 도구 세트 사용:** AEM Forms Edge Delivery Services은 일반 HTML, 최신 CSS 및 바닐라 JavaScript를 사용하여 특정 프레임워크의 가파른 학습 곡선을 피하고 탁월한 경험을 만듭니다. 기본 웹 개발 기술을 보유한 개발자는 양식 구성 요소 및 경험을 사용자 정의하고 쉽게 빌드할 수 있습니다. 파이프라인이 실행될 때까지 기다릴 필요가 없습니다. 코드를 GitHub에 체크 인하기만 하면 변경 사항이 라이브됩니다.
 
@@ -62,6 +60,7 @@ AEM Forms Edge Delivery Services은 GitHub를 사용하므로 고객은 GitHub �
 * 스팸 보호를 위한 Google reCAPTCHA 통합.
 * 특정 요구 사항에 맞게 사용자 정의 양식 구성 요소를 만들 수 있습니다.
 * 양식 데이터를 Microsoft Excel 또는 Google Sheets 또는 이메일 주소로 직접 제출합니다.
+* RUM(실시간 사용자 모니터링)을 통해 양식 성능 모니터링
 
 #### AEM 작성 기능
 
@@ -92,9 +91,6 @@ AEM 작성은 양식 작성을 위한 WYSIWYG 인터페이스(적응형 Forms �
 
 ![AEM 작성](/help/edge/assets/aem-authoring-workflow.png)
 
-
-
-
 ## 양식 만들기 시작
 
 * [AEM Forms Edge Delivery Services 시작](/help/edge/docs/forms/tutorial.md)
@@ -105,20 +101,7 @@ AEM 작성은 양식 작성을 위한 WYSIWYG 인터페이스(적응형 Forms �
 * [양식에 반복 가능한 섹션 추가&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [양식 제출 후 사용자 정의 감사 메시지 &#x200B; 표시](/help/edge/docs/forms/thank-you-page-form.md)
 * [적응형 양식 블록 구성 요소 및 속성](/help/edge/docs/forms/form-components.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* [실시간 사용자 모니터링](https://www.aem.live/developer/rum#authentication)
 
 <!-- 
 
