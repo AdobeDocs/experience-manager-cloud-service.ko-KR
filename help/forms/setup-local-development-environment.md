@@ -4,9 +4,9 @@ description: Adobe Experience Manager Forms as a Cloud Service을 위한 로컬 
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 1ec17aebe4eb003b24f5036288a8836aabddb77a
+source-git-commit: e84d3ad2d7b549092ab7c616bead2f14f59be8c9
 workflow-type: tm+mt
-source-wordcount: '2724'
+source-wordcount: '2723'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 2%
 클라우드 개발 환경에 로그인하지 않고 로컬 개발 환경을 사용하여 다음 작업을 수행할 수 있습니다.
 
 * [양식 만들기](creating-adaptive-form.md) 및 관련 에셋(테마, 템플릿, 사용자 지정 제출 액션 등)
-* [PDF 양식을 적응형 양식으로 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
+* [PDF 양식을 적응형 양식으로 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=ko-KR)
 * 생성할 애플리케이션 빌드 [고객 커뮤니케이션](aem-forms-cloud-service-communications-introduction.md) 요청 시 또는 배치 모드에서.
 
 로컬 개발 인스턴스 또는 애플리케이션에서 적응형 양식 또는 관련 에셋을 생성할 준비가 되면 [고객 커뮤니케이션] 준비가 완료된 후에는 추가 테스트나 프로덕션 환경으로 이동하기 위해 적응형 양식 또는 고객 커뮤니케이션 애플리케이션을 로컬 개발 환경에서 Cloud Service 환경으로 내보낼 수 있습니다.
@@ -222,8 +222,19 @@ AEM Forms as a Cloud Service은 기록 문서를 보다 쉽게 개발하고 다�
 
 1. 로컬 AEM 작성자 인스턴스가 실행 중인지 확인합니다. 다음 명령을 실행하여 SDK를 시작합니다.
 
-   * (Microsoft® Windows에서) `sdk.bat start`
-   * (Linux® 또는 Apple macOS) `AEM_HOME=[local AEM Author installation] ./sdk.sh start`
+   * Microsoft® Windows에서
+
+     ```shell
+     sdk.bat start
+     ```
+
+
+   * Linux® 또는 Apple macOS
+
+   ```Shell
+       export AEM_HOME=[local AEM Author installation]
+       ./sdk.sh start
+   ```
 
    >[!NOTE]
    >
