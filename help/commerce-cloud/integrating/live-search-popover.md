@@ -2,7 +2,7 @@
 title: '[!DNL Live Search] 팝오버 CIF 구성 요소'
 description: CIF 구성 요소를 사용하여 활성화 [!DNL Live Search] AEM 사이트의 팝오버 구성 요소
 exl-id: 9dac6693-fe87-4a47-a920-2cf788933499
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
@@ -404,10 +404,10 @@ CIF 구성 요소를 활성화하려면 파일을 편집하고 만들어야 합�
         `${dataServicesStorefrontInstanceContext.store_url}catalogsearch/result`
       );
       // initialize store event after live-search
-      this._initMetrics ();
+      this._initMetrics();
     }
   
-    async _initMetrics () {
+    async _initMetrics() {
       //  Magento Store event
   
       // wait until script is magentoStorefrontEvents is found

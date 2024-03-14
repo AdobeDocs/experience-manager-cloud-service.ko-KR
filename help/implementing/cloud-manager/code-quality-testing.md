@@ -2,7 +2,7 @@
 title: 코드 품질 테스트
 description: 파이프라인의 코드 품질 테스트가 어떻게 작동하고 배포 품질을 어떻게 개선할 수 있는지 알아봅니다.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 96%
@@ -87,7 +87,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 그러면 SonarQube에 차단 취약점이 발생합니다. 그러나 코드를 검토한 후 이것이 취약점이 아니며 적절한 규칙 ID로 코드에 주석을 달 수 있다는 것을 알게 됩니다.
 
 ```java
-@SuppressWarnings ("squid:S2068")
+@SuppressWarnings("squid:S2068")
 @Property(label = "Service Password")
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```

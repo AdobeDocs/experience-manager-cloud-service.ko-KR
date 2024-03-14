@@ -4,7 +4,7 @@ description: CodePen 예제 앱 및 JavaScript용 AEM Headless 클라이언트�
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 100%
@@ -64,7 +64,7 @@ import AdobeAemHeadlessClientJs from 'https://cdn.skypack.dev/@adobe/aem-headles
 12행에서 AEM Headless 클라이언트를 구성합니다.
 
 ```javascript
-const aemHeadlessClient = new AdobeAemHeadlessClientJs ({
+const aemHeadlessClient = new AdobeAemHeadlessClientJs({
   // Use a proxy to avoid CORS issues
   serviceURL: 'https://102588-505tanocelot.adobeioruntime.net/api/v1/web/aem/proxy',
   headers: {

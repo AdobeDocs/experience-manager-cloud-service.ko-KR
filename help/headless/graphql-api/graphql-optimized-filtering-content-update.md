@@ -2,10 +2,10 @@
 title: 최적화된 GraphQL 필터링을 위해 콘텐츠 조각 업데이트
 description: Adobe Experience Manager as a Cloud Service에서 Headless 콘텐츠 게재를 위한 GraphQL 필터링 최적화 목적으로 콘텐츠 조각을 업데이트하는 방법을 알아봅니다.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트�
       <td>모두 </td>
       <td> </td>
       <td>변수 </td>
-      <td>사용(!=0) 콘텐츠 조각 마이그레이션 작업 트리거를 비활성화하거나(0). </td>
+      <td>콘텐츠 조각 마이그레이션 작업의 트리거를 활성화(!=0) 또는 비활성화(0)합니다. </td>
      </tr>
      <tr>
       <td>2</td>
@@ -211,7 +211,7 @@ GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트�
       <td>모두 </td>
       <td> </td>
       <td>변수 </td>
-      <td>비활성화(0)(또는 활성화(!)=0))합니다. </td>
+      <td>콘텐츠 조각 마이그레이션 작업의 트리거를 비활성화(0)(또는 활성화(!=0))합니다. </td>
      </tr>
     </tbody>
    </table>

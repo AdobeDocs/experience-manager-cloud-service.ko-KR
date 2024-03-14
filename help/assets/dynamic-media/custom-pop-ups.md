@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 2%
@@ -85,12 +85,12 @@ ht-degree: 2%
 
    처리기는 를 사용하여 뷰어에 로드됩니다. `setHandlers`:
 
-   `*viewerInstance*.setHandlers ({ *handler 1*, *handler 2*}, ...`
+   `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
 
    **위의 샘플 포함 코드 예를 사용하면 다음 코드가 있습니다.**
 
    ```xml {.line-numbers}
-   s7interactiveimageviewer.setHandlers ({
+   s7interactiveimageviewer.setHandlers({
        quickViewActivate": function(inData) {
            var sku=inData.sku;
            var genericVariable1=inData.genericVariable1;
@@ -100,7 +100,7 @@ ht-degree: 2%
    })
    ```
 
-   자세히 알아보기 `setHandlers ()` 메서드 위치:
+   자세히 알아보기 `setHandlers()` 메서드 위치:
 
    * 대화형 이미지 뷰어 - [세한들러](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
    * 대화형 비디오 뷰어 - [세한들러](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
@@ -236,7 +236,7 @@ ht-degree: 2%
 1. 전체 setHandlers 코드는 다음과 비슷합니다(대화형 비디오 뷰어가 사용됨).
 
    ```xml {.line-numbers}
-   s7interactivevideoviewer.setHandlers ({
+   s7interactivevideoviewer.setHandlers({
        "quickViewActivate": function(inData) {
            var sku=inData.sku;
            loadQuickView(sku);

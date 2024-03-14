@@ -2,7 +2,7 @@
 title: Cloud Service 콘텐츠 요청 이해
 description: Adobe에서 컨텐츠 요청 라이선스를 구입한 경우 Adobe Experience Cloud as a Service가 측정하는 컨텐츠 요청 유형과 조직의 분석 보고 도구와의 차이에 대해 알아봅니다.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '2688'
 ht-degree: 5%

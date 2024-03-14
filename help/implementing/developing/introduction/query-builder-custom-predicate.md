@@ -2,7 +2,7 @@
 title: Query Builder의 사용자 지정 설명 평가기 구현
 description: AEM의 Query Builder는 사용자 정의가 가능한 간편한 방법으로 콘텐츠 저장소를 쿼리합니다
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 0%
@@ -216,7 +216,7 @@ public class ReplicationPredicateEvaluator extends AbstractPredicateEvaluator {
     static final String PREDICATE_SINCE_OP = " >= ";
     static final String PREDICATE_ACTION = "action";
 
-    Logger log = LoggerFactory.getLogger(getClass ());
+    Logger log = LoggerFactory.getLogger(getClass());
 
     /**
      * Returns a XPath expression filtering by replication metadata.

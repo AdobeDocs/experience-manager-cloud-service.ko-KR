@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 7%
@@ -89,7 +89,7 @@ Forms에는 모든 사용자 및 조건에 적용할 수 없는 일부 필드 �
 * 필드의 전역적으로 사용 가능한 속성을 사용하여 지연 로드 패널에 있는 필드의 값을 양식의 다른 모든 패널에서 사용할 수 있도록 합니다.
 * 필드가 조각 간에 전역적으로 표시되는지 여부에 관계없이 레이지 패널 내의 필드 참조 값을 전달하지 마십시오.
 * 다음 클릭 표현식을 사용하여 패널에 표시되는 모든 것을 재설정하려면 패널 재설정 기능을 사용하십시오.\
-  guideBridge.resolveNode(guideBridge.getFocus ({&quot;focusOption&quot;: &quot;navigablePanel&quot;}).resetData()
+  guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;}).resetData()
 
 
 ## 추가 참조 {#see-also}

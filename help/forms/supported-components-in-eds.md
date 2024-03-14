@@ -1,13 +1,13 @@
 ---
 title: AEM Forms Edge Delivery Services 양식 구성 요소
-description: 최고 성능을 위해 구축된 AEM Forms Edge Delivery Services를 통해 향후 간소화된 데이터 수집 및 사용자 참여를 구상할 수 있습니다. 이 문서에서는 EDD 양식에 즉시 사용할 수 있는 모든 양식 구성 요소를 나열합니다.
+description: 최고 성능을 위해 구축된 AEM Forms Edge Delivery Services을 통해 간소화된 데이터 수집 및 사용자 참여의 미래를 구상할 수 있습니다. 이 문서에서는 EDD 양식에 즉시 사용할 수 있는 모든 양식 구성 요소를 나열합니다.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
-source-wordcount: '870'
-ht-degree: 5%
+source-wordcount: '872'
+ht-degree: 6%
 
 ---
 

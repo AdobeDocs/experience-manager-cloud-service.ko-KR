@@ -1,9 +1,9 @@
 ---
 title: 적응형 양식 표현식이란?
 description: 적응형 Forms 표현식을 사용하여 자동 유효성 검사, 계산을 추가하고 섹션의 가시성을 켜거나 끕니다.
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
-source-wordcount: '2683'
+source-wordcount: '2686'
 ht-degree: 0%
 
 ---
@@ -215,7 +215,7 @@ GuideBridge는 브라우저의 메모리 모델에서 적응형 Forms과 상호 
 
 * 양식 필드를 재설정하려면 다음을 트리거할 수 있습니다 `guideBridge.reset()` 버튼의 클릭 표현식에 대한 API입니다. 마찬가지로 클릭 표현식으로 호출할 수 있는 제출 API가 있습니다 `guideBridge.submit()`**.**
 
-* 다음을 사용할 수 있습니다. `setFocus ()` 다양한 필드 또는 패널에 포커스를 설정하기 위한 API 입니다(패널 포커스의 경우 첫 번째 필드로 자동 설정됨). `setFocus ()`는 패널 간 탐색, 이전/다음 트래버스, 특정 필드에 대한 포커스 설정 등과 같은 다양한 탐색 옵션을 제공합니다. 예를 들어 다음 패널로 이동하려면 다음을 사용할 수 있습니다. `guideBridge.setFocus (this.panel.somExpression, 'nextItem').`
+* 다음을 사용할 수 있습니다. `setFocus()` 다양한 필드 또는 패널에 포커스를 설정하기 위한 API 입니다(패널 포커스의 경우 첫 번째 필드로 자동 설정됨). `setFocus()`는 패널 간 탐색, 이전/다음 트래버스, 특정 필드에 대한 포커스 설정 등과 같은 다양한 탐색 옵션을 제공합니다. 예를 들어 다음 패널로 이동하려면 &#39;guideBridge.setFocus(this.panel.somExpression, &#39;nextItem&#39;) 를 사용할 수 있습니다.
 
 * 적응형 양식 또는 특정 패널의 유효성을 검사하려면 `guideBridge.validate(errorList, somExpression).`
 
