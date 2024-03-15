@@ -5,14 +5,14 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 0411da1113c6bddfa1adcc583b4e53c5daa9bd41
 workflow-type: tm+mt
-source-wordcount: '2584'
-ht-degree: 18%
+source-wordcount: '2568'
+ht-degree: 14%
 
 ---
 
-# Brand Portal로 Experience Manager Assets 구성 {#configure-aem-assets-with-brand-portal}
+# Brand Portal을 사용하여 Experience Manager Assets 구성 {#configure-aem-assets-with-brand-portal}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -67,7 +67,7 @@ Experience Manager Assets as a에 대한 프로덕션 환경을 만드는 동안
 >
 >자동 생성된 설정은 수정하지 마십시오.
 
-**추가 참조**:
+**참조:**:
 
 * [Experience Manager Assets에서 as a Cloud Service으로 사용자 및 역할 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
 
@@ -140,13 +140,13 @@ Experience Manager Assets as a 간 연결을 확인하려면 [!DNL Cloud Service
 * [Experience Manager Assets에서 Brand Portal으로 자산 게시](publish-to-brand-portal.md)
 * [Experience Manager Assets에서 Brand Portal으로 폴더 게시](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Experience Manager Assets에서 Brand Portal으로 컬렉션 게시](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* [Brand Portal에서 Experience Manager Assets으로 자산 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - Brand Portal의 에셋 소싱
+* [Brand Portal에서 Experience Manager Assets으로 자산 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ko-KR) - Brand Portal의 에셋 소싱
 * [사전 설정, 스키마 및 패싯을 Brand Portal에 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [태그를 Brand Portal에 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
 다음을 참조하십시오 [Brand Portal 설명서](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) 추가 정보.
 
-**분배 로그**
+**배포 로그**
 
 자산 게시 워크플로우에 대한 분배 에이전트 로그를 모니터링할 수 있습니다.
 
@@ -210,7 +210,7 @@ Brand Portal을 사용하여 Experience Manager Assets을 구성하려면 다음
 
 * 실행 중인 Experience Manager Assets as a [!DNL Cloud Service] 인스턴스
 * Brand Portal 테넌트 URL
-* Brand Portal 임차인의 IMS 조직에 대한 시스템 관리자 권한이 있는 사용자
+* Brand Portal 테넌트의 IMS 조직에 대한 시스템 관리자 권한이 있는 사용자
 
 ## 구성 만들기 {#create-new-configuration}
 
@@ -236,7 +236,7 @@ IMS 구성에는 두 단계가 포함됩니다.
 
 1. Experience Manager Assets에 로그인합니다.
 1. 다음에서 **도구** 패널, 다음으로 이동 **[!UICONTROL 보안]** > **[!UICONTROL Adobe IMS 구성]**.
-1. Adobe IMS 구성 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 리디렉션 대상: **[!UICONTROL Adobe IMS 기술 계정 구성]** 페이지를 가리키도록 업데이트하는 중입니다. 기본적으로 **인증서** 탭이 열립니다.
+1. Adobe IMS 구성 페이지에서 **[!UICONTROL 만들기]**. 리디렉션 대상: **[!UICONTROL Adobe IMS 기술 계정 구성]** 페이지를 가리키도록 업데이트하는 중입니다. 기본적으로 **인증서** 탭이 열립니다.
 1. 선택 **[!UICONTROL Brand Portal Adobe]** 다음에서 **[!UICONTROL 클라우드 솔루션]** 드롭다운 목록입니다.
 1. 다음 항목 선택 **[!UICONTROL 새 인증서 만들기]** 확인란을 선택하고 **별칭** 공개 키. 별칭은 공개 키의 이름 역할을 합니다.
 1. **[!UICONTROL 인증서 만들기]**&#x200B;를 클릭합니다. 그런 다음 을 클릭합니다. **[!UICONTROL 확인]** 을 클릭하여 공개 키를 생성합니다.
@@ -294,7 +294,8 @@ Adobe Developer 콘솔에서 프로젝트 및 API는 Brand Portal 테넌트(조�
 
    >[!NOTE]
    >
-   >자격 증명을 보고 JWT 토큰 생성, 자격 증명 세부 정보 복사, 클라이언트 암호 검색 등과 같은 작업을 수행할 수 있습니다.
+   >* 자격 증명을 보고 JWT 토큰 생성, 자격 증명 세부 정보 복사, 클라이언트 암호 검색 등과 같은 작업을 수행할 수 있습니다.
+   >* 현재 Adobe의 JWT(Developer Console Service Account) 자격 증명 유형만 지원됩니다. OAuth 서버 간 자격 증명 유형이 4월 중순에 지원될 때까지 이 유형을 사용하지 마십시오. 자세한 내용: [Adobe Developer 콘솔에서 JWT 자격 증명 사용 중단](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
 
 1. **[!UICONTROL 클라이언트 자격 증명]** 탭에서 **[!UICONTROL 클라이언트 ID]**&#x200B;를 복사합니다.
 
@@ -397,7 +398,7 @@ Brand Portal 클라우드 서비스를 구성하려면 다음 단계를 수행�
 
    ![Brand Portal 구성 대화 상자](assets/create-cloud-service.png)
 
-1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다. 클라우드 구성이 만들어집니다.
+1. 클릭 **[!UICONTROL 저장 및 닫기]**. 클라우드 구성이 생성됩니다.
 
    Experience Manager Assets as a [!DNL Cloud Service] 이제 인스턴스가 Brand Portal 테넌트로 구성됩니다.
 
