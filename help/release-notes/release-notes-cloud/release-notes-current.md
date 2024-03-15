@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3a86639d9203fff3c72e63baa8d1499b18a4539f
-workflow-type: ht
-source-wordcount: '937'
-ht-degree: 100%
+source-git-commit: 4fdca70b3a711f747e44ac2a6c1d117ac990d49b
+workflow-type: tm+mt
+source-wordcount: '1020'
+ht-degree: 98%
 
 ---
 
@@ -108,6 +108,15 @@ Dynatrace 고객은 자신의 AEM 사용 현황을 모니터링할 수 있습니
 ### 사이트 테마 및 사이트 템플릿을 사용하는 프론트 엔드 코드에 대한 RDE 지원: 얼리 어답터 프로그램 {#rde-frontend-early-adopter}
 
 [신속한 개발 환경(RDE)](/help/implementing/developing/introduction/rapid-development-environments.md)은 이제 얼리 어답터에 대해 [사이트 테마](/help/sites-cloud/administering/site-creation/site-themes.md) 및 [사이트 템플릿](/help/sites-cloud/administering/site-creation/site-templates.md)을 기반으로 하는 프론트 엔드 코드를 지원합니다. RDE를 사용하면 [프론트 엔드 파이프라인](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)이 아닌 명령줄 지시문을 사용하여 이 작업이 수행됩니다. 사용 후 피드백을 제공하려면 **aemcs-rde-support@adobe.com**&#x200B;으로 연락해 주십시오.
+
+### CDN 구성 얼리 어답터 프로그램 {#cdn-config-early-adopter}
+
+선택적으로 라이선스를 부여할 수 있는 WAF(웹 애플리케이션 방화벽) 규칙을 포함하는 최근 릴리스된 [트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 외에도 구성 파이프라인을 사용하여 다른 유형의 CDN 구성을 선언하고 배포할 수 있습니다. 이메일로 얼리어답터 프로그램에 참여 **aemcs-cdn-config-adopter@adobe.com** 액세스 권한을 얻으려면:
+* 301/302 클라이언트측 리디렉션
+* 에지의 요청을 임의의 출처로 프록시 처리
+* URL 변환
+* 요청 또는 응답 헤더 설정 또는 수정
+* CDN이 AEM에 연결할 수 없는 경우의 사용자 정의 오류 페이지
 
 ## Cloud Manager {#cloud-manager}
 
