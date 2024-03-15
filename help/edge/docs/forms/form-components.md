@@ -3,10 +3,10 @@ title: 적응형 양식 블록 구성 요소 및 속성
 description: 이 문서는 AEM Forms Edge Delivery Service에서 사용 가능한 양식 구성 요소와 해당 속성에 대한 개요를 제공합니다.
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
+source-git-commit: 703a48903c44678f6fe311de740b7c767c886ba5
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 90%
+source-wordcount: '1006'
+ht-degree: 80%
 
 ---
 
@@ -46,7 +46,6 @@ AEM Forms Edge Delivery Services를 사용하면 다양한 구성 요소를 사�
 | 속성 | 적용 가능한 구성 요소 | 세부 사항 |
 |--------------|------------------------------|----------------------------------------------------------------------|
 | 유형 | 모두 | 구성 요소의 유형을 지정합니다. 이 속성은 입력 필드의 비헤이비어와 모양을 결정합니다. 예를 들어 텍스트 입력의 경우 유형이 “text”이고, 이메일 입력의 경우 유형이 “email”이고, 암호 입력의 경우 유형이 “password”일 수 있습니다. 적응형 Forms 블록 지원  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">모든 유효한 HTML5 입력 유형</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">텍스트 영역</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">선택</a>, 및 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">필드 세트</a> 형식: |
-| 유형 | 모두 | 구성 요소의 유형을 지정합니다. 이 속성은 입력 필드의 비헤이비어와 모양을 결정합니다. 예를 들어 텍스트 입력의 경우 유형이 “text”이고, 이메일 입력의 경우 유형이 “email”이고, 암호 입력의 경우 유형이 “password”일 수 있습니다. 적응형 Forms 블록 지원  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">모든 유효한 HTML5 입력 유형</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">텍스트 영역</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">선택</a>, 및 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">필드 세트</a> 형식: |
 | 이름 | 모두 | 양식 제출에 필요한 구성 요소를 확인합니다. 이름 속성은 양식 데이터를 서버에 제출할 때 사용되며 사용자 입력과 특정 필드를 연결합니다. |
 | 레이블 | 모두 | 사용자에게 상황별 정보를 제공합니다. 레이블은 구성 요소 옆에 표시된 텍스트로서 사용자에게 입력할 정보에 대한 지침을 제공합니다. |
 | 값 | 텍스트, 암호, 이메일, 숫자, 범위, 날짜 및 해당 변형(날짜/시간-로컬, 월, 주, 시간), 확인란, 라디오, 숨김, 제출, 버튼 | 구성 요소의 초기 값을 지정합니다. 텍스트 입력, 텍스트 영역 및 선택된 요소의 경우 기본 텍스트 또는 옵션이 표시됩니다. 라디오 및 확인란 구성 요소의 경우 선택 시 값/데이터가 제출됩니다. 값 속성은 선택 사항이지만, 확인란 및 라디오 입력의 경우 필수 사항으로 간주해야 합니다. |
@@ -61,6 +60,10 @@ AEM Forms Edge Delivery Services를 사용하면 다양한 구성 요소를 사�
 | 옵션 | 드롭다운 | 드롭다운 메뉴의 선택 사항을 지정합니다. 옵션 속성은 드롭다운 메뉴의 쉼표로 구분된 선택 목록으로 사용자에게 표시되는 선택 가능한 옵션을 정의합니다. |
 | 선택됨 | 확인란, 라디오 | 기본적으로 필드가 선택되었는지 여부를 결정합니다. 선택됨 속성은 확인란 및 라디오 입력과 함께 사용되는 부울 속성입니다. true로 설정되면 양식 로드 시 기본적으로 필드가 선택되었음을 나타냅니다. |
 | Fieldset | 모두 | 필드를 그룹화하여 양식 내에 시각적으로 구별되는 섹션을 만듭니다. Fieldset 요소는 양식 내 관련 필드를 그룹화하여 시각적으로 구별되는 필드를 만들어 구성 및 사용자 경험을 개선할 수 있습니다. </br> Fieldset 내에 필드 세트를 구성하려면 `fieldset` 속성을 사용하고 해당 이름 속성을 지정하면 됩니다. 아래 예에서는 효율적인 구성을 위해 라디오 버튼이 단일 Fieldset 내에서 어떻게 캡슐화되는지 보여 줍니다. ![Fieldset 예](/help/edge/assets/fieldset-example.png) |
+| 반복 가능 | 모두 | 다음에 대한 부울 속성 `fieldset` 지정된 기간 동안 특정 필드 세트를 반복할 수 있음을 나타냅니다. `Min` 및 `Max` 횟수입니다. 다음 `Min` 속성을 1 이상으로 설정해야 합니다. `Min` 속성을 0으로 바꿉니다. |
+| 표시 표현식 | 모두 | 표시 표현식은 필드의 가시성을 제어하는 데 사용되는 스프레드시트 공식을 말하며, &#39;=&#39; 태그로 표시됩니다. 이 수식에서는 다른 필드의 값 속성만 사용할 수 있으므로 시스템 내에서 필드 가시성을 간단하게 관리할 수 있습니다. |
+| 값 표현식 | 모두 | 값 표현식은 필드의 값을 제어하는 데 사용되는 &#39;=&#39; 태그로 표시되는 스프레드시트 공식을 나타냅니다. 이 수식에서는 다른 필드의 값 속성만 사용할 수 있으므로 시스템 내에서 필드 값을 간단하게 관리할 수 있습니다. |
+
 
 ## 참고 항목
 
