@@ -3,10 +3,10 @@ title: 프로덕션 파이프라인 구성
 description: 코드를 빌드하고 프로덕션 환경에 배포하기 위해 프로덕션 파이프라인을 구성하는 방법을 알아봅니다.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 04c65018734f95e8245a6922d5a05c5486a4ffa4
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '1422'
-ht-degree: 72%
+source-wordcount: '1338'
+ht-degree: 67%
 
 ---
 
@@ -93,25 +93,13 @@ ht-degree: 72%
 
    ![전체 스택 코드](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
 
-1. **계속**&#x200B;을 클릭하여 경험 감사에 항상 포함되어야 하는 경로를 정의할 수 있는 **경험 감사** 탭으로 이동합니다.
+1. 탭 또는 클릭 **계속** 로 이동 **경험 감사** 경험 감사에 항상 포함되어야 하는 경로를 정의할 수 있는 탭입니다.
 
    ![경험 감사 추가](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
 1. 경험 감사에 포함될 경로를 제공합니다.
 
-   * 페이지 경로는 `/`로 시작해야 합니다.
-   * 예를 들어 경험 감사에 `https://wknd.site/us/en/about-us.html`을 포함하려면 `/us/en/about-us.html` 경로를 입력합니다.
-
-   ![경험 감사의 경로 정의](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
-
-1. **페이지 추가**&#x200B;를 클릭하면 환경 주소를 사용하여 경로가 자동으로 완료되고 경로 테이블에 추가됩니다.
-
-   ![표에 경로 저장](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
-
-1. 필요에 따라 앞의 두 단계를 반복하여 경로를 계속 추가합니다.
-
-   * 최대 25개의 경로를 추가할 수 있습니다.
-   * 경로를 정의하지 않으면 기본적으로 사이트의 홈페이지가 경험 감사에 포함됩니다.
+   * 문서 보기 [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) 을 참조하십시오.
 
 1. 파이프라인을 저장하려면 **저장**&#x200B;을 클릭합니다.
 
@@ -119,7 +107,7 @@ ht-degree: 72%
 
 파이프라인이 저장되고 이제 **프로그램 개요** 페이지의 **파이프라인** 카드에서 [파이프라인을 관리](managing-pipelines.md)할 수 있습니다.
 
-### 타깃팅된 배포 {#targeted-deployment}
+### 대상 배포 {#targeted-deployment}
 
 타깃팅된 배포는 AEM 애플리케이션의 선택한 부분에 대해서만 코드를 배포합니다. 이러한 배포에서는 다음을 선택할 수 있습니다. **포함** 다음 코드 유형 중 하나:
 

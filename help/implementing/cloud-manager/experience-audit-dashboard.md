@@ -2,9 +2,9 @@
 title: 경험 감사 대시보드
 description: Experience Audit에서 배포 프로세스를 검증하는 방법을 알아보고, 명확하고 유용한 대시보드 인터페이스를 통해 배포된 변경 사항이 성능, 접근성, 모범 사례 및 SEO에 대한 기준 표준을 충족하는지 확인하는 데 도움이 됩니다.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
-source-git-commit: 390faed91889e16d06c5024eaf1b4b1ad1427444
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1958'
 ht-degree: 8%
 
 ---
@@ -40,7 +40,7 @@ Cloud Manager에서 경험 감사를 사용할 수 있습니다.
 
 * 사이트 프로덕션 파이프라인, 기본적으로
 * 개발 전체 스택 파이프라인(선택 사항)
-* 프론트엔드 파이프라인(선택 사항)
+* 개발 프론트엔드 파이프라인(선택 사항)
 
 다음을 참조하십시오. [구성 섹션](#configuration) 선택적 환경에 대한 감사를 구성하는 방법에 대한 자세한 정보.
 

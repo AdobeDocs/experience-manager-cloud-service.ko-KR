@@ -2,10 +2,10 @@
 title: 경험 감사 테스트
 description: 경험 감사를 통해 배포 프로세스를 검증하고 배포된 변경 사항이 성능, 접근성, 모범 사례 및 SEO에 대한 기준 표준을 충족하는지 확인하는 방법을 알아봅니다.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 85%
+source-wordcount: '890'
+ht-degree: 58%
 
 ---
 
@@ -31,15 +31,57 @@ Cloud Manager의 경험 감사를 통해 사이트에서 사용자의 경험을 
 
 감사 결과는 정보 제공용이며 이를 통해 배포 관리자가 점수, 현재 점수와 이전 점수 간의 변화를 확인할 수 있습니다. 이 인사이트는 현재 배포에 도입된 회귀가 있는지 확인하는 데 유용합니다.
 
-경험 감사는 Google의 오픈 소스 도구인 Google Lighthouse를 기반으로 하며 모든 Cloud Manager 프로덕션 파이프라인에서 사용할 수 있습니다.
+Experience Audit는 Google의 오픈 소스 도구인 Google Lighthouse에서 제공합니다.
 
 >[!INFO]
 >
 >2023년 8월 31일부터 경험 감사는 모바일 플랫폼과 관련된 결과를 보여 주는 것으로 전환됩니다. 모바일 성능 지표는 일반적으로 데스크톱보다 낮게 등록되므로 이 변경 후에 보고된 성능이 변경될 것으로 예상해야 합니다.
 
->[!TIP]
->
->[파이프라인을 설정](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)할 때 경험 감사에 포함되는 페이지를 구성합니다.
+## 사용 가능 {#availability}
+
+Cloud Manager에서 경험 감사를 사용할 수 있습니다.
+
+* 기본적으로 사이트 프로덕션 파이프라인입니다.
+* 프론트엔드 개발 파이프라인(선택 사항).
+
+다음을 참조하십시오. [구성 섹션](#configuration) 선택적 환경에 대한 감사를 구성하는 방법에 대한 자세한 정보.
+
+## 구성 {#configuration}
+
+경험 감사는 프로덕션 파이프라인에 기본적으로 사용할 수 있습니다. 프론트엔드 개발 파이프라인에 대해 선택적으로 활성화할 수 있습니다. 모든 경우 파이프라인 실행 중에 평가되는 콘텐츠 경로를 정의해야 합니다.
+
+파이프라인을 설정할 때 경험 감사에 포함될 페이지를 구성합니다.
+
+1. 구성하려는 파이프라인 유형에 따라 다음 지침을 따르십시오.
+
+   * 새 항목 추가 [프로덕션 파이프라인,](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 감사에서 평가할 경로를 정의하려는 경우.
+   * 새 항목 추가 [비프로덕션 파이프라인,](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 프론트엔드 또는 개발 전체 스택 파이프라인에서 감사를 활성화하려는 경우.
+   * 또는 다음을 수행할 수 있습니다 [기존 파이프라인 편집,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) 기존 옵션을 업데이트합니다.
+
+1. 경험 감사를 사용할 비프로덕션 파이프라인을 추가하거나 편집하는 경우 다음을 선택해야 합니다. **경험 감사** 의 확인란 **소스 코드** 탭.
+
+   ![경험 감사 활성화](assets/experience-audit-enable.jpg)
+
+   * 비프로덕션 파이프라인에만 필요합니다.
+   * 다음 **경험 감사** 확인란을 선택하면 탭이 나타납니다.
+
+1. 프로덕션 파이프라인과 비프로덕션 파이프라인 모두에서 의 경험 감사에 포함되어야 하는 경로를 정의합니다. **경험 감사** 탭.
+
+   * 페이지 경로는 다음으로 시작해야 합니다. `/` 및 은 사이트에 상대적입니다.
+   * 예를 들어 사이트가 `wknd.site` 다음을 포함하려고 합니다. `https://wknd.site/us/en/about-us.html` 경험 감사에서 경로를 입력합니다. `/us/en/about-us.html`.
+
+   ![경험 감사의 경로 정의](assets/experience-audit-add-page.png)
+
+1. 탭 또는 클릭 **페이지 추가** 환경 주소를 사용하여 경로가 자동으로 완료되고 경로 테이블에 추가됩니다.
+
+   ![표에 경로 저장](assets/experience-audit-page-added.png)
+
+1. 필요에 따라 앞의 두 단계를 반복하여 경로를 계속 추가합니다.
+
+   * 최대 25개의 경로를 추가할 수 있습니다.
+   * 경로를 정의하지 않으면 기본적으로 사이트의 홈페이지가 경험 감사에 포함됩니다.
+
+1. 파이프라인을 저장하려면 **저장**&#x200B;을 클릭합니다.
 
 ## 경험 감사 결과 이해 {#understanding-experience-audit-results}
 

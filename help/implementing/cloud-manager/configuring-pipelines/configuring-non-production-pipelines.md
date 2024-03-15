@@ -3,10 +3,10 @@ title: 비프로덕션 파이프라인 구성
 description: 프로덕션 환경에 배포하기 전에 비프로덕션 파이프라인을 구성하여 코드 품질을 테스트하는 방법을 알아봅니다.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 04c65018734f95e8245a6922d5a05c5486a4ffa4
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 77%
+source-wordcount: '1371'
+ht-degree: 73%
 
 ---
 
@@ -108,7 +108,7 @@ ht-degree: 77%
 
 파이프라인이 저장되고 이제 **프로그램 개요** 페이지의 **파이프라인** 카드에서 [파이프라인을 관리](managing-pipelines.md)할 수 있습니다.
 
-### 타깃팅된 배포 {#targeted-deployment}
+### 대상 배포 {#targeted-deployment}
 
 타깃팅된 배포는 AEM 애플리케이션의 선택한 부분에 대해서만 코드를 배포합니다. 이러한 배포에서는 다음을 선택할 수 있습니다. **포함** 다음 코드 유형 중 하나:
 
@@ -145,10 +145,16 @@ ht-degree: 77%
    * **Git 분기** - 이 옵션은 선택한 파이프라인에서 코드를 검색해야 하는 분기를 정의합니다.
       * 분기 이름의 처음 몇 글자와 이 필드의 자동 완성 기능을 입력합니다. 선택할 수 있는 일치하는 분기를 찾습니다.
    * **코드 위치** - 이 옵션은 파이프라인이 코드를 검색해야 하는 선택한 저장소 분기의 경로를 정의합니다.
+   * **파이프라인** - 프론트엔드 비프로덕션 파이프라인의 경우 다음을 활성화할 수 있습니다. **[경험 감사.](/help/implementing/cloud-manager/experience-audit-testing.md)**
 
-   ![파이프라인 구성](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
+   ![파이프라인 구성](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. **저장**&#x200B;을 클릭합니다.
+1. 경험 감사를 활성화한 경우 을 탭하거나 클릭합니다. **계속** 로 이동 **경험 감사** 경험 감사에 항상 포함되어야 하는 경로를 정의할 수 있는 탭입니다.
+
+   * 활성화한 경우 **경험 감사**, 문서를 참조하십시오. [경험 감사](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) 를 참조하십시오.
+   * 그렇지 않은 경우 이 단계를 건너뜁니다.
+
+1. 탭 또는 클릭 **저장** 파이프라인을 저장합니다.
 
 파이프라인이 저장되고 이제 **프로그램 개요** 페이지의 **파이프라인** 카드에서 [파이프라인을 관리](managing-pipelines.md)할 수 있습니다.
 
