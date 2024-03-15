@@ -2,10 +2,10 @@
 title: WAF 규칙이 포함된 트래픽 필터 규칙
 description: 웹 애플리케이션 방화벽(WAF)이 포함된 트래픽 필터 규칙 구성
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 86a7815a1055b8ffaf57b802f3232f2c03ec06dc
-workflow-type: ht
-source-wordcount: '3376'
-ht-degree: 100%
+source-git-commit: 043c87330bca37529c0cc614596599bea1e41def
+workflow-type: tm+mt
+source-wordcount: '3382'
+ht-degree: 98%
 
 ---
 
@@ -286,7 +286,7 @@ when:
 
 **예 1**
 
-다음 규칙은 IP 192.168.1.1에서 오는 요청을 차단합니다.
+이 규칙은에서 오는 요청을 차단합니다. **IP 192.168.1.1**:
 
 ```
 kind: "CDN"
@@ -425,7 +425,7 @@ data:
 
 **예 1**
 
-이 규칙은 지난 60초 동안 100req/sec(CDN POP당)를 초과하면 5분간 클라이언트를 차단합니다.
+이 규칙은 지난 10초 동안 평균 60req/sec(CDN POP당)를 초과하는 경우 5m 동안 클라이언트를 차단합니다.
 
 ```
 kind: "CDN"
@@ -450,7 +450,7 @@ data:
 
 **예 2**
 
-지난 60초 동안 100req/sec(CDN POP당)를 초과하면 경로/중대/리소스에서 60초간 요청을 차단합니다.
+지난 60초 동안 평균 100req/sec(CDN POP당)을 초과하는 경우 60초 동안 경로/위험/리소스의 블록 요청:
 
 ```
 kind: "CDN"
