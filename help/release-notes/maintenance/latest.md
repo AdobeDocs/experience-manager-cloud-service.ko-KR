@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: d16d908d39df3c7d72dc48ac877c1543d2442416
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1240'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -102,22 +102,22 @@ ht-degree: 88%
 
 ### 알려진 문제 {#known-issues-15262}
 
-* 자산-35923: `UnsupportedClassVersionError` 업그레이드 후 CM 파이프라인 빌드 단계에서 `aem-sdk-api` 버전 `2024.2.15262.20240224T002940Z-231200`. **CM Java 버전을 11로 설정하려면 고객 작업이 필요합니다.**, 참조 [빌드 환경 / Maven JDK 버전 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/build-environment-details.html?lang=en#alternate-maven-jdk-version)
-* ASSETS-35860: AEM Assets 열 보기에서 시간대 변환이 잘못되었습니다.
-* SCRNS-4171: Windows Screens로 업그레이드하고 채널을 게시할 때 Windows Screens15262 비어 있고 작동이 중지됩니다.
-* GRANITE-50774: GraniteContent는 초기화 시 속성 값의 결정론적 순서를 사용해야 합니다.
+* ASSETS-35923: `aem-sdk-api` 버전을 `2024.2.15262.20240224T002940Z-231200`으로 업그레이드한 후 CM 파이프라인 빌드 설정에서 `UnsupportedClassVersionError`가 발생합니다. **CM Java 버전을 11로 설정하려면 고객측에서의 조치가 필요합니다**. [빌드 환경 / Maven JDK 버전 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/build-environment-details.html?lang=ko#alternate-maven-jdk-version)을 참조하십시오.
+* ASSETS-35860: AEM Assets 열 보기에서 시간대 전환이 잘못되었습니다.
+* SCRNS-4171: 15262로 업그레이드하고 채널을 게시하면 Windows 화면이 공백으로 표시되고 작동이 중단됩니다.
+* GRANITE-50774: GraniteContent는 초기화 시 속성 값의 결정적 순서를 사용해야 합니다.
 
 ### 변경 사항 공지 {#change-notice-15262}
 
-**필요한 작업**
+**조치 필요**
 
 #### CM Java 버전을 11로 설정 {#set-java-version-11}
 
-새 버전의 aem-sdk-api에는 Cloud Manager 빌드 환경 기본 JDK 버전 1.8과 호환되지 않는 Java 11 타겟으로 컴파일된 클래스가 포함되어 있습니다. 이 업데이트를 사용하려면 Maven이 JDK 11을 사용하여 실행되어야 합니다.
+aem-sdk-api의 새 버전에는 Cloud Manager 빌드 환경 기본 JDK 버전 1.8과 호환되지 않는 Java 11 대상으로 컴파일된 클래스가 포함되어 있습니다. 이 업데이트를 사용하려면 JDK 11을 사용하여 Maven을 실행해야 합니다.
 
-고객에게 다음을 추가하는 것이 좋습니다. `.cloudmanager/java-version` 다음 내용이 포함된 git 저장소의 루트에 파일을 추가합니다. `11`. [빌드 환경 / Maven JDK 버전 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/build-environment-details.html?lang=en#alternate-maven-jdk-version)
+고객은 `.cloudmanager/java-version` 파일을 콘텐츠 `11`과 함께 Git 저장소의 루트에 추가할 것이 권장됩니다. [빌드 환경 / Maven JDK 버전 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/build-environment-details.html?lang=ko#alternate-maven-jdk-version)
 
-#### Aem-cloud-testing-clients를 1.2.1로 업데이트 {#update-aem-cloud-testing-clients}
+#### aem-cloud-testing-clients를 1.2.1로 업데이트 {#update-aem-cloud-testing-clients}
 
 향후 변경 사항을 적용하려면 사용자 정의 기능 테스트에 사용되는 [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) 라이브러리를 최소 버전 **1.2.1로 업데이트해야 합니다.**
 

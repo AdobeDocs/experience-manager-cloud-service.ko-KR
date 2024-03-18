@@ -4,9 +4,9 @@ description: AEM as a Cloud Service를 Edge Delivery Services와 함께 사용�
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
 source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -23,13 +23,13 @@ Edge Delivery Services는 콘텐츠 소스에서 분리되며 다양한 콘텐�
 
 콘텐츠 소스가 미리 정의되어 있거나 유연하지 않은 경우가 있습니다(예: 프로젝트에서 Sharepoint 또는 Google 드라이브를 사용할 수 없음). 그러나 대부분의 경우 도구는 미리 정의되어 있지 않으며 선택할 수 있는 도구 또한 다양합니다.
 
-Adobe의 안내 원칙은 단순성입니다. 문서 기반 작성으로 시작하고 필요한 경우 복잡성을 추가합니다. 도구 변경이 필요한 경우, AEM의 Edge Delivery Services 통합에 콘텐츠 마이그레이션이 포함됩니다.
+Adobe의 안내 원칙은 단순성입니다. 문서 기반 작성으로 시작하고 필요할 때 복잡성을 추가해 보십시오. 도구 변경이 필요한 경우, AEM의 Edge Delivery Services 통합에 콘텐츠 마이그레이션이 포함됩니다.
 
 ![콘텐츠 소스 유연성](assets/content-source-flexiblity.png)
 
 ## 작성 {#authoring-edge}
 
-Edge Delivery Services를 사용하여 쉽고, 빠르고, 유연하게 콘텐츠를 작성할 수 있습니다. 문서 기반 작성 을 사용하거나 범용 편집기를 사용하여 AEM에서 작성하도록 선택할 수 있습니다.
+Edge Delivery Services를 사용하여 쉽고, 빠르고, 유연하게 콘텐츠를 작성할 수 있습니다. Universal Editor를 통해 문서 기반 작성을 사용하거나 AEM에서 작성하도록 선택할 수 있습니다.
 
 자세한 내용은 [Edge Delivery Services용 콘텐츠 작성](authoring.md) 문서를 참조하십시오.
 

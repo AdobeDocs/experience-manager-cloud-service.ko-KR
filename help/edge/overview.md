@@ -4,9 +4,9 @@ description: AEM as a Cloud Service가 Edge Delivery Services에서 제공하는
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '874'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Edge Delivery Services를 사용하여 AEM은 참여 및 전환을 유도하는 
 Edge Delivery Services를 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 
 * 완벽한 Lighthouse Score를 사용하여 빠른 사이트를 만들고 실제 사용자 모니터링(RUM)을 통해 사이트 성과를 지속적으로 모니터링합니다.
-* 콘텐츠 소스를 분리하여 작성 효율성을 높입니다. 기본적으로 AEM 작성과 문서 기반 작성 을 모두 사용할 수 있습니다. 따라서 동일한 웹 사이트에서 여러 콘텐츠 소스로 작업할 수 있습니다.
+* 콘텐츠 소스를 분리하여 작성 효율성을 높입니다. 기본 제공되는 AEM 작성과 문서 기반 작성을 모두 사용할 수 있습니다. 따라서 동일한 웹 사이트에서 여러 콘텐츠 소스로 작업할 수 있습니다.
 * 기본 제공 실험 프레임워크를 사용하여 성능에 영향을 주지 않고도 빠르게 테스트를 작성 및 실행하고 테스트 승자 프로덕션에 대한 빠른 릴리스를 제공할 수 있습니다.
 
 ## Edge Delivery Services 개요 {#edge-overview}
@@ -27,7 +27,7 @@ Edge Delivery Services를 사용하여 다음과 같은 작업을 수행할 수 
 
 ![Edge Delivery 아키텍처](assets/AEM-with-EDS-publishing-simple2.png)
 
-Edge Delivery Services는 웹 사이트에서 콘텐츠를 작성하는 방법을 보다 유연하게 제공하는 구성 가능한 서비스 세트입니다. 앞에서 설명한 대로 두 가지를 모두 사용할 수 있습니다 [AEM 콘텐츠 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) 포함 [유니버설 편집기 작성](/help/implementing/universal-editor/introduction.md) 뿐만 아니라 [문서 기반 작성 .](https://www.aem.live/docs/authoring)
+Edge Delivery Services는 웹 사이트에서 콘텐츠를 작성하는 방법을 보다 유연하게 제공하는 구성 가능한 서비스 세트입니다. 앞에서 언급한 바와 같이 [Universal Editor 작성](/help/implementing/universal-editor/introduction.md)과 [문서 기반 작성](https://www.aem.live/docs/authoring)을 통해 [AEM 콘텐츠 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html)를 모두 사용할 수 있습니다.
 
 예를 들어 Microsoft Word 또는 Google Docs에서 바로 콘텐츠를 사용할 수 있습니다. 즉, 해당 소스의 문서가 웹 사이트의 페이지가 될 수 있습니다. 또한 제목, 목록, 이미지, 글꼴 요소는 모두 초기 소스에서 웹 사이트로 전송할 수 있습니다. 새 콘텐츠는 리빌드 프로세스 없이 즉시 추가됩니다.
 
@@ -63,7 +63,7 @@ Adobe에서는 Edge Delivery Services에 도움이 되는 세 가지 채널을 �
 
 ### 커뮤니티 리소스에 액세스 {#community-resource}
 
-Adobe은 Edge Delivery Services 및 문서 기반 작성에 대한 최상의 커뮤니티 참여 및 지원을 제공할 수 있도록 지원하기 위해 최선을 다하고 있습니다.
+Adobe는 사용자에게 Edge Delivery Services와 문서 기반 작성에 대한 최고의 커뮤니티 참여와 지원을 제공하기 위해 최선을 다하고 있습니다.
 
 * [Experience League 커뮤니티](https://adobe.ly/3Q6kTKl)에 참여하여 질의하고, 피드백을 공유하고, 토론을 시작하고, Adobe 전문가와 AEM Advisor/Champs의 지원을 요청하고, 비슷한 생각을 가진 사람들과 실시간으로 소통할 수 있습니다.
 * 보다 일반적인 플랫폼인 [디스코드 채널](https://discord.gg/aem-live)에 참여하여 실시간으로 상호 작용하고 아이디어를 빠르게 교환할 수 있습니다.

@@ -3,9 +3,9 @@ title: ' [!DNL Workfront for Experience Manager enhanced connector] 릴리스 �
 description: ' [!DNL Workfront for Experience Manager enhanced connector] 릴리스 정보'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: 411793f140a2a9cf482d820382d41de843a97e87
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1648'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -13,18 +13,18 @@ ht-degree: 97%
 
 다음 섹션에서는 [!DNL Workfront for Experience Manager enhanced connector]의 일반 릴리스 정보에 대해 간략히 설명합니다.
 
-의 최신 버전 1.9.18에 대한 릴리스 날짜 [!DNL Workfront for Experience Manager enhanced connector] 는 2024년 3월 8일입니다.
+[!DNL Workfront for Experience Manager enhanced connector] 최신 버전 1.9.18의 릴리스 일자는 2024년 3월 8일입니다.
 
 ## 릴리스 하이라이트 {#release-highlights}
 
-의 최신 버전 [!DNL Workfront for Experience Manager enhanced connector] 에는 다음 버그 수정이 포함됩니다.
+최신 버전의 [!DNL Workfront for Experience Manager enhanced connector]에는 다음과 같은 버그 수정 사항이 포함됩니다.
 
-* Workfront에서 다중 자산 업로드를 처리하면 문제가 발생합니다.
-* Workfront을 사용하여 Experience Manager에서 폴더를 검색할 때 닫는 따옴표를 추가하지 않음 `SERVER_ERROR`.
+* Workfront에서 다중 자산 업로드를 처리하는 데 문제가 발생합니다.
+* Workfront를 사용하여 Experience Manager에서 폴더를 검색할 때 닫기 따옴표를 추가하지 않는 경우 `SERVER_ERROR`가 발생합니다.
 
 >[!NOTE]
 >
->AEM 6.4는 확장 지원이 종료되었습니다. [ 기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html)을 참조하십시오. [여기](https://experienceleague.adobe.com/docs/?lang=en)에서 지원되는 버전을 확인하십시오.
+>AEM 6.4는 확장 지원이 종료되었습니다. [ 기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html)을 참조하십시오. [여기](https://experienceleague.adobe.com/docs/?lang=ko)에서 지원되는 버전을 확인하십시오.
 
 
 >[!IMPORTANT]
@@ -253,4 +253,4 @@ ht-degree: 97%
 
 >[!MORELIKETHIS]
 >
->* Experience Manager 6.5와 [통합 [!DNL Workfront for Experience Manager enhanced connector] ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=ko-KR)
+>* Experience Manager 6.5와 [통합 [!DNL Workfront for Experience Manager enhanced connector] ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=ko)
