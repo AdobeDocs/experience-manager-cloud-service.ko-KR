@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service에 대한 로깅
 description: AEM용 로깅을 as a Cloud Service으로 사용하여 중앙 로깅 서비스의 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 35959a1cd47e9ea1b93aeddc3eb72cf03c44eda8
+source-git-commit: 97a1781f0a2d59d2bed7b03c7d4f045c81784f60
 workflow-type: tm+mt
-source-wordcount: '2776'
+source-wordcount: '2797'
 ht-degree: 8%
 
 ---
@@ -453,7 +453,7 @@ Define REWRITE_LOG_LEVEL debug
 <td>/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/responsivegrid/image.coreimg.100.500.jpeg/1572236359031/ayo-ogunseinde-237739.jpeg</td>
 </tr>
 <tr>
-<td>지속 시간</td>
+<td>기간</td>
 <td>1949밀리초</td>
 </tr>
 <tr>
@@ -504,7 +504,7 @@ Define DISP_LOG_LEVEL debug
 
 AEM as a Cloud Service에서는 캐시 적중률 최적화를 포함한 사용 사례에 유용한 CDN 로그에 액세스할 수 있습니다. CDN 로그 형식은 사용자 지정할 수 없으며 정보, 경고 또는 오류와 같은 다양한 모드로 설정하는 개념이 없습니다.
 
-Splunk 전달 기능은 아직 CDN 로그를 지원하지 않습니다.
+CDN 로그는 새로운 Splunk 전달 지원 티켓 요청을 위해 Splunk에 전달됩니다. 이미 Splunk 전달이 활성화된 고객은 향후 CDN 로그를 추가할 수 있습니다.
 
 **예**
 
