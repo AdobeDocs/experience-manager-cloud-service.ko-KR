@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: d16d908d39df3c7d72dc48ac877c1543d2442416
-workflow-type: ht
-source-wordcount: '1240'
-ht-degree: 100%
+source-git-commit: b0198fee3fb8c2f02f50819bea5757e5b8373ac1
+workflow-type: tm+mt
+source-wordcount: '1241'
+ht-degree: 99%
 
 ---
 
@@ -131,7 +131,7 @@ aem-sdk-api의 새 버전에는 Cloud Manager 빌드 환경 기본 JDK 버전 1.
 </dependency>
 ```
 
-이 변경 사항은 2024년 4월 6일 이후에 필요합니다.
+이 변경 사항은 2024년 4월 6일 이전에 수행해야 합니다.
 
 종속성 라이브러리를 업데이트할 수 없으면 “사용자 정의 기능 테스트” 단계에서 파이프라인 오류가 발생합니다.
 
