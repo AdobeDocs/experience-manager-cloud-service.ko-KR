@@ -5,9 +5,9 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 0411da1113c6bddfa1adcc583b4e53c5daa9bd41
+source-git-commit: 2cb630203b818ae338fe6b7c2ff341c76e3a3958
 workflow-type: tm+mt
-source-wordcount: '2568'
+source-wordcount: '2566'
 ht-degree: 14%
 
 ---
@@ -295,7 +295,7 @@ Adobe Developer 콘솔에서 프로젝트 및 API는 Brand Portal 테넌트(조�
    >[!NOTE]
    >
    >* 자격 증명을 보고 JWT 토큰 생성, 자격 증명 세부 정보 복사, 클라이언트 암호 검색 등과 같은 작업을 수행할 수 있습니다.
-   >* 현재 Adobe의 JWT(Developer Console Service Account) 자격 증명 유형만 지원됩니다. OAuth 서버 간 자격 증명 유형이 4월 중순에 지원될 때까지 이 유형을 사용하지 마십시오. 자세한 내용: [Adobe Developer 콘솔에서 JWT 자격 증명 사용 중단](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
+   >* 현재 Adobe의 JWT(Developer Console Service Account) 자격 증명 유형만 지원됩니다. 를 사용하지 마십시오. `OAuth Server-to-Server` 4월 중순에 지원될 때까지 자격 증명 유형입니다. 자세한 내용: [Adobe Developer 콘솔에서 JWT 자격 증명 사용 중단](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
 
 1. **[!UICONTROL 클라이언트 자격 증명]** 탭에서 **[!UICONTROL 클라이언트 ID]**&#x200B;를 복사합니다.
 
