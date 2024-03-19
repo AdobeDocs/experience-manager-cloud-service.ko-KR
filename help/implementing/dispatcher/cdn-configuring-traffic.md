@@ -1,0 +1,377 @@
+---
+title: CDN에서 트래픽 구성
+description: 구성 파일에서 규칙 및 필터를 선언하고 Cloud Manager 구성 파이프라인을 사용하여 CDN에 배포하여 CDN 트래픽을 구성하는 방법에 대해 알아봅니다.
+feature: Dispatcher
+source-git-commit: 0a0c9aa68b192e8e2a612f50a58ba5f9057c862d
+workflow-type: tm+mt
+source-wordcount: '974'
+ht-degree: 2%
+
+---
+
+
+# CDN에서 트래픽 구성 {#cdn-configuring-cloud}
+
+>[!NOTE]
+>이 기능은 아직 일반적으로 사용할 수 없습니다. 얼리어답터 프로그램에 참여하려면 다음 이메일을 보내십시오. `aemcs-cdn-config-adopter@adobe.com` 사용 사례를 설명합니다.
+
+AEM as a Cloud Service은에서 구성할 수 있는 기능의 컬렉션을 제공합니다. [Adobe 관리 CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) 들어오는 요청 또는 나가는 응답의 특성을 수정하는 계층입니다. 이 페이지에 자세히 설명된 다음 규칙은 다음 동작을 달성하도록 선언할 수 있습니다.
+
+* [변형 요청](#request-transformations) - 헤더, 경로 및 매개 변수를 포함하여 수신 요청의 측면을 수정합니다.
+* [응답 변환](#response-transformations) - 클라이언트로 돌아가는 중인 헤더를 수정합니다(예: 웹 브라우저).
+* [클라이언트측 리디렉터](#client-side-redirectors) - 브라우저 리디렉션을 트리거합니다.
+* [원본 선택기](#origin-selectors) - 다른 원본 백엔드에 대한 프록시.
+
+또한 CDN에서 구성할 수 있는 것은 CDN에서 허용하거나 거부하는 트래픽을 제어하는 트래픽 필터 규칙 (WAF 포함)입니다. 이 기능은 이미 릴리스되었으며 다음에서 자세히 알아볼 수 있습니다. [WAF 규칙을 포함한 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 페이지를 가리키도록 업데이트하는 중입니다.
+
+또한 CDN이 해당 원본에 연결할 수 없는 경우 자체 호스팅된 사용자 지정 오류 페이지를 참조하는 규칙을 작성할 수 있습니다(그런 다음 렌더링됨). 자세한 내용은 [CDN 오류 페이지 구성](/help/implementing/dispatcher/cdn-error-pages.md) 기사.
+
+소스 제어의 구성 파일에서 선언된 이러한 모든 규칙은 [Cloud Manager의 구성 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). 구성 파일의 누적 크기는 100KB를 초과할 수 없습니다.
+
+## 평가 순서 {#order-of-evaluation}
+
+기능적으로 앞에서 언급한 다양한 기능들은 다음 순서로 평가됩니다.
+
+![이미지](/help/implementing/dispatcher/assets/order.png)
+
+## 설정 {#initial-setup}
+
+CDN에서 트래픽을 구성하려면 먼저 다음을 수행해야 합니다.
+
+* 먼저 Git 프로젝트의 최상위 수준 폴더에 이 폴더와 파일 구조를 만듭니다.
+
+```
+config/
+     cdn.yaml
+```
+
+* 두 번째로, `cdn.yaml` 구성 파일에는 아래 예제에 설명된 메타데이터와 규칙이 모두 포함되어야 합니다.
+
+## 변형 요청 {#request-transformations}
+
+요청 변환 규칙을 사용하면 수신 요청을 수정할 수 있습니다. 규칙은 정규 표현식을 비롯한 다양한 일치 조건을 기반으로 경로, 쿼리 매개 변수 및 헤더(쿠키 포함)의 설정, 설정 해제 및 변경을 지원합니다. 변수를 설정할 수도 있습니다. 그런 다음 평가 시퀀스에서 나중에 참조할 수 있습니다.
+
+사용 사례는 다양하며 애플리케이션 간소화를 위한 URL 재작성 또는 기존 URL 매핑을 포함합니다.
+
+앞에서 언급했듯이 구성 파일의 크기는 제한되어 있으므로 요구 사항이 더 큰 조직은에서 규칙을 정의해야 합니다 `apache/dispatcher` 레이어.
+
+구성 예:
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["prod", "dev"]
+data:  
+  experimental_requestTransformations:
+    removeMarketingParams: true
+    rules:
+      - name: set-header-rule
+        when:
+          reqProperty: path
+          like: /set-header
+        actions:
+          - type: set
+            reqHeader: x-some-header
+            value: some value
+ 
+      - name: unset-header-rule
+        when:
+          reqProperty: path
+          like: /unset-header
+        actions:
+          - type: unset
+            reqHeader: x-some-header
+ 
+      - name: set-query-param-rule
+        when:
+          reqProperty: path
+          equals: /set-query-param
+        actions:
+          - type: set
+            queryParam: someParam
+            value: someValue
+ 
+      - name: unset-query-param-rule
+        when:
+          reqProperty: path
+          equals: /unset-query-param
+        actions:
+          - type: unset
+            queryParam: someParam
+ 
+      - name: unset-matching-query-params-rule
+        when:
+          reqProperty: path
+          equals: /unset-matching-query-params
+        actions:
+          - type: unset
+            queryParamMatch: ^removeMe_.*$
+ 
+      - name: unset-all-query-params-except-exact-two-rule
+        when:
+          reqProperty: path
+          equals: /unset-all-query-params-except-exact-two
+        actions:
+          - type: unset
+            queryParamMatch: ^(?!leaveMe$|leaveMeToo$).*$
+ 
+      - name: set-req-cookie-rule
+        when:
+          reqProperty: path
+          equals: /set-req-cookie
+        actions:
+          - type: set
+            reqCookie: someParam
+            value: someValue
+ 
+      - name: unset-req-cookie-rule
+        when:
+          reqProperty: path
+          equals: /unset-req-cookie
+        actions:
+          - type: unset
+            reqCookie: someParam
+ 
+      - name: set-variable-rule
+        when:
+          reqProperty: path
+          equals: /set-variable
+        actions:
+          - type: set
+            var: some_var_name
+            value: some value
+ 
+      - name: unset-variable-rule
+        when:
+          reqProperty: path
+          equals: /unset-variable
+        actions:
+          - type: unset
+            var: some_var_name
+ 
+      - name: replace-segment
+        when:
+          reqProperty: path
+          like: /replace-segment/*
+        actions:
+          - type: replace
+            reqProperty: path
+            match: /replace-segment/
+            value: /segment-was-replaced/
+ 
+      - name: replace-extension
+        when:
+          reqProperty: path
+          like: /replace-extension/*.html
+        actions:
+          - type: replace
+            reqProperty: path
+            match: \.html
+            value: ''
+ 
+      - name: multi-action
+        when:
+          reqProperty: path
+          like: /multi-action
+        actions:
+          - type: set
+            reqHeader: x-header1
+            value: body set by transformation rule
+          - type: set
+            reqHeader: x-header2
+            value: '201'
+```
+
+**작업**
+
+사용 가능한 작업은 아래 표에 설명되어 있습니다.
+
+| 이름 | 속성 | 의미 |
+|-----------|--------------------------|-------------|
+| **set** | reqHeader, 값 | 지정된 헤더를 지정된 값으로 설정합니다. |
+|     | queryParam, value | 지정된 쿼리 매개 변수를 지정된 값으로 설정합니다. |
+|     | reqCookie, 값 | 지정된 쿠키를 지정된 값으로 설정합니다. |
+|     | var, 값 | 지정된 변수를 지정된 값으로 설정합니다. |
+| **설정 해제** | reqHeader | 지정된 헤더를 제거합니다. |
+|         | queryParam | 지정된 쿼리 매개 변수를 제거합니다. |
+|         | reqCookie | 지정된 쿠키를 제거합니다. |
+|         | var | 지정된 변수를 제거합니다. |
+|         | queryParammatch | 지정된 정규 표현식과 일치하는 모든 쿼리 매개 변수를 제거합니다. |
+| **replace** | reqProperty, match, value | 요청 속성의 일부를 새 값으로 바꿉니다. 현재는 &quot;path&quot; 속성만 지원됩니다. |
+
+### 변수 {#variables}
+
+요청 변환 중에 변수를 설정한 다음 평가 시퀀스에서 나중에 참조할 수 있습니다. 다음을 참조하십시오. [평가 순서](#order-of-evaluation) 다이어그램 을 참조하십시오.
+
+구성 예:
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["prod", "dev"]
+data:   
+  experimental_requestTransformations:
+    rules:
+      - name: set-variable-rule
+        when:
+          reqProperty: path
+          equals: /set-variable
+        actions:
+          - type: set
+            var: some_var_name
+            value: some_value
+ 
+  experimental_responseTransformations:
+    rules:
+      - name: set-response-header-while-variable
+        when:
+          var: some_var_name
+          equals: some_value
+        actions:
+          - type: set
+            respHeader: x-some-header
+            value: some header value
+```
+
+## 응답 변환 {#response-transformations}
+
+응답 변환 규칙을 사용하면 CDN의 발신 응답에 대한 헤더를 설정하고 설정이 해제될 수 있습니다. 또한 요청 변환 규칙에 이전에 설정된 변수를 참조하려면 위의 예를 참조하십시오.
+
+구성 예:
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["prod", "dev"]
+data:
+  experimental_responseTransformations:
+    rules:
+      - name: set-response-header-rule
+        when:
+          reqProperty: path
+          like: /set-response-header
+        actions:
+          - type: set
+            value: value-set-by-resp-rule
+            respHeader: x-resp-header
+ 
+      - name: unset-response-header-rule
+        when:
+          reqProperty: path
+          like: /unset-response-header
+        actions:
+          - type: unset
+            respHeader: x-header1
+ 
+      # Example: Multi-action on response header
+      - name: multi-action-response-header-rule
+        when:
+          reqProperty: path
+          like: /multi-action-response-header
+        actions:
+          - type: set
+            respHeader: x-resp-header-1
+            value: value-set-by-resp-rule-1
+          - type: set
+            respHeader: x-resp-header-2
+            value: value-set-by-resp-rule-2
+```
+
+**작업**
+
+사용 가능한 작업은 아래 표에 설명되어 있습니다.
+
+| 이름 | 속성 | 의미 |
+|-----------|--------------------------|-------------|
+| **set** | reqHeader, 값 | 지정된 헤더를 응답의 특정 값으로 설정합니다. |
+| **설정 해제** | respHeader | 응답에서 지정된 헤더를 제거합니다. |
+
+## 원본 선택기 {#origin-selectors}
+
+AEM CDN을 활용하여 Adobe이 아닌 애플리케이션을 비롯한 다양한 백엔드로 트래픽을 라우팅할 수 있습니다(경로당 또는 하위 도메인별로).
+
+구성 예:
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  experimental_originSelectors:
+    rules:
+      - name: example-com
+        when: { reqProperty: path, like: /proxy-me* }
+        action:
+          type: selectOrigin
+          originName: example-com
+          # useCache: false
+    origins:
+      - name: example-com
+        domain: www.example.com
+        # ip: '1.1.1.1'
+        # forwardHost: true
+        # forwardCookie: true 
+        # forwardAuthorization: true
+        # timeout: 20
+```
+
+**작업**
+
+아래 표에 사용 가능한 작업이 설명되어 있습니다.
+
+| 이름 | 속성 | 의미 |
+|-----------|--------------------------|-------------|
+| **selectOrigin** | originName | 정의된 원본 중 하나의 이름입니다. |
+|     | useCache(선택 사항, 기본값은 true) | 이 규칙과 일치하는 요청에 캐싱을 사용할지 여부를 플래그로 표시합니다. |
+
+**원본**
+
+원본에 대한 연결은 SSL만 사용하며 포트 443을 사용합니다.
+
+| 속성 | 의미 |
+|------------------|--------------------------------------|
+| **이름** | &quot;action.originName&quot;에서 참조할 수 있는 이름입니다. |
+| **도메인** | 사용자 지정 백엔드에 연결하는 데 사용되는 도메인 이름. 또한 SSL SNI 및 유효성 검사에 사용됩니다. |
+| **ip** (선택 사항, 지원되는 iv4 및 ipv6) | 제공된 경우 &quot;도메인&quot; 대신 백엔드에 연결하는 데 사용됩니다. 여전히 &quot;도메인&quot;은 SSL SNI 및 유효성 검사에 사용됩니다. |
+| **forwardHost** (선택 사항, 기본값은 false임) | true로 설정하면 클라이언트 요청의 &quot;호스트&quot; 헤더가 백엔드에 전달되고, 그렇지 않으면 &quot;도메인&quot; 값이 &quot;호스트&quot; 헤더에 전달됩니다. |
+| **forwardCookie** (선택 사항, 기본값은 false임) | true로 설정하면 클라이언트 요청의 &quot;쿠키&quot; 헤더가 백엔드로 전달되고, 그렇지 않으면 쿠키 헤더가 제거됩니다. |
+| **forwardAuthorization** (선택 사항, 기본값은 false임) | true로 설정하면 클라이언트 요청의 &quot;Authorization&quot; 헤더가 백엔드로 전달되고, 그렇지 않으면 Authorization 헤더가 제거됩니다. |
+| **timeout** (선택 사항, 초 단위, 기본값은 60) | 백엔드 서버가 HTTP 응답 본문의 첫 번째 바이트를 전달할 때까지 CDN이 기다려야 하는 시간(초)입니다. 이 값은 백엔드 서버에 대한 바이트 제한 시간 사이의 값으로도 사용됩니다. |
+
+## 클라이언트측 리디렉터 {#client-side-redirectors}
+
+301, 302 및 유사한 클라이언트측 리디렉션에 대해 클라이언트측 리디렉션 규칙을 사용할 수 있습니다. 규칙이 일치하는 경우 CDN은 상태 코드 및 메시지(예: HTTP/1.1 301 영구적으로 이동됨)와 위치 헤더 세트를 포함하는 상태 라인으로 응답합니다.
+
+고정 값을 갖는 절대 위치와 상대 위치를 모두 사용할 수 있습니다.
+
+구성 예:
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  experimental_redirects:
+    rules:
+      - name: redirect-absolute
+        when: { reqProperty: path, equals: "/page.html" }
+        action:
+          type: redirect
+          status: 301
+          location: https://example.com/page
+      - name: redirect-relative
+        when: { reqProperty: path, equals: "/anotherpage.html" }
+        action:
+          type: redirect
+          location: /anotherpage
+```
+
+| 이름 | 속성 | 의미 |
+|-----------|--------------------------|-------------|
+| **리디렉션** | 위치 | &quot;위치&quot; 헤더 값. |
+|     | 상태(선택 사항, 기본값은 301) | 리디렉션 메시지에 사용할 HTTP 상태, 기본적으로 301. 허용되는 값은 301, 302, 303, 307, 308입니다. |

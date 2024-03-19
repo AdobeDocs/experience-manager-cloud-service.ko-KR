@@ -3,10 +3,10 @@ title: AEM as a Cloud Service의 CDN
 description: AEM 관리 CDN을 사용하는 방법과 자체 CDN을 AEM 관리 CDN으로 지정하는 방법을 알아봅니다.
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
+source-git-commit: 43fdf17ab09fd7a974c32cfd716f65072b678726
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 25%
+source-wordcount: '1118'
+ht-degree: 23%
 
 ---
 
@@ -39,6 +39,14 @@ AEM 관리 CDN은 대부분의 고객 성능 및 보안 요구 사항을 충족�
 >[!CAUTION]
 >
 >허용된 IP의 요청만 AEM 관리 CDN에서 제공됩니다. 자체 CDN을 AEM 허용 목록에 추가하다 관리 CDN으로 지정하는 경우 CDN의 IP가 CDN에 포함되어 있는지 확인합니다.
+
+### CDN에서 트래픽 구성 {#cdn-configuring-cloud}
+
+CDN 트래픽 및 필터를 구성하는 규칙은 구성 파일에서 선언하고 CDN에 배포할 수 있습니다. [Cloud Manager의 구성 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). 자세한 내용은 [CDN에서 트래픽 구성](/help/implementing/dispatcher/cdn-configuring-traffic.md) 및 [WAF 규칙을 포함한 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md).
+
+### CDN 오류 페이지 구성 {#cdn-error-pages}
+
+AEM에 도달할 수 없는 드문 이벤트에서 브라우저에 제공되는 기본적이고 브랜드가 지정되지 않은 페이지를 재정의하도록 CDN 오류 페이지를 구성할 수 있습니다. 자세한 내용은 [CDN 오류 페이지 구성](/help/implementing/dispatcher/cdn-error-pages.md).
 
 ## 고객 CDN은 AEM 관리 CDN에 지정 {#point-to-point-CDN}
 
@@ -131,7 +139,7 @@ AEM 관리 CDN은 다음을 사용하여 각 요청에 헤더를 추가합니다
 >
 >고객 관리 CDN이 있는 경우 이러한 헤더는 실제 클라이언트가 아닌 고객 CDN 프록시 서버의 위치를 반영합니다. 따라서 고객 관리 CDN의 경우 지리적 위치 헤더는 고객 CDN에서 관리해야 합니다.
 
-국가 코드의 값은 설명된 Alpha-2 코드입니다 [여기](https://en.wikipedia.org/wiki/ISO_3166-1).
+국가 코드의 값은 설명된 Alpha-2 코드입니다 [여기](https://en.wikipedia.org/wiki/kr/ISO_3166-1).
 
 대륙 코드의 값은 다음과 같습니다.
 
