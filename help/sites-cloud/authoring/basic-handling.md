@@ -2,10 +2,10 @@
 title: 기본 처리
 description: AEM 탐색 및 기본 사용 방법 익히기
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: 7e0ca5dad5cd53c2304e2eba48a5131d587967ef
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 64%
+source-wordcount: '926'
+ht-degree: 63%
 
 ---
 
@@ -36,7 +36,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
 사용자가 콘솔에 처음 액세스할 때마다 제품 탐색 튜토리얼이 시작됩니다. 잠시 시간을 내어 AEM 기본 처리에 대한 개요를 살펴보십시오.
 
-![탐색 튜토리얼](assets/tutorial.png)
+![탐색 튜토리얼](assets/basic-handling-tutorial.png)
 
 선택 **다음** 개요의 다음 페이지로 이동합니다. 선택 **닫기** 닫으려면 개요 대화 상자의 외부를 선택하십시오.
 
@@ -48,7 +48,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
 **닫기**&#x200B;를 클릭하거나 탭하여 전역 탐색 패널을 닫고 이전 위치로 돌아갈 수 있습니다.
 
-![탐색 패널 상단 막대](assets/basic-handling-navigation-bar.png)
+![탐색 패널 상단 막대](assets/basic-handling-navigation-options.png)
 
 전역 탐색에는 다음과 같은 두 개의 패널이 있으며 화면의 왼쪽 여백에 아이콘으로 표시됩니다.
 
@@ -86,31 +86,37 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
 헤더는 항상 화면 상단에 있습니다. 헤더의 대부분 옵션은 시스템 위치와 관계없이 동일하게 유지되지만 일부는 컨텍스트에 따라 다릅니다.
 
-![탐색 헤더](/help/sites-cloud/authoring/assets/navigation-bar.png)
+![탐색 헤더](/help/sites-cloud/authoring/assets/basic-handling-navigation-bar.png)
 
 * [전역 탐색](#global-navigation) - 다음을 선택합니다. **Adobe Experience Manager** 콘솔 간에 이동하는 링크입니다.
 
-  ![전역 탐색](/help/sites-cloud/authoring/assets/global-navigation.png)
+  ![전역 탐색](/help/sites-cloud/authoring/assets/basic-handling-global-navigation.png)
 
-* [검색](/help/sites-cloud/authoring/search.md) - 다음을 사용할 수도 있습니다 [바로 가기 키](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `/` (슬래시) 모든 콘솔에서 검색을 호출합니다.
+* 피드백
 
-  ![검색 아이콘](/help/sites-cloud/authoring/assets/search-icon.png)
+  ![피드백 단추](/help/sites-cloud/authoring/assets/basic-handling-feedback.png)
+
+* IMS 조직 - 필요한 경우 변경하려면 선택합니다.
 
 * [솔루션](https://www.adobe.com/kr/experience-cloud.html) - 다른 Adobe 솔루션에 액세스하려면 이 옵션을 선택하십시오.
 
-  ![솔루션 버튼](/help/sites-cloud/authoring/assets/solutions.png)
+  ![솔루션 버튼](/help/sites-cloud/authoring/assets/basic-handling-solutions.png)
+
+* [검색](/help/sites-cloud/authoring/search.md) - 다음을 사용할 수도 있습니다 [바로 가기 키](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `/` (슬래시) 모든 콘솔에서 검색을 호출합니다.
+
+  ![검색 아이콘](/help/sites-cloud/authoring/assets/basic-handling-search-icon.png)
 
 * [도움말](#accessing-help)
 
-  ![도움말 버튼](/help/sites-cloud/authoring/assets/help.png)
+  ![도움말 버튼](/help/sites-cloud/authoring/assets/basic-handling-help-icon.png)
 
 * [알림](/help/sites-cloud/authoring/inbox.md) - 이 아이콘에는 현재 할당된 미완료 알림 수가 배지로 표시되어 있습니다.
 
-  ![알림 버튼](/help/sites-cloud/authoring/assets/notifications.png)
+  ![알림 버튼](/help/sites-cloud/authoring/assets/basic-handling-notifications.png)
 
 * [사용자 속성](/help/sites-cloud/authoring/account-environment.md) - 사용자 설정을 변경하려면 선택하십시오.
 
-  ![사용자 속성 버튼](/help/sites-cloud/authoring/assets/user-properties.png)
+  ![사용자 속성 버튼](/help/sites-cloud/authoring/assets/basic-handling-user-properties.png)
 
 ## 도움말 액세스 {#accessing-help}
 
