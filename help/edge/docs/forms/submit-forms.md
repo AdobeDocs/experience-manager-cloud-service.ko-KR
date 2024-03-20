@@ -1,21 +1,21 @@
 ---
 title: 데이터를 수신할 스프레드시트 준비
-description: 스프레드시트 및 적응형 Forms 블록 필드를 사용하여 강력한 양식을 더 빨리 만드십시오!
+description: 스프레드시트 및 적응형 양식 블록 필드를 사용하여 강력한 양식을 더 빠르게 작성할 수 있습니다.
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
 source-wordcount: '1001'
-ht-degree: 64%
+ht-degree: 98%
 
 ---
 
 # 데이터 수신을 시작하려면 Google Sheets 또는 Microsoft Excel 파일을 설정하십시오.
 
 
-다음 작업을 완료하면 [양식을 만들고 미리보기](/help/edge/docs/forms/create-forms.md)해당 스프레드시트가 데이터 수신을 시작할 수 있도록 활성화해야 합니다. 스프레드시트가 데이터를 수락하도록 수동으로 활성화하거나 관리 API를 사용하여 스프레드시트가 데이터를 수락하도록 활성화할 수 있습니다.
+[양식을 만들고 미리 본](/help/edge/docs/forms/create-forms.md) 후에는 해당 스프레드시트를 활성화하여 데이터 수신을 시작할 차례입니다. 스프레드시트가 데이터를 수신하도록 수동으로 활성화하거나, 관리 API를 사용하여 스프레드시트가 데이터를 수신하도록 활성화할 수 있습니다.
 
-![문서 기반 작성 에코시스템](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
+![문서 기반 작성 생태계](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 <!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
@@ -23,9 +23,9 @@ ht-degree: 64%
 -->
 
 
-## 스프레드시트가 데이터를 수락하도록 수동으로 활성화
+## 데이터를 수신하도록 스프레드시트를 수동으로 활성화
 
-스프레드시트가 데이터를 허용하도록 활성화하려면
+데이터를 수신하도록 스프레드시트를 활성화하는 방법
 
 1. 양식이 있는 스프레드시트를 열고 새 시트를 추가한 다음 이름을 `incoming`으로 바꿉니다.
 
@@ -33,21 +33,21 @@ ht-degree: 64%
    >
    > `incoming` 시트가 없는 경우 AEM은 스프레드시트에 데이터를 보내지 않습니다.
 
-1. 이 시트에서는 &quot;intake_form&quot;이라는 테이블을 삽입합니다. 양식 필드 이름과 일치하는 데 필요한 열 수를 선택합니다. 그런 다음 도구 모음에서 삽입 > 표 로 이동하여 확인 을 클릭합니다.
+1. 이 시트에 “intake_form”이라는 테이블을 삽입합니다. 양식 필드 이름과 일치하는 데 필요한 열 수를 선택합니다. 그런 다음 도구 모음에서 삽입 > 표로 이동하고 ‘확인’을 클릭합니다.
 
-1. 테이블 이름을 &quot;intake_form&quot;으로 변경합니다. Microsoft Excel에서 표의 이름을 변경하려면 표를 선택하고 표 디자인을 클릭합니다.
+1. 테이블 이름을 “intake_form”으로 변경합니다. Microsoft Excel에서 테이블 이름을 변경하려면 테이블을 선택하고 테이블 디자인을 클릭합니다.
 
-1. 그런 다음 양식 필드 이름을 테이블 머리글로 추가합니다. 필드가 정확히 동일한지 확인하기 위해 &quot;shared-default&quot; 시트에서 필드를 복사하여 붙여넣을 수 있습니다.  &quot;shared-default&quot; 시트에서 &quot;Name&quot; 열 아래에 나열된 양식 ID를 선택하고 복사합니다. 단, 제출 필드는 예외입니다.
+1. 다음으로 양식 필드 이름을 테이블 헤더로 추가합니다. 필드가 정확히 동일한지 확인하려면 “shared-default” 시트에서 필드를 복사하여 붙여넣으면 됩니다. “shared-default” 시트에서 제출 필드를 제외하고 “이름” 열 아래에 나열된 양식 ID를 선택하고 복사합니다.
 
-1. &quot;가져오는&quot; 시트에서 선택하여 붙여넣기 > 행을 열에 전치하기 를 선택하여 필드 ID를 이 새 시트의 열 헤더로 복사합니다. 다른 데이터를 캡처해야 하는 필드는 무시할 수 있는 필드만 유지합니다.
+1. “incoming” 시트에서 선택하여 붙여넣기 > 행을 열로 바꾸기를 선택하여 필드 ID를 이 새 시트의 열 헤더로 복사합니다. 데이터를 캡처해야 하는 필드만 유지합니다. 다른 필드는 무시할 수 있습니다.
 
-   의 각 값 `Name` 열 `shared-default` 제출 버튼을 제외한 시트는에서 헤더 역할을 할 수 있습니다. `incoming` 시트. 그 예로 다음 이미지에서는 “문의” 양식의 헤더를 설명합니다.
+   제출 버튼을 제외한 `shared-default` 시트의 각 `Name` 열 값은 `incoming` 시트에서 헤더 역할을 할 수 있습니다. 그 예로 다음 이미지에서는 “문의” 양식의 헤더를 설명합니다.
 
    ![문의 양식의 필드](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
 
 
-1. AEM Sidekick 확장을 사용하여 양식 업데이트를 미리 봅니다. 이제 시트가 양식 제출을 수락할 준비가 되었습니다.
+1. AEM Sidekick 확장 기능을 사용하여 양식 업데이트를 미리 봅니다. 이제 시트가 수신 양식 제출을 수락할 준비가 되었습니다.
 
    >[!NOTE]
    >
@@ -56,7 +56,7 @@ ht-degree: 64%
 
 필드 이름이 `incoming` 시트에 추가되면 양식 제출을 수락할 준비가 됩니다. 양식을 미리 보고 이를 사용하여 시트에 데이터를 제출할 수 있습니다.
 
-데이터를 수신하도록 시트가 설정되면 다음 작업을 수행할 수 있습니다 [적응형 Forms 블록을 사용하여 양식 미리 보기](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) 또는 [POST 요청 사용](#use-admin-apis-to-send-data-to-your-sheet) 데이터를 시트로 보내기 시작합니다.
+시트가 데이터를 수신하도록 설정되면 [적응형 양식 블록을 사용하여 양식을 미리 보거나](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) [POST 요청을 사용](#use-admin-apis-to-send-data-to-your-sheet)하여 시트로 데이터 전송을 시작할 수 있습니다.
 
 >[!WARNING]
 >
@@ -150,9 +150,9 @@ Admin API를 사용하여 스프레드시트에서 데이터를 수신하도록 
 
    이제 양식이 데이터를 수신할 수 있습니다. 또한 스프레드시트에서 다음과 같은 변경 내용을 확인할 수 있습니다.
 
-## 데이터를 수락하도록 활성화되면 시트가 자동으로 변경됩니다.
+## 데이터를 수신하도록 활성화된 후 자동 변경 사항
 
-시트가 데이터를 수신하도록 설정되면 스프레드시트에서 다음 변경 사항이 관찰됩니다.
+시트가 데이터를 수신하도록 설정되면 스프레드시트에서 다음과 같은 변경 사항을 확인할 수 있습니다.
 
 “Slack”이라는 시트가 Excel 통합 문서 또는 Google 시트에 추가됩니다. 이 시트에서는 새 데이터가 스프레드시트에 수집될 때마다 지정된 Slack 채널에 대한 자동 알림을 구성할 수 있습니다. 현재 AEM은 AEM Engineering Slack 조직 및 Adobe Enterprise Support 조직에만 알림을 지원합니다.
 
@@ -171,7 +171,7 @@ Admin API를 사용하여 스프레드시트에서 데이터를 수신하도록 
 
 ## 시트로 데이터 전송 {#send-data-to-your-sheet}
 
-시트가 데이터를 수신하도록 설정되면 다음 작업을 수행할 수 있습니다 [적응형 Forms 블록을 사용하여 양식 미리 보기](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) 또는 [관리 API 사용](#use-admin-apis-to-send-data-to-your-sheet) 데이터를 시트로 보내기 시작합니다.
+데이터를 수신하도록 시트를 설정한 후 [적응형 양식 블록을 사용하여 양식을 미리 보거나](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) [Admin API를 사용](#use-admin-apis-to-send-data-to-your-sheet)하여 시트로 데이터 전송을 시작할 수 있습니다.
 
 ### Admin API를 사용하여 시트에 데이터 전송
 
@@ -283,8 +283,8 @@ POST 본문에서 양식 데이터의 형식을 지정할 수 있는 몇 가지 
     https://main--portal--wkndforms.hlx.live/contact-us
   ```
 
-다음으로, 다음을 수행할 수 있습니다. [감사 메시지 사용자 정의](/help/edge/docs/forms/thank-you-page-form.md).
+다음으로, [감사 메시지를 사용자 정의](/help/edge/docs/forms/thank-you-page-form.md)할 수 있습니다.
 
-## 참고 항목
+## 추가 참조
 
 {{see-more-forms-eds}}

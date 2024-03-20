@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 2c3be4b60396c5cf57c327fd5b858a3af65397f2
 workflow-type: tm+mt
 source-wordcount: '4829'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -423,7 +423,7 @@ ht-degree: 98%
       + [마이크로 프론트엔드 자산 선택기](/help/assets/asset-selector.md)
       + [마이크로 프론트엔드 대상 선택기](/help/assets/destination-selector.md)
       + [자산 공유](/help/assets/share-assets.md)
-      + [자산 재처리 중](/help/assets/reprocessing.md)
+      + [자산 재처리](/help/assets/reprocessing.md)
       + [활동 및 DAM 작업 모니터링](/help/assets/assets-activity-history.md)
       + [자산 마이크로서비스 사용 시작하기](/help/assets/asset-microservices-configure-and-use.md)
       + [자산 추가 및 업로드](/help/assets/add-assets.md)
@@ -698,7 +698,7 @@ ht-degree: 98%
       + [Forms Designer 설치 및 구성](/help/forms/installing-configuring-designer.md)
       + [Forms Designer를 사용하여 템플릿 만들기](/help/forms/use-forms-designer.md)
       + [PDF 문서에서 사용자 정의 글꼴 사용하기](/help/forms/use-custom-fonts.md)
-      + [PDF 문서의 지원되는 글꼴 목록](/help/forms/supported-out-of-the-box-fonts.md)
+      + [PDF 문서에서 지원되는 글꼴 목록](/help/forms/supported-out-of-the-box-fonts.md)
       + [알려진 문제, 모범 사례 및 자주 묻는 질문](/help/forms/communications-known-issues-limitations.md)
    + 트랜잭션 보고서 {#using-communications}
       + [트랜잭션 보고서 과금 가능한 API](/help/forms/transaction-reports-billable-apis.md)
@@ -829,10 +829,10 @@ ht-degree: 98%
       + 시작하기 {#getting-started-eds-forms}
          + [시작](/help/edge/docs/forms/tutorial.md)
          + [Google Sheets 또는 Microsoft Excel을 사용하여 양식 만들기](/help/edge/docs/forms/create-forms.md)
-         + [Google Sheets 또는 Microsoft Excel 파일을 설정하여 데이터 &#x200B; 수락 시작](/help/edge/docs/forms/submit-forms.md)
-         + [양식을 게시하고 데이터 수집 시작](/help/edge/docs/forms/publish-forms.md)
+         + [Google Sheets 또는 Microsoft Excel 파일을 설정하여 데이터 수신 시작&#x200B;](/help/edge/docs/forms/submit-forms.md)
+         + [양식 게시 및 데이터 수집 시작](/help/edge/docs/forms/publish-forms.md)
          + [양식 필드에 유효성 검사 추가](/help/edge/docs/forms/validate-forms.md)
-         + [양식의 모양 사용자 지정&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
+         + [양식 모양 사용자 정의&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
          + [규칙을 사용하여 양식에 동적 비헤이비어 추가](/help/edge/docs/forms/rules-forms.md)
          + [양식 제출 후 사용자 정의 감사 메시지 표시](/help/edge/docs/forms/thank-you-page-form.md)
       + 기능 {#advanced-features-eds-forms}
@@ -842,7 +842,7 @@ ht-degree: 98%
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [사용자 정의 구성 요소](/help/edge/docs/forms/custom-components-forms.md)
       + 참조 {#forms-references}
-         + [적응형 양식 블록 구성 요소 및 속성](/help/edge/docs/forms/form-components.md)
+         + [적응형 양식 블록 구성 요소 및 해당 속성](/help/edge/docs/forms/form-components.md)
    + Edge Delivery용 리소스 {#resources}
       + Sidekick {#sidekick}
          + [Sidekick 사용](/help/edge/docs/sidekick.md)

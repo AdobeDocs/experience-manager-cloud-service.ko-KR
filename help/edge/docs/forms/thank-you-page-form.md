@@ -6,34 +6,34 @@ exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
 source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
 source-wordcount: '195'
-ht-degree: 13%
+ht-degree: 100%
 
 ---
 
 # 양식 제출 후 사용자 정의 감사 메시지 표시
 
-사용자가 양식을 제출한 후 감사 메시지를 통해 원활한 경험을 제공하는 것이 중요합니다. 이는 성공적인 제출을 확인해줄 뿐만 아니라, 사용자의 만족도를 높이고 여정에서 이를 더욱 안내한다.
+사용자가 양식을 제출한 후에는 감사 메시지를 통해 원활한 경험을 제공하는 것이 중요합니다. 이로써 양식을 성공적으로 제출할 뿐만 아니라 사용자 만족도를 높이고 더 나은 여정을 안내합니다.
 
 ## 사용자 정의 감사 메시지 구성
 
-적응형 Forms 블록의 기본 동작은 제출 시 다음과 같은 감사 메시지를 표시하는 것입니다. 메시지가 양식 맨 위에 표시됩니다.
+양식 제출 시 후속 감사 메시지 표시는 적응형 양식 블록의 기본 비헤이비어입니다. 메시지는 양식 상단에 표시됩니다.
 
 ![기본 감사 메시지](/help/edge/assets/thank-you-message.png)
 
 
-적응형 Forms 블록에 대한 사용자 정의 감사 메시지를 구성하려면 아래 단계를 따르십시오.
+적응형 양식 블록에 대한 사용자 정의 감사 메시지를 구성하려면 아래 단계를 따릅니다.
 
-1. 로컬 컴퓨터 또는 GitHub 저장소에서 AEM 프로젝트에 액세스합니다.
+1. 로컬 컴퓨터 또는 GitHub 저장소의 AEM 프로젝트에 액세스합니다.
 
-1. 다음으로 이동 [AEM 프로젝트 폴더]편집할 \blocks\form\submit.js 파일입니다.
+1. 편집을 위한 [AEM Project Folder]\blocks\form\submit.js 파일로 이동합니다.
 
-1. 다음 코드를 찾습니다
+1. 다음 코드 찾기
 
    ```JavaScript
        thankYouMessage.innerHTML = payload?.body?.thankYouMessage || 'Thanks for your submission';
    ```
 
-1. 기본 메시지를 사용자 지정 메시지로 바꿉니다. 예:
+1. 기본 메시지를 사용자 정의 메시지로 바꿉니다. 예:
 
 
    ```JavaScript
@@ -41,7 +41,7 @@ ht-degree: 13%
    ```
 
 
-1. 파일을 저장합니다. 업데이트된 파일을 GitHub 저장소에 커밋합니다. 이제 양식을 제출할 때 사용자 정의 감사 메시지가 표시됩니다. 예:
+1. 파일을 저장합니다. 업데이트된 파일을 GitHub 저장소에 커밋합니다. 이제 양식을 제출하면 사용자 정의 감사 메시지가 표시됩니다. 예:
 
 ![사용자 정의 감사 메시지](/help/edge/assets/custom-thank-you-message.png)
 
@@ -125,6 +125,6 @@ To redirect the "thankyou" page to a different page, use the [website redirects]
 
 -->
 
-## 참고 항목
+## 추가 참조
 
 {{see-more-forms-eds}}
