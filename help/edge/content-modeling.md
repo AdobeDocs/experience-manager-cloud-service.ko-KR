@@ -3,9 +3,9 @@ title: Edge Delivery Services 프로젝트를 사용한 AEM 작성을 위한 콘
 description: Edge Delivery Services 프로젝트를 통한 AEM 작성 시 콘텐츠 모델링의 작동 방식과 자체 콘텐츠의 모델링 방법에 대해 알아보십시오.
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 source-git-commit: 22a631d394de1c0fb934d9703e966c8287aef391
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2095'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -351,7 +351,7 @@ Edge Delivery Services를 사용한 AEM 작성의 경우, 서식 있는 텍스�
 
 #### 필드 축소 {#field-collapse}
 
-필드 축소란 접미사를 사용하는 명명 규칙을 기반으로 여러 필드 값을 하나의 의미 요소로 결합하는 메커니즘입니다 `Title`, `Type`, `MimeType`, `Alt`, 및 `Text` (모든 대/소문자 구분). 해당 접미사로 끝나는 모든 속성은 값으로 간주되지 않고, 오히려 다른 속성의 속성으로 간주됩니다.
+필드 축소는 접미사(`Title`, `Type`, `MimeType`, `Alt` 및 `Text`)(모두 대소문자 구분)를 사용하는 명명 규칙을 기준으로 여러 필드 값을 단일 의미 체계 요소로 결합하는 메커니즘입니다. 해당 접미사로 끝나는 모든 속성은 값으로 간주되지 않고, 오히려 다른 속성의 속성으로 간주됩니다.
 
 ##### 이미지 {#image-collapse}
 
@@ -624,13 +624,13 @@ AEM as a Cloud Service에서 테이블과 같은 방식의 경로별 또는 경�
 
 ### 페이지 속성 {#page-properties}
 
-AEM에서 사용할 수 있는 대부분의 기본 페이지 속성은 문서의 각 페이지 메타데이터에 매핑됩니다. 예를 들어 `title`, `description`, `robots`, `canonical url` 또는 `keywords`. 일부 AEM 관련 속성도 사용할 수 있습니다.
+AEM에서 사용할 수 있는 기본 페이지 속성 중 다수는 문서의 해당 페이지 메타데이터에 매핑됩니다. 여기에는 예를 들어 `title`, `description`, `robots` `canonical url` 또는 `keywords`가 포함됩니다. 일부 AEM 관련 속성도 사용할 수 있습니다.
 
-* `cq:lastModified` 다음으로: `modified-time` ISO8601 형식
-* 문서를 마지막으로 게시한 시간 `published-time` ISO8601 형식
-* `cq:tags` 다음으로: `cq-tags` 를 쉼표로 구분된 태그 ID 목록으로 표시합니다.
+* `cq:lastModified` - `modified-time`(ISO8601 형식)
+* 문서가 마지막으로 게시된 시간 - `published-time`(ISO8601 형식)
+* `cq:tags` - `cq-tags`(태그 ID를 쉼표로 구분한 목록)
 
-작성자가 AEM Sites 페이지 속성 대화 상자의 탭으로 사용할 수 있게 되는 사용자 지정 페이지 메타데이터에 대한 구성 요소 모델을 정의할 수도 있습니다.
+작성자에게 AEM Sites 페이지 속성 대화 상자의 탭으로 제공되는 사용자 정의 페이지 메타데이터에 대한 구성 요소 모델을 정의할 수도 있습니다.
 
 이렇게 하려면 ID `page-metadata`를 사용하여 구성 요소 모델을 만듭니다.
 

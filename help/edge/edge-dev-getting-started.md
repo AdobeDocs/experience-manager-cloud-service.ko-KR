@@ -4,9 +4,9 @@ description: 이 안내서는 콘텐츠 작성을 위한 Edge Delivery Services 
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '989'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ AEM은 두 가지 콘텐츠 편집기를 제공하며 상황에 따라 사용할
 
 이 안내서는 Universal Editor를 사용하는 Edge Delivery Services의 AEM 프로젝트에 중점을 둡니다. 적합한 편집기를 선택하는 방법 및 기존 AEM Sites를 Edge Delivery Services로 마이그레이션하는 방법에 대한 자세한 내용은 [Edge Delivery Services 개발](/help/edge/developing.md) 문서를 참조하십시오.
 
-## AEM 제작 및 Edge Delivery Services 시작하기 {#getting-started}
+## AEM 작성 및 Edge Delivery Services 시작하기 {#getting-started}
 
 [사전 요구 사항](#prerequisites)을 충족하고 [Universal Editor를 사용](#editor-choice)하기로 했다면 이제 나만의 프로젝트를 시작할 수 있습니다.
 

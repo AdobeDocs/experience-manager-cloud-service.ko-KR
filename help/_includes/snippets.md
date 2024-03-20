@@ -1,8 +1,8 @@
 ---
 source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '367'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 # 스니펫 {#snippets}
@@ -61,13 +61,13 @@ ht-degree: 82%
 
 [!BADGE 얼리 액세스 기술 - Slack 채널의 AEM Sites Labs에서 제공하는 이 기능에 대해 문의하십시오!]{type=Informative url="/help/edge/docs/slack.md" tooltip="Edge Delivery Services를 사용한 AEM 작성은 얼리 액세스 기술입니다."}
 
-## 참고 항목 {#see-more-forms-eds}
+## 추가 참조 {#see-more-forms-eds}
 
-* [AEM Forms Edge Delivery Services 시작](/help/edge/docs/forms/tutorial.md)
+* [AEM Forms Edge Delivery Services 시작하기](/help/edge/docs/forms/tutorial.md)
 * [Google Sheets 또는 Microsoft Excel을 사용하여 양식 만들기](/help/edge/docs/forms/create-forms.md)
-* [Google Sheets 또는 Microsoft Excel 파일을 설정하여 데이터 &#x200B; 수락 시작](/help/edge/docs/forms/submit-forms.md)
-* [양식을 게시하고 데이터 수집 시작](/help/edge/docs/forms/publish-forms.md)
-* [양식의 모양 사용자 지정&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
+* [Google Sheets 또는 Microsoft Excel 파일을 설정하여 데이터 수신 시작&#x200B;](/help/edge/docs/forms/submit-forms.md)
+* [양식 게시 및 데이터 수집 시작](/help/edge/docs/forms/publish-forms.md)
+* [양식 모양 사용자 정의&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
 * [양식에 반복 가능한 섹션 추가&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
-* [양식 제출 후 사용자 정의 감사 메시지 &#x200B; 표시](/help/edge/docs/forms/thank-you-page-form.md)
-* [적응형 양식 블록 구성 요소 및 속성](/help/edge/docs/forms/form-components.md)
+* [양식 제출 후 사용자 정의 감사 메시지 표시&#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
+* [적응형 양식 블록 구성 요소 및 해당 속성](/help/edge/docs/forms/form-components.md)

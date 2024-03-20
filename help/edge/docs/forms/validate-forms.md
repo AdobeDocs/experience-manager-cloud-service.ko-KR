@@ -1,24 +1,24 @@
 ---
-title: 스프레드시트에서 Forms으로 - 적응형 Forms 블록 필드 유효성 검사 마스터하기
-description: 스프레드시트 및 적응형 Forms 블록 필드를 사용하여 강력한 양식을 더 빨리 만드십시오! 이 안내서는 EDS 양식 블록 필드에 대한 사용자 정의 유효성 검사를 빌드하는 데 도움이 됩니다.
+title: 스프레드시트에서 양식까지 - 적응형 양식 블록 필드 유효성 검사 마스터하기
+description: 스프레드시트 및 적응형 양식 블록 필드를 사용하여 강력한 양식을 더 빠르게 작성할 수 있습니다. 이 안내서는 EDS 양식 블록 필드에 대한 사용자 정의 유효성 검사를 빌드하는 데 도움이 됩니다.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 16e1d42a-42d0-4335-ba81-feedea7ed7d7
 source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '237'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
 # 양식 필드에 유효성 검사 추가
 
-적응형 Forms 블록에는 유효성 검사 기능이 내장되어 있습니다. 이러한 유효성 검사는 선택한 필드 유형과 입력한 추가 속성을 기반으로 최신 브라우저에 자동으로 적용됩니다.
+적응형 양식 블록에는 유효성 검사 기능이 내장되어 있습니다. 이러한 유효성 검사는 선택한 필드 유형과 입력한 추가 속성을 기반으로 최신 브라우저에 자동으로 적용됩니다.
 
 ## 필드 유형 및 유효성 검사 이해
 
-적응형 Forms 블록은 다양한 기능을 지원합니다 [HTML-5 입력 유형](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types)텍스트, 이메일, 번호, 날짜 등을 포함합니다. 여기에는 HTML-5 고유의 포괄적인 입력 유효성 검사 기능과 함께 [텍스트 영역](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea), 선택 및 Fieldset도 포함됩니다.
+적응형 양식 블록은 텍스트, 이메일, 숫자, 날짜 등 다양한 [HTML-5 입력 유형](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types)을 지원합니다. 여기에는 HTML-5 고유의 포괄적인 입력 유효성 검사 기능과 함께 [텍스트 영역](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea), 선택 및 Fieldset도 포함됩니다.
 
 HTML 필드 유형을 사용하여 사용자가 입력할 수 있는 데이터 종류를 정의합니다. 기본 제공되는 유효성 검사 규칙은 필드 유형마다 다릅니다.
 
