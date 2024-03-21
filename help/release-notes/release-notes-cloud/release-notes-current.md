@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5f780f5e8fa9289b35eefbbd4c3a71d37a7f465a
+source-git-commit: 8a64e2ca1dc3987558c36346422ee43d202d9ecc
 workflow-type: tm+mt
 source-wordcount: '1020'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -111,7 +111,7 @@ Dynatrace 고객은 자신의 AEM 사용 현황을 모니터링할 수 있습니
 
 ### CDN 구성 얼리 어답터 프로그램 {#cdn-config-early-adopter}
 
-선택적으로 라이선스를 부여할 수 있는 WAF(웹 애플리케이션 방화벽) 규칙을 포함하는 최근 릴리스된 [트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 외에도 구성 파이프라인을 사용하여 다른 유형의 CDN 구성을 선언하고 배포할 수 있습니다. 이메일로 얼리어답터 프로그램에 참여 **aemcs-cdn-config-adopter@adobe.com** 액세스 권한을 얻으려면:
+최근에 릴리스된 외에도 [트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md)선택적 라이센스 가능한 WAF(Web Application Firewall) 규칙이 포함된 를 사용하면 구성 파이프라인을 사용하여 선언하고 배포할 수 있습니다 [다른 유형의 CDN 구성](/help/implementing/dispatcher/cdn-configuring-traffic.md). 다음 항목에 액세스하려면 **aemcs-cdn-config-adopter@adobe.com**&#x200B;으로 이메일을 보내 얼리 어답터 프로그램에 참여합니다.
 * 301/302 클라이언트측 리디렉션
 * 에지의 요청을 임의의 출처로 프록시 처리
 * URL 변환

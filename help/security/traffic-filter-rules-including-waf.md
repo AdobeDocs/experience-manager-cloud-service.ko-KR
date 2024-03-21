@@ -2,10 +2,10 @@
 title: WAF 규칙이 포함된 트래픽 필터 규칙
 description: 웹 애플리케이션 방화벽(WAF)이 포함된 트래픽 필터 규칙 구성
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 9a535f7fa0a1e7b6f508e887787dd421bfffe8df
+source-git-commit: 9f23b91df3139115ca442de03457bb50a1e1cb71
 workflow-type: tm+mt
-source-wordcount: '3634'
-ht-degree: 90%
+source-wordcount: '3669'
+ht-degree: 91%
 
 ---
 
@@ -25,6 +25,10 @@ ht-degree: 90%
 Cloud Manager 구성 파이프라인을 통해 트래픽 필터 규칙을 프로덕션(비샌드박스) 프로그램의 dev, stage 및 prod 환경 유형에 배포할 수 있습니다. RDE에 대한 지원은 향후 제공될 예정입니다.
 
 [튜토리얼을 참고하면](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) 이 기능에 대한 전문 지식을 빠르게 습득할 수 있습니다.
+
+>[!NOTE]
+>요청/응답 수정, 리디렉션 선언 및 비 AEM 오리진으로의 프록시 지정을 포함하여 CDN에서 트래픽을 구성하는 다른 옵션에 관심이 있으십니까? [방법을 알아보고 사용해 보십시오.](/help/implementing/dispatcher/cdn-configuring-traffic.md) 얼리어답터 프로그램에 참여함으로써.
+
 
 ## 이 문서를 구성하는 방식 {#how-organized}
 
@@ -286,7 +290,7 @@ when:
 
 **예 1**
 
-이 규칙은에서 오는 요청을 차단합니다. **IP 192.168.1.1**:
+다음 규칙은 **IP 192.168.1.1**&#x200B;에서 오는 요청을 차단합니다.
 
 ```
 kind: "CDN"
@@ -425,7 +429,7 @@ data:
 
 **예 1**
 
-이 규칙은 지난 10초 동안 평균 60req/sec(CDN POP당)를 초과하는 경우 5m 동안 클라이언트를 차단합니다.
+이 규칙은 지난 10초 동안 평균 60req/sec(CDN POP당)를 초과하면 5분간 클라이언트를 차단합니다.
 
 ```
 kind: "CDN"
@@ -450,7 +454,7 @@ data:
 
 **예 2**
 
-지난 60초 동안 평균 100req/sec(CDN POP당)을 초과하는 경우 60초 동안 경로/위험/리소스의 블록 요청:
+지난 60초 동안 평균 100req/sec(CDN POP당)를 초과하면 경로/중요/리소스에서 60초간 요청을 차단합니다.
 
 ```
 kind: "CDN"
