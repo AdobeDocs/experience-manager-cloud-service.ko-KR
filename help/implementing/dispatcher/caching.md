@@ -3,7 +3,7 @@ title: AEM as a Cloud Service에서 캐싱
 description: AEM as a Cloud Service 캐싱의 기본 사항에 대해 알아봅니다.
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: d6e522cc18441a642e3434b6e5eff893d8f69952
+source-git-commit: 8215686031de1bc37ce37bfdce252b3997646042
 workflow-type: tm+mt
 source-wordcount: '2894'
 ht-degree: 1%
@@ -278,7 +278,7 @@ Adobe CDN에서 다음과 같은 리소스에 대한 HEAD 요청을 받는 경�
 이전 버전의 AEM과 마찬가지로 페이지를 게시하거나 게시를 취소하면 Dispatcher 캐시에서 콘텐츠가 지워집니다. 캐싱 문제가 의심되는 경우 해당 페이지를 다시 게시하고 와 일치하는 가상 호스트를 사용할 수 있는지 확인해야 합니다. `ServerAlias` localhost: Dispatcher 캐시 무효화에 필요합니다.
 
 >[!NOTE]
->적절한 Dispatcher 무효화를 위해 요청이 제공될 수 있도록 &quot;127.0.0.1&quot;, &quot;localhost&quot;, &quot;.local&quot;, &quot;\*.adobeaemcloud.com&quot; 및 &quot;\*.adobeaemcloud.net&quot;의 요청이 모두 일치하고 vhost 구성에서 처리되는지 확인하십시오. 참조의 패턴에 따라 catch-all vhost 구성에서 &quot;*&quot;를 전역 일치시켜 이 작업을 수행할 수 있습니다 [AEM Archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost). 또는 vhost 중 하나에서 이전에 언급한 목록을 catch했는지 확인할 수 있습니다.
+>적절한 Dispatcher 무효화를 위해 &quot;127.0.0.1&quot;, &quot;localhost&quot;, &quot;\*.local&quot;, &quot;\*.adobeaemcloud.com&quot; 및 &quot;\*.adobeaemcloud.net&quot;의 요청이 모두 일치하고 vhost 구성에서 처리되어 요청이 제공될 수 있는지 확인하십시오. 참조의 패턴에 따라 catch-all vhost 구성에서 &quot;*&quot;를 전역 일치시켜 이 작업을 수행할 수 있습니다 [AEM Archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost). 또는 vhost 중 하나에서 이전에 언급한 목록을 catch했는지 확인할 수 있습니다.
 
 게시 인스턴스는 작성자로부터 페이지 또는 에셋의 새 버전을 수신하면 플러시 에이전트를 사용하여 해당 Dispatcher에서 적절한 경로를 무효화합니다. 업데이트된 경로는 상위 경로와 함께 Dispatcher 캐시에서 최대 수준까지 제거됩니다(다음을 사용하여 이 수준을 구성할 수 있음). [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
 
