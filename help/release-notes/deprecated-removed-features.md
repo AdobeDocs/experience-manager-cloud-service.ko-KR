@@ -2,10 +2,10 @@
 title: 더 이상 사용되지 않는/제거된 기능
 description: ' [!DNL Adobe Experience Manager]  [!DNL Cloud Service]에서 더 이상 사용되지 않으며 제거된 기능에 관련된 릴리스 정보입니다.'
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 1da8d9395df3dd2efee7f6a57197aa3f2b27b1a4
-workflow-type: ht
-source-wordcount: '2068'
-ht-degree: 100%
+source-git-commit: b675ff42eeaeb124e8789480a51684d359429d15
+workflow-type: tm+mt
+source-wordcount: '2146'
+ht-degree: 96%
 
 ---
 
@@ -42,6 +42,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 | [!DNL Assets] | 비디오의 FFmpeg 코드 변환. | FFmpeg 썸네일 생성의 경우 [자산 마이크로서비스](/help/assets/asset-microservices-overview.md)를 사용합니다. FFmpeg 코드 변환의 경우 [Dynamic Media](/help/assets/manage-video-assets.md)를 사용합니다. |
 | [!DNL Foundation] | 복제 에이전트의 “배치” 탭 아래에 있는 트리 복제 UI(2021년 9월 30일 이후 제거) | [게시 관리](/help/operations/replication.md#manage-publication) 또는 [콘텐츠 트리 게시 워크플로](/help/operations/replication.md#publish-content-tree-workflow) 접근 방식 |
 | [!DNL Foundation] | 복제 에이전트 관리 화면의 배포 탭과 복제 API를 사용하면 10MB가 넘는 콘텐츠 패키지를 복제할 수 없습니다. 대신 [게시 관리](/help/operations/replication.md#manage-publication) 또는 [콘텐츠 트리 게시 워크플로](/help/operations/replication.md#publish-content-tree-workflow)를 사용하십시오. |
+| [!DNL Foundation] | Adobe Developer 콘솔 프로젝트에서 생성된 자격 증명을 사용하여 통합하면 서비스 계정(JWT) 자격 증명에 대한 지원이 점차적으로 손실됩니다. 2025년 1월 1일까지 이미 구성된 통합에 기존 서비스 계정(JWT) 자격 증명을 사용할 수 있지만 2024년 5월 1일 또는 그 이후에는 Adobe Developer 콘솔에 새 서비스 계정(JWT) 자격 증명을 만들 수 없습니다. 이 경우 기존 서비스 계정(JWT) 자격 증명은 더 이상 작동하지 않으며, 고객은 OAuth 서버 간 자격 증명으로 마이그레이션해야 합니다. [자세히 알아보기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [마이그레이션](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) OAuth 서버 간 자격 증명으로 마이그레이션합니다. |
 
 ## 제거된 기능 {#removed-features}
 
