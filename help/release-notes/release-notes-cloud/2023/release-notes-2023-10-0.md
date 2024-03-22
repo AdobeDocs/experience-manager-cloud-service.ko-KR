@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.10.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.10.0 릴리스 정보입니다.'
 exl-id: 81a6cbd2-7101-429b-8572-2650c5bea963
-source-git-commit: 811a8f4d83a1034737c23b1707a24b52742fef55
+source-git-commit: b323fbe3a09de220c61c9b409d8754e43fe0a8d3
 workflow-type: tm+mt
 source-wordcount: '918'
-ht-degree: 93%
+ht-degree: 91%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 93%
 
 ### 새로운 기능 {#assets-features}
 
-**Adobe Express용 AEM Assets 추가 기능**: 이제 Experience Manager Assets에서 [Adobe Express용 추가 기능](/help/assets/addon-adobe-express.md)을 제공합니다. 이 추가 기능을 사용하여 Adobe Express 사용자 인터페이스 내에서 Experience Manager Assets에 저장된 자산에 직접 액세스할 수 있습니다. AEM Assets에서 관리되는 콘텐츠를 Express 캔버스에 배치한 다음 AEM Assets 저장소에 새 콘텐츠 또는 편집된 콘텐츠를 저장할 수 있습니다. 추가 기능은 다음과 같은 주요 이점을 제공합니다.
+**Adobe Express을 위한 AEM Assets 추가 기능**: 이제 Experience Manager Assets에서 Adobe Express을 위한 추가 기능을 제공합니다. 이 추가 기능을 사용하여 Adobe Express 사용자 인터페이스 내에서 Experience Manager Assets에 저장된 자산에 직접 액세스할 수 있습니다. AEM Assets에서 관리되는 콘텐츠를 Express 캔버스에 배치한 다음 AEM Assets 저장소에 새 콘텐츠 또는 편집된 콘텐츠를 저장할 수 있습니다. 추가 기능은 다음과 같은 주요 이점을 제공합니다.
 
 * AEM의 새 자산을 편집 및 저장하여 콘텐츠 재사용이 늘어남
 
