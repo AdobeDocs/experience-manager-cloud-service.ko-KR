@@ -2,10 +2,10 @@
 title: 클라우드 서비스에 콘텐츠 수집
 description: Cloud Acceleration Manager 를 사용하여 마이그레이션 세트의 컨텐츠를 대상 Cloud Service 인스턴스로 수집하는 방법을 알아봅니다.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 281523183cecf1e74c33f58ca9ad038bba1a6363
+source-git-commit: 8795d9d2078d9f49699ffa77b1661dbe5451a4a2
 workflow-type: tm+mt
-source-wordcount: '2410'
-ht-degree: 7%
+source-wordcount: '2534'
+ht-degree: 6%
 
 ---
 
@@ -155,6 +155,12 @@ Cloud Acceleration Manager를 사용하여 마이그레이션 세트를 수집�
 
 ### 고유성 제약 조건 위반으로 인한 추가 수집 실패 {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_uuid"
+>title="고유성 제약 조건 위반"
+>abstract="지우지 않음 수집 실패의 일반적인 원인은 노드 ID의 충돌입니다. 충돌하는 노드 중 하나만 존재할 수 있습니다."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="추가 수집"
+
 의 일반적인 원인 [추가 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 실패는 노드 id의 충돌입니다. 이 오류를 식별하려면 Cloud Acceleration Manager UI를 사용하여 수집 로그를 다운로드하고 다음과 같은 항목을 찾습니다.
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: 고유성 제약 조건이 속성을 위반했습니다 [jcr:uuid] 값 a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
@@ -169,6 +175,12 @@ AEM의 각 노드에는 고유한 UUID가 있어야 합니다. 이 오류는 수
 
 ### 참조된 노드를 삭제할 수 없어 추가 수집 실패 {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
+>title="참조된 노드를 삭제할 수 없음"
+>abstract="지우지 않음 수집 실패의 일반적인 원인은 대상 인스턴스의 특정 노드에 대한 버전 충돌입니다. 노드의 버전을 수정해야 합니다."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="추가 수집"
+
 다음의 또 다른 일반적인 원인 [추가 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 실패는 대상 인스턴스의 특정 노드에 대한 버전 충돌입니다. 이 오류를 식별하려면 Cloud Acceleration Manager UI를 사용하여 수집 로그를 다운로드하고 다음과 같은 항목을 찾습니다.
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: 참조된 노드를 삭제할 수 없음: 8a2289f4-b904-4bd0-8410-15e41e0976a8
@@ -181,11 +193,22 @@ AEM의 각 노드에는 고유한 UUID가 있어야 합니다. 이 오류는 수
 
 ### 큰 노드 속성 값으로 인한 수집 실패 {#ingestion-failure-due-to-large-node-property-values}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_bson"
+>title="큰 노드 속성"
+>abstract="수집 실패의 일반적인 원인은 노드 속성 값의 최대 크기를 초과하는 것입니다. 이 상황을 해결하려면 BPA 보고서와 관련된 설명서를 비롯한 설명서를 따르십시오."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html" text="마이그레이션 사전 요구 사항"
+
 MongoDB에 저장된 노드 속성 값은 16MB를 초과할 수 없습니다. 노드 값이 지원되는 크기를 초과하면 수집이 실패하고 로그에 `BSONObjectTooLarge` 오류 및 최대값을 초과하는 노드를 지정합니다. MongoDB 제한 사항입니다.
 
 다음을 참조하십시오. `Node property value in MongoDB` 의 메모 [컨텐츠 전송 도구 사전 요구 사항](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) 자세한 내용 및 모든 큰 노드를 찾는 데 도움이 될 수 있는 Oak 도구에 대한 링크입니다. 크기가 큰 모든 노드가 복구되면 추출 및 수집을 다시 실행합니다.
 
 ### 수집 취소됨 {#ingestion-rescinded}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_rescinded"
+>title="수집 취소됨"
+>abstract="수집이 대기 중인 추출이 완료되지 않았습니다. 실행할 수 없기 때문에 수집이 취소되었습니다."
 
 실행 중인 추출을 소스 마이그레이션 세트로 사용하여 생성된 수집은 해당 추출이 성공할 때까지 잠시 기다렸다가 이 시점에서 정상적으로 시작됩니다. 추출이 실패하거나 중지되면 수집 및 색인 지정 작업이 시작되지 않고 취소됩니다. 이 경우 추출을 확인하여 실패한 이유를 확인하고 문제를 해결한 다음 추출을 다시 시작합니다. 고정 추출이 실행되면 새 수집을 예약할 수 있습니다.
 
