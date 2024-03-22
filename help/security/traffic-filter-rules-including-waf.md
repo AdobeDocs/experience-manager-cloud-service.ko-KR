@@ -2,7 +2,7 @@
 title: WAF 규칙이 포함된 트래픽 필터 규칙
 description: 웹 애플리케이션 방화벽(WAF)이 포함된 트래픽 필터 규칙 구성
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 9f23b91df3139115ca442de03457bb50a1e1cb71
+source-git-commit: 38a16251372ee6ba77687f524e5057e00f16f58e
 workflow-type: tm+mt
 source-wordcount: '3669'
 ht-degree: 91%
@@ -24,7 +24,7 @@ ht-degree: 91%
 
 Cloud Manager 구성 파이프라인을 통해 트래픽 필터 규칙을 프로덕션(비샌드박스) 프로그램의 dev, stage 및 prod 환경 유형에 배포할 수 있습니다. RDE에 대한 지원은 향후 제공될 예정입니다.
 
-[튜토리얼을 참고하면](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) 이 기능에 대한 전문 지식을 빠르게 습득할 수 있습니다.
+[튜토리얼을 참고하면](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) 이 기능에 대한 전문 지식을 빠르게 습득할 수 있습니다.
 
 >[!NOTE]
 >요청/응답 수정, 리디렉션 선언 및 비 AEM 오리진으로의 프록시 지정을 포함하여 CDN에서 트래픽을 구성하는 다른 옵션에 관심이 있으십니까? [방법을 알아보고 사용해 보십시오.](/help/implementing/dispatcher/cdn-configuring-traffic.md) 얼리어답터 프로그램에 참여함으로써.
