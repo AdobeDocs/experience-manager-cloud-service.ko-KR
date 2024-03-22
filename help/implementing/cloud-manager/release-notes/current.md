@@ -4,9 +4,9 @@ description: AEM as a Cloud Service의 Cloud Manager 2024.3.0 릴리스 정보�
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 4bae300f653ae6b84cf798f4fe9e8c9326963718
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '648'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -21,16 +21,16 @@ ht-degree: 85%
 
 ## 릴리스 일자 {#release-date}
 
-Cloud Manager 릴리스 2024.3.0의 AEM as a Cloud Service 릴리스 날짜는 2024년 3월 14일입니다. 다음 릴리스는 2024년 4월 11일에 예정되어 있습니다.
+AEM as a Cloud Service의 Cloud Manager 2024.3.0 릴리스 일자는 2024년 3월 14일입니다. 다음 릴리스는 2024년 4월 11일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
-* [이제 고급 네트워킹 인프라를 만들 수 있습니다](/help/security/configuring-advanced-networking.md) cloud Manager 프로그램에서 Cloud Manager UI를 사용하여 셀프서비스 방식으로 환경을 구성합니다.
-* [파이프라인 실행 단계 세부 정보](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) 에는 배포의 현재 단계 및 향후 예상되는 내용이 포함됩니다.
+* [이제 Cloud Manager 프로그램에서 고급 네트워킹 인프라](/help/security/configuring-advanced-networking.md)를 만들고 Cloud Manager UI를 사용하여 셀프서비스 방식으로 환경을 구성할 수 있습니다.
+* [파이프라인 실행 단계의 세부 정보](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details)에는 현재 배포 단계와 예상되는 단계가 포함되어 있습니다.
 
-## 조기 채택 프로그램 {#early-adoption}
+## 얼리 어답터 프로그램 {#early-adoption}
 
-Adobe의 조기 채택 프로그램에 참여하여 향후 기능을 테스트할 기회를 얻으십시오.
+Adobe의 얼리 어답터 프로그램에 참여하여 향후 기능을 테스트할 기회를 얻으십시오.
 
 ### 실제 사용자 모니터링(RUM)을 통한 클라이언트측 컬렉션 {#rum}
 
@@ -69,4 +69,4 @@ GitHub를 사용하여 저장소를 관리하는 경우, [이제 Cloud Manager�
 
 ## 버그 수정 {#bug-fixes}
 
-* 사용자가 를 정의할 때 버그가 수정되었습니다. `COMMERCE_ENDPOINT` 후행 공백이 있는 변수를 사용하면 dispatcher가 로드되지 않습니다.
+* 사용자가 후행 공백을 사용하여 `COMMERCE_ENDPOINT` 변수를 정의하면 Dispatcher가 로드되지 않는 버그가 수정되었습니다.
