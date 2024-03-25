@@ -4,13 +4,13 @@ description: 스프레드시트 및 적응형 양식 블록 필드를 사용하�
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1001'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# 데이터 수신을 시작하려면 Google Sheets 또는 Microsoft Excel 파일을 설정하십시오.
+# Google Sheets 또는 Microsoft Excel 파일을 설정하여 데이터 수신 시작
 
 
 [양식을 만들고 미리 본](/help/edge/docs/forms/create-forms.md) 후에는 해당 스프레드시트를 활성화하여 데이터 수신을 시작할 차례입니다. 스프레드시트가 데이터를 수신하도록 수동으로 활성화하거나, 관리 API를 사용하여 스프레드시트가 데이터를 수신하도록 활성화할 수 있습니다.

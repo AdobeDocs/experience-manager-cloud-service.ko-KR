@@ -3,9 +3,9 @@ title: 스프레드시트를 사용하여 표 형식 데이터 관리
 description: 스프레드시트를 사용하여 Edge Delivery Services 사이트를 통해 AEM에 대한 메타데이터 및 리디렉션과 같은 다양한 값에 대한 표 형식 데이터를 관리하는 방법을 알아봅니다.
 feature: Edge Delivery Services
 source-git-commit: f872ab4eb891ab4aa634e88c76eedeb0f13cb285
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '958'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -81,9 +81,9 @@ Edge Delivery Services 프로젝트가 포함된 AEM에서 스프레드시트를
    * 편집기는 필요에 따라 스프레드시트에 새 행을 추가합니다.
    * 행을 삭제하거나 이동하려면 각 행 끝에 있는 **삭제** 아이콘과 각 행 시작에 있는 드래그 핸들을 각각 사용합니다.
 
-## Spreadsheet paths.json 게시 {#paths-json}
+## 스프레드시트 paths.json 게시 {#paths-json}
 
-AEM에서 스프레드시트에 데이터를 게시할 수 있으려면 추가로 를 업데이트해야 합니다 `paths.json` 프로젝트의 파일입니다.
+AEM에서 스프레드시트의 데이터를 게시할 수 있으려면 프로젝트의 `paths.json` 파일을 추가로 업데이트해야 합니다.
 
 1. GitHub에서 프로젝트의 루트를 엽니다.
 
@@ -106,7 +106,7 @@ AEM에서 스프레드시트에 데이터를 게시할 수 있으려면 추가�
 
    * 프로세스에 따라 `main`에 커밋하거나 가져오기 요청을 만듭니다.
 
-1. 리디렉션 정의를 완료하고 경로 매핑을 업데이트하면 로 돌아갑니다. **사이트** 콘솔.
+1. 리디렉션 정의를 마치고 경로 매핑을 업로드했으면 **Sites** 콘솔로 돌아갑니다.
 
 1. 콘솔에서 만든 리디렉션 스프레드시트를 탭하거나 클릭하여 선택한 다음 작업 표시줄에서 **빠른 게시**&#x200B;를 탭하거나 클릭하여 스프레드시트를 게시합니다.
 
@@ -133,7 +133,7 @@ AEM에서 스프레드시트에 데이터를 게시할 수 있으려면 추가�
 
 [스프레드시트 만들기](#spreadsheet) 및 [paths.json 업데이트](#paths-json) 섹션의 단계를 동일하게 따르고, 적절한 템플릿을 선택하고, `paths.json` 파일을 적절하게 업데이트하면 됩니다.
 
-대상 [구성](https://www.aem.live/docs/configuration), [헤더](https://www.aem.live/docs/custom-headers) 및 [메타데이터](https://www.aem.live/docs/bulk-metadata) 매핑을 추가하여 기본 위치에 게시해야 합니다.
+[구성](https://www.aem.live/docs/configuration), [헤더](https://www.aem.live/docs/custom-headers) 및 [메타데이터](https://www.aem.live/docs/bulk-metadata)의 경우 기본 위치에 게시되도록 하는 매핑을 추가해야 합니다.
 
 * 구성: `/.helix/config.json`
 * 헤더: `/.helix/headers.json`
