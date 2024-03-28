@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: de05abac3620b254343196a283cef198f434cfca
 workflow-type: tm+mt
 source-wordcount: '2752'
-ht-degree: 6%
+ht-degree: 11%
 
 ---
 
@@ -153,12 +153,12 @@ Cloud Acceleration Manager를 사용하여 마이그레이션 세트를 수집�
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### 고유성 제약 조건 위반으로 인한 추가 수집 실패 {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
+### 고유성 제한 사항 위반으로 인한 추가 수집 실패 {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_uuid"
->title="고유성 제약 조건 위반"
->abstract="지우지 않음 수집 실패의 일반적인 원인은 노드 ID의 충돌입니다. 충돌하는 노드 중 하나만 존재할 수 있습니다."
+>title="고유성 제한 사항 위반"
+>abstract="비삭제 수집 실패의 일반적인 원인은 노드 ID에서의 충돌입니다. 충돌하는 노드 중 하나만 존재할 수 있습니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="추가 수집"
 
 의 일반적인 원인 [추가 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 실패는 노드 id의 충돌입니다. 이 오류를 식별하려면 Cloud Acceleration Manager UI를 사용하여 수집 로그를 다운로드하고 다음과 같은 항목을 찾습니다.
@@ -173,12 +173,12 @@ AEM의 각 노드에는 고유한 UUID가 있어야 합니다. 이 오류는 수
 
 이 충돌은 수동으로 해결해야 합니다. 콘텐츠에 익숙한 사용자는 두 노드 중 삭제할 노드를 참조하는 다른 콘텐츠를 염두에 두고 결정해야 합니다. 해결책은 불쾌한 노드 없이 다시 추가 추출이 수행될 것을 요구할 수 있다.
 
-### 참조된 노드를 삭제할 수 없어 추가 수집 실패 {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
+### 참조 노드 삭제 불가로 인한 추가 수집 실패 {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
 >title="참조된 노드를 삭제할 수 없음"
->abstract="지우지 않음 수집 실패의 일반적인 원인은 대상 인스턴스의 특정 노드에 대한 버전 충돌입니다. 노드의 버전을 수정해야 합니다."
+>abstract="비삭제 수집 실패의 일반적인 원인은 대상 인스턴스의 특정 노드에 대한 버전 충돌입니다. 노드 버전을 수정해야 합니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="추가 수집"
 
 다음의 또 다른 일반적인 원인 [추가 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 실패는 대상 인스턴스의 특정 노드에 대한 버전 충돌입니다. 이 오류를 식별하려면 Cloud Acceleration Manager UI를 사용하여 수집 로그를 다운로드하고 다음과 같은 항목을 찾습니다.
@@ -191,12 +191,12 @@ AEM의 각 노드에는 고유한 UUID가 있어야 합니다. 이 오류는 수
 
 모범 사례에 따르면 **지우지 않음** 수집은 버전이 포함된 마이그레이션 세트를 사용하여 실행해야 합니다. 마이그레이션 여정이 완료될 때까지 대상의 콘텐츠를 가능한 한 적게 수정하는 것이 중요합니다. 그렇지 않으면 이러한 충돌이 발생할 수 있습니다.
 
-### 큰 노드 속성 값으로 인한 수집 실패 {#ingestion-failure-due-to-large-node-property-values}
+### 대형 노드 속성 값으로 인한 수집 실패 {#ingestion-failure-due-to-large-node-property-values}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_bson"
->title="큰 노드 속성"
->abstract="수집 실패의 일반적인 원인은 노드 속성 값의 최대 크기를 초과하는 것입니다. 이 상황을 해결하려면 BPA 보고서와 관련된 설명서를 비롯한 설명서를 따르십시오."
+>title="대형 노드 속성"
+>abstract="수집 실패의 일반적인 원인은 노드 속성 값의 최대 크기를 초과하는 것입니다. 이러한 상황을 해결하려면 BPA 보고서와 관련된 문서를 포함한 설명서를 따르십시오."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html" text="마이그레이션 사전 요구 사항"
 
 MongoDB에 저장된 노드 속성 값은 16MB를 초과할 수 없습니다. 노드 값이 지원되는 크기를 초과하면 수집이 실패하고 로그에 `BSONObjectTooLarge` 오류 및 최대값을 초과하는 노드를 지정합니다. MongoDB 제한 사항입니다.
@@ -208,7 +208,7 @@ MongoDB에 저장된 노드 속성 값은 16MB를 초과할 수 없습니다. �
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_rescinded"
 >title="수집 취소됨"
->abstract="수집이 대기 중인 추출이 완료되지 않았습니다. 실행할 수 없기 때문에 수집이 취소되었습니다."
+>abstract="수집 대기 중인 추출이 정상적으로 완료되지 않았습니다. 실행이 불가능하여 수집이 취소되었습니다."
 
 실행 중인 추출을 소스 마이그레이션 세트로 사용하여 생성된 수집은 해당 추출이 성공할 때까지 잠시 기다렸다가 이 시점에서 정상적으로 시작됩니다. 추출이 실패하거나 중지되면 수집 및 색인 지정 작업이 시작되지 않고 취소됩니다. 이 경우 추출을 확인하여 실패한 이유를 확인하고 문제를 해결한 다음 추출을 다시 시작합니다. 고정 추출이 실행되면 새 수집을 예약할 수 있습니다.
 
