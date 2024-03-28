@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에 대한 고급 네트워킹 구성
 description: AEM as a Cloud Service에 대해 VPN 또는 유연한/전용 이그레스 IP 주소와 같은 고급 네트워킹 기능을 구성하는 방법에 대해 알아봅니다.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: 01b55f2ff06d3886724dbb2c25d0c109a5ab6aec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5142'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ AEM as a Cloud Service는 다음과 같은 고급 네트워킹 옵션을 제공�
 고급 네트워킹 기능을 사용하려면 다음 두 단계가 필요합니다.
 
 1. [유연한 포트 이그레스,](#flexible-port-egress) [전용 이그레스 IP 주소,](#dedicated-egress-ip-address) 또는 [VPN](#vpn) 여부에 관계없이 고급 네트워킹 옵션은 먼저 프로그램 수준에서 구성해야 합니다.
-1. 고급 네트워킹 옵션을 사용하려면 다음을 수행해야 합니다. [환경 수준에서 활성화됩니다.](#enabling)
+1. 사용하려면 [환경 수준에서 고급 네트워킹 옵션을 활성화](#enabling)해야 합니다.
 
 두 단계 모두 Cloud Manager UI나 Cloud Manager API를 사용하여 수행할 수 있습니다.
 
@@ -212,7 +212,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ## 전용 이그레스 IP 주소 {#dedicated-egress-ip-address}
 
-전용 IP 주소를 사용하면 CRM 공급업체와 같은 SaaS 공급업체 또는 IP 주소 허용 목록을 제공하는 AEM as a Cloud Service 외부의 다른 통합과 통합 시 보안을 강화할 수 있습니다. 전용 IP 주소를 허용 목록에 추가하다에 추가하면 AEM Cloud Service의 트래픽만 외부 서비스로 연결되도록 허용할 수 있습니다. 다른 허용된 IP의 트래픽도 포함됩니다.
+전용 IP 주소를 사용하면 CRM 공급업체와 같은 SaaS 공급업체 또는 IP 주소 허용 목록을 제공하는 AEM as a Cloud Service 외부의 다른 통합과 통합 시 보안을 강화할 수 있습니다. 전용 IP 주소를 허용 목록에 추가하면 AEM Cloud Service의 트래픽만 외부 서비스로 연결되도록 허용할 수 있습니다. 다른 허용된 IP의 트래픽도 포함됩니다.
 
 Adobe 조직의 모든 프로그램 및 각 프로그램의 모든 환경에 동일한 전용 IP가 적용됩니다. 작성자 및 게시 서비스 모두에 적용됩니다.
 
@@ -423,7 +423,7 @@ VPN을 사용하면 작성자, 게시 또는 미리보기 인스턴스에서 On-
 1. 시작하는 **네트워크 인프라 추가** 마법사에서 **Virtual private network**&#x200B;를 선택하고 필요한 정보를 입력한 다음 **계속**&#x200B;을 탭하거나 클릭합니다.
 
    * **지역** - 인프라를 만들어야 하는 지역입니다.
-   * **주소 공간** - 주소 공간은 사용자 공간 내에서 /26 CIDR(64 IP 주소) 또는 그 이상의 IP 범위만 될 수 있습니다.
+   * **주소 공간** - 주소 공간은 자체 공간에서 하나의 /26 CIDR(64 IP 주소) 또는 더 큰 IP 범위만 가능합니다.
       * 이 값은 나중에 변경할 수 없습니다.
    * **DNS 정보** - 원격 DNS Resolver 목록입니다.
       * DNS 서버 주소를 입력하여 다른 주소를 추가한 다음 `Enter`를 누릅니다.
@@ -460,7 +460,7 @@ VPN을 사용하면 작성자, 게시 또는 미리보기 인스턴스에서 On-
 
 ### API 구성 {#configuring-vpn-api}
 
-프로그램당 한 번, POST `/program/<programId>/networkInfrastructures` 끝점이 호출되어 다음 값을 포함하는 구성 정보 페이로드가 전달됩니다. **vpn** 대상: `kind` 매개 변수, 지역, 주소 공간(CIDR 목록 - 나중에 수정할 수 없음), DNS Resolver(네트워크에서 이름 확인) 및 게이트웨이 구성, 공유 VPN 키 및 IP 보안 정책과 같은 VPN 연결 정보. 해당 엔드포인트는 `network_id`와 상태 등의 기타 정보에 응답합니다.
+프로그램당 한 번씩 POST `/program/<programId>/networkInfrastructures` 엔드포인트가 호출되어 `kind` 매개변수, 지역, 주소 공간(CIDR 목록 - 나중에 수정할 수 없음)에 대한 **vpn** 값, 고객 네트워크의 이름 확인을 위한 DNS Resolver 및 게이트웨이 구성, 공유 VPN 키 및 IP 보안 정책과 같은 VPN 연결 정보 등을 포함하는 구성 정보 페이로드를 전달합니다. 해당 엔드포인트는 `network_id`와 상태 등의 기타 정보에 응답합니다.
 
 호출되면 네트워킹 인프라가 프로비저닝되는 데 일반적으로 약 45분에서 60분이 소요됩니다. API의 GET 메서드를 호출하여 현재 상태를 반환하고 `creating`에서 `ready`로 전환할 수 있습니다. 모든 상태에 대한 내용은 API 설명서를 참조하십시오.
 
@@ -580,12 +580,12 @@ VPN을 사용하면 작성자, 게시 또는 미리보기 인스턴스에서 On-
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}-gateway.external.adobeaemcloud.com</code></td>
     <td>해당 사항 없음</td>
-    <td>AEM측 VPN 게이트웨이의 IP입니다. 네트워크 엔지니어링 팀은 이 옵션을 사용하여 특정 IP 주소의 VPN 게이트웨이에 대한 VPN 연결만 허용할 수 있습니다. </td>
+    <td>AEM측 VPN 게이트웨이의 IP입니다. 네트워크 엔지니어링 팀에서 이 IP를 사용하여 특정 IP 주소의 VPN 게이트웨이에 대한 VPN 연결만 허용할 수 있습니다. </td>
   </tr>
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}.inner.adobeaemcloud.net</code></td>
-    <td>VPN의 AEM 측에서 사용자 측으로 이동하는 트래픽의 IP입니다. AEM에서만 연결할 수 있도록 구성에서 허용 목록에추가된으로 제공할 수 있습니다.</td>
-    <td>AEM으로의 VPN 액세스를 허용하려면 사용자 정의 도메인 및/또는 을 매핑하도록 CNAME DNS 항목을 구성해야 합니다 <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 및/또는 <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 이것으로.</td>
+    <td>VPN의 AEM 측에서 고객측으로 이동하는 트래픽의 IP입니다. 구성 허용 목록에 추가하여 AEM으로부터의 연결만 허용할 수 있습니다.</td>
+    <td>AEM으로의 VPN 액세스를 허용하고자 하는 경우 해당 액세스에 사용자 정의 도메인 및/또는 <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 및/또는 <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code>을 매핑하도록 CNAME DNS 항목을 구성해야 합니다.</td>
   </tr>
 </tbody>
 </table>
@@ -612,7 +612,7 @@ Header always set Cache-Control private
 환경에 대한 고급 네트워킹 구성을 활성화하면 옵션인 포트 전달 및 비프록시 호스트를 활성화할 수 있습니다. 유연성을 제공하기 위해 환경별로 매개변수를 구성할 수 있습니다.
 
 * **포트 전달** - 80/443 이외의 모든 대상 포트에 대해 포트 전달 규칙을 선언해야 하지만 http 또는 https 프로토콜을 사용하지 않는 경우에만 해당됩니다.
-   * 포트 전달 규칙은 대상 호스트(이름 또는 IP 및 포트) 집합을 지정하여 정의됩니다.
+   * 포트 전달 규칙은 대상 호스트 집합(이름이나 IP 및 포트)을 지정하여 정의됩니다.
    * http/https를 통해 포트 80/443을 사용하는 클라이언트 연결은 연결에 고급 네트워킹 속성을 적용하려면 연결 시 프록시 설정을 사용해야 합니다.
    * 각 대상 호스트에 대해 원하는 대상 포트를 30000에서 30999 사이의 포트에 매핑해야 합니다.
    * 포트 전달 규칙은 모든 고급 네트워킹 유형에 사용할 수 있습니다.
@@ -646,7 +646,7 @@ Header always set Cache-Control private
 
    ![비프록시 호스트 추가](assets/advanced-networking-ui-enable-non-proxy-hosts.png)
 
-1. 다음에서 **포트포워드** 탭에서는 HTTP 또는 HTTPS를 사용하지 않는 경우 80/443 이외의 모든 대상 포트에 대한 포트 전달 규칙을 선택적으로 정의할 수 있습니다. **이름**, **포트 원본** 및 **포트 대상**&#x200B;을 입력하고 **추가**&#x200B;를 탭하거나 클릭합니다.
+1. **포트 전달** 탭에서 HTTP 또는 HTTPS를 사용하지 않는 경우 옵션으로 80/443 이외의 대상 포트에 대한 포트 전달 규칙을 정의할 수 있습니다. **이름**, **포트 원본** 및 **포트 대상**&#x200B;을 입력하고 **추가**&#x200B;를 탭하거나 클릭합니다.
 
    * 탭의 규칙 목록에 규칙이 추가됩니다.
    * 여러 규칙을 추가하려면 이 단계를 반복합니다.

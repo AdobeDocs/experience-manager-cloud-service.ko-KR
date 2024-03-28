@@ -3,9 +3,9 @@ title: WAF 규칙이 포함된 트래픽 필터 규칙
 description: 웹 애플리케이션 방화벽(WAF)이 포함된 트래픽 필터 규칙 구성
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: 38a16251372ee6ba77687f524e5057e00f16f58e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3669'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Cloud Manager 구성 파이프라인을 통해 트래픽 필터 규칙을 프로
 [튜토리얼을 참고하면](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) 이 기능에 대한 전문 지식을 빠르게 습득할 수 있습니다.
 
 >[!NOTE]
->요청/응답 수정, 리디렉션 선언 및 비 AEM 오리진으로의 프록시 지정을 포함하여 CDN에서 트래픽을 구성하는 다른 옵션에 관심이 있으십니까? [방법을 알아보고 사용해 보십시오.](/help/implementing/dispatcher/cdn-configuring-traffic.md) 얼리어답터 프로그램에 참여함으로써.
+>요청/응답 수정, 리디렉션 선언, AEM이 아닌 원본으로의 프록시 등 CDN에서 트래픽을 구성하는 다른 옵션에 관심이 있으십니까? 얼리 어답터 프로그램에 참여하여 [방법을 알아보고 사용해 보십시오](/help/implementing/dispatcher/cdn-configuring-traffic.md).
 
 
 ## 이 문서를 구성하는 방식 {#how-organized}
@@ -238,9 +238,9 @@ when:
 
 | **이름** | **허용된 속성** | **의미** |
 |---|---|---|
-| **허용** | `wafFlags` (선택 사항), `alert` (선택 사항이며 아직 릴리스되지 않음) | wafFlags가 없으면 추가 규칙 처리를 중지하고 응답 제공을 진행합니다. wafFlags가 있으면 지정된 WAF 보호를 비활성화하고 추가 규칙 처리를 진행합니다. <br>경고가 지정된 경우 규칙이 5분 동안 10번 트리거되면 작업 센터 알림이 전송됩니다. 이 기능은 아직 릴리스되지 않았습니다. [트래픽 필터 규칙 경고](#traffic-filter-rules-alerts) early adopter 프로그램에 참여하는 방법에 대한 섹션. |
-| **블록** | `status, wafFlags` (선택 사항이며 함께 사용할 수 없음), `alert` (선택 사항이며 아직 릴리스되지 않음) | wafFlags가 없으면 다른 모든 속성을 무시하는 HTTP 오류를 반환하고, 상태 속성으로 오류 코드를 정의하거나 406을 기본으로 표시합니다. wafFlags가 있으면 지정된 WAF 보호를 활성화하고 추가 규칙 처리를 진행합니다. <br>경고가 지정된 경우 규칙이 5분 동안 10번 트리거되면 작업 센터 알림이 전송됩니다. 이 기능은 아직 릴리스되지 않았습니다. [트래픽 필터 규칙 경고](#traffic-filter-rules-alerts) early adopter 프로그램에 참여하는 방법에 대한 섹션. |
-| **로그** | `wafFlags` (선택 사항), `alert` (선택 사항이며 아직 릴리스되지 않음) | 규칙이 트리거되었다는 사실을 로그 기록하지 않으면 처리에 영향을 주지 않습니다. wafFlags는 영향을 주지 않습니다. <br>경고가 지정된 경우 규칙이 5분 동안 10번 트리거되면 작업 센터 알림이 전송됩니다. 이 기능은 아직 릴리스되지 않았습니다. [트래픽 필터 규칙 경고](#traffic-filter-rules-alerts) early adopter 프로그램에 참여하는 방법에 대한 섹션. |
+| **허용** | `wafFlags` (선택 사항), `alert` (선택 사항, 아직 릴리스되지 않음) | wafFlags가 없으면 추가 규칙 처리를 중지하고 응답 제공을 진행합니다. wafFlags가 있으면 지정된 WAF 보호를 비활성화하고 추가 규칙 처리를 진행합니다. <br>경고가 지정된 경우 규칙이 5분 동안 10번 트리거되면 액션 센터 알림이 전송됩니다. 이 기능은 아직 릴리스되지 않았습니다. 얼리 어답터 프로그램에 참여하는 방법에 대한 자세한 내용은 [트래픽 필터 규칙 알림](#traffic-filter-rules-alerts) 섹션을 참조하십시오. |
+| **블록** | `status, wafFlags` (선택 사항이며 상호 배타적), `alert` (선택 사항, 아직 릴리스되지 않음) | wafFlags가 없으면 다른 모든 속성을 무시하는 HTTP 오류를 반환하고, 상태 속성으로 오류 코드를 정의하거나 406을 기본으로 표시합니다. wafFlags가 있으면 지정된 WAF 보호를 활성화하고 추가 규칙 처리를 진행합니다. <br>경고가 지정된 경우 규칙이 5분 동안 10번 트리거되면 액션 센터 알림이 전송됩니다. 이 기능은 아직 릴리스되지 않았습니다. 얼리 어답터 프로그램에 참여하는 방법에 대한 자세한 내용은 [트래픽 필터 규칙 알림](#traffic-filter-rules-alerts) 섹션을 참조하십시오. |
+| **로그** | `wafFlags` (선택 사항), `alert` (선택 사항, 아직 릴리스되지 않음) | 규칙이 트리거되었다는 사실을 로그 기록하지 않으면 처리에 영향을 주지 않습니다. wafFlags는 영향을 주지 않습니다. <br>경고가 지정된 경우 규칙이 5분 동안 10번 트리거되면 액션 센터 알림이 전송됩니다. 이 기능은 아직 릴리스되지 않았습니다. 얼리 어답터 프로그램에 참여하는 방법에 대한 자세한 내용은 [트래픽 필터 규칙 알림](#traffic-filter-rules-alerts) 섹션을 참조하십시오. |
 
 ### WAF 플래그 목록 {#waf-flags-list}
 
@@ -475,14 +475,14 @@ data:
 
 >[!NOTE]
 >
->이 기능은 아직 릴리스되지 않았습니다. 얼리 어답터 프로그램을 통해 액세스 권한을 얻으려면, 이메일을 보내십시오. **aemcs-waf-adopter@adobe.com**.
+>이 기능은 아직 릴리스되지 않았습니다. 얼리 어답터 프로그램을 통해 액세스하려면 **aemcs-waf-adopter@adobe.com**&#x200B;으로 이메일을 보내 주십시오.
 
-5분 기간 내에 10번 트리거되는 경우 작업 센터 알림을 보내도록 규칙을 구성할 수 있으므로 특정 트래픽 패턴이 발생하면 경고하여 필요한 조치를 취할 수 있습니다. 자세히 알아보기 [작업 센터](/help/operations/actions-center.md)이메일 수신에 필요한 알림 프로필을 설정하는 방법을 포함합니다.
+5분 동안 10번 트리거되면 Actions Center 알림을 보내도록 규칙을 구성할 수 있습니다. 이를 통해 특정 트래픽 패턴이 발생할 때 경고하여 필요한 조치를 취할 수 있습니다. 이메일 수신에 필요한 알림 프로필을 설정하는 방법을 포함하여 [액션 센터](/help/operations/actions-center.md)에 대해 자세히 알아보십시오.
 
-![작업 센터 알림](/help/security/assets/traffic-filter-rules-actions-center-alert.png)
+![액션 센터 알림](/help/security/assets/traffic-filter-rules-actions-center-alert.png)
 
 
-경고 속성(현재 접두사가 있음) *실험* 기능은 아직 릴리스되지 않았으므로 모든 작업 유형(허용, 블록, 로그)의 작업 노드에 적용할 수 있습니다.
+경고 속성(현재 기능이 아직 릴리스되지 않았기 때문에 *실험적* 기능임)은 모든 작업 유형(allow, block, log)에 대한 작업 노드에 적용할 수 있습니다.
 
 ```
 kind: "CDN"
