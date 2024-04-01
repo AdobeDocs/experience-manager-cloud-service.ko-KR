@@ -5,7 +5,7 @@ contentOwner: Adobe
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 56a1c18f4ad700305d3b32f1b24d87ec6321325f
+source-git-commit: 9e09dc7a5226a2b8da7c796a8a8c4480b99eeb3b
 workflow-type: tm+mt
 source-wordcount: '1280'
 ht-degree: 85%
@@ -16,7 +16,7 @@ ht-degree: 85%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/brand-portal-publish-folder.html?lang=en) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/brandportal/brand-portal-publish-assets) |
 | AEM as a Cloud Service | 이 문서 |
 
 AEM(Adobe Experience Manager) Assets 관리자는 자산, 폴더 및 컬렉션을 AEM Assets Brand Portal 인스턴스에 게시할 수 있습니다. 자산이나 폴더의 게시 워크플로우를 나중 날짜나 시간으로 예약할 수도 있습니다. 게시된 자산, 폴더 및 컬렉션은 Brand Portal 사용자가 액세스하고 다른 사용자에게 추가로 분배할 수 있습니다.
