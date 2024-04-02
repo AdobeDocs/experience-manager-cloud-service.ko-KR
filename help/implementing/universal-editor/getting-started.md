@@ -2,7 +2,7 @@
 title: AEM에서 Universal Editor 시작하기
 description: Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 알아봅니다.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 799ca20f8787afffd783c93a2480e096fffb1566
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
 source-wordcount: '921'
 ht-degree: 69%
@@ -17,8 +17,6 @@ Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번
 >[!TIP]
 >
 >예를 바로 살펴보고 싶다면 [GitHub의 Universal Editor 샘플 앱](https://github.com/adobe/universal-editor-sample-editable-app)을 검토할 수 있습니다.
-
-{{universal-editor-status}}
 
 ## 온보딩 단계 {#onboarding}
 

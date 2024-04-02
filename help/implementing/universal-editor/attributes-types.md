@@ -2,7 +2,7 @@
 title: 속성 및 항목 유형
 description: 범용 편집기에 필요한 데이터 특성 및 항목 유형에 대해 알아봅니다.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 5ddd4bbcce10c5cda97e3ea3f6750b209b5743f0
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 80%
@@ -13,8 +13,6 @@ ht-degree: 80%
 # 속성 및 유형 {#attributes-types}
 
 범용 편집기에 필요한 데이터 특성 및 항목 유형에 대해 알아봅니다.
-
-{{universal-editor-status}}
 
 ## 소개 {#introduction}
 

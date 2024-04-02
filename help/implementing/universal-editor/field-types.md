@@ -2,7 +2,7 @@
 title: 모델 정의, 필드 및 구성 요소 유형
 description: 예가 포함된 속성 레일에서 유니버설 편집기가 편집할 수 있는 필드 및 구성 요소 유형에 대해 알아봅니다. 모델 정의를 만들고 구성 요소에 연결하여 나만의 앱을 계측하는 방법을 이해합니다.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: fcdba895510b0c428a4274092c8b314fd36f5c7d
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
 source-wordcount: '1144'
 ht-degree: 10%
@@ -13,8 +13,6 @@ ht-degree: 10%
 # 모델 정의, 필드 및 구성 요소 유형 {#field-types}
 
 예가 포함된 속성 레일에서 유니버설 편집기가 편집할 수 있는 필드 및 구성 요소 유형에 대해 알아봅니다. 모델 정의를 만들고 구성 요소에 연결하여 나만의 앱을 계측하는 방법을 이해합니다.
-
-{{universal-editor-status}}
 
 ## 개요 {#overview}
 

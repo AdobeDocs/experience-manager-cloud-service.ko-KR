@@ -2,9 +2,9 @@
 title: Universal Editor 소개
 description: 유니버설 편집기를 통해 Headless 및 Headful 환경의 WYSIWYG(보이는 그대로) 편집을 활성화하는 방법에 대해 알아봅니다. 콘텐츠 작성자가 탁월한 경험을 제공하고 콘텐츠 속도를 높이며 최신 개발자 경험을 제공하는 데 도움이 되는 방식에 대해 살펴보십시오.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 9d88d9b6d3315f34ca6819820b4b4306ba901390
+source-git-commit: b6548d39ce02006d91f1953c878e08a1c0903563
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '868'
 ht-degree: 85%
 
 ---
@@ -13,8 +13,6 @@ ht-degree: 85%
 # Universal Editor 소개 {#introduction}
 
 유니버설 편집기를 통해 Headless 및 Headful 환경의 WYSIWYG(보이는 그대로) 편집을 활성화하는 방법에 대해 알아봅니다. 콘텐츠 작성자가 탁월한 경험을 제공하고 콘텐츠 속도를 높이며 최신 개발자 경험을 제공하는 데 도움이 되는 방식에 대해 살펴보십시오.
-
-{{universal-editor-status}}
 
 ## 배경 {#background}
 
@@ -79,12 +77,6 @@ Universal Editor를 사용하기 위한 구현 요구 사항은 매우 간단하
 마케팅 실무자가 뛰어난 경험을 제공하기 위해 주어진 컨텍스트의 레이아웃에 맞는 콘텐츠를 만들고자 합니다.
 
 * 수행해야 할 기본 작업은 독자와 설득력 있게 소통하는 것입니다.
-
-## 로드맵 {#road-map}
-
-Universal Editor는 개발이 진행 중이므로 이 문서에 설명된 일부 기능은 최종 편집기에 대한 것이며 현재 기능을 나타내지 않을 수 있습니다.
-
-Universal Editor에 예정된 향후 기능에 대한 자세한 내용은 Adobe 담당자에게 문의하십시오.
 
 ## 추가 리소스 {#additional-resources}
 

@@ -2,7 +2,7 @@
 title: Universal Editor 인증
 description: Universal Editor가 인증을 위해 Adobe의 Identity Management System(IMS)을 사용하는 방법에 대해 알아봅니다.
 exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
-source-git-commit: 9d88d9b6d3315f34ca6819820b4b4306ba901390
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 93%
@@ -13,8 +13,6 @@ ht-degree: 93%
 # Universal Editor 인증 {#authentication}
 
 Universal Editor의 인증 방법을 알아봅니다.
-
-{{universal-editor-status}}
 
 ## 옵션 {#options}
 

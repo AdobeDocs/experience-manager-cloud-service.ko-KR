@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
-workflow-type: ht
-source-wordcount: '367'
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+workflow-type: tm+mt
+source-wordcount: '340'
 ht-degree: 100%
 
 ---
@@ -14,12 +14,6 @@ ht-degree: 100%
 ## Edge Delivery Services 작성 {#edge-delivery-authoring}
 
 [!BADGE Edge Delivery Services용 AEM 콘텐츠를 작성하려면 여기를 클릭합니다.]{type=Positive url="/help/edge/overview.md" tooltip="Edge Delivery Services용 AEM 콘텐츠 작성"}
-
-## Universal Editor 상태 {#universal-editor-status}
-
->[!NOTE]
->
->Universal Editor는 아직 개발 중이므로 해당 기능은 변경될 수 있으며 이 문서에 설명된 내용과 다를 수 있습니다.
 
 ## 추가 참조 {#see-also}
 
