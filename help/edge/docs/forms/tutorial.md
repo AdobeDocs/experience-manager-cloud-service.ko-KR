@@ -2,13 +2,13 @@
 title: AEM Forms Edge Delivery Services 시작하기 - 개발자 튜토리얼
 description: 이 튜토리얼에서는 새로운 AEM(Adobe Experience Manager Forms) 프로젝트를 시작하고 실행하는 방법을 안내합니다. 10~20분 안에 나만의 양식을 만들 수 있습니다.
 feature: Edge Delivery Services
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
-workflow-type: ht
-source-wordcount: '1850'
-ht-degree: 100%
+exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
+workflow-type: tm+mt
+source-wordcount: '1848'
+ht-degree: 99%
 
 ---
-
 
 # 시작하기 - 개발자 튜토리얼
 
@@ -19,8 +19,6 @@ ht-degree: 100%
 AEM Forms는 데이터를 캡처하고 캡처한 데이터를 저장하는 양식을 쉽게 만들 수 있는 적응형 양식 블록이라는 블록을 제공합니다. [적응형 양식 블록으로 사전 구성된 새 AEM 프로젝트를 만들거나](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [기존 AEM 프로젝트에 적응형 양식 블록을 추가](#add-adaptive-forms-block-to-your-existing-aem-project)할 수 있습니다.
 
 이 AEM Forms 튜토리얼에서는 새로운 Adobe Experience Manager(AEM) Forms 프로젝트를 사용하여 사용자 정의 양식을 만들고, 미리 보고, 게시하는 과정을 안내합니다.
-
-
 
 ## 사전 요구 사항
 
@@ -131,8 +129,7 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
       https://adobe.SharePoint.com/sites/wkndforms/Shared%20Documents/wefinance
       ```
 
-      Microsoft SharePoint 내에서 파일 관리에 대한 자세한 내용은 [Adobe SharePoint 사용 방법](https://www.aem.live/docs/setup-customer-SharePoint)을 참조하십시오.
-
+      Microsoft SharePoint을 사용한 파일 관리에 대한 자세한 내용은 [Adobe SharePoint 사용 방법](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
    1. 참조를 업데이트했고 모든 항목에 문제가 없으면 업데이트된 `fsatb.yaml` 파일을 커밋합니다. 빌드 문제가 발생하면 [GitHub 빌드 문제 해결](#troubleshooting-github-build-issues)을 참조하십시오.
@@ -300,4 +297,3 @@ AEM Sidekick을 사용하여 문의 문서를 미리 보고 게시합니다.
 ## 추가 참조
 
 {{see-more-forms-eds}}
-

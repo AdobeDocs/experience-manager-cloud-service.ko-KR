@@ -1,13 +1,13 @@
 ---
 title: 변형 생성
 description: Edge Delivery Services Sidekick에서 액세스할 수 있는 변형 생성에 대해 알아봅니다
-source-git-commit: 88d0b0a6dc2dacdf907ab46c804087772ab2e030
+exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
 workflow-type: tm+mt
 source-wordcount: '3338'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # 변형 생성 {#generate-variations}
 
@@ -343,7 +343,7 @@ UI의 서식과 문서 기반 작성 플로우를 복사하여 붙여넣을 때 
 
    >[!NOTE]
    >
-   >을(를) 사용하려면 **Adobe Target** 대상자 설명 필드를 입력해야 합니다. 그렇지 않은 경우, 대상이 드롭다운 목록에 사용할 수 없는 것으로 표시됩니다. 설명을 추가하려면 타겟으로 이동하고 [대상자 설명 추가](https://experienceleague.adobe.com/docs/target-learn/tutorials/audiences/create-audiences).
+   >을(를) 사용하려면 **Adobe Target** 대상자 설명 필드를 입력해야 합니다. 그렇지 않은 경우, 대상이 드롭다운 목록에 사용할 수 없는 것으로 표시됩니다. 설명을 추가하려면 타겟으로 이동하고 [대상자 설명 추가](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/audiences/create-audiences).
 
    ![변형 생성 - 대상 소스 - Adobe Target](assets/generate-variations-audiences-adobe-target.png)
 

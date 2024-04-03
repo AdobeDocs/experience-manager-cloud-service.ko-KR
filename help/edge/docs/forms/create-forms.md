@@ -3,8 +3,8 @@ title: AEM Forms Edge Delivery Service 시작하기. 양식을 만듭니다.
 description: 완벽한 양식을 빠르게 제작하십시오. ⚡ AEM Forms Edge Delivery 문서 기반 작성 = 놀라운 속도 및 만족도가 높은 사용자를 위한 SEO 친화적 양식과 검색 엔진.
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
-workflow-type: ht
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
+workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ AEM Forms Edge Delivery는 데이터를 캡처하고 캡처한 데이터를 저�
 
 * [AEM Forms 상용구를 사용하여 AEM 프로젝트를 설정](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)하거나 [기존 AEM 프로젝트에 적응형 양식 블록을 추가](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)하고 로컬 머신의 해당 GitHub 저장소를 복제합니다.
 이 문서에서 Edge Delivery Services(EDS) 프로젝트의 로컬 폴더란 `[EDS Project repository]`를 말합니다.
-* Google Sheets 또는 Microsoft SharePoint에 액세스할 수 있는지 확인하십시오. Microsoft SharePoint를 콘텐츠 소스로 설정하려면 [SharePoint 사용 방법](https://www.aem.live/docs/setup-customer-SharePoint)을 참조하십시오.
+* Google Sheets 또는 Microsoft SharePoint에 액세스할 수 있는지 확인하십시오. Microsoft SharePoint를 콘텐츠 소스로 설정하려면 [SharePoint 사용 방법](https://www.aem.live/docs/setup-customer-sharepoint)을 참조하십시오.
 
 
 
@@ -80,7 +80,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
    ![Google Drive의 샘플 콘텐츠](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
 
-1. [프로젝트에 지정된 구성에 따라](https://www.aem.live/docs/setup-customer-SharePoint) 시트가 해당 AEM 사용자(예: `helix@adobe.com`)와 공유되고 있는지 확인합니다. 사용자에게 시트에 대한 편집 권한을 부여합니다.
+1. [프로젝트에 지정된 구성에 따라](https://www.aem.live/docs/setup-customer-sharepoint) 시트가 해당 AEM 사용자(예: `helix@adobe.com`)와 공유되고 있는지 확인합니다. 사용자에게 시트에 대한 편집 권한을 부여합니다.
 
 1. 작성된 스프레드시트를 연 다음 기본 시트 이름을 “shared-default”로 바꿉니다.
 

@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: fa57e0438a7570551785375c4e5a57fa38fd2f6f
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1937'
 ht-degree: 8%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 8%
 * 파일 크기
 * 형식
 * 해결 방법
-* 크기
+* 차원
 * 색상 모드
 
 이러한 유형의 메타데이터는 사용자가 디지털 에셋을 이해하고 효율적으로 사용하는 데 도움이 됩니다.
@@ -250,7 +250,7 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 * 참조 - [!DNL Creative Commons].
 * [!DNL XMPRights]
 * 플러스 - [Picture Licensing Universal System](https://www.useplus.com).
-* 프리즘 - [업계 표준 메타데이터에 대한 게시 요구 사항](https://www.idealliance.org/prism-metadata).
+<!--THIS LINK IS 404 WITH NO SUITABLE REPLACEMENT * PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata). -->
 * PRL - PRISM Rights 언어.
 * PUR - 프리즘 사용 권한.
 * `xmpPlus` - PLUS와 XMP 통합.
@@ -265,7 +265,7 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 ### 인쇄별 메타데이터 {#print-specific-metadata}
 
 * PDF 및 PDF/X - Adobe PDF 및 타사 애플리케이션.
-* 프리즘 - [업계 표준 메타데이터에 대한 게시 요구 사항](https://www.idealliance.org/prism-metadata).
+<!--THIS LINK IS 404 WITH NO SUITABLE REPLACEMENT * PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata). -->
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - 페이징된 텍스트에 대한 XMP 메타데이터
 
