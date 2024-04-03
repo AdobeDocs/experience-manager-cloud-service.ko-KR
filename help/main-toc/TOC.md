@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: f3192858ea6fcf87788fafe07aa8870211dbb637
+source-git-commit: 4e60d7315fe7a92d608f0858a7108f7590e9aefa
 workflow-type: tm+mt
-source-wordcount: '4832'
+source-wordcount: '4844'
 ht-degree: 99%
 
 ---
@@ -641,6 +641,8 @@ ht-degree: 99%
             + [핵심 구성 요소 기반 적응형 양식의 로케일 추가](/help/forms/supporting-new-language-localization-core-components.md)
             + [사용자 정의 함수 만들기 및 사용](/help/forms/create-and-use-custom-functions.md)
             + [핵심 구성 요소 기반 적응형 양식에 규칙 추가](/help/forms/rule-editor-core-components.md)
+            + [적응형 양식에 버전, 주석 및 주석 추가](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
+            + [적응형 Forms 비교](/help/forms/compare-forms.md)
       + 기초 구성 요소 {#authoring-adaptive-forms-foundation-components}
          + PDF 양식을 적응형 양식으로 변환 {#afcs}
             + [자동 양식 전환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
