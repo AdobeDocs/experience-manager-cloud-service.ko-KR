@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: dbdc63db9a9ac954ce6359d3643231d6e195fd53
-workflow-type: ht
-source-wordcount: '302'
-ht-degree: 100%
+source-git-commit: d07fc976fe9c8e7872468048f80e525fe8484339
+workflow-type: tm+mt
+source-wordcount: '2584'
+ht-degree: 7%
 
 ---
 
@@ -13,26 +13,175 @@ ht-degree: 100%
 
 다음 섹션에서는 Experience Manager as a Cloud Service 현재 유지 관리 릴리스의 기술 릴리스 정보에 대해 간략히 소개합니다.
 
-## 릴리스 15575 {#release-15575}
+## 릴리스 15787 {#release-15787}
 
-2024년 3월 19일에 릴리스된 유지 관리 릴리스 15575의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이전 유지 관리 릴리스는 릴리스 15262이었습니다.
+다음은 2024년 4월 4일에 공개적으로 릴리스된 유지 보수 릴리스 15787에 대한 지속적인 개선 사항을 요약했습니다. 이전 유지 관리 릴리스는 릴리스 15575.
 
 이 유지 관리 릴리스(2024.3.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)을 참조하십시오.
 
-### 개선 사항 {#enhancements-15575}
+### 개선 사항 {#enhancements-15787}
 
-없음.
+* SITES-19059 - 콘텐츠 조각 - OpenAPI - 열거형 필드에 기본값 허용
+* SITES-20013 - 콘텐츠 조각 - OpenAPI - WCMScriptHelper는 ServletResolver가 없으면 렌더링을 중단해야 합니다.
+* SITES-19926 - 콘텐츠 조각 - OpenAPI - OnOffTriggerProcessor 개선 사항
+* SITES-17945 - 콘텐츠 조각 - OpenAPI - 각 버전에 대한 마지막 수정 메타데이터 가져오기
+* SITES-17298 - 콘텐츠 조각 - OpenAPI - 콘텐츠 조각 모델 권한
+* SITES-14255 - 콘텐츠 조각 - OpenAPI - 조각 모델에 고유 플래그가 설정된 경우 텍스트 필드 고유성 확인
+* SITES-15557 - 콘텐츠 조각 - OpenAPI - 열거형 필드에 기본값 허용
+* SITES-1559 - 콘텐츠 조각 - OpenAPI - 직접 하위 콘텐츠 조각(BE)만 가져올 수 있도록 CF 목록 API 업데이트
+* SITES-16052 - 콘텐츠 조각 - OpenAPI - 리소스를 사용할 수 있는 인스턴스의 URL을 추가합니다.
+* SITES-17944 - 콘텐츠 조각 - OpenAPI - CF 권한 끝점에 대한 적절한 JCR ACL 매핑
+* SITES-17513 - 콘텐츠 조각 제어 평면 - 콘텐츠 조각 게시 취소
+* SITES-8831 - 콘텐츠 조각 제어 평면 - PUT - 전체 정보로 조각 업데이트
+* SITES-8836 - 콘텐츠 조각 - OpenAPI - 제어 평면 - GET 참조 - 조각의 상위 참조 가져오기(UUID)
+* SITES-8986 - 콘텐츠 조각 - OpenAPI - 콘텐츠 조각 모델 게시
+* SITES-18073 - 콘텐츠 조각 - OpenAPI - CFM용 PreviewURL 패턴
+* SITES-15242 - 콘텐츠 조각 - OpenAPI - 게시 이벤트를 확장하여 계층에 대한 정보를 제공합니다.
+* SITES-18702 - 콘텐츠 조각 - OpenAPI - [백엔드] 폴더 수준에서 게시할 수 있는 기능
+* SITES-20020 - 콘텐츠 조각 - OpenAPI - 제거 `X-Adobe-Accept-Unsupported-API` GA 이전
+* SITES-16066 - 콘텐츠 조각 - 조각 편집기 - 자산 선택기 JS URL 변경
+* SITES-19326 - 콘텐츠 조각 - 조각 편집기 - 에셋 UI의 링크를 업데이트하여 새 CF 편집기에서 CF를 엽니다.
+* SITES-10515 - 콘텐츠 조각 - GraphQL API - GraphQL - 참조된 콘텐츠 조각 로드 중 AbstractFetcher 성능 문제
+* SITES-17364 - 콘텐츠 조각 - GraphQL API - 수정자 및 게시자 속성에 대한 전체 이름 반환
+* SITES-19165 - 콘텐츠 조각 - GraphQL API - 모든 GraphQL 종단점에서 글로벌 모델을 사용, 참조 및 쿼리할 수 있도록 허용
+* SITES-17768 - 콘텐츠 조각 - GraphQL API - _dmS7Url을 통해 이미지에 대한 Dynamic Media URL 노출
+* SITES-11057 - 핵심 백엔드 - 타임라인 > 버전을 열 때 모든 버전을 로드하지 않음
+* SKYOPS-63033 - HTTPD - Dispatcher 환경 변수의 공백 트리밍
+* SKYOPS-65518 - HTTPD - Dispatcher 폴더에 잘못된 파일 이름이 있는 경우 유효성 검사기에 실패합니다.
+* SITES-19626 - 시작 - DAM-CFM lastUpdate 필드를 기본 필드에 병합
+* SITES-19251 - 빠른 사이트 - 만들기 마법사 - 테마 참조가 사이트 이름과 같지 않은 경우 사이트 관리자 ui 측면 레일 지원
+* SITES-15430 - Universal Editor - AEM 도메인 아래의 Universal Editor
+* CQ-4344966 - WCM - 번역 - 사이트의 구조적 업데이트에 대한 기본 프레임워크 만들기 및 에셋에 대한 기존 프레임워크 업데이트
+* CQ-4347312 - WCM - 번역 - 기존 소스 및 언어 사본에서 &quot;cq:translationsourcejcruuid&quot;를 연결하는 워크플로우를 만듭니다.
+* CQ-4354509 - WCM - 번역 - 번역 작업 이벤트 게시 [OSGi EventAdmin]
+* SITES-16318 - 횡단보도 - Edge Delivery Services을 사용한 AEM 기반 작성
+* FORMS-9889: 사용자는 REST 끝점에 제출하기 위해 제출 액션을 구성하는 동안 POST URL 및 클라우드 구성을 추가할 수 있습니다
+* 규칙 편집기에서 사용자는 다음과 같은 작업을 수행할 수 있습니다.
+   * FORMS-12160: When 조건의 Then 섹션에서 필드, 패널 또는 양식의 유효성을 검사합니다.
+   * FORMS-12570: When 조건의 Then 섹션에서 필드, 패널 또는 양식을 재설정합니다.
+   * FORMS-11541: 사용자 지정 함수를 통해 규칙 편집기의 필드 개체 및 전역 개체를 사용합니다.
+   * FORMS-11714: 사용자 지정 함수에서 매개 변수를 선택 사항으로 정의합니다. 기본적으로 사용자 지정 함수에서 선언된 매개 변수는 필수입니다.
+   * FORMS-11756: 규칙 편집기에서 사용자 지정 함수 목록을 검색할 때 응답 시간을 개선하기 위해 사용자 지정 함수에 캐싱을 사용합니다.
+   * FORMS-12053: &#39;When&#39; 조건에 &#39;else&#39; 문을 추가하여 중첩된 조건을 구현합니다.
+   * FORMS-11269: 핵심 구성 요소 기반 양식의 사용자 지정 함수에서 let 및 arrow 함수와 같은 최신 ES10 JavaScript 기능을 사용하십시오.
 
-### 해결된 문제 {#fixed-issues-15575}
+* FORMS-9014: 스크리블 서명 구성 요소에 대한 다양한 액세스 가능성 관련 개선
 
-* ASSETS-36358: 보고서 업로드를 렌더링할 수 없습니다.
-* GRANITE-50774: GraniteContent는 초기화 시 속성 값의 결정적 순서를 사용해야 합니다.
 
-### 알려진 문제 {#known-issues-15575}
+### 해결된 문제 {#fixed-issues-15787}
 
-없음.
+* 다양한 접근성 및 국제화 문제 해결
+* SITES-16966 - AEM: 현지화되지 않은 &quot;Not Versioned!&quot; 사이트 > 복원 > 트리 복원 의 문자열
+* SITES-16208 - ContentFragmentModelIdentifier는 잘못된 제목 속성을 노출합니다.
+* SITES-18024 - If-Match 헤더에 응답이 없으면 428이어야 합니다.
+* SITES-18003 - 버전을 만든 사용자가 올바르게 반환되지 않음
+* SITES-17937 - 작성자 포드가 동기화되기 전에 콘텐츠 조각이 생성됨 이벤트를 전송합니다
+* SITES-18029 - JCR 관찰이 동시에 통지되면 이벤트 처리 파이프라인이 중단됩니다
+* SITES-17882 - 스키마에서 조각 텍스트 필드 최대 길이 제한 제거
+* SITES-19252 - HTTP 상태 코드 406 및 415와 관련된 불일치 문제를 수정합니다
+* SITES-16964 - [백엔드] &quot;수정자&quot;별 정렬이 제대로 작동하지 않음
+* SITES-17519 - Sites 페이지 속성 편집기 - 긴 페이지 이름으로 인해 단추를 클릭할 수 없습니다.
+* SITES-16852 - 게시 API가 NEW 상태의 참조를 게시합니다.
+* SITES-18833 - OpenAPI 끝점에 고유성 제약 조건이 표시되지 않음
+* SITES-15553 - XF의 URL에 선택기가 포함된 경우 XF의 사이드 패널을 로드하지 못했습니다.
+* SITES-14340 - VersioningTimelineEventProvider.accepts의 NPE
+* 사이트 - [사이트] DeletePageCommand는 Null 소스 경로의 경우 NPE를 throw합니다.
+* SITES-16308 - [GB18030]: 이름이 GB18030자로 지정된 새 Sites 폴더를 만들 때 경고 메시지가 표시됨
+* SITES-16304 - [GB18030]: 이름이 GB18030자로 지정된 새 경험 조각 폴더를 만들 때 경고 메시지가 표시됨
+* SITES-8769 - StyleImpl 성능 개선
+* CQ-4343815 - 캠페인 - 타깃팅 - 티저의 기본 변형에 빈 URL이 있음
+* CQ-4355889 - Campaign - 타깃팅 - IMS 구성으로 대상 만들기 요청이 실패합니다.
+* SITES-12460 - Campaign 통합 - Campaign/AEM Cloud Service 통합 중단
+* SITES-11571 - 콘텐츠 조각 - GraphQL API - PersistedQueryServlet에서 잘못된 형식의 URL로 400초를 전송해야 함
+* SITES-19946 - 콘텐츠 조각 - GraphQL API - 모델을 시작할 때 더 이상 스캔하지 않음
+* SITES-1605 - 코어 백엔드 - DeletePageCommand는 null 소스 경로의 경우 NPE를 throw합니다.
+* SITES-5429 - 코어 백엔드 - ChildrenListServlet itemResourceType을 통해 코드를 직접 실행할 수 있음
+* SITES-15553 - 경험 조각 - XF의 URL에 선택기가 포함된 경우 XF의 사이드 패널을 로드하지 못했습니다.
+* SITES-13666 - Headless - 관리자 - 오류 로그 False 양성 &quot;com.adobe.cq.dam.cfm.headless.ui.impl.models.CFHomeCardModelImpl 구성 ID는 null이 아니어야 합니다.&quot;
+* SITES-17164 - 페이지 편집기 - [클라우드, 6.5 Forms] AF 테마 편집기 미리보기가 중단됨
+* SITES-14340 - Sites 관리자 UI - VersioningTimelineEventProvider.accepts의 NPE
+* SKYOPS-68611 - Sling - repoinit - Port sling repoinit 유지 관리 분기에 대한 경로 수정 만들기
+* CQ-4354678 - WCM - 번역 - 번역 작업이 번역된 콘텐츠를 내보내고 있습니다.
+* CQ-4355167 - WCM - 번역 - 번역 작업 완료 또는 아카이브를 표시하는 동안 팝업을 가져오지 않음
+* CQ-4355913 - WCM - 번역 - 번역 프로젝트 언어 카드 오류 발생
+* GRANITE-47694 - 워크플로 - 관리자가 아닌 사용자를 위해 클라우드의 워크플로에서 하위 작업을 가져올 수 없음
+* ASSETS-31097 - Assets Cloud - /bin/numberofentitiesinfolders.json에 대한 인덱스 트래버스 경고로 채워진 로그
+* ASSETS-35860 - Assets Cloud - AEM Assets 열 보기의 잘못된 시간대 변환
+* SITES-15260 - 클래식 UI(기존) - 시트 가져오기를 사용하는 경우 Bulkedit에서 페이지에 EMPTY 속성을 추가합니다.
+* SITES-16834 - 클래식 UI(레거시) - 텍스트에 쉼표가 있을 경우 벌크 편집기를 사용하여 텍스트를 편집한 후 텍스트가 누락됨
+* SITES-17767 - 콘텐츠 조각 - 관리자 - jcr:content 노드가 없는 폴더에 대해서도 허용된 cf-model을 지원합니다.
+* SITES-17683 - 콘텐츠 조각 - 핵심 백엔드 - 콘텐츠 조각은 Jackson Exporter에서 직렬화할 수 없음
+* SITES-18797 - 콘텐츠 조각 - 핵심 백엔드 - 인덱스 사용자 지정 후 중복되는 GraphQL 결과
+* SITES-18076 - 콘텐츠 조각 - 핵심 백엔드 - 다중 값 텍스트에 잘못된 문자가 @TypeHint
+* SITES-17856 - 콘텐츠 조각 - 모델 및 모델 편집기 - 구성이 폴더가 아닌 경우 CF 모델이 표시되지 않음
+* SITES-17071 - 핵심 백엔드 - 특정 페이지에 타임라인에 버전이 표시되지 않음
+* SITES-17285 - 핵심 구성 요소 - 인라인 이미지 자르기는 AEMaCS의 작성자 및 게시에서 다릅니다.
+* SITES-19187 - 핵심 구성 요소 - 대화 상자에서 에셋을 이미지 구성 요소에 배치하는 두 가지 방법을 통해 다른 결과를 얻을 수 있습니다.
+* SITES-20077 - 핵심 구성 요소 - 인라인 이미지 자르기 - 자르기가 잘못되고 이미지가 흐릿함
+* SITES-17211 - 경험 조각 - 경험 조각 구성 요소 경로 선택기 대화 상자 - 삭제된 경험 조각을 표시합니다.
+* SITES-17894 - 론치 - 중첩 론치의 승격은 론치 콘텐츠를 상위 버전의 버전으로 되돌립니다.
+* SITES-16042 - MSM - 라이브 카피 - 롤아웃 후 주석이 라이브 카피에 잘못 표시됨
+* SITES-16691 - MSM - 라이브 카피 - 고객이 구성 요소의 &#39;롤아웃&#39; 아이콘에서 &#39;롤아웃&#39; 또는 &#39;롤아웃 대상&#39;을 선택하면 &#39;계속&#39; 버튼이 회색으로 표시됩니다.
+* SITES-16733 - MSM - 라이브 카피 - 블루프린트 인덱스 페이지는 rep:policy가 노드에 적용될 때 롤아웃할 수 없습니다.
+* SITES-17155 - MSM - 라이브 카피 - 머리글 및 바닥글은 라이브 카피의 이름이 변경되면 영어로 다시 변환됩니다
+* SITES-17492 - MSM - 라이브 카피 - AEM 페이지 라이브 카피 레이아웃 불일치
+* SITES-19316 - MSM - 라이브 카피 - 경험 조각에 대한 참조 링크가 언어 사본에서 업데이트되지 않음
+* SITES-19347 - MSM - 라이브 카피 - Prod Author 속도 저하 및 서비스 중단 메시지 - pod 재시작 빈도 - 상태 경고
+* SITES-19790 - MSM - 라이브 카피 - 라이브 카피 생성 후 잘못된 미리보기 정보
+* SITES-20086 - MSM - 라이브 카피 - 자산의 CF에 대한 MSM 롤아웃은 하나의 라이브 카피가 롤아웃되도록 선택된 경우에도 모든 라이브 카피를 롤아웃합니다.
+* SITES-20088 - MSM - 라이브 카피 - 빈 페이지 문제 속성의 XF 롤아웃 이후 문제 - AEM as a Cloud Service
+* SITES-16854 - 페이지 편집기 - 드롭 대상 오버레이는 &quot;패널 선택&quot; 기능이 있는 구성 요소의 parsys를 다룹니다.
+* CQ-4355563 - 프로젝트 - 경로 매개 변수가 잘못되었습니다. 프로젝트 받은 편지함 검색 스크립트에 대해 &quot;?appId=aemshell&quot; 채우기
+* SITES-16876 - 빠른 사이트 - 테마 배포 - 미리보기 페이지에 CSS 및 JS 누락 2
+* SITES-18418 - 사이트 관리자 UI - 필드가 필수인 경우 경로 필드 위젯에 대한 표시/숨기기 기능이 제대로 작동하지 않음
+* SITES-19534 - 사이트 관리자 UI - AEM 6.5.19 업그레이드 후 유효 권한 대화 상자를 열 수 없음
+* SITES-19203 - 템플릿 편집기 - 편집 가능한 템플릿 정책 텍스트 잘못 정렬됨 및 스타일 겹치기 삭제 단추
+* CQ-4354881 - WCM - 번역 - 콘텐츠 조각이 페이지의 일부로 번역될 때 콘텐츠 조각 경로가 소스(en-us)로 설정됩니다.
+* CQ-4355289 - WCM - 번역 - 처음 40개 요소만 번역 Cloud Service에 표시됩니다.
+* CQ-4355866 - WCM - 번역 - 기존 페이지에 대한 오류를 발생하는 번역 워크플로
+* CQ-4355797 - 워크플로우 - OOTB 워크플로우 단계를 사용할 수 없음
+* GRANITE-48938 - 워크플로 - 작성자가 자산에 대해 &#39;게시 보류 중&#39; 상태에서 중지된 상태를 표시합니다. 새 지속된 페이로드 맵 캐시의 문제입니다.
+* GRANITE-49036 - 워크플로우 - 기능 요청 | 워크플로 패키지 제거를 예약하고 구성하는 기능
+* SITES-17393 - Workflow Extensions - cq:Tag에 대해 워크플로 시작 관리자를 사용할 때 콘텐츠 트리 게시 실패
+* SITES-17759 - 워크플로 확장 - 트리 활성화-AEMaaCS에서 작동하지 않는 태그에 대한 워크플로
+* FORMS-12411: Android 장치에서 `Maximum Number of Characters Validation` 적응형 양식 텍스트 상자 구성 요소에 대해 옵션이 작동하지 않습니다.
+* FORMS-13377: 사용자가 사용자 정의 글꼴을 추가하고 파이프라인을 실행하여 구성하려고 하면 &#39;ContainersNotReady&#39; 오류와 함께 실패합니다
+* FORMS-13267: 사용자가 적응형 양식 드롭다운 구성 요소를 추가할 때 드롭다운의 ID가 생성되지 않습니다
+* FORMS-13544: 사용자가 마법사 레이아웃이 포함된 적응형 양식 컨테이너 구성 요소를 추가할 때 양식 작성 중에 제대로 작동하지 않습니다
+* FORMS-13091, FORMS-13414: 사용자가 Azure Blob 저장소에서 사용자 지정 도메인 URL을 구성하려고 하면 실패합니다
+* FORMS-13595: 사용자가 양식을 다른 위치에 저장하려고 할 때 브라우저 해상도가 100%로 설정된 경우 &quot;폴더 선택&quot; 및 &quot;취소&quot; 버튼이 표시되지 않습니다. 그러나 해상도를 75%로 설정하면 옵션이 표시됩니다
+* FORMS-10952: 사용자가 적응형 양식에 적응형 양식 드롭다운 구성 요소를 추가하고 다양한 사용자 지정 규칙을 기반으로 &#39;옵션 설정&#39; 속성을 사용하면 &#39;옵션 설정&#39; 속성이 마지막 규칙에 대해서만 작동합니다
+* FORMS-11471: 네트워크 중단으로 인해 &#39;emitter.json&#39; 호출이 실패하면 조각의 소극적 로드가 실패합니다.
+* FORMS-11786: 사용자가 달력 위젯에서 월 간을 전환할 때 날짜 선택기 구성 요소에 추가 행이 표시됩니다.
+* FORMS-12093, FORMS-12093: 사용자가 양식을 제출하기 위해 적응형 양식 확인란을 선택하면 잘못된 값에 추가 항목이 추가됩니다  `\` 텍스트 상자에 저장됩니다.
+* FORMS-11993: 사용자가 iOS 장치의 첨부 파일 구성 요소에서 &quot;사진 촬영&quot;을 사용하여 이미지를 클릭하면 모든 이미지가 동일한 이름으로 폴더에 추가됩니다
+* FORMS-12555: 사용자가 AEM Forms을 AEM에 게시된 URL이 있는 메일링 플랫폼에 통합하려고 할 때 AEM Forms은 페이지를 렌더링하는 동안 method=post를 추가하지 않습니다. 이 문제는 URL이 있는 제출 액션에 POST이 설정되어 있더라도 발생합니다. 이로 인해 메일링 플랫폼에서는 이를 양식으로 인식하지 못합니다
+* FORMS-12938: IE 호환 모드를 사용하는 Microsoft Edge 브라우저에서 HTML5 양식이 제대로 작동하지 않거나 로드되지 않음
+* FORMS-12032: 사용자가 양식을 제출할 때 제출 작업 경로의 경로가 올바르게 지정되지 않습니다
+* FORMS-12445: 라디오 버튼 옵션의 순서가 변경되고 양식이 게시된 후 양식 데이터 모델에 잘못된 값이 캡처됩니다.
+* FORMS-12947: 사용자가 기존 사전에 새 언어를 추가하면 병합하거나 추가할 수 없습니다
+* FORMS-11363: 사용자가 작업 영역을 통해 양식을 제출할 때 렌더링되는 동안 표에 표시 문제가 발생합니다
+* FORMS-11756: 사용자가 다음과 같은 ES6 JavaScript 기능을 추가할 때 `let` 및 `const` 사용자 지정 함수에서 규칙 편집기가 열리지 않습니다. 이 유지 보수 릴리스는 ES10을 지원합니다.
+* FORMS-13164: 사용자가 PDF을 생성하면 제출 후 예기치 않은 빈 줄이 추가됩니다
+* FORMS-13789: 사용자가 여러 PDF을 생성하려고 하면 출력 일괄 처리 API가 실패합니다
+* FORMS-11483: 사용자가 PDF을 PDF/A-2B 또는 PDF/A-3B로 변환할 때 변환되지 않고 유효성 검사 오류가 표시됩니다
+* FORMS-10501: 사용자가 HSM을 호출할 때 문서가 인증되지만 LTV가 활성화되지는 않습니다
+* FORMS-11546: 양식 작성자가 적응형 양식에서 반복된 패널을 사용할 때 HTML 태그에서 ARIA 속성이 누락됩니다. 이렇게 하면 적응형 양식의 반복된 패널에 대한 액세스 가능성이 향상됩니다
+* FORMS-11826: 일치하는 레이블 Arial® labelledby 및 Arial® 레이블로 인해 화면 판독기에서 이 두 레이블을 구별할 수 없습니다. 이 문제를 해결하려면 양식 필드에 대해 &quot;aria-labelledby&quot;라는 레이블이 &quot;aria-describedby&quot;로 대체됩니다. 바. 이를 통해 적응형 Forms의 접근성이 향상됩니다
+* FORMS-12626, FORMS-13094: 사용자는 양식 편집기 페이지에서 콘텐츠를 저장하거나 편집하기 위해 키보드를 사용하여 도구 모음에 액세스할 수 없습니다. 이 접근성 문제가 수정되었습니다.
+* FORMS-13102: 양식 작성 프로세스 중에 Forms 및 문서 페이지에서 사용할 수 있는 아이콘에 다양한 지원 대상자를 위한 설명 기능이 없습니다. 이 접근성 문제가 수정되었습니다.
 
-### 변경 사항 공지 {#change-notice-15575}
+### 알려진 문제 {#known-issues-15787}
+
+* SITES-17934 - 콘텐츠 조각 - 큰 조각 트리에 대한 DoS 보호로 인해 미리 보기가 실패합니다. 다음을 참조하십시오 [KB](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945)
+
+### 더 이상 사용되지 않는 기능 및 API {#deprecated-15787}
+
+* [Adobe Developer Console에서 JWT 자격 증명 사용 중단](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+
+다음을 살펴보십시오 [사용이 중단되거나 제거된 기능 및 API](/help/release-notes/deprecated-removed-features.md) AEM as a Cloud Service에서 더 이상 사용되지 않거나 제거된 항목을 알아봅니다.
+
+### 변경 사항 공지 {#change-notice-15787}
 
 **조치 필요**
 
@@ -42,29 +191,12 @@ aem-sdk-api의 새 버전에는 Cloud Manager 빌드 환경 기본 JDK 버전 1.
 
 고객은 `.cloudmanager/java-version` 파일을 콘텐츠 `11`과 함께 Git 저장소의 루트에 추가할 것이 권장됩니다. [빌드 환경 / Maven JDK 버전 설정](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#alternate-maven-jdk-version)을 참조하십시오.
 
-#### aem-cloud-testing-clients를 1.2.1로 업데이트 {#update-aem-cloud-testing-clients}
 
-향후 변경 사항을 적용하려면 사용자 정의 기능 테스트에 사용되는 [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) 라이브러리를 최소 버전 **1.2.1로 업데이트해야 합니다.**
-
-`it.tests/pom.xml`의 종속성이 업데이트되었는지 확인합니다.
-
-```xml
-<dependency>
-   <groupId>com.adobe.cq</groupId>
-   <artifactId>aem-cloud-testing-clients</artifactId>
-   <version>1.2.1</version>
-</dependency>
-```
-
-이 변경 사항은 2024년 4월 6일 이전에 수행되어야 합니다.
-
-종속성 라이브러리를 업데이트할 수 없으면 “사용자 정의 기능 테스트” 단계에서 파이프라인 오류가 발생합니다.
-
-### 임베드된 기술 {#embedded-tech-15575}
+### 임베드된 기술 {#embedded-tech-15787}
 
 | 기술 | 버전 | 링크 |
 |---|---|---|
 | AEM OAK | 1.60-T20240131102219-0cde853 | [Oak API 1.60.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.60.0/index.html) |
 | AEM SLING API | 버전 2.27.2 | [Apache Sling API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 버전 1.4.20-1.4.0 | [HTML 템플릿 언어 사양](https://github.com/adobe/htl-spec) |
-| AEM 핵심 구성 요소 | 버전 2.23.4 | [AEM WCM 핵심 구성 요소](https://github.com/adobe/aem-core-wcm-components) |
+| AEM 핵심 구성 요소 | 버전 2.24.4 | [AEM WCM 핵심 구성 요소](https://github.com/adobe/aem-core-wcm-components) |
