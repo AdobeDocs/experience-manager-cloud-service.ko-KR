@@ -930,7 +930,7 @@ ht-degree: 99%
          + [AEM을 통한 Headless 작성 기본 사항 - 소개](/help/journey-headless/author/basics.md)
          + [콘텐츠 조각의 참조 사용에 대해 알아보기](/help/journey-headless/author/references.md)
          + [콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기](/help/journey-headless/author/metadata-tagging.md)
-+ 생성 AI {#generative-ai}
++ 생성형 AI {#generative-ai}
    + [변형 생성](/help/generative-ai/generate-variations.md)
 + 구현 {#implementing}
    + [AEM as a Cloud Service용 애플리케이션 구현](/help/implementing/home.md)
