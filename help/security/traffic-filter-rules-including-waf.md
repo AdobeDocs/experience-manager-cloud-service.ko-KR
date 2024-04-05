@@ -2,8 +2,8 @@
 title: WAF 규칙이 포함된 트래픽 필터 규칙
 description: 웹 애플리케이션 방화벽(WAF)이 포함된 트래픽 필터 규칙 구성
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 38a16251372ee6ba77687f524e5057e00f16f58e
-workflow-type: ht
+source-git-commit: 3a79de1cccdec1de4902b234dac3120efefdbce8
+workflow-type: tm+mt
 source-wordcount: '3669'
 ht-degree: 100%
 
@@ -695,7 +695,7 @@ data:
           - reqProperty: path
             matches: "^/bin/.*"
       action:
-        type: log
+        type: allow
         wafFlags:
           - CMDEXE
 ```
