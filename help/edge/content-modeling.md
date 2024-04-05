@@ -2,10 +2,10 @@
 title: Edge Delivery Services 프로젝트를 사용한 AEM 작성을 위한 콘텐츠 모델링
 description: Edge Delivery Services 프로젝트를 통한 AEM 작성 시 콘텐츠 모델링의 작동 방식과 자체 콘텐츠의 모델링 방법에 대해 알아보십시오.
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
-source-git-commit: 22a631d394de1c0fb934d9703e966c8287aef391
-workflow-type: ht
-source-wordcount: '2095'
-ht-degree: 100%
+source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
+workflow-type: tm+mt
+source-wordcount: '2072'
+ht-degree: 99%
 
 ---
 
@@ -23,7 +23,7 @@ Edge Delivery Services를 통한 AEM 작성을 사용한 프로젝트는 콘텐�
 
 * [시작하기 - 개발자 튜토리얼](/help/edge/developer/tutorial.md)
 * [마크업, 섹션, 블록 및 자동 차단](/help/edge/developer/markup-sections-blocks.md)
-* [컬렉션 차단](/help/edge/developer/block-collection.md)
+  <!--* [Block Collection](/help/edge/developer/block-collection.md)-->
 
 콘텐츠 소스에 구애받지 않는 방식으로 작동하는 강력한 콘텐츠 모델을 마련하려면 이러한 개념을 이해하는 것이 필수입니다. 이 문서에서는 AEM 작성을 위해 특별히 구현된 메커니즘에 대한 세부 정보를 제공합니다.
 
@@ -323,7 +323,7 @@ Edge Delivery Services를 통한 AEM 작성을 사용할 때 작성자에게 콘
 
 [블록 구조의 메커니즘을 설명하면](#block-structure) AEM에 유지된 콘텐츠를 일대일로 게재 계층에 매핑하는 콘텐츠 모델을 만들 수 있습니다.
 
-모든 프로젝트 초기에는 모든 블록에 대해 콘텐츠 모델을 신중하게 고려해야 합니다. 작성자가 블록 구현 및 스타일을 재사용하는 동안 콘텐츠 소스 및 작성 경험을 전환하거나 결합할 수 있도록 콘텐츠 소스 및 작성 경험과 독립적이어야 합니다. 자세한 내용 및 일반 지침은 [David&#39;s Model(2번)에서 확인할 수 있습니다.](https://www.aem.live/docs/davidsmodel) 보다 구체적으로 [블록 컬렉션](/help/edge/developer/block-collection.md)에는 일반적인 사용자 인터페이스 패턴의 특정 사용 사례에 대한 광범위한 콘텐츠 모델 세트가 포함되어 있습니다.
+모든 프로젝트 초기에는 모든 블록에 대해 콘텐츠 모델을 신중하게 고려해야 합니다. 작성자가 블록 구현 및 스타일을 재사용하는 동안 콘텐츠 소스 및 작성 경험을 전환하거나 결합할 수 있도록 콘텐츠 소스 및 작성 경험과 독립적이어야 합니다. 자세한 내용 및 일반적인 지침은 다음에서 확인할 수 있습니다. [David의 모델 (테이크 2).](https://www.aem.live/docs/davidsmodel) <!--More specifically, the [block collection](/help/edge/developer/block-collection.md) contains a extensive set of content models for specific use cases of common user interface patterns.-->
 
 Edge Delivery Services를 사용한 AEM 작성의 경우, 서식 있는 텍스트와 같이 컨텍스트 내에서 의미 체계 마크업을 편집하는 대신 여러 필드로 구성된 양식으로 정보를 작성할 때 강력한 의미 체계 콘텐츠 모델을 제공하는 방법에 대해 의문을 제기합니다.
 

@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 4e60d7315fe7a92d608f0858a7108f7590e9aefa
+source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
 workflow-type: tm+mt
-source-wordcount: '4844'
-ht-degree: 99%
+source-wordcount: '4842'
+ht-degree: 100%
 
 ---
 
@@ -641,8 +641,8 @@ ht-degree: 99%
             + [핵심 구성 요소 기반 적응형 양식의 로케일 추가](/help/forms/supporting-new-language-localization-core-components.md)
             + [사용자 정의 함수 만들기 및 사용](/help/forms/create-and-use-custom-functions.md)
             + [핵심 구성 요소 기반 적응형 양식에 규칙 추가](/help/forms/rule-editor-core-components.md)
-            + [적응형 양식에 버전, 주석 및 주석 추가](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
-            + [적응형 Forms 비교](/help/forms/compare-forms.md)
+            + [적응형 양식에 버전 관리, 설명 및 주석 추가](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
+            + [적응형 양식 비교](/help/forms/compare-forms.md)
       + 기초 구성 요소 {#authoring-adaptive-forms-foundation-components}
          + PDF 양식을 적응형 양식으로 변환 {#afcs}
             + [자동 양식 전환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -803,7 +803,6 @@ ht-degree: 99%
    + Edge Delivery 애플리케이션 빌드 {#build}
       + [시작하기 - 개발자 튜토리얼](/help/edge/developer/tutorial.md)
       + [프로젝트의 구조](/help/edge/developer/anatomy-of-a-franklin-project.md)
-      + [컬렉션 차단](/help/edge/developer/block-collection.md)
       + [스프레드시트](/help/edge/developer/spreadsheets.md)
       + [Forms](/help/edge/developer/forms.md)
       + [색인화](/help/edge/developer/indexing.md)
@@ -1179,3 +1178,9 @@ ht-degree: 99%
    + 접근성 {#accessibility}
       + [AEM as a Cloud Service 및 웹 접근성 지침](/help/compliance/accessibility/web-accessibility.md)
       + [WCAG 2.1에 대한 빠른 안내서](/help/compliance/accessibility/quick-guide-wcag.md)
+
+
+<!--
+Temporarily remove:
+    + [Block Collection](/help/edge/developer/block-collection.md)
+-->
