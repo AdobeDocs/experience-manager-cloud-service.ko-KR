@@ -3,10 +3,10 @@ title: 지속 GraphQL 쿼리
 description: 성능을 최적화하기 위해 Adobe Experience Manager as a Cloud Service에서 GraphQL 쿼리를 지속하는 방법을 알아봅니다. HTTP GET 메서드를 사용하여 클라이언트 애플리케이션에서 지속 쿼리를 요청할 수 있으며 응답을 Dispatcher 및 CDN 계층에서 캐시할 수 있으므로 궁극적으로 클라이언트 애플리케이션의 성능이 향상됩니다.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: ef6138af1735dc7aecbc4210a3fe9983d73348dd
+source-git-commit: 2fa76dbe93bcf31901ec0422470b05dadfe4f43f
 workflow-type: tm+mt
-source-wordcount: '1656'
-ht-degree: 97%
+source-wordcount: '1870'
+ht-degree: 86%
 
 ---
 
@@ -258,6 +258,28 @@ query getAdventuresByActivity($activity: String!) {
 ```
 
 UTF-8 인코딩 `%3B` 다음에 대한 `;` 및 `%3D` 다음에 대한 인코딩입니다. `=`. 실행할 지속 쿼리에 대해 쿼리 변수 및 특수 문자를 [올바르게 인코딩](#encoding-query-url)해야 합니다.
+
+### 쿼리 변수 사용 - 우수 사례 {#query-variables-best-practices}
+
+쿼리에 변수를 사용할 때 따라야 하는 몇 가지 모범 사례가 있습니다.
+
+* 인코딩 일반적인 접근 방식으로 모든 특수 문자를 인코딩하는 것이 좋습니다(예: ). `;`, `=`, `?`, `&`, 기타.
+* 여러 변수(세미콜론으로 구분)를 사용하는 세미콜론 지속 쿼리는 다음 중 하나를 보유해야 합니다.
+   * 인코딩된 세미콜론(`%3B`); 및 URL을 인코딩하면 이 작업도 수행됩니다
+   * 또는 쿼리 끝에 후행 세미콜론이 추가됨
+* `CACHE_GRAPHQL_PERSISTED_QUERIES`
+날짜 `CACHE_GRAPHQL_PERSISTED_QUERIES` 는 Dispatcher에 대해 활성화된 다음 가 포함된 매개 변수 `/` 또는 `\` 값의 문자는 Dispatcher 수준에서 두 번 인코딩됩니다.
+이러한 상황을 방지하려면:
+   * 사용 `DispatcherNoCanonURL` Dispatcher에서.
+이렇게 하면 Dispatcher가 원본 URL을 AEM에 전달하므로 인코딩이 중복되지 않습니다.
+그러나 이 설정은 현재 `vhost` level을 지정했습니다. 따라서 URL을 다시 작성할 Dispatcher 구성이 이미 있는 경우(예: 단축된 URL을 사용할 때) 별도의 항목이 필요할 수 있습니다 `vhost` 지속 쿼리 URL용
+   * 보내기 `/` 또는 `\` 인코딩이 해제된 문자입니다.
+지속 쿼리 URL을 호출할 때 `/` 또는 `\` 지속 쿼리 변수의 값에는 문자가 인코딩되지 않은 상태로 유지됩니다.
+     >[!NOTE]
+     >
+     >이 옵션은 다음과 같은 경우에만 권장됩니다. `DispatcherNoCanonURL` 어떤 이유로든 솔루션을 구현할 수 없습니다.
+* `CACHE_GRAPHQL_PERSISTED_QUERIES`
+날짜 `CACHE_GRAPHQL_PERSISTED_QUERIES` 은 Dispatcher에 대해 활성화된 다음 `;` 변수 값에는 문자를 사용할 수 없습니다.
 
 ## 지속 쿼리 캐싱 {#caching-persisted-queries}
 
