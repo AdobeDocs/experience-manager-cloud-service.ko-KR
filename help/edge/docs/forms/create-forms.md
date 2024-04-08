@@ -4,7 +4,7 @@ description: 완벽한 양식을 빠르게 제작하십시오. ⚡ AEM Forms Edg
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '805'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ AEM Forms Edge Delivery는 데이터를 캡처하고 캡처한 데이터를 저�
 
 시작하기 전에 다음 단계를 완료했는지 확인하십시오.
 
-* [AEM Forms 상용구를 사용하여 AEM 프로젝트를 설정](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)하거나 [기존 AEM 프로젝트에 적응형 양식 블록을 추가](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)하고 로컬 머신의 해당 GitHub 저장소를 복제합니다.
+* [AEM Forms 상용구를 사용하여 AEM 프로젝트를 설정](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)하거나 [기존 AEM 프로젝트에 적응형 양식 블록을 추가](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)하고 로컬 컴퓨터의 해당 GitHub 저장소를 복제합니다.
 이 문서에서 Edge Delivery Services(EDS) 프로젝트의 로컬 폴더란 `[EDS Project repository]`를 말합니다.
 * Google Sheets 또는 Microsoft SharePoint에 액세스할 수 있는지 확인하십시오. Microsoft SharePoint를 콘텐츠 소스로 설정하려면 [SharePoint 사용 방법](https://www.aem.live/docs/setup-customer-sharepoint)을 참조하십시오.
 

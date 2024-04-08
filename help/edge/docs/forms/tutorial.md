@@ -4,9 +4,9 @@ description: 이 튜토리얼에서는 새로운 AEM(Adobe Experience Manager Fo
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1848'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -129,7 +129,7 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
       https://adobe.SharePoint.com/sites/wkndforms/Shared%20Documents/wefinance
       ```
 
-      Microsoft SharePoint을 사용한 파일 관리에 대한 자세한 내용은 [Adobe SharePoint 사용 방법](https://www.aem.live/docs/setup-customer-sharepoint).
+      Microsoft SharePoint에서의 파일 관리에 대한 자세한 내용은 [Adobe SharePoint 사용 방법](https://www.aem.live/docs/setup-customer-sharepoint)을 확인하십시오.
 
 
    1. 참조를 업데이트했고 모든 항목에 문제가 없으면 업데이트된 `fsatb.yaml` 파일을 커밋합니다. 빌드 문제가 발생하면 [GitHub 빌드 문제 해결](#troubleshooting-github-build-issues)을 참조하십시오.
