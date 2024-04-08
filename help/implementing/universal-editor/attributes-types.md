@@ -2,7 +2,7 @@
 title: 속성 및 항목 유형
 description: 범용 편집기에 필요한 데이터 특성 및 항목 유형에 대해 알아봅니다.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 80%
@@ -67,3 +67,4 @@ Universal Editor에 대해 자세히 알아보려면 다음 문서를 참조하�
 * [AEM에서 Universal Editor 시작하기](getting-started.md) - Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 알아봅니다.
 * [Universal Editor 아키텍처](architecture.md) - Universal Editor의 아키텍처 및 해당 서비스와 계층 간에 데이터가 흐르는 방식에 대해 알아봅니다.
 * [Universal Editor 인증](authentication.md) - Universal Editor의 인증 방법에 대해 알아봅니다.
+

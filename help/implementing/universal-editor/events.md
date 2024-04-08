@@ -1,13 +1,13 @@
 ---
 title: 유니버설 편집기 이벤트
 description: 범용 편집기에서 원격 앱의 콘텐츠 또는 UI 변경 사항에 대응하는 데 사용할 수 있도록 보내는 다양한 이벤트에 대해 알아봅니다.
-source-git-commit: e92a0be2213e3d5793fd077bd1968852336cc98b
+exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 2%
 
 ---
-
 
 # 유니버설 편집기 이벤트 {#events}
 
@@ -279,3 +279,4 @@ ht-degree: 2%
 ## 추가 리소스 {#additional-resources}
 
 * [Universal Editor 호출](/help/implementing/universal-editor/calls.md)
+

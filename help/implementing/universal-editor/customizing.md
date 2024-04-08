@@ -2,7 +2,7 @@
 title: 범용 편집기 작성 경험 사용자 지정
 description: 콘텐츠 작성자의 요구 사항을 지원하도록 범용 편집기의 UI를 사용자 지정할 수 있는 다양한 확장 지점 및 기타 기능에 대해 알아봅니다.
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
-source-git-commit: f04ab32093371ff425c4e196872738867d9ed528
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
@@ -96,3 +96,4 @@ data-aue-filter="container-filter"
 #### 조건 True {#true}
 
 ![표시된 텍스트 필드](assets/shown.png)
+

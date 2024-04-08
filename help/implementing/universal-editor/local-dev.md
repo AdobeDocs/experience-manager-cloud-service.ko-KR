@@ -2,7 +2,7 @@
 title: Universal Editor를 사용하는 로컬 AEM 개발
 description: Universal Editor가 개발 목적으로 로컬 AEM 인스턴스 편집을 지원하는 방법에 대해 알아봅니다.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 61%
@@ -119,3 +119,4 @@ Universal Editor는 페이지 구성 방식에 따라 페이지를 편집하는 
 1. 브라우저를 열고 `https://localhost:8000/corslib/LATEST`으로 이동합니다.
 1. [자체 서명된 인증서](#ue-https)를 허용하도록 브라우저를 내보냅니다.
 1. 자체 서명된 인증서를 신뢰하는 경우 로컬 Universal Editor Service를 사용하여 페이지를 편집할 수 있습니다.
+

@@ -1,5 +1,5 @@
 ---
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 100%
@@ -65,3 +65,4 @@ ht-degree: 100%
 * [양식에 반복 가능한 섹션 추가&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [양식 제출 후 사용자 정의 감사 메시지 표시&#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
 * [적응형 양식 블록 구성 요소 및 해당 속성](/help/edge/docs/forms/form-components.md)
+

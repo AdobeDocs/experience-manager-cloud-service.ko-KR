@@ -2,7 +2,7 @@
 title: AEM 개발자를 위한 유니버설 편집기 개요
 description: 범용 편집기의 작동 방식과 프로젝트에서 사용하는 방법에 관심이 있는 AEM 개발자인 경우, 이 문서는 범용 편집기에서 작동하도록 WKND 프로젝트를 계측하여 전체적인 소개를 제공합니다.
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '3139'
 ht-degree: 1%
@@ -593,3 +593,4 @@ WKND 앱의 페이지 구성 요소에 필요한 JavaScript 라이브러리를 �
 * 문서 보기 [유니버설 편집기 아키텍처](/help/implementing/universal-editor/architecture.md#service) 유니버설 편집기 구조에 대한 자세한 내용을 보려면 여기를 클릭하십시오.
 * 문서 보기 [범용 편집기를 사용한 로컬 AEM 개발](/help/implementing/universal-editor/local-dev.md) 자체 호스팅되는 유니버설 편집기에 연결하는 방법에 대한 자세한 내용은
 * 문서 보기 [Adobe Experience Manager as a Cloud Service에서 Sling 리소스 병합 사용](/help/implementing/developing/introduction/sling-resource-merger.md) 노드 오버레이에 대한 자세한 내용을 보려면 를 클릭하십시오.
+

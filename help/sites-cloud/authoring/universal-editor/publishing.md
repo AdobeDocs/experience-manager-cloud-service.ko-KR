@@ -2,7 +2,7 @@
 title: Universal Editor로 콘텐츠 게시
 description: Universal Editor가 콘텐츠를 게시하는 방식과 앱이 게시된 콘텐츠를 처리하는 방법에 대해 살펴보세요.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 69%
@@ -49,3 +49,4 @@ Universal Editor의 목적은 특정 패턴을 적용하지 않고 구현을 위
 * [Universal Editor 아키텍처](/help/implementing/universal-editor/architecture.md) - Universal Editor의 아키텍처 및 해당 서비스와 계층 간에 데이터가 흐르는 방식에 대해 알아봅니다.
 * [속성 및 유형](/help/implementing/universal-editor/attributes-types.md) - Universal Editor에 필요한 데이터 속성 및 유형에 대해 알아봅니다.
 * [Universal Editor 인증](/help/implementing/universal-editor/authentication.md) - Universal Editor의 인증 방법에 대해 알아봅니다.
+
