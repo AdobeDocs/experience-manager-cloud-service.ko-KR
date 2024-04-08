@@ -2,10 +2,10 @@
 title: 복제
 description: AEM as a Cloud Service으로 배포 및 복제 문제 해결에 대해 알아봅니다.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: 9ab6ac5588b6ca5135e3635cc886ec51207e89d7
 workflow-type: tm+mt
 source-wordcount: '1312'
-ht-degree: 39%
+ht-degree: 38%
 
 ---
 
@@ -196,14 +196,17 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 복제 문제를 해결하려면 AEM 작성자 서비스 웹 UI의 복제 대기열로 이동합니다.
 
-1. AEM 시작 메뉴에서 다음으로 이동합니다. **도구 > 배포 > 배포**
-2. **게시** 카드를 선택합니다.
+1. AEM 시작 메뉴에서 다음으로 이동합니다. **도구** > **배포** > **배포**
+1. **게시** 카드를 선택합니다.
+
    ![상태](assets/publish-status.png "상태")
-3. 녹색으로 표시되어야 하는 대기열 상태를 확인합니다
-4. 복제 서비스에 대한 연결을 테스트할 수 있습니다
-5. 콘텐츠 게시 내역을 표시하는 **로그** 탭을 선택합니다.
+
+1. 녹색으로 표시되어야 하는 대기열 상태를 확인합니다
+1. 복제 서비스에 대한 연결을 테스트할 수 있습니다
+1. 콘텐츠 게시 내역을 표시하는 **로그** 탭을 선택합니다.
 
 ![로그](assets/publish-logs.png "로그")
 
-콘텐츠를 게시할 수 없는 경우에는 전체 게시가 AEM 게시 서비스에서 되돌려집니다.
+콘텐츠를 게시할 수 없는 경우에는 전체 게시가 AEM Publish 서비스에서 되돌려집니다.
+
 이 경우 편집 가능한 기본 대기열에 빨간색 상태가 표시되며 이를 검토하여 어떤 항목이 게시를 취소했는지 확인해야 합니다. 해당 대기열을 클릭하면 보류 중인 항목이 표시되며 필요한 경우 단일 항목 또는 모든 항목을 지울 수 있습니다.
