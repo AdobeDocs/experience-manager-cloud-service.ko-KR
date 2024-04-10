@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: eef58b59cd528743702e3d436acec02dbba58211
+source-git-commit: aaae2986d0b807b34055a48c810c32167d3715d0
 workflow-type: tm+mt
-source-wordcount: '4857'
+source-wordcount: '4862'
 ht-degree: 99%
 
 ---
@@ -93,6 +93,7 @@ ht-degree: 99%
    + Cloud Manager 릴리스 정보 {#cloud-manager}
       + [최신 릴리스 정보](/help/implementing/cloud-manager/release-notes/current.md)
       + 2024 {#2024}
+         + [2024.3.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2024/2024-3-0.md)
          + [2024.2.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2024/2024-2-0.md)
          + [2024.1.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2024/2024-1-0.md)
       + 2023 {#2023}
