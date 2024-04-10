@@ -2,13 +2,13 @@
 title: CDN에서 트래픽 구성
 description: 구성 파일에서 규칙 및 필터를 선언하고 Cloud Manager 구성 파이프라인을 사용하여 CDN에 배포하여 CDN 트래픽을 구성하는 방법에 대해 알아봅니다.
 feature: Dispatcher
-source-git-commit: 0a0c9aa68b192e8e2a612f50a58ba5f9057c862d
+exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
+source-git-commit: 1e2d147aec53fc0f5be53571078ccebdda63c819
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '1109'
 ht-degree: 2%
 
 ---
-
 
 # CDN에서 트래픽 구성 {#cdn-configuring-cloud}
 
@@ -47,6 +47,16 @@ config/
 
 * 두 번째로, `cdn.yaml` 구성 파일에는 아래 예제에 설명된 메타데이터와 규칙이 모두 포함되어야 합니다.
 
+## 구문 {#configuration-syntax}
+
+아래 섹션의 규칙 유형은 일반적인 구문을 공유합니다.
+
+이름, 조건부 &quot;when 절&quot; 및 작업에서 규칙을 참조합니다.
+
+when 절은 도메인, 경로, 쿼리 문자열, 헤더 및 쿠키를 포함한 속성을 기반으로 규칙을 평가할지 여부를 결정합니다. 구문은 규칙 유형에서 동일합니다. 자세한 내용은 다음을 참조하십시오. [조건 구조 섹션](/help/security/traffic-filter-rules-including-waf.md#condition-structure) 트래픽 필터 규칙 문서 를 참조하십시오.
+
+작업 노드의 세부 사항은 규칙 유형에 따라 다르며 아래 개별 섹션에 설명되어 있습니다.
+
 ## 변형 요청 {#request-transformations}
 
 요청 변환 규칙을 사용하면 수신 요청을 수정할 수 있습니다. 규칙은 정규 표현식을 비롯한 다양한 일치 조건을 기반으로 경로, 쿼리 매개 변수 및 헤더(쿠키 포함)의 설정, 설정 해제 및 변경을 지원합니다. 변수를 설정할 수도 있습니다. 그런 다음 평가 시퀀스에서 나중에 참조할 수 있습니다.
@@ -61,7 +71,7 @@ config/
 kind: "CDN"
 version: "1"
 metadata:
-  envTypes: ["prod", "dev"]
+  envTypes: ["dev", "stage", "prod"]
 data:  
   experimental_requestTransformations:
     removeMarketingParams: true
@@ -74,7 +84,7 @@ data:
           - type: set
             reqHeader: x-some-header
             value: some value
- 
+            
       - name: unset-header-rule
         when:
           reqProperty: path
@@ -82,24 +92,7 @@ data:
         actions:
           - type: unset
             reqHeader: x-some-header
- 
-      - name: set-query-param-rule
-        when:
-          reqProperty: path
-          equals: /set-query-param
-        actions:
-          - type: set
-            queryParam: someParam
-            value: someValue
- 
-      - name: unset-query-param-rule
-        when:
-          reqProperty: path
-          equals: /unset-query-param
-        actions:
-          - type: unset
-            queryParam: someParam
- 
+            
       - name: unset-matching-query-params-rule
         when:
           reqProperty: path
@@ -107,7 +100,7 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^removeMe_.*$
- 
+            
       - name: unset-all-query-params-except-exact-two-rule
         when:
           reqProperty: path
@@ -115,61 +108,7 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^(?!leaveMe$|leaveMeToo$).*$
- 
-      - name: set-req-cookie-rule
-        when:
-          reqProperty: path
-          equals: /set-req-cookie
-        actions:
-          - type: set
-            reqCookie: someParam
-            value: someValue
- 
-      - name: unset-req-cookie-rule
-        when:
-          reqProperty: path
-          equals: /unset-req-cookie
-        actions:
-          - type: unset
-            reqCookie: someParam
- 
-      - name: set-variable-rule
-        when:
-          reqProperty: path
-          equals: /set-variable
-        actions:
-          - type: set
-            var: some_var_name
-            value: some value
- 
-      - name: unset-variable-rule
-        when:
-          reqProperty: path
-          equals: /unset-variable
-        actions:
-          - type: unset
-            var: some_var_name
- 
-      - name: replace-segment
-        when:
-          reqProperty: path
-          like: /replace-segment/*
-        actions:
-          - type: replace
-            reqProperty: path
-            match: /replace-segment/
-            value: /segment-was-replaced/
- 
-      - name: replace-extension
-        when:
-          reqProperty: path
-          like: /replace-extension/*.html
-        actions:
-          - type: replace
-            reqProperty: path
-            match: \.html
-            value: ''
- 
+            
       - name: multi-action
         when:
           reqProperty: path
@@ -181,6 +120,17 @@ data:
           - type: set
             reqHeader: x-header2
             value: '201'
+            
+      - name: replace-html
+        when:
+          reqProperty: path
+          like: /mypath
+        actions:
+          - type: transform
+           reqProperty: path
+           op: replace
+           match: \.html$
+           replacement: ""
 ```
 
 **작업**
@@ -189,16 +139,27 @@ data:
 
 | 이름 | 속성 | 의미 |
 |-----------|--------------------------|-------------|
-| **set** | reqHeader, 값 | 지정된 헤더를 지정된 값으로 설정합니다. |
-|     | queryParam, value | 지정된 쿼리 매개 변수를 지정된 값으로 설정합니다. |
-|     | reqCookie, 값 | 지정된 쿠키를 지정된 값으로 설정합니다. |
-|     | var, 값 | 지정된 변수를 지정된 값으로 설정합니다. |
-| **설정 해제** | reqHeader | 지정된 헤더를 제거합니다. |
-|         | queryParam | 지정된 쿼리 매개 변수를 제거합니다. |
-|         | reqCookie | 지정된 쿠키를 제거합니다. |
+| **set** | (reqProperty 또는 reqHeader 또는 queryParam 또는 reqCookie), 값 | 지정된 요청 매개 변수(&quot;path&quot; 속성만 지원됨) 또는 요청 헤더, 쿼리 매개 변수 또는 쿠키를 지정된 값으로 설정합니다. |
+|     | var, 값 | 지정된 요청 속성을 지정된 값으로 설정합니다. |
+| **설정 해제** | reqProperty | 지정된 요청 매개 변수(&quot;path&quot; 속성만 지원됨) 또는 요청 헤더, 쿼리 매개 변수 또는 쿠키를 지정된 값으로 제거합니다. |
 |         | var | 지정된 변수를 제거합니다. |
 |         | queryParammatch | 지정된 정규 표현식과 일치하는 모든 쿼리 매개 변수를 제거합니다. |
-| **replace** | reqProperty, match, value | 요청 속성의 일부를 새 값으로 바꿉니다. 현재는 &quot;path&quot; 속성만 지원됩니다. |
+| **변형** | op:replace, (reqProperty 또는 reqHeader 또는 queryParam 또는 reqCookie), 일치, 대체 | 요청 매개 변수(&quot;path&quot; 속성만 지원됨) 또는 요청 헤더, 쿼리 매개 변수 또는 쿠키의 일부를 새 값으로 바꿉니다. |
+|              | op:tolower, (reqProperty 또는 reqHeader 또는 queryParam 또는 reqCookie) | 요청 매개 변수(&quot;path&quot; 속성만 지원됨) 또는 요청 헤더, 쿼리 매개 변수 또는 쿠키를 소문자 값으로 설정합니다. |
+
+작업은 함께 연결될 수 있습니다. 예:
+
+```
+actions:
+    - type: transform
+      reqProperty: path
+      op: replace
+      match: \.html$
+      replacement: ""
+    - type: transform
+      reqProperty: path
+      op: tolower
+```
 
 ### 변수 {#variables}
 
