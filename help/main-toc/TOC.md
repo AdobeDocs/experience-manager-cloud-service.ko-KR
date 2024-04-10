@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
+source-git-commit: eef58b59cd528743702e3d436acec02dbba58211
 workflow-type: tm+mt
-source-wordcount: '4842'
-ht-degree: 100%
+source-wordcount: '4857'
+ht-degree: 99%
 
 ---
 
@@ -803,6 +803,7 @@ ht-degree: 100%
    + Edge Delivery 애플리케이션 빌드 {#build}
       + [시작하기 - 개발자 튜토리얼](/help/edge/developer/tutorial.md)
       + [프로젝트의 구조](/help/edge/developer/anatomy-of-a-franklin-project.md)
+      + [컬렉션 차단](/help/edge/developer/block-collection.md)
       + [스프레드시트](/help/edge/developer/spreadsheets.md)
       + [Forms](/help/edge/developer/forms.md)
       + [색인화](/help/edge/developer/indexing.md)
@@ -833,6 +834,7 @@ ht-degree: 100%
          + [Google Sheets 또는 Microsoft Excel 파일을 설정하여 데이터 수신 시작&#x200B;](/help/edge/docs/forms/submit-forms.md)
          + [양식 게시 및 데이터 수집 시작](/help/edge/docs/forms/publish-forms.md)
          + [양식 필드에 유효성 검사 추가](/help/edge/docs/forms/validate-forms.md)
+         + [URL에서 양식으로 옵션 로드](/help/edge/docs/forms/load-options-from-url.md)
          + [양식 모양 사용자 정의&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
          + [규칙을 사용하여 양식에 동적 비헤이비어 추가](/help/edge/docs/forms/rules-forms.md)
          + [양식 제출 후 사용자 정의 감사 메시지 표시](/help/edge/docs/forms/thank-you-page-form.md)
@@ -842,6 +844,7 @@ ht-degree: 100%
          + [번역](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [사용자 정의 구성 요소](/help/edge/docs/forms/custom-components-forms.md)
+         + [양식에 대한 실시간 사용자 모니터링](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
       + 참조 {#forms-references}
          + [적응형 양식 블록 구성 요소 및 해당 속성](/help/edge/docs/forms/form-components.md)
    + Edge Delivery용 리소스 {#resources}
@@ -1178,9 +1181,3 @@ ht-degree: 100%
    + 접근성 {#accessibility}
       + [AEM as a Cloud Service 및 웹 접근성 지침](/help/compliance/accessibility/web-accessibility.md)
       + [WCAG 2.1에 대한 빠른 안내서](/help/compliance/accessibility/quick-guide-wcag.md)
-
-
-<!--
-Temporarily remove:
-    + [Block Collection](/help/edge/developer/block-collection.md)
--->
