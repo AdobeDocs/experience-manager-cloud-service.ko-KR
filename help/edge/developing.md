@@ -3,9 +3,9 @@ title: Edge Delivery Services용 개발
 description: Edge Delivery Services와 함께 작동하도록 블록을 개발하고 AEM 프로젝트를 사용자 정의하는 방법을 알아보십시오.
 feature: Edge Delivery Services
 exl-id: c356c03c-af43-43a1-a14e-45f94ccb3970
-source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
+source-git-commit: eef58b59cd528743702e3d436acec02dbba58211
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '257'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ Edge Delivery Services는 블록 개념을 기반으로 합니다. AEM에는 프
 
 AEM은 프로젝트 상용구 내에서 표준 블록을 제품의 일부로 제공합니다. 이러한 블록에는 제목, 텍스트, 이미지, 링크 및 목록 등이 포함됩니다.
 
-<!--Please see the [Build section](/help/edge/developer/block-collection.md) of the Edge Delivery Services documentation for more details on blocks and how to develop for Edge Delivery services.-->
+Edge Delivery Services용 블록 및 개발 방법에 대한 자세한 내용은 Edge Delivery Services 설명서의 [빌드 섹션](/help/edge/developer/block-collection.md)을 참조하십시오.
 
 ## Edge Delivery Services 및 GitHub {#github-edge}
 
@@ -30,4 +30,4 @@ Edge Delivery는 GitHub를 활용하므로 GitHub 저장소에서 바로 코드�
 
 콘텐츠 미리보기부터 프로덕션까지 각 분기별로 웹 사이트가 자동으로 생성됩니다. GitHub 저장소에 저장된 모든 리소스는 빌드 프로세스 없이 웹 사이트에서 제공됩니다.
 
-<!--Please see the [Build section](/help/edge/developer/block-collection.md) of the Edge Delivery Services documentation for more details on blocks and how to develop for Edge Delivery services.-->
+Edge Delivery Services용 블록 및 개발 방법에 대한 자세한 내용은 Edge Delivery Services 설명서의 [빌드 섹션](/help/edge/developer/block-collection.md)을 참조하십시오.
