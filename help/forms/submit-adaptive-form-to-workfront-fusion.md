@@ -6,7 +6,7 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
+source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
 workflow-type: tm+mt
 source-wordcount: '1255'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # Adobe Workfront Fusion에 적응형 양식 제출
 
-<span class="preview"> 이 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 공식 이메일 ID에서 aem-forms-early-adopter-program@adobe.com에 작성하여 얼리어답터 프로그램에 참여하고 기능에 대한 액세스를 요청할 수 있습니다. </span>
+<span class="preview"> 이 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 공식 이메일 ID에서 aem-forms-ea@adobe.com에 작성하여 얼리어답터 프로그램에 참여하고 기능에 대한 액세스를 요청할 수 있습니다. </span>
 
 [Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) 문서 승인 워크플로, 이메일 필터링 및 정렬과 같은 동일한 작업을 반복하는 프로세스를 자동화하여 반복되는 작업 대신 새로운 작업에 집중할 수 있습니다. Adobe Workfront Fusion에는 여러 시나리오가 포함됩니다. 시나리오는 응용 프로그램과 웹 서비스 간에 데이터 전송을 실행하는 일련의 모듈로 구성됩니다. 시나리오에서는 작업을 자동화하기 위해 다양한 단계(모듈)를 추가합니다.
 
