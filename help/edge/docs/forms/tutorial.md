@@ -3,8 +3,8 @@ title: AEM Forms Edge Delivery Services 시작하기 - 개발자 튜토리얼
 description: 이 튜토리얼에서는 새로운 AEM(Adobe Experience Manager Forms) 프로젝트를 시작하고 실행하는 방법을 안내합니다. 10~20분 안에 나만의 양식을 만들 수 있습니다.
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
-source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
-workflow-type: ht
+source-git-commit: 74e3bc79a734bd2c686e28cdcbbda96a58268c77
+workflow-type: tm+mt
 source-wordcount: '1848'
 ht-degree: 100%
 
@@ -192,7 +192,7 @@ AEM Forms 상용구 템플릿을 사용하면 적응형 양식 블록으로 사�
 
 샘플 콘텐츠에는 “enquiry” 양식의 템플릿 역할을 하는 “enquiry” 시트가 포함되어 있습니다. 시트의 각 행은 [양식 필드](/help/edge/docs/forms/form-components.md#available-components)를 나타내며, 열 헤더는 [필드 속성](/help/edge/docs/forms/form-components.md#available-components)을 정의합니다. 이 샘플 양식을 사용하면 양식 작성을 시작하는 데 도움이 됩니다.
 
-![문의 양식](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+![문의 양식](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
 필드 레이블 업데이트부터 시작해 보겠습니다. 편집을 위해 ‘enquiry’ 시트를 열고 제출 버튼 레이블을 `Let's Chat`으로 변경한 다음 AEM Sidekick을 사용하여 파일을 미리 보고 게시합니다.
 

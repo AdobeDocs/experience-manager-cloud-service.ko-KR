@@ -1,7 +1,7 @@
 ---
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+source-git-commit: 61d65c37d263edef641db42589fc0f28a8eb9078
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '302'
 ht-degree: 100%
 
 ---
@@ -50,10 +50,6 @@ ht-degree: 100%
 * [Workfront Fusion에 제출](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Salesforce 애플리케이션에 적응형 양식 연결](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
 * [Microsoft에 적응형 양식 연결](/help/forms/ms-dynamics-odata-configuration.md)
-
-## Edge Delivery Services 얼리 액세스를 통한 AEM 작성 {#aem-authoring-edge-early-access}
-
-[!BADGE 얼리 액세스 기술 - Slack 채널의 AEM Sites Labs에서 제공하는 이 기능에 대해 문의하십시오!]{type=Informative url="/help/edge/docs/slack.md" tooltip="Edge Delivery Services를 사용한 AEM 작성은 얼리 액세스 기술입니다."}
 
 ## 추가 참조 {#see-more-forms-eds}
 

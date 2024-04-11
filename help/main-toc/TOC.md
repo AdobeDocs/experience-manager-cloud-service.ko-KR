@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: aaae2986d0b807b34055a48c810c32167d3715d0
+source-git-commit: b940877abff45e2a9ee046aec74af067007f41c3
 workflow-type: tm+mt
-source-wordcount: '4862'
+source-wordcount: '4850'
 ht-degree: 99%
 
 ---
@@ -790,18 +790,25 @@ ht-degree: 99%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [마이그레이션](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
-+ Edge Delivery Services가 포함된 AEM {#edge-delivery}
-   + [Edge Delivery Services 시작하기](/help/edge/overview.md)
-   + [Edge Delivery 사용](/help/edge/using.md)
-   + [개발자 시작 안내서](/help/edge/edge-dev-getting-started.md)
-   + [Edge Delivery용 콘텐츠 작성](/help/edge/authoring.md)
-   + [Edge Delivery용 콘텐츠 게시](/help/edge/publishing.md)
-   + [Edge Delivery용 개발](/help/edge/developing.md)
-   + [콘텐츠 모델링](/help/edge/content-modeling.md)
-   + [블록 만들기](/help/edge/create-block.md)
-   + [표 형식 데이터 및 스프레드시트](/help/edge/tabular-data.md)
-   + [기존 프로젝트 및 Edge Delivery](/help/edge/existing-projects.md)
-   + Edge Delivery 애플리케이션 빌드 {#build}
++ Edge Delivery Services {#edge-delivery}
+   + [Edge Delivery Services 개요](/help/edge/overview.md)
+   + [AEM에서 Edge Delivery Services 사용](/help/edge/using.md)
+   + AEM 기반 작성 {#aem-authoring}
+      + [Edge Delivery용 콘텐츠 작성](/help/edge/aem-authoring/authoring.md)
+      + [Edge Delivery용 콘텐츠 게시](/help/edge/aem-authoring/publishing.md)
+      + [개발자 시작 안내서](/help/edge/aem-authoring/edge-dev-getting-started.md)
+      + [블록 만들기](/help/edge/aem-authoring/create-block.md)
+      + [콘텐츠 모델링](/help/edge/aem-authoring/content-modeling.md)
+      + [표 형식 데이터 및 스프레드시트](/help/edge/aem-authoring/tabular-data.md)
+      + [기존 프로젝트 및 Edge Delivery](/help/edge/aem-authoring/existing-projects.md)
+   + 문서 기반 작성 {#document-authoring}
+      + [작성](/help/edge/docs/authoring.md)
+      + [대량 메타데이터](/help/edge/docs/bulk-metadata.md)
+      + [플레이스홀더](/help/edge/docs/placeholders.md)
+      + [Sitemap](/help/edge/developer/sitemap.md)
+      + [SharePoint 설정](/help/edge/docs/setup-customer-sharepoint.md)
+      + [Slack 봇](/help/edge/docs/slack.md)
+   + 애플리케이션 구축 {#build}
       + [시작하기 - 개발자 튜토리얼](/help/edge/developer/tutorial.md)
       + [프로젝트의 구조](/help/edge/developer/anatomy-of-a-franklin-project.md)
       + [컬렉션 차단](/help/edge/developer/block-collection.md)
@@ -813,21 +820,14 @@ ht-degree: 99%
       + [Favicon](/help/edge/developer/favicon.md)
       + [사용자 정의 헤더](/help/edge/docs/custom-headers.md)
       + [개발자용 모범 사례](/help/edge/docs/dev-collab-and-good-practices.md)
-   + Edge Delivery 애플리케이션 게시 {#publish}
-      + [작성](/help/edge/docs/authoring.md)
-      + [대량 메타데이터](/help/edge/docs/bulk-metadata.md)
-      + [플레이스홀더](/help/edge/docs/placeholders.md)
-      + [Sitemap](/help/edge/developer/sitemap.md)
-      + [SharePoint 설정](/help/edge/docs/setup-customer-sharepoint.md)
-      + [Slack 봇](/help/edge/docs/slack.md)
-   + Edge Delivery 애플리케이션 론치 {#launch}
+   + 애플리케이션 실행 {#launch}
       + [실행 체크리스트](/help/edge/docs/go-live-checklist.md)
       + [푸시 무효화](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
       + [Cloudflare 작업자 설정](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
       + [Akamai 설정](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Fastly 설정](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [리디렉션](/help/edge/docs/redirects.md)
-   + Edge Delivery 양식 빌드 {#build-forms}
+   + Forms 구축 {#build-forms}
       + [개요](/help/edge/docs/forms/overview.md)
       + 시작하기 {#getting-started-eds-forms}
          + [시작](/help/edge/docs/forms/tutorial.md)
@@ -848,7 +848,7 @@ ht-degree: 99%
          + [양식에 대한 실시간 사용자 모니터링](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
       + 참조 {#forms-references}
          + [적응형 양식 블록 구성 요소 및 해당 속성](/help/edge/docs/forms/form-components.md)
-   + Edge Delivery용 리소스 {#resources}
+   + Edge 게재 리소스 {#resources}
       + Sidekick {#sidekick}
          + [Sidekick 사용](/help/edge/docs/sidekick.md)
          + [확장 기능 설치](/help/edge/docs/sidekick-extension.md)
