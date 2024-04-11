@@ -3,9 +3,9 @@ title: AEM Headless as a Cloud Service 시작하기
 description: 이 AEM Headless 개발자 여정의 부분에서는 AEM Headless 사전 요구 사항에 대해 알아봅니다.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 source-git-commit: 998651bf0529d6a8aab0cd340a1c171974c405f6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3057'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -95,7 +95,7 @@ AEM은 CMS의 전체 Headless 및 기존 전체 스택 또는 Headful 모델을 
 
 단, AEM의 Headless 기능을 이해하고 나서 추가 하이브리드 가능성에 대해 알아야 합니다. 해당 사례는 인지도 제고를 위해 아래에 자세히 설명됩니다. 여정이 끝나고 나서 프로젝트에 이러한 유연성이 필요한 경우 해당 개념에 대해 자세히 소개합니다.
 
-### 이미 단일 페이지 애플리케이션(SPA)과 같은 Headless 콘텐츠를 외부에서 사용하고 있습니다. {#already-have-a-spa}
+### 단일 페이지 애플리케이션(SPA) 등 Headless 콘텐츠는 이미 외부에서 사용되었습니다. {#already-have-a-spa}
 
 AEM의 콘텐츠를 기존 외부 서비스로 제공하는 것이 최소 기본 요구 사항이라고 가정합니다.
 
