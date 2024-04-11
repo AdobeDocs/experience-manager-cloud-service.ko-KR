@@ -3,7 +3,7 @@ title: Edge Delivery Services용 콘텐츠 작성
 description: Edge Delivery Services를 통한 콘텐츠 작성 방법과 Edge Delivery Services를 사용한 AEM 콘텐츠 작성 방법을 알아보십시오.
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
-source-git-commit: b940877abff45e2a9ee046aec74af067007f41c3
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 93%
@@ -56,3 +56,4 @@ AEM 및 Edge Delivery Services를 사용하여 자신의 프로젝트를 작성�
 문서 기반 작성을 사용하는 경우 Microsoft Word 및 Google 문서 문서와 같은 다양한 소스를 사용하여 작업할 수 있습니다. 이러한 소스의 문서는 웹 사이트의 페이지가 됩니다. 제목, 목록, 이미지, 글꼴 요소 및 비디오는 모두 초기 소스에서 내 웹 사이트로 전송할 수 있습니다. SEO 용도로 메타데이터를 추가하거나 블록을 사용하여 구조화된 콘텐츠로 작업하고 기능을 추가할 수 있습니다.
 
 문서 기반 작성에 대한 자세한 내용은 [Edge Delivery Services 설명서의 이 문서](/help/edge/docs/authoring.md)를 참조하십시오.
+

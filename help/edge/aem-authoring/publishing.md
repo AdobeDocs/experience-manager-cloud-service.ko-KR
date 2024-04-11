@@ -3,7 +3,7 @@ title: Edge Delivery Services용 콘텐츠 게시
 description: Edge Delivery Services를 통한 콘텐츠 게시 방법과 Edge Delivery Services를 사용한 AEM 콘텐츠 게시 방법을 알아보십시오.
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
-source-git-commit: b940877abff45e2a9ee046aec74af067007f41c3
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 100%
@@ -39,3 +39,4 @@ Universal Editor를 사용하여 AEM 콘텐츠를 작성하는 경우, Universal
 >[!NOTE]
 >
 >기본적으로 Edge Delivery Services 관리 API는 보호되지 않으며 인증 없이 문서를 게시하거나 게시 취소하는 데 사용될 수 있습니다. [작성자에 대한 인증 구성](https://www.aem.live/docs/authentication-setup-authoring)에 설명된 대로 관리 API에 대한 인증을 구성하려면 게시 서비스에 대한 액세스 권한을 부여하는 API_KEY를 사용하여 프로젝트를 프로비저닝해야 합니다. [Slack의 Adobe 팀에 문의](/help/edge/docs/slack.md)하여 안내를 받으십시오.
+

@@ -2,7 +2,7 @@
 title: Edge Delivery Services 프로젝트를 사용한 AEM 작성을 위한 콘텐츠 모델링
 description: Edge Delivery Services 프로젝트를 통한 AEM 작성 시 콘텐츠 모델링의 작동 방식과 자체 콘텐츠의 모델링 방법에 대해 알아보십시오.
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
-source-git-commit: bf6d0ff2f4aebb6620be46704072743578b096d2
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '2233'
 ht-degree: 93%
@@ -657,3 +657,4 @@ AEM에서 사용할 수 있는 기본 페이지 속성 중 다수는 문서의 �
 >[!TIP]
 >
 >as a Cloud Service을 콘텐츠 소스로 사용하여 AEM AEM 작성이 활성화된 새 Edge Delivery Services 프로젝트 만들기에 대한 전체적인 설명은 을 참조하십시오. [이 AEM GEM 웨비나.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+

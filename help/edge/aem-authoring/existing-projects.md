@@ -3,7 +3,7 @@ title: 기존 AEM 프로젝트와 함께 Edge Delivery Services 사용
 description: 기존 AEM 프로젝트에서 Edge Delivery Services의 이점을 활용하는 방법 알아보기
 feature: Edge Delivery Services
 exl-id: f54aac3a-1d0c-4be0-9aa6-616217e0e458
-source-git-commit: b940877abff45e2a9ee046aec74af067007f41c3
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 100%
@@ -39,3 +39,4 @@ AEM 렌더링된 HTML 출력을 전환하여 Edge Delivery Services로 보내려
 ## 2단계 - Universal Editor로 전환 {#switch-ue}
 
 이 단계에서는 AEM 페이지 편집기가 Universal Editor로 대체됩니다. Universal Editor는 블록에서 직접 작업할 수 있으므로, AEM 핵심 구성 요소 및 전환기가 더 이상 필요하지 않습니다.
+

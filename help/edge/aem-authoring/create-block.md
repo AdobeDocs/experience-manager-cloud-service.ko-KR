@@ -2,7 +2,7 @@
 title: Universal Editor에 사용하도록 구성된 블록 만들기
 description: Edge Delivery Services 프로젝트를 통해 AEM 작성 시 Universal Editor에 사용하도록 구성된 블록을 만드는 방법에 대해 알아봅니다.
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
-source-git-commit: cc41ff626f6fc6d72785401e3ba38b189945bf74
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 93%
@@ -255,3 +255,4 @@ Adobe는 3단계 방식으로 블록을 개발할 것을 권장합니다.
 >[!TIP]
 >
 >as a Cloud Service을 콘텐츠 소스로 사용하여 AEM AEM 작성이 활성화된 새 Edge Delivery Services 프로젝트 만들기에 대한 전체적인 설명은 을 참조하십시오. [이 AEM GEM 웨비나.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+
