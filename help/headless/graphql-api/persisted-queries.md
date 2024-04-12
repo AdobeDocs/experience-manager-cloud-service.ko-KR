@@ -3,10 +3,10 @@ title: 지속 GraphQL 쿼리
 description: 성능을 최적화하기 위해 Adobe Experience Manager as a Cloud Service에서 GraphQL 쿼리를 지속하는 방법을 알아봅니다. HTTP GET 메서드를 사용하여 클라이언트 애플리케이션에서 지속 쿼리를 요청할 수 있으며 응답을 Dispatcher 및 CDN 계층에서 캐시할 수 있으므로 궁극적으로 클라이언트 애플리케이션의 성능이 향상됩니다.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 8b03da83c7f669d9295f7c8a82ce5c97fafe67c8
+source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
 workflow-type: tm+mt
-source-wordcount: '1869'
-ht-degree: 86%
+source-wordcount: '1952'
+ht-degree: 79%
 
 ---
 
@@ -408,7 +408,7 @@ curl -u admin:admin -X POST \
 
 기본적으로 `PersistedQueryServlet`은 실제 결과에 관계없이 쿼리를 실행할 때 `200` 응답을 보냅니다.
 
-**지속 쿼리 서비스 구성**&#x200B;에 대한 [OSGi 설정을 구성](/help/implementing/deploying/configuring-osgi.md)하여 지속 쿼리에 오류가 발생하면 `/execute.json/persisted-query` 엔드포인트에서 반환되는 상태 코드를 제어할 수 있습니다.
+다음을 수행할 수 있습니다. [osgI 설정 구성](/help/implementing/deploying/configuring-osgi.md) 대상: **지속 쿼리 서비스 구성** 더 자세한 상태 코드가 `/execute.json/persisted-query` 끝점: 지속 쿼리에 오류가 있는 경우.
 
 >[!NOTE]
 >
@@ -417,14 +417,20 @@ curl -u admin:admin -X POST \
 필드`Respond with application/graphql-response+json`(`responseContentTypeGraphQLResponseJson`)은 필요에 따라 정의할 수 있습니다.
 
 * `false`(기본값):
-지속 쿼리의 성공 여부는 상관없습니다. `/execute.json/persisted-query`는 상태 코드 `200`을 반환하고 반환되는 `Content-Type` 헤더는 `application/json`입니다.
+지속 쿼리의 성공 여부는 상관없습니다. 다음 `Content-Type` 반환된 헤더는 입니다. `application/json`및 `/execute.json/persisted-query` *항상* 상태 코드 반환 `200`.
 
-* `true`:
-엔드포인트는 지속 쿼리 실행 시 오류가 발생하면 `400` 또는 `500`을 적절하게 반환합니다. 또한 반환된 `Content-Type`은 `application/graphql-response+json`입니다.
+* `true`: 반환된 `Content-Type` 은(는) `application/graphql-response+json`및 지속 쿼리를 실행할 때 어떤 형태의 오류도 발생하는 경우 끝점은 적절한 응답 코드를 반환합니다.
+
+  | 코드 | 설명 |
+  |--- |--- |
+  | 200 | 성공한 응답 |
+  | 400 | 헤더가 누락되었거나 지속 쿼리 경로에 문제가 있음을 나타냅니다. 예를 들어 구성 이름이 지정되지 않았거나 접미사가 지정되지 않았거나 기타.<br>다음을 참조하십시오 [문제 해결 - GraphQL 엔드포인트가 구성되지 않음](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url). |
+  | 404 | 요청한 리소스를 찾을 수 없습니다. 예를 들어 서버에서 Graphql 끝점을 사용할 수 없습니다.<br>다음을 참조하십시오 [문제 해결 - GraphQL 지속 쿼리 URL에 경로가 없음](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured). |
+  | 500 | 내부 서버 오류. 예를 들어 유효성 검사 오류, 지속성 오류 등이 있습니다. |
 
   >[!NOTE]
   >
-  >https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes을 참조하십시오.
+  >https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes 참조
 
 ## 앱에서 사용할 쿼리 URL 인코딩 {#encoding-query-url}
 

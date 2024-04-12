@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
 workflow-type: tm+mt
-source-wordcount: '1587'
+source-wordcount: '1631'
 ht-degree: 3%
 
 ---
@@ -22,6 +22,10 @@ ht-degree: 3%
 ## 개요 {#overview}
 
 다음 [!DNL Assets] HTTP API를 사용하면 를 사용하여 구조화된 컨텐츠와 함께 메타데이터, 렌디션 및 댓글을 포함하여 디지털 에셋에서 만들기-읽기-업데이트-삭제(CRUD) 작업을 수행할 수 있습니다. [!DNL Experience Manager] 컨텐츠 조각. 다음에서 노출됩니다. `/api/assets` REST API로 구현됩니다. 여기에는 다음이 포함됩니다 [콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md).
+
+>[!NOTE]
+>
+>다음 [컨텐츠 조각 및 컨텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md) 사용할 수도 있습니다.
 
 API에 액세스하려면:
 
@@ -40,9 +44,17 @@ A [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) 는 �
 
 자세한 내용은 [에서 콘텐츠 조각 지원 [!DNL Experience Manager Assets] HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md).
 
+>[!NOTE]
+>
+>다음 [컨텐츠 조각 및 컨텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md) 사용할 수도 있습니다.
+
 ## 데이터 모델 {#data-model}
 
 다음 [!DNL Assets] HTTP API는 두 개의 주요 요소, 폴더 및 자산(표준 자산의 경우)을 노출합니다. 또한 콘텐츠 조각의 구조화된 콘텐츠를 설명하는 사용자 지정 데이터 모델에 대해 보다 자세한 요소를 노출합니다. 다음을 참조하십시오 [컨텐츠 조각 데이터 모델](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) 추가 정보.
+
+>[!NOTE]
+>
+>다음 [컨텐츠 조각 및 컨텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md) 사용할 수도 있습니다.
 
 ### 폴더 {#folders}
 
@@ -75,6 +87,10 @@ A [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) 는 �
 * 선택적 주석입니다.
 
 콘텐츠 조각의 요소에 대한 자세한 내용은 [Experience Manager Assets HTTP API의 콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md).
+
+>[!NOTE]
+>
+>다음 [컨텐츠 조각 및 컨텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md) 사용할 수도 있습니다.
 
 위치 [!DNL Experience Manager] 폴더에는 다음 구성 요소가 있습니다.
 

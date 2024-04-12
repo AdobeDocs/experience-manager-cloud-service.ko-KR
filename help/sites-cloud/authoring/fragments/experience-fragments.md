@@ -2,10 +2,10 @@
 title: 경험 조각
 description: Adobe Experience Manager as a Cloud Service 경험 조각을 사용하여 경험을 재사용이 가능하고 및 유연하게 만듭니다.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: 0784bfc2928b218a566fdd252fee045ca5ae6b9c
 workflow-type: tm+mt
-source-wordcount: '2035'
-ht-degree: 97%
+source-wordcount: '2083'
+ht-degree: 95%
 
 ---
 
@@ -38,6 +38,7 @@ Adobe Experience Manager as a Cloud Service 내 경험 조각은
 경험 조각은 복사/붙여넣기가 필요하지 않습니다.
 * 경험 조각을 사용하여 Headless CMS 사용 사례를 지원할 수 있습니다.
 작성자는 작성에만 AEM을 사용하고 고객에게 게재하는 데에는 사용하지 않습니다. 서드파티 시스템/터치포인트는 이러한 경험을 소모한 다음 사용자에게 전달합니다.
+* 포함 [다중 사이트 관리(MSM)](/help/sites-cloud/administering/msm/overview.md): 경험 조각은 페이지의 일부입니다. 개별 조각과 해당 조각이 있는 폴더 모두에 적용됩니다.
 
 >[!NOTE]
 >
@@ -236,6 +237,10 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
    * **변형**
    * **변형을 Live Copy로**.
+
+     >[!NOTE]
+     >
+     >초기 변형을 라이브 카피로 만들면 라이브 카피 소스를 기본 변형으로 사용하여 제목이 상속됩니다.
 
 1. 필수 속성을 정의합니다.
 

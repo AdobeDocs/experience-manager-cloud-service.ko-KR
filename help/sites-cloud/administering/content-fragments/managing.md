@@ -4,10 +4,10 @@ description: 콘솔 및 편집기에서 AEM 콘텐츠 조각을 관리하고, He
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+source-git-commit: 3c550a08983ce198a6718d0c2120f1f5001fb28d
 workflow-type: tm+mt
-source-wordcount: '2620'
-ht-degree: 87%
+source-wordcount: '2629'
+ht-degree: 86%
 
 ---
 
@@ -72,6 +72,8 @@ ht-degree: 87%
 
 선택 **컨텐츠 조각** 새 탭에서 콘솔을 엽니다.
 
+<!-- CQDOC-21349: screenshot -->
+
 ![콘텐츠 조각 콘솔 - 개요](assets/cf-managing-console-overview.png)
 
 여기에서 세 가지 주요 영역을 확인할 수 있습니다.
@@ -84,6 +86,7 @@ ht-degree: 87%
    * 여기에서 폴더 트리를 숨기거나 표시할 수 있습니다.
    * 트리의 특정 분기를 선택할 수 있습니다.
    * 중첩된 폴더를 표시하도록 크기를 조정할 수 있습니다.
+   * 콘텐츠 조각 보기 또는 [에셋](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 * 기본/오른쪽 패널 - 여기에서 다음 작업을 수행할 수 있습니다.
    * 선택한 트리 분기에 있는 모든 콘텐츠 조각 목록을 확인합니다.
       * 선택한 폴더의 콘텐츠 조각이 표시되고 모든 하위 폴더가 표시됩니다.
@@ -132,6 +135,8 @@ ht-degree: 87%
 #### (선택한) 콘텐츠 조각 작업 {#actions-selected-content-fragment}
 
 특정 조각을 선택하면 해당 조각에 사용할 수 있는 작업에 초점을 둔 도구 모음이 열립니다. 여러 조각을 선택할 수도 있습니다. 그에 따라 작업 선택이 조정됩니다.
+
+<!-- CQDOC-21349: screenshot -->
 
 ![콘텐츠 조각 콘솔 - 선택한 조각에 대한 도구 모음](assets/cf-managing-console-fragment-toolbar.png)
 
@@ -373,6 +378,8 @@ ht-degree: 87%
 
 ## 찾기 및 바꾸기 {#find-and-replace}
 
+<!-- CQDOC-21349: screenshot -->
+
 다음 **바꾸기** 맨 위 도구 모음에서 작업을 사용하여 선택한 콘텐츠 조각에서 지정된 텍스트를 찾고 바꿀 수 있습니다.
 
 ![찾기 및 바꾸기](assets/cf-managing-find-replace.png)
@@ -385,8 +392,9 @@ ht-degree: 87%
 >
 >콘텐츠 조각을 20개 이상 선택하면 메시지가 표시됩니다 **찾거나 바꿀 수 없음**.
 
-![바꾸기 확인](assets/cf-managing-confirm-replace.png)
+<!-- CQDOC-21349: screenshot -->
 
+![바꾸기 확인](assets/cf-managing-confirm-replace.png)
 
 ## 조각 삭제 {#deleting-a-fragment}
 
@@ -451,6 +459,8 @@ ht-degree: 87%
 
 선택하면 **필터링 기준** 옵션이 표시됩니다(검색 상자 아래). 여기에서 선택을 취소할 수 있습니다. 예:
 
+<!-- CQDOC-21349: screenshot -->
+
 ![콘텐츠 조각 콘솔 - 필터링](assets/cf-managing-console-filter.png)
 
 ### 빠른 필터링 {#fast-filtering}
@@ -473,9 +483,13 @@ ht-degree: 87%
 
 검색 상자는 전체 텍스트 검색을 지원합니다. 검색 상자에 검색어를 입력합니다.
 
+<!-- CQDOC-21349: screenshot -->
+
 ![콘텐츠 조각 콘솔 - 검색](assets/cf-managing-console-search-specification.png)
 
 선택한 결과가 제공됩니다.
+
+<!-- CQDOC-21349: screenshot -->
 
 ![콘텐츠 조각 콘솔 - 검색 결과](assets/cf-managing-console-search-results.png)
 

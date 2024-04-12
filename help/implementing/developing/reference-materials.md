@@ -2,9 +2,9 @@
 title: API 참조 자료
 description: AEM에는 디지털 경험 프로젝트에 사용할 수 있는 광범위하고 강력한 API가 있습니다.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: 3434d51c9b0bad02b0c3f0836341f671c9405182
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '608'
 ht-degree: 4%
 
 ---
@@ -63,15 +63,16 @@ AEM에서 API를 제공하는 경우 Sling, JCR 및 OSGi보다 선호합니다. 
 
 AEM은 사용자 지정 가능한 구성 요소 및 컨텐츠 전달 옵션을 제공합니다.
 
-| 특별 포함 | 설명 |
+| 기능 | 설명 |
 |---|---|
-| [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) | AEM용 표준화된 웹 콘텐츠 관리(WCM) 구성 요소로 개발 시간을 단축하고 웹 사이트의 유지 관리 비용을 절감합니다. |
+| [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) | AEM용 표준화된 웹 콘텐츠 관리(WCM) 구성 요소로 개발 시간을 단축하고 웹 사이트의 유지 관리 비용을 절감합니다. |
 | [JSON 내보내기](/help/implementing/developing/components/json-exporter.md) | 모든 AEM 페이지의 콘텐츠를 JSON 데이터 모델 형식으로 전달 |
 | [구성 요소에 대해 JSON 내보내기 활성화](/help/implementing/developing/components/enabling-json-exporter.md) | 모델러 프레임워크를 기반으로 구성 요소 콘텐츠의 JSON 내보내기 생성 |
 | [Assets API](/help/assets/mac-api-assets.md) | 바이너리, 메타데이터, 렌디션 및 주석을 포함하여 에셋에서 CRUD(create-read-update-delete) 작업을 수행할 수 있습니다. AEM Assets HTTP API 를 참조하십시오 |
 | [콘텐츠 조각 HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) | CRUD 작업을 통해 HTTP API로 콘텐츠 조각 콘텐츠에 직접 액세스 |
 | [컨텐츠 조각 GraphQL API](/help/headless/graphql-api/content-fragments.md) | Headless CMS 구현에서 JavaScript 클라이언트에 콘텐츠 조각을 효율적으로 게재할 수 있도록 합니다 |
 | [컨텐츠 조각 자산 HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | 지원되는 HTTP 자산 요청의 정확한 형식 |
+| [컨텐츠 조각 및 컨텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md) | 컨텐츠 조각 및 컨텐츠 조각 모델 OpenAPI |
 
 ## SPA 관련 API {#spa-apis}
 

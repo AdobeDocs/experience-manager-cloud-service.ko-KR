@@ -4,10 +4,10 @@ description: AEM의 강력한 Live Copy 및 다중 사이트 관리자 기능을
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 0a4f9edba00e65439a306024c604e6935c8bac47
 workflow-type: tm+mt
-source-wordcount: '2702'
-ht-degree: 96%
+source-wordcount: '2721'
+ht-degree: 95%
 
 ---
 
@@ -141,6 +141,10 @@ MSM은 적절한 콘솔에서 다양한 옵션을 사용하여 UI에서 직접 �
 * **블루프린트** (**도구** - **Sites**)
 
    * 이 콘솔을 통해 [블루프린트 구성을 만들고 관리](creating-live-copies.md#creating-a-blueprint-configuration)할 수 있습니다.
+
+>[!NOTE]
+>
+>MSM은 페이지 및 와 함께 사용할 수 있습니다. [경험 조각](/help/sites-cloud/authoring/fragments/experience-fragments.md) 따라서 이러한 조각은 경험(페이지)의 일부입니다.
 
 >[!NOTE]
 >

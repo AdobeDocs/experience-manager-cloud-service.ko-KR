@@ -2,13 +2,13 @@
 title: 지속 GraphQL 쿼리 문제 해결
 description: Adobe Experience Manager as a Cloud Service에서 지속되는 GraphQL 쿼리와 관련된 문제를 해결하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
-source-git-commit: c8ea9846600d1773e6f269973635f5338f31906f
+exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
+source-git-commit: 220e86f18e4a61304764753d8daecb68503e9fd0
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
-
 
 # 지속 GraphQL 쿼리 문제 해결 {#troubleshoot-persisted-graphql-queries}
 
@@ -34,13 +34,13 @@ GraphQL 지속 쿼리는 종종 기본 콘텐츠 조각 모델의 변경으로 �
 
 ## GraphQL 엔드포인트가 구성되지 않음 {#graphql-endpoint-not-configured}
 
-지속 쿼리가 다음을 반환하는 경우 `400` 또는 `500` 오류 코드 및 정보 `No suitable endpoint found`즉, AEM 환경에 GraphQL 엔드포인트가 구성되지 않습니다.
+지속 쿼리가 다음을 반환하는 경우 `404` 오류 코드 및 정보 `No suitable endpoint found`즉, AEM 환경에 GraphQL 엔드포인트가 구성되지 않습니다.
 
 이 문제를 해결하려면 다음에서 끝점을 활성화하고 게시하는 단계를 따르십시오. [AEM에서 GraphQL 엔드포인트 관리](/help/headless/graphql-api/graphql-endpoint.md).
 
 ## GraphQL 지속 쿼리 URL에 경로가 누락됨 {#missing-path-query-url}
 
-지속 쿼리가 `400` 또는 `500` 오류 코드 및 정보 `Suffix: '/' does not contain a path`, GraphQL 서블릿이 경로 접미사 없이 호출되고 있습니다.
+지속 쿼리가 `400` 오류 코드 및 정보 `Suffix: '/' does not contain a path`, GraphQL 서블릿이 경로 접미사 없이 호출되고 있습니다.
 
 패턴은 다음과 같아야 합니다 `/graphql/execute.json/thePath`.
 

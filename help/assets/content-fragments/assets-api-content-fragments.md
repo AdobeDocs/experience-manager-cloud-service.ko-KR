@@ -3,9 +3,9 @@ title: Assets HTTP API의 Adobe Experience Manager as a Cloud Service 콘텐츠 
 description: Adobe Experience Manager의 Headless 게재 기능의 중요한 부분인 Assets HTTP API의 콘텐츠 조각에 대한 지원에 대해 알아봅니다.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 47666e87b1cb87577291304336e0219481b7b4e2
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1804'
 ht-degree: 11%
 
 ---
@@ -20,6 +20,10 @@ ht-degree: 11%
 | AEM as a Cloud Service | 이 문서 |
 
 Adobe Experience Manager(AEM) Headless 전달 기능의 중요한 부분인 Assets HTTP API의 콘텐츠 조각에 대한 지원에 대해 알아봅니다.
+
+>[!NOTE]
+>
+>다음 [컨텐츠 조각 및 컨텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md) 사용할 수도 있습니다.
 
 >[!NOTE]
 >
@@ -40,7 +44,7 @@ API를 사용하면 JavaScript 프론트엔드 애플리케이션에 컨텐츠 �
 
 예를 들어, [단일 페이지 애플리케이션(SPA)](/help/implementing/developing/hybrid/introduction.md)프레임워크 기반 또는 사용자 지정 에서는 HTTP API를 통해 제공되는 콘텐츠(종종 JSON 형식)가 필요합니다.
 
-While [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 이를 위해 필요한 읽기 작업을 수행할 수 있고 JSON 출력을 사용자 지정할 수 있는 사용자 지정 가능한 API를 제공합니다. 이 API에는 구현을 위한 AEM WCM(Web Content Management) 노하우가 필요합니다. 전용 AEM 템플릿을 기반으로 하는 페이지에서 호스팅해야 하기 때문입니다. 모든 SPA 개발 조직이 이러한 지식에 직접 액세스할 수 있는 것은 아닙니다.
+While [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 이를 위해 필요한 읽기 작업을 수행할 수 있고 JSON 출력을 사용자 지정할 수 있는 사용자 지정 가능한 API를 제공합니다. 이 API에는 구현을 위한 AEM WCM(Web Content Management) 노하우가 필요합니다. 전용 AEM 템플릿을 기반으로 하는 페이지에서 호스팅해야 하기 때문입니다. 모든 SPA 개발 조직이 이러한 지식에 직접 액세스할 수 있는 것은 아닙니다.
 
 이때 Assets REST API를 사용할 수 있습니다. 이를 통해 개발자는 페이지에 에셋을 먼저 임베드할 필요 없이 에셋(예: 이미지 및 콘텐츠 조각)에 직접 액세스하고 콘텐츠를 직렬화된 JSON 형식으로 전달할 수 있습니다.
 
@@ -91,6 +95,10 @@ HTTP 메서드는 실행할 작업을 결정합니다.
 >요청 본문 및/또는 URL 매개변수를 사용하여 해당 작업 중 일부를 구성할 수 있습니다(예: **POST** 요청에 의해 폴더 또는 자산이 생성될 수 있도록 정의).
 
 지원되는 요청의 정확한 형식은 [API 참조](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference) 설명서를 참조하십시오.
+
+>[!NOTE]
+>
+>다음 [컨텐츠 조각 및 컨텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md) 사용할 수도 있습니다.
 
 ### 트랜잭션 동작 {#transactional-behavior}
 
@@ -167,6 +175,10 @@ API를 통해 사용할 수 있는 기능에 대한 자세한 내용은 다음�
 
 * 다음 [Assets REST API](/help/assets/mac-api-assets.md)
 * [엔티티 유형](/help/assets/content-fragments/assets-api-content-fragments.md#entity-types)지원되는 각 유형과 관련된 기능(콘텐츠 조각과 관련)이 설명되어 있습니다
+
+>[!NOTE]
+>
+>다음 [컨텐츠 조각 및 컨텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md) 사용할 수도 있습니다.
 
 ### 페이징 {#paging}
 
@@ -262,6 +274,8 @@ A [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) 는 �
 >[!NOTE]
 >
 >다음을 참조하십시오. [API 참조](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). 특히, [Adobe Experience Manager Assets API - 콘텐츠 조각](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>
+>다음 [컨텐츠 조각 및 컨텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md) 사용할 수도 있습니다.
 
 ## 제한 사항 {#limitations}
 
@@ -352,6 +366,8 @@ A [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) 는 �
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
    * [사용 가능한 기능](/help/assets/mac-api-assets.md#available-features)
+
+* 다음 [컨텐츠 조각 및 컨텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md) 사용할 수도 있습니다.
 
 ## 추가 리소스 {#additional-resources}
 

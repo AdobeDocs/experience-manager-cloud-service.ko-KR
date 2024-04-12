@@ -1,13 +1,14 @@
 ---
 title: 변형 생성
-description: Edge Delivery Services Sidekick에서 액세스할 수 있는 변형 생성에 대해 알아봅니다
+description: AEM as a Cloud Service 및 Edge Delivery Services Sidekick에서 액세스할 수 있는 변형 생성에 대해 알아봅니다.
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
+source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
 workflow-type: tm+mt
-source-wordcount: '3338'
+source-wordcount: '3257'
 ht-degree: 1%
 
 ---
+
 
 # 변형 생성 {#generate-variations}
 
@@ -15,11 +16,12 @@ ht-degree: 1%
 
 다음을 수행할 수 있습니다. [변형 생성 액세스](#access-generate-variations) 출처:
 
-<!-- 
-* [within Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
--->
-
+* [Adobe Experience Manager(AEM as a Cloud Service) 내](#access-aemaacs)
 * [AEM Edge Delivery Services Sidekick](#access-aem-sidekick)
+
+>[!NOTE]
+>
+>모든 경우에 변형 생성을 사용하려면 다음을 확인해야 합니다 [액세스 전제 조건](#access-prerequisites) 이행됩니다.
 
 이후에 다음과 같은 작업을 수행할 수 있습니다.
 
@@ -245,18 +247,19 @@ AEM용 생성 AI 및 변형 생성은 강력한 도구이지만 **본인** 은(�
 
 ![변형 생성 - 음색으로 편집된 프롬프트](assets/generate-variations-prompt-edited.png)
 
-#### 예: 새 드롭다운 필드 추가 - 페이지 유형 {#example-add-new-dropdown-field-page-type}
+<!--
+#### Example: Add new dropdown field - Page Type {#example-add-new-dropdown-field-page-type}
 
-드롭다운 선택을 제공하는 입력 필드 페이지 유형을 만들려면 다음 작업을 수행하십시오.
+To create an input field Page Type providing a dropdown selection:
 
-1. (이)라는 이름의 스프레드시트 만들기 `pagetype.xls` 폴더 구조의 최상위 디렉토리입니다.
-1. 스프레드시트를 편집합니다.
+1. Create a spreadsheet named `pagetype.xls` in the top-level directory of your folder structure.
+1. Edit the spreadsheet:
 
-   1. 두 개의 열을 만듭니다. **키** 및 **값**.
-   1. 다음에서 **키** 열에서 드롭다운에 표시할 레이블을 입력합니다.
-   1. 다음에서 **값** 열, 생성 AI가 컨텍스트를 갖도록 키 값을 설명합니다.
+   1. Create two columns: **Key** and **Value**.
+   1. In the **Key** column, enter labels that will appear in the dropdown.
+   1. In the **Value** column, describe the key value so the generative AI has context.
 
-1. 프롬프트에서 적절한 유형과 함께 스프레드시트의 제목을 참조하십시오.
+1. In your prompt, refer to the title of the spreadsheet along with the appropriate type. 
 
    ```prompt
    {{@page_type, 
@@ -265,6 +268,7 @@ AEM용 생성 AI 및 변형 생성은 강력한 도구이지만 **본인** 은(�
      spreadsheet=pagetype
    }}
    ```
+-->
 
 ## 프롬프트 만들기 {#create-prompt}
 
@@ -390,6 +394,95 @@ Adobe은 사용할 여러 대상을 제공합니다.
 
    ![변형 생성 - 대상 CSV 파일 추가](assets/generate-variations-audiences-csv-save.png)
 
+## 생성 작업 사용 {#generative-action-usage}
+
+사용 관리는 수행한 작업에 따라 다릅니다.
+
+* 변형 생성
+
+  복사 변형의 한 세대는 하나의 생성 작업과 같습니다. 고객은 AEM 라이선스와 함께 제공되는 특정한 수의 생성 작업을 가지고 있습니다. 기본 권한이 사용되면 추가 작업을 구입할 수 있습니다.
+
+  >[!NOTE]
+  >
+  >다음을 참조하십시오 [Adobe Experience Manager: Cloud Service | 제품 설명](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) 기본 권한에 대한 자세한 내용을 알고 싶다면 계정 팀에 문의하십시오.
+
+* Adobe Express
+
+  이미지 생성 사용은 Adobe Express 권한 및 [생성 점수](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
+
+## 변형 생성에 액세스 {#access-generate-variations}
+
+AEM 사전 요구 사항을 충족한 후 as a Cloud Service 또는 Edge Delivery Services Sidekick에서 변형 생성에 액세스할 수 있습니다.
+
+### 사전 요구 사항 액세스 {#access-prerequisites}
+
+변형 생성을 사용하려면 전제 조건이 충족되었는지 확인해야 합니다.
+
+* [Edge Delivery Services을 통한 as a Cloud Service Experience Manager 액세스](#access-to-aemaacs-with-edge-delivery-services)
+
+#### Edge Delivery Services을 통한 as a Cloud Service Experience Manager 액세스{#access-to-aemaacs-with-edge-delivery-services}
+
+변형 생성에 대한 액세스 권한이 필요한 사용자는 Edge Delivery Services이 있는 Experience Manager as a Cloud Service 환경에 대한 권한이 있어야 합니다.
+
+>[!NOTE]
+>
+>AEM Sites as a Cloud Service에 대한 계약에 Edge Delivery Services이 포함되어 있지 않은 경우 액세스 권한을 받으려면 새 계약에 서명해야 합니다.
+>
+>Edge Delivery Services과 함께 AEM Sites으로 as a Cloud Service으로 이동하는 방법에 대해 논의하려면 계정 팀에 문의해야 합니다.
+
+특정 사용자에게 액세스 권한을 부여하려면 해당 제품 프로필에 사용자 계정을 할당합니다. 다음을 참조하십시오 [자세한 내용은 AEM 제품 프로필 할당 을 참조하십시오](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+
+### AEM as a Cloud Service 액세스 {#access-aemaacs}
+
+변형 생성은에서 액세스할 수 있습니다. [탐색 패널](/help/sites-cloud/authoring/basic-handling.md#navigation-panel) / AEM as a Cloud Service:
+
+![탐색 패널](/help/sites-cloud/authoring/assets/basic-handling-navigation.png)
+
+### AEM Sidekick에서 액세스 {#access-aem-sidekick}
+
+(Edge Delivery Services)의 Sidekick에서 변형 생성에 액세스하려면 먼저 일부 구성이 필요합니다.
+
+1. 문서 보기 [AEM Sidekick 설치](https://www.aem.live/docs/sidekick-extension) Sidekick 설치 및 구성 방법에 대해 알아보십시오.
+
+1. (Edge Delivery Services의) Sidekick에서 변형 생성을 사용하려면 아래의 Edge Delivery Services 프로젝트에 다음 구성을 포함하십시오.
+
+   * `tools/sidekick/config.json`
+
+   기존 구성에 병합한 다음 배포해야 합니다.
+
+   예:
+
+   ```prompt
+   {
+     // ...
+     "plugins": [
+       // ...
+       {
+         "id": "generate-variations",
+         "title": "Generate Variations",
+         "url": "https://experience.adobe.com/aem/generate-variations",
+         "passConfig": true,
+         "environments": ["preview","live", "edit"],
+         "includePaths": ["**.docx**"]
+       }
+       // ...
+     ]
+   }
+   ```
+
+1. 그런 다음 사용자에게 다음이 있는지 확인해야 합니다. [Edge Delivery Services을 통한 as a Cloud Service Experience Manager 액세스](#access-to-aemaacs-with-edge-delivery-services).
+
+1. 그런 다음 을 선택하여 기능에 액세스할 수 있습니다. **변형 생성** Sidekick 도구 모음에서 다음 작업을 수행하십시오.
+
+   ![변형 생성 - AEM Sidekicj에서 액세스](assets/generate-variations-sidekick-toolbar.png)
+
+## 추가 정보 {#further-information}
+
+자세한 내용은 다음을 참조하십시오.
+
+* [GitHub에서 GenAI 변형 생성](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
+* [Edge Delivery Services 실험](https://www.aem.live/docs/experimentation)
+
 ## FAQ {#faqs}
 
 ### 형식이 지정된 출력 {#formatted-outpu}
@@ -452,106 +545,7 @@ Adobe은 사용할 여러 대상을 제공합니다.
 
 v2.0.0 릴리스로 이동하면 사용자 정의 프롬프트 템플릿이 중단되어 사용할 수 없게 됩니다.
 
-다음을 참조하십시오. [v2.0.0에 대한 릴리스 노트 를 따르십시오.](#release-notes-2-0-0-retrieve-prompt-templates).
-
-## 생성 작업 사용 {#generative-action-usage}
-
-사용 관리는 수행한 작업에 따라 다릅니다.
-
-* 변형 생성
-
-  복사 변형의 한 세대는 하나의 생성 작업과 같습니다. 고객은 AEM 라이선스와 함께 제공되는 특정한 수의 생성 작업을 가지고 있습니다. 기본 권한이 사용되면 추가 작업을 구입할 수 있습니다.
-
-  >[!NOTE]
-  >
-  >다음을 참조하십시오 [Adobe Experience Manager: Cloud Service | 제품 설명](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) 기본 권한에 대한 자세한 내용을 알고 싶다면 계정 팀에 문의하십시오.
-
-* Adobe Express
-
-  이미지 생성 사용은 Adobe Express 권한 및 [생성 점수](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
-
-## 변형 생성에 액세스 {#access-generate-variations}
-
-<!--
-### Access from AEM as a Cloud Service {#access-aemaacs}
-
-Generate Variations can be accessed from the [Navigation Panel](/help/sites-cloud/authoring/basic-handling.md#navigation-panel) of AEM as a Cloud Service:
-
-![Navigation panel](/help/sites-cloud/authoring/assets/basic-handling-navigation.png)
--->
-
-### AEM Sidekick에서 액세스 {#access-aem-sidekick}
-
-(Edge Delivery Services)의 Sidekick에서 변형 생성에 액세스하려면 먼저 일부 구성이 필요합니다.
-
-1. 문서 보기 [AEM Sidekick 설치](https://www.aem.live/docs/sidekick-extension) Sidekick 설치 및 구성 방법에 대해 알아보십시오.
-
-1. (Edge Delivery Services의) Sidekick에서 변형 생성을 사용하려면 아래의 Edge Delivery Services 프로젝트에 다음 구성을 포함하십시오.
-
-   * `tools/sidekick/config.json`
-
-   기존 구성에 병합한 다음 배포해야 합니다.
-
-   예:
-
-   ```prompt
-   {
-     // ...
-     "plugins": [
-       // ...
-       {
-         "id": "generate-variations",
-         "title": "Generate Variations",
-         "url": "https://experience.adobe.com/aem/generate-variations",
-         "passConfig": true,
-         "environments": ["preview","live", "edit"],
-         "includePaths": ["**.docx**"]
-       }
-       // ...
-     ]
-   }
-   ```
-
-1. 그런 다음 사용자에게 다음이 있는지 확인해야 합니다. [Edge Delivery Services을 통한 as a Cloud Service Experience Manager 액세스](#access-to-aemaacs-with-edge-delivery-services).
-
-1. 그런 다음 을 선택하여 기능에 액세스할 수 있습니다. **변형 생성** Sidekick 도구 모음에서 다음 작업을 수행하십시오.
-
-   ![변형 생성 - AEM Sidekicj에서 액세스](assets/generate-variations-sidekick-toolbar.png)
-
-## Edge Delivery Services을 통한 as a Cloud Service Experience Manager 액세스{#access-to-aemaacs-with-edge-delivery-services}
-
-변형 생성에 대한 액세스 권한이 필요한 사용자는 Edge Delivery Services이 있는 Experience Manager as a Cloud Service 환경에 대한 권한이 있어야 합니다.
-
->[!NOTE]
->
->AEM Sites as a Cloud Service에 대한 계약에 Edge Delivery Services이 포함되어 있지 않은 경우 액세스 권한을 받으려면 새 계약에 서명해야 합니다.
->
->Edge Delivery Services과 함께 AEM Sites으로 as a Cloud Service으로 이동하는 방법에 대해 논의하려면 계정 팀에 문의해야 합니다.
-
-특정 사용자에게 액세스 권한을 부여하려면 해당 제품 프로필에 사용자 계정을 할당합니다. 다음을 참조하십시오 [자세한 내용은 AEM 제품 프로필 할당 을 참조하십시오](/help/journey-onboarding/assign-profiles-cloud-manager.md).
-
-## 추가 참조 {#further-reading}
-
-참고 항목:
-
-* [GitHub에서 GenAI 변형 생성](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
-* [Edge Delivery Services 실험](https://www.aem.live/docs/experimentation)
-
-## 릴리스 정보 {#release-notes}
-
-### 2.0.0  {#release-notes-2-0-0}
-
-* 프롬프트 템플릿을 위한 범용 영구 스토리지가 도입되었습니다.
-* 대상을 위한 새로운 기능
-   * 대상은 Adobe Target에서 직접 읽을 수 있습니다
-   * 업데이트된 CSV 파일 추가 방법
-* 저장 프롬프트 옵션이 있는 대화 상자
-* 이미지를 생성할 때 Adobe Express의 프롬프트가 미리 채워집니다
-* 프롬프트 카드(홈 페이지)에 추가 정보가 표시되며 삭제할 수 있습니다.
-
-#### 2.0.0 - 사용자 지정 프롬프트 템플릿을 검색하는 방법 {#release-notes-2-0-0-retrieve-prompt-templates}
-
-v2.0.0 릴리스로 이동하면 사용자 정의 프롬프트 템플릿이 중단되어 사용할 수 없게 됩니다. 읽어들이려면
+읽어들이려면
 
 1. Sharepoint의 프롬프트 템플릿 폴더로 이동합니다.
 1. 프롬프트를 복사합니다.
@@ -561,20 +555,6 @@ v2.0.0 릴리스로 이동하면 사용자 정의 프롬프트 템플릿이 중�
 1. 프롬프트가 작동하는지 확인합니다.
 1. 프롬프트를 저장합니다.
 
-### 1.0.5 {#release-notes-1-0-5}
+## 릴리스 기록 {#release-history}
 
-* Adobe Express과 통합
-* 편집 프롬프트를 사이드 레일로 이동
-
-### 1.0.4 {#release-notes-1-0-4}
-
-* 내부 개선 사항
-
-### 1.0.3 {#release-notes-1-0-3}
-
-* 왼쪽 탐색 패널 펼치기 또는 숨기기
-* 적은 개선 사항
-
-### 1.0.0 - 1.0.2 {#release-notes-1-0-0-1-0-2}
-
-* 내부 개선 사항
+현재 및 이전 릴리스에 대한 자세한 내용은 [변형 생성을 위한 릴리스 노트](/help/generative-ai/release-notes-generate-variations.md)

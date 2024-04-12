@@ -2,10 +2,10 @@
 title: AEM Headless as a Cloud Service 시작하기
 description: 이 AEM Headless 개발자 여정의 부분에서는 AEM Headless 사전 요구 사항에 대해 알아봅니다.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 998651bf0529d6a8aab0cd340a1c171974c405f6
-workflow-type: ht
-source-wordcount: '3057'
-ht-degree: 100%
+source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
+workflow-type: tm+mt
+source-wordcount: '3068'
+ht-degree: 99%
 
 ---
 
@@ -298,3 +298,4 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 * [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) - 콘텐츠 조각(및 기타 자산)을 만들고 수정하는 방법에 대한 기술 설명서
 * [지속 쿼리](/help/headless/graphql-api/persisted-queries.md) - AEM의 지속 쿼리에 대한 기술 설명서
 * [AEM의 Headful 및 Headless](/help/implementing/developing/headful-headless.md) - AEM에서 사용 가능한 Headless 통합 수준에 대한 전체 설명
+* 다음 [컨텐츠 조각 및 컨텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md) 사용할 수도 있습니다.
