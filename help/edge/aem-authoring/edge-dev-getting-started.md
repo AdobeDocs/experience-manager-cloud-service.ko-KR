@@ -3,10 +3,10 @@ title: Edge Delivery Services를 사용한 AEM 작성을 위한 개발자 시작
 description: 이 안내서는 콘텐츠 작성을 위한 Edge Delivery Services 및 Universal Editor를 사용하여 새로운 Adobe Experience Manager 사이트를 시작하고 실행하는 데 도움이 됩니다.
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
-source-git-commit: 7cd19f674d3eae2bcbe2b40402e135d4db6e3035
+source-git-commit: 8bdca5357666841c4471170ab3b97476b6be63b6
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 88%
+source-wordcount: '1296'
+ht-degree: 87%
 
 ---
 
@@ -130,7 +130,7 @@ Edge Delivery는 GitHub를 활용하므로 GitHub 저장소에서 바로 코드�
 >
 >Universal Editor를 사용하여 사이트를 편집하려면 Chromium 기반 브라우저를 사용해야 합니다.
 
-1. GitHub의 Edge Delivery Services 사이트 템플릿을 사용하여 최신 AEM 작성 다운로드: [`https://github.com/adobe-rnd/aem-boilerplate-xwalk`](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
+1. GitHub의 Edge Delivery Services 사이트 템플릿을 사용하여 최신 AEM 작성 다운로드: [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
 
 1. AEM as a Cloud Service 작성 인스턴스에 로그인하고 사이트 콘솔로 이동하여 **만들기** -> **템플릿으로 사이트 생성**&#x200B;을 탭하거나 클릭합니다.
 
@@ -140,7 +140,7 @@ Edge Delivery는 GitHub를 활용하므로 GitHub 저장소에서 바로 코드�
 
    ![템플릿 가져오기](assets/edge-dev-getting-started/site-templates.png)
 
-1. Adobe Engineering에서 제공한 Edge Delivery Services로 AEM 작성 사이트 템플릿을 업로드하십시오.
+1. GitHub에서 다운로드한 Edge Delivery Services 사이트 템플릿을 사용하여 AEM 작성 을 업로드합니다.
 
    * 템플릿은 한 번만 업로드해야 합니다. 업로드한 후에는 다시 사용하여 추가 사이트를 만들 수 있습니다.
 
