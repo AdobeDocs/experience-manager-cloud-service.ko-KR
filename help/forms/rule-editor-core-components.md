@@ -4,12 +4,20 @@ description: 적응형 Forms 규칙 편집기를 사용하면 코딩 또는 스�
 feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
-source-git-commit: 78b3b11caf143ed147079ef2b3b3ebe5c1beafd7
+exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
+source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
 workflow-type: tm+mt
-source-wordcount: '5755'
+source-wordcount: '5444'
 ht-degree: 0%
 
 ---
+
+
+<span class="preview"> 이 문서에는 일부 프리릴리스 기능에 대한 내용이 포함되어 있습니다. 이러한 프리릴리스 기능은 다음을 통해서만 액세스할 수 있습니다. [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). 프리릴리스 프로그램의 기능은 다음과 같습니다.
+* When-else 기능을 사용하여 중첩된 조건 구현 지원
+* 필드를 포함한 패널 및 양식의 유효성 검사 또는 재설정
+* 사용자 지정 함수 내에서 let 및 arrow 함수(ES10 지원)와 같은 최신 JavaScript 기능을 지원합니다.
+</span>
 
 # 적응형 양식에 규칙 추가(핵심 구성 요소) {#adaptive-forms-rule-editor}
 
@@ -21,19 +29,19 @@ ht-degree: 0%
 * 개체 활성화 또는 비활성화
 * 개체에 대한 값 설정
 * 개체 값의 유효성 검사
-* 개체 값을 계산하는 함수 실행
+* 개체의 값을 계산하는 함수 실행
 * 양식 데이터 모델 서비스 호출 및 작업 수행
 * 개체의 속성 설정
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
-forms-power-users 그룹에 추가된 사용자는 스크립트를 만들고 기존 스크립트를 편집할 수 있습니다. 의 사용자 [!DNL forms-users] 그룹은 스크립트를 사용할 수 있지만 스크립트를 만들거나 편집할 수는 없습니다.
+forms-power-users 그룹 에 추가된 사용자는 스크립트를 만들고 기존 스크립트를 편집할 수 있습니다. 그룹 사용자는 [!DNL forms-users] 스크립트를 사용할 수 있지만 스크립트를 만들거나 편집할 수는 없습니다.
 
 ## 규칙 이해 {#understanding-a-rule}
 
-규칙 은 작업과 조건의 조합입니다. 규칙 편집기에서 작업에는 양식의 개체 값 숨기기, 표시, 활성화, 비활성화 또는 계산과 같은 활동이 포함됩니다. 조건은 양식 객체의 상태, 값 또는 속성 에 대한 검사 및 연산을 수행하여 평가되는 부울 표현식입니다. 작업은 조건을 평가하여 반환된 값( `True` 또는 `False`)에 따라 수행됩니다.
+규칙은 작업과 조건의 조합입니다. 규칙 편집기에서 작업에는 폼의 개체 값 숨기기, 표시, 활성화, 비활성화 또는 계산과 같은 활동이 포함됩니다. 조건은 양식 객체의 상태, 값 또는 속성에 대한 검사 및 작업을 수행하여 평가되는 부울 표현식입니다. 작업은 값 ( )을 기반으로 수행됩니다. `True` 또는 `False`)가 조건을 평가하여 반환되었습니다.
 
-규칙 편집기는 규칙을 작성하는 데 도움이 되도록 When, 보기, Hide, Enable, Disable, Set 값 및 Validate와 같은 미리 정의된 규칙 유형 집합을 제공합니다. 각 규칙 유형을 사용하면 규칙에서 조건과 작업을 정의할 수 있습니다. 이 문서에서는 각 규칙 유형에 대해 자세히 설명합니다.
+규칙 편집기는 규칙을 작성하는 데 도움이 되는 시기, 표시, 숨기기, 활성화, 비활성화, 값 설정 및 유효성 검사와 같은 사전 정의된 규칙 유형 집합을 제공합니다. 각 규칙 유형을 사용하면 규칙에서 조건 및 작업을 정의할 수 있습니다. 이 문서에서는 각 규칙 유형에 대해 자세히 설명합니다.
 
 규칙은 일반적으로 다음 구문 중 하나를 따릅니다.
 
@@ -99,7 +107,7 @@ forms-power-users 그룹에 추가된 사용자는 스크립트를 만들고 기
 
 다음 **[!UICONTROL 날짜]** 규칙 유형은 **condition-action-alternate action** 규칙 구문 또는 경우에 따라 **조건-작용** 구문입니다. 이 규칙 유형에서는 먼저 평가할 조건을 지정하고 조건이 충족되면 트리거할 작업을 지정합니다( `True`). When 규칙 유형을 사용하는 동안 여러 AND 및 OR 연산자를 사용하여 다음을 만들 수 있습니다 [중첩된 표현식](#nestedexpressions).
 
-When 규칙 유형을 사용하여 양식 객체의 조건을 평가하고 하나 이상의 객체에 작업을 수행할 수 있습니다.
+When 규칙 유형을 사용하면 양식 개체에 대한 조건을 평가하고 하나 이상의 개체에 대해 작업을 수행할 수 있습니다.
 
 쉽게 말해, 일반적인 When 규칙은 다음과 같이 구성됩니다.
 
@@ -115,13 +123,13 @@ When 규칙 유형을 사용하여 양식 객체의 조건을 평가하고 하�
 
 오브젝트 C에 대한 작업 2; _
 
-라디오 버튼이나 목록과 같은 다중 값 구성 요소가 있는 경우 해당 구성 요소에 대한 규칙을 만드는 동안 해당 옵션이 자동으로 검색되어 규칙 작성자에게 제공됩니다. 옵션 값을 다시 입력할 필요가 없습니다.
+라디오 버튼이나 목록과 같은 다중 값 구성 요소가 있는 경우 해당 구성 요소에 대한 규칙을 만드는 동안 해당 옵션이 자동으로 검색되어 규칙 작성자에게 제공됩니다. 옵션 값을 다시 입력할 필요는 없습니다.
 
 예를 들어 목록에는 빨간색, 파란색, 녹색 및 노란색의 네 가지 옵션이 있습니다. 규칙을 만드는 동안 옵션(라디오 단추)이 자동으로 검색되어 규칙 작성자가 다음과 같이 사용할 수 있습니다.
 
 ![다중 값 표시 옵션](assets/multivaluefcdisplaysoptions.png)
 
-When 규칙을 작성하는 동안 값 지우기 작업을 트리거할 수 있습니다. [값 지우기] 작업을 수행하면 지정된 객체의 값이 지워집니다. When 문에서 Clear Value를 옵션으로 사용하면 여러 필드가 있는 복잡한 조건을 만들 수 있습니다. Else 문을 추가하여 조건을 추가할 수 있습니다
+When 규칙 작성 중에 값 지우기 작업을 트리거할 수 있습니다. 작업의 값 지우기 지정된 개체의 값을 지웁니다. When 문에서 Clear 값 를 옵션으로 사용하면 여러 필드가 있는 복잡한 조건을 만들 수 있습니다. Else 문을 추가하여 조건을 더 추가할 수 있습니다
 
 ![값 지우기](assets/clearvalueof.png)
 
@@ -131,9 +139,9 @@ When 규칙을 작성하는 동안 값 지우기 작업을 트리거할 수 있�
 
 **[!UICONTROL 숨기기]** 지정된 개체를 숨깁니다.
 
-**** 보기 지정된 개체를 표시합니다.
+**[!UICONTROL 표시]** 지정된 개체를 표시합니다.
 
-**[!UICONTROL 사용]** 지정된 개체를 사용하도록 설정합니다.
+**[!UICONTROL 사용]** 지정된 개체를 활성화합니다.
 
 **[!UICONTROL 사용 안 함]** 지정된 개체를 비활성화합니다.
 
@@ -186,7 +194,7 @@ When 규칙을 작성하는 동안 값 지우기 작업을 트리거할 수 있�
 
 **[!UICONTROL 유효성 검사]** 양식 또는 지정된 개체의 유효성을 검사합니다.
 
-**[!UICONTROL 인스턴스 추가]** 지정된 반복 가능한 패널 또는 테이블 행의 인스턴스를 추가합니다.
+**[!UICONTROL 인스턴스]** 추가: 지정된 반복 가능 패널 또는 테이블 행의 인스턴스 를 추가합니다.
 
 **[!UICONTROL 인스턴스 제거]** 지정된 반복 가능한 패널 또는 테이블 행의 인스턴스를 제거합니다.
 
@@ -207,21 +215,21 @@ When 규칙을 작성하는 동안 값 지우기 작업을 트리거할 수 있�
 
 (문자열 ABC) OR (개체 C의 개체 속성 X) OR (함수의 값) OR (수학 표현식의 값) OR (데이터 모델 서비스의 출력 값);
 
-시기(선택 사항):
+다음과 같은 경우(선택 사항):
 
 (조건 1 및 조건 2 및 조건 3)은 TRUE입니다.
 
-다음 예제에서는 다음 값을 선택합니다. `Question2` 다음으로: `True` 및 값 설정 `Result` 다음으로: `correct`.
+다음 예제에서는 as `True` 의 `Question2` 값을 선택하고 as`correct`의 `Result` 값을 설정합니다.
 
-![Set-value-web-service](assets/set-value-web-service.png)
+![값 웹 서비스 설정](assets/set-value-web-service.png)
 
-양식 데이터 모델 서비스를 사용한 값 설정 규칙의 예입니다.
+양식 데이터 모델 서비스를 사용한 값 규칙 설정의 예.
 
 ### [!UICONTROL 표시] {#show}
 
-사용 **[!UICONTROL 표시]** 규칙 유형을 사용하면 조건 충족 여부에 따라 양식 객체를 표시하거나 숨기는 규칙을 작성할 수 있습니다. 또한 보기 규칙 유형은 조건이 충족되지 않거나 반환 `False`되는 경우 숨기기 작업을 트리거합니다.
+사용 **[!UICONTROL 표시]** 규칙 유형을 사용하면 조건 충족 여부에 따라 양식 객체를 표시하거나 숨기는 규칙을 작성할 수 있습니다. 또한 Show 규칙 유형은 조건이 충족되지 않거나 반환되는 경우 숨기기 작업을 트리거합니다 `False`.
 
-일반적인 보기 규칙는 다음과 같이 구성됩니다.
+일반적인 표시 규칙은 다음과 같이 구성됩니다.
 
 `Show Object A;`
 
@@ -235,7 +243,7 @@ When 규칙을 작성하는 동안 값 지우기 작업을 트리거할 수 있�
 
 ### [!UICONTROL 숨기기] {#hide}
 
-보기 규칙 유형과 마찬가지로 규칙 숨기기&#x200B;]**유형을 사용하여**[!UICONTROL &#x200B;조건이 충족되는지 여부에 따라 양식 개체를 표시하거나 숨기기 수 있습니다. 또한 숨기기 규칙 유형은 조건이 충족되지 않거나 반환 `False`되는 경우 보기 작업을 트리거합니다.
+Show 규칙 유형과 유사한 방식으로 **[!UICONTROL 숨기기]** 조건 충족 여부에 따라 양식 개체를 표시하거나 숨기는 규칙 유형입니다. 또한 Hide 규칙 유형은 조건이 충족되지 않거나 반환되는 경우 Show 작업을 트리거합니다 `False`.
 
 일반적인 숨기기 규칙은 다음과 같이 구성됩니다.
 
@@ -368,7 +376,7 @@ To define a rule based on a form data model:
 
 ### D. 시각적 규칙 편집기 {#visual-rule-editor}
 
-시각적 규칙 편집기는 규칙 편집기 사용자 인터페이스의 시각적 편집기 모드에서 규칙을 작성하는 영역입니다. 규칙 유형을 선택하고 그에 따라 조건 및 작업을 정의할 수 있습니다. 규칙에서 조건 및 작업을 정의할 때 양식 개체 및 함수 창에서 양식 개체 및 함수를 드래그 앤 드롭할 수 있습니다.
+시각적 규칙 편집기는 규칙 편집기 사용자 인터페이스의 시각적 편집기 모드에서 규칙을 작성하는 영역입니다. 이를 통해 규칙 유형을 선택하고 그에 따라 조건과 작업을 정의할 수 있습니다. 규칙에서 조건 및 작업을 정의할 때 양식 개체 및 함수 창에서 양식 개체 및 함수를 드래그 앤 드롭할 수 있습니다.
 
 시각적 규칙 편집기 사용에 대한 자세한 내용은 [규칙 작성](rule-editor.md#p-write-rules-p).
 <!-- 
@@ -387,7 +395,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ### E. 완료 및 취소 단추 {#done-and-cancel-buttons}
 
-다음 **[!UICONTROL 완료]** 버튼을 사용하여 규칙을 저장합니다. 불완전한 규칙을 저장할 수 있습니다. 그러나 불완전한 것은 잘못된 것이며 실행되지 않습니다. 양식 개체에 저장된 규칙은 다음에 동일한 양식 개체에서 규칙 편집기 실행 때 나열됩니다. 해당 보기에서 기존 규칙을 관리할 수 있습니다. 자세한 내용은 규칙](rule-editor.md#p-manage-rules-p) 관리를 참조하세요[.
+다음 **[!UICONTROL 완료]** 버튼을 사용하여 규칙을 저장합니다. 불완전한 규칙을 저장할 수 있습니다. 그러나 미완료는 유효하지 않으며 실행되지 않습니다. 양식 개체에 저장된 규칙은 다음에 동일한 양식 개체에서 규칙 편집기 실행 때 나열됩니다. 해당 보기에서 기존 규칙을 관리 할 수 있습니다. 자세한 내용은 규칙](rule-editor.md#p-manage-rules-p) 관리를 참조하세요[.
 
 다음 **[!UICONTROL 취소]** 단추는 규칙에 대한 모든 변경 사항을 무시하고 규칙 편집기를 닫습니다.
 
@@ -397,7 +405,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 먼저 시각적 편집기를 사용하여 규칙을 작성하는 방법을 살펴보겠습니다.
 
-### 비주얼 편집기 사용 {#using-visual-editor}
+### 시각적 편집기 사용 {#using-visual-editor}
 
 다음 예제 양식을 사용하여 시각적 편집기에서 규칙을 만드는 방법을 살펴보겠습니다.
 
@@ -561,83 +569,83 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### 규칙 편집기의 사용자 정의 함수 {#custom-functions}
 
-규칙 편집기에서 사용자 지정 함수를 사용할 수도 있습니다. 사용자 지정 함수 만들기에 대한 지침은 문서 를 참조하십시오 [적응형 Forms의 사용자 정의 기능](/help/forms/create-and-use-custom-functions.md).
-
-다음과 같은 기본 기능 외에도 *합계* 함수 출력 아래에 나열된 사용자 지정 함수를 자주 사용할 수 있습니다. 작성한 함수에는 `jsdoc` 위에.
-
-동반 `jsdoc` 필수 여부:
-
-* 사용자 지정 구성 및 설명을 원하는 경우
-* 왜냐하면 함수를 선언하는 방법에는 여러 가지가 있습니다. `JavaScript,` 및 주석을 사용하면 함수를 추적할 수 있습니다.
-
-규칙 편집기는 스크립트 및 사용자 지정 함수에 대한 JavaScript ES2015 구문을 지원합니다.
-자세한 내용은 [jsdoc.app](https://jsdoc.app/).
-
-지원됨 `jsdoc` 태그:
-
-* **비공개**
-구문: `@private`
-비공개 함수는 사용자 지정 함수로 포함되지 않습니다.
-
-* **이름**
-구문: `@name funcName <Function Name>`
-또는 `,` 다음을 사용할 수 있습니다. `@function funcName <Function Name>` **또는** `@func` `funcName <Function Name>`.
-  `funcName` 는 함수 이름입니다(공백은 허용되지 않음).
-  `<Function Name>` 는 함수의 표시 이름입니다.
-
-* **매개 변수**
-구문: `@param {type} name <Parameter Description>`
-또는 다음을 사용할 수 있습니다. `@argument` `{type} name <Parameter Description>` **또는** `@arg` `{type}` `name <Parameter Description>`.
-함수에서 사용하는 매개 변수를 표시합니다. 함수는 여러 매개 변수 태그를 가질 수 있으며, 발생 순서로 각 매개 변수에 대해 하나의 태그가 있습니다.
-  `{type}` 매개 변수 유형을 나타냅니다. 허용되는 매개 변수 유형은 다음과 같습니다.
-
-   1. 문자열
-   1. 숫자
-   1. 부울
-   1. 범위
-   1. 문자열[]
-   1. 숫자[]
-   1. 부울[]
-   1. 날짜
-   1. 날짜[]
-   1. 배열
-   1. 개체
-
-  `scope` 는 forms 런타임에서 제공하는 특수 globals 개체를 참조합니다. 이 매개 변수는 마지막 매개 변수여야 하며 규칙 편집기에서 사용자에게 표시되지 않습니다. 범위를 사용하여 읽을 수 있는 양식에 액세스하고 필드 프록시 개체를 사용하여 속성, 규칙을 트리거한 이벤트 및 양식을 조작하는 함수 집합을 읽을 수 있습니다.
-
-  `object` type은 매개 변수의 읽기 가능한 필드 개체를 값을 전달하는 대신 사용자 지정 함수에 전달하는 데 사용됩니다.
-
-  모든 매개변수 유형은 위의 유형 중 하나에 분류됩니다. 지원되지 않습니다. 위의 유형 중 하나를 선택해야 합니다. 유형은 대/소문자를 구분하지 않습니다. 매개 변수 이름에는 공백을 사용할 수 없습니다.  매개 변수 설명에는 여러 단어가 포함될 수 있습니다.
-
-* **선택적 매개 변수**
-구문: `@param {type=} name <Parameter Description>`
-또는 다음을 사용할 수 있습니다. `@param {type} [name] <Parameter Description>`
-기본적으로 모든 매개 변수는 필수입니다. 를 추가하여 매개 변수를 선택 사항으로 표시할 수 있습니다 `=` 매개 변수 형식이나 매개 변수 이름을 대괄호로 묶어 입력합니다.
-
-  예를 들어 다음을 선언하겠습니다. `Input1` 선택적 매개 변수로:
-   * `@param {type=} Input1`
-   * `@param {type} [Input1]`
-
-* **반환 유형**
-구문: `@return {type}`
-또는 다음을 사용할 수 있습니다 `@returns {type}`.
-함수 목적 등 함수에 대한 정보를 추가합니다.
-{type} 함수의 반환 형식을 나타냅니다. 허용되는 반환 유형은 다음과 같습니다.
-
-   1. 문자열
-   2. 숫자
-   3. 부울
-   4. 문자열[]
-   5. 숫자[]
-   6. 부울[]
-   7. 날짜
-   8. 날짜[]
-   9. 배열
-   10. 개체
-
-  다른 모든 반환 유형은 위의 한 가지 유형에 따라 분류됩니다. 지원되지 않습니다. 위의 유형 중 하나를 선택해야 합니다. 반환 유형은 대/소문자를 구분하지 않습니다.
+다음과 같은 기본 기능 외에도 *합계* 아래에 나열되어 있는 **함수 출력**, 규칙 편집기에서 사용자 지정 함수를 사용할 수도 있습니다. 규칙 편집기는 스크립트 및 사용자 지정 함수에 대한 JavaScript ECMAScript 2019 구문을 지원합니다. 사용자 지정 함수 만들기에 대한 지침은 문서 를 참조하십시오 [적응형 Forms의 사용자 정의 기능](/help/forms/create-and-use-custom-functions.md).
 
 <!--
+
+Ensure that the function you write is accompanied by the `jsdoc` above it. Adaptive Form supports the various [JavaScript annotations for custom functions](/help/forms/create-and-use-custom-functions.md#js-annotations).
+
+For more information, see [jsdoc.app](https://jsdoc.app/).
+
+Accompanying `jsdoc` is required:
+
+* If you want custom configuration and description
+* Because there are multiple ways to declare a function in `JavaScript,` and comments let you keep a track of the functions.
+
+Supported `jsdoc` tags:
+
+* **Private**
+  Syntax: `@private`
+  A private function is not included as a custom function.
+
+* **Name**
+  Syntax: `@name funcName <Function Name>`
+  Alternatively `,` you can use: `@function funcName <Function Name>` **or** `@func` `funcName <Function Name>`.
+  `funcName` is the name of the function (no spaces allowed).
+  `<Function Name>` is the display name of the function.
+
+* **Parameter**
+  Syntax: `@param {type} name <Parameter Description>`
+  Alternatively, you can use: `@argument` `{type} name <Parameter Description>` **or** `@arg` `{type}` `name <Parameter Description>`.
+  Shows parameters used by the function. A function can have multiple parameter tags, one tag for each parameter in the order of occurrence.
+  `{type}` represents parameter type. Allowed parameter types are:
+
+    1. string
+    2. number
+    3. boolean
+    4. scope
+    5. string[]
+    6. number[]
+    7. boolean[]
+    8. date
+    9. date[]
+    10. array
+    11. object
+
+   `scope` refers to a special globals object which is provided by forms runtime. It must be the last parameter and is not be visible to the user in the rule editor. You can use scope to access readable form and field proxy object to read properties, event which triggered the rule and a set of functions to manipulate the form.
+
+   `object` type is used to pass readable field object in parameter to a custom function instead of passing the value.
+
+   All parameter types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Types are not case-sensitive. Spaces are not allowed in the parameter name.  Parameter description can have multiple words.
+
+* **Optional Parameter**
+Syntax: `@param {type=} name <Parameter Description>` 
+Alternatively, you can use: `@param {type} [name] <Parameter Description>`
+By default all parameters are mandatory. You can mark a parameter optional by adding `=` in type of the parameter or by putting param name in square brackets.
+   
+   For example, let us declare `Input1` as optional parameter:
+    * `@param {type=} Input1`
+    * `@param {type} [Input1]`
+
+* **Return Type**
+  Syntax: `@return {type}`
+  Alternatively, you can use `@returns {type}`.
+  Adds information about the function, such as its objective.
+  {type} represents the return type of the function. Allowed return types are:
+
+    1. string
+    2. number
+    3. boolean
+    4. string[]
+    5. number[]
+    6. boolean[]
+    7. date
+    8. date[]
+    9. array
+    10. object
+
+  All other return types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Return types are not case-sensitive.
+
 **Adding a custom function**
 
 For example, you want to add a custom function which calculates area of a square. Side length is the user input to the custom function, which is accepted using a numeric box in your form. The calculated output is displayed in another numeric box in your form. To add a custom function, you have to first create a client library, and then add it to the CRX repository.
@@ -645,7 +653,7 @@ For example, you want to add a custom function which calculates area of a square
 To create a client library and add it in the CRX repository, perform the following steps:
 
 1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
-1. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
+2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
    >

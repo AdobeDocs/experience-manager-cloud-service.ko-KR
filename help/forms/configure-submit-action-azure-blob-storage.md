@@ -3,15 +3,15 @@ Title: How to connect AEM Adaptive Forms with Azure Blob Storage?
 Description: Learn how to create an Azure Blob Storage Configuration in AEM Forms and use it within your Adaptive Forms for efficient data storage.
 keywords: Azure Blob Storage와 AEM Forms 통합, Azure Storage에 데이터 제출, AEM Forms에서 Azure 스토리지 구성 만들기, 적응형 Forms 제출 작업에서 Azure Blob 스토리지 사용
 feature: Adaptive Forms, Core Components
-source-git-commit: 8784c0bcd05eeae41a472faa5ecad03cbdd8a9b6
+source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
 workflow-type: tm+mt
 source-wordcount: '451'
-ht-degree: 66%
+ht-degree: 68%
 
 ---
 
 
-# Azure Blob 스토리지에 적응형 양식 제출
+# Azure Blob Storage에 적응형 양식 제출
 
 **[!UICONTROL Azure Blob Storage에 제출]** 제출 액션은 적응형 양식을 Microsoft® Azure 포털과 연결합니다. 양식 데이터, 파일, 첨부 파일 또는 기록 문서를 연결된 Azure Storage 컨테이너에 제출할 수 있습니다.
 
@@ -44,6 +44,15 @@ AEM Forms를 Azure Storage 컨테이너에 연결하려면
 1. **[!UICONTROL 제목]**, **[!UICONTROL Azure Storage 계정]** 및 **[!UICONTROL Azure 액세스 키]**&#x200B;를 지정합니다.
 
    * Microsoft® Azure 포털의 스토리지 계정에서 `Azure Storage Account` 이름과 `Azure Access key`를 검색할 수 있습니다.
+<!--
+
+    >[!NOTE]
+    >
+    > The URL for **[!UICONTROL Azure Blob Endpoint]** is automatically appended to the textbox when a value is entered for **[!UICONTROL Azure Storage Account]**. You can update the Azure Blob End Point URL with your custom domain. Steps to update URL for **[!UICONTROL Azure Blob End Point]**:
+    > 1. [Enable the AEM Advance Networking VPN support](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
+    > 1. [Enable dedicated egress IP link](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
+    > 1. [Map custom domain to azure blob storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-custom-domain-name?tabs=azure-portal)
+-->
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 

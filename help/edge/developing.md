@@ -3,7 +3,7 @@ title: Edge Delivery Services용 개발
 description: Edge Delivery Services와 함께 작동하도록 블록을 개발하고 AEM 프로젝트를 사용자 정의하는 방법을 알아보십시오.
 feature: Edge Delivery Services
 exl-id: c356c03c-af43-43a1-a14e-45f94ccb3970
-source-git-commit: 5c03e13ef895299294dec67301ac859f8c1d6763
+source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 100%
