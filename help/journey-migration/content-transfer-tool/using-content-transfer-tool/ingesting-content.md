@@ -2,9 +2,9 @@
 title: 클라우드 서비스에 콘텐츠 수집
 description: Cloud Acceleration Manager 를 사용하여 마이그레이션 세트의 컨텐츠를 대상 Cloud Service 인스턴스로 수집하는 방법을 알아봅니다.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: de05abac3620b254343196a283cef198f434cfca
+source-git-commit: 727fbc49657de752ac6daeb38b5a9d7aba331a5c
 workflow-type: tm+mt
-source-wordcount: '2752'
+source-wordcount: '2876'
 ht-degree: 11%
 
 ---
@@ -60,6 +60,19 @@ Cloud Acceleration Manager를 사용하여 마이그레이션 세트를 수집�
 
    >[!IMPORTANT]
    > 로컬 환경에 속해 있는 경우에만 대상 환경에 대한 수집을 시작할 수 있습니다 **AEM 관리자** 대상 Cloud Service 작성자 서비스의 그룹입니다. 수집을 시작할 수 없는 경우 다음을 참조하십시오. [수집을 시작할 수 없음](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) 을 참조하십시오.
+
+1. 수집 선택 사항을 선택하면 예상 기간이 표시됩니다. 이는 유사한 수집의 내역 데이터를 기반으로 한 최적 예상 작업입니다.
+
+   * 이 추정치는 추출의 &#39;Check Size&#39; 값이 수집되고 사용 가능한 경우에만 계산되어 표시됩니다.
+   * 이 값은 예상치이며, 지능적으로 계산되지만 정확하게 간주해서는 안 됩니다. 다양한 요인들이 실제 기간을 변화시킬 수 있다.
+   * 수집이 실행되는 동안 이 값은 &quot;&quot;를 통해 액세스하는 기간 대화 상자에서도 사용할 수 있습니다.**기간 보기**&quot;수집 작업.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_estimate"
+>title="수집 기간 예상"
+>abstract="특정 수집의 대략적인 지속 시간을 표시하여 소요 시간에 대한 일반적인 정보를 제공할 수 있습니다. 정확성에 대한 제한이 있습니다."
+
+![이미지](/help/journey-migration/content-transfer-tool/assets/estimate.png)
 
 1. 클릭 **수집**.
 
