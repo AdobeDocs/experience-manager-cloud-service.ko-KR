@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
+source-git-commit: 0ef1e1915f2fdbe44cff209851eb43cc9d69958e
 workflow-type: tm+mt
-source-wordcount: '2285'
-ht-degree: 30%
+source-wordcount: '2261'
+ht-degree: 31%
 
 ---
 
@@ -32,11 +32,13 @@ ht-degree: 30%
 
 [ 여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
 
-## 릴리스 비디오 {#release-video}
+<!-- ## Release Video {#release-video}
 
-2024년 3월 릴리스 개요 비디오를 통해 2024.3.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
+Have a look at the March 2024 Release Overview video for a summary of the features added in the 2024.3.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425864?quality=12)
+
+-->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -170,8 +172,6 @@ Assets Essentials을 통해 관리자는 저장소에서 사용할 수 있는 �
    * 서명을 입력하면 화면 판독기 사용자는 서명을 만드는 데 사용되는 텍스트를 들을 수 있습니다.
 
 이 업데이트는 스크리블 서명 구성 요소에 대한 탐색, 명확성 및 피드백을 개선하여 장애가 있는 사용자에게 보다 포괄적인 경험을 제공합니다.
-
-
 
 ### 얼리 어답터 프로그램 {#forms-early-adopter}
 
