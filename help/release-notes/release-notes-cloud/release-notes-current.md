@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: af9e30ffb585619d1581db94d3961f561e12df2b
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
 source-wordcount: '2261'
 ht-degree: 31%
@@ -134,22 +134,22 @@ Assets Essentials을 통해 관리자는 저장소에서 사용할 수 있는 �
 
   이제 다음을 수행하여 사용자 정의 기능 상호 작용을 간소화할 수 있습니다.
 
-   * 새 주석을 활용하여 더 명확한 함수 정의를 제공합니다.
-   * 사용자 지정 함수에 캐싱 메커니즘을 사용하여 양식 성능 향상
-   * 사용자 지정 함수 내에서 전역 개체와 원활하게 작업할 수 있습니다.
-   * 사용자 지정 함수 내에서 선택적 매개 변수를 정의하고 활용합니다.
+   * [새 주석을 활용하여 더 명확한 함수 정의 제공](/help/forms/create-and-use-custom-functions.md#supported-javascript-annotations-for-custom-function).
+   * [사용자 정의 함수에 캐싱 메커니즘을 사용하여 양식 성능 향상](/help/forms/create-and-use-custom-functions.md#caching-support-for-custom-function).
+   * [사용자 지정 함수 내에서 전역 개체와 원활하게 작업](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
+   * [사용자 지정 함수 내에서 선택적 매개 변수 정의 및 활용](/help/forms/create-and-use-custom-functions.md#parameter).
 
   또한 이 업데이트에서는 규칙 편집기 기능이 다음과 같이 개선되었습니다. 다음과 같은 작업을 수행할 수 있습니다.
 
-   * 조건부 실행에 강력한 &quot;when-then-else&quot; 논리를 구현합니다.
+   * 강력한 구현 [&quot;when-then-else&quot;](/help/forms/rule-editor-core-components.md#when) 조건부 실행에 대한 논리
    * let 및 arrow 함수와 같은 최신 JavaScript 기능을 활용할 수 있습니다(ES10 지원).
    * 필드뿐만 아니라 전체 패널 및 양식의 유효성을 검사하거나 재설정하여 사용자 상호 작용에 대한 제어를 확장합니다.
 
   이러한 향상된 기능은 시각적 규칙 편집기 내에서 규칙 및 사용자 지정 함수를 만드는 데 보다 직관적이고 강력한 경험을 제공합니다.
 
-* **적응형 양식의 여러 버전 만들기**: 이제 기존 양식의 변형을 쉽게 관리할 수 있습니다. 이를 통해 간소화된 단일 워크플로우 내에서 버전 제어를 단순화하고 양식 최적화를 위한 비교를 용이하게 할 수 있습니다.
+* **[적응형 양식의 여러 버전 만들기](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)**: 이제 기존 양식의 변형을 쉽게 관리할 수 있습니다. 이를 통해 간소화된 단일 워크플로우 내에서 버전 제어를 단순화하고 양식 최적화를 위한 비교를 용이하게 할 수 있습니다.
 
-* **적응형 양식 비교**: 이제 두 양식을 쉽게 비교하여 두 양식 간의 차이점을 식별할 수 있습니다. 팀원이 수정 사항을 비교하고 변경 사항을 효율적으로 논의할 수 있도록 하여 원활한 협업을 촉진합니다.
+* **[적응형 양식 비교](/help/forms/compare-forms.md)**: 이제 두 양식을 쉽게 비교하여 두 양식 간의 차이점을 식별할 수 있습니다. 팀원이 수정 사항을 비교하고 변경 사항을 효율적으로 논의할 수 있도록 하여 원활한 협업을 촉진합니다.
 
 * **스크리블 서명 구성 요소의 접근성 개선**: 이 업데이트는 스크리블 서명 구성 요소에 상당한 접근성을 개선합니다.
 
@@ -179,7 +179,7 @@ Assets Essentials을 통해 관리자는 저장소에서 사용할 수 있는 �
 
   <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> Adobe Workfront Fusion Connector를 사용하면 적응형 양식 제출 시 자동으로 트리거되는 워크플로를 디자인할 수 있습니다. 예를 들어 워크플로우가 시작되어 특정 개인에게 제출된 데이터를 검토하는 작업을 할당하여 적응형 양식을 통해 캡처된 정보를 기반으로 애플리케이션에 대한 승인 또는 거부를 허용하는 시나리오를 구상할 수 있습니다. 이 간소화된 통합은 효율성을 높이고 워크플로우 프로세스에 새로운 수준의 자동화를 제공합니다.|
 
-* **Reader 확장 서비스**: AEM Forms Communication API를 사용하면 Reader 확장 서비스를 통해 일반 PDF에게 양식 채우기 및 댓글 달기와 같은 기능을 추가하여 무료 Adobe Reader을 사용하는 사용자와 상호 작용할 수 있습니다.
+* **[Reader 확장 서비스](/help/forms/aem-forms-cloud-service-communications-introduction.md#reader-extension-service)**: AEM Forms Communication API를 사용하면 Reader 확장 서비스를 통해 일반 PDF에게 양식 채우기 및 댓글 달기와 같은 기능을 추가하여 무료 Adobe Reader을 사용하는 사용자와 상호 작용할 수 있습니다.
 
 * [오른쪽에서 왼쪽 방향 언어 지원](/help/forms/supporting-new-language-localization-core-components.md): 이제 핵심 구성 요소를 기반으로 구축된 적응형 양식을 아랍어, 페르시아어, 우르두어와 같은 오른쪽에서 왼쪽 방향(RTL) 언어로 표시할 수 있습니다. RTL 언어의 사용자는 전 세계적으로 20억 명이 넘습니다. RTL 언어로 된 양식을 사용하면 적응형 양식의 범위를 확장하여 더 다양성 높게 대상자를 수용하고 RTL 시장을 선택할 수 있습니다. 특정 지역에서는 현지 언어로 양식을 제공하는 것이 법적 의무이기도 합니다. 현지 언어를 수용함으로써 더 많은 대상자에게 접근할 수 있을 뿐만 아니라 관련 법률 및 규정을 준수할 수 있습니다.
 

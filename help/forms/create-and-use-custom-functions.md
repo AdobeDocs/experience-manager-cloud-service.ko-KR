@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '3039'
+source-wordcount: '3108'
 ht-degree: 2%
 
 ---
@@ -42,102 +42,112 @@ AEM Forms은 사용자 정의 함수를 지원하므로 사용자가 복잡한 �
 
 JavaScript 주석은 JavaScript 코드에 대한 메타데이터를 제공하는 데 사용됩니다. 여기에는 /** 및 @ 등의 특정 기호로 시작하는 주석이 포함됩니다. 주석은 함수, 변수 및 코드의 기타 요소에 대한 중요한 정보를 제공합니다. 적응형 양식은 사용자 정의 기능에 대한 다음 JavaScript 주석을 지원합니다.
 
-* **이름**
+#### 이름
+
 이 이름은 적응형 양식의 규칙 편집기에서 사용자 지정 기능을 식별하는 데 사용됩니다. 다음 구문을 사용하여 사용자 지정 함수의 이름을 지정합니다.
-   * `@name [functionName] <Function Name>`
-   * `@function [functionName] <Function Name>`
-   * `@func [functionName] <Function Name>`
-     `functionName` 는 함수의 이름입니다. 공백은 허용되지 않습니다.
-     `<Function Name>` 는 적응형 양식의 규칙 편집기에 있는 함수의 표시 이름입니다.
+
+* `@name [functionName] <Function Name>`
+* `@function [functionName] <Function Name>`
+* `@func [functionName] <Function Name>`
+  `functionName` 는 함수의 이름입니다. 공백은 허용되지 않습니다.
+  `<Function Name>` 는 적응형 양식의 규칙 편집기에 있는 함수의 표시 이름입니다.
 함수 이름이 함수 자체의 이름과 동일한 경우 를 생략할 수 있습니다 `[functionName]` 구문을 통해 알 수 있습니다. <!-- For example,  in the `calculateAge` custom function, the name is defined as:
 `* @name calculateAge` -->
 
-* **매개 변수**
+#### 매개변수
+
 매개 변수는 사용자 지정 함수에서 사용하는 인수 목록입니다. 함수는 여러 매개 변수를 지원할 수 있습니다. 다음 구문을 사용하여 사용자 지정 함수에서 매개 변수를 정의할 수 있습니다.
-   * `@param {type} name <Parameter Description>`
-   * `@argument` `{type} name <Parameter Description>`
-   * `@arg` `{type}` `name <Parameter Description>`.
-     `{type}` 매개 변수 유형을 나타냅니다.  허용되는 매개 변수 유형은 다음과 같습니다.
-      * string: 단일 문자열 값을 나타냅니다.
-      * number: 단일 숫자 값을 나타냅니다.
-      * 부울: 단일 부울 값(true 또는 false)을 나타냅니다.
-      * 문자열[]: 문자열 값의 배열을 나타냅니다.
-      * 숫자[]: 숫자 값의 배열을 나타냅니다.
-      * 부울[]: 부울 값의 배열을 나타냅니다.
-      * date: 단일 날짜 값을 나타냅니다.
-      * 날짜[]: 날짜 값의 배열을 나타냅니다.
-      * array: 다양한 유형의 값을 포함하는 일반 배열을 나타냅니다.
-      * object: 값을 직접 전달하는 대신 사용자 지정 함수에 전달되는 양식 개체를 나타냅니다.
-      * 범위: 런타임에 사용자 지정 함수에서 사용하는 전역 개체를 나타냅니다. 이 매개 변수는 JavaScript 주석에서 마지막 매개 변수로 선언되며 적응형 양식의 규칙 편집기에 표시되지 않습니다. 범위 매개 변수는 양식 또는 구성 요소의 개체에 액세스하여 양식 처리에 필요한 규칙이나 이벤트를 트리거합니다.
 
-  매개 변수 형식은 대/소문자를 구분하지 않으며 매개 변수 이름에는 공백을 사용할 수 없습니다.
+* `@param {type} name <Parameter Description>`
+* `@argument` `{type} name <Parameter Description>`
+* `@arg` `{type}` `name <Parameter Description>`.
+  `{type}` 매개 변수 유형을 나타냅니다.  허용되는 매개 변수 유형은 다음과 같습니다.
+   * string: 단일 문자열 값을 나타냅니다.
+   * number: 단일 숫자 값을 나타냅니다.
+   * 부울: 단일 부울 값(true 또는 false)을 나타냅니다.
+   * 문자열[]: 문자열 값의 배열을 나타냅니다.
+   * 숫자[]: 숫자 값의 배열을 나타냅니다.
+   * 부울[]: 부울 값의 배열을 나타냅니다.
+   * date: 단일 날짜 값을 나타냅니다.
+   * 날짜[]: 날짜 값의 배열을 나타냅니다.
+   * array: 다양한 유형의 값을 포함하는 일반 배열을 나타냅니다.
+   * object: 값을 직접 전달하는 대신 사용자 지정 함수에 전달되는 양식 개체를 나타냅니다.
+   * 범위: 런타임에 사용자 지정 함수에서 사용하는 전역 개체를 나타냅니다. 이 매개 변수는 JavaScript 주석에서 마지막 매개 변수로 선언되며 적응형 양식의 규칙 편집기에 표시되지 않습니다. 범위 매개 변수는 양식 또는 구성 요소의 개체에 액세스하여 양식 처리에 필요한 규칙이나 이벤트를 트리거합니다.
 
-  `<Parameter Description>` 에는 매개 변수의 용도에 대한 세부 사항이 포함되어 있습니다. 여러 단어가 있을 수 있습니다.
+    매개 변수 형식은 대/소문자를 구분하지 않으며 매개 변수 이름에는 공백을 사용할 수 없습니다.
+    
+    `&lt;parameter description=&quot;&quot;>` 에는 매개 변수의 용도에 대한 세부 정보가 포함되어 있습니다. 여러 단어가 있을 수 있습니다.
+    
+    기본적으로 모든 매개 변수는 필수입니다. 매개 변수 유형 뒤에 &#39;=&#39;를 추가하거나 매개 변수 이름을 &#39;[]&#39;에 묶어 매개 변수를 선택 사항으로 정의할 수 있습니다. JavaScript 주석에서 선택 사항으로 정의된 매개 변수는 규칙 편집기에서 선택 사항으로 표시됩니다.
+    변수를 선택적 매개 변수로 정의하려면 다음 구문 중 하나를 사용할 수 있습니다.
+    
+    * `@param {type=} Input1`
+    
+    위의 코드 행에서 &#39;Input1&#39;은 기본값이 없는 선택적 매개 변수입니다. 선택적 매개 변수를 기본값으로 선언하려면 다음을 수행합니다.
+    `@param {string=&lt;value>} 입력1`
+    
+    기본값이 &#39;value&#39;로 설정된 선택적 매개 변수로서의 &#39;input1&#39;.
+    
+    * `@param {type} [Input1]`
+    
+    위의 코드 행에서 &#39;Input1&#39;은 기본값이 없는 선택적 매개 변수입니다. 선택적 매개 변수를 기본값으로 선언하려면 다음을 수행합니다.
+    `@param {array} [input1=&lt;value>]`
+    &#39;input1&#39;은 기본값이 &#39;value&#39;로 설정된 배열 유형의 선택적 매개변수입니다.
+    매개 변수 형식이 중괄호로 묶여 있는지 확인합니다. {} 매개 변수 이름은 대괄호 []로 묶습니다.
+    
+    input2가 선택적 매개 변수로 정의된 다음 코드 스니펫을 고려하십시오.
+    
+    &quot;javascript
+    
+    /**
+    * 선택적 매개 변수 함수
+    * @name OptionalParameterFunction
+    * @param {string} input1
+    * @param {string=} input2
+    * @return {string}
+    */
+    함수 OptionalParameterFunction(input1, input2) {
+    let result = &quot;Result: &quot;;
+    결과 += 입력1;
+    가정 (입력2 !== null) {
+    결과 += &quot; &quot; + input2;
+    }
+    반환 결과;
+    }
+    &quot;
+    
+    다음 그림은 규칙 편집기에서 &#39;OptionalParameterFunction&#39; 사용자 정의 기능을 사용하여 표시됩니다.
+    
+    &lt;!>— ![선택적 또는 필수 매개 변수 ](/help/forms/assets/optional-default-params.png) —>
+    
+    필수 매개 변수에 대한 값을 지정하지 않고 규칙을 저장할 수 있지만, 규칙이 실행되지 않고 다음과 같은 경고 메시지가 표시됩니다.
+    
+    &lt;!>— ![불완전한 규칙 경고](/help/forms/assets/incomplete-rule.png) —>
+    
+    사용자가 선택적 매개 변수를 비워두면 &quot;정의되지 않음&quot; 값이 선택적 매개 변수에 대한 사용자 지정 함수에 전달됩니다.
 
-  기본적으로 모든 매개 변수는 필수입니다. 다음을 추가하여 매개 변수를 선택 사항으로 정의할 수 있습니다 `=` 매개 변수 형식 뒤에 또는 매개 변수 이름을 바깥쪽으로  `[]`. JavaScript 주석에서 선택 사항으로 정의된 매개 변수는 규칙 편집기에서 선택 사항으로 표시됩니다.
-변수를 선택적 매개 변수로 정의하려면 다음 구문 중 하나를 사용할 수 있습니다.
+#### 반환 유형
 
-   * `@param {type=} Input1`
-위의 코드 행에서 `Input1` 는 기본값이 없는 선택적 매개 변수입니다. 선택적 매개 변수를 기본값으로 선언하려면 다음을 수행합니다.
-     `@param {string=<value>} input1`
-
-     `input1` 기본값이 로 설정된 선택적 매개 변수로 `value`.
-
-   * `@param {type} [Input1]`
-위의 코드 행에서 `Input1` 는 기본값이 없는 선택적 매개 변수입니다. 선택적 매개 변수를 기본값으로 선언하려면 다음을 수행합니다.
-     `@param {array} [input1=<value>]`
-     `input1` 는 기본값이 로 설정된 배열 유형의 선택적 매개 변수입니다. `value`.
-매개 변수 형식이 중괄호로 묶여 있는지 확인합니다. {} 매개 변수 이름은 대괄호로 묶습니다 [].
-
-     input2가 선택적 매개 변수로 정의된 다음 코드 스니펫을 고려하십시오.
-
-     ```javascript
-          /**
-          * optional parameter function
-          * @name OptionalParameterFunction
-          * @param {string} input1 
-          * @param {string=} input2 
-          * @return {string}
-         */
-         function OptionalParameterFunction(input1, input2) {
-         let result = "Result: ";
-         result += input1;
-         if (input2 !== null) {
-             result += " " + input2;
-         }
-         return result;
-         }
-     ```
-
-     다음 그림은 를 사용하여 표시됩니다. `OptionalParameterFunction` 규칙 편집기의 사용자 지정 함수:
-
-     ![선택적 또는 필수 매개 변수](/help/forms/assets/optional-default-params.png)
-
-     필수 매개 변수에 대한 값을 지정하지 않고 규칙을 저장할 수 있지만, 규칙이 실행되지 않고 다음과 같은 경고 메시지가 표시됩니다.
-
-     ![불완전한 규칙 경고 메시지](/help/forms/assets/incomplete-rule.png)
-
-     사용자가 선택적 매개 변수를 비워두면 &quot;정의되지 않음&quot; 값이 선택적 매개 변수에 대한 사용자 지정 함수에 전달됩니다.
-
-* **반환 유형**
 반환 형식은 사용자 지정 함수가 실행 후 반환하는 값의 형식을 지정합니다. 다음 구문을 사용하여 사용자 지정 함수에서 반환 유형을 정의합니다.
-   * `@return {type}`
-   * `@returns {type}`
-     `{type}` 함수의 반환 형식을 나타냅니다. 허용되는 반환 유형은 다음과 같습니다.
-      * string: 단일 문자열 값을 나타냅니다.
-      * number: 단일 숫자 값을 나타냅니다.
-      * 부울: 단일 부울 값(true 또는 false)을 나타냅니다.
-      * 문자열[]: 문자열 값의 배열을 나타냅니다.
-      * 숫자[]: 숫자 값의 배열을 나타냅니다.
-      * 부울[]: 부울 값의 배열을 나타냅니다.
-      * date: 단일 날짜 값을 나타냅니다.
-      * 날짜[]: 날짜 값의 배열을 나타냅니다.
-      * array: 다양한 유형의 값을 포함하는 일반 배열을 나타냅니다.
-      * object: 값 대신 양식 개체를 직접 나타냅니다.
 
-     반환 형식은 대/소문자를 구분하지 않습니다.
+* `@return {type}`
+* `@returns {type}`
+  `{type}` 함수의 반환 형식을 나타냅니다. 허용되는 반환 유형은 다음과 같습니다.
+   * string: 단일 문자열 값을 나타냅니다.
+   * number: 단일 숫자 값을 나타냅니다.
+   * 부울: 단일 부울 값(true 또는 false)을 나타냅니다.
+   * 문자열[]: 문자열 값의 배열을 나타냅니다.
+   * 숫자[]: 숫자 값의 배열을 나타냅니다.
+   * 부울[]: 부울 값의 배열을 나타냅니다.
+   * date: 단일 날짜 값을 나타냅니다.
+   * 날짜[]: 날짜 값의 배열을 나타냅니다.
+   * array: 다양한 유형의 값을 포함하는 일반 배열을 나타냅니다.
+   * object: 값 대신 양식 개체를 직접 나타냅니다.
 
-* **비공개**
+  반환 형식은 대/소문자를 구분하지 않습니다.
+
+#### 비공개
+
 private으로 선언된 사용자 지정 함수는 적응형 양식의 규칙 편집기에서 사용자 지정 함수 목록에 표시되지 않습니다. 기본적으로 사용자 지정 함수는 공개입니다. 사용자 지정 함수를 private으로 선언하는 구문은 다음과 같습니다. `@private`.
 
 JSDocs에서 선택적 매개 변수를 정의하는 방법에 대해 자세히 알아보려면 [여기를 클릭하십시오](https://jsdoc.app/tags-param).
@@ -390,7 +400,7 @@ jsdoc 주석을 사용하거나 사용하지 않고 사용자 지정 함수를 �
 
 ```javascript
     
-	/**
+    /**
     * enablePanel
     * @name enablePanel
     * @param {object} field1

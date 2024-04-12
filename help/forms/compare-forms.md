@@ -4,10 +4,11 @@ description: 필드, 콘텐츠 및 양식 구성 요소를 기반으로 두 개�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
 hidefromtoc: true
-source-git-commit: 4e60d7315fe7a92d608f0858a7108f7590e9aefa
+exl-id: ce4ad231-a766-4ab0-8649-20cf16bf54ce
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 10%
+source-wordcount: '153'
+ht-degree: 9%
 
 ---
 
@@ -21,6 +22,11 @@ ht-degree: 10%
 
    ![적응형 양식 비교](compare-two-forms.png)
 
-1. 을 클릭하면 이미지에 표시된 대로 미리보기 모드에서 두 개의 양식을 볼 수 있습니다.
+1. 클릭하면 미리보기 모드에서 두 개의 양식이 표시됩니다. 첫 번째 양식을 두 번째 양식과 비교할 기본 양식으로 선택하고 유사 분화된 두 양식 간의 내용을 비교합니다. 첫 번째 양식의 차별화된 콘텐츠는 그림과 같이 녹색으로 표시됩니다.
 
    ![비교된 양식](compared-forms.png)
+
+## 추가 참조 {#see-also}
+
+{{see-also}}
+

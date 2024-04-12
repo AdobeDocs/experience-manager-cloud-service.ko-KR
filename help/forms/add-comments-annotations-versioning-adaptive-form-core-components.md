@@ -4,9 +4,9 @@ description: 적응형 양식 핵심 구성 요소를 사용하여 적응형 양
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
 hidefromtoc: true
-source-git-commit: 4e60d7315fe7a92d608f0858a7108f7590e9aefa
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '593'
 ht-degree: 2%
 
 ---
@@ -77,7 +77,7 @@ https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/cont
 1. 다음을 클릭합니다. **추가 아이콘** 이미지에 제공된 대로 오른쪽 상단 레일에 위치합니다.
    ![주석](annotation.png)
 
-1. 다음을 클릭합니다. **추가 아이콘** 이미지에 제공된 대로 왼쪽 상단 레일에 위치하여 표기법을 추가합니다.
+1. 다음을 클릭합니다. **추가 아이콘** 주석을 추가할 때 이미지에 주어지는 대로 왼쪽 상단 레일에 위치합니다.
    ![주석 추가](add-annotation.png)
 
 1. 이제 주석을 추가하고 여러 색상으로 스케치를 그려 구성 요소를 형성할 수 있습니다.
@@ -86,13 +86,6 @@ https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/cont
 
    ![추가된 주석 보기](see-annotations.png)
 
+## 추가 참조 {#see-also}
 
-
-
-
-
-
-
-
-
-
+{{see-also}}

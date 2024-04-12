@@ -1,8 +1,8 @@
 ---
-source-git-commit: 61d65c37d263edef641db42589fc0f28a8eb9078
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 100%
+source-wordcount: '314'
+ht-degree: 99%
 
 ---
 # 스니펫 {#snippets}
@@ -36,6 +36,9 @@ ht-degree: 100%
 * [적응형 양식 데이터를 REST 엔드포인트로 보내기](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [적응형 양식 데이터를 AEM 워크플로로 보내기](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [Forms 포털을 사용하여 AEM 웹 사이트에 AEM 적응형 양식 나열](/help/forms/configure-forms-portal.md)
+* [적응형 양식에 버전 관리, 댓글 및 주석 추가](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
+* [적응형 Forms 비교](/help/forms/compare-forms.md)
+
 
 ## 적응형 양식 제출 액션 {#af-submit-action}
 
