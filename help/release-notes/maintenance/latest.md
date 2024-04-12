@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 1dd2eae9201c86d2cdac78ff99634eff8ca57a05
 workflow-type: tm+mt
 source-wordcount: '272'
-ht-degree: 75%
+ht-degree: 85%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 75%
 
 다음은 2024년 4월 10일에 공개적으로 릴리스된 유지 보수 릴리스 15860에 대한 지속적인 개선 사항을 요약했습니다. 이전 유지 관리 릴리스는 릴리스 15787.
 
-이 유지 관리 릴리스(2024.3.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)을 참조하십시오.
+이 유지 관리 릴리스(2024.3.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ko-KR)을 참조하십시오.
 
 ### 개선 사항 {#enhancements-15860}
 
@@ -31,11 +31,11 @@ ht-degree: 75%
 
 없음.
 
-### 더 이상 사용되지 않는 기능 및 API {#deprecated-15860}
+### 사용 중단된 기능 및 API {#deprecated-15860}
 
 * [Adobe Developer Console에서 JWT 자격 증명 사용 중단](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 
-다음을 살펴보십시오 [사용이 중단되거나 제거된 기능 및 API](/help/release-notes/deprecated-removed-features.md) AEM as a Cloud Service에서 더 이상 사용되지 않거나 제거된 항목을 알아봅니다.
+AEM as a Cloud Service에서 더 이상 사용되지 않거나 제거된 기능을 살펴보려면 [사용 중단된 기능 및 API](/help/release-notes/deprecated-removed-features.md)를 확인하십시오.
 
 ### 변경 사항 공지 {#change-notice-15860}
 
