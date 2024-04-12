@@ -4,9 +4,9 @@ description: 콘솔 및 편집기에서 AEM 콘텐츠 조각을 관리하고, He
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 3c550a08983ce198a6718d0c2120f1f5001fb28d
+source-git-commit: 404eb317562f974f72820c6e3aa019fbe043d7f7
 workflow-type: tm+mt
-source-wordcount: '2629'
+source-wordcount: '2643'
 ht-degree: 86%
 
 ---
@@ -454,6 +454,7 @@ ht-degree: 86%
 * 조건자 선택
    * 콘텐츠 조각 모델, 지역화, 태그, 상태 필드 등 포함
    * 하나 이상의 조건자를 선택하고 결합하여 필터를 만들 수 있음
+* **하위 폴더 항목 제외**, 하위 폴더에 저장된 콘텐츠 조각을 제외할 수 있는 옵션 제공
 * 구성 **저장** 옵션
 * 재사용을 위해 저장된 검색 필터를 검색할 수 있는 옵션
 

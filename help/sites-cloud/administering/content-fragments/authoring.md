@@ -4,10 +4,10 @@ description: 콘텐츠 조각용 콘텐츠를 작성하고 목적에 따라 해�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: 6353bd50c1df43d9ce11616f71a69d8bfb5ab338
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2381'
+ht-degree: 87%
 
 ---
 
@@ -370,6 +370,27 @@ ht-degree: 0%
 >콘텐츠 조각이 게시되면 새 버전이 생성됩니다.
 
 ![콘텐츠 조각 편집기 - 버전 내력 개요](assets/cf-authoring-version-history-overview.png)
+
+### 버전 비교 {#compare-version}
+
+콘텐츠 조각의 경우 이전 버전을 현재 버전과 비교할 수 있습니다.
+
+이전 버전을 현재 버전과 비교하려면
+
+1. 버전 옆에 있는 점 세 개 아이콘을 선택합니다.
+
+1. 선택 **비교**.
+
+![콘텐츠 조각 편집기 - 버전 기록 비교](assets/cf-authoring-version-history-compare.png)
+
+이렇게 하면 현재 버전의 컨텐츠와 선택한 이전 버전의 컨텐츠 조각 간의 차이점을 표시하는 보기가 열립니다. 다음에서 **변경 사항이 포함된 변형** 드롭다운에서 기본 콘텐츠 및/또는 변형의 콘텐츠와의 차이점을 표시하도록 선택할 수 있습니다.
+
+차이점은 색상으로 표시됩니다.
+
+* 녹색: (현재 버전에) 추가된 콘텐츠를 나타냅니다.
+* 빨간색: (현재 버전에서) 제거된 콘텐츠를 나타냅니다.
+
+![콘텐츠 조각 편집기 - 버전 기록 버전 비교](assets/cf-authoring-version-history-compare-versions.png)
 
 ### 버전으로 되돌리기 {#revert-version}
 
