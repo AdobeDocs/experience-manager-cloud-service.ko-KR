@@ -3,10 +3,11 @@ title: 디지털 자산 관리
 description: ' [!DNL Assets view]에서 자산을 이동하고, 삭제하고, 복사하고, 이름을 변경하고, 업데이트 및 버전을 관리합니다.'
 role: User,Leader
 contentOwner: AG
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
+source-git-commit: e2a0e93a4ff01d9a180fcf1ad097ccbfb354fc0f
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 92%
+source-wordcount: '1062'
+ht-degree: 88%
 
 ---
 
@@ -28,6 +29,7 @@ ht-degree: 92%
 * ![복사 아이콘](assets/do-not-localize/copy-icon.png) 선택한 파일 또는 폴더를 복사합니다.
 * ![이동 아이콘](assets/do-not-localize/move-icon.png) 선택한 자산 또는 폴더를 저장소 계층의 다른 위치로 이동합니다.
 * ![이름 바꾸기 아이콘](assets/do-not-localize/rename-icon.png) 선택한 자산 또는 폴더의 이름을 변경합니다. 고유한 이름을 사용하지 않으면 경고 메시지가 표시되며 이름 바꾸기에 실패합니다. 새 이름으로 다시 시도할 수 있습니다.
+또한 에셋 또는 폴더의 제목을 클릭하여 이름을 변경할 수 있습니다. 에서 새 텍스트 언급 **에셋 이름 바꾸기** 텍스트 상자 및 클릭 **저장**. 이 기능은 격자, 갤러리, 폭포 및 목록 보기에서 사용할 수 있습니다. <!--in-place rename-->
 * ![작업 할당 아이콘](assets/do-not-localize/review-delegate-icon.png) 다른 사용자에게 작업을 할당하여 에셋에 대해 공동 작업을 수행합니다.
 
 에셋 썸네일에서 동일한 옵션을 볼 수 있습니다.
