@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 593a2b2930093d29a22f6c1ff391c11db9bda7dc
+source-git-commit: 9582cd8c7777544fde5d13fcd79cfec318e3f780
 workflow-type: tm+mt
 source-wordcount: '3104'
 ht-degree: 2%
@@ -50,8 +50,7 @@ JavaScript 주석은 JavaScript 코드에 대한 메타데이터를 제공하는
 * `@func [functionName] <Function Name>`
   `functionName` 는 함수의 이름입니다. 공백은 허용되지 않습니다.
   `<Function Name>` 는 적응형 양식의 규칙 편집기에 있는 함수의 표시 이름입니다.
-함수 이름이 함수 자체의 이름과 동일한 경우 를 생략할 수 있습니다 `[functionName]` 구문을 통해 알 수 있습니다. <!-- For example,  in the `calculateAge` custom function, the name is defined as:
-`* @name calculateAge` -->
+함수 이름이 함수 자체의 이름과 동일한 경우 를 생략할 수 있습니다 `[functionName]` 구문을 통해 알 수 있습니다.
 
 #### 매개변수
 
