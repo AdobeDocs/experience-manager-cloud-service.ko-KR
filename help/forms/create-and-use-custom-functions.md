@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
+source-git-commit: 3ed500d0c7a9a445e3417043da3d52632760ccdb
 workflow-type: tm+mt
-source-wordcount: '3108'
+source-wordcount: '3104'
 ht-degree: 2%
 
 ---
@@ -72,59 +72,61 @@ JavaScript 주석은 JavaScript 코드에 대한 메타데이터를 제공하는
    * 날짜[]: 날짜 값의 배열을 나타냅니다.
    * array: 다양한 유형의 값을 포함하는 일반 배열을 나타냅니다.
    * object: 값을 직접 전달하는 대신 사용자 지정 함수에 전달되는 양식 개체를 나타냅니다.
-   * 범위: 런타임에 사용자 지정 함수에서 사용하는 전역 개체를 나타냅니다. 이 매개 변수는 JavaScript 주석에서 마지막 매개 변수로 선언되며 적응형 양식의 규칙 편집기에 표시되지 않습니다. 범위 매개 변수는 양식 또는 구성 요소의 개체에 액세스하여 양식 처리에 필요한 규칙이나 이벤트를 트리거합니다.
+   * 범위: 사용자 지정 함수 내에서 양식을 수정하는 방법, 양식 인스턴스, 대상 필드 인스턴스와 같은 읽기 전용 변수를 포함하는 globals 개체를 나타냅니다. 이 매개 변수는 JavaScript 주석에서 마지막 매개 변수로 선언되며 적응형 양식의 규칙 편집기에 표시되지 않습니다. 범위 매개 변수는 양식 또는 구성 요소의 개체에 액세스하여 양식 처리에 필요한 규칙이나 이벤트를 트리거합니다. Globals 개체 및 사용 방법에 대한 자세한 내용은 [여기를 클릭하십시오](/help/forms/create-and-use-custom-functions.md#support-field-and-global-objects).
 
-    매개 변수 형식은 대/소문자를 구분하지 않으며 매개 변수 이름에는 공백을 사용할 수 없습니다.
-    
-    `&lt;parameter description=&quot;&quot;>` 에는 매개 변수의 용도에 대한 세부 정보가 포함되어 있습니다. 여러 단어가 있을 수 있습니다.
-    
-    기본적으로 모든 매개 변수는 필수입니다. 매개 변수 유형 뒤에 &#39;=&#39;를 추가하거나 매개 변수 이름을 &#39;[]&#39;에 묶어 매개 변수를 선택 사항으로 정의할 수 있습니다. JavaScript 주석에서 선택 사항으로 정의된 매개 변수는 규칙 편집기에서 선택 사항으로 표시됩니다.
-    변수를 선택적 매개 변수로 정의하려면 다음 구문 중 하나를 사용할 수 있습니다.
-    
-    * `@param {type=} Input1`
-    
-    위의 코드 행에서 &#39;Input1&#39;은 기본값이 없는 선택적 매개 변수입니다. 선택적 매개 변수를 기본값으로 선언하려면 다음을 수행합니다.
-    `@param {string=&lt;value>} 입력1`
-    
-    기본값이 &#39;value&#39;로 설정된 선택적 매개 변수로서의 &#39;input1&#39;.
-    
-    * `@param {type} [Input1]`
-    
-    위의 코드 행에서 &#39;Input1&#39;은 기본값이 없는 선택적 매개 변수입니다. 선택적 매개 변수를 기본값으로 선언하려면 다음을 수행합니다.
-    `@param {array} [input1=&lt;value>]`
-    &#39;input1&#39;은 기본값이 &#39;value&#39;로 설정된 배열 유형의 선택적 매개변수입니다.
-    매개 변수 형식이 중괄호로 묶여 있는지 확인합니다. {} 매개 변수 이름은 대괄호 []로 묶습니다.
-    
-    input2가 선택적 매개 변수로 정의된 다음 코드 스니펫을 고려하십시오.
-    
-    &quot;javascript
-    
-    /**
-    * 선택적 매개 변수 함수
-    * @name OptionalParameterFunction
-    * @param {string} input1
-    * @param {string=} input2
-    * @return {string}
-    */
-    함수 OptionalParameterFunction(input1, input2) {
-    let result = &quot;Result: &quot;;
-    결과 += 입력1;
-    가정 (입력2 !== null) {
-    결과 += &quot; &quot; + input2;
-    }
-    반환 결과;
-    }
-    &quot;
-    
-    다음 그림은 규칙 편집기에서 &#39;OptionalParameterFunction&#39; 사용자 정의 기능을 사용하여 표시됩니다.
-    
-    &lt;!>— ![선택적 또는 필수 매개 변수 ](/help/forms/assets/optional-default-params.png) —>
-    
-    필수 매개 변수에 대한 값을 지정하지 않고 규칙을 저장할 수 있지만, 규칙이 실행되지 않고 다음과 같은 경고 메시지가 표시됩니다.
-    
-    &lt;!>— ![불완전한 규칙 경고](/help/forms/assets/incomplete-rule.png) —>
-    
-    사용자가 선택적 매개 변수를 비워두면 &quot;정의되지 않음&quot; 값이 선택적 매개 변수에 대한 사용자 지정 함수에 전달됩니다.
+매개 변수 형식은 대/소문자를 구분하지 않으며 매개 변수 이름에는 공백을 사용할 수 없습니다.
+
+`<Parameter Description>` 에는 매개 변수의 용도에 대한 세부 사항이 포함되어 있습니다. 여러 단어가 있을 수 있습니다.
+
+**선택적 매개 변수**
+기본적으로 모든 매개 변수는 필수입니다. 다음을 추가하여 매개 변수를 선택 사항으로 정의할 수 있습니다 `=` 매개 변수 형식 뒤에 또는 매개 변수 이름을 바깥쪽으로  `[]`. JavaScript 주석에서 선택 사항으로 정의된 매개 변수는 규칙 편집기에서 선택 사항으로 표시됩니다.
+변수를 선택적 매개 변수로 정의하려면 다음 구문 중 하나를 사용할 수 있습니다.
+
+* `@param {type=} Input1`
+
+위의 코드 행에서 `Input1` 는 기본값이 없는 선택적 매개 변수입니다. 선택적 매개 변수를 기본값으로 선언하려면 다음을 수행합니다.
+`@param {string=<value>} input1`
+
+`input1` 기본값이 로 설정된 선택적 매개 변수로 `value`.
+
+* `@param {type} [Input1]`
+
+위의 코드 행에서 `Input1` 는 기본값이 없는 선택적 매개 변수입니다. 선택적 매개 변수를 기본값으로 선언하려면 다음을 수행합니다.
+`@param {array} [input1=<value>]`
+`input1` 는 기본값이 로 설정된 배열 유형의 선택적 매개 변수입니다. `value`.
+매개 변수 형식이 중괄호로 묶여 있는지 확인합니다. {} 매개 변수 이름은 대괄호로 묶습니다 [].
+
+input2가 선택적 매개 변수로 정의된 다음 코드 스니펫을 고려하십시오.
+
+```javascript
+        /**
+         * optional parameter function
+         * @name OptionalParameterFunction
+         * @param {string} input1 
+         * @param {string=} input2 
+         * @return {string}
+        */
+        function OptionalParameterFunction(input1, input2) {
+        let result = "Result: ";
+        result += input1;
+        if (input2 !== null) {
+            result += " " + input2;
+        }
+        return result;
+        }
+```
+
+다음 그림은 를 사용하여 표시됩니다. `OptionalParameterFunction` 규칙 편집기의 사용자 지정 함수:
+
+![선택적 또는 필수 매개 변수 ](/help/forms/assets/optional-default-params.png)
+
+필수 매개 변수에 대한 값을 지정하지 않고 규칙을 저장할 수 있지만, 규칙이 실행되지 않고 다음과 같은 경고 메시지가 표시됩니다.
+
+![불완전한 규칙 경고](/help/forms/assets/incomplete-rule.png)
+
+사용자가 선택적 매개 변수를 비워두면 &quot;정의되지 않음&quot; 값이 선택적 매개 변수에 대한 사용자 지정 함수에 전달됩니다.
+
+JSDocs에서 선택적 매개 변수를 정의하는 방법에 대해 자세히 알아보려면 [여기를 클릭하십시오](https://jsdoc.app/tags-param).
 
 #### 반환 유형
 
@@ -150,7 +152,6 @@ JavaScript 주석은 JavaScript 코드에 대한 메타데이터를 제공하는
 
 private으로 선언된 사용자 지정 함수는 적응형 양식의 규칙 편집기에서 사용자 지정 함수 목록에 표시되지 않습니다. 기본적으로 사용자 지정 함수는 공개입니다. 사용자 지정 함수를 private으로 선언하는 구문은 다음과 같습니다. `@private`.
 
-JSDocs에서 선택적 매개 변수를 정의하는 방법에 대해 자세히 알아보려면 [여기를 클릭하십시오](https://jsdoc.app/tags-param).
 
 ## 사용자 정의 함수를 만드는 동안 지침 {#considerations}
 
@@ -190,6 +191,8 @@ jsdoc 주석을 사용하거나 사용하지 않고 사용자 지정 함수를 �
     
 ```
 
+사용자가 사용자 정의 함수에 JavaScript 주석을 추가하지 않으면 사용자 정의 함수가 적응형 양식의 규칙 편집기에 나열되지 않습니다.
+
 * **필수 JavaScript 주석 또는 주석이 있는 함수 표현식**
 
 적응형 양식의 규칙 편집기에 사용자 정의 함수를 나열하려면 다음 형식으로 사용자 정의 함수를 만듭니다.
@@ -207,6 +210,8 @@ jsdoc 주석을 사용하거나 사용하지 않고 사용자 지정 함수를 �
             // code to be executed
         }
 ```
+
+사용자가 사용자 정의 함수에 JavaScript 주석을 추가하지 않으면 사용자 정의 함수가 적응형 양식의 규칙 편집기에 나열되지 않습니다.
 
 ## 사용자 지정 함수 만들기 {#create-custom-function}
 
@@ -365,30 +370,33 @@ jsdoc 주석을 사용하거나 사용하지 않고 사용자 지정 함수를 �
 
 ### 사용자 지정 함수의 필드 및 전역 범위 개체 {#support-field-and-global-objects}
 
-필드 개체는 텍스트 필드, 확인란 등 양식 내의 개별 구성 요소나 요소를 나타냅니다. 전역 범위 개체는 전체 양식에서 액세스할 수 있는 전역 변수 또는 설정을 나타냅니다. 다음 코드 조각을 살펴보겠습니다.
+필드 개체는 텍스트 필드, 확인란 등 양식 내의 개별 구성 요소나 요소를 나타냅니다. Globals 개체에는 사용자 지정 함수 내에서 양식을 수정하는 방법, 대상 필드 인스턴스 및 양식 인스턴스와 같은 읽기 전용 변수가 포함되어 있습니다.
+
+>[!NOTE]
+>
+> 다음 `param {scope} globals` 은 마지막 매개 변수여야 하며 적응형 양식의 규칙 편집기에 표시되지 않습니다.
+
+<!-- Let us look at the following code snippet:
 
 ```JavaScript
+   
     /**
     * updateDateTime
     * @name updateDateTime
     * @param {object} field
-    * @param {scope} globals 
+    * @param {scope} globals
     */
     function updateDateTime(field, globals) {
     // Accessing the Date object from the global scope
     var currentDate = new Date();
     // Formatting the date and time
     var formattedDateTime = currentDate.toLocaleString();
-    // Updating the field value with the formatted date and time
-    field.value = formattedDateTime;
+    // Updating the field value with the formatted date and time using setProperty.
+    globals.functions.setProperty(field, {value: formattedDateTime});
     }
 ```
 
->[!NOTE]
->
-> 다음 `param {scope} globals` 은 마지막 매개 변수여야 하며 적응형 양식의 규칙 편집기에 표시되지 않습니다.
-
-위의 코드 스니펫에서 사용자 지정 함수 `updateDateTime` 는 필드 개체 및 전역 개체와 같은 매개 변수를 사용합니다. 전역 범위를 사용하여 날짜 및 시간 개체에 액세스합니다. 필드는 형식이 지정된 날짜 및 시간 값이 양식 내에 표시되는 textbox 개체를 나타냅니다.
+In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
 
 사용자 지정 함수에서 필드를 사용하고 전역 개체를 사용하는 방법에 대해 알아보겠습니다. `Contact Us` 다른 사용 사례를 사용하는 양식입니다.
 
@@ -419,7 +427,8 @@ jsdoc 주석을 사용하거나 사용하지 않고 사용자 지정 함수를 �
 
 >[!NOTE]
 >
-> 에 있는 사용 가능한 속성을 사용하여 필드 속성을 구성할 수 있습니다. `[form-path]/jcr:content/guideContainer.model.json`.
+> * 에 있는 사용 가능한 속성을 사용하여 필드 속성을 구성할 수 있습니다. `[form-path]/jcr:content/guideContainer.model.json`.
+> * 을 사용하여 양식에 수정한 사항 `setProperty` Globals 개체의 메서드는 기본적으로 비동기이며 사용자 지정 함수를 실행하는 동안에는 반영되지 않습니다.
 
 이 예에서 의 유효성 검사 `personaldetails` 단추를 클릭하면 패널이 표시됩니다. 패널에서 오류가 감지되지 않으면 다른 패널에서 `feedback` 단추 클릭 시 패널이 표시됩니다.
 
@@ -554,7 +563,7 @@ jsdoc 주석을 사용하거나 사용하지 않고 사용자 지정 함수를 �
 `globals.functions.submitForm(globals.functions.exportData(), false);` 은 조작 후 양식 데이터를 제출하는 데 사용됩니다.
 * 첫 번째 인수는 제출할 데이터입니다.
 * 두 번째 인수는 제출 전에 양식의 유효성을 검사할지 여부를 나타냅니다. 다음과 같습니다. `optional` 및 로 설정 `true` 기본적으로.
-* 세 번째 인수는 `contentType` 제출 날짜: `optional` (기본값: ) `multipart/form-data`.
+* 세 번째 인수는 `contentType` 제출 서류 - 기본값과 함께 선택 사항입니다. `multipart/form-data`. 다른 값은 다음과 같습니다. `application/json` 및 `application/x-www-form-urlencoded`.
 
 에 설명된 대로 사용자 지정 함수에 다음 코드를 추가합니다. [create-custom-function](#create-custom-function) 섹션에서 조작된 데이터를 서버에 제출하려면 다음을 수행합니다.
 
@@ -565,7 +574,6 @@ jsdoc 주석을 사용하거나 사용하지 않고 사용자 지정 함수를 �
     * @param {object} field
     * @param {scope} globals 
     */
-
     function submitData(globals)
     {
     
