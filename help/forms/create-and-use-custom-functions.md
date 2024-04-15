@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: bc040f29a8912c5901ddb71bd32ee2d2a97d3eec
+source-git-commit: ee6072b3fc6786905a6610081acb22c708f1eae4
 workflow-type: tm+mt
 source-wordcount: '3104'
 ht-degree: 2%
@@ -155,7 +155,7 @@ private으로 선언된 사용자 지정 함수는 적응형 양식의 규칙 �
 
 규칙 편집기에 사용자 정의 함수를 나열하려면 다음 형식 중 하나를 사용할 수 있습니다.
 
-### **jsdoc 주석이 있거나 없는 Function 문**
+### jsdoc 주석이 있거나 없는 Function 문
 
 jsdoc 주석을 사용하거나 사용하지 않고 사용자 지정 함수를 만들 수 있습니다.
 
@@ -167,7 +167,7 @@ jsdoc 주석을 사용하거나 사용하지 않고 사용자 지정 함수를 �
 ```
 사용자가 사용자 정의 함수에 JavaScript 주석을 추가하지 않으면 함수 이름으로 규칙 편집기에 나열됩니다. 그러나 사용자 정의 함수의 가독성을 높이기 위해 JavaScript 주석을 포함하는 것이 좋습니다.
 
-### **필수 JavaScript 주석 또는 주석이 있는 화살표 함수**
+### 필수 JavaScript 주석 또는 주석이 있는 화살표 함수
 
 화살표 함수 구문을 사용하여 사용자 지정 함수를 만들 수 있습니다.
 
@@ -191,7 +191,7 @@ jsdoc 주석을 사용하거나 사용하지 않고 사용자 지정 함수를 �
 
 사용자가 사용자 정의 함수에 JavaScript 주석을 추가하지 않으면 사용자 정의 함수가 적응형 양식의 규칙 편집기에 나열되지 않습니다.
 
-### **필수 JavaScript 주석 또는 주석이 있는 함수 표현식**
+### 필수 JavaScript 주석 또는 주석이 있는 함수 표현식
 
 적응형 양식의 규칙 편집기에 사용자 정의 함수를 나열하려면 다음 형식으로 사용자 정의 함수를 만듭니다.
 
