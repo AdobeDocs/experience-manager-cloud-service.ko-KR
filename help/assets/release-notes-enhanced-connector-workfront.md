@@ -2,10 +2,10 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] 릴리스 정보'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] 릴리스 정보'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 411793f140a2a9cf482d820382d41de843a97e87
-workflow-type: ht
-source-wordcount: '1648'
-ht-degree: 100%
+source-git-commit: fdac9b4152c61f775769d7ed30be1097db119e2a
+workflow-type: tm+mt
+source-wordcount: '1660'
+ht-degree: 98%
 
 ---
 
@@ -13,23 +13,21 @@ ht-degree: 100%
 
 다음 섹션에서는 [!DNL Workfront for Experience Manager enhanced connector]의 일반 릴리스 정보에 대해 간략히 설명합니다.
 
-[!DNL Workfront for Experience Manager enhanced connector] 최신 버전 1.9.18의 릴리스 일자는 2024년 3월 8일입니다.
+의 최신 버전 1.9.19에 대한 릴리스 날짜 [!DNL Workfront for Experience Manager enhanced connector] 은 2024년 4월 12일입니다.
 
 ## 릴리스 하이라이트 {#release-highlights}
 
 최신 버전의 [!DNL Workfront for Experience Manager enhanced connector]에는 다음과 같은 버그 수정 사항이 포함됩니다.
 
-* Workfront에서 다중 자산 업로드를 처리하는 데 문제가 발생합니다.
-* Workfront를 사용하여 Experience Manager에서 폴더를 검색할 때 닫기 따옴표를 추가하지 않는 경우 `SERVER_ERROR`가 발생합니다.
+* HTTP 클라이언트를 닫지 못하면 메모리 부족 문제가 발생합니다.
 
 >[!NOTE]
 >
 >AEM 6.4는 확장 지원이 종료되었습니다. [ 기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html)을 참조하십시오. [여기](https://experienceleague.adobe.com/docs/?lang=ko)에서 지원되는 버전을 확인하십시오.
 
-
 >[!IMPORTANT]
 >
->Adobe는 [!DNL Workfront for Experience Manager enhanced connector]의 [최신 1.9.18 버전으로 업그레이드](/help/assets/workfront-connector-install.md)할 것을 권장합니다.
+>Adobe는 [!DNL Workfront for Experience Manager enhanced connector]의 [최신 1.9.19 버전으로 업그레이드](/help/assets/workfront-connector-install.md)할 것을 권장합니다.
 
 ## 알려진 문제 {#known-issues}
 
@@ -39,13 +37,18 @@ ht-degree: 100%
 
 ## 이전 출시 버전 {#previous-releases}
 
-### 2024년 2월 릴리스 {#february-2023-release}
+### 2024년 3월 릴리스 {#march-2024-release}
+
+* Workfront에서 다중 자산 업로드를 처리하는 데 문제가 발생합니다.
+* Workfront를 사용하여 Experience Manager에서 폴더를 검색할 때 닫기 따옴표를 추가하지 않는 경우 `SERVER_ERROR`가 발생합니다.
+
+### 2024년 2월 릴리스 {#february-2024-release}
 
 * AEM Cloud 고객이 커넥터를 구성하고 설정할 수 있도록 토글 기능이 활성화되었습니다.
 
 * 기본 세션을 명시적으로 닫지 않고 `resourceResolver`를 닫으면 AEM 인스턴스에서 세션 누출이 발생합니다. Resource Resolver가 자동으로 닫혀도 세션이 암시적으로 닫히지 않으므로 세션을 명시적으로 닫는 것이 중요합니다.
 
-### 2024년 1월 릴리스 {#january-2023-release}
+### 2024년 1월 릴리스 {#january-2024-release}
 
 * 현재 [!DNL CRX DE]의 [!DNL Workfront] 구성은 `project ID`를 저장하지 않으므로, 읽기 전용 권한을 적용할 때 오류가 발생합니다. [권한 구성](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders) 방법에 대해 자세히 알아보십시오.
 
@@ -120,7 +123,6 @@ ht-degree: 100%
 * 이제 Workfront의 댓글 삭제가 Experience Manager에 반영됩니다.
 
 * Experience Manager as a Cloud Service의 신규 고객이 커넥터를 구성하지 못하도록 차단하는 기능입니다.
-
 
 ### 2023년 1월 릴리스 {#january-2022-release}
 
