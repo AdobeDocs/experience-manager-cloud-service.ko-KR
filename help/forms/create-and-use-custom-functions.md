@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 3ed500d0c7a9a445e3417043da3d52632760ccdb
+source-git-commit: 593a2b2930093d29a22f6c1ff391c11db9bda7dc
 workflow-type: tm+mt
 source-wordcount: '3104'
 ht-degree: 2%
@@ -30,7 +30,6 @@ AEM Forms은 사용자 정의 함수를 지원하므로 사용자가 복잡한 �
 ### 사용자 정의 함수 사용 {#uses-of-custom-function}
 
 적응형 Forms에서 사용자 정의 함수를 사용할 때의 장점은 다음과 같습니다.
-
 * **데이터 처리**: 사용자 정의 기능은 양식 필드에 입력된 데이터를 처리하는 데 도움이 됩니다.
 * **데이터 유효성 검사**: 사용자 정의 기능을 사용하면 양식 입력에 대한 사용자 정의 검사를 수행하고 지정된 오류 메시지를 제공할 수 있습니다.
 * **동적 동작**: 사용자 정의 기능을 사용하면 특정 조건에 따라 양식의 동적 동작을 제어할 수 있습니다. 예를 들어 필드를 표시/숨기거나, 필드 값을 수정하거나, 양식 논리를 동적으로 조정할 수 있습니다.
