@@ -4,7 +4,7 @@ description: ' [!DNL Assets view]에서 자산을 이동하고, 삭제하고, �
 role: User,Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
-source-git-commit: e2a0e93a4ff01d9a180fcf1ad097ccbfb354fc0f
+source-git-commit: f7d3e356e4e43d5838a6319f5ead750c149a9b3b
 workflow-type: tm+mt
 source-wordcount: '1062'
 ht-degree: 88%
@@ -149,3 +149,4 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백 제공
 
 * [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의
+
