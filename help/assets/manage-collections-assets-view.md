@@ -1,10 +1,11 @@
 ---
 title: 컬렉션 관리
 description: 컬렉션은 Experience Manager Assets 보기 내의 에셋 세트입니다. 컬렉션을 사용하여 사용자 간에 에셋을 공유합니다.
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
+source-git-commit: 24c92e3a8ea20696cd39a5070f161d45d09d6f69
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 89%
+source-wordcount: '919'
+ht-degree: 77%
 
 ---
 
@@ -46,6 +47,8 @@ You can share collections with various users that are assigned different levels 
 * [컬렉션 다운로드](#download-collection)
 
 * [컬렉션 삭제](#delete-collection)
+
+* [개인 컬렉션에 대한 권한 관리](#manage-permissions-to-a-private-collection)
 
 ## 컬렉션 생성 {#create-collection}
 
@@ -184,6 +187,18 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 1. 삭제해야 하는 컬렉션을 선택합니다.
 
 1. **[!UICONTROL 삭제]**&#x200B;를 클릭합니다.
+
+## 개인 컬렉션에 대한 권한 관리{#manage-permissions-private-collection}
+
+관리자가 관리하도록 허용할 수 있습니다. [액세스 수준](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) 저장소에서 사용할 수 있는 개인 컬렉션입니다. 다음과 같은 권한을 할당할 수 있습니다. `Can View` 및 `Can Edit` (사용자 그룹 또는 사용자) 사용자 그룹에 권한 관리 권한을 위임할 수도 있습니다. 개인 컬렉션을 만드는 사용자는 이러한 컬렉션의 소유자입니다. 다음을 사용할 수 있습니다 [!UICONTROL 권한 관리] 다른 사용자에게 액세스 권한을 부여하는 작업입니다. 또한 관리자는 의 개인 컬렉션에 대한 권한을 보고 관리할 수 있습니다. [!DNL Experience Manager] 리포지토리.
+
+>[!NOTE]
+>
+>Adobe는 사용자에게 권한을 할당하는 것을 권장하지 않습니다.
+
+사용자 그룹에 사용 가능한 권한을 할당하는 방법에 대한 자세한 내용은 [사용자 그룹에 권한 추가](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+
+전체 워크플로에 대한 자세한 내용은 [권한 관리](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## 다음 단계 {#next-steps}
 
