@@ -2,12 +2,11 @@
 title: Forms as a Cloud Service 통신 API란 무엇입니까?
 description: 통신 API를 사용하여 문서에 서명, 인증 또는 보호하고, PDF 생성 프로세스를 자동화하고, PDF 문서를 다른 형식으로 변환합니다.
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
-exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
+source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
 workflow-type: tm+mt
-source-wordcount: '1964'
+source-wordcount: '1982'
 ht-degree: 56%
 
 ---
@@ -193,10 +192,12 @@ DocAssurance 서비스에는 서명 및 암호화 API가 포함되어 있습니�
 
 ### Reader 확장 서비스
 
-<span class="preview"> Reader 확장 서비스 기능은 얼리 어답터 프로그램 아래에 있습니다. 다음에 쓸 수 있습니다. `aem-forms-ea@adobe.com` 을(를) 통해 얼리어답터 프로그램에 참여하고 기능에 대한 액세스를 요청합니다. </span>
+<span class="preview"> Reader 확장 서비스 기능은 얼리 어답터 프로그램 아래에 있습니다. 공식 이메일 ID에서 aem-forms-ea@adobe.com에 작성하여 얼리어답터 프로그램에 참여하고 기능에 대한 액세스를 요청할 수 있습니다. </span>
 
-Reader 확장 서비스를 사용하면 추가 사용 권한과 함께 Adobe Reader의 기능을 확장하여 조직에서 대화형 PDF 문서를 쉽게 공유할 수 있습니다. Reader 확장 서비스는 Adobe Reader에서 작동합니다. 이 서비스는 PDF 문서에 사용 권한을 추가합니다. 이 작업은 문서에 주석 추가, 양식 채우기, 문서 저장과 같이 Adobe Reader을 사용하여 PDF 문서를 열 때 일반적으로 사용할 수 없는 기능을 활성화합니다.
+Reader 확장 서비스를 사용하면 추가 사용 권한과 함께 Adobe Reader의 기능을 확장하여 조직에서 대화형 PDF 문서를 쉽게 공유할 수 있습니다. Reader 확장 서비스는 Adobe Reader 7.0 이상에서 작동합니다. 이 서비스는 PDF 문서에 사용 권한을 추가합니다. 이 작업은 문서에 주석 추가, 양식 채우기, 문서 저장과 같이 Adobe Reader을 사용하여 PDF 문서를 열 때 일반적으로 사용할 수 없는 기능을 활성화합니다.
 
+>[!NOTE]
+>서드파티 사용자는 권한이 활성화된 문서에서 작동하는 데 추가 소프트웨어나 플러그인이 필요하지 않습니다.
 
 PDF 문서에 적절한 사용 권한이 추가되면 수신자는 Adobe Reader 내에서 다음 활동을 수행할 수 있습니다.
 
@@ -242,7 +243,7 @@ Reader 확장 서비스의 다양한 사용 권한 기능은 다음과 같습니
 * **메시지**: 하나 이상의 사용 권한이 적용된 PDF 문서를 열 때 Adobe Acrobat Reader 내에 표시되는 메시지입니다.
 * **암호 잠금 해제**: 암호화된 PDF 문서를 여는 데 필요한 암호입니다. 일반적으로 문서 열기 암호이지만 PDF 문서가 권한 암호로 추가로 보호되는 경우 중 하나를 사용하여 열 수 있습니다.
 
-다음 [API 참조 설명서](https://adobe-aem-document-experimental.redoc.ly/) 는 API에서 제공하는 모든 매개 변수, 인증 방법 및 다양한 서비스에 대한 자세한 정보를 제공합니다. API 참조 설명서는 .yaml 형식으로도 사용할 수 있습니다. .yaml 를 다운로드하고 postman에 업로드하여 API의 기능을 확인할 수 있습니다.
+다음 [API 참조 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) 는 API에서 제공하는 모든 매개 변수, 인증 방법 및 다양한 서비스에 대한 자세한 정보를 제공합니다. API 참조 설명서는 .yaml 형식으로도 사용할 수 있습니다. .yaml 를 다운로드하고 postman에 업로드하여 API의 기능을 확인할 수 있습니다.
 
 ## 통신 API 유형 {#types}
 

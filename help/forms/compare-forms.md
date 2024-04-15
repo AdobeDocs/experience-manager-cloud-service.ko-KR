@@ -3,16 +3,14 @@ title: 서로 다른 두 적응형 양식을 비교합니다.
 description: 필드, 콘텐츠 및 양식 구성 요소를 기반으로 두 개의 개별 양식을 비교합니다.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
-hidefromtoc: true
-exl-id: ce4ad231-a766-4ab0-8649-20cf16bf54ce
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
+source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 9%
 
 ---
 
-## 적응형 Forms 비교 {#compare-two-forms}
+# 적응형 Forms 비교 {#compare-two-forms}
 
 <span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)을 통해 액세스할 수 있습니다. </span>
 
