@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
 workflow-type: tm+mt
 source-wordcount: '4881'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -797,7 +797,7 @@ ht-degree: 98%
    + [FAQ](/help/commerce-cloud/faq.md)
 + Edge Delivery Services {#edge-delivery}
    + [Edge Delivery Services 개요](/help/edge/overview.md)
-   + [AEM에서 Edge Delivery Services 사용](/help/edge/using.md)
+   + [AEM과 함께 Edge Delivery Services 사용](/help/edge/using.md)
    + AEM 기반 작성 {#aem-authoring}
       + [Edge Delivery용 콘텐츠 작성](/help/edge/aem-authoring/authoring.md)
       + [Edge Delivery용 콘텐츠 게시](/help/edge/aem-authoring/publishing.md)
@@ -813,7 +813,7 @@ ht-degree: 98%
       + [Sitemap](/help/edge/developer/sitemap.md)
       + [SharePoint 설정](/help/edge/docs/setup-customer-sharepoint.md)
       + [Slack 봇](/help/edge/docs/slack.md)
-   + 애플리케이션 구축 {#build}
+   + 애플리케이션 빌드 {#build}
       + [시작하기 - 개발자 튜토리얼](/help/edge/developer/tutorial.md)
       + [프로젝트의 구조](/help/edge/developer/anatomy-of-a-franklin-project.md)
       + [컬렉션 차단](/help/edge/developer/block-collection.md)
@@ -832,7 +832,7 @@ ht-degree: 98%
       + [Akamai 설정](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Fastly 설정](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [리디렉션](/help/edge/docs/redirects.md)
-   + Forms 구축 {#build-forms}
+   + 양식 빌드 {#build-forms}
       + [개요](/help/edge/docs/forms/overview.md)
       + 시작하기 {#getting-started-eds-forms}
          + [시작](/help/edge/docs/forms/tutorial.md)
@@ -853,7 +853,7 @@ ht-degree: 98%
          + [양식에 대한 실시간 사용자 모니터링](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
       + 참조 {#forms-references}
          + [적응형 양식 블록 구성 요소 및 해당 속성](/help/edge/docs/forms/form-components.md)
-   + Edge 게재 리소스 {#resources}
+   + Edge Delivery 리소스 {#resources}
       + Sidekick {#sidekick}
          + [Sidekick 사용](/help/edge/docs/sidekick.md)
          + [확장 기능 설치](/help/edge/docs/sidekick-extension.md)

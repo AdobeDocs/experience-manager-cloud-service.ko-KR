@@ -6,7 +6,7 @@ exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 source-git-commit: 8bdca5357666841c4471170ab3b97476b6be63b6
 workflow-type: tm+mt
 source-wordcount: '1296'
-ht-degree: 87%
+ht-degree: 96%
 
 ---
 
@@ -30,9 +30,9 @@ AEM은 두 가지 콘텐츠 편집기를 제공하며 상황에 따라 사용할
 * **Universal Editor** - 새 사이트의 기본 선택 항목이어야 합니다.
 * **AEM 페이지 편집기** - Edge Delivery Services로의 기존 AEM Sites 마이그레이션을 위해 선택해야 합니다.
 
-이 안내서는 Universal Editor를 사용하는 Edge Delivery Services의 AEM 프로젝트에 중점을 둡니다. 문서 보기 [AEM에서 Edge Delivery Services 사용](/help/edge/using.md) 올바른 편집기를 선택하고 기존 AEM 사이트를 Edge Delivery Services으로 마이그레이션하는 방법에 대한 자세한 내용을 참조하십시오.
+이 안내서는 Universal Editor를 사용하는 Edge Delivery Services의 AEM 프로젝트에 중점을 둡니다. 적합한 편집기를 선택하는 방법 및 기존 AEM Sites를 Edge Delivery Services로 마이그레이션하는 방법에 대한 자세한 내용은 [AEM과 함께 Edge Delivery Services 사용](/help/edge/using.md) 문서를 참조하십시오.
 
-## Edge Delivery Services을 위한 개발 시 핵심 개념 {#core-concepts}
+## Edge Delivery Services 개발 시 핵심 개념 {#core-concepts}
 
 Edge Delivery Services는 블록 개념을 기반으로 합니다. AEM에는 프로젝트 요구 사항을 충족하도록 확장할 수 있는 사전 정의된 블록의 포괄적인 라이브러리가 함께 제공됩니다. Edge Delivery Services 프로젝트의 코드는 GitHub에서 관리됩니다.
 
@@ -111,12 +111,12 @@ Edge Delivery는 GitHub를 활용하므로 GitHub 저장소에서 바로 코드�
 
    ![paths.json](assets/edge-dev-getting-started/paths.png)
 
-1. 기본 매핑은 저장소의 이름을 사용합니다. 프로젝트에 필요한 기본 매핑을 `/content/<site-name>/:/` 및 클릭 **변경 내용 커밋...**.
+1. 기본 매핑은 저장소 이름을 사용합니다. `/content/<site-name>/:/`를 사용하여 프로젝트에 필요한 기본 매핑을 업데이트하고 **변경 사항 커밋...**&#x200B;을 클릭합니다.
 
    * 자체 `<site-name>`을 입력합니다. 이는 이후 단계에서 필요합니다.
    * 매핑은 Edge Delivery Services에 AEM 저장소의 콘텐츠를 사이트 URL에 매핑하는 방법을 알려 줍니다.
 
-   ![paths.json 업데이트 중](assets/edge-dev-getting-started/paths-update.png)
+   ![paths.json 업데이트](assets/edge-dev-getting-started/paths-update.png)
 
 1. 원하는 대로 커밋 메시지를 추가한 다음 **변경 사항 커밋**&#x200B;을 클릭하여 `main` 분기에 직접 커밋합니다.
 
@@ -192,11 +192,11 @@ Universal Editor를 사용하여 새 사이트 편집을 마쳤다면 콘텐츠�
 
 ## 다음 단계 {#next-steps}
 
-이제 작업 중인 AEM에서 Edge Delivery Services 프로젝트를 제작했으므로 나만의 블록을 제작하고 스타일을 지정할 수 있습니다.
+Edge Delivery Services 프로젝트와 함께 AEM이 작성되어 있으며, 자체 블록을 만들고 스타일을 지정할 수 있습니다.
 
 자세한 내용은 [Universal Editor에 사용하도록 구성된 블록 만들기](/help/edge/aem-authoring/create-block.md) 안내서를 참조하십시오.
 
 >[!TIP]
 >
->as a Cloud Service을 콘텐츠 소스로 사용하여 AEM AEM 작성이 활성화된 새 Edge Delivery Services 프로젝트 만들기에 대한 전체적인 설명은 을 참조하십시오. [이 AEM GEM 웨비나.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>AEM as a Cloud Service를 콘텐츠 소스로 사용하여 AEM 작성에 활성화된 새로운 Edge Delivery Services 프로젝트를 만드는 방법에 대한 전체 연습을 보려면 [이 AEM GEM 웨비나](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)를 시청하십시오.
 

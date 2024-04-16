@@ -5,7 +5,7 @@ exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '2233'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -627,7 +627,7 @@ AEM에서 사용할 수 있는 기본 페이지 속성 중 다수는 문서의 �
 
 * `cq:lastModified` - `modified-time`(ISO8601 형식)
 * 문서가 마지막으로 게시된 시간 - `published-time`(ISO8601 형식)
-* `cq:tags` 다음으로: `cq-tags` 를 쉼표로 구분된 태그 ID 목록으로 표시합니다.
+* `cq:tags` - `cq-tags`(태그 ID를 쉼표로 구분한 목록)
 
 작성자에게 AEM Sites 페이지 속성 대화 상자의 탭으로 제공되는 사용자 정의 페이지 메타데이터에 대한 구성 요소 모델을 정의할 수도 있습니다.
 
@@ -648,13 +648,13 @@ AEM에서 사용할 수 있는 기본 페이지 속성 중 다수는 문서의 �
 
 ## 다음 단계 {#next-steps}
 
-콘텐츠를 모델링하는 방법을 알았으므로 AEM 작성 프로젝트를 사용하여 Edge Delivery Services에 대한 블록을 만들 수 있습니다.
+이제 컨텐츠를 모델링하는 방법을 알았으므로 AEM 작성 프로젝트를 통해 자체 Edge Delivery Services에 대한 블록을 만들 수 있습니다.
 
-문서 보기 [범용 편집기에서 사용하기 위해 계측된 블록 만들기](/help/edge/aem-authoring/create-block.md) Edge Delivery Services 프로젝트를 사용하여 AEM 작성에서 범용 편집기와 함께 사용하기 위해 계측된 블록을 만드는 방법에 대해 알아봅니다.
+Edge Delivery Services 프로젝트를 통해 AEM 작성 시 Universal Editor에 사용하도록 구성된 블록을 만드는 방법을 알아보려면 [Universal Editor에 사용하도록 구성된 블록 만들기](/help/edge/aem-authoring/create-block.md) 문서를 참조하십시오.
 
-블록 만들기에 익숙하다면 문서를 참조하십시오 [Edge Delivery Services을 사용한 AEM 작성을 위한 개발자 시작 안내서](/help/edge/aem-authoring/edge-dev-getting-started.md) Edge Delivery Services 및 컨텐츠 작성용 범용 편집기를 사용하여 새 Adobe Experience Manager 사이트를 시작하고 실행할 수 있도록 하기 위해
+이미 블록을 만드는 데 익숙하다면 콘텐츠 작성을 위한 Edge Delivery Services 및 Universal Editor를 사용하여 새로운 Adobe Experience Manager 사이트를 시작하고 실행하기 위한 정보를 확인하려면 [Edge Delivery Services를 사용한 AEM 작성을 위한 개발자 시작 안내서](/help/edge/aem-authoring/edge-dev-getting-started.md) 문서를 참조하십시오.
 
 >[!TIP]
 >
->as a Cloud Service을 콘텐츠 소스로 사용하여 AEM AEM 작성이 활성화된 새 Edge Delivery Services 프로젝트 만들기에 대한 전체적인 설명은 을 참조하십시오. [이 AEM GEM 웨비나.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>AEM as a Cloud Service를 콘텐츠 소스로 사용하여 AEM 작성에 활성화된 새로운 Edge Delivery Services 프로젝트를 만드는 방법에 대한 전체 연습을 보려면 [이 AEM GEM 웨비나](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)를 시청하십시오.
 

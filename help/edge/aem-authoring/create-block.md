@@ -5,7 +5,7 @@ exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '1297'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -248,11 +248,11 @@ Adobe는 3단계 방식으로 블록을 개발할 것을 권장합니다.
 
 ## 다음 단계 {#next-steps}
 
-이제 블록을 만드는 방법을 알았으므로, 린 개발자 경험을 얻기 위해 의미론적인 방식으로 콘텐츠를 모델링하는 방법을 이해하는 것이 중요합니다.
+블록을 생성하는 방법을 알았으므로 린 개발자 경험을 달성하기 위해 의미론적 방식으로 콘텐츠의 모델링 방법을 이해하는 것이 중요합니다.
 
-문서를 참조하십시오. [Edge Delivery Services 프로젝트를 사용한 AEM 작성을 위한 콘텐츠 모델링](/help/edge/aem-authoring/content-modeling.md) Edge Delivery Services 프로젝트를 사용하여 AEM 작성에 콘텐츠 모델링이 작동하는 방식을 알아봅니다.
+Edge Delivery Services 프로젝트를 사용한 AEM 작성을 위한 콘텐츠 모델링의 작동 방식을 알아보려면 [Edge Delivery Services 프로젝트를 사용한 AEM 작성을 위한 컨텐츠 모델링](/help/edge/aem-authoring/content-modeling.md) 문서를 참조하십시오.
 
 >[!TIP]
 >
->as a Cloud Service을 콘텐츠 소스로 사용하여 AEM AEM 작성이 활성화된 새 Edge Delivery Services 프로젝트 만들기에 대한 전체적인 설명은 을 참조하십시오. [이 AEM GEM 웨비나.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>AEM as a Cloud Service를 콘텐츠 소스로 사용하여 AEM 작성에 활성화된 새로운 Edge Delivery Services 프로젝트를 만드는 방법에 대한 전체 연습을 보려면 [이 AEM GEM 웨비나](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)를 시청하십시오.
 
