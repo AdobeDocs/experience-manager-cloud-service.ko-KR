@@ -4,10 +4,10 @@ description: ' [!DNL Assets view]에서 자산을 이동하고, 삭제하고, �
 role: User,Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
-source-git-commit: f7d3e356e4e43d5838a6319f5ead750c149a9b3b
+source-git-commit: 3912f52112b3d9dcb568e477c33d3f4b28064b66
 workflow-type: tm+mt
-source-wordcount: '1062'
-ht-degree: 88%
+source-wordcount: '1177'
+ht-degree: 89%
 
 ---
 
@@ -21,18 +21,42 @@ ht-degree: 88%
 
 *그림: 선택한 이미지에 대해 도구 모음에서 사용할 수 있는 옵션*
 
-* ![선택 해제 아이콘](assets/do-not-localize/close-icon.png) 선택 해제합니다.
-* ![세부 정보 아이콘](assets/do-not-localize/edit-in-icon.png) 에셋을 미리 보고 자세한 메타데이터를 보려면 클릭하십시오. 미리보기 시 버전을 확인하고 이미지를 편집할 수 있습니다.
-* ![다운로드 아이콘](assets/do-not-localize/download-icon.png) 선택한 에셋을 로컬 파일 시스템에 다운로드합니다.
-* ![삭제 아이콘](assets/do-not-localize/delete-icon.png) 선택한 에셋 또는 폴더를 삭제합니다.
-* ![확인 아이콘](assets/do-not-localize/checkout-icon.png) 선택한 에셋을 확인합니다.
-* ![복사 아이콘](assets/do-not-localize/copy-icon.png) 선택한 파일 또는 폴더를 복사합니다.
-* ![이동 아이콘](assets/do-not-localize/move-icon.png) 선택한 자산 또는 폴더를 저장소 계층의 다른 위치로 이동합니다.
-* ![이름 바꾸기 아이콘](assets/do-not-localize/rename-icon.png) 선택한 자산 또는 폴더의 이름을 변경합니다. 고유한 이름을 사용하지 않으면 경고 메시지가 표시되며 이름 바꾸기에 실패합니다. 새 이름으로 다시 시도할 수 있습니다.
-또한 에셋 또는 폴더의 제목을 클릭하여 이름을 변경할 수 있습니다. 에서 새 텍스트 언급 **에셋 이름 바꾸기** 텍스트 상자 및 클릭 **저장**. 이 기능은 격자, 갤러리, 폭포 및 목록 보기에서 사용할 수 있습니다. <!--in-place rename-->
-* ![작업 할당 아이콘](assets/do-not-localize/review-delegate-icon.png) 다른 사용자에게 작업을 할당하여 에셋에 대해 공동 작업을 수행합니다.
+* ![선택 해제 아이콘](assets/do-not-localize/close-icon.png) 선택을 취소합니다.
 
-에셋 썸네일에서 동일한 옵션을 볼 수 있습니다.
+* ![유사 항목 찾기 아이콘](assets/do-not-localize/find-similar.svg) 메타데이터 및 스마트 태그를 기반으로 Assets UI에서 유사한 이미지 자산을 찾습니다.
+
+* ![세부 정보 아이콘](assets/do-not-localize/edit-in-icon.png) 자산을 미리 보고 자세한 메타데이터를 보려면 클릭하십시오. 미리보기 시 버전을 확인하고 이미지를 편집할 수 있습니다.
+
+* ![다운로드 아이콘](assets/do-not-localize/download-icon.png) 선택한 자산을 로컬 파일 시스템에 다운로드합니다.
+
+* ![컬렉션에 추가 아이콘](assets/do-not-localize/add-collection.svg) 선택한 자산을 컬렉션에 추가합니다.
+
+* ![자산 고정 아이콘](assets/do-not-localize/pin-quick-access.svg) 나중에 필요할 때 더 빠르게 액세스할 수 있도록 자산을 고정합니다. 고정된 모든 항목은 내 작업 영역의 **바로 가기** 섹션에 표시됩니다.
+
+* ![Express에서 편집 아이콘](assets/do-not-localize/edit-e.svg) Adobe Experience Manager Assets 내의 통합 Adobe Express에서 이미지를 편집합니다.
+
+* ![자산 편집 아이콘](assets/do-not-localize/edit-e.svg) Adobe Express를 사용하여 이미지를 편집합니다.
+
+* ![자산 링크 공유 아이콘](assets/do-not-localize/share-link.svg) 다른 사용자들이 액세스하고 다운로드할 수 있도록 자산 링크를 공유합니다.
+
+* ![삭제 아이콘](assets/do-not-localize/delete-icon.png) 선택한 자산 또는 폴더를 삭제합니다.
+
+* ![복사 아이콘](assets/do-not-localize/copy-icon.png) 선택한 파일 또는 폴더를 복사합니다.
+
+* ![이동 아이콘](assets/do-not-localize/move-icon.png) 선택한 자산 또는 폴더를 저장소 계층의 다른 위치로 이동합니다.
+
+* ![이름 바꾸기 아이콘](assets/do-not-localize/rename-icon.png) 선택한 자산 또는 폴더의 이름을 변경합니다. 고유한 이름을 사용하지 않으면 경고 메시지가 표시되며 이름 바꾸기에 실패합니다. 새 이름으로 다시 시도할 수 있습니다.
+또한 에셋 또는 폴더의 제목을 클릭하여 이름을 변경할 수 있습니다. 에서 새 텍스트 언급 **에셋 이름 바꾸기** 텍스트 상자 및 클릭 **저장**. 이 기능은 격자, 갤러리, 폭포 및 목록 보기에서 사용할 수 있습니다.
+
+* ![waterfall 보기 아이콘](assets/do-not-localize/waterfall-view.png) [!UICONTROL Waterfall 보기].
+
+* ![라이브러리 복사 아이콘](assets/do-not-localize/copy-icon.png) 라이브러리에 자산을 추가합니다.
+
+* ![작업 할당 아이콘](assets/do-not-localize/review-delegate-icon.png) 다른 사용자에게 작업을 할당하여 자산에 대해 공동 작업을 수행합니다.
+
+* ![작업 할당 아이콘](assets/do-not-localize/watch-asset.svg) 자산에 대해 수행되는 작업을 모니터링합니다.
+
+자산 썸네일에서 동일한 옵션을 볼 수 있습니다.
 
 ![자산 관리를 위한 자산 썸네일 옵션](assets/options-on-thumbnail.png)
 
