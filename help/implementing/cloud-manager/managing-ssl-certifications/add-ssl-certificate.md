@@ -2,10 +2,10 @@
 title: SSL 인증서 추가
 description: Cloud Manager의 셀프서비스 도구를 사용하여 자체 SSL 인증서를 추가하는 방법을 알아봅니다.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 65aaa732d08cee541153f1b2fb4ea7b44f1f3029
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 84%
+source-wordcount: '612'
+ht-degree: 80%
 
 ---
 
@@ -25,9 +25,9 @@ Cloud Manager의 셀프서비스 도구를 사용하여 자체 SSL 인증서를 
 
 Cloud Manager를 사용하여 인증서를 추가하려면 다음 단계를 수행합니다.
 
-1. 에서 Cloud Manager에 로그인합니다. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 적절한 조직 선택
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직 선택
 
-1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 화면에서 프로그램을 선택합니다.
+1. **[내 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 화면에서 프로그램을 선택합니다.
 
 1. **개요** 페이지에서 **환경** 화면으로 이동합니다.
 
@@ -40,6 +40,7 @@ Cloud Manager를 사용하여 인증서를 추가하려면 다음 단계를 수�
    * **인증서 이름**&#x200B;에 인증서 이름을 입력합니다.
       * 이 이름은 정보 제공의 목적으로만 사용되며 인증서를 쉽게 참조하는 데 도움이 되는 모든 이름을 사용할 수 있습니다.
    * **인증서**, **비공개 키** 및 **인증서 체인** 값을 해당 필드에 붙여넣습니다. 세 필드는 모두 필수입니다.
+   * 경우에 따라 최종 사용자 인증서가 체인에 포함될 수 있으므로 체인을 필드에 붙여넣기 전에 제거해야 합니다.
 
    ![SSL 인증서 추가 대화 상자](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
@@ -56,6 +57,10 @@ Cloud Manager를 사용하여 인증서를 추가하려면 다음 단계를 수�
 >[!NOTE]
 >
 >Cloud Manager에서 SSL 인증서를 설치하려면 사용자가 **비즈니스 소유자** 또는 **배포 관리자** 역할의 멤버여야 합니다.
+
+>[!NOTE]
+>
+>과 유사한 오류가 발생하는 경우 `The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.`, 인증서 체인에 클라이언트 인증서를 포함했을 수 있습니다. 체인에 클라이언트 인증서가 포함되어 있지 않은지 확인하고 다시 시도하십시오.
 
 ## 인증서 오류 {#certificate-errors}
 
