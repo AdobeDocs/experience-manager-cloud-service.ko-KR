@@ -6,10 +6,10 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: ee6072b3fc6786905a6610081acb22c708f1eae4
+source-git-commit: ff4f8416284c8491a252b725dfa5224e0c0d9fd5
 workflow-type: tm+mt
-source-wordcount: '3104'
-ht-degree: 2%
+source-wordcount: '3119'
+ht-degree: 3%
 
 ---
 
@@ -22,6 +22,11 @@ ht-degree: 2%
 다음을 확인합니다. [핵심 구성 요소가 버전 3.0.8로 설정되었습니다.](https://github.com/adobe/aem-core-forms-components) 사용자 지정 함수에서 프리릴리스 기능 사용. </span>
 
 # 적응형 Forms(핵심 구성 요소)의 사용자 지정 기능
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions) |
+| AEM as a Cloud Service | 이 문서 |
 
 ## 소개
 
