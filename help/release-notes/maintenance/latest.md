@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 5e216e45a1400299efcc418007ddbe93f0c571a1
+source-git-commit: 36fefbf74a288d60a9529f0c7273dd6b0557177b
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '424'
 ht-degree: 30%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 30%
 * GRANITE-49638: RUM 변환기 팩토리에 대한 잘못된 콘텐츠 유형 구성을 수정합니다.
 * GRANITE-50141: IMSProviderImpl이 로그를 스팸 처리하고 있습니다.
 * SITES-20949: Youtube에서 referrerpolicy=&quot;strict-origin-when-cross-origin&quot;을 추가한 후 ComponentsIT.testEmbed가 실패했습니다.
-* SITES-21233: 핵심 구성 요소 업데이트 - GS1US로 업그레이드한 후 아코디언을 15860.
+* SITES-21233: 핵심 구성 요소 업데이트 - 15860으로 업그레이드 후 아코디언을 수정합니다.
 * SKYOPS-74819: Apache Commons의 중복 키에 대한 이전 버전과의 호환성이 끊어졌습니다.
 * SKYOPS-67087: 특정 경우에 Clientlib 집계가 작동하지 않습니다.
 * CQ-4355415: AEM 알림 링크가 6.5 SP18에서 작동하지 않습니다.
