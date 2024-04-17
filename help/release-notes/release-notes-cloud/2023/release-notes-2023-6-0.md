@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.6.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.6.0 릴리스 정보입니다.'
 exl-id: 29cf9548-e413-4e4f-b233-d6bb04918b22
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: ht
-source-wordcount: '1357'
+source-git-commit: 18f07bab308b707952b8df6b980dd3a6a9e024e9
+workflow-type: tm+mt
+source-wordcount: '1322'
 ht-degree: 100%
 
 ---
@@ -65,12 +65,6 @@ ht-degree: 100%
 **3D 자산의 썸네일 미리보기**
 
 [!DNL Experience Manager Assets]는 이제 gLB, USDz, FBX, 3DS, OBJ, SBSAR을 포함한 [일반적인 3D 파일 형식에 대한 썸네일 미리보기](/help/assets/file-format-support.md)를 생성합니다. 해당 파일을 업로드하면 기본적으로 썸네일이 자동 생성됩니다.
-
-**링크 공유 구성**
-
-관리자가 사용자를 위해 이 기능의 기본 동작을 사용자 정의할 수 있는 새로운 구성 집합과 함께 [링크 공유를 만드는](/help/assets/share-assets.md) 향상된 새로운 사용자 환경입니다.
-
-![태그 지정 관리](/help/assets/assets/config-email-service.png)
 
 **Dynamic Media: 이미지 프로필의 업데이트된 스마트 자르기 관련된 필드**
 

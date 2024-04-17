@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: f3d3bc92eb47bf5008167f660f26dfede2700540
+source-git-commit: 18f07bab308b707952b8df6b980dd3a6a9e024e9
 workflow-type: tm+mt
-source-wordcount: '2285'
-ht-degree: 30%
+source-wordcount: '2321'
+ht-degree: 31%
 
 ---
 
@@ -97,6 +97,12 @@ AEM Assets은 기본적으로 Adobe Express과 통합되어 있으므로 Adobe E
 **지원되는 모든 비디오 유형에 대한 미리보기 렌디션**
 
 이제 Experience Manager Assets은 처리 프로필 구성 없이도 기본적으로 지원되는 모든 비디오 유형의 미리보기 렌디션을 생성합니다.
+
+**링크 공유 구성**
+
+관리자가 사용자를 위해 이 기능의 기본 동작을 사용자 정의할 수 있는 새로운 구성 집합과 함께 [링크 공유를 만드는](/help/assets/share-assets.md) 향상된 새로운 사용자 환경입니다.
+
+![이메일 서비스 구성](/help/assets/assets/config-email-service.png)
 
 ### Assets 보기의 새로운 기능 {#assets-view}
 
