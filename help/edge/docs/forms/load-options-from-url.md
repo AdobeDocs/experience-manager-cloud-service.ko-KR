@@ -1,79 +1,85 @@
 ---
 title: URL에서 드롭다운 목록 옵션 로드
-description: 드롭다운 목록 옵션은 개별 스프레드시트에 포함된 다음 제공된 URL을 통해 기본 스프레드시트로 가져옵니다.
+description: 드롭다운 목록 옵션은 별도의 스프레드시트에 포함되어, 제공된 URL을 통해 기본 스프레드시트로 가져옵니다.
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
-source-git-commit: eadfc3d448bd2fadce08864ab65da273103a6212
+source-git-commit: 2affe155b285986128487043fcc4f2938fc15842
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 2%
+source-wordcount: '442'
+ht-degree: 59%
 
 ---
 
 
 # URL에서 드롭다운 목록 옵션 로드
 
-Edge Delivery Services 양식에서는 사전 정의된 옵션 세트에서 값을 선택할 수 있는 옵션이 제공됩니다. 양식 작성자는 `select` 요소: 선택 항목 목록을 제공합니다.
-예를 들어 `enquiry` form에는 국가를 선택할 수 있는 드롭다운 메뉴가 있으며, 사용자가 선택할 수 있는 사전 정의된 국가의 범위를 제공합니다. 이 목록은 쉼표로 구분된 긴 국가 목록으로 구성되어 있습니다.
+Forms에는 사용자가 사전 정의된 옵션에서 선택할 수 있는 드롭다운 메뉴가 포함되어 있는 경우가 많습니다. 이러한 옵션은 일반적으로 양식 자체에서 정의되지만 긴 목록을 관리하는 것은 번거로울 수 있습니다. 이 안내서에서는 URL을 통해 별도의 스프레드시트에서 드롭다운 옵션을 로드하여 양식 작성을 개선하는 방법을 간략하게 설명합니다.
+
+
+별도의 스프레드시트에서 드롭다운 옵션을 로드하면 다음과 같은 이점이 있습니다.
+
+* 간소화된 관리: 중앙 위치에서 드롭다운 옵션을 유지 관리하여 더 쉬운 업데이트 및 추가 작업을 수행할 수 있습니다.
+* 효율성 향상: 양식 정의 내에 긴 옵션 목록을 수동으로 추가할 필요가 없습니다.
+
+
+
 
 ![드롭다운 옵션](/help/forms/assets/drop-down-options.png)
 
-드롭다운 메뉴에 대한 긴 옵션 목록은 양식의 정의가 포함된 시트에 직접 추가할 때 관리가 번거로울 수 있습니다. 이러한 드롭다운 옵션을 저장할 별도의 시트를 만들면 프로세스를 간소화하고 간소화할 수 있습니다. 이 시트는 구조화된 형식으로 배열된 모든 드롭다운 옵션에 대한 중앙 집중식 저장소 역할을 합니다. 각 옵션은 고유한 행에 나열되므로 쉽게 관리하고 업데이트할 수 있습니다.
-
-URL을 통해 다른 스프레드시트에서 옵션 목록을 로드하여 양식 작성 프로세스를 개선해 보겠습니다.
 
 이 문서가 작성되면 다음 방법을 파악할 수 있습니다.
 
-* [별도의 스프레드시트에서 옵션 정의](#define-options)
+* [개별 스프레드시트에서 옵션 정의](#define-options)
 * [드롭다운 목록 옵션을 로드할 URL 추가](#add-url)
 
-## 별도의 시트에서 옵션 정의 {#define-options}
+## 개별 시트에 옵션 정의 {#define-options}
 
-다음 두 개의 열이 있는 시트를 만듭니다.`Option` 및 `Value`옵션을 정의하려면 다음을 수행하십시오.
+별도의 스프레드시트에서 옵션 정의
 
-1. Microsoft® SharePoint 또는 Google 드라이브 폴더의 AEM 프로젝트 폴더로 이동합니다.
-2. 이름이 인 시트 추가 `shared-country` Microsoft® SharePoint 사이트 또는 Google 드라이브 폴더에 다음을 추가합니다.
-
-   * **옵션**: 드롭다운 메뉴에 있는 옵션의 표시 값을 나타냅니다.
-   * **값**: 사용자가 옵션을 선택할 때 제출된 값을 나타냅니다.
+1. 스프레드시트를 만듭니다.
+   1. Microsoft® SharePoint 또는 Google 드라이브에서 AEM 프로젝트 폴더를 찾습니다.
+   1. 새 시트를 추가합니다. 예를 들어 &quot;shared-country&quot;입니다.
+1. 옵션 열 정의: &quot;Option&quot; 및 &quot;Value&quot; 열을 추가합니다.
+   * &quot;옵션&quot;은 드롭다운 메뉴에 표시되는 텍스트를 정의합니다.
+   * &quot;값&quot;은 사용자가 옵션을 선택할 때 제출되는 값을 정의합니다.
 
    >[!NOTE]
    >
-   > 드롭다운 옵션의 값과 옵션이 동일한 경우 스프레드시트에는 **옵션** 열.
+   >옵션과 값이 모두 동일한 경우 &quot;Option&quot; 열만 필요합니다.
 
-   새 시트를 추가하겠습니다. [공유 국가](/help/forms/assets/enquiry-options.xlsx) 에 표시되는 옵션용 `Destination` 드롭다운 목록 `enquiry` 양식.
+1. 스프레드시트 채우기: &quot;옵션&quot; 열(필요한 경우 &quot;값&quot; 열)에 국가 옵션을 입력합니다.
 
-   다음 그림을 참조하여 다음을 수행하십시오. `shared-country` 스프레드시트:
+   구조에 대해서는 아래 예를 참조하십시오.
 
    ![국가별 드롭다운](/help/forms/assets/drop-down-country-options.png)
-3. 미리보기 및 게시 `shared-country` 시트 사용 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
-   다음을 보여주는 URL 참조 `shared-country` 시트: https://main--wefinance--wkndforms.hlx.live/enquiry.json?sheet=country
+1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content)을 사용하여 `shared-country` 시트를 미리 보고 게시합니다.
+
+   `shared-country` 시트를 보여 주는 URL(
+https://main--wefinance--wkndforms.hlx.live/enquiry.json?sheet=country)을 참조하십시오.
 
 >[!NOTE]
 >
-> `?sheet=country` 는 URL에 추가된 쿼리 매개 변수입니다. 이 매개 변수는 다음을 기반으로 필터링된 JSON을 나타냅니다. `shared-country` 시트. 다른 국가와 관련된 정보가 포함된 JSON 파일로 리디렉션됩니다.
+> `?sheet=country`는 URL에 추가되는 쿼리 매개변수입니다. 이 매개변수는 `shared-country` 시트를 기준으로 필터링된 JSON을 나타냅니다. 다양한 국가와 관련된 정보가 있는 JSON 파일로 리디렉션됩니다.
 
 ## 드롭다운 목록 옵션을 로드할 URL 추가{#add-url}
 
-다음 `Options` 의 속성 `select` 필드는 URL을 허용합니다. 이 URL은 의 옵션으로 사용되는 JSON 배열을 반환합니다. `Destination` 드롭다운 목록입니다. 로드할 URL 드롭다운 목록 옵션을 추가하려면 다음을 수행합니다.
+`select` 필드의 `Options` 속성은 URL을 허용합니다. URL은 `Destination` 드롭다운 목록의 옵션으로 사용되는 JSON 배열을 반환합니다. 드롭다운 목록 옵션을 로드할 URL을 추가하는 방법:
 
-1. Microsoft® SharePoint 또는 Google 드라이브의 AEM 프로젝트 폴더로 이동하여 스프레드시트를 엽니다. 양식에 대한 새 스프레드시트를 만들 수도 있습니다.
-1. 의 URL 복사 `shared-country` 을(를) 시트에 붙여 넣습니다. `Options` 열 `Destination` 필드.
+1. Microsoft® SharePoint 또는 Google Drive의 AEM 프로젝트 폴더로 이동하여 스프레드시트를 엽니다. 양식의 스프레드시트를 새로 만들 수도 있습니다.
+1. `shared-country` 시트의 URL을 복사하여 `Destination` 필드의 `Options` 열에 붙여넣습니다.
 
    ![문의 스프레드시트](/help/forms/assets/drop-down-enquiry.png)
 
-1. 다음을 사용하여 시트 미리보기 및 게시 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content)을 사용하여 시트를 미리 보고 게시합니다.
 
 
    ![국가별 드롭다운](/help/forms/assets/load-dropdown-options-form.png)
 
-다음을 참조할 수 있습니다 [조회 스프레드시트](/help/forms/assets/enquiry-options.xlsx) 을 클릭하여 로드할 URL 드롭다운 목록 옵션을 추가합니다.
+드롭다운 목록 옵션을 로드하기 위해 URL을 추가하려면 [문의 스프레드시트](/help/forms/assets/enquiry-options.xlsx)를 참조하시기 바랍니다.
 
-양식 정의에 URL을 통합하여 드롭다운 목록 옵션을 로드한 후에는 `Destination` URL에서 드롭다운이 나타나기 시작합니다.
+드롭다운 목록 옵션을 로드하기 위해 URL을 양식 정의에 통합한 후 `Destination` 드롭다운이 URL에 표시되기 시작합니다.
 
-을 표시하는 아래 URL을 참조하십시오. `enquiry` 별도의 시트에 저장된 옵션을 표시하는 양식:
+별도 시트에 저장된 옵션을 표시하는 `enquiry` 양식을 표시하려면 아래 URL을 참조하십시오.
 
 https://main--wefinance--wkndforms.hlx.live/enquiry-form
 

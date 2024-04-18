@@ -2,10 +2,8 @@
 title: 규칙을 사용하여 양식에 동적 동작 추가
 description: 최고 성능을 위해 구축된 AEM Forms Edge Delivery Services을 통해 간소화된 데이터 수집 및 사용자 참여의 미래를 구상할 수 있습니다. 규칙을 사용하여 양식에 동적 동작을 추가하십시오.
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
 exl-id: 58042016-e655-446f-a2bf-83f1811525e3
-source-git-commit: 61c8d08a21ad81a74e1093838b38f22af94751c3
+source-git-commit: 2affe155b285986128487043fcc4f2938fc15842
 workflow-type: tm+mt
 source-wordcount: '2216'
 ht-degree: 0%
