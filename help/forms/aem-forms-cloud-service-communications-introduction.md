@@ -1,13 +1,14 @@
 ---
 title: Forms as a Cloud Service 통신 API란 무엇입니까?
 description: 통신 API를 사용하여 문서에 서명, 인증 또는 보호하고, PDF 생성 프로세스를 자동화하고, PDF 문서를 다른 형식으로 변환합니다.
-Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
+Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs.
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
+exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
+source-git-commit: 126af719cfd2c9361d0e7768b3b65e1149b6a989
 workflow-type: tm+mt
-source-wordcount: '1982'
-ht-degree: 56%
+source-wordcount: '1988'
+ht-degree: 55%
 
 ---
 
@@ -190,14 +191,11 @@ DocAssurance 서비스에는 서명 및 암호화 API가 포함되어 있습니�
 
 서명 API 및 암호화 API는 모두 [동기 API](#types-of-communications-apis-types).
 
-### Reader 확장 서비스
+### 사용 권한 API
 
-<span class="preview"> Reader 확장 서비스 기능은 얼리 어답터 프로그램 아래에 있습니다. 공식 이메일 ID에서 aem-forms-ea@adobe.com에 작성하여 얼리어답터 프로그램에 참여하고 기능에 대한 액세스를 요청할 수 있습니다. </span>
+<span class="preview"> 사용 권한 기능은 얼리어답터 프로그램 아래에 있습니다. 공식 이메일 ID에서 aem-forms-ea@adobe.com에 작성하여 얼리어답터 프로그램에 참여하고 기능에 대한 액세스를 요청할 수 있습니다. </span>
 
-Reader 확장 서비스를 사용하면 추가 사용 권한과 함께 Adobe Reader의 기능을 확장하여 조직에서 대화형 PDF 문서를 쉽게 공유할 수 있습니다. Reader 확장 서비스는 Adobe Reader 7.0 이상에서 작동합니다. 이 서비스는 PDF 문서에 사용 권한을 추가합니다. 이 작업은 문서에 주석 추가, 양식 채우기, 문서 저장과 같이 Adobe Reader을 사용하여 PDF 문서를 열 때 일반적으로 사용할 수 없는 기능을 활성화합니다.
-
->[!NOTE]
->서드파티 사용자는 권한이 활성화된 문서에서 작동하는 데 추가 소프트웨어나 플러그인이 필요하지 않습니다.
+사용 권한 기능을 사용하면 추가 사용 권한과 함께 Adobe Reader의 기능을 확장하여 조직에서 대화형 PDF 문서를 쉽게 공유할 수 있습니다. 이 서비스는 Adobe Reader 7.0 이상에서 작동하며 PDF 문서에 사용 권한을 추가합니다. 이 작업은 문서에 주석 추가, 양식 채우기, 문서 저장과 같이 Adobe Reader을 사용하여 PDF 문서를 열 때 일반적으로 사용할 수 없는 기능을 활성화합니다.
 
 PDF 문서에 적절한 사용 권한이 추가되면 수신자는 Adobe Reader 내에서 다음 활동을 수행할 수 있습니다.
 
@@ -208,11 +206,13 @@ PDF 문서에 적절한 사용 권한이 추가되면 수신자는 Adobe Reader 
 * 완료되거나 주석이 있는 PDF 문서를 전자적으로 제출합니다.
 * PDF 문서 및 양식을 내부 데이터베이스 및 웹 서비스에 대한 직관적인 개발 프런트 엔드로 사용합니다.
 * 검토자가 직관적인 마크업 도구를 사용하여 주석을 추가할 수 있도록 PDF 문서를 다른 사용자와 공유합니다. 이러한 도구에는 전자 스티커 메모, 스탬프, 하이라이트 및 텍스트 취소선이 포함됩니다. Acrobat에서도 동일한 기능을 사용할 수 있습니다.
-* 바코드 형식 디코딩을 지원합니다.
+* Barcoded Forms 디코딩을 지원합니다.
 
 이러한 특수 사용 권한 기능은 권한이 활성화된 PDF 문서가 Adobe Reader 내에서 열릴 때 자동으로 활성화됩니다. 사용자가 권한이 활성화된 문서 작업을 완료하면 Adobe Reader에서 해당 기능이 다시 비활성화됩니다. 사용자가 다른 권한이 활성화된 PDF 문서를 받을 때까지 비활성화됩니다.
 
-Reader 확장 서비스의 다양한 사용 권한 기능은 다음과 같습니다.
+#### 사용 권한 활성화 또는 비활성화
+
+PDF Reader 서비스를 확장하기 위한 다양한 사용 권한 기능은 다음과 같습니다.
 
 * **바코드 디코딩**: PDF 문서 내의 바코드를 디코딩합니다.
 
@@ -238,7 +238,11 @@ Reader 확장 서비스의 다양한 사용 권한 기능은 다음과 같습니
 
 * **독립 실행형 제출**: PDF 문서에서 오프라인으로 양식 데이터를 제출합니다.
 
-**Reader 확장 서비스의 기타 기능**
+#### 사용 권한 추출
+
+Adobe Acrobat Reader 확장성을 위해 PDF 문서에 대해 활성화 또는 비활성화된 사용 권한을 검색하는 데 도움이 됩니다.
+
+#### 기타 기능
 
 * **메시지**: 하나 이상의 사용 권한이 적용된 PDF 문서를 열 때 Adobe Acrobat Reader 내에 표시되는 메시지입니다.
 * **암호 잠금 해제**: 암호화된 PDF 문서를 여는 데 필요한 암호입니다. 일반적으로 문서 열기 암호이지만 PDF 문서가 권한 암호로 추가로 보호되는 경우 중 하나를 사용하여 열 수 있습니다.
