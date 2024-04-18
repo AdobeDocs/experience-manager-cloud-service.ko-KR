@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: ff4f8416284c8491a252b725dfa5224e0c0d9fd5
+source-git-commit: c1c170e1cae148c53662cd49850e2a33754fbafc
 workflow-type: tm+mt
 source-wordcount: '3119'
 ht-degree: 3%
@@ -65,6 +65,7 @@ JavaScript 주석은 JavaScript 코드에 대한 메타데이터를 제공하는
 * `@argument` `{type} name <Parameter Description>`
 * `@arg` `{type}` `name <Parameter Description>`.
   `{type}` 매개 변수 유형을 나타냅니다.  허용되는 매개 변수 유형은 다음과 같습니다.
+
    * string: 단일 문자열 값을 나타냅니다.
    * number: 단일 숫자 값을 나타냅니다.
    * 부울: 단일 부울 값(true 또는 false)을 나타냅니다.
