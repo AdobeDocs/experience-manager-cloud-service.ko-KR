@@ -3,9 +3,9 @@ title: 적응형 Forms에서 테마를 만들고 사용하려면 어떻게 해�
 description: 테마를 사용하여 스타일을 지정하고 핵심 구성 요소를 사용하여 적응형 양식에 시각적 ID를 제공할 수 있습니다. 여러 적응형 Forms에서 테마를 공유할 수 있습니다.
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+source-git-commit: 159407dfaa5d17caddca2953a5732f0e91eb474c
 workflow-type: tm+mt
-source-wordcount: '2610'
+source-wordcount: '2754'
 ht-degree: 5%
 
 ---
@@ -128,7 +128,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 1. 다음 명령을 실행합니다.
 
    ```
-         code .
+      code .
    ```
 
    ![일반 텍스트 편집기에서 테마 폴더 열기](/help/forms/assets/aem-forms-theme-folder-in-vs-code.png)
@@ -137,14 +137,31 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 1. 편집할 `package.json` 페이지를 엽니다.
 
-1. 에 대한 값 설정 `name` 및 `description` 속성.
+1. 에 대한 값 설정 `name` 및 `version` 속성.
 
-   이름 속성은 &quot;aem-forms-wknd-theme&quot;와 같이 테마를 고유하게 식별하는 데 사용되며 **스타일** 탭 / **양식 만들기 마법사**. 설명 속성은 테마의 목적 및 설계된 시나리오를 포함하여 테마에 대한 추가 세부 정보를 제공합니다. 테마의 버전, 설명 및 라이선스를 지정할 수도 있습니다.
+   ![캔버스 테마 이름 변경 이미지](/help/forms/assets/changename_canvastheme.png)
+
+   >[!NOTE]
+   >
+   > * 이름 속성은 테마를 고유하게 식별하는 데 사용되며 지정된 이름이에 표시됩니다. **스타일** 의 탭 **양식 만들기 마법사**.
+   > * 선택에 따라 테마 이름을 선택할 수 있는 옵션이 있습니다. 예를 들면 다음과 같습니다. `mytheme` 또는 `customtheme`. 그러나 이 경우 이름을 로 지정했습니다. `aem-forms-wknd-theme`.
+
+1. 편집할 `package-lock.json` 페이지를 엽니다.
+1. 에 대한 값 설정 `name` 및 `version` 속성. 다음에 대한 값이 `name` 및 `version` 의 속성 `Package-lock`.json 파일은 `Package.json` 파일.
+
+   ![캔버스 테마 이름 변경 이미지](/help/forms/assets/changename_canvastheme-package-lock.png)
+
+1. (선택 사항) `ReadMe` 편집할 파일 및 테마 이름을 업데이트합니다.
+
+   ![캔버스 테마 이름 변경 이미지](/help/forms/assets/changename_canvastheme-readme-file.png)
 
 1. 파일을 저장하고 닫습니다.
 
-![캔버스 테마 이름 변경 이미지](/help/forms/assets/changename_canvastheme.png)
+**테마 이름을 설정하는 동안 고려 사항**
 
+* 다음을 제거해야 합니다. `@aemforms` 의 테마 이름에서 `Package.json` 파일 및 `Package-lock.json` 파일. 이 경우 제거하지 못했습니다. `@aemforms` 맞춤화된 테마 이름에서 테마 배포 중 프론트엔드 파이프라인이 실패합니다.
+* 테마를 업데이트하는 것이 좋습니다 `version` 위치: `Package.json` 파일 및 `Package-lock.json` 시간에 따른 테마 변경 및 개선 사항을 정확하게 반영하기 위한 파일입니다.
+* 사용 방법, 설치 지침 및 기타 관련 세부 정보에 대한 중요한 정보는에서 테마 이름을 업데이트하는 것이 좋습니다. `ReadMe` 파일.
 
 #### 3. 테마 맞춤화 {#customize-the-theme}
 
