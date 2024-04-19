@@ -4,9 +4,9 @@ description: AEM as a Cloud Service의 Cloud Manager 2024.4.0 릴리스 정보�
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: f1d8778f3cfb6868740141d008fd0217839e9103
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '706'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -21,16 +21,16 @@ ht-degree: 78%
 
 ## 릴리스 일자 {#release-date}
 
-AEM as a Cloud Service의 Cloud Manager 2024.4.0 릴리스 날짜는 2024년 4월 10일입니다. 다음 릴리스는 2024년 5월 9일에 예정되어 있습니다.
+AEM as a Cloud Service의 Cloud Manager 2024.4.0 릴리스 일자는 2024년 4월 10일입니다. 다음 릴리스는 2024년 5월 9일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
-* 삭제 작업이 다음과 같이 개선되었습니다. [Edge 게재](/help/edge/overview.md) 해당 사이트와 관련된 프로그램에서 도메인 매핑을 업데이트하여 웹 사이트
+* 해당 사이트와 관련된 프로그램에서 도메인 매핑을 업데이트하여 [Edge Delivery](/help/edge/overview.md) 웹 사이트에 대한 삭제 작업이 개선되었습니다.
    * 더 이상 매핑된 사이트가 없으면 매핑이 삭제됩니다.
-* AEM 인스턴스의 중요한 시작 단계 중에 실시간 상태 업데이트를 제공하여 배포 추적을 개선했습니다.
-   * 이 기능을 사용하면 배포 진행 상황을 완벽하게 파악할 수 있으므로 의사 결정과 운영 효율성을 향상시킬 수 있습니다.
-* 다음 [네트워크 인프라](/help/security/configuring-advanced-networking.md) 보다 포괄적인 보기를 제공하기 위해 연결된 모든 환경을 지역 기반 필터링 없이 표시하도록 목록이 개선되었습니다.
-* 코드 빌드 문제에 대한 향상된 오류 메시지를 통해 근본 원인과 다음 실행 가능한 단계를 보다 쉽게 식별할 수 있습니다.
+* AEM 인스턴스의 중요한 시작 단계 동안 실시간 상태 업데이트를 제공하여 배포 추적이 향상되었습니다.
+   * 이 기능을 사용하면 배포 진행 상황을 완벽하게 파악할 수 있어 더 나은 의사 결정과 운영 효율성을 실현할 수 있습니다.
+* [네트워크 인프라](/help/security/configuring-advanced-networking.md) 목록이 향상되어 지역 기반 필터링 없이 연결된 모든 환경을 표시함으로써 더욱 포괄적인 보기를 제공합니다.
+* 코드 빌드 문제에 대한 개선된 오류 메시지를 통해 근본 원인과 실행 가능한 다음 단계를 보다 쉽게 식별할 수 있습니다.
 
 ## 얼리 어답터 프로그램 {#early-adoption}
 
@@ -46,7 +46,7 @@ Adobe의 얼리 어답터 프로그램에 참여하여 향후 기능을 테스�
 
 ### 자체 GitHub 가져오기 {#byo-github}
 
-GitHub를 사용하여 저장소를 관리하는 경우, [이제 Cloud Manager를 통해 GitHub 저장소 내에서 직접 코드의 유효성을 검사할 수 있습니다.](/help/implementing/cloud-manager/managing-code/byo-github.md) 이 통합을 통해 코드를 Adobe 저장소와 지속적으로 동기화할 필요가 없으며 기본 분기에 병합하기 전에 가져오기 요청을 확인할 수 있습니다. 이 기능은 공개 GitHub 전용입니다. 자체 호스팅 GitHub에 대해서는 지원되지 않습니다.
+GitHub를 사용하여 저장소를 관리하는 경우 [이제 Cloud Manager를 통해 GitHub 저장소 내에서 직접 코드의 유효성을 검사할 수 있습니다.](/help/implementing/cloud-manager/managing-code/byo-github.md) 이 통합을 통해 코드를 Adobe 저장소와 지속적으로 동기화할 필요가 없으며 기본 분기에 병합하기 전에 가져오기 요청을 확인할 수 있습니다. 이 기능은 공개 GitHub 전용입니다. 자체 호스팅 GitHub에 대해서는 지원되지 않습니다.
 
 이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일로 `Grp-CloudManager_BYOG@adobe.com`에 이메일 주소를 보내 주십시오.
 
@@ -73,4 +73,4 @@ GitHub를 사용하여 저장소를 관리하는 경우, [이제 Cloud Manager�
 
 ## 버그 수정 {#bug-fixes}
 
-* Cloud Manager가 잘못된 커밋 해시가 있는 아티팩트를 재사용한 버그가 해결되었습니다.
+* Cloud Manager가 잘못된 커밋 해시가 있는 아티팩트를 재사용하는 버그가 해결되었습니다.
