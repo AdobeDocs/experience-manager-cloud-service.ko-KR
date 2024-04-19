@@ -2,10 +2,10 @@
 title: 경험 조각
 description: Adobe Experience Manager as a Cloud Service 경험 조각을 사용하여 경험을 재사용이 가능하고 및 유연하게 만듭니다.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 0784bfc2928b218a566fdd252fee045ca5ae6b9c
+source-git-commit: e9b9ab2dfd5e1a5b204cbec70ec0a46ebb46f9e9
 workflow-type: tm+mt
-source-wordcount: '2083'
-ht-degree: 95%
+source-wordcount: '2098'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Experience Manager as a Cloud Service 내 경험 조각은
 경험 조각:
 
 * 경험(페이지)의 일부입니다.
-* 여러 페이지에서 사용할 수 있습니다.
+* 여러 페이지(편집 가능한 템플릿을 기반으로 함)에서 사용할 수 있습니다.
 * 구조 및 구성 요소를 정의하기 위한 템플릿(편집만 가능)을 기반으로 합니다.
 * 이 템플릿을 사용하여 경험 조각의 *루트 페이지*&#x200B;를 제작할 수 있습니다.
 * 단락 시스템에서 레이아웃이 있는 하나 이상의 구성 요소로 구성되어 있습니다.
@@ -262,6 +262,10 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 이제 페이지를 작성할 때 경험 조각을 사용할 수 있습니다.
 
 1. 편집할 페이지를 엽니다.
+
+   >[!NOTE]
+   >
+   >페이지는 편집 가능한 템플릿을 기반으로 해야 합니다.
 
 1. 페이지 단락 시스템 내에서 경험 조각 구성 요소의 인스턴스를 만듭니다.
 

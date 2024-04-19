@@ -2,9 +2,9 @@
 title: 경험 조각 개요
 description: Adobe Experience Manager as a Cloud Service 경험 조각을 확장합니다.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: e9b9ab2dfd5e1a5b204cbec70ec0a46ebb46f9e9
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1656'
 ht-degree: 0%
 
 ---
@@ -69,6 +69,8 @@ Adobe은 오버레이를 사용하여 재작성기를 구성할 것을 권장합
 >[!CAUTION]
 >
 >***전용*** 편집 가능한 템플릿은 경험 조각에서 지원됩니다.
+>
+>경험 조각은 편집 가능한 템플릿을 기반으로 하는 페이지에서만 사용할 수 있습니다.
 
 <!-- >***Only*** [editable templates](/help/sites-developing/page-templates-editable.md) are supported for Experience Fragments.
 -->
