@@ -2,10 +2,11 @@
 title: 에서 에셋을 검색하고 검색하는 방법 알아보기 [!DNL Assets view]?
 description: AEM Assets 보기에서 에셋을 검색하고 검색하는 방법을 알아봅니다. 강력한 검색 기능을 통해 적절한 에셋을 빠르게 찾고 콘텐츠 속도를 높일 수 있습니다.
 role: User
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
+source-git-commit: bd3835980fcada20fbfe2551a5c15cc7c69a5c37
 workflow-type: tm+mt
-source-wordcount: '1543'
-ht-degree: 91%
+source-wordcount: '1908'
+ht-degree: 74%
 
 ---
 
@@ -238,6 +239,91 @@ Experience Manager Assets을 사용하면 조직의 기본 랜딩 페이지를 �
 1. 미리보기 화면을 닫으려면 **[!UICONTROL 닫기]**&#x200B;를 클릭합니다.
 
    ![검색 우선 홈 페이지 미리보기](assets/search-first-preview.gif)
+
+## 상황별 검색 {#contextual-search}
+
+텍스트 프롬프트를 정의하여 저장소에서 사용할 수 있는 에셋을 검색할 수도 있습니다. Experience Manager Assets은 이러한 텍스트 프롬프트를 검색 필터로 자동으로 변환하고 검색 결과를 표시합니다. 필터 창을 사용하여 자동 필터를 보고 수정하여 검색 결과의 범위를 좁힐 수 있습니다.
+
+### 컨텍스트 검색 액세스 {#access-contextual-search}
+
+Experience Manager Assets에서 컨텍스트 검색에 액세스하려면:
+
+1. 클릭 **[!UICONTROL 검색]** 왼쪽 창에서 을 클릭합니다.
+
+   ![상황별 검색](assets/access-contextual-search.png)
+
+1. 검색(Search) 텍스트 상자에서 텍스트 프롬프트를 정의하고 **[!UICONTROL 상황별 검색]**.
+
+   ![상황별 검색 텍스트 프롬프트](assets/contextual-search-text-prompt.png)
+
+   [!DNL Experience Manager Assets] 검색 결과를 표시합니다.
+
+
+### 지원되는 필터 {#supported-filters}
+
+상황별 검색은 다음과 같은 기본 필터를 지원합니다. 이러한 필터를 기반으로 텍스트 프롬프트의 적절한 검색 결과를 봅니다.
+
+* 이미지 높이
+
+* 이미지 폭
+
+* 파일 유형: 이미지, 문서, 비디오 또는 폴더.
+
+* MIME 유형: JPG, PNG, TIFF, GIF, MP4, PDF, PPTX, DOCX 또는 XLSX
+
+* 만든 날짜
+
+* 수정일
+
+* 만료일
+
+* 에셋 상태: 승인됨, 거부됨 또는 모두
+
+* 만료된 에셋
+
+### 텍스트 프롬프트의 예 {#text-prompts-examples}
+
+**예 1**
+
+**텍스트 프롬프트**: 이번 달에 생성된 이미지.
+
+[!DNL Experience Manager Assets] 다음 필터를 자동으로 적용하고 검색 결과를 표시합니다.
+
+![상황별 검색 예 1](assets/contextual-search-example1.png)
+
+**예 2**
+
+**텍스트 프롬프트**: 해변과 맑은 하늘이 있는 높이 200px, 너비 100px 이상의 이미지.
+
+[!DNL Experience Manager Assets] 다음 필터를 자동으로 적용하고 검색 결과를 표시합니다.
+
+![상황별 검색 예 2](assets/contextual-search-example2.png)
+
+**예 3**
+
+**텍스트 프롬프트**: 만료되고 승인되지 않은 지난 달에 생성된 1500픽셀 및 2500픽셀 높이의 파란색 하늘 이미지가 필요합니다.
+
+[!DNL Experience Manager Assets] 다음 필터를 자동으로 적용하고 검색 결과를 표시합니다.
+
+![상황별 검색 예 3](assets/contextual-search-example3.png)
+
+다음 비디오에서는 상황별 검색 사용자 인터페이스에 액세스하고 텍스트 프롬프트를 정의하고 검색 결과를 보는 전체 프로세스를 보여 줍니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3428407)
+
+### 상황별 검색 비활성화 {#disable-contextual-search}
+
+관리자는 조직의 사용자에 대해 컨텍스트 검색을 비활성화하는 옵션도 있습니다. 이렇게 하려면 다음 단계를 수행하십시오.
+
+1. **[!UICONTROL 설정]** > **[!UICONTROL 일반 설정]**&#x200B;으로 이동합니다.
+
+1. 다음에서 [!UICONTROL 상황별 검색] 섹션, 끄기 **[!UICONTROL 조직에 대한 상황별 검색 활성화]** 조직의 모든 사용자에 대해 상황별 검색 기능을 비활성화하려면 전환합니다.
+
+### 상황별 검색 피드백 {#contextual-search-feedback}
+
+상황별 검색 기능에 대한 피드백을 제공해야 하는 경우 ![상황별 검색 아이콘](assets/do-not-localize/contextual-search-icon.png)  피드백 아이콘을 클릭합니다. 피드백 유형을 선택하고 제목과 설명을 지정한 다음 을 클릭합니다. **[!UICONTROL 제출]**.
+
+![상황별 검색 피드백](assets/contextual-search-feedback.png)
 
 ## 다음 단계 {#next-steps}
 
