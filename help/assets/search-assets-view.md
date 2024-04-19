@@ -3,7 +3,7 @@ title: 에서 에셋을 검색하고 검색하는 방법 알아보기 [!DNL Asse
 description: AEM Assets 보기에서 에셋을 검색하고 검색하는 방법을 알아봅니다. 강력한 검색 기능을 통해 적절한 에셋을 빠르게 찾고 콘텐츠 속도를 높일 수 있습니다.
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
-source-git-commit: bd3835980fcada20fbfe2551a5c15cc7c69a5c37
+source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
 workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 74%
@@ -20,7 +20,7 @@ ht-degree: 74%
 
 [!DNL Assets view]는 기본적으로 작동하는 효과적인 검색 기능을 제공합니다. 검색 기능은 전체 텍스트 검색이므로 포괄적입니다. 강력한 검색 기능을 통해 적절한 자산을 빠르게 찾고 콘텐츠 속도를 높일 수 있습니다. [!DNL Assets view]는 스마트 태그, 제목, 생성 날짜 및 저작권과 같은 메타데이터를 통해 전체 텍스트 검색 및 다중 검색 기능을 제공합니다.
 
-자산을 검색하려면
+에셋을 검색하려면 다음을 수행하십시오.
 
 * 페이지 상단의 검색 상자를 클릭합니다. 기본적으로 현재 탐색 중인 폴더 내에서 검색됩니다. 다음 중 하나를 수행하십시오.
 

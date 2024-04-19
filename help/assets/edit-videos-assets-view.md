@@ -2,9 +2,9 @@
 title: 비디오 편집
 description: 다음을 사용하여 비디오 편집 [!DNL Adobe Express] 옵션을 제공하고 업데이트된 비디오를 버전으로 저장합니다.
 role: User
-source-git-commit: dd67ce6fd8d0626db5518a39dd5ed472ddfeff93
+source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '753'
 ht-degree: 19%
 
 ---
@@ -14,8 +14,6 @@ ht-degree: 19%
 임베디드 기능을 사용하여 비디오를 완벽한 크기로 손쉽게 변환할 수 있습니다. [!DNL Adobe Express] 빠른 작업. 의 빠른 작업 [!DNL Assets Essentials] 제공: [!DNL Adobe Express] 비디오 자르기, 비디오 크기 조정, 비디오 트리밍 및 비디오를 GIF으로 변환 등 사용자에게 친숙한 비디오 편집 옵션을 제공합니다.
 
 비디오를 편집한 후 새 비디오를 새 버전으로 저장할 수 있습니다. 필요한 경우 버전 관리를 통해 나중에 원본 자산으로 되돌릴 수 있습니다. 비디오를 편집하려면 비디오 세부 정보로 이동하여 **[!UICONTROL 비디오 편집]**. 또는 에셋을 선택하고 세부 정보 를 클릭한 다음 를 클릭합니다 ![가위](assets/do-not-localize/cut.svg) 오른쪽 창에서 사용할 수 있는 아이콘.
-
-에 대해 자세히 알아보기 [미리보기 인터페이스](navigate-assets-view.md).
 
 ## 사전 요구 사항 {#prerequisites}
 

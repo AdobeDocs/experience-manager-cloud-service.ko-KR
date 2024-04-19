@@ -4,10 +4,10 @@ description: 자산 보기에서 메타데이터를 관리하는 방법에 대�
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
-source-git-commit: 9823bd8af9fce93c8f21495f720673d8b41595ed
+source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
 workflow-type: tm+mt
 source-wordcount: '1783'
-ht-degree: 82%
+ht-degree: 81%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 82%
 
 메타데이터는 자산을 보다 세부적으로 분류하는 데 도움이 되며 디지털 정보의 양이 증가할 때 유용합니다. 파일 이름, 미리보기 및 메모리 기준으로만 수백 개의 파일을 관리할 수 있습니다. 그러나 이 접근 방식은 확장할 수 없습니다. 관련된 사용자의 수와 관리하는 자산의 수가 증가하면 효율성이 떨어질 수 있습니다.
 
-메타데이터를 추가하면 자산이 다음과 같이 되기 때문에 디지털 자산의 가치가 증가합니다.
+메타데이터를 추가하면 에셋이 다음과 같이 되기 때문에 디지털 에셋의 가치가 증가합니다.
 
 * 접근성 향상 - 시스템과 사용자가 쉽게 찾을 수 있습니다.
 * 관리 용이성 - 동일한 속성 세트를 가진 자산을 더 쉽게 찾고 변경 사항을 적용할 수 있습니다.
