@@ -3,10 +3,11 @@ title: 자산 보기에서 메타데이터를 관리하는 방법
 description: 자산 보기에서 메타데이터를 관리하는 방법에 대해 알아봅니다. 메타데이터 관리 기능이 향상되어 에셋의 액세스 가능성, 관리 용이성 및 완성도가 향상됩니다.
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
+source-git-commit: 9823bd8af9fce93c8f21495f720673d8b41595ed
 workflow-type: tm+mt
-source-wordcount: '1667'
-ht-degree: 87%
+source-wordcount: '1783'
+ht-degree: 82%
 
 ---
 
@@ -144,13 +145,27 @@ MIME 하위 유형 > MIME 유형 > `default` 양식 > 기본 제공 양식
 
 2. **[!UICONTROL 폴더에 할당]**&#x200B;을 선택합니다.
 
-3. 폴더를 선택하고 **[!UICONTROL 할당]**&#x200B;을 클릭합니다.
+3. 폴더를 선택하고 **[!UICONTROL 할당]**. 폴더 이름을 클릭하여 폴더를 선택할 수 있습니다.
 
    ![폴더에 메타데이터 양식 할당](assets/assign-to-folder.png)
 
    또한 폴더 세부 정보 페이지로 이동한 다음 오른쪽 창에 있는 폴더 속성에서 메타데이터 양식을 선택하여 메타데이터 양식을 폴더에 할당할 수도 있습니다.
 
    ![폴더 속성의 메타데이터 양식](assets/metadata-from-folder-props.png)
+
+### 폴더에서 메타데이터 양식 제거 {#remove-metadata-form-folder}
+
+메타데이터 양식을 하나 이상의 폴더에 할당한 후 Experience Manager Assets을 사용하면 선택한 폴더에서 메타데이터 양식을 제거할 수도 있습니다.
+
+폴더에서 메타데이터 양식을 제거하려면 다음을 수행합니다.
+
+1. **[!UICONTROL 설정]** > **[!UICONTROL 메타데이터 양식]**&#x200B;으로 이동하여 메타데이터 양식을 선택합니다.
+
+1. 클릭 **[!UICONTROL 폴더에서 제거]**. 메타데이터 양식 표시를 위해 할당된 폴더 목록입니다.
+
+1. 폴더를 선택하고 **[!UICONTROL 제거]**. 목록에서 여러 폴더를 선택할 수도 있습니다.
+
+폴더 세부 정보 페이지로 이동하여 을 선택할 수도 있습니다. **[!UICONTROL 시스템 매핑 메타데이터 양식]** 다음에서 **[!UICONTROL 메타데이터 Forms]** 폴더에서 할당된 메타데이터 양식을 제거하는 필드입니다.
 
 ## 다음 단계 {#next-steps}
 
