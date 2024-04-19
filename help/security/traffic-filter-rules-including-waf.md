@@ -2,10 +2,10 @@
 title: WAF 규칙이 포함된 트래픽 필터 규칙
 description: 웹 애플리케이션 방화벽(WAF)이 포함된 트래픽 필터 규칙 구성
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 3a79de1cccdec1de4902b234dac3120efefdbce8
-workflow-type: ht
-source-wordcount: '3669'
-ht-degree: 100%
+source-git-commit: d210fed56667b307a7a816fcc4e52781dc3a792d
+workflow-type: tm+mt
+source-wordcount: '3788'
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 Cloud Manager 구성 파이프라인을 통해 트래픽 필터 규칙을 프로덕션(비샌드박스) 프로그램의 dev, stage 및 prod 환경 유형에 배포할 수 있습니다. RDE에 대한 지원은 향후 제공될 예정입니다.
 
-[튜토리얼을 참고하면](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) 이 기능에 대한 전문 지식을 빠르게 습득할 수 있습니다.
+[튜토리얼을 참고하면](#tutorial) 이 기능에 대한 전문 지식을 빠르게 습득할 수 있습니다.
 
 >[!NOTE]
 >요청/응답 수정, 리디렉션 선언, AEM이 아닌 원본으로의 프록시 등 CDN에서 트래픽을 구성하는 다른 옵션에 관심이 있으십니까? 얼리 어답터 프로그램에 참여하여 [방법을 알아보고 사용해 보십시오](/help/implementing/dispatcher/cdn-configuring-traffic.md).
@@ -415,6 +415,8 @@ data:
 
 속도 제한은 CDN POP당 계산됩니다. 예를 들어 몬트리올, 마이애미, 더블린의 POP에서 초당 각 80, 90, 120 요청에 대해 트래픽 속도를 경험하고 속도 제한 규칙이 100으로 제한 설정되어 있다고 가정하겠습니다. 이 경우 더블린으로 보내는 트래픽만 속도가 제한됩니다.
 
+속도 제한은 가장자리에 도달하는 트래픽, 가장자리에 도달한 트래픽 또는 오류 수를 기반으로 평가됩니다.
+
 ### rateLimit 구조 {#ratelimit-structure}
 
 | **속성** | **유형** | **기본값** | **의미** |
@@ -422,6 +424,7 @@ data:
 | limit | 10에서 10000 사이의 정수 | required | 규칙이 트리거되는 초당 요청의 요청 속도(CDN POP당)입니다. |
 | window | 정수 열거형: 1, 10 또는 60 | 10 | 요청 속도를 계산하는 샘플링 기간(초). 카운터의 정확도는 창의 크기에 따라 달라집니다(창이 클수록 정확도가 높아짐). 예를 들어 1초 시간 제한 창에서는 50% 정확도를 기대하고 60초 시간 제한 창에서는 90% 정확도를 기대할 수 있습니다. |
 | penalty | 60에서 3600 사이의 정수 | 300(5분) | 일치하는 요청이 차단되는 기간(초 단위로 반올림). |
+| 횟수 | 모두, 가져오기, 오류 | 모두 | 에지 트래픽(모두), 원본 트래픽(가져오기) 또는 오류 수를 기반으로 평가합니다. |
 | groupBy | 배열[getter] | 없음 | 처리율 제한 장치 카운터는 요청 속성 세트(예: clientIp)로 집계됩니다. |
 
 
@@ -447,6 +450,7 @@ data:
         limit: 60
         window: 10
         penalty: 300
+        count: all
         groupBy:
           - reqProperty: clientIp
       action: block
@@ -468,7 +472,7 @@ data:
         when: { reqProperty: path, equals: /critical/resource }
         action:
           type: block
-        rateLimit: { limit: 100, window: 60, penalty: 60 }
+        rateLimit: { limit: 100, window: 60, penalty: 60, count: all }
 ```
 
 ## 트래픽 필터 규칙 경고 {#traffic-filter-rules-alerts}
@@ -615,7 +619,7 @@ Adobe는 Cloud Manager를 통해 다운로드한 CDN 로그를 수집하기 위�
 
 [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Github 저장소에서 바로 대시보드 도구를 복제할 수 있습니다.
 
-대시보드 도구 사용법에 대한 구체적인 지침은 [튜토리얼](#tutorial)을 참조하십시오.
+[Tutorials](#tutorial) 대시보드 도구 사용 방법에 대한 구체적인 지침을 볼 수 있습니다.
 
 ## 권장 스타터 규칙 {#recommended-starter-rules}
 
@@ -702,7 +706,11 @@ data:
 
 ## 튜토리얼 {#tutorial}
 
-[튜토리얼 살펴보기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)로 트래픽 필터 규칙에 대한 실질적인 지식과 경험을 얻습니다.
+두 가지 튜토리얼을 사용할 수 있습니다.
+
+### 트래픽 필터 규칙(WAF 규칙 포함)으로 웹 사이트 보호
+
+[튜토리얼 작업](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) WAF 규칙을 포함한 트래픽 필터 규칙에 대한 일반적이고 실용적인 지식과 경험을 얻을 수 있습니다.
 
 튜토리얼은 다음 과정에 대해 소개합니다.
 
@@ -711,3 +719,16 @@ data:
 * WAF 규칙이 포함된 트래픽 필터 규칙 선언
 * 대시보드 도구를 사용하여 결과 분석
 * 모범 사례
+
+### 트래픽 필터 규칙을 사용하여 DoS 및 DDoS 공격 차단
+
+[차단 방법에 대해 자세히 알아보기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) 서비스 거부(DoS) 및 분산 서비스 거부(DDoS) 공격은 속도 제한 트래픽 필터 규칙 및 기타 전략을 사용합니다.
+
+튜토리얼은 다음 과정에 대해 소개합니다.
+
+* 보호 이해
+* 비율 제한이 초과되면 경고 받기
+* 대시보드 도구를 사용하여 트래픽 패턴 분석을 통해 속도 제한 트래픽 필터 규칙에 대한 임계값을 구성할 수 있습니다.
+
+
+
