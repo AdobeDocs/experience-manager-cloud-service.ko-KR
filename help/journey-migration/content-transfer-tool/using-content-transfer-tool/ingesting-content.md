@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 727fbc49657de752ac6daeb38b5a9d7aba331a5c
 workflow-type: tm+mt
 source-wordcount: '2876'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -69,8 +69,8 @@ Cloud Acceleration Manager를 사용하여 마이그레이션 세트를 수집�
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_estimate"
->title="수집 기간 예상"
->abstract="특정 수집의 대략적인 지속 시간을 표시하여 소요 시간에 대한 일반적인 정보를 제공할 수 있습니다. 정확성에 대한 제한이 있습니다."
+>title="수집 기간 예측"
+>abstract="소요 시간을 가늠할 수 있도록 특정 수집의 대략적인 지속 시간을 표시할 수 있습니다. 다만 정확성에는 한계가 있습니다."
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets/estimate.png)
 
