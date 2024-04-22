@@ -3,7 +3,7 @@ title: Universal Editor에 사용하도록 구성된 블록 만들기
 description: Edge Delivery Services 프로젝트를 통해 AEM 작성 시 Universal Editor에 사용하도록 구성된 블록을 만드는 방법에 대해 알아봅니다.
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1297'
 ht-degree: 100%
 

@@ -3,7 +3,7 @@ title: Edge Delivery Services 프로젝트를 사용한 AEM 작성을 위한 콘
 description: Edge Delivery Services 프로젝트를 통한 AEM 작성 시 콘텐츠 모델링의 작동 방식과 자체 콘텐츠의 모델링 방법에 대해 알아보십시오.
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2233'
 ht-degree: 100%
 
