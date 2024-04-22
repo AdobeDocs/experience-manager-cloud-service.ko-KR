@@ -174,8 +174,8 @@ ht-degree: 99%
          + [2021.10.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Experience Manager 강화 커넥터용 Workfront 릴리스 정보{#workfront}
       + [Experience Manager 강화 커넥터용 Workfront 최신 릴리스 정보](/help/assets/release-notes-enhanced-connector-workfront.md)
-   + 변형 생성을 위한 릴리스 노트 {#generate-variations}
-      + [변형 생성을 위한 최신 릴리스 정보](/help/generative-ai/release-notes-generate-variations.md)
+   + 변형 생성 릴리스 정보 {#generate-variations}
+      + [변형 생성 최신 릴리스 정보](/help/generative-ai/release-notes-generate-variations.md)
    + [새로운 기능](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service의 주요 변경 사항](/help/release-notes/aem-cloud-changes.md)
    + [사용 중단되거나 제거된 기능 및 API](/help/release-notes/deprecated-removed-features.md)
@@ -361,7 +361,7 @@ ht-degree: 99%
          + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
          + [고려 사항 삭제](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [구조 분석](/help/sites-cloud/administering/content-fragments/analysis.md)
-         + [콘텐츠 조각 콘솔의 에셋](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+         + [콘텐츠 조각 콘솔의 자산](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
          + [키보드 단축키](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
       + 사이트 생성 {#site-creation}
          + [새 사이트 생성](/help/sites-cloud/administering/site-creation/create-site.md)
@@ -899,7 +899,7 @@ ht-degree: 99%
       + [최적화된 GraphQL 필터링을 위해 콘텐츠 조각 업데이트](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [샘플 GraphQL 쿼리](/help/headless/graphql-api/sample-queries.md)
       + [GraphQL 쿼리 문제 해결](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [컨텐츠 조각 및 모델 OpenAPI](/help/headless/content-fragment-openapis.md)
+   + [콘텐츠 조각 및 모델 OpenAPI](/help/headless/content-fragment-openapis.md)
    + [Assets HTTP API의 콘텐츠 조각 지원](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=ko-KR)
    + 보안 {#security}
       + [권한](/help/headless/security/permissions.md)
