@@ -3,9 +3,9 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud Service에서 Headless 콘텐츠 게재를 위해 콘텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 5771a6afedeb85188e89700d439a9bac18e01fdc
+source-git-commit: d0814d3feb9ad14ddd3372851a7b2df4b0c81125
 workflow-type: tm+mt
-source-wordcount: '5359'
+source-wordcount: '5365'
 ht-degree: 83%
 
 ---
@@ -1125,7 +1125,7 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
 
 또한 다음 사항을 알고 있어야 합니다.
 
-* GraphQL 쿼리에 두 개(또는 이상) 모델에서 이름이 같은 필드가 포함되어 있으면 필드 충돌 오류가 반환됩니다.
+* GraphQL 쿼리에 둘 이상의 모델에서 이름이 같은 필드가 포함되어 있고 다음 조건이 충족되면 필드 충돌 오류가 반환됩니다.
 
    * 여기서
 
