@@ -1,17 +1,21 @@
 ---
-title: 사용자 지정 구현에 대한 트랜잭션 기록
+title: 사용자 정의 구현을 위한 트랜잭션 레코드
 description: TransactionRecorder API를 사용하여 트랜잭션으로 계상되지 않은 작업을 자동으로 기록합니다
 feature: Adaptive Forms, Foundation Components
-hide: true
-hidefromtoc: true
-source-git-commit: a1a87a27d73d7472ec02de37621123bbdd3876b4
+exl-id: cb584f78-30af-4a58-be99-843352e8249c
+source-git-commit: 539f4bf86f0e32057b2228dc44c86120d6e8457b
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 1%
+source-wordcount: '193'
+ht-degree: 16%
 
 ---
 
-# 사용자 지정 구현에 대한 트랜잭션 기록 {#record-a-transaction-for-custom-implementations}
+# 사용자 정의 구현을 위한 트랜잭션 레코드 {#record-a-transaction-for-custom-implementations}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-osgi/record-transaction-custom-implementation) |
+| AEM as a Cloud Service | 이 문서 |
 
 TransactionRecorder API를 사용하여 트랜잭션으로 계산되지 않은 작업을 자동으로 기록합니다.
 
@@ -87,5 +91,4 @@ $.ajax({
 
 ## 관련 문서 {#related-articles}
 
-* [거래 보고서 청구 가능 API](/help/forms/transaction-reports-billable-apis.md)
-
+* [트랜잭션 보고서 과금 가능한 API](/help/forms/transaction-reports-billable-apis.md)

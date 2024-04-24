@@ -2,17 +2,22 @@
 title: 트랜잭션 보고서 과금 가능한 API
 description: 트랜잭션으로 계산되는 모든 API 목록
 feature: Adaptive Forms, Foundation Components
-hide: true
-hidefromtoc: true
 exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
-source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
+source-git-commit: 539f4bf86f0e32057b2228dc44c86120d6e8457b
 workflow-type: tm+mt
-source-wordcount: '1598'
-ht-degree: 40%
+source-wordcount: '1411'
+ht-degree: 28%
 
 ---
 
+
 # 트랜잭션 보고서 과금 가능한 API {#transaction-reports-billable-apis}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-billable-apis) |
+| AEM as a Cloud Service | 이 문서 |
+
 
 AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링에 필요한 여러 API를 제공합니다. 일부 API는 트랜잭션으로 계산되며 다른 API는 무료로 사용할 수 있습니다. 이 문서에서는 거래 보고서에서 거래로 간주되는 모든 API 목록을 제공합니다. 다음은 청구 가능한 API가 사용되는 몇 가지 일반적인 시나리오입니다.
 
@@ -42,32 +47,32 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링에 필요한 여�
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
 >title="양식 생성의 평균 기간"
->abstract="그래프는 양식을 작성하는 데 걸린 평균 시간을 보여 줍니다. 그래프의 각 막대는 특정 양식을 나타내며 막대의 높이는 해당 시간대 동안 양식 생성에 소요된 평균 기간을 나타냅니다. 이 그래프를 분석하여 사용자는 다양한 기간 또는 다양한 상황에서 양식 장성 시 효율성과 속도를 이해하고 잠재적인 개선 사항에 대한 인사이트를 얻을 수 있습니다. 그래프는 현재 AEM Forms 작성자 인스턴스와 관련된 데이터를 제공합니다. 다른 인스턴스의 데이터를 보려면 해당 인스턴스의 대시보드에 액세스하십시오."
+>abstract="그래프는 양식을 작성하는 데 걸린 평균 시간을 보여 줍니다. 그래프의 각 막대는 특정 양식을 나타내고 막대의 높이는 해당 기간 동안 양식을 만드는 데 걸린 평균 기간을 나타냅니다."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
 >title="평균 양식 작성 기간"
->abstract="그래프에는 편집을 위해 양식을 연 첫날부터 측정하여 양식을 만들고 게시하는 데 걸린 평균 시간이 표시됩니다. 각 막대는 양식의 특정 시간대에 해당하며 막대 높이는 양식 개발 시작부터 최종 완료 및 게시까지 걸린 평균 시간을 나타냅니다. 그래프는 현재 AEM Forms 작성자 인스턴스와 관련된 데이터를 제공합니다. 다른 인스턴스의 데이터를 보려면 해당 인스턴스의 대시보드에 액세스하십시오."
+>abstract="그래프는 편집하기 위해 양식을 연 초기 날짜로부터 측정한 양식을 만들고 게시하는 데 걸린 평균 시간을 표시합니다. 그래프는 현재 AEM Forms 작성자 인스턴스와 관련된 데이터를 제공합니다. 다른 인스턴스의 데이터를 보려면 해당 인스턴스의 대시보드에 액세스하십시오."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_newForms_graph_en"
 >title="새로운 양식 추적기"
->abstract="그래프는 특정 기간 동안 새로 생성된 양식의 수 또는 빈도에 대한 정보를 제공합니다. 그래프의 각 막대는 일, 주, 월 등 고유한 측정 단위를 나타냅니다. 각 막대의 높이는 해당 특정 간격 동안 생성된 새로운 양식의 수량 또는 빈도를 나타냅니다. 그래프는 현재 AEM Forms 작성자 인스턴스와 관련된 데이터를 제공합니다. 다른 인스턴스의 데이터를 보려면 해당 인스턴스의 대시보드에 액세스하십시오."
+>abstract="그래프는 특정 기간 동안 새로 생성된 양식의 수 또는 빈도에 대한 정보를 제공합니다. 그래프는 현재 AEM Forms 작성자 인스턴스와 관련된 데이터를 제공합니다. 다른 인스턴스의 데이터를 보려면 해당 인스턴스의 대시보드에 액세스하십시오."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
 >title="게시된 양식 추적기"
->abstract="그래프는 특정 기간 동안 성공적으로 게시된 양식의 수 또는 빈도에 대한 정보를 제공합니다. 이를 통해 시간 경과에 따른 양식 게시의 트렌드, 패턴 또는 변형을 이해하고, 생산성을 모니터링하고, 최대 게시 기간을 확인하거나, 양식 게시 프로세스의 변경 성공 여부를 평가할 수 있습니다. 그래프는 현재 AEM Forms 게시 인스턴스와 관련된 데이터를 제공합니다. 다른 인스턴스의 전환 데이터를 보려면 해당 인스턴스의 대시보드에 액세스하십시오."
+>abstract="그래프는 특정 기간 동안 성공적으로 게시된 양식의 수 또는 빈도에 대한 정보를 제공합니다. 그래프는 현재 AEM Forms 게시 인스턴스와 관련된 데이터를 제공합니다. 다른 인스턴스의 전환 데이터를 보려면 해당 인스턴스의 대시보드에 액세스하십시오."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formFragments_graph_en"
 >title="게시된 양식 추적기"
->abstract="이 그래프를 통해 양식에서 사용하는 양식 조각 수를 확인할 수 있습니다. 재사용 가능한 이러한 부분이 양식 작성에 얼마나 인기가 있고 일반적인지 알 수 있습니다. 그래프는 현재 AEM Forms 게시 인스턴스와 관련된 데이터를 제공합니다. 다른 인스턴스의 전환 데이터를 보려면 해당 인스턴스의 대시보드에 액세스하십시오."
+>abstract="이 그래프를 통해 양식에서 사용하는 양식 조각 수를 확인할 수 있습니다. 그래프는 현재 AEM Forms 게시 인스턴스와 관련된 데이터를 제공합니다. 다른 인스턴스의 전환 데이터를 보려면 해당 인스턴스의 대시보드에 액세스하십시오."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
 >title="게시된 양식 추적기"
->abstract="그래프에는 편집을 위해 양식 조각을 연 첫날부터 측정하여 해당 양식 조각을 만드는 데 걸린 평균 시간이 표시됩니다. 각 막대는 양식 조각의 특정 시간대에 해당하며 막대 높이는 양식 조각 개발 시작부터 최종 완료 및 게시까지 걸린 평균 시간을 나타냅니다. 그래프는 현재 AEM Forms 게시 인스턴스와 관련된 데이터를 제공합니다. 다른 인스턴스의 전환 데이터를 보려면 해당 인스턴스의 대시보드에 액세스하십시오."
+>abstract="그래프에는 편집을 위해 양식 조각을 연 첫날부터 측정하여 해당 양식 조각을 만드는 데 걸린 평균 시간이 표시됩니다. 그래프는 현재 AEM Forms 게시 인스턴스와 관련된 데이터를 제공합니다. 다른 인스턴스의 전환 데이터를 보려면 해당 인스턴스의 대시보드에 액세스하십시오."
 
 <!-- 
 
@@ -451,7 +456,7 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링에 필요한 여�
  </tbody>
 </table>
 
-다음 작업 중 하나 이상을 수행하면 API 호출의 사용이 트랜잭션으로 계산됩니다.
+다음 작업 중 하나 이상을 수행하면 호출 API 사용이 트랜잭션으로 계산됩니다.
 
 1. PDF 형식이 아닌 형식에서 PDF 형식으로 변환. <!--For instance, the conversion from XDP format to PDF format, catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
 1. PDF 형식에서 PDF/A 형식으로 변환.
