@@ -2,9 +2,9 @@
 title: CIF 작성 시작하기
 description: CIF 작성 시작하기
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 6f27c968c347e6b2be8c9bfcf9bb69e531d10ff9
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '781'
 ht-degree: 2%
 
 ---
@@ -15,21 +15,21 @@ Adobe Experience Manager(AEM) CIF 작성에 대해 알아봅니다.
 
 ## 지금까지의 스토리 {#story-so-far}
 
-이 AEM Content and Commerce 여정의 이전 문서에서는 [AEM Content 및 Commerce 자세히 알아보기](/help/commerce-cloud/introduction.md)에서는 headless CMS 및 AEM Content and Commerce의 기본 이론과 개념을 배웠습니다.
+이 AEM Content 및 Commerce 여정의 이전 문서에서는 [AEM Content 및 Commerce에 대해 알아보기](/help/commerce-cloud/introduction.md)에서는 headless CMS 및 AEM Content와 Commerce에 대한 기본 이론과 개념을 배웠습니다.
 
 이 문서는 이러한 기본 사항을 기반으로 합니다.
 
 ## 목표 {#objective}
 
-이 문서는 CIF for Content 및 Commerce 관련 저작을 사용하는 방법을 이해하는 데 도움이 됩니다. 문서를 읽고 나면
+이 문서는 CIF for Content 및 Commerce 특정 작성을 사용하는 방법을 이해하는 데 도움이 됩니다. 문서를 읽고 나면
 
-* 범용 편집기를 사용한 CIF 작성의 개념 이해
+* AEM에서 페이지 편집기를 사용하여 CIF 작성의 개념 이해
 * 제품 및 카테고리 선택기를 사용하여 AEM에서 제품 카탈로그 데이터에 액세스하는 방법
 * 제품 관리실 및 AEM Omnisearch를 사용하여 콘텐츠 및 상거래 데이터에 액세스하는 방법
 
-## 범용 편집기에서 CIF 작성 {#cif-authoring}
+## AEM 페이지 편집기에서 CIF 작성 {#cif-authoring}
 
-CIF은 컨텍스트를 종료하지 않고 실시간 제품 데이터에 액세스할 수 있는 기능으로 유니버설 편집기를 확장합니다.
+CIF은 AEM의 페이지 편집기를 확장하여 컨텍스트를 종료하지 않고 실시간 제품 데이터에 액세스합니다.
 
 사이드 패널을 열고 드롭다운 목록에서 &#39;제품&#39;을 선택합니다.
 ![제품 유형 선택](assets/asset-finder-overview.png)
@@ -95,7 +95,7 @@ Omnisearch는 상거래 백엔드에서 전체 텍스트 검색을 실행하여 
 
 이 여정 부분을 완료했으므로
 
-* 범용 편집기를 사용한 CIF 작성의 개념 이해
+* 페이지 편집기를 사용한 CIF 작성의 개념 이해
 * 제품 및 카테고리 선택기를 사용하여 AEM에서 제품 카탈로그에 액세스하는 방법
 * 제품 관리실 및 AEM Omnisearch를 사용하여 콘텐츠 및 상거래 데이터에 액세스하는 방법
 
