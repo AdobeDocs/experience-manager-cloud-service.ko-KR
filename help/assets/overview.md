@@ -1,19 +1,19 @@
 ---
-title: Assets as a [!DNL Cloud Service] 소개
-description: Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다.
+title: AEM을 사용하는 Adobe의 DAM(디지털 에셋 관리)
+description: Experience Manager Assets as a Cloud Service을 사용하여 Adobe의 DAM(디지털 에셋 관리)을 사용하고 관리하는 방법을 이해합니다.
 contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
-workflow-type: ht
-source-wordcount: '892'
-ht-degree: 100%
+source-git-commit: d66d645dd039189b34e6e3c4d937b82a14b8b801
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# Assets as a [!DNL Cloud Service] 소개 {#assets-cloud-service-introduction}
+# Assets as a 소개 [!DNL Cloud Service] AEM의 디지털 자산 관리용 {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
@@ -23,13 +23,13 @@ Adobe Experience Manager Assets as a [!DNL Cloud Service]는 클라우드 기반
 
 기업은 여러 디바이스, 교차 지역과 다국어 사용 사례의 다양한 파일 형식 및 콘텐츠 해상도에 대한 지원이 필요합니다. 자산 처리 및 저장 요구 사항에는 기존 솔루션에 과부하를 줄 수 있는 리소스와 기능이 필요합니다. 자산 처리의 기술적 제한으로 인해 원하는 결과를 얻지 못하는 경우가 있고, 저장 비용이 이윤에 방해가 되는 경우도 있습니다.
 
-우선 [클라우드 기반 제품의 이점](#solution-benefits)을 이해합니다. Experience Manager Assets에도 영향을 미치는 [Experience Manager as a  [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md)에 대한 주요 변경 사항을 확인한 다음 [Assets](/help/assets/assets-cloud-changes.md)에 대한 주요 변경 사항을 확인합니다.
+시작하려면 다음을 이해합니다. [클라우드 기반 오퍼링의 이점](#solution-benefits) for Digital Asset Management. Experience Manager Assets에도 영향을 미치는 [Experience Manager as a  [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md)에 대한 주요 변경 사항을 확인한 다음 [Assets](/help/assets/assets-cloud-changes.md)에 대한 주요 변경 사항을 확인합니다.
 
 [새 자산 기능에 대한 세부 정보](#whats-new-assets) 및 [알려진 문제](/help/release-notes/maintenance/latest.md)에 대해 알아봅니다. 이 릴리스에서 제거된 기능을 확인하려면 [더 이상 사용되지 않거나 제거된 기능](/help/release-notes/deprecated-removed-features.md) 목록을 참조하십시오. 마지막으로 이 [용어집](/help/overview/terminology.md)을 참조하여 Experience Manager 용어를 숙지합니다.
 
 ## 솔루션 이점 {#solution-benefits}
 
-다음은 Assets as a [!DNL Cloud Service]의 주요 이점입니다. 자세한 내용은 [Experience Manager as a 개요 [!DNL Cloud Service]](/help/overview/introduction.md)를 참조하십시오.
+다음은 로서 Assets가 제공하는 주요 이점입니다 [!DNL Cloud Service] for Digital Asset Management. 자세한 내용은 [Experience Manager as a 개요 [!DNL Cloud Service]](/help/overview/introduction.md)를 참조하십시오.
 
 * **자산 처리를 위한 최신 클라우드 서비스**: 새 자산 마이크로서비스는 확장 가능하고 안정적이고 간편한 클라우드 기반의 자산 처리 서비스입니다.
 * **뛰어난 확장성**: 확장성이 뛰어난 모든 유형의 배포. 필요한 경우 실제 온디맨드로 제공되는 무제한 리소스입니다. 기존 시스템에 비해 과잉 디자인 비용을 절감합니다.
@@ -38,13 +38,13 @@ Adobe Experience Manager Assets as a [!DNL Cloud Service]는 클라우드 기반
 * **지속적인 모니터링**: 시스템 모니터링은 자동화되어 있고, 기본 제공 검사와 트리거는 성능, 가용성 및 전반적인 견고성을 유지하는 데 도움이 됩니다.
 * **간편한 배포**: Experience Manager in the Cloud 작업은 완전히 자동화되어 수동 개입이 필요하지 않습니다. 배포를 자동화하는 경우 Cloud Manager(CM) 구성 요소는 사용자 정의 코드가 포함된 배포 가능한 Docker 이미지의 빌드를 자동화합니다.
 
-## 사용 가능한 개인 기반의 경험 {#persona-based-experiences}
+## 디지털 자산 관리를 위해 사용 가능한 사용자 기반 환경 {#persona-based-experiences}
 
 Adobe는 디지털 자산을 최대한 활용할 수 있는 강력한 DAM(디지털 자산 관리) 솔루션을 제공합니다. Adobe Experience Manager Assets에는 동일한 클라우드 서비스 저장소를 사용하는 서로 다른 두 가지 환경이 있습니다.
 
-* **관리자 보기**: 기존의 Assets as a Cloud Service 사용자 인터페이스입니다. 통합, 워크플로, 콘텐츠 자동화, 게시 등을 포함한 모든 고급 자산 관리 기능에 관리자 보기를 사용합니다.
+* **관리자 보기**: 기존의 Assets as a Cloud Service 사용자 인터페이스입니다. 통합, 워크플로우, 콘텐츠 자동화, 게시 등을 포함한 모든 고급 디지털 에셋 관리 기능에 대해 관리 보기를 사용하십시오.
 
-* **Assets 보기**: 디지털 자산을 저장, 관리, 검색 및 사용할 수 있는 가벼운 버전의 Adobe 자산 관리 환경입니다. 필수 자산 관리 기능이 포함된 간소화된 사용자 인터페이스입니다. 업로드, 메타데이터 관리, 검색, 다운로드 및 공유에 중점을 둔 가벼운 버전의 DAM 사용자를 위해 설계되었습니다.
+* **Assets 보기**: 디지털 자산을 저장, 관리, 검색 및 사용할 수 있는 가벼운 버전의 Adobe 자산 관리 환경입니다. 필수 디지털 에셋 관리 기능이 포함된 간소화된 사용자 인터페이스입니다. 업로드, 메타데이터 관리, 검색, 다운로드 및 공유에 중점을 둔 가벼운 버전의 DAM 사용자를 위해 설계되었습니다.
 
 관리자 보기에 대한 액세스 권한이 있는 사용자는 Assets 보기에도 액세스할 수 있습니다. Assets 보기는 간소화된 사용자 인터페이스를 통해 디지털 자산을 쉽게 관리, 검색 및 배포할 수 있습니다. 크리에이티브, 마케팅 및 사업 부문 팀 등 다양한 직무의 광범위한 사용자가 자산에 대해 공동 작업하고 필요한 시간과 장소에서 올바른 승인된 자산에 액세스할 수 있습니다. 많은 일반 DAM 사용자는 기능의 하위 집합만 포함하는 Assets 보기를 선호합니다. 이 경험은 크리에이티브, 읽기 전용 자산 소비자 및 더 가벼운 DAM 사용자를 대상으로 합니다.
 
