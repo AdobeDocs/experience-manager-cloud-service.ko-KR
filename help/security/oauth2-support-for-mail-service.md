@@ -1,11 +1,11 @@
 ---
 title: 메일 서비스에 대한 OAuth2 지원
-description: Adobe Experience Manager as a Cloud Service의 메일 서비스에 대한 Oauth2 지원
+description: Adobe Experience Manager as a Cloud.Service의 메일 서비스에 대한 OAuth2 지원.
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
-workflow-type: ht
-source-wordcount: '680'
-ht-degree: 100%
+source-git-commit: 678e81eb22cc1d7c239ac7a2594b39a3a60c51e2
+workflow-type: tm+mt
+source-wordcount: '679'
+ht-degree: 94%
 
 ---
 
@@ -33,7 +33,7 @@ AEM as a Cloud Service 메일 서비스에 대한 자세한 내용은 [이메일
 
    >[!NOTE]
    >
-   >권한 구성은 시간이 지나면서 발전할 수 있습니다. 권한 구성이 예상대로 작동하지 않으면 Microsoft로 작업합니다.
+   >권한 구성은 시간이 지나면서 발전할 수 있습니다. Microsoft® 예상대로 작동하지 않는 경우 사용합니다.
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
@@ -111,7 +111,7 @@ AEM측의 OAuth 구성을 진행하기에 앞서 아래 절차에 따라 accessT
 
 >[!NOTE]
 >
-> [이 위치](https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow)에서 Postman API 컬렉션을 가져올 수 있습니다.
+> [이 위치](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow)에서 Postman API 컬렉션을 가져올 수 있습니다.
 >
 > 자세한 내용은 [여기](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth)에서 MSFT OAuth 문서를 참조하십시오.
 
@@ -140,14 +140,14 @@ AEM측의 OAuth 구성을 진행하기에 앞서 아래 절차에 따라 accessT
 
    >[!NOTE]
    >
-   >범위는 시간이 지나면서 발전할 수 있습니다. 권한 구성이 예상대로 작동하지 않으면 Microsoft로 작업합니다.
+   >범위는 시간이 지나면서 발전할 수 있습니다. Microsoft® 예상대로 작동하지 않는 경우 사용합니다.
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
    * `offline_access`
    * `email`
    * `profile`
-1. 아래 구문을 사용하여 `/apps/<my-project>/osgiconfig/config` 아래에 `called com.day.cq.mailer.DefaultMailService.cfg.json`이라는 OSGI 속성 파일을 만듭니다. [이메일 서비스 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)에 설명된 대로 `smtp.host` 및 `smtp.port` 값은 고급 네트워킹 구성을 반영합니다.
+1. 아래 구문을 사용하여 `/apps/<my-project>/osgiconfig/config` 아래에 `called com.day.cq.mailer.DefaultMailService.cfg.json`이라는 OSGI 속성 파일을 만듭니다. [이메일 서비스 튜토리얼](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/email-service)에 설명된 대로 `smtp.host` 및 `smtp.port` 값은 고급 네트워킹 구성을 반영합니다.
 
    ```
    {

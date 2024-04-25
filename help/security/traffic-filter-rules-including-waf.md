@@ -1,11 +1,11 @@
 ---
 title: WAF 규칙이 포함된 트래픽 필터 규칙
-description: 웹 애플리케이션 방화벽(WAF)이 포함된 트래픽 필터 규칙 구성
+description: WAF(Web Application Firewall) 규칙을 포함한 트래픽 필터 규칙을 구성합니다.
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: d118cd57370a472dfe752c6ce7e332338606b898
+source-git-commit: b52da0a604d2c320d046136f5e526e2b244fa6cb
 workflow-type: tm+mt
-source-wordcount: '3817'
-ht-degree: 94%
+source-wordcount: '3790'
+ht-degree: 75%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 94%
 트래픽 필터 규칙을 사용하여 CDN 계층에서 요청을 차단하거나 허용할 수 있으므로 이는 다음과 같은 시나리오에 유용할 수 있습니다.
 
 * 새 사이트가 라이브로 전환되기 전 회사 내부 트래픽으로 특정 도메인에 대한 액세스 제한
-* 대규모 DoS 공격에 대한 취약성을 줄이기 위해 속도 제한 설정
+* 체적 DoS 공격에 덜 민감하도록 비율 제한 설정
 * 악성으로 알려진 IP 주소가 사용자 페이지를 타겟팅하지 않도록 함
 
 대부분의 트래픽 필터 규칙은 모든 AEM as a Cloud Service Sites 및 Forms 고객이 사용할 수 있습니다. 이 규칙은 IP, 호스트 이름, 경로 및 사용자 에이전트를 포함하여 요청 속성과 요청 헤더에서 주로 작동합니다.
 
-트래픽 필터 규칙의 하위 범주는 향상된 보안 라이선스와 WAF-DDoS 보호 라이선스 중 하나가 필요합니다. 이러한 강력한 규칙은 WAF(웹 애플리케이션 방화벽) 트래픽 필터 규칙(이하 WAF 규칙)이라고 하며 이 문서 후반부에 설명된 [WAF 플래그](#waf-flags-list)에 액세스할 수 있습니다.
+트래픽 필터 규칙의 하위 범주를 사용하려면 Enhanced Security 라이센스 또는 WAF-DDoS Protection 라이센스가 필요합니다. 이러한 강력한 규칙은 WAF(웹 애플리케이션 방화벽) 트래픽 필터 규칙(이하 WAF 규칙)이라고 하며 이 문서 후반부에 설명된 [WAF 플래그](#waf-flags-list)에 액세스할 수 있습니다.
 
 Cloud Manager 구성 파이프라인을 통해 트래픽 필터 규칙을 프로덕션(비샌드박스) 프로그램의 dev, stage 및 prod 환경 유형에 배포할 수 있습니다. RDE에 대한 지원은 향후 제공될 예정입니다.
 
 [튜토리얼을 참고하면](#tutorial) 이 기능에 대한 전문 지식을 빠르게 습득할 수 있습니다.
 
 >[!NOTE]
->요청/응답 수정, 리디렉션 선언, AEM이 아닌 원본으로의 프록시 등 CDN에서 트래픽을 구성하는 다른 옵션에 관심이 있으십니까? 얼리 어답터 프로그램에 참여하여 [방법을 알아보고 사용해 보십시오](/help/implementing/dispatcher/cdn-configuring-traffic.md).
+>요청/응답 편집, 리디렉션 선언 및 비 AEM 오리진으로의 프록시 지정을 포함하여 CDN에서 트래픽을 구성하는 다른 옵션에 관심이 있으십니까? 얼리 어답터 프로그램에 참여하여 [방법을 알아보고 사용해 보십시오](/help/implementing/dispatcher/cdn-configuring-traffic.md).
 
 
 ## 이 문서를 구성하는 방식 {#how-organized}
@@ -35,7 +35,7 @@ Cloud Manager 구성 파이프라인을 통해 트래픽 필터 규칙을 프로
 이 문서는 다음 섹션으로 구성되어 있습니다.
 
 * **트래픽 보호 개요:** 악성 트래픽으로부터 사용자를 보호하는 방법에 대해 알아보십시오.
-* **규칙을 구성하는 프로세스 제안:** 웹 사이트 보호를 위한 높은 수준의 방법론을 읽어 보십시오.
+* **규칙 구성을 위한 제안 프로세스:** 웹 사이트를 보호하기 위한 높은 수준의 방법론에 대해 읽어 보십시오.
 * **설정:** 고급 WAF 규칙을 포함하여 트래픽 필터 규칙을 설정, 구성 및 배포하는 방법에 대해 알아보십시오.
 * **규칙 구문:** `cdn.yaml` 구성 파일에서 트래픽 필터 규칙을 선언하는 방법에 대해 알아보십시오. 여기에는 모든 Sites 및 Forms 고객이 사용할 수 있는 트래픽 필터 규칙과 함께 해당 기능에 라이선스를 부여하는 고객을 위한 WAF 규칙의 하위 범주가 모두 포함되어 있습니다.
 * **규칙 예:** 진행 과정을 알아보려면 선언된 규칙의 예를 참조하십시오.
@@ -43,23 +43,23 @@ Cloud Manager 구성 파이프라인을 통해 트래픽 필터 규칙을 프로
 * **CDN 로그:** 선언된 규칙과 WAF 플래그가 트래픽과 일치하는지 확인하십시오.
 * **대시보드 도구:** CDN 로그를 분석하여 새로운 트래픽 필터 규칙을 구상해 보십시오.
 * **권장 스타터 규칙:** 규칙 집합을 시작하는 데 필요한 규칙입니다.
-* **튜토리얼:** 대시보드 도구로 올바른 규칙을 선언하는 방법을 비롯해 기능에 대한 실질적인 지식입니다.
+* **자습서:** 대시보드 도구를 사용하여 올바른 규칙을 선언하는 방법을 포함하여 이 기능에 대한 실용적인 지식입니다.
 
-**aemcs-waf-adopter@adobe.com**&#x200B;으로 메일을 보내어 트래픽 필터 규칙에 대한 피드백을 제공하거나 질문을 보내 주시기 바랍니다.
+Adobe이 이메일로 트래픽 필터 규칙에 대한 피드백을 제공하거나 질문을 할 수 있도록 초대합니다. **aemcs-waf-adopter@adobe.com**.
 
 ## 트래픽 보호 개요 {#traffic-protection-overview}
 
-오늘날 디지털 환경에서 악성 트래픽은 항상 우리를 위협하는 존재입니다. 위험의 심각성을 인지하고 고객 애플리케이션을 보호하고 공격 시 이를 완화하기 위한 여러 가지 방법을 제공합니다.
+오늘날 디지털 환경에서 악성 트래픽은 항상 우리를 위협하는 존재입니다. Adobe은 위험의 심각성을 인식하고 고객 애플리케이션을 보호하고 공격 발생 시 이를 완화하는 몇 가지 접근 방식을 제공합니다.
 
 Edge에서 Adobe Managed CDN은 대규모 및 반사/증폭 공격(레이어 3 및 4)을 포함하여 네트워크 레이어의 DoS 공격을 흡수합니다.
 
-기본적으로 Adobe는 특정 임계값을 초과하는 높은 수준의 트래픽 버스트로 인해 발생하는 성능 저하를 방지하기 위한 조치를 취합니다. DoS 공격이 사이트 가용성에 영향을 미치는 경우 Adobe 운영 팀에 경고하여 완화 조치를 취하도록 합니다.
+기본적으로 Adobe는 특정 임계값을 초과하는 높은 수준의 트래픽 버스트로 인해 발생하는 성능 저하를 방지하기 위한 조치를 취합니다. 사이트 가용성에 영향을 미치는 DoS 공격이 있는 경우 Adobe 운영 팀에 경고가 표시되고 이를 완화하기 위한 조치를 취합니다.
 
 고객은 콘텐츠 게재 흐름의 다양한 레이어에서 규칙을 구성하여 애플리케이션 레이어 공격(레이어 7)을 완화하기 위한 사전 조치를 취할 수 있습니다.
 
-예를 들어 Apache 계층에서 고객은 [Dispatcher 모듈](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-access-to-content-filter)과 [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html) 중 하나를 구성하여 특정 콘텐츠에 대한 액세스를 제한할 수 있습니다.
+예를 들어 Apache 계층에서 고객은 다음 중 하나를 구성할 수 있습니다. [Dispatcher 모듈](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) 또는 [ModSecurity](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) 특정 콘텐츠에 대한 액세스를 제한합니다.
 
-이 문서의 설명에 따라 Cloud Manager의 구성 파이프라인을 사용하여 트래픽 필터 규칙을 Adobe Managed CDN에 배포할 수 있습니다. IP 주소, 경로 및 헤더 등 속성 기반의 트래픽 필터 규칙 또는 속도 제한 설정 기반의 규칙 외에도 고객은 WAF 규칙이라는 트래픽 필터 규칙의 강력한 하위 범주에 라이선스를 부여할 수도 있습니다.
+이 문서에서 설명하는 바와 같이 트래픽 필터 규칙은 Cloud Manager의 구성 파이프라인을 사용하여 Adobe 관리 CDN에 배포할 수 있습니다. IP 주소, 경로 및 헤더 등 속성 기반의 트래픽 필터 규칙 또는 속도 제한 설정 기반의 규칙 외에도 고객은 WAF 규칙이라는 트래픽 필터 규칙의 강력한 하위 범주에 라이선스를 부여할 수도 있습니다.
 
 ## 권장 프로세스 {#suggested-process}
 
@@ -71,7 +71,7 @@ Edge에서 Adobe Managed CDN은 대규모 및 반사/증폭 공격(레이어 3 �
 1. 권장 스타터 규칙을 `cdn.yaml`에 복사하고 로그 모드에서 구성을 프로덕션 환경에 배포하십시오.
 1. 일부 트래픽을 수집한 후 일치 항목이 있는지 확인하려면 [대시보드 도구](#dashboard-tooling)를 사용하여 결과를 분석하십시오. 긍정 오류를 파악하고 필요한 사항을 조정하여 최종적으로 차단 모드에서 스타터 규칙을 활성화할 수 있습니다.
 1. CDN 로그 분석 기반의 사용자 정의 규칙을 추가하여 먼저 개발 환경에서 시뮬레이션된 트래픽으로 테스트한 후 로그 모드에서 스테이지 및 프로덕션 환경에 배포한 다음 차단 모드에서 배포하십시오.
-1. 트래픽을 지속적으로 모니터링하면서 위협 환경이 변함에 따라 규칙을 변경하십시오.
+1. 지속적으로 트래픽을 모니터링하여 위협 환경이 발전함에 따라 규칙을 변경합니다.
 
 ## 설정 {#setup}
 
@@ -103,7 +103,7 @@ Edge에서 Adobe Managed CDN은 대규모 및 반사/증폭 공격(레이어 3 �
          action: block
    ```
 
-`kind` 매개변수는 `CDN`으로 설정되어야 하며 버전은 스키마 버전(현재 `1`)으로 설정되어야 합니다. 아래 추가 예를 참조하십시오.
+다음 `kind` 매개 변수는 다음으로 설정해야 합니다. `CDN` 그리고 버전은 스키마 버전, 즉 `1`. 다음 예를 참조하십시오.
 
 
 <!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (for example, "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
@@ -119,7 +119,7 @@ Edge에서 Adobe Managed CDN은 대규모 및 반사/증폭 공격(레이어 3 �
    * [프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)을 참조하십시오.
    * [비프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)을 참조하십시오.
 
-RDE의 경우 명령이 사용되지만 RDE는 현재 지원되지 않습니다.
+RDE의 경우 명령줄이 사용되지만 RDE는 현재 지원되지 않습니다.
 
 **메모**
 
@@ -198,7 +198,7 @@ data:
 
 | **속성** | **유형** | **설명** |
 |---|---|---|
-| reqProperty | `string` | 요청 속성입니다.<br><br>다음 중 하나:<br><ul><li>`path`: 쿼리 매개변수 없이 URL의 전체 경로를 반환합니다.</li><li>`queryString`: URL의 쿼리 부분을 반환합니다.</li><li>`method`: 요청에 사용된 HTTP 메서드를 반환합니다.</li><li>`tier`: `author`, `preview` 또는 `publish` 중 하나를 반환합니다.</li><li>`domain`: (`Host` 헤더에 정의된) 도메인 속성을 소문자로 반환합니다.</li><li>`clientIp`: 클라이언트 IP를 반환합니다.</li><li>`clientCountry`: 두 자리 코드를 반환합니다(클라이언트가 위치한 국가를 식별하는 [https://en.wikipedia.org/wiki/kr/Regional_indicator_symbol](https://en.wikipedia.org/wiki/kr/Regional_indicator_symbol)).</li></ul> |
+| reqProperty | `string` | 요청 속성입니다.<br><br>다음 중 하나:<br><ul><li>`path`: 쿼리 매개변수 없이 URL의 전체 경로를 반환합니다.</li><li>`queryString`: URL의 쿼리 부분을 반환합니다.</li><li>`method`: 요청에 사용된 HTTP 메서드를 반환합니다.</li><li>`tier`: 다음 중 하나를 반환합니다. `author`, `preview`, 또는 `publish`.</li><li>`domain`: (`Host` 헤더에 정의된) 도메인 속성을 소문자로 반환합니다.</li><li>`clientIp`: 클라이언트 IP를 반환합니다.</li><li>`clientCountry`: 두 문자 코드 반환([지역 표시기 기호](https://en.wikipedia.org/wiki/kr/Regional_indicator_symbol)) 클라이언트가 있는 국가를 식별합니다.</li></ul> |
 | reqHeader | `string` | 지정된 이름의 요청 헤더를 반환합니다. |
 | queryParam | `string` | 지정된 이름의 쿼리 매개변수를 반환합니다. |
 | reqCookie | `string` | 지정된 이름의 쿠키를 반환합니다. |
@@ -228,7 +228,7 @@ when:
   in: [ "192.168.0.0/24" ]
 ```
 
-* 정규 표현식을 사용하여 작업할 때 [regex101](https://regex101.com/) 및 [Fastly Fiddle](https://fiddle.fastly.dev/)을 사용하는 것이 좋습니다. 이 [문서](https://developer.fastly.com/reference/vcl/regex/#best-practices-and-common-mistakes)에서 Fastly가 정규 표현식을 처리하는 방법에 대한 자세한 내용을 알아볼 수 있습니다.
+* Adobe은 다음을 사용하도록 권장합니다. [정규 표현식](https://regex101.com/) 및 [Fastly Fiddle](https://fiddle.fastly.dev/) regex를 사용하여 작업하는 경우. 이 [문서](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes)에서 Fastly가 정규 표현식을 처리하는 방법에 대한 자세한 내용을 알아볼 수 있습니다.
 
 
 ### 액션 구조 {#action-structure}
@@ -241,9 +241,9 @@ when:
 
 | **이름** | **허용된 속성** | **의미** |
 |---|---|---|
-| **허용** | `wafFlags` (선택 사항), `alert` (선택 사항, 아직 릴리스되지 않음) | wafFlags가 없으면 추가 규칙 처리를 중지하고 응답 제공을 진행합니다. wafFlags가 있으면 지정된 WAF 보호를 비활성화하고 추가 규칙 처리를 진행합니다. <br>경고가 지정된 경우 규칙이 5분 동안 10번 트리거되면 액션 센터 알림이 전송됩니다. 이 기능은 아직 릴리스되지 않았습니다. 얼리 어답터 프로그램에 참여하는 방법에 대한 자세한 내용은 [트래픽 필터 규칙 알림](#traffic-filter-rules-alerts) 섹션을 참조하십시오. |
-| **블록** | `status, wafFlags` (선택 사항이며 상호 배타적), `alert` (선택 사항, 아직 릴리스되지 않음) | wafFlags가 없으면 다른 모든 속성을 무시하는 HTTP 오류를 반환하고, 상태 속성으로 오류 코드를 정의하거나 406을 기본으로 표시합니다. wafFlags가 있으면 지정된 WAF 보호를 활성화하고 추가 규칙 처리를 진행합니다. <br>경고가 지정된 경우 규칙이 5분 동안 10번 트리거되면 액션 센터 알림이 전송됩니다. 이 기능은 아직 릴리스되지 않았습니다. 얼리 어답터 프로그램에 참여하는 방법에 대한 자세한 내용은 [트래픽 필터 규칙 알림](#traffic-filter-rules-alerts) 섹션을 참조하십시오. |
-| **로그** | `wafFlags` (선택 사항), `alert` (선택 사항, 아직 릴리스되지 않음) | 규칙이 트리거되었다는 사실을 로그 기록하지 않으면 처리에 영향을 주지 않습니다. wafFlags는 영향을 주지 않습니다. <br>경고가 지정된 경우 규칙이 5분 동안 10번 트리거되면 액션 센터 알림이 전송됩니다. 이 기능은 아직 릴리스되지 않았습니다. 얼리 어답터 프로그램에 참여하는 방법에 대한 자세한 내용은 [트래픽 필터 규칙 알림](#traffic-filter-rules-alerts) 섹션을 참조하십시오. |
+| **허용** | `wafFlags` (선택 사항), `alert` (선택 사항, 아직 릴리스되지 않음) | wafFlags가 없으면 추가 규칙 처리를 중지하고 응답 제공을 진행합니다. wafFlags가 있으면 지정된 WAF 보호를 비활성화하고 추가 규칙 처리를 진행합니다. <br>경고가 지정된 경우 규칙이 5분 동안 10번 트리거되면 작업 센터 알림이 전송됩니다. 이 기능은 아직 릴리스되지 않았습니다. 얼리 어답터 프로그램에 참여하는 방법에 대한 자세한 내용은 [트래픽 필터 규칙 알림](#traffic-filter-rules-alerts) 섹션을 참조하십시오. |
+| **블록** | `status, wafFlags` (선택 사항이며 상호 배타적), `alert` (선택 사항, 아직 릴리스되지 않음) | wafFlags가 없으면 다른 모든 속성을 무시하는 HTTP 오류를 반환하고, 상태 속성으로 오류 코드를 정의하거나 406을 기본으로 표시합니다. wafFlags가 있으면 지정된 WAF 보호를 활성화하고 추가 규칙 처리를 진행합니다. <br>경고가 지정된 경우 규칙이 5분 동안 10번 트리거되면 작업 센터 알림이 전송됩니다. 이 기능은 아직 릴리스되지 않았습니다. 얼리 어답터 프로그램에 참여하는 방법에 대한 자세한 내용은 [트래픽 필터 규칙 알림](#traffic-filter-rules-alerts) 섹션을 참조하십시오. |
+| **로그** | `wafFlags` (선택 사항), `alert` (선택 사항, 아직 릴리스되지 않음) | 규칙이 트리거되었다는 사실을 로그 기록하지 않으면 처리에 영향을 주지 않습니다. wafFlags는 영향을 주지 않습니다. <br>경고가 지정된 경우 규칙이 5분 동안 10번 트리거되면 작업 센터 알림이 전송됩니다. 이 기능은 아직 릴리스되지 않았습니다. 얼리 어답터 프로그램에 참여하는 방법에 대한 자세한 내용은 [트래픽 필터 규칙 알림](#traffic-filter-rules-alerts) 섹션을 참조하십시오. |
 
 ### WAF 플래그 목록 {#waf-flags-list}
 
@@ -260,31 +260,31 @@ when:
 | USERAGENT | 공격 툴링 | 공격 툴링은 자동화된 소프트웨어를 사용하여 보안 취약성을 식별하거나 발견된 취약성을 악용하려고 시도하는 것입니다. |
 | LOG4J-JNDI | Log4J JNDI | Log4J JNDI 공격은 2.16.0 이전 Log4J 버전에 있는 [Log4Shell 취약점](https://en.wikipedia.org/wiki/kr/Log4Shell)을 활용하려고 시도합니다. |
 | BHH | 잘못된 홉 헤더 | 잘못된 홉 헤더는 잘못된 형식의 TE(Transfer-Encoding) 또는 CL(Content-Length) 헤더나 올바른 형식의 TE 및 CL 헤더를 통한 HTTP 스머글링 시도를 나타냅니다. |
-| CODEINJECTION | 코드 삽입 | 코드 삽입은 사용자 입력을 통해 임의의 애플리케이션 코드 명령으로 대상 시스템을 제어하거나 손상시키려는 시도입니다. |
+| CODEINJECTION | 코드 삽입 | 코드 주입은 사용자 입력에 의한 임의의 응용 프로그램 코드 명령을 통해 대상 시스템에 대한 제어권을 획득하거나 손상을 시도하는 것이다. |
 | ABNORMALPATH | 비정상 경로 | 비정상 경로는 원래 경로가 정규화된 경로와 다름을 나타냅니다(예: `/foo/./bar`는 `/foo/bar`로 정규화됨). |
 | DOUBLEENCODING | 이중 인코딩 | 이중 인코딩은 html 문자를 이중 인코딩하는 회피 기술을 확인합니다. |
 | NOTUTF8 | 잘못된 인코딩 | 잘못된 인코딩으로 인해 서버가 요청의 악성 문자를 응답으로 변환하여 서비스 거부 또는 XSS가 발생할 수 있습니다. |
 | JSON-ERROR | JSON 인코딩 오류 | “Content-Type” 요청 헤더 내에 JSON을 포함하도록 지정되었지만 JSON 구문 분석 오류가 포함된 POST, PUT 또는 PATCH 요청 본문입니다. 흔히 프로그래밍 오류나 자동화된 요청 또는 악성 요청과 관련이 있습니다. |
 | MALFORMED-DATA | 요청 본문의 형식이 잘못된 데이터 | “Content-Type” 요청 헤더에 따라 형식이 잘못된 POST, PUT 또는 PATCH 요청 본문입니다. 예를 들어 “Content-Type: application/x-www-form-urlencoded” 요청 헤더가 지정되고 json인 POST 본문을 포함하는 경우입니다. 흔히 프로그래밍 오류, 자동화된 요청 또는 악성 요청에 해당합니다. 에이전트 3.2 이상이 필요합니다. |
-| SANS | 악성 IP 트래픽 | 악성 활동에 연루된 것으로 보고된 [SANS 인터넷 스톰 센터](https://isc.sans.edu/) IP 주소 목록입니다. |
+| SANS | 악성 IP 트래픽 | [SANS Internet Storm Center](https://isc.sans.edu/) 악의적인 활동에 연루된 보고된 IP 주소 목록입니다. |
 | NO-CONTENT-TYPE | 누락된 “Content-Type” 요청 헤더 | “Content-Type” 요청 헤더가 없는 POST, PUT 또는 PATCH 요청입니다. 이 경우 기본적으로 애플리케이션 서버는 “Content-Type: text/plain; charset=us-ascii”를 가정하게 됩니다. 자동화된 요청 및 악성 요청 중 대다수에서 “Content Type”이 누락되어 있을 수 있습니다. |
 | NOUA | 사용자 에이전트 없음 | 자동화된 요청 및 악성 요청 중 대다수가 가짜 사용자 에이전트 또는 누락된 사용자 에이전트를 사용하여 요청 주체인 디바이스 유형을 식별하기 어렵게 만듭니다. |
 | TORNODE | Tor 트래픽 | Tor는 사용자의 신원을 숨기는 소프트웨어입니다. Tor 트래픽 스파이크가 발생한다면 공격자가 자신의 위치를 숨기려고 시도하고 있음을 나타낼 수 있습니다. |
 | NULLBYTE | Null 바이트 | Null 바이트는 일반적으로 요청에 표시되지 않으며, 요청이 잘못된 형식이고 잠재적으로 악성임을 나타냅니다. |
-| PRIVATEFILE | 비공개 파일 | 비공개 파일은 민감한 정보를 유출할 수 있는 Apache `.htaccess` 파일 또는 구성 파일 등으로서, 흔히 본질적으로 기밀입니다. |
+| PRIVATEFILE | 비공개 파일 | 개인 파일은 Apache와 같이 기본적으로 기밀입니다. `.htaccess` 파일 또는 중요한 정보를 유출할 수 있는 구성 파일 |
 | SCANNER | 스캐너 | 널리 사용되는 스캔 서비스 및 도구를 식별합니다. |
 | RESPONSESPLIT | HTTP 응답 분할 | 헤더를 HTTP 응답에 삽입하기 위해 CRLF 문자가 애플리케이션에 대한 입력으로 제출되는 시점을 식별합니다. |
 | XML-ERROR | XML 인코딩 오류 | “Content-Type” 요청 헤더 내에 XML을 포함하도록 지정되었지만 XML 구문 분석 오류가 포함된 POST, PUT 또는 PATCH 요청 본문입니다. 흔히 프로그래밍 오류나 자동화된 요청 또는 악성 요청과 관련이 있습니다. |
 
 ## 고려 사항 {#considerations}
 
-* 충돌하는 두 규칙이 만들어졌을 때는 항상 허용 규칙이 차단 규칙보다 우선합니다. 예를 들어 특정 경로를 차단하는 규칙과 하나의 특정 IP 주소를 허용하는 규칙을 만들면 차단된 경로에서 해당 IP 주소의 요청이 허용됩니다.
+* 충돌하는 규칙이 두 개 생성되면 허용된 규칙이 항상 블록 규칙보다 우선합니다. 예를 들어 특정 경로를 차단하는 규칙과 하나의 특정 IP 주소를 허용하는 규칙을 만드는 경우 차단된 경로의 해당 IP 주소에서 요청이 허용됩니다.
 
 * 규칙이 일치하여 차단되면 CDN은 `406` 반환 코드로 응답합니다.
 
 * git 저장소에 액세스할 수 있는 모든 사용자가 암호를 읽을 수 있으므로 구성 파일은 비밀을 포함해서는 안 됩니다.
 
-* Cloud Manager에 정의된 IP 허용 목록은 트래픽 필터 규칙보다 우선합니다.
+* Cloud Manager에 정의된 IP 허용 목록이 트래픽 필터 규칙보다 우선합니다.
 
 * WAF 규칙 일치는 히트가 아닌 CDN 실패 및 통과에 대한 CDN 로그에만 나타납니다.
 
@@ -312,7 +312,7 @@ data:
 
 **예 2**
 
-다음 규칙은 Chrome이 포함된 User-Agent로 게시할 때 `/helloworld` 경로에 대한 요청을 차단합니다.
+이 규칙은 경로에 대한 요청을 차단합니다. `/helloworld` Chrome이 포함된 사용자 에이전트를 사용하여 게시할 때:
 
 ```
 kind: "CDN"
@@ -417,13 +417,13 @@ data:
         action: block
 ```
 
-## 속도 제한 규칙 {#rate-limits-rules}
+## 속도 제한 규칙
 
-특정 조건에 따라 트래픽이 수신 요청의 특정 속도를 초과하는 경우 트래픽을 차단하는 것이 바람직한 경우가 있습니다. `rateLimit` 속성의 값을 설정하면 규칙 조건과 일치하는 요청의 속도가 제한됩니다.
+특정 조건에 따라 특정 수신 요청 비율을 초과하는 경우 트래픽을 차단하는 것이 바람직한 경우도 있습니다. `rateLimit` 속성의 값을 설정하면 규칙 조건과 일치하는 요청의 속도가 제한됩니다.
 
 속도 제한 규칙은 WAF 플래그를 참조할 수 없습니다. 해당 플래그는 모든 Sites 및 Forms 고객이 사용할 수 있습니다.
 
-속도 제한은 CDN POP당 계산됩니다. 예를 들어 몬트리올, 마이애미, 더블린의 POP에서 초당 각 80, 90, 120 요청에 대해 트래픽 속도를 경험하고 속도 제한 규칙이 100으로 제한 설정되어 있다고 가정하겠습니다. 이 경우 더블린으로 보내는 트래픽만 속도가 제한됩니다.
+속도 제한은 CDN POP당 계산됩니다. 예를 들어 몬트리올, 마이애미 및 더블린의 POP에서 초당 각각 80, 90 및 120개의 요청이 트래픽 비율로 발생한다고 가정하겠습니다. 그리고, 요금 제한 규칙은 100이라는 한도로 설정되어 있다. 이 경우 더블린으로 보내는 트래픽만 속도가 제한됩니다.
 
 비율 제한은 가장자리에 도달하는 트래픽, 원본에 도달하는 트래픽 또는 오류 수를 기반으로 평가됩니다.
 
@@ -432,17 +432,16 @@ data:
 | **속성** | **유형** | **기본값** | **의미** |
 |---|---|---|---|
 | limit | 10에서 10000 사이의 정수 | required | 규칙이 트리거되는 초당 요청의 요청 속도(CDN POP당)입니다. |
-| window | 정수 열거형: 1, 10 또는 60 | 10 | 요청 속도를 계산하는 샘플링 기간(초). 카운터의 정확도는 창의 크기에 따라 달라집니다(창이 클수록 정확도가 높아짐). 예를 들어 1초 시간 제한 창에서는 50% 정확도를 기대하고 60초 시간 제한 창에서는 90% 정확도를 기대할 수 있습니다. |
+| window | 정수 열거형: 1, 10 또는 60 | 10 | 요청 속도를 계산하는 샘플링 기간(초). 카운터의 정확도는 창의 크기에 따라 다릅니다(큰 창의 정확도가 더 높음). 예를 들어 1초 윈도우에서는 50% 정확도를, 60초 윈도우에서는 90% 정확도를 기대할 수 있다. |
 | penalty | 60에서 3600 사이의 정수 | 300(5분) | 일치하는 요청이 차단되는 기간(초 단위로 반올림). |
 | 횟수 | 모두, 페치, 오류 | 모두 | 에지 트래픽(모두), 원본 트래픽(페치) 또는 오류 수(오류)를 기반으로 평가합니다. |
 | groupBy | 배열[getter] | 없음 | 처리율 제한 장치 카운터는 요청 속성 세트(예: clientIp)로 집계됩니다. |
-
 
 ### 예 {#ratelimiting-examples}
 
 **예 1**
 
-이 규칙은 지난 10초 동안 평균 60req/sec(CDN POP당)를 초과하면 5분간 클라이언트를 차단합니다.
+이 규칙은 지난 10초 동안 평균 60req/sec(CDN POP당)을 초과하는 경우 5밀리초 동안 클라이언트를 차단합니다.
 
 ```
 kind: "CDN"
@@ -468,7 +467,7 @@ data:
 
 **예 2**
 
-10초의 시간 창에서 초당 평균 100개의 원본 요청(CDN POP당)을 초과하는 경우 60초 동안 경로/위험/리소스의 요청을 차단합니다.
+10초의 시간 창에서 초당 평균 100개의 원본 요청(CDN POP당)을 초과하는 경우 60초 동안 경로 /critical/resource에서 요청을 차단합니다.
 
 ```
 kind: "CDN"
@@ -494,7 +493,7 @@ data:
 >
 >이 기능은 아직 릴리스되지 않았습니다. 얼리 어답터 프로그램을 통해 액세스하려면 **aemcs-waf-adopter@adobe.com**&#x200B;으로 이메일을 보내 주십시오.
 
-5분 동안 10번 트리거되면 Actions Center 알림을 보내도록 규칙을 구성할 수 있습니다. 이를 통해 특정 트래픽 패턴이 발생할 때 경고하여 필요한 조치를 취할 수 있습니다. 이메일 수신에 필요한 알림 프로필을 설정하는 방법을 포함하여 [액션 센터](/help/operations/actions-center.md)에 대해 자세히 알아보십시오.
+5분 기간 내에 10번 트리거되는 경우 작업 센터 알림을 보내도록 규칙을 구성할 수 있습니다. 이러한 규칙은 특정 트래픽 패턴이 발생하면 경고하여 필요한 조치를 취할 수 있도록 합니다. 자세히 알아보기 [작업 센터](/help/operations/actions-center.md)이메일 수신에 필요한 알림 프로필을 설정하는 방법을 포함합니다.
 
 ![액션 센터 알림](/help/security/assets/traffic-filter-rules-actions-center-alert.png)
 
@@ -539,10 +538,10 @@ CDN 로그는 최대 5분까지 지연될 수 있습니다.
 
 규칙은 다음의 방식으로 진행됩니다.
 
-* 고객이 선언한 일치하는 모든 규칙의 이름이 `match` 속성에 나열됩니다.
-* `action` 속성은 규칙이 차단, 허용 또는 로깅에 영향을 주었는지 여부를 결정합니다.
-* WAF에 라이선스가 부여되어 WAF가 활성화되면 `waf` 속성은 규칙에서의 WAF 플래그 나열 여부에 관계없이 감지된 모든 WAF 플래그(예: SQLI)을 나열합니다. 이는 선언할 수 있는 새로운 규칙에 대한 인사이트를 제공하기 위함입니다.
-* 일치하는 고객이 선언한 규칙과 WAF 규칙이 없는 경우 `rules` 속성이 비어 있습니다.
+* 일치하는 규칙의 고객이 선언한 규칙 이름은 `match` 특성.
+* 다음 `action` 속성은 규칙이 차단, 허용 또는 로그를 수행할지 여부를 결정합니다.
+* WAF에 라이센스가 부여되고 활성화된 경우 `waf` 속성은 감지된 모든 WAF 플래그(예: SQLI)를 나열합니다. 이는 WAF 플래그가 어떤 규칙에 나열되었는지 여부와 관계없이 적용됩니다. 이는 선언할 수 있는 새로운 규칙에 대한 인사이트를 제공하기 위함입니다.
+* 고객이 선언한 규칙이 일치하지 않고 waf 규칙이 일치하지 않으면 `rules` 속성이 비어 있습니다.
 
 앞서 설명한 것처럼 WAF 규칙 일치는 히트가 아닌 CDN 실패 및 통과에 대한 CDN 로그에만 나타납니다.
 
@@ -633,7 +632,7 @@ data:
 
 Adobe는 Cloud Manager를 통해 다운로드한 CDN 로그를 수집하기 위해 대시보드 도구를 컴퓨터에 다운로드하는 메커니즘을 제공합니다. 이 도구를 사용하여 트래픽을 분석하면 WAF 규칙을 포함하여 선언할 적절한 트래픽 필터 규칙을 구상할 수 있습니다.
 
-[AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Github 저장소에서 바로 대시보드 도구를 복제할 수 있습니다.
+대시보드 도구는 다음에서 직접 복제할 수 있습니다. [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) GitHub 리포지토리.
 
 [Tutorials](#tutorial) 대시보드 도구 사용 방법에 대한 구체적인 지침을 볼 수 있습니다.
 
@@ -724,7 +723,7 @@ data:
 
 ### 트래픽 필터 규칙(WAF 규칙 포함)으로 웹 사이트 보호
 
-[튜토리얼 작업](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) WAF 규칙을 포함한 트래픽 필터 규칙에 대한 일반적이고 실용적인 지식과 경험을 얻을 수 있습니다.
+[튜토리얼 작업](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) WAF 규칙을 포함한 트래픽 필터 규칙에 대한 일반적이고 실용적인 지식과 경험을 얻을 수 있습니다.
 
 튜토리얼은 다음 과정에 대해 소개합니다.
 
