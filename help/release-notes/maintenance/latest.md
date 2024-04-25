@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 61a3d334e7187dcbf047d1b464d918ddf2cf9444
+source-git-commit: b7e7bc7546b836667fff9db0ea5419e751f492cb
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 79%
+source-wordcount: '269'
+ht-degree: 78%
 
 ---
 
@@ -30,7 +30,8 @@ ht-degree: 79%
 
 ### 알려진 문제 {#known-issues-15977}
 
-* **(AEM Forms 전용)** AEM Cloud Foundation 유지 관리 릴리스 15977을 설치한 후 양식 작성 및 게시된 양식의 경우 적응형 양식 필드가 잘못된 순서로 렌더링됩니다. AEM Forms을 사용하는 경우 불편을 방지하려면 향후 유지 관리 릴리스에서 문제가 해결될 때까지 이 릴리스로 업그레이드하지 않는 것이 좋습니다.
+* **(AEM Forms 전용)** AEM Cloud Foundation 유지 관리 릴리스 15977을 설치한 후 양식 작성 및 게시된 양식의 경우 적응형 양식 필드가 잘못된 순서로 렌더링됩니다. AEM Forms을 사용하는 경우 불편을 방지하려면 향후 유지 관리 릴리스에서 문제가 해결될 때까지 15977 릴리스로 업그레이드하지 않는 것이 좋습니다.
+
 
 ### 사용 중단된 기능 및 API {#deprecated-15977}
 
