@@ -3,22 +3,22 @@ title: 비디오 편집
 description: 다음을 사용하여 비디오 편집 [!DNL Adobe Express] 옵션을 제공하고 업데이트된 비디오를 버전으로 저장합니다.
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
-source-git-commit: 6eb9cfbb463fc976c9101acb434b3b39131c8067
+source-git-commit: 4f3c15d3a103d15c51ddfe4b0c5dbb5e7e18e8b7
 workflow-type: tm+mt
 source-wordcount: '779'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
-# 에서 비디오 편집 [!DNL Assets Essentials] {#edit-videos}
+# 에서 비디오 편집 [!DNL Assets view] {#edit-videos}
 
-에셋 사용자는 에셋이 포함되어 있어 비디오 컨텐츠의 변형을 손쉽게 만들 수 있습니다 [!DNL Adobe Express] 비디오에 대한 빠른 작업 의 빠른 작업 [!DNL Assets Essentials] 제공: [!DNL Adobe Express] 비디오 자르기, 비디오 크기 조정, 비디오 트리밍 및 비디오를 GIF으로 변환 등 사용자에게 친숙한 비디오 편집 옵션을 제공합니다.
+에셋 사용자는 에셋이 포함되어 있어 비디오 컨텐츠의 변형을 손쉽게 만들 수 있습니다 [!DNL Adobe Express] 비디오에 대한 빠른 작업 의 빠른 작업 [!DNL Assets view] 제공: [!DNL Adobe Express] 비디오 자르기, 비디오 크기 조정, 비디오 트리밍 및 비디오를 GIF으로 변환 등 사용자에게 친숙한 비디오 편집 옵션을 제공합니다.
 
 비디오를 편집하려면 비디오 세부 정보로 이동하여 [!UICONTROL 비디오 편집]. 또는 에셋을 선택하고 세부 정보 를 클릭한 다음 를 클릭합니다 ![가위](assets/do-not-localize/cut.svg) 오른쪽 창에서 사용할 수 있는 아이콘. 비디오를 편집한 후 새 비디오를 새 버전 또는 새 에셋으로 저장할 수 있습니다.
 
 ## 사전 요구 사항 {#prerequisites}
 
-액세스 권한 [!DNL Adobe Express] 및 하나 이상의 환경이 AEM Assets 내에 있습니다. 환경은 내의 모든 저장소일 수 있습니다. [!DNL Assets as a Cloud Service] 또는 [!DNL Assets Essentials].
+액세스 권한 [!DNL Adobe Express] 및 하나 이상의 환경이 AEM Assets 내에 있습니다. 환경은 내의 모든 저장소일 수 있습니다. [!DNL Assets as a Cloud Service] 또는 [!DNL Assets view].
 
 ## Adobe Express을 사용하여 비디오 편집 {#edit-video-using-express}
 
@@ -39,7 +39,7 @@ ht-degree: 16%
 
 ### 비디오 크기 조정 {#resize-video-using-express}
 
-DAM의 최종 비디오 콘텐츠는 특정 채널에 배포하기 위해 크기를 조정해야 하는 경우가 많습니다. [!DNL Assets Essentials] 에서는 일반적인 소셜 채널에 필요한 크기에 맞게 비디오의 크기를 쉽게 조정할 수 있으며 사용자 지정 해상도에도 맞출 수 있습니다. 을 사용하여 비디오 크기를 조정하려면 [!DNL Assets Essentials]를 클릭하고 아래 단계를 수행하십시오.
+DAM의 최종 비디오 콘텐츠는 특정 채널에 배포하기 위해 크기를 조정해야 하는 경우가 많습니다. [!DNL Assets view] 에서는 일반적인 소셜 채널에 필요한 크기에 맞게 비디오의 크기를 쉽게 조정할 수 있으며 사용자 지정 해상도에도 맞출 수 있습니다. 을 사용하여 비디오 크기를 조정하려면 [!DNL Assets view]를 클릭하고 아래 단계를 수행하십시오.
 
 1. 비디오를 선택하고 **[!UICONTROL 편집]**.
 2. 클릭 **[!UICONTROL 비디오 크기 조정]** 왼쪽 창에서 사용할 수 있는 빠른 작업
@@ -93,7 +93,7 @@ Adobe Express을 사용하여 MP4 비디오를 GIF 형식으로 빠르게 변환
 
 ### 다음 단계 {#next-steps}
 
-* Assets Essentials 사용자 인터페이스에서 사용 가능한 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백 제공
+* Assets 보기 사용자 인터페이스에서 사용 가능한 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백 제공
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백 제공
 
@@ -101,5 +101,5 @@ Adobe Express을 사용하여 MP4 비디오를 GIF 형식으로 빠르게 변환
 
 >[!MORELIKETHIS]
 >
->* [Assets Essentials에서 이미지 편집](edit-images-assets-view.md)
+>* [자산 보기에서 이미지 편집](edit-images-assets-view.md)
 >* [에셋 미리보기](navigate-assets-view.md)
