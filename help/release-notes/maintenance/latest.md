@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: f15b42e4012385c461b5440b92f53c4e58fb8ac2
+source-git-commit: 61a3d334e7187dcbf047d1b464d918ddf2cf9444
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 61%
+source-wordcount: '268'
+ht-degree: 79%
 
 ---
 
@@ -15,22 +15,22 @@ ht-degree: 61%
 
 ## 릴리스 15977 {#release-15977}
 
-다음은 2024년 4월 19일에 공개적으로 릴리스된 유지 보수 릴리스 15977에 대한 지속적인 개선 사항을 요약한 것입니다. 이전 유지 관리 릴리스는 릴리스 15939.
+2024년 4월 19일에 릴리스된 유지 관리 릴리스 15977의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이전 유지 관리 릴리스는 릴리스 15939이었습니다.
 
-2024.4.0 기능 활성화는 이 유지 관리 릴리스에 대한 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ko-KR)을 참조하십시오.
+이 유지 관리 릴리스(2024.4.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)을 참조하십시오.
 
 ### 개선 사항 {#enhancements-15977}
 
-* GRANITE-51335: AEM 상태 검사를 최적화하여 인스턴스 안정성을 향상시킵니다.
+* GRANITE-51335: AEM 상태 검사가 최적화되어 인스턴스 안정성이 향상되었습니다.
 
 ### 해결된 문제 {#fixed-issues-15977}
 
-* CQ-4357226: OAuth 자격 증명에 대한 IMS 구성 지원에서 회귀 문제를 해결합니다.
-* GRANITE-51335: 5.0.4 Felix Health Check 등록 수정 사항으로 Ratelimit 업그레이드.
+* CQ-4357226: OAuth 자격 증명에 대한 IMS 구성 지원의 회귀 문제가 해결되었습니다.
+* GRANITE-51335: Ratelimit가 5.0.4로 업그레이드되어 Felix 상태 검사 등록이 수정되었습니다.
 
 ### 알려진 문제 {#known-issues-15977}
 
-없음.
+* **(AEM Forms 전용)** AEM Cloud Foundation 유지 관리 릴리스 15977을 설치한 후 양식 작성 및 게시된 양식의 경우 적응형 양식 필드가 잘못된 순서로 렌더링됩니다. AEM Forms을 사용하는 경우 불편을 방지하려면 향후 유지 관리 릴리스에서 문제가 해결될 때까지 이 릴리스로 업그레이드하지 않는 것이 좋습니다.
 
 ### 사용 중단된 기능 및 API {#deprecated-15977}
 
