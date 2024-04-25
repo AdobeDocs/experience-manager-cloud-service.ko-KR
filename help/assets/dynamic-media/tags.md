@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 3312aa270c05e506d12ed8a5c1360154bb02b350
 workflow-type: tm+mt
-source-wordcount: '6701'
+source-wordcount: '6700'
 ht-degree: 6%
 
 ---
@@ -591,7 +591,7 @@ Experience Platform 태그 구성(속성, 확장, 규칙 및 데이터 요소 �
 
 Experience Platform 태그에는 잠재적으로 여러 개발 환경, 하나의 스테이징 환경 및 하나의 프로덕션 환경이 있을 수 있습니다. 기본적으로 Experience Manager의 Experience Platform 태그 클라우드 구성은 Experience Manager 작성자 노드를 Platform Tags의 스테이지 환경으로 지정합니다. Experience Manager 게시 노드는 Experience Platform 태그의 프로덕션 환경을 가리킵니다. 즉, 기본 Experience Manager 설정을 사용하여 Experience Platform 태그 라이브러리를 스테이징 환경에 게시해야 합니다. 이렇게 하면 Experience Manager 작성자에서 사용할 수 있습니다. 그런 다음 Experience Manager 게시에서 사용할 수 있도록 프로덕션 환경에 게시할 수 있습니다.
 
-다음을 참조하십시오 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) Experience Platform 태그 환경에 대한 자세한 내용을 참조하십시오.
+다음을 참조하십시오 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=ko-KR) Experience Platform 태그 환경에 대한 자세한 내용을 참조하십시오.
 
 라이브러리 게시에는 다음 두 단계가 포함됩니다.
 
@@ -694,7 +694,7 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
 
 1. 새 브라우저 탭에서 [Adobe Developer 콘솔](https://developer.adobe.com/console/integrations).
 
-1. 다음에서 **[!UICONTROL Adobe I/O 콘솔 통합]** 페이지, 오른쪽 상단 모서리 근처에서 **[!UICONTROL 새로운 통합]**.
+1. 다음에서 **[!UICONTROL Adobe Developer 콘솔 통합]** 페이지, 오른쪽 상단 모서리 근처에서 **[!UICONTROL 새로운 통합]**.
 1. 다음에서 **[!UICONTROL 새 통합 만들기]** 대화 상자에서 다음을 확인합니다 **[!UICONTROL API 액세스]** 라디오 단추를 선택한 다음 을 선택합니다. **[!UICONTROL 계속]**.
 
 ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
