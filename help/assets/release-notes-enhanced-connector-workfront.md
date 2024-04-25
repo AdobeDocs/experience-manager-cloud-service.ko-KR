@@ -3,9 +3,9 @@ title: ' [!DNL Workfront for Experience Manager enhanced connector] 릴리스 �
 description: ' [!DNL Workfront for Experience Manager enhanced connector] 릴리스 정보'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: fdac9b4152c61f775769d7ed30be1097db119e2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1660'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 98%
 
 다음 섹션에서는 [!DNL Workfront for Experience Manager enhanced connector]의 일반 릴리스 정보에 대해 간략히 설명합니다.
 
-의 최신 버전 1.9.19에 대한 릴리스 날짜 [!DNL Workfront for Experience Manager enhanced connector] 은 2024년 4월 12일입니다.
+[!DNL Workfront for Experience Manager enhanced connector] 최신 버전 1.9.19의 릴리스 일자는 2024년 4월 12일입니다.
 
 ## 릴리스 하이라이트 {#release-highlights}
 
