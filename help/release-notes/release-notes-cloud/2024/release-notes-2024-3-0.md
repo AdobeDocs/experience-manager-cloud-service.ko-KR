@@ -1,46 +1,74 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
-description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5817cc38aab00380256537c9d4a6fe3d431c7591
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2024.3.0 릴리스 정보입니다.'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2024.3.0 릴리스 정보입니다.'
+source-git-commit: 5b7ae48ad9f11bb43ab32569dd3e5243f2abfb8e
 workflow-type: tm+mt
-source-wordcount: '1989'
-ht-degree: 79%
+source-wordcount: '2268'
+ht-degree: 98%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2024.3.0 릴리스 정보 {#release-notes}
 
-다음 섹션에서는 [!DNL Experience Manager] as a Cloud Service의 최신 버전 기능 릴리스 정보에 대해 간략히 소개합니다.
+다음 섹션에서는 [!DNL Experience Manager] as a Cloud Service의 2024.3.0 버전 기능 릴리스 정보에 대해 간략히 소개합니다.
 
 >[!NOTE]
 >
 >여기에서 2021년 또는 2022년과 같은 이전 버전의 릴리스 정보로 이동할 수 있습니다.
 >
->[!DNL Experience Manager] as a Cloud Service의 향후 기능 활성화에 대해 알아보려면 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 살펴보십시오.
+>[!DNL Experience Manager] as a Cloud Service의 향후 기능 활성화에 대해 알아보려면 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)을 살펴보십시오.
 
 >[!NOTE]
 >
->릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates)를 참조하십시오.
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
 
 ## 릴리스 일자 {#release-date}
 
-의 릴리스 날짜 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 기능 릴리스(2024.4.0)는 2024년 4월 25일입니다. 다음 기능 릴리스(2024.5.0)는 2024년 5월 30일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 기능 릴리스(2024.3.0)의 릴리스 일자는 2024년 4월 11일입니다. 다음 기능 릴리스(2024.4.0)는 2024년 4월 25일에 예정되어 있습니다.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
 [ 여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
 
-&lt;— ## 릴리스 비디오 {#release-video}
+<!-- ## Release Video {#release-video}
 
-2024년 4월 릴리스 개요 비디오를 통해 2024.4.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
+Have a look at the March 2024 Release Overview video for a summary of the features added in the 2024.3.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3425864?quality=12)
 
-—>
+-->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### [!DNL Experience Manager Sites]의 새로운 기능 {#sites-features}
+
+**Edge Delivery Services를 위한 AEM 작성**
+
+이제 AEM Sites를 Edge Delivery Services의 콘텐츠 소스로 사용할 수 있습니다. 작성자는 새로운 Universal Editor 내 컨텍스트 wysiwyg 작성을 사용하여 AEM에서 웹 사이트를 관리합니다. 이를 통해 기업은 AEM의 강력한 콘텐츠 관리 기능을 활용하면서 Edge Delivery Services를 통해 빠른 고성능 웹 페이지를 빌드할 수 있습니다.
+
+![AEM 작성](/help/edge/assets/universal_editor_edge_delivery_services.png)
+
+자세한 내용은 [설명서](/help/edge/overview.md)를 참조하고 [AEM Gems - AEM Authoring 및 Edge Delivery Services 시작하기](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)를 시청하십시오.
+
+**Headless 구현을 위한 Universal Editor**
+
+Universal Editor를 사용하면 분리된 웹 애플리케이션을 통해 이전에 기존 사이트에서만 가능했던 직관적인 컨텍스트 내 WYSIWYG 작성을 동일하게 활용할 수 있습니다. 이제 콘텐츠 작성자는 페이지 내의 구성 요소와 마찬가지로 쉽게 콘텐츠 조각을 사용하여 레이아웃을 시각적으로 구성할 수 있습니다.
+
+Universal Editor를 차별화하는 점은 서버측 렌더링과 클라이언트측 렌더링을 모두 수용하고, 프레임워크에 구애받지 않으며, AEM 호스팅의 필요성을 없애는 등 다양한 웹 아키텍처에 대한 적응성입니다. 콘텐츠 편집을 위해 기존 웹 애플리케이션을 Universal Editor와 통합하는 것은 간단하며, 주로 개발자가 특정 데이터 속성을 마크업에 통합해야 합니다.
+
+이를 통해 Universal Editor는 콘텐츠 구조나 기본 기술 스택에 관계없이 일관된 편집 경험을 보장합니다. 자세한 내용은 [Universal Editor 소개](/help/implementing/universal-editor/introduction.md)를 참조하십시오.
+
+**콘텐츠 조각 및 모델을 위한 콘텐츠 관리 OpenAPI**
+
+이제 개발자는 콘텐츠 조각 및 콘텐츠 조각 모델과 프로그래밍 방식으로 상호 작용하고 콘텐츠 관리 OpenAPI를 사용하여 CruD 작업을 수행할 수 있습니다. 자세한 내용은 [API 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)를 참조하십시오.
+
+**경험 조각에 대한 다중 사이트 관리 지원**
+
+경험 조각을 저장하는 폴더 구조에 대한 다중 사이트 관리 지원이 확장되어 사용자가 경험 조각으로 전체 콘텐츠 구조를 롤아웃할 수 있습니다.
+
+**콘텐츠 조각 버전 비교**
+
+이제 새로운 콘텐츠 조각 편집기를 사용하면 콘텐츠 작성자가 콘텐츠 조각의 현재 버전과 이전 버전 간의 차이점을 비교하고 볼 수 있습니다.
 
 ### 얼리 어답터 프로그램 {#sites-early-adopter}
 
@@ -58,35 +86,23 @@ ht-degree: 79%
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Assets 보기의 새로운 기능 {#assets-view-new-features}
+### 관리자 보기의 새로운 기능 {#admin-view}
 
+**Adobe Express와의 네이티브 통합**
 
-**상황별 검색**
+AEM Assets는 Adobe Express에 기본적으로 통합되므로 Adobe Express 사용자 인터페이스 내에서 AEM Assets에 저장된 자산에 직접 액세스할 수 있습니다. AEM Assets에서 관리되는 콘텐츠를 Express 캔버스에 배치한 다음 AEM Assets 저장소에 새 콘텐츠 또는 편집된 콘텐츠를 저장할 수 있습니다.
 
-이제 다음 작업도 수행할 수 있습니다 [텍스트 프롬프트를 정의하여 저장소에서 사용할 수 있는 에셋을 검색합니다.](/help/assets/search-assets-view.md#contextual-search). Experience Manager Assets은 이러한 텍스트 프롬프트를 검색 필터로 자동으로 변환하고 검색 결과를 표시합니다. 필터 창을 사용하여 자동 필터를 보고 수정하여 검색 결과의 범위를 좁힐 수 있습니다.
+![Assets 추가 기능에서 자산 포함](/help/assets/assets/adobe-express-native-integration.png)
 
-![상황별 검색](/help/assets/assets/contextual-search-text-prompt1.png)
+**지원되는 모든 비디오 유형에 대한 미리보기 렌디션**
 
-**빠른 비디오 작업**
+Experience Manager Assets는 이제 처리 프로필 구성 없이 기본적으로 지원되는 모든 비디오 유형의 미리보기 렌디션을 생성합니다.
 
-이제 Experience Manager Assets에 다음이 포함됩니다 [Adobe Express을 기반으로 하는 쉽고 직관적인 비디오 편집 도구](/help/assets/edit-videos-assets-view.md) 컨텐츠 재사용 횟수를 늘리고 컨텐츠 속도를 가속화하십시오. 편집 옵션에는 트리밍, 자르기, 비디오 크기 조정 및 MP4를 GIF 파일로 변환하는 옵션이 있습니다.
+### Assets 보기의 새로운 기능 {#assets-view}
 
-![Adobe Express으로 비디오 자르기](/help/assets/assets/adobe-express-crop-video.png)
+**컬렉션에 대한 권한 관리**
 
-**동적 변환**
-
-이제 다음을 수행할 수 있습니다. [동적 변환(스마트 자르기 포함) 보기 및 다운로드](/help/assets/renditions.md) Experience Manager Assets. 동적 변환은 장치 해상도에 따라 이미지 크기를 조정하거나 다양한 종횡비에 맞게 자르는 것과 같이 특정 요구 사항을 충족하도록 실시간으로 생성되는 이미지 에셋의 사용자 지정된 버전입니다. 이러한 렌디션을 통해 조직은 다양한 대상 요구 사항에 개인화되고 최적화된 경험을 전달할 수 있습니다.
-
-![동적 변환](/help/assets/assets/preset_smart_crop.png)
-
-**에셋 및 폴더에 대한 내부 이름 바꾸기**
-
-이제 Experience Manager Assets은 다음을 제공하여 간소화된 사용자 경험을 제공합니다. [한 번의 클릭으로 에셋 또는 폴더의 이름을 변경하는 기능](/help/assets/manage-organize-assets-view.md).
-
-**여러 폴더에 메타데이터 양식 할당 또는 제거**
-
-이제 다음을 수행할 수 있습니다. [여러 폴더에 메타데이터 양식 할당 또는 제거](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder).
-
+Assets Essentials에서 관리자는 저장소에서 사용할 수 있는 비공개 컬렉션에 대한 액세스 수준을 관리할 수 있습니다. 관리자는 사용자 그룹을 만든 다음 해당 그룹에 액세스 수준을 관리하도록 권한을 할당할 수 있습니다. 또한 사용자 그룹에 권한 관리 권한을 위임할 수도 있습니다.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -97,28 +113,41 @@ ht-degree: 79%
 
 -->
 
+### AEM Forms의 새로운 기능 {#forms-new-features}
+
+* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)**: AEM Forms Edge Delivery Services는 새 양식을 빠르게 업데이트, 게시 및 시작할 수 있는 신속한 개발 환경을 지원하는 구성 가능한 서비스 세트입니다. 이러한 서비스는 참여와 전환을 촉진하는 탁월하고 영향력 있는 양식 경험을 선사합니다. 이러한 양식 환경은 쉽게 작성하고 개발할 수 있습니다.
+
+  ![EDS 양식 기능](/help/edge/assets/eds-forms-features.png)
+
+이러한 서비스를 통해 다음이 가능합니다.
+
+* 동일한 양식 사이트에서 여러 콘텐츠 소스로 작업하고 Microsoft Excel, Google Sheets 또는 적응형 양식 편집기 등 선호하는 작성 도구를 사용합니다.
+* 빠르게 로드 및 렌더링되며 실시간 사용자 모니터링(RUM)을 통해 양식 성능을 지속적으로 모니터링하는 디지털 등록 경험을 제공합니다.
+* 일반 HTML, 최신 CSS 및 바닐라 JavaScript를 사용하여 특정 프레임워크의 가파른 학습 곡선을 방지하면서 뛰어난 경험을 창출합니다.
+
+
 ### AEM Forms 프리릴리스의 새로운 기능 {#forms-pre-release}
 
 * **핵심 구성 요소 기반 적응형 양식을 위한 향상된 시각적 규칙 편집기**: 이 릴리스에서는 핵심 구성 요소 기반 적응형 양식을 위한 시각적 규칙 편집기가 대폭 업그레이드되었습니다. 이 릴리스에서는 핵심 구성 요소 기반 적응형 양식을 위한 시각적 규칙 편집기가 대폭 업그레이드되었습니다. 이 업데이트는 사용자 정의 함수와의 상호 작용을 간소화하여 더욱 강력하고 효율적인 양식을 빌드할 수 있도록 하는 데 중점을 둡니다.
 
   이제 다음을 통해 사용자 정의 함수 상호 작용을 간소화할 수 있습니다.
 
-   * [새로운 주석을 활용하여 더욱 명확한 함수 정의를 제공합니다](/help/forms/create-and-use-custom-functions.md#supported-javascript-annotations-for-custom-function).
-   * [사용자 정의 함수에 캐싱 메커니즘을 사용하여 양식 성능 속도를 높입니다](/help/forms/create-and-use-custom-functions.md#caching-support-for-custom-function).
-   * [사용자 정의 함수 내에서 전역 오브젝트로 원활하게 작업합니다](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
-   * [사용자 정의 함수 내에서 선택적 매개변수를 정의하고 활용합니다](/help/forms/create-and-use-custom-functions.md#parameter).
+   * 새 주석을 활용하여 더 명확한 함수 정의를 제공합니다.
+   * 사용자 지정 함수에 캐싱 메커니즘을 사용하여 양식 성능 향상
+   * 사용자 지정 함수 내에서 전역 개체와 원활하게 작업할 수 있습니다.
+   * 사용자 지정 함수 내에서 선택적 매개 변수를 정의하고 활용합니다.
 
   이 업데이트는 또한 규칙 편집기 기능에 다음과 같은 향상된 기능을 제공합니다. 다음과 같은 작업을 수행할 수 있습니다.
 
-   * 조건부 실행을 위한 강력한 [“when-then-else”](/help/forms/rule-editor-core-components.md#when) 로직을 구현합니다.
+   * 조건부 실행에 강력한 &quot;when-then-else&quot; 논리를 구현합니다.
    * let 및 arrow 함수(ES10 지원)와 같은 최신 JavaScript 기능을 활용합니다.
    * 필드뿐만 아니라 전체 패널과 양식도 검증하거나 재설정하여 사용자 상호 작용에 대한 제어를 확장합니다.
 
   이러한 개선 사항은 시각적 규칙 편집기 내에서 규칙 및 사용자 정의 함수를 작성하는 데 더욱 직관적이고 강력한 경험을 제공합니다.
 
-* **[다양한 버전의 적응형 양식 만들기](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)**: 이제 기존 양식의 변형을 쉽게 관리할 수 있습니다. 이에 따라 간소화된 단일 워크플로 내에서 버전 제어가 단순화되고, 양식 최적화를 위한 비교가 용이해집니다.
+* **다양한 버전의 적응형 양식 만들기**: 이제 기존 양식의 변형을 쉽게 관리할 수 있습니다. 이에 따라 간소화된 단일 워크플로 내에서 버전 제어가 단순화되고, 양식 최적화를 위한 비교가 용이해집니다.
 
-* **[적응형 양식 비교](/help/forms/compare-forms.md)**: 이제 두 양식을 쉽게 비교하여 두 양식 간의 차이점을 확인할 수 있습니다. 팀원이 수정본을 비교하고 변경 사항을 효율적으로 논의할 수 있도록 하여 원활한 공동 작업을 촉진합니다.
+* **적응형 양식 비교**: 이제 두 양식을 쉽게 비교하여 두 양식 간의 차이점을 확인할 수 있습니다. 팀원이 수정본을 비교하고 변경 사항을 효율적으로 논의할 수 있도록 하여 원활한 공동 작업을 촉진합니다.
 
 * **스크리블 서명 구성 요소에 대한 접근성 향상**: 이 업데이트는 스크리블 서명 구성 요소에 대한 접근성을 크게 향상시킵니다.
 
@@ -148,7 +177,7 @@ ht-degree: 79%
 
   <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> Adobe Workfront Fusion Connector를 사용하면 적응형 양식 제출 시 자동으로 트리거되는 워크플로를 설계할 수 있습니다. 예를 들어 제출된 데이터를 검토하는 작업을 특정 개인에게 할당하는 워크플로가 시작되어 적응형 양식을 통해 캡처된 정보를 기반으로 신청서를 승인하거나 거부할 수 있는 시나리오를 생각해 볼 수 있습니다. 이처럼 간소화된 통합으로 효율성이 향상되며 워크플로 프로세스에 새로운 수준의 자동화가 구현됩니다.|
 
-* **[Reader 확장 서비스](/help/forms/aem-forms-cloud-service-communications-introduction.md#reader-extension-service)**: AEM Forms 커뮤니케이션 API는 일반 PDF에 양식 채우기 및 주석 달기와 같은 기능을 추가하여, 무료 Adobe Reader를 사용하는 사용자가 대화형으로 이용할 수 있는 Reader 확장 서비스를 제공합니다.
+* **Reader 확장 서비스**: AEM Forms 커뮤니케이션 API는 일반 PDF에 양식 채우기 및 주석 달기와 같은 기능을 추가하여, 무료 Adobe Reader를 사용하는 사용자가 대화형으로 이용할 수 있는 Reader 확장 서비스를 제공합니다.
 
 * [오른쪽에서 왼쪽 방향 언어 지원](/help/forms/supporting-new-language-localization-core-components.md): 이제 핵심 구성 요소를 기반으로 빌드된 적응형 양식을 아랍어, 페르시아어, 우르두어와 같은 오른쪽에서 왼쪽 방향(RTL) 언어로 표시할 수 있습니다. RTL 언어의 사용자는 전 세계적으로 20억 명이 넘습니다. RTL 언어로 된 양식을 사용하면 적응형 양식의 범위를 확장하여 더 다양성 높게 대상자를 수용하고 RTL 시장을 선택할 수 있습니다. 특정 지역에서는 현지 언어로 양식을 제공하는 것이 법적 의무이기도 합니다. 현지 언어를 수용함으로써 더 많은 대상자에게 접근할 수 있을 뿐만 아니라 관련 법률 및 규정을 준수할 수 있습니다.
 
@@ -163,31 +192,23 @@ ht-degree: 79%
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### CDN 구성 {#cdn-config}
-
-다음과 같은 방법으로 Adobe CDN에서 트래픽을 구성합니다.
-
-* [변형 요청](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) - AEM으로 라우팅되기 전에 경로, 쿼리 매개 변수 및 HTTP 헤더를 포함하여 수신 요청의 측면을 수정합니다.
-* [응답 변환](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) - 보내는 응답이 브라우저에 제공되기 전에 해당 응답의 HTTP 헤더를 변경합니다.
-* [원본 선택기](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations#origin-selectors) - CDN을 통해 오프 AEM 사이트 및 애플리케이션으로 트래픽을 라우팅합니다.
-
-이러한 규칙이 소스 제어(git)에서 선언되면 Cloud Manager 구성 파이프라인을 사용하여 CDN에 배포할 수 있습니다. 아래 얼리어답터 섹션에서 클라이언트측 리디렉션 기능도 참조하십시오.
-
-### 사용자 지정 CDN 오류 페이지 {#cdn-error-pages}
-
-CDN에서 AEM 원본에 트래픽을 라우팅할 수 없는 경우에는 사용자 지정 오류 페이지를 선언하여 일반 버전을 바꿀 수 있습니다. [자세히 알아보기](/help/implementing/dispatcher/cdn-error-pages.md) 브랜드 오류 페이지를 제공하는 방법에 대해 설명합니다.
-
 ### 얼리 어답터 프로그램 {#foundation-early-adopter}
-
-#### 클라이언트측 리디렉션(얼리 어답터 프로그램) {#client-side-redirects-early-adopter}
-
-소스 제어에서 301/302 클라이언트측 리디렉션을 구성하고 CDN에 배포합니다. [자세히 알아보기](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) 이메일로 얼리어답터 프로그램에 참여 **<aemcs-cdn-config-adopter@adobe.com>**.
 
 #### 트래픽 필터 규칙 경고(얼리 어답터 프로그램) {#traffic-filter-rules-alerts-early-adopter}
 
 선택적으로 라이선스를 부여할 수 있는 WAF(웹 애플리케이션 방화벽) 규칙을 포함하는 최근 릴리스된 [트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md)을 통해 허용하거나 거부해야 하는 트래픽을 구성할 수 있습니다.
 
 지금 **<aemcs-cdn-config-adopter@adobe.com>**&#x200B;으로 이메일을 보내 얼리 어답터 프로그램에 참여하면 트래픽 필터 규칙이 실행될 때마다 알림을 받을 수 있습니다. 액션 센터 이메일 알림은 특정 트래픽 상황이 발생할 때 적절한 조치를 취할 수 있도록 지속적으로 정보를 제공해 줍니다.
+
+#### CDN 구성(얼리 어답터 프로그램) {#cdn-config-early-adopter}
+
+선택적으로 라이선스를 부여할 수 있는 WAF(웹 애플리케이션 방화벽) 규칙을 포함하는 최근 릴리스된 [트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 외에도 구성 파이프라인을 사용하여 다른 유형의 CDN 구성을 선언하고 배포할 수 있습니다. [자세히 알아보고](/help/implementing/dispatcher/cdn-configuring-traffic.md) **<aemcs-cdn-config-adopter@adobe.com>**&#x200B;으로 이메일을 보내 얼리 어답터 프로그램에 참여하십시오. 다음에 대한 액세스 권한을 받을 수 있습니다.
+
+* 301/302 클라이언트측 리디렉션
+* 에지의 요청을 임의 출처(예: AEM이 아닌 애플리케이션)로 프록시 처리
+* URL 변환
+* 요청 또는 응답 헤더 설정 또는 수정
+* CDN이 AEM에 연결할 수 없는 경우의 사용자 정의 오류 페이지
 
 #### 재작성 맵의 Apache/Dispatcher 런타임 수집(얼리 어답터 프로그램) {#apache-rewritemaps-early-adopter}
 

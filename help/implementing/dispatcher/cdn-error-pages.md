@@ -2,18 +2,15 @@
 title: CDN 오류 페이지 구성
 description: Amazon S3 또는 Azure Blob Storage와 같은 자체 호스팅 저장소에서 정적 파일을 호스팅하고 Cloud Manager 구성 파이프라인을 사용하여 배포된 구성 파일에서 참조하여 기본 오류 페이지를 재정의하는 방법에 대해 알아봅니다.
 feature: Dispatcher
-source-git-commit: 11036c3e95f0444fc5d865232a7dccab5b7f26ae
+exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
+source-git-commit: 8489b40f45e6cbeb98288969bc9f6bd42815e2a6
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 3%
+source-wordcount: '318'
+ht-degree: 1%
 
 ---
 
-
 # CDN 오류 페이지 구성 {#cdn-error-pages}
-
->[!NOTE]
->이 기능은 아직 일반적으로 사용할 수 없습니다. 얼리어답터 프로그램에 참여하려면 다음 이메일을 보내십시오. `aemcs-cdn-config-adopter@adobe.com` 사용 사례를 설명합니다.
 
 혹시나 해서 [Adobe 관리 CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) AEM 원본에 연결할 수 없습니다. 기본적으로 CDN은 서버에 연결할 수 없음을 나타내는 브랜딩되지 않은 일반 오류 페이지를 제공합니다. Amazon S3 또는 Azure Blob Storage와 같은 자체 호스팅 저장소에서 정적 파일을 호스팅하고 를 사용하여 배포된 구성 파일에서 이를 참조하여 기본 오류 페이지를 재정의할 수 있습니다. [Cloud Manager 구성 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
 
@@ -88,4 +85,4 @@ curl "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
 
 지원되는 코드는 403, 404, 406, 500 및 503입니다.
 
-이러한 방식으로, 지정된 오류 코드에 대한 합성 응답을 테스트하기 위해 CDN의 오류 핸들러를 직접 트리거합니다.
+이러한 방식으로, 주어진 오류 코드에 대한 합성 응답을 테스트하기 위해 CDN의 오류 핸들러를 직접 트리거합니다.
