@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 575e0c661abc2f8b182b3ed35d5d914639dd7f3a
+source-git-commit: 81b4455bf922ec0f4eb46046b82193ff822b4695
 workflow-type: tm+mt
-source-wordcount: '4899'
+source-wordcount: '4902'
 ht-degree: 99%
 
 ---
@@ -1065,6 +1065,7 @@ ht-degree: 99%
       + Universal Editor {#universal-editor}
          + [Universal Editor 소개](/help/implementing/universal-editor/introduction.md)
          + [Universal Editor 아키텍처](/help/implementing/universal-editor/architecture.md)
+         + [SecurBank 샘플 앱](/help/implementing/universal-editor/securbank.md)
          + [AEM에서 Universal Editor 시작하기](/help/implementing/universal-editor/getting-started.md)
          + [Universal Editor 개발자 개요](/help/implementing/universal-editor/developer-overview.md)
          + [속성 및 항목 유형](/help/implementing/universal-editor/attributes-types.md)
