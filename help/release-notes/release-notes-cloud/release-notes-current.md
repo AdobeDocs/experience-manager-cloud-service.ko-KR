@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5817cc38aab00380256537c9d4a6fe3d431c7591
+source-git-commit: 00d91be618cd7ce1fb9e78115fbe3d431b20cd34
 workflow-type: tm+mt
-source-wordcount: '1989'
-ht-degree: 79%
+source-wordcount: '1965'
+ht-degree: 80%
 
 ---
 
@@ -32,13 +32,13 @@ ht-degree: 79%
 
 [ 여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
 
-&lt;— ## 릴리스 비디오 {#release-video}
+<!-- ## Release Video {#release-video}
 
-2024년 4월 릴리스 개요 비디오를 통해 2024.4.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
+Have a look at the April 2024 Release Overview video for a summary of the features added in the 2024.4.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
 
-—>
+-->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 

@@ -1,9 +1,9 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2024.3.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2024.3.0 릴리스 정보입니다.'
-source-git-commit: 5b7ae48ad9f11bb43ab32569dd3e5243f2abfb8e
+source-git-commit: b0d8bddd5450d2186ba9646fe61c8face464b981
 workflow-type: tm+mt
-source-wordcount: '2268'
+source-wordcount: '2292'
 ht-degree: 98%
 
 ---
@@ -30,13 +30,11 @@ ht-degree: 98%
 
 [ 여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
 
-<!-- ## Release Video {#release-video}
+## 릴리스 비디오 {#release-video}
 
-Have a look at the March 2024 Release Overview video for a summary of the features added in the 2024.3.0 release:
+2024년 3월 릴리스 개요 비디오를 통해 2024.3.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425864?quality=12)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
