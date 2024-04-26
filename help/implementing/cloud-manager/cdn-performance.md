@@ -1,13 +1,13 @@
 ---
 title: CDN 성능 대시보드
 description: Cloud Manager가 콘텐츠 전송 네트워크(CDN) 성능을 평가하는 방법과 대시보드에서 학습할 수 있는 내용을 이해합니다.
-source-git-commit: 0d60c19638707262dab7f290f84fa873b694bc22
+exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
-
 
 # CDN 성능 대시보드 {#cdn-performance}
 
@@ -25,7 +25,7 @@ CDN 대시보드는 모든 프로그램의 개요 페이지에서 사용할 수 
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 보려는 CDN 대시보드의 프로그램을 페이지, 탭 또는 클릭합니다.
+1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔, 보려는 CDN 대시보드의 프로그램을 탭하거나 클릭합니다.
 
    ![내 프로그램 페이지](assets/my-programs.png)
 

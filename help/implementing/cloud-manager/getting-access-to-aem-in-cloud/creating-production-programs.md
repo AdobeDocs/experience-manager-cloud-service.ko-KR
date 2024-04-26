@@ -2,10 +2,10 @@
 title: 프로덕션 프로그램 만들기
 description: Cloud Manager를 사용하여 라이브 트래픽을 호스팅하는 자체 프로덕션 프로그램을 만드는 방법을 알아봅니다.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: a25f1c674534792353cb9b34d4f88a5e32230bc1
+source-git-commit: 418aff3f8519bba4bf5e2459175983633eb664b8
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 33%
+source-wordcount: '1031'
+ht-degree: 34%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 33%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 화면, 탭 또는 클릭 **프로그램 추가** 을 클릭합니다.
+1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔, 탭 또는 클릭 **프로그램 추가** 을 클릭합니다.
 
    ![Cloud Manager 랜딩 페이지](assets/log-in.png)
 
@@ -48,7 +48,7 @@ ht-degree: 33%
 
 1. **Go-Live 날짜** 탭에서 프로덕션 프로그램을 실행하기로 계획한 날짜를 입력합니다.
 
-   ![계획된 Go-Live 날짜 정의](assets/setup-go-live.png)
+   ![계획된 Go-Live 날짜 정의](assets/set-up-go-live.png)
 
    * 이 날짜는 언제든지 편집할 수 있습니다.
    * 이 날짜는 정보 제공용으로만 사용되며 [**프로그램 개요** 페이지](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) 성공적이고 원활한 Go-Live 경험을 통해 여정에 맞춰 적시에 AEM as a Cloud Service 모범 사례 설명서에 대한 제품 내 링크를 제공할 수 있습니다.
@@ -117,9 +117,9 @@ AEM Sites은 표준 99.9% SLA(서비스 수준 계약)를 제공합니다. 다�
 
    ![프로그램 개요](assets/set-up-prod5.png)
 
-언제든지 다른 프로그램으로 전환하거나 개요 페이지로 돌아가서 다른 프로그램을 만들어야 하는 경우 화면 왼쪽 상단에 있는 프로그램 이름을 클릭하여 **다음으로 이동** 옵션을 선택합니다.
-
-![다음으로 이동](assets/create-program-a1.png)
+>[!TIP]
+>
+>문서를 참조하십시오. [Cloud Manager UI 탐색](/help/implementing/cloud-manager/navigation.md) cloud Manager 탐색 방법 및 이해 **내 프로그램** 콘솔.
 
 >[!NOTE]
 >

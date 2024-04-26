@@ -2,7 +2,7 @@
 title: New Relic One
 description: AEM as a Cloud Service를 위한 New Relic One APM(Application Performance Monitoring) 서비스에 대한 정보와 액세스하는 방법에 대해 알아봅니다.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '1850'
 ht-degree: 80%
@@ -44,7 +44,7 @@ AEM as a Cloud Service용 New Relic One APM에는 많은 기능이 있습니다.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** New Relic One 사용자를 관리할 프로그램을 화면, 탭 또는 클릭합니다.
+1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔, New Relic One 사용자를 관리할 프로그램을 탭하거나 클릭합니다.
 
 1. 의 맨 아래에서 **환경** 카드 개요 페이지에서 줄임표 버튼을 클릭하고 다음을 선택합니다. **New Relic 활성화**.
 

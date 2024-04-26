@@ -2,7 +2,7 @@
 title: 샌드박스 환경 최대 절전 모드 설정 및 해제
 description: 샌드박스 프로그램의 환경이 자동으로 최대 절전 모드로 전환되는 방법과 최대 절전 모드를 해제하는 방법에 대해 알아봅니다.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '695'
 ht-degree: 84%
@@ -31,7 +31,7 @@ Developer Console에서 샌드박스 프로그램을 수동으로 최대 절전 
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 최대 절전 모드로 전환할 프로그램을 탭하거나 클릭하여 세부 정보를 표시합니다.
+1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 최대 절전 모드로 전환할 프로그램을 탭하거나 클릭하여 세부 정보를 표시합니다.
 
 1. **환경** 카드에서 줄임표 버튼을 클릭하고 **Developer Console**&#x200B;을 선택합니다.
 
@@ -65,7 +65,7 @@ Developer Console에서 샌드박스 프로그램을 수동으로 최대 절전 
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 최대 절전 모드를 해제할 프로그램을 화면, 탭 또는 클릭하여 세부 정보를 표시합니다.
+1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 최대 절전 모드를 해제할 프로그램을 탭하거나 클릭하여 세부 정보를 표시합니다.
 
 1. **환경** 카드에서 줄임표 버튼을 클릭하고 **Developer Console**&#x200B;을 선택합니다.
 

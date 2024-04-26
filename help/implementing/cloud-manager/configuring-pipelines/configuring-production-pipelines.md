@@ -3,10 +3,10 @@ title: 프로덕션 파이프라인 구성
 description: 코드를 빌드하고 프로덕션 환경에 배포하기 위해 프로덕션 파이프라인을 구성하는 방법을 알아봅니다.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '1338'
-ht-degree: 67%
+ht-degree: 68%
 
 ---
 
@@ -35,9 +35,9 @@ ht-degree: 67%
 >
 >프론트엔드 파이프라인을 구성하기 전에 [AEM 빠른 사이트 생성 여정](/help/journey-sites/quick-site/overview.md)에서 사용하기 쉬운 AEM 빠른 사이트 생성 도구에 대한 안내서를 참조하십시오. 이 여정을 통해 AEM Site의 프론트엔드 개발을 간소화하여 백엔드 AEM에 대한 백엔드 지식 없이 사이트를 빠르게 사용자 정의할 수 있습니다.
 
-1. 에서 Cloud Manager에 로그인합니다. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 적절한 조직 선택
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직 선택
 
-1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 화면에서 프로그램을 선택합니다.
+1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔을 누르고 프로그램을 선택합니다.
 
 1. 다음 위치로 이동 **파이프라인** 다음에서 카드 **프로그램 개요** 페이지 및 클릭 **추가** 선택 **프로덕션 파이프라인 추가**.
 

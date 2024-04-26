@@ -1,10 +1,10 @@
 ---
 title: 프로비저닝 프로세스 - 개요
 description: 프로비저닝 프로세스 - 개요
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: eec64a5dc211dc72712989bf6dc81de8004e2a85
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 98%
+source-wordcount: '288'
+ht-degree: 93%
 
 ---
 
@@ -26,13 +26,10 @@ ht-degree: 98%
 
 자동 프로비저닝이 완료되면 다음과 같은 작업을 수행할 수 있습니다.
 
-* 액세스 권한 부여 – Adobe는 Adobe Identity Management System(IMS) 내에 조직을 만듭니다.
+* 액세스 권한 부여됨 - Adobe은 Adobe Identity Management System(IMS) 내에 조직을 만듭니다.
 * 지정된 관리자는 기본적으로 관리자 권한을 갖습니다.
 * 관리자는 Admin Console을 통해 추가 팀원에 대한 사용자 및 역할을 추가할 수 있습니다.
 * Cloud Manager에서 권한 할당을 결정하기 위해 사용자에 대한 역할 기반 권한 검토
-
-![processoverview.jpg](assets/processOverview.jpg)
-
 
 자세한 내용은 [Experience League에서 Experience Manager as a Cloud Service 온보딩](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html)을 참조하십시오.
 
@@ -49,8 +46,6 @@ ht-degree: 98%
 
 ### 2. Adobe Admin Console에 조직을 온보딩합니다.
 
-![processoverview2.jpg](assets/processOverview2.jpg)
-
 * 시스템 관리자:
    * AEM 프로그램 및 환경을 프로비저닝합니다.
    * 관리 작업을 위해 Admin Console로 이동합니다.
@@ -61,8 +56,6 @@ ht-degree: 98%
    * 로컬 그룹, 권한 및 특권을 관리합니다.
 
 ### 3. Admin Console에서 사용자 온보딩 및 액세스를 관리합니다.
-
-![processoverview3.jpg](assets/processOverview3.jpg)
 
 크기와 선호도에 따라 다음 세 가지 방법으로 사용자를 온보딩할 수 있습니다.
 * Admin Console에서 수동으로 사용자 만들기

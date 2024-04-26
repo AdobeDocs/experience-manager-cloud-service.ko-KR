@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 81b4455bf922ec0f4eb46046b82193ff822b4695
+source-git-commit: 3c0185c1a108f16ce3230aa8e949de3cf436d427
 workflow-type: tm+mt
-source-wordcount: '4902'
+source-wordcount: '4901'
 ht-degree: 99%
 
 ---
@@ -948,13 +948,14 @@ ht-degree: 99%
 + 구현 {#implementing}
    + [AEM as a Cloud Service용 애플리케이션 구현](/help/implementing/home.md)
    + Cloud Manager 사용 {#using-cloud-manager}
+      + [탐색](/help/implementing/cloud-manager/navigation.md)
       + 프로그램 {#programs}
          + [프로그램 및 프로그램 유형](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [제작 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
          + [프로덕션 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
          + [샌드박스 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
          + [샌드박스 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
-         + [프로그램 관리 및 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+         + [프로그램 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [환경 절전 모드 설정](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + AEM 애플리케이션 프로젝트 만들기 {#create-application-project}
          + [프로젝트 제작 마법사](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)

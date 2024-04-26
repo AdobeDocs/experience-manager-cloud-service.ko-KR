@@ -2,10 +2,10 @@
 title: 로그 액세스 및 관리
 description: AEM as a Cloud Service에서 개발 프로세스를 지원하기 위해 로그에 액세스하고 관리하는 방법을 알아봅니다.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: fa28d2fa83fb35fe80692c5f94661fa4c32a02a9
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 69%
+ht-degree: 67%
 
 ---
 
@@ -24,7 +24,7 @@ AEM as a Cloud Service에서 개발 프로세스를 지원하기 위해 로그�
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. **[내 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 화면에서 프로그램을 선택합니다.
+1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔을 누르고 프로그램을 선택합니다.
 
 1. **개요** 페이지에서 **환경** 카드로 이동합니다.
 

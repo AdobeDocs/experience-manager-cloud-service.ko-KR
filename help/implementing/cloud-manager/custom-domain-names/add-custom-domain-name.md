@@ -2,10 +2,10 @@
 title: 사용자 정의 도메인 이름 추가
 description: Cloud Manager를 사용하여 사용자 정의 도메인 이름을 추가하는 방법을 알아봅니다.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 52466e091cf6e0ab1ac620e15568c04881a3b63a
+source-git-commit: fcb6dd8ec74446643aaef1870685d26bc138bbd7
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 73%
+source-wordcount: '676'
+ht-degree: 72%
 
 ---
 
@@ -29,11 +29,9 @@ Cloud Manager의 두 위치에서 사용자 정의 도메인 이름을 추가할
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 화면에서 프로그램을 선택합니다.
+1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔을 누르고 프로그램을 선택합니다.
 
-1. **개요** 페이지에서 **환경** 화면으로 이동합니다.
-
-1. 클릭 **도메인 설정** 을 클릭합니다.
+1. 다음으로 이동하여 **도메인 설정** 왼쪽 탐색 패널의 탭입니다.
 
    ![도메인 설정 창](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)으로 이동합니다.
 

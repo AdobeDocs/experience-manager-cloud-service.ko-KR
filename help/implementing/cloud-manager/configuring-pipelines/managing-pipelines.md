@@ -3,10 +3,10 @@ title: 파이프라인 관리
 description: 편집, 실행 및 삭제를 포함하여 기존 파이프라인을 관리하는 방법을 알아봅니다.
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 71ece3b084c3a262cacc62019396138a88a340b9
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 65%
+source-wordcount: '1018'
+ht-degree: 54%
 
 ---
 
@@ -41,21 +41,25 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 화면에서 프로그램을 선택합니다.
+1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔을 누르고 프로그램을 선택합니다.
 
 1. 다음에서 **프로그램 개요** 페이지에서 **파이프라인** 탭을으로 전환합니다. **파이프라인** 창.
 
 1. 여기에서 프로그램에 대한 모든 파이프라인 목록을 확인하고 에서와 같이 파이프라인 실행을 시작 및 중지할 수 있습니다. **파이프라인 카드**.
 
-파이프라인이 실행 중인 경우, **상태** 열 위로 마우스를 가져가면 실행에 대한 세부 정보가 표시됩니다.
+파이프라인이 실행 중인 경우 의 정보 아이콘을 탭합니다. **상태** 열에는 실행에 대한 세부 사항이 표시됩니다.
 
 ![파이프라인 실행 세부 정보](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
 
 **세부 정보 보기**&#x200B;를 탭하거나 클릭하면 [파이프라인 실행에 대한 세부 정보를 확인할 수 있습니다.](#view-details)
 
+파이프라인의 생략 부호를 탭하거나 클릭하여 다음과 같은 파이프라인 상태에 적합한 추가 작업을 수행할 수도 있습니다. [편집](#editing-pipelines) 또는 [실행을 취소합니다.](#cancel)
+
+![파이프라인 작업](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
+
 ## 활동 창 {#activity}
 
-**활동** 창에는 선택한 프로그램에 대한 모든 파이프라인 실행의 전체 목록이 표시됩니다.
+다음 **활동** 창에는 선택한 프로그램에 대한 모든 파이프라인 실행과 기타 중요한 프로그램 이벤트의 전체 목록이 표시됩니다.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
@@ -63,11 +67,15 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 
 1. 여기에서는 현재 실행과 이전 실행을 포함하여 프로그램에 대한 모든 파이프라인 실행 목록을 볼 수 있습니다.
 
-파이프라인이 실행 중인 경우, **상태** 열 위로 마우스를 가져가면 실행에 대한 세부 정보가 표시됩니다.
+파이프라인이 실행 중인 경우 의 정보 아이콘을 탭합니다. **상태** 열에는 실행에 대한 세부 사항이 표시됩니다.
 
 ![파이프라인 실행 세부 정보](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
 
-**세부 정보 보기**&#x200B;를 탭하거나 클릭하면 [파이프라인 실행에 대한 세부 정보를 확인할 수 있습니다.](#view-details)
+파이프라인 실행을 나타내는 행을 탭하거나 클릭하면 [파이프라인 실행에 대한 세부 사항입니다.](#view-details)
+
+줄임표 버튼을 탭하거나 클릭하여 자세한 내용을 보거나 로그를 다운로드하는 등 파이프라인 실행에 대한 추가 작업을 수행할 수도 있습니다. [파이프라인 세부 정보 페이지.](#view-details)
+
+![파이프라인 실행 작업](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-execution-actions.png)
 
 ## 파이프라인 실행 {#running-pipelines}
 

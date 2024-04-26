@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service에 대한 고급 네트워킹 구성
 description: AEM as a Cloud Service으로 VPN 또는 유연한/전용 이그레스 IP 주소와 같은 고급 네트워킹 기능을 구성하는 방법에 대해 알아봅니다.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 678e81eb22cc1d7c239ac7a2594b39a3a60c51e2
+source-git-commit: 3c0185c1a108f16ce3230aa8e949de3cf436d427
 workflow-type: tm+mt
 source-wordcount: '5093'
-ht-degree: 60%
+ht-degree: 59%
 
 ---
 
@@ -77,7 +77,7 @@ AEM as a Cloud Service는 다음과 같은 고급 네트워킹 옵션을 제공�
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. **[내 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 화면에서 프로그램을 선택합니다.
+1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔을 누르고 프로그램을 선택합니다.
 
 1. **프로그램 개요** 페이지에서 **환경** 탭으로 이동한 다음, 왼쪽 패널에서 **네트워크 인프라**&#x200B;를 선택합니다.
 
@@ -242,7 +242,7 @@ Adobe 조직의 모든 프로그램 및 각 프로그램의 모든 환경에 동
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. **[내 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 화면에서 프로그램을 선택합니다.
+1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔을 누르고 프로그램을 선택합니다.
 
 1. **프로그램 개요** 페이지에서 **환경** 탭으로 이동한 다음, 왼쪽 패널에서 **네트워크 인프라**&#x200B;를 선택합니다.
 
@@ -416,7 +416,7 @@ VPN을 사용하면 작성자, 게시 또는 미리보기 인스턴스에서 On-
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. **[내 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 화면에서 프로그램을 선택합니다.
+1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔을 누르고 프로그램을 선택합니다.
 
 1. **프로그램 개요** 페이지에서 **환경** 탭으로 이동한 다음, 왼쪽 패널에서 **네트워크 인프라**&#x200B;를 선택합니다.
 
@@ -631,7 +631,7 @@ Header always set Cache-Control private
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. **[내 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 화면에서 프로그램을 선택합니다.
+1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔을 누르고 프로그램을 선택합니다.
 
 1. 다음에서 **프로그램 개요** 페이지, 다음으로 이동 **환경** 탭에서 고급 네트워킹 구성을 활성화할 환경을 선택합니다 **환경** 왼쪽 패널의 제목 그런 다음 를 선택합니다. **고급 네트워크 구성** 선택한 환경의 탭을 클릭하고 **네트워크 인프라 활성화**.
 
@@ -690,7 +690,7 @@ API는 몇 초 안에 응답하여 상태를 다음과 같이 표시합니다. `
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. **[내 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 화면에서 프로그램을 선택합니다.
+1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔을 누르고 프로그램을 선택합니다.
 
 1. 다음에서 **프로그램 개요** 페이지, 다음으로 이동 **환경** 탭에서 고급 네트워킹 구성을 활성화할 환경을 선택합니다 **환경** 왼쪽 패널의 제목 그런 다음 를 선택합니다. **고급 네트워크 구성** 선택한 환경의 탭을 클릭하고 줄임표 버튼을 클릭합니다.
 
@@ -728,7 +728,7 @@ API는 몇 초 안에 응답하여 상태를 다음과 같이 표시합니다. `
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직 선택
 
-1. **[내 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 화면에서 프로그램을 선택합니다.
+1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔을 누르고 프로그램을 선택합니다.
 
 1. **프로그램 개요** 페이지에서 **환경** 탭으로 이동한 다음, 왼쪽 패널에서 **네트워크 인프라** 제목을 선택합니다. 그런 다음 삭제하려는 인프라 옆에 있는 줄임표 버튼을 클릭합니다.
 

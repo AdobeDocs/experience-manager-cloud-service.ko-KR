@@ -2,10 +2,10 @@
 title: 콘텐츠 복사 도구
 description: 컨텐츠 복사 도구를 사용하면 사용자가 필요에 따라 변화하는 컨텐츠를 AEM의 프로덕션 환경에서 테스트 목적으로 낮은 환경으로 as a Cloud Service으로 복사할 수 있습니다.
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
-source-git-commit: 8bc20c66aad7bf4befdd28db2c628a1535ae375b
+source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 34%
+source-wordcount: '1286'
+ht-degree: 33%
 
 ---
 
@@ -49,9 +49,7 @@ ht-degree: 34%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그온한 다음 적절한 조직과 프로그램을 선택합니다.
 
-1. **개요** 페이지에서 **환경** 화면으로 이동합니다.
-
-1. **환경** 화면에서 **콘텐츠 세트** 페이지로 이동합니다.
+1. 측면 탐색 패널을 사용하여 다음 위치로 이동합니다. **콘텐츠 세트** 의 탭 **개요** 페이지를 가리키도록 업데이트하는 중입니다.
 
 1. 화면 오른쪽 상단에서 **콘텐츠 세트 추가**.
 

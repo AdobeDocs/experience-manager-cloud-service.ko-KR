@@ -2,10 +2,10 @@
 title: 샌드박스 프로그램 만들기
 description: Cloud Manager를 사용하여 교육, 데모, POC 또는 기타 비프로덕션 목적을 위한 자체 샌드박스 프로그램을 만드는 방법을 알아봅니다.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 558b46f58491dbd6845003827dcf2a0ae1b1d074
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 86%
+source-wordcount: '434'
+ht-degree: 74%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 86%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 화면, 탭 또는 클릭 **프로그램 추가** 화면 오른쪽 상단 모서리 근처.
+1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔, 탭 또는 클릭 **프로그램 추가** 화면 오른쪽 상단 모서리 근처.
 
-   ![Cloud Manager 랜딩 페이지](assets/cloud-manager-my-programs.png)
+   ![Cloud Manager 랜딩 페이지](assets/log-in.png)
 
 1. 프로그램 만들기 마법사에서 **샌드박스 설정**&#x200B;을 선택하고 프로그램 이름을 입력합니다.
 
@@ -63,12 +63,12 @@ ht-degree: 86%
 
 1. 개발 환경이 생성되면 **AEM 액세스** 링크를 사용하여 AEM에 로그인할 수 있습니다.
 
-   ![AEM 링크 액세스](assets/create-program-5.png)
+   ![AEM 링크 액세스](assets/create-program5.png)
 
-1. 개발에 대한 비프로덕션 파이프라인 배포가 완료되면 마법사가 AEM 개발 환경에 액세스하거나 개발 환경에 코드를 배포하도록 안내합니다.
+1. 개발에 대한 비프로덕션 파이프라인 배포가 완료되면 콜 투 액션 의 마법사가 AEM 개발 환경에 액세스하거나 개발 환경에 코드를 배포하도록 안내합니다.
 
    ![샌드박스 배포](assets/create-program-setup-deploy.png)
 
-다른 프로그램으로 전환하거나 개요 페이지로 돌아가서 다른 프로그램을 만들어야 하는 경우, 화면 왼쪽 상단에 있는 프로그램 이름을 클릭하여 **다음으로 이동** 옵션을 표시합니다.
-
-![다음으로 이동](assets/create-program-a1.png)
+>[!TIP]
+>
+>문서를 참조하십시오. [Cloud Manager UI 탐색](/help/implementing/cloud-manager/navigation.md) cloud Manager 탐색 방법 및 이해 **내 프로그램** 콘솔.
