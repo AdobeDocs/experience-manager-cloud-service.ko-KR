@@ -2,7 +2,7 @@
 title: Universal Editor 소개
 description: 유니버설 편집기를 통해 Headless 및 Headful 환경의 WYSIWYG(보이는 그대로) 편집을 활성화하는 방법에 대해 알아봅니다. 콘텐츠 작성자가 탁월한 경험을 제공하고 콘텐츠 속도를 높이며 최신 개발자 경험을 제공하는 데 도움이 되는 방식에 대해 살펴보십시오.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 24496f81313bd58f60aa6d251c46f11fb24d1dbd
+source-git-commit: bbcf44c585e98f75c558d06edc3c1c030adad2cf
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 64%
@@ -90,4 +90,3 @@ Universal Editor에 대해 자세히 알아보려면 다음 문서를 참조하�
 * [Universal Editor 아키텍처](architecture.md) - Universal Editor의 아키텍처 및 해당 서비스와 계층 간에 데이터가 흐르는 방식에 대해 알아봅니다.
 * [속성 및 유형](attributes-types.md) - Universal Editor에 필요한 데이터 속성 및 유형에 대해 알아봅니다.
 * [Universal Editor 인증](authentication.md) - Universal Editor의 인증 방법에 대해 알아봅니다.
-
