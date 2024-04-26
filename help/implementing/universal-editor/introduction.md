@@ -2,10 +2,10 @@
 title: Universal Editor 소개
 description: 유니버설 편집기를 통해 Headless 및 Headful 환경의 WYSIWYG(보이는 그대로) 편집을 활성화하는 방법에 대해 알아봅니다. 콘텐츠 작성자가 탁월한 경험을 제공하고 콘텐츠 속도를 높이며 최신 개발자 경험을 제공하는 데 도움이 되는 방식에 대해 살펴보십시오.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: bbcf44c585e98f75c558d06edc3c1c030adad2cf
+source-git-commit: 2ad5920d0b3d8a3ad780a2cb0f28b7e6f9e596ab
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 64%
+source-wordcount: '1066'
+ht-degree: 59%
 
 ---
 
@@ -79,6 +79,16 @@ Universal Editor를 사용하기 위한 구현 요구 사항은 매우 간단하
 마케팅 실무자가 뛰어난 경험을 제공하기 위해 주어진 컨텍스트의 레이아웃에 맞는 콘텐츠를 만들고자 합니다.
 
 * 수행해야 할 기본 작업은 독자와 설득력 있게 소통하는 것입니다.
+
+## 제한 사항 {#limitations}
+
+유니버설 편집기를 살펴보고 고유한 프로젝트에서 이를 구현하는 데 있어 다음 제한 사항을 염두에 두십시오.
+
+* 25개 이하의 AEM 리소스(콘텐츠 조각, 페이지, 경험 조각, 에셋 등) 는 단일 페이지에서 계측을 참조해야 합니다.
+* AEM as a Cloud Service 는 유일하게 지원되는 AEM 백엔드입니다.
+* AEM as a Cloud Service 릴리스 `2023.8.13099` 또는 그 이상이 필요합니다.
+* 컨텐츠 작성자는 고유한 개별 Experience Cloud 계정이 있어야 합니다.
+* Chrome 및 Edge가 지원되는 브라우저입니다.
 
 ## 추가 리소스 {#additional-resources}
 

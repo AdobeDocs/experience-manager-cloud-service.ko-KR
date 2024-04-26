@@ -2,7 +2,7 @@
 title: 모델 정의, 필드 및 구성 요소 유형
 description: 예가 포함된 속성 레일에서 유니버설 편집기가 편집할 수 있는 필드 및 구성 요소 유형에 대해 알아봅니다. 모델 정의를 만들고 구성 요소에 연결하여 나만의 앱을 계측하는 방법을 이해합니다.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+source-git-commit: 9f0a3bf5c8d839fa2ab6744c6fa7f97cc5fe8684
 workflow-type: tm+mt
 source-wordcount: '1144'
 ht-degree: 10%
@@ -830,4 +830,3 @@ A `tab` 정의는 배열의 구분 기호로 생각할 수 있습니다. `fields
 ![텍스트 구성 요소 유형의 스크린샷](assets/component-types/simpletext.png)
 
 >[!ENDTABS]
-
