@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service에서의 유지 관리 작업
 description: AEM as a Cloud Service의 유지 관리 작업과 이를 구성하는 방법에 대해 알아봅니다.
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 4ac5ec2a2b8da90820734e4fc06c084c810c0724
+source-git-commit: 07676903a0270bfee5bfcffa2617e08e0a4ebbaf
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1144'
 ht-degree: 59%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 59%
   <tr>
     <td>버전 삭제</td>
     <td>Adobe</td>
-    <td>기존 환경(2024년 4월 15일 이전에 생성된 환경)의 경우 지우기가 비활성화되며, 향후 기본값 7년으로 활성화됩니다. 고객은 더 낮은 사용자 정의 값(예: 30일)으로 이를 구성할 수 있습니다.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->새 환경(2024년 4월 15일부터 생성된 환경)은 기본적으로 아래 값으로 제거가 활성화되며, 고객은 사용자 지정 값으로 을 구성할 수 있습니다.
+    <td>기존 환경(2024년에 아직 결정되지 않은 날짜 이전에 생성된 환경)의 경우 지우기가 비활성화되며 향후 기본값 7년으로 활성화됩니다. 고객은 더 낮은 사용자 정의 값(예: 30일)으로 구성할 수 있습니다.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->새 환경(2024년에 아직 결정되지 않은 날짜부터 생성된 환경)은 기본적으로 아래 값으로 제거가 활성화되며, 고객은 사용자 지정 값으로 을 구성할 수 있습니다.
      <ol>
        <li>30일 넘는 구 버전 삭제</li>
        <li>지난 30일 이내 가장 최근의 5개 버전은 유지</li>
@@ -56,7 +56,7 @@ ht-degree: 59%
   <tr>
     <td>감사 로그 삭제</td>
     <td>Adobe</td>
-    <td>기존 환경(2024년 4월 15일 이전에 생성된 환경)의 경우 지우기가 비활성화되며, 향후 기본값 7년으로 활성화됩니다. 고객은 더 낮은 사용자 정의 값(예: 30일)으로 이를 구성할 수 있습니다.<br><br> <!-- See above for the two line breaks -->새 환경(2024년 4월부터 생성된 환경)은 기본적으로 <code>/content</code> 다음 동작에 따른 저장소의 노드:
+    <td>기존 환경(2024년에 아직 결정되지 않은 날짜 이전에 생성된 환경)의 경우 지우기가 비활성화되며 향후 기본값 7년으로 활성화됩니다. 고객은 더 낮은 사용자 정의 값(예: 30일)으로 구성할 수 있습니다.<br><br> <!-- See above for the two line breaks -->새 환경(2024년에 아직 결정되지 않은 날짜부터 만들어진 환경)은 기본적으로 <code>/content</code> 다음 동작에 따른 저장소의 노드:
      <ol>
        <li>복제 감사의 경우, 3일 넘는 감사 로그 삭제</li>
        <li>DAM(애셋) 감사의 경우, 30일 넘는 감사 로그 삭제</li>
