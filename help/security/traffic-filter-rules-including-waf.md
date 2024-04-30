@@ -5,7 +5,7 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: b52da0a604d2c320d046136f5e526e2b244fa6cb
 workflow-type: tm+mt
 source-wordcount: '3790'
-ht-degree: 75%
+ht-degree: 80%
 
 ---
 
@@ -254,7 +254,7 @@ when:
 | SQLI | SQL 주입 | SQL 주입은 임의의 데이터베이스 쿼리를 실행하여 애플리케이션에 대한 액세스 권한을 얻거나 권한 있는 정보를 얻으려는 시도입니다. |
 | BACKDOOR | 백도어 | 백도어 신호는 일반적인 백도어 파일이 시스템에 있는지 확인하려고 시도하는 요청입니다. |
 | CMDEXE | 명령 실행 | 명령 실행은 사용자 입력을 통해 임의의 시스템 명령으로 대상 시스템을 제어하거나 손상시키려는 시도입니다. |
-| CMDEXE-NO-BIN | 다음을 제외한 명령 실행 `/bin/` | 다음과 동일한 수준의 보호 제공 `CMDEXE` false-positive를 비활성화하는 동안 `/bin` AEM 아키텍처로 인해 발생합니다. |
+| CMDEXE-NO-BIN | `/bin/`을 제외한 명령 실행 | AEM 아키텍처로 인해 `/bin` 긍정 오류(false positive)를 비활성화하는 동안 `CMDEXE`와 동일한 수준의 보호를 제공합니다. |
 | XSS | 크로스 사이트 스크립팅 | 크로스 사이트 스크립팅은 악성 JavaScript 코드를 통해 사용자의 계정이나 웹 탐색 세션을 하이재킹하려는 시도입니다. |
 | TRAVERSAL | 디렉터리 순회 | 디렉터리 순회는 민감한 정보를 얻기 위해 시스템 전체에서 권한 있는 폴더를 탐색하려는 시도입니다. |
 | USERAGENT | 공격 툴링 | 공격 툴링은 자동화된 소프트웨어를 사용하여 보안 취약성을 식별하거나 발견된 취약성을 악용하려고 시도하는 것입니다. |
@@ -334,7 +334,7 @@ data:
 
 **예 3**
 
-이 규칙은 쿼리 매개 변수를 포함하는 게시 요청을 차단합니다. `foo`, 그러나 IP 192.168.1.1에서 오는 모든 요청을 허용합니다.
+다음 규칙은 쿼리 매개변수 `foo`가 포함된 게시 중인 요청을 차단하지만, IP 192.168.1.1에서 오는 모든 요청은 허용합니다.
 
 ```
 kind: "CDN"
@@ -359,7 +359,7 @@ data:
 
 **예 4**
 
-이 규칙은 경로 요청을 차단합니다. `/block-me` 게시 시 및 가 와(과) 일치하는 모든 요청을 차단함 `SQLI` 또는 `XSS` 패턴. 이 예에는 `SQLI` 및 `XSS` [WAF 플래그](#waf-flags-list)를 참조하고 별도의 라이선스가 필요한 WAF 트래픽 필터 규칙이 포함되어 있습니다.
+다음 규칙은 게시 중인 `/block-me` 경로에 대한 요청을 차단하고 `SQLI` 또는 `XSS` 패턴과 일치하는 모든 요청을 차단합니다. 이 예에는 `SQLI` 및 `XSS` [WAF 플래그](#waf-flags-list)를 참조하고 별도의 라이선스가 필요한 WAF 트래픽 필터 규칙이 포함되어 있습니다.
 
 ```
 kind: "CDN"
@@ -425,7 +425,7 @@ data:
 
 속도 제한은 CDN POP당 계산됩니다. 예를 들어 몬트리올, 마이애미 및 더블린의 POP에서 초당 각각 80, 90 및 120개의 요청이 트래픽 비율로 발생한다고 가정하겠습니다. 그리고, 요금 제한 규칙은 100이라는 한도로 설정되어 있다. 이 경우 더블린으로 보내는 트래픽만 속도가 제한됩니다.
 
-비율 제한은 가장자리에 도달하는 트래픽, 원본에 도달하는 트래픽 또는 오류 수를 기반으로 평가됩니다.
+속도 제한은 에지에 도달하는 트래픽, 원본에 도달하는 트래픽 또는 오류 수를 기준으로 평가됩니다.
 
 ### rateLimit 구조 {#ratelimit-structure}
 
@@ -434,7 +434,7 @@ data:
 | limit | 10에서 10000 사이의 정수 | required | 규칙이 트리거되는 초당 요청의 요청 속도(CDN POP당)입니다. |
 | window | 정수 열거형: 1, 10 또는 60 | 10 | 요청 속도를 계산하는 샘플링 기간(초). 카운터의 정확도는 창의 크기에 따라 다릅니다(큰 창의 정확도가 더 높음). 예를 들어 1초 윈도우에서는 50% 정확도를, 60초 윈도우에서는 90% 정확도를 기대할 수 있다. |
 | penalty | 60에서 3600 사이의 정수 | 300(5분) | 일치하는 요청이 차단되는 기간(초 단위로 반올림). |
-| 횟수 | 모두, 페치, 오류 | 모두 | 에지 트래픽(모두), 원본 트래픽(페치) 또는 오류 수(오류)를 기반으로 평가합니다. |
+| 횟수 | 모두, 가져오기, 오류 | 모두 | 에지 트래픽(모두), 원본 트래픽(가져오기) 또는 오류 수(오류)를 기준으로 평가합니다. |
 | groupBy | 배열[getter] | 없음 | 처리율 제한 장치 카운터는 요청 속성 세트(예: clientIp)로 집계됩니다. |
 
 ### 예 {#ratelimiting-examples}
@@ -634,7 +634,7 @@ Adobe는 Cloud Manager를 통해 다운로드한 CDN 로그를 수집하기 위�
 
 대시보드 도구는 다음에서 직접 복제할 수 있습니다. [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) GitHub 리포지토리.
 
-[Tutorials](#tutorial) 대시보드 도구 사용 방법에 대한 구체적인 지침을 볼 수 있습니다.
+[튜토리얼](#tutorial)에서는 대시보드 도구 사용법에 대한 구체적인 지침을 확인할 수 있습니다.
 
 ## 권장 스타터 규칙 {#recommended-starter-rules}
 
@@ -719,11 +719,11 @@ data:
 
 ## 튜토리얼 {#tutorial}
 
-두 가지 튜토리얼을 사용할 수 있습니다.
+사용 가능한 두 가지 튜토리얼은 다음과 같습니다.
 
 ### 트래픽 필터 규칙(WAF 규칙 포함)으로 웹 사이트 보호
 
-[튜토리얼 작업](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) WAF 규칙을 포함한 트래픽 필터 규칙에 대한 일반적이고 실용적인 지식과 경험을 얻을 수 있습니다.
+[튜토리얼 살펴보기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)로 WAF 규칙 등 트래픽 필터 규칙에 대한 일반적이며 실질적인 지식과 경험을 얻습니다.
 
 튜토리얼은 다음 과정에 대해 소개합니다.
 
@@ -735,13 +735,13 @@ data:
 
 ### 트래픽 필터 규칙을 사용하여 DoS 및 DDoS 공격 차단
 
-[차단 방법에 대해 자세히 알아보기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) 서비스 거부(DoS) 및 분산 서비스 거부(DDoS) 공격은 속도 제한 트래픽 필터 규칙 및 기타 전략을 사용합니다.
+속도 제한 트래픽 필터 규칙 및 기타 전략을 사용하여 서비스 거부(DoS) 및 분산 서비스 거부(DDoS) 공격을 [차단하는 방법에 대해 자세히 알아보십시오](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules).
 
 튜토리얼은 다음 과정에 대해 소개합니다.
 
 * 보호 이해
-* 비율 제한이 초과되면 경고 받기
-* 대시보드 도구를 사용하여 트래픽 패턴 분석을 통해 속도 제한 트래픽 필터 규칙에 대한 임계값을 구성할 수 있습니다.
+* 속도 제한이 초과되면 알림 수신
+* 속도 제한 트래픽 필터 규칙에 대한 임계값을 구성하기 위해 대시보드 도구로 트래픽 패턴 분석
 
 
 
