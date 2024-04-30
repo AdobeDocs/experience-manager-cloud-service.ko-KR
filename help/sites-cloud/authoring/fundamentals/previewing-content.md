@@ -2,10 +2,10 @@
 title: 콘텐츠 미리보기
 description: AEM 미리보기 서비스를 사용하여 콘텐츠를 시작하기 전에 미리 보는 방법에 대해 알아봅니다.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: a9a2362903e8eec25393e2ceb307814e1a21f142
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 90%
+source-wordcount: '298'
+ht-degree: 89%
 
 ---
 
@@ -54,11 +54,3 @@ https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.htm
 **미리보기** 환경에서 콘텐츠를 게시 취소하는 작업은 **게시** 환경의 [페이지 게시 취소](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) 프로세스와 기본적으로 동일합니다.
 
 유일한 차이점은 **대상**&#x200B;이 **미리보기**&#x200B;가 되도록 선택할 수 있다는 것입니다.
-
-## 추가 정보 {#further-information}
-
-추가 참조:
-
-* [미리보기 계층을 위한 OSGi 설정 구성](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
-
-* [Developer Console을 사용하여 미리보기 디버깅](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)

@@ -4,9 +4,9 @@ description: 콘솔 및 편집기에서 AEM 콘텐츠 조각을 관리하고, He
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 404eb317562f974f72820c6e3aa019fbe043d7f7
+source-git-commit: a9a2362903e8eec25393e2ceb307814e1a21f142
 workflow-type: tm+mt
-source-wordcount: '2643'
+source-wordcount: '2628'
 ht-degree: 86%
 
 ---
@@ -307,11 +307,7 @@ ht-degree: 86%
 
   >[!NOTE]
   >
-  >환경 미리보기에 대한 자세한 내용은 다음을 참조하십시오.
-  >
-  >* [환경 관리](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
-  >* [미리보기 계층을 위한 OSGi 설정 구성](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
-  >* [Developer Console을 사용하여 미리보기 디버깅](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
+  >환경 미리보기에 대한 자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 >[!CAUTION]
 >
