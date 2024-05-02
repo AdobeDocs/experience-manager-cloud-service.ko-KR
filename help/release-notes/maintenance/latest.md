@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 60952db4172b882b71a0b230fc8f4c27154e9cc0
+source-git-commit: 79dcf8a4e9834beeb466ed9270a3f5c6aa67aa9a
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 67%
+source-wordcount: '723'
+ht-degree: 19%
 
 ---
 
@@ -13,26 +13,69 @@ ht-degree: 67%
 
 다음 섹션에서는 Experience Manager as a Cloud Service 현재 유지 관리 릴리스의 기술 릴리스 정보에 대해 간략히 소개합니다.
 
-## 릴리스 15977 {#release-15977}
+## 릴리스 16145 {#release-16145}
 
-2024년 4월 19일에 릴리스된 유지 관리 릴리스 15977의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이전 유지 관리 릴리스는 릴리스 15939이었습니다.
+다음은 2024년 5월 1일에 공개적으로 릴리스된 유지 보수 릴리스 16145에 대한 지속적인 개선 사항을 요약합니다. 이전 유지 관리 릴리스는 릴리스 15977.
 
 2024.4.0 기능 활성화는 이 유지 관리 릴리스에 대한 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
 
-### 개선 사항 {#enhancements-15977}
+### 개선 사항 {#enhancements-16145}
 
-* GRANITE-51335: AEM 상태 검사가 최적화되어 인스턴스 안정성이 향상되었습니다.
+* ASSETS-23489: 저장소 통찰력 개선 사항.
+* ASSETS-26926: Dynamic Media 업로드 폴링 개선 사항.
+* ASSETS-30351: 다운로드 대화 상자는 Dynamic Media 렌디션 크기를 비동기적으로 로드해야 합니다.
+* ASSETS-30379: 다운로드 시 DRM 라이센스 해상도를 개선합니다.
+* ASSETS-31058: 렌디션 탭의 AEM assets UI에서 스마트 자르기 렌디션을 표시하고 사용자가 이러한 렌디션을 클릭하면 스마트 자르기 이미지를 생성합니다.
+* ASSETS-31218: 자산 배달 API에 명명된 smartcrop에 대한 지원을 추가합니다.
+* ASSETS-31979: 비동기 자산 작업 중에 시각적 표시기를 추가하고 UI 기능을 비활성화합니다.
+* ASSETS-32735: 에셋 메타데이터 업데이트 이벤트에 대한 개선 사항.
+* ASSETS-34661: AEMaaCS Publish의 DM 미리보기 및/또는 게재 URL용 API입니다.
+* ASSETS-37259: XMP 구문 분석 개선 사항.
+* ASSETS-37263: 실패한 자산 비동기 작업의 취소를 허용합니다.
+* CNTBF-114: 컨텐츠 역류 개선 사항.
+* CNTBF-148: 컨텐츠 역류 개선 사항.
+* CQ-4356992: 최신 AEM 및 Granite 번역.
+* SITES-19326: Assets UI에서 링크를 업데이트하여 새 CF 편집기에서 CF를 엽니다.
+* SITES-20686: GraphQL - _dmS7Url을 통해 Dynamic Media URL을 노출합니다(이미지가 아닌 에셋의 경우).
+* SKYOPS-68091: Java 11.0.20으로 업데이트합니다.
 
-### 해결된 문제 {#fixed-issues-15977}
+### 해결된 문제 {#fixed-issues-16145}
 
-* CQ-4357226: OAuth 자격 증명에 대한 IMS 구성 지원의 회귀 문제가 해결되었습니다.
-* GRANITE-51335: Ratelimit가 5.0.4로 업그레이드되어 Felix 상태 검사 등록이 수정되었습니다.
+* ASSETS-32321: 상위 폴더에 &quot;jcr:content&quot; 하위 노드가 없으면 사후 처리 워크플로우 확인에 실패합니다.
+* ASSETS-33856: JPEG 이미지 사전 설정은 파일을 TXT로 다운로드합니다.
+* ASSETS-34096: 비동기 다운로드 보고서에 대한 Touch UI 보기를 수정합니다.
+* ASSETS-34493: 다중 회사 기능 전환을 활성화한 후 다운로드 대화 상자를 로드하는 동안 오류가 발생했습니다.
+* ASSETS-34824: DM이 비활성화된 폴더에 대해 URL 복사가 빈 상태로 표시됩니다.
+* ASSETS-35226: DAM 루트에 지정된 경우 사후 처리 워크플로우가 해결되지 않습니다.
+* ASSETS-35559: DM 일괄 업로드 실패 로그를 줄여 경고합니다.
+* ASSETS-35860: AEM Assets 열 보기에서 시간대 전환이 잘못되었습니다.
+* ASSETS-35935: 페이로드 검토를 닫은 후 잘못된 폴더 탐색입니다.
+* ASSETS-35961: 자르기 추가 단추가 이미지 프로필에서 작동하지 않습니다.
+* ASSETS-36227: 게시에서 FolderPreviewUpdaterImpl 서비스를 비활성화합니다.
+* ASSETS-36943: CF 및 기타 CF 항목이 목록 보기의 폴더에 있을 때 정렬된 열을 누락합니다.
+* ASSETS-36990: 많은 수의 속성으로 인해 내보낸 메타데이터 작업이 실패/느려집니다.
+* ASSETS-37113: 쿼리가 CF 결과만 반환하는 경우 자산 재처리 작업이 즉시 종료됩니다.
+* ASSETS-37260: AEM에서 메타데이터 내보내기로 잘못된 CSV가 생성될 수 있습니다.
+* ASSETS-37261: AEM Assets의 PPTx 및 PDF 주석 문제입니다.
+* ASSETS-37282: 큰 폴더를 여는 느린 요청이 있을 수 있습니다.
+* ASSETS-37330: OneDrive에서 일괄 가져오기를 수행하면 잘못된 AEM 폴더 구조가 만들어집니다.
+* ASSETS-37609: 기존 scene7 conf 조회를 제거합니다.
+* ASSETS-38016: 일부 메타데이터 업데이트가 이벤트에서 제대로 추적되지 않습니다.
+* CQ-4357161: AEM 받은 편지함 페이로드 화면에서 404를 반환합니다.
+* GRANITE-50041: 드롭다운 옵션에 &quot;렌디션 추가&quot; 옵션만 있는 경우 해상도가 1440px 너비를 초과할 경우 렌디션 추가가 작동하지 않습니다.
+* GRANITE-50279: Coral Datepicker 구성 요소에서 순서가 잘못된 주 이름을 지정합니다.
+* SCRNS-3949: 화면 채널 가져오기 요청 시간이 너무 깁니다.
+* SCRNS-3981: [시퀀스 채널] 요소 로드/언로드 이벤트의 시퀀스가 왜곡될 때 화면이 어둡습니다.
+* SCRNS-4180: [시퀀스 채널] 대체 썸네일에서 복구되면 비디오 지속 시간이 -1인 채널의 경우 시퀀스가 빈 화면으로 중지됩니다.
+* SCRNS-4245: [시퀀스 채널] 비디오가 로드되고 대체 썸네일에서 전환될 때 빈 화면이 표시되는 시간이 제한됩니다.
+* SITES-16055: 각 속성 페이지 내에서 Live Copy 및 Live Copy 소스 링크를 수정합니다.
+* SCRNS-4243: 관리자가 아닌 사용자를 위해 콘텐츠 공급자에 버튼이 없습니다.
 
-### 알려진 문제 {#known-issues-15977}
+### 알려진 문제 {#known-issues-16145}
 
-* **(AEM Forms만 해당)** AEM Cloud Foundation 유지 관리 릴리스 15977을 설치한 후 적응형 양식 필드가 양식을 작성하는 도중 및 게시된 양식에 대해 잘못된 순서로 렌더링됩니다. AEM FormsAdobe 를 사용하는 경우 향후 유지 관리 릴리스에서 문제가 해결될 때까지 15977 릴리스로 업그레이드하지 않는 것이 좋습니다. 그렇게 하면 불편함을 피하는 데 도움이 될 수 있습니다.
+없음.
 
-### 사용 중단된 기능 및 API {#deprecated-15977}
+### 사용 중단된 기능 및 API {#deprecated-16145}
 
 * [Adobe Developer Console에서 JWT 자격 증명 사용 중단](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 
@@ -60,7 +103,7 @@ ht-degree: 67%
 
 AEMas a Cloud Service 에서 더 이상 사용되지 않거나 제거된 내용은 [사용이 중단되거나 제거된 기능 및 API](/help/release-notes/deprecated-removed-features.md).
 
-### 임베드된 기술 {#embedded-tech-15977}
+### 임베드된 기술 {#embedded-tech-16145}
 
 | 기술 | 버전 | 링크 |
 |---|---|---|
