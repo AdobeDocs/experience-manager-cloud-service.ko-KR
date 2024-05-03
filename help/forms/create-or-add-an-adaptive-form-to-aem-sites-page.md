@@ -4,10 +4,10 @@ description: 적응형 양식을 만들거나 AEM Sites 페이지에 추가하�
 feature: Adaptive Forms, Foundation Components, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '3177'
-ht-degree: 20%
+source-wordcount: '3184'
+ht-degree: 19%
 
 ---
 
@@ -40,7 +40,7 @@ AEM Forms Cloud Service은 적응형 양식 컨테이너 및 적응형 Forms - �
 * **태그 지정:** AEM Sites 페이지를 사용하면 다음 작업을 수행할 수 있습니다. [페이지, 에셋 또는 기타 콘텐츠에 태그 또는 레이블 할당](/help/implementing/developing/introduction/tagging-framework.md). 태그는 특정 기준에 따라 콘텐츠를 분류하고 구성하는 방법을 제공하는 키워드 또는 메타데이터 레이블입니다. 페이지, 에셋 또는 AEM 내의 다른 콘텐츠 항목에 하나 이상의 태그를 할당하여 검색을 개선하고 에셋을 분류할 수 있습니다.
 * **컨텐츠 잠금 및 잠금 해제:** AEM Sites을 통해 사용자는 [페이지 액세스 및 수정 제어](/help/sites-cloud/authoring/page-editor/edit-content.md) AEM Sites 환경 내에서. 페이지가 잠기면 다른 사용자가 승인되지 않은 변경 또는 편집하지 못하도록 보호됩니다. 콘텐츠를 잠근 사용자 또는 지정된 관리자만 수정을 허용하도록 잠금을 해제할 수 있습니다.
 
-또한 AEM 페이지 편집기의 적응형 Forms 는 [적응형 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features). 이러한 핵심 구성 요소는 다음과 동일한 방식으로 구성 요소를 스타일링하고 맞춤화하는 보다 표준적이고 쉬운 방법을 제공합니다. [AEM Sites WCM 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
+또한 AEM 페이지 편집기의 적응형 Forms 는 [적응형 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features). 이러한 핵심 구성 요소는 다음과 동일한 방식으로 구성 요소를 스타일링하고 맞춤화하는 보다 표준적이고 쉬운 방법을 제공합니다. [AEM Sites WCM 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR).
 
 
 ## AEM Sites 페이지 또는 AEM 경험 조각에서 적응형 양식을 만들거나 추가하는 방법 {#various-options-to-creat-or-add-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
@@ -204,22 +204,22 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
 1. 요구 사항에 따라 제출 액션을 선택하고 구성합니다. 제출 액션에 대한 자세한 내용은 [적응형 양식 제출 액션](/help/forms/configuring-submit-actions.md)
 
 
-## AEM Sites 페이지 또는 경험 조각에서 양식에 대한 스키마 또는 양식 데이터 모델 구성 {#configure-schema-or-data-model-for-form}
+## AEM Sites 페이지 또는 경험 조각에서 양식에 대한 스키마 또는 양식 데이터 모델(FDM) 구성 {#configure-schema-or-data-model-for-form}
 
-양식 데이터 모델을 사용하면 양식을 데이터 소스에 연결하여 사용자 작업에 따라 데이터를 보내고 받을 수 있습니다. 양식을 JSON 스키마에 연결하여 미리 정의된 형식으로 제출된 데이터를 받을 수도 있습니다. 요구 사항에 따라 양식을 JSON 스키마 또는 양식 데이터 모델에 연결합니다.
+FDM(양식 데이터 모델)을 사용하여 사용자 작업에 따라 데이터를 보내고 받기 위해 양식을 데이터 소스에 연결할 수 있습니다. 양식을 JSON 스키마에 연결하여 미리 정의된 형식으로 제출된 데이터를 받을 수도 있습니다. 요구 사항에 따라 양식을 JSON 스키마 또는 양식 데이터 모델(FDM)에 연결합니다.
 
 * [JSON 스키마 만들기 및 환경에 업로드](/help/forms/adaptive-form-json-schema-form-model.md)  또는,
-* [양식 데이터 모델 만들기](/help/forms/create-form-data-models.md)
+* [양식 데이터 모델(FDM) 만들기](/help/forms/create-form-data-models.md)
 
-양식에 대해 JSON 스키마 또는 양식 데이터 모델을 구성하려면 다음 작업을 수행하십시오.
+양식에 대해 JSON 스키마 또는 양식 데이터 모델(FDM)을 구성하려면 다음을 수행합니다.
 
 1. 적응형 양식이 포함된 AEM 페이지 편집기 또는 경험 조각을 엽니다.
 1. 콘텐츠 트리를 열고 다음을 선택합니다. **[!UICONTROL 적응형 Forms 컨테이너]** 적응형 양식을 호스팅합니다. AEM Sites 페이지는 여러 적응형 Forms을 호스팅할 수 있습니다. 따라서 올바른 적응형 Forms 컨테이너를 신중하게 선택하십시오.
 1. 적응형 양식 컨테이너 속성을 클릭합니다 ![적응형 양식 컨테이너 속성](/help/forms/assets/configure-icon.svg) 아이콘. 데이터 모델을 구성하는 적응형 양식 컨테이너 대화 상자가 열립니다.
    ![렌치 아이콘을 클릭하여 적응형 양식에 대한 데이터 모델을 구성합니다](/help/forms/assets/form-data-model-adaptive-forms-container.png)
-1. 요구 사항에 따라 JSON 스키마 또는 양식 데이터 모델을 선택하고 구성합니다. 제출 액션에 대한 자세한 내용은 [적응형 양식 제출 액션](/help/forms/configuring-submit-actions.md).
+1. 요구 사항에 따라 JSON 스키마 또는 양식 데이터 모델(FDM)을 선택하고 구성합니다. 제출 액션에 대한 자세한 내용은 [적응형 양식 제출 액션](/help/forms/configuring-submit-actions.md).
 
-   * 다음을 선택하면 **[!UICONTROL 양식 모델]** 옵션, 사용 **[!UICONTROL 양식 데이터 모델 선택]** 미리 구성된 양식 데이터 모델을 선택하는 옵션입니다.
+   * 다음을 선택하면 **[!UICONTROL 양식 모델]** 옵션, 사용 **[!UICONTROL 양식 데이터 모델 선택]** 사전 구성된 양식 데이터 모델(FDM)을 선택하는 옵션입니다.
    * 다음을 선택하면 **[!UICONTROL 스키마]** 옵션, 사용 **[!UICONTROL 스키마]** 양식에 대한 JSON 스키마를 선택하는 옵션입니다.
 
 1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.

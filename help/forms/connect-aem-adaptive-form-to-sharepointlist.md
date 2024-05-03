@@ -1,14 +1,14 @@
 ---
 title: AEM 적응형 양식을 Microsoft&reg; SharePoint 목록에 연결하는 방법
-description: 적응형 양식을 Microsoft&reg; SharePoint 목록에 연결합니다. Microsoft&reg; SharePoint 목록을 구성하고 구성을 사용하여 양식 데이터 모델을 만드는 방법을 알아봅니다. 또한 FDM을 적응형 양식과 통합하는 방법도 알아봅니다.
+description: 적응형 양식을 Microsoft&reg; SharePoint 목록에 연결합니다. Microsoft&reg; SharePoint 목록을 구성하고 구성을 사용하여 FDM(양식 데이터 모델)을 만드는 방법에 대해 알아봅니다. 또한 FDM을 적응형 양식과 통합하는 방법도 알아봅니다.
 role: User, Developer
 keywords: AEM 적응형 양식을 Microsoft SharePoint 목록에 연결, 적응형 양식을 Microsoft SharePoint 목록에 연결, AEM 적응형 양식을 Microsoft SharePoint 목록에 통합, 적응형 양식을 Microsoft 목록에 통합, 적응형 양식의 데이터를 SharePoint 목록에 제출, SharePoint 워크플로우를 AEM SharePoint 목록에 제출.
 hide: true
 hidefromToC: true
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 7%
+source-wordcount: '525'
+ht-degree: 4%
 
 ---
 
@@ -31,8 +31,8 @@ ht-degree: 7%
 Microsoft® SharePoint 목록에 적응형 양식을 연결하기 전에 다음 단계를 수행하십시오.
 
 1. [Microsoft 구성](/help/forms/configure-data-sources.md#configure-microsoft-sharepoint-list)
-1. [Microsoft을 사용하여 양식 데이터 모델 만들기](/help/forms/create-form-data-models.md)
-1. [데이터를 검색하고 전송하도록 양식 데이터 모델 구성](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Microsoft을 사용하여 양식 데이터 모델(FDM) 만들기](/help/forms/create-form-data-models.md)
+1. [데이터를 검색하고 보내도록 양식 데이터 모델(FDM) 구성](/help/forms/work-with-form-data-model.md#configure-services)
 1. [적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md)
 
 이제 다음과 같은 작업을 수행할 수 있습니다.
@@ -42,18 +42,18 @@ Microsoft® SharePoint 목록에 적응형 양식을 연결하기 전에 다음 
 
 ## Microsoft® SharePoint 목록에 적응형 양식 연결 {#connect-af-sharepoint-list}
 
-Microsoft® SharePoint 목록을 적응형 양식에 통합하려면 [양식 데이터 모델을 사용하도록 적응형 양식 구성](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
+Microsoft® SharePoint 목록을 적응형 양식에 통합하려면 [양식 데이터 모델(FDM)을 사용하도록 적응형 양식 구성](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
 
-양식 데이터 모델을 사용하도록 적응형 양식을 구성한 후 다음을 수행할 수 있습니다.
+FDM(양식 데이터 모델)을 사용하도록 적응형 양식을 구성한 후 다음을 수행할 수 있습니다.
 
-* [양식 데이터 모델을 사용하여 제출 작업 구성](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
-* [양식 데이터 모델을 호출하도록 규칙 편집기 구성](/help/forms/rule-editor.md#invoke-form-data-model-service-invoke)
+* [FDM(양식 데이터 모델)을 사용하여 제출 액션 구성](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+* [양식 데이터 모델(FDM)을 호출하도록 규칙 편집기 구성](/help/forms/rule-editor.md#invoke-form-data-model-service-invoke)
 
 ## Microsoft® SharePoint 목록을 AEM 워크플로에 연결 {#connect-sharepoint-list-workflow}
 
 Microsoft® SharePoint 목록을 AEM Workflow에 통합하려면
 
-1. [양식 데이터 모델을 호출하는 워크플로우 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)
+1. [FDM(양식 데이터 모델)을 호출하는 워크플로우 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)
 
    <!--
     To create a workflow with the editor:
@@ -84,7 +84,7 @@ Microsoft® SharePoint 목록을 AEM Workflow에 통합하려면
 
 * [핵심 구성 요소 기반 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md)
 * [데이터 소스 구성](/help/forms/configuring-submit-actions.md)
-* [양식 데이터 모델 만들기](/help/forms/create-form-data-models.md)
+* [양식 데이터 모델(FDM) 만들기](/help/forms/create-form-data-models.md)
 * [Forms 중심의 AEM 워크플로 사용 - 비즈니스 프로세스 자동화를 위한 단계 참조](/help/forms/aem-forms-workflow-step-reference.md)
 * [적응형 Forms에 대한 사용자 지정 제출 액션 만들기](/help/forms/custom-submit-action-form.md)
 * [AEM Sites 페이지에 적응형 양식 만들기 또는 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)

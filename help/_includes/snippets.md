@@ -1,6 +1,6 @@
 ---
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
-workflow-type: ht
+source-git-commit: 8c60b02c1759fc4d0cf66d6c8f1c2edf294fc1ce
+workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 * [Microsoft Power Automate에 적응형 양식 연결](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
 * [Microsoft OneDrive에 적응형 양식 연결](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration)
 * [Microsoft Azure Blob Storage에 적응형 양식 연결](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
-* [Salesforce에 적응형 양식 연결](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Salesforce에 적응형 양식 연결](/help/forms/aem-forms-salesforce-integration.md)
 * [AEM 적응형 양식에서 Adobe Sign 사용](/help/forms/working-with-adobe-sign.md)
 * [적응형 양식에 대해 새 로케일 추가](/help/forms/supporting-new-language-localization-core-components.md)
 * [적응형 양식 데이터를 데이터베이스로 보내기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html)
@@ -51,7 +51,7 @@ ht-degree: 100%
 * [AEM Workflow 호출](/help/forms/configure-submit-action-workflow.md)
 * [Power Automate에 제출](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Workfront Fusion에 제출](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Salesforce 애플리케이션에 적응형 양식 연결](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Salesforce 애플리케이션에 적응형 양식 연결](/help/forms/aem-forms-salesforce-integration.md)
 * [Microsoft에 적응형 양식 연결](/help/forms/ms-dynamics-odata-configuration.md)
 
 ## 추가 참조 {#see-more-forms-eds}

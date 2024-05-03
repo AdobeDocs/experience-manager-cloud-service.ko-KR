@@ -6,9 +6,9 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: AEM 워크플로 사용, 작업 단계 할당, PDF/A 단계로 전환, 기록된 문서 생성 단계, 워크플로 사용, 문서 서명 단계, 인쇄된 출력 단계 생성, 비대화형 PDF 출력 생성
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '7367'
+source-wordcount: '7379'
 ht-degree: 0%
 
 ---
@@ -85,12 +85,12 @@ Forms 중심 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 작�
 * **[!UICONTROL 완료된 작업의 경우 적응형 양식을 다음으로 렌더링]**: 작업이 완료된 것으로 표시되면 적응형 양식을 읽기 전용 적응형 양식 또는 PDF 문서로 렌더링할 수 있습니다. 적응형 양식을 기록 문서로 렌더링하려면 기록 문서 옵션 활성화 또는 양식 템플릿 기반 적응형 Forms이 필요합니다.
 * **[!UICONTROL 미리 채워짐]**: 아래에 나열된 다음 필드는 작업에 대한 입력 역할을 합니다.
 
-   * **[!UICONTROL 다음을 사용하여 입력 데이터 파일 선택]**: 입력 데이터 파일 경로(.json, .xml, .doc 또는 양식 데이터 모델). 페이로드에 상대적인 경로를 사용하여 입력 데이터 파일을 검색하거나 문서, XML 또는 JSON 데이터 유형의 변수에 저장된 파일을 검색할 수 있습니다. 예를 들어 파일에는 AEM 받은 편지함 애플리케이션을 통해 양식에 대해 제출된 데이터가 포함되어 있습니다. 경로의 예는 다음과 같습니다. [Payload_Directory]/workflow/data.
+   * **[!UICONTROL 다음을 사용하여 입력 데이터 파일 선택]**: 입력 데이터 파일 경로(.json, .xml, .doc 또는 양식 데이터 모델(FDM)). 페이로드에 상대적인 경로를 사용하여 입력 데이터 파일을 검색하거나 문서, XML 또는 JSON 데이터 유형의 변수에 저장된 파일을 검색할 수 있습니다. 예를 들어 파일에는 AEM 받은 편지함 애플리케이션을 통해 양식에 대해 제출된 데이터가 포함되어 있습니다. 경로의 예는 다음과 같습니다. [Payload_Directory]/workflow/data.
    * **[!UICONTROL 다음을 사용하여 입력 첨부 파일 선택]**: 해당 위치에서 사용할 수 있는 첨부 파일이 작업과 연결된 양식에 첨부됩니다. 경로는 페이로드에 상대적이거나 문서의 변수에 저장된 첨부 파일을 검색할 수 있습니다. 경로의 예는 다음과 같습니다. [Payload_Directory]/attachments/. 페이로드를 기준으로 배치되는 첨부 파일을 지정하거나 문서 유형(배열 목록 > 문서) 변수를 사용하여 적응형 양식에 대한 입력 첨부 파일을 지정할 수 있습니다.
 
   <!-- 
     
-    * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
+    * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model (FDM) data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
     * **[!UICONTROL Choose a custom prefill service]**: Select the prefill service to retrieve the data and prefill the Interactive Communication Web channel document or the Agent UI.  
     
@@ -108,13 +108,13 @@ Forms 중심 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 작�
 
 * **[!UICONTROL 제출된 정보]**: 아래에 나열된 다음 필드는 작업의 출력 위치 역할을 합니다.
 
-   * **[!UICONTROL 다음을 사용하여 출력 데이터 파일 저장]**: 데이터 파일(.json, .xml, .doc 또는 양식 데이터 모델)을 저장합니다. 데이터 파일에는 관련 양식을 통해 제출된 정보가 포함되어 있습니다. 페이로드와 관련된 경로를 사용하여 출력 데이터 파일을 저장하거나 문서, XML 또는 JSON 데이터 유형의 변수에 저장할 수 있습니다. 예를 들어, [Payload_Directory]/Workflow/data 를 참조하십시오.
+   * **[!UICONTROL 다음을 사용하여 출력 데이터 파일 저장]**: 데이터 파일(.json, .xml, .doc 또는 양식 데이터 모델(FDM))을 저장합니다. 데이터 파일에는 관련 양식을 통해 제출된 정보가 포함되어 있습니다. 페이로드와 관련된 경로를 사용하여 출력 데이터 파일을 저장하거나 문서, XML 또는 JSON 데이터 유형의 변수에 저장할 수 있습니다. 예를 들어, [Payload_Directory]/Workflow/data 를 참조하십시오.
    * **[!UICONTROL 다음을 사용하여 첨부 파일 저장]**: 작업에 제공된 양식 첨부 파일을 저장합니다. 페이로드에 상대적인 경로를 사용하여 첨부 파일을 저장하거나 문서 데이터 유형의 배열 목록에 저장할 수 있습니다.
    * **[!UICONTROL 다음을 사용하여 기록 문서 저장]**: 기록 문서 파일을 저장하는 경로입니다. 예를 들어, [Payload_Directory]/DocumentofRecord/credit-card.pdf입니다. 페이로드에 상대적인 경로를 사용하여 기록 문서를 저장하거나 문서 데이터 유형의 변수에 저장할 수 있습니다. 을(를) 선택하는 경우 **[!UICONTROL 페이로드 관련]** 옵션을 선택하면 경로 필드를 비워 두면 기록 문서가 생성되지 않습니다. 이 옵션은 유형 드롭다운 목록에서 적응형 양식을 선택하는 경우에만 사용할 수 있습니다.
 
   <!-- 
     
-    * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
+    * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model (FDM) data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
     * **[!UICONTROL Save PDF document using]**: Save the PDF document using a path that is relative to the payload or store it in a variable of Document data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
     <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. 
     
@@ -273,9 +273,9 @@ DDX 호출 단계에는 다음 속성이 있습니다.
 * **[!UICONTROL 페이로드에 출력 저장]**: 페이로드가 파일인 경우 페이로드 폴더 아래에 출력 문서를 저장하거나 페이로드를 덮어씁니다.
 * **[!UICONTROL 출력 문서 맵]**: 문서당 하나의 항목을 추가하여 각 문서 파일을 명시적으로 저장할 위치를 지정합니다. 각 항목은 문서와 문서를 저장할 위치를 나타냅니다. 출력 문서가 여러 개 있는 경우 이 옵션이 사용됩니다.
 
-## 양식 데이터 모델 서비스 단계 호출 {#invoke-form-data-model-service-step}
+## 양식 데이터 모델(FDM) 서비스 단계 호출 {#invoke-form-data-model-service-step}
 
-다음을 사용할 수 있습니다. [[!DNL AEM Forms] 데이터 통합](data-integration.md) 를 사용하여 서로 다른 데이터 소스를 구성하고 연결할 수 있습니다. 이러한 데이터 소스는 웹 서비스, REST 서비스, OData 서비스 및 CRM 솔루션일 수 있습니다. [!DNL AEM Forms] 데이터 통합을 사용하면 구성된 데이터베이스에서 데이터 검색, 추가 및 업데이트 작업을 수행하는 다양한 서비스를 포함하는 양식 데이터 모델을 만들 수 있습니다. 다음을 사용할 수 있습니다. **[!UICONTROL 데이터 모델 서비스 단계 호출]** 양식 데이터 모델(FDM)을 선택하고 FDM의 서비스를 사용하여 데이터를 검색, 갱신 또는 개별 데이터 소스에 추가하려면
+다음을 사용할 수 있습니다. [[!DNL AEM Forms] 데이터 통합](data-integration.md) 를 사용하여 서로 다른 데이터 소스를 구성하고 연결할 수 있습니다. 이러한 데이터 소스는 웹 서비스, REST 서비스, OData 서비스 및 CRM 솔루션일 수 있습니다. [!DNL AEM Forms] 데이터 통합을 사용하면 구성된 데이터베이스에서 데이터 검색, 추가 및 업데이트 작업을 수행하는 다양한 서비스를 포함하는 양식 데이터 모델(FDM)을 생성할 수 있습니다. 다음을 사용할 수 있습니다. **[!UICONTROL 데이터 모델 서비스 단계 호출]** 양식 데이터 모델(FDM)을 선택하고 FDM의 서비스를 사용하여 데이터를 검색, 갱신 또는 개별 데이터 소스에 추가하려면
 
 단계의 필드에 대한 입력을 설명하기 위해 다음 데이터베이스 테이블과 JSON 파일이 예제로 사용됩니다.
 
@@ -330,14 +330,14 @@ DDX 호출 단계에는 다음 속성이 있습니다.
   }
 ```
 
-양식 데이터 모델 서비스 호출 단계에는 양식 데이터 모델 작업을 용이하게 하기 위해 아래에 나열된 필드가 있습니다.
+FDM(양식 데이터 모델) 호출 서비스 단계에는 FDM(양식 데이터 모델) 작업을 용이하게 하기 위해 아래에 나열된 필드가 있습니다.
 
 * **[!UICONTROL 제목]**: 단계의 제목 워크플로우 편집기에서 단계를 식별하는 데 도움이 됩니다.
 * **[!UICONTROL 설명]**: 공유 개발 환경에서 작업할 때 다른 프로세스 개발자에게 유용한 설명.
 
-* **[!UICONTROL 양식 데이터 모델 경로]**: 서버에 있는 양식 데이터 모델을 찾아 선택합니다.
+* **[!UICONTROL 양식 데이터 모델 경로]**: 서버에 있는 FDM(양식 데이터 모델)을 찾아보고 선택합니다.
 
-* **[!UICONTROL 오류 및 유효성 검사]**: 옵션을 사용하면 오류 메시지를 캡처하고 데이터 소스로 검색 및 전송된 데이터에 대한 유효성 검사 옵션을 지정할 수 있습니다. 이러한 변경 사항을 사용하면 양식 데이터 모델 서비스 호출 단계로 전달되는 데이터가 데이터 소스에 의해 정의된 데이터 제약 조건을 준수하는지 확인할 수 있습니다. 자세한 내용은 [입력 데이터의 자동 유효성 검사](work-with-form-data-model.md#automated-validation-of-input-data)
+* **[!UICONTROL 오류 및 유효성 검사]**: 옵션을 사용하면 오류 메시지를 캡처하고 데이터 소스로 검색 및 전송된 데이터에 대한 유효성 검사 옵션을 지정할 수 있습니다. 이러한 변경 사항으로 FDM(양식 데이터 모델 호출) 서비스 단계로 전달된 데이터가 데이터 소스에 의해 정의된 데이터 제약 조건을 준수하는지 확인할 수 있습니다. 자세한 내용은 [입력 데이터의 자동 유효성 검사](work-with-form-data-model.md#automated-validation-of-input-data)
 
 * **[!UICONTROL 유효성 검사 수준]**: 유효성 검사에는 기본, 전체 및 끔 세 가지 범주가 있습니다.
 
@@ -353,7 +353,7 @@ DDX 호출 단계에는 다음 속성이 있습니다.
 
 * **[!UICONTROL 변수에 오류 세부 정보 저장]**: 다음 위치에 오류 세부 정보를 저장할 수 있습니다. [JSON 유형 변수](variable-in-aem-workflows.md).
 
-* **[!UICONTROL 서비스]**: 선택한 양식 데이터 모델이 제공하는 서비스 목록입니다.
+* **[!UICONTROL 서비스]**: 선택한 양식 데이터 모델(FDM)이 제공하는 서비스 목록입니다.
 * **[!UICONTROL 서비스 입력]** > **[!UICONTROL 리터럴, 변수 또는 워크플로우 메타데이터 및 JSON 파일을 사용하여 입력 데이터 제공]**: 한 서비스에 여러 인수가 있을 수 있습니다. 옵션을 선택하여 워크플로우 메타데이터 속성, JSON 개체, 변수에서 서비스 인수의 값을 가져오거나 제공된 텍스트 상자에 값을 직접 입력합니다.
 
    * **[!UICONTROL 리터럴]**: 지정할 정확한 값을 알고 있는 경우 옵션을 사용합니다. 예: srose@we.info.
@@ -365,16 +365,16 @@ DDX 호출 단계에는 다음 속성이 있습니다.
      예를 들어 CRX 저장소의 페이로드 관련 폴더에 `attachment\attachment-folder` 위치, 지정 `attachment\attachment-folder` 을(를) 선택한 후 텍스트 상자에서 **[!UICONTROL 페이로드 관련]** 옵션을 선택합니다.
 
    * **[!UICONTROL JSON 점 표기법]**: 사용할 값이 JSON 파일에 있는 경우 옵션을 사용합니다. 예: insurance.customerDetails.emailAddress. JSON 점 표기법 옵션은 입력 JSON 옵션의 입력 필드 매핑 을 선택한 경우에만 사용할 수 있습니다.
-   * **[!UICONTROL 입력 JSON의 입력 필드 매핑]**: JSON 파일의 경로를 지정하여 JSON 파일에서 일부 서비스 인수의 입력 값을 가져옵니다. JSON 파일의 경로는 페이로드에 상대적이거나 절대 경로이거나 JSON 또는 양식 데이터 모델 유형의 변수를 사용하여 입력 JSON 문서를 선택할 수 있습니다.
+   * **[!UICONTROL 입력 JSON의 입력 필드 매핑]**: JSON 파일의 경로를 지정하여 JSON 파일에서 일부 서비스 인수의 입력 값을 가져옵니다. JSON 파일의 경로는 페이로드 또는 절대 경로에 상대적이거나 JSON 또는 양식 데이터 모델(FDM) 유형의 변수를 사용하여 입력 JSON 문서를 선택할 수 있습니다.
 
 * **[!UICONTROL 서비스 입력]** > **[!UICONTROL 변수 또는 JSON 파일을 사용하여 입력 데이터 제공]**: 절대 경로, 페이로드에 상대적인 경로 또는 변수에 저장된 JSON 파일에서 모든 인수의 값을 가져오는 옵션을 선택합니다.
-* **[!UICONTROL 다음을 사용하여 입력 JSON 문서 선택]**: 모든 서비스 인수의 값이 포함된 JSON 파일입니다. JSON 파일의 경로는 다음과 같습니다. **[!UICONTROL 페이로드 관련]** 또는 **[!UICONTROL 절대 경로]**. JSON 또는 양식 데이터 모델 데이터 유형의 변수를 사용하여 입력 JSON 문서를 검색할 수도 있습니다.
+* **[!UICONTROL 다음을 사용하여 입력 JSON 문서 선택]**: 모든 서비스 인수의 값이 포함된 JSON 파일입니다. JSON 파일의 경로는 다음과 같습니다. **[!UICONTROL 페이로드 관련]** 또는 **[!UICONTROL 절대 경로]**. JSON 또는 양식 데이터 모델(FDM) 데이터 유형의 변수를 사용하여 입력 JSON 문서를 검색할 수도 있습니다.
 
 * **[!UICONTROL JSON 점 표기법]**: 지정된 JSON 파일의 모든 개체를 서비스 인수에 대한 입력으로 사용하려면 필드를 비워 둡니다. 서비스 인수에 대한 입력으로 지정된 JSON 파일의 특정 JSON 개체를 읽으려면 JSON 개체에 대한 점 표기법을 지정하십시오. 예를 들어 섹션의 시작 부분에 나열된 것과 유사한 JSON이 있는 경우 insurance.customerDetails를 지정하여 고객의 모든 세부 정보를 서비스에 대한 입력으로 제공합니다.
 * **[!UICONTROL 서비스 출력]** > **[!UICONTROL 변수 또는 메타데이터에 출력 값 매핑 및 쓰기]**: 출력 값을 crx-repository에 있는 워크플로 인스턴스 메타데이터 노드의 속성으로 저장하려면 옵션을 선택합니다. 메타데이터 속성의 이름을 지정하고 메타데이터 속성과 매핑할 해당 서비스 출력 속성을 선택합니다. 예를 들어 출력 서비스에서 반환된 phone_number를 워크플로우 메타데이터의 phone_number 속성과 매핑합니다. 마찬가지로 출력을 Long 데이터 형식의 변수에 저장할 수 있습니다. 다음에 대한 속성을 선택할 때 **[!UICONTROL 매핑될 서비스 출력 속성]** 선택 사항, 선택한 속성의 데이터를 저장할 수 있는 변수만 **[!UICONTROL 출력을 다음에 저장]** 옵션을 선택합니다.
 
 * **[!UICONTROL 서비스 출력]** > **[!UICONTROL 출력을 변수 또는 JSON 파일에 저장]**: 출력 값을 JSON 파일의 절대 경로, 페이로드에 상대적인 경로 또는 변수에 저장하는 옵션을 선택합니다.
-* **[!UICONTROL 아래 옵션을 사용하여 출력 JSON 문서 저장]**: 출력 JSON 파일을 저장합니다. 출력 JSON 파일의 경로는 페이로드에 상대적이거나 절대 경로일 수 있습니다. JSON 또는 양식 데이터 모델 데이터 유형의 변수를 사용하여 출력 JSON 파일을 저장할 수도 있습니다.
+* **[!UICONTROL 아래 옵션을 사용하여 출력 JSON 문서 저장]**: 출력 JSON 파일을 저장합니다. 출력 JSON 파일의 경로는 페이로드에 상대적이거나 절대 경로일 수 있습니다. JSON 또는 양식 데이터 모델(FDM) 데이터 유형의 변수를 사용하여 출력 JSON 파일을 저장할 수도 있습니다.
 
 
 

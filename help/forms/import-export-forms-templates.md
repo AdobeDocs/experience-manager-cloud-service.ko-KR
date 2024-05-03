@@ -4,16 +4,17 @@ description: 적응형 Forms, PDF forms, 테마 및 기타 지원 자산을 AEM 
 topic-tags: forms-manager
 role: Admin, User
 feature: Adaptive Forms
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1195'
 ht-degree: 0%
 
 ---
 
 # 적응형 Forms 및 AEM Forms 에셋 가져오기 또는 내보내기 {#importing-and-exporting-assets-to-aem-forms}
 
-다음 작업 간에 적응형 Forms 및 적응형 양식 테마, 양식 데이터 모델, 적응형 양식 템플릿, 문서 단편 및 PDF forms과 같은 관련 에셋을 이동할 수 있습니다. [!DNL AEM Forms] 인스턴스. CRX 패키지 또는 바이너리 파일 형식으로 에셋을 가져오고 내보낼 수 있습니다.
+다음 작업 간에 적응형 Forms 및 적응형 양식 테마, 양식 데이터 모델(FDM), 적응형 양식 템플릿, 문서 단편, PDF forms과 같은 관련 에셋을 이동할 수 있습니다. [!DNL AEM Forms] 인스턴스. CRX 패키지 또는 바이너리 파일 형식으로 에셋을 가져오고 내보낼 수 있습니다.
 
 적응형 양식을 내보낼 때 콘텐츠 정책 및 템플릿은 내보내지지 않습니다. 사용 [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#how-rolling-deployments-work) 를 클릭하여 이러한 자산을 내보냅니다.
 
@@ -26,7 +27,7 @@ ht-degree: 0%
 1. 에셋을 선택하고 **[!UICONTROL 다운로드]** 아이콘.
 1. 에셋 다운로드에서 다음 옵션 중 하나를 선택하고 을 선택합니다 **[!UICONTROL 다운로드]**.
 
-   * **CRX 패키지로 다운로드:** 선택한 모든 에셋 및 관련 의존성을 다운로드하고 다음에서 이동하려면 옵션을 사용합니다. [!DNL AEM Forms] 인스턴스를 다른 인스턴스로 이동합니다. AEM에서 작성된 양식(적응형 Forms 및 적응형 양식 단편), 양식 세트, 양식 데이터 모델, 양식 템플릿, PDF 문서 및 참조 리소스(XSD 및 이미지)를 포함하여 모든 에셋 및 폴더를 CRX 패키지로 다운로드합니다.
+   * **CRX 패키지로 다운로드:** 선택한 모든 에셋 및 관련 의존성을 다운로드하고 다음에서 이동하려면 옵션을 사용합니다. [!DNL AEM Forms] 인스턴스를 다른 인스턴스로 이동합니다. AEM에서 작성된 양식(적응형 Forms 및 적응형 양식 단편), 양식 세트, 양식 데이터 모델(FDM), 양식 템플릿, PDF 문서, 참조된 리소스(XSD 및 이미지)를 포함하여 모든 에셋과 폴더를 CRX 패키지로 다운로드합니다.
 자산을 패키지로 다운로드하면 선택한 자산이 참조하는 다운로드도 수행된다는 이점이 있습니다. 예를 들어 양식 템플릿을 사용하는 적응형 양식이 있는 경우 XSD 및 이미지를 사용할 수 있습니다. 이 적응형 양식을 선택하고 패키지로 다운로드하면 다운로드된 패키지에는 양식 템플릿, XSD 및 이미지도 포함됩니다. 자산과 연결된 모든 메타데이터 속성(사용자 지정 속성 포함)도 다운로드됩니다.
 
    * **에셋을 바이너리 파일로 다운로드:** 양식 템플릿(XDP), PDF forms(PDF), 문서(PDF) 및 리소스(이미지, 스키마, 스타일시트)만 다운로드하려면 옵션을 사용합니다. 외부 애플리케이션으로 이러한 에셋을 편집할 수 있습니다. 이미지, PDF 및 기타 지원되는 형식과 같은 바이너리가 있는 에셋을 .zip 파일로 다운로드합니다.

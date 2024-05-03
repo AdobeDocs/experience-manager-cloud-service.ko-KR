@@ -3,10 +3,10 @@ title: AEM Forms에 대한 메타데이터를 관리하려면 어떻게 해야 �
 description: 메타데이터를 사용하면 에셋을 보다 쉽게 분류하고 구성할 수 있으며 특정 에셋을 찾는 사용자에게 도움이 됩니다.
 feature: Adaptive Forms, Foundation Components
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
-source-wordcount: '1733'
-ht-degree: 6%
+source-wordcount: '1735'
+ht-degree: 5%
 
 ---
 
@@ -71,12 +71,12 @@ ht-degree: 6%
      <li>PDF 양식, PDF 양식(Acroform) 또는 PDF 양식(Signed)</li> 
      <li>문서, 문서(서명됨)</li> 
      <li>적응형 양식</li> 
-     <li>양식 데이터 모델</li>
+     <li>양식 데이터 모델(FDM)</li>
      <li>리소스</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>작성일</td> 
+   <td>생성됨</td> 
    <td>모두</td> 
    <td>에셋 생성 시간을 지정하는 읽기 전용 값입니다.</td> 
   </tr> 
@@ -162,7 +162,7 @@ ht-degree: 6%
    <td>적응형 양식</td> 
    <td><p>적응형 양식을 작성하는 동안 사용할 양식 모델을 지정합니다. 이 속성은 다음 값을 가질 수 있습니다.</p> 
     <ul> 
-      <li>양식 데이터 모델 </li>
+      <li>양식 데이터 모델(FDM)</li>
       <li>스키마: JSON 스키마의 XML</li>
      <!-- <li>Form template: A form template is selected from the ones existing in the repository. This value can be updated.</li> 
      <li>XML schema: An XSD file is uploaded. This value can be updated.</li> -->

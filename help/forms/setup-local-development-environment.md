@@ -4,9 +4,9 @@ description: Adobe Experience Manager Forms as a Cloud Service을 위한 로컬 
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a86e68f9dd195512a689943b303225a48b5f8a23
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '2723'
+source-wordcount: '2726'
 ht-degree: 2%
 
 ---
@@ -249,7 +249,7 @@ AEM Forms as a Cloud Service은 기록 문서를 보다 쉽게 개발하고 다�
 
 이 프로젝트를 사용하여 로컬 적응형 Forms 만들기, 구성 업데이트 배포, 오버레이, 사용자 지정 적응형 양식 구성 요소 만들기, 테스트 및 사용자 지정 코드를 [!DNL Experience Manager Forms] SDK. 로컬에서 테스트한 후에는에 프로젝트를 배포할 수 있습니다.  [!DNL Experience Manager Forms] as a Cloud Service 프로덕션 및 비프로덕션 환경. 프로젝트를 배포하면 다음 AEM Forms 에셋도 배포됩니다.
 
-| 테마 | 템플릿 | 양식 데이터 모델 |
+| 테마 | 템플릿 | 양식 데이터 모델(FDM) |
 ---------|----------|---------
 | 캔버스 3.0 | 기본 | Microsoft® Dynamics 365 |
 | 고요해 | 비어 있음 | Salesforce |
@@ -259,7 +259,7 @@ AEM Forms as a Cloud Service은 기록 문서를 보다 쉽게 개발하고 다�
 
 >[!NOTE]
 >
-> AEM Archetype 버전 30 이상 기반 프로젝트를 설정하여 AEM Forms as a Cloud Service으로 Microsoft® Dynamics 365 및 Salesforce 양식 데이터 모델을 가져오고 사용할 수 있습니다.
+> AEM Archetype 버전 30 이상 기반 프로젝트를 설정하여 AEM Forms as a Cloud Service으로 Microsoft® Dynamics 365 및 Salesforce 양식 데이터 모델(FDM)을 가져오고 사용합니다.
 > AEM Forms as a Cloud Service으로 Tranquil, Urbane 및 Ultramarine 테마를 가져오고 사용하려면 AEM Archetype 버전 32 이상 기반 프로젝트를 설정하십시오.
 
 프로젝트를 설정하려면 다음을 수행하십시오.
@@ -399,7 +399,7 @@ For information about troubleshooting, stopping local AEM environment, run modes
 
 ### 기존 컨텐츠의 백업 만들기 {#create-backup-of-your-existing-content}
 
-적응형 Forms, 템플릿, 양식 데이터 모델, 테마, 구성 및 사용자 지정 코드를 백업합니다. 다음 작업을 수행하여 백업을 작성할 수 있습니다.
+적응형 Forms, 템플릿, 양식 데이터 모델(FDM), 테마, 구성 및 사용자 지정 코드를 백업합니다. 다음 작업을 수행하여 백업을 작성할 수 있습니다.
 
 1. [다운로드](import-export-forms-templates.md#manage-forms-and-related-assets) 적응형 Forms, 테마 및 PDF forms.
 1. 적응형 양식 템플릿을 내보냅니다.

@@ -1,14 +1,14 @@
 ---
 title: 적응형 Forms을 만드는 방법
-description: 정보 수집 및 처리를 간소화하는 적응형 양식을 만드는 방법에 대해 알아봅니다. 또한 양식 데이터 모델을 기반으로 적응형 양식을 만드는 방법에 대해 알아봅니다.
+description: 정보 수집 및 처리를 간소화하는 적응형 양식을 만드는 방법에 대해 알아봅니다. 또한 FDM(양식 데이터 모델)을 기반으로 적응형 양식을 만드는 방법에 대해 알아봅니다.
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 81%
+source-wordcount: '1500'
+ht-degree: 70%
 
 ---
 
@@ -98,7 +98,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 1. (선택 사항) **[!UICONTROL 데이터]** 탭에서 데이터 모델을 선택합니다.
 
-   * **양식 데이터 모델**: [양식 데이터 모델](data-integration.md)을 통해 서로 다른 데이터 소스의 엔티티와 서비스를 적응형 양식으로 통합할 수 있습니다. 생성 중인 적응형 양식에 여러 데이터 소스에서의 데이터 가져오기 및 쓰기 작업이 포함된 경우 양식 데이터 모델을 선택합니다.
+   * **양식 데이터 모델**: [양식 데이터 모델](data-integration.md)을 통해 서로 다른 데이터 소스의 엔티티와 서비스를 적응형 양식으로 통합할 수 있습니다. 생성 중인 적응형 양식에 여러 데이터 소스에서 데이터를 가져오고 쓰는 작업이 포함된 경우 양식 데이터 모델(FDM)을 선택합니다.
 
    * **JSON 스키마**: [JSON 스키마](adaptive-form-json-schema-form-model.md)는 조직의 백엔드 시스템에서 데이터를 생성 또는 사용하는 구조를 나타냅니다. 스키마를 적응형 양식에 연결하고 해당 요소를 사용하여 동적 콘텐츠를 적응형 양식에 추가할 수 있습니다. 적응형 Forms을 작성할 때 콘텐츠 브라우저의 데이터 모델 개체 탭에서 스키마 요소를 사용할 수 있으며 모든 필드는 작성된 적응형 양식에도 추가됩니다.
 
@@ -126,7 +126,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다. 적응형 양식을 만들고 적응형 양식 편집기에서 엽니다. 편집기에 템플릿에서 사용 가능한 콘텐츠가 표시됩니다. 또한 필요에 따라 생성된 양식을 사용자 정의할 수 있는 사이드바가 표시됩니다.
 
-   적응형 양식 유형에 따라 연결된 <!--XFA form template, XML schema or --> JSON 스키마 또는 양식 데이터 모델에 존재하는 양식 요소가 사이드바에 있는 **[!UICONTROL 콘텐츠 브라우저]**&#x200B;의 **[!UICONTROL 데이터 모델 오브젝트]** 탭에 표시됩니다. 이러한 요소를 드래그 앤 드롭하여 적응형 양식을 작성할 수도 있습니다.
+   적응형 양식 유형에 따라 연관된 양식 요소에 있는 양식 요소 <!--XFA form template, XML schema or --> JSON 스키마 또는 양식 데이터 모델(FDM)이 **[!UICONTROL 데이터 모델 개체]** 의 탭 **[!UICONTROL 컨텐츠 브라우저]** 를 클릭합니다. 이러한 요소를 드래그 앤 드롭하여 적응형 양식을 작성할 수도 있습니다.
 
 <!-- ## Create an Adaptive Form based on a Form Data Model {#fdm}
 
@@ -184,8 +184,8 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 1. 적응형 양식을 선택하고 **속성** 아이콘.
 1. **[!UICONTROL 양식 모델]** 탭을 열고 다음 중 하나를 수행합니다.
 
-   * 적응형 양식에 양식 모델이 없는 경우 다른 양식 모델을 선택하고 그에 따라 <!-- a form template, --> XML 내지 JSON 스키마 또는 양식 데이터 모델을 선택할 수 있습니다.
-   * 적응형 양식이 양식 모델을 기반으로 하는 경우 다른 <!-- form template, --> XML 내지 JSON 스키마 또는 동일한 양식 모델에 대한 양식 데이터 모델을 선택할 수 있습니다.
+   * 적응형 양식에 양식 모델이 없는 경우 다른 양식 모델을 선택하고 그에 따라 을(를) 선택할 수 있습니다 <!-- a form template, --> XML 또는 JSON 스키마 또는 양식 데이터 모델(FDM).
+   * 적응형 양식이 양식 모델을 기반으로 하는 경우 다른 양식을 선택할 수 있습니다 <!-- form template, --> 동일한 양식 모델에 대한 XML 또는 JSON 스키마 또는 양식 데이터 모델(FDM).
 
 1. 선택 **[!UICONTROL 저장]** 속성을 저장합니다.
 
@@ -195,8 +195,8 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 1. ![아이콘 구성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭하여 적응형 양식 컨테이너의 **[!UICONTROL 속성]**&#x200B;을 엽니다.
 1. **[!UICONTROL 데이터 모델]** 탭을 선택하고 다음 중 하나를 수행합니다.
 
-   * 적응형 양식에 양식 모델이 없는 경우 양식 모델을 선택하고 그에 따라 <!-- a form template, --> XML 내지 JSON 스키마 또는 양식 데이터 모델을 선택할 수 있습니다.
-   * 적응형 양식이 양식 모델을 기반으로 하는 경우 양식 모델을 변경할 수 없습니다. 다른 <!-- form template, --> XML 내지 JSON 스키마 또는 (해당되는 경우) 동일한 양식 모델에 대한 양식 데이터 모델을 선택할 수 있습니다.
+   * 적응형 양식에 양식 모델이 없는 경우 양식 모델을 선택하고 그에 따라 을(를) 선택할 수 있습니다 <!-- a form template, --> XML 또는 JSON 스키마 또는 양식 데이터 모델(FDM).
+   * 적응형 양식이 양식 모델을 기반으로 하는 경우 양식 모델을 변경할 수 없습니다. 다른 항목을 선택할 수 있습니다. <!-- form template, --> 해당되는 경우 동일한 양식 모델에 대한 XML 또는 JSON 스키마 또는 양식 데이터 모델(FDM).
 1. 선택 ![저장](/help/forms/assets/check-button.png) 속성을 저장합니다.
 
 ![FDM 스키마 지원](/help/forms/assets/fdmsupport.png)

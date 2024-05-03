@@ -6,10 +6,10 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
-source-git-commit: d75d448d631da7af3a37192f0890a38c760ab09b
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '2331'
-ht-degree: 96%
+source-wordcount: '2332'
+ht-degree: 95%
 
 ---
 
@@ -180,7 +180,7 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 
 >[!NOTE]
 >
-> * 규칙 편집기의 호출 서비스 작업과 함께 오류 핸들러를 사용하려면 양식 데이터 모델로 적응형 양식을 구성합니다.
+> * 규칙 편집기의 서비스 호출 작업에서 오류 처리기를 사용하려면 FDM(양식 데이터 모델)을 사용하여 적응형 Forms을 구성하십시오.
 > * 오류 응답이 표준 스키마에 있는 경우, 기본 오류 핸들러를 제공하여 오류 메시지를 필드에 표시합니다. 사용자 정의 오류 핸들러 함수에서 기본 오류 핸들러를 호출할 수도 있습니다.
 
 규칙 편집기를 사용하여 다음 작업을 수행할 수 있습니다.

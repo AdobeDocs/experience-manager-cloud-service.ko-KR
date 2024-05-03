@@ -1,22 +1,22 @@
 ---
-title: API를 사용하여 적응형 Forms에서 양식 데이터 모델 서비스를 호출하는 방법
+title: API를 사용하여 적응형 Forms에서 양식 데이터 모델(FDM) 서비스를 호출하는 방법
 description: 적응형 양식 필드 내에서 WSDL로 작성된 웹 서비스를 호출하는 데 사용할 수 있는 invokeWebServices API에 대해 설명합니다.
 uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
 
 
-# 적응형 Forms에서 양식 데이터 모델 서비스를 호출하기 위한 API {#api-to-invoke-form-data-model-service-from-adaptive-forms}
+# 적응형 Forms에서 양식 데이터 모델(FDM) 서비스를 호출하는 API {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
 ## 개요 {#overview}
 
-[!DNL AEM Forms] 양식 작성자가 적응형 양식 필드 내에서 양식 데이터 모델에 구성된 서비스를 호출하여 양식 채우기 경험을 보다 단순화하고 향상시킬 수 있습니다. 데이터 모델 서비스를 호출하려면 비주얼 편집기에서 규칙을 만들거나 `guidelib.dataIntegrationUtils.executeOperation` 의 코드 편집기에서 API [규칙 편집기](rule-editor.md).
+[!DNL AEM Forms] 양식 작성자가 적응형 양식 필드 내에서 양식 데이터 모델(FDM)에 구성된 서비스를 호출하여 양식 채우기 경험을 보다 단순화하고 향상시킬 수 있습니다. 데이터 모델 서비스를 호출하려면 비주얼 편집기에서 규칙을 만들거나 `guidelib.dataIntegrationUtils.executeOperation` 의 코드 편집기에서 API [규칙 편집기](rule-editor.md).
 
 이 문서는 `guidelib.dataIntegrationUtils.executeOperation` 서비스를 호출하는 API입니다.
 
@@ -60,7 +60,7 @@ API 구조는 서비스 작업에 대해 다음 세부 사항을 지정합니다
   </tr>
   <tr>
    <td><code>formDataModelId</code></td>
-   <td>양식 데이터 모델의 이름을 포함하는 저장소 경로를 지정합니다.</td>
+   <td>이름을 포함하여 양식 데이터 모델(FDM)에 대한 저장소 경로를 지정합니다.</td>
   </tr>
   <tr>
    <td><code>operationName</code></td>
@@ -87,7 +87,7 @@ API 구조는 서비스 작업에 대해 다음 세부 사항을 지정합니다
 
 ## 서비스를 호출하는 샘플 스크립트 {#sample-script-to-invoke-a-service}
 
-다음 샘플 스크립트는 `guidelib.dataIntegrationUtils.executeOperation` 를 호출하는 API `getAccountById` 에 구성된 서비스 작업 `employeeAccount` 양식 데이터 모델.
+다음 샘플 스크립트는 `guidelib.dataIntegrationUtils.executeOperation` 를 호출하는 API `getAccountById` 에 구성된 서비스 작업 `employeeAccount` 양식 데이터 모델(FDM).
 
 다음 `getAccountById` 작업은 의 값을 가져옵니다. `employeeID` 양식 필드를 다음에 대한 입력으로 `empId` 인수 및 해당 직원의 직원명, 계좌 번호 및 계좌 잔액을 반환합니다. 출력 값은 지정된 양식 필드에 채워집니다. (예: 값: `name` 인수는 `fullName` 양식 요소 및 값 `accountNumber` 의 인수 `account` 양식 요소입니다.
 
@@ -119,7 +119,7 @@ guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, c
 
 ### 성공 및 실패 콜백 함수가 있는 샘플 스크립트 {#callback-function-success-failure}
 
-다음 샘플 스크립트는 `guidelib.dataIntegrationUtils.executeOperation` 를 호출하는 API `GETOrder` 에 구성된 서비스 작업 `employeeOrder` 양식 데이터 모델.
+다음 샘플 스크립트는 `guidelib.dataIntegrationUtils.executeOperation` 를 호출하는 API `GETOrder` 에 구성된 서비스 작업 `employeeOrder` 양식 데이터 모델(FDM).
 
 다음 `GETOrder` 작업은 의 값을 가져옵니다. `Order ID` 양식 필드를 다음에 대한 입력으로 `orderId` 인수 및 반환 주문 수량 값 `success` callback 함수.  다음과 같은 경우 `success` callback 함수는 주문 수량인 `failure` callback 함수는 `Error occured` 메시지.
 

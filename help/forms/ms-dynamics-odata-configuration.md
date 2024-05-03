@@ -1,13 +1,13 @@
 ---
 title: 구성 방법 [!DNL Microsoft Dynamics] AEM Forms용 OData?
-description: 에 정의된 엔티티, 속성 및 서비스를 기반으로 양식 데이터 모델을 만드는 방법에 대해 알아봅니다. [!DNL Microsoft Dynamics] 서비스.
+description: 에 정의된 엔티티, 속성 및 서비스를 기반으로 양식 데이터 모델(FDM)을 만드는 방법에 대해 알아봅니다. [!DNL Microsoft Dynamics] 서비스.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 39d788854c086b7f4c45d77bfea42fa687e08769
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1012'
 ht-degree: 2%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 2%
 
 ![데이터 통합](assets/data-integeration.png)
 
-[!DNL Microsoft Dynamics] 은 고객 계정, 연락처, 리드, 기회 및 사례를 생성하고 관리하는 엔터프라이즈 솔루션을 제공하는 CRM(고객 관계 관리) 및 ERP(전사적 자원 관리) 소프트웨어입니다. [[!DNL Experience Manager Forms] 데이터 통합](data-integration.md) 은 Forms을 온라인 및 온프레미스와 통합하기 위한 OData 클라우드 서비스 구성을 제공합니다. [!DNL Microsoft Dynamics] 서버입니다. 에 정의된 엔티티, 속성 및 서비스를 기반으로 양식 데이터 모델을 만들 수 있습니다 [!DNL Microsoft Dynamics] 서비스. 양식 데이터 모델을 사용하여 와 상호 작용하는 적응형 Forms을 만들 수 있습니다 [!DNL Microsoft Dynamics] 비즈니스 워크플로를 활성화하는 서버입니다. 예:
+[!DNL Microsoft Dynamics] 은 고객 계정, 연락처, 리드, 기회 및 사례를 생성하고 관리하는 엔터프라이즈 솔루션을 제공하는 CRM(고객 관계 관리) 및 ERP(전사적 자원 관리) 소프트웨어입니다. [[!DNL Experience Manager Forms] 데이터 통합](data-integration.md) 은 Forms을 온라인 및 온프레미스와 통합하기 위한 OData 클라우드 서비스 구성을 제공합니다. [!DNL Microsoft Dynamics] 서버입니다. 이렇게 하면 에 정의된 엔티티, 속성 및 서비스를 기반으로 양식 데이터 모델(FDM)을 생성할 수 있습니다. [!DNL Microsoft Dynamics] 서비스. 양식 데이터 모델(FDM)을 사용하여 상호 작용하는 적응형 Forms을 생성할 수 있습니다 [!DNL Microsoft Dynamics] 비즈니스 워크플로를 활성화하는 서버입니다. 예:
 
 * 쿼리 [!DNL Microsoft Dynamics] 데이터 서버 및 적응형 Forms 미리 채우기
 * 에 데이터 쓰기 [!DNL Microsoft Dynamics] 적응형 양식 제출 시
-* 데이터 쓰기 [!DNL Microsoft Dynamics] 를 통해 양식 데이터 모델에 정의된 사용자 지정 엔티티 및 그 반대
+* 데이터 쓰기 [!DNL Microsoft Dynamics] 를 통해(양식 데이터 모델(FDM)에 정의된 사용자 정의 엔티티 및 반대의 경우)
 
 <!--[!DNL Experience Manager Forms] add-on package also includes reference OData configuration that you can use to quickly integrate [!DNL Microsoft Dynamics] with [!DNL Experience Manager Forms].-->
 
@@ -136,20 +136,20 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. 에서 OData 서비�
 
    1. 선택 **[!UICONTROL OAuth 2.0]** 를 인증 유형으로 사용하십시오.
 
-   1. 에서 기본값 바꾸기 **[!UICONTROL 클라이언트 ID]** (또한으로 지칭됨) **애플리케이션 ID**), **[!UICONTROL 클라이언트 암호]**, **[!UICONTROL OAuth URL]**, **[!UICONTROL 토큰 URL 새로 고침]**, **[!UICONTROL 토큰 URL 액세스]**, 및 **[!UICONTROL 리소스]** 의 값이 있는 필드 [!DNL Microsoft Dynamics] 서비스 구성. 에서 dynamics 인스턴스 URL을 지정해야 합니다. **[!UICONTROL 리소스]** 구성할 필드 [!DNL Microsoft Dynamics] (양식 데이터 모델 포함) 서비스 루트 URL을 사용하여 dynamics 인스턴스 URL을 파생시킵니다. 예를 들어, [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
+   1. 에서 기본값 바꾸기 **[!UICONTROL 클라이언트 ID]** (또한으로 지칭됨) **애플리케이션 ID**), **[!UICONTROL 클라이언트 암호]**, **[!UICONTROL OAuth URL]**, **[!UICONTROL 토큰 URL 새로 고침]**, **[!UICONTROL 토큰 URL 액세스]**, 및 **[!UICONTROL 리소스]** 의 값이 있는 필드 [!DNL Microsoft Dynamics] 서비스 구성. 에서 dynamics 인스턴스 URL을 지정해야 합니다. **[!UICONTROL 리소스]** 구성할 필드 [!DNL Microsoft Dynamics] (양식 데이터 모델(FDM) 사용) 서비스 루트 URL을 사용하여 dynamics 인스턴스 URL을 파생시킵니다. 예를 들어, [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
 
    1. 지정 **[!UICONTROL openid]** 다음에서 **[!UICONTROL 인증 범위]** 인증 프로세스용 필드 [!DNL Microsoft Dynamics].
 
       ![인증 설정](assets/dynamics_authentication_settings_new.png)
-양식 데이터 모델
+양식 데이터 모델(FDM)
 1. 클릭 **[!UICONTROL OAuth에 연결]**. (으)로 리디렉션됩니다. [!DNL Microsoft Dynamics] 로그인 페이지입니다.
-1. 로 로그인 [!DNL Microsoft Dynamics] 자격 증명 및 동의 를 선택하여 cloud service 구성 연결 [!DNL Microsoft Dynamics] 서비스. 클라우드 서비스와 서비스 간 양식 데이터 모델 수립이 일회성 작업이다.
+1. 로 로그인 [!DNL Microsoft Dynamics] 자격 증명 및 동의 를 선택하여 cloud service 구성 연결 [!DNL Microsoft Dynamics] 서비스. 클라우드 서비스와 서비스를 FDM(양식 데이터 모델)을 설정하는 것이 일회성 작업입니다.
 
    OData 구성이 성공적으로 저장되었다는 메시지를 표시하는 클라우드 서비스 구성 페이지의 양식 데이터 모델입니다.
 
-MS Dynamics OData Cloud Service(OData 서비스) 클라우드 서비스가 구성되어 있으며 Dynamics 서비스와 연결되어 있습니다. 양식 데이터 모델 양식 데이터 모델
+MS Dynamics OData Cloud Service(OData 서비스) 클라우드 서비스가 구성되어 있으며 Dynamics 서비스와 연결되어 있습니다. 양식 데이터 모델(FDM)
 
-## 양식 데이터 모델 만들기 {#create-form-data-model}
+## 양식 데이터 모델(FDM) 생성 {#create-form-data-model}
 
 <!--When you install the [!DNL Experience Manager Forms] package, a form data model, **[!DNL Microsoft Dynamics] FDM**, is deployed on your [!DNL Experience Manager] instance. By default, the Form Data Model uses [!DNL Microsoft Dynamics] service configured in the MS Dynamics OData Cloud Service (OData Service) as its data source.
 
@@ -161,19 +161,19 @@ To review the form data model, go to **[!UICONTROL Form Data Model egrations]**.
  Form Data Model 
 ![default-fdm-1](assets/default-fdm-1.png)-->
 
-MS Dynamics OData 클라우드 서비스를 구성한 후 양식 데이터 모델을 만드는 동안 서비스를 사용할 수 있습니다. 자세한 내용은 [양식 데이터 모델 만들기](create-form-data-models.md).
+MS Dynamics OData 클라우드 서비스를 구성한 후 양식 데이터 모델(FDM)을 만드는 동안 이 서비스를 사용할 수 있습니다. 자세한 내용은 [양식 데이터 모델(FDM) 만들기](create-form-data-models.md).
 
-다음으로, 적응형 양식 기반 양식 데이터 모델을 만들어 다음과 같은 다양한 적응형 양식 사용 사례에 사용할 수 있습니다.
+다음으로 적응형 양식 기반 양식 데이터 모델(FDM)을 만들어 다음과 같은 다양한 적응형 양식 사용 사례에 사용할 수 있습니다.
 
 * 다음에서 정보를 쿼리하여 적응형 양식 미리 채우기 [!DNL Microsoft Dynamics] 엔티티 및 서비스
-* 호출 [!DNL Microsoft Dynamics] 적응형 양식 규칙을 사용하여 양식 데이터 모델에 정의된 서버 작업
+* 호출 [!DNL Microsoft Dynamics] 적응형 양식 규칙을 사용하여 FDM(양식 데이터 모델)에 정의된 서버 작업
 * 제출된 양식 데이터를 다음에 쓰기 [!DNL Microsoft Dynamics] 엔티티
 
 <!--It is recommended to create a copy of the Form Data Model provided with the [!DNL Experience Manager Forms] package and configure data models and services to suit your requirements. It will ensure that any future updates to the package do not override your form data model.-->
 
 다음을 수행할 수 있습니다. [양식 데이터 모델 제출 액션 구성](/help/forms/using-form-data-model.md) 적응형 양식에서 Microsoft Dynamics OData로 데이터를 보낼 수 있습니다.
 
-비즈니스 워크플로우에서 양식 데이터 모델을 만들고 사용하는 방법에 대한 자세한 내용은 다음을 참조하십시오. [데이터 통합](data-integration.md).
+비즈니스 워크플로우에서 양식 데이터 모델(FDM)을 만들고 사용하는 방법에 대한 자세한 내용은 [데이터 통합](data-integration.md).
 
 ## 관련 문서
 

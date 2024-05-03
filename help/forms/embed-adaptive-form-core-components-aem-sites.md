@@ -4,9 +4,9 @@ description: AEM Sites 페이지에서 적응형 양식 핵심 구성 요소를 
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: '2071'
 ht-degree: 4%
 
 ---
@@ -110,12 +110,12 @@ AEM Sites 페이지에서 적응형 Forms 구성 요소를 사용하려면 AEM A
    * **미리 채우기 서비스**: 미리 채우기 서비스를 사용하여 기존 데이터를 사용하는 적응형 양식의 필드를 자동으로 채울 수 있습니다. 사용자가 양식을 열면 해당 필드의 값이 미리 채워집니다. 미리 채우기 서비스에 대한 자세한 내용은 [적응형 양식 필드 미리 채우기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html#configuring-prefill-service-using-configuration-manager)
    * **클라이언트 라이브러리 범주**: 다음을 지정합니다. [JavaScript 함수](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#custom-functions) 표현식에 사용되고 적응형 Forms에서 지원됩니다.
 * **데이터 모델**: 데이터 모델을 사용하면 개별 데이터 소스의 엔티티와 서비스를 적응형 양식에 통합할 수 있습니다. 선택 **[!UICONTROL 양식 데이터 모델]** 생성 중인 적응형 양식에 여러 데이터 소스에서 데이터를 가져와 쓰는 작업이 포함된 경우
-   * **양식 데이터 모델**: 양식 데이터 모델을 사용하여 적응형 양식이 개별 데이터 소스와 통신할 수 있습니다. 자세한 내용은 데이터 소스 구성에 대한 내용을 참조하십시오. [데이터 소스 구성](/help/forms/configure-data-sources.md).
+   * **양식 데이터 모델**: FDM(양식 데이터 모델)을 사용하면 적응형 양식이 개별 데이터 소스와 통신할 수 있습니다. 자세한 내용은 데이터 소스 구성에 대한 내용을 참조하십시오. [데이터 소스 구성](/help/forms/configure-data-sources.md).
    * **스키마**: 스키마는 조직의 백엔드 시스템이 데이터를 생산 또는 소비하는 구조를 나타냅니다. 다음을 수행할 수 있습니다. [스키마를 적응형 양식에 연결](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html) 요소를 사용하여 적응형 양식에 다이내믹 콘텐츠를 추가합니다.
 
      >[!NOTE]
      >
-     > 양식 데이터 모델을 구성한 후에는 연관된 양식 모델을 변경할 수 없습니다. 하지만 양식 데이터 모델과 연관된 스키마를 수정할 수 있습니다.
+     > 양식 데이터 모델(FDM)을 구성한 후에는 연관된 양식 모델을 변경할 수 없습니다. 하지만 양식 데이터 모델(FDM)과 연관된 스키마를 수정할 수 있습니다.
 
 * **제출 탭**
 
@@ -125,7 +125,7 @@ AEM Sites 페이지에서 적응형 Forms 구성 요소를 사용하려면 AEM A
       * **제출 액션**: 사용자가 적응형 양식에서 제출 단추를 클릭하면 제출 액션이 트리거됩니다. 다음을 수행할 수 있습니다. [적응형 양식에서 제출 액션 구성](/help/forms/configuring-submit-actions.md). 적응형 양식은 즉시 다음과 같은 제출 액션을 제공합니다.
          * REST 엔드포인트에 제출
          * 이메일 보내기
-         * 양식 데이터 모델을 사용하여 제출
+         * 양식 데이터 모델(FDM)을 사용하여 제출
          * AEM Workflow 호출
          * SharePoint에 제출
          * OneDrive에 제출

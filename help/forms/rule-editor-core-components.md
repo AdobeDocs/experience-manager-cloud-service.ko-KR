@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '5444'
+source-wordcount: '5453'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 * 개체에 대한 값 설정
 * 개체 값의 유효성 검사
 * 개체의 값을 계산하는 함수 실행
-* 양식 데이터 모델 서비스 호출 및 작업 수행
+* FDM(양식 데이터 모델) 서비스 호출 및 작업 수행
 * 개체의 속성 설정
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
@@ -145,15 +145,15 @@ When 규칙 작성 중에 값 지우기 작업을 트리거할 수 있습니다.
 
 **[!UICONTROL 사용 안 함]** 지정된 개체를 비활성화합니다.
 
-**[!UICONTROL 서비스 호출]** 양식 데이터 모델로 구성된 서비스를 호출합니다. 서비스 호출 작업을 선택하면 필드가 나타납니다. 필드를 탭하면 의 모든 양식 데이터 모델에 구성된 모든 서비스가 표시됩니다. [!DNL Experience Manager] 인스턴스. 양식 데이터 모델 서비스를 선택하면 양식 개체를 지정된 서비스에 대한 입력 및 출력 매개 변수와 매핑할 수 있는 필드가 더 많이 나타납니다. 양식 데이터 모델 서비스를 호출하는 예제 규칙을 참조하십시오.
+**[!UICONTROL 서비스 호출]** 양식 데이터 모델(FDM)로 구성된 서비스를 호출합니다. 서비스 호출 작업을 선택하면 필드가 나타납니다. 필드를 탭하면 의 모든 양식 데이터 모델(FDM)에 구성된 모든 서비스가 표시됩니다. [!DNL Experience Manager] 인스턴스. 양식 데이터 모델 서비스를 선택하면 양식 개체를 지정된 서비스에 대한 입력 및 출력 매개 변수와 매핑할 수 있는 필드가 더 많이 나타납니다. 양식 데이터 모델(FDM) 서비스를 호출하는 예제 규칙을 참조하십시오.
 
 양식 데이터 모델 서비스 외에 웹 서비스를 호출할 직접 WSDL URL을 지정할 수 있습니다. 그러나 양식 데이터 모델 서비스에는 많은 이점이 있으며 서비스를 호출하는 데 권장되는 방법이 있습니다.
 
-양식 데이터 모델에서 서비스 구성에 대한 자세한 내용은 [[!DNL Experience Manager Forms] 데이터 통합](data-integration.md).
+FDM(양식 데이터 모델)에서 서비스를 구성하는 방법에 대한 자세한 내용은 [[!DNL Experience Manager Forms] 데이터 통합](data-integration.md).
 
-**[!UICONTROL 값 설정]** 지정한 개체의 값을 계산하고 설정합니다. 개체 값을 문자열, 다른 개체의 값, 수학 식이나 함수를 사용하여 계산된 값, 개체의 속성 값 또는 구성된 양식 데이터 모델 서비스의 출력 값으로 설정할 수 있습니다. 웹 서비스 옵션을 선택하면 의 모든 양식 데이터 모델에 구성된 모든 서비스가 표시됩니다. [!DNL Experience Manager] 인스턴스. 양식 데이터 모델 서비스를 선택하면 양식 개체를 지정된 서비스에 대한 입력 및 출력 매개 변수와 매핑할 수 있는 필드가 더 많이 나타납니다.
+**[!UICONTROL 값 설정]** 지정한 개체의 값을 계산하고 설정합니다. 개체 값을 문자열, 다른 개체의 값, 수학 식이나 함수를 사용하여 계산된 값, 개체의 속성 값 또는 구성된 양식 데이터 모델 서비스의 출력 값으로 설정할 수 있습니다. 웹 서비스 옵션을 선택하면 모든 양식 데이터 모델(FDM)에 구성된 모든 서비스가 표시됩니다. [!DNL Experience Manager] 인스턴스. 양식 데이터 모델 서비스를 선택하면 양식 개체를 지정된 서비스에 대한 입력 및 출력 매개 변수와 매핑할 수 있는 필드가 더 많이 나타납니다.
 
-양식 데이터 모델에서 서비스 구성에 대한 자세한 내용은 [[!DNL Experience Manager Forms] 데이터 통합](data-integration.md).
+FDM(양식 데이터 모델)에서 서비스를 구성하는 방법에 대한 자세한 내용은 [[!DNL Experience Manager Forms] 데이터 통합](data-integration.md).
 
 다음 **[!UICONTROL 속성 설정]** 규칙 유형을 사용하면 조건 작업을 기반으로 지정된 객체의 속성 값을 설정할 수 있습니다. 속성을 다음 중 하나로 설정할 수 있습니다.
 * 표시(부울)
@@ -836,7 +836,7 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 ### 양식 데이터 모델 서비스 호출 {#invoke}
 
-웹 서비스 고려 `GetInterestRates` 그것은 대출 금액, 종신 기간, 신청자의 신용 점수를 입력으로 취하여 EMI 금액과 이자율을 포함한 대출 계획을 반환합니다. 웹 서비스를 데이터 소스로 사용하여 양식 데이터 모델을 만듭니다. 데이터 모델 개체 및 `get` 양식 모델에 대한 서비스입니다. 이 서비스는 양식 데이터 모델의 서비스 탭에 나타납니다. 그런 다음 데이터 모델 객체의 필드를 포함하는 적응형 양식을 만들어 대출 금액, 근속 기간 및 신용 점수에 대한 사용자 입력을 캡처합니다. 웹 서비스를 트리거하는 단추를 추가하여 계획 세부 정보를 가져옵니다. 해당 필드에 출력이 채워집니다.
+웹 서비스 고려 `GetInterestRates` 그것은 대출 금액, 종신 기간, 신청자의 신용 점수를 입력으로 취하여 EMI 금액과 이자율을 포함한 대출 계획을 반환합니다. 웹 서비스를 데이터 소스로 사용하여 양식 데이터 모델(FDM)을 만듭니다. 데이터 모델 개체 및 `get` 양식 모델에 대한 서비스입니다. 이 서비스는 양식 데이터 모델(FDM)의 [서비스] 탭에 나타납니다. 그런 다음 데이터 모델 객체의 필드를 포함하는 적응형 양식을 만들어 대출 금액, 근속 기간 및 신용 점수에 대한 사용자 입력을 캡처합니다. 웹 서비스를 트리거하는 단추를 추가하여 계획 세부 정보를 가져옵니다. 해당 필드에 출력이 채워집니다.
 
 다음 규칙은 예제 시나리오를 수행하기 위해 서비스 호출 작업을 구성하는 방법을 보여 줍니다.
 

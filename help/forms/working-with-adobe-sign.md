@@ -6,9 +6,9 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: e81da7414335e00411942adeb41978d39f172b52
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '3242'
+source-wordcount: '3243'
 ht-degree: 2%
 
 ---
@@ -184,7 +184,7 @@ Sign이 활성화된 적응형 양식을 만들려면 다음 작업을 수행하
 
    >[!NOTE]
    >
-   > 양식 데이터 모델을 사용하여 적응형 양식을 만들면 계약 ID 필드가 대화 상자에 표시됩니다.
+   > 적응형 양식이 양식 데이터 모델(FDM)을 사용하여 생성된 경우, 계약 ID 필드가 대화 상자에 표시됩니다.
 
 1. [적응형 양식에 수신자 추가](working-with-adobe-sign.md#addsignerstoanadaptiveform) 완료를 선택합니다. ![저장](assets/save_icon.svg) 아이콘 을 클릭하여 변경 내용을 저장합니다.
 

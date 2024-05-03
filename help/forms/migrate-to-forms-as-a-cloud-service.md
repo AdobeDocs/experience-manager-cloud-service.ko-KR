@@ -9,9 +9,9 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1433'
 ht-degree: 1%
 
 ---
@@ -128,14 +128,14 @@ AEM Forms AEM 6.5에서 as a Cloud Service 환경으로 원활하게 전환하�
 
    <!-- 1. Install the latest [Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) to your cloned [!DNL AEM Forms] environment. -->
 
-1. 실행 [컨텐츠 전송 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration). 에서 매개 변수를 지정하는 동안 **[!UICONTROL 마이그레이션 세트 만들기]** 화면에서 적응형 Forms, 테마, 템플릿, 양식 데이터 모델, Cloud Service, 사용자 지정 구성 요소 및 기타 AEM Forms 관련 에셋의 경로를 **[!UICONTROL 포함할 경로]** 옵션을 선택합니다. 지정된 항목이 추가됩니다. [!DNL AEM Forms] 자산을 마이그레이션 세트로 마이그레이션합니다.
+1. 실행 [컨텐츠 전송 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration). 에서 매개 변수를 지정하는 동안 **[!UICONTROL 마이그레이션 세트 만들기]** 화면에서 적응형 Forms, 테마, 템플릿, 양식 데이터 모델(FDM), Cloud Service, 사용자 정의 구성 요소 및 기타 AEM Forms 관련 에셋의 경로를 **[!UICONTROL 포함할 경로]** 옵션을 선택합니다. 지정된 항목이 추가됩니다. [!DNL AEM Forms] 자산을 마이그레이션 세트로 마이그레이션합니다.
 
 ## 다양한 AEM Forms 관련 에셋의 경로
 
 AEM Forms 6.5에서 Cloud Service로 마이그레이션할 때 다음 위치에서 AEM Forms 관련 에셋을 찾을 수 있습니다.
 
 * **적응형 Forms**: 다음 위치에서 적응형 양식을 찾을 수 있습니다. `/content/dam/formsanddocuments/`및 `/content/forms/af`. 예를 들어 WKND 등록이라는 적응형 양식의 경우 경로를 추가합니다 `/content/dam/formsanddocuments/wknd-registration` 및 `/content/forms/af/wknd-registration`.
-* **양식 데이터 모델**: 다음 위치에서 모든 양식 데이터 모델을 찾을 수 있습니다. `/content/dam/formsanddocuments-fdm`. 예: `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
+* **양식 데이터 모델**: 다음 위치에서 모든 양식 데이터 모델(FDM)을 찾을 수 있습니다. `/content/dam/formsanddocuments-fdm`. 예: `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
 
 * **클라이언트 라이브러리**: 클라이언트 라이브러리의 기본 경로는 다음과 같습니다. `/etc/clientlibs/fd/theme`.
 
@@ -143,7 +143,7 @@ AEM Forms 6.5에서 Cloud Service로 마이그레이션할 때 다음 위치에�
 
 * **적응형 양식 테마 및 클라이언트 라이브러리**: 테마의 기본 경로는 다음과 같습니다 ` /content/dam/formsanddocuments-themes/` 및 클라이언트 라이브러리의 기본 경로는 입니다. `/etc/clientlibs/fd/theme`. 예를 들어 WKND Theme이라는 제목의 템플릿에 대한 경로 추가 ` /content/dam/formsanddocuments-themes/wkndtheme` 및 의 테마에 대한 클라이언트 라이브러리 `/etc/clientlibs/reference-themes/wkndtheme-3-0`. 다른 사용자 지정 경로에 테마와 클라이언트 라이브러리를 보유할 수도 있습니다.
 
-* **클라우드 구성**: 다음 위치에서 클라우드 구성을 찾을 수 있습니다. `/conf/`. 예를 들어 양식 데이터 모델 클라우드 구성은 `/conf/global/settings/cloudconfigs/fdm`.
+* **클라우드 구성**: 다음 위치에서 클라우드 구성을 찾을 수 있습니다. `/conf/`. 예를 들어 양식 데이터 모델(FDM) 클라우드 구성은 다음과 같습니다 `/conf/global/settings/cloudconfigs/fdm`.
 
 * **워크플로 모델**: 다음 위치에서 AEM 워크플로 모델을 찾을 수 있습니다. `/conf/global/settings/workflow/models/`. 예를 들어 WKND Registration이라는 워크플로우 모델의 경우 경로 추가 `/conf/global/settings/workflow/models/wknd-registration`
 

@@ -1,47 +1,39 @@
 ---
-title: 적응형 양식에 대한 JSON 스키마를 디자인하는 방법
-description: 적응형 양식에 대한 JSON 스키마를 만들고 스키마를 기반으로 적응형 양식을 만들어 스키마 컴플레인 데이터를 생성하는 방법에 대해 알아봅니다.
-feature: Adaptive Forms, Foundation Components
+title: 적응형 양식 핵심 구성 요소를 위한 JSON 스키마를 디자인하는 방법
+description: 적응형 양식 핵심 구성 요소에 대한 JSON 스키마를 만들고 이 스키마를 기반으로 적응형 양식(핵심 구성 요소)을 만들어 스키마 컴플레인 데이터를 생성하는 방법에 대해 알아봅니다.
+feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
 source-git-commit: 10389af2bce06f95d4d841371b7111340d40edaa
 workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 9%
+source-wordcount: '1301'
+ht-degree: 4%
 
 ---
 
-# 적응형 양식에 대한 JSON 스키마 디자인 {#creating-adaptive-forms-using-json-schema}
+# 적응형 양식에 대한 JSON 스키마 디자인(핵심 구성 요소){#creating-adaptive-forms-using-json-schema}
 
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| 핵심 구성 요소 | [여기 클릭](/help/forms/adaptive-form-core-components-json-schema-form-model.md) |
-| Foundation | 이 문서 |
-
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
-
-| 버전 | 문서 링크 |
-| -------- | ---------------------------- |
-| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html) |
-| AEM as a Cloud Service | 이 문서 |
+| Foundation | [여기 클릭](/help/forms/adaptive-form-json-schema-form-model.md) |
+| 핵심 구성 요소 | 이 문서 |
 
 
 ## 사전 요구 사항 {#prerequisites}
 
-JSON 스키마를 양식 모델로 사용하여 적응형 양식을 작성하려면 JSON 스키마에 대한 기본적인 이해가 필요합니다. 이 문서 전에 다음 내용을 읽어 보는 것이 좋습니다.
+JSON 스키마를 양식 모델로 사용하여 핵심 구성 요소를 기반으로 하는 적응형 양식을 작성하려면 JSON 스키마에 대한 기본적인 이해가 필요합니다. 이 문서 전에 다음 내용을 읽어 보는 것이 좋습니다.
 
-* [적응형 양식 만들기](creating-adaptive-form.md)
+* [핵심 구성 요소를 기반으로 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md)
 * [JSON 스키마](https://json-schema.org/)
 
 ## 양식 모델로 JSON 스키마 사용  {#using-a-json-schema-as-form-model}
 
-Adobe Experience Manager Forms는 기존 JSON 스키마를 양식 모델로 사용하여 적응형 양식 만들기를 지원합니다. 이 JSON 스키마는 조직의 백엔드 시스템이 데이터를 생산 또는 소비하는 구조를 나타냅니다. 사용하는 JSON 스키마는 [v4 사양](https://json-schema.org/draft-04/schema).
+Adobe Experience Manager Forms에서는 기존 JSON 스키마를 양식 모델로 사용하여 핵심 구성 요소를 기반으로 하는 적응형 양식 만들기를 지원합니다. 이 JSON 스키마는 조직의 백엔드 시스템이 데이터를 생산 또는 소비하는 구조를 나타냅니다. 사용하는 JSON 스키마는 [v4 사양](https://json-schema.org/draft-04/schema).
 
 JSON 스키마 사용의 주요 기능은 다음과 같습니다.
 
-* JSON 구조는 적응형 양식의 작성 모드에서 콘텐츠 파인더 탭에 트리로 표시됩니다. 요소를 JSON 계층에서 적응형 양식으로 드래그하여 추가할 수 있습니다.
+* JSON 구조는 적응형 양식의 작성 모드에서 콘텐츠 파인더 탭에 트리로 표시됩니다. 요소를 JSON 계층에서 핵심 구성 요소를 기반으로 하는 적응형 양식으로 드래그하여 추가할 수 있습니다.
 * 연결된 스키마와 호환되는 JSON을 사용하여 양식을 미리 채울 수 있습니다.
 * 제출 시 사용자가 입력한 데이터는 관련 스키마에 맞는 JSON으로 제출됩니다.
 
@@ -59,12 +51,6 @@ JSON 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. �
                 "Date of Birth"
               ],
               "description": "Date of birth in DD MMMM, YYYY",
-              "aem:afProperties": {
-                "displayPictureClause": "date{DD MMMM, YYYY}",
-                "displayPatternType": "date{DD MMMM, YYYY}",
-                "validationPatternType": "date{DD MMMM, YYYY}",
-                "validatePictureClause": "date{DD MMMM, YYYY}",
-                "validatePictureClauseMessage": "Date must be in DD MMMM, YYYY format."
               }
 ```
 
@@ -246,11 +232,7 @@ JSON 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. �
      "type": "boolean"
     },
     "phone": {
-     "type": "number",
-     "aem:afProperties": {
-      "sling:resourceType": "/libs/fd/af/components/guidetelephone",
-      "guideNodeClass": "guideTelephone"
-     }
+     "type": "number"
     },
     "address": {
      "type": "string"
@@ -346,9 +328,10 @@ JSON 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. �
 
 위의 예에서는 각 고객에게 배송 주소와 청구 주소가 모두 있는 고객 레코드를 정의합니다. 두 주소의 구조는 동일하며 주소에는 거리 주소, 도시 및 주가 있으므로 주소를 복제하지 않는 것이 좋습니다. 또한 향후 변경 시 필드를 쉽게 추가 및 삭제할 수 있습니다.
 
-## JSON 스키마 정의의 사전 구성 필드 {#pre-configuring-fields-in-json-schema-definition}
+<!--
+## Pre-Configuring fields in JSON Schema Definition {#pre-configuring-fields-in-json-schema-definition}
 
-다음을 사용할 수 있습니다. **aem:afProperties** 속성을 사용하여 사용자 지정 적응형 양식 구성 요소에 매핑할 JSON 스키마 필드를 미리 구성합니다. 예제는 아래에 나와 있습니다.
+You can use the **aem:afProperties** property to preconfigure JSON Schema field to map to a custom Adaptive Form component. An example is listed below:
 
 ```json
 {
@@ -356,16 +339,13 @@ JSON 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. �
         "sizeInMB": {
             "type": "integer",
             "minimum": 16,
-            "maximum": 512,
-            "aem:afProperties" : {
-                 "sling:resourceType" : "/apps/fd/af/components/guideTextBox",
-                 "guideNodeClass" : "guideTextBox"
-             }
+            "maximum": 512
         }
     },
     "required": [ "sizeInMB" ],
     "additionalProperties": false
 }
+
 ```
 
 <!--- ## Configure scripts or expressions for form objects  {#configure-scripts-or-expressions-for-form-objects}
@@ -641,7 +621,7 @@ Here is the sample JSON code for previously mentioned examples.
 
 ## 적응형 양식 구성 요소에 허용되는 값 제한 {#limit-acceptable-values-for-an-adaptive-form-component}
 
-JSON 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 구성 요소에 허용되는 값을 제한할 수 있습니다.
+JSON 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 핵심 구성 요소에 허용되는 값을 제한할 수 있습니다.
 
 <table>
  <tbody>
@@ -776,6 +756,10 @@ JSON 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 �
 **JSON 스키마 파일의 확장자는 어떻게 해야 합니까?**
 
 JSON 스키마 파일의 확장명은 .schema.json이어야 합니다. 예를 들어, &lt;filename>.schema.json.
+
+**다음과 같음 `aem:afProperties` 핵심 구성 요소를 기반으로 하는 적응형 Forms에서 JSON 스키마의 일부로 지원됩니까?**
+
+아니요, `aem:afProperties` 은(는) 코어 구성 요소에 대해 지원되지 않습니다. 이 속성은 기초 구성 요소에서만 지원됩니다.
 
 ## 추가 참조 {#see-also}
 

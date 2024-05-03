@@ -4,10 +4,10 @@ description: 설정 및 구성 방법 알아보기 [!DNL AEM Forms] as a Cloud S
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: 7fe779602f52081dc785074bdc0f374665b908e6
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 6%
+source-wordcount: '610'
+ht-degree: 7%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 6%
 
 * **사용자 경험(UX) 디자이너**: 사용자 경험(UX) 디자이너는 의 스타일, 레이아웃 및 브랜딩을 정의합니다 [!DNL AEM Forms] 에셋.
 
-* **Forms 실무자**: Forms 전문가는 UX 디자이너가 제공하는 스타일, 레이아웃 및 브랜딩에 따라 적응형 Forms, 테마 및 템플릿을 만듭니다. 또한 전문가가 적응형 양식을 만들어 양식 데이터 모델 및 AEM 워크플로우와 통합합니다. Forms 전문가는 일반적으로 프론트엔드 관련 작업을 수행합니다.
+* **Forms 실무자**: Forms 전문가는 UX 디자이너가 제공하는 스타일, 레이아웃 및 브랜딩에 따라 적응형 Forms, 테마 및 템플릿을 만듭니다. 또한 전문가는 적응형 양식을 만들고 양식 데이터 모델(FDM) 및 AEM 워크플로우와 통합합니다. Forms 전문가는 일반적으로 프론트엔드 관련 작업을 수행합니다.
 
 * **Forms 개발자**: Forms 개발자는 사용자 정의 양식 솔루션을 개발합니다. Forms 개발자는 일반적으로 사용자 지정 구성 요소 개발, AEM 워크플로, 미리 채우기 서비스 등과 같은 백엔드 개발을 수행합니다.
 
@@ -90,7 +90,7 @@ Forms 관련 AEM 그룹 및 해당 권한에 대한 자세한 내용은 [그룹 
 
 ## 다음 단계 {#next-steps}
 
-[로컬 개발 환경 설정](setup-local-development-environment.md). 로컬 개발 환경을 사용하여 적응형 양식 및 관련 에셋(테마, 템플릿, 사용자 지정 제출 작업, 미리 채우기 서비스 등)을 만들 수 있습니다. 및, [PDF forms을 적응형 Forms으로 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) 클라우드 개발 환경에 로그인하지 않아도 됩니다.
+[로컬 개발 환경 설정](setup-local-development-environment.md). 로컬 개발 환경을 사용하여 적응형 양식 및 관련 에셋(테마, 템플릿, 사용자 지정 제출 작업, 미리 채우기 서비스 등)을 만들 수 있습니다. 및, [PDF forms을 적응형 Forms으로 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ko-KR) 클라우드 개발 환경에 로그인하지 않아도 됩니다.
 
 <!-- ### Business unit and end-users {#business-unit-and-end-users}
 

@@ -4,9 +4,9 @@ description: 변수를 만들고 변수 값을 설정하고에서 사용하는 �
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1928'
+source-wordcount: '1930'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ ArrayList 데이터 유형을 사용하여 변수 컬렉션을 생성합니다. 
 
    * 원시 데이터 유형 - 변수에 대한 선택적 기본값을 지정합니다.
    * JSON 또는 XML - 선택적 JSON 또는 XML 스키마 경로를 지정합니다. 시스템은 이 스키마에서 사용할 수 있는 속성을 다른 변수에 매핑하고 저장하는 동안 스키마 경로를 확인합니다.
-   * 양식 데이터 모델 - 양식 데이터 모델 경로를 지정합니다.
+   * 양식 데이터 모델(FDM) - 양식 데이터 모델 경로를 지정합니다.
    * ArrayList - 컬렉션의 하위 유형을 지정합니다.
 
 1. 변수에 대한 선택적 설명을 지정하고 을 선택합니다 ![done_icon](assets/Smock_Checkmark_18_N.svg) 변경 내용을 저장합니다. 변수는 왼쪽 창에서 사용할 수 있는 목록에 표시됩니다.
@@ -198,7 +198,7 @@ ECMA 스크립트에서 다음 API를 사용하여 데이터 유형에 따라 �
 | 기본(Long, Double, Boolean, Date 및 String) | workItem.getWorkflowData().getMetaDataMap().get(variableName, type) |
 | 문서 | Packages.com.adobe.aemfd.docmanager.Document doc = workItem.getWorkflowData().getMetaDataMap().get(&quot;docVar&quot;, Packages.com.adobe.aemfd.docmanager.Document.class); |
 | XML | Packages.org.w3c.dom.Document xmlObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.org.w3c.dom.Document.class); |
-| 양식 데이터 모델 | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
+| 양식 데이터 모델(FDM) | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
 | JSON | Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
 

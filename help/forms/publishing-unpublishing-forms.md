@@ -5,9 +5,9 @@ content-type: reference
 topic-tags: publish
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
 docset: aem65s
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1327'
+source-wordcount: '1328'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 적응형 Forms은 자동으로 게시되지 않는 일부 구성, 설정 및 사용자 지정을 활용할 수 있습니다. 적응형 양식을 게시하기 전에 이러한 리소스를 게시하거나 활성화하는 것이 좋습니다.
 
 * 편집 가능한 적응형 양식 템플릿
-* Adobe Sign, Typekit, reCAPTCHA 및 양식 데이터 모델에 대한 Cloud Service 구성
+* Adobe Sign, Typekit, reCAPTCHA 및 양식 데이터 모델(FDM)에 대한 Cloud Service 구성
 * 다른 Cloud Services 구성은 사용자에게 관리자 권한이 있는 경우에만 활성화됩니다.
 * 사용자 지정. 여기에는 다음이 포함되지만 이에 국한되지 않습니다.
 

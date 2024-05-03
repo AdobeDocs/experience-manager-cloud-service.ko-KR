@@ -1,13 +1,13 @@
 ---
 title: 데이터 소스를 구성하는 방법
-description: RESTful 웹 서비스, SOAP 기반 웹 서비스 및 OData 서비스를 양식 데이터 모델의 데이터 소스로 구성하는 방법에 대해 알아봅니다.
+description: RESTful 웹 서비스, SOAP 기반 웹 서비스 및 OData 서비스를 FDM(양식 데이터 모델)의 데이터 소스로 구성하는 방법에 대해 알아봅니다.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2129'
 ht-degree: 2%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 2%
 
 1. 선택 **[!UICONTROL 저장]** 구성을 저장합니다.
 
-이제 양식 데이터 모델과 함께 구성된 관계형 데이터베이스를 사용할 수 있습니다.
+이제 구성된 관계형 데이터베이스를 양식 데이터 모델(FDM)과 함께 사용할 수 있습니다.
 
 <!-- ## Configure [!DNL Experience Manager] user profile {#configure-aem-user-profile}
 
@@ -84,7 +84,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 1. Go to [!DNL Experience Manager] web console at `https://[server]:[port]/system/console/configMgr`.
 1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and select to open the configuration in edit mode.
-1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model. Use the following format to specify user profile properties:
+1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model (FDM). Use the following format to specify user profile properties:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
 
@@ -95,7 +95,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
    >[!NOTE]
    >
-   >The **&#42;** in the above example denotes all nodes under the `profile/empLocation/` node in [!DNL Experience Manager] user profile in CRXDE structure. It means that the Form Data Model can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. However, the nodes that contain the specified property must follow a consistent structure.
+   >The **&#42;** in the above example denotes all nodes under the `profile/empLocation/` node in [!DNL Experience Manager] user profile in CRXDE structure. It means that the Form Data Model (FDM) can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. However, the nodes that contain the specified property must follow a consistent structure.
 
 1. Select **[!UICONTROL Save]** to save the configuration. -->
 
@@ -178,13 +178,13 @@ RESTful 서비스 Open API 사양 버전 3.0에서 지원되지 않는 일부 �
 
 다음을 참조하십시오 [OpenAPI 3.0 사양](https://swagger.io/specification/v3/) 을 참조하십시오.
 
-### 성능을 최적화하기 위한 양식 데이터 모델 HTTP 클라이언트 구성 {#fdm-http-client-configuration}
+### 성능을 최적화하기 위한 양식 데이터 모델(FDM) HTTP 클라이언트 구성 {#fdm-http-client-configuration}
 
 [!DNL Experience Manager Forms] 데이터 소스에 성능 최적화를 위한 HTTP 클라이언트 구성이 포함되어 있으므로 RESTful 웹 서비스와 통합할 때 데이터 모델을 구성합니다.
 
 다음 속성을 설정합니다. **[!UICONTROL REST 데이터 소스에 대한 양식 데이터 모델 HTTP 클라이언트 구성]** 정규 표현식을 지정하는 구성:
 
-* 사용 `http.connection.max.per.route` 양식 데이터 모델과 RESTful 웹 서비스 간에 허용되는 최대 연결 수를 설정하는 속성입니다. 기본값은 20개 연결입니다.
+* 사용 `http.connection.max.per.route` FDM(양식 데이터 모델)과 RESTful 웹 서비스 간에 허용되는 최대 연결 수를 설정하는 속성입니다. 기본값은 20개 연결입니다.
 
 * 사용 `http.connection.max` 속성을 사용하여 각 경로에 대해 허용되는 최대 연결 수를 지정합니다. 기본값은 40개 연결입니다.
 
@@ -212,7 +212,7 @@ RESTful 서비스 Open API 사양 버전 3.0에서 지원되지 않는 일부 �
 
 1. 다음에서 [!UICONTROL REST 데이터 소스에 대한 양식 데이터 모델 HTTP 클라이언트 구성] 대화 상자:
 
-   * 양식 데이터 모델과 RESTful 웹 서비스 간에 허용되는 최대 연결 수를 지정합니다. **[!UICONTROL 총 연결 제한]** 필드. 기본값은 20개 연결입니다.
+   * 에서 양식 데이터 모델(FDM)과 RESTful 웹 서비스 간에 허용되는 최대 연결 수를 지정합니다. **[!UICONTROL 총 연결 제한]** 필드. 기본값은 20개 연결입니다.
 
    * 의 각 경로에 대해 허용되는 최대 연결 수를 지정합니다. **[!UICONTROL 경로당 연결 제한]** 필드. 기본값은 두 개의 연결입니다.
 
@@ -266,7 +266,7 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. 에서 OData 서비�
 
 >[!NOTE]
 >
-> 양식 데이터 모델 지원 [OData 버전 4](https://www.odata.org/documentation/).
+> 양식 데이터 모델(FDM) 지원 [OData 버전 4](https://www.odata.org/documentation/).
 >를 구성하는 단계별 안내서입니다. [!DNL Microsoft®® Dynamics 365], 온라인 또는 온프레미스에서 다음을 참조하십시오. [[!DNL Microsoft® Dynamics] OData 구성](ms-dynamics-odata-configuration.md).
 
 1. 다음으로 이동 **[!UICONTROL 도구 > Cloud Service > 데이터 소스]**. 클라우드 구성을 만들 폴더를 선택하려면 를 선택합니다.
@@ -283,7 +283,7 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. 에서 OData 서비�
 
    >[!NOTE]
    >
-   연결할 OAuth 2.0 인증 유형 선택 [!DNL Microsoft®® Dynamics] 서비스 루트로 OData 끝점을 사용하는 서비스입니다.
+   >연결할 OAuth 2.0 인증 유형 선택 [!DNL Microsoft®® Dynamics] 서비스 루트로 OData 끝점을 사용하는 서비스입니다.
 
 1. 선택 **[!UICONTROL 만들기]** 를 클릭하여 OData 서비스에 대한 클라우드 구성을 만듭니다.
 
@@ -315,7 +315,7 @@ To save data in a tabular form use, Microsoft® SharePoint List. To configure a 
 
 <!--## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 
-When you enable mutual authentication for form data model, both the data source and [!DNL Experience Manager] Server running Form Data Model authenticate each other's identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model on your [!DNL Experience Manager Forms] environment:
+When you enable mutual authentication for form data model (FDM), both the data source and [!DNL Experience Manager] Server running Form Data Model (FDM) authenticate each other's identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model (FDM) on your [!DNL Experience Manager Forms] environment:
 
 1. Upload the private key (certificate) to [!DNL Experience Manager Forms] server. To upload the private key:
    1. Log in to your [!DNL Experience Manager Forms] server as an administrator.
@@ -328,7 +328,7 @@ When you enable mutual authentication for form data model, both the data source 
 
 ## 다음 단계 {#next-steps}
 
-데이터 소스를 구성했습니다. 그런 다음 양식 데이터 모델을 만들거나 데이터 소스 없이 이미 양식 데이터 모델을 만든 경우 구성한 데이터 소스와 연결할 수 있습니다. 다음을 참조하십시오 [양식 데이터 모델 만들기](create-form-data-models.md) 을 참조하십시오.
+데이터 소스를 구성했습니다. 그런 다음 양식 데이터 모델(FDM)을 만들거나 데이터 소스 없이 이미 양식 데이터 모델(FDM)을 만든 경우 구성한 데이터 소스와 연결할 수 있습니다. 다음을 참조하십시오 [양식 데이터 모델 만들기](create-form-data-models.md) 을 참조하십시오.
 
 
 <!--

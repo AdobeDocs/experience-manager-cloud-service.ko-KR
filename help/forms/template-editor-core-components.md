@@ -4,9 +4,9 @@ description: 템플릿 편집기를 사용하여 기본 구조 및 초기 콘텐
 feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '1962'
 ht-degree: 5%
 
 ---
@@ -164,7 +164,7 @@ Header and footer are added in the Initial Content layer.
 1. 선택 **[!UICONTROL 컨텐츠 브라우저]** 왼쪽에 있습니다.
 1. 양식 컨테이너로 이동 **[!UICONTROL 설정]**.
 1. 선택 **[!UICONTROL 데이터 모델]**.
-1. 다음을 통해 양식 데이터 모델 선택 **[!UICONTROL 양식 데이터 모델 선택]** 구성을 저장합니다.
+1. 다음을 통해 양식 데이터 모델(FDM) 선택 **[!UICONTROL 양식 데이터 모델 선택]** 구성을 저장합니다.
 
 ![Form-Data-Model-Association-in-Forms](/help/forms/assets/select-form-data-model-img-core-component.png)
 
@@ -201,7 +201,7 @@ After you have added fields, you can add buttons such as Submit and Reset.
 
 ### 템플릿 정책을 사용하여 적응형 양식 구성 요소에 사용자 지정 속성 추가
 
-사용자 정의 속성을 사용하면 양식 템플릿을 사용하여 사용자 정의 속성(키-값 쌍)을 적응형 양식 핵심 구성 요소에 연결할 수 있습니다. 사용자 지정 속성이에 반영됩니다. **[!UICONTROL 속성]** 구성 요소의 헤드리스 렌디션 섹션에 자세히 설명되어 있습니다. 사용자 정의 속성 값에 따라 조정되는 동적 양식 동작을 만들 수 있습니다. 예를 들어 개발자는 모바일, 데스크탑 또는 웹 플랫폼을 위한 헤드리스 양식 구성 요소의 다양한 표현을 디자인하여 다양한 디바이스에서 사용자 경험을 크게 향상시킬 수 있습니다.
+사용자 정의 속성을 사용하면 양식 템플릿을 사용하여 사용자 정의 속성(키-값 쌍)을 적응형 양식 핵심 구성 요소에 연결할 수 있습니다. 사용자 지정 속성이에 반영됩니다. **[!UICONTROL 속성]** 구성 요소의 헤드리스 렌디션 섹션에 자세히 설명되어 있습니다. 사용자 정의 속성 값에 따라 조정되는 동적 양식 동작을 만들 수 있습니다. 예를 들어 개발자는 모바일, 데스크탑 또는 웹 플랫폼을 위한 Headless 양식 구성 요소의 다양한 표현을 디자인하여 다양한 디바이스에서 사용자 경험을 크게 향상시킬 수 있습니다.
 
 적응형 양식 핵심 구성 요소 필드에 사용자 지정 속성을 추가하는 단계는 다음과 같습니다.
 

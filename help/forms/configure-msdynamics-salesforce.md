@@ -4,9 +4,9 @@ description: Microsoft Dynamics 365 및 Salesforce를 적응형 Forms과 통합�
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '965'
 ht-degree: 2%
 
 ---
@@ -18,18 +18,18 @@ ht-degree: 2%
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
 | AEM as a Cloud Service | 이 문서 |
 
-[[!DNL Experience Manager Forms] 데이터 통합](data-integration.md) 다음을 제공합니다 [!DNL Microsoft® Dynamics 365] 및 [!DNL Salesforce] 적응형 양식을 즉시 사용할 수 있는 양식 데이터 모델과 통합하는 클라우드 서비스 그런 다음 적응형 Forms은 와 상호 작용할 수 있습니다. [!DNL Microsoft® Dynamics 365] 및 [!DNL Salesforce] 비즈니스 워크플로를 활성화하는 서버입니다. 예:
+[[!DNL Experience Manager Forms] 데이터 통합](data-integration.md) 다음을 제공합니다 [!DNL Microsoft® Dynamics 365] 및 [!DNL Salesforce] 적응형 양식을 기본 양식 데이터 모델(FDM)과 통합하는 클라우드 서비스. 그런 다음 적응형 Forms은 와 상호 작용할 수 있습니다. [!DNL Microsoft® Dynamics 365] 및 [!DNL Salesforce] 비즈니스 워크플로를 활성화하는 서버입니다. 예:
 
 * 에 데이터 쓰기 [!DNL Microsoft® Dynamics 365] 및 [!DNL Salesforce] 을 참조하십시오.
-* 데이터 쓰기 [!DNL Microsoft® Dynamics 365] 및 [!DNL Salesforce] 를 통해 양식 데이터 모델에 정의된 사용자 지정 엔티티 및 그 반대로
+* 데이터 쓰기 [!DNL Microsoft® Dynamics 365] 및 [!DNL Salesforce] 를 통해 양식 데이터 모델(FDM)에 정의된 사용자 정의 엔티티와 반대로
 * 쿼리 [!DNL Microsoft® Dynamics 365] 및 [!DNL Salesforce] 서버입니다. 또한 적응형 Forms을 미리 채웁니다.
 * 데이터 읽기 [!DNL Microsoft® Dynamics 365] 및 [!DNL Salesforce] 서버입니다.
 
-[!DNL Microsoft® Dynamics 365] 및 [!DNL Salesforce] 클라우드 서비스 및 양식 데이터 모델은 [!DNL AEM Forms] 사용자 이후 서버 [Experience Manager archetype을 기반으로 Forms용 개발 프로젝트 설정](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
+[!DNL Microsoft® Dynamics 365] 및 [!DNL Salesforce] 클라우드 서비스 및 양식 데이터 모델(FDM)은 [!DNL AEM Forms] 사용자 이후 서버 [Experience Manager archetype을 기반으로 Forms용 개발 프로젝트 설정](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
 
 >[!NOTE]
 >
->Microsoft® Dynamics 365 및 [!DNL Salesforce] 클라우드 서비스 및 양식 데이터 모델은 를 설정하는 경우에만 즉시 사용할 수 있습니다. [!DNL Experience Manager Forms] as a [!DNL Cloud Service] 프로젝트 기준 [AEM Archetype 30](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30) 나중에
+>Microsoft® Dynamics 365 및 [!DNL Salesforce] 클라우드 서비스 및 양식 데이터 모델(FDM)은 다음을 설정하는 경우에만 즉시 사용할 수 있습니다. [!DNL Experience Manager Forms] as a [!DNL Cloud Service] 프로젝트 기준 [AEM Archetype 30](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30) 나중에
 
 ## 구성 [!DNL Salesforce] 클라우드 서비스 {#configure-salesforce-cloud-service}
 
@@ -59,11 +59,11 @@ ht-degree: 2%
    1. 로 로그인 [!DNL Salesforce] 자격 증명 및 동의 를 선택하여 cloud service 구성 연결 [!DNL Salesforce] 서비스. 연결에 성공하면 로 리디렉션됩니다. [!DNL Salesforce] 성공 메시지를 표시하는 클라우드 서비스 구성 페이지
 1. 선택 **[!UICONTROL 저장 및 닫기]** 구성 설정을 완료합니다.
 
-### 즉시 사용 가능한 액세스 [!DNL Salesforce] 양식 데이터 모델
+### 즉시 사용 가능한 액세스 [!DNL Salesforce] 양식 데이터 모델(FDM)
 
-A [!DNL Salesforce] 양식 데이터 모델은 [!DNL AEM Forms] 사용자 이후 서버 [Experience Manager archetype을 기반으로 Forms용 개발 프로젝트 설정](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
+A [!DNL Salesforce] FDM(양식 데이터 모델)은 [!DNL AEM Forms] 사용자 이후 서버 [Experience Manager archetype을 기반으로 Forms용 개발 프로젝트 설정](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
 
-양식 데이터 모델에 액세스하려면 다음으로 이동합니다. **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL 데이터 통합]**. 사용 가능한 폴더 목록에는 제목이 지정된 폴더가 포함됩니다. `DappTitle`  while [AEM Archetype 프로젝트 생성](setup-local-development-environment.md#forms-cloud-service-local-development-environment). 폴더 이름을 선택하고 **[!UICONTROL Salesforce 데이터 모델]**&#x200B;을 클릭하고 편집을 선택합니다 ![편집](assets/edit.png) 양식 데이터 모델을 보기 위한 아이콘입니다.
+FDM(양식 데이터 모델)에 액세스하려면 다음으로 이동합니다. **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL 데이터 통합]**. 사용 가능한 폴더 목록에는 제목이 지정된 폴더가 포함됩니다. `DappTitle`  while [AEM Archetype 프로젝트 생성](setup-local-development-environment.md#forms-cloud-service-local-development-environment). 폴더 이름을 선택하고 **[!UICONTROL Salesforce 데이터 모델]**&#x200B;을 클릭하고 편집을 선택합니다 ![편집](assets/edit.png) 아이콘을 클릭하여 양식 데이터 모델(FDM)을 봅니다.
 
 구성 후 [[!DNL Salesforce] 클라우드 구성 서비스](#configure-salesforce-cloud-service)를 사용하면 적응형 양식을 즉시 통합할 수 있습니다 [!DNL Salesforce] 데이터 모델.
 
@@ -89,22 +89,22 @@ A [!DNL Salesforce] 양식 데이터 모델은 [!DNL AEM Forms] 사용자 이후
    1. 다음에 대한 값 입력 **[!UICONTROL 서비스 루트]** 필드. Dynamics 인스턴스로 이동하여 다음 위치로 이동 [개발자 리소스](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/view-download-developer-resources) 서비스 루트 필드에 대한 값을 보려면 다음을 수행하십시오. 예, `https://<tenant-name>.dynamics.com/api/data/v9.1/`
    1. 연결된 응용 프로그램에 대한 클라이언트 ID(응용 프로그램 ID라고도 함)와 클라이언트 암호를 지정합니다.
    1. 바꾸기 `{tenant}` 다음에 테넌트 ID가 있는 **[!UICONTROL OAuth URL]**, **[!UICONTROL 토큰 URL 새로 고침]**, 및 **[!UICONTROL 토큰 URL 액세스]** 필드.
-   1. 에서 동적 인스턴스 URL 지정 **[!UICONTROL 리소스]** 구성할 필드 [!UICONTROL Microsoft® Dynamics] (양식 데이터 모델 포함) 서비스 루트 URL을 사용하여 Dynamics 인스턴스 URL을 파생합니다. 예: `https://<tenant-name>.dynamics.com`
+   1. 에서 동적 인스턴스 URL 지정 **[!UICONTROL 리소스]** 구성할 필드 [!UICONTROL Microsoft® Dynamics] FDM(양식 데이터 모델)을 사용하는 경우 서비스 루트 URL을 사용하여 Dynamics 인스턴스 URL을 파생합니다. 예: `https://<tenant-name>.dynamics.com`
 
    1. 지정 `openid` 다음에서 **[!UICONTROL 인증 범위]** 인증 프로세스용 필드 [!DNL Microsoft® Dynamics 365].
    1. 로 로그인 [!DNL Microsoft® Dynamics 365] 자격 증명 및 동의 를 선택하여 cloud service 구성 연결 [!DNL Microsoft® Dynamics 365] 서비스. 연결에 성공하면 로 리디렉션됩니다. [!DNL Microsoft® Dynamics 365] 성공 메시지를 표시하는 클라우드 서비스 구성 페이지
 1. 선택 **[!UICONTROL 저장 및 닫기]** 구성 설정을 완료합니다.
 
-### 즉시 사용 가능한 액세스 [!DNL Microsoft® Dynamics 365] 양식 데이터 모델
+### 즉시 사용 가능한 액세스 [!DNL Microsoft® Dynamics 365] 양식 데이터 모델(FDM)
 
-A [!DNL Microsoft® Dynamics 365] 양식 데이터 모델은 [!DNL AEM Forms] 사용자 이후 서버 [Experience Manager archetype을 기반으로 Forms용 개발 프로젝트 설정](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
+A [!DNL Microsoft® Dynamics 365] FDM(양식 데이터 모델)은 [!DNL AEM Forms] 사용자 이후 서버 [Experience Manager archetype을 기반으로 Forms용 개발 프로젝트 설정](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
 
-양식 데이터 모델에 액세스하려면 다음으로 이동합니다. **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL 데이터 통합]**. 사용 가능한 폴더 목록에는 제목이 지정된 폴더가 포함됩니다. `DappTitle`  while [AEM Archetype 프로젝트 생성](setup-local-development-environment.md#forms-cloud-service-local-development-environment). 폴더 이름을 선택하고 **[!UICONTROL Microsoft® Dynamics 365 데이터 모델]**&#x200B;을 클릭하고 편집을 선택합니다 ![편집](assets/edit.png) 양식 데이터 모델을 보기 위한 아이콘입니다.
+FDM(양식 데이터 모델)에 액세스하려면 다음으로 이동합니다. **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL 데이터 통합]**. 사용 가능한 폴더 목록에는 제목이 지정된 폴더가 포함됩니다. `DappTitle`  while [AEM Archetype 프로젝트 생성](setup-local-development-environment.md#forms-cloud-service-local-development-environment). 폴더 이름을 선택하고 **[!UICONTROL Microsoft® Dynamics 365 데이터 모델]**&#x200B;을 클릭하고 편집을 선택합니다 ![편집](assets/edit.png) 아이콘을 클릭하여 양식 데이터 모델(FDM)을 봅니다.
 
 구성 후 [[!DNL Microsoft® Dynamics 365] 클라우드 구성 서비스](#configure-dynamics-cloud-service)를 사용하면 적응형 양식을 즉시 통합할 수 있습니다 [!DNL Microsoft® Dynamics 365] 데이터 모델.
 
 >[!MORELIKETHIS]
 >
-* [AEM Forms에 대한 데이터 소스 구성](/help/forms/configure-data-sources.md)
-* [AEM Forms용 Azure 스토리지 구성](/help/forms/configure-azure-storage.md)
-[AEM Sites 페이지에 Forms 포털 추가](/help/forms/configure-forms-portal.md)
+>* [AEM Forms에 대한 데이터 소스 구성](/help/forms/configure-data-sources.md)
+>* [AEM Forms용 Azure 스토리지 구성](/help/forms/configure-azure-storage.md)
+>  [AEM Sites 페이지에 Forms 포털 추가](/help/forms/configure-forms-portal.md)

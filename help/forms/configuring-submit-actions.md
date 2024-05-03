@@ -3,10 +3,10 @@ title: 적응형 양식에 대한 제출 액션을 구성하는 방법
 description: 적응형 양식은 여러 제출 액션을 제공합니다. 제출 액션은 적응형 양식이 제출 후 처리되는 방식을 정의합니다. 기본 제공 제출 액션을 사용하거나 직접 만들 수 있습니다.
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '3901'
-ht-degree: 77%
+source-wordcount: '3914'
+ht-degree: 73%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 77%
 
 * [REST 엔드포인트에 제출](#submit-to-rest-endpoint)
 * [이메일 보내기](#send-email)
-* [양식 데이터 모델을 사용하여 제출](#submit-using-form-data-model)
+* [FDM(양식 데이터 모드)l을 사용하여 제출](#submit-using-form-data-model)
 * [AEM Workflow 호출](#invoke-an-aem-workflow)
 * [SharePoint에 제출](#submit-to-sharedrive)
 * [OneDrive에 제출](#submit-to-onedrive)
@@ -137,11 +137,11 @@ The **Submit to Forms workflow** submit option sends a data xml and file attachm
 
 For information about how to configure the Submit to forms workflow Submit Action, see [Submitting and processing your form data using forms workflows](submit-form-data-livecycle-process.md). -->
 
-## 양식 데이터 모델을 사용하여 제출 {#submit-using-form-data-model}
+## 양식 데이터 모델(FDM)을 사용하여 제출 {#submit-using-form-data-model}
 
-**[!UICONTROL 양식 데이터 모델을 사용하여 제출]** 제출 액션은 양식 데이터 모델에 지정된 데이터 모델 오브젝트의 제출된 적응형 양식 데이터를 해당 데이터 소스에 씁니다. 제출 액션을 구성할 때 데이터 소스에 다시 쓰려는 제출된 데이터가 있는 데이터 모델 오브젝트를 선택할 수 있습니다.
+다음 **[!UICONTROL 양식 데이터 모델을 사용하여 제출]** 제출 액션은 양식 데이터 모델(FDM)의 지정된 데이터 모델 객체에 대해 제출된 적응형 양식 데이터를 해당 데이터 소스에 기록합니다. 제출 액션을 구성할 때 데이터 소스에 다시 쓰려는 제출된 데이터가 있는 데이터 모델 오브젝트를 선택할 수 있습니다.
 
-또한 양식 데이터 모델과 기록 문서(DoR)를 사용하여 양식 첨부 파일을 데이터 소스에 제출할 수 있습니다. 양식 데이터 모델에 대한 자세한 내용은 [[!DNL AEM Forms] 데이터 통합](data-integration.md)을 참조하십시오.
+또한 FDM(양식 데이터 모델) 및 DoR(기록 문서)을 사용하여 양식 첨부 파일을 데이터 소스에 제출할 수 있습니다. 양식 데이터 모델(FDM)에 대한 자세한 내용은 [[!DNL AEM Forms] 데이터 통합](data-integration.md).
 
 <!--
 ## Forms Portal Submit Action {#forms-portal-submit-action}
@@ -243,7 +243,7 @@ AEM Forms을 Microsoft® Sharepoint Document Library 스토리지에 연결하�
 을(를) 사용하려면 [!UICONTROL SharePoint 목록에 제출] 적응형 양식에서 작업 제출:
 
 1. [SharePoint 목록 구성 만들기](#create-sharepoint-list-configuration): AEM Forms을 Microsoft® Sharepoint 목록 스토리지에 연결합니다.
-1. [적응형 양식에서 양식 데이터 모델을 사용하여 제출](#use-submit-using-fdm): 적응형 양식을 구성된 Microsoft® SharePoint에 연결합니다.
+1. [적응형 양식에서 FDM(양식 데이터 모델)을 사용하여 제출 사용](#use-submit-using-fdm): 적응형 양식을 구성된 Microsoft® SharePoint에 연결합니다.
 
 #### SharePoint 목록 구성 만들기 {#create-sharepoint-list-configuration}
 
@@ -267,14 +267,14 @@ AEM Forms을 Microsoft® Sharepoint 목록에 연결하려면:
 1. 선택 **[!UICONTROL 만들기]** Microsoft® SharePointList에 대한 클라우드 구성을 만듭니다.
 
 
-#### 적응형 양식에서 양식 데이터 모델을 사용하여 제출 {#use-submit-using-fdm}
+#### 적응형 양식에서 FDM(양식 데이터 모델)을 사용하여 제출 사용 {#use-submit-using-fdm}
 
 적응형 양식에서 생성된 SharePoint 목록 구성을 사용하여 데이터나 생성된 기록 문서를 SharePoint 목록에 저장할 수 있습니다. 적응형 양식에서 SharePoint 목록 스토리지 구성을 다음으로 사용하려면 다음 단계를 수행하십시오.
 
-1. [Microsoft® SharePoint 목록 구성을 사용하여 양식 데이터 모델 만들기](/help/forms/create-form-data-models.md)
-1. [데이터를 검색하고 전송하도록 양식 데이터 모델 구성](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Microsoft® SharePoint 목록 구성을 사용하여 FDM(양식 데이터 모델) 만들기](/help/forms/create-form-data-models.md)
+1. [데이터를 검색하고 보내도록 양식 데이터 모델(FDM) 구성](/help/forms/work-with-form-data-model.md#configure-services)
 1. [적응형 양식 만들기](/help/forms/creating-adaptive-form.md)
-1. [양식 데이터 모델을 사용하여 제출 작업 구성](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+1. [FDM(양식 데이터 모델)을 사용하여 제출 액션 구성](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
 
 양식을 제출하면 데이터가 지정된 Microsoft® Sharepoint 목록 저장소에 저장됩니다.
 
@@ -462,7 +462,7 @@ AEM Forms를 Azure Storage 컨테이너에 연결하려면
 
 AEM 보안 및 강화 지침의 일부로, 400.jsp, 404.jsp 및 500.jsp와 같은 사용자 정의 오류 페이지를 구성합니다. 이러한 핸들러는 양식 제출 시 400, 404 또는 500 오류가 나타나면 호출됩니다. 게시 노드에서 이러한 오류 코드가 트리거되면 핸들러가 호출되기도 합니다. 또한 다른 HTTP 오류 코드에 대한 JSP 페이지를 만들 수 있습니다.
 
-양식 데이터 모델이나, 데이터에 `<afData>`, `<afBoundData>` 및 `</afUnboundData>` 태그가 포함되지 않은 스키마에 대해 XML 또는 JSON 데이터 컴플레인이 존재하는 스키마 기반 적응형 양식을 미리 채우는 경우 적응형 양식의 무제한 필드 데이터가 손실됩니다. 스키마는 XML 스키마, JSON 스키마 또는 양식 데이터 모델일 수 있습니다. 무제한 필드는 `bindref` 속성이 없는 적응형 양식 필드입니다.
+양식 데이터 모델(FDM) 또는 스키마 기반 적응형 양식에 데이터가 포함되지 않은 스키마에 대한 XML 또는 JSON 데이터 컴플레인을 미리 채우는 경우 `<afData>`, `<afBoundData>`, 및 `</afUnboundData>` 태그를 지정하면 적응형 양식의 제한되지 않은 필드 데이터가 손실됩니다. 스키마는 XML 스키마, JSON 스키마 또는 양식 데이터 모델(FDM)일 수 있습니다. 무제한 필드는 `bindref` 속성이 없는 적응형 양식 필드입니다.
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 

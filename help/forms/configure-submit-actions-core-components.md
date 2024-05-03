@@ -1,13 +1,13 @@
 ---
 title: 적응형 양식에 대한 제출 액션을 구성하는 방법
 description: 적응형 양식은 여러 제출 액션을 제공합니다. 제출 액션은 적응형 양식이 제출 후 처리되는 방식을 정의합니다. 기본 제공 제출 액션을 사용하거나 직접 만들 수 있습니다
-keywords: 적응형 양식에 대한 제출 액션을 선택하고, 적응형 양식을 sharepoint 목록에 연결하고, 적응형 양식을 sharepoint 문서 라이브러리에 연결하고, 적응형 양식을 양식 데이터 모델에 연결하는 방법
+keywords: 적응형 양식에 대한 제출 액션을 선택하고, 적응형 양식을 sharepoint 목록에 연결하고, 적응형 양식을 sharepoint 문서 라이브러리에 연결하고, 적응형 양식을 양식 데이터 모델(FDM)에 연결하는 방법
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 2f567d45a6ba2dfb4dd3346e8510bcb04113eefb
+source-git-commit: 520d07cbb4566f9d39a95ac890a9cd572114d710
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 58%
+source-wordcount: '678'
+ht-degree: 49%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 58%
 * 이메일을 통해 양식 데이터를 손쉽게 전송합니다.
 * 데이터를 전송하는 동안 Microsoft® Power Automate 플로우 또는 AEM 워크플로우를 시작합니다.
 * 양식 데이터를 Microsoft® SharePoint Server, Microsoft® Azure Blob Storage 또는 Microsoft® OneDrive로 직접 전송합니다.
-* 양식 데이터 모델을 사용하여 데이터를 구성된 데이터 소스에 원활하게 전송합니다.
+* 양식 데이터 모델(FDM)을 사용하여 구성된 데이터 소스에 데이터를 원활하게 전송합니다.
 * 편리하게 데이터를 REST 엔드포인트에 제출합니다.
 
 다음을 수행할 수 있습니다. [기본 제출 액션 확장](custom-submit-action-form.md). 조직별 요구 사항에 대해 제출 액션을 사용자 지정할 수도 있습니다.
@@ -35,7 +35,7 @@ ht-degree: 58%
 적응형 양식에 대한 제출 액션을 정의하려면 의 구성 대화 상자 를 사용합니다 **적응형 양식 컨테이너** 구성 요소. 의 구성 대화 상자 **적응형 양식 컨테이너** 구성 요소에는 다음이 포함됩니다.
 * 기본 탭
 * 양식 데이터 모델 탭
-* 전송 탭
+* 제출 탭
 
 구성 대화 상자를 사용하여 양식 컨테이너 속성을 정의할 수 있습니다. 양식 컨테이너 구성 요소의 구성 대화 상자에 대해 자세히 알아보려면 다음을 수행하십시오. [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html)
 
@@ -62,7 +62,7 @@ ht-degree: 58%
 * [Power Automate 플로우 호출](/help/forms/forms-microsoft-power-automate-integration.md)
 * [SharePoint에 제출](/help/forms/configure-submit-action-sharepoint.md)
 * [Workfront Fusion 호출](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [양식 데이터 모델을 사용하여 제출](/help/forms/using-form-data-model.md)
+* [양식 데이터 모델(FDM)을 사용하여 제출](/help/forms/using-form-data-model.md)
 * [Azure Blob 스토리지에 제출](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [REST 엔드포인트에 제출](/help/forms/configure-submit-action-restpoint.md)
 * [OneDrive에 제출](/help/forms/configure-submit-action-onedrive.md)
@@ -70,7 +70,7 @@ ht-degree: 58%
 
 적응형 양식을 다른 스토리지 구성에 제출할 수도 있습니다.
 
-* [적응형 양식을 Salesforce 애플리케이션에 연결](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Salesforce 애플리케이션에 적응형 양식 연결](/help/forms/aem-forms-salesforce-integration.md)
 * [Microsoft® Dynamics OData에 적응형 양식 연결](/help/forms/ms-dynamics-odata-configuration.md)
 
 다음을 수행할 수 있습니다. [기본 제출 액션 사용자 정의](custom-submit-action-form.md). 또한 특정 조직 요구 사항에 맞게 제출 액션을 사용자 지정할 수 있습니다.
@@ -94,11 +94,11 @@ Refer to [configure the send email submit action for an Adaptive Form](/help/for
 
 >[!CAUTION]
 >
->If you  [prefill](prepopulate-adaptive-form-fields.md) a form template,  a Form Data Model or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema , form template, or form data model) that is data does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost. 
+>If you  [prefill](prepopulate-adaptive-form-fields.md) a form template,  a Form Data Model (FDM) or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema , form template, or form data model (FDM)) that is data does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost. 
 
 >[!CAUTION]
 >
->If you [prefill](prepopulate-adaptive-form-fields.md) a form template, a Form Data Model or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema, or form data model) that does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost.
+>If you [prefill](prepopulate-adaptive-form-fields.md) a form template, a Form Data Model (FDM) or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema, or form data model(FDM)) that does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost.
 
 ## Submit to Microsoft® SharePoint {#submit-to-sharedrive}
 
@@ -106,11 +106,11 @@ The **[!UICONTROL Submit to SharePoint]** Submit Action connects an Adaptive For
 
 Integration of AEM Adaptive Form with Microsoft® SharePoint enables the submission, retrieval, or storage of data, files, and other relevant information within the SharePoint storage. To learn how to configure submit to SharePoint submit action for an Adaptive Form, [click here.](/help/forms/configure-submit-action-sharepoint.md) 
 
-## Submit using Form Data Model {#submit-using-form-data-model}
+## Submit using Form Data Model (FDM) {#submit-using-form-data-model}
 
-The **[!UICONTROL Submit using Form Data Model]** Submit Action writes submitted Adaptive Form data for the specified data model object in a Form Data Model to its data source. When configuring the Submit Action, you can choose a data model object whose submitted data you want to write back to its data source.
+The **[!UICONTROL Submit using Form Data Model (FDM)]** Submit Action writes submitted Adaptive Form data for the specified data model object in a Form Data Model (FDM) to its data source. When configuring the Submit Action, you can choose a data model object whose submitted data you want to write back to its data source.
 
-When a user submits a form based on a form data model, you can [configure the form to write the submitted data to the data sources associated with the data model object.](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
+When a user submits a form based on a form data model (FDM), you can [configure the form to write the submitted data to the data sources associated with the data model object.](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
 
 ## Submit to REST endpoint {#submit-to-rest-endpoint}
 
@@ -212,7 +212,7 @@ If end-user bypass those validations and submit the forms, the server again perf
 
 AEM 보안 및 강화 지침의 일부로, 400.jsp, 404.jsp 및 500.jsp와 같은 사용자 정의 오류 페이지를 구성합니다. 이러한 핸들러는 양식 제출 시 400, 404 또는 500 오류가 나타나면 호출됩니다. 게시 노드에서 이러한 오류 코드가 트리거되면 핸들러가 호출되기도 합니다. 또한 다른 HTTP 오류 코드에 대한 JSP 페이지를 만들 수 있습니다.
 
-양식 데이터 모델이나, 데이터에 `<afData>`, `<afBoundData>` 및 `</afUnboundData>` 태그가 포함되지 않은 스키마에 대해 XML 또는 JSON 데이터 컴플레인이 존재하는 스키마 기반 적응형 양식을 미리 채우는 경우 적응형 양식의 무제한 필드 데이터가 손실됩니다. 스키마는 XML 스키마, JSON 스키마 또는 양식 데이터 모델일 수 있습니다. 무제한 필드는 `bindref` 속성이 없는 적응형 양식 필드입니다.
+양식 데이터 모델(FDM) 또는 스키마 기반 적응형 양식에 데이터가 포함되지 않은 스키마에 대한 XML 또는 JSON 데이터 컴플레인을 미리 채우는 경우 `<afData>`, `<afBoundData>`, 및 `</afUnboundData>` 태그를 지정하면 적응형 양식의 제한되지 않은 필드 데이터가 손실됩니다. 스키마는 XML 스키마, JSON 스키마 또는 양식 데이터 모델(FDM)일 수 있습니다. 무제한 필드는 `bindref` 속성이 없는 적응형 양식 필드입니다.
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 

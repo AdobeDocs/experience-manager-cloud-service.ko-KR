@@ -3,16 +3,16 @@ title: 적응형 양식에 대한 참조 테마 및 템플릿을 가져오는 �
 description: 제공된 참조 적응형 양식 테마, 템플릿 및 양식 데이터 모델을 사용하여 신속하게 시작하십시오.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 92870b32-e0d5-4cb4-9b88-81f88ca8ff64
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 6%
+source-wordcount: '500'
+ht-degree: 2%
 
 ---
 
 # Forms용 참조 자산 as a Cloud Service {#reference-themes}
 
-다음을 설치하여 참조 테마, 템플릿 및 양식 데이터 모델을 가져올 수 있습니다. [참조 자산 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). 적응형 Forms 개발을 신속하게 시작하고 가속화하는 데 도움이 됩니다. 다음을 사용할 수 있습니다. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) Forms as a Cloud Service 환경에 이 패키지를 배포합니다.
+다음을 설치하여 참조 테마, 템플릿 및 양식 데이터 모델(FDM)을 가져올 수 있습니다. [참조 자산 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). 적응형 Forms 개발을 신속하게 시작하고 가속화하는 데 도움이 됩니다. 다음을 사용할 수 있습니다. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) Forms as a Cloud Service 환경에 이 패키지를 배포합니다.
 패키지에 포함된 참조 자산은 다음과 같습니다.
 
 ## 테마 {#themes}

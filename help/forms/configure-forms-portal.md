@@ -3,9 +3,9 @@ title: Experience Manager Sites 페이지에서 Forms 포털을 만드는 방법
 description: AEM Sites 페이지에서 Forms 포털을 만들고 기본 핵심 구성 요소를 사용하는 방법을 알아봅니다.
 feature: Adaptive Forms, Foundation Components
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1785'
+source-wordcount: '1786'
 ht-degree: 4%
 
 ---
@@ -83,7 +83,7 @@ AEM Forms as a Cloud Service에서 즉시 사용 가능한 Forms 포털 구성 �
 
 ## 적응형 Forms을 위한 Azure 스토리지 구성 {#configure-azure-storage-adaptive-forms}
 
-[[!DNL Experience Manager Forms] 데이터 통합](data-integration.md) 다음을 제공합니다 [!DNL Azure] 양식을 와 통합하기 위한 스토리지 구성 [!DNL Azure] 스토리지 서비스. 양식 데이터 모델을 사용하여 와 상호 작용하는 적응형 Forms을 만들 수 있습니다 [!DNL Azure] 비즈니스 워크플로를 활성화하는 서버입니다.
+[[!DNL Experience Manager Forms] 데이터 통합](data-integration.md) 다음을 제공합니다 [!DNL Azure] 양식을 와 통합하기 위한 스토리지 구성 [!DNL Azure] 스토리지 서비스. 양식 데이터 모델(FDM)을 사용하여 상호 작용하는 적응형 Forms을 생성할 수 있습니다 [!DNL Azure] 비즈니스 워크플로를 활성화하는 서버입니다.
 
 ### 스토리지 구성 경로 {#create-azure-storage-configuration}
 

@@ -3,13 +3,13 @@ Title: How to send data to a SharePoint storage on submission of an Adaptive For
 Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list or Document library when you submit the form.
 keywords: 적응형 양식의 SharePoint 목록을 연결하는 방법, 적응형 양식의 SharePoint 문서 라이브러리를 연결하는 방법, SharePoint에 제출, SharePoint 문서 라이브러리 구성 만들기, 적응형 양식의 SharePoint 제출 액션을 사용, 적응형 양식을 Microsoft&reg; SharePoint 목록에 연결.
 feature: Adaptive Forms, Core Components
-source-git-commit: 8784c0bcd05eeae41a472faa5ecad03cbdd8a9b6
+exl-id: e925a750-5fb5-4950-afd3-78551eec985d
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1042'
 ht-degree: 34%
 
 ---
-
 
 # Microsoft® SharePoint에 적응형 양식 연결
 
@@ -93,7 +93,7 @@ AEM Forms을 Microsoft® Sharepoint Document Library 스토리지에 연결하�
 을(를) 사용하려면 [!UICONTROL SharePoint 목록에 제출] 적응형 양식에서 작업 제출:
 
 1. [SharePoint 목록 구성 만들기](#create-sharepoint-list-configuration): AEM Forms을 Microsoft® Sharepoint 목록 스토리지에 연결합니다.
-1. [적응형 양식에서 양식 데이터 모델을 사용하여 제출](#use-submit-using-fdm): 적응형 양식을 구성된 Microsoft® SharePoint에 연결합니다.
+1. [적응형 양식에서 FDM(양식 데이터 모델)을 사용하여 제출 사용](#use-submit-using-fdm): 적응형 양식을 구성된 Microsoft® SharePoint에 연결합니다.
 
 ### SharePoint 목록 구성 만들기 {#create-sharepoint-list-configuration}
 
@@ -117,24 +117,24 @@ AEM Forms을 Microsoft® Sharepoint 목록에 연결하려면:
 1. 선택 **[!UICONTROL 만들기]** Microsoft® SharePointList에 대한 클라우드 구성을 만듭니다.
 
 
-### 적응형 양식에서 양식 데이터 모델을 사용하여 제출 {#use-submit-using-fdm}
+### 적응형 양식에서 FDM(양식 데이터 모델)을 사용하여 제출 사용 {#use-submit-using-fdm}
 
 적응형 양식에서 생성된 SharePoint 목록 구성을 사용하여 데이터나 생성된 기록 문서를 SharePoint 목록에 저장할 수 있습니다. 적응형 양식의 SharePoint 목록을 다음으로 사용하려면 다음 단계를 수행하십시오.
 
-1. [Microsoft을 사용하여 양식 데이터 모델 만들기](/help/forms/create-form-data-models.md)
-1. [데이터를 검색하고 전송하도록 양식 데이터 모델 구성](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Microsoft을 사용하여 양식 데이터 모델(FDM) 만들기](/help/forms/create-form-data-models.md)
+1. [데이터를 검색하고 보내도록 양식 데이터 모델(FDM) 구성](/help/forms/work-with-form-data-model.md#configure-services)
 1. [적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md)
-1. [양식 데이터 모델을 사용하여 제출 작업 구성](/help/forms/using-form-data-model.md)
+1. [FDM(양식 데이터 모델)을 사용하여 제출 액션 구성](/help/forms/using-form-data-model.md)
 
 양식을 제출하면 데이터가 지정된 Microsoft® Sharepoint 목록 저장소에 저장됩니다.
 
 >[!NOTE]
 >
 > Microsoft® SharePoint 목록에서는 다음 열 유형이 지원되지 않습니다.
-* 이미지 열
-* 메타데이터 열
-* 개인 열
-* 외부 데이터 열
+> * 이미지 열
+> * 메타데이터 열
+> * 개인 열
+> * 외부 데이터 열
 
 ## 관련 문서
 

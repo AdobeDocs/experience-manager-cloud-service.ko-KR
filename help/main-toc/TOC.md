@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a5fc1f7e42edc8d41cac687a348dad7fc98742c1
+source-git-commit: 1b5dec707eb63a43a3e6240c785ed9ef00a3a3c4
 workflow-type: tm+mt
-source-wordcount: '4892'
+source-wordcount: '4901'
 ht-degree: 99%
 
 ---
@@ -619,7 +619,7 @@ ht-degree: 99%
          + [AEM Forms를 데이터베이스 또는 데이터 소스에 연결](/help/forms/data-integration.md)
          + [데이터 소스 구성](/help/forms/configure-data-sources.md)
          + [ [!DNL Microsoft Dynamics] OData 구성](/help/forms/ms-dynamics-odata-configuration.md)
-         + [OAuth 2.0 클라이언트 자격 증명 흐름을 사용하여 Salesforce 애플리케이션에 적응형 양식 연결](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+         + [OAuth 2.0 클라이언트 자격 증명 흐름을 사용하여 Salesforce 애플리케이션에 적응형 양식 연결](/help/forms/aem-forms-salesforce-integration.md)
          + [ [!DNL Azure] 스토리지 구성](/help/forms/configure-azure-storage.md)
          + [ [!DNL Microsoft Dynamics 365] 및 [!DNL Salesforce] Cloud Service 구성](/help/forms/configure-msdynamics-salesforce.md)
          + [양식 데이터 모델 만들기](/help/forms/create-form-data-models.md)
@@ -651,6 +651,7 @@ ht-degree: 99%
             + [핵심 구성 요소 기반 적응형 양식의 로케일 추가](/help/forms/supporting-new-language-localization-core-components.md)
             + [사용자 정의 함수 만들기 및 사용](/help/forms/create-and-use-custom-functions.md)
             + [핵심 구성 요소 기반 적응형 양식에 규칙 추가](/help/forms/rule-editor-core-components.md)
+            + [적응형 양식에 대한 JSON 스키마 디자인(핵심 구성 요소)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [적응형 양식에 버전 관리, 댓글 및 주석 추가](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [적응형 양식 비교](/help/forms/compare-forms.md)
       + 기초 구성 요소 {#authoring-adaptive-forms-foundation-components}

@@ -1,14 +1,14 @@
 ---
 title: 핵심 구성 요소를 기반으로 적응형 양식을 만드는 방법
-description: 을 사용하여 적응형 양식을 만드는 방법 알아보기 [!DNL Experience Manager Forms]. 적응형 Forms은 정보 수집 및 처리를 간소화하는 반응형 HTML 5 양식입니다. 양식 데이터 모델 및 XML 또는 JSON 스키마를 기반으로 적응형 양식을 만드는 방법에 대해 자세히 알아보십시오.
+description: 을 사용하여 적응형 양식을 만드는 방법 알아보기 [!DNL Experience Manager Forms]. 적응형 Forms은 정보 수집 및 처리를 간소화하는 반응형 HTML 5 양식입니다. FDM(양식 데이터 모델), XML 또는 JSON 스키마를 기반으로 적응형 양식을 만드는 방법에 대해 자세히 알아보십시오.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '2264'
-ht-degree: 63%
+source-wordcount: '2281'
+ht-degree: 55%
 
 ---
 
@@ -83,7 +83,7 @@ ht-degree: 63%
 
 1. (선택 사항) 데이터 탭에서 데이터 모델을 선택합니다.
 
-   * **양식 데이터 모델**: [양식 데이터 모델](data-integration.md)을 통해 서로 다른 데이터 소스의 엔티티와 서비스를 적응형 양식으로 통합할 수 있습니다. 생성 중인 적응형 양식에 여러 데이터 소스에서의 데이터 가져오기 및 쓰기 작업이 포함된 경우 양식 데이터 모델을 선택합니다.
+   * **양식 데이터 모델(FDM)**: A [양식 데이터 모델](data-integration.md) 서로 다른 데이터 소스의 엔티티와 서비스를 적응형 양식에 통합할 수 있습니다. 생성 중인 적응형 양식에 여러 데이터 소스에서 데이터를 가져오고 쓰는 작업이 포함된 경우 양식 데이터 모델(FDM)을 선택합니다.
 
    * **JSON 스키마**: [JSON 스키마](adaptive-form-json-schema-form-model.md) 핵심 구성 요소 기반의 적응형 양식을 통해 생성 또는 사용 중인 데이터의 구조를 나타내는 JSON 스키마를 연결함으로써 조직의 백엔드 시스템과 원활하게 통합할 수 있습니다. 이 연결을 통해 작성자는 스키마 요소를 사용하여 콘텐츠를 적응형 양식에 동적으로 추가할 수 있습니다. 작성 프로세스 중에 컨텐츠 브라우저의 데이터 모델 개체 탭에서 스키마 요소에 쉽게 액세스할 수 있으며, 모든 필드는 만든 적응형 양식에 자동으로 추가됩니다.
 
@@ -103,7 +103,7 @@ ht-degree: 63%
    * **[!UICONTROL 이름:]** 양식의 이름을 지정합니다. 이름이 지정된 노드가 저장소에서 만들어집니다. 제목 입력이 시작되면 이름 필드 값이 자동으로 생성됩니다. 제안 값을 변경할 수 있습니다. 이름 필드에는 영숫자 문자, 하이픈 및 밑줄만 포함될 수 있습니다. 잘못된 모든 입력은 하이픈으로 대체됩니다.
    * **[!UICONTROL 경로:]** 적응형 양식을 저장할 위치를 지정합니다. 적응형 양식을 `/content/dam/formsanddocuments`에서 바로 저장하거나 `/content/dam/formsanddocuments/adaptiveforms`와 같은 폴더를 만들어 적응형 양식을 저장할 수 있습니다. 경로에서 사용하기 전에 폴더를 만들어야 합니다. **[!UICONTROL 경로]** 필드는 폴더를 자동으로 만들지 않습니다.
 
-1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다. 적응형 양식을 만들고 적응형 양식 편집기에서 엽니다. 편집기에 템플릿에서 사용 가능한 콘텐츠가 표시됩니다.  적응형 양식 유형에 따라 연결된 <!--XFA form template, XML schema or --> JSON 스키마 또는 양식 데이터 모델에 존재하는 양식 요소가 사이드바에 있는 **[!UICONTROL 콘텐츠 브라우저]**&#x200B;의 **[!UICONTROL 데이터 모델 오브젝트]** 탭에 표시됩니다. 이러한 요소를 드래그 앤 드롭하여 적응형 양식을 작성할 수도 있습니다.
+1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다. 적응형 양식을 만들고 적응형 양식 편집기에서 엽니다. 편집기에 템플릿에서 사용 가능한 콘텐츠가 표시됩니다.  적응형 양식 유형에 따라 연관된 양식 요소에 있는 양식 요소 <!--XFA form template, XML schema or --> JSON 스키마 또는 양식 데이터 모델(FDM)이 **[!UICONTROL 데이터 모델 개체]** 의 탭 **[!UICONTROL 컨텐츠 브라우저]** 를 클릭합니다. 이러한 요소를 드래그 앤 드롭하여 적응형 양식을 작성할 수도 있습니다.
 
 이제 을(를) 드래그 앤 드롭할 수 있습니다. [적응형 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) Forms 을 클릭하여 양식을 디자인하고 만들 수 있습니다. 다음을 방문하실 수도 있습니다. [https://aemcomponents.dev/](https://aemcomponents.dev/) 사용 가능한 핵심 구성 요소 보기
 
@@ -140,26 +140,26 @@ ht-degree: 63%
 
    * 사용자 정의 메시지 또는 감사 메시지를 구성하려면 제출 시 옵션을 선택합니다. **[!UICONTROL 메시지 표시]** 옵션을 선택한 다음 **[!UICONTROL 메시지 콘텐츠]** 상자. 서식 있는 텍스트 상자입니다. 전체 화면 옵션을 사용하여 사용 가능한 모든 서식 있는 텍스트 항목을 볼 수 있습니다.
 
-## 적응형 양식에 대한 스키마 또는 양식 데이터 모델 구성{#configure-schema-or-data-model-for-form}
+## 적응형 양식에 대한 스키마 또는 양식 데이터 모델(FDM) 구성{#configure-schema-or-data-model-for-form}
 
-양식 데이터 모델을 사용하면 양식을 데이터 소스에 연결하여 사용자 작업에 따라 데이터를 보내고 받을 수 있습니다. 양식을 JSON 스키마에 연결하여 미리 정의된 형식으로 제출된 데이터를 받을 수도 있습니다. 요구 사항에 따라 양식을 JSON 스키마 또는 양식 데이터 모델에 연결합니다.
+FDM(양식 데이터 모델)을 사용하여 사용자 작업에 따라 데이터를 보내고 받기 위해 양식을 데이터 소스에 연결할 수 있습니다. 양식을 JSON 스키마에 연결하여 미리 정의된 형식으로 제출된 데이터를 받을 수도 있습니다. 요구 사항에 따라 양식을 JSON 스키마 또는 양식 데이터 모델(FDM)에 연결합니다.
 
 * [JSON 스키마 만들기 및 환경에 업로드](/help/forms/adaptive-form-json-schema-form-model.md)
-* [양식 데이터 모델 만들기](/help/forms/create-form-data-models.md)
+* [양식 데이터 모델(FDM) 만들기](/help/forms/create-form-data-models.md)
 
-### 양식에 대한 JSON 스키마 또는 양식 데이터 모델 구성
+### 양식에 대한 JSON 스키마 또는 양식 데이터 모델(FDM) 구성
 
-양식에 대해 JSON 스키마 또는 양식 데이터 모델을 구성하려면 다음 작업을 수행하십시오.
+양식에 대해 JSON 스키마 또는 양식 데이터 모델(FDM)을 구성하려면 다음을 수행합니다.
 
 1. 콘텐츠 브라우저를 열고 적응형 양식의 **[!UICONTROL 안내서 컨테이너]** 구성 요소를 선택합니다.
 1. 안내서 컨테이너 속성 ![안내서 속성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭합니다. 적응형 양식 컨테이너 대화 상자가 열립니다.
 1. 를 엽니다. **[!UICONTROL 데이터 모델]** 탭.
 
-   ![렌치 아이콘을 클릭하여 적응형 양식 컨테이너 대화 상자를 열고 JSON 스키마 또는 양식 데이터 모델을 구성합니다.](/help/forms/assets/adaptive-forms-select-form-data-model-or-json-schema.png)
+   ![렌치 아이콘을 클릭하여 적응형 양식 컨테이너 대화 상자를 열고 JSON 스키마 또는 양식 데이터 모델(FDM)을 구성합니다](/help/forms/assets/adaptive-forms-select-form-data-model-or-json-schema.png)
 
-1. 요구 사항에 따라 JSON 스키마 또는 양식 데이터 모델을 선택하고 구성합니다.
+1. 요구 사항에 따라 JSON 스키마 또는 양식 데이터 모델(FDM)을 선택하고 구성합니다.
 
-   * 다음을 선택하면 **[!UICONTROL 양식 모델]** 옵션, 사용 **[!UICONTROL 양식 데이터 모델 선택]** 미리 구성된 양식 데이터 모델을 선택하는 옵션입니다.
+   * 다음을 선택하면 **[!UICONTROL 양식 모델]** 옵션, 사용 **[!UICONTROL 양식 데이터 모델 선택]** 사전 구성된 양식 데이터 모델(FDM)을 선택하는 옵션입니다.
    * 다음을 선택하면 **[!UICONTROL 스키마]** 옵션, 사용 **[!UICONTROL 스키마]** 양식에 대한 JSON 스키마를 선택하는 옵션입니다.
 
 1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
@@ -179,14 +179,14 @@ ht-degree: 63%
 1. 안내서 컨테이너 속성 ![안내서 속성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭합니다. 적응형 양식 컨테이너 대화 상자가 열립니다.
 1. 적응형 양식 컨테이너 속성을 클릭합니다 ![적응형 양식 컨테이너 속성](/help/forms/assets/configure-icon.svg) 아이콘. 데이터 모델을 구성하는 적응형 양식 컨테이너 대화 상자가 열립니다.
    ![렌치 아이콘을 클릭하여 적응형 양식 컨테이너 대화 상자를 열고 리디렉션 페이지 또는 감사 메시지를 구성합니다](/help/forms/assets/adaptive-forms-container-prefill-service.png)
-1. 양식 데이터 모델을 선택합니다. 를 엽니다. **[!UICONTROL 기본]** 탭. 미리 채우기 서비스에서 다음을 선택합니다. **[!UICONTROL 양식 데이터 모델 미리 채우기 서비스]**.
+1. 양식 데이터 모델(FDM)을 선택합니다. 를 엽니다. **[!UICONTROL 기본]** 탭. 미리 채우기 서비스에서 다음을 선택합니다. **[!UICONTROL 양식 데이터 모델 미리 채우기 서비스]**.
 1. 클릭 **[!UICONTROL 완료]**. 이제 적응형 양식이 양식 데이터 모델 미리 채우기를 사용하도록 구성되었습니다. 이제 다음을 사용할 수 있습니다. [규칙 편집기](rule-editor.md) 을 클릭하여 양식의 필드를 미리 채우는 규칙을 만듭니다.
 
 ## 적응형 양식의 양식 모델 속성 편집 {#edit-form-model}
 
 1. 적응형 양식을 선택하고 ![페이지 정보](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL 속성 열기]**. 양식 속성 페이지가 열립니다.
 
-1. **[!UICONTROL 양식 모델]** 탭으로 이동하고 양식 모델을 선택합니다. 적응형 양식에 양식 모델이 없는 경우 JSON 스키마 또는 양식 데이터 모델 중 하나를 자유롭게 선택할 수 있습니다. 반면에 적응형 양식이 이미 양식 모델을 기반으로 하는 경우 같은 유형의 다른 양식 모델로 전환할 수 있는 옵션이 있습니다. 예를 들어 양식이 JSON 스키마를 사용하는 경우 다른 JSON 스키마로 쉽게 전환할 수 있고, 마찬가지로 양식이 양식 데이터 모델을 사용하는 경우 다른 양식 데이터 모델로 전환할 수 있습니다.
+1. **[!UICONTROL 양식 모델]** 탭으로 이동하고 양식 모델을 선택합니다. 적응형 양식에 양식 모델이 없는 경우 JSON 스키마 또는 양식 데이터 모델(FDM)을 선택할 수 있습니다. 반면에 적응형 양식이 이미 양식 모델을 기반으로 하는 경우 같은 유형의 다른 양식 모델로 전환할 수 있는 옵션이 있습니다. 예를 들어 양식이 JSON 스키마를 사용하는 경우 다른 JSON 스키마로 쉽게 전환할 수 있으며, 마찬가지로 양식이 양식 데이터 모델(FDM)을 사용하는 경우 다른 양식 데이터 모델(FDM)로 전환할 수 있습니다.
 
 1. 선택 **[!UICONTROL 저장]** 속성을 저장합니다.
 

@@ -5,10 +5,11 @@ contentOwner: khsingh
 role: User
 feature: Adaptive Forms, FAQ
 index: false
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: ht
-source-wordcount: '986'
-ht-degree: 100%
+exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '992'
+ht-degree: 89%
 
 ---
 
@@ -75,15 +76,15 @@ Custom parameters are planned for an upcoming release. -->
 * **적응형 양식에 차트를 추가할 수 있습니까?**
 예. 적응형 양식에 차트를 추가할 수 있습니다. 적응형 양식은 차트 구성 요소를 제공합니다. 이를 사용하여 적응형 양식에 차트를 추가할 수 있습니다.
 
-* **양식 데이터 모델을 관계형 데이터베이스 모델에 연결할 수 있습니까?**
-양식 데이터 모델을 [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services] 및 Experience Manager 사용자 프로필에 데이터 소스로 연결할 수 있습니다. 양식 데이터 모델을 관계형 데이터베이스와 연결하는 기능은 지원되지 않습니다.
+* **FDM(양식 데이터 모델)을 관계형 데이터베이스 모델에 연결할 수 있습니까?**
+FDM(양식 데이터 모델)을 [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services]및 Experience Manager 사용자 프로필을 데이터 소스로 사용하는 옵션이 포함되어 있습니다. FDM(양식 데이터 모델)을 관계형 데이터베이스와 연결할 수 없습니다.
 
-* **인증을 위해 양식 데이터 모델에 대해 사용자 정의 인증서를 사용할 수 있습니까?**
-양식 데이터 모델은 인증을 위해 사용자 정의 인증서를 사용하는 방법을 제공하지 않습니다. 따라서 x509 및 양방향 SSL과 같은 사용자 정의 인증서는 지원되지 않습니다.
+* **인증에 FDM(양식 데이터 모델)을 사용하는 사용자 정의 인증서를 사용할 수 있습니까?**
+FDM(양식 데이터 모델)은 인증에 사용자 정의 인증서를 사용하는 방법을 제공하지 않습니다. 따라서 x509 및 양방향 SSL과 같은 사용자 정의 인증서는 지원되지 않습니다.
 
 * **Forms Portal 제출 액션 적응형 양식을 사용할 수 있습니까?**
 
-  [REST 엔드포인트에 제출](configuring-submit-actions.md#submit-to-rest-endpoint), [이메일 전송](configuring-submit-actions.md#send-email), [양식 데이터 모델을 사용하여 제출](configuring-submit-actions.md#submit-using-form-data-model) 및 [AEM Workflow 호출](configuring-submit-actions.md#invoke-an-aem-workflow) 제출 액션을 사용하도록 기존 적응형 양식을 수정할 수 있습니다. Forms 포털 및 Forms 포털 제출 액션은 아직 사용할 수 없습니다. 이들 기능의 가용성에 대한 정보는 월별 릴리스 정보를 참고하십시오.
+  기존 적응형 Forms을 수정하여 사용할 수 있습니다 [REST 끝점에 제출](configuring-submit-actions.md#submit-to-rest-endpoint), [이메일 보내기](configuring-submit-actions.md#send-email), [양식 데이터 모델(FDM)을 사용하여 제출](configuring-submit-actions.md#submit-using-form-data-model), 및 [AEM 워크플로우 호출](configuring-submit-actions.md#invoke-an-aem-workflow) 작업을 제출합니다. Forms 포털 및 Forms 포털 제출 액션은 아직 사용할 수 없습니다. 이들 기능의 가용성에 대한 정보는 월별 릴리스 정보를 참고하십시오.
 
 * **[!DNL AEM Forms] as a Cloud Service와 함께 [!DNL AEM Forms] 앱을 사용할 수 있습니까?**
 
@@ -123,5 +124,3 @@ Experience Manager 6.5 Forms 환경에서 JSON 스키마를 기반으로 적응�
     A sample Service Credential JSON file fields mapped to Adobe Experience Manager connector for Microsoft Power Automate.
 
     -->
-
-

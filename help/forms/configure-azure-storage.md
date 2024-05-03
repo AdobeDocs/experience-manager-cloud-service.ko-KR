@@ -4,9 +4,9 @@ description: 양식을 Azure 스토리지 서버와 통합하는 방법을 알�
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '591'
 ht-degree: 1%
 
 ---
@@ -16,10 +16,10 @@ ht-degree: 1%
 
 ![데이터 통합](assets/data-integeration.png)
 
-[[!DNL Experience Manager Forms] 데이터 통합](data-integration.md) 는 을(를) 제공합니다 [!DNL Azure] 양식을 와 통합하기 위한 스토리지 구성 [!DNL Azure] 스토리지 서비스. 양식 데이터 모델을 사용하여 와 상호 작용하는 적응형 Forms을 만들 수 있습니다 [!DNL Azure] 비즈니스 워크플로를 활성화하는 서버입니다. 예:
+[[!DNL Experience Manager Forms] 데이터 통합](data-integration.md) 는 을(를) 제공합니다 [!DNL Azure] 양식을 와 통합하기 위한 스토리지 구성 [!DNL Azure] 스토리지 서비스. 양식 데이터 모델(FDM)을 사용하여 상호 작용하는 적응형 Forms을 생성할 수 있습니다 [!DNL Azure] 비즈니스 워크플로를 활성화하는 서버입니다. 예:
 
 * 에 데이터 쓰기 [!DNL Azure] 을 참조하십시오.
-* 데이터 쓰기 [!DNL Azure] 를 통해 양식 데이터 모델에 정의된 사용자 지정 엔티티 및 그 반대로
+* 데이터 쓰기 [!DNL Azure] 를 통해 양식 데이터 모델(FDM)에 정의된 사용자 정의 엔티티와 반대로
 * 쿼리 [!DNL Azure] 서버입니다. 또한 적응형 Forms을 미리 채웁니다.
 * 데이터 읽기 [!DNL Azure] 서버입니다.
 
@@ -35,21 +35,21 @@ ht-degree: 1%
 
 ## 양식 데이터 모델 만들기 {#create-azure-form-data-model}
 
-를 만든 후 [!DNL Azure] 스토리지 구성, 다음과 같은 작업을 수행할 수 있습니다. [양식 데이터 모델 만들기](create-form-data-models.md). 다음 항목이 포함된 폴더 지정 [!DNL Azure] 에서 구성 **[!UICONTROL 데이터 소스 구성]** 양식 데이터 모델을 만드는 동안 필드가 채워집니다. 그런 다음 지정된 폴더 이름에 있는 구성 목록에서 구성을 선택할 수 있습니다.
+를 만든 후 [!DNL Azure] 스토리지 구성, 다음과 같은 작업을 수행할 수 있습니다. [양식 데이터 모델 만들기](create-form-data-models.md). 다음 항목이 포함된 폴더 지정 [!DNL Azure] 에서 구성 **[!UICONTROL 데이터 소스 구성]** 필드는 양식 데이터 모델(FDM)을 만드는 동안 표시됩니다. 그런 다음 지정된 폴더 이름에 있는 구성 목록에서 구성을 선택할 수 있습니다.
 
 ### 추가 [!DNL Azure] 양식 데이터 모델에 대한 서비스 {#add-azure-services}
 
-양식 데이터 모델 및 데이터 모델 개체를 만든 후 [!DNL Azure] 서비스를 양식 데이터 모델에 추가합니다.
+양식 데이터 모델(FDM) 및 데이터 모델 객체를 생성한 후 추가할 수 있습니다 [!DNL Azure] 를 양식 데이터 모델(FDM)에 추가합니다.
 
 추가하려면 [!DNL Azure] 서비스:
 
-1. 편집 모드에서 **[!UICONTROL 서비스]** 왼쪽 창에서 섹션을 선택하고 **[!UICONTROL 선택 항목 추가]**. 선택한 서비스가 **[!UICONTROL 서비스]** 양식 데이터 모델 탭
+1. 편집 모드에서 **[!UICONTROL 서비스]** 왼쪽 창에서 섹션을 선택하고 **[!UICONTROL 선택 항목 추가]**. 선택한 서비스가 **[!UICONTROL 서비스]** 양식 데이터 모델(FDM)의 탭
 
    ![선택한 서비스 추가](assets/select-services.png)
 
 1. 다음에서 **[!UICONTROL 서비스]** 탭에서 서비스를 선택하고 **[!UICONTROL 속성 편집]**. 서비스를 기반으로 서비스에 대한 입력 또는 출력 모델 개체를 정의합니다.
 
-1. 선택 **[!UICONTROL 저장]** 을 클릭하여 양식 데이터 모델을 저장합니다.
+1. 선택 **[!UICONTROL 저장]** 을 눌러 양식 데이터 모델(FDM)을 저장합니다.
 
    다음 표에서는 사용 가능한 [!DNL Azure] 서비스:
 
@@ -96,7 +96,7 @@ ht-degree: 1%
 
 1. 다음에서 **[!UICONTROL 모델]** 탭에서 데이터 모델 개체 속성을 선택하고 **[!UICONTROL 속성 편집]**.
 1. 전환 **[!UICONTROL 검색 키]** 옵션을 켜짐 상태로 전환합니다. 이 옵션은 기본 데이터 유형에만 사용할 수 있습니다.
-1. 선택 **[!UICONTROL 완료]** 다음을 선택합니다. **[!UICONTROL 저장]** 을 클릭하여 양식 데이터 모델을 저장합니다.
+1. 선택 **[!UICONTROL 완료]** 다음을 선택합니다. **[!UICONTROL 저장]** 을 눌러 양식 데이터 모델(FDM)을 저장합니다.
 
 데이터 모델 개체 속성을 검색 키로 정의한 후 해시 값은 Azure 인덱스 태그에 저장되고 Base64 인코딩 값은 Azure 메타데이터에 저장됩니다.
 
