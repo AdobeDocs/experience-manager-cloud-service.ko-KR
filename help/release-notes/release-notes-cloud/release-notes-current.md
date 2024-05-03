@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 00d91be618cd7ce1fb9e78115fbe3d431b20cd34
+source-git-commit: ee16d3a0fe1fc93c215d31f7dea0e9c21e051350
 workflow-type: tm+mt
-source-wordcount: '1965'
-ht-degree: 80%
+source-wordcount: '1963'
+ht-degree: 83%
 
 ---
 
@@ -63,15 +63,15 @@ Have a look at the April 2024 Release Overview video for a summary of the featur
 
 **상황별 검색**
 
-이제 다음 작업도 수행할 수 있습니다 [텍스트 프롬프트를 정의하여 저장소에서 사용할 수 있는 에셋을 검색합니다.](/help/assets/search-assets-view.md#contextual-search). Experience Manager Assets은 이러한 텍스트 프롬프트를 검색 필터로 자동으로 변환하고 검색 결과를 표시합니다. 필터 창을 사용하여 자동 필터를 보고 수정하여 검색 결과의 범위를 좁힐 수 있습니다.
+이제 다음 작업도 수행할 수 있습니다 [텍스트 프롬프트를 정의하여 저장소에서 사용할 수 있는 에셋을 검색합니다.](/help/assets/search-assets-view.md#contextual-search). Experience Manager Assets는 해당 텍스트 프롬프트를 검색 필터로 자동 변환하고 검색 결과를 표시합니다. 필터 창을 사용하여 자동 필터를 확인하여 수정하고 검색 결과의 범위를 더 좁힐 수 있습니다.
 
 ![상황별 검색](/help/assets/assets/contextual-search-text-prompt1.png)
 
-**빠른 비디오 작업**
+**Express 비디오 빠른 작업**
 
-이제 Experience Manager Assets에 다음이 포함됩니다 [Adobe Express을 기반으로 하는 쉽고 직관적인 비디오 편집 도구](/help/assets/edit-videos-assets-view.md) 컨텐츠 재사용 횟수를 늘리고 컨텐츠 속도를 가속화하십시오. 편집 옵션에는 트리밍, 자르기, 비디오 크기 조정 및 MP4를 GIF 파일로 변환하는 옵션이 있습니다.
+이제 Experience Manager Assets에 다음이 포함됩니다 [Adobe Express을 기반으로 하는 쉽고 직관적인 비디오 편집 도구](/help/assets/edit-videos-assets-view.md) 컨텐츠 재사용 횟수를 늘리고 컨텐츠 속도를 가속화하십시오. 편집 옵션에는 비디오 트리밍, 자르기, 크기 조정 및 MP4를 GIF 파일로 변환 등이 포함됩니다.
 
-![Adobe Express으로 비디오 자르기](/help/assets/assets/adobe-express-crop-video.png)
+![Adobe Express로 비디오 자르기](/help/assets/assets/adobe-express-crop-video.png)
 
 **동적 변환**
 
@@ -79,7 +79,7 @@ Have a look at the April 2024 Release Overview video for a summary of the featur
 
 ![동적 변환](/help/assets/assets/preset_smart_crop.png)
 
-**에셋 및 폴더에 대한 내부 이름 바꾸기**
+**자산 및 폴더의 바로 이름 바꾸기**
 
 이제 Experience Manager Assets은 다음을 제공하여 간소화된 사용자 경험을 제공합니다. [한 번의 클릭으로 에셋 또는 폴더의 이름을 변경하는 기능](/help/assets/manage-organize-assets-view.md).
 
@@ -97,7 +97,7 @@ Have a look at the April 2024 Release Overview video for a summary of the featur
 
 -->
 
-### AEM Forms 프리릴리스의 새로운 기능 {#forms-pre-release}
+### AEM Forms의 새로운 기능 {#forms-new-features}
 
 * **핵심 구성 요소 기반 적응형 양식을 위한 향상된 시각적 규칙 편집기**: 이 릴리스에서는 핵심 구성 요소 기반 적응형 양식을 위한 시각적 규칙 편집기가 대폭 업그레이드되었습니다. 이 릴리스에서는 핵심 구성 요소 기반 적응형 양식을 위한 시각적 규칙 편집기가 대폭 업그레이드되었습니다. 이 업데이트는 사용자 정의 함수와의 상호 작용을 간소화하여 더욱 강력하고 효율적인 양식을 빌드할 수 있도록 하는 데 중점을 둡니다.
 
