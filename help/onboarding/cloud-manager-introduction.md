@@ -2,10 +2,10 @@
 title: Cloud Manager 소개
 description: Cloud Manager가 프로그램, 환경 및 파이프라인을 통해 AEM 프로젝트를 지원하는 방법에 대해 알아봅니다.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
-workflow-type: ht
-source-wordcount: '860'
-ht-degree: 100%
+source-git-commit: 6181b066742357169b67f605ac3970685537bb5e
+workflow-type: tm+mt
+source-wordcount: '864'
+ht-degree: 97%
 
 ---
 
@@ -58,6 +58,10 @@ Cloud Manager는 AEM as a Cloud Service의 필수 구성 요소이며 팀의 단
 >[!NOTE]
 >
 >한 사용자에게 여러 역할을 할당할 수 있습니다. 예를 들어 사용자에게 **비즈니스 소유자** 및 **배포 관리자** 역할을 모두 할당하면 사용자에게 이러한 권한의 합계가 제공됩니다.
+
+>[!TIP]
+>
+>구성 가능한 권한이 있는 사용자 지정 권한 프로필도 사용할 수 있습니다. 문서를 참조하십시오. [사용자 지정 권한](/help/implementing/cloud-manager/custom-permissions.md) 을 참조하십시오.
 
 ## Cloud Manager 프로그램 {#cloud-manager-programs}
 
