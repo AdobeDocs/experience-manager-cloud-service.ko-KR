@@ -1,9 +1,9 @@
 ---
 title: AEM 및 Dynamic Media에 대한 빠른 게시
 description: 빠른 게시는 새 UI 또는 에셋 보기의 기능입니다. 이 기능을 사용하면 사용자가 AEM 및 Dynamic Media에 동시에 또는 개별적으로 빠르게 게시 할 수 있습니다. 즉, 에셋 및 폴더를 선택한 후 사용자가 Dynamic Media에 게시하거나 AEM에 게시하도록 선택할 수 있습니다. 빠른 게시 기능을 사용하면 Dynamic Media 및 AEM에 에셋 및 폴더를 게시하기 위한 새 UI가 제공됩니다.
-source-git-commit: a1069ec278143665c1e17ea1a482589763dd153f
+source-git-commit: f3b600fc3d9c519158b6b90bd9a9f881724934de
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1216'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # AEM 및 Dynamic Media에 자산 게시{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
-Experience Manager Assets을 사용하면 에셋 보기를 사용하여 에셋을 Experience Manager 및 Dynamic Media에 빠르게 게시할 수 있습니다. 이렇게 하면 자산을 관리한 다음 를 사용하여 게시할 수 있습니다. [관리자 보기로 전환하지 않은 자산 보기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/overview#persona-based-experiences).
+Experience Manager Assets을 사용하면 에셋 보기를 사용하여 에셋을 Experience Manager 및 Dynamic Media에 빠르게 게시할 수 있습니다. 이렇게 하면 자산을 관리한 다음 를 사용하여 게시할 수 있습니다. [관리자 보기로 전환하지 않은 자산 보기](/help/assets/overview.md##persona-based-experiences).
 
 Experience Manager Assets 보기는 자산을 AEM나 Dynamic Media 또는 두 가지 모두에 동시에 게시할 수 있는 유연성을 제공합니다. 에셋을 업로드하고, 탐색하고, 검색하는 동안 에셋을 게시할 수 있습니다. 자산을 게시하는 이러한 모든 옵션은 이 문서 내에 자세히 설명되어 있습니다.
 
@@ -21,8 +21,8 @@ AEM 및 Dynamic Media에 대한 게시 옵션을 보려면 다음 설정을 구�
 
 * Dynamic Media에 대한 게시 옵션을 보려면 관리 보기를 사용하여 다음 설정을 구성합니다.
 
-   * [Dynamic Media 클라우드 구성 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm#configuring-dynamic-media-cloud-services).
-   * 폴더 수준에서 Dynamic Media 게시 모드를 설정합니다. Dynamic Media 클라우드 구성을 만드는 동안 이러한 설정을 구성할 수도 있습니다. 폴더 수준에서 이러한 설정을 덮어쓰려면 다음을 참조하십시오. [Dynamic Media의 폴더 수준에서 Selected Publish 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing).
+   * [Dynamic Media 클라우드 구성 만들기](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
+   * 폴더 수준에서 Dynamic Media 게시 모드를 설정합니다. Dynamic Media 클라우드 구성을 만드는 동안 이러한 설정을 구성할 수도 있습니다. 폴더 수준에서 이러한 설정을 덮어쓰려면 다음을 참조하십시오. [Dynamic Media의 폴더 수준에서 Selected Publish 구성](/help/assets/dynamic-media/selective-publishing.md).
 
 * AEM에 대한 게시 옵션을 보려면 환경에 대해 AEM 게시 끝점을 구성해야 합니다.
 
@@ -99,7 +99,7 @@ Dynamic Media 게시 모드가 로 설정된 폴더는 게시할 수 없습니�
 
 에셋 또는 폴더에 대한 게시 상태를 확인하려면:
 
-1. 클릭 **에셋** 다음에서 **Assets 관리** 왼쪽 창에서 사용할 수 있는 섹션입니다.
+1. 클릭 **[!UICONTROL 에셋]** 다음에서 **[!UICONTROL Assets 관리]** 왼쪽 창에서 사용할 수 있는 섹션입니다.
 2. 보기 전환기를 사용하여 목록 보기로 전환합니다. AEM Publish, Dynamic Media Publish, 제목, 크기, 차원 등과 같은 자산 속성을 볼 수 있습니다.\
    에셋 또는 폴더가 게시되지 않은 경우, 상태 **AEM 게시** 및 **Dynamic Media 게시** 열이 다음으로 표시됨 **해당 사항 없음**
    ![게시 상태 확인1](/help/assets/assets/check-publish-status1.png)
