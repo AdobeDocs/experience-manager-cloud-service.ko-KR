@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6f78b43e857ca496465c315e8812bb67aff8c627
+source-git-commit: 6c56f753d2a32de6fe11fd47843cee5bcb8cac4e
 workflow-type: tm+mt
-source-wordcount: '4907'
+source-wordcount: '4915'
 ht-degree: 99%
 
 ---
@@ -851,10 +851,10 @@ ht-degree: 99%
          + [규칙을 사용하여 양식에 동적 비헤이비어 추가](/help/edge/docs/forms/rules-forms.md)
          + [양식 제출 후 사용자 정의 감사 메시지 표시](/help/edge/docs/forms/thank-you-page-form.md)
       + 기능 {#advanced-features-edge-delivery-services-forms}
-         + [양식 조각](/help/edge/docs/forms/form-fragments.md)
+         + [양식 단편 사용](/help/edge/docs/forms/form-fragments.md)
          + [양식에 반복 가능한 섹션 추가&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
-         + [번역](/help/edge/docs/forms/translate-forms.md)
-         + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
+         + [양식 번역](/help/edge/docs/forms/translate-forms.md)
+         + [reCAPTCHA를 사용하여 양식 보호](/help/edge/docs/forms/recaptacha-forms.md)
          + [사용자 정의 구성 요소](/help/edge/docs/forms/custom-components-forms.md)
          + [양식에 대한 실제 사용 모니터링](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
       + 참조 {#forms-references}

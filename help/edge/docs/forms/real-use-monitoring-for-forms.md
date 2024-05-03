@@ -1,19 +1,19 @@
 ---
-title: AEM Forms as a Cloud Service Edge Delivery Services에 대한 실제 사용 모니터링
-description: AEM Forms as a Cloud Service용 Edge Delivery Services에 대한 실제 사용 모니터링에는 양식과의 사용자 상호 작용에 대한 지속적인 추적 및 분석이 포함됩니다.
+title: AEM Forms as a Cloud Service Edge Delivery Services에 대한 RUM(Real Use Monitoring)
+description: AEM Forms as a Cloud Service용 Edge Delivery Services에 대한 RUM(Real Use Monitoring)에는 양식과의 사용자 상호 작용에 대한 지속적인 추적 및 분석이 포함됩니다.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
-source-git-commit: 6f78b43e857ca496465c315e8812bb67aff8c627
+source-git-commit: 6c56f753d2a32de6fe11fd47843cee5bcb8cac4e
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '792'
 ht-degree: 45%
 
 ---
 
 
-# AEM Forms as a Cloud Service Edge Delivery Services에 대한 실제 사용 모니터링
+# AEM Forms as a Cloud Service Edge Delivery Services에 대한 RUM(Real Use Monitoring)
 
 RUM(Real Use Monitoring)은 방문자가 AEM(Adobe Experience Manager) 웹 사이트와 상호 작용하는 방법에 대한 실제 통찰력을 얻을 수 있도록 해줍니다. 이 기본 제공 도구는 사용자 행동을 이해하고, 성능 문제를 진단하고, 웹 사이트 실험의 효과를 측정하는 데 유용한 데이터를 제공합니다. RUM은 실제 사용 상호 작용을 캡처하여 합성 테스트를 넘어 사이트 성능에 대한 보다 정확한 그림을 제공합니다.
 
@@ -75,3 +75,7 @@ AEM Forms as a Cloud Service Edge Delivery Services 모니터링 대시보드에
 * 양식 로드 속도를 저하시키는 기술 문제를 해결하십시오.
 
 이러한 영역에 초점을 맞춰 사용하기 쉬운 양식을 만들고 방문자가 이를 완료하도록 유도할 수 있으므로 궁극적으로 전환율이 높아집니다.
+
+## 추가 참조
+
+{{see-more-forms-eds}}
