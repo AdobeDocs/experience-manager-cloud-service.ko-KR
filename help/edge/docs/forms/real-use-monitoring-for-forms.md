@@ -2,11 +2,13 @@
 title: AEM Forms as a Cloud Service Edge Delivery Services에 대한 실제 사용 모니터링
 description: AEM Forms as a Cloud Service용 Edge Delivery Services에 대한 실제 사용 모니터링에는 양식과의 사용자 상호 작용에 대한 지속적인 추적 및 분석이 포함됩니다.
 feature: Edge Delivery Services
+hide: true
+hidefromtoc: true
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
-source-git-commit: 71e3a268c5033f0a7f0d054a9f4c1fe599cd6b83
+source-git-commit: 6f78b43e857ca496465c315e8812bb67aff8c627
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 44%
+source-wordcount: '787'
+ht-degree: 45%
 
 ---
 
@@ -30,15 +32,13 @@ AEM Forms as a Cloud Service Edge Delivery Services 모니터링 대시보드에
 
 * **URL**: URL은 사용자 사이트 또는 도메인에 따라 다릅니다. 사용자는 사이트 또는 도메인을 필터링하여 요구 사항에 따라 대시보드를 볼 수 있습니다.
 
-* **도메인 키**: 사용자가 도메인 키를 수동으로 생성합니다.
-
-도메인 키에 대한 지원은 [인증](https://www.aem.live/developer/rum#authentication) 설명서를 참조하십시오.
+* **도메인 키**: 사용자가 도메인 키를 수동으로 생성합니다. 양식에 대한 도메인 키를 얻으려면 Adobe 담당자에게 문의하십시오.
 
 ### AEM Forms as a Cloud Service Edge Delivery Services 대시보드 모니터링
 
 로그인 화면에 URL 및 도메인 키를 입력하면 AEM Forms as a Cloud Service에 대한 Edge Delivery Services 모니터링 대시보드에 액세스할 수 있습니다.
 
-아래 그림은 AEM Forms as a Cloud Service Edge Delivery Services용 RUM 대시보드를 보여줍니다.
+아래 그림은 AEM Forms as a Cloud Service용 Edge Delivery Services 대시보드를 보여줍니다.
 
 ![RUM 양식 대시보드](/help/edge/assets/rum-forms-dashboard.png)
 
