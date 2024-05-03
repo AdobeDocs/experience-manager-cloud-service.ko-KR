@@ -1,9 +1,9 @@
 ---
 title: AEM 및 Dynamic Media에 대한 빠른 게시
-description: 빠른 게시는 새 UI 또는 에셋 보기의 기능입니다. 이 기능을 사용하면 사용자가 AEM 및 Dynamic Media에 동시에 또는 개별적으로 빠르게 게시 할 수 있습니다. 즉, 에셋 및 폴더를 선택한 후 사용자가 Dynamic Media에 게시하거나 AEM에 게시하도록 선택할 수 있습니다. 빠른 게시 기능을 사용하면 Dynamic Media 및 AEM에 에셋 및 폴더를 게시하기 위한 새 UI가 제공됩니다.
-source-git-commit: f3b600fc3d9c519158b6b90bd9a9f881724934de
+description: 에셋 보기의 빠른 게시를 사용하면 에셋을 AEM 및 Dynamic Media에 동시에 또는 별도로 게시할 수 있습니다. 에셋 및 폴더를 선택하고 Dynamic Media 또는 AEM에 게시하도록 선택할 수 있습니다.
+source-git-commit: d80d794d739a476a937a8e71d114b1e255103b67
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1182'
 ht-degree: 0%
 
 ---
