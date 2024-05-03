@@ -1,13 +1,13 @@
 ---
 title: AEM 및 Dynamic Media에 대한 빠른 게시
 description: 에셋 보기의 빠른 게시를 사용하면 에셋을 AEM 및 Dynamic Media에 동시에 또는 별도로 게시할 수 있습니다. 에셋 및 폴더를 선택하고 Dynamic Media 또는 AEM에 게시하도록 선택할 수 있습니다.
-source-git-commit: d80d794d739a476a937a8e71d114b1e255103b67
+exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
+source-git-commit: 0891d58e10e8be746c0be5f55d554174567fcd64
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1188'
 ht-degree: 0%
 
 ---
-
 
 # AEM 및 Dynamic Media에 자산 게시{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
@@ -124,4 +124,5 @@ Dynamic Media 게시 모드가 로 설정된 폴더는 게시할 수 없습니�
 * 에셋 수준에서 Dynamic Media URL을 복사하거나 붙여넣는 기능(에셋이 Dynamic Media에 게시되는 경우).
 * AEM에 게시하는 동안 참조(에셋, 태그 등)를 게시하는 기능.
 * 폴더 수준에서 Dynamic Media 동기화 상태를 덮어쓰는 기능.
-* 폴더 수준에서 Dynamic Media 게시 모드를 덮어쓰는 기능.
+* 폴더 수준에서 Dynamic Media 게시 모드를 덮어쓰는 기능
+* 게시 관리는 아직 지원되지 않습니다.
