@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 695389430e3be4cef107aefad44fd7453cc9d36d
+source-git-commit: 4a534f4335376673c362ef91a877e67a523be560
 workflow-type: tm+mt
 source-wordcount: '4908'
 ht-degree: 99%
@@ -716,7 +716,7 @@ ht-degree: 99%
       + [알려진 문제, 모범 사례 및 자주 묻는 질문](/help/forms/communications-known-issues-limitations.md)
    + 트랜잭션 보고서 {#using-communications}
       + [트랜잭션 보고서 과금 가능한 API](/help/forms/transaction-reports-billable-apis.md)
-      + [사용자 지정 구현에 대한 트랜잭션 기록](/help/forms/record-transaction-custom-implementation.md)
+      + [사용자 정의 구현을 위한 트랜잭션 기록](/help/forms/record-transaction-custom-implementation.md)
    + 개발자 API 참조 {#aem-forms-developer-api-reference}
       + [적응형 양식 API 참조](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms Cloud Service 커뮤니케이션 API 참조](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -840,7 +840,7 @@ ht-degree: 99%
       + [리디렉션](/help/edge/docs/redirects.md)
    + 양식 빌드 {#build-forms}
       + [개요](/help/edge/docs/forms/overview.md)
-      + 시작하기 {#getting-started-eds-forms}
+      + 시작하기 {#getting-started-edge-delivery-services-forms}
          + [시작](/help/edge/docs/forms/tutorial.md)
          + [Google Sheets 또는 Microsoft Excel을 사용하여 양식 만들기](/help/edge/docs/forms/create-forms.md)
          + [Google Sheets 또는 Microsoft Excel 파일을 설정하여 데이터 수신 시작&#x200B;](/help/edge/docs/forms/submit-forms.md)
@@ -850,13 +850,13 @@ ht-degree: 99%
          + [양식 모양 사용자 정의&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
          + [규칙을 사용하여 양식에 동적 비헤이비어 추가](/help/edge/docs/forms/rules-forms.md)
          + [양식 제출 후 사용자 정의 감사 메시지 표시](/help/edge/docs/forms/thank-you-page-form.md)
-      + 기능 {#advanced-features-eds-forms}
+      + 기능 {#advanced-features-edge-delivery-services-forms}
          + [양식 조각](/help/edge/docs/forms/form-fragments.md)
          + [양식에 반복 가능한 섹션 추가&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
          + [번역](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [사용자 정의 구성 요소](/help/edge/docs/forms/custom-components-forms.md)
-         + [양식에 대한 실시간 사용자 모니터링](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
+         + [양식에 대한 실시간 사용자 모니터링](/help/edge/docs/forms/real-user-monitoring-for-forms.md)
       + 참조 {#forms-references}
          + [적응형 양식 블록 구성 요소 및 해당 속성](/help/edge/docs/forms/form-components.md)
    + Edge Delivery 리소스 {#resources}

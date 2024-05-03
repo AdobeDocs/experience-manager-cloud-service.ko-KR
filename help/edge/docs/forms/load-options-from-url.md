@@ -3,12 +3,13 @@ title: URL에서 드롭다운 목록 옵션 로드
 description: 드롭다운 목록 옵션은 별도의 스프레드시트에 포함되어, 제공된 URL을 통해 기본 스프레드시트로 가져옵니다.
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
-source-git-commit: e61ef529dc562862bd02d7767e45de3e2ec4983b
-workflow-type: ht
+source-git-commit: 4a534f4335376673c362ef91a877e67a523be560
+workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 100%
 
 ---
+
 
 # URL에서 드롭다운 목록 옵션 로드
 
@@ -88,3 +89,5 @@ https://main--wefinance--wkndforms.hlx.live/enquiry-form
 ## 추가 참조
 
 {{see-more-forms-eds}}
+
+
