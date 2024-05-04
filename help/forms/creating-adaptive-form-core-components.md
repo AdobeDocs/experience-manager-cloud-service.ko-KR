@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 619cf91e3d1cc5504d8de0e70eb88e9ae7285af9
 workflow-type: tm+mt
-source-wordcount: '2281'
-ht-degree: 55%
+source-wordcount: '2341'
+ht-degree: 53%
 
 ---
 
@@ -190,6 +190,17 @@ FDM(양식 데이터 모델)을 사용하여 사용자 작업에 따라 데이�
 
 1. 선택 **[!UICONTROL 저장]** 속성을 저장합니다.
 
+
+## AEM 적응형 양식의 이름을 변경하는 방법 {#rename-an-AEM-Adaptive-Form}
+
+적응형 양식의 이름을 변경하려면 다음 단계를 수행하십시오.
+
+1. AEM Forms 사용자 인터페이스에서 적응형 양식을 선택합니다.
+1. 을(를) 클릭합니다 **속성** 위쪽 레일에 있습니다.
+1. 에서 양식 이름 변경 **제목** 아래 이미지에 표시된 대로 탭입니다.
+1. 클릭 **저장 및 닫기**.
+
+![AEM 적응형 양식 이름 바꾸기](/help/forms/assets/change-af-name.png)
 
 <!--
 

@@ -5,10 +5,10 @@ contentOwner: khsingh
 feature: Adaptive Forms, Troubleshooting
 role: User
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: a19a3d81652cb17fcd6b11e6047d2ea697bf3041
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 1%
+source-wordcount: '213'
+ht-degree: 0%
 
 ---
 
@@ -53,3 +53,13 @@ If the profile exists and issues still persist, contact Adobe Support. -->
 사용자가 빌드 파이프라인을 실행할 수 없습니다. 파이프라인이 일정 시간 동안 실행된 후 실패합니다.
 
 문제를 해결하려면 Cloud Manager를 열고 다음을 선택합니다. **[!UICONTROL 업데이트]** 를 설정하는 것이 좋습니다.
+
+
+## 번들이 활성 상태가 아닙니다. {#bundles-inactive-state}
+
+이 문제를 해결하려면 다음 단계를 수행하십시오.
+
+1. AEM을 시작하고 모든 번들이 시작될 때까지 완전히 시작될 때까지 기다립니다.
+1. AEM 중지(Ctrl + C).
+1. Forms 배치 `.far` 파일을 설치 폴더에 저장합니다.
+1. AEM 서버를 다시 시작합니다.

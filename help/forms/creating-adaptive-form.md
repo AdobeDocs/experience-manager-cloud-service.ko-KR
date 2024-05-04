@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 619cf91e3d1cc5504d8de0e70eb88e9ae7285af9
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 70%
+source-wordcount: '1560'
+ht-degree: 68%
 
 ---
 
@@ -205,6 +205,16 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 >
 > 관리 양식을 템플릿으로 저장할 수도 있습니다. 자세한 내용은 [ 적응형 양식을 사용하여 템플릿 만들기](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template)를 참조하십시오.
 
+## AEM 적응형 양식의 이름을 변경하는 방법 {#rename-an-AEM-Adaptive-Form}
+
+적응형 양식의 이름을 변경하려면 다음 단계를 수행하십시오.
+
+1. AEM Forms 사용자 인터페이스에서 적응형 양식을 선택합니다.
+1. 을(를) 클릭합니다 **속성** 위쪽 레일에 있습니다.
+1. 에서 양식 이름 변경 **제목** 아래 이미지에 표시된 대로 탭입니다.
+1. 클릭 **저장 및 닫기**.
+
+![AEM 적응형 양식 이름 바꾸기](/help/forms/assets/change-af-name.png)
 
 ## 추가 참조 {#see-also}
 
