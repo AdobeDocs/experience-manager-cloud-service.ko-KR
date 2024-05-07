@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ee16d3a0fe1fc93c215d31f7dea0e9c21e051350
+source-git-commit: 1a01a18008316c4d02553316020ec0c2a3f3cd57
 workflow-type: tm+mt
-source-wordcount: '1963'
-ht-degree: 83%
+source-wordcount: '2655'
+ht-degree: 61%
 
 ---
 
@@ -210,6 +210,80 @@ AEM 6.5와 유사하게 Apache/Dispatcher는 게시 저장소의 특정 위치�
 * 여러 로그를 병렬로 스트리밍
 
 사용해 보고 피드백을 제공하려면 **<aemcs-rde-support@adobe.com>**&#x200B;으로 문의하십시오.
+
+
+## [!DNL Experience Manager] 안내서 {#guides}
+
+
+### 사전 구성된 언어 그룹을 사용하여 콘텐츠를 여러 언어로 번역
+
+이제 Experience Manager 안내서를 통해 언어 그룹을 만들고 콘텐츠를 여러 언어로 쉽게 번역할 수 있습니다. 이 기능은 조직의 필요에 따라 번역을 구성하고 관리하는 데 도움이 됩니다.
+
+예를 들어, 유럽의 일부 국가에 대한 콘텐츠를 번역해야 하는 경우 영어(EN), 프랑스어(FR), 독일어(DE), 스페인어(ES) 및 이탈리아어(IT)와 같은 유럽 언어의 언어 그룹을 만들 수 있습니다.
+
+![번역 패널](../assets/guides/translation-languages-2404.png)
+
+*문서를 번역할 언어 그룹을 선택합니다.*
+
+>[!NOTE]
+>
+>언어의 대상 폴더가 없거나 대상 언어가 소스와 동일한 경우 해당 폴더가 회색으로 표시되고 경고 기호가 표시됩니다.
+
+관리자는 언어 그룹을 만들어 여러 폴더 프로필로 구성할 수 있습니다. 작성자는 폴더 프로필에 구성된 언어 그룹을 볼 수 있습니다.
+
+
+전반적으로 언어 그룹을 만들면 번역 프로젝트의 효율성과 생산성을 향상시킬 수 있으므로 다국어 현지화 프로세스를 향상시킬 수 있습니다.
+
+
+방법 알아보기 [웹 편집기에서 문서 번역](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/translate-documents-web-editor)
+
+### 저장소 보기에서 파일을 검색하고 필터링할 수 있도록 경험이 개선되었습니다.
+
+이제 파일을 필터링하는 동안 향상된 환경을 사용할 수 있습니다. 파일을 필터링하는 기능이 개선되어 파일을 쉽게 검색하고 탐색할 수 있습니다.
+
+![저장소 보기에서 파일 검색](../assets/guides/repository-filter-search-2404.png)
+
+*텍스트가 포함된 파일 검색`general purpose.`*
+
+관련 파일에 대한 빠른 액세스 및 보다 직관적인 사용자 인터페이스와 같은 이점을 활용하여 보다 유연하고 효율적인 검색 환경을 구축할 수 있습니다.
+
+![빠른 검색 필터 ](../assets/guides/repository-filter-search-quick.png)
+
+*빠른 필터를 사용하여 DITA 및 비 DITA 파일을 검색합니다.*
+
+에 대해 자세히 알아보기 **검색 필터링** 의 기능 [왼쪽 패널](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS) 섹션.
+
+### 데이터 소스 커넥터의 개선 사항
+
+2024.4.0 릴리스의 데이터 소스 커넥터에 다음과 같은 기능이 개선되었습니다.
+
+#### Salsify, Akeneo 및 Microsoft Azure ADO(DevOps Boards) 데이터 소스에 연결
+
+Experience Manager 가이드는 기존 기본 커넥터 외에도 Salsify, Akeneo 및 Microsoft Azure ADO(DevOps Boards) 데이터 소스에 대한 커넥터도 제공합니다. 관리자는 이러한 커넥터를 다운로드하여 설치할 수 있습니다. 그런 다음 설치된 커넥터를 구성합니다.
+
+#### 샘플 쿼리를 복사하여 붙여넣어 콘텐츠 조각 또는 항목 만들기
+
+샘플 데이터 쿼리를 쉽게 복사하여 생성기에 붙여넣어 콘텐츠 조각 또는 주제를 만들 수 있습니다. 이 기능을 사용하면 구문을 기억하거나 쿼리를 수동으로 만들 필요가 없습니다. 쿼리를 수동으로 입력하는 대신 샘플 쿼리를 복사하여 붙여 넣고 편집한 다음 이를 사용하여 요구 사항에 따라 데이터를 가져올 수 있습니다.
+
+![콘텐츠 조각 삽입 대화 상자](../assets/guides/insert-content-snippet.png)
+
+*샘플 쿼리를 복사하여 편집하여 콘텐츠 스니펫을 만듭니다.*
+
+#### 파일 커넥터를 사용하여 JSON 데이터 파일에 연결
+
+
+이제 관리자는 JSON 데이터 파일을 데이터 소스로 사용하도록 JSON 파일 커넥터를 구성할 수 있습니다. 커넥터를 사용하여 컴퓨터 또는 Adobe Experience Manager Assets에서 JSON 파일을 가져옵니다. 그런 다음 작성자는 생성기를 사용하여 콘텐츠 조각 또는 주제를 만들 수 있습니다.
+
+이 기능은 JSON 파일에 저장된 데이터를 사용하고 다양한 스니펫에서 재사용하는 데 도움이 됩니다. JSON 파일을 업데이트할 때마다 콘텐츠가 동적으로 업데이트됩니다.
+
+#### 콘텐츠 조각 또는 항목을 만들려면 커넥터에 대한 여러 리소스 URL을 구성합니다.
+
+관리자는 일반 REST 클라이언트, Salsify, Akeneo 및 Microsoft Azure DevOps 보드(ADO)와 같은 일부 커넥터에 대해 여러 리소스 URL을 구성할 수 있습니다.
+그런 다음 작성자는 데이터 소스와 연결하여 생성기를 사용하여 콘텐츠 조각 또는 주제를 만듭니다. 이 기능은 각 URL에 대한 데이터 소스를 만들 필요가 없으므로 편리합니다. 따라서 단일 콘텐츠 조각 또는 주제의 특정 데이터 소스에 대한 리소스에서 데이터를 빠르게 가져올 수 있습니다. Data Source Connectors 및 방법에 대한 자세한 내용 보기 [사용자 인터페이스에서 데이터 소스 커넥터 구성](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools). 방법 알아보기 [데이터 소스의 데이터 사용](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet).
+
+새로운 기능 및 향상된 기능에 대한 자세한 내용은 [2024.04.0 릴리스의 새로운 기능](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
+
+이 릴리스에서 수정된 문제 목록은 다음을 참조하십시오. [2024.4.0 릴리스의 문제가 해결되었습니다.](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/fixed-issues-2024-04-0).
 
 ## Cloud Manager {#cloud-manager}
 
