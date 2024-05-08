@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 79dcf8a4e9834beeb466ed9270a3f5c6aa67aa9a
 workflow-type: tm+mt
 source-wordcount: '723'
-ht-degree: 19%
+ht-degree: 28%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 19%
 
 다음은 2024년 5월 1일에 공개적으로 릴리스된 유지 보수 릴리스 16145에 대한 지속적인 개선 사항을 요약합니다. 이전 유지 관리 릴리스는 릴리스 15977.
 
-2024.4.0 기능 활성화는 이 유지 관리 릴리스에 대한 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
+이 유지 관리 릴리스(2024.4.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
 
 ### 개선 사항 {#enhancements-16145}
 
@@ -79,12 +79,12 @@ ht-degree: 19%
 
 * [Adobe Developer Console에서 JWT 자격 증명 사용 중단](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 
-* 2024년 5월 1일부터 Dynamic Media Adobe은 다음 사항에 대한 지원을 종료합니다.
+* 2024년 5월 1일부터 Adobe Dynamic Media는 다음에 대한 지원을 종료합니다.
 
-   * SSL(Secure Socket Layer) 2.0
+   * SSL(보안 소켓 계층) 2.0
    * SSL 3.0
    * TLS(전송 계층 보안) 1.0 및 1.1
-   * TLS 1.2의 약한 암호는 다음과 같습니다.
+   * TLS 1.2의 다음과 같은 약한 암호:
       * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
       * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
       * `TLS_RSA_WITH_AES_256_GCM_SHA384`
@@ -101,7 +101,7 @@ ht-degree: 19%
       * `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
 
 
-AEMas a Cloud Service 에서 더 이상 사용되지 않거나 제거된 내용은 [사용이 중단되거나 제거된 기능 및 API](/help/release-notes/deprecated-removed-features.md).
+AEM as a Cloud Service에서 더 이상 사용되지 않는 기능을 살펴보려면 [사용 중단된 기능 및 API](/help/release-notes/deprecated-removed-features.md)를 참조하십시오.
 
 ### 임베드된 기술 {#embedded-tech-16145}
 

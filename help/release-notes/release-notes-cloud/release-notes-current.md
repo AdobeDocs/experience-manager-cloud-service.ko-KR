@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 1a01a18008316c4d02553316020ec0c2a3f3cd57
 workflow-type: tm+mt
 source-wordcount: '2655'
-ht-degree: 61%
+ht-degree: 73%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 61%
 >
 >여기에서 2021년 또는 2022년과 같은 이전 버전의 릴리스 정보로 이동할 수 있습니다.
 >
->[!DNL Experience Manager] as a Cloud Service의 향후 기능 활성화에 대해 알아보려면 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 살펴보십시오.
+>[!DNL Experience Manager] as a Cloud Service의 향후 기능 활성화에 대해 알아보려면 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 살펴보십시오.
 
 >[!NOTE]
 >
->릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates)를 참조하십시오.
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates)를 참조하십시오.
 
 ## 릴리스 일자 {#release-date}
 
-의 릴리스 날짜 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 기능 릴리스(2024.4.0)는 2024년 4월 25일입니다. 다음 기능 릴리스(2024.5.0)는 2024년 5월 30일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 기능 릴리스(2024.4.0)의 릴리스 일자는 2024년 4월 25일입니다. 다음 기능 릴리스(2024.5.0)는 2024년 5월 30일에 예정되어 있습니다.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
@@ -63,29 +63,29 @@ Have a look at the April 2024 Release Overview video for a summary of the featur
 
 **상황별 검색**
 
-이제 다음 작업도 수행할 수 있습니다 [텍스트 프롬프트를 정의하여 저장소에서 사용할 수 있는 에셋을 검색합니다.](/help/assets/search-assets-view.md#contextual-search). Experience Manager Assets는 해당 텍스트 프롬프트를 검색 필터로 자동 변환하고 검색 결과를 표시합니다. 필터 창을 사용하여 자동 필터를 확인하여 수정하고 검색 결과의 범위를 더 좁힐 수 있습니다.
+이제 [텍스트 프롬프트를 정의하여 저장소에서 사용 가능한 자산을 검색](/help/assets/search-assets-view.md#contextual-search)할 수도 있습니다. Experience Manager Assets는 해당 텍스트 프롬프트를 검색 필터로 자동 변환하고 검색 결과를 표시합니다. 필터 창을 사용하여 자동 필터를 확인하여 수정하고 검색 결과의 범위를 더 좁힐 수 있습니다.
 
 ![상황별 검색](/help/assets/assets/contextual-search-text-prompt1.png)
 
 **Express 비디오 빠른 작업**
 
-이제 Experience Manager Assets에 다음이 포함됩니다 [Adobe Express을 기반으로 하는 쉽고 직관적인 비디오 편집 도구](/help/assets/edit-videos-assets-view.md) 컨텐츠 재사용 횟수를 늘리고 컨텐츠 속도를 가속화하십시오. 편집 옵션에는 비디오 트리밍, 자르기, 크기 조정 및 MP4를 GIF 파일로 변환 등이 포함됩니다.
+이제 Experience Manager Assets에는 콘텐츠 재사용률과 콘텐츠 속도를 높이는 [Adobe Express에서 제공하는 쉽고 직관적인 비디오 편집 도구](/help/assets/edit-videos-assets-view.md)가 포함됩니다. 편집 옵션에는 비디오 트리밍, 자르기, 크기 조정 및 MP4를 GIF 파일로 변환 등이 포함됩니다.
 
 ![Adobe Express로 비디오 자르기](/help/assets/assets/adobe-express-crop-video.png)
 
-**동적 변환**
+**동적 렌디션**
 
-이제 다음을 수행할 수 있습니다. [동적 변환(스마트 자르기 포함) 보기 및 다운로드](/help/assets/renditions.md) Experience Manager Assets. 동적 변환은 장치 해상도에 따라 이미지 크기를 조정하거나 다양한 종횡비에 맞게 자르는 것과 같이 특정 요구 사항을 충족하도록 실시간으로 생성되는 이미지 에셋의 사용자 지정된 버전입니다. 이러한 렌디션을 통해 조직은 다양한 대상 요구 사항에 개인화되고 최적화된 경험을 전달할 수 있습니다.
+이제 Experience Manager Assets에서 [동적 렌디션(스마트 자르기 포함)을 보고 다운로드](/help/assets/renditions.md)할 수 있습니다. 동적 렌디션은 디바이스 해상도에 따라 이미지 크기를 조정하거나 다양한 종횡비에 맞게 자르기 등 특정 요구 사항을 충족하기 위해 실시간으로 생성된 이미지 자산의 사용자 정의 버전입니다. 이러한 렌디션을 통해 조직은 다양한 대상자 요구에 맞게 개인화되고 최적화된 경험을 제공할 수 있습니다.
 
-![동적 변환](/help/assets/assets/preset_smart_crop.png)
+![동적 렌디션](/help/assets/assets/preset_smart_crop.png)
 
 **자산 및 폴더의 바로 이름 바꾸기**
 
-이제 Experience Manager Assets은 다음을 제공하여 간소화된 사용자 경험을 제공합니다. [한 번의 클릭으로 에셋 또는 폴더의 이름을 변경하는 기능](/help/assets/manage-organize-assets-view.md).
+이제 Experience Manager Assets는 [한 번의 클릭으로 자산 또는 폴더의 이름을 바꾸는 기능](/help/assets/manage-organize-assets-view.md)을 제공하여 단순화된 사용자 경험을 제공합니다.
 
 **여러 폴더에 메타데이터 양식 할당 또는 제거**
 
-이제 다음을 수행할 수 있습니다. [여러 폴더에 메타데이터 양식 할당 또는 제거](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder).
+이제 [여러 폴더에 메타데이터 양식을 할당하거나 제거](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder)할 수 있습니다.
 
 
 
@@ -167,21 +167,21 @@ Have a look at the April 2024 Release Overview video for a summary of the featur
 
 다음과 같은 방법으로 Adobe CDN에서 트래픽을 구성합니다.
 
-* [변형 요청](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) - AEM으로 라우팅되기 전에 경로, 쿼리 매개 변수 및 HTTP 헤더를 포함하여 수신 요청의 측면을 수정합니다.
-* [응답 변환](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) - 보내는 응답이 브라우저에 제공되기 전에 해당 응답의 HTTP 헤더를 변경합니다.
-* [원본 선택기](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations#origin-selectors) - CDN을 통해 오프 AEM 사이트 및 애플리케이션으로 트래픽을 라우팅합니다.
+* [요청 변환](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) - AEM으로 라우팅되기 전에 경로, 쿼리 매개변수 및 HTTP 헤더를 포함하여 수신 요청의 측면을 수정합니다.
+* [응답 변환](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) - 발신 응답이 브라우저에 제공되기 전에 HTTP 헤더를 변경합니다.
+* [원본 선택기](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations#origin-selectors) - CDN을 통해 트래픽을 AEM 외부 사이트 및 애플리케이션으로 라우팅합니다.
 
-이러한 규칙이 소스 제어(git)에서 선언되면 Cloud Manager 구성 파이프라인을 사용하여 CDN에 배포할 수 있습니다. 아래 얼리어답터 섹션에서 클라이언트측 리디렉션 기능도 참조하십시오.
+이러한 규칙이 소스 제어(git)에서 선언되면 Cloud Manager 구성 파이프라인을 사용하여 CDN에 배포할 수 있습니다. 아래 얼리 어답터 섹션의 클라이언트측 리디렉션 기능도 참조하십시오.
 
-### 사용자 지정 CDN 오류 페이지 {#cdn-error-pages}
+### 사용자 정의 CDN 오류 페이지 {#cdn-error-pages}
 
-CDN에서 AEM 원본에 트래픽을 라우팅할 수 없는 경우에는 사용자 지정 오류 페이지를 선언하여 일반 버전을 바꿀 수 있습니다. [자세히 알아보기](/help/implementing/dispatcher/cdn-error-pages.md) 브랜드 오류 페이지를 제공하는 방법에 대해 설명합니다.
+CDN이 트래픽을 AEM 원본으로 라우팅할 수 없는 경우에는 사용자 정의 오류 페이지를 선언하여 일반 버전을 대체할 수 있습니다. 브랜드 오류 페이지를 제공하는 방법에 대해 [자세히 알아보십시오](/help/implementing/dispatcher/cdn-error-pages.md).
 
 ### 얼리 어답터 프로그램 {#foundation-early-adopter}
 
 #### 클라이언트측 리디렉션(얼리 어답터 프로그램) {#client-side-redirects-early-adopter}
 
-소스 제어에서 301/302 클라이언트측 리디렉션을 구성하고 CDN에 배포합니다. [자세히 알아보기](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) 이메일로 얼리어답터 프로그램에 참여 **<aemcs-cdn-config-adopter@adobe.com>**.
+소스 제어에서 301/302 클라이언트측 리디렉션을 구성하고 CDN에 배포합니다. [자세히 알아보고](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) **<aemcs-cdn-config-adopter@adobe.com>**&#x200B;으로 이메일을 보내 얼리 어답터 프로그램에 참여하십시오.
 
 #### 트래픽 필터 규칙 경고(얼리 어답터 프로그램) {#traffic-filter-rules-alerts-early-adopter}
 
