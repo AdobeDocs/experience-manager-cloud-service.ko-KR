@@ -3,9 +3,9 @@ title: Cloud Manager 액세스
 description: 프로젝트 리소스를 설정할 수 있도록 Cloud Manager에 액세스하는 방법을 알아봅니다.
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
-source-git-commit: 5c9dbaa25f0142afdae8b09dc18d1e1aaaf4c1fb
+source-git-commit: 0e0337f6e14aa2f5b616ebc0a4b3c95089637369
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1040'
 ht-degree: 100%
 
 ---
@@ -109,8 +109,6 @@ Cloud Manager에 성공적으로 액세스하면 다음 섹션에 설명된 대�
 Cloud Manager에 성공적으로 로그인하면 **비즈니스 소유자** 제품 프로필이 할당되었는지 확인할 수 있습니다.
 
 1. 창의 오른쪽 상단에서 프로필을 선택합니다.
-
-   ![사용자 프로필](/help/journey-onboarding/assets/setup-resources5.png)
 
 1. 사용자에게 할당된 역할을 표시하려면 **사용자 역할**&#x200B;을 선택합니다.
 
