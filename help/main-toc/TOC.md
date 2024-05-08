@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6c56f753d2a32de6fe11fd47843cee5bcb8cac4e
+source-git-commit: bf7afba2376b12b8d4f513db07c178209447e343
 workflow-type: tm+mt
-source-wordcount: '4915'
+source-wordcount: '4917'
 ht-degree: 99%
 
 ---
@@ -204,6 +204,7 @@ ht-degree: 99%
       + [AEM 제품 프로필 할당](/help/journey-onboarding/assign-profiles-aem.md)
       + [개발자 및 배포 관리자 작업](/help/journey-onboarding/developers.md)
       + [AEM 사용자 작업](/help/journey-onboarding/aem-users.md)
+      + [실행 체크리스트](/help/journey-onboarding/go-live-checklist.md)
    + AEM 참조 데모 추가 기능 여정 {#demo-add-on}
       + [개요](/help/journey-sites/demos-add-on/overview.md)
       + [설치](/help/journey-sites/demos-add-on/installation.md)
