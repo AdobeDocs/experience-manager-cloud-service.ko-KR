@@ -1,15 +1,16 @@
 ---
 title: 컨텐츠 조각 및 컨텐츠 조각 모델 OpenAPI
 description: 콘텐츠 조각 및 콘텐츠 조각 모델 OpenAPI에 대해 알아봅니다.
-source-git-commit: a9e6df69c3753677053a3ecde6b5f04794f748dd
+exl-id: 077eed73-a066-4273-b2f5-da4bf5cd900c
+source-git-commit: 2921667598201b6087fab3ca5c1ef5b57c1fa18f
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 0%
+source-wordcount: '98'
+ht-degree: 1%
 
 ---
 
 # 컨텐츠 조각 및 컨텐츠 조각 모델 OpenAPI {#content-fragments-and-content-fragment-models-openapis}
 
-콘텐츠 조각 및 콘텐츠 조각 모델 OpenAPI를 사용하면 개발자가 AEM에 저장된 콘텐츠 조각 및 콘텐츠 조각 모델과 프로그래밍 방식으로 상호 작용하고, 이에 대해 CRUD(만들기, 읽기, 업데이트, 삭제) 작업을 수행할 수 있습니다.
+콘텐츠 조각 관리 API의 현대화된 OpenAPI 구현을 통해 개발자는 AEM 작성자에서 만들기, 읽기, 업데이트 및 삭제 작업을 프로그래밍 방식으로 수행하여 AEM에 저장된 콘텐츠 조각 모델 및 콘텐츠 조각을 관리할 수 있습니다. 이러한 API는 다양한 사용 사례를 지원합니다.
 
-API는 다양한 사용 사례를 지원합니다. 자세한 내용은 [콘텐츠 조각 및 콘테스트 조각 모델 OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/).
+의 기존 사용 [Assets HTTP API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) 의 콘텐츠 조각은 새 콘텐츠 조각 관리 OpenAPI로 마이그레이션해야 합니다. 전체 설명서는 다음을 참조하십시오. [콘텐츠 조각 관리 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/).
