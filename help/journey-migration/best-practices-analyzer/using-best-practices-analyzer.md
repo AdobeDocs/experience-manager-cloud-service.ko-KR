@@ -2,10 +2,10 @@
 title: 모범 사례 분석기 사용
 description: 모범 사례 분석기를 사용하여 업그레이드 준비 상태를 이해하는 방법에 대해 알아봅니다.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
+source-git-commit: 077be031da7a610810d398b163676a98fc036f30
 workflow-type: tm+mt
-source-wordcount: '2418'
-ht-degree: 42%
+source-wordcount: '2661'
+ht-degree: 38%
 
 ---
 
@@ -51,6 +51,13 @@ Best Practices Analyzer(BPA) 실행을 위한 중요한 고려 사항을 이해�
 >[!NOTE]
 >에서 모범 사례 분석기 다운로드 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 포털.
 
+## 소스 환경 연결 {#source-environment-connectivity}
+
+소스 AEM 인스턴스가 허용 목록에 추가된 특정 호스트에만 도달할 수 있는 방화벽을 통해 실행되고 있을 수 있습니다. BPA가 생성한 보고서를 Cloud Acceleration Manager에 자동으로 업로드하려면 AEM을 실행하는 인스턴스에서 다음 끝점에 액세스할 수 있어야 합니다.
+
+* Azure Blob 스토리지 서비스: `casstorageprod.blob.core.windows.net`
+
+
 ## 모범 사례 분석기 보고서 보기 {#viewing-report}
 
 ### Adobe Experience Manager 6.3.0 이상 {#aem-later-versions}
@@ -65,31 +72,40 @@ Best Practices Analyzer(BPA) 실행을 위한 중요한 고려 사항을 이해�
 
    ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
-1. BPA가 보고서를 생성하는 동안 도구에서 수행한 진행 상황을 화면에 볼 수 있습니다. 분석된 항목 수와 발견된 검색 결과 수를 표시합니다.
+1. 생성된 BPA 보고서를에 자동으로 업로드하려면 BPA 업로드 키를 제공하십시오. [CAM(Cloud Acceleration Manager)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). 업로드 키를 가져오려면 [CAM의 모범 사례 분석](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
-   ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
+   ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
+
+>[!NOTE]
+>을 선택하여 CAM에 대한 자동 업로드를 건너뛸 수 있습니다. **CAM으로 보고서 자동 업로드 건너뛰기**. 건너뛰기를 선택하는 경우 BPA 보고서를 쉼표로 구분된 값 파일로 수동으로 다운로드한 다음 CAM에서 파일을 업로드해야 합니다. 업로드 키 옵션은 작업을 간소화하므로 사용하는 것이 좋습니다.
+
+1. 다음 **생성** 유효한 키를 제공하면 버튼이 활성화됩니다. 클릭 **생성** 보고서 생성을 시작합니다.
+
+   ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
+
+
+1. BPA가 보고서를 생성하는 동안 도구에서 수행한 진행 상황을 화면에 볼 수 있습니다. 완료율 단위로 진행률이 표시됩니다. 또한 분석된 항목의 수와 발견된 검색 결과의 수를 표시합니다.
+
+   ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
+
+>[!NOTE]
+>BPA 업로드 키 만료 타임스탬프가 오른쪽 맨 위에 표시됩니다. 만료 날짜가 가까워지면 BPA 업로드 키를 갱신해야 합니다. 키를 갱신하려면 를 클릭합니다. **갱신** 를 클릭하여 키를 갱신합니다.
 
 1. BPA 보고서가 생성되면 요약 및 결과 수가 검색 유형 및 중요도 수준별로 구성된 표 형식으로 표시됩니다. 특정 검색 결과에 대한 자세한 내용을 보려면 테이블에서 검색 유형에 해당하는 숫자를 클릭합니다.
 
-   ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
+   ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
-   위의 작업은 보고서에서 해당 검색 결과의 위치로 자동 스크롤됩니다.
+1. 을 클릭하여 쉼표로 구분된 값(CSV) 형식으로 보고서를 다운로드할 수 있는 옵션이 있습니다. **CSV로 내보내기**. 을 클릭하여 CAM에서 보고서를 볼 수도 있습니다. **캠으로 이동**. 이렇게 하면 다음 위치로 이동합니다. [모범 사례 분석](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) 캠으로 가
 
-   ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_pic5.png)
+를 클릭하여 BPA가 캐시를 지우고 보고서를 다시 생성하도록 할 수 있습니다. **보고서 새로 고침**.
 
-1. 을 클릭하여 쉼표로 구분된 값(CSV) 형식으로 보고서를 다운로드할 수 있는 옵션이 있습니다. **CSV로 내보내기**&#x200B;을 참조하십시오.
+![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
-   ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_pic6.png)
 
-   >[!NOTE]
-   >를 클릭하여 BPA가 캐시를 지우고 보고서를 다시 생성하도록 할 수 있습니다. **보고서 새로 고침**.
+1. 캐시가 만료되면 를 클릭하여 CAM에서 마지막으로 생성된 보고서를 볼 수 있습니다. **CAM에서 마지막으로 생성된 보고서 보기** 또는 을 클릭하여 새 보고서 생성 시작 **새 보고서 생성**.
 
-   ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_pic7.png)
+![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
 
-   >[!NOTE]
-   >보고서가 다시 생성되는 동안 아래 이미지에 표시된 대로 완료율 측면에서 진행률이 표시됩니다.
-
-   ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
 
 #### 모범 사례 분석기 보고서에서 필터 사용 {#bpa-filters}
 
