@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
+source-git-commit: 835aab546896195c3a2a3355b35b81f2cd385676
 workflow-type: tm+mt
-source-wordcount: '1631'
-ht-degree: 3%
+source-wordcount: '1670'
+ht-degree: 5%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->다음 [컨텐츠 조각 및 컨텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md) 사용할 수도 있습니다.
+> 콘텐츠 조각 관리 API의 현대화된 OpenAPI 구현을 사용할 수 있습니다. 전체 설명서는 다음을 참조하십시오. [콘텐츠 조각 관리 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/). 새로운 OpenAPI 구현을 사용하는 것이 좋습니다. 콘텐츠 조각에 대한 에셋 HTTP API의 기존 사용은 새 콘텐츠 조각 관리 OpenAPI로 마이그레이션해야 합니다.
 
 API에 액세스하려면:
 
@@ -46,7 +46,7 @@ A [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) 는 �
 
 >[!NOTE]
 >
->다음 [컨텐츠 조각 및 컨텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md) 사용할 수도 있습니다.
+>[콘텐츠 조각 및 콘텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md)도 사용하실 수 있습니다.
 
 ## 데이터 모델 {#data-model}
 
@@ -54,7 +54,7 @@ A [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) 는 �
 
 >[!NOTE]
 >
->다음 [컨텐츠 조각 및 컨텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md) 사용할 수도 있습니다.
+>[콘텐츠 조각 및 콘텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md)도 사용하실 수 있습니다.
 
 ### 폴더 {#folders}
 
@@ -90,7 +90,7 @@ A [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) 는 �
 
 >[!NOTE]
 >
->다음 [컨텐츠 조각 및 컨텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md) 사용할 수도 있습니다.
+>[콘텐츠 조각 및 콘텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md)도 사용하실 수 있습니다.
 
 위치 [!DNL Experience Manager] 폴더에는 다음 구성 요소가 있습니다.
 
