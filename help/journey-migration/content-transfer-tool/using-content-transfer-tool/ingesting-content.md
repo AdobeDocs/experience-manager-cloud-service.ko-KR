@@ -2,9 +2,9 @@
 title: 클라우드 서비스에 콘텐츠 수집
 description: Cloud Acceleration Manager 를 사용하여 마이그레이션 세트의 컨텐츠를 대상 Cloud Service 인스턴스로 수집하는 방법을 알아봅니다.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 727fbc49657de752ac6daeb38b5a9d7aba331a5c
+source-git-commit: 6372277adfac0700d80a3e6c013f419892822e55
 workflow-type: tm+mt
-source-wordcount: '2876'
+source-wordcount: '2905'
 ht-degree: 12%
 
 ---
@@ -215,6 +215,8 @@ AEM의 각 노드에는 고유한 UUID가 있어야 합니다. 이 오류는 수
 MongoDB에 저장된 노드 속성 값은 16MB를 초과할 수 없습니다. 노드 값이 지원되는 크기를 초과하면 수집이 실패하고 로그에 `BSONObjectTooLarge` 오류 및 최대값을 초과하는 노드를 지정합니다. MongoDB 제한 사항입니다.
 
 다음을 참조하십시오. `Node property value in MongoDB` 의 메모 [컨텐츠 전송 도구 사전 요구 사항](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) 자세한 내용 및 모든 큰 노드를 찾는 데 도움이 될 수 있는 Oak 도구에 대한 링크입니다. 크기가 큰 모든 노드가 복구되면 추출 및 수집을 다시 실행합니다.
+
+이 제한을 방지하려면 다음을 실행하십시오. [모범 사례 분석기](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) 소스 AEM 인스턴스에서, 특히 [&quot;지원되지 않는 저장소 구조&quot;(URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs) 패턴.
 
 ### 수집 취소됨 {#ingestion-rescinded}
 

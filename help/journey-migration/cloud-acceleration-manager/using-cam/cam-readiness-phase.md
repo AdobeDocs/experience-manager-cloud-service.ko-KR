@@ -2,16 +2,16 @@
 title: Cloud Acceleration Manager의 준비 단계
 description: 이 페이지에서는 Cloud Acceleration Manager의 준비 단계에 대한 개요를 제공합니다.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: f99395870d076d47ef53b01c9fc6579a9f8788a2
+source-git-commit: 0c56cfdd2c18d3bc77edafdbda3f99fbc43f12cf
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '1045'
 ht-degree: 6%
 
 ---
 
 # Cloud Acceleration Manager의 준비 단계 {#readiness-phase-cam}
 
-Cloud Acceleration Manager에서 프로젝트를 생성했으면 이제 준비 단계에서 현재 Adobe Experience Manager(AEM) 구현의 평가를 시작할 수 있습니다.
+CAM(Cloud Acceleration Manager)에서 프로젝트를 생성했으면 이제 준비 단계에서 현재 Adobe Experience Manager(AEM) 구현의 평가를 시작할 수 있습니다.
 
 준비 단계는 다음과 같습니다.
 
@@ -33,6 +33,12 @@ Cloud Acceleration Manager에서 프로젝트를 생성했으면 이제 준비 �
 
 ## Best Practices Analysis 카드 사용 {#best-practices-analysis}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_bpa"
+>title="모범 사례 분석 보고서"
+>abstract="BPA 보고서를 CAM에 업로드하여 AEM으로의 마이그레이션에 대한 분석을 as a Cloud Service으로 제공할 수 있습니다."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer" text="모범 사례 분석기 사용"
+
 1. 클릭 **리뷰** 다음에서 **모범 사례 분석** 카드.
 
    ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/readiness-2.png)
@@ -42,26 +48,24 @@ Cloud Acceleration Manager에서 프로젝트를 생성했으면 이제 준비 �
    >[!NOTE]
    >Adobe 비즈니스 크리티컬 인스턴스에 영향을 주지 않도록 작성자 환경에서 BPA를 실행하는 것이 좋습니다. 환경은 사용자 정의, 구성, 콘텐츠 및 사용자 애플리케이션 영역의 프로덕션 환경과 최대한 유사해야 합니다. 또는 프로덕션 작성 환경의 복제본에서 실행할 수 있습니다.
 
-   1. 다음 위치로 이동 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 우수 사례 분석기를 포털에 다운로드하고 zip 파일로 다운로드합니다.
+   1. 다음 위치로 이동 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=best*) 우수 사례 분석기를 포털에 다운로드하고 zip 파일로 다운로드합니다.
 
       >[!NOTE]
       >리뷰 [Best Practices Analyzer 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html#imp-considerations) 를 사용하여 BPA를 실행하는 방법을 알아봅니다.
 
-   1. 보고서를 CSV 형식으로 내보내기
+1. CAM에서 **업로드 키 가져오기**&#x200B;를 사용하면 BPA 보고서를 CAM에 직접 자동으로 업로드하도록 시스템을 구성하는 데 사용되는 키를 가져올 수 있습니다.
 
-1. 클릭 **새 보고서 업로드** 따라서 CAM에서 BPA 보고서를 업로드할 수 있습니다.
-
-   ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3.png)
+   ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3b.png)
 
    >[!IMPORTANT]
-   >브라우저의 시크릿 모드에 있는 경우 보고서를 업로드할 수 없습니다.
+   >보고서를 여전히 수동으로 업로드할 수 있지만 업로드 키를 사용하면 작업이 간소화됩니다. 브라우저의 시크릿 모드에 있는 경우 보고서를 수동으로 업로드할 수 없습니다.
 
-1. 새 보고서를 업로드한 후에는 모범 사례 분석 보고서를 볼 수 있습니다.
+1. 새 보고서가 업로드되면 CAM에서 모범 사례 분석 보고서를 볼 수 있습니다.
 
    ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
    >[!NOTE]
-   >여러 보고서를 업로드하는 경우, 항상 세부 정보가 표시되는 보고서가 가장 최근 생성 날짜(업로드 날짜가 아님)인 보고서입니다.
+   >서로 다른 보고서를 여러 개 업로드하는 경우, 항상 세부 정보가 표시되는 보고서가 가장 최근 생성 날짜(업로드 날짜가 아님)인 보고서입니다.
 
 1. CAM의 모범 사례 분석 대시보드를 검토하고 탐색합니다. 다음을 참조하십시오 [모범 사례 분석 보고서 검토](#analysis-report) 을 참조하십시오.
 
@@ -74,9 +78,9 @@ Cloud Acceleration Manager에서 프로젝트를 생성했으면 이제 준비 �
 
 아래 단계를 따르십시오.
 
-1. 다음을 클릭합니다. **인쇄 미리 보기** 아이콘.
+1. 다음을 클릭합니다. **인쇄 미리 보기** 작업.
 
-   ![이미지](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1.png)
+   ![이미지](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1b.png)
 
 1. 인쇄 가능한 미리보기에 보고서가 표시된 새 탭에서 **인쇄** 보고서를 PDF 형식으로 인쇄합니다.
 
@@ -100,15 +104,11 @@ Cloud Acceleration Manager에서 프로젝트를 생성했으면 이제 준비 �
 
    ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
-1. 클릭 **...**.
+1. 다음에서 **보기** 드롭다운 목록에서 다음을 클릭합니다. **추세선 보고서**&#x200B;을 참조하십시오.
 
-   ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
+   ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
 
-1. 드롭다운 목록에서 **추세선 보기**&#x200B;을 참조하십시오.
-
-   ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
-
-1. 클릭 **추세선 보기** 보고서의 추세선 보기를 엽니다.
+1. 클릭 **추세선 보고서** 보고서의 추세선 보기를 엽니다.
 
    ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
 
@@ -208,7 +208,7 @@ Cloud Acceleration Manager에서 프로젝트를 생성했으면 이제 준비 �
 
 1. 드롭다운 목록에서 다음을 클릭합니다. **추세선 보기**&#x200B;을 참조하십시오.
 
-   ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
+   ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
 
 1. 다음에서 삭제 아이콘을 클릭합니다. **추세선 보고서** 화면.
 
