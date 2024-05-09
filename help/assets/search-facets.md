@@ -4,9 +4,9 @@ description: 이 문서에서는 Experience Manager에서 검색 패싯을 만�
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '2498'
+source-wordcount: '2505'
 ht-degree: 19%
 
 ---
@@ -172,7 +172,7 @@ Instead of manually creating a node structure for the options in the CRX reposit
    <td>
     <ul>
      <li>레이블</li>
-     <li>자리 표시자</li>
+     <li>플레이스홀더</li>
      <li>속성 이름</li>
      <li>설명</li>
     </ul> </td>
@@ -182,7 +182,7 @@ Instead of manually creating a node structure for the options in the CRX reposit
    <td>검색 조건자 : 폴더 및 하위 폴더에서 사전 구성된 루트 경로에 있는 자산을 검색합니다.</td>
    <td>
     <ul>
-     <li>자리 표시자</li>
+     <li>플레이스홀더</li>
      <li>루트 경로</li>
      <li>설명</li>
     </ul> </td>
@@ -233,7 +233,7 @@ Instead of manually creating a node structure for the options in the CRX reposit
    <td>
     <ul>
      <li>레이블</li>
-     <li>자리 표시자</li>
+     <li>플레이스홀더</li>
      <li>속성 이름</li>
      <li>범위 텍스트(시작)</li>
      <li>범위 텍스트(종료)</li>
@@ -354,6 +354,7 @@ Forms 검색 페이지의 옵션에 대해 아이콘을 잠그면 기본 설정�
 * [메타데이터 관리](manage-metadata.md)
 * [컬렉션 관리](manage-collections.md)
 * [일괄 메타데이터 가져오기](metadata-import-export.md)
+* [AEM 및 Dynamic Media에 자산 게시](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

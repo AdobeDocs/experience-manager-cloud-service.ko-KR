@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 320967ee4cd5a92639b60b00750343222b307aef
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 33%
+source-wordcount: '1422'
+ht-degree: 34%
 
 ---
 
@@ -278,6 +278,7 @@ ht-degree: 33%
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
 * [일괄 메타데이터 가져오기](metadata-import-export.md)
+* [AEM 및 Dynamic Media에 자산 게시](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

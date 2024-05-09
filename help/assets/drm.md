@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,DRM
 role: User,Admin
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1367'
-ht-degree: 5%
+source-wordcount: '1368'
+ht-degree: 6%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=en) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=en) |
 | AEM as a Cloud Service | 이 문서 |
 
 디지털 에셋은 종종 사용 약관 및 기간을 지정하는 라이선스와 연결됩니다. 사용 [!DNL Experience Manager] platform을 사용하면 자산 만료 정보 및 라이선스 정보를 효율적으로 관리할 수 있습니다.
@@ -54,7 +54,7 @@ ht-degree: 5%
 
 또한 오류가 발생하여 스케줄러가 현재 주기에서 만료된 에셋을 감지할 수 없는 경우 스케줄러는 다음 주기에서 이러한 에셋을 다시 검사하고 만료된 상태를 감지합니다.
 
-활성화하려면 [!DNL Assets] 만료된 하위 에셋과 함께 참조 복합 에셋을 표시하는 콘솔 **[!UICONTROL Adobe CQ DAM 만료 알림]** 워크플로우 [!DNL Experience Manager]. 시간 기반 스케줄러는 자산이 하위 자산으로 만료되었는지 여부를 특정 시간에 확인하기 위해 작업을 예약합니다. 작업이 완료되면 만료된 하위 에셋 및 참조된 에셋이 검색 결과에 만료된 것으로 표시됩니다.
+활성화하려면 [!DNL Assets] 만료된 하위 에셋과 함께 참조 복합 에셋을 표시하는 콘솔, 구성 **[!UICONTROL Adobe CQ DAM 만료 알림]** 워크플로우 [!DNL Experience Manager]. 시간 기반 스케줄러는 자산이 하위 자산으로 만료되었는지 여부를 특정 시간에 확인하기 위해 작업을 예약합니다. 작업이 완료되면 만료된 하위 에셋 및 참조된 에셋이 검색 결과에 만료된 것으로 표시됩니다.
 
 1. 액세스 [!DNL Cloud Manager] 사용자 환경과 연결된 Git 저장소입니다.
 1. 다음 이름의 파일 커밋 `com.day.cq.dam.core.impl.ExpiryNotificationJobImpl.cfg.json` (다음 내용이 포함된 저장소)
@@ -157,15 +157,16 @@ DRM 기능은에서 라이센스 에셋을 다운로드하기 전에 라이센�
 
 **추가 참조**
 
-* [에셋 번역](translate-assets.md)
+* [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [에셋이 지원되는 파일 형식](file-format-support.md)
-* [에셋 검색](search-assets.md)
-* [연결된 에셋](use-assets-across-connected-assets-instances.md)
-* [에셋 보고서](asset-reports.md)
+* [자산이 지원되는 파일 형식](file-format-support.md)
+* [자산 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [자산 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
-* [에셋 다운로드](download-assets-from-aem.md)
+* [자산 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
 * [일괄 메타데이터 가져오기](metadata-import-export.md)
+* [AEM 및 Dynamic Media에 자산 게시](/help/assets/publish-assets-to-aem-and-dm.md)

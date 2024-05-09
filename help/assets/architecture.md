@@ -1,14 +1,14 @@
 ---
 title: 아키텍처 [!DNL Assets]
-description: Adobe Experience Manager Assets as a 아키텍처 [!DNL Cloud Service]
+description: Adobe Experience Manager Assets as a의 건축 [!DNL Cloud Service]
 contentOwner: AG
 feature: Asset Management,Asset Compute Microservices
 role: Architect
 exl-id: 0440c6a0-97c7-440e-a96e-629825d34a73
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 32%
+source-wordcount: '125'
+ht-degree: 36%
 
 ---
 
@@ -20,22 +20,22 @@ ht-degree: 32%
 
 **추가 참조**
 
-* [에셋 번역](translate-assets.md)
+* [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [에셋이 지원되는 파일 형식](file-format-support.md)
-* [에셋 검색](search-assets.md)
-* [연결된 에셋](use-assets-across-connected-assets-instances.md)
-* [에셋 보고서](asset-reports.md)
+* [자산이 지원되는 파일 형식](file-format-support.md)
+* [자산 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [자산 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
-* [에셋 다운로드](download-assets-from-aem.md)
+* [자산 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
 * [일괄 메타데이터 가져오기](metadata-import-export.md)
+* [AEM 및 Dynamic Media에 자산 게시](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
 >* [개요 및 새로운 기능](/help/assets/overview.md)
 >* [지원되는 파일 형식 및 MIME 유형](file-format-support.md)
 >* [자산 마이크로서비스 개요](asset-microservices-overview.md)
-

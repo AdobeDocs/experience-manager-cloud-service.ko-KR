@@ -2,10 +2,10 @@
 title: Workfront과 Experience Manager Assets 간의 에셋 메타데이터 매핑 구성
 description: Adobe Workfront과 Experience Manager as a Cloud Service 애플리케이션 간에 에셋 메타데이터 필드를 매핑합니다. 메타데이터 필드를 매핑한 결과, Workfront에서 Experience Manager Assets으로 에셋을 전송하면 Experience Manager Assets에서 매핑된 에셋 메타데이터를 볼 수 있습니다.
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1005'
-ht-degree: 3%
+source-wordcount: '1012'
+ht-degree: 4%
 
 ---
 
@@ -143,3 +143,4 @@ Experience Manager Assets에서 이미지로 이동하여 이미지와 관련된
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
 * [일괄 메타데이터 가져오기](metadata-import-export.md)
+* [AEM 및 Dynamic Media에 자산 게시](/help/assets/publish-assets-to-aem-and-dm.md)

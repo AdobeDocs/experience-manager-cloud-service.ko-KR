@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '5496'
+source-wordcount: '5503'
 ht-degree: 6%
 
 ---
@@ -204,14 +204,14 @@ You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media
 | 메타데이터 필드 | Facet 값 및 사용 |
 |---|---|
 | 제목 | title:John |
-| 작성자 | creator:John |
+| 크리에이터 | creator:John |
 | 위치 | 위치:NA |
 | 설명 | description:&quot;샘플 이미지&quot; |
-| 작성자 도구 | creatortool:&quot;Adobe Photoshop&quot; |
+| 크리에이터 도구 | creatortool:&quot;Adobe Photoshop&quot; |
 | 저작권 소유자 | 저작권 소유자:&quot;Adobe Systems&quot; |
 | 참여자 | 기여자:존 |
 | 사용 약관 | usageterms:&quot;CopyRights Reserved&quot; |
-| 작성일 | created:YYYY-MM-DDTHH |
+| 생성됨 | created:YYYY-MM-DDTHH |
 | 만료 날짜 | 만료: YYYY-MM-DDTHH |
 | 정시 | ontime:YYYY-MM-DDTHH |
 | 해제 시간 | offtime:YYYY-MM-DDTHH |
@@ -436,7 +436,7 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 | 검색 필드 | 속성 값 검색 |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | MIME 유형 | 이미지, 문서, 멀티미디어, 아카이브 또는 기타 |
-| 마지막 수정 날짜 | 시간, 일, 주, 월 또는 년. |
+| 마지막 수정일 | 시간, 일, 주, 월 또는 년. |
 | 파일 크기 | Small, Medium 또는 Large |
 | 게시 상태 | 게시 또는 게시 취소. |
 | 승인됨 상태 | 승인 또는 거부됨. |
@@ -551,6 +551,7 @@ You can create smart collections based on the search criteria. From the **[!UICO
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
 * [일괄 메타데이터 가져오기](metadata-import-export.md)
+* [AEM 및 Dynamic Media에 자산 게시](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

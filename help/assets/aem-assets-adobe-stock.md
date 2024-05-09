@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '2490'
-ht-degree: 15%
+source-wordcount: '2460'
+ht-degree: 9%
 
 ---
 
@@ -122,7 +122,7 @@ IMS 구성에는 두 단계가 포함됩니다.
 
 1. 다음에서 **[!UICONTROL 도구]** 패널, 다음으로 이동 **[!UICONTROL 보안]** > **[!UICONTROL Adobe IMS 구성]**.
 
-1. Adobe IMS 구성 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 다음 **[!UICONTROL Adobe IMS 기술 계정 구성]** 페이지가 열립니다.
+1. Adobe IMS 구성 페이지에서 **[!UICONTROL 만들기]**. 다음 **[!UICONTROL Adobe IMS 기술 계정 구성]** 페이지가 열립니다.
 
 1. 다음에서 **[!UICONTROL 인증서]** 탭, 선택 **[!UICONTROL Adobe Stock]** 다음에서 **[!UICONTROL 클라우드 솔루션]** 드롭다운 목록입니다.
 
@@ -265,7 +265,7 @@ IMS 계정을 구성하려면:
    * 권한: `jcr:read`
    * 권한 유형: `Allow`
 
-   **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+   클릭 **[!UICONTROL 추가]**.
 
    ![사용자 권한](assets/aem-stock-user-permissions.png)
 
@@ -318,7 +318,7 @@ IMS 계정을 구성하려면:
 
 | 사용자 | 그룹 | 권한 | 사용자 환경 설정에서 Stock 구성 수락 | 에셋 액세스 | Adobe Stock 액세스 |
 | --- | --- | --- | --- | --- | --- |
-| admin | N/A | 모두 | N/A | 예 | 예 |
+| admin | 해당 사항 없음 | 모두 | 해당 사항 없음 | 예 | 예 |
 | test-doc1 | DAM 사용자 | /conf/global/settings/stock/cloud-config | 예 | 예 | 예 |
 | test-doc1 | DAM 사용자 | /conf/global/settings/stock/cloud-config | 아니요 | 오류: 데이터를 로드하지 못했습니다. | 아니요 |
 | test-doc1 | DAM 사용자 | **허용**: /conf/global/settings/stock **거부**: /cloud-config | Stock 구성이 표시되지 않음 | 예 | 아니요 |
@@ -331,7 +331,7 @@ IMS 계정을 구성하려면:
 
 ![검색 대상 [!DNL Adobe Stock] 에서 에셋 및 필터 결과 [!DNL Adobe Experience Manager] 작업 영역](assets/adobe-stock-search-results-workspace.png)
 
-**A.**[!DNL Adobe Stock] Search assets similar to the assets whose ID is provided. **B.** Search assets that match your selection of shape or orientation. **C.** Search for one of more supported asset types **D.** Open or collapse the filters pane **E.** License and save the selected asset in [!DNL Experience Manager]**F.**[!DNL Experience Manager] Save the asset in with watermark **G.**[!DNL Adobe Stock] Explore assets on website that are similar to the selected asset **H.**[!DNL Adobe Stock] View the selected assets on website **I.** Number of selected assets from the search results **J.** Switch between Card view and List view
+**A.** 다음 자산과 유사한 자산 검색: [!DNL Adobe Stock] ID가 입력되었습니다. **B.** Search assets that match your selection of shape or orientation. **C.** 지원되는 자산 유형 중 하나 이상 검색 **D.** 필터 창 열기 또는 축소 **E.** 선택한 에셋에 라이센스 부여 및 저장 [!DNL Experience Manager] **F** 에셋 저장 위치 [!DNL Experience Manager] 워터마크 포함 **G.** 에셋 살펴보기 [!DNL Adobe Stock] 선택한 자산과 유사한 웹 사이트 **H.** 에서 선택한 에셋 보기 [!DNL Adobe Stock] 웹 사이트 **난..** 검색 결과에서 선택한 에셋 수 **J.** 카드 보기와 목록 보기 간 전환
 
 ### 에셋 찾기 {#find-assets}
 
@@ -471,6 +471,7 @@ Users can see the properties for both, licensed and unlicensed assets.
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
 * [일괄 메타데이터 가져오기](metadata-import-export.md)
+* [AEM 및 Dynamic Media에 자산 게시](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

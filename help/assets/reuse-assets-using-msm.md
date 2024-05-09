@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: 9e0aefa096a493df22860d0194a0a76f3eaf2390
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '3400'
+source-wordcount: '3407'
 ht-degree: 10%
 
 ---
@@ -386,3 +386,4 @@ However, you have the flexibility to make local modifications to a live copy to 
 * [컬렉션 관리](manage-collections.md)
 * [일괄 메타데이터 가져오기](metadata-import-export.md)
 * [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)
+* [AEM 및 Dynamic Media에 자산 게시](/help/assets/publish-assets-to-aem-and-dm.md)

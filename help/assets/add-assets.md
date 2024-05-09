@@ -4,10 +4,10 @@ description: 에 디지털 에셋 추가 [!DNL Adobe Experience Manager] as a [!
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '3137'
-ht-degree: 8%
+source-wordcount: '3144'
+ht-degree: 9%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 8%
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) | 크리에이티브 및 마케터가 지원되는 내에서 자산에 대해 작업할 때 유용합니다 [!DNL Creative Cloud] 데스크탑 앱. | 크리에이티브, 마케터 |
 | [일괄 에셋 수집기](#asset-bulk-ingestor) | 대규모 마이그레이션 및 경우에 따라 대량으로 수집하는 경우에 권장됩니다. 지원되는 데이터 저장소에만 해당됩니다. | 관리자, 개발자 |
 
-## 에셋 업로드 {#upload-assets}
+## 자산 업로드 {#upload-assets}
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
@@ -197,7 +197,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 1. **[!UICONTROL 자산 대상 폴더]** 필드를 사용하여 자산을 가져올 수 있는 DAM에 위치를 정의하려면 경로를 지정합니다. 예: `/content/dam/imported_assets`
 
-1. (선택 사항) CSV 형식으로 제공된 가져올 메타데이터 파일을 **[!UICONTROL 메타데이터 파일]** 필드. 소스 Blob 위치에 CSV 파일을 지정하고 일괄 가져오기 도구를 구성하는 동안 경로를 참조하십시오. 이 필드에서 참조되는 CSV 파일 형식은 다음과 같을 때 CSV 파일 형식과 동일합니다. [자산 메타데이터 일괄적으로 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html). 을(를) 선택하는 경우 **가져오기 후 소스 파일 삭제** 옵션, 다음을 사용하여 CSV 파일 필터링 **제외** 또는 **MIME 유형 포함** 또는 **경로/파일로 필터링** 필드. 정규 표현식을 사용하여 이러한 필드의 CSV 파일을 필터링할 수 있습니다.
+1. (선택 사항) **[!UICONTROL 메타데이터 파일]** 필드에서 가져올 메타데이터 파일(CSV 형식으로 제공)을 지정합니다. 소스 Blob 위치에 CSV 파일을 지정하고 일괄 가져오기 도구를 구성하는 동안 경로를 참조하십시오. 이 필드에서 참조되는 CSV 파일 형식은 다음과 같을 때 CSV 파일 형식과 동일합니다. [자산 메타데이터 일괄적으로 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html). 을(를) 선택하는 경우 **가져오기 후 소스 파일 삭제** 옵션, 다음을 사용하여 CSV 파일 필터링 **제외** 또는 **MIME 유형 포함** 또는 **경로/파일로 필터링** 필드. 정규 표현식을 사용하여 이러한 필드의 CSV 파일을 필터링할 수 있습니다.
 
 1. 클릭 **[!UICONTROL 저장]** 구성을 저장합니다.
 
@@ -412,6 +412,7 @@ Experience Manager에 작업 내역이 표시됩니다. [일괄 가져오기 작
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
 * [일괄 메타데이터 가져오기](metadata-import-export.md)
+* [AEM 및 Dynamic Media에 자산 게시](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

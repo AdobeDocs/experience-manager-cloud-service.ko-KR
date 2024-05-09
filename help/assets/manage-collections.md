@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collections,Asset Management
 role: User
 exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '2391'
-ht-degree: 18%
+source-wordcount: '2398'
+ht-degree: 19%
 
 ---
 
@@ -91,7 +91,7 @@ ht-degree: 18%
 1. 선택 **[!UICONTROL 저장]** 스마트 컬렉션을 만든 다음 메시지 상자를 닫아 프로세스를 완료합니다. 새 스마트 컬렉션도 **[!UICONTROL 저장한 검색 결과]** 목록을 표시합니다.
 The label of the **[!UICONTROL Create Smart Selection]** button changes to **[!UICONTROL Edit Smart Selection]**. To edit the settings of the smart collection, select **[!UICONTROL Files]** from the **[!UICONTROL Files &amp; Folders]** list. 그런 다음 **[!UICONTROL 스마트 선택 항목 편집]** 단추를 클릭합니다.
 
-## 컬렉션에 에셋 추가 {#add-assets-to-a-collection}
+## 컬렉션에 자산 추가 {#add-assets-to-a-collection}
 
 참조된 에셋 또는 폴더 목록이 포함된 컬렉션에 에셋을 추가할 수 있습니다.
 
@@ -272,6 +272,7 @@ Saved searches are created when you create a smart collection. Smart collections
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [일괄 메타데이터 가져오기](metadata-import-export.md)
+* [AEM 및 Dynamic Media에 자산 게시](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

@@ -1,10 +1,10 @@
 ---
 title: 이미지용 색상 태그
-description: Adobe Experience Manager Assets를 사용하면 이미지의 색상을 구분하고 이를 태그로 자동으로 적용할 수 있습니다. 그런 다음 이러한 태그를 사용하여 이미지를 검색하고 필터링할 수 있습니다.
+description: Adobe Experience Manager Assets을 사용하면 이미지의 색상을 구분하고 이를 태그로 자동으로 적용할 수 있습니다. 그런 다음 이러한 태그를 사용하여 이미지를 검색하고 필터링할 수 있습니다.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1244'
 ht-degree: 6%
 
 ---
@@ -19,11 +19,11 @@ Adobe Experience Manager(AEM) Assets는 Adobe Sensei AI 기능을 사용하여 �
 
 다음 그림은 Experience Manager Assets에서 이미지에 대한 색상 태깅을 구성하고 관리하기 위해 수행하는 작업의 시퀀스를 보여 줍니다.
 
-![색상 태그 지정](assets/color-tagging-dfd.gif)
+![색상 태깅](assets/color-tagging-dfd.gif)
 
 ## 지원되는 파일 형식 {#supported-file-formats-color-tags}
 
-| 파일 형식 | 확장 | MIME 유형 | 입력 색상 공간 | 지원되는 최대 소스 파일 크기 | 지원되는 최대 파일 크기 확인 |
+| 파일 포맷 | 확장 | MIME 유형 | 입력 색상 공간 | 지원되는 최대 소스 파일 크기 | 지원되는 최대 파일 크기 확인 |
 |---|---|---|---|---|---|
 | JPEG | .jpg 및 .jpeg | image/jpeg | sRGB | 15GB | 20000 × 20000 픽셀 |
 | PNG | .png | image/png | sRGB | 15GB | 20000 × 20000 픽셀 |
@@ -196,3 +196,4 @@ DAM의 기존 이미지는 색상 태그가 자동으로 지정되지 않습니�
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
 * [일괄 메타데이터 가져오기](metadata-import-export.md)
+* [AEM 및 Dynamic Media에 자산 게시](/help/assets/publish-assets-to-aem-and-dm.md)

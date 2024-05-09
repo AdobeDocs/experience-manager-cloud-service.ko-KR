@@ -4,10 +4,10 @@ description: '의 주요 변경 내용 [!DNL Adobe Experience Manager Assets] �
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 11%
+source-wordcount: '998'
+ht-degree: 9%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 11%
    * 에셋 업로드 [직접 이진 액세스 사용](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access).
    * 기술적인 세부 정보는 다음을 참조하십시오. [다이렉트 바이너리 업로드 프로토콜 및 API](/help/assets/developer-reference-material-apis.md#upload-binary).
    * 기본 CRUD 작업에 사용 가능한 API 메서드를 비교하려면 다음을 참조하십시오. [API 및 에셋 작업](/help/assets/developer-reference-material-apis.md#use-cases-and-apis).
-* 이전 버전의 기본 워크플로우 **[!UICONTROL DAM 자산 업데이트]**&#x200B;는 이제 사용할 수 없습니다. [!DNL Experience Manager] 대신 에셋 마이크로서비스 는 대부분의 기본 에셋 처리(렌디션, 메타데이터 추출 및 색인을 위한 텍스트 추출)를 포함하는 확장 가능하고 사용 가능한 서비스를 제공합니다.
+* 기본 워크플로 **[!UICONTROL DAM 자산 업데이트]** 의 이전 버전에서 [!DNL Experience Manager] 을(를) 더 이상 사용할 수 없습니다. 대신 에셋 마이크로서비스 는 대부분의 기본 에셋 처리(렌디션, 메타데이터 추출 및 색인을 위한 텍스트 추출)를 포함하는 확장 가능하고 사용 가능한 서비스를 제공합니다.
    * 다음을 참조하십시오 [에셋 마이크로서비스 구성 및 사용](/help/assets/asset-microservices-configure-and-use.md)
    * 처리 과정에서 사용자 정의된 워크플로 단계를 수행하려면 다음을 수행하십시오. [사후 처리 워크플로](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) 를 사용할 수 있습니다.
 
@@ -53,10 +53,10 @@ ht-degree: 11%
 |-----|-----|-----|
 | [중복 에셋 감지](/help/assets/detect-duplicate-assets.md) | 다르게 작동 | 다음을 참조하십시오 [작동 방식 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). |
 | [배치 전용(FPO) 렌디션](/help/assets/configure-fpo-renditions.md) | 다르게 작동 | 처리 프로필은 에셋 마이크로서비스 를 사용하여 FPO 렌디션을 생성합니다. Experience Manager 6.5에서 다음과 같은 타사 솔루션 [!DNL ImageMagick] 렌디션을 생성하는 데 사용할 수 있습니다. |
-| 메타데이터 원본에 쓰기 | 다르게 작동 | 기본적으로 비활성화됨. 필요한 경우 해당 워크플로우 런처를 활성화합니다. 원본에 쓰기(writeback)는 자산 마이크로서비스에서 처리합니다. |
+| 메타데이터 원본에 쓰기 | 다르게 작동 | 기본적으로 비활성화되어 있습니다. 필요한 경우 해당 워크플로우 런처를 활성화합니다. 원본에 쓰기(writeback)는 자산 마이크로서비스에서 처리합니다. |
 | 패키지 관리자를 사용하여 업로드된 자산 처리 | 수동 개입 필요 | 다음을 사용하여 수동으로 재처리 **[!UICONTROL 자산 재처리]** 작업. |
-| MIME 유형 감지 | 지원되지 않음. | 확장이 없거나 잘못된 디지털 에셋을 업로드하는 경우 원하는 대로 처리되지 않을 수 있습니다. 사용자는 DAM에 확장명 없이 이진 파일을 저장할 수 있습니다. 다음을 참조하십시오 [의 MIME 유형 감지 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
-| 조합 자산에 대한 하위 자산 생성 | 지원되지 않음. | 주석과 같은 종속 사용 사례가 이행되지 않을 수 있습니다. 다음을 참조하십시오 [에서 하위 자산 만들기 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). 일부 파일 형식의 PDF 미리 보기는 다음 항목부터 사용할 수 있습니다 [2021.7.0 릴리스](/help/release-notes/release-notes-cloud/release-notes-current.md). |
+| MIME 유형 감지 | 지원되지 않습니다. | 확장이 없거나 잘못된 디지털 에셋을 업로드하는 경우 원하는 대로 처리되지 않을 수 있습니다. 사용자는 DAM에 확장명 없이 이진 파일을 저장할 수 있습니다. 다음을 참조하십시오 [의 MIME 유형 감지 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
+| 조합 자산에 대한 하위 자산 생성 | 지원되지 않습니다. | 주석과 같은 종속 사용 사례가 이행되지 않을 수 있습니다. 다음을 참조하십시오 [에서 하위 자산 만들기 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). 일부 파일 형식의 PDF 미리 보기는 다음 항목부터 사용할 수 있습니다 [2021.7.0 릴리스](/help/release-notes/release-notes-cloud/release-notes-current.md). |
 | 이미지 편집 | 지원되지 않음 | Experience Manager as a Cloud Service에서는 에셋 편집이 지원되지 않습니다. 다음을 참조하십시오 [Experience Manager 6.5에서 작동 방식](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#editing-images). |
 | 홈 페이지 | 지원되지 않음 | 다음을 참조하십시오 [[!DNL Assets] 의 홈 페이지 경험 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
 | ZIP 아카이브에서 자산 추출 | 지원되지 않음 | 다음을 참조하십시오 [의 ZIP 추출 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
@@ -81,6 +81,7 @@ ht-degree: 11%
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
 * [일괄 메타데이터 가져오기](metadata-import-export.md)
+* [AEM 및 Dynamic Media에 자산 게시](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

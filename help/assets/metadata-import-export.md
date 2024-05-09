@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 52a6cb359bfe0d76bdceb3f517e92d78994872c8
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 9%
+source-wordcount: '739'
+ht-degree: 10%
 
 ---
 
@@ -94,6 +94,7 @@ Adobe Experience Manager Assets을 사용하면 CSV 파일을 사용하여 에�
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
+* [AEM 및 Dynamic Media에 자산 게시](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

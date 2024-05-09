@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '777'
-ht-degree: 4%
+source-wordcount: '772'
+ht-degree: 5%
 
 ---
 
@@ -24,31 +24,31 @@ ht-degree: 4%
 
 * **자동 올림**: 인공 지능을 사용하여 이미지의 내용을 분석하고 이미지에서 왜곡된 관점을 수정합니다. 예를 들어 레벨 지표를 생성합니다.
 
-   ![자동 톤](/help/assets/assets/content-automation-autotone.png)
+  ![자동 톤](/help/assets/assets/content-automation-autotone.png)
 
-   *그림: 자동 톤 및 자동 곧게 펴기를 사용하면 왜곡된 이미지를 개선할 수 있습니다.*
+  *그림: 자동 톤 및 자동 곧게 펴기를 사용하면 왜곡된 이미지를 개선할 수 있습니다.*
 
 * **Lightroom 사전 설정**: 사용자 정의 사전 설정을 사용하여 일관된 모양을 얻기 위해 이미지에 사용자 정의 모양을 적용합니다.
 
-   ![Lightroom 사전 설정](/help/assets/assets/content-automation-lrpresets.png)
+  ![Lightroom 사전 설정](/help/assets/assets/content-automation-lrpresets.png)
 
-   *그림: 많은 이미지에 대해 일관된 방식으로 이미지 품질을 개선하기 위한 Adobe Lightroom 사전 설정.*
+  *그림: 많은 이미지에 대해 일관된 방식으로 이미지 품질을 개선하기 위한 Adobe Lightroom 사전 설정.*
 
 * **이미지 오려내기**: 인공 지능을 사용하여 현란한 오브젝트 주위에 선택 영역을 만들고 단일 명령으로 배경을 제거합니다.
 
-   ![배경을 제거하고 사진에서 이미지 잘라내기](/help/assets/assets/content-automation-backgroundremove.png)
+  ![배경을 제거하고 사진에서 이미지 잘라내기](/help/assets/assets/content-automation-backgroundremove.png)
 
 * **이미지 마스크**: 단일 명령으로 중요 오브젝트 주위에 마스크를 만들기 위해 인공 지능을 사용합니다.
 
-   ![AI를 사용하여 이미지 마스크](/help/assets/assets/content-automation-mask.png)
+  ![AI를 사용하여 이미지 마스크](/help/assets/assets/content-automation-mask.png)
 
 * **Photoshop 작업**: 일련의 [!DNL Adobe Photoshop] 작업을 파일 또는 파일 배치에 추가합니다.
 
-   ![Photoshop 작업](/help/assets/assets/content-automation-psactions.png)
+  ![Photoshop 작업](/help/assets/assets/content-automation-psactions.png)
 
-* **스마트 오브젝트 교체**: PSD 파일 내에 적용된 모든 효과 및 조정을 유지하면서 이미지를 교체할 수 있도록 함으로써 개인화의 규모를 조절할 수 있습니다.
+* **스마트 오브젝트 교체**: PSD 파일 내에 적용된 모든 효과 및 조정을 유지하면서 이미지를 교체할 수 있도록 함으로써 개인화를 규모에 맞게 확장할 수 있습니다.
 
-   ![개체를 지능적으로 바꾸기](/help/assets/assets/content-automation-objectreplace.png)
+  ![개체를 지능적으로 바꾸기](/help/assets/assets/content-automation-objectreplace.png)
 
 ## AEM as a Cloud Service 프로그램에 Content Automation 사용 {#enable-content-automation}
 
@@ -103,22 +103,22 @@ Cloud Manager의 기존 AEM as a Cloud Service 프로그램에 콘텐츠 자동�
 
 **추가 참조**
 
-* [에셋 번역](translate-assets.md)
+* [자산 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [에셋이 지원되는 파일 형식](file-format-support.md)
-* [에셋 검색](search-assets.md)
-* [연결된 에셋](use-assets-across-connected-assets-instances.md)
-* [에셋 보고서](asset-reports.md)
+* [자산이 지원되는 파일 형식](file-format-support.md)
+* [자산 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [자산 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
-* [에셋 다운로드](download-assets-from-aem.md)
+* [자산 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
 * [일괄 메타데이터 가져오기](metadata-import-export.md)
+* [AEM 및 Dynamic Media에 자산 게시](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
 >* [처리 프로필을 통해 에셋 마이크로서비스 구성 및 사용](/help/assets/asset-microservices-configure-and-use.md).
->* [ [!DNL Experience Manager] 와 통합 [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
+>* [통합 [!DNL Experience Manager] 포함 [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
 >* [자산 마이크로서비스를 통한 자산 수집 및 처리: 개요](/help/assets/asset-microservices-overview.md).
-

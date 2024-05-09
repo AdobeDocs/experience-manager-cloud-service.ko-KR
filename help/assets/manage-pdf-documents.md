@@ -4,10 +4,10 @@ description: 에서 PDF 문서 관리 [!DNL Adobe Experience Manager] as a [!DNL
 feature: Asset Management
 role: User,Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 4%
+source-wordcount: '838'
+ht-degree: 5%
 
 ---
 
@@ -44,7 +44,7 @@ AEM Assets의 기본 PDF Doc Cloud 뷰어에는 다음 구성 요소가 있습�
 
 ## PDF 자산에 대한 여러 페이지 미리보기 및 주석 지원 {#multi-page}
 
-Adobe Experience Manager Assets를 사용하면 여러 페이지로 구성된 PDF 문서를 미리 볼 수 있습니다. PDF 문서의 여러 페이지를 미리 보려면 다음 단계를 고려하십시오.
+Adobe Experience Manager Assets을 사용하면 여러 페이지로 구성된 PDF 문서를 미리 볼 수 있습니다. PDF 문서의 여러 페이지를 미리 보려면 다음 단계를 고려하십시오.
 
 1. 다음 단계를 수행합니다. [AEM에서 에셋 업로드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
 1. 업로드하고 미리 보려는 PDF 문서를 찾습니다.
@@ -147,3 +147,4 @@ PDF 문서 외에도 다른 형식 유형의 문서에 대해 여러 페이지�
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
 * [일괄 메타데이터 가져오기](metadata-import-export.md)
+* [AEM 및 Dynamic Media에 자산 게시](/help/assets/publish-assets-to-aem-and-dm.md)

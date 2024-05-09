@@ -5,9 +5,9 @@ contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 4844d736d3791b376b7ad9cafa005c856c114837
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '927'
 ht-degree: 100%
 
 ---
@@ -85,3 +85,4 @@ AEM Assets를 Edge Delivery Services용 문서 기반 작성과 통합하면 웹
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
 * [일괄 메타데이터 가져오기](metadata-import-export.md)
+* [AEM 및 Dynamic Media에 자산 게시](/help/assets/publish-assets-to-aem-and-dm.md)

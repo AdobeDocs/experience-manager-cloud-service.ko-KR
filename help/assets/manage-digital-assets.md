@@ -6,14 +6,14 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '4270'
+source-wordcount: '4277'
 ht-degree: 10%
 
 ---
 
-# 에셋 관리 {#manage-assets}
+# 자산 관리 {#manage-assets}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -40,7 +40,7 @@ ht-degree: 10%
 * 에셋 파일 이름에는 다음 문자를 사용할 수 없습니다. `* / : [ \\ ] | # % { } ? &`
 * 에셋 폴더 이름에는 다음 문자를 사용할 수 없습니다. `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## 에셋 업로드 {#uploading-assets}
+## 자산 업로드 {#uploading-assets}
 
 다음을 참조하십시오 [Experience Manager에 디지털 에셋 추가](add-assets.md).
 
@@ -547,7 +547,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    렌더링된 PDF 파일로 돌아가서 새로 고칩니다. 새로 고친 PDF은 변경 사항을 반영합니다.
 
-## 에셋 버전 관리 {#asset-versioning}
+## 자산 버전 관리 {#asset-versioning}
 
 버전 관리는 특정 시점에 디지털 에셋의 스냅샷을 만듭니다. 버전 관리를 통해 에셋을 나중에 이전 상태로 복원할 수 있습니다. 예를 들어 에셋에 대한 변경 내용을 실행 취소하려면 편집되지 않은 버전의 에셋을 복원합니다.
 
@@ -634,7 +634,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 ## 컬렉션 {#collections}
 
-컬렉션은 순서가 지정된 에셋 세트입니다. 컬렉션을 사용하여 사용자 간에 에셋을 공유합니다.
+컬렉션은 순서가 지정된 에셋 세트입니다. 컬렉션을 사용하여 사용자 간에 자산을 공유합니다.
 
 * 이러한 에셋에 대한 참조만 포함하므로 컬렉션에는 서로 다른 위치의 에셋이 포함될 수 있습니다. 각 컬렉션은 자산의 참조 무결성을 유지합니다.
 * 편집, 보기 등을 포함하여 다양한 권한 수준을 가진 여러 사용자와 컬렉션을 공유할 수 있습니다.
@@ -675,3 +675,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
 * [일괄 메타데이터 가져오기](metadata-import-export.md)
+* [AEM 및 Dynamic Media에 자산 게시](/help/assets/publish-assets-to-aem-and-dm.md)

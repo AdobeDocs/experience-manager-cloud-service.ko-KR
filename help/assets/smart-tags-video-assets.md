@@ -4,9 +4,9 @@ description: Experience Manager은 을 사용하여 상황에 맞는 설명 스�
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1225'
 ht-degree: 3%
 
 ---
@@ -148,6 +148,7 @@ DAM에 이미 있는 비디오 자산은 자동으로 스마트 태그가 지정
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
 * [일괄 메타데이터 가져오기](metadata-import-export.md)
+* [AEM 및 Dynamic Media에 자산 게시](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

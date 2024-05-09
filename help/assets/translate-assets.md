@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '2603'
+source-wordcount: '2615'
 ht-degree: 17%
 
 ---
@@ -151,7 +151,7 @@ Adobe Experience Manager Assets에서 다국어 에셋은 폴더에 포함되며
 1. 번역 작업의 상태를 보려면 아래쪽의 생략 부호를 선택합니다 **[!UICONTROL 번역 작업]** 타일. <!-- For more details, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->
 1. 번역이 완료되면 상태가 검토 준비됨으로 변경됩니다. 에셋 UI로 이동하고 번역된 각 에셋에 대한 속성 페이지를 열어 번역된 메타데이터를 봅니다.
 
-### 언어 사본 업데이트 {#update-language-copies}
+### 언어 복사 업데이트 {#update-language-copies}
 
 이 워크플로우를 실행하여 추가 자산 세트를 번역하고 특정 로케일의 언어 사본에 포함합니다. 이 경우 번역된 에셋은 이전에 번역된 에셋이 이미 포함된 대상 폴더에 추가됩니다. 옵션 선택에 따라 번역 프로젝트가 생성되거나 기존 번역 프로젝트가 새 에셋에 대해 업데이트됩니다. 언어 사본 업데이트 워크플로에는 다음 옵션이 포함됩니다.
 
@@ -168,7 +168,7 @@ Adobe Experience Manager Assets에서 다국어 에셋은 폴더에 포함되며
 1. 선택 **[!UICONTROL 언어 사본 업데이트]** 맨 아래에
 1. 다음에서 **[!UICONTROL 프로젝트]** 목록, 선택 **[!UICONTROL 기존 번역 프로젝트에 추가]**.
 1. 다음에서 **[!UICONTROL 기존 번역 프로젝트]** 목록에서 번역을 위해 에셋을 추가할 프로젝트를 선택합니다.
-1. 선택 **[!UICONTROL 시작]**.
+1. **[!UICONTROL 시작]**&#x200B;을 선택합니다.
 1. 의 9~14단계 참조 [기존 번역 프로젝트에 추가](#add-to-existing-translation-project) 나머지 절차를 완료합니다.
 
 ### 임시 언어 사본 만들기 {#creating-temporary-language-copies}
@@ -294,3 +294,4 @@ If you want to apply a custom connector for the translation services you want to
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
 * [일괄 메타데이터 가져오기](metadata-import-export.md)
+* [AEM 및 Dynamic Media에 자산 게시](/help/assets/publish-assets-to-aem-and-dm.md)
