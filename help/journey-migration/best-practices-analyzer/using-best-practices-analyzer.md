@@ -2,9 +2,9 @@
 title: 모범 사례 분석기 사용
 description: 모범 사례 분석기를 사용하여 업그레이드 준비 상태를 이해하는 방법에 대해 알아봅니다.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: 077be031da7a610810d398b163676a98fc036f30
+source-git-commit: 0c7e38d1973458ef3212e816ced867423bd62e86
 workflow-type: tm+mt
-source-wordcount: '2661'
+source-wordcount: '2686'
 ht-degree: 38%
 
 ---
@@ -61,6 +61,11 @@ Best Practices Analyzer(BPA) 실행을 위한 중요한 고려 사항을 이해�
 ## 모범 사례 분석기 보고서 보기 {#viewing-report}
 
 ### Adobe Experience Manager 6.3.0 이상 {#aem-later-versions}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_bpa_upload_setup"
+>title="Best Practices Analyzer 보고서를 CAM에 자동 업로드"
+>abstract="생성된 BPA 보고서를 CAM(Cloud Acceleration Manager)에 자동으로 업로드하려면 BPA 업로드 키를 제공하십시오."
 
 모범 사례 분석기 보고서를 보는 방법에 대해 알아보려면 이 섹션을 따르십시오.
 
