@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: bf7afba2376b12b8d4f513db07c178209447e343
 workflow-type: tm+mt
 source-wordcount: '4917'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -852,7 +852,7 @@ ht-degree: 99%
          + [규칙을 사용하여 양식에 동적 비헤이비어 추가](/help/edge/docs/forms/rules-forms.md)
          + [양식 제출 후 사용자 정의 감사 메시지 표시](/help/edge/docs/forms/thank-you-page-form.md)
       + 기능 {#advanced-features-edge-delivery-services-forms}
-         + [양식 단편 사용](/help/edge/docs/forms/form-fragments.md)
+         + [양식 조각 사용](/help/edge/docs/forms/form-fragments.md)
          + [양식에 반복 가능한 섹션 추가&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
          + [양식 번역](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA를 사용하여 양식 보호](/help/edge/docs/forms/recaptacha-forms.md)
