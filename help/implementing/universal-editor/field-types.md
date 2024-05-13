@@ -2,10 +2,10 @@
 title: 모델 정의, 필드 및 구성 요소 유형
 description: 예가 포함된 속성 레일에서 유니버설 편집기가 편집할 수 있는 필드 및 구성 요소 유형에 대해 알아봅니다. 모델 정의를 만들고 구성 요소에 연결하여 나만의 앱을 계측하는 방법을 이해합니다.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: c2dd0ed800739c2194ab20267f72b85461f3c5b8
+source-git-commit: 111ce0c692432d1d0c25f416282bf2dbd655679b
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 10%
+source-wordcount: '1146'
+ht-degree: 11%
 
 ---
 
@@ -95,6 +95,7 @@ ht-degree: 10%
 | [부울](#boolean) | `boolean` |
 | [확인란 그룹](#checkbox-group) | `checkbox-group` |
 | [컨테이너](#container) | `container` |
+| [콘텐츠 조각](#content-fragment) | `aem-content-fragment` |
 | [날짜/시간](#date-time) | `date-time` |
 | [다중 선택](#multiselect) | `multiselect` |
 | [숫자](#number) | `number` |
