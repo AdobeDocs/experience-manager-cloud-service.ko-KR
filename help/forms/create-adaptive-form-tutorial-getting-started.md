@@ -7,9 +7,9 @@ role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 3eb2a7ce311f9e738a95ea5fcf6876f4df1fa648
+source-git-commit: e6c58c835798b16158ab4aca26e381ab8f36afd3
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '918'
 ht-degree: 2%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 2%
 
 AEM Forms은 양식 경험을 만들 수 있는 기초 구성 요소 및 핵심 구성 요소를 제공합니다. 핵심 구성 요소는 새로운 양식 경험을 만드는 현대적이고 권장되는 방법입니다. 핵심 구성 요소를 사용하는 이유 이러한 구성 요소는 가벼운 오픈 소스(github에서 사용 가능)이며, 뛰어난 Google 등대 및 웹 바이탈 점수를 제공하고, 접근성을 준수하며, AEM Sites의 모든 친숙한 기능(버전 관리 및 현지화 등)을 제공합니다. 또한 이러한 구성 요소는 스타일링이 더 쉬우므로 조직의 브랜딩 지침에 따라 모양을 쉽게 사용자 지정할 수 있습니다. 여기에는 서드파티 종속성이 없으며 JavaScript 및 CSS에 대한 지식을 가진 개발자가 이러한 구성 요소를 쉽게 사용자 지정할 수 있습니다.
 
-![적응형 Forms 기반의 핵심 구성 요소를 만드는 이유는 무엇입니까? 이러한 구성 요소는 가볍고, 스타일을 쉽게 지정하고, 높은 등대 점수를 제공하고, 접근성 표준을 지원하고, 쉽게 사용자 지정하고, 오픈 소스를 제공하고, github에서 사용할 수 있으며, 타사 라이브러리에 종속되지 않으며, AEM 개발자 및 AEM 작성자를 위한 학습 곡선이 거의 없습니다. AEM Forms 핵심 구성 요소 위에는 AEM WCM 핵심 구성 요소의 모든 기능이 있습니다.](/help/forms/assets/cc-core-components-benefits.png)
+![적응형 Forms 기반의 핵심 구성 요소를 만드는 이유는 무엇입니까? 이러한 구성 요소는 가볍고, 스타일을 쉽게 지정하고, 높은 등대 점수를 제공하고, 접근성 표준을 지원하고, 쉽게 사용자 지정하고, 오픈 소스를 제공하고, github에서 사용할 수 있으며, 타사 라이브러리에 종속되지 않으며, AEM 개발자 및 AEM 작성자를 위한 학습 곡선이 거의 없습니다. AEM Forms 핵심 구성 요소 위에는 AEM WCM 핵심 구성 요소의 모든 기능이 있습니다.](/help/forms/assets/cc-core-components-benefits.png){width="50%"}
 
 ## 사용 사례: 적응형 Forms으로 간소화된 주택 대출 사전 자격
 
@@ -79,10 +79,14 @@ AEM SDK를 사용한 로컬 개발은 시간을 절약하고 개발 프로세스
 1. [AEM Forms 추가 기능 추가](/help/forms/setup-local-development-environment.md#add-forms-archive-to-local-author-and-publish-instances-and-configure-forms-specific-users): 에서 AEM SDK 버전에 일치하는 AEM Forms 추가 기능을 다운로드하여 설치합니다. [소프트웨어 배포](https://experience.adobe.com/#/downloads) 포털.
    ![install-aem-forms-add-on](/help/forms/assets/install-aem-forms-add-on.png)
 
-   +++AEM Forms 추가 기능 설치
+   +++AEM Forms 추가 기능 설치:
 
-       AEM Forms 추가 기능을 설치하려면 AEM SDK를 중지하고 AEM Forms 추가 기능(.far) 파일을 &#39;AEM SDK/crx-quickstart/install&#39; 폴더에 추가한 다음 AEM SDK를 다시 시작합니다.
-   
+   AEM Forms 추가 기능을 설치하려면:
+
+   1. AEM SDK를 중지합니다.
+   1. AEM Forms 추가 기능(.far) 파일을 `AEM SDK/crx-quickstart/install` 폴더,
+   1. AEM SDK를 다시 시작합니다.
+
 +++
 
 1. [사용자 권한 구성](/help/forms/setup-local-development-environment.md#configure-users-and-permissions): 개발, 작성 및 기타 권한을 가진 사용자를 만들고 이러한 사용자를 사전 정의된 양식 그룹에 추가합니다.
@@ -90,7 +94,9 @@ AEM SDK를 사용한 로컬 개발은 시간을 절약하고 개발 프로세스
 
 1. [적응형 Forms 템플릿 추가](/help/forms/setup-local-development-environment.md#set-up-a-development-project-for-forms-based-on-experience-manager-archetype): AEM Archetype 48 이상을 사용하여 새 AEM 프로젝트를 만들고 AEM SDK에 배포합니다. 프로젝트는 적응형 Forms 템플릿을 AEM SDK에 추가합니다.
 
-   +++적응형 Forms 템플릿 추가
+   ![적응형 양식 템플릿](/help/forms/assets/adaptive-forms-templates.png)
+
+   +++AEM SDK에 적응형 Forms 템플릿 추가:
 
    1. 아래 명령을 실행하여 AEM 프로젝트를 만듭니다.
 
@@ -108,13 +114,12 @@ AEM SDK를 사용한 로컬 개발은 시간을 절약하고 개발 프로세스
       mvn -PautoInstallPackage clean install
       ```
 
-+++
-
    AEM 프로젝트를 배포하면 환경에 적응형 Forms 템플릿을 볼 수 있습니다.
 
-   ![적응형 양식 템플릿](/help/forms/assets/adaptive-forms-templates.png)
++++
 
-로컬 AEM Forms 개발 환경 설정에 대한 단계별 안내서는 을 참조하십시오. [AEM Forms용 로컬 개발 환경 설정](/help/forms/setup-local-development-environment.md)
+
+로컬 AEM Forms 개발 환경 설정에 대한 자세한 지침 및 단계별 안내서는 다음을 참조하십시오. [AEM Forms용 로컬 개발 환경 설정](/help/forms/setup-local-development-environment.md) 기사.
 
 
 
