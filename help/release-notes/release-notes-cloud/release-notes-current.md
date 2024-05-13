@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 1a01a18008316c4d02553316020ec0c2a3f3cd57
+source-git-commit: c8b78ec6f1c7ff43950778fdd429a0aefff9856e
 workflow-type: tm+mt
-source-wordcount: '2655'
-ht-degree: 73%
+source-wordcount: '2696'
+ht-degree: 74%
 
 ---
 
@@ -87,6 +87,13 @@ Have a look at the April 2024 Release Overview video for a summary of the featur
 
 이제 [여러 폴더에 메타데이터 양식을 할당하거나 제거](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder)할 수 있습니다.
 
+### 관리자 보기의 새로운 기능 {#admin-view-new-features}
+
+**링크 공유 구성**
+
+관리자가 사용자를 위해 이 기능의 기본 동작을 사용자 정의할 수 있는 새로운 구성 집합과 함께 [링크 공유를 만드는](/help/assets/share-assets.md) 향상된 새로운 사용자 환경입니다.
+
+![링크 공유 구성](/help/assets/assets/config-email-service.png)
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
