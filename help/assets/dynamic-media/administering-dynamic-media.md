@@ -2,12 +2,13 @@
 title: Dynamic Media 설정
 description: Dynamic Media을 설정하려면 Dynamic Media을 구성하고 이미지 및 뷰어 사전 설정을 관리해야 합니다.
 contentOwner: Rick Brough
+feature: Configuration,Viewer Presets,Image Presets,Dynamic Media
 role: Admin,User
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 22%
+source-wordcount: '172'
+ht-degree: 23%
 
 ---
 
@@ -42,4 +43,3 @@ Dynamic Media을 관리하는 경우 다음 항목이 유용합니다.
 >**업그레이드하는 경우:**
 >
 >* Adobe 후 [!DNL Experience Manager] 업로드한 모든 에셋은 시스템 관리자가 명시적으로 비활성화하지 않은 경우 자동으로 Dynamic Media이 활성화됩니다. 의 업그레이드된 인스턴스에 있는 경우 [!DNL Experience Manager] Dynamic Media을 처음 사용하는 경우 자산을 재처리하여 Dynamic Media을 활성화해야 할 수 있습니다. 다음을 참조하십시오 [폴더에서 에셋 재처리](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
-

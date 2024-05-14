@@ -2,12 +2,13 @@
 title: 선택기를 사용하여 작업
 description: Dynamic Media에서 대화형 이미지, 대화형 비디오 및 회전 배너에 사용할 자산을 선택하는 데 사용할 수 있는 방법에 대해 알아봅니다.
 contentOwner: Rick Brough
+feature: Selectors,Interactive Images,Interactive Videos,Carousel Banners
 role: User
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 3%
+source-wordcount: '745'
+ht-degree: 5%
 
 ---
 
@@ -111,4 +112,4 @@ ht-degree: 3%
 1. 에셋을 선택하려면 확인 표시를 선택합니다. 에셋이 표시됩니다.
 
    ![chlimage_1-536](assets/chlimage_1-536.png)
--->
+—>

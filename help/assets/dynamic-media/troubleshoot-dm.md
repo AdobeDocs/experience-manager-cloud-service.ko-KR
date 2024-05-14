@@ -2,11 +2,12 @@
 title: Dynamic Media 문제 해결
 description: Dynamic Media에서 이미지, 세트 및 뷰어로 작업할 때 시도할 수 있는 문제 해결 팁에 대해 알아봅니다.
 contentOwner: Rick Brough
+feature: Troubleshooting,Image Sets,Viewers
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1141'
 ht-degree: 1%
 
 ---
@@ -42,7 +43,7 @@ CRXDE Lite에서 다음 에셋 속성을 검토하여 Adobe Experience Manager�
 
 기존 Dynamic Media 에셋(동일한 이름 및 위치)을 바꿀 때 두 에셋을 모두 유지하거나 버전을 대체/만들 수 있습니다.
 
-* 둘 다 유지하면 게시된 에셋 URL에 대해 고유한 이름의 에셋이 만들어집니다. 예를 들어, `image.jpg` 은(는) 원본 자산이며 `image1.jpg` 는 새로 업로드한 에셋입니다.
+* 둘 다 유지하면 게시된 에셋 URL에 대해 고유한 이름의 에셋이 만들어집니다. 예를 들어, `image.jpg` 은(는) 원래 자산이며 `image1.jpg` 는 새로 업로드한 에셋입니다.
 
 * Dynamic Media에서는 버전 만들기가 지원되지 않습니다. 새 버전은 게재의 기존 에셋을 대체합니다.
 
@@ -138,7 +139,7 @@ CRXDE Lite에서 다음 에셋 속성을 검토하여 Adobe Experience Manager�
     </ul> </td>
    <td>
     <ol>
-     <li>Cloud Services 아래의 Dynamic Media 구성이 올바르게 설정되었는지 확인합니다.</li>
+     <li>Cloud Service 아래의 Dynamic Media 구성이 올바르게 설정되었는지 확인합니다.</li>
      <li>폴더에 비디오 프로필이 있는지 확인합니다. 또한 비디오 프로필을 확인합니다.</li>
     </ol> </td>
   </tr>
@@ -215,7 +216,7 @@ CRXDE Lite에서 다음을 수행합니다.
 1. CRX 패키지 관리자로 이동합니다. `https://localhost:4502/crx/packmgr/`.
 1. 목록에서 뷰어 패키지를 검색합니다. 다음으로 시작합니다. `cq-dam-scene7-viewers-content`.
 1. 선택 **다시 설치**.
-1. Cloud Services에서 Dynamic Media 구성 페이지로 이동한 다음, Dynamic Media - S7 구성에 대한 구성 대화 상자를 엽니다.
+1. Cloud Service에서 Dynamic Media 구성 페이지로 이동한 다음, Dynamic Media - S7 구성에 대한 구성 대화 상자를 엽니다.
 1. 변경하지 않고 다음을 선택합니다. **저장**.
 이 저장 작업은 샘플 에셋, 뷰어 사전 설정 CSS 및 아트워크를 만들고 동기화하기 위한 논리를 다시 트리거합니다.
 
@@ -236,4 +237,4 @@ CRXDE Lite에서 다음을 수행합니다.
 1. 삭제 `viewer` 폴더를 삭제합니다.
 1. CRXDE Lite 페이지의 왼쪽 상단 모서리 근처에서 을 선택합니다. **[!UICONTROL 모두 저장]**.
 1. CRXDE Lite 페이지의 왼쪽 상단 모서리에서 **다시 홈으로** 아이콘.
-1. 다시 만들기 [Cloud Services의 Dynamic Media 구성](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
+1. 다시 만들기 [Cloud Service의 Dynamic Media 구성](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).

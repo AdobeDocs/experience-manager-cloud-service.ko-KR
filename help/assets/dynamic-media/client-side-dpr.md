@@ -2,11 +2,12 @@
 title: 클라이언트측 장치 픽셀 비율이 있는 스마트 이미징 사용
 description: Dynamic Media을 사용하는 Adobe Experience Manager as a Cloud Service에서 스마트 이미징과 함께 클라이언트측 장치 픽셀 비율을 사용하는 방법에 대해 알아봅니다.
 contentOwner: Rick Brough
+feature: Device Pixel Ratio,Smart Imaging
 role: Admin,User
 exl-id: 556710c7-133c-487a-8cd9-009a5912e94c
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '322'
 ht-degree: 0%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 현재 스마트 이미징 솔루션은 사용자 에이전트 문자열을 사용하여 사용 중인 장치 유형(데스크탑, 태블릿, 모바일 등)을 결정합니다.
 
-사용자 에이전트 문자열에 기반한 DPR과 같은 장치 탐지 기능은 특히 Apple 장치의 경우 부정확할 때가 많습니다. 또한 새 장치를 시작할 때마다 장치의 유효성을 검사해야 합니다.
+사용자 에이전트 문자열에 기반한 DPR과 같은 디바이스 감지 기능은 특히 Apple 디바이스의 경우 부정확할 때가 많습니다. 또한 새 장치를 시작할 때마다 장치의 유효성을 검사해야 합니다.
 
 클라이언트측 DPR은 Apple 또는 출시된 다른 모든 새 장치에 대해 100% 정확한 값을 제공하고 작동합니다.
 
@@ -73,4 +74,3 @@ ht-degree: 0%
 >[!MORELIKETHIS]
 >
 >* [스마트 이미징](/help/assets/dynamic-media/imaging-faq.md)
-

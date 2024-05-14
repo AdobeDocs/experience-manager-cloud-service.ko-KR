@@ -2,11 +2,12 @@
 title: 콘텐츠 FAQ의 HTTP2 게재
 description: HTTP2 콘텐츠 전달에 대해 알아보고 브라우저와 서버 간의 통신을 개선하여 정보를 더 빠르게 전송하는 방법에 대해 알아봅니다.
 contentOwner: Rick Brough
+feature: Dynamic Media,Configuration,FAQ
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '798'
 ht-degree: 1%
 
 ---
@@ -52,9 +53,9 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
 
 ## 내 Dynamic Media 계정에 대해 HTTP/2를 활성화하는 프로세스는 무엇입니까? {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
-[Admin Console을 사용하여 지원 사례 만들기](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) 및 HTTP/2로 전환하도록 요청합니다. 이 작업은 자동으로 수행되지 않습니다.
+[Admin Console을 사용하여 지원 사례 만들기](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html) 및 HTTP/2로 전환하도록 요청합니다. 이 작업은 자동으로 수행되지 않습니다.
 
-1. 지원 사례에 다음 정보를 입력합니다.
+1. 지원 사례에 다음 정보를 제공하십시오.
 
    * 기본 담당자 이름, 이메일 및 전화번호.
    * HTTP2로 전환할 모든 도메인. 즉, `images.company.com` 또는 `mycompany.scene7.com`.

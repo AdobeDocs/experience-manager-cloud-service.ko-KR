@@ -2,11 +2,12 @@
 title: 규칙 세트를 사용하여 URL 변환
 description: 'Dynamic Media에서 규칙 세트를 배포하여 URL을 변환하는 방법에 대해 알아봅니다. 규칙 세트는 XML 데이터를 평가하고 해당 데이터가 특정 조건을 충족하는 경우 특정 작업을 수행하는 스크립팅 언어(예: JavaScript)로 작성된 명령 세트입니다.'
 contentOwner: Rick Brough
+feature: Rulesets,Troubleshooting,Upload
 role: User
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: ad2b36ffa178d787f50d33ce3393a76811467323
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '720'
 ht-degree: 0%
 
 ---
@@ -18,18 +19,18 @@ Dynamic Media에서 규칙 세트를 배포하여 URL을 변환할 수 있습니
 * MIME 유형 접미사 추가. 대부분의 서비스 및 웹 사이트에는 추가와 같은 이미지 접미사가 필요합니다 `.jpg` URL로.
 * SEO(검색 엔진 최적화) 목적으로 URL에 대한 폴더 경로 만들기.
 
-   다음을 참조하십시오 [Adobe Dynamic Media Classic에서 SEO를 지원하는 방법](/help/assets/dynamic-media/assets/s7_seo.pdf).
+  다음을 참조하십시오 [Adobe Dynamic Media Classic에서 SEO를 지원하는 방법](/help/assets/dynamic-media/assets/s7_seo.pdf).
 
 * SEO(검색 엔진 최적화) 목적으로 URL에 메타데이터 추가.
 
-   다음을 참조하십시오 [Adobe Dynamic Media Classic에서 SEO를 지원하는 방법](/help/assets/dynamic-media/assets/s7_seo.pdf).
+  다음을 참조하십시오 [Adobe Dynamic Media Classic에서 SEO를 지원하는 방법](/help/assets/dynamic-media/assets/s7_seo.pdf).
 
 * 다운로드를 트리거할 컨텐츠 처리 설정.
 * 개인화를 위해 이미지 제공 템플릿 URL을 단순화합니다. 예를 들어, turn `rgb{XX,YY,ZZ}` RTF-ready로 `\redXX\greenYY\blueZZ`
 
 * 다음과 같은 특정 문자를 인코딩하도록 요청합니다. `$`, `{`, 및 `}`및 ImageServer로 디코딩할 특정 문자입니다. 예를 들어 Facebook은 특수 문자가 포함된 URL에서 잘 작동하지 않습니다.
 
-   다음을 참조하십시오 [URL에서 특수 문자 제거](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
+  다음을 참조하십시오 [URL에서 특수 문자 제거](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
 
 Dynamic Media의 컨텍스트에서 XML 기반 시스템을 사용하여 에셋 정보를 관리하는 웹 사이트는 XML 파일을 Dynamic Media에 업로드할 수 있습니다. 이러한 파일 중 하나를 Dynamic Media 에셋 제공을 위한 전처리 규칙 세트 파일로 지정할 수 있습니다. 이 파일은 Dynamic Media과 통합되는 시스템의 회사 논리에 맞게 표준 URL 프로토콜 형식을 재구성합니다. 규칙 세트 정의 파일 경로로 사용할 XML 파일을 지정합니다.
 
