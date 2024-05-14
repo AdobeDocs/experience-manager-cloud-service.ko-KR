@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: c8b78ec6f1c7ff43950778fdd429a0aefff9856e
+source-git-commit: 39697467c5d06c5a82d701ecc2e05702535efd6c
 workflow-type: tm+mt
-source-wordcount: '2696'
-ht-degree: 74%
+source-wordcount: '2720'
+ht-degree: 99%
 
 ---
 
@@ -32,13 +32,11 @@ ht-degree: 74%
 
 [ 여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
 
-<!-- ## Release Video {#release-video}
+## 릴리스 비디오 {#release-video}
 
-Have a look at the April 2024 Release Overview video for a summary of the features added in the 2024.4.0 release:
+2024년 4월 릴리스 개요 비디오를 통해 2024.4.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3429111?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -222,75 +220,75 @@ AEM 6.5와 유사하게 Apache/Dispatcher는 게시 저장소의 특정 위치�
 ## [!DNL Experience Manager] 안내서 {#guides}
 
 
-### 사전 구성된 언어 그룹을 사용하여 콘텐츠를 여러 언어로 번역
+### 사전 구성된 언어 그룹을 사용하여 콘텐츠를 여러 언어로 번역하는 기능
 
-이제 Experience Manager 안내서를 통해 언어 그룹을 만들고 콘텐츠를 여러 언어로 쉽게 번역할 수 있습니다. 이 기능은 조직의 필요에 따라 번역을 구성하고 관리하는 데 도움이 됩니다.
+이제 Experience Manager Guides를 사용하면 언어 그룹을 만들고 콘텐츠를 여러 언어로 간편하게 번역할 수 있습니다. 이 기능은 조직의 필요에 따라 번역을 구성하고 관리하는 데 도움이 됩니다.
 
-예를 들어, 유럽의 일부 국가에 대한 콘텐츠를 번역해야 하는 경우 영어(EN), 프랑스어(FR), 독일어(DE), 스페인어(ES) 및 이탈리아어(IT)와 같은 유럽 언어의 언어 그룹을 만들 수 있습니다.
+예를 들어 유럽 일부 국가의 콘텐츠를 번역해야 하는 경우 영어(EN), 프랑스어(FR), 독일어(DE), 스페인어(ES), 이탈리아어(IT)와 같은 유럽 언어에 대한 언어 그룹을 만들 수 있습니다.
 
 ![번역 패널](../assets/guides/translation-languages-2404.png)
 
-*문서를 번역할 언어 그룹을 선택합니다.*
+*문서를 번역하려는 언어 그룹 또는 언어를 선택합니다.*
 
 >[!NOTE]
 >
->언어의 대상 폴더가 없거나 대상 언어가 소스와 동일한 경우 해당 폴더가 회색으로 표시되고 경고 기호가 표시됩니다.
+>언어의 대상 폴더가 없거나 대상 언어가 소스와 동일한 경우 회색으로 표시되며 경고 기호가 나타납니다.
 
-관리자는 언어 그룹을 만들어 여러 폴더 프로필로 구성할 수 있습니다. 작성자는 폴더 프로필에 구성된 언어 그룹을 볼 수 있습니다.
-
-
-전반적으로 언어 그룹을 만들면 번역 프로젝트의 효율성과 생산성을 향상시킬 수 있으므로 다국어 현지화 프로세스를 향상시킬 수 있습니다.
+관리자는 언어 그룹을 생성하고 이를 여러 폴더 프로필로 구성할 수 있습니다. 작성자는 폴더 프로필에 구성된 언어 그룹을 조회할 수 있습니다.
 
 
-방법 알아보기 [웹 편집기에서 문서 번역](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/translate-documents-web-editor)
+언어 그룹을 만들면 번역 프로젝트의 전반적인 효율성과 생산성이 향상되어 궁극적으로 여러 언어에 대한 현지화 프로세스가 개선됩니다.
 
-### 저장소 보기에서 파일을 검색하고 필터링할 수 있도록 경험이 개선되었습니다.
 
-이제 파일을 필터링하는 동안 향상된 환경을 사용할 수 있습니다. 파일을 필터링하는 기능이 개선되어 파일을 쉽게 검색하고 탐색할 수 있습니다.
+[웹 편집기에서 문서를 번역하는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/translate-documents-web-editor) 알아보기
+
+### 저장소 보기에서 파일을 검색하고 필터링하도록 향상된 환경
+
+이제 파일을 필터링하는 동안 향상된 환경을 경험할 수 있습니다. 향상된 파일 필터링 기능은 파일을 쉽게 검색하고 탐색할 수 있는 향상된 방법을 제공합니다.
 
 ![저장소 보기에서 파일 검색](../assets/guides/repository-filter-search-2404.png)
 
 *텍스트가 포함된 파일 검색`general purpose.`*
 
-관련 파일에 대한 빠른 액세스 및 보다 직관적인 사용자 인터페이스와 같은 이점을 활용하여 보다 유연하고 효율적인 검색 환경을 구축할 수 있습니다.
+관련 파일에 대한 더 빠른 액세스, 더 직관적인 사용자 인터페이스 등의 이점을 활용하여 검색 환경을 더욱 원활하고 효율적으로 만들어 보십시오.
 
 ![빠른 검색 필터 ](../assets/guides/repository-filter-search-quick.png)
 
 *빠른 필터를 사용하여 DITA 및 비 DITA 파일을 검색합니다.*
 
-에 대해 자세히 알아보기 **검색 필터링** 의 기능 [왼쪽 패널](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS) 섹션.
+[왼쪽 패널](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS) 섹션의 **필터 검색** 기능에 대해 자세히 알아보십시오.
 
-### 데이터 소스 커넥터의 개선 사항
+### 데이터 소스 커넥터의 향상된 기능
 
-2024.4.0 릴리스의 데이터 소스 커넥터에 다음과 같은 기능이 개선되었습니다.
+2024.4.0 릴리스에는 데이터 소스 커넥터에 대한 다음과 같은 개선 사항이 포함됩니다.
 
-#### Salsify, Akeneo 및 Microsoft Azure ADO(DevOps Boards) 데이터 소스에 연결
+#### Salsify, Akeneo 및 Microsoft Azure DevOps Boards (ADO) 데이터 소스에 연결
 
-Experience Manager 가이드는 기존 기본 커넥터 외에도 Salsify, Akeneo 및 Microsoft Azure ADO(DevOps Boards) 데이터 소스에 대한 커넥터도 제공합니다. 관리자는 이러한 커넥터를 다운로드하여 설치할 수 있습니다. 그런 다음 설치된 커넥터를 구성합니다.
+기존의 기본 제공 커넥터 외에도 Experience Manager Guides는 Salsify, Akeneo 및 Microsoft Azure DevOps Boards (ADO) 데이터 소스에 대한 커넥터를 제공합니다. 관리자는 이러한 커넥터를 다운로드하고 설치할 수 있습니다. 그런 다음 설치된 커넥터를 구성합니다.
 
-#### 샘플 쿼리를 복사하여 붙여넣어 콘텐츠 조각 또는 항목 만들기
+#### 샘플 쿼리를 복사하고 붙여넣어 콘텐츠 스니펫 또는 주제 만들기
 
-샘플 데이터 쿼리를 쉽게 복사하여 생성기에 붙여넣어 콘텐츠 조각 또는 주제를 만들 수 있습니다. 이 기능을 사용하면 구문을 기억하거나 쿼리를 수동으로 만들 필요가 없습니다. 쿼리를 수동으로 입력하는 대신 샘플 쿼리를 복사하여 붙여 넣고 편집한 다음 이를 사용하여 요구 사항에 따라 데이터를 가져올 수 있습니다.
+생성기에서 샘플 데이터 쿼리를 손쉽게 복사하고 붙여넣어 콘텐츠 스니펫이나 주제를 생성할 수 있습니다. 이 기능을 사용하면 구문을 기억하거나 쿼리를 수동으로 만들 필요가 없습니다. 쿼리를 수동으로 입력하는 대신 샘플 쿼리를 복사하여 붙여넣고 편집한 후 요구 사항에 따라 데이터를 가져오는 데 사용할 수 있습니다.
 
-![콘텐츠 조각 삽입 대화 상자](../assets/guides/insert-content-snippet.png)
+![콘텐츠 스니펫 삽입 대화 상자](../assets/guides/insert-content-snippet.png)
 
-*샘플 쿼리를 복사하여 편집하여 콘텐츠 스니펫을 만듭니다.*
+*샘플 쿼리를 복사하고 편집하여 콘텐츠 스니펫을 만듭니다.*
 
 #### 파일 커넥터를 사용하여 JSON 데이터 파일에 연결
 
 
-이제 관리자는 JSON 데이터 파일을 데이터 소스로 사용하도록 JSON 파일 커넥터를 구성할 수 있습니다. 커넥터를 사용하여 컴퓨터 또는 Adobe Experience Manager Assets에서 JSON 파일을 가져옵니다. 그런 다음 작성자는 생성기를 사용하여 콘텐츠 조각 또는 주제를 만들 수 있습니다.
+이제 관리자는 JSON 데이터 파일을 데이터 소스로 사용하도록 JSON 파일 커넥터를 구성할 수 있습니다. 커넥터를 사용하여 컴퓨터 또는 Adobe Experience Manager Assets에서 JSON 파일을 가져옵니다. 그런 다음 작성자는 생성기를 사용하여 콘텐츠 조각이나 주제를 만들 수 있습니다.
 
-이 기능은 JSON 파일에 저장된 데이터를 사용하고 다양한 스니펫에서 재사용하는 데 도움이 됩니다. JSON 파일을 업데이트할 때마다 콘텐츠가 동적으로 업데이트됩니다.
+이 기능을 사용하면 JSON 파일에 저장된 데이터를 사용하고 다양한 스니펫에서 재사용할 수 있습니다. JSON 파일을 업데이트할 때마다 콘텐츠도 동적으로 업데이트됩니다.
 
-#### 콘텐츠 조각 또는 항목을 만들려면 커넥터에 대한 여러 리소스 URL을 구성합니다.
+#### 콘텐츠 스니펫 또는 주제를 생성하기 위해 커넥터에 대한 여러 리소스 URL 구성
 
-관리자는 일반 REST 클라이언트, Salsify, Akeneo 및 Microsoft Azure DevOps 보드(ADO)와 같은 일부 커넥터에 대해 여러 리소스 URL을 구성할 수 있습니다.
-그런 다음 작성자는 데이터 소스와 연결하여 생성기를 사용하여 콘텐츠 조각 또는 주제를 만듭니다. 이 기능은 각 URL에 대한 데이터 소스를 만들 필요가 없으므로 편리합니다. 따라서 단일 콘텐츠 조각 또는 주제의 특정 데이터 소스에 대한 리소스에서 데이터를 빠르게 가져올 수 있습니다. Data Source Connectors 및 방법에 대한 자세한 내용 보기 [사용자 인터페이스에서 데이터 소스 커넥터 구성](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools). 방법 알아보기 [데이터 소스의 데이터 사용](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet).
+관리자는 일반 REST 클라이언트, Salsify, Akeneo 및 Microsoft Azure DevOps Boards(ADO)와 같은 일부 커넥터에 대해 여러 리소스 URL을 구성할 수 있습니다.
+그런 다음 작성자는 데이터 소스에 연결하여 생성기를 사용하여 콘텐츠 스니펫이나 주제를 만듭니다. 이 기능을 사용하면 각 URL에 대한 데이터 소스를 만들 필요가 없기 때문에 유용합니다. 이는 단일 콘텐츠 스니펫 또는 주제의 특정 데이터 소스에 대한 모든 리소스에서 데이터를 빠르게 가져오는 데 도움이 됩니다. 데이터 소스 커넥터에 대한 자세한 내용과 [사용자 인터페이스에서 데이터 소스 커넥터를 구성하는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools)을 확인하십시오. [데이터 소스의 데이터를 사용하는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet)에 대해 알아봅니다.
 
-새로운 기능 및 향상된 기능에 대한 자세한 내용은 [2024.04.0 릴리스의 새로운 기능](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
+새로운 기능 및 개선 사항에 대한 자세한 내용은 [2024.04.0 릴리스의 새로운 기능](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0)을 참조하십시오.
 
-이 릴리스에서 수정된 문제 목록은 다음을 참조하십시오. [2024.4.0 릴리스의 문제가 해결되었습니다.](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/fixed-issues-2024-04-0).
+이 릴리스에서 해결된 문제 목록을 보려면 [2024.4.0 릴리스에서 해결된 문제](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/fixed-issues-2024-04-0)를 확인하십시오.
 
 ## Cloud Manager {#cloud-manager}
 
