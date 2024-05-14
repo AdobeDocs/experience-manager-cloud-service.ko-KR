@@ -3,10 +3,10 @@ title: Edge Delivery Services용 콘텐츠 게시
 description: Edge Delivery Services를 통한 콘텐츠 게시 방법과 Edge Delivery Services를 사용한 AEM 콘텐츠 게시 방법을 알아보십시오.
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
-source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
-workflow-type: ht
-source-wordcount: '280'
-ht-degree: 100%
+source-git-commit: c85a82161a7594588290793c89ecbe1f0f60a56d
+workflow-type: tm+mt
+source-wordcount: '294'
+ht-degree: 92%
 
 ---
 
@@ -26,7 +26,7 @@ Universal Editor를 사용하여 AEM 콘텐츠를 작성하는 경우, Universal
 
 >[!NOTE]
 >
->작성 UI 또는 워크플로에서 게시된 경로는 하루에 최대 5000개까지 허용됩니다. 대량 게시 작업 부하를 유발하는 통합은 지원되지 않습니다.
+>작성 UI 또는 워크플로에서 게시된 경로는 하루에 최대 5000개까지 허용됩니다. 벌크 게시 작업 로드를 만드는 통합은 지원되지 않습니다. 프로젝트에 더 높은 용량이 필요한 경우 다음을 위해 제안하십시오. [VIP 프로그램](https://www.aem.live/vip/intake).
 
 ![AEM에서 Edge Delivery Services로 게시할 때 정보 흐름](assets/publishing-flow.png)
 
