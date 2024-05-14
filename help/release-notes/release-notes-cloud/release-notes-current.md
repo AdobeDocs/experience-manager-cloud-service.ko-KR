@@ -240,7 +240,7 @@ AEM 6.5와 유사하게 Apache/Dispatcher는 게시 저장소의 특정 위치�
 언어 그룹을 만들면 번역 프로젝트의 전반적인 효율성과 생산성이 향상되어 궁극적으로 여러 언어에 대한 현지화 프로세스가 개선됩니다.
 
 
-[웹 편집기에서 문서를 번역하는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/translate-documents-web-editor) 알아보기
+[웹 편집기에서 문서를 번역하는 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/translate-documents-web-editor) 알아보기
 
 ### 저장소 보기에서 파일을 검색하고 필터링하도록 향상된 환경
 
@@ -256,7 +256,7 @@ AEM 6.5와 유사하게 Apache/Dispatcher는 게시 저장소의 특정 위치�
 
 *빠른 필터를 사용하여 DITA 및 비 DITA 파일을 검색합니다.*
 
-[왼쪽 패널](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS) 섹션의 **필터 검색** 기능에 대해 자세히 알아보십시오.
+[왼쪽 패널](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS) 섹션의 **필터 검색** 기능에 대해 자세히 알아보십시오.
 
 ### 데이터 소스 커넥터의 향상된 기능
 
@@ -284,11 +284,11 @@ AEM 6.5와 유사하게 Apache/Dispatcher는 게시 저장소의 특정 위치�
 #### 콘텐츠 스니펫 또는 주제를 생성하기 위해 커넥터에 대한 여러 리소스 URL 구성
 
 관리자는 일반 REST 클라이언트, Salsify, Akeneo 및 Microsoft Azure DevOps Boards(ADO)와 같은 일부 커넥터에 대해 여러 리소스 URL을 구성할 수 있습니다.
-그런 다음 작성자는 데이터 소스에 연결하여 생성기를 사용하여 콘텐츠 스니펫이나 주제를 만듭니다. 이 기능을 사용하면 각 URL에 대한 데이터 소스를 만들 필요가 없기 때문에 유용합니다. 이는 단일 콘텐츠 스니펫 또는 주제의 특정 데이터 소스에 대한 모든 리소스에서 데이터를 빠르게 가져오는 데 도움이 됩니다. 데이터 소스 커넥터에 대한 자세한 내용과 [사용자 인터페이스에서 데이터 소스 커넥터를 구성하는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools)을 확인하십시오. [데이터 소스의 데이터를 사용하는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet)에 대해 알아봅니다.
+그런 다음 작성자는 데이터 소스에 연결하여 생성기를 사용하여 콘텐츠 스니펫이나 주제를 만듭니다. 이 기능을 사용하면 각 URL에 대한 데이터 소스를 만들 필요가 없기 때문에 유용합니다. 이는 단일 콘텐츠 스니펫 또는 주제의 특정 데이터 소스에 대한 모든 리소스에서 데이터를 빠르게 가져오는 데 도움이 됩니다. 데이터 소스 커넥터에 대한 자세한 내용과 [사용자 인터페이스에서 데이터 소스 커넥터를 구성하는 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools)을 확인하십시오. [데이터 소스의 데이터를 사용하는 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet)에 대해 알아봅니다.
 
-새로운 기능 및 개선 사항에 대한 자세한 내용은 [2024.04.0 릴리스의 새로운 기능](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0)을 참조하십시오.
+새로운 기능 및 개선 사항에 대한 자세한 내용은 [2024.04.0 릴리스의 새로운 기능](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0)을 참조하십시오.
 
-이 릴리스에서 해결된 문제 목록을 보려면 [2024.4.0 릴리스에서 해결된 문제](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/fixed-issues-2024-04-0)를 확인하십시오.
+이 릴리스에서 해결된 문제 목록을 보려면 [2024.4.0 릴리스에서 해결된 문제](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/fixed-issues-2024-04-0)를 확인하십시오.
 
 ## Cloud Manager {#cloud-manager}
 
