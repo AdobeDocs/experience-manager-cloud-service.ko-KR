@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 79dcf8a4e9834beeb466ed9270a3f5c6aa67aa9a
+source-git-commit: 3be366e5fa0a7625203a052426be6a2fd2412cf6
 workflow-type: tm+mt
 source-wordcount: '723'
-ht-degree: 28%
+ht-degree: 26%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 28%
 
 다음은 2024년 5월 1일에 공개적으로 릴리스된 유지 보수 릴리스 16145에 대한 지속적인 개선 사항을 요약합니다. 이전 유지 관리 릴리스는 릴리스 15977.
 
-이 유지 관리 릴리스(2024.4.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
+2024.5.0 기능 활성화는 이 유지 관리 릴리스에 대한 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
 
 ### 개선 사항 {#enhancements-16145}
 
