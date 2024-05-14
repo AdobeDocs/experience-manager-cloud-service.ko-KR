@@ -3,10 +3,10 @@ title: AEM Forms Edge Delivery Services 양식 게시
 description: AEM Forms Edge Delivery Services 양식 게시
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
-source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
-workflow-type: ht
+source-git-commit: 708b63aca6b1613dbedf193edd07aadc510ff859
+workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -87,15 +87,17 @@ ht-degree: 100%
    개발 또는 테스트 목적으로는 미리보기 URL(.page URL)을 사용하고, 프로덕션용으로는 게시 URL(.live)을 사용합니다. 다음은 미리보기 및 게시 URL의 예입니다.
 
    **미리보기 URL**
-| 양식  |
-|---|
-| [https://main--wefinance--wkndforms.hlx.page/enquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json)  |
+
+   | 양식 |
+   |---|
+   | [https://main--wefinance--wkndforms.hlx.page/enquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json) |
 
 
    **게시 URL**
-| 양식  |
-|---|
-| [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json)  |
+
+   | 양식 |
+   |---|
+   | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
 
 1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content)을 사용하여 웹 페이지를 미리 봅니다. 이제 페이지에 양식이 표시됩니다. 예를 들어 다음은 [문의 스프레드시트](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0)를 기반으로 한 양식입니다.
 
