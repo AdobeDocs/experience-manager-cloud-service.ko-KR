@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3eb2a7ce311f9e738a95ea5fcf6876f4df1fa648
+source-git-commit: 96ca7fce2cfa6ee337a4faa50a2434fd26bd9f0e
 workflow-type: tm+mt
-source-wordcount: '4930'
+source-wordcount: '4941'
 ht-degree: 99%
 
 ---
@@ -190,6 +190,7 @@ ht-degree: 99%
    + [WAF 규칙이 포함된 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service 보안 고려 사항](/help/security/security-considerations.md)
    + [Adobe Developer Console에서 JWT 자격 증명 사용 중단](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [Sling 서비스 사용자 매핑 및 서비스 사용자 정의에 대한 우수 사례](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
 + 온보딩 {#onboarding}
    + [여기에서 시작](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + 온보딩 여정 {#journey}
