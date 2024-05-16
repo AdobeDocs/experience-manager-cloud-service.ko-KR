@@ -5,7 +5,7 @@ exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 source-git-commit: 0c56cfdd2c18d3bc77edafdbda3f99fbc43f12cf
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 6%
+ht-degree: 9%
 
 ---
 
@@ -31,12 +31,12 @@ CAM(Cloud Acceleration Manager)에서 프로젝트를 생성했으면 이제 준
    >[!NOTE]
    >자세한 내용은 Cloud Acceleration Manager에서 프로젝트 만들기 및 관리 를 참조하십시오.
 
-## Best Practices Analysis 카드 사용 {#best-practices-analysis}
+## 모범 사례 분석 카드 사용 {#best-practices-analysis}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_bpa"
 >title="모범 사례 분석 보고서"
->abstract="BPA 보고서를 CAM에 업로드하여 AEM으로의 마이그레이션에 대한 분석을 as a Cloud Service으로 제공할 수 있습니다."
+>abstract="BPA 보고서를 CAM에 업로드하여 AEM as a Cloud Service로의 마이그레이션과 관련된 분석을 제공할 수 있습니다."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer" text="모범 사례 분석기 사용"
 
 1. 클릭 **리뷰** 다음에서 **모범 사례 분석** 카드.
