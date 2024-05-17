@@ -3,14 +3,13 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선
 description: 자산 선택기를 사용하여 애플리케이션 내에서 자산의 메타데이터와 렌디션을 검색하고 찾을 수 있습니다.
 contentOwner: KK
 role: Admin,User
-exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: b9fe6f4c2f74d5725575f225f8d9eb2e5fbfceb7
+exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
+source-git-commit: 2ce64892cd5bf414d328a9112c47092b762d3668
 workflow-type: tm+mt
 source-wordcount: '3908'
 ht-degree: 45%
 
 ---
-
 
 # 마이크로 프론트엔드 자산 선택기 {#Overview}
 
@@ -599,7 +598,7 @@ interface SelectedAsset {
     'repo:state': string;
     computedMetadata: Record<string, any>;
     _links: {
-        'http://ns.adobe.com/adobecloud/rel/rendition': Array<{
+        'https://ns.adobe.com/adobecloud/rel/rendition': Array<{
             href: string;
             type: string;
             'repo:size': number;
@@ -632,12 +631,12 @@ interface SelectedAsset {
 | *tiff:imageLength* | 숫자 | 자산의 높이입니다. |
 | *computedMetadata* | `Record<string, any>` | 모든 종류의 모든 자산 메타데이터(저장소, 애플리케이션 또는 임베드된 메타데이터)에 대한 버킷을 나타내는 오브젝트입니다. |
 | *_links* | `Record<string, any>` | 관련 자산에 대한 하이퍼미디어 링크입니다. 메타데이터 및 렌디션과 같은 리소스에 대한 링크가 포함됩니다. |
-| *링크(_L).<http://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | 자산의 렌디션에 대한 정보가 포함된 오브젝트 배열입니다. |
-| *링크(_L).<http://ns.adobe.com/adobecloud/rel/rendition[].href>* | 문자열 | 렌디션에 대한 URI입니다. |
-| *링크(_L).<http://ns.adobe.com/adobecloud/rel/rendition[].type>* | 문자열 | 렌디션의 MIME 유형입니다. |
-| *링크(_L).<http://ns.adobe.com/adobecloud/rel/rendition[].'repo:size>&#39;* | 숫자 | 렌디션의 크기입니다(바이트). |
-| *링크(_L).<http://ns.adobe.com/adobecloud/rel/rendition[].width>* | 숫자 | 렌디션의 폭입니다. |
-| *링크(_L).<http://ns.adobe.com/adobecloud/rel/rendition[].height>* | 숫자 | 렌디션의 높이입니다. |
+| *링크(_L).<https://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | 자산의 렌디션에 대한 정보가 포함된 오브젝트 배열입니다. |
+| *링크(_L).<https://ns.adobe.com/adobecloud/rel/rendition[].href>* | 문자열 | 렌디션에 대한 URI입니다. |
+| *링크(_L).<https://ns.adobe.com/adobecloud/rel/rendition[].type>* | 문자열 | 렌디션의 MIME 유형입니다. |
+| *링크(_L).<https://ns.adobe.com/adobecloud/rel/rendition[].'repo:size>&#39;* | 숫자 | 렌디션의 크기입니다(바이트). |
+| *링크(_L).<https://ns.adobe.com/adobecloud/rel/rendition[].width>* | 숫자 | 렌디션의 폭입니다. |
+| *링크(_L).<https://ns.adobe.com/adobecloud/rel/rendition[].height>* | 숫자 | 렌디션의 높이입니다. |
 
 전체 속성 목록과 자세한 예를 보려면 [자산 선택기 코드 예](https://github.com/adobe/aem-assets-selectors-mfe-examples)를 방문하십시오.
 
