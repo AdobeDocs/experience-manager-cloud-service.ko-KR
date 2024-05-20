@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 300bbbf0af0f0d896bf39f2a4e1fe4ed3d41f09a
+source-git-commit: 02388518f10d5c4bd34ad7d20a24877b468bff72
 workflow-type: tm+mt
-source-wordcount: '4946'
+source-wordcount: '4964'
 ht-degree: 99%
 
 ---
@@ -654,6 +654,8 @@ ht-degree: 99%
             + [적응형 양식의 REST 엔드포인트에 제출 액션 구성](/help/forms/configure-submit-action-restpoint.md)
             + [적응형 양식의 이메일 보내기 제출 액션 구성](/help/forms/configure-submit-action-send-email.md)
             + [적응형 양식에서 Google reCAPTCHA 사용](/help/forms/captcha-adaptive-forms-core-components.md)
+            + [적응형 양식에서 hCAPTCHA 사용](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [적응형 양식에서 턴스타일 사용](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [적응형 양식에서 사용자 정의 오류 핸들러 추가](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [핵심 구성 요소 기반 적응형 양식의 로케일 추가](/help/forms/supporting-new-language-localization-core-components.md)
             + [사용자 정의 함수 만들기 및 사용](/help/forms/create-and-use-custom-functions.md)
@@ -676,6 +678,7 @@ ht-degree: 99%
             + [소극적 로드 옵션이 있는 대용량 양식의 성능 향상](/help/forms/lazy-loading-adaptive-forms.md)
          + 적응형 양식에 구성 요소 추가 {#add-components-to-an-adaptive-form}
             + [적응형 양식에서 CAPTCHA 사용](/help/forms/captcha-adaptive-forms.md)
+            + [적응형 양식에서 hCaptcha 사용](/help/forms/integrate-adaptive-forms-hcaptcha.md)
             + [핵심 구성 요소 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
             + [스크리블 서명 적용](/help/forms/signing-forms-using-scribble.md)
             + [적응형 양식에 테이블 추가](/help/forms/adaptive-forms-tables.md)
