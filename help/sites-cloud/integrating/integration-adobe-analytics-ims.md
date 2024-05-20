@@ -2,16 +2,27 @@
 title: Adobe Analytics와 통합할 때 사용되는 IMS 구성
 description: Adobe Analytics와 통합할 때 사용되는 IMS 구성 알아보기
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+hide: true
+hidefromtoc: true
+index: false
+source-git-commit: 43c820996af947fab2bacdec7646211f4104ae4d
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 97%
+source-wordcount: '931'
+ht-degree: 92%
 
 ---
 
 # Adobe Analytics와 통합할 때 사용되는 IMS 구성 {#ims-configuration-for-integration-with-adobe-analytics}
 
 Analytics Standard API를 통해 Adobe Experience Manager as a Cloud Service(AEMaaCS)와 Adobe Analytics를 통합하려면 Adobe IMS(ID 관리 시스템) 구성이 필요합니다. 이 구성은 Adobe Developer Console을 통해 실현됩니다.
+
+>[!CAUTION]
+>
+>이 페이지에 설명된 구성은 더 이상 새 통합 또는 업데이트된 통합에 사용할 수 없습니다.
+>
+>[이제 IMS 통합이 S2S OAuth로 구성되었습니다](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>
+>이 페이지에 설명된 대로 이전 구성은 [이제 Adobe Developer 콘솔에서 더 이상 사용되지 않는 JWT 자격 증명](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 >[!NOTE]
 >

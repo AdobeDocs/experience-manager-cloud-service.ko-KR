@@ -4,10 +4,10 @@ description: Touch UI 및 Adobe Launch를 사용하여 Adobe Target을 AEM as a 
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3ac17f1a67f4d952a0206b124d70762b65e1f354
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 98%
+source-wordcount: '1065'
+ht-degree: 88%
 
 ---
 
@@ -20,7 +20,7 @@ Adobe Experience Cloud의 일부인 Adobe Target을 사용하여 모든 채널�
 
 Adobe Launch는 AEM 페이지(JS 라이브러리/태그)의 Analytics 및 Target에 대한 클라이언트측 속성을 관리하는 데 필요합니다. 즉, “경험 타겟팅”을 위해서는 Launch와의 통합이 필요합니다.
 
-경험 조각 및/또는 콘텐츠 조각을 Target으로 내보내려면 [Adobe Target 구성과 IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md)만 있으면 됩니다.
+경험 조각 및/또는 콘텐츠 조각을 Target으로 내보내려면 [Adobe Target 구성](#create-configuration), 다음을 포함 [IMS 통합](#ims-configuration).
 
 >[!NOTE]
 >
@@ -38,7 +38,20 @@ Adobe Launch는 AEM 페이지(JS 라이브러리/태그)의 Analytics 및 Target
 
 ### IMS 구성 {#ims-configuration}
 
-Launch 및 Target에 대한 IMS 구성은 Target과 AEM 및 Launch를 올바르게 통합하는 데 필요합니다. Launch에 대한 IMS 구성은 AEM as a Cloud Service에 사전 구성되어 있는 반면 Target IMS 구성은 Target을 프로비저닝한 다음 직접 만들어야 합니다. Target IMS 구성을 만드는 방법을 알아보려면 [Adobe Target과 통합할 때 사용할 IMS 구성](/help/sites-cloud/integrating/integration-adobe-target-ims.md) 및 [Experience Platform Launch 및 AEM 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html) 비디오를 참조하십시오.
+Target Standard API를 통해 AEM과 Adobe Target을 통합하려면 Adobe IMS(ID 관리 시스템) 구성이 필요합니다. Target IMS 구성은 Target이 프로비저닝된 후에 만들어야 합니다. 다음을 참조하십시오 [AEM as a Cloud Service에 대한 IMS 통합 설정](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) 및 비디오 [Experience Platform Launch 및 AEM 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html) target IMS 구성을 만드는 방법에 대해 알아봅니다.
+
+>[!NOTE]
+>
+>[이제 IMS 통합이 S2S OAuth로 구성되었습니다](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>
+>이전 구성은 [이제 Adobe Developer 콘솔에서 더 이상 사용되지 않는 JWT 자격 증명](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
+
+>[!NOTE]
+>
+>프로젝트를 구성할 때 표시되는 제품 프로필은 다음을 보유하고 있는지 여부에 따라 다릅니다.
+>
+>* Adobe Target Standard - **기본 작업 영역**&#x200B;만 사용할 수 있습니다.
+>* Adobe Target Premium - 아래와 같이 사용할 수 있는 모든 작업 영역이 나열됩니다.
 
 ### Adobe Target 테넌트 ID 및 Adobe Target 클라이언트 코드 {#tenant-client}
 

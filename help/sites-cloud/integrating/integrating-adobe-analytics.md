@@ -4,10 +4,10 @@ description: Touch UI 및 Adobe Launch를 사용하여 Adobe Analytics를 AEM as
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '573'
-ht-degree: 100%
+source-git-commit: 3ac17f1a67f4d952a0206b124d70762b65e1f354
+workflow-type: tm+mt
+source-wordcount: '588'
+ht-degree: 87%
 
 ---
 
@@ -47,7 +47,15 @@ Adobe Analytics와 AEM as a Cloud Service를 통합하여 웹 페이지 활동�
 
 ### IMS 인증을 사용하는 Adobe Analytics {#configuration-parameters-ims}
 
-Adobe Analytics를 AEM as a Cloud Service와 제대로 통합하기 위해 IMS 구성이 필요합니다. 이 구성은 필수로 만들어야 하므로 해당 [페이지](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)를 참조하여 Analytics IMS 구성을 만드는 방법에 대해 알아보십시오.
+Analytics Standard API를 통해 Adobe Experience Manager as a Cloud Service(AEMaaCS)와 Adobe Analytics을 통합하려면 Adobe IMS(Identity Management 시스템) 구성이 필요합니다.
+
+다음을 참조하십시오 [AEM as a Cloud Service에 대한 IMS 통합 설정](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) ims 구성을 만드는 방법에 대해 알아봅니다.
+
+>[!NOTE]
+>
+>[이제 IMS 통합이 S2S OAuth로 구성되었습니다](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>
+>이전 구성은 [이제 Adobe Developer 콘솔에서 더 이상 사용되지 않는 JWT 자격 증명](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 ### 사이트에 구성 추가 {#add-configuration}
 
