@@ -5,27 +5,34 @@ topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Foundation Components
 hide: true
 hidefromtoc: true
-source-git-commit: 54914728ee892f14ab8d669051504a52942a6c01
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 2%
+source-wordcount: '950'
+ht-degree: 10%
 
 ---
 
-# AEM Forms 환경과 턴스타일 연결 {#connect-your-forms-environment-with-turnstile-service}
-
 <span class="preview"> 이 기능은 얼리어답터 프로그램(Early Adopter Program)에 있습니다. 공식 이메일 ID에서 aem-forms-ea@adobe.com에 작성하여 얼리어답터 프로그램에 참여하고 기능에 대한 액세스를 요청할 수 있습니다. </span>
 
+CAPTCHA(컴퓨터와 인간을 구분하기 위해 완전히 자동화된 공공 튜링 테스트)는 인간과 자동화된 프로그램 또는 봇을 구별하기 위해 온라인 거래에서 일반적으로 사용되는 프로그램입니다. 문제를 제기하고 사용자 응답을 평가하여 사이트와 상호 작용하는 것이 인간인지 봇인지 판단합니다. 테스트가 실패할 경우 사용자가 진행하지 못하도록 차단하고 봇이 스팸을 게시하거나 악의적인 목적으로 상호 작용하는 것을 방지하여 온라인 거래를 안전하게 할 수 있도록 도와줍니다.
 
-Cloudflare의 Turnstile Captcha는 자동화된 봇, 악의적인 공격, 스팸 및 원치 않는 자동화된 트래픽으로부터 양식 및 사이트를 보호하는 것을 목표로 하는 보안 조치입니다. 양식 제출을 허용하기 전에 양식 제출에 대한 확인란을 표시하여 사람인지 확인합니다. AEM Forms은 적응형 Forms에서 Turnstile Captcha를 as a Cloud Service으로 지원합니다.
+AEM Forms은 다음과 같은 CAPTCHA 솔루션을 as a Cloud Service으로 지원합니다.
+
+* [Cloudflare 턴스타일](#integrate-aem-forms-environment-with-turnstile-captcha)
+* [Google recaptcha](/help/forms/captcha-adaptive-forms.md)
+* [Captcha](/help/forms/integrate-adaptive-forms-hcaptcha.md)
+
+## AEM Forms 환경과 Turnstile Captcha 통합
+
+Cloudflare의 Turnstile Captcha는 자동화된 봇, 악의적인 공격, 스팸 및 원치 않는 자동화된 트래픽으로부터 양식 및 사이트를 보호하는 것을 목표로 하는 보안 조치입니다. 양식 제출을 허용하기 전에 양식 제출에 대한 확인란을 표시하여 사람인지 확인합니다. AEM Forms은 적응형 Forms 핵심 구성 요소에서 턴스타일 Captcha를 as a Cloud Service으로 지원합니다.
 
 <!-- ![Turnstile](assets/Turnstile-challenge.png)-->
 
-## AEM Forms 환경을 Turnstile과 통합하기 위한 사전 요구 사항 {#prerequisite}
+### AEM Forms 환경을 Turnstile Captcha와 통합하기 위한 사전 요구 사항 {#prerequisite}
 
 AEM Forms 핵심 구성 요소에 대해 Turnstile을 구성하려면 다음을 수행해야 합니다. [회전식 사이트키와 비밀키](https://developers.cloudflare.com/turnstile/get-started/) Turnstile 웹 사이트에서.
 
-## AEM Forms용 Turnstile을 구성하는 단계{#steps-to-configure-turnstile}
+### AEM Forms용 Turnstile을 구성하는 단계{#steps-to-configure-turnstile}
 
 1. AEM Forms as a Cloud Service 환경에서 구성 컨테이너를 만듭니다. 구성 컨테이너에는 AEM을 외부 서비스에 연결하는 데 사용되는 클라우드 구성이 포함됩니다. AEM Forms 환경을 Turnstile과 연결하도록 구성 컨테이너를 만들고 구성하려면 다음을 수행합니다.
    1. AEM Forms as a Cloud Service 인스턴스를 엽니다.

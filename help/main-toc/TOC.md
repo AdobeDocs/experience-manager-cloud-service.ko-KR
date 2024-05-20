@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 30b9d71890f5d3a1a13e0b570c370a148eb19db6
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
 workflow-type: tm+mt
-source-wordcount: '4956'
+source-wordcount: '4962'
 ht-degree: 98%
 
 ---
@@ -678,6 +678,7 @@ ht-degree: 98%
          + 적응형 양식에 구성 요소 추가 {#add-components-to-an-adaptive-form}
             + [적응형 양식에서 CAPTCHA 사용](/help/forms/captcha-adaptive-forms.md)
             + [적응형 양식에서 hCaptcha 사용](/help/forms/integrate-adaptive-forms-hcaptcha.md)
+            + [적응형 양식에서 턴스타일 사용](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [핵심 구성 요소 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
             + [스크리블 서명 적용](/help/forms/signing-forms-using-scribble.md)
             + [적응형 양식에 테이블 추가](/help/forms/adaptive-forms-tables.md)

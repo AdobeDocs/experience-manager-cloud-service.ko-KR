@@ -5,10 +5,10 @@ topic-tags: Adaptive Forms, author
 keywords: Google reCAPTCHA 서비스, 적응형 Forms, CAPTCHA 과제, 보트 방지, 핵심 구성 요소, 양식 제출 보안, 양식 스팸 방지
 feature: Adaptive Forms, Core Components
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
 workflow-type: tm+mt
-source-wordcount: '918'
-ht-degree: 11%
+source-wordcount: '939'
+ht-degree: 10%
 
 ---
 
@@ -21,14 +21,16 @@ ht-degree: 11%
 
 CAPTCHA(컴퓨터와 인간을 구분하기 위해 완전히 자동화된 공공 튜링 테스트)는 인간과 자동화된 프로그램 또는 봇을 구별하기 위해 온라인 거래에서 일반적으로 사용되는 프로그램입니다. 문제를 제기하고 사용자 응답을 평가하여 사이트와 상호 작용하는 것이 인간인지 봇인지 판단합니다. 테스트가 실패할 경우 사용자가 진행하지 못하도록 차단하고 봇이 스팸을 게시하거나 악의적인 목적으로 상호 작용하는 것을 방지하여 온라인 거래를 안전하게 할 수 있도록 도와줍니다.
 
-[!DNL AEM Forms] as a [!DNL Cloud Service] 는 적응형 Forms에서 Google reCAPTCHA v2를 지원합니다. 양식 제출에 CAPTCHA 문제를 제시하는 데 사용할 수 있습니다. 적응형 양식에서 reCAPTCHA를 사용하려면 다음을 수행하십시오.
+AEM Forms은 다음과 같은 CAPTCHA 솔루션을 as a Cloud Service으로 지원합니다.
 
-1. [Google의 reCAPTCHA 서비스를 사용하여 AEM Forms 환경 연결](#connect-your-forms-environment-with-recaptcha-service-by-google)
-1. [양식 제출 시 CAPTCHA 문제를 표시하도록 적응형 양식 구성](#using-reCAPTCHA)
+* [Google recaptcha](#connect-your-aem-forms-environment-with-recaptcha-service-by-google)
+* [Cloudflare 턴스타일](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
+* [Captcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+
 
 ## Google의 reCAPTCHA 서비스를 사용하여 AEM Forms 환경 연결 {#connect-your-forms-environment-with-recaptcha-service-by-google}
 
-Google의 reCAPTCHA 서비스를 사용하여 AEM Forms 환경을 연결하려면
+양식 작성자는 Google의 reCAPTCHA 서비스를 사용하여 적응형 Forms에서 reCAPTCHA를 구현할 수 있습니다. 사이트 보호를 위한 고급 CAPTCHA 기능을 제공합니다. reCAPTCHA 작동 방식에 대한 자세한 내용은 [Google recaptcha](https://developers.google.com/recaptcha/). [!DNL AEM Forms] as a [!DNL Cloud Service] 는 적응형 Forms에서 Google reCAPTCHA v2를 지원합니다. 양식 제출에 CAPTCHA 문제를 제시하는 데 사용할 수 있습니다. Google의 reCAPTCHA 서비스를 사용하여 AEM Forms 환경을 연결하려면
 
 1. 획득 [reCAPTCHA API 키 쌍](https://www.google.com/recaptcha/admin) Google에서. 여기에는 다음이 포함됩니다 **사이트 키** 및 a **비밀 키**.
 
