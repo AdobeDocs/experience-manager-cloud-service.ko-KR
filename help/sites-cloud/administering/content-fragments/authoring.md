@@ -4,10 +4,10 @@ description: 콘텐츠 조각용 콘텐츠를 작성하고 목적에 따라 해�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 6353bd50c1df43d9ce11616f71a69d8bfb5ab338
+source-git-commit: 36fa580b017ab10097512165a35a9198a6d331d3
 workflow-type: tm+mt
-source-wordcount: '2381'
-ht-degree: 87%
+source-wordcount: '2670'
+ht-degree: 77%
 
 ---
 
@@ -24,6 +24,7 @@ ht-degree: 87%
 
 * [자동 저장](#saving-autosaving)을 통해 실수로 편집된 내용이 손실되는 일이 없도록 합니다.
 * 먼저 자산 DAM에 업로드하지 않고 [자산을 콘텐츠 참조로 인라인 업로드할 수 있습니다](#reference-images).
+* [변형 생성](#generate-variations-ai) 생성 AI를 사용하여 프롬프트에 따라 콘텐츠 작성을 가속화합니다.
 * 콘텐츠 조각을 통해 게재된 렌더링된 경험을 [미리보기](#preview-content-fragment)할 수 있습니다.
 * 편집기에서 [게시](#publish-content-fragment) 및 [게시 취소](#unpublish-content-fragment)할 수 있습니다.
 * 편집기에서 연결된 [언어 사본을 보고 열](#view-language-copies) 수 있습니다.
@@ -83,7 +84,7 @@ ht-degree: 87%
 
 * 이 조각에 맞게 만들어진 **[변형](#variations)** 목록:
    * **기본**&#x200B;은 콘텐츠 조각을 처음 만들 때 존재하는 변형으로 나중에 다른 조각을 추가할 수 있습니다.
-   * 편집을 위해 변형을 선택하고 열 수 있습니다.
+   * 변형 생성(#generate-variations)을 사용하여 Adobe이 특정 사용 사례에 대해 만든 프롬프트 기반 템플릿을 사용할 수 있습니다.
    * [변형을 만들](#create-variation) 수도 있습니다.
 * 조각 및 변형 내 **필드**:
    * 아이콘은 [데이터 형식](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)을 표시합니다.
@@ -119,6 +120,8 @@ ht-degree: 87%
 편집기에서 다음 작업을 수행할 수 있습니다.
 
 * **기본** 콘텐츠의 [변형 만들기](#create-variation)
+
+* [변형 생성 AI 사용](#generate-variations-ai) 생성 AI를 사용하여 Adobe이 특정 사용 사례에 대해 만든 프롬프트 기반 템플릿을 사용합니다.
 
 * 콘텐츠 편집에 필요한 변형 선택
 
@@ -156,14 +159,52 @@ ht-degree: 87%
 
 1. **반환**&#x200B;을 누르거나 다른 필드로 이동하여 변경 내용을 자동 저장합니다. 왼쪽의 **변형** 패널에서 제목이 업데이트됩니다.
 
+### 변형 생성과 함께 GenAI를 사용하여 변형 생성 {#generate-variations-ai}
+
+생성 변형 을 사용하여 생성 AI를 활용하여 콘텐츠 생성을 가속화합니다.
+
+콘텐츠 조각 편집기에서 생성 변형을 사용하려면 다음 작업을 수행하십시오.
+
+1. 콘텐츠 조각 편집기를 엽니다. 헤더에서 변형 을 생성할 진입점을 찾습니다.
+
+![콘텐츠 조각 편집기에서 변형 생성](assets/cfm-generate-variations1.png)
+
+1. 변형 생성이 새 탭에서 열립니다. 왼쪽 레일에서 컨텐츠를 생성 중인 AEM Cloud 인스턴스와 컨텐츠 조각을 볼 수 있습니다. 사용할 프롬프트를 선택하거나 새 프롬프트를 만듭니다.
+
+   >[!NOTE]
+   >
+   >사용 가능한 Adobe 프롬프트 템플릿은 현재 제한되어 있지만 향후 릴리스에 더 추가될 예정입니다.
+
+![내보내기를 통해 콘텐츠 조각의 변형 생성](assets/cfm-generate-variations2.png)
+
+1. 프롬프트를 채워 콘텐츠를 생성합니다. 조각의 콘텐츠 모델은 GenAI를 사용하여 콘텐츠를 생성하는 데 자동으로 사용됩니다.
+
+   >[!NOTE]
+   >
+   >현재 텍스트 필드만 지원합니다.
+
+![내보내기를 통해 콘텐츠 조각의 변형 생성](assets/cfm-generate-variations3.png)
+
+1. 원하는 변형 생성을 선택하고 &quot;변형 내보내기&quot;를 선택합니다. 콘텐츠 조각 변형의 이름을 확인하고 다음 중 하나를 선택합니다.
+
+   * **내보내기**: 변형을 콘텐츠 조각으로 내보내고 변형 생성 애플리케이션에 있습니다.
+   * **내보내기 및 열기**: 변형을 콘텐츠 조각으로 내보내고 GenAI의 새 변형과 함께 콘텐츠 조각을 표시하는 새 탭을 엽니다.
+
+   ![내보내기를 통해 콘텐츠 조각의 변형 생성](assets/cfm-generate-variations4.png)
+
+1. 생성된 변형은 기본 콘텐츠 조각 편집기에 표시됩니다.
+
+   ![컨텐츠 조각의 변형 생성 보기](assets/cfm-generate-variations5.png)
+
+변형 생성에 대해 자세히 알아볼 수 있습니다 [여기]{generative-ai/generate-variations.md}.
 
 ### 변형 삭제 {#delete-variation}
 
 콘텐츠 조각의 변형을 삭제하려면
 
->[!NOTE]
->
->**기본**&#x200B;을 삭제할 수 없습니다.
+    >[!NOTE]
+    >
+    >**Main**은 삭제할 수 없습니다.
 
 1. 변형을 선택합니다.
 

@@ -1,10 +1,11 @@
 ---
 title: 변형 생성을 위한 릴리스 노트
 description: AEM 변형 생성을 위한 릴리스 노트, as a Cloud Service 및 Edge Delivery Services Sidekick에서 액세스
-source-git-commit: 8067da7fb65bee6c147f306712eb312323244357
+exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
+source-git-commit: 28df3ace2933d0fc00742ced9496645fc3dc15da
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 10%
+source-wordcount: '225'
+ht-degree: 8%
 
 ---
 
@@ -17,6 +18,15 @@ ht-degree: 10%
 >Adobe Experience Manager as a Cloud Service의 최신 릴리스 정보는 [이 페이지](/help/release-notes/release-notes-cloud/release-notes-current.md)를 참조하십시오.
 
 ## 릴리스 특징 {#release-highlights}
+
+현재 릴리스는 버전 2.2.0입니다.
+
+### 2.2.0 {#release-notes-2-2-0}
+
+* 콘텐츠 조각에 대한 지원 구현
+* 즐겨찾기에서 결과를 CSV 파일로 다운로드하는 기능이 도입됨
+* 시간 그룹화로 최근 항목 목록 개선됨
+* 다국어에 대한 현지화 지원이 추가되었습니다
 
 현재 릴리스는 버전 2.0.0입니다.
 

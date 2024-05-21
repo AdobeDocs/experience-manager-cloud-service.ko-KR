@@ -2,9 +2,9 @@
 title: 변형 생성
 description: AEM as a Cloud Service 및 Edge Delivery Services Sidekick에서 액세스할 수 있는 변형 생성에 대해 알아봅니다.
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
+source-git-commit: 1d4c6512a3414db901d289557f9704699c8b6222
 workflow-type: tm+mt
-source-wordcount: '3257'
+source-wordcount: '3262'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,7 @@ ht-degree: 1%
 
 * [Adobe Experience Manager(AEM as a Cloud Service) 내](#access-aemaacs)
 * [AEM Edge Delivery Services Sidekick](#access-aem-sidekick)
+* [콘텐츠 조각 편집기 내](#authoring-content-fragments)
 
 >[!NOTE]
 >
