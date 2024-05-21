@@ -9,10 +9,10 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
 workflow-type: tm+mt
-source-wordcount: '1670'
-ht-degree: 86%
+source-wordcount: '1668'
+ht-degree: 84%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 86%
 트랜스크립션은 음성 인식 기술을 사용하여 오디오 또는 비디오 파일의 오디오를 텍스트로 변환(음성 텍스트 변환)하는 프로세스입니다.
 [!DNL Adobe Experience Manager Assets]는 WebVTT (Vtt) 양식의 지원되는 오디오 또는 비디오 파일에서 음성 언어의 텍스트 트랜스크립션을 자동 생성하는 [!DNL Azure Media Services]로 구성되어 있습니다. 오디오 또는 비디오 에셋이 [!DNL Experience Manager Assets]에서 처리되면 트랜스크립션 서비스는 오디오 또는 비디오 에셋의 텍스트 트랜스크립션 렌더링을 자동으로 생성하고 원본 에셋이 있는 Assets 저장소 내의 동일한 위치에 저장합니다. 다음 [!DNL Experience Manager Assets] 트랜스크립션 서비스를 통해 마케터는 텍스트 콘텐츠의 검색 기능을 추가하여 오디오 및 비디오 콘텐츠를 효율적으로 관리하고, 접근성 및 현지화 기능을 지원하여 ROI를 높일 수 있습니다.
 
-트랜스크립트는 음성 콘텐츠의 텍스트 버전입니다. 대표적인 사례는 종종 자막이나 캡션이 포함된 OTT 플랫폼에서 시청 중이거나 다른 언어의 콘텐츠를 사용 중인 동영상이거나 마케팅, 학습이나 엔터테인먼트용으로 사용되는 모든 오디오 또는 비디오 파일입니다. 이들 경험은 필요한 경우 서식이 지정되거나 변환되는 트랜스크립션으로 시작됩니다. 수동으로 수행하는 경우 오디오 또는 비디오 기록 프로세스는 시간이 많이 들고 오류를 발생시킵니다. 오디오-비디오 콘텐츠에 대한 요구 사항이 계속 증가하면서 수동 프로세스 조정이 어려워질 수도 있습니다. [!DNL Experience Manager Assets] 는 대규모 오디오 및 비디오 에셋을 처리하고 타임스탬프 세부 정보와 함께 텍스트 트랜스크립트(.vtt 파일)을 생성하는 Azure의 AI 기반 트랜스크립션을 사용합니다. 에셋과 함께 트랜스크립션 기능도 Dynamic Media에서 지원됩니다.
+트랜스크립트는 음성 콘텐츠의 텍스트 버전입니다. 예를 들어, 종종 접근성을 향상시키거나 다른 언어로 된 콘텐츠를 소비하기 위한 캡션을 포함하는 OTT 플랫폼에서 시청 중인 영화가 있습니다. 마케팅, 학습이나 엔터테인먼트용으로 사용되는 모든 오디오 또는 비디오 파일입니다. 이들 경험은 필요한 경우 서식이 지정되거나 변환되는 트랜스크립션으로 시작됩니다. 수동으로 수행하는 경우 오디오 또는 비디오 기록 프로세스는 시간이 많이 들고 오류를 발생시킵니다. 오디오-비디오 콘텐츠에 대한 요구 사항이 계속 증가하면서 수동 프로세스 조정이 어려워질 수도 있습니다. [!DNL Experience Manager Assets] 는 대규모 오디오 및 비디오 에셋을 처리하고 타임스탬프 세부 정보와 함께 텍스트 트랜스크립트(.vtt 파일)을 생성하는 Azure의 AI 기반 트랜스크립션을 사용합니다. 에셋과 함께 트랜스크립션 기능도 Dynamic Media에서 지원됩니다.
 
 트랜스크립션 기능은 [!DNL Experience Manager Assets]에서 무상으로 제공됩니다. 단, 트랜스크립션 서비스를 구성하려면 관리자는 사용자의 Azure 자격 증명이 필요합니다. [!DNL Experience Manager Assets]. Microsoft®에서 직접 [체험판 자격 증명을 획득](https://azure.microsoft.com/en-us/pricing/details/media-services/)하여 에셋의 오디오 또는 비디오 트랜스크립션 기능을 체험할 수도 있습니다.
 

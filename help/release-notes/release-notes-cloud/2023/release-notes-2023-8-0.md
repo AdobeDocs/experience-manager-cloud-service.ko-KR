@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.8.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2023.8.0 릴리스 정보입니다.'
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: ht
+source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
+workflow-type: tm+mt
 source-wordcount: '1691'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -90,9 +90,9 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 ### [!DNL Experience Manager Assets]에서 사용할 수 있는 프리릴리스 기능 {#prerelease-features-assets}
 
-* **Dynamic Media**: [Dynamic Media로 비디오의 다중 자막 및 다중 오디오 트랙 지원](/help/assets/dynamic-media/video.md#about-msma) —이제 기본 비디오에 여러 개의 자막과 오디오 트랙을 손쉽게 추가할 수 있습니다. 즉, 이러한 기능을 통해 글로벌 대상자는 비디오에 액세스할 수 있습니다. 여러 언어로 글로벌 대상자에게 게시된 하나의 기본 비디오를 사용자 정의하고 지역별 액세스 가능성 가이드라인을 준수할 수 있습니다. 작성자는 사용자 인터페이스의 단일 탭에서 자막 및 오디오 트랙을 관리할 수도 있습니다.
+* **Dynamic Media**: [Dynamic Media의 비디오에 대한 다중 캡션 및 다중 오디오 트랙 지원](/help/assets/dynamic-media/video.md#about-msma)—이제 기본 비디오에 여러 캡션 및 오디오 트랙을 쉽게 추가할 수 있습니다. 즉, 이러한 기능을 통해 글로벌 대상자는 비디오에 액세스할 수 있습니다. 여러 언어로 글로벌 대상자에게 게시된 하나의 기본 비디오를 사용자 정의하고 지역별 액세스 가능성 가이드라인을 준수할 수 있습니다. 작성자는 사용자 인터페이스의 단일 탭에서 캡션 및 오디오 트랙을 관리할 수도 있습니다.
 
-  ![선택한 비디오 자산의 속성 페이지에 있는 자막 및 오디오 트랙 탭입니다.](/help/release-notes/assets/msma-aem-cs.png)*선택한 비디오 자산의 속성 페이지에 있는 자막 및 오디오 트랙 탭입니다.*
+  ![선택한 비디오 자산의 속성 페이지에 있는 캡션 및 오디오 트랙 탭&#x200B;](/help/release-notes/assets/msma-aem-cs.png)*선택한 비디오 자산의 속성 페이지에 있는 캡션 및 오디오 트랙 탭*
 
 * **자산**: Experience Manager에서 관리하는 ZIP 아카이브를 선택하고, 다운로드하지 않고도 [Experience Manager로 직접 파일을 추출하는](/help/assets/manage-digital-assets.md#extract-zip-archives) 기능.
 

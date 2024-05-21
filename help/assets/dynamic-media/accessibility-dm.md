@@ -1,15 +1,15 @@
 ---
 title: Dynamic Media에서의 접근성
-description: 비디오 인코딩, Dynamic Media에 비디오 게시 및 비디오 보고서 보기 모범 사례와 같이 YouTube에서 비디오를 사용하는 방법에 대해 알아봅니다. 또한 비디오에 자막, 자막 또는 챕터 마커를 추가하는 방법도 알아봅니다.
+description: 비디오 인코딩, Dynamic Media에 비디오 게시 및 비디오 보고서 보기 모범 사례와 같이 YouTube에서 비디오를 사용하는 방법에 대해 알아봅니다. 또한 폐쇄 캡션, 캡션 또는 챕터 마커를 비디오에 추가하는 방법도 알아봅니다.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 feature: Accessibility
 role: Admin,User
 exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
-source-git-commit: 483a72f67f361023ebeefa3d74ec9f35a5f4f765
+source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '638'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ Dynamic Media 사용자 인터페이스 요소는 화면 판독기와 같은 보
 
 Dynamic Media은 자막이 있는 비디오 및 적응형 비디오 세트 배달을 지원합니다. 캡션은 비디오 콘텐츠 위에 표시되어야 합니다.
 
-다음을 참조하십시오 [Dynamic Media의 비디오 - 비디오에 폐쇄 캡션 또는 자막 추가](/help/assets/dynamic-media/video.md#adding-captions-to-video).
+다음을 참조하십시오 [Dynamic Media의 비디오 - 비디오에 폐쇄 캡션 추가](/help/assets/dynamic-media/video.md#adding-captions-to-video).
 
 
 >[!MORELIKETHIS]
