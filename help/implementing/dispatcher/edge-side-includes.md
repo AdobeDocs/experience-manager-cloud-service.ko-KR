@@ -2,7 +2,7 @@
 title: 가장자리 면 포함
 description: 이제 Adobe 관리 CDN은 에지 수준의 다이내믹 웹 컨텐츠 어셈블리에 대한 마크업 언어인 ESI(Edge Side Includes)를 지원합니다.
 feature: Dispatcher
-source-git-commit: fb7c793a975fd725ef1cebcab545e057de78fa9d
+source-git-commit: 4523efa659ea2aef28e16d5df39f9793cd35d969
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 2%
@@ -44,8 +44,8 @@ ESI 구문은 상위 페이지인 경우 다음과 같습니다 `/content/page.h
 
 * 지원되는 ESI 태그는 다음과 같습니다. include, comment, remove.
 * ESI 태그는 동시에 처리되지 않고 CDN에서 순차적으로 처리되므로 TTL이 낮은 페이지의 많은 ESI 태그는 최종 사용자의 경험에 지연을 추가할 수 있습니다.
-* ESI:include 처리의 최대 깊이는 5입니다.
-* 최대 총 ESI:include 처리 조각은 256개입니다.
+* ESI의 최대 깊이(include processing)는 5입니다.
+* 최대 총 ESI: 처리 조각 포함은 256입니다.
 
 
 ## Apache 구성 {#esi-apache}
