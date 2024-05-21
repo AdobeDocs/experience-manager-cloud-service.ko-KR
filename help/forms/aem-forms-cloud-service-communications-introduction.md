@@ -4,15 +4,16 @@ description: 통신 API를 사용하여 문서에 서명, 인증 또는 보호�
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs.
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 126af719cfd2c9361d0e7768b3b65e1149b6a989
+source-git-commit: 92811662e1ef9b6cbd5cb66c67f774109745bc68
 workflow-type: tm+mt
-source-wordcount: '1988'
-ht-degree: 55%
+source-wordcount: '2290'
+ht-degree: 40%
 
 ---
 
-# AEM Forms as a Cloud Service 커뮤니케이션 소개 {#frequently-asked-questions}
+# AEM Forms as a Cloud Service 통신 API {#frequently-asked-questions}
+
+![영웅 이미지](assets/cloud-communication-apis-hero-image.jpeg)
 
 
 | 버전 | 문서 링크 |
@@ -32,8 +33,11 @@ ht-degree: 55%
 
 * 데이터에 대한 보안 액세스. 통신 API는 고객이 지정한 데이터 저장소의 데이터에만 연결하고 액세스하여 커뮤니케이션의 보안 수준을 높입니다.
 
-![샘플 신용카드 명세서](assets/statement.png)
-신용카드 명세서는 통신 API를 통해 생성될 수 있습니다. 이 샘플 명세서는 동일한 템플릿을 사용하지만 신용카드 사용량에 따라 각 고객별로 별도의 데이터를 사용합니다.
+<!-- 
+![A sample credit card statement](assets/statement.png)
+A credit card statement can be created using Communications APIs. This sample statement uses same template but separate data for each customer depending on their usage of credit card.
+
+-->
 
 ## 문서 생성
 
@@ -56,7 +60,7 @@ ht-degree: 55%
 
 ### PS(PostScript), PCL(Printer Command Language), ZPL(Zebra Printing Language) 문서 만들기 {#create-PS-PCL-ZPL-documents}
 
-문서 생성 API를 사용하여 XDP 양식 디자인 또는 PDF 문서를 기반으로 하는 PS(PostScript), PCL(Printer Command Language), ZPL(Zebra Printing Language) 문서를 만들 수 있습니다. 해당 API는 양식 디자인을 양식 데이터와 병합하여 문서를 생성하는 데 도움이 됩니다. 문서를 파일에 저장하고, 사용자 지정 프로세스를 개발하여 프린터에 전송할 수 있습니다.
+문서 생성 API를 사용하여 XDP 양식 디자인 또는 PDF 문서를 기반으로 하는 PostScript(PS), 프린터 명령 언어(PCL) 및 Zebra 인쇄 언어(ZPL) 문서를 만들 수 있습니다. 해당 API는 양식 디자인을 양식 데이터와 병합하여 문서를 생성하는 데 도움이 됩니다. 문서를 파일에 저장하고, 사용자 지정 프로세스를 개발하여 프린터에 전송할 수 있습니다.
 
 <!-- ### Processing batch data to create multiple documents
 
@@ -106,11 +110,11 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## 문서 조작
 
-통신 문서 조작 API를 통해 PDF 문서를 결합하고, 재배열하고 확인할 수 있습니다. 일반적으로 DDX를 만들어 문서 조작 API에 제출하여 문서를 조합하거나 재정렬합니다. [DDX 문서](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf)에서는 소스 문서를 사용하여 필요한 문서 세트를 생성하는 방법에 대한 지침을 제공합니다. DDX 참조 문서에서는 지원되는 모든 작업에 대한 자세한 정보를 제공합니다. 문서 조작 API의 몇 가지 예는 다음과 같습니다.
+Communications document manipulation(Document Transformation) API 를 통해 PDF 문서를 결합하고 재배열할 수 있습니다. 일반적으로 DDX를 만들어 문서 조작 API에 제출하여 문서를 조합하거나 재정렬합니다. [DDX 문서](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf)에서는 소스 문서를 사용하여 필요한 문서 세트를 생성하는 방법에 대한 지침을 제공합니다. DDX 참조 문서에서는 지원되는 모든 작업에 대한 자세한 정보를 제공합니다. 문서 조작 API의 몇 가지 예는 다음과 같습니다.
 
 ### PDF 문서 어셈블
 
-문서 조작 API를 사용하여 두 개 이상의 PDF 또는 XDP 문서를 단일 PDF 문서 또는 PDF 포트폴리오로 어셈블할 수 있습니다. 다음은 PDF 문서를 어셈블할 수 있는 몇 가지 방법입니다.
+문서 조작 API를 사용하여 두 개 이상의 PDF 또는 XDP 문서를 단일 PDF 문서 또는 PDF 포트폴리오로 어셈블할 수 있습니다. 다음은 PDF 문서를 조합할 수 있는 몇 가지 방법입니다.
 
 * 간단한 PDF 문서 어셈블
 * PDF 포트폴리오 만들기
@@ -131,10 +135,6 @@ When such an interactive PDF document is flattened using the Communications APIs
 ![책갈피를 기준으로 소스 문서를 여러 문서로 나누기](assets/as_intro_pdfsfrombookmarks.png)
 그림: 책갈피를 기준으로 소스 문서를 여러 문서로 나누기
 
-### PDF/A호환 문서로 변환하고 확인합니다.
-
-문서 조작 API를 사용하여 PDF 문서를 PDF/A 호환 문서로 변환하고 PDF 문서가 PDF/A 호환인지 여부를 확인할 수 있습니다. PDF/A는 문서 내용을 장기간 보존하기 위한 보관 형식입니다. 글꼴이 문서 내에 임베드되어 있고 파일이 압축 해제되어 있습니다. 따라서 PDF/A 문서는 일반적으로 표준 PDF 문서보다 큽니다. 또한 PDF/A 문서에는 오디오 및 비디오 콘텐츠가 포함되지 않습니다.
-
 >[!NOTE]
 >
 > AEM Forms은 PDF 파일과 원활하게 통합되는 다양한 기본 제공 글꼴을 제공합니다. 지원되는 글꼴 목록을 보려면 [여기를 클릭하십시오](/help/forms/supported-out-of-the-box-fonts.md).
@@ -143,7 +143,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## Document utilities
 
-Document utilities synchronous APIs helps you convert documents between PDF and XDP file formats, and query information about a PDF document. For example, you can determine whether a PDF document contains comments or attachments. 
+Document utilities synchronous APIs helps you convert documents between PDF and XDP file formats, and query information about a PDF document. For example, you can determine whether a PDF document contains comments or attachments.
 
 ### Retrieve PDF document properties
 
@@ -164,6 +164,42 @@ You can [query a PDF document](https://developer.adobe.com/experience-manager-fo
 ### Convert PDF Documents into XDP Documents
 
 The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary. -->
+
+## 문서 추출
+
+<span class="preview"> 문서 추출 기능은 얼리어답터 프로그램 아래에 있습니다. 공식 이메일 ID에서 aem-forms-ea@adobe.com에 작성하여 얼리어답터 프로그램에 참여하고 기능에 대한 액세스를 요청할 수 있습니다. </span>
+
+문서 추출 서비스는 사용 권한, PDF 속성 및 메타데이터와 같은 PDF 문서의 속성을 가져오는 기능을 제공합니다. 문서 추출 기능:
+
+* PDF에 첨부 파일, 댓글, Acrobat 버전 등이 있는 경우와 같은 PDF 문서의 속성을 가져옵니다.
+* PDF 문서에서 활성화된 사용 권한을 추출하면 사용자가 Adobe Acrobat Reader 확장성을 위해 PDF 문서에 대해 활성화 또는 비활성화된 사용 권한을 검색합니다.
+* PDF 문서에 있는 메타데이터 정보를 가져옵니다. 메타데이터는 텍스트 및 그래픽과 같은 문서의 컨텐츠와 구별되는 문서에 대한 정보입니다. Adobe XMP(Extensible Metadata Platform)은 문서 메타데이터를 처리하는 표준입니다. XMP 유틸리티 서비스는 PDF 문서에서 XMP 메타데이터를 검색하고 XMP 메타데이터를 PDF 문서로 내보낼 수 있습니다.
+
+다음 [API 참조 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) 는 모든 매개 변수, 인증 방법 및 API에서 제공하는 서비스에 대한 자세한 정보를 제공합니다. API 참조 설명서는 .yaml 형식으로도 사용할 수 있습니다. .yaml 를 다운로드하고 Postman에 업로드하여 API의 기능을 확인할 수 있습니다.
+
+<!--
+
+<span class="preview"> The XMP Utilities Service capability is under Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
+### XMP Utilities {#XMP-utilities}
+
+<span class="preview"> The XMP Utilities Service capability is under Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
+PDF documents contain metadata, which is information about the document (as distinguished from the contents of the document, such as text and graphics). The Adobe Extensible Metadata Platform (XMP) is a standard for handling document metadata. The XMP Utilities service can retrieve and save XMP metadata from PDF documents and import XMP metadata into PDF documents.
+
+-->
+
+## 문서 변환
+
+### PDF/A호환 문서로 변환하고 확인합니다.
+
+커뮤니케이션 문서 변환 API 는 PDF 문서를 PDF/A로 변환하는 데 도움이 됩니다. API를 사용하여 PDF 문서를 PDF/A 호환 문서로 변환하고 PDF 문서가 PDF/A 호환 문서인지 확인할 수 있습니다. PDF/A는 문서 내용을 장기간 보존하기 위한 보관 형식입니다. 글꼴이 문서 내에 임베드되어 있고 파일이 압축 해제되어 있습니다. 따라서 PDF/A 문서는 일반적으로 표준 PDF 문서보다 큽니다. 또한 PDF/A 문서에는 오디오 및 비디오 콘텐츠가 포함되지 않습니다.
+
+### PDF을 XDP로 변환 {#convert-pdf-to-xdp}
+
+<span class="preview"> PDF을 XDP로 변환 기능은 얼리어답터 프로그램 아래에 있습니다. 공식 이메일 ID에서 aem-forms-ea@adobe.com에 작성하여 얼리어답터 프로그램에 참여하고 기능에 대한 액세스를 요청할 수 있습니다. </span>
+
+PDF 문서를 XDP 파일로 변환합니다. PDF 문서를 XDP 파일로 성공적으로 변환하려면 PDF 문서에 사전에 XFA 스트림이 있어야 합니다.
 
 ## 문서 보증 {#doc-assurance}
 
@@ -191,9 +227,15 @@ DocAssurance 서비스에는 서명 및 암호화 API가 포함되어 있습니�
 
 서명 API 및 암호화 API는 모두 [동기 API](#types-of-communications-apis-types).
 
-### 사용 권한 API
 
-<span class="preview"> 사용 권한 기능은 얼리어답터 프로그램 아래에 있습니다. 공식 이메일 ID에서 aem-forms-ea@adobe.com에 작성하여 얼리어답터 프로그램에 참여하고 기능에 대한 액세스를 요청할 수 있습니다. </span>
+### 문서 유틸리티 {#doc-utility}
+
+동기 API를 사용하는 문서 유틸리티를 사용하면 PDF 및 XDP 파일 형식 간에 문서를 변환할 수 있습니다. 문서에 사용 권한을 적용하고 문서에서 활성화된 사용 권한을 추출합니다. PDF 문서에 대한 쿼리 정보입니다. <!-- determines whether a PDF document contains comments or attachments and more, and use document transformation services for XMP utilities--> 사용 권한 API에 대한 세부 사항은 아래에 나와 있습니다.
+
+
+#### 사용 권한 API(Reader 확장)
+
+<span class="preview"> 사용 권한(Reader 확장) 기능은 얼리어답터 프로그램 아래에 있습니다. 공식 이메일 ID에서 aem-forms-ea@adobe.com에 작성하여 얼리어답터 프로그램에 참여하고 기능에 대한 액세스를 요청할 수 있습니다. </span>
 
 사용 권한 기능을 사용하면 추가 사용 권한과 함께 Adobe Reader의 기능을 확장하여 조직에서 대화형 PDF 문서를 쉽게 공유할 수 있습니다. 이 서비스는 Adobe Reader 7.0 이상에서 작동하며 PDF 문서에 사용 권한을 추가합니다. 이 작업은 문서에 주석 추가, 양식 채우기, 문서 저장과 같이 Adobe Reader을 사용하여 PDF 문서를 열 때 일반적으로 사용할 수 없는 기능을 활성화합니다.
 
@@ -238,16 +280,13 @@ PDF Reader 서비스를 확장하기 위한 다양한 사용 권한 기능은 �
 
 * **독립 실행형 제출**: PDF 문서에서 오프라인으로 양식 데이터를 제출합니다.
 
-#### 사용 권한 추출
-
-Adobe Acrobat Reader 확장성을 위해 PDF 문서에 대해 활성화 또는 비활성화된 사용 권한을 검색하는 데 도움이 됩니다.
 
 #### 기타 기능
 
 * **메시지**: 하나 이상의 사용 권한이 적용된 PDF 문서를 열 때 Adobe Acrobat Reader 내에 표시되는 메시지입니다.
 * **암호 잠금 해제**: 암호화된 PDF 문서를 여는 데 필요한 암호입니다. 일반적으로 문서 열기 암호이지만 PDF 문서가 권한 암호로 추가로 보호되는 경우 중 하나를 사용하여 열 수 있습니다.
 
-다음 [API 참조 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) 는 API에서 제공하는 모든 매개 변수, 인증 방법 및 다양한 서비스에 대한 자세한 정보를 제공합니다. API 참조 설명서는 .yaml 형식으로도 사용할 수 있습니다. .yaml 를 다운로드하고 postman에 업로드하여 API의 기능을 확인할 수 있습니다.
+다음 [API 참조 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) 는 API에서 제공하는 모든 매개 변수, 인증 방법 및 다양한 서비스에 대한 자세한 정보를 제공합니다. API 참조 설명서는 .yaml 형식으로도 사용할 수 있습니다. .yaml 를 다운로드하고 Postman에 업로드하여 API의 기능을 확인할 수 있습니다.
 
 ## 통신 API 유형 {#types}
 
@@ -255,13 +294,13 @@ Adobe Acrobat Reader 확장성을 위해 PDF 문서에 대해 활성화 또는 �
 
 * **[동기식 API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)**&#x200B;는 주문형, 대기 시간이 낮은 단일 기록 문서 생성 시나리오에 적합합니다. 해당 API는 사용자 액션 기반 사용 사례에 보다 적합합니다. 예: 사용자 양식 작성 완료 후 문서 생성.
 
-* **[배치 API(비동기 API)](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)**&#x200B;는 처리량이 높은 예약된 문서 생성 시나리오에 적합합니다. 해당 API는 배치 문서를 생성합니다. 예: 매월 생성되는 전화요금 청구서, 신용카드 명세서와 혜택 명세서.
+* **[배치 API(비동기 API)](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)**&#x200B;는 처리량이 높은 예약된 문서 생성 시나리오에 적합합니다. 해당 API는 배치 문서를 생성합니다. 예를 들어, 전화 요금 청구서, 신용카드 명세서 및 혜택 명세서는 매월 생성됩니다.
 
 ## 온보딩
 
-커뮤니케이션 기능은 Forms as a Cloud Service 사용자용 독립 실행형 모듈과 추가 기능 모듈로 제공됩니다. Adobe 영업팀 또는 Adobe 담당자에게 문의하여 액세스 권한을 요청할 수 있습니다. Adobe는 조직에 대한 액세스 권한을 활성화하고 조직의 책임자로 지정된 사람에게 필요한 권한을 제공합니다. 관리자는 조직의 Forms as a Cloud Service 개발자(사용자)에 대한 액세스 권한을 부여하여 API를 사용할 수 있습니다.
+커뮤니케이션 기능은 Forms as a Cloud Service 사용자용 독립 실행형 모듈과 추가 기능 모듈로 제공됩니다. Adobe 영업팀 또는 Adobe 담당자에게 문의하여 액세스 권한을 요청할 수 있습니다. Adobe는 조직에 대한 액세스 권한을 활성화하고 조직의 책임자로 지정된 사람에게 필요한 권한을 제공합니다. 관리자는 API를 사용하도록 조직의 Forms as a Cloud Service 개발자(사용자)에게 액세스 권한을 부여할 수 있습니다.
 
-온보딩 후 Forms as a Cloud Service 환경의 커뮤니케이션 기능을 활성화하려면
+온보딩 후 Forms as a Cloud Service 환경에 대한 통신 기능을 활성화하려면 다음을 수행하십시오.
 
 1. Cloud Manager에 로그인하고 AEM Forms as a Cloud Service 인스턴스를 엽니다.
 
@@ -279,7 +318,7 @@ Adobe Acrobat Reader 확장성을 위해 PDF 문서에 대해 활성화 또는 �
 
 >[!NOTE]
 >
-> 문서 조작 API를 활성화하고 구성하려면 다음 규칙을 [Dispatcher 구성](setup-local-development-environment.md#forms-specific-rules-to-dispatcher)에 추가합니다.
+> 문서 조작 API를 활성화하고 구성하려면 다음 규칙을 [Dispatcher 구성](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
