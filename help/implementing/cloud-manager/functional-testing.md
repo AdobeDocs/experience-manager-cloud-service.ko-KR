@@ -2,9 +2,9 @@
 title: 기능 테스트
 description: 코드의 품질과 신뢰성을 보장하기 위해 AEM as a Cloud Service 배포 프로세스에 내장된 세 가지 유형의 기능 테스트에 대해 알아봅니다.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: b85d43a05c8bb8a6438ab44bd184b7624456ab6a
+source-git-commit: 305098c7ebcb6145129b146d60538b5177b4f26d
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1373'
 ht-degree: 9%
 
 ---
@@ -92,6 +92,8 @@ Junit을 사용하여 구현되고 Maven을 사용하여 실행되며 공식적�
 >[!NOTE]
 >
 >사용자 지정 UI 테스트는 AEM 애플리케이션에서 사용하는 프로덕션 및 비프로덕션(옵트인) 파이프라인에서 실행되며, 이 파이프라인은 AEM 애플리케이션 변경 배포 및 제품 푸시 업데이트를 변경하므로 애플리케이션이 제대로 작동하는지 확인하고 릴리스 안전성을 높이는 데 도움이 되는 주요 기여입니다. 고객 UI 테스트는 각 고객에 대한 내부 프리릴리스 유효성 검사 파이프라인에서도 실행되므로 초기 피드백을 제공하는 데 도움이 됩니다.
+>
+>비 Selenium 컨테이너는 의 환경 변수를 기반으로 HTTP 프록시를 사용하여 테스트를 실행해야 합니다. [UI 테스트 섹션.](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
 
 파이프라인 실행을 효율적으로 유지하기 위해서는 주요 기능 및 주요 사용자 상호 작용 흐름에 중점을 두는 것이 좋습니다. 이 품질 게이트에 맞지 않는 전체 UI 테스트 세트는 고객의 개발 흐름 동안 일반적인 고객 유효성 검사 파이프라인의 일부로 실행하는 것이 좋습니다.
 

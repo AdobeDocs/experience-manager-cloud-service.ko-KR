@@ -2,10 +2,10 @@
 title: UI 테스트
 description: 사용자 정의 UI 테스트는 사용자 정의 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있는 선택적 기능입니다.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 305098c7ebcb6145129b146d60538b5177b4f26d
 workflow-type: tm+mt
-source-wordcount: '2385'
-ht-degree: 98%
+source-wordcount: '2610'
+ht-degree: 79%
 
 ---
 
@@ -45,7 +45,7 @@ Java로 작성된 HTTP 테스트인 사용자 정의 기능 테스트와 달리 
 
    * Cypress의 경우 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress)에 있는 샘플 코드를 사용하십시오.
 
-   * JavaScript 및 WDIO의 경우 Cloud Manager 저장소의 `ui.tests` 폴더에서 자동으로 생성되는 샘플 코드를 사용합니다.
+   * JavaScript 및 WDIO의 경우 `ui.tests` Cloud Manager 저장소의 폴더입니다.
 
      >[!NOTE]
      >
@@ -146,7 +146,7 @@ Docker 빌드 컨텍스트를 생성하려면 다음 작업을 수행하는 Mave
 </assembly>
 ```
 
-어셈블리 설명자는 플러그인에 `.tar.gz` 유형의 아카이브를 생성하고 `ui-test-docker-context` 분류자를 할당하도록 지시합니다. 또한 다음을 포함하여 아카이브에 포함되어야 하는 파일을 나열합니다.
+어셈블리 설명자는 플러그인에 `.tar.gz` 유형의 아카이브를 생성하고 `ui-test-docker-context` 분류자를 할당하도록 지시합니다. 또한 다음을 포함하여 아카이브에 포함해야 하는 파일을 나열합니다.
 
 * Docker 이미지 빌드에 필수인 `Dockerfile`
 * 아래에 목적이 설명되어 있는 `wait-for-grid.sh` 스크립트
@@ -199,7 +199,7 @@ Adobe에서 제공하는 샘플을 사용하는 경우 다음을 참조하십시
   fi
   ```
 
-* Adobe에서 제공하는 Cypress 및 Java Selenium 테스트 샘플에는 이미 옵트인 플래그가 설정되어 있습니다.
+* Adobe에서 제공한 Cypress 및 Java Selenium 테스트 샘플에는 이미 옵트인 플래그가 설정되어 있습니다.
 
 ## UI 테스트 작성 {#writing-ui-tests}
 
@@ -210,7 +210,7 @@ Adobe에서 제공하는 샘플을 사용하는 경우 다음을 참조하십시
 다음 환경 변수는 프레임워크에 따라 런타임 시 Docker 이미지로 전달됩니다.
 
 | 변수 | 예 | 설명 | 테스트 프레임워크 |
-|---|---|---|---|
+|----------------------------|----------------------------------|---------------------------------------------------------------------------------------------------|---------------------|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | Selenium 서버의 URL | Selenium 전용 |
 | `SELENIUM_BROWSER` | `chrome` | Selenium 서버에서 사용하는 브라우저 구현 | Selenium 전용 |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | AEM 작성자 인스턴스의 URL | 모두 |
@@ -221,12 +221,19 @@ Adobe에서 제공하는 샘플을 사용하는 경우 다음을 참조하십시
 | `AEM_PUBLISH_PASSWORD` | `admin` | AEM 게시 인스턴스에 로그인하기 위한 암호 | 모두 |
 | `REPORTS_PATH` | `/usr/src/app/reports` | 테스트 결과의 XML 보고서를 저장해야 하는 경로 | 모두 |
 | `UPLOAD_URL` | `http://upload-host:9090/upload` | 테스트 프레임워크에 액세스할 수 있도록 파일을 업로드해야 하는 URL | 모두 |
+| `PROXY_HOST` | `proxy-host` | 테스트 프레임워크에서 사용할 내부 HTTP 프록시의 호스트 이름 | Selenium을 제외한 모든 항목 |
+| `PROXY_HTTPS_PORT` | `8071` | HTTPS 연결을 위한 프록시 서버 수신 포트(비어 있을 수 있음) | Selenium을 제외한 모든 항목 |
+| `PROXY_HTTP_PORT` | `8070` | HTTP 연결을 위한 프록시 서버 수신 포트(비어 있을 수 있음) | Selenium을 제외한 모든 항목 |
+| `PROXY_CA_PATH` | `/path/to/root_ca.pem` | 테스트 프레임워크에서 사용할 CA 인증서 경로 | Selenium을 제외한 모든 항목 |
+| `PROXY_OBSERVABILITY_PORT` | `8081` | 프록시 서버의 HTTP 상태 검사 포트 | Selenium을 제외한 모든 항목 |
+| `PROXY_RETRY_ATTEMPTS` | `12` | 프록시 서버 준비 대기 중 권장 재시도 횟수 | Selenium을 제외한 모든 항목 |
+| `PROXY_RETRY_DELAY` | `5` | 프록시 서버 준비 대기 중 재시도 사이의 제안된 지연 시간 | Selenium을 제외한 모든 항목 |
 
 Adobe 테스트 샘플은 구성 매개변수에 액세스하기 위한 도우미 기능을 제공합니다.
 
 * Cypress: 표준 기능 `Cypress.env('VARIABLE_NAME')` 사용
-* JavaScript: [lib/config.js](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/config.js) 모듈 참조
-* Java: [Config](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) 클래스 참조
+* JavaScript: 다음을 참조하십시오. [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) 모듈
+* Java: 다음을 참조하십시오. [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) 클래스
 
 ### 테스트 보고서 생성 {#generate-test-reports}
 
@@ -239,6 +246,8 @@ Docker 이미지가 다른 프로그래밍 언어 또는 테스트 실행자로 
 >UI 테스트 단계의 결과는 테스트 보고서만을 기반으로 평가됩니다. 테스트 실행에 맞게 보고서를 생성했는지 확인하십시오.
 >
 >STDERR에 오류를 로깅하거나 0이 아닌 종료 코드를 반환하는 대신 어설션을 사용하십시오. 이렇게 하지 않으면 배포 파이프라인이 정상적으로 진행될 수 있습니다.
+>
+>테스트 실행 중에 HTTP 프록시가 사용된 경우 결과는 다음을 포함합니다. `request.log` 파일.
 
 ### 사전 요구 사항 {#prerequisites}
 
@@ -306,6 +315,113 @@ UI 테스트 실행 중 테스트 결과 아카이브가 만들어지면 Cloud M
 1. 업로드가 성공하면 요청은 `text/plain` 유형의 `200 OK` 응답을 반환합니다.
    * 응답의 내용은 불투명한 파일 핸들입니다.
    * `<input>` 요소의 파일 경로 대신 이 핸들을 사용하여 애플리케이션에서 파일 업로드를 테스트할 수 있습니다.
+
+## Cypress 관련 세부 정보
+
+>[!NOTE]
+>
+>이 섹션은 Cypress가 선택된 테스트 인프라인 경우에만 적용됩니다.
+
+### HTTP 프록시 설정
+
+도커 컨테이너의 진입점은 `PROXY_HOST` 환경 변수입니다.
+
+이 값이 비어 있으면 추가 단계가 필요하지 않으며 HTTP 프록시를 사용하지 않고 테스트를 실행해야 합니다.
+
+비어 있지 않으면 진입점 스크립트는 다음을 수행해야 합니다.
+
+1. UI 테스트 실행을 위한 HTTP 프록시 연결을 구성합니다. 이 작업은 를 내보내면 수행할 수 있습니다. `HTTP_PROXY` 다음 값을 사용하여 빌드된 환경 변수입니다.
+   * 프록시 호스트(다음에서 제공) `PROXY_HOST` 변수
+   * 프록시 포트: 다음에서 제공: `PROXY_HTTPS_PORT` 또는 `PROXY_HTTP_PORT` 변수(값이 비어 있지 않은 변수가 사용됨)
+2. HTTP 프록시에 연결할 때 사용할 CA 인증서를 설정합니다. 위치는 다음에서 제공합니다. `PROXY_CA_PATH` 변수를 채우는 방법에 따라 페이지를 순서대로 표시합니다.
+   * 내보내기를 통해 이를 수행할 수 있습니다. `NODE_EXTRA_CA_CERTS` 환경 변수입니다.
+3. HTTP 프록시가 준비될 때까지 기다립니다.
+   * 준비 상태를 확인하기 위해 환경 변수 `PROXY_HOST`, `PROXY_OBSERVABILITY_PORT`, `PROXY_RETRY_ATTEMPTS` 및 `PROXY_RETRY_DELAY` 를 사용할 수 있습니다.
+   * cURL 요청을 사용하여에 cURL을 설치했는지 확인할 수 있습니다. `Dockerfile`.
+
+예제 구현은 의 Cypress 샘플 테스트 모듈 진입점에서 찾을 수 있습니다. [GitHub.](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/run.sh)
+
+## 극작가별 세부 정보
+
+>[!NOTE]
+>
+> 이 섹션은 극작가가 선택한 테스트 인프라인 경우에만 적용됩니다.
+
+### HTTP 프록시 설정
+
+>[!NOTE]
+>
+> 제공된 예에서 Chrome이 프로젝트 브라우저로 사용되고 있다고 가정합니다.
+
+Cypress와 마찬가지로 비어 있지 않은 경우 테스트에서 HTTP 프록시를 사용해야 합니다 `PROXY_HOST` 환경 변수가 제공됩니다.
+
+이를 위해서는 다음과 같이 수정해야 합니다.
+
+#### Dockerfile
+
+cURL 설치 및 `libnss3-tools`, `certutil.`
+
+```dockerfile
+RUN apt -y update \
+    && apt -y --no-install-recommends install curl libnss3-tools \
+    && rm -rf /var/lib/apt/lists/*
+```
+
+#### 진입점 스크립트
+
+경우에 따라 다음과 같은 Bash 스크립트를 포함합니다. `PROXY_HOST` 환경 변수가 제공되면 다음 작업을 수행합니다.
+
+1. 다음과 같은 프록시 관련 변수 내보내기 `HTTP_PROXY` 및 `NODE_EXTRA_CA_CERTS`
+2. 사용 `certutil` chromium용 프록시 CA 인증서를 설치하려면
+3. HTTP 프록시가 준비될 때까지(또는 실패 시 종료) 기다립니다.
+
+예제 구현:
+
+```bash
+# setup proxy environment variables and CA certificate
+if [ -n "${PROXY_HOST:-}" ]; then
+  if [ -n "${PROXY_HTTPS_PORT:-}" ]; then
+    export HTTP_PROXY="https://${PROXY_HOST}:${PROXY_HTTPS_PORT}"
+  elif [ -n "${PROXY_HTTP_PORT:-}" ]; then
+    export HTTP_PROXY="http://${PROXY_HOST}:${PROXY_HTTP_PORT}"
+  fi
+  if [ -n "${PROXY_CA_PATH:-}" ]; then
+    echo "installing certificate"
+    mkdir -p $HOME/.pki/nssdb
+    certutil -d sql:$HOME/.pki/nssdb -A -t "CT,c,c" -n "EaaS Client Proxy Root" -i $PROXY_CA_PATH
+    export NODE_EXTRA_CA_CERTS=${PROXY_CA_PATH}
+  fi
+  if [ -n "${PROXY_OBSERVABILITY_PORT:-}" ] && [ -n "${HTTP_PROXY:-}" ]; then
+    echo "waiting for proxy"
+    curl --silent  --retry ${PROXY_RETRY_ATTEMPTS:-3} --retry-connrefused --retry-delay ${PROXY_RETRY_DELAY:-10} \
+      --proxy ${HTTP_PROXY} --proxy-cacert ${PROXY_CA_PATH:-""} \
+      ${PROXY_HOST}:${PROXY_OBSERVABILITY_PORT}
+    if [ $? -ne 0 ]; then
+      echo "proxy is not ready"
+      exit 1
+    fi
+  fi
+fi
+```
+
+#### 극작가 구성
+
+극작가 구성 수정(예: `playwright.config.js`)을 클릭하여 프록시 사용 `HTTP_PROXY` 환경 변수가 설정되어 있습니다.
+
+예제 구현:
+
+```javascript
+const proxyServer = process.env.HTTP_PROXY || ''
+```
+
+```javascript
+// enable proxy if set
+if (proxyServer !== '') {
+ cfg.use.proxy = {
+  server: proxyServer,
+ }
+}
+```
 
 ## 로컬에서 UI 테스트 실행 {#run-ui-tests-locally}
 
