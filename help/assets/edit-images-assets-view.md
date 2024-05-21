@@ -2,10 +2,11 @@
 title: 이미지 편집
 description: ' [!DNL Adobe Photoshop Express] 기반 옵션을 사용하여 이미지를 편집하고 업데이트된 이미지를 버전으로 저장합니다.'
 role: User
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
+source-git-commit: 89d13f278fdaddbcf6b07a2f3edfc1fda1092aa2
 workflow-type: tm+mt
-source-wordcount: '1251'
-ht-degree: 79%
+source-wordcount: '901'
+ht-degree: 71%
 
 ---
 
@@ -117,7 +118,8 @@ Adobe Express에 액세스할 수 있는 조직은 에셋 보기 내에서 직�
 >* 에셋 크기는 17MB 미만이어야 합니다.
 >* 이미지를 저장할 수 있습니다. `PDF`, `JPEG`, 또는 `PNG` 형식을 지정할 수 있지만 페이지가 여러 개인 경우에는 다음과 같이 저장할 수 있습니다 `PDF`.
 
-## [!DNL Adobe Photoshop Express]를 사용하여 이미지 편집 {#edit-using-photoshop-express}
+<!-- 
+## Edit images using [!DNL Adobe Photoshop Express] {#edit-using-photoshop-express}
 
 <!--
 After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later, if needed. To edit an image, [open its preview](navigate-assets-view.md#preview-assets) and click **[!UICONTROL Edit Image]** ![edit icon](assets/do-not-localize/edit-icon.png) from the rail on the right.
@@ -126,49 +128,49 @@ After editing an image, you can save the new image as a new version. Versioning 
 
 *Figure: The options to edit images are powered by [!DNL Adobe Photoshop Express].*
 -->
+<!-- 
+### Touch up images {#spot-heal-images-using-photoshop-express}
 
-### 이미지 터치 업 {#spot-heal-images-using-photoshop-express}
+If there are minor spots or small objects on an image, you can edit and remove the spots using the spot healing feature provided by Adobe Photoshop.
 
-이미지에 작은 얼룩이나 작은 오브젝트가 있는 경우 Adobe Photoshop에서 제공하는 얼룩 제거 기능을 사용하여 이를 편집하고 제거할 수 있습니다.
+The brush samples the retouched area and makes the repaired pixels blend seamlessly into the rest of the image. Use a brush size that is only slightly larger than the spot you want to fix.
 
-브러시는 수정된 영역을 샘플링하고 복구된 픽셀이 이미지의 나머지 부분에 매끄럽게 혼합되도록 합니다. 수정하려는 지점보다 약간만 더 큰 브러시 크기를 사용합니다.
-
-![얼룩 제거 편집 옵션](assets/edit-spot-healing.png)
+![Spot healing edit option](assets/edit-spot-healing.png)
 
 <!-- 
 TBD: See if we should give backlinks to PS docs for these concepts.
 For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/photoshop/using/retouching-repairing-images.html). 
 -->
+<!-- 
+### Crop and straighten images {#crop-straighten-images-using-photoshop-express}
 
-### 이미지 자르기 및 펴기 {#crop-straighten-images-using-photoshop-express}
+Using the crop and straighten option that you can do basic cropping, rotate image, flip it horizontally or vertically, and crop it to dimensions suitable for popular social media websites.
 
-자르기 및 바로 가기 옵션을 사용하여 기본 자르기를 수행하고, 이미지를 회전하고, 가로 또는 세로 방향으로 뒤집고, 자주 사용하는 소셜 미디어 웹 사이트에 적합한 크기로 자를 수 있습니다.
+To save your edits, click **[!UICONTROL Crop Image]**. After editing, you can save the new image as a version.
 
-편집 내용을 저장하려면 **[!UICONTROL 이미지 자르기]**&#x200B;를 클릭합니다. 편집한 후 새 이미지를 버전으로 저장할 수 있습니다.
+![Option to crop and straighten](assets/edit-crop-straighten.png)
 
-![자르기 및 펴기 옵션](assets/edit-crop-straighten.png)
+Many default options let you crop your image to the best proportions that fit various social media profiles and posts.
 
-많은 기본 옵션을 사용하면 다양한 소셜 미디어 프로필 및 게시물에 적합한 비율로 이미지를 자를 수 있습니다.
+### Resize image {#resize-image-using-photoshop-express}
 
-### 이미지 크기 조정 {#resize-image-using-photoshop-express}
+You can view the common photo sizes in centimeters or inches to know the dimensions. By default, the resizing method retains the aspect ratio. To manually override the aspect ratio, click ![](assets/do-not-localize/lock-closed-icon.png).
 
-일반적인 사진 크기를 cm(센티미터) 또는 in(인치) 단위로 보고 치수를 알 수 있습니다. 기본적으로 크기 조정 방법은 종횡비를 유지합니다. 종횡비를 수동으로 오버라이드하려면 ![](assets/do-not-localize/lock-closed-icon.png)를 클릭하십시오.
+Enter the dimensions and click **[!UICONTROL Resize Image]** to resize the image. Before you save the changes as a version, you can either undo all the changes done before saving by clicking [!UICONTROL Undo] or you can change the specific step in the editing process by clicking [!UICONTROL Revert].
 
-치수를 입력하고 **[!UICONTROL 이미지 크기 조정]**&#x200B;을 클릭하여 이미지 크기를 조정합니다. 변경 사항을 버전으로 저장하기 전에 [!UICONTROL 실행 취소]를 클릭하여 저장하기 전에 수행한 모든 변경 사항을 실행 취소하거나 [!UICONTROL 되돌리기]를 클릭하여 편집 프로세스의 특정 단계를 변경할 수 있습니다.
+![Options when resizing an image](assets/resize-image.png)
 
-![이미지 크기 조정 시 옵션](assets/resize-image.png)
+### Adjust image {#adjust-image-using-photoshop-express}
 
-### 이미지 조정 {#adjust-image-using-photoshop-express}
+[!DNL Assets view] lets you adjust the color, tone, contrast, and more, with just a few clicks. Click **[!UICONTROL Adjust image]** in the edit window. The following options are available in the right sidebar:
 
-[!DNL Assets view]를 사용하면 몇 번의 클릭만으로 색상, 톤, 대비 등을 조정할 수 있습니다. 편집 창에서 **[!UICONTROL 이미지 조정]**&#x200B;을 클릭합니다. 오른쪽 사이드바에서 사용할 수 있는 옵션은 다음과 같습니다.
+* **Popular**: [!UICONTROL High Contrast & Detail], [!UICONTROL Desaturated Contrast], [!UICONTROL Aged Photo], [!UICONTROL B&W Soft], and [!UICONTROL B&W Sepia Tone].
+* **Color**: [!UICONTROL Natural], [!UICONTROL Bright], [!UICONTROL High Contrast], [!UICONTROL High Contrast & Detail], [!UICONTROL Vivid], and [!UICONTROL Matte].
+* **Creative**: [!UICONTROL Desaturated Contrast], [!UICONTROL Cool Light], [!UICONTROL Turquoise & Red], [!UICONTROL Soft Mist], [!UICONTROL Vintage Instant], [!UICONTROL Warm Contrast], [!UICONTROL Flat & Green], [!UICONTROL Red Lift Matte], [!UICONTROL Warm Shadows], and [!UICONTROL Aged Photo].
+* **B&W**: [!UICONTROL B&W Landscape], [!UICONTROL B&W High Contrast], [!UICONTROL B&W Punch], [!UICONTROL B&W Low Contrast], [!UICONTROL B&W Flat], [!UICONTROL B&W Soft], [!UICONTROL B&W Infrared], [!UICONTROL B&W Selenium Tone], [!UICONTROL B&W Sepia Tone], and [!UICONTROL B&W Split Tone].
+* **Vignetting**: [!UICONTROL None], [!UICONTROL Light], [!UICONTROL Medium], and [!UICONTROL Heavy].
 
-* **자주 찾는 항목**: [!UICONTROL 고대비 및 섬세하게], [!UICONTROL 저채도 대비], [!UICONTROL 낡은 사진], [!UICONTROL 흑백 소프트] 및 [!UICONTROL 흑백 세피아 톤]
-* **색상**: [!UICONTROL 자연스럽게], [!UICONTROL 밝게], [!UICONTROL 고대비], [!UICONTROL 고대비 및 섬세하게], [!UICONTROL 선명하게] 및 [!UICONTROL 무광]
-* **크리에이티브**: [!UICONTROL Desaturated Contrast], [!UICONTROL Cool Light], [!UICONTROL Turquoise &amp; Red], [!UICONTROL Soft Mist], [!UICONTROL Vintage Instant], [!UICONTROL Warm Contrast], [!UICONTROL Flat &amp; Green], [!UICONTROL Red Lift Matte], [!UICONTROL Warm Shadows] 및 [!UICONTROL Aged Photo].
-* **B&amp;W**: [!UICONTROL B&amp;W Landscape], [!UICONTROL B&amp;W High Contrast], [!UICONTROL B&amp;W Punch], [!UICONTROL B&amp;W Low Contrast], [!UICONTROL B&amp;W Flat], [!UICONTROL B&amp;W Soft], [!UICONTROL B&amp;W Infrared], [!UICONTROL B&amp;W Selenium Tone], [!UICONTROL B&amp;W Sepia Tone] 및 [!UICONTROL B&amp;W Split Tone].
-* **비네트 효과**: [!UICONTROL 없음], [!UICONTROL 가볍게], [!UICONTROL 중간] 및 [!UICONTROL 무겁게]
-
-![편집하여 이미지 조정](assets/adjust-image.png)
+![Adjust image by editing](assets/adjust-image.png)
 
 <!--
 TBD: Insert a video of the available social media options.
