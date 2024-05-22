@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3aab5d3beb7bedf7a61bc557be349f2aa5ed8a7b
+source-git-commit: 37afa8f8233154999bf3e332fb91d8e19f5c0f56
 workflow-type: tm+mt
-source-wordcount: '4965'
+source-wordcount: '4971'
 ht-degree: 99%
 
 ---
@@ -81,6 +81,7 @@ ht-degree: 99%
    + AEMaaCS 유지 관리 릴리스 정보 {#maintenance}
       + [현재 유지 관리 릴리스 정보](/help/release-notes/maintenance/latest.md)
       + 2024 {#2024}
+         + [2024.5.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2024/2024-5-0.md)
          + [2024.4.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2024/2024-4-0.md)
          + [2024.3.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2024/2024-3-0.md)
       + 2023 {#2023}
@@ -192,7 +193,7 @@ ht-degree: 99%
    + [AEM as a Cloud Service 보안 고려 사항](/help/security/security-considerations.md)
    + [Adobe Developer Console에서 JWT 자격 증명 사용 중단](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [AEM as a Cloud Service에 대한 IMS 통합 설정](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
-   + [Sling 서비스 사용자 매핑 및 서비스 사용자 정의에 대한 우수 사례](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
+   + [Sling 서비스 사용자 매핑 및 서비스 사용자 정의의 모범 사례](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
 + 온보딩 {#onboarding}
    + [여기에서 시작](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + 온보딩 여정 {#journey}
