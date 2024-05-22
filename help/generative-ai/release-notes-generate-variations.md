@@ -2,10 +2,10 @@
 title: 변형 생성을 위한 릴리스 노트
 description: AEM 변형 생성을 위한 릴리스 노트, as a Cloud Service 및 Edge Delivery Services Sidekick에서 액세스
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
-source-git-commit: 28df3ace2933d0fc00742ced9496645fc3dc15da
+source-git-commit: 92b11666a0e5a52f633416090b2bb51bf059c70b
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 8%
+source-wordcount: '218'
+ht-degree: 9%
 
 ---
 
@@ -27,8 +27,6 @@ ht-degree: 8%
 * 즐겨찾기에서 결과를 CSV 파일로 다운로드하는 기능이 도입됨
 * 시간 그룹화로 최근 항목 목록 개선됨
 * 다국어에 대한 현지화 지원이 추가되었습니다
-
-현재 릴리스는 버전 2.0.0입니다.
 
 ### 2.0.0 {#release-notes-2-0-0}
 
