@@ -2,9 +2,9 @@
 title: 가장자리 면 포함
 description: 이제 Adobe 관리 CDN은 에지 수준의 다이내믹 웹 컨텐츠 어셈블리에 대한 마크업 언어인 ESI(Edge Side Includes)를 지원합니다.
 feature: Dispatcher
-source-git-commit: 4523efa659ea2aef28e16d5df39f9793cd35d969
+source-git-commit: 8f9173e45dd802ecced21531dfa161890e4a8af1
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '541'
 ht-degree: 2%
 
 ---
@@ -81,9 +81,8 @@ ESI 태그가 있는 페이지가 있는 경우 Apache 구성에 다음 속성�
 |-----------|--------------------------|
 | **no-gzip** | 1로 설정하면 HTML 페이지가 apache에서 CDN으로 압축되지 않은 상태로 전송됩니다. CDN이 ESI 태그를 보고 평가할 수 있도록 압축되지 않은 CDN으로 콘텐츠를 보내야 하기 때문에 ESI에 필요합니다.<br/><br/>상위 페이지와 포함된 코드 조각 모두 no-gzip을 1로 설정해야 합니다.<br/><br/>이 설정은 요청을 기반으로 Apache가 달리 사용할 수 있는 압축 설정을 무시합니다. `Accept-Encoding` 값. |
 | **x-aem-esi** | &quot;on&quot;으로 설정하면 CDN이 상위 HTML 페이지의 ESI 태그를 평가합니다.  기본적으로 헤더는 설정되지 않습니다. |
-| **x-aem-compress** | &quot;on&quot;으로 설정하면 CDN이 CDN의 콘텐츠를 브라우저로 압축합니다. ESI가 작동하려면 apache에서 CDN으로 상위 페이지 전송이 압축 해제되어야 하므로(no-gzip이 1로 설정됨) 이로 인해 지연이 감소할 수 있습니다.<br/><br/>이 헤더가 설정되지 않은 경우 CDN이 압축되지 않은 소스에서 콘텐츠를 검색할 때 압축되지 않은 클라이언트에도 콘텐츠를 제공합니다. 따라서 no-gzip이 1(ESI에 필요)로 설정되어 있고 CDN에서 압축된 콘텐츠를 브라우저에 제공하려는 경우 이 헤더를 설정해야 합니다. |
+| **x-aem-compress** | &quot;on&quot;으로 설정하면 CDN이 CDN의 콘텐츠를 브라우저로 압축합니다. ESI가 작동하려면 Apache에서 CDN으로 상위 페이지 전송이 압축되지 않아야 하므로 (`no-gzip` 1)로 설정하면 지연이 줄어들 수 있습니다.<br/><br/>이 헤더가 설정되지 않은 경우 CDN이 압축되지 않은 소스에서 콘텐츠를 검색할 때 압축되지 않은 클라이언트에도 콘텐츠를 제공합니다. 따라서 다음과 같은 경우 이 헤더를 설정해야 합니다 `no-gzip` 가 1(ESI에 필요)로 설정되고 CDN에서 압축된 컨텐츠를 브라우저에 제공해야 합니다. |
 
 ## Sling Dynamic 포함 항목 {#esi-sdi}
 
 필수는 아니지만, [Sling Dynamic Include](https://sling.apache.org/documentation/bundles/dynamic-includes.html) CDN에서 해석되는 ESI 스니펫을 생성하는 데 SDI(SDI)를 사용할 수 있습니다.
-
