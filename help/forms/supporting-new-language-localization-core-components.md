@@ -1,12 +1,13 @@
 ---
-title: 핵심 구성 요소를 기반으로 새 로케일에 대한 지원을 적응형 양식에 추가하려면 어떻게 합니까?
+title: 핵심 구성 요소를 기반으로 하는 적응형 양식에 새 로케일에 대한 지원을 추가하려면 어떻게 합니까?
 description: 적응형 양식에 대한 새 로케일을 추가하는 방법을 알아봅니다.
 feature: Adaptive Forms, Core Components
+Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
+source-git-commit: 2658d844036d8ac5759d819f9d19c4528cc4df61
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 4%
+source-wordcount: '2152'
+ht-degree: 2%
 
 ---
 
@@ -21,128 +22,297 @@ ht-degree: 4%
 
 AEM Forms은 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어-브라질어(pt-BR), 중국어(zh-CN), 중국어-대만(zh-TW) 및 한국어(ko-KR) 로케일을 즉시 지원합니다. 힌디어(hi_IN)와 같은 더 많은 로케일에 대한 지원을 추가할 수도 있습니다. 이러한 로케일을 추가하여 적응형 Forms을 아랍어, 페르시아어, 우르두어 등과 같은 RTL(오른쪽에서 왼쪽으로 쓰기) 언어로 표시할 수도 있습니다.
 
-## 적응형 양식에 대해 선택한 로케일은 어떻게 됩니까?
+## AEM Forms은 적응형 양식에 대한 로케일을 어떻게 결정합니까?
 
-적응형 Forms에 대한 로케일 추가를 시작하기 전에 적응형 양식에 대해 로케일이 선택되는 방법에 대한 이해를 구축하십시오. 적응형 양식이 렌더링될 때 해당 로케일을 식별하고 선택하는 두 가지 방법이 있습니다.
+AEM Forms에서 적응형 양식을 렌더링할 로케일을 선택하는 방법을 이해하는 것은 올바른 현지화에 중요합니다. 다음은 선택 프로세스에 대한 분류입니다.
 
-* **사용 `locale` URL의 선택기**: 적응형 양식을 렌더링할 때 시스템은 다음을 검사하여 요청된 로케일을 식별합니다 [로케일] 적응형 양식 URL의 선택기. URL은 http:/ 형식을 따릅니다.[AEM Forms 서버 URL]/content/forms/af/[afName].[로케일].html?wcmmode=disabled. 사용 [로케일] 선택기를 사용하여 적응형 양식을 캐싱할 수 있습니다. (예: URL) `www.example.com/content/forms/af/contact-us.hi.html?wcmmmode=disabled` 힌디어로 양식을 렌더링합니다.
+### 우선 순위 기반 로케일 선택
 
-* 아래 나열된 순서대로 매개 변수를 검색합니다.
+AEM Forms은 다음 방법에 우선순위를 지정하여 적응형 양식에 대한 로케일을 결정합니다.
 
-   * **사용 `afAcceptLang`요청 매개 변수**: 사용자의 브라우저 로케일을 재정의하려면 afAcceptLang 요청 매개 변수를 전달할 수 있습니다. 예를 들어 `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr` URL은 AEM Forms 서버가 캐나다 프랑스어 로케일로 양식을 렌더링하도록 강제합니다.
+1. **URL 로케일 선택기 ([로케일])**:
 
-   * **브라우저 로케일 사용(Accept-Language 헤더)**: 시스템은 를 사용하여 요청에 지정된 사용자의 브라우저 로케일도 고려합니다. `Accept-Language` 머리글입니다.
+   시스템은 를 사용하여 URL 내에 지정된 로케일의 우선 순위를 지정합니다. [로케일] 선택기. 이 형식을 사용하면 캐싱의 성능을 높일 수 있습니다.
 
-  요청된 로케일에 대한 클라이언트 라이브러리(라이브러리를 만들고 사용하는 프로세스는 이 문서의 뒷부분에서 다룹니다)를 사용할 수 없는 경우 시스템에서 로케일 내 언어 코드에 대한 클라이언트 라이브러리가 있는지 확인합니다. 예를 들어 요청된 로케일이 `en_ZA` (남아프리카 영어) 및 클라이언트 라이브러리가 없습니다. `en_ZA`, 적응형 양식은 사용 가능한 경우 en(영어)용 클라이언트 라이브러리를 사용합니다. 둘 다 검색되지 않는 경우 적응형 양식은 다음에 대한 사전을 찾습니다. `en` 로케일.
+   형식: URL은 http:/ 형식을 따릅니다.[AEM Forms 서버 URL]/content/forms/af/[afName].[로케일].html?wcmmode=disabled.
 
-  로케일이 식별되면 적응형 양식은 해당 양식 특정 사전을 선택합니다. 요청된 로케일에 대한 사전을 찾을 수 없는 경우 기본적으로 적응형 양식이 작성된 언어의 사전을 사용합니다.
-
-  로케일 정보를 사용할 수 없는 경우 적응형 양식은 양식 개발 중에 사용되는 언어인 원래 언어로 표시됩니다
+   예: https://[server]/content/forms/af/contact-us.hi.html은 힌디어로 양식을 렌더링합니다.
 
 
-## 사전 요구 사항 {#prerequistes}
+1. **afAcceptLang 요청 매개 변수**:
 
-로케일 추가를 시작하기 전에
+   사용자의 브라우저 로케일을 재정의하려면 `afAcceptLang` 매개 변수가 포함된 랜딩 페이지 URL의 매개 변수, URL의 매개 변수, URL의 매개 변수, URL의 매개 변수, URL의 매개 변수, URL의 매개 변수, URL의 매개 변수 등이 포함될 수 있습니다.
 
-* 보다 쉬운 편집을 위해 일반 텍스트 편집기(IDE)를 설치합니다. 이 문서의 예제는 다음을 기반으로 합니다 [Microsoft® Visual Studio 코드](https://code.visualstudio.com/download).
-* 버전 설치 [Git](https://git-scm.com): 컴퓨터에서 사용할 수 없는 경우 입니다.
-* 복제 [적응형 Forms 핵심 구성 요소](https://github.com/adobe/aem-core-forms-components) 리포지토리. 저장소를 복제하려면 다음을 수행하십시오.
-   1. 명령줄 또는 터미널 창을 열고 저장소를 저장할 위치로 이동합니다. 예, `/adaptive-forms-core-components`
-   1. 다음 명령을 실행하여 저장소를 복제합니다.
+   예: https://[server]/forms/af/survey.ca-fr.html?afAcceptLang=ca-fr는 양식을 캐나다 프랑스어로 렌더링하도록 강제합니다.
 
-      ```SHELL
-          git clone https://github.com/adobe/aem-core-forms-components.git
-      ```
+1. **사용자의 브라우저 로케일(Accept-Language 헤더)**:
 
-  저장소에는 로케일을 추가하는 데 필요한 클라이언트 라이브러리가 포함되어 있습니다.
+   다른 로케일이 지정되지 않은 경우 AEM Forms은 를 사용하여 전송되는 사용자의 브라우저 로케일을 고려합니다. `Accept-Language` 머리글입니다.
 
-  명령이 성공적으로 실행되면 저장소가 `aem-core-forms-components` 컴퓨터의 폴더입니다. 이 문서의 나머지 부분에서 폴더는 다음과 같이 표시됩니다. [적응형 Forms 핵심 구성 요소 저장소].
+
+### 대체 메커니즘:
+
+
+* 요청된 로케일에 대한 클라이언트 라이브러리(이 문서의 뒷부분에서 설명하는 새 로케일 추가 프로세스)를 사용할 수 없는 경우 AEM Forms은 로케일 내의 언어 코드를 기반으로 라이브러리를 확인합니다.
+
+  예: en_ZA(남아프리카 영어)가 요청되고 en_ZA 라이브러리가 없는 경우 사용 가능한 경우 en(영어)을 사용합니다.
+
+  적절한 클라이언트 라이브러리가 없으면 기본 사전(대부분 `en`) 양식의 작성 언어가 사용됩니다.
+
+  로케일 정보가 없는 경우 적응형 양식은 개발 중에 사용된 원래 언어로 표시됩니다.
+
+
+## 로케일 추가를 위한 사전 요구 사항
+
+적응형 Forms에 대한 새 로케일 추가를 시작하기 전에 다음을 확인하십시오.
+
+**소프트웨어:**
+
+* IDE(일반 텍스트 편집기): 모든 일반 텍스트 편집기가 작동하지만 IDE(통합 개발 환경)와 같은 [Microsoft Visual Studio 코드](https://code.visualstudio.com/download) 에서는 보다 쉽게 편집할 수 있는 고급 기능을 제공합니다.
+
+* Git: 이 버전 제어 시스템은 코드 변경 사항을 관리하는 데 필요합니다. 설치되지 않은 경우 다음에서 다운로드하십시오. [https://git-scm.com](https://git-scm.com).
+
+
+**코드 저장소:**
+
+적응형 Forms 핵심 구성 요소 저장소 복제: 로케일을 추가하려면 이 저장소의 클라이언트 라이브러리가 필요합니다. 저장소를 복제하려면 다음을 수행하십시오.
+
+1. 명령줄 또는 터미널 창을 엽니다.
+
+1. 저장소를 저장할 컴퓨터에서 원하는 위치(예: /adaptive-forms-core-components)로 이동합니다.
+
+1. 다음 명령을 실행하여 저장소를 복제합니다.
+
+   ```
+   git clone https://github.com/adobe/aem-core-forms-components.git
+   ```
+
+   이 명령은 저장소를 다운로드하고 다음 이름의 폴더를 만듭니다. `aem-core-forms-components` 컴퓨터에 있습니다. 이 안내서 전체에서 이 폴더는 다음과 같습니다. `[Adaptive Forms Core Components repository]`
 
 
 ## 로케일 추가 {#add-localization-support-for-non-supported-locales}
 
-새 로케일에 대한 지원을 추가하려면 다음 단계를 수행합니다.
+핵심 구성 요소를 기반으로 하는 적응형 양식에 새 로케일에 대한 지원을 추가하려면 다음 단계를 따르십시오.
 
-![저장소에 로케일 추가](add-a-locale-adaptive-form-core-components.png)
+### AEM as a Cloud Service Git 리포지토리 복제
 
-### 1. AEM as a Cloud Service Git 저장소 복제 {#clone-the-repository}
+1. AEM 명령줄을 열고 다음과 같은 as a Cloud Service 저장소를 저장할 디렉토리를 선택합니다. `/cloud-service-repository/`.
 
-1. 명령줄을 열고 AEM Forms as a Cloud Service 저장소를 저장할 디렉터리(예: `/cloud-service-repository/`.
-
-1. 다음 명령을 실행하여 저장소를 복제합니다.
+1. 아래 명령을 실행하여 저장소를 복제합니다.
 
    ```SHELL
-   git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/
+   git clone https://git.cloudmanager.adobe.com/<organization-name>/<program id>/
    ```
 
-   바꾸기 `<my-org>` 및 `<my-program>` 조직 이름과 프로그램 이름이 있는 위의 URL에서. 조직 이름, 프로그램 이름 또는 Git 저장소의 전체 경로와 저장소 복제에 필요한 자격 증명을 얻는 방법에 대한 자세한 지침은 를 참조하십시오. [Git 액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) 기사.
+   Git 저장소를 복제하려면 다음 정보가 필요합니다.
 
-   명령을 성공적으로 완료하면 폴더가 `<my-program>` 이(가) 만들어졌습니다. 여기에는 Git 저장소에서 복제된 콘텐츠가 포함됩니다. 문서의 나머지 부분에서 폴더는 다음과 같이 표시됩니다. `[AEM Forms as a Cloud Service Git repository]`.
+   * **조직 이름**: Adobe Experience Manager as a Cloud Service AEM 내에서 팀 또는 프로젝트를 식별합니다(as a Cloud Service).
 
+   * **프로그램 ID**: 저장소와 연결된 프로그램을 지정합니다.
 
-### 2. 가이드 현지화 서비스에 새 로케일 추가 {#add-a-locale-to-the-guide-localization-service}
+   * **자격 증명**: 저장소에 안전하게 액세스하려면 사용자 이름과 암호(또는 개인 액세스 토큰)가 필요합니다.
 
-1. 이전 섹션에서 복제된 저장소 폴더를 일반 텍스트 편집기에서 엽니다.
-1. 다음 위치로 이동 `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config` 폴더를 삭제합니다. 다음을 찾을 수 있습니다. `<appid>` 다음에서 `archetype.properties` 프로젝트의 파일입니다.
-1. 편집할 `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config/Guide Localization Service.cfg.json` 페이지를 엽니다. 파일이 없으면 만듭니다. 지원되는 로케일이 있는 샘플 파일은 다음과 같습니다.
+   **이 정보는 어디에서 찾을 수 있습니까?**
 
-   ![샘플 안내서 Localization Service.cfg.json](locales.png)
+   이러한 세부 정보를 찾는 단계별 지침은 Adobe Experience League 문서 &quot; 를 참조하십시오.[Git 액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;.
 
-1. 추가 [언어의 로케일 코드](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) 예를 들어 힌디어에 대해 &#39;hi&#39;를 추가합니다.
-1. 파일을 저장하고 닫습니다.
+   **프로젝트가 준비되었습니다!**
 
-### 3. 로케일을 추가할 클라이언트 라이브러리 만들기
+   명령이 성공적으로 완료되면 로컬 디렉터리에 새 폴더가 생성됩니다. 이 폴더의 이름은 프로그램 이름을 따라 지정합니다(예: program-id). 이 폴더에는 AEM as a Cloud Service Git 저장소에서 다운로드한 모든 파일과 코드가 포함되어 있습니다.
 
-AEM Forms은 새 로케일을 쉽게 추가하는 데 도움이 되는 샘플 클라이언트 라이브러리를 제공합니다. 을(를) 다운로드하고 추가할 수 있습니다. `clientlib-it-custom-locale` 클라이언트 라이브러리 [적응형 Forms 핵심 구성 요소 저장소] GitHub에서 Forms as a Cloud Service 저장소로 이동합니다. 클라이언트 라이브러리를 추가하려면 다음 단계를 수행합니다.
-
-1. 을(를) 엽니다 [적응형 Forms 핵심 구성 요소 저장소] 를 입력합니다. 복제된 저장소가 없는 경우 [전제 조건](#prerequistes) 저장소 복제 지침
-1. 다음 위치로 이동 `/aem-core-forms-components/it/apps/src/main/content/jcr_root/apps/forms-core-components-it/clientlibs` 디렉토리.
-1. 다음을 복사합니다. `clientlib-it-custom-locale` 디렉토리.
-1. 다음으로 이동 `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/moonlightprodprogram/clientlibs` 및 붙여넣기 `clientlib-it-custom-locale` 디렉토리.
+   이 안내서 전체에서 이 폴더는 다음과 같습니다. `[AEMaaCS project directory]`.
 
 
-### 4. 로케일별 파일 만들기 {#locale-specific-file}
+### 가이드 현지화 서비스에 새 로케일 추가
 
-1. 다음으로 이동 `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`
-1. 를 찾습니다. [GitHub의 영어 로케일 .json 파일](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json)제품에 포함된 최신 기본 문자열 세트가 들어 있습니다.
-1. 특정 로케일에 대한 .json 파일을 만듭니다.
-1. 새로 만든 .json 파일에서 영어 로케일 파일의 구조를 미러링합니다.
-1. .json 파일의 영어 문자열을 해당 언어에 해당하는 현지화된 문자열로 바꿉니다.
-1. 파일을 저장하고 닫습니다.
+1. 편집기에서 저장소 폴더를 엽니다.
+
+   ![편집기의 저장소 폴더](/help/forms/assets/repository-folder-in-an-editor.png)
+
+1. 를 찾습니다. `Guide Localization Service.cfg.json` 파일. 이 파일은 AEM Forms 애플리케이션에서 지원하는 로케일을 제어합니다. 이 파일을 편집하여 새 로케일을 추가할 수 있습니다.
+
+   * **기존 파일**: 파일이 이미 있는 경우 AEM Forms 프로젝트 디렉터리 내에서 찾습니다. 일반적인 위치는 다음과 같습니다.
+
+     ```Shell
+     [AEMaaCS project directory]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config`. 
+     ```
+
+     바꾸기 `<appid>` (프로젝트별 앱 ID 포함) 다음을 찾을 수 있습니다. `<appid>` 의 AEM 프로젝트용 `archetype.properties` 파일.
+
+     ![Archetype 속성](/help/forms/assets/archetype-properties.png)
+
+   * **새 파일**: 파일이 없는 경우 위에 언급된 동일한 위치에 파일을 만들어야 합니다. 복사한 후 이 문서의 파일 이름을 붙여넣지 말고 수동으로 이름을 입력합니다. 파일 이름 `Guide Localization Service.cfg.json` 에는 공백이 포함되어 있습니다. 이는 의도적인 것이며 설명서에 오타가 아닙니다.
+
+     지원되는 OOTB 로케일 목록이 있는 샘플 파일은 다음과 같습니다.
+
+     ```
+         {
+             "supportedLocales":[
+             "en",
+             "fr",
+             "de",
+             "ja",
+             "pt-br",
+             "zh-cn",
+             "zh-tw",
+             "ko-kr",
+             "it",
+             "es"
+             ]
+         }
+     ```
+
+1. 원하는 언어의 로케일 코드를 파일에 추가합니다.
+   1. 사용 [코드 목록](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes) 원하는 언어를 나타내는 두 글자로 된 코드를 찾습니다.
+
+   1. 로케일 코드를 `Guide Localization Service.cfg.json` 파일. 다음은 몇 가지 예입니다.
+
+      * 왼쪽에서 오른쪽 언어:
+         * 영어(미국): en-US
+         * 스페인어(스페인): es-ES
+         * 프랑스어(프랑스): fr-FR
+      * 오른쪽에서 왼쪽 쓰기 언어:
+         * 아랍어(아랍에미리트): ar-ae
+         * 히브리어: he(또는 historical reference)
+         * Farsi: fa
+
+1. 변경 후 다음을 확인합니다. `Guide Localization Service.cfg.json` 파일은 유효한 JSON 파일로 형식이 올바르게 지정됩니다. JSON 형식 지정 시 오류가 발생하여 제대로 작동하지 않을 수 있습니다. 파일을 저장합니다.
 
 
-### 5. 로케일 지원을 사전에 추가합니다 {#add-locale-support-for-the-dictionary}
 
-다음 경우에만 이 단계를 수행하십시오. `<locale>` 을(를) 추가하고 있는 이(가) 다음에 없습니다. `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
+### 샘플 클라이언트 라이브러리를 활용하여 로케일을 쉽게 추가할 수 있습니다
 
-1. `[AEM Forms as a Cloud Service Git repository]/ui.content/src/main/content/jcr_root/etc/` 폴더로 이동합니다.
+AEM Forms은 유용한 샘플 클라이언트 라이브러리를 제공합니다. `clientlib-it-custom-locale`를 입력하여 새 로케일 추가를 단순화합니다. 이 라이브러리는 [적응형 Forms 핵심 구성 요소 저장소](https://github.com/adobe/aem-core-forms-components), GitHub에서 사용 가능합니다.
 
-1. 만들기 `etc` 폴더 `jcr_root` 폴더가 아직 없는 경우 입니다.
 
-1. 폴더 만들기 `languages` 다음 아래에 `etc` 폴더가 아직 없는 경우 입니다.
+시작하기 전에 의 로컬 복사본이 있는지 확인합니다. [적응형 Forms 핵심 구성 요소 저장소]. 그렇지 않은 경우 다음 명령과 함께 Git을 사용하여 쉽게 복제할 수 있습니다.
 
-   ![대체 텍스트](etc-content-xml.png)
+```SHELL
+git clone https://github.com/adobe/aem-core-forms-components.git
+```
 
-1. 만들기 `.content.xml` 파일 아래 `languages` 폴더를 삭제합니다. 파일에 다음 내용을 추가합니다.
+이 명령은 clientlib-it-custom-locale 라이브러리를 포함한 전체 저장소를 시스템의 aem-core-forms-components라는 디렉터리에 다운로드합니다.
+
+![로컬 컴퓨터의 적응형 Forms 핵심 구성 요소 저장소 디렉터리](/help/forms/assets/core-forms-components-repo-on-local-machine.png)
+
+### 샘플 클라이언트 라이브러리 통합
+
+이제 다음을 통합하겠습니다. `clientlib-it-custom-locale` 라이브러리를 AEM에 as a Cloud Service, [AEMaaCS 프로젝트 디렉터리]:
+
+1. 샘플 클라이언트 라이브러리를 찾습니다.
+
+   의 로컬 복사본 내 [적응형 Forms 핵심 구성 요소 저장소]를 클릭하고 다음 경로로 이동합니다.
+
+   ```
+       /aem-core-forms-components/it/apps/src/main/content/jcr_root/apps/forms-core-components-it/clientlibs
+   ```
+
+1. 라이브러리를 복사하여 붙여넣습니다.
+
+   1. 다음을 복사합니다. `clientlib-it-custom-locale` 폴더를 삭제합니다.
+
+      ![clientlib-it-custom-locale 복사](/help/forms/assets/clientlib-it-custom-locale-copy.png)
+
+   1. 내에서 다음 디렉토리로 이동합니다. [AEMaaCS 프로젝트 디렉터리]:
+
+      ```
+      /ui.apps/src/main/content/jcr_root/apps/<app-id>/clientlib
+      ```
+
+      **중요 사항**: 바꾸기 `<app-id>` (애플리케이션의 실제 ID 포함)
+
+   1. 복사한 항목 붙여넣기 `clientlib-it-custom-locale` 폴더를 이 디렉터리에 추가합니다.
+
+      ![clientlib-it-custom-locale 붙여넣기](/help/forms/assets/clientlib-it-custom-locale-paste.png)
+
+
+### 새 로케일에 대한 파일 만들기:
+
+1. 로케일 디렉토리로 이동합니다.
+
+   내 `[AEMaaCS project directory]`를 클릭하고 다음 경로로 이동합니다.
+
+   ```
+       /ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/
+   ```
+
+   **중요 사항**: 바꾸기 `<program-id>` (실제 애플리케이션 ID 포함)
+
+1. 샘플 영어 언어 파일을 찾습니다.
+
+   AEM Forms은 [GitHub의 샘플 영어 로케일 파일(.json)](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json).
+
+   영어 파일에는 참조용 기본 문자열 집합이 포함되어 있습니다. 로케일별 파일은 영어 파일의 구조를 모방해야 합니다.
+
+   아랍어, 히브리어, 페르시아어와 같은 언어의 경우, 영어와 같이 왼쪽에서 오른쪽으로(LTR) 대신 오른쪽에서 왼쪽으로(RTL) 텍스트를 읽습니다. 양식이 이러한 언어로 올바르게 표시되도록 하려면 샘플 로케일 파일을 안내서로 사용하는 것이 좋습니다. 이러한 파일은 RTL 언어의 텍스트, 날짜 및 기타 요소 서식을 지정하는 방법에 대한 참조를 제공합니다. 샘플 로케일 파일을 찾을 수 있습니다.
+
+   * [아랍어](/help/forms/assets/ar-ae.json)
+   * [히브리어](/help/forms/assets/he.json)
+   * [페르시아어](/help/forms/assets/fa.json)
+
+   이러한 샘플 파일을 활용하면 양식이 RTL 언어로 작업하는 사용자에게 원활한 경험을 제공할 수 있습니다.
+
+
+1. 로케일 파일 만들기:
+
+   1. 내에 새 .json 파일 만들기 `i18n` 디렉토리.
+   1. 원하는 언어에 적합한 로케일 코드를 사용하여 파일의 이름을 지정합니다(예: 프랑스어의 경우 fr-FR.json, 아랍어의 경우 ar-ae.json). 이 파일의 구조는 영어 로케일 파일을 미러링해야 합니다.
+
+
+1. 구조 및 번역:
+
+   1. 텍스트 편집기에서 새로 만든 파일을 엽니다.
+
+   1. 영어 값을 대상 언어에 해당하는 번역으로 바꿉니다.
+
+   1. 문자열 번역이 완료되면 파일을 저장합니다.
+
+
+
+
+### 5. 로케일 지원을 사전에 추가합니다
+
+이 단계는 영어(en), 독일어(de), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 포르투갈어(pt-br), 중국어(간체 - zh_cn), 중국어(번체 - zh_tw), 일본어(ja) 및 한국어(ko_kr) 이외의 로케일만 적용됩니다.
+
+1. 구성 폴더를 찾습니다.
+
+   에서 다음 디렉토리로 이동합니다. [AEMaaCS 프로젝트 디렉터리]:
+
+   ```
+   /ui.content/src/main/content/jcr_root/etc
+   ```
+
+1. 필요한 폴더를 만듭니다(누락된 경우).
+
+   다음과 같은 경우 `etc` 다음 내에 폴더가 없습니다. `jcr_root` 폴더를 생성합니다. 내부 `etc`, (이)라는 다른 폴더를 만듭니다. `languages` 만약 없어진 거라면
+
+1. 로케일 구성 파일을 만듭니다.
+
+   다음 범위 내 `languages` 폴더, (이)라는 이름의 새 파일 만들기 `.content.xml`. 복사한 후 이 문서의 파일 이름을 붙여넣지 말고 수동으로 이름을 입력합니다.
+
+   ![이름이 인 새 파일 만들기 `.content.xml`](etc-content-xml.png)
+
+   이 파일을 열고 다음 내용을 붙여넣고 바꿉니다. [로케일_코드] 를 사용하십시오(예: 아랍어의 경우 ar-ae).
+
 
    ```XML
    <?xml version="1.0" encoding="UTF-8"?>
    <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-   jcr:primaryType="nt:unstructured"
-   languages="[de,es,fr,it,pt-br,zh-cn,zh-tw,ja,ko-kr]"/>
+         jcr:primaryType="nt:unstructured"
+         languages="[de,es,fr,it,pt-br,zh-cn,zh-tw,ja,ko-kr,hi]"/>
    ```
 
-1. 로케일 코드를 `languages` 속성. 예를 들어 다음 예제 코드에 hindi에 대한 hi가 추가되었습니다.
-
+   경고: 기존 목록을 바꾸지 마십시오. 대신 새 로케일 코드를 대괄호 안에 넣고 다음과 같이 쉼표로 구분합니다(예: ar-ae 사용).
 
    ```XML
-   <?xml version="1.0" encoding="UTF-8"?>
-   <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-   jcr:primaryType="nt:unstructured"
-   languages="[de,es,fr,it,pt-br,zh-cn,zh-tw,ja,ko-kr,hi]"/>
+   languages="[de,es,fr,it,pt-br,zh-cn,zh-tw,ja,ko-kr,hi,ar-ae]"
    ```
 
-1. 새로 만든 폴더를 `filter.xml` 아래에 `/ui.content/src/main/content/meta-inf/vault/filter.xml` 다음으로:
+1. filter.xml에 새 폴더 포함:
+
+   다음 위치로 이동 `/ui.content/src/main/content/meta-inf/vault/filter.xml` 파일 위치: [AEMaaCS 프로젝트 디렉터리].
+
+   파일을 열고 끝에 다음 줄을 추가합니다.
 
    ```
    <filter root="/etc/languages"/>
@@ -150,11 +320,54 @@ AEM Forms은 새 로케일을 쉽게 추가하는 데 도움이 되는 샘플 �
 
    ![에서 생성된 폴더 추가 `filter.xml` 아래에 `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
 
-### 6. 변경 사항을 커밋하고 파이프라인을 배포합니다. {#commit-changes-in-repo-deploy-pipeline}
+1. 파일을 저장합니다.
 
-새 로케일을 추가한 후 GIT 저장소에 변경 사항을 커밋합니다. 전체 스택 파이프라인을 사용하여 코드를 배포합니다. 학습 [파이프라인 설정 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#setup-pipeline) 새 로케일 지원을 추가합니다.
+### 새로 생성된 로케일을 AEM 환경에 배포
 
-파이프라인 실행이 완료되면 새로 추가된 로케일을 사용할 수 있습니다.
+이제 적응형 Forms에 새 로케일을 사용하도록 모두 설정되었습니다. 다음을 수행할 수 있습니다.
+
+* AEM as a Cloud Service 배포, [AEMaaCS 프로젝트 디렉터리]로컬 컴퓨터에서 새 로케일 구성을 시도하려면 로컬 개발 환경으로 이동하십시오. 로컬 개발 환경에 배포하려면 다음을 수행하십시오.
+
+   1. 로컬 개발 환경이 실행 중인지 확인합니다. 아직 로컬 개발 환경을 설정하지 않았다면 의 안내서를 참조하십시오. [AEM Forms용 로컬 개발 환경 설정](/help/forms/setup-local-development-environment.md).
+
+   1. 터미널 창이나 명령 프롬프트를 엽니다.
+
+   1. 다음 위치로 이동 [AEMaaCS 프로젝트 디렉터리]
+
+   1. 다음 명령을 실행합니다.
+
+      ```
+      mvn -PautoInstallPackage clean install
+      ```
+
+* AEM as a Cloud Service 배포, [AEMaaCS 프로젝트 디렉터리]을 클릭하여 Cloud Service 환경에 추가합니다. Cloud Service 환경에 배포하려면 다음을 수행하십시오.
+
+   1. 변경 내용 커밋:
+
+      새 로케일 구성을 추가한 후 로케일 추가를 설명하는 명확한 Git 메시지로 변경 사항을 커밋합니다(예: &quot;지원 추가됨&quot;). [로케일 이름]&quot;).
+
+   1. 업데이트된 코드를 배포합니다.
+
+      다음을 통해 코드 배포 트리거 [기존 전체 스택 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#setup-pipeline). 이렇게 하면 새 로케일 지원을 통해 업데이트된 코드를 자동으로 빌드하고 배포합니다.
+
+      파이프라인을 아직 설정하지 않았다면 의 안내서를 참조하십시오. [AEM Forms as a Cloud Service에 대한 파이프라인을 설정하는 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#setup-pipeline)..
+
+
+## 새로 추가된 로케일이 있는 적응형 양식 미리 보기
+
+다음 단계는 새로 추가된 로케일이 있는 적응형 양식을 미리 보는 과정을 안내합니다.
+
+1. AEM Forms as a Cloud Service 인스턴스에 로그인합니다.
+
+1. &quot;Forms&quot; 섹션을 찾아 &quot;Forms 및 문서&quot;로 이동합니다.
+1. 다음으로 이동 **Forms** >  **Forms 및 문서**.
+1. 적응형 양식을 선택하고 **사전 추가** 및 **사전을 번역 프로젝트에 추가** 마법사가 나타납니다.
+1. 다음을 지정합니다. **프로젝트 제목** 및 선택 **타겟 언어** 드롭다운 메뉴 아래의 **사전을 번역 프로젝트에 추가** 마법사.
+1. 클릭 **완료** 생성된 번역 프로젝트를 실행합니다.
+1. 다음으로 이동 **Forms** >  **Forms 및 문서**.
+1. 적응형 양식을 선택하고 **HTML으로 미리 보기** 옵션을 선택합니다.
+1. 추가 `&afAcceptLang=<locale-name>` 미리보기 URL로 이동하고 return 키를 누릅니다. 바꾸기 `<locale-name>` 실제 로케일 코드를 사용하여 적응형 양식이 지정된 로케일에 표시됩니다.
+
 
 ## 새로 추가된 로케일이 있는 적응형 양식 미리 보기 {#use-added-locale-in-af}
 
@@ -171,11 +384,14 @@ AEM Forms은 새 로케일을 쉽게 추가하는 데 도움이 되는 샘플 �
 
 ## 새로운 현지화 기능 지원을 위한 모범 사례 {#best-practices}
 
-* Adobe은 적응형 양식을 만든 후 번역 프로젝트를 만들 것을 권장합니다.
+* Adobe은 적응형 양식을 만든 후 번역 프로젝트를 만들 것을 권장합니다. 현지화 프로세스를 간소화합니다.
 
-* 기존 적응형 양식에 새 필드를 추가하는 경우:
-   * **기계 번역용**: 사전을 다시 만들고 [번역 프로젝트 실행](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md). 번역 프로젝트를 만든 후 적응형 양식에 추가된 필드는 번역되지 않은 상태로 유지됩니다.
-   * **사람 번역용**: 의 UI를 사용하여 사전을 내보냅니다. `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. 새로 추가된 필드의 사전을 업데이트하고 업로드합니다.
+
+* 새 필드 처리:
+
+   * **기계 번역**: 기계 번역을 사용하는 경우 사전을 다시 만들고 다시 만들어야 합니다.[번역 프로젝트 실행](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md) 기존 적응형 양식에 새 필드를 추가한 후 초기 번역 프로젝트 이후에 추가된 새 필드는 번역되지 않은 상태로 유지됩니다.
+
+   * **사람 번역**: 사람 번역 워크플로의 경우 의 UI를 사용하여 사전을 내보냅니다. `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. 새 필드의 사전을 업데이트하고 수정된 버전을 업로드합니다.
 
 ## 더 보기
 
