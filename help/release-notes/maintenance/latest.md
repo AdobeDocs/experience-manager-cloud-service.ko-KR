@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: b6fe2a58bb16c70cef48426ec49dda474195c023
+source-git-commit: d107f40c4bc43837db9d8fab3d06627d9e930620
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1574'
 ht-degree: 8%
 
 ---
@@ -68,7 +68,6 @@ ht-degree: 8%
 * SITES-20238 [RTC] Pfizer MVP - CF API를 추가하여 ID에 대한 CF 경로를 확인하거나 그 반대로 확인합니다.
 * SITES-21043 [CF][launches] Cloud Service의 측면 포트 성능 향상.
 * SITES-21044 [CF][launches] Side-port 비동기 편집 페이로드 구현을 Cloud Service에 추가합니다.
-* FORMS-9606: 이전에는 적응형 Forms 편집기에서 필드 값만 호출 서비스의 응답에 매핑할 수 있었습니다. 이제 작성자는 필드의 모든 속성을 호출 서비스 응답에 매핑할 수 있습니다.
 * FORMS-7483: 이제 AEM Forms JSON 스키마 파서가 JSON 스키마(2020-12)를 지원합니다.
 * FORMS-13209: 적응형 Forms 기본 제출 성공 및 제출 실패 핸들러를 재정의하는 핸들러가 포함됩니다. 적응형 Forms 규칙 편집기를 통해 이러한 핸들러를 구성할 수 있습니다.
 * FORMS-13612: 이제 화면 판독기에서 핵심 구성 요소 기반 적응형 Forms의 필드에 대한 오류 메시지, 간단한 설명 및 긴 설명을 읽습니다. 또한 양식에 오류가 있고 제출에 유효하지 않은 경우 적응형 양식 입력을 무효화할 수 있는 지원이 추가되었습니다.
