@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 37afa8f8233154999bf3e332fb91d8e19f5c0f56
+source-git-commit: 543e9b78b4bdc11c49f79c6baec79615c5f7f91b
 workflow-type: tm+mt
-source-wordcount: '4971'
+source-wordcount: '4976'
 ht-degree: 99%
 
 ---
@@ -655,7 +655,7 @@ ht-degree: 99%
             + [적응형 양식의 이메일 보내기 제출 액션 구성](/help/forms/configure-submit-action-send-email.md)
             + [적응형 양식에서 Google reCAPTCHA 사용](/help/forms/captcha-adaptive-forms-core-components.md)
             + [적응형 양식에서 hCAPTCHA 사용](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
-            + [적응형 양식에서 턴스타일 사용](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
+            + [적응형 양식에서 Turnstile 사용](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [적응형 양식에서 사용자 정의 오류 핸들러 추가](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [핵심 구성 요소 기반 적응형 양식의 로케일 추가](/help/forms/supporting-new-language-localization-core-components.md)
             + [사용자 정의 함수 만들기 및 사용](/help/forms/create-and-use-custom-functions.md)
@@ -679,7 +679,7 @@ ht-degree: 99%
          + 적응형 양식에 구성 요소 추가 {#add-components-to-an-adaptive-form}
             + [적응형 양식에서 CAPTCHA 사용](/help/forms/captcha-adaptive-forms.md)
             + [적응형 양식에서 hCaptcha 사용](/help/forms/integrate-adaptive-forms-hcaptcha.md)
-            + [적응형 양식에서 턴스타일 사용](/help/forms/integrate-adaptive-forms-turnstile.md)
+            + [적응형 양식에서 Turnstile 사용](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [핵심 구성 요소 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
             + [스크리블 서명 적용](/help/forms/signing-forms-using-scribble.md)
             + [적응형 양식에 테이블 추가](/help/forms/adaptive-forms-tables.md)
@@ -727,6 +727,7 @@ ht-degree: 99%
    + 트랜잭션 보고서 {#using-communications}
       + [트랜잭션 보고서 과금 가능한 API](/help/forms/transaction-reports-billable-apis.md)
       + [사용자 정의 구현을 위한 트랜잭션 기록](/help/forms/record-transaction-custom-implementation.md)
+      + [가치 실현 대시보드 이해](/help/forms/aem-forms-value-realization-dashboard.md)
    + 개발자 API 참조 {#aem-forms-developer-api-reference}
       + [적응형 양식 API 참조](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms Cloud Service 커뮤니케이션 API 참조](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -1176,7 +1177,7 @@ ht-degree: 99%
       + [Dispatcher 도구 레거시를 사용하여 확인 및 디버깅](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [AEM as a Cloud Service의 CDN](/help/implementing/dispatcher/cdn.md)
       + [CDN에서 트래픽 구성](/help/implementing/dispatcher/cdn-configuring-traffic.md)
-      + [가장자리 면 포함](/help/implementing/dispatcher/edge-side-includes.md)
+      + [에지측 포함](/help/implementing/dispatcher/edge-side-includes.md)
       + [CDN 오류 페이지 구성](/help/implementing/dispatcher/cdn-error-pages.md)
       + [AEM as a Cloud Service에서 캐싱](/help/implementing/dispatcher/caching.md)
 + 커넥터 {#connectors}
