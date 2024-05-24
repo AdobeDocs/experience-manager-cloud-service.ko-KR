@@ -4,9 +4,9 @@ description: 적응형 양식에 대한 새 로케일을 추가하는 방법을 
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 2658d844036d8ac5759d819f9d19c4528cc4df61
+source-git-commit: 9cb3b52d0cf172c16777eadbc4d78b267c3db513
 workflow-type: tm+mt
-source-wordcount: '2152'
+source-wordcount: '2028'
 ht-degree: 2%
 
 ---
@@ -270,7 +270,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
 
 
-### 5. 로케일 지원을 사전에 추가합니다
+### 사전에 로케일 지원 추가
 
 이 단계는 영어(en), 독일어(de), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 포르투갈어(pt-br), 중국어(간체 - zh_cn), 중국어(번체 - zh_tw), 일본어(ja) 및 한국어(ko_kr) 이외의 로케일만 적용됩니다.
 
@@ -350,7 +350,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
       다음을 통해 코드 배포 트리거 [기존 전체 스택 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#setup-pipeline). 이렇게 하면 새 로케일 지원을 통해 업데이트된 코드를 자동으로 빌드하고 배포합니다.
 
-      파이프라인을 아직 설정하지 않았다면 의 안내서를 참조하십시오. [AEM Forms as a Cloud Service에 대한 파이프라인을 설정하는 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#setup-pipeline)..
+      파이프라인을 아직 설정하지 않았다면 의 안내서를 참조하십시오. [AEM Forms as a Cloud Service에 대한 파이프라인을 설정하는 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#setup-pipeline).
 
 
 ## 새로 추가된 로케일이 있는 적응형 양식 미리 보기
@@ -358,8 +358,6 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 다음 단계는 새로 추가된 로케일이 있는 적응형 양식을 미리 보는 과정을 안내합니다.
 
 1. AEM Forms as a Cloud Service 인스턴스에 로그인합니다.
-
-1. &quot;Forms&quot; 섹션을 찾아 &quot;Forms 및 문서&quot;로 이동합니다.
 1. 다음으로 이동 **Forms** >  **Forms 및 문서**.
 1. 적응형 양식을 선택하고 **사전 추가** 및 **사전을 번역 프로젝트에 추가** 마법사가 나타납니다.
 1. 다음을 지정합니다. **프로젝트 제목** 및 선택 **타겟 언어** 드롭다운 메뉴 아래의 **사전을 번역 프로젝트에 추가** 마법사.
@@ -367,20 +365,6 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 1. 다음으로 이동 **Forms** >  **Forms 및 문서**.
 1. 적응형 양식을 선택하고 **HTML으로 미리 보기** 옵션을 선택합니다.
 1. 추가 `&afAcceptLang=<locale-name>` 미리보기 URL로 이동하고 return 키를 누릅니다. 바꾸기 `<locale-name>` 실제 로케일 코드를 사용하여 적응형 양식이 지정된 로케일에 표시됩니다.
-
-
-## 새로 추가된 로케일이 있는 적응형 양식 미리 보기 {#use-added-locale-in-af}
-
-새로 추가된 로케일을 사용하여 적응형 양식을 미리 보려면 다음 단계를 수행하십시오.
-
-1. AEM Forms as a Cloud Service 인스턴스에 로그인합니다.
-1. 다음으로 이동 **Forms** >  **Forms 및 문서**.
-1. 적응형 양식을 선택하고 **사전 추가** 및 **사전을 번역 프로젝트에 추가** 마법사가 나타납니다.
-1. 다음을 지정합니다. **프로젝트 제목** 및 선택 **타겟 언어** 드롭다운 메뉴 아래의 **사전을 번역 프로젝트에 추가** 마법사.
-1. 클릭 **완료** 생성된 번역 프로젝트를 실행합니다.
-1. 적응형 양식을 선택하고 **HTML으로 미리 보기**.
-1. 추가 `&afAcceptLang=<locale-name>` 를 입력합니다.
-1. 페이지를 새로 고치면 적응형 양식이 지정된 로케일로 렌더링됩니다.
 
 ## 새로운 현지화 기능 지원을 위한 모범 사례 {#best-practices}
 
@@ -393,12 +377,11 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
    * **사람 번역**: 사람 번역 워크플로의 경우 의 UI를 사용하여 사전을 내보냅니다. `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. 새 필드의 사전을 업데이트하고 수정된 버전을 업로드합니다.
 
-## 더 보기
-
-* [적응형 Forms에 대한 기록 문서 생성](/help/forms/generate-document-of-record-core-components.md)
-* [AEM Sites 페이지 또는 경험 조각에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-
 
 ## 추가 참조 {#see-also}
 
 {{see-also}}
+
+* [적응형 Forms에 대한 기록 문서 생성](/help/forms/generate-document-of-record-core-components.md)
+* [AEM Sites 페이지 또는 경험 조각에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
