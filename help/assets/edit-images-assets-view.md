@@ -3,10 +3,10 @@ title: 이미지 편집
 description: ' [!DNL Adobe Express] 기반 옵션을 사용하여 이미지를 편집하고 업데이트된 이미지를 버전으로 저장합니다.'
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
-source-git-commit: 2c32c94cbc99a91e93b394f315eb134a55b6cd9c
+source-git-commit: 42d3751a4a29149f3b31dbc28555b81aa7ed43cc
 workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 71%
+ht-degree: 69%
 
 ---
 
@@ -84,9 +84,9 @@ Adobe Express을 사용하여 PNG 이미지를 JPEG 형식으로 빠르게 변�
 
 ### 제한 사항 {#limitations-adobe-express}
 
-* 지원되는 이미지 해상도: 차원당 최소 - 50픽셀, 최대 - 6000픽셀
+* 지원되는 이미지 해상도: 차원당 최소 - 50픽셀, 최대 - 6000픽셀.
 
-* 지원되는 최대 파일 크기: 17 MB
+* 지원되는 최대 파일 크기는 17MB입니다.
 
 ## Adobe Express 임베드된 편집기를 사용하여 이미지 편집 {#edit-using-embedded-editor}
 
