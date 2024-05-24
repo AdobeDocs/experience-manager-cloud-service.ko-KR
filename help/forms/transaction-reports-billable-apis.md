@@ -3,10 +3,10 @@ title: 트랜잭션 보고서 과금 가능한 API
 description: 트랜잭션으로 계산되는 모든 API 목록
 feature: Adaptive Forms, Foundation Components
 exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
-source-git-commit: 543e9b78b4bdc11c49f79c6baec79615c5f7f91b
+source-git-commit: df4fbe8552ad61df3a8e8b44dcd1427b8f6e9240
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 8%
+source-wordcount: '1438'
+ht-degree: 19%
 
 ---
 
@@ -34,6 +34,46 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링에 필요한 여�
 
 * **렌더링된 문서:** 템플릿과 데이터를 결합하여 문서를 생성하거나, 문서에 디지털 서명 또는 인증을 하거나, 문서 서비스를 위해 청구 가능한 문서 서비스 API를 사용하거나, 문서를 한 형식에서 다른 형식으로 변환하면 문서가 렌더링되는 것으로 간주됩니다.
 
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_submission_graph_en"
+>title="양식 제출 추적기"
+>abstract="이 그래프는 특정 기간 동안의 적응형 양식 제출 수를 나타냅니다. 제출 수가 증가하면 양식의 인기가 높아지고 있거나 사용자로부터 더 많은 데이터를 수집할 필요가 있음을 나타낼 수 있습니다. **참고:** 그래프는 현재 인스턴스에 대한 데이터를 제공하므로 트렌드를 신속하게 분석하고 정보에 입각한 결정을 내릴 수 있습니다. 다른 인스턴스의 제출 데이터를 보려면 해당 인스턴스의 대시보드에 액세스하면 됩니다."
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_conversions_graph_en"
+>title="문서 렌디션 추적기"
+>abstract="이 그래프는 특정 기간 동안의 문서 렌디션 수를 나타냅니다. **참고:** 그래프는 현재 인스턴스에 대한 데이터를 제공하므로 트렌드를 신속하게 분석하고 정보에 입각한 결정을 내릴 수 있습니다. 다른 인스턴스의 제출 데이터를 보려면 해당 인스턴스의 대시보드에 액세스하면 됩니다."
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_newForms_graph_en"
+>title="새로운 양식 추적기"
+>abstract="그래프는 특정 기간 동안 새로 생성된 양식 수에 대한 정보를 제공합니다. **참고:** 그래프는 현재 AEM Forms 작성자 인스턴스와 관련된 데이터를 제공합니다. 다른 인스턴스의 데이터를 보려면 해당 인스턴스의 대시보드에 액세스하십시오."
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
+>title="게시된 양식 추적기"
+>abstract="그래프는 특정 기간 동안 성공적으로 게시된 양식 수에 대한 정보를 제공합니다. **참고:** 그래프는 현재 AEM Forms 게시 인스턴스와 관련된 데이터를 제공합니다. 다른 인스턴스의 전환 데이터를 보려면 해당 인스턴스의 대시보드에 액세스하십시오."
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
+>title="양식 생성의 평균 기간"
+>abstract="그래프는 양식을 작성하는 데 걸린 평균 시간을 보여 줍니다. 그래프의 각 막대는 특정 양식을 나타내며 막대의 높이는 해당 시간대 동안 양식 생성에 소요된 평균 기간을 나타냅니다."
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
+>title="평균 양식 작성 기간"
+>abstract="그래프에는 편집을 위해 양식을 연 첫날부터 측정하여 양식을 만들고 게시하는 데 걸린 평균 시간이 표시됩니다. **참고:** 그래프는 현재 AEM Forms 작성자 인스턴스와 관련된 데이터를 제공합니다. 다른 인스턴스의 데이터를 보려면 해당 인스턴스의 대시보드에 액세스하십시오."
+
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_formFragments_graph_en"
+>title="Forms 조각 추적기"
+>abstract="이 그래프는 양식에서 사용 중인 양식 조각의 수를 확인하는 데 도움이 됩니다. **참고:** 그래프는 현재 AEM Forms 게시 인스턴스와 관련된 데이터를 제공합니다. 다른 인스턴스의 전환 데이터를 보려면 해당 인스턴스의 대시보드에 액세스하십시오."
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
+>title="양식 단편 평균 시간 추적기"
+>abstract="그래프에는 편집을 위해 양식 조각을 연 첫날부터 측정하여 해당 양식 조각을 만드는 데 걸린 평균 시간이 표시됩니다. **참고:** 그래프는 현재 AEM Forms 게시 인스턴스와 관련된 데이터를 제공합니다. 다른 인스턴스의 전환 데이터를 보려면 해당 인스턴스의 대시보드에 액세스하십시오."
 
 
 <!-- 
