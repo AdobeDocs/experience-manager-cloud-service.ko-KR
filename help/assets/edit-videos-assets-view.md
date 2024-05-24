@@ -3,7 +3,7 @@ title: 비디오 편집
 description: 다음을 사용하여 비디오 편집 [!DNL Adobe Express] 옵션을 제공하고 업데이트된 비디오를 버전으로 저장합니다.
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
-source-git-commit: 79e72f967673010b936bd0464a2fcf0a1c068e69
+source-git-commit: 1f85ce38e39b43224bbda907cf0a0e1291153b13
 workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 18%
@@ -83,7 +83,7 @@ Adobe Express을 사용하여 MP4 비디오를 GIF 형식으로 빠르게 변환
 
 * MP4 형식의 비디오만 편집할 수 있습니다.
 
-* 지원되는 최대 소스 파일 크기는 1GB입니다.
+* 지원되는 최대 소스 파일 크기는 200MB입니다.
 
 * 지원되는 비디오는 46픽셀보다 크고 모든 면에서 3840픽셀보다 작습니다.
 
