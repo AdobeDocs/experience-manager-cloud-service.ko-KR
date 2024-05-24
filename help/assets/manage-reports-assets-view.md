@@ -2,10 +2,10 @@
 title: Assets 보기에서 태그 관리
 description: Assets 보기의 보고서 섹션에 있는 데이터에 액세스하여 제품 및 기능 사용을 평가하고 주요 성공 지표에 대한 통찰력을 도출합니다.
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
-source-git-commit: 6dc6b3e4ec9d6a816d92152cb535cd9a5d56a3b0
+source-git-commit: f4944cdb9f4ec51af6169c5cbf1890f469d91781
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 80%
+source-wordcount: '817'
+ht-degree: 89%
 
 ---
 
@@ -59,11 +59,6 @@ Assets 보기를 사용하면 [인사이트] 대시보드를 사용하여 Assets
    ![Insights](assets/insights2.png)
    -->
 
-* **크기별 자산 수:** 에셋 보기 환경의 총 에셋 수를 다른 크기 범위로 세그먼트화하고, 각 크기 범위의 에셋 수와 백분율을 강조 표시하여 도넛 차트로 표시합니다.
-  ![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
-* **자산 유형별 자산 수:** 에셋 보기 환경에서 총 에셋 수를 세그먼트화하며, 파일 유형에 따른 에셋의 수와 비율을 강조 표시합니다(도넛 차트).
-  ![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
-
 ## 다운로드 보고서 만들기 {#create-download-report}
 
 다운로드 보고서를 만들려면 다음 단계를 수행합니다.
@@ -82,7 +77,7 @@ Assets 보기를 사용하면 [인사이트] 대시보드를 사용하여 Assets
    >
    > Assets 보기는 모든 현지 시간대를 UTC(협정 세계시)로 변환합니다.
 
-1. 다음에서 [!UICONTROL 열] 탭에서 보고서에 표시해야 하는 열 이름을 선택합니다.
+1. [!UICONTROL 열] 탭에서 보고서에 표시해야 하는 열 이름을 선택합니다.
 
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
