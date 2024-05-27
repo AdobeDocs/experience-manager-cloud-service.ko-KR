@@ -1,12 +1,10 @@
 ---
 title: AEM as a Cloud Service에 대한 로그 전달
 description: AEM에서 Splunk 및 기타 로깅 공급업체로의 로그 전달에 대해 as a Cloud Service으로 알아보기
-hide: true
-hidefromtoc: true
-source-git-commit: d41390696383f8e430bb31bd8d56a5e8843f1257
+source-git-commit: 13696ffde99114e5265e5c2818cb3257dd09ee8c
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 3%
+source-wordcount: '718'
+ht-degree: 2%
 
 ---
 
@@ -64,11 +62,47 @@ ht-degree: 3%
          index: "AEMaaCS"
    ```
 
-   향후 호환성을 위해 기본 노드가 포함되어야 합니다.
+   다음 **종류** 매개 변수는 LogForwarding으로 설정해야 합니다. 버전은 스키마 버전(1)으로 설정해야 합니다.
 
-   종류 매개 변수는 LogForwarding으로 설정해야 하며, 버전은 스키마 버전(1)으로 설정해야 합니다.
+   구성의 토큰(예: `${{SPLUNK_TOKEN}}`)는 비밀을 나타내며 Git에 저장해서는 안 됩니다. 대신 Cloud Manager로 선언합니다.  [환경 변수](/help/implementing/cloud-manager/environment-variables.md) 유형 **비밀**. 다음을 선택하십시오. **모두** 적용된 서비스 필드의 드롭다운 값으로, 로그를 작성자, 게시 및 미리보기 계층에 전달할 수 있습니다.
 
-   구성의 토큰(예: `${{SPLUNK_TOKEN}}`)는 비밀을 나타내며 Git에 저장해서는 안 됩니다. 대신 Cloud Manager로 선언합니다.  [환경 변수](/help/implementing/cloud-manager/environment-variables.md) 암호 유형. 다음을 선택하십시오. **모두** 적용된 서비스 필드의 드롭다운 값으로, 로그를 작성자, 게시 및 미리보기 계층에 전달할 수 있습니다.
+   추가 정보를 포함하여 cdn 로그와 다른 모든 항목(AEM 및 apache 로그) 간에 다른 값을 설정할 수 있습니다 **cdn** 및/또는 **aem** 다음 이후 차단 **기본값** 블록입니다. 여기서 속성은 다음에 정의된 속성을 재정의할 수 있습니다. **기본값** 블록, 활성화된 속성만 필요합니다. 아래 예제에서 보듯이 CDN 로그에 대해 다른 Splunk 인덱스를 사용하는 것이 사용 사례일 수 있습니다.
+
+   ```
+      kind: "LogForwarding"
+      version: "1"
+      metadata:
+        envTypes: ["dev"]
+      data:
+        splunk:
+          default:
+            enabled: true
+            host: "splunk-host.example.com"
+            token: "${{SPLUNK_TOKEN}}"
+            index: "AEMaaCS"
+          cdn:
+            enabled: true
+            token: "${{SPLUNK_TOKEN_CDN}}"
+            index: "AEMaaCS_CDN"   
+   ```
+
+   또 다른 시나리오는 CDN 로그 또는 기타 모든 로그(AEM 및 apache 로그)의 전달을 비활성화하는 것입니다. 예를 들어 CDN 로그만 전달하려면 다음을 구성할 수 있습니다.
+
+   ```
+      kind: "LogForwarding"
+      version: "1"
+      metadata:
+        envTypes: ["dev"]
+      data:
+        splunk:
+          default:
+            enabled: true
+            host: "splunk-host.example.com"
+            token: "${{SPLUNK_TOKEN}}"
+            index: "AEMaaCS"
+          aem:
+            enabled: false
+   ```
 
 1. RDE 이외의 환경 유형(현재 지원되지 않음)의 경우 Cloud Manager에서 타깃팅된 배포 구성 파이프라인을 생성합니다.
 
@@ -96,10 +130,17 @@ data:
       
 ```
 
-고려 사항:
+인증에 SAS 토큰을 사용해야 합니다. 공유 액세스 토큰 페이지가 아닌 공유 액세스 서명 페이지에서 만들어야 하며 다음 설정으로 구성해야 합니다.
 
-* 최소 유효성 검사 기간이 있어야 하는 SAS 토큰을 사용하여 인증합니다.
-* SAS 토큰은 컨테이너 페이지가 아닌 계정 페이지에서 만들어야 합니다.
+* 허용된 서비스: Blob을 선택해야 합니다.
+* 허용된 리소스: 개체를 선택해야 합니다.
+* 허용된 권한: 쓰기, 추가, 만들기 를 선택해야 합니다.
+* 유효한 시작 및 만료 날짜/시간.
+
+다음은 샘플 SAS 토큰 구성의 스크린샷입니다.
+
+![Azure Blob SAS 토큰 구성](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
+
 
 ### Datadog {#datadog}
 
