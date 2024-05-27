@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5369806730639afa2cee916a44639a0f138d46d2
+source-git-commit: 9d1594e61a3ec79c0e773cac5753885684ac8a21
 workflow-type: tm+mt
-source-wordcount: '4978'
+source-wordcount: '4982'
 ht-degree: 99%
 
 ---
@@ -595,6 +595,7 @@ ht-degree: 99%
    + 개요 {#forms-overview}
       + [소개](/help/forms/home.md)
       + [주요 Adobe Experience Manager Forms 혁신 사항](/help/forms/latest-innovations.md)
+      + [EA(ally Adopter) 기능](/help/forms/early-adopter-ea-features.md)
       + [주요 변경 사항](/help/forms/notable-changes.md)
       + [아키텍처](/help/forms/aem-forms-cloud-service-architecture.md)
       + [자주 묻는 질문](/help/forms/faq.md)

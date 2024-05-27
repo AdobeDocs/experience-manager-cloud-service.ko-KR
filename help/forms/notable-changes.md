@@ -5,14 +5,14 @@ exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 role: Admin, Developer, User
 feature: Adaptive Forms
 contentOwner: khsingh
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 9d1594e61a3ec79c0e773cac5753885684ac8a21
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1325'
 ht-degree: 1%
 
 ---
 
-# 기존 Adobe Experience Manager 6.5 Forms 사용자의 주요 변경 사항  {#notable-changes-for-existing-AEM-Forms-users}
+# AEM 6.5 Forms(AMS 및 온프레미스)와 AEM Forms as a Cloud Service(AEM CS Forms)의 차이점 {#notable-changes-for-existing-AEM-Forms-users}
 
 Adobe Experience Manager Forms as a Cloud Service은 Adobe Experience Manager Forms 온-프레미스 및 와 비교하여 기존 기능에 몇 가지 주목할 만한 변경 사항을 제공합니다 [!DNL Adobe-Managed Service] 환경. 주요 차이점은 아래에 나와 있습니다.
 
@@ -41,7 +41,7 @@ Adobe Experience Manager Forms as a Cloud Service은 Adobe Experience Manager Fo
 
 * 기본적으로 이메일은 HTTP 및 HTTPs 프로토콜만 지원합니다. [지원 팀에 문의](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) 포트를 통해 이메일을 전송하고 환경에 대한 SMTP 프로토콜을 사용하도록 설정합니다.
 
-## 로컬라이제이션
+## 현지화
 
 * 현지화된 적응형 Forms의 URL 규칙은 이제 URL에서 로케일 지정을 지원합니다. 새 URL 규칙을 사용하면 Dispatcher 또는 CDN에서 현지화된 양식을 캐싱할 수 있습니다. Cloud Service 환경에서 URL 형식을 사용합니다 `http://host:port/content/forms/af/<afName>.<locale>.html` 을(를) 대신해 지역화된 버전의 적응형 양식을 요청하려면 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`.
 
