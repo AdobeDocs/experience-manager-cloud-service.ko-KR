@@ -1,14 +1,14 @@
 ---
-title: 적응형 양식용 Adobe Analytics을 활성화하는 방법
-description: Experience Cloud 설정 자동화를 통해 Adobe Analytics를 적응형 양식에 연결하여 방문자 상호 작용과 참여에 대한 인사이트를 추적할 수 있습니다.
+title: 적응형 양식의 빠른 트랙 분석을 위해 Adobe Analytics을 활성화하는 방법
+description: Experience Cloud 설정 자동화는 방문자 상호 작용 및 참여에 대한 빠른 트랙 분석 및 통찰력을 위해 Adobe Analytics을 적응형 양식에 연결하는 데 도움이 됩니다.
 keywords: Experience Cloud 설정 자동화를 사용하여 적응형 양식에 Adobe Analytics 활성화, Forms에서 Adobe Analytics 활성화, 적응형 Forms에서 Adobe Analytics, Forms 분석 통합, Forms 및 Adobe Analytics
 feature: Adaptive Forms
 role: Admin, User
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: a23576b5dc6d78a29fe19cd23f3c4788f2bee23e
 workflow-type: tm+mt
-source-wordcount: '1555'
-ht-degree: 58%
+source-wordcount: '1588'
+ht-degree: 50%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 58%
 | AEM as a Cloud Service | 이 문서 |
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
 
-Experience Cloud 설정 자동화를 통해 Adobe Analytics를 Adaptive Forms에 연결하여 양식과의 사용자 상호 작용을 추적 및 분석하고 방문자 상호 작용과 참여에 대한 인사이트를 제공할 수 있습니다. 또한 Experience Cloud 설정 자동화를 통해 완료 시간과 드롭오프 시점과 같은 지표 평가를 포함하는 양식 성능을 모니터링할 수 있습니다. 이 분석을 사용하면 로그인 상태에 따라 사용자 행동(예: 익명 사용자)을 구분하여 일반적인 트렌드와 패턴을 식별하는 동시에 양식을 최적화하여 사용자 경험을 향상시킬 수 있습니다.
+Experience Cloud 설정 자동화는 양식과의 사용자 상호 작용을 빠르게 추적하고 방문자 상호 작용 및 참여에 대한 통찰력을 제공하는 적응형 Forms에 Adobe Analytics을 연결하는 데 도움이 됩니다. 또한 Experience Cloud 설정 자동화를 통해 완료 시간과 드롭오프 시점과 같은 지표 평가를 포함하는 양식 성능을 모니터링할 수 있습니다. 이 분석을 사용하면 로그인 상태에 따라 사용자 행동(예: 익명 사용자)을 구분하여 일반적인 트렌드와 패턴을 식별하는 동시에 양식을 최적화하여 사용자 경험을 향상시킬 수 있습니다.
 
 ## Adobe Analytics와 적응형 양식 통합의 이점 {#advantages-of-integrating-adobe-analytics-with-aem-forms}
 
@@ -29,7 +29,7 @@ Experience Cloud 설정 자동화를 통해 Adobe Analytics를 Adaptive Forms에
 
 ## 적응형 양식 사용 지표의 범위 {#scope-of-adaptive-forms-usage-metrics}
 
-Adobe Analytics는 양식 사용에 대한 중요한 인사이트 확보를 위해 설계된 포괄적인 적응형 양식 성능 지표를 제공합니다. 해당 지표는 다음과 같습니다.
+Adobe Analytics은 양식 사용에 대한 중요한 통찰력을 제공하고 빠른 트랙 분석을 제공하도록 설계된 포괄적인 적응형 Forms 성능 지표 배열을 제공합니다. 해당 지표는 다음과 같습니다.
 
 * **양식 렌디션, 양식 제출, 유효성 검사 오류와 고유 방문자 수**&#x200B;를 사용하여 양식의 사용량과 효율성을 평가할 수 있습니다.
 
@@ -62,7 +62,7 @@ Experience Cloud 설정 자동화를 사용하려면 **Adobe Analytics 라이선
 
 다음에 대한 활성 라이센스가 있는 경우 **Adobe Analytics** 및 **Experience Manager Forms**, 와 통합되었습니다. **데이터 수집(이전 Adobe 실행)**, 개발자 콘솔 내에서 가용성을 확인해야 합니다.
 
-Forms as a Cloud Service 환경에서 앞에서 설명한 것을 사용할 수 있는지 확인하려면 다음을 방문하십시오. [개발자 콘솔](https://developer.adobe.com/console/projects)로 이동하여 프로그램 id가 환경 id인 프로젝트에서 URL이 있는 환경을 검색합니다 `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`, 프로그램 id - 환경 id는 `p45913-e175111`. Experience Cloud 설정 자동화, Adobe Analytics 및 Experience Platform Launch API가 제공되고 있는지 확인합니다. 해당 도구가 제공되면 적응형 양식용 Adobe Analytics를 활성화할 수 있습니다.
+Forms as a Cloud Service 환경에서 앞에서 설명한 것을 사용할 수 있는지 확인하려면 다음을 방문하십시오. [개발자 콘솔](https://developer.adobe.com/console/projects)로 이동하여 프로그램 id가 환경 id인 프로젝트에서 URL이 있는 환경을 검색합니다 `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`, 프로그램 id - 환경 id는 `p45913-e175111`. Experience Cloud 설정 자동화, Adobe Analytics 및 Experience Platform Launch API가 제공되고 있는지 확인합니다. 이러한 항목이 나열되어 있으면 적응형 Forms의 빠른 트랙 분석을 위해 Adobe Analytics을 활성화할 수 있습니다.
 
 ![사전 양식 분석 통합](assets/analytics-aem.png){width="100%"}
 
@@ -76,7 +76,7 @@ Forms as a Cloud Service 환경에서 앞에서 설명한 것을 사용할 수 �
 
 ## Adobe Analytics 구성 {#configure-adobe-analytics}
 
-적응형 양식용 Adobe Analytics를 활성화하여 구성하려면 아래 단계를 수행합니다.
+적응형 Forms의 빠른 트랙 분석을 위해 Adobe Analytics을 활성화하고 구성하려면 아래 나열된 단계를 수행하십시오.
 
 * [기초 구성 요소 기반의 적응형 양식용 Adobe Analytics를 사용할 수 있도록 설정](#integrate-adobe-analytics-with-aem-forms-for-foundation-component)
 * [코어 구성 요소 기반의 적응형 양식용 Adobe Analytics를 사용할 수 있도록 설정](#integrate-adobe-analytics-with-aem-forms-for-core-components)
@@ -139,7 +139,7 @@ Forms as a Cloud Service 환경에서 앞에서 설명한 것을 사용할 수 �
 
 ## Sites에서 적응형 Forms에 Analytics 활성화 {#Connect-Analytics-to-Adaptive-Forms-in-Sites}
 
-AEM Sites에서 적응형 양식에 대한 분석을 구성하면 Sites 페이지의 양식에서 사용자 상호 작용 및 양식 제출을 추적할 수 있습니다. Sites Forms에서 분석을 원활하게 통합함으로써 사용자 행동, 전환율 및 양식의 개선 영역에 대한 중요한 통찰력을 얻을 수 있습니다.
+AEM Sites에서 적응형 양식에 대한 빠른 추적 분석을 구성하면 Sites 페이지의 양식에서 사용자 상호 작용 및 양식 제출을 추적할 수 있습니다. Sites Forms에서 분석을 원활하게 통합함으로써 사용자 행동, 전환율 및 양식의 개선 영역에 대한 중요한 통찰력을 얻을 수 있습니다.
 
 ### 사전 요구 사항 {#Prerequisites-to-connect-forms-analytics-to-sites}
 
@@ -147,7 +147,7 @@ AEM Sites용 적응형 Forms에서 analytics를 연결하고 활성화하려면 
 
 ### 사이트에서 적응형 Forms을 연결하여 Analytics 활성화 {#Connect-analytics-to-adaptive-forms}
 
-AEM Sites 페이지에서 적응형 양식에 연결하여 Analytics를 활성화하려면 다음을 포함하십시오. `customfooterlibs` AEM Archetype/Git 저장소 및 배포 파이프라인을 사용하여 AEM Sites 페이지에 클라이언트 라이브러리를 연결합니다.
+AEM Sites 페이지에서 적응형 양식에 연결하여 빠른 트랙 분석을 위해 Analytics를 활성화하려면 다음을 포함하십시오. `customfooterlibs` AEM Archetype/Git 저장소 및 배포 파이프라인을 사용하여 AEM Sites 페이지에 클라이언트 라이브러리를 연결합니다.
 
 1. 을(를) 엽니다 [AEM Forms Archetype 또는 복제된 Git 저장소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 텍스트 편집기의 프로젝트. 예: Visual Studio Code.
 
