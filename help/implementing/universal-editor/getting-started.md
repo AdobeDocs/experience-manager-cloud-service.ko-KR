@@ -2,10 +2,10 @@
 title: AEM에서 Universal Editor 시작하기
 description: Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 알아봅니다.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+source-git-commit: a9a428eb5329bc2aa3d86ac5e0c91f633516446c
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 69%
+source-wordcount: '828'
+ht-degree: 68%
 
 ---
 
@@ -24,22 +24,11 @@ Universal Editor는 모든 소스의 콘텐츠를 편집할 수 있지만 이 �
 
 AEM 앱을 온보딩하고 유니버설 편집기를 사용하도록 계측하는 몇 가지 단계가 있습니다.
 
-1. [Universal Editor에 대한 액세스 권한을 요청합니다.](#request-access)
 1. [Universal Editor 핵심 라이브러리를 포함합니다.](#core-library)
 1. [필요한 OSGi 구성을 추가합니다.](#osgi-configurations)
 1. [페이지를 계측합니다.](#instrument-page)
 
 이 문서에서는 이러한 단계를 안내합니다.
-
-## Universal Editor에 대한 액세스 권한 요청 {#request-access}
-
-먼저 Universal Editor에 대한 액세스 권한을 요청해야 합니다. 열기 [`https://experience.adobe.com/#/aem/editor&quot;](https://experience.adobe.com/#/aem/editor), 로그인 및 범용 편집기에 대한 액세스 권한이 있는지 확인합니다.
-
-액세스 권한이 없는 경우 같은 페이지에 링크된 양식을 통해 요청할 수 있습니다.
-
-![Universal Editor에 대한 액세스 권한 요청](assets/request-access.png)
-
-**액세스 권한 요청**&#x200B;을 클릭하고 액세스 권한 요청에 대한 지침에 따라 양식을 작성합니다. Adobe 담당자가 귀하의 요청을 검토하고 사용 사례에 대해 논의하기 위해 연락을 드리게 됩니다.
 
 ## Universal Editor 핵심 라이브러리 포함 {#core-library}
 

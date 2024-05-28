@@ -2,10 +2,10 @@
 title: Universal Editor 아키텍처
 description: Universal Editor의 아키텍처 및 해당 서비스와 계층 간에 데이터가 흐르는 방식에 대해 알아봅니다.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+source-git-commit: b42390dcecb546853380d64808bcf009680c89a3
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 90%
+source-wordcount: '508'
+ht-degree: 91%
 
 ---
 
@@ -73,15 +73,3 @@ Universal Editor는 모든 콘텐츠 변경 사항을 Universal Editor 서비스
 ### 클라이언트측 렌더링 {#client-side}
 
 ![클라이언트측 렌더링](assets/client-side.png)
-
-## 추가 리소스 {#additional-resources}
-
-Universal Editor에 대해 자세히 알아보려면 다음 문서를 참조하십시오.
-
-* [Universal Editor 소개](introduction.md) - Universal Editor를 통해 모든 구현에서 콘텐츠의 모든 측면을 편집하여 뛰어난 경험을 제공하고, 콘텐츠 속도를 높이고, 최신 개발자 경험을 제공하는 방법에 대해 알아봅니다.
-* [Universal Editor로 콘텐츠 작성](/help/sites-cloud/authoring/universal-editor/authoring.md) - 콘텐츠 작성자가 Universal Editor를 사용하여 콘텐츠를 만드는 것이 얼마나 쉽고 직관적인지 알아봅니다.
-* [유니버설 편집기로 콘텐츠 게시](/help/sites-cloud/authoring/universal-editor/publishing.md) - 유니버설 편집기에서 콘텐츠를 게시하는 방법과 앱에서 게시된 콘텐츠를 처리하는 방법에 대해 알아봅니다.
-* [AEM에서 Universal Editor 시작하기](getting-started.md) - Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 알아봅니다.
-* [속성 및 유형](attributes-types.md) - Universal Editor에 필요한 데이터 속성 및 유형에 대해 알아봅니다.
-* [Universal Editor 인증](authentication.md) - Universal Editor의 인증 방법에 대해 알아봅니다.
-

@@ -2,10 +2,10 @@
 title: Universal Editor 소개
 description: 유니버설 편집기를 통해 Headless 및 Headful 환경의 WYSIWYG(보이는 그대로) 편집을 활성화하는 방법에 대해 알아봅니다. 콘텐츠 작성자가 탁월한 경험을 제공하고 콘텐츠 속도를 높이며 최신 개발자 경험을 제공하는 데 도움이 되는 방식에 대해 살펴보십시오.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 2ad5920d0b3d8a3ad780a2cb0f28b7e6f9e596ab
+source-git-commit: b42390dcecb546853380d64808bcf009680c89a3
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 59%
+source-wordcount: '973'
+ht-degree: 54%
 
 ---
 
@@ -90,13 +90,6 @@ Universal Editor를 사용하기 위한 구현 요구 사항은 매우 간단하
 * 컨텐츠 작성자는 고유한 개별 Experience Cloud 계정이 있어야 합니다.
 * Chrome 및 Edge가 지원되는 브라우저입니다.
 
-## 추가 리소스 {#additional-resources}
+## 다음 단계 {#next-steps}
 
-Universal Editor에 대해 자세히 알아보려면 다음 문서를 참조하십시오.
-
-* [Universal Editor로 콘텐츠 작성](/help/sites-cloud/authoring/universal-editor/authoring.md) - 콘텐츠 작성자가 Universal Editor를 사용하여 콘텐츠를 만드는 것이 얼마나 쉽고 직관적인지 알아봅니다.
-* [유니버설 편집기로 콘텐츠 게시](/help/sites-cloud/authoring/universal-editor/publishing.md) - 유니버설 편집기에서 콘텐츠를 게시하는 방법과 앱에서 게시된 콘텐츠를 처리하는 방법에 대해 알아봅니다.
-* [AEM에서 Universal Editor 시작하기](getting-started.md) - Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 알아봅니다.
-* [Universal Editor 아키텍처](architecture.md) - Universal Editor의 아키텍처 및 해당 서비스와 계층 간에 데이터가 흐르는 방식에 대해 알아봅니다.
-* [속성 및 유형](attributes-types.md) - Universal Editor에 필요한 데이터 속성 및 유형에 대해 알아봅니다.
-* [Universal Editor 인증](authentication.md) - Universal Editor의 인증 방법에 대해 알아봅니다.
+문서를 참조하십시오. [유니버설 편집기 사용 사례 및 학습 경로](/help/implementing/universal-editor/use-cases.md) 유니버설 편집기의 일반적인 사용 사례에 대해 자세히 알아보고 프로젝트에서 사용자를 지원하는 올바른 설명서 리소스를 살펴보십시오.

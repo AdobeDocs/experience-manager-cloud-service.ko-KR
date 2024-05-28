@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 9d1594e61a3ec79c0e773cac5753885684ac8a21
+source-git-commit: 4c2f0a230c259f5d5af08158707ebea016c431e6
 workflow-type: tm+mt
-source-wordcount: '4982'
+source-wordcount: '4961'
 ht-degree: 99%
 
 ---
@@ -1079,18 +1079,19 @@ ht-degree: 99%
          + [사용자 정의 오류 페이지](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM 노드 유형](/help/implementing/developing/introduction/node-types.md)
       + Universal Editor {#universal-editor}
-         + [Universal Editor 소개](/help/implementing/universal-editor/introduction.md)
-         + [Universal Editor 아키텍처](/help/implementing/universal-editor/architecture.md)
-         + [SecurBank 샘플 앱](/help/implementing/universal-editor/securbank.md)
-         + [AEM에서 Universal Editor 시작하기](/help/implementing/universal-editor/getting-started.md)
-         + [Universal Editor 개발자 개요](/help/implementing/universal-editor/developer-overview.md)
+         + [소개](/help/implementing/universal-editor/introduction.md)
+         + [사용 사례](/help/implementing/universal-editor/use-cases.md)
          + [속성 및 항목 유형](/help/implementing/universal-editor/attributes-types.md)
          + [모델 정의, 필드 및 구성 요소 유형](/help/implementing/universal-editor/field-types.md)
-         + [Universal Editor 인증](/help/implementing/universal-editor/authentication.md)
-         + [Universal Editor를 사용하는 로컬 AEM 개발](/help/implementing/universal-editor/local-dev.md)
-         + [Universal Editor 호출](/help/implementing/universal-editor/calls.md)
+         + [SecurBank 샘플 앱](/help/implementing/universal-editor/securbank.md)
          + [이벤트](/help/implementing/universal-editor/events.md)
-         + [Universal Editor 사용자 정의](/help/implementing/universal-editor/customizing.md)
+         + [사용자 정의](/help/implementing/universal-editor/customizing.md)
+         + [아키텍처](/help/implementing/universal-editor/architecture.md)
+         + [인증](/help/implementing/universal-editor/authentication.md)
+         + [시작](/help/implementing/universal-editor/getting-started.md)
+         + [개발자 개요](/help/implementing/universal-editor/developer-overview.md)
+         + [로컬 AEM 개발](/help/implementing/universal-editor/local-dev.md)
+         + [호출](/help/implementing/universal-editor/calls.md)
       + [Headless 경험 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=ko-KR)
       + 하이브리드 및 SPA 개발 {#hybrid}
          + [AEM을 통한 하이브리드 및 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
