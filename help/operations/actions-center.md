@@ -2,10 +2,10 @@
 title: 액션 센터
 description: 문제 및 기타 중요한 정보에 대해 편리하게 조치를 취할 수 있도록 조치 센터 활용
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: df10d8d210877e166312f66d5c4e74dbe771446a
+source-git-commit: 383d56ccd1e523082c21e58252a7c03a9807c582
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 72%
+source-wordcount: '829'
+ht-degree: 70%
 
 ---
 
@@ -60,18 +60,19 @@ AEM as Cloud Service는 최적화에 즉각적인 조치 및 사전 알림 추�
 AEM as a Cloud Service에는 여러 유형의 알림이 있지만 아래 그림과 같이 액션 센터에는 하위 집합만 표시됩니다.
 
 | 알림 유형 | 설명 | 구성하는 방법 | 액션 센터에 표시 |
-|---|---|---|---|
+|---------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
 | 운영 인시던트 | 즉각적인 조치가 필요한 중대 인시던트 | “인시던트 알림 - Cloud Service” 제품 프로필에 할당된 사용자 | X |
 | 사전 알림 추천 | 계획을 수립해야 하는 최적화 | “사전 알림 - Cloud Service” 제품 프로필에 할당된 사용자 | X |
-| Cloud Manager 파이프라인 상태 | 파이프라인 상태에 대한 정보 | 비즈니스 소유자, 프로그램 관리자 또는 배포 관리자 역할을 가진 사용자가에서 &quot;기타&quot; 확인란이 선택됨 [Experience Cloud 환경 설정](https://experience.adobe.com/preferences), 로서의 [여기에 설명됨](/help/implementing/cloud-manager/notifications.md). |   |
+| Cloud Manager 파이프라인 상태 | 파이프라인 상태에 대한 정보 | 비즈니스 소유자, 프로그램 관리자 또는 배포 관리자 역할을 가진 사용자가에서 &quot;기타&quot; 확인란이 선택됨 [Experience Cloud 환경 설정](https://experience.adobe.com/preferences), 로서의 [여기에 설명됨](/help/implementing/cloud-manager/notifications.md). |                           |
 
 ## 지원되는 알림 유형 {#supported-notification-types}
 
 다음 표는 액션 센터에서 현재 지원되는 알림 유형 목록입니다. 알림은 현재 프로덕션 환경으로 제한됩니다.
 
 | 알림 유형 | 관련 제품 프로필 | 수정 조치 |
-|---------------------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---------------------------------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 차단된 복제 대기열 | 인시던트 | [복제 문서](/help/operations/replication.md#troubleshooting)의 지침에 따라 대기열 차단을 해제합니다. |
 | 잘못된 지속 GraphQL 쿼리 | 인시던트 | 를 참조하여 잘못된 GraphQL 쿼리를 수정합니다. [지속 GraphQL 쿼리 문제 해결 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
-| 만료되는 S2S 인증서 | 사전 알림 | [서버측 API용 액세스 토큰 생성 문서](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)에서 자격 증명을 새로 고치는 방법에 대해 알아보십시오. | 높은 연결 수 | 사전 알림 | 에서 연결 풀링에 대해 알아보기 [고급 네트워킹 설명서와 함께 연결 풀링](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
 | 원본 트래픽 스파이크 | 인시던트 | 원본 경고의 기본 트래픽 스파이크보다 낮은 임계값에서 트리거하는 비율 제한 트래픽 필터 규칙을 구성하여 원본을 Protect 합니다.  다음을 참조하십시오. [트래픽 규칙을 사용하여 DoS 및 DDoS 공격 차단](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) 튜토리얼을 참조하는 트래픽 필터 규칙 설명서의 섹션입니다. |
+| 만료되는 S2S 인증서 | 사전 알림 | [서버측 API용 액세스 토큰 생성 문서](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)에서 자격 증명을 새로 고치는 방법에 대해 알아보십시오. | 높은 연결 수 | 사전 알림 | 에서 연결 풀링에 대해 알아보기 [고급 네트워킹 설명서와 함께 연결 풀링](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
+| 더 이상 사용되지 않는 서비스 사용자 매핑 | 사전 알림 | 에 표시된 대로 최신 Sling 서비스 사용자 매핑 형식을 사용하는 방법에 대해 알아봅니다. [Sling 서비스 사용자 매핑 및 서비스 사용자 정의에 대한 우수 사례](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition) |
