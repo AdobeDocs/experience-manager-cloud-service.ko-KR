@@ -2,10 +2,10 @@
 title: 액션 센터
 description: 문제 및 기타 중요한 정보에 대해 편리하게 조치를 취할 수 있도록 조치 센터 활용
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 383d56ccd1e523082c21e58252a7c03a9807c582
+source-git-commit: ae8c5e832134caf4ff6799c601810e9a735f4195
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 70%
+source-wordcount: '842'
+ht-degree: 69%
 
 ---
 
@@ -76,3 +76,4 @@ AEM as a Cloud Service에는 여러 유형의 알림이 있지만 아래 그림�
 | 원본 트래픽 스파이크 | 인시던트 | 원본 경고의 기본 트래픽 스파이크보다 낮은 임계값에서 트리거하는 비율 제한 트래픽 필터 규칙을 구성하여 원본을 Protect 합니다.  다음을 참조하십시오. [트래픽 규칙을 사용하여 DoS 및 DDoS 공격 차단](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) 튜토리얼을 참조하는 트래픽 필터 규칙 설명서의 섹션입니다. |
 | 만료되는 S2S 인증서 | 사전 알림 | [서버측 API용 액세스 토큰 생성 문서](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)에서 자격 증명을 새로 고치는 방법에 대해 알아보십시오. | 높은 연결 수 | 사전 알림 | 에서 연결 풀링에 대해 알아보기 [고급 네트워킹 설명서와 함께 연결 풀링](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
 | 더 이상 사용되지 않는 서비스 사용자 매핑 | 사전 알림 | 에 표시된 대로 최신 Sling 서비스 사용자 매핑 형식을 사용하는 방법에 대해 알아봅니다. [Sling 서비스 사용자 매핑 및 서비스 사용자 정의에 대한 우수 사례](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition) |
+| 높은 연결 수 | 사전 알림 | 에서 연결 풀링에 대해 알아보기 [고급 네트워킹 설명서](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
