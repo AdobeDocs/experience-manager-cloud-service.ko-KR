@@ -3,15 +3,14 @@ title: 의 현재 얼리 어답터 기능 [!DNL Adobe Experience Manager Forms] 
 description: 의 현재 얼리 어답터 기능 [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user
-source-git-commit: 9d1594e61a3ec79c0e773cac5753885684ac8a21
+source-git-commit: 2b035e9597518ff64a2b4ce8c18ae31e5deef6f3
 workflow-type: tm+mt
-source-wordcount: '1600'
+source-wordcount: '1599'
 ht-degree: 6%
 
 ---
 
 # AEM Forms 얼리 어답터 프로그램
-
 
 AEM Forms 얼리 어답터 프로그램(Early Adopter Program)은 다른 사용자보다 먼저 최신 기능을 독점적으로 이용하고 개발을 구체화할 수 있는 특별한 기회를 제공합니다. 이 프로그램은 다음을 제공합니다.
 
@@ -21,7 +20,7 @@ AEM Forms 얼리 어답터 프로그램(Early Adopter Program)은 다른 사용�
 
 ## 얼리 어답터 프로그램에 가입하는 방법?
 
-얼리어답터 혁신을 위해 얼리어답터 프로그램에 참여하고자 하는 경우, 공식 주소로 aem-forms-ea@adobe.com으로 이메일을 보내 액세스를 요청하면 됩니다. 모든 또는 특정 혁신에 대한 액세스를 요청할 수 있습니다.
+얼리어답터 혁신을 위해 얼리어답터 프로그램에 참여하고자 하는 경우, 공식 주소로 이메일을 보내십시오. `aem-forms-ea@adobe.com` 액세스 권한 요청. 모든 또는 특정 혁신에 대한 액세스를 요청할 수 있습니다.
 
 
 ## 얼리 어답터 혁신
