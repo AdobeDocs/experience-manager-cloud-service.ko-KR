@@ -37,7 +37,7 @@ CAM(Cloud Acceleration Manager)에서 프로젝트를 생성했으면 이제 준
 >id="aemcloud_cam_bpa"
 >title="모범 사례 분석 보고서"
 >abstract="BPA 보고서를 CAM에 업로드하여 AEM as a Cloud Service로의 마이그레이션과 관련된 분석을 제공할 수 있습니다."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer" text="모범 사례 분석기 사용"
+>additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer" text="모범 사례 분석기 사용"
 
 1. 클릭 **리뷰** 다음에서 **모범 사례 분석** 카드.
 
