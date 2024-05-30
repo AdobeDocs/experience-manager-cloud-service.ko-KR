@@ -2,10 +2,10 @@
 title: Adobe Developer Console에서 JWT 자격 증명 사용 중단
 description: AEM의 Adobe Developer Console에서 JWT 자격 증명 사용 중단이 미치는 영향에 대해 알아봅니다.
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
-source-git-commit: b6e26ecaa73aaee37b6b824426dc0cd65d459502
+source-git-commit: f183e1999e29ee7f25f2d427d0b2273d244e4632
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 62%
+source-wordcount: '479'
+ht-degree: 93%
 
 ---
 
@@ -19,9 +19,9 @@ Adobe 고객은 [Adobe Developer Console](https://developer.adobe.com/console)�
 
 이 문서에서는 AEM as a Cloud Service 고객이 사용 중단을 처리하는 방법에 대한 몇 가지 추가 컨텍스트를 제공합니다.
 
-주요 해결 방법은 AEM이 이제 AEMas a Cloud Service 에 대한 새 OAuth 서버 간 자격 증명을 지원한다는 것입니다. JWT 자격 증명을 마이그레이션하라는 지침이 포함된 이메일을 수신했을 수 있습니다. 이제 이 마이그레이션을 수행할 수 있습니다.
+중요한 점은 AEM이 이제 AEM as a Cloud Service에 대한 새로운 OAuth 서버 간 자격 증명을 지원한다는 것입니다. JWT 자격 증명을 마이그레이션하라는 지침이 포함된 이메일을 수신했을 수 있으며, 이제 이 마이그레이션을 수행할 수 있습니다.
 
-아래 섹션에는 AEM에서 지원하므로 고객이 서비스 계정(JWT) 자격 증명을 OAuth 서버 간 자격 증명으로 교체해야 하는(또는 경우에 따라 교체해서는 안 되는) 시나리오가 나와 있습니다. [읽기 방법](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) 자격 증명을 마이그레이션할 수 있습니다.
+아래 섹션에서는 고객이 서비스 계정(JWT) 자격 증명을 현재 AEM에서 지원되는 OAuth 서버 간 자격 증명으로 교체해야 하는(또는 경우에 따라 교체해서는 안 되는) 시나리오를 나열합니다. 자격 증명을 마이그레이션하는 [방법을 확인](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)하십시오.
 
 >[!NOTE]
 >
@@ -29,20 +29,20 @@ Adobe 고객은 [Adobe Developer Console](https://developer.adobe.com/console)�
 
 ## AEM을 다른 Adobe 솔루션과 통합 {#integrating-aem-with-other-adobe-solutions}
 
-**작업**: AEM이 이제 OAuth 자격 증명을 지원하므로 구성을 마이그레이션합니다.
+**조치**: 이제 AEM에서 OAuth 자격 증명을 지원하므로 구성을 마이그레이션합니다.
 
 **관련 AEM 버전**: AEM as a Cloud Service
 
-AEM 고객은 AEM을 사용하여 다른 많은 Adobe 솔루션과의 통합을 구성합니다. 예를 들어 Adobe Target, Adobe Analytics 등이 있습니다.
+AEM 고객은 AEM을 사용하여 다른 여러 Adobe 솔루션과의 통합을 구성합니다. 예를 들어 Adobe Target, Adobe Analytics 등이 있습니다.
 
-다음을 참조하십시오 [AEM as a Cloud Service에 대한 IMS 통합 설정](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) 자세한 내용:
+다음 방법에 대한 자세한 내용은 [AEM as a Cloud Service에 대한 IMS 통합 설정](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)을 참조하십시오.
 
-* oauth 자격 증명을 사용하여 구성 만들기
-* jwt 자격 증명으로 생성된 구성을 마이그레이션하여 OAuth 자격 증명을 사용합니다.
+* OAuth 자격 증명으로 구성 만들기
+* OAuth 자격 증명을 사용하기 위해 JWT 자격 증명으로 만든 구성을 마이그레이션
 
 ## Cloud Manager API {#cloud-manager-apis}
 
-**작업**: JWT에서 OAuth 자격 증명으로 마이그레이션할 수 있는 시기를 확인합니다.
+**작업**: JWT 자격 증명을 Cloud Manager가 지원하는 OAuth 자격 증명으로 마이그레이션합니다.
 
 **관련 AEM 버전**: AEM as a Cloud Service
 
@@ -54,6 +54,6 @@ AEM 고객은 AEM을 사용하여 다른 많은 Adobe 솔루션과의 통합을 
 
 **관련 AEM 버전**: AEM as a Cloud Service.
 
-Cloud Manager는 AEM as a Cloud Service 환경으로 프로비저닝할 때 JWT 자격 증명을 사용하여 Adobe Developer Console 프로젝트를 자동 생성합니다. 아래 스크린샷에 표시된 것처럼 이 프로젝트는 읽기 전용으로 표시되어 있습니다. 고객은 이러한 프로젝트를 OAuth 서버 간 자격 증명으로 마이그레이션할 수 없으며 마이그레이션할 수 없습니다. 대신 Adobe은 자격 증명을 더 이상 사용할 수 없게 되기 전에 이러한 프로젝트를 자체적으로 마이그레이션합니다.
+Cloud Manager는 AEM as a Cloud Service 환경으로 프로비저닝할 때 JWT 자격 증명을 사용하여 Adobe Developer Console 프로젝트를 자동 생성합니다. 아래 스크린샷에 표시된 것처럼 이 프로젝트는 읽기 전용으로 표시되어 있습니다. 고객은 이러한 프로젝트를 OAuth 서버 간 자격 증명으로 마이그레이션할 수 없으며 마이그레이션을 시도해서도 안 됩니다. 대신 Adobe는 자격 증명이 더 이상 사용 불가능한 상태가 되기 전에 이러한 프로젝트를 자체적으로 마이그레이션합니다.
 
 ![자동 생성된 프로젝트](/help/security/assets/jwt-deprecation-autogen-projects.png)
