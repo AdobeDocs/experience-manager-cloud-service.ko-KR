@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2b035e9597518ff64a2b4ce8c18ae31e5deef6f3
+source-git-commit: 88bfb13f52a807a4cca5566633e2a07cfa6ce7b2
 workflow-type: tm+mt
-source-wordcount: '4961'
+source-wordcount: '4966'
 ht-degree: 99%
 
 ---
@@ -1181,6 +1181,7 @@ ht-degree: 99%
       + [AEM as a Cloud Service의 CDN](/help/implementing/dispatcher/cdn.md)
       + [CDN에서 트래픽 구성](/help/implementing/dispatcher/cdn-configuring-traffic.md)
       + [에지측 포함](/help/implementing/dispatcher/edge-side-includes.md)
+      + [CDN 자격 증명 및 인증 구성](/help/implementing/dispatcher/cdn-credentials-authentication.md)
       + [CDN 오류 페이지 구성](/help/implementing/dispatcher/cdn-error-pages.md)
       + [AEM as a Cloud Service에서 캐싱](/help/implementing/dispatcher/caching.md)
 + 커넥터 {#connectors}
