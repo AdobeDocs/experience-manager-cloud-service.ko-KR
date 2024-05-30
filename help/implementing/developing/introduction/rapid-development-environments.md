@@ -2,10 +2,10 @@
 title: 신속한 개발 환경
 description: 클라우드 환경에서 신속한 개발 반복을 위해 빠른 개발 환경을 사용하는 방법에 대해 알아봅니다.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: cd74240f59cb3139e425f568828ba9ab1b59147f
+source-git-commit: 4a5b7c671a149d61c60fc86f93a41d52fb4b5468
 workflow-type: tm+mt
-source-wordcount: '4345'
-ht-degree: 4%
+source-wordcount: '4294'
+ht-degree: 3%
 
 ---
 
@@ -408,11 +408,12 @@ The analyser found the following errors for publish :
 
 위의 코드 샘플은 번들이 해결되지 않는 경우의 동작을 보여 줍니다. 이 경우 &quot;스테이징됨&quot;이며 다른 코드 설치를 통해 요구 사항(이 경우 누락된 가져오기)이 충족되는 경우에만 설치됩니다.
 
-<u>사이트 테마 및 사이트 템플릿을 기반으로 프론트엔드 코드 배포</u>
+### 사이트 테마 및 사이트 템플릿을 기반으로 프론트엔드 코드 배포 {#deploying-themes-to-rde}
 
 >[!NOTE]
 >
->이 기능은 아직 GA는 아니지만 얼리어답터가 사용할 수 있습니다. 사용 후 피드백을 제공하려면 **aemcs-rde-support@adobe.com**&#x200B;으로 연락해 주십시오.
+> 이 기능은 아직 사용할 수 없습니다. 그것은 6월 중에 출시될 예정입니다.
+>
 
 RDE는 다음을 기반으로 프론트엔드 코드 지원 [사이트 테마](/help/sites-cloud/administering/site-creation/site-themes.md) 및 [사이트 템플릿](/help/sites-cloud/administering/site-creation/site-templates.md). RDE에서는 Cloud Manager가 아닌 명령줄 지시문을 사용하여 프론트엔드 패키지를 배포합니다 [프론트엔드 파이프라인](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) 다른 환경 유형에 사용됩니다.
 
@@ -1011,8 +1012,6 @@ RDE는 여러 가지 면에서 클라우드 개발 환경과 유사하지만 코
 
 * RDE에는 미리보기 계층이 포함되지 않음
 * RDE는 현재 프리릴리스 채널을 지원하지 않습니다.
-* 를 기반으로 프론트엔드 코드 보기 및 디버깅에 대한 RDE 지원 [사이트 테마](/help/sites-cloud/administering/site-creation/site-themes.md) 및 [사이트 템플릿](/help/sites-cloud/administering/site-creation/site-templates.md) 배포된 는 아직 GA 준비가 되지 않았으며 얼리어답터에서 사용할 수 있습니다. 사용 후 피드백을 제공하려면 **aemcs-rde-support@adobe.com**&#x200B;으로 연락해 주십시오.
-
 
 
 ## 몇 개의 RDE가 필요합니까? {#how-many-rds-do-i-need}
