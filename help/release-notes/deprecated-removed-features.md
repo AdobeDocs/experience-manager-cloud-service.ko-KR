@@ -2,10 +2,10 @@
 title: 더 이상 사용되지 않는/제거된 기능
 description: ' [!DNL Adobe Experience Manager]  [!DNL Cloud Service]에서 더 이상 사용되지 않으며 제거된 기능에 관련된 릴리스 정보입니다.'
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: b675ff42eeaeb124e8789480a51684d359429d15
-workflow-type: ht
-source-wordcount: '2146'
-ht-degree: 100%
+source-git-commit: b071cf1d88e702dfdf38c18dc94488e94fc4bc21
+workflow-type: tm+mt
+source-wordcount: '2193'
+ht-degree: 98%
 
 ---
 
@@ -59,6 +59,8 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 | [!DNL Foundation] | JST 스크립팅 템플릿 지원(OSGi 번들 org.apache.sling.scripting.jst) | 해당 사항 없음 | 제거됨 |
 | [!DNL Foundation] | Apache Felix Http Whiteboard 지원 | OSGi Http Whiteboard | 2022년 3월 |
 | [!DNL Foundation] | com.adobe.granite.oauth.server 지원 | Adobe IMS 통합 | 2023년 3월 |
+| [!DNL Foundation] | 에 대한 org.apache.sling.serviceusermapping 기능 지원 [서비스 사용자 id 가져오기](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | 해당 사항 없음 | 8/30/24 |
+
 
 ## AEM API {#aem-apis}
 
@@ -268,6 +270,17 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
     <td>5/15/2023</td>
     <td>6/15/2023</td>
   </tr>
+  <tr>
+    <td>org.slf4j.event	</td>
+    <td>이 내부 slf4j API는 AEM as a Cloud Service에서 지원되지 않습니다.</td>
+    <td>2022년 4월 11일</td>
+    <td>8/30/2024</td>
+  </tr>
+    <td>org.apache.sling.repoinit.jcr<br>org.apache.sling.repoinit.parser.operations</td>
+    <td>해당 API는 AEM as a Cloud Service에서 사용할 수 없습니다.</td>
+    <td>5/17/2024</td>
+    <td>6/30/2024</td>
+  </tr>  
 </tbody>
 </table>
 </details>
