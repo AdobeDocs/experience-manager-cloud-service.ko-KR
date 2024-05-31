@@ -2,7 +2,7 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 정보
 description: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 정보
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 994a152f2e0acd4b92724994f9a187fe0f6f6d95
+source-git-commit: 0d1fb5d03d7633340c07543cb686ea2f9021abbb
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 99%
@@ -14,7 +14,7 @@ ht-degree: 99%
 
 | 제품 | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| 버전 | 2024.4.0 |
+| 버전 | 2024.5.0 |
 | 유형 | 지속적인 업데이트 |
 | 가용 일자 | 연속 업데이트 |
 
@@ -33,7 +33,7 @@ ht-degree: 99%
 
 릴리스를 준비하려면:
 
-1. 달력에 미리 표시: [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)에 월별 릴리스의 주요 일자를 확인하고 달력에 표시하여 릴리스를 준비하기 위한 주요 활동을 준비하십시오.
+1. 달력에 미리 표시: [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)에 월별 릴리스의 주요 일자를 확인하고 달력에 표시하여 릴리스를 준비하기 위한 주요 활동을 준비하십시오.
 1. 릴리스 정보 검토: [최신 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)를 읽고 릴리스 및 프리릴리스 기능에 익숙해지십시오.
 1. 새로운 기능 액세스 및 체험: 비프로덕션 환경에서 [프리릴리스 채널](/help/release-notes/prerelease.md)을 활성화하여 맞춤형 환경에서 평가할 기능을 사용해 보십시오.
 1. 사용자 교육: 설명서 및 Experience League 리소스를 사용하여 사용자에게 새로운 기능에 대한 최신 정보를 제공하여 빠르게 숙달되도록 하십시오.

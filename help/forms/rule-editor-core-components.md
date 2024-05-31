@@ -5,19 +5,18 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '5453'
-ht-degree: 0%
+source-wordcount: '5612'
+ht-degree: 1%
 
 ---
 
 
-<span class="preview"> 이 문서에는 일부 프리릴리스 기능에 대한 내용이 포함되어 있습니다. 이러한 프리릴리스 기능은 다음을 통해서만 액세스할 수 있습니다. [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). 프리릴리스 프로그램의 기능은 다음과 같습니다.
-* When-else 기능을 사용하여 중첩된 조건 구현 지원
-* 필드를 포함한 패널 및 양식의 유효성 검사 또는 재설정
-* 사용자 지정 함수 내에서 let 및 arrow 함수(ES10 지원)와 같은 최신 JavaScript 기능을 지원합니다.
-</span>
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| 기초 구성 요소 | [여기 클릭](/help/forms/rule-editor.md) |
+| 핵심 구성 요소 | 이 문서 |
 
 # 적응형 양식에 규칙 추가(핵심 구성 요소) {#adaptive-forms-rule-editor}
 
@@ -26,16 +25,24 @@ ht-degree: 0%
 규칙 편집기는 규칙을 작성하는 직관적이고 간단한 사용자 인터페이스를 제공합니다. 규칙 편집기는 모든 사용자를 위한 시각적 편집기를 제공합니다.<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> 규칙을 사용하여 적응형 양식 개체에 대해 수행할 수 있는 몇 가지 주요 작업은 다음과 같습니다.
 
 * 개체 표시 또는 숨기기
-* 개체 활성화 또는 비활성화
-* 개체에 대한 값 설정
-* 개체 값의 유효성 검사
-* 개체의 값을 계산하는 함수 실행
-* FDM(양식 데이터 모델) 서비스 호출 및 작업 수행
-* 개체의 속성 설정
+* 오브젝트 활성화 또는 비활성화
+* 오브젝트의 값 설정
+* 오브젝트 값의 유효성 검사
+* 오브젝트의 값을 계산하는 함수 실행
+* 양식 데이터 모델(FDM) 서비스 호출 및 작업 수행
+* 오브젝트의 속성 설정
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
-forms-power-users 그룹 에 추가된 사용자는 스크립트를 만들고 기존 스크립트를 편집할 수 있습니다. 그룹 사용자는 [!DNL forms-users] 스크립트를 사용할 수 있지만 스크립트를 만들거나 편집할 수는 없습니다.
+forms-power-users 그룹에 추가된 사용자는 스크립트를 만들고 기존 스크립트를 편집할 수 있습니다. 의 사용자 [!DNL forms-users] 그룹은 스크립트를 사용할 수 있지만 스크립트를 만들거나 편집할 수는 없습니다.
+
+## 핵심 구성 요소의 규칙 편집기와 기초 구성 요소의 규칙 편집기 간의 차이점
+
+{{rule-editor-diff}}
+
+>[!NOTE]
+>
+> 사용자 지정 함수를 만들고 사용하는 방법에 대한 자세한 내용은 [적응형 Forms(핵심 구성 요소)의 사용자 지정 기능](/help/forms/create-and-use-custom-functions.md) 기사.
 
 ## 규칙 이해 {#understanding-a-rule}
 
@@ -107,7 +114,7 @@ forms-power-users 그룹 에 추가된 사용자는 스크립트를 만들고 �
 
 다음 **[!UICONTROL 날짜]** 규칙 유형은 **condition-action-alternate action** 규칙 구문 또는 경우에 따라 **조건-작용** 구문입니다. 이 규칙 유형에서는 먼저 평가할 조건을 지정하고 조건이 충족되면 트리거할 작업을 지정합니다( `True`). When 규칙 유형을 사용하는 동안 여러 AND 및 OR 연산자를 사용하여 다음을 만들 수 있습니다 [중첩된 표현식](#nestedexpressions).
 
-When 규칙 유형을 사용하면 양식 개체에 대한 조건을 평가하고 하나 이상의 개체에 대해 작업을 수행할 수 있습니다.
+When 규칙 유형을 사용하여 양식 객체의 조건을 평가하고 하나 이상의 객체에 작업을 수행할 수 있습니다.
 
 쉽게 말해, 일반적인 When 규칙은 다음과 같이 구성됩니다.
 
@@ -117,25 +124,80 @@ When 규칙 유형을 사용하면 양식 개체에 대한 조건을 평가하�
 
 `Then, do the following:`
 
-객체 B에 대한 작업 2 및 객체 C에 대한 작업 3
+`Action 2 on Object B;`
+`AND`
+`개체 C에 대한 작업 3;
 
 `Else, do the following:`
 
-오브젝트 C에 대한 작업 2; _
+`Action 2 on Object C;`
+_
 
 라디오 버튼이나 목록과 같은 다중 값 구성 요소가 있는 경우 해당 구성 요소에 대한 규칙을 만드는 동안 해당 옵션이 자동으로 검색되어 규칙 작성자에게 제공됩니다. 옵션 값을 다시 입력할 필요는 없습니다.
 
-예를 들어 목록에는 빨간색, 파란색, 녹색 및 노란색의 네 가지 옵션이 있습니다. 규칙을 만드는 동안 옵션(라디오 단추)이 자동으로 검색되어 규칙 작성자가 다음과 같이 사용할 수 있습니다.
+예를 들어, 목록에는 빨강, 파랑, 녹색 및 노랑의 네 가지 옵션이 있습니다. 규칙을 만드는 동안 옵션(라디오 버튼)이 자동으로 검색되어 규칙 작성자는 다음과 같이 사용할 수 있습니다.
 
 ![다중 값 표시 옵션](assets/multivaluefcdisplaysoptions.png)
 
-When 규칙 작성 중에 값 지우기 작업을 트리거할 수 있습니다. 작업의 값 지우기 지정된 개체의 값을 지웁니다. When 문에서 Clear 값 를 옵션으로 사용하면 여러 필드가 있는 복잡한 조건을 만들 수 있습니다. Else 문을 추가하여 조건을 더 추가할 수 있습니다
+When 규칙을 작성하는 동안 값 지우기 작업을 트리거할 수 있습니다. [값 지우기] 작업을 수행하면 지정된 객체의 값이 지워집니다. When 문에서 Clear Value를 옵션으로 사용하면 여러 필드가 있는 복잡한 조건을 만들 수 있습니다. Else 문을 추가하여 조건을 추가할 수 있습니다
 
 ![값 지우기](assets/clearvalueof.png)
 
 >[!NOTE]
 >
 > 규칙 유형이 단일 수준 then-else 문만 지원하는 경우.
+
+#### 에서 여러 필드가 허용됨 [!UICONTROL 날짜] {#allowed-multiple-fields}
+
+다음에서 **날짜** 조건에는 규칙이 적용되는 필드 외에 다른 필드를 추가할 수 있는 옵션이 있습니다.
+
+예를 들어 When 규칙 유형을 사용하여 서로 다른 양식 객체에 대한 조건을 평가하고 작업을 수행할 수 있습니다.
+
+시기:
+
+(객체 A 조건 1)
+
+및/또는
+
+(오브젝트 B 조건 2)
+
+그런 다음 다음을 수행합니다.
+
+개체 A에 대한 작업 1
+
+_
+
+![다음과 같은 경우에 여러 필드가 허용됨](/help/forms/assets/allowed-multiple-field-when.png)
+
+##### When 조건 기능에서 허용된 여러 필드를 사용하는 동안 고려 사항
+
+* 다음을 확인합니다. [핵심 구성 요소가 버전 3.0.14 이상으로 설정되었습니다.](https://github.com/adobe/aem-core-forms-components) 규칙 편집기에서 이 기능을 사용합니다.
+* When 조건 내의 다른 필드에 규칙이 적용되는 경우 해당 필드 중 하나만 변경되면 규칙이 균일 트리거됩니다.
+
+
+<!--
+* It is not possible to add multiple fields in the When condition while applying rules to a button.
+
+##### To enable Allowed Multiple fields in When condition feature
+
+Allowed Multiple fields in When condition feature is disabled by default. To enable this feature, add a custom property at the template policy:
+
+1. Open the corresponding template associated with an Adaptive Form in the template editor.
+1. Select the existing policy as **formcontainer-policy**.
+1. Navigate to the **[!UICONTROL Structure]**  view and, from the **[!UICONTROL Allowed Components]** list, open the **[!UICONTROL Adaptive Forms Container]** policy.
+1. Go to the **[!UICONTROL Custom Properties]** tab and to add a custom property, click **[!UICONTROL Add]**.
+1. Specify the **Group Name** of your choice. For example, in our case, we added the group name as **allowedfeature**.
+1. Add the **key** and **value** pair as follows:
+   * key: fd:changeEventBehaviour
+   * value: deps
+1. Click **[!UICONTROL Done]**. -->
+
+조건 기능에서 허용되는 여러 필드에 문제가 발생하면 다음과 같이 문제 해결 단계를 팔로우 합니다.
+
+1. 양식을 편집 모드에서 엽니다.
+1. 컨텐츠 브라우저 를 열고 적응형 양식의 안내서 컨테이너&#x200B;]**구성 요소를 선택합니다**[!UICONTROL .
+1. 안내서 컨테이너 속성 ![안내서 속성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭합니다. 적응형 양식 컨테이너 대화 상자가 열립니다.
+1. 완료 를 클릭하고 대화 상자를 다시 저장합니다.
 
 **[!UICONTROL 숨기기]** 지정된 개체를 숨깁니다.
 
@@ -194,7 +256,7 @@ FDM(양식 데이터 모델)에서 서비스를 구성하는 방법에 대한 �
 
 **[!UICONTROL 유효성 검사]** 양식 또는 지정된 개체의 유효성을 검사합니다.
 
-**[!UICONTROL 인스턴스]** 추가: 지정된 반복 가능 패널 또는 테이블 행의 인스턴스 를 추가합니다.
+**[!UICONTROL 인스턴스 추가]** 지정된 반복 가능한 패널 또는 테이블 행의 인스턴스를 추가합니다.
 
 **[!UICONTROL 인스턴스 제거]** 지정된 반복 가능한 패널 또는 테이블 행의 인스턴스를 제거합니다.
 
@@ -376,7 +438,7 @@ To define a rule based on a form data model:
 
 ### D. 시각적 규칙 편집기 {#visual-rule-editor}
 
-시각적 규칙 편집기는 규칙 편집기 사용자 인터페이스의 시각적 편집기 모드에서 규칙을 작성하는 영역입니다. 이를 통해 규칙 유형을 선택하고 그에 따라 조건과 작업을 정의할 수 있습니다. 규칙에서 조건 및 작업을 정의할 때 양식 개체 및 함수 창에서 양식 개체 및 함수를 드래그 앤 드롭할 수 있습니다.
+시각적 규칙 편집기는 규칙 편집기 사용자 인터페이스의 시각적 편집기 모드에서 규칙을 작성하는 영역입니다. 규칙 유형을 선택하고 그에 따라 조건 및 작업을 정의할 수 있습니다. 규칙에서 조건 및 작업을 정의할 때 양식 개체 및 함수 창에서 양식 개체 및 함수를 드래그 앤 드롭할 수 있습니다.
 
 시각적 규칙 편집기 사용에 대한 자세한 내용은 [규칙 작성](rule-editor.md#p-write-rules-p).
 <!-- 
@@ -395,9 +457,9 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ### E. 완료 및 취소 단추 {#done-and-cancel-buttons}
 
-다음 **[!UICONTROL 완료]** 버튼을 사용하여 규칙을 저장합니다. 불완전한 규칙을 저장할 수 있습니다. 그러나 미완료는 유효하지 않으며 실행되지 않습니다. 양식 개체에 저장된 규칙은 다음에 동일한 양식 개체에서 규칙 편집기 실행 때 나열됩니다. 해당 보기에서 기존 규칙을 관리 할 수 있습니다. 자세한 내용은 규칙](rule-editor.md#p-manage-rules-p) 관리를 참조하세요[.
+다음 **[!UICONTROL 완료]** 버튼을 사용하여 규칙을 저장합니다. 불완전한 규칙을 저장할 수 있습니다. 그러나 불완전한 것은 잘못된 것이며 실행되지 않습니다. 양식 개체에 저장된 규칙은 다음에 동일한 양식 개체에서 규칙 편집기 실행 때 나열됩니다. 해당 보기에서 기존 규칙을 관리 할 수 있습니다. 자세한 내용은 규칙](rule-editor.md#p-manage-rules-p) 관리를 참조하세요[.
 
-다음 **[!UICONTROL 취소]** 단추는 규칙에 대한 모든 변경 사항을 무시하고 규칙 편집기를 닫습니다.
+취소&#x200B;]**버튼는**[!UICONTROL &#x200B;규칙에 대한 모든 변경 사항을 무시하고 규칙 편집기 닫습니다.
 
 ## 규칙 작성 {#write-rules}
 
@@ -411,7 +473,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ![Create-rule-예제](assets/create-rule-example.png)
 
-예제 대출 신청서의 대출 요건 섹션에서는 신청자가 결혼 여부, 급여 및 기혼인 경우 배우자의 급여를 지정해야 합니다. 사용자 입력을 기반으로 규칙이 대출 자격 금액을 계산하고 대출 자격 필드에 표시합니다. 다음 규칙을 적용하여 시나리오를 구현합니다.
+예제 대출 신청서의 대출 요건 섹션에서는 신청자가 결혼 여부, 급여 및 기혼인 경우 배우자의 급여를 지정해야 합니다. 사용자 입력에 따라 규칙는 대출 자격 금액을 계산하고 대출 자격 필드에 표시합니다. 다음 규칙을 적용하여 시나리오를 구현합니다.
 
 * [배우자 임금] 필드는 [결혼 상태]가 [기혼]인 경우에만 표시됩니다.
 * 대출 가능 금액은 총 급여의 50%입니다.
@@ -509,17 +571,17 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    확장 표현식 필드에서 다음을 선택합니다. **[!UICONTROL 다음으로 나눔]** 다음에서 **[!UICONTROL 연산자 선택]** 필드 및 **[!UICONTROL 숫자]** 다음에서 **[!UICONTROL 옵션 선택]** 필드. 그런 다음 을 지정합니다 **[!UICONTROL 2]** 번호 필드에서 을 클릭합니다.
 
-   ![write-rules-visual-editor-14](assets/write-rules-visual-editor-14-cc.png)
+   ![write-rules-visual-편집기-14](assets/write-rules-visual-editor-14-cc.png)
 
    >[!NOTE]
    >
-   >옵션 선택 필드에서 구성 요소, 함수, 수학 표현식 및 등록 정보 값을 사용하여 복잡한 표현식을 생성할 수 있습니다.
+   >옵션 선택 필드에서 구성 요소, 함수, 수학 표현식 및 속성 값을 사용하여 복잡한 표현식을 만들 수 있습니다.
 
-   그런 다음 조건을 만들어 True를 반환하면 표현식이 실행됩니다.
+   다음, True를 반환할 때 표현식이 실행되는 조건을 만듭니다.
 
-1. 선택 **[!UICONTROL 조건 추가]** When 문을 추가합니다.
+1. 조건&#x200B;]**추가를 선택하여**[!UICONTROL  When 문을 추가합니다.
 
-   ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15-cc.png)
+   ![write-rules-visual-편집기-15](assets/write-rules-visual-editor-15-cc.png)
 
    When 문에서:
 
@@ -802,11 +864,11 @@ var c = {
 
 ## 날짜 표현식 조건 {#dateexpression}
 
-규칙 편집기를 사용하면 날짜 비교를 사용하여 조건을 만들 수 있습니다.
+규칙 편집기 날짜 비교를 사용하여 조건을 만들 수 있습니다.
 
-다음은 주택에 대한 담보대출이 이미 실행된 경우 정적 텍스트 객체를 표시하는 예제 조건입니다. 이 조건은 사용자가 날짜 필드를 채워 나타냅니다.
+다음은 주택에 대한 모기지가 이미 있는 경우 정적 텍스트 개체를 표시하는 예제 조건으로, 사용자 날짜 필드를 채워 나타냅니다.
 
-사용자가 입력한 부동산의 담보대출 일자가 과거인 경우 적응형 양식에 소득 계산에 대한 메모가 표시됩니다. 다음 규칙은 사용자가 입력한 날짜와 현재 날짜를 비교하며 사용자가 입력한 날짜가 현재 날짜보다 이전인 경우 양식에 텍스트 메시지(소득)가 표시됩니다.
+사용자 사용자가 입력한 속성 담보 대출 날짜가 과거인 경우 적응형 양식에 소득 계산에 대한 메모가 표시됩니다. 다음 규칙은 사용자가 입력한 날짜를 현재 날짜와 비교하고 사용자가 입력한 날짜가 현재 날짜보다 이전인 경우 양식에 텍스트 메시지(Income)가 표시됩니다.
 
 ![날짜 표현식 조건](assets/dateexpressioncondition.png)
 
@@ -897,8 +959,6 @@ Rule in the code editor -->
 앞의 예제에서 설명한 구매 주문 양식에서는 사용자가 가격이 더 비싼 제품을 두 개 이상 주문하지 못하도록 10000. 이 유효성 검사를 수행하려면 아래와 같이 유효성 검사 규칙을 작성할 수 있습니다.
 
 ![예제 유효성 검사](assets/example-validate.png)
-
-시각적 편집기의 규칙
 
 <!-- The rule appears as follows in the code editor.
 

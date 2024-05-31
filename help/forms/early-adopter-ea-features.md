@@ -3,10 +3,10 @@ title: 의 현재 얼리 어답터 기능 [!DNL Adobe Experience Manager Forms] 
 description: 의 현재 얼리 어답터 기능 [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user
-source-git-commit: 2b035e9597518ff64a2b4ce8c18ae31e5deef6f3
+source-git-commit: e6ceb53ee821a1fde5e79c687a4445d6c18faf54
 workflow-type: tm+mt
-source-wordcount: '1599'
-ht-degree: 6%
+source-wordcount: '1731'
+ht-degree: 5%
 
 ---
 
@@ -20,8 +20,7 @@ AEM Forms 얼리 어답터 프로그램(Early Adopter Program)은 다른 사용�
 
 ## 얼리 어답터 프로그램에 가입하는 방법?
 
-얼리어답터 혁신을 위해 얼리어답터 프로그램에 참여하고자 하는 경우, 공식 주소로 이메일을 보내십시오. `aem-forms-ea@adobe.com` 액세스 권한 요청. 모든 또는 특정 혁신에 대한 액세스를 요청할 수 있습니다.
-
+얼리어답터 혁신을 위해 얼리어답터 프로그램에 참여하고자 하는 경우, 공식 주소로 이메일을 보내십시오. [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  액세스 권한 요청. 모든 또는 특정 혁신에 대한 액세스를 요청할 수 있습니다.
 
 ## 얼리 어답터 혁신
 
@@ -154,6 +153,15 @@ AEM Forms Doc Assurance API는 AEM Forms Cloud Service 커뮤니케이션 API �
 전체, [Doc Assurance API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) 제어 계층을 추가하여 문서 보안 및 규정 준수를 개선할 수 있습니다.
 
 
+### Forms 서비스 API
+
+Forms 서비스는 데이터 캡처를 위한 대화형 PDF forms을 생성합니다. 또한 기존 대화형 PDF 양식에서 데이터를 가져오거나 내보내고 제출된 데이터를 확인하는 데 사용할 수도 있습니다. 다음은 기능의 분류입니다.
+
+* **Forms 렌더링**: AEM Forms Designer 및 선택적으로 XML 데이터를 사용하여 만든 템플릿에서 대화형 PDF 양식을 생성합니다. 이는 필수적으로 선택적으로 데이터로 미리 채워진 입력 가능한 PDF 양식을 생성한다.
+
+* **데이터 추출 및 가져오기**: 기존 PDF 양식으로 데이터를 가져오고 채워진 PDF 양식에서 데이터를 추출합니다. XDP 및 XML 데이터 형식이 모두 지원되며, XFA가 아닌 PDF forms(AcroForms라고도 함)으로 가져오기는 FDF 및 XFDF 데이터를 추가로 지원합니다.
+
+* **데이터 유효성 검사**: AEM Forms Designer를 사용하여 만든 템플릿에 대해 제출된 데이터의 유효성을 XDP 또는 XML 형식으로 확인합니다.
 
 ## 추가 참조
 

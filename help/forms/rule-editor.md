@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '6468'
+source-wordcount: '6492'
 ht-degree: 1%
 
 ---
@@ -21,6 +21,12 @@ ht-degree: 1%
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
 | AEM as a Cloud Service | 이 문서 |
 
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| 핵심 구성 요소 | [여기 클릭](/help/forms/rule-editor-core-components.md) |
+| 기초 구성 요소 | 이 문서 |
+
 ## 개요 {#overview}
 
 규칙 편집기 기능을 사용하면 forms 비즈니스 사용자 및 개발자가 적응형 양식 개체에 대한 규칙을 작성할 수 있습니다. 이러한 규칙은 양식에 대한 사전 설정 조건, 사용자 입력 및 사용자 작업을 기반으로 양식 개체에서 트리거하는 작업을 정의합니다. 정확성과 속도를 보장하는 양식 채우기 환경을 더욱 간소화하는 데 도움이 됩니다.
@@ -28,20 +34,24 @@ ht-degree: 1%
 규칙 편집기는 규칙을 작성하는 직관적이고 간단한 사용자 인터페이스를 제공합니다. 규칙 편집기는 모든 사용자를 위한 시각적 편집기를 제공합니다.<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> 규칙을 사용하여 적응형 양식 개체에 대해 수행할 수 있는 몇 가지 주요 작업은 다음과 같습니다.
 
 * 개체 표시 또는 숨기기
-* 개체 활성화 또는 비활성화
-* 개체에 대한 값 설정
-* 개체 값의 유효성 검사
-* 개체의 값을 계산하는 함수 실행
+* 오브젝트 활성화 또는 비활성화
+* 오브젝트의 값 설정
+* 오브젝트 값의 유효성 검사
+* 오브젝트의 값을 계산하는 함수 실행
 * 양식 데이터 모델 서비스 호출 및 작업 수행
-* 개체의 속성 설정
+* 오브젝트의 속성 설정
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
 forms-power-users 그룹에 추가된 사용자는 스크립트를 만들고 기존 스크립트를 편집할 수 있습니다. 의 사용자 [!DNL forms-users] 그룹은 스크립트를 사용할 수 있지만 스크립트를 만들거나 편집할 수는 없습니다.
 
+## 핵심 구성 요소의 규칙 편집기와 기초 구성 요소의 규칙 편집기 간의 차이점
+
+{{rule-editor-diff}}
+
 ## 규칙 이해 {#understanding-a-rule}
 
-규칙은 작업과 조건의 조합입니다. 규칙 편집기에서 작업에는 양식의 개체 값 숨기기, 표시, 활성화, 비활성화 또는 계산과 같은 활동이 포함됩니다. 조건은 양식 객체의 상태, 값 또는 속성에 대한 검사 및 작업을 수행하여 평가되는 부울 표현식입니다. 작업은 조건을 평가하여 반환된 값( `True` 또는 `False`)에 따라 수행됩니다.
+규칙은 작업과 조건의 조합입니다. 규칙 편집기에서 작업에는 폼의 개체 값 숨기기, 표시, 활성화, 비활성화 또는 계산과 같은 활동이 포함됩니다. 조건은 양식 객체의 상태, 값 또는 속성에 대한 검사 및 작업을 수행하여 평가되는 부울 표현식입니다. 작업은 값 ( )을 기반으로 수행됩니다. `True` 또는 `False`)가 조건을 평가하여 반환되었습니다.
 
 규칙 편집기는 규칙을 작성하는 데 도움이 되는 시기, 표시, 숨기기, 활성화, 비활성화, 값 설정 및 유효성 검사와 같은 사전 정의된 규칙 유형 집합을 제공합니다. 각 규칙 유형을 사용하면 규칙에서 조건 및 작업을 정의할 수 있습니다. 이 문서에서는 각 규칙 유형에 대해 자세히 설명합니다.
 
@@ -51,7 +61,7 @@ forms-power-users 그룹에 추가된 사용자는 스크립트를 만들고 기
 
 규칙 편집기에서 **날짜** 규칙 유형은 조건-작업 구문을 적용합니다.
 
-**Action-Condition** 이 구문에서 규칙 먼저 트리거할 작업을 정의한 다음 평가 조건을 정의합니다. 이 구문의 또 다른 변형은 action-condition-alternate action으로, 조건이 False를 반환하는 경우 트리거할 대체 작업도 정의합니다.
+**Action-Condition** 이 구문에서는 먼저 규칙이 작업을 트리거한 다음 평가 조건을 정의합니다. 이 구문의 또 다른 변형은 action-condition-alternate 매크로 함수이며, 이 매크로 함수는 조건이 False를 반환하는 경우 트리거할 대체 매크로 함수도 정의합니다.
 
 규칙 편집기의 규칙 유형 표시, 숨기기, 활성화, 비활성화, 값 설정 및 유효성 검사는 작업 조건 규칙 구성을 적용합니다. 기본적으로 표시에 대한 대체 작업은 숨기기이고 활성화에 대한 대체 작업은 비활성화이며 그 반대입니다. 기본 대체 작업은 변경할 수 없습니다.
 
@@ -104,7 +114,7 @@ forms-power-users 그룹에 추가된 사용자는 스크립트를 만들고 기
 
 ### [!UICONTROL 날짜] {#whenruletype}
 
-다음 **[!UICONTROL 날짜]** 규칙 유형은 **condition-action-alternate action** 규칙 구문 또는 경우에 따라 **조건-작용** 구문입니다. 이 규칙 유형에서는 먼저 평가할 조건을 지정하고 조건이 충족되면 트리거할 작업을 지정합니다( `True`). When 규칙 유형을 사용하는 동안 여러 AND 및 OR 연산자를 사용하여 다음을 만들 수 있습니다 [중첩된 표현식](#nestedexpressions).
+다음 **[!UICONTROL 날짜]** 규칙 유형은 **condition-action-alternate action** 규칙 구문 또는 경우에 따라 **조건-작용** 구문입니다. 이 규칙 유형에서는 먼저 평가 조건을 지정한 다음 조건이 충족될 경우 트리거할 작업을 지정합니다( `True`). When 규칙 유형을 사용하는 동안 여러 AND 및 OR 연산자를 사용하여 중첩 표현식을](#nestedexpressions) 만들 [수 있습니다.
 
 When 규칙 유형을 사용하면 양식 개체에 대한 조건을 평가하고 하나 이상의 개체에 대해 작업을 수행할 수 있습니다.
 
@@ -122,13 +132,13 @@ When 규칙 유형을 사용하면 양식 개체에 대한 조건을 평가하�
 
 _
 
-라디오 단추 또는 목록과 같은 다중 값 구성 요소가 있는 경우 해당 구성 요소에 대한 규칙 만드는 동안 옵션이 자동으로 검색되어 규칙 작성자가 사용할 수 있습니다. 옵션 값을 다시 입력할 필요가 없습니다.
+라디오 버튼이나 목록과 같은 다중 값 구성 요소가 있는 경우 해당 구성 요소에 대한 규칙을 만드는 동안 해당 옵션이 자동으로 검색되어 규칙 작성자에게 제공됩니다. 옵션 값을 다시 입력할 필요는 없습니다.
 
 예를 들어, 목록에는 빨강, 파랑, 녹색 및 노랑의 네 가지 옵션이 있습니다. 규칙을 만드는 동안 옵션(라디오 버튼)이 자동으로 검색되어 규칙 작성자는 다음과 같이 사용할 수 있습니다.
 
 ![다중 값 표시 옵션](assets/multivaluefcdisplaysoptions1.png)
 
-When 규칙을 작성하는 동안 값 지우기 작업을 트리거할 수 있습니다. [값 지우기] 작업을 수행하면 지정된 객체의 값이 지워집니다. When 문에서 Clear 값 를 옵션으로 사용하면 여러 필드가 있는 복잡한 조건을 만들 수 있습니다.
+When 규칙을 작성하는 동안 값 지우기 작업을 트리거할 수 있습니다. [값 지우기] 작업을 수행하면 지정된 객체의 값이 지워집니다. When 문에서 Clear Value를 옵션으로 사용하면 여러 필드가 있는 복잡한 조건을 만들 수 있습니다.
 
 ![값 지우기](assets/clearvalueof1.png)
 
@@ -140,7 +150,7 @@ When 규칙을 작성하는 동안 값 지우기 작업을 트리거할 수 있�
 
 **[!UICONTROL 사용 안 함]** 지정된 개체를 비활성화합니다.
 
-**[!UICONTROL 서비스 호출]** 양식 데이터 모델(FDM)로 구성된 서비스를 호출합니다. 서비스 호출 작업을 선택하면 필드가 나타납니다. 필드를 탭하면 의 모든 양식 데이터 모델(FDM)에 구성된 모든 서비스가 표시됩니다. [!DNL Experience Manager] 인스턴스. 양식 데이터 모델(FDM) 서비스를 선택하면 양식 객체를 지정된 서비스의 입력 및 출력 매개변수와 매핑할 수 있는 필드가 더 많이 나타납니다. 양식 데이터 모델 서비스 호출에 대한 규칙 예를 참조하십시오.
+**[!UICONTROL 서비스 호출]** 양식 데이터 모델(FDM)로 구성된 서비스를 호출합니다. 서비스 호출 작업을 선택하면 필드가 나타납니다. 필드를 탭하면 의 모든 양식 데이터 모델(FDM)에 구성된 모든 서비스가 표시됩니다. [!DNL Experience Manager] 인스턴스. 양식 데이터 모델(FDM) 서비스를 선택하면 양식 객체를 지정된 서비스의 입력 및 출력 매개변수와 매핑할 수 있는 필드가 더 많이 나타납니다. 양식 데이터 모델 서비스를 호출하는 예제 규칙을 참조하십시오.
 
 양식 데이터 모델 서비스 외에 웹 서비스를 호출할 직접 WSDL URL을 지정할 수 있습니다. 그러나 양식 데이터 모델 서비스에는 많은 이점이 있으며 서비스를 호출하는 데 권장되는 방법이 있습니다.
 
@@ -194,7 +204,7 @@ FDM(양식 데이터 모델)에서 서비스를 구성하는 방법에 대한 �
 
 **[!UICONTROL 인스턴스 제거]** 지정된 반복 가능한 패널 또는 테이블 행의 인스턴스를 제거합니다.
 
-**[!UICONTROL 다음으로 이동]** 기타 탐색 <!--Interactive Communications,--> 적응형 Forms, 이미지 또는 문서 조각과 같은 기타 에셋 또는 외부 URL <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+**[!UICONTROL 다음으로 이동:]** 다른 <!--Interactive Communications,--> 적응형 Forms, 이미지나 문서 조각과 같은 다른 자산 또는 외부 URL로 이동합니다. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
 ### [!UICONTROL 값 설정] {#set-value-of}
 
@@ -202,15 +212,11 @@ FDM(양식 데이터 모델)에서 서비스를 구성하는 방법에 대한 �
 
 다음 **값 설정** 규칙 유형은 패널 및 도구 모음 버튼과 같은 일부 양식 오브젝트에 사용할 수 없습니다. 표준 규칙 값 설정(Set Value Of rule)의 구조는 다음과 같습니다.
 
-개체 A의 값을 다음으로 설정:
+개체 A의 값을 다음으로 설정합니다.
 
-(문자열 ABC) 또는
-(객체 C의 객체 속성 X) 또는
-(함수의 값) 또는
-(수학 표현식의 값) 또는
-(데이터 모델 서비스 또는 웹 서비스의 출력 값);
+(문자열 ABC) OR (개체 C의 개체 속성 X) OR (함수의 값) OR (수식의 값) OR (데이터 모델 서비스 또는 웹 서비스의 출력 값);
 
-시기(선택 사항):
+다음과 같은 경우(선택 사항):
 
 (조건 1 및 조건 2 및 조건 3)은 TRUE입니다.
 
@@ -218,7 +224,7 @@ FDM(양식 데이터 모델)에서 서비스를 구성하는 방법에 대한 �
 
 ![값 웹 서비스 설정](assets/set-value-web-service1.png)
 
-양식 데이터 모델 서비스를 사용한 집합 값 규칙의 예
+양식 데이터 모델 서비스를 사용한 값 설정 규칙의 예
 
 >[!NOTE]
 >
@@ -356,13 +362,13 @@ Enable 규칙 유형과 유사한 **[!UICONTROL 사용 안 함]** 규칙 유형�
 
 하나 이상의 유효한 규칙이 적용된 양식 개체는 녹색 점으로 표시됩니다. 양식 객체에 적용된 규칙 중 하나라도 유효하지 않으면 양식 객체가 노란색 점으로 표시됩니다.
 
-함수 탭에는 Sum Of, Min Of, Max Of, Average Of, Number 및 Validate Form과 같은 기본 함수 집합이 포함되어 있습니다. 이러한 함수를 사용하여 반복 가능한 패널 및 테이블 행에서 값을 계산하고 규칙을 작성할 때 작업 및 조건 문에서 사용할 수 있습니다. 그러나 다음을 만들 수 있습니다 [사용자 정의 함수](#custom-functions) 나도..
+함수 탭에는 Sum Of, Min Of, Max Of, Average Of, Number 및 Validate Form과 같은 기본 함수 집합이 포함되어 있습니다. 이러한 함수를 사용하여 반복 가능한 패널 및 테이블 행에서 값을 계산하고 규칙을 작성할 때 작업 및 조건 문에서 사용할 수 있습니다. 그러나 사용자 지정 함수도](#custom-functions) 만들 [수 있습니다.
 
-![기능 탭](assets/functions1.png)
+![함수 탭](assets/functions1.png)
 
 >[!NOTE]
 >
->Forms 개체 및 함수 탭에서 개체 및 함수 이름과 제목에 대해 텍스트 검색을 수행할 수 있습니다.
+>[Forms], [개체] 및 [함수] 탭에서 개체 및 함수 이름과 제목에 대한 텍스트 검색을 수행할 수 있습니다.
 
 양식 객체의 왼쪽 트리에서 양식 객체를 선택하여 각 객체에 적용된 규칙을 표시할 수 있습니다. 다양한 양식 객체의 규칙을 탐색할 수 있을 뿐만 아니라 양식 객체 간에 규칙을 복사하여 붙여넣을 수도 있습니다. 자세한 내용은 [규칙 복사/붙여넣기](rule-editor.md#p-copy-paste-rules-p).
 
@@ -464,13 +470,13 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 1. 다음으로, 총 급여의 50%인 대출 자격 금액을 계산하는 규칙을 작성하여 대출 자격 필드에 표시합니다. 이 결과를 얻으려면 다음을 만드십시오. **[!UICONTROL 값 설정]** 대출 자격 필드에 대한 규칙.
 
-   작성 모드에서 **[!UICONTROL 대출 자격 요건]** 필드 및 선택 ![규칙 편집](assets/edit-rules-icon.svg). 그런 다음 을 선택합니다. **[!UICONTROL 만들기]** 규칙 편집기를 시작합니다.
+   작성 모드에서 **[!UICONTROL 대출 자격 요건]** 필드 및 선택 ![규칙 편집](assets/edit-rules-icon.svg). 다음 만들기&#x200B;]**선택하여**[!UICONTROL &#x200B;규칙 편집기 실행.
 
-1. 선택 **[!UICONTROL 값 설정]** 규칙 드롭다운에서 규칙을 가져옵니다.
+1. 규칙 드롭다운에서 규칙 값&#x200B;]**설정을 선택합니다**[!UICONTROL .
 
-   ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
+   ![write-rules-visual-편집기-10](assets/write-rules-visual-editor-10.png)
 
-1. 선택 **[!UICONTROL 옵션 선택]** 및 선택 **[!UICONTROL 수학 표현식]**. 수학 표현식을 작성할 필드가 열립니다.
+1. 옵션 선택(Select Option ]**)을 선택하고**[!UICONTROL &#x200B;수학 표현식(Mathematical Expression ]**)을 선택합니다**[!UICONTROL . 수학 표현식을 작성할 필드가 열립니다.
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
 
@@ -600,7 +606,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
    1. 숫자
    1. 부울
 
-  다른 모든 반환 유형은 위의 한 가지 유형에 따라 분류됩니다. 지원되지 않습니다. 위의 유형 중 하나를 선택해야 합니다. 반환 유형은 대/소문자를 구분하지 않습니다.
+  다른 모든 반환 유형은 위 중 하나로 분류됩니다. 없음은 지원되지 않습니다. 위의 유형 중 하나를 선택해야 합니다. 반환 유형은 대/소문자를 구분하지 않습니다.
 
    * **이**
 구문: `@this currentComponent`
@@ -747,11 +753,11 @@ var c = {
 
 ## 규칙 복사/붙여넣기 {#copy-paste-rules}
 
-한 필드에서 유사한 다른 필드로 규칙을 복사하여 붙여넣으면 시간을 절약할 수 있습니다.
+한 필드의 규칙 내용을 복사하여 다른 유사한 필드에 붙여 넣으면 시간을 절약할 수 있습니다.
 
 규칙을 복사하여 붙여넣으려면 다음을 수행합니다.
 
-1. 규칙을 복사할 양식 객체를 선택하고 구성 요소 도구 모음에서 를 선택합니다 ![규칙 편집](assets/edit-rules-icon.svg). 양식 객체가 선택되고 기존 규칙이 나타나는 규칙 편집기 사용자 인터페이스가 나타납니다.
+1. 규칙을 복사할 양식 개체를 선택하고 구성 요소 도구 모음에서 규칙](assets/edit-rules-icon.svg) 편집을 선택합니다![. 양식 개체가 선택된 규칙 편집기 사용자 인터페이스가 나타나고 기존 규칙이 나타납니다.
 
    ![규칙 복사](assets/copyrule.png)
 

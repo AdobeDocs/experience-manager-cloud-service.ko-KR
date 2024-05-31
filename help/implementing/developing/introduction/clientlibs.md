@@ -2,9 +2,9 @@
 title: AEM에서 클라이언트측 라이브러리 as a Cloud Service 사용
 description: AEM은 클라이언트측 코드(clientlib)를 저장소에 저장하고, 카테고리로 구성하고, 각 코드 카테고리가 클라이언트에 제공되는 시기와 방법을 정의할 수 있는 클라이언트측 라이브러리 폴더를 제공합니다
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '2551'
+source-wordcount: '2497'
 ht-degree: 1%
 
 ---
@@ -345,7 +345,7 @@ GCC 옵션에 대한 자세한 내용은 [GCC 설명서](https://developers.goog
 
 AEM에서 YUI가 기본 축소기로 설정됩니다. GCC로 변경하려면 다음 단계를 따르십시오.
 
-1. ( )의 Apache Felix 구성 관리자로 이동합니다.`http://<host>:<portY/system/console/configMgr`)
+1. ( )의 Apache Felix 구성 관리자로 이동합니다.`http://<host>:<port/system/console/configMgr`)
 1. 찾기 및 편집 **Adobe Granite HTML 라이브러리 관리자**.
 1. 활성화 **축소** 옵션(아직 활성화되지 않은 경우)
 1. 값 설정 **JS 프로세서 기본 구성** 끝 `min:gcc`.

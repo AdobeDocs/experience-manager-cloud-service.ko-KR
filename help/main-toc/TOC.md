@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b13310c256fe06210b9c79023972c4e41a241f43
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '4970'
+source-wordcount: '4997'
 ht-degree: 99%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 99%
    + AEMaaCS 기능 릴리스 정보 {#release-notes}
       + [최신 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
+         + [2024.4.0 릴리스 정보](/help/release-notes/release-notes-cloud/2024/release-notes-2024-4-0.md)
          + [2024.3.0 릴리스 정보](/help/release-notes/release-notes-cloud/2024/release-notes-2024-3-0.md)
          + [2024.1.0 릴리스 정보](/help/release-notes/release-notes-cloud/2024/release-notes-2024-1-0.md)
       + 2023 {#2023}
@@ -664,6 +665,8 @@ ht-degree: 99%
             + [적응형 양식에 대한 JSON 스키마 디자인(핵심 구성 요소)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [적응형 양식에 버전 관리, 댓글 및 주석 추가](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [적응형 양식 비교](/help/forms/compare-forms.md)
+            + [마이그레이션 유틸리티 도구를 사용하여 기초 구성 요소를 기반으로 하는 적응형 Forms을 핵심 구성 요소 기반 양식으로 변환](/help/forms/migration-utility-tool-for-af-core-components.md)
+            + [적응형 양식을 초안으로 저장](/help/forms/save-core-component-based-form-as-draft.md)
       + 기초 구성 요소 {#authoring-adaptive-forms-foundation-components}
          + PDF 양식을 적응형 양식으로 변환 {#afcs}
             + [자동 양식 전환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)

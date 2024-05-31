@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8c60b02c1759fc4d0cf66d6c8f1c2edf294fc1ce
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 100%
+source-wordcount: '516'
+ht-degree: 61%
 
 ---
 # 스니펫 {#snippets}
@@ -64,4 +64,56 @@ ht-degree: 100%
 * [양식에 반복 가능한 섹션 추가&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [양식 제출 후 사용자 정의 감사 메시지 표시&#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
 * [적응형 양식 블록 구성 요소 및 해당 속성](/help/edge/docs/forms/form-components.md)
+
+
+## 핵심 구성 요소의 규칙 편집기와 기초 구성 요소의 규칙 편집기 간의 차이점  {#rule-editor-diff}
+
+다음 표에서는 규칙 편집기의 핵심 구성 요소와 규칙 편집기의 기초 구성 요소에서 사용할 수 있는 기능의 차이점을 보여 줍니다.
+
+<table>
+  <tbody>
+  <tr>
+    <td><strong>기능</strong></td>
+    <td><strong>Advertical Form Foundation 구성 요소</strong></td>
+    <td><strong>적응형 양식 핵심 구성 요소</strong></td>   
+    </tr>
+  </tr>
+  <tr>
+    <td>드롭다운 목록 옵션 설정 </td>
+    <td>드롭다운 목록 옵션은 규칙 편집기 를 사용하여 설정됩니다 <b>옵션 설정</b> 속성.</td>
+    <td>드롭다운 옵션은 사용자 지정 함수를 사용하여 설정됩니다. 
+   </td>
+   </tr>
+     </tr>
+   <tr>
+    <td>반복 가능 패널 필드에 수학 연산을 수행합니다 </td>
+    <td>OOTB 수학 함수는 sum, average와 같은 함수를 수행하기 위해 반복 가능한 패널 필드에 적용할 수 있습니다. </td>
+    <td>반복 가능 패널 필드에 대한 수학 연산은 사용자 정의 함수를 사용하여 수행할 수 있습니다.
+   </td>
+   </tr>
+      <tr>
+    <td>'Then'에서 필드/패널/양식 규칙의 유효성 검사/재설정 </td>
+    <td>유효성 검사 및 재설정 기능은 규칙 편집기의 양식 객체만 지원합니다. 
+   </td>
+    <td>유효성 검사 및 재설정 기능은 규칙 편집기에서 양식/패널/필드 개체를 지원합니다. 
+   </td>
+   </tr>
+   <tr>
+    <td>ES10 지원 </td>
+    <td>ES10은 아직 지원되지 않습니다. </td>
+    <td>사용자 지정 함수 내에서 let 및 arrow 함수(ES10 지원)와 같은 최신 JavaScript 기능을 지원합니다. 
+   </td>
+   </tr>
+   </tr>
+   <tr>
+   <td>서비스 출력 속성</td>
+   <td> 서비스 출력 속성은 <b>값 설정</b> 규칙 편집기 선택 사항. </td>
+   <td>다음 <b>값 설정</b> 옵션이 를 지원하지 않습니다. <b>서비스 출력</b> 규칙 편집기에서 API 호출을 위한 속성입니다.
+   </td>
+   </tr>
+   </tr>
+   </tr>
+  </tbody>
+  <table>
+  </tbody>
 

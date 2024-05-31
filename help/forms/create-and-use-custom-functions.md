@@ -6,20 +6,15 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: c1c170e1cae148c53662cd49850e2a33754fbafc
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '3119'
+source-wordcount: '3521'
 ht-degree: 3%
 
 ---
 
 
-<span class="preview"> 이 문서에는 일부 프리릴리스 기능에 대한 내용이 포함되어 있습니다. 이러한 프리릴리스 기능은 다음을 통해서만 액세스할 수 있습니다. [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). 프리릴리스 프로그램의 기능은 다음과 같습니다.
-* 사용자 지정 함수에서 선택적 매개 변수 지원
-* 사용자 정의 기능을 위한 캐싱 기능
-* 사용자 지정 함수에 대한 전역 범위 개체 및 필드 개체 지원
-* let 및 arrow 함수와 같은 최신 JavaScript 기능 지원(ES10 지원).
-다음을 확인합니다. [핵심 구성 요소가 버전 3.0.8로 설정되었습니다.](https://github.com/adobe/aem-core-forms-components) 사용자 지정 함수에서 프리릴리스 기능 사용. </span>
+<span class="preview"> 이 문서에는 다음이 포함됩니다. `Override form submission success and error handlers` 를 프리릴리스 기능으로 사용하십시오. 프리릴리스 기능은 다음을 통해서만 액세스할 수 있습니다. [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).
 
 # 적응형 Forms(핵심 구성 요소)의 사용자 지정 기능
 
@@ -31,6 +26,10 @@ ht-degree: 3%
 ## 소개
 
 AEM Forms은 사용자 정의 함수를 지원하므로 사용자가 복잡한 비즈니스 규칙을 구현하기 위한 JavaScript 함수를 정의할 수 있습니다. 이러한 사용자 지정 기능은 지정된 요구 사항을 충족하도록 입력된 데이터의 조작 및 처리를 용이하게 하여 양식의 기능을 확장합니다. 또한 사전 정의된 기준에 따라 양식 동작을 동적으로 변경할 수 있습니다.
+
+>[!NOTE]
+>
+> 다음을 확인합니다. [핵심 구성 요소](https://github.com/adobe/aem-core-forms-components) 최신 기능을 사용하려면 를 최신 버전으로 설정하십시오.
 
 ### 사용자 정의 함수 사용 {#uses-of-custom-function}
 
@@ -44,7 +43,7 @@ AEM Forms은 사용자 정의 함수를 지원하므로 사용자가 복잡한 �
 
 ### 사용자 지정 함수에 대해 지원되는 JavaScript 주석 {#js-annotations}
 
-JavaScript 주석은 JavaScript 코드에 대한 메타데이터를 제공하는 데 사용됩니다. 여기에는 /** 및 @ 등의 특정 기호로 시작하는 주석이 포함됩니다. 주석은 함수, 변수 및 코드의 기타 요소에 대한 중요한 정보를 제공합니다. 적응형 양식은 사용자 정의 기능에 대한 다음 JavaScript 주석을 지원합니다.
+JavaScript 주석은 JavaScript 코드에 대한 메타데이터를 제공하는 데 사용됩니다. 여기에는 /** 및 @과 같은 특정 기호로 시작하는 주석이 포함됩니다. 주석은 함수, 변수 및 코드의 기타 요소에 대한 중요한 정보를 제공합니다. 적응형 양식은 사용자 정의 기능에 대한 다음 JavaScript 주석을 지원합니다.
 
 #### 이름
 
@@ -124,11 +123,11 @@ input2가 선택적 매개 변수로 정의된 다음 코드 스니펫을 고려
 
 ![선택적 또는 필수 매개 변수 ](/help/forms/assets/optional-default-params.png)
 
-필수 매개 변수에 대한 값을 지정하지 않고 규칙을 저장할 수 있지만, 규칙이 실행되지 않고 다음과 같은 경고 메시지가 표시됩니다.
+필요한 매개 변수에 대한 값을 지정하지 않고 규칙을 저장할 수 있지만, 규칙이 실행되지 않고 다음과 같은 경고 메시지가 표시됩니다.
 
 ![불완전한 규칙 경고](/help/forms/assets/incomplete-rule.png)
 
-사용자가 선택적 매개 변수를 비워두면 &quot;정의되지 않음&quot; 값이 선택적 매개 변수에 대한 사용자 지정 함수에 전달됩니다.
+사용자가 선택적 매개 변수를 비워 두면 &quot;정의되지 않음&quot; 값이 선택적 매개 변수에 대한 사용자 지정 함수에 전달됩니다.
 
 JSDocs에서 선택적 매개 변수를 정의하는 방법에 대해 자세히 알아보려면 [여기를 클릭하십시오](https://jsdoc.app/tags-param).
 
@@ -157,7 +156,7 @@ JSDocs에서 선택적 매개 변수를 정의하는 방법에 대해 자세히 
 private으로 선언된 사용자 지정 함수는 적응형 양식의 규칙 편집기에서 사용자 지정 함수 목록에 표시되지 않습니다. 기본적으로 사용자 지정 함수는 공개입니다. 사용자 지정 함수를 private으로 선언하는 구문은 다음과 같습니다. `@private`.
 
 
-## 사용자 정의 함수를 만드는 동안 지침 {#considerations}
+## 사용자 정의 함수를 만드는 동안 지침
 
 규칙 편집기에 사용자 정의 함수를 나열하려면 다음 형식 중 하나를 사용할 수 있습니다.
 
@@ -217,7 +216,7 @@ jsdoc 주석을 사용하거나 사용하지 않고 사용자 지정 함수를 �
 
 사용자가 사용자 정의 함수에 JavaScript 주석을 추가하지 않으면 사용자 정의 함수가 적응형 양식의 규칙 편집기에 나열되지 않습니다.
 
-## 사용자 지정 함수 만들기 {#create-custom-function}
+## 사용자 정의 함수 만들기 {#create-custom-function}
 
 규칙 편집기에서 사용자 지정 함수를 호출할 클라이언트 라이브러리를 만듭니다. 자세한 내용은 [클라이언트측 라이브러리 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 
@@ -280,7 +279,7 @@ jsdoc 주석을 사용하거나 사용하지 않고 사용자 지정 함수를 �
 
 1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
-에서 사용자 지정 함수를 사용할 수 있습니다. [적응형 양식의 규칙 편집기](/help/forms/rule-editor-core-components.md) 사용 [Javascript 주석](##js-annotations).
+에서 사용자 지정 함수를 사용할 수 있습니다. [적응형 양식의 규칙 편집기](/help/forms/rule-editor-core-components.md) 사용 [JavaScript 주석](##js-annotations).
 
 ## 적응형 양식에서 사용자 정의 함수 사용
 
@@ -320,6 +319,43 @@ jsdoc 주석을 사용하거나 사용하지 않고 사용자 지정 함수를 �
 >[!NOTE]
 >
 > 다음을 참조하십시오 [사용자 정의 함수](/help/forms/assets//customfunctions.zip) 폴더를 삭제합니다. 를 사용하여 AEM 인스턴스에 이 폴더를 다운로드하고 설치합니다. [패키지 관리자](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
+
+
+### 사용자 정의 함수를 사용하여 드롭다운 목록 옵션 설정
+
+핵심 구성 요소의 규칙 편집기는 **옵션 설정** 속성을 사용하여 런타임 시 드롭다운 목록 옵션을 설정할 수 있습니다. 그러나 사용자 지정 함수를 사용하여 드롭다운 목록 옵션을 설정할 수 있습니다.
+
+사용자 지정 함수를 사용하여 드롭다운 목록 옵션을 설정하는 방법을 보려면 아래 코드를 살펴보십시오.
+
+```javascript
+    /**
+    * @name setEnums
+    * @returns {string[]}
+    **/
+    function setEnums() {
+    return ["0","1","2","3","4","5","6"];   
+    }
+
+    /**
+    * @name setEnumNames
+    * @returns {string[]}
+    **/
+    function setEnumNames() {
+    return ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    }
+```
+
+위의 코드에서 `setEnums` 를 설정하는 데 사용됩니다. `enum` 속성 및 `setEnumNames` 를 설정하는 데 사용됩니다. `enumNames` 드롭다운 속성.
+
+다음에 대한 규칙을 만들겠습니다. `Next` 버튼 - 사용자가 를 클릭할 때 드롭다운 목록 옵션의 값을 설정합니다. `Next` 단추:
+
+![드롭다운 목록 옵션](/help/forms/assets/drop-down-list-options.png)
+
+표시 버튼을 클릭할 때 드롭다운 목록의 옵션이 설정되는 위치를 보여 주려면 아래 그림을 참조하십시오.
+
+![규칙 편집기의 드롭다운 옵션](/help/forms/assets/drop-down-option-rule-editor.png)
+
+
 
 ### 사용자 지정 함수에서 비동기 함수 지원 {#support-of-async-functions}
 
@@ -362,7 +398,7 @@ jsdoc 주석을 사용하거나 사용하지 않고 사용자 지정 함수를 �
 
 ![비동기 함수에 대한 규칙 만들기](/help/forms/assets/rule-for-async-funct.png)
 
-사용자가 를 클릭할 때 표시되는 콘솔 창의 그림을 참조하십시오. `Fetch` 단추, 사용자 지정 함수 `callAsyncFunction` 가 호출되어 비동기 함수를 호출합니다. `asyncFunction`. 버튼 클릭 시 응답을 볼 수 있는 콘솔 창 Inspect:
+사용자가 를 클릭할 때 표시되는 콘솔 창의 그림을 참조하십시오. `Fetch` 단추, 사용자 지정 함수 `callAsyncFunction` 가 호출되어 비동기 함수를 호출합니다. `asyncFunction`. Inspect 콘솔 창에서 버튼에 대한 응답을 봅니다. 클릭:
 
 ![콘솔 창](/help/forms/assets/async-custom-funct-console.png)
 
@@ -374,7 +410,7 @@ jsdoc 주석을 사용하거나 사용하지 않고 사용자 지정 함수를 �
 
 ### 사용자 지정 함수의 필드 및 전역 범위 개체 {#support-field-and-global-objects}
 
-필드 개체는 텍스트 필드, 확인란 등 양식 내의 개별 구성 요소나 요소를 나타냅니다. Globals 개체에는 사용자 지정 함수 내에서 양식을 수정하는 방법, 대상 필드 인스턴스 및 양식 인스턴스와 같은 읽기 전용 변수가 포함되어 있습니다.
+필드 개체는 텍스트 필드, 확인란 등 양식 내의 개별 구성 요소 또는 요소를 나타냅니다. Globals 개체에는 사용자 지정 함수 내에서 양식을 수정하는 방법, 대상 필드 인스턴스 및 양식 인스턴스와 같은 읽기 전용 변수가 포함되어 있습니다.
 
 >[!NOTE]
 >
@@ -402,11 +438,11 @@ jsdoc 주석을 사용하거나 사용하지 않고 사용자 지정 함수를 �
 
 In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
 
-사용자 지정 함수에서 필드를 사용하고 전역 개체를 사용하는 방법에 대해 알아보겠습니다. `Contact Us` 다른 사용 사례를 사용하는 양식입니다.
+사용자 지정 함수에서 필드를 사용하고 전역 개체를 사용하는 방법에 대해 알아보겠습니다. `Contact Us` 다양한 사용 사례를 사용하는 양식입니다.
 
 ![연락처 양식](/help/forms/assets/contact-us-form.png)
 
-#### **사용 사례**: 다음을 사용하여 패널 표시 `SetProperty` 규칙
++++ **사용 사례**: 다음을 사용하여 패널 표시 `SetProperty` 규칙
 
 에 설명된 대로 사용자 지정 함수에 다음 코드를 추가합니다. [create-custom-function](#create-custom-function) 섹션, 양식 필드를 다음으로 설정 `Required`.
 
@@ -448,7 +484,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![속성 양식 미리 보기 설정](/help/forms/assets/set-property-panel.png)
 
-#### **사용 사례**: 필드의 유효성 검사
++++
+
++++ **사용 사례**: 필드의 유효성 검사
 
 에 설명된 대로 사용자 지정 함수에 다음 코드를 추가합니다. [create-custom-function](#create-custom-function) 섹션의 유효성 검사를 참조하십시오.
 
@@ -487,7 +525,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![이메일 주소 유효성 검사 패턴](/help/forms/assets/validate-form-preview-form.png)
 
-#### **사용 사례**: 패널 재설정
++++
+
++++ **사용 사례**: 패널 재설정
 
 에 설명된 대로 사용자 지정 함수에 다음 코드를 추가합니다. [create-custom-function](#create-custom-function) 섹션, 패널을 재설정합니다.
 
@@ -519,7 +559,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![양식 재설정](/help/forms/assets/custom-function-reset-form.png)
 
-#### **사용 사례**: 필드 수준에서 사용자 정의 메시지를 표시하고 필드를 유효하지 않은 것으로 표시
++++
+
++++ **사용 사례**: 필드 수준에서 사용자 정의 메시지를 표시하고 필드를 유효하지 않은 것으로 표시
 
 다음을 사용할 수 있습니다. `markFieldAsInvalid()` 필드를 유효하지 않은 것으로 정의하고 필드 수준에서 사용자 지정 오류 메시지를 설정하는 함수입니다. 다음 `fieldIdentifier` 값은 다음과 같을 수 있습니다. `fieldId`, 또는 `field qualifiedName`, 또는 `field dataRef`. 이름이 인 개체의 값 `option` 다음이 될 수 있음: `{useId: true}`, `{useQualifiedName: true}`, 또는 `{useDataRef: true}`.
 필드를 유효하지 않은 것으로 표시하고 사용자 정의 메시지를 설정하는 데 사용되는 구문은 다음과 같습니다.
@@ -556,12 +598,13 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![필드를 잘못된 미리보기 양식으로 표시](/help/forms/assets/custom-function-invalidfield-form.png)
 
-사용자가 댓글 텍스트 상자에 15자 이상을 입력하면 필드의 유효성이 검사되고 양식이 제출됩니다.
+사용자가 주석 입력란에 15자 이상을 입력하면 필드의 유효성이 검사되고 양식이 제출됩니다.
 
 ![필드를 유효한 미리 보기 양식으로 표시](/help/forms/assets/custom-function-validfield-form.png)
 
++++
 
-#### **사용 사례**: 변경된 데이터를 서버에 제출
++++ **사용 사례**: 변경된 데이터를 서버에 제출
 
 다음 코드 줄:
 `globals.functions.submitForm(globals.functions.exportData(), false);` 은 조작 후 양식 데이터를 제출하는 데 사용됩니다.
@@ -604,6 +647,262 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![콘솔 창의 Inspect 데이터](/help/forms/assets/custom-function-submit-data-console-data.png)
 
++++
+
++++ **사용 사례**: 양식 제출 성공 및 오류 처리기 재정의
+
+에 설명된 대로 다음 코드 행을 추가합니다. [create-custom-function](#create-custom-function) 섹션에서 양식 제출을 위해 제출 또는 실패 메시지를 사용자 정의하고 양식 제출 메시지를 모달 상자에 표시하려면 다음을 수행합니다.
+
+```javascript
+/**
+ * Handles the success response after a form submission.
+ *
+ * @param {scope} globals - This object contains a read-only form instance, target field instance, triggered event, and methods for performing form modifications within custom functions.
+ * @returns {void}
+ */
+function customSubmitSuccessHandler(globals) {
+    var event = globals.event;
+    var submitSuccessResponse = event.payload.body;
+    var form = globals.form;
+
+    if (submitSuccessResponse) {
+        if (submitSuccessResponse.redirectUrl) {
+            window.location.href = encodeURI(submitSuccessResponse.redirectUrl);
+        } else if (submitSuccessResponse.thankYouMessage) {
+            showModal("success", submitSuccessResponse.thankYouMessage);
+        }
+    }
+}
+
+/**
+ * Handles the error response after a form submission.
+ *
+ * @param {string} customSubmitErrorMessage - The custom error message.
+ * @param {scope} globals - This object contains a read-only form instance, target field instance, triggered event, and methods for performing form modifications within custom functions.
+ * @returns {void}
+ */
+function customSubmitErrorHandler(customSubmitErrorMessage, globals) {
+    showModal("error", customSubmitErrorMessage);
+}
+function showModal(type, message) {
+    // Remove any existing modals
+    var existingModal = document.getElementById("modal");
+    if (existingModal) {
+        existingModal.remove();
+    }
+
+    // Create the modal dialog
+    var modal = document.createElement("div");
+    modal.setAttribute("id", "modal");
+    modal.setAttribute("class", "modal");
+
+    // Create the modal content
+    var modalContent = document.createElement("div");
+    modalContent.setAttribute("class", "modal-content");
+
+    // Create the modal header
+    var modalHeader = document.createElement("div");
+    modalHeader.setAttribute("class", "modal-header");
+    modalHeader.innerHTML = "<h2>" + (type === "success" ? "Thank You" : "Error") + "</h2>";
+
+    // Create the modal body
+    var modalBody = document.createElement("div");
+    modalBody.setAttribute("class", "modal-body");
+    modalBody.innerHTML = "<p class='" + type + "-message'>" + message + "</p>";
+
+    // Create the modal footer
+    var modalFooter = document.createElement("div");
+    modalFooter.setAttribute("class", "modal-footer");
+
+    // Create the close button
+    var closeButton = document.createElement("button");
+    closeButton.setAttribute("class", "close-button");
+    closeButton.innerHTML = "Close";
+    closeButton.onclick = function() {
+        modal.remove();
+    };
+
+    // Append the elements to the modal content
+    modalFooter.appendChild(closeButton);
+    modalContent.appendChild(modalHeader);
+    modalContent.appendChild(modalBody);
+    modalContent.appendChild(modalFooter);
+
+    // Append the modal content to the modal
+    modal.appendChild(modalContent);
+
+    // Append the modal to the document body
+    document.body.appendChild(modal);
+}
+```
+
+이 예에서 사용자가 `customSubmitSuccessHandler` 및 `customSubmitErrorHandler` 사용자 정의 함수, 성공 및 실패 메시지는 모달에 표시됩니다. JavaScript 함수 `showModal(type, message)` 를 사용하여 모달 대화 상자를 동적으로 만들고 화면에 표시합니다.
+
+이제 성공적인 양식 제출을 위한 규칙을 만듭니다.
+
+![양식 제출 성공](/help/forms/assets/form-submission-success.png)
+
+양식이 성공적으로 제출되면 성공 메시지가 모달에 표시된다는 것을 증명하려면 아래 그림을 참조하십시오.
+
+![양식 제출 성공 메시지](/help/forms/assets/form-submission-success-message.png)
+
+마찬가지로 실패한 양식 제출에 대한 규칙을 만들어 보겠습니다.
+
+![양식 제출 실패](/help/forms/assets/form-submission-fail.png)
+
+양식 제출이 실패할 때 오류 메시지가 모달에 표시되는지 보여 주려면 아래 그림을 참조하십시오.
+
+![양식 제출 실패 메시지](/help/forms/assets/form-submission-fail-message.png)
+
+기본 방식으로 양식 제출 성공 및 실패를 표시하려면 `Default submit Form Success Handler` 및 `Default submit Form Error Handler` 함수는 즉시 사용할 수 있습니다.
+
+사용자 지정 제출 처리기가 기존 AEM 프로젝트 또는 양식에서 예상대로 수행되지 않는 경우 [문제 해결](#troubleshooting) 섹션.
+
+<!--
+
++++
+
++++ **Use Case**:  Perform actions in a specific instance of the repeatable panel 
+
+Rules created using the visual rule editor on a repeatable panel apply to the last instance of the repeatable panel. To write a rule for a specific instance of the repeatable panel, we can use a custom function.
+
+Let's create a form to collect information about travelers heading to a destination. A traveler panel is added as a repeatable panel, where the user can add details for 5 travelers using the Add button.
+
+Add the following line of code as explained in the [create-custom-function](#create-custom-function) section, to perform actions in a specific instance of the repeatable panel, other than the last one:
+
+```javascript
+
+/**
+* @name hidePanelInRepeatablePanel
+* @param {scope} globals
+*/
+function hidePanelInRepeatablePanel(globals)
+{    
+    var repeatablePanel = globals.form.travelerinfo;
+    // hides a panel inside second instance of repeatable panel
+    globals.functions.setProperty(repeatablePanel[1].traveler, {visible : false});
+}  
+
+```
+ 
+In this example, the `hidePanelInRepeatablePanel` custom function performs action in a specific instance of the repeatable panel. In the above code, `travelerinfo` represents the repeatable panel. The `repeatablePanel[1].traveler, {visible: false}` code hides the panel in the second instance of the repeatable panel. 
+Let us add a button labeled `Hide` to add a rule to hide a specific panel.
+
+![Hide Panel rule](/help/forms/assets/custom-function-hidepanel-rule.png)
+
+Refer to the video below to demonstrate that when the `Hide` is clicked, the panel in the second repeatable instance hides:
+
+
++++
+
++++ **Usecase**: Pre-fill the field with a value when the form loads
+
+Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to load the pre-filled value in a field when the form is initialized:
+
+```javascript
+/**
+ * @name importData
+ * @param {scope} globals
+ */
+function importData(globals)
+{
+    globals.functions.importData(Object.fromEntries([['amount',200000]]));
+} 
+```
+
+In the aforementioned code, the `importData` function updates the value in the `amount` textbox field when the form loads.
+
+Let us create a rule for the `Submit` button, where the value in the `amount` textbox field changes to specified value when the form loads:
+
+![Import Data Rule](/help/forms/assets/custom-function-import-data.png)
+
+Refer to the screenshot below, which demonstrates that when the form loads, the value in the amount textbox is pre-filled with a specified value:
+
+![Import Data Rule](/help/forms/assets/cg)
+
++++
+
++++ **Usecase**: Set focus on the specific field
+
+Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to set focus on the specified field when the `Submit` button is clicked.:
+
+```javascript
+/**
+ * @name setFocus
+ * @param {object} field
+ * @param {scope} globals
+ */
+function setFocus(field, globals)
+{
+    globals.functions.setFocus(field);
+}
+```
+
+Let us add a rule to the `Submit` button to set focus on the `email` field when it is clicked:
+
+![Set Focus Rule](/help/forms/assets/custom-function-set-focus.png)
+
+Refer to the screenshot below, which demonstrates that when the `Submit` button is clicked, the focus is set on the `email` field:
+
+![Set Focus Rule](/help/forms/assets/custom-function-set-focus-form.png)
+
+>[!NOTE]
+>
+> You can use the optional `$focusOption` parameter, if you want to focus on the next or previous field relative to the `email` field.
+
++++
+
++++ **Usecase**: Add or delete repeatable panel using the `dispatchEvent` property
+
+Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to add a panel when the `Add Traveler` button is clicked using the `dispatchEvent` property:
+
+```javascript
+/**
+ 
+ * @name addInstance
+ * @param {scope} globals
+ */
+function addInstance(globals)
+{
+    var repeatablePanel = globals.form.traveler;
+    globals.functions.dispatchEvent(repeatablePanel, 'addInstance');
+} 
+
+```
+
+Let us add a rule to the `Add Traveler` button to add the repeatable panel when it is clicked:
+
+![Add Panel Rule](/help/forms/assets/custom-function-add-panel.png)
+
+Refer to the screenshot below, which demonstrates that when the `Add Traveler` button is clicked, the traveler panel is added using the `dispatchEvent` property:
+
+![Add Panel](/help/forms/assets/customg)
+
+Similarly, add a button labeled `Delete Traveler` to delete a panel. Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to delete a panel when the `Delete Traveler` button is clicked using the `dispatchEvent` property:
+
+```javascript
+
+/**
+ 
+ * @name removeInstance
+ * @param {scope} globals
+ */
+function removeInstance(globals)
+{
+    var repeatablePanel = globals.form.traveler;
+    globals.functions.dispatchEvent(repeatablePanel, 'removeInstance');
+} 
+
+```
+Let us add a rule to the `Delete Traveler` button to delete the repeatable panel when it is clicked:
+
+![Delete Panel Rule](/help/forms/assets/custom-function-delete-panel.png)
+
+Refer to the screenshot below, which demonstrates that when the `Delete Traveler` button is clicked, the traveler panel is deleted using the `dispatchEvent` property:
+
+![Delete Panel](/help/forms/assets/customg)
+-->
+
 ## 사용자 지정 기능에 대한 캐싱 지원
 
 적응형 Forms은 규칙 편집기에서 사용자 지정 함수 목록을 검색하는 동안 응답 시간을 개선하기 위해 사용자 지정 함수에 대한 캐싱을 구현합니다. 다음으로 메시지: `Fetched following custom functions list from cache` 에 표시 `error.log` 파일.
@@ -612,15 +911,23 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 사용자 지정 함수가 수정되면 캐싱이 무효화되고 구문 분석됩니다.
 
-## 문제 해결
+## 문제 해결 {#troubleshooting}
 
-사용자 지정 함수에 대한 코드가 포함된 JavaScript 파일에 오류가 있는 경우 사용자 지정 함수가 적응형 양식의 규칙 편집기에 나열되지 않습니다. 사용자 지정 함수 목록을 확인하려면 `error.log` 파일에 오류가 표시됩니다. 오류가 발생하면 사용자 지정 함수 목록이 비어 있습니다.
+* 사용자 지정 제출 처리기가 기존 AEM 프로젝트 또는 양식에서 예상대로 수행되지 않으면 다음 단계를 수행하십시오.
+   * 다음을 확인합니다. [코어 구성 요소 버전이 3.0.18 이상으로 업데이트되었습니다.](https://github.com/adobe/aem-core-forms-components). 그러나 기존 AEM 프로젝트 및 양식의 경우 따라야 할 추가 단계가 있습니다.
 
-![오류 로그 파일](/help/forms/assets/custom-function-list-error-file.png)
+   * AEM 프로젝트의 경우 사용자는 의 모든 인스턴스를 `submitForm('custom:submitSuccess', 'custom:submitError')` 포함 `submitForm()` Cloud Manager 파이프라인을 통해 프로젝트를 배포할 수 있습니다.
 
-오류가 없는 경우 사용자 지정 함수를 가져와서 `error.log` 파일. 다음으로 메시지: `Fetched following custom functions list` 에 표시 `error.log` 파일:
+   * 기존 양식의 경우 사용자 정의 제출 핸들러가 제대로 작동하지 않으면 를 열고 저장해야 합니다 `submitForm` 에 대한 규칙 **제출** 규칙 편집기를 사용하는 단추입니다. 이 작업은 의 기존 규칙을 대체합니다. `submitForm('custom:submitSuccess', 'custom:submitError')` 포함 `submitForm()` 폼에서.
 
-![적절한 사용자 정의 기능이 있는 오류 로그 파일](/help/forms/assets/custom-function-list-fetched-in-error.png)
+
+* 사용자 지정 함수에 대한 코드가 포함된 JavaScript 파일에 오류가 있는 경우 사용자 지정 함수가 적응형 양식의 규칙 편집기에 나열되지 않습니다. 사용자 지정 함수 목록을 확인하려면 `error.log` 파일에 오류가 표시됩니다. 오류가 발생하면 사용자 지정 함수 목록이 비어 있습니다.
+
+  ![오류 로그 파일](/help/forms/assets/custom-function-list-error-file.png)
+
+  오류가 없는 경우 사용자 지정 함수를 가져와서 `error.log` 파일. 다음으로 메시지: `Fetched following custom functions list` 에 표시 `error.log` 파일:
+
+  ![적절한 사용자 정의 기능이 있는 오류 로그 파일](/help/forms/assets/custom-function-list-fetched-in-error.png)
 
 ## 고려 사항
 
