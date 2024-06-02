@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 mini-toc-levels: 4
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 8f33174ac6b699af34ca8af14387eaca5cae969c
+source-git-commit: 4cd7924e99809146e111f6b3309db0a8292e61b1
 workflow-type: tm+mt
-source-wordcount: '3522'
+source-wordcount: '3510'
 ht-degree: 3%
 
 ---
@@ -443,7 +443,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![연락처 양식](/help/forms/assets/contact-us-form.png)
 
-#### 사용 사례: SetProperty 규칙을 사용하여 패널 표시
+#### SetProperty 규칙을 사용하여 패널 표시
 
 에 설명된 대로 사용자 지정 함수에 다음 코드를 추가합니다. [create-custom-function](#create-custom-function) 섹션, 양식 필드를 다음으로 설정 `Required`.
 
@@ -486,7 +486,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 ![속성 양식 미리 보기 설정](/help/forms/assets/set-property-panel.png)
 
 
-#### 사용 사례: 필드의 유효성 검사
+#### 필드의 유효성을 검사합니다.
 
 에 설명된 대로 사용자 지정 함수에 다음 코드를 추가합니다. [create-custom-function](#create-custom-function) 섹션의 유효성 검사를 참조하십시오.
 
@@ -527,7 +527,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 
 
-#### 사용 사례: 패널 재설정
+#### 패널 재설정
 
 에 설명된 대로 사용자 지정 함수에 다음 코드를 추가합니다. [create-custom-function](#create-custom-function) 섹션, 패널을 재설정합니다.
 
@@ -561,7 +561,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 
 
-#### 사용 사례: 필드 수준에서 사용자 정의 메시지를 표시하고 필드를 유효하지 않은 것으로 표시
+#### 필드 수준에서 사용자 정의 메시지를 표시하고 필드를 유효하지 않은 것으로 표시
 
 다음을 사용할 수 있습니다. `markFieldAsInvalid()` 필드를 유효하지 않은 것으로 정의하고 필드 수준에서 사용자 지정 오류 메시지를 설정하는 함수입니다. 다음 `fieldIdentifier` 값은 다음과 같을 수 있습니다. `fieldId`, 또는 `field qualifiedName`, 또는 `field dataRef`. 이름이 인 개체의 값 `option` 다음이 될 수 있음: `{useId: true}`, `{useQualifiedName: true}`, 또는 `{useDataRef: true}`.
 필드를 유효하지 않은 것으로 표시하고 사용자 정의 메시지를 설정하는 데 사용되는 구문은 다음과 같습니다.
@@ -604,7 +604,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 
 
-#### 사용 사례: 변경된 데이터를 서버에 제출
+#### 제출하기 전에 캡처된 데이터 변경
 
 다음 코드 줄:
 `globals.functions.submitForm(globals.functions.exportData(), false);` 은 조작 후 양식 데이터를 제출하는 데 사용됩니다.
@@ -649,7 +649,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 
 
-#### 사용 사례: 양식 제출 성공 및 오류 처리기 재정의
+#### 양식 제출 성공 및 오류 메시지 재정의
 
 에 설명된 대로 다음 코드 행을 추가합니다. [create-custom-function](#create-custom-function) 섹션에서 양식 제출을 위해 제출 또는 실패 메시지를 사용자 정의하고 양식 제출 메시지를 모달 상자에 표시하려면 다음을 수행합니다.
 
