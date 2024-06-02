@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+source-git-commit: b6061690fa278ccb883656cefd065d06ab924499
 workflow-type: tm+mt
 source-wordcount: '3521'
 ht-degree: 3%
@@ -442,7 +442,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![연락처 양식](/help/forms/assets/contact-us-form.png)
 
-+++ **사용 사례**: 다음을 사용하여 패널 표시 `SetProperty` 규칙
++++ 사용 사례: `SetProperty` 규칙
 
 에 설명된 대로 사용자 지정 함수에 다음 코드를 추가합니다. [create-custom-function](#create-custom-function) 섹션, 양식 필드를 다음으로 설정 `Required`.
 
@@ -484,9 +484,8 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![속성 양식 미리 보기 설정](/help/forms/assets/set-property-panel.png)
 
-+++
 
-+++ **사용 사례**: 필드의 유효성 검사
+#### 사용 사례: 필드의 유효성 검사
 
 에 설명된 대로 사용자 지정 함수에 다음 코드를 추가합니다. [create-custom-function](#create-custom-function) 섹션의 유효성 검사를 참조하십시오.
 
@@ -525,9 +524,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![이메일 주소 유효성 검사 패턴](/help/forms/assets/validate-form-preview-form.png)
 
-+++
 
-+++ **사용 사례**: 패널 재설정
+
+#### 사용 사례: 패널 재설정
 
 에 설명된 대로 사용자 지정 함수에 다음 코드를 추가합니다. [create-custom-function](#create-custom-function) 섹션, 패널을 재설정합니다.
 
@@ -559,9 +558,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![양식 재설정](/help/forms/assets/custom-function-reset-form.png)
 
-+++
 
-+++ **사용 사례**: 필드 수준에서 사용자 정의 메시지를 표시하고 필드를 유효하지 않은 것으로 표시
+
+#### 사용 사례: 필드 수준에서 사용자 정의 메시지를 표시하고 필드를 유효하지 않은 것으로 표시
 
 다음을 사용할 수 있습니다. `markFieldAsInvalid()` 필드를 유효하지 않은 것으로 정의하고 필드 수준에서 사용자 지정 오류 메시지를 설정하는 함수입니다. 다음 `fieldIdentifier` 값은 다음과 같을 수 있습니다. `fieldId`, 또는 `field qualifiedName`, 또는 `field dataRef`. 이름이 인 개체의 값 `option` 다음이 될 수 있음: `{useId: true}`, `{useQualifiedName: true}`, 또는 `{useDataRef: true}`.
 필드를 유효하지 않은 것으로 표시하고 사용자 정의 메시지를 설정하는 데 사용되는 구문은 다음과 같습니다.
@@ -602,9 +601,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![필드를 유효한 미리 보기 양식으로 표시](/help/forms/assets/custom-function-validfield-form.png)
 
-+++
 
-+++ **사용 사례**: 변경된 데이터를 서버에 제출
+
+#### 사용 사례: 변경된 데이터를 서버에 제출
 
 다음 코드 줄:
 `globals.functions.submitForm(globals.functions.exportData(), false);` 은 조작 후 양식 데이터를 제출하는 데 사용됩니다.
@@ -647,9 +646,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![콘솔 창의 Inspect 데이터](/help/forms/assets/custom-function-submit-data-console-data.png)
 
-+++
 
-+++ **사용 사례**: 양식 제출 성공 및 오류 처리기 재정의
+
+#### 사용 사례: 양식 제출 성공 및 오류 처리기 재정의
 
 에 설명된 대로 다음 코드 행을 추가합니다. [create-custom-function](#create-custom-function) 섹션에서 양식 제출을 위해 제출 또는 실패 메시지를 사용자 정의하고 양식 제출 메시지를 모달 상자에 표시하려면 다음을 수행합니다.
 
@@ -760,9 +759,8 @@ function showModal(type, message) {
 
 <!--
 
-+++
 
-+++ **Use Case**:  Perform actions in a specific instance of the repeatable panel 
+#### Use Case:  Perform actions in a specific instance of the repeatable panel 
 
 Rules created using the visual rule editor on a repeatable panel apply to the last instance of the repeatable panel. To write a rule for a specific instance of the repeatable panel, we can use a custom function.
 
@@ -793,9 +791,9 @@ Let us add a button labeled `Hide` to add a rule to hide a specific panel.
 Refer to the video below to demonstrate that when the `Hide` is clicked, the panel in the second repeatable instance hides:
 
 
-+++
 
-+++ **Usecase**: Pre-fill the field with a value when the form loads
+
+#### **Usecase**: Pre-fill the field with a value when the form loads
 
 Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to load the pre-filled value in a field when the form is initialized:
 
@@ -820,9 +818,9 @@ Refer to the screenshot below, which demonstrates that when the form loads, the 
 
 ![Import Data Rule](/help/forms/assets/cg)
 
-+++
 
-+++ **Usecase**: Set focus on the specific field
+
+#### **Usecase**: Set focus on the specific field
 
 Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to set focus on the specified field when the `Submit` button is clicked.:
 
