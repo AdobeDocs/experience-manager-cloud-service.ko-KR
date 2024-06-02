@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 mini-toc-levels: 4
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 4cd7924e99809146e111f6b3309db0a8292e61b1
+source-git-commit: 6f50bdf2a826654e0d5b35de5bd50e66981fb56a
 workflow-type: tm+mt
-source-wordcount: '3510'
+source-wordcount: '3513'
 ht-degree: 3%
 
 ---
@@ -649,7 +649,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 
 
-#### 양식 제출 성공 및 오류 메시지 재정의
+#### 적응형 양식에 대한 제출 성공 및 오류 메시지 재정의
 
 에 설명된 대로 다음 코드 행을 추가합니다. [create-custom-function](#create-custom-function) 섹션에서 양식 제출을 위해 제출 또는 실패 메시지를 사용자 정의하고 양식 제출 메시지를 모달 상자에 표시하려면 다음을 수행합니다.
 
