@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: b6061690fa278ccb883656cefd065d06ab924499
+source-git-commit: 05b149c60cb8d05489668b13f63ed5b0e1d0bbfb
 workflow-type: tm+mt
-source-wordcount: '3521'
+source-wordcount: '3522'
 ht-degree: 3%
 
 ---
@@ -442,7 +442,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![연락처 양식](/help/forms/assets/contact-us-form.png)
 
-+++ 사용 사례: `SetProperty` 규칙
+#### 사용 사례: SetProperty 규칙을 사용하여 패널 표시
 
 에 설명된 대로 사용자 지정 함수에 다음 코드를 추가합니다. [create-custom-function](#create-custom-function) 섹션, 양식 필드를 다음으로 설정 `Required`.
 
