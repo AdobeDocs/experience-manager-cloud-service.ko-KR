@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: 5fd488a6d5272ac71208e5645facc04b3d9ac51a
 workflow-type: tm+mt
-source-wordcount: '2573'
-ht-degree: 14%
+source-wordcount: '1766'
+ht-degree: 9%
 
 ---
 
@@ -81,6 +81,7 @@ Cloud Manager에서 Brand Portal 테넌트를 활성화한 후 Admin Console에�
 Brand Portal 테넌트의 기본 URL은 다음과 같습니다. `https://<tenant-id>.brand-portal.adobe.com/`.
 
 여기서 테넌트 id는 IMS 조직입니다.
+
 
 Brand Portal URL을 잘 모를 경우 다음 단계를 수행하십시오.
 
@@ -188,15 +189,20 @@ Experience Manager Assets as a에서 Brand Portal을 활성화하는 자동화 �
 
 ## Adobe Developer 콘솔을 사용한 수동 구성 {#manual-configuration}
 
+>[!NOTE]
+>
+> 2024년 6월 이후부터는 새 JWT 자격 증명을 만들 수 없습니다. 앞으로 OAuth 자격 증명만 생성됩니다.
+> 더 보기 [OAuth 구성 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a).
+
 다음 섹션에서는 Experience Manager Assets as a를 수동으로 구성하는 방법을 설명합니다. [!DNL Cloud Service] Adobe Developer 콘솔을 사용하는 Brand Portal 사용.
 
 이전에는 Experience Manager Assets as a [!DNL Cloud Service] Brand Portal 테넌트의 인증을 위해 Adobe IMS(Identity Management Services) 계정 토큰을 조달하는 Adobe Developer 콘솔을 통해 Brand Portal으로 수동으로 구성되었습니다. Experience Manager Assets 및 Adobe Developer 콘솔 모두에서 구성이 필요합니다.
 
-1. Experience Manager Assets에서 IMS 계정을 만들고 공개 키(인증서)를 생성합니다.
+<!--1. In Experience Manager Assets, create an IMS account and generate a public key (certificate).-->
+<!--1. Under the project, configure an API using the public key to create a service account connection.
+1. Get the service account credentials and JSON Web Token (JWT) payload information.
+1. In Experience Manager Assets, configure the IMS account using the service account credentials and JWT payload.-->
 1. Adobe 개발자 콘솔에서 Brand Portal 테넌트(조직)에 대한 프로젝트를 만듭니다.
-1. 프로젝트에서 공개 키를 사용하여 API를 구성하여 서비스 계정 연결을 만듭니다.
-1. 서비스 계정 자격 증명과 JSON 웹 토큰(JWT) 페이로드 정보를 가져옵니다.
-1. Experience Manager Assets에서 서비스 계정 자격 증명과 JWT 페이로드를 사용하여 IMS 계정을 구성합니다.
 1. Experience Manager Assets에서 IMS 계정 및 Brand Portal 끝점(조직 URL)을 사용하여 Brand Portal 클라우드 서비스를 구성합니다.
 1. Experience Manager Assets에서 Brand Portal으로 자산을 게시하여 구성을 테스트합니다.
 
@@ -216,97 +222,104 @@ Brand Portal을 사용하여 Experience Manager Assets을 구성하려면 다음
 
 지정된 시퀀스에서 다음 단계를 수행하여 Brand Portal을 사용하여 Experience Manager Assets을 구성합니다.
 
-1. [공개 인증서 받기](#public-certificate)
-1. [서비스 계정(JWT) 연결 만들기](#createnewintegration)
-1. [IMS 계정 구성](#create-ims-account-configuration)
-1. [클라우드 서비스 구성](#configure-the-cloud-service)
+1. [Adobe Developer 콘솔에서 OAuth 자격 증명 구성](#config-oauth)
+1. [OAuth를 사용하여 새 Adobe IMS 통합 만들기](#create-ims-account-configuration)
+1. [클라우드 서비스 구성](#configure-cloud-service)
+   <!--1. [Obtain public certificate](#public-certificate)-->
+<!--1. [Create service account (JWT) connection](#createnewintegration) 
+1. [Configure IMS account](#create-ims-account-configuration)-->
 
-### IMS 구성 만들기 {#create-ims-configuration}
+<!--
+### Create IMS configuration {#create-ims-configuration}
 
-IMS 구성은 다음과 같이 Experience Manager Assets을 인증합니다. [!DNL Cloud Service] Brand Portal 테넌트가 있는 인스턴스입니다.
+The IMS configuration authenticates your Experience Manager Assets as a [!DNL Cloud Service] instance with the Brand Portal tenant. 
 
-IMS 구성에는 두 단계가 포함됩니다.
+IMS configuration includes two steps:
 
-* [공개 인증서 받기](#public-certificate)
-* [IMS 계정 구성](#create-ims-account-configuration)
+* [Obtain public certificate](#public-certificate) 
+* [Configure IMS account](#create-ims-account-configuration)
+-->
+<!--
 
-### 공개 인증서 받기 {#public-certificate}
+### Obtain public certificate {#public-certificate}
 
-공개 키(인증서)는 Adobe Developer 콘솔에서 프로필을 인증합니다.
+The public key (certificate) authenticates your profile on Adobe Developer Console.
 
-1. Experience Manager Assets에 로그인합니다.
-1. 다음에서 **도구** 패널, 다음으로 이동 **[!UICONTROL 보안]** > **[!UICONTROL Adobe IMS 구성]**.
-1. Adobe IMS 구성 페이지에서 **[!UICONTROL 만들기]**. 리디렉션 대상: **[!UICONTROL Adobe IMS 기술 계정 구성]** 페이지를 가리키도록 업데이트하는 중입니다. 기본적으로 **인증서** 탭이 열립니다.
-1. 선택 **[!UICONTROL Brand Portal Adobe]** 다음에서 **[!UICONTROL 클라우드 솔루션]** 드롭다운 목록입니다.
-1. 다음 항목 선택 **[!UICONTROL 새 인증서 만들기]** 확인란을 선택하고 **별칭** 공개 키. 별칭은 공개 키의 이름 역할을 합니다.
-1. **[!UICONTROL 인증서 만들기]**&#x200B;를 클릭합니다. 그런 다음 을 클릭합니다. **[!UICONTROL 확인]** 을 클릭하여 공개 키를 생성합니다.
+1. Login to Experience Manager Assets.
+1. From the **Tools** panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
+1. In Adobe IMS Configurations page, click **[!UICONTROL Create]**. It will redirect to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page. By default, the **Certificate** tab opens.
+1. Select **[!UICONTROL Adobe Brand Portal]** in the **[!UICONTROL Cloud Solution]** drop-down list.  
+1. Select the **[!UICONTROL Create new certificate]** check box and specify an **alias** for the public key. The alias serves as name of the public key. 
+1. Click **[!UICONTROL Create certificate]**. Then, click **[!UICONTROL OK]** to generate the public key.
 
-   ![인증서 만들기](assets/ims-config2.png)
+   ![Create Certificate](assets/ims-config2.png)
 
-1. 다음을 클릭합니다. **[!UICONTROL 공개 키 다운로드]** 을(를) 클릭하고 컴퓨터에 CRT(공개 키) 파일을 저장합니다.
+1. Click the **[!UICONTROL Download Public Key]** icon and save the public key (CRT) file on your machine.
 
-   공개 키는 나중에 Brand Portal 테넌트에 대한 API를 구성하고 Adobe Developer 콘솔에서 서비스 계정 자격 증명을 생성하는 데 사용됩니다.
+   The public key is used later to configure API for your Brand Portal tenant and generate service account credentials in Adobe Developer Console.  
 
-   ![인증서 다운로드](assets/ims-config3.png)
+   ![Download Certificate](assets/ims-config3.png)
 
-1. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+1. Click **[!UICONTROL Next]**.
 
-   다음에서 **계정** 탭에서 Adobe IMS 계정이 만들어지므로 Adobe Developer 콘솔에서 생성된 서비스 계정 자격 증명이 필요합니다. 우선은 이 페이지를 열어 두십시오.
+    In the **Account** tab, Adobe IMS account is created which requires the service account credentials that are generated in Adobe Developer Console. Keep this page open for now.
 
-   새 탭을 열고 [Adobe 개발자 콘솔에 서비스 계정(JWT) 연결을 만들어](#createnewintegration) IMS 계정을 구성하기 위한 자격 증명과 JWT 페이로드를 가져옵니다.
+    Open a new tab and [create a service account (JWT) connection in Adobe Developer Console](#createnewintegration) to get the credentials and JWT payload for configuring the IMS account. 
+-->
+<!--
 
-### 서비스 계정(JWT) 연결 만들기 {#createnewintegration}
+### Create service account (JWT) connection {#createnewintegration}
 
-Adobe Developer 콘솔에서 프로젝트 및 API는 Brand Portal 테넌트(조직) 수준에서 구성됩니다. API를 구성하면 서비스 계정(JWT) 연결이 만들어집니다. 키 쌍(개인 및 공개 키)을 생성하거나 공개 키를 업로드하여 API를 구성하는 두 가지 방법이 있습니다. Brand Portal과 함께 Experience Manager Assets을 구성하려면 Experience Manager Assets에서 공개 키(인증서)를 생성하고 공개 키를 업로드하여 Adobe Developer 콘솔에서 자격 증명을 만들어야 합니다. Experience Manager Assets에서 IMS 계정을 구성하는 데 이러한 자격 증명이 필요합니다. IMS 계정이 구성되면 Experience Manager Assets에서 Brand Portal 클라우드 서비스를 구성할 수 있습니다.
+In Adobe Developer Console, projects and APIs are configured at Brand Portal tenant (organization) level. Configuring an API creates a service account (JWT) connection. There are two methods to configure API, by generating a key pair (private and public keys) or by uploading a public key. To configure Experience Manager Assets with Brand Portal, you must generate a public key (certificate) in Experience Manager Assets and create credentials in Adobe Developer Console by uploading the public key. These credentials are required to configure the IMS account in Experience Manager Assets. Once the IMS account is configured, you can configure the Brand Portal cloud service in Experience Manager Assets.
 
-서비스 계정 자격 증명과 JWT 페이로드를 생성하려면 다음 단계를 수행합니다.
+Perform the following steps to generate the service account credentials and JWT payload:
 
-1. IMS 조직(Adobe Developer 테넌트)에 대한 시스템 관리자 권한으로 Brand Portal 콘솔에 로그인합니다. 기본 URL은 [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. Login to Adobe Developer Console with system administrator privileges on the IMS organization (Brand Portal tenant). The default URL is [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
-
-   >[!NOTE]
-   >
-   >오른쪽 위 모서리에 있는 드롭다운(조직) 목록에서 올바른 IMS 조직(Brand Portal 테넌트)을 선택했는지 확인합니다.
-
-1. **[!UICONTROL 새 프로젝트 만들기]**&#x200B;를 클릭합니다. 조직에 대해 시스템 생성 이름을 사용하는 빈 프로젝트가 만들어집니다.
-
-   **[!UICONTROL 프로젝트 편집]**&#x200B;을 클릭하여 **[!UICONTROL 프로젝트 제목]** 및 **[!UICONTROL 설명]**&#x200B;을 업데이트하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
-
-1. 다음에서 **[!UICONTROL 프로젝트 개요]** 탭을 클릭하고 **[!UICONTROL API 추가]**.
-
-1. 다음에서 **[!UICONTROL API 창 추가]**, 선택 **[!UICONTROL AEM Brand Portal]** 및 클릭 **[!UICONTROL 다음]**.
-
-   Experience Manager Brand Portal 서비스에 대한 액세스 권한이 있는지 확인합니다.
-
-1. 다음에서 **[!UICONTROL API 구성]** 창에서 다음을 클릭: **[!UICONTROL 공개 키 업로드]**. 그런 다음 을 클릭합니다. **[!UICONTROL 파일 선택]** 및에서 다운로드한 공개 키(.crt 파일)를 업로드합니다 [공개 인증서 받기](#public-certificate) 섹션.
-
-   **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
-
-   ![공개 키 업로드](assets/service-account3.png)
-
-1. 공개 키를 확인하고 **[!UICONTROL 다음]**.
-
-1. 선택 **[!UICONTROL Assets Brand Portal]** 을 기본 제품 프로필로 사용하고 을 클릭합니다. **[!UICONTROL 구성된 API 저장]**.
-
-   ![제품 프로필 선택](assets/service-account4.png)
-
-1. API가 구성되면 API 개요 페이지로 리디렉션됩니다. 아래의 왼쪽 탐색에서 **[!UICONTROL 자격 증명]**&#x200B;를 클릭하고 **[!UICONTROL 서비스 계정(JWT)]** 옵션을 선택합니다.
 
    >[!NOTE]
    >
-   >* 자격 증명을 보고 JWT 토큰 생성, 자격 증명 세부 정보 복사, 클라이언트 암호 검색 등과 같은 작업을 수행할 수 있습니다.
-   >* 현재 Adobe의 JWT(Developer Console Service Account) 자격 증명 유형만 지원됩니다. 를 사용하지 마십시오. `OAuth Server-to-Server` 4월 중순에 지원될 때까지 자격 증명 유형입니다. 자세한 내용: [Adobe Developer 콘솔에서 JWT 자격 증명 사용 중단](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
+   >Ensure that you have selected the correct IMS organization (Brand Portal tenant) from the drop-down (organization) list located at the upper-right corner.
 
-1. **[!UICONTROL 클라이언트 자격 증명]** 탭에서 **[!UICONTROL 클라이언트 ID]**&#x200B;를 복사합니다.
+1. Click **[!UICONTROL Create new project]**. A blank project with a system-generated name is created for your organization. 
 
-   **[!UICONTROL 클라이언트 암호 검색]**&#x200B;을 클릭하고 **[!UICONTROL 클라이언트 암호 키]**&#x200B;를 복사합니다.
+   Click **[!UICONTROL Edit project]** to update the **[!UICONTROL Project Title]** and **[!UICONTROL Description]**, and click **[!UICONTROL Save]**.
+   
+1. In the **[!UICONTROL Project overview]** tab, click **[!UICONTROL Add API]**.
 
-   ![서비스 계정 자격 증명](assets/service-account5.png)
+1. In the **[!UICONTROL Add an API window]**, select **[!UICONTROL AEM Brand Portal]** and click **[!UICONTROL Next]**. 
 
-1. 다음 위치로 이동 **[!UICONTROL JWT 생성]** 탭 및 복사 **[!UICONTROL JWT 페이로드]** 정보.
+   Ensure that you have access to the Experience Manager Brand Portal service.
 
-이제 클라이언트 ID(API 키), 클라이언트 암호 및 JWT 페이로드를 사용하여 다음을 수행할 수 있습니다 [ims 계정 구성](#create-ims-account-configuration) Experience Manager Assets.
+1. In the **[!UICONTROL Configure API]** window, click **[!UICONTROL Upload your public key]**. Then, click **[!UICONTROL Select a File]** and upload the public key (.crt file) that you have downloaded in the [obtain public certificate](#public-certificate) section. 
 
+   Click **[!UICONTROL Next]**.
+
+   ![Upload Public Key](assets/service-account3.png)
+
+1. Verify the public key and click **[!UICONTROL Next]**.
+
+1. Select **[!UICONTROL Assets Brand Portal]** as the default product profile and click **[!UICONTROL Save configured API]**. 
+
+   ![Select Product Profile](assets/service-account4.png)
+
+1. Once the API is configured, you are redirected to the API overview page. From the left navigation under **[!UICONTROL Credentials]**, click the **[!UICONTROL Service Account (JWT)]** option.
+
+   >[!NOTE] 
+   >
+   >* You can view the credentials and perform actions such as generate JWT tokens, copy credential details, retrieve client secret, and so on.
+   >* Currently, only the Adobe's Developer Console Service Account (JWT) credential type is supported. Do not use the `OAuth Server-to-Server` credential type until it is supported in mid-April. Read more at [JWT Credentials Deprecation in Adobe Developer Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
+
+1. From the **[!UICONTROL Client Credentials]** tab, copy the **[!UICONTROL client ID]**. 
+
+   Click **[!UICONTROL Retrieve Client Secret]** and copy the **[!UICONTROL client secret]**.
+
+   ![Service Account Credentials](assets/service-account5.png)
+
+1. Navigate to the **[!UICONTROL Generate JWT]** tab and copy the **[!UICONTROL JWT Payload]** information. 
+
+You can now use the client ID (API key), client secret, and JWT payload to [configure the IMS account](#create-ims-account-configuration) in Experience Manager Assets.
+-->
 <!--
 1. Click **[!UICONTROL Create Integration]**.
 
@@ -344,43 +357,52 @@ Adobe Developer 콘솔에서 프로젝트 및 API는 Brand Portal 테넌트(조�
 
 -->
 
-### IMS 계정 구성 {#create-ims-account-configuration}
+### Adobe Developer 콘솔에서 OAuth 자격 증명 구성 {#config-oauth}
 
-다음 절차를 수행했는지 확인하십시오.
+[Adobe Developer 콘솔에서 OAuth 자격 증명 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#credentials-in-the-developer-console) Brand Portal API를 선택합니다.
 
-* [공개 인증서 받기](#public-certificate)
-* [서비스 계정(JWT) 연결 만들기](#createnewintegration)
+### OAuth를 사용하여 새 Adobe IMS 통합 만들기 {#create-ims-account-configuration}
 
-IMS 계정을 구성하려면 다음 단계를 수행하십시오.
+[OAuth를 사용하여 새 Adobe IMS 통합 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration) 그리고 클라우드 솔루션 아래의 드롭다운에서 Brand Portal 를 선택합니다.
 
-1. IMS 구성을 열고 로 이동합니다. **[!UICONTROL 계정]** 탭. 그동안 페이지를 열어 두었습니다. [공개 인증서 받기](#public-certificate).
+<!--
+Ensure that you have performed the following steps:
 
-1. IMS 계정에 대한 **[!UICONTROL 제목]**&#x200B;을 지정합니다.
+* [Obtain public certificate](#public-certificate)
+* [Create service account (JWT) connection](#createnewintegration)
+-->
 
-   다음에서 **[!UICONTROL 인증 서버]** 필드에서 URL을 지정합니다. [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)
+<!--1. Open the IMS Configuration and navigate to the **[!UICONTROL Account]** tab. Keep the page open while [obtaining the public certificate](#public-certificate).
 
-   에서 클라이언트 ID 지정 **[!UICONTROL API 키]** 필드, **[!UICONTROL 클라이언트 암호]**, 및 **[!UICONTROL 페이로드]** (JWT 페이로드) [서비스 계정(JWT) 연결 생성](#createnewintegration).
+1. Specify a **[!UICONTROL Title]** for the IMS account.
 
-   **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
+   In the **[!UICONTROL Authorization Server]** field, specify the URL: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)  
+-->
+<!--
+1. Complete the configuration based on details from the [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/). Click **[!UICONTROL Create]**.
+-->
+<!--Specify client ID in the **[!UICONTROL API key]** field, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]** (JWT payload) that you have copied while [creating the service account (JWT) connection](#createnewintegration).
 
-   IMS 계정이 구성되었습니다.
+   The IMS account is configured. 
 
-   ![IMS 계정 구성](assets/create-new-integration6.png)
+   ![IMS Account configuration](assets/create-new-integration6.png)
 
+ <!--  
+1. Select the IMS account configuration and click **[!UICONTROL Check Health]**.
 
-1. IMS 계정 구성을 선택하고 **[!UICONTROL 상태 확인]**.
+   Click **[!UICONTROL Check]** in the dialog box. On successful configuration, a message appears that the *Token is retrieved successfully*.
 
-   대화 상자에서 **[!UICONTROL 확인]**&#x200B;을 클릭합니다. 구성이 성공하면 *토큰이 성공적으로 검색되었습니다.*&#x200B;라는 메시지가 나타납니다.
-
-   ![Adobe IMS 구성 상태 확인](assets/create-new-integration5.png)
-
+   ![Adobe IMS Configurations Check Health.](assets/create-new-integration5.png)
+-->
+<!--
 >[!CAUTION]
 >
->IMS 구성은 하나만 있어야 합니다.
+>You must have only one IMS configuration.
 >
->IMS 구성이 상태 검사를 통과하는지 확인합니다. 구성이 상태 검사를 통과하지 않으면 구성이 잘못된 것입니다. 이 구성을 삭제하고 다른 유효한 구성을 만들어야 합니다.
+>Ensure that the IMS configuration passes the health check. If the configuration does not pass the health check, it is invalid. You must delete it and create another valid configuration.
+-->
 
-### 클라우드 서비스 구성 {#configure-the-cloud-service}
+### 클라우드 서비스 구성 {#configure-cloud-service}
 
 Brand Portal 클라우드 서비스를 구성하려면 다음 단계를 수행하십시오.
 
@@ -405,7 +427,7 @@ Brand Portal 클라우드 서비스를 구성하려면 다음 단계를 수행�
 이제 분배 에이전트를 확인하고 자산을 Brand Portal에 게시하여 구성을 테스트할 수 있습니다.
 
 **허용 목록에 추가하다 보안 미리 보기가 활성화된 경우 SPS의 이그레스 IP**
-에서 Dynamic Media-Scene7을 사용하는 경우 [보안 미리 보기 활성화됨](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) (회사의 경우) Scene7 회사 관리자에게 문의하십시오 [허용 목록에 추가하다 공개 이그레스 IP](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) SPS(Scene7 Publishing System) 플래시 UI를 사용하는 각 지역의 경우.
+에서 Dynamic Media-Scene7을 사용하는 경우 [보안 미리 보기 활성화됨](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) 회사의 경우 Scene7 회사 관리자에게 문의하십시오 [허용 목록에 추가하다 공개 이그레스 IP](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) SPS(Scene7 Publishing System) 플래시 UI를 사용하는 각 지역의 경우.
 이그레스 IP는 다음과 같습니다.
 
 | **지역** | **이그레스 IP** |
