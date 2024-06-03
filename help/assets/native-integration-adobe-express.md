@@ -2,7 +2,7 @@
 title: Adobe Express과 AEM Assets 기본 통합
 description: Adobe Express과 AEM Assets 기본 통합을 사용하면 Adobe Express 사용자 인터페이스 내에서 AEM Assets에 저장된 에셋에 직접 액세스할 수 있습니다.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 9044d5cefe7064a015c18c988e29b8c2e8088bae
+source-git-commit: c6cde0a3f5a1513f8158c654167ec0332e4c42a7
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 21%
@@ -58,7 +58,7 @@ Express 캔버스에 해당 수정 사항을 통합한 후에 AEM Assets 저장�
 
 4. 아래의 텍스트 영역을 클릭합니다. **대상 폴더** 위치를 선택하고 에셋을 저장합니다.
 
-   ![AEM에 자산 저장](/help/assets/assets/page-selection-and-destination-folder.png)
+   ![AEM에 자산 저장](/help/assets/assets/page-selection-and-destination-folder.svg)
 
 5. 선택 사항: 다음을 사용하여 업로드에 대한 캠페인 메타데이터를 추가할 수 있습니다. **프로젝트 또는 캠페인 이름** 필드. 기존 이름을 사용하거나 새 이름을 만들 수 있습니다. 업로드할 여러 프로젝트 또는 캠페인 이름을 정의할 수 있습니다. 이름을 등록하려면 이름을 입력하고 enter 키를 누릅니다.
 업로드한 에셋에 대해 향상된 Adobe 경험을 만들 뿐만 아니라 나머지 필드에 값을 지정하는 것이 좋습니다.
@@ -82,5 +82,5 @@ c) 배경이 투명한 비디오(알파 채널)는 지원되지 않습니다.
 
 3. MP4 비디오 내보내기:
 
-   a) 지원되는 최대 파일 크기는 200MB입니다. 이 제한이 초과되면 아래 그림과 같이 제안 작업이 포함된 경고 메시지가 표시됩니다
-   ![경고 및 해결 방법](/help/assets/assets/alert-with-workaround.png).
+   a) 지원되는 최대 파일 크기는 200MB입니다. 이 제한이 초과되면 아래 그림과 같이 제안 작업이 포함된 경고 메시지가 표시됩니다.
+   ![경고 및 해결 방법](/help/assets/assets/alert-with-workaround.png)
