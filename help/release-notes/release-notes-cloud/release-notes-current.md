@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: b6061690fa278ccb883656cefd065d06ab924499
+source-git-commit: f8fc51051393ef154e02391843fe1e73e6194e6f
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 23%
+source-wordcount: '1847'
+ht-degree: 30%
 
 ---
 
@@ -211,10 +211,12 @@ AEM 6.5와 유사하게 Apache/Dispatcher는 게시 저장소의 특정 위치�
 
 이제 Adobe 관리 CDN은 을 지원합니다. [ESI(Edge Side Includes)](/help/implementing/dispatcher/edge-side-includes.md), 에지 수준의 동적 웹 콘텐츠 어셈블리에 대한 마크업 언어입니다. ESI 스니펫을 포함하면 더 높은 TTL로 CDN의 전체 HTML 페이지를 캐시하는 동시에 더 높은 케이던스 업데이트(더 낮은 TTL)가 필요한 더 작은 섹션을 원본에서 더 자주 가져올 수 있습니다. <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
-#### RUM(Real Use Monitoring) 데이터 서비스(얼리 어답터 프로그램)
+#### RUM(Real User Monitoring) 데이터 서비스(얼리 어답터 프로그램)
 
-* **이제 RUM(Real Use Monitoring) 데이터 서비스가 GA(/help/implementing/cloud-manager/content-requests.md#real-use-monitoring-for-aem-as-a-cloud-service)되었습니다.** AEM as a Cloud Service으로 클라이언트측 데이터 수집 활성화.
-클라이언트측 컬렉션인 실제 사용 모니터링 서비스 는 상호 작용을 보다 정확하게 반영하여 웹 사이트 참여를 안정적으로 측정합니다. 이를 통해 페이지 트래픽 및 성능에 대한 고급 통찰력을 보유한 고객이 사용할 수 있습니다. 페이지 성능에 대해 자세히 알아보고 향상시킬 수 있는 통찰력을 얻을 수 있는 좋은 기회입니다.
+* **[실제 사용자 모니터링(RUM) 데이터 서비스](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**를 활용하여 AEM as a Cloud Service에 대한 클라이언트측 컬렉션을 활성화할 수 있습니다.
+실제 사용자 모니터링(RUM) 데이터 서비스는 사용자 상호 작용을 보다 정확하게 반영하여 웹 사이트 참여에 대한 안정적인 측정을 보장합니다. 이를 통해 페이지 성능에 대한 고급 인사이트를 얻을 수 있습니다. 이는 Adobe가 관리하는 CDN 또는 Adobe가 관리하지 않는 CDN을 사용하는 고객 모두에게 유용합니다. 또한 Adobe가 관리하지 않는 CDN을 사용하는 고객의 경우 이제 자동화된 트래픽 보고를 활성화할 수 있으므로 트래픽 보고서를 Adobe와 공유할 필요가 없습니다.
+
+  이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소를 통해 RUM을 활성화하고자 하는 각 환경에 대한 도메인 이름과 함께 `aemcs-rum-adopter@adobe.com`으로 이메일을 보내 주십시오. 그러면 Adobe 제품 팀에서 실제 사용자 모니터링(RUM) 데이터 서비스를 활성화합니다.
 
 ## [!DNL Experience Manager] 안내서 {#guides}
 
