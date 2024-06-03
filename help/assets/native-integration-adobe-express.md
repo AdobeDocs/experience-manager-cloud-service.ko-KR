@@ -2,10 +2,10 @@
 title: Adobe Express과 AEM Assets 기본 통합
 description: Adobe Express과 AEM Assets 기본 통합을 사용하면 Adobe Express 사용자 인터페이스 내에서 AEM Assets에 저장된 에셋에 직접 액세스할 수 있습니다.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 69d890eaae30468db89b9aff975a2a421f53fcff
+source-git-commit: 9044d5cefe7064a015c18c988e29b8c2e8088bae
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 22%
+source-wordcount: '598'
+ht-degree: 21%
 
 ---
 
@@ -65,7 +65,7 @@ Express 캔버스에 해당 수정 사항을 통합한 후에 AEM Assets 저장�
 
 6. 마찬가지로 다음에 대한 값을 정의합니다 **[!UICONTROL 키워드]** 및 **[!UICONTROL 채널]** 필드.
 
-7. **[!UICONTROL 업로드]**&#x200B;를 클릭하여 자산을 AEM Assets에 업로드합니다.
+7. 클릭 **[!UICONTROL 업로드]** AEM Assets에 에셋을 업로드합니다.
 
 
 
