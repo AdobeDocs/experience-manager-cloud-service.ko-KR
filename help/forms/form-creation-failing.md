@@ -3,14 +3,14 @@ title: 양식 생성 오류를 해결하는 방법
 description: AEM Forms as a Cloud Service 환경에서 양식 생성 실패 문제를 해결합니다.
 feature: Adaptive Forms, Troubleshooting
 role: User
-source-git-commit: 5e7cd7015d68cc634fcf6a99dd552289abbaedcf
+source-git-commit: 23491130b44147753c5b98f316be5a9e5937afea
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 1%
+source-wordcount: '183'
+ht-degree: 0%
 
 ---
 
-# 문제 {#form-creation-fails}
+# 양식 게시 중 문제{#form-creation-fails}
 
 사용자가 AEM Forms as a Cloud Service 버전으로 업데이트한 후 `2024.5.16461`:
 
