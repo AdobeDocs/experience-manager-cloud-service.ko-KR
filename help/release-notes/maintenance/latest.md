@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 558babc0124a8ee8c1337b91c5ef016ed238c935
+source-git-commit: 624ba716cb2ec2a45b0ed70516d0b2ad1db94912
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 37%
+source-wordcount: '353'
+ht-degree: 36%
 
 ---
 
@@ -31,11 +31,13 @@ ht-degree: 37%
 
 ### 해결된 문제 {#fixed-issues-16544}
 
-* DXML-17171: AEM Guides: 15KB를 초과하는 주제의 복사 및 붙여넣기 작업이 예기치 않은 오류로 실패합니다.
-* DXML-17088: AEM Guides: 문서 상태를 변경하는 기능 **파일 속성** 패널이 제대로 작동하지 않고 *초안* 주.
-* DXML-16931: AEM Guides: 항목의 연결된 이미지가 버전 생성 후 기준선에 표시되지 않습니다.
-* DXML-16896: AEM Guides: 재사용 가능한 콘텐츠 패널에서 **사용자 환경 설정** 다음 기준으로 파일을 보도록 설정됨: **파일 이름**.
 * GRANITE-51375: 중간 경로를 지정하지 않으면 idp-sync에서 NPE가 발생합니다.
+* GUIDES-17171: 15KB를 초과하는 항목의 복사 및 붙여넣기 작업이 예기치 않은 오류로 실패합니다.
+* GUIDES-17088: 문서 상태를 변경하는 기능 **파일 속성** 패널이 제대로 작동하지 않고 *초안* 주.
+* GUIDES-16931: 항목의 연결된 이미지가 버전을 만든 후 기준선에 표시되지 않습니다.
+* GUIDES-16896: 재사용 가능한 콘텐츠 패널은 **사용자 환경 설정** 다음 기준으로 파일을 보도록 설정됨: **파일 이름**.
+
+Experience Manager 안내서에서 수정된 새로운 기능 및 향상된 기능에 대한 자세한 내용은 [Experience Manager 가이드 릴리스 로드맵](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### 알려진 문제 {#known-issues-16544}
 
