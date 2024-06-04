@@ -3,10 +3,10 @@ title: 에서 에셋을 검색하고 검색하는 방법 알아보기 [!DNL Asse
 description: AEM Assets 보기에서 에셋을 검색하고 검색하는 방법을 알아봅니다. 강력한 검색 기능을 통해 적절한 에셋을 빠르게 찾고 콘텐츠 속도를 높일 수 있습니다.
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
-source-git-commit: e706ee7228aeb08c99567f607a3435d9f687ef34
+source-git-commit: 4313f2bdfe78457204e26069f3af4bda3f5902e7
 workflow-type: tm+mt
-source-wordcount: '1852'
-ht-degree: 91%
+source-wordcount: '1908'
+ht-degree: 92%
 
 ---
 
@@ -56,14 +56,14 @@ ht-degree: 91%
 
 **필요한 권한:**  `Can Edit`, `Owner` 또는 관리자.
 
-에셋 보기를 사용하면 사용자 인터페이스에 사용자 지정 필터를 추가할 수도 있습니다. 그런 다음 [표준 필터](#refine-search-results) 외에 이러한 맞춤형 필터를 적용하여 검색 결과를 구체화할 수 있습니다.
+에셋 보기를 사용하면 사용자 인터페이스에 사용자 지정 필터를 추가할 수도 있습니다. 그런 다음 [표준 필터](#refine-search-results) 외에 이러한 사용자 정의 필터를 적용하여 검색 결과를 구체화할 수 있습니다.
 
 에셋 보기는 다음과 같은 사용자 지정 필터를 제공합니다.
 
 <table>
     <tbody>
      <tr>
-      <th><strong>맞춤형 필터 이름</strong></th>
+      <th><strong>사용자 정의 필터 이름</strong></th>
       <th><strong>설명</strong></th>
      </tr>
      <tr>
@@ -94,29 +94,29 @@ ht-degree: 91%
 
    -->
 
-### 맞춤형 필터 추가 {#add-custom-filters}
+### 사용자 정의 필터 추가 {#add-custom-filters}
 
-맞춤형 필터를 추가하려면:
+사용자 정의 필터를 추가하려면:
 
 1. **[!UICONTROL 필터]**&#x200B;를 클릭합니다.
 
-1. **[!UICONTROL 맞춤형 필터]** 섹션에서 **[!UICONTROL 편집]** 또는 **[!UICONTROL 필터 추가]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 사용자 정의 필터]** 섹션에서 **[!UICONTROL 편집]** 또는 **[!UICONTROL 필터 추가]**&#x200B;를 클릭합니다.
 
-   ![맞춤형 필터 추가](assets/add-custom-filters.png)
+   ![사용자 정의 필터 추가](assets/add-custom-filters.png)
 
-1. **[!UICONTROL 맞춤형 필터 관리]** 대화 상자의 기존 필터 목록에서 추가해야 하는 필터를 선택합니다. **[!UICONTROL 맞춤형 필터]**&#x200B;를 선택하여 모든 필터를 선택합니다.
+1. **[!UICONTROL 사용자 정의 필터 관리]** 대화 상자의 기존 필터 목록에서 추가해야 하는 필터를 선택합니다. **[!UICONTROL 사용자 정의 필터]**&#x200B;를 선택하여 모든 필터를 선택합니다.
 
 1. **[!UICONTROL 확인]**&#x200B;을 클릭하여 사용자 인터페이스에 필터를 추가합니다.
 
-### 맞춤형 필터 제거 {#remove-custom-filters}
+### 사용자 정의 필터 제거 {#remove-custom-filters}
 
-맞춤형 필터를 제거하려면:
+사용자 정의 필터를 제거하려면:
 
 1. **[!UICONTROL 필터]**&#x200B;를 클릭합니다.
 
-1. **[!UICONTROL 맞춤형 필터]** 섹션에서 **[!UICONTROL 편집]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL 사용자 정의 필터]** 섹션에서 **[!UICONTROL 편집]**&#x200B;을 클릭합니다.
 
-1. **[!UICONTROL 맞춤형 필터 관리]** 대화 상자의 기존 필터 목록에서 제거해야 하는 필터를 선택 취소합니다.
+1. **[!UICONTROL 사용자 정의 필터 관리]** 대화 상자의 기존 필터 목록에서 제거해야 하는 필터를 선택 취소합니다.
 
 1. **[!UICONTROL 확인]**&#x200B;을 클릭하여 사용자 인터페이스에서 필터를 제거합니다.
 
@@ -311,15 +311,13 @@ Experience Manager Assets에서 상황별 검색에 액세스하는 방법:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428407)
 
-<!--
-### Disable Contextual Search {#disable-contextual-search}
+### 상황별 검색 비활성화 {#disable-contextual-search}
 
-Administrators also have the option to disable Contextual Search for users in your organization. To do so, execute the following steps:
+관리자는 조직 내 사용자에 대해 상황별 검색을 비활성화할 수도 있습니다. 이렇게 하려면 다음 단계를 실행합니다.
 
-1. Navigate to **[!UICONTROL Settings]** > **[!UICONTROL General Settings]**.
+1. **[!UICONTROL 설정]** > **[!UICONTROL 일반 설정]**&#x200B;으로 이동합니다.
 
-1. In the [!UICONTROL Contextual Search] section, turn off the **[!UICONTROL Enable Contextual Search for your organization]** toggle to disable the Contextual Search feature for all users in your organization.  
--->
+1. [!UICONTROL 상황별 검색] 섹션에서 **[!UICONTROL 조직에 대한 상황별 검색 활성화]** 토글을 꺼서 조직의 모든 사용자에 대한 상황별 검색 기능을 비활성화합니다.
 
 ### 상황별 검색 피드백 {#contextual-search-feedback}
 
