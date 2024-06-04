@@ -394,7 +394,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ### 디버깅 고려 사항 {#debugging-considerations}
 
-예상되는 전용 IP 주소에 트래픽이 실제로 송신되는지 확인하려면 가능한 경우 대상 서비스의 로그를 확인하십시오. 그렇지 않으면 와 같은 디버깅 서비스를 호출하는 것이 유용할 수 있습니다. [https://ifconfig.me/ip](https://ifconfig.me/ip)호출 IP 주소를 반환합니다.
+예상되는 전용 IP 주소에 트래픽이 실제로 송신되는지 확인하려면 가능한 경우 대상 서비스의 로그를 확인하십시오. 그렇지 않으면 [https://ifconfig.me/ip](https://ifconfig.me/ip)와 같이 호출 IP 주소를 반환하는 디버깅 서비스를 호출하는 것이 유용할 수 있습니다.
 
 ## Virtual Private Network(VPN) {#vpn}
 
