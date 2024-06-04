@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5247a06f15a3edd34a419f9d64aa0590b43c1612
+source-git-commit: fae92c9a41d866fd89ffb6fa10191fae4033037c
 workflow-type: tm+mt
-source-wordcount: '1763'
-ht-degree: 23%
+source-wordcount: '1865'
+ht-degree: 22%
 
 ---
 
@@ -218,7 +218,12 @@ AEM 6.5와 유사하게 Apache/Dispatcher는 게시 저장소의 특정 위치�
 
 ## [!DNL Experience Manager] 안내서 {#guides}
 
-Adobe Experience Manager Guides 최신 릴리스의 새로운 기능 및 향상된 기능의 전체 목록을 확인할 수 있습니다 [여기](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
+* **주제 또는 해당 요소를 경험 조각에 게시**
+이제 Experience Manager 안내서를 사용하여 주제 또는 해당 요소를 경험 조각에 게시할 수 있습니다. 경험 조각 은 콘텐츠와 레이아웃을 모두 통합하는 모듈식 콘텐츠 단위입니다.  경험 조각 은 중요한 역할을 하며 일관되고 매력적인 경험을 만드는 데 도움이 될 수 있습니다.
+* **주제 에셋 메타데이터를 기본 PDF 출력에 전달하는 기능**
+기본 PDF 출력을 생성하는 동안 주제 에셋 메타데이터를 추가할 수 있습니다. 이 기능을 사용하면 주제 제목 및 작성자와 같은 다양한 주제에 대한 특정 메타데이터를 주제 페이지 머리글과 바닥글에 추가할 수 있습니다.
+
+릴리스에서 수정된 새로운 기능 및 향상된 기능에 대한 자세한 내용은 [Experience Manager 가이드 릴리스 로드맵](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
