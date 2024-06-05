@@ -3,10 +3,11 @@ title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2024.5.0 릴
 description: AEM as a Cloud Service의 Cloud Manager 2024.5.0 릴리스 정보입니다.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 3bab3e77dcc8ffbc3e8891557cbe09de707d64c5
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '627'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -21,12 +22,12 @@ ht-degree: 90%
 
 ## 릴리스 일자 {#release-date}
 
-AEM as a Cloud Service의 Cloud Manager 2024.5.0 릴리스 날짜는 2024년 5월 9일입니다. 다음 릴리스는 2024년 6월 6일에 예정되어 있습니다.
+AEM as a Cloud Service의 Cloud Manager 릴리스 2024.5.0 릴리스 일자는 2024년 5월 9일입니다. 다음 릴리스는 2024년 6월 6일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
-* 다음 [라이선스 대시보드](/help/implementing/cloud-manager/license-dashboard.md) 이제 왼쪽의 개별 진입점을 통해 액세스할 수 있습니다 [탐색.](/help/implementing/cloud-manager/navigation.md)
-* 개발 환경 프로비저닝이 실패하면 Cloud Manager UI에서 피드백을 제공합니다.
+* 이제 왼쪽 [탐색](/help/implementing/cloud-manager/navigation.md) 메뉴의 별도 진입점을 통해 [라이선스 대시보드](/help/implementing/cloud-manager/license-dashboard.md)에 액세스할 수 있습니다.
+* 이제 개발 환경 프로비저닝이 실패하면 Cloud Manager UI에서 피드백을 제공합니다.
 
 ## 얼리 어답터 프로그램 {#early-adoption}
 

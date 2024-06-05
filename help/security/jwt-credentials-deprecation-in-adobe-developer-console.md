@@ -2,7 +2,9 @@
 title: Adobe Developer Console에서 JWT 자격 증명 사용 중단
 description: AEM의 Adobe Developer Console에서 JWT 자격 증명 사용 중단이 미치는 영향에 대해 알아봅니다.
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
-source-git-commit: f183e1999e29ee7f25f2d427d0b2273d244e4632
+feature: Security
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 93%

@@ -2,10 +2,12 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.5.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.5.0 릴리스 정보입니다.'
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: fe19e99baa921247f86542c6643c1faf837e7d91
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 73%
+source-wordcount: '800'
+ht-degree: 67%
 
 ---
 
@@ -81,7 +83,7 @@ Experience Manager Assets는 Adobe Sensei AI 기능을 사용하여 이제 [이�
 
 * 복제 에이전트 관리 화면의 &quot;트리 추가&quot; 옵션 **배포 탭**&#x200B;이전에 더 이상 사용되지 않는 것으로 발표되었던 는 2022년 6월 20일 또는 그 이후에 곧 제거되었습니다. 콘텐츠 트리 계층이 있는 패키지는 대신 [게시 관리](/help/operations/replication.md#manage-publication) 또는 [콘텐츠 트리 게시 워크플로](/help/operations/replication.md#publish-content-tree-workflow)를 사용하여 복제해야 합니다.
 
-* 10MB 이상의 콘텐츠 패키지(속성이 있는 노드, 바이너리를 포함하지 않음)를 배포하기 위해 복제 에이전트 관리 화면 또는 복제 API를 사용하는 방법은 더 이상 사용되지 않으며 2022년 9월 12일 또는 그 이후에 곧 시행됩니다. 대신 이러한 대용량 콘텐츠 패키지를 복제하려면 [게시 관리](/help/operations/replication.md#manage-publication) 또는 [콘텐츠 트리 게시 워크플로](/help/operations/replication.md#publish-content-tree-workflow)를 사용해야 합니다. 7월에는 이러한 대용량 콘텐츠 패키지를 복제하려는 경우 복제 에이전트 관리 화면의 **복제 탭**&#x200B;에 경고 메시지가 표시되며, 이는 복제 API를 사용하여 이러한 대형 콘텐츠 패키지를 복제할 때마다 AEM 오류 로그에도 표시됩니다. 9월에 경고가 오류로 대체되었습니다. 그에 따라 프로세스를 조정합니다.
+* 10MB 이상의 콘텐츠 패키지(속성이 있는 노드, 바이너리를 포함하지 않음)를 배포하기 위해 복제 에이전트 관리 화면 또는 복제 API를 사용하는 방법은 더 이상 사용되지 않으며 2022년 9월 12일 또는 그 이후에 곧 시행됩니다. 대신 이러한 대용량 콘텐츠 패키지를 복제하려면 [게시 관리](/help/operations/replication.md#manage-publication) 또는 [콘텐츠 트리 게시 워크플로](/help/operations/replication.md#publish-content-tree-workflow)를 사용해야 합니다. 7월에는 복제 에이전트 관리 화면에 경고 메시지가 나타납니다. **배포 탭** 이러한 대용량 콘텐츠 패키지를 복제하려는 경우 복제 API를 사용하여 이러한 대형 콘텐츠 패키지를 복제할 때마다 AEM 오류 로그에도 복제됩니다. 9월에 경고가 오류로 대체되었습니다. 그에 따라 프로세스를 조정합니다.
 
 ### [!DNL Experience Manager] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-foundation}
 

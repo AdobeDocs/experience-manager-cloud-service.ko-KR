@@ -2,7 +2,10 @@
 title: 검색
 description: 포괄적인 검색으로 신속하게 콘텐츠 찾기
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 84%

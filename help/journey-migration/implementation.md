@@ -2,7 +2,9 @@
 title: 구현 단계
 description: 코드 및 콘텐츠를 클라우드로 마이그레이션할 준비가 되었는지 확인
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2282'
 ht-degree: 9%
@@ -175,7 +177,7 @@ One more important datapoint is the amount of time it takes to complete the [use
 
 다음 표는 일반적인 마이그레이션 계획을 보여 줍니다.
 
-| 마이그레이션 반복 | 시작 날짜 | 예상 종료 일자 | 종속성 | 예상 기간(일) | 추가 세부 정보/작업 항목 |
+| 마이그레이션 반복 | 시작 일자 | 예상 종료 일자 | 종속성 | 예상 기간(일) | 추가 세부 정보/작업 항목 |
 |---|---|---|---|---|---|
 | PRDCLONE-AUTHOR-INITIAL-USRMAP-CSSTAGE-AUTHOR |   |   |   |   |   |
 | PRDCLONE-PUBLISH-TOPUP-CSSTAGE-AUTHOR |   |   |   |   |   |

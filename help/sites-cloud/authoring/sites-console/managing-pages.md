@@ -1,13 +1,16 @@
 ---
 title: 페이지 관리
 description: 이동, 복사 및 삭제를 포함하여 AEM에서 웹 사이트의 페이지를 관리하는 방법에 대해 알아봅니다.
-source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
+exl-id: 355b60c5-a82e-4bbb-98ea-bfcc0126b7fd
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 66%
 
 ---
-
 
 # 페이지 관리 {#managing-pages}
 

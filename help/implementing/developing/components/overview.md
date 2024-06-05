@@ -2,7 +2,9 @@
 title: 구성 요소 개요
 description: 구성 요소는 웹 사이트에 콘텐츠를 표시할 특정 기능을 실현하는 모듈식 단위입니다.
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 100%

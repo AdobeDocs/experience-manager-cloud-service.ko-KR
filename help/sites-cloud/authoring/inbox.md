@@ -2,7 +2,10 @@
 title: 받은 편지함
 description: 받은 편지함에 도착하는 알림을 사용하여 작업을 관리하는 방법에 대해 알아봅니다.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 90%

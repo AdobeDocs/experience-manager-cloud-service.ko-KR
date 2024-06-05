@@ -1,13 +1,15 @@
 ---
 title: 범용 편집기용 SecurBank 샘플 앱
 description: 콘텐츠 제작 시간을 단축할 수 있는 범용 편집기의 강력한 기능, 유연성 및 유용성을 선보이도록 설계된 SecurBank 앱을 사용하여 실습 경험을 갖춘 범용 편집기에 대해 알아보십시오.
-source-git-commit: 4b7612f423e4e728911920793e9e0a03757c7c9d
+exl-id: 97e1395f-b51e-4cee-b1d0-2466a08f96af
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
 
 ---
-
 
 # 범용 편집기용 SecurBank 샘플 앱 {#securbank}
 

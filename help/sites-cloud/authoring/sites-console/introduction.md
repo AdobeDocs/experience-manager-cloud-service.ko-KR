@@ -1,15 +1,18 @@
 ---
-title: 사이트 콘솔
+title: Sites 콘솔
 description: 사이트 콘솔을 사용하여 AEM 페이지를 관리하고 구성하는 방법에 대해 알아봅니다.
-source-git-commit: 91ce6a0c880436327f4dd333a2eb3d36a4e89a4d
+exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1628'
 ht-degree: 46%
 
 ---
 
-
-# 사이트 콘솔 {#sites-console}
+# Sites 콘솔 {#sites-console}
 
 사용 방법 알아보기 **사이트** 콘솔을 사용하여 AEM 페이지를 관리하고 구성합니다.
 

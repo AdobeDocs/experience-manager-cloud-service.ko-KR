@@ -2,10 +2,12 @@
 title: AEM용 SPA 개발
 description: 이 문서에서는 프론트엔드 개발자에게 AEM용 SPA 개발을 의뢰할 때 고려해야 할 중요한 질문을 제공합니다. 또한 개발된 SPA을 AEM에 배포할 때 SPA에 대한 AEM 아키텍처에 대한 개요를 제공합니다.
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2035'
-ht-degree: 12%
+source-wordcount: '2028'
+ht-degree: 8%
 
 ---
 
@@ -19,8 +21,8 @@ SPA(단일 페이지 애플리케이션)는 웹 사이트 사용자에게 적합
 
 AEM을 통해 단일 페이지 애플리케이션을 개발하면 프론트엔드 개발자가 SPA를 제작하는 도중 표준 모범 사례를 준수하는 것으로 간주됩니다. 프론트엔드 개발자로서 이러한 일반적인 모범 사례와 몇 가지 AEM 관련 원칙을 따르는 경우 SPA은 [AEM 및 컨텐츠 작성 기능](introduction.md#content-editing-experience-with-spa).
 
-* **[이동성](#portability)** - 모든 구성 요소와 마찬가지로 구성 요소는 최대한 이동할 수 있도록 빌드해야 합니다. SPA는 이동 및 재사용할 수 있는 구성 요소로 빌드해야 합니다.
-* **[AEM 드라이브 사이트 구조](#aem-drives-site-structure)** - 프론트엔드 개발자는 구성 요소를 만들고 내부 구조를 소유하지만, AEM을 사용하여 사이트의 콘텐츠 구조를 정의합니다.
+* **[이동성](#portability)** - 모든 구성 요소와 마찬가지로 구성 요소를 가능한 한 휴대용으로 빌드해야 합니다. SPA는 이동 및 재사용할 수 있는 구성 요소로 빌드해야 합니다.
+* **[AEM 실행 사이트 구조](#aem-drives-site-structure)** - 프론트엔드 개발자는 구성 요소를 만들고 내부 구조를 가지고 있지만, AEM을 사용하여 사이트의 콘텐츠 구조를 정의할 수 있습니다.
 * **[동적 렌더링](#dynamic-rendering)** - 모든 렌더링은 동적이어야 합니다.
 * **[동적 라우팅](#dynamic-routing)** - SPA는 라우팅을 담당하고 이에 따라 AEM은 라우팅을 수신하고 가져옵니다. 모든 라우팅 또한 동적이어야 합니다.
 
@@ -162,7 +164,7 @@ AEM에서 작업할 수 있도록 기존 SPA을 준비하려면 다음 단계를
 사용에 대한 자세한 내용 `MapTo` SPA for AEM을 일반적으로 빌드하려면 선택한 프레임워크에 대한 시작 안내서를 참조하십시오.
 
 * [React를 사용하여 AEM에서 SPA 시작하기](getting-started-react.md)
-* [Angular를 사용하여 AEM에서 SPA 시작하기](getting-started-angular.md)
+* [angular을 사용하여 AEM에서 SPA 시작하기](getting-started-angular.md)
 
 ## AEM 아키텍처 및 SPA {#aem-architecture-and-spas}
 
@@ -175,9 +177,9 @@ AEM에서 작업할 수 있도록 기존 SPA을 준비하려면 다음 단계를
   이 환경에서 SPA 애플리케이션 및 구성 요소 소스의 소스를 체크 아웃합니다.
 
    * NPM clientlib 생성기는 SPA 프로젝트에서 클라이언트 라이브러리를 생성합니다.
-   * 해당 라이브러리는 Maven에서 가져오고 구성 요소와 함께 Maven Build 플러그인에 의해 AEM 작성자에게 배포됩니다.
+   * 이 라이브러리는 Maven에서 가져오고 구성 요소와 함께 Maven Build 플러그인에 의해 AEM Author로 배포됩니다.
 
-* **AEM Author**
+* **AEM 작성자**
 
   SPA 작성을 포함하여 AEM 작성자에 콘텐츠가 작성됩니다.
 
@@ -196,7 +198,7 @@ AEM에서 작업할 수 있도록 기존 SPA을 준비하려면 다음 단계를
 * **Dispatcher / CDN**
 
   Dispatcher는 사이트 방문자를 위한 AEM의 캐싱 레이어 역할을 합니다.
-   * 요청은 AEM 작성자에 있는 방법과 유사하게 처리됩니다. 그러나 페이지 정보는 편집자만 필요로 하기 때문에 요청이 없습니다.
+   * 요청은 AEM 작성자에 있는 것과 유사하게 처리됩니다. 그러나 페이지 정보는 편집자만 필요로 하기 때문에 요청이 없습니다.
    * JavaScript, CSS, JSON 및 HTML이 캐시되어 빠른 전송을 위해 페이지가 최적화됩니다.
 
 >[!NOTE]
@@ -205,8 +207,8 @@ AEM에서 작업할 수 있도록 기존 SPA을 준비하려면 다음 단계를
 
 ## 다음 단계 {#next-steps}
 
-* [React를 사용하여 AEM에서 SPA 시작하기](getting-started-react.md) React를 통해 AEM에서 기본 SPA를 빌드하여 SPA 편집기에서 작업하는 방법을 표시함.
-* [Angular를 사용하여 AEM에서 SPA 시작하기](getting-started-angular.md) Angular를 통해 AEM에서 기본 SPA를 빌드하여 SPA 편집기에서 작업하는 방법을 표시함.
+* [React를 사용하여 AEM에서 SPA 시작하기](getting-started-react.md) 는 React를 사용하여 AEM에서 SPA 편집기로 작동하도록 기본 SPA을 빌드한 방법을 보여 줍니다.
+* [angular을 사용하여 AEM에서 SPA 시작하기](getting-started-angular.md) angular을 사용하여 AEM에서 SPA 편집기로 작동하도록 기본 SPA을 빌드한 방법을 보여 줍니다.
 * [SPA 편집기 개요](editor-overview.md)는 AEM과 SPA 간의 커뮤니케이션 모델에 대해 자세히 설명합니다.
 * [WKND SPA 프로젝트](wknd-tutorial.md) 는 AEM에서 간단한 SPA 프로젝트를 구현하는 단계별 자습서입니다.
 * [SPA용 동적 모델과 구성 요소 간 매핑](model-to-component-mapping.md) 구성 요소 매핑에 대한 동적 모델과 AEM의 SPA 내에서 작동하는 방식에 대해 설명합니다.

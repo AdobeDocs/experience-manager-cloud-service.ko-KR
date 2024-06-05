@@ -2,10 +2,13 @@
 title: 타겟팅 모드를 사용하여 타겟팅된 콘텐츠 작성
 description: 타겟팅 모드 및 타겟 구성 요소는 경험을 위한 콘텐츠를 만드는 도구를 제공합니다.
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '5302'
-ht-degree: 88%
+source-wordcount: '5282'
+ht-degree: 87%
 
 ---
 
@@ -632,6 +635,6 @@ Adobe Target을 엔진으로 선택하는 경우:
 >
 >AEM을 Adobe Campaign과 통합하는 경우 엔진으로 **Adobe Campaign**&#x200B;을 선택합니다. 자세한 내용은 [Adobe Campaign과 AEM 통합]을 참조하십시오.
 >
->타겟팅에 ContextHub를 사용하는 경우에는 엔진으로 **ContextHub**를 선택하십시오. 자세한 내용은 [ContextHub 구성]을 참조하십시오.
+>타겟팅에 ContextHub를 사용하는 경우에는 엔진으로 **ContextHub**를 선택하십시오. 자세한 내용은 ContextHub 구성 을 참조하십시오.
 <!--You select **Adobe Campaign** as the engine if you are integrating AEM with Adobe Campaign. See [Integrating AEM with Adobe Campaign](/help/sites-administering/campaign.md) for more information.-->
 <!--Select **ContextHub** as the engine if you are using ContextHub for targeting. See [Configuring ContextHub](/help/sites-administering/contexthub-config.md).-->

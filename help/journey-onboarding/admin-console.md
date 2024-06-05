@@ -2,9 +2,11 @@
 title: Admin Console 액세스
 description: 온보딩에 필요한 준비와 AEMaaCS 구조의 기본 사항을 이해했으면 처음으로 Admin Console에 로그인할 준비가 된 것입니다.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
-source-wordcount: '1097'
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
+source-wordcount: '1071'
 ht-degree: 100%
 
 ---

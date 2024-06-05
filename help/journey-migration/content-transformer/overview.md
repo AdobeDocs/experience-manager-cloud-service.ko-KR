@@ -2,10 +2,12 @@
 title: 콘텐츠 변환기 개요
 description: 콘텐츠 변환기를 사용하여 BPA에서 보고한 콘텐츠 관련 문제를 감지하고 해결하는 방법에 대해 알아봅니다.
 exl-id: aa3397ff-3dd6-4c67-9064-cb9b19bf1c73
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 2%
+source-wordcount: '383'
+ht-degree: 3%
 
 ---
 

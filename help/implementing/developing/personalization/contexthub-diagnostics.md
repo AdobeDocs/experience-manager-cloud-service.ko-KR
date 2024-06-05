@@ -2,7 +2,9 @@
 title: ContextHub 진단
 description: ContextHub는 ContextHub 프레임워크의 개요를 볼 수 있는 진단 페이지를 제공합니다
 exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 1%

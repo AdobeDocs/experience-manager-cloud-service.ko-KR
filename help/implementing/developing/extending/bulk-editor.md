@@ -2,7 +2,9 @@
 title: 페이지 속성의 일괄 편집 구성
 description: 한 번에 여러 페이지의 속성을 편집할 수 있도록 일괄 편집을 구성하는 방법에 대해 알아봅니다.
 exl-id: 0d10c6b9-8643-479d-adc1-4066d227e83d
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 94%

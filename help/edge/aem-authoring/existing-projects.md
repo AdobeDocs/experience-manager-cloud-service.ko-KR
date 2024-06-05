@@ -3,8 +3,9 @@ title: 기존 AEM 프로젝트와 함께 Edge Delivery Services 사용
 description: 기존 AEM 프로젝트에서 Edge Delivery Services의 이점을 활용하는 방법 알아보기
 feature: Edge Delivery Services
 exl-id: f54aac3a-1d0c-4be0-9aa6-616217e0e458
-source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 100%
 

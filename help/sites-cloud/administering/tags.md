@@ -2,7 +2,10 @@
 title: 태그 관리
 description: 콘텐츠 정리를 위해 AEM에서 태그를 관리하는 방법을 알아봅니다.
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+solution: Experience Manager Sites
+feature: Workflow
+role: Admin
+source-git-commit: d46678e999889934631bd0c678de5b060bc38f44
 workflow-type: tm+mt
 source-wordcount: '2200'
 ht-degree: 73%

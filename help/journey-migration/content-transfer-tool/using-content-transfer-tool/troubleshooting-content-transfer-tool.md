@@ -2,17 +2,19 @@
 title: 콘텐츠 전송 도구 문제 해결
 description: 콘텐츠 전송 도구 문제 해결 방법 알아보기
 exl-id: 01bc9be7-a576-45eb-90a0-386ea951040d
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 91%
+source-wordcount: '179'
+ht-degree: 88%
 
 ---
 
 # 콘텐츠 전송 도구 문제 해결 {#troubleshoot-content-transfer-tool}
 
 
-## Blob ID가 누락됨 {#missing-blobs}
+## Blob ID 누락 {#missing-blobs}
 
 아래에 언급했듯이 보고된 Blob ID가 누락된 경우 기존 저장소에서 일관성 검사를 실행하고 누락된 Blob를 복원해야 합니다.
 `ERROR o.a.j.o.p.b.AbstractSharedCachingDataStore - Error retrieving record [ba45c53f8b687e7056c85dceebf8156a0e6abc7e]`

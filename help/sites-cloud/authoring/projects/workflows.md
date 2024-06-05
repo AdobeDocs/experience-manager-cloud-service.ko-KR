@@ -2,9 +2,12 @@
 title: 프로젝트 워크플로를 사용하여 작업
 description: 다양한 프로젝트 워크플로를 즉시 사용할 수 있습니다.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '451'
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
+source-wordcount: '449'
 ht-degree: 100%
 
 ---

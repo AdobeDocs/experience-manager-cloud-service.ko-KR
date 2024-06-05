@@ -2,7 +2,9 @@
 title: 컨텐츠 전송 도구 사용에 대한 지침 및 우수 사례
 description: 콘텐츠 전송 도구 사용에 대한 지침과 모범 사례에 대해 알아봅니다.
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 15%

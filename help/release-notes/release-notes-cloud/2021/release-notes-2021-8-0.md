@@ -2,10 +2,12 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.8.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.8.0 릴리스 정보입니다.'
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 30%
+source-wordcount: '1011'
+ht-degree: 27%
 
 ---
 
@@ -19,12 +21,12 @@ ht-degree: 30%
 
 >[!NOTE]
 >
->릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 릴리스(2021.8.0) 날짜는 2021년 26월 8일입니다.
-다음 릴리스(2021.9.0) 날짜는 2021년 10월 6일입니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 릴리스(2021.8.0) 날짜는 2021년 8월 26일 금요일입니다.
+다음 릴리스(2021.9.0) 날짜는 2021년 10월 6일 목요일입니다.
 
 ## 릴리스 비디오 {#release-video}
 

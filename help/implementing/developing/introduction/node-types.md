@@ -2,10 +2,12 @@
 title: AEM 노드 유형
 description: AEM은 Sling을 기반으로 하며 두 가지 모두에서 제공하는 노드 유형이 있는 JCR 저장소를 사용하지만 AEM은 다양한 자체 노드 유형을 제공합니다.
 exl-id: 82cc28ca-37e2-4ca3-b3e4-cc03bbc5bdf5
-source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 5%
+source-wordcount: '98'
+ht-degree: 6%
 
 ---
 

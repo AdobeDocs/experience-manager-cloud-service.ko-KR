@@ -1,13 +1,16 @@
 ---
 title: 경로 브라우저를 사용하여 경로 선택
 description: 경로 브라우저를 사용하여 AEM에서 리소스를 선택하는 방법을 알아봅니다.
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+exl-id: 8eb52793-b709-4e66-832d-533ef06bc0e1
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 43%
 
 ---
-
 
 # 경로 선택 {#path-selection}
 

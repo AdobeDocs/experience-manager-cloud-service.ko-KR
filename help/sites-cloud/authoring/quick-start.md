@@ -2,7 +2,10 @@
 title: 작성에 대한 빠른 시작 안내서
 description: 사이트 콘솔을 사용하여 콘텐츠 작성을 시작하는 데 도움이 되는 빠른 개요 안내서를 보려면 여기에서 시작하십시오.
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '749'
 ht-degree: 3%

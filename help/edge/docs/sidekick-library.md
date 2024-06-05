@@ -3,8 +3,9 @@ description: Sidekick 라이브러리는 개발자가 콘텐츠 작성자를 위
 title: Sidekick 라이브러리란 무엇입니까?
 feature: Edge Delivery Services
 exl-id: 013f67b7-9841-48dd-a9e5-9971ba75d515
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '76'
 ht-degree: 100%
 

@@ -2,10 +2,12 @@
 title: Best Practices Analyzer 개요
 description: Best Practices Analyzer를 사용하여 AEM 구현을 권장 모범 사례에 준하도록 평가하는 방법을 알아봅니다
 exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 65%
+ht-degree: 61%
 
 ---
 

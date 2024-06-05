@@ -1,13 +1,16 @@
 ---
 title: 실행 취소 및 재실행 제한 사항
 description: AEM 페이지 편집기의 실행 취소 및 다시 실행 옵션의 제한 사항에 대해 알아봅니다.
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+exl-id: 87773f47-5116-4966-9ba4-5deedb7c4fa6
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 92%
 
 ---
-
 
 # 실행 취소 및 재실행 제한 사항 {#undo-redo}
 

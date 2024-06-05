@@ -3,7 +3,8 @@ title: AEM as a Cloud Service 릴리스 2021.10.0의 마이그레이션 도구 �
 description: AEM as a Cloud Service 릴리스 2021.11.0의 마이그레이션 도구 릴리스 정보
 feature: Release Information
 exl-id: 6b1caa63-dcb0-4c48-ab2c-fd72617abf13
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 11%
@@ -15,7 +16,7 @@ ht-degree: 11%
 이 페이지에서는 AEM as a Cloud Service 2021.10.0의 마이그레이션 도구 릴리스 정보에 대해 간략히 설명합니다.
 
 >[!NOTE]
->Adobe Experience Manager as a Cloud Service의 최신 릴리스 정보를 보려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html)를 클릭하십시오.
+>Adobe Experience Manager as a Cloud Service의 최신 릴리스 정보를 보려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=ko-KR)를 클릭하십시오.
 
 ## Cloud Acceleration Manager {#cam-release}
 
@@ -49,7 +50,7 @@ Cloud Acceleration Manager는 이제 인쇄 가능한 미리 보기에서 BPA �
    * 오류를 정상적으로 건너뛰고 사용자 매핑 활동을 계속합니다.
    * 다음과 같은 경우 사용자 매핑이 더 이상 실패하지 않음 **액세스 토큰** 24시간 후에 만료됩니다. 사용자 매핑은 마지막으로 중지된 위치에서 다시 실행할 수 있습니다.
 
-* 컨텐츠 전송 도구의 견고성을 높이기 위해 컨텐츠를 작성자 인스턴스 또는 게시 인스턴스로 한 번에 수집할 수 있습니다. 다음을 참조하십시오 [컨텐츠 전송 도구 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ko-KR) 을 참조하십시오.
+* 컨텐츠 전송 도구의 견고성을 높이기 위해 컨텐츠를 작성자 인스턴스 또는 게시 인스턴스로 한 번에 수집할 수 있습니다. 다음을 참조하십시오 [컨텐츠 전송 도구 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html) 을 참조하십시오.
 
 * 버전이 포함된 경우 경로 `/var/audit` 감사 이벤트를 마이그레이션할 때 자동으로 포함됩니다.
 

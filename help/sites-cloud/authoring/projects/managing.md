@@ -2,7 +2,10 @@
 title: 프로젝트 관리
 description: 프로젝트를 사용하면 리소스를 프로젝트 콘솔에서 액세스 및 관리할 수 있는 하나의 엔티티로 그룹화하여 프로젝트를 구성할 수 있습니다.
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 82%
@@ -31,7 +34,7 @@ ht-degree: 82%
 * Product Photo Shoot Project 
 -->
 
-프로젝트를 생성하는 절차는 프로젝트마다 동일합니다. 프로젝트 유형 간의 차이점에는 사용 가능한 [사용자 역할](/help/sites-cloud/authoring/projects/overview.md) 및 [워크플로](/help/sites-cloud/authoring/projects/workflows.md)가 포함됩니다. To create a project:
+프로젝트를 생성하는 절차는 프로젝트마다 동일합니다. 프로젝트 유형 간의 차이점에는 사용 가능한 [사용자 역할](/help/sites-cloud/authoring/projects/overview.md) 및 [워크플로](/help/sites-cloud/authoring/projects/workflows.md)가 포함됩니다. 프로젝트를 만들려면 다음 작업을 수행하십시오.
 
 1. 위치 **프로젝트**, 선택 **만들기** 을(를) 열려면 **프로젝트 만들기** 마법사:
 1. 템플릿을 선택하고 **다음**&#x200B;을 클릭합니다.

@@ -2,7 +2,9 @@
 title: Universal Editor 호출
 description: 범용 편집기에서 디버깅할 때 유용하게 사용할 수 있도록 앱에 수행하는 다양한 유형의 호출에 대해 알아봅니다.
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 2%

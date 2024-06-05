@@ -2,9 +2,11 @@
 title: 콘텐츠 전송 확인
 description: 컨텐츠 전송 도구를 사용하여 컨텐츠 전송의 유효성을 검사합니다
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1074'
 ht-degree: 2%
 
 ---
@@ -152,7 +154,7 @@ Migration validation took 0 minutes
 
 ## 문제 해결 {#troubleshooting}
 
-### 유효성 검사 실패. 이제 무엇을 합니까? {#validation-fail}
+### 유효성 검사에 실패했습니다. 이제 어쩌지? {#validation-fail}
 
 첫 번째 단계는 수집이 실제로 실패했는지 또는 추출된 콘텐츠가 대상 환경에 이미 있는지 확인하는 것입니다. 이 문제는 수집이 와 반복되는 경우 발생할 수 있습니다. **수집하기 전에 클라우드 인스턴스의 기존 콘텐츠 지우기** 옵션이 비활성화되었습니다.
 

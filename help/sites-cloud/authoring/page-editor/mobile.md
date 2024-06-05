@@ -2,7 +2,10 @@
 title: 모바일 디바이스용 페이지 작성
 description: 모바일용으로 작성할 때 몇 개의 에뮬레이터 간을 전환하여 최종 사용자에게 표시되는 내용을 확인할 수 있습니다.
 exl-id: fabd4468-3304-402f-9522-342da3bbae94
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 100%

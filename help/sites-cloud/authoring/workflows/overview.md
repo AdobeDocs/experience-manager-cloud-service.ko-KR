@@ -2,8 +2,11 @@
 title: 워크플로를 사용하여 작업
 description: AEM의 워크플로에서는 페이지나 자산에서 수행되는 일련의 단계들을 자동화할 수 있습니다.
 exl-id: ed157646-abb3-45c6-bafd-7889bd93fdf3
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 100%
 

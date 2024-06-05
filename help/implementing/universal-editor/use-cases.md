@@ -1,13 +1,15 @@
 ---
 title: 유니버설 편집기 사용 사례 및 학습 경로
 description: 유니버설 편집기의 주요 사용 사례와 그 사용 방법 및 자체 프로젝트에서 구현하는 방법에 대해 알아봅니다.
-source-git-commit: 45418e5fd431980b48eda83811d5544154027d84
+exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 0%
 
 ---
-
 
 # 유니버설 편집기 사용 사례 및 학습 경로 {#use-cases-learning-paths}
 

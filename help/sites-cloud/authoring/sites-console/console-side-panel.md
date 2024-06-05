@@ -1,13 +1,16 @@
 ---
 title: 사이트 콘솔 사이드 패널
 description: AEM 사이트 콘솔에서 사이드 패널을 사용하여 콘텐츠를 더 잘 이해하고 탐색하는 방법을 알아봅니다.
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 26%
 
 ---
-
 
 # 사이트 콘솔 사이드 패널 {#side-panel}
 

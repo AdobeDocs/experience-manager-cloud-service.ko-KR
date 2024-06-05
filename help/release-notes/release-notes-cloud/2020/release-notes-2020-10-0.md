@@ -2,14 +2,16 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2020.10.0 릴리스 정보입니다.'
 description: "[!DNL Adobe Experience Manager] 2020.10.0의 as a Cloud Service 릴리스 노트"
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1194'
-ht-degree: 29%
+source-wordcount: '1103'
+ht-degree: 24%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 릴리스 노트  {#release-notes}
+# 의 릴리스 정보 [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 {#release-notes}
 
 다음 섹션에서는 의 일반 릴리스 정보에 대해 간략히 소개합니다. [!DNL Experience Manager] as a Cloud Service 2020.10.0.
 
@@ -22,7 +24,7 @@ ht-degree: 29%
 
 ### [!DNL Sites]의 새로운 기능 {#what-is-new-sites}
 
-* **[코어 구성 요소 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)**: Adobe Experience Manager as a Cloud Service은 핵심 구성 요소의 최신 릴리스에 대한 자동 업데이트 혜택을 제공합니다. 릴리스 2.12.0에는 커뮤니티에서 제공한 최신 개선 사항이 포함되어 있습니다. 개선 사항은 다음과 같습니다 [새 POST 양식 핸들러](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) 사용자 지정 CSS, JavaScript 및 메타데이터를 포함하는 기능 [컨텍스트 인식 구성을 통한 태그](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) 및 a [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) 유틸리티를 사용하여 사용자 지정 구성 요소에서 Adobe 데이터 레이어 통합을 단순화할 수 있습니다. 다음을 참조하십시오. [변경 사항 목록](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) 2.12.0에서.
+* **[코어 구성 요소 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)**: Adobe Experience Manager as a Cloud Service은 핵심 구성 요소의 최신 릴리스에 대한 자동 업데이트 혜택을 제공합니다. 릴리스 2.12.0에는 커뮤니티에서 제공한 최신 개선 사항이 포함되어 있습니다. 개선 사항은 다음과 같습니다 [새 POST 양식 핸들러](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) 사용자 지정 CSS, JavaScript 및 메타데이터를 포함하는 기능 [컨텍스트 인식 구성을 통한 태그](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) 및 a [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) 유틸리티를 사용하여 사용자 지정 구성 요소에서 Adobe 데이터 레이어 통합을 단순화할 수 있습니다. 다음을 참조하십시오. [변경 사항 목록](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) 2.12.0에서.
 
 * **[Project Archetype 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)**: 새 Experience Manager 프로젝트를 시작하기 위한 권장 기반이 개선되었습니다. 이제 새로운 기능이 포함됩니다. [Adobe 클라이언트 데이터 레이어](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html), 옵션 [amp에서 사이트 제공,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) 및 신규 [확장은 프로젝트 CSS/JS 추가를 가리킵니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)
 
@@ -35,8 +37,8 @@ ht-degree: 29%
 * **Brand Portal 개선 사항**: 다음과 같은 새로운 기능 등을에서 사용할 수 있습니다 [!DNL Brand Portal]. 자세한 내용은 [[!DNL Brand Portal] 릴리스 정보](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html).
 
    * [다운로드 환경 개선](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html) 를 사용하십시오. 사용자와 비즈니스의 요구사항에 적합한 경험을 제공하기 위한 추가 다운로드 구성은 관리자가 구성할 수 있습니다.
-   * 이제 모든 페이지에서 한 번 클릭으로 파일, [컬렉션](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/share/brand-portal-share-collection.html), 공유 링크를 탐색할 수 있습니다.
-   * 사용자는 [특정 렌디션을 선택하여 다운로드](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page)할 수 있습니다. 새 렌디션 다운로드 옵션이 에셋 세부 사항 페이지의 렌디션 패널에 제공됩니다.
+   * 한 번의 클릭으로 파일 탐색, [컬렉션](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/share/brand-portal-share-collection.html)이제 모든 페이지에서 공유 링크를 사용할 수 있습니다.
+   * 사용자는 다음을 수행할 수 있습니다. [특정 렌디션 선택 및 다운로드](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page) 지금. 새 렌디션 다운로드 옵션이 에셋 세부 사항 페이지의 렌디션 패널에 제공됩니다.
    * 게스트 사용자 세션에 15분의 시간 제한을 적용하여 모든 동시 사용자에게 더 나은 경험을 제공할 수 있습니다.
 
 * **[!DNL Adobe Asset Link]버전 2.1**: 의 새 버전 [Adobe 에셋 링크](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html) 확장 [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], 및 [!DNL Adobe InDesign] 을(를) 사용할 수 있습니다. 최신 버전과의 호환성을 제공합니다. [!DNL Adobe Creative Cloud] 버전 2021의 애플리케이션이 2020년 10월에 릴리스되었습니다.

@@ -1,15 +1,18 @@
 ---
-title: 페이지 생성
+title: 페이지 만들기
 description: 사이트 콘솔을 사용하여 웹 사이트의 새 페이지를 만드는 방법에 대해 알아봅니다.
-source-git-commit: 0ba8faaa14d09d09fce5846bfff77287bfbd94c7
+exl-id: 77264562-e76a-40c8-9878-847a8878fb8e
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '461'
-ht-degree: 28%
+ht-degree: 29%
 
 ---
 
-
-# 페이지 생성 {#creating-pages}
+# 페이지 만들기 {#creating-pages}
 
 를 사용하여 웹 사이트의 새 페이지를 만드는 방법을 알아봅니다. **사이트** 콘솔.
 

@@ -2,7 +2,10 @@
 title: Adobe Target으로 콘텐츠 조각 내보내기
 description: 콘텐츠 조각을 Adobe Target으로 내보내 경험을 테스트하고 개인화하는 방법에 대해 알아봅니다.
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+solution: Experience Manager Sites
+feature: Integration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2159'
 ht-degree: 96%

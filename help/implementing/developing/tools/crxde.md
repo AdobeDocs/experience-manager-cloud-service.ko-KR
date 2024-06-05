@@ -2,7 +2,9 @@
 title: CRXDE Lite 사용
 description: CRXDE Lite은 AEM 빠른 시작의 일부이며 브라우저 내에서 로컬 개발 환경의 저장소에 액세스하고 수정할 수 있습니다.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 1%
@@ -138,7 +140,7 @@ CRXDE Lite의 사용자 인터페이스는 많은 부분을 가지고 있고 많
 
 다음 **이동 단추** 선택한 노드를 대화 상자를 통해 설정된 노드로 이동합니다.
 
-### 이름 변경 {#rename-button}
+### 이름 바꾸기 {#rename-button}
 
 다음 **이름 변경 단추** 선택한 노드의 이름을 바꿉니다.
 

@@ -2,10 +2,12 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.4.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.4.0 릴리스 정보입니다.'
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1533'
-ht-degree: 41%
+source-wordcount: '1545'
+ht-degree: 43%
 
 ---
 
@@ -18,7 +20,7 @@ ht-degree: 41%
 
 >[!NOTE]
 >
->릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
 
 ## 릴리스 일자 {#release-date}
 
@@ -97,7 +99,7 @@ ht-degree: 41%
 
   고급 머신 러닝 알고리즘으로 더욱 강력해진 Adobe Sign의 정부 ID 프로세스는 고품질의 수령인 신원 인증을 확보할 수 있는 능력을 전 세계 기업에 제공합니다. 이제 Adobe Sign이 활성화된 적응형 양식에서 정부 ID 신원 인증 방법을 사용할 수 있습니다.
 
-  정부 ID는 수신자에게 다음을 지시하는 프리미엄 신원 인증 방법입니다 [정부에서 발급한 신분증(운전면허증, 주민등록증, 여권) 이미지 업로드](https://helpx.adobe.com/kr/sign/using/adobesign-authentication-government-id.html)를 누르고 해당 문서가 진짜인지 평가합니다.
+  정부 ID는 [정부에서 발급한 신분증(운전면허증, 주민등록증, 여권)](https://helpx.adobe.com/kr/sign/using/adobesign-authentication-government-id.html) 이미지를 수령인이 업로드할 수 있도록 지시하는 방법이며, 그런 다음 해당 문서가 진짜인지 평가합니다.
 
 * **비동기 적응형 양식 제출을 위한 양식 내 서명 경험 사용 지원**
 
@@ -136,7 +138,7 @@ ht-degree: 41%
 
 * AEM 상점 첫 화면의 단계적 카탈로그 데이터에 대한 시각적 표시기
 
-* 이제 상거래 끝점은 Cloud Manager UI를 통해 구성할 수 있습니다
+* 이제 Commerce 끝점을 Cloud Manager UI를 통해 구성할 수 있습니다
 
 ### 버그 수정 {#bug-fixes-commerce}
 

@@ -2,7 +2,10 @@
 title: 페이지 구성
 description: AEM을 사용하여 웹 사이트를 구성하는 방법에 대해 알아봅니다.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 67%

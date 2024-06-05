@@ -2,7 +2,10 @@
 title: 작성 시의 AEM 문제 해결
 description: AEM을 사용할 때 발생할 수 있는 몇 가지 문제
 exl-id: b9c0584d-255e-486d-b829-09e07499ecd2
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 78%

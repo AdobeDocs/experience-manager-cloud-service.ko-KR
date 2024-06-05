@@ -2,9 +2,11 @@
 title: 프로그램 제작
 description: 새 프로그램 및 파이프라인을 설정하여 추가 기능을 배포하는 방법에 대해 알아봅니다.
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
-source-wordcount: '696'
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
+source-wordcount: '688'
 ht-degree: 100%
 
 ---

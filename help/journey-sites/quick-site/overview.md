@@ -2,9 +2,12 @@
 title: AEM 빠른 사이트 생성 여정
 description: 사용하기 쉬운 AEM 빠른 사이트 생성 도구를 통해 AEM 사이트의 프론트엔드 개발을 간소화하고 AEM 백엔드에 대한 지식 없이 사이트를 간편하게 맞춤화할 수 있는 가이드 여정을 시작해 보십시오.
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
-source-wordcount: '1029'
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
+source-wordcount: '1020'
 ht-degree: 100%
 
 ---

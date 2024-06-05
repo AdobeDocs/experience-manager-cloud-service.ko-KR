@@ -3,8 +3,9 @@ title: 스프레드시트를 사용하여 표 형식 데이터 관리
 description: 스프레드시트를 사용하여 Edge Delivery Services 사이트를 통해 AEM에 대한 메타데이터 및 리디렉션과 같은 다양한 값에 대한 표 형식 데이터를 관리하는 방법을 알아봅니다.
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
-source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 100%
 

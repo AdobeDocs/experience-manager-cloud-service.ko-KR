@@ -1,13 +1,15 @@
 ---
 title: AEM as a Cloud Service에 대한 로그 전달
 description: AEM에서 Splunk 및 기타 로깅 공급업체로의 로그 전달에 대해 as a Cloud Service으로 알아보기
-source-git-commit: 13696ffde99114e5265e5c2818cb3257dd09ee8c
+exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '718'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
-
 
 # 로그 전달 {#log-forwarding}
 

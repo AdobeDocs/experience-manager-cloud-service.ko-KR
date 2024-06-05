@@ -2,10 +2,12 @@
 title: Cloud Acceleration Manager의 구현 단계
 description: 이 페이지에서는 Cloud Acceleration Manager의 구현 단계에 대한 개요를 제공합니다.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: c8739388ac21dd40d6757815af6f2732991d216b
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 6%
+source-wordcount: '620'
+ht-degree: 5%
 
 ---
 
@@ -16,7 +18,7 @@ ht-degree: 6%
 * [로컬 개발](#local-development)
 * [코드 리팩터링](#code-refactoring)
 * [AEM as a Cloud Service 배포](#aem-as-a-cloud-service-deployment)
-* [컨텐츠 전송](#content-transfer)
+* [콘텐츠 전송](#content-transfer)
 
 
 프로젝트 카드를 클릭하면 프로젝트 랜딩 페이지를 열고 로 이동할 수 있습니다. **구현** 다음 그림과 같은 섹션입니다.
@@ -107,7 +109,7 @@ AEM as a Cloud Service 배포 카드 활동 카드를 탐색할 수 있도록 �
    >[!NOTE]
    >다음을 참조하십시오 [전제 조건](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html) 및 [우수 사례 및 지침](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) 컨텐츠 전송 도구를 사용하기 전에.
 
-1. 콘텐츠 전송 도구 를 다운로드하여 설치하고 마이그레이션 세트를 채우고 콘텐츠 전송의 추출 단계를 완료합니다. 리뷰 [컨텐츠 전송 도구 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ko-KR) 콘텐츠 전송 도구 사용 방법을 알아봅니다.
+1. 콘텐츠 전송 도구 를 다운로드하여 설치하고 마이그레이션 세트를 채우고 콘텐츠 전송의 추출 단계를 완료합니다. 리뷰 [컨텐츠 전송 도구 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html) 콘텐츠 전송 도구 사용 방법을 알아봅니다.
 
 1. AEM에서 환경으로 마이그레이션 세트의 컨텐츠를 as a Cloud Service으로 수집하려면 수집을 시작해야 합니다. 다음으로 이동 **수집 작업** 및 클릭 **새로운 수집**. 리뷰 [Target에 컨텐츠 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) 따라서 콘텐츠 전송의 수집 단계를 완료하는 방법을 배울 수 있습니다.
 

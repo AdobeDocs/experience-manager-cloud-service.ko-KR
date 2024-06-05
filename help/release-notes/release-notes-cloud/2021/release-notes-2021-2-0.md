@@ -2,7 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.2.0 릴리스 정보입니다.'
 description: "[!DNL Adobe Experience Manager] 2021.2.0용 as a Cloud Service 릴리스 노트"
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 32%
@@ -57,7 +59,7 @@ ht-degree: 32%
 
 * [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 은(는) 사전 구성된 을(를) 가질 수 있습니다 [!DNL Brand Portal] 인스턴스. 다음 [!DNL Cloud Manager] 사용자가 활성화 가능 [!DNL Brand Portal] 날짜 [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. 다음을 참조하십시오 [Brand Portal 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
 
-* 이제 기업은 다음을 사용하여 자산을 소싱할 수 있습니다. [!DNL Brand Portal]. 에셋 소싱 기능 사용 [!DNL Brand Portal] 고객이 에이전시 사용자와 협력하여 새로운 마케팅 캠페인, 사진 촬영 및 프로젝트에 대한 에셋을 소싱할 수 있도록 지원합니다. 다음을 참조하십시오 [에서 에셋 소싱 [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
+* 이제 기업은 다음을 사용하여 자산을 소싱할 수 있습니다. [!DNL Brand Portal]. 에셋 소싱 기능 사용 [!DNL Brand Portal] 고객이 에이전시 사용자와 협력하여 새로운 마케팅 캠페인, 사진 촬영 및 프로젝트에 대한 에셋을 소싱할 수 있도록 지원합니다. 다음을 참조하십시오 [에서 에셋 소싱 [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ko-KR).
 
 * 다음 [!DNL Brand Portal] 이제 사용량 보고서에 활성 사용자만 표시됩니다. 비활성 사용자는 현재 표시되지 않습니다. 활성 사용자는에서 제품 프로필에 계정이 할당된 사용자입니다. [!DNL Admin Console]. 다음을 참조하십시오 [[!DNL Brand Portal] 보고서](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
 

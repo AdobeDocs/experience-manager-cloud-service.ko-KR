@@ -2,10 +2,12 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.11.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.11.0 릴리스 정보입니다.'
 exl-id: 86f8ddd1-af51-4874-9111-0935b5a162c1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 95%
+source-wordcount: '1058'
+ht-degree: 96%
 
 ---
 
@@ -24,7 +26,7 @@ ht-degree: 95%
 ## 릴리스 날짜 {#release-date}
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 최신 릴리스(2021.11.0)의 릴리스 날짜는 2021년 12월 16일입니다.
-다음 릴리스(2022.1.0) 날짜는 2022년 2월 3일입니다.
+다음 릴리스(2022.1.0) 날짜는 2022년 2월 3일 금요일입니다.
 
 ## 릴리스 비디오 {#release-video}
 
@@ -48,11 +50,11 @@ ht-degree: 95%
 
 ### [!DNL Forms]의 새로운 기능 {#what-is-new-forms}
 
-* **안전한 처리를 위한 AEM Workflow 데이터 외부화**: 민감한 개인 데이터(SPD) 요소가 포함된, 처리 중인 AEM Workflow 데이터(AEM Workflow 변수 데이터)를 안전하게 처리될 수 있도록 고객 관리 저장소에 저장할 수 있습니다. 데이터 요소와 워크플로 변수는 AEM 저장소에 저장되지 않으며 워크플로 처리 중에 고객 관리 저장소에서 필요에 따라 가져옵니다.
+* **안전한 처리를 위한 AEM Workflow 데이터 외부화**: 민감한 개인 데이터(SPD)가 포함된, 처리 중인 AEM 워크플로 데이터(AEM Workflow 변수 데이터)가 안전하게 처리될 수 있도록 고객 관리 저장소에 저장할 수 있습니다. 데이터 요소와 워크플로 변수는 AEM 저장소에 저장되지 않으며 워크플로 처리 중에 고객 관리 저장소에서 필요에 따라 가져옵니다.
 
 ### [!DNL Forms] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [커뮤니케이션 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=ko-KR)를 통해 템플릿과 XML 데이터를 결합하여 다양한 형식의 인쇄 문서를 생성할 수 있습니다. 이 서비스를 사용하면 동기화 모드와 배치 모드에서 문서를 생성할 수 있습니다. API를 사용하면 다음과 같은 기능을 제공하는 애플리케이션을 만들 수 있습니다.
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [커뮤니케이션 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=ko-KR)를 통해 템플릿과 XML 데이터를 결합하여 다양한 형식의 인쇄 문서를 생성할 수 있습니다. 이 서비스를 통해 동기화 모드와 배치 모드에서 문서를 생성할 수 있습니다. API를 사용하면 다음과 같은 기능을 제공하는 애플리케이션을 만들 수 있습니다.
 
    * XML 데이터로 템플릿 파일(PDF 및 XDP)을 채워 문서를 생성합니다.
    * 비대화형 PDF 인쇄 스트림을 포함하여 다양한 형식의 출력 양식을 생성합니다.

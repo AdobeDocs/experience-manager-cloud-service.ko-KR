@@ -2,7 +2,9 @@
 title: Cloud Acceleration Manager의 준비 단계
 description: 이 페이지에서는 Cloud Acceleration Manager의 준비 단계에 대한 개요를 제공합니다.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: 0c56cfdd2c18d3bc77edafdbda3f99fbc43f12cf
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 9%

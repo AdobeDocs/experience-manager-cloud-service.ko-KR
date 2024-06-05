@@ -2,14 +2,14 @@
 title: App Builder 보안
 description: AEM용 App Builder 애플리케이션 보안에 대해 as a Cloud Service으로 알아보십시오.
 version: Cloud Service
-feature: App Builder
+feature: App Builder, Developing
 topic: Integrations, Development
 role: Developer, Architect
 level: Beginner
 kt: 9460
 thumbnail: 339249.jpg
 exl-id: f0f3f254-0efa-4fab-b2fd-96571bbb719f
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '30'
 ht-degree: 0%

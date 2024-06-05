@@ -1,12 +1,14 @@
 ---
 title: Cloud Manager에서 자체 GitHub 저장소를 사용하여 작업
 description: 자체 GitHub 저장소에서 작동하도록 Cloud Manager를 설정하는 방법에 대해 알아봅니다.
-feature: Release Information
+feature: Cloud Manager, Developing
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
-source-git-commit: b81c2bd5c339bce97fe5774572bf1532fc8e04df
+solution: Experience Manager
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '734'
-ht-degree: 68%
+ht-degree: 70%
 
 ---
 
@@ -21,7 +23,7 @@ ht-degree: 68%
 
 >[!NOTE]
 >
->이 기능은 공개 GitHub에만 적용됩니다. 자체 호스팅되는 GitHub에 대한 지원은 사용할 수 없습니다.
+>이 기능은 공개 GitHub 전용입니다. 자체 호스팅 GitHub에 대해서는 지원되지 않습니다.
 
 ## 구성 {#configuration}
 

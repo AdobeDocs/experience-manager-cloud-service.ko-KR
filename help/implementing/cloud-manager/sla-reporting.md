@@ -2,10 +2,13 @@
 title: SLA 보고
 description: 계약된 SLA(서비스 수준 계약)와 관련하여 프로덕션 AEM 환경의 성능을 확인하는 방법을 알아봅니다.
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
-source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '405'
-ht-degree: 52%
+ht-degree: 54%
 
 ---
 
@@ -20,7 +23,7 @@ SLA 보고 데이터는 **보고서** 탭을 통해 모든 프로덕션 프로�
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔을 누르고 프로그램을 선택합니다.
+1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
 
 1. 측면 탐색 패널을 사용하여 다음 위치로 이동합니다. **보고서** 의 탭 **개요** 페이지를 가리키도록 업데이트하는 중입니다.
 

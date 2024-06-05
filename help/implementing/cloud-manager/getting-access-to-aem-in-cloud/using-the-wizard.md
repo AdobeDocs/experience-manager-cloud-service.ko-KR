@@ -2,9 +2,12 @@
 title: 프로젝트 제작 마법사
 description: 프로덕션 프로그램을 만든 후 프로젝트를 빠르게 설정하는 데 도움이 되는 프로젝트 제작 마법사에 대해 알아봅니다.
 exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '304'
 ht-degree: 96%
 
 ---

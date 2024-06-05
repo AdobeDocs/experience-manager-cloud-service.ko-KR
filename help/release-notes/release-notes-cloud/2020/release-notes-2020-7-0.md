@@ -2,14 +2,16 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 릴리스의 릴리스 노트'
 description: "[!DNL Adobe Experience Manager] 2020.7.0용 as a Cloud Service 릴리스 노트"
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 71%
+source-wordcount: '1012'
+ht-degree: 73%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 릴리스 노트  {#release-notes}
+# 의 릴리스 정보 [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 {#release-notes}
 
 다음 섹션에서는 Experience Manager as a Cloud Service 2020.7.0 일반 릴리스 노트를 간략하게 설명합니다.
 
@@ -53,15 +55,15 @@ ht-degree: 71%
 
 ### 새로운 기능 {#what-is-new-commerce}
 
-이제 Cloud Service에서 AEM Commerce를 사용할 수 있습니다.
+이제 Cloud Service에서 AEM Commerce을 사용할 수 있습니다.
 
-다음을 참조하십시오 [AEM Commerce 시작하기 as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) 을 참조하십시오.
+다음을 참조하십시오 [AEM Commerce as a Cloud Service 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) 을 참조하십시오.
 
 ## 핵심 구성 요소 {#core-components}
 
 ### 새로운 기능 {#what-is-new-core-components}
 
-[AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)의 릴리스 2.11.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
+[AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)의 릴리스 2.11.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
 
 * 새로운 [PDF 뷰어 구성 요소](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html) 소개
 

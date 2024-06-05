@@ -2,10 +2,12 @@
 title: AEM 프로젝트 저장소 구조 패키지
 description: Adobe Experience Manager as a Cloud Service의 Maven 프로젝트에는 프로젝트의 코드 하위 패키지가 배포되는 JCR 저장소 루트를 정의하는 것이 유일한 목적인 저장소 구조 하위 패키지 정의가 필요합니다.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 8%
+source-wordcount: '533'
+ht-degree: 2%
 
 ---
 
@@ -13,7 +15,7 @@ ht-degree: 8%
 
 Adobe Experience Manager as a Cloud Service용 Maven 프로젝트에는 프로젝트의 코드 하위 패키지가 배포되는 JCR 저장소 루트를 정의하는 것이 유일한 목적인 저장소 구조 하위 패키지 정의가 필요합니다. 이 방법을 사용하면 Experience Manager as a Cloud Service으로 패키지 설치가 JCR 리소스 종속성에 의해 자동으로 순서가 지정됩니다. 종속성이 없으면 하위 구조가 상위 구조보다 먼저 설치되고 예기치 않게 제거되어 배포가 중단되는 시나리오가 발생할 수 있습니다.
 
-If your code package deploys into a location **not covered** by the code package, then any ancestor resources (JCR resources closer to the JCR root) must be enumerated in the repository structure package. 이 프로세스는 이러한 종속성을 설정하는 데 필요합니다.
+코드 패키지가 위치에 배포되는 경우 **포함되지 않음** 코드 패키지를 사용하면 모든 상위 리소스(JCR 루트에 더 가까운 JCR 리소스)를 저장소 구조 패키지에 열거해야 합니다. 이 프로세스는 이러한 종속성을 설정하는 데 필요합니다.
 
 ![저장소 구조 패키지](./assets/repository-structure-packages.png)
 
@@ -157,7 +159,7 @@ Maven 프로젝트에 대한 저장소 구조 패키지를 생성하려면 다�
 
 덜 일반적이고 복잡한 사용 사례는 JCR 저장소의 동일한 영역에 설치하는 여러 코드 패키지의 배포를 지원합니다.
 
-예를 들면 다음과 같습니다.
+예:
 
 + 코드 패키지 A가에 배포 `/apps/a`
 + 코드 패키지 B가에 배포 `/apps/a/b`

@@ -2,10 +2,12 @@
 title: SPA 블루프린트
 description: 이 문서에서는 AEM 내에서 편집 가능한 SPA 구성 요소를 구현할 수 있도록 모든 SPA 프레임워크가 이행해야 하는 일반적인 프레임워크 독립적인 계약에 대해 설명합니다.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2055'
-ht-degree: 2%
+source-wordcount: '2022'
+ht-degree: 1%
 
 ---
 
@@ -144,7 +146,7 @@ Component Decorator는 페이지 편집기에서 예상하는 일련의 데이�
 
 다음 `Page` 구성 요소가 `Container` 구성 요소. 컨테이너는 하위 페이지를 포함한 하위 구성 요소를 포함하고 렌더링하기 위한 구성 요소입니다. 이를 위해 컨테이너는 다음을 반복합니다. `:itemsOrder`, `:items`, 및 `:children` 모델의 속성입니다. 다음 `Page` 구성 요소는 의 저장소에서 하위 구성 요소를 동적으로 가져옵니다. [`ComponentMapping`](#componentmapping) 라이브러리입니다. 다음 `Page` 은 하위 구성 요소를 인스턴스화합니다.
 
-### 응답형 격자 {#responsive-grid}
+### 반응형 그리드 {#responsive-grid}
 
 응답형 격자 구성 요소는 컨테이너입니다. 여기에는 해당 열을 나타내는 모델 공급자의 특정 변형이 포함되어 있습니다. 반응형 그리드 및 해당 열은 프로젝트 구성 요소의 외부 HTML 요소를 모델에 포함된 특정 클래스 이름으로 장식하는 역할을 합니다.
 

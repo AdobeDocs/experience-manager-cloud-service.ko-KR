@@ -1,10 +1,10 @@
 ---
 title: 패키지 관리자
 description: Package Manager를 사용하여 패키지 관리를 하는 AE의 기본 사항에 대해 알아봅니다.
-feature: Administering
+feature: Administering, Developing
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 422b4d98e2665e332ff65a3638a02282064b2bea
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '3769'
 ht-degree: 3%

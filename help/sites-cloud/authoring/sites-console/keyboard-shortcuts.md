@@ -2,7 +2,10 @@
 title: 콘솔용 키보드 단축키
 description: 이러한 키보드 단축키를 사용하여 작성할 때 시간을 절약합니다.
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 91%

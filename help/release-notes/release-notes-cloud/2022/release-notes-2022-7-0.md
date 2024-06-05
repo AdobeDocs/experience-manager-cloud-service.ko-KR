@@ -2,14 +2,16 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.7.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.7.0 릴리스 정보입니다.'
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '949'
-ht-degree: 82%
+source-wordcount: '935'
+ht-degree: 81%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 202278.0 릴리스 정보 {#release-notes}
+# 202278.0 릴리스 정보 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 다음 섹션에서는 의 2022.7.0 버전에 대한 기능 릴리스 노트를 간략하게 설명합니다 [!DNL Experience Manager] as a Cloud Service.
 

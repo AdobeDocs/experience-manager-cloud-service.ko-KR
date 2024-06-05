@@ -3,9 +3,10 @@ title: 프로그램 제작
 description: Cloud Manager를 사용하여 첫 번째 프로그램을 만드는 방법을 알아봅니다.
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
-source-wordcount: '676'
+feature: Onboarding
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
+source-wordcount: '669'
 ht-degree: 100%
 
 ---

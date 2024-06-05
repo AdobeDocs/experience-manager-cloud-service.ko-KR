@@ -2,7 +2,10 @@
 title: 론치에서 페이지 관리
 description: 론치에서 새 페이지를 만들 수 있습니다. 원하지 않는 페이지를 삭제할 수도 있습니다.
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
-source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 89%

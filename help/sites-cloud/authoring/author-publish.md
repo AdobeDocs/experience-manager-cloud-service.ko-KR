@@ -2,7 +2,10 @@
 title: 작성 및 게시 개념
 description: 작성자, 미리보기 및 게시 환경을 사용하여 AEM에서 작성하는 개념을 알아봅니다.
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 29%

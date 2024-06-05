@@ -2,7 +2,9 @@
 title: 콘텐츠 전송 도구 시작하기
 description: 콘텐츠 전송 도구를 시작하는 방법 알아보기
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 0161477e5248267224fe6d637a192f409161f6d3
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1362'
 ht-degree: 16%
@@ -18,10 +20,10 @@ ht-degree: 16%
 >id="aemcloud_ctt_download"
 >title="다운로드"
 >abstract="소프트웨어 배포 포털에서 콘텐츠 전송 도구를 zip 파일로 다운로드할 수 있습니다. 패키지 관리자를 통해 소스 AEM(Adobe Experience Manager) 인스턴스에 패키지를 설치할 수 있습니다. 최신 버전을 다운로드하십시오."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="릴리스 정보"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=ko-KR" text="릴리스 정보"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="소프트웨어 배포 포털"
 
-소프트웨어 배포 포털에서 콘텐츠 전송 도구를 zip 파일로 다운로드할 수 있습니다. 다음을 통해 패키지를 설치할 수 있습니다. [패키지 관리자](/help/implementing/developing/tools/package-manager.md) 소스 Adobe Experience Manager(AEM) 인스턴스에서 다음을 수행합니다. 최신 버전을 다운로드해야 합니다. 최신 버전에 대한 자세한 내용은 [릴리스 정보](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html).
+소프트웨어 배포 포털에서 콘텐츠 전송 도구를 zip 파일로 다운로드할 수 있습니다. 다음을 통해 패키지를 설치할 수 있습니다. [패키지 관리자](/help/implementing/developing/tools/package-manager.md) 소스 Adobe Experience Manager(AEM) 인스턴스에서 다음을 수행합니다. 최신 버전을 다운로드해야 합니다. 최신 버전에 대한 자세한 내용은 [릴리스 정보](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=ko-KR).
 
 버전 2.0.0 이상만 지원되며 최신 버전을 사용하는 것이 좋습니다.
 

@@ -2,14 +2,14 @@
 title: App Builder 스토리지 라이브러리
 description: App Builder 애플리케이션의 상태 및 파일 스토리지 라이브러리에 대해 알아봅니다.
 version: Cloud Service
-feature: App Builder
+feature: App Builder, Developing
 topic: Integrations, Development
 role: Developer, Architect
 level: Beginner
 kt: 9457,9479,9480
 thumbnail: 339238.jpg
 exl-id: 3ddd452c-6291-4560-aabc-dcd6e628f7ab
-source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 0%

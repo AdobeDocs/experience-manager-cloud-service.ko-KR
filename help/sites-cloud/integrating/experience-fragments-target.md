@@ -2,7 +2,10 @@
 title: Adobe Target으로 경험 조각 내보내기
 description: 경험 조각을 Adobe Target으로 내보내 경험을 테스트하고 개인화하는 방법에 대해 알아봅니다.
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+solution: Experience Manager Sites
+feature: Integration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2184'
 ht-degree: 96%
@@ -51,7 +54,7 @@ AEM 경험 조각을 Adobe Target의 기본 작업 영역 또는 Adobe Target의
 >자세한 내용은 다음을 참조하십시오.
 >
 >* [Adobe Target 개발](https://developers.adobetarget.com/)
->* [핵심 구성 요소 - 경험 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+>* [핵심 구성 요소 - 경험 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
 >* [Adobe Target - Adobe Experience Manager(AEM) 경험 조각 사용 방법](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html)
 >* [AEM 6.5 - 수동으로 Adobe Target과의 통합 구성 - Target 클라우드 구성 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html#creating-a-target-cloud-configuration)
 

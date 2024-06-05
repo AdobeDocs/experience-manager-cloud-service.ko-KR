@@ -2,9 +2,11 @@
 title: AEM 프로젝트 구조
 description: Adobe Experience Manager Cloud Service에 배포할 패키지 구조를 정의하는 방법에 대해 알아봅니다.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2918'
+source-wordcount: '2859'
 ht-degree: 4%
 
 ---
@@ -177,7 +179,7 @@ Repo Init 스크립트 자체는 `ui.config` 프로젝트 를 스크립트로, �
 + 그룹
 + ACL
 
-저장소 초기화 스크립트는 다음과 같이 저장됩니다. `scripts` 다음의 항목 `RepositoryInitializer` OSGi 출하 시 구성. 따라서 실행 모드에 의해 암묵적으로 타겟팅될 수 있으므로 AEM 작성자와 AEM Publish Services의 Repo Init 스크립트 간 또는 환경(개발, 스테이지 및 프로덕션) 간에 차이가 발생할 수 있습니다.
+저장소 초기화 스크립트는 다음과 같이 저장됩니다. `scripts` 다음의 항목 `RepositoryInitializer` OSGi 출하 시 구성. 따라서 실행 모드에 의해 암시적으로 타겟팅되어 AEM Author와 AEM Publish Services의 Repo Init 스크립트 간 또는 환경(개발, 스테이지 및 프로덕션) 간의 차이점을 허용할 수 있습니다.
 
 저장소 초기 OSGi 구성은 다음에서 가장 잘 작성됩니다. [`.config` OSGi 구성 형식](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-config-1) 여러 줄을 지원하므로 를 사용하는 우수 사례에 대해 예외입니다 [`.cfg.json` OSGi 구성을 정의하려면](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 
@@ -598,7 +600,7 @@ scripts=["
 ...
 ```
 
-### 컨테이너 프로젝트의 Target 폴더 정리 {#xml-clean-container-package}
+### 컨테이너 프로젝트의 대상 폴더 정리 {#xml-clean-container-package}
 
 다음에서 `all/pom.xml`, 추가 `maven-clean-plugin` Maven 빌드 전에 대상 디렉터리를 정리하는 플러그인입니다.
 

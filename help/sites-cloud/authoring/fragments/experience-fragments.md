@@ -2,7 +2,10 @@
 title: 경험 조각
 description: Adobe Experience Manager as a Cloud Service의 경험 조각을 사용하여 경험을 재사용이 가능하고 유연하게 만듭니다.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 2fff51075dd1cd2c7e93f61c02615075ae0ffac2
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2099'
 ht-degree: 93%

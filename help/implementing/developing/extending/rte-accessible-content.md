@@ -3,7 +3,9 @@ title: 액세스 가능한 웹 페이지 및 사이트를 생성하도록 RTE를
 description: 에서 액세스 가능한 사이트를 만들도록 리치 텍스트 편집기를 구성하는 방법에 대해 알아봅니다. [!DNL Adobe Experience Manager].
 contentOwner: AG
 exl-id: 54050fc9-0348-4033-8e2b-b3897588cb62
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 1%

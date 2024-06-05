@@ -2,7 +2,9 @@
 title: Eclipse용 AEM 개발자 도구
 description: Apache Sling용 Eclipse 플러그인을 기반으로 하는 Eclipse 플러그인인 AEM Developer Tools for Eclipse를 사용하는 방법에 대해 알아봅니다.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 2%

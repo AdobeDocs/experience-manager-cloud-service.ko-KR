@@ -3,9 +3,10 @@ title: 환경 만들기
 description: Cloud Manager를 사용하여 첫 번째 환경을 만드는 방법을 알아봅니다.
 role: Admin, User, Developer
 exl-id: 31940e1e-fe27-4c5f-b67f-41affebea63a
-source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
+feature: Onboarding
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '725'
 ht-degree: 100%
 
 ---
@@ -50,7 +51,7 @@ ht-degree: 100%
 
    * **환경 추가** 옵션은 **환경** 탭에서도 사용할 수 있습니다.
 
-      ![환경 탭](/help/implementing/cloud-manager/assets/environments-tab.png)
+     ![환경 탭](/help/implementing/cloud-manager/assets/environments-tab.png)
 
    * 사용 권한이 없거나 사용 허가된 리소스에 따라 **환경 추가** 옵션이 비활성화될 수 있습니다.
 
@@ -87,6 +88,5 @@ ht-degree: 100%
 * [환경 관리](/help/implementing/cloud-manager/manage-environments.md) - 만들 수 있는 환경 유형과 Cloud Manager 프로젝트용으로 환경을 만드는 방법에 대해 알아봅니다.
 * [Adobe Cloud Manager 사용 - 환경](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) - Cloud Manager 환경은 AEM 작성, 게시 및 Dispatcher 서비스로 구성됩니다. 서로 다른 환경에서 역할을 지원하고 다양한 CI/CD 파이프라인을 사용하여 관여하는 방법에 대해 알아봅니다.
 * [신속한 개발 환경](/help/implementing/developing/introduction/rapid-development-environments.md) - RDE 사용 방법에 대한 자세한 내용은 이 설명서 참조
-
 <!-- ERROR: Not Found (HTTP error 404) * [AEM Champion Tips and Tricks - Cloud Manager Environment Types](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/environment-types.md) - Watch this video for an overview of Cloud Manager environment types from an AEM champion. -->
 

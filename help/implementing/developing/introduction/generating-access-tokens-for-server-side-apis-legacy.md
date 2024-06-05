@@ -3,7 +3,9 @@ title: 서버 측 API용 액세스 토큰 생성(기존)
 description: 보안 JWT 토큰을 생성하여 타사 서버와 AEM as a Cloud Service 간의 통신을 용이하게 하는 방법에 대해 알아봅니다
 hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 0%
@@ -123,7 +125,7 @@ AEM의 이 기술 계정 사용자에게 일반적인 방법을 사용하여 권
 
 >[!NOTE]
 >
-로컬 개발 액세스 토큰은 최대 24시간 동안 유효하며, 그 후에는 동일한 방법을 사용하여 다시 생성해야 합니다.
+>로컬 개발 액세스 토큰은 최대 24시간 동안 유효하며, 그 후에는 동일한 방법을 사용하여 다시 생성해야 합니다.
 
 개발자는 이 토큰을 사용하여 비 AEM AEM 테스트 애플리케이션에서 as a Cloud Service 환경으로 호출할 수 있습니다. 일반적으로 개발자는 랩톱에서 비 AEM 애플리케이션과 함께 이 토큰을 사용합니다. 또한 AEM as a Cloud는 일반적으로 비프로덕션 환경입니다.
 
@@ -152,7 +154,7 @@ AEM의 이 기술 계정 사용자에게 일반적인 방법을 사용하여 권
 
 >[!NOTE]
 >
-을(를) 클릭한 후 **서비스 자격 증명 새로 고침** 버튼을 클릭하면 만료되기 전까지 이전 자격 증명이 등록된 상태로 유지되지만 한 번에 개발자 콘솔에서 가장 최근 세트만 볼 수 있습니다.
+> 을(를) 클릭한 후 **서비스 자격 증명 새로 고침** 버튼을 클릭하면 만료되기 전까지 이전 자격 증명이 등록된 상태로 유지되지만 한 번에 개발자 콘솔에서 가장 최근 세트만 볼 수 있습니다.
 
 ## 서비스 자격 증명 해지 {#service-credentials-revocation}
 

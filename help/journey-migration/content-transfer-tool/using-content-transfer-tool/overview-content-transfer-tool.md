@@ -2,7 +2,9 @@
 title: 콘텐츠 전송 도구 개요
 description: 컨텐츠 전송 도구를 사용하여 컨텐츠를 온-프레미스 AEM 인스턴스에서 AEM as a Cloud Service으로 전송하는 방법에 대해 알아봅니다
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 52%

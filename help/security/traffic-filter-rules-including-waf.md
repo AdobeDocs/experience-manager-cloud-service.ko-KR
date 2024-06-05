@@ -2,10 +2,12 @@
 title: WAF 규칙이 포함된 트래픽 필터 규칙
 description: 웹 애플리케이션 방화벽(WAF)이 포함된 트래픽 필터 규칙 구성입니다.
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: c914ae4a0ad3486feb54cbcf91f6659afa1372b8
+feature: Security
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '3947'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +29,7 @@ Cloud Manager 구성 파이프라인을 통해 트래픽 필터 규칙을 프로
 [튜토리얼을 참고하면](#tutorial) 이 기능에 대한 전문 지식을 빠르게 습득할 수 있습니다.
 
 >[!NOTE]
->요청/응답 편집, 리디렉션 선언 및 비 AEM 오리진으로의 프록시 지정을 포함하여 CDN에서 트래픽 구성과 관련된 추가 옵션은 다음을 참조하십시오. [CDN에서 트래픽 구성](/help/implementing/dispatcher/cdn-configuring-traffic.md) 기사.
+>요청/응답 편집, 리디렉션 선언, 비 AEM 원본에 대한 프록시 처리 등 CDN에서 트래픽 구성과 관련된 추가 옵션은 [CDN에서 트래픽 구성](/help/implementing/dispatcher/cdn-configuring-traffic.md) 문서를 참조하십시오.
 
 
 ## 이 문서를 구성하는 방식 {#how-organized}
@@ -40,8 +42,8 @@ Cloud Manager 구성 파이프라인을 통해 트래픽 필터 규칙을 프로
 * **규칙 구문:** `cdn.yaml` 구성 파일에서 트래픽 필터 규칙을 선언하는 방법에 대해 알아보십시오. 여기에는 모든 Sites 및 Forms 고객이 사용할 수 있는 트래픽 필터 규칙과 함께 해당 기능에 라이선스를 부여하는 고객을 위한 WAF 규칙의 하위 범주가 모두 포함되어 있습니다.
 * **규칙 예:** 진행 과정을 알아보려면 선언된 규칙의 예를 참조하십시오.
 * **속도 제한 규칙:** 대규모 공격으로부터 사이트를 보호하려면 속도 제한 규칙을 사용하는 방법에 대해 알아보십시오
-* **트래픽 필터 규칙 경고** 규칙이 트리거될 때 알림을 받도록 경고를 구성합니다.
-* **원본 경고의 기본 트래픽 스파이크** DDoS 공격을 암시하는 트래픽 급증이 발생했을 때 알림을 받습니다.
+* **트래픽 필터 규칙 경고** 규칙이 실행될 때 알림을 받도록 경고를 구성합니다.
+* **원본 기본 트래픽 스파이크 경고** DDoS 공격을 암시하는 원본 트래픽 급증이 있을 때 알림을 받습니다.
 * **CDN 로그:** 선언된 규칙과 WAF 플래그가 트래픽과 일치하는지 확인하십시오.
 * **대시보드 도구:** CDN 로그를 분석하여 새로운 트래픽 필터 규칙을 구상해 보십시오.
 * **권장 스타터 규칙:** 규칙 집합을 시작하는 데 필요한 규칙입니다.
@@ -520,17 +522,17 @@ data:
           experimental_alert: true
 ```
 
-## 원본 경고의 기본 트래픽 스파이크 {#traffic-spike-at-origin-alert}
+## 원본 기본 트래픽 스파이크 경고 {#traffic-spike-at-origin-alert}
 
 >[!NOTE]
 >
->이 기능은 점차 롤아웃되고 있습니다.
+>이 기능은 점진적으로 제공되고 있습니다.
 
-An [작업 센터](/help/operations/actions-center.md) 동일한 IP 주소에서 요청의 높은 임계값이 전송되는 원본으로 전송된 상당한 양의 트래픽이 있을 때 이메일 알림이 전송되며, 따라서 DDoS 공격을 암시합니다.
+원본으로 상당한 양의 트래픽이 전송되며 임계값이 높은 요청이 동일한 IP 주소에서 들어와 DDoS 공격이 의심되는 경우 [액션 센터](/help/operations/actions-center.md) 이메일 알림이 전송됩니다.
 
-이 임계값이 충족되면 Adobe은 해당 IP 주소에서 트래픽을 차단하지만 낮은 임계값에서 트래픽 스파이크를 차단하기 위해 비율 제한 트래픽 필터 규칙을 구성하는 등 원본을 보호하기 위한 추가 조치를 수행하는 것이 좋습니다. 다음을 참조하십시오. [트래픽 규칙을 사용하여 DoS 및 DDoS 공격 차단 자습서](#tutorial-blocking-DDoS-with-rules) 가이드 통과를 위해.
+이 임계값이 충족되면 Adobe에서 해당 IP 주소의 트래픽을 차단하지만, 더 낮은 임계값에서 트래픽 스파이크를 차단하도록 속도 제한 트래픽 필터 규칙을 구성하는 등 원본을 보호하기 위한 추가 조치를 취하는 것이 좋습니다. 단계별 안내는 [트래픽 규칙을 사용하여 DoS 및 DDoS 공격 차단 튜토리얼](#tutorial-blocking-DDoS-with-rules)을 참조하십시오.
 
-이 경고는 기본적으로 활성화되어 있지만 다음을 사용하여 비활성화할 수 있습니다. *enable_ddos_alerts* 속성을 false로 설정합니다.
+이 경고는 기본적으로 활성화되어 있지만 *enable_ddos_alerts* 속성을 사용해 false로 설정하여 비활성화할 수 있습니다.
 
 ```
 kind: "CDN"
@@ -656,7 +658,7 @@ data:
 
 Adobe는 Cloud Manager를 통해 다운로드한 CDN 로그를 수집하기 위해 대시보드 도구를 컴퓨터에 다운로드하는 메커니즘을 제공합니다. 이 도구를 사용하여 트래픽을 분석하면 WAF 규칙을 포함하여 선언할 적절한 트래픽 필터 규칙을 구상할 수 있습니다.
 
-대시보드 도구는 다음에서 직접 복제할 수 있습니다. [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) GitHub 리포지토리.
+[AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) GitHub 저장소에서 바로 대시보드 도구를 복제할 수 있습니다.
 
 [튜토리얼](#tutorial)에서는 대시보드 도구 사용법에 대한 구체적인 지침을 확인할 수 있습니다.
 

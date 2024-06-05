@@ -2,7 +2,9 @@
 title: 콘솔 사용자 정의
 description: 작성 인스턴스의 콘솔을 사용자 정의할 수 있도록 AEM이 제공하는 다양한 옵션에 대해 알아봅니다.
 exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 87%

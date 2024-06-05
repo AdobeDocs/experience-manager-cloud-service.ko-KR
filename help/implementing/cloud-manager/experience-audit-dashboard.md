@@ -2,7 +2,10 @@
 title: 경험 감사 대시보드
 description: Experience Audit에서 배포 프로세스를 검증하는 방법을 알아보고, 명확하고 유용한 대시보드 인터페이스를 통해 배포된 변경 사항이 성능, 접근성, 모범 사례 및 SEO에 대한 기준 표준을 충족하는지 확인하는 데 도움이 됩니다.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
-source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1958'
 ht-degree: 8%

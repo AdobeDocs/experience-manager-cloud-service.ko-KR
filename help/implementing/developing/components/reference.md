@@ -2,7 +2,9 @@
 title: 구성 요소 참조 안내서
 description: 구성 요소 및 해당 구조에 대한 세부 사항에 대한 개발자 참조 안내서
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '3481'
 ht-degree: 1%
@@ -11,7 +13,7 @@ ht-degree: 1%
 
 # 구성 요소 참조 안내서 {#components-reference-guide}
 
-구성 요소는 AEM에서 경험을 구축하는 핵심입니다. 다음 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 준비된 강력한 구성 요소 도구 세트를 간단하게 시작할 수 있습니다. 다음 [WKND 자습서](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 개발자는 이러한 도구를 사용하는 방법과 사용자 지정 구성 요소를 빌드하여 AEM 사이트를 만드는 방법을 안내합니다.
+구성 요소는 AEM에서 경험을 구축하는 핵심입니다. 다음 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 준비된 강력한 구성 요소 도구 세트를 간단하게 시작할 수 있습니다. 다음 [WKND 자습서](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 개발자는 이러한 도구를 사용하는 방법과 사용자 지정 구성 요소를 빌드하여 AEM 사이트를 만드는 방법을 안내합니다.
 
 >[!TIP]
 >

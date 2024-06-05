@@ -3,7 +3,8 @@ title: AEM as a Cloud Service 릴리스 2023.03.0의 마이그레이션 도구 �
 description: AEM as a Cloud Service 릴리스 2023.03.0의 마이그레이션 도구 릴리스 정보
 feature: Release Information
 exl-id: cdc57cca-e10a-4b0d-b803-910ccc9350a6
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 7%

@@ -2,10 +2,12 @@
 title: AEM에서 외부 SPA 편집
 description: 이 문서에서는 독립 실행형 SPA을 AEM 인스턴스에 업로드하고, 편집 가능한 콘텐츠 섹션을 추가하고, 저작을 활성화하는 권장 단계에 대해 설명합니다.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2418'
-ht-degree: 2%
+source-wordcount: '2374'
+ht-degree: 1%
 
 ---
 
@@ -153,7 +155,7 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
 작성 가능한 React 구성 요소가 생성되면 애플리케이션 전체에서 사용할 수 있습니다.
 
-WKND SPA 프로젝트에서 텍스트를 추가해야 하는 예제 페이지를 예로 들어 보겠습니다. 이 예제에서는 &quot;Hello World!&quot; 텍스트를 표시합니다. 켜짐 `/content/wknd-spa-react/us/en/home.html`.
+WKND SPA 프로젝트에서 텍스트를 추가해야 하는 예제 페이지를 예로 들어 보겠습니다. 이 예제에서는 &quot;Hello World!&quot; 텍스트를 표시합니다. 날짜 `/content/wknd-spa-react/us/en/home.html`.
 
 1. 표시할 노드의 경로를 결정합니다.
 

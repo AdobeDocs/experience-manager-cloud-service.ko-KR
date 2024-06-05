@@ -2,7 +2,10 @@
 title: Cloud Manager FAQ
 description: AEM as a Cloud Service의 Cloud Manager에 대해 가장 자주 묻는 질문에 대한 답변을 살펴보십시오.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 100%

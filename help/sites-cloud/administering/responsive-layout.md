@@ -1,13 +1,16 @@
 ---
 title: 레이아웃 컨테이너 및 레이아웃 모드 구성
 description: 콘텐츠 작성자가 반응형 레이아웃을 사용할 수 있도록 레이아웃 컨테이너 및 레이아웃 모드를 구성하는 방법을 알아봅니다.
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
+solution: Experience Manager Sites
+feature: Administering
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 3%
 
 ---
-
 
 # 레이아웃 컨테이너 및 레이아웃 모드 구성 {#configuring-layout-container-and-layout-mode}
 

@@ -2,7 +2,9 @@
 title: 다중 사이트 관리자 확장
 description: 다중 사이트 관리자의 기능을 확장하는 방법에 대해 알아봅니다.
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '2337'
 ht-degree: 93%

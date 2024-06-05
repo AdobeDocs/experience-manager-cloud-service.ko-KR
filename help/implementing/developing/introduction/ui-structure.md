@@ -2,10 +2,12 @@
 title: AEM UI 구조
 description: AEM UI에는 몇 가지 기본 원칙이 있으며 몇 가지 주요 요소로 구성됩니다
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 5%
+source-wordcount: '887'
+ht-degree: 4%
 
 ---
 
@@ -58,7 +60,7 @@ UI는 모바일 장치와 데스크탑 장치 모두에 대해 만족하지만, 
 
 필요에 따라 왼쪽 레일을 열거나 숨길 수 있습니다.
 
-* **컨텐츠 전용**
+* **콘텐츠만**
 * **콘텐츠 트리**
 * **타임라인**
 * **참조**

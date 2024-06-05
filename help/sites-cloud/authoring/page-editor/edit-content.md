@@ -1,13 +1,16 @@
 ---
 title: AEM 페이지 편집기를 사용하여 페이지 컨텐츠 편집
 description: AEM 페이지 편집기는 콘텐츠를 작성하는 데 유용한 도구입니다.
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1612'
 ht-degree: 32%
 
 ---
-
 
 # AEM 페이지 편집기를 사용하여 페이지 컨텐츠 편집 {#edit-content}
 

@@ -2,7 +2,10 @@
 title: IP 허용 목록 소개
 description: IP 허용 목록을 통해 사용자가 AEM as a Cloud Service의 도메인에 액세스할 수 있는 주소를 제한하는 방법에 대해 알아봅니다.
 exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
-source-git-commit: f0edd0e3deeba89dcbd2dc1a07859138b24e2220
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 100%

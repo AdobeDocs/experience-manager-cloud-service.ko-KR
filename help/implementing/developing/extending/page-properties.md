@@ -2,7 +2,9 @@
 title: 페이지 속성 보기 사용자 정의
 description: 작성자가 페이지 속성을 보고 편집하는 방법에 대해 알아봅니다.
 exl-id: 363b3c2d-f965-485f-bdae-2ea5b4cecb83
-source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 92%

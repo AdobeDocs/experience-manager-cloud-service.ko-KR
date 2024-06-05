@@ -2,7 +2,10 @@
 title: 활동 관리
 description: 활동 콘솔을 사용하면 브랜드의 마케팅 활동을 만들고, 구성하고, 관리할 수 있습니다.
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1958'
 ht-degree: 85%
@@ -105,7 +108,7 @@ ht-degree: 85%
 1. AEM 타겟팅 또는 Adobe Target 경험 타겟팅을 사용하는 경우:
    1. 선택 **대상 선택** 경험을 타깃팅하는 세그먼트를 선택합니다.
    1. 선택 **경험 추가**, 이름을 입력하고 선택 **확인**.
-   1. **다음**을 선택합니다.
+   1. 선택 **다음**.
 Adobe Target A/B 테스트를 사용하는 경우:
    1. 대상자 상자에서 연필을 선택하여 대상자를 선택합니다.
    1. 선택 **경험 추가**, 이름을 입력하고 선택 **확인**.

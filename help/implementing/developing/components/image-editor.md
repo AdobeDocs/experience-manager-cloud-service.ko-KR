@@ -2,7 +2,9 @@
 title: 이미지 편집기
 description: 이미지 편집기는 AEM의 핵심 조각으로, 콘텐츠 작성자가 이미지를 쉽게 조작할 수 있도록 구성 요소에서 사용할 수 있습니다.
 exl-id: c8ae4f59-75b1-49b4-8dd4-957d2e33000b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 10%
@@ -38,7 +40,7 @@ ht-degree: 10%
 
 이미지 편집기에서 확장 가능한 벡터 그래픽(SVG)을 지원합니다.
 
-* DAM에서의 SVG 에셋 드래그 앤 드롭과 로컬 파일 시스템에서의 SVG 파일 업로드를 모두 지원합니다.
+* DAM에서의 SVG 자산 드래그 앤 드롭과 로컬 파일 시스템에서의 SVG 파일 업로드를 모두 지원합니다.
 
 ## MIME 유형별 플러그인 활성화 {#enabling-plugins-by-mime-type}
 

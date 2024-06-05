@@ -3,8 +3,10 @@ title: AEM 설명서 여정
 description: 설명서 여정은 모범 사례 방식으로 비즈니스 목표를 해결할 수 있도록 복잡하고 다양한 기능을 결합하여 AEM 설명서 내에 서술적 구조를 제공합니다. AEM 초보자용으로 설계된 여정은 A에서 Z까지 목표를 달성하기 위한 개념과 기능을 소개합니다.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '1347'
 ht-degree: 100%
 

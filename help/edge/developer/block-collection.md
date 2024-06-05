@@ -3,8 +3,9 @@ description: AEM 제품의 일부로 간주되는 블록 컬렉션이며, 프로
 title: 컬렉션 차단
 feature: Edge Delivery Services
 exl-id: ea7c071a-1ce9-4af0-a6dc-a2ba9bdbbef0
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '27'
 ht-degree: 100%
 

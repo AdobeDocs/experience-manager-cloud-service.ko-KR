@@ -2,7 +2,9 @@
 title: ContextHub 구성
 description: 컨텍스트 데이터를 저장, 조작 및 표시하기 위한 프레임워크인 Context Hub를 구성하는 방법에 대해 알아봅니다.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1609'
 ht-degree: 0%

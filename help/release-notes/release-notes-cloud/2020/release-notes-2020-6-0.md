@@ -2,10 +2,12 @@
 title: Adobe Experience Manager as a Cloud Service 2020.6.0용 릴리스 노트
 description: "[!DNL Adobe Experience Manager] 2020.6.0용 as a Cloud Service 릴리스 노트"
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1932'
-ht-degree: 94%
+source-wordcount: '1939'
+ht-degree: 92%
 
 ---
 
@@ -23,7 +25,7 @@ AEM as a Cloud Service 릴리스 2020.6.0에 있는 AEM Sites의 새로운 기�
 
 ### 새로운 기능 {#whats-new-2020.6.0}
 
-[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)의 릴리스 2.9.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
+[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)의 릴리스 2.9.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
 
 * [Adobe 클라이언트 데이터 레이어](https://github.com/adobe/adobe-client-data-layer)와 핵심 구성 요소 간의 통합
 * 모든 구성 요소에 대해 구성 가능한 HTML ID 속성
@@ -46,7 +48,7 @@ AEM as a Cloud Service 릴리스 2020.6.0에 있는 AEM Sites의 새로운 기�
 
 * 화면 판독기를 향상했습니다.
 
-## AEM as a Cloud Service 기본 사항의 새로운 기능 {#foundations}
+## AEM의 기본 사항에 대한 새로운 기능 as a Cloud Service {#foundations}
 
 AEM 프로젝트 빌드 시간은 AEM 프로젝트 pom.xml의 모든 참조를 원격 저장소에 제거하여 개선됩니다. `https://downloads.experiencecloud.adobe.com/content/maven/public`.
 
@@ -102,7 +104,7 @@ AEM as a Cloud Service 릴리스 2020.6.0에 있는 Cloud Manager의 새로운 �
 
 * Cloud Manager에서 직접 개발자 콘솔로 연결되는 링크에는 샌드박스 프로그램 환경의 최대 절전 모드 해제/최대 절전 모드 해제 옵션이 표시되지 않습니다. 이 문제를 해결하려면 개발자 콘솔에서 `#release-cm-p1234-e5678` 패턴을 URL 끝에 추가합니다. 여기서 *1234*&#x200B;를 프로그램 ID이고 *5678*&#x200B;은 환경 ID입니다. 이 문제는 향후 릴리스에서 해결될 예정입니다.
 
-## 의 새로운 기능[!DNL Adobe Experience Manager Assets] {#aem-assets}
+## 의 새로운 기능 [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
 **Adobe Sensei 기반의 향상된 스마트 태그를 위한 사용자 경험 가이드**
 

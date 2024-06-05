@@ -2,9 +2,12 @@
 title: Headless 콘텐츠 및 AEM에서의 번역에 대해 알아보기
 description: Headless 개념, AEM에 매핑하는 방법 및 AEM 번역 이론에 대해 알아봅니다.
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
-source-wordcount: '742'
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
+source-wordcount: '737'
 ht-degree: 100%
 
 ---

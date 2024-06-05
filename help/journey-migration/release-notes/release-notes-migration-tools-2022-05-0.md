@@ -3,10 +3,11 @@ title: AEM as a Cloud Service 릴리스 2022.5.0의 마이그레이션 도구 �
 description: AEM as a Cloud Service 릴리스 2022.5.0의 마이그레이션 도구 릴리스 정보
 feature: Release Information
 exl-id: 1aa49e85-1914-44d9-bcf7-0a1b03926df0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 12%
+source-wordcount: '399'
+ht-degree: 5%
 
 ---
 
@@ -41,8 +42,8 @@ Best Practices Analyzer v2.1.30의 릴리스 날짜는 2022년 6월 1일입니�
 ### 새로운 기능 {#what-is-new-ctt}
 
 * CTT(콘텐츠 전송 도구)는 Cloud Acceleration Manager와 함께 전체 콘텐츠 전송 프로세스를 간소화하도록 발전되었습니다. 이제 CTT는 콘텐츠 추출 수행에 중점을 둡니다. 이제 CTT 수집 서비스가 Cloud Acceleration Manager에 통합됩니다. 이러한 진화를 통해 제공되는 이점은 다음과 같습니다.
-   * 마이그레이션 세트를 한 번 추출하여 동시에 여러 환경에서 수집하는 셀프서비스 방식.
-   * 효율적인 로딩 상태, 가드레일 및 오류 처리를 통해 개선된 사용자 경험.
+   * 마이그레이션 세트를 한 번 추출하고 여러 환경으로 병렬로 수집하는 셀프서비스 방법입니다.
+   * 로드 상태, 보호 및 오류 처리를 개선하여 사용자 경험을 개선했습니다.
    * 수집 로그는 지속되며 항상 문제 해결에 사용할 수 있습니다.
 
 ## Cloud Acceleration Manager {#cam-release}
@@ -53,4 +54,4 @@ Cloud Acceleration Manager 의 릴리스 날짜는 2022년 6월 2일입니다.
 
 ### 새로운 기능 {#what-is-new-cam}
 
-* Cloud Acceleration Manager는 이제 마이그레이션 프로젝트의 일부로 고객의 AEM 인스턴스(온-프레미스 또는 Adobe Managed Services)에서 AEM as a Cloud Service으로 콘텐츠를 이동하기 위한 콘텐츠 전송을 시작하고 관리할 수 있는 기능을 사용자에게 제공합니다. 다음을 참조하십시오 [컨텐츠 전송 카드 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html#content-transfer) 을 참조하십시오.
+* Cloud Acceleration Manager는 이제 마이그레이션 프로젝트의 일부로 고객의 AEM 인스턴스(온-프레미스 또는 Adobe Managed Services AEM)에서 as a Cloud Service으로 콘텐츠를 이동할 수 있는 콘텐츠 전송을 시작하고 관리할 수 있는 기능을 사용자에게 제공합니다. 다음을 참조하십시오 [컨텐츠 전송 카드 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html#content-transfer) 을 참조하십시오.

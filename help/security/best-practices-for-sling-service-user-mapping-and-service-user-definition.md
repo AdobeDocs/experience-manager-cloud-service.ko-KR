@@ -2,8 +2,10 @@
 title: Sling 서비스 사용자 매핑 및 서비스 사용자 정의의 모범 사례
 description: Sling 서비스 사용자 매핑 및 서비스 사용자 정의의 모범 사례에 대해 알아봅니다.
 exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
-source-git-commit: 4bb2afc059239658bbd0747d25bbaafbe1b67b8a
-workflow-type: ht
+feature: Security
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 100%
 

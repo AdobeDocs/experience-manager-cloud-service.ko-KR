@@ -2,7 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.6.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.6.0 릴리스 정보입니다.'
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1432'
 ht-degree: 47%
@@ -170,7 +172,7 @@ AEM Screens as a Cloud Service 릴리스 날짜는 2021년 6월 24일입니다.
 * 컨텐츠 조각에 대한 새로운 CIF 제품 및 카테고리 참조 데이터 유형(포함) 제품/카테고리 선택기 UI 지원)
 * 새 Commerce 콘텐츠 조각 핵심 구성 요소
 * AEM 백엔드에서 전체 텍스트 상거래 검색 지원
-* 상거래 핵심 구성 요소는 Adobe Commerce Sensei Recs 데이터 수집
+* Commerce 핵심 구성 요소는 Adobe Commerce Sensei Recs 데이터 수집
 * 범주 페이지에 대한 SEO 친화적인 URL이 개선되었습니다
 * 사이트/구성당 사용자 지정 HTTP 헤더 지원
 

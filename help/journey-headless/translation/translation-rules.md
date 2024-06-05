@@ -2,10 +2,13 @@
 title: Headless 콘텐츠에 대한 번역 규칙 구성
 description: 번역 규칙을 정의하여 번역할 콘텐츠를 식별하는 방법에 대해 알아봅니다.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +76,7 @@ Headless 조각을 나타내는 콘텐츠 조각에는 구조화된 필드로 �
    ![컨텍스트 추가](assets/add-translation-context.png)
 1. 경로 브라우저를 사용하여 필요한 경로를 선택하고 **확인**&#x200B;을 선택하여 저장합니다. Headless 콘텐츠를 보유하는 콘텐츠 조각은 일반적으로 `/content/dam/<your-project>` 아래에 위치합니다.
    ![경로 선택](assets/select-context.png)
-1. 작성한 컨텍스트를 선택한 다음 를 선택합니다 **편집**. 이렇게 하면 **번역 규칙 편집기**가 열려 속성을 구성할 수 있습니다.
+1. 방금 만든 컨텍스트를 선택한 다음, **편집**&#x200B;을 선택합니다. 이렇게 하면 **번역 규칙 편집기**가 열려 속성을 구성할 수 있습니다.
    ![번역 규칙 편집기](assets/translation-rules-editor.png)
 1. 기본적으로 이 경우 상위 경로에서 모든 구성이 상속됩니다`/content/dam`. 추가 필드를 구성에 추가하려면 `/content/dam`**에서**&#x200B;상속 옵션을 선택 취소합니다.
 1. 선택 취소되면 목록의 **일반** 섹션에서 [이전에 번역 필드로 식별된 콘텐츠 조각 모델의 속성 이름을 추가합니다.](getting-started.md#content-models)

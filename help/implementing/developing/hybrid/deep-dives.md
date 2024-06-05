@@ -2,9 +2,11 @@
 title: SPA 깊이 들어가기
 description: AEM SPA Editor SDK는 일련의 AEM Gems 세션에 소개되었습니다. Adobe 엔지니어가 호스팅하는 이 시리즈는 Adobe 엔지니어가 호스팅하는 AEM SPA Editor SDK를 낮은 수준에서 더 깊이 있게 이해할 수 있도록 하는 좋은 지침이 될 수 있습니다.
 exl-id: 93c950be-be80-42d5-93eb-805a91b6ebba
-source-git-commit: f349d4db8794f85c17e3de5abf33edf84262267f
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '266'
 ht-degree: 2%
 
 ---

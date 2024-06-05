@@ -3,7 +3,8 @@ title: AEM as a Cloud Service 릴리스 2024.05.0의 마이그레이션 도구 �
 description: AEM as a Cloud Service 릴리스 2024.05.0의 마이그레이션 도구 릴리스 정보
 feature: Release Information
 exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
-source-git-commit: 5275c759d38563f655d4861b191aaf583d001268
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 7%
@@ -22,7 +23,7 @@ ht-degree: 7%
 
 ### 새로운 기능 {#what-is-new-bpa}
 
-* 이제 BPA(모범 사례 분석기)는 BPA에서 생성된 보고서를 CAM(Cloud Acceleration Manager)에 직접 자동 업로드하도록 지원합니다. 사용자는 더 이상 보고서를 수동으로 다운로드하여 CAM에 업로드할 필요가 없습니다. 자세히 알아보기 [여기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer)
+* 이제 BPA(모범 사례 분석기)는 BPA에서 생성된 보고서를 CAM(Cloud Acceleration Manager)에 직접 자동 업로드하도록 지원합니다. 사용자는 더 이상 보고서를 수동으로 다운로드하여 CAM에 업로드할 필요가 없습니다. 자세히 알아보기 [여기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer)
 
 ## Cloud Acceleration Manager {#cam-release}
 

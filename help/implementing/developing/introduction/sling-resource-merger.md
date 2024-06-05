@@ -2,10 +2,12 @@
 title: Adobe Experience Manager as a Cloud Service에서 Sling 리소스 병합 사용
 description: Sling 리소스 병합은 리소스에 액세스하고 리소스를 병합하는 서비스를 제공합니다
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 2%
+source-wordcount: '1158'
+ht-degree: 1%
 
 ---
 
@@ -231,7 +233,7 @@ Sling 리소스 병합에는 두 개의 사용자 지정 리소스 공급자가 
 
       * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
 
-* 오버라이드:
+* 재정의:
 
    * 목적: super type을 기반으로 리소스 병합
    * 마운트 지점: `/mnt/overide`

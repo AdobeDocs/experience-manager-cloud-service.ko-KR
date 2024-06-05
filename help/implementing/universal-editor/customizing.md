@@ -2,7 +2,9 @@
 title: 범용 편집기 사용자 지정 및 확장
 description: 콘텐츠 작성자의 요구 사항을 지원하도록 범용 편집기의 UI를 사용자 지정할 수 있는 다양한 확장 지점 및 기타 기능에 대해 알아봅니다.
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
-source-git-commit: bdd67fb383bf20399eacaf9b9c086ea8468ea742
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 1%

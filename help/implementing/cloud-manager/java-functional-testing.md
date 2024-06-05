@@ -2,10 +2,13 @@
 title: Java™ 기능 테스트
 description: AEM as a Cloud Service를 위한 Java™ 기능 테스트를 작성하는 방법을 알아봅니다.
 exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
-source-git-commit: 641690f2eca17bbfb47360282e818b6902a36144
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -128,7 +131,7 @@ Adobe가 제품 기능 테스트를 작성하는 데 사용하는 것과 동일�
 
 >[!NOTE]
 >
->이 변경 사항은 2024년 4월 6일 이전에 수행해야 합니다.
+>이 변경 사항은 2024년 4월 6일 이전에 수행되어야 합니다.
 >종속성 라이브러리를 업데이트할 수 없으면 “사용자 정의 기능 테스트” 단계에서 파이프라인 오류가 발생합니다.
 
 ### 로컬 테스트 실행 {#local-test-execution}

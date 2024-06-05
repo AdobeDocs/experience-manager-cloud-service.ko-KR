@@ -2,10 +2,12 @@
 title: SPA 편집기 개요
 description: 이 문서에서는 SPA 편집기와 구동하는 방법(AEM 내에서 SPA 편집기와 워크플로의 세부 상호 작용 포함)에 대한 포괄적인 개요를 제공합니다.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1633'
-ht-degree: 96%
+ht-degree: 93%
 
 ---
 
@@ -25,9 +27,9 @@ AEM의 SPA 지원을 통해 페이지 편집기에 로드하는 경우 SPA JS �
 
 AEM의 SPA에 대한 자세한 내용은 다음을 참조하십시오.
 
-* SPA 기술 요구 사항에 대한 [SPA 블루프린트.](blueprint.md)
-* React를 통해 간단히 SPA를 둘러보기 위해 [React를 사용하여 AEM에서 SPA 시작하기.](getting-started-react.md)
-* Angular를 통해 간단히 SPA를 둘러보기 위해 [Angular를 사용하여 AEM에서 SPA 시작하기.](getting-started-angular.md)
+* [SPA 블루프린트](blueprint.md) SPA의 기술 요구 사항에 대해 설명합니다.
+* [React를 사용하여 AEM에서 SPA 시작하기](getting-started-react.md) React를 사용하여 간단한 SPA을 간단히 살펴볼 수 있습니다.
+* [angular을 사용하여 AEM에서 SPA 시작하기](getting-started-angular.md) angular을 사용하는 간단한 SPA을 간단히 살펴볼 수 있습니다.
 
 ## 디자인 {#design}
 

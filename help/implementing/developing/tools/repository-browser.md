@@ -4,10 +4,12 @@ seo-title: Repository Browser
 description: 저장소 브라우저는 작성자, 게시 및 미리보기 계층의 모든 환경에 대해 저장소에 읽기 전용 보기를 제공합니다.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: a7fa9ecc54bdee394852d765011df2ddd0a4950c
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 2%
+source-wordcount: '854'
+ht-degree: 1%
 
 ---
 

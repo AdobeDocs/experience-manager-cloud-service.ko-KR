@@ -3,7 +3,9 @@ title: 콘텐츠를 작성할 리치 텍스트 편집기 구성 [!DNL Adobe Expe
 description: 콘텐츠를 작성할 리치 텍스트 편집기 구성 [!DNL Adobe Experience Manager] as a Cloud Service.
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1858'
 ht-degree: 0%

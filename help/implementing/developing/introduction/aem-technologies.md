@@ -2,7 +2,9 @@
 title: AEM 기술 재단
 description: AEM이 구조화되고 JCR, Sling 및 OSGi와 같은 기본 기술이 포함된 AEM의 기술 기반에 대한 개요입니다.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '2130'
 ht-degree: 0%
@@ -274,7 +276,7 @@ OSGi(Open Services Gateway Initiative)는 모듈식 애플리케이션과 라이
 
 * 설치
 * 시작
-* 중지
+* 중단
 * 업데이트
 * 제거
 * 최신 상태 보기

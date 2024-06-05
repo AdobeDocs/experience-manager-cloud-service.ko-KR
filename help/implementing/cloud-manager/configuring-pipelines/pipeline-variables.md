@@ -1,13 +1,16 @@
 ---
 title: 파이프라인 변수 구성
 description: Cloud Manager에서 파이프라인 변수를 사용하여 빌드에 대한 특정 구성 변수를 관리하는 방법에 대해 알아봅니다.
-source-git-commit: 7b98883d16893534387fa10665f5fa432d74470f
+exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 20%
 
 ---
-
 
 # 파이프라인 변수 구성 {#configuring-pipeline-variables}
 

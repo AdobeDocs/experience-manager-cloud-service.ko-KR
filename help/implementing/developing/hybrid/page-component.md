@@ -2,10 +2,12 @@
 title: SPA 페이지 구성 요소
 description: SPA에서 페이지 구성 요소는 하위 구성 요소의 HTML 요소를 제공하지 않고, 대신 SPA 프레임워크에 위임합니다. 이 문서에서는 SPA의 페이지 구성 요소를 고유하게 만드는 방법을 설명합니다.
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '602'
-ht-degree: 8%
+ht-degree: 7%
 
 ---
 

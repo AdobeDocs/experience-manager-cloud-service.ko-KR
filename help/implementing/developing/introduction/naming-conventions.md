@@ -2,9 +2,11 @@
 title: 이름 지정 규칙
 description: 저장소의 노드는 Java Content Repository의 이름 지정 규칙에 따릅니다
 exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '201'
 ht-degree: 1%
 
 ---

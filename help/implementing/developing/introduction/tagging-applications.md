@@ -2,7 +2,9 @@
 title: AEM 애플리케이션에 태그 지정 빌드
 description: 프로그래밍 방식으로 사용자 지정 AEM 애플리케이션 내에서 태그를 사용하거나 태그를 확장하십시오
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 1%

@@ -2,7 +2,9 @@
 title: API 참조 자료
 description: AEM에는 디지털 경험 프로젝트에 사용할 수 있는 광범위하고 강력한 API가 있습니다.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 4%

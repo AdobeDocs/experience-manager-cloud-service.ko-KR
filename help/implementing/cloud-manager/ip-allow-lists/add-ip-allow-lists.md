@@ -2,10 +2,13 @@
 title: IP 허용 목록 추가
 description: Cloud Manager를 사용하여 고유한 IP 허용 목록을 추가하는 방법을 알아봅니다.
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
-source-git-commit: fa6d0670a011276facc561f62f52c6e69147a49e
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '194'
-ht-degree: 87%
+ht-degree: 91%
 
 ---
 
@@ -18,7 +21,7 @@ Cloud Manager를 사용하여 고유한 IP 허용 목록을 추가하는 방법�
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔을 누르고 프로그램을 선택합니다.
+1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
 
 1. 다음에서 **개요** 페이지, 다음으로 이동 **IP 허용 목록** 측면 탐색 탭을 사용하여 페이지를 표시합니다.
 

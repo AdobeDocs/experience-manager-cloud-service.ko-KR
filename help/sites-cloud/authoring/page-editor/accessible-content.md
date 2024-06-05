@@ -2,7 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service에 대한 액세스 가능한 콘텐츠 만들기 (WCAG 2.1 준수)
 description: 장애가 있는 사용자가 액세스하여 사용할 수 있는 웹 콘텐츠를 만드는 데 도움이 되는 AEM as a Cloud Service 사용
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '13685'
 ht-degree: 97%

@@ -2,7 +2,10 @@
 title: 개인화 및 콘텐츠 타겟팅
 description: AEM으로 개인화되고 타겟팅된 콘텐츠를 만드는 방법 알아보기
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 89%

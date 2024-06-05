@@ -2,7 +2,10 @@
 title: 알림
 description: Adobe Experience Cloud 알림 시스템을 사용하여 파이프라인 배포에 대한 정보를 수신하는 방법을 알아봅니다.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 85%

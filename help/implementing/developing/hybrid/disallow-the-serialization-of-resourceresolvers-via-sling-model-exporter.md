@@ -1,15 +1,17 @@
 ---
-title: Sling 모델 내보내기를 통한 ResourceResolver 직렬화 허용 안 함
-description: Sling 모델 내보내기를 통한 ResourceResolver 직렬화 허용 안 함
-source-git-commit: 4543a4646719f8433df7589b21344433c43ab432
+title: Sling Model 내보내기를 통한 ResourceResolver 직렬화 허용 안 함
+description: Sling Model 내보내기를 통한 ResourceResolver 직렬화 허용 안 함
+exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
-
-# Sling 모델 내보내기를 통한 ResourceResolver 직렬화 허용 안 함 {#disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter}
+# Sling Model 내보내기를 통한 ResourceResolver 직렬화 허용 안 함 {#disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter}
 
 슬링 모델 내보내기 기능을 사용하면 슬링 모델 개체를 JSON 형식으로 serialize할 수 있습니다. 이 기능은 SPA(단일 페이지 애플리케이션)가 AEM의 데이터에 쉽게 액세스할 수 있도록 하므로 널리 사용됩니다. 구현 측면에서는 Jacson Databind 라이브러리를 사용하여 이러한 개체를 serialize합니다.
 
@@ -50,6 +52,3 @@ Adobe은 모든 고객에게 이 문제의 영향을 받는지 애플리케이�
 대부분의 경우 다음과 같이 필요한 이러한 변경 사항은 정면으로 진행된다고 가정합니다. `ResourceResolver` 포함된 정보는 일반적으로 프론트엔드 애플리케이션에 필요하지 않으므로 개체는 JSON 출력에 전혀 필요하지 않습니다. 즉, 대부분의 경우 다음을 제외하는 것으로 충분합니다. `ResourceResolver` 오브젝트가 Jackson에 의해 고려되지 않음(참조: [규칙](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not)).
 
 슬링 모델이 이 문제의 영향을 받지만 변경되지 않는 경우, 의 정규화를 명시적으로 비활성화합니다. `ResourceResolver` 개체(두 번째 단계로 Adobe에서 실행됨)는 JSON 출력의 변경 내용을 적용합니다.
-
-
-

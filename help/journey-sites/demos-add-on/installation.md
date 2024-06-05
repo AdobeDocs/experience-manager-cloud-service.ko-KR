@@ -2,9 +2,11 @@
 title: 참조 데모 추가 기능 설치 이해
 description: Cloud Manager 및 이를 사용하여 추가 기능을 설치하는 방법에 대해 알아봅니다.
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
-source-wordcount: '956'
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
+source-wordcount: '941'
 ht-degree: 100%
 
 ---

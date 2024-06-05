@@ -2,7 +2,10 @@
 title: Universal Editor로 콘텐츠 게시
 description: Universal Editor가 콘텐츠를 게시하는 방식과 앱이 게시된 콘텐츠를 처리하는 방법에 대해 살펴보세요.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 785a0db1ba302b8730480651802f98e802abc6d4
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 69%

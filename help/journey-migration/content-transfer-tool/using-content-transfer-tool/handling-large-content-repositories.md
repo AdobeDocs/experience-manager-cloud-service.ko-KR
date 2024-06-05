@@ -2,7 +2,9 @@
 title: 대형 콘텐츠 저장소 처리
 description: 이 섹션에서는 대용량 콘텐츠 저장소 처리에 대해 설명합니다
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1800'
 ht-degree: 8%
@@ -81,7 +83,7 @@ Azure 포털의 기존 컨테이너 속성 페이지에서 **크기 계산** 컨
 #### 파일 데이터 저장소 {#file-data-store-determine-size}
 
 * Mac, UNIX® 시스템의 경우 데이터 저장소 디렉토리에서 du 명령을 실행하여 해당 크기를 가져옵니다.
-  `du -sh [path to datastore on the instance]`을 따르지 않는 경우입니다. 예를 들어 데이터 저장소가에 있는 경우 `/mnt/author/crx-quickstart/repository/datastore`, 다음 명령은 해당 크기를 가져옵니다. `du -sh /mnt/author/crx-quickstart/repository/datastore`.
+  `du -sh [path to datastore on the instance]`. 예를 들어 데이터 저장소가에 있는 경우 `/mnt/author/crx-quickstart/repository/datastore`, 다음 명령은 해당 크기를 가져옵니다. `du -sh /mnt/author/crx-quickstart/repository/datastore`.
 
 * Windows의 경우 데이터 저장소 디렉토리에서 dir 명령을 사용하여 해당 크기를 가져옵니다.
   `dir /a/s [location of datastore]`

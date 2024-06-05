@@ -2,10 +2,12 @@
 title: 빠른 사이트 생성 및 프론트엔드 맞춤화
 description: 빠른 사이트 생성 도구가 사이트 템플릿, 테마 및 프론트엔드 파이프라인을 사용하여 새로운 사이트를 빠르게 배포하고 프론트엔드 개발을 분리하는 방법을 알아봅니다.
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -23,7 +25,7 @@ AEM 이를 위해 빠른 사이트 생성 도구는 다음과 같은 몇 가지 
 1. An **AEM 사이트 테마** 는 템플릿에 포함되어 있으며 CSS, JavaScript 및 사이트의 스타일을 정의하는 정적 리소스를 포함합니다.
 1. 다음 **프론트엔드 파이프라인** 를 사용하여 백엔드 개발과 독립적으로 사이트 테마에 맞춤화를 배포할 수 있습니다.
 
-## AEM 빠른 사이트 생성 여정 {#quick-site-creation-journey}
+## 빠른 사이트 생성 여정 {#quick-site-creation-journey}
 
 빠른 사이트 생성 도구의 작동 방식에 대한 전체 개요를 살펴보고, 이러한 강력한 도구를 사용하여 즉시 사이트를 배포하고 맞춤화하려면 다음을 검토하십시오. [빠른 사이트 생성 여정](/help/journey-sites/quick-site/overview.md).
 

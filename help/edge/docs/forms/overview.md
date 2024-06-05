@@ -3,10 +3,11 @@ title: AEM Forms Edge Delivery Services 개요
 description: 최고의 성능을 위해 구축된 AEM Forms Edge Delivery Services를 통해 간소화된 데이터 수집 및 사용자 참여라는 미래를 구상할 수 있습니다.
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1018'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +74,7 @@ AEM 작성에서는 양식 작성에 WYSIWYG 인터페이스(적응형 양식 �
 * 전자 서명을 위한 Adobe Sign 통합.
 * 양식 제출 시 Adobe Workfront Fusion 시나리오를 트리거하기 위한 Adobe Workfront Fusion 통합.
 * 양식을 미리 채우고 데이터를 제출하기 위한 다양한 데이터 소스 통합.
-* 데이터 구조 및 다양한 데이터 소스와의 상호 작용을 정의하기 위한 양식 데이터 모델(FDM)
+* 다양한 데이터 소스와의 데이터 구조 및 상호 작용을 정의하기 위한 양식 데이터 모델(FDM).
 * Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics, 더 많은 데이터 소스에 데이터를 제출하는 기능을 포함하여 양식 제출을 처리하기 위한 여러 제출 작업 중에서 선택할 수 있는 기능.
 
 본질적으로 [AEM 작성](/help/forms/creating-adaptive-form-core-components.md)은 [문서 기반 작성](/help/edge/docs/forms/create-forms.md)을 기반으로 빌드되어 복잡한 양식을 만들고 관리할 수 있는 고급 도구 키트를 제공합니다.

@@ -3,7 +3,9 @@ title: AEM에서 컨텐츠를 작성하는 방법
 description: AEM에서 콘텐츠를 작성할 수 있는 다양한 방법과 그 차이점을 알아봅니다.
 feature: Authoring
 exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
-source-git-commit: 9aba0fb61d7496cd1ae1860e22c3e7374be69148
+solution: Experience Manager Sites
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 0%

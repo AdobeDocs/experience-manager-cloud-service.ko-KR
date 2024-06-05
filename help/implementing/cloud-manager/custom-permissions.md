@@ -2,10 +2,13 @@
 title: 사용자 정의 권한
 description: 사용자 지정 권한을 사용하여 구성 가능한 권한으로 사용자 지정 권한 프로필을 만들어 Cloud Manager 사용자의 프로그램, 파이프라인 및 환경에 대한 액세스를 제한하는 방법에 대해 알아봅니다.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: 3891a55ff48f48de4e55e0229e9f76e5bf500cb3
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1515'
-ht-degree: 38%
+ht-degree: 41%
 
 ---
 
@@ -16,7 +19,7 @@ ht-degree: 38%
 
 ## 소개 {#introduction}
 
-Cloud Manager 에는 Cloud Manager의 다양한 기능에 대한 액세스를 제어하는 사전 정의된 역할 세트가 있습니다.
+Cloud Manager에는 클라우드 관리자의 다양한 기능에 대한 액세스를 제어하는 미리 정의된 역할 세트가 있습니다.
 
 * 비즈니스 소유자
 * 프로그램 관리자
@@ -83,7 +86,7 @@ Cloud Manager 에는 Cloud Manager의 다양한 기능에 대한 액세스를 �
 1. 다음 **권한 편집** 창이 열립니다.
    * 이전 단계에서 선택한 권한이 왼쪽 열에서 선택됩니다.
    * 권한 할당에 사용할 수 있는 권한 항목은 **사용 가능한 권한** 항목이라고 지정된 중간 열에 있습니다.
-   * 지정된 권한 항목은 레이블이 지정된 오른쪽 열에 있습니다. **포함된 권한 항목**.
+   * 할당된 권한 항목은 **포함된 권한 항목**&#x200B;으로 레이블이 지정된 오른쪽 열에 있습니다.
 
    ![권한 항목 편집](assets/edit-permission-items.png)
 
@@ -201,7 +204,7 @@ Cloud Manager 에는 Cloud Manager의 다양한 기능에 대한 액세스를 �
 
 ### 미리 정의된 권한 프로필을 편집할 수 있습니까?
 
-아니요, 기본 프로필은 편집할 수 없습니다. 기본 권한 프로필에 권한을 추가하거나 제거할 수 없습니다. 미리 정의된 프로필에서만 사용자를 추가하거나 제거할 수 있습니다.
+아니요, 기본 프로필은 편집할 수 없습니다. 기본 권한 프로필에는 권한을 추가하거나 제거할 수 없습니다. 미리 정의된 프로필에서만 사용자를 추가하거나 제거할 수 있습니다.
 
 ### 이제 사용자 정의 프로필을 사용할 수 있으므로 미리 정의된 권한 프로필을 삭제해야 합니까?
 

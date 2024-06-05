@@ -2,9 +2,11 @@
 title: Adobe Experience Manager as a Cloud Service용 오버레이
 description: AEM as a Cloud Service에서는 오버레이 원리를 사용하여 콘솔 및 기타 기능을 확장하고 사용자 정의할 수 있습니다
 exl-id: 24bdb1a9-6d77-43c7-a75e-28e6e0fd7608
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '384'
 ht-degree: 2%
 
 ---
@@ -39,7 +41,7 @@ Adobe Experience Manager as a Cloud Service은 오버레이 원리를 사용하�
 오버레이는 많은 변경 사항에 대해 권장되는 방법입니다. 예를 들어, 콘솔을 구성하거나 사이드 패널에서 에셋 브라우저에 대한 선택 카테고리를 만들 수 있습니다(페이지를 작성할 때 사용). 필요한 형식은 다음과 같습니다.
 
 * **다음에서 `/libs` 분기, *금지* 변경**
-이 분기는 업그레이드가 인스턴스에 적용될 때마다 변경되기 때문에 수행하는 모든 변경 사항이 손실될 수 있습니다.
+이 분기는 업그레이드가 인스턴스에 적용될 때마다 변경되기 때문에 수행하는 모든 변경 내용이 손실될 수 있습니다.
 
 * 한 위치에서 변경 내용을 집중하여 필요에 따라 변경 내용을 더 쉽게 추적, 마이그레이션, 백업 또는 디버깅할 수 있습니다.
 

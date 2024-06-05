@@ -2,10 +2,12 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.10.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.10.0 릴리스 정보입니다.'
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1436'
-ht-degree: 71%
+ht-degree: 70%
 
 ---
 
@@ -23,8 +25,8 @@ ht-degree: 71%
 
 ## 릴리스 일자 {#release-date}
 
-의 릴리스 날짜 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 릴리스(2021.10.0)는 2021년 11월 4일입니다.
-다음 릴리스(2021.11.0) 날짜는 2021년 12월 2일입니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 릴리스(2021.10.0) 날짜는 2021년 11월 4일 금요일입니다.
+다음 릴리스(2021.11.0) 날짜는 2021년 12월 2일 금요일입니다.
 
 ## 릴리스 비디오 {#release-video}
 
@@ -44,7 +46,7 @@ ht-degree: 71%
 
 ### 의 새로운 기능 [!DNL Assets] 프리릴리스 채널 {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] 이미지 스마트 자르기 및 색상 견본은 이제 개선된 자르기 및 색상 견본을 생성하는 최신 Sensei 서비스에서 제공합니다. 동일한 종횡비에 대해 서로 다른 해상도가 적용된 다양한 자르기 콘텐츠 생성을 위해 향상된 기능도 출시되었습니다. 또한 이미지 프로필에서 너비와 높이를 변경하지 않는 경우 재처리 시 수동 편집 기능은 그대로 유지됩니다.
+* [!DNL Dynamic Media] 이미지 스마트 자르기 및 색상 견본 은 이제 개선된 자르기 및 색상 견본을 생성하는 최신 Sensei 서비스에서 제공합니다. 동일한 종횡비에 대해 서로 다른 해상도가 적용된 다양한 자르기 콘텐츠 생성을 위해 향상된 기능도 출시되었습니다. 또한 이미지 프로필에서 너비와 높이를 변경하지 않는 경우 재처리 시 수동 편집 기능은 그대로 유지됩니다.
 
 * 스마트 태그는 스마트 컨텐츠 서비스 대신 에셋 마이크로서비스를 사용하여 에셋에 자동으로 적용됩니다. 태깅 결과를 개선하고 편향을 줄이기 위해 기본 모델을 업데이트합니다. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
@@ -58,11 +60,11 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### [!DNL Forms]의 새로운 기능 {#what-is-new-forms-oct-2021}
 
-* **적응형 Forms에 대한 Analytics**: 이제 적응형 Forms용 Adobe Analytics을 통해 로그인된 및 로그인되지 않은(익명의) 사용자 행동을 포착하고 추적하여 사용자 인사이트를 수집할 수 있습니다. 데이터를 기반으로 정보에 입각한 결정을 내려 사용자 경험을 개선할 수 있습니다.
+* **적응형 Forms에 대한 Analytics**: 이제 적응형 Forms용 Adobe Analytics을 통해 로그인된 및 로그인되지 않은(익명의) 사용자 행동을 포착하고 추적하여 사용자 인사이트를 수집할 수 있습니다. 이로써 데이터를 기반으로 정보에 입각한 결정을 내려 사용자 경험을 개선할 수 있습니다.
 
 ### [!DNL Forms] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-forms-oct-2021}
 
-* **안전한 처리를 위한 AEM Workflow 데이터 외부화**: 민감한 개인 데이터(SPD)가 포함된, 처리 중인 AEM 워크플로 데이터(AEM Workflow 변수 데이터)를 안전히 처리될 수 있도록 고객 관리 저장소에 저장할 수 있습니다. 데이터 요소와 워크플로 변수는 AEM 저장소에 저장되지 않으며 워크플로 처리 중에 고객 관리 저장소에서 필요에 따라 가져옵니다.
+* **안전한 처리를 위한 AEM Workflow 데이터 외부화**: 민감한 개인 데이터(SPD)가 포함된, 처리 중인 AEM 워크플로 데이터(AEM Workflow 변수 데이터)가 안전하게 처리될 수 있도록 고객 관리 저장소에 저장할 수 있습니다. 데이터 요소와 워크플로 변수는 AEM 저장소에 저장되지 않으며 워크플로 처리 중에 고객 관리 저장소에서 필요에 따라 가져옵니다.
 
 ### [!DNL Forms]의 베타 기능 {#what-is-new-forms-oct2021-beta}
 

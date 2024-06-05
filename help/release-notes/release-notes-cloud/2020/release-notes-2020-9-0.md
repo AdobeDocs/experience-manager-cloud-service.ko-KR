@@ -2,14 +2,16 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2020.9.0 릴리스 정보입니다.'
 description: "[!DNL Adobe Experience Manager] 2020.9.0용 as a Cloud Service 릴리스 노트"
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 20%
+source-wordcount: '711'
+ht-degree: 14%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 릴리스 노트  {#release-notes}
+# 의 릴리스 정보 [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
 
 다음 섹션에서는 의 일반 릴리스 정보에 대해 간략히 소개합니다. [!DNL Experience Manager] as a Cloud Service 2020.9.0.
 
@@ -21,7 +23,7 @@ ht-degree: 20%
 
 ### [!DNL Sites]의 새로운 기능 {#what-is-new-sites}
 
-* SPA(Single Page Application) Editor JavaScript SDK[는 이제 오픈 소스입니다](/help/implementing/developing/hybrid/reference-materials.md).
+* SPA(단일 페이지 애플리케이션) 편집기 JavaScript SDK [현재 오픈 소스](/help/implementing/developing/hybrid/reference-materials.md).
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 

@@ -2,10 +2,12 @@
 title: AEM 현대화 도구
 description: 레거시 AEM 기능을 AEMas a Cloud Service 의 현대적이고 지원되는 기능으로 변환하는 데 사용할 수 있는 유틸리티 세트에 대해 알아봅니다.
 exl-id: d541fae0-6386-403f-99c9-373dc978ad13
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 41%
+source-wordcount: '148'
+ht-degree: 35%
 
 ---
 
