@@ -5,12 +5,11 @@ keywords: 사용자 지정 함수를 추가하고, 사용자 지정 함수를 �
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-mini-toc-levels: 4
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 6f50bdf2a826654e0d5b35de5bd50e66981fb56a
+source-git-commit: d42728bb3eb81c032723db8467957d2e01c5cbed
 workflow-type: tm+mt
-source-wordcount: '3513'
-ht-degree: 3%
+source-wordcount: '4351'
+ht-degree: 1%
 
 ---
 
@@ -98,7 +97,7 @@ JavaScript 주석은 JavaScript 코드에 대한 메타데이터를 제공하는
 위의 코드 행에서 `Input1` 는 기본값이 없는 선택적 매개 변수입니다. 선택적 매개 변수를 기본값으로 선언하려면 다음을 수행합니다.
 `@param {array} [input1=<value>]`
 `input1` 는 기본값이 로 설정된 배열 유형의 선택적 매개 변수입니다. `value`.
-매개 변수 형식이 중괄호로 묶여 있는지 확인합니다. {} 매개 변수 이름은 대괄호로 묶습니다 [].
+매개 변수 형식이 중괄호로 묶여 있는지 확인합니다. {} 매개 변수 이름은 대괄호로 묶습니다.
 
 input2가 선택적 매개 변수로 정의된 다음 코드 스니펫을 고려하십시오.
 
@@ -225,33 +224,124 @@ jsdoc 주석을 사용하거나 사용하지 않고 사용자 지정 함수를 �
 1. [클라이언트 라이브러리 만들기](#create-client-library)
 1. [적응형 양식에 클라이언트 라이브러리 추가](#use-custom-function)
 
+
+### 사용자 지정 함수를 만들기 위한 사전 요구 사항
+
+적응형 Forms에 사용자 지정 기능을 추가하기 전에 다음을 확인하십시오.
+
+**소프트웨어:**
+
+* **일반 텍스트 편집기(IDE)**: 모든 일반 텍스트 편집기가 작동할 수 있지만 Microsoft Visual Studio Code와 같은 IDE(통합 개발 환경)는 쉽게 편집할 수 있는 고급 기능을 제공합니다.
+
+* **Git:** 이 버전 제어 시스템은 코드 변경을 관리하는 데 필요합니다. 설치되지 않은 경우 https://git-scm.com에서 다운로드하십시오.
+
 ### 클라이언트 라이브러리 만들기 {#create-client-library}
 
 클라이언트 라이브러리를 추가하여 사용자 정의 함수를 추가할 수 있습니다. 클라이언트 라이브러리를 만들려면 다음 단계를 수행하십시오.
 
-1. [AEM Forms as a Cloud Service 저장소 복제](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#accessing-git).
-1. `[AEM Forms as a Cloud Service repository folder]/apps/` 폴더 아래에 폴더를 만듭니다. 예를 들어 이라는 폴더를 만듭니다. `experience-league`.
-1. 다음으로 이동 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` 및 만들기 `ClientLibraryFolder`. 예를 들어 클라이언트 라이브러리 폴더를 다음과 같이 만듭니다. `customclientlibs`.
-1. 속성 추가 `categories` 문자열 유형 값 포함. 예를 들어 값을 할당합니다 `customfunctionscategory` (으)로 `categories` 속성 `customclientlibs` 폴더를 삭제합니다.
+**저장소 복제**
+
+복제 [AEM Forms as a Cloud Service 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#accessing-git):
+
+1. 명령줄 또는 터미널 창을 엽니다.
+
+1. 저장소를 저장할 시스템에서 원하는 위치로 이동합니다.
+
+1. 다음 명령을 실행하여 저장소를 복제합니다.
+
+   `git clone [Git Repository URL]`
+
+이 명령은 저장소를 다운로드하고 시스템에 복제된 저장소의 로컬 폴더를 만듭니다. 이 안내서 전체에서 이 폴더는 다음과 같습니다. [AEMaaCS 프로젝트 디렉터리].
+
+**클라이언트 라이브러리 폴더 추가**
+
+새 클라이언트 라이브러리 폴더를 [AEMaaCS 프로젝트 디렉터리], 다음 단계를 수행합니다.
+
+1. 를 엽니다. [AEMaaCS 프로젝트 디렉터리] 를 입력합니다.
+
+   ![사용자 정의 함수 폴더 구조](/help/forms/assets/custom-library-folder-structure.png)
+
+1. 찾기 `ui.apps`.
+1. 새 폴더를 추가합니다. 예를 들어 이라는 폴더를 `experience-league`.
+1. 다음으로 이동 `/experience-league/` 폴더 및 추가 `ClientLibraryFolder`. 예를 들어 이라는 클라이언트 라이브러리 폴더를 만듭니다. `customclientlibs`.
+
+   `Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/`
+
+**클라이언트 라이브러리 폴더에 파일 및 폴더 추가**
+
+추가된 클라이언트 라이브러리 폴더에 다음을 추가합니다.
+
+* .content.xml 파일
+* js.txt 파일
+* js 폴더
+
+`Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/experience-league/customclientlibs/`
+
+1. 다음에서 `.content.xml` 다음 코드 행을 추가합니다.
+
+   ```javascript
+   <?xml version="1.0" encoding="UTF-8"?>
+   <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+   jcr:primaryType="cq:ClientLibraryFolder"
+   categories="[customfunctionscategory]"/>
+   ```
 
    >[!NOTE]
    >
    > 다음에 대한 모든 이름을 선택할 수 있습니다. `client library folder` 및 `categories` 속성.
 
-1. `js`라는 이름의 폴더를 만듭니다.
-1. `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` 폴더로 이동합니다.
-1. JavaScript 파일 추가(예: ) `function.js`. 이 파일은 사용자 지정 함수에 대한 코드로 구성됩니다.
-1. `function.js` 파일을 저장합니다.
-1. `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` 폴더로 이동합니다.
-1. `js.txt`로 텍스트 파일을 추가합니다. 파일에는 다음이 포함됩니다.
+1. 다음에서 `js.txt` 다음 코드 행을 추가합니다.
 
    ```javascript
-       #base=js
-       functions.js
+         #base=js
+       function.js
    ```
+1. 다음에서 `js` 폴더, javascript 파일 추가 `function.js` 사용자 정의 함수를 포함합니다.
 
-1. `js.txt` 파일을 저장합니다.
-1. 아래 명령을 사용하여 저장소의 변경 내용을 추가하고, 커밋하고, 푸시합니다.
+   ```javascript
+    /**
+        * Calculates Age
+        * @name calculateAge
+        * @param {object} field
+        * @return {string} 
+    */
+   
+    function calculateAge(field) {
+    var dob = new Date(field);
+    var now = new Date();
+   
+    var age = now.getFullYear() - dob.getFullYear();
+    var monthDiff = now.getMonth() - dob.getMonth();
+   
+    if (monthDiff < 0 || (monthDiff === 0 && now.getDate() < dob.getDate())) {
+    age--;
+    }
+   
+    return age;
+    }
+   ```
+1. 파일을 저장합니다.
+
+![사용자 정의 함수 폴더 구조](/help/forms/assets/custom-function-added-files.png)
+
+**filter.xml에 새 폴더 포함**:
+
+1. 다음 위치로 이동 `/ui.apps/src/main/content/META-INF/vault/filter.xml` 파일 위치: [AEMaaCS 프로젝트 디렉터리].
+
+1. 파일을 열고 끝에 다음 줄을 추가합니다.
+
+   `<filter root="/apps/experience-league" />`
+1. 파일을 저장합니다.
+
+![사용자 정의 함수 필터 xml](/help/forms/assets/custom-function-filterxml.png)
+
+**새로 만든 클라이언트 라이브러리 폴더를 AEM 환경에 배포합니다.**
+
+AEM as a Cloud Service 배포, [AEMaaCS 프로젝트 디렉터리]을 클릭하여 Cloud Service 환경에 추가합니다. Cloud Service 환경에 배포하려면 다음을 수행하십시오.
+
+1. 변경 내용 커밋
+
+   1. 아래 명령을 사용하여 저장소의 변경 내용을 추가하고, 커밋하고, 푸시합니다.
 
    ```javascript
        git add .
@@ -259,7 +349,11 @@ jsdoc 주석을 사용하거나 사용하지 않고 사용자 지정 함수를 �
        git push
    ```
 
-1. [파이프라인 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#setup-pipeline) 사용자 지정 함수를 배포합니다.
+1. 업데이트된 코드를 배포합니다.
+
+   1. 기존 전체 스택 파이프라인을 통해 코드 배포를 트리거합니다. 이렇게 하면 업데이트된 코드가 자동으로 빌드 및 배포됩니다.
+
+파이프라인을 아직 설정하지 않았다면 의 안내서를 참조하십시오. [AEM Forms as a Cloud Service에 대한 파이프라인을 설정하는 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#setup-pipeline).
 
 파이프라인이 성공적으로 실행되면 클라이언트 라이브러리에 추가된 사용자 지정 함수를에서 사용할 수 있게 됩니다 [적응형 양식 규칙 편집기](/help/forms/rule-editor-core-components.md).
 
@@ -443,7 +537,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![연락처 양식](/help/forms/assets/contact-us-form.png)
 
-#### SetProperty 규칙을 사용하여 패널 표시
++++ **사용 사례**: 다음을 사용하여 패널 표시 `SetProperty` 규칙
 
 에 설명된 대로 사용자 지정 함수에 다음 코드를 추가합니다. [create-custom-function](#create-custom-function) 섹션, 양식 필드를 다음으로 설정 `Required`.
 
@@ -485,8 +579,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![속성 양식 미리 보기 설정](/help/forms/assets/set-property-panel.png)
 
++++
 
-#### 필드의 유효성을 검사합니다.
++++ **사용 사례**: 필드의 유효성 검사
 
 에 설명된 대로 사용자 지정 함수에 다음 코드를 추가합니다. [create-custom-function](#create-custom-function) 섹션의 유효성 검사를 참조하십시오.
 
@@ -525,9 +620,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![이메일 주소 유효성 검사 패턴](/help/forms/assets/validate-form-preview-form.png)
 
++++
 
-
-#### 패널 재설정
++++ **사용 사례**: 패널 재설정
 
 에 설명된 대로 사용자 지정 함수에 다음 코드를 추가합니다. [create-custom-function](#create-custom-function) 섹션, 패널을 재설정합니다.
 
@@ -559,9 +654,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![양식 재설정](/help/forms/assets/custom-function-reset-form.png)
 
++++
 
-
-#### 필드 수준에서 사용자 정의 메시지를 표시하고 필드를 유효하지 않은 것으로 표시
++++ **사용 사례**: 필드 수준에서 사용자 정의 메시지를 표시하고 필드를 유효하지 않은 것으로 표시
 
 다음을 사용할 수 있습니다. `markFieldAsInvalid()` 필드를 유효하지 않은 것으로 정의하고 필드 수준에서 사용자 지정 오류 메시지를 설정하는 함수입니다. 다음 `fieldIdentifier` 값은 다음과 같을 수 있습니다. `fieldId`, 또는 `field qualifiedName`, 또는 `field dataRef`. 이름이 인 개체의 값 `option` 다음이 될 수 있음: `{useId: true}`, `{useQualifiedName: true}`, 또는 `{useDataRef: true}`.
 필드를 유효하지 않은 것으로 표시하고 사용자 정의 메시지를 설정하는 데 사용되는 구문은 다음과 같습니다.
@@ -602,9 +697,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![필드를 유효한 미리 보기 양식으로 표시](/help/forms/assets/custom-function-validfield-form.png)
 
++++
 
-
-#### 제출하기 전에 캡처된 데이터 변경
++++ **사용 사례**: 변경된 데이터를 서버에 제출
 
 다음 코드 줄:
 `globals.functions.submitForm(globals.functions.exportData(), false);` 은 조작 후 양식 데이터를 제출하는 데 사용됩니다.
@@ -647,9 +742,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![콘솔 창의 Inspect 데이터](/help/forms/assets/custom-function-submit-data-console-data.png)
 
++++
 
-
-#### 적응형 양식에 대한 제출 성공 및 오류 메시지 재정의
++++ **사용 사례**: 양식 제출 성공 및 오류 처리기 재정의
 
 에 설명된 대로 다음 코드 행을 추가합니다. [create-custom-function](#create-custom-function) 섹션에서 양식 제출을 위해 제출 또는 실패 메시지를 사용자 정의하고 양식 제출 메시지를 모달 상자에 표시하려면 다음을 수행합니다.
 
@@ -758,19 +853,19 @@ function showModal(type, message) {
 
 사용자 지정 제출 처리기가 기존 AEM 프로젝트 또는 양식에서 예상대로 수행되지 않는 경우 [문제 해결](#troubleshooting) 섹션.
 
-<!--
++++
 
++++ **사용 사례**: 반복 가능 패널의 특정 인스턴스에서 작업을 수행합니다
 
-#### Use Case:  Perform actions in a specific instance of the repeatable panel 
+반복 가능 패널에서 시각적 규칙 편집기를 사용하여 만든 규칙은 반복 가능 패널의 마지막 인스턴스에 적용됩니다. 반복 가능 패널의 특정 인스턴스에 대한 규칙을 작성하려면 사용자 지정 함수를 사용합니다.
 
-Rules created using the visual rule editor on a repeatable panel apply to the last instance of the repeatable panel. To write a rule for a specific instance of the repeatable panel, we can use a custom function.
+목적지로 향하는 여행자에 대한 정보를 수집할 다른 양식을 만들어 보겠습니다. 여행자 패널을 반복 가능한 패널로 추가합니다. 여기서 사용자는 다음을 사용하여 5명의 여행자에 대한 세부 정보를 추가할 수 있습니다. `Add Traveler` 단추를 클릭합니다.
 
-Let's create a form to collect information about travelers heading to a destination. A traveler panel is added as a repeatable panel, where the user can add details for 5 travelers using the Add button.
+![여행자 정보](/help/forms/assets/traveler-info-form.png)
 
-Add the following line of code as explained in the [create-custom-function](#create-custom-function) section, to perform actions in a specific instance of the repeatable panel, other than the last one:
+에 설명된 대로 다음 코드 행을 추가합니다. [create-custom-function](#create-custom-function) 섹션, 반복 가능 패널의 특정 인스턴스에서 마지막 인스턴스가 아닌 다른 작업을 수행하려면 다음을 수행합니다.
 
 ```javascript
-
 /**
 * @name hidePanelInRepeatablePanel
 * @param {scope} globals
@@ -781,126 +876,126 @@ function hidePanelInRepeatablePanel(globals)
     // hides a panel inside second instance of repeatable panel
     globals.functions.setProperty(repeatablePanel[1].traveler, {visible : false});
 }  
-
-```
- 
-In this example, the `hidePanelInRepeatablePanel` custom function performs action in a specific instance of the repeatable panel. In the above code, `travelerinfo` represents the repeatable panel. The `repeatablePanel[1].traveler, {visible: false}` code hides the panel in the second instance of the repeatable panel. 
-Let us add a button labeled `Hide` to add a rule to hide a specific panel.
-
-![Hide Panel rule](/help/forms/assets/custom-function-hidepanel-rule.png)
-
-Refer to the video below to demonstrate that when the `Hide` is clicked, the panel in the second repeatable instance hides:
-
-
-
-
-#### **Usecase**: Pre-fill the field with a value when the form loads
-
-Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to load the pre-filled value in a field when the form is initialized:
-
-```javascript
-/**
- * @name importData
- * @param {scope} globals
- */
-function importData(globals)
-{
-    globals.functions.importData(Object.fromEntries([['amount',200000]]));
-} 
 ```
 
-In the aforementioned code, the `importData` function updates the value in the `amount` textbox field when the form loads.
+이 예에서는 `hidePanelInRepeatablePanel` 사용자 지정 함수는 반복 가능 패널의 특정 인스턴스에서 작업을 수행합니다. 위의 코드에서 `travelerinfo` 반복 가능한 패널을 나타냅니다. 다음 `repeatablePanel[1].traveler, {visible: false}` 코드는 반복 가능한 패널의 두 번째 인스턴스에서 패널을 숨깁니다.
 
-Let us create a rule for the `Submit` button, where the value in the `amount` textbox field changes to specified value when the form loads:
+레이블이 이라고 지정된 단추를 추가하겠습니다. `Hide` 반복 가능한 패널의 두 번째 인스턴스를 숨기는 규칙을 추가합니다.
 
-![Import Data Rule](/help/forms/assets/custom-function-import-data.png)
+![패널 규칙 숨기기](/help/forms/assets/custom-function-hidepanel-rule.png)
 
-Refer to the screenshot below, which demonstrates that when the form loads, the value in the amount textbox is pre-filled with a specified value:
+다음의 경우 아래 비디오를 참조하십시오. `Hide` 을 클릭하면 두 번째 반복 가능한 인스턴스의 패널이 다음을 숨깁니다.
 
-![Import Data Rule](/help/forms/assets/cg)
-
-
-
-#### **Usecase**: Set focus on the specific field
-
-Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to set focus on the specified field when the `Submit` button is clicked.:
-
-```javascript
-/**
- * @name setFocus
- * @param {object} field
- * @param {scope} globals
- */
-function setFocus(field, globals)
-{
-    globals.functions.setFocus(field);
-}
-```
-
-Let us add a rule to the `Submit` button to set focus on the `email` field when it is clicked:
-
-![Set Focus Rule](/help/forms/assets/custom-function-set-focus.png)
-
-Refer to the screenshot below, which demonstrates that when the `Submit` button is clicked, the focus is set on the `email` field:
-
-![Set Focus Rule](/help/forms/assets/custom-function-set-focus-form.png)
-
->[!NOTE]
->
-> You can use the optional `$focusOption` parameter, if you want to focus on the next or previous field relative to the `email` field.
+>[!VIDEO](https://video.tv.adobe.com/v/3429554?quality=12&learn=on)
 
 +++
 
-+++ **Usecase**: Add or delete repeatable panel using the `dispatchEvent` property
++++ **Usecase**: 양식 로드 시 값으로 필드를 미리 채웁니다
 
-Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to add a panel when the `Add Traveler` button is clicked using the `dispatchEvent` property:
+에 설명된 대로 다음 코드 행을 추가합니다. [create-custom-function](#create-custom-function) 섹션에서 양식을 초기화할 때 필드에 미리 채워진 값을 로드하려면 다음을 수행합니다.
 
 ```javascript
 /**
- 
- * @name addInstance
+ * Tests import data
+ * @name testImportData
  * @param {scope} globals
  */
-function addInstance(globals)
+function testImportData(globals)
 {
-    var repeatablePanel = globals.form.traveler;
-    globals.functions.dispatchEvent(repeatablePanel, 'addInstance');
+    globals.functions.importData(Object.fromEntries([['amount','10000']]));
 } 
-
 ```
 
-Let us add a rule to the `Add Traveler` button to add the repeatable panel when it is clicked:
+앞에서 설명한 코드에서 `testImportData` 함수 미리 채우기 `Booking Amount` 양식을 로드할 때 텍스트 상자 필드입니다. 최소 예약 금액이 다음과 같아야 한다고 가정해 보겠습니다 `10,000`.
 
-![Add Panel Rule](/help/forms/assets/custom-function-add-panel.png)
+양식 초기화 시 규칙을 만들겠습니다. 여기서 값은 `Booking Amount` textbox 필드는 폼이 로드될 때 지정된 값으로 미리 채워집니다.
 
-Refer to the screenshot below, which demonstrates that when the `Add Traveler` button is clicked, the traveler panel is added using the `dispatchEvent` property:
+![데이터 가져오기 규칙](/help/forms/assets/custom-function-import-data.png)
 
-![Add Panel](/help/forms/assets/customg)
+양식 로드 시 의 값을 보여 주는 아래 스크린샷을 참조하십시오 `Booking Amount` textbox가 지정된 값으로 미리 채워져 있습니다.
 
-Similarly, add a button labeled `Delete Traveler` to delete a panel. Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to delete a panel when the `Delete Traveler` button is clicked using the `dispatchEvent` property:
+![데이터 규칙 양식 가져오기](/help/forms/assets/custom-function-prefill-form.png)
+
++++
+
++++ **Usecase**: 특정 필드에 포커스 설정
+
+에 설명된 대로 다음 코드 행을 추가합니다. [create-custom-function](#create-custom-function) 섹션에 있는 한 지정한 필드에 초점을 `Submit` 단추를 클릭합니다.:
 
 ```javascript
-
 /**
- 
- * @name removeInstance
+ * @name testSetFocus
+ * @param {object} emailField
  * @param {scope} globals
  */
-function removeInstance(globals)
+    function testSetFocus(field, globals)
+    {
+        globals.functions.setFocus(field);
+    }
+```
+
+에 규칙을 추가하겠습니다. `Submit` 포커스를 설정할 단추 `Email ID` 클릭할 때 텍스트 상자 필드:
+
+![포커스 규칙 설정](/help/forms/assets/custom-function-set-focus.png)
+
+다음의 경우 을 보여 주는 아래 스크린샷을 참조하십시오. `Submit` 단추를 클릭하면 포커스가 `Email ID` 필드:
+
+![포커스 규칙 설정](/help/forms/assets/custom-function-set-focus-form.png)
+
+>[!NOTE]
+>
+> 선택 사항을 사용할 수 있습니다 `$focusOption` 매개 변수, 를 사용하여 를 기준으로 다음 또는 이전 필드에 `email` 필드.
+
++++
+
++++ **Usecase**: 다음을 사용하여 반복 가능한 패널 추가 또는 삭제 `dispatchEvent` 속성
+
+에 설명된 대로 다음 코드 행을 추가합니다. [create-custom-function](#create-custom-function) 섹션, 다음 경우에 패널 추가 `Add Traveler` 버튼을 클릭할 때 사용할 수 있는 `dispatchEvent` 속성:
+
+```javascript
+/**
+ * Tests add instance with dispatchEvent
+ * @name testAddInstance
+ * @param {scope} globals
+ */
+function testAddInstance(globals)
+{
+    var repeatablePanel = globals.form.traveler;
+    globals.functions.dispatchEvent(repeatablePanel,'addInstance');
+}
+```
+
+에 규칙을 추가하겠습니다. `Add Traveler` 단추를 클릭하면 반복 가능한 패널이 추가됩니다.
+
+![패널 규칙 추가](/help/forms/assets/custom-function-add-panel.png)
+
+아래의 gif를 참조하십시오. 이는 `Add Traveler` 단추를 클릭하면 패널이 을 사용하여 추가됩니다. `dispatchEvent` 속성:
+
+![패널 추가](/help/forms/assets/custom-function-add-panel.gif)
+
+마찬가지로 다음에 설명된 대로 다음 코드 행을 추가합니다. [create-custom-function](#create-custom-function) 섹션, 다음 경우에 패널 삭제 `Delete Traveler` 버튼을 클릭할 때 사용할 수 있는 `dispatchEvent` 속성:
+
+```javascript
+/**
+ 
+ * @name testRemoveInstance
+ * @param {scope} globals
+ */
+function testRemoveInstance(globals)
 {
     var repeatablePanel = globals.form.traveler;
     globals.functions.dispatchEvent(repeatablePanel, 'removeInstance');
 } 
-
 ```
-Let us add a rule to the `Delete Traveler` button to delete the repeatable panel when it is clicked:
 
-![Delete Panel Rule](/help/forms/assets/custom-function-delete-panel.png)
+에 규칙을 추가하겠습니다. `Delete Traveler` 단추를 클릭하면 반복 가능한 패널이 삭제됩니다.
 
-Refer to the screenshot below, which demonstrates that when the `Delete Traveler` button is clicked, the traveler panel is deleted using the `dispatchEvent` property:
+![패널 규칙 삭제](/help/forms/assets/custom-function-delete-panel.png)
 
-![Delete Panel](/help/forms/assets/customg)
--->
+아래의 gif를 참조하십시오. 이는 `Delete Traveler` 버튼을 클릭하면 트래블러 패널이 `dispatchEvent` 속성:
+
+![패널 삭제](/help/forms/assets/custom-function-delete-panel.gif)
+
 
 ## 사용자 지정 기능에 대한 캐싱 지원
 
