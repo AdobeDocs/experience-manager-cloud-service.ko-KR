@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: b7e8fd902bb2fe98e183b7d987b87fee69e48337
+source-git-commit: 3e63cfc65ea28a481b50f431483a13c2fd80853c
 workflow-type: tm+mt
-source-wordcount: '1865'
-ht-degree: 22%
+source-wordcount: '1903'
+ht-degree: 21%
 
 ---
 
@@ -234,3 +234,9 @@ AEM 6.5와 유사하게 Apache/Dispatcher는 게시 저장소의 특정 위치�
 ## 마이그레이션 도구 {#migration-tools}
 
 [여기](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)에서 마이그레이션 도구의 전체 목록을 찾을 수 있습니다.
+
+## Experience Cloud 릴리스 정보 {#experience-cloud}
+
+다른 Experience Cloud 응용 프로그램의 릴리스에 대한 정보를 찾을 수 있습니다 [여기](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current).
+Experience Cloud 릴리스 정보 업데이트에 대한 월별 이메일 알림을 받으려면 [Adobe 우선 순위 제품 업데이트](https://www.adobe.com/kr/subscription/priority-product-update.html).
+
