@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: f2701b35c2bc64e7bb049dc49632b7127923970d
 workflow-type: tm+mt
-source-wordcount: '1478'
-ht-degree: 5%
+source-wordcount: '1648'
+ht-degree: 1%
 
 ---
 
@@ -18,16 +18,57 @@ ht-degree: 5%
 
 Adobe Experience Manager에는 이미지 및 렌더링 결과를 조정 및 최적화하기 위한 100개 이상의 Dynamic Media 이미지 게재 명령이 포함되어 있습니다. 다음 지침은 몇 가지 필수 명령과 모범 사례를 사용하여 프로세스를 간소화하고 좋은 결과를 빠르게 얻을 수 있도록 도와줍니다.
 
-## 이미지 형식 우수 사례(`&fmt=`) {#best-practices-for-image-format-fmt}
+<!-- ADDED THE FOLLOWING TOPIC AS PER CQDOC-21594 -->
 
-* JPG 또는 PNG는 최상의 품질과 관리 가능한 크기 및 무게로 이미지를 전달하는 데 가장 적합한 옵션입니다.
-* URL에 format 명령이 제공되지 않으면 Dynamic Media 이미지 게재의 기본값은 게재 JPG입니다.
-* JPG은 10:1의 비율로 압축되며 일반적으로 더 작은 이미지 파일 크기를 생성합니다. 이미지에 흰색 배경이 포함된 경우를 제외하고 PNG는 약 2:1의 비율로 압축됩니다. 일반적으로 PNG 파일 크기는 JPG 파일보다 큽니다.
-* JPG은 손실 압축을 사용합니다. 즉, 압축하는 동안 그림 요소(픽셀)가 삭제됩니다. 반면에 PNG는 무손실 압축을 사용합니다.
-* JPG은 종종 예리한 가장자리와 대비를 갖는 합성 이미지보다 더 충실도 높은 사진 이미지를 압축합니다.
-* 이미지에 투명도가 포함되어 있는 경우 JPG이 투명도를 지원하지 않으므로 PNG를 사용합니다.
+## Dynamic Media에서 스마트 이미징 활성화 {#bp-enable-smart-imaging}
 
-이미지 형식에 대한 우수 사례로서, 가장 일반적인 설정으로 시작합니다 `&fmt=JPG`.
+**스마트 이미징:**
+
+* Dynamic Media에서 스마트 이미징을 활성화하면 클라이언트 브라우저 기능을 기반으로 이미지 형식, 크기 및 품질을 자동으로 최적화할 수 있습니다.
+자세히 알아보시겠습니까? 다음으로 이동 [스마트 이미징](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq)
+* 이러한 매개 변수를 동적으로 조정하여 이미지 전달 성능을 향상시킵니다.
+* 자체 평가 도구를 사용하여 스마트 이미징을 평가할 수 있습니다 [스냅샷](https://snapshot.scene7.com/)
+
+**이미지 형식:**
+
+* 명시적 사용 방지 `fmt=webp` 또는 `fmt=avif` 사용 사례에 특별히 필요하지 않은 경우 URL의 명령.
+* Smart Imaging은 최적의 포맷을 자동으로 선택하므로 최적의 대역폭을 확보할 수 있습니다.
+
+**기본 동작:**
+
+* URL에 format 명령이 지정되지 않고 스마트 이미징이 활성화되지 않은 경우 Dynamic Media 이미지 게재는 기본적으로 JPEG 형식을 사용합니다.
+
+이미지 형식에 대한 정보에 입각한 선택을 하고 스마트 이미징을 활성화하면 성능과 사용자 경험에 상당한 영향을 미칠 수 있습니다.
+
+
+<!-- ADDED THE FOLLOWING TOPIC AS PER CQDOC-21594 -->
+
+## 소스 이미지 선택 모범 사례 {#bp-select-source-image}
+
+소스 이미지 작업에 대한 필수 고려 사항:
+
+* **소스 이미지 형식:**
+   * PNG, TIFF 또는 PSD과 같은 무손실 형식을 사용하면 압축 아티팩트 없이 이미지 품질이 높게 유지됩니다.
+   * 이러한 형식은 모든 원본 데이터를 보존하므로 편집과 추가 처리에 이상적입니다.
+* **소스 이미지 크기:**
+   * 고해상도 이미지로 시작하면 보다 디테일과 유연성이 제공됩니다.
+   * 여러 디바이스 또는 화면 해상도와 같이 서로 다른 크기로 이미지를 표시해야 하는 경우 소스 이미지의 크기가 클수록 더 나은 스케일링이 가능합니다.
+   * 확대/축소를 지원하는 이미지(예: 제품 사진)의 경우 가장 긴 면에서 약 2,000픽셀 이상의 치수를 대상으로 합니다.
+   * 확대/축소가 필요하지 않은 로고 또는 배너는 의도한 사용에 필요한 최대 크기로 업로드할 수 있습니다.
+
+소스 수준에서 이러한 신중하게 선택함으로써 시각적 콘텐츠의 전반적인 품질에 크게 기여할 수 있습니다.
+
+<!-- REMOVED TOPIC AS PER CQDOC-21594
+## Best practices for image format (`&fmt=`) {#best-practices-for-image-format-fmt}
+
+* JPG or PNG are the best choices to deliver images in good quality and with manageable size and weight.
+* If no format command is supplied in the URL, Dynamic Media Image Delivery defaults to JPG for delivery.
+* JPG compresses at a ratio of 10:1 and usually produces smaller image file sizes. PNG compresses at a ratio of about 2:1, except when images contain a white background. Typically though, PNG file sizes are larger than JPG files.
+* JPG uses lossy compression, meaning that picture elements (pixels) are dropped during compression. PNG on the other hand uses lossless compression.
+* JPG often compresses photographic images with better fidelity than synthetic images with sharp edges and contrast.
+* If your images contain transparency, use PNG because JPG does not support transparency.
+
+As a best practice for image format, start with the most common setting `&fmt=JPG`. -->
 
 ## 이미지 크기에 대한 우수 사례 {#best-practices-for-image-size}
 
@@ -44,13 +85,13 @@ Adobe Experience Manager에는 이미지 및 렌더링 결과를 조정 및 최�
 
 * 모범 사례 백서 [Adobe Dynamic Media Classic 이미지 품질 및 선명하게 하기 우수 사례](/help/assets/dynamic-media/assets/sharpening_images.pdf) Experience Manager에 적용됩니다.
 
-* 시청 [Experience Manager에서 이미지 선명하게 하기 사용 - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
+* 시청 [Experience Manager에서 이미지 선명하게 하기 사용 - Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
 
 Experience Manager을 사용하면 수집, 게재 또는 둘 다에 대해 이미지를 선명하게 할 수 있습니다. 그러나 일반적으로 이미지를 선명하게 하는 데는 한 가지 방법이나 다른 방법만 사용하는 것이 가장 좋지만 둘 다 사용하지 않는 것이 좋습니다. URL에서 전달 시 이미지를 선명하게 하면 일반적으로 최상의 결과를 얻을 수 있습니다.
 
 사용할 수 있는 이미지 선명하게 하기 방법에는 두 가지가 있습니다.
 
-* 단순 선명하게 하기( `&op_sharpen`) - Photoshop에서 사용되는 선명 효과 필터와 유사하게, 간단한 선명 효과는 동적 크기 조정 후 이미지의 최종 보기에 기본 선명 효과를 적용합니다. 그러나 이 메서드는 사용자가 구성할 수 없습니다. 가장 좋은 방법은 필요한 경우가 아니면 &amp;op_sharpen을 사용하지 않는 것입니다.
+* 단순 선명하게 하기( `&op_sharpen`) - Photoshop에서 사용되는 선명 효과 필터와 유사하게, 간단한 선명 효과는 동적 크기 조정 후 이미지의 최종 보기에 기본 선명 효과를 적용합니다. 그러나 이 메서드는 사용자가 구성할 수 없습니다. 가장 좋은 방법은 를 사용하지 않는 것입니다. `&op_sharpen` 필요한 경우가 아니면
 * 언샵 마스킹( `&op_USM`) - 언샵 마스킹은 업계 표준 선명하게 하기 필터입니다. 가장 좋은 방법은 아래 지침에 따라 선명하지 않은 마스킹으로 이미지를 선명하게 하는 것입니다. 언샵 마스킹을 사용하면 다음 세 가지 매개 변수를 제어할 수 있습니다.
 
    * `&op_sharpen=`양,반경,임계값
@@ -58,20 +99,19 @@ Experience Manager을 사용하면 수집, 게재 또는 둘 다에 대해 이�
       * **[!UICONTROL 금액]** (0-5, 효과의 강도.)
       * **[!UICONTROL 반경]** (0-250, 선명하게 표시된 개체 주위에 그려진 &quot;선명하게 하기 선&quot;의 폭(픽셀 단위)입니다.)
 
-      매개변수 반경과 양은 서로 영향을 받습니다. 감소된 반경은 양을 증가시킴으로써 보상될 수 있다. [반경]을 사용하면 값이 낮을수록 가장자리 픽셀만 선명하게 되고 값이 높을수록 넓은 폭의 픽셀이 선명하게 되므로 더 세밀하게 제어할 수 있습니다.
+     매개변수 반경과 양은 서로 영향을 받습니다. 감소된 반경은 양을 증가시킴으로써 보상될 수 있다. [반경]을 사용하면 값이 낮을수록 가장자리 픽셀만 선명하게 되고 값이 높을수록 넓은 폭의 픽셀이 선명하게 되므로 더 세밀하게 제어할 수 있습니다.
 
       * **[!UICONTROL 임계값]** (0-255, 효과 민감도)
-      This parameter determines how different the sharpened pixels must be from the surrounding area before they are considered edge pixels and the filter sharpens them. 다음 **[!UICONTROL 임계값]** 매개 변수를 사용하면 피부 색조와 같이 유사한 색상으로 영역을 너무 선명하게 하지 않도록 할 수 있습니다. For example, a threshold value of 12 ignores slight variations in skin tone brightness to avoid adding &quot;noise&quot;, while still adding edge contrast to high contrast areas, such as where eyelashes meet skin.
 
-      필터에 사용하는 모범 사례를 포함하여 이러한 세 매개 변수를 설정하는 방법에 대한 자세한 내용은 다음 리소스를 참조하십시오.
+     이 매개 변수는 가장자리 픽셀로 간주되기 전에 선명해진 픽셀이 주변 영역과 얼마나 달라야 하는지 결정하고 필터가 선명하게 합니다. 다음 **[!UICONTROL 임계값]** 매개 변수를 사용하면 피부 색조와 같이 유사한 색상으로 영역을 너무 선명하게 하지 않도록 할 수 있습니다. 예를 들어, 임계값 12는 피부 색조 밝기의 미세한 변화를 무시하여 &quot;노이즈&quot;를 추가하는 것을 피하는 동시에 속눈썹이 피부와 만나는 지점과 같은 고대비 영역에 가장자리 대비를 추가합니다.
+
+     필터에 사용하는 모범 사례를 포함하여 이러한 세 매개 변수를 설정하는 방법에 대한 자세한 내용은 다음 리소스를 참조하십시오.
 
       * 모범 사례 백서 [Adobe Dynamic Media Classic 이미지 품질 및 선명하게 하기 우수 사례](/help/assets/dynamic-media/assets/sharpening_images.pdf) Experience Manager에 적용됩니다.
 
-      * 시청 [Experience Manager에서 이미지 선명하게 하기 사용 - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
+      * 시청 [Experience Manager에서 이미지 선명하게 하기 사용 - Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
 
       * Experience Manager을 사용하면 네 번째 매개 변수인 모노크롬(0,1)을 제어할 수도 있습니다. 이 매개 변수는 값 0을 사용하여 각 색상 구성 요소에 언샵 마스킹을 별도로 적용할지 또는 값 1을 사용하여 이미지 밝기/강도에 적용할지 여부를 결정합니다.
-
-
 
 언샵 마스크 반경 매개 변수로 시작하는 것이 좋습니다. 다음으로 시작할 수 있는 반경 설정은 다음과 같습니다.
 
@@ -87,7 +127,7 @@ Experience Manager을 사용하면 수집, 게재 또는 둘 다에 대해 이�
 ### JPEF 압축에 대한 우수 사례(`&qlt=`) {#best-practices-for-jpef-compression-qlt}
 
 * 이 매개 변수는 JPG 인코딩 품질을 제어합니다. 값이 높을수록 이미지 품질은 높지만 파일 크기는 커집니다. 또는 값이 낮을수록 이미지 품질은 낮지만 파일 크기는 작아집니다. 이 매개 변수의 범위는 0~100입니다.
-* 품질을 최적화하려면 매개 변수 값을 100으로 설정하지 마십시오. 90 또는 95 및 100 설정의 차이는 거의 감지할 수 없지만 100이 있으면 이미지 파일의 크기가 불필요하게 증가합니다. 따라서 품질을 최적화하지만 이미지 파일이 너무 커지지 않도록 하려면 다음을 설정하십시오. `qlt= value` 90 또는 95로 업그레이드했습니다.
+* 품질을 최적화하려면 매개 변수 값을 100으로 설정하지 마십시오. 90 또는 95와 100 사이의 차이는 거의 감지할 수 없다. 그러나 100은 불필요하게 이미지 파일의 크기를 늘립니다. 따라서 품질을 최적화하지만 이미지 파일이 너무 커지지 않도록 하려면 다음을 설정하십시오. `qlt= value` 90 또는 95로 업그레이드했습니다.
 * 이미지 파일 크기는 작지만 이미지 품질을 허용 가능한 수준으로 유지하려면 `qlt= value` 80까지. 70 내지 75 미만의 값은 상당한 이미지 품질 저하를 초래한다.
 * 가장 좋은 방법은 중간에 머물기 위해 `qlt= value` 85세까지...
 * 에서 크로마 플래그 사용 `qlt=`
@@ -102,7 +142,7 @@ JPG 압축 사용에 대한 우수 사례로서 `&qlt=85,0`.
 매개 변수 `jpegSize` 는 메모리가 제한된 장치에 전달할 때 이미지가 특정 크기를 초과하지 않도록 하려는 경우 유용합니다.
 
 * 이 매개 변수는 KB 단위로 설정됩니다(`jpegSize=&lt;size_in_kilobytes&gt;`). 이미지 게재에 허용되는 최대 크기를 정의합니다.
-* `&jpegSize=` 이 JPG 압축 매개 변수와 상호 작용합니다. `&qlt=`. JPG 응답이 지정된 JPG 압축 매개 변수를 사용하는 경우(`&qlt=`)이 jpegSize 값을 초과하지 않으면 이미지가 `&qlt=` 정의된 대로. 그렇지 않으면, `&qlt=` 이미지가 최대 허용 크기에 맞을 때까지 또는 시스템이 이미지가 맞지 않는다고 판단하여 오류를 반환할 때까지 점차적으로 감소합니다.
+* `&jpegSize=` 이 JPG 압축 매개 변수와 상호 작용합니다. `&qlt=`. 지정된 JPG 압축 매개 변수를 사용하는 JPG 응답인 경우(`&qlt=`)이 jpegSize 값을 초과하지 않으면 이미지가 `&qlt=` 정의된 대로. 그렇지 않으면, `&qlt=` 이미지가 최대 허용 크기에 맞출 때까지 점차적으로 줄어듭니다. 또는 시스템이 적합할 수 없다고 판단하고 오류를 반환할 때까지.
 
 모범 사례로서 다음을 설정합니다. `&jpegSize=` 매개 변수 추가 `&qlt=` 메모리가 제한된 장치에 JPG 이미지를 전달하는 경우.
 
@@ -112,7 +152,7 @@ JPG 압축 사용에 대한 우수 사례로서 `&qlt=85,0`.
 
 `fmt=jpg&qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0`
 
-이러한 설정 제품의 조합은 대부분의 상황에서 뛰어난 결과를 제공합니다.
+이러한 설정의 조합은 대부분의 상황에서 탁월한 결과를 생성합니다.
 
 이미지를 추가로 최적화해야 하는 경우 반지름이 0.2 또는 0.3으로 설정된 것부터 시작하여 선명하게 하기(언샵 마스킹) 매개 변수를 점진적으로 미세 조정합니다. 그런 다음 양을 1.75에서 최대 4까지 점진적으로 늘립니다(Photoshop의 경우 400%에 해당). 원하는 결과가 달성되었는지 확인합니다.
 
