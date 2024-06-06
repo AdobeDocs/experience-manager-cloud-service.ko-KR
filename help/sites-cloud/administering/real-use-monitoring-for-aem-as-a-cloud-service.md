@@ -1,7 +1,7 @@
 ---
 title: AEM에 대한 실시간 사용 모니터링 as a Cloud Service
 description: RUM(Real Use Monitoring)을 사용하여 웹 사이트 또는 애플리케이션의 디지털 사용자 경험을 실시간으로 캡처하고 분석하는 방법에 대해 알아봅니다.
-source-git-commit: a15f973c21044e16751401bd0ffb256a4d0fb17d
+source-git-commit: d2997213d47d398efdb7ce3810fa0959ece072c6
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 0%
@@ -10,6 +10,7 @@ ht-degree: 0%
 
 
 >[!NOTE]
+>
 >다음을 발표하게 되어 기쁩니다. [GA 롤아웃](/help/release-notes/release-notes-cloud/release-notes-current.md#real-use-monitoring) Real Use Monitoring 서비스의 경우 클라이언트측 데이터 수집입니다. 자동화된 서비스이며 고객 설정이 필요하지 않습니다.
 
 # AEM에 대한 실시간 모니터링 서비스 as a Cloud Service 사용 {#real-use-monitoring-service-for-aem-as-a-cloud-service}
@@ -113,6 +114,6 @@ RUM 데이터를 분석할 때 페이지 보기 수 및 기타 성능 지표에 
 
 1. **어떻게 옵트아웃할 수 있습니까?**
 
-상당한 이점과 디지털 경험을 최적화할 수 있도록 해 주는 RUM(Real Use Monitoring)을 사용하는 것이 좋습니다. 웹 사이트 성능을 개선하는 데 도움이 되는 유용한 통찰력을 제공할 수 있습니다. 이 서비스는 매끄럽도록 설계되었으며 웹 사이트 성능에 영향을 주지 않습니다.
+   상당한 이점과 디지털 경험을 최적화할 수 있도록 해 주는 RUM(Real Use Monitoring)을 사용하는 것이 좋습니다. 웹 사이트 성능을 개선하는 데 도움이 되는 유용한 통찰력을 제공할 수 있습니다. 이 서비스는 매끄럽도록 설계되었으며 웹 사이트 성능에 영향을 주지 않습니다.
 
-옵트아웃은 이러한 통찰력을 놓친다는 것을 의미합니다. 그러나 문제가 발생하면 Adobe 지원 센터에 문의하십시오.
+   옵트아웃은 이러한 통찰력을 놓친다는 것을 의미합니다. 그러나 문제가 발생하면 Adobe 지원 센터에 문의하십시오.
