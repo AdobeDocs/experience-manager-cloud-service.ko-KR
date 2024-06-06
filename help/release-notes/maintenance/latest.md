@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: b7e8fd902bb2fe98e183b7d987b87fee69e48337
+source-git-commit: f52b5f763277c9288d5dd30b01cfb7a4afeddda7
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 36%
+source-wordcount: '384'
+ht-degree: 33%
 
 ---
 
@@ -44,6 +44,10 @@ Experience Manager 안내서에서 수정된 새로운 기능 및 향상된 기�
 ### 알려진 문제 {#known-issues-16544}
 
 없음.
+
+### 변경 사항 공지 {#change-notice-16544}
+
+2024년 9월부터 AEM에서 Sling 모델 내보내기 프레임워크를 통해 리소스 확인자의 직렬화를 as a Cloud Service으로 비활성화합니다. 다음을 참조하십시오 [설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter) 을 참조하십시오.
 
 ### 사용 중단된 기능 및 API {#deprecated-16544}
 
