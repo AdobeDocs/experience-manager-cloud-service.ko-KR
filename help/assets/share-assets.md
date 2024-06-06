@@ -4,9 +4,9 @@ description: 링크, 다운로드 및 를 통한 공유 등의 방법을 사용�
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 1b4c5d985c71a84449a13b79fc00adea0443a631
+source-git-commit: 90da6851240add93de73dd6da46e54ffbf80a1d3
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '1835'
 ht-degree: 3%
 
 ---
@@ -116,12 +116,12 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 | 플레이스홀더 | 설명 |
 |---|-----|
-| ${emailSubject} | 이메일 제목 |
-| ${emailInitiator} | 이메일을 만든 사용자의 이메일 ID |
-| ${emailMessage} | 이메일 본문 |
-| ${pagePath} | 공유 링크의 URL |
-| ${linkExpiry} | 공유 링크 만료일 |
-| ${host.prefix} | 원본 [!DNL Experience Manager] 예: `http://www.adobe.com"` |
+| `${emailSubject}` | 이메일 제목 |
+| `${emailInitiator}` | 이메일을 만든 사용자의 이메일 ID |
+| `${emailMessage}` | 이메일 본문 |
+| `${pagePath}` | 공유 링크의 URL |
+| `${linkExpiry}` | 공유 링크 만료일 |
+| `${host.prefix}` | 원본 [!DNL Experience Manager] 예: `http://www.adobe.com"` |
 
 #### 사용자 지정된 이메일 템플릿 예 {#custom-email-template-example}
 
