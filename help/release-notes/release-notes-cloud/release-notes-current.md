@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3e63cfc65ea28a481b50f431483a13c2fd80853c
+source-git-commit: 05144cc11c3a3e99e4e76aa6c8720592e9ca7a9f
 workflow-type: tm+mt
-source-wordcount: '1903'
+source-wordcount: '1900'
 ht-degree: 21%
 
 ---
@@ -44,7 +44,12 @@ ht-degree: 21%
 
 ### Sites의 새로운 기능 {#sites-new-features}
 
-**Edge Delivery Services를 위한 AEM 작성**
+#### RUM(Real Use Monitoring) 데이터 서비스 {#real-use-monitoring}
+
+* **[RUM(Real Use Monitoring) 데이터 서비스가 이제 GA되었습니다.](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** AEM as a Cloud Service으로 클라이언트측 데이터 수집 활성화.
+클라이언트측 컬렉션인 실제 사용 모니터링 서비스 는 상호 작용을 보다 정확하게 반영하여 웹 사이트 참여를 안정적으로 측정합니다. 이를 통해 페이지 트래픽 및 성능에 대한 고급 통찰력을 보유한 고객이 사용할 수 있습니다. 페이지 성능에 대해 자세히 알아보고 향상시킬 수 있는 통찰력을 얻을 수 있는 좋은 기회입니다.
+
+### Edge Delivery Services을 위한 AEM 작성
 
 향상된 작성 환경을 위해 안정성 및 다양한 개선 사항이 개선되었습니다.
 
@@ -212,11 +217,6 @@ AEM 6.5와 유사하게 Apache/Dispatcher는 게시 저장소의 특정 위치�
 #### 동적 콘텐츠 로드를 위한 ESI(에지측 포함)(얼리 어답터 프로그램) {#esi-early-adopter}
 
 이제 Adobe 관리 CDN은 을 지원합니다. [ESI(Edge Side Includes)](/help/implementing/dispatcher/edge-side-includes.md), 에지 수준의 동적 웹 콘텐츠 어셈블리에 대한 마크업 언어입니다. ESI 스니펫을 포함하면 더 높은 TTL로 CDN의 전체 HTML 페이지를 캐시하는 동시에 더 높은 케이던스 업데이트(더 낮은 TTL)가 필요한 더 작은 섹션을 원본에서 더 자주 가져올 수 있습니다. <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
-
-#### RUM(Real User Monitoring) 데이터 서비스(얼리 어답터 프로그램)
-
-* **[RUM(Real Use Monitoring) 데이터 서비스가 이제 GA되었습니다.](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** AEM as a Cloud Service으로 클라이언트측 데이터 수집 활성화.
-클라이언트측 컬렉션인 실제 사용 모니터링 서비스 는 상호 작용을 보다 정확하게 반영하여 웹 사이트 참여를 안정적으로 측정합니다. 이를 통해 페이지 트래픽 및 성능에 대한 고급 통찰력을 보유한 고객이 사용할 수 있습니다. 페이지 성능에 대해 자세히 알아보고 향상시킬 수 있는 통찰력을 얻을 수 있는 좋은 기회입니다.
 
 ## [!DNL Experience Manager] 안내서 {#guides}
 
