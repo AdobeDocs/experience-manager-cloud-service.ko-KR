@@ -1,13 +1,12 @@
 ---
 title: 자산, 폴더 및 컬렉션 배포 및 공유
 description: 링크, 다운로드 및 를 통한 공유 등의 방법을 사용하여 디지털 에셋 배포 [!DNL Brand Portal], [!DNL desktop app], 및 [!DNL Asset Link].
-contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: 1b4c5d985c71a84449a13b79fc00adea0443a631
 workflow-type: tm+mt
-source-wordcount: '1647'
+source-wordcount: '1847'
 ht-degree: 3%
 
 ---
@@ -107,7 +106,43 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
    ![링크 공유 전자 메일](assets/link-sharing-email-notification.png)
 
-### 에셋 링크를 사용하여 에셋 다운로드
+### 이메일 템플릿 사용자 지정 {#customize-email-template}
+
+잘 설계된 템플릿은 전문성과 역량을 전달하여 메시지와 조직의 신뢰성을 향상시킵니다. 다음 [!DNL Adobe Experience Manager] 공유 링크가 포함된 이메일을 받는 수신자에게 전송되는 이메일 템플릿을 사용자 정의할 수 있습니다. 또한 사용자 지정된 이메일 템플릿을 사용하면 수신자의 이름을 지정하고 수신자와 관련된 특정 세부 정보를 참조하여 이메일 콘텐츠를 개인화할 수 있습니다. 이러한 개인적 접촉은 수신자로 하여금 가치를 느끼게 하고 참여를 높일 수 있다. 뿐만 아니라 맞춤형 템플릿을 사용하면 이메일이 로고, 색상 및 글꼴을 포함하여 브랜드 정체성과 일관성을 유지할 수 있습니다. 일관성은 수신자들 간의 브랜드 인지도와 신뢰를 강화합니다.
+
+#### 사용자 지정된 이메일 템플릿 형식 {#format-of-custom-email-template}
+
+이메일 템플릿은 일반 텍스트 또는 HTML을 사용하여 사용자 지정할 수 있습니다. 편집 가능한 기본 템플릿 링크는에서 찾을 수 있습니다. `/libs/settings/dam/adhocassetshare/en.txt`. 파일을 만들어 템플릿을 재정의할 수 있습니다 `/apps/settings/dam/adhocassetshare/en.txt`. 이메일 템플릿은 필요한 만큼 수정할 수 있습니다.
+
+| 플레이스홀더 | 설명 |
+|---|-----|
+| ${emailSubject} | 이메일 제목 |
+| ${emailInitiator} | 이메일을 만든 사용자의 이메일 ID |
+| ${emailMessage} | 이메일 본문 |
+| ${pagePath} | 공유 링크의 URL |
+| ${linkExpiry} | 공유 링크 만료일 |
+| ${host.prefix} | 원본 [!DNL Experience Manager] 예: `http://www.adobe.com"` |
+
+#### 사용자 지정된 이메일 템플릿 예 {#custom-email-template-example}
+
+```
+subject: ${emailSubject}
+
+<!DOCTYPE html>
+<html><body>
+<p><strong>${emailInitiator}</strong> invited you to review assets.</p>
+<p>${emailMessage}</p>
+<p>The shared link will be available until ${linkExpiry}.
+<p>
+    <a href="${pagePath}" target="_blank"><strong>Open</strong></a>
+</p>
+
+Sent from instance: ${host.prefix}
+
+</body></html>
+```
+
+### 에셋 링크를 사용하여 에셋 다운로드 {#download-assets-using-asset-link}
 
 공유 에셋 링크에 대한 액세스 권한이 있는 모든 사용자는 zip 폴더에 번들로 제공된 에셋을 다운로드할 수 있습니다. 사용자가 복사된 에셋 링크에 액세스하든 아니면 이메일을 통해 공유된 에셋 링크를 사용하든 다운로드 프로세스는 동일합니다.
 
@@ -211,7 +246,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 마케터와 사업 부문 사용자는 다음을 사용하여 승인된 자산을 크리에이티브 전문가와 쉽게 공유할 수 있습니다.
 
-* **Experience Manager 데스크탑 앱**: 앱이 Windows 및 Mac에서 작동합니다. 다음을 참조하십시오 [데스크탑 앱 개요](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). 인증된 데스크탑 사용자가 공유 에셋에 쉽게 액세스할 수 있는 방법을 알려면 다음을 참조하십시오. [에셋 검색 및 미리보기](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). 데스크탑 사용자는 예를 들어 새 이미지를 업로드하여 에셋을 만든 후 Experience Manager 사용자인 상대 사용자와 다시 공유할 수 있습니다. 다음을 참조하십시오 [데스크탑 앱을 사용하여 자산 업로드](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **Experience Manager 데스크탑 앱**: 앱이 Windows 및 Mac에서 작동합니다. 다음을 참조하십시오 [데스크탑 앱 개요](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). 인증된 데스크탑 사용자가 공유 에셋에 쉽게 액세스할 수 있는 방법을 알려면 다음을 참조하십시오. [에셋 검색 및 미리보기](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). 데스크탑 사용자는 예를 들어 새 이미지를 업로드하여 에셋을 만든 후 Experience Manager 사용자인 상대 사용자와 다시 공유할 수 있습니다. 다음을 참조하십시오 [데스크탑 앱을 사용하여 에셋 업로드](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
 * **Adobe 에셋 링크**: 크리에이티브 전문가는 내에서 직접 에셋을 검색하고 사용할 수 있습니다 [!DNL Adobe InDesign], [!DNL Adobe Illustrator], 및 [!DNL Adobe Photoshop].
 
@@ -223,7 +258,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-사용자와 공유할 자산의 URL을 생성하려면 링크 공유 대화 상자를 사용합니다. 다음 위치에 관리자 권한이 있거나 읽기 권한이 있는 사용자: `/var/dam/share` 위치에서는 공유된 링크를 볼 수 있습니다. 링크를 통해 에셋을 공유하면 외부인에 먼저 로그인할 필요 없이 리소스를 사용할 수 있는 편리한 방법입니다 [!DNL Assets].
+사용자와 공유할 자산의 URL을 생성하려면 링크 공유 대화 상자를 사용합니다. 다음 위치에 관리자 권한이 있거나 읽기 권한이 있는 사용자: `/var/dam/share` 위치에서는 공유된 링크를 볼 수 있습니다. 링크를 통해 에셋을 공유하면 외부 당사자가 먼저 로그인할 필요 없이 리소스를 사용할 수 있는 편리한 방법입니다 [!DNL Assets].
 
 >[!NOTE]
 >
@@ -266,7 +301,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### 사용할 구성 [!DNL Adobe Asset Link] {#configure-asset-link}
 
-Adobe Asset Link는 콘텐츠 작성 프로세스에서 크리에이티브와 마케터 간의 협업을 간소화합니다. 그것은 다음을 연결합니다 [!DNL Adobe Experience Manager Assets] 포함 [!DNL Creative Cloud] 데스크탑 앱 [!DNL Adobe InDesign], [!DNL Adobe Photoshop], 및 [!DNL Adobe Illustrator]. 다음 [!DNL Adobe Asset Link] 패널을 통해 크리에이티브가에 저장된 컨텐츠에 액세스하고 이를 수정할 수 있습니다. [!DNL Assets] 가장 익숙한 크리에이티브 앱을 종료하지 않고
+Adobe Asset Link는 콘텐츠 작성 프로세스에서 크리에이티브와 마케터 간의 협업을 간소화합니다. 그것은 다음을 연결합니다 [!DNL Adobe Experience Manager Assets] 포함 [!DNL Creative Cloud] 데스크탑 앱, [!DNL Adobe InDesign], [!DNL Adobe Photoshop], 및 [!DNL Adobe Illustrator]. 다음 [!DNL Adobe Asset Link] 패널을 통해 크리에이티브가에 저장된 컨텐츠에 액세스하고 이를 수정할 수 있습니다. [!DNL Assets] 가장 익숙한 크리에이티브 앱을 종료하지 않고
 
 다음을 참조하십시오 [구성 방법 [!DNL Assets] 함께 사용 [!DNL Adobe Asset Link]](https://helpx.adobe.com/kr/enterprise/using/configure-aem-assets-for-asset-link.html).
 
@@ -300,3 +335,4 @@ Adobe Asset Link는 콘텐츠 작성 프로세스에서 크리에이티브와 �
 * [컬렉션 관리](manage-collections.md)
 * [일괄 메타데이터 가져오기](metadata-import-export.md)
 * [AEM 및 Dynamic Media에 자산 게시](/help/assets/publish-assets-to-aem-and-dm.md)
+
