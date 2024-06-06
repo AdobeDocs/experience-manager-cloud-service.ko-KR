@@ -1,19 +1,19 @@
 ---
 title: AEM에 대한 실시간 사용 모니터링 as a Cloud Service
 description: RUM(Real Use Monitoring)을 사용하여 웹 사이트 또는 애플리케이션의 디지털 사용자 경험을 실시간으로 캡처하고 분석하는 방법에 대해 알아봅니다.
-source-git-commit: d2997213d47d398efdb7ce3810fa0959ece072c6
+exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
+source-git-commit: 948eb304c17ad86dcbab2b0685428ae51f38f488
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 0%
 
 ---
 
+# AEM에 대한 실시간 모니터링 서비스 as a Cloud Service 사용 {#real-use-monitoring-service-for-aem-as-a-cloud-service}
 
 >[!NOTE]
 >
 >다음을 발표하게 되어 기쁩니다. [GA 롤아웃](/help/release-notes/release-notes-cloud/release-notes-current.md#real-use-monitoring) Real Use Monitoring 서비스의 경우 클라이언트측 데이터 수집입니다. 자동화된 서비스이며 고객 설정이 필요하지 않습니다.
-
-# AEM에 대한 실시간 모니터링 서비스 as a Cloud Service 사용 {#real-use-monitoring-service-for-aem-as-a-cloud-service}
 
 >[!INFO]
 >
