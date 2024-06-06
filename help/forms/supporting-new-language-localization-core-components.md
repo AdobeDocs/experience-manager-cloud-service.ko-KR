@@ -4,9 +4,9 @@ description: 적응형 양식에 대한 새 로케일을 추가하는 방법을 
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 9cb3b52d0cf172c16777eadbc4d78b267c3db513
+source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
 workflow-type: tm+mt
-source-wordcount: '2028'
+source-wordcount: '2068'
 ht-degree: 2%
 
 ---
@@ -369,6 +369,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 ## 새로운 현지화 기능 지원을 위한 모범 사례 {#best-practices}
 
 * Adobe은 적응형 양식을 만든 후 번역 프로젝트를 만들 것을 권장합니다. 현지화 프로세스를 간소화합니다.
+* 숫자 상자 및 날짜 선택기 구성 요소가 특정 로케일로 변환되면 형식 문제가 발생할 수 있습니다. 이를 완화하려면 **언어** 옵션이 의 구성 대화 상자에 통합되었습니다. [날짜 선택기 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/number-input#formats-configure-tab) 및 [숫자 상자 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
 
 
 * 새 필드 처리:

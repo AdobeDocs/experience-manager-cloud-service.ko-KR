@@ -1,26 +1,26 @@
 ---
-title: AEM Forms Edge Delivery Services과 함께 reCAPTCHA 사용
+title: AEM Forms as a Cloud Service Edge Delivery Services과 함께 reCAPTCHA 사용
 description: EDS 양식에서 Google reCAPTCHA 사용
 feature: Edge Delivery Services
 exl-id: ac104e23-f175-435f-8414-19847efa5825
-source-git-commit: eadfc3d448bd2fadce08864ab65da273103a6212
+source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 1%
+source-wordcount: '200'
+ht-degree: 87%
 
 ---
 
 
-# AEM Forms Edge Delivery Services과 함께 reCAPTCHA 사용
+# AEM Forms as a Cloud Service Edge Delivery Services과 함께 reCAPTCHA 사용
 
-reCAPTCHA는 사기성 활동, 스팸 및 오용으로부터 웹 사이트를 보호하는 데 사용되는 인기있는 도구입니다. Edge Delivery Services에서 적응형 Forms 블록은 Google reCAPTCHA를 추가하여 인간과 보트를 구분하는 기능을 제공합니다. 이 기능을 사용하면 웹 사이트를 스팸 및 오용으로부터 보호할 수 있습니다.
-예를 들어, 여행 시작일과 종료일, 객실 예산, 예상 여행 비용, 여행자 정보 등의 데이터를 수집하는 조회 양식을 생각해 보십시오. 이러한 경우 악성 사용자가 피싱 이메일을 보내거나 스팸봇을 이용해 관련성이 없거나 해로운 콘텐츠로 유출하는 등의 목적으로 양식을 악용할 위험이 있다. reCAPTCHA를 통합하면 제출 내용이 실제 사용자로부터 받은 것임을 확인하여 보안을 강화함으로써 스팸 항목을 효과적으로 최소화할 수 있습니다.
+reCAPTCHA는 사기 행위, 스팸, 오용으로부터 웹 사이트를 보호하는 데 사용되는 인기 도구입니다. Edge Delivery Services에서 적응형 양식 블록은 인간과 봇을 구별하도록 Google reCAPTCHA를 추가하는 기능을 제공합니다. 이 기능을 사용하여 사용자는 스팸 및 오용으로부터 웹 사이트를 보호할 수 있습니다.
+여행 시작 및 종료 날짜, 객실 예산, 여행 예상 비용 및 여행자 정보 등의 데이터를 수집하는 문의 양식을 고려해 보십시오. 이러한 경우, 악의적인 사용자가 피싱 이메일을 보내거나 스팸봇을 사용하여 관련이 없거나 유해한 콘텐츠를 대량으로 보내는 등의 목적으로 양식을 악용할 위험이 있습니다. reCAPTCHA를 통합하면 실제 사용자가 제출한 것인지 확인해서 스팸 항목을 효과적으로 최소화하여 보안을 강화합니다.
 
-Edge Delivery Services은 **점수 기준(v3)-reCAPTCHA** (적응형 양식 블록)
+Edge Delivery Services는 적응형 양식 블록에 대해 **점수 기반(v3)-reCAPTCHA**&#x200B;만 지원합니다.
 
 ![Recaptcha V2](/help/forms/assets/recaptcha-v2-invisible.png)
 
-다음 **reCAPT차** 기능은 프리릴리스 프로그램 아래에 있습니다. 액세스 권한을 요청하려면 **reCAPT차** AEM Forms Edge Delivery Services의 경우 회사 주소에서 mailto:aem-forms-ea@adobe.com으로 이메일을 보내십시오.
+**reCAPTCHA** 기능은 프리릴리스 프로그램에 포함되어 있습니다. AEM Forms Edge Delivery Services의 **reCAPTCHA** 기능에 대한 액세스를 요청하려면 회사 주소에서 mailto:aem-forms-ea@adobe.com로 이메일을 보내십시오.
 
 <!--
 By the end of this article, you learn to:
