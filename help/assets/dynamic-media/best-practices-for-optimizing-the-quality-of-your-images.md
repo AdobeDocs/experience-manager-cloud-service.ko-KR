@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: f2701b35c2bc64e7bb049dc49632b7127923970d
+source-git-commit: 7820492f462d2b5824e408429332b5adf2e67aab
 workflow-type: tm+mt
 source-wordcount: '1648'
 ht-degree: 1%
@@ -25,9 +25,9 @@ Adobe Experience Manager에는 이미지 및 렌더링 결과를 조정 및 최�
 **스마트 이미징:**
 
 * Dynamic Media에서 스마트 이미징을 활성화하면 클라이언트 브라우저 기능을 기반으로 이미지 형식, 크기 및 품질을 자동으로 최적화할 수 있습니다.
-자세히 알아보시겠습니까? 다음으로 이동 [스마트 이미징](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq)
+자세히 알아보시겠습니까? 다음으로 이동 [스마트 이미징](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq).
 * 이러한 매개 변수를 동적으로 조정하여 이미지 전달 성능을 향상시킵니다.
-* 자체 평가 도구를 사용하여 스마트 이미징을 평가할 수 있습니다 [스냅샷](https://snapshot.scene7.com/)
+* 자체 평가 도구를 사용하여 스마트 이미징을 평가할 수 있습니다 [스냅샷](https://snapshot.scene7.com/).
 
 **이미지 형식:**
 
