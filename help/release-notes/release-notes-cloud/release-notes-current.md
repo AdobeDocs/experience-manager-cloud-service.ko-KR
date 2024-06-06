@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 05144cc11c3a3e99e4e76aa6c8720592e9ca7a9f
+source-git-commit: e6de1fc47eb2b9c3ba5b115c74b874016449bc20
 workflow-type: tm+mt
-source-wordcount: '1900'
+source-wordcount: '1942'
 ht-degree: 21%
 
 ---
@@ -44,12 +44,28 @@ ht-degree: 21%
 
 ### Sites의 새로운 기능 {#sites-new-features}
 
+#### AEM 번역 통합 {#translation-integration}
+
+이제 콘텐츠 번역 작업 및 워크플로는 이벤트를 트리거하여 외부 애플리케이션에서 관련 프로세스 단계 및 상태를 추적할 수 있습니다. 다음 이벤트가 생성되고 있습니다. 사용자는 Adobe Developer 콘솔을 사용하여 이벤트에 가입할 수 있습니다.
+
+* `TRANSLATION_JOB_CREATED`
+* `TRANSLATION_JOB_CONTENT_ADDITION_STARTED`
+* `TRANSLATION_JOB_CONTENT_ADDITION_COMPLETED`
+* `TRANSLATION_JOB_CONTENT_DELETION_STARTED`
+* `TRANSLATION_JOB_CONTENT_DELETION_COMPLETED`
+* `TRANSLATION_JOB_COMMITTED_FOR_TRANSLATION`
+* `TRANSLATION_JOB_READY_FOR_REVIEW`
+* `TRANSLATION_JOB_APPROVED`
+* `TRANSLATION_JOB_COMPLETED`
+* `TRANSLATION_JOB_CANCELLED`
+* `TRANSLATION_JOB_ERROR`
+
 #### RUM(Real Use Monitoring) 데이터 서비스 {#real-use-monitoring}
 
 * **[RUM(Real Use Monitoring) 데이터 서비스가 이제 GA되었습니다.](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** AEM as a Cloud Service으로 클라이언트측 데이터 수집 활성화.
-클라이언트측 컬렉션인 실제 사용 모니터링 서비스 는 상호 작용을 보다 정확하게 반영하여 웹 사이트 참여를 안정적으로 측정합니다. 이를 통해 페이지 트래픽 및 성능에 대한 고급 통찰력을 보유한 고객이 사용할 수 있습니다. 페이지 성능에 대해 자세히 알아보고 향상시킬 수 있는 통찰력을 얻을 수 있는 좋은 기회입니다.
+클라이언트 측 컬렉션인 Real Use 모니터링 서비스는 상호 작용을 보다 정확하게 반영하여 웹 사이트 참여를 안정적으로 측정합니다. 이를 통해 페이지 트래픽 및 성능에 대한 고급 통찰력을 보유한 고객이 사용할 수 있습니다. 페이지 성능에 대해 자세히 알아보고 향상시킬 수 있는 통찰력을 얻을 수 있는 좋은 기회입니다.
 
-### Edge Delivery Services을 위한 AEM 작성
+#### Edge Delivery Services을 위한 AEM 작성 {#edge-enhancements}
 
 향상된 작성 환경을 위해 안정성 및 다양한 개선 사항이 개선되었습니다.
 
@@ -128,7 +144,7 @@ AEM Forms에서는 여러 CAPTCHA 옵션을 제공하여 특정 요구 사항에
 
 ### Forms 서비스
 
-Forms 서비스는 데이터 캡처를 위한 대화형 PDF forms을 생성합니다. 또한 기존 대화형 PDF 양식에서 데이터 내보내기를 가져오고 제출된 데이터의 유효성을 검사하는 데 사용할 수도 있습니다. 다음은 기능의 분류입니다.
+Forms 서비스는 데이터 캡처를 위한 대화형 PDF forms을 생성합니다. 또한 기존 대화형 PDF 양식에서 데이터를 가져오거나 내보내고 제출된 데이터의 유효성을 검사하는 데 사용할 수도 있습니다. 다음은 기능의 분류입니다.
 
 * **Forms 렌더링**: AEM Forms Designer 및 선택적으로 XML 데이터를 사용하여 만든 템플릿에서 대화형 PDF 양식을 생성합니다. 이는 필수적으로 선택적으로 데이터로 미리 채워진 입력 가능한 PDF 양식을 생성한다.
 * **데이터 추출 및 가져오기**: 기존 PDF 양식으로 데이터를 가져오고 채워진 PDF 양식에서 데이터를 추출합니다. XDP 및 XML 데이터 형식이 모두 지원되며, XFA가 아닌 PDF forms(AcroForms라고도 함)으로 가져오기는 FDF 및 XFDF 데이터를 추가로 지원합니다.
@@ -174,7 +190,7 @@ RDE 명령줄 인터페이스에는 개발자 경험을 개선하는 몇 가지 
 
 * [setup 명령은 대화형입니다.](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools-interactive)를 사용하면 조직, 프로그램 및 환경 중에서 선택하는 것이 더 쉬워집니다. 이제 명령줄에서 이러한 값을 재정의할 수도 있습니다.
 * [자동 모드](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) 덜 자세한 출력입니다.
-* [json 모드](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) 프로그래밍 방식으로 호출할 때 유용한 출력입니다.
+* [json 모드](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) 를 프로그래밍 방식으로 호출할 때 유용한 출력입니다.
 
 ### 새 작업 센터 알림 {#actions-center-notifications}
 
@@ -239,4 +255,3 @@ AEM 6.5와 유사하게 Apache/Dispatcher는 게시 저장소의 특정 위치�
 
 다른 Experience Cloud 응용 프로그램의 릴리스에 대한 정보를 찾을 수 있습니다 [여기](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current).
 Experience Cloud 릴리스 정보 업데이트에 대한 월별 이메일 알림을 받으려면 [Adobe 우선 순위 제품 업데이트](https://www.adobe.com/kr/subscription/priority-product-update.html).
-
