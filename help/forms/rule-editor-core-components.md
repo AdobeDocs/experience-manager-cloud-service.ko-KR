@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
 workflow-type: tm+mt
-source-wordcount: '5612'
+source-wordcount: '5627'
 ht-degree: 1%
 
 ---
@@ -15,8 +15,9 @@ ht-degree: 1%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| 기초 구성 요소 | [여기 클릭](/help/forms/rule-editor.md) |
-| 핵심 구성 요소 | 이 문서 |
+| AEM as a Cloud Service (핵심 구성 요소) | 이 문서 |
+| AEM as a Cloud Service(Foundation 구성 요소) | [여기 클릭](/help/forms/rule-editor.md) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
 
 # 적응형 양식에 규칙 추가(핵심 구성 요소) {#adaptive-forms-rule-editor}
 
@@ -167,11 +168,11 @@ When 규칙을 작성하는 동안 값 지우기 작업을 트리거할 수 있�
 
 _
 
-![다음과 같은 경우에 여러 필드가 허용됨](/help/forms/assets/allowed-multiple-field-when.png)
+![경우에 허용되는 여러 필드](/help/forms/assets/allowed-multiple-field-when.png)
 
 ##### When 조건 기능에서 허용된 여러 필드를 사용하는 동안 고려 사항
 
-* 다음을 확인합니다. [핵심 구성 요소가 버전 3.0.14 이상으로 설정되었습니다.](https://github.com/adobe/aem-core-forms-components) 규칙 편집기에서 이 기능을 사용합니다.
+* 규칙 편집기에서 이 기능을 사용하려면 핵심 구성 요소가 버전 3.0.14 이상으로](https://github.com/adobe/aem-core-forms-components) 설정되어 있는지 [확인하십시오.
 * When 조건 내의 다른 필드에 규칙이 적용되는 경우 해당 필드 중 하나만 변경되면 규칙이 균일 트리거됩니다.
 
 
@@ -194,8 +195,8 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 조건 기능에서 허용되는 여러 필드에 문제가 발생하면 다음과 같이 문제 해결 단계를 팔로우 합니다.
 
-1. 양식을 편집 모드에서 엽니다.
-1. 컨텐츠 브라우저 를 열고 적응형 양식의 안내서 컨테이너&#x200B;]**구성 요소를 선택합니다**[!UICONTROL .
+1. 편집 모드로 양식을 엽니다.
+1. 콘텐츠 브라우저를 열고 다음을 선택합니다. **[!UICONTROL 가이드 컨테이너]** 적응형 양식의 구성 요소입니다.
 1. 안내서 컨테이너 속성 ![안내서 속성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭합니다. 적응형 양식 컨테이너 대화 상자가 열립니다.
 1. 완료 를 클릭하고 대화 상자를 다시 저장합니다.
 
@@ -273,19 +274,23 @@ FDM(양식 데이터 모델)에서 서비스를 구성하는 방법에 대한 �
 
 다음 **값 설정** 규칙 유형은 패널 및 도구 모음 버튼과 같은 일부 양식 오브젝트에 사용할 수 없습니다. 표준 규칙 값 설정(Set Value Of rule)의 구조는 다음과 같습니다.
 
-개체 A의 값을 다음으로 설정:
+개체 A의 값을 다음으로 설정합니다.
 
-(문자열 ABC) OR (개체 C의 개체 속성 X) OR (함수의 값) OR (수학 표현식의 값) OR (데이터 모델 서비스의 출력 값);
+(문자열 ABC) 또는
+(객체 C의 객체 속성 X) 또는
+(함수의 값) 또는
+(수학 표현식의 값) 또는
+(데이터 모델 서비스의 출력 값);
 
-다음과 같은 경우(선택 사항):
+시기(선택 사항):
 
 (조건 1 및 조건 2 및 조건 3)은 TRUE입니다.
 
-다음 예제에서는 as `True` 의 `Question2` 값을 선택하고 as`correct`의 `Result` 값을 설정합니다.
+다음 예제에서는 다음 값을 선택합니다. `Question2` 다음으로: `True` 및 값 설정 `Result` 다음으로: `correct`.
 
-![값 웹 서비스 설정](assets/set-value-web-service.png)
+![Set-value-web-service](assets/set-value-web-service.png)
 
-양식 데이터 모델 서비스를 사용한 값 규칙 설정의 예.
+양식 데이터 모델 서비스를 사용한 값 설정 규칙의 예입니다.
 
 ### [!UICONTROL 표시] {#show}
 
@@ -440,7 +445,7 @@ To define a rule based on a form data model:
 
 시각적 규칙 편집기는 규칙 편집기 사용자 인터페이스의 시각적 편집기 모드에서 규칙을 작성하는 영역입니다. 규칙 유형을 선택하고 그에 따라 조건 및 작업을 정의할 수 있습니다. 규칙에서 조건 및 작업을 정의할 때 양식 개체 및 함수 창에서 양식 개체 및 함수를 드래그 앤 드롭할 수 있습니다.
 
-시각적 규칙 편집기 사용에 대한 자세한 내용은 [규칙 작성](rule-editor.md#p-write-rules-p).
+시각적 규칙 편집기 사용에 대한 자세한 내용은 규칙](rule-editor.md#p-write-rules-p) 작성을 참조하세요[.
 <!-- 
 ### E. Visual-code editors switcher {#e-visual-code-editors-switcher}
 
@@ -455,11 +460,11 @@ Users in the forms-power-users group can access code editor. For other users, co
 1. Click **[!UICONTROL Save]**.
 -->
 
-### E. 완료 및 취소 단추 {#done-and-cancel-buttons}
+### E. 완료 및 취소 버튼 {#done-and-cancel-buttons}
 
-다음 **[!UICONTROL 완료]** 버튼을 사용하여 규칙을 저장합니다. 불완전한 규칙을 저장할 수 있습니다. 그러나 불완전한 것은 잘못된 것이며 실행되지 않습니다. 양식 개체에 저장된 규칙은 다음에 동일한 양식 개체에서 규칙 편집기 실행 때 나열됩니다. 해당 보기에서 기존 규칙을 관리 할 수 있습니다. 자세한 내용은 규칙](rule-editor.md#p-manage-rules-p) 관리를 참조하세요[.
+**[!UICONTROL 완료]** 버튼는 규칙 저장하는 데 사용됩니다. 불완전한 규칙 파일을 저장할 수 있습니다. 그러나 불완전한 것은 잘못된 것이며 실행되지 않습니다. 양식 개체에 저장된 규칙은 다음에 동일한 양식 개체에서 규칙 편집기 실행 때 나열됩니다. 해당 보기에서 기존 규칙을 관리 할 수 있습니다. 자세한 내용은 규칙](rule-editor.md#p-manage-rules-p) 관리를 참조하세요[.
 
-취소&#x200B;]**버튼는**[!UICONTROL &#x200B;규칙에 대한 모든 변경 사항을 무시하고 규칙 편집기 닫습니다.
+다음 **[!UICONTROL 취소]** 단추는 규칙에 대한 모든 변경 사항을 무시하고 규칙 편집기를 닫습니다.
 
 ## 규칙 작성 {#write-rules}
 
@@ -473,7 +478,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ![Create-rule-예제](assets/create-rule-example.png)
 
-예제 대출 신청서의 대출 요건 섹션에서는 신청자가 결혼 여부, 급여 및 기혼인 경우 배우자의 급여를 지정해야 합니다. 사용자 입력에 따라 규칙는 대출 자격 금액을 계산하고 대출 자격 필드에 표시합니다. 다음 규칙을 적용하여 시나리오를 구현합니다.
+예제 대출 신청서의 대출 요건 섹션에서는 신청자가 결혼 여부, 급여 및 기혼인 경우 배우자의 급여를 지정해야 합니다. 사용자 입력을 기반으로 규칙이 대출 자격 금액을 계산하고 대출 자격 필드에 표시합니다. 다음 규칙을 적용하여 시나리오를 구현합니다.
 
 * [배우자 임금] 필드는 [결혼 상태]가 [기혼]인 경우에만 표시됩니다.
 * 대출 가능 금액은 총 급여의 50%입니다.
@@ -569,7 +574,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13-cc.png)
 
-   확장 표현식 필드에서 다음을 선택합니다. **[!UICONTROL 다음으로 나눔]** 다음에서 **[!UICONTROL 연산자 선택]** 필드 및 **[!UICONTROL 숫자]** 다음에서 **[!UICONTROL 옵션 선택]** 필드. 그런 다음 을 지정합니다 **[!UICONTROL 2]** 번호 필드에서 을 클릭합니다.
+   확장 표현식 필드의 Select Operator 필드에서 **[!UICONTROL 나누기 by]**&#x200B;를 **[!UICONTROL 선택하고 Select Option]** 필드에서 Number ]**를**[!UICONTROL &#x200B;선택합니다&#x200B;**[!UICONTROL .]** 그런 다음 숫자 필드에 2 ]**를 지정합니다**[!UICONTROL .
 
    ![write-rules-visual-편집기-14](assets/write-rules-visual-editor-14-cc.png)
 
@@ -577,11 +582,11 @@ Users in the forms-power-users group can access code editor. For other users, co
    >
    >옵션 선택 필드에서 구성 요소, 함수, 수학 표현식 및 속성 값을 사용하여 복잡한 표현식을 만들 수 있습니다.
 
-   다음, True를 반환할 때 표현식이 실행되는 조건을 만듭니다.
+   그런 다음 조건을 만들어 True를 반환하면 표현식이 실행됩니다.
 
-1. 조건&#x200B;]**추가를 선택하여**[!UICONTROL  When 문을 추가합니다.
+1. 선택 **[!UICONTROL 조건 추가]** When 문을 추가합니다.
 
-   ![write-rules-visual-편집기-15](assets/write-rules-visual-editor-15-cc.png)
+   ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15-cc.png)
 
    When 문에서:
 
@@ -858,7 +863,7 @@ var c = {
 
 ![복합 표현식](assets/complexexpression.png)
 
-규칙 내에서 조건을 드래그 앤 드롭하여 편집할 수도 있습니다. 을(를) 선택하고 핸들을 마우스로 가리킵니다( ![핸들](assets/drag-handle.svg)) 아래에 그룹화됩니다. 포인터가 아래 표시된 대로 손 기호로 바뀌면 규칙을 규칙 내의 아무 곳에나 드래그하여 놓습니다. 규칙 구조가 변경됩니다.
+규칙 내에서 조건을 드래그 앤 드롭하여 편집할 수도 있습니다. 을(를) 선택하고 핸들을 마우스로 가리킵니다( ![핸들](assets/drag-handle.svg)) 아래에 그룹화됩니다. 포인터가 아래와 같이 손 기호로 바뀌면 규칙 내의 아무 곳에나 조건을 끌어다 놓습니다. 규칙 구조가 변경됩니다.
 
 ![드래그 앤 드롭](assets/drag-and-drop.png)
 
@@ -866,9 +871,9 @@ var c = {
 
 규칙 편집기 날짜 비교를 사용하여 조건을 만들 수 있습니다.
 
-다음은 주택에 대한 모기지가 이미 있는 경우 정적 텍스트 개체를 표시하는 예제 조건으로, 사용자 날짜 필드를 채워 나타냅니다.
+다음은 주택에 대한 담보대출이 이미 실행된 경우 정적 텍스트 객체를 표시하는 예제 조건입니다. 이 조건은 사용자가 날짜 필드를 채워 나타냅니다.
 
-사용자 사용자가 입력한 속성 담보 대출 날짜가 과거인 경우 적응형 양식에 소득 계산에 대한 메모가 표시됩니다. 다음 규칙은 사용자가 입력한 날짜를 현재 날짜와 비교하고 사용자가 입력한 날짜가 현재 날짜보다 이전인 경우 양식에 텍스트 메시지(Income)가 표시됩니다.
+사용자가 입력한 부동산의 담보대출 일자가 과거인 경우 적응형 양식에 소득 계산에 대한 메모가 표시됩니다. 다음 규칙은 사용자가 입력한 날짜와 현재 날짜를 비교하며 사용자가 입력한 날짜가 현재 날짜보다 이전인 경우 양식에 텍스트 메시지(소득)가 표시됩니다.
 
 ![날짜 표현식 조건](assets/dateexpressioncondition.png)
 
