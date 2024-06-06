@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
-source-wordcount: '1371'
-ht-degree: 74%
+source-wordcount: '1400'
+ht-degree: 73%
 
 ---
 
@@ -93,7 +93,7 @@ ht-degree: 74%
 
    >[!TIP]
    > 
-   >Cloud Manager에서 저장소를 추가하고 관리하는 방법은 [저장소 추가 및 관리](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)를 참조하십시오.
+   >Cloud Manager에서 저장소를 추가하고 관리하는 방법은 [저장소 추가 및 관리](/help/implementing/cloud-manager/managing-code/managing-repositories.md)를 참조하십시오.
 
    * **Git 분기** - 이 옵션은 선택한 파이프라인에서 코드를 검색해야 하는 분기를 정의합니다.
       * 분기 이름의 처음 몇 글자와 이 필드의 자동 완성 기능을 입력합니다. 선택할 수 있는 일치하는 분기를 찾는 데 유용합니다.
@@ -127,6 +127,10 @@ ht-degree: 74%
    * 선택한 환경에 대한 웹 계층 코드 파이프라인이 있는 경우, 이 선택이 비활성화됩니다.
    * 기존 전체 스택 파이프라인이 환경에 배포되어 있는 경우 동일한 환경에 대한 웹 계층 구성 파이프라인을 생성하면 전체 스택 파이프라인의 기존 웹 계층 구성이 무시됩니다.
 
+>[!NOTE]
+>
+>웹 계층 및 구성 파이프라인은 개인 저장소에서 지원되지 않습니다. 문서를 참조하십시오. [Cloud Manager에서 개인 저장소 추가](/help/implementing/cloud-manager/managing-code/private-repositories.md) 자세한 내용 및 전체 제한 사항 목록
+
 배포 유형을 선택하면 비프로덕션 대상 배포 파이프라인의 생성을 완료하는 단계가 동일합니다.
 
 1. 필요한 배포 유형을 선택합니다.
@@ -143,7 +147,7 @@ ht-degree: 74%
 
    >[!TIP]
    > 
-   >Cloud Manager에서 저장소를 추가하고 관리하는 방법은 [저장소 추가 및 관리](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)를 참조하십시오.
+   >Cloud Manager에서 저장소를 추가하고 관리하는 방법은 [저장소 추가 및 관리](/help/implementing/cloud-manager/managing-code/managing-repositories.md)를 참조하십시오.
 
    * **Git 분기** - 이 옵션은 선택한 파이프라인에서 코드를 검색해야 하는 분기를 정의합니다.
       * 분기 이름의 처음 몇 글자와 이 필드의 자동 완성 기능을 입력합니다. 선택할 수 있는 일치하는 분기를 찾습니다.
@@ -157,7 +161,7 @@ ht-degree: 74%
    * 활성화한 경우 **경험 감사**, 문서를 참조하십시오. [경험 감사](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) 를 참조하십시오.
    * 그렇지 않은 경우 이 단계를 건너뜁니다.
 
-1. 탭 또는 클릭 **저장** 파이프라인을 저장합니다.
+1. **저장**&#x200B;을 탭하거나 클릭하여 파이프라인을 저장합니다.
 
 파이프라인이 저장되고 이제 **프로그램 개요** 페이지의 **파이프라인** 카드에서 [파이프라인을 관리](managing-pipelines.md)할 수 있습니다.
 

@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d4ada5f15a587d54f46a475ca574134988b463d8
+source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
 workflow-type: tm+mt
-source-wordcount: '5010'
-ht-degree: 99%
+source-wordcount: '5030'
+ht-degree: 98%
 
 ---
 
@@ -99,6 +99,7 @@ ht-degree: 99%
    + Cloud Manager 릴리스 정보 {#cloud-manager}
       + [최신 릴리스 정보](/help/implementing/cloud-manager/release-notes/current.md)
       + 2024 {#2024}
+         + [2024.5.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2024/2024-5-0.md)
          + [2024.4.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2024/2024-4-0.md)
          + [2024.3.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2024/2024-3-0.md)
          + [2024.2.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2024/2024-2-0.md)
@@ -976,6 +977,7 @@ ht-degree: 99%
          + [샌드박스 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [프로그램 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [환경 절전 모드 설정](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
+         + [Edge Delivery Services 지원](/help/implementing/cloud-manager/edge-delivery-services.md)
       + AEM 애플리케이션 프로젝트 만들기 {#create-application-project}
          + [프로젝트 제작 마법사](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [프로젝트 설정](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
@@ -983,12 +985,16 @@ ht-degree: 99%
       + [환경 관리](/help/implementing/cloud-manager/manage-environments.md)
       + 코드 관리 {#managing-code}
          + [Maven 프로젝트 버전 처리](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
-         + [Cloud Manager의 저장소](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
+         + [Cloud Manager에서 저장소 관리](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
+         + [Adobe 저장소 추가](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [개인 저장소 추가](/help/implementing/cloud-manager/managing-code/private-repositories.md)
          + [저장소 액세스](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+         + [git 하위 모듈 지원](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Cloud Manager와 함께 git 사용](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [여러 저장소 사용](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [엔터프라이즈 개발 팀 설정](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-         + [자체 GitHub 저장소를 사용하여 작업](/help/implementing/cloud-manager/managing-code/byo-github.md)
+         + [GitHub 구성 확인](/help/implementing/cloud-manager/managing-code/github-check-config.md)
+         + [GitHub 확인 주석](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [환경 변수](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI-CD 파이프라인 {#cicd-pipelines}
          + [소개](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
@@ -1026,6 +1032,7 @@ ht-degree: 99%
          + [DNS 설정 구성](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [DNS 레코드 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [사용자 정의 도메인 이름 관리](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
+         + [DV(도메인 확인) 인증서](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)
       + IP 허용 목록 {#ip-allow-lists}
          + [소개](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [IP 허용 목록 추가](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
@@ -1202,7 +1209,6 @@ ht-degree: 99%
    + [추가 게시 지역](/help/operations/additional-publish-regions.md)
    + [AEM as a Cloud Service의 인프라 및 서비스 모니터링](/help/operations/monitoring.md)
    + [유지 관리 작업](/help/operations/maintenance.md)
-   + [백업 및 복원](/help/operations/backup.md)
    + [셀프서비스 복원](/help/operations/restore.md)
    + [비동기 작업](/help/operations/asynchronous-jobs.md)
    + [일반 Lucene 인덱스 제거](/help/operations/removal-generic-lucene-index.md)

@@ -5,7 +5,7 @@ exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 role: Admin, Developer, User
 feature: Adaptive Forms
 contentOwner: khsingh
-source-git-commit: 9d1594e61a3ec79c0e773cac5753885684ac8a21
+source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
 source-wordcount: '1325'
 ht-degree: 1%
@@ -37,7 +37,7 @@ Adobe Experience Manager Forms as a Cloud Service은 Adobe Experience Manager Fo
 
 * Forms as a Cloud Service으로 고객 번들을 사용하기 전에 최신 버전의 adobe-aemfd-docmanager로 사용자 지정 코드를 다시 컴파일하십시오.
 
-* 사용 [AEM Forms as a Cloud Service 마이그레이션 유틸리티](/help/forms/migrate-to-forms-as-a-cloud-service.md) 적응형 Forms, 테마, 템플릿 및 클라우드 구성을 준비하고 마이그레이션하려면 <!-- AEM 6.3 Forms--> OSGi의 AEM 6.4 Forms 및 OSGi의 AEM 6.5 Forms [!DNL AEM] as a Cloud Service. 사용 [프로그램의 Git 저장소](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) 기존 적응형 양식 템플릿을 가져오려면 다음을 수행하십시오.
+* 사용 [AEM Forms as a Cloud Service 마이그레이션 유틸리티](/help/forms/migrate-to-forms-as-a-cloud-service.md) 적응형 Forms, 테마, 템플릿 및 클라우드 구성을 준비하고 마이그레이션하려면 <!-- AEM 6.3 Forms--> OSGi의 AEM 6.4 Forms 및 OSGi의 AEM 6.5 Forms [!DNL AEM] as a Cloud Service. 사용 [프로그램의 Git 저장소](/help/implementing/cloud-manager/managing-code/managing-repositories.md) 기존 적응형 양식 템플릿을 가져오려면 다음을 수행하십시오.
 
 * 기본적으로 이메일은 HTTP 및 HTTPs 프로토콜만 지원합니다. [지원 팀에 문의](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) 포트를 통해 이메일을 전송하고 환경에 대한 SMTP 프로토콜을 사용하도록 설정합니다.
 

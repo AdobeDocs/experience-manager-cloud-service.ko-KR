@@ -4,7 +4,7 @@ description: Adobe Experience Manager as a Cloud Service 아키텍처 소개
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
 source-wordcount: '2713'
 ht-degree: 100%
@@ -233,7 +233,7 @@ AEM as a Cloud Service를 위한 최신 아키텍처에서는 이전 세대(AEM 
    * [온보딩 여정](/help/journey-onboarding/overview.md)
    * [프로그램 및 프로그램 유형](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 * 개발 아키텍처
-   * [Cloud Manager 저장소](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
+   * [Cloud Manager 저장소](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
    * [CI/CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
    * [코드 품질 테스트](/help/implementing/cloud-manager/code-quality-testing.md)
 * Edge Delivery Services:

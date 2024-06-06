@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 54%
+source-wordcount: '1119'
+ht-degree: 49%
 
 ---
 
@@ -110,6 +110,10 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 >
 >실행 중인 파이프라인은 편집할 수 없습니다.
 
+>[!NOTE]
+>
+>웹 계층 및 구성 파이프라인은 개인 저장소에서 지원되지 않습니다. 문서를 참조하십시오. [Cloud Manager에서 개인 저장소 추가](/help/implementing/cloud-manager/managing-code/private-repositories.md) 자세한 내용 및 전체 제한 사항 목록
+
 ## 파이프라인 삭제 {#deleting-pipelines}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
@@ -143,6 +147,14 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 다음 항목 선택 **세부 정보 보기** 표시할 링크 **기간** 섹션. 여기에는 해당 프로그램의 과거 트렌드를 기반으로 한 파이프라인의 평균 기간이 포함됩니다.
 
 ![기간](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
+
+파이프라인에 **코드 스캔** 문제가 제기된 단계입니다. **다운로드 세부 정보** 목록을 보기 위한 단추 [코드 품질 테스트](/help/implementing/cloud-manager/code-quality-testing.md) 지나가지 않았어요.
+
+![코드 품질 문제](assets/managing-pipelines-code-quality-issues.png)
+
+A **프로젝트 파일 위치** 열은 CSV 파일에서 문제가 되는 코드의 위치를 나타낼 수 있습니다. 이 열은 프로젝트 상대 경로이지만 **파일 위치** 열은 Maven에서 생성됩니다.
+
+![프로젝트 코드 스캔 문제 세부 정보](assets/managing-pipelines-code-quality-details.png)
 
 >[!NOTE]
 >
