@@ -1,16 +1,18 @@
 ---
 title: 적응형 Forms에서 테마를 만들고 사용하려면 어떻게 해야 합니까?
 description: 테마를 사용하여 스타일을 지정하고 핵심 구성 요소를 사용하여 적응형 양식에 시각적 ID를 제공할 수 있습니다. 여러 적응형 Forms에서 테마를 공유할 수 있습니다.
+keywords: 적응형 양식 스타일 지정 핵심 구성 요소. 핵심 구성 요소에서 테마 사용, 적응형 양식 스타일 지정, 테마 맞춤화
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 159407dfaa5d17caddca2953a5732f0e91eb474c
+source-git-commit: aca3508d85a0382f679a8fa0ca986cfd13ee793b
 workflow-type: tm+mt
-source-wordcount: '2754'
+source-wordcount: '2879'
 ht-degree: 5%
 
 ---
 
-# 적응형 Forms의 테마 {#themes-for-af-using-core-components}
+
+# 테마를 사용하여 적응형 Forms 기반의 핵심 구성 요소 스타일 지정{#themes-for-af-using-core-components}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -19,7 +21,9 @@ ht-degree: 5%
 
 테마를 만들고 적용하여 적응형 양식의 스타일을 지정할 수 있습니다. 테마에는 구성 요소 및 패널에 대한 스타일 지정 세부 사항이 포함되어 있습니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일은 해당 구성 요소에 반영됩니다. 테마는 적응형 양식에 대한 참조 없이 독립적으로 관리되며 여러 적응형 Forms에서 재사용할 수 있습니다.
 
-## 사용 가능한 테마
+이 문서에서는 테마를 사용하여 핵심 구성 요소 기반 적응형 Forms에 대한 사용자 지정 디자인을 디자인하는 방법을 알아봅니다.
+
+## 스타일링 핵심 구성 요소에 사용할 수 있는 테마
 
 Cloud Service으로서의 Forms은 적응형 Forms 기반의 핵심 구성 요소에 대해 아래에 나열된 테마를 제공합니다.
 
@@ -27,9 +31,9 @@ Cloud Service으로서의 Forms은 적응형 Forms 기반의 핵심 구성 요�
 * [WKND 테마](https://github.com/adobe/aem-forms-theme-wknd)
 * [이젤 테마](https://github.com/adobe/aem-forms-theme-easel)
 
-## 테마 구조 이해
+## 테마의 구조 이해
 
-테마는 CSS 파일, JavaScript 파일 및 적응형 Forms의 스타일을 정의하는 리소스(예: 아이콘)를 포함하는 패키지입니다. 적응형 양식 테마는 다음 구성 요소로 구성된 특정 조직을 따릅니다.
+테마는 CSS 파일, JavaScript 파일 등의 스타일 구성 요소 및 적응형 Forms의 스타일을 정의하는 리소스(예: 아이콘)가 포함된 패키지입니다. 적응형 양식 테마는 다음 구성 요소로 구성된 특정 조직을 따릅니다.
 
 * `src/theme.scss`: 이 폴더에는 전체 테마에 광범위한 영향을 주는 CSS 파일이 포함되어 있습니다. 중앙 집중식 위치 역할을 하여 테마의 스타일 및 동작을 정의하고 관리할 수 있습니다. 이 파일을 편집하여 테마 전체에 공통으로 적용되는 변경 내용을 적용할 수 있으며, 이 변경 내용은 적응형 Forms 및 AEM Sites 페이지 모두의 모양 및 기능에 영향을 줍니다.
 
@@ -43,7 +47,7 @@ Cloud Service으로서의 Forms은 적응형 Forms 기반의 핵심 구성 요�
 
 ## 테마 만들기
 
-Forms as Cloud Service은 적응형 Forms 기반 핵심 구성 요소에 대해 아래에 나열된 테마를 제공합니다.
+Forms as Cloud Service은 적응형 Forms 기반 핵심 구성 요소에 대한 적응형 양식 스타일 테마를 아래에 나열했습니다.
 
 * [캔버스 테마](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND 테마](https://github.com/adobe/aem-forms-theme-wknd)
@@ -55,7 +59,7 @@ Forms as Cloud Service은 적응형 Forms 기반 핵심 구성 요소에 대해 
 
 ## 테마 맞춤화 {#customize-a-theme-core-components}
 
-테마 맞춤화란 테마의 모양을 수정하고 개인화하는 프로세스를 말합니다. 테마를 사용자 지정할 때 해당 디자인 요소, 레이아웃, 색상, 타이포그래피 및 경우에 따라 기본 코드가 변경됩니다. 테마가 제공하는 기본 구조와 기능을 유지하면서 웹 사이트 또는 애플리케이션에 고유하고 맞춤화된 디자인을 만들 수 있습니다.
+테마 맞춤화란 테마의 모양을 수정하고, 스타일링하고, 개인화하는 프로세스를 말합니다. 테마를 사용자 지정할 때 해당 디자인 요소, 레이아웃, 색상, 타이포그래피 및 경우에 따라 기본 코드가 변경됩니다. 테마가 제공하는 기본 구조와 기능을 유지하면서 웹 사이트 또는 애플리케이션에 고유하고 맞춤화된 디자인을 만들 수 있습니다.
 
 ### 사전 요구 사항 {#prerequisites-to-customize}
 
@@ -76,7 +80,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 -->
 
-전제 조건을 학습하고 개발 환경을 구성한 후에는 특정 요구 사항에 따라 테마 맞춤화를 시작할 준비가 되었습니다.
+전제 조건을 학습하고 개발 환경을 구성한 후에는 특정 요구 사항에 따라 테마를 맞춤화하거나 스타일링할 준비가 되었습니다.
 
 ### 테마 맞춤화 {#steps-to-customize-a-theme-core-components}
 
@@ -89,6 +93,8 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 1. [테마 배포](#deploy-the-theme)
 
 이 문서에 제공된 예제는 **캔버스** 테마이지만 모든 테마를 복제하고 동일한 지침을 사용하여 맞춤화할 수 있습니다. 이러한 지침은 모든 테마에 적용되므로 특정 요구 사항에 따라 테마를 수정할 수 있습니다.
+
+테마를 사용하여 핵심 구성 요소 기반 적응형 Forms에 대한 브랜드 경험을 만드는 프로세스부터 시작하겠습니다.
 
 #### 1. 테마 복제 {#download-a-theme-core-components}
 
@@ -121,7 +127,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 #### 2. 테마 이름 설정 {#set-name-of-theme}
 
-1. 일반 텍스트 편집기에서 테마 폴더를 엽니다. 예를 들어 를 열려면 `aem-forms-theme-canvas` 폴더가 표시됩니다.
+1. IDE에서 테마 폴더를 엽니다. 예를 들어 를 열려면 `aem-forms-theme-canvas` 폴더가 표시됩니다.
 
 1. `aem-forms-theme-canvas` 폴더로 이동합니다.
 
@@ -143,7 +149,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
    >[!NOTE]
    >
-   > * 이름 속성은 테마를 고유하게 식별하는 데 사용되며 지정된 이름이에 표시됩니다. **스타일** 의 탭 **양식 만들기 마법사**.
+   > * name 속성은 테마를 고유하게 식별하는 데 사용되며 지정된 이름은 **스타일** 의 탭 **양식 만들기 마법사**.
    > * 선택에 따라 테마 이름을 선택할 수 있는 옵션이 있습니다. 예를 들면 다음과 같습니다. `mytheme` 또는 `customtheme`. 그러나 이 경우 이름을 로 지정했습니다. `aem-forms-wknd-theme`.
 
 1. 편집할 `package-lock.json` 페이지를 엽니다.
@@ -185,9 +191,9 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ##### 구성 요소 수준 스타일 설정 {#component-based-customization}
 
-특정 적응형 양식 핵심 구성 요소의 글꼴, 색상, 크기 및 기타 CSS 속성을 변경할 수도 있습니다. 예를 들어, 단추, 확인란, 컨테이너, 바닥글 등이 있습니다. 특정 구성 요소의 CSS 파일을 편집하여 단추 또는 확인란의 스타일을 지정하여 해당 구성 요소를 조직의 스타일에 맞출 수 있습니다. 구성 요소의 스타일을 사용자 정의하려면 다음을 수행합니다.
+특정 적응형 양식 핵심 구성 요소의 글꼴, 색상, 크기 및 기타 CSS 속성을 변경할 수도 있습니다. 예를 들어, 단추, 확인란, 컨테이너, 바닥글 등이 있습니다. 특정 구성 요소의 CSS 파일을 편집하여 버튼 또는 확인란의 스타일을 지정하여 조직의 스타일에 맞출 수 있습니다. 구성 요소의 스타일을 사용자 정의하려면 다음을 수행합니다.
 
-1. 파일 열기 `<your-theme-sources>/src/components/<component>/<component.scss>` 편집할 수 있습니다. 예를 들어 버튼 구성 요소의 글꼴 색상을 변경하려면 `<your-theme-sources>/src/components/button/button.scss`, 파일 을 참조하십시오.
+1. 파일 열기 `<your-theme-sources>/src/components/<component>/<component.scss>` 편집할 수 있습니다. 예를 들어 버튼 구성 요소의 글꼴 색상을 변경하려면 `<your-theme-sources>/src/components/button/button.scss`, 파일.
 1. 요구 사항에 따라 의 값을 변경합니다. 예를 들어 마우스를 가리킬 때 버튼 구성 요소의 색상을 변경하려면 `green`, 값 변경 `color: $white` 의 속성 `cmp-adaptiveform-button__widget:hover` 클래스-16진수 코드 `#12B453` 또는 기타 그림자 `green`. 최종 코드는 다음과 같습니다.
 
    ```
@@ -203,7 +209,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
    >
    >
-   > 스타일이 테마와 구성 요소 수준에서 모두 정의되면 구성 요소 수준에서 정의된 스타일이 우선합니다.
+   > 테마 및 구성 요소 수준에서 스타일이 정의되면 구성 요소 수준에서 정의된 스타일이 우선합니다.
 
 #### 4. 맞춤화된 테마 테스트 {#test-the-theme}
 
@@ -214,7 +220,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ##### 4.1. 테스트를 위한 로컬 환경 구성 {#rename-env-file-theme-folder}
 
-1. 일반 텍스트 편집기에서 테마 폴더를 엽니다. 예를 들어 `aem-forms-theme-canvas` 폴더가 표시됩니다.
+1. IDE에서 테마 폴더를 엽니다. 예를 들어 `aem-forms-theme-canvas` 폴더가 표시됩니다.
 1. 이름 바꾸기 `env_template` 파일 위치: `.env` 테마 폴더에 파일을 만들고 다음 매개 변수를 추가합니다.
 
    ```
@@ -255,7 +261,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ![프록시 브라우저 동기화](/help/forms/assets/browser_sync.png)
 
-테마 맞춤화에 대해 테마 수준과 구성 요소 수준 모두에서 제공된 예제를 따랐으므로 적응형 양식의 오류 메시지는 `blue` 색상 - 버튼 구성 요소의 레이블 색상이 `green` 마우스로 가리키면
+테마 맞춤화에 대한 테마 수준과 구성 요소 수준 모두에서 적응형 양식(핵심 구성 요소)의 스타일을 지정하는 예제를 따르면 적응형 양식의 오류 메시지가 로 변경됩니다. `blue` 색상 - 버튼 구성 요소의 레이블 색상이 `green` 마우스로 가리키면
 
 **테마 수준 스타일 미리 보기**
 
@@ -265,11 +271,13 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ![예: 가리키기 색상이 녹색으로 설정됨](/help/forms/assets/button-customization.png)
 
+테마를 맞춤화하면 조직 요구 사항에 따라 핵심 구성 요소 기반 적응형 Forms에 대한 맞춤형 룩을 디자인할 수 있습니다.
+
 ###### Cloud Service 환경에서 호스팅되는 양식의 테마 테스트
 
 AEM Forms as a Cloud Service 인스턴스에 호스팅된 적응형 양식에 대한 테마를 테스트할 수도 있습니다. 클라우드 인스턴스에서 호스팅된 적응형 Forms을 사용하여 테마를 테스트하기 위한 로컬 환경을 구성하고 설정하려면 다음 단계를 수행하십시오.
 
-1. 일반 텍스트 편집기에서 테마 폴더를 엽니다. 예를 들어 `aem-forms-theme-canvas` 폴더가 표시됩니다.
+1. IDE에서 테마 폴더를 엽니다. 예를 들어 `aem-forms-theme-canvas` 폴더가 표시됩니다.
 1. 이름 바꾸기 `env_template` 파일 위치: `.env` 파일을 만들고 다음 매개 변수를 추가합니다.
 
    ```
@@ -368,7 +376,7 @@ AEM Forms as a Cloud Service 인스턴스에 호스팅된 적응형 양식에 �
 테마는 [프론트엔드 파이프라인.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). 테마를 배포하려면 다음 단계를 수행하십시오.
 
 1. AEM Cloud Manager 저장소에 로그인합니다.
-1. 클릭 **[!UICONTROL 추가]** 단추 **[!UICONTROL 파이프라인]** 섹션.
+1. 다음을 클릭합니다. **[!UICONTROL 추가]** 단추 **[!UICONTROL 파이프라인]** 섹션.
 1. 선택 **[!UICONTROL 비프로덕션 파이프라인 추가]** 또는 **[!UICONTROL 프로덕션 파이프라인 추가]** Cloud Service 환경을 기반으로 합니다. 예를 들어, 다음 **[!UICONTROL 프로덕션 파이프라인 추가]** 옵션이 선택되어 있습니다.
 1. 다음에서 **[!UICONTROL 프로덕션 파이프라인 추가]** 대화 상자를 의 일부로 사용 **[!UICONTROL 구성]** 단계, 파이프라인의 이름을 지정합니다. 예를 들어 파이프라인의 이름은 입니다. `customcanvastheme`.
 1. **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
@@ -388,6 +396,8 @@ AEM Forms as a Cloud Service 인스턴스에 호스팅된 적응형 양식에 �
 빌드가 완료되면 작성자 인스턴스에서 테마를 사용할 수 있습니다. 다음 아래에 나타납니다. **[!UICONTROL 스타일]** 적응형 양식을 만드는 동안 적응형 양식 만들기 마법사에서 탭합니다.
 
 ![스타일 탭에서 사용할 수 있는 사용자 정의 테마](/help/forms/assets/custom-theme-style-tab.png)
+
+맞춤화된 테마는 핵심 구성 요소 기반 적응형 Forms에 대한 브랜드 경험을 만드는 데 도움이 됩니다.
 
 ## 적응형 양식에 테마 적용 {#using-theme-in-adaptive-form}
 
@@ -417,10 +427,10 @@ AEM Forms as a Cloud Service 인스턴스에 호스팅된 적응형 양식에 �
 
   컨테이너 패널 레이아웃 너비는 변경하지 않는 것이 좋습니다. 컨테이너 패널의 너비를 지정하면 정적 패널이 되어 다른 디스플레이에 맞게 조정되지 않습니다.
 
-* **머리글 및 바닥글 작업에 양식 편집기 또는 테마 편집기 사용**
+* **양식 편집기 또는 테마 편집기를 사용하여 머리글 및 바닥글 작업**
 
   글꼴 스타일, 배경 및 투명도와 같은 스타일 옵션을 사용하여 머리글과 바닥글의 스타일을 지정하려면 테마 편집기를 사용하십시오.
-로고 이미지, 머리글에 회사 이름, 바닥글에 저작권 정보 등의 정보를 제공하려면 양식 편집기 옵션을 사용합니다.
+로고 이미지, 머리글에 회사 이름 및 바닥글에 저작권 정보와 같은 정보를 제공하려면 양식 편집기 옵션을 사용합니다.
 
 ## 자주 묻는 질문 {#faq}
 

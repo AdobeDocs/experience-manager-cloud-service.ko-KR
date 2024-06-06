@@ -4,10 +4,10 @@ description: 적응형 양식에서 반복 가능한 섹션 또는 필드를 만
 role: Architect, Developer, Admin, User
 feature: Adaptive Forms, Core Components
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+source-git-commit: d3c5adf0b5b2155308e0bf9f4459682f11b67780
 workflow-type: tm+mt
-source-wordcount: '1256'
-ht-degree: 2%
+source-wordcount: '1258'
+ht-degree: 8%
 
 ---
 
@@ -21,20 +21,20 @@ ht-degree: 2%
 
 반복 가능 섹션은 동일한 데이터의 여러 인스턴스에 대한 정보를 수집하기 위해 중복되거나 여러 번 반복될 수 있는 양식의 일부를 나타냅니다.
 
-예를 들어 개인의 작업 경험에 대한 정보를 수집하는 데 사용되는 양식을 생각해 보십시오. 각 이전 작업의 세부 정보를 캡처하는 반복 가능한 섹션이 있을 수 있습니다. 반복 가능 섹션에는 일반적으로 회사 이름, 직책, 고용 날짜 및 직무 책임과 같은 필드가 포함됩니다. 사용자는 반복 가능 섹션의 여러 인스턴스를 추가하여 보유하고 있는 각 작업에 대한 정보를 입력할 수 있습니다.
+예를 들어 개인 경력에 대한 정보를 수집하는 데 사용되는 양식을 고려해 보십시오. 이전 작업의 세부 정보를 캡처하는 반복 가능한 섹션이 있을 수 있습니다. 반복 가능한 섹션은 일반적으로 회사 이름, 직책, 고용일, 직무 등과 같은 필드를 포함합니다. 사용자는 반복 가능한 섹션의 여러 인스턴스를 추가하여 각 직무에 대한 정보를 입력할 수 있습니다.
 
 ![반복성](/help/forms/assets/repeatable-adaptive-form-example.gif)
 
-이 문서의 끝 부분에서는 다음 방법을 배웁니다.
+이 문서가 작성되면 다음 방법을 파악할 수 있습니다.
 
 * 적응형 양식에 반복 가능한 섹션 만들기
 * 적응형 양식 구성 요소에 대한 최소 또는 최대 반복 횟수 설정
 * 규칙 편집기를 사용하여 반복 가능한 섹션에 대한 추가 또는 삭제 작업을 구성합니다.
 
-다음을 사용할 수 있습니다. [패널](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), [어코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), 또는 [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) 적응형 양식의 섹션을 반복 가능하게 만들 구성 요소. 패널, 아코디언, 가로 탭 또는 마법사 구성 요소에 하위 구성 요소를 추가하여 양식에 반복 가능한 섹션을 만들 수 있습니다.
+다음을 사용할 수 있습니다. [패널](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), [어코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), [세로 탭](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)  또는 [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) 적응형 양식의 섹션을 반복 가능하게 만들 구성 요소. 이러한 구성 요소에 하위 구성 요소를 추가하여 양식에 반복 가능한 섹션을 만들 수 있습니다.
 
 
-이 문서의 예제는 [패널](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html) 구성 요소. 동일한 단계를 수행하여 다음을 만들 수 있습니다 [어코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), 및 [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) 구성 요소가 반복 가능합니다.
+이 문서의 예제는 [패널](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html) 구성 요소. 동일한 단계를 수행하여 다음을 만들 수 있습니다 [패널](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), [어코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), [세로 탭](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) 또는 [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) 구성 요소가 반복 가능합니다.
 
 ## 양식에서 반복 가능한 섹션 추가 또는 삭제 {#add-or-delete-repeatable-section-in-panel-container}
 
