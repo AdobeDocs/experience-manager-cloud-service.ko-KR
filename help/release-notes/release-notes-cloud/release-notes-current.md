@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: e6de1fc47eb2b9c3ba5b115c74b874016449bc20
+source-git-commit: 68e2f6867a2cbcaf52fa6de259fe118e31ee7573
 workflow-type: tm+mt
 source-wordcount: '1942'
 ht-degree: 21%
@@ -62,7 +62,7 @@ ht-degree: 21%
 
 #### RUM(Real Use Monitoring) 데이터 서비스 {#real-use-monitoring}
 
-* **[RUM(Real Use Monitoring) 데이터 서비스가 이제 GA되었습니다.](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** AEM as a Cloud Service으로 클라이언트측 데이터 수집 활성화.
+* **[RUM(Real Use Monitoring) 데이터 서비스가 이제 GA되었습니다.](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)** AEM as a Cloud Service으로 클라이언트측 데이터 수집 활성화.
 클라이언트 측 컬렉션인 Real Use 모니터링 서비스는 상호 작용을 보다 정확하게 반영하여 웹 사이트 참여를 안정적으로 측정합니다. 이를 통해 페이지 트래픽 및 성능에 대한 고급 통찰력을 보유한 고객이 사용할 수 있습니다. 페이지 성능에 대해 자세히 알아보고 향상시킬 수 있는 통찰력을 얻을 수 있는 좋은 기회입니다.
 
 #### Edge Delivery Services을 위한 AEM 작성 {#edge-enhancements}
@@ -139,7 +139,7 @@ AEM Forms은 널리 사용되는 두 가지 CAPTCHA 솔루션인 Cloudflare Turn
 
 AEM Forms에서는 여러 CAPTCHA 옵션을 제공하여 특정 요구 사항에 가장 적합한 솔루션을 선택할 수 있도록 했습니다.
 
-이러한 CAPTCHA 솔루션을 적응형 Forms과 통합할 준비가 되셨습니까? 설명서는 각각에 대한 자세한 지침을 제공합니다. [Cloudflare 턴스타일](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [Captcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), 및 [Google recaptcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+이러한 CAPTCHA 솔루션을 적응형 Forms과 통합할 준비가 되셨습니까? 설명서는 각각에 대한 자세한 지침을 제공합니다. [Cloudflare 턴스타일](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [Captcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), 및 [Google recaptcha](https://experienceleague.adobe.com/kr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 
 ### Forms 서비스
