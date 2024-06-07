@@ -2,13 +2,13 @@
 title: 스마트 이미징
 description: Adobe Sensei AI를 사용하는 스마트 이미징에서 각 사용자의 고유한 보기 특성을 적용하여 경험에 최적화된 적합한 이미지를 자동으로 제공하여 향상된 성능과 참여를 제공하는 방법에 대해 알아봅니다.
 contentOwner: Rick Brough
-feature: Asset Management,Renditions
+feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 6f9ddcf31a1869bb8bebb566d05c371e996fe354
+source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
 workflow-type: tm+mt
-source-wordcount: '3535'
+source-wordcount: '3454'
 ht-degree: 1%
 
 ---
@@ -42,10 +42,10 @@ ht-degree: 1%
 
 | 이미지(URL) | 썸네일 | 크기(JPEG) | 스마트 이미징을 사용한 크기(WebP) | 스마트 이미징을 사용한 크기(AVIF) | WebP를 통한 % 감소 | AVIF를 사용한 % 감소 |
 |---|---|---|---|---|---|---|
-| [이미지 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 145KB | 106KB | 90.2KB | 26.89% | 37.79% |
-| [이미지 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 412KB | 346KB | 113KB | 16.01% | 72.57% |
-| [이미지 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture3](/help/assets/assets-dm/picture3.png) | 221KB | 189KB | 87.1KB | 14.47% | 60.58% |
-| [이미지 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 594KB | 545KB | 286KB | 8.25% | 51.85% |
+| [이미지 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 145 KB | 106 KB | 90.2 KB | 26.89% | 37.79% |
+| [이미지 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![사진2](/help/assets/assets-dm/picture2.png) | 412 KB | 346 KB | 113 KB | 16.01% | 72.57% |
+| [이미지 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![사진3](/help/assets/assets-dm/picture3.png) | 221 KB | 189 KB | 87.1 KB | 14.47% | 60.58% |
+| [이미지 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![사진4](/help/assets/assets-dm/picture4.png) | 594 KB | 545 KB | 286 KB | 8.25% | 51.85% |
 
 위와 유사하게, Adobe은 더 큰 샘플 세트로 테스트를 실행했습니다. 형식 AVIF는 WebP에 비해 20%의 추가 크기 감소를 제공했으며, 이는 JPEG에 비해 27%의 추가 크기 감소를 제공했습니다. 모두 동일한 시각적 품질입니다. 전체적으로 AVIF는 JPEG 대비 최대 41%의 평균 크기 감소를 제공합니다.
 
@@ -98,7 +98,6 @@ CSS 픽셀 비율이라고도 하는 디바이스 픽셀 비율(DPR)은 디바�
 >* 다음을 사용할 수 있습니다. `dpr=on,dprValue` 회사 수준의 DPR 설정이 꺼진 경우에도 마찬가지입니다.
 >* DPR 최적화로 인해 결과 이미지가 MaxPix Dynamic Media 설정보다 클 경우 이미지의 종횡비를 유지하여 MaxPix 너비를 항상 인식합니다. —>
 
-
 | 요청한 이미지 크기 | 장치 픽셀 비율(dpr) 값 | 게재된 이미지 크기 |
 |---|---|---|
 | 816 x 500 | 1 | 816 x 500 |
@@ -135,7 +134,7 @@ DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측
 * AVIF 전환이 유용하지 않거나 브라우저가 AVIF를 지원하지 않는 경우 자동으로 WebP로 전환합니다.
 * Safari에서 WebP를 지원하지 않는 경우 자동으로 JPEG2000으로 전환
 * IE 9+용 JPEGXR로 자동 변환하거나 Edge에서 WebP를 지원하지 않는 경우\
-   | 이미지 형식 | 지원되는 브라우저 | |—|—| | AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) | | WebP | [https://caniuse.com/webp](https://caniuse.com/webp) | | JPEG 2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) | | JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
+  | 이미지 형식 | 지원되는 브라우저 | |—|—| | AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) | | 웹P | [https://caniuse.com/webp](https://caniuse.com/webp) | | 2000 JPEG | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) | | JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
 * 이러한 형식을 지원하지 않는 브라우저의 경우 원래 요청한 이미지 형식이 제공됩니다.
 
 원본 이미지 크기가 Smart Imaging에서 생성하는 크기보다 작으면 원본 이미지가 제공됩니다.
@@ -159,7 +158,7 @@ PNG와 같이 투명성을 지원하는 이미지 파일 형식의 경우 손실
 
 +++**스마트 이미징과 관련된 라이선스 비용이 있습니까?**
 
-아니요. 스마트 이미징은 기존 라이선스에 포함되어 있습니다. 이 규칙은 Dynamic Media Classic 또는 Experience Manager - Dynamic Media(온프레미스, AMS 및 Experience Manager as a Cloud Service)에 적용됩니다.
+아니. 스마트 이미징은 기존 라이선스에 포함되어 있습니다. 이 규칙은 Dynamic Media Classic 또는 Experience Manager - Dynamic Media(온프레미스, AMS 및 Experience Manager as a Cloud Service)에 적용됩니다.
 
 >[!IMPORTANT]
 >
@@ -197,7 +196,7 @@ PNG와 같이 투명성을 지원하는 이미지 파일 형식의 경우 손실
 
 +++**URL, 이미지 사전 설정을 변경하거나 사이트에 새 코드를 배포해야 합니까?**
 
-아니요. 스마트 이미징은 기존 이미지 URL 및 이미지 사전 설정과 원활하게 작동합니다. 또한 스마트 이미징에서는 사용자의 브라우저를 감지하기 위해 웹 사이트에 코드를 추가할 필요가 없습니다. 이 기능은 모두 자동으로 처리됩니다.
+아니. 스마트 이미징은 기존 이미지 URL 및 이미지 사전 설정과 원활하게 작동합니다. 또한 스마트 이미징에서는 사용자의 브라우저를 감지하기 위해 웹 사이트에 코드를 추가할 필요가 없습니다. 이 기능은 모두 자동으로 처리됩니다.
 
 <!-- Smart Imaging works seamlessly with your existing image URLs and image presets if you configure Smart Imaging on your existing custom domain. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. It is all handled automatically.
 
@@ -232,7 +231,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 +++**계정에 대해 스마트 이미징을 활성화할 수 있습니까?**
 
-아니요. 스마트 이미징을 사용하도록 요청을 시작합니다. 이 요청은 자동으로 활성화되지 않습니다.
+아니. 스마트 이미징을 사용하도록 요청을 시작합니다. 이 요청은 자동으로 활성화되지 않습니다.
 
 아래 설명에 따라 지원 사례를 만듭니다. 지원 사례에서는 계정에 활성화하려는 다음 스마트 이미징 기능(하나 이상의 기능) 중 하나를 언급하십시오.
 
@@ -246,7 +245,7 @@ WebP에서 스마트 이미징을 이미 활성화했지만 위에 나열된 다
 **계정에서 스마트 이미징을 사용할 수 있도록 지원 사례를 만들려면 다음을 수행하십시오.**
 
 1. [Admin Console을 사용하여 새 지원 사례 만들기 시작](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html).
-1. 지원 사례에 다음 정보를 입력합니다.
+1. 지원 사례에 다음 정보를 제공하십시오.
 
    * 기본 담당자 이름, 이메일, 전화.
 
@@ -255,26 +254,26 @@ WebP에서 스마트 이미징을 이미 활성화했지만 위에 나열된 다
       * AVIF
       * DPR 및 네트워크 대역폭 최적화
       * PNG를 손실 AVIF 또는 손실 WebP로
+
    * 스마트 이미징에 사용할 수 있는 모든 도메인(즉, `images.company.com` 또는 `mycompany.scene7.com`).
 
-      도메인을 찾으려면 [Dynamic Media Classic 데스크탑 애플리케이션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 클릭한 다음 회사 계정 또는 계정에 로그인합니다.
+     도메인을 찾으려면 [Dynamic Media Classic 데스크탑 애플리케이션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 클릭한 다음 회사 계정 또는 계정에 로그인합니다.
 
-      다음으로 이동 **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**.
+     다음으로 이동 **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**.
 
-      레이블이 지정된 필드를 찾습니다. **[!UICONTROL 게시된 서버 이름]**.
+     레이블이 지정된 필드를 찾습니다. **[!UICONTROL 게시된 서버 이름]**.
 
    * Adobe을 통해 CDN을 사용 중이며 직접적인 관계로 관리되지 않는지 확인합니다.
 
    * 다음과 같은 전용 도메인을 사용하고 있는지 확인합니다. `images.company.com` 또는 `mycompany.scene7.com`일반 도메인 아님(예: ) `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-      도메인을 찾으려면 [Dynamic Media Classic 데스크탑 애플리케이션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 클릭한 다음 회사 계정 또는 계정에 로그인합니다.
+     도메인을 찾으려면 [Dynamic Media Classic 데스크탑 애플리케이션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 클릭한 다음 회사 계정 또는 계정에 로그인합니다.
 
-      다음으로 이동 **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**.
+     다음으로 이동 **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**.
 
-      레이블이 지정된 필드를 찾습니다. **[!UICONTROL 게시된 서버 이름]**. 현재 일반 Dynamic Media Classic 도메인을 사용 중인 경우, 이 전환의 일부로 사용자 정의 도메인으로의 이동을 요청할 수 있습니다.
+     레이블이 지정된 필드를 찾습니다. **[!UICONTROL 게시된 서버 이름]**. 현재 일반 Dynamic Media Classic 도메인을 사용 중인 경우, 이 전환의 일부로 사용자 정의 도메인으로의 이동을 요청할 수 있습니다.
 
    * HTTP/2에서 작동할지 여부를 나타냅니다.
-
 
 1. Adobe 고객 지원에서 요청이 제출된 순서에 따라 Smart Imaging 고객 대기 목록에 사용자를 추가합니다.
 1. Adobe이 요청을 처리할 준비가 되면 고객 지원 센터에서 연락하여 목표 날짜를 조정하고 설정합니다.
@@ -336,7 +335,7 @@ WebP에서 스마트 이미징을 이미 활성화했지만 위에 나열된 다
 
 이 헤더에는 다음 사항이 표시됩니다.
 
-* 스마트 이미징이 회사에서 작업 중입니다.
+* 스마트 이미징이 회사에서 작동 중입니다.
 * 양수 값은 전환이 성공했음을 의미합니다. 이 경우 새 WebP 이미지가 반환됩니다.
 * 음수 값은 전환이 성공하지 않았음을 의미합니다. 이 경우, 요청된 원본 이미지가 반환됩니다(지정되지 않은 경우 기본적으로 JPEG).
 * 양수 값은 요청된 이미지와 새 이미지 간의 바이트 차이를 보여 줍니다. 위의 예에서 저장된 바이트는 `75048` 또는 하나의 이미지에 대해 약 75KB.
@@ -385,7 +384,7 @@ WebP에서 스마트 이미징을 이미 활성화했지만 위에 나열된 다
 
 +++**최소 및 최대 품질 설정을 지정할 수 있습니까?**
 
-아니요. 현재 그러한 프로비저닝이 없습니다.
+아니. 현재 그러한 프로비저닝이 없습니다.
 
 +++
 
@@ -474,4 +473,4 @@ See also [When working with images](/help/assets/dynamic-media/adding-dynamic-me
 >[!MORELIKETHIS]
 >
 >* [Image optimization with next generation image formats WebP and AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4) -->
->
+>>

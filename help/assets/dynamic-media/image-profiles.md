@@ -2,10 +2,10 @@
 title: Dynamic Media 이미지 프로필
 description: 언샵 마스크, 스마트 자르기 또는 스마트 색상 견본 또는 둘 다에 대한 설정이 포함된 Dynamic Media 이미지 프로필을 만드는 방법을 알아봅니다. 그런 다음 이미지 에셋 폴더에 프로필을 적용합니다.
 contentOwner: Rick Brough
-feature: Asset Management,Image Profiles,Renditions
+feature: Asset Management,Image Profiles,Renditions,Best Practices
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
 workflow-type: tm+mt
 source-wordcount: '3555'
 ht-degree: 5%
@@ -258,7 +258,7 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 >[!IMPORTANT]
 >
->여러 에셋의 스마트 자르기 창을 수동으로 재정렬하거나 크기를 조정하면 나중에 해당 에셋을 재처리하는 경우에도 이러한 편집 내용이 유지되고 보존됩니다. 단, 이미지 프로필의 **[!UICONTROL 반응형 이미지 자르기]** 영역에서 폭, 높이 또는 두 가지 모두를 편집하면 해당 에셋이 재처리됩니다.
+>여러 에셋의 스마트 자르기 창을 수동으로 재정렬하거나 크기를 조정하면 나중에 해당 에셋을 재처리하는 경우에도 이러한 편집 내용이 유지되고 보존됩니다. 단, 이미지 프로필의 **[!UICONTROL 반응형 이미지 자르기]** 영역에서 폭, 높이 또는 두 가지 모두를 편집하면 해당 자산이 재처리됩니다.
 >다음을 참조하십시오 [폴더에서 Dynamic Media 에셋 재처리](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 필요한 경우 스마트 자르기를 다시 실행하여 추가 자르기를 다시 생성할 수 있습니다.

@@ -2,10 +2,10 @@
 title: Dynamic Media의 비디오
 description: Dynamic Media에서 비디오로 작업하는 방법을 알아봅니다. 비디오 인코딩, YouTube에 비디오 게시, 비디오 보고서 보기 및 비디오에 자막 또는 챕터 마커 추가에 대한 모범 사례를 검토하십시오.
 contentOwner: Rick Brough
-feature: Video Profiles
+feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 7a80f68f71475b2bdb6b5559354d7248208a3819
+source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
 workflow-type: tm+mt
 source-wordcount: '9357'
 ht-degree: 2%

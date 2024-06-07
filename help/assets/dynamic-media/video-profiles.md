@@ -2,13 +2,13 @@
 title: Dynamic Media 비디오 프로필
 description: Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필이 포함되어 있습니다. 이 기본 프로필의 설정은 고객에게 최상의 시청 환경을 제공하도록 최적화되었습니다. 비디오에 스마트 자르기를 추가할 수도 있습니다.
 contentOwner: Rick Brough
-feature: Asset Management,Video Profiles,Renditions
+feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 2009e549eadd97d4d2bfcccd728ece17ecfeede5
+source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
 workflow-type: tm+mt
-source-wordcount: '3716'
-ht-degree: 7%
+source-wordcount: '3744'
+ht-degree: 6%
 
 ---
 
@@ -20,11 +20,11 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 
 * **업로드된 기본 소스 비디오의 해상도**
 
-   MP4 영상이 240p 또는 360p와 같이 낮은 해상도로 녹화된 경우 고화질로 스트리밍할 수 없습니다.
+  MP4 영상이 240p 또는 360p와 같이 낮은 해상도로 녹화된 경우 고화질로 스트리밍할 수 없습니다.
 
 * **비디오 플레이어 크기**
 
-   기본적으로 응용 비디오 인코딩 프로필의 &quot;너비&quot;는 &quot;자동&quot;으로 설정됩니다. 다시 말하지만 재생 중에는 플레이어 크기에 따라 최상의 품질이 사용됩니다.
+  기본적으로 응용 비디오 인코딩 프로필의 &quot;너비&quot;는 &quot;자동&quot;으로 설정됩니다. 다시 말하지만 재생 중에는 플레이어 크기에 따라 최상의 품질이 사용됩니다.
 
 다음을 참조하십시오 [비디오 인코딩에 대한 우수 사례](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
@@ -33,7 +33,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 
 >[!NOTE]
 >
->비디오의 메타데이터 및 관련 비디오 이미지 썸네일을 생성하려면 비디오 자체가 Dynamic Media의 인코딩 프로세스를 거쳐야 합니다. Adobe Experience Manager에서 **[!UICONTROL Dynamic Media 인코딩 비디오]** Dynamic Media을 활성화하고 비디오 Cloud Services을 설정한 경우 워크플로는 비디오를 인코딩합니다. This workflow captures workflow process history and failure information. 다음을 참조하십시오 [비디오 인코딩 및 YouTube 게시 진행 모니터링](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Dynamic Media을 활성화하고 비디오 Cloud Services을 설정한 경우 **[!UICONTROL Dynamic Media 인코딩 비디오]** 워크플로우는 비디오를 업로드할 때 자동으로 적용됩니다. (Dynamic Media을 사용하지 않는 경우 **[!UICONTROL DAM 자산 업데이트]** 워크플로가 적용됩니다.)
+>비디오의 메타데이터 및 관련 비디오 이미지 썸네일을 생성하려면 비디오 자체가 Dynamic Media의 인코딩 프로세스를 거쳐야 합니다. Adobe Experience Manager에서 **[!UICONTROL Dynamic Media 인코딩 비디오]** Dynamic Media을 활성화하고 비디오 Cloud Service을 설정한 경우 워크플로는 비디오를 인코딩합니다. This workflow captures workflow process history and failure information. 다음을 참조하십시오 [비디오 인코딩 및 YouTube 게시 진행 모니터링](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Dynamic Media을 활성화하고 비디오 Cloud Service을 설정한 경우 **[!UICONTROL Dynamic Media 인코딩 비디오]** 워크플로우는 비디오를 업로드할 때 자동으로 적용됩니다. (Dynamic Media을 사용하지 않는 경우 **[!UICONTROL DAM 자산 업데이트]** 워크플로가 적용됩니다.)
 >
 >메타데이터는 에셋을 검색할 때 유용합니다. 썸네일은 인코딩 중에 생성되는 정적 비디오 이미지입니다. 카드 보기, 검색 결과 보기 및 에셋 목록 보기에서 비디오를 시각적으로 식별하는 데 도움이 되도록 Experience Manager 시스템에서 요구하고 사용자 인터페이스에 사용됩니다. 인코딩된 비디오의 렌디션 아이콘(화가 팔레트)을 선택하면 생성된 썸네일을 볼 수 있습니다.
 
@@ -61,7 +61,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
   </tr>
   <tr>
    <td><p>MP4 H.264 (mp4)</p> </td>
-   <td>auto</td>
+   <td>자동</td>
    <td>360</td>
    <td>예</td>
    <td>730</td>
@@ -71,7 +71,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
   </tr>
   <tr>
    <td><p>MP4 H.264 (mp4)</p> </td>
-   <td>auto</td>
+   <td>자동</td>
    <td>540</td>
    <td>예</td>
    <td>2000<br /> </td>
@@ -81,7 +81,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
   </tr>
   <tr>
    <td><p>MP4 H.264 (mp4)</p> </td>
-   <td>auto</td>
+   <td>자동</td>
    <td>720<br /> </td>
    <td>예</td>
    <td>3000<br /> </td>
@@ -323,7 +323,7 @@ Experience Manager에서 비디오 프로필을 만들거나 편집할 때 사�
 1. 비디오 프로필 페이지에서 비디오 프로필 이름 하나를 선택합니다.
 1. 도구 모음에서 를 선택합니다. **[!UICONTROL 편집]**.
 1. 비디오 인코딩 프로필 페이지에서 원하는 대로 이름과 설명을 편집합니다.
-1. As a best practice, ensure that the **[!UICONTROL Encode for adaptive streaming]** check box is selected.
+1. 우수 사례로서, **[!UICONTROL 적응형 스트리밍을 위한 인코딩]** 확인란이 선택되어 있습니다.
 적응형 비트율 스트리밍에 대한 설명을 보려면 정보 아이콘을 선택합니다. 점진적 비디오 프로필을 편집하는 경우 이 확인란을 선택하지 마십시오.
 1. 비디오 인코딩 사전 설정 제목 아래에서 프로필을 구성하는 비디오 인코딩 사전 설정을 추가, 편집 또는 삭제합니다.
 
@@ -379,7 +379,7 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 1. Experience Manager 로고를 선택하고 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 에셋]** > **[!UICONTROL 비디오 프로필]**.
 1. 폴더 또는 여러 폴더에 적용할 비디오 프로필을 선택합니다.
-1. 선택 **[!UICONTROL 폴더에 프로필 적용]** 새로 업로드한 자산을 받는 데 사용할 폴더 또는 여러 폴더를 선택하고 을(를) 선택합니다 **[!UICONTROL 적용]**. Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name while in **[!UICONTROL Card View]**.
+1. 선택 **[!UICONTROL 폴더에 프로필 적용]** 새로 업로드한 자산을 받는 데 사용할 폴더 또는 여러 폴더를 선택하고 을(를) 선택합니다 **[!UICONTROL 적용]**. 이미 프로필이 할당된 폴더는에 있는 동안 폴더 이름 바로 아래에 프로필 이름이 표시됩니다. **[!UICONTROL 카드 보기]**.
 다음을 수행할 수 있습니다. [비디오 프로필 처리 작업 진행 상황 모니터링](#monitoring-the-progress-of-an-encoding-job).
 
 #### 속성에서 폴더에 비디오 프로필 적용 {#applying-video-profiles-to-folders-from-properties}
@@ -401,7 +401,7 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 * 다음 CRXDE Lite으로 이동합니다. `/content/dam/jcr:content`. 속성 추가 `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` 및 선택 **[!UICONTROL 모두 저장]**.
 
-   ![chlimage_1-519](assets/chlimage_1-519.png)
+  ![chlimage_1-519](assets/chlimage_1-519.png)
 * 다음을 수행할 수 있습니다. [비디오 프로필 처리 작업 진행 상황 모니터링](#monitoring-the-progress-of-an-encoding-job).
 
 ## 비디오 프로필 처리 작업 진행 상황 모니터링 {#monitoring-the-progress-of-an-encoding-job}
