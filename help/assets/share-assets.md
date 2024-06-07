@@ -4,9 +4,9 @@ description: 링크, 다운로드 및 를 통한 공유 등의 방법을 사용�
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 90da6851240add93de73dd6da46e54ffbf80a1d3
+source-git-commit: ec01a1b383160014918ee8c9b81e15f0cc855d02
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1829'
 ht-degree: 3%
 
 ---
@@ -121,7 +121,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 | `${emailMessage}` | 이메일 본문 |
 | `${pagePath}` | 공유 링크의 URL |
 | `${linkExpiry}` | 공유 링크 만료일 |
-| `${host.prefix}` | 원본 [!DNL Experience Manager] 예: `http://www.adobe.com"` |
+<!--| `${host.prefix}` | Origin of the [!DNL Experience Manager] instance, for example `http://www.adobe.com"` |-->
 
 #### 사용자 지정된 이메일 템플릿 예 {#custom-email-template-example}
 
@@ -137,10 +137,10 @@ subject: ${emailSubject}
     <a href="${pagePath}" target="_blank"><strong>Open</strong></a>
 </p>
 
-Sent from instance: ${host.prefix}
-
 </body></html>
 ```
+
+<!--Sent from instance: ${host.prefix}-->
 
 ### 에셋 링크를 사용하여 에셋 다운로드 {#download-assets-using-asset-link}
 
