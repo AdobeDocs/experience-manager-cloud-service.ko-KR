@@ -5,14 +5,14 @@ contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
 content-type: reference
-feature: Video,Renditions,Configuration,Asset Management,Best Practices
+feature: Video,Renditions, Configuration, Asset Management, Best Practices
 role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: a92d55a4b9368d92d41d0156d8aa2b24f619fc54
+source-git-commit: 62af768370ee0affa4003a7ae0c520ad1a065e8c
 workflow-type: tm+mt
-source-wordcount: '3614'
+source-wordcount: '3619'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,9 @@ Dynamic Media과 동기화할 자산을 선택할 수 있는 사전 예방 기�
 * **선택적 게시:**
 자산을 동기화하면 선택적 게시를 통해 고객에게 표시되는 자산을 제어할 수 있습니다. 즉, 채널을 통해 실제로 전달되는 승인된 에셋을 관리하여 고객이 가장 연관성 높은 최적의 콘텐츠만 볼 수 있도록 할 수 있습니다.
 
-이 두 가지 모범 사례는 리치 미디어 콘텐츠에 대한 제어, 거버넌스 및 생산성을 개선하는 데 도움이 됩니다. 자세히 알아보시겠습니까? 다음으로 이동 [Dynamic Media의 폴더 수준에서 선택적 게시 구성](/help/assets/dynamic-media/selective-publishing.md).
+이 두 가지 모범 사례는 리치 미디어 콘텐츠에 대한 제어, 거버넌스 및 생산성을 개선하는 데 도움이 됩니다.
+
+자세히 알아보시겠습니까? 다음으로 이동 [Dynamic Media의 폴더 수준에서 선택적 게시 구성](/help/assets/dynamic-media/selective-publishing.md).
 
 
 ## 게재를 위한 자산 준비
@@ -135,7 +137,7 @@ Dynamic Media에서 이미지 사전 설정을 정기적으로 사용하면 이�
    * `myCompany-Silver-Wrist-Watch` 사용
    * *피함* `myCompany_Silver_Wrist_Watch` 또는 `myCompanySilverWristWatch`
 
-  이렇게 하면 검색 엔진이 이미지 컨텍스트를 이해하고 SEO를 개선하는 데 도움이 됩니다. 또한 Google에서는 밑줄이나 연결된 단어보다 하이픈을 사용하여 단어를 구분합니다.
+  이렇게 하면 검색 엔진이 이미지 컨텍스트를 이해하고 SEO를 개선하는 데 도움이 됩니다. Google에서는 파일 이름에서 밑줄 또는 공백보다 하이픈을 선호합니다. 또한 파일 이름에 단어를 연결하지 마십시오.
 * **사용자 정의 도메인:**
 브랜드 인지도와 신뢰를 강화하기 위해 회사 또는 브랜드 이름을 포함하는 사용자 정의 도메인을 구현합니다. 예:
 
@@ -167,7 +169,7 @@ Dynamic Media은 여러 정적 에셋을 사용하지 않고도 이미지를 개
 | --- | --- |
 | **원본 이미지 업로드 및 게시** | · Dynamic Media에 원본 이미지를 업로드하여 시작합니다.<br>· URL을 통해 게시되고 액세스할 수 있는지 확인하십시오.<br>· 이 예에서는 흰색 배경의 시계 스톡 이미지(&quot;Image X&quot;라고 함)가 Dynamic Media에 업로드됩니다.<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage) |
 | **마스크 만들기** | · 주제(효과를 적용할 영역)와 배경(변경할 영역)을 정의하는 마스크를 개발합니다.<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage_maskps](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage_maskps)<br>· 마스크는 일반적으로 회색 음영 이미지이며, 흰색은 피사체를 나타내고 검은색은 배경을 나타냅니다. Adobe Photoshop과 같은 도구를 사용하여 마스크를 만들 수 있습니다.<br>자세히 알아보시겠습니까? 다음으로 이동 [Photoshop에서 빠른 마스크 만들기 및 편집](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).<br>· &quot;Image X&quot;의 경우 향상시키고자 하는 대상을 정확하게 윤곽을 나타내는 마스크를 만듭니다. 예를 들어, 사람, 객체 등이 있습니다. |
-| **효과에 Dynamic Media URL 명령 적용** | 마스크가 있으면 URL 명령을 사용하여 그림자와 같은 효과를 적용하거나 배경색을 &quot;이미지 X&quot;로 변경합니다. 다음은 두 가지 예입니다.<br><br> · **그림자 효과:**<br>&#x200B;주체의 경계를 따라 그림자 효과를 추가하려면 다음과 같이 URL을 편집합니다.<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>이 URL에서 `$shadow$` 매개 변수는 그림자 효과를 만들고, `color=0,0,0` 그림자 색상을 검정으로 설정합니다.<br>· **배경색 변경:**<br>&#x200B;배경색을 변경하려면 다른 배경색 값이 있는 URL을 사용하십시오.<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br> 이 예에서는 `color=255,255,255` 배경색을 흰색으로 설정합니다. 시각적 효과를 위해 배경을 특정 색상으로 편집합니다. |
+| **효과에 Dynamic Media URL 명령 적용** | 마스크가 있으면 URL 명령을 사용하여 그림자와 같은 효과를 적용하거나 배경색을 &quot;이미지 X&quot;로 변경합니다. 다음은 두 가지 예입니다.<br><br> · **그림자 효과:**<br>&#x200B;주체의 경계를 따라 그림자 효과를 추가하려면 다음과 같이 URL을 편집합니다.<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>이 URL에서 `$shadow$` 매개 변수는 그림자 효과를 만들고, `color=0,0,0` 그림자 색상을 검정으로 설정합니다.<br>· **배경색 변경:**<br>&#x200B;배경색을 변경하려면 다른 배경색 값이 있는 URL을 사용하십시오.<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br> 이 예에서는 `color=255,255,0` 배경색을 노란색으로 설정합니다. 시각적 효과를 위해 배경을 특정 색상으로 편집합니다. |
 
 #### 이미지 테두리 추가
 
@@ -176,7 +178,7 @@ Dynamic Media을 사용하면 URL을 통해 직접 이미지를 조작할 수 �
 | 작업 | 할 일 |
 | --- | --- |
 | **흰색 테두리** | 흰색 테두리를 추가하려면 다음 URL을 사용하십시오.<br>[https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&amp;extend=10,10,10,10](https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&amp;extend=10,10,10,10)<br>이 URL에서 `extend=10,10,10,10` 매개 변수는 모든 면에서 10픽셀의 테두리 크기를 지정합니다. |
-| **흰색 테두리를 따라 흐림 효과** | 흰색 테두리를 따라 흐림 효과를 추가하려면 다음과 같이 URL을 편집할 수 있습니다.<br>[https://s7d2.scene7.com/is/image/Adobe1/AdobeStock_754660022?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;op_blur=60&amp;color=0,0,0](https://s7d2.scene7.com/is/image/Adobe1/AdobeStock_754660022?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;op_blur=60&amp;color=0,0,0)<br>이 URL에서 `effect=-1` 매개 변수는 흐림 효과를 적용하고 `op_blur=60` 흐림 효과 강도를 제어합니다. |
+| **흰색 테두리를 따라 흐림** | 흰색 테두리를 따라 흐림 효과를 추가하려면 다음과 같이 URL을 편집할 수 있습니다.<br>[https://s7d2.scene7.com/is/image/Adobe1/AdobeStock_754660022?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;op_blur=60&amp;color=0,0,0](https://s7d2.scene7.com/is/image/Adobe1/AdobeStock_754660022?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;op_blur=60&amp;color=0,0,0)<br>이 URL에서 `effect=-1` 매개 변수는 흐림 효과를 적용하고 `op_blur=60` 흐림 효과 강도를 제어합니다. |
 | **외부 경계를 따라 그림자 효과** | 외부 경계를 따라 그림자 효과를 추가하려면 다음 URL을 사용합니다.<br>https://s7g10.scene7.com/is/image/genaibeta/AdobeStock_754660022?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;$shadow$&amp;color=0,0,0<br>다음 `$shadow$` 매개 변수는 그림자 효과를 만들고, `color=0,0,0` 그림자 색상을 검정으로 설정합니다. |
 
 원하는 시각적 효과를 얻기 위해 이러한 URL을 자유롭게 실험해 보십시오.
@@ -191,7 +193,7 @@ Dynamic Media을 사용하면 URL을 통해 직접 이미지를 조작할 수 �
 | **로고 또는 아이콘 이미지 업로드 및 게시** | 그런 다음 기본 이미지 위에 겹칠 이미지를 업로드하고 게시합니다. 이 이미지는 오버레이할 로고 또는 아이콘이 있는 투명 PNG여야 합니다.<br>다음은 겹쳐질 투명 효과가 있는 별 오브젝트의 투명 PNG 이미지입니다.<br>https://s7g10.scene7.com/is/image/genaibeta/starxp |
 | **Dynamic Media URL 적용** | 이제 기본 이미지와 로고 또는 아이콘 이미지를 결합하는 Dynamic Media URL을 만듭니다. URL 명령을 사용하여 이 효과를 얻을 수 있습니다.<br>URL 구조는 다음과 같습니다.<br>[https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?layer=1&amp;src=starxp&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?layer=1&amp;src=starxp&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>위치<br>· `hotspotRetailBaseImage` 는 기본 이미지입니다.<br>· `starxp` 는 로고/아이콘 이미지입니다.<br>· `layer=1` 로고나 아이콘이 기본 이미지 위에 겹치도록 지정합니다.<br>· `scale=1.25` 로고/아이콘의 크기를 조정합니다.<br>· `posN=0.33,-.25` 기본 이미지를 기준으로 로고/아이콘의 위치를 결정합니다.<br>· `fmt=png` 는 출력이 PNG 형식인지 확인합니다. |
 
-자세한 내용 다음으로 이동 [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) 에 대한 자세한 내용은 `src` 명령 및 기타 Dynamic Media 명령.
+자세한 내용 다음으로 이동 [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) 에 대한 자세한 내용은 `src` 명령 및 기타 Dynamic Media URL 명령.
 
 
 #### 홍보 텍스트 오버레이
@@ -218,7 +220,7 @@ Dynamic Media을 사용하면 URL을 통해 직접 이미지를 조작할 수 �
 
 ##### 자르기 대 크기 조정
 
-크기 조정 및 자르기 는 썸네일, 배너 또는 제품 디스플레이 이미지 작성 여부에 관계없이 다양한 사용 사례에 맞게 이미지를 변환할 수 있는 Dynamic Media의 기술입니다.
+자르기 및 크기 조정은 썸네일, 제품 표시 이미지 또는 배너 만들기에 관계없이 다양한 사용 사례에 맞게 이미지를 변환할 수 있는 Dynamic Media의 기술입니다.
 
 * **자르기:**
 이미지의 일부를 제거하여 컴포지션과 프레이밍을 변경합니다. 전체 차원을 변경하지 않고 특정 영역에 중점을 둡니다.
@@ -255,7 +257,7 @@ URL 내에서 사용할 수 있는 명령에 대해 자세히 알아보시겠습
 선택한 비디오 프로필을 비디오가 업로드될 폴더에 할당합니다. 이 단계에서는 업로드 프로세스 중에 올바른 인코딩 설정이 적용되도록 합니다.
 * **원본 비디오 업로드:**
 원본 비디오 파일을 업로드합니다. 좋은 품질의 고해상도 비디오인지 확인하십시오. 소스 비디오가 좋을수록 최종 결과도 좋습니다.
-* **미리보기 및 게시:**
+* **미리 보기 및 게시:**
 모든 것이 예상대로 보이도록 비디오를 미리 봅니다. 만족스러우면 게시하십시오. 이 단계에서는 대상자가 비디오에 액세스할 수 있습니다.
 * **링크 또는 포함:**
 게시 후 두 가지 옵션이 있습니다.
@@ -272,7 +274,7 @@ URL 내에서 사용할 수 있는 명령에 대해 자세히 알아보시겠습
 
 최상의 품질과 비디오 참여를 보장하려면 다음 모범 사례 전략의 조합을 구현하는 것이 좋습니다.
 
-* **기본 제공 HTML5 비디오 뷰어 사용:**
+* **내장된 HTML5 비디오 뷰어 사용:**
 Dynamic Media HTML5 비디오 뷰어 사전 설정은 강력한 비디오 플레이어입니다. HTML5 비디오 재생 및 모바일 장치와 관련된 일반적인 문제를 방지하려면 이 도구를 사용하십시오.
 이러한 사전 설정은 적응형 비트율 스트리밍 전달 및 제한된 데스크탑 브라우저 도달과 같은 문제를 해결합니다.
 자세히 알아보시겠습니까? 다음으로 이동 [우수 사례: HTML 5 비디오 뷰어 사용](/help/assets/dynamic-media/video.md#best-practice-using-the-html-video-viewer).
@@ -346,5 +348,5 @@ While `avif` 는 더 나은 압축을 제공하는 최신 형식이며 아직 �
 
 스마트 이미징을 사용하면 각 사용자의 검색 환경에 맞게 가능한 가장 효율적인 방식으로 이미지가 제공되도록 할 수 있습니다. 이 접근법은 프로세스를 단순화하고 이미지 로딩 시간 및 전반적인 사용자 경험의 관점에서 개선된 성능으로 이어질 수 있다.
 
-자세히 알아보시겠습니까? 다음으로 이동 [스마트 이미징](/help/assets/dynamic-media/imaging-faq.md)
+자세히 알아보시겠습니까? 다음으로 이동 [스마트 이미징](/help/assets/dynamic-media/imaging-faq.md).
 
