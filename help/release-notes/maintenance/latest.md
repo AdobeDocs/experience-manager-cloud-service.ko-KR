@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 8f7c2fc175a542df5725693cfc332802d54e1e88
+source-git-commit: c969b78f5e93e15d1f8f57dd409e58a6275069ce
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 88%
+source-wordcount: '422'
+ht-degree: 83%
 
 ---
 
@@ -48,7 +48,7 @@ Experience Manager Guides에서 수정된 새로운 기능과 향상된 기능�
 
 ### 알려진 문제 {#known-issues-16544}
 
-없음.
+* GRANITE-52573: 이중 슬래시가 포함된 요청 `//` 거부되었습니다(상태 코드 400). 이 동작은 후속 유지 관리 릴리스에서 되돌려집니다.
 
 ### 변경 사항 공지 {#change-notice-16544}
 
