@@ -4,10 +4,10 @@ description: 클라우드 환경에서 신속한 개발 반복을 위해 빠른 
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 1c157af3f7ed4ab3ae4a67d7db200e772cf8b565
 workflow-type: tm+mt
-source-wordcount: '4294'
-ht-degree: 3%
+source-wordcount: '4312'
+ht-degree: 4%
 
 ---
 
@@ -412,11 +412,6 @@ The analyser found the following errors for publish :
 
 ### 사이트 테마 및 사이트 템플릿을 기반으로 프론트엔드 코드 배포 {#deploying-themes-to-rde}
 
->[!NOTE]
->
-> 이 기능은 아직 사용할 수 없습니다. 그것은 6월 중에 출시될 예정입니다.
->
-
 RDE는 다음을 기반으로 프론트엔드 코드 지원 [사이트 테마](/help/sites-cloud/administering/site-creation/site-themes.md) 및 [사이트 템플릿](/help/sites-cloud/administering/site-creation/site-templates.md). RDE에서는 Cloud Manager가 아닌 명령줄 지시문을 사용하여 프론트엔드 패키지를 배포합니다 [프론트엔드 파이프라인](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) 다른 환경 유형에 사용됩니다.
 
 평소대로 npm을 사용하여 프론트엔드 패키지를 빌드합니다.
@@ -460,6 +455,10 @@ Logs:
 >프론트엔드 패키지의 파일 이름은 다음 명명 규칙을 준수해야 합니다.
 > * &quot;dist&quot; 폴더, npm 빌드 출력 패키지 폴더
 > * npm 종속성 패키지용 &quot;package.json&quot; 파일
+
+>[!TIP]
+>
+> 2023년 4월 이전에 RDE를 만들고 프론트엔드 기능을 처음 시도할 때 &quot;UNEXPECTED_API_ERROR&quot; 오류가 발생하는 경우 환경을 삭제하고 다시 만드십시오.
 
 ### RDE 상태 확인 {#checking-rde-status}
 
@@ -533,7 +532,7 @@ RDE CLI에는 기록해야 하는 클래스와 패키지 및 로그 수준을 �
 
 기능은 다음과 같습니다.
 
-* 패키지 또는 클래스 수준별 로그 수준 선언
+* 패키지별 또는 클래스 수준에서 로그 수준 선언
 * 로그 출력 형식 사용자 정의
 * 각각 자체 터미널에 최대 4개의 현재 로그 구성 추적
 * 특정 로그 강조 표시
