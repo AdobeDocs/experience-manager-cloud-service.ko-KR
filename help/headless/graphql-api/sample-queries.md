@@ -3,10 +3,10 @@ title: AEM을 통해 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐
 description: AEM으로 GraphQL을 사용하여 샘플 콘텐츠 및 쿼리 탐색을 통해 Headless 방식으로 콘텐츠를 제공하는 방법을 배웁니다.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 667cac9153947d1c236ff1117fc7200883416d8d
+source-git-commit: 07670a532294a4ae8afb9636a206d2a8cbdce2b9
 workflow-type: tm+mt
-source-wordcount: '1754'
-ht-degree: 98%
+source-wordcount: '1826'
+ht-degree: 95%
 
 ---
 
@@ -1794,6 +1794,20 @@ query {
   }
 } 
 ```
+
+## DAM 및 Dynamic Media 에셋 전달을 위한 샘플 쿼리 {#sample-queries-delivery-DAM-DM}
+
+웹에 최적화된 이미지 제공(DAM 에셋):
+
+* [전체 매개 변수를 사용하여 웹에 최적화된 이미지 제공을 위한 샘플 쿼리](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-full-parameters)
+
+* [지정된 단일 매개 변수를 사용하여 웹에 최적화된 이미지 제공을 위한 샘플 쿼리](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-single-query-variable)
+
+Dynamic Media 에셋으로의 URL 전달용
+
+* 다음을 참조하십시오 [URL을 통한 Dynamic Media 에셋 전달을 위한 샘플 쿼리 - 이미지 참조](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+
+* 다음을 참조하십시오 [URL을 통한 Dynamic Media 에셋 전달을 위한 샘플 쿼리 - 다중 참조](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
 ## 샘플 콘텐츠 조각 구조 (GraphQL과 함께 사용) {#content-fragment-structure-graphql}
 
