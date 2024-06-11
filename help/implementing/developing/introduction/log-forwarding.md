@@ -4,10 +4,10 @@ description: AEM에서 Splunk 및 기타 로깅 공급업체로의 로그 전달
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 0e166e8549febcf5939e4e6025519d8387231880
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 3%
+source-wordcount: '1163'
+ht-degree: 1%
 
 ---
 
@@ -27,6 +27,8 @@ ht-degree: 3%
 
 로그 전달은 Git에서 구성을 선언하고 Cloud Manager 구성 파이프라인을 통해 프로덕션(샌드박스가 아닌) 프로그램의 개발, 스테이지 및 프로덕션 환경 유형에 배포하여 셀프서비스 방식으로 구성됩니다.
 
+AEM 및 Apache/Dispatcher 로그를 전용 이그레스 IP와 같은 AEM 고급 네트워킹 인프라를 통해 라우팅하는 옵션이 있습니다.
+
 로깅 대상으로 전송된 로그와 관련된 네트워크 대역폭은 조직의 네트워크 I/O 사용의 일부로 간주됩니다.
 
 
@@ -36,6 +38,7 @@ ht-degree: 3%
 
 * 설정 - 모든 로깅 대상에 대해 공통입니다.
 * 대상 구성 로깅 - 각 대상의 형식이 약간 다릅니다.
+* 로그 항목 형식 - 로그 항목 형식에 대한 정보
 * 고급 네트워킹 - 전용 이그레스 또는 VPN을 통해 AEM 및 Apache/Dispatcher 로그 전송
 
 
@@ -48,7 +51,7 @@ ht-degree: 3%
         logForwarding.yaml
    ```
 
-1. logForwarding.yaml에는 메타데이터와 다음 형식과 유사한 구성이 포함되어야 합니다(예제로 Splunk 사용).
+1. `logForwarding.yaml` 에는 메타데이터와 다음 형식과 유사한 구성이 포함되어야 합니다(예제로 Splunk 사용).
 
    ```
    kind: "LogForwarding"
@@ -64,7 +67,7 @@ ht-degree: 3%
          index: "AEMaaCS"
    ```
 
-   다음 **종류** 매개 변수는 LogForwarding으로 설정해야 합니다. 버전은 스키마 버전(1)으로 설정해야 합니다.
+   다음 **종류** 매개 변수는 다음으로 설정해야 합니다. `LogForwarding` 버전은 1인 스키마 버전으로 설정해야 합니다.
 
    구성의 토큰(예: `${{SPLUNK_TOKEN}}`)는 비밀을 나타내며 Git에 저장해서는 안 됩니다. 대신 Cloud Manager로 선언합니다.  [환경 변수](/help/implementing/cloud-manager/environment-variables.md) 유형 **비밀**. 다음을 선택하십시오. **모두** 적용된 서비스 필드의 드롭다운 값으로, 로그를 작성자, 게시 및 미리보기 계층에 전달할 수 있습니다.
 
@@ -143,6 +146,45 @@ data:
 
 ![Azure Blob SAS 토큰 구성](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
 
+#### Azure Blob 저장소 CDN 로그 {#azureblob-cdn}
+
+전역적으로 분산된 각 로깅 서버는 `aemcdn` 폴더를 삭제합니다. 파일이 만들어지면에 더 이상 추가되지 않습니다. 파일 이름 형식은 YYYY-MM-DDThh입니다.:mm:ss.sss-uniqueid.log. 예: 2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log.
+
+예를 들어, 특정 시점에서 다음과 같은 작업을 수행할 수 있습니다.
+
+```
+aemcdn/
+   2024-03-04T10:00:00.000-abc.log
+   2024-03-04T10:00:00.000-def.log
+```
+
+30초 후:
+
+```
+aemcdn/
+   2024-03-04T10:00:00.000-abc.log
+   2024-03-04T10:00:00.000-def.log
+   2024-03-04T10:00:30.000-ghi.log
+   2024-03-04T10:00:30.000-jkl.log
+   2024-03-04T10:00:30.000-mno.log
+```
+
+각 파일에는 여러 JSON 로그 항목이 포함되어 있으며 각 항목은 별도의 줄에 있습니다. 로그 항목 형식은 다음에 설명되어 있습니다 [기록 문서](/help/implementing/developing/introduction/logging.md), 각 로그 항목에는 다음에 언급된 추가 속성도 포함됩니다. [로그 항목 형식](#log-format) 아래 섹션.
+
+#### 기타 Azure Blob 저장소 로그 {#azureblob-other}
+
+CDN 로그 이외의 로그는 다음 명명 규칙을 사용하여 폴더 아래에 표시됩니다.
+
+* aemaccess
+* aemerror
+* aemdispatcher
+* httpdaccess
+* httpdererror
+
+각 폴더 아래에 하나의 파일이 만들어지고 추가됩니다. 고객은 이 파일의 크기가 너무 커지지 않도록 처리 및 관리를 담당합니다.
+
+다음에서 로그 항목 형식 확인: [기록 문서](/help/implementing/developing/introduction/logging.md). 로그 항목에는 다음에 언급된 추가 속성도 포함됩니다. [로그 항목 형식](#log-formats) 아래 섹션.
+
 
 ### Datadog {#datadog}
 
@@ -202,6 +244,24 @@ data:
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
 
+#### HTTPS CDN 로그 {#https-cdn}
+
+웹 요청(POST)은 로그 항목의 배열인 JSON 페이로드와 함께 연속적으로 전송되며 로그 항목 형식은 다음에 설명되어 있습니다. [기록 문서](/help/implementing/developing/introduction/logging.md#cdn-log). 추가 속성은에 설명되어 있습니다. [로그 항목 형식](#log-formats) 아래 섹션.
+
+이름이 인 속성도 있습니다. `sourcetype`, 값으로 설정됨 `aemcdn`.
+
+#### 기타 HTTPS 로그 {#https-other}
+
+각 로그 항목에 대해 별도의 웹 요청(POST)이 전송되며, 로그 항목 형식은 [기록 문서](/help/implementing/developing/introduction/logging.md). 추가 속성은에 설명되어 있습니다. [로그 항목 형식](#log-format) 아래 섹션.
+
+이름이 인 속성도 있습니다. `sourcetype`: 다음 값 중 하나로 설정됩니다.
+
+* aemaccess
+* aemerror
+* aemdispatcher
+* httpdaccess
+* httpdererror
+
 ### 스플렁크 {#splunk}
 
 ```
@@ -237,9 +297,38 @@ data:
    ```   
 -->
 
+## 로그 항목 형식 {#log-formats}
+
+일반 참조 [기록 문서](/help/implementing/developing/introduction/logging.md) 각 로그 유형의 형식(Dispatcher 로그, CDN 로그 등)에 대해 설명합니다.
+
+여러 프로그램 및 환경의 로그를 동일한 로깅 대상으로 전달할 수 있으므로 로깅 문서에 설명된 출력 외에 각 로그 항목에는 다음 속성이 포함됩니다.
+
+* aem_env_id
+* aem_env_type
+* aem_program_id
+* aem_tier
+
+예를 들어 속성은 다음 값을 가질 수 있습니다.
+
+```
+aem_env_id: 1242
+aem_env_type: dev
+aem_program_id: 12314
+aem_tier: author
+```
+
 ## 고급 네트워킹 {#advanced-networking}
 
-로깅 대상에 대한 트래픽을 잠그는 조직 요구 사항이 있는 경우 통과하도록 로그 전달을 구성할 수 있습니다 [고급 네트워킹](/help/security/configuring-advanced-networking.md). 선택 사항을 사용하는 아래 세 가지 고급 네트워킹 유형에 대한 패턴을 참조하십시오 `port` 매개 변수, `host` 매개 변수.
+>[!NOTE]
+>
+>이 기능은 아직 얼리 어답터에게 준비되지 않았습니다.
+
+
+일부 조직에서는 로깅 대상에서 수신할 수 있는 트래픽을 제한하도록 선택합니다.
+
+CDN 로그의 경우에서 설명한 대로 IP 주소를 허용 목록에 추가할 수 있습니다 [이 문서](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). 공유 IP 주소 목록이 너무 크면 (Adobe이 아닌) Azure Blob Store에 트래픽을 보내는 것이 좋습니다. 여기서 논리를 작성하여 전용 IP에서 로그를 최종 대상으로 보낼 수 있습니다.
+
+다른 로그의 경우 전달할 로그 전달을 구성할 수 있습니다 [고급 네트워킹](/help/security/configuring-advanced-networking.md). 선택 사항을 사용하는 아래 세 가지 고급 네트워킹 유형에 대한 패턴을 참조하십시오 `port` 매개 변수, `host` 매개 변수.
 
 ### 유연한 포트 이그레스 {#flex-port}
 
@@ -249,7 +338,7 @@ data:
 {
     "portForwards": [
         {
-            "name": "mylogging.service.logger.com",
+            "name": "splunk-host.example.com",
             "portDest": 8443, # something other than 443
             "portOrig": 30443
         }    
@@ -265,7 +354,7 @@ version: "1"
 data:
   splunk:
     default:
-      host: "proxy.tunnel"
+      host: "${{AEM_PROXY_HOST}}"
       token: "${{SomeToken}}"
       port: 30443
       index: "index_name"
@@ -273,14 +362,15 @@ data:
 
 ### 전용 이그레스 IP {#dedicated-egress}
 
+
 로그 트래픽이 전용 이그레스 IP에서 나와야 하는 경우 다음과 같이 고급 네트워킹을 구성합니다.
 
 ```
 {
     "portForwards": [
         {
-            "name": "mylogging.service.com",
-            "portDest": 443, # something other than 443
+            "name": "splunk-host.example.com",
+            "portDest": 443, 
             "portOrig": 30443
         }    
     ]
@@ -290,15 +380,25 @@ data:
 와 같이 yaml 파일을 구성합니다.
 
 ```
+      
 kind: "LogForwarding"
 version: "1"
+   metadata:
+     envTypes: ["dev"]
 data:
   splunk:
-    default:
-      host: "proxy.tunnel"
-      token: "${{SomeToken}}"
-      port: 30443
-      index: "index_name"
+     default:
+       enabled: true
+       index: "index_name" 
+       token: "${{SPLUNK_TOKEN}}"  
+     aem:
+       enabled: true
+       host: "${{AEM_PROXY_HOST}}"
+       port: 30443       
+     cdn:
+       enabled: true
+       host: "splunk-host.example.com"
+       port: 443    
 ```
 
 ### VPN {#vpn}
@@ -309,24 +409,29 @@ data:
 {
     "portForwards": [
         {
-            "name": "mylogging.service.com",
-            "portDest": 443, # something other than 443
+            "name": "splunk-host.example.com",
+            "portDest": 443,
             "portOrig": 30443
         }    
     ]
 }
-```
 
-와 같이 yaml 파일을 구성합니다.
-
-```
 kind: "LogForwarding"
 version: "1"
+   metadata:
+     envTypes: ["dev"]
 data:
   splunk:
-    default:
-      host: "mylogging.service.com"
-      token: "${{SomeToken}}"
-      port: 30443
-      index: "index_name"
+     default:
+       enabled: true
+       index: "index_name" 
+       token: "${{SPLUNK_TOKEN}}"  
+     aem:
+       enabled: true
+       host: "${{AEM_PROXY_HOST}}"
+       port: 30443       
+     cdn:
+       enabled: true
+       host: "splunk-host.example.com"
+       port: 443     
 ```
