@@ -1,5 +1,5 @@
 ---
-title: 더 이상 사용되지 않는/제거된 기능
+title: 사용 중단되거나 제거된 기능
 description: ' [!DNL Adobe Experience Manager]  [!DNL Cloud Service]에서 더 이상 사용되지 않으며 제거된 기능에 관련된 릴리스 정보입니다.'
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2193'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 98%
 
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
->title="AEM as a Cloud Service에서 더 이상 사용되지 않는/제거된 기능"
+>title="AEM as a Cloud Service에서 사용 중단되거나 제거된 기능"
 >abstract="AEM as a Cloud Service에는 클라우드 기반 배포 모델이 있습니다. 일부 기능은 클라우드 기반 기능으로 대체되었으며 이 탭에서 이들 기능이 표시됩니다."
 
 
@@ -44,7 +44,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 | [!DNL Assets] | 비디오의 FFmpeg 코드 변환. | FFmpeg 썸네일 생성의 경우 [자산 마이크로서비스](/help/assets/asset-microservices-overview.md)를 사용합니다. FFmpeg 코드 변환의 경우 [Dynamic Media](/help/assets/manage-video-assets.md)를 사용합니다. |
 | [!DNL Foundation] | 복제 에이전트의 “배치” 탭 아래에 있는 트리 복제 UI(2021년 9월 30일 이후 제거) | [게시 관리](/help/operations/replication.md#manage-publication) 또는 [콘텐츠 트리 게시 워크플로](/help/operations/replication.md#publish-content-tree-workflow) 접근 방식 |
 | [!DNL Foundation] | 복제 에이전트 관리 화면의 배포 탭과 복제 API를 사용하면 10MB가 넘는 콘텐츠 패키지를 복제할 수 없습니다. 대신 [게시 관리](/help/operations/replication.md#manage-publication) 또는 [콘텐츠 트리 게시 워크플로](/help/operations/replication.md#publish-content-tree-workflow)를 사용하십시오. |
-| [!DNL Foundation] | Adobe Developer Console 프로젝트에서 생성된 자격 증명을 사용하는 통합에서는 JWT(서비스 계정) 자격 증명에 대한 지원이 점차 중단됩니다. 2024년 5월 1일 이후에는 Adobe Developer Console에서 새 서비스 계정(JWT) 자격 증명을 생성할 수 없습니다. 단, 기존 서비스 계정(JWT) 자격 증명은 2025년 1월 1일까지 이미 구성된 통합에 계속 사용할 수 있습니다. 계정(JWT) 자격 증명은 더 이상 작동하지 않으며 고객은 OAuth 서버 간 자격 증명으로 마이그레이션해야 합니다. [자세히 알아보기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | Adobe I/O OAuth 서버 간 자격 증명으로 [마이그레이션](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)합니다. |
+| [!DNL Foundation] | Adobe Developer Console 프로젝트에서 생성된 자격 증명을 사용하는 통합에서는 JWT(서비스 계정) 자격 증명에 대한 지원이 점차 중단됩니다. 2024년 5월 1일 이후에는 Adobe Developer Console에서 새 서비스 계정(JWT) 자격 증명을 생성할 수 없습니다. 단, 기존 서비스 계정(JWT) 자격 증명은 2025년 1월 1일까지 이미 구성된 통합에 계속 사용할 수 있습니다. 계정(JWT) 자격 증명은 더 이상 작동하지 않으며 고객은 OAuth 서버 간 자격 증명으로 마이그레이션해야 합니다. [자세히 알아보기](https://experienceleague.adobe.com/kr/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | Adobe I/O OAuth 서버 간 자격 증명으로 [마이그레이션](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)합니다. |
 
 ## 제거된 기능 {#removed-features}
 
@@ -61,7 +61,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 | [!DNL Foundation] | JST 스크립팅 템플릿 지원(OSGi 번들 org.apache.sling.scripting.jst) | 해당 사항 없음 | 제거됨 |
 | [!DNL Foundation] | Apache Felix Http Whiteboard 지원 | OSGi Http Whiteboard | 2022년 3월 |
 | [!DNL Foundation] | com.adobe.granite.oauth.server 지원 | Adobe IMS 통합 | 2023년 3월 |
-| [!DNL Foundation] | 에 대한 org.apache.sling.serviceusermapping 기능 지원 [서비스 사용자 id 가져오기](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | 해당 사항 없음 | 8/30/24 |
+| [!DNL Foundation] | [서비스 사용자 ID 가져오기](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-)를 위해 org.apache.sling.serviceusermapping 기능 지원 | 해당 사항 없음 | 8/30/24 |
 
 
 ## AEM API {#aem-apis}
@@ -275,7 +275,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
   <tr>
     <td>org.slf4j.event	</td>
     <td>이 내부 slf4j API는 AEM as a Cloud Service에서 지원되지 않습니다.</td>
-    <td>2022년 4월 11일</td>
+    <td>4/11/2022</td>
     <td>8/30/2024</td>
   </tr>
     <td>org.apache.sling.repoinit.jcr<br>org.apache.sling.repoinit.parser.operations</td>
