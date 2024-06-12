@@ -2,10 +2,11 @@
 title: CDN 자격 증명 및 인증 구성
 description: Cloud Manager 구성 파이프라인을 사용하여 배포되는 구성 파일에서 규칙을 선언하여 CDN 자격 증명 및 인증을 구성하는 방법에 대해 알아봅니다.
 feature: Dispatcher
-source-git-commit: ee993798739232da794dbf7ff0a643ca93effa7d
+exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
+source-git-commit: 7a53f936aacfb3e5aa431f26e5346c1809f9c76f
 workflow-type: tm+mt
 source-wordcount: '1143'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -71,7 +72,7 @@ data:
 
 ## API 토큰 제거 {#purge-API-token}
 
-고객은 선언된 삭제 API 토큰을 사용하여 CDN 캐시를 삭제할 수 있습니다. 토큰은 아래 구문으로 선언됩니다.  다음을 참조하십시오. [공통 설정](#common-setup) 섹션 을 참조하여 배포 방법을 알아보십시오.
+고객은 다음을 수행할 수 있습니다. [cdn 캐시 제거](/help/implementing/dispatcher/cdn-cache-purge.md) 선언된 Purge API 토큰을 사용하여 토큰은 아래 구문으로 선언됩니다.  다음을 참조하십시오. [공통 설정](#common-setup) 섹션 을 참조하여 배포 방법을 알아보십시오.
 
 ```
 kind: "CDN"
