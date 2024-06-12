@@ -4,10 +4,10 @@ description: AEM as a Cloud Service의 Cloud Manager 2024.6.0 릴리스 정보�
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 958d8fb3526bafeb5a3be9828bddfa3330c05fec
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 46%
+source-wordcount: '548'
+ht-degree: 39%
 
 ---
 
@@ -54,13 +54,13 @@ Adobe Experience Manager Sites의 일부로 Edge Delivery Services 라이선스�
 
 이 새로운 기능을 테스트하고 피드백을 공유하려면 (으)로 이메일을 보내십시오. `Grp-aemcs-dv-dert-adopter@adobe.com` 사용 중인 Adobe ID과 연결된 이메일 주소입니다.
 
-### RUM(실시간 사용 모니터링)을 통한 클라이언트측 수집 {#rum}
+<!-- RICK: REMOVED THIS SECTION AS PER EMAIL REQUEST TO DL-AEM-DOCS FROM SHWETA DUA, WEDNESDAY, JUNE 12, 2024 ### Client-Side Collection via Real Use Monitoring (RUM) {#rum}
 
-다음을 활용할 수 있습니다. [RUM(Real Use Monitoring) 데이터 서비스](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) 클라이언트측 컬렉션을 AEM as a Cloud Service으로 활성화하려면
+You can leverage the [Real Use Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) to enable client-side collection for AEM as a Cloud Service.
 
-RUM(Real Use Monitoring) 데이터 서비스는 사용자 상호 작용을 보다 정확하게 반영하여 웹 사이트 참여를 안정적으로 측정합니다. 이를 통해 페이지 성능에 대한 고급 인사이트를 얻을 수 있습니다. 이는 Adobe에서 관리하는 CDN 또는 Adobe에서 관리하지 않는 CDN을 사용하는 고객에게 유용합니다. Adobe가 관리하지 않는 CDN을 사용하는 고객의 경우 이제 자동화된 트래픽 보고를 활성화할 수 있으므로 트래픽 보고서를 Adobe와 공유할 필요가 없습니다.
+Real Use Monitoring (RUM) Data Service offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. It is a great opportunity to gain advanced insights into your page performance. This is beneficial for customers who use either Adobe-managed CDN or non-Adobe managed CDN. For customers using a non-Adobe managed CDN, automated traffic reporting can now be enabled for them, thus removing the need to share any traffic report with Adobe.
 
-이러한 새 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 `aemcs-rum-adopter@adobe.com`에 이메일을 보내주십시오. 이메일에 프로덕션, 단계, 개발 환경의 도메인 이름이 포함되어야 합니다.  이 기능에 대한 얼리 어답터 프로그램의 가용성은 제한적입니다.
+If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-rum-adopter@adobe.com` from the email address associated with your Adobe ID. Please include the domain name for production, stage, and dev environments in your email.  Availability of the early adopter program of this feature is limited. -->
 
 ### 경험 감사 대시보드 {#experience-audit-dashboard}
 
