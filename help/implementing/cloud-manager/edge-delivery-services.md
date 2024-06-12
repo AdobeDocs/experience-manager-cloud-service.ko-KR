@@ -1,7 +1,7 @@
 ---
 title: Cloud Manager의 Edge Delivery Services 지원
 description: Edge Delivery Services을 사용하여 Cloud Manager 프로젝트를 제공하는 방법을 알아봅니다.
-source-git-commit: 73bd693d47f37b453209208816dfed15d65e9e09
+source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 14%
@@ -21,7 +21,7 @@ Edge Delivery Services을 사용하여 Cloud Manager 프로젝트를 제공하�
 
 Edge Delivery Services는 웹 사이트에서 콘텐츠를 작성하는 방법을 보다 유연하게 제공하는 구성 가능한 서비스 세트입니다. 이를 통해 다음을 수행할 수 있습니다.
 
-* 완벽한 Lighthouse 점수로 빠른 사이트를 만들고 RUM(Real User Monitoring)을 통해 지속적으로 성능을 모니터링합니다.
+* 완벽한 Lighthouse 점수로 빠른 사이트를 만들고 RUM(Real Use Monitoring)을 통해 지속적으로 성능을 모니터링합니다.
 * 콘텐츠 소스를 분리하여 작성 효율성을 높입니다.
 
 범용 편집기를 사용하여 AEM 컨텐츠 관리 및 AEM 기반 작성과 문서 기반 작성을 모두 사용할 수 있습니다.

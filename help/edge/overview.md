@@ -4,10 +4,10 @@ description: AEM as a Cloud Service가 Edge Delivery Services에서 제공하는
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
 workflow-type: tm+mt
 source-wordcount: '862'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ Edge Delivery Services를 사용하여 AEM은 참여 및 전환을 유도하는 
 
 Edge Delivery Services를 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 
-* 완벽한 Lighthouse Score를 사용하여 빠른 사이트를 만들고 실제 사용자 모니터링(RUM)을 통해 사이트 성과를 지속적으로 모니터링합니다.
+* 완벽한 Lighthouse 점수로 빠른 사이트를 만들고 실시간 모니터링(RUM)을 통해 사이트 성능을 지속적으로 모니터링합니다.
 * 콘텐츠 소스를 분리하여 작성 효율성을 높입니다. 기본 제공되는 AEM 작성과 문서 기반 작성을 모두 사용할 수 있습니다. 따라서 동일한 웹 사이트에서 여러 콘텐츠 소스로 작업할 수 있습니다.
 * 기본 제공 실험 프레임워크를 사용하여 성능에 영향을 주지 않고도 빠르게 테스트를 작성 및 실행하고 테스트 승자 프로덕션에 대한 빠른 릴리스를 제공할 수 있습니다.
 
@@ -46,7 +46,7 @@ Edge Delivery Services는 Adobe Experience Manager의 일부이므로 Edge Deliv
 
 AEM 및 Edge Delivery Services를 사용하여 자신의 프로젝트를 작성하는 방법을 알아보려면 [Edge Delivery Services를 사용한 AEM 작성을 위한 개발자 시작 안내서](/help/edge/aem-authoring/edge-dev-getting-started.md)를 참조하십시오.
 
-[Adobe Target,](https://www.aem.live/developer/target-integration) [실제 사용자 모니터링(RUM)](https://www.aem.live/developer/rum)과 함께 Edge Delivery Services를 사용하여 사이트의 사용량과 성능을 진단하고 [시작](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)할 수 있습니다.
+Edge Delivery Services을 사용할 수도 있습니다. [Adobe Target,](https://www.aem.live/developer/target-integration) [RUM(실시간 사용 모니터링)](https://www.aem.live/developer/rum) 사이트의 사용 및 성능을 진단하려면 [시작.](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
 
 ## Edge Delivery Services 시작하기 {#getting-started}
 

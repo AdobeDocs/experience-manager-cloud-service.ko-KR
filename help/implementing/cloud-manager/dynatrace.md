@@ -5,7 +5,7 @@ exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
+source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Adobe은 DynatraceAEM 를 사용하여 엔터프라이즈 배포의 일부로 as a Cloud Service을 모니터링하고, 잠재적 문제의 원인을 파악하고, 필요에 따라 이를 해결하기 위한 조치를 취하는 기능을 제공합니다.
 
-Dynatrace을 사용하면 모든 AEM 애플리케이션을 원활하게 확인할 수 있습니다. Dynatrace은 AEM 애플리케이션을 자동으로 감지하고 웹 사이트에서 컨테이너, 클라우드 서비스에 이르기까지 애플리케이션의 종속성을 시각화함으로써 최종 사용자 경험에 대한 포괄적인 가시성을 제공합니다. 모든 계층의 엔드 투 엔드 추적 및 Real User Monitoring과 얽혀 AEM 콘텐츠 주도 경험을 공백이나 사각지대 없이 한 차원 높입니다. 예외 항목이 발생하면 Dynatrace은 Davis AI 엔진을 사용하여 실시간으로 이를 진단하고 고객이 영향을 받기 전에 근본 원인을 손상된 코드로 찾아내어 평균 복구 시간을 최소화합니다.
+Dynatrace을 사용하면 모든 AEM 애플리케이션을 원활하게 확인할 수 있습니다. Dynatrace은 AEM 애플리케이션을 자동으로 감지하고 웹 사이트에서 컨테이너, 클라우드 서비스에 이르기까지 애플리케이션의 종속성을 시각화함으로써 최종 사용자 경험에 대한 포괄적인 가시성을 제공합니다. 모든 계층의 엔드 투 엔드 추적 및 Real Use 모니터링과 상호 작용하여 AEM 콘텐츠 주도 경험을 공백이나 사각지대 없이 한 차원 높은 수준으로 끌어올리십시오. 예외 항목이 발생하면 Dynatrace은 Davis AI 엔진을 사용하여 실시간으로 이를 진단하고 고객이 영향을 받기 전에 근본 원인을 손상된 코드로 찾아내어 평균 복구 시간을 최소화합니다.
 
 Dynatrace에 대한 자세한 내용은 [Adobe AEM Cloud Service 통합](https://www.dynatrace.com/hub/detail/adobe-experience-manager-1/).
 
