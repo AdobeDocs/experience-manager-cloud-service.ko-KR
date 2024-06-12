@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: e2d9823575f75e4cd38a61a35569cbbe14b30fc6
+source-git-commit: c24b017e60363b3b6d79105122bdbaab138c701d
 workflow-type: tm+mt
 source-wordcount: '3574'
 ht-degree: 0%
@@ -91,6 +91,8 @@ Dynamic Media과 Experience Manager Assets을 함께 사용하면 에셋 컬렉�
 * **프로필을 사용하여 에셋 구성:**
 처리 프로필은 지정된 폴더의 자산 처리를 자동화하여 조직을 간소화합니다. 메타데이터, 파일 이름 및 폴더 구조를 표준화하면 디지털 자산 컬렉션이 확장될 때 이러한 프로필을 일관되고 정확하게 적용할 수 있습니다.
 자세히 알아보시겠습니까? 다음으로 이동 [프로필을 사용하여 에셋 구성](/help/assets/organize-assets.md#organize-to-use-profiles).
+
+
 
 ### 이미지 품질 최적화
 
