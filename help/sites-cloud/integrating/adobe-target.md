@@ -2,9 +2,9 @@
 title: Adobe Target과 통합
 description: Adobe Target과 통합
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: 876de632163c4a0952e238ac89577fa9f064b900
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '606'
 ht-degree: 100%
 
 ---
@@ -31,10 +31,13 @@ Target과 통합하려면 다음과 같은 작업을 수행해야 합니다.
 
 * Adobe에서 제공하는 Launch는 Target 기능(JS 라이브러리)을 갖춘 AEM 사이트를 측정하기 위한 실질적인 도구입니다. 따라서 AEM as a Cloud Service와 Launch 및 Adobe Target과의 통합은 밀접하게 연결되어 있습니다(아래 링크 참조).
 
-   * [Adobe I/O를 사용하여 Adobe Target과 통합](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims.html)
-   * [Adobe에서 제공하는 Launch 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
-   * [Adobe I/O를 사용하여 AEM을 Adobe Launch와 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
-   * [Adobe에서 제공하는 Launch, Analytics 및 Target과의 AEM 통합 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
+<!--   
+  * [Integration with Adobe Target using Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims.html)
+-->
+
+* [Adobe에서 제공하는 Launch 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
+* [Adobe I/O를 사용하여 AEM을 Adobe Launch와 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
+* [Adobe에서 제공하는 Launch, Analytics 및 Target과의 AEM 통합 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
 
 >[!NOTE]
 >
