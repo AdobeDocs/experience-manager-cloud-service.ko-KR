@@ -4,10 +4,10 @@ description: Edge Delivery Services 프로젝트를 통한 AEM 작성 시 콘텐
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: ff4a8caf1f4d32bae4e8c776bfcad21a665936d4
+workflow-type: tm+mt
 source-wordcount: '2233'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -345,7 +345,7 @@ Edge Delivery Services를 사용한 AEM 작성의 경우, 서식 있는 텍스�
 * **이미지** - AEM의 리소스에 대한 참조가 `image/`로 시작되는 MIME 유형이 있는 자산인 경우, 참조는 `<picture><img src="${reference}"></picture>`로 렌더링됩니다.
 * **링크** - 참조가 AEM에 있고 이미지가 아닌 경우나 값이 `https?://` 또는 `#`으로 시작하는 경우, 참조는 `<a href="${reference}">${reference}</a>`로 렌더링됩니다.
 * **서식 있는 텍스트** - 트리밍된 값이 단락으로 시작되는 경우(`p`, `ul`, `ol`, `h1`-`h6` 등), 값은 서식 있는 텍스트로 렌더링됩니다.
-* **Class Names** - `classes` 속성은 블록 옵션으로 처리되고 [단순 블록](#simple)의 경우 테이블 헤더에 렌더링되거나 [컨테이너 블록의 항목에 대한 값 목록으로 렌더링됩니다.](#container)
+* **클래스 이름** - `classes` 속성이 다음으로 처리됨 [블록 옵션](/help/edge/developer/markup-sections-blocks.md#block-options) 테이블 헤더에 렌더링됩니다. [단순 블록,](#simple) 또는 의 항목에 대한 값 목록으로 [컨테이너 블록.](#container)
 * **값 목록** - 값이 다중 값 속성이고 첫 번째 값이 이전 값이 아닌 경우, 모든 값은 쉼표로 구분된 목록으로 연결됩니다.
 
 다른 모든 내용은 일반 텍스트로 렌더링됩니다.

@@ -4,10 +4,10 @@ description: Edge Delivery Services 프로젝트를 통해 AEM 작성 시 Univer
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
-source-wordcount: '1297'
-ht-degree: 100%
+source-git-commit: 72949b36e7e7f8689365e7cb76a8c491edf23825
+workflow-type: tm+mt
+source-wordcount: '1375'
+ht-degree: 94%
 
 ---
 
@@ -53,75 +53,99 @@ Adobe는 3단계 방식으로 블록을 개발할 것을 권장합니다.
 
 1. 프로젝트 루트에 있는 `component-definition.json` 파일을 편집하고 새 인용 블록에 대해 다음 정의를 추가한 후 파일을 저장합니다.
 
-   ```json
-   {
-     "title": "Quote",
-     "id": "quote",
-     "plugins": {
-       "xwalk": {
-         "page": {
-           "resourceType": "core/franklin/components/block/v1/block",
-           "template": {
-             "name": "Quote",
-             "model": "quote",
-             "quote": "<p>Think, McFly! Think!</p>",
-             "author": "Biff Tannen"
-           }
-         }
-       }
-     }
-   }
-   ```
+>[!BEGINTABS]
 
-   ![component-definitions.json 파일을 편집하여 인용 블록 정의](assets/create-block/component-definitions.png)
+>[!TAB JSON 예]
+
+```json
+{
+  "title": "Quote",
+  "id": "quote",
+  "plugins": {
+    "xwalk": {
+      "page": {
+        "resourceType": "core/franklin/components/block/v1/block",
+        "template": {
+          "name": "Quote",
+          "model": "quote",
+          "quote": "<p>Think, McFly! Think!</p>",
+          "author": "Biff Tannen"
+        }
+      }
+    }
+  }
+}
+```
+
+>[!TAB 스크린샷]
+
+![component-definitions.json 파일을 편집하여 인용 블록 정의](assets/create-block/component-definitions.png)
+
+>[!ENDTABS]
 
 1. 프로젝트 루트에 있는 `component-models.json` 파일을 편집하고 새 인용 블록에 대해 다음 [모델 정의](/help/implementing/universal-editor/field-types.md#model-structure)를 추가한 후 파일을 저장합니다.
 
    * 콘텐츠 모델을 만들 때 고려해야 할 중요 사항에 대한 자세한 내용은 [Edge Delivery Services 프로젝트를 사용한 AEM 작성을 위한 콘텐츠 모델링](/help/edge/aem-authoring/content-modeling.md) 문서를 참조하십시오.
 
-   ```json
-   {
-     "id": "quote",
-     "fields": [
-        {
-          "component": "text-area",
-          "name": "quote",
-          "value": "",
-          "label": "Quote",
-          "valueType": "string"
-        },
-        {
-          "component": "text-input",
-          "valueType": "string",
-          "name": "author",
-          "label": "Author",
-          "value": ""
-        }
-      ]
-   }
-   ```
+>[!BEGINTABS]
 
-   ![component-models.json 파일을 편집하여 인용 블록의 모델 정의](assets/create-block/component-models.png)
+>[!TAB JSON 예]
+
+```json
+{
+  "id": "quote",
+  "fields": [
+     {
+       "component": "text-area",
+       "name": "quote",
+       "value": "",
+       "label": "Quote",
+       "valueType": "string"
+     },
+     {
+       "component": "text-input",
+       "valueType": "string",
+       "name": "author",
+       "label": "Author",
+       "value": ""
+     }
+   ]
+}
+```
+
+>[!TAB 스크린샷]
+
+![component-models.json 파일을 편집하여 인용 블록의 모델 정의](assets/create-block/component-models.png)
+
+>[!ENDTABS]
 
 1. 프로젝트 루트에 있는 `component-filters.json` 파일을 편집하고 [필터 정의](/help/implementing/universal-editor/customizing.md#filtering-components)에 인용 블록을 추가하여 해당 블록이 모든 섹션에 추가되도록 허용하고 파일을 저장합니다.
 
-   ```json
-   {
-     "id": "section",
-     "components": [
-       "text",
-       "image",
-       "button",
-       "title",
-       "hero",
-       "cards",
-       "columns",
-       "quote"
-      ]
-   }
-   ```
+>[!BEGINTABS]
 
-   ![component-filters.json 파일을 편집하여 인용 블록에 대한 필터 정의](assets/create-block/component-filters.png)
+>[!TAB JSON 예]
+
+```json
+{
+  "id": "section",
+  "components": [
+    "text",
+    "image",
+    "button",
+    "title",
+    "hero",
+    "cards",
+    "columns",
+    "quote"
+   ]
+}
+```
+
+>[!TAB 스크린샷]
+
+![component-filters.json 파일을 편집하여 인용 블록에 대한 필터 정의](assets/create-block/component-filters.png)
+
+>[!ENDTABS]
 
 1. Git을 사용하여 이러한 변경 사항을 `main` 분기에 커밋합니다.
 
@@ -174,55 +198,70 @@ Adobe는 3단계 방식으로 블록을 개발할 것을 권장합니다.
 
 1. 새 `quote` 폴더에서 다음 JavaScript를 추가하여 `quote.js` 파일을 추가하고 블록 장식을 구현한 다음 파일을 저장합니다.
 
-   ```javascript
-   export default function decorate(block) {
-     const [quoteWrapper] = block.children;
-   
-     const blockquote = document.createElement('blockquote');
-     blockquote.textContent = quoteWrapper.textContent.trim();
-     quoteWrapper.replaceChildren(blockquote);
-   }
-   ```
+>[!BEGINTABS]
 
-   ![JavaScript 추가하여 블록 장식](assets/create-block/quote-js.png)
+>[!TAB JavaScript 예]
 
+```javascript
+export default function decorate(block) {
+  const [quoteWrapper] = block.children;
+
+  const blockquote = document.createElement('blockquote');
+  blockquote.textContent = quoteWrapper.textContent.trim();
+  quoteWrapper.replaceChildren(blockquote);
+}
+```
+
+>[!TAB 스크린샷]
+
+![JavaScript 추가하여 블록 장식](assets/create-block/quote-js.png)
+
+>[!ENDTABS]
 
 1. `quote` 폴더에서 다음 CSS 코드를 추가하여 `quote.css` 파일을 추가고 블록 스타일링을 정의한 다음 파일을 저장합니다.
 
-   ```css
-   .block.quote {
-       background-color: #ccc;
-       padding: 0 0 24px;
-       display: flex;
-       flex-direction: column;
-       margin: 1rem 0;
-   }
-   
-   .block.quote blockquote {
-       margin: 16px;
-       text-indent: 0;
-   }
-   
-   .block.quote > div:last-child > div {
-       margin: 0 16px;
-       font-size: small;
-       font-style: italic;
-       position: relative;
-   }
-   
-   .block.quote > div:last-child > div::after {
-       content: "";
-       display: block;
-       position: absolute;
-       left: 0;
-       bottom: -8px;
-       height: 5px;
-       width: 30px;
-       background-color: darkgray;
-   }
-   ```
+>[!BEGINTABS]
 
-   ![CSS를 추가하여 블록 스타일 정의](assets/create-block/quote-css.png)
+>[!TAB CSS 예]
+
+```css
+.block.quote {
+    background-color: #ccc;
+    padding: 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.block.quote blockquote {
+    margin: 16px;
+    text-indent: 0;
+}
+
+.block.quote > div:last-child > div {
+    margin: 0 16px;
+    font-size: small;
+    font-style: italic;
+    position: relative;
+}
+
+.block.quote > div:last-child > div::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    height: 5px;
+    width: 30px;
+    background-color: darkgray;
+}
+```
+
+>[!TAB 스크린샷]
+
+![CSS를 추가하여 블록 스타일 정의](assets/create-block/quote-css.png)
+
+>[!ENDTABS]
 
 1. Git을 사용하여 이러한 변경 사항을 `main` 분기에 커밋합니다.
 
@@ -239,6 +278,50 @@ Adobe는 3단계 방식으로 블록을 개발할 것을 권장합니다.
    ![게시되고 스타일이 지정된 인용 블록](assets/create-block/quote-styled-published.png)
 
 축하합니다! 이제 완벽하게 작동하고 스타일이 지정된 인용 블록이 있습니다. 이 예를 자신만의 프로젝트별 블록을 설계하기 위한 기초로 사용할 수 있습니다.
+
+### 블록 옵션 {#block-options}
+
+특정 상황에 따라 블록이 약간 다르게 보이거나 동작해야 하지만 그 자체로는 새 블록이 될 만큼 차이가 없다면 작성자가 다음 중 하나를 선택하도록 할 수 있습니다. [차단 옵션을 사용할 수 있습니다.](content-modeling.md#type-inference)
+
+를 추가하여 `classes` 속성을 블록, 단순 블록의 경우 테이블 헤더에서 렌더링된 속성 또는 컨테이너 블록의 항목에 대한 값 목록으로 렌더링됩니다.
+
+```json
+{
+  "id": "simpleMarquee",
+  "fields": [
+    {
+      "component": "text",
+      "valueType": "string",
+      "name": "marqueeText",
+      "value": "",
+      "label": "Marquee text",
+      "description": "The text you want shown in your marquee"
+    },
+    {
+      "component": "select",
+      "name": "classes",
+      "value": "",
+      "label": "Background Color",
+      "description": "The marquee background color",
+      "valueType": "string",
+      "options": [
+        {
+          "name": "Red",
+          "value": "bg-red"
+        },
+        {
+          "name": "Green",
+          "value": "bg-green"
+        },
+        {
+          "name": "Blue",
+          "value": "bg-blue"
+        }
+      ]
+    }
+  ]
+}
+```
 
 ## 다른 작업 분기 사용 {#other-branches}
 
