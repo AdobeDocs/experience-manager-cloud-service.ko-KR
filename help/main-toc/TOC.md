@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 5b3bc9a8ef1cf1769afcd31935d321ef13bb77cd
 workflow-type: tm+mt
 source-wordcount: '5034'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -668,7 +668,7 @@ ht-degree: 98%
             + [적응형 양식에 대한 JSON 스키마 디자인(핵심 구성 요소)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [적응형 양식에 버전 관리, 댓글 및 주석 추가](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [적응형 양식 비교](/help/forms/compare-forms.md)
-            + [마이그레이션 유틸리티 도구를 사용하여 기초 구성 요소를 기반으로 하는 적응형 Forms을 핵심 구성 요소 기반 양식으로 변환](/help/forms/migration-utility-tool-for-af-core-components.md)
+            + [마이그레이션 유틸리티 도구를 사용하여 기초 구성 요소 기반 적응형 양식을 핵심 구성 요소 기반 양식으로 변환](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [적응형 양식을 초안으로 저장](/help/forms/save-core-component-based-form-as-draft.md)
       + 기초 구성 요소 {#authoring-adaptive-forms-foundation-components}
          + PDF 양식을 적응형 양식으로 변환 {#afcs}
@@ -744,7 +744,7 @@ ht-degree: 98%
       + [설치 및 구성](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher 및 CDN 캐싱](/help/forms/troubleshooting-caching-performance.md)
       + [AEM SDK 다시 시작](/help/forms/restart-aem-sdk.md)
-      + [Forms 생성 실패 해결](/help/forms/form-creation-failing.md)
+      + [양식 생성 실패 해결](/help/forms/form-creation-failing.md)
 + Screens {#screens-as-cloud-service}
    + Screens as a Cloud Service 개요 {#overview}
       + [소개](/help/screens-cloud/introduction/introduction.md)
@@ -1033,7 +1033,7 @@ ht-degree: 98%
          + [DNS 설정 구성](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [DNS 레코드 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [사용자 정의 도메인 이름 관리](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
-         + [DV(도메인 확인) 인증서](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)
+         + [DV(Domain Validated) 인증서](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)
       + IP 허용 목록 {#ip-allow-lists}
          + [소개](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [IP 허용 목록 추가](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
