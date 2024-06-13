@@ -4,9 +4,9 @@ description: 클라우드 환경에서 신속한 개발 반복을 위해 빠른 
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c3d16e82702efd73accd1fffdfc4957ceb4509ec
+source-git-commit: 3577db15a276bed253c8fa51cbd100e90ec5ef45
 workflow-type: tm+mt
-source-wordcount: '4220'
+source-wordcount: '4244'
 ht-degree: 4%
 
 ---
@@ -472,11 +472,6 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 
 ## 로그 {#rde-logging}
 
->[!NOTE]
->
-> 이 기능은 아직 사용할 수 없습니다. 그것은 6월 중에 출시될 예정입니다.
-> 
-
 다른 환경 유형과 유사하게 OSGi 구성을 수정하여 로그 수준을 설정할 수 있지만, 위에서 설명한 대로 RDE에 대한 배포 모델에 Cloud Manager 배포가 아닌 명령줄이 포함됩니다. 다음 확인: [로깅 설명서](/help/implementing/developing/introduction/logging.md) 로그를 보고 다운로드하고 해석하는 방법에 대한 자세한 내용을 보려면 를 참조하십시오.
 
 RDE CLI에는 기록해야 하는 클래스와 패키지 및 로그 수준을 빠르게 구성하는 데 사용할 수 있는 자체 log 명령도 있습니다. 이러한 구성은 버전 제어에서 OSGI 속성을 수정하지 않으므로 사용 후 삭제로 볼 수 있습니다. 이 기능은 먼 과거의 로그를 조회하는 것보다 실시간으로 로그를 추적하는 데 중점을 둡니다.
@@ -484,6 +479,14 @@ RDE CLI에는 기록해야 하는 클래스와 패키지 및 로그 수준을 �
 다음 예제에서는 하나의 패키지를 디버그 로그 수준으로 설정하고 두 패키지(공백으로 구분)를 정보 디버그 수준으로 설정하여 작성자 계층을 추적하는 방법을 보여 줍니다. 다음을 포함하는 출력 **인증** 패키지가 강조 표시됩니다.
 
 `aio aem:rde:logs --target=author --debug=org.apache.sling --info=org.apache.sling.commons.threads.impl org.apache.sling.jcr.resource.internal.helper.jcr -H .auth.`
+
+>[!TIP]
+>
+>오류가 표시되면 `RDECLI:UNEXPECTED_API_ERROR` author 서비스에 대한 로그 명령을 사용하여 재생할 때 환경을 재설정하고 다시 시도하십시오. 이 오류는 최근 재설정 작업이 2024년 5월 말 이전인 경우 발생합니다.
+>
+```
+>aio aem:rde:reset
+>```
 
 다음을 참조하십시오 `aio aem:rde:logs --help` 명령줄 옵션의 전체 집합입니다.
 
