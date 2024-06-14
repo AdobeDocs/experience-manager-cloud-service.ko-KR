@@ -4,10 +4,10 @@ description: Edge Delivery Services 프로젝트를 사용하여 WYSIWYG 작성�
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: c6013984e1c47766964e6f8ece76e7793b59308f
+source-git-commit: 364acc6a76261a725a46fe3e1ef173bc03b5a289
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 74%
+source-wordcount: '1401'
+ht-degree: 59%
 
 ---
 
@@ -45,13 +45,13 @@ Adobe는 3단계 방식으로 블록을 개발할 것을 권장합니다.
 
 ### 블록 정의 및 모델 만들기 {#create-block-model}
 
-1. 에서 생성한 GitHub 프로젝트를 로컬로 복제 [Edge Delivery Services을 사용한 WYSIWYG 작성에 대한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 안내하고 선택한 편집기에서 엽니다.
+1&amp;period; 에서 생성한 GitHub 프로젝트를 로컬로 복제합니다. [Edge Delivery Services을 사용한 WYSIWYG 작성에 대한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 안내하고 선택한 편집기에서 엽니다.
 
-   * 여기에서 Microsoft 코드는 설명 목적으로 사용되었습니다.
+* 여기에서 Microsoft 코드는 설명 목적으로 사용되었습니다.
 
-   ![프로젝트 복제](assets/create-block/clone.png)
+![프로젝트 복제](assets/create-block/clone.png)
 
-1. 프로젝트 루트에 있는 `component-definition.json` 파일을 편집하고 새 인용 블록에 대해 다음 정의를 추가한 후 파일을 저장합니다.
+2&amp;period; 편집 `component-definition.json` 프로젝트의 루트에 있는 파일을 새 견적 블록에 대해 다음 정의를 추가하고 파일을 저장합니다.
 
 >[!BEGINTABS]
 
@@ -83,9 +83,9 @@ Adobe는 3단계 방식으로 블록을 개발할 것을 권장합니다.
 
 >[!ENDTABS]
 
-1. 프로젝트 루트에 있는 `component-models.json` 파일을 편집하고 새 인용 블록에 대해 다음 [모델 정의](/help/implementing/universal-editor/field-types.md#model-structure)를 추가한 후 파일을 저장합니다.
+3&amp;period; 편집 `component-models.json` 프로젝트의 루트에 파일을 추가하고 다음을 추가합니다 [모델 정의](/help/implementing/universal-editor/field-types.md#model-structure) 를 사용하여 새 견적 블록을 만들고 파일을 저장합니다.
 
-   * 문서를 참조하십시오. [Edge Delivery Services 프로젝트를 사용한 WYSIWYG 작성을 위한 콘텐츠 모델링](/help/edge/wysiwyg-authoring/content-modeling.md) 콘텐츠 모델을 만들 때 고려해야 할 사항에 대해 자세히 알아보십시오.
+* 문서를 참조하십시오. [Edge Delivery Services 프로젝트를 사용한 WYSIWYG 작성을 위한 콘텐츠 모델링](/help/edge/wysiwyg-authoring/content-modeling.md) 콘텐츠 모델을 만들 때 고려해야 할 사항에 대해 자세히 알아보십시오.
 
 >[!BEGINTABS]
 
@@ -119,7 +119,7 @@ Adobe는 3단계 방식으로 블록을 개발할 것을 권장합니다.
 
 >[!ENDTABS]
 
-1. 프로젝트 루트에 있는 `component-filters.json` 파일을 편집하고 [필터 정의](/help/implementing/universal-editor/customizing.md#filtering-components)에 인용 블록을 추가하여 해당 블록이 모든 섹션에 추가되도록 허용하고 파일을 저장합니다.
+4&amp;period; 편집 `component-filters.json` 프로젝트의 루트에 있는 파일을 참조하고 견적 블록을 [필터 정의](/help/implementing/universal-editor/customizing.md#filtering-components) 블록을 섹션에 추가하고 파일을 저장할 수 있도록 합니다.
 
 >[!BEGINTABS]
 
@@ -147,9 +147,9 @@ Adobe는 3단계 방식으로 블록을 개발할 것을 권장합니다.
 
 >[!ENDTABS]
 
-1. Git을 사용하여 이러한 변경 사항을 `main` 분기에 커밋합니다.
+5&amp;period; git을 사용하여 다음 변경 사항을 커밋합니다. `main` 분기입니다.
 
-   * `main`에 대한 커밋은 설명 목적으로만 사용됩니다. [모범 사례를 따라](https://www.aem.live/docs/dev-collab-and-good-practices) 실제 프로젝트 작업에 가져오기 요청을 사용합니다.
+* `main`에 대한 커밋은 설명 목적으로만 사용됩니다. [모범 사례를 따라](https://www.aem.live/docs/dev-collab-and-good-practices) 실제 프로젝트 작업에 가져오기 요청을 사용합니다.
 
 ### 블록으로 콘텐츠 만들기 {#create-content}
 
@@ -190,13 +190,13 @@ Adobe는 3단계 방식으로 블록을 개발할 것을 권장합니다.
 
 작동하는 인용 블록이 있으므로 여기에 스타일을 적용할 수 있습니다.
 
-1. 프로젝트 편집기로 돌아갑니다.
+1&amp;period; 프로젝트의 편집기로 돌아갑니다.
 
-1. `blocks` 폴더 아래에 `quote` 폴더를 만듭니다.
+2&amp;period; 만들기 `quote` 폴더 `blocks` 폴더를 삭제합니다.
 
-   ![인용 폴더 만들기](assets/create-block/new-folder.png)
+![인용 폴더 만들기](assets/create-block/new-folder.png)
 
-1. 새 `quote` 폴더에서 다음 JavaScript를 추가하여 `quote.js` 파일을 추가하고 블록 장식을 구현한 다음 파일을 저장합니다.
+3&amp;period, 새 항목 `quote` 폴더, 추가 `quote.js` 다음 JavaScript를 추가하여 블록 장식을 구현하고 파일을 저장하는 파일입니다.
 
 >[!BEGINTABS]
 
@@ -218,7 +218,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-1. `quote` 폴더에서 다음 CSS 코드를 추가하여 `quote.css` 파일을 추가고 블록 스타일링을 정의한 다음 파일을 저장합니다.
+4&amp;period; `quote` 폴더, 추가 `quote.css` 다음 CSS 코드를 추가하고 파일을 저장하여 블록의 스타일을 정의하는 파일입니다.
 
 >[!BEGINTABS]
 
@@ -263,19 +263,19 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-1. Git을 사용하여 이러한 변경 사항을 `main` 분기에 커밋합니다.
+5&amp;period; git을 사용하여 다음 변경 사항을 커밋합니다. `main` 분기입니다.
 
-   * `main`에 대한 커밋은 설명 목적으로만 사용됩니다. [모범 사례를 따라](https://www.aem.live/docs/dev-collab-and-good-practices) 실제 프로젝트 작업에 가져오기 요청을 사용합니다.
+* `main`에 대한 커밋은 설명 목적으로만 사용됩니다. [모범 사례를 따라](https://www.aem.live/docs/dev-collab-and-good-practices) 실제 프로젝트 작업에 가져오기 요청을 사용합니다.
 
-1. 프로젝트 페이지를 편집하던 Universal Editor의 브라우저 탭으로 돌아가 페이지를 다시 로드하여 스타일이 지정된 블록을 확인합니다.
+6&amp;period; 프로젝트의 페이지를 편집한 유니버설 편집기의 브라우저 탭으로 돌아가서 페이지를 다시 로드하여 스타일이 지정된 블록을 확인합니다.
 
-1. 페이지에서 현재 스타일이 지정된 인용 블록을 확인합니다.
+7&amp;period. 페이지에서 이제 스타일의 견적 블록을 참조하십시오.
 
-   ![Universal Editor의 스타일이 지정된 인용 블록](assets/create-block/quote-styled.png)
+![Universal Editor의 스타일이 지정된 인용 블록](assets/create-block/quote-styled.png)
 
-1. 게시된 페이지로 이동하여 변경 사항이 프로덕션에 푸시되었는지 확인합니다. 링크는 `https://<branch>--<repo>--<owner>.hlx.page`와 유사합니다.
+8&amp;period; 게시된 페이지로 이동하여 변경 사항이 프로덕션에 푸시되었는지 확인합니다. 링크는 `https://<branch>--<repo>--<owner>.hlx.page`와 유사합니다.
 
-   ![게시되고 스타일이 지정된 인용 블록](assets/create-block/quote-styled-published.png)
+![게시되고 스타일이 지정된 인용 블록](assets/create-block/quote-styled-published.png)
 
 축하합니다! 이제 완벽하게 작동하고 스타일이 지정된 인용 블록이 있습니다. 이 예를 자신만의 프로젝트별 블록을 설계하기 위한 기초로 사용할 수 있습니다.
 
