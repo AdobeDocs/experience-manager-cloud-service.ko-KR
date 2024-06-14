@@ -5,10 +5,10 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
 source-wordcount: '335'
-ht-degree: 84%
+ht-degree: 79%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 84%
 
 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)는 페이지를 작성하는 데 필요한 콘텐츠 유형을 제공하는 유연하고 다양한 작성 기능을 제공합니다.
 
-이 구성 요소는 AEM 우수 사례를 사용하여 빌드하며 AEM 작성 환경의 기반입니다. 코어 구성 요소는 특정 프로젝트 요구 사항을 충족하도록 개발자가 쉽게 확장할 수 있습니다.
+이 구성 요소는 AEM 모범 사례를 사용하여 빌드되었으며 AEM 작성 환경의 기초입니다. 코어 구성 요소는 특정 프로젝트 요구 사항을 충족하도록 개발자가 쉽게 확장할 수 있습니다.
 
 WCM 핵심 구성 요소와 함께 [적응형 양식 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features)를 사용할 수도 있습니다. 이러한 핵심 구성 요소는 [AEM Sites 페이지에 양식을 작성하거나 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)할 수 있는 손쉬운 표준 방법을 제공합니다
 

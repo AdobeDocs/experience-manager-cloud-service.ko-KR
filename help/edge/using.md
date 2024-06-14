@@ -4,10 +4,10 @@ description: AEM as a Cloud Service를 Edge Delivery Services와 함께 사용�
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
 source-wordcount: '389'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -30,24 +30,24 @@ Adobe의 안내 원칙은 단순성입니다. 문서 기반 작성으로 시작�
 
 ## 작성 {#authoring-edge}
 
-Edge Delivery Services를 사용하여 쉽고, 빠르고, 유연하게 콘텐츠를 작성할 수 있습니다. 문서 기반 작성 또는 Universal Editor를 사용하는 AEM 기반 작성 중 선택할 수 있습니다.
+Edge Delivery Services를 사용하여 쉽고, 빠르고, 유연하게 콘텐츠를 작성할 수 있습니다. 문서 기반 작성 또는 범용 편집기를 사용한 WYSIWYG 작성을 사용하여 작성하도록 선택할 수 있습니다.
 
-자세한 내용은 [Edge Delivery Services용 콘텐츠 작성](/help/edge/aem-authoring/authoring.md) 문서를 참조하십시오.
+자세한 내용은 [Edge Delivery Services용 콘텐츠 작성](/help/edge/wysiwyg-authoring/authoring.md) 문서를 참조하십시오.
 
 ## 게시 {#publishing-edge}
 
 Edge Delivery Services를 사용하여 콘텐츠 소스에 관계없이 원활하게 콘텐츠를 게시합니다.
 
-자세한 내용은 [Edge Delivery Services용 콘텐츠 게시](/help/edge/aem-authoring/publishing.md) 문서를 참조하십시오.
+자세한 내용은 [Edge Delivery Services용 콘텐츠 게시](/help/edge/wysiwyg-authoring/publishing.md) 문서를 참조하십시오.
 
 ## 개발 {#developing-edge}
 
 Edge Delivery Services는 블록 개념을 기반으로 합니다. AEM에는 프로젝트 요구 사항을 충족하도록 확장할 수 있는 사전 정의된 블록의 포괄적인 라이브러리가 함께 제공됩니다. Edge Delivery Services 프로젝트의 코드는 GitHub에서 관리됩니다.
 
-자세한 내용은 [Edge Delivery Services를 사용한 AEM 작성을 위한 개발자 시작 안내서](/help/edge/aem-authoring/edge-dev-getting-started.md) 문서를 참조하십시오.
+문서를 참조하십시오. [Edge Delivery Services을 사용한 WYSIWYG 작성에 대한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 추가 정보.
 
 ## 기존 AEM 프로젝트 {#existing-projects}
 
 새로운 AEM 프로젝트가 Edge Delivery Services의 이점을 얻을 수 있을 때까지 기다릴 필요가 없습니다. Edge Delivery Services를 기존 AEM 프로젝트에 통합하여 성능 향상을 즉시 활용할 수 있습니다.
 
-자세한 내용은 [기존 AEM 프로젝트와 함께 Edge Delivery Services 사용](/help/edge/aem-authoring/existing-projects.md) 문서를 참조하십시오.
+자세한 내용은 [기존 AEM 프로젝트와 함께 Edge Delivery Services 사용](/help/edge/wysiwyg-authoring/existing-projects.md) 문서를 참조하십시오.

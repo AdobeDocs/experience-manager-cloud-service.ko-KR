@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5b3bc9a8ef1cf1769afcd31935d321ef13bb77cd
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
 source-wordcount: '5034'
 ht-degree: 99%
@@ -823,14 +823,14 @@ ht-degree: 99%
 + Edge Delivery Services {#edge-delivery}
    + [Edge Delivery Services 개요](/help/edge/overview.md)
    + [AEM과 함께 Edge Delivery Services 사용](/help/edge/using.md)
-   + AEM 기반 작성 {#aem-authoring}
-      + [Edge Delivery용 콘텐츠 작성](/help/edge/aem-authoring/authoring.md)
-      + [Edge Delivery용 콘텐츠 게시](/help/edge/aem-authoring/publishing.md)
-      + [개발자 시작 안내서](/help/edge/aem-authoring/edge-dev-getting-started.md)
-      + [블록 만들기](/help/edge/aem-authoring/create-block.md)
-      + [콘텐츠 모델링](/help/edge/aem-authoring/content-modeling.md)
-      + [표 형식 데이터 및 스프레드시트](/help/edge/aem-authoring/tabular-data.md)
-      + [기존 프로젝트 및 Edge Delivery](/help/edge/aem-authoring/existing-projects.md)
+   + WYSIWYG 작성 {#wysiwyg-authoring}
+      + [Edge Delivery용 콘텐츠 작성](/help/edge/wysiwyg-authoring/authoring.md)
+      + [Edge Delivery용 콘텐츠 게시](/help/edge/wysiwyg-authoring/publishing.md)
+      + [개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+      + [블록 만들기](/help/edge/wysiwyg-authoring/create-block.md)
+      + [콘텐츠 모델링](/help/edge/wysiwyg-authoring/content-modeling.md)
+      + [표 형식 데이터 및 스프레드시트](/help/edge/wysiwyg-authoring/tabular-data.md)
+      + [기존 프로젝트 및 Edge Delivery](/help/edge/wysiwyg-authoring/existing-projects.md)
    + 문서 기반 작성 {#document-authoring}
       + [작성](/help/edge/docs/authoring.md)
       + [대량 메타데이터](/help/edge/docs/bulk-metadata.md)

@@ -5,7 +5,7 @@ feature: Authoring
 exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
 solution: Experience Manager Sites
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 0%
@@ -20,8 +20,8 @@ AEM에서 콘텐츠를 작성하는 다양한 방법, 차이점 및 두 방법 �
 
 AEM as a Cloud Service은 다양한 유형의 콘텐츠를 편집하고 다양한 작성 사용 사례를 지원할 수 있는 여러 가지 편집기를 제공합니다.
 
-* [페이지 편집기를 사용한 AEM 기반 작성](#page-editor) - 페이지 편집기는 수천 개의 웹 사이트에서 시도하고 신뢰하는 AEM의 컨텐츠 작성용 클래식 편집기입니다.
-* [범용 편집기를 사용한 AEM 기반 작성](#universal-editor) - 범용 편집기는 콘텐츠에 관계없이 AEM 콘텐츠를 작성할 수 있는 최신 UI이며, Edge Delivery Services을 활용하는 AEM 프로젝트에 사용할 수 있습니다.
+* [페이지 편집기를 사용하여 WYSIWYG 작성](#page-editor) - 페이지 편집기는 수천 개의 웹 사이트에서 시도하고 신뢰하는 AEM의 컨텐츠 작성용 클래식 편집기입니다.
+* [유니버설 편집기를 사용한 WYSIWYG 작성](#universal-editor) - 범용 편집기는 콘텐츠에 관계없이 AEM 콘텐츠를 작성할 수 있는 최신 UI이며, Edge Delivery Services을 활용하는 AEM 프로젝트에 사용할 수 있습니다.
 * [문서 기반 작성](#document-based) - Edge Delivery 서비스를 사용하는 경우 콘텐츠를 AEM 콘솔 외부에 있는 Microsoft Word 또는 Google 문서와 같은 기존 문서로 작성하도록 선택할 수 있습니다.
 * [AEM 콘텐츠 조각 편집기](#cf-editor) - Headless 콘텐츠를 만들기 위한 선택 편집기입니다.
 
@@ -29,7 +29,7 @@ AEM의 통합적이고 확장 가능한 특성으로 인해 이 메서드는 프
 
 사용 가능한 작성 옵션이 확실하지 않거나 콘텐츠 작성에 대한 새로운 옵션을 탐색하려는 경우 시스템 관리자 또는 프로젝트 관리자에게 문의하십시오.
 
-## 페이지 편집기를 사용한 AEM 기반 작성 {#page-editor}
+## 페이지 편집기를 사용하여 WYSIWYG 작성 {#page-editor}
 
 수천 개의 웹 사이트에서 시도하고 신뢰할 수 있는 AEM의 컨텐츠 작성용 클래식 편집기입니다.
 
@@ -39,7 +39,7 @@ AEM 페이지 편집기는 WYSIWYG(보이는 것) 인터페이스를 사용하�
 
 AEM 페이지 편집기에 대한 자세한 내용은 문서를 참조하십시오. [AEM 페이지 편집기.](/help/sites-cloud/authoring/page-editor/introduction.md)
 
-## 범용 편집기를 사용한 AEM 기반 작성 {#universal-editor}
+## 유니버설 편집기를 사용한 WYSIWYG 작성 {#universal-editor}
 
 범용 편집기는 콘텐츠에 관계없이 AEM 콘텐츠를 작성할 수 있는 최신 UI이며 Edge Delivery Services을 활용하는 AEM 프로젝트의 첫 번째 선택 항목입니다.
 
