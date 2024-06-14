@@ -2,7 +2,9 @@
 title: Adobe Express과 AEM Assets 기본 통합
 description: Adobe Express과 AEM Assets 기본 통합을 사용하면 Adobe Express 사용자 인터페이스 내에서 AEM Assets에 저장된 에셋에 직접 액세스할 수 있습니다.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: d7e144d7f7722d4de96b3f85d44432863b350f92
+feature: Collaboration
+role: User
+source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 16%

@@ -3,10 +3,10 @@ title: 연결된 에셋을 사용하여에서 DAM 에셋 공유 [!DNL Sites]
 description: 원격에서 사용 가능한 자산 사용 [!DNL Adobe Experience Manager Assets] 다른 웹 페이지에서 웹 페이지를 만들 때 배포 [!DNL Adobe Experience Manager Sites] 배포.
 contentOwner: AK
 mini-toc-levels: 2
-feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
-role: Admin,User,Architect
+feature: Asset Management, Connected Assets, Asset Distribution
+role: Admin, User, Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '3842'
 ht-degree: 13%

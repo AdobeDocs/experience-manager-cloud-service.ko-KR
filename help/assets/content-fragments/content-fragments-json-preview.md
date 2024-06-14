@@ -2,10 +2,12 @@
 title: 미리보기 - JSON 표시(에셋 - 콘텐츠 조각)
 description: AEM Headless 솔루션을 구현할 때 콘텐츠 조각의 JSON 표현식을 쉽게 미리 보는 방법에 대해 알아봅니다.
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+feature: Content Fragments
+role: User
+source-git-commit: 1e206a33ef03edfa1af3c0d95f3665b5604f22f3
 workflow-type: tm+mt
 source-wordcount: '168'
-ht-degree: 66%
+ht-degree: 72%
 
 ---
 
@@ -15,7 +17,7 @@ AEM Headless 구현의 일부로 콘텐츠 조각용 모델을 개발할 때, �
 
 >[!NOTE]
 >
->콘텐츠 조각은 사이트 기능이지만 다음과 같이 저장됩니다. **에셋**.
+>콘텐츠 조각은 Sites 기능이지만 **자산**&#x200B;으로 저장됩니다.
 >
 >콘텐츠 조각 작성용 편집기에는 두 가지가 있습니다. 이 단원에서는 주로 **에셋** 콘솔. 사이트 설명서 를 참조하십시오. [컨텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md), 새 편집기에 대한 세부 정보(주로 **컨텐츠 조각** console).
 

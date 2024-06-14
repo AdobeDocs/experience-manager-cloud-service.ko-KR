@@ -3,10 +3,10 @@ title: AEM에서 자산을 검색하는 방법
 description: 필터 패널을 사용하여 AEM에서 에셋을 검색하는 방법 및 에셋 검색에 표시되는 결과를 사용하는 방법에 대해 알아봅니다.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Search,Metadata,Asset Distribution
-role: User,Admin
+feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
+role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '5503'
 ht-degree: 6%

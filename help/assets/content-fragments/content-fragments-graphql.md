@@ -1,12 +1,13 @@
 ---
-title: GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠 게재 (에셋 - 콘텐츠 조각)
+title: GraphQL에서 컨텐츠 조각을 사용하여 Headless 컨텐츠 전달(자산 - 컨텐츠 조각)
 description: GraphQL에서 Headless 콘텐츠 게재를 위해 콘텐츠 조각을 사용하여 AEM Headless CMS를 구현하기 위한 기본 개념을 알아봅니다.
-feature: Content Fragments, GraphQL API
+feature: Content Fragments
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+role: User
+source-git-commit: 1e206a33ef03edfa1af3c0d95f3665b5604f22f3
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 89%
+source-wordcount: '719'
+ht-degree: 95%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 89%
 
 콘텐츠 조각 및 GraphQL API를 통해 Adobe Experience Manager(AEM) as a Cloud Service를 Headless CMS(콘텐츠 관리 시스템)로 사용할 수 있습니다.
 
-이는 콘텐츠 조각과 AEM GraphQL API(표준 GraphQL 기반의 맞춤화된 구현)를 함께 사용하여 애플리케이션에서 사용할 구조화된 콘텐츠를 Headless 방식으로 제공함으로써 수행할 수 있습니다. 단일 API 쿼리 맞춤화 기능을 사용하면 렌더링하려는(단일 API 쿼리에 대한 응답으로서) 특정 콘텐츠를 검색하고 전달할 수 있습니다.
+이는 콘텐츠 조각과 AEM GraphQL API(표준 GraphQL 기반의 맞춤화된 구현)를 함께 사용하여 애플리케이션에서 사용할 구조화된 콘텐츠를 Headless 방식으로 제공함으로써 수행할 수 있습니다. 단일 API 쿼리 맞춤화 기능을 사용하면 렌더링하려는 단일 API 쿼리에 대한 응답으로서 특정 콘텐츠를 검색하고 전달할 수 있습니다.
 
 >[!NOTE]
 >
@@ -49,7 +50,7 @@ GraphQL은
 
   [GraphQL.org](https://graphql.org)를 참조하십시오.
 
-다음 [AEM GRAPHQL API](#aem-graphql-api) 에서 (복잡한) 쿼리를 수행할 수 있도록 해줍니다. [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md)각 쿼리가 특정 모델 유형에 따라 달라지는 경우. 그런 다음 반환된 콘텐츠를 애플리케이션에서 사용할 수 있습니다.
+[AEM GraphQL API](#aem-graphql-api)를 사용하면 [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)에서 (복잡한) 쿼리를 수행할 수 있습니다(각 쿼리는 특정 모델 유형에 따라 다름). 그런 다음 반환된 콘텐츠를 애플리케이션에서 사용할 수 있습니다.
 
 ## AEM GraphQL API {#aem-graphql-api}
 

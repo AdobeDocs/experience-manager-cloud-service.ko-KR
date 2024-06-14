@@ -1,12 +1,13 @@
 ---
 title: Assets HTTP API의 Adobe Experience Manager as a Cloud Service 콘텐츠 조각 지원
 description: Adobe Experience Manager의 Headless 게재 기능의 중요한 부분인 Assets HTTP API의 콘텐츠 조각에 대한 지원에 대해 알아봅니다.
-feature: Content Fragments,Assets HTTP API
+feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
+role: User, Admin
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1804'
-ht-degree: 11%
+ht-degree: 14%
 
 ---
 
@@ -23,7 +24,7 @@ Adobe Experience Manager(AEM) Headless 전달 기능의 중요한 부분인 Asse
 
 >[!NOTE]
 >
->다음 [컨텐츠 조각 및 컨텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md) 사용할 수도 있습니다.
+>[콘텐츠 조각 및 콘텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md)도 사용하실 수 있습니다.
 
 >[!NOTE]
 >
@@ -98,7 +99,7 @@ HTTP 메서드는 실행할 작업을 결정합니다.
 
 >[!NOTE]
 >
->다음 [컨텐츠 조각 및 컨텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md) 사용할 수도 있습니다.
+>[콘텐츠 조각 및 콘텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md)도 사용하실 수 있습니다.
 
 ### 트랜잭션 동작 {#transactional-behavior}
 
@@ -178,7 +179,7 @@ API를 통해 사용할 수 있는 기능에 대한 자세한 내용은 다음�
 
 >[!NOTE]
 >
->다음 [컨텐츠 조각 및 컨텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md) 사용할 수도 있습니다.
+>[콘텐츠 조각 및 콘텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md)도 사용하실 수 있습니다.
 
 ### 페이징 {#paging}
 
@@ -275,7 +276,7 @@ A [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) 는 �
 >
 >다음을 참조하십시오. [API 참조](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). 특히, [Adobe Experience Manager Assets API - 콘텐츠 조각](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
 >
->다음 [컨텐츠 조각 및 컨텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md) 사용할 수도 있습니다.
+>[콘텐츠 조각 및 콘텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md)도 사용하실 수 있습니다.
 
 ## 제한 사항 {#limitations}
 
@@ -367,7 +368,7 @@ A [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) 는 �
 
    * [사용 가능한 기능](/help/assets/mac-api-assets.md#available-features)
 
-* 다음 [컨텐츠 조각 및 컨텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md) 사용할 수도 있습니다.
+* [콘텐츠 조각 및 콘텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md)도 사용하실 수 있습니다.
 
 ## 추가 리소스 {#additional-resources}
 

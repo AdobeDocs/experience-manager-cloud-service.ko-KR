@@ -1,28 +1,28 @@
 ---
-title: 설치  [!DNL Workfront for Experience Manager enhanced connector]
-description: 설치  [!DNL Workfront for Experience Manager enhanced connector]
+title: 설치 [!DNL Workfront for Experience Manager enhanced connector]
+description: 설치 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
-feature: Integrations
+feature: Workfront Integrations and Apps
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: 393ec79e820632e879a377e697ecd09f4571c0b7
+source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
 workflow-type: tm+mt
-source-wordcount: '854'
-ht-degree: 2%
+source-wordcount: '765'
+ht-degree: 1%
 
 ---
 
-#  설치 [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
+# 설치 [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html) |
+| AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html) |
 | AEM as a Cloud Service | 이 문서 |
 
 에서 관리자 액세스 권한이 있는 사용자 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 향상된 커넥터를 설치합니다. 설치하기 전에 플랫폼 지원 및 기타 를 검토하십시오 [커넥터 사전 요구 사항](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
 >[!IMPORTANT]
 >
->2022년 6월 현재, Adobe은 Workfront과 Adobe Experience Manager Assets as a Cloud Service 연결을 위한 새로운 기본 통합을 발표했습니다. 이 통합은 이 두 솔루션을 연결하는 데 필요한 방법이 되었습니다. Workfront과 AEM Assets as a Cloud Service을 연결하기 위한 향상된 커넥터(1.9.8 이상)의 향후 새로운 구현은 차단됩니다. 이 통합을 설정하는 방법에 대한 자세한 내용은 [Experience Manager Assets as a Cloud Service 통합 구성](workfront-connector-configure.md).
+>2022년 6월 현재, Adobe은 Workfront과 Adobe Experience Manager Assets as a Cloud Service을 연결하는 새로운 기본 통합을 발표했습니다. 이 통합은 이 두 솔루션을 연결하는 데 필요한 방법이 되었습니다. Workfront과 AEM Assets as a Cloud Service을 연결하기 위한 향상된 커넥터(1.9.8 이상)의 향후 새로운 구현은 차단됩니다. 이 통합을 설정하는 방법에 대한 자세한 내용은 [Experience Manager Assets as a Cloud Service 통합 구성](workfront-connector-configure.md).
 
 >[!IMPORTANT]
 >
@@ -146,7 +146,7 @@ ht-degree: 2%
 
 을 사용하여 연결을 만들려면 [!DNL Workfront], 다음 단계를 수행합니다.
 
-1. 위치 [!DNL Experience Manager], 선택 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Workfront 도구 구성]**.
+1. 위치 [!DNL Experience Manager], 선택 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Workfront 도구 구성]**.
 
 1. 선택 `workfront-tools` 왼쪽 패널에서 을(를) 선택하고 **[!UICONTROL 만들기]** 페이지의 오른쪽 위 영역에 있는 옵션입니다.
 

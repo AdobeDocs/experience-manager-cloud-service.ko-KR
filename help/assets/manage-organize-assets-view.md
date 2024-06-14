@@ -1,13 +1,14 @@
 ---
 title: 디지털 자산 관리
 description: ' [!DNL Assets view]에서 자산을 이동하고, 삭제하고, 복사하고, 이름을 변경하고, 업데이트 및 버전을 관리합니다.'
-role: User,Leader
+role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
-source-git-commit: 3912f52112b3d9dcb568e477c33d3f4b28064b66
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1177'
-ht-degree: 89%
+ht-degree: 93%
 
 ---
 
@@ -46,9 +47,9 @@ ht-degree: 89%
 * ![이동 아이콘](assets/do-not-localize/move-icon.png) 선택한 자산 또는 폴더를 저장소 계층의 다른 위치로 이동합니다.
 
 * ![이름 바꾸기 아이콘](assets/do-not-localize/rename-icon.png) 선택한 자산 또는 폴더의 이름을 변경합니다. 고유한 이름을 사용하지 않으면 경고 메시지가 표시되며 이름 바꾸기에 실패합니다. 새 이름으로 다시 시도할 수 있습니다.
-또한 에셋 또는 폴더의 제목을 클릭하여 이름을 변경할 수 있습니다. 에서 새 텍스트 언급 **에셋 이름 바꾸기** 텍스트 상자 및 클릭 **저장**. 이 기능은 격자, 갤러리, 폭포 및 목록 보기에서 사용할 수 있습니다.
+또한 자산이나 폴더의 제목을 클릭하여 이름을 바꿀 수 있습니다. **자산 이름 바꾸기** 텍스트 상자에 새 텍스트를 입력하고 **저장**&#x200B;을 클릭합니다. 이 기능은 격자 보기, 갤러리 보기, 워터폴 보기 및 목록 보기에서 사용할 수 있습니다.
 
-* ![waterfall 보기 아이콘](assets/do-not-localize/waterfall-view.png) [!UICONTROL Waterfall 보기].
+* ![워터폴 보기 아이콘](assets/do-not-localize/waterfall-view.png) [!UICONTROL 워터폴 보기].
 
 * ![라이브러리 복사 아이콘](assets/do-not-localize/copy-icon.png) 라이브러리에 자산을 추가합니다.
 

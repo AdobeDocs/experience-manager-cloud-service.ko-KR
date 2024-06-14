@@ -3,9 +3,9 @@ title: AEM에서 에셋에 워터마크를 지정하는 방법
 description: AEM에서 자산에 디지털 워터마크를 추가하는 방법을 알아봅니다. 워터마크는 사용자가 에셋의 진정성과 저작권 소유권을 확인하는 데 도움이 될 수 있습니다.
 contentOwner: AG
 feature: Asset Management,Publishing
-role: User,Admin
+role: User, Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: f1cae81b80f9871bffc683dcd230f4569dd05fa4
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 16%

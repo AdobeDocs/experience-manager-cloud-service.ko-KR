@@ -2,10 +2,10 @@
 title: 관리 [!DNL Adobe Stock] 의 에셋 [!DNL Assets].
 description: 검색, 가져오기, 라이센스 부여 및 관리 [!DNL Adobe Stock] 내부 자산 [!DNL Adobe Experience Manager]. 라이센스가 부여된 자산을 다른 디지털 자산으로 사용합니다.
 contentOwner: Vishabh Gupta
-feature: Search,Adobe Stock
-role: Admin,User
+feature: Adobe Stock
+role: Admin, User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '2460'
 ht-degree: 9%

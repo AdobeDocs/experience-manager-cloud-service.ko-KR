@@ -2,10 +2,12 @@
 title: 자산 보기를 사용하여 자산 일괄 가져오기
 description: 새 자산 UI(자산 보기)를 사용하여 자산을 일괄적으로 가져오는 방법에 대해 알아봅니다. 관리자에게 데이터 소스에서 AEM Assets로 수많은 자산을 가져올 수 있는 기능을 제공합니다.
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
-source-git-commit: cd4435247505e5067d09631b29a29e26d60eb09a
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+role: User
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1761'
-ht-degree: 69%
+ht-degree: 97%
 
 ---
 
@@ -43,7 +45,7 @@ Dropbox 계정에서 AEM Assets로 자산을 가져오기 전에 Dropbox 개발�
 
 다음 단계를 실행합니다.
 
-1. 다음에 로그인 [Dropbox 계정](https://www.dropbox.com/developers) 및 클릭 **[!UICONTROL 앱 만들기]**. <br>엔터프라이즈 Dropbox 계정을 사용하는 경우 콘텐츠 관리자 역할에 대한 액세스 권한이 있어야 합니다.
+1. [Dropbox 계정](https://www.dropbox.com/developers)으로 로그인한 다음 **[!UICONTROL 앱 만들기]**&#x200B;를 클릭합니다. <br>기업용 Dropbox 계정을 사용하는 경우 콘텐츠 관리자 역할을 사용할 수 있어야 합니다.
 
 1. **[!UICONTROL API 선택]** 섹션에서 사용 가능한 라디오 버튼만 선택합니다.
 
@@ -55,7 +57,7 @@ Dropbox 계정에서 AEM Assets로 자산을 가져오기 전에 Dropbox 개발�
 
 1. 애플리케이션 이름을 지정하고 **[!UICONTROL 앱 만들기]**&#x200B;를 클릭합니다.
 
-1. 다음에서 **[!UICONTROL 설정]** 응용 프로그램의 탭에서 https://experience.adobe.com을 **[!UICONTROL 리디렉션 URI]** 섹션.
+1. 애플리케이션의 **[!UICONTROL 설정]** 탭에서 **[!UICONTROL 리디렉션 URI]** 섹션에 https://experience.adobe.com을 추가합니다.
 
 1. **[!UICONTROL 앱 키]** 및 **[!UICONTROL 앱 암호]** 필드의 값을 복사합니다. 이 값은 AEM Assets에서 일괄 가져오기 도구를 구성하는 동안 필요합니다.
 
@@ -77,24 +79,24 @@ OneDrive 계정에서 AEM Assets로 자산을 가져오기 전에 OneDrive 개�
 
 ### 애플리케이션 만들기
 
-1. 다음에 로그인 [OneDrive 계정](https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) 및 클릭 **[!UICONTROL 새 등록]**.
+1. [OneDrive 계정](https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)으로 로그인한 다음 **[!UICONTROL 신규 등록]**&#x200B;을 클릭합니다.
 
-1. 응용 프로그램의 이름을 지정하고 다음을 선택합니다. **[!UICONTROL 이 조직 디렉터리의 계정만 해당(Adobe 전용 - 단일 테넌트)]** 출처: **[!UICONTROL 지원되는 계정 유형]**.
+1. 애플리케이션 이름을 지정하고 **[!UICONTROL 지원되는 계정 유형]**&#x200B;에서 **[!UICONTROL 이 조직 디렉터리에 있는 계정만(Adobe에만 해당 - 단일 테넌트)]**&#x200B;을 선택합니다.
 
 1. 리디렉션 URI를 추가하려면 다음 단계를 실행합니다.
 
-   1. 다음에서 **[!UICONTROL 플랫폼 선택]** 드롭다운 메뉴에서 다음을 선택합니다. **[!UICONTROL 웹]**.
+   1. **[!UICONTROL 플랫폼 선택]** 드롭다운 메뉴에서 **[!UICONTROL 웹]**&#x200B;을 선택합니다.
 
-   1. 에 https://experience.adobe.com 추가 **[!UICONTROL 리디렉션 URI]** 섹션.
+   1. **[!UICONTROL 리디렉션 URI]** 섹션에 https://experience.adobe.com을 추가합니다.
    <!-- Add the first URI and click **[!UICONTROL Configure]** to add it. You can add more by clicking **[!UICONTROL Add URI]** option available in the **[!UICONTROL Web]** section on the **[!UICONTROL Authentication]** page. -->
 
 1. **[!UICONTROL 등록]**&#x200B;을 클릭합니다. 애플리케이션이 성공적으로 생성됩니다.
 
-1. 다음에 대한 값을 복사합니다. **[!UICONTROL 애플리케이션(클라이언트) ID]** 및 **[!UICONTROL 디렉터리(테넌트) ID]** 필드. 이 값은 AEM Assets에서 일괄 가져오기 도구를 구성하는 동안 필요합니다.
+1. **[!UICONTROL 애플리케이션(클라이언트) ID]** 및 **[!UICONTROL 디렉터리(테넌트) ID]** 필드의 값을 복사합니다. 이 값은 AEM Assets에서 일괄 가져오기 도구를 구성하는 동안 필요합니다.
 
-1. 클릭 **[!UICONTROL 인증서 또는 암호 추가]** 에 해당하는 **[!UICONTROL 클라이언트 자격 증명]** 옵션을 선택합니다.
+1. **[!UICONTROL 클라이언트 자격 증명]** 옵션에 맞는 **[!UICONTROL 인증서 또는 암호 추가]**&#x200B;를 클릭합니다.
 
-1. 클릭 **[!UICONTROL 새 클라이언트 암호]**&#x200B;클라이언트 암호 설명, 만료를 입력하고 **[!UICONTROL 추가]**.
+1. **[!UICONTROL 새 클라이언트 암호]**&#x200B;를 클릭하고 클라이언트 암호 설명과 만료일을 입력한 다음 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 
 1. 클라이언트 암호를 만든 다음에는 **[!UICONTROL 값]** 필드를 복사합니다. 암호 ID 필드는 복사하지 마십시오. 값 필드는 AEM Assets에서 일괄 가져오기를 구성하는 동안 필요합니다.
 
@@ -109,13 +111,13 @@ OneDrive 계정에서 AEM Assets로 자산을 가져오기 전에 OneDrive 개�
 
 ## 일괄 가져오기 구성 만들기 {#create-bulk-import-configuration}
 
-다음 단계를 실행하여에서 대량 가져오기 구성을 만듭니다. [!DNL Experience Manager Assets]:
+[!DNL Experience Manager Assets]에서 일괄 가져오기 구성을 만들려면 다음 단계를 실행합니다.
 
-1. 클릭 **[!UICONTROL 일괄 가져오기]** 왼쪽 창에서 **[!UICONTROL 가져오기 만들기]**.
-1. 데이터 소스를 선택합니다. 사용 가능한 옵션은 다음과 같습니다 **[!UICONTROL Azure]**, **[!UICONTROL AWS]**, **[!UICONTROL Google Cloud]**, **[!UICONTROL Dropbox]** 및 **[!UICONTROL OneDrive]**.
+1. 왼쪽 창에서 **[!UICONTROL 일괄 가져오기]**&#x200B;를 클릭한 다음 **[!UICONTROL 가져오기 만들기]**&#x200B;를 클릭합니다.
+1. 데이터 소스를 선택합니다. 사용 가능한 옵션에는 **[!UICONTROL Azure]**, **[!UICONTROL AWS]**, **[!UICONTROL Google Cloud]**, **[!UICONTROL Dropbox]** 및 **[!UICONTROL OneDrive]**&#x200B;가 있습니다.
 1. **[!UICONTROL 이름]** 필드에 일괄 가져오기 구성의 이름을 지정합니다.
 1. [사전 요구 사항](#prerequisites)에서 언급한 대로 데이터 소스별 자격 증명을 지정합니다.
-1. 의 데이터 소스에 있는 자산이 포함된 루트 폴더의 이름을 제공합니다. **[!UICONTROL 소스 폴더]** 필드.
+1. **[!UICONTROL 소스 폴더]** 필드에 데이터 소스의 자산이 포함된 루트 폴더의 이름을 입력합니다.
 
    >[!NOTE]
    >
@@ -127,7 +129,7 @@ OneDrive 계정에서 AEM Assets로 자산을 가져오기 전에 OneDrive 개�
 1. **[!UICONTROL 가져오기 모드]**&#x200B;를 선택합니다. **[!UICONTROL 건너뛰기]**, **[!UICONTROL 바꾸기]** 또는 **[!UICONTROL 버전 만들기]**를 선택합니다. 건너뛰기 모드는 기본값이고, 자산이 이미 존재하는 경우 이 모드에서 수집기는 자산 가져오기를 건너뜁니다.
    ![소스 세부 정보 가져오기](/help/assets/assets/bulk-import-source-details.png)
 
-1. (선택 사항) CSV 형식으로 제공된 가져올 메타데이터 파일을 **[!UICONTROL 메타데이터 파일]** 필드. 메타데이터 소스 파일은 소스 폴더에 있어야 합니다. 클릭 **[!UICONTROL 다음]** 다음으로 이동 **[!UICONTROL 위치 및 필터]**.
+1. (선택 사항) **[!UICONTROL 메타데이터 파일]** 필드에서 가져올 메타데이터 파일(CSV 형식으로 제공)을 지정합니다. 메타데이터 소스 파일은 소스 폴더에 있어야 합니다. **[!UICONTROL 다음]**&#x200B;을 클릭하여 **[!UICONTROL 위치 및 필터]**&#x200B;로 이동합니다.
 1. **[!UICONTROL 자산 대상 폴더]** 필드를 사용하여 자산을 가져올 수 있는 DAM에 위치를 정의하려면 경로를 지정합니다. 예: `/content/dam/imported_assets`
 1. (선택 사항) **[!UICONTROL 필터 선택]** 섹션에 자산의 최소 파일 크기(MB)를 제공하여 **[!UICONTROL 최소 크기로 필터링]** 필드의 수집 프로세스에 자산을 포함시킵니다.
 1. (선택 사항) 자산의 최대 파일 크기(MB)를 제공하여 **[!UICONTROL 최대 크기로 필터링]** 필드의 수집 프로세스에 자산을 포함시킵니다.
@@ -137,11 +139,11 @@ OneDrive 계정에서 AEM Assets로 자산을 가져오기 전에 OneDrive 개�
 
    ![일괄 가져오기 필터](assets/bulk-import-location.png)
 
-1. **[!UICONTROL 다음]**&#x200B;을 클릭합니다. 기본 설정에 따라 다음 옵션 중 하나를 선택합니다.
+1. **[!UICONTROL 다음]**&#x200B;을 클릭합니다. 다음 옵션 중 원하는 옵션 하나를 선택합니다.
 
-   * **[!UICONTROL 가져오기 저장]** 나중에 실행할 수 있도록 구성을 지금 저장하십시오.
-   * **[!UICONTROL 가져오기 저장 및 실행]** 구성을 저장하고 일괄 가져오기를 실행합니다.
-   * **[!UICONTROL 가져오기 저장 및 예약]** 구성을 저장하고 나중에 일괄 가져오기 일정 잡기 대량 가져오기의 빈도를 선택하고 가져오기의 날짜 및 시간을 설정할 수 있습니다. 대량 가져오기는 선택한 빈도로 설정된 날짜 및 시간에 실행됩니다.
+   * **[!UICONTROL 가져오기 저장]**&#x200B;은 나중에 실행할 수 있도록 현재 구성을 저장합니다.
+   * **[!UICONTROL 저장 및 가져오기 실행]**&#x200B;은 구성을 저장하고 일괄 가져오기를 실행합니다.
+   * **[!UICONTROL 저장 및 가져오기 예약]**&#x200B;은 구성을 저장하고 나중에 일괄 가져오기를 수행하도록 예약합니다. 대량 가져오기의 빈도를 선택하고 가져오기의 날짜 및 시간을 설정할 수 있습니다. 대량 가져오기는 선택한 빈도로 설정된 날짜 및 시간에 실행됩니다.
 
    ![일괄 가져오기 실행](assets/save-run.png)
 
@@ -157,14 +159,14 @@ OneDrive 계정에서 AEM Assets로 자산을 가져오기 전에 OneDrive 개�
 
 ## 기존 일괄 가져오기 구성 보기 {#view-import-configuration}
 
-기존 일괄 가져오기를 보려면 **[!UICONTROL 일괄 가져오기]** 왼쪽 창의 옵션입니다. 벌크 가져오기 페이지가 다음 목록과 함께 나타납니다. **[!UICONTROL 실행된 가져오기]**. <br>
-다음을 볼 수도 있습니다. **[!UICONTROL 저장된 가져오기]** 및 **[!UICONTROL 예약된 가져오기]** 드롭다운 옵션에서.
+기존의 일괄 가져오기를 보려면 왼쪽 창에서 **[!UICONTROL 일괄 가져오기]** 옵션을 선택합니다. **[!UICONTROL 실행된 가져오기]** 목록과 함께 일괄 가져오기 페이지가 나타납니다. <br>
+드롭다운 옵션에서 **[!UICONTROL 저장된 가져오기]** 및 **[!UICONTROL 예약된 가져오기]**&#x200B;를 볼 수도 있습니다.
 
 ![일괄 가져오기 구성 저장](assets/bulk-import-options.png)
 
 ## 일괄 가져오기 구성 편집 {#edit-import-configuration}
 
-구성 세부 정보를 편집하려면 다음을 클릭하십시오. ![기타 아이콘](assets/do-not-localize/more-icon.svg) 구성 이름에 해당하는 다음 **[!UICONTROL 편집]**. 편집 작업을 수행하면서 구성 및 가져오기 데이터 소스의 제목을 편집할 수 없습니다. 실행된 가져오기 탭, 예약된 가져오기 탭 또는 저장된 가져오기 탭을 사용하여 구성을 편집할 수 있습니다.
+구성 세부 정보를 편집하려면 구성 이름에 해당하는 ![기타 아이콘](assets/do-not-localize/more-icon.svg)을 클릭하고 **[!UICONTROL 편집]**&#x200B;을 클릭합니다. 편집 작업을 수행하면서 구성 및 가져오기 데이터 소스의 제목을 편집할 수 없습니다. 실행된 가져오기 탭, 예약된 가져오기 탭 또는 저장된 가져오기 탭을 사용하여 구성을 편집할 수 있습니다.
 
 ![일괄 가져오기 구성 편집](assets/edit-bulk-import.png)
 
@@ -172,7 +174,7 @@ OneDrive 계정에서 AEM Assets로 자산을 가져오기 전에 OneDrive 개�
 
 일회성 일괄 가져오기 또는 반복 일괄 가져오기를 예약하려면 다음 단계를 실행합니다.
 
-1. 클릭 ![기타 아이콘](assets/do-not-localize/more-icon.svg) 에서 사용할 수 있는 구성 이름에 해당합니다. **[!UICONTROL 실행된 가져오기]** 또는 **[!UICONTROL 저장된 가져오기]** tab 키를 누른 다음 클릭 **[!UICONTROL 예약]**. **[!UICONTROL 예약된 가져오기]** 탭으로 이동하고 **[!UICONTROL 예약]**&#x200B;을 클릭하여 기존 예약된 가져오기를 다시 예약할 수도 있습니다.
+1. **[!UICONTROL 실행된 가져오기]** 탭 또는 **[!UICONTROL 저장된 가져오기]** 탭에서 사용 가능한 구성 이름에 해당하는 ![기타 아이콘](assets/do-not-localize/more-icon.svg)을 클릭하고 **[!UICONTROL 예약]**&#x200B;을 클릭합니다. **[!UICONTROL 예약된 가져오기]** 탭으로 이동하고 **[!UICONTROL 예약]**&#x200B;을 클릭하여 기존 예약된 가져오기를 다시 예약할 수도 있습니다.
 
 1. 일회성 수집을 설정하거나 매시간, 매일 또는 매주 단위로 일정을 예약합니다. **[!UICONTROL 제출]**&#x200B;을 클릭합니다.
 
@@ -180,21 +182,21 @@ OneDrive 계정에서 AEM Assets로 자산을 가져오기 전에 OneDrive 개�
 
 ## 가져오기 상태 검사 수행 {#import-health-check}
 
-데이터 소스에 대한 연결을 확인하려면 다음을 클릭하십시오. ![기타 아이콘](assets/do-not-localize/more-icon.svg) 구성 이름에 해당하는 다음 **[!UICONTROL 확인]**. 정상적으로 연결되면 Experience Manager Assets에는 다음과 같은 메시지가 표시됩니다.
+데이터 소스에 대한 연결을 확인하려면 구성 이름에 해당하는 ![기타 아이콘](assets/do-not-localize/more-icon.svg)을 클릭한 다음 **[!UICONTROL 확인]**&#x200B;을 클릭합니다. 정상적으로 연결되면 Experience Manager Assets에는 다음과 같은 메시지가 표시됩니다.
 
 ![일괄 가져오기 상태 검사](assets/bulk-import-health-check.png)
 
 ## 가져오기 실행 전에 시험 실행을 수행합니다. {#dry-run-bulk-import}
 
-클릭 ![기타 아이콘](assets/do-not-localize/more-icon.svg) 구성 이름에 해당하는 다음 **[!UICONTROL 시험 실행]** 대량 가져오기 작업에 대한 테스트 실행을 호출합니다. Experience Manager Assets에는 일괄 가져오기 작업에 대한 다음 세부 정보가 표시됩니다.
+구성 이름에 해당하는 ![기타 아이콘](assets/do-not-localize/more-icon.svg)을 클릭하고 **[!UICONTROL 시험 실행]**&#x200B;을 클릭하여 일괄 가져오기 작업에 대한 테스트 실행을 호출합니다. Experience Manager Assets에는 일괄 가져오기 작업에 대한 다음 세부 정보가 표시됩니다.
 
 ![일괄 가져오기 상태 검사](assets/bulk-import-dry-run.png)
 
 ## 일괄 가져오기 실행 {#run-bulk-import}
 
-구성을 생성하는 동안 가져오기를 저장한 경우 저장된 가져오기 탭으로 이동하여 ![기타 아이콘](assets/do-not-localize/more-icon.svg) 구성에 해당하는 아이콘을 클릭하고 **[!UICONTROL 실행]**.
+구성을 만드는 동안 가져오기를 저장한 경우 저장된 가져오기 탭으로 이동하고 구성 이름에 해당하는 ![기타 아이콘](assets/do-not-localize/more-icon.svg)을 클릭한 다음 **[!UICONTROL 실행]**&#x200B;을 클릭합니다.
 
-마찬가지로 이미 실행된 가져오기를 실행해야 하는 경우 [실행된 가져오기] 탭으로 이동하여 ![기타 아이콘](assets/do-not-localize/more-icon.svg) 구성 이름에 해당하는 다음 **[!UICONTROL 실행]**.
+마찬가지로 이미 실행된 가져오기를 실행해야 할 경우 실행된 가져오기 탭으로 이동하고 구성 이름에 해당하는 ![기타 아이콘](assets/do-not-localize/more-icon.svg)을 클릭한 다음 **[!UICONTROL 실행]**&#x200B;을 클릭합니다.
 
 ## 진행 중인 가져오기 중지 또는 예약 {#schedule-stop-ongoing-report}
 
@@ -206,11 +208,11 @@ OneDrive 계정에서 AEM Assets로 자산을 가져오기 전에 OneDrive 개�
 
 ## 일괄 가져오기 구성 삭제 {#delete-bulk-import-configuration}
 
-클릭 ![기타 아이콘](assets/do-not-localize/more-icon.svg) 에 존재하는 구성 이름에 해당 **[!UICONTROL 실행된 가져오기]**, **[!UICONTROL 예약된 가져오기]**, 또는 **[!UICONTROL 저장된 가져오기]** 탭 및 클릭 **[!UICONTROL 삭제]** 대량 가져오기 구성을 삭제합니다.
+**[!UICONTROL 실행된 가져오기]** 탭, **[!UICONTROL 예약된 가져오기]** 탭 또는 **[!UICONTROL 저장된 가져오기]** 탭에 있는 구성 이름에 해당하는 ![기타 아이콘](assets/do-not-localize/more-icon.svg)을 클릭하고 **[!UICONTROL 삭제]**&#x200B;를 클릭하여 일괄 가져오기 구성을 삭제합니다.
 
 ## 일괄 가져오기를 수행하고 자산으로 이동 {#view-assets-after-bulk-import}
 
-일괄 가져오기 작업을 실행한 후 에셋을 가져오는 에셋 대상 위치를 보려면 ![기타 아이콘](assets/do-not-localize/more-icon.svg) 구성 이름에 해당하는 다음 **[!UICONTROL 에셋 보기]**.
+일괄 가져오기 작업 실행 후 자산을 가져오는 자산 대상 위치를 보려면 구성 이름에 해당하는 ![기타 아이콘](assets/do-not-localize/more-icon.svg)을 클릭한 다음 **[!UICONTROL 자산 보기]**&#x200B;를 클릭합니다.
 
 ## 비디오: 에셋 보기를 사용하여 에셋 일괄 가져오기
 

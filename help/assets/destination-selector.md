@@ -2,11 +2,12 @@
 title: AEM as a Cloud Service 대상 선택기
 description: AEM 대상 선택기를 사용하여 사용할 수 있는 자산을 원본 자산의 사본으로 표시하고 선택합니다.
 contentOwner: Adobe
-role: Admin,User
+role: Admin, User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
-source-git-commit: 96a82439c51c22125c206b4e912e85e0bf603498
+feature: Selectors
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1887'
 ht-degree: 85%
 
 ---
@@ -259,7 +260,7 @@ interface SelectedDestination {
 
 `optionsFormSetup` 속성의 예입니다. 예를 사용하여 선택 사항을 확인할 수 있습니다. `onConfirm` 이벤트에 전달됩니다.
 
-### 폴더를 만듭니다 {#create-new-folder}
+### 폴더 만들기 {#create-new-folder}
 
 폴더의 대상 폴더에 폴더를 만들 수 있습니다. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 

@@ -2,7 +2,9 @@
 title: 이미지용 색상 태그
 description: Adobe Experience Manager Assets을 사용하면 이미지의 색상을 구분하고 이를 태그로 자동으로 적용할 수 있습니다. 그런 다음 이러한 태그를 사용하여 이미지를 검색하고 필터링할 수 있습니다.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+feature: Smart Imaging, Interactive Images, Asset Management
+role: User, Admin
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1244'
 ht-degree: 6%

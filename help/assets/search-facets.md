@@ -1,10 +1,10 @@
 ---
 title: 검색 패싯.
 description: 이 문서에서는 Experience Manager에서 검색 패싯을 만들고, 수정하고, 사용하는 방법에 대해 설명합니다.
-feature: Search,Metadata
-role: User,Admin
+feature: Metadata
+role: Admin, User
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '2505'
 ht-degree: 19%

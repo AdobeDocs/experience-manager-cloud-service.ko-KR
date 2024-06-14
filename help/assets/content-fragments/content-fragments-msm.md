@@ -1,7 +1,10 @@
 ---
 title: MSM 및 라이브 카피를 사용하여 콘텐츠 조각 재사용
 description: 소스 콘텐츠와 동기화하면서 여러 위치에서 동일하거나 유사한 콘텐츠 조각 콘텐츠를 사용하기 위해 MSM의 라이브 카피 기능을 사용하는 방법에 대해 알아봅니다.
-source-git-commit: 3ce1a982055c2f9c900edbd88e079deb6d3a036a
+exl-id: f050b2d1-856c-4cdb-ac74-bc78016f144a
+feature: Content Fragments
+role: User
+source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 10%

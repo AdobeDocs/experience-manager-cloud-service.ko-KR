@@ -2,7 +2,9 @@
 title: Experience Manager Assets에서 렌디션 보기 및 관리
 description: AEM Assets 및 Dynamic Media이 정적 및 동적 이미지 렌디션을 사용하여 효과적인 이미지 관리를 간소화하는 방법에 대해 알아봅니다.
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
-source-git-commit: 4627eb00ba910d1ad2920db15a87761bd7e4a0c0
+feature: Renditions
+role: User
+source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 0%

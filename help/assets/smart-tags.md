@@ -2,10 +2,10 @@
 title: AEM에서 자산에 스마트 태그를 추가하는 방법
 description: 상황별 및 설명적 비즈니스 태그를 적용하는 인위적인 지능형 서비스를 사용하여 AEM의 자산에 스마트 태그를 추가합니다.
 contentOwner: AG
-feature: Smart Tags,Tagging
-role: Admin,User
+feature: Smart Tags
+role: Admin, User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '2460'
 ht-degree: 7%

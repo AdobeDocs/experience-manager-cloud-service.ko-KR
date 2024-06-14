@@ -3,7 +3,8 @@ title: 메타데이터 관리 및 모범 사례
 description: 디지털 자산을 효과적으로 관리하기 위한 메타데이터 모범 사례에 대해 알아봅니다.
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
-source-git-commit: 2526bc491f079d0dfafaa7aad0d240ff64109591
+feature: Metadata, Best Practices
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1384'
 ht-degree: 1%
@@ -33,7 +34,7 @@ DAM(디지털 자산 관리) 시스템에서 메타데이터를 사용하여 효
 * 파일 크기
 * 형식
 * 해결 방법
-* 크기
+* 차원
 * 색상 모드
 
 ### 정보 메타데이터

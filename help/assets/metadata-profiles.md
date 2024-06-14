@@ -3,9 +3,9 @@ title: 메타데이터 프로필
 description: 에셋의 메타데이터 프로필에 대해 알아봅니다. 메타데이터 프로필을 만들고 폴더 에셋에 적용하는 방법에 대해 알아봅니다.
 contentOwner: AG
 feature: Metadata
-role: User,Admin
+role: User, Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1403'
 ht-degree: 21%

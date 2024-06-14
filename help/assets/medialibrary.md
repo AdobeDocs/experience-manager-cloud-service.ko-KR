@@ -2,10 +2,10 @@
 title: 기본 디지털 자산 관리에 Media Library 사용
 description: "[!DNL Experience Manager Assets] 에셋 관리를 위한 Media Library을 제공합니다."
 contentOwner: AG
-feature: Asset Management,Publishing
-role: User,Architect,Leader
+feature: Asset Management, Publishing
+role: User, Architect, Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 9%

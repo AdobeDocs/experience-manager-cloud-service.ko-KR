@@ -2,7 +2,9 @@
 title: 변형 - 조각 컨텐츠 작성(자산 - 컨텐츠 조각)
 description: 콘텐츠 조각 변형을 통해 조각에 대한 콘텐츠를 작성한 다음 목적에 따라 해당 콘텐츠의 변형을 만들어 유연성을 높이는 방법을 이해합니다.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: a213d94b6c5bd4eaaf78b8384b96e1d99104874d
+feature: Content Fragments
+role: User
+source-git-commit: 763ef950ffa7642a345977485f56c1187f6ecc0a
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 53%

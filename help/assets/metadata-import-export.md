@@ -3,9 +3,9 @@ title: 자산 메타데이터 일괄적으로 가져오기 및 내보내기
 description: 이 문서에서는 메타데이터를 일괄적으로 가져오고 내보내는 방법에 대해 설명합니다.
 contentOwner: AG
 feature: Metadata
-role: User,Admin
+role: User, Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 10%

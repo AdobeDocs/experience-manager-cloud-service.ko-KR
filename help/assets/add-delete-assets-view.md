@@ -2,7 +2,9 @@
 title: 저장소에 에셋 업로드
 description: 에셋을  [!DNL Assets view]에 업로드하고, 업로드 상태를 보고, 업로드 관련 문제를 해결합니다.
 role: User
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '825'
 ht-degree: 91%

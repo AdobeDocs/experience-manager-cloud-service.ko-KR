@@ -3,10 +3,12 @@ title: AEM에서 에셋 보기를 통해 얻을 수 있는 이점은 무엇입�
 description: AEM에서 에셋 보기의 주요 이점에 대해 자세히 알아보십시오. Adobe은 마케팅 및 크리에이티브 전문가에게 권한을 부여하는 전문 지식을 사용하여 게임을 변화시킬 새로운 사용자 경험을 도입합니다.
 mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
-source-git-commit: 408a691de8a6fe2801a9907308db43f2050528c3
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+role: User
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
-source-wordcount: '1079'
-ht-degree: 74%
+source-wordcount: '972'
+ht-degree: 69%
 
 ---
 
@@ -121,7 +123,7 @@ Adobe Photoshop Express와 통합된 자산 보기의 기능을 이해하려면 
 
 * 저장소 내에서 사용할 수 있는 에셋 및 폴더의 이름을 변경합니다.
 
-에셋 보기는 워크플로를 능률화하고, 공동 작업을 촉진하며, 에셋 전달을 가속화하도록 맞춤화되었습니다. 콘텐츠 속도를 수용함으로써 마케팅 담당자는 디지털 자산의 잠재력을 최대한 활용하고 전례 없는 창의성을 발휘할 수 있습니다.
+에셋 보기는 워크플로를 능률화하고, 공동 작업을 촉진하며, 에셋 전달을 가속화하도록 맞춤화되었습니다. 콘텐츠 속도를 수용하여 마케터는 디지털 에셋의 잠재력을 최대한 활용하고 이전과는 전혀 다른 창의력을 발휘할 수 있습니다.
 
 
 다음 링크를 사용하여 자산 보기를 빠르게 시작할 수 있습니다.

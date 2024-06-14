@@ -2,7 +2,9 @@
 title: 관련 컨텐츠(자산 - 컨텐츠 조각)
 description: AEM 콘텐츠 조각의 관련 콘텐츠 기능이 연결을 제공하여 조각과 함께 에셋을 선택적으로 사용할 수 있도록 하는 방법을 이해합니다.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
+feature: Content Fragments
+role: User
+source-git-commit: 763ef950ffa7642a345977485f56c1187f6ecc0a
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 45%

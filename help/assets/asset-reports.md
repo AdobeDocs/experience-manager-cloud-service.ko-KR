@@ -2,10 +2,10 @@
 title: 사용 및 공유에 대한 보고서
 description: 의 자산에 대한 보고서 [!DNL Adobe Experience Manager Assets] 이를 통해 디지털 에셋의 사용, 활동 및 공유를 이해할 수 있습니다.
 contentOwner: AG
-feature: Asset Reports,Asset Management
-role: Admin,User
+feature: Asset Reports, Asset Management
+role: Admin, User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 9%

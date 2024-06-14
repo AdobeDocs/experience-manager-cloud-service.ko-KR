@@ -3,10 +3,11 @@ title: 이미지 편집
 description: ' [!DNL Adobe Express] 기반 옵션을 사용하여 이미지를 편집하고 업데이트된 이미지를 버전으로 저장합니다.'
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
-source-git-commit: 42d3751a4a29149f3b31dbc28555b81aa7ed43cc
+feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 69%
+ht-degree: 71%
 
 ---
 
@@ -84,9 +85,9 @@ Adobe Express을 사용하여 PNG 이미지를 JPEG 형식으로 빠르게 변�
 
 ### 제한 사항 {#limitations-adobe-express}
 
-* 지원되는 이미지 해상도: 차원당 최소 - 50픽셀, 최대 - 6000픽셀.
+* 지원되는 이미지 해상도: 차원당 최소 50픽셀, 최대 6000픽셀.
 
-* 지원되는 최대 파일 크기는 17MB입니다.
+* 지원되는 최대 파일 크기: 17MB.
 
 ## Adobe Express 임베드된 편집기를 사용하여 이미지 편집 {#edit-using-embedded-editor}
 
@@ -187,4 +188,4 @@ TBD: Insert a video of the available social media options.
 >[!MORELIKETHIS]
 >
 >* [Adobe Express의 빠른 작업](https://helpx.adobe.com/kr/express/using/resize-image.html)
->* [자산의 버전 내역 보기](navigate-assets-view.md)
+>* [자산의 버전 기록 보기](navigate-assets-view.md)
