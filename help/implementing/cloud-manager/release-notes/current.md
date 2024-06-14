@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 8eaf2b70734cec1fedace64d74059ee161785b39
 workflow-type: tm+mt
 source-wordcount: '548'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
 
@@ -22,37 +22,37 @@ ht-degree: 39%
 
 ## 릴리스 일자 {#release-date}
 
-AEM as a Cloud Service의 Cloud Manager 2024.6.0 릴리스 날짜는 2024년 6월 6일입니다. 다음 릴리스는 2024년 7월 11일에 예정되어 있습니다.
+AEM as a Cloud Service의 Cloud Manager 릴리스 2024.6.0 출시 일자는 2024년 6월 6일입니다. 다음 릴리스는 2024년 7월 11일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
-* 이제 다음을 수행할 수 있습니다. [고유한 GitHub 저장소 사용](/help/implementing/cloud-manager/managing-code/private-repositories.md) 전체 스택 및 프론트엔드 파이프라인 모두의 소스로 사용됩니다.
-   * 또한 다음을 통해 GitHub 저장소를 활용할 수 있습니다. [git 하위 모듈,](/help/implementing/cloud-manager/managing-code/git-submodules.md) 가져오기 요청 유효성 검사에 사용되는 자동 생성 파이프라인에 대한 향상된 제어 기능을 제공하고 코드 스캔 단계 동안 중요한 지표에 대한 비헤이비어를 정의할 수 있도록 합니다.
-   * [또한 다음을 선택할 수 있습니다.](/help/implementing/cloud-manager/managing-code/github-check-config.md) gitHub에서 보고서 기록을 보존하려면 파이프라인 이름을 지정하고 필요에 맞게 파이프라인 변수를 설정합니다.
-* [셀프서비스 콘텐츠 복원](/help/operations/restore.md) 최대 7일 동안 백업 복구를 수행할 수 있으며 다음과 같은 기능이 제공됩니다.
+* 이제 [자체 GitHub 저장소](/help/implementing/cloud-manager/managing-code/private-repositories.md)를 전체 스택 및 프론트엔드 파이프라인 모두의 소스로 사용할 수 있습니다.
+   * 또한 [Git 하위 모듈](/help/implementing/cloud-manager/managing-code/git-submodules.md)을 통해 GitHub 저장소를 활용할 수 있으며, 가져오기 요청 검증에 사용되는 자동 생성 파이프라인에 대한 제어 기능을 강화하고 코드 스캔 단계에서 중요한 지표에 대한 동작을 정의할 수 있습니다.
+   * [GitHub에 보고서 기록을 보존하고 파이프라인 이름을 지정하며 필요에 맞게 파이프라인 변수를 설정할 수도 있습니다.](/help/implementing/cloud-manager/managing-code/github-check-config.md)
+* [셀프서비스 콘텐츠 복원](/help/operations/restore.md)은 최대 7일 동안 백업 복원 기능을 제공하며 다음과 같은 기능을 제공합니다.
    * 이전 24시간 동안 특정 시점 백업 복원
    * 최대 7일 동안 고정 시간 복원
-* [새 OakPal 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-ui-content-package) 이(가) Cloud Manager 코드 품질 검사에 추가되었습니다.
-   * 2024년 6월 현재 추가된 모든 새 규칙은 변경되지 않는 변경 사항입니다.
-   * 이러한 새로운 규칙은 Cloud Manager 2024년 8월 릴리스부터 파이프라인이 실패하게 되므로 가능한 한 빨리 이러한 문제를 해결해야 합니다.
+* [새로운 OakPal 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-ui-content-package)이 Cloud Manager 코드 품질 검사에 추가되었습니다.
+   * 2024년 6월에 추가된 모든 새로운 규칙은 획기적인 변경 사항입니다.
+   * 이러한 새로운 규칙으로 인해 Cloud Manager 2024년 8월 릴리스부터 파이프라인에 장애가 발생하므로 가능한 한 빨리 이 문제를 해결해야 합니다.
 
 ## 얼리 어답터 프로그램 {#early-adoption}
 
 Adobe의 얼리 어답터 프로그램에 참여하여 향후 기능을 테스트할 기회를 얻으십시오.
 
-### Cloud Manager의 Edge Delivery Services 지원 {#edge-delivery-services}
+### Cloud Manager에서의 Edge Delivery Services 지원 {#edge-delivery-services}
 
-Adobe Experience Manager Sites의 일부로 Edge Delivery Services 라이선스가 부여된 경우 [이제 Cloud Manager에서 직접 Edge Delivery Services을 사용하여 사이트를 온보딩할 수 있습니다](/help/implementing/cloud-manager/edge-delivery-services.md) 가이드 셀프 서비스 환경을 사용하여 라이브로 전환하십시오.
+Adobe Experience Manager Sites의 일부로 Edge Delivery Services에 라이선스를 부여한 경우, [이제 Cloud Manager에서 Edge Delivery Services를 직접 사이트에 온보딩하고](/help/implementing/cloud-manager/edge-delivery-services.md) 안내식 셀프서비스 경험을 사용하여 라이브로 전환할 수 있습니다.
 
-이렇게 하면 모든 AEM 속성에 대해 통합 환경을 제공하여 도메인 이름 관리, SSL 인증서 관리 및 CDN 매핑을 비롯한 모든 중요한 워크플로우와 일관성을 유지할 수 있습니다.
+이를 통해 모든 AEM 속성에 대해 통합된 경험이 가능해지며 도메인 이름 관리, SSL 인증서 관리 및 CDN 매핑을 포함한 모든 중요한 워크플로와의 일관성이 보장됩니다.
 
-이 새로운 기능을 테스트하고 피드백을 공유하려면 (으)로 이메일을 보내십시오. `aemcs-cmedgedelsvs-program-adopter@adobe.com` 사용 중인 Adobe ID과 연결된 이메일 주소입니다.
+이러한 새 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 `aemcs-cmedgedelsvs-program-adopter@adobe.com`에 이메일을 보내주십시오.
 
-### DV(도메인 확인) 인증서
+### DV(Domain Validated) 인증서
 
-이제 Cloud Manager를 사용하여 다음을 수행할 수 있습니다. [셀프서비스는 DV(도메인 유효성 검사) SSL 인증서를 생성하고 관리합니다.](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) 이를 통해 온라인 비즈니스를 위한 안전한 웹 사이트를 만들 수 있는 가장 빠르고 쉽고 비용 효율적인 솔루션을 제공합니다.
+이제 Cloud Manager를 통해 [DV(Domain Validated) SSL 인증서를 셀프서비스로 생성하고 관리할 수 있습니다.](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) 이를 통해 귀하의 온라인 비즈니스를 위한 안전한 웹 사이트를 구축할 수 있는 가장 빠르고 쉬우며 비용 효율적인 솔루션이 제공됩니다.
 
-이 새로운 기능을 테스트하고 피드백을 공유하려면 (으)로 이메일을 보내십시오. `Grp-aemcs-dv-dert-adopter@adobe.com` 사용 중인 Adobe ID과 연결된 이메일 주소입니다.
+이러한 새 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 `Grp-aemcs-dv-dert-adopter@adobe.com`에 이메일을 보내주십시오.
 
 <!-- RICK: REMOVED THIS SECTION AS PER EMAIL REQUEST TO DL-AEM-DOCS FROM SHWETA DUA, WEDNESDAY, JUNE 12, 2024 ### Client-Side Collection via Real Use Monitoring (RUM) {#rum}
 

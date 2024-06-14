@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: c969b78f5e93e15d1f8f57dd409e58a6275069ce
 workflow-type: tm+mt
 source-wordcount: '422'
-ht-degree: 83%
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 83%
 
 >[!CAUTION]
 >
->이전 SDK에 대한 회귀가 확인되었으므로 아래에서 여기에 참조된 SDK를 사용하십시오.
+>이전 SDK에서 회귀가 확인되었으므로 여기에서 참조된 SDK를 사용해 주십시오.
 >`AEM SDK v2024.06.16647.20240607T103723Z-240500`
 
 ### 개선 사항 {#enhancements-16544}
@@ -52,7 +52,7 @@ Experience Manager Guides에서 수정된 새로운 기능과 향상된 기능�
 
 ### 변경 사항 공지 {#change-notice-16544}
 
-2024년 9월부터 AEM에서 Sling 모델 내보내기 프레임워크를 통해 리소스 확인자의 직렬화를 as a Cloud Service으로 비활성화합니다. 다음을 참조하십시오 [설명서](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) 을 참조하십시오.
+2024년 9월부터 AEM as a Cloud Service는 Sling Model Exporter 프레임워크를 통해 Resource Resolver의 직렬화를 비활성화합니다. 자세한 내용은 [설명서](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)를 참조하십시오.
 
 ### 사용 중단된 기능 및 API {#deprecated-16544}
 
