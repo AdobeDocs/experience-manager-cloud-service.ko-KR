@@ -4,7 +4,7 @@ description: Edge Delivery Services 프로젝트를 통해 AEM 작성 시 Univer
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 72949b36e7e7f8689365e7cb76a8c491edf23825
+source-git-commit: e0b4eafaa9fdc496362f90e6da14b4b198b4ea3e
 workflow-type: tm+mt
 source-wordcount: '1375'
 ht-degree: 94%
@@ -22,7 +22,7 @@ Edge Delivery Services 프로젝트를 통해 AEM 작성 시 Universal Editor에
 
 이 안내서에는 Edge Delivery Services 프로젝트 및 Universal Editor를 사용한 AEM 작성에 대한 기존 지식이 필요합니다. 이 안내서를 시작하기 전에 Edge Delivery Services에 액세스하고 다음을 포함한 기본 사항을 숙지해야 합니다.
 
-[Edge Delivery Service 튜토리얼](/help/edge/developer/tutorial.md)이 완료되었습니다.
+* [Edge Delivery Service 튜토리얼](/help/edge/developer/tutorial.md)이 완료되었습니다.
 * [AEM Cloud Service 샌드박스](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)에 액세스할 수 있습니다.
 * [동일한 샌드박스 환경에서 Universal Editor를 활성화](/help/implementing/universal-editor/getting-started.md)했습니다.
 * [Edge Delivery Services를 사용한 AEM 작성을 위한 개발자 시작 안내서](/help/edge/aem-authoring/edge-dev-getting-started.md)의 안내서를 완료하셨습니다.
@@ -205,7 +205,7 @@ Adobe는 3단계 방식으로 블록을 개발할 것을 권장합니다.
 ```javascript
 export default function decorate(block) {
   const [quoteWrapper] = block.children;
-
+ 
   const blockquote = document.createElement('blockquote');
   blockquote.textContent = quoteWrapper.textContent.trim();
   quoteWrapper.replaceChildren(blockquote);
@@ -232,19 +232,19 @@ export default function decorate(block) {
     flex-direction: column;
     margin: 1rem 0;
 }
-
+ 
 .block.quote blockquote {
     margin: 16px;
     text-indent: 0;
 }
-
+ 
 .block.quote > div:last-child > div {
     margin: 0 16px;
     font-size: small;
     font-style: italic;
     position: relative;
 }
-
+ 
 .block.quote > div:last-child > div::after {
     content: "";
     display: block;
@@ -340,4 +340,3 @@ Edge Delivery Services 프로젝트를 사용한 AEM 작성을 위한 콘텐츠 
 >[!TIP]
 >
 >AEM as a Cloud Service를 콘텐츠 소스로 사용하여 AEM 작성에 활성화된 새로운 Edge Delivery Services 프로젝트를 만드는 방법에 대한 전체 연습을 보려면 [이 AEM GEM 웨비나](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)를 시청하십시오.
-
