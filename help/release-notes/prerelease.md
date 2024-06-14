@@ -5,9 +5,9 @@ exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1264'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -179,7 +179,7 @@ JavaDoc은 Maven Central에 게시됩니다.
 
    평소와 같이 개별 프로젝트에서는 종속성을 사용할 수 있습니다.
 
-1. 로컬 서버에 배포합니다.
+1. 로컬 서버에 배포하십시오.
 
 1. 로컬에서 의도한 대로 작동하는 경우 개발 분기에 코드를 커밋하고 Cloud Manager 비프로덕션 파이프라인을 사용하여 프리릴리스 채널을 구독하는 환경에 배포합니다.
 
