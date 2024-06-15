@@ -3,9 +3,9 @@ title: CDN 자격 증명 및 인증 구성
 description: Cloud Manager 구성 파이프라인을 사용하여 배포되는 구성 파일에서 규칙을 선언하여 CDN 자격 증명 및 인증을 구성하는 방법에 대해 알아봅니다.
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
-source-git-commit: 7a53f936aacfb3e5aa431f26e5346c1809f9c76f
+source-git-commit: e6059a1109ca93452f80440744338b809279db9b
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1065'
 ht-degree: 3%
 
 ---
@@ -42,7 +42,6 @@ data:
         type: edge
         edgeKey1: ${{CDN_EDGEKEY_052824}}
         edgeKey2: ${{CDN_EDGEKEY_041425}}
-        onFailure: log # optional, default: log, enum: log/block
     rules:
       - name: edge-auth-rule
         when: { reqProperty: tier, equals: "publish" }
@@ -61,7 +60,7 @@ data:
    * type - edge여야 합니다.
    * edgeKey1 - 해당 값은 비밀 토큰을 참조해야 하며, git에 저장되어서는 안 되고 대신 로 선언되어야 합니다. [Cloud Manager 환경 변수](/help/implementing/cloud-manager/environment-variables.md) 암호 유형. 서비스 적용 필드에서 모두를 선택합니다. 값(예: )이 권장됩니다.`${{CDN_EDGEKEY_052824}}`)는 추가된 날짜를 반영합니다.
    * edgeKey2 - 다음에 설명된 암호 회전에 사용됩니다. [회전 비밀 섹션](#rotating-secrets) 아래요. 하나 이상의 `edgeKey1` 및 `edgeKey2` 선언해야 합니다.
-   * OnFailure - 다음 중 하나의 작업을 정의합니다. `log` 또는 `block`, 요청이 다음 중 하나와 일치하지 않는 경우 `edgeKey1` 또는 `edgeKey2`. 대상 `log`, 요청 처리가 계속되는 동안 `block` 는 403 오류를 제공합니다. 다음 `log` 값은 CDN이 새 토큰을 올바르게 수락하는지 먼저 확인한 후에 로 변경할 수 있으므로 라이브 사이트에서 새 토큰을 테스트할 때 유용합니다. `block` 모드: 또한 잘못된 구성으로 인해 고객 CDN과 Adobe CDN 간의 연결이 끊길 가능성이 줄어듭니다.
+<!--   * OnFailure - defines the action, either `log` or `block`, when a request doesn't match either `edgeKey1` or `edgeKey2`. For `log`, request processing will continue, while `block` will serve a 403 error. The `log` value is useful when testing a new token on a live site since you can first confirm that the CDN is correctly accepting the new token before changing to `block` mode; it also reduces the chance of lost connectivity between the customer CDN and the Adobe CDN, as a result of an incorrect configuration. -->
 * 규칙: 사용해야 하는 인증자와 게시 및/또는 미리보기 계층 여부를 선언할 수 있습니다.  여기에는 다음이 포함됩니다.
    * name - 설명 문자열입니다.
    * when - 의 구문에 따라 규칙을 언제 평가해야 하는지 결정하는 조건 [트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 기사. 일반적으로 여기에는 현재 계층(예: 게시)의 비교가 포함되므로 모든 라이브 트래픽이 고객 CDN을 통한 라우팅으로 검증됩니다.
