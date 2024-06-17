@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c969b78f5e93e15d1f8f57dd409e58a6275069ce
+source-git-commit: 339dd64c602b2eed163f36f70089a50dd0d4a11c
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 94%
+source-wordcount: '521'
+ht-degree: 76%
 
 ---
 
@@ -49,6 +49,11 @@ Experience Manager Guides에서 수정된 새로운 기능과 향상된 기능�
 ### 알려진 문제 {#known-issues-16544}
 
 * GRANITE-52573: 이중 슬래시가 포함된 요청 `//` 거부되었습니다(상태 코드 400). 이 동작은 후속 유지 관리 릴리스에서 되돌려집니다.
+
+>[!NOTE]
+> AEM Engineering에서는 Analytics로 시작하는 현재 AEM 릴리스에 영향을 주는 론치 기능에 대한 회귀 문제를 16461. 이러한 회귀 현상으로 인해, 딥이 아닌 페이지를 포함하는 새 론치(새 릴리스가 적용된 후 생성됨)는 누락된 구성으로 인해 제대로 홍보되지 않습니다.
+> 환경이 영향을 받는 경우 고객 지원을 통해 누락된 구성을 식별하고 업데이트하는 셸 스크립트를 사용할 수 있습니다(내부 참조 SITES-22457).
+> 올바른 구성으로 새 론치를 만들 수 있도록 하는 보다 장기적인 수정 사항이 제공됩니다. 그때까지 온디맨드로 내부 패치 릴리스도 이용할 수 있습니다.
 
 ### 변경 사항 공지 {#change-notice-16544}
 
