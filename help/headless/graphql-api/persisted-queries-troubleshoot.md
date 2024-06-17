@@ -3,7 +3,7 @@ title: 지속 GraphQL 쿼리 문제 해결
 description: Adobe Experience Manager as a Cloud Service에서 지속되는 GraphQL 쿼리와 관련된 문제를 해결하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
-source-git-commit: 09ef5fb49ba638f888c9c101760ffa3c7d258fda
+source-git-commit: 736fbc28c800c1c181721df7e0d7feed143642d9
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 GraphQL 지속 쿼리는 종종 기본 콘텐츠 조각 모델의 변경으로 인해 더 이상 사용되지 않는 GraphQL 유형을 기반으로 하는 경우 실패할 수 있습니다.
 
-이러한 오류는 다양한 이유로 발생할 수 있습니다. 예를 들어 콘텐츠 조각 모델의 작성자(목록이 완전하지 않음)가 다음과 같은 경우
+이러한 오류는 다양한 이유로 발생할 수 있습니다. 예를 들어 콘텐츠 조각 모델의 작성자가 다음과 같은 경우 (목록은 완전하지 않음)이 있습니다.
 
 * 필드 제거 또는 이름 바꾸기
 * 업데이트: **모델 유형** 조각 참조에 허용되는 모델을 정의합니다.
