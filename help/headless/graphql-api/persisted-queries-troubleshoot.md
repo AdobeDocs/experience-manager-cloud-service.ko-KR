@@ -3,9 +3,9 @@ title: 지속 GraphQL 쿼리 문제 해결
 description: Adobe Experience Manager as a Cloud Service에서 지속되는 GraphQL 쿼리와 관련된 문제를 해결하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
-source-git-commit: 220e86f18e4a61304764753d8daecb68503e9fd0
+source-git-commit: 09ef5fb49ba638f888c9c101760ffa3c7d258fda
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '363'
 ht-degree: 0%
 
 ---
@@ -14,23 +14,22 @@ ht-degree: 0%
 
 다음 [작업 센터](/help/operations/actions-center.md) 다음을 포함: **GraphQL 지속 쿼리 오류** 경고. 즉, GraphQL 지속 쿼리 중 하나에서 오류가 발생할 때마다 알림을 받습니다.
 
-이러한 문제를 해결하고 해결할 수 있도록 다음 사항을 설명합니다. *가장 일반적이* 실패의 원인과 이를 수정하는 방법에 대한 단계.
+이 페이지에서는 이러한 문제를 해결하고 해결할 수 있도록 다음 사항을 다룹니다 *가장 일반적이* 실패의 원인과 이를 수정하는 방법에 대한 단계.
 
 ## 콘텐츠 조각 모델 변경 {#changes-to-content-fragment-model}
 
 GraphQL 지속 쿼리는 종종 기본 콘텐츠 조각 모델의 변경으로 인해 더 이상 사용되지 않는 GraphQL 유형을 기반으로 하는 경우 실패할 수 있습니다.
 
-이것은 다양한 이유로 발생할 수 있습니다. 예를 들어 콘텐츠 모델 작성자는
+이러한 오류는 다양한 이유로 발생할 수 있습니다. 예를 들어 콘텐츠 조각 모델의 작성자(목록이 완전하지 않음)가 다음과 같은 경우
 
 * 필드 제거 또는 이름 바꾸기
-* 조각 참조에 대해 정의된 허용된 모델을 업데이트합니다.
+* 업데이트: **모델 유형** 조각 참조에 허용되는 모델을 정의합니다.
 * 다른 모델에서 참조하는 모델 게시 취소
-* 기타 작업 및 이유
 
-이 문제를 해결하려면 다음 중 하나를 수행합니다.
+이러한 오류를 해결하려면 다음 중 하나를 수행해야 합니다.
 
-* 실패하는 지속 쿼리는 콘텐츠 조각 모델의 변경 사항을 수용하도록 업데이트해야 합니다
-* 또는 문제를 도입한 모델의 변경 사항을 되돌려야 합니다
+* 콘텐츠 조각 모델에 대한 변경 사항을 수용하지 못하는 지속 쿼리를 업데이트합니다.
+* 문제를 도입한 모델의 변경 사항을 되돌립니다.
 
 ## GraphQL 엔드포인트가 구성되지 않음 {#graphql-endpoint-not-configured}
 
@@ -48,7 +47,7 @@ GraphQL 지속 쿼리는 종종 기본 콘텐츠 조각 모델의 변경으로 �
 
 이 경우 쿼리는 다음을 반환합니다. `405` 오류 코드.
 
-이는 GraphQL에만 해당되는 것이 아닙니다. 참조 자료 문서 [405 오류가 허용되지 않음](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-20824.html).
+이러한 오류는 GraphQL에만 해당되지 않습니다. 참조 자료 문서 [405 오류가 허용되지 않음](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-20824).
 
 ## 디스패처에 의해 차단됨 {#blocked-dispatcher}
 
