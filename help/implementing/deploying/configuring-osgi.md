@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service에 대한 OSGi 구성
 description: 비밀 값 및 환경별 값이 있는 OSGi 구성
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
+source-git-commit: b4c87b79c714c408daea08e81fbe719bc9f5adf0
 workflow-type: tm+mt
-source-wordcount: '3269'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,7 @@ AEM 코드 프로젝트의 일부인 구성 파일을 통해 OSGi 구성 요소�
 
 ## OSGi 구성 파일 {#osgi-configuration-files}
 
-구성 변경 사항은 AEM Project의 코드 패키지(`ui.apps`)을 구성 파일(`.cfg.json`) 실행 모드별 구성 폴더에서 다음을 수행합니다.
+구성 변경 사항은 AEM Project의 코드 패키지(`ui.config`)을 구성 파일(`.cfg.json`) 실행 모드별 구성 폴더에서 다음을 수행합니다.
 
 `/apps/example/config.<runmode>`
 
@@ -44,6 +44,10 @@ osgi 구성 파일이 다음에서 정의됩니다.
 >[!NOTE]
 >
 >이전 버전의 AEM에서 지원하는 OSGi 구성 파일은 다음과 같은 다양한 파일 형식을 사용합니다. `.cfg`, `.config` 및 XML로 `sling:OsgiConfig` 리소스 정의. 이러한 형식은 다음으로 대체됩니다. `.cfg.json` OSGi 구성 형식입니다.
+
+>[!NOTE]
+>
+>OSGi 구성은 외부 위치에 저장되는 클라우드의 일반적인 AEM 인스턴스처럼 /apps 아래에 저장되지 않습니다. Cloud Manager 체크인 [개발자 콘솔](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) OSGi 구성을 보려면 다음을 수행하십시오.
 
 ## 실행 모드 확인 {#runmode-resolution}
 
