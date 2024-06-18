@@ -4,10 +4,10 @@ description: 이 페이지에서는 Cloud Acceleration Manager를 사용하고 �
 exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: d840e0beb8036ed8e543ac85850290e778371bbe
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 22%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -96,6 +96,10 @@ CAM(Cloud Acceleration Manager)의 랜딩 페이지를 사용하여 여러 프�
    ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/cam-4.png)
 
 1. 클릭 **삭제** 을 눌러 단계를 확인합니다.
+
+   >[!NOTE]
+   >마이그레이션 비활성 기간 1년 후 프로젝트가 자동으로 만료되고 삭제됩니다. 프로젝트 이름 또는 설명을 편집하거나, BPA 보고서를 업로드하거나, 마이그레이션 세트를 만들거나 편집하거나, 추출을 실행하거나, 수집을 실행하여 프로젝트가 활성 상태로 유지됩니다.
+
 
 ## 다음 단계 {#whats-next}
 
