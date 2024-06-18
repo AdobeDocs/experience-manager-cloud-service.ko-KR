@@ -2,11 +2,12 @@
 title: 의 현재 얼리 어답터 기능 [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 description: 의 현재 얼리 어답터 기능 [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
-Role: developer, user
-source-git-commit: e6ceb53ee821a1fde5e79c687a4445d6c18faf54
+Role: developer, user, author
+exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
+source-git-commit: f1ab365377af7a327dddcb9228b1a2f8610d49de
 workflow-type: tm+mt
 source-wordcount: '1731'
-ht-degree: 5%
+ht-degree: 22%
 
 ---
 
@@ -20,7 +21,7 @@ AEM Forms 얼리 어답터 프로그램(Early Adopter Program)은 다른 사용�
 
 ## 얼리 어답터 프로그램에 가입하는 방법?
 
-얼리어답터 혁신을 위해 얼리어답터 프로그램에 참여하고자 하는 경우, 공식 주소로 이메일을 보내십시오. [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  액세스 권한 요청. 모든 또는 특정 혁신에 대한 액세스를 요청할 수 있습니다.
+얼리어답터 혁신을 위해 얼리어답터 프로그램에 참여하고자 하는 경우, 공식 주소로 이메일을 보내십시오. [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  액세스 권한 요청. 전체 또는 특정 혁신에 대한 액세스를 요청할 수 있습니다.
 
 ## 얼리 어답터 혁신
 
@@ -121,17 +122,17 @@ AEM Forms to Marketo 커넥터는 Adobe Experience Manager(AEM)로 빌드된 웹
 
 시작할 준비가 되셨습니까? [적응형 Forms RTL 설명서](/help/forms/supporting-new-language-localization-core-components.md) 는 RTL 혁신을 사용하기 위한 단계별 안내서를 제공합니다.
 
-### 향상된 보트 보호 방법
+### 향상된 봇 보호 방법
 
-AEM Forms은 널리 사용되는 두 가지 CAPTCHA 솔루션인 Cloudflare Turnstile 및 hCaptcha에 대한 지원을 추가하여 보안 기능을 강화했습니다. 이렇게 하면 이미 사용 가능한 Google reCAPTCHA가 추가되어 사용자에게 봇 및 스팸 제출로부터 양식을 보호할 수 있는 더 많은 선택권과 유연성을 제공합니다.
+AEM Forms는 널리 사용되는 두 가지 CAPTCHA 솔루션인 Cloudflare Turnstile 및 hCaptcha에 대한 지원을 추가하여 보안 기능을 강화했습니다. 이미 사용 가능한 Google reCAPTCHA에 추가되어 봇 및 스팸 제출로부터 양식을 보호하는 데 있어 사용자에게 더 많은 선택권과 유연성을 제공합니다.
 
-* **Cloudflare 턴스타일**: 이 마찰 없는 CAPTCHA는 명시적인 상호 작용이 필요하지 않은 간단한 문제를 통해 사용자를 확인합니다. 양식과 원활하게 통합되어 사용자 경험이 개선됩니다.
-* **Captcha**: 이 개인정보 보호 중심 CAPTCHA는 데이터 개인정보 보호에 중점을 둔 사용자 친화적인 대안을 제공합니다. 보안과 사용자 경험 사이의 균형을 맞추는 것을 목표로 합니다.
-* **Google recaptcha**: AEM Forms은 안정적이고 잘 구축된 솔루션을 제공하여 reCAPTCHA v2 및 reCAPTCHA Enterprise를 계속 지원합니다.
+* **Cloudflare Turnstile**: 이 마찰 없는 CAPTCHA는 명시적인 상호 작용이 필요하지 않은 간단한 인증을 통해 사용자를 검증합니다. 양식에 완벽하게 통합되어 사용자 경험을 향상시킵니다.
+* **hCaptcha**: 개인 정보 보호에 중점을 둔 이 CAPTCHA는 데이터 개인 정보 보호에 초점을 맞춘 사용자 친화적인 대안을 제공합니다. 보안과 사용자 경험 사이의 균형을 맞추는 것을 목표로 합니다.
+* **Google reCAPTCHA**: AEM Forms는 reCAPTCHA v2와 reCAPTCHA Enterprise를 지속적으로 지원하여 안정적이고 잘 정립된 솔루션을 제공합니다.
 
-AEM Forms에서는 여러 CAPTCHA 옵션을 제공하여 특정 요구 사항에 가장 적합한 솔루션을 선택할 수 있도록 했습니다.
+AEM Forms는 다양한 CAPTCHA 옵션을 제공하여 특정 요구 사항에 가장 적합한 솔루션을 선택할 수 있도록 지원합니다.
 
-이러한 CAPTCHA 솔루션을 적응형 Forms과 통합할 준비가 되셨습니까? 설명서는 각각에 대한 자세한 지침을 제공합니다. [Cloudflare 턴스타일](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [Captcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), 및 [Google recaptcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+이러한 CAPTCHA 솔루션을 적응형 양식과 통합할 준비가 되셨습니까? 설명서에는 [Cloudflare Turnstile](https://experienceleague.adobe.com/kr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/kr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) 및 [Google reCAPTCHA](https://experienceleague.adobe.com/kr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components)에 대한 자세한 지침이 있습니다.
 
 ### Doc Assurance API
 
@@ -155,13 +156,13 @@ AEM Forms Doc Assurance API는 AEM Forms Cloud Service 커뮤니케이션 API �
 
 ### Forms 서비스 API
 
-Forms 서비스는 데이터 캡처를 위한 대화형 PDF forms을 생성합니다. 또한 기존 대화형 PDF 양식에서 데이터를 가져오거나 내보내고 제출된 데이터를 확인하는 데 사용할 수도 있습니다. 다음은 기능의 분류입니다.
+Forms 서비스는 데이터 캡처를 위한 대화형 PDF 양식을 생성합니다. 또한 기존 대화형 PDF 양식에서 데이터를 가져오거나 내보내고 제출된 데이터를 확인하는 데 사용할 수도 있습니다. 기능의 분류는 다음과 같습니다.
 
-* **Forms 렌더링**: AEM Forms Designer 및 선택적으로 XML 데이터를 사용하여 만든 템플릿에서 대화형 PDF 양식을 생성합니다. 이는 필수적으로 선택적으로 데이터로 미리 채워진 입력 가능한 PDF 양식을 생성한다.
+* **Forms 렌더링**: AEM Forms Designer를 사용하여 작성한 템플릿과 선택적으로 XML 데이터에서 대화형 PDF 양식을 생성합니다. 이를 통해 선택적으로 데이터를 미리 채운 채울 수 있는 PDF 양식을 기본적으로 생성합니다.
 
-* **데이터 추출 및 가져오기**: 기존 PDF 양식으로 데이터를 가져오고 채워진 PDF 양식에서 데이터를 추출합니다. XDP 및 XML 데이터 형식이 모두 지원되며, XFA가 아닌 PDF forms(AcroForms라고도 함)으로 가져오기는 FDF 및 XFDF 데이터를 추가로 지원합니다.
+* **데이터 추출 및 가져오기**: 기존 PDF 양식으로 데이터를 가져올 뿐만 아니라 채워진 PDF 양식에서 데이터를 추출할 수 있습니다. XDP 및 XML 데이터 형식이 모두 지원되며, XFA가 아닌 PDF 형식(AcroForms라고도 함)으로 가져오기는 FDF 및 XFDF 데이터를 추가로 지원합니다.
 
-* **데이터 유효성 검사**: AEM Forms Designer를 사용하여 만든 템플릿에 대해 제출된 데이터의 유효성을 XDP 또는 XML 형식으로 확인합니다.
+* **데이터 유효성 검사**: AEM Forms Designer를 사용하여 만든 템플릿에 대해 XDP 또는 XML 형식으로 제출된 데이터의 유효성을 검사합니다.
 
 ## 추가 참조
 
