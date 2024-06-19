@@ -6,9 +6,9 @@ seo-description: The repository browser provides a read-only view into the repos
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 9d1b51b465a148551de93f8180b056b8e7752db5
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '871'
 ht-degree: 1%
 
 ---
@@ -33,15 +33,13 @@ ht-degree: 1%
 
 AEM as a Cloud Service 개발자 콘솔 또는 저장소 브라우저에 액세스하려면 다음 조건을 충족해야 합니다
 
-AEM as a Cloud Service Developer Console에 액세스하려면:
+AEM as a Cloud Service Developer Console에 액세스하려면 다음을 참조하십시오. [개발자 콘솔 액세스](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
 
-* 프로덕션 프로그램의 경우 사용자는 **Cloud Manager - 개발자 역할** Adobe Admin Console에서
-* 샌드박스 프로그램의 경우 AEM에 as a Cloud Service으로 액세스할 수 있도록 하는 제품 프로필을 가진 모든 사용자가 사용할 수 있습니다.
+저장소 브라우저에 액세스하기 위한 요구 사항은 AEM as a Cloud Service Developer Console(위에 지정)과 동일합니다. 특정 인스턴스에 대한 저장소 브라우저 컨텐츠를 보려면 다음과 같이 하십시오.
 
-저장소 브라우저에 액세스하려면 다음을 수행하십시오.
+* 작성자 인스턴스: 다음에 대한 AEM 사용자 제품 프로필을 가진 사용자 **작성자 인스턴스** 읽기 액세스 권한을 최소화하면서 저장소 브라우저를 볼 수 있습니다. 저장소를 검색할 때 사용자의 권한이 유지됩니다. AEM 관리자 제품 프로필이 있는 사용자는 전체 읽기 액세스 권한이 있는 저장소 브라우저를 볼 수 있습니다.
 
-* 사용자에게 다음이 있어야 합니다. **Cloud Manager - 개발자** 작성자 및 게시 인스턴스를 볼 수 있는 AEM as a Cloud Service 개발자 콘솔의 역할입니다.
-* 또한 작성자의 경우 AEM 사용자 제품 프로필을 가진 사용자는 최소한의 읽기 권한으로 저장소 브라우저를 볼 수 있습니다. 저장소를 탐색할 때는 사용자의 권한이 유지됩니다. AEM 관리자 제품 프로필이 있는 사용자는 전체 읽기 액세스 권한이 있는 저장소 브라우저를 볼 수 있습니다.
+* 인스턴스 게시: 의 AEM 사용자 제품 프로필을 가진 사용자 **인스턴스 게시** 읽기 액세스 권한을 최소화하면서 저장소 브라우저를 볼 수 있습니다. 해당 제품 프로필 세트가 없으면 사용자는 익명 사용자로 탐색하고 제한된 권한으로 인해 일부 경로가 표시되지 않습니다.
 
 사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
 

@@ -4,7 +4,7 @@ description: Adobe Experience Manager as a Cloud Service의 Maven 프로젝트�
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 520ab0229b4f00a1de981209bf26059b0d00c3da
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 2%
@@ -164,7 +164,7 @@ Maven 프로젝트에 대한 저장소 구조 패키지를 생성하려면 다�
 + 코드 패키지 A가에 배포 `/apps/a`
 + 코드 패키지 B가에 배포 `/apps/a/b`
 
-코드 패키지 A의 코드 패키지 B에서 패키지 수준 종속성이 설정되지 않은 경우 코드 패키지 B가 먼저 로 배포될 수 있습니다. `/apps/a`. 그런 다음 뒤에 배포되는 코드 패키지 B가 옵니다. `/apps/a`. 그 결과 이전에 설치된 가 제거됩니다 `/apps/a/b`.
+코드 패키지 A의 코드 패키지 B에서 패키지 수준 종속성이 설정되지 않은 경우 코드 패키지 B가 먼저 로 배포될 수 있습니다. `/apps/a`. 그런 다음 뒤에 코드 패키지 A가 나오는데, 이 패키지가에 배포됩니다. `/apps/a`, 그 결과 이전에 설치된 가 제거됩니다 `/apps/a/b`.
 
 이 경우:
 
