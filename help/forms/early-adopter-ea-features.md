@@ -4,9 +4,11 @@ description: 의 현재 얼리 어답터 기능 [!DNL Adobe Experience Manager F
 Feature: Introduction
 Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
-source-git-commit: f1ab365377af7a327dddcb9228b1a2f8610d49de
+feature: Adaptive Forms
+role: Admin, Developer, User
+source-git-commit: 2766a351938062127babb01d5ed35bd37b705c21
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1733'
 ht-degree: 22%
 
 ---
@@ -73,9 +75,9 @@ AEM Forms Workfront Fusion Connector를 사용하면 적응형 양식 제출 시
 대화형 Forms은 새로운 모습 그 이상입니다. 사용자 경험을 위한 획기적인 기능입니다.  참여를 확대하고, 양식 포기를 줄이고, 웹 사이트와 상호 작용하여 모든 사용자에게 보다 즐거운 경험을 선사합니다.
 
 
-### Edge Delivery Services을 위한 AEM 기반 작성
+### Edge Delivery Services을 위한 WYSIWYG 작성
 
-AEM 기반 작성은 이러한 양식을 빌드하고 Edge Delivery Services에 게시할 수 있는 WYSIWYG 인터페이스(적응형 Forms 편집기)를 제공합니다. AEM 기반 작성은 의 모든 기능을 제공합니다. [문서 기반 작성](/help/edge/docs/forms/overview.md#document-based-authoring-features), 그리고 다양한 추가 기능:
+WYSIWYG 작성은 Edge Delivery Services에 적응형 양식을 작성하고 게시할 수 있는 WYSIWYG 인터페이스(범용 편집기 및 적응형 Forms 편집기)를 제공합니다. WYSIWYG 작성은 의 모든 기능을 제공합니다. [문서 기반 작성](/help/edge/docs/forms/overview.md#document-based-authoring-features), 그리고 다양한 추가 기능:
 
 * 복잡한 로직을 생성하기 위한 고급 규칙 편집기.
 * 사용자 정의 기능을 위한 서버측 확장성.
