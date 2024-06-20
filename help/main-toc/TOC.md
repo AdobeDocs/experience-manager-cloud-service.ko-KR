@@ -230,7 +230,7 @@ ht-degree: 99%
       + [Headless 콘텐츠 만들기](/help/trials/headless/create-content.md)
       + [GraphQL API를 통한 콘텐츠 추출](/help/trials/headless/extract-content.md)
       + [JavaScript로 JSON 콘텐츠 가져오기](/help/trials/headless/code-playground.md)
-      + [Universal Editor로 인라인 편집](/help/trials/headless/universal-editor.md)
+      + [범용 편집기로 인라인 편집](/help/trials/headless/universal-editor.md)
 + AEM as a Cloud Service 마이그레이션 여정 {#migration-journey}
    + [AEM as a Cloud Service 이동 시작하기](/help/journey-migration/getting-started.md)
    + [준비 단계](/help/journey-migration/readiness.md)
@@ -324,9 +324,9 @@ ht-degree: 99%
          + [키보드 단축키](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
          + [스타일 시스템](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [다시 실행 실행 취소 제한 사항](/help/sites-cloud/authoring/page-editor/undo-redo.md)
-      + Universal Editor {#universal-editor}
-         + [Universal Editor로 콘텐츠 작성](/help/sites-cloud/authoring/universal-editor/authoring.md)
-         + [Universal Editor로 콘텐츠 게시](/help/sites-cloud/authoring/universal-editor/publishing.md)
+      + 범용 편집기 {#universal-editor}
+         + [범용 편집기로 콘텐츠 작성](/help/sites-cloud/authoring/universal-editor/authoring.md)
+         + [범용 편집기로 콘텐츠 게시](/help/sites-cloud/authoring/universal-editor/publishing.md)
       + 조각 {#fragments}
          + [콘텐츠 조각](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [경험 조각](/help/sites-cloud/authoring/fragments/experience-fragments.md)
@@ -991,7 +991,7 @@ ht-degree: 99%
          + [Adobe 저장소 추가](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [비공개 저장소 추가](/help/implementing/cloud-manager/managing-code/private-repositories.md)
          + [저장소 액세스](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-         + [Git 하위 모듈 지원](/help/implementing/cloud-manager/managing-code/git-submodules.md)
+         + [git 하위 모듈 지원](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Cloud Manager와 함께 git 사용](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [여러 저장소 사용](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [엔터프라이즈 개발 팀 설정](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
@@ -1092,7 +1092,7 @@ ht-degree: 99%
             + [사용자 정의 조건자 평가자 구현](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [사용자 정의 오류 페이지](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM 노드 유형](/help/implementing/developing/introduction/node-types.md)
-      + Universal Editor {#universal-editor}
+      + 범용 편집기 {#universal-editor}
          + [소개](/help/implementing/universal-editor/introduction.md)
          + [사용 사례](/help/implementing/universal-editor/use-cases.md)
          + [속성 및 항목 유형](/help/implementing/universal-editor/attributes-types.md)

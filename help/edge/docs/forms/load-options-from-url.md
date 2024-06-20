@@ -1,17 +1,18 @@
 ---
-title: URL 또는 AEM Forms as a Cloud Service Edge Delivery Services의 다른 시트에서 드롭다운 목록 옵션 로드
-description: 드롭다운 목록 옵션은 별도의 스프레드시트에 포함되어, 제공된 URL을 통해 기본 스프레드시트로 가져옵니다.
+title: AEM Forms as a Cloud Service용 Edge Delivery Services에 대한 URL 또는 다른 시트의 드롭다운 목록 옵션 로드
+description: 드롭다운 목록 옵션은 별도의 스프레드시트에 포함되며, 이후 제공된 URL을 통해 기본 스프레드시트로 가져옵니다.
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
-source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '469'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 
-# AEM Forms as a Cloud Service Edge Delivery Services을 위한 URL 또는 다른 시트의 옵션
+# AEM Forms as a Cloud Service용 Edge Delivery Services에 대한 URL 또는 다른 시트의 옵션
 
 양식의 사전 정의 옵션 중에는 사용자가 선택할 수 있는 드롭다운 메뉴가 포함되어 있는 경우가 많습니다. 이러한 옵션은 일반적으로 양식 자체에서 정의되지만 긴 목록을 관리하는 것이 번거로울 수 있습니다. 이 안내서에서는 URL을 통해 개별 스프레드시트에서 드롭다운 옵션을 로드하여 양식 작성을 향상시키는 방법에 대해 설명합니다.
 
