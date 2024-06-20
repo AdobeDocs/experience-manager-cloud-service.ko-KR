@@ -2,9 +2,11 @@
 title: 콘텐츠 검색 및 색인화
 description: AEM as a Cloud Service으로 콘텐츠 검색 및 색인화에 대해 알아봅니다.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Operations
+role: Admin
+source-git-commit: 65e67225a6a91d871218c12c4696dd281787cd58
 workflow-type: tm+mt
-source-wordcount: '2442'
+source-wordcount: '2449'
 ht-degree: 29%
 
 ---
@@ -83,7 +85,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!NOTE]
 >
->색인 정의가 포함된 모든 콘텐츠 패키지는에 있는 콘텐츠 패키지의 속성 파일에 다음 속성으로 설정되어야 합니다. `<package_name>/META-INF/vault/properties.xml`:
+>색인 정의가 포함된 모든 콘텐츠 패키지는에 다음 속성이 설정되어 있어야 합니다. `properties.xml` 콘텐츠 패키지의 파일입니다. `properties.xml` 는 기본적으로 새 패키지에서 생성되며 다음 위치에 있습니다. `<package_name>/META-INF/vault/properties.xml`:
 >
 > * `noIntermediateSaves=true`
 >
