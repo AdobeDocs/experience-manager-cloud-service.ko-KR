@@ -4,10 +4,10 @@ description: AEM as a Cloud Service에 대해 VPN 또는 유연한/전용 이그
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 6ae2738bcde05ef546c98cddd23d11f033b2a170
+source-git-commit: a21a0cda116077a3752f33aaff6dc6c180b855aa
 workflow-type: tm+mt
-source-wordcount: '5729'
-ht-degree: 93%
+source-wordcount: '5744'
+ht-degree: 92%
 
 ---
 
@@ -238,7 +238,7 @@ Adobe 조직의 모든 프로그램 및 각 프로그램의 모든 환경에 동
 
 >[!INFO]
 >
->전용 이그레스 IP 주소에서는 Splunk 전달 기능을 사용할 수 없습니다.
+>전용 이그레스 IP가 구성된 경우 Splunk 전달은 동적 이그레스 범위를 계속 사용합니다. 전용 이그레스 IP를 사용하도록 Splunk 전달을 구성할 수 없습니다.
 
 ### UI 구성 {#configuring-dedicated-egress-provision-ui}
 
