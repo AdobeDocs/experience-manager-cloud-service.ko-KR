@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: 639f1a35369bfe20931e2bbf08009a72696964d6
 workflow-type: tm+mt
-source-wordcount: '5034'
+source-wordcount: '5040'
 ht-degree: 99%
 
 ---
@@ -82,6 +82,7 @@ ht-degree: 99%
    + AEMaaCS 유지 관리 릴리스 정보 {#maintenance}
       + [현재 유지 관리 릴리스 정보](/help/release-notes/maintenance/latest.md)
       + 2024 {#2024}
+         + [2024.6.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2024/2024-6-0.md)
          + [2024.5.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2024/2024-5-0.md)
          + [2024.4.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2024/2024-4-0.md)
          + [2024.3.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2024/2024-3-0.md)
@@ -425,7 +426,7 @@ ht-degree: 99%
       + [Adobe Target으로 콘텐츠 조각 내보내기](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Adobe Target으로 경험 조각 내보내기](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign과 통합](/help/sites-cloud/integrating/campaign.md)
-   + [AEM에 대한 실시간 사용 모니터링 as a Cloud Service](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)
+   + [AEM as a Cloud Service용 실제 사용 모니터링](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [개요 및 새로운 기능](/help/assets/overview.md)
    + [ [!DNL Assets] as a [!DNL Cloud Service] 주요 변경 사항](/help/assets/assets-cloud-changes.md)
@@ -507,7 +508,7 @@ ht-degree: 99%
       + Dynamic Media 여정: 기본 사항 {#dm-journey}
          + [1부: Dynamic Media 소개 - 사용 사례 - 자산이 시스템을 통해 이동하는 방법](/help/assets/dynamic-media/dm-journey-part1.md)
          + [2부: Dynamic Media URL의 구조 - 이미지 사전 설정의 기본 사항 - 이미지 세트, 스핀 세트 및 혼합 미디어 세트 정보](/help/assets/dynamic-media/dm-journey-part2.md)
-         + [Dynamic Media 우수 사례](/help/assets/dynamic-media/dm-best-practices.md)
+         + [Dynamic Media 모범 사례](/help/assets/dynamic-media/dm-best-practices.md)
       + [Experience League의 Dynamic Media 뉴스레터 아카이브](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Dynamic Media 설정](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Dynamic Media를 사용하여 작업](/help/assets/dynamic-media/dynamic-media.md)
@@ -988,14 +989,14 @@ ht-degree: 99%
          + [Maven 프로젝트 버전 처리](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Cloud Manager에서 저장소 관리](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Adobe 저장소 추가](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
-         + [개인 저장소 추가](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+         + [비공개 저장소 추가](/help/implementing/cloud-manager/managing-code/private-repositories.md)
          + [저장소 액세스](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-         + [git 하위 모듈 지원](/help/implementing/cloud-manager/managing-code/git-submodules.md)
+         + [Git 하위 모듈 지원](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Cloud Manager와 함께 git 사용](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [여러 저장소 사용](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [엔터프라이즈 개발 팀 설정](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-         + [GitHub 구성 확인](/help/implementing/cloud-manager/managing-code/github-check-config.md)
-         + [GitHub 확인 주석](/help/implementing/cloud-manager/managing-code/github-annotations.md)
+         + [GitHub 검사 구성](/help/implementing/cloud-manager/managing-code/github-check-config.md)
+         + [GitHub 검사 주석](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [환경 변수](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI-CD 파이프라인 {#cicd-pipelines}
          + [소개](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)

@@ -4,7 +4,7 @@ description: 예가 포함된 속성 레일에서 유니버설 편집기가 편�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6886d3e669b06b63d2225348e95e00806db1b8f5
 workflow-type: tm+mt
 source-wordcount: '1146'
 ht-degree: 11%
@@ -103,7 +103,7 @@ ht-degree: 11%
 | [숫자](#number) | `number` |
 | [라디오 그룹](#radio-group) | `radio-group` |
 | [참조](#reference) | `reference` |
-| [리치 텍스트](#rich-text) | `rich-text` |
+| [리치 텍스트](#rich-text) | `richtext` |
 | [선택](#select) | `select` |
 | [탭](#tab) | `tab` |
 | [텍스트](#text) | `text` |
