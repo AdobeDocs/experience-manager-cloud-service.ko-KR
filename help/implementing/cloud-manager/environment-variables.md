@@ -5,10 +5,10 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: ed166aa753d4fb5c6fb1573032186e3e14f375df
 workflow-type: tm+mt
 source-wordcount: '986'
-ht-degree: 80%
+ht-degree: 78%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 80%
 1. 다음과 같은 변수 세부 정보를 입력합니다.
    * **이름**
    * **값**
-   * **적용된 서비스** - 변수가 적용되는 서비스(저자/게시/미리보기) 또는 모든 서비스에 적용되는지 여부를 정의합니다.
+   * **서비스 적용됨** - 변수가 적용되는 서비스(작성자/Publish/미리보기) 또는 모든 서비스에 적용되는지 여부를 정의합니다.
    * **유형** - 변수가 일반 변수인지 비밀 변수인지 정의합니다.
 
    ![변수 추가](assets/add-variable.png)
