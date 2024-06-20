@@ -10,7 +10,8 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: c24b017e60363b3b6d79105122bdbaab138c701d
+exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
+source-git-commit: 3375ffbb18c312e5df0050050ae16d75a12243e6
 workflow-type: tm+mt
 source-wordcount: '3574'
 ht-degree: 0%
@@ -142,7 +143,6 @@ Dynamic Media에서 이미지 사전 설정을 정기적으로 사용하면 이�
   이렇게 하면 검색 엔진이 이미지 컨텍스트를 이해하고 SEO를 개선하는 데 도움이 됩니다. Google에서는 파일 이름에서 밑줄 또는 공백보다 하이픈을 선호합니다. 또한 파일 이름에 단어를 연결하지 마십시오.
 * **사용자 정의 도메인:**
 브랜드 인지도와 신뢰를 강화하기 위해 회사 또는 브랜드 이름을 포함하는 사용자 정의 도메인을 구현합니다. 예:
-
    * `http://images.mycompany.com/is/image/companyname/` 사용
    * *피함* `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
 * **SEO 친화적인 폴더 구조:**
@@ -351,4 +351,3 @@ While `avif` 는 더 나은 압축을 제공하는 최신 형식이며 아직 �
 스마트 이미징을 사용하면 각 사용자의 검색 환경에 맞게 가능한 가장 효율적인 방식으로 이미지가 제공되도록 할 수 있습니다. 이 접근법은 프로세스를 단순화하고 이미지 로딩 시간 및 전반적인 사용자 경험의 관점에서 개선된 성능으로 이어질 수 있다.
 
 자세히 알아보시겠습니까? 다음으로 이동 [스마트 이미징](/help/assets/dynamic-media/imaging-faq.md).
-
