@@ -2,7 +2,9 @@
 title: Screens Services Provider로 이동
 description: 이 페이지에서는 Screens Services Provider로 이동하는 방법에 대해 설명합니다.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
+feature: Administering Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 6%
@@ -36,7 +38,7 @@ ht-degree: 6%
    ![이미지](/help/screens-cloud/assets/configure/configure-screens0.png)
 
 3. 설정 편집 대화 상자에 다음 세부 정보를 입력합니다.
-   * **Url 게시** - AEM 게시 URL(예: `https://publish-p12345-e12345.adobeaemcloud.com`)
+   * **Publish Url** - AEM 게시 URL(예: `https://publish-p12345-e12345.adobeaemcloud.com`)
    * **작성자 Url** - AEM 작성자 URL(예: `https://author-p12345-e12345.adobeaemcloud.com`)
 
    >[!NOTE]

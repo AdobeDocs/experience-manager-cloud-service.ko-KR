@@ -10,7 +10,8 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 3%
@@ -47,7 +48,7 @@ AEM 사이트 및 AEM CIF 핵심 구성 요소를 전용 스토어 보기에 연
 
    >[!TIP]
    >
-   > 상거래 카탈로그는 ID 또는 UID를 사용하여 해결할 수 있습니다. UID는 Adobe Commerce 2.4.2에서 도입되었습니다. 상거래 백엔드가 버전 2.4.2 이상의 GraphQL 스키마를 지원하는 경우에만 활성화하십시오.
+   > Commerce 카탈로그는 ID 또는 UID를 사용하여 해결할 수 있습니다. UID는 Adobe Commerce 2.4.2에서 도입되었습니다. 상거래 백엔드가 버전 2.4.2 이상의 GraphQL 스키마를 지원하는 경우에만 활성화하십시오.
 
 4. AEM 사이트에 하위 구성 할당
 

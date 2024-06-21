@@ -2,9 +2,11 @@
 title: 제품 경험 빌드
 description: 다양한 채널에서 사용할 수 있는 제품 콘텐츠를 빌드하여 몰입형 쇼핑 경험을 만드는 방법을 알아봅니다.
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '1157'
 ht-degree: 2%
 
 ---
@@ -15,7 +17,7 @@ ht-degree: 2%
 
 ## 지금까지의 스토리 {#story-so-far}
 
-Adobe Experience Manager(AEM) Content and Commerce 여정의 이전 문서에서는 [단계적 제품 카탈로그 경험 관리](staged-catalog.md)를 통해 단계적 제품 카탈로그 경험을 관리하는 방법을 배웠습니다.
+Adobe Experience Manager(AEM) 컨텐츠 및 Commerce 여정의 이전 문서에서는 [단계적 제품 카탈로그 경험 관리](staged-catalog.md)를 통해 단계적 제품 카탈로그 경험을 관리하는 방법을 배웠습니다.
 
 ## 목표 {#objective}
 
@@ -65,7 +67,7 @@ AEM에서 다양한 유형의 콘텐츠를 만들고 제품 카탈로그에 연�
 
 이전 모듈에서는 여러 제품 카탈로그 템플릿을 사용하여 작업하는 방법을 배웠습니다. 여러 템플릿을 사용하는 것이 여러 템플릿을 만드는 좋은 방법이지만, 필요하지 않은 경우가 많습니다. 종종 개별 콘텐츠에 대한 자리 표시자와 함께 동일한 템플릿을 사용할 수 있습니다. CIF에서는 콘텐츠 조각 및 경험 조각에 대한 자리 표시자를 지원합니다.
 
-경험 조각 자리 표시자부터 시작하겠습니다. AEM 편집기에서 제품 템플릿을 엽니다. 을(를) 끌어다 놓습니다. **상거래 경험 조각** 구성 요소를 템플릿에 적용한 다음 구성 대화 상자를 엽니다.
+경험 조각 자리 표시자부터 시작하겠습니다. AEM 편집기에서 제품 템플릿을 엽니다. 을(를) 끌어다 놓습니다. **Commerce 경험 조각** 구성 요소를 템플릿에 적용한 다음 구성 대화 상자를 엽니다.
 
 ![pem 플레이스홀더](assets/pem-placeholder.png)
 
@@ -77,7 +79,7 @@ AEM에서 다양한 유형의 콘텐츠를 만들고 제품 카탈로그에 연�
 
 ![pem xf](assets/pem-xf.png)
 
-이제 을(를) 끌어서 놓습니다 **Commerce 콘텐츠 조각** 구성 요소를 템플릿에 추가하고 구성 대화 상자를 엽니다.
+이제 을(를) 끌어서 놓습니다 **Commerce 컨텐츠 조각** 구성 요소를 템플릿에 추가하고 구성 대화 상자를 엽니다.
 
 ![pem CF 대화 상자](assets/pem-dialog-cf.png)
 
@@ -97,22 +99,22 @@ AEM에서 다양한 유형의 콘텐츠를 만들고 제품 카탈로그에 연�
 
 ![pem 제품 페이지](assets/pem-page-product.png)
 
-해당 제품에 대한 관련 컨텐츠를 만든 경우 에셋 사이드바에서 로 전환합니다. **연계된 상거래 컨텐츠**. 이 탭에는 이 제품과 연결된 모든 AEM 콘텐츠가 표시됩니다. 이제 관련 콘텐츠를 사용하여 페이지를 빠르게 장식할 수 있습니다.
+해당 제품에 대한 관련 컨텐츠를 만든 경우 에셋 사이드바에서 로 전환합니다. **연결된 Commerce 컨텐츠**. 이 탭에는 이 제품과 연결된 모든 AEM 콘텐츠가 표시됩니다. 이제 관련 콘텐츠를 사용하여 페이지를 빠르게 장식할 수 있습니다.
 
 ![pem 강화 페이지](assets/pem-page-enriched.png)
 
 ## 여정의 끝 {#end-of-journey}
 
-축하합니다! AEM Content and Commerce 개발자 여정을 완료했습니다! 이제 다음과 같은 작업을 수행할 수 있습니다.
+축하합니다! AEM Content 및 Commerce 개발자 여정을 완료했습니다! 이제
 
 * AEM 콘텐츠를 제품 카탈로그 개체에 연결하는 방법 이해
 * 자리 표시자를 사용하여 제품 및 범주 페이지를 개별적으로 보강
 * 콘텐츠를 구매 가능하게 하고 관련 콘텐츠 탭을 사용하는 방법을 이해할 수 있습니다.
 
-이제 AEM Content 및 Commerce를 사용하여 제품 경험을 관리할 준비가 되었습니다. 그러나 AEM Content 및 Commerce에는 다양한 추가 옵션이 있습니다. 에서 사용할 수 있는 몇 가지 추가 리소스를 확인하십시오. [추가 리소스 섹션](#additional-resources) 여기에서 이 여정에서 확인한 기능들에 대해 자세히 알아볼 수 있습니다.
+이제 AEM Content 및 Commerce을 사용하여 제품 경험을 관리할 준비가 되었습니다. 그러나 AEM Content 및 Commerce에는 다양한 추가 옵션이 있습니다. 에서 사용할 수 있는 몇 가지 추가 리소스를 확인하십시오. [추가 리소스 섹션](#additional-resources) 여기에서 이 여정에서 확인한 기능들에 대해 자세히 알아볼 수 있습니다.
 
 ## 추가 리소스 {#additional-resources}
 
-* [상거래 경험 작성](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
+* [Commerce 경험 작성](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
 * [제품 관리실](/help/commerce-cloud/authoring/product-cockpit.md)
 * [콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)

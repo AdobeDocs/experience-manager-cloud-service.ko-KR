@@ -2,10 +2,12 @@
 title: 환경 만들기
 description: 이 페이지에서는 Cloud Manager for Screens as a Cloud Service으로 환경을 만드는 방법에 대해 설명합니다.
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Screens Deployments
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '194'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 

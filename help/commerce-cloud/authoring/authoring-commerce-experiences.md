@@ -2,7 +2,9 @@
 title: Commerce 경험 작성
 description: 컨텍스트를 종료하지 않고 제품 데이터 및 콘텐츠에 액세스하여 상거래 관련 경험을 효율적으로 작성하고 구축하는 방법을 알아봅니다.
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: 77350822c261371e6eda1fd10d02dcd905a5dd6e
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '721'
 ht-degree: 0%

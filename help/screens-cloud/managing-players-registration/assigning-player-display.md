@@ -2,10 +2,12 @@
 title: Screens의 디스플레이에 as a Cloud Service 플레이어 할당
 description: Screens의 디스플레이에 as a Cloud Service으로 플레이어를 할당하는 방법을 알아봅니다.
 exl-id: d5f5b087-d17a-427f-9bf2-7451eb4e1df6
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+feature: Developing Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '224'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 

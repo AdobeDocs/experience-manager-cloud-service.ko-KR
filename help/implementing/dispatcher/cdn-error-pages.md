@@ -3,7 +3,8 @@ title: CDN 오류 페이지 구성
 description: Amazon S3 또는 Azure Blob Storage와 같은 자체 호스팅 저장소에서 정적 파일을 호스팅하고 Cloud Manager 구성 파이프라인을 사용하여 배포된 구성 파일에서 참조하여 기본 오류 페이지를 재정의하는 방법에 대해 알아봅니다.
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
-source-git-commit: 395e2faa6cd2a3430ce00208a4d904fe8e0c2333
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 5%

@@ -10,10 +10,11 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '2172'
-ht-degree: 3%
+source-wordcount: '2059'
+ht-degree: 2%
 
 ---
 
@@ -39,7 +40,7 @@ ht-degree: 3%
 
 제품 페이지의 URL을 구성하고 다음 옵션을 지원합니다.
 
-* `{{page}}.html/{{sku}}.html#{{variant_sku}}` (기본값)
+* `{{page}}.html/{{sku}}.html#{{variant_sku}}`(기본값)
 * `{{page}}.html/{{sku}}/{{url_key}}.html#{{variant_sku}}`
 * `{{page}}.html/{{sku}}/{{category}}/{{url_key}}.html#{{variant_sku}}`
 * `{{page}}.html/{{sku}}/{{url_path}}.html#{{variant_sku}}`
@@ -63,7 +64,7 @@ ht-degree: 3%
 
 카테고리 또는 제품 목록 페이지의 URL을 구성하고 다음 옵션을 지원합니다.
 
-* `{{page}}.html/{{url_path}}.html` (기본값)
+* `{{page}}.html/{{url_path}}.html`(기본값)
 * `{{page}}.html/{{url_key}}.html`
 
 필요한 경우 [Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia):
@@ -90,7 +91,7 @@ CIF 구성에서 편집기는 대체 제품 또는 카테고리 페이지 URL �
 
 >[!NOTE]
 >
-> URL 형식의 저장소별 구성은 [CIF 코어 구성 요소 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) 최신 버전의 Adobe Experience Manager Content 및 Commerce 추가 기능을 사용할 수 있습니다.
+> URL 형식의 저장소별 구성은 [CIF 코어 구성 요소 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) 최신 버전의 Adobe Experience Manager 컨텐츠 및 Commerce 추가 기능을 사용할 수 있습니다.
 
 ## 카테고리 인식 제품 페이지 URL {#context-aware-pdps}
 
@@ -242,7 +243,7 @@ _**URL 길이와 인코딩된 정보 간의 균형.**_
 
 반면 검색 엔진은 새 URL 형식으로 모든 카탈로그 페이지를 다시 캡처하는 데 시간이 필요합니다. 이 프로세스를 지원하고 최종 사용자 경험을 개선하기 위해 사용자를 이전 URL에서 새 URL로 전달하는 리디렉션을 제공하는 것이 좋습니다.
 
-이에 대한 한 가지 접근 방식은 프로덕션 전자 상거래 백엔드에 단계 환경을 연결하고 새 URL 형식을 사용하도록 구성하는 것입니다. 나중에 [cif 제품 사이트 맵 생성기를 통해 생성된 제품 사이트 맵](../../overview/seo-and-url-management.md) 스테이지와 프로덕션 환경 모두에 대해 를 만들고 이를 사용하여 [Apache httpd 다시 작성 맵](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html). 그런 다음 이 재작성 맵을 새 URL 형식의 롤아웃과 함께 Dispatcher에 배포할 수 있습니다.
+이에 대한 한 가지 접근 방식은 프로덕션 전자 상거래 백엔드에 단계 환경을 연결하고 새 URL 형식을 사용하도록 구성하는 것입니다. 나중에 [CIF 제품 사이트 맵 생성기로 생성된 제품 사이트 맵](../../overview/seo-and-url-management.md) 스테이지와 프로덕션 환경 모두에 대해 를 만들고 이를 사용하여 [Apache httpd 다시 작성 맵](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html). 그런 다음 이 재작성 맵을 새 URL 형식의 롤아웃과 함께 Dispatcher에 배포할 수 있습니다.
 
 ## 예 {#example}
 

@@ -3,7 +3,8 @@ title: CDN 자격 증명 및 인증 구성
 description: Cloud Manager 구성 파이프라인을 사용하여 배포되는 구성 파일에서 규칙을 선언하여 CDN 자격 증명 및 인증을 구성하는 방법에 대해 알아봅니다.
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
-source-git-commit: e6059a1109ca93452f80440744338b809279db9b
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 3%

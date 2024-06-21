@@ -1,5 +1,5 @@
 ---
-title: AEM Commerce 시작하기 as a Cloud Service
+title: AEM Commerce as a Cloud Service 시작하기
 description: Adobe Cloud Manager, CI/CD 파이프라인 및 Venia 참조 상점을 사용하여 Adobe Experience Manager(AEM) 상거래 프로젝트를 배포하는 방법에 대해 알아봅니다.
 topics: Commerce
 feature: Commerce Integration Framework, Cloud Manager
@@ -8,23 +8,24 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '1066'
 ht-degree: 1%
 
 ---
 
-# AEM Commerce 시작하기 as a Cloud Service {#start}
+# AEM Commerce as a Cloud Service 시작하기 {#start}
 
-Adobe Experience Manager(AEM) Commerce as a Cloud Service을 시작하려면 Commerce integration framework(CIF) 추가 기능으로 Experience Manager Cloud Service을 프로비저닝해야 합니다. CIF 추가 기능은 맨 위에 있는 추가 모듈입니다. [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html).
+Adobe Experience Manager(AEM) Commerce as a Cloud Service을 시작하려면 Commerce integration framework(CIF) 추가 기능을 사용하여 Experience Manager Cloud Service을 프로비저닝해야 합니다. CIF 추가 기능은 맨 위에 있는 추가 모듈입니다. [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html).
 
 ## 온보딩 {#onboarding}
 
-AEM Commerce as a Cloud Service에 대한 온보딩은 두 단계로 구성됩니다.
+AEM Commerce as a Cloud Service에 대한 온보딩은 두 단계 프로세스입니다.
 
-1. AEM Commerce as a Cloud Service 활성화 및 CIF 추가 기능 프로비저닝
-2. AEM Commerce를 상거래 솔루션과 as a Cloud Service 연결
+1. AEM Commerce as a Cloud Service 활성화 및 CIF 추가 기능 프로비저닝됨
+2. AEM Commerce as a Cloud Service과 상거래 솔루션 연결
 
 첫 번째 온보딩 단계는 Adobe이 수행합니다. 가격 책정 및 프로비저닝에 대한 자세한 내용은 영업 담당자에게 문의해야 합니다.
 
@@ -32,7 +33,7 @@ CIF 추가 기능을 제공받으면 기존 Cloud Manager 프로그램에 적용
 
 두 번째 단계는 각 AEM as a Cloud Service 환경에 대한 셀프서비스입니다. CIF 추가 기능의 초기 프로비저닝 후에 수행해야 하는 몇 가지 추가 구성이 있습니다.
 
-## 상거래 솔루션과 AEM 연결 {#solution}
+## Commerce 솔루션과 AEM 연결 {#solution}
 
 CIF 추가 기능 및 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components) 상거래 솔루션을 사용하는 경우 Cloud Manager 환경 변수를 통해 GraphQL 엔드포인트 URL을 제공해야 합니다. 변수 이름은 입니다. `COMMERCE_ENDPOINT`. HTTPS를 통한 보안 연결을 구성해야 합니다.
 
@@ -51,13 +52,13 @@ CIF 추가 기능 및 [AEM CIF 핵심 구성 요소](https://github.com/adobe/ae
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
-이 구성은 환경 세부 정보 페이지의 대화 상자를 사용하여 수행할 수 있습니다. 상거래 지원 프로그램에 대한 이 페이지를 볼 때 엔드포인트가 현재 구성되지 않은 경우 버튼이 표시됩니다.
+이 구성은 환경 세부 정보 페이지의 대화 상자를 사용하여 수행할 수 있습니다. Commerce 지원 프로그램에 대해 이 페이지를 볼 때 엔드포인트가 현재 구성되지 않은 경우 버튼이 표시됩니다.
 
 ![CM 환경 정보](/help/commerce-cloud/assets/commerce-cmui.png)
 
 이 버튼을 클릭하면 대화 상자가 열립니다.
 
-![CM Commerce 끝점](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
+![CM Commerce 엔드포인트](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
 엔드포인트와 선택적으로 준비된 카탈로그 지원에 대한 인증 헤더가 설정되면 엔드포인트가 세부 정보 페이지에 표시됩니다. 필요한 경우 편집 아이콘을 클릭하여 끝점을 편집할 수 있는 동일한 대화 상자를 엽니다.
 
@@ -99,7 +100,7 @@ Adobe I/O CLI를 통해 AEM을 상거래 솔루션과 연결하려면 다음 단
 >
 >다음 명령을 사용하여 모든 Cloud Manager 변수를 나열하여 다시 확인할 수 있습니다. `aio cloudmanager:list-environment-variables ENVIRONMENT_ID`
 
-AEM Commerce를 as a Cloud Service으로 사용할 준비가 되었으며 Cloud Manager를 통해 프로젝트를 배포할 수 있습니다.
+AEM Commerce as a Cloud Service을 사용할 준비가 되었으며 Cloud Manager를 통해 프로젝트를 배포할 수 있습니다.
 
 ## 저장소 및 카탈로그 구성 {#catalog}
 
@@ -141,5 +142,5 @@ CIF 추가 기능 및 [CIF 핵심 구성 요소](https://github.com/adobe/aem-co
 - [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
 - [AEM Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia)
 - [Commerce 다중 스토어 설정](configuring/multi-store-setup.md)
-- [여러 상거래 시스템 설정](configuring/multiple-commerce-systems-setup.md)
+- [여러 Commerce 시스템 설정](configuring/multiple-commerce-systems-setup.md)
 

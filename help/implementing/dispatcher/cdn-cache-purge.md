@@ -2,10 +2,12 @@
 title: CDN 캐시 삭제
 description: API 호출에 사용할 수 있는 제거 API 토큰을 구성하여 Adobe CDN 캐시에서 캐시된 개체를 제거하는 방법을 알아봅니다.
 feature: CDN Cache
-source-git-commit: bd8f534642848a656e5e54c425049c95cdb413f7
+exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '449'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 

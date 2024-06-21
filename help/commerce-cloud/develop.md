@@ -1,5 +1,5 @@
 ---
-title: AEMas a Cloud Service 용 AEM Commerce 개발
+title: AEM as a Cloud Service용 AEM Commerce 개발
 description: AEM Project Archetype을 사용하여 상거래 지원 AEM 프로젝트를 생성하는 방법을 알아봅니다. AEM as a Cloud Service SDK를 사용하여 프로젝트를 빌드하고 로컬 개발 환경에 배포하는 방법에 대해 알아봅니다.
 topics: Commerce, Development
 feature: Commerce Integration Framework
@@ -8,16 +8,17 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '1006'
-ht-degree: 8%
+source-wordcount: '908'
+ht-degree: 4%
 
 ---
 
-# AEMas a Cloud Service 용 AEM Commerce 개발 {#develop}
+# AEM as a Cloud Service용 AEM Commerce 개발 {#develop}
 
-AEMas a Cloud Service 용 CIF(Commerce Integration Framework)를 기반으로 하는 AEM Commerce 프로젝트를 개발하는 경우 AEM as a Cloud Service의 다른 AEM 프로젝트와 동일한 규칙 및 모범 사례를 따릅니다. 먼저 다음을 검토하십시오.
+AEM용 CIF(Commerce integration framework)를 기반으로 AEM Commerce 프로젝트를 개발하는 경우 as a Cloud Service의 다른 AEM AEM as a Cloud Service 프로젝트와 동일한 규칙과 모범 사례를 따릅니다. 먼저 다음을 검토하십시오.
 
 - [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html)
 - [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)
@@ -27,7 +28,7 @@ AEMas a Cloud Service 용 CIF(Commerce Integration Framework)를 기반으로 �
 
 >[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
 
-CIF 프로젝트로 작업하려면 로컬 개발 환경이 권장됩니다. AEM as a Cloud Service으로 제공되는 CIF 추가 기능은 로컬 개발에도 사용할 수 있습니다. 다음에서 다운로드할 수 있습니다. [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
+CIF 프로젝트에서 작업하려면 로컬 개발 환경을 사용하는 것이 좋습니다. as a Cloud Service으로 제공되는 CIF AEM 추가 기능은 로컬 개발에도 사용할 수 있습니다. 다음에서 다운로드할 수 있습니다. [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 CIF 추가 기능은 Sling 기능 아카이브로 제공됩니다. 소프트웨어 배포 포털에서 사용할 수 있는 zip 파일에는 두 개의 Sling 기능 아카이브 파일이 포함되어 있습니다. 하나는 AEM 작성자용 이고 다른 하나는 AEM 게시 인스턴스용 입니다.
 
@@ -46,7 +47,7 @@ CIF 추가 기능은 Sling 기능 아카이브로 제공됩니다. 소프트웨�
 
 ### CIF 추가 기능 액세스
 
-CIF 추가 기능은에서 zip 파일로 다운로드할 수 있습니다. [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). zip 파일에는 다음과 같이 CIF 추가 기능이 포함되어 있습니다. **Sling 기능 아카이브**: AEM 패키지가 아닙니다. SDK 목록은 AEM as a Cloud Service 라이선스로 액세스할 수 있습니다.
+CIF 추가 기능은에서 zip 파일로 다운로드할 수 있습니다. [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). zip 파일에는 CIF 추가 기능이 다음과 같이 포함되어 있습니다. **Sling 기능 아카이브**: AEM 패키지가 아닙니다. SDK 목록은 AEM as a Cloud Service 라이선스로 액세스할 수 있습니다.
 
 >[!TIP]
 >
@@ -66,7 +67,7 @@ AEM as a Cloud Service SDK를 사용한 로컬 CIF 추가 기능 개발의 경�
 1. 만들기 `crx-quickstart/install` 폴더
 1. CIF 추가 기능의 올바른 Sling 기능 아카이브 파일을 `crx-quickstart/install` 폴더를 삭제합니다.
 
-   CIF 추가 기능 zip 파일에는 두 개의 Sling 기능 아카이브가 포함되어 있습니다 `.far` 파일. 로컬 AEM as a Cloud Service SDK를 실행하는 방법에 따라 AEM 작성자 또는 AEM 게시용으로 올바른 SDK를 사용해야 합니다.
+   CIF 추가 기능 zip 파일에는 두 개의 Sling 기능 아카이브가 포함되어 있습니다 `.far` 파일. 로컬 AEM as a Cloud Service SDK를 실행하는 방법에 따라 AEM Author 또는 AEM Publish에 대해 올바른 작성자를 사용해야 합니다.
 
 1. 이름이 인 로컬 OS 환경 변수 만들기 `COMMERCE_ENDPOINT` Adobe Commerce GraphQL 끝점 유지 중
 
@@ -106,17 +107,17 @@ OSGI 콘솔을 통해 설정을 확인합니다. `http://localhost:4502/system/
 
 ## 프로젝트 설정 {#project}
 
-AEMas a Cloud Service 에 CIF 프로젝트를 Bootstrap 하는 두 가지 방법이 있습니다.
+CIF AEM 프로젝트를 as a Cloud Service으로 Bootstrap 하는 방법에는 두 가지가 있습니다.
 
 ### AEM Project Archetype 사용
 
-다음 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) 는 CIF를 시작하기 위해 미리 구성된 프로젝트를 Bootstrap 하는 기본 도구입니다. CIF 코어 구성 요소 및 모든 필수 구성은 하나의 추가 옵션과 함께 생성된 프로젝트에 포함될 수 있습니다.
+다음 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) 은 CIF을 시작하기 위해 사전 구성된 프로젝트를 Bootstrap 하는 기본 도구입니다. CIF 코어 구성 요소 및 필요한 모든 구성은 하나의 추가 옵션과 함께 생성된 프로젝트에 포함될 수 있습니다.
 
 >[!TIP]
 >
 >항상 최신 버전의 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/releases) 프로젝트를 생성할 수 있습니다.
 
-AEM 프로젝트 원형 을 참조하십시오. [사용 지침](https://github.com/adobe/aem-project-archetype#usage) AEM 프로젝트를 생성하는 방법에 대해 설명합니다. 프로젝트에 CIF를 포함하려면 `includeCommerce` 옵션을 선택합니다.
+AEM 프로젝트 원형 을 참조하십시오. [사용 지침](https://github.com/adobe/aem-project-archetype#usage) AEM 프로젝트를 생성하는 방법에 대해 설명합니다. CIF을 프로젝트에 포함하려면 `includeCommerce` 옵션을 선택합니다.
 
 예:
 
@@ -131,7 +132,7 @@ mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
  -D includeCommerce=y
 ```
 
-제공된 를 포함하여 모든 프로젝트에서 CIF 코어 구성 요소를 사용할 수 있습니다 `all` cif 콘텐츠 패키지 및 관련 OSGI 번들을 사용하거나 개별적으로 패키징합니다. 프로젝트에 CIF 핵심 구성 요소를 수동으로 추가하려면 다음 종속성을 사용하십시오.
+CIF 핵심 구성 요소는 제공된 을 포함하여 모든 프로젝트에서 사용할 수 있습니다 `all` CIF 콘텐츠 패키지 및 관련 OSGI 번들을 사용하여 개별적으로 또는 패키징합니다. 프로젝트에 CIF 핵심 구성 요소를 수동으로 추가하려면 다음 종속성을 사용하십시오.
 
 ```java
 <dependency>
@@ -165,7 +166,7 @@ mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
 
 ### AEM Venia 참조 저장소 사용
 
-CIF 프로젝트를 시작하는 두 번째 옵션은 [AEM Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia). AEM Venia 참조 저장소는 AEM용 CIF 코어 구성 요소의 사용을 보여 주는 샘플 참조 상점 응용 프로그램입니다. 모범 사례 세트 및 고유한 기능을 개발하기 위한 잠재적인 시작점으로 설계되었습니다.
+CIF 프로젝트를 시작하는 두 번째 옵션은 를 복제하여 사용하는 것입니다. [AEM Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia). AEM Venia 참조 저장소는 AEM용 CIF 핵심 구성 요소의 사용을 보여 주는 샘플 참조 상점 응용 프로그램입니다. 모범 사례 세트 및 고유한 기능을 개발하기 위한 잠재적인 시작점으로 설계되었습니다.
 
 Venia 참조 저장소를 시작하려면 Git 저장소를 복제하고 필요에 따라 프로젝트 맞춤화를 시작합니다.
 

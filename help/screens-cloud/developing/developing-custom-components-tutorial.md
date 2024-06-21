@@ -2,7 +2,9 @@
 title: Screens as a Cloud Service에 대한 사용자 정의 구성 요소 개발
 description: 다음 자습서에서는 AEM Screens에 대한 사용자 지정 구성 요소를 만드는 단계를 안내합니다. AEM Screens은 다른 AEM 제품의 많은 기존 디자인 패턴과 기술을 재사용합니다. 이 튜토리얼에서는 AEM Screens용 을 개발할 때 차이점과 특별한 고려 사항을 강조 표시합니다.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+feature: Developing Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 2%
@@ -131,7 +133,7 @@ AEM Screens에는 기존 WCM Sites 구성 요소에 대해 반드시 true가 아
 
    Screens 구성 요소에는 각 구성 요소에 따라 두 개의 서로 다른 렌더링 필요 [작성 모드](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html#page-modes) 사용 중:
 
-   1. **프로덕션**: 미리보기 또는 게시 모드(wcmmode=disabled)
+   1. **프로덕션**: 미리보기 또는 Publish 모드(wcmmode=disabled)
    1. **편집**: 편집, 디자인, 스캐폴딩, 개발자 등 기타 모든 작성 모드에 사용됩니다.
 
    `helloworld.html`스위치 역할을 하여 활성화된 작성 모드를 확인하고 다른 HTL 스크립트로 리디렉션합니다. Screens 구성 요소에서 사용하는 일반적인 규칙은 `edit.html` 편집 모드 및 `production.html` 프로덕션 모드에 대한 스크립트입니다.

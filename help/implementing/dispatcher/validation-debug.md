@@ -3,7 +3,8 @@ title: Dispatcher 도구를 사용하여 확인 및 디버깅
 description: 로컬 유효성 검사, 디버깅, 유연한 모드 파일 구조 및 레거시 모드에서 유연한 모드로 마이그레이션하는 방법에 대해 알아봅니다.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 2cb57347856568da979b34832ce12cce295841dd
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '3028'
 ht-degree: 1%

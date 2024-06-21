@@ -2,7 +2,9 @@
 title: 제품 카탈로그 페이지 및 템플릿 관리
 description: 제품 카탈로그 페이지 및 템플릿 관리 방법 알아보기
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 1%
@@ -15,7 +17,7 @@ ht-degree: 1%
 
 ## 지금까지의 스토리 {#story-so-far}
 
-AEM Content and Commerce 작성 여정의 이전 문서에서는 [AEM CIF 작성 기본 사항 시작하기](getting-started.md), CIF 작성의 기본 사항에 대해 배웠습니다.
+AEM Content 및 Commerce 작성 여정의 이전 문서에서는 [AEM CIF 작성 기본 사항 시작하기](getting-started.md), CIF 작성의 기본 사항에 대해 배웠습니다.
 
 이 문서는 이러한 기본 사항을 기반으로 합니다.
 

@@ -1,11 +1,12 @@
 ---
 title: PWA Studio을 위한 AEM 확장 시작하기
-description: PWA Studio을 사용하여 AEM Headless 콘텐츠 및 상거래 프로젝트를 배포하는 방법에 대해 알아봅니다.
+description: PWA Studio을 사용하여 AEM Headless 콘텐츠 및 Commerce 프로젝트를 배포하는 방법을 알아봅니다.
 topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 0%
@@ -62,7 +63,7 @@ AEM의 GraphQL 끝점과 PWA Studio을 연결하려면 [PWA Studio을 위한 AEM
 
    탐색 구성 요소 맞춤화에 대한 자세한 내용은에서 확인할 수 있습니다. [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) 및 [확장성 프레임워크](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) PWA Studio 설명서.
 
-1. Apollo 클라이언트는 AEM GraphQL 종단점을 다음 위치에 예상합니다. `<https://pwa-studio/endpoint.js>`. 끝점을 이 위치에 매핑하려면 PWA Studio 응용 프로그램의 UPPER 구성을 사용자 지정합니다. a. AEM_CFM_GRAPHQL 변수를 pwa-root/.env에 추가하고 AEM 콘텐츠 조각 GraphQL 엔드포인트를 가리키도록 조정합니다.
+1. Apollo 클라이언트는 AEM GraphQL 종단점을 다음 위치에 예상합니다. `<https://pwa-studio/endpoint.js>`. 끝점을 이 위치에 매핑하려면 PWA Studio 애플리케이션의 UPPER 구성을 사용자 정의합니다. a. AEM_CFM_GRAPHQL 변수를 pwa-root/.env에 추가하고 AEM Content Fragments GraphQL 끝점을 가리키도록 조정합니다.
 
    예: `AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
 

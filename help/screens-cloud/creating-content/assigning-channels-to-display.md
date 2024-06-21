@@ -2,9 +2,11 @@
 title: 화면 내 디스플레이에 채널 할당 as a Cloud Service
 description: 이 페이지에서는 Screens의 디스플레이에 as a Cloud Service으로 채널을 할당하는 방법을 설명합니다.
 exl-id: ba001c18-7b05-4ae2-aa7f-9ebb320fedd0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Authoring Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '444'
 ht-degree: 2%
 
 ---

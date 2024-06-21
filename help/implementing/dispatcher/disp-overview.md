@@ -3,7 +3,8 @@ title: 클라우드의 Dispatcher
 description: Dispatcher 도구, 지원되는 Apache 모듈, 레거시 및 유연한 모드에 대해 알아봅니다.
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 100%

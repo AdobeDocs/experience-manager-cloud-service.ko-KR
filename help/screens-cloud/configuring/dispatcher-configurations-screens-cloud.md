@@ -2,7 +2,9 @@
 title: 화면의 Dispatcher 구성 as a Cloud Service
 description: 이 페이지에서는 Screens as a Cloud Service의 Dispatcher 구성에 대해 설명합니다.
 exl-id: cc04b480-9310-4975-a7c2-20682c567fa4
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+feature: Administering Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 0%

@@ -1,15 +1,17 @@
 ---
-title: 가장자리 면 포함
+title: 에지측 포함
 description: 이제 Adobe 관리 CDN은 에지 수준의 다이내믹 웹 컨텐츠 어셈블리에 대한 마크업 언어인 ESI(Edge Side Includes)를 지원합니다.
 feature: Dispatcher
-source-git-commit: 8f9173e45dd802ecced21531dfa161890e4a8af1
+exl-id: 35093477-2788-4f69-80a9-899f43567cae
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '541'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-# 가장자리 면 포함 {#edge-side-includes}
+# 에지측 포함 {#edge-side-includes}
 
 >[!NOTE]
 >이 기능은 아직 일반적으로 사용할 수 없습니다. 얼리어답터 프로그램에 참여하려면 다음 이메일을 보내십시오. `aemcs-cdn-config-adopter@adobe.com` 사용 사례를 설명합니다.

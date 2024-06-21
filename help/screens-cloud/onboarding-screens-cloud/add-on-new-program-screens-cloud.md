@@ -2,7 +2,9 @@
 title: Cloud Manager의 새 프로그램에 Screens 추가 기능 추가
 description: Cloud Manager for Screens의 새 프로그램에 Screens 추가 기능을 as a Cloud Service으로 추가하는 방법에 대해 알아봅니다.
 exl-id: 36d1e1e9-5272-4138-9e0d-8476edc729f0
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Screens Deployments
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 3%

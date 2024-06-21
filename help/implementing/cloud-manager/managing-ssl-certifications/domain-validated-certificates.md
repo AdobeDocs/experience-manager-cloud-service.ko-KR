@@ -1,15 +1,17 @@
 ---
-title: DV(도메인 확인) 인증서
+title: DV(Domain Validated) 인증서
 description: Cloud Manager에서 DV(도메인 유효성 검사) 인증서를 관리하는 방법을 알아봅니다.
-source-git-commit: 5baeb4012e5aa82a8cd8710b18d9164583ede0bd
+exl-id: 7f2c71b6-15c3-4919-9f51-a3e26d0d48d4
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
-
-# DV(도메인 확인) 인증서 {#domain-validated-certificates}
+# DV(Domain Validated) 인증서 {#domain-validated-certificates}
 
 Cloud Manager에서 DV(도메인 유효성 검사) 인증서를 관리하는 방법을 알아봅니다.
 

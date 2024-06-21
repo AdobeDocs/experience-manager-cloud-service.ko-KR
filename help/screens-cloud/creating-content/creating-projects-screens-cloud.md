@@ -2,7 +2,9 @@
 title: Screens에서 프로젝트 만들기 as a Cloud Service
 description: Screens에서 프로젝트를 as a Cloud Service으로 만드는 방법에 대해 알아봅니다.
 exl-id: 89e3ac28-7537-413d-b63b-abd2bbae6cb7
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Authoring Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 1%

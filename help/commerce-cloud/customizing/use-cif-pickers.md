@@ -8,16 +8,17 @@ activity: develop
 audience: developer
 feature: Commerce Integration Framework
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
-source-git-commit: ddf9632c0aad1fd5a3c2fb02fe1c9673ae4eb029
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 0%
 
 ---
 
-# AEM Content &amp; Commerce 작성 선택기 {#cif-pickers}
+# AEM Content &amp; Commerce Authoring Picker {#cif-pickers}
 
-AEM Content &amp; Commerce Authoring은 AEM 작성자 및 마케터가 상거래 제품 데이터 및 카탈로그를 효율적으로 작업하는 데 도움이 되는 일련의 작성 도구를 제공합니다. 제품 선택기 및 카테고리 선택기는 CIF 추가 기능의 일부이며 CIF 핵심 구성 요소에서 사용됩니다. 프로젝트는 구성 요소 대화 상자에서 이러한 선택기를 사용하여 제품이나 범주를 선택할 수 있습니다.
+AEM Content &amp; Commerce Authoring은 AEM 작성자 및 마케터가 상거래 제품 데이터 및 카탈로그를 효율적으로 작업하는 데 도움이 되는 작성 도구 세트를 제공합니다. 제품 선택기 및 카테고리 선택기는 CIF 추가 기능의 일부이며 CIF 핵심 구성 요소에서 사용됩니다. 프로젝트는 구성 요소 대화 상자에서 이러한 선택기를 사용하여 제품이나 범주를 선택할 수 있습니다.
 
 ## 제품 선택기 {#product-picker}
 

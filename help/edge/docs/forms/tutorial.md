@@ -3,8 +3,9 @@ title: AEM Forms Edge Delivery Services 시작하기 - 개발자 튜토리얼
 description: 이 튜토리얼에서는 새로운 AEM(Adobe Experience Manager Forms) 프로젝트를 시작하고 실행하는 방법을 안내합니다. 10~20분 안에 나만의 양식을 만들 수 있습니다.
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
-source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '1848'
 ht-degree: 100%
 

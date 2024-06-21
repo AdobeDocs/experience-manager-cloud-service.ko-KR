@@ -2,9 +2,11 @@
 title: 단계적 제품 카탈로그 경험 관리
 description: 단계적 제품 카탈로그 경험을 관리하는 방법을 알아봅니다.
 exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '487'
 ht-degree: 10%
 
 ---
@@ -15,7 +17,7 @@ ht-degree: 10%
 
 ## 지금까지의 스토리 {#story-so-far}
 
-AEM Content and Commerce 여정의 이전 문서에서는 [제품 카탈로그 페이지 및 템플릿 관리](catalog-templates.md)를 통해 템플릿을 기반으로 제품 카탈로그 경험을 관리하고 구축하는 방법에 대해 알아보았습니다.
+AEM Content 및 Commerce 여정의 이전 문서에서는 [제품 카탈로그 페이지 및 템플릿 관리](catalog-templates.md)를 통해 템플릿을 기반으로 제품 카탈로그 경험을 관리하고 구축하는 방법에 대해 알아보았습니다.
 
 이 문서는 이러한 기본 사항을 기반으로 합니다.
 
@@ -27,7 +29,7 @@ AEM Content and Commerce 여정의 이전 문서에서는 [제품 카탈로그 �
     >
     >이 기능은 토큰 기반 인증을 지원하는 Adobe Commerce 또는 Cloud Edition 및 서드파티 커넥터에서만 사용할 수 있습니다. 자세한 내용은 [시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html)를 참조하십시오.
 
-먼저 작성자가 CIF를 사용하여 준비된 제품 데이터에 액세스하는 방법을 살펴보겠습니다.
+먼저 작성자가 CIF을 사용하여 단계적 제품 데이터에 액세스하는 방법을 살펴보겠습니다.
 
 ## 단계적 제품 데이터 작업 {#staged-product-data}
 
@@ -64,10 +66,10 @@ AEM Launches를 사용하면 스테이징된 제품 데이터에 대한 콘텐�
 * launches에서 스테이징된 제품 카탈로그 및 콘텐츠의 개념 이해
 * 제품 관리실 및 편집기를 통해 준비된 제품 카탈로그 데이터에 액세스할 수 있습니다.
 
-이제 관리할 준비가 되었습니다. [제품 경험](product-experience-management.md). 그러나 AEM Content 및 Commerce에는 다양한 추가 옵션이 있습니다. 이 여정에서 확인한 기능들에 대한 자세한 내용은 [추가 리소스 섹션](#additional-resources)에서 사용할 수 있는 몇 가지 추가 리소스를 확인하십시오.
+이제 관리할 준비가 되었습니다. [제품 경험](product-experience-management.md). 그러나 AEM Content 및 Commerce에는 많은 추가 옵션이 있습니다. 이 여정에서 확인한 기능들에 대한 자세한 내용은 [추가 리소스 섹션](#additional-resources)에서 사용할 수 있는 몇 가지 추가 리소스를 확인하십시오.
 
 ## 추가 리소스 {#additional-resources}
 
 * [제품 관리실](/help/commerce-cloud/authoring/product-cockpit.md)
-* [시작하기](/help/commerce-cloud/getting-started.md)
+* [시작](/help/commerce-cloud/getting-started.md)
 * [론치](/help/sites-cloud/authoring/launches/overview.md)

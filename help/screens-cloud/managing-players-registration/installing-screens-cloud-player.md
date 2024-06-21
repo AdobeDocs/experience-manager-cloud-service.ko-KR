@@ -2,9 +2,11 @@
 title: Screens에서 플레이어 설치 및 구성 as a Cloud Service
 description: 이 페이지에서는 Screens에서 as a Cloud Service으로 플레이어를 설치하고 구성하는 방법에 대해 설명합니다.
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Developing Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '582'
 ht-degree: 1%
 
 ---

@@ -3,7 +3,8 @@ title: AEM as a Cloud Service에서 캐싱
 description: AEM as a Cloud Service 캐싱의 기본 사항에 대해 알아봅니다.
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 8215686031de1bc37ce37bfdce252b3997646042
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '2894'
 ht-degree: 1%
@@ -358,9 +359,9 @@ Adobe은 표준 캐시 헤더를 사용하여 콘텐츠 전달 수명 주기를 
     <td>
      <ol>
        <li>콘텐츠를 게시하고 캐시를 무효화합니다.</li>
-       <li>작성자/게시 계층에서 - 콘텐츠를 제거하고 캐시를 무효화합니다.</li>
-       <li><p><strong>작성자 계층에서</strong> - 콘텐츠를 제거하고 캐시를 무효화합니다( 게시 에이전트의 AEM 작성자 계층에서 트리거된 경우).</p>
-           <p><strong>게시 계층에서</strong> - 캐시만 무효화합니다( 플러시 또는 리소스 전용 플러시 에이전트의 AEM 게시 계층에서 트리거된 경우).</p>
+       <li>작성자/Publish 계층에서 - 콘텐츠를 제거하고 캐시를 무효화합니다.</li>
+       <li><p><strong>작성자 계층에서</strong> - 콘텐츠를 제거하고 캐시를 무효화합니다(Publish 에이전트의 AEM 작성자 계층에서 트리거된 경우).</p>
+           <p><strong>Publish 계층에서</strong> - 캐시만 무효화합니다( 플러시 또는 리소스 전용 플러시 에이전트의 AEM Publish 계층에서 트리거된 경우).</p>
        </li>
      </ol>
      </td>

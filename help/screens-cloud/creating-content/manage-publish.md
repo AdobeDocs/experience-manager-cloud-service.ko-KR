@@ -2,7 +2,9 @@
 title: Screens에서 채널 as a Cloud Service 게시
 description: 이 페이지에서는 Screens에 as a Cloud Service으로 채널을 게시하는 방법에 대해 설명합니다.
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+feature: Authoring Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 1%
@@ -25,7 +27,7 @@ AEM Screens에서 콘텐츠를 게시할 수 있습니다. 게시 관리 기능�
 * 채널 게시 방법 이해
 * 범위 측면에서 게시 관리
 
-## 채널 게시 단계 {#publish-channel}
+## 채널 Publish 절차 {#publish-channel}
 
 채널을 게시하려면 아래 단계를 따르십시오.
 
@@ -37,14 +39,14 @@ AEM Screens에서 콘텐츠를 게시할 수 있습니다. 게시 관리 기능�
 
 1. 다음 항목 선택 **작업** 다음으로: **게시** 및 **예약** 다음으로: **지금** 다음에서 **게시 관리 마법사** 및 클릭 **다음**.
 
-   ![게시 작업 선택](/help/screens-cloud/assets/create-content/managepub-2.png)
+   ![Publish 작업 선택](/help/screens-cloud/assets/create-content/managepub-2.png)
 
    >[!NOTE]
    >클릭 **하위 항목 포함** 작업 표시줄에서 모든 옵션을 선택 취소하고 프로젝트의 모든 모듈을 게시한 다음 Add to publish를 클릭합니다. 기본적으로 모든 상자가 선택되어 있으므로 프로젝트의 모든 모듈을 게시하려면 수동으로 상자의 선택을 해제해야 합니다.
 
 1. 에서 채널 선택 후 **게시 관리** 마법사, 클릭 **게시** 채널을 게시합니다.
 
-   ![채널 게시](/help/screens-cloud/assets/create-content/managepub-3.png)
+   ![Publish 더 채널](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
 ## 다음 단계 {#whats-next}

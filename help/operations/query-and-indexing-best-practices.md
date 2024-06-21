@@ -3,7 +3,9 @@ title: 쿼리 및 색인화 모범 사례
 description: Adobe의 모범 사례 가이드라인에 기반하여 색인 및 쿼리를 최적화하는 방법에 대해 알아봅니다.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Operations
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '3088'
 ht-degree: 43%

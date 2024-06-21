@@ -3,8 +3,9 @@ title: 데이터를 수신할 스프레드시트 준비
 description: 스프레드시트 및 적응형 양식 블록 필드를 사용하여 강력한 양식을 더 빠르게 작성할 수 있습니다.
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '1001'
 ht-degree: 100%
 

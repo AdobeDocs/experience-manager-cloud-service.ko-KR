@@ -1,11 +1,13 @@
 ---
-title: AEM Commerce Integration Framework(CIF) 추가 기능으로 마이그레이션
-description: 이전 버전에서 AEM Commerce Integration Framework(CIF) 추가 기능으로 마이그레이션하는 방법
+title: CIF(AEM Commerce integration framework) 추가 기능으로 마이그레이션
+description: 이전 버전에서 AEM Commerce integration framework(CIF) 추가 기능으로 마이그레이션하는 방법
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 23%
+source-wordcount: '470'
+ht-degree: 20%
 
 ---
 
@@ -15,22 +17,22 @@ ht-degree: 23%
 
 ## CIF 추가 기능
 
-as a Cloud Service Experience Manager의 경우 CIF 추가 기능은 Adobe Commerce 및 서드파티 상거래 솔루션에 대해 유일하게 지원되는 상거래 통합 솔루션입니다. Experience Manager as a Cloud Service의 고객에 대해 CIF 추가 기능이 자동으로 배포되므로 수동으로 배포하지 않아도 됩니다. [AEM Commerce as a Cloud Service 시작하기](getting-started.md)를 참조하십시오.
+as a Cloud Service Experience Manager을 위해 CIF 추가 기능은 Adobe Commerce 및 서드파티 상거래 솔루션에 대해 유일하게 지원되는 상거래 통합 솔루션입니다. Experience Manager as a Cloud Service의 고객에 대해 CIF 추가 기능이 자동으로 배포되므로 수동으로 배포하지 않아도 됩니다. [AEM Commerce as a Cloud Service 시작하기](getting-started.md)를 참조하십시오.
 
-CIF Adobe을 배포하는 프로젝트를 지원하려면 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components).
+CIF Adobe을 배포하는 프로젝트를 지원하려면 다음을 제공합니다. [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components).
 
 [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)을 통해 AEM 6.5에서도 CIF 추가 기능을 사용할 수 있습니다. 이는 Experience Manager as a Cloud Service와 호환되며 Experience Manager as a Cloud Service용 CIF 추가 기능과 동일한 기능을 제공하므로 따로 조정하지 않아도 됩니다.
 
-클래식 CIF와 그 종속성은 더 이상 사용할 수 없습니다. 다음을 사용하여 이 CIF 버전에 의존하는 코드 `com.adobe.cq.commerce.api` Java API는 CIF 추가 기능 및 그 원리에 맞게 조정해야 합니다.
+클래식 CIF와 그 종속성은 더 이상 사용할 수 없습니다. 다음을 사용하여 이 CIF 버전에 의존하는 코드 `com.adobe.cq.commerce.api` Java API는 CIF 추가 기능 및 그 원칙에 맞게 조정되어야 합니다.
 
-이전에 사용 가능한 CIF 커넥터는 더 이상 설치할 수 없습니다. 이 커넥터에 의존하는 코드는 CIF 추가 기능 및 그 원리에 맞게 조정해야 합니다.
+이전에 사용 가능했던 CIF 커넥터는 더 이상 설치할 수 없습니다. 이 커넥터에 의존하는 코드는 CIF 추가 기능 및 그 원칙에 맞게 조정해야 합니다.
 
 ## 프로젝트 구조
 
 다음을 알아봅니다. [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 그리고 AEMas a Cloud Service 의 특징. 프로젝트 설정을 AEM as a Cloud Service 레이아웃으로 조정합니다.
 AEM 6.5 배포와 비교하여 두 가지 주요 차이점이 있습니다.
 
-* GraphQL 클라이언트 OSGI 번들 **은(는) 해서는 안 됨** 더 이상 AEM 프로젝트에 포함될 수 없으며 CIF 추가 기능을 통해 배포됩니다.
+* GraphQL 클라이언트 OSGI 번들 **은(는) 해서는 안 됨** 더 이상 AEM 프로젝트에 포함될 수 있도록, CIF 추가 기능을 통해 배포됩니다
 * GraphQL 클라이언트 및 Graphql 데이터 서비스용 OSGI 구성 **은(는) 해서는 안 됨** 더 이상 AEM 프로젝트에 포함됨
 
 >[!TIP]
@@ -39,7 +41,7 @@ AEM 6.5 배포와 비교하여 두 가지 주요 차이점이 있습니다.
 
 ## 제품 카탈로그
 
-제품 카탈로그 데이터 가져오기는 더 이상 지원되지 않습니다. CIF 추가 기능 주도자 제품 및 카탈로그 요청은 외부 상거래 솔루션에 대한 실시간 호출을 통해 온디맨드됩니다. 상거래 솔루션 통합에 대한 자세한 내용을 보려면 통합 장으로 이동합니다.
+제품 카탈로그 데이터 가져오기는 더 이상 지원되지 않습니다. CIF 추가 기능 주도자 제품 및 카탈로그 요청은 외부 상거래 솔루션에 대한 실시간 호출을 통해 온디맨드로 수행됩니다. 상거래 솔루션 통합에 대한 자세한 내용을 보려면 통합 장으로 이동합니다.
 
 >[!TIP]
 >
@@ -47,7 +49,7 @@ AEM 6.5 배포와 비교하여 두 가지 주요 차이점이 있습니다.
 
 ## AEM 렌더링을 통한 제품 카탈로그 경험
 
-클래식 CIF와 함께 카탈로그 블루프린트를 사용하는 경우 제품 카탈로그 워크플로우를 업데이트해야 합니다. 이제 CIF 추가 기능은 AEM 카탈로그 템플릿을 사용하여 제품 카탈로그 경험을 즉시 렌더링합니다. 더 이상 제품 데이터 또는 제품 페이지 복제가 필요하지 않습니다.
+클래식 CIF과 함께 카탈로그 블루프린트를 사용하는 경우 제품 카탈로그 워크플로우를 업데이트해야 합니다. 이제 CIF 추가 기능은 AEM 카탈로그 템플릿을 사용하여 제품 카탈로그 경험을 즉시 렌더링합니다. 더 이상 제품 데이터 또는 제품 페이지 복제가 필요하지 않습니다.
 
 ## 캐시 불가능 데이터 및 쇼핑 상호 작용
 

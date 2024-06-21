@@ -9,11 +9,12 @@ audience: marketer
 feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
-exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 3%
+source-wordcount: '178'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +22,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> 이 기능은 CIF를 기반으로 하는 상점(예: Venia)에만 작동합니다.
+> 이 기능은 CIF을 기반으로 하는 상점(예: Venia)에만 작동합니다.
 
 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components) 는 콘텐츠 작성자가 추가 카테고리 및 제품 페이지를 만들 수 있는 기능을 제공합니다. 이러한 페이지는 추가 마케팅 콘텐츠로 보강하고 특정 카테고리 및 제품을 타겟팅하도록 구성할 수 있습니다. 다음 비디오는 이 기능의 설정을 안내합니다.
 

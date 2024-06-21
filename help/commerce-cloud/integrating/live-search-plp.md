@@ -1,13 +1,15 @@
 ---
 title: '''[!DNL Live Search] 제품 목록 페이지 CIF 구성 요소'
 description: CIF 구성 요소를 사용하여 활성화 [!DNL Live Search] AEM 사이트의 제품 목록 페이지 구성 요소
-source-git-commit: eaec541c191fc8f68d78662f2b6ab9140460aa9f
+exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Live Search] CIF 구성 요소 {#live-search-cif-component}
 

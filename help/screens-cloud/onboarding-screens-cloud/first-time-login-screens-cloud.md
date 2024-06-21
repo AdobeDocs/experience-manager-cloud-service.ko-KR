@@ -2,9 +2,11 @@
 title: Screens에 처음 as a Cloud Service 로그인
 description: 이 페이지에서는 Screens as a Cloud Service 시작의 첫 번째 단계에 대해 설명합니다.
 exl-id: d3a6aa5d-226b-484d-97ea-0b8312c7a0fd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Screens Deployments
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '196'
 ht-degree: 1%
 
 ---
@@ -14,7 +16,7 @@ ht-degree: 1%
 
 ## 온보딩 프로세스 {#onboarding-process}
 
-계약에 서명한 후 Adobe Managed Services(AMS)는 고객 온보딩을 시작합니다. 프로비저닝 단계에서 AMS가 계약에 따라 AMS 인스턴스를 프로비저닝하면 AMS-Screens-Cloud 기능 팩이 설치됩니다. 기능 팩을 사용하면 Screens Services 공급자가 AMS 인스턴스 또는 Screens Content Provider에 연결할 수 있습니다.
+계약에 서명한 후 Managed Services(AMS) Adobe은 고객 온보딩을 시작합니다. 프로비저닝 단계에서 AMS가 계약에 따라 AMS 인스턴스를 프로비저닝하면 AMS-Screens-Cloud 기능 팩이 설치됩니다. 기능 팩을 사용하면 Screens Services 공급자가 AMS 인스턴스 또는 Screens Content Provider에 연결할 수 있습니다.
 
 ## Adobe Admin Console에 사용자 추가 {#admin-console}
 

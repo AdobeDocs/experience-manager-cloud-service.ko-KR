@@ -2,7 +2,9 @@
 title: 액션 센터
 description: 문제 및 기타 중요한 정보에 대해 편리하게 조치를 취할 수 있도록 조치 센터 활용
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: ae8c5e832134caf4ff6799c601810e9a735f4195
+feature: Operations
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 69%

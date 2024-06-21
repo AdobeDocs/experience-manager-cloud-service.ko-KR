@@ -11,7 +11,8 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '2342'
 ht-degree: 0%
@@ -87,7 +88,7 @@ Storefront의 테마/스타일을 렌더링하는 CSS 및 JavaScript는 AEM에�
 
    ![ui.frontend 상거래 폴더](../assets/style-cif-component/ui-frontend-commerce-folder.png)
 
-   여러 Sass(`.scss`) 폴더 아래에 있는 파일입니다. 이러한 파일은 각 Commerce 구성 요소의 Commerce 관련 스타일입니다.
+   여러 Sass(`.scss`) 폴더 아래에 있는 파일입니다. 이러한 파일은 각 Commerce 구성 요소에 대한 Commerce 관련 스타일입니다.
 
 1. 파일 열기 `_productteaser.scss`.
 
@@ -178,7 +179,7 @@ Storefront의 테마/스타일을 렌더링하는 CSS 및 JavaScript는 AEM에�
 
    이러한 클라이언트 라이브러리는 `ui.frontend` 모듈. 대신 이러한 클라이언트 라이브러리에는 Adobe에서 제공하는 CSS 및 JavaScript 종속성이 포함됩니다. 이러한 클라이언트 라이브러리에 대한 정의는 `.content.xml` 각 폴더 아래에 있는 파일입니다.
 
-   **clientlib-base** - 다음의 필요한 종속성을 단순히 임베드하는 빈 클라이언트 라이브러리 [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 범주는 다음과 같습니다 `venia.base`.
+   **clientlib-base** - 다음의 필요한 종속성을 단순히 임베드하는 빈 클라이언트 라이브러리 [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR). 범주는 다음과 같습니다 `venia.base`.
 
    **clientlib-cif** - 다음의 필요한 종속성을 단순히 임베드하는 빈 클라이언트 라이브러리 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components). 범주는 다음과 같습니다 `venia.cif`.
 

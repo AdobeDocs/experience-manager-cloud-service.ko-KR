@@ -1,13 +1,15 @@
 ---
-title: git 하위 모듈 지원
-description: 빌드 시 Git 하위 모듈을 사용하여 git 저장소 간에 여러 분기의 콘텐츠를 병합하는 방법에 대해 알아봅니다.
-source-git-commit: 34c96940f91d42d622d50e85e9a9d6f75f3fb483
+title: Git 하위 모듈 지원
+description: Git 하위 모듈을 사용하여 빌드 시 Git 저장소에 있는 여러 분기의 콘텐츠를 병합할 수 있는 방법을 알아봅니다.
+exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '436'
-ht-degree: 57%
+ht-degree: 93%
 
 ---
-
 
 # Adobe 저장소에 대한 Git 하위 모듈 지원 {#git-submodule-support}
 
@@ -78,21 +80,21 @@ Adobe 관리 저장소와 함께 git 하위 모듈을 사용할 때는 다음 �
 * git 하위 모듈 참조는 특정 git 커밋에 저장됩니다. 따라서 하위 모듈 저장소가 변경되면 참조된 커밋을 업데이트해야 합니다.
    * 예를 들어 `git submodule update --remote`를 사용합니다.
 
-## 개인 저장소에 대한 Git 하위 모듈 지원 {#private-repositories}
+## 비공개 저장소에 대한 Git 하위 모듈 지원 {#private-repositories}
 
-를 사용할 때 git 하위 모듈 지원 [개인 저장소](private-repositories.md) 는 주로 Adobe 저장소를 사용할 때와 동일합니다.
+[비공개 저장소](private-repositories.md)를 사용할 때 git 하위 모듈에 대한 지원은 Adobe 저장소를 사용할 때와 대부분 동일합니다.
 
-하지만 을 설정한 후에는 `pom.xml` 파일 및 실행 `git submodule` 명령, 다음을 추가해야 함 `.gitmodules` 이 파일을 Cloud Manager가 하위 모듈 설정을 감지할 수 있도록 집계 저장소의 루트 디렉터리에 추가합니다.
+그러나 `pom.xml` 파일을 설정하고 `git submodule` 명령을 실행한 후에는 `.gitmodules` 파일을 Cloud Manager용 집계기 저장소의 루트 디렉터리에 추가하여 하위 모듈 설정을 감지해야 합니다.
 
 ![.gitmodules 파일](assets/gitmodules.png)
 
-![집계](assets/aggregator.png)
+![집계기](assets/aggregator.png)
 
 ### 제한 사항 및 권장 사항 {#limitations-recommendations-private-repos}
 
-개인 리포지토리에 git 하위 모듈을 사용할 때는 다음 제한 사항에 유의하십시오.
+비공개 저장소에 git 하위 모듈을 사용할 때는 다음 제한 사항에 유의하십시오.
 
-* 하위 모듈에 대한 git URL은 HTTPS 또는 SSH 형식일 수 있지만 github.com 저장소에 연결되어야 합니다
-   * GitHub 집계 저장소에 Adobe 저장소 하위 모듈을 추가하거나 그 반대로 추가할 수 없습니다.
-* GitHub 하위 모듈은 Adobe GitHub 앱에서 액세스할 수 있어야 합니다.
-* [Adobe 관리 리포지토리에 git 하위 모듈을 사용할 때의 제한 사항](#limitations-recommendations) 또한 적용합니다.
+* 하위 모듈의 git URL은 HTTPS 또는 SSH 형식일 수 있지만 github.com 저장소에 연결해야 합니다
+   * Adobe 저장소 하위 모듈을 GitHub 집계기 저장소에 추가하거나 그 반대로 추가하는 것은 작동하지 않습니다.
+* GitHub 하위 모듈은 Adobe GitHub 애플리케이션에 액세스할 수 있어야 합니다.
+* [Adobe 관리 저장소의 git 하위 모듈 사용 시 제한 사항](#limitations-recommendations)도 적용됩니다.

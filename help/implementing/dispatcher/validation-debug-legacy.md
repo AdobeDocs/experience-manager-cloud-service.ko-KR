@@ -4,9 +4,10 @@ description: Dispatcher 도구를 사용하여 확인 및 디버깅(이전)
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2337'
 ht-degree: 1%
 
 ---
@@ -313,7 +314,7 @@ Apache 가상 호스트 구성에는 재작성과 변수의 두 가지 유형으
 
 >[!TIP]
 >
-보다 제한된 방식으로 더 많은 파일을 포함할 수 있도록 유연한 Dispatcher 구성 모드로 전환할 수 있습니다. 다음을 참조하십시오 [Dispatcher 도구를 사용하여 확인 및 디버깅](/help/implementing/dispatcher/validation-debug.md) 유연한 모드에 대한 자세한 내용.
+>보다 제한된 방식으로 더 많은 파일을 포함할 수 있도록 유연한 Dispatcher 구성 모드로 전환할 수 있습니다. 다음을 참조하십시오 [Dispatcher 도구를 사용하여 확인 및 디버깅](/help/implementing/dispatcher/validation-debug.md) 유연한 모드에 대한 자세한 내용.
 
 또는 다음을 포함할 수 있습니다 **기본값** 이름이 인 규칙 다시 작성 버전 `conf.d/rewrites/default_rewrite.rules`.
 변수 파일의 기본 버전은 없습니다.
@@ -352,7 +353,7 @@ Windows 탐색기에서 경로를 복사하여 붙여넣은 다음 명령 프롬
 이 단계에서는 이미지에서 도커를 시작하여 Apache 구문을 확인합니다. Docker를 로컬에 설치해야 하지만 AEM을 실행할 필요는 없습니다.
 
 >[!NOTE]
-Windows 사용자는 Windows 10 Professional 또는 Docker를 지원하는 기타 배포를 사용해야 합니다. 이 전제 조건은 로컬 컴퓨터에서 Dispatcher를 실행하고 디버깅하는 데 필요합니다.
+>Windows 사용자는 Windows 10 Professional 또는 Docker를 지원하는 기타 배포를 사용해야 합니다. 이 전제 조건은 로컬 컴퓨터에서 Dispatcher를 실행하고 디버깅하는 데 필요합니다.
 
 이 단계는 `validator full -d out src/dispatcher`: 다음 명령에 필요한 &quot;out&quot; 디렉터리를 생성합니다. `bin/docker_run.sh out host.docker.internal:4503 8080`.
 

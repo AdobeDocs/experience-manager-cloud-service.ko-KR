@@ -2,7 +2,9 @@
 title: Screens에서 as a Cloud Service 채널 만들기 및 관리
 description: 이 페이지에서는 Screens에서 채널을 as a Cloud Service으로 만들고 관리하는 방법을 설명합니다.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: f7ed7c63fd141c6a9817e4718edb31425b14a761
+feature: Authoring Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 1%

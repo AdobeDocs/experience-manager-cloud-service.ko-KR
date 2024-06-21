@@ -2,7 +2,9 @@
 title: AEM 커넥터 구현
 description: 커넥터와 그 기능에 대해 자세히 알아보고 Experience Manager에서 이들 유용한 도구를 구현하는 방법에 대해 알아봅니다.
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
+feature: Operations
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 96%
@@ -15,7 +17,7 @@ AEM 커넥터 구현
 
 다음은 [AEM 커넥터](https://www.adobe.io/apis/experiencecloud/aem/aemconnectors.html) 구축에 유용한 참고 자료이며, 커넥터 [제출](submit.md) 및 [유지](maintain.md) 지침과 함께 읽어야 합니다.
 
-AEM에 대한 개발자 라이선스는 [Adobe 교환 프로그램](https://partners.adobe.com/exchangeprogram/experiencecloud).
+AEM에 대한 개발자 라이선스는 [Adobe Exchange 프로그램](https://partners.adobe.com/exchangeprogram/experiencecloud).
 
 일반적인 통합 패턴
 ---------------------------

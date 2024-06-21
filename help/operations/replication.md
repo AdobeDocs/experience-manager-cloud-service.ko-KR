@@ -2,7 +2,9 @@
 title: 복제
 description: AEM as a Cloud Service으로 배포 및 복제 문제 해결에 대해 알아봅니다.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 9ab6ac5588b6ca5135e3635cc886ec51207e89d7
+feature: Operations
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 38%
@@ -21,11 +23,11 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
 
 >[!NOTE]
 >
->벌크 게시 콘텐츠에 관심이 있는 경우 [콘텐츠 트리 워크플로 게시](#publish-content-tree-workflow).
+>벌크 게시 콘텐츠에 관심이 있는 경우 [Publish 콘텐츠 트리 워크플로](#publish-content-tree-workflow).
 >이 워크플로 단계는 Cloud Service을 위해 특별히 빌드되었으며 대용량 페이로드를 효율적으로 처리할 수 있습니다.
 >벌크 게시 사용자 지정 코드를 빌드하는 것은 권장되지 않습니다.
 >어떤 이유로든 사용자 정의해야 하는 경우, 기존 워크플로 API를 사용하여 이 워크플로/워크플로 단계를 트리거할 수 있습니다.
->게시해야 하는 콘텐츠만 게시하는 것이 좋습니다. 또한 필요하지 않은 경우 많은 수의 콘텐츠를 게시하지 않도록 주의하십시오. 그러나 콘텐츠 트리 게시 작업 과정을 통해 보낼 수 있는 콘텐츠 양에 대해서는 제한이 없습니다.
+>게시해야 하는 콘텐츠만 게시하는 것이 좋습니다. 또한 필요하지 않은 경우 많은 수의 콘텐츠를 게시하지 않도록 주의하십시오. 그러나 Publish 콘텐츠 트리 워크플로우를 통해 보낼 수 있는 콘텐츠의 양에 대해서는 제한이 없습니다.
 
 ### 빠른 게시 취소/게시 - 예정된 게시 취소/게시 {#publish-unpublish}
 
@@ -43,9 +45,9 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
 
 ### 게시 관리 {#manage-publication}
 
-게시 관리는 빠른 게시보다 더 많은 옵션을 제공하여 하위 페이지 포함, 참조 맞춤화, 적용 가능한 워크플로 시작 및 나중에 게시할 수 있는 옵션 등을 가능하게 합니다.
+게시 관리는 빠른 Publish보다 더 많은 옵션을 제공하여 하위 페이지 포함, 참조 맞춤화, 적용 가능한 워크플로 시작 및 나중에 게시할 수 있는 옵션 제공을 가능하게 합니다.
 
-나중에 게시 옵션에 대해 폴더의 하위 항목을 포함하면 이 문서에 설명된 콘텐츠 트리 게시 워크플로가 호출됩니다.
+&quot;나중에 게시&quot; 옵션에 대해 폴더의 하위 항목을 포함하면 이 문서에 설명된 Publish 콘텐츠 트리 워크플로가 호출됩니다.
 
 게시 관리에 대한 자세한 내용은 [게시 기본 사항 설명서](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication)를 참조하십시오.
 
@@ -53,7 +55,7 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
 
 **도구 - 워크플로 - 모델**&#x200B;을 선택한 다음 아래와 같이 기본 워크플로 모델의 **콘텐츠 트리 게시**&#x200B;를 복사하여 트리 복제를 트리거할 수 있습니다.
 
-![콘텐츠 트리 게시 워크플로 카드](/help/operations/assets/publishcontenttreeworkflow.png)
+![Publish 콘텐츠 트리 워크플로 카드](/help/operations/assets/publishcontenttreeworkflow.png)
 
 원래 모델을 호출하지 마십시오. 대신 먼저 모델을 복사하고 해당 복사본을 호출해야 합니다.
 
