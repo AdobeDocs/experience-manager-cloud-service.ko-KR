@@ -3,10 +3,11 @@ title: CDN에서 트래픽 구성
 description: 구성 파일에서 규칙 및 필터를 선언하고 Cloud Manager 구성 파이프라인을 사용하여 CDN에 배포하여 CDN 트래픽을 구성하는 방법에 대해 알아봅니다.
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
-source-git-commit: f9eeafbf128b4581c983e19bcd5ad2294a5e3a9a
+role: Admin
+source-git-commit: 1b4297c36995be7a4d305c3eddbabfef24e91559
 workflow-type: tm+mt
-source-wordcount: '1199'
-ht-degree: 4%
+source-wordcount: '1310'
+ht-degree: 3%
 
 ---
 
@@ -306,6 +307,42 @@ data:
 | **forwardCookie** (선택 사항, 기본값은 false임) | true로 설정하면 클라이언트 요청의 &quot;쿠키&quot; 헤더가 백엔드로 전달되고, 그렇지 않으면 쿠키 헤더가 제거됩니다. |
 | **forwardAuthorization** (선택 사항, 기본값은 false임) | true로 설정하면 클라이언트 요청의 &quot;Authorization&quot; 헤더가 백엔드로 전달되고, 그렇지 않으면 Authorization 헤더가 제거됩니다. |
 | **timeout** (선택 사항, 초 단위, 기본값은 60) | 백엔드 서버가 HTTP 응답 본문의 첫 번째 바이트를 전달할 때까지 CDN이 기다려야 하는 시간(초)입니다. 이 값은 백엔드 서버에 대한 바이트 제한 시간 사이의 값으로도 사용됩니다. |
+
+### Edge Delivery Services에 프록시 지정 {#proxying-to-edge-delivery}
+
+원본 선택기를 사용하여 AEM Publish을 통해 AEM Edge Delivery Services으로 트래픽을 라우팅해야 하는 시나리오가 있습니다.
+
+* 일부 컨텐츠는 AEM Publish에서 관리하는 도메인에 의해 전달되지만, 동일한 도메인의 다른 컨텐츠는 Edge Delivery Services에 의해 전달됩니다
+* Edge Delivery Services이 전달한 콘텐츠는 트래픽 필터 규칙 또는 요청/응답 변환을 포함하여 구성 파이프라인을 통해 배포된 규칙의 이점을 받습니다
+
+다음은 이를 수행할 수 있는 원본 선택기 규칙의 예입니다.
+
+```
+kind: CDN
+version: '1'
+data:
+  originSelectors:
+    rules:
+      - name: select-edge-delivery-services-origin
+        when:
+          allOf:
+            - reqProperty: tier
+              equals: publish
+            - reqProperty: domain
+              equals: <Production Host>
+            - reqProperty: path
+              matches: "^^(/scripts/.*|/styles/.*|/fonts/.*|/blocks/.*|/icons/.*|.*/media_.*|/favicon.ico)"
+        action:
+          type: selectOrigin
+          originName: aem-live
+    origins:
+      - name: aem-live
+        domain: main--repo--owner.aem.live
+```
+
+>[!NOTE]
+> Adobe 관리 CDN이 사용되므로 에서 푸시 무효화를 구성해야 합니다 **관리됨** 모드, Edge Delivery Services 준수 [푸시 무효화 설정 설명서](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+
 
 ## 클라이언트측 리디렉션 {#client-side-redirectors}
 
