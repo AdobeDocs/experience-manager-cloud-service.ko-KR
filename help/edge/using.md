@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
 role: Admin, Architect, Developer
 source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '389'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Adobe의 안내 원칙은 단순성입니다. 문서 기반 작성으로 시작�
 
 ## 작성 {#authoring-edge}
 
-Edge Delivery Services를 사용하여 쉽고, 빠르고, 유연하게 콘텐츠를 작성할 수 있습니다. 문서 기반 작성 또는 범용 편집기를 사용한 WYSIWYG 작성을 사용하여 작성하도록 선택할 수 있습니다.
+Edge Delivery Services를 사용하여 쉽고, 빠르고, 유연하게 콘텐츠를 작성할 수 있습니다. 문서 기반 작성 또는 범용 편집기를 사용하는 WYSIWYG 작성 중 선택할 수 있습니다.
 
 자세한 내용은 [Edge Delivery Services용 콘텐츠 작성](/help/edge/wysiwyg-authoring/authoring.md) 문서를 참조하십시오.
 
@@ -44,7 +44,7 @@ Edge Delivery Services를 사용하여 콘텐츠 소스에 관계없이 원활�
 
 Edge Delivery Services는 블록 개념을 기반으로 합니다. AEM에는 프로젝트 요구 사항을 충족하도록 확장할 수 있는 사전 정의된 블록의 포괄적인 라이브러리가 함께 제공됩니다. Edge Delivery Services 프로젝트의 코드는 GitHub에서 관리됩니다.
 
-문서를 참조하십시오. [Edge Delivery Services을 사용한 WYSIWYG 작성에 대한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 추가 정보.
+자세한 내용은 [Edge Delivery Services를 사용한 WYSIWYG 작성용 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 문서를 참조하십시오.
 
 ## 기존 AEM 프로젝트 {#existing-projects}
 
