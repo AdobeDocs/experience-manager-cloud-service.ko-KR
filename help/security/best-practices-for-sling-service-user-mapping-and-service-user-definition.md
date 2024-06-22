@@ -4,10 +4,10 @@ description: Sling 서비스 사용자 매핑 및 서비스 사용자 정의의 
 exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
+source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
+workflow-type: tm+mt
 source-wordcount: '1884'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -189,7 +189,7 @@ AEM 보안 팀은 서비스 사용자가 새로운 서비스 사용자에게 일
 * 범위를 축소합니다.
 
    * 기능별 하위 트리에 액세스 제어 정책을 배치합니다.
-   * 배포된 항목의 경우: 제한을 사용하여 범위를 제한합니다(기본 제공 제한 목록은 [설명서](http://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html) 참조).
+   * 배포된 항목의 경우: 제한을 사용하여 범위를 제한합니다(기본 제공 제한 목록은 [설명서](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html) 참조).
 
 * 일관성을 보장합니다.
 

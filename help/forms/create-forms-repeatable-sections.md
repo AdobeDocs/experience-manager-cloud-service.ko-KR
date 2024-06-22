@@ -4,7 +4,7 @@ description: 적응형 양식에서 반복 가능한 섹션 또는 필드를 만
 role: Architect, Developer, Admin, User
 feature: Adaptive Forms, Core Components
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: d3c5adf0b5b2155308e0bf9f4459682f11b67780
+source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
 workflow-type: tm+mt
 source-wordcount: '1258'
 ht-degree: 8%
@@ -31,10 +31,10 @@ ht-degree: 8%
 * 적응형 양식 구성 요소에 대한 최소 또는 최대 반복 횟수 설정
 * 규칙 편집기를 사용하여 반복 가능한 섹션에 대한 추가 또는 삭제 작업을 구성합니다.
 
-다음을 사용할 수 있습니다. [패널](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), [어코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), [세로 탭](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)  또는 [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) 적응형 양식의 섹션을 반복 가능하게 만들 구성 요소. 이러한 구성 요소에 하위 구성 요소를 추가하여 양식에 반복 가능한 섹션을 만들 수 있습니다.
+다음을 사용할 수 있습니다. [패널](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel), [어코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), [세로 탭](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) 또는 [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) 적응형 양식의 섹션을 반복 가능하게 만들 구성 요소. 이러한 구성 요소에 하위 구성 요소를 추가하여 양식에 반복 가능한 섹션을 만들 수 있습니다.
 
 
-이 문서의 예제는 [패널](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html) 구성 요소. 동일한 단계를 수행하여 다음을 만들 수 있습니다 [패널](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), [어코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), [세로 탭](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) 또는 [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) 구성 요소가 반복 가능합니다.
+이 문서의 예제는 [패널](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) 구성 요소. 동일한 단계를 수행하여 다음을 만들 수 있습니다 [패널](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), [어코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), [세로 탭](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) 또는 [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) 구성 요소가 반복 가능합니다.
 
 ## 양식에서 반복 가능한 섹션 추가 또는 삭제 {#add-or-delete-repeatable-section-in-panel-container}
 
