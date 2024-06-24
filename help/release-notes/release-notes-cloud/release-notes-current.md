@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 68e2f6867a2cbcaf52fa6de259fe118e31ee7573
-workflow-type: ht
+source-git-commit: bd0d35c57e333d861072e189d0bef0ba14700664
+workflow-type: tm+mt
 source-wordcount: '1942'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -122,12 +122,12 @@ ht-degree: 100%
 
 
 
-### AEM Forms의 얼리 어답터 기능 {#forms-new-early-adopter-features}
+### AEM Forms의 조기 액세스 기능 {#forms-new-access-adopter-features}
 
-AEM Forms 얼리 어답터 프로그램은 누구보다 먼저 최첨단 혁신에 독점적으로 액세스할 수 있는 특별한 기회를 제공하며, 혁신의 발전을 구체화하는 데 도움을 줍니다.
+AEM Forms 조기 액세스 프로그램 은 다른 사람들보다 먼저 최신 혁신 기술에 독점적으로 액세스하고 개발을 구체화할 수 있는 특별한 기회를 제공합니다.
 이 프로그램은 여러 혁신에 액세스할 수 있습니다.
 
-이 릴리스 정보에는 현재 릴리스에서 제공되는 혁신 사항이 나열되어 있습니다. 얼리 어답터 프로그램에서 사용할 수 있는 전체 혁신 목록은 [AEM Forms 얼리 어답터 프로그램 설명서](/help/forms/early-adopter-ea-features.md)를 참조하십시오.
+이 릴리스 정보에는 현재 릴리스에서 제공되는 혁신 사항이 나열되어 있습니다. Early Access 프로그램에서 사용할 수 있는 혁신적인 기능의 전체 목록은 다음을 참조하십시오. [AEM Forms 조기 액세스 프로그램 설명서](/help/forms/early-access-ea-features.md).
 
 #### 향상된 봇 보호 방법
 
@@ -152,7 +152,7 @@ Forms 서비스는 데이터 캡처를 위한 대화형 PDF 양식을 생성합�
 
 >[!IMPORTANT]
 >
-> 얼리 어답터 혁신을 위해 얼리 어답터 프로그램에 참여하고 싶다면 공식 주소에서 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)으로 이메일을 보내 액세스를 요청합니다. 전체 또는 특정 혁신에 대한 액세스를 요청할 수 있습니다.
+> 초기 액세스 혁신을 위해 Early Access 프로그램에 참여하고자 하는 경우 공식 주소로 이메일을 보내면 됩니다. [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) 액세스 권한 요청. 전체 또는 특정 혁신에 대한 액세스를 요청할 수 있습니다.
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
@@ -174,7 +174,7 @@ Adobe Developer Console은 다양한 API에 액세스하기 위한 자격 증명
 
 #### 사이트 테마 및 사이트 템플릿을 사용하는 프론트 엔드 코드에 대한 RDE 지원 {#rde-frontend}
 
-[RDE는](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde) 이제 얼리 어답터에 대해 [사이트 테마](/help/sites-cloud/administering/site-creation/site-themes.md) 및 [사이트 템플릿](/help/sites-cloud/administering/site-creation/site-templates.md)을 기반으로 하는 프론트 엔드 코드를 지원합니다. RDE를 사용하면 [프론트 엔드 파이프라인](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)이 아닌 명령줄 지시문을 사용하여 이 작업이 수행됩니다.
+[이제 RDE에서 프론트엔드 코드 지원](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde) 기준 [사이트 테마](/help/sites-cloud/administering/site-creation/site-themes.md) 및 [사이트 템플릿](/help/sites-cloud/administering/site-creation/site-templates.md), 얼리 어답터용 RDE를 사용하면 [프론트 엔드 파이프라인](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)이 아닌 명령줄 지시문을 사용하여 이 작업이 수행됩니다.
 
 #### RDE에 대한 향상된 로깅 {#rde-logging}
 
