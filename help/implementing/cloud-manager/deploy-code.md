@@ -5,7 +5,7 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 3a5451020b8f76f95bcd8bff7b6eabd06be00f31
 workflow-type: tm+mt
 source-wordcount: '1197'
 ht-degree: 93%
@@ -90,7 +90,7 @@ _전체 스택 코드 파이프라인 유형만 코드 스캔, 기능 테스트,
 
 ![스테이지 테스트](assets/stage-testing.png)
 
-## 프로덕션 배포 단계 {#deployment-production}
+## 프로덕션 배포 단계 {#production-deployment}
 
 프로덕션 토폴로지에 배포하는 프로세스는 방문자가 AEM 사이트에 미치는 영향을 최소화하기 위해 약간 달라집니다.
 
