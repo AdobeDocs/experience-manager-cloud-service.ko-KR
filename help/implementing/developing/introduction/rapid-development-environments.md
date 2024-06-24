@@ -4,9 +4,9 @@ description: 클라우드 환경에서 신속한 개발 반복을 위해 빠른 
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3577db15a276bed253c8fa51cbd100e90ec5ef45
+source-git-commit: 85dc92e1adc11a2ee513b7a43e0945b18b2f4790
 workflow-type: tm+mt
-source-wordcount: '4244'
+source-wordcount: '4215'
 ht-degree: 4%
 
 ---
@@ -223,11 +223,6 @@ RDE는 한 번에 하나의 프로젝트를 지원합니다. 코드는 로컬 �
 
 
 ### 글로벌 플래그 {#global-flags}
-
->[!NOTE]
->
-> 이러한 글로벌 플래그는 아직 사용할 수 없습니다. 그들은 6월 중에 출시될 것이다.
-> 
 
 * 덜 자세한 출력의 경우 자동 플래그를 사용합니다.
 
@@ -565,11 +560,6 @@ RDE 재설정 프로세스가 시작되면 일반적으로 완료되어 환경�
 Cloud Manager를 사용하여 환경을 관리하는 방법에 대한 자세한 내용은 [cloud Manager 설명서](/help/implementing/cloud-manager/manage-environments.md).
 
 ## JSON 출력을 지원하는 명령 {#json-commands}
-
->[!NOTE]
->
-> 이 명령은 아직 사용할 수 없습니다. 그들은 6월 중에 출시될 것이다.
-> 
 
 대부분의 명령은 글로벌 ```--json``` 콘솔 출력을 억제하고 스크립트에서 처리할 유효한 json을 반환하는 플래그입니다. 다음은 json 출력의 예와 함께 몇 가지 지원되는 명령입니다.
 
