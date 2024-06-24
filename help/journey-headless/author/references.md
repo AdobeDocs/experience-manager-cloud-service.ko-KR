@@ -3,10 +3,10 @@ title: 콘텐츠 조각의 참조 사용에 대해 알아보기
 description: 콘텐츠, 다른 조각과 자산(미디어)의 콘텐츠 조각에서 참조를 사용하는 방법에 대해 알아봅니다. Headless CMS 작성에서 중첩된 조각의 필요성과 메커니즘을 소개합니다.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 100%
 

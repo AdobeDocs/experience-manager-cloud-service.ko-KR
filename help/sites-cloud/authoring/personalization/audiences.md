@@ -3,9 +3,9 @@ title: 대상자 관리
 description: 대상자 콘솔을 사용하여 Adobe Target 계정에 대한 대상자를 만들고, 구성하고 관리하거나 ContextHub용 세그먼트를 관리할 수 있습니다.
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
 solution: Experience Manager Sites
-feature: Authoring
+feature: Authoring, Personalization
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 86%

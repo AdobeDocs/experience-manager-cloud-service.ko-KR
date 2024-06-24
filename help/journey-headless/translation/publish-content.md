@@ -3,10 +3,10 @@ title: 번역된 Headless 콘텐츠 게시
 description: 번역된 콘텐츠를 게시하고 콘텐츠가 업데이트될 때 번역을 업데이트하는 방법에 대해 알아봅니다.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 100%
 

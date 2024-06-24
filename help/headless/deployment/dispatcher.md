@@ -1,11 +1,12 @@
 ---
 title: AEM Headless를 통한 Dispatcher 엔드포인트 구성
 description: Dispatcher는 Adobe Experience Manager 게시 환경 앞에 있는 캐싱 및 보안 계층입니다. Headless 애플리케이션에 대한 GraphQL 엔드포인트를 여는 데 여러 구성이 사용됩니다.
-feature: Dispatcher, GraphQL API
+feature: Headless, Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
-source-git-commit: 316680823fe4bc85e1f4359305047c0d1f517dc7
-workflow-type: ht
-source-wordcount: '232'
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
+source-wordcount: '212'
 ht-degree: 100%
 
 ---

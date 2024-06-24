@@ -3,13 +3,14 @@ title: GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠 게
 description: GraphQL에서 Headless 콘텐츠 게재를 위해 콘텐츠 조각을 사용하여 AEM Headless CMS를 구현하기 위한 기본 개념을 알아봅니다.
 feature: Content Fragments, GraphQL API
 role: Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
-workflow-type: ht
-source-wordcount: '748'
+exl-id: 3aa7073a-6c6b-47b7-99d8-bba2d9a00af5
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+workflow-type: tm+mt
+source-wordcount: '737'
 ht-degree: 100%
 
 ---
-
 
 # GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠 게재 {#headless-content-delivery-using-content-fragments-with-graphQL}
 

@@ -4,10 +4,10 @@ description: Adobe Experience Manager(AEM) as a Headless CMS를 사용하여 Hea
 landing-page-description: Headless 콘텐츠 게재 및 구현을 이해합니다. 비즈니스 내부에서 전략을 개발하는 방법에 대해 자세히 알아봅니다.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 100%
 

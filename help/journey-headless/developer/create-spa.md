@@ -3,10 +3,10 @@ title: 옵션 - AEM(Adobe Experience Manager)을 통해 단일 페이지 애플�
 description: 지속적인 AEM Headless 개발자 여정의 이 선택적인 구성에서는 AEM이 Headless 게재를 기존 전체 스택 CMS 기능과 결합하는 방법과 AEM의 SPA 편집기 프레임워크를 통해 편집 가능한 SPA를 제작하는 방법에 대해 알아봅니다.
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 100%
 

@@ -2,10 +2,12 @@
 title: API 요청 만들기 - Headless 설정
 description: 콘텐츠 조각 콘텐츠의 Headless 게재를 위해 GraphQL API를 사용하는 방법과 콘텐츠 조각을 관리하기 위해 AEM의 자산 REST API를 사용하는 방법을 알아봅니다.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '674'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -23,7 +25,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->다음 [컨텐츠 조각 및 컨텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md) 사용할 수도 있습니다.
+>[콘텐츠 조각 및 콘텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md)도 사용하실 수 있습니다.
 
 이 안내서의 나머지 부분에서는 GraphQL 액세스 및 콘텐츠 조각 게재에 중점을 둡니다.
 
@@ -106,4 +108,4 @@ GraphQL은 반복적인 API 요청 및 초과 전달을 방지할 수 있으며 
 
 >[!NOTE]
 >
->다음 [컨텐츠 조각 및 컨텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md) 사용할 수도 있습니다.
+>[콘텐츠 조각 및 콘텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md)도 사용하실 수 있습니다.

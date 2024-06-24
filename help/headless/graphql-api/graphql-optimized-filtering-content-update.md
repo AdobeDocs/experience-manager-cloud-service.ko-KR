@@ -2,7 +2,9 @@
 title: 최적화된 GraphQL 필터링을 위해 콘텐츠 조각 업데이트
 description: Adobe Experience Manager as a Cloud Service에서 Headless 콘텐츠 게재를 위한 GraphQL 필터링 최적화 목적으로 콘텐츠 조각을 업데이트하는 방법을 알아봅니다.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 100%

@@ -3,9 +3,9 @@ title: 등록, 로그인 및 사용자 프로필
 description: AEM as a Cloud Service의 등록, 로그인, 사용자 데이터 및 그룹 동기화에 대해 알아봅니다.
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 solution: Experience Manager Sites
-feature: Authoring
+feature: Authoring, Personalization
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 90%

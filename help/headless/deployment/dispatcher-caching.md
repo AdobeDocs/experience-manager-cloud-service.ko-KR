@@ -1,9 +1,10 @@
 ---
 title: GraphQL 지속 쿼리 - Dispatcher에서 캐싱 활성화
 description: Dispatcher는 Adobe Experience Manager 게시 환경 앞에 있는 캐싱 및 보안 계층입니다. AEM Headless에서 지속 쿼리에 대한 캐싱을 활성화할 수 있습니다.
-feature: Dispatcher, GraphQL API
+feature: Headless, Dispatcher, GraphQL API
 exl-id: 30a97e56-6699-41c4-a4eb-fc6236667f8f
-source-git-commit: 859ea382cce6822da1da7d11213c3f44a25edef3
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 89%

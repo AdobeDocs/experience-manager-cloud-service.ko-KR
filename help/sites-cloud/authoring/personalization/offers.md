@@ -3,9 +3,9 @@ title: 오퍼 생성 및 관리(오퍼 콘솔)
 description: 오퍼 콘솔을 사용하여 활동 경험에서 사용할 수 있는 오퍼를 생성하십시오.
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
 solution: Experience Manager Sites
-feature: Authoring
+feature: Authoring, Personalization
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '1351'
 ht-degree: 82%

@@ -4,7 +4,8 @@ description: AEM 콘텐츠 조각의 관련 콘텐츠 기능이 연결을 제공
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 feature: Content Fragments
 role: User
-source-git-commit: 763ef950ffa7642a345977485f56c1187f6ecc0a
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 45%

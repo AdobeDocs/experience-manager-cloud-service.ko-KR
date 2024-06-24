@@ -3,10 +3,10 @@ title: AEM as a Headless CMS용 콘텐츠 모델링 - 소개
 description: 프로젝트 콘텐츠를 모델링하는 Adobe Experience Manager as a Cloud Service as a Headless CMS 기능 사용 소개.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 100%
 

@@ -2,9 +2,9 @@
 title: 콘텐츠 조각 콘솔 및 편집기 모두 사용자 지정 및 확장
 description: 콘텐츠 조각 콘솔과 편집기를 모두 사용자 지정하는 방법을 알아봅니다
 exl-id: a837f09f-9d07-4430-839a-7cf0f200d2df
-feature: Developing
+feature: Developing, Content Fragments
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 9%

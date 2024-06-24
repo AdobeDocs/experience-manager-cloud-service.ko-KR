@@ -2,9 +2,9 @@
 title: 샘플 ContextHub 저장소 후보
 description: ContextHub는 솔루션에서 사용할 수 있는 몇 가지 샘플 저장소 후보를 제공합니다
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
-feature: Developing
+feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 1%

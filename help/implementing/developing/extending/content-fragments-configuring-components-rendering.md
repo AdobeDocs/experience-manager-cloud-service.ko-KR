@@ -2,9 +2,9 @@
 title: 렌더링용 구성 요소를 구성하는 콘텐츠 조각
 description: 렌더링용 구성 요소를 구성하는 콘텐츠 조각
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-feature: Developing
+feature: Developing, Content Fragments
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 5%

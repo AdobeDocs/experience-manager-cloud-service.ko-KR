@@ -3,10 +3,10 @@ title: Headless 콘텐츠에 대한 번역 통합 구성
 description: AEM을 번역 서비스에 연결하는 방법에 대해 알아봅니다.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 100%
 

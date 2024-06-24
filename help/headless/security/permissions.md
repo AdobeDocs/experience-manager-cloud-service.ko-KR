@@ -1,9 +1,10 @@
 ---
 title: Headless 콘텐츠에 대한 권한 고려 사항
 description: Adobe Experience Manager를 사용한 Headless 구현에 대한 다양한 권한 및 ACL 고려 사항에 대해 알아봅니다. Author 및 Publish 환경 모두에 필요한 다양한 가상 사용자 및 잠재적 권한 수준을 이해합니다.
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '811'
 ht-degree: 96%

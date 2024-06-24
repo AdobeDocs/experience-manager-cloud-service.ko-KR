@@ -1,10 +1,11 @@
 ---
 title: 콘텐츠 조각의 원격 AEM GraphQL 쿼리 인증
 description: Headless 콘텐츠 게재를 보호하기 위해 원격 Adobe Experience Manager GraphQL 쿼리에 필요한 인증을 이해합니다.
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 100%
 

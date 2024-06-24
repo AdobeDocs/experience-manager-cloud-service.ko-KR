@@ -2,7 +2,9 @@
 title: 변형 생성
 description: AEM as a Cloud Service 및 Edge Delivery Services Sidekick에서 액세스할 수 있는 변형 생성에 대해 알아봅니다.
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-source-git-commit: 207778a59e18407831292be9bd00ee7973ade78c
+feature: Generate Variations
+role: Admin, Architect, Developer
+source-git-commit: bbc51796c610af02b5260c063213cde2ef610ba2
 workflow-type: tm+mt
 source-wordcount: '3262'
 ht-degree: 1%
@@ -380,7 +382,7 @@ Adobe은 사용할 여러 대상을 제공합니다.
 1. Google 드라이브에서 두 개의 열이 있는 스프레드시트 파일을 만듭니다.
    1. 첫 번째 열이 드롭다운에 표시됩니다.
    1. 두 번째 열이 대상자 설명이 됩니다.
-1. 파일 게시:
+1. 파일 Publish:
    1. 파일 -> 공유 -> 웹에 게시 -> CSV
 1. 게시된 파일에 URL을 복사합니다.
 1. 변형 생성으로 이동합니다.

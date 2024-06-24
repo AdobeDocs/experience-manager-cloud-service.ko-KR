@@ -3,10 +3,10 @@ title: 콘텐츠를 모델링하는 방법
 description: 이 Adobe Experience Manager(AEM) Headless 개발자 여정의 부분에서는 콘텐츠 조각 모델 및 콘텐츠 조각과 함께 콘텐츠 모델링을 사용하여 AEM Headless 게재에 콘텐츠를 모델링하는 방법에 대해 알아봅니다.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '1814'
 ht-degree: 100%
 
