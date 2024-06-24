@@ -1,31 +1,31 @@
 ---
-title: 의 현재 얼리 어답터 기능 [!DNL Adobe Experience Manager Forms] as a Cloud Service.
-description: 의 현재 얼리 어답터 기능 [!DNL Adobe Experience Manager Forms] as a Cloud Service.
+title: 의 현재 조기 액세스 기능 [!DNL Adobe Experience Manager Forms] as a Cloud Service.
+description: 의 현재 조기 액세스 기능 [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 2766a351938062127babb01d5ed35bd37b705c21
+source-git-commit: 0c49e0ba5deb3659418cb0d057151863beac5340
 workflow-type: tm+mt
 source-wordcount: '1733'
 ht-degree: 22%
 
 ---
 
-# AEM Forms 얼리 어답터 프로그램
+# AEM Forms 조기 액세스 프로그램
 
-AEM Forms 얼리 어답터 프로그램(Early Adopter Program)은 다른 사용자보다 먼저 최신 기능을 독점적으로 이용하고 개발을 구체화할 수 있는 특별한 기회를 제공합니다. 이 프로그램은 다음을 제공합니다.
+AEM Forms 조기 액세스 프로그램 은 다른 사람들보다 먼저 최신 기능에 독점적으로 액세스하고 개발을 구체화할 수 있는 특별한 기회를 제공합니다. 이 프로그램은 다음을 제공합니다.
 
 * 최신 기술이 주류에 도달하기 전에 먼저 접해보십시오.
 * 제품 팀과 함께 혁신하여 제품의 미래를 함께 형성하십시오. 사용 사례를 사용하여 개발을 안내하고 혁신이 성숙되도록 하며 실제 과제를 해결합니다.
 * 론치 전에 피드백을 제공하고 스쿼시 문제를 해결하여 전체 릴리스 시 더 원활한 사용자 경험을 제공할 수 있습니다.
 
-## 얼리 어답터 프로그램에 가입하는 방법?
+## 조기 액세스 프로그램에 가입하는 방법
 
-얼리어답터 혁신을 위해 얼리어답터 프로그램에 참여하고자 하는 경우, 공식 주소로 이메일을 보내십시오. [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  액세스 권한 요청. 전체 또는 특정 혁신에 대한 액세스를 요청할 수 있습니다.
+Early Access의 혁신적인 기능을 위해 Early Access 프로그램에 참여하고자 하는 경우, 공식 주소로 이메일을 보내십시오. [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  액세스 권한 요청. 전체 또는 특정 혁신에 대한 액세스를 요청할 수 있습니다.
 
-## 얼리 어답터 혁신
+## 초기 액세스 혁신
 
 ### AEM Forms Generative AI (Gen AI)
 
@@ -102,7 +102,7 @@ AEM Forms to Marketo 커넥터는 Adobe Experience Manager(AEM)로 빌드된 웹
 본질적으로 AEM Forms-Marketo 커넥터는 두 플랫폼의 장점을 활용하여 보다 효율적이고 효과적인 마케팅 단계를 만들 수 있도록 지원합니다.
 
 
-## 추가적인 얼리 어답터 혁신 기능
+## 추가적인 조기 액세스 혁신
 
 ### RTL(오른쪽에서 왼쪽) 언어 지원
 
