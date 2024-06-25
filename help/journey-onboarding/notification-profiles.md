@@ -4,10 +4,10 @@ description: 중요한 이메일 알림 수신을 관리하기 위해 Admin Cons
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
-source-wordcount: '982'
-ht-degree: 100%
+source-git-commit: 53a3a4c47becf58f8874083e2878fa3458d6cad7
+workflow-type: tm+mt
+source-wordcount: '1130'
+ht-degree: 80%
 
 ---
 
@@ -23,9 +23,12 @@ ht-degree: 100%
 * **문제 알림** - 이러한 알림은 문제 중에 또는 Adobe가 AEM as a Cloud Service 환경의 잠재적 가용성 문제를 식별한 경우 전송됩니다.
 * **사전 알림** - 이러한 알림은 Adobe 지원 팀원이 AEM as a Cloud Service 환경에 도움이 될 수 있는 잠재적인 최적화 또는 권장 사항에 대한 지침을 제공하고자 할 때 전송됩니다.
 
->[!NOTE]
->
->사전 알림에 그룹 할당은 지원되지 않습니다. 대신 사용자를 제품 프로필에 직접 할당해야 합니다.
+사용자는 또한 를 기반으로 특정 프로그램에 대한 이러한 알림을 받을 수 있습니다. [사용자 지정 그룹 권한.](/help/implementing/cloud-manager/custom-permissions.md)
+
+또한 사전 알림에 그룹 할당이 지원되며 사용자와 그룹을 제품 프로필에 직접 할당할 수 있습니다.
+
+* 문제 및 사전 알림 그룹의 사용자는 기본적으로 모든 프로그램에 대한 알림을 받습니다.
+* 그러나 사용자가 모든 알림을 수신하지 않으려면 사용자 지정 읽기 권한을 사용하여 수신하려는 프로그램 알림을 지정할 수 있습니다.
 
 올바른 사용자가 이러한 알림을 수신하도록 하려면 이 문서에 설명된 대로 사용자 프로필을 구성하고 할당해야 합니다.
 
@@ -60,7 +63,8 @@ ht-degree: 100%
 
    * **제품 프로필 이름**: `Incident Notification - Cloud Service`
    * **표시 이름**: `Incident Notification - Cloud Service`
-   * **설명**: 문제 중에 또는 Adobe가 AEM as a Cloud Service 환경에서 잠재적인 가용성 문제를 식별한 경우 알림을 받을 사용자를 위한 Cloud Manager 프로필
+   * **설명**: 문제 중에 또는 Adobe이 AEM as a Cloud Service 환경에서 잠재적인 가용성 문제를 식별한 경우 알림을 받을 사용자를 위한 Cloud Manager 프로필.
+      * 특정 프로그램에 대한 사용자 정의 읽기 권한이 있는 사용자가 사용자 정의 권한을 사용하도록 선택하는 경우 해당 프로그램에 대한 알림만 받습니다.
 
 1. **저장**&#x200B;을 클릭합니다.
 
@@ -69,6 +73,7 @@ ht-degree: 100%
    * **제품 프로필 이름**: `Proactive Notification - Cloud Service`
    * **표시 이름**: `Proactive Notification - Cloud Service`
    * **설명** - Adobe 지원 팀원이 AEM as a Cloud Service 환경 구성과 관련해 잠재적인 최적화 또는 권장 사항에 대한 지침을 제공하고자 할 때 알림을 받을 사용자를 위한 Cloud Manager 프로필
+      * 특정 프로그램에 대한 사용자 정의 읽기 권한이 있는 사용자가 사용자 정의 권한을 사용하도록 선택하는 경우 해당 프로그램에 대한 알림만 받습니다.
 
 1. **저장**&#x200B;을 클릭합니다.
 
@@ -88,7 +93,7 @@ ht-degree: 100%
 
 Federated ID가 아직 설정되지 않은 사용자를 추가하려면 다음 단계를 따르십시오.
 
-1. 문제 또는 사전 알림을 수신해야 하는 사용자를 식별합니다.
+1. 문제 또는 사전 알림을 수신해야 하는 사용자 또는 그룹을 식별합니다.
 
 1. 아직 로그인하지 않은 경우 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)에서 Admin Console에 로그인합니다.
 
@@ -113,13 +118,15 @@ Federated ID가 아직 설정되지 않은 사용자를 추가하려면 다음 �
 
 1. **저장**&#x200B;을 클릭하면 추가한 사용자에게 시작 이메일이 전송됩니다.
 
-이제 초대된 사용자가 알림을 받게 됩니다. 알림을 받으려는 팀의 사용자에 대해 이 단계를 반복합니다.
+이제 초대된 사용자가 알림을 받게 됩니다. 특정 프로그램에 대한 사용자 정의 읽기 권한이 있는 사용자가 사용자 정의 권한을 사용하도록 선택하는 경우 해당 프로그램에 대한 알림만 받습니다.
+
+알림을 받으려는 팀의 사용자에 대해 이 단계를 반복합니다.
 
 ### 프로필에 기존 사용자 추가 {#existing-user}
 
 Federated ID가 이미 존재하는 사용자를 추가하려면 다음 단계를 따르십시오.
 
-1. 문제 또는 사전 알림을 수신해야 하는 사용자를 식별합니다.
+1. 문제 또는 사전 알림을 수신해야 하는 사용자 또는 그룹을 식별합니다.
 
 1. 아직 로그인하지 않은 경우 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)에서 Admin Console에 로그인합니다.
 
@@ -142,7 +149,9 @@ Federated ID가 이미 존재하는 사용자를 추가하려면 다음 단계�
 
 1. **저장**&#x200B;을 클릭하면 추가한 사용자에게 시작 이메일이 전송됩니다.
 
-이제 초대된 사용자가 알림을 받게 됩니다. 알림을 받으려는 팀의 사용자에 대해 이 단계를 반복합니다.
+이제 초대된 사용자가 알림을 받게 됩니다. 특정 프로그램에 대한 사용자 정의 읽기 권한이 있는 사용자가 사용자 정의 권한을 사용하도록 선택하는 경우 해당 프로그램에 대한 알림만 받습니다.
+
+알림을 받으려는 팀의 사용자에 대해 이 단계를 반복합니다.
 
 ## 추가 리소스 {#additional-resources}
 
