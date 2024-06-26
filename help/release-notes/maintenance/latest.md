@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: fd687498a8c72bf5d47b7b97aadf22d7d1e8dd2b
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 26%
+ht-degree: 96%
 
 ---
 
@@ -17,63 +17,63 @@ ht-degree: 26%
 
 ## 릴리스 16799 {#release-16799}
 
-다음은 2024년 6월 18일에 공개적으로 릴리스된 유지 보수 릴리스 16799에 대한 지속적인 개선 사항을 요약했습니다. 이전 유지 관리 릴리스는 릴리스 16544.
+2024년 6월 18일에 릴리스된 유지 관리 릴리스 16799의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이전 유지 관리 릴리스는 릴리스 16544이었습니다.
 
 이 유지 관리 릴리스(2024.6.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
 
 ### 개선 사항 {#enhancements-16799}
 
-* ASSETS-31977: 에셋 이동, 복사 및 삭제 작업이 개선되었습니다.
-* ASSETS-33618: Dynamic Media의 비디오에 대한 자동 전사 및 번역 기능.
-* ASSETS-35185: ContentHub 및 DM에 대한 승인 작업을 수행하고 damAssetLucene 속성에 속성을 추가합니다.
-* ASSETS-35533: DRM 및 CAI 속성을 damAssetLucene 인덱스에 추가합니다.
-* ASSETS-37280: 소스 자막(vtt)이 처리 중일 때 번역에 대한 순차적 작업 처리.
-* ASSETS-37559: 에셋 삭제 이벤트가 개선되었습니다.
-* ASSETS-37723: 에셋 게시 이벤트를 구현합니다.
+* ASSETS-31977: 자산 이동, 복사 및 삭제 작업이 개선되었습니다.
+* ASSETS-33618: Dynamic Media의 비디오에 대한 자동 트랜스크립션 및 번역 기능입니다.
+* ASSETS-35185: ContentHub 및 DM에 대한 승인 작업을 수행했으며 damAssetLucene 속성에 속성이 추가되었습니다.
+* ASSETS-35533: damAssetLucene 색인에 DRM 및 CAI 속성이 추가되었습니다.
+* ASSETS-37280: 소스 자막(vtt)이 아직 처리 중인 경우 번역을 위한 작업이 순차적으로 처리됩니다.
+* ASSETS-37559: 자산 삭제 이벤트가 개선되었습니다.
+* ASSETS-37723: 자산 게시 이벤트를 구현합니다.
 * ASSETS-37724: 자산 게시 취소 이벤트를 구현합니다.
-* ASSETS-38614: 링크 UI 공유 개선 사항.
-* ASSETS-39601: 유효성 검사 정규 표현식을 자산 라이브 카피 이름에 자동으로 적용합니다.
-* ASSETS-39454: Quickstart에서 viewer 2024.5.0으로 업그레이드합니다.
-* CNTBF-184: 지원 경로 `/conf` 컨텐츠 백플로우에서.
+* ASSETS-38614: 공유 링크 UI가 향상되었습니다.
+* ASSETS-39601: Asset Live Copy 이름에 정규 표현식 검사를 자동으로 적용합니다.
+* ASSETS-39454: 빠른 시작의 뷰어가 2024.5.0으로 업그레이드되었습니다.
+* CNTBF-184: 콘텐츠 백플로우에서 `/conf` 아래 경로가 지원됩니다.
 
 ### 해결된 문제 {#fixed-issues-16799}
 
-* ASSETS-37335: 필터에서 검색 패널을 편집하면 모든 상자의 선택이 취소됩니다.
-* ASSETS-38069: 타임라인 필터 선택 시 AEM DAM PDF 미리 보기 문제.
-* ASSETS-38215: Adobe Stock AEM 라이선스 단추가 기업 가입을 위해 as a Cloud Service으로 회색으로 표시됩니다.
-* ASSETS-38578: 에셋 링크 공유 보고서의 잘못된 하이퍼링크.
-* ASSETS-38678: 컬렉션 세부 사항에서 끊어진 설정을 봅니다.
-* ASSETS-39071: 원본 렌디션 mimetype이 null인 경우 웹에 최적화된 전달에서 예외가 발생할 수 있습니다.
-* ASSETS-39316: 이름별 정렬이 컬렉션에서 작동하지 않습니다.
-* ASSETS-39377: 원격 API에서 역압을 받으면 OneDrive에서 대량 가져오기가 실패할 수 있습니다.
-* ASSETS-39428: 저작권 관리 UI의 렌더링 문제.
-* CQ-4357150: cq-content-sync 번들의 구아바
-* GRANITE-52573: 이중 슬래시가 포함된 요청 `//` 거부되었습니다(상태 코드 400).
-* SCRNS-4194: Google Guava API에 대한 종속성을 제거합니다.
-* SCRNS-4360: 채널 컨텐츠 공급자에 관리자가 아닌 사용자를 위한 게시 관리 및 빠른 게시 단추가 없습니다.
-* SCRNS-4323: screens.html에서 론치를 숨기거나 비활성화합니다.
+* ASSETS-37335: 필터에서 검색 패널을 편집하면 모든 상자가 선택 취소됩니다.
+* ASSETS-38069: 타임라인 필터 선택에 대한 AEM DAM PDF 미리보기 문제가 발생합니다.
+* ASSETS-38215: 기업용 AEM as a Cloud Service 구독에서 Adobe Stock 라이선스 버튼이 회색으로 표시됩니다.
+* ASSETS-38578: 자산 링크 공유 보고서의 하이퍼링크가 잘못되었습니다.
+* ASSETS-38678: 컬렉션 세부 사항에서 보기 설정이 손상되었습니다.
+* ASSETS-39071: 원본 변환 MIME 유형이 null인 경우 웹 최적화 게재에서 예외가 발생할 수 있습니다.
+* ASSETS-39316: 컬렉션에서 이름별 정렬이 작동하지 않습니다.
+* ASSETS-39377: 원격 API에서 배압을 수신하면 OneDrive에서 일괄 가져오기가 실패할 수 있습니다.
+* ASSETS-39428: 저작권 관리 UI에 렌더링 문제가 발생합니다.
+* CQ-4357150: cq-content-sync 번들의 Guava.
+* GRANITE-52573: 이중 슬래시 `//`가 포함된 요청은 상태 코드 400으로 거부됩니다.
+* SCRNS-4194: Google Guava API에 대한 종속성이 제거됩니다.
+* SCRNS-4360: 채널용 콘텐츠 공급자에서 관리자가 아닌 사용자를 위한 게시 관리 및 빠른 게시 버튼이 누락됩니다.
+* SCRNS-4323: screens.html에서 실행이 숨겨지거나 비활성화됩니다.
 
 ### 알려진 문제 {#known-issues-16799}
 
 >[!NOTE]
-> AEM Engineering에서는 Analytics로 시작하는 현재 AEM 릴리스에 영향을 주는 론치 기능에 대한 회귀 문제를 16461. 이러한 회귀 현상으로 인해, 딥이 아닌 페이지를 포함하는 새 론치(새 릴리스가 적용된 후 생성됨)는 누락된 구성으로 인해 제대로 홍보되지 않습니다.
-> 환경이 영향을 받는 경우 고객 지원을 통해 누락된 구성을 식별하고 업데이트하는 셸 스크립트를 사용할 수 있습니다(내부 참조 SITES-22457).
-> 올바른 구성으로 새 론치를 만들 수 있도록 하는 보다 장기적인 수정 사항이 제공됩니다. 그때까지 온디맨드로 내부 패치 릴리스도 이용할 수 있습니다.
+> AEM Engineering이 16461부터 시작하는 현재 AEM 릴리스에 영향을 미치는 론치 기능에 대한 회귀를 식별했습니다. 이러한 회귀로 인해 딥 페이지가 아닌 페이지를 포함하는 새 론치(새 릴리스가 적용된 후 생성됨)는 누락된 구성으로 인해 제대로 승격되지 않습니다.
+> 귀하의 환경이 영향을 받는 경우 누락된 구성을 식별하고 업데이트하는 셸 스크립트를 고객 지원 센터에서 제공합니다(내부 참조 SITES-22457).
+> 새로운 론치가 올바른 구성으로 생성되도록 보장하는 장기적인 수정 사항이 제공될 예정입니다. 그때까지 요청 시 내부 패치 릴리스도 제공됩니다.
 
 #### Forms
 
-1. 사용자가 보다 큰 AEM Forms SDK 버전을 다운로드하는 경우 `AEM Forms add-on v2024.05.04.00-240400`, 배치 파일이 Docker 서비스를 시작하지 못했습니다. 이 문제를 해결하려면 다음을 수행하십시오.
-   1. 다운로드 [폴더](/help/forms/assets/sdk_hotfix.zip).
-   1. 다운로드한 폴더에서 콘텐츠를 추출하고 `sdk.sh` 및 `sdk.bat` 파일.
-   1. 기존 항목 바꾸기 `sdk.sh` 및 `sdk.bat` AEM Forms SDK에 있는 파일과 새 파일.
+1. 사용자가 보다 큰 AEM Forms SDK 버전을 다운로드하는 경우 `AEM Forms add-on v2024.05.04.00-240400`, 배치 파일이 Docker 서비스를 시작하지 못했습니다. 이 문제를 해결하려면 다음 작업을 수행하십시오.
+   1. [폴더](/help/forms/assets/sdk_hotfix.zip)를 다운로드합니다.
+   1. 다운로드한 폴더에서 콘텐츠를 추출하고 `sdk.sh` 및 `sdk.bat` 파일을 복사합니다.
+   1. AEM Forms SDK의 기존 `sdk.sh` 및 `sdk.bat` 파일을 새 파일로 바꿉니다.
 
 ### 변경 사항 공지 {#change-notice-16799}
 
-* 이 릴리스에는 다음과 같은 새 제품 색인 버전이 포함되어 있습니다.
+* 이 릴리스에는 다음과 같은 새로운 제품 인덱스 버전이 포함되어 있습니다.
    * **damAssetLucene-11**
-   * **fragments-11**
+   * **조각-11**
 
-  이전 색인 버전의 사용자 지정 버전은 새 제품 색인 버전과 자동으로 병합됩니다. 병합된 버전에 추가 사용자 정의 업데이트를 적용하십시오.
+  이전 색인 버전의 사용자 정의 버전은 새 제품 색인 버전과 자동으로 병합됩니다. 병합된 버전에 추가 사용자 정의 업데이트를 적용하십시오.
 
 * 2024년 9월부터 AEM as a Cloud Service는 Sling Model Exporter 프레임워크를 통해 Resource Resolver의 직렬화를 비활성화합니다. 자세한 내용은 [설명서](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)를 참조하십시오.
 
