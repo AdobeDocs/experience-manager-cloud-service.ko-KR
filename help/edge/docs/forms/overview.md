@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
 source-git-commit: 2766a351938062127babb01d5ed35bd37b705c21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1043'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ AEM Forms Edge Delivery Services는 새 양식을 빠르게 업데이트, 게시
 
 이러한 서비스를 통해 다음이 가능합니다.
 
-* **원하는 도구를 사용하여 등록 경험 조성**: 콘텐츠 소스를 분리하여 작성 효율성을 높입니다. 즉시 문서 기반 작성(Microsoft SharePoint 또는 Google 드라이브), WYSIWYG 작성(범용 편집기 또는 적응형 Forms 편집기)을 사용할 수 있습니다. 동일한 양식 사이트에서 여러 컨텐츠 소스로 작업하고 Microsoft Excel, Google Sheets, 범용 편집기 또는 적응형 Forms 편집기와 같은 기본 작성 도구를 사용할 수 있습니다.
+* **원하는 도구를 사용하여 등록 경험 조성**: 콘텐츠 소스를 분리하여 작성 효율성을 높입니다. 기본적으로 문서 기반 작성(Microsoft SharePoint 또는 Google Drive)과 WYSIWYG 작성(범용 편집기 또는 적응형 양식 편집기)을 사용할 수 있습니다. 동일한 양식 사이트에서 여러 콘텐츠 소스로 작업하고 Microsoft Excel, Google Sheets, 범용 편집기 또는 적응형 양식 편집기 등 선호하는 작성 도구를 사용할 수 있습니다.
 
 * **뛰어난 디지털 등록 경험 제공:** 실제 사용 모니터링(RUM)을 통해 신속하게 로드 및 렌더링하고 양식 성능을 지속적으로 모니터링하는 디지털 등록 경험을 제공합니다. 로드 시간이 빠르고 사용자 경험이 최적화되어 있으면 양식 작성률과 전환율을 향상할 수 있습니다.
 
@@ -25,11 +25,11 @@ AEM Forms Edge Delivery Services는 새 양식을 빠르게 업데이트, 게시
 
 ## AEM Forms Edge Delivery Services 개요 {#edge-overview}
 
-AEM Forms Edge Delivery 서비스를 사용하면 웹 사이트에서 양식을 작성하는 방법과 관련해 높은 수준의 유연성을 누릴 수 있습니다. 을 사용하여 콘텐츠 및 양식을 작성할 수 있습니다. [WYSIWYG 작성](/help/forms/creating-adaptive-form-core-components.md) 뿐만 아니라 [문서 기반 작성](/help/edge/docs/forms/create-forms.md). AEM Forms Edge Delivery Services에서 제공되는 [적응형 양식 블록](/help/edge/docs/forms/create-forms.md)이라는 양식 블록을 사용하여 Edge Delivery Services 사이트에 양식을 추가할 수 있습니다.
+AEM Forms Edge Delivery 서비스를 사용하면 웹 사이트에서 양식을 작성하는 방법과 관련해 높은 수준의 유연성을 누릴 수 있습니다. [WYSIWYG 작성](/help/forms/creating-adaptive-form-core-components.md)뿐만 아니라 [문서 기반 작성](/help/edge/docs/forms/create-forms.md)을 사용하여 콘텐츠 및 양식을 작성할 수 있습니다. AEM Forms Edge Delivery Services에서 제공되는 [적응형 양식 블록](/help/edge/docs/forms/create-forms.md)이라는 양식 블록을 사용하여 Edge Delivery Services 사이트에 양식을 추가할 수 있습니다.
 
 예를 들어 Microsoft Excel 또는 Google Sheets에서 직접 양식을 작성하면 이러한 스프레드시트가 웹 사이트용 양식으로 변환됩니다. 새 양식 필드와 같은 새 양식이나 양식 콘텐츠를 재빌드 프로세스 없이 웹 사이트에서 즉시 사용할 수 있습니다.
 
-다음 다이어그램은 Microsoft Excel 또는 Google Sheets(문서 기반 편집)에서 양식을 편집하고 Edge Delivery Services에 게시하는 방법을 보여 줍니다. 또한 WYSIWYG 작성(범용 편집기 또는 적응형 Forms 편집기)을 사용하는 AEM 게시 방법을 보여 줍니다.
+다음 다이어그램은 Microsoft Excel 또는 Google Sheets(문서 기반 편집)에서 양식을 편집하고 Edge Delivery Services에 게시하는 방법을 보여 줍니다. 또한 WYSIWYG 작성(범용 편집기 또는 적응형 양식 편집기)을 사용하는 AEM 게시 방법을 보여 줍니다.
 
 ![Edge Delivery Services 및 AEM에 게시](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
 
@@ -39,16 +39,16 @@ AEM Forms Edge Delivery Services는 GitHub를 사용하므로 고객은 GitHub �
 
 ![AEM SideKick 설치](/help/edge/assets/aem-sidekick-preview-publish-forms.png)
 
-다음 중에서 선택 [문서 기반 작성](#document-based-authoring-features) 및 [WYSIWYG 작성](#wysiwyg-authoring-features) 은 특정 요구 사항에 따라 다릅니다.
+[문서 기반 작성](#document-based-authoring-features)과 [WYSIWYG 작성](#wysiwyg-authoring-features) 중 무엇을 선택할지는 특정 요구 사항에 따라 다릅니다.
 
 * 몇 가지 필드(연락처 양식, 리드 생성 양식 또는 서비스 요청 양식 등)로 기본 정보를 수집하는 간단한 양식이며 스프레드시트를 사용하여 데이터를 빠르게 연결해야 하는 경우 [문서 기반 작성](#document-based-authoring-features)이 적합합니다. Google Sheets 또는 Microsoft Excel에서 문서를 작성하는 방식과 동일하게 이러한 양식을 작성할 수 있습니다.
 
-* 여러 패널이 필요한 양식, 복잡한 규칙 및 비즈니스 로직, 데이터 조작, 외부 시스템과의 통합 또는 AEM 기능을 사용한 간소화된 워크플로와 같은 복잡한 양식의 경우 다음을 수행합니다 [WYSIWYG 작성](#wysiwyg-authoring-features) 더 나은 선택입니다.
+* 여러 패널, 복잡한 규칙 및 비즈니스 논리, 데이터 조작, 외부 시스템과의 통합 또는 AEM 기능을 사용한 간소화된 워크플로가 필요한 양식처럼 복잡한 양식의 경우 [WYSIWYG 작성](#wysiwyg-authoring-features)이 더 나은 옵션입니다.
 
 
-### 문서 기반 작성 및 WYSIWYG 작성의 주요 기능
+### 문서 기반 작성 및 WYSIWYG 작성의 주요 특징
 
-문서 기반 작성은 기본 기능 세트를 제공하며 WYSIWYG 작성은 문서 기반 작성 이상의 추가 기능을 잠금 해제하여 보다 복잡하고 대화형 양식을 작성할 수 있도록 해 줍니다. 문서 기반 작성 및 WYSIWYG 작성의 주요 기능은 다음과 같습니다.
+문서 기반 작성에서는 기본 기능 세트가 제공되며, WYSIWYG 작성에서는 문서 기반 작성 이상의 추가 기능을 활용하여 더 복잡한 대화형 양식을 빌드할 수 있습니다. 문서 기반 작성과 WYSIWYG 작성의 주요 특징은 다음과 같습니다.
 
 #### 문서 기반 작성 특징
 
@@ -65,7 +65,7 @@ AEM Forms Edge Delivery Services는 GitHub를 사용하므로 고객은 GitHub �
 
 #### WYSIWYG 작성 기능
 
-WYSIWYG 작성은 양식 작성을 위한 WYSIWYG 인터페이스(범용 편집기 및 적응형 Forms 편집기)를 제공하며 문서 기반 작성의 모든 기능과 다양한 추가 기능을 제공합니다.
+WYSIWYG 작성에서는 양식 작성에 WYSIWYG 인터페이스(범용 편집기 및 적응형 양식 편집기)가 제공되며, 문서 기반 작성의 모든 기능과 함께 다음과 같은 광범위한 추가 기능이 있습니다.
 
 * 복잡한 로직을 생성하기 위한 고급 규칙 편집기.
 * 사용자 정의 기능을 위한 서버측 확장성.
@@ -77,18 +77,18 @@ WYSIWYG 작성은 양식 작성을 위한 WYSIWYG 인터페이스(범용 편집�
 * 다양한 데이터 소스와의 데이터 구조 및 상호 작용을 정의하기 위한 양식 데이터 모델(FDM).
 * Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics, 더 많은 데이터 소스에 데이터를 제출하는 기능을 포함하여 양식 제출을 처리하기 위한 여러 제출 작업 중에서 선택할 수 있는 기능.
 
-위의 모든 기능은 적응형 Forms 편집기를 통해서도 사용할 수 있습니다.
+위의 모든 기능은 적응형 양식 편집기를 통해서도 사용할 수 있습니다.
 
-기본적으로 WYSIWYG 작성(유니버설 편집기 및 [적응형 Forms 편집기](/help/forms/creating-adaptive-form-core-components.md))는 의 기초를 기반으로 합니다. [문서 기반 작성](/help/edge/docs/forms/create-forms.md)복잡한 양식을 만들고 관리하기 위한 고급 툴킷을 제공합니다.
+본질적으로 WYSIWYG 작성(범용 편집기 및 [적응형 양식 편집기](/help/forms/creating-adaptive-form-core-components.md))은 [문서 기반 작성](/help/edge/docs/forms/create-forms.md)을 기반으로 빌드되며, 복잡한 양식을 생성하고 관리하기 위한 고급 도구 키트가 제공됩니다.
 
 >[!NOTE]
 >
 >
-> WYSIWYG 작성 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 관심이 있는 경우 회사 주소에서 aem-forms-ea@adobe.com으로 간단한 이메일을 보내 해당 기능에 대한 액세스를 요청하시기 바랍니다.
+> WYSIWYG 작성 기능은 얼리 어답터 프로그램을 통해 사용할 수 있습니다. 관심이 있는 경우 회사 주소에서 aem-forms-ea@adobe.com으로 간단한 이메일을 보내 해당 기능에 대한 액세스를 요청하시기 바랍니다.
 
 ### AEM Forms Edge Delivery Services: 양식 작성, 게시 및 제출
 
-다음 다이어그램은 문서 기반 작성 및 WYSIWYG 작성을 사용하여 양식을 작성, 게시 및 제출하는 프로세스를 보여 줍니다.
+다음 다이어그램은 문서 기반 작성 및 WYSIWYG 작성을 사용하여 양식을 만들고, 게시하고, 제출하는 프로세스를 보여 줍니다.
 
 ![문서 기반 작성 ](/help/edge/assets/document-based-authoring-workflow.png)
 
