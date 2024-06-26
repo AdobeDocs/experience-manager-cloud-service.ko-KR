@@ -2,16 +2,16 @@
 title: 배달 API
 description: 배달 API를 사용하는 방법을 알아봅니다.
 role: User
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
 
 # 배달 API {#delivery-apis}
 
-모두 [승인된 에셋](approved-assets.md) Experience Manager 에셋 저장소에서 사용할 수 있는 유형은 다음과 같습니다 [검색됨](search-assets-api.md) 그런 다음 게재 URL을 사용하여 통합된 다운스트림 애플리케이션에 전달됩니다.
+모두 [승인된 에셋](approve-assets.md) Experience Manager 에셋 저장소에서 사용할 수 있는 유형은 다음과 같습니다 [검색됨](search-assets-api.md) 그런 다음 게재 URL을 사용하여 통합된 다운스트림 애플리케이션에 전달됩니다.
 
 버전 업데이트 및 메타데이터 수정 사항을 포함하여 DAM의 승인된 에셋에 대한 모든 변경 사항은 게재 URL에 자동으로 반영됩니다. CDN을 통한 에셋 전달에 대해 구성된 10분의 짧은 TTL(Time-to-Live) 값을 사용하면 10분 이내에 모든 작성 및 게시된 인터페이스에 업데이트가 표시됩니다.
 
@@ -23,9 +23,10 @@ ht-degree: 0%
 
 | 배달 API | 설명 |
 |---|---|
-| [요청된 출력 형식의 자산에 대한 웹에 최적화된 이진 표현](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/getAssetSeoFormat) | 요청에서 보낸 에셋 ID를 기반으로 요청된 출력 형식으로 에셋의 웹에 최적화된 이진 표현을 반환합니다. 또한 폭, 높이, 회전, 뒤집기, 품질 등과 같은 다양한 이미지 수정자를 정의할 수 있습니다. 다음을 참조하십시오. [API 세부 정보](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/getAssetSeoFormat) 지원되는 형식 및 이미지 수정자의 경우.<br>Adobe은 모든 이미지 형식 유형에 이 API를 사용하는 것을 권장합니다. |
+| [요청된 출력 형식의 자산에 대한 웹에 최적화된 이진 표현](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/getAssetSeoFormat) | 요청에서 보낸 에셋 ID를 기반으로 요청된 출력 형식으로 에셋의 웹에 최적화된 이진 표현을 반환합니다. 또한 폭, 높이, 회전, 뒤집기, 품질, 자르기, 형식 및 [스마트 자르기](/help/assets/dynamic-media/image-profiles.md). 다음을 참조하십시오. [API 세부 정보](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/getAssetSeoFormat) 지원되는 형식 및 이미지 수정자의 경우.<br>Adobe은 모든 이미지 형식 유형에 이 API를 사용하는 것을 권장합니다. |
 | [웹에 최적화된 에셋 바이너리 표시](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/getAsset) | 응답에서 반환된 에셋의 웹에 최적화된 이진 표현에 기본값을 적용하는 편의 API입니다. 기본값에는 표준 JPEG/WEBP 형식, 품질 => 65, 너비 => 1024가 포함됩니다. |
 | [원래 업로드된 에셋 바이너리](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/getAssetOriginal) | 에셋에 대해 원래 업로드된 바이너리를 반환합니다. Adobe은 문서 형식 유형 및 SVG 이미지에 이 API를 사용하는 것을 권장합니다. |
+| [AEM Assets 작성 환경에서 사용할 수 있는 에셋의 사전 생성된 렌디션](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/getAssetRendition) | 요청에서 전송된 자산 ID 및 렌디션 이름을 기반으로 AEM Assets 작성 환경에서 사용할 수 있는 자산 렌디션의 비트스트림을 반환합니다. |
 | [에셋 메타데이터](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/getAssetMetadata) | title, description, CreateDate, ModifyDate 등과 같이 에셋과 연결된 속성을 반환합니다. |
 | [비디오 자산에 대한 플레이어 컨테이너](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/videoPlayerDelivery) | 비디오 자산에 대한 플레이어 컨테이너를 반환합니다. 플레이어를 iframe HTML 요소에 임베드하고 비디오를 재생할 수 있습니다. |
 | [선택한 형식의 재생 매니페스트](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/videoManifestDelivery) | 지정된 비디오 자산에 대한 재생 매니페스트 파일을 선택한 출력 형식으로 반환합니다. 재생 매니페스트 파일을 가져와서 비디오를 재생하려면 HLS 또는 DASH 프로토콜을 통해 적응형 스트리밍이 가능한 사용자 지정 플레이어를 빌드해야 합니다. |

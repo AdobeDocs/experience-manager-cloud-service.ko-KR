@@ -1,19 +1,17 @@
 ---
 title: 게시 계층에 대한 사용자 정의 도메인 구성
-description: Adobe Cloud Manager에서 게시 계층에 대한 사용자 정의 도메인을 구성하는 방법에 대해 알아봅니다.
-role: null
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+description: Adobe Cloud Manager에서 게시 계층에 대한 사용자 정의 도메인을 구성하는 방법을 알아봅니다.
+source-git-commit: f6c0e8e5c1d7391011ccad5aa2bad4a6ab7d10c3
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 1%
+source-wordcount: '264'
+ht-degree: 6%
 
 ---
 
 
 # 게시 계층에 대한 사용자 정의 도메인 구성{#configure-custom-domain}
 
-Adobe Cloud Manager에서 사용자 정의 도메인을 추가하여 웹 사이트를 돋보이게 할 수 있습니다. AEM as a Cloud Service에는 기본 도메인이 제공되지만 필요에 따라 사용자 정의할 수 있습니다.
-<!-- For example, AEM sites can use `sites.custom_domain.com`, and the AEM publish domain can be accessed via `assets.custom_domain.com`. Additionally, getting an SSL certificate for assets.pmi.com with a SAN entry for `delivery.custom_domain.com` improves security and trustworthiness. -->
+Cloud Manager Adobe에서 사용자 정의 도메인을 추가하여 웹 사이트를 돋보이게 할 수 있습니다. AEM as a Cloud Service에는 기본 도메인이 제공되지만 필요에 따라 사용자 정의할 수 있습니다.
 
 ## 시작하기에 앞서
 
@@ -26,15 +24,15 @@ Adobe Cloud Manager에서 사용자 정의 도메인을 추가하여 웹 사이�
 
 게시 계층에 대한 사용자 정의 도메인을 구성하려면 다음 단계를 수행합니다.
 
-1. 다음으로 이동 **[!UICONTROL Adobe Cloud Manager]** > **[!UICONTROL 프로그램 개요]** > **[!UICONTROL SSL 인증서]**을 클릭하고 SSL 인증서를 추가합니다.
+1. 다음으로 이동 **[!UICONTROL Cloud Manager Adobe]** > **[!UICONTROL 프로그램 개요]** > **[!UICONTROL SSL 인증서]**을 클릭하고 SSL 인증서를 추가합니다.
    ![이미지](/help/assets/assets/ssl-certificate.png)
-추가 방법 알아보기 [SSL 인증서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=en) Adobe 클라우드 관리자.
+추가 방법 알아보기 [SSL 인증서](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) Adobe Cloud Manager.
 
-1. SSL 인증서를 추가한 후 사용자 정의 도메인을 추가합니다. 클릭 **[!UICONTROL 도메인 설정]** 및에 대한 사용자 정의 도메인을 지정합니다. **[!UICONTROL 서비스 게시]** 옵션을 선택합니다.
-   <br> 자세히 알아보기 [사용자 정의 도메인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html?lang=en).
+1. SSL 인증서를 추가한 후 사용자 정의 도메인을 추가합니다. 클릭 **[!UICONTROL 도메인 설정]** 및에 대한 사용자 정의 도메인을 지정합니다. **[!UICONTROL Publish 서비스]** 옵션을 선택합니다.
+자세히 알아보기 [사용자 정의 도메인](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
-1. 게시 도메인에 해당하는 DNS 레코드에 CNAME 레코드 2개를 추가합니다.
-   <br> DNS 전파 지연으로 인해 DNS 확인을 처리하는 데 몇 시간이 걸릴 수 있습니다.
+1. 2 추가 [CNAME 레코드](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) 게시 도메인에 해당하는 DNS 레코드.
+DNS 전파 지연으로 인해 DNS 확인을 처리하는 데 몇 시간이 걸릴 수 있습니다.
 
 1. 지원 사례를 기록하여 사용자 정의 도메인을 쉽게 구성하여 게재 계층으로 전달합니다.
 

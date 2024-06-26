@@ -2,9 +2,9 @@
 title: Experience Manager에서 에셋 승인
 description: 에서 에셋을 승인하는 방법 알아보기 [!DNL Experience Manager].
 role: User
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '683'
 ht-degree: 1%
 
 ---
@@ -17,17 +17,18 @@ AEM Assets에서 에셋을 승인하여 에셋 관리를 간소화하여 에셋 
 
 ## 시작하기에 앞서 {#pre-requisites}
 
-다음을 편집하려면 AEM Assets as a Cloud Service 액세스 권한 및 권한이 있어야 합니다. **[!UICONTROL 상태 검토]** 에셋에 대한 속성입니다.
+를 편집하려면 AEM Assetsas a Cloud Service 에 대한 액세스 권한과 사용 권한이 있어야 합니다. **[!UICONTROL 상태 검토]** 에셋에 대한 속성입니다.
 
 ## 구성
 
-에서 적용 가능한 메타데이터 스키마를 한 번 업데이트해야 합니다. [!DNL Experience Manager] 에셋을 승인하려면 먼저 다음 기간 동안 이 구성을 건너뛸 수 있습니다. [!DNL Experience Manager Assets]. 메타데이터 스키마를 구성하려면 다음 단계를 따르십시오.
+자산을 승인하려면 먼저 관리 보기에서 적용 가능한 메타데이터 스키마를 한 번 업데이트해야 합니다. Assets 보기에 대해 이 구성을 건너뛸 수 있습니다. 메타데이터 스키마를 구성하려면 다음 단계를 따르십시오.
 
-1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 에셋]** > **[!UICONTROL 메타데이터 스키마]**.
+1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Assets]** > **[!UICONTROL 메타데이터 스키마]**.
 1. 적용 가능한 메타데이터 스키마를 선택하고 **[!UICONTROL 편집]**. <br>다음 **[!UICONTROL 메타데이터 스키마 양식 편집기]** 을 사용하여 열림 **[!UICONTROL 기본]** 강조 표시된 탭입니다.
 1. 아래로 스크롤하여 클릭 **[!UICONTROL 상태 검토]**.
 1. 다음을 클릭합니다. **[!UICONTROL 규칙]** 오른쪽 패널의 탭입니다.
 1. 선택 취소 **[!UICONTROL 편집 비활성화]** 및 클릭 **[!UICONTROL 저장]**.
+다음에 대한 속성을 보려면 **[!UICONTROL 상태 검토]** 필드가 매핑되어 다음 위치로 이동됨 **[!UICONTROL 설정]** 탭 및 보기 `./jcr:content/metadata/dam:status` 의 값 **[!UICONTROL 속성에 매핑]** 필드.
 
 >[!NOTE]
 >
@@ -45,7 +46,7 @@ AEM Assets에서 에셋을 승인하여 에셋 관리를 간소화하여 에셋 
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427430)
 
-   마찬가지로 [새 자산 보기](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-organize.html?lang=en#manage-asset-status).
+   마찬가지로 [새 Assets 보기](/help/assets/manage-organize-assets-view.md).
 
 ## 자산 일괄 승인 {#bulk-approve-assets}
 
@@ -53,13 +54,13 @@ AEM Assets에서 에셋을 승인하여 에셋 관리를 간소화하여 에셋 
 <br>에서 일괄 에셋을 승인하려면 다음 단계를 따르십시오 [!DNL Experience Manager]:
 
 1. 작성 환경(https://author-pXXX-eYYY.adobeaemcloud.com)에 폴더를 만듭니다. 바꾸기 _XXX_ (프로그램 ID 및 _YYY_ (Experience Manager의 환경 ID 포함)
-1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 에셋]** > **[!UICONTROL 메타데이터 프로필]**.
+1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Assets]** > **[!UICONTROL 메타데이터 프로필]**.
 1. 클릭 **[!UICONTROL 만들기]** 페이지의 오른쪽 상단에 있습니다.
 1. 프로필 제목 추가 및 클릭 **[!UICONTROL 만들기]**. 메타데이터 프로필이 정상적으로 생성되었습니다.
 1. 새로 만든 메타데이터 프로필을 선택하고 **[!UICONTROL 편집 _마._]**. <br>다음&#x200B;**[!UICONTROL 메타데이터 프로필 편집]**양식이 로 열립니다.**[!UICONTROL 기본]**강조 표시된 탭입니다.
 1. 드래그 앤 드롭 **[!UICONTROL 한 줄 텍스트 필드]** 다음에서 **[!UICONTROL 양식 작성]** 섹션에 있는 마지막 항목이 될 필요가 없습니다.
 1. 새로 추가한 필드를 클릭한 다음 **[!UICONTROL 설정]** 패널:
-   1. 변경 **[!UICONTROL 필드 레이블]** 끝 _승인된 에셋_.
+   1. 변경 **[!UICONTROL 필드 레이블]** 끝 _승인된 Assets_.
    1. 업데이트 **[!UICONTROL 속성에 매핑]** 끝 _./jcr:content/metadata/dam:status_.
    1. 기본값을 다음으로 변경 _승인됨_.
 
@@ -74,3 +75,31 @@ AEM Assets에서 에셋을 승인하여 에셋 관리를 간소화하여 에셋 
 >[!NOTE]
 > 
 >이 접근 방법에서는 폴더에 새로 생성된 에셋을 승인합니다. 폴더의 기존 에셋에 대해서는 해당 에셋을 수동으로 선택하고 승인해야 합니다. <br> 또는 **[!UICONTROL 재처리]** 메타데이터 프로필의 변경 사항을 이전 에셋에 적용하는 옵션입니다.
+
+마찬가지로 Assets 보기에서 폴더 내의 자산을 일괄 승인하려면 다음을 수행합니다.
+
+1. 에셋을 선택하고 **[!UICONTROL 벌크 메타데이터 편집]**.
+
+1. 선택 **[!UICONTROL 승인됨]** 다음에서 **[!UICONTROL 상태]** 에서 사용할 수 있는 필드 [!UICONTROL 속성] 섹션에 있는 마지막 항목이 될 필요가 없습니다.
+
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+
+## 승인된 에셋의 게재 URL 복사 {#copy-delivery-url-approved-assets}
+
+다음과 같은 경우 저장소의 모든 승인된 에셋에 대한 게재 URL을 사용할 수 있습니다. [!UICONTROL OpenAPI 기능이 포함된 Dynamic Media] AEM as a Cloud Service 인스턴스에서 활성화되었습니다.
+
+저장소 내에서 승인된 에셋에 대한 게재 URL을 복사하려면 다음을 수행합니다.
+
+1. 에셋을 선택하고 **[!UICONTROL 세부 사항]**.
+
+1. 오른쪽 창에서 사용할 수 있는 렌디션 아이콘을 클릭합니다.
+
+1. 선택 **[!UICONTROL OpenAPI를 사용한 Dynamic Media]** 다음에서 사용 가능 **[!UICONTROL 동적]** 섹션.
+
+1. 클릭 **[!UICONTROL URL 복사]** 에셋의 게재 URL을 복사합니다.
+   ![게재 URL 복사](/help/assets/assets/copy-delivery-url.png)
+
+   >[!NOTE]
+   >
+   >승인된 에셋에 대한 게재 URL을 복사하는 옵션은 Assets 보기에서만 사용할 수 있습니다.
+

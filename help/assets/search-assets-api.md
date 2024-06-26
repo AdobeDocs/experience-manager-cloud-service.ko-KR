@@ -1,23 +1,23 @@
 ---
-title: 자산 검색 API
+title: Assets API 검색
 description: Search Assets API를 사용하는 방법을 알아봅니다.
 role: User
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
 
 ---
 
-# 자산 검색 API {#search-assets-api}
+# Assets API 검색 {#search-assets-api}
 
-모두 [승인된 에셋](approved-assets.md) Experience Manager 에셋 저장소에서 사용할 수 있으며, 검색 후 배달 URL을 사용하여 통합 다운스트림 애플리케이션에 전달할 수 있습니다.
+모두 [승인된 에셋](approve-assets.md) Experience Manager 에셋 저장소에서 사용할 수 있으며, 검색 후 배달 URL을 사용하여 통합 다운스트림 애플리케이션에 전달할 수 있습니다.
 
 Experience Manager 저장소에서 올바른 승인된 에셋을 검색하는 것은 게재 URL을 사용하여 에셋을 게재하는 첫 번째 단계입니다. 검색 요청에 대한 응답은 검색 기준을 충족하는 에셋에 해당하는 JSON 문서 배열로 구성됩니다. 각 JSON 문서는 `id` 필드: 에셋 게재 요청을 구성하는 데 사용됩니다.
 
 ![다이렉트 이진 업로드 프로토콜 개요](assets/search-assets-api-overview.png)
 
-Search Assets API 요청 내에서 속성을 정의하여 다음 기능을 활성화할 수 있습니다.
+Assets API 검색 요청 내에서 속성을 정의하여 다음 기능을 활성화할 수 있습니다.
 
 * **전체 텍스트 검색**: 사용 `match` 검색할 텍스트를 정의하려면 질의합니다.  다음 내에서 연산자를 사용할 수도 있습니다. `match` 쿼리 를 클릭하여 결과를 필터링합니다.
 
@@ -42,7 +42,7 @@ Search Assets API 요청의 끝점은 다음 형식이어야 합니다.
 
 POST
 
-## 자산 검색 API 헤더 {#search-assets-api-header}
+## Assets API 헤더 검색 {#search-assets-api-header}
 
 Search Assets API에서 헤더를 정의하는 동안 다음 세부 정보를 제공해야 합니다.
 
@@ -57,5 +57,5 @@ headers: {
 
 Search API를 호출하려면 IMS 토큰이에서 을 정의해야 합니다. `Authorization` 세부 정보. IMS 토큰을 기술 계정에서 가져옵니다. 다음을 참조하십시오 [AEM as a Cloud Service 자격 증명 가져오기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials) 새 기술 계정을 만듭니다. 다음을 참조하십시오 [액세스 토큰 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token) ims 토큰을 생성하고 자산 검색 API 요청 헤더에서 적절하게 사용합니다.
 
-요청 샘플, 응답 샘플 및 응답 코드를 보려면 [자산 검색 API](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search).
+요청 샘플, 응답 샘플 및 응답 코드를 보려면 [Assets API 검색](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search).
 

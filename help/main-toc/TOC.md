@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bd0d35c57e333d861072e189d0bef0ba14700664
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
-source-wordcount: '5040'
+source-wordcount: '5073'
 ht-degree: 99%
 
 ---
@@ -559,6 +559,16 @@ ht-degree: 99%
       + [콘텐츠 FAQ의 HTTP2 게재](/help/assets/dynamic-media/http2faq.md)
       + [Flash 뷰어 서비스 종료](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML 뷰어 서비스 종료](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
+      + OpenAPI 기능이 포함된 Dynamic Media {#dynamic-media-open-apis}
+         + [개요](/help/assets/dynamic-media-open-apis-overview.md)
+         + [에셋 승인](/help/assets/approve-assets.md)
+         + [다운스트림 애플리케이션과 통합](/help/assets/integrate-dynamic-media-open-apis.md)
+         + [자산 검색 API](/help/assets/search-assets-api.md)
+         + [배달 API](/help/assets/deliver-assets-apis.md)
+         + [에셋 전달 제한](/help/assets/restrict-assets-delivery.md)
+         + [AEM Sites과 원격 AEM Assets 통합](/help/assets/integrate-remote-approved-assets-with-sites.md)
+         + [자주 묻는 질문](/help/assets/dynamic-media-open-apis-faqs.md)
+         + [사용자 정의 도메인 구성](/help/assets/configure-custom-domain.md)
    + Assets 보기 작업 {#assets-view}
       + [소개](/help/assets/assets-view-introduction.md)
       + [시작](/help/assets/get-started-assets-view.md)
