@@ -4,9 +4,9 @@ description: Cloud Manager 구성 파이프라인을 사용하여 배포되는 �
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 73d0a4a73a3e97a91b2276c86d3ed1324de8c361
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1400'
 ht-degree: 3%
 
 ---
@@ -20,6 +20,8 @@ Adobe 제공 CDN에는 몇 가지 기능과 서비스가 있으며, 그중 일�
 
 * Adobe CDN이 고객 관리 CDN에서 오는 요청의 유효성을 검사하는 데 사용하는 HTTP 헤더 값입니다.
 * CDN 캐시에서 리소스를 제거하는 데 사용되는 API 토큰입니다.
+* 기본 인증 양식을 제출하여 제한된 콘텐츠에 액세스할 수 있는 사용자 이름/암호 조합 목록입니다.
+
 
 구성 구문을 포함한 이러한 각 요소에 대해서는 아래 해당 섹션에 설명되어 있습니다. 다음 [공통 설정](#common-setup) 섹션은 두 가지 모두와 배포에 공통되는 설정을 보여 줍니다. 마지막으로 다음 방법에 대한 섹션이 있습니다 [키 회전](#rotating-secrets)를 사용하는 것이 좋습니다.
 
@@ -29,7 +31,7 @@ Adobe 제공 CDN에는 몇 가지 기능과 서비스가 있으며, 그중 일�
 
 설정의 일부로, Adobe CDN과 고객 CDN은 의 값에 동의해야 합니다. `X-AEM-Edge-Key` HTTP 헤더. 이 값은 Adobe CDN으로 라우팅되기 전에 고객 CDN의 각 요청에 대해 설정되고, 이 값은 값이 예상대로 맞는지 검증하므로 요청을 적절한 AEM 소스로 라우팅하는 데 도움이 되는 헤더를 포함하여 다른 HTTP 헤더를 신뢰할 수 있습니다.
 
-다음 `X-AEM-Edge-Key` 값은 아래 구문으로 선언됩니다. 다음을 참조하십시오. [공통 설정](#common-setup) 섹션 을 참조하여 배포 방법을 알아보십시오.
+다음 `X-AEM-Edge-Key` 값은 edgeKey1 및 edgeKey2 속성에서 참조하는 실제 값과 함께 아래 구문으로 선언됩니다. 다음을 참조하십시오. [공통 설정](#common-setup) 섹션을 통해 구성을 배포하는 방법을 알아볼 수 있습니다.
 
 ```
 kind: "CDN"
@@ -55,12 +57,12 @@ data:
 
 * 종류, 버전 및 메타데이터
 * 하위 항목이 포함된 데이터 노드 `experimental_authentication` 노드(기능이 릴리즈되면 실험 접두사가 제거됨).
-* experiment_authentication에서 인증자 노드와 규칙 노드가 하나씩 있으며, 둘 다 배열입니다.
+* 아래 `experimental_authentication`, 1 `authenticators` 노드 및 1 `rules` 노드가 모두 배열입니다.
 * 인증자: 토큰 또는 자격 증명의 유형을 선언할 수 있습니다. 이 경우 토큰은 에지 키입니다. 여기에는 다음 속성이 포함됩니다.
    * name - 설명 문자열입니다.
-   * type - edge여야 합니다.
-   * edgeKey1 - 해당 값은 비밀 토큰을 참조해야 하며, git에 저장되어서는 안 되고 대신 로 선언되어야 합니다. [Cloud Manager 환경 변수](/help/implementing/cloud-manager/environment-variables.md) 암호 유형. 서비스 적용 필드에서 모두를 선택합니다. 값(예: )이 권장됩니다.`${{CDN_EDGEKEY_052824}}`)는 추가된 날짜를 반영합니다.
-   * edgeKey2 - 다음에 설명된 암호 회전에 사용됩니다. [회전 비밀 섹션](#rotating-secrets) 아래요. 하나 이상의 `edgeKey1` 및 `edgeKey2` 선언해야 합니다.
+   * 유형 - 은(는) 이어야 합니다. `edge`.
+   * edgeKey1 - 값 *X-AEM-Edge-Key*: 비밀 토큰을 참조해야 하며, git에 저장되어서는 안 되고 대신 로 선언되어야 합니다. [Cloud Manager 환경 변수](/help/implementing/cloud-manager/environment-variables.md) 암호 유형. 서비스 적용 필드에서 모두를 선택합니다. 값(예: )이 권장됩니다.`${{CDN_EDGEKEY_052824}}`)는 추가된 날짜를 반영합니다.
+   * edgeKey2 - 다음에 설명된 암호 회전에 사용됩니다. [회전 비밀 섹션](#rotating-secrets) 아래요. edgeKey1과 유사하게 정의합니다. 하나 이상의 `edgeKey1` 및 `edgeKey2` 선언해야 합니다.
 <!--   * OnFailure - defines the action, either `log` or `block`, when a request doesn't match either `edgeKey1` or `edgeKey2`. For `log`, request processing will continue, while `block` will serve a 403 error. The `log` value is useful when testing a new token on a live site since you can first confirm that the CDN is correctly accepting the new token before changing to `block` mode; it also reduces the chance of lost connectivity between the customer CDN and the Adobe CDN, as a result of an incorrect configuration. -->
 * 규칙: 사용해야 하는 인증자와 게시 및/또는 미리보기 계층 여부를 선언할 수 있습니다.  여기에는 다음이 포함됩니다.
    * name - 설명 문자열입니다.
@@ -68,7 +70,7 @@ data:
    * 작업 - 의도한 인증자가 참조된 &quot;인증&quot;을 지정해야 합니다.
 
 >[!NOTE]
->Edge 키는 다음으로 구성해야 합니다. [Cloud Manager 환경 변수](/help/implementing/cloud-manager/environment-variables.md) 유형의 변수 `secret`를 참조한 구성이 배포되기 전에 배포됩니다.
+>Edge 키는 다음으로 구성해야 합니다. [Cloud Manager 환경 변수](/help/implementing/cloud-manager/environment-variables.md) 유형의 변수 `secret` (와) *모두* 이 옵션을 참조하는 구성이 배포되기 전에 서비스에 대해 선택됨).
 
 ## API 토큰 제거 {#purge-API-token}
 
@@ -87,18 +89,18 @@ data:
          purgeKey1: ${{CDN_PURGEKEY_031224}}
          purgeKey2: ${{CDN_PURGEKEY_021225}}
     rules:
-     - name: purge-auth-rule
-       when: { reqProperty: tier, equals: "publish" }
-       action:
-         type: authenticate
-         authenticator: purge-auth
+       - name: purge-auth-rule
+         when: { reqProperty: tier, equals: "publish" }
+         action:
+           type: authenticate
+           authenticator: purge-auth
 ```
 
 구문은
 
 * 종류, 버전 및 메타데이터
 * 하위 항목이 포함된 데이터 노드 `experimental_authentication` 노드(기능이 릴리즈되면 실험 접두사가 제거됨).
-* 아래 `experimental_authentication`와 함께 사용할 수 있습니다.
+* 아래 `experimental_authentication`, 1 `authenticators` 노드 및 1 `rules` 노드가 모두 배열입니다.
 * 인증자: 토큰 또는 자격 증명의 유형을 선언할 수 있습니다. 이 경우 삭제 키입니다. 여기에는 다음 속성이 포함됩니다.
    * name - 설명 문자열입니다.
    * 유형 - 은(는) 삭제여야 합니다.
@@ -109,6 +111,59 @@ data:
    * name - 설명 문자열
    * when - 의 구문에 따라 규칙을 언제 평가해야 하는지 결정하는 조건 [트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 기사. 일반적으로 현재 계층의 비교(예: 게시)가 포함됩니다.
    * 작업 - 의도한 인증자가 참조된 &quot;인증&quot;을 지정해야 합니다.
+
+>[!NOTE]
+>Edge 키는 다음으로 구성해야 합니다. [Cloud Manager 환경 변수](/help/implementing/cloud-manager/environment-variables.md) 유형의 변수 `secret`를 참조한 구성이 배포되기 전에 배포됩니다.
+
+## 기본 인증 {#basic-auth}
+
+Protect 사용자 이름과 암호가 필요한 기본 인증 대화 상자를 열어 특정 콘텐츠 리소스를 확인합니다. 이 기능은 최종 사용자 액세스 권한에 대한 완전한 솔루션보다는 비즈니스 이해 당사자의 콘텐츠 검토와 같은 간단한 인증 사용 사례를 위한 것입니다.
+
+최종 사용자는 다음과 같이 기본 인증 대화 상자가 표시되는 것을 경험합니다.
+
+![basicauth-dialog](/help/implementing/dispatcher/assets/basic-auth-dialog.png)
+
+
+구문은 아래 설명된 대로 선언됩니다. 다음을 참조하십시오. [공통 설정](#common-setup) 배포 방법에 대한 자세한 내용은 아래 섹션을 참조하십시오.
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  experimental_authentication:
+    authenticators:
+       - name: my-basic-authenticator
+         type: basic
+         credentials:
+           - user: johndoe
+             password: ${{JOHN_DOE_PASSWORD}}
+           - user: janedoe
+             password: ${{JANE_DOE_PASSWORD}}
+    rules:
+       - name: basic-auth-rule
+         when: { reqProperty: path, like: "/summercampaign" }
+         action:
+           type: authenticate
+           authenticator: my-basic-authenticator
+```
+
+구문은
+
+* 종류, 버전 및 메타데이터
+* 다음을 포함하는 데이터 노드 `experimental_authentication` 노드(기능이 릴리즈되면 실험 접두사가 제거됨).
+* 아래 `experimental_authentication`, 1 `authenticators` 노드 및 1 `rules` 노드가 모두 배열입니다.
+* 인증자: 이 시나리오에서는 다음 구조를 갖는 기본 인증자를 선언합니다.
+   * name - 설명 문자열
+   * 유형 - 은(는) 이어야 합니다. `basic`
+   * 최종 사용자가 기본 인증 대화 상자에 입력할 수 있는 다음 이름/값 쌍을 각각 포함하는 자격 증명 배열입니다.
+      * user - 사용자 이름
+      * 암호 - 해당 값은 비밀 토큰을 참조해야 하며, git에 저장되어서는 안 되고, 대신 비밀 유형의 Cloud Manager 환경 변수(와 함께)로 선언되어야 합니다. **모두** 서비스 필드로 선택됨)
+* 규칙: 사용해야 하는 인증자와 보호해야 하는 리소스를 선언할 수 있습니다. 각 규칙에는 다음이 포함됩니다.
+   * name - 설명 문자열
+   * when - 의 구문에 따라 규칙을 언제 평가해야 하는지 결정하는 조건 [트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 기사. 일반적으로 게시 계층 또는 특정 경로의 비교가 포함됩니다.
+   * 작업 - 이 시나리오에 대한 기본 인증인 의도한 인증자가 참조된 &quot;인증&quot;을 지정해야 합니다.
 
 >[!NOTE]
 >Edge 키는 다음으로 구성해야 합니다. [Cloud Manager 환경 변수](/help/implementing/cloud-manager/environment-variables.md) 유형의 변수 `secret`를 참조한 구성이 배포되기 전에 배포됩니다.
