@@ -3,7 +3,8 @@ title: 적응형 양식에 대한 제출 액션을 구성하는 방법
 description: 적응형 양식은 여러 제출 액션을 제공합니다. 제출 액션은 적응형 양식이 제출 후 처리되는 방식을 정의합니다. 기본 제공 제출 액션을 사용하거나 직접 만들 수 있습니다.
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '3914'
 ht-degree: 73%
@@ -19,7 +20,7 @@ ht-degree: 73%
 
 **적용 대상**: ✔️ Form Foundation 구성 요소를 빌드합니다. ❌ [적응형 양식 핵심 구성 요소](/help/forms/configure-submit-actions-core-components.md). Adobe은 핵심 구성 요소를 사용하여 다음을 수행할 것을 권장합니다. [AEM Sites 페이지에 적응형 Forms 추가](create-or-add-an-adaptive-form-to-aem-sites-page.md) 또는 종료 [독립 실행형 적응형 Forms 만들기](creating-adaptive-form-core-components.md).
 
-사용자가 를 클릭하면 제출 작업이 트리거됩니다. **[!UICONTROL 제출]** 적응형 양식의 단추입니다. Forms as a Cloud Service에서는 다음과 같은 제출 액션을 즉시 제공합니다.
+사용자가 를 클릭하면 제출 작업이 트리거됩니다. **[!UICONTROL 제출]** 적응형 양식의 단추입니다. Formsas a Cloud Service 에서 제출 액션 실행
 
 * [REST 엔드포인트에 제출](#submit-to-rest-endpoint)
 * [이메일 보내기](#send-email)

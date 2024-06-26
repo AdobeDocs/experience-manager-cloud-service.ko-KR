@@ -2,7 +2,9 @@
 title: DocuSign을 적응형 양식과 통합하는 방법
 description: 적응형 양식과 함께 DocuSign을 사용하여 전자 서명을 수집하는 방법에 대해 알아봅니다.
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Adaptive Forms, Acrobat Sign
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 7%
@@ -17,7 +19,7 @@ DocuSign은 탁월한 전자 서명 솔루션입니다. 계약서에 전자 서�
 - 인적 자원 프로세스를 보다 빠르게 완료하고 직원에게 디지털 환경을 제공하십시오.
 - 계약 주기 시간을 단축하고 공급업체를 더 빨리 온보딩하십시오.
 
-AEM Forms은 as a Cloud Service으로 [DocuSign에 대한 사용자 정의 제출 액션](#deploy-custom-submit-action). 제출 액션은 DocuSign API를 사용하여 전자 서명용 적응형 양식을 전송하는 데 도움이 됩니다.
+AEM Forms as a Cloud Service [DocuSign에 대한 사용자 정의 제출 액션](#deploy-custom-submit-action). 제출 액션은 DocuSign API를 사용하여 전자 서명용 적응형 양식을 전송하는 데 도움이 됩니다.
 
 | Adobe의 전자 서명 솔루션인 Adobe Sign을 사용하여 적응형 양식에 전자 서명할 수도 있습니다. AEM Forms은 Adobe Sign과의 훨씬 더 긴밀한 통합을 제공하며 순차적 및 병렬 서명, 여러 인증 방법, 양식 서명 경험 등과 같은 보다 세밀한 제어 기능을 제공합니다. 자세한 내용은 [적응형 양식에서 Adobe Sign 사용](working-with-adobe-sign.md). |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -34,7 +36,7 @@ DocuSign과 AEM Forms을 통합하려면 다음 조건을 충족해야 합니다
 
 ## DocuSign용 사용자 지정 제출 액션 및 클라우드 서비스 구성 {#deploy-custom-submit-action}
 
-AEM Forms as a Cloud Service에서는 DocuSign에 대한 사용자 지정 제출 액션을 제공합니다. 제출 액션은 DocuSign API를 사용하여 전자 서명용 적응형 양식을 전송하는 데 도움이 됩니다. 사용자 지정 제출 액션 코드는에서 사용할 수 있습니다. [AEM Forms 샘플 공개 git 저장소](https://github.com/adobe/aem-forms-docusign-sample). AEM Forms 환경에 있는 그대로 코드를 배포하거나 조직의 요구 사항에 따라 코드를 사용자 지정할 수 있습니다.
+AEM Forms as a Cloud Service docuSign에 대한 사용자 정의 제출 액션 제출 액션은 DocuSign API를 사용하여 전자 서명용 적응형 양식을 전송하는 데 도움이 됩니다. 사용자 지정 제출 액션 코드는에서 사용할 수 있습니다. [AEM Forms 샘플 공개 git 저장소](https://github.com/adobe/aem-forms-docusign-sample). AEM Forms 환경에 있는 그대로 코드를 배포하거나 조직의 요구 사항에 따라 코드를 사용자 지정할 수 있습니다.
 
 기본 사용자 지정 제출 작업과 DocuSign Cloud Service을 구성하려면 다음 단계를 수행하십시오.
 
@@ -49,7 +51,7 @@ AEM Forms as a Cloud Service에서는 DocuSign에 대한 사용자 지정 제출
 
 1. 복제 [aem-forms-samples](https://github.com/adobe/aem-forms-docusign-sample) 리포지토리. 이 저장소에는 DocuSign 서버에 연결하기 위한 DocuSign에 대한 사용자 정의 제출 액션과 구성 세부 정보가 들어 있습니다.
 
-1. 선택한 IDE에서 편집할 수 있도록 1단계에서 만든 AEM Forms as a Cloud Service 프로젝트를 엽니다.
+1. 선택한 IDE의 1단계에서 만든 AEM Forms as a Cloud Service 프로젝트를 엽니다.
 
 1. 를 엽니다. `[AEM Forms as a Cloud Service project]\pom.xml` 편집할 파일 및 다음 변경 작업을 수행합니다.
 
@@ -150,7 +152,7 @@ AEM Forms as a Cloud Service에서는 DocuSign에 대한 사용자 지정 제출
 
 1. 선택 **[!UICONTROL 만들기]** 을(를) 만들려면 [!DNL DocuSign] 구성.
 
-1. 구성을 선택하고 **[!UICONTROL 게시]**&#x200B;을 클릭하고 구성을 선택한 다음 을 클릭합니다 **[!UICONTROL 게시]**. 해당 게시 환경에 구성이 복사됩니다.
+1. 구성을 선택하고 **[!UICONTROL Publish]**&#x200B;을 클릭하고 구성을 선택한 다음 을 클릭합니다 **[!UICONTROL Publish]**. 해당 게시 환경에 구성이 복사됩니다.
 
 1. 위의 모든 단계를 개발자, 스테이지 및 생산 인스턴스(어느 것이든 남은 인스턴스에)에 반복하여, 해당 환경을 위한 [!DNL AEM Forms]를 사용한 [!DNL DocuSign] 구성을 완료합니다.
 

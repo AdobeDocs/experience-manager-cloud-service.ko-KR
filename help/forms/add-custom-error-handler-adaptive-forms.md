@@ -6,7 +6,8 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2378'
 ht-degree: 90%
@@ -228,12 +229,12 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 
 사용자 정의 오류 함수를 만들려면 다음 단계를 수행합니다.
 
-1. [AEM Forms as a Cloud Service 저장소 복제](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#accessing-git).
+1. [AEM Forms as a Cloud Service 리포지토리 복제](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#accessing-git).
 1. `[AEM Forms as a Cloud Service repository folder]/apps/` 폴더 아래에 폴더를 만듭니다. 예: `experience-league`로 지정된 폴더 만들기
 1. `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/`로 이동하고 `clientlibs`로서 `ClientLibraryFolder`를 만듭니다.
 1. `js`라는 이름의 폴더를 만듭니다.
 1. `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` 폴더로 이동합니다.
-1. JavaScript 파일 추가(예: ) `function.js`. 파일은 사용자 정의 오류 핸들러의 코드로 구성됩니다.
+1. 다음과 같은 JavaScript 파일 추가 `function.js`. 파일은 사용자 정의 오류 핸들러의 코드로 구성됩니다.
 다음 코드를 JavaScript 파일에 추가하여 REST 서비스 엔드포인트가 수신한 응답과 헤더를 브라우저 콘솔에 표시해 보겠습니다.
 
    ```javascript

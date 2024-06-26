@@ -3,7 +3,8 @@ title: Experience Manager Sites 페이지에서 Forms 포털을 만드는 방법
 description: AEM Sites 페이지에서 Forms 포털을 만들고 기본 핵심 구성 요소를 사용하는 방법을 알아봅니다.
 feature: Adaptive Forms, Foundation Components
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1786'
 ht-degree: 4%
@@ -56,13 +57,13 @@ AEM Forms은 다음과 같은 포털 구성 요소를 즉시 제공합니다.
 
 ## Forms 포털 구성 요소 가져오기 {#import-forms-portal-components-aem-archetype}
 
-AEM Forms as a Cloud Service에서 즉시 사용 가능한 Forms 포털 구성 요소를 가져오려면 다음 단계를 수행하십시오.
+AEM Formsas a Cloud Service 에서 즉시 사용 가능한 Forms 포털 구성 요소를 가져오려면 다음 단계를 수행하십시오.
 
-1. **로컬 개발 인스턴스에서 Cloud Manager Git 저장소를 복제합니다.**  Cloud Manager Git 저장소에는 기본 AEM 프로젝트가 포함되어 있습니다. 다음을 기반으로 합니다. [AEM Archetype](https://github.com/adobe/aem-project-archetype/). Cloud Manager UI의 셀프서비스 Git 계정 관리를 사용하여 Cloud Manager Git 저장소를 복제하여 로컬 개발 환경에서 프로젝트를 가져옵니다. 저장소 액세스에 대한 자세한 내용은 [저장소 액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html).
+1. **로컬 개발 인스턴스에서 Cloud Manager Git 저장소를 복제합니다.**  Cloud Manager Git 저장소에는 기본 AEM 프로젝트가 포함되어 있습니다. 다음을 기반으로 합니다. [AEM Archetype](https://github.com/adobe/aem-project-archetype/). Cloud Manager UI의 셀프서비스 Git 계정 관리를 사용하여 Cloud Manager Git 저장소를 복제하여 프로젝트를 로컬 개발 환경에서 가져옵니다. 저장소 액세스에 대한 자세한 내용은 [저장소 액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html).
 
-1. **만들기 [!DNL Experience Manager Forms] as a [Cloud Service] 프로젝트:** 만들기 [!DNL Experience Manager Forms] as a [Cloud Service] 프로젝트 기준 [AEM Archetype 27](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-27) 나중에 Archetype을 통해 개발자는 [!DNL AEM Forms] as a Cloud Service. 또한 빠르게 시작하는 데 도움이 되는 몇 가지 샘플 테마 및 템플릿이 포함되어 있습니다.
+1. **만들기 [!DNL Experience Manager Forms] as a [Cloud Service] 프로젝트:** 만들기 [!DNL Experience Manager Forms] as a [Cloud Service] 프로젝트 기준 [AEM Archetype 27](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-27) 나중에 Archetype을 통해 개발자는 [!DNL AEM Forms] As a Cloud Service 또한 빠르게 시작하는 데 도움이 되는 몇 가지 샘플 테마 및 템플릿이 포함되어 있습니다.
 
-   만들려면 [!DNL Experience Manager Forms] as a Cloud Service 프로젝트입니다. 명령 프롬프트를 열고 아래 명령을 실행하십시오. 포함할 항목 [!DNL Forms] 특정 구성, 테마 및 템플릿, 설정 `includeForms=y`.
+   만들려면 [!DNL Experience Manager Forms] as a Cloud Service project 명령을 열고 아래 명령을 실행합니다. 포함할 항목 [!DNL Forms] 특정 구성, 테마 및 템플릿, 설정 `includeForms=y`.
 
    ```shell
    mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=30 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeForms="y"
@@ -101,7 +102,7 @@ AEM Workflow용 통합 스토리지 커넥터를 구성하려면 다음 단계�
 1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Forms]** > **[!UICONTROL 통합 스토리지 커넥터]**.
 1. 다음에서 **[!UICONTROL Forms 포털]** 섹션, 선택 **[!UICONTROL Azure]** 다음에서 **[!UICONTROL 스토리지]** 드롭다운 목록입니다.
 1. 다음을 지정합니다. [azure 스토리지 구성에 대한 구성 경로](#create-azure-storage-configuration) 다음에서 **[!UICONTROL 스토리지 구성 경로]** 필드.
-1. 선택 **[!UICONTROL 게시]** 다음을 선택합니다. **[!UICONTROL 저장]** 구성을 저장합니다.
+1. 선택 **[!UICONTROL Publish]** 다음을 선택합니다. **[!UICONTROL 저장]** 구성을 저장합니다.
 
 ## Forms 포털 구성 요소 활성화 {#enable-forms-portal-components}
 

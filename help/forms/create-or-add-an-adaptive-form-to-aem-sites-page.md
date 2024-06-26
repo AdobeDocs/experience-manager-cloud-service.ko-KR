@@ -1,10 +1,11 @@
 ---
 title: AEM Sites 페이지에 적응형 양식을 추가하는 방법
 description: 적응형 양식을 만들거나 AEM Sites 페이지에 추가하는 방법을 알아봅니다. 또한 웹 사이트에 양식을 통합하는 이점 및 다양한 방법에 대해 알아봅니다.
-feature: Adaptive Forms, Foundation Components, Page Editor, Authoring
+feature: Adaptive Forms, Foundation Components
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: 38e11538cdf3777a91a5ca60f83f8a95cd410c00
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '3184'
 ht-degree: 19%
@@ -206,7 +207,7 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
 
 ## AEM Sites 페이지 또는 경험 조각에서 양식에 대한 스키마 또는 양식 데이터 모델(FDM) 구성 {#configure-schema-or-data-model-for-form}
 
-FDM(양식 데이터 모델)을 사용하여 사용자 작업에 따라 데이터를 보내고 받기 위해 양식을 데이터 소스에 연결할 수 있습니다. 양식을 JSON 스키마에 연결하여 미리 정의된 형식으로 제출된 데이터를 받을 수도 있습니다. 요구 사항에 따라 양식을 JSON 스키마 또는 양식 데이터 모델(FDM)에 연결합니다.
+FDM(양식 데이터 모델)을 사용하여 양식을 데이터 Source에 연결하여 사용자 작업에 따라 데이터를 보내고 받을 수 있습니다. 양식을 JSON 스키마에 연결하여 미리 정의된 형식으로 제출된 데이터를 받을 수도 있습니다. 요구 사항에 따라 양식을 JSON 스키마 또는 양식 데이터 모델(FDM)에 연결합니다.
 
 * [JSON 스키마 만들기 및 환경에 업로드](/help/forms/adaptive-form-json-schema-form-model.md)  또는,
 * [양식 데이터 모델(FDM) 만들기](/help/forms/create-form-data-models.md)

@@ -3,7 +3,9 @@ title: 양식에 버전, 주석 및 주석을 추가합니다.
 description: 적응형 양식 핵심 구성 요소를 사용하여 적응형 양식에 주석, 주석 및 버전을 추가하십시오.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
-source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
+exl-id: 84b95a19-c804-41ad-8f4b-5868c8444cc0
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 2%

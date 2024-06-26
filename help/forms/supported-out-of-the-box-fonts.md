@@ -1,19 +1,19 @@
 ---
-title: AEM Forms as a Cloud Service은 PDF 생성을 위해 기본 글꼴을 지원합니다.
-description: AEM Forms은 기록 문서 및 PDF에 대한 기본 글꼴을 as a Cloud Service으로 지원합니다.
-feature: Adaptive Forms, APIs
+title: PDF 생성을 위한 AEM Forms as a Cloud Service 기본 제공 글꼴
+description: AEM Formsas a Cloud Service 는 문서 및 PDF의 기본 제공 글꼴 지원
+feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 67b07bf6-a45c-4a74-8b24-cb2e26c55bc9
-source-git-commit: e8e00d85e5526a3de3a210ee72df07d85bb7d1db
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 0%
 
 ---
 
-# 즉시 사용 가능한(OOTB) Forms as a Cloud Service에서 PDF 생성을 위한 글꼴 지원  {#ootb-supported-fonts-overview}
+# 즉시 사용 가능한(OOTB) Formsas a Cloud Service 에서 PDF 생성을 위해 지원되는 글꼴  {#ootb-supported-fonts-overview}
 
-AEM Forms as a Cloud Service에서는 내에서 원활하게 사용할 수 있는 다양한 기본 제공 OOTB 지원 글꼴을 제공합니다 [통신 API](/help/forms/aem-forms-cloud-service-communications-introduction.md), [핵심 구성 요소에 대한 기록 문서](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record), 및 [기초 구성 요소에 대한 기록 문서](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record).
+내에서 원활하게 사용할 수 있는 다양한 내장 OOTB 지원 글꼴 AEM Forms as a Cloud Service [통신 API](/help/forms/aem-forms-cloud-service-communications-introduction.md), [핵심 구성 요소에 대한 기록 문서](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record), 및 [기초 구성 요소에 대한 기록 문서](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record).
 
 <!--
 

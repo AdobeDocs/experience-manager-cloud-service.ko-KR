@@ -2,10 +2,10 @@
 title: 인라인 스타일을 적응형 양식 구성 요소에 적용하는 방법
 description: 적응형 양식에 사용자 지정 스타일을 적용하는 방법에 대해 알아보고, 적응형 양식의 개별 구성 요소에 인라인 CSS 속성을 적용할 수도 있습니다.
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 10%

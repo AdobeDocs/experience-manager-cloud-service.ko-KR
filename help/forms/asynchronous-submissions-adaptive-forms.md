@@ -2,10 +2,10 @@
 title: AEM Adaptive Forms에 대한 비동기 제출을 구성하는 방법
 description: 적응형 Forms에 대한 비동기 제출을 구성하는 방법을 알아봅니다. 적응형 Forms에 대해 비동기 제출이 작동하는 방식에 대해 자세히 알아보십시오.
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Intermediate
 exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 3%

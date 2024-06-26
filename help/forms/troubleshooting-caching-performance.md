@@ -1,14 +1,14 @@
 ---
-title: AEM Forms as a Cloud Service에 대한 캐싱 관련 문제를 해결하려면 어떻게 합니까?
-description: AEM Forms as a Cloud Service의 캐싱 관련 문제를 해결합니다.
+title: AEM Formsas a Cloud Service 의 캐싱 관련 문제를 해결하려면 어떻게 해야 합니까?
+description: AEM Forms as a Cloud Service 캐싱 관련 문제 해결
 contentOwner: khsingh
-feature: Adaptive Forms, Troubleshooting
+feature: Adaptive Forms
 role: User
 exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
 workflow-type: tm+mt
 source-wordcount: '381'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ Cloud Service 환경에서 적응형 Forms 캐시를 구성하거나 사용하�
 
 ## 이미지 또는 비디오가 포함된 일부 적응형 Forms은 Dispatcher 캐시에서 자동으로 무효화되지 않습니다 {#images-videos-not-invalidated}
 
-에셋 브라우저의 이미지 또는 비디오를 선택하여 적응형 양식에 추가할 수 있습니다. 이러한 이미지를 자산 편집기에서 편집하면 이러한 이미지가 포함된 적응형 양식의 캐시 버전은 무효화되지 않습니다. 적응형 양식에 이전 이미지가 계속 표시됩니다.
+에셋 브라우저의 이미지 또는 비디오를 선택하여 적응형 양식에 추가할 수 있습니다. 이러한 이미지를 Assets 편집기에서 편집하면 이러한 이미지가 포함된 적응형 양식의 캐시 버전은 무효화되지 않습니다. 적응형 양식에 이전 이미지가 계속 표시됩니다.
 
 이 문제를 해결하려면 이미지와 비디오를 게시한 후 이러한 자산을 참조하는 적응형 Forms을 명시적으로 게시 취소하고 게시합니다.
 
@@ -35,7 +35,7 @@ Cloud Service 환경에서 적응형 Forms 캐시를 구성하거나 사용하�
 문제를 해결하려면 다음 단계를 수행하십시오.
 
 1. Experience Manager 프로젝트를 엽니다.
-1. 를 엽니다. `dispatcher/scr/conf.d/rewrites/rewrite.rules` 편집할 수 있습니다.
+1. 편집할 `dispatcher/scr/conf.d/rewrites/rewrite.rules`을 엽니다.
 1. 를 엽니다. `conf.d/httpd-dispatcher.conf` 또는 런타임 시 로드되도록 구성된 기타 모든 구성 파일입니다.
 1. 다음 코드를 파일에 추가하고 저장합니다. 샘플 코드이며 환경에 맞게 수정합니다.
 
@@ -57,7 +57,7 @@ Cloud Service 환경에서 적응형 Forms 캐시를 구성하거나 사용하�
 
 ## CDN 캐싱이 300초 후에 중지됨 {#cdn-caching-stops-working-after-300-seconds}
 
-CDN 캐싱은 300초 후에 작동하지 않으며 CDN에서 캐시하는 모든 요청은 Dispatcher로 리디렉션됩니다.
+CDN 캐싱은 300초 후에 작동을 멈추고 CDN에서 캐시하기 위한 모든 요청은 Dispatcher으로 리디렉션됩니다.
 
 이 문제를 해결하려면 age 헤더를 0으로 설정합니다.
 

@@ -3,7 +3,8 @@ title: 적응형 양식 기반의 핵심 구성 요소를 번역하려면 어떻
 description: AEM Forms에서 양식 데이터 모델(FDM)을 만들고, 샘플 데이터 및 서비스로 모델을 테스트하며, 모델에 대해 다양한 옵션을 구성하는 방법에 대해 알아봅니다.
 feature: Adaptive Forms, Core Components
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 4%
@@ -16,7 +17,7 @@ ht-degree: 4%
 
 ## 기계 번역을 사용하여 적응형 양식 및 기록 문서 번역 {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
 
-기계 번역 서비스는 콘텐츠를 즉시 적응형 양식으로 번역하고 [기록 문서](/help/forms/generate-document-of-record-core-components.md). AEM Forms as a Cloud Service은 기계 번역을 위해 Microsoft Translator의 체험판을 사용하도록 사전 구성되어 있습니다. 다음 단계를 수행하여 적응형 Forms 및 기록 문서에 대한 기계 번역을 활성화합니다.
+기계 번역 서비스는 콘텐츠를 즉시 적응형 양식으로 번역하고 [기록 문서](/help/forms/generate-document-of-record-core-components.md). Microsoft Translator 버전을 사용하도록 AEM Forms as a Cloud Service 평가판이 사전 구성되어 있습니다. 다음 단계를 수행하여 적응형 Forms 및 기록 문서에 대한 기계 번역을 활성화합니다.
 
 1. AEM Forms UI에서 양식을 선택하고 **[!UICONTROL 사전 추가]** 옵션을 선택합니다.
 1. 번역 프로젝트에 사전 추가 화면에서 다음을 위한 **[!UICONTROL 프로젝트]** 옵션

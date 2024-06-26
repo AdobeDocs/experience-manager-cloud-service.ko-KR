@@ -4,7 +4,8 @@ description: 템플릿 편집기를 사용하여 기본 구조 및 초기 콘텐
 feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1962'
 ht-degree: 5%
@@ -27,11 +28,11 @@ You can download and install [!DNL AEM Forms] reference content package from [So
 
 ## 전제 조건
 
-**환경에 맞는 적응형 Forms 핵심 구성 요소 활성화**: 프로그램을 만들 때 환경에 대한 적응형 Forms 핵심 구성 요소가 이미 활성화되었습니다. 다음을 기반으로 하는 양식 as a Cloud Service 환경이 있는 경우 [AEM Archetype 39 이하](https://github.com/adobe/aem-project-archetype), [환경에 맞는 적응형 Forms 핵심 구성 요소 활성화](enable-adaptive-forms-core-components.md).
+**환경에 맞는 적응형 Forms 핵심 구성 요소 활성화**: 프로그램을 만들 때 환경에 대한 적응형 Forms 핵심 구성 요소가 이미 활성화되었습니다. InDesign을 기반으로 하는 as a Cloud Service이 있는 경우 [AEM Archetype 39 이하](https://github.com/adobe/aem-project-archetype), [환경에 맞는 적응형 Forms 핵심 구성 요소 활성화](enable-adaptive-forms-core-components.md).
 
 >[!NOTE]
 >
-> Archetype 45 기반 Forms as a Cloud Service 환경 배포 시 **적응형 Forms(핵심 구성 요소)** 템플릿 및 핵심 구성 요소 기반 테마가 환경에 추가됩니다.
+> Archetype 45를 기반으로 하는 Forms as a Cloud Service 환경 배포 시 **적응형 Forms(핵심 구성 요소)** 템플릿 및 핵심 구성 요소 기반 테마가 환경에 추가됩니다.
 
 ## 템플릿 작업 {#working-with-templates}
 
@@ -67,7 +68,7 @@ Experience Manager은 템플릿을 구성할 수 있는 전역 폴더를 제공�
      <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
    * **모드 선택기:** 모드를 변경할 수 있습니다. 다음을 선택할 수 있습니다. **[!UICONTROL 구조]** 모드, **[!UICONTROL 초기 컨텐츠]**, **[!UICONTROL 레이아웃 제어]** 모드. 구조 모드에서는 머리글과 바닥글을 추가하고 사용자 정의할 수 있습니다. 초기 컨텐츠 모드에서는 양식 컨텐츠를 사용자 정의할 수 있습니다.
    * **미리 보기:** 템플릿을 게시할 때 템플릿이 어떻게 표시되는지 미리 볼 수 있습니다. [레이어 선택기] 및 [미리 보기]를 사용하여 편집 모드와 미리 보기 모드를 전환할 수 있습니다.
-* **사이드바:** 콘텐츠, 속성, 에셋 및 구성 요소 브라우저를 제공합니다.
+* **사이드바:** Content, Properties, Assets 및 Components 브라우저를 제공합니다.
 * **구성 요소 도구 모음:** 구성 요소를 선택하면 구성 요소를 사용자 정의할 수 있는 도구 모음이 표시됩니다.
 * **페이지**: 템플릿을 만들기 위해 콘텐츠를 추가하는 영역입니다.
 

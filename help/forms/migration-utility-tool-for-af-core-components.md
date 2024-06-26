@@ -6,13 +6,14 @@ role: User, Developer, Admin
 features: core components
 hide: true
 hidefromtoc: true
-source-git-commit: cc1f3e2f0ddaed67de541c730c0b97f68c1e0d02
+exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
+feature: Adaptive Forms, Core Components
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 1%
 
 ---
-
 
 # 소개
 
@@ -117,9 +118,9 @@ AEM 환경을 위해 AEM 현대화 도구 를 활성화하고 사용하려면 Fo
    * **없음** : 양식 전환을 시작하기 전에 기초 구성 요소 기반 양식의 사본을 만들지 않으려면 옵션을 선택합니다.
    * **복원** : 양식 전환을 시작하기 전의 상태로 양식을 복원하려면 옵션을 선택합니다.
    * **Target에 복사**: 양식 전환을 시작하기 전에 기초 구성 요소 기반 양식의 사본을 만들려면 옵션을 선택합니다.
-이 예제에서는 **Target에 복사** 옵션이 선택되어 있습니다. 다음과 같은 경우 **Target에 복사** 옵션을 선택한 경우 **[!UICONTROL 소스 경로]** 및 **[!UICONTROL 대상 경로]** 옵션이 표시됩니다.
+이 예제에서는 **Target에 복사** 옵션이 선택되어 있습니다. 다음과 같은 경우 **Target에 복사** 옵션을 선택한 경우 **[!UICONTROL Source 경로]** 및 **[!UICONTROL 대상 경로]** 옵션이 표시됩니다.
 
-1. 다음을 지정합니다. `source folder` 의 이름 **[!UICONTROL 소스 경로]**.
+1. 다음을 지정합니다. `source folder` 의 이름 **[!UICONTROL Source 경로]**.
 1. 다음을 지정합니다. `target folder` 의 이름 **[!UICONTROL 대상 경로]**.
 1. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 1. 클릭 **[!UICONTROL Forms 추가]**. 의 모든 양식 `source folder` 화면에 표시됩니다.
@@ -149,6 +150,3 @@ AEM 환경을 위해 AEM 현대화 도구 를 활성화하고 사용하려면 Fo
 
 * 기초 구성 요소 기반 양식인지 확인하고, 동일한 구성 요소가 있는 구성 요소만 사용하십시오. [핵심 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) 사용 가능. 동일한 핵심 구성 요소가 없는 기초 구성 요소를 사용하는 경우 기초 구성 요소는 변환되지 않습니다. 따라서 양식을 작성하는 동안에는 제대로 작동하지 않습니다
 * 기초 구성 요소를 핵심 구성 요소로 변환하는 규칙의 형식이 XML로 지정되어 있는지 확인합니다.
-
-
-

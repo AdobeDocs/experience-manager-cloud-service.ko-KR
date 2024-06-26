@@ -3,7 +3,8 @@ title: AEM 양식에 대한 참조 테마 및 템플릿을 가져오는 방법
 description: AEM Forms은 양식을 신속하게 만들 수 있도록 샘플 적응형 양식 테마, 템플릿 및 양식 데이터 모델을 제공합니다.
 feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 10%
@@ -20,7 +21,7 @@ ht-degree: 10%
 
 <span class="preview"> [새 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
-AEM Forms as a Cloud Service에서는 여러 참조 테마, 템플릿 및 양식 데이터 모델(FDM)을 제공하여 적응형 Forms 만들기를 빠르게 시작할 수 있습니다. 다음을 다운로드할 수 있습니다. [소프트웨어 배포 포털의 콘텐츠 패키지 참조](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) 및 사용 [패키지 관리자](/help/implementing/developing/tools/package-manager.md) 을(를) 설치하려면 [참조 콘텐츠 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) 프로덕션, 개발 또는 로컬 개발 환경에서 이러한 참조 자산을 사용자 환경에 가져올 수 있습니다.
+AEM Forms as a Cloud Service 및 여러 참조 테마와 양식 데이터 모델(FDM)을 제공하여 적응형 Forms 생성을 신속하게 시작할 수 있습니다. 다음을 다운로드할 수 있습니다. [소프트웨어 배포 포털의 콘텐츠 패키지 참조](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) 및 사용 [패키지 관리자](/help/implementing/developing/tools/package-manager.md) 을(를) 설치하려면 [참조 콘텐츠 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) 프로덕션, 개발 또는 로컬 개발 환경에서 이러한 참조 자산을 사용자 환경에 가져올 수 있습니다.
 
 참조 콘텐츠 패키지에 포함된 테마, 템플릿 및 양식 데이터 모델(FDM)은 다음과 같습니다.
 

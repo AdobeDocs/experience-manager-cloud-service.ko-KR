@@ -1,11 +1,11 @@
 ---
 title: AEM Forms as a Cloud Service 환경의 설치 및 구성 문제를 해결하는 방법
-description: AEM Forms as a Cloud Service 환경의 설치 및 구성 문제 해결.
+description: AEM Forms as a Cloud Service 환경 설치 및 구성 문제 해결.
 contentOwner: khsingh
-feature: Adaptive Forms, Troubleshooting
+feature: Adaptive Forms
 role: User
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: a19a3d81652cb17fcd6b11e6047d2ea697bf3041
+source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
@@ -52,7 +52,7 @@ If the profile exists and issues still persist, contact Adobe Support. -->
 
 사용자가 빌드 파이프라인을 실행할 수 없습니다. 파이프라인이 일정 시간 동안 실행된 후 실패합니다.
 
-문제를 해결하려면 Cloud Manager를 열고 다음을 선택합니다. **[!UICONTROL 업데이트]** 를 설정하는 것이 좋습니다.
+이 문제를 해결하려면 Cloud Manager을 열고 **[!UICONTROL 업데이트]** 를 설정하는 것이 좋습니다.
 
 
 ## 번들이 활성 상태가 아닙니다. {#bundles-inactive-state}

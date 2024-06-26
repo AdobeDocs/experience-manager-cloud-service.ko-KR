@@ -2,12 +2,13 @@
 title: Forms as a Cloud Service 통신 API란 무엇입니까?
 description: 통신 API를 사용하여 문서에 서명, 인증 또는 보호하고, PDF 생성 프로세스를 자동화하고, PDF 문서를 다른 형식으로 변환합니다.
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs.
-feature: Adaptive Forms, APIs
+feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
-source-git-commit: 92811662e1ef9b6cbd5cb66c67f774109745bc68
+exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2290'
-ht-degree: 40%
+ht-degree: 42%
 
 ---
 
@@ -167,7 +168,7 @@ The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-
 
 ## 문서 추출
 
-<span class="preview"> 문서 추출 기능은 얼리어답터 프로그램 아래에 있습니다. 공식 이메일 ID에서 aem-forms-ea@adobe.com에 작성하여 얼리어답터 프로그램에 참여하고 기능에 대한 액세스를 요청할 수 있습니다. </span>
+<span class="preview"> 문서 추출 기능은 얼리어답터 프로그램 아래에 있습니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
 
 문서 추출 서비스는 사용 권한, PDF 속성 및 메타데이터와 같은 PDF 문서의 속성을 가져오는 기능을 제공합니다. 문서 추출 기능:
 
@@ -197,7 +198,7 @@ PDF documents contain metadata, which is information about the document (as dist
 
 ### PDF을 XDP로 변환 {#convert-pdf-to-xdp}
 
-<span class="preview"> PDF을 XDP로 변환 기능은 얼리어답터 프로그램 아래에 있습니다. 공식 이메일 ID에서 aem-forms-ea@adobe.com에 작성하여 얼리어답터 프로그램에 참여하고 기능에 대한 액세스를 요청할 수 있습니다. </span>
+<span class="preview"> PDF을 XDP로 변환 기능은 얼리어답터 프로그램 아래에 있습니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
 
 PDF 문서를 XDP 파일로 변환합니다. PDF 문서를 XDP 파일로 성공적으로 변환하려면 PDF 문서에 사전에 XFA 스트림이 있어야 합니다.
 
@@ -235,7 +236,7 @@ DocAssurance 서비스에는 서명 및 암호화 API가 포함되어 있습니�
 
 #### 사용 권한 API(Reader 확장)
 
-<span class="preview"> 사용 권한(Reader 확장) 기능은 얼리어답터 프로그램 아래에 있습니다. 공식 이메일 ID에서 aem-forms-ea@adobe.com에 작성하여 얼리어답터 프로그램에 참여하고 기능에 대한 액세스를 요청할 수 있습니다. </span>
+<span class="preview"> 사용 권한(Reader 확장) 기능은 얼리어답터 프로그램 아래에 있습니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
 
 사용 권한 기능을 사용하면 추가 사용 권한과 함께 Adobe Reader의 기능을 확장하여 조직에서 대화형 PDF 문서를 쉽게 공유할 수 있습니다. 이 서비스는 Adobe Reader 7.0 이상에서 작동하며 PDF 문서에 사용 권한을 추가합니다. 이 작업은 문서에 주석 추가, 양식 채우기, 문서 저장과 같이 Adobe Reader을 사용하여 PDF 문서를 열 때 일반적으로 사용할 수 없는 기능을 활성화합니다.
 
@@ -298,7 +299,7 @@ PDF Reader 서비스를 확장하기 위한 다양한 사용 권한 기능은 �
 
 ## 온보딩
 
-커뮤니케이션 기능은 Forms as a Cloud Service 사용자용 독립 실행형 모듈과 추가 기능 모듈로 제공됩니다. Adobe 영업팀 또는 Adobe 담당자에게 문의하여 액세스 권한을 요청할 수 있습니다. Adobe는 조직에 대한 액세스 권한을 활성화하고 조직의 책임자로 지정된 사람에게 필요한 권한을 제공합니다. 관리자는 API를 사용하도록 조직의 Forms as a Cloud Service 개발자(사용자)에게 액세스 권한을 부여할 수 있습니다.
+커뮤니케이션 기능은 Forms as a Cloud Service 사용자용 독립 실행형 모듈과 추가 기능 모듈로 제공됩니다. Adobe 영업팀 또는 Adobe 담당자에게 문의하여 액세스 권한을 요청할 수 있습니다. Adobe는 조직에 대한 액세스 권한을 활성화하고 조직의 책임자로 지정된 사람에게 필요한 권한을 제공합니다. 관리자는 조직의 Forms as a Cloud Service 개발자(사용자)가 API를 사용할 수 있도록 액세스 권한을 부여할 수 있습니다.
 
 온보딩 후 Forms as a Cloud Service 환경에 대한 통신 기능을 활성화하려면 다음을 수행하십시오.
 
@@ -408,4 +409,4 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 * [통신 처리 - 동기 API](/help/forms/aem-forms-cloud-service-communications.md)
 * [통신 처리 - 일괄 처리 API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
-* [적응형 Forms 및 통신 API를 위한 AEM Forms as a Cloud Service 아키텍처](/help/forms/aem-forms-cloud-service-architecture.md)
+* [AEM Forms as a Cloud Service 적응형 Forms 및 커뮤니케이션 아키텍처](/help/forms/aem-forms-cloud-service-architecture.md)

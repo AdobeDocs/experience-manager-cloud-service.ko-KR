@@ -3,7 +3,8 @@ title: 트랜잭션 보고서 과금 가능한 API
 description: 트랜잭션으로 계산되는 모든 API 목록
 feature: Adaptive Forms, Foundation Components
 exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
-source-git-commit: df4fbe8552ad61df3a8e8b44dcd1427b8f6e9240
+role: Admin, Developer, User
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1438'
 ht-degree: 34%
@@ -284,19 +285,19 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링에 필요한 여�
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#tag/PrintedOutput" target="_blank">generatePrintedOutput</a></td>
-   <td>XDP 및 PDF 문서를 PS(PostScript), PCL(Printer Command Language) 및 ZPL 파일 형식으로 변환합니다. </td>
+   <td>XDP 및 PDF 문서를 PostScript(PS), 프린터 명령 언어(PCL) 및 ZPL 파일 형식으로 변환합니다. </td>
    <td>처리된 문서</td>
    <td> </td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#tag/PrintedOutputOptions" target="_blank">generatePrintedOutput(PrintedOutputOptions)</a></td>
-   <td>XDP 및 PDF 문서를 PS(PostScript), PCL(Printer Command Language) 및 ZPL 파일 형식으로 변환합니다. </td>
+   <td>XDP 및 PDF 문서를 PostScript(PS), 프린터 명령 언어(PCL) 및 ZPL 파일 형식으로 변환합니다. </td>
    <td>처리된 문서</td>
    <td> </td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/output-batch/#tag/Batch-Configuration/operation/CreateBatchConfig" target="_blank">generatePrintedOutputBatch</a></td>
-   <td>XDP 및 PDF 문서 집합을 PostScript(PS), 프린터 명령 언어(PCL) 및 ZPL 파일 형식 집합으로 변환합니다. </td>
+   <td>XDP 및 PDF 문서 집합을 PS(PostScript), PCL(프린터 명령 언어) 및 ZPL 파일 형식 집합으로 변환합니다. </td>
    <td>처리된 문서</td>
    <td> <!-- The generatePDFOutputBatch API combines a form template with a record and generates a PDF. When you process a batch of records, the transaction reporting service counts each record as a separate PDF rendition. <br> You can use the <a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> flag to combine multiple renditions to single PDF file. Irrespective of the status of flag, the service counts each record as a separate PDF rendition. --> </td>
   </tr>

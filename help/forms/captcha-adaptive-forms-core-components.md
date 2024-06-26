@@ -1,14 +1,15 @@
 ---
 title: AEM 적응형 양식에서 Google reCAPTCHA를 사용하는 방법
-description: Google reCAPTCHA 서비스를 통해 손쉽게 양식 보안을 강화할 수 있습니다. 내부의 단계별 가이드!
+description: Google reCAPTCHA 서비스를 통해 손쉽게 양식 보안을 강화할 수 있습니다. 단계별 안내서가 포함되어 있습니다.
 topic-tags: Adaptive Forms, author
 keywords: Google reCAPTCHA 서비스, 적응형 Forms, CAPTCHA 과제, 보트 방지, 핵심 구성 요소, 양식 제출 보안, 양식 스팸 방지
 feature: Adaptive Forms, Core Components
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
-source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '939'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -21,7 +22,7 @@ ht-degree: 10%
 
 CAPTCHA(컴퓨터와 인간을 구분하기 위해 완전히 자동화된 공공 튜링 테스트)는 인간과 자동화된 프로그램 또는 봇을 구별하기 위해 온라인 거래에서 일반적으로 사용되는 프로그램입니다. 문제를 제기하고 사용자 응답을 평가하여 사이트와 상호 작용하는 것이 인간인지 봇인지 판단합니다. 테스트가 실패할 경우 사용자가 진행하지 못하도록 차단하고 봇이 스팸을 게시하거나 악의적인 목적으로 상호 작용하는 것을 방지하여 온라인 거래를 안전하게 할 수 있도록 도와줍니다.
 
-AEM Forms은 다음과 같은 CAPTCHA 솔루션을 as a Cloud Service으로 지원합니다.
+AEM Formsas a Cloud Service 에서 CAPTCHA 솔루션을 지원합니다.
 
 * [Google recaptcha](#connect-your-aem-forms-environment-with-recaptcha-service-by-google)
 * [Cloudflare 턴스타일](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
@@ -35,7 +36,7 @@ AEM Forms은 다음과 같은 CAPTCHA 솔루션을 as a Cloud Service으로 지�
 1. 획득 [reCAPTCHA API 키 쌍](https://www.google.com/recaptcha/admin) Google에서. 여기에는 다음이 포함됩니다 **사이트 키** 및 a **비밀 키**.
 
    ![Google 웹 사이트의 Google reCAPTCHA 구성을 만들어 reCAPTCHA 키를 가져옵니다.](/help/forms/assets/google-captcha.gif)
-1. AEM Forms as a Cloud Service 환경에서 구성 컨테이너를 만듭니다. 구성 컨테이너에는 AEM을 외부 서비스에 연결하는 데 사용되는 클라우드 구성이 포함됩니다. Google에서 제공하는 reCAPTCHA 서비스를 사용하여 AEM Forms 환경을 연결할 수 있도록 구성 컨테이너를 만들고 구성하려면 다음 작업을 수행하십시오.
+1. AEM Forms as a Cloud Service 환경에서 컨테이너 를 만듭니다. 구성 컨테이너에는 AEM을 외부 서비스에 연결하는 데 사용되는 클라우드 구성이 포함됩니다. Google에서 제공하는 reCAPTCHA 서비스를 사용하여 AEM Forms 환경을 연결할 수 있도록 구성 컨테이너를 만들고 구성하려면 다음 작업을 수행하십시오.
    1. AEM Forms as a Cloud Service 인스턴스를 엽니다.
    1. 다음으로 이동 **[!UICONTROL 도구 > 일반 > 구성 브라우저]**. 구성 브라우저에서 다음 작업을 수행할 수 있습니다.
    1. 기존 폴더를 선택하거나 폴더를 만듭니다. 폴더를 만들고 이 폴더에 대해 클라우드 구성 옵션을 활성화하거나 기존 폴더에 대해 클라우드 구성 옵션을 활성화할 수 있습니다.
@@ -43,7 +44,7 @@ AEM Forms은 다음과 같은 CAPTCHA 솔루션을 as a Cloud Service으로 지�
       * 폴더를 만들고 이 폴더에 대한 클라우드 구성 옵션을 활성화하려면 다음을 수행하십시오.
          1. 구성 브라우저에서 **[!UICONTROL 만들기]**.
          1. 구성 만들기 대화 상자에서 이름, 제목을 지정하고 **[!UICONTROL 클라우드 구성]** 옵션을 선택합니다.
-         1. 클릭 **[!UICONTROL 만들기]**
+         1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
       * 기존 폴더에 대해 클라우드 구성 옵션을 활성화하려면 다음을 수행하십시오.
          1. 구성 브라우저에서 폴더를 선택하고 **[!UICONTROL 속성]**.
          1. 구성 속성 대화 상자에서 다음을 활성화합니다 **[!UICONTROL 클라우드 구성]**.

@@ -1,15 +1,17 @@
 ---
 Title: How to configure submit to Rest Endpoint submit action for an Adaptive Form?
 Description: Discover the steps to set up Rest Endpoint when submitting an Adaptive Form.
-keywords: AEM Forms REST 끝점, REST 끝점에 제출, REST URL에 데이터 게시, REST 끝점 작업 구성
+keywords: AEM Forms REST 끝점, REST 끝점에 제출, REST URL에 Post 데이터, REST 끝점 작업 구성
 feature: Adaptive Forms, Core Components
-source-git-commit: 8784c0bcd05eeae41a472faa5ecad03cbdd8a9b6
+exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
+title: "적응형 양식에 대한 제출 액션을 구성하는 방법"
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 62%
+source-wordcount: '560'
+ht-degree: 60%
 
 ---
-
 
 # REST 끝점 제출 작업에 대한 적응형 양식 구성
 
@@ -75,4 +77,3 @@ AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 �
 ## 관련 문서
 
 {{af-submit-action}}
-

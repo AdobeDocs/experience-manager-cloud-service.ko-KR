@@ -3,7 +3,8 @@ title: 적응형 Forms에 대한 기록 문서를 생성하는 방법
 description: 적응형 Forms 핵심 구성 요소용 기록 문서(DoR)에 대한 템플릿을 생성하는 방법에 대해 알아봅니다.
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '3131'
 ht-degree: 1%
@@ -30,7 +31,7 @@ ht-degree: 1%
 
 기록 문서에 필요한 에셋을 배우고 준비하기 전에:
 
-**기본 템플릿:** Forms Designer 또는 Acrobat Form(AcroForm)에서 작성된 XFA 템플릿(XDP 파일). [기본 템플릿](#base-template-of-a-document-of-record) 기록 문서의 스타일 및 브랜딩 정보를 지정하는 데 사용됩니다. 이전에 XFA 템플릿(XDP 파일)을 AEM Forms 인스턴스에 업로드하십시오.
+**기본 템플릿:** Forms Designer 또는 Acrobat 양식(AcroForm)에서 작성된 XFA 템플릿(XDP 파일). [기본 템플릿](#base-template-of-a-document-of-record) 기록 문서의 스타일 및 브랜딩 정보를 지정하는 데 사용됩니다. 이전에 XFA 템플릿(XDP 파일)을 AEM Forms 인스턴스에 업로드하십시오.
 
 **적응형 양식:** 기록 문서를 생성할 적응형 양식입니다.
 
@@ -181,7 +182,7 @@ When you select a form model, configure Document of Record using options availab
   </tr>
   <tr>
    <td>확인란</td>
-   <td>체크 상자</td>
+   <td>확인란</td>
    <td>true</td>
    <td> </td>
   </tr>
@@ -360,7 +361,7 @@ When you select a form model, configure Document of Record using options availab
 
    >[!NOTE]
    >
-   >6.3 이전 버전의 Designer로 만든 적응형 양식 템플릿을 사용하는 경우 Accent Color 및 Font Family 속성이 작동하려면 루트 하위 양식 아래의 적응형 양식 템플릿에 다음 항목이 있는지 확인하십시오.
+   >6.3 이전 버전의 Designer으로 만든 적응형 양식 템플릿을 사용하는 경우 Accent Color 및 Font Family 속성이 작동하려면 루트 하위 양식 아래의 적응형 양식 템플릿에 다음 항목이 있는지 확인하십시오.
 
    ```xml
    <proto>

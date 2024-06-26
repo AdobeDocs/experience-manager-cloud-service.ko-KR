@@ -3,7 +3,8 @@ title: 테마를 만들고 사용하여 적응형 양식의 스타일을 어떻�
 description: 적응형 양식 테마를 사용하여 적응형 양식에 스타일을 지정하고 시각적 ID를 제공합니다. 여러 적응형 Forms에서 테마를 공유할 수 있습니다.
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '5558'
 ht-degree: 2%
@@ -122,7 +123,7 @@ Cloud Service 인스턴스에서 만든 테마:
   </tr>
   <tr>
    <td>4.</td>
-   <td>작성일</td>
+   <td>생성됨</td>
    <td>아니요</td>
    <td>테마 생성 날짜</td>
   </tr>
@@ -146,13 +147,13 @@ Cloud Service 인스턴스에서 만든 테마:
   </tr>
   <tr>
    <td>8.</td>
-   <td>게시 시간</td>
+   <td>Publish 정시</td>
    <td>예</td>
    <td>테마를 자동으로 게시할 시간입니다.</td>
   </tr>
   <tr>
    <td>9.</td>
-   <td>게시 해제 시간</td>
+   <td>Publish 해제 시간</td>
    <td>예</td>
    <td>테마를 자동으로 게시 취소하는 시간입니다.</td>
   </tr>
@@ -234,7 +235,7 @@ Cloud Service 인스턴스에서 만든 테마:
 
 [![테마 편집기](assets/themes.png)](assets/themes-1.png) **A.** 사이드바 **B.** 캔버스
 
-### 구성 요소 스타일링 {#styling-components}
+### 구성 요소 스타일 지정 {#styling-components}
 
 여러 적응형 Forms에서 테마를 사용할 수 있습니다<!-- and interactive communications -->테마에 지정한 구성 요소 형식을 가져옵니다. 제목, 설명, 패널, 필드, 아이콘 및 텍스트 상자와 같은 다양한 구성 요소의 스타일을 지정할 수 있습니다. 위젯을 사용하여 테마에서 구성 요소 속성을 구성합니다. CSS 무시 섹션을 통해 CSS 코드를 작성하거나 사용자 지정 선택기를 제공할 수 있지만 CSS 이하에 대한 사전 지식은 필요하지 않지만 원하는 것입니다. 사이드바에서 구성 요소를 선택하면 CSS Overrides 섹션이 나타납니다.
 
@@ -408,7 +409,7 @@ Cloud Service 인스턴스에서 만든 테마:
    <td><p>이미지 또는 색상으로 구성 요소의 배경을 채울 수 있습니다. </p> </td>
   </tr>
   <tr>
-   <td><p>테두리</p> </td>
+   <td><p>경계</p> </td>
    <td><p>구성 요소의 테두리 모양을 선택할 수 있습니다. 예를 들어 텍스트 상자에 점선이 있는 진한 빨간색 테두리가 나타나도록 할 수 있습니다. </p> <p>테두리의 폭, 스타일, 반경 및 색상을 선택할 수 있습니다.</p> </td>
   </tr>
   <tr>
@@ -600,7 +601,7 @@ themeOverride 매개 변수를 사용하여 런타임에 테마를 적용할 수
 
 ## 다른 적응형 양식 사용 사례에 미치는 영향 {#impact-on-other-adaptive-form-use-cases}
 
-* **양식 게시/게시 취소:** 양식을 게시할 때에에 적용된 테마도 게시됩니다(아직 게시되지 않은 경우)
+* **양식 Publish/게시 취소:** 양식을 게시할 때에에 적용된 테마도 게시됩니다(아직 게시되지 않은 경우)
 * **양식 가져오기/내보내기:** 양식을 가져오거나 내보낼 때 관련 테마를 자동으로 가져오거나 내보냅니다.
 * **양식의 참조:** 양식 참조의 참조 섹션에는 테마에 대한 추가 항목이 포함되어 있습니다.
 * **양식의 마지막 수정 시간:** 연결된 테마가 변경되면 업데이트됩니다.

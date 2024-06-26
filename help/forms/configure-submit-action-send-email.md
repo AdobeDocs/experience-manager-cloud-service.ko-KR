@@ -3,15 +3,17 @@ Title: How to send an email on submission of an Adaptive Form?
 Description: Explore the process to set up email notifications when submitting an Adaptive Form.
 keywords: 적응형 양식에 대한 이메일 보내기 방법, 이메일 제출 액션, 적응형 양식 이메일, 양식 제출 이메일, 이메일 보내기 안내서
 feature: Adaptive Forms, Core Components
-source-git-commit: f1db04e6cd1f78c1530aefd29f5f036ca5e70873
+exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
+title: "적응형 양식에 대한 제출 액션을 구성하는 방법"
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 24%
+source-wordcount: '447'
+ht-degree: 25%
 
 ---
 
-
-# 적응형 양식에 대한 이메일 제출 전송 작업 구성
+# 적응형 양식의 이메일 보내기 제출 액션 구성
 
 다음 **[!UICONTROL 이메일 보내기]** 제출 액션을 사용하면 양식 제출에 성공하면 한 명 이상의 수신자에게 이메일을 보낼 수 있습니다. 이 제출 액션을 사용하면 양식 데이터를 사전 정의된 형식으로 포함할 수 있는 이메일을 만들 수 있습니다. 예를 들어 제출된 양식 데이터에서 고객 이름, 배송 주소, 주 이름과 우편번호를 검색하는 다음 템플릿을 고려합니다.
 
@@ -69,5 +71,3 @@ ht-degree: 24%
 ## 관련 문서
 
 {{af-submit-action}}
-
-

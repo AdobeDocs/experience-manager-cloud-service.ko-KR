@@ -8,7 +8,8 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
-source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2150'
 ht-degree: 1%
@@ -130,14 +131,14 @@ ht-degree: 1%
 1. https의 AEM 웹 콘솔 구성 페이지로 이동합니다.[*호스트*]:[*포트*]/system/console/configMgr.
 
 1. 검색 및 클릭 **[!UICONTROL 적응형 양식 구성 서비스]** 를 클릭하여 편집 모드로 엽니다.
-1. 조각 대신&#x200B;]**자리 표시자 활성화 확인란을 비활성화**[!UICONTROL &#x200B;하여 자리 표시자 이미지가 아닌 전체 조각을 표시합니다.
+1. 사용 안 함 **[!UICONTROL 조각 대신 자리 표시자 활성화]** 확인란을 선택하여 자리 표시자 이미지가 아닌 전체 조각을 표시합니다.
 
 ### 적응형 양식에 단편 삽입 {#insert-a-fragment-in-an-adaptive-form}
 
 사용자가 만든 적응형 양식 단편은 AEM 컨텐츠 파인더의 적응형 양식 단편 탭에 나타납니다. 적응형 양식에 적응형 양식 단편을 삽입하려면:
 
 1. 적응형 양식 단편을 삽입할 적응형 양식을 편집 모드에서 엽니다.
-1. 클릭 **에셋** ![에셋 브라우저](assets/assets-browser.png) 를 클릭합니다. 에셋 브라우저에서 **적응형 양식 단편** 드롭다운에서 을 클릭합니다.
+1. 클릭 **Assets** ![에셋 브라우저](assets/assets-browser.png) 를 클릭합니다. 에셋 브라우저에서 **적응형 양식 단편** 드롭다운에서 을 클릭합니다.
 
    양식 템플릿, XML 스키마 또는 기본 등 모든 적응형 양식 조각을 표시하거나 해당 양식 모델을 기반으로 필터링을 표시하도록 선택할 수도 있습니다.
 
@@ -230,7 +231,7 @@ XFA 양식 템플릿 또는 XSD 복합 유형을 사용하여 적응형 양식 �
    <td><p>선택한 조각을 현지화하기 위한 사전을 생성합니다. <!-- For more information, see <a href="lazy-loading-adaptive-forms.md" target="_blank">Localizing Adaptive Forms</a>.<br /> <br /> --> </p> </td>
   </tr>
   <tr>
-   <td><p>게시 / 게시 취소</p> </td>
+   <td><p>Publish / 게시 취소</p> </td>
    <td><p>선택한 조각을 게시/게시 취소합니다.<br /> <br /> </p> </td>
   </tr>
   <tr>

@@ -6,7 +6,8 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '4351'
 ht-degree: 1%
@@ -41,9 +42,9 @@ AEM Forms은 사용자 정의 함수를 지원하므로 사용자가 복잡한 �
 
 사용자 지정 함수는 기본적으로 JavaScript 파일에 추가되는 클라이언트 라이브러리입니다. 사용자 지정 함수를 만들면 규칙 편집기에서 적응형 양식에서 사용자가 선택할 수 있게 됩니다. 사용자 지정 함수는 규칙 편집기의 JavaScript 주석으로 식별됩니다.
 
-### 사용자 지정 함수에 대해 지원되는 JavaScript 주석 {#js-annotations}
+### 사용자 지정 기능에 대해 지원되는 JavaScript 주석 {#js-annotations}
 
-JavaScript 주석은 JavaScript 코드에 대한 메타데이터를 제공하는 데 사용됩니다. 여기에는 /** 및 @과 같은 특정 기호로 시작하는 주석이 포함됩니다. 주석은 함수, 변수 및 코드의 기타 요소에 대한 중요한 정보를 제공합니다. 적응형 양식은 사용자 정의 기능에 대한 다음 JavaScript 주석을 지원합니다.
+JavaScript 주석은 JavaScript 코드에 대한 메타데이터를 제공하는 데 사용됩니다. 여기에는 /** 및 @과 같은 특정 기호로 시작하는 주석이 포함됩니다. 주석은 함수, 변수 및 코드의 기타 요소에 대한 중요한 정보를 제공합니다. 적응형 양식은 사용자 정의 기능에 대해 다음 JavaScript 주석을 지원합니다.
 
 #### 이름
 
@@ -75,7 +76,7 @@ JavaScript 주석은 JavaScript 코드에 대한 메타데이터를 제공하는
    * 날짜[]: 날짜 값의 배열을 나타냅니다.
    * array: 다양한 유형의 값을 포함하는 일반 배열을 나타냅니다.
    * object: 값을 직접 전달하는 대신 사용자 지정 함수에 전달되는 양식 개체를 나타냅니다.
-   * 범위: 사용자 지정 함수 내에서 양식을 수정하는 방법, 양식 인스턴스, 대상 필드 인스턴스와 같은 읽기 전용 변수를 포함하는 globals 개체를 나타냅니다. 이 매개 변수는 JavaScript 주석에서 마지막 매개 변수로 선언되며 적응형 양식의 규칙 편집기에 표시되지 않습니다. 범위 매개 변수는 양식 또는 구성 요소의 개체에 액세스하여 양식 처리에 필요한 규칙이나 이벤트를 트리거합니다. Globals 개체 및 사용 방법에 대한 자세한 내용은 [여기를 클릭하십시오](/help/forms/create-and-use-custom-functions.md#support-field-and-global-objects).
+   * 범위: 사용자 지정 함수 내에서 양식을 수정하는 방법, 양식 인스턴스, 대상 필드 인스턴스와 같은 읽기 전용 변수를 포함하는 globals 개체를 나타냅니다. 이 매개 변수는 JavaScript 주석의 마지막 매개 변수로 선언되며 적응형 양식의 규칙 편집기에 표시되지 않습니다. 범위 매개 변수는 양식 또는 구성 요소의 개체에 액세스하여 양식 처리에 필요한 규칙이나 이벤트를 트리거합니다. Globals 개체 및 사용 방법에 대한 자세한 내용은 [여기를 클릭하십시오](/help/forms/create-and-use-custom-functions.md#support-field-and-global-objects).
 
 매개 변수 형식은 대/소문자를 구분하지 않으며 매개 변수 이름에는 공백을 사용할 수 없습니다.
 
@@ -170,9 +171,9 @@ jsdoc 주석을 사용하거나 사용하지 않고 사용자 지정 함수를 �
             // code to be executed
         }
 ```
-사용자가 사용자 정의 함수에 JavaScript 주석을 추가하지 않으면 함수 이름으로 규칙 편집기에 나열됩니다. 그러나 사용자 정의 함수의 가독성을 높이기 위해 JavaScript 주석을 포함하는 것이 좋습니다.
+사용자가 사용자 지정 함수에 JavaScript 주석을 추가하지 않으면 함수 이름으로 규칙 편집기에 나열됩니다. 그러나 사용자 정의 함수의 가독성을 높이기 위해 JavaScript 주석을 포함하는 것이 좋습니다.
 
-### 필수 JavaScript 주석 또는 주석이 있는 화살표 함수
+### 필수 JavaScript 주석 또는 댓글이 있는 화살표 기능
 
 화살표 함수 구문을 사용하여 사용자 지정 함수를 만들 수 있습니다.
 
@@ -194,7 +195,7 @@ jsdoc 주석을 사용하거나 사용하지 않고 사용자 지정 함수를 �
     
 ```
 
-사용자가 사용자 정의 함수에 JavaScript 주석을 추가하지 않으면 사용자 정의 함수가 적응형 양식의 규칙 편집기에 나열되지 않습니다.
+사용자가 JavaScript 주석을 사용자 지정 함수에 추가하지 않으면 사용자 지정 함수가 적응형 양식의 규칙 편집기에 나열되지 않습니다.
 
 ### 필수 JavaScript 주석 또는 주석이 있는 함수 표현식
 
@@ -214,7 +215,7 @@ jsdoc 주석을 사용하거나 사용하지 않고 사용자 지정 함수를 �
         }
 ```
 
-사용자가 사용자 정의 함수에 JavaScript 주석을 추가하지 않으면 사용자 정의 함수가 적응형 양식의 규칙 편집기에 나열되지 않습니다.
+사용자가 JavaScript 주석을 사용자 지정 함수에 추가하지 않으면 사용자 지정 함수가 적응형 양식의 규칙 편집기에 나열되지 않습니다.
 
 ## 사용자 정의 함수 만들기 {#create-custom-function}
 
@@ -353,7 +354,7 @@ AEM as a Cloud Service 배포, [AEMaaCS 프로젝트 디렉터리]을 클릭하�
 
    1. 기존 전체 스택 파이프라인을 통해 코드 배포를 트리거합니다. 이렇게 하면 업데이트된 코드가 자동으로 빌드 및 배포됩니다.
 
-파이프라인을 아직 설정하지 않았다면 의 안내서를 참조하십시오. [AEM Forms as a Cloud Service에 대한 파이프라인을 설정하는 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#setup-pipeline).
+파이프라인을 아직 설정하지 않았다면 의 안내서를 참조하십시오. [AEM Formsas a Cloud Service 용 파이프라인을 설정하는 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#setup-pipeline).
 
 파이프라인이 성공적으로 실행되면 클라이언트 라이브러리에 추가된 사용자 지정 함수를에서 사용할 수 있게 됩니다 [적응형 양식 규칙 편집기](/help/forms/rule-editor-core-components.md).
 
@@ -378,7 +379,7 @@ AEM as a Cloud Service 배포, [AEMaaCS 프로젝트 디렉터리]을 클릭하�
 
 ## 적응형 양식에서 사용자 정의 함수 사용
 
-적응형 양식에서 다음을 사용할 수 있습니다 [규칙 편집기 내의 사용자 지정 함수](/help/forms/rule-editor-core-components.md). JavaScript 파일에 다음 코드를 추가하겠습니다(`Function.js` file)을 추가하여 생년월일(YYYY-MM-DD)을 기준으로 연령을 계산합니다. 사용자 정의 함수 만들기 `calculateAge()` 입력 시 생년월일을 사용하고 연령을 반환합니다.
+적응형 양식에서 다음을 사용할 수 있습니다 [규칙 편집기 내의 사용자 지정 함수](/help/forms/rule-editor-core-components.md). JavaScript 파일에 다음 코드를 추가합니다(`Function.js` file)을 추가하여 생년월일(YYYY-MM-DD)을 기준으로 연령을 계산합니다. 사용자 정의 함수 만들기 `calculateAge()` 입력 시 생년월일을 사용하고 연령을 반환합니다.
 
 ```javascript
     /**
@@ -1016,7 +1017,7 @@ function testRemoveInstance(globals)
    * 기존 양식의 경우 사용자 정의 제출 핸들러가 제대로 작동하지 않으면 를 열고 저장해야 합니다 `submitForm` 에 대한 규칙 **제출** 규칙 편집기를 사용하는 단추입니다. 이 작업은 의 기존 규칙을 대체합니다. `submitForm('custom:submitSuccess', 'custom:submitError')` 포함 `submitForm()` 폼에서.
 
 
-* 사용자 지정 함수에 대한 코드가 포함된 JavaScript 파일에 오류가 있는 경우 사용자 지정 함수가 적응형 양식의 규칙 편집기에 나열되지 않습니다. 사용자 지정 함수 목록을 확인하려면 `error.log` 파일에 오류가 표시됩니다. 오류가 발생하면 사용자 지정 함수 목록이 비어 있습니다.
+* 사용자 정의 함수에 대한 코드가 들어 있는 JavaScript 파일에 오류가 있는 경우 사용자 정의 함수가 적응형 양식의 규칙 편집기에 나열되지 않습니다. 사용자 지정 함수 목록을 확인하려면 `error.log` 파일에 오류가 표시됩니다. 오류가 발생하면 사용자 지정 함수 목록이 비어 있습니다.
 
   ![오류 로그 파일](/help/forms/assets/custom-function-list-error-file.png)
 

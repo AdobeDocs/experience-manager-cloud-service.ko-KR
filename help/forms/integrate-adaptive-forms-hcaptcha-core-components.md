@@ -1,25 +1,27 @@
 ---
 title: AEM 적응형 양식 핵심 구성 요소에서 hCaptcha&reg;를 사용하는 방법
-description: hCaptcha&reg; 서비스를 통해 손쉽게 양식 보안을 강화할 수 있습니다. 내부의 단계별 가이드!
+description: hCaptcha&reg; 서비스를 통해 손쉽게 양식 보안을 강화할 수 있습니다. 단계별 안내서가 포함되어 있습니다.
 topic-tags: Adaptive Forms, author
 keywords: Captcha&reg; 서비스, 적응형 Forms, CAPTCHA 과제, 보트 방지, 핵심 구성 요소, 양식 제출 보안, 양식 스팸 방지
 feature: Adaptive Forms, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
+exl-id: 6c559df2-7b6a-42fe-b44c-29a782570a0c
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '962'
-ht-degree: 11%
+ht-degree: 25%
 
 ---
 
 # AEM Forms 환경을 hCaptcha®와 연결합니다. {#connect-your-forms-environment-with-hcaptcha-service}
 
-<span class="preview"> 이 기능은 얼리어답터 프로그램(Early Adopter Program)에 있습니다. 공식 이메일 ID에서 aem-forms-ea@adobe.com에 작성하여 얼리어답터 프로그램에 참여하고 기능에 대한 액세스를 요청할 수 있습니다. </span>
+<span class="preview"> 이 기능은 얼리어답터 프로그램(Early Adopter Program)에 있습니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
 
 CAPTCHA(컴퓨터와 인간을 구분하기 위해 완전히 자동화된 공공 튜링 테스트)는 인간과 자동화된 프로그램 또는 봇을 구별하기 위해 온라인 거래에서 일반적으로 사용되는 프로그램입니다. 문제를 제기하고 사용자 응답을 평가하여 사이트와 상호 작용하는 것이 인간인지 봇인지 판단합니다. 테스트가 실패할 경우 사용자가 진행하지 못하도록 차단하고 봇이 스팸을 게시하거나 악의적인 목적으로 상호 작용하는 것을 방지하여 온라인 거래를 안전하게 할 수 있도록 도와줍니다.
 
-AEM Forms은 다음과 같은 CAPTCHA 솔루션을 as a Cloud Service으로 지원합니다.
+AEM Formsas a Cloud Service 에서 CAPTCHA 솔루션을 지원합니다.
 
 * [Google recaptcha](/help/forms/captcha-adaptive-forms-core-components.md)
 * [Cloudflare 턴스타일](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
@@ -27,9 +29,9 @@ AEM Forms은 다음과 같은 CAPTCHA 솔루션을 as a Cloud Service으로 지�
 
 ## AEM Forms 환경과 hCaptcha Captcha 통합
 
-Captcha® 서비스는 보트, 스팸 및 자동 남용으로부터 양식을 보호합니다. 확인란 위젯 문제를 제기하고 사용자 응답을 평가하여 양식과 상호 작용하는 사람인지 보트인지를 확인합니다. 테스트가 실패할 경우 사용자가 진행할 수 없도록 막고 봇이 스팸이나 악의적인 활동을 게시하지 않도록 해 온라인 거래를 안전하게 만드는 데 도움을 준다.
+hCaptcha® 서비스는 봇, 스팸 및 자동화된 남용으로부터 양식을 보호합니다. 확인란 위젯 챌린지를 제기하고 사용자의 답변을 평가하여 양식과 상호 작용하는 것이 인간인지 또는 봇인지 판단합니다. 테스트가 실패할 경우 사용자가 진행하지 못하도록 차단하고 봇이 스팸을 게시하거나 악의적인 활동으로 상호 작용하는 것을 방지하여 온라인 거래를 안전하게 할 수 있도록 도와줍니다.
 
-AEM Forms은 적응형 Forms 핵심 구성 요소에서 hCaptcha®를 as a Cloud Service으로 지원합니다. 양식 제출 시 확인란 위젯 문제를 제시하는 데 사용할 수 있습니다.
+AEM Formsas a Cloud Service 는 적응형 Forms 구성 요소® hCaptcha를 지원합니다. 양식 제출 시 확인란 위젯 문제를 제시하는 데 사용할 수 있습니다.
 
 <!-- ![hCaptcha&reg;](assets/hCaptcha&reg;-challenge.png)-->
 
@@ -88,8 +90,8 @@ AEM Forms을 hCaptcha® 서비스와 통합하려면 다음 단계를 수행하�
 
    * **[!UICONTROL 이름]:** Captcha 구성 요소의 이름을 지정하십시오. 양식 및 규칙 편집기에서 고유한 이름으로 양식 구성 요소를 쉽게 식별할 수 있습니다.
    * **[!UICONTROL 제목]:** Captcha 구성 요소의 제목을 지정합니다.
-   * **[!UICONTROL 구성 설정]:** hCaptcha®에 대해 구성된 클라우드 구성을 선택합니다.
-   * **Captcha 크기:** hCaptcha® 챌린지 대화 상자의 표시 크기를 선택할 수 있습니다. 사용 **[!UICONTROL 콤팩트]** 작은 크기 및 을 표시하는 옵션 **[!UICONTROL 기본]** 비교적 큰 크기의 hCaptcha® 문제 대화 상자를 표시하는 옵션입니다.<!-- or **[!UICONTROL Invisible]** to validate hCaptcha&reg; without explicitly rendering the checkbox widget on the user interface. -->
+   * **[!UICONTROL 구성 설정]:** hCaptcha®용으로 구성된 클라우드 구성을 선택합니다.
+   * **Captcha 크기:** hCaptcha® 챌린지 대화 상자의 표시 크기를 선택할 수 있습니다. 작은 크기로 표시하려면 **[!UICONTROL 소형]** 옵션을 사용하고 상대적으로 큰 크기의 hCaptcha® 챌린지 대화 상자를 표시하려면 **[!UICONTROL 보통]** 옵션을 사용하십시오.<!-- or **[!UICONTROL Invisible]** to validate hCaptcha&reg; without explicitly rendering the checkbox widget on the user interface. -->
    * **[!UICONTROL 유효성 확인 메시지]:** 양식 제출 시 Captcha 유효성 검사에 대한 유효성 검사 메시지를 제공합니다.
    * **[!UICONTROL 스크립트 유효성 검사 메시지]** - 이 옵션을 사용하면 스크립트 유효성 검사가 실패할 경우 표시할 메시지를 입력할 수 있습니다.
      >[!NOTE]
@@ -101,7 +103,7 @@ AEM Forms을 hCaptcha® 서비스와 통합하려면 다음 단계를 수행하�
 
 이제 양식 제출에 대해 hCaptcha® 서비스가 제기한 문제를 양식 작성기가 성공적으로 해결한 적법한 양식만 허용됩니다. hCaptcha®
 
-**hCaptcha®는 Intutory Machines, Inc.의 등록 상표입니다.**
+**hCaptcha®는 Intuition Machines, Inc.의 등록 상표입니다.**
 
 
 ## 자주 묻는 질문

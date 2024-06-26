@@ -3,10 +3,11 @@ title: AEM Forms에 대한 메타데이터를 관리하려면 어떻게 해야 �
 description: 메타데이터를 사용하면 에셋을 보다 쉽게 분류하고 구성할 수 있으며 특정 에셋을 찾는 사용자에게 도움이 됩니다.
 feature: Adaptive Forms, Foundation Components
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1735'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -110,12 +111,12 @@ ht-degree: 5%
    <td>양식을 마지막으로 게시한 시간을 지정하는 읽기 전용 값입니다.</td> 
   </tr> 
   <tr> 
-   <td>게시 설정/해제 시간</td> 
+   <td>Publish 설정/해제 시간</td> 
    <td>리소스를 제외한 모든 항목</td> 
    <td><p>양식이 자동으로 게시/게시 취소되도록 예약된 시간입니다. 사용자가 메타데이터 편집 시 이 값을 설정합니다.</p> 
     <ul> 
-     <li>게시 켜기 및 끄기 시간은 모두 현재 날짜 이후여야 합니다. </li> 
-     <li>게시 해제 시간은 게시 설정 시간 이후여야 합니다. </li> 
+     <li>Publish 켜기 및 끄기 시간은 모두 현재 날짜 이후여야 합니다. </li> 
+     <li>Publish 해제 시간은 게시 설정 시간 이후여야 합니다. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -123,7 +124,7 @@ ht-degree: 5%
    <td><p>양식 템플릿</p> <p>PDF 양식</p> </td> 
    <td><p>양식 데이터를 서블릿에 제출하기 위해 사용자 지정 URL을 구성하려면 다음 작업을 수행하십시오.</p> <p>제출 URL은 우선순위 순서로 나열된 다음 방법 중 하나를 사용하여 구성할 수 있습니다.</p> 
     <ul> 
-     <li>AEM Forms Designer에서 XFA 양식을 만들 때 HTTP 제출 단추를 사용하여 양식 템플릿에서 직접 제출 URL을 지정합니다.</li> 
+     <li>AEM Forms Designer에서 XFA 양식을 만드는 동안 HTTP 제출 단추를 사용하여 양식 템플릿에서 직접 제출 URL을 지정합니다.</li> 
      <li>AEM Forms UI에서 양식을 선택하고 메타데이터 속성 편집 시 제출 URL을 지정합니다.</li> 
      <!-- <li>In Forms Portal, edit the Search &amp; Lister component and specify a submit URL under the Form Link tab.</li> -->
     </ul> </td> 
@@ -153,8 +154,8 @@ ht-degree: 5%
    <td><p>적응형 양식</p> <p>양식 템플릿</p> <p>리소스</p> </td> 
    <td><p>이 양식과 관련된 에셋(기타 양식 또는 리소스) 목록입니다. 이러한 에셋은 다음 두 가지 카테고리에 속할 수 있습니다.</p> 
     <ul> 
-     <li>참조: 현재 양식이 참조하는 에셋입니다.</li> 
-     <li>참조: 현재 자산을 참조하는 자산.</li> 
+     <li>참조: 현재 양식이 참조하는 Assets.</li> 
+     <li>참조: 현재 자산을 참조하는 Assets.</li> 
     </ul> <p>이러한 에셋은 링크로 표시되며, 해당 에셋을 클릭하면 해당 메타데이터에 직접 액세스할 수 있습니다.<br /> </p> </td> 
   </tr> 
   <tr> 
@@ -177,7 +178,7 @@ ht-degree: 5%
 
 ## 양식 메타데이터 보기 {#view-form-metadata}
 
-자산에는 읽기 전용 모드에서 볼 수 있는 기존 속성 값이 있습니다. 이 메타데이터는 양식 업로드 또는 양식 생성 시 생성됩니다.
+Assets에는 읽기 전용 모드에서 볼 수 있는 기존 속성 값이 있습니다. 이 메타데이터는 양식 업로드 또는 양식 생성 시 생성됩니다.
 
 1. 메타데이터를 보려는 에셋의 위치로 이동합니다.
 
@@ -241,7 +242,7 @@ ht-degree: 5%
 >* 새 이미지가 업로드되거나 생성되면 썸네일이 이 이미지로 대체되며 이전 이미지로 재설정할 수 없습니다.
 >
 
-## 사용자 지정 메타데이터 추가 {#add-custom-metadata}
+## 사용자 정의 메타데이터 추가 {#add-custom-metadata}
 
 기본 제공되는 메타데이터 외에도 [!DNL AEM Forms] 는 새 사용자 지정 메타데이터를 지원합니다.
 
@@ -251,7 +252,7 @@ ht-degree: 5%
 
 ### 메타데이터 스키마 편집기 탐색 {#navigate-the-metadata-schema-editor}
 
-1. 다음으로 이동 **[!UICONTROL 도구 > 에셋 > 메타데이터 스키마]**.
+1. 다음으로 이동 **[!UICONTROL 도구 > Assets > 메타데이터 스키마]**.
 
 1. 클릭 **[!UICONTROL 양식]** 나열된 스키마 양식.
 

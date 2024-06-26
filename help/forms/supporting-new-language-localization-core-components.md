@@ -4,7 +4,8 @@ description: 적응형 양식에 대한 새 로케일을 추가하는 방법을 
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 7d49be6d4f58078270fb15b10ef34e81dfa790cb
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 3%
@@ -96,7 +97,7 @@ AEM Forms은 다음 방법에 우선순위를 지정하여 적응형 양식에 �
 
 ### AEM as a Cloud Service Git 리포지토리 복제
 
-1. AEM 명령줄을 열고 다음과 같은 as a Cloud Service 저장소를 저장할 디렉토리를 선택합니다. `/cloud-service-repository/`.
+1. 명령줄을 열고 AEM as a Cloud Service 저장소를 저장할 디렉터리(예: )를 선택합니다. `/cloud-service-repository/`.
 
 1. 아래 명령을 실행하여 저장소를 복제합니다.
 
@@ -106,7 +107,7 @@ AEM Forms은 다음 방법에 우선순위를 지정하여 적응형 양식에 �
 
    Git 저장소를 복제하려면 다음 정보가 필요합니다.
 
-   * **조직 이름**: Adobe Experience Manager as a Cloud Service AEM 내에서 팀 또는 프로젝트를 식별합니다(as a Cloud Service).
+   * **조직 이름**: Adobe Experience Manager as a Cloud Service(AEM as a Cloud Service) 내에서 팀 또는 프로젝트를 식별합니다.
 
    * **프로그램 ID**: 저장소와 연결된 프로그램을 지정합니다.
 
@@ -197,7 +198,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
 ### 샘플 클라이언트 라이브러리 통합
 
-이제 다음을 통합하겠습니다. `clientlib-it-custom-locale` 라이브러리를 AEM에 as a Cloud Service, [AEMaaCS 프로젝트 디렉터리]:
+이제 다음을 통합하겠습니다. `clientlib-it-custom-locale` AEM as a Cloud Service에 라이브러리를 추가합니다. [AEMaaCS 프로젝트 디렉터리]:
 
 1. 샘플 클라이언트 라이브러리를 찾습니다.
 
@@ -350,7 +351,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
       다음을 통해 코드 배포 트리거 [기존 전체 스택 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#setup-pipeline). 이렇게 하면 새 로케일 지원을 통해 업데이트된 코드를 자동으로 빌드하고 배포합니다.
 
-      파이프라인을 아직 설정하지 않았다면 의 안내서를 참조하십시오. [AEM Forms as a Cloud Service에 대한 파이프라인을 설정하는 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#setup-pipeline).
+      파이프라인을 아직 설정하지 않았다면 의 안내서를 참조하십시오. [AEM Formsas a Cloud Service 용 파이프라인을 설정하는 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#setup-pipeline).
 
 
 ## 새로 추가된 로케일이 있는 적응형 양식 미리 보기

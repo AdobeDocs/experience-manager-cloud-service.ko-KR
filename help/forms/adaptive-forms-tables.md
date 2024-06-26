@@ -4,7 +4,8 @@ description: 테이블 구성 요소를 사용하여 적응형 양식에 테이�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Foundation Components
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2476'
 ht-degree: 2%
@@ -165,7 +166,7 @@ AEM Forms은 구성 요소 브라우저의 사이드바에 적응형 양식에�
 
 ## 테이블의 표현식 {#expressions-in-a-table}
 
-적응형 양식의 테이블을 사용하면 JavaScript로 표현식을 작성하여 표나 행 표시 또는 숨기기, 모든 숫자를 더하고 셀의 합계를 표시, 셀을 활성화 또는 비활성화, 사용자 입력의 유효성 검사 등과 같은 동작을 유도할 수 있습니다. 이러한 표현식은 적응형 양식 스크립팅 모델 API를 사용합니다.
+적응형 양식의 테이블을 사용하면 JavaScript에서 표현식을 작성하여 표나 행 표시 또는 숨기기, 모든 숫자를 더하고 셀의 합계를 표시, 셀을 활성화 또는 비활성화, 사용자 입력의 유효성 검사 등과 같은 동작을 유도할 수 있습니다. 이러한 표현식은 적응형 양식 스크립팅 모델 API를 사용합니다.
 
 테이블 및 행은 표현식에서 반환된 값에 따라 가시성을 제어하기 위해 가시성 표현식만 지원하지만 셀은 다음 표현식을 지원합니다.
 
@@ -183,7 +184,7 @@ AEM Forms은 구성 요소 브라우저의 사이드바에 적응형 양식에�
 
 테이블 또는 행에 대한 가시성 표현식은 해당 구성 요소 편집 대화 상자의 패널 속성 탭에서 정의할 수 있습니다. 셀의 표현식은 구성 요소 편집 대화 상자의 스크립트 탭에서 정의할 수 있습니다.
 
-적응형 양식 클래스, 이벤트, 개체 및 공개 API의 전체 목록은 다음을 참조하십시오. [적응형 양식을 위한 JavaScript 라이브러리 API 참조](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
+적응형 양식 클래스, 이벤트, 개체 및 공개 API의 전체 목록은 다음을 참조하십시오. [적응형 양식을 위한 JavaScript Library API 참조](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 ## 모바일 레이아웃 {#mobile-layouts}
 

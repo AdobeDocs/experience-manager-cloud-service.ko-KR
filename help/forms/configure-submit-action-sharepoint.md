@@ -4,9 +4,11 @@ Description: Learn how to send data from your Adaptive Form to a SharePoint stor
 keywords: 적응형 양식의 SharePoint 목록을 연결하는 방법, 적응형 양식의 SharePoint 문서 라이브러리를 연결하는 방법, SharePoint에 제출, SharePoint 문서 라이브러리 구성 만들기, 적응형 양식의 SharePoint 제출 액션을 사용, 적응형 양식을 Microsoft&reg; SharePoint 목록에 연결.
 feature: Adaptive Forms, Core Components
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+title: "적응형 양식에 대한 제출 액션을 구성하는 방법"
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1052'
 ht-degree: 34%
 
 ---

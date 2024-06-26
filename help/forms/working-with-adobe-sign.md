@@ -3,10 +3,10 @@ title: 적응형 양식에서 Adobe Sign을 사용하려면 어떻게 해야 합
 description: 적응형 양식의 Adobe Sign을 사용하여 양식 수신자가 선택한 장치 및 위치에서 양식에 전자 서명할 수 있습니다.
 topic-tags: develop
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '3243'
 ht-degree: 2%
@@ -48,7 +48,7 @@ ht-degree: 2%
 
 사용 전 [!DNL Adobe Sign] 적응형 양식에서:
 
-* 다음을 확인합니다. [!DNL AEM Forms] as a Cloud Service은 Adobe Sign을 사용하도록 구성되어 있습니다. 자세한 내용은 [통합: Adobe Sign [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
+* 다음을 확인합니다. [!DNL AEM Forms] as a Cloud Service Adobe Sign을 사용하도록 구성되어 있습니다. 자세한 내용은 [통합: Adobe Sign [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 * 수신자 목록을 준비하십시오. 모든 수신자에 대해 최소 하나의 이메일 주소가 필요합니다.
 
 ## 구성 [!DNL Adobe Sign] 적응형 양식용 {#configure-adobe-sign-for-an-adaptive-form}
@@ -230,7 +230,7 @@ Adobe Sign 계약에 대해 한 명 또는 여러 명의 수신자가 있을 수
 
 이후에 를 추가합니다. [!DNL Adobe Sign] 적응형 양식에 대한 필드, 활성화 [!DNL Adobe Sign] 양식 컨테이너에서 을 선택합니다. [!DNL Adobe Sign] Adobe Sign 계약 수신자를 Cloud Service 및 추가하고 적응형 양식에 대한 적절한 제출 액션을 선택합니다. 적응형 Forms 제출 액션에 대한 자세한 내용은 다음을 참조하십시오. [제출 액션 구성](configuring-submit-actions.md).
 
-양식에 서명하고 제출하는 것은 서로 독립적입니다. 사용자가 양식을 제출한 후 Adobe Sign 계약이 만들어지는 즉시 적응형 양식 제출이 이루어집니다. [!DNL AEM Forms] as a Cloud Service은 수신자가 서명하거나 다른 작업을 완료하여 적응형 양식을 제출할 때까지 기다리지 않습니다. 사용자가 제출 버튼을 클릭하거나 요약 단계에 양식 요약이 표시되는 즉시 양식이 제출됩니다.
+양식에 서명하고 제출하는 것은 서로 독립적입니다. 사용자가 양식을 제출한 후 Adobe Sign 계약이 만들어지는 즉시 적응형 양식 제출이 이루어집니다. [!DNL AEM Forms] as a Cloud Service 수신자가 적응형 양식을 제출할 때까지 기다리지 않습니다. 사용자가 제출 버튼을 클릭하거나 요약 단계에 양식 요약이 표시되는 즉시 양식이 제출됩니다.
 
 또한, [!DNL Adobe Sign] 적응형 양식이 활성화되면 Adobe Sign 계약 ID가 데이터를 제출합니다. 사용자 지정 코드를 사용하여 계약 상태를 추적하는 데 계약 ID를 사용할 수 있습니다(사용자 지정 구현 필요).
 

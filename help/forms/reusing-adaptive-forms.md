@@ -4,7 +4,8 @@ description: 기존 적응형 양식의 용도를 효율적으로 변경하여 �
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 feature: Adaptive Forms, Foundation Components
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
-source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '601'
 ht-degree: 12%
@@ -53,7 +54,7 @@ ht-degree: 12%
 
 복사 작업을 클릭하면 자동으로 선택 모드가 종료되고 붙여넣기가 수행됩니다 ![붙여넣기](assets/Smock_Paste_18_N.svg) 아이콘 표시. 이제 원하는 폴더 경로로 이동한 다음 붙여넣기를 클릭합니다. ![붙여넣기](assets/Smock_Paste_18_N.svg) 아이콘을 클릭하여 복사한 적응형 양식을 붙여넣습니다.
 
-동일한 폴더에 붙여넣거나 노드 이름이 동일한 다른 파일(CRX 저장소에 저장됨)을 이 대상 폴더에 붙여넣으면 1이 접미사에 추가됩니다(예: myaf는 myaf1이 되고 myaf1이 동일한 위치에 있으면 myaf2가 됨). 다른 모든 속성은 원본 적응형 양식과 동일하게 유지됩니다.
+동일한 폴더에 붙여넣거나 노드 이름이 동일한 다른 파일(CRX 저장소에 저장됨)이 이 대상 폴더에 있는 경우 1이 접미사에 추가됩니다(예: myaf는 myaf1이 되고 myaf1이 동일한 위치에 있는 경우 myaf는 myaf2가 됨). 다른 모든 속성은 원본 적응형 양식과 동일하게 유지됩니다.
 
 붙여넣기를 클릭한 후 ![붙여넣기](assets/Smock_Paste_18_N.svg) 아이콘, 다시 숨겨집니다. 한 번에 한 번만 붙여넣을 수 있습니다. 동일한 에셋의 사본을 다시 생성하려면 해당 에셋을 다시 복사합니다.
 

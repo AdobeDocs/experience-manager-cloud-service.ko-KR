@@ -4,7 +4,8 @@ description: 테마를 사용하여 스타일을 지정하고 핵심 구성 요�
 keywords: 적응형 양식 스타일 지정 핵심 구성 요소. 핵심 구성 요소에서 테마 사용, 적응형 양식 스타일 지정, 테마 맞춤화
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: aca3508d85a0382f679a8fa0ca986cfd13ee793b
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2879'
 ht-degree: 5%
@@ -33,7 +34,7 @@ Cloud Service으로서의 Forms은 적응형 Forms 기반의 핵심 구성 요�
 
 ## 테마의 구조 이해
 
-테마는 CSS 파일, JavaScript 파일 등의 스타일 구성 요소 및 적응형 Forms의 스타일을 정의하는 리소스(예: 아이콘)가 포함된 패키지입니다. 적응형 양식 테마는 다음 구성 요소로 구성된 특정 조직을 따릅니다.
+테마는 CSS 파일, JavaScript 파일 등의 스타일 구성 요소와 적응형 Forms의 스타일을 정의하는 리소스(예: 아이콘)가 포함된 패키지입니다. 적응형 양식 테마는 다음 구성 요소로 구성된 특정 조직을 따릅니다.
 
 * `src/theme.scss`: 이 폴더에는 전체 테마에 광범위한 영향을 주는 CSS 파일이 포함되어 있습니다. 중앙 집중식 위치 역할을 하여 테마의 스타일 및 동작을 정의하고 관리할 수 있습니다. 이 파일을 편집하여 테마 전체에 공통으로 적용되는 변경 내용을 적용할 수 있으며, 이 변경 내용은 적응형 Forms 및 AEM Sites 페이지 모두의 모양 및 기능에 영향을 줍니다.
 
@@ -275,7 +276,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ###### Cloud Service 환경에서 호스팅되는 양식의 테마 테스트
 
-AEM Forms as a Cloud Service 인스턴스에 호스팅된 적응형 양식에 대한 테마를 테스트할 수도 있습니다. 클라우드 인스턴스에서 호스팅된 적응형 Forms을 사용하여 테마를 테스트하기 위한 로컬 환경을 구성하고 설정하려면 다음 단계를 수행하십시오.
+AEM Forms as a Cloud Service 인스턴스에서 호스팅된 적응형 양식에 대한 테마를 테스트할 수도 있습니다. 클라우드 인스턴스에서 호스팅된 적응형 Forms을 사용하여 테마를 테스트하기 위한 로컬 환경을 구성하고 설정하려면 다음 단계를 수행하십시오.
 
 1. IDE에서 테마 폴더를 엽니다. 예를 들어 `aem-forms-theme-canvas` 폴더가 표시됩니다.
 1. 이름 바꾸기 `env_template` 파일 위치: `.env` 파일을 만들고 다음 매개 변수를 추가합니다.
@@ -380,7 +381,7 @@ AEM Forms as a Cloud Service 인스턴스에 호스팅된 적응형 양식에 �
 1. 선택 **[!UICONTROL 비프로덕션 파이프라인 추가]** 또는 **[!UICONTROL 프로덕션 파이프라인 추가]** Cloud Service 환경을 기반으로 합니다. 예를 들어, 다음 **[!UICONTROL 프로덕션 파이프라인 추가]** 옵션이 선택되어 있습니다.
 1. 다음에서 **[!UICONTROL 프로덕션 파이프라인 추가]** 대화 상자를 의 일부로 사용 **[!UICONTROL 구성]** 단계, 파이프라인의 이름을 지정합니다. 예를 들어 파이프라인의 이름은 입니다. `customcanvastheme`.
 1. **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
-1. 다음 항목 선택 **[!UICONTROL 타깃팅된 배포]** > **[!UICONTROL 프론트엔드 코드]** 옵션, **[!UICONTROL 소스 코드]** 단계.
+1. 다음 항목 선택 **[!UICONTROL 타깃팅된 배포]** > **[!UICONTROL 프론트엔드 코드]** 옵션, **[!UICONTROL Source 코드]** 단계.
 1. 다음 항목 선택 **[!UICONTROL 저장소]** 및 **[!UICONTROL Git 분기]** 최신 변경 사항이 있는 값입니다. 예를 들어 선택한 저장소 이름은 다음과 같습니다. `custom-canvas-theme-repo` 그리고 Git 분기는 `main`.
 1. 다음 항목 선택 **[!UICONTROL 코드 위치]** 다음으로: `/`변경 사항이 루트 폴더에 있는 경우.
 1. **[!UICONTROL 저장]**을 클릭합니다.
@@ -409,7 +410,7 @@ AEM Forms as a Cloud Service 인스턴스에 호스팅된 적응형 양식에 �
 
 1. 클릭 **만들기** > **적응형 Forms**. 적응형 양식 만들기 마법사가 열립니다.
 
-1. 에서 핵심 구성 요소 템플릿 선택 **소스** 탭.
+1. 에서 핵심 구성 요소 템플릿 선택 **Source** 탭.
 1. 에서 테마 선택 **스타일** 탭.
 1. **만들기**&#x200B;를 클릭합니다.
 

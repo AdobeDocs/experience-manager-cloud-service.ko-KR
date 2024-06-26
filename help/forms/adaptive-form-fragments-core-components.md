@@ -5,7 +5,8 @@ topic-tags: author
 keywords: 적응형 양식 단편 추가, 적응형 양식 단편, 양식 단편 만들기, 적응형 양식에 단편 추가, 단편 관리
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1355'
 ht-degree: 6%
@@ -163,7 +164,7 @@ AEM Forms UI를 사용하여 적응형 양식 조각에 대해 여러 작업을 
    <td><p>선택한 조각을 현지화하기 위한 사전을 생성합니다. 자세한 내용은 <a>적응형 Forms 현지화</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>게시 / 게시 취소</p> </td>
+   <td><p>Publish / 게시 취소</p> </td>
    <td><p>선택한 조각을 게시/게시 취소합니다.<br /> <br /> </p> </td>
   </tr>
   <tr>

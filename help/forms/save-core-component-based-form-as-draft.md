@@ -2,13 +2,14 @@
 title: 핵심 구성 요소 기반 적응형 양식을 초안으로 저장하는 방법
 description: 핵심 구성 요소 기반 적응형 양식을 초안으로 저장하고 Forms 포털을 만들고 AEM Sites 페이지에서 바로 사용할 수 있는 핵심 구성 요소를 사용하는 방법에 대해 알아봅니다.
 feature: Adaptive Forms, Core Components
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1072'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 <span class="preview"> 이 문서에는 프리릴리스 기능에 대한 내용이 포함되어 있습니다. 프리릴리스 기능은 다음을 통해서만 액세스할 수 있습니다. [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).
 
@@ -71,7 +72,7 @@ Azure 스토리지 구성을 만들었으면 다음 단계를 사용하여 Forms
 
    ![통합 커넥터 스토리지 설정](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
 
-1. 선택 **[!UICONTROL 저장]** 다음을 선택합니다. **[!UICONTROL 게시]** 구성을 게시합니다.
+1. 선택 **[!UICONTROL 저장]** 다음을 선택합니다. **[!UICONTROL Publish]** 구성을 게시합니다.
 
 ### 3. 적응형 양식을 초안으로 저장하는 규칙 만들기 {#rule-to-save-adaptive-form-as-draft}
 

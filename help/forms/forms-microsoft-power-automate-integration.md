@@ -3,7 +3,9 @@ title: 적응형 양식을 Microsoft® Power Automate와 통합하는 방법
 description: Microsoft® Power Automate와 적응형 양식을 통합합니다.
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: power automate에 AEM forms 연결, Power Automate AEM Forms, Adaptive Forms에 power automate 통합, Adaptive Forms에서 Power Automate로 데이터 전송
-source-git-commit: fa9254a3290a7628c4d058a6e8cc010789bd30f9
+feature: Adaptive Forms
+role: Admin, User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 13%
@@ -38,14 +40,14 @@ AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 �
 * 다음을 보유한 Experience Manager 사용자 [Forms 작성자](/help/forms/forms-groups-privileges-tasks.md) 및 [Forms 관리자](/help/forms/forms-groups-privileges-tasks.md) 권한
 * Microsoft® Power Automate에 연결하는 데 사용되는 계정은 적응형 양식에서 데이터를 받도록 구성된 Power Automate 흐름의 소유자입니다
 
-## Forms as a Cloud Service 인스턴스와 Microsoft® Power Automate 연결 {#connect-forms-server-with-power-automate}
+## Microsoft® Power Automate와 Forms as a Cloud Service 인스턴스 연결 {#connect-forms-server-with-power-automate}
 
-다음 작업을 수행하여 Forms as a Cloud Service 인스턴스를 Microsoft® Power Automate에 연결합니다.
+Forms as a Cloud Service 인스턴스를 Microsoft® Power Automate와 연결하려면 다음 작업을 수행하십시오.
 
 1. [Microsoft 만들기](#ms-power-automate-application)
 1. [Microsoft 만들기](#microsoft-power-automate-dataverse-cloud-configuration)
 1. [Microsoft 만들기](#create-microsoft-power-automate-flow-cloud-configuration)
-1. [Microsoft 게시](#publish-microsoft-power-automate-dataverse-cloud-configuration)
+1. [Publish Microsoft](#publish-microsoft-power-automate-dataverse-cloud-configuration)
 
 ### Microsoft® Azure Active Directory 응용 프로그램 만들기 {#ms-power-automate-application}
 
@@ -91,7 +93,7 @@ AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 �
 
    >[!NOTE]
    >
-   적응형 양식을 만들 때에서 컨테이너 이름을 지정합니다 **[!UICONTROL 구성 컨테이너]** 필드.
+   >적응형 양식을 만들 때에서 컨테이너 이름을 지정합니다 **[!UICONTROL 구성 컨테이너]** 필드.
 
 1. 구성 페이지에서 을 선택합니다 **[!UICONTROL 만들기]** 만들려면 [!DNL Microsoft®®® Power Automate Flow Service] AEM Forms의 구성
 1. 다음에서 **[!UICONTROL Microsoft®®(r) Power Automate용 Dataverse 서비스 구성]** 페이지, 지정 **[!UICONTROL 클라이언트 ID]** (애플리케이션 ID라고도 함), **[!UICONTROL 클라이언트 암호]**, **[!UICONTROL OAuth URL]** 및 **[!UICONTROL 동적 환경 URL]**. 의 클라이언트 ID, 클라이언트 암호, OAuth URL 및 동적 환경 URL 사용 [Microsoft® Azure Active Directory 응용 프로그램](#ms-power-automate-application) 이전 섹션에서 을(를) 만들었습니다. Microsoft® Azure Active Directory 애플리케이션 UI의 끝점 옵션을 사용하여 OAuth URL 찾기
@@ -107,23 +109,23 @@ AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 �
 
    >[!NOTE]
    >
-   적응형 양식을 만들 때에서 컨테이너 이름을 지정합니다 **[!UICONTROL 구성 컨테이너]** 필드.
+   >적응형 양식을 만들 때에서 컨테이너 이름을 지정합니다 **[!UICONTROL 구성 컨테이너]** 필드.
 
 1. 구성 페이지에서 을 선택합니다 **[!UICONTROL 만들기]** 만들려면 [!DNL Microsoft® Power Automate Flow Service] AEM Forms의 구성
 1. 다음에서 **[!UICONTROL Microsoft® Power Automate용 Dataverse 구성]** 페이지, 지정 **[!UICONTROL 클라이언트 ID]** (애플리케이션 ID라고도 함), **[!UICONTROL 클라이언트 암호]**, **[!UICONTROL OAuth URL]** 및 **[!UICONTROL 동적 환경 URL]**. 클라이언트 ID, 클라이언트 암호, OAuth URL 및 Dynamics 환경 ID를 사용합니다. Microsoft® Azure Active Directory 응용 프로그램 UI의 끝점 옵션을 사용하여 OAuth URL을 찾습니다. 를 엽니다. [내 흐름](https://us.flow.microsoft.com) 내 플로우 를 연결하고 선택합니다. URL에 나열된 ID를 Dynamics 환경 ID로 사용합니다.
 1. 선택 **[!UICONTROL 연결]**. 메시지가 표시되면 Microsoft® Azure 계정에 로그인합니다. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
-### Microsoft® Power Automate Dataverse 및 Microsoft® Power Automate Flow Service 클라우드 구성 모두 게시 {#publish-microsoft-power-automate-dataverse-cloud-configuration}
+### Publish Microsoft® Power Automate Dataverse 및 Microsoft® Power Automate Flow Service 클라우드 구성 모두 {#publish-microsoft-power-automate-dataverse-cloud-configuration}
 
 1. 다음으로 이동 **[!UICONTROL 도구]** ![망치](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® Power Automate Dataverse]** 이전에 만든 구성 컨테이너를 엽니다. [Microsoft® Power Automate Dataverse 클라우드 구성 만들기](#microsoft-power-automate-dataverse-cloud-configuration) 섹션.
-1. 다음 항목 선택 `dataverse` 구성 및 선택 **[!UICONTROL 게시]**.
-1. 게시 페이지에서 을 선택합니다. **[!UICONTROL 모든 구성]** 및 선택 **[!UICONTROL 게시]**. Power Automate Dataverse 및 Power Automate Flow Service 클라우드 구성을 모두 게시합니다.
+1. 다음 항목 선택 `dataverse` 구성 및 선택 **[!UICONTROL Publish]**.
+1. Publish 페이지에서 를 선택합니다. **[!UICONTROL 모든 구성]** 및 선택 **[!UICONTROL Publish]**. Publish Power Automate Dataverse 및 Power Automate Flow Service 클라우드 구성 모두
 
-이제 Forms as a Cloud Service 인스턴스가 Microsoft® Power Automate와 연결됩니다. 이제 적응형 Forms 데이터를 Power Automate 흐름에 보낼 수 있습니다.
+이제 Forms as a Cloud Service Microsoft 인스턴스® Power Automate와 연결됩니다. 이제 적응형 Forms 데이터를 Power Automate 흐름에 보낼 수 있습니다.
 
 ## Microsoft 호출® Power Automate 플로우 제출 액션을 사용하여 Power Automate 플로우에 데이터 전송 {#use-the-invoke-microsoft-power-automate-flow-submit-action}
 
-이후 [Forms as a Cloud Service 인스턴스와 Microsoft® Power Automate 연결](#connect-forms-server-with-power-automate)를 클릭하고, 다음 작업을 수행하여 캡처된 데이터를 양식 제출 시 Microsoft® 플로우로 전송하도록 적응형 양식을 구성합니다.
+이후 [Microsoft® Power Automate와 Forms as a Cloud Service 인스턴스 연결](#connect-forms-server-with-power-automate)를 클릭하고, 다음 작업을 수행하여 캡처된 데이터를 양식 제출 시 Microsoft® 플로우로 전송하도록 적응형 양식을 구성합니다.
 
 1. 작성자 인스턴스에 로그인하고 적응형 양식을 선택한 다음 를 클릭합니다. **[!UICONTROL 속성]**.
 1. 구성 컨테이너에서 섹션에서 만든 컨테이너를 찾아 선택합니다 [Microsoft® Power Automate Dataverse 클라우드 구성 만들기](#microsoft-power-automate-dataverse-cloud-configuration), 및 선택 **[!UICONTROL 저장 및 닫기]**.
@@ -134,7 +136,7 @@ AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 �
 
 >[!NOTE]
 >
-적응형 양식을 제출하기 전에 `When an HTTP Request is received` 아래 JSON 스키마로 트리거가 Power Automate 흐름에 추가됩니다.
+> 적응형 양식을 제출하기 전에 `When an HTTP Request is received` 아래 JSON 스키마로 트리거가 Power Automate 흐름에 추가됩니다.
 
 ```
         {
