@@ -1,9 +1,9 @@
 ---
 title: Content Hub 개요
 description: Content Hub, 주요 이점, 액세스 방법, Content Hub에서 사용 가능한 옵션에 대한 피드백을 제공하는 방법에 대해 자세히 알아보십시오.
-source-git-commit: 1aea6c6095aebd38f4c7c078701b29eebd3329b4
+source-git-commit: ad6d213b6ecf902ec80c323a686231f21ee13811
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -37,11 +37,11 @@ Content Hub을 사용하면 Adobe Express으로 새 컨텐츠를 만들 수 있�
 
 ## 사전 요구 사항 {#prerequisites-content-hub}
 
-Experience Manager as a Cloud Service 릴리스
+Content Hub에는 프로덕션 환경인 Experience Manager as a Cloud Service, 2024.6 릴리스 이상이 필요합니다(최소 버전은 2024.6.16799).
 
 ## Content Hub에 액세스하는 방법 {#access-content-hub}
 
-에 사용자 추가 후 [Content Hub 제품 프로필](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), Content Hub은 다음과 같은 방법으로 액세스할 수 있습니다.
+[Content Hub 설정 후](#deploy-content-hub) 및에 사용자 추가 [Content Hub 제품 프로필](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), Content Hub은 다음과 같은 방법으로 액세스할 수 있습니다.
 
 * 다음 링크를 사용하여 Content Hub에 액세스합니다.
 
