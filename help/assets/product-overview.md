@@ -1,9 +1,9 @@
 ---
 title: Content Hub 개요
-description: Content Hub, 주요 이점, 액세스 방법, Content Hub에서 사용 가능한 옵션에 대한 피드백을 제공하는 방법에 대해 자세히 알아보십시오.
-source-git-commit: ad6d213b6ecf902ec80c323a686231f21ee13811
+description: Content Hub, 주요 이점, 액세스 방법, Content Hub에서 사용할 수 있는 옵션에 대한 피드백을 제공하는 방법에 대해 자세히 알아보십시오.
+source-git-commit: b29641286919b5becc3982400ea160836531fdc5
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
