@@ -4,10 +4,10 @@ description: AEM as a Cloud Service의 유지 관리 작업과 이를 구성하�
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: c7488b9a10704570c64eccb85b34f61664738b4e
+source-git-commit: 4113bb47dee5f3a2c7743f9a79c60654e58cb6bd
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 59%
+source-wordcount: '2106'
+ht-degree: 30%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 59%
 >
 >Adobe은 성능 저하와 같은 문제를 완화하기 위해 고객의 유지 관리 작업 구성 설정을 재정의할 권한을 보유합니다.
 
-다음 표는 AEM as a Cloud Service 릴리스 당시 이용 가능한 유지 관리 작업을 설명합니다.
+다음 표는 사용 가능한 유지 관리 작업을 보여 줍니다.
 
 <table style="table-layout:auto">
  <tbody>
@@ -45,26 +45,16 @@ ht-degree: 59%
   </tr>
   <tr>
     <td>버전 삭제</td>
-    <td>Adobe</td>
-    <td>기존 환경(2024년에 아직 결정되지 않은 날짜 이전에 생성된 환경)의 경우 지우기가 비활성화되며 향후 기본값 7년으로 활성화됩니다. 고객은 더 낮은 사용자 정의 값(예: 30일)으로 구성할 수 있습니다.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->새 환경(2024년에 아직 결정되지 않은 날짜부터 생성된 환경)은 기본적으로 아래 값으로 제거가 활성화되며, 고객은 사용자 지정 값으로 을 구성할 수 있습니다.
-     <ol>
-       <li>30일 넘는 구 버전 삭제</li>
-       <li>지난 30일 이내 가장 최근의 5개 버전은 유지</li>
-       <li>위의 규칙과 관계없이 가장 최근 버전은 보존됩니다.</li>
-       <br>특정 날짜에 표시된 대로 사이트 페이지를 렌더링해야 하는 규제 요구 사항이 있는 고객은 전문 외부 서비스와 통합하는 것이 좋습니다.
-     </ol></td>
+    <td>고객</td>
+    <td>버전 삭제는 현재 기본적으로 비활성화되어 있지만 다음에 설명된 대로 정책을 구성할 수 있습니다. <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">버전 삭제 및 감사 로그 삭제 유지 관리 작업</a> 섹션.<br/><br/>삭제는 곧 기본적으로 활성화되고 해당 값은 재정의할 수 있습니다.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+   </td>
   </td>
   </tr>
   <tr>
     <td>감사 로그 삭제</td>
-    <td>Adobe</td>
-    <td>기존 환경(2024년에 아직 결정되지 않은 날짜 이전에 생성된 환경)의 경우 지우기가 비활성화되며 향후 기본값 7년으로 활성화됩니다. 고객은 더 낮은 사용자 정의 값(예: 30일)으로 구성할 수 있습니다.<br><br> <!-- See above for the two line breaks -->새 환경(2024년에 아직 결정되지 않은 날짜부터 만들어진 환경)은 기본적으로 <code>/content</code> 다음 동작에 따른 저장소의 노드:
-     <ol>
-       <li>복제 감사의 경우, 3일 넘는 감사 로그 삭제</li>
-       <li>DAM(애셋) 감사의 경우, 30일 넘는 감사 로그 삭제</li>
-       <li>페이지 감사의 경우, 3일 넘는 감사 로그 삭제</li>
-       <br>편집 불가능한 감사 로그를 생성하기 위한 규정 요구 사항이 있는 고객은 전문 외부 서비스와 통합하는 것이 좋습니다.
-     </ol></td>
+    <td>고객</td>
+    <td>감사 로그 제거는 현재 기본적으로 비활성화되어 있지만 다음에 설명된 대로 정책을 구성할 수 있습니다. <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">버전 삭제 및 감사 로그 삭제 유지 관리 작업</a> 섹션.<br/><br/>삭제는 곧 기본적으로 활성화되고 해당 값은 재정의할 수 있습니다.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+   </td>
    </td>
   </tr>
   <tr>
@@ -200,3 +190,197 @@ ht-degree: 59%
    windowScheduleWeekdays="[5,5]"
    windowStartTime="14:30"/>
 ```
+
+## 버전 삭제 및 감사 로그 삭제 유지 관리 작업 {#purge-tasks}
+
+버전 및 감사 로그를 지우면 저장소 크기가 줄어들고 일부 시나리오에서는 성능이 향상될 수 있습니다.
+
+>[!NOTE]
+>
+>Adobe은 고객에게 버전 삭제를 구성하지 말 것을 권장합니다.
+
+### 기본값 {#defaults}
+
+현재는 기본적으로 제거가 활성화되어 있지 않지만 향후 변경될 예정입니다. 기본 제거가 활성화되기 전에 생성된 환경은 제거가 예기치 않게 발생하지 않도록 보다 보수적인 임계값을 갖습니다. 기본 삭제 정책에 대한 자세한 내용은 아래의 버전 삭제 및 감사 로그 삭제 섹션을 참조하십시오.
+<!-- Version purging and audit log purging are on by default, with different default values for environments with ids higher than **TBD** versus those with ids lower than that value. -->
+
+<!-- ### Overriding the default values with a new configuration {#override} -->
+
+아래 설명된 대로 구성 파일을 선언하고 배포하여 기본 제거 값을 재정의할 수 있습니다.
+
+<!-- The reason for this behavior is to clarify the ambiguity over whether the default purge values would take effect once you remove the declaration. -->
+
+### 구성 적용 {#configure-purge}
+
+다음 단계에 설명된 대로 구성 파일을 선언하고 배포합니다.
+
+>[!NOTE]
+>구성 파일에 버전 제거 노드를 배포한 후에는 선언된 상태를 유지하고 제거하지 말아야 합니다. 그럴 경우 구성 파이프라인이 실패합니다.
+> 
+>마찬가지로, 구성 파일에 감사 로그 제거 노드를 배포한 후에는 선언된 상태를 유지하고 제거하지 않아야 합니다.
+
+**1** - Git에서 프로젝트의 최상위 수준 폴더에 다음 폴더 및 파일 구조를 만듭니다.
+
+```
+config/
+     mt.yaml
+```
+
+**2** - 구성 파일에서 다음을 포함하는 속성을 선언합니다.
+
+* 값이 &quot;MaintenanceTasks&quot;인 &quot;kind&quot; 속성.
+* &quot;version&quot; 속성(현재 버전 1)입니다.
+* 속성이 있는 선택적 &quot;metadata&quot; 개체 `envTypes` 이 구성이 유효한 환경 유형(dev, stage, prod)을 쉼표로 구분한 목록으로 표시합니다. 메타데이터 개체가 선언되지 않으면 모든 환경 유형에 대해 구성이 유효합니다.
+* 두 항목이 모두 포함된 데이터 개체 `versionPurge` 및 `auditLogPurge` 개체.
+
+의 정의 및 구문을 참조하십시오. `versionPurge` 및 `auditLogPurge` 아래에 있는 개체입니다.
+
+다음 예제와 유사하게 구성을 구성해야 합니다.
+
+```
+kind: "MaintenanceTasks"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  versionPurge:
+    maximumVersions: 15
+    maximumAgeDays: 20
+    paths: ["/content"]
+    minimumVersions: 1
+    retainLabelledVersions: false
+  auditLogPurge:
+    rules:
+      - replication:
+          maximumAgeDays: 15
+          contentPath: "/content"
+          types: ["Activate", "Deactivate", "Delete", "Test", "Reverse", "Internal Poll"]
+      - pages:
+          maximumAgeDays: 15
+          contentPath: "/content"
+          types: ["PageCreated", "PageModified", "PageMoved", "PageDeleted", "VersionCreated", "PageRestored", "PageValid", "PageInvalid"]
+      - dam:
+          maximumAgeDays: 15
+          contentPath: "/content"
+          types: ["ASSET_EXPIRING", "METADATA_UPDATED", "ASSET_EXPIRED", "ASSET_REMOVED", "RESTORED", "ASSET_MOVED", "ASSET_VIEWED", "PROJECT_VIEWED", "PUBLISHED_EXTERNAL", "COLLECTION_VIEWED", "VERSIONED", "ADDED_COMMENT", "RENDITION_UPDATED", "ACCEPTED", "DOWNLOADED", "SUBASSET_UPDATED", "SUBASSET_REMOVED", "ASSET_CREATED", "ASSET_SHARED", "RENDITION_REMOVED", "ASSET_PUBLISHED", "ORIGINAL_UPDATED", "RENDITION_DOWNLOADED", "REJECTED"]
+```
+
+구성이 유효하려면 다음 사항에 유의하십시오.
+
+* 모든 속성을 정의해야 합니다. 상속된 기본값은 없습니다.
+* 아래 속성 표의 유형(정수, 문자열, 부울 등)은 준수해야 합니다.
+
+>[!NOTE]
+>다음을 사용할 수 있습니다. `yq` 구성 파일의 YAML 형식을 로컬로 검증하려면 다음을 수행합니다. `yq mt.yaml`).
+
+**3** - 비프로덕션 및 프로덕션 구성 파이프라인 구성
+
+RDE(신속한 개발 환경)는 제거를 지원하지 않습니다. 프로덕션(샌드박스가 아닌) 프로그램의 다른 환경 유형의 경우 Cloud Manager에서 타깃팅된 배포 구성 파이프라인을 만듭니다.
+
+다음을 참조하십시오 [프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 및 [비프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 을 참조하십시오.
+
+### 버전 삭제 {#version-purge}
+
+>[!NOTE]
+>
+>Adobe은 고객에게 버전 삭제를 구성하지 말 것을 권장합니다.
+
+#### 버전 삭제 기본값 {#version-purge-defaults}
+
+<!-- For version purging, environments with an id higher than **TBD** have the following default values: -->
+
+현재는 기본적으로 제거가 활성화되어 있지 않지만 향후 변경될 예정입니다.
+
+기본 제거가 활성화된 후에 생성된 환경에는 다음 기본값이 사용됩니다.
+
+* 30일 이전 버전은 제거됩니다.
+* 최근 30일 동안의 최신 5개 버전이 유지됩니다.
+* 위의 규칙과 관계없이 최신 버전(현재 파일 포함)은 유지됩니다.
+
+<!-- Environments with an id equal or lower than **TBD** will have the following default values: -->
+
+기본 지우기가 활성화되기 전에 생성된 환경에는 아래 나열된 기본값이 있지만 성능을 최적화하기 위해 해당 값을 낮추는 것이 좋습니다.
+
+* 7년 이전의 버전은 제거됩니다.
+* 지난 7년 동안의 모든 버전이 유지됩니다.
+* 7년 후에는 (현재 파일 외에) 최신 버전 이외의 버전이 제거됩니다.
+
+#### 버전 삭제 속성 {#version-purge-properties}
+
+허용되는 속성은 다음과 같습니다.
+
+을 나타내는 열 *기본값* 기본값이 적용될 때 미래의 기본값을 나타냅니다. *TBD* 는 여전히 결정되지 않은 환경 id를 반영합니다.
+
+| 속성 | envs>TBD의 향후 기본값 | envs&lt;=TBD의 향후 기본값 | required | 유형 | 값 |
+|-----------|--------------------------|-------------|-----------|---------------------|-------------|
+| 경로 | [&quot;/content&quot;] | [&quot;/content&quot;] | 예 | 문자열 배열 | 새 버전을 만들 때 버전을 제거할 경로를 지정합니다.  고객은 이 속성을 선언해야 하지만 허용되는 값은 &quot;/content&quot;뿐입니다. |
+| maximumAgeDays | 30 | 2557 (7년 + 2윤일) | 예 | 정수 | 구성된 값보다 오래된 버전은 제거됩니다. 값이 0이면 버전 연령을 기준으로 퍼지가 수행되지 않습니다. |
+| maximumVersion | 5 | 0(제한 없음) | 예 | 정수 | n번째 최신 버전보다 오래된 버전은 모두 제거됩니다. 값이 0이면 버전 수에 따라 제거가 수행되지 않습니다. |
+| 최소 버전 | 1 | 1 | 예 | 정수 | 나이에 상관없이 유지되는 최소 버전 수. 최소 1개의 버전은 항상 유지되며 값은 1 이상이어야 합니다. |
+| retainLabelledVersioned | false | false | 예 | 부울 | 명시적으로 레이블이 지정된 버전을 제거에서 제외할지 여부를 결정합니다. 더 나은 저장소 최적화를 위해 이 값을 false로 설정하는 것이 좋습니다. |
+
+
+**속성 상호 작용**
+
+다음 예제는 속성이 결합될 때 상호 작용하는 방법을 보여 줍니다.
+
+예:
+
+```
+maximumAgeDays = 30
+maximumVersions = 10
+minimumVersions = 2
+```
+
+23일에 11개의 버전이 있는 경우 다음 번에 제거 유지 관리 작업이 실행될 때 다음 이후 가장 오래된 버전이 삭제됩니다. `maximumVersions` 속성은 10으로 설정됩니다.
+
+31일에 5개의 버전이 있는 경우 `minimumVersions` 속성은 2로 설정됩니다.
+
+예:
+
+```
+maximumAgeDays = 30
+maximumVersions = 0
+minimumVersions = 1
+```
+
+다음 이후 30일 이상 버전은 삭제되지 않습니다. `maximumVersions` 속성은 0으로 설정됩니다.
+
+30일 넘는 이전 버전 하나가 유지됩니다.
+
+### 감사 로그 삭제 {#audit-purge}
+
+#### 감사 로그 삭제 기본값 {#audit-purge-defaults}
+
+<!-- For audit log purging, environments with an id higher than **TBD** have the following default values: -->
+
+현재는 기본적으로 제거가 활성화되어 있지 않지만 향후 변경될 예정입니다.
+
+기본 제거가 활성화된 후에 생성된 환경에는 다음 기본값이 사용됩니다.
+
+* 7일 넘는 복제, DAM 및 페이지 감사 로그는 제거됩니다.
+* 가능한 모든 이벤트가 기록됩니다.
+
+<!-- Environments with an id equal or lower than **TBD** will have the following default values: -->
+
+기본 지우기가 활성화되기 전에 생성된 환경에는 아래 나열된 기본값이 있지만 성능을 최적화하기 위해 해당 값을 낮추는 것이 좋습니다.
+
+* 7년 이상 된 복제, DAM 및 페이지 감사 로그는 제거됩니다.
+* 가능한 모든 이벤트가 기록됩니다.
+
+>[!NOTE]
+>편집 불가능한 감사 로그를 생성하기 위한 규정 요구 사항이 있는 고객은 전문화된 외부 서비스와 통합하는 것이 좋습니다.
+
+#### 감사 로그 삭제 속성 {#audit-purge-properties}
+
+허용되는 속성은 다음과 같습니다.
+
+을 나타내는 열 *기본값* 기본값이 적용될 때 미래의 기본값을 나타냅니다. *TBD* 는 여전히 결정되지 않은 환경 id를 반영합니다.
+
+
+| 속성 | envs>TBD의 향후 기본값 | envs&lt;=TBD의 향후 기본값 | required | 유형 | 값 |
+|-----------|--------------------------|-------------|-----------|---------------------|-------------|
+| 규칙 | - | - | 예 | 오브젝트 | 복제, 페이지, dam 노드 중 하나 이상. 이러한 각 노드는 아래의 속성을 사용하여 규칙을 정의합니다. 모든 속성을 선언해야 합니다. |
+| maximumAgeDays | 7일 | 전체 2557(7년 + 2윤일) | 예 | 정수 | 복제, 페이지 또는 dam의 경우: 감사 로그가 유지되는 일 수입니다. 구성된 값보다 오래된 감사 로그는 제거됩니다. |
+| contentPath | &quot;/content&quot; | &quot;/content&quot; | 예 | 문자열 | 관련 유형에 대해 감사 로그가 삭제되는 경로. &quot;/content&quot;로 설정해야 합니다. |
+| 유형 | 모든 값 | 모든 값 | 예 | 열거형 배열 | 대상 **복제**, 열거된 값은 활성화, 비활성화, 삭제, 테스트, 역방향, 내부 폴입니다. 대상 **페이지**, 열거된 값은 PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, PageRestored, PageRolled Out, PageValid, PageInvalid입니다. 대상 **dam**, 열거형 값은 ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVED, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT, RENDITION_UPDATED, ACCEPTED, DOWNLOADED, SUBASSET_UPDATED, SUBASSET_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITIONS_DOWNLOADED, RENDITION_DOWNLOADED. |
