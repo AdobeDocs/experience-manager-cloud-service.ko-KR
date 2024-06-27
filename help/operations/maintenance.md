@@ -4,7 +4,7 @@ description: AEM as a Cloud Service의 유지 관리 작업과 이를 구성하�
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 4113bb47dee5f3a2c7743f9a79c60654e58cb6bd
+source-git-commit: f8ef7e36ad602af96c3a6055db31ac328da808e6
 workflow-type: tm+mt
 source-wordcount: '2106'
 ht-degree: 30%
@@ -46,14 +46,14 @@ ht-degree: 30%
   <tr>
     <td>버전 삭제</td>
     <td>고객</td>
-    <td>버전 삭제는 현재 기본적으로 비활성화되어 있지만 다음에 설명된 대로 정책을 구성할 수 있습니다. <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">버전 삭제 및 감사 로그 삭제 유지 관리 작업</a> 섹션.<br/><br/>삭제는 곧 기본적으로 활성화되고 해당 값은 재정의할 수 있습니다.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>버전 삭제는 현재 기본적으로 비활성화되어 있지만 다음에 설명된 대로 정책을 구성할 수 있습니다. <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">버전 삭제 및 감사 로그 삭제 유지 관리 작업</a> 섹션.<br/><br/>삭제는 곧 기본적으로 활성화되고 해당 값은 재정의할 수 있습니다.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>감사 로그 삭제</td>
     <td>고객</td>
-    <td>감사 로그 제거는 현재 기본적으로 비활성화되어 있지만 다음에 설명된 대로 정책을 구성할 수 있습니다. <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">버전 삭제 및 감사 로그 삭제 유지 관리 작업</a> 섹션.<br/><br/>삭제는 곧 기본적으로 활성화되고 해당 값은 재정의할 수 있습니다.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>감사 로그 제거는 현재 기본적으로 비활성화되어 있지만 다음에 설명된 대로 정책을 구성할 수 있습니다. <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">버전 삭제 및 감사 로그 삭제 유지 관리 작업</a> 섹션.<br/><br/>삭제는 곧 기본적으로 활성화되고 해당 값은 재정의할 수 있습니다.<br>
    </td>
    </td>
   </tr>
@@ -197,7 +197,7 @@ ht-degree: 30%
 
 >[!NOTE]
 >
->Adobe은 고객에게 버전 삭제를 구성하지 말 것을 권장합니다.
+>AEM Guides 고객은 버전 삭제를 구성하지 않아야 합니다.
 
 ### 기본값 {#defaults}
 
@@ -283,7 +283,7 @@ RDE(신속한 개발 환경)는 제거를 지원하지 않습니다. 프로덕�
 
 >[!NOTE]
 >
->Adobe은 고객에게 버전 삭제를 구성하지 말 것을 권장합니다.
+>AEM Guides 고객은 버전 삭제를 구성하지 않아야 합니다.
 
 #### 버전 삭제 기본값 {#version-purge-defaults}
 
