@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+source-git-commit: c7c881bb1c235007ba14684959494f08ed27aa67
 workflow-type: tm+mt
-source-wordcount: '5073'
-ht-degree: 99%
+source-wordcount: '5128'
+ht-degree: 98%
 
 ---
 
@@ -589,6 +589,19 @@ ht-degree: 99%
       + [보고서 관리](/help/assets/manage-reports-assets-view.md)
       + [태그 관리](/help/assets/tagging-management-assets-view.md)
       + [AEM 및 Dynamic Media에 자산 게시](/help/assets/publish-assets-to-aem-and-dm.md)
+
+   + Content Hub 관리 {#content-hub}
+      + [개요](/help/assets/product-overview.md)
+      + [Content Hub 배포](/help/assets/deploy-content-hub.md)
+      + [Content Hub 사용자 인터페이스 구성](/help/assets/configure-content-hub-ui-options.md)
+      + [Content Hub에 브랜드 승인 에셋 업로드 또는 가져오기](/help/assets/upload-brand-approved-assets.md)
+      + [Content Hub에서 에셋 검색](/help/assets/search-assets-content-hub.md)
+      + [자산 속성](/help/assets/asset-properties-content-hub.md)
+      + [Content Hub에서 에셋 공유](/help/assets/share-assets-content-hub.md)
+      + [Content Hub을 사용하여 에셋 다운로드](/help/assets/download-assets-content-hub.md)
+      + [Content Hub에서 컬렉션 관리](/help/assets/collections-content-hub.md)
+      + [Content Hub에서 Adobe Express을 사용하여 이미지 편집](/help/assets/edit-images-content-hub.md)
+      + [Content Hub의 자산 통찰력](/help/assets/insights-content-hub.md)
    + 모범 사례{#best-practices}
       + [모범 사례 검색](/help/assets/search-best-practices.md)
       + [메타데이터 관리 및 모범 사례](/help/assets/metadata-best-practices.md)
