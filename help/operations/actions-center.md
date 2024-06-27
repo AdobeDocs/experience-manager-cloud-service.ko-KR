@@ -4,10 +4,10 @@ description: 문제 및 기타 중요한 정보에 대해 편리하게 조치를
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 7630481aab89b31057509f23aab334e17c537257
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 69%
+source-wordcount: '988'
+ht-degree: 59%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 69%
 
 AEM as Cloud Service는 최적화에 즉각적인 조치 및 사전 알림 추천이 필요한 중대 인시던트가 발생하면 액션 센터 이메일 알림을 전송합니다. 예로는 차단된 대기열 또는 만료되는 자격 증명 세트가 있습니다. 액션 센터 알림 유형의 전체 세트는 [아래 표](#supported-notification-types)에서 볼 수 있으며 시간이 지남에 따라 확장됩니다.
 
-작업 센터 이메일 알림이 수신되면 이 링크를 클릭하여 AEMas a Cloud Service 의 작업 센터를 열 수 있습니다. 이 센터에는 고객이 수행할 작업을 설명하는 추가 컨텍스트가 팝업되어 있습니다.
+작업 센터 이메일 알림이 수신되면 을 클릭하여 AEM as a Cloud Service의 작업 센터를 열 수 있습니다. 이 페이지에는 고객이 수행할 작업을 설명하는 추가 컨텍스트가 표시됩니다.
 
 방금 클릭한 이메일 알림에 대한 정보를 표시하는 것 외에도 액션 센터는 현재 및 이전 알림 세트를 보고 관리할 수 있는 허브 역할을 합니다. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
@@ -76,6 +76,12 @@ AEM as a Cloud Service에는 여러 유형의 알림이 있지만 아래 그림�
 | 차단된 복제 대기열 | 인시던트 | [복제 문서](/help/operations/replication.md#troubleshooting)의 지침에 따라 대기열 차단을 해제합니다. |
 | 잘못된 지속 GraphQL 쿼리 | 인시던트 | 를 참조하여 잘못된 GraphQL 쿼리를 수정합니다. [지속 GraphQL 쿼리 문제 해결 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
 | 원본 트래픽 스파이크 | 인시던트 | 원본 경고의 기본 트래픽 스파이크보다 낮은 임계값에서 트리거하는 비율 제한 트래픽 필터 규칙을 구성하여 원본을 Protect 합니다.  다음을 참조하십시오. [트래픽 규칙을 사용하여 DoS 및 DDoS 공격 차단](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) 튜토리얼을 참조하는 트래픽 필터 규칙 설명서의 섹션입니다. |
+| 페이지에 많은 수의 노드가 포함되어 있습니다. | 사전 알림 | 페이지 내 총 노드 수를 줄입니다. 을(를) 참조하십시오 [페이지 복잡성 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | |
+| 실행 중인 많은 워크플로 인스턴스 | 사전 알림 | 더 이상 필요하지 않은 실행 중인 워크플로우를 종료합니다. 방법 알아보기 [제거 작업 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/maintenance) |               |
 | 만료되는 S2S 인증서 | 사전 알림 | [서버측 API용 액세스 토큰 생성 문서](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)에서 자격 증명을 새로 고치는 방법에 대해 알아보십시오. | 높은 연결 수 | 사전 알림 | 에서 연결 풀링에 대해 알아보기 [고급 네트워킹 설명서와 함께 연결 풀링](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
 | 더 이상 사용되지 않는 서비스 사용자 매핑 | 사전 알림 | 에 표시된 대로 최신 Sling 서비스 사용자 매핑 형식을 사용하는 방법에 대해 알아봅니다. [Sling 서비스 사용자 매핑 및 서비스 사용자 정의에 대한 우수 사례](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition) |
-| 높은 연결 수 | 사전 알림 | 에서 연결 풀링에 대해 알아보기 [고급 네트워킹 설명서](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
+| 높은 연결 수 | 사전 알림 | 에서 연결 풀링에 대해 알아보기 [고급 네트워킹 설명서](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |  |
+| 사용자 정의 그룹에 직접 추가된 사용자 | 사전 알림 | 사용자를 관련 IMS 그룹에 추가하고 이러한 IMS 그룹을 AEM 그룹의 멤버로 추가해야 합니다. 정렬 기준 [IMS 모범 사례](/help/security/ims-support.md) | |
+| JCR 콘텐츠 누락 | 사전 알림 | 누락된 JCR 콘텐츠 노드를 추가합니다. 을(를) 참조하십시오 [Assets Content Validator 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
+| 완료된 워크플로가 삭제되지 않음 | 사전 알림 | 90일 이상 된 워크플로 인스턴스를 삭제하여 워크플로 인스턴스 수를 최소화하고 성능을 향상시킵니다. 방법 알아보기 [유지 관리 작업 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/maintenance) | |
+| 페이지에 Sling 리소스 유형 누락 | 사전 알림 | 누락된 Sling 리소스 유형 노드를 추가합니다. 을(를) 참조하십시오 [Assets Content Validator 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) |

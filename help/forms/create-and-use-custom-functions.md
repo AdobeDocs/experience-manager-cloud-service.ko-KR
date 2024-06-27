@@ -7,15 +7,13 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 52b87073cad84705b5dc0c6530aff44d1e686609
 workflow-type: tm+mt
-source-wordcount: '4351'
+source-wordcount: '4333'
 ht-degree: 1%
 
 ---
 
-
-<span class="preview"> 이 문서에는 다음이 포함됩니다. `Override form submission success and error handlers` 를 프리릴리스 기능으로 사용하십시오. 프리릴리스 기능은 다음을 통해서만 액세스할 수 있습니다. [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).
 
 # 적응형 Forms(핵심 구성 요소)의 사용자 지정 기능
 

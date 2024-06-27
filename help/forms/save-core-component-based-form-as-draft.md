@@ -4,14 +4,13 @@ description: 핵심 구성 요소 기반 적응형 양식을 초안으로 저장
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer, Admin
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 52b87073cad84705b5dc0c6530aff44d1e686609
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1053'
 ht-degree: 2%
 
 ---
 
-<span class="preview"> 이 문서에는 프리릴리스 기능에 대한 내용이 포함되어 있습니다. 프리릴리스 기능은 다음을 통해서만 액세스할 수 있습니다. [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).
 
 # 핵심 구성 요소 기반 적응형 양식을 초안으로 저장 {#save-af-form}
 
