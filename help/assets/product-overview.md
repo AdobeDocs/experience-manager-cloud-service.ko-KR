@@ -1,9 +1,9 @@
 ---
 title: Content Hub 개요
 description: Content Hub, 주요 이점, 액세스 방법, Content Hub에서 사용 가능한 옵션에 대한 피드백을 제공하는 방법에 대해 자세히 알아보십시오.
-source-git-commit: 15a266ccb6e4117c769d775a5f579fba943389bf
+source-git-commit: 1aea6c6095aebd38f4c7c078701b29eebd3329b4
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ AEM Assets은 신뢰할 수 있는 단일 소스 역할을 하며 검색 환경�
 
 **비크리에이티브가 브랜드를 사용하는 동안 콘텐츠를 편집하고 재혼합할 수 있는 권한 부여**
 
-Content Hub은 임베드된 Express 편집기를 사용하여 이미지를 편집할 수 있는 Adobe Express(Adobe Express 권한이 있는 경우)와 통합되어 브랜드를 사용하는 동안 놀라운 이미지 변형을 만듭니다.
+Content Hub을 사용하면 Adobe Express으로 새 컨텐츠를 만들 수 있습니다(Adobe Express 권한이 있는 경우). 사용하기 쉬운 도구로 기존 콘텐츠를 편집하고, 템플릿 및 브랜드 요소를 사용하여 브랜드 내 변형을 작성하고, Adobe Firefly의 최신 GenAI 기능을 사용하여 새 콘텐츠를 만들 수 있습니다.
 
 **팀 간에 콘텐츠를 사용하는 방법에 대한 통찰력 확보**
 
@@ -61,6 +61,8 @@ Experience Manager as a Cloud Service 릴리스
 
 제목, 권장 사항에 대한 설명을 지정하고 필요한 경우 파일을 첨부합니다. 클릭 **[!UICONTROL 제출]** Adobe에 피드백을 제출합니다.
 
+![Content Hub 피드백](assets/content-hub-feedback.png)
+
 ## 팀에 대한 Content Hub 설정 {#setup-content-hub}
 
 팀을 위한 Content Hub을 설정하려면 다음 단계를 따르십시오.
@@ -69,13 +71,13 @@ Experience Manager as a Cloud Service 릴리스
 
 1. [Content Hub 관리자 온보드](deploy-content-hub.md#onboard-content-hub-administrator).
 
-1. [주요 Content Hub 사용자 추가](deploy-content-hub.md##onboard-content-hub-consumer-users).
+1. [주요 Content Hub 사용자 추가](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
 1. [Experience Manager 자산을 사용하여 자산을 승인할 DAM 작성자 또는 관리자](approve-assets.md).
 
 1. [관리자는 다른 사용자를 위해 Content Hub 사용자 인터페이스를 구성할 수 있습니다](configure-content-hub-ui-options.md).
 
-1. [팀에서 더 많은 사용자에게 Content Hub 액세스 권한 부여](deploy-content-hub.md##onboard-content-hub-consumer-users).
+1. [팀에서 더 많은 사용자에게 Content Hub 액세스 권한 부여](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
 1. [Content Hub 포털 액세스](#access-content-hub).
 
