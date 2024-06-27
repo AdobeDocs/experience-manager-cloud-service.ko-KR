@@ -4,7 +4,7 @@ description: 자산 선택기를 사용하여 애플리케이션 내에서 자�
 contentOwner: KK
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: 60c94071332003312ed9e963bc50e35d3c29baf0
+source-git-commit: 3f2fbdc1fd4087ea4c90b9bbe11aa37a11237ae5
 workflow-type: tm+mt
 source-wordcount: '4725'
 ht-degree: 36%
@@ -405,7 +405,7 @@ Asset Selector를 OpenAPI 기능과 Dynamic Media과 통합하는 경우 다음 
 * [커뮤니케이션 방법](#prereqs)
 * OpenAPI 기능을 사용하여 Dynamic Media에 액세스하려면 다음에 대한 라이센스가 있어야 합니다.
    * Assets 저장소(예: Experience Manager Assets as a Cloud Service)
-   * AEM Dynamic Media
+   * AEM Dynamic Media.
 * 전용 [승인된 에셋](#approved-assets.md) 는 브랜드 일관성을 보장하는 데 사용할 수 있습니다.
 
 ### OpenAPI 기능과 Dynamic Media 통합{#adobe-app-integration-polaris}
