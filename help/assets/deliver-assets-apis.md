@@ -2,7 +2,7 @@
 title: 배달 API
 description: 배달 API를 사용하는 방법을 알아봅니다.
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+source-git-commit: 3e2fe458460fe8ec4c1dd12152c1134bfb9ca62b
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 0%
@@ -62,4 +62,3 @@ headers: {
 게재 API를 호출하려면 `Authorization` 제한된 에셋을 게재하기 위한 세부 사항. IMS 토큰을 기술 계정에서 가져옵니다. 다음을 참조하십시오 [AEM as a Cloud Service 자격 증명 가져오기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials) 새 기술 계정을 만듭니다. 다음을 참조하십시오 [액세스 토큰 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token) 를 사용하여 IMS 토큰을 생성하고 배달 API 요청 헤더에서 적절하게 사용합니다.
 
 요청 샘플, 응답 샘플 및 응답 코드를 보려면 [배달 API](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/getAssetSeoFormat).
-
