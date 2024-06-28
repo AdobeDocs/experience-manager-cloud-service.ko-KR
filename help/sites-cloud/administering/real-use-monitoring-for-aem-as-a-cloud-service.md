@@ -1,17 +1,17 @@
 ---
-title: AEM에 대한 실시간 사용 모니터링 as a Cloud Service
+title: AEM as a Cloud Service용 실제 사용 모니터링
 description: RUM(Real Use Monitoring)을 사용하여 웹 사이트 또는 애플리케이션의 디지털 사용자 경험을 실시간으로 캡처하고 분석하는 방법에 대해 알아봅니다.
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 12e37d6d0a8674dd4329200322e2f959cc6dd787
+source-git-commit: 19b52f733a592c7e84ba2e9d83d37e5e181f21ab
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1313'
 ht-degree: 0%
 
 ---
 
-# AEM에 대한 실시간 모니터링 서비스 as a Cloud Service 사용 {#real-use-monitoring-service-for-aem-as-a-cloud-service}
+# AEM as a Cloud Service용 Real Use Monitoring Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
 
 >[!NOTE]
 >
@@ -33,8 +33,6 @@ Real Use Monitoring 서비스는 모든 고객에게 유용합니다. 이는 사
 
 모든 Adobe 고객을 위해 이 서비스는 사용자 상호 작용에 대한 중요한 통찰력을 제공합니다. 자체 CDN을 사용하는 고객은 트래픽 보고의 간소화를 활용할 수 있습니다. 이제 Adobe이 데이터 수집을 직접 통합하므로 갱신 주기 동안 별도의 보고서가 필요하지 않습니다.
 
-Adobe의 Early Adopter RUM Explorer 시각화 도구를 사용하여 웹 사이트 참여에 대한 유용한 통찰력을 얻고 웹 사이트의 잠재력을 최대한 활용하시겠습니까? 이 도구는 클릭 수에 대한 지표, CWV(Core Web Vitals), 전환 및 고객 여정 맵을 포함하여 페이지 성능에 대한 통찰력을 제공할 수 있습니다. 이러한 강력한 통찰력을 사용하여 디지털 경험을 세밀하게 조정하여 사용자의 요구 사항을 보다 효과적으로 충족할 수 있습니다. 자세히 알아보고 액세스 권한을 얻으려면 다음 주소로 이메일을 보내주십시오. `rum-explorer@adobe.com`.
-
 ## Real Use Monitoring Service 작동 방식 이해 {#understand-how-the-rum-service-works}
 
 Adobe Experience Manager(AEM)는 RUM(Real Use Monitoring)을 사용하여 고객 및 Adobe이 방문자와 AEM sites가 상호 작용하는 방법을 이해할 수 있도록 지원합니다. 성능 문제를 진단하고 실험의 효과를 측정할 수 있도록 도와줍니다. RUM은 샘플링을 통해 방문자의 개인 정보를 보존하며 - 모든 페이지 보기의 일부만 모니터링되며 - PII(개인 식별 정보)는 수집되지 않습니다.
@@ -47,7 +45,7 @@ AEM의 Real Use Monitoring 서비스는 방문자 개인 정보를 보존하고 
 
 ## 실시간 사용 모니터링 서비스 데이터 샘플링 {#rum-service-data-sampling}
 
-기존 웹 분석 솔루션은 모든 단일 방문자에 대한 데이터를 수집하려고 합니다. AEM RUM 서비스는 극히 일부 페이지 보기에서 정보만 캡처합니다. 서비스는 분석을 대체하는 것이 아니라 샘플링되고 익명화되어야 합니다. 기본적으로 페이지는 1:100 샘플링 비율을 가집니다. 사이트 운영자는 현재 샘플링 속도를 높이거나 낮출 수 없습니다. 총 트래픽을 정확하게 추정하기 위해 100개의 페이지 보기마다 데이터가 1에서 수집되므로 전체 트래픽에 대한 신뢰할 수 있는 근사치를 제공합니다.
+기존 웹 분석 솔루션은 모든 단일 방문자에 대한 데이터를 수집하려고 합니다. AEM의 RUM 서비스는 극히 일부 페이지 보기에서 정보만 캡처합니다. 서비스는 분석을 대체하는 것이 아니라 샘플링되고 익명화되어야 합니다. 기본적으로 페이지는 1:100 샘플링 비율을 가집니다. 사이트 운영자는 현재 샘플링 속도를 높이거나 낮출 수 없습니다. 총 트래픽을 정확하게 추정하기 위해 100개의 페이지 보기마다 데이터가 1에서 수집되므로 전체 트래픽에 대한 신뢰할 수 있는 근사치를 제공합니다.
 
 데이터 수집 여부의 판단으로 페이지 보기 단위로 페이지 보기에서 이루어지며, 여러 페이지 간 상호 작용을 추적하는 것이 사실상 불가능해진다. 기본적으로 RUM에는 방문자 또는 세션에 대한 개념이 없으며 페이지 보기에만 해당됩니다.
 
@@ -108,11 +106,11 @@ RUM 데이터를 분석할 때 페이지 보기 수 및 기타 성능 지표에 
 
 1. **다음 `/.rum` 내 사이트에서 경로가 차단되었습니다. 어떻게 수정해야 합니까?**
 
-   다음 `/.rum` rum 컬렉션이 작동하려면 경로가 필요합니다. AEMas a Cloud Service 의 일부로 Adobe이 제공하는 항목 앞에 CDN이 있는 경우 `/.rum` 경로는 AEM 콘텐츠의 나머지 부분과 동일한 AEM 원점으로 전달됩니다. 그리고 어떤 식으로든 조정되지 않았는지 확인하십시오.
+   다음 `/.rum` rum 컬렉션이 작동하려면 경로가 필요합니다. Adobe이 AEM as a Cloud Service의 일부로 제공하는 항목 앞에 CDN이 있는 경우 `/.rum` 경로는 AEM 콘텐츠의 나머지 부분과 동일한 AEM 원점으로 전달됩니다. 그리고 어떤 식으로든 조정되지 않았는지 확인하십시오.
 
 1. **RUM 수집은 계약 목적의 콘텐츠 요청에 포함됩니까?**
 
-   RUM 라이브러리 및 RUM 컬렉션은 콘텐츠 요청으로 계산되지 않고 보고된 페이지 보기 수 또는 API 호출 수를 증가시키지 않습니다. 또한 AEM as a Cloud Service으로 기본 제공 CDN을 사용하는 고객의 경우 [서버측 컬렉션](#serverside-collection) 는 콘텐츠 요청의 기초입니다.
+   RUM 라이브러리 및 RUM 컬렉션은 콘텐츠 요청으로 계산되지 않고 보고된 페이지 보기 수 또는 API 호출 수를 증가시키지 않습니다. 또한 AEM as a Cloud Service에서 기본 CDN을 사용하는 고객의 경우 [서버측 컬렉션](#serverside-collection) 는 콘텐츠 요청의 기초입니다.
 
 1. **어떻게 옵트아웃할 수 있습니까?**
 
