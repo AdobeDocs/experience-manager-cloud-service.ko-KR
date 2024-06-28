@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Express] 기반 옵션을 사용하여 이미지를 �
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: 9a21c9218e45bb6ce91263c9798e3b1c99f369b4
+source-git-commit: 23b43f22b62451c9d0a5460999fcd43479438d7e
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 32%
@@ -13,7 +13,7 @@ ht-degree: 32%
 
 # [!DNL Assets view]에서 이미지 편집 {#edit-images-in-assets-view}
 
-에셋 보기를 사용하면 크기 조정, 배경 제거, 자르기 및 JPEG 및 PNG 형식 간 변환 등 기본 이미지 편집을 사용할 수 있습니다. 또한 Adobe Express과의 통합을 통해 고급 편집이 가능합니다. 이미지를 편집한 후 새 이미지를 새 버전으로 저장할 수 있습니다. 필요한 경우 버전 관리를 통해 나중에 원래 에셋으로 되돌릴 수 있습니다. 이미지를 편집하려면 [미리보기를 열고](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) **이미지 편집**&#x200B;을 클릭합니다.
+Assets 보기를 사용하면 크기 조정, 배경 제거, 자르기 및 JPEG 및 PNG 형식 간 변환 등 기본 이미지 편집을 사용할 수 있습니다. 또한 Adobe Express과의 통합을 통해 고급 편집이 가능합니다. 이미지를 편집한 후 새 이미지를 새 버전으로 저장할 수 있습니다. 필요한 경우 버전 관리를 통해 나중에 원래 에셋으로 되돌릴 수 있습니다. 이미지를 편집하려면 [미리보기를 열고](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) **이미지 편집**&#x200B;을 클릭합니다.
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ ht-degree: 32%
 
 ## 이미지 편집 {#edit-image}
 
-링크를 사용하여 자산 보기에 표시 - [자산 보기](https://experience.adobe.com/#/assets) 올바른 저장소를 선택합니다. 액세스 권한을 받으려면 조직 관리자에게 문의하십시오.
+링크를 사용하여 Assets 보기에 착륙합니다. - [Assets 보기](https://experience.adobe.com/#/assets) 올바른 저장소를 선택합니다. 액세스 권한을 받으려면 조직 관리자에게 문의하십시오.
 추가 참조 정보는 - [Adobe Experience Manager Assets 보기 사용 시작하기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Assets 보기 사용자 인터페이스 이해](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation), 및 [Assets 사용 사례 보기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
@@ -88,11 +88,11 @@ Express 권한이 있는 사용자는 Assets 보기 내에서 임베드된 Expre
 ![express in essentials UI](/help/assets/assets/express-in-essentials-ui.jpg)
 다음을 사용하여 이미지 편집하기 [!DNL Adobe Express] 포함된 편집기에서 아래 단계를 수행합니다.
 
-1. 링크를 사용하여 AEM Assets 보기에 도달합니다. - [AEM 자산 보기](https://experience.adobe.com/#/assets) 올바른 저장소를 선택합니다.
+1. 링크를 사용하여 AEM Assets 보기에 도달합니다. - [AEM Assets 보기](https://experience.adobe.com/#/assets) 올바른 저장소를 선택합니다.
 1. 클릭 **Assets**&#x200B;을 클릭하고 폴더를 입력한 다음 이미지를 선택합니다.
 1. 클릭 **Adobe Express에서 열기**. 이미지가 빠른 캔버스에서 열립니다.
 1. 이미지를 필요한 대로 편집합니다.
-1. 프로젝트에 페이지를 더 추가해야 하는 경우 **추가**&#x200B;에서 Assets을 선택하고 폴더를 입력한 다음 캔버스 페이지로 가져올 이미지를 선택한 다음 이미지에 필요한 편집을 수행합니다.
+1. 프로젝트에 페이지를 더 추가해야 하는 경우 **추가**&#x200B;에서 에셋을 선택하고, 폴더를 입력하고, 캔버스 페이지로 가져올 이미지를 선택한 다음 이미지에 필요한 편집을 수행합니다.
 1. 이미지를 저장하려면 를 클릭합니다. **저장**. 저장 대화 상자가 표시됩니다.
 
    >[!NOTE]
@@ -197,7 +197,7 @@ TBD: Insert a video of the available social media options.
 
 * 다음을 사용하여 제품 피드백 제공 [!UICONTROL 피드백] Assets 보기 사용자 인터페이스에서 사용할 수 있는 옵션입니다.
 
-* 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백 제공
+* 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백을 제공합니다.
 
 * [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support) 문의
 
