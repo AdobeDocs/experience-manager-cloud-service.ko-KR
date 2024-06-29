@@ -1,12 +1,12 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
-description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
+description: 의 최신 릴리스 정보 [!DNL Adobe Experience Manager] As a Cloud Service
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 19b52f733a592c7e84ba2e9d83d37e5e181f21ab
+source-git-commit: 1e5a32625377cb564c859a6fdaf1ecef6ebebe9e
 workflow-type: tm+mt
-source-wordcount: '1805'
-ht-degree: 56%
+source-wordcount: '1865'
+ht-degree: 43%
 
 ---
 
@@ -42,6 +42,12 @@ Have a look at the June 2024 Release Overview video for a summary of the feature
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
+### Experience Manager Sites의 새로운 기능 {#new-feature-sites}
+
+**RUM(Real Use Monitoring) 데이터 서비스** {#real-use-monitoring}
+
+다음 [RUM(Real Use Monitoring) 데이터 서비스](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/shwetad-patch-1/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service) 는 이제 일반적으로 사용할 수 있으며, AEM as a Cloud Service에 대해 클라이언트측 데이터 수집을 활성화합니다. 이 서비스는 사용자 상호 작용을 보다 정확하게 반영하여 웹 사이트 참여에 대한 신뢰할 수 있는 측정을 보장합니다. 이는 고객에게 페이지 트래픽 및 성능에 대한 고급 통찰력을 제공하여 페이지 성능을 이해하고 향상시킬 수 있는 귀중한 기회를 제공합니다.
+
 ### 얼리 어답터 프로그램 {#sites-early-adopter}
 
 **변형 생성**
@@ -60,6 +66,8 @@ Have a look at the June 2024 Release Overview video for a summary of the feature
 
 ### Experience Manager Assets의 새로운 기능 {#new-features-assets}
 
+
+
 **Content Hub**
 
 Content Hub은 조직 및 비즈니스 파트너를 위한 온브랜드 콘텐츠에 대한 액세스를 민주화하기 위해 Experience Manager Assets as a Cloud Service의 일부로 사용할 수 있습니다. Content Hub을 사용하면 자산을 쉽게 찾아 배포하고, 새로운 브랜드 내 변형을 재사용 및 만들 수 있으며, 규모에 맞게 활성화를 가속화할 수 있습니다.
@@ -75,9 +83,9 @@ OpenAPI 기능이 포함된 Dynamic Media은 Adobe 및 서드파티 애플리케
 
 ### Assets 보기의 새로운 기능 {#assets-view-new-features}
 
-**Assets Insights 대시보드에서 사용할 수 있는 추가 옵션**
+**Assets Insights 대시보드에서 더 많은 옵션을 사용할 수 있습니다**
 
-이제 Assets Insights 대시보드에서 에셋 유형 및 크기별 에셋 수를 사용할 수 있습니다. 이러한 옵션은 크기 범위 및 에셋 유형별 에셋의 수 및 비율에 대한 실시간 데이터를 Assets 보기 환경에 제공합니다.
+이제 Assets Insights 대시보드에서 자산 유형 및 크기별 자산 개수를 사용할 수 있습니다. 이러한 옵션은 Assets 보기 환경에서 실시간 데이터를 제공합니다. 크기 범위 및 에셋 유형별로 에셋의 개수 및 비율을 자세히 설명합니다.
 
 <!--
 
@@ -104,7 +112,7 @@ When looking at the asset details, any image with content credentials added, suc
 
 #### 핵심 구성 요소 기반의 적응형 양식을 위한 향상된 시각적 규칙 편집기
 
-이 릴리스에서는 핵심 구성 요소 기반 적응형 양식을 위한 시각적 규칙 편집기가 대폭 업그레이드되었습니다. 이제 다음을 수행할 수 있습니다.
+이 릴리스에서는 핵심 구성 요소 기반의 적응형 양식에 대한 시각적 규칙 편집기를 크게 업그레이드했습니다. 이제 다음을 수행할 수 있습니다.
 
 * 시각적 규칙 편집기에서 규칙을 만들어 다음을 수행할 수 있습니다. [기본 양식 제출 성공/실패 메시지 재정의](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers).
 
@@ -112,45 +120,45 @@ When looking at the asset details, any image with content credentials added, suc
 
 * 이제 양식 작성자가 사용자 정의 기능을 적용하여 [제출 전에 데이터를 전처리](/help/forms/create-and-use-custom-functions.md#use-case-submit-altered-data-to-the-server)할 수 있습니다.
 
-* [**초안으로 저장**](/help/forms/save-core-component-based-form-as-draft.md) 기능을 사용하여 부분적으로 완료된 양식을 나중에 제출할 수 있도록 저장합니다. 이는 사용자가 양식 작성을 중단하고 나중에 다시 작성해야 하는 시나리오에서 유용합니다.
+* [**초안으로 저장**](/help/forms/save-core-component-based-form-as-draft.md) 기능을 사용하여 부분적으로 완료된 양식을 나중에 제출할 수 있도록 저장합니다. 이 기능은 사용자가 양식 작성을 중단하고 나중에 다시 와야 하는 시나리오에서 유용합니다.
 
-### AEM Forms의 조기 액세스 기능 {#forms-new-early-access-features}
+### AEM Forms의 얼리 액세스 기능 {#forms-new-early-access-features}
 
 AEM Forms 조기 액세스 프로그램 은 다른 사람들보다 먼저 최신 혁신 기술에 독점적으로 액세스하고 개발을 구체화할 수 있는 특별한 기회를 제공합니다. 이 프로그램은 여러 혁신에 액세스할 수 있습니다.
 
-이 릴리스 노트는 현재 릴리스에 제공된 혁신적인 기능을 나열합니다. Early Access 프로그램에서 사용할 수 있는 혁신적인 기능의 전체 목록은 다음을 참조하십시오. [AEM Forms 조기 액세스 프로그램 설명서](/help/forms/early-access-ea-features.md).
+이 릴리스 노트는 현재 릴리스에 제공된 혁신적인 기능을 나열합니다. 얼리 액세스 프로그램에서 사용할 수 있는 전체 혁신 목록은 [AEM Forms 얼리 액세스 프로그램 설명서](/help/forms/early-access-ea-features.md)를 참조하십시오.
 
 #### 향상된 봇 보호 방법
 
-AEM Forms는 널리 사용되는 두 가지 CAPTCHA 솔루션인 Cloudflare Turnstile 및 hCaptcha에 대한 지원을 추가하여 보안 기능을 강화했습니다. 이미 사용 가능한 Google reCAPTCHA에 추가되어 봇 및 스팸 제출로부터 양식을 보호하는 데 있어 사용자에게 더 많은 선택권과 유연성을 제공합니다.
+AEM Forms는 널리 사용되는 두 가지 CAPTCHA 솔루션인 Cloudflare Turnstile 및 hCaptcha에 대한 지원을 추가하여 보안 기능을 강화했습니다. 이 기능은 기존 Google reCAPTCHA를 보완하여 사용자에게 추가 옵션을 제공합니다. 봇과 스팸 제출로부터 양식을 보호하는 유연성을 향상시킵니다.
 
-* **Cloudflare Turnstile**: 이 마찰 없는 CAPTCHA는 명시적인 상호 작용이 필요하지 않은 간단한 인증을 통해 사용자를 검증합니다. 양식에 완벽하게 통합되어 사용자 경험을 향상시킵니다.
+* **Cloudflare 턴스타일**: 이 마찰 없는 CAPTCHA는 명시적인 상호 작용이 필요하지 않은 간단한 문제를 통해 사용자를 확인합니다. 양식에 완벽하게 통합되어 사용자 경험을 향상시킵니다.
 * **hCaptcha**: 개인 정보 보호에 중점을 둔 이 CAPTCHA는 데이터 개인 정보 보호에 초점을 맞춘 사용자 친화적인 대안을 제공합니다. 보안과 사용자 경험 사이의 균형을 맞추는 것을 목표로 합니다.
 * **Google reCAPTCHA**: AEM Forms는 reCAPTCHA v2와 reCAPTCHA Enterprise를 지속적으로 지원하여 안정적이고 잘 정립된 솔루션을 제공합니다.
 
 AEM Forms는 다양한 CAPTCHA 옵션을 제공하여 특정 요구 사항에 가장 적합한 솔루션을 선택할 수 있도록 지원합니다.
 
-이러한 CAPTCHA 솔루션을 적응형 양식과 통합할 준비가 되셨습니까? 설명서에는 [Cloudflare Turnstile](https://experienceleague.adobe.com/kr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/kr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) 및 [Google reCAPTCHA](https://experienceleague.adobe.com/kr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components)에 대한 자세한 지침이 있습니다.
+이러한 CAPTCHA 솔루션을 적응형 Forms과 통합할 준비가 되셨습니까? Adobe 설명서는 각각에 대한 자세한 지침을 제공합니다. [Cloudflare 턴스타일](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [Captcha](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), 및 [Google recaptcha](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 
 ### Forms 서비스
 
-Forms 서비스는 데이터 캡처를 위한 대화형 PDF 양식을 생성합니다. 또한 기존 대화형 PDF 양식에서 데이터를 가져오거나 내보내고 제출된 데이터의 유효성을 검사하는 데 사용할 수도 있습니다. 기능의 분류는 다음과 같습니다.
+Forms 서비스는 데이터 캡처를 위한 대화형 PDF 양식을 생성합니다. 또한 기존의 대화형 PDF 양식으로 데이터를 가져오거나 내보내고 제출된 데이터를 검증하는 데 사용할 수 있습니다. 기능의 분류는 다음과 같습니다.
 
-* **Forms 렌더링**: AEM Forms Designer를 사용하여 작성한 템플릿과 선택적으로 XML 데이터에서 대화형 PDF 양식을 생성합니다. 이를 통해 선택적으로 데이터를 미리 채운 채울 수 있는 PDF 양식을 기본적으로 생성합니다.
+* **Forms 렌더링**: AEM Forms Designer를 사용하여 작성한 템플릿과 선택적으로 XML 데이터에서 대화형 PDF 양식을 생성합니다. 이 기능은 선택적으로 데이터로 미리 채워진 입력 가능한 PDF 양식을 생성합니다.
 * **데이터 추출 및 가져오기**: 기존 PDF 양식으로 데이터를 가져올 뿐만 아니라 채워진 PDF 양식에서 데이터를 추출할 수 있습니다. XDP 및 XML 데이터 형식이 모두 지원되며, XFA가 아닌 PDF 형식(AcroForms라고도 함)으로 가져오기는 FDF 및 XFDF 데이터를 추가로 지원합니다.
 * **데이터 유효성 검사**: AEM Forms Designer를 사용하여 만든 템플릿에 대해 XDP 또는 XML 형식으로 제출된 데이터의 유효성을 검사합니다.
 
 >[!IMPORTANT]
 >
-> 초기 액세스 혁신을 위해 Early Access Program에 가입하고자 하는 경우 공식 주소로 이메일을 보내십시오. [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) 액세스 권한 요청. 전체 또는 특정 혁신에 대한 액세스를 요청할 수 있습니다.
+> 초기 액세스 혁신을 위해 Adobe의 초기 액세스 프로그램에 참여하고자 하는 경우 공식 주소에서 다음으로 이메일을 보내면 됩니다. [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) 액세스 권한 요청. 전체 또는 특정 혁신에 대한 액세스를 요청할 수 있습니다.
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### 콘텐츠 상태 관련 작업 센터 알림 얼리 어답터 프로그램 {#actions-center-notifications}
 
-[액션 센터](/help/operations/actions-center.md)는 중요한 사고가 발생하거나 사용자가 사전 예방 조치를 취해야 할 코드 또는 구성에 대해 발견한 경우 이메일 알림을 보냅니다. 이제 콘텐츠 상태와 관련된 몇 가지 새로운 유형의 알림이 도입되었습니다. 이 기능은 얼리어답터 프로그램을 통해 사용할 수 있습니다. 참여하려면 Adobe 고객 지원 센터에 문의하십시오.
+[작업 센터](/help/operations/actions-center.md) 중요한 인시던트가 발생하거나 사전 조치를 취해야 하는 코드 또는 구성에 대해 인지된 경우 이메일 알림을 보냅니다. 이제 Adobe에 콘텐츠 상태와 관련된 몇 가지 새로운 유형의 알림이 도입되었습니다. 이 기능은 얼리어답터 프로그램을 통해 사용할 수 있습니다. 참여하려면 Adobe 고객 지원 센터에 문의하십시오.
 
 #### 페이지에 많은 노드가 포함됨 {#page-nodes}
 
@@ -158,23 +166,23 @@ Forms 서비스는 데이터 캡처를 위한 대화형 PDF 양식을 생성합�
 
 #### 실행 중인 많은 워크플로 인스턴스 {#running-workflows}
 
-작성 환경에서 실행 중인 워크플로가 많을 경우 워크플로 엔진 성능이 영향을 받습니다. 실행 중인 워크플로 인스턴스가 많이 감지되면 작업 센터를 통해 사전 알림을 받아 제거 작업을 구성하여 필요하지 않은 실행 중인 워크플로를 종료할 수 있습니다.
+작성 환경에서 실행 중인 워크플로가 많을 경우 워크플로 엔진 성능이 영향을 받습니다. 실행 중인 워크플로 인스턴스가 많이 감지되면 작업 센터를 통해 사전 알림을 받게 됩니다. 이 프로세스를 사용하면 불필요한 실행 중인 워크플로우를 종료하도록 제거 작업을 구성할 수 있습니다.
 
 #### 사용자 정의 그룹에 직접 추가된 사용자 {#users-customgroups}
 
-사용자가 사용자 정의 그룹에 직접 추가되면 작업 센터를 통해 사전 알림을 받아 IMS 모범 사례에 따라 관련 IMS 그룹에 사용자를 추가한 다음 IMS 그룹을 AEM 그룹의 구성원으로 추가할 수 있습니다.
+사용자가 사용자 정의 그룹에 직접 추가되면 작업 센터를 통해 사전 알림을 받습니다. 이 프로세스를 사용하면 관련 IMS 그룹에 사용자를 추가한 다음 해당 IMS 그룹을 AEM 그룹의 구성원으로 포함하여 IMS 모범 사례를 따를 수 있습니다.
 
 #### 누락된 JCR 콘텐츠 {#jcr-content}
 
-누락된 JCR 콘텐츠가 감지되면 작업 센터를 통해 사전 알림을 받아 누락된 JCR 콘텐츠를 추가하고 특정 AEM Assets 기능의 실패를 방지할 수 있습니다.
+JCR 콘텐츠 누락이 감지되면 작업 센터에서 이를 미리 알려줍니다. 이 접근 방식을 사용하면 누락된 콘텐츠를 추가하고 특정 AEM Assets 기능의 실패를 방지할 수 있습니다.
 
 #### 완료된 워크플로가 삭제되지 않음 {#workflows}
 
-90일 이상 완료된 워크플로우가 삭제되지 않은 경우 작업 센터를 통해 사전 알림을 받아 워크플로우 인스턴스 수를 최소화하여 워크플로우 엔진의 성능을 개선할 수 있습니다.
+Actions Center는 90일 이상 경과한 완료된 워크플로우가 삭제되지 않은 경우 이를 미리 알려줍니다. 이 접근 방식은 워크플로 인스턴스의 수를 줄여 워크플로 엔진의 성능을 개선하는 데 도움이 됩니다.
 
 #### Sling 리소스 누락 {#sling-resource}
 
-누락된 Sling 리소스가 감지되면 작업 센터를 통해 사전 알림을 받아 누락된 Sling 리소스를 추가하고 특정 AEM Assets 기능의 실패를 방지할 수 있습니다.
+작업 센터에서는 누락된 Sling 리소스가 감지되면 이를 미리 알려줍니다. 이 접근 방식을 사용하면 누락된 리소스를 추가하고 특정 AEM Assets 기능의 실패를 방지할 수 있습니다.
 
 ### 컨텐츠 전달 관련 얼리 어답터 프로그램 {#foundation-early-adopter}
 
@@ -182,7 +190,7 @@ Forms 서비스는 데이터 캡처를 위한 대화형 PDF 양식을 생성합�
 
 #### CDN에서의 기본 인증(얼리 어답터 프로그램) {#basicauth-cdn}
 
-Protect 사용자 이름과 암호가 필요한 기본 인증 대화 상자를 열어 특정 콘텐츠 리소스를 확인합니다. 이 기능은 최종 사용자 액세스 권한에 대한 완전한 솔루션보다는 비즈니스 이해 당사자의 콘텐츠 검토와 같은 간단한 인증 사용 사례를 위한 것입니다. 보안 유형 Cloud Manager 환경 변수를 참조하여 구성 파이프라인을 통해 배포되는 git의 구성 파일을 통해 관리되는 사용자 이름 및 암호 목록입니다. [자세히 알아보기](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
+Protect 사용자 이름과 암호가 필요한 기본 인증 대화 상자를 열어 특정 콘텐츠 리소스를 확인합니다. 이 기능은 최종 사용자 액세스 권한을 위한 포괄적인 솔루션 역할보다는 비즈니스 이해 당사자의 콘텐츠 검토와 같은 가벼운 인증 사용 사례를 주요 대상으로 합니다. 보안 유형 Cloud Manager 환경 변수를 참조하여 구성 파이프라인을 통해 배포되는 git의 구성 파일을 통해 관리되는 사용자 이름 및 암호 목록입니다. [자세히 알아보기](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
 #### 셀프서비스 API 키를 사용하여 CDN에서 컨텐츠 제거(조기 채택자 프로그램) {#purge-cdn}
 
@@ -192,7 +200,7 @@ Protect 사용자 이름과 암호가 필요한 기본 인증 대화 상자를 �
 
 #### BYOCDN(Customer-Managed CDN)을 위한 X-AEM-Edge-Key 셀프서비스 생성(얼리어답터 프로그램) {#byocdn-keys}
 
-이전에는 고객 관리형 CDN 구성에 필요한 X-AEM-Edge-Key를 생성하려면 지원 티켓이 필요했습니다. 이제 구성 파이프라인을 사용하여 배포되는 구성 파일을 통해 셀프서비스 방식으로 이를 수행할 수 있으므로 새 환경에 대한 온보딩 작업이 지연되지 않습니다. [자세히 알아보기](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
+이전에는 고객 관리형 CDN 구성에 필요한 X-AEM-Edge-Key를 생성하려면 지원 티켓이 필요했습니다. 이제 구성 파이프라인을 사용하여 배포되는 구성 파일을 통해 셀프서비스 방식으로 이러한 결과를 수행할 수 있으므로 새 환경 온보딩에 대한 지연을 제거할 수 있습니다. [자세히 알아보기](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
@@ -204,11 +212,11 @@ Protect 사용자 이름과 암호가 필요한 기본 인증 대화 상자를 �
 
 선택적으로 라이선스를 부여할 수 있는 WAF(웹 애플리케이션 방화벽) 규칙을 포함하는 최근 릴리스된 [트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md)을 통해 허용하거나 거부해야 하는 트래픽을 구성할 수 있습니다.
 
-얼리 어답터 프로그램에 참여하면 트래픽 필터 규칙이 실행될 때마다 알림을 받을 수 있습니다. 액션 센터 이메일 알림은 특정 트래픽 상황이 발생할 때 적절한 조치를 취할 수 있도록 지속적으로 정보를 제공해 줍니다.
+얼리 어답터 프로그램에 참여하면 트래픽 필터 규칙이 실행될 때마다 알림을 받을 수 있습니다. Actions Center 이메일 알림은 특정 트래픽 상태가 발생할 때 사용자에게 계속 알려주므로 적절한 조치를 취할 수 있습니다.
 
 #### 비즈니스 사용자는 Git(얼리 어답터 프로그램) 외부에서 리디렉션을 선언할 수 있습니다. {#apache-rewritemaps-early-adopter}
 
-AEM 6.5와 유사하게 Apache/Dispatcher는 게시 저장소의 특정 위치에 배치된 재작성 맵을 수집하고 웹 계층 파이프라인 실행 없이 로드합니다. 이를 통해 비즈니스 사용자는 ACS Commons Redirect Map Manager에서 제공되거나 고객 애플리케이션의 일부로 생성된 것과 같은 스프레드시트 또는 UI를 사용하여 리디렉션을 선언할 수 있습니다. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
+AEM 6.5와 마찬가지로 Apache/Dispatcher는 게시 저장소의 특정 위치에 배치된 재작성 맵을 수집하여 웹 계층 파이프라인 실행 없이도 로드할 수 있습니다. 이 접근 방식을 사용하면 비즈니스 사용자가 ACS Commons 리디렉션 맵 관리자 또는 사용자 지정 애플리케이션과 같은 스프레드시트 또는 UI를 사용하여 리디렉션을 선언할 수 있습니다. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
 
 #### 동적 콘텐츠 로드를 위한 ESI(에지측 포함)(얼리 어답터 프로그램) {#esi-early-adopter}
 
@@ -228,5 +236,5 @@ Adobe Experience Manager Guides 최신 릴리스의 새로운 기능 및 향상�
 
 ## Experience Cloud 릴리스 정보 {#experience-cloud}
 
-다른 Experience Cloud 애플리케이션 릴리스에 대한 정보는 [여기](https://experienceleague.adobe.com/kr/docs/release-notes/experience-cloud/current)에서 확인할 수 있습니다.
+다른 Experience Cloud 애플리케이션 릴리스에 대한 정보는 [여기](https://experienceleague.adobe.com/ko/docs/release-notes/experience-cloud/current)에서 확인할 수 있습니다.
 Experience Cloud 릴리스 정보의 업데이트에 대한 월별 이메일 알림을 받아 보려면 [Adobe 우선 순위 제품 업데이트](https://www.adobe.com/kr/subscription/priority-product-update.html)를 구독하십시오.
