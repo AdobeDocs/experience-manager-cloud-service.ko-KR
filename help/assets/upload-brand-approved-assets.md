@@ -2,9 +2,9 @@
 title: 브랜드 승인 자산을에 업로드 [!DNL Content Hub]
 description: 브랜드 승인 에셋을 Content Hub에 업로드하는 방법을 알아봅니다.
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+source-git-commit: c85b4e1c828ed1fb7f4063f965fe116215ca0244
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Content Hub에 브랜드 승인 에셋 업로드 {#upload-brand-approved-assets-content-hub}
 
-관리자는 로컬 파일 시스템에서 Content Hub에 자산을 추가하거나 OneDrive 또는 Dropbox 데이터 소스에서 자산을 가져올 수 있습니다. 모든 에셋은 로컬 파일 시스템에서 사용할 수 있는 폴더 구조 또는 OneDrive 및 Dropbox 데이터 소스와 관계없이 Content Hub의 최상위 수준에 표시되어 검색 기능을 향상시킵니다.
+[에셋을 추가할 수 있는 권한이 있는 Content Hub 사용자](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) 로컬 파일 시스템에서 Content Hub에 자산을 추가하거나 OneDrive 또는 Dropbox 데이터 소스에서 자산을 가져올 수 있습니다. 모든 에셋은 로컬 파일 시스템에서 사용할 수 있는 폴더 구조 또는 OneDrive 및 Dropbox 데이터 소스와 관계없이 Content Hub의 최상위 수준에 표시되어 검색 기능을 향상시킵니다.
 
 Content Hub을 사용하면 에셋 검색을 더욱 향상시킬 수 있습니다.
 

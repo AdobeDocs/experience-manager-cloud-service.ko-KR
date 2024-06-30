@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: 의 최신 릴리스 정보 [!DNL Adobe Experience Manager] As a Cloud Service
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 1e5a32625377cb564c859a6fdaf1ecef6ebebe9e
+source-git-commit: 9d0ef963dfe2d81da09a7195540de87245e71a67
 workflow-type: tm+mt
-source-wordcount: '1865'
-ht-degree: 43%
+source-wordcount: '1932'
+ht-degree: 42%
 
 ---
 
@@ -86,6 +86,14 @@ OpenAPI 기능이 포함된 Dynamic Media은 Adobe 및 서드파티 애플리케
 **Assets Insights 대시보드에서 더 많은 옵션을 사용할 수 있습니다**
 
 이제 Assets Insights 대시보드에서 자산 유형 및 크기별 자산 개수를 사용할 수 있습니다. 이러한 옵션은 Assets 보기 환경에서 실시간 데이터를 제공합니다. 크기 범위 및 에셋 유형별로 에셋의 개수 및 비율을 자세히 설명합니다.
+
+**포함된 Adobe Express 편집기 업데이트**
+
+* 새 버전으로 저장하는 것과 비교하여 새 에셋으로 저장하는 것에 대한 사용자 경험이 개선되었습니다.
+
+* 다중 페이지 PDF 및 이미지 형식 모두로 다중 페이지 Express 문서(이전에는 단일 페이지만 지원됨)를 내보냅니다. 이미지 형식을 선택하면 각 페이지가 다운스트림 배포를 위해 DAM에 개별 자산으로 저장됩니다.
+
+* 에셋을 저장하는 동안 저장 대화 상자에서 메타데이터 추가를 지원합니다.
 
 <!--
 
