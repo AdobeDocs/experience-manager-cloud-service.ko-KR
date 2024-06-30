@@ -2,9 +2,9 @@
 title: Content Hub에서 컬렉션 관리
 description: Content Hub에서 컬렉션을 관리하는 방법 알아보기
 role: User
-source-git-commit: 92c4cd64503653c5d9248c2c3f6952100b03ff86
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '617'
 ht-degree: 3%
 
 ---
@@ -26,6 +26,10 @@ ht-degree: 3%
 * **삭제**: 전체 컬렉션을 삭제합니다.
 
 사용자가 내에서 사용할 수 있는 다양한 에셋에 쉽게 액세스하고 관리할 수 있도록 지원합니다 [!DNL Content Hub].
+
+## 사전 요구 사항 {#prerequisites}
+
+[Content Hub 사용자](deploy-content-hub.md#onboard-content-hub-users) 은 이 문서에서 언급한 작업을 수행할 수 있습니다.
 
 ## 컬렉션 만들기{#create-collections}
 

@@ -2,9 +2,9 @@
 title: 배포 [!DNL Content Hub]
 description: Content Hub을 배포하고 활성화하고 다양한 유형의 권한을 가진 사용자에게 액세스를 제공하는 방법(자산 업로드, Adobe Express 사용자)과 사용자에게 관리자 권한을 제공하는 방법에 대해 알아봅니다.
 role: Admin
-source-git-commit: 56af07a198e1350282f5d3f771c1c29db318b90e
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1229'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,15 @@ Experience Manager Assetsas a Cloud Service 에서 승인됨으로 표시된 자
 
 Content Hub에 대한 권한의 변형은 다음과 같습니다.
 
-* [자산 소비자](#onboard-content-hub-consumer-users): Content Hub 포털에서 브랜드 승인 자산에 액세스합니다.
+* [Content Hub 사용자](#onboard-content-hub-users): Content Hub 포털에서 브랜드 승인 자산에 액세스합니다.
 
-* [관리자](#onboard-content-hub-administrator): 액세스 권한 [구성 사용자 인터페이스](/help/assets/configure-content-hub-ui-options.md) 제출 권한이 있는 에셋 소비자 외에 Content Hub에서.
+* [Content Hub 관리자](#onboard-content-hub-administrator): 액세스 권한 [구성 사용자 인터페이스](/help/assets/configure-content-hub-ui-options.md) Content Hub에서 브랜드 승인 에셋에 액세스, Content Hub에 에셋 업로드 및 이미지를 편집하는 Adobe Express 통합(Adobe Express 권한이 있는 경우).
 
-* [제출 권한이 있는 자산 소비자](#onboard-content-hub-consumer-users-submission-rights): 다음을 수행할 수 있습니다. [Content Hub에 에셋 업로드](/help/assets/upload-brand-approved-assets.md) 및 [Adobe Express 통합](/help/assets/edit-images-content-hub.md) Content Hub 포털에서 brand approved assets에 액세스할 수 있습니다.
+* [에셋을 추가할 수 있는 권한이 있는 Content Hub 사용자](#onboard-content-hub-users-add-assets): 다음을 수행할 수 있습니다. [Content Hub에 에셋 업로드](/help/assets/upload-brand-approved-assets.md) Content Hub 포털에서 brand approved assets에 액세스할 수 있습니다.
 
-* [자산 배포자](#content-hub-asset-distributors): Experience Manager Assetsas a Cloud Service 에서 자산을 승인하여 Content Hub에서 해당 자산을 사용할 수 있도록 하는 기능입니다.
+* [자산을 새 변형으로 리믹스할 수 있는 권한이 있는 Content Hub 사용자](#onboard-content-hub-users-remix-assets): [Adobe Express 통합](/help/assets/edit-images-content-hub.md) (Adobe Express 권한이 있는 경우) Content Hub 포털에서 브랜드 승인 에셋에 액세스할 수 있습니다.
+
+* [Experience Manager Assets 사용자](#experience-manager-assets-users): Experience Manager Assetsas a Cloud Service 에서 자산을 승인하여 Content Hub에서 해당 자산을 사용할 수 있도록 하는 기능입니다.
 
 ## 1단계: Cloud Manager을 사용하여 Experience Manager Assets용 Content Hub 활성화 {#enable-content-hub}
 
@@ -65,7 +67,7 @@ Content Hub 제품 프로필을 보려면 인스턴스 이름을 클릭합니다
 
 ## 2단계: Content Hub 관리자 온보드 {#onboard-content-hub-administrator}
 
-Content Hub 관리자는 Content Hub에 에셋을 추가하고 [구성 옵션](/help/assets/configure-content-hub-ui-options.md) 조직 내의 다른 사용자용입니다.
+Content Hub 관리자는 [구성 사용자 인터페이스](/help/assets/configure-content-hub-ui-options.md) Content Hub에서 브랜드 승인 에셋에 액세스, Content Hub에 에셋 업로드 및 이미지를 편집하는 Adobe Express 통합(Adobe Express 권한이 있는 경우).
 
 Content Hub 관리자를 온보딩하려면:
 
@@ -86,11 +88,11 @@ Content Hub 관리자를 온보딩하려면:
 
 1. 클릭 **[!UICONTROL 저장]** 변경 내용을 저장합니다.
 
-## 3단계: Content Hub 자산 소비자 사용자 온보드 {#onboard-content-hub-consumer-users}
+## 3단계: Content Hub 사용자 온보드 {#onboard-content-hub-users}
 
-Content Hub 소비자 사용자는 포털에서 사용할 수 있는 에셋에 액세스할 수 있지만 새 에셋을 추가하거나 기존 에셋을 수정할 수는 없습니다.
+Content Hub 사용자는 포털에서 사용할 수 있는 에셋에 액세스할 수 있지만 새 에셋을 추가하거나 기존 에셋을 수정할 수는 없습니다.
 
-Content Hub에 소비자 사용자를 온보딩하려면:
+Content Hub 사용자를 온보딩하려면:
 
 1. [Content Hub 사용자 제품 프로필에 액세스하여 클릭합니다](#content-hub-instance-product-profile).
 
@@ -117,17 +119,13 @@ Admin Console을 사용하여 적절한 사용자를 추가한 후 다음 링크
 ![이메일 알림 비활성화](assets/disable-email-notifications.png)
 
 
-## 4단계: 제출 권한이 있는 Content Hub 자산 소비자 사용자 온보딩(선택 사항) {#onboard-content-hub-consumer-users-submission-rights}
+## 4단계: 에셋을 추가할 수 있는 권한이 있는 Content Hub 사용자 온보딩(선택 사항) {#onboard-content-hub-users-add-assets}
 
-제출 권한이 있는 Content Hub 에셋 소비자 사용자는 다음과 같은 작업을 수행할 수 있습니다.
+에셋을 추가할 수 있는 권한이 있는 Content Hub 사용자는 [Content Hub에 새 브랜드 승인 에셋 업로드](/help/assets/upload-brand-approved-assets.md).
 
-* [Content Hub에 새 브랜드 승인 에셋 업로드](/help/assets/upload-brand-approved-assets.md).
+사용자를 추가할 수 있는 권한이 있는 Content Hub 사용자를 온보딩하려면 다음을 수행하십시오.
 
-* [Adobe Express을 사용하여 기존 에셋을 수정하고 에셋을 저장소에 저장](/help/assets/edit-images-content-hub.md). Adobe Express을 사용하여 에셋을 편집하는 것은 사용자에게 Adobe Express 권한이 있는 경우에만 사용할 수 있습니다.
-
-제출 권한으로 Content Hub 소비자 사용자를 온보딩하려면 다음을 수행하십시오.
-
-1. [Content Hub 제품 프로필에 사용자 추가 후](#onboard-content-hub-consumer-users), Admin Console의 제품 목록에서 Experience Manager Assets 제품 이름을 클릭하여 AEM as a Cloud Service 제품 프로필에 액세스합니다.
+1. [Content Hub 제품 프로필에 사용자 추가 후](#onboard-content-hub-users), Admin Console의 제품 목록에서 Experience Manager Assets 제품 이름을 클릭하여 AEM as a Cloud Service 제품 프로필에 액세스합니다.
 
 1. AEM as a Cloud Service에 대한 프로덕션 작성자 인스턴스 를 클릭합니다.
    ![AEM as a Cloud Service의 제품 프로필](assets/aem-cloud-service-instances.png)
@@ -138,11 +136,28 @@ Admin Console을 사용하여 적절한 사용자를 추가한 후 다음 링크
 
 1. 클릭 **[!UICONTROL 저장]** 변경 내용을 저장합니다.
 
-## Content Hub 자산 배포자 {#content-hub-asset-distributors}
+## 4단계: 에셋을 새 변형에 리믹스할 수 있는 권한이 있는 Content Hub 사용자 온보딩(선택 사항) {#onboard-content-hub-users-remix-assets}
 
-에셋 배포자는 AEM as a Cloud Service에서 사용할 수 있도록 Content Hub에서 에셋을 승인할 수 있습니다.
+자산을 새 변형에 재혼합할 수 있는 권한이 있는 Content Hub 사용자는 [Adobe Express을 사용하여 기존 에셋을 수정하고 에셋을 저장소에 저장](/help/assets/edit-images-content-hub.md). Adobe Express을 사용하여 에셋을 편집하는 것은 사용자에게 Adobe Express 권한이 있는 경우에만 사용할 수 있습니다.
 
-자산 배포자 역할을 구성하려면 다음을 수행합니다.
+자산을 새 변형에 재혼합할 수 있는 권한이 있는 Content Hub 사용자를 온보딩하려면 다음을 수행하십시오.
+
+1. [Content Hub 제품 프로필에 사용자 추가 후](#onboard-content-hub-users), Admin Console의 제품 목록에서 Experience Manager Assets 제품 이름을 클릭하여 AEM as a Cloud Service 제품 프로필에 액세스합니다.
+
+1. AEM as a Cloud Service에 대한 프로덕션 작성자 인스턴스 를 클릭합니다.
+   ![AEM as a Cloud Service의 제품 프로필](assets/aem-cloud-service-instances.png)
+
+   Admin Console은 AEM as a Cloud Service에 대한 두 개의 제품 프로필(관리자 및 사용자)을 표시합니다.
+1. 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]** 사용자를 제품 프로필에 추가합니다.
+   ![사용자 제품 프로필](assets/aem-cs-user-product-profile.png)
+
+1. 클릭 **[!UICONTROL 저장]** 변경 내용을 저장합니다.
+
+## Experience Manager Assets 사용자 {#experience-manager-assets-users}
+
+Experience Manager Assets 사용자는 AEM as a Cloud Service에서 사용할 수 있도록 Content Hub에서 자산을 승인할 수 있습니다.
+
+Experience Manager Assets 사용자를 구성하려면 다음 작업을 수행하십시오.
 
 1. Admin Console의 제품 목록에서 Experience Manager Assets 제품 이름을 클릭하여 AEM as a Cloud Service 제품 프로필에 액세스합니다.
 
@@ -157,7 +172,7 @@ Admin Console을 사용하여 적절한 사용자를 추가한 후 다음 링크
 
    >[!NOTE]
    >
-   > 에 추가할 필요는 없습니다. [Content Hub 제품 프로필](#onboard-content-hub-consumer-users) 에셋 배포 역할용.
+   > 에 추가할 필요는 없습니다. [Content Hub 제품 프로필](#onboard-content-hub-users) Experience Manager Assets 사용자용
 
 
 

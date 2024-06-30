@@ -1,9 +1,9 @@
 ---
 title: Content Hub 사용자 인터페이스 구성
 description: Content Hub 사용자 인터페이스 구성
-source-git-commit: 85ccd23df4ac320d6da37c54b72f0f93916e65a1
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1096'
 ht-degree: 4%
 
 ---
@@ -29,7 +29,7 @@ Experience Manager Assets을 사용하면 관리자가 Content Hub 사용자 인
 
 ## 사전 요구 사항 {#prerequisites-configuration-ui}
 
-[Content Hub 관리자](/help/assets/deploy-content-hub.md#step-3-onboard-content-hub-administrator) 는 Content Hub에 자산을 추가할 수 있으며 조직 내의 다른 사용자에 대한 구성 옵션을 설정할 수도 있습니다.
+[Content Hub 관리자](/help/assets/deploy-content-hub.md#step-3-onboard-content-hub-administrator) 는 조직 내의 다른 사용자에 대한 구성 옵션을 설정할 수 있습니다.
 
 ## Content Hub의 구성 옵션 액세스 {#access-configuration-options-content-hub}
 

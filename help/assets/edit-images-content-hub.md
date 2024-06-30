@@ -1,9 +1,9 @@
 ---
 title: Adobe Express을 사용하여 Content Hub에서 이미지 편집
 description: Adobe Express을 사용하여 Content Hub에서 이미지 편집
-source-git-commit: 52166c1983218d619c416b4c095e8954e3010dc5
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '390'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ Content Hub을 사용하면 Adobe Express으로 새 콘텐츠를 만들 수 있�
 
 ## 사전 요구 사항 {#prereqs-edit-image-content-hub}
 
-Adobe Express 및 액세스 권한 [제출 권한이 있는 Content Hub asset 소비자 사용자](/help/assets/deploy-content-hub.md#onboard-content-hub-consumer-users-submission-rights) Content Hub을 사용하여 이미지를 편집할 수 있습니다.
+Adobe Express 및 액세스 권한 [자산을 새 변형으로 리믹스할 수 있는 권한이 있는 Content Hub 사용자](/help/assets/deploy-content-hub.md#onboard-content-hub-users-remix-assets) Content Hub을 사용하여 이미지를 편집할 수 있습니다.
 
 >[!NOTE]
 >

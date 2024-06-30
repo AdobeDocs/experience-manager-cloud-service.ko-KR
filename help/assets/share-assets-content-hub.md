@@ -2,9 +2,9 @@
 title: 에서 Assets 공유 [!DNL the Content Hub]
 description: 에서 Assets 공유 [!DNL the Content Hub]
 role: User
-source-git-commit: e20556531a82e42354b642955488bf14b83dab5e
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '454'
 ht-degree: 1%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 1%
 ![에셋 배너 이미지 공유](assets/share-assets-banner.png)
 
 링크를 통해 에셋을 공유하는 것은 리소스를 사용할 수 있는 편리한 방법입니다. [!DNL the Content Hub] 사용자. 이 기능을 사용하면 인가된 사용자가 공유된 에셋에 액세스하고 다운로드할 수 있습니다. 공유 링크에서 에셋을 다운로드할 때 [!DNL the Content Hub] 는 빠르고 중단 없는 다운로드를 제공하는 비동기 서비스를 사용합니다.
+
+## 사전 요구 사항 {#prerequisites}
+
+[Content Hub 사용자](deploy-content-hub.md#onboard-content-hub-users) 은 이 문서에서 언급한 작업을 수행할 수 있습니다.
 
 ## 단일 자산 공유 {#share-a-single-asset}
 

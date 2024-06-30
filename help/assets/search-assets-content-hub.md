@@ -2,9 +2,9 @@
 title: Content Hub에서 에셋 검색
 description: 에서 에셋을 검색하는 방법 알아보기 [!DNL Content Hub]
 role: User
-source-git-commit: 15a266ccb6e4117c769d775a5f579fba943389bf
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 ![에셋 배너 이미지 공유](assets/search.png)
 
 저장소에 에셋이 많으면 적절한 에셋을 검색하는 데 시간이 오래 걸립니다. [!DNL The Content Hub] search는 승인된 에셋을 찾아 컬렉션 다운로드, 공유 또는 만들기와 같은 추가 작업을 수행할 수 있는 기능을 제공합니다. 텍스트 기반 검색 수행, 필터 사용, 태그 또는 스마트 태그별 검색 수행, 특정 파일 형식 검색 등과 같은 다양한 기능을 사용하여 검색 결과 범위를 좁힐 수 있습니다.
+
+## 사전 요구 사항 {#prerequisites}
+
+[Content Hub 사용자](deploy-content-hub.md#onboard-content-hub-users) 은 이 문서에서 언급한 작업을 수행할 수 있습니다.
 
 ## 검색할 수 있는 항목  {#what-you-can-search}
 

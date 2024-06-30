@@ -2,9 +2,9 @@
 title: Content Hub에서 자산 통찰력 보기
 description: 에서 자산 통찰력을 보는 방법 알아보기 [!DNL Content Hub]
 role: User
-source-git-commit: 788ed1189b21392bd399f7bdee888a3b5e1da117
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 ![Assets 인사이트](assets/asset-insights-banner.jpg)
 
 [!DNL Content Hub] 는 마케팅 캠페인, 채널 및 다양한 지역에서 사용되는 자산 사용 통계와 같이 마케팅 이해 관계자가 자주 직면하는 일반적인 문제를 해결하면서 자산에 대한 중요한 통찰력을 제공합니다. 에셋의 성능과 인기를 명확하게 이해함으로써 사용자 경험을 개선하는 데 필수적인 실행 가능한 통찰력을 제공합니다.
+
+## 사전 요구 사항 {#prerequisites}
+
+[Content Hub 사용자](deploy-content-hub.md#onboard-content-hub-users) 은 이 문서에서 언급한 작업을 수행할 수 있습니다.
 
 ## 업로드된 에셋에 대한 통계 보기{#view-statistics-for-uploaded-assets}
 

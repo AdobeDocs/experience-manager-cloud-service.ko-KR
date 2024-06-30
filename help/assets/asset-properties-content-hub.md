@@ -2,9 +2,9 @@
 title: 의 자산 속성 [!DNL the Content Hub]
 description: 에서 에셋 속성을 보고 관리하는 방법 알아보기 [!DNL Content Hub]
 role: User
-source-git-commit: e590c34c177e6b45b6a52370caa88da54b61ebc0
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '599'
 ht-degree: 8%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 8%
 * 접근성 향상 - 시스템과 사용자가 쉽게 찾을 수 있습니다.
 * 관리 용이성 - 동일한 속성 세트를 가진 에셋을 쉽게 찾고 변경 사항을 적용할 수 있습니다.
 * 완료 - 에셋이 더 많은 정보와 컨텍스트를 전달합니다.
+
+## 사전 요구 사항 {#prerequisites}
+
+[Content Hub 사용자](deploy-content-hub.md#onboard-content-hub-users) 은 이 문서에서 언급한 작업을 수행할 수 있습니다.
 
 ## 에셋의 속성 보기 {#properties-ui}
 

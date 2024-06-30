@@ -2,7 +2,7 @@
 title: 브랜드 승인 자산을에 업로드 [!DNL Content Hub]
 description: 브랜드 승인 에셋을 Content Hub에 업로드하는 방법을 알아봅니다.
 role: User
-source-git-commit: 92c4cd64503653c5d9248c2c3f6952100b03ff86
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Content Hub을 사용하면 에셋 검색을 더욱 향상시킬 수 있습니�
 
 ## 사전 요구 사항 {#prerequisites-add-assets}
 
-[제출 권한이 있는 Content Hub asset 소비자 사용자](/help/assets/deploy-content-hub.md#onboard-content-hub-consumer-users-submission-rights) Content Hub에 에셋을 업로드할 수 있습니다.
+[에셋을 추가할 수 있는 권한이 있는 Content Hub 사용자](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) Content Hub에 에셋을 업로드할 수 있습니다.
 
 ## 로컬 파일 시스템에서 Content Hub에 자산 추가 {#add-assets-local-file-system}
 
