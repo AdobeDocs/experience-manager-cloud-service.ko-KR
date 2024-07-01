@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: fd687498a8c72bf5d47b7b97aadf22d7d1e8dd2b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '649'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 96%
 
 #### Forms
 
-1. 사용자가 보다 큰 AEM Forms SDK 버전을 다운로드하는 경우 `AEM Forms add-on v2024.05.04.00-240400`, 배치 파일이 Docker 서비스를 시작하지 못했습니다. 이 문제를 해결하려면 다음 작업을 수행하십시오.
+1. 사용자가 `AEM Forms add-on v2024.05.04.00-240400` 이후 버전의 AEM Forms SDK를 다운로드하면 배치 파일이 Docker 서비스를 시작하지 못합니다. 이 문제를 해결하려면 다음 작업을 수행하십시오.
    1. [폴더](/help/forms/assets/sdk_hotfix.zip)를 다운로드합니다.
    1. 다운로드한 폴더에서 콘텐츠를 추출하고 `sdk.sh` 및 `sdk.bat` 파일을 복사합니다.
    1. AEM Forms SDK의 기존 `sdk.sh` 및 `sdk.bat` 파일을 새 파일로 바꿉니다.
