@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 379e5230d27be135b5862cdbfa35abc612f5ca57
 workflow-type: tm+mt
 source-wordcount: '5143'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -626,7 +626,7 @@ ht-degree: 97%
    + 개요 {#forms-overview}
       + [소개](/help/forms/home.md)
       + [주요 Adobe Experience Manager Forms 혁신 사항](/help/forms/latest-innovations.md)
-      + [EA(조기 액세스) 기능](/help/forms/early-access-ea-features.md)
+      + [얼리 액세스(EA) 기능](/help/forms/early-access-ea-features.md)
       + [주요 변경 사항](/help/forms/notable-changes.md)
       + [아키텍처](/help/forms/aem-forms-cloud-service-architecture.md)
       + [자주 묻는 질문](/help/forms/faq.md)
