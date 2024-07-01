@@ -5,9 +5,9 @@ exl-id: 29cf9548-e413-4e4f-b233-d6bb04918b22
 feature: Release Information
 role: Admin
 source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1322'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -128,7 +128,7 @@ Assets 보기에서는 이제 [다중 값 텍스트 및 드롭다운 목록 속�
 
 * [양식 데이터 모델에 대한 향상된 인증 방법](/help/forms/configure-data-sources.md): AEM Forms를 호환되는 데이터 소스와 연결하기 위한 클라이언트 자격 증명 기반 인증을 도입하여 보안 경험을 강화합니다. 이 향상된 기능을 통해 가장 또는 사용자 로그인을 사용하지 않고도 데이터 보호 기능을 강화합니다.
 
-* [반복 가능한 섹션으로 적응형 양식 만들기](/help/forms/create-forms-repeatable-sections.md): 이제 적응형 양식 기반 핵심 구성 요소에서 [아코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [패널](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) 및 [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 구성 요소를 만들어 반복 가능한 섹션을 만들 수 있습니다.
+* [반복 가능한 섹션으로 적응형 양식 만들기](/help/forms/create-forms-repeatable-sections.md): 이제 적응형 양식 기반 핵심 구성 요소에서 [아코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [패널](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) 및 [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 구성 요소를 만들어 반복 가능한 섹션을 만들 수 있습니다.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 

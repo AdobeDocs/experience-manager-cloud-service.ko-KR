@@ -5,9 +5,9 @@ exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
 feature: Release Information
 role: Admin
 source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '896'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Experience Manager Assets는 이제 이미지 스마트 태그에 대해 향상�
 
 * **[Headless 양식용 React 구성 요소](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: 이제 기본 제공 React 구성 요소를 사용하여 Headless 적응형 양식 렌디션을 미리 보고 사용자 정의할 수 있습니다. 이러한 구성 요소는 스타일 지정을 위해 적응형 양식 핵심 구성 요소의 BEM 클래스를 사용하므로 특정 요구 사항에 따라 형태를 쉽게 사용자 정의할 수 있습니다.
 
-* [**반복 가능한 섹션으로 적응형 양식 만들기**](/help/forms/create-forms-repeatable-sections.md): 이제 [아코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [패널](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) 및 [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 구성 요소에 기반한 반복 가능 적응형 양식을 만들어 여러 데이터 레코드 캡처에 사용할 수 있습니다. 이러한 반복 가능한 섹션을 사용하면 여러 데이터 항목을 쉽게 제공할 수 있습니다. 필요한 데이터 인스턴스를 미리 알 수 없는 경우에 유용합니다. 양식 작성기에서 섹션을 쉽게 추가하거나 제거할 수 있으므로, 양식을 다양한 데이터 입력 시나리오에 맞게 조정하고 동일한 데이터 레코드의 여러 항목 수집을 단순화할 수 있습니다.
+* [**반복 가능한 섹션으로 적응형 양식 만들기**](/help/forms/create-forms-repeatable-sections.md): 이제 [아코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [패널](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) 및 [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 구성 요소에 기반한 반복 가능 적응형 양식을 만들어 여러 데이터 레코드 캡처에 사용할 수 있습니다. 이러한 반복 가능한 섹션을 사용하면 여러 데이터 항목을 쉽게 제공할 수 있습니다. 필요한 데이터 인스턴스를 미리 알 수 없는 경우에 유용합니다. 양식 작성기에서 섹션을 쉽게 추가하거나 제거할 수 있으므로, 양식을 다양한 데이터 입력 시나리오에 맞게 조정하고 동일한 데이터 레코드의 여러 항목 수집을 단순화할 수 있습니다.
 
 
 ### [!DNL Forms]에서 사용할 수 있는 프리릴리스 기능 {#pre-release-features-available-in-forms-channel}
