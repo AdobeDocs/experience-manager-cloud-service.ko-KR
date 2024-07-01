@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: 의 최신 릴리스 정보 [!DNL Adobe Experience Manager] As a Cloud Service
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 9d0ef963dfe2d81da09a7195540de87245e71a67
+source-git-commit: 379e5230d27be135b5862cdbfa35abc612f5ca57
 workflow-type: tm+mt
-source-wordcount: '1932'
-ht-degree: 42%
+source-wordcount: '1958'
+ht-degree: 41%
 
 ---
 
@@ -241,6 +241,14 @@ Adobe Experience Manager Guides 최신 릴리스의 새로운 기능 및 향상�
 ## 마이그레이션 도구 {#migration-tools}
 
 [여기](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)에서 마이그레이션 도구의 전체 목록을 찾을 수 있습니다.
+
+## Universal Editor {#universal-editor}
+
+범용 편집기 릴리스의 전체 목록을 찾을 수 있습니다 [여기](/help/release-notes/universal-editor/current.md).
+
+## 변형 생성 {#generate-variations}
+
+변형 생성 릴리스의 전체 목록을 찾을 수 있습니다 [여기](/help/generative-ai/release-notes-generate-variations.md).
 
 ## Experience Cloud 릴리스 정보 {#experience-cloud}
 

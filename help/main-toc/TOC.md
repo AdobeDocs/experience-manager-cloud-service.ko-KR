@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1989b546c495307440690f7e3510619112bdcc29
+source-git-commit: 379e5230d27be135b5862cdbfa35abc612f5ca57
 workflow-type: tm+mt
-source-wordcount: '5132'
-ht-degree: 98%
+source-wordcount: '5143'
+ht-degree: 97%
 
 ---
 
@@ -182,7 +182,9 @@ ht-degree: 98%
    + Experience Manager 강화 커넥터용 Workfront 릴리스 정보{#workfront}
       + [Experience Manager 강화 커넥터용 Workfront 최신 릴리스 정보](/help/assets/release-notes-enhanced-connector-workfront.md)
    + 변형 생성 릴리스 정보 {#generate-variations}
-      + [변형 생성 최신 릴리스 정보](/help/generative-ai/release-notes-generate-variations.md)
+      + [변형 생성을 위한 최신 릴리스 정보](/help/generative-ai/release-notes-generate-variations.md)
+   + 유니버설 편집기의 릴리스 정보 {#univeral-editor}
+      + [유니버설 편집기의 최신 릴리스 정보](/help/release-notes/universal-editor/current.md)
    + [새로운 기능](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service의 주요 변경 사항](/help/release-notes/aem-cloud-changes.md)
    + [사용 중단되거나 제거된 기능 및 API](/help/release-notes/deprecated-removed-features.md)
