@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: fd687498a8c72bf5d47b7b97aadf22d7d1e8dd2b
-workflow-type: ht
-source-wordcount: '649'
-ht-degree: 100%
+source-git-commit: 90b4cf269fc8be36d90f398d1696fc40f89f5142
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 87%
 
 ---
 
@@ -52,6 +52,15 @@ ht-degree: 100%
 * SCRNS-4194: Google Guava API에 대한 종속성이 제거됩니다.
 * SCRNS-4360: 채널용 콘텐츠 공급자에서 관리자가 아닌 사용자를 위한 게시 관리 및 빠른 게시 버튼이 누락됩니다.
 * SCRNS-4323: screens.html에서 실행이 숨겨지거나 비활성화됩니다.
+
+#### Forms
+
+* FORMS-14844: 적응형 Forms은 reCAPTCHA 확인에 실패하더라도 양식을 제출할 수 있습니다.
+* FORMS-14984: 제출된 데이터에 &quot;submitMetaData&quot;가 없는 경우 CAPTCHA가 있는 Forms에서 유효성 검사를 건너뜁니다.
+* FORMS-14477: 날짜 선택기 확인에서 규칙 편집기의 &quot;다음 이후&quot; 및 &quot;다음 이전&quot; 옵션이 작동하지 않습니다.
+* FORMS-14019: 규칙 편집기의 &quot;서비스 호출&quot; 기능이 유니버설 편집기에서 작동하지 않습니다.
+* FORMS-14336: 양식 필드를 선택하지 않으면 편집기가 전체 양식 요소에 포커스를 두고 열려야 합니다.
+* FORMS-15061: 로더 서클은 규칙 편집기에서 서비스 호출 옵션을 사용할 때 무기한 유지됩니다.
 
 ### 알려진 문제 {#known-issues-16799}
 
