@@ -1,12 +1,12 @@
 ---
 title: AEM as a Cloud Service에 대한 로그 전달
-description: AEM에서 Splunk 및 기타 로깅 공급업체로의 로그 전달에 대해 as a Cloud Service으로 알아보기
+description: AEM as a Cloud Service의 Splunk 및 기타 로깅 공급업체에 로그를 전달하는 방법에 대해 알아봅니다
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e007f2e3713d334787446305872020367169e6a2
+source-git-commit: 29d2a759f5b3fdbccfa6a219eebebe2b0443d02e
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1278'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 로그 전달은 Git에서 구성을 선언하고 Cloud Manager 구성 파이프라인을 통해 프로덕션(샌드박스가 아닌) 프로그램의 개발, 스테이지 및 프로덕션 환경 유형에 배포하여 셀프서비스 방식으로 구성됩니다.
 
-AEM 및 Apache/Dispatcher 로그를 전용 이그레스 IP와 같은 AEM 고급 네트워킹 인프라를 통해 라우팅하는 옵션이 있습니다.
+AEM 및 Apache/Dispatcher 로그를 전용 이그레스 IP와 같은 AEM의 고급 네트워킹 인프라를 통해 라우팅하는 옵션이 있습니다.
 
 로깅 대상으로 전송된 로그와 관련된 네트워크 대역폭은 조직의 네트워크 I/O 사용의 일부로 간주됩니다.
 
@@ -69,7 +69,7 @@ AEM 및 Apache/Dispatcher 로그를 전용 이그레스 IP와 같은 AEM 고급 
 
    다음 **종류** 매개 변수는 다음으로 설정해야 합니다. `LogForwarding` 버전은 1인 스키마 버전으로 설정해야 합니다.
 
-   구성의 토큰(예: `${{SPLUNK_TOKEN}}`)는 비밀을 나타내며 Git에 저장해서는 안 됩니다. 대신 Cloud Manager로 선언합니다.  [환경 변수](/help/implementing/cloud-manager/environment-variables.md) 유형 **비밀**. 다음을 선택하십시오. **모두** 적용된 서비스 필드의 드롭다운 값으로, 로그를 작성자, 게시 및 미리보기 계층에 전달할 수 있습니다.
+   구성의 토큰(예: `${{SPLUNK_TOKEN}}`)는 비밀을 나타내며 Git에 저장해서는 안 됩니다. 대신 Cloud Manager으로 선언하십시오.  [환경 변수](/help/implementing/cloud-manager/environment-variables.md) 유형 **비밀**. 다음을 선택하십시오. **모두** 적용된 서비스 필드의 드롭다운 값으로, 로그를 작성자, 게시 및 미리보기 계층에 전달할 수 있습니다.
 
    추가 정보를 포함하여 CDN 로그와 AEM 로그(Apache/Dispatcher 포함) 간에 다른 값을 설정할 수 있습니다 **cdn** 및/또는 **aem** 다음 이후 차단 **기본값** 블록입니다. 여기서 속성은 다음에 정의된 속성을 재정의할 수 있습니다. **기본값** 블록, 활성화된 속성만 필요합니다. 아래 예제에서 보듯이 CDN 로그에 대해 다른 Splunk 인덱스를 사용하는 것이 사용 사례일 수 있습니다.
 
@@ -199,12 +199,16 @@ data:
       enabled: true       
       host: "http-intake.logs.datadoghq.eu"
       token: "${{DATADOG_API_KEY}}"
+      tags:
+         tag1: value1
+         tag2: value2
       
 ```
 
 고려 사항:
 
 * 특정 클라우드 공급자와의 통합 없이 API 키를 만듭니다.
+* 태그 속성은 선택 사항입니다.
 
 
 ### Elasticsearch 및 OpenSearch {#elastic}
@@ -221,6 +225,7 @@ data:
       host: "example.com"
       user: "${{ELASTICSEARCH_USER}}"
       password: "${{ELASTICSEARCH_PASSWORD}}"
+      pipeline: "ingest pipeline name"
 ```
 
 고려 사항:
@@ -228,6 +233,15 @@ data:
 * 자격 증명의 경우 계정 자격 증명이 아닌 배포 자격 증명을 사용해야 합니다. 다음은 이 이미지와 유사할 수 있는 화면에서 생성된 자격 증명입니다.
 
 ![탄력적인 배포 자격 증명](/help/implementing/developing/introduction/assets/ec-creds.png)
+
+* 선택적 파이프라인 속성은 로그 항목을 적절한 인덱스로 라우팅하도록 구성할 수 있는 Elasticsearch 또는 OpenSearch 수집 파이프라인의 이름으로 설정되어야 합니다. 파이프라인의 프로세서 유형을 로 설정해야 합니다. *script* 스크립트 언어는 다음으로 설정해야 합니다. *고통 없이*. 다음은 aemaccess_dev_26_06_2024와 같은 인덱스로 로그 항목을 라우팅하는 샘플 스크립트 스니펫입니다.
+
+```
+def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
+def sourceType = ctx._index;
+def date = new SimpleDateFormat('dd_MM_yyyy').format(new Date());
+ctx._index = sourceType + "_" + envType + "_" + date;
+```
 
 ### HTTPS {#https}
 
@@ -304,7 +318,7 @@ data:
 
 ## 로그 항목 형식 {#log-formats}
 
-일반 참조 [기록 문서](/help/implementing/developing/introduction/logging.md) 각 로그 유형의 형식(CDN 로그 및 Apache/Dispatcher를 포함한 AEM 로그)에 대해 설명합니다.
+일반 참조 [기록 문서](/help/implementing/developing/introduction/logging.md) 각 로그 유형의 형식용(CDN 로그 및 Apache/Dispatcher을 포함한 AEM 로그)
 
 여러 프로그램 및 환경의 로그를 동일한 로깅 대상으로 전달할 수 있으므로 로깅 문서에 설명된 출력 외에 각 로그 항목에는 다음 속성이 포함됩니다.
 
