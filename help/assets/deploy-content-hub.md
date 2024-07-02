@@ -2,9 +2,9 @@
 title: 배포 [!DNL Content Hub]
 description: Content Hub을 배포하고 활성화하고 다양한 유형의 권한을 가진 사용자에게 액세스를 제공하는 방법(자산 업로드, Adobe Express 사용자)과 사용자에게 관리자 권한을 제공하는 방법에 대해 알아봅니다.
 role: Admin
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+source-git-commit: 0d340508823be6a2c6c2beb28c17ddfb2bf6b790
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
@@ -50,6 +50,11 @@ Content Hub 포털에 액세스하려면 먼저 관리자가 Cloud Manager을 �
 1. **[!UICONTROL 업데이트]**&#x200B;를 클릭합니다.
 
 이제 Experience Manager Assetsas a Cloud Service 에 대해 Content Hub이 활성화됩니다.
+
+>[!NOTE]
+>
+>최대 250명의 Content Hub 사용자와 Content Hub에 액세스하고 사용할 수 있습니다. 추가 질문이 있는 경우 Adobe 담당자에게 문의하십시오.
+
 
 Experience Manager Assets을 처음 사용하는 경우 **[!UICONTROL 프로그램 추가]** 그런 다음 프로그램 세부 사항(프로그램 이름, 프로덕션용 설정)을 입력하고 **[!UICONTROL 계속]**. 그런 다음 을(를) 선택할 수 있습니다 **[!UICONTROL Assets]** 및 **[!UICONTROL Content Hub]** 다음에서 **[!UICONTROL 솔루션 및 추가 기능]** 탭.
 
