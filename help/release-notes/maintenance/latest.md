@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 90b4cf269fc8be36d90f398d1696fc40f89f5142
+source-git-commit: 3a4dd9f1d769a9c9da12fdd8febfef481112d18c
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 87%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -71,10 +71,10 @@ ht-degree: 87%
 
 #### Forms
 
-1. 사용자가 `AEM Forms add-on v2024.05.04.00-240400` 이후 버전의 AEM Forms SDK를 다운로드하면 배치 파일이 Docker 서비스를 시작하지 못합니다. 이 문제를 해결하려면 다음 작업을 수행하십시오.
-   1. [폴더](/help/forms/assets/sdk_hotfix.zip)를 다운로드합니다.
-   1. 다운로드한 폴더에서 콘텐츠를 추출하고 `sdk.sh` 및 `sdk.bat` 파일을 복사합니다.
-   1. AEM Forms SDK의 기존 `sdk.sh` 및 `sdk.bat` 파일을 새 파일로 바꿉니다.
+* AEM SDK를 설치하고 를 추가할 때 `AEM Forms add-on v2024.05.04.00-240400`, 도커 서비스를 시작할 수 없습니다. 로컬 개발 환경에서 기록 문서를 생성하려면 도커 서비스가 필요합니다. 문제를 해결하려면 다음을 수행하십시오.
+   1. 다운로드 [핫픽스](/help/forms/assets/sdk_hotfix.zip). 핫픽스를 다운로드할 때 `.zip` 폴더가 다운로드되었습니다.
+   1. 다운로드한 핫픽스를 폴더에 추출합니다.
+   1. 이전 항목 바꾸기 `sdk.sh` 및 `sdk.bat` 2단계에서 추출한 폴더에 최신 파일이 있는 파일.
 
 ### 변경 사항 공지 {#change-notice-16799}
 
