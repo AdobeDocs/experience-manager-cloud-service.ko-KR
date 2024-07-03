@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: f4b2ea5dac880738e6412541f06b85a6a83ccf40
+source-git-commit: 9303ecadea38d83bd71ed0d440067bae5c419940
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 79%
+source-wordcount: '944'
+ht-degree: 17%
 
 ---
 
@@ -15,79 +15,94 @@ ht-degree: 79%
 
 다음 섹션에서는 Experience Manager as a Cloud Service 현재 유지 관리 릴리스의 기술 릴리스 정보에 대해 간략히 소개합니다.
 
-## 릴리스 16799 {#release-16799}
+## 릴리스 16971 {#release-16971}
 
-2024년 6월 18일에 릴리스된 유지 관리 릴리스 16799의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이전 유지 관리 릴리스는 릴리스 16544이었습니다.
+다음은 2024년 7월 3일에 공개적으로 릴리스된 유지 보수 릴리스 16971에 대한 지속적인 개선 사항을 요약했습니다. 이전 유지 관리 릴리스는 릴리스 16799.
 
-이 유지 관리 릴리스(2024.6.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
+2024.7.0 기능 활성화는 이 유지 관리 릴리스에 대한 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
 
-### 개선 사항 {#enhancements-16799}
+### 개선 사항 {#enhancements-16971}
 
-* ASSETS-31977: 자산 이동, 복사 및 삭제 작업이 개선되었습니다.
-* ASSETS-33618: Dynamic Media의 비디오에 대한 자동 트랜스크립션 및 번역 기능입니다.
-* ASSETS-35185: ContentHub 및 DM에 대한 승인 작업을 수행했으며 damAssetLucene 속성에 속성이 추가되었습니다.
-* ASSETS-35533: damAssetLucene 색인에 DRM 및 CAI 속성이 추가되었습니다.
-* ASSETS-37280: 소스 자막(vtt)이 아직 처리 중인 경우 번역을 위한 작업이 순차적으로 처리됩니다.
-* ASSETS-37559: 자산 삭제 이벤트가 개선되었습니다.
-* ASSETS-37723: 자산 게시 이벤트를 구현합니다.
-* ASSETS-37724: 자산 게시 취소 이벤트를 구현합니다.
-* ASSETS-38614: 공유 링크 UI가 향상되었습니다.
-* ASSETS-39601: Asset Live Copy 이름에 정규 표현식 검사를 자동으로 적용합니다.
-* ASSETS-39454: 빠른 시작의 뷰어가 2024.5.0으로 업그레이드되었습니다.
-* CNTBF-184: 콘텐츠 백플로우에서 `/conf` 아래 경로가 지원됩니다.
+* SITES-22948: AEM CS용 Foundation 콘텐츠에서 상거래 참조를 제거합니다.
+* SITES-22141 [컨텐츠 조각] OnRC 이후 CFM ModelChangeRepositoryImpl에서 SegmentNotFoundException이 발생했습니다.
+* SITES-21893: 작성자 인스턴스의 이미지 자르기 문제
+* SITES-21788 [컨텐츠 조각] 모델에 대해 uiSchema가 활성화되면 CF 및 CF 모델 편집기에 참고 사항을 표시합니다.
+* SITES-21688: MSM 롤아웃은 라이브 카피 페이지의 XF(경험 조각) 경로를 업데이트하지 않습니다.
+* SITES-21659: 모델 리소스를 생성/수정/복제하는 사용자의 전체 이름을 반환합니다.
+* SITES-21609: 콘텐츠 조각을 한 모델에서 다른 모델로 마이그레이션하기 위한 OpenAPI 엔드포인트.
+* SITES-21598 [API 열기] CFM 만들기 - 지정된 구성 경로가 존재하지 않는 경우 오류를 반환합니다.
+* SITES-21491 [API 열기] CF PATCH 끝점은 필드 수준에서 라이브 관계를 준수해야 합니다.
+* SITES-21434 [API 열기] CF GET 끝점은 필드 수준에서 라이브 관계를 준수해야 합니다.
+* SITES-21415: CF 편집기 - UUID 참조를 지원합니다.
+* SITES-21326 [API 열기] 콘텐츠 조각에 대한 참조 존재에 대한 정보를 제공합니다.
+* SITES-21310 [API 열기] 번역 API 응답에 콘텐츠 조각의 ID를 추가합니다.
+* SITES-20859: CF Open API - 경로로 조각을 검색할 때 참조를 반환합니다.
+* SITES-20687 [API 열기] 일괄 처리 상태 검색을 위한 끝점입니다.
+* SITES-20657 [API 열기] 문자열을 바꿀 때 match 단어 전체에 옵션을 제공합니다. `FindAndReplace` 엔드포인트.
+* SITES-20587 [API 열기] 만들기 `COPY` 콘텐츠 조각의 종단점입니다.
+* SITES-20584 [API 열기] 참조 검색을 최적화합니다.
+* SITES-20308 [API 열기] API에 대한 일괄 처리를 활성화합니다.
+* SITES-19976 [API 열기] 조건부 필드에 대한 일반 UI 스키마.
+* SITES-19556 [컨텐츠 조각] 모델을 편집할 때 uiSchema가 존재하는 경우 업데이트합니다.
+* SITES-18056 [API 열기] 콘텐츠 조각을 미리보기에 게시할 때 참조를 포함합니다.
+* SITES-16898 [스키마] 콘텐츠 조각을 한 모델에서 다른 모델로 마이그레이션하기 위한 OpenAPI 엔드포인트.
+* SITES-16609: 목록 실행 끝점입니다.
+* SITES-16606: Launch 끝점을 만듭니다.
+* SITES-21617 [Xwalk] 페이지 속성/메타데이터를 UE 내에서 편집할 수 있게 만듭니다.
+* SITES-19614 [Xwalk] 스프레드시트 편집기 페이지 매김 및 무한 스크롤입니다.
+* SITES-22163 [Xwalk] Edge Delivery Sites의 게시 계층에서 제공되는 콘텐츠에 대한 지원이 개선되었습니다.
+* SITES-22109 [Xwalk] 리치 텍스트 마크업 사후 처리 처리가 개선되었습니다.
+* SITES-22035 [Xwalk] MSM 및 론치 처리가 개선되었습니다.
+* SITES-21839 [Xwalk] Edge Delivery에서 제공하지 않는 콘텐츠에 대한 경로 매핑 및 정리 기능이 개선되었습니다.
 
-### 해결된 문제 {#fixed-issues-16799}
+### 해결된 문제 {#fixed-issues-16971}
 
-* ASSETS-37335: 필터에서 검색 패널을 편집하면 모든 상자가 선택 취소됩니다.
-* ASSETS-38069: 타임라인 필터 선택에 대한 AEM DAM PDF 미리보기 문제가 발생합니다.
-* ASSETS-38215: 기업용 AEM as a Cloud Service 구독에서 Adobe Stock 라이선스 버튼이 회색으로 표시됩니다.
-* ASSETS-38578: 자산 링크 공유 보고서의 하이퍼링크가 잘못되었습니다.
-* ASSETS-38678: 컬렉션 세부 사항에서 보기 설정이 손상되었습니다.
-* ASSETS-39071: 원본 변환 MIME 유형이 null인 경우 웹 최적화 게재에서 예외가 발생할 수 있습니다.
-* ASSETS-39316: 컬렉션에서 이름별 정렬이 작동하지 않습니다.
-* ASSETS-39377: 원격 API에서 배압을 수신하면 OneDrive에서 일괄 가져오기가 실패할 수 있습니다.
-* ASSETS-39428: 저작권 관리 UI에 렌더링 문제가 발생합니다.
-* CQ-4357150: cq-content-sync 번들의 Guava.
-* GRANITE-52573: 이중 슬래시 `//`가 포함된 요청은 상태 코드 400으로 거부됩니다.
-* SCRNS-4194: Google Guava API에 대한 종속성이 제거됩니다.
-* SCRNS-4360: 채널용 콘텐츠 공급자에서 관리자가 아닌 사용자를 위한 게시 관리 및 빠른 게시 버튼이 누락됩니다.
-* SCRNS-4323: screens.html에서 실행이 숨겨지거나 비활성화됩니다.
+* CQ-4356898: [번역] 링크가 비정상적으로 많이 포함된 CF에 대한 outOfMemory 오류입니다.
+* CQ-4357055: [번역] Rest API를 사용하여 자동 번역이 작동하지 않습니다.
+* CQ-4353931: [번역] 누락되면 번역 소스 페이지/xf/asset에 jcr:uuid를 추가합니다.
+* CQ-4357591: [번역] Pages/XF에 대해 작동하도록 &quot;JCR:UUID 연결&quot; 워크플로우를 수정합니다.
 * FORMS-14844: 적응형 Forms은 reCAPTCHA 확인에 실패하더라도 양식을 제출할 수 있습니다.
 * FORMS-14984: 제출된 데이터에 &quot;submitMetaData&quot;가 없는 경우 CAPTCHA가 있는 Forms에서 유효성 검사를 건너뜁니다.
 * FORMS-14477: 날짜 선택기 확인에서 규칙 편집기의 &quot;다음 이후&quot; 및 &quot;다음 이전&quot; 옵션이 작동하지 않습니다.
 * FORMS-14019: 규칙 편집기의 &quot;서비스 호출&quot; 기능이 유니버설 편집기에서 작동하지 않습니다.
 * FORMS-14336: 양식 필드를 선택하지 않으면 편집기가 전체 양식 요소에 포커스를 두고 열려야 합니다.
-* FORMS-15061: 로더 서클은 규칙 편집기에서 서비스 호출 옵션을 사용할 때 무기한 유지됩니다.
+* FORMS-15061: 로더 서클은 규칙 편집기에서 서비스 옵션 호출 을 사용할 때 무기한 유지됩니다.
+* SITES-22457: 깊지 않은 론치를 홍보해도 소스 콘텐츠는 업데이트되지 않습니다.
+* SITES-22748 [컨텐츠 조각] 콘텐츠 조각 업데이트 작업에 대한 오류 처리 개선
+* SITES-22349 [컨텐츠 조각] 빈 여러 줄 cf-element에 대한 ContentType은 변경할 수 없습니다.
+* SITES-22343 [컨텐츠 조각] 의미 체계 유형 &quot;열거형&quot;이 손상되었습니다.
+* SITES-22194: 리디렉션을 설정한 후에 model.json이 더 이상 작동하지 않습니다.
+* SITES-21953 [API 열기] Etag는 validationStatus의 순서에 따라 변경됩니다.
+* SITES-21894 [API 열기] CF를 만들 때 상위 경로 유효성 검사를 강화합니다.
+* SITES-21887 [API 열기] POST 변형 끝점에서 잘못된 ETag가 반환되었습니다.
+* SITES-21657 [API 열기] CF 검색 경로 속성에서 유효성 검사를 개선합니다.
+* SITES-21949: 검색 API의 잘못된 커서가 500을 반환합니다.
+* SITES-20927: 검색 API는 쿼리가 누락된 경우 500을 반환합니다.
+* SITES-20544 [API 열기] oak 충돌을 방지하기 위해 게시 패키지 이름 생성을 변경합니다.
+* SITES-19710: CVE-2022-47937 - 페이지 편집기에서 org.apache.sling.commons.json의 모든 사용을 제거합니다.
+* SITES-11992 [접근성] 주석 견본 선택기 단추에 액세스 가능한 이름이 없습니다.
+* SITES-10979 [접근성] 레이블이 지속되지 않습니다.
+* SITES-10962 [접근성] 단추: 단추에 역할이 없습니다.
+* SITES-10905 [접근성] 활성 구성 요소의 상태에 3:1 명암비가 없습니다.
+* 사이트-2974:  [접근성] - 320px 너비에서 수평 스크롤링.
+* SITES-22026: AEM의 폴더 간에 경험 조각을 이동할 수 없음
+* SITES-22106: 새 콘텐츠 조각 편집기의 언어 전환 기능 문제
+* SITES-21980: UUID 기반 참조 유형에 대한 처리가 일관되지 않습니다.
+* SITES-7257: ThumbnailServlet의 NPE.
 
-### 알려진 문제 {#known-issues-16799}
+### 알려진 문제 {#known-issues-16971}
 
->[!NOTE]
-> AEM Engineering이 16461부터 시작하는 현재 AEM 릴리스에 영향을 미치는 론치 기능에 대한 회귀를 식별했습니다. 이러한 회귀로 인해 딥 페이지가 아닌 페이지를 포함하는 새 론치(새 릴리스가 적용된 후 생성됨)는 누락된 구성으로 인해 제대로 승격되지 않습니다.
-> 귀하의 환경이 영향을 받는 경우 누락된 구성을 식별하고 업데이트하는 셸 스크립트를 고객 지원 센터에서 제공합니다(내부 참조 SITES-22457).
-> 새로운 론치가 올바른 구성으로 생성되도록 보장하는 장기적인 수정 사항이 제공될 예정입니다. 그때까지 요청 시 내부 패치 릴리스도 제공됩니다.
+없음.
 
-#### Forms
-
-* AEM SDK를 설치하고 를 추가할 때 `AEM Forms add-on v2024.05.04.00-240400`, 도커 서비스를 시작할 수 없습니다. 로컬 개발 환경에서 기록 문서를 생성하려면 도커 서비스가 필요합니다. 문제를 해결하려면 다음을 수행하십시오.
-   1. 다운로드 [핫픽스](/help/forms/assets/sdk_hotfix.zip). 핫픽스를 다운로드할 때 `.zip` 폴더가 다운로드되었습니다.
-   1. 다운로드한 핫픽스를 폴더에 추출합니다.
-   1. 이전 항목 바꾸기 `sdk.sh` 및 `sdk.bat` 2단계에서 추출한 폴더에 최신 파일이 있는 파일.
-
-### 변경 사항 공지 {#change-notice-16799}
-
-* 이 릴리스에는 다음과 같은 새로운 제품 인덱스 버전이 포함되어 있습니다.
-   * **damAssetLucene-11**
-   * **조각-11**
-
-  이전 색인 버전의 사용자 정의 버전은 새 제품 색인 버전과 자동으로 병합됩니다. 병합된 버전에 추가 사용자 정의 업데이트를 적용하십시오.
+### 변경 사항 공지 {#change-notice-16971}
 
 * 2024년 9월부터 AEM as a Cloud Service는 Sling Model Exporter 프레임워크를 통해 Resource Resolver의 직렬화를 비활성화합니다. 자세한 내용은 [설명서](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)를 참조하십시오.
 
-### 사용 중단된 기능 및 API {#deprecated-16799}
+### 사용 중단된 기능 및 API {#deprecated-16971}
 
 AEM as a Cloud Service에서 더 이상 사용되지 않는 기능을 살펴보려면 [사용 중단된 기능 및 API](/help/release-notes/deprecated-removed-features.md)를 참조하십시오.
 
-### 임베드된 기술 {#embedded-tech-16799}
+### 임베드된 기술 {#embedded-tech-16971}
 
 | 기술 | 버전 | 링크 |
 |---|---|---|
