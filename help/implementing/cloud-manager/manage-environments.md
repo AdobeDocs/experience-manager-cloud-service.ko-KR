@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 9defb49b2639aa8945d1fed0332400b8ab5ced8c
 workflow-type: tm+mt
-source-wordcount: '2365'
+source-wordcount: '2377'
 ht-degree: 78%
 
 ---
@@ -61,6 +61,7 @@ ht-degree: 78%
    * [**환경 유형**&#x200B;을 선택합니다.](#environment-types)
       * 사용 가능한/사용된 환경의 수가 환경 유형 이름 뒤의 괄호 안에 표시됩니다.
    * 환경 **이름**&#x200B;을 제공합니다.
+      * 환경이 생성되면 환경 이름을 변경할 수 없습니다.
    * 환경 **설명**&#x200B;을 제공합니다.
    * **프로덕션 + 스테이징** 환경을 추가하는 경우, 프로덕션 환경과 스테이징 환경 모두에 대해 환경 이름 및 설명을 제공해야 합니다.
    * 드롭다운에서 **기본 지역**&#x200B;을 선택합니다.
@@ -203,7 +204,7 @@ Cloud Manager는 AEM as a Cloud Service 환경에 미리보기 서비스(추가 
 
 추가 게시 지역 보고에 문제가 발생하면
 
-1. 인내심을 가지세요 Cloud Manager는 지속적으로 영역 복구를 시도하며 언제든지 사용할 수 있습니다.
+1. 인내심을 가지세요 Cloud Manager은 해당 지역의 복구를 지속적으로 시도하고 언제든지 사용할 수 있습니다.
 1. 몇 시간 후에도 문제가 지속되면 추가 게시 영역을 제거하고 다시 추가하여(동일한 영역 또는 다른 영역) 전체 배포를 트리거할 수 있습니다.
 
 추가 작업을 수행하기 전에 시스템이 자체적으로 복구될 때까지 대기하는 시간은 해당 지역의 장애가 시스템에 미치는 영향에 따라 다릅니다.
