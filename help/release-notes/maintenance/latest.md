@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 3a4dd9f1d769a9c9da12fdd8febfef481112d18c
+source-git-commit: f4b2ea5dac880738e6412541f06b85a6a83ccf40
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '752'
+ht-degree: 79%
 
 ---
 
@@ -52,9 +52,6 @@ ht-degree: 0%
 * SCRNS-4194: Google Guava API에 대한 종속성이 제거됩니다.
 * SCRNS-4360: 채널용 콘텐츠 공급자에서 관리자가 아닌 사용자를 위한 게시 관리 및 빠른 게시 버튼이 누락됩니다.
 * SCRNS-4323: screens.html에서 실행이 숨겨지거나 비활성화됩니다.
-
-#### Forms
-
 * FORMS-14844: 적응형 Forms은 reCAPTCHA 확인에 실패하더라도 양식을 제출할 수 있습니다.
 * FORMS-14984: 제출된 데이터에 &quot;submitMetaData&quot;가 없는 경우 CAPTCHA가 있는 Forms에서 유효성 검사를 건너뜁니다.
 * FORMS-14477: 날짜 선택기 확인에서 규칙 편집기의 &quot;다음 이후&quot; 및 &quot;다음 이전&quot; 옵션이 작동하지 않습니다.
