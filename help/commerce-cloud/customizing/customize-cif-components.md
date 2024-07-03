@@ -1,18 +1,10 @@
 ---
 title: CIF 핵심 구성 요소 사용자 지정
 description: AEM CIF 핵심 구성 요소를 사용자 지정하는 방법을 알아봅니다. 이 튜토리얼에서는 비즈니스별 요구 사항을 충족하도록 CIF 핵심 구성 요소를 안전하게 확장하는 방법을 다룹니다. GraphQL 쿼리를 확장하여 사용자 지정 특성을 반환하고 CIF 핵심 구성 요소에 새 특성을 표시하는 방법을 알아봅니다.
-sub-product: Commerce
-topics: Development
-version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
 feature: Commerce Integration Framework
-kt: 4279
-thumbnail: customize-aem-cif-core-component.jpg
-exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
+source-git-commit: ef58cf5b216ef308cc65436f2eed2e500fb2bd96
 workflow-type: tm+mt
 source-wordcount: '2298'
 ht-degree: 1%
@@ -140,7 +132,7 @@ AEM에 표시되는 제품 및 제품 데이터는 Adobe Commerce에 저장됩�
 
 AEM 코드로 이동하기 전에 다음을 살펴보는 것이 좋습니다. [GraphQL 개요](https://devdocs.magento.com/guides/v2.4/graphql/) GraphQL IDE 사용. AEM과의 Adobe Commerce 통합은 주로 일련의 GraphQL 쿼리를 통해 수행됩니다. GraphQL 쿼리를 이해하고 수정하는 것은 CIF 핵심 구성 요소를 확장할 수 있는 주요 방법 중 하나입니다.
 
-그런 다음 GraphQL IDE를 사용하여 `eco_friendly` 제품 속성 집합에 속성이 추가되었습니다. 이 자습서의 스크린샷은 _알테어 GraphQL 클라이언트_ Google Chrome 확장 프로그램.
+그런 다음 GraphQL IDE를 사용하여 `eco_friendly` 제품 속성 집합에 속성이 추가되었습니다. 이 자습서의 스크린샷은 _알테어 GraphQL 클라이언트_ Google Chrome 확장.
 
 1. GraphQL IDE를 열고 URL을 입력합니다 `http://<commerce-server>/graphql` IDE 또는 확장의 URL 표시줄에서 을 클릭합니다.
 2. 다음 추가 [products 쿼리](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) 위치 `YOUR_SKU` 은(는) **SKU** 이전 연습에서 사용된 제품:
