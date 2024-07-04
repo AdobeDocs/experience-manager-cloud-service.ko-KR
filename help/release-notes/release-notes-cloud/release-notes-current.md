@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: 의 최신 릴리스 정보 [!DNL Adobe Experience Manager] As a Cloud Service
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 8581ff75a68c045ccfbb6a525c1e08a6ee253d52
+source-git-commit: 1566963898fb7f6999e3fad796b938128521bcce
 workflow-type: tm+mt
 source-wordcount: '1957'
 ht-degree: 41%
@@ -46,7 +46,7 @@ Have a look at the June 2024 Release Overview video for a summary of the feature
 
 **RUM(Real Use Monitoring) 데이터 서비스** {#real-use-monitoring}
 
-이제 RUM(Real Use Monitoring) 데이터 서비스를 일반적으로 사용할 수 있으므로 AEM as a Cloud Service에 대해 클라이언트측 데이터 수집을 사용할 수 있습니다. 이 서비스는 사용자 상호 작용을 보다 정확하게 반영하여 웹 사이트 참여에 대한 신뢰할 수 있는 측정을 보장합니다. 이는 고객에게 페이지 트래픽 및 성능에 대한 고급 통찰력을 제공하여 페이지 성능을 이해하고 향상시킬 수 있는 귀중한 기회를 제공합니다.
+다음 [RUM(Real Use Monitoring) 데이터 서비스](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) 는 이제 일반적으로 사용할 수 있으며, AEM as a Cloud Service에 대해 클라이언트측 데이터 수집을 활성화합니다. 이 서비스는 사용자 상호 작용을 보다 정확하게 반영하여 웹 사이트 참여에 대한 신뢰할 수 있는 측정을 보장합니다. 이는 고객에게 페이지 트래픽 및 성능에 대한 고급 통찰력을 제공하여 페이지 성능을 이해하고 향상시킬 수 있는 귀중한 기회를 제공합니다.
 
 ### 얼리 어답터 프로그램 {#sites-early-adopter}
 
