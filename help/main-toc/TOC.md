@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 4e272fe63ccdc920c58ada780a2087bba1bfcb1f
 workflow-type: tm+mt
 source-wordcount: '5149'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -182,9 +182,9 @@ ht-degree: 97%
    + Experience Manager 강화 커넥터용 Workfront 릴리스 정보{#workfront}
       + [Experience Manager 강화 커넥터용 Workfront 최신 릴리스 정보](/help/assets/release-notes-enhanced-connector-workfront.md)
    + 변형 생성 릴리스 정보 {#generate-variations}
-      + [변형 생성을 위한 최신 릴리스 정보](/help/generative-ai/release-notes-generate-variations.md)
-   + 유니버설 편집기의 릴리스 정보 {#univeral-editor}
-      + [유니버설 편집기의 최신 릴리스 정보](/help/release-notes/universal-editor/current.md)
+      + [변형 생성 최신 릴리스 정보](/help/generative-ai/release-notes-generate-variations.md)
+   + 범용 편집기 릴리스 정보 {#univeral-editor}
+      + [범용 편집기 최신 릴리스 정보](/help/release-notes/universal-editor/current.md)
    + [새로운 기능](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service의 주요 변경 사항](/help/release-notes/aem-cloud-changes.md)
    + [사용 중단되거나 제거된 기능 및 API](/help/release-notes/deprecated-removed-features.md)
@@ -562,14 +562,14 @@ ht-degree: 97%
       + [콘텐츠 FAQ의 HTTP2 게재](/help/assets/dynamic-media/http2faq.md)
       + [Flash 뷰어 서비스 종료](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML 뷰어 서비스 종료](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
-      + OpenAPI 기능이 포함된 Dynamic Media {#dynamic-media-open-apis}
+      + OpenAPI 기능 포함 Dynamic Media {#dynamic-media-open-apis}
          + [개요](/help/assets/dynamic-media-open-apis-overview.md)
-         + [에셋 승인](/help/assets/approve-assets.md)
+         + [자산 승인](/help/assets/approve-assets.md)
          + [다운스트림 애플리케이션과 통합](/help/assets/integrate-dynamic-media-open-apis.md)
-         + [자산 검색 API](/help/assets/search-assets-api.md)
-         + [배달 API](/help/assets/deliver-assets-apis.md)
-         + [에셋 전달 제한](/help/assets/restrict-assets-delivery.md)
-         + [AEM Sites과 원격 AEM Assets 통합](/help/assets/integrate-remote-approved-assets-with-sites.md)
+         + [자산 API 검색](/help/assets/search-assets-api.md)
+         + [게재 API](/help/assets/deliver-assets-apis.md)
+         + [자산 게재 제한](/help/assets/restrict-assets-delivery.md)
+         + [원격 AEM Assets를 AEM Sites와 통합](/help/assets/integrate-remote-approved-assets-with-sites.md)
          + [자주 묻는 질문](/help/assets/dynamic-media-open-apis-faqs.md)
          + [사용자 정의 도메인 구성](/help/assets/configure-custom-domain.md)
    + Assets 보기 작업 {#assets-view}
@@ -597,14 +597,14 @@ ht-degree: 97%
       + [개요](/help/assets/product-overview.md)
       + [Content Hub 배포](/help/assets/deploy-content-hub.md)
       + [Content Hub 사용자 인터페이스 구성](/help/assets/configure-content-hub-ui-options.md)
-      + [Content Hub에 브랜드 승인 에셋 업로드 또는 가져오기](/help/assets/upload-brand-approved-assets.md)
-      + [Content Hub에서 에셋 검색](/help/assets/search-assets-content-hub.md)
+      + [브랜드 승인 자산을 Content Hub로 업로드 또는 가져오기](/help/assets/upload-brand-approved-assets.md)
+      + [Content Hub에서 자산 검색](/help/assets/search-assets-content-hub.md)
       + [자산 속성](/help/assets/asset-properties-content-hub.md)
-      + [Content Hub에서 에셋 공유](/help/assets/share-assets-content-hub.md)
-      + [Content Hub을 사용하여 에셋 다운로드](/help/assets/download-assets-content-hub.md)
+      + [Content Hub에서 자산 공유](/help/assets/share-assets-content-hub.md)
+      + [Content Hub를 사용하여 자산 다운로드](/help/assets/download-assets-content-hub.md)
       + [Content Hub에서 컬렉션 관리](/help/assets/collections-content-hub.md)
-      + [Content Hub에서 Adobe Express을 사용하여 이미지 편집](/help/assets/edit-images-content-hub.md)
-      + [Content Hub의 자산 통찰력](/help/assets/insights-content-hub.md)
+      + [Content Hub에서 Adobe Express를 사용하여 이미지 편집](/help/assets/edit-images-content-hub.md)
+      + [Content Hub의 Asset Insights](/help/assets/insights-content-hub.md)
    + 모범 사례{#best-practices}
       + [모범 사례 검색](/help/assets/search-best-practices.md)
       + [메타데이터 관리 및 모범 사례](/help/assets/metadata-best-practices.md)
