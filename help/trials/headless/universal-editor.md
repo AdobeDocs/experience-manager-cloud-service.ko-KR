@@ -7,7 +7,7 @@ exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 feature: Headless
 role: Admin, User, Developer
 source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
->title="이 모듈에서는 Universal Editor를 사용하여 컨텍스트에서 콘텐츠를 맞춤화하는 방법을 배웠습니다."
+>title="이 모듈에서는 범용 편집기를 사용하여 컨텍스트에서 콘텐츠를 맞춤화하는 방법을 배웠습니다."
 >abstract=""
 
 ## 컨텍스트에서 텍스트 편집 {#edit-text}

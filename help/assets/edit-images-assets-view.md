@@ -7,13 +7,13 @@ feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
 source-git-commit: 23b43f22b62451c9d0a5460999fcd43479438d7e
 workflow-type: tm+mt
 source-wordcount: '1089'
-ht-degree: 32%
+ht-degree: 79%
 
 ---
 
 # [!DNL Assets view]에서 이미지 편집 {#edit-images-in-assets-view}
 
-Assets 보기를 사용하면 크기 조정, 배경 제거, 자르기 및 JPEG 및 PNG 형식 간 변환 등 기본 이미지 편집을 사용할 수 있습니다. 또한 Adobe Express과의 통합을 통해 고급 편집이 가능합니다. 이미지를 편집한 후 새 이미지를 새 버전으로 저장할 수 있습니다. 필요한 경우 버전 관리를 통해 나중에 원래 에셋으로 되돌릴 수 있습니다. 이미지를 편집하려면 [미리보기를 열고](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) **이미지 편집**&#x200B;을 클릭합니다.
+Assets 보기를 사용하면 크기 조정, 배경 제거, 자르기 및 JPEG 및 PNG 형식 간 변환 등 기본 이미지 편집을 사용할 수 있습니다. 또한 Adobe Express와의 통합을 통해 고급 편집을 사용할 수도 있습니다. 이미지를 편집한 후 새 이미지를 새 버전으로 저장할 수 있습니다. 필요한 경우 버전 관리를 통해 나중에 원본 자산으로 되돌릴 수 있습니다. 이미지를 편집하려면 [미리보기를 열고](https://experienceleague.adobe.com/ko/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) **이미지 편집**&#x200B;을 클릭합니다.
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ Assets 보기를 사용하면 크기 조정, 배경 제거, 자르기 및 JPEG �
 
 ## 이미지 편집 {#edit-image}
 
-링크를 사용하여 Assets 보기에 착륙합니다. - [Assets 보기](https://experience.adobe.com/#/assets) 올바른 저장소를 선택합니다. 액세스 권한을 받으려면 조직 관리자에게 문의하십시오.
+링크를 사용하여 Assets 보기에 착륙합니다. - [Assets 보기](https://experience.adobe.com/#/assets) 올바른 저장소를 선택합니다. 액세스 권한을 받으려면 귀사의 관리자에게 문의하십시오.
 추가 참조 정보는 - [Adobe Experience Manager Assets 보기 사용 시작하기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Assets 보기 사용자 인터페이스 이해](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation), 및 [Assets 사용 사례 보기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
@@ -33,14 +33,14 @@ Assets 보기를 사용하면 크기 조정, 배경 제거, 자르기 및 JPEG �
 
 ### Adobe Express을 사용하여 Assets 보기에서 이미지 편집 {#edit-image-on-assets-view-using-adobe-express}
 
-Assets 보기에 랜딩한 후 **Assets**&#x200B;을 클릭하고 이미지를 선택한 다음 을 클릭합니다 **편집** 맨 위 레일에서 새 화면에는 크기 조정, 배경 제거, 자르기 및 JPEG 및 PNG 형식 간 변환을 포함한 사용 가능한 편집 옵션이 표시됩니다.
+Assets 보기에 랜딩한 후 **Assets**&#x200B;을 클릭하고 이미지를 선택한 다음 을 클릭합니다 **편집** 맨 위 레일에서 새 화면에 크기 조정, 배경 제거, 자르기, JPEG와 PNG 포맷 간 변환 등 사용 가능한 편집 옵션이 표시됩니다.
 
 #### 이미지 크기 조정 {#resize-image-using-express}
 
 이미지 크기를 특정 크기로 조정하는 것이 일반적인 사용 사례입니다. Assets 보기를 사용하면 특정 사진 크기에 대해 미리 계산된 새로운 해상도를 제공하여 일반적인 사진 크기에 맞게 빠르게 이미지 크기를 조정할 수 있습니다. Assets 보기를 사용하여 이미지 크기를 조정하려면 아래 단계를 따르십시오.
 
-1. 클릭 **이미지 크기 조정** 왼쪽 창에서 엽니다.
-1. 크기 조정 드롭다운 목록에서 적절한 소셜 미디어 플랫폼을 선택하고 표시되는 옵션에서 이미지 크기를 선택합니다.
+1. 왼쪽 창에서 **이미지 크기 조정**&#x200B;을 클릭합니다.
+1. [크기 조정] 드롭다운 목록에서 적절한 소셜 미디어 플랫폼을 선택하고 표시되는 옵션에서 이미지 크기 조정을 선택합니다.
 1. 필요한 경우 **이미지 크기 조정** 필드를 사용하여 이미지 크기를 조정합니다.
 1. **[!UICONTROL 적용]**을 클릭하여 변경 내용을 적용합니다.
    ![Adobe Express를 사용하여 이미지 편집](assets/adobe-express-resize-image.png)
@@ -50,9 +50,9 @@ Assets 보기에 랜딩한 후 **Assets**&#x200B;을 클릭하고 이미지를 �
 
 #### 배경 제거 {#remove-background-using-express}
 
-아래에 설명된 단계를 따라 이미지에서 배경을 제거할 수 있습니다.
+아래 설명된 몇 번의 간단한 단계를 따라 이미지에서 배경을 제거할 수 있습니다.
 
-1. 클릭 **배경 제거** 왼쪽 창에서 엽니다. Experience Manager Assets에 배경이 없는 이미지가 표시됩니다.
+1. 왼쪽 창에서 **배경 제거**&#x200B;를 클릭합니다. Experience Manager Assets에 배경이 없는 이미지가 표시됩니다.
 1. **[!UICONTROL 적용]**을 클릭하여 변경 내용을 적용합니다.
    ![Adobe Express로 이미지 저장](assets/adobe-express-remove-background.png)
 
@@ -60,19 +60,19 @@ Assets 보기에 랜딩한 후 **Assets**&#x200B;을 클릭하고 이미지를 �
 
 #### 이미지 자르기 {#crop-image-using-express}
 
-임베디드 기능을 사용하여 이미지를 완벽한 크기로 간단하게 변환할 수 있습니다 [!DNL Adobe Express] 빠른 작업.
+임베드된 [!DNL Adobe Express] 빠른 작업을 사용하여 이미지를 완벽한 크기로 간단하게 변환할 수 있습니다.
 
-1. 클릭 **[!UICONTROL 이미지 자르기]** 왼쪽 창에서 엽니다.
+1. 왼쪽 창에서 **[!UICONTROL 이미지 자르기]**&#x200B;를 클릭합니다.
 2. 이미지 모퉁이의 핸들을 드래그하여 원하는 자르기를 만듭니다.
 3. **[!UICONTROL 적용]**을 클릭합니다.
    ![Adobe Express로 이미지 저장](assets/adobe-express-crop-image.png)
 잘린 이미지를 다운로드할 수 있습니다. 편집한 자산을 동일한 자산의 새 버전으로 저장하거나 새 자산으로 저장할 수 있습니다.
 
-#### 이미지 파일 형식 간 변환 {#convert-image-types-using-express}
+#### 이미지 파일 포맷 간 변환 {#convert-image-types-using-express}
 
-Adobe Express을 사용하여 JPEG 및 PNG 이미지 형식 간을 빠르게 변환할 수 있습니다. 다음 단계를 실행합니다.
+Adobe Express를 사용하여 JPEG 및 PNG 이미지 포맷 간 빠르게 변환할 수 있습니다. 다음 단계를 실행합니다.
 
-1. 클릭 **PNG에 JPEG** 또는 **PNG에서 JPEG** 왼쪽 창에서 엽니다.
+1. 왼쪽 창에서 **JPEG를 PNG로** 또는 **PNG를 JPEG로**를 클릭합니다.
    <!--![Convert to PNG with Adobe Express](/help/using/assets/adobe-express-convert-image.png)-->
 1. **[!UICONTROL 다운로드]**&#x200B;를 클릭합니다.
 
@@ -82,43 +82,43 @@ Adobe Express을 사용하여 JPEG 및 PNG 이미지 형식 간을 빠르게 변
 
 * 지원되는 최대 파일 크기: 17MB.
 
-### Adobe Express이 포함된 편집기에서 이미지 편집 {#edit-images-in-adobe-express-embedded-editor}
+### 임베드된 Adobe Express 편집기에서 이미지 편집 {#edit-images-in-adobe-express-embedded-editor}
 
-Express 권한이 있는 사용자는 Assets 보기 내에서 임베드된 Express 편집기를 사용하여 컨텐츠를 쉽게 편집하고 Adobe Firefly의 GenAI로 새 컨텐츠를 만들 수 있습니다. 이렇게 하면 컨텐츠 재사용이 향상되고 컨텐츠 속도가 빨라집니다. 또한 사전 정의된 요소를 사용하여 에셋을 멋진 모양으로 만들거나 몇 번의 클릭만으로 이미지를 편집하는 빠른 작업을 수행할 수 있습니다.
+Express 권한이 있는 사용자는 Assets 보기 내에서 임베드된 Express 편집기를 사용하여 컨텐츠를 쉽게 편집하고 Adobe Firefly의 GenAI로 새 컨텐츠를 만들 수 있습니다. 이를 통해 콘텐츠 재사용이 향상되고 콘텐츠 속도가 빨라집니다. 또한 사전 정의된 요소를 사용하여 자산을 멋지게 보이게 하거나 몇 번의 클릭만으로 빠른 작업을 수행하여 이미지를 편집할 수 있습니다.
 ![express in essentials UI](/help/assets/assets/express-in-essentials-ui.jpg)
 다음을 사용하여 이미지 편집하기 [!DNL Adobe Express] 포함된 편집기에서 아래 단계를 수행합니다.
 
 1. 링크를 사용하여 AEM Assets 보기에 도달합니다. - [AEM Assets 보기](https://experience.adobe.com/#/assets) 올바른 저장소를 선택합니다.
-1. 클릭 **Assets**&#x200B;을 클릭하고 폴더를 입력한 다음 이미지를 선택합니다.
-1. 클릭 **Adobe Express에서 열기**. 이미지가 빠른 캔버스에서 열립니다.
-1. 이미지를 필요한 대로 편집합니다.
-1. 프로젝트에 페이지를 더 추가해야 하는 경우 **추가**&#x200B;에서 에셋을 선택하고, 폴더를 입력하고, 캔버스 페이지로 가져올 이미지를 선택한 다음 이미지에 필요한 편집을 수행합니다.
-1. 이미지를 저장하려면 를 클릭합니다. **저장**. 저장 대화 상자가 표시됩니다.
+1. **자산**&#x200B;을 클릭하고 폴더를 입력한 다음 이미지를 선택합니다.
+1. **Adobe Express에서 열기**&#x200B;를 클릭합니다. Express 캔버스에서 이미지가 열립니다.
+1. 이미지에 필요한 편집을 수행합니다.
+1. 프로젝트에 페이지를 더 추가해야 하는 경우 **추가**&#x200B;를 클릭하고, 자산을 선택한 다음 폴더를 입력하고, 캔버스 페이지로 가져올 이미지를 선택한 다음 이미지에 필요한 편집을 수행합니다.
+1. 이미지를 저장하려면 **저장**&#x200B;을 클릭합니다. 저장 대화 상자가 표시됩니다.
 
    >[!NOTE]
    >
    > **1. 단일 페이지의 경우**
    >
-   > **다른 버전으로 저장:** 이 기능은 단일 에셋만 저장할 수 있습니다. 이 옵션을 선택하면 이미지를 새 버전(원래 형식을 그대로 유지함)으로 내보내고 동일한 폴더에 저장합니다.
-   > **새 자산으로 저장:** 에셋을 원본과 다른 형식으로 내보내고 폴더를 새 에셋으로 저장하려면 이 옵션을 선택합니다.
+   > **버전으로 저장:** 이 기능은 단일 자산 저장만 지원합니다. 이미지를 원본 포맷을 유지한 채로 새 버전으로 내보내고 동일한 폴더에 저장하려면 이 옵션을 선택합니다.
+   > **새 자산으로 저장:** 자산을 원본과 다른 포맷으로 내보내고 폴더에 새 자산으로 저장하려면 이 옵션을 선택합니다.
    >  
-   > **2. 다중 페이지용**
+   > **2. 여러 페이지의 경우**
    >
-   > **다른 버전으로 저장:** 이 기능은 단일 에셋만 저장할 수 있습니다. 여러 페이지에서 단일 페이지를 저장하려면 이 옵션을 선택하여 에셋을 원래 형식 및 위치로 저장합니다.\
-   > **새 자산으로 저장:** 이 옵션을 사용하면 여러 에셋 또는 단일 에셋을 임의의 폴더로 내보내고 해당 파일 형식을 원본 또는 다른 에셋으로 사용하여 새 에셋으로 저장할 수 있습니다.
+   > **버전으로 저장:** 이 기능은 단일 자산 저장만 지원합니다. 여러 페이지에서 단일 페이지를 저장하려면 이 옵션을 선택하여 자산을 원래 포맷으로 원래 위치에 저장합니다.\
+   > **새 자산으로 저장:** 이 옵션을 사용하면 여러 자산 또는 단일 자산을 임의의 폴더로 내보낸 후 원본 파일 포맷이나 다른 파일 포맷의 새 자산으로 저장할 수 있습니다.
 
-1. 저장 대화 상자에서
-   1. 에 파일 이름을 입력합니다. **다른 이름으로 저장** 필드.
-   1. 대상 폴더를 선택하십시오.
-   1. 선택 사항: 프로젝트 또는 캠페인 이름, 키워드, 채널, 시간대 및 지역 등의 세부 정보를 제공합니다.
-1. 클릭 **다른 버전으로 저장** 또는 **새 자산으로 저장** 에셋을 저장합니다.
+1. [저장] 대화 상자에서 다음 작업을 수행합니다.
+   1. **다른 이름으로 저장** 필드에 파일 이름을 입력합니다.
+   1. 대상 폴더를 선택합니다.
+   1. 선택 사항: 프로젝트 또는 캠페인 이름, 키워드, 채널, 시간대 및 지역과 같은 세부 정보를 입력합니다.
+1. 자산을 저장하려면 **버전으로 저장** 또는 **새 자산으로 저장**&#x200B;을 클릭합니다.
 
-#### 빠른 편집기에서 이미지 편집의 제한 사항 {#limitations-of-editing-images-in-the-express-editor}
+#### Express Editor에서의 이미지 편집 제한 사항 {#limitations-of-editing-images-in-the-express-editor}
 
-* 지원되는 파일 유형: JPEG 또는 PNG.
+* 지원되는 파일 포맷: JPEG 또는 PNG.
 * 지원되는 최대 파일 크기: 40 MB.
-* 지원되는 너비 및 높이 범위: 50~8000픽셀
-* 페이지를 다시 로드하여 소스 폴더에 저장된 최신 새 자산을 확인합니다.
+* 지원되는 폭 및 높이 범위: 50~8000픽셀.
+* 소스 폴더에 최근 저장된 새 자산을 보려면 페이지를 다시 로드합니다.
 
 ### Adobe Express를 사용하여 새 자산 만들기 {#create-new-embedded-editor}
 
@@ -126,13 +126,13 @@ Express 권한이 있는 사용자는 Assets 보기 내에서 임베드된 Expre
 
 1. 다음으로 이동 **[!UICONTROL 내 Workspace]** 및 클릭 **[!UICONTROL 만들기]** 맨 위에 표시되는 Adobe Express 배너 내에서 [!DNL Adobe Express] 빈 캔버스는 [!DNL Assets view] 사용자 인터페이스 내에 표시됩니다.
 1. [템플릿](https://helpx.adobe.com/kr/express/using/work-with-templates.html)을 사용하여 콘텐츠를 만듭니다. 그렇지 않은 경우 **[!UICONTROL 내 항목]**&#x200B;으로 이동하여 기존의 콘텐츠를 수정합니다.
-1. 편집을 완료했으면 **[!UICONTROL 저장]**.
+1. 편집이 완료되면 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 1. 생성된 에셋의 대상 경로를 지정하고 **[!UICONTROL 새 자산으로 저장]**.
 
 #### 제한 사항 {#limitations}
 
 * `JPEG` 및 `PNG` 포맷 유형의 이미지만 수정할 수 있습니다.
-* 에셋 크기는 40MB 미만이어야 합니다.
+* 자산 크기는 40MB보다 작아야 합니다.
 * `PDF`, `JPEG` 또는 `PNG` 포맷에 이미지를 저장할 수 있습니다.
 
 <!--
