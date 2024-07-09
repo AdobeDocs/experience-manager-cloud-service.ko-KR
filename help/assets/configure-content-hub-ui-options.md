@@ -1,10 +1,10 @@
 ---
 title: Content Hub 사용자 인터페이스 구성
 description: Content Hub 사용자 인터페이스 구성
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 4%
+source-wordcount: '1119'
+ht-degree: 5%
 
 ---
 
@@ -97,6 +97,10 @@ Content Hub을 사용하면 관리자가 에셋을 검색하는 동안 표시되
 1. 클릭 **[!UICONTROL 확인]**. 새 필터가 기존 필터 목록에 표시됩니다.
 
 1. 클릭 **[!UICONTROL 저장]** 을 클릭하여 자산을 필터링하는 동안 검색 페이지에 새 필터가 표시되도록 변경 사항을 적용합니다.
+
+   >[!NOTE]
+   >
+   >저장소에 필터 조건과 일치하는 에셋이 하나 이상 있는 경우에만 새 필터가 검색 페이지에 표시됩니다.
 
 마찬가지로 다음을 클릭할 수 있습니다 ![편집 아이콘](assets/do-not-localize/edit_icon.svg)사용 가능한 각 필터 옆에서 레이블을 편집하거나 삭제 아이콘을 클릭하여 기존 필터를 삭제할 수 있습니다. 클릭 **[!UICONTROL 저장]** 모든 수정 작업을 수행하여 변경 사항을 적용한 후.
 

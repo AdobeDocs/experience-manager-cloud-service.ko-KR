@@ -2,9 +2,9 @@
 title: 배포 [!DNL Content Hub]
 description: Content Hub을 배포하고 활성화하고 다양한 유형의 권한을 가진 사용자에게 액세스를 제공하는 방법(자산 업로드, Adobe Express 사용자)과 사용자에게 관리자 권한을 제공하는 방법에 대해 알아봅니다.
 role: Admin
-source-git-commit: 0d340508823be6a2c6c2beb28c17ddfb2bf6b790
+source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1316'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,10 @@ Content Hub 포털에 액세스하려면 먼저 관리자가 Cloud Manager을 �
 
 1. 확장 **[!UICONTROL Assets]** 및 선택 **[!UICONTROL Content Hub]**.
    ![Cloud Manager에서 Content Hub 선택](assets/edit-program-cloud-manager-content-hub.png)
+
+   >[!NOTE]
+   >
+   >If **[!UICONTROL 업데이트]** Content Hub을 선택한 후에는 이 활성화되지 않습니다. 프로그램에 대해 Go-Live 설정을 지정했는지 확인하십시오.
 
 1. **[!UICONTROL 업데이트]**&#x200B;를 클릭합니다.
 
@@ -111,9 +115,19 @@ Content Hub 사용자를 온보딩하려면:
 >
 >외부 ID 공급자와의 동기화와 같은 모든 고급 엔터프라이즈 기능을 사용할 수 있습니다.
 
-Admin Console을 사용하여 적절한 사용자를 추가한 후 다음 링크를 사용하여 Content Hub에 액세스할 수 있습니다.
+### Content Hub에 액세스하는 방법 {#access-content-hub}
 
-`https://experience.adobe.com/#/assets/contenthub`
+Content Hub은 다음과 같은 방법으로 액세스할 수 있습니다.
+
+* 다음 링크를 사용하여 Content Hub에 액세스합니다.
+
+  `https://experience.adobe.com/#/assets/contenthub`
+
+* 에 로그온 `experience.adobe com` 및 클릭 **[!UICONTROL Experience Manager Assets Content Hub]** 다음에서 사용 가능 **[!UICONTROL 빠른 액세스]** 섹션:
+  ![Content Hub 액세스](assets/access-content-hub.png)
+
+* 에 로그온 `experience.adobe com` 및 클릭 **[!UICONTROL Experience Manager Assets Content Hub]** 제품 전환기에서 사용 가능:
+  ![Content Hub 액세스 방법 3](assets/access-content-hub-alternate.png)
 
 ### 사용자에게 이메일 알림 비활성화 {#disable-email-notifications}
 

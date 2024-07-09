@@ -1,10 +1,10 @@
 ---
 title: Content Hub 개요
 description: Content Hub, 주요 이점, 액세스 방법, Content Hub에서 사용할 수 있는 옵션에 대한 피드백을 제공하는 방법에 대해 자세히 알아보십시오.
-source-git-commit: b29641286919b5becc3982400ea160836531fdc5
+source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
 workflow-type: tm+mt
 source-wordcount: '660'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ![Content Hub 개요](assets/content-hub-overview.png)
 
-Content Hub은 조직 및 비즈니스 파트너를 위한 온브랜드 콘텐츠에 대한 액세스를 민주화하기 위해 Experience Manager Assets as a Cloud Service의 일부로 사용할 수 있습니다. 대규모로 활성화할 수 있도록 자산을 배포하고 마케팅 민첩성을 향상시키기 위한 온브랜드 콘텐츠 변형을 만드는 데 중점을 둡니다.
+Content Hub는 Experience Manager Assets as a Cloud Service의 일부로 제공되며, 이를 통해 조직과 비즈니스 파트너는 브랜드 콘텐츠를 더 간편하게 이용할 수 있습니다. 대규모로 활성화할 수 있도록 자산을 배포하고 마케팅 민첩성을 향상시키기 위한 온브랜드 콘텐츠 변형을 만드는 데 중점을 둡니다.
 
 ## 왜 Content Hub?
 
@@ -41,7 +41,7 @@ Content Hub에는 프로덕션 환경인 Experience Manager as a Cloud Service, 
 
 ## Content Hub에 액세스하는 방법 {#access-content-hub}
 
-[Content Hub 설정 후](#deploy-content-hub) 및에 사용자 추가 [Content Hub 제품 프로필](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), Content Hub은 다음과 같은 방법으로 액세스할 수 있습니다.
+[Content Hub 설정 후](/help/assets/deploy-content-hub.md) 및에 사용자 추가 [Content Hub 제품 프로필](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), Content Hub은 다음과 같은 방법으로 액세스할 수 있습니다.
 
 * 다음 링크를 사용하여 Content Hub에 액세스합니다.
 
