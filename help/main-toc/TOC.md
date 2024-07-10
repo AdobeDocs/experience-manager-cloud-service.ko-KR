@@ -7,9 +7,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 4e272fe63ccdc920c58ada780a2087bba1bfcb1f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5149'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -844,7 +844,7 @@ ht-degree: 99%
          + [CIF 구성 요소 스타일링](/help/commerce-cloud/customizing/style-cif-component.md)
          + [CIF 구성 요소 맞춤화](/help/commerce-cloud/customizing/customize-cif-components.md)
          + [CIF 카탈로그 선택기 사용](/help/commerce-cloud/customizing/use-cif-pickers.md)
-         + [CIF 제품 캐러셀에 대한 사용자 지정 속성](/help/commerce-cloud/customizing/product-carousel.md)
+         + [CIF 제품 슬라이드에 대한 사용자 정의 속성](/help/commerce-cloud/customizing/product-carousel.md)
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [마이그레이션](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
