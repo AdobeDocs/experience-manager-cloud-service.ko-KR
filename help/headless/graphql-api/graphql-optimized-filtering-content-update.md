@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service에서 Headless 콘텐�
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 66d44481fa7e58b23e0381bfebb997acbedecfb7
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 100%
+source-wordcount: '867'
+ht-degree: 87%
 
 ---
 
@@ -38,71 +38,81 @@ GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트�
 
    사용 가능한 변수는 다음과 같습니다.
 
+   | | 이름 | 값 | 기본 값 | 서비스 | 적용 여부 | 유형 | 메모 |
+   |---|---|---|---|---|---|---|---|
+   | 1 | `CF_MIGRATION_ENABLED` | `1` | `0` | 모두 | | 변수 | 콘텐츠 조각 마이그레이션 작업의 트리거를 활성화(!=0) 또는 비활성화(0)합니다. |
+   | 2 | `CF_MIGRATION_ENFORCE` | `1` | `0` | 모두 | | 변수 | 콘텐츠 조각의 리마이그레이션을 시행(!=0) 콘텐츠 조각을 다시 마이그레이션합니다. 이 플래그를 0으로 설정하면 CF가 증분 마이그레이션됩니다. 즉, 어떤 이유로든 작업이 종료되면 다음에 작업을 실행했을 때 종료된 위치에서 마이그레이션이 시작됩니다. 최초의 마이그레이션은 시행(값=1)하는 것이 좋습니다. |
+   | 3 | `CF_MIGRATION_BATCH` | `50` | `50` | 모두 | | 변수 | 마이그레이션 후 콘텐츠 조각 수를 저장하기 위한 배치 크기. 이는 한 묶음으로 저장소에 저장되는 CF 수와 관련이 있으며 저장소에 대한 쓰기 수를 최적화하는 데 사용할 수 있습니다. |
+   | 4 | `CF_MIGRATION_LIMIT` | `1000` | `1000` | 모두 | | 변수 | 한 번에 처리할 최대 콘텐츠 조각 수입니다. 다음에 대한 참고 사항도 참조하십시오. `CF_MIGRATION_INTERVAL`. |
+   | 5 | `CF_MIGRATION_INTERVAL` | `60` | `600` | 모두 | | 변수 | 다음 제한까지 나머지 콘텐츠 조각을 처리하는 간격(초)입니다. 이 간격은 작업을 시작하기 전 대기 시간과 각 후속 CF_MIGRATION_LIMIT 수의 처리 사이의 지연으로도 간주됩니다. (*) |
+
+   <!--
    <table style="table-layout:auto">
     <tbody>
      <tr>
-      <th> </th>
-      <th>이름</th>
-      <th>값</th>
-      <th>기본 값</th>
-      <th>서비스</th>
-      <th>적용 여부</th>
-      <th>유형</th>
-      <th>메모</th>
+      <th>&nbsp;</th>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Default Value</th>
+      <th>Service</th>
+      <th>Applied</th>
+      <th>Type</th>
+      <th>Notes</th>
      </tr>
 
-   <tr>
+     <tr>
       <td>1</td>
       <td>`CF_MIGRATION_ENABLED` </td>
       <td>`1` </td>
       <td>`0` </td>
-      <td>모두 </td>
+      <td>All </td>
       <td> </td>
-      <td>변수 </td>
-      <td>콘텐츠 조각 마이그레이션 작업의 트리거를 활성화(!=0) 또는 비활성화(0)합니다. </td>
+      <td>Variable </td>
+      <td>Enables(!=0) or disables(0) triggering of Content Fragment migration job. </td>
      </tr>
      <tr>
       <td>2</td>
       <td>`CF_MIGRATION_ENFORCE` </td>
       <td>`1` </td>
       <td>`0` </td>
-      <td>모두 </td>
+      <td>All </td>
       <td> </td>
-      <td>변수 </td>
-      <td>콘텐츠 조각의 리마이그레이션을 시행(!=0)합니다.<br>이 플래그를 0으로 설정하면 CF의 증분 마이그레이션이 수행됩니다. 즉, 어떤 이유로든 작업이 종료되면 다음에 작업을 실행했을 때 종료된 위치에서 마이그레이션이 시작됩니다. 최초의 마이그레이션은 시행(값=1)하는 것이 좋습니다. </td>
+      <td>Variable </td>
+      <td>Enforce (!=0) remigration of Content Fragments.<br>Setting this flag to 0 does an incremental migration of CFs. This means, if the job is terminated for any reason, then the next run of the job starts migration from the point where it got terminated. The first migration is recommended for enforcement (value=1). </td>
      </tr>
      <tr>
       <td>3</td>
       <td>`CF_MIGRATION_BATCH` </td>
       <td>`50` </td>
       <td>`50` </td>
-      <td>모두 </td>
+      <td>All </td>
       <td> </td>
-      <td>변수 </td>
-      <td>마이그레이션 후 콘텐츠 조각 수를 저장하기 위한 일괄 처리 크기입니다.<br>얼마나 많은 CF가 한 일괄 처리에서 저장소에 저장되는지와 관련이 있으며 저장소에 대한 쓰기 수를 최적화하는 데 사용할 수 있습니다. </td>
+      <td>Variable </td>
+      <td>Size of the batch for saving the number of Content Fragments after migration.<br>This is relevant to how many CFs are saved to the repository in one batch, and can be used to optimize the number of writes to the repository. </td>
      </tr>
      <tr>
       <td>4</td>
       <td>`CF_MIGRATION_LIMIT` </td>
       <td>`1000` </td>
       <td>`1000` </td>
-      <td>모두 </td>
+      <td>All </td>
       <td> </td>
-      <td>변수 </td>
-      <td>한 번에 처리할 콘텐츠 조각의 최대 수입니다.<br>`CF_MIGRATION_INTERVAL`에 대한 메모도 참조하십시오. </td>
+      <td>Variable </td>
+      <td>Max number of Content Fragments to process at a time.<br>See also notes for `CF_MIGRATION_INTERVAL`. </td>
      </tr>
      <tr>
       <td>5</td>
       <td>`CF_MIGRATION_INTERVAL` </td>
       <td>`60` </td>
       <td>`600` </td>
-      <td>모두 </td>
+      <td>All </td>
       <td> </td>
-      <td>변수 </td>
-      <td>다음 제한까지 남은 콘텐츠 조각을 처리하는 간격(초)<br>또한 이 간격은 작업을 시작하기 전까지의 대기 시간, 그리고 각 후속 CF_MIGRATION_LIMIT CF 개수의 처리 간 지연 시간으로 간주됩니다.<br>(*)</td>
+      <td>Variable </td>
+      <td>Interval (seconds) to process the remaining Content Fragments up until the next Limit<br>This interval is also considered as both a wait-time before starting the job, and a delay between processing of each subsequent CF_MIGRATION_LIMIT number of CFs.<br>(*)</td>
      </tr>
     </tbody>
    </table>
+   -->
 
    >[!NOTE]
    >
@@ -193,30 +203,36 @@ GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트�
 
    업데이트 절차가 실행된 후 클라우드 환경 변수`CF_MIGRATION_ENABLED`를 ‘0’으로 재설정하여 모든 포드의 재활용을 트리거합니다.
 
+   | | 이름 | 값 | 기본 값 | 서비스 | 적용 여부 | 유형 | 메모 |
+   |---|---|---|---|---|---|---|---|
+   | | `CF_MIGRATION_ENABLED` | `0` | `0` | 모두 | | 변수 | 콘텐츠 조각 마이그레이션 작업의 트리거를 비활성화(0)(또는 활성화(!=0))합니다. |
+
+   <!--
    <table style="table-layout:auto">
     <tbody>
      <tr>
-      <th> </th>
-      <th>이름</th>
-      <th>값</th>
-      <th>기본 값</th>
-      <th>서비스</th>
-      <th>적용 여부</th>
-      <th>유형</th>
-      <th>메모</th>
+      <th>&nbsp;</th>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Default Value</th>
+      <th>Service</th>
+      <th>Applied</th>
+      <th>Type</th>
+      <th>Notes</th>
      </tr>
      <tr>
       <td></td>
       <td>`CF_MIGRATION_ENABLED` </td>
       <td>`0` </td>
       <td>`0` </td>
-      <td>모두 </td>
+      <td>All </td>
       <td> </td>
-      <td>변수 </td>
-      <td>콘텐츠 조각 마이그레이션 작업의 트리거를 비활성화(0)(또는 활성화(!=0))합니다. </td>
+      <td>Variable </td>
+      <td>Disables(0) (or Enables(!=0)) triggering of Content Fragment migration job. </td>
      </tr>
     </tbody>
    </table>
+   -->
 
    >[!NOTE]
    >
