@@ -4,27 +4,27 @@ description: 구성 파일에서 규칙 및 필터를 선언하고 Cloud Manager
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 1b4297c36995be7a4d305c3eddbabfef24e91559
+source-git-commit: c34aa4ad34d3d22e1e09e9026e471244ca36e260
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1326'
 ht-degree: 3%
 
 ---
 
 # CDN에서 트래픽 구성 {#cdn-configuring-cloud}
 
-AEM as a Cloud Service은에서 구성할 수 있는 기능의 컬렉션을 제공합니다. [Adobe 관리 CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) 들어오는 요청 또는 나가는 응답의 특성을 수정하는 계층입니다. 이 페이지에 자세히 설명된 다음 규칙은 다음 동작을 달성하도록 선언할 수 있습니다.
+AEM as a Cloud Service은 [Adobe 관리 CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) 계층에서 구성 가능한 기능 컬렉션을 제공하며, 이 기능은 수신 요청이나 발신 응답의 특성을 수정합니다. 이 페이지에 자세히 설명된 다음 규칙은 다음 동작을 달성하도록 선언할 수 있습니다.
 
-* [변형 요청](#request-transformations) - 헤더, 경로 및 매개 변수를 포함하여 수신 요청의 측면을 수정합니다.
+* [요청 변환](#request-transformations) - 헤더, 경로 및 매개 변수를 포함하여 들어오는 요청의 측면을 수정합니다.
 * [응답 변환](#response-transformations) - 클라이언트로 돌아가는 중인 헤더를 수정합니다(예: 웹 브라우저).
 * [클라이언트측 리디렉션](#client-side-redirectors) - 브라우저 리디렉션을 트리거합니다. 이 기능은 아직 GA는 아니지만 얼리어답터가 사용할 수 있습니다.
-* [원본 선택기](#origin-selectors) - 다른 원본 백엔드에 대한 프록시.
+* [원본 선택기](#origin-selectors) - 다른 원본 백엔드에 대한 프록시입니다.
 
-또한 CDN에서 구성할 수 있는 것은 CDN에서 허용하거나 거부하는 트래픽을 제어하는 트래픽 필터 규칙 (WAF 포함)입니다. 이 기능은 이미 릴리스되었으며 다음에서 자세히 알아볼 수 있습니다. [WAF 규칙을 포함한 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 페이지를 가리키도록 업데이트하는 중입니다.
+또한 CDN에서 구성할 수 있는 것은 CDN에서 허용하거나 거부하는 트래픽을 제어하는 트래픽 필터 규칙 (WAF 포함)입니다. 이 기능은 이미 릴리스되었으며 자세한 내용은 [WAF 규칙을 포함한 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 페이지에서 확인할 수 있습니다.
 
-또한 CDN이 해당 원본에 연결할 수 없는 경우 자체 호스팅된 사용자 지정 오류 페이지를 참조하는 규칙을 작성할 수 있습니다(그런 다음 렌더링됨). 자세한 내용은 [CDN 오류 페이지 구성](/help/implementing/dispatcher/cdn-error-pages.md) 기사.
+또한 CDN이 해당 원본에 연결할 수 없는 경우 자체 호스팅된 사용자 지정 오류 페이지를 참조하는 규칙을 작성할 수 있습니다(그런 다음 렌더링됨). [CDN 오류 페이지 구성](/help/implementing/dispatcher/cdn-error-pages.md) 문서를 읽고 이에 대해 자세히 알아보십시오.
 
-소스 제어의 구성 파일에서 선언된 이러한 모든 규칙은 [Cloud Manager의 구성 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). 구성 파일의 누적 크기는 트래픽 필터 규칙을 포함하여 100KB를 초과할 수 없습니다.
+소스 제어의 구성 파일에서 선언된 이러한 모든 규칙은 [Cloud Manager의 구성 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)을 사용하여 배포됩니다. 구성 파일의 누적 크기는 트래픽 필터 규칙을 포함하여 100KB를 초과할 수 없습니다.
 
 ## 평가 순서 {#order-of-evaluation}
 
@@ -43,9 +43,9 @@ config/
      cdn.yaml
 ```
 
-* 다음 `cdn.yaml` 구성 파일에는 아래 예제에 설명된 메타데이터와 규칙이 모두 포함되어야 합니다. 다음 `kind` 매개 변수는 다음으로 설정해야 합니다. `CDN` 및 버전은 현재 인 스키마 버전으로 설정해야 합니다. `1`.
+* `cdn.yaml` 구성 파일에는 아래 예제에 설명된 메타데이터와 규칙이 모두 포함되어야 합니다. `kind` 매개 변수는 `CDN`(으)로 설정해야 하며 버전은 현재 `1`인 스키마 버전으로 설정해야 합니다.
 
-* Cloud Manager에서 타깃팅된 배포 구성 파이프라인을 만듭니다. 다음을 참조하십시오 [프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 및 [비프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+* Cloud Manager에서 타깃팅된 배포 구성 파이프라인을 만듭니다. [프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 및 [비프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)을 참조하십시오.
 
 **메모**
 
@@ -58,7 +58,7 @@ config/
 
 이름, 조건부 &quot;when 절&quot; 및 작업에서 규칙을 참조합니다.
 
-when 절은 도메인, 경로, 쿼리 문자열, 헤더 및 쿠키를 포함한 속성을 기반으로 규칙을 평가할지 여부를 결정합니다. 구문은 규칙 유형에서 동일합니다. 자세한 내용은 다음을 참조하십시오. [조건 구조 섹션](/help/security/traffic-filter-rules-including-waf.md#condition-structure) 트래픽 필터 규칙 문서 를 참조하십시오.
+when 절은 도메인, 경로, 쿼리 문자열, 헤더 및 쿠키를 포함한 속성을 기반으로 규칙을 평가할지 여부를 결정합니다. 구문은 규칙 유형에서 동일합니다. 자세한 내용은 트래픽 필터 규칙 문서의 [조건 구조 섹션](/help/security/traffic-filter-rules-including-waf.md#condition-structure)을 참조하십시오.
 
 작업 노드의 세부 사항은 규칙 유형에 따라 다르며 아래 개별 섹션에 설명되어 있습니다.
 
@@ -68,7 +68,7 @@ when 절은 도메인, 경로, 쿼리 문자열, 헤더 및 쿠키를 포함한 
 
 사용 사례는 다양하며 애플리케이션 간소화를 위한 URL 재작성 또는 기존 URL 매핑을 포함합니다.
 
-앞에서 언급했듯이 구성 파일의 크기는 제한되어 있으므로 요구 사항이 더 큰 조직은에서 규칙을 정의해야 합니다 `apache/dispatcher` 레이어.
+앞에서 언급했듯이 구성 파일의 크기가 제한되어 있으므로 요구 사항이 더 큰 조직은 `apache/dispatcher` 계층에서 규칙을 정의해야 합니다.
 
 구성 예:
 
@@ -144,12 +144,12 @@ data:
 
 | 이름 | 속성 | 의미 |
 |-----------|--------------------------|-------------|
-| **set** | (reqProperty 또는 reqHeader 또는 queryParam 또는 reqCookie), 값 | 지정된 요청 매개 변수(&quot;path&quot; 속성만 지원됨) 또는 요청 헤더, 쿼리 매개 변수 또는 쿠키를 지정된 값으로 설정합니다. |
+| **설정** | (reqProperty 또는 reqHeader 또는 queryParam 또는 reqCookie), 값 | 지정된 요청 매개 변수(&quot;path&quot; 속성만 지원됨) 또는 요청 헤더, 쿼리 매개 변수 또는 쿠키를 지정된 값으로 설정합니다. |
 |     | var, 값 | 지정된 요청 속성을 지정된 값으로 설정합니다. |
 | **설정 해제** | reqProperty | 지정된 요청 매개 변수(&quot;path&quot; 속성만 지원됨) 또는 요청 헤더, 쿼리 매개 변수 또는 쿠키를 지정된 값으로 제거합니다. |
 |         | var | 지정된 변수를 제거합니다. |
 |         | queryParammatch | 지정된 정규 표현식과 일치하는 모든 쿼리 매개 변수를 제거합니다. |
-| **변형** | op:replace, (reqProperty 또는 reqHeader 또는 queryParam 또는 reqCookie), 일치, 대체 | 요청 매개 변수(&quot;path&quot; 속성만 지원됨) 또는 요청 헤더, 쿼리 매개 변수 또는 쿠키의 일부를 새 값으로 바꿉니다. |
+| **변환** | op:replace, (reqProperty 또는 reqHeader 또는 queryParam 또는 reqCookie), 일치, 대체 | 요청 매개 변수(&quot;path&quot; 속성만 지원됨) 또는 요청 헤더, 쿼리 매개 변수 또는 쿠키의 일부를 새 값으로 바꿉니다. |
 |              | op:tolower, (reqProperty 또는 reqHeader 또는 queryParam 또는 reqCookie) | 요청 매개 변수(&quot;path&quot; 속성만 지원됨) 또는 요청 헤더, 쿼리 매개 변수 또는 쿠키를 소문자 값으로 설정합니다. |
 
 작업은 함께 연결될 수 있습니다. 예:
@@ -168,7 +168,7 @@ actions:
 
 ### 변수 {#variables}
 
-요청 변환 중에 변수를 설정한 다음 평가 시퀀스에서 나중에 참조할 수 있습니다. 다음을 참조하십시오. [평가 순서](#order-of-evaluation) 다이어그램 을 참조하십시오.
+요청 변환 중에 변수를 설정한 다음 평가 시퀀스에서 나중에 참조할 수 있습니다. 자세한 내용은 [평가 순서](#order-of-evaluation) 다이어그램을 참조하십시오.
 
 구성 예:
 
@@ -252,7 +252,7 @@ data:
 
 | 이름 | 속성 | 의미 |
 |-----------|--------------------------|-------------|
-| **set** | reqHeader, 값 | 지정된 헤더를 응답의 특정 값으로 설정합니다. |
+| **설정** | reqHeader, 값 | 지정된 헤더를 응답의 특정 값으로 설정합니다. |
 | **설정 해제** | respHeader | 응답에서 지정된 헤더를 제거합니다. |
 
 ## 원본 선택기 {#origin-selectors}
@@ -274,7 +274,7 @@ data:
         action:
           type: selectOrigin
           originName: example-com
-          # useCache: false
+          # skpCache: true
     origins:
       - name: example-com
         domain: www.example.com
@@ -292,7 +292,7 @@ data:
 | 이름 | 속성 | 의미 |
 |-----------|--------------------------|-------------|
 | **selectOrigin** | originName | 정의된 원본 중 하나의 이름입니다. |
-|     | useCache(선택 사항, 기본값은 true) | 이 규칙과 일치하는 요청에 캐싱을 사용할지 여부를 플래그로 표시합니다. |
+|     | skipCache(선택 사항, 기본값은 false) | 이 규칙과 일치하는 요청에 캐싱을 사용할지 여부를 플래그로 표시합니다. 기본적으로 응답은 응답 캐싱 헤더에 따라 캐시됩니다 (예: Cache-Control 또는 Expires) |
 
 **원본**
 
@@ -302,11 +302,11 @@ data:
 |------------------|--------------------------------------|
 | **이름** | &quot;action.originName&quot;에서 참조할 수 있는 이름입니다. |
 | **도메인** | 사용자 지정 백엔드에 연결하는 데 사용되는 도메인 이름. 또한 SSL SNI 및 유효성 검사에 사용됩니다. |
-| **ip** (선택 사항, 지원되는 iv4 및 ipv6) | 제공된 경우 &quot;도메인&quot; 대신 백엔드에 연결하는 데 사용됩니다. 여전히 &quot;도메인&quot;은 SSL SNI 및 유효성 검사에 사용됩니다. |
-| **forwardHost** (선택 사항, 기본값은 false임) | true로 설정하면 클라이언트 요청의 &quot;호스트&quot; 헤더가 백엔드에 전달되고, 그렇지 않으면 &quot;도메인&quot; 값이 &quot;호스트&quot; 헤더에 전달됩니다. |
-| **forwardCookie** (선택 사항, 기본값은 false임) | true로 설정하면 클라이언트 요청의 &quot;쿠키&quot; 헤더가 백엔드로 전달되고, 그렇지 않으면 쿠키 헤더가 제거됩니다. |
-| **forwardAuthorization** (선택 사항, 기본값은 false임) | true로 설정하면 클라이언트 요청의 &quot;Authorization&quot; 헤더가 백엔드로 전달되고, 그렇지 않으면 Authorization 헤더가 제거됩니다. |
-| **timeout** (선택 사항, 초 단위, 기본값은 60) | 백엔드 서버가 HTTP 응답 본문의 첫 번째 바이트를 전달할 때까지 CDN이 기다려야 하는 시간(초)입니다. 이 값은 백엔드 서버에 대한 바이트 제한 시간 사이의 값으로도 사용됩니다. |
+| **ip**(선택 사항, 지원되는 iv4 및 ipv6) | 제공된 경우 &quot;도메인&quot; 대신 백엔드에 연결하는 데 사용됩니다. 여전히 &quot;도메인&quot;은 SSL SNI 및 유효성 검사에 사용됩니다. |
+| **forwardHost**(선택 사항, 기본값은 false임) | true로 설정하면 클라이언트 요청의 &quot;호스트&quot; 헤더가 백엔드에 전달되고, 그렇지 않으면 &quot;도메인&quot; 값이 &quot;호스트&quot; 헤더에 전달됩니다. |
+| **forwardCookie**(선택 사항, 기본값은 false임) | true로 설정하면 클라이언트 요청의 &quot;쿠키&quot; 헤더가 백엔드로 전달되고, 그렇지 않으면 쿠키 헤더가 제거됩니다. |
+| **forwardAuthorization**(선택 사항, 기본값은 false임) | true로 설정하면 클라이언트 요청의 &quot;Authorization&quot; 헤더가 백엔드로 전달되고, 그렇지 않으면 Authorization 헤더가 제거됩니다. |
+| **시간 초과**(선택 사항, 초 단위, 기본값은 60) | 백엔드 서버가 HTTP 응답 본문의 첫 번째 바이트를 전달할 때까지 CDN이 기다려야 하는 시간(초)입니다. 이 값은 백엔드 서버에 대한 바이트 제한 시간 사이의 값으로도 사용됩니다. |
 
 ### Edge Delivery Services에 프록시 지정 {#proxying-to-edge-delivery}
 
@@ -341,13 +341,13 @@ data:
 ```
 
 >[!NOTE]
-> Adobe 관리 CDN이 사용되므로 에서 푸시 무효화를 구성해야 합니다 **관리됨** 모드, Edge Delivery Services 준수 [푸시 무효화 설정 설명서](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+> Adobe 관리 CDN이 사용되었으므로 Edge Delivery Services [푸시 무효화 설정 설명서](https://www.aem.live/docs/byo-dns#setup-push-invalidation)에 따라 **관리** 모드에서 푸시 무효화를 구성해야 합니다.
 
 
 ## 클라이언트측 리디렉션 {#client-side-redirectors}
 
 >[!NOTE]
->이 기능은 아직 일반적으로 사용할 수 없습니다. 얼리어답터 프로그램에 참여하려면 다음 이메일을 보내십시오. `aemcs-cdn-config-adopter@adobe.com` 사용 사례를 설명합니다.
+>이 기능은 아직 일반적으로 사용할 수 없습니다. 얼리 어답터 프로그램에 참여하려면 `aemcs-cdn-config-adopter@adobe.com`에 전자 메일을 보내 사용 사례를 설명하세요.
 
 301, 302 및 유사한 클라이언트측 리디렉션에 대해 클라이언트측 리디렉션 규칙을 사용할 수 있습니다. 규칙이 일치하는 경우 CDN은 상태 코드 및 메시지(예: HTTP/1.1 301 영구적으로 이동됨)와 위치 헤더 세트를 포함하는 상태 라인으로 응답합니다.
 
