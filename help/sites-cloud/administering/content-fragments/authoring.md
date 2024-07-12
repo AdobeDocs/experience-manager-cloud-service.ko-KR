@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: f81ea2b58cfa68542df957b54b1c0233b6096810
 workflow-type: tm+mt
-source-wordcount: '2668'
-ht-degree: 77%
+source-wordcount: '2687'
+ht-degree: 76%
 
 ---
 
@@ -354,13 +354,20 @@ ht-degree: 77%
 
 #### 참조 페이지 {#reference-pages}
 
-참조를 AEM 페이지, 경험 조각 또는 기타 콘텐츠 유형에 추가하려면
+AEM 페이지, 경험 조각 또는 기타 콘텐츠 유형에 대한 참조를 추가하려면 다음을 수행하십시오.
 
 1. **콘텐츠 경로 추가**&#x200B;를 선택합니다.
 
 1. 입력 필드에서 필요한 경로를 추가합니다.
 
 1. **추가**&#x200B;를 선택하여 확인합니다.
+
+>[!NOTE]
+>
+>다음에 대한 참조에는 사용할 수 없습니다.
+>
+>* 콘텐츠 조각 - 사용 [조각 참조](#fragment-references)
+>* 이미지 - 사용 [참조 이미지](#reference-images)
 
 ### 상위 참조 보기 {#view-parent-references}
 
