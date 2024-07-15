@@ -1,6 +1,6 @@
 ---
 title: 파이프라인 변수 구성
-description: Cloud Manager에서 파이프라인 변수를 사용하여 빌드에 대한 특정 구성 변수를 관리하는 방법에 대해 알아봅니다.
+description: Cloud Manager에서 파이프라인 변수를 사용하여 빌드에 대한 특정 구성 변수를 관리하는 방법을 알아봅니다.
 exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -14,13 +14,13 @@ ht-degree: 20%
 
 # 파이프라인 변수 구성 {#configuring-pipeline-variables}
 
-빌드 프로세스는 git 저장소에 배치하기에 부적절하거나 동일한 분기를 사용하는 파이프라인 실행 간에 달라져야 하는 특정 구성 변수에 따라 달라질 수 있습니다. Cloud Manager를 사용하면 이러한 데이터를 파이프라인 변수로 관리할 수 있습니다.
+빌드 프로세스는 git 저장소에 배치하기에 부적절하거나 동일한 분기를 사용하는 파이프라인 실행 간에 달라져야 하는 특정 구성 변수에 따라 달라질 수 있습니다. Cloud Manager을 사용하면 이러한 데이터를 파이프라인 변수로 관리할 수 있습니다.
 
 ## 파이프라인 변수 {#pipeline-variables}
 
-Cloud Manager를 사용하여 여러 가지 방법으로 파이프라인 변수를 구성할 수 있습니다.
+Cloud Manager을 사용하여 여러 가지 방법으로 파이프라인 변수를 구성할 수 있습니다.
 
-* [Cloud Manager UI를 통해](#ui)
+* [Cloud Manager UI 사용](#ui)
 * [Cloud Manager CLI 사용](#cli)
 * [Cloud Manager API 사용](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Variables/operation/getPipelineVariables)
 
@@ -37,7 +37,7 @@ Cloud Manager를 사용하여 여러 가지 방법으로 파이프라인 변수�
 * 각 `string` 변수 값은 2048자 미만이어야 합니다.
 * 각 `secretString` 형식 변수 값은 500자 이하여야 합니다.
 
-## Cloud Manager UI를 통해 {#ui}
+## Cloud Manager UI 사용 {#ui}
 
 Cloud Manager UI를 통해 파이프라인 변수를 구성하고 관리할 수 있습니다. 파이프라인 변수를 추가, 편집 및 삭제하려면 파이프라인을 편집할 수 있는 권한이 있어야 합니다.
 
@@ -45,43 +45,43 @@ Cloud Manager UI를 통해 파이프라인 변수를 구성하고 관리할 수 
 
 ### 파이프라인 변수 추가 {#add-ui}
 
-1. 날짜 [파이프라인 관리,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) 파이프라인 변수를 생성하려는 파이프라인의 생략 부호를 탭하거나 클릭한 다음 을 선택합니다 **변수 보기/편집** 컨텍스트 메뉴 아래의 제품에서 사용할 수 있습니다.
+1. [파이프라인을 관리할 때](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) 파이프라인 변수를 만들 파이프라인의 줄임표 버튼을 탭하거나 클릭하고 컨텍스트 메뉴에서 **변수 보기/편집**&#x200B;을 선택합니다.
 
    ![파이프라인 변수 보기/편집](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. 다음 **변수 구성** 창이 열립니다. 표의 첫 행에 변수 세부 정보를 입력하고 을 탭하거나 클릭합니다 **추가**.
+1. **변수 구성** 창이 열립니다. 표의 첫 행에 변수 세부 정보를 입력하고 **추가**&#x200B;를 탭하거나 클릭합니다.
 
-   * **구성 이름** 는 변수의 고유 식별자로, 앞에 와야 합니다. [파이프라인 변수 이름 지정 규칙입니다.](#naming-conventions)
-   * **값** 는 변수가 보유하는 값입니다.
-   * **단계 적용됨** 는 변수가 적용되는 파이프라인의 단계입니다. 필수입니다.
+   * **구성 이름**&#x200B;은(는) 변수에 대한 고유 식별자로, [파이프라인 변수 이름 지정 규칙을 가리켜야 합니다.](#naming-conventions)
+   * **Value**&#x200B;은(는) 변수가 보유한 값입니다.
+   * **단계 적용됨**&#x200B;은(는) 변수가 적용되는 파이프라인의 단계입니다. 필수입니다.
       * **빌드**
       * **기능 테스트**
       * **UI 테스트**
-   * **유형** 변수가 일반 텍스트인지 또는 비밀로 암호화되었는지 정의합니다.
+   * **Type**&#x200B;은(는) 변수가 일반 텍스트인지 또는 암호로 암호화되었는지 정의합니다.
 
    ![변수 추가](/help/implementing/cloud-manager/assets/pipeline-variables-add-variable.png)
 
-1. 가 테이블에 추가됩니다. 필요에 따라 변수를 추가한 다음 탭하거나 클릭합니다 **저장** 을 클릭하여 파이프라인에 추가한 변수를 저장합니다.
+1. 가 테이블에 추가됩니다. 필요에 따라 변수를 추가한 다음 **저장**&#x200B;을 탭하거나 클릭하여 파이프라인에 추가한 변수를 저장합니다.
 
 ### 파이프라인 변수 편집 {#edit-ui}
 
-1. 날짜 [파이프라인 관리,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) 파이프라인 변수를 생성하려는 파이프라인의 생략 부호를 탭하거나 클릭한 다음 을 선택합니다 **변수 보기/편집** 컨텍스트 메뉴 아래의 제품에서 사용할 수 있습니다.
+1. [파이프라인을 관리할 때](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) 파이프라인 변수를 만들 파이프라인의 줄임표 버튼을 탭하거나 클릭하고 컨텍스트 메뉴에서 **변수 보기/편집**&#x200B;을 선택합니다.
 
    ![파이프라인 변수 보기/편집](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. 다음 **변수 구성** 창이 열립니다. 편집하려는 변수의 줄임표 버튼을 탭하거나 클릭하여 선택합니다 **편집**.
+1. **변수 구성** 창이 열립니다. 편집하려는 변수의 줄임표 버튼을 탭하거나 클릭하고 **편집**&#x200B;을 선택합니다.
 
    ![변수 편집](/help/implementing/cloud-manager/assets/pipeline-variables-edit.png)
 
-1. 필요에 따라 변수 값을 업데이트한 다음 탭하거나 클릭합니다 **적용** (행 끝에 있는 확인 표시) **버리기** (뒤로 화살표) 를 클릭하여 변경 내용을 되돌립니다.
+1. 필요에 따라 변수 값을 업데이트하고 **적용**(행 끝에 있는 확인 표시)을 탭하거나 클릭하여 변경 사항을 적용하거나 **취소**(뒤로 화살표)를 탭하거나 클릭하여 변경 사항을 되돌립니다.
 
    * 변수 값만 편집할 수 있습니다.
 
    ![변수 편집](/help/implementing/cloud-manager/assets/pipeline-variables-edit-save.png)
 
-1. 탭 또는 클릭 **저장** 을 눌러 변수의 변경 사항을 파이프라인에 저장합니다.
+1. 변수에 대한 변경 사항을 파이프라인에 저장하려면 **저장**&#x200B;을 탭하거나 클릭합니다.
 
-변수를 삭제하려면 **삭제** 대신 **편집** 을 클릭하여 표시되는 파이프라인 변수의 줄임표 메뉴에서 **변수 구성** 창.
+변수를 삭제하려면 **변수 구성** 창의 파이프라인 변수 줄임표 메뉴에서 **편집** 대신 **삭제**&#x200B;을(를) 선택하십시오.
 
 ## Cloud Manager CLI 사용 {#cli}
 

@@ -25,9 +25,9 @@ ht-degree: 1%
 
 ## 구성 {#configuration}
 
-제품 카탈로그는 AEM에서 구성해야 합니다. 다음을 참조하십시오 [스토어 및 카탈로그 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog) 추가 정보.
+제품 카탈로그는 AEM에서 구성해야 합니다. 자세한 내용은 [저장소 및 카탈로그 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog)을 참조하세요.
 
-단계적 카탈로그 기능을 활성화하려면 인증이 필요합니다. 다음을 참조하십시오 [시작](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html) 추가 정보.
+단계적 카탈로그 기능을 활성화하려면 인증이 필요합니다. 자세한 내용은 [시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 ## 제품 관리실 열기 {#opening-product-cockpit}
 
-제품 관리실에 액세스하는 가장 쉬운 방법은 AEM 메인 메뉴의 &#39;Commerce&#39; 메뉴를 통해 확인할 수 있습니다. Omnisearch(Commerce 검색) 또는 열기 를 사용할 수도 있습니다 `https://<yourAEMInstance>/commerce.html`.
+제품 관리실에 액세스하는 가장 쉬운 방법은 AEM의 메인 메뉴에 있는 &#39;Commerce&#39; 메뉴를 이용하는 것입니다. Omnisearch(Commerce 검색)를 사용하거나 `https://<yourAEMInstance>/commerce.html`을(를) 열 수도 있습니다.
 
 ![AEM 메뉴](../assets/aem-menu.png)
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 카테고리를 클릭하면 클릭한 카테고리의 하위 항목이 로드됩니다.
 
-![범주 하위](../assets/catalog-category-children.png)
+![범주 자식](../assets/catalog-category-children.png)
 
 사용 가능한 경우 제품을 클릭하면 제품 변형이 로드됩니다.
 
@@ -81,6 +81,6 @@ ht-degree: 1%
 
 ### AEM 컨텐츠 탭 {#content-tabs}
 
-AEM 콘텐츠 유형(경험 조각, 콘텐츠 조각, 관련 에셋)별로 그룹화된 이 탭에는 상거래 개체와 연결된 AEM 콘텐츠가 표시됩니다. &#39;세부 정보 보기&#39; 작업을 수행하면 선택한 콘텐츠로 새 브라우저 탭이 열립니다.
+AEM 콘텐츠 유형(경험 조각, 콘텐츠 조각, 연관된 Assets)별로 그룹화된 이 탭에는 상거래 오브젝트와 연관된 AEM 콘텐츠가 표시됩니다. &#39;세부 정보 보기&#39; 작업을 수행하면 선택한 콘텐츠로 새 브라우저 탭이 열립니다.
 
 ![콘텐츠 속성](../assets/content-properties.png)

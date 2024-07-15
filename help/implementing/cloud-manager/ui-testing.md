@@ -26,7 +26,7 @@ ht-degree: 79%
 
 AEM은 사용자 정의 애플리케이션에 대한 원활한 업데이트를 보장하기 위해 통합된 [Cloud Manager 품질 게이트](/help/implementing/cloud-manager/custom-code-quality-rules.md) 제품군을 제공합니다 특히 IT 테스트 게이트는 이미 AEM API를 사용한 사용자 정의 테스트의 만들기 및 자동화를 지원합니다.
 
-UI 테스트는 언어 및 프레임워크(예: Cypress, Selenium, Java 및 Maven, JavaScript)에서 다양한 선택을 허용하도록 Docker 이미지에 패키징되어 있습니다. 또한 를 사용하여 UI 테스트 프로젝트를 쉽게 생성할 수 있습니다 [AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+UI 테스트는 언어 및 프레임워크(예: Cypress, Selenium, Java 및 Maven, JavaScript)에서 다양한 선택을 허용하도록 Docker 이미지에 패키징되어 있습니다. 또한 [AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을(를) 사용하여 UI 테스트 프로젝트를 쉽게 생성할 수 있습니다.
 
 Adobe는 실시간 리로딩 및 자동 대기 기능을 제공하여 테스트 중 시간을 절약하고 생산성을 향상시키는 데 도움이 되는 Cypress의 사용을 권장합니다. 또한 Cypress는 간단하고 직관적인 구문을 제공하므로 테스트를 처음 접하는 사용자도 쉽게 배우고 사용할 수 있습니다.
 
@@ -48,7 +48,7 @@ Java로 작성된 HTTP 테스트인 사용자 정의 기능 테스트와 달리 
 
    * Cypress의 경우 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress)에 있는 샘플 코드를 사용하십시오.
 
-   * JavaScript 및 WDIO의 경우 `ui.tests` Cloud Manager 저장소의 폴더입니다.
+   * JavaScript 및 WDIO의 경우 Cloud Manager 저장소의 `ui.tests` 폴더에서 자동으로 생성된 샘플 코드를 사용합니다.
 
      >[!NOTE]
      >
@@ -235,8 +235,8 @@ Adobe에서 제공하는 샘플을 사용하는 경우 다음을 참조하십시
 Adobe 테스트 샘플은 구성 매개변수에 액세스하기 위한 도우미 기능을 제공합니다.
 
 * Cypress: 표준 기능 `Cypress.env('VARIABLE_NAME')` 사용
-* JavaScript: 다음을 참조하십시오. [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) 모듈
-* Java: 다음을 참조하십시오. [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) 클래스
+* JavaScript: [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) 모듈 보기
+* Java: [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) 클래스 보기
 
 ### 테스트 보고서 생성 {#generate-test-reports}
 
@@ -250,7 +250,7 @@ Docker 이미지가 다른 프로그래밍 언어 또는 테스트 실행자로 
 >
 >STDERR에 오류를 로깅하거나 0이 아닌 종료 코드를 반환하는 대신 어설션을 사용하십시오. 이렇게 하지 않으면 배포 파이프라인이 정상적으로 진행될 수 있습니다.
 >
->테스트 실행 중에 HTTP 프록시가 사용된 경우 결과는 다음을 포함합니다. `request.log` 파일.
+>테스트 실행 중에 HTTP 프록시가 사용된 경우 결과에 `request.log` 파일이 포함됩니다.
 
 ### 사전 요구 사항 {#prerequisites}
 
@@ -327,22 +327,22 @@ UI 테스트 실행 중 테스트 결과 아카이브가 만들어지면 Cloud M
 
 ### HTTP 프록시 설정
 
-도커 컨테이너의 진입점은 `PROXY_HOST` 환경 변수입니다.
+도커 컨테이너의 진입점은 `PROXY_HOST` 환경 변수의 값을 확인해야 합니다.
 
 이 값이 비어 있으면 추가 단계가 필요하지 않으며 HTTP 프록시를 사용하지 않고 테스트를 실행해야 합니다.
 
 비어 있지 않으면 진입점 스크립트는 다음을 수행해야 합니다.
 
-1. UI 테스트 실행을 위한 HTTP 프록시 연결을 구성합니다. 이 작업은 를 내보내면 수행할 수 있습니다. `HTTP_PROXY` 다음 값을 사용하여 빌드된 환경 변수입니다.
-   * 프록시 호스트(다음에서 제공) `PROXY_HOST` 변수
-   * 프록시 포트: 다음에서 제공: `PROXY_HTTPS_PORT` 또는 `PROXY_HTTP_PORT` 변수(값이 비어 있지 않은 변수가 사용됨)
-2. HTTP 프록시에 연결할 때 사용할 CA 인증서를 설정합니다. 위치는 다음에서 제공합니다. `PROXY_CA_PATH` 변수를 채우는 방법에 따라 페이지를 순서대로 표시합니다.
-   * 내보내기를 통해 이를 수행할 수 있습니다. `NODE_EXTRA_CA_CERTS` 환경 변수입니다.
+1. UI 테스트 실행을 위한 HTTP 프록시 연결을 구성합니다. 다음 값을 사용하여 빌드된 `HTTP_PROXY` 환경 변수를 내보내면 이를 수행할 수 있습니다.
+   * `PROXY_HOST` 변수가 제공하는 프록시 호스트
+   * `PROXY_HTTPS_PORT` 또는 `PROXY_HTTP_PORT` 변수가 제공하는 프록시 포트(값이 비어 있지 않은 변수가 사용됨)
+2. HTTP 프록시에 연결할 때 사용할 CA 인증서를 설정합니다. 해당 위치는 `PROXY_CA_PATH` 변수에 의해 제공됩니다.
+   * `NODE_EXTRA_CA_CERTS` 환경 변수를 내보내면 이를 수행할 수 있습니다.
 3. HTTP 프록시가 준비될 때까지 기다립니다.
-   * 준비 상태를 확인하기 위해 환경 변수 `PROXY_HOST`, `PROXY_OBSERVABILITY_PORT`, `PROXY_RETRY_ATTEMPTS` 및 `PROXY_RETRY_DELAY` 를 사용할 수 있습니다.
-   * cURL 요청을 사용하여에 cURL을 설치했는지 확인할 수 있습니다. `Dockerfile`.
+   * 준비 상태를 확인하기 위해 `PROXY_HOST`, `PROXY_OBSERVABILITY_PORT`, `PROXY_RETRY_ATTEMPTS` 및 `PROXY_RETRY_DELAY` 환경 변수를 사용할 수 있습니다.
+   * cURL 요청을 사용하여 `Dockerfile`에 cURL을 설치했는지 확인할 수 있습니다.
 
-예제 구현은 의 Cypress 샘플 테스트 모듈 진입점에서 찾을 수 있습니다. [GitHub.](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/run.sh)
+예제 구현은 [GitHub.](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/run.sh)에 있는 Cypress 샘플 테스트 모듈의 진입점에서 찾을 수 있습니다.
 
 ## 극작가별 세부 정보
 
@@ -354,15 +354,15 @@ UI 테스트 실행 중 테스트 결과 아카이브가 만들어지면 Cloud M
 
 >[!NOTE]
 >
-> 제공된 예에서 Chrome이 프로젝트 브라우저로 사용되고 있다고 가정합니다.
+> 제공된 예제에서 Chrome은 프로젝트 브라우저로 사용되고 있다고 가정합니다.
 
-Cypress와 마찬가지로 비어 있지 않은 경우 테스트에서 HTTP 프록시를 사용해야 합니다 `PROXY_HOST` 환경 변수가 제공됩니다.
+비어 있지 않은 `PROXY_HOST` 환경 변수가 제공된 경우 Cypress와 마찬가지로 테스트에서 HTTP 프록시를 사용해야 합니다.
 
 이를 위해서는 다음과 같이 수정해야 합니다.
 
 #### Dockerfile
 
-cURL 설치 및 `libnss3-tools`, `certutil.`
+cURL 및 `libnss3-tools`을(를) 설치합니다. `certutil.` 제공
 
 ```dockerfile
 RUN apt -y update \
@@ -372,10 +372,10 @@ RUN apt -y update \
 
 #### 진입점 스크립트
 
-경우에 따라 다음과 같은 Bash 스크립트를 포함합니다. `PROXY_HOST` 환경 변수가 제공되면 다음 작업을 수행합니다.
+`PROXY_HOST` 환경 변수가 제공된 경우 다음을 수행하는 bash 스크립트를 포함합니다.
 
-1. 다음과 같은 프록시 관련 변수 내보내기 `HTTP_PROXY` 및 `NODE_EXTRA_CA_CERTS`
-2. 사용 `certutil` chromium용 프록시 CA 인증서를 설치하려면
+1. `HTTP_PROXY` 및 `NODE_EXTRA_CA_CERTS`과(와) 같은 프록시 관련 변수 내보내기
+2. `certutil`을(를) 사용하여 chromium에 대한 프록시 CA 인증서를 설치합니다.
 3. HTTP 프록시가 준비될 때까지(또는 실패 시 종료) 기다립니다.
 
 예제 구현:
@@ -409,7 +409,7 @@ fi
 
 #### 극작가 구성
 
-극작가 구성 수정(예: `playwright.config.js`)을 클릭하여 프록시 사용 `HTTP_PROXY` 환경 변수가 설정되어 있습니다.
+`HTTP_PROXY` 환경 변수가 설정된 경우 프록시를 사용하도록 극작가 구성(예: `playwright.config.js`에서)을 수정하십시오.
 
 예제 구현:
 

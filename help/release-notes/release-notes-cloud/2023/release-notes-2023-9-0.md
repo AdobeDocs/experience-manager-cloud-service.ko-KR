@@ -58,7 +58,7 @@ Edge Delivery는 고객 상호 작용 시점에서 측정 가능한 비즈니스
 
 ### 관리자 보기의 새로운 기능 {#admin-view-features}
 
-* **AEM Assets as a Cloud Service과 Edge Delivery Services을 위한 문서 기반 작성 통합**: 웹 사이트 작성자가 AEM Assets을 Edge Delivery Services을 위한 문서 기반 작성과 통합하여 [Microsoft Word 또는 Google 문서에서 문서를 작성하는 동안 AEM Assets 저장소에서 사용할 수 있는 이미지 사용](/help/edge/using.md#integrate-assets-edge).
+* **Edge Delivery Services을 위한 문서 기반 작성과 AEM Assets as a Cloud Service 통합**: Edge Delivery Services을 위한 문서 기반 작성과 AEM Assets을 통합하여 [웹 사이트 작성자가 Microsoft Word 또는 Google 문서에서 문서를 작성하는 동안 AEM Assets 리포지토리에서 사용할 수 있는 이미지를 사용](/help/edge/using.md#integrate-assets-edge)할 수 있도록 합니다.
 
 * **ZIP 아카이브 추출**: Experience Manager에서 관리하는 ZIP 아카이브를 선택하고, 다운로드하지 않고도 [Experience Manager로 직접 파일을 추출하는](/help/assets/manage-digital-assets.md#extract-zip-archives) 기능.
 

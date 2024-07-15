@@ -25,18 +25,18 @@ ht-degree: 47%
 
 ## 릴리스 일자 {#release-date}
 
-의 릴리스 날짜 [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0은 2021년 6월 28일입니다.
+[!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0의 릴리스 날짜는 2021년 6월 28일입니다.
 다음 릴리스(2021.7.0) 날짜는 2021년 7월 29일입니다.
 
 ## 릴리스 비디오 {#release-video}
 
-다음을 살펴보십시오. [2021년 6월 릴리스 개요](https://video.tv.adobe.com/v/334296) 추가된 기능에 대한 요약을 보려면 비디오 를 사용하십시오.
+추가된 기능에 대한 요약을 보려면 [2021년 6월 릴리스 개요](https://video.tv.adobe.com/v/334296) 비디오를 보십시오.
 
 ## XML Documentation for AEM as a cloud Service {#xml-documentation}
 
 ### 새로운 기능 {#what-is-new-xml-documentation}
 
-* AEMas a Cloud Service 용 XML Documentation은 이제 GA입니다.
+* 이제 AEM as a Cloud Service용 XML Documentation이 GA되었습니다.
 * 이를 통해 기존 AEM Cloud Service 고객은 AEM 사이트를 비롯한 여러 채널에서 기술 콘텐츠를 가져오고, 만들고, 관리하고, 전달할 수 있는 XML Documentation addon을 확보할 수 있습니다
 
 ## Cloud Manager {#cloud-manager}
@@ -45,7 +45,7 @@ ht-degree: 47%
 
 ### 릴리스 일자 {#release-date-june-cm}
 
-AEM as a Cloud Service 2021.6.0의 Cloud Manager 릴리스 일자는 2021년 6월 10일입니다.
+AEM as a Cloud Service 2021.6.0의 Cloud Manager 릴리스 날짜는 2021년 6월 10일입니다.
 다음 릴리스는 2021년 7월 15일에 예정되어 있습니다.
 
 ### 새로운 기능 {#what-is-new-junecm}
@@ -90,34 +90,34 @@ AEM as a Cloud Service 2021.6.0의 Cloud Manager 릴리스 일자는 2021년 6�
 
 ### [!DNL Assets]의 새로운 기능 {#ga-features-assets}
 
-* 콘텐츠 자동화 기능을 통해 다음과 같은 작업을 수행할 수 있습니다 [!DNL Experience Manager Assets] 사용 [!DNL Adobe Creative Cloud] 규모에 맞게 에셋 제작을 자동화하는 API입니다. 동일한 에셋의 변형을 만드는 데 소요되는 시간과 필요한 반복을 크게 줄여 콘텐츠 속도를 향상시킵니다. 이 기능은 코드가 필요하지 않으며 DAM 내에서 작동합니다.
-* [!DNL Adobe Asset Link] 용 v3.0 [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], 및 [!DNL Adobe InDesign] 및 [!DNL Adobe Asset Link] 용 v2.0 [!DNL Adobe XD] 이(가) 릴리스되었습니다. 다음을 제공합니다.
+* 콘텐츠 자동화 기능을 통해 [!DNL Experience Manager Assets]이(가) [!DNL Adobe Creative Cloud] API를 사용하여 규모에 맞춰 에셋 제작을 자동화할 수 있습니다. 동일한 에셋의 변형을 만드는 데 소요되는 시간과 필요한 반복을 크게 줄여 콘텐츠 속도를 향상시킵니다. 이 기능은 코드가 필요하지 않으며 DAM 내에서 작동합니다.
+* [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] 및 [!DNL Adobe InDesign]에 대한 [!DNL Adobe Asset Link] v3.0과 [!DNL Adobe XD]에 대한 [!DNL Adobe Asset Link] v2.0이 릴리스되었습니다. 다음을 제공합니다.
 
-   * 지원 대상 [!DNL Assets Essentials].
-   * 에 자동 연결 기능 [!DNL Experience Manager] as a [!DNL Cloud Service] 또는 [!DNL Assets Essentials].
+   * [!DNL Assets Essentials] 지원.
+   * [!DNL Cloud Service] 또는 [!DNL Assets Essentials](으)로 [!DNL Experience Manager]에 자동으로 연결할 수 있습니다.
 
 <!-- TBD: Checking with PMs if AAE release should be mentioned here.
 -->
 
-### 에서 사용할 수 있는 새로운 기능 [!DNL Assets] 프리릴리스 채널 {#beta-features-assets}
+### [!DNL Assets] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#beta-features-assets}
 
 * 사용자가 기본 보기와 기본 정렬 매개 변수를 선택할 수 있도록 보기 설정이 개선되었습니다.
 * Linkshare 다운로드 기능은 다운로드 속도를 향상시키는 비동기 다운로드를 사용합니다.
 * 사용자는 속성 술어에 따라 폴더를 검색하고 필터링할 수 있습니다.
-* [!DNL Experience Manager Assets] 다음에서 제공하는 PDF 뷰어 포함 [!DNL Adobe Document Cloud] 을 클릭하여 지원되는 문서를 미리 봅니다. 이 기능을 사용하면 복잡한 처리 없이 PDF 및 기타 다중 페이지 파일을 미리 볼 수 있습니다. 따라서 기능 패리티가 다음과 같이 향상됩니다. [!DNL Experience Manager] 6.5.
+* [!DNL Experience Manager Assets]은(는) [!DNL Adobe Document Cloud]에서 제공하는 PDF 뷰어를 임베드하여 지원되는 문서를 미리 봅니다. 이 기능을 사용하면 복잡한 처리 없이 PDF 및 기타 다중 페이지 파일을 미리 볼 수 있습니다. 이렇게 하면 기능 패리티가 [!DNL Experience Manager] 6.5로 향상됩니다.
 
 ### [!DNL Assets]의 수정된 버그 {#bugs-fixed-assets}
 
-* 하위 폴더에 소유자를 추가하면 [!DNL Assets] 또한 동일한 사용자를 상위 폴더의 소유자로 추가합니다. (CQ-4323737)
+* 하위 폴더에 소유자를 추가하면 [!DNL Assets]도 상위 폴더의 소유자와 동일한 사용자를 추가합니다. (CQ-4323737)
 * 컬렉션에 에셋을 추가할 때 사용자가 컬렉션 검색에 필터를 적용하면 목록 보기에서 컬렉션을 볼 수 없습니다. (CQ-4323181)
-* 파일 및 폴더를 검색할 때 사용자가 필터를 적용하고 [!UICONTROL 파일 및 폴더]에서는 파일만 표시되고 폴더는 표시되지 않습니다. (CQ-4319543)
+* 파일 및 폴더를 검색할 때 필터를 적용하고 [!UICONTROL 파일 및 폴더]를 선택하면 폴더는 표시되지 않고 파일만 표시됩니다. (CQ-4319543)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### [!DNL Sites]의 새로운 기능 {#ga-features-sites}
 
-* 이제 미리보기 계층에 게시 가 사이트 관리자 UI의 페이지 상태로 표시됩니다.
-* 이제 [미리보기 계층에 게시]가 작업이 끝날 때 미리보기 URL을 표시하며 해당 URL을 나중에 참조할 수 있도록 페이지 속성에 유지합니다
+* 이제 미리보기 계층에 대한 Publish이 사이트 관리자 UI의 페이지 상태로 표시됩니다.
+* 이제 Publish to Preview Tier가 작업 끝에 미리보기 URL을 표시하고 나중에 참조할 수 있도록 페이지 속성에서 이 URL을 유지합니다.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -146,7 +146,7 @@ Beta 프로그램에 등록하려면 [!DNL formscsbeta@adobe.com]에 문의하�
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
-이 섹션에서는 AEM Screens as a Cloud Service 릴리스 정보에 대해 간략히 소개합니다.
+이 섹션에서는 AEM Screensas a Cloud Service 에 대한 릴리스 노트를 간략하게 설명합니다.
 
 ### 릴리스 일자 {#release-date-june-screens}
 
@@ -155,7 +155,7 @@ AEM Screens as a Cloud Service 릴리스 날짜는 2021년 6월 24일입니다.
 ### 새로운 기능 {#what-is-new-screens-june}
 
 >[!NOTE]
->다음을 참조하십시오 [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html) Screens의 성공적인 설치, 구성 및 실행에 필요한 기본 지식에 대한 설명서를 as a Cloud Service으로 제공하고 세부 개념 기술 설명서에 연결합니다.
+>자세한 개념 기술 설명서에 대한 Screens as a Cloud Service 및 링크를 성공적으로 설치, 구성 및 실행하는 데 필요한 기본 지식은 [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html) 가이드를 참조하십시오.
 
 * Bulk Device Registration Management는 대량의 플레이어 디바이스를 프로비저닝하는 것이 더 빠르고 효율적이라는 것을 의미합니다.
 
@@ -184,7 +184,7 @@ AEM Screens as a Cloud Service 릴리스 날짜는 2021년 6월 24일입니다.
 
 ### 새로운 기능 {#what-is-new-ctt-latest}
 
-* 옵션 지원 [사전 복사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) ctt에서 사용할 단계가 추가되었습니다. 사전 복사 단계는 소스 AEM 인스턴스가 Amazon S3 또는 Azure Blob Storage 데이터 저장소를 사용하도록 구성된 경우 컨텐츠 전송 활동의 추출 및 수집 단계를 크게 가속화하는 데 사용할 수 있습니다.
+* CTT에서 사용할 선택적 [사전 복사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) 단계에 대한 지원이 추가되었습니다. 사전 복사 단계는 소스 AEM 인스턴스가 Amazon S3 또는 Azure Blob Storage 데이터 저장소를 사용하도록 구성된 경우 컨텐츠 전송 활동의 추출 및 수집 단계를 크게 가속화하는 데 사용할 수 있습니다.
 
 * 사용자가 수집 단계 중 위험 시점에 도달하면 수집을 중지하고 데이터를 손상시킬 수 있는 문제를 방지하기 위해 CTT에 보호 기능이 추가되었습니다.
 
@@ -194,7 +194,7 @@ AEM Screens as a Cloud Service 릴리스 날짜는 2021년 6월 24일입니다.
 
 ### 버그 수정 {#bug-fixes-ctt-latest}
 
-* 작성자 인스턴스에서 수집을 중지하는 동안 UI가 게시 인스턴스에서 이전에 완료된 수집을 덮어쓰기하여 다음으로 전환했습니다. `STOPPED` 출처: `FINISHED`. 이 문제가 해결되었습니다.
+* 작성자 인스턴스의 수집을 중지하는 동안 UI가 이전에 완료된 Publish 인스턴스의 수집을 `FINISHED`에서 `STOPPED`(으)로 덮어썼습니다. 이 문제가 해결되었습니다.
 
 ## Best Practices Analyzer {#best-practices-analyzer}
 
@@ -204,7 +204,7 @@ AEM Screens as a Cloud Service 릴리스 날짜는 2021년 6월 24일입니다.
 
 ### 새로운 기능 {#what-is-new-bpa-latest}
 
-* 아래 폴더에서 누락된 하위 노드 감지 및 보고 기능 `/content/dam`.
+* `/content/dam` 아래 폴더에서 누락된 하위 노드를 감지하고 보고하는 기능.
 
 * 사용된 모범 사례 분석기 버전을 감지하고 보고하는 기능.
 

@@ -1,6 +1,6 @@
 ---
-title: '[!DNL Live Search] 팝오버 CIF 구성 요소'
-description: CIF 구성 요소를 사용하여 활성화 [!DNL Live Search] AEM 사이트의 팝오버 구성 요소
+title: '[!DNL Live Search] Popover CIF 구성 요소'
+description: CIF 구성 요소를 사용하여 AEM 사이트에서  [!DNL Live Search] 팝오버 구성 요소 활성화
 exl-id: 9dac6693-fe87-4a47-a920-2cf788933499
 feature: Commerce Integration Framework
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] Popover CIF 구성 요소 {#live-search-popover}
+# [!DNL Live Search] 팝오버 CIF 구성 요소 {#live-search-popover}
 
-다음 [!DNL Live Search] Popover는 [!DNL Live Search] 검색 필드에 입력할 때 검색 결과가 표시됩니다.
+[!DNL Live Search] 팝오버는 검색 필드에 입력할 때 [!DNL Live Search] 결과를 포함하는 요소입니다.
 이 항목에서는 이 구성 요소를 AEM 사이트에 통합하는 방법을 설명합니다.
 
 ## 파일 구조 {#file-strucure}
@@ -22,7 +22,7 @@ CIF 구성 요소를 활성화하려면 파일을 편집하고 만들어야 합�
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/.content.xml
 
-  만들기 `.content.xml` 파일:
+  `.content.xml` 파일 만들기:
 
   ```xml
   <?xml version="1.0" encoding="UTF-8"?>
@@ -35,7 +35,7 @@ CIF 구성 요소를 활성화하려면 파일을 편집하고 만들어야 합�
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/css.txt
 
-  만들기 `css.txt` 파일:
+  `css.txt` 파일 만들기:
 
   ```text
   #base=css
@@ -45,7 +45,7 @@ CIF 구성 요소를 활성화하려면 파일을 편집하고 만들어야 합�
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/css/searchbar.css
 
-  만들기 `searchbar.css` 파일:
+  `searchbar.css` 파일 만들기:
 
 
   ```css
@@ -140,7 +140,7 @@ CIF 구성 요소를 활성화하려면 파일을 편집하고 만들어야 합�
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/js.txt
 
-  만들기 `js.txt` 파일:
+  `js.txt` 파일 만들기:
 
   ```text
   js/searchbar.js
@@ -148,7 +148,7 @@ CIF 구성 요소를 활성화하려면 파일을 편집하고 만들어야 합�
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/js/searchbar.js
 
-  만들기 `searchbar.js` 파일:
+  `searchbar.js` 파일 만들기:
 
   ```javascript
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -494,7 +494,7 @@ CIF 구성 요소를 활성화하려면 파일을 편집하고 만들어야 합�
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/searchbar.html
 
-  만들기 `searchbar.html` 파일:
+  `searchbar.html` 파일 만들기:
 
   ```html
   <!-- Livesearch popover -->
@@ -556,7 +556,7 @@ CIF 구성 요소를 활성화하려면 파일을 편집하고 만들어야 합�
 
 * ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.components.internal.servlets.ProductPageRedirectServlet.cfg.json
 
-  만들기 `com.adobe.cq.commerce.core.components.internal.servlets.ProductPageRedirectServlet.cfg.json` 파일:
+  `com.adobe.cq.commerce.core.components.internal.servlets.ProductPageRedirectServlet.cfg.json` 파일 만들기:
 
   ```json
   {
@@ -570,7 +570,7 @@ CIF 구성 요소를 활성화하려면 파일을 편집하고 만들어야 합�
 
    * ui.tests/test-module/specs/venia/searchbar.js
 
-     편집 `searchbar.js` 파일, 19-20행, 변경 `describe` 끝 `describe.skip`:
+     `searchbar.js` 파일(19-20행)을 편집하고 `describe`을(를) `describe.skip`(으)로 변경합니다.
 
      ```javascript
      describe.skip('Venia Searchbar Component', () => {

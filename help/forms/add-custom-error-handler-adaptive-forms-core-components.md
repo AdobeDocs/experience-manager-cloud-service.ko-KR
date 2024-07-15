@@ -194,7 +194,7 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 오류 응답이 표준 스키마나 서버측 유효성 검사 실패에 있는 경우, 기본 오류 핸들러를 지원하여 오류 응답을 필드에 표시합니다.
 [규칙 편집기의 호출 서비스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=ko-KR#invoke) 작업을 통해 기본 오류 핸들러를 사용하는 방법을 이해하려면 두 필드, **펫 ID** 및 **펫 이름**&#x200B;을 사용하여 간단한 적응형 양식의 예를 살펴본 다음 **펫 ID** 필드의 기본 오류 핸들러를 사용하여 외부 서비스를 호출하도록 구성된 REST 엔드포인트에서 반환된 다양한 오류를 확인합니다(예: `200 - OK`,`404 - Not Found`, `400 - Bad Request`). 규칙 편집기의 서비스 호출 작업을 통해 기본 오류 핸들러를 추가하려면 다음 단계를 실행합니다.
 
-1. 작성 모드에서 적응형 양식을 열고 양식 구성 요소를 선택하고 을 선택합니다 **[!UICONTROL 규칙 편집기]** 규칙 편집기를 엽니다.
+1. 작성 모드에서 적응형 양식을 열고 양식 구성 요소를 선택한 다음 **[!UICONTROL 규칙 편집기]**&#x200B;를 선택하여 규칙 편집기를 엽니다.
 1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. 규칙의 **날짜** 섹션에서 조건을 만듭니다. 예: **펫 ID 필드의 날짜[ 이름]**&#x200B;이 변경되었습니다. 선택이 **상태 선택** 드롭다운 목록에서 변경되었습니다.
 1. **Then** 섹션의 **작업 선택** 드롭다운 목록에서 **[!UICONTROL 호출 서비스]**&#x200B;를 선택합니다.
@@ -237,7 +237,7 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 1. `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/`로 이동하고 `clientlibs`로서 `ClientLibraryFolder`를 만듭니다.
 1. `js`라는 이름의 폴더를 만듭니다.
 1. `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` 폴더로 이동합니다.
-1. 다음과 같은 JavaScript 파일 추가 `function.js`. 파일은 사용자 정의 오류 핸들러의 코드로 구성됩니다.
+1. JavaScript 파일(예: `function.js`)을 추가합니다. 파일은 사용자 정의 오류 핸들러의 코드로 구성됩니다.
 다음 코드를 JavaScript 파일에 추가하여 REST 서비스 엔드포인트가 수신한 응답과 헤더를 브라우저 콘솔에 표시해 보겠습니다.
 
    ```javascript
@@ -256,7 +256,7 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
        return true; // true - call default error handler, false - don't call default error handler.
    }
    ```
-   위의 코드에서 `return true` 기본 오류 처리기를 자동으로 호출합니다. 기본 오류 처리기가 기본적으로 호출되지 않도록 하려면 다음을 포함하십시오. `return false`.
+   위의 코드에서 `return true`은(는) 기본 오류 처리기를 자동으로 호출합니다. 기본 오류 처리기가 기본적으로 호출되지 않도록 하려면 `return false`을(를) 포함합니다.
 
    >[!NOTE]
    >
@@ -302,7 +302,7 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 
 **[!UICONTROL 규칙 편집기의 호출 서비스]** 작업을 통해 사용자 정의 오류 핸들러를 사용하려면
 
-1. 작성 모드에서 적응형 양식을 열고 양식 구성 요소를 선택하고 을 선택합니다 **[!UICONTROL 규칙 편집기]** 규칙 편집기를 엽니다.
+1. 작성 모드에서 적응형 양식을 열고 양식 구성 요소를 선택한 다음 **[!UICONTROL 규칙 편집기]**&#x200B;를 선택하여 규칙 편집기를 엽니다.
 1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. 규칙의 **날짜** 섹션에서 조건을 만듭니다. 예: **[펫 ID 필드 이름]**&#x200B;이 변경되면 **상태 선택** 드롭다운 목록에서 선택이 **변경됩니다**.
 1. **Then** 섹션의 **작업 선택** 드롭다운 목록에서 **[!UICONTROL 호출 서비스]**&#x200B;를 선택합니다.

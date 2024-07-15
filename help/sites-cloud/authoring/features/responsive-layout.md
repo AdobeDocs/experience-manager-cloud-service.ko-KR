@@ -49,7 +49,7 @@ AEM에서는 메커니즘을 조합하여 페이지에 대한 반응형 레이�
 
 >[!TIP]
 >
->Adobe 제공 [GitHub 설명서](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) 응답형 레이아웃 을 프런트엔드 개발자에게 참조용으로 제공하여 AEM 외부의 AEM 그리드를 사용할 수 있도록 합니다. 예를 들어 나중에 AEM 사이트에 대한 정적 HTML mock-up을 생성할 때 이를 사용할 수 있습니다.
+>Adobe은 응답형 레이아웃의 [GitHub 설명서](https://adobe-marketing-cloud.github.io/aem-responsivegrid/)를 프런트엔드 개발자에게 참조용으로 제공하여 AEM 외부 AEM 그리드를 사용할 수 있도록 합니다. 예를 들어 나중에 사용하기 위해 AEM 사이트에 대한 정적 HTML mock-up을 생성할 때 이를 사용할 수 있습니다.
 
 >[!NOTE]
 >
@@ -136,14 +136,14 @@ AEM을 사용하면 디바이스의 폭에 따라 레이아웃을 정의할 수 
 >
 >아직 사용할 수 없는 경우에는 **레이아웃 컨테이너**&#x200B;를 단락 시스템/페이지에 대해 확실히 활성화해야 합니다. <!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
 
-1. **레이아웃 컨테이너**&#x200B;는 [구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)에서 표준 구성 요소로 사용할 수 있습니다. 여기에서 페이지의 필요한 위치로 드래그하면 그 뒤에 를 볼 수 있습니다. **여기에 구성 요소 드래그** 자리 표시자.
+1. **레이아웃 컨테이너**&#x200B;는 [구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)에서 표준 구성 요소로 사용할 수 있습니다. 여기에서 페이지의 필요한 위치로 드래그하면 **구성 요소를 여기로 드래그** 자리 표시자가 표시됩니다.
 1. 그런 다음 구성 요소를 레이아웃 컨테이너에 추가할 수 있습니다. 이러한 구성 요소는 실제 콘텐츠를 담게 됩니다.
 
    ![레이아웃 컨테이너](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
 
 ## 레이아웃 컨테이너에서 작업 선택 및 수행(편집 모드) {#selecting-and-taking-action-on-a-layout-container-edit-mode}
 
-다른 구성 요소와 마찬가지로 을 선택한 다음 레이아웃 컨테이너에서 작업(복사, 잘라내기, 삭제)할 수 있습니다(에 있을 때) **편집** mode):
+다른 구성 요소와 마찬가지로 을(를) 선택한 다음 레이아웃 컨테이너에서 작업(잘라내기, 복사, 삭제)할 수 있습니다(**편집** 모드에 있는 경우).
 
 >[!CAUTION]
 >
@@ -202,7 +202,7 @@ AEM을 사용하면 디바이스의 폭에 따라 레이아웃을 정의할 수 
 
   ![구성 요소 숨기기](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* 위치 **레이아웃** 모드 다음을 선택할 수 있습니다. **여기에 구성 요소 드래그** 전체 구성 요소를 선택합니다. 이 모드에 대한 도구 모음이 표시됩니다.
+* **레이아웃** 모드에서 **구성 요소를 여기로 드래그**&#x200B;하여 전체 구성 요소를 선택할 수 있습니다. 이 모드에 대한 도구 모음이 표시됩니다.
 
   도구 모음은 레이아웃 구성 요소의 상태와 이에 속하는 구성 요소에 따라 옵션이 달라집니다. 예:
 

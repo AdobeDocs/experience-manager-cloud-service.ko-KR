@@ -72,10 +72,10 @@ ht-degree: 92%
 
 >[!NOTE]
 >
->라이브 카피와 함께 사용할 페이지 속성을 구성할 때에는 다음을 참조하십시오. [다중 사이트 관리자 확장](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties) 을 참조하십시오.
+>라이브 카피에 사용할 페이지 속성을 구성할 때 자세한 내용은 [다중 사이트 관리자 확장](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties)을 참조하십시오.
 
 ## 페이지 속성의 샘플 구성 {#sample-configuration-of-page-properties}
 
 이 샘플은 [`sling:orderBefore`](/help/implementing/developing/introduction/sling-resource-merger.md#properties) 사용을 포함하여 [Sling 리소스 병합](/help/implementing/developing/introduction/sling-resource-merger.md)의 대화 상자 비교 기법을 보여 줍니다. 또한 `cq:showOnCreate` 및 `cq:hideOnEdit` 모두의 사용을 보여 줍니다.
 
-이 페이지의 코드는에서 찾을 수 있습니다. [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog).
+[GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)에서 이 페이지의 코드를 찾을 수 있습니다.

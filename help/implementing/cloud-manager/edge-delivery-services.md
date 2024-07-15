@@ -28,19 +28,19 @@ Edge Delivery Services는 웹 사이트에서 콘텐츠를 작성하는 방법�
 
 범용 편집기를 사용하여 AEM 콘텐츠 관리 및 WYSIWYG 작성과 문서 기반 작성을 모두 사용할 수 있습니다.
 
-AEMas a Cloud Service 의 Cloud Manager를 사용하면 프로젝트에 대해 Edge Delivery Service를 활성화할 수 있습니다.
+AEM as a Cloud Service의 Cloud Manager을 사용하면 프로젝트에 Edge Delivery 서비스를 활성화할 수 있습니다.
 
 >[!TIP]
 >
->Edge Delivery Services 및 AEM과 함께 사용하는 방법에 대한 자세한 내용은 문서를 참조하십시오. [Edge Delivery Services 개요.](/help/edge/overview.md)
+>Edge Delivery Services 및 AEM에서 사용할 수 있는 방법에 대한 자세한 내용은 [Edge Delivery Services 개요](/help/edge/overview.md) 문서를 참조하십시오.
 
 ## Cloud Manager의 Edge Delivery Services {#edge-in-cloud-manager}
 
-Adobe Experience Manager Sites의 일부로 Edge Delivery Services 라이선스가 부여된 경우 Cloud Manager에서 직접 Edge Delivery Services을 사용하여 사이트를 온보딩하고 라이브로 전환할 수 있습니다 [가이드 셀프 서비스 경험 사용.](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+Adobe Experience Manager Sites의 일부로 Edge Delivery Services 라이선스가 부여된 경우 Cloud Manager에서 직접 Edge Delivery Services을 사용하여 사이트를 온보딩하고 가이드 셀프 서비스 환경을 사용하여 [라이브로 전환할 수 있습니다.](/help/implementing/cloud-manager/managing-code/private-repositories.md)
 
 이를 통해 모든 AEM 속성에 대해 통합된 경험이 가능해지며 도메인 이름 관리, SSL 인증서 관리 및 CDN 매핑을 포함한 모든 중요한 워크플로와의 일관성이 보장됩니다.
 
-Edge Delivery Services은 두 가지 모두에서 사용할 수 있습니다. [프로덕션 및 샌드박스 프로그램.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+Edge Delivery Services은 [프로덕션 프로그램과 샌드박스 프로그램 모두에서 사용할 수 있습니다.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
 ## 활성화 Edge Delivery Services {#enabling}
 

@@ -113,7 +113,7 @@ Cloud Manager를 사용하여 빌드 및 배포하려면 AEM 프로젝트가 다
 
 >[!NOTE]
 >
->암호로 보호된 Maven 저장소의 아티팩트는 이 메커니즘을 통해 배포된 코드가 현재 를 통해 실행되지 않으므로 신중하게 사용해야 합니다 [코드 품질 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md) cloud Manager의 품질 게이트에 구현되었습니다. 따라서 AEM에 연결되지 않은 코드에만 드물게 사용해야 합니다 이진과 함께 전체 프로젝트 소스 코드 외에 Java 소스도 배포하는 것이 좋습니다.
+>암호로 보호된 Maven 저장소의 아티팩트는 이 메커니즘을 통해 배포된 코드가 현재 Cloud Manager의 품질 게이트에 구현된 [코드 품질 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md)을 통해 실행되지 않으므로 신중하게 사용해야 합니다. 따라서 AEM에 연결되지 않은 코드에만 드물게 사용해야 합니다 이진과 함께 전체 프로젝트 소스 코드 외에 Java 소스도 배포하는 것이 좋습니다.
 
 Cloud Manager 내에서 암호로 보호된 Maven 저장소를 사용하려면 다음 작업을 수행하십시오.
 
@@ -123,7 +123,7 @@ Cloud Manager 내에서 암호로 보호된 Maven 저장소를 사용하려면 �
 Cloud Manager 빌드 프로세스가 시작되면 다음 작업을 수행하십시오.
 
 * 이 파일의 `<servers>` 요소는 Cloud Manager에서 제공하는 기본 `settings.xml` 파일에 병합됩니다.
-   * 다음으로 시작하는 서버 ID `adobe` 및 `cloud-manager` 예약된 것으로 간주됩니다. 사용자 지정 서버에서는 사용하지 마십시오.
+   * `adobe` 및 `cloud-manager`(으)로 시작하는 서버 ID는 예약된 것으로 간주됩니다. 사용자 지정 서버에서는 사용하지 마십시오.
    * 이러한 접두사 중 하나와 일치하지 않는 서버 ID 또는 기본 ID `central`은 Cloud Manager에서 미러링되지 않습니다.
 * 이 파일이 있는 경우 서버 ID는 `pom.xml` 파일 내의 `<repository>` 및/또는 `<pluginRepository>` 요소 내부에서 참조됩니다.
 * 일반적으로 이러한 `<repository>` 및/또는 `<pluginRepository>` 요소는 [Cloud Manager별 프로필](#activating-maven-profiles-in-cloud-manager) 내에 포함되지만 반드시 필요한 것은 아닙니다.

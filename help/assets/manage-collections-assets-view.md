@@ -96,7 +96,7 @@ You can share collections with various users that are assigned different levels 
 
 ## 스마트 컬렉션 관리 {#manage-smart-collection}
 
-검색 결과를 스마트 컬렉션으로 저장하여 컬렉션 콘텐츠를 동적으로 업데이트합니다. 스마트 컬렉션을 만드는 동안 정의된 검색 기준에 맞는 에셋 보기 저장소에 추가된 에셋이 있는 경우 스마트 컬렉션을 열면 해당 스마트 컬렉션의 콘텐츠가 자동으로 업데이트됩니다.
+검색 결과를 스마트 컬렉션으로 저장하여 컬렉션 콘텐츠를 동적으로 업데이트합니다. 스마트 컬렉션을 만드는 동안 정의된 검색 기준에 맞는 Assets 보기 저장소에 추가된 에셋이 있는 경우 스마트 컬렉션을 열면 해당 스마트 컬렉션의 콘텐츠가 자동으로 업데이트됩니다.
 
 ### 스마트 컬렉션 만들기 {#create-smart-collection}
 
@@ -166,7 +166,7 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 
 ![자산에 대한 링크 공유](assets/share-link-collections.png)
 
-외부 관련자와 컬렉션 링크를 공유하는 방법에 대한 자세한 내용은 [에셋에 대한 링크 공유](/help/assets/share-links-for-assets-view.md).
+외부 관련자와 컬렉션 링크를 공유하는 방법에 대한 자세한 내용은 [에셋에 대한 링크 공유](/help/assets/share-links-for-assets-view.md)를 참조하십시오.
 
 ## 컬렉션 다운로드 {#download-collection}
 

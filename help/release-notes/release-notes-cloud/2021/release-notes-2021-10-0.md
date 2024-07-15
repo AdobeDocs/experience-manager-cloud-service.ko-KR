@@ -30,11 +30,11 @@ ht-degree: 70%
 
 ## 릴리스 비디오 {#release-video}
 
-다음을 살펴보십시오. [2021년 10월 릴리스 개요](https://video.tv.adobe.com/v/338253) 추가된 기능에 대한 요약을 보려면 비디오 를 사용하십시오.
+추가된 기능에 대한 요약을 보려면 [2021년 10월 릴리스 개요](https://video.tv.adobe.com/v/338253) 비디오를 보십시오.
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### 의 새로운 기능 [!DNL Sites] {#sites-features}
+### [!DNL Sites]의 새로운 기능 {#sites-features}
 
 * 이제 콘텐츠 조각 모델은 게시된 후 읽기 전용 상태로 자동 설정되므로, 편집된 모델을 다시 게시한 후 의도하지 않게 라이브 API 쿼리가 중단되는 것을 방지할 수 있습니다. 게시된 모델을 편집하려고 할 때 사용자에게 경고 메시지가 표시됩니다. 경고를 수락하면 편집할 수 있습니다.
 
@@ -42,11 +42,11 @@ ht-degree: 70%
 
 ### [!DNL Assets]의 새로운 기능 {#assets-features}
 
-* [!DNL Experience Manager] 는 이제 기본 제공 커넥터를 사용하여 지원되는 오디오 및 비디오 에셋에서 텍스트 트랜스크립트를 자동으로 생성합니다. [!DNL Azure Media Services]. 다음 [지원되는 파일 유형](/help/assets/file-format-support.md#audio-video-transcription-formats) 는 자동으로 기록되며 텍스트는 WebVTT 형식으로 저장됩니다. WebVTT 캡션은 보다 효과적인 검색, 캡션 또는 번역에 사용됩니다. 또한 이 기능은 에셋의 접근성, 검색 기능 및 현지화 기능을 향상시킵니다.
+* [!DNL Experience Manager]은(는) 이제 [!DNL Azure Media Services]에 기본 제공 커넥터를 사용하여 지원되는 오디오 및 비디오 에셋에서 텍스트 트랜스크립트를 자동 생성할 수 있습니다. [지원되는 파일 형식](/help/assets/file-format-support.md#audio-video-transcription-formats)은(는) 자동으로 기록되며 텍스트는 WebVTT 형식으로 저장됩니다. WebVTT 캡션은 보다 효과적인 검색, 캡션 또는 번역에 사용됩니다. 또한 이 기능은 에셋의 접근성, 검색 기능 및 현지화 기능을 향상시킵니다.
 
-### 의 새로운 기능 [!DNL Assets] 프리릴리스 채널 {#assets-prerelease-features}
+### [!DNL Assets] 프리릴리스 채널의 새로운 기능 {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] 이미지 스마트 자르기 및 색상 견본 은 이제 개선된 자르기 및 색상 견본을 생성하는 최신 Sensei 서비스에서 제공합니다. 동일한 종횡비에 대해 서로 다른 해상도가 적용된 다양한 자르기 콘텐츠 생성을 위해 향상된 기능도 출시되었습니다. 또한 이미지 프로필에서 너비와 높이를 변경하지 않는 경우 재처리 시 수동 편집 기능은 그대로 유지됩니다.
+* [!DNL Dynamic Media] 이미지 스마트 자르기 및 색상 견본은 이제 개선된 자르기 및 색상 견본을 생성하는 최신 Sensei 서비스에서 제공합니다. 동일한 종횡비에 대해 서로 다른 해상도가 적용된 다양한 자르기 콘텐츠 생성을 위해 향상된 기능도 출시되었습니다. 또한 이미지 프로필에서 너비와 높이를 변경하지 않는 경우 재처리 시 수동 편집 기능은 그대로 유지됩니다.
 
 * 스마트 태그는 스마트 컨텐츠 서비스 대신 에셋 마이크로서비스를 사용하여 에셋에 자동으로 적용됩니다. 태깅 결과를 개선하고 편향을 줄이기 위해 기본 모델을 업데이트합니다. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
@@ -60,7 +60,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### [!DNL Forms]의 새로운 기능 {#what-is-new-forms-oct-2021}
 
-* **적응형 Forms에 대한 Analytics**: 이제 적응형 Forms용 Adobe Analytics을 통해 로그인된 및 로그인되지 않은(익명의) 사용자 행동을 포착하고 추적하여 사용자 인사이트를 수집할 수 있습니다. 이로써 데이터를 기반으로 정보에 입각한 결정을 내려 사용자 경험을 개선할 수 있습니다.
+* **적응형 Forms용 Analytics**: 이제 적응형 Forms용 Adobe Analytics을 통해 로그인된 및 로그인되지 않은(익명의) 사용자 행동을 포착하고 추적하여 사용자 인사이트를 수집할 수 있습니다. 이로써 데이터를 기반으로 정보에 입각한 결정을 내려 사용자 경험을 개선할 수 있습니다.
 
 ### [!DNL Forms] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-forms-oct-2021}
 
@@ -91,7 +91,7 @@ Beta 프로그램에 등록하려면 [!DNL formscsbeta@adobe.com]에 문의하�
 
 ## Cloud Manager {#cloud-manager}
 
-이 섹션에서는 AEM as a Cloud Service 2021.10.0의 Cloud Manager 릴리스 정보에 대해 간략히 소개합니다.
+이 섹션에서는 AEM as a Cloud Service 2021.10.0의 Cloud Manager 릴리스 정보에 대해 간략히 설명합니다.
 
 ### 릴리스 날짜 {#release-date-cm-nov}
 

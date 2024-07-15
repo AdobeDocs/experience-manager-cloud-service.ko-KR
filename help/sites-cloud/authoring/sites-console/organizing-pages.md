@@ -15,7 +15,7 @@ ht-degree: 67%
 
 # 페이지 구성 {#creating-and-organizing-pages}
 
-AEM을 사용하여 웹 사이트를 구성하는 방법에 대해 알아봅니다. 페이지를 구성하는 방법을 이해하면 다음과 같은 작업을 수행할 수 있습니다 [새 페이지 만들기](/help/sites-cloud/authoring/sites-console/creating-pages.md) 및 [기존 페이지를 관리합니다.](/help/sites-cloud/authoring/sites-console/managing-pages.md)
+AEM을 사용하여 웹 사이트를 구성하는 방법에 대해 알아봅니다. 페이지를 구성하는 방법을 이해하면 [새 페이지를 만들고](/help/sites-cloud/authoring/sites-console/creating-pages.md) [기존 페이지를 관리합니다](/help/sites-cloud/authoring/sites-console/managing-pages.md)
 
 {{edge-delivery-authoring}}
 
@@ -30,7 +30,7 @@ AEM을 사용하여 웹 사이트를 구성하는 방법에 대해 알아봅니�
 
 웹 사이트의 구조는 콘텐츠 페이지를 담는 트리로 생각할 수 있습니다. 이 콘텐츠 페이지의 이름은 URL을 구성하는 데 사용됩니다. 반면에 제목은 페이지 콘텐츠가 표시될 때 표시됩니다.
 
-다음은 의 예입니다. [WKND 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) 사이트, 스케이트보드장에 대한 기사(`la-skateparks`)에 액세스할 수 있습니다.
+다음은 [WKND 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) 사이트에서 스케이트보드장(`la-skateparks`)에 대한 문서에 액세스하는 예를 보여 줍니다.
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -51,7 +51,7 @@ AEM을 사용하여 웹 사이트를 구성하는 방법에 대해 알아봅니�
    /...
 ```
 
-이 구조는 다음에서 볼 수 있습니다. [**사이트** 콘솔,](/help/sites-cloud/authoring/sites-console/introduction.md) 웹 사이트의 페이지를 탐색하고 페이지에서 작업을 수행할 수 있는 위치.
+이 구조는 웹 사이트의 페이지를 탐색하고 페이지에서 작업을 수행할 수 있는 [**사이트** 콘솔,](/help/sites-cloud/authoring/sites-console/introduction.md)에서 볼 수 있습니다.
 
 ## 페이지 이름 지정 규칙 {#page-naming-conventions}
 
@@ -77,7 +77,7 @@ AEM을 사용하여 웹 사이트를 구성하는 방법에 대해 알아봅니�
 >
 >일부 브라우저(예: 이전 버전의 IE)는 특정 길이까지만 URL을 허용하므로 기술적인 이유로 페이지 이름을 짧게 유지하는 경우도 있습니다.
 
-페이지를 만들 때 AEM [규칙에 따라 페이지 이름을 확인합니다.](/help/implementing/developing/introduction/naming-conventions.md) AEM 및 JCR에서 적용합니다.
+페이지를 만들 때 AEM [AEM 및 JCR에서 지정한 규칙에 따라 페이지 이름을 확인](/help/implementing/developing/introduction/naming-conventions.md)합니다.
 
 허용되는 최소 문자는 다음과 같습니다.
 
@@ -95,7 +95,7 @@ AEM을 사용하여 웹 사이트를 구성하는 방법에 대해 알아봅니�
 
 ### 제목 {#title}
 
-페이지만 제공하는 경우 **제목** 페이지를 만들 때 AEM은 페이지를 파생합니다 **이름** 이 문자열에서 [규칙에 따라 이름 확인](/help/implementing/developing/introduction/naming-conventions.md) AEM 및 JCR에서 적용합니다.
+페이지를 만들 때 **Title** 페이지만 제공하면 AEM은 이 문자열에서 **Name** 페이지를 파생하고 AEM 및 JCR에서 지정한 [규칙에 따라 이름을 확인](/help/implementing/developing/introduction/naming-conventions.md)합니다.
 
 **제목** 필드에는 잘못된 문자가 포함될 수 있지만, 파생되는 이름에서는 잘못된 문자가 대체됩니다. 예:
 
@@ -106,7 +106,7 @@ AEM을 사용하여 웹 사이트를 구성하는 방법에 대해 알아봅니�
 
 ### 이름 {#name}
 
-페이지를 제공할 때 **이름** 페이지를 만들 때 AEM [규칙에 따라 이름을 확인합니다.](/help/implementing/developing/introduction/naming-conventions.md) AEM 및 JCR에서 적용합니다. **이름** 필드에 잘못된 문자를 제출할 수 없습니다. AEM에서 유효하지 않은 문자를 발견하면 필드가 설명 메시지와 함께 강조 표시됩니다.
+페이지를 만들 때 **이름** 페이지를 제공하면 AEM [AEM 및 JCR에서 지정한 규칙에 따라 이름을 확인](/help/implementing/developing/introduction/naming-conventions.md)합니다. **이름** 필드에 잘못된 문자를 제출할 수 없습니다. AEM에서 유효하지 않은 문자를 발견하면 필드가 설명 메시지와 함께 강조 표시됩니다.
 
 ![유효하지 않은 페이지 이름을 입력하는 예](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -118,19 +118,19 @@ AEM을 사용하여 웹 사이트를 구성하는 방법에 대해 알아봅니�
 
 ## 템플릿 {#templates}
 
-AEM에서 [템플릿](/help/sites-cloud/authoring/sites-console/templates.md) 는 만들어지는 새 페이지의 기반으로 사용되는 특수한 유형의 페이지입니다.
+AEM에서 [template](/help/sites-cloud/authoring/sites-console/templates.md)은(는) 만들어지는 새 페이지의 기반으로 사용되는 특수 형식의 페이지입니다.
 
 템플릿은 썸네일 이미지 및 기타 속성을 포함하는 페이지의 구조를 정의합니다. 예를 들어 제품 페이지, 사이트맵 및 연락처 정보에 대한 별도의 템플릿이 있을 수 있습니다. 템플릿은 [구성 요소](#components)로 구성됩니다.
 
 AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 가능한 템플릿은 개별 웹 사이트에 따라 다릅니다. 주요 필드는 다음과 같습니다.
 
 * **제목** - 결과 웹 페이지에 표시되는 제목
-* **이름** - 페이지 이름을 지정할 때 사용됩니다.
-* **템플릿** - 새 페이지를 생성하는 데 사용할 수 있는 템플릿 목록
+* **이름** - 페이지 이름을 지정할 때 사용됨
+* **템플릿** - 새 페이지를 생성할 때 사용할 수 있는 템플릿 목록
 
 ## 구성 요소 {#components}
 
-[구성 요소](/help/implementing/developing/components/overview.md) 는 특정 유형의 컨텐츠를 추가할 수 있도록 AEM에서 제공하는 요소입니다. AEM에는 다음과 같은 기본 제공 구성 요소가 포함되어 있습니다. [핵심 구성 요소](/help/implementing/developing/components/overview.md#core-components) 포괄적인 기능을 제공합니다. 구성 요소의 몇 가지 예는 다음과 같습니다.
+[구성 요소](/help/implementing/developing/components/overview.md)는 특정 유형의 콘텐츠를 추가할 수 있도록 AEM에서 제공하는 요소입니다. AEM에는 포괄적인 기능을 제공하는 [핵심 구성 요소](/help/implementing/developing/components/overview.md#core-components)라는 다양하고 특별한 구성 요소가 포함되어 있습니다. 구성 요소의 몇 가지 예는 다음과 같습니다.
 
 * 텍스트
 * 이미지

@@ -3,8 +3,8 @@ title: AEM Forms as a Cloud Service 릴리스 정보
 description: AEM Forms as a Cloud Service의 새로운 기능, Beta 릴리스, 프리릴리스 정보 등에 대해 알 수 있습니다.
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
-workflow-type: ht
-source-wordcount: '2024'
+workflow-type: tm+mt
+source-wordcount: '2003'
 ht-degree: 100%
 
 ---

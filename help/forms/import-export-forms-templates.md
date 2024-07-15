@@ -21,22 +21,22 @@ ht-degree: 3%
 
 # 적응형 Forms 및 AEM Forms 에셋 가져오기 또는 내보내기 {#importing-and-exporting-assets-to-aem-forms}
 
-다음 작업 간에 적응형 Forms 및 적응형 양식 테마, FDM(양식 데이터 모델), 적응형 양식 템플릿, 조각, PDF forms과 같은 관련 에셋을 이동할 수 있습니다. [!DNL AEM Forms] 인스턴스.
+[!DNL AEM Forms]개 인스턴스 간에 적응형 Forms 및 적응형 양식 테마, FDM(양식 데이터 모델), 적응형 양식 템플릿, 조각 및 PDF forms과 같은 관련 자산을 이동할 수 있습니다.
 
 ## 적응형 Forms, PDF forms 또는 관련 에셋 다운로드 {#download-forms-amp-documents-assets}
 
 양식 또는 관련 에셋을 다운로드하려면 다음 작업을 수행하십시오.
 
-1. 에 로그인 [!DNL Experience Manager Forms] 인스턴스.
-1. 선택 **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**.
+1. [!DNL Experience Manager Forms] 인스턴스에 로그인합니다.
+1. **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**&#x200B;를 선택합니다.
 
    ![Forms 선택](/help/forms/assets/select-forms.png)
 
-1. 에셋을 선택하고 **[!UICONTROL 다운로드]** 아이콘 을 클릭합니다.
+1. 에셋을 선택하고 위쪽 레일에서 **[!UICONTROL 다운로드]** 아이콘을 클릭합니다.
 
    ![Forms 다운로드](/help/forms/assets/download-form.png)
 
-   양식을 다운로드할 때 **[!UICONTROL 자산 다운로드]** 대화 상자가 나타납니다.
+   양식을 다운로드하면 **[!UICONTROL 자산 다운로드]** 대화 상자가 나타납니다.
 
    ![양식 에셋 다운로드](/help/forms/assets/download-form-assets.png)
 
@@ -49,40 +49,40 @@ ht-degree: 3%
 지원되는 에셋 유형을 개별적으로 또는 ZIP 아카이브로 업로드할 수 있습니다. ZIP 파일의 경우 지원되는 모든 에셋의 상대 경로가 표시됩니다. ZIP 내에서 지원되지 않는 에셋은 무시되고 나열되지 않습니다. 그러나 ZIP 아카이브에 지원되지 않는 자산만 포함된 경우 팝업 대화 상자 대신 오류 메시지가 표시됩니다.
 양식 또는 관련 에셋을 업로드하려면:
 
-1. 에 로그인 [!DNL Experience Manager Forms] 인스턴스.
-1. 선택 **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**.
+1. [!DNL Experience Manager Forms] 인스턴스에 로그인합니다.
+1. **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**&#x200B;를 선택합니다.
 
    ![Forms 선택](/help/forms/assets/select-forms.png)
 
-1. 선택 **[!UICONTROL 만들기]** > **[!UICONTROL 파일 업로드]**. 대화 상자가 나타납니다.
+1. **[!UICONTROL 만들기]** > **[!UICONTROL 파일 업로드]**&#x200B;를 선택합니다. 대화 상자가 나타납니다.
 
    ![Forms 업로드](/help/forms/assets/form-upload.png)
 
-1. 대화 상자에서 가져올 패키지 또는 아카이브를 찾아 선택합니다. 지원되는 다른 파일 유형을 선택할 수도 있습니다. 선택 **[!UICONTROL 열기]**. 선택한 폴더 또는 파일 이름에는 특수 문자가 포함되지 않아야 합니다.
+1. 대화 상자에서 가져올 패키지 또는 아카이브를 찾아 선택합니다. 지원되는 다른 파일 유형을 선택할 수도 있습니다. **[!UICONTROL 열기]**&#x200B;를 선택합니다. 선택한 폴더 또는 파일 이름에는 특수 문자가 포함되지 않아야 합니다.
 
-   대화 상자에서 업로드할 에셋의 세부 정보를 확인하고 을 선택합니다 **[!UICONTROL 업로드]**.
+   대화 상자에서 업로드할 자산의 세부 정보를 확인하고 **[!UICONTROL 업로드]**&#x200B;를 선택합니다.
 
    기존 양식 에셋을 업로드하는 경우 에셋이 업데이트됩니다.
 
    >[!NOTE]
    >
-   > 이름이 다른 리소스 유형과 충돌하는 경우 패키지를 업로드해도 기존 폴더 계층 구조가 바뀌지 않습니다. 예를 들어 위치에 &#39;교육&#39;이라는 적응형 양식이 있는 경우 `/content/dam/formsanddocuments` 서버 한 대에 적응형 양식을 다운로드하고 다른 서버에 양식을 업로드할 수 있습니다. 두 번째 서버에도 동일한 위치에 &#39;Training&#39;이라는 이름의 폴더가 있습니다 `/content/dam/formsanddocuments`. 업로드에 실패합니다.
+   > 이름이 다른 리소스 유형과 충돌하는 경우 패키지를 업로드해도 기존 폴더 계층 구조가 바뀌지 않습니다. 예를 들어 &#39;Training&#39;이라는 적응형 양식이 한 서버의 `/content/dam/formsanddocuments` 위치에 있는 경우. 적응형 양식을 다운로드하고 다른 서버에 양식을 업로드할 수 있습니다. 같은 위치 `/content/dam/formsanddocuments`에 이름이 &#39;Training&#39;인 폴더도 있습니다. 업로드에 실패합니다.
 
 ## 테마 다운로드
 
-다음 위치에서 테마를 내보낼 수 있습니다. [!DNL AEM Forms] 다른 프로젝트 또는 인스턴스에서 사용할 수 있습니다. AEM을 사용하면 테마를 zip 파일로 다운로드하여 인스턴스에 업로드할 수 있습니다.
+다른 프로젝트 또는 인스턴스에서 사용할 수 있는 [!DNL AEM Forms]의 테마를 내보낼 수 있습니다. AEM을 사용하면 테마를 zip 파일로 다운로드하여 인스턴스에 업로드할 수 있습니다.
 테마를 다운로드하려면:
 
-1. 에 로그인 [!DNL Experience Manager Forms] 작성자 인스턴스.
-1. 선택 **[!UICONTROL Forms]** > **[!UICONTROL 테마]**.
+1. [!DNL Experience Manager Forms] 작성자 인스턴스에 로그인합니다.
+1. **[!UICONTROL Forms]** > **[!UICONTROL 테마]**&#x200B;를 선택합니다.
 
    ![테마 선택](/help/forms/assets/select-theme.png)
 
-1. 테마 페이지에서 테마를 선택하고 **[!UICONTROL 다운로드]** 아이콘 을 클릭합니다.
+1. 테마 페이지에서 테마를 선택하고 위쪽 레일에서 **[!UICONTROL 다운로드]** 아이콘을 클릭합니다.
 
    ![테마 다운로드](/help/forms/assets/download-theme.png)
 
-   테마를 다운로드할 때 **[!UICONTROL 자산 다운로드]** 대화 상자가 나타납니다.
+   테마를 다운로드하면 **[!UICONTROL 자산 다운로드]** 대화 상자가 나타납니다.
 
    ![테마 에셋 다운로드](/help/forms/assets/download-theme-asset.png)
 
@@ -95,16 +95,16 @@ ht-degree: 3%
 다른 사용자가 양식에서 만드는 테마를 업로드하고 사용할 수 있습니다.
 테마를 업로드하려면:
 
-1. 에 로그인 [!DNL Experience Manager Forms] 인스턴스.
-1. Experience Manager에서 다음으로 이동 **[!UICONTROL Forms]** > **[!UICONTROL 테마]**.
+1. [!DNL Experience Manager Forms] 인스턴스에 로그인합니다.
+1. Experience Manager에서 **[!UICONTROL Forms]** > **[!UICONTROL 테마]**&#x200B;로 이동합니다.
 
    ![테마 선택](/help/forms/assets/select-theme.png)
 
-1. 테마 페이지에서 **[!UICONTROL 만들기]** > **[!UICONTROL 파일 업로드]**.
+1. 테마 페이지에서 **[!UICONTROL 만들기]** > **[!UICONTROL 파일 업로드]**&#x200B;를 클릭합니다.
 
    ![테마 업로드](/help/forms/assets/theme-upload.png)
 
-1. 컴퓨터에서 테마 패키지를 검색하여 선택하고 **[!UICONTROL 업로드]**. 업로드한 테마는 테마 페이지에서 사용할 수 있습니다.
+1. 컴퓨터에서 테마 패키지를 찾아 선택한 다음 **[!UICONTROL 업로드]**&#x200B;를 클릭합니다. 업로드한 테마는 테마 페이지에서 사용할 수 있습니다.
 
 ## 폴더를 사용하여 적응형 Forms, PDF forms 및 관련 에셋 구성  {#folders-and-organizing-assets}
 
@@ -114,17 +114,17 @@ ht-degree: 3%
 
 폴더를 만들려면 다음 작업을 수행하십시오.
 
-1. 에 로그인 [!DNL Experience Manager Forms] 인스턴스.
-1. 선택 **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**.
+1. [!DNL Experience Manager Forms] 인스턴스에 로그인합니다.
+1. **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**&#x200B;를 선택합니다.
 
    ![양식 선택](/help/forms/assets/select-forms.png)
 
-1. 선택 **[!UICONTROL 만들기]** > **[!UICONTROL 폴더]**.
+1. **[!UICONTROL 만들기]** > **[!UICONTROL 폴더]**&#x200B;를 선택합니다.
 
    ![폴더 만들기](/help/forms/assets/create-folder.png)
 
-   다음 **[!UICONTROL 폴더 추가]** 대화 상자가 나타납니다.
-1. 다음을 입력합니다. **[!UICONTROL 제목]**. 다음 **[!UICONTROL 이름]** 을 입력하면 자동으로 채워집니다. **[!UICONTROL 제목]**.
+   **[!UICONTROL 폴더 추가]** 대화 상자가 나타납니다.
+1. **[!UICONTROL 제목]**&#x200B;을 입력하십시오. **[!UICONTROL Title]**&#x200B;을(를) 입력할 때 **[!UICONTROL Name]**&#x200B;이(가) 자동으로 채워집니다.
 
    ![폴더 추가](/help/forms/assets/add-folder.png)
 
@@ -136,7 +136,7 @@ ht-degree: 3%
 
 정의한 제목이 있는 새 폴더가 자산 목록의 현재 위치에 표시됩니다.
 
-이름이 지정된 폴더가 있는 경우 오류가 발생하여 제출이 실패합니다. 마우스를 오류 위로 가져가면 오류 메시지를 볼 수 있습니다 ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) 이름 필드 옆에 표시되는 아이콘
+이름이 지정된 폴더가 있는 경우 오류가 발생하여 제출이 실패합니다. 이름 필드 옆에 표시되는 오류 ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) 아이콘 위로 마우스를 가져가면 오류 메시지를 볼 수 있습니다.
 
 만든 폴더를 선택하여 폴더 내부로 이동하고 폴더 내에 에셋 또는 폴더를 만들 수 있습니다. 또한 폴더를 선택하여 다운로드 대기열에 추가하거나 삭제하거나 이름을 편집할 수 있습니다.
 
@@ -146,25 +146,25 @@ ht-degree: 3%
 
 에셋의 사본을 만들려면 다음 작업을 수행하십시오.
 
-1. 에 로그인 [!DNL Experience Manager Forms] 인스턴스.
-1. 관련 에셋 페이지에서 하나 이상의 에셋을 선택합니다. UI에 **[!UICONTROL 복사]** 아이콘.
-1. 선택 **[!UICONTROL 복사]**. UI에 ![붙여넣기 아이콘](/help/forms/assets/Smock_Paste_18_N.svg) 아이콘.
+1. [!DNL Experience Manager Forms] 인스턴스에 로그인합니다.
+1. 관련 에셋 페이지에서 하나 이상의 에셋을 선택합니다. UI에 **[!UICONTROL 복사]** 아이콘이 표시됩니다.
+1. **[!UICONTROL 복사]**&#x200B;를 선택합니다. UI에 ![붙여넣기 아이콘](/help/forms/assets/Smock_Paste_18_N.svg) 아이콘이 표시됩니다.
 
    ![에셋 복사](/help/forms/assets/copy-asset.png)
 
-   붙여넣기 전에 폴더 내부로 이동하거나 탐색할 수도 있습니다. 서로 다른 폴더에 동일한 이름의 자산이 포함될 수 있습니다. 폴더에 대한 자세한 내용은 [폴더 및 자산 구성](#folders-and-organizing-assets).
-1. 선택 **[!UICONTROL 붙여넣기]**.
+   붙여넣기 전에 폴더 내부로 이동하거나 탐색할 수도 있습니다. 서로 다른 폴더에 동일한 이름의 자산이 포함될 수 있습니다. 폴더에 대한 자세한 내용은 [폴더 및 자산 구성](#folders-and-organizing-assets)을 참조하십시오.
+1. **[!UICONTROL 붙여넣기]**&#x200B;를 선택합니다.
 
    ![자산 붙여넣기](/help/forms/assets/paste-asset.png)
 
-1. 다음 **[!UICONTROL 붙여넣기]** 대화 상자가 나타납니다. 시스템에서는 자산의 새 복사본에 이름과 제목을 자동으로 생성하지만 자산의 제목과 이름을 편집할 수 있습니다.
+1. **[!UICONTROL 붙여넣기]** 대화 상자가 나타납니다. 시스템에서는 자산의 새 복사본에 이름과 제목을 자동으로 생성하지만 자산의 제목과 이름을 편집할 수 있습니다.
 
-   같은 위치에 에셋을 복사하고 붙여넣는 경우 의 기존 이름에 접미사 &quot;-CopyXX&quot;가 추가됩니다. `asset`. 복사한 에셋에 대한 제목이 없는 경우 자동 생성된 제목 필드는 비어 있습니다.
+   자산을 같은 위치에 복사하고 붙여넣는 경우 `asset`의 기존 이름에 접미사 &quot;-CopyXX&quot;가 추가됩니다. 복사한 에셋에 대한 제목이 없는 경우 자동 생성된 제목 필드는 비어 있습니다.
 
    ![새 위치에 자산 붙여넣기](/help/forms/assets/paste-click-asset.png)
 
-   필요한 경우 **[!UICONTROL 제목]** 에셋의 사본을 저장할 때 사용합니다. 다음 **[!UICONTROL 이름]** 을 입력하면 자동으로 채워집니다. **[!UICONTROL 제목]**.
-1. 선택 **[!UICONTROL 붙여넣기]**. 복사된 에셋의 새 복사본이 생성됩니다.
+   필요한 경우 자산의 복사본을 저장할 **[!UICONTROL 제목]**&#x200B;을 편집하십시오. **[!UICONTROL Title]**&#x200B;을(를) 입력할 때 **[!UICONTROL Name]**&#x200B;이(가) 자동으로 채워집니다.
+1. **[!UICONTROL 붙여넣기]**&#x200B;를 선택합니다. 복사된 에셋의 새 복사본이 생성됩니다.
 
 ## 검색 {#search-forms}
 
@@ -172,8 +172,8 @@ ht-degree: 3%
 
 자산을 검색하려면 다음 작업을 수행하십시오.
 
-1. 에 로그인 [!DNL Experience Manager Forms] 인스턴스.
-1. 다음을 클릭합니다. ![검색 아이콘](assets/folder-search-icon.svg) 검색 아이콘.
+1. [!DNL Experience Manager Forms] 인스턴스에 로그인합니다.
+1. ![검색 아이콘](assets/folder-search-icon.svg) 검색 아이콘을 클릭합니다.
 
    ![검색 양식](/help/forms/assets/search-form.png)
 
@@ -183,7 +183,7 @@ ht-degree: 3%
 
    ![자산 검색](/help/forms/assets/search-bar.png)
 
-검색 사용에 대한 자세한 내용 및 지침은 [검색](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html).
+검색 사용에 대한 자세한 내용과 지침은 [검색](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html)을 참조하세요.
 
 <!--
 ## Export or create a package {#export-a-workflow-application}

@@ -14,13 +14,13 @@ ht-degree: 26%
 
 # 사이트 콘솔 사이드 패널 {#side-panel}
 
-AEM에서 사이드 패널을 사용하는 방법 알아보기 **사이트** 콘솔을 통해 콘텐츠를 더 잘 이해하고 탐색할 수 있습니다.
+AEM **사이트** 콘솔에서 사이드 패널을 사용하여 콘텐츠를 더 잘 이해하고 탐색하는 방법을 알아봅니다.
 
 ## 방향 {#orientation}
 
-를 입력할 때 기본적으로 사이드 패널이 닫힙니다. **사이트** 콘솔. 이러한 방식으로 화면은 전적으로 콘텐츠 전용이 됩니다.
+**Sites** 콘솔에 들어가면 기본적으로 사이드 패널이 닫힙니다. 이러한 방식으로 화면은 전적으로 콘텐츠 전용이 됩니다.
 
-을(를) 탭하거나 클릭합니다 **사이드 패널** 아이콘 **사이트** 사이드 패널을 활성화하고 콘텐츠 보기를 선택하는 콘솔 도구 모음
+**사이트** 콘솔 도구 모음에서 **사이드 패널** 아이콘을 탭하거나 클릭하여 사이드 패널을 활성화하고 콘텐츠 보기를 선택합니다.
 
 * [컨텐츠 전용](#content-only)
 * [콘텐츠 트리](#content-tree)
@@ -40,7 +40,7 @@ AEM에서 사이드 패널을 사용하는 방법 알아보기 **사이트** 콘
 
 >[!TIP]
 >
->억음 악센트/억음 악센트 사용 `´` 사이드 패널의 컨텐트 전용 보기로 전환하는 키보드 단축키.
+>큰 악센트/백틱 `´` 바로 가기 키를 사용하여 사이드 패널의 콘텐츠 전용 보기로 전환합니다.
 
 ## 콘텐츠 트리 {#content-tree}
 
@@ -56,7 +56,7 @@ AEM에서 사이드 패널을 사용하는 방법 알아보기 **사이트** 콘
 
 >[!TIP]
 >
->* 사용 `Alt+1` 사이드 패널의 콘텐츠 트리 보기로 전환하는 키보드 단축키.
+>* `Alt+1` 바로 가기 키를 사용하여 사이드 패널의 콘텐츠 트리 보기로 전환합니다.
 >* 계층 구조 보기에서 항목을 선택한 후에는 화살표 키를 사용하여 계층 구조를 빠르게 탐색할 수 있습니다.
 >* 자세한 내용은 [키보드 단축키](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)를 참조하십시오.
 
@@ -66,7 +66,7 @@ AEM에서 사이드 패널을 사용하는 방법 알아보기 **사이트** 콘
 
 ![타임라인 세부 사항](/help/sites-cloud/authoring/assets/timeline-detail.png)
 
-다음 **타임라인** 사이드 패널을 통해 드롭다운 목록에서 유형으로 선택할 수 있는 선택한 항목과 관련된 다양한 이벤트를 볼 수 있습니다.
+**타임라인** 사이드 패널을 사용하면 드롭다운 목록에서 유형으로 선택할 수 있는 선택한 항목과 관련된 다양한 이벤트를 볼 수 있습니다.
 
 * 댓글
 * [주석](/help/sites-cloud/authoring/page-editor/annotations.md)
@@ -77,9 +77,9 @@ AEM에서 사이드 패널을 사용하는 방법 알아보기 **사이트** 콘
    * 내역 정보가 저장되지 않으므로 임시 워크플로우에 대한 정보는 표시되지 않습니다.<!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
 * 모두 표시
 
-또한 를 사용하여 선택한 항목에 대한 설명을 추가/볼 수 있습니다. **댓글** 이벤트 목록 맨 아래에 표시되는 상자입니다. 다음에 이어지는 주석 입력 `Return` 이(가) 주석을 등록합니다. It is shown when **Comments** or **Show All** is selected.
+또한 이벤트 목록 맨 아래에 표시된 **설명** 상자를 사용하여 선택한 항목에 대한 설명을 추가하거나 볼 수 있습니다. `Return`(으)로 댓글을 입력하면 댓글이 등록됩니다. It is shown when **Comments** or **Show All** is selected.
 
-다음에서 **사이트** 콘솔 옆에 있는 줄임표 버튼을 통해 추가 기능에 액세스할 수도 있습니다. **댓글** 필드.
+**사이트** 콘솔에서 **댓글** 필드 옆에 있는 줄임표 버튼을 통해 추가 기능에 액세스할 수도 있습니다.
 
 * [버전 저장](/help/sites-cloud/authoring/sites-console/page-versions.md)
 * [워크플로 시작](/help/sites-cloud/authoring/workflows/applying.md)
@@ -88,12 +88,12 @@ AEM에서 사이드 패널을 사용하는 방법 알아보기 **사이트** 콘
 
 >[!TIP]
 >
->* 사용 `Alt+2` 사이드 패널의 타임라인 보기로 전환하는 키보드 단축키.
+>* `Alt+2` 바로 가기 키를 사용하여 사이드 패널의 타임라인 보기로 전환합니다.
 >* 자세한 내용은 [키보드 단축키](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)를 참조하십시오.
 
 ## 참조 {#references}
 
-다음 **참조** 보기는 콘솔에서 선택한 리소스에 대한 참조 유형 또는 리소스에 대한 참조 유형 목록을 보여 줍니다.
+**참조** 보기에는 콘솔에서 선택한 리소스에 대한 참조 형식 또는 리소스 참조 형식 목록이 표시됩니다.
 
 ![참조 세부 사항](assets/console-side-panel-references-detail.png)
 
@@ -108,15 +108,15 @@ AEM에서 사이드 패널을 사용하는 방법 알아보기 **사이트** 콘
 
 ## Site {#site}
 
-다음 **Site** 사이드 패널 보기에는 사이트의 세부 정보가 표시됩니다. [사이트 템플릿을 사용하여 만듭니다.](/help/sites-cloud/administering/site-creation/create-site.md)
+사이드 패널의 **사이트** 보기에는 사이트 템플릿을 사용하여 만든 사이트 [의 세부 정보가 표시됩니다.](/help/sites-cloud/administering/site-creation/create-site.md)
 
 ![사이트 패널](assets/console-side-panel-site-paenl.png)
 
-문서 보기 [사이트 패널을 사용하여 사이트 테마 관리](/help/sites-cloud/administering/site-creation/site-rail.md) 패널을 사용하여 를 관리하는 방법에 대한 자세한 내용은 [사이트의 테마.](/help/sites-cloud/administering/site-creation/site-themes.md).
+패널을 사용하여 사이트의 [테마를 관리하는 방법에 대한 자세한 내용은 문서 [사이트 패널을 사용하여 사이트 테마 관리](/help/sites-cloud/administering/site-creation/site-rail.md)를 참조하십시오.](/help/sites-cloud/administering/site-creation/site-themes.md)
 
 테마 기반 사이트 생성을 활성화하도록 프론트엔드 파이프라인을 아직 설정하지 않은 경우 사이드 패널에서 해당 옵션을 제공합니다.
 
-![사이드 패널에서 프론트엔드 파이프라인 활성화 옵션](assets/sites-console-side-panel-site.png)
+![사이드 패널에서 프론트엔드 파이프라인을 활성화하는 옵션](assets/sites-console-side-panel-site.png)
 
 >[!TIP]
 >
@@ -124,11 +124,11 @@ AEM에서 사이드 패널을 사용하는 방법 알아보기 **사이트** 콘
 
 ## 필터 {#filter}
 
-다음 **필터** 패널은 다음과 유사합니다 [검색 기능](/help/sites-cloud/authoring/search.md) 적절한 위치 필터가 이미 설정되어 있는 상태에서 보려는 콘텐츠를 추가로 필터링할 수 있습니다.
+**필터** 패널은 적절한 위치 필터가 이미 설정된 [검색 기능](/help/sites-cloud/authoring/search.md)과 유사하므로 보려는 콘텐츠를 추가로 필터링할 수 있습니다.
 
 ![필터 예](assets/console-side-panel-filter.png)
 
-사이드 패널의 다른 보기와 달리 다른 보기로 전환하려면 `X` 을 클릭합니다.
+사이드 패널의 다른 보기와 달리 다른 보기로 전환하려면 검색 필드에서 `X`을(를) 탭하거나 클릭합니다.
 
 ## Analytics 설정 {#setup-analytics}
 

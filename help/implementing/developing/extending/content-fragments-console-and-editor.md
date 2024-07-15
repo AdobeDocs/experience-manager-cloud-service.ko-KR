@@ -13,7 +13,7 @@ ht-degree: 9%
 
 # 콘텐츠 조각 콘솔 및 편집기 맞춤화 {#customizing-content-fragment-console-and-editor}
 
-콘텐츠 조각 콘솔 및 편집기는 모두 확장 가능하며 Adobe 앱 빌더를 사용하여 필요에 따라 사용자 정의할 수 있습니다.
+콘텐츠 조각 콘솔 및 편집기는 모두 확장 가능하며 Adobe App Builder을 사용하여 필요에 따라 사용자 정의할 수 있습니다.
 
 자세한 내용은 다음을 참조하십시오.
 

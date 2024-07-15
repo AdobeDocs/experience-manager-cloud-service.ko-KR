@@ -35,7 +35,7 @@ ht-degree: 91%
 
 >[!TIP]
 >
->폴더 구조를 자산 보기에 업로드하는 경우 폴더 구조로 .ZIP 파일을 만들 필요가 없으므로 폴더 구조를 직접 업로드할 수 있습니다. 에셋 보기에 업로드된 .ZIP 파일은 하나의 ZIP 에셋으로 저장되며 업로드 후 자동으로 추출되지 않습니다.
+>폴더 구조를 Assets 보기에 업로드하는 경우 폴더 구조로 .ZIP 파일을 만들 필요가 없으므로 폴더 구조를 직접 업로드할 수 있습니다. Assets 보기에 업로드된 .ZIP 파일은 하나의 ZIP 자산으로 저장되며 업로드 후 자동으로 추출되지 않습니다.
 
 ## 업로드 진행 상황 및 상태 보기 {#upload-progress}
 
@@ -83,7 +83,7 @@ ht-degree: 91%
 
 >[!TIP]
 >
->내에서 직접 DAM 저장소로 에셋을 업로드할 수 있습니다. [!DNL Creative Cloud] 데스크탑 애플리케이션.
+>[!DNL Creative Cloud] 데스크톱 응용 프로그램 내에서 직접 DAM 리포지토리에 에셋을 업로드할 수 있습니다.
 <!--TBD
 See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/assets/integration-assets-view.md).
 -->
@@ -102,7 +102,7 @@ See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/asset
 
 ## 다음 단계 {#next-steps}
 
-* [에셋 보기의 에셋 업로드에 대한 비디오 보기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html)
+* [Assets 보기에서 에셋을 업로드하려면 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html)
 
 * Assets 보기 사용자 인터페이스에서 사용 가능한 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백 제공
 

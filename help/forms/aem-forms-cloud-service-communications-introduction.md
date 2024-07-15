@@ -138,7 +138,7 @@ Communications document manipulation(Document Transformation) API 를 통해 PDF
 
 >[!NOTE]
 >
-> AEM Forms은 PDF 파일과 원활하게 통합되는 다양한 기본 제공 글꼴을 제공합니다. 지원되는 글꼴 목록을 보려면 [여기를 클릭하십시오](/help/forms/supported-out-of-the-box-fonts.md).
+> AEM Forms은 PDF 파일과 원활하게 통합되는 다양한 기본 제공 글꼴을 제공합니다. 지원되는 글꼴 목록을 보려면 [여기를 클릭](/help/forms/supported-out-of-the-box-fonts.md)하세요.
 
 <!-- 
 
@@ -168,7 +168,7 @@ The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-
 
 ## 문서 추출
 
-<span class="preview"> 문서 추출 기능은 얼리어답터 프로그램 아래에 있습니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
+<span class="preview"> 문서 추출 기능이 얼리어답터 프로그램에 있습니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
 
 문서 추출 서비스는 사용 권한, PDF 속성 및 메타데이터와 같은 PDF 문서의 속성을 가져오는 기능을 제공합니다. 문서 추출 기능:
 
@@ -176,7 +176,7 @@ The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-
 * PDF 문서에서 활성화된 사용 권한을 추출하면 사용자가 Adobe Acrobat Reader 확장성을 위해 PDF 문서에 대해 활성화 또는 비활성화된 사용 권한을 검색합니다.
 * PDF 문서에 있는 메타데이터 정보를 가져옵니다. 메타데이터는 텍스트 및 그래픽과 같은 문서의 컨텐츠와 구별되는 문서에 대한 정보입니다. Adobe XMP(Extensible Metadata Platform)은 문서 메타데이터를 처리하는 표준입니다. XMP 유틸리티 서비스는 PDF 문서에서 XMP 메타데이터를 검색하고 XMP 메타데이터를 PDF 문서로 내보낼 수 있습니다.
 
-다음 [API 참조 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) 는 모든 매개 변수, 인증 방법 및 API에서 제공하는 서비스에 대한 자세한 정보를 제공합니다. API 참조 설명서는 .yaml 형식으로도 사용할 수 있습니다. .yaml 를 다운로드하고 Postman에 업로드하여 API의 기능을 확인할 수 있습니다.
+[API 참조 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)에서는 모든 매개 변수, 인증 방법 및 API에서 제공하는 서비스에 대한 자세한 정보를 제공합니다. API 참조 설명서는 .yaml 형식으로도 사용할 수 있습니다. .yaml 를 다운로드하고 Postman에 업로드하여 API의 기능을 확인할 수 있습니다.
 
 <!--
 
@@ -198,7 +198,7 @@ PDF documents contain metadata, which is information about the document (as dist
 
 ### PDF을 XDP로 변환 {#convert-pdf-to-xdp}
 
-<span class="preview"> PDF을 XDP로 변환 기능은 얼리어답터 프로그램 아래에 있습니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
+<span class="preview"> PDF을 XDP로 변환 기능은 얼리 어답터 프로그램에 있습니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
 
 PDF 문서를 XDP 파일로 변환합니다. PDF 문서를 XDP 파일로 성공적으로 변환하려면 PDF 문서에 사전에 XFA 스트림이 있어야 합니다.
 
@@ -208,7 +208,7 @@ DocAssurance 서비스에는 서명 및 암호화 API가 포함되어 있습니�
 
 ### 서명 API
 
-서명 API를 통해 조직에서 배포하고 수신하는 Adobe PDF 문서의 보안 및 개인정보를 보호할 수 있습니다. <!--This service uses digital signatures and certification to ensure that only intended recipients can alter documents. --> 보안 기능은 문서 자체에 적용되며, 문서는 전체 라이프 사이클에 대해 안전하게 제어됩니다. 문서는 오프라인으로 다운로드할 때와 조직에 다시 제출될 때 방화벽 이후에도 안전하게 유지됩니다. 서명 API를 사용하여 다음 작업을 수행할 수 있습니다.
+서명 API를 통해 조직에서 배포하고 수신하는 Adobe PDF 문서의 보안 및 개인정보를 보호할 수 있습니다. <!--This service uses digital signatures and certification to ensure that only intended recipients can alter documents. --> 문서 자체에 보안 기능이 적용되어 문서는 전체 수명 주기에 대해 안전하게 제어됩니다. 문서는 오프라인으로 다운로드할 때와 조직에 다시 제출될 때 방화벽 이후에도 안전하게 유지됩니다. 서명 API를 사용하여 다음 작업을 수행할 수 있습니다.
 
 * PDF 문서에 보이는 서명 필드를 추가합니다.
 * PDF 문서에 보이지 않는 서명 필드를 추가합니다.
@@ -226,17 +226,17 @@ DocAssurance 서비스에는 서명 및 암호화 API가 포함되어 있습니�
 * PDF 문서에 적용된 보안 유형을 검색합니다.
 * PDF 문서에 적용된 보안 유형을 반환합니다.
 
-서명 API 및 암호화 API는 모두 [동기 API](#types-of-communications-apis-types).
+서명 API와 암호화 API는 모두 [동기 API](#types-of-communications-apis-types)입니다.
 
 
 ### 문서 유틸리티 {#doc-utility}
 
-동기 API를 사용하는 문서 유틸리티를 사용하면 PDF 및 XDP 파일 형식 간에 문서를 변환할 수 있습니다. 문서에 사용 권한을 적용하고 문서에서 활성화된 사용 권한을 추출합니다. PDF 문서에 대한 쿼리 정보입니다. <!-- determines whether a PDF document contains comments or attachments and more, and use document transformation services for XMP utilities--> 사용 권한 API에 대한 세부 사항은 아래에 나와 있습니다.
+동기 API를 사용하는 문서 유틸리티를 사용하면 PDF 및 XDP 파일 형식 간에 문서를 변환할 수 있습니다. 문서에 사용 권한을 적용하고 문서에서 활성화된 사용 권한을 추출합니다. PDF 문서에 대한 쿼리 정보입니다. 사용 권한 API의 <!-- determines whether a PDF document contains comments or attachments and more, and use document transformation services for XMP utilities--> 세부 정보는 아래에 나와 있습니다.
 
 
 #### 사용 권한 API(Reader 확장)
 
-<span class="preview"> 사용 권한(Reader 확장) 기능은 얼리어답터 프로그램 아래에 있습니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
+<span class="preview"> 사용 권한(Reader 확장) 기능이 얼리어답터 프로그램에 있습니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
 
 사용 권한 기능을 사용하면 추가 사용 권한과 함께 Adobe Reader의 기능을 확장하여 조직에서 대화형 PDF 문서를 쉽게 공유할 수 있습니다. 이 서비스는 Adobe Reader 7.0 이상에서 작동하며 PDF 문서에 사용 권한을 추가합니다. 이 작업은 문서에 주석 추가, 양식 채우기, 문서 저장과 같이 Adobe Reader을 사용하여 PDF 문서를 열 때 일반적으로 사용할 수 없는 기능을 활성화합니다.
 
@@ -259,15 +259,15 @@ PDF Reader 서비스를 확장하기 위한 다양한 사용 권한 기능은 �
 
 * **바코드 디코딩**: PDF 문서 내의 바코드를 디코딩합니다.
 
-* **댓글**: PDF 문서에 오프라인으로 댓글을 달습니다.
+* **댓글**: PDF 문서에서 오프라인으로 댓글을 달려면
 
-* **댓글 온라인**: PDF 문서에 온라인으로 주석을 답니다.
+* **온라인으로 주석**: PDF 문서에 온라인으로 주석을 답니다.
 
 * **디지털 서명**: PDF 문서에 디지털 서명을 추가합니다.
 
-* **동적 양식 필드**: PDF 문서에 양식 필드를 추가합니다.
+* **동적 양식 필드**: PDF 문서에 양식 필드를 추가하려면
 
-* **동적 양식 페이지**: PDF 문서에 양식 페이지를 추가합니다.
+* **동적 양식 페이지**: PDF 문서에 양식 페이지를 추가하려면
 
 * **포함된 파일**: PDF 문서 내에 파일을 포함합니다.
 
@@ -275,7 +275,7 @@ PDF Reader 서비스를 확장하기 위한 다양한 사용 권한 기능은 �
 
 * **양식 데이터 내보내기**: 양식 데이터를 PDF 문서로 가져옵니다.
 
-* **양식 채우기**: PDF 문서 내의 양식 필드를 채웁니다.
+* **양식 채우기**: PDF 문서의 양식 필드를 채우려면
 
 * **온라인 Forms**: PDF 문서에서 웹 서비스 또는 데이터베이스에 액세스합니다.
 
@@ -287,7 +287,7 @@ PDF Reader 서비스를 확장하기 위한 다양한 사용 권한 기능은 �
 * **메시지**: 하나 이상의 사용 권한이 적용된 PDF 문서를 열 때 Adobe Acrobat Reader 내에 표시되는 메시지입니다.
 * **암호 잠금 해제**: 암호화된 PDF 문서를 여는 데 필요한 암호입니다. 일반적으로 문서 열기 암호이지만 PDF 문서가 권한 암호로 추가로 보호되는 경우 중 하나를 사용하여 열 수 있습니다.
 
-다음 [API 참조 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) 는 API에서 제공하는 모든 매개 변수, 인증 방법 및 다양한 서비스에 대한 자세한 정보를 제공합니다. API 참조 설명서는 .yaml 형식으로도 사용할 수 있습니다. .yaml 를 다운로드하고 Postman에 업로드하여 API의 기능을 확인할 수 있습니다.
+[API 참조 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)에서는 API에서 제공하는 모든 매개 변수, 인증 방법 및 다양한 서비스에 대한 자세한 정보를 제공합니다. API 참조 설명서는 .yaml 형식으로도 사용할 수 있습니다. .yaml 를 다운로드하고 Postman에 업로드하여 API의 기능을 확인할 수 있습니다.
 
 ## 통신 API 유형 {#types}
 
@@ -319,7 +319,7 @@ PDF Reader 서비스를 확장하기 위한 다양한 사용 권한 기능은 �
 
 >[!NOTE]
 >
-> 문서 조작 API를 활성화하고 구성하려면 다음 규칙을 [Dispatcher 구성](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+> 문서 조작 API를 활성화하고 구성하려면 [Dispatcher 구성](setup-local-development-environment.md#forms-specific-rules-to-dispatcher)에 다음 규칙을 추가하십시오.
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`

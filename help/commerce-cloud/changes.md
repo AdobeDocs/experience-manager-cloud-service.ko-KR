@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # Commerce integration framework(CIF) 추가 기능의 주요 변경 사항{#notable-changes}
 
-Adobe Experience Manager as a Cloud Service은 AEM 프로젝트를 관리할 수 있는 많은 새로운 기능과 가능성을 제공합니다. 이러한 기능에 대해 자세히 알아보려면 다음 링크를 따르십시오. [Experience Manager as a Cloud Service 변경 사항](/help/release-notes/aem-cloud-changes.md).
+Adobe Experience Manager as a Cloud Service은 AEM 프로젝트를 관리할 수 있는 많은 새로운 기능과 가능성을 제공합니다. 이러한 기능에 대해 자세히 알아보려면 [Experience Manager as a Cloud Service 변경 사항](/help/release-notes/aem-cloud-changes.md)에 대한 링크를 따르십시오.
 
 이 문서에서는 CIF Classic(빠른 시작)과 CIF Open-source라고 하는 이전 CIF 버전과 Commerce integration framework(CIF) 추가 기능 간의 중요한 차이점을 조명합니다.
 
 ## 설치 및 업데이트
 
-AEM CIF 추가 기능은 Cloud Manager를 통해 설치됩니다. 설치에는 CIF 크레딧이 필요합니다. 단, 크레딧 없이 CIF을 설치할 수 있는 샌드박스는 예외입니다. 크레딧은 AEM 계약에서 CIF 추가 기능 프로비저닝을 통해 자동으로 수신됩니다.
+AEM CIF 추가 기능은 Cloud Manager을 통해 설치됩니다. 설치에는 CIF 크레딧이 필요합니다. 단, 크레딧 없이 CIF을 설치할 수 있는 샌드박스는 예외입니다. 크레딧은 AEM 계약에서 CIF 추가 기능 프로비저닝을 통해 자동으로 수신됩니다.
 
-추가 기능은 정기 AEM as a Cloud Service 업데이트의 일부로 자동 업데이트됩니다.
+추가 기능은 정기적인 AEM as a Cloud Service 업데이트의 일부로 자동 업데이트됩니다.
 
 **이전 CIF 버전**
 
@@ -40,12 +40,12 @@ AEM CIF 추가 기능은 Cloud Manager를 통해 설치됩니다. 설치에는 C
 
 ## CIF Venia 프로젝트 배포
 
-사용 가능한 프로젝트 [Cloud Manager Git 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/integrating-with-git.html) 및 배포 를 통해 완료 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
+[Cloud Manager Git 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/integrating-with-git.html)에서 사용할 수 있는 프로젝트 및 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)을(를) 통해 배포가 완료됨
 
 **이전 CIF 버전**
 
 * CIF Classic: AEM 패키지 설치
-* CIF 오픈 소스: [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+* CIF 오픈 소스: [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)을 통해
 
 ## 제품 카탈로그 데이터
 
@@ -65,4 +65,4 @@ AEM은 제품 및 범주에 할당된 AEM 카탈로그 템플릿을 사용하여
 
 >[!NOTE]
 >
->CIF Managed Service 또는 AEM On-Premise와 함께 AEM을 사용하는 방법에 대한 추가 설명서는 다음을 참조하십시오. [Commerce integration framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+>AEM Managed Service 또는 AEM On-premise와 함께 CIF을 사용하는 방법에 대한 추가 설명서는 [Commerce integration framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)을(를) 참조하십시오

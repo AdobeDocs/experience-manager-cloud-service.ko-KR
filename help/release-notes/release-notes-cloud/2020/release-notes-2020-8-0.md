@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2020.8.0 릴리스 정보입니다.'
-description: "[!DNL Adobe Experience Manager] 2020.8.0용 as a Cloud Service 릴리스 노트"
+description: "[!DNL Adobe Experience Manager] as a Cloud Service 릴리스 노트(220.0)"
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 feature: Release Information
 role: Admin
@@ -11,51 +11,51 @@ ht-degree: 34%
 
 ---
 
-# 의 릴리스 정보 [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
+# as a Cloud Service [!DNL Adobe Experience Manager] 2.020.0 릴리스 정보 {#release-notes}
 
 다음 섹션에서는 Experience Manager as a Cloud Service 2020.8.0 일반 릴리스 노트를 간략하게 설명합니다.
 
 
-## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
+## as a Cloud Service [!DNL Adobe Experience Manager Sites] {#sites}
 
 ### [!DNL Sites]의 새로운 기능 {#what-is-new-sites}
 
-* 다음에 대한 기능: [페이지 및 하위 페이지(페이지 트리)를 이전 버전으로 복원](/help/sites-cloud/authoring/sites-console/page-versions.md#reinstating-versions).
+* [페이지 및 하위 페이지(페이지 트리)를 이전 버전으로 복원](/help/sites-cloud/authoring/sites-console/page-versions.md#reinstating-versions)하는 기능.
 
-* 다음에 대한 기능: [론치 만들기](/help/sites-cloud/authoring/launches/overview.md) AEM [SPA 편집기](/help/implementing/developing/hybrid/introduction.md).
+* AEM [SPA 편집기](/help/implementing/developing/hybrid/introduction.md)에서 [시작 만들기](/help/sites-cloud/authoring/launches/overview.md)를 할 수 있습니다.
 
 
-## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
+## as a Cloud Service [!DNL Adobe Experience Manager Assets] {#assets}
 
 ### [!DNL Assets]의 새로운 기능 {#what-is-new-assets}
 
-* 이제 비디오 코드 변환 시 자산 마이크로서비스가 지원됩니다. 의 새 섹션 [!UICONTROL 처리 프로필] 구성을 통해 비디오 비트 전송률 및 차원을 설정할 수 있습니다. 출력 형식은 H.264 코덱이 있는 MP4입니다. 자세한 내용은 [비디오 자산 관리](/help/assets/manage-video-assets.md#transcode-video). 더 많은 코드 변환 옵션과 비디오 전달을 위해 다음을 사용합니다. [!DNL Dynamic Media] 추가 기능.
+* 이제 비디오 코드 변환 시 자산 마이크로서비스가 지원됩니다. [!UICONTROL 처리 프로필] 구성의 새 섹션을 통해 비디오 비트 전송률과 차원을 설정할 수 있습니다. 출력 형식은 H.264 코덱이 있는 MP4입니다. 자세한 내용은 [비디오 자산 관리](/help/assets/manage-video-assets.md#transcode-video)를 참조하세요. 더 많은 코드 변환 옵션과 비디오 전달을 위해 [!DNL Dynamic Media] 추가 기능을 사용하십시오.
 
-* 새로 만들기 [!DNL Experience Manager Assets] 배포에서는 이제 스마트 태그 지정 기능이 기본적으로 구성됩니다. 과 수동으로 통합할 필요 없음 [!DNL Adobe Developer Console]. 기존 배포에서 관리자는 이전과 같이 스마트 태그 통합을 구성합니다.
+* 새 [!DNL Experience Manager Assets] 배포에서는 이제 스마트 태그 지정 기능이 기본적으로 구성됩니다. [!DNL Adobe Developer Console]과(와) 수동으로 통합할 필요가 없습니다. 기존 배포에서 관리자는 이전과 같이 스마트 태그 통합을 구성합니다.
 
-* 새 항목 [에셋 다운로드 경험](/help/assets/download-assets-from-aem.md) 허용,
+* 새 [자산 다운로드 경험](/help/assets/download-assets-from-aem.md)이(가) 허용함,
 
    * 대규모 다운로드를 위한 비동기 다운로드를 지원하므로 사용자가 기다리지 않아도 됩니다.
    * 개발자 확장성을 위한 새로운 모듈식 API.
 
 * 에셋 마이크로서비스에 대한 메타데이터 추출의 성능이 향상되었습니다. 전체 에셋 수집 처리량을 증가시킵니다.
 
-* 처리 프로필을 사용하여 계산 서비스를 사용하여 사용자 지정 메타데이터를 생성합니다. 다음을 참조하십시오 [처리 프로필을 사용한 사용자 지정 메타데이터](/help/assets/manage-metadata.md#metadata-compute-service).
+* 처리 프로필을 사용하여 계산 서비스를 사용하여 사용자 지정 메타데이터를 생성합니다. [처리 프로필을 사용한 사용자 지정 메타데이터](/help/assets/manage-metadata.md#metadata-compute-service)를 참조하십시오.
 
-* 관리자가 구성할 수 있는 Brand Portal 사용자를 위한 간단한 다운로드 경험입니다. 다음을 참조하십시오 [다운로드 경험 개요](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations).
+* 관리자가 구성할 수 있는 Brand Portal 사용자를 위한 간단한 다운로드 경험입니다. [경험 다운로드 개요](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)를 참조하세요.
 
-* 이제 Brand Portal에서 기본 및 고화질 PDF 문서 미리 보기를 사용할 수 있습니다. 다음을 참조하십시오 [문서 뷰어 개요](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
+* 이제 Brand Portal에서 기본 및 고화질 PDF 문서 미리 보기를 사용할 수 있습니다. [문서 뷰어 개요](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)를 참조하세요.
 
-* 이제 CDN(Content Delivery Network) 캐시에서 직접 무효화할 수 있습니다 [!DNL Dynamic Media] AEM as a Cloud Service에서(를 사용하는 것과 반대) [!DNL Dynamic Media Classic]). 이렇게 하면 몇 시간이 아닌 몇 분 내에 최신 에셋을 제공할 수 있습니다. 다음을 참조하십시오 [Dynamic Media을 통해 CDN 캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
+* 이제 AEM as a Cloud Service의 [!DNL Dynamic Media]에서 직접 CDN(Content Delivery Network) 캐시를 무효화할 수 있습니다([!DNL Dynamic Media Classic] 사용이 아니라). 이렇게 하면 몇 시간이 아닌 몇 분 내에 최신 에셋을 제공할 수 있습니다. [Dynamic Media을 통해 CDN 캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)를 참조하십시오.
 
-* 향상된 액세스 가능성 지원이 의 사용자 인터페이스 제어, 탐색, 검색 및 검색 경험에 추가되었습니다 [!DNL Assets].
+* 향상된 액세스 가능성 지원이 [!DNL Assets]의 사용자 인터페이스 컨트롤, 탐색, 찾아보기 및 검색 환경에 추가되었습니다.
 
-   * 을 선택한 후 Esc 키를 누르면 [!UICONTROL 렌디션 추가] 옵션을 선택하면 포커스가 도구 모음으로 돌아갑니다. <!-- via CQ-4293594-->
+   * [!UICONTROL 렌디션 추가] 옵션을 선택한 후 Esc 키를 누르면 포커스가 도구 모음으로 돌아갑니다. <!-- via CQ-4293594-->
    * 키보드 포커스는 이메일 콤보 상자를 사용할 때 예상대로 작동합니다. <!-- via CQ-4286215 -->
    * 검색 필터 섹션의 아코디언 요소는 확장 가능한 표준 아코디언으로 해석됩니다. <!-- via CQ-4273103 -->
    * 자산에 태그를 적용하면 대화 상자에 태그가 트리 요소로 표시됩니다. 이제 액세스할 수 있도록 ARIA 속성이 트리 요소에 적절하게 적용됩니다. <!-- via CQ-4272964 -->
 
-* [!DNL AEM Desktop app] 이제 2.0.3 릴리스를 사용할 수 있습니다. 와의 호환성을 향상합니다 [!DNL Experience Manager] 6.5.5 서비스 팩에 업데이트된 클라이언트 OS 호환성 목록이 있습니다. [!DNL Windows] 7 및 [!DNL macOS] 10.14 이전 버전은 지원되지 않습니다.
+* 이제 [!DNL AEM Desktop app] 2.0.3 릴리스를 사용할 수 있습니다. [!DNL Experience Manager] 6.5.5 서비스 팩과의 호환성을 개선하고 업데이트된 클라이언트 OS 호환성 목록을 포함합니다. 10.14 이전 버전의 [!DNL Windows] 7개 및 [!DNL macOS]개는 지원되지 않습니다.
 
 ### [!DNL Assets]의 수정된 버그 {#bugs-fixed}
 
@@ -74,7 +74,7 @@ ht-degree: 34%
 
 ### 릴리스 날짜 {#release-date-cm}
 
-의 릴리스 날짜 [!UICONTROL Cloud Manager] 버전 2020.8.0은 2020년 8월 6일입니다.
+[!UICONTROL Cloud Manager] 버전 2020.8.0의 릴리스 날짜는 2020년 8월 6일입니다.
 
 ### 새로운 기능 {#what-is-new-cloud-manager}
 
@@ -140,8 +140,8 @@ ht-degree: 34%
 
 ### 새로운 기능 {#what-is-new-refactoring}
 
-* 개발자가 한 곳에서 코드 리팩터링 도구를 호출하고 실행할 수 있도록 코드 리팩터링 도구를 통합하기 위해 AIO-CLI 플러그인이 출시되었습니다. 다음을 참조하십시오 [Git 리소스: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 을 참조하십시오.
+* 개발자가 한 곳에서 코드 리팩터링 도구를 호출하고 실행할 수 있도록 코드 리팩터링 도구를 통합하기 위해 AIO-CLI 플러그인이 출시되었습니다. 자세한 내용은 [Git 리소스: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)을 참조하십시오.
 
-* AEM Dispatcher Converter 는 온-프레미스 및 Adobe Managed Services AEM Dispatcher 구성을 as a Cloud Service 호환 Dispatcher 구성으로 변환하는 기능을 지원합니다. 다음을 참조하십시오 [Git 리소스: AEM Cloud Service Dispatcher 변환기](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) 을 참조하십시오.
+* AEM Dispatcher Converter 는 온-프레미스 및 Adobe Managed Services Dispatcher 구성을 AEM as a Cloud Service 호환 Dispatcher 구성으로 변환하는 기능을 지원합니다. 자세한 내용은 [Git 리소스: AEM Cloud Service Dispatcher 변환기](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)를 참조하십시오.
 
-* AEM Dispatcher 변환기가 다시 작성됨 ` node.js ` AIO-CLI 플러그인과 통합됩니다.
+* AEM Dispatcher 변환기가 ` node.js `에서 다시 작성되었으며 AIO-CLI 플러그인과 통합되었습니다.

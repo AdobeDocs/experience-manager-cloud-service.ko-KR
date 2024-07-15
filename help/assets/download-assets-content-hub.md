@@ -20,11 +20,11 @@ Content Hub을 사용하여 단일 에셋 또는 여러 에셋을 다운로드�
 
 ## 사전 요구 사항 {#prerequisites}
 
-[Content Hub 사용자](deploy-content-hub.md#onboard-content-hub-users) 은 이 문서에서 언급한 작업을 수행할 수 있습니다.
+[Content Hub 사용자](deploy-content-hub.md#onboard-content-hub-users)는 이 문서에 언급된 작업을 수행할 수 있습니다.
 
 ## 에셋 다운로드 {#download-single-asset}
 
 1. 다운로드해야 하는 자산을 선택합니다.
    ![단일 자산 다운로드](assets/download-assets-new.jpg)
-1. 클릭 **[!UICONTROL 다운로드]**. <br> 또는 에셋 카드에 사용할 수 있는 다운로드 아이콘을 클릭하여 에셋을 다운로드할 수 있습니다.
+1. **[!UICONTROL 다운로드]**&#x200B;를 클릭합니다. <br> 또는 에셋 카드에서 사용 가능한 다운로드 아이콘을 클릭하여 에셋을 다운로드할 수 있습니다.
 모든 에셋은 원본 렌디션으로 다운로드됩니다.

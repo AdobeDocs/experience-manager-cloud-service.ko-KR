@@ -44,7 +44,7 @@ Edge Delivery Services 사이트가 포함된 AEM의 경우 키-값 매핑과 �
 
 Edge Delivery Services 프로젝트가 포함된 AEM에서 스프레드시트를 사용하여 매핑을 만들려면 최신 사이트 템플릿을 사용하여 사이트를 만들어야 합니다.
 
-문서를 참조하십시오. [Edge Delivery Services을 사용한 WYSIWYG 작성에 대한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 추가 정보.
+자세한 내용은 [Edge Delivery Services을 사용하여 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 문서를 참조하십시오.
 
 ## 스프레드시트 만들기 {#spreadsheet}
 

@@ -50,7 +50,7 @@ ht-degree: 89%
 
 * 탐색하고,
 * 새 페이지를 **만들고**,
-* 기존 페이지를 선택하고 작업을 수행합니다. 예: **편집**, 열기 **속성**, **잠금**, **복사**, **붙여넣기** 및 **삭제**
+* 기존 페이지를 선택하고 작업하십시오. 예: **편집**, 열기 **속성**, **잠금**, **복사**, **붙여넣기** 및 **삭제**
   ![콘텐츠 관리를 통해 사이트 콘솔에서 론치 탐색](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
 * **참조** 레일을 사용하여 **론치 소스** 페이지로 돌아갑니다.
   ![사이트 콘솔 - 론치 소스](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)

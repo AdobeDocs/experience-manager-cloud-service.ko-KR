@@ -34,7 +34,7 @@ _전체 스택 코드 파이프라인 유형만 코드 스캔, 기능 테스트,
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔을 클릭하고 코드를 배포할 프로그램을 탭하거나 클릭합니다.
+1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 코드를 배포할 프로그램을 탭하거나 클릭합니다.
 
 1. **개요** 화면의 콜 투 액션에서 **배포**&#x200B;를 클릭하여 배포 프로세스를 시작합니다.
 
@@ -154,7 +154,7 @@ _전체 스택 코드 파이프라인 유형만 코드 스캔, 기능 테스트,
 
 ### 재실행 API {#reexecute-API}
 
-UI에서 사용할 수 있을 뿐만 아니라 [cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) 재실행을 트리거하고 재실행으로 트리거된 실행을 식별합니다.
+UI에서 사용할 수 있을 뿐만 아니라 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution)를 사용하여 재실행을 트리거하고 재실행으로 트리거된 실행을 식별할 수 있습니다.
 
 #### 재실행 트리거 {#reexecute-deployment-api}
 

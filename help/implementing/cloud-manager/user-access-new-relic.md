@@ -23,7 +23,7 @@ Adobe는 애플리케이션의 모니터링, 가용성 및 성능에 중점을 �
 
 이 문서에서는 성능을 지원하고 AEM as a Cloud Service를 최대한 활용할 수 있도록 AEM as a Cloud Service 환경에서 활성화된 New Relic One APM(Application Performance Monitoring) 기능에 대한 액세스를 관리하는 방법을 설명합니다.
 
-새 프로덕션 프로그램이 만들어지면 AEM as a Cloud Service 프로그램과 연결된 New Relic One 하위 계정이 자동으로 만들어집니다. [이 하위 계정을 활성화해야 합니다.](#activate-sub-account) 데이터 수집을 시작합니다.
+새 프로덕션 프로그램이 만들어지면 AEM as a Cloud Service 프로그램과 연결된 New Relic One 하위 계정이 자동으로 만들어집니다. [데이터 수집을 시작하려면 이 하위 계정을 활성화해야 합니다](#activate-sub-account).
 
 ## 기능 {#transaction-monitoring}
 
@@ -43,19 +43,19 @@ AEM as a Cloud Service용 New Relic One APM에는 많은 기능이 있습니다.
 
 >[!NOTE]
 >
->의 사용자 **비즈니스 소유자** 또는 **배포 관리자** New Relic One 하위 계정을 관리하려면 역할이 로그인해야 합니다.
+>New Relic One 하위 계정을 관리하려면 **비즈니스 소유자** 또는 **배포 관리자** 역할의 사용자가 로그인해야 합니다.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔, New Relic One 사용자를 관리할 프로그램을 탭하거나 클릭합니다.
+1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 New Relic One 사용자를 관리할 프로그램을 탭하거나 클릭합니다.
 
-1. 의 맨 아래에서 **환경** 카드 개요 페이지에서 줄임표 버튼을 클릭하고 다음을 선택합니다. **New Relic 활성화**.
+1. 프로그램 개요 페이지의 **환경** 카드 하단에서 줄임표 버튼을 클릭하고 **New Relic 활성화**&#x200B;를 선택합니다.
 
    ![사용자 관리](assets/newrelic-activate-sub-account.png)
 
    * 프로그램의 **환경** 화면 상단에 있는 줄임표 버튼을 통해 **사용자 관리** 옵션에 액세스할 수도 있습니다.
 
-1. [파이프라인 실행](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) 하위 계정 활성화를 완료하기 위해 동일한 환경을 성공적으로 완료합니다.
+1. 하위 계정 활성화를 완료하기 위해 동일한 환경에 대해 [파이프라인을 실행](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)합니다.
 
 하위 계정이 비활성화되면 데이터 수집이 없습니다.
 
@@ -77,7 +77,7 @@ AEM as a Cloud Service용 New Relic One APM에는 많은 기능이 있습니다.
 
    * 프로그램의 **환경** 화면 상단에 있는 줄임표 버튼을 통해 **사용자 관리** 옵션에 액세스할 수도 있습니다.
 
-1. 다음에서 **New Relic 사용자 관리** 대화 상자에서 추가하려는 사용자의 이름과 성을 입력하고 **추가** 단추를 클릭합니다. 추가하려는 모든 사용자에 대해 이 단계를 반복합니다.
+1. **New Relic 사용자 관리** 대화 상자에서 추가하려는 사용자의 이름과 성을 입력하고 **추가** 단추를 클릭합니다. 추가하려는 모든 사용자에 대해 이 단계를 반복합니다.
 
    ![사용자 추가](assets/newrelic-add-users.png)
 
@@ -145,7 +145,7 @@ New Relic One에 로그인하는 동안 이메일을 확인하라는 메시지�
 
 ## New Relic One 사용자 액세스 문제 해결 {#troubleshooting}
 
-섹션에 설명된 대로 New Relic One 사용자로 추가된 경우 [New Relic One 사용자 관리](#manage-users) 및 은(는) 원본 계정 확인 이메일을 찾을 수 없습니다. 다음 단계를 따르십시오.
+[New Relic One 사용자 관리](#manage-users) 섹션에 설명된 대로 New Relic One 사용자로 추가되었는데 원본 계정 확인 이메일을 찾을 수 없는 경우 다음 단계를 따르십시오.
 
 1. New Relic 로그인 페이지([`login.newrelic.com/login`](https://login.newrelic.com/login))로 이동합니다.
 
@@ -179,9 +179,9 @@ New Relic One에 사용자를 추가하는 경우 다음 제한이 적용됩니�
 >
 >New Relic One 하위 계정에서 90일 이상 활동이 감지되지 않으면 APM 에이전트가 중지됩니다.
 >
->의 동일한 단계를 따르십시오. [New Relic One 하위 계정 활성화](#activate-sub-account) 이 문서의 섹션을 통해 New Relic One 하위 계정을 다시 활성화할 수 있습니다.
+>이 문서의 [New Relic One 하위 계정 활성화](#activate-sub-account) 섹션에서 동일한 단계에 따라 New Relic One 하위 계정을 다시 활성화하십시오.
 
-as a Cloud Service 프로그램의 New Relic One AEM 제공에 대한 추가 도움말 또는 추가 지침을 보려면 [AEM 지원 포털.](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)
+AEM as a Cloud Service 프로그램의 New Relic One 서비스에 대한 추가 도움말 또는 추가 지침을 보려면 [AEM 지원 포털](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)을 통해 지원 티켓을 여십시오.
 
 ## New Relic One에 대해 자주 묻는 질문 {#faqs}
 
@@ -227,4 +227,4 @@ Adobe 지원에서 서비스의 일부로 New Relic One 및 기타 사내 도구
 
 ### New Relic One 계정의 APM 에이전트가 중단됩니다. 어떻게 되었습니까? {#deactivated}
 
-활동이 90일 이상 감지되지 않으면 [APM 에이전트가 중단됩니다](#limitations). 의 동일한 단계를 따르십시오. [New Relic One 하위 계정 활성화](#activate-sub-account) 이 문서의 섹션을 통해 New Relic One 하위 계정을 다시 활성화할 수 있습니다.
+활동이 90일 이상 감지되지 않으면 [APM 에이전트가 중단됩니다](#limitations). 이 문서의 [New Relic One 하위 계정 활성화](#activate-sub-account) 섹션에서 동일한 단계에 따라 New Relic One 하위 계정을 다시 활성화하십시오.

@@ -212,7 +212,7 @@ ht-degree: 97%
 
 타임워프는 페이지 편집기의 [모드](/help/sites-cloud/authoring/page-editor/introduction.md#page-modes)입니다. 이를 시작하려면 다른 모드처럼 전환하면 됩니다.
 
-1. 타임워프를 시작할 페이지의 편집기를 시작한 다음 을 선택합니다. **타임워프** 을 선택합니다.
+1. 타임워프를 시작할 페이지의 편집기를 시작한 다음 모드 선택에서 **타임워프**&#x200B;를 선택합니다.
 
    ![타임워프 모드](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 

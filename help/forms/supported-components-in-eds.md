@@ -1,36 +1,36 @@
 ---
 title: AEM Forms Edge Delivery Services 양식 구성 요소
-description: 최고 성능을 위해 구축된 AEM Forms Edge Delivery Services을 통해 간소화된 데이터 수집 및 사용자 참여의 미래를 구상할 수 있습니다. 이 문서에서는 EDD 양식에 즉시 사용할 수 있는 모든 양식 구성 요소를 나열합니다.
+description: AEM Forms Edge Delivery Services는 최고의 성능을 발휘하도록 구축되어 데이터 수집 및 사용자 참여를 간소화하는 미래를 구상할 수 있도록 지원합니다. 이 문서에서는 EDD 양식에 즉시 사용할 수 있는 모든 양식 구성 요소를 나열합니다.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '872'
-ht-degree: 6%
+ht-degree: 9%
 
 ---
 
 
 
 
-# 양식 블록 에지 게재에서 지원되는 HTML 구성 요소
+# 양식 블록 Edge Delivery에서 지원되는 HTML 구성 요소
 
-AEM Forms Edge 게재에는 양식 블록이 포함되어 있습니다. 양식 블록을 사용하면 캡처한 데이터를 캡처하고 저장할 양식을 쉽게 만들 수 있습니다.
+AEM Forms Edge Delivery에는 양식 블록이 포함되어 있습니다. 양식 블록을 사용하면 캡처한 데이터를 캡처하고 저장할 양식을 쉽게 만들 수 있습니다.
 
-양식 블록은 텍스트, 이메일, 번호, 날짜 등과 같은 OOTB HTML-5 구성 요소를 지원합니다. 또한 텍스트 영역, 선택 및 필드 세트 요소를 지원하며 HTML-5의 기본인 입력 유효성 검사 기능을 포함합니다. 양식 블록은 일관성을 보장하기 위해 모든 필드 유형 및 컨테이너에 대해 균일한 HTML 구조를 생성합니다. 귀하도 [필드 유형 스타일 지정](https://adobe-rnd.github.io/form-block/customization/styling_form) 사용 `form.css` 파일.
+양식 블록은 텍스트, 이메일, 번호, 날짜 등과 같은 OOTB HTML-5 구성 요소를 지원합니다. 또한 텍스트 영역, 선택 및 필드 세트 요소를 지원하며 HTML-5의 기본인 입력 유효성 검사 기능을 포함합니다. 양식 블록은 일관성을 보장하기 위해 모든 필드 유형 및 컨테이너에 대해 균일한 HTML 구조를 생성합니다. `form.css` 파일을 사용하여 [필드 형식의 스타일을 ](https://adobe-rnd.github.io/form-block/customization/styling_form)합니다.
 
 ## 양식 블록에서 지원되는 HTML 5 입력 유형
 
 양식 블록은 다양한 HTML 5 입력 유형을 지원하며 AEM 핵심 구성 요소로 만든 양식을 원활하게 렌더링합니다.
 
-다음은 Edge Delivery에서 핵심 구성 요소가 HTML 5 입력 유형에 대응하는 방법을 간략하게 설명하는 표입니다.
+다음은 Edge Delivery에서 핵심 구성 요소가 HTML-5 입력 유형에 대응하는 방법을 간략하게 설명하는 표입니다.
 
 <table>
  <tbody>
   <tr>
    <td><b>핵심 구성 요소</b> </td>
-   <td><b>HTML 5 입력 유형</b> </td>
+   <td><b>HTML 5 입력 형식</b> </td>
    <td><b>세부 사항</b></td>
   </tr>
   <tr>
@@ -70,7 +70,7 @@ AEM Forms Edge 게재에는 양식 블록이 포함되어 있습니다. 양식 �
    <td> 사용자가 목록에서 옵션을 하나 이상 선택할 수 있도록 허용합니다. 열거형의 항목에 각각 해당하는 동일한 이름의 확인란이 여러 개 생성됩니다. </td>
   </tr>
   <tr>
-   <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button.html">라디오 단추 그룹</td>
+   <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button.html">라디오 버튼 그룹</td>
    <td><a href ="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio">여러대의 라디오</a></td>
    <td> 사용자가 관련 옵션 그룹에서 하나의 옵션을 선택할 수 있습니다. 열거형의 항목에 각각 해당하는 동일한 이름으로 여러 라디오 단추가 생성됩니다.</td>
   </tr>
@@ -110,7 +110,7 @@ AEM Forms Edge 게재에는 양식 블록이 포함되어 있습니다. 양식 �
    <td> 사용자가 이메일 주소를 입력하고 편집할 수 있습니다. 사용자가 여러 속성을 추가하는 경우 이메일 주소 목록을 추가하거나 편집할 수 있습니다.</td>
   </tr>
    <tr>
-   <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/telephone-input.html">전화 입력</a></td>
+   <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/telephone-input.html">전화번호 입력</a></td>
    <td><a href ="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel">전화</a></td>
    <td>사용자가 전화 번호를 입력하고 편집할 수 있습니다.</td>
   </tr>

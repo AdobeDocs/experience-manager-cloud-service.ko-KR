@@ -30,11 +30,11 @@ Universal Editor에서 앱을 편집할 수 있으려면 앱이 적절하게 구
 |---|---|
 | `data-aue-resource` | 리소스에 대한 URN은 [AEM에서 Universal Editor 시작하기 문서의 페이지 계측](getting-started.md#instrument-thepage) 섹션을 참조하십시오. |
 | `data-aue-prop` | 리소스의 속성은 [AEM에서 Universal Editor 시작하기 문서의 페이지 계측](getting-started.md#instrument-thepage) 섹션을 참조하십시오. |
-| `data-aue-type` | [편집 가능한 항목 유형](#item-types) (예: 텍스트, 이미지 및 참조) |
+| `data-aue-type` | [편집 가능한 항목의 유형](#item-types)(예: 텍스트, 이미지, 참조) |
 | `data-aue-filter` | 사용할 수 있는 참조 정의 |
 | `data-aue-label` | 편집기에 표시되는 선택 가능한 항목에 대한 사용자 정의 레이블 정의 <br>`data-aue-model`이 설정된 경우, 레이블은 모델을 통해 검색 |
 | `data-aue-model` | 속성 레일에서 양식 기반의 편집에 사용될 모델 정의 |
-| `data-aue-behavior` | 다음을 정의합니다 [계기의 동작](#behaviors)예를 들어, 독립형 텍스트 또는 이미지는 구성 요소를 모방하여 이동할 수 있거나 삭제할 수 있습니다 |
+| `data-aue-behavior` | 계기의 [동작을 정의합니다](#behaviors). 예를 들어, 독립 실행형 텍스트 또는 이미지는 구성 요소를 모방하여 이동하거나 삭제할 수 있습니다 |
 
 ## 항목 유형 {#item-types}
 

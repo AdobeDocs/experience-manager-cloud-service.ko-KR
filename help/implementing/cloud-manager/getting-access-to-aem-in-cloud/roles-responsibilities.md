@@ -4,7 +4,7 @@ description: 역할 및 책임
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '484'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

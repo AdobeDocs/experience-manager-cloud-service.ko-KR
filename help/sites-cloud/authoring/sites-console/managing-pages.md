@@ -18,11 +18,11 @@ ht-degree: 66%
 
 >[!TIP]
 >
->페이지 관리를 시작하기 전에 다음 사항에 익숙해지도록 합니다 [AEM에서 페이지를 구성하는 방법.](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+>페이지 관리를 시작하기 전에 [페이지가 AEM에서 어떻게 구성되어 있는지 알아보세요.](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
 
 >[!TIP]
 >
->몇 개 있습니다 [키보드 단축키](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) 를 사용하면 웹 사이트 콘솔에서 페이지를 보다 효율적으로 구성할 수 있습니다.
+>페이지를 보다 효율적으로 구성할 수 있도록 해주고 웹 사이트 콘솔에서 사용할 수 있는 [키보드 단축키](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)가 있습니다.
 
 ## 액세스 권한 {#access-privileges}
 
@@ -32,40 +32,40 @@ ht-degree: 66%
 
 ## 편집할 페이지 열기 {#opening-a-page-for-editing}
 
-다음 이후 [페이지 만들기](/help/sites-cloud/authoring/sites-console/creating-pages.md) 또는 를 사용하여 기존 페이지로 이동 [다음 **사이트** 콘솔,](/help/sites-cloud/authoring/sites-console/introduction.md) 편집을 위해 열 수 있습니다.
+[페이지를 만들거나](/help/sites-cloud/authoring/sites-console/creating-pages.md) [사이트&#x200B;**콘솔,](/help/sites-cloud/authoring/sites-console/introduction.md)을 사용하여 기존 페이지로 이동한 후 편집을 위해 열 수 있습니다.**
 
-1. 열기 [다음 **사이트** 콘솔.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. [**사이트** 콘솔을 엽니다.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. 편집할 페이지로 이동합니다.
 1. 다음 중 하나를 사용하여 페이지를 선택합니다.
 
    * [빠른 작업](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
    * [선택 모드](/help/sites-cloud/authoring/basic-handling.md#selecting-resources) 및 도구 모음
 
-1. 을(를) 탭하거나 클릭합니다 **편집** 아이콘.
+1. **편집** 아이콘을 탭하거나 클릭합니다.
 
    ![편집 버튼](/help/sites-cloud/authoring/assets/edit.png)
 
-1. 페이지가 열리고, 필요에 따라 페이지를 편집할 수 있습니다. 선택한 페이지를 만든 방법에 따라 **편집** 그러면 적절한 편집기가 열립니다.
+1. 페이지가 열리고, 필요에 따라 페이지를 편집할 수 있습니다. 선택한 페이지를 만든 방법에 따라 **편집** 작업을 수행하면 해당 편집기가 열립니다.
    * [페이지 편집기](/help/sites-cloud/authoring/page-editor/introduction.md) - AEM 페이지 편집기로 만든 페이지의 경우
-   * [유니버설 편집기](/help/sites-cloud/authoring/universal-editor/authoring.md) - 범용 편집기로 만든 페이지
+   * [유니버설 편집기](/help/sites-cloud/authoring/universal-editor/authoring.md) - 유니버설 편집기로 만든 페이지의 경우
 
 ## 페이지 복사 및 붙여넣기 {#copying-and-pasting-a-page}
 
 페이지 및 모든 하위 페이지를 새 위치에 복사할 수 있습니다.
 
-1. 열기 [다음 **사이트** 콘솔.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. [**사이트** 콘솔을 엽니다.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. 복사할 페이지로 이동하여 찾습니다.
 1. 다음 중 하나를 사용하여 페이지를 선택합니다.
 
    * [빠른 작업](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
    * [선택 모드](/help/sites-cloud/authoring/basic-handling.md#selecting-resources) 및 도구 모음
 
-1. 을(를) 탭하거나 클릭합니다 **복사** 페이지 아이콘.
+1. **복사** 페이지 아이콘을 탭하거나 클릭합니다.
 
    ![복사](/help/sites-cloud/authoring/assets/copy.png)
 
 1. 페이지의 새 사본을 위한 위치로 이동합니다.
-1. 다음 항목 선택 **붙여넣기** 아이콘을 사용할 수 있습니다.
+1. 표시되는 **붙여넣기** 아이콘을 선택합니다.
 
    ![붙여넣기](/help/sites-cloud/authoring/assets/paste.png)
 
@@ -75,7 +75,7 @@ ht-degree: 66%
 
    ![붙여넣기 대화 상자](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
-1. 다음 항목 선택 **붙여넣기** 단추를 클릭하여 붙여넣기 트랜잭션을 확인하고 새 페이지를 만듭니다.
+1. **붙여넣기** 단추를 선택하여 붙여넣기 트랜잭션을 확인하고 새 페이지를 만듭니다.
 
 >[!NOTE]
 >
@@ -95,20 +95,20 @@ ht-degree: 66%
 
 AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모든 내부 링크를 업데이트하는 기능을 제공합니다. 페이지별로 다른 기준을 적용할 수 있으므로 완벽한 유연성이 발휘됩니다.
 
-1. 열기 [다음 **사이트** 콘솔.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. [**사이트** 콘솔을 엽니다.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. 이동할 페이지를 찾습니다.
 1. 다음 중 하나를 사용하여 페이지를 선택합니다.
 
    * [빠른 작업](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
    * [선택 모드](/help/sites-cloud/authoring/basic-handling.md#selecting-resources) 및 도구 모음
 
-1. 을(를) 탭하거나 클릭합니다 **이동** 페이지 아이콘 - 페이지 이동 마법사를 엽니다.
+1. **이동** 페이지 아이콘을 탭하거나 클릭하여 페이지 이동 마법사를 엽니다.
 
    ![이동 버튼](/help/sites-cloud/authoring/assets/move.png)
 
-1. 다음에서 **이름 바꾸기** 마법사의 단계에서는 다음 중 하나를 수행할 수 있습니다.
+1. 마법사의 **이름 바꾸기** 단계에서 다음 중 하나를 수행할 수 있습니다.
 
-   * 페이지가 이동되면 사용할 페이지의 이름을 지정한 다음 을 선택합니다 **다음** 계속합니다.
+   * 페이지가 이동되면 사용할 이름을 지정한 후 **다음**&#x200B;을 선택하여 계속하십시오.
    * 프로세스를 중단하려면 **취소**&#x200B;를 클릭/탭합니다.
 
    ![페이지 이동 및 이름 바꾸기](/help/sites-cloud/authoring/assets/move-page-rename.png)
@@ -119,7 +119,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
    >
    >페이지를 동일한 이름의 페이지가 이미 있는 위치로 이동하는 경우 숫자가 추가되어 변형된 이름이 자동으로 생성됩니다. 예를 들어 `beach`가 이미 존재하는 경우, `beach`를 사용하는 새 페이지는 `beach1`이 됩니다.
 
-1. 다음에서 **대상 선택** 마법사의 단계에서는 다음 중 하나를 수행할 수 있습니다.
+1. 마법사의 **대상 선택** 단계에서 다음 중 하나를 수행할 수 있습니다.
 
    * [열 보기](/help/sites-cloud/authoring/basic-handling.md#column-view)를 사용하여 페이지의 새 위치를 탐색할 수 있습니다.
 
@@ -148,14 +148,14 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
    ![이동 시 페이지 다시 게시](/help/sites-cloud/authoring/assets/move-page-republish.png)
 
-1. 탭 또는 클릭 **이동** 이동 작업을 언제 수행할지 정의합니다.
+1. 이동 작업을 수행할 시기를 정의하려면 **이동**&#x200B;을 탭하거나 클릭합니다.
 
-   * **지금** 이(가) 다음을 트리거합니다. [비동기 작업](#asynchronous-actions) 페이지를 즉시 이동합니다.
-   * **나중에** 이동을 처리할 날짜를 예약할 수 있습니다.
+   * **지금**&#x200B;은(는) 페이지를 즉시 이동하기 위해 [비동기 작업](#asynchronous-actions)을 트리거합니다.
+   * **나중에**&#x200B;에서 이동을 처리할 날짜를 예약할 수 있습니다.
 
-   ![이동 시점 정의](assets/managing-pages-move-page-now-later.png)
+   ![이동할 시기 정의](assets/managing-pages-move-page-now-later.png)
 
-1. 탭 또는 클릭 **계속** 을 클릭하여 페이지 이동을 완료합니다.
+1. **계속**&#x200B;을 탭하거나 클릭하여 페이지 이동을 완료합니다.
 
 >[!NOTE]
 >
@@ -173,7 +173,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
 페이지 이동 작업은 항상 비동기적으로 처리되므로 사용자는 방해받지 않고 UI에서 계속 작성할 수 있습니다.
 
-비동기 작업의 상태는 [**비동기 작업 상태** 대시보드](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) 위치: **전역 탐색** > **도구** > **작업** > **작업**
+비동기 작업의 상태는 **전역 탐색** > **도구** > **작업** > **작업**&#x200B;의 [**비동기 작업 상태** 대시보드](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)에서 확인할 수 있습니다.
 
 >[!TIP]
 >
@@ -181,7 +181,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
 ### 페이지 삭제 {#deleting-a-page}
 
-1. 열기 [다음 **사이트** 콘솔.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. [**사이트** 콘솔을 엽니다.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. 삭제할 페이지로 이동합니다.
 1. [선택 모드](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)를 사용하여 필요한 페이지를 선택한 다음, 도구 모음에서&#x200B;**삭제**&#x200B;를 사용합니다.
 
@@ -194,9 +194,9 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
    * **삭제하기 전에 페이지를 보관하시겠습니까?** - 이 확인란을 선택한 경우 삭제하도록 선택한 페이지의 버전이 삭제 시 생성됩니다.
       * [버전은 나중에 복원할 수 있습니다](/help/sites-cloud/authoring/sites-console/page-versions.md).
       * 이전 버전 없이 삭제된 페이지는 복원할 수 없습니다.
-1. 탭 또는 클릭 **취소** 작업을 중단하려면 또는 **삭제** 작업을 확인합니다.
+1. **취소**&#x200B;를 탭하거나 클릭하여 작업을 중단하거나 **삭제**&#x200B;를 탭하거나 클릭하여 작업을 확인합니다.
    * 페이지에 참조가 없으면 페이지가 삭제됩니다.
-   * 페이지에 참조가 있으면, 메시지 상자에 다음과 같이 표시됩니다 **하나 이상의 페이지가 참조되었습니다.** 다음을 선택할 수 있습니다. **강제 삭제** 또는 **취소**.
+   * 페이지에 참조가 있으면 메시지 상자에 **하나 이상의 페이지가 참조되었다.** **강제 삭제** 또는 **취소**&#x200B;를 선택할 수 있습니다.
 
 >[!NOTE]
 >
@@ -213,7 +213,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
 파일 및 페이지 구성에 도움이 되도록 폴더를 만들 수 있습니다.
 
-1. 열기 [다음 **사이트** 콘솔.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. [**사이트** 콘솔을 엽니다.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. 필요한 위치로 이동합니다.
 1. 옵션 목록을 열려면 도구 모음에서 **만들기**&#x200B;를 선택합니다.
 1. 폴더 대화 상자를 열려면 **폴더**&#x200B;를 선택합니다. 여기에서 **이름** 및 **제목**&#x200B;을 입력할 수 있습니다.

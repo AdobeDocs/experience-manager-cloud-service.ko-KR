@@ -14,11 +14,11 @@ ht-degree: 39%
 
 # AEM 페이지 편집기 {#editing-page-content}
 
-페이지가에 생성되면 [**사이트** 콘솔,](/help/sites-cloud/authoring/sites-console/introduction.md) 콘텐츠 작성을 위한 강력한 도구인 AEM 페이지 편집기를 사용하여 페이지 콘텐츠를 편집할 수 있습니다.
+페이지가 [**사이트** 콘솔,](/help/sites-cloud/authoring/sites-console/introduction.md)에서 만들어지면 콘텐츠를 작성하는 강력한 도구인 AEM 페이지 편집기를 사용하여 페이지의 콘텐츠를 편집할 수 있습니다.
 
 >[!NOTE]
 >
->에서 페이지 편집 시 [**사이트** 콘솔,](/help/sites-cloud/authoring/sites-console/introduction.md) 콘솔에서 페이지의 [템플릿:](/help/sites-cloud/authoring/sites-console/templates.md) 이 문서에 설명된 페이지 편집기 또는 [유니버설 편집기.](/help/sites-cloud/authoring/universal-editor/authoring.md)
+>[**사이트** 콘솔에서 페이지를 편집할 때](/help/sites-cloud/authoring/sites-console/introduction.md) 콘솔에서는 페이지의 [템플릿:](/help/sites-cloud/authoring/sites-console/templates.md)에 적합한 편집기를 엽니다. 이 문서에 설명된 페이지 편집기 또는 [유니버설 편집기.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 >[!NOTE]
 >
@@ -29,8 +29,8 @@ ht-degree: 39%
 AEM 페이지 편집기는 주로 다음 세 섹션으로 구성됩니다.
 
 1. [도구 모음](#toolbar) - 도구 모음을 사용하면 페이지 모드를 변경하고 추가 페이지 설정에 액세스할 수 있습니다.
-1. [사이드 패널](#side-panel) - 사이드 패널을 통해 페이지 구성 요소 및 에셋과 기타 작성 도구에 액세스할 수 있습니다.
-1. [편집자](#editor) - 편집기에서 콘텐츠를 변경하고 미리 볼 수 있습니다.
+1. [사이드 패널](#side-panel) - 사이드 패널을 통해 페이지 구성 요소 및 에셋과 기타 제작 도구에 액세스할 수 있습니다.
+1. [편집기](#editor) - 편집기에서 콘텐츠를 변경하고 미리 볼 수 있습니다.
 
 ![페이지 편집기의 레이아웃](assets/page-editor-layout.png)
 
@@ -44,7 +44,7 @@ AEM 페이지 편집기는 주로 다음 세 섹션으로 구성됩니다.
 
 #### 사이드 패널 {#side-panel-button}
 
-다음을 열거나 닫습니다. [사이드 패널,](/help/sites-cloud/authoring/page-editor/editor-side-panel.md) 에셋 브라우저, 구성 요소 브라우저 및 콘텐츠 트리를 보유합니다.
+에셋 브라우저, 구성 요소 브라우저 및 콘텐츠 트리를 보유하는 [사이드 패널](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)을 열거나 닫습니다.
 
 ![사이드 패널 전환](assets/page-editor-side-panel-toggle.png)
 
@@ -54,7 +54,7 @@ AEM 페이지 편집기는 주로 다음 세 섹션으로 구성됩니다.
 
 ![페이지 정보 버튼](assets/page-editor-page-information-icon.png)
 
-**페이지 정보** 선택한 페이지의 마지막 편집 및 마지막 게시에 대한 세부 정보를 제공하는 드롭다운 메뉴를 엽니다. 페이지, 해당 사이트 및 인스턴스의 특성에 따라 추가 작업을 사용할 수 있습니다.
+**페이지 정보**&#x200B;에서는 선택한 페이지의 마지막 편집 및 마지막 게시에 대한 세부 정보를 제공하는 드롭다운 메뉴를 엽니다. 페이지, 해당 사이트 및 인스턴스의 특성에 따라 추가 작업을 사용할 수 있습니다.
 
 * [속성 열기](/help/sites-cloud/authoring/sites-console/page-properties.md)
 * [페이지 롤아웃](/help/sites-cloud/administering/msm/overview.md#msm-from-the-ui)
@@ -72,13 +72,13 @@ AEM 페이지 편집기는 주로 다음 세 섹션으로 구성됩니다.
 
 #### 에뮬레이터 {#emulator}
 
-이렇게 하면 이(가) [에뮬레이터 도구 모음](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate): 다른 디바이스에서 페이지의 디자인을 에뮬레이트하는 데 사용됩니다. 이 기능은 레이아웃 모드에서 자동으로 활성화됩니다.
+다른 디바이스에서 페이지의 디자인을 에뮬레이트하는 데 사용되는 [에뮬레이터 도구 모음](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate)을(를) 전환합니다. 이 기능은 레이아웃 모드에서 자동으로 활성화됩니다.
 
 ![에뮬레이터 버튼](assets/page-editor-emulator.png)
 
 #### ContextHub {#context-hub}
 
-이렇게 하면 [ContextHub.](/help/sites-cloud/authoring/personalization/contexthub.md) 다음에서만 사용할 수 있습니다. **미리 보기** 모드.
+[ContextHub가 열립니다.](/help/sites-cloud/authoring/personalization/contexthub.md) **미리 보기** 모드에서만 사용할 수 있습니다.
 
 ![Context Hub 버튼](assets/page-editor-context-hub.png)
 
@@ -90,37 +90,37 @@ AEM 페이지 편집기는 주로 다음 세 섹션으로 구성됩니다.
 
 #### 모드 선택기 {#mode-selector}
 
-모드 선택기에 현재 [모드](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) 편집, 레이아웃, 타임워프 또는 타겟팅과 같은 다른 모드를 선택할 수 있습니다.
+모드 선택기에 현재 [모드](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)가 표시되며 편집, 레이아웃, 타임워프 또는 타깃팅과 같은 다른 모드를 선택할 수 있습니다.
 
 ![모드 선택기 버튼](assets/page-editor-mode-selector.png)
 
 여러 작업을 허용하는 페이지를 편집할 때는 다음과 같은 다양한 모드가 있습니다.
 
 * [편집](/help/sites-cloud/authoring/page-editor/edit-content.md) - 페이지 콘텐츠를 편집할 때 사용할 모드
-* [레이아웃](/help/sites-cloud/authoring/page-editor/responsive-layout.md) - 디바이스에 따라 응답형 레이아웃을 만들고 편집할 수 있도록 허용(페이지가 레이아웃 컨테이너를 기반으로 하는 경우)
-* [타겟팅](/help/sites-cloud/authoring/personalization/targeted-content.md) - 모든 채널에서 타겟팅과 측정을 통해 콘텐츠 관련성을 향상시킵니다.
-* [타임워프](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) - 특정 시점의 페이지 상태 보기
-* [Live Copy 상태](/help/sites-cloud/authoring/page-editor/introduction.md#live-copy-status) - Live Copy 상태 및 상속되지 않은 구성 요소를 간략하게 살펴볼 수 있습니다.
+* [레이아웃](/help/sites-cloud/authoring/page-editor/responsive-layout.md) - 장치에 따라 응답형 레이아웃을 만들고 편집할 수 있도록 해줍니다(페이지가 레이아웃 컨테이너를 기반으로 하는 경우).
+* [타깃팅](/help/sites-cloud/authoring/personalization/targeted-content.md) - 모든 채널에서 타깃팅 및 측정을 통해 콘텐츠 관련성을 개선합니다.
+* [타임워프](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) - 특정 시점의 페이지 상태를 봅니다.
+* [Live Copy 상태](/help/sites-cloud/authoring/page-editor/introduction.md#live-copy-status) - Live Copy 상태 및 상속되지 않은 구성 요소를 간단히 살펴볼 수 있습니다.
 * [개발자 모드](/help/implementing/developing/tools/developer-mode.md)
-* [미리 보기](/help/sites-cloud/authoring/page-editor/introduction.md#previewing-pages) - 페이지를 게시 환경에 표시된 대로 보거나 컨텐츠의 링크를 사용하여 탐색할 수 있습니다.
-* [주석](/help/sites-cloud/authoring/page-editor/annotations.md) - 페이지에서 주석 추가 또는 보기
+* [미리 보기](/help/sites-cloud/authoring/page-editor/introduction.md#previewing-pages) - 페이지가 게시 환경에 표시된 대로 보거나 컨텐츠의 링크를 사용하여 탐색합니다.
+* [주석](/help/sites-cloud/authoring/page-editor/annotations.md) - 페이지에서 주석을 추가하거나 봅니다.
 
 >[!NOTE]
 >
 >* 페이지의 특성에 따라 일부 모드를 사용할 수 없습니다.
 >* 일부 모드에 액세스하려면 적절한 권한이 필요합니다.
 >* 공간 제약으로 인해 [개발자 모드]는 모바일 디바이스에서 사용할 수 없습니다.
->* 다음 항목이 있습니다. [키보드 단축키](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) 간 전환 **미리 보기** 및 현재 선택한 모드(예: **편집**, **레이아웃**&#x200B;등).
+>* **미리 보기**&#x200B;와 현재 선택한 모드(예: **편집**, **레이아웃** 등) 간에 전환할 수 있는 [바로 가기](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)(`Ctrl-Shift-M`)가 있습니다.
 
 #### 미리보기 {#preview}
 
-다음 **미리 보기** 단추 사용 [미리 보기 모드.](#preview-mode): 게시할 때 표시되는 페이지를 표시합니다.
+**미리 보기** 단추를 사용하면 [미리 보기 모드가 활성화됩니다.](#preview-mode), 게시할 때 표시되는 대로 페이지를 표시합니다.
 
 ![미리보기 버튼](assets/page-editor-preview.png)
 
 #### 주석 {#annotate}
 
-**주석** 모드에서는 다음을 추가할 수 있습니다. [주석](/help/sites-cloud/authoring/page-editor/annotations.md) 페이지를 검토할 때 페이지로 이동합니다. 첫 번째 주석 다음에 아이콘이 숫자로 전환하여 페이지에 있는 주석의 수를 가리킵니다.
+**주석** 모드에서는 페이지를 검토할 때 [주석](/help/sites-cloud/authoring/page-editor/annotations.md)을 페이지에 추가할 수 있습니다. 첫 번째 주석 다음에 아이콘이 숫자로 전환하여 페이지에 있는 주석의 수를 가리킵니다.
 
 ![주석 버튼](assets/page-editor-annotations.png)
 
@@ -132,25 +132,25 @@ AEM 페이지 편집기는 주로 다음 세 섹션으로 구성됩니다.
 * 페이지에 새 자산을 추가하는 에셋 브라우저
 * 페이지 구조를 검색하는 콘텐츠 트리
 
-![페이지 편집기의 사이드 패널](assets/page-editor-side-panel.png)
+![페이지 편집기의 측면 패널](assets/page-editor-side-panel.png)
 
-문서를 참조하십시오. [페이지 편집기 사이드 패널](/help/sites-cloud/authoring/page-editor/editor-side-panel.md) 추가 정보.
+자세한 내용은 [페이지 편집기 사이드 패널](/help/sites-cloud/authoring/page-editor/editor-side-panel.md) 문서를 참조하십시오.
 
 ### 편집기 {#editor}
 
 편집기에서 페이지 콘텐츠를 직접 변경할 수 있습니다. 페이지가 표시되는 대로 렌더링되므로 사이드 패널의 에셋 또는 구성 요소 브라우저를 사용하여 새 콘텐츠를 드래그 앤 드롭하고 콘텐츠를 즉석에서 편집할 수 있습니다.
 
-![페이지 편집기 편집자](assets/page-editor-editor.png)
+![페이지 편집기의 편집기](assets/page-editor-editor.png)
 
 ## 콘텐츠 편집 {#editing-content}
 
 이제 페이지 편집기를 이해했으므로 콘텐츠를 편집할 준비가 되었습니다.
 
-문서를 참조하십시오. [AEM 페이지 편집기를 사용하여 컨텐츠 편집](/help/sites-cloud/authoring/page-editor/edit-content.md) 추가 정보.
+자세한 내용은 [AEM 페이지 편집기로 콘텐츠 편집](/help/sites-cloud/authoring/page-editor/edit-content.md) 문서를 참조하십시오.
 
 ## 상태 알림 {#status-notification}
 
-페이지가 [워크플로우](/help/sites-cloud/authoring/workflows/overview.md) 또는 여러 워크플로가 있을 경우 페이지를 편집할 때 도구 모음 아래에 있는 알림 표시줄에 이 정보가 표시됩니다.
+페이지가 [워크플로](/help/sites-cloud/authoring/workflows/overview.md) 또는 여러 워크플로의 일부인 경우 페이지를 편집할 때 도구 모음 아래에 있는 알림 표시줄에 이 정보가 표시됩니다.
 
 ![워크플로 알림](assets/page-editor-editing-workflow-notification.png)
 
@@ -172,7 +172,7 @@ AEM 페이지 편집기는 주로 다음 세 섹션으로 구성됩니다.
 
 ## Live Copy 상태 {#live-copy-status}
 
-다음 **Live Copy 상태** 페이지 모드에서는 라이브 카피 상태 및 상속되지 않은 구성 요소에 대한 빠른 개요를 제공합니다.
+**라이브 카피 상태** 페이지 모드를 사용하면 라이브 카피 상태와 상속되지 않은 구성 요소에 대한 빠른 개요를 볼 수 있습니다.
 
 * 녹색 테두리: 상속됨
 * 분홍색 테두리: 상속이 취소되었습니다.
@@ -185,12 +185,12 @@ AEM 페이지 편집기는 주로 다음 세 섹션으로 구성됩니다.
 
 페이지를 미리 볼 수 있는 두 가지 옵션이 있습니다.
 
-* [미리 보기 모드](#preview-mode) - 빠르고 즉각적인 미리보기
-* [게시됨으로 보기](#view-as-published) - 새 탭에서 페이지를 여는 전체 미리보기
+* [미리 보기 모드](#preview-mode) - 빠르고 즉각적인 미리 보기
+* [게시됨으로 보기](#view-as-published) - 새 탭에서 페이지를 여는 전체 미리 보기
 
 >[!TIP]
 >
->* 콘텐츠의 링크는 표시되지만 에서는 액세스할 수 없습니다. **편집** 모드.
+>* 콘텐츠에 있는 링크가 표시되지만 **편집** 모드에서 액세스할 수 없습니다.
 >* 링크를 사용하여 탐색하려는 경우 미리보기 옵션 중 하나를 사용합니다.
 >* [키보드 단축키](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `Ctrl-Shift-M`을 사용하여 미리보기와 마지막에 선택한 모드 간에 전환할 수 있습니다.
 
@@ -225,7 +225,7 @@ AEM을 사용하면 다른 사람이 컨텐츠를 편집할 수 없도록 페이
 
 ![잠긴 페이지의 예](assets/page-editor-editing-locked-page.png)
 
-페이지 잠금 해제는 다음과 매우 유사합니다 [페이지 잠금](#locking-a-page). 페이지가 잠기면 잠금 옵션이 잠금 해제 동작으로 대체됩니다.
+페이지 잠금을 해제하는 것은 [페이지 잠금](#locking-a-page)과 매우 유사합니다. 페이지가 잠기면 잠금 옵션이 잠금 해제 동작으로 대체됩니다.
 
 >[!CAUTION]
 >
@@ -246,4 +246,4 @@ AEM을 사용하면 다른 사람이 컨텐츠를 편집할 수 없도록 페이
 
 >[!NOTE]
 >
->문서를 참조하십시오. [실행 취소 및 재실행 제한 사항](/help/sites-cloud/authoring/page-editor/undo-redo.md) 페이지 편집 내용을 실행 취소하거나 재실행할 때 가능한 사항에 대한 전체 세부 정보.
+>페이지 편집 내용을 실행 취소하거나 다시 실행할 때 가능한 사항에 대한 자세한 내용은 [실행 취소 및 다시 실행 제한](/help/sites-cloud/authoring/page-editor/undo-redo.md) 문서를 참조하십시오.

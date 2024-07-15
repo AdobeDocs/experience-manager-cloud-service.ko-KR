@@ -16,7 +16,7 @@ ht-degree: 35%
 
 # 활동 스트림에서 자산 작업 로그 보기 {#activity-stream-in-timeline}
 
-이 기능은 타임라인에 에셋에 대한 활동 로그를 표시합니다. 에서 다음 에셋 관련 작업을 수행하는 경우 [!DNL Experience Manager Assets], 활동 스트림 기능은 활동을 반영하도록 타임라인을 업데이트합니다.
+이 기능은 타임라인에 에셋에 대한 활동 로그를 표시합니다. [!DNL Experience Manager Assets]에서 다음 자산 관련 작업을 수행하는 경우 활동 스트림 기능이 해당 활동을 반영하도록 타임라인을 업데이트합니다.
 
 다음 작업이 활동 스트림에 기록됩니다.
 
@@ -29,13 +29,13 @@ ht-degree: 35%
 * 거부
 * 이동
 
-The activity logs to be displayed in the timeline are fetched from the location `/var/audit/com.day.cq.dam/content/dam` in CRX, where log files are stored.  또한 타임라인 활동은 새 에셋이 업로드되거나 기존 에셋을 수정하고 체크 인하면 기록됩니다 [!DNL Experience Manager] 경유 [Adobe 에셋 링크](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html) 또는 [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+The activity logs to be displayed in the timeline are fetched from the location `/var/audit/com.day.cq.dam/content/dam` in CRX, where log files are stored.  또한 [자산 링크 Adobe](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html) 또는 [[!DNL Experience Manager] 데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)을 통해 새 자산을 업로드하거나 기존 자산을 수정하고 [!DNL Experience Manager]에 체크 인하면 타임라인 활동이 기록됩니다.
 
 >[!NOTE]
 >
 >내역 정보가 저장되지 않아 임시 워크플로우는 타임라인에 표시되지 않습니다.
 
-활동 스트림을 보려면 에셋에서 하나 이상의 작업을 수행하고 에셋을 선택한 다음 를 선택합니다 **[!UICONTROL 타임라인]** GlobalNav 목록에서
+활동 스트림을 보려면 에셋에서 하나 이상의 작업을 수행하고 에셋을 선택한 다음 GlobalNav 목록에서 **[!UICONTROL 타임라인]**&#x200B;을 선택합니다.
 
 <!-- ![timeline-2](assets/timeline-2.png) -->
 

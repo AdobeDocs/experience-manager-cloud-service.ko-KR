@@ -1350,7 +1350,7 @@ query {
 
 >[!NOTE]
 >
->`fragments` 필드에는 `fragment-reference` 데이터 유형이 있고, `Article` 모델이 선택됩니다. 쿼리 전달 `fragments` 의 배열로서 `[Article]`.
+>`fragments` 필드에는 `fragment-reference` 데이터 유형이 있고, `Article` 모델이 선택됩니다. 쿼리가 `fragments`을(를) `[Article]`의 배열로 전달합니다.
 
 ```graphql
 {
@@ -1796,7 +1796,7 @@ query {
 } 
 ```
 
-## DAM 및 Dynamic Media 에셋 전달을 위한 샘플 쿼리 {#sample-queries-delivery-DAM-DM}
+## DAM 및 Dynamic Media Assets 전달을 위한 샘플 쿼리 {#sample-queries-delivery-DAM-DM}
 
 웹에 최적화된 이미지 제공(DAM 에셋):
 
@@ -1806,9 +1806,9 @@ query {
 
 Dynamic Media 에셋으로의 URL 전달용
 
-* 다음을 참조하십시오 [URL을 통한 Dynamic Media 에셋 전달을 위한 샘플 쿼리 - 이미지 참조](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+* [URL별 Dynamic Media 자산 게재용 샘플 쿼리 - 이미지 참조](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)를 참조하십시오.
 
-* 다음을 참조하십시오 [URL을 통한 Dynamic Media 에셋 전달을 위한 샘플 쿼리 - 다중 참조](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+* [URL별 Dynamic Media 자산 게재에 대한 샘플 쿼리 - 다중 참조](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)를 참조하십시오.
 
 ## 샘플 콘텐츠 조각 구조 (GraphQL과 함께 사용) {#content-fragment-structure-graphql}
 

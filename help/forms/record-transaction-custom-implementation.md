@@ -20,9 +20,9 @@ ht-degree: 16%
 
 TransactionRecorder API를 사용하여 트랜잭션으로 계산되지 않은 작업을 자동으로 기록합니다.
 
-사용자 지정 코드를 사용하여 PDF 양식을 제출할 수 있습니다. 또는 AEM Forms에서 제공하는 제출 방법 대신 사용자 지정 방법을 사용하여 양식을 제출합니다. 이전에 언급된 AEM Forms API의 모든 작업 및 사용자 지정 구현은 트랜잭션으로 계산되지 않습니다. AEM Forms에서 API 제공, [TransactionRecorder](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/com/adobe/aem/transaction/core/ITransactionRecorder.html)를 입력하여 트랜잭션으로 이러한 작업을 기록합니다.
+사용자 지정 코드를 사용하여 PDF 양식을 제출할 수 있습니다. 또는 AEM Forms에서 제공하는 제출 방법 대신 사용자 지정 방법을 사용하여 양식을 제출합니다. 이전에 언급된 AEM Forms API의 모든 작업 및 사용자 지정 구현은 트랜잭션으로 계산되지 않습니다. AEM Forms은 트랜잭션과 같은 작업을 기록할 수 있도록 [TransactionRecorder](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/com/adobe/aem/transaction/core/ITransactionRecorder.html) API를 제공합니다.
 
-트랜잭션을 기록하려면 [표준 sling 서블릿](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/store-and-retrieve-af-with-2fa/create-servlet.html?lang=en) 클라이언트에서 서블릿을 호출하여 트랜잭션을 기록합니다. AJAX 또는 기타 모든 표준 메서드를 사용하여 서블릿을 호출할 수 있습니다.
+트랜잭션을 기록하려면 [표준 슬링 서블릿](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/store-and-retrieve-af-with-2fa/create-servlet.html?lang=en)을(를) 작성하고 클라이언트에서 서블릿을 호출하여 트랜잭션을 기록합니다. AJAX 또는 기타 모든 표준 메서드를 사용하여 서블릿을 호출할 수 있습니다.
 
 ## 샘플 서버측 코드 {#sample-server-sided-code}
 
@@ -74,7 +74,7 @@ private TransactionRecord extractTxRecordFromRequest(SlingHttpServletRequest req
 
 ## 샘플 클라이언트측 코드 {#sample-client-side-code}
 
-아래 샘플 코드를 사용하여 가 있는 서블릿을 호출할 수 있습니다. `TransactionRecorder`API.
+아래 샘플 코드를 사용하여 `TransactionRecorder`API가 있는 서블릿을 호출할 수 있습니다.
 
 ```javascript
 $.ajax({

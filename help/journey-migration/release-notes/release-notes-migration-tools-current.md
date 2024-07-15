@@ -29,6 +29,6 @@ ht-degree: 7%
 
 ### 새로운 기능 {#what-is-new-cam}
 
-* CAM(Cloud Acceleration Manager)은 이제 BPA에서 생성한 보고서를 CAM에 직접 자동 업로드할 수 있습니다. 자세히 알아보기 [여기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase#best-practices-analysis)
+* CAM(Cloud Acceleration Manager)은 이제 BPA에서 생성된 보고서를 CAM에 직접 자동 업로드할 수 있습니다. 자세히 알아보기 [여기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase#best-practices-analysis)
 
-* Cloud Acceleration Manager는 이제 노드 수, 데이터 저장소 크기 등과 같은 요소를 고려하여 수집이 소요되는 예상 시간을 제공합니다. 자세히 알아보기 [여기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content)
+* 이제 Cloud Acceleration Manager은 노드 수, 데이터 저장소 크기 등과 같은 요소를 고려하여 수집에 소요되는 예상 시간을 제공합니다. 자세히 알아보기 [여기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content)

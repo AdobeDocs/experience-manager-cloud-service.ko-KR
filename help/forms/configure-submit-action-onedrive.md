@@ -17,7 +17,7 @@ ht-degree: 67%
 
 **[!UICONTROL OneDrive에 제출]** 제출 액션은 적응형 양식을 Microsoft® OneDrive와 연결합니다. 양식 데이터, 파일, 첨부 파일 또는 기록 문서를 연결된 Microsoft® OneDrive 저장소에 제출할 수 있습니다.
 
-AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 제출 액션을 제공합니다. 다음에서 이러한 옵션에 대해 자세히 알아볼 수 있습니다. [적응형 양식 제출 액션](/help/forms/configure-submit-actions-core-components.md)  기사.
+AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 제출 액션을 제공합니다. [적응형 양식 제출 액션](/help/forms/configure-submit-actions-core-components.md) 문서에서 이러한 옵션에 대해 자세히 알아볼 수 있습니다.
 
 ## 장점
 
@@ -33,7 +33,7 @@ AEM Forms과 Microsoft® OneDrive의 원활한 통합의 이점 중 일부는 �
 AEM Forms 제출용 OneDrive를 구성하려면 다음 단계를 수행하십시오.
 
 1. [OneDrive 구성 만들기](#create-a-onedrive-configuration-create-onedrive-configuration): AEM Forms를 Microsoft® OneDrive Storage에 연결합니다.
-2. [적응형 양식에서 OneDrive에 제출 동작 사용](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af): 적응형 양식을 구성된 Microsoft® OneDrive에 연결합니다.
+2. [적응형 양식에서 OneDrive에 제출 액션을 사용](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af): 적응형 양식을 구성된 Microsoft® OneDrive에 연결합니다.
 
 ### OneDrive 구성 만들기 {#create-onedrice-configuration}
 

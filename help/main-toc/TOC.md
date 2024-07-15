@@ -7,7 +7,7 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 4e272fe63ccdc920c58ada780a2087bba1bfcb1f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '5149'
 ht-degree: 100%
 

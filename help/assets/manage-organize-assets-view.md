@@ -114,7 +114,7 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 **필요한 권한:** 자산에 대한 `Can Edit`, `Owner` 또는 관리자 권한.
 
-에셋 보기를 사용하면 저장소에서 사용 가능한 에셋의 상태를 설정할 수 있습니다. 자산 상태를 설정하여 디지털 자산의 다운스트림 소비를 보다 효과적으로 관리합니다.
+Assets 보기를 사용하면 저장소에서 사용 가능한 에셋의 상태를 설정할 수 있습니다. 자산 상태를 설정하여 디지털 자산의 다운스트림 소비를 보다 효과적으로 관리합니다.
 
 자산에 대해 다음과 같은 상태를 설정할 수 있습니다.
 
@@ -130,14 +130,14 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 1. 자산을 선택하고 도구 모음에서 **[!UICONTROL 세부 정보]**&#x200B;를 클릭합니다.
 
-1. 다음에서 **[!UICONTROL 기본]** 탭에서 에셋 상태를 선택합니다. **[!UICONTROL 상태]** 드롭다운 목록입니다. 가능한 값에는 승인됨, 거부됨 및 상태 없음(기본값)이 포함됩니다.
+1. **[!UICONTROL 기본]** 탭의 **[!UICONTROL 상태]** 드롭다운 목록에서 에셋 상태를 선택합니다. 가능한 값에는 승인됨, 거부됨 및 상태 없음(기본값)이 포함됩니다.
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 
 
 ### 자산 만료 날짜 설정 {#set-asset-expiration-date}
 
-또한 에셋 보기를 사용하여 저장소에서 사용할 수 있는 에셋의 만료 날짜를 설정할 수도 있습니다. 그런 다음 `Expired` 자산 상태를 기반으로 [검색 결과를 필터링](search-assets-view.md#refine-search-results)할 수 있습니다. 또한 자산의 만료 날짜 범위를 지정하여 검색 결과를 추가로 필터링할 수 있습니다.
+Assets 보기를 사용하면 저장소에서 사용할 수 있는 에셋의 만료 날짜도 설정할 수 있습니다. 그런 다음 `Expired` 자산 상태를 기반으로 [검색 결과를 필터링](search-assets-view.md#refine-search-results)할 수 있습니다. 또한 자산의 만료 날짜 범위를 지정하여 검색 결과를 추가로 필터링할 수 있습니다.
 
 자산 만료 날짜를 설정하려면 다음 작업을 수행하십시오.
 
@@ -147,13 +147,13 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 `Expired` 자산 카드 표시기는 자산에 대해 설정된 `Approved` 또는 `Rejected` 표시기보다 우선합니다.
 
-에셋 상태에 따라 에셋을 필터링할 수도 있습니다. 자세한 내용은 [자산 보기에서 자산 검색](search-assets-view.md).
+에셋 상태에 따라 에셋을 필터링할 수도 있습니다. 자세한 내용은 [Assets 보기에서 에셋 검색](search-assets-view.md)을 참조하십시오.
 
 ## 자산 상태 필드를 포함하도록 메타데이터 양식 맞춤화 {#customize-asset-status-metadata-form}
 
 **필요한 권한:** 관리자
 
-에셋 보기는 기본적으로 많은 표준 메타데이터 필드를 제공합니다. 조직에서는 추가 메타데이터가 필요하며 비즈니스별 메타데이터를 추가하려면 더 많은 메타데이터 필드가 필요합니다. 메타데이터 양식을 통해 기업은 자산의 [!UICONTROL 세부 정보] 페이지에 사용자 정의 메타데이터 필드를 추가할 수 있습니다. 비즈니스별 메타데이터는 자산의 거버넌스 및 검색 기능을 개선합니다.
+Assets 보기는 기본적으로 많은 표준 메타데이터 필드를 제공합니다. 조직에서는 추가 메타데이터가 필요하며 비즈니스별 메타데이터를 추가하려면 더 많은 메타데이터 필드가 필요합니다. 메타데이터 양식을 통해 기업은 자산의 [!UICONTROL 세부 정보] 페이지에 사용자 정의 메타데이터 필드를 추가할 수 있습니다. 비즈니스별 메타데이터는 자산의 거버넌스 및 검색 기능을 개선합니다.
 
 메타데이터 양식에 메타데이터 필드를 추가하는 방법에 대한 자세한 내용은 [메타데이터 양식](metadata-assets-view.md#metadata-forms)을 참조하십시오.
 
@@ -167,7 +167,7 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 ## 다음 단계 {#next-steps}
 
-* [에셋 보기의 에셋 관리에 대한 비디오 보기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html)
+* [Assets 보기에서 자산을 관리하려면 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html)
 
 * Assets 보기 사용자 인터페이스에서 사용 가능한 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백 제공
 

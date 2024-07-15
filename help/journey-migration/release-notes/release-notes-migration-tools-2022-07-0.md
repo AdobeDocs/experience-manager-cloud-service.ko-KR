@@ -23,8 +23,8 @@ Best Practices Analyzer v2.1.30의 릴리스 날짜는 2022년 7월 27일입니�
 
 ### 새로운 기능 {#what-is-new-bpa}
 
-* 이제 BPA는 다음을 제외한 총 마이그레이션 가능한 Lucene 인덱스 크기인 총 Lucene 인덱스를 감지하고 보고할 수 있습니다. `/oak:index/lucene` 및 `/oak:index/damAssetLucene`.
-* 사용자 지정 i18n 사전의 사용을 감지하고 보고하기 위해 BPA에 새로운 패턴이 추가되었습니다. Translator.html은 AEM as a Cloud Service으로 사용할 수 없으며 사용자 지정 i18n 사전을 Cloud Manager CI/CD 파이프라인을 통해 Git에서 배포해야 합니다.
+* 이제 BPA가 마이그레이션 가능한 총 Lucene 인덱스 크기인 `/oak:index/lucene` 및 `/oak:index/damAssetLucene`을(를) 제외한 총 Lucene 인덱스를 감지하고 보고할 수 있습니다.
+* 사용자 지정 i18n 사전의 사용을 감지하고 보고하기 위해 BPA에 새로운 패턴이 추가되었습니다. Translator.html은 AEM as a Cloud Service에서 사용할 수 없으며 사용자 지정 i18n 사전을 Cloud Manager CI/CD 파이프라인을 통해 Git에서 배포해야 합니다.
 
 ### 버그 수정 {#bug-fixes-bpa}
 
@@ -56,9 +56,9 @@ Best Practices Analyzer v2.1.30의 릴리스 날짜는 2022년 7월 27일입니�
 
 ### 릴리스 일자 {#release-date-cam}
 
-Cloud Acceleration Manager 의 릴리스 날짜는 2022년 7월 15일입니다.
+Cloud Acceleration Manager의 릴리스 날짜는 2022년 7월 15일입니다.
 
 ### 새로운 기능 {#what-is-new-cam}
 
-* Cloud Acceleration Manager는 이제 자동 검색이 실패할 때 수집을 시작할 수 있도록 사용자가 마이그레이션 토큰을 수동으로 검색할 수 있도록 제공합니다. 고객이 CAM을 차단하는 IP 허용 목록을 설정했거나 관리자가 아닌 사용자가 수집을 시작하려고 하는 경우 자동 검색이 실패할 수 있습니다. 다음을 참조하십시오 [문제 해결](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) 추가 정보.
+* 이제 Cloud Acceleration Manager에서는 자동 검색이 실패할 때 수집을 시작할 수 있도록 마이그레이션 토큰을 수동으로 검색할 수 있도록 제공합니다. 고객이 CAM을 차단하는 IP 허용 목록을 설정했거나 관리자가 아닌 사용자가 수집을 시작하려고 하는 경우 자동 검색이 실패할 수 있습니다. 자세한 내용은 [문제 해결](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting)을 참조하세요.
 * 이제 마이그레이션 복잡성 페이지의 긴 테이블을 쉽게 접을 수 있습니다.

@@ -1,5 +1,5 @@
 ---
-title: Markdown(자산 - 콘텐츠 조각)
+title: Markdown(Assets - 콘텐츠 조각)
 description: 콘텐츠 조각 편집기에서 Markdown 구문을 사용하여 Headless 콘텐츠를 쉽게 만들 수 있는 방법을 이해합니다.
 feature: Content Fragments
 role: User
@@ -14,13 +14,13 @@ ht-degree: 80%
 
 # Markdown {#markdown}
 
-다음과 같은 경우: [작성](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), 콘텐츠 조각 편집기는 *Markdown* headless 게재 또는 페이지 작성에 대한 콘텐츠를 쉽게 작성할 수 있는 구문:
+[작성](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)하는 경우 콘텐츠 조각 편집기는 *Markdown* 구문을 사용하여 Headless 게재 또는 페이지 작성에 필요한 콘텐츠를 쉽게 작성할 수 있도록 합니다.
 
 >[!NOTE]
 >
 >콘텐츠 조각은 Sites 기능이지만 **자산**&#x200B;으로 저장됩니다.
 >
->콘텐츠 조각 작성용 편집기에는 두 가지가 있습니다. 이 단원에서는 주로 **에셋** 콘솔. 사이트 설명서 를 참조하십시오. [컨텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md), 새 편집기에 대한 세부 정보(주로 **컨텐츠 조각** console).
+>콘텐츠 조각 작성용 편집기에는 두 가지가 있습니다. 이 섹션에서는 주로 **Assets** 콘솔에서 액세스하는 원본 편집기에 대해 설명합니다. 새 편집기(**콘텐츠 조각** 콘솔에서 주로 액세스)에 대한 자세한 내용은 사이트 설명서 [콘텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md)을 참조하십시오.
 
 ![Markdown 편집기](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 

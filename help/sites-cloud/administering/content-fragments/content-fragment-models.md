@@ -49,7 +49,7 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 >
 >참조된 여러 조각에 대해 쿼리하는 경우 다양한 조각 모델에 이름이 같지만 유형이 다른 필드 이름이 있는 것은 권장되지 않습니다.
 >
->자세한 내용은 을 참조하십시오. [컨텐츠 조각과 함께 사용하기 위한 AEM GraphQL API - 제한 사항](/help/headless/graphql-api/content-fragments.md#limitations)
+>자세한 내용은 [콘텐츠 조각에 사용할 AEM GraphQL API - 제한 사항](/help/headless/graphql-api/content-fragments.md#limitations)을 참조하십시오.
 
 ### 콘텐츠 조각 모델 - 속성 {#content-fragment-model-properties}
 
@@ -207,10 +207,10 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 
 * **렌더링 형식**
 
-  조각의 필드를 구현하거나 렌더링하기 위한 다양한 옵션입니다. 이를 통해 작성자에게 필드의 단일 인스턴스가 표시되는지 또는 작성자가 여러 인스턴스를 만들 수 있는지를 정의할 수 있습니다. 날짜 **다중 필드** 최소 및 최대 항목 수를 정의할 수 있는 데 사용됩니다. 참조 [유효성 검사](#validation) 을 참조하십시오.
+  조각의 필드를 구현하거나 렌더링하기 위한 다양한 옵션입니다. 이를 통해 작성자에게 필드의 단일 인스턴스가 표시되는지 또는 작성자가 여러 인스턴스를 만들 수 있는지를 정의할 수 있습니다. **여러 필드**&#x200B;를 사용하면 최소 및 최대 항목 수를 정의할 수 있습니다. 자세한 내용은 [유효성 검사](#validation)를 참조하세요.
 
 * **필드 레이블**
-입력 **필드 레이블** 자동 생성 **속성 이름**: 필요한 경우 수동으로 업데이트할 수 있습니다.
+**필드 레이블**&#x200B;을 입력하면 **속성 이름**&#x200B;이 자동으로 생성되며, 필요한 경우 수동으로 업데이트할 수 있습니다.
 
 * **유효성 검사**
 기본 유효성 검사는 **필수** 속성과 같은 메커니즘을 통해 사용할 수 있습니다. 일부 데이터 유형에는 추가 유효성 검사 필드가 있습니다. 자세한 내용은 [유효성 검사](#validation)를 참조하십시오.
@@ -267,12 +267,12 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
    * 특정 콘텐츠 조각 모델을 테스트합니다.
 * **최소 항목 수** / **최대 항목 수**
 
-  (으)로 정의된 필드 **다중 필드** (다음으로 설정) **렌더링 형식**) 다음 옵션을 사용할 수 있습니다.
+  **다중 필드**(**렌더링 형식**(으)로 설정)로 정의된 필드에는 다음 옵션이 있습니다.
 
    * **최소 항목 수**
    * **최대 항목 수**
 
-  이러한 인증서는 [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md).
+  [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md)에서 유효성을 검사합니다.
 
 ## 참조를 사용하여 중첩된 콘텐츠 형성 {#using-references-to-form-nested-content}
 
@@ -294,15 +294,17 @@ Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각 모델은 [
 >
 AEM은 다음에 대한 재발 방지 기능을 제공합니다.
 >
-* 콘텐츠 참조 이렇게 하면 사용자가 현재 조각에 대한 참조를 추가할 수 없으며 빈 조각 참조 선택기 대화 상자가 나타날 수 있습니다.
+* 콘텐츠 참조
+이렇게 하면 사용자가 현재 조각에 대한 참조를 추가할 수 없으며 빈 조각 참조 선택기 대화 상자가 나타날 수 있습니다.
 >
-* GraphQL의 조각 참조 서로 참조하는 여러 콘텐츠 조각을 반환하는 딥 쿼리를 만들면 첫 번째 발생 시 null을 반환합니다.
+* GraphQL의 조각 참조
+서로 참조하는 여러 콘텐츠 조각을 반환하는 복합 쿼리를 만들면 첫 번째 발생 시 null을 반환합니다.
 
 >[!CAUTION]
 >
 참조된 여러 조각에 대해 쿼리하는 경우 다양한 조각 모델에 이름이 같지만 유형이 다른 필드 이름이 있는 것은 권장되지 않습니다.
 >
-자세한 내용은 을 참조하십시오. [컨텐츠 조각과 함께 사용하기 위한 AEM GraphQL API - 제한 사항](/help/headless/graphql-api/content-fragments.md#limitations)
+자세한 내용은 [콘텐츠 조각에 사용할 AEM GraphQL API - 제한 사항](/help/headless/graphql-api/content-fragments.md#limitations)을 참조하십시오.
 
 ### 콘텐츠 참조 {#content-reference}
 

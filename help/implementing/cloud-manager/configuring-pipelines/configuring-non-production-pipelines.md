@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
 source-wordcount: '1400'
-ht-degree: 73%
+ht-degree: 75%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 73%
 
 프로덕션 환경에 배포하기 전에 비프로덕션 파이프라인을 구성하여 코드 품질을 테스트하는 방법을 알아봅니다.
 
-사용자에게 다음이 있어야 합니다. **[배포 관리자](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** 비프로덕션 파이프라인을 구성하는 역할입니다.
+비프로덕션 파이프라인을 구성하려면 사용자에게 **[배포 관리자](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** 역할이 있어야 합니다.
 
 ## 비프로덕션 파이프라인 {#non-production-pipelines}
 
@@ -72,7 +72,7 @@ ht-degree: 73%
    * **[전체 스택 코드](#full-stack-code)**
    * **[타깃팅된 배포](#targeted-deployment)**
 
-다음을 참조하십시오 [CI/CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 파이프라인 유형에 대한 자세한 정보입니다.
+파이프라인 유형에 대한 자세한 내용은 [CI/CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)을 참조하십시오.
 
 비프로덕션 파이프라인 생성을 완료하는 단계는 선택한 소스 코드 유형에 따라 다릅니다. 파이프라인 구성을 완료할 수 있도록 위의 링크를 따라 이 문서의 다음 섹션으로 이동합니다.
 
@@ -103,7 +103,7 @@ ht-degree: 73%
       * **제품 기능 테스트** - 개발 환경에 대해 [제품 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)를 실행합니다.
       * **사용자 정의 기능 테스트** - 개발 환경에 대해 [사용자 정의 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)를 실행합니다.
       * **사용자 정의 UI 테스트** - 사용자 정의 애플리케이션에 대한 [사용자 정의 UI 테스트](/help/implementing/cloud-manager/ui-testing.md)를 실행합니다.
-      * **경험 감사** - 실행 [경험 감사](/help/implementing/cloud-manager/experience-audit-testing.md)
+      * **경험 감사** - [경험 감사 실행](/help/implementing/cloud-manager/experience-audit-testing.md)
 
    ![전체 스택 파이프라인](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
@@ -113,23 +113,23 @@ ht-degree: 73%
 
 ### 대상 배포 {#targeted-deployment}
 
-타깃팅된 배포는 AEM 애플리케이션의 선택한 부분에 대해서만 코드를 배포합니다. 이러한 배포에서는 다음을 선택할 수 있습니다. **포함** 다음 코드 유형 중 하나:
+타깃팅된 배포는 AEM 애플리케이션의 선택한 부분에 대해서만 코드를 배포합니다. 이러한 배포에서는 다음 코드 유형 중 하나를 **포함**&#x200B;하도록 선택할 수 있습니다.
 
 * **구성** - AEM 환경에서 트래픽 필터 규칙에 대한 설정을 구성합니다.
-   * 문서 보기 [WAF 규칙을 포함한 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 저장소 내 트래픽 필터 규칙을 관리하여 올바르게 배포하는 방법에 대해 알아봅니다.
-   * 타깃팅된 배포 파이프라인을 실행할 때 구성 [WAF 구성 등](/help/security/traffic-filter-rules-including-waf.md) 파이프라인에서 정의한 환경, 저장소 및 분기에 저장된 경우 배포됩니다.
+   * [WAF 규칙을 포함한 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 문서를 참조하여 제대로 배포되도록 저장소에서 트래픽 필터 규칙을 관리하는 방법에 대해 알아보십시오.
+   * 타깃팅된 배포 파이프라인을 실행할 때 WAF 구성](/help/security/traffic-filter-rules-including-waf.md)과(와) 같은 구성 [이(가) 파이프라인에 정의한 환경, 저장소 및 분기에 저장되면 배포됩니다.
    * 언제든지 환경당 하나의 구성 파이프라인만 있을 수 있습니다.
-* **프론트엔드 코드** - AEM 애플리케이션의 프런트 엔드에 대한 JavaScript 및 CSS를 구성합니다.
+* **프론트엔드 코드** - AEM 애플리케이션의 프론트엔드에 맞게 JavaScript 및 CSS를 구성합니다.
    * 프론트엔드 파이프라인을 사용하면 프론트엔드 개발자에게 더 많은 독립성을 부여하고 개발 프로세스를 가속화할 수 있습니다.
    * 이 프로세스의 잠재력을 최대한 활용하기 위해 알아야 할 몇 가지 고려 사항 및 이 프로세스가 작동하는 방식에 대한 자세한 내용은 [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 문서를 참조하십시오.
 * **웹 계층 구성** - 웹 페이지를 저장, 처리 및 클라이언트에 전달하도록 Dispatcher 속성을 구성합니다.
-   * 문서 보기 [CI/CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 을 참조하십시오.
+   * 자세한 내용은 [CI/CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 문서를 참조하십시오.
    * 선택한 환경에 대한 웹 계층 코드 파이프라인이 있는 경우, 이 선택이 비활성화됩니다.
    * 기존 전체 스택 파이프라인이 환경에 배포되어 있는 경우 동일한 환경에 대한 웹 계층 구성 파이프라인을 생성하면 전체 스택 파이프라인의 기존 웹 계층 구성이 무시됩니다.
 
 >[!NOTE]
 >
->웹 계층 및 구성 파이프라인은 개인 저장소에서 지원되지 않습니다. 문서를 참조하십시오. [Cloud Manager에서 개인 저장소 추가](/help/implementing/cloud-manager/managing-code/private-repositories.md) 자세한 내용 및 전체 제한 사항 목록
+>웹 계층 및 구성 파이프라인은 비공개 저장소에서 지원되지 않습니다. 자세한 내용과 제한 사항 전체 목록은 [Cloud Manager에서 비공개 저장소 추가](/help/implementing/cloud-manager/managing-code/private-repositories.md) 문서를 참조하십시오.
 
 배포 유형을 선택하면 비프로덕션 대상 배포 파이프라인의 생성을 완료하는 단계가 동일합니다.
 
@@ -137,11 +137,11 @@ ht-degree: 73%
 
 ![타깃팅된 배포 옵션](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-targeted-deployment.png)
 
-1. 다음을 정의합니다. **적합한 배포 환경**.
+1. **적합한 배포 환경**&#x200B;을(를) 정의합니다.
 
    * 파이프라인이 배포 파이프라인인 경우 배포할 환경을 선택해야 합니다.
 
-1. 아래 **소스 코드**, 다음 옵션을 정의합니다.
+1. **Source 코드**&#x200B;에서 다음 옵션을 정의합니다.
 
    * **저장소** - 이 옵션은 파이프라인에서 코드를 검색해야 하는 git 저장소를 정의합니다.
 
@@ -152,13 +152,13 @@ ht-degree: 73%
    * **Git 분기** - 이 옵션은 선택한 파이프라인에서 코드를 검색해야 하는 분기를 정의합니다.
       * 분기 이름의 처음 몇 글자와 이 필드의 자동 완성 기능을 입력합니다. 선택할 수 있는 일치하는 분기를 찾습니다.
    * **코드 위치** - 이 옵션은 파이프라인이 코드를 검색해야 하는 선택한 저장소 분기의 경로를 정의합니다.
-   * **파이프라인** - 프론트엔드 비프로덕션 파이프라인의 경우 다음을 활성화할 수 있습니다. **[경험 감사.](/help/implementing/cloud-manager/experience-audit-testing.md)**
+   * **파이프라인** - 프론트엔드 비프로덕션 파이프라인의 경우 **[경험 감사를 활성화할 수 있습니다.](/help/implementing/cloud-manager/experience-audit-testing.md)**
 
    ![파이프라인 구성](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. 경험 감사를 활성화한 경우 을 탭하거나 클릭합니다. **계속** 로 이동 **경험 감사** 경험 감사에 항상 포함되어야 하는 경로를 정의할 수 있는 탭입니다.
+1. 경험 감사를 활성화한 경우 **계속**&#x200B;을 탭하거나 클릭하여 경험 감사에 항상 포함되어야 하는 경로를 정의할 수 있는 **경험 감사** 탭으로 이동합니다.
 
-   * 활성화한 경우 **경험 감사**, 문서를 참조하십시오. [경험 감사](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) 를 참조하십시오.
+   * **경험 감사**&#x200B;를 사용하도록 설정한 경우 구성 방법에 대한 자세한 내용은 [경험 감사](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) 문서를 참조하십시오.
    * 그렇지 않은 경우 이 단계를 건너뜁니다.
 
 1. **저장**&#x200B;을 탭하거나 클릭하여 파이프라인을 저장합니다.

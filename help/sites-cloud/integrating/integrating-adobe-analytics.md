@@ -50,13 +50,13 @@ Adobe Analytics와 AEM as a Cloud Service를 통합하여 웹 페이지 활동�
 
 Analytics Standard API를 통해 Adobe Experience Manager as a Cloud Service(AEMaaCS)와 Adobe Analytics을 통합하려면 Adobe IMS(Identity Management 시스템) 구성이 필요합니다.
 
-다음을 참조하십시오 [AEM as a Cloud Service에 대한 IMS 통합 설정](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) ims 구성을 만드는 방법에 대해 알아봅니다.
+IMS 구성을 만드는 방법은 [AEM as a Cloud Service에 대한 IMS 통합 설정](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)을 참조하세요.
 
 >[!NOTE]
 >
->[이제 IMS 통합이 S2S OAuth로 구성되었습니다](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>[IMS 통합이 이제 S2S OAuth](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)로 구성되었습니다.
 >
->이전 구성은 [이제 Adobe Developer 콘솔에서 더 이상 사용되지 않는 JWT 자격 증명](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
+>[JWT 자격 증명으로 이전 구성을 수행했으며 이제 Adobe Developer Console에서 사용 중단](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)됩니다.
 
 ### 사이트에 구성 추가 {#add-configuration}
 

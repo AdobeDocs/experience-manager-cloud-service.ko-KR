@@ -23,8 +23,8 @@ Assets 보기를 사용하면 크기 조정, 배경 제거, 자르기 및 JPEG �
 
 ## 이미지 편집 {#edit-image}
 
-링크를 사용하여 Assets 보기에 착륙합니다. - [Assets 보기](https://experience.adobe.com/#/assets) 올바른 저장소를 선택합니다. 액세스 권한을 받으려면 귀사의 관리자에게 문의하십시오.
-추가 참조 정보는 - [Adobe Experience Manager Assets 보기 사용 시작하기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Assets 보기 사용자 인터페이스 이해](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation), 및 [Assets 사용 사례 보기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
+[Assets 보기](https://experience.adobe.com/#/assets) 링크를 사용하고 올바른 저장소를 선택하여 Assets 보기에 도달합니다. 액세스 권한을 받으려면 귀사의 관리자에게 문의하십시오.
+추가 참조 정보는 [Adobe Experience Manager Assets 보기 사용 시작](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Assets 보기 사용자 인터페이스 이해](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) 및 [Assets 보기 사용 사례](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases)를 참조하세요.
 <!--
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
@@ -33,7 +33,7 @@ Assets 보기를 사용하면 크기 조정, 배경 제거, 자르기 및 JPEG �
 
 ### Adobe Express을 사용하여 Assets 보기에서 이미지 편집 {#edit-image-on-assets-view-using-adobe-express}
 
-Assets 보기에 랜딩한 후 **Assets**&#x200B;을 클릭하고 이미지를 선택한 다음 을 클릭합니다 **편집** 맨 위 레일에서 새 화면에 크기 조정, 배경 제거, 자르기, JPEG와 PNG 포맷 간 변환 등 사용 가능한 편집 옵션이 표시됩니다.
+Assets 보기에 도착한 후 **Assets**&#x200B;을(를) 클릭하고 이미지를 선택한 다음 상단 레일에서 **편집**&#x200B;을(를) 클릭합니다. 새 화면에 크기 조정, 배경 제거, 자르기, JPEG와 PNG 포맷 간 변환 등 사용 가능한 편집 옵션이 표시됩니다.
 
 #### 이미지 크기 조정 {#resize-image-using-express}
 
@@ -85,10 +85,10 @@ Adobe Express를 사용하여 JPEG 및 PNG 이미지 포맷 간 빠르게 변환
 ### 임베드된 Adobe Express 편집기에서 이미지 편집 {#edit-images-in-adobe-express-embedded-editor}
 
 Express 권한이 있는 사용자는 Assets 보기 내에서 임베드된 Express 편집기를 사용하여 컨텐츠를 쉽게 편집하고 Adobe Firefly의 GenAI로 새 컨텐츠를 만들 수 있습니다. 이를 통해 콘텐츠 재사용이 향상되고 콘텐츠 속도가 빨라집니다. 또한 사전 정의된 요소를 사용하여 자산을 멋지게 보이게 하거나 몇 번의 클릭만으로 빠른 작업을 수행하여 이미지를 편집할 수 있습니다.
-![express in essentials UI](/help/assets/assets/express-in-essentials-ui.jpg)
-다음을 사용하여 이미지 편집하기 [!DNL Adobe Express] 포함된 편집기에서 아래 단계를 수행합니다.
+![essentials UI의 Express](/help/assets/assets/express-in-essentials-ui.jpg)
+[!DNL Adobe Express] 포함된 편집기를 사용하여 이미지를 편집하려면 아래 단계를 따르십시오.
 
-1. 링크를 사용하여 AEM Assets 보기에 도달합니다. - [AEM Assets 보기](https://experience.adobe.com/#/assets) 올바른 저장소를 선택합니다.
+1. [AEM Assets 보기](https://experience.adobe.com/#/assets) 링크를 사용하여 AEM Assets 보기에 도달하고 올바른 리포지토리를 선택합니다.
 1. **자산**&#x200B;을 클릭하고 폴더를 입력한 다음 이미지를 선택합니다.
 1. **Adobe Express에서 열기**&#x200B;를 클릭합니다. Express 캔버스에서 이미지가 열립니다.
 1. 이미지에 필요한 편집을 수행합니다.
@@ -124,10 +124,10 @@ Express 권한이 있는 사용자는 Assets 보기 내에서 임베드된 Expre
 
 [!DNL Assets view]를 사용하여 [!DNL Adobe Express] 임베드된 편집기로 처음부터 새 템플릿을 만들 수 있습니다. [!DNL Adobe Express]를 사용하여 새 자산을 만들려면 아래 단계를 실행하십시오.
 
-1. 다음으로 이동 **[!UICONTROL 내 Workspace]** 및 클릭 **[!UICONTROL 만들기]** 맨 위에 표시되는 Adobe Express 배너 내에서 [!DNL Adobe Express] 빈 캔버스는 [!DNL Assets view] 사용자 인터페이스 내에 표시됩니다.
+1. **[!UICONTROL 내 Workspace]**(으)로 이동한 다음 맨 위에 표시되는 Adobe Express 배너에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. [!DNL Adobe Express] 빈 캔버스는 [!DNL Assets view] 사용자 인터페이스 내에 표시됩니다.
 1. [템플릿](https://helpx.adobe.com/kr/express/using/work-with-templates.html)을 사용하여 콘텐츠를 만듭니다. 그렇지 않은 경우 **[!UICONTROL 내 항목]**&#x200B;으로 이동하여 기존의 콘텐츠를 수정합니다.
 1. 편집이 완료되면 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
-1. 생성된 에셋의 대상 경로를 지정하고 **[!UICONTROL 새 자산으로 저장]**.
+1. 만든 에셋의 대상 경로를 지정하고 **[!UICONTROL 새 에셋으로 저장]**&#x200B;을 클릭합니다.
 
 #### 제한 사항 {#limitations}
 
@@ -195,7 +195,7 @@ TBD: Insert a video of the available social media options.
 
 ### 다음 단계 {#next-steps}
 
-* 다음을 사용하여 제품 피드백 제공 [!UICONTROL 피드백] Assets 보기 사용자 인터페이스에서 사용할 수 있는 옵션입니다.
+* Assets 보기 사용자 인터페이스에서 사용할 수 있는 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백을 제공하십시오.
 
 * 오른쪽 사이드바에서 사용 가능한 [!UICONTROL 이 페이지 편집], ![페이지 편집](assets/do-not-localize/edit-page.png), [!UICONTROL 문제 기록] 또는 ![GitHub 문제 생성](assets/do-not-localize/github-issue.png)을 사용하여 설명서 피드백을 제공합니다.
 

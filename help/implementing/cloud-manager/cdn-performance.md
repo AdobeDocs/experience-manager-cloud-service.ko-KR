@@ -1,6 +1,6 @@
 ---
 title: CDN 성능 대시보드
-description: Cloud Manager가 콘텐츠 전송 네트워크(CDN) 성능을 평가하는 방법과 대시보드에서 학습할 수 있는 내용을 이해합니다.
+description: Cloud Manager이 컨텐츠 전달 네트워크(CDN) 성능을 평가하는 방법과 대시보드에서 학습할 수 있는 내용을 이해합니다.
 exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # CDN 성능 대시보드 {#cdn-performance}
 
-Cloud Manager가 콘텐츠 전송 네트워크(CDN) 성능을 평가하는 방법과 대시보드에서 학습할 수 있는 내용을 이해합니다.
+Cloud Manager이 컨텐츠 전달 네트워크(CDN) 성능을 평가하는 방법과 대시보드에서 학습할 수 있는 내용을 이해합니다.
 
 ## 개요 {#overview}
 
@@ -28,11 +28,11 @@ CDN 대시보드는 모든 프로그램의 개요 페이지에서 사용할 수 
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔, 보려는 CDN 대시보드의 프로그램을 탭하거나 클릭합니다.
+1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 보려는 CDN 대시보드의 프로그램을 탭하거나 클릭합니다.
 
    ![내 프로그램 페이지](assets/my-programs.png)
 
-1. 다음에서 **프로그램 개요** 프로그램의 페이지를 아래로 스크롤합니다. **환경** 및 **파이프라인** 카드 보기 **성능** 카드.
+1. 프로그램의 **프로그램 개요** 페이지에서 **환경** 및 **파이프라인** 카드 아래로 스크롤하여 **성능** 카드를 확인합니다.
 
    ![성능](assets/cdn-performance-overview.png)
 
@@ -42,13 +42,13 @@ CDN 대시보드는 모든 프로그램의 개요 페이지에서 사용할 수 
 
 ![CDN 성능 대시보드](assets/cdn-performance-dashboard.png)
 
-CDN 성능에 대한 세부 정보와 개선 방법에 대한 제안을 보려면 을 탭하거나 클릭합니다 **트렌드 보기**.
+CDN 성능에 대한 세부 정보와 개선 방법에 대한 제안을 보려면 **트렌드 보기**&#x200B;를 탭하거나 클릭합니다.
 
 ![성능 트렌드](assets/cdn-performance-trend.png)
 
-탭 또는 클릭 **보기** 차트 아래 - 차트의 시간 범위를 변경합니다.
+차트 아래의 **보기**&#x200B;를 탭하거나 클릭하여 차트의 시간 범위를 변경합니다.
 
-CDN 성능을 개선하는 방법에 대한 제안을 보려면 **Recommendations** 탭.
+CDN 성능을 향상시키는 방법에 대한 제안 사항은 **Recommendations** 탭을 선택하십시오.
 
 ![CDN 권장 사항](assets/cdn-performance-recommendations.png)
 
@@ -66,13 +66,13 @@ CDN 성능을 개선하는 방법에 대한 제안을 보려면 **Recommendation
 Cache Hit Ratio = Cache Hits / (Hits + Misses + Passes + Other)
 ```
 
-* **히트** - 데이터가 캐시에서 요청되고 검색됩니다.
-* **미스** - 캐시에서 데이터를 요청했지만 찾을 수 없습니다.
-* **합격** - 캐시에서 데이터가 요청되며 어떤 경우에도 이 데이터를 캐시하지 않도록 설정됩니다.
+* **히트** - 캐시에서 데이터가 요청되었으며 검색되었습니다.
+* **Miss** - 캐시에서 데이터를 요청했지만 찾을 수 없습니다.
+* **통과** - 캐시에서 데이터가 요청되며 어떤 경우에도 이 데이터를 캐싱하지 않도록 설정됩니다.
 * **기타** - 캐시의 모든 데이터 요청이 다른 사례와 일치하지 않습니다.
 
 캐시 지표는 24시간마다 업데이트됩니다.
 
 >[!TIP]
 >
->Cloud Manager 및 CDN이 Dispatcher와 상호 작용하는 방법에 대한 자세한 내용은 문서를 참조하십시오. [AEM에서 as a Cloud Service으로 캐싱](/help/implementing/dispatcher/caching.md)
+>Cloud Manager 및 CDN이 Dispatcher과 상호 작용하는 방법에 대한 자세한 내용은 [AEM as a Cloud Service의 캐싱](/help/implementing/dispatcher/caching.md) 문서를 참조하십시오.

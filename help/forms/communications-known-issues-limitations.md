@@ -19,11 +19,11 @@ ht-degree: 0%
 
 ### 양식 데이터 {#form-data}
 
-커뮤니케이션 API는 일반적으로 디자이너에서 만들어지는 양식 디자인과 XML 양식 데이터를 모두 입력으로 허용합니다. 문서로 데이터를 채우려면 채울 모든 양식 필드에 대해 XML 요소가 XML 양식 데이터에 있어야 합니다. XML 요소 이름은 필드 이름과 일치해야 합니다. XML 요소가 양식 필드에 해당하지 않거나 XML 요소 이름이 필드 이름과 일치하지 않으면 XML 요소가 무시됩니다. XML 요소가 표시되는 순서를 일치시킬 필요는 없습니다. 중요한 요소는 XML 요소가 해당 값으로 지정된다는 것입니다.
+커뮤니케이션 API는 일반적으로 Designer에서 생성되는 양식 디자인과 XML 양식 데이터를 모두 입력으로 허용합니다. 문서로 데이터를 채우려면 채울 모든 양식 필드에 대해 XML 요소가 XML 양식 데이터에 있어야 합니다. XML 요소 이름은 필드 이름과 일치해야 합니다. XML 요소가 양식 필드에 해당하지 않거나 XML 요소 이름이 필드 이름과 일치하지 않으면 XML 요소가 무시됩니다. XML 요소가 표시되는 순서를 일치시킬 필요는 없습니다. 중요한 요소는 XML 요소가 해당 값으로 지정된다는 것입니다.
 
 다음 예시 대출 신청 양식을 고려하십시오.
 
-![대출 신청서](assets/loanFormData.png)
+![대출 신청서 양식](assets/loanFormData.png)
 
 이 양식 디자인에 데이터를 병합하려면 양식에 해당하는 XML 데이터 소스를 만듭니다. 다음 XML은 예제 담보 대출 신청 양식에 해당하는 XML 데이터 소스를 나타냅니다.
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 통신 API의 렌더링 기능에 완전히 액세스하려면 XDP 파일을 입력으로 사용하는 것이 좋습니다. 경우에 따라 PDF 파일을 사용할 수 있습니다. 그러나 PDF 파일을 입력으로 사용하는 데에는 다음과 같은 제한 사항이 있습니다.
 
-XFA 스트림이 포함되지 않은 PDF 문서는 PostScript, PCL 또는 ZPL로 렌더링할 수 없습니다. 통신 API는 XFA 스트림(즉, 디자이너에서 만든 양식)이 있는 PDF 문서를 레이저 및 레이블 형식으로 렌더링할 수 있습니다. PDF 문서에 서명, 인증 또는 사용 권한이 포함된 경우(AEM Forms Reader 확장 서비스를 사용하여 적용됨) 이러한 인쇄 형식으로 렌더링할 수 없습니다.
+XFA 스트림이 포함되지 않은 PDF 문서는 PostScript, PCL 또는 ZPL로 렌더링할 수 없습니다. 통신 API는 XFA 스트림(즉, Designer에서 생성된 양식)을 사용하는 PDF 문서를 레이저 및 레이블 형식으로 렌더링할 수 있습니다. PDF 문서에 서명, 인증 또는 사용 권한이 포함된 경우(AEM Forms Reader 확장 서비스를 사용하여 적용됨) 이러한 인쇄 형식으로 렌더링할 수 없습니다.
 
 
 ### 인쇄 가능 영역 {#printable-areas}
@@ -73,18 +73,18 @@ XFA 스트림이 포함되지 않은 PDF 문서는 PostScript, PCL 또는 ZPL로
 
 ### XFA 양식(XDP/PDF)용 스크립트 전용 {#scripts}
 
-통신 API와 함께 사용되는 양식 디자인에는 서버에서 실행되는 스크립트가 포함될 수 있습니다. 양식 디자인에 클라이언트에서 실행되는 스크립트가 없는지 확인합니다. 양식 디자인 스크립트 만들기에 대한 자세한 내용은 [디자이너 도움말](use-forms-designer.md).
+통신 API와 함께 사용되는 양식 디자인에는 서버에서 실행되는 스크립트가 포함될 수 있습니다. 양식 디자인에 클라이언트에서 실행되는 스크립트가 없는지 확인합니다. 양식 디자인 스크립트 만들기에 대한 자세한 내용은 [Designer 도움말](use-forms-designer.md)을 참조하세요.
 
 <!-- #### Working with Fonts
  Document Considerations for Working with Fonts>> -->
 
 ### 글꼴 매핑 {#font-mapping}
 
-프린터 상주 글꼴을 사용하는 양식을 디자인하려면 디자이너에서 프린터에서 사용할 수 있는 글꼴과 일치하는 글꼴 이름을 선택합니다. PCL 또는 PostScript에 대해 지원되는 글꼴 목록은 해당 장치 프로필(XDC 파일)에 있습니다. 또는 다른 서체 이름의 프린터 상주 글꼴에 비프린터 상주 글꼴을 매핑하기 위해 글꼴 매핑을 만들 수 있습니다. 예를 들어 PostScript 시나리오에서 Arial® 글꼴에 대한 참조를 프린터 상주 Helvetica® 서체에 매핑할 수 있습니다.
+프린터 상주 글꼴을 사용하는 양식을 디자인하려면 Designer에서 프린터에서 사용할 수 있는 글꼴과 일치하는 글꼴 이름을 선택합니다. PCL 또는 PostScript에 대해 지원되는 글꼴 목록은 해당 장치 프로필(XDC 파일)에 있습니다. 또는 다른 서체 이름의 프린터 상주 글꼴에 비프린터 상주 글꼴을 매핑하기 위해 글꼴 매핑을 만들 수 있습니다. 예를 들어 PostScript 시나리오에서 Arial® 글꼴에 대한 참조를 프린터 상주 Helvetica® 서체에 매핑할 수 있습니다.
 
-글꼴이 클라이언트 컴퓨터에 설치되어 있으면 Designer의 드롭다운 목록에서 사용할 수 있습니다. 글꼴이 설치되지 않은 경우 글꼴 이름을 수동으로 지정해야 합니다. 디자이너의 &quot;사용할 수 없는 글꼴을 영구적으로 바꾸기&quot; 옵션을 해제할 수 있습니다. 그렇지 않으면 XDP 파일을 Designer에 저장하면 대체 글꼴 이름이 XDP 파일에 기록됩니다. 프린터 상주 글꼴이 사용되지 않음을 의미합니다.
+글꼴이 클라이언트 컴퓨터에 설치되어 있으면 Designer의 드롭다운 목록에서 사용할 수 있습니다. 글꼴이 설치되지 않은 경우 글꼴 이름을 수동으로 지정해야 합니다. Designer의 &quot;사용할 수 없는 글꼴 영구적으로 바꾸기&quot; 옵션을 해제할 수 있습니다. 그렇지 않으면 XDP 파일을 Designer에 저장하면 대체 글꼴 이름이 XDP 파일에 기록됩니다. 프린터 상주 글꼴이 사용되지 않음을 의미합니다.
 
-두 가지 유형의 OpenType® 글꼴이 있습니다. 한 가지 유형은 PCL이 지원하는 TrueType OpenType® 글꼴입니다. 다른 하나는 CFF OpenType®입니다. PDF 및 PostScript 출력은 포함된 Type-1, TrueType 및 OpenType® 글꼴을 지원합니다. PCL 출력은 임베드된 트루타입 글꼴을 지원합니다.
+두 가지 유형의 OpenType® 글꼴이 있습니다. 한 가지 유형은 PCL이 지원하는 TrueType OpenType® 글꼴입니다. 다른 하나는 CFF OpenType®입니다. PDF 및 PostScript 출력은 내장 Type-1, TrueType 및 OpenType® 글꼴을 지원합니다. PCL 출력은 임베드된 트루타입 글꼴을 지원합니다.
 
 Type-1 및 OpenType® 글꼴은 PCL 출력에 포함되지 않습니다. Type-1 및 OpenType® 글꼴로 서식이 지정된 콘텐츠는 큰 비트맵 이미지로 래스터화되고 생성이 느려질 수 있습니다.
 
@@ -163,7 +163,7 @@ Type-1 및 OpenType® 글꼴은 PCL 출력에 포함되지 않습니다. Type-1 
 
 * 인쇄 옵션 목록에서 특정 렌더링 유형(PDF, 인쇄)을 한 번만 사용할 수 있습니다. 예를 들어 각각 PCL 렌더링 유형을 지정하는 두 개의 인쇄 옵션이 있을 수는 없습니다.
 
-* 일괄 처리 구성의 경우 OutputType(PDF, 인쇄) 및 RenderType(PostScript, PCL, IPL, ZPL 등) 값의 조합에 대한 하나의 인스턴스만 허용됩니다.
+* 일괄 처리 구성의 경우 OutputType(PDF, PRINT) 및 RenderType(PostScript, PCL, IPL, ZPL 등) 값의 조합 중 하나의 인스턴스만 허용됩니다.
 
 * 비동기 API(일괄 처리)의 경우 기본 레코드 수준이 2로 설정됩니다. 사용자 지정 XCI를 사용하여 레코드 수준을 1로 변경할 수 있습니다.
 
@@ -177,19 +177,19 @@ Type-1 및 OpenType® 글꼴은 PCL 출력에 포함되지 않습니다. Type-1 
 
 ## 자주 묻는 질문 {#faq}
 
-**감시 폴더 또는 기타 저장 메커니즘을 사용하여 입력 및 출력을 저장할 수 있습니까?**
+**감시 폴더 또는 기타 저장소 메커니즘을 사용하여 입력 및 출력을 저장할 수 있습니까?**
 
-현재 Microsoft Azure Storage를 사용하여 입력 데이터와 생성된 문서를 저장할 수 있습니다. Microsoft Azure 스토리지는 다음과 같은 다양한 옵션을 제공합니다. [데이터 이동 작업 자동화](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10).
+현재 Microsoft Azure Storage를 사용하여 입력 데이터와 생성된 문서를 저장할 수 있습니다. Microsoft Azure 스토리지는 [데이터 이동 작업을 자동화](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)하는 다양한 옵션을 제공합니다.
 
-**Microsoft Azure 스토리지 계정이 Experience Manager Forms Cloud Service 라이선스에 포함됩니까?**
+**Microsoft Azure 저장소 계정이 Experience Manager Forms Cloud Service 라이선스에 포함되어 있습니까?**
 
 Microsoft Azure 스토리지 계정은 Experience Manager Forms Cloud Service 라이선스와 독립적입니다.
 
-**통신 API는 Experience Manager Forms Cloud Service 서버에 데이터를 저장합니까?**
+**통신 API가 Experience Manager Forms Cloud Service 서버에 데이터를 저장합니까?**
 
 입력 및 출력 데이터는 Microsoft Azure 스토리지에만 저장됩니다.
 
-**통신 API는 Experience Manager Forms Cloud Service에 대해서만 사용할 수 있습니까? 온프레미스 환경에서 유사한 기능을 사용할 수 있습니까?**
+**통신 API는 Experience Manager Forms Cloud Service에 대해서만 사용할 수 있습니까? 온-프레미스 환경에서 유사한 기능을 사용할 수 있습니까?**
 
 AEM Forms 출력 서비스를 사용하여 템플릿(XFA 또는 PDF)을 고객 데이터와 결합하여 PDF, PS, PCL 및 ZPL 형식의 문서를 생성할 수 있습니다.
 
@@ -203,13 +203,13 @@ AEM Forms 출력 서비스를 사용하여 템플릿(XFA 또는 PDF)을 고객 �
 
 **Where is data hosted?** -->
 
-**여러 배치 작업을 동시에 실행할 수 있습니까?**
+**여러 일괄 처리 작업을 동시에 실행할 수 있습니까?**
 예. 여러 배치 작업을 동시에 실행할 수 있습니다. 모든 작업에 대해 항상 다른 소스 및 대상 폴더를 사용하여 충돌을 방지하십시오.
 
 >[!MORELIKETHIS]
 >
->* [AEM Forms as a Cloud Service 커뮤니케이션 소개](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [적응형 Forms 및 통신 API를 위한 AEM Forms as a Cloud Service 아키텍처](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [AEM Forms as a Cloud Service 통신 소개](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* 적응형 통신 API용 [AEM Forms as a Cloud Service 및 Forms 아키텍처](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [통신 처리 - 동기 API](/help/forms/aem-forms-cloud-service-communications.md)
 >* [통신 처리 - 일괄 처리 API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
 

@@ -1,6 +1,6 @@
 ---
 title: 변형 생성을 위한 릴리스 노트
-description: AEM 변형 생성을 위한 릴리스 노트, as a Cloud Service 및 Edge Delivery Services Sidekick에서 액세스
+description: 변형 생성을 위한 릴리스 노트, AEM as a Cloud Service 및 Edge Delivery Services Sidekick에서 액세스 가능
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 9%
 
 # 변형 생성을 위한 릴리스 노트 {#release-notes-generate-variations}
 
-이 페이지는 AEM as a Cloud Service 및 Edge Delivery Services Sidekick에서 액세스할 수 있는 변형 생성에 대한 릴리스 정보를 설명합니다.
+이 페이지는 AEM as a Cloud Service 및 Edge Delivery Services Sidekick에서 액세스할 수 있는 변형 생성을 위한 릴리스 정보를 설명합니다.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ ht-degree: 9%
 
 ## 알려진 문제 {#known-issues}
 
-* 이전 버전에서 이동할 때 사용자 지정 프롬프트와 관련된 문제는 을 참조하십시오. [v2.0.0의 사용자 지정 프롬프트](/help/generative-ai/generate-variations.md#custom-prompts-v200)
+* 이전 버전에서 이동할 때 사용자 지정 프롬프트와 관련된 문제는 [v2.0.0의 사용자 지정 프롬프트](/help/generative-ai/generate-variations.md#custom-prompts-v200)를 참조하십시오.
 
 ## 이전 릴리스 {#previous-releases}
 

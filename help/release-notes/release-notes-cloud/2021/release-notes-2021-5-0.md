@@ -24,30 +24,30 @@ ht-degree: 45%
 
 ## 릴리스 일자 {#release-date}
 
-의 릴리스 날짜 [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0은 2021년 5월 27일입니다.
+as a Cloud Service [!DNL Adobe Experience Manager]의 릴리스 일자 2021년 5월 21일은 2021년 5월 27일입니다.
 다음 릴리스(2021.6.0) 날짜는 2021년 6월 28일입니다.
 
-## AEM as a Cloud Service Foundation {#foundation}
+## AEM as a Cloud Service 재단 {#foundation}
 
 ### AEM as a Cloud Service Foundation의 새로운 기능 {#what-is-new-foundation}
 
-* [프리릴리스 채널](/help/release-notes/prerelease.md): 프로덕션에 출시되기 전에 예정된 기능을 한 달 동안 미리 볼 수 있습니다!
+* [프리릴리스 채널](/help/release-notes/prerelease.md): 프로덕션에서 라이브로 전환되기 전에 한 달 동안 예정된 기능을 미리 봅니다!
 
-* [API 사용 중단](/help/release-notes/deprecated-removed-features.md)AEM : as a Cloud Service에 대해 사용 중단된 최신 API 목록을 사용할 수 있습니다.
+* [API 사용 중단](/help/release-notes/deprecated-removed-features.md): AEM as a Cloud Service에서 사용 중단된 최신 API 목록을 사용할 수 있습니다.
 
-* [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html): 더 이상 사용되지 않는 Java API 확인 및 기타 개선 사항이 포함된 최신 버전으로 Maven 프로젝트를 업데이트합니다.
+* [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html): 더 이상 사용되지 않는 Java API 검사 및 기타 개선 사항이 포함된 최신 버전으로 Maven 프로젝트를 업데이트합니다.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### [!DNL Sites]의 새로운 기능 {#what-is-new-sites}
 
-* 곧 새 의 콘텐츠를 확인할 수 있습니다. [계층 미리 보기](/help/sites-cloud/authoring/sites-console/previewing-content.md) 게시 계층에서 보고 느끼게 될 최종 경험 디자인을 시뮬레이션합니다. 게시 또는 미리보기 중에서 게시 대상을 선택할 수 있는 AEM Sites Managed 게시 마법사에서 활성화됩니다. 미리보기 의 경험은 전용 URL을 통해 액세스할 수 있습니다. 미리보기에서 유효성 검사 후 평소와 같이 컨텐츠를 작성자에서 게시로 게시할 수 있습니다. AEM as a Cloud Service 환경에서 미리보기 서비스 활성화는 향후 몇 주 이내에 점진적으로 롤아웃될 예정입니다.
+* 곧 새로운 [미리 보기 계층](/help/sites-cloud/authoring/sites-console/previewing-content.md)에서 콘텐츠를 확인하여 Publish 계층에서 보고 느끼게 될 최종 경험 디자인을 시뮬레이션할 수 있습니다. 이제 AEM Sites 또는 미리보기 중에서 게시 대상을 선택할 수 있는 Publish Managed Publication 마법사에서 활성화됩니다. 미리보기 의 경험은 전용 URL을 통해 액세스할 수 있습니다. 미리보기에서 유효성 검사 후 평소와 같이 콘텐츠를 작성자에서 Publish으로 게시할 수 있습니다. AEM as a Cloud Service 환경에서 미리보기 서비스 활성화는 향후 몇 주 이내에 점진적으로 롤아웃될 예정입니다.
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets]의 새로운 기능 {#what-is-new-assets}
 
-* 링크 공유 기능을 사용하여 공유된 에셋을 다운로드할 수 있습니다. 이 다운로드는 이제 매우 큰 다운로드의 경우에도 빠르고 중단 없는 다운로드를 제공하는 비동기 서비스를 사용합니다. 다음을 참조하십시오 [에셋 다운로드](/help/assets/download-assets-from-aem.md#link-share-download).
+* 링크 공유 기능을 사용하여 공유된 에셋을 다운로드할 수 있습니다. 이 다운로드는 이제 매우 큰 다운로드의 경우에도 빠르고 중단 없는 다운로드를 제공하는 비동기 서비스를 사용합니다. [자산 다운로드](/help/assets/download-assets-from-aem.md#link-share-download)를 참조하세요.
 
   ![받은 편지함 다운로드](/help/assets/assets/download-inbox.png)
 
@@ -59,18 +59,18 @@ ht-degree: 45%
 
 * 일괄 에셋 수집기 도구를 사용하면 일괄 수집 중에 메타데이터를 추가할 수 있습니다.
 
-* 사용자 경험이 개선되어 폴더에 있는 에셋의 수가 표시됩니다. 폴더에 있는 에셋이 1000개가 넘는 경우 [!DNL Assets] 1000+를 표시합니다.
+* 사용자 경험이 개선되어 폴더에 있는 에셋의 수가 표시됩니다. 폴더에 있는 에셋이 1000개가 넘는 경우 [!DNL Assets]에 1000+가 표시됩니다.
 
   ![폴더에 있는 에셋 수가 인터페이스에 표시됨](/help/assets/assets/browse-folder-number-of-assets.png)
 
 ### [!DNL Assets]의 수정된 버그 {#assets-bugs-fixed}
 
-* 대용량 파일을 업로드하면 [!DNL Experience Manager desktop app]. (CQ-4320942)
+* 대용량 파일을 업로드하면 [!DNL Experience Manager desktop app]에서 충돌합니다. (CQ-4320942)
 * 폴더 내에서 동일한 컬렉션을 선택하는 경우와 검색 결과에서 선택하는 경우에는 도구 모음 옵션이 다릅니다. (CQ-4321406)
 
 #### Dynamic Media의 새로운 기능 {#what-is-new-dm}
 
-* 스마트 이미징 DPR(장치 픽셀 비율) 및 네트워크 대역폭 최적화를 통해 고해상도 디스플레이와 제한된 네트워크 대역폭이 있는 장치에서 최상의 품질 이미지를 효율적으로 제공할 수 있습니다. 자세한 내용은 [스마트 이미징 FAQ](/help/assets/dynamic-media/imaging-faq.md) 및 [차세대 이미지 형식 WebP 및 AVIF를 통한 이미지 최적화.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+* 스마트 이미징 DPR(장치 픽셀 비율) 및 네트워크 대역폭 최적화를 통해 고해상도 디스플레이와 제한된 네트워크 대역폭이 있는 장치에서 최상의 품질 이미지를 효율적으로 제공할 수 있습니다. 자세한 내용은 [스마트 이미징 FAQ](/help/assets/dynamic-media/imaging-faq.md) 및 [차세대 이미지 형식 WebP 및 AVIF를 사용한 이미지 최적화](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)를 참조하십시오.
 * Dynamic Media 게재(fmt URL 수정자)에서 차세대 이미지 형식 AVIF에 대한 지원을 도입했습니다.
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -99,11 +99,11 @@ Beta 프로그램에 등록하려면 formscsbeta@adobe.com에 문의하십시오
 
 ## Cloud Manager {#cloud-manager}
 
-이 섹션에서는 AEM as a Cloud Service 2021.5.0의 Cloud Manager 릴리스 정보에 대해 간략히 소개합니다.
+이 섹션에서는 AEM as a Cloud Service 2021.5.0의 Cloud Manager 릴리스 정보에 대해 간략히 설명합니다.
 
 ### 릴리스 일자 {#release-date-cm-may}
 
-AEM as a Cloud Service 2021.5.0의 Cloud Manager 릴리스 일자는 2021년 5월 6일입니다.
+AEM as a Cloud Service 2021.5.0의 Cloud Manager 릴리스 날짜는 2021년 5월 6일입니다.
 다음 릴리스는 2021년 6월 3일 금요일에 예정되어 있습니다.
 
 ### 새로운 기능 {#what-is-new-may}
@@ -150,7 +150,7 @@ AEM as a Cloud Service 2021.5.0의 Cloud Manager 릴리스 일자는 2021년 5�
 
 * 사용자에게 Java 실행 파일에 대한 실행 권한이 없는 경우 새 logging 문이 빠른 시작의 오류 로그에 추가되었습니다.
 
-* 사용자가 추출이 수행된 CTT 사용자 인터페이스에서 마이그레이션 세트를 삭제하는 경우 `tmp` 공간을 절약하기 위해 해당 마이그레이션 세트와 연결된 폴더가 삭제됩니다.
+* 사용자가 추출이 수행된 CTT 사용자 인터페이스에서 마이그레이션 세트를 삭제하면 해당 마이그레이션 세트와 연결된 `tmp` 폴더가 삭제되어 공간을 절약합니다.
 
 ### 버그 수정 {#bug-fixes-ctt-latest}
 
@@ -170,7 +170,7 @@ AEM as a Cloud Service 2021.5.0의 Cloud Manager 릴리스 일자는 2021년 5�
 ### 버그 수정 {#bug-fixes-ctt-may}
 
 * 컨텐츠 전송 도구 UI의 자동 새로 고침 기능과 관련된 여러 버그 수정 사항.
-* 을 사용한 컨텐츠 전송 도구 `wipe=true` 의 결과로 타겟에서 카운터 인덱스가 잘못되었습니다. 이 문제가 해결되었습니다.
+* `wipe=true`이(가) 있는 콘텐츠 전송 도구에서 대상에 잘못된 카운터 인덱스를 만들었습니다. 이 문제가 해결되었습니다.
 
 ## Commerce 추가 기능 {#cloud-services-commerce}
 

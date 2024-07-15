@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # CDN 오류 페이지 구성 {#cdn-error-pages}
 
-혹시나 해서 [Adobe 관리 CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) AEM 원본에 연결할 수 없습니다. 기본적으로 CDN은 서버에 연결할 수 없음을 나타내는 브랜딩되지 않은 일반 오류 페이지를 제공합니다. Amazon S3 또는 Azure Blob Storage와 같은 자체 호스팅 저장소에서 정적 파일을 호스팅하고 를 사용하여 배포된 구성 파일에서 이를 참조하여 기본 오류 페이지를 재정의할 수 있습니다. [Cloud Manager 구성 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
+[Adobe 관리 CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)이(가) AEM 원본에 도달할 수 없는 경우에는 기본적으로 CDN에 서버에 도달할 수 없음을 나타내는 브랜드가 없는 일반 오류 페이지가 표시됩니다. Amazon S3 또는 Azure Blob Storage와 같은 자체 호스팅 저장소에서 정적 파일을 호스팅하고 [Cloud Manager 구성 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)을 사용하여 배포된 구성 파일에서 참조하여 기본 오류 페이지를 재정의할 수 있습니다.
 
 ## 설정 {#setup}
 
@@ -26,9 +26,9 @@ config/
      cdn.yaml
 ```
 
-* 다음 `cdn.yaml` 구성 파일에는 아래 예제에 설명된 메타데이터와 규칙이 모두 포함되어야 합니다. 다음 `kind` 매개 변수는 다음으로 설정해야 합니다. `CDN` 및 버전은 현재 인 스키마 버전으로 설정해야 합니다. `1`.
+* `cdn.yaml` 구성 파일에는 아래 예제에 설명된 메타데이터와 규칙이 모두 포함되어야 합니다. `kind` 매개 변수는 `CDN`(으)로 설정해야 하며 버전은 현재 `1`인 스키마 버전으로 설정해야 합니다.
 
-* Cloud Manager에서 타깃팅된 배포 구성 파이프라인을 만듭니다. 다음을 참조하십시오 [프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 및 [비프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+* Cloud Manager에서 타깃팅된 배포 구성 파이프라인을 만듭니다. [프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 및 [비프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)을 참조하십시오.
 
 **메모**
 
@@ -60,7 +60,7 @@ data:
 | **spa** | 제목 | 오류 페이지 제목 |
 |     | icoUrl | 아이콘 파일에 대한 URL. |
 |     | cssUrl | CSS 파일의 URL. |
-|     | jsUrl | JavaScript 파일의 URL입니다. |
+|     | jsUrl | JavaScript 파일에 대한 URL. |
 
 ### 샘플 생성 HTML {#sample-generated-html}
 

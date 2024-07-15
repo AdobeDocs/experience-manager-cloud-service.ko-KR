@@ -13,7 +13,7 @@ ht-degree: 79%
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2022.6.0 릴리스 정보 {#release-notes}
 
-다음 섹션에서는 의 2022.6.0 버전에 대한 기능 릴리스 노트를 간략하게 설명합니다 [!DNL Experience Manager] as a Cloud Service.
+as a Cloud Service 다음 섹션에서는 [!DNL Experience Manager] 의 2022.6.0 버전 기능 릴리스 정보에 대해 간략히 소개합니다.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ ht-degree: 79%
 
 ### [!DNL Sites]의 새로운 기능 {#sites-features}
 
-* 새 항목 [사용자 인터페이스](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) 이제 콘텐츠 관리자 및 콘텐츠 작성자가 Headless 사용 사례에 대한 콘텐츠 조각을 효율적으로 관리(게시, 게시 취소, 복사, 이동 등)하고, 검색/필터링하고, 만들 수 있도록 사용할 수 있습니다.
+* 이제 새로운 [사용자 인터페이스](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)를 사용하여 콘텐츠 관리자 및 콘텐츠 작성자가 Headless 사용 사례에 대한 콘텐츠 조각을 효율적으로 관리(게시, 게시 취소, 복사, 이동 등)하고, 검색/필터링하고, 만들 수 있습니다.
 
   ![콘텐츠 조각 콘솔](/help/release-notes/assets/cf-ui.png)
 
@@ -96,7 +96,7 @@ Experience Manager Assets는 Adobe Sensei AI 기능을 사용하여 이제 [이�
 
 ### 새로운 기능 {#what-is-new-foundation}
 
-* 5월(2022.5.0) 릴리스 정보에서 언급한 대로 복제 에이전트 관리 화면의 &quot;트리 추가&quot; 옵션입니다. **배포** 탭이 제거되었습니다. 콘텐츠 트리 계층이 있는 패키지는 대신 [게시 관리](/help/operations/replication.md#manage-publication) 또는 [콘텐츠 트리 게시](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) 워크플로를 사용하여 복제해야 합니다.
+* 5월(2022.5.0) 릴리스 정보에서 언급한 대로 복제 에이전트 관리 화면의 **배포** 탭에 있는 &quot;트리 추가&quot; 옵션이 제거되었습니다. 콘텐츠 트리 계층이 있는 패키지는 대신 [게시 관리](/help/operations/replication.md#manage-publication) 또는 [콘텐츠 트리 게시](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) 워크플로를 사용하여 복제해야 합니다.
 
 ## Cloud Manager {#cloud-manager}
 

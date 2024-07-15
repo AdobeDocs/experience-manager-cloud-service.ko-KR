@@ -36,7 +36,7 @@ Universal Editor로 앱의 콘텐츠를 작성하려면 개발자가 앱을 계�
 
 ## 로그인 {#sign-in}
 
-앱이 유니버설 편집기에서 작동하도록 계측되면 유니버설 편집기에 로그인합니다. 로그인하려면 Adobe ID이 필요합니다. [유니버설 편집기에 액세스할 수 있습니다.](getting-started.md#request-access)
+앱이 유니버설 편집기에서 작동하도록 계측되면 유니버설 편집기에 로그인합니다. 로그인하려면 Adobe ID이 필요하며 [유니버설 편집기에 액세스할 수 있습니다.](getting-started.md#request-access)
 
 로그인한 후에 [위치 표시줄에 편집하려는 페이지의 URL을 입력하여](#location-bar)[텍스트 콘텐츠](#text-mode) 또는 [미디어 콘텐츠](#media-mode)와 같은 콘텐츠를 편집할 수 있습니다.
 
@@ -95,9 +95,9 @@ Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Clou
 
 ### 범용 편집기 도구 모음 {#universal-editor-toolbar}
 
-범용 편집기 도구 모음은 항상 아래 화면 상단에 있습니다 [Experience Cloud 헤더입니다.](#experience-cloud-header) 현재 페이지를 게시하고 편집할 다른 페이지에 바로 갈 수 있습니다.
+범용 편집기 도구 모음은 항상 [Experience Cloud 헤더 바로 아래 화면 맨 위에 있습니다.](#experience-cloud-header) 현재 페이지를 게시하고 편집할 다른 페이지에 바로 갈 수 있습니다.
 
-![범용 편집기 도구 모음](assets/universal-editor-toolbar.png)
+![유니버설 편집기 도구 모음](assets/universal-editor-toolbar.png)
 
 #### 홈 버튼 {#home-button}
 
@@ -111,7 +111,7 @@ Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Clou
 
 >[!NOTE]
 >
->유니버설 편집기로 편집할 모든 페이지는 다음과 같아야 합니다. [유니버설 편집기를 지원하도록 계측되었습니다.](getting-started.md)
+>유니버설 편집기로 편집할 모든 페이지는 [유니버설 편집기를 지원하도록 계측되어야 합니다.](getting-started.md)
 
 #### 위치 표시줄 {#location-bar}
 
@@ -125,11 +125,11 @@ Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Clou
 
 >[!NOTE]
 >
->유니버설 편집기로 편집할 모든 페이지는 다음과 같아야 합니다. [유니버설 편집기를 지원하도록 계측되었습니다.](getting-started.md)
+>유니버설 편집기로 편집할 모든 페이지는 [유니버설 편집기를 지원하도록 계측되어야 합니다.](getting-started.md)
 
 #### 인증 헤더 설정 {#authentication-settings}
 
-필요한 경우 인증 헤더 설정 아이콘 선택 [로컬 개발을 위해 사용자 지정 인증 헤더를 설정합니다.](/help/implementing/universal-editor/developer-overview.md#auth-header)
+[로컬 개발을 위해 사용자 지정 인증 헤더를 설정해야 하는 경우 인증 헤더 설정 아이콘을 선택하십시오.](/help/implementing/universal-editor/developer-overview.md#auth-header)
 
 ![인증 헤더 설정 단추](assets/authentication-header-settings.png)
 
@@ -159,7 +159,7 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 >[!TIP]
 >
->단축키 사용 `P` 을 클릭하여 미리 보기 모드에서 또는 미리 보기 모드로 전환합니다.
+>핫키 `P`을(를) 사용하여 미리 보기 모드로 전환하거나 미리 보기 모드에서 전환합니다.
 
 #### 앱 미리보기 열기 {#open-app-preview}
 
@@ -179,7 +179,7 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 >[!TIP]
 >
->문서 보기 [유니버설 편집기로 콘텐츠 게시](publishing.md) 유니버설 편집기로 게시에 대한 자세한 내용을 보려면.
+>유니버설 편집기를 사용하여 게시하는 방법에 대한 자세한 내용은 [유니버설 편집기를 사용하여 콘텐츠 게시](publishing.md) 문서를 참조하십시오.
 
 ### 편집기 {#editor}
 
@@ -273,9 +273,9 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 >[!TIP]
 >
->기본적으로 콘텐츠를 탭하거나 클릭하면 편집할 콘텐츠가 선택됩니다. 링크를 따라 콘텐츠를 탐색하려면 다음으로 전환합니다. [미리 보기 모드.](#preview-mode)
+>기본적으로 콘텐츠를 탭하거나 클릭하면 편집할 콘텐츠가 선택됩니다. 다음 링크를 통해 콘텐츠를 탐색하려면 [미리 보기 모드로 전환하세요.](#preview-mode)
 
-선택한 콘텐츠에 따라 즉석 편집 옵션이 다를 수 있으며, 의 콘텐츠에 대한 추가 정보 및 옵션이 있을 수 있습니다. [속성 레일입니다.](#properties-rail)
+선택한 콘텐츠에 따라 즉석 편집 옵션이 다를 수 있으며 [속성 레일에서 콘텐츠에 대한 추가 정보 및 옵션이 있을 수 있습니다.](#properties-rail)
 
 ### 일반 텍스트 편집 {#edit-plain-text}
 
@@ -299,8 +299,8 @@ Enter/Return 키를 누르거나 텍스트 상자 바깥쪽을 선택하여 변�
 
 사용자의 편의를 위해 서식 옵션 및 텍스트에 대한 세부 사항을 두 곳에서 사용할 수 있습니다.
 
-* 다음 **상황에 맞는 메뉴** 서식 있는 텍스트 블록 위에 열리며 컨텍스트에서 기본 서식 옵션을 제공합니다. 공간 제약으로 인해 일부 옵션이 줄임표 버튼 뒤에 숨겨질 수 있습니다.
-* 다음 **속성 레일** 텍스트와 함께 사용할 수 있는 모든 서식 옵션을 표시합니다.
+* **컨텍스트 메뉴**&#x200B;가 서식 있는 텍스트 블록 위에 열리고 컨텍스트에서 기본 서식 옵션을 제공합니다. 공간 제약으로 인해 일부 옵션이 줄임표 버튼 뒤에 숨겨질 수 있습니다.
+* **속성 레일**&#x200B;에 텍스트와 함께 사용할 수 있는 모든 서식 옵션이 표시됩니다.
 
 포커스가 편집된 필드를 떠나면 변경 사항이 자동으로 저장됩니다.
 
@@ -313,13 +313,13 @@ Enter/Return 키를 누르거나 텍스트 상자 바깥쪽을 선택하여 변�
 1. 속성 레일에서 선택한 이미지의 미리보기를 탭하거나 클릭합니다.
 1. 자산을 선택할 수 있는 [자산 선택기](/help/assets/asset-selector.md#using-asset-selector) 창이 열립니다.
 1. 새 자산을 선택하려면 를 선택합니다.
-1. 선택 **선택** 에셋이 교체된 속성 레일로 돌아갑니다.
+1. 자산을 바꾼 속성 레일로 돌아가려면 **선택**&#x200B;을(를) 선택하십시오.
 
 변경 사항은 콘텐츠에 자동으로 저장됩니다.
 
 ### 콘텐츠 조각 편집 {#edit-content-fragment}
 
-을(를) 선택하는 경우 [컨텐츠 조각,](/help/sites-cloud/administering/content-fragments/overview.md) 속성 레일에서 세부 사항을 편집할 수 있습니다.
+[콘텐츠 조각 ](/help/sites-cloud/administering/content-fragments/overview.md)을(를) 선택하면 속성 레일에서 세부 정보를 편집할 수 있습니다.
 
 ![콘텐츠 조각 편집](assets/ue-edit-cf.png)
 
@@ -329,7 +329,7 @@ Enter/Return 키를 누르거나 텍스트 상자 바깥쪽을 선택하여 변�
 
 포커스가 속성 레일의 편집된 필드를 떠나면 변경 사항이 자동으로 저장됩니다.
 
-에서 콘텐츠 조각을 편집하려면 다음을 수행하십시오. [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md) 대신 [편집 단추](#edit) 모드 레일에서 을 클릭합니다.
+대신 [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md)에서 콘텐츠 조각을 편집하려면 모드 레일에서 [편집 단추](#edit)를 클릭하십시오.
 
 워크플로우의 필요에 따라 범용 편집기에서 또는 콘텐츠 조각 편집기에서 직접 콘텐츠 조각을 편집할 수 있습니다.
 
@@ -378,7 +378,7 @@ Enter/Return 키를 누르거나 텍스트 상자 바깥쪽을 선택하여 변�
 
 콘텐츠 편집을 마치면 콘텐츠를 탐색하여 다른 페이지의 콘텐츠에서 어떻게 보이는지 확인하고 싶은 경우가 많습니다. [미리보기 모드](#preview-mode)에서 링크를 클릭하여 독자처럼 콘텐츠를 탐색할 수 있습니다. 콘텐츠는 게시될 때 편집기에서 렌더링됩니다.
 
-미리보기 모드에서 콘텐츠를 탭하거나 클릭하면 콘텐츠 판독기와 동일하게 반응합니다. 편집할 컨텐츠를 선택하려면 를 끄십시오 [미리 보기 모드.](#preview-mode)
+미리보기 모드에서 콘텐츠를 탭하거나 클릭하면 콘텐츠 판독기와 동일하게 반응합니다. 편집할 콘텐츠를 선택하려면 [미리 보기 모드에서 전환하십시오.](#preview-mode)
 
 ## 추가 리소스 {#additional-resources}
 

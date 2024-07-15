@@ -40,7 +40,7 @@ ht-degree: 3%
 
 기록 문서에 필요한 에셋을 배우고 준비하기 전에:
 
-**기본 템플릿:** Forms Designer 또는 Acrobat 양식(AcroForm)에서 작성된 XFA 템플릿(XDP 파일). [기본 템플릿](#base-template-of-a-document-of-record) 기록 문서의 스타일 및 브랜딩 정보를 지정하는 데 사용됩니다. 이전에 XFA 템플릿(XDP 파일)을 AEM Forms 인스턴스에 업로드했습니다
+**기본 템플릿:** Forms Designer 또는 Acrobat 양식(AcroForm)에서 만든 XFA 템플릿(XDP 파일)입니다. [기본 템플릿](#base-template-of-a-document-of-record)은(는) 기록 문서에 대한 스타일 및 브랜딩 정보를 지정하는 데 사용됩니다. 이전에 XFA 템플릿(XDP 파일)을 AEM Forms 인스턴스에 업로드했습니다
 
 **적응형 양식:** 기록 문서를 생성할 적응형 양식입니다.
 
@@ -48,27 +48,27 @@ ht-degree: 3%
 
 XFA 템플릿(XDP 파일)을 AEM Forms 인스턴스에 업로드합니다. XFA 템플릿(XDP 파일)을 기록 문서의 템플릿으로 사용하도록 적응형 양식을 구성하려면 다음 단계를 수행하십시오.
 
-1. Experience Manager 작성자 인스턴스에서 **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서].**
-1. 양식을 선택하고 **[!UICONTROL 속성]**.
-1. 속성 창에서 다음을 선택합니다. **[!UICONTROL 양식 모델]**.
-1. 다음에서  **[!UICONTROL 양식 모델]** 탭, **[!UICONTROL 다음에서 선택]** 드롭다운, 선택 **[!UICONTROL 스키마]** 또는 **[!UICONTROL 없음]**. 양식을 만들 때 양식 모델을 선택할 수도 있습니다.
-1. 양식 모델 탭의 기록 문서 템플릿 구성 섹션에서 다음을 선택합니다. **양식 템플릿을 기록 문서 템플릿으로 연결**. 이 옵션을 선택하면 컴퓨터에서 사용할 수 있는 모든 XFA 템플릿(XDP 파일)이 표시됩니다. 적절한 파일을 선택합니다. 또한 적응형 양식 및 선택한 XFA 템플릿(XDP 파일)에 동일한 스키마(데이터 스키마)를 사용해야 합니다.
-1. 클릭 **[!UICONTROL 완료.]**
+1. Experience Manager 작성자 인스턴스에서 **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서].**&#x200B;를 클릭합니다.
+1. 양식을 선택하고 **[!UICONTROL 속성]**&#x200B;을 클릭하세요.
+1. 속성 창에서 **[!UICONTROL 양식 모델]**&#x200B;을(를) 선택합니다.
+1. **[!UICONTROL 양식 모델]** 탭의 **[!UICONTROL 다음에서 선택]** 드롭다운에서 **[!UICONTROL 스키마]** 또는 **[!UICONTROL 없음]**&#x200B;을 선택합니다. 양식을 만들 때 양식 모델을 선택할 수도 있습니다.
+1. 양식 모델 탭의 기록 문서 템플릿 구성 섹션에서 **양식 템플릿을 기록 문서 템플릿으로 연결**&#x200B;을 선택합니다. 이 옵션을 선택하면 컴퓨터에서 사용할 수 있는 모든 XFA 템플릿(XDP 파일)이 표시됩니다. 적절한 파일을 선택합니다. 또한 적응형 양식 및 선택한 XFA 템플릿(XDP 파일)에 동일한 스키마(데이터 스키마)를 사용해야 합니다.
+1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
-이제 적응형 양식이 XDP 파일을 기록 문서의 템플릿으로 사용하도록 구성되었습니다. 다음 단계는 [적응형 양식 구성 요소를 해당 템플릿 필드와 바인딩](#bind-adaptive-form-components-with-template-fields).
+이제 적응형 양식이 XDP 파일을 기록 문서의 템플릿으로 사용하도록 구성되었습니다. 다음 단계는 [적응형 양식 구성 요소를 해당 템플릿 필드와 바인딩](#bind-adaptive-form-components-with-template-fields)하는 것입니다.
 
 ## Acroform 기반 기록 문서 생성 {#generate-an-Acroform-based-document-of-record}
 
 Adobe Acrobat PDF(Acroform)을 AEM Forms 인스턴스에 업로드합니다. 기록 문서의 템플릿으로 Adobe Acrobat PDF(Acroform)을 사용하도록 적응형 양식을 구성하려면 다음 단계를 수행하십시오.
 
-1. Experience Manager 작성자 인스턴스에서 **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서].**
-1. 양식을 선택하고 **[!UICONTROL 속성]**.
-1. 속성 창에서 다음을 선택합니다. **[!UICONTROL 양식 모델]**.
-1. 다음에서  **[!UICONTROL 양식 모델]** 탭, **[!UICONTROL 다음에서 선택]** 드롭다운, 선택 **[!UICONTROL 스키마]** 또는 **[!UICONTROL 없음]**. 양식을 만들 때 양식 모델을 선택할 수도 있습니다.
-1. 양식 모델 탭의 기록 문서 템플릿 구성 섹션에서 다음을 선택합니다. **양식 템플릿을 기록 문서 템플릿으로 연결**. 이 옵션을 선택하면 컴퓨터에서 사용할 수 있는 모든 Acrobat PDF(Acroform)가 표시됩니다. 적절한 파일을 선택합니다.
-1. 클릭 **[!UICONTROL 완료.]**
+1. Experience Manager 작성자 인스턴스에서 **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서].**&#x200B;를 클릭합니다.
+1. 양식을 선택하고 **[!UICONTROL 속성]**&#x200B;을 클릭하세요.
+1. 속성 창에서 **[!UICONTROL 양식 모델]**&#x200B;을(를) 선택합니다.
+1. **[!UICONTROL 양식 모델]** 탭의 **[!UICONTROL 다음에서 선택]** 드롭다운에서 **[!UICONTROL 스키마]** 또는 **[!UICONTROL 없음]**&#x200B;을 선택합니다. 양식을 만들 때 양식 모델을 선택할 수도 있습니다.
+1. 양식 모델 탭의 기록 문서 템플릿 구성 섹션에서 **양식 템플릿을 기록 문서 템플릿으로 연결**&#x200B;을 선택합니다. 이 옵션을 선택하면 컴퓨터에서 사용할 수 있는 모든 Acrobat PDF(Acroform)가 표시됩니다. 적절한 파일을 선택합니다.
+1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
-이제 적응형 양식이 기록 문서의 템플릿으로 Acroform을 사용하도록 구성되었습니다. 다음 단계는 [적응형 양식 구성 요소를 해당 템플릿 필드와 바인딩](#bind-adaptive-form-components-with-template-fields).
+이제 적응형 양식이 기록 문서의 템플릿으로 Acroform을 사용하도록 구성되었습니다. 다음 단계는 [적응형 양식 구성 요소를 해당 템플릿 필드와 바인딩](#bind-adaptive-form-components-with-template-fields)하는 것입니다.
 
 ## 기록 문서 자동 생성 {#auto-generate-a-document-of-record}
 
@@ -82,12 +82,12 @@ Adobe Acrobat PDF(Acroform)을 AEM Forms 인스턴스에 업로드합니다. 기
 
 기록 문서를 자동으로 생성하도록 적응형 양식을 구성하려면 다음 단계를 수행하십시오.
 
-1. Experience Manager 작성자 인스턴스에서 **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서].**
-1. 양식을 선택하고 **[!UICONTROL 속성]**.
-1. 속성 창에서 다음을 선택합니다. **[!UICONTROL 양식 모델]**.
-1. 다음에서  **[!UICONTROL 양식 모델]** 탭, **[!UICONTROL 다음에서 선택]** 드롭다운, 선택 **[!UICONTROL 스키마]** 또는 **[!UICONTROL 없음]**. 양식을 만들 때 양식 모델을 선택할 수도 있습니다.
-1. 양식 모델 탭의 기록 문서 템플릿 구성 섹션에서 다음을 선택합니다. **기록 문서 생성**.
-1. 클릭 **[!UICONTROL 완료.]**
+1. Experience Manager 작성자 인스턴스에서 **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서].**&#x200B;를 클릭합니다.
+1. 양식을 선택하고 **[!UICONTROL 속성]**&#x200B;을 클릭하세요.
+1. 속성 창에서 **[!UICONTROL 양식 모델]**&#x200B;을(를) 선택합니다.
+1. **[!UICONTROL 양식 모델]** 탭의 **[!UICONTROL 다음에서 선택]** 드롭다운에서 **[!UICONTROL 스키마]** 또는 **[!UICONTROL 없음]**&#x200B;을 선택합니다. 양식을 만들 때 양식 모델을 선택할 수도 있습니다.
+1. 양식 모델 탭의 기록 문서 템플릿 구성 섹션에서 **기록 문서 생성**&#x200B;을 선택합니다.
+1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
 ## 템플릿 필드와 적응형 양식 구성 요소 바인딩 {#bind-adaptive-form-components-with-template-fields}
 
@@ -95,12 +95,12 @@ Adobe Acrobat PDF(Acroform)을 AEM Forms 인스턴스에 업로드합니다. 기
 
 1. 편집에 사용자 정의 양식 템플릿을 사용하도록 구성된 적응형 양식을 엽니다.
 
-1. 적응형 양식 구성 요소를 선택하고 구성 열기 를 클릭합니다. ![구성](assets/Smock_Wrench_18_N.svg) 아이콘. 속성 브라우저를 엽니다.
+1. 적응형 양식 구성 요소를 선택하고 열기 ![구성](assets/Smock_Wrench_18_N.svg) 아이콘을 클릭합니다. 속성 브라우저를 엽니다.
 
 1. 속성 브라우저에서 필드를 찾아 선택합니다.
 
-   * (AcroForm 템플릿의 경우) **[!UICONTROL 기록 문서 바인딩 참조 필드]** 속성.
-   * (XFA 템플릿의 경우) **[!UICONTROL 데이터 모델 바인딩 참조]** 속성.
+   * (AcroForm 템플릿의 경우) **[!UICONTROL 레코드 바인딩 참조 필드]** 속성을 사용합니다.
+   * (XFA 템플릿의 경우) **[!UICONTROL 데이터 모델 바인딩 참조]** 속성을 사용합니다.
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
@@ -108,7 +108,7 @@ Adobe Acrobat PDF(Acroform)을 AEM Forms 인스턴스에 업로드합니다. 기
 In the following video, Adaptive Form components are bound with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
-과 함께 이메일 보내기, 워크플로우 Experience Manager 제출 액션을 사용할 수 있습니다. [기록 문서 단계 및 기타 제출 액션](configuring-submit-actions.md) 기록 문서를 받을 수 있습니다.
+전자 메일 보내기, Experience Manager 워크플로 제출 액션을 [기록 문서 단계와 함께 사용하거나 기타 제출 액션](configuring-submit-actions.md)을 사용하여 기록 문서를 받을 수 있습니다.
 
 ## 기록 문서 템플릿에 대한 증분 업데이트 {#document-of-record-template-incremental-updates}
 
@@ -116,11 +116,11 @@ In the following video, Adaptive Form components are bound with corresponding Ac
 
 기록 문서 템플릿을 변경하고 변경된 기록 문서 템플릿을 AEM Forms에 업로드하면 적응형 Forms 편집기가 자동으로 변경된 바인딩을 감지하고 새 바인딩이 필요한 적응형 양식 구성 요소에 대해 알려줍니다. 기록 문서 템플릿에 대한 증분 업데이트를 수행할 수 있습니다.
 
-예를 들어 조직, *We.Retail*&#x200B;에는 AcroForm 기반 기록 문서 템플릿이 있고, *we-retail-invoice.pdf*. 템플릿은 다음과 같습니다.
+예를 들어 조직 *We.Retail*&#x200B;에는 AcroForm 기반 기록 문서 템플릿 *we-retail-invoice.pdf*&#x200B;이 있습니다. 템플릿은 다음과 같습니다.
 
 ![원본 템플릿](assets/we-retail-invoice.png)
 
-잠시 동안 템플릿을 사용한 후 조직에서 이름을 바꾸기로 결정합니다 `invoice-number` 필드 대상 `bill-number` 구매자의 필드 및 캡처 이메일 주소. 개발자는 의 이름을 업데이트합니다. `invoice-number` 필드에 추가하고 템플릿에 이메일 필드를 추가합니다. 또한 이라는 새 버전의 템플릿을 만듭니다.  *we-retail-invoice-v2.pdf*.
+잠시 동안 템플릿을 사용한 후 조직은 `invoice-number` 필드의 이름을 `bill-number` 필드로 바꾸고 구매자의 전자 메일 주소를 캡처하기로 합니다. 개발자가 `invoice-number` 필드의 이름을 업데이트하고 전자 메일 필드를 템플릿에 추가합니다. 또한 *we-retail-invoice-v2.pdf*&#x200B;이라는 새로운 버전의 템플릿을 만듭니다.
 
 ![업데이트된 템플릿](assets/we-retail-new-invoice.png)
 
@@ -290,7 +290,7 @@ When you select a form model, configure Document of Record using options availab
 
 기본 템플릿의 마스터 페이지는 기록 문서 템플릿의 마스터 페이지로 사용됩니다. 마스터 페이지에는 기록 문서에 적용할 수 있는 페이지 머리글, 페이지 바닥글 및 페이지 번호와 같은 정보가 있을 수 있습니다. 기록 문서 자동 생성을 위한 기본 템플릿을 사용하여 이러한 정보를 기록 문서에 적용할 수 있습니다. 기본 템플릿을 사용하면 필드의 기본 속성을 변경할 수 있습니다.
 
-항상 팔로우 [기본 템플릿 규칙](#base-template-conventions) 기본 템플릿을 디자인할 때
+기본 템플릿을 디자인할 때는 항상 [기본 템플릿 규칙](#base-template-conventions)을 따르십시오.
 
 ## 기본 템플릿 규칙 {#base-template-conventions}
 
@@ -298,26 +298,26 @@ When you select a form model, configure Document of Record using options availab
 
 **기본 페이지 규칙**
 
-* 기본 템플릿에서 루트 하위 양식 이름을 로 지정합니다. `AF_METATEMPLATE` 및 마스터 페이지는 다음과 같습니다 `AF_MASTERPAGE`.
+* 기본 템플릿에서 루트 하위 양식의 이름을 `AF_METATEMPLATE`(으)로 지정하고 마스터 페이지의 이름을 `AF_MASTERPAGE`(으)로 지정합니다.
 
-* 이름이 인 마스터 페이지 `AF_MASTERPAGE` 다음 아래에 위치: `AF_METATEMPLATE` 머리글, 바닥글 및 스타일 정보를 추출할 때 루트 하위 양식이 선호됩니다.
+* `AF_METATEMPLATE` 루트 하위 양식 아래에 있는 이름이 `AF_MASTERPAGE`인 마스터 페이지는 머리글, 바닥글 및 스타일 정보를 추출할 때 선호됩니다.
 
-* If `AF_MASTERPAGE` 이(가) 없으면 기본 템플릿에 있는 첫 번째 마스터 페이지가 사용됩니다.
+* `AF_MASTERPAGE`이(가) 없으면 기본 템플릿에 있는 첫 번째 마스터 페이지가 사용됩니다.
 
 **필드에 대한 스타일 규칙**
 
-* 기록 문서의 필드에 스타일을 적용하려면 기본 템플릿은에 있는 필드를 제공합니다. `AF_FIELDSSUBFORM` 아래 하위 항목 `AF_METATEMPLATE` 루트 하위 양식.
+* 기록 문서의 필드에 스타일을 적용하려면 기본 서식 파일에서 `AF_METATEMPLATE` 루트 하위 양식 아래의 `AF_FIELDSSUBFORM` 하위 양식에 있는 필드를 제공합니다.
 
-* 이러한 필드의 속성은 기록 문서의 필드에 적용됩니다. 이 필드는 다음 위치에 있어야 합니다. `AF_<name of field in all caps>_XFO` 명명 규칙. 예를 들어 확인란의 필드 이름은 `AF_CHECKBOX_XFO`.
+* 이러한 필드의 속성은 기록 문서의 필드에 적용됩니다. 이러한 필드는 `AF_<name of field in all caps>_XFO` 명명 규칙을 따라야 합니다. 예를들어 확인란의 필드 이름은 `AF_CHECKBOX_XFO`이어야 합니다.
 
 기본 템플릿을 만들려면 Forms Designer에서 다음을 수행하십시오.
 
-1. 클릭 **[!UICONTROL 파일]** > **[!UICONTROL 신규]**.
-1. 다음 항목 선택 **[!UICONTROL 템플릿 기반]** 옵션을 선택합니다.
+1. **[!UICONTROL 파일]** > **[!UICONTROL 새로 만들기]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 템플릿 기반]** 옵션을 선택하십시오.
 
-1. 다음 항목 선택 **[!UICONTROL Forms - 기록 문서]** 범주.
-1. 선택 **[!UICONTROL DoR 기본 템플릿]**.
-1. 클릭 **[!UICONTROL 다음]** 필요한 정보를 제공합니다.
+1. **[!UICONTROL Forms - 기록 문서]** 범주를 선택합니다.
+1. **[!UICONTROL DoR 기본 템플릿]**&#x200B;을(를) 선택하십시오.
+1. **[!UICONTROL 다음]**&#x200B;을(를) 클릭하고 필요한 정보를 제공합니다.
 
 1. (선택 사항) 기록 문서의 필드에 적용할 필드의 스타일 및 모양을 수정합니다.
 1. 양식을 저장합니다.
@@ -337,39 +337,39 @@ When you select a form model, configure Document of Record using options availab
 
 기록 문서 탭에 입력하는 브랜딩 정보를 현지화하려면 브라우저의 로케일이 적절하게 설정되어 있는지 확인하십시오. 기록 문서의 브랜딩 정보를 사용자 정의하려면 다음 단계를 수행합니다.
 
-1. 기록 문서에서 패널(루트 패널)을 선택한 다음 을 선택합니다 ![구성](assets/configure.png).
-1. 선택 ![도르탑](assets/dortab.png). 기록 문서 탭이 나타납니다.
+1. 기록 문서에서 패널(루트 패널)을 선택한 다음 ![구성](assets/configure.png)을 선택합니다.
+1. ![dortab](assets/dortab.png)을(를) 선택합니다. 기록 문서 탭이 나타납니다.
 1. 기록 문서를 렌더링하기 위한 기본 템플릿 또는 사용자 지정 템플릿을 선택합니다. 기본 템플릿을 선택하면 템플릿 드롭다운 아래에 기록 문서의 축소판 미리 보기가 나타납니다.
 1. 기본 또는 사용자 지정 템플릿 선택 여부에 따라 다음 속성 중 일부 또는 모든 속성이 기록 문서 탭에 나타납니다. 아래 언급된 등록 정보를 지정하여 기록 문서의 모양을 정의합니다.
 
    1. **기본 속성**:
-      * **템플릿**: 사용자 지정 템플릿을 선택하면에서 XDP 선택 을 찾아봅니다. [!DNL AEM Forms] 서버입니다. 에 아직 없는 템플릿을 사용하려면 [!DNL AEM Forms] 서버, 먼저 XDP를 [!DNL AEM Forms] 서버입니다.
-      * **강조 색상**: 문서 또는 레코드 PDF에서 머리글 텍스트 및 구분 기호를 렌더링하는 색상입니다.
-      * **글꼴 모음**: 기록 문서 PDF 내 텍스트의 글꼴 모음
+      * **템플릿**: 사용자 지정 템플릿을 선택하는 경우 [!DNL AEM Forms] 서버에서 XDP 선택을 검색하십시오. [!DNL AEM Forms] 서버에 아직 없는 템플릿을 사용하려면 먼저 XDP를 [!DNL AEM Forms] 서버에 업로드해야 합니다.
+      * **강조 색상**: 문서 또는 레코드 PDF에서 머리글 텍스트와 구분 기호가 렌더링되는 색상입니다.
+      * **글꼴 모음**: 기록 문서 PDF에 있는 텍스트의 글꼴 모음.
 
         >[!NOTE]
         >
-        > AEM Forms은 PDF 파일과 원활하게 통합되는 다양한 기본 제공 글꼴을 제공합니다. 지원되는 글꼴 목록을 보려면 [여기를 클릭하십시오](/help/forms/supported-out-of-the-box-fonts.md).
+        > AEM Forms은 PDF 파일과 원활하게 통합되는 다양한 기본 제공 글꼴을 제공합니다. 지원되는 글꼴 목록을 보려면 [여기를 클릭](/help/forms/supported-out-of-the-box-fonts.md)하세요.
 
-      * **데이터 모델에 바인딩되지 않은 양식 개체 포함**: 속성을 설정하면 기록 문서의 스키마 기반 적응형 양식에서 바인딩되지 않은 필드가 포함됩니다.
+      * **데이터 모델에 바인딩되지 않은 양식 개체 포함**: 속성을 설정하면 기록 문서에 있는 스키마 기반 적응형 양식의 바인딩되지 않은 필드가 포함됩니다.
       * **기록 문서에서 숨겨진 필드 제외**: 속성을 설정하면 기록 문서에서 제외할 숨겨진 필드가 식별됩니다.
-      * **패널 설명 숨기기**: 속성을 설정하면 패널/테이블에 대한 설명이 기록 문서에서 제외됩니다. 패널 및 테이블에 적용할 수 있습니다.
+      * **패널에 대한 설명 숨기기**: 속성을 설정하면 기록 문서에서 패널/테이블에 대한 설명이 제외됩니다. 패널 및 테이블에 적용할 수 있습니다.
 
       ![기본 속성](/help/forms/assets/basicpropertiesdor.png)
 
    2. **양식 필드 속성**:
-      * **확인란 및 라디오 버튼 구성 요소의 경우 선택한 값만 표시합니다**: 속성을 설정하면 확인란 및 라디오 버튼의 선택한 값만 표시됩니다. [!UICONTROL 기록 문서].
-      * **다중 값에 대한 구분 기호**: 쉼표나 줄 바꿈과 같은 구분 기호를 선택하여 여러 값을 표시할 수 있습니다.
-      * **옵션 정렬**: 원하는 정렬(가로, 세로, 적응형 양식과 동일)을 선택하여 확인란이나 라디오 단추와 같은 필드에 대한 정렬을 설정할 수 있습니다 [!UICONTROL 기록 문서]. 기본적으로 수직 정렬은 의 필드에 대해 설정됩니다 [!UICONTROL 기록 문서]. 에서 속성 설정 [!UICONTROL 양식 필드 속성] DoR의 은 [!UICONTROL 항목 정렬] 를 참조하십시오. 이 경우 다음을 선택합니다 [!UICONTROL 적응형 양식과 동일] 옵션을 선택하면 적응형 양식 작성자 인스턴스에 구성된 대로 정렬이 사용됩니다. [!UICONTROL 기록 문서] 필드.
-      * **수평 정렬 옵션 수**:수평 정렬을 위해 기록 문서에 표시할 옵션 수를 설정할 수 있습니다.
+      * **확인란 및 라디오 단추 구성 요소의 경우 선택한 값만 표시합니다**: 속성을 설정하면 [!UICONTROL 기록 문서]에 확인란 및 라디오 단추의 선택한 값만 표시됩니다.
+      * **여러 값에 대한 구분 기호**: 쉼표나 줄 바꿈과 같은 구분 기호를 선택하여 여러 값을 표시할 수 있습니다.
+      * **옵션 맞춤**: 원하는 맞춤(가로, 세로, 적응형 양식과 동일)을 선택하여 [!UICONTROL 기록 문서]에 표시할 확인란 또는 라디오 단추와 같은 필드에 대한 맞춤을 설정할 수 있습니다. 기본적으로 세로 맞춤은 [!UICONTROL 기록 문서]의 필드에 대해 설정됩니다. DoR의 [!UICONTROL 양식 필드 속성]에서 속성을 설정하면 적응형 양식의 필드에 대한 [!UICONTROL 항목 맞춤]에 설정된 속성이 덮어쓰여집니다. [!UICONTROL 적응형 양식과 동일] 옵션을 선택하면 적응형 양식 작성자 인스턴스에 구성된 대로 맞춤이 [!UICONTROL 기록 문서] 필드에 사용됩니다.
+      * **수평 정렬을 위한 옵션 수**:수평 정렬을 위해 기록 문서에 표시할 옵션 수를 설정할 수 있습니다.
 
       ![양식 필드 속성](/help/forms/assets/formfieldpropertiesdor.png)
 
    3. **기본 페이지 속성**:
       * **로고 이미지**: 적응형 양식에서 로고 이미지를 사용하거나, DAM에서 로고 이미지를 선택하거나, 컴퓨터에서 로고 이미지를 업로드할 수 있습니다.
-      * **양식 제목**: DoR의 제목
+      * **양식 제목**: DoR의 제목입니다.
       * **머리글 텍스트**: 기록 문서의 머리글 섹션에 나타나는 텍스트입니다.
-      * **면책조항 레이블**: 면책조항 레이블.
+      * **면책조항 레이블**: 면책조항 레이블입니다.
       * **면책조항**: 기록 문서에 대한 권한 및 의무의 범위를 지정하는 텍스트입니다.
       * **면책조항 텍스트**: 면책조항 텍스트.
 
@@ -391,30 +391,30 @@ When you select a form model, configure Document of Record using options availab
    </proto>
    ```
 
-1. 브랜딩 변경 사항을 저장하려면 **[!UICONTROL 완료]**.
+1. 브랜딩 변경 사항을 저장하려면 **[!UICONTROL 완료]**&#x200B;를 선택하세요.
 
 ## 적응형 양식 편집기의 기록 지원 문서 {#dor-support-in-adaptiveform}
 
-다음을 구성할 수 있습니다. [!UICONTROL 기록 문서] 적응형 양식 편집기 또는 적응형 양식 템플릿 편집기에서 바로 템플릿을 사용할 수 있습니다.
+적응형 양식 편집기 또는 적응형 양식 템플릿 편집기에서 직접 [!UICONTROL 기록 문서] 템플릿을 구성할 수 있습니다.
 
 적응형 양식 편집기의 작성자 인스턴스에서 다음 단계를 수행합니다.
 
 1. **[!UICONTROL 적응형 양식 컨테이너(루트)]** 구성 요소를 선택합니다.
 1. ![아이콘 구성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭하여 적응형 양식 컨테이너의 **[!UICONTROL 속성]**&#x200B;을 엽니다.
-1. 를 엽니다. **[!UICONTROL 기록 문서 템플릿]** 을(를) 탭하고 다음 옵션 중에서 선택합니다.
-   * **[!UICONTROL 없음]**: 이 옵션을 선택한 경우 아니요 [!UICONTROL 기록 문서] 적응형 양식용 템플릿이 작성되었습니다.
+1. **[!UICONTROL 기록 문서 템플릿]** 탭을 열고 다음 옵션 중 하나를 선택합니다.
+   * **[!UICONTROL 없음]**: 이 옵션을 선택하면 적응형 양식에 대해 만들어진 [!UICONTROL 기록 문서] 서식 파일이 없습니다.
 
-   * **[!UICONTROL 양식 템플릿을 기록 문서 템플릿으로 연결]**:이 옵션을 선택하면 XFA 양식이 기록 문서의 템플릿으로 사용됩니다.
+   * **[!UICONTROL 양식 서식 파일을 기록 문서 서식 파일로 연결]**:이 옵션을 선택하면 XFA 양식이 기록 문서의 서식 파일로 사용됩니다.
 
-   * **[!UICONTROL 기록 문서 생성]**: 이 옵션을 선택하면 [!UICONTROL 기록 문서] 적응형 양식에 대해 템플릿이 자동으로 생성됩니다.
+   * **[!UICONTROL 기록 문서 생성]**: 이 옵션을 선택하면 적응형 양식에 대해 [!UICONTROL 기록 문서] 템플릿이 자동으로 생성됩니다.
 
-1. 선택 ![저장](/help/forms/assets/check-button.png) 속성을 저장합니다.
+1. 속성을 저장하려면 ![저장](/help/forms/assets/check-button.png)을(를) 선택하십시오.
 
 ![기록 문서 템플릿 지원](/help/forms/assets/dor-templatesupport.png)
 
 >[!NOTE]
 >
->날짜 [!UICONTROL 기록 문서] 적응형 양식 템플릿 편집기를 사용하여 템플릿이 작성되면 두 가지 옵션만 사용할 수 있습니다. [!UICONTROL 기록 문서 템플릿] 다음으로 탭 [!UICONTROL 없음] 및 [!UICONTROL 기록 문서 생성].
+>적응형 양식 템플릿 편집기를 사용하여 [!UICONTROL 기록 문서] 템플릿을 만들면 [!UICONTROL 기록 문서 템플릿] 탭에서 [!UICONTROL 없음] 및 [!UICONTROL 기록 문서 생성] 중 두 가지 옵션만 사용할 수 있습니다.
 
 ## 기록 문서의 패널에 대한 표 및 열 레이아웃 {#table-and-column-layouts-for-panels-in-document-of-record}
 
@@ -434,20 +434,20 @@ When you select a form model, configure Document of Record using options availab
 
 기록 문서 설정을 사용하면 기록 문서에 포함할 옵션을 선택할 수 있습니다. 예를 들어 은행에서 이름, 연령, 주민등록번호, 전화번호를 양식으로 입력할 수 있습니다. 양식은 은행 계좌 번호와 지점 세부 사항을 생성합니다. 기록 문서에 이름, 주민등록번호, 은행 계좌 및 지점 상세내역만 표시하도록 선택할 수 있습니다.
 
-기록 문서 구성 요소의 설정은 해당 속성에서 사용할 수 있습니다. 구성 요소의 속성에 액세스하려면 구성 요소를 선택하고 을 클릭합니다. ![cmppr](assets/cmppr.png) 을 클릭합니다. 속성은 사이드바에 나열되며, 사이드바에서 다음 설정을 찾을 수 있습니다.
+기록 문서 구성 요소의 설정은 해당 속성에서 사용할 수 있습니다. 구성 요소의 속성에 액세스하려면 구성 요소를 선택하고 오버레이에서 ![cmpr](assets/cmppr.png)을(를) 클릭하십시오. 속성은 사이드바에 나열되며, 사이드바에서 다음 설정을 찾을 수 있습니다.
 
 **필드 수준 설정**
 
-* **기록 문서에서 제외**: 속성을 true로 설정하면 기록 문서에서 필드가 제외됩니다. 이름이 인 스크립트 가능 속성입니다. `excludeFromDoR`. 동작은 다음에 따라 다릅니다. **숨겨진 경우 DoR에서 필드 제외** 양식 수준 속성입니다.
+* **기록 문서에서 제외**: 속성을 true로 설정하면 기록 문서에서 필드가 제외됩니다. 이름이 `excludeFromDoR`인 스크립트 가능 속성입니다. 이 동작은 **숨겨진 경우 DoR에서 필드 제외** 양식 수준 속성에 따라 다릅니다.
 
-* **패널을 테이블로 표시:** 패널에 6개 이하의 필드가 있는 경우 속성을 설정하면 패널이 기록 문서의 테이블로 표시됩니다. 패널에만 적용됩니다.
-* **기록 문서에서 제목 제외:** 속성을 설정하면 패널/테이블의 제목이 기록 문서에서 제외됩니다. 패널 및 테이블에만 적용할 수 있습니다.
-* **기록 문서에서 설명 제외:** 속성을 설정하면 패널/테이블에 대한 설명이 기록 문서에서 제외됩니다. 패널 및 테이블에만 적용할 수 있습니다.
+* **패널을 테이블로 표시:** 패널에 필드가 6개 미만인 경우 등록 정보를 설정하면 패널이 기록 문서에서 테이블로 표시됩니다. 패널에만 적용됩니다.
+* **기록 문서에서 제목 제외:** 속성을 설정하면 기록 문서에서 패널/테이블의 제목이 제외됩니다. 패널 및 테이블에만 적용할 수 있습니다.
+* **기록 문서에서 설명 제외:** 속성을 설정하면 기록 문서에서 패널/테이블의 설명이 제외됩니다. 패널 및 테이블에만 적용할 수 있습니다.
 
 **양식 수준 설정**
 
 * **DoR에 바인딩되지 않은 필드 포함:** 속성을 설정하면 기록 문서에 있는 스키마 기반 적응형 양식의 바인딩되지 않은 필드가 포함됩니다. 기본적으로 true입니다.
-* **숨겨진 경우 DoR에서 필드 제외:** 양식 제출 시 기록 문서에서 숨겨진 필드를 제외하려면 속성을 설정하십시오. 활성화 시 [서버에서 다시 유효성 검사](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)로 나열된 경우, 서버는 기록 문서에서 숨겨진 필드를 제외하기 전에 해당 필드를 다시 계산합니다.
+* **숨겨진 경우 DoR에서 필드 제외:** 양식 제출 시 기록 문서에서 숨겨진 필드를 제외하도록 속성을 설정합니다. [서버에서 다시 유효성 검사](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)를 사용하도록 설정하면 서버에서 숨겨진 필드를 다시 계산한 다음 기록 문서에서 해당 필드를 제외합니다.
 
 ## 사용자 지정 XCI 파일 사용
 
@@ -455,8 +455,8 @@ XCI 파일은 문서의 다양한 속성을 설정하는 데 도움이 됩니다
 
 | XCI 옵션 | 설명 |
 |--- |--- |
-| config/present/pdf/creator | 문서 정보 사전의 작성자 항목을 사용하여 문서 작성자를 식별합니다. 이 사전에 대한 자세한 내용은 [PDF 참조 안내서](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
-| config/present/pdf/producer | 문서 정보 사전의 제작자 항목을 사용하여 문서 제작자를 식별합니다. 이 사전에 대한 자세한 내용은 [PDF 참조 안내서](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
+| config/present/pdf/creator | 문서 정보 사전의 작성자 항목을 사용하여 문서 작성자를 식별합니다. 이 사전에 대한 자세한 내용은 [PDF 참조 안내서](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/)를 참조하세요. |
+| config/present/pdf/producer | 문서 정보 사전의 제작자 항목을 사용하여 문서 제작자를 식별합니다. 이 사전에 대한 자세한 내용은 [PDF 참조 안내서](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/)를 참조하세요. |
 | 구성/현재/레이아웃 | 출력이 단일 패널인지 또는 페이지 매김되어 있는지 여부를 제어합니다. |
 | config/present/pdf/compression/level | PDF 문서를 생성할 때 사용할 압축 정도를 지정합니다. |
 | config/present/pdf/fontInfo/embed | 출력 문서의 글꼴 포함을 제어합니다. |
@@ -485,13 +485,13 @@ XCI 파일은 문서의 다양한 속성을 설정하는 데 도움이 됩니다
 
 >[!NOTE]
 >
-> AEM Forms은 PDF 파일과 원활하게 통합되는 다양한 기본 제공 글꼴을 제공합니다. 지원되는 글꼴 목록을 보려면 [여기를 클릭하십시오](/help/forms/supported-out-of-the-box-fonts.md).
+> AEM Forms은 PDF 파일과 원활하게 통합되는 다양한 기본 제공 글꼴을 제공합니다. 지원되는 글꼴 목록을 보려면 [여기를 클릭](/help/forms/supported-out-of-the-box-fonts.md)하세요.
 
 
 ### Forms as a Cloud Service 환경에서 사용자 정의 XCI 파일 사용
 
 1. 사용자 지정 XCI 파일을 개발 프로젝트에 추가합니다.
-1. 다음을 지정하십시오. [인라인 속성](/help/implementing/deploying/configuring-osgi.md):
+1. 다음 [인라인 속성](/help/implementing/deploying/configuring-osgi.md)을 지정하십시오.
 
    ```JSON
     {
@@ -512,9 +512,9 @@ XCI 파일은 문서의 다양한 속성을 설정하는 데 도움이 됩니다
 ### 로컬 Forms as a Cloud Service 개발 환경에서 사용자 정의 XCI 파일을 사용합니다.
 
 1. XCI 파일을 로컬 개발 환경에 업로드합니다.
-1. Cloud Service SDK 구성 관리자를 엽니다. 기본 URL은 <http://localhost:4502/system/console/configMgr>.
-1. 을(를) 찾아 엽니다. **[!UICONTROL 적응형 Forms 및 대화형 통신 웹 채널]** 구성.
-1. XCI 파일의 경로를 지정하고 **[!UICONTROL 저장]**.
+1. Cloud Service SDK 구성 관리자를 엽니다. 기본 URL은 <http://localhost:4502/system/console/configMgr>입니다.
+1. **[!UICONTROL 적응형 Forms 및 대화형 통신 웹 채널]** 구성을 찾아 엽니다.
+1. XCI 파일의 경로를 지정하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 
 ## 추가 참조 {#see-also}

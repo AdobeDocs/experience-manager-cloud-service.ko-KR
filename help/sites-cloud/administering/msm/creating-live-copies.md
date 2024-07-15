@@ -111,11 +111,11 @@ Live Copy를 만들려면 다음 작업을 수행하십시오.
 
    ![Live Copy 만들기](../assets/create-live-copy.png)
 
-1. 소스 페이지를 선택한 다음 을 선택합니다. **다음**. 예:
+1. 소스 페이지를 선택한 다음 **다음**&#x200B;을 선택합니다. 예:
 
    ![Live Copy 소스 선택](../assets/live-copy-from.png)
 
-1. 라이브 카피의 대상 경로를 지정하고(라이브 카피의 상위 폴더/페이지 열기) 다음을 선택합니다 **다음**.
+1. Live Copy의 대상 경로를 지정한 후(Live Copy의 상위 폴더/페이지 열기) **다음**&#x200B;을 선택합니다.
 
    ![Live Copy 대상 선택](../assets/live-copy-to.png)
 
@@ -170,9 +170,9 @@ Live Copy에서 일부 언어 분기를 생략할 경우 이를 나중에 추가
 
    ![블루프린트로 사이트 생성](../assets/create-site-from-blueprint.png)
 
-1. 사용 **초기 언어** 선택기를 사용하여 라이브 카피에 사용할 블루프린트 사이트의 언어를 지정합니다.
+1. **초기 언어** 선택기를 사용하여 Live Copy에 사용할 블루프린트 사이트의 언어를 지정하십시오.
 
-   기본적으로 사용할 수 있는 모든 언어가 선택되어 있습니다. 언어를 제거하려면 **X** 언어 옆에 표시됩니다.
+   기본적으로 사용할 수 있는 모든 언어가 선택되어 있습니다. 언어를 제거하려면 해당 언어 옆에 나타나는 **X**&#x200B;을(를) 선택하십시오.
 
    예:
 
@@ -306,7 +306,7 @@ Live Copy를 동기화하여 소스에서 Live Copy로 변경 내용을 가져�
 
 1. **사이트** 콘솔에서 Live Copy 페이지를 선택한 다음 속성을 엽니다.
 1. **Live Copy** 탭을 엽니다.
-1. 선택 **동기화**.
+1. **동기화**&#x200B;를 선택하십시오.
 
    ![동기화 버튼](../assets/synchronize.png)
 
@@ -464,7 +464,7 @@ Live Copy 페이지를 선택하면 [Live Copy 개요에서도 다시 시작 작
    >
    >자세한 내용은 [Live Copy - 구성](overview.md#live-copies-composition)을 참조하십시오.
 
-1. 선택 **저장** 을 클릭하여 업데이트를 유지합니다.
+1. 업데이트를 유지하려면 **저장**&#x200B;을(를) 선택하십시오.
 
 ### 구성 요소 상속 취소 {#cancelling-inheritance-for-a-component}
 
@@ -480,7 +480,7 @@ Live Copy 페이지를 선택하면 [Live Copy 개요에서도 다시 시작 작
 
    ![구성 요소 도구 모음에서의 상속](../assets/inheritance-toolbar.png)
 
-1. 구성 요소 도구 모음에서 **상속 취소** 아이콘.
+1. 구성 요소 도구 모음에서 **상속 취소** 아이콘을 선택합니다.
 
    ![상속 취소 아이콘](../assets/cancel-inheritance-icon.png)
 
@@ -490,7 +490,7 @@ Live Copy 페이지를 선택하면 [Live Copy 개요에서도 다시 시작 작
 
 ### 구성 요소 상속 다시 활성화 {#re-enabling-inheritance-for-a-component}
 
-구성 요소의 상속을 활성화하려면 **상속 다시 활성화** 구성 요소 도구 모음의 아이콘
+구성 요소의 상속을 활성화하려면 구성 요소 도구 모음에서 **상속 다시 활성화** 아이콘을 선택합니다.
 
 ![상속 다시 활성화 아이콘](../assets/re-enable-inheritance-icon.png)
 
@@ -535,11 +535,11 @@ Live Copy의 속성 값을 변경해야 하는 경우 속성의 상속을 취소
 
    ![상속 취소 버튼](../assets/cancel-inheritance-button.png)
 
-1. 다음에서 **상속 취소** 확인 대화 상자, 선택 **예**.
+1. **상속 취소** 확인 대화 상자에서 **예**&#x200B;를 선택합니다.
 
 ### Live Copy 페이지 속성 되돌리기 {#revert-properties-of-a-live-copy-page}
 
-속성의 상속을 활성화하려면 **상속 되돌리기** 속성 옆에 표시되는 아이콘입니다.
+속성의 상속을 활성화하려면 속성 옆에 나타나는 **상속 되돌리기** 아이콘을 선택합니다.
 
 ![상속 되돌리기 버튼](../assets/revert-inheritance-button.png)
 

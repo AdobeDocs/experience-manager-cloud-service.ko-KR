@@ -13,29 +13,29 @@ ht-degree: 2%
 
 # AEM 프로젝트 저장소 구조 패키지
 
-Adobe Experience Manager as a Cloud Service용 Maven 프로젝트에는 프로젝트의 코드 하위 패키지가 배포되는 JCR 저장소 루트를 정의하는 것이 유일한 목적인 저장소 구조 하위 패키지 정의가 필요합니다. 이 방법을 사용하면 Experience Manager as a Cloud Service으로 패키지 설치가 JCR 리소스 종속성에 의해 자동으로 순서가 지정됩니다. 종속성이 없으면 하위 구조가 상위 구조보다 먼저 설치되고 예기치 않게 제거되어 배포가 중단되는 시나리오가 발생할 수 있습니다.
+Adobe Experience Manager as a Cloud Service용 Maven 프로젝트에는 프로젝트의 코드 하위 패키지가 배포되는 JCR 저장소 루트를 정의하는 것이 유일한 목적인 저장소 구조 하위 패키지 정의가 필요합니다. 이 방법을 사용하면 Experience Manageras a Cloud Service 의 패키지 설치가 JCR 리소스 종속성에 의해 자동으로 순서가 지정됩니다. 종속성이 없으면 하위 구조가 상위 구조보다 먼저 설치되고 예기치 않게 제거되어 배포가 중단되는 시나리오가 발생할 수 있습니다.
 
-코드 패키지가 위치에 배포되는 경우 **포함되지 않음** 코드 패키지를 사용하면 모든 상위 리소스(JCR 루트에 더 가까운 JCR 리소스)를 저장소 구조 패키지에 열거해야 합니다. 이 프로세스는 이러한 종속성을 설정하는 데 필요합니다.
+코드 패키지가 코드 패키지에서 다루지 않는 **위치**&#x200B;에 배포되는 경우 모든 상위 리소스(JCR 루트에 더 가까운 JCR 리소스)를 저장소 구조 패키지에 열거해야 합니다. 이 프로세스는 이러한 종속성을 설정하는 데 필요합니다.
 
 ![저장소 구조 패키지](./assets/repository-structure-packages.png)
 
-저장소 구조 패키지는 의 예상 공통 상태를 정의합니다. `/apps` 패키지 유효성 검사기가 를 사용하여 &quot;잠재적인 충돌로부터 안전한&quot; 영역을 표준 루트로 결정합니다.
+저장소 구조 패키지는 패키지 유효성 검사기가 &quot;잠재적인 충돌로부터 안전한&quot; 영역을 표준 루트로 결정하는 데 사용하는 예상 공통 상태 `/apps`을(를) 정의합니다.
 
 저장소 구조 패키지에 포함할 가장 일반적인 경로는 다음과 같습니다.
 
-+ `/apps` 시스템 제공 노드입니다
-+ `/apps/cq/...`, `/apps/dam/...`, `/apps/wcm/...`, 및 `/apps/sling/...` 다음에 대한 공통 오버레이를 제공합니다. `/libs`.
-+ `/apps/settings` 공유 컨텍스트 인식 구성 루트 경로입니다
++ 시스템 제공 노드인 `/apps`
++ `/libs`에 대한 일반 오버레이를 제공하는 `/apps/cq/...`, `/apps/dam/...`, `/apps/wcm/...` 및 `/apps/sling/...`.
++ 공유 컨텍스트 인식 구성 루트 경로인 `/apps/settings`
 
-이 하위 패키지 **이(가) 다음을 포함하지 않음** 모든 콘텐츠가 `pom.xml` 필터 루트 정의.
+이 하위 패키지 **에는**&#x200B;의 콘텐츠가 없으며 필터 루트를 정의하는 `pom.xml`로만 구성됩니다.
 
 ## 저장소 구조 패키지 생성
 
-Maven 프로젝트에 대한 저장소 구조 패키지를 생성하려면 다음을 사용하여 빈 Maven 하위 프로젝트를 만듭니다 `pom.xml`: 상위 Maven 프로젝트와 일치하도록 프로젝트 메타데이터 업데이트
+Maven 프로젝트에 대한 저장소 구조 패키지를 만들려면 다음 `pom.xml`을(를) 사용하여 빈 Maven 하위 프로젝트를 만들고 상위 Maven 프로젝트에 맞게 프로젝트 메타데이터를 업데이트합니다.
 
-업데이트 `<filters>` 로 배포하는 코드 패키지의 모든 JCR 저장소 경로 루트를 포함합니다.
+코드 패키지를 배포하는 모든 JCR 저장소 경로 루트를 포함하도록 `<filters>`을(를) 업데이트합니다.
 
-이 새 Maven 하위 프로젝트를 상위 프로젝트에 추가해야 합니다. `<modules>` 목록을 표시합니다.
+이 새 Maven 하위 프로젝트를 상위 프로젝트 `<modules>` 목록에 추가해야 합니다.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -118,9 +118,9 @@ Maven 프로젝트에 대한 저장소 구조 패키지를 생성하려면 다�
 
 ## 저장소 구조 패키지 참조
 
-저장소 구조 패키지를 사용하려면 모든 코드 패키지(배포되는 하위 패키지)를 통해 이를 참조하십시오 `/apps`) FileVault 콘텐츠 패키지 Maven 플러그인을 통한 Maven 프로젝트 `<repositoryStructurePackage>` 구성.
+저장소 구조 패키지를 사용하려면 FileVault 콘텐츠 패키지 Maven 플러그인 `<repositoryStructurePackage>` 구성을 통해 모든 코드 패키지(`/apps`에 배포되는 하위 패키지)를 통해 Maven 프로젝트를 참조합니다.
 
-다음에서 `ui.apps/pom.xml`및 기타 코드 패키지 `pom.xml`프로젝트의 저장소 구조 패키지(#repository-structure-package) 구성에 대한 참조를 FileVault 패키지 Maven 플러그인에 추가합니다.
+`ui.apps/pom.xml` 및 기타 코드 패키지 `pom.xml`에서 프로젝트의 저장소 구조 패키지(#repository-structure-package) 구성에 대한 참조를 FileVault 패키지 Maven 플러그인에 추가합니다.
 
 ```xml
 ...
@@ -161,15 +161,15 @@ Maven 프로젝트에 대한 저장소 구조 패키지를 생성하려면 다�
 
 예:
 
-+ 코드 패키지 A가에 배포 `/apps/a`
-+ 코드 패키지 B가에 배포 `/apps/a/b`
++ 코드 패키지 A가 `/apps/a`에 배포됨
++ 코드 패키지 B가 `/apps/a/b`에 배포됨
 
-코드 패키지 A의 코드 패키지 B에서 패키지 수준 종속성이 설정되지 않은 경우 코드 패키지 B가 먼저 로 배포될 수 있습니다. `/apps/a`. 그런 다음 뒤에 코드 패키지 A가 나오는데, 이 패키지가에 배포됩니다. `/apps/a`, 그 결과 이전에 설치된 가 제거됩니다 `/apps/a/b`.
+코드 패키지 A의 코드 패키지 B에서 패키지 수준 종속성이 설정되지 않은 경우 코드 패키지 B가 먼저 `/apps/a`에 배포될 수 있습니다. 그 뒤에 `/apps/a`에 배포되는 코드 패키지 A가 있으면 이전에 설치된 `/apps/a/b`이(가) 제거됩니다.
 
 이 경우:
 
-+ 코드 패키지 A는 `<repositoryStructurePackage>` 프로젝트의 저장소 구조 패키지(에 대한 필터가 있어야 함) `/apps`).
-+ 코드 패키지 B는 `<repositoryStructurePackage>` 코드 패키지 A에서 코드 패키지 B는 코드 패키지 A에 의해 공유되는 공간에 배포되기 때문입니다.
++ 코드 패키지 A는 프로젝트의 저장소 구조 패키지에 `<repositoryStructurePackage>`을(를) 정의해야 합니다(`/apps`에 대한 필터가 있어야 함).
++ 코드 패키지 B는 코드 패키지 A에 의해 공유되는 공간에 배포되므로 코드 패키지 B는 코드 패키지 A에 `<repositoryStructurePackage>`을(를) 정의해야 합니다.
 
 ## 오류 및 디버깅
 
@@ -180,7 +180,7 @@ Maven 프로젝트에 대한 저장소 구조 패키지를 생성하려면 다�
 Filter root's ancestor '/apps/some/path' is not covered by any of the specified dependencies.
 ```
 
-이 오류는 브레이킹 코드 패키지에 `<repositoryStructurePackage>` 목록 `/apps/some/path` 필터 목록에 있습니다.
+이 오류는 구분 코드 패키지에 필터 목록에 `/apps/some/path`을(를) 나열하는 `<repositoryStructurePackage>`이(가) 없음을 나타냅니다.
 
 ## 추가 리소스
 

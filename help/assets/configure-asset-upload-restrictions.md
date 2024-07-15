@@ -25,37 +25,37 @@ ht-degree: 13%
 
 ## 에셋 업로드에 제한 적용 {#apply-restrictions-asset-uploadsssssss}
 
-구성하려면 [!DNL Experience Manager] 사용자가 특정 MIME 유형의 파일을 업로드하도록 제한하려면 다음을 수행합니다.
+사용자가 특정 MIME 유형의 파일을 업로드하도록 제한하도록 [!DNL Experience Manager]을(를) 구성하려면 다음을 수행하십시오.
 
-1. 다음으로 이동 **[!UICONTROL 도구 > 에셋 > 에셋 구성]**.
+1. **[!UICONTROL 도구 > Assets > Assets 구성]**(으)로 이동합니다.
 
-1. 클릭 **[!UICONTROL 업로드 제한 사항]**.
+1. **[!UICONTROL 업로드 제한]**&#x200B;을 클릭합니다.
 
-1. 클릭 **[!UICONTROL 추가]** 허용되는 MIME 유형을 정의합니다.
+1. 허용되는 MIME 유형을 정의하려면 **[!UICONTROL 추가]**&#x200B;를 클릭하십시오.
 
-1. 텍스트 상자에 MIME 유형을 지정합니다. 다음을 클릭할 수 있습니다. **[!UICONTROL 추가]** 다시 한번 더 허용되는 MIME 유형을 지정하십시오. 다음을 클릭할 수도 있습니다. ![삭제 아이콘](assets/delete-icon.svg) 목록에서 MIME 유형을 삭제합니다.
+1. 텍스트 상자에 MIME 유형을 지정합니다. **[!UICONTROL 추가]**&#x200B;를 다시 클릭하여 더 많은 MIME 유형을 지정할 수 있습니다. ![삭제 아이콘](assets/delete-icon.svg)을 클릭하여 목록에서 MIME 형식을 삭제할 수도 있습니다.
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
-**예제 1: Experience Manager Assets에 모든 이미지 및 PDF 파일 업로드 허용**
+**예 1: Experience Manager Assets에 모든 이미지 및 PDF 파일 업로드 허용**
 
 모든 형식의 이미지 및 PDF 파일을 Experience Manager Assets에 업로드할 수 있도록 하려면 다음 설정을 수행하십시오.
 
 ![에셋 업로드 제한 사항](assets/asset-upload-restrictions.png)
 
-`image/*` as the MIME type을 사용하면 모든 형식의 이미지를 업로드할 수 있습니다. `application/pdf` as the MIME type을 사용하면 Experience Manager Assets에 PDF 파일을 업로드할 수 있습니다.
+`image/*`을(를) MIME 형식으로 사용하면 모든 형식의 이미지를 업로드할 수 있습니다. `application/pdf`을(를) MIME 형식으로 Experience Manager Assets에 PDF 파일을 업로드할 수 있습니다.
 
 허용되는 MIME 유형 목록에 포함되지 않은 파일을 업로드하려고 하면 Experience Manager Assets에 다음 오류 메시지가 표시됩니다.
 
 ![제한된 파일](assets/asset-upload-restricted-files.png)
 
-`Screen Recording 2022-08-31 at 3.36.09 PM.mov` 은(는) 허용된 MIME 유형에 포함되지 않은 파일 이름을 나타냅니다.
+`Screen Recording 2022-08-31 at 3.36.09 PM.mov`은(는) 허용된 MIME 형식에 포함되지 않은 파일 이름을 참조합니다.
 
-**예제 2: Experience Manager Assets에 특정 이미지 형식 업로드 허용**
+**예 2: Experience Manager Assets에 특정 이미지 형식 업로드 허용**
 
 특정 이미지 형식을 허용된 MIME 유형에 추가하고 다른 모든 에셋 형식의 업로드를 제한하려면 다음 설정을 수행하십시오.
 
-![자산 제한 사항](assets/asset-restrictions.png)
+![자산 제한](assets/asset-restrictions.png)
 
 이미지에 표시된 설정을 기반으로 .JPG, .PNG 및 .GIF 형식의 이미지를 Experience Manager Assets에 업로드할 수 있습니다.
 

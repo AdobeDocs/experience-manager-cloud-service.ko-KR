@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
 source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '959'
-ht-degree: 7%
+source-wordcount: '956'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +23,7 @@ XML 스키마를 양식 모델로 사용하여 적응형 양식을 작성하려�
 
 ## XML 스키마를 양식 모델로 사용 {#using-an-xml-schema-as-form-model}
 
-[!DNL Experience Manager Forms] 에서는 기존 XML 스키마를 양식 모델로 사용하여 적응형 양식을 만들 수 있습니다. 이 XML 스키마는 조직의 백엔드 시스템에서 데이터를 생성하거나 사용하는 구조를 나타냅니다.
+[!DNL Experience Manager Forms]에서는 기존 XML 스키마를 양식 모델로 사용하여 적응형 양식을 만들 수 있습니다. 이 XML 스키마는 조직의 백엔드 시스템에서 데이터를 생성하거나 사용하는 구조를 나타냅니다.
 
 XML 스키마 사용의 주요 기능은 다음과 같습니다.
 
@@ -137,8 +137,8 @@ XML 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. 요
   </tr>
   <tr>
    <td><code>use=required </code></td>
-   <td>필수 필드를 표시합니다.<br /> </td>
-   <td>특성</td>
+   <td>필수 <br /> 필드를 표시합니다. </td>
+   <td>속성</td>
   </tr>
   <tr>
    <td><code>default="default value"</code></td>
@@ -166,7 +166,7 @@ XML 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. 요
 >* 요소 이름의 첫 번째 문자 대문자로 바꾸기
 >* 카멜 대/소문자 경계에 공백을 삽입합니다.
 >
->예를 들어 `userFirstName` 스키마 요소, 적응형 양식에서 생성된 캡션 `User First Name`.
+>예를 들어 `userFirstName` 스키마 요소를 추가하는 경우 적응형 양식에서 생성된 캡션은 `User First Name`입니다.
 
 ## 적응형 양식 구성 요소에 허용되는 값 제한 {#limit-acceptable-values-for-an-adaptive-form-component}
 
@@ -293,7 +293,7 @@ XML 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. 요
 
 **bindRef란 무엇입니까?**
 
-A `bindRef` 적응형 양식 구성 요소와 스키마 요소 또는 속성 간의 연결입니다. 다음을 지시합니다. `XPath` 출력 XML에서 이 구성 요소 또는 필드에서 캡처된 값을 사용할 수 있는 경우. A `bindRef`는 미리 채워진(미리 채워진) XML에서 필드 값을 미리 채울 때도 사용됩니다.
+`bindRef`은(는) 적응형 양식 구성 요소와 스키마 요소 또는 특성 간의 연결입니다. 출력 XML에서 이 구성 요소 또는 필드에서 캡처한 값을 사용할 수 있는 `XPath`을(를) 지시합니다. 미리 채워진(미리 채워진) XML에서 필드 값을 미리 채울 때도 `bindRef`이(가) 사용됩니다.
 
 **반복 가능한 하위 양식(minOccours 또는 maxOccurs 값이 1보다 큼)에 대해 하위 양식(복합 유형에서 생성된 구조)의 개별 요소를 드래그할 수 없는 이유는 무엇입니까?**
 

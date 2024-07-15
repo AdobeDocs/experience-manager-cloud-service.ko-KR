@@ -14,20 +14,20 @@ ht-degree: 46%
 
 # Sites 콘솔 {#sites-console}
 
-사용 방법 알아보기 **사이트** 콘솔을 사용하여 AEM 페이지를 관리하고 구성합니다.
+**사이트** 콘솔을 사용하여 AEM 페이지를 관리하고 구성하는 방법에 대해 알아봅니다.
 
 ## 방향 {#orientation}
 
-다음 **사이트** 콘솔을 사용하여 페이지 계층 구조를 볼 수 있습니다.
+**사이트** 콘솔을 통해 페이지 계층 구조를 볼 수 있습니다.
 
-![항목이 선택된 사이트 콘솔의 열 보기](assets/sites-console-column-view-selected.png)
+항목이 선택된 Sites 콘솔의 ![열 보기](assets/sites-console-column-view-selected.png)
 
 페이지를 관리하고 구성하는 데 도움이 되는 다양한 보기와 도구 모음을 제공합니다.
 
-* [콘솔 도구 모음](#toolbar) 는 탐색하는 데 도움이 되도록 항상 존재합니다.
-* [세 가지 다른 보기](#views) 를 사용하면 페이지를 쉽게 찾아 선택할 수 있습니다.
-* [작업 도구 모음](#action-toolbar) 작업을 수행할 항목을 선택하면 나타납니다.
-* [사이드 패널](#side-panel) 에는 선택한 페이지에 대한 자세한 정보를 표시하는 여러 옵션이 있습니다.
+* [콘솔 도구 모음](#toolbar)이 항상 있으므로 탐색하는 데 도움이 됩니다.
+* [세 개의 다른 보기](#views)를 통해 페이지를 쉽게 찾고 선택할 수 있습니다.
+* [작업 도구 모음](#action-toolbar)은 작업을 수행할 항목을 선택한 경우에 나타납니다.
+* [사이드 패널](#side-panel)에는 선택한 페이지에 대한 자세한 정보를 표시하는 여러 옵션이 있습니다.
 
 ## 콘솔 도구 모음 {#console-toolbar}
 
@@ -45,7 +45,7 @@ ht-degree: 46%
 
 ![사이드 패널 선택기의 예](assets/sites-console-side-panel-selector.png)
 
-사이드 패널에 대한 자세한 내용은 문서를 참조하십시오 [사이트 콘솔 사이드 패널.](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
+사이드 패널에 대한 자세한 내용은 [사이트 콘솔 사이드 패널](/help/sites-cloud/authoring/sites-console/console-side-panel.md) 문서를 참조하십시오.
 
 ### 이동 경로 {#breadcrumbs}
 
@@ -60,22 +60,22 @@ ht-degree: 46%
 
 ### 모두 선택 {#select-all}
 
-탭 또는 클릭 **모두 선택** 버튼은 콘솔의 현재 보기에 있는 모든 항목을 선택합니다.
+**모두 선택** 단추를 탭하거나 클릭하면 콘솔의 현재 보기에 있는 모든 항목이 선택됩니다.
 
-![모두 선택 단추](assets/sites-console-select-all.png)
+![모두 선택](assets/sites-console-select-all.png)
 
-모든 항목을 선택한 경우 도구 모음의 오른쪽 상단에 선택한 항목의 수가 표시됩니다. **모두 선택** 단추가 나타났습니다.
+모든 항목을 선택한 경우 도구 모음의 오른쪽 상단에 **모두 선택** 단추가 표시되는 항목 수가 표시됩니다.
 
 모든 항목을 선택 해제하고 다음 방법으로 선택 모드를 종료할 수 있습니다.
 
-* 클릭 또는 탭 **X** 카운트 옆에 있습니다.
-* 사용 **탈출** 키.
+* 카운트 옆에 있는 **X**&#x200B;을(를) 클릭하거나 탭합니다.
+* **Esc** 키를 사용합니다.
 
 ![전체 선택 해제 ](assets/sites-console-deselect-all.png)
 
 ### 만들기 버튼 {#create-button}
 
-다음 **만들기** 버튼을 사용하면 새 페이지를 사이트에 추가할 수 있을 뿐만 아니라 라이브 카피 또는 론치와 같은 추가 Sites 개체를 만들 수 있습니다.
+**만들기** 단추를 사용하면 새 페이지를 사이트에 추가하고 라이브 카피 또는 론치와 같은 추가 Sites 개체를 만들 수 있습니다.
 
 ![만들기 버튼](assets/sites-console-create.png)
 
@@ -92,13 +92,13 @@ ht-degree: 46%
 
 ## 페이지 보기 및 선택 {#views}
 
-다음 **사이트** 콘솔에서는 콘텐츠 계층 구조에 대한 세 가지 보기를 제공합니다. 사용 가능한 보기에서 리소스를 보고, 탐색하고, (추가 작업을 위해) 선택할 수 있습니다.
+**사이트** 콘솔에서는 콘텐츠 계층 구조에 대한 세 가지 보기를 제공합니다. 사용 가능한 보기에서 리소스를 보고, 탐색하고, (추가 작업을 위해) 선택할 수 있습니다.
 
 * [열 보기](#column-view)
 * [카드 보기](#card-view)
 * [목록 보기](#list-view)
 
-다음 **보기** 아이콘 AEM 도구 모음의 맨 오른쪽에 선택된 현재 보기를 나타냅니다.
+AEM 도구 모음의 맨 오른쪽에 있는 **보기** 아이콘은 선택한 현재 보기를 나타냅니다.
 
 탭하거나 클릭하여 다른 보기를 선택할 수 있습니다.
 
@@ -181,11 +181,11 @@ ht-degree: 46%
    * 페이지가 잠겨 있거나 숨겨져 있거나 라이브 카피의 일부인 경우
    * 워크플로우의 일부로 항목에 대해 작업을 수행해야 하는 경우 표시기입니다.
 
-카드 보기의 오퍼 [빠른 작업](#quick-actions) 선택 항목 및 일반적인 작업(예: 편집)
+카드 보기는 선택 등의 항목에 대한 [빠른 작업](#quick-actions) 및 편집과 같은 일반적인 작업을 제공합니다.
 
 ![빠른 작업](assets/sites-console-quick-actions.png)
 
-카드를 탭하거나 클릭하여 트리 아래를 탐색하거나(빠른 작업을 탭하지 않도록 주의) 를 사용하여 트리 위로 다시 탐색할 수 있습니다. [헤더의 이동 경로](#the-header).
+카드를 탭하거나 클릭하여 트리 아래를 탐색하거나(빠른 작업이 탭되지 않도록 주의) 헤더에서 [탐색 표시](#the-header)를 사용하여 트리 위로 다시 탐색할 수 있습니다.
 
 ### 목록 보기 {#list-view}
 
@@ -194,7 +194,7 @@ ht-degree: 46%
 ![목록 보기](assets/sites-console-list-view.png)
 
 * 리소스 이름을 탭/클릭하여 트리를 탐색하고 [헤더에서 [이동 경로]](#the-header)를 사용하여 백업할 수 있습니다.
-* 목록의 모든 항목을 쉽게 선택하려면 [**모두 선택** 확인란을 선택합니다.](#select-all)
+* 목록의 모든 항목을 쉽게 선택하려면 도구 모음의 [**모두 선택** 확인란을 사용합니다.](#select-all)
 
 * [보기] 버튼 아래에 있는 **보기 설정** 옵션을 사용하여 표시할 열을 선택합니다. 다음 열이 표시될 수 있습니다.
 
@@ -206,9 +206,9 @@ ht-degree: 46%
    * **작업**
    * **워크플로** - 페이지에 현재 적용된 워크플로입니다. 마우스로 가리키거나 타임라인을 열면 자세한 정보를 사용할 수 있습니다.
    * **번역됨**
-   * **페이지 보기 수**
+   * **페이지 보기**
    * **고유 방문자 수**
-   * **페이지에서 시간**
+   * **페이지 시간**
 
 ![열 구성](assets/sites-console-select-columns.png)
 
@@ -235,29 +235,29 @@ ht-degree: 46%
 작업 도구 모음은 콘솔에서 리소스를 선택한 경우에만 나타납니다. 작업 도구 모음에서 사용할 수 있는 작업은 선택한 특정 항목에서 수행할 수 있는 작업을 반영하도록 변경됩니다. 가장 일반적인 작업은 다음과 같습니다.
 
 * [**만들기**](#create-action) - 새 콘텐츠 또는 콘텐츠 관련 작업 만들기
-* **편집** - 선택한 페이지를 만든 방법에 따라 **편집** 그러면 적절한 편집기가 열립니다.
+* **편집** - 선택한 페이지가 만들어진 방식에 따라 **편집** 작업을 수행하면 해당 편집기가 열립니다.
    * [페이지 편집기](/help/sites-cloud/authoring/page-editor/introduction.md) - AEM 페이지 편집기로 만든 페이지의 경우
-   * [유니버설 편집기](/help/sites-cloud/authoring/universal-editor/authoring.md) - 범용 편집기로 만든 페이지
+   * [유니버설 편집기](/help/sites-cloud/authoring/universal-editor/authoring.md) - 유니버설 편집기로 만든 페이지의 경우
 * [**속성**](/help/sites-cloud/authoring/sites-console/page-properties.md) - 페이지 속성 창을 엽니다.
-* [**잠금**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - 다른 사용자가 변경하지 못하도록 페이지 잠금
+* [**잠금**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - 다른 사용자가 변경하지 못하도록 페이지를 잠급니다.
 * [**복사**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) - 페이지 복사
 * [**이동**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) - 페이지 이동 또는 이름 바꾸기
-* [**빠른 게시**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - 페이지를 즉시 게시
-* [**게시 관리**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - 게시할 페이지 예약
+* [**빠른 Publish**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - 페이지 또는 페이지를 즉시 Publish
+* [**게시 관리**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - 게시할 페이지를 예약합니다.
 * [**복원**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - 페이지 또는 페이지 트리의 버전 복원
 * [**삭제**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) - 페이지 삭제
 
-일부 창은 공간이 제한되어 있으므로 도구 모음이 사용할 수 있는 공간보다 바로 길어질 수 있습니다. 이 경우 추가 옵션이 표시됩니다. 생략 부호(세 점 또는 **...**) 나머지 모든 작업을 포함하는 드롭다운 선택기를 엽니다.
+일부 창은 공간이 제한되어 있으므로 도구 모음이 사용할 수 있는 공간보다 바로 길어질 수 있습니다. 이 경우 추가 옵션이 표시됩니다. 생략 부호(세 점 또는 **..**)를 클릭하거나 탭하면 나머지 작업을 모두 포함하는 드롭다운 선택기가 열립니다.
 
 ![추가적인 옵션](assets/sites-console-additional-options.png)
 
 ### 작업 만들기 {#create-action}
 
-만들기 작업은 다음과 유사한 옵션을 제공합니다. [**만들기** 도구 모음 단추](#create-button) 새 페이지 및 유사한 항목을 만들 때 사용합니다.
+만들기 작업은 새 페이지 및 유사한 항목을 만들기 위한 [**만들기** 도구 모음 단추](#create-button)와 유사한 옵션을 제공합니다.
 
 또한 페이지 관련 작업을 만들 수 있는 기능도 제공합니다.
 
-* [**워크플로**](/help/sites-cloud/authoring/workflows/overview.md) - 페이지에 워크플로우 적용
+* [**워크플로**](/help/sites-cloud/authoring/workflows/overview.md) - 페이지에 워크플로 적용
 * [**버전**](/help/sites-cloud/authoring/sites-console/page-versions.md) - 페이지 버전 만들기
 
 ## 템플릿

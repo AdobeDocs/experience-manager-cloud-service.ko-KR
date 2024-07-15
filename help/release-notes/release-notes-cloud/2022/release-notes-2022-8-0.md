@@ -13,7 +13,7 @@ ht-degree: 88%
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2022.8.0 릴리스 정보 {#release-notes}
 
-다음 섹션에서는 의 2022.8.0 버전에 대한 기능 릴리스 노트를 간략하게 설명합니다 [!DNL Experience Manager] as a Cloud Service.
+as a Cloud Service 다음 섹션에서는 [!DNL Experience Manager] 의 2022.8.0 버전 기능 릴리스 노트를 간략하게 설명합니다.
 
 >[!NOTE]
 >

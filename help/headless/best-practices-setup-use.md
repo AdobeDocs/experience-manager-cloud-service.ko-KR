@@ -20,7 +20,7 @@ ht-degree: 29%
 다음 작업을 수행하여 속도를 높이십시오.
 
 * [Headless 소개](/help/headless/what-is-headless.md)
-* AEM의 다양한 환경에 대한 개요 [아키텍처](/help/headless/deployment/architecture.md)
+* AEM [Architecture](/help/headless/deployment/architecture.md)의 다양한 환경에 대한 개요
 
 ## 설정 {#setup}
 
@@ -51,7 +51,7 @@ ht-degree: 29%
 ### AEM Dispatcher 캐싱 {#dispatcher-caching}
 
 >[!NOTE]
->Dispatcher에서 캐싱이 활성화되면 [CORS 설정](#cors-setup) 가 필요하지 않으므로 무시할 수 있습니다.
+>Dispatcher에서 캐싱이 활성화되면 [CORS 설정](#cors-setup)이 필요하지 않으므로 무시할 수 있습니다.
 
 지속 쿼리 캐싱은 기본적으로 Dispatcher에서 활성화되어 있지 않습니다. 원본이 여러 개인 CORS(원본 간 리소스 공유)를 사용하는 고객은 Dispatcher 구성을 검토하고 업데이트해야 하므로 기본값으로 활성화할 수는 없습니다.
 
@@ -61,16 +61,16 @@ ht-degree: 29%
 
 #### 환경 {#environments-dispatcher-caching}
 
-Dispatcher는 일반적으로 다음과 같이 구성됩니다.
+Dispatcher은 일반적으로 다음과 같이 구성됩니다.
 
 * Publish: 프로덕션
 
 ### CORS 설정 {#cors-setup}
 
 >[!NOTE]
->에서 캐시하는 경우 [AEM 디스패처](#dispatcher-caching) 가 활성화되면 CORS 설정이 필요하지 않으므로 이 섹션을 무시할 수 있습니다.
+>[AEM Dispatcher](#dispatcher-caching)에서 캐싱을 사용하면 CORS 설정이 필요하지 않으므로 이 섹션을 무시할 수 있습니다.
 
-GraphQL 끝점에 액세스하려면 CORS 정책을 구성하고 Cloud Manager를 통해 AEM에 배포된 AEM 프로젝트에 추가해야 합니다. 이 작업은 원하는 끝점에 대한 적절한 OSGi CORS 구성 파일을 추가하여 수행됩니다.
+GraphQL 끝점에 액세스하려면 CORS 정책을 구성하고 Cloud Manager을 통해 AEM에 배포된 AEM 프로젝트에 추가해야 합니다. 이 작업은 원하는 끝점에 대한 적절한 OSGi CORS 구성 파일을 추가하여 수행됩니다.
 
 #### 세부 사항 {#details-cors-setup}
 
@@ -127,7 +127,7 @@ Headless 구현으로 여러 보안 및 권한 영역을 다뤄야 합니다. AE
 
 ### CDN(Content Delivery Network) 사용 {#cdn}
 
-GraphQL 쿼리 및 해당 JSON 응답은 타깃팅한 경우 캐시될 수 있습니다. `GET` cdn 사용 시 요청. 반대로 캐시되지 않은 요청은 매우 (리소스) 비용이 많이 들고 처리 속도가 느릴 수 있으며, 이로 인해 원본 리소스에 추가 해로운 영향을 미칠 수 있습니다.
+CDN을 사용할 때 `GET` 요청으로 타깃팅된 경우 GraphQL 쿼리 및 해당 JSON 응답이 캐시될 수 있습니다. 반대로 캐시되지 않은 요청은 매우 (리소스) 비용이 많이 들고 처리 속도가 느릴 수 있으며, 이로 인해 원본 리소스에 추가 해로운 영향을 미칠 수 있습니다.
 
 #### 세부 사항 {#details-cdn}
 
@@ -147,7 +147,7 @@ AEM GraphQL은 콘텐츠 조각에서 정보를 검색하는 데 사용됩니다
 
 * [구성 만들기](/help/headless/setup/create-configuration.md)
 * [콘텐츠 조각 모델 만들기](/help/headless/setup/create-content-model.md)
-* [에셋 폴더 만들기](/help/headless/setup/create-assets-folder.md)
+* [Assets 폴더 만들기](/help/headless/setup/create-assets-folder.md)
 * [콘텐츠 조각 만들기 및 편집](/help/headless/setup/create-content-fragment.md)
 
 #### 환경 {#eenvironments-content-fragments}
@@ -176,7 +176,7 @@ AEM GraphQL은 콘텐츠 조각에서 정보를 검색하는 데 사용됩니다
 
 >[!NOTE]
 >
->최적화 지침은에서 이미 다룬 캐시 구성을 다룹니다 [설정](#setup).
+>최적화 지침은 [Setup](#setup)에서 이미 다룬 캐시 구성을 다룹니다.
 
 ### 앱에서 GraphQL에 액세스 {#access-graphql-from-your-apps}
 
@@ -184,9 +184,9 @@ AEM Headless CMS는 개발자가 이미 익숙한 언어, 프레임워크 및 �
 
 #### 세부 사항 {#details-your-apps}
 
-* [개발을 위해 AEM SDK를 설치하고 사용합니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html)
+* [개발용 AEM SDK를 설치하고 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html)
 * [AEM Headless 개발자 리소스](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko-KR)
-* 예, 다음 포함 [반응](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html), [Next.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/next-js.html), [Node.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/server-to-server-app.html), 기타
+* 예: [React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html), [Next.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/next-js.html), [Node.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/server-to-server-app.html) 등
 
 #### 환경 {#environments-your-apps}
 

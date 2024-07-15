@@ -24,18 +24,18 @@ Cloud Manager Adobe에서 사용자 정의 도메인을 추가하여 웹 사이�
 
 게시 계층에 대한 사용자 정의 도메인을 구성하려면 다음 단계를 수행합니다.
 
-1. 다음으로 이동 **[!UICONTROL Cloud Manager Adobe]** > **[!UICONTROL 프로그램 개요]** > **[!UICONTROL SSL 인증서]**을 클릭하고 SSL 인증서를 추가합니다.
+1. **[!UICONTROL Cloud Manager Adobe]** > **[!UICONTROL 프로그램 개요]** > **[!UICONTROL SSL 인증서]**(으)로 이동한 다음 SSL 인증서를 추가합니다.
    ![이미지](/help/assets/assets/ssl-certificate.png)
-추가 방법 알아보기 [SSL 인증서](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) Adobe Cloud Manager.
+Adobe Cloud Manager에서 [SSL 인증서](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)를 추가하는 방법을 알아봅니다.
 
-1. SSL 인증서를 추가한 후 사용자 정의 도메인을 추가합니다. 클릭 **[!UICONTROL 도메인 설정]** 및에 대한 사용자 정의 도메인을 지정합니다. **[!UICONTROL Publish 서비스]** 옵션을 선택합니다.
-자세히 알아보기 [사용자 정의 도메인](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+1. SSL 인증서를 추가한 후 사용자 정의 도메인을 추가합니다. **[!UICONTROL 도메인 설정]**&#x200B;을 클릭하고 **[!UICONTROL Publish 서비스]** 옵션에 대해 사용자 지정 도메인을 지정합니다.
+[사용자 지정 도메인](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)에 대해 자세히 알아보세요.
 
-1. 2 추가 [CNAME 레코드](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) 게시 도메인에 해당하는 DNS 레코드.
+1. 게시 도메인에 해당하는 DNS 레코드에 2개의 [CNAME 레코드](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)을(를) 추가합니다.
 DNS 전파 지연으로 인해 DNS 확인을 처리하는 데 몇 시간이 걸릴 수 있습니다.
 
 1. 지원 사례를 기록하여 사용자 정의 도메인을 쉽게 구성하여 게재 계층으로 전달합니다.
 
 >[!NOTE]
 >
-> 자산 선택기에 대해 IMS 클라이언트에서 허용된 리디렉션 URL 목록에 사용자 지정 도메인을 추가해야 합니다.<br>사용자 정의 Adobe 문자열을 제공하여 해당 도메인 팀과 조정하여 이 작업을 실행합니다.
+> 자산 선택기에 대해 IMS 클라이언트에서 허용된 리디렉션 URL 목록에 사용자 지정 도메인을 추가해야 합니다.<br>사용자 지정 Adobe 문자열을 제공하여 각 도메인 팀과 조정하여 이 작업을 실행합니다.

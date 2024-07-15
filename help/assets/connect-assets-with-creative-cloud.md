@@ -1,6 +1,6 @@
 ---
 title: AEM Assets를 Creative Cloud에 연결
-description: AEM Assets를 구성하고 Creative Cloud에 연결하는 방법에 대해 알아봅니다. 다른 IMS 조직에 프로비저닝된 Creative Cloud 권한에 연결하여 Express 및 Creative Cloud 라이브러리를 포함하여 AEM Assets의 최신 Creative Cloud 통합을 쉽게 사용할 수 있습니다.
+description: AEM Assets를 구성하고 Creative Cloud에 연결하는 방법에 대해 알아봅니다. 다른 IMS 조직에 프로비저닝된 Creative Cloud 권한에 연결하여 Express 및 Creative Cloud Libraries 등 AEM Assets의 최신 Creative Cloud 통합을 쉽게 사용할 수 있습니다.
 exl-id: 880200fe-94b3-49de-802c-34283f7c71bc
 feature: Collaboration
 role: User
@@ -13,7 +13,7 @@ ht-degree: 75%
 
 # AEM Assets를 Creative Cloud에 연결  {#cross-org-entitlements}
 
-Experience Manager Assets은 다른 IMS 조직에 프로비저닝된 Creative Cloud 권한에 연결하여 Express 및 Creative Cloud 라이브러리를 포함하여 AEM Assets의 최신 Creative Cloud 통합을 쉽게 사용할 수 있습니다.
+Experience Manager Assets은 다른 IMS 조직에 프로비저닝된 Creative Cloud 권한에 연결하여 Express 및 Creative Cloud Libraries을 비롯한 AEM Assets의 최신 Creative Cloud 통합을 쉽게 사용할 수 있습니다.
 
 Creative Cloud 제품 및 AEM Assets가 별도의 IMS 조직에 프로비저닝된 경우 다른 Creative Cloud 조직에 연결하여 두 솔루션 간의 통합 워크플로를 실행할 수 있습니다.
 

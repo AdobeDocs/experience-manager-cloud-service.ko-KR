@@ -23,5 +23,5 @@ ht-degree: 4%
 
 ### 새로운 기능 {#what-is-new-ctt}
 
-* 콘텐츠 수집 프로세스가 변경되었습니다. 대상 환경에서 AEM 버전 업데이트를 비활성화하기 위해 고객 지원 센터/지원 티켓을 더 이상 제출할 필요가 없습니다. 이제 이 프로세스가 자동화되었습니다. 자세한 내용은 다음을 참조하십시오. [AEM 버전 업데이트 및 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#aem-version-updates-and-ingestions)
-* 동적 동시성은 다음 기간 동안 사용됩니다. [사전 복사](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) 추출 단계와 수집 단계 모두에서 컨텐츠 마이그레이션 시간을 크게 줄입니다.
+* 콘텐츠 수집 프로세스가 변경되었습니다. 대상 환경에서 AEM 버전 업데이트를 비활성화하기 위해 고객 지원 센터/지원 티켓을 더 이상 제출할 필요가 없습니다. 이제 이 프로세스가 자동화되었습니다. 자세한 내용은 [AEM 버전 업데이트 및 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#aem-version-updates-and-ingestions)을 참조하세요.
+* 동적 동시성은 추출 및 수집 단계 모두에서 [사전 복사](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) 단계 동안 사용되어 콘텐츠 마이그레이션 시간을 크게 줄입니다.

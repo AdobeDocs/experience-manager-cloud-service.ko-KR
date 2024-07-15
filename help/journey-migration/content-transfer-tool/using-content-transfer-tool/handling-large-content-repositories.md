@@ -22,7 +22,7 @@ ht-degree: 8%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html#setting-up-pre-copy-step" text="사전 복사 단계로 AzCopy 시작"
 
 CTT(콘텐츠 전송 도구)를 사용하여 많은 Blob을 복사하는 데 며칠이 걸릴 수 있습니다.
-컨텐츠 전송 활동의 추출 및 수집 단계 속도를 높여 컨텐츠를 AEM as a Cloud Service으로 이동하려면 CTT에서 다음을 사용할 수 있습니다 [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) 선택적 사전 복사 단계입니다. 이 사전 복사 단계는 소스 AEM 인스턴스가 Amazon S3, Azure Blob Storage 데이터 저장소 또는 파일 데이터 저장소를 사용하도록 구성된 경우 사용할 수 있습니다. 사전 복사 단계는 첫 번째 전체 추출 및 수집에 가장 효과적입니다. 그러나 전체 프로세스에 시간이 추가될 수 있으므로 후속 추가 작업에 사전 복사를 사용하지 않는 것이 좋습니다(추가 크기가 200GB 미만인 경우). 이 사전 단계가 구성되면 추출 단계에서 AzCopy는 Amazon S3, Azure Blob Storage 또는 파일 데이터 저장소의 Blob을 마이그레이션 세트 Blob 저장소로 복사합니다. 수집 단계에서 AzCopy는 마이그레이션 세트 Blob 저장소의 Blob을 대상 AEM as a Cloud Service Blob 저장소로 복사합니다.
+컨텐츠 전송 활동의 추출 및 수집 단계 속도를 높여 컨텐츠를 AEM as a Cloud Service으로 이동하려면 CTT에서 [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)를 선택적 사전 복사 단계로 사용할 수 있습니다. 이 사전 복사 단계는 소스 AEM 인스턴스가 Amazon S3, Azure Blob Storage 데이터 저장소 또는 파일 데이터 저장소를 사용하도록 구성된 경우 사용할 수 있습니다. 사전 복사 단계는 첫 번째 전체 추출 및 수집에 가장 효과적입니다. 그러나 전체 프로세스에 시간이 추가될 수 있으므로 후속 추가 작업에 사전 복사를 사용하지 않는 것이 좋습니다(추가 크기가 200GB 미만인 경우). 이 사전 단계가 구성되면 추출 단계에서 AzCopy는 Amazon S3, Azure Blob Storage 또는 파일 데이터 저장소의 Blob을 마이그레이션 세트 Blob 저장소로 복사합니다. 수집 단계에서 AzCopy는 마이그레이션 세트 Blob 저장소의 Blob을 대상 AEM as a Cloud Service Blob 저장소로 복사합니다.
 
 ## 시작하기 전에 고려해야 할 중요한 사항 {#important-considerations}
 
@@ -30,25 +30,25 @@ CTT(콘텐츠 전송 도구)를 사용하여 많은 Blob을 복사하는 데 며
 
 * CTT 버전 2.0.16부터 번들을 설치하면 사전 복사 설정이 자동으로 수행됩니다. 또한 마이그레이션 세트 크기가 200GB보다 큰 경우 추출 프로세스에서 자동으로 사전 복사 기능을 사용합니다. azcopy.config 파일은 crx-quickstart/cloud-migration/ 디렉토리에 생성됩니다. CTT 버전 2.0.16 이상을 사용하는 경우에는 사전 복사 설정을 수동으로 수행할 필요가 없습니다.
 
-* 소스 AEM 버전은 6.3 - 6.5여야 합니다.
+* Source AEM 버전은 6.3 - 6.5여야 합니다.
 
-* 소스 AEM 데이터 저장소가 Amazon S3 또는 Azure Blob 저장소를 사용하도록 구성되었습니다. 자세한 내용은 [AEM 6에서 노드 저장소 및 데이터 저장소 구성](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html).
+* Source AEM의 데이터 저장소가 Amazon S3 또는 Azure Blob 저장소를 사용하도록 구성되었습니다. 자세한 내용은 [AEM에서 노드 저장소 및 데이터 저장소 구성](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html)을 참조하세요.
 
 * 각 마이그레이션 세트는 전체 데이터 저장소를 복제하므로 단일 마이그레이션 세트만 사용해야 합니다.
 
-* 설치하려면 액세스 권한이 필요합니다. [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) 소스 AEM 인스턴스를 실행하는 인스턴스(또는 VM)에서
+* 원본 AEM 인스턴스를 실행하는 인스턴스(또는 VM)에 [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)을(를) 설치하려면 액세스 권한이 필요합니다.
 
-* 데이터 저장소 가비지 수집이 소스에서 이전 7일 내에 실행되었습니다. 자세한 내용은 [데이터 저장소 가비지 수집](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection).
+* 데이터 저장소 가비지 수집이 소스에서 이전 7일 내에 실행되었습니다. 자세한 내용은 [데이터 저장소 가비지 수집](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection)을 참조하십시오.
 
 ### 소스 AEM 인스턴스가 Amazon S3 또는 Azure Blob 저장 공간 데이터 저장소를 사용하도록 구성된 경우 추가 고려 사항 {#additional-considerations-amazons3-azure}
 
-* Amazon S3 및 Azure Blob Storage에서 데이터를 전송하는 것과 관련된 비용이 있습니다. 전송 비용은 기존 저장소 컨테이너의 총 데이터 양(AEM에서 참조되었는지 여부)과 상대적입니다. 다음을 참조하십시오 [Amazon](https://aws.amazon.com/s3/pricing/) 및 [Azure Blob 저장소](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) 을 참조하십시오.
+* Amazon S3 및 Azure Blob Storage에서 데이터를 전송하는 것과 관련된 비용이 있습니다. 전송 비용은 기존 저장소 컨테이너의 총 데이터 양(AEM에서 참조되었는지 여부)과 상대적입니다. 자세한 내용은 [Amazon S3](https://aws.amazon.com/s3/pricing/) 및 [Azure Blob 저장소](https://azure.microsoft.com/en-us/pricing/details/bandwidth/)를 참조하세요.
 
 * 기존 소스 Amazon S3 버킷에 대한 액세스 키 및 비밀 키 쌍 또는 기존 소스 Azure Blob 스토리지 컨테이너에 대한 SAS URI가 필요합니다(읽기 전용 액세스는 가능).
 
 ### 소스 AEM 인스턴스가 파일 데이터 저장소를 사용하도록 구성된 경우 추가 고려 사항 {#additional-considerations-aem-instance-filedatastore}
 
-* 로컬 시스템의 사용 가능한 공간은 소스 데이터 저장소의 1/256 크기보다 엄격히 커야 합니다. 예를 들어 데이터 저장소의 크기가 3테라바이트이면 11.72GB보다 큰 사용 가능한 공간이 `crx-quickstart/cloud-migration` AzCopy가 작동하도록 소스에 있는 폴더입니다. 최소한 소스 시스템의 여유 공간은 1GB여야 합니다. 사용 가능한 공간은 다음을 사용하여 얻을 수 있습니다. `df -h` linux® 인스턴스의 명령 및 Windows 인스턴스의 dir 명령
+* 로컬 시스템의 사용 가능한 공간은 소스 데이터 저장소의 1/256 크기보다 엄격히 커야 합니다. 예를 들어 데이터 저장소의 크기가 3테라바이트이면 AzCopy가 작동하려면 소스의 `crx-quickstart/cloud-migration` 폴더에 11.72GB보다 큰 사용 가능한 공간이 있어야 합니다. 최소한 소스 시스템의 여유 공간은 1GB여야 합니다. Linux® 인스턴스에서는 `df -h` 명령을 사용하고 Windows 인스턴스에서는 dir 명령을 사용하여 사용 가능한 공간을 확보할 수 있습니다.
 
 * AzCopy를 활성화한 상태로 추출을 실행할 때마다 전체 파일 데이터 저장소가 병합되고 클라우드 마이그레이션 컨테이너에 복사됩니다. 마이그레이션 세트가 데이터 저장소의 크기보다 작은 경우 AzCopy 추출이 최적의 접근 방식이 아닙니다.
 
@@ -59,7 +59,7 @@ CTT(콘텐츠 전송 도구)를 사용하여 많은 Blob을 복사하는 데 며
 >[!NOTE]
 >CTT 버전 2.0.16부터 번들을 설치하면 사전 복사 설정이 자동으로 수행됩니다. 또한 마이그레이션 세트 크기가 200GB보다 큰 경우 추출 프로세스에서 자동으로 사전 복사 기능을 사용합니다. azcopy.config 파일은 crx-quickstart/cloud-migration/ 디렉토리에 생성됩니다. 파일의 구성을 수동으로 업데이트하려면 아래 섹션을 검토하십시오.
 
-이 섹션을 따라 수행하여 AzCopy를 콘텐츠 전송 도구 의 사전 복사 단계로 사용하여 콘텐츠를 AEM as a Cloud Service으로 마이그레이션하도록 설정하는 방법을 알아보십시오.
+이 섹션을 따라 수행하여 컨텐츠 전송 도구로 AzCopy를 사전 복사 단계로 사용하여 컨텐츠를 AEM as a Cloud Service으로 마이그레이션하도록 설정하는 방법을 알아보십시오.
 
 ### 0. 데이터 저장소에 있는 모든 컨텐츠의 총 크기 결정 {#determine-total-size}
 
@@ -69,7 +69,7 @@ CTT(콘텐츠 전송 도구)를 사용하여 많은 Blob을 복사하는 데 며
 
 #### Azure Blob 저장소 데이터 저장소 {#azure-blob-storage}
 
-Azure 포털의 기존 컨테이너 속성 페이지에서 **크기 계산** 컨테이너에 있는 모든 콘텐츠의 크기를 결정하는 단추입니다. 예:
+Azure 포털의 기존 컨테이너 속성 페이지에서 **크기 계산** 단추를 사용하여 컨테이너에 있는 모든 콘텐츠의 크기를 결정합니다. 예:
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
@@ -83,16 +83,16 @@ Azure 포털의 기존 컨테이너 속성 페이지에서 **크기 계산** 컨
 #### 파일 데이터 저장소 {#file-data-store-determine-size}
 
 * Mac, UNIX® 시스템의 경우 데이터 저장소 디렉토리에서 du 명령을 실행하여 해당 크기를 가져옵니다.
-  `du -sh [path to datastore on the instance]`. 예를 들어 데이터 저장소가에 있는 경우 `/mnt/author/crx-quickstart/repository/datastore`, 다음 명령은 해당 크기를 가져옵니다. `du -sh /mnt/author/crx-quickstart/repository/datastore`.
+  `du -sh [path to datastore on the instance]`. 예를 들어 데이터 저장소가 `/mnt/author/crx-quickstart/repository/datastore`에 있으면 다음 명령을 사용하여 해당 크기를 가져옵니다. `du -sh /mnt/author/crx-quickstart/repository/datastore`.
 
 * Windows의 경우 데이터 저장소 디렉토리에서 dir 명령을 사용하여 해당 크기를 가져옵니다.
   `dir /a/s [location of datastore]`
 
 ### 1. AzCopy 설치 {#install-azcopy}
 
-[AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) 는 Microsoft에서 제공하는 명령줄 도구로서® 이 기능을 활성화하려면 소스 인스턴스에서 사용할 수 있어야 합니다.
+[AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)은(는) Microsoft®에서 제공하는 명령줄 도구이며 이 기능을 사용하려면 원본 인스턴스에서 사용할 수 있어야 합니다.
 
-즉, Linux® x86-64 바이너리를 [AzCopy 문서 페이지](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) /usr/bin과 같은 위치에 tar을 해제합니다.
+즉, [AzCopy 문서 페이지](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)에서 Linux® x86-64 바이너리를 다운로드하고 /usr/bin과 같은 위치로 자르기를 해제합니다.
 
 >[!IMPORTANT]
 >나중 단계에서 이진에 대한 전체 경로가 필요하므로 이진의 위치를 기록해 두십시오.
@@ -103,12 +103,12 @@ Azure 포털의 기존 컨테이너 속성 페이지에서 **크기 계산** 컨
 >가장 최근에 릴리스된 CTT 버전을 사용해야 합니다.
 
 Amazon S3, Azure Blob Storage 및 파일 데이터 저장소에 대한 AzCopy 지원이 최신 CTT 릴리스에 포함되어 있습니다.
-에서 CTT의 최신 릴리스를 다운로드할 수 있습니다. [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 포털.
+[소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 포털에서 최신 CTT 릴리스를 다운로드할 수 있습니다.
 버전 2.0.0 이상만 지원되며 최신 버전을 사용하는 것이 좋습니다.
 
 ### 3. azcopy.config 파일 구성 {#configure-azcopy-config-file}
 
-소스 AEM 인스턴스의 `crx-quickstart/cloud-migration`, 라는 파일을 만듭니다. `azcopy.config`.
+원본 AEM 인스턴스의 `crx-quickstart/cloud-migration`에서 `azcopy.config` 파일을 만듭니다.
 
 >[!NOTE]
 >이 구성 파일의 내용은 소스 AEM 인스턴스가 Azure 또는 Amazon S3 데이터 저장소를 사용하는지 또는 파일 데이터 저장소를 사용하는지에 따라 다릅니다.
@@ -144,7 +144,7 @@ s3SecretKey=--REDACTED--
 
 #### 파일 데이터 저장소 {#file-data-store-azcopy-config}
 
-사용자 `azcopy.config` 파일에는 파일 데이터 저장소의 위치를 가리키는 선택적 repository.home 속성과 azCopyPath 속성이 포함되어야 합니다. 인스턴스에 올바른 값을 사용하십시오.
+`azcopy.config` 파일에는 azCopyPath 속성과 파일 데이터 저장소의 위치를 가리키는 선택적 repository.home 속성이 있어야 합니다. 인스턴스에 올바른 값을 사용하십시오.
 파일 데이터 저장소
 
 ```
@@ -154,7 +154,7 @@ repository.home=/mnt/crx/author/crx-quickstart/repository/datastore
 
 azCopyPath 속성은 azCopy 명령줄 도구가 소스 AEM 인스턴스에 설치된 위치의 전체 경로를 포함해야 합니다. azCopyPath 속성이 누락된 경우 Blob 사전 복사 단계가 수행되지 않습니다.
 
-If `repository.home` 속성이 azcopy.config에 없으면 기본 데이터 저장소 위치가 누락됩니다. `/mnt/crx/author/crx-quickstart/repository/datastore` 사전 복사를 수행하는 데 사용됩니다.
+`repository.home` 속성이 azcopy.config에 없으면 기본 데이터 저장소 위치 `/mnt/crx/author/crx-quickstart/repository/datastore`을(를) 사용하여 사전 복사를 수행합니다.
 
 ### 4. AzCopy로 추출 {#extracting-azcopy}
 
@@ -164,7 +164,7 @@ If `repository.home` 속성이 azcopy.config에 없으면 기본 데이터 저�
 >AzCopy가 올바르게 구성되지 않으면 로그에 다음 메시지가 표시됩니다.
 >`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
 
-1. CTT UI에서 추출을 시작합니다. 다음을 참조하십시오 [컨텐츠 전송 도구 시작하기](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) 및 [추출 프로세스](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) 을 참조하십시오.
+1. CTT UI에서 추출을 시작합니다. 자세한 내용은 [콘텐츠 전송 도구 시작하기](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) 및 [추출 프로세스](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)를 참조하십시오.
 
 1. 추출 로그에 다음 줄이 인쇄되었는지 확인합니다.
 
@@ -174,7 +174,7 @@ c.a.g.s.m.commons.ContentExtractor - *************** Beginning AzCopy Pre-Copy p
 
 축하합니다! 이 로그 항목은 구성이 유효한 것으로 간주되었으며 AzCopy가 소스 컨테이너의 모든 블롭을 마이그레이션 컨테이너로 복사하고 있음을 의미합니다.
 
-AzCopy의 로그 항목은 추출 로그에 표시되며, 접두사로 c.a.g.s.m.c.azcopy.AzCopyBlobPreCopy - [AzCopy 사전 복사]
+AzCopy의 로그 항목은 추출 로그에 나타나며 앞에 c.a.g.s.m.c.azcopy.AzCopyBlobPreCopy - [AzCopy 사전 복사]가 붙습니다.
 
 >[!CAUTION]
 >
@@ -194,7 +194,7 @@ AzCopy에 문제가 있으면 추출이 즉시 실패하고 추출 로그에 실
 오류 전에 복사된 모든 블롭은 후속 실행 시 AzCopy에 의해 자동으로 건너뛰므로 다시 복사할 필요가 없습니다.
 
 >[!TIP]
->이제 추출 성공 직후 수집이 자동으로 시작되도록 예약할 수 있습니다. 다음을 참조하십시오 [Target에 컨텐츠 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) 추가 정보.
+>이제 추출 성공 직후 수집이 자동으로 시작되도록 예약할 수 있습니다. 자세한 내용은 [Target으로 콘텐츠 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)을 참조하십시오.
 
 #### 파일 데이터 저장소용 {#file-data-store-extract}
 
@@ -203,11 +203,13 @@ AzCopy에 문제가 있으면 추출이 즉시 실패하고 추출 로그에 실
 
 ### 5. AzCopy로 수집 {#ingesting-azcopy}
 
-다음을 참조하십시오 [Target에 컨텐츠 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) - &quot;새 수집&quot; 대화 상자에서 AzCopy(사전 복사) 사용 여부에 대한 지침을 포함하여 Cloud Acceleration Manager(CAM)에서 대상으로 콘텐츠를 수집하는 방법에 대한 일반적인 정보입니다.
+&quot;새 수집&quot; 대화 상자에서 AzCopy(사전 복사) 사용 여부에 대한 지침을 포함하여 Cloud Acceleration Manager(CAM)에서 대상으로 컨텐츠를 수집하는 방법에 대한 일반 정보는 [Ingesting Content ingesting](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)을 참조하십시오.
 
-수집 중에 AzCopy를 활용하려면 Adobe 시 AEM as a Cloud Service 버전(버전 2021.6.5561 이상)을 사용해야 합니다.
+수집 중에 AzCopy를 활용하려면 Adobe 시 버전 2021.6.5561 이상의 AEM as a Cloud Service 버전을 사용하고 있어야 합니다.
 
-진행 상황을 확인할 수 있도록 Cloud Acceleration Manager의 &quot;수집 작업&quot; 목록 및 수집의 로그를 참조하십시오. 성공한 AzCopy 작업과 관련된 로그 항목은 다음과 같이 표시됩니다(일부 차이점 허용). 로그를 가끔 확인하면 문제를 조기에 경고하고 모든 문제에 대한 빠른 해결 방법을 찾는 데 도움이 될 수 있습니다.
+진행 상황을 확인할 수 있도록 Cloud Acceleration Manager의 &quot;수집 작업&quot; 목록 및 수집 로그를 참조하십시오. 와 관련된 로그 항목
+성공한 AzCopy 작업은 다음과 같이 표시됩니다(일부 차이 허용). 로그를 가끔 확인하면 문제가 발생할 수 있습니다.
+일찍이 모든 문제에 대한 빠른 해결책을 찾는 데 도움이 됩니다.
 
 ```
 *************** Beginning AzCopy pre-copy phase ***************
@@ -237,4 +239,4 @@ Final Job Status: CompletedWithSkipped
 
 ## 다음 단계 {#whats-next}
 
-AEM 이제 컨텐츠 전송 활동의 추출 및 수집 단계를 가속화하여 컨텐츠를 as a Cloud Service으로 이동하는 대용량 컨텐츠 저장소 처리에 대해 배웠습니다. 이제 콘텐츠 전송 도구를 사용하여 추출 프로세스를 배울 준비가 되었습니다. 다음을 참조하십시오 [컨텐츠 전송 도구에서 소스에서 컨텐츠 추출](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) 따라서 콘텐츠 전송 도구에서 마이그레이션 세트를 추출하는 방법을 배울 수 있습니다.
+이제 AEM as a Cloud Service으로 콘텐츠를 이동하기 위한 콘텐츠 전송 활동의 추출 및 수집 단계 속도를 높이기 위해 대규모 콘텐츠 저장소 처리에 대해 배웠습니다. 이제 콘텐츠 전송 도구를 사용하여 추출 프로세스를 배울 준비가 되었습니다. 콘텐츠 전송 도구에서 마이그레이션 세트를 추출하는 방법을 배울 수 있도록 [콘텐츠 전송 도구에서 Source에서 콘텐츠 추출](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)을 참조하십시오.

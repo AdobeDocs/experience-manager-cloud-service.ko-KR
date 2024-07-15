@@ -1,5 +1,5 @@
 ---
-title: AEM Assets as a 구성 [!DNL Cloud Service] Brand Portal 사용
+title: Brand Portal을 사용하여 AEM Assets as a [!DNL Cloud Service]  구성
 description: Brand Portal을 사용하여 AEM Assets을 구성하는 방법에 대해 알아봅니다. 구성을 사용하면 승인된 브랜드 자산을 AEM 인스턴스에서 Brand Portal으로 게시하고 Brand Portal 사용자에게 배포할 수 있습니다.
 contentOwner: AK
 feature: Brand Portal, Asset Distribution, Configuration
@@ -19,36 +19,36 @@ ht-degree: 9%
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=ko) |
 | AEM as a Cloud Service | 이 문서 |
 
-Adobe Experience Manager Assets Brand Portal을 구성하면 Adobe Experience Manager Assets에서 승인된 브랜드 자산을 as a로 게시할 수 있습니다 [!DNL Cloud Service] 인스턴스를 Brand Portal에 배포하고 Brand Portal 사용자에게 배포합니다.
+Adobe Experience Manager Assets Brand Portal을 구성하면 승인된 브랜드 자산을 Adobe Experience Manager Assets에서 [!DNL Cloud Service] 인스턴스로 Brand Portal에 게시하고 Brand Portal 사용자에게 배포할 수 있습니다.
 
-## Cloud Manager를 사용하여 Brand Portal 활성화 {#activate-brand-portal}
+## Cloud Manager을 사용하여 Brand Portal 활성화 {#activate-brand-portal}
 
-Cloud Manager 사용자는 Experience Manager Assets as a용 Brand Portal을 활성화합니다 [!DNL Cloud Service] 인스턴스. 활성화 워크플로우는 백엔드에 필요한 구성(인증 토큰, IMS 구성 및 Brand Portal 클라우드 서비스)을 만들고 Cloud Manager의 Brand Portal 테넌트 상태를 반영합니다. Brand Portal을 활성화하면 Experience Manager Assets 사용자가 에셋을 Brand Portal에 게시하고 Brand Portal 사용자에게 배포할 수 있습니다.
+Cloud Manager 사용자는 Experience Manager Assets에 대한 Brand Portal을 [!DNL Cloud Service] 인스턴스로 활성화합니다. 활성화 워크플로우는 백엔드에 필요한 구성(인증 토큰, IMS 구성 및 Brand Portal 클라우드 서비스)을 만들고 Cloud Manager의 Brand Portal 테넌트의 상태를 반영합니다. Brand Portal을 활성화하면 Experience Manager Assets 사용자가 에셋을 Brand Portal에 게시하고 Brand Portal 사용자에게 배포할 수 있습니다.
 
 **전제 조건**
 
-Experience Manager Assets as a에서 Brand Portal을 활성화하려면 다음이 필요합니다. [!DNL Cloud Service] 인스턴스:
+Experience Manager Assets에서 Brand Portal을 [!DNL Cloud Service] 인스턴스로 활성화하려면 다음이 필요합니다.
 
-* 실행 중인 Experience Manager Assets as a [!DNL Cloud Service] 인스턴스.
-* Cloud Manager에 대한 액세스 권한이 있고 Cloud Manager 제품의 프로필에 할당된 사용자입니다. 다음을 참조하십시오 [Cloud Manager 액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) 추가 정보.
+* 실행 중인 Experience Manager Assets을 [!DNL Cloud Service] 인스턴스로 만듭니다.
+* Cloud Manager에 대한 액세스 권한이 있고 Cloud Manager 제품의 프로필에 할당된 사용자입니다. 자세한 내용은 [Cloud Manager 액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager)를 참조하십시오.
 
 >[!NOTE]
 >
->Experience Manager Assets as a에는 구성된 프로덕션 환경이 필요합니다. [!DNL Cloud Service] Brand Portal 테넌트와 연결할 인스턴스입니다.
+>Brand Portal 테넌트와 연결하려면 Experience Manager Assets as a [!DNL Cloud Service] 인스턴스에 구성된 프로덕션 환경이 필요합니다.
 
-**Brand Portal 활성화 단계**
+Brand Portal을 활성화하는 **단계**
 
-Experience Manager Assets as a에 대한 프로덕션 환경을 만드는 동안 Brand Portal을 활성화할 수 있습니다 [!DNL Cloud Service] 예 또는 별도입니다. 환경이 이미 생성되었으며 이제 Brand Portal을 활성화해야 한다고 가정해 보겠습니다.
+Brand Portal을 [!DNL Cloud Service] 인스턴스로서 또는 별도로 만드는 동안 Experience Manager Assets의 프로덕션 환경을 활성화할 수 있습니다. 환경이 이미 생성되었으며 이제 Brand Portal을 활성화해야 한다고 가정해 보겠습니다.
 
-1. Adobe Cloud Manager에 로그인하여 다음으로 이동 **[!UICONTROL 환경]**.
+1. Cloud Manager Adobe에 로그인한 다음 **[!UICONTROL 환경]**(으)로 이동합니다.
 
-   다음 **[!UICONTROL 환경]** 페이지에는 모든 기존 환경의 목록이 표시됩니다.
+   **[!UICONTROL 환경]** 페이지에 모든 기존 환경의 목록이 표시됩니다.
 
 1. 목록에서 환경을 하나씩 선택하여 환경 세부 정보를 확인합니다.
 
-   Brand Portal은 사용 가능한 환경 중 하나에 대한 권한이 있으며 **[!UICONTROL 환경 정보]**.
+   Brand Portal은 사용 가능한 환경 중 하나에 대한 권한이 있으며 **[!UICONTROL 환경 정보]**&#x200B;에 반영됩니다.
 
-   Brand Portal과 연관된 환경을 찾으면 **[!UICONTROL Brand Portal 활성화]** 활성화 워크플로를 시작하는 단추입니다.
+   Brand Portal과 연결된 환경을 찾으면 **[!UICONTROL Brand Portal 활성화]** 단추를 클릭하여 활성화 워크플로를 시작합니다.
 
    ![Brand Portal 활성화](assets/create-environment4.png)
 
@@ -59,93 +59,93 @@ Experience Manager Assets as a에 대한 프로덕션 환경을 만드는 동안
 
 >[!NOTE]
 >
->Brand Portal은 as a Experience Manager Assets과 동일한 IMS 조직에서 활성화되어야 합니다. [!DNL Cloud Service] 인스턴스.
+>Brand Portal은 [!DNL Cloud Service] 인스턴스로 Experience Manager Assets과 동일한 IMS 조직에서 활성화되어야 합니다.
 >
->기존 Brand Portal 클라우드 구성이 있는 경우([Adobe Developer 콘솔을 사용하여 수동으로 구성](#manual-configuration)) IMS 조직(org1-existing) 및 Experience Manager Assets as a [!DNL Cloud Service] 인스턴스가 다른 IMS 조직(org2-new)에 대해 구성되었습니다. Cloud Manager에서 Brand Portal을 활성화하면 Brand Portal IMS 조직이 로 재설정됩니다. `org2-new`. 에 수동으로 구성된 클라우드 구성이지만 `org1-existing` 은 Experience Manager Assets 작성자 인스턴스에 표시되지만 Cloud Manager에서 Brand Portal을 활성화한 후에는 더 이상 사용되지 않습니다.
+>IMS 조직(org1-existing)에 대한 기존 Brand Portal 클라우드 구성([Adobe Developer Console을 사용하여 수동으로 구성](#manual-configuration))이 있고 다른 IMS 조직(org2-new)에 대해 Experience Manager Assets as a [!DNL Cloud Service] 인스턴스가 구성된 경우 Cloud Manager에서 Brand Portal을 활성화하면 Brand Portal IMS 조직이 `org2-new`(으)로 재설정됩니다. `org1-existing`에 수동으로 구성된 클라우드 구성이 Experience Manager Assets 작성자 인스턴스에 표시되지만 Cloud Manager에서 Brand Portal을 활성화한 후에는 더 이상 사용되지 않습니다.
 >
->기존 Brand Portal 클라우드 구성 및 Experience Manager Assets as a [!DNL Cloud Service] 인스턴스가 동일한 IMS 조직(org1)을 사용하고 있습니다. Cloud Manager에서 Brand Portal만 활성화하면 됩니다.
+>기존 Brand Portal 클라우드 구성과 [!DNL Cloud Service] 인스턴스로서의 Experience Manager Assets이 동일한 IMS 조직(org1)을 사용하는 경우 Cloud Manager에서 Brand Portal만 활성화하면 됩니다.
 >
 >자동 생성된 설정은 수정하지 마십시오.
 
-**참조:**:
+**참고 항목**:
 
-* [Experience Manager Assets에서 as a Cloud Service으로 사용자 및 역할 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
+* [Experience Manager Assetsas a Cloud Service 에서 사용자 및 역할 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
 
 * [Cloud Manager에서 환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments)
 
 
 **Brand Portal 테넌트에 로그인**:
 
-Cloud Manager에서 Brand Portal 테넌트를 활성화한 후 Admin Console에서 또는 테넌트 URL을 직접 사용하여 Brand Portal에 로그인할 수 있습니다.
+Cloud Manager에서 Brand Portal 테넌트를 활성화한 후 Admin Console에서 또는 테넌트 URL을 사용하여 직접 Brand Portal에 로그인할 수 있습니다.
 
-Brand Portal 테넌트의 기본 URL은 다음과 같습니다. `https://<tenant-id>.brand-portal.adobe.com/`.
+Brand Portal 테넌트의 기본 URL: `https://<tenant-id>.brand-portal.adobe.com/`.
 
 여기서 테넌트 id는 IMS 조직입니다.
 
 
 Brand Portal URL을 잘 모를 경우 다음 단계를 수행하십시오.
 
-1. 다음으로 로그인 [Admin Console](https://adminconsole.adobe.com/) 다음 위치로 이동 **[!UICONTROL 제품]**.
-1. 왼쪽 패널에서 을 선택합니다. **[!UICONTROL ADOBE EXPERIENCE MANAGER BRAND PORTAL - BRAND PORTAL]**.
-1. 클릭 **[!UICONTROL Brand Portal으로 이동]** 브라우저에서 Brand Portal을 직접 엽니다.
+1. [Admin Console](https://adminconsole.adobe.com/)에 로그인하여 **[!UICONTROL 제품]**(으)로 이동합니다.
+1. 왼쪽 패널에서 **[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**&#x200B;을(를) 선택합니다.
+1. 브라우저에서 Brand Portal을 직접 열려면 **[!UICONTROL Brand Portal으로 이동]**&#x200B;을 클릭하세요.
 
-   또는 다음에서 Brand Portal 테넌트 URL 복사 **[!UICONTROL Brand Portal으로 이동]** 를 연결한 후 브라우저에 붙여넣어 Brand Portal 인터페이스를 엽니다.
+   또는 **[!UICONTROL Brand Portal으로 이동]** 링크에서 Brand Portal 테넌트 URL을 복사하여 브라우저에 붙여 넣어 Brand Portal 인터페이스를 엽니다.
 
    ![Brand Portal 액세스](assets/access-bp-on-cloud.png)
 
 
 **연결 테스트**
 
-다음 단계를 수행하여 Experience Manager Assets as a 간 연결을 확인합니다 [!DNL Cloud Service] 인스턴스 및 Brand Portal 테넌트:
+Experience Manager Assets as a [!DNL Cloud Service] 인스턴스와 Brand Portal 테넌트 간의 연결을 확인하려면 다음 단계를 수행하십시오.
 
 1. Experience Manager Assets에 로그인합니다.
 
-1. 다음에서 **도구** 패널, 다음으로 이동 **[!UICONTROL 배포]** > **[!UICONTROL 배포]**.
+1. **도구** 패널에서 **[!UICONTROL 배포]** > **[!UICONTROL 배포]**(으)로 이동합니다.
 
    ![배포 옵션으로 이동](assets/test-bpconfig1.png)
 
-   Brand Portal 배포 에이전트(**[!UICONTROL bpdistributionagent0]**)은 아래에 생성됩니다. **[!UICONTROL Brand Portal에 게시]**.
+   Brand Portal 배포 에이전트(**[!UICONTROL bpdistributionagent0]**)가 **[!UICONTROL Publish to Brand Portal]**&#x200B;에 만들어졌습니다.
 
-   ![분배 에이전트 만들기](assets/test-bpconfig2.png)
+   ![배포 에이전트 만들기](assets/test-bpconfig2.png)
 
-1. 클릭 **[!UICONTROL Brand Portal에 게시]** 배포 에이전트를 엽니다.
+1. 배포 에이전트를 열려면 **[!UICONTROL Brand Portal으로 Publish]**&#x200B;를 클릭하십시오.
 
-   아래에서 분배 큐를 볼 수 있습니다. **[!UICONTROL 상태]** 탭.
+   **[!UICONTROL 상태]** 탭에서 배포 큐를 볼 수 있습니다.
 
    분배 에이전트에는 두 개의 큐가 있습니다.
-   * **processing-queue**: Brand Portal에 자산 배포용.
+   * **processing-queue**: Brand Portal에 자산 배포용
 
-   * **error-queue**: 배포가 실패한 에셋입니다.
+   * **error-queue**: 배포가 실패한 자산에 대한.
 
    >[!NOTE]
    >
-   >실패를 검토하고 다음을 지우는 것이 좋습니다. **error-queue** 정기적으로
+   >오류를 검토하고 주기적으로 **오류 큐**&#x200B;를 지우는 것이 좋습니다.
 
    ![자산 배포에 대한 처리 큐](assets/test-bpconfig3.png)
 
-1. Experience Manager Assets as a 간 연결을 확인하려면 [!DNL Cloud Service] Brand Portal에서 **[!UICONTROL 연결 테스트]** 아이콘.
+1. Experience Manager Assets as a [!DNL Cloud Service]와(과) Brand Portal 간의 연결을 확인하려면 **[!UICONTROL 연결 테스트]** 아이콘을 클릭합니다.
 
-   ![AEM과 Brand Portal 간 연결 확인](assets/test-bpconfig4.png)
+   ![AEM과 Brand Portal 간의 연결 확인](assets/test-bpconfig4.png)
 
-   다음과 같은 메시지가 나타납니다. *테스트 패키지가 정상적으로 전달되었습니다.*.
+   *테스트 패키지가 배달되었습니다*.
 
    >[!NOTE]
    >
    >자산 분배(큐에서 실행)가 실패하는 원인이 될 수 있으므로 분배 에이전트를 비활성화하지 마십시오.
 
-Experience Manager Assets as a 간 연결을 확인하려면 [!DNL Cloud Service] 인스턴스 및 Brand Portal 테넌트는 Experience Manager Assets에서 Brand Portal으로 자산을 게시합니다. 연결에 성공하면 게시된 에셋이 Brand Portal 인터페이스에 표시됩니다.
+Experience Manager Assets as a [!DNL Cloud Service] 인스턴스와 Brand Portal 테넌트 간의 연결을 확인하려면 Experience Manager Assets에서 Brand Portal으로 자산을 게시합니다. 연결에 성공하면 게시된 에셋이 Brand Portal 인터페이스에 표시됩니다.
 
 
 이제 다음을 수행할 수 있습니다.
 
-* [Experience Manager Assets에서 Brand Portal으로 자산 게시](publish-to-brand-portal.md)
-* [Experience Manager Assets에서 Brand Portal으로 폴더 게시](publish-to-brand-portal.md#publish-folders-to-brand-portal)
-* [Experience Manager Assets에서 Brand Portal으로 컬렉션 게시](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* [Brand Portal에서 Experience Manager Assets으로 자산 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ko-KR) - Brand Portal의 에셋 소싱
+* [Experience Manager Assets에서 Brand Portal으로 Publish 에셋](publish-to-brand-portal.md)
+* [Experience Manager Assets에서 Brand Portal으로 Publish 폴더](publish-to-brand-portal.md#publish-folders-to-brand-portal)
+* [Experience Manager Assets에서 Brand Portal으로 Publish 컬렉션](publish-to-brand-portal.md#publish-collections-to-brand-portal)
+* [Brand Portal에서 Experience Manager Assets으로 Publish 자산](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ko-KR) - Brand Portal의 자산 소싱
 * [사전 설정, 스키마 및 패싯을 Brand Portal에 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [태그를 Brand Portal에 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-다음을 참조하십시오 [Brand Portal 설명서](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) 추가 정보.
+자세한 내용은 [Brand Portal 설명서](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html)를 참조하세요.
 
 **배포 로그**
 
@@ -153,8 +153,8 @@ Experience Manager Assets as a 간 연결을 확인하려면 [!DNL Cloud Service
 
 이제 Experience Manager Assets에서 Brand Portal으로 자산을 게시하고 로그를 확인합니다.
 
-1. 에 표시된 대로 1~4의 단계를 수행합니다. **연결 테스트** 섹션을 참조하고 분배 에이전트 페이지로 이동합니다.
-1. 클릭 **[!UICONTROL 로그]** 처리 및 오류 로그를 확인합니다.
+1. **연결 테스트** 섹션에 표시된 대로 1에서 4까지의 단계를 수행하고 분배 에이전트 페이지로 이동합니다.
+1. 처리 및 오류 로그를 보려면 **[!UICONTROL 로그]**&#x200B;를 클릭하십시오.
 
    ![처리 및 오류 로그](assets/test-bpconfig5.png)
 
@@ -181,22 +181,22 @@ Experience Manager Assets as a 간 연결을 확인하려면 [!DNL Cloud Service
 >
 >상위 폴더가 Brand Portal에 없거나 Experience Manager Assets에서 수정된 경우 추가 요청이 생성됩니다.
 
-Experience Manager Assets as a에서 Brand Portal을 활성화하는 자동화 워크플로와 함께 [!DNL Cloud Service]로 Experience Manager Assets을 수동으로 구성하는 다른 방법이 있습니다. [!DNL Cloud Service] 더 이상 권장되지 않는 Adobe Developer 콘솔을 사용하는 Brand Portal 사용.
+Experience Manager Assets에서 Brand Portal을 [!DNL Cloud Service](으)로 활성화하는 자동화 워크플로와 함께, Adobe Developer Console을 사용하여 Brand Portal을 사용하여 Experience Manager Assets을 [!DNL Cloud Service](으)로 수동으로 구성하는 다른 방법이 있습니다. 이는 더 이상 권장되지 않습니다.
 
 >[!NOTE]
 >
 >Brand Portal 테넌트를 활성화하는 동안 문제가 발생하는 경우 고객 지원 센터에 문의하십시오.
 
-## Adobe Developer 콘솔을 사용한 수동 구성 {#manual-configuration}
+## Adobe Developer Console을 사용한 수동 구성 {#manual-configuration}
 
 >[!NOTE]
 >
 > 2024년 6월 이후부터는 새 JWT 자격 증명을 만들 수 없습니다. 앞으로 OAuth 자격 증명만 생성됩니다.
-> 더 보기 [OAuth 구성 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a).
+> 자세한 내용은 [OAuth 구성 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a)를 참조하십시오.
 
-다음 섹션에서는 Experience Manager Assets as a를 수동으로 구성하는 방법을 설명합니다. [!DNL Cloud Service] Adobe Developer 콘솔을 사용하는 Brand Portal 사용.
+다음 섹션에서는 Adobe Developer Console을 사용하여 Brand Portal을 사용하여 Experience Manager Assets as a [!DNL Cloud Service]을(를) 수동으로 구성하는 방법에 대해 설명합니다.
 
-이전에는 Experience Manager Assets as a [!DNL Cloud Service] Brand Portal 테넌트의 인증을 위해 Adobe IMS(Identity Management Services) 계정 토큰을 조달하는 Adobe Developer 콘솔을 통해 Brand Portal으로 수동으로 구성되었습니다. Experience Manager Assets 및 Adobe Developer 콘솔 모두에서 구성이 필요합니다.
+이전에는 Experience Manager Assets as a [!DNL Cloud Service]이(가) Brand Portal 테넌트의 인증을 위해 Adobe IMS(Identity Management 서비스) 계정 토큰을 조달하는 Adobe Developer Console을 통해 Brand Portal으로 수동으로 구성되었습니다. Experience Manager Assets 및 Adobe Developer Console 모두에서 구성이 필요합니다.
 
 <!--1. In Experience Manager Assets, create an IMS account and generate a public key (certificate).-->
 <!--1. Under the project, configure an API using the public key to create a service account connection.
@@ -208,13 +208,13 @@ Experience Manager Assets as a에서 Brand Portal을 활성화하는 자동화 �
 
 >[!NOTE]
 >
->로서의 Experience Manager Assets [!DNL Cloud Service] 인스턴스는 한 개의 Brand Portal 테넌트로만 구성해야 합니다.
+>Experience Manager Assets as a [!DNL Cloud Service] 인스턴스는 하나의 Brand Portal 테넌트로만 구성해야 합니다.
 
 **전제 조건**
 
 Brand Portal을 사용하여 Experience Manager Assets을 구성하려면 다음 항목이 필요합니다.
 
-* 실행 중인 Experience Manager Assets as a [!DNL Cloud Service] 인스턴스
+* 실행 중인 Experience Manager Assets을 [!DNL Cloud Service] 인스턴스로
 * Brand Portal 테넌트 URL
 * Brand Portal 테넌트의 IMS 조직에 대한 시스템 관리자 권한이 있는 사용자
 
@@ -222,7 +222,7 @@ Brand Portal을 사용하여 Experience Manager Assets을 구성하려면 다음
 
 지정된 시퀀스에서 다음 단계를 수행하여 Brand Portal을 사용하여 Experience Manager Assets을 구성합니다.
 
-1. [Adobe Developer 콘솔에서 OAuth 자격 증명 구성](#config-oauth)
+1. [Adobe Developer Console에서 OAuth 자격 증명 구성](#config-oauth)
 1. [OAuth를 사용하여 새 Adobe IMS 통합 만들기](#create-ims-account-configuration)
 1. [클라우드 서비스 구성](#configure-cloud-service)
    <!--1. [Obtain public certificate](#public-certificate)-->
@@ -357,13 +357,13 @@ You can now use the client ID (API key), client secret, and JWT payload to [conf
 
 -->
 
-### Adobe Developer 콘솔에서 OAuth 자격 증명 구성 {#config-oauth}
+### Adobe Developer Console에서 OAuth 자격 증명 구성 {#config-oauth}
 
-[Adobe Developer 콘솔에서 OAuth 자격 증명 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#credentials-in-the-developer-console) Brand Portal API를 선택합니다.
+[Adobe Developer Console에서 OAuth 자격 증명을 구성하고](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#credentials-in-the-developer-console) Brand Portal API를 선택합니다.
 
 ### OAuth를 사용하여 새 Adobe IMS 통합 만들기 {#create-ims-account-configuration}
 
-[OAuth를 사용하여 새 Adobe IMS 통합 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration) 그리고 클라우드 솔루션 아래의 드롭다운에서 Brand Portal 를 선택합니다.
+[OAuth를 사용하여 새 Adobe IMS 통합을 만들고](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration) 클라우드 솔루션 아래의 드롭다운에서 Brand Portal을 선택합니다.
 
 <!--
 Ensure that you have performed the following steps:
@@ -408,26 +408,26 @@ Brand Portal 클라우드 서비스를 구성하려면 다음 단계를 수행�
 
 1. Experience Manager Assets에 로그인합니다.
 
-1. 다음에서 **도구** 패널, 다음으로 이동 **[!UICONTROL Cloud Service]** > **[!UICONTROL AEM Brand Portal]**.
+1. **Cloud Service** 패널에서 **[!UICONTROL 도구]** > **[!UICONTROL AEM Brand Portal]**(으)로 이동합니다.
 
 1. Brand Portal 구성 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
 1. 구성에 대한 **[!UICONTROL 제목]**&#x200B;을 지정합니다.
 
-   만든 IMS 구성 선택 [ims 계정 구성](#create-ims-account-configuration).
+   [IMS 계정을 구성](#create-ims-account-configuration)하는 동안 만든 IMS 구성을 선택하십시오.
 
-   다음에서 **[!UICONTROL 서비스 URL]** 필드에 Brand Portal 테넌트 URL을 지정합니다.
+   **[!UICONTROL 서비스 URL]** 필드에 Brand Portal 테넌트 URL을 지정하십시오.
 
    ![Brand Portal 구성 대화 상자](assets/create-cloud-service.png)
 
-1. 클릭 **[!UICONTROL 저장 및 닫기]**. 클라우드 구성이 생성됩니다.
+1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다. 클라우드 구성이 생성됩니다.
 
-   Experience Manager Assets as a [!DNL Cloud Service] 이제 인스턴스가 Brand Portal 테넌트로 구성됩니다.
+   이제 Experience Manager Assets as a [!DNL Cloud Service] 인스턴스가 Brand Portal 테넌트로 구성되었습니다.
 
 이제 분배 에이전트를 확인하고 자산을 Brand Portal에 게시하여 구성을 테스트할 수 있습니다.
 
-**허용 목록에 추가하다 보안 미리 보기가 활성화된 경우 SPS의 이그레스 IP**
-에서 Dynamic Media-Scene7을 사용하는 경우 [보안 미리 보기 활성화됨](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) 회사의 경우 Scene7 회사 관리자에게 문의하십시오 [허용 목록에 추가하다 공개 이그레스 IP](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) SPS(Scene7 Publishing System) 플래시 UI를 사용하는 각 지역의 경우.
+SPS에서 보안 IP 미리 보기가 활성화된 경우 **허용 목록에 추가하다**
+한 회사에 대해 [보안 미리 보기가 활성화](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en)된 Dynamic Media-Scene7을 사용하는 경우, 회사 관리자 [SPS(Scene7 Publishing System) 플래시 UI를 사용하는 각 지역의 공개 이그레스 IP](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service)를 Scene7허용 목록에 추가하다 하는 것이 좋습니다.
 이그레스 IP는 다음과 같습니다.
 
 | **지역** | **이그레스 IP** |

@@ -1,6 +1,6 @@
 ---
 title: App Builder 보안
-description: AEM용 App Builder 애플리케이션 보안에 대해 as a Cloud Service으로 알아보십시오.
+description: AEM as a Cloud Service용 App Builder 애플리케이션 보안에 대해 알아봅니다.
 version: Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development

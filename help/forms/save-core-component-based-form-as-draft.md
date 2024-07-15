@@ -14,20 +14,20 @@ ht-degree: 2%
 
 # 핵심 구성 요소 기반 적응형 양식을 초안으로 저장 {#save-af-form}
 
-적응형 양식을 초안으로 저장하는 것은 사용자 효율성과 정확성을 향상시키는 필수적인 기능입니다. 이 기능을 사용하면 진행 상황을 저장하고 나중에 입력한 정보를 손실하지 않고 작업을 완료할 수 있습니다. 제공  `save-as-draft` 옵션은 시간 관리의 유연성을 보장하고, 데이터 손실의 위험을 줄이며, 제출 작업의 정밀도를 유지합니다. 양식을 초안으로 저장하여 나중에 완료할 수 있습니다.
+적응형 양식을 초안으로 저장하는 것은 사용자 효율성과 정확성을 향상시키는 필수적인 기능입니다. 이 기능을 사용하면 진행 상황을 저장하고 나중에 입력한 정보를 손실하지 않고 작업을 완료할 수 있습니다. `save-as-draft` 옵션을 제공하면 시간 관리를 유연하게 하고, 데이터 손실 위험을 줄이고, 제출의 정밀도를 유지할 수 있습니다. 양식을 초안으로 저장하여 나중에 완료할 수 있습니다.
 
 ## 고려 사항
 
 * [환경에 맞는 적응형 Forms 핵심 구성 요소를 활성화합니다.](/help/forms/enable-adaptive-forms-core-components.md)
 
-* 다음을 확인합니다. [핵심 구성 요소가 버전 3.0.24 이상으로 설정되었습니다.](https://github.com/adobe/aem-core-forms-components) 을 클릭하여 이 기능을 사용하십시오.
-* 다음 항목이 있는지 확인합니다. [Azure 스토리지 계정 및 액세스 키](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal) azure 스토리지 계정에 대한 액세스 권한을 부여합니다.
+* 이 기능을 사용하려면 [핵심 구성 요소가 버전 3.0.24 이상으로 설정되어 있는지 확인](https://github.com/adobe/aem-core-forms-components)하십시오.
+* Azure 저장소 계정에 대한 액세스 권한을 부여할 [Azure 저장소 계정과 액세스 키](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal)가 있는지 확인하세요.
 
 ## 적응형 양식을 초안으로 저장
 
-[!DNL Experience Manager Forms] 데이터 통합(data-integration.md)은 다음을 제공합니다 [!DNL Azure] 양식을 와 통합하기 위한 스토리지 구성 [!DNL Azure] 스토리지 서비스. FDM(양식 데이터 모델)을 사용하여 과 상호 작용하는 적응형 Forms을 만들 수 있습니다. [!DNL Azure] 비즈니스 워크플로를 활성화하는 서버입니다.
+[!DNL Experience Manager Forms] 데이터 통합(data-integration.md)은 [!DNL Azure] 저장소 서비스와 양식을 통합하는 [!DNL Azure] 저장소 구성을 제공합니다. 양식 데이터 모델(FDM)을 사용하여 [!DNL Azure] 서버와 상호 작용하여 비즈니스 워크플로를 가능하게 하는 적응형 Forms을 만들 수 있습니다.
 
-양식을 초안으로 저장하려면 Azure 스토리지 계정과 다음에 대한 액세스 권한을 부여할 액세스 키가 있는지 확인하십시오. [!DNL Azure] 저장소 계정입니다. 양식을 초안으로 저장하려면 다음 단계를 수행합니다.
+양식을 초안으로 저장하려면 Azure 저장소 계정 및 [!DNL Azure] 저장소 계정에 대한 액세스 권한을 부여하는 액세스 키가 있는지 확인하세요. 양식을 초안으로 저장하려면 다음 단계를 수행합니다.
 
 1. [스토리지 구성 경로](#create-azure-storage-configuration)
 1. [Forms 포털용 통합 스토리지 커넥터 구성](#configure-usc-forms-portal)
@@ -36,18 +36,18 @@ ht-degree: 2%
 
 ### 1. Azure 스토리지 구성 만들기 {#create-azure-storage-configuration}
 
-Azure 스토리지 계정과 액세스 키가 있으면에서 액세스 권한을 부여합니다. [!DNL Azure] 저장소 계정에서 Azure 저장소 구성을 만들려면 다음 단계를 수행하십시오.
+Azure 저장소 계정과 [!DNL Azure] 저장소 계정에 대한 액세스 권한을 부여하는 액세스 키가 있으면 다음 단계를 수행하여 Azure 저장소 구성을 만드십시오.
 
-1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Azure 스토리지]**.
+1. **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Azure 저장소]**&#x200B;로 이동합니다.
 
-   ![Azure 스토리지 카드 선택](/help/forms/assets/save-form-as-draft-azure-card.png)
+   ![Azure 저장소 카드 선택](/help/forms/assets/save-form-as-draft-azure-card.png)
 
-1. 구성을 생성할 구성 폴더를 선택하고 **[!UICONTROL 만들기]**.
+1. 구성을 만들 구성 폴더를 선택하고 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 
-   ![Azure 스토리지 구성 폴더 선택](/help/forms/assets/save-form-as-draft-select-config-folder.png)
+   ![Azure 저장소 구성 폴더 선택](/help/forms/assets/save-form-as-draft-select-config-folder.png)
 
-1. 에서 구성의 제목을 지정합니다. **[!UICONTROL 제목]** 필드.
-1. 의 이름을 지정합니다. [!DNL Azure] 의 저장소 계정 **[!UICONTROL Azure 스토리지 계정]** 및 **[!UICONTROL Azure 액세스 키]** 필드.
+1. **[!UICONTROL 제목]** 필드에 구성의 제목을 지정합니다.
+1. **[!UICONTROL Azure 저장소 계정]** 및 **[!UICONTROL Azure 액세스 키]** 필드에 [!DNL Azure] 저장소 계정의 이름을 지정하십시오.
 
    ![Azure Storage 구성](/help/forms/assets/save-form-as-draft-azure-storage.png)
 
@@ -55,45 +55,45 @@ Azure 스토리지 계정과 액세스 키가 있으면에서 액세스 권한�
 
 >[!NOTE]
 >
-> 다음을 검색할 수 있습니다. **[!UICONTROL Azure 스토리지 계정]** 및 **[!UICONTROL Azure 액세스 키]** 다음에서 [Microsoft Azure 포털](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+> [Microsoft Azure 포털](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal)에서 **[!UICONTROL Azure 저장소 계정]** 및 **[!UICONTROL Azure 액세스 키]**&#x200B;를 검색할 수 있습니다.
 
 
 ### 2. Forms 포털용 통합 스토리지 커넥터 구성 {#configure-usc-forms-portal}
 
 Azure 스토리지 구성을 만들었으면 다음 단계를 사용하여 Forms 포털용 통합 스토리지 커넥터를 구성하십시오.
 
-1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Forms]** > **[!UICONTROL 통합 스토리지 커넥터]**.
+1. **[!UICONTROL 도구]** > **[!UICONTROL Forms]** > **[!UICONTROL 통합 저장소 커넥터]**&#x200B;로 이동합니다.
 
-   ![통합 커넥터 스토리지](/help/forms/assets/save-form-as-draft-unified-connector.png)
+   ![통합 커넥터 저장소](/help/forms/assets/save-form-as-draft-unified-connector.png)
 
-1. 다음에서 **[!UICONTROL Forms 포털]** 섹션, 선택 **[!UICONTROL Azure]** 다음에서 **[!UICONTROL 스토리지]** 드롭다운 목록입니다.
-1. 다음을 지정합니다. [azure 스토리지 구성에 대한 구성 경로](#create-azure-storage-configuration) 다음에서 **[!UICONTROL 스토리지 구성 경로]** 필드.
+1. **[!UICONTROL Forms 포털]** 섹션의 **[!UICONTROL 저장소]** 드롭다운 목록에서 **[!UICONTROL Azure]**&#x200B;을(를) 선택합니다.
+1. **[!UICONTROL 저장소 구성 경로]** 필드에 Azure 저장소 구성에 대한 [구성 경로](#create-azure-storage-configuration)를 지정하십시오.
 
-   ![통합 커넥터 스토리지 설정](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
+   ![통합 커넥터 저장소 설정](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
 
-1. 선택 **[!UICONTROL 저장]** 다음을 선택합니다. **[!UICONTROL Publish]** 구성을 게시합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 선택한 다음 **[!UICONTROL Publish]**&#x200B;을 선택하여 구성을 게시합니다.
 
 ### 3. 적응형 양식을 초안으로 저장하는 규칙 만들기 {#rule-to-save-adaptive-form-as-draft}
 
-양식을 초안으로 저장하려면 **양식 저장** 단추와 같은 양식 구성 요소에 대한 규칙입니다. 버튼을 클릭하면 규칙이 트리거되고 양식이 초안으로 저장됩니다. 다음 단계를 수행하여 을 만듭니다. **양식 저장** 버튼 구성 요소에 대한 규칙:
+양식을 초안으로 저장하려면 단추와 같은 양식 구성 요소에 **양식 저장** 규칙을 만듭니다. 버튼을 클릭하면 규칙이 트리거되고 양식이 초안으로 저장됩니다. 단추 구성 요소에 **양식 저장** 규칙을 만들려면 다음 단계를 수행하십시오.
 
 1. 작성자 인스턴스에서 편집 모드로 적응형 양식을 엽니다.
-1. 왼쪽 창에서 을(를) 선택합니다 ![구성 요소 아이콘](assets/components_icon.png) 을(를) 끌어서 놓습니다. **[!UICONTROL 단추]** 구성 요소를 양식에 추가합니다.
-1. 다음 항목 선택 **[!UICONTROL 단추]** 구성 요소를 선택한 다음 ![구성 아이콘](assets/configure_icon.png).
-1. 다음 항목 선택 **[!UICONTROL 규칙 편집]** 아이콘을 클릭하여 규칙 편집기를 엽니다.
-1. 선택 **[!UICONTROL 만들기]** 을 클릭하여 규칙을 구성하고 생성할 수 있습니다.
-1. 다음에서 **[!UICONTROL 날짜]** 섹션, 선택 **클릭됨** 및 **[!UICONTROL 그러면]** 섹션에서 **양식 저장** 옵션을 선택합니다.
-1. 선택 **[!UICONTROL 완료]** 을 눌러 규칙을 저장합니다.
+1. 왼쪽 창에서 ![구성 요소 아이콘](assets/components_icon.png)을(를) 선택하고 **[!UICONTROL Button]** 구성 요소를 양식으로 끌어 옵니다.
+1. **[!UICONTROL Button]** 구성 요소를 선택한 다음 ![구성 아이콘](assets/configure_icon.png)을 선택합니다.
+1. **[!UICONTROL 규칙 편집]** 아이콘을 선택하여 규칙 편집기를 엽니다.
+1. 규칙을 구성하고 만들려면 **[!UICONTROL 만들기]**&#x200B;를 선택하십시오.
+1. **[!UICONTROL When]** 섹션에서 **클릭됨**&#x200B;을(를) 선택하고 **[!UICONTROL Then]** 섹션에서 **양식 저장** 옵션을 선택합니다.
+1. **[!UICONTROL 완료]**&#x200B;를 선택하여 규칙을 저장합니다.
 
 ![단추에 대한 규칙 만들기](/help/forms/assets/save-form-as-drfat-create-rule.png)
 
-적응형 양식을 미리 볼 때 작성하고 을 클릭합니다. **양식 저장** 버튼을 누르면 양식이 나중에 사용할 수 있도록 초안으로 저장됩니다.
+적응형 양식을 미리 보고 작성하고 **양식 저장** 단추를 클릭하면 양식이 나중에 사용할 수 있도록 초안으로 저장됩니다.
 
 ## AEM Sites 페이지에 초안을 나열할 초안 및 제출 구성 요소
 
-AEM Forms은 **초안 및 제출** 포털 구성 요소를 통해 AEM Sites 페이지에 저장된 양식을 표시할 수 있습니다. 다음 **초안 및 제출** 구성 요소는 제출된 양식과 함께 나중에 완료할 수 있도록 초안으로 저장된 양식을 표시합니다. 이 구성 요소는 사용자가 만든 적응형 Forms과 관련된 초안 및 제출 사항을 나열하여 로그인한 사용자에게 개인화된 경험을 제공합니다.
+AEM Forms은 저장된 양식을 AEM Sites 페이지에 표시할 수 있도록 **초안 및 제출** 포털 구성 요소를 즉시 제공합니다. **초안 및 제출** 구성 요소는 나중에 완료할 수 있도록 초안으로 저장된 양식과 제출된 양식을 표시합니다. 이 구성 요소는 사용자가 만든 적응형 Forms과 관련된 초안 및 제출 사항을 나열하여 로그인한 사용자에게 개인화된 경험을 제공합니다.
 
-기본 Forms 포털 구성 요소를 사용하여 AEM Sites 페이지에 양식 초안을 나열할 수 있습니다. 다음 단계를 수행하여 을 사용합니다. **초안 및 제출** 포털 구성 요소:
+기본 Forms 포털 구성 요소를 사용하여 AEM Sites 페이지에 양식 초안을 나열할 수 있습니다. **초안 및 제출** 포털 구성 요소를 사용하려면 다음 단계를 수행하십시오.
 
 1. [초안 및 제출 Forms 포털 구성 요소 활성화](#enable-component)
 2. [AEM Sites 페이지의 초안 및 제출 구성 요소 추가](#Add-drafts-submissions-component)
@@ -101,13 +101,13 @@ AEM Forms은 **초안 및 제출** 포털 구성 요소를 통해 AEM Sites 페�
 
 ### 1. 초안 및 제출 Forms 포털 구성 요소 활성화{#enable-component}
 
-활성화하려면 **[!UICONTROL 초안 및 제출]** 템플릿 정책의 구성 요소에서 다음 단계를 수행합니다.
+템플릿 정책에서 **[!UICONTROL 초안 및 제출]** 구성 요소를 활성화하려면 다음 단계를 수행하십시오.
 
-1. 에서 AEM Sites 페이지를 엽니다. **편집** 모드.
-1. 로 이동 **[!UICONTROL 페이지 정보]** > **[!UICONTROL 템플릿 편집]**
+1. **편집** 모드로 AEM Sites 페이지를 엽니다.
+1. **[!UICONTROL 페이지 정보]** > **[!UICONTROL 템플릿 편집]**(으)로 이동
    ![템플릿 정책 편집](/help/forms/assets/save-form-as-draft-edit-template.png)
 
-1. 다음을 클릭합니다. **[!UICONTROL 정책]** 및 선택 **[!UICONTROL 초안 및 제출]**  확인란 **[AEM Archetype 프로젝트 이름] - Forms 및 통신 포털**.
+1. **[!UICONTROL 정책]**&#x200B;을 클릭하고 **[AEM Archetype 프로젝트 이름] - Forms 및 통신 포털**&#x200B;에서 **[!UICONTROL 초안 및 제출]** 확인란을 선택하십시오.
 
    ![정책 선택](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
@@ -117,30 +117,30 @@ AEM Forms은 **초안 및 제출** 포털 구성 요소를 통해 AEM Sites 페�
 
 ### 2. AEM Sites 페이지의 초안 및 제출 구성 요소 추가{#Add-drafts-submissions-component}
 
-포털 구성 요소를 추가 및 구성하여 AEM을 사용하여 작성된 웹 사이트에서 Forms 포털을 만들고 사용자 지정할 수 있습니다. 다음을 확인합니다. [초안 및 제출 구성 요소 활성화됨](#enable-component) AEM Sites 페이지에서 사용하기 전에.
+포털 구성 요소를 추가 및 구성하여 AEM을 사용하여 작성된 웹 사이트에서 Forms 포털을 만들고 사용자 지정할 수 있습니다. AEM Sites 페이지에서 초안 및 제출 구성 요소를 사용하기 전에 [초안 및 제출 구성 요소가 활성화되었는지](#enable-component) 확인하십시오.
 
-구성 요소를 추가하려면 목록에서 구성 요소를 드래그 앤 드롭하십시오. **초안 및 제출** 구성 요소 창을 페이지의 레이아웃 컨테이너에 추가하거나 레이아웃 컨테이너에서 추가 아이콘을 선택하고 **[!UICONTROL 새 구성 요소 삽입]** 대화 상자.
+구성 요소를 추가하려면 **초안 및 제출** 구성 요소 창에서 페이지의 레이아웃 컨테이너로 구성 요소를 드래그 앤 드롭하거나 레이아웃 컨테이너에서 추가 아이콘을 선택하고 **[!UICONTROL 새 구성 요소 삽입]** 대화 상자에서 구성 요소를 추가하십시오.
 
 ![초안 및 제출 구성 요소 추가](/help/forms/assets/save-form-as-draft-add-dns.png)
 
 ### 3. 초안 및 제출 구성 요소 구성 {#configure-drafts-submissions-component}
 
-다음 **초안 및 제출** 나중에 제출한 양식을 완료하기 위해 초안으로 저장된 양식이 구성 요소에 표시됩니다. 구성하려면 **초안 및 제출**&#x200B;를 클릭하고 다음 단계를 수행하십시오.
-1. 다음 항목 선택 **초안 및 제출** 구성 요소.
-1. 다음을 클릭합니다. ![구성 아이콘](assets/configure_icon.png) 그러면 대화상자가 나타납니다.
-1. 다음에서 **[!UICONTROL 초안 및 제출]** 대화 상자에서 다음을 지정합니다.
+**초안 및 제출** 구성 요소는 나중에 제출한 양식을 완성하기 위해 초안으로 저장된 양식을 표시합니다. **초안 및 제출**&#x200B;을 구성하려면 다음 단계를 수행하십시오.
+1. **초안 및 제출** 구성 요소를 선택하십시오.
+1. ![구성 아이콘](assets/configure_icon.png)을 클릭하면 대화 상자가 나타납니다.
+1. **[!UICONTROL 초안 및 제출]** 대화 상자에서 다음을 지정하십시오.
    * **제목** Sites 페이지에서 구성 요소를 식별하기 위해 기본적으로 제목이 구성 요소 위에 나타납니다.
-   * **유형**: 양식 목록을 초안 또는 제출된 양식으로 표시합니다.
-   * **레이아웃**: 목록 초안 양식 또는 제출된 양식을 카드 또는 목록 형식으로 표시합니다.
+   * **Type**: 양식이 초안 또는 제출된 양식으로 나열됨을 나타냅니다.
+   * **레이아웃**: 목록 초안 양식이나 제출된 양식을 카드 또는 목록 형식으로 표시합니다.
 
-   ![초안 및 제출 구성 요소 등록 정보](/help/forms/assets/save-form-as-draft-dns-properties.png)
+   ![초안 및 제출 구성 요소 속성](/help/forms/assets/save-form-as-draft-dns-properties.png)
 
 1. **완료**&#x200B;를 클릭합니다.
 
-날짜 **[!UICONTROL 유형 선택]** 이(가) 다음으로 선택됨 **초안 Forms**, 초안으로 저장된 양식이 표시됩니다.
+**[!UICONTROL 유형 선택]**&#x200B;을(를) **초안 Forms**(으)로 선택하면 초안으로 저장된 양식이 표시됩니다.
 ![초안 아이콘](assets/drafts-component.png)
 
-날짜 **[!UICONTROL 유형 선택]** 이(가) 다음으로 선택됨 **제출된 Forms**, 제출된 양식이 표시됩니다.
+**[!UICONTROL 유형 선택]**&#x200B;을(를) **제출된 Forms**(으)로 선택하면 제출된 양식이 표시됩니다.
 
 ![제출 아이콘](assets/submission-listing.png)
 

@@ -55,7 +55,7 @@ ht-degree: 83%
 * [사이트 도구 모음의 [만들기] 옵션](#starting-a-workflow-from-the-sites-toolbar)
 * [Sites 콘솔의 타임라인 레일](#starting-a-workflow-from-the-timeline)
 
-두 경우 모두 다음을 수행해야 합니다. [워크플로 만들기 마법사에서 워크플로 세부 사항 지정](#specifying-workflow-details-in-the-create-workflow-wizard).
+두 경우 모두 [워크플로 만들기 마법사에서 워크플로 세부 사항을 지정](#specifying-workflow-details-in-the-create-workflow-wizard)해야 합니다.
 
 ### 사이트 도구 모음에서 워크플로 시작 {#starting-a-workflow-from-the-sites-toolbar}
 
@@ -119,7 +119,7 @@ ht-degree: 83%
 
 1. **범위** 단계에서 다음을 선택할 수 있습니다.
 
-   * **콘텐츠 추가** 을(를) 열려면 [경로 브라우저](/help/sites-cloud/authoring/path-selection.md) 추가 리소스를 선택합니다. 브라우저에서 다음을 선택합니다. **선택** 워크플로 인스턴스에 컨텐츠를 추가합니다.
+   * **콘텐츠를 추가**&#x200B;하여 [경로 브라우저](/help/sites-cloud/authoring/path-selection.md)를 열고 추가 리소스를 선택합니다. 브라우저에서 **선택**&#x200B;을(를) 선택하여 워크플로 인스턴스에 콘텐츠를 추가합니다.
 
    * 추가 작업을 보기 위한 기존 리소스:
 

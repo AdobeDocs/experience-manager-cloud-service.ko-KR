@@ -20,8 +20,8 @@ ht-degree: 1%
 
 유니버설 편집기를 사용하면 프로젝트의 요구 사항에 맞게 두 가지 유형을 조정할 수 있습니다.
 
-* [범용 편집기 사용자 지정](#customizing) - 범용 편집기의 표준 기능은 여러 사용자 지정 구성을 통해 조정할 수 있습니다.
-* [범용 편집기 UI 확장](#extending) - App Builder를 사용하여 유니버설 편집기의 UI를 확장하여 프로젝트 요구 사항을 충족할 수도 있습니다.
+* [범용 편집기 사용자 지정](#customizing) - 여러 사용자 지정 구성을 통해 범용 편집기의 표준 기능을 조정할 수 있습니다.
+* [유니버설 편집기 UI 확장](#extending) - 프로젝트 요구 사항에 맞게 App Builder을 사용하여 유니버설 편집기의 UI를 확장할 수도 있습니다.
 
 두 유형 모두 다음 섹션에 자세히 설명되어 있습니다.
 
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 특정 작성 워크플로에서는 콘텐츠를 게시하기 전에 검토해야 합니다. 이러한 경우 작성자는 게시 옵션을 사용할 수 없습니다.
 
-다음 **게시** 따라서 다음 메타데이터를 추가하여 앱에서 버튼을 완전히 억제할 수 있습니다.
+따라서 다음 메타데이터를 추가하여 **Publish** 단추를 앱에서 완전히 표시하지 않을 수 있습니다.
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish"/>
@@ -58,13 +58,13 @@ ht-degree: 1%
 ]
 ```
 
-그런 다음 속성을 추가하여 컨테이너 구성 요소에서 필터 정의를 참조할 수 있습니다 `data-aue-filter`를 통해 이전에 정의한 필터의 ID를 전달합니다.
+그런 다음 `data-aue-filter` 속성을 추가하고 이전에 정의한 필터의 ID를 전달하여 컨테이너 구성 요소에서 필터 정의를 참조할 수 있습니다.
 
 ```html
 data-aue-filter="container-filter"
 ```
 
-설정 `components` 필터 정의의 속성 `null` 필터가 없는 것처럼 모든 구성 요소를 허용합니다.
+필터 정의의 `components` 특성을 `null`(으)로 설정하면 필터가 없는 것처럼 모든 구성 요소가 허용됩니다.
 
 ```json
 [
@@ -77,9 +77,9 @@ data-aue-filter="container-filter"
 
 ### 속성 레일에서 조건부로 구성 요소 표시 및 숨기기 {#conditionally-hide}
 
-일반적으로 작성자가 구성 요소를 사용할 수 있지만 의미가 없는 상황이 있을 수 있습니다. 이러한 경우 를 추가하여 속성 레일에서 구성 요소를 숨길 수 있습니다 `condition` 속성 [구성 요소 모델의 필드.](/help/implementing/universal-editor/field-types.md#fields)
+일반적으로 작성자가 구성 요소를 사용할 수 있지만 의미가 없는 상황이 있을 수 있습니다. 이러한 경우 구성 요소 모델의 [ 필드에 `condition` 특성을 추가하여 속성 레일에서 구성 요소를 숨길 수 있습니다.](/help/implementing/universal-editor/field-types.md#fields)
 
-다음을 사용하여 조건을 정의할 수 있습니다. [JsonLogic 스키마.](https://jsonlogic.com/) 조건이 true이면 필드가 표시됩니다. 조건이 false이면 필드가 숨겨집니다.
+[JsonLogic 스키마를 사용하여 조건을 정의할 수 있습니다.](https://jsonlogic.com/) 조건이 true이면 필드가 표시됩니다. 조건이 false이면 필드가 숨겨집니다.
 
 >[!BEGINTABS]
 
@@ -118,18 +118,18 @@ data-aue-filter="container-filter"
 
 ## 범용 편집기 UI 확장 {#extending}
 
-Adobe Experience Cloud 서비스로서 App Builder 및 Experience Manager을 사용하여 범용 편집기의 UI를 확장할 수 있습니다.
+Adobe Experience Cloud 서비스로서, App Builder 및 Experience Manager을 사용하여 유니버설 편집기의 UI를 확장할 수 있습니다.
 
-UI 확장은 Adobe App Builder로 구축된 JavaScript 애플리케이션으로, 범용 편집기와 같은 Adobe Experience Cloud 통합 셸에서 실행되는 UI 애플리케이션에 임베드할 수 있습니다. 헤더 메뉴 및 속성 레일에 고유한 버튼과 작업을 추가할 수 있을 뿐만 아니라 범용 편집기에 대한 고유한 이벤트를 만들 수도 있습니다.
+UI 확장은 Adobe App Builder으로 구축된 JavaScript 애플리케이션으로, 범용 편집기와 같은 Adobe Experience Cloud 통합 셸에서 실행되는 UI 애플리케이션에 임베드할 수 있습니다. 헤더 메뉴 및 속성 레일에 고유한 버튼과 작업을 추가할 수 있을 뿐만 아니라 범용 편집기에 대한 고유한 이벤트를 만들 수도 있습니다.
 
 이러한 가능성을 알아보려면 다음 리소스를 참조하십시오.
 
 1. [UI 확장성](https://developer.adobe.com/uix/docs/) - UI 확장에 대한 개발자 설명서입니다.
-1. [UI 확장성 안내서](https://developer.adobe.com/uix/docs/guides/) - 자체 확장을 개발하는 방법에 대한 단계별 지침
-1. [유니버설 편집기 확장 지점](https://developer.adobe.com/uix/docs/services/aem-universal-editor/) - 범용 편집기별 확장 지점 설명서
+1. [UI 확장성 안내서](https://developer.adobe.com/uix/docs/guides/) - 고유한 확장을 개발하는 방법에 대한 단계별 지침
+1. [유니버설 편집기 확장 지점](https://developer.adobe.com/uix/docs/services/aem-universal-editor/) - 유니버설 편집기 특정 확장 지점 문서
 
 >[!TIP]
 >
->예를 들어 학습하기를 선호하는 경우 다음을 참조하십시오. [AEM UI 확장성 자습서.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview) 콘텐츠 조각 콘솔 확장에 중점을 두고 있지만, 범용 편집기에서 UI 확장을 구현하는 개념은 동일합니다.
+>예제를 통한 학습을 선호하는 경우 [AEM UI 확장성 자습서를 참조하십시오.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview) 콘텐츠 조각 콘솔 확장에 중점을 두고 있지만 유니버설 편집기에서 UI 확장을 구현하는 개념은 동일합니다.
 
-[AEM Sites에서 Extension Manager 사용,](https://developer.adobe.com/uix/docs/extension-manager/) 인스턴스별로 확장을 활성화하거나 비활성화하고, 범용 편집기용 확장을 포함한 Adobe의 자사 확장 등에 액세스할 수 있습니다.
+[AEM Sites에서 Extension Manager을 사용](https://developer.adobe.com/uix/docs/extension-manager/) 인스턴스별로 확장을 활성화하거나 비활성화하고, 유니버설 편집기의 확장을 포함한 Adobe의 자사 확장에 액세스할 수 있습니다.

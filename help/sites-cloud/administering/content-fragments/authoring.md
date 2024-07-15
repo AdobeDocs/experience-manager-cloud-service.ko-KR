@@ -25,11 +25,11 @@ ht-degree: 76%
 
 * [자동 저장](#saving-autosaving)을 통해 실수로 편집된 내용이 손실되는 일이 없도록 합니다.
 * 먼저 자산 DAM에 업로드하지 않고 [자산을 콘텐츠 참조로 인라인 업로드할 수 있습니다](#reference-images).
-* [변형 생성](#generate-variations-ai) 생성 AI를 사용하여 프롬프트에 따라 콘텐츠 작성을 가속화합니다.
+* 생성 AI를 사용하여 프롬프트에 따라 콘텐츠 만들기를 가속화하려면 [변형을 생성](#generate-variations-ai)하십시오.
 * 콘텐츠 조각을 통해 게재된 렌더링된 경험을 [미리보기](#preview-content-fragment)할 수 있습니다.
 * 편집기에서 [게시](#publish-content-fragment) 및 [게시 취소](#unpublish-content-fragment)할 수 있습니다.
 * 편집기에서 연결된 [언어 사본을 보고 열](#view-language-copies) 수 있습니다.
-* 다음에 대한 기능: [버전 세부 사항 보기](#view-version-history) 를 입력합니다. 선택한 버전으로 되돌릴 수도 있습니다.
+* 편집기에서 [버전 세부 정보를 보기](#view-version-history)하는 기능. 선택한 버전으로 되돌릴 수도 있습니다.
 * [상위 참조를 보고 열](#view-parent-references) 수 있습니다.
 * [구조 트리](#structure-tree)를 사용하여 콘텐츠 조각과 해당 참조의 계층적 보기를 실행할 수 있습니다.
 
@@ -60,11 +60,11 @@ ht-degree: 76%
    * **속성** 탭에서 조각 또는 **변형**&#x200B;에 대한 **제목** 및 **설명**&#x200B;을 업데이트할 수 있습니다.
 * 중앙 패널: 선택한 변형의 실제 필드와 콘텐츠 표시
    * 콘텐츠 편집 허용
-   * if **탭 자리 표시자** 필드는 여기에 표시된 모델 내에서 정의되며, 탐색하는 데 사용할 수 있습니다. 필드는 가로로 표시되거나 드롭다운 목록으로 표시됩니다.
+   * **탭 자리 표시자** 필드가 모델 내에 정의되어 있으면 여기에 표시되고 탐색에 사용할 수 있습니다. 필드는 가로로 표시되거나 드롭다운 목록으로 표시됩니다.
 
   >[!NOTE]
   >
-  >기본 모델의 정의에 따라 필드는 특정 유형의 영향을 받을 수 있습니다. [유효성 검사](/help/assets/content-fragments/content-fragments-models.md#validation).
+  >기본 모델의 정의에 따라 특정 형식의 [유효성 검사](/help/assets/content-fragments/content-fragments-models.md#validation)가 필드에 적용될 수 있습니다.
 
 ![콘텐츠 조각 편집기 - 개요](assets/cf-authoring-overview.png)
 
@@ -122,7 +122,7 @@ ht-degree: 76%
 
 * **기본** 콘텐츠의 [변형 만들기](#create-variation)
 
-* [변형 생성 AI 사용](#generate-variations-ai) 생성 AI를 사용하여 Adobe이 특정 사용 사례에 대해 만든 프롬프트 기반 템플릿을 사용합니다.
+* [변형 AI 생성을 사용](#generate-variations-ai)하여 생성 AI를 사용하여 Adobe이 특정 사용 사례에 맞게 만든 프롬프트 기반 템플릿을 사용합니다.
 
 * 콘텐츠 편집에 필요한 변형 선택
 
@@ -176,7 +176,7 @@ ht-degree: 76%
    >
    >사용 가능한 Adobe 프롬프트 템플릿은 현재 제한되어 있지만 향후 릴리스에 더 추가될 예정입니다.
 
-   ![내보내기를 통해 콘텐츠 조각의 변형 생성](assets/cfm-generate-variations2.png)
+   ![콘텐츠 조각의 변형을 생성하기 위해 내보내기](assets/cfm-generate-variations2.png)
 
 1. 프롬프트를 채워 콘텐츠를 생성합니다. 조각의 콘텐츠 모델은 GenAI를 사용하여 콘텐츠를 생성하는 데 자동으로 사용됩니다.
 
@@ -184,20 +184,20 @@ ht-degree: 76%
    >
    >현재 텍스트 필드만 지원합니다.
 
-   ![내보내기를 통해 콘텐츠 조각의 변형 생성](assets/cfm-generate-variations3.png)
+   ![콘텐츠 조각의 변형을 생성하기 위해 내보내기](assets/cfm-generate-variations3.png)
 
 1. 원하는 변형 생성을 선택하고 &quot;변형 내보내기&quot;를 선택합니다. 콘텐츠 조각 변형의 이름을 확인하고 다음 중 하나를 선택합니다.
 
-   * **내보내기**: 변형을 콘텐츠 조각으로 내보내고 변형 생성 애플리케이션에 있습니다.
+   * **내보내기**: 변형을 콘텐츠 조각으로 내보내고 변형 생성 응용 프로그램에서 그대로 유지됩니다.
    * **내보내기 및 열기**: 변형을 콘텐츠 조각으로 내보내고 GenAI의 새 변형과 함께 콘텐츠 조각을 표시하는 새 탭을 엽니다.
 
-     ![내보내기를 통해 콘텐츠 조각의 변형 생성](assets/cfm-generate-variations4.png)
+     ![콘텐츠 조각의 변형을 생성하기 위해 내보내기](assets/cfm-generate-variations4.png)
 
 1. 생성된 변형은 기본 콘텐츠 조각 편집기에 표시됩니다.
 
-   ![컨텐츠 조각의 변형 생성 보기](assets/cfm-generate-variations5.png)
+   ![콘텐츠 조각에서 변형 생성 보기](assets/cfm-generate-variations5.png)
 
-변형 생성에 대해 자세히 알아볼 수 있습니다 [여기](/help/generative-ai/generate-variations.md).
+변형 생성에 대한 자세한 내용은 [여기](/help/generative-ai/generate-variations.md)를 참조하세요.
 
 ### 변형 삭제 {#delete-variation}
 
@@ -205,8 +205,8 @@ ht-degree: 76%
 
     >[!NOTE]
     >
-    >**Main**은 삭제할 수 없습니다.
-
+    >**Main**.
+을(를) 삭제할 수 없습니다.
 1. 변형을 선택합니다.
 
 1. **변형** 패널에서 삭제 아이콘(휴지통)을 선택합니다.
@@ -366,8 +366,8 @@ AEM 페이지, 경험 조각 또는 기타 콘텐츠 유형에 대한 참조를 
 >
 >다음에 대한 참조에는 사용할 수 없습니다.
 >
->* 콘텐츠 조각 - 사용 [조각 참조](#fragment-references)
->* 이미지 - 사용 [참조 이미지](#reference-images)
+>* 콘텐츠 조각 - [조각 참조 사용](#fragment-references)
+>* 이미지 - [참조 이미지 사용](#reference-images)
 
 ### 상위 참조 보기 {#view-parent-references}
 
@@ -428,18 +428,18 @@ AEM 페이지, 경험 조각 또는 기타 콘텐츠 유형에 대한 참조를 
 
 1. 버전 옆에 있는 점 세 개 아이콘을 선택합니다.
 
-1. 선택 **비교**.
+1. **비교**&#x200B;를 선택합니다.
 
 ![콘텐츠 조각 편집기 - 버전 기록 비교](assets/cf-authoring-version-history-compare.png)
 
-이렇게 하면 현재 버전의 컨텐츠와 선택한 이전 버전의 컨텐츠 조각 간의 차이점을 표시하는 보기가 열립니다. 다음에서 **변경 사항이 포함된 변형** 드롭다운에서 기본 콘텐츠 및/또는 변형의 콘텐츠와의 차이점을 표시하도록 선택할 수 있습니다.
+이렇게 하면 현재 버전의 컨텐츠와 선택한 이전 버전의 컨텐츠 조각 간의 차이점을 표시하는 보기가 열립니다. **변경 내용이 있는 변형** 드롭다운에서 기본 콘텐츠 및/또는 변형 콘텐츠의 차이점을 표시하도록 선택할 수 있습니다.
 
 차이점은 색상으로 표시됩니다.
 
 * 녹색: (현재 버전에) 추가된 콘텐츠를 나타냅니다.
 * 빨간색: (현재 버전에서) 제거된 콘텐츠를 나타냅니다.
 
-![콘텐츠 조각 편집기 - 버전 기록 버전 비교](assets/cf-authoring-version-history-compare-versions.png)
+![콘텐츠 조각 편집기 - 버전 기록 비교](assets/cf-authoring-version-history-compare-versions.png)
 
 ### 버전으로 되돌리기 {#revert-version}
 
@@ -473,7 +473,7 @@ AEM 페이지, 경험 조각 또는 기타 콘텐츠 유형에 대한 참조를 
 이 기능을 사용하려면 먼저 다음 작업을 수행해야 합니다.
 
 * IT 팀과의 협력을 통해 JSON 출력을 사용하여 콘텐츠 조각을 렌더링할 외부 프론트엔드 애플리케이션을 설정합니다.
-* 외부 프론트엔드 응용 프로그램을 설정하면 **기본 미리보기 URL 패턴** 은(는) (으)로 정의되어야 합니다. [적절한 콘텐츠 조각 모델의 속성](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
+* 외부 프론트엔드 응용 프로그램을 설정할 때 **기본 미리 보기 URL 패턴**&#x200B;을(를) 해당 콘텐츠 조각 모델의 [속성](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)(으)로 정의해야 합니다.
 
 URL이 정의되면 **미리보기** 버튼이 활성화됩니다. 이 버튼을 선택하여 콘텐츠 조각을 렌더링할 수 있는 외부 애플리케이션(별도의 탭에서)을 실행할 수 있습니다.
 
@@ -542,7 +542,7 @@ URL이 정의되면 **미리보기** 버튼이 활성화됩니다. 이 버튼을
    <td><p> <img src="assets/cf-authoring-json-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>탭 플레이스홀더</b></p><p>실제 아이콘으로 표시되지 않지만 <b>탭 플레이스홀더</b>는 왼쪽 패널에 표시됩니다. <br>또한 표시된 대로 가로로 중앙 패널에 표시되거나, 가로로 표시할 내용이 너무 많은 경우 드롭다운 목록에 표시됩니다.</p> </td>
+   <td><p><b>탭 플레이스홀더</b></p><p>실제 아이콘으로 표시되지 않지만 <b>탭 플레이스홀더</b>는 왼쪽 패널에 표시됩니다. <br>가로로 표시할 내용이 너무 많으면 중앙 패널이나 드롭다운 목록에도 표시됩니다.</p> </td>
    <td><p> <img src="assets/cf-authoring-tab-icon.png"> </p></td>
   </tr>
  </tbody>

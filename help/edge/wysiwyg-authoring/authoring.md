@@ -16,16 +16,16 @@ ht-degree: 85%
 
 Edge Delivery Services를 사용하여 쉽고, 빠르고, 유연하게 콘텐츠를 작성할 수 있습니다. Edge Delivery Services용 콘텐츠를 작성하기 위한 두 가지 옵션이 있습니다.
 
-* [유니버설 편집기](#universal-editor) - AEM 내 콘텐츠 작성을 위한 최신 WYSIWYG(보이는 그대로) UI
+* [유니버설 편집기](#universal-editor) - AEM에서 콘텐츠를 작성할 수 있는 최신 WYSIWYG(보이는 그대로) UI
 * [문서 기반 작성](#document-based) - Microsoft Word 또는 Google Docs 등
 
 ## Universal Editor 작성 {#universal-editor}
 
 AEM as a Cloud Service와 함께 Edge Delivery Services를 사용할 때 이해해야 할 가장 기본적인 사실은 작성한 콘텐츠가 AEM as a Cloud Service로 유지된다는 것입니다.
 
-![Edge Delivery Services에서 WYSIWYG 작성 작동 방식](assets/how-aem-edge-works.png)
+![Edge Delivery Services에서 WYSIWYG 작성이 작동하는 방식](assets/how-aem-edge-works.png)
 
-1. [WYSIWYG 작성 환경](/help/sites-cloud/authoring/quick-start.md) 는 새 페이지, 경험 조각, 콘텐츠 조각 등의 만들기와 같은 콘텐츠 관리에 사용됩니다.
+1. [WYSIWYG 작성 환경](/help/sites-cloud/authoring/quick-start.md)은(는) 새 페이지, 경험 조각, 콘텐츠 조각 등을 만드는 등 콘텐츠 관리에 사용됩니다.
    * 워크플로, MSM, 번역, 실행 등의 모든 AEM 기능을 사용할 수 있습니다.
 1. [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)는 AEM에서 관리되는 콘텐츠를 작성하는 데 사용됩니다.
    * Universal Editor는 콘텐츠 작성을 위한 새로운 최신 UI를 제공합니다.
@@ -50,7 +50,7 @@ Universal Editor는 블록을 드래그 앤 드롭하여 콘텐츠를 작성할 
 
 Universal Editor를 사용하여 작성하는 방법에 대한 자세한 내용은 [Universal Editor를 사용하여 콘텐츠 작성](/help/sites-cloud/authoring/universal-editor/authoring.md)을 참조하십시오.
 
-다음을 참조하십시오. [Edge Delivery Services을 사용한 WYSIWYG 작성에 대한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) AEM 및 Edge Delivery Services을 사용하여 작성할 프로젝트를 시작하는 방법에 대해 알아봅니다.
+AEM 및 Edge Delivery Services을 사용하여 프로젝트를 직접 작성하는 방법에 대해 알아보려면 [Edge Delivery Services을 사용하여 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)를 참조하십시오.
 
 ## 문서 기반 작성  {#document-based}
 

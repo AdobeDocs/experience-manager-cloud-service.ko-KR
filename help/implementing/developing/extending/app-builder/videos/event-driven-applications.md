@@ -1,6 +1,6 @@
 ---
 title: 이벤트 기반 App Builder 애플리케이션
-description: 이벤트 중심의 App Builder 애플리케이션을 빌드하는 방법에 대해 알아봅니다.
+description: 이벤트 기반 App Builder 애플리케이션을 빌드하는 방법을 알아봅니다.
 version: Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development

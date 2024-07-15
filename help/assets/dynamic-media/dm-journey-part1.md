@@ -31,15 +31,15 @@ Dynamic Media 여정에 오신 것을 환영합니다.
 * Adobe Illustrator, Adobe Photoshop, Adobe XD 등의 디자인 도구에 대한 기본 이해
 * Experience Manager에서 Dynamic Media에 액세스하는 것은 유용하지만 필수는 아닙니다
 
-**_배울 수 있는 내용_**
+**_배울 내용_**
 
-_1부_
+_파트 I_
 
 * Dynamic Media란 무엇이며 어떤 도움을 줄 수 있습니까?
 * Dynamic Media 사용 사례
 * Dynamic Media 시스템을 통한 에셋 흐름
 
-_제2편_
+_파트 II_
 
 * Dynamic Media URL 구조 및 Dynamic Media에서 콘텐츠를 제공하는 방법
 * 자산 렌더링용 이미지 사전 설정 만들기의 기본 사항
@@ -52,7 +52,7 @@ _제2편_
 * 비즈니스 분석가
 * 콘텐츠 설계자
 * 콘텐츠 작성자
-* 디자이너
+* Designer
 * 개발자
 * 마케팅
 * 제품 관리자/소유자
@@ -69,18 +69,18 @@ Dynamic Media은 디지털 캠페인 관리 프로세스를 간소화하고 간�
 
 ### 무한한 가능성이 있는 하나의 파일
 
-Dynamic Media에 대해 이해할 수 있는 주요 사항 중 하나는 _무한한 가능성이 있는 하나의 기본 에셋 파일_.
+Dynamic Media에 대해 이해할 수 있는 주요 사항 중 하나는 _가능성이 무한한 기본 에셋 파일 하나_&#x200B;의 개념입니다.
 
 이 개념을 더 잘 이해하려면 일반적으로 이미지나 비디오와 같은 단일 에셋으로 작업하는 방법을 생각해 보십시오. 일반적으로 1개의 기본 자산을 만듭니다. 그런 다음 모든 경험, 필요한 모든 장치, 모든 웹 페이지 및 해당 에셋이 사용되는 모든 속성에 대해 동일한 에셋의 버전을 수동으로 만듭니다. 시간이 지남에 따라 해당 단일 자산은 버전 내역이 첨부되지 않은 20개, 30개 이상의 버전으로 늘어날 수 있습니다. 이제, 여러분이 가지고 있는 모든 이미지나 비디오에 대해 그렇게 한다고 상상해 보세요. 에셋 버전의 수는 스토리지 비용의 증가뿐 아니라 유지 관리 및 업데이트를 위한 과부하가 될 수 있습니다.
 
-그러나 Dynamic Media은 미디어를 전달하는 데 사용하기 때문에 다른 시스템과 근본적으로 다릅니다 _동적으로_ 단일, 기본 에셋 및 URL 호출에서 요청하는 Dynamic Media URL 경로에는 에셋이 고객의 화면에 전달될 때 Adobe 게시 서버에 에셋을 표시하는 방법을 알려 주는 지침이 포함되어 있습니다. 예를 들어 동일한 단일 기본 에셋을 사용하여 크기, 형식, 해상도, 두께, 색상, 자르기 및 확대/축소 보기와 같은 효과를 변경하여 표현물을 무제한으로 즉시 전달할 수 있습니다.
+그러나 Dynamic Media을 사용하여 단일 기본 자산 및 URL 호출에서 미디어 _동적으로_&#x200B;을(를) 제공하기 때문에 다른 시스템과 근본적으로 다릅니다. 요청하는 Dynamic Media URL 경로에는 에셋이 고객의 화면에 전달될 때 Adobe 게시 서버에 에셋을 표시하는 방법을 알려 주는 지침이 포함되어 있습니다. 예를 들어 동일한 단일 기본 에셋을 사용하여 크기, 형식, 해상도, 두께, 색상, 자르기 및 확대/축소 보기와 같은 효과를 변경하여 표현물을 무제한으로 즉시 전달할 수 있습니다.
 
 이러한 고유한 전달 방법을 사용하면 크기나 대역폭에 관계없이 모든 화면에 일관된 품질 경험을 전달할 수 있습니다. 또한 풀 사이즈 비디오는 모든 화면 유형에 최적화되어 적응적으로 스트리밍되어 일관되고 고품질의 사용자 경험을 보장합니다.
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![Adobe Dynamic Media은 서로 다른 크기 및 형식으로 동일한 1차 이미지를 다른 미디어에 제공합니다](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
-_Adobe Dynamic Media은 크기나 대역폭에 관계없이 모든 화면에 일관된 품질 경험을 제공합니다._
+![Adobe Dynamic Media은 서로 다른 크기 및 형식의 다른 미디어에 동일한 1차 이미지를 제공합니다](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+_Adobe Dynamic Media은 크기나 대역폭에 관계없이 모든 화면에 일관된 품질 환경을 제공합니다._
 
 계속해서 읽으면서 &quot;하나의 기본 에셋 파일, 무궁한 가능성&quot;이라는 개념이 중요한 이유에 대해 자세히 알아볼 것입니다.
 
@@ -92,13 +92,13 @@ CDN 시스템에서 웹 콘텐츠는 인터넷의 웹 캐시에 저장됩니다.
 
 <!-- USE AN IMAGE HERE? ![Content delivery network](/help/assets/assets-dm/cdn.png) -->
 
-지금까지 CDN은 매달 3.5페타바이트의 트래픽을 고객에게 전달했습니다. 이 시스템은 하루에 520억 개의 자산을 제공할 수 있습니다. 이 숫자는 고객에게 성공적으로 제공된 864,000개의 이미지와 비디오와 같습니다. _매초_.
+지금까지 CDN은 매달 3.5페타바이트의 트래픽을 고객에게 전달했습니다. 이 시스템은 하루에 520억 개의 자산을 제공할 수 있습니다. 이 숫자는 고객에게 제공된 864,000개의 이미지와 비디오에 해당합니다. _매초_.
 
 ### 스마트 이미징
 
 Dynamic Media은 이미 CDN을 통해 에셋을 최적화하고 각 에셋이 모바일 및 데스크탑 시스템에서 빠르게 로드되도록 하는 훌륭한 작업을 수행합니다. 이를 위해 Dynamic Media에서는 이미지 사전 설정을 사용하여 이미지 품질을 정의합니다. 또한 전송하는 이미지 유형, 선명도 및 경험이나 페이지의 다양한 부분에 대한 기타 조각을 정의합니다.
 
-그러나 이미지 사전 설정 외에 Dynamic Media에 값을 더 추가하려면 다음을 수행하십시오. _스마트 이미징_.
+하지만 이미지 사전 설정 외에 Dynamic Media에 값을 더 추가하려면 _스마트 이미징_&#x200B;을 사용하세요.
 
 스마트 이미징은 고객의 브라우저 기능에 따라 이미지의 형식 및 파일 크기를 자동으로 최적화하여 더 나은 이미지 자산 전달 성능을 제공합니다. 기존 이미지 사전 설정에서 작동하며(이미지 사전 설정은 이 여정의 II부에서 논의됨) 게재 시 인텔리전스를 사용합니다.
 
@@ -119,11 +119,11 @@ _스마트 이미징은 고객의 브라우저 기능과 네트워크 속도에 
 
 페이지나 기본 페이지에 비디오가 있는 경우 고객이 해당 콘텐츠에 더 오래 관여하고 페이지에 더 오래 머무르는 경향이 있으므로 일반적으로 좋은 방법입니다. 이 동작은 Adobe이 수행한 분석을 통해 표시됩니다. 그러나 비디오는 복잡할 수 있습니다. 우선, 대용량 운영 파일이 있을 수 있습니다. 비디오 크기를 조정하고 전달하는 방법을 결정하는 것은 매우 복잡하며, 이러한 모든 방법은 보고 있는 장치와 대역폭에 관계없이 경험이 원활하게 실행될 수 있도록 하는 것입니다.
 
-이 문제를 해결하기 위해 Dynamic Media은 다음을 만들 수 있는 기능을 제공합니다 _응용 비디오 집합_.
+이 문제를 해결하기 위해 Dynamic Media에서는 _응용 비디오 집합_&#x200B;을 만들 수 있는 기능을 제공합니다.
 
 응용 비디오 세트는 다른 비트율 및 형식으로 인코딩된 동일한 비디오 버전을 그룹화합니다.
 
-시스템에 업로드하는 원본 기본 비디오부터 시작합니다. Dynamic Media은 자동으로 크기를 지정하거나 _코드 변환_: 해당 비디오를 여러 비디오로 만듭니다. 그런 다음, 배송 시 어떤 비디오 화면, 어떤 품질, 어떤 포맷을 사용할 것인지 지능적으로 결정하여 전화, 태블릿, 데스크탑 컴퓨터 중 하나로 전달한다.
+시스템에 업로드하는 원본 기본 비디오부터 시작합니다. Dynamic Media은 자동으로 해당 비디오의 크기를 지정하거나 _코드 변환_&#x200B;합니다. 그런 다음, 배송 시 어떤 비디오 화면, 어떤 품질, 어떤 포맷을 사용할 것인지 지능적으로 결정하여 전화, 태블릿, 데스크탑 컴퓨터 중 하나로 전달한다.
 
 예를 들어 iOS 모바일 장치에서 4G, 5G 또는 Wi-Fi와 같은 대역폭을 감지합니다. 그런 다음, 그것은 응용 비디오 세트 내의 다양한 비디오 비트 레이트 중에서 올바른 인코딩된 비디오를 자동으로 선택한다. 비디오는 모바일 장치, 태블릿 또는 데스크탑 컴퓨터로 스트리밍됩니다.
 
@@ -141,13 +141,13 @@ Dynamic Media의 가장 중요한 사용 사례 중 하나는 또한 가장 명�
 
 다음은 일반적인 경험 또는 웹 페이지를 보여 줍니다. 페이지의 약 90%는 일반적으로 훨씬 무거운 파일인 이미지 및 비디오와 같은 리치 미디어로 구성됩니다.
 
-![콘텐츠 페이지 가중치](/help/assets/dynamic-media/assets/dm-content-page-weight.png)
+![콘텐츠 페이지 두께](/help/assets/dynamic-media/assets/dm-content-page-weight.png)
 _일반적인 웹 페이지의 콘텐츠 페이지 가중치입니다._
 
-나머지 10%는 HTML, CSS 코드 및 특정 태그입니다. 해당 페이지의 90% 가중치를 최적화하려고 하며 Dynamic Media이 그러한 노력에 도움이 됩니다. 앞에서는 의 개념에 대해 읽었습니다 _무한한 가능성이 있는 하나의 기본 에셋 파일_. 이 접근 방식은 전반적인 페이지 가중치를 줄이는 데 중요합니다. 하나의 기본 자산을 가져와서 제품 세부 사항 페이지, 썸네일 페이지, 장바구니 및 검색 그리드에서 사용할 수 있으므로 시간을 절약할 수 있습니다. 또한 경험 전반에 걸쳐 일관성을 보장합니다.
+나머지 10%는 HTML, CSS 코드 및 특정 태그입니다. 해당 페이지의 90% 가중치를 최적화하려고 하며 Dynamic Media이 그러한 노력에 도움이 됩니다. 앞에서 _무한한 가능성을 가진 기본 자산 파일 하나_&#x200B;의 개념에 대해 읽었습니다. 이 접근 방식은 전반적인 페이지 가중치를 줄이는 데 중요합니다. 하나의 기본 자산을 가져와서 제품 세부 사항 페이지, 썸네일 페이지, 장바구니 및 검색 그리드에서 사용할 수 있으므로 시간을 절약할 수 있습니다. 또한 경험 전반에 걸쳐 일관성을 보장합니다.
 
-![운영 파일 접근 방식](/help/assets/dynamic-media/assets/dm-onefile.png)
-_시계는 하나의 기본 에셋 파일이지만, 다중 렌디션이 있으며(사본이 아님) 즉석으로 생성됩니다._
+![기본 파일 접근 방식](/help/assets/dynamic-media/assets/dm-onefile.png)
+_시계는 하나의 기본 에셋 파일이지만 여러 개의 렌디션이 있습니다(복사본이 아님)._
 
 Dynamic Media이 하나의 파일로 해결하고 있는 문제와 해당 접근 방식에 대한 몇 가지 해결 방법을 자세히 살펴보겠습니다.
 
@@ -181,7 +181,7 @@ Dynamic Media이 해결하는 또 다른 사용 사례는 비디오입니다. �
 
 고객은 해결하고자 하는 다음과 같은 문제를 안고 Dynamic Media을 방문합니다.
 
-&quot;_제 사업에는 비디오가 있고, 그 부서는 비디오를 만드는데 많은 돈을 썼지만, 그것을 페이지에 올리거나 전달하는 것을 꺼려했습니다. 테스트부터 영상의 질을 보장할 수 없거나, 실제 재생이 되더라도 안심할 수 없다는 이유에서였다. 그리고 궁극적으로, 이는 비즈니스의 브랜드 및 잠재적으로 전환에 대한 역할에 영향을 미칩니다._&quot;
+&quot;_내 회사에 비디오가 있고 부서에서 비디오를 만드는 데 많은 비용을 들였지만 페이지에 비디오를 배치하거나 게재하는 것을 피했습니다. 테스트부터 영상의 질을 보장할 수 없거나, 실제 재생이 되더라도 안심할 수 없다는 이유에서였다. 그리고 궁극적으로 비즈니스의 브랜드 및 전환에 대한 해당 역할에 영향을 미칩니다._&quot;
 
 Dynamic Media의 솔루션은 하나의 기본 비디오 파일을 가져와 Dynamic Media이 트랜스코딩 프로세스를 통해 모든 크기를 만들 수 있도록 하는 것입니다. 그런 다음 Dynamic Media의 지능형 비디오 플레이어와 페어링합니다. 이 워크플로는 기본 랜딩 페이지나 카테고리 또는 제품 세부 사항 페이지에서 해당 비디오를 사용하든 상관없이 전체적으로 일관성을 유지하고 고품질로 전달되도록 보장합니다.
 
@@ -192,7 +192,7 @@ Dynamic Media의 솔루션은 하나의 기본 비디오 파일을 가져와 Dyn
 | **문제** | **Dynamic Media 솔루션** |
 |---|---|
 | 조직 전체에 분산되어 있는 디지털 에셋은 다른 팀 또는 비즈니스 단위로 분산되어 있습니다. | 모든 디지털 에셋을 중앙 위치에 저장하고 관리합니다. |
-| 팀원은 로컬 버전을 다운로드하고 만듭니다. | 팀 구성원은 단일 기본 파일을 사용하여 _및_ 다양한 화면 크기 및 장치에서 필요한 모든 버전을 제공합니다. |
+| 팀원은 로컬 버전을 다운로드하고 만듭니다. | 팀원은 단일 기본 파일을 사용하여 _및_&#x200B;을(를) 만들고 다양한 화면 크기 및 장치에서 필요한 모든 버전을 제공합니다. |
 | 모든 경험 및 장치에 대해 생성된 단일 사용 에셋. | 일회성 자산을 제거하여 자산을 만드는 데 드는 시간과 비용을 절약할 수 있습니다. |
 
 ### 사용 사례: 리치 미디어를 위한 AI 기반 스마트 자르기
@@ -215,7 +215,7 @@ Dynamic Media의 솔루션은 하나의 기본 비디오 파일을 가져와 Dyn
 다음은 Dynamic Media의 일반적인 워크플로우를 보여줍니다.
 
 ![Dynamic Media 워크플로](/help/assets/dynamic-media/assets/dm-workflow.png)
-_Dynamic Media 시스템을 통한 에셋 흐름._
+_에셋이 Dynamic Media 시스템을 통해 흐르는 방식._
 
 생성 단계로 시작하여 끝에 기본 에셋을 갖게 하는 주요 목표를 가지고 있습니다. 이러한 기본 자산은 사진 촬영, 비디오 공급업체 또는 사용자가 만든 일부 오디오 파일일 수 있습니다. Adobe InDesign, Adobe Photoshop, Adobe Illustrator과 같은 Adobe의 Creative Suite 애플리케이션을 사용하여 콘텐츠 작업에 도움을 줄 수 있습니다.
 
@@ -227,10 +227,10 @@ _Dynamic Media 시스템을 통한 에셋 흐름._
 
 기본 에셋 생성이 완료되면 Dynamic Media에 업로드합니다. 업로드하는 파일의 형식, 파일의 형식 및 크기는 Dynamic Media의 중요한 특성입니다. 업로드 시 하나의 파일 지원에서 최대 값을 얻어야 합니다.
 
-예를 들어 아래 시계 이미지는 4560 x 3020픽셀입니다. 또한 해당 크기의 이미지는 사용할 수 없지만 계속 업로드할 수 있습니다. 이미지가 클수록 Dynamic Media에서 썸네일 렌디션까지 전달할 수 있는 품질이 향상됩니다. 다음을 기억하십시오. _감소_ 기존 이미지의 해상도입니다. 하지만 만약 _증가_ 이미지의 해상도는 만족스럽지 않을 수 있습니다.
+예를 들어 아래 시계 이미지는 4560 x 3020픽셀입니다. 또한 해당 크기의 이미지는 사용할 수 없지만 계속 업로드할 수 있습니다. 이미지가 클수록 Dynamic Media에서 썸네일 렌디션까지 전달할 수 있는 품질이 향상됩니다. 기존 이미지의 해상도를 쉽게 _감소_&#x200B;할 수 있습니다. 그러나 이미지의 해상도를 _증가_&#x200B;하려고 하면 결과가 만족스럽지 않을 수 있습니다.
 
-![Dynamic Media에 업로드할 권장 형식](/help/assets/dynamic-media/assets/dm-upload-formats.png)
-_에셋 업로드에 대한 고려 사항._
+![Dynamic Media에 업로드하는 데 권장되는 형식](/help/assets/dynamic-media/assets/dm-upload-formats.png)
+_자산 업로드에 대한 고려 사항._
 
 Adobe은 자산을 무손실 형식으로 업로드하는 것을 권장합니다. 일반적으로 JPEG을 전달하거나 JPEG을 계속 저장할 때 시간이 지남에 따라 이미지 품질이 저하되기 시작하므로 JPEG을 피하는 것이 좋습니다. 사용할 수 있는 무손실 형식의 고해상도 이미지로 시작하려고 합니다. 이 형식은 일반적으로 TIFF 또는 PNG 파일입니다.
 
@@ -238,33 +238,33 @@ Adobe은 자산을 무손실 형식으로 업로드하는 것을 권장합니다
 
 대부분의 사용자는 CMYK에서 어떤 것을 게재하거나 CMYK에서 어떤 것을 게재하려고 하는지에 대해 전혀 생각하지 않습니다. 그 이유는 인쇄 된 물건을 배달할 때 색상 공간이 가장 많이 사용되기 때문이다. 그러나 Dynamic Media은 두 색상 공간 모두에서 전달할 수 있습니다.
 
-창고 도매 클럽 등 아직도 인쇄를 하는 고객이 많다. 그리고 일주일에 한 번씩 전단을 인쇄하는 식료품점도 있다. 이러한 고객은 두 색상 공간 모두에 이미지가 있어야 합니다. 일반적으로 이 작업에는 RGB 이미지와 CMYK 이미지, 이렇게 두 개의 다른 이미지가 필요합니다. 그러나 CMYK 에셋을 Dynamic Media에 직접 업로드하고 Dynamic Media에서 이미지 사전 설정 또는 색상 프로필을 통해 자동으로 RGB 에셋을 게재하도록 할 수 있습니다. 여러 버전의 파일을 만들 필요가 없으므로 의 개념을 유지할 수 있습니다. _무한한 가능성이 있는 하나의 기본 에셋 파일_.
+창고 도매 클럽 등 아직도 인쇄를 하는 고객이 많다. 그리고 일주일에 한 번씩 전단을 인쇄하는 식료품점도 있다. 이러한 고객은 두 색상 공간 모두에 이미지가 있어야 합니다. 일반적으로 이 작업에는 RGB 이미지와 CMYK 이미지, 이렇게 두 개의 다른 이미지가 필요합니다. 그러나 CMYK 에셋을 Dynamic Media에 직접 업로드하고 Dynamic Media에서 이미지 사전 설정 또는 색상 프로필을 통해 자동으로 RGB 에셋을 게재하도록 할 수 있습니다. 여러 버전의 파일을 만들 필요가 없으므로 무한한 가능성을 가진 _하나의 기본 에셋 파일_&#x200B;의 개념을 유지할 수 있습니다.
 
 <!-- **The Value of Renditioning??? or Demo portion** -->
 
-### 에셋 게시 및 미리보기
+### Publish 및 에셋 미리보기
 
-에셋을 Dynamic Media에 업로드한 후에는 다음 작업을 수행하는 것이 좋습니다 _게시_ 에셋을 선택한 다음 **[!UICONTROL 게시]** 또는 **[!UICONTROL 빠른 게시]** Dynamic Media. 모든 경험에서 에셋을 사용하려면 에셋을 게시해야 합니다. 에셋이 게시되면 복사하는 Dynamic Media 생성 URL을 사용하거나 페이지에 코드를 포함하여 웹 페이지에 포함할 수 있습니다.
+Dynamic Media에 에셋을 업로드한 후에는 에셋을 선택한 다음 Dynamic Media에서 **[!UICONTROL Publish]** 또는 **[!UICONTROL 빠른 Publish]**&#x200B;을(를) 클릭하여 _게시_&#x200B;하는 것이 좋습니다. 모든 경험에서 에셋을 사용하려면 에셋을 게시해야 합니다. 에셋이 게시되면 복사하는 Dynamic Media 생성 URL을 사용하거나 페이지에 코드를 포함하여 웹 페이지에 포함할 수 있습니다.
 
 자산을 수동으로 게시하는 것 외에도 업로드 시 사용자 개입 없이 자산을 즉시 게시하도록 Dynamic Media을 구성할 수 있습니다.
 
-업로드 후 Dynamic Media에서 에셋의 렌디션을 미리 보는 방법은 여러 가지가 있습니다. 렌디션 미리 보기를 통해 고객이 보는 내용에 대한 아이디어를 얻을 수 있습니다. 일반적인 미리 보기 방법은 에셋을 선택한 다음 렌디션을 선택하여 보는 것입니다. _이미지 사전 설정_ 다음에서 볼 수 있듯이.
+업로드 후 Dynamic Media에서 에셋의 렌디션을 미리 보는 방법은 여러 가지가 있습니다. 렌디션 미리 보기를 통해 고객이 보는 내용에 대한 아이디어를 얻을 수 있습니다. 일반적인 미리 보기 방법은 에셋을 선택한 다음 다음에 보이는 대로 _이미지 사전 설정_&#x200B;을 선택하여 해당 렌디션을 보는 것입니다.
 
-![큰 이미지 사전 설정을 기반으로 자산의 렌디션 미리 보기](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
-_선택한 &quot;큰&quot; 이미지 사전 설정을 기반으로 자산의 렌디션을 미리 봅니다. URL 버튼을 클릭했습니다. 결과 URL 경로에는 &quot;큰&quot; 이미지 사전 설정 이름이 포함되어 있으며 웹 페이지에서 사용할 수 있습니다._
+![큰 이미지 사전 설정을 기반으로 자산의 렌디션을 미리 보는 중](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
+_선택한 &quot;큰&quot; 이미지 사전 설정을 기반으로 자산의 렌디션을 미리 봅니다. URL 버튼을 클릭했습니다. 결과 URL 경로에 &quot;큰&quot; 이미지 사전 설정 이름이 포함되어 있으며 웹 페이지에서 사용할 수 있습니다._
 
 위의 URL은 live입니다! [사용해 보기](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target="_blank"}.
 
-에셋을 미리 보는 다른 방법은 이미지 에셋을 선택한 다음 를 선택하는 것입니다. _뷰어_ 다음에 표시된 대로 사전 설정됩니다.
+에셋을 미리 보는 또 다른 방법은 이미지 에셋을 선택한 다음 다음에 표시된 대로 _뷰어_ 사전 설정을 선택하는 것입니다.
 
-![[확대/축소 세로 광원] 뷰어 사전 설정을 기반으로 에셋 미리 보기](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
-_선택한 &quot;ZoomVertical_light&quot; 뷰어 사전 설정을 기반으로 에셋을 미리 봅니다. 마우스 포인터(`+`)을 확대해 보기 위로 이동했습니다. URL 및 포함 단추를 확인합니다._
+![확대/축소 세로 조명 뷰어 사전 설정을 기반으로 에셋 미리 보기](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
+_선택한 &quot;ZoomVertical_light&quot; 뷰어 사전 설정을 기반으로 에셋을 미리 봅니다. 확대하기 위해 마우스 포인터(`+`)를 시계 위로 이동했습니다. URL 및 포함 단추를 확인합니다._
 
 위의 렌디션은 라이브입니다! [사용해 보기](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target="_blank"}.
 
 ## 선택 사항 - 자세히 알아보기
 
-이 여정의 1부는 다양한 Dynamic Media 주제의 기본 사항을 다룹니다. 읽은 내용에 대해 자세히 알아보려면 아래 자료를 사용하여 개념을 자세히 살펴보십시오. 그렇지 않으면 여정 2부를 계속 진행할 수 있습니다. 다음을 참조하십시오 [이 Dynamic Media 여정의 다음 단계](#whats-next).
+이 여정의 1부는 다양한 Dynamic Media 주제의 기본 사항을 다룹니다. 읽은 내용에 대해 자세히 알아보려면 아래 자료를 사용하여 개념을 자세히 살펴보십시오. 그렇지 않으면 여정 2부를 계속 진행할 수 있습니다. [이 Dynamic Media 여정의 다음 단계](#whats-next)를 참조하세요.
 
 _Dynamic Media 도움말 항목_
 
@@ -275,23 +275,23 @@ _Dynamic Media 도움말 항목_
 * [에셋 업로드 방법](/help/assets/add-assets.md#upload-assets)
 * [에셋 미리보기 방법](/help/assets/dynamic-media/previewing-assets.md)
 * [3D 에셋 미리보기 방법](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [Dynamic Media Assets를 제공하는 방법](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
+* [Dynamic Media Assets 제공 방법](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
 * [자산을 게시하는 방법](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 * [Dynamic Media의 선택적 게시를 사용하여 작업](/help/assets/dynamic-media/selective-publishing.md)
 
 _Dynamic Media 자습서_
 
-* [Experience Manager Assets과 함께 Dynamic Media 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
-* [Adobe Experience Manager 컨텐츠 라이브러리](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (검색 대상 _Dynamic Media_)
+* [Experience Manager Assets에서 Dynamic Media 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Adobe Experience Manager 컨텐츠 라이브러리](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager)(_Dynamic Media_&#x200B;에서 검색)
 
 _Dynamic Media 뷰어_
 
-* [라이브 데모](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) 각 뷰어의
+* 각 뷰어의 [실시간 데모](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
 
 ## 이 Dynamic Media 여정의 다음 단계 {#whats-next}
 
 이 여정의 II부분에서는 에셋이 전달될 때 무슨 일이 일어나고 있는지 더 잘 이해하기 위해 Dynamic Media URL을 면밀히 검사합니다. 또한 에셋을 렌더링할 이미지 사전 설정을 만드는 기본 사항에 대해 자세히 알아보고 이미지 세트, 스핀 세트 및 혼합 미디어 세트와 이러한 세트를 만드는 방법에 대해 알아봅니다.
 
-다음으로 이동 [Dynamic Media 여정: 기본 사항, 2부](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
+[Dynamic Media 여정: 기본 사항, 파트 II](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d)(으)로 이동합니다.
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->

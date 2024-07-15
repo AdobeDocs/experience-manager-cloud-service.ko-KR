@@ -48,7 +48,7 @@ Cloud Manager를 사용하여 사용자 정의 도메인 이름을 보고, 업�
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
-1. 다음 위치로 이동 **도메인 설정** 페이지의 **개요** 화면.
+1. **개요** 화면에서 **도메인 설정** 페이지로 이동합니다.
 
 1. 삭제하려는 사용자 정의 도메인 이름의 행을 식별합니다.
 

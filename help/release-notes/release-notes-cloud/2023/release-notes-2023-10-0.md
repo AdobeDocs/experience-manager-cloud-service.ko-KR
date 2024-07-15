@@ -43,7 +43,7 @@ ht-degree: 91%
 
 ### 새로운 기능 {#assets-features}
 
-**Adobe Express을 위한 AEM Assets 추가 기능**: 이제 Experience Manager Assets에서 Adobe Express을 위한 추가 기능을 제공합니다. 이 추가 기능을 사용하여 Adobe Express 사용자 인터페이스 내에서 Experience Manager Assets에 저장된 자산에 직접 액세스할 수 있습니다. AEM Assets에서 관리되는 콘텐츠를 Express 캔버스에 배치한 다음 AEM Assets 저장소에 새 콘텐츠 또는 편집된 콘텐츠를 저장할 수 있습니다. 추가 기능은 다음과 같은 주요 이점을 제공합니다.
+**Adobe Express에 대한 AEM Assets 추가 기능**: 이제 Experience Manager Assets에서 Adobe Express에 대한 추가 기능을 제공합니다. 이 추가 기능을 사용하여 Adobe Express 사용자 인터페이스 내에서 Experience Manager Assets에 저장된 자산에 직접 액세스할 수 있습니다. AEM Assets에서 관리되는 콘텐츠를 Express 캔버스에 배치한 다음 AEM Assets 저장소에 새 콘텐츠 또는 편집된 콘텐츠를 저장할 수 있습니다. 추가 기능은 다음과 같은 주요 이점을 제공합니다.
 
 * AEM의 새 자산을 편집 및 저장하여 콘텐츠 재사용이 늘어남
 
@@ -53,11 +53,11 @@ ht-degree: 91%
 
 ### Assets 보기의 새로운 기능 {#assets-view-features}
 
-* **OneDrive 데이터 원본에서 자산 일괄 가져오기**: 관리자는 이제 다음 작업을 수행할 수 있습니다 [OneDrive에서 AEM Assets으로 많은 자산 가져오기](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). 일괄 가져오기가 지원되는 데이터 소스의 업데이트된 목록에는 Azure, AWS, Google Cloud, Dropbox 및 OneDrive가 포함됩니다.
+* **OneDrive 데이터 원본에서 자산을 일괄 가져오기**: 이제 관리자는 [OneDrive에서 AEM Assets으로 많은 수의 자산을 가져오기](/help/assets/bulk-import-assets-view.md#onedrive-developer-application)할 수 있습니다. 일괄 가져오기가 지원되는 데이터 소스의 업데이트된 목록에는 Azure, AWS, Google Cloud, Dropbox 및 OneDrive가 포함됩니다.
 
   ![폴더에 메타데이터 양식 할당](/help/assets/assets/bulk-import-source-details-onedrive.png)
 
-* **라이브러리에 대한 교차 조직 권한 부여 지원**: 이제 Experience Manager Assets을 사용하여 다른 IMS 조직의 Creative Cloud 라이브러리에 대한 액세스를 구성할 수 있습니다. Creative Cloud와 Experience Manager 간의 최신 제품 간 워크플로에 더 쉽게 액세스할 수 있으며 크리에이티브에 소요되는 시간과 노력이 줄어듭니다.
+* **라이브러리에 대한 교차 조직 권한 부여 지원**: 이제 Experience Manager Assets을 통해 다른 IMS 조직의 Creative Cloud 라이브러리에 대한 액세스를 구성할 수 있습니다. Creative Cloud와 Experience Manager 간의 최신 제품 간 워크플로에 더 쉽게 액세스할 수 있으며 크리에이티브에 소요되는 시간과 노력이 줄어듭니다.
 
 ### [!DNL Experience Manager Assets]에서 사용할 수 있는 프리릴리스 기능 {#prerelease-features-assets}
 
@@ -88,7 +88,7 @@ ht-degree: 91%
 
 URL, IP 주소 및 사용자 에이전트 등의 속성별로 웹 사이트 트래픽과 일치하는 규칙을 선언하여 [Adobe Managed CDN에서 트래픽을 필터링하거나](/help/security/traffic-filter-rules-including-waf.md) DoS 공격으로부터 보호하기 위해 사용자 정의 트래픽 속도 제한을 설정합니다. 또한 고객이 정교한 웹 사이트 위협을 대비하는 추가적인 보호를 위해 고급 WAF(웹 애플리케이션 방화벽) 규칙 세트에 라이선스를 부여할 수도 있습니다.
 
-다음을 통해 트래픽 필터 규칙을 숙지할 것을 권장합니다. [튜토리얼 시험 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)! 새로운 Cloud Manager 구성 파이프라인을 설정하고, 구성 파일에 규칙을 선언하고, 악성 트래픽에 대한 CDN 로그를 분석하는 과정을 이해할 수 있습니다.
+[튜토리얼을 시도](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)하여 트래픽 필터 규칙을 숙지하는 것이 좋습니다. 새로운 Cloud Manager 구성 파이프라인을 설정하고, 구성 파일에 규칙을 선언하고, 악성 트래픽에 대한 CDN 로그를 분석하는 과정을 이해할 수 있습니다.
 
 트래픽 필터 규칙은 이제 개발 환경에서 이용할 수 있으며, 11월에는 스테이지 및 프로덕션 환경에 점진적으로 롤아웃됩니다. **aemcs-waf-adopter@adobe.com**&#x200B;으로 이메일을 보내어 스테이지 및 프로덕션에 대한 조기 액세스를 요청할 수 있습니다.
 

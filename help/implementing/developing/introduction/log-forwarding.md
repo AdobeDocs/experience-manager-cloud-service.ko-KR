@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->이 기능은 아직 릴리스되지 않았으며 일부 로깅 대상은 릴리스 시점에 사용하지 못할 수 있습니다. 그동안 로그를 전달할 지원 티켓을 열 수 있습니다. **스플렁크**&#x200B;에 설명된 대로 [기록 문서](/help/implementing/developing/introduction/logging.md).
+>이 기능은 아직 릴리스되지 않았으며 일부 로깅 대상은 릴리스 시점에 사용하지 못할 수 있습니다. 그동안 [로깅 문서](/help/implementing/developing/introduction/logging.md)에 설명된 대로 지원 티켓을 열어 로그를 **Splunk**&#x200B;에 전달할 수 있습니다.
 
 로깅 공급업체나 로깅 제품 호스트에 대한 라이센스가 있는 고객은 AEM 로그(Apache/Dispatcher 포함) 및 CDN 로그를 관련 로깅 대상으로 전달할 수 있습니다. AEM as a Cloud Service은 다음 로깅 대상을 지원합니다.
 
@@ -51,7 +51,7 @@ AEM 및 Apache/Dispatcher 로그를 전용 이그레스 IP와 같은 AEM의 고�
         logForwarding.yaml
    ```
 
-1. `logForwarding.yaml` 에는 메타데이터와 다음 형식과 유사한 구성이 포함되어야 합니다(예제로 Splunk 사용).
+1. `logForwarding.yaml`은(는) 메타데이터와 다음 형식과 유사한 구성을 포함해야 합니다(Splunk를 예로 사용).
 
    ```
    kind: "LogForwarding"
@@ -67,11 +67,11 @@ AEM 및 Apache/Dispatcher 로그를 전용 이그레스 IP와 같은 AEM의 고�
          index: "AEMaaCS"
    ```
 
-   다음 **종류** 매개 변수는 다음으로 설정해야 합니다. `LogForwarding` 버전은 1인 스키마 버전으로 설정해야 합니다.
+   **종류** 매개 변수는 `LogForwarding`(으)로 설정해야 합니다. 버전은 스키마 버전(1)으로 설정해야 합니다.
 
-   구성의 토큰(예: `${{SPLUNK_TOKEN}}`)는 비밀을 나타내며 Git에 저장해서는 안 됩니다. 대신 Cloud Manager으로 선언하십시오.  [환경 변수](/help/implementing/cloud-manager/environment-variables.md) 유형 **비밀**. 다음을 선택하십시오. **모두** 적용된 서비스 필드의 드롭다운 값으로, 로그를 작성자, 게시 및 미리보기 계층에 전달할 수 있습니다.
+   구성의 토큰(예: `${{SPLUNK_TOKEN}}`)은 비밀을 나타내며 Git에 저장해서는 안 됩니다. 대신 **암호** 형식의 Cloud Manager [환경 변수](/help/implementing/cloud-manager/environment-variables.md)(으)로 선언하십시오. 로그를 작성자, 게시 및 미리보기 계층에 전달할 수 있도록 서비스 적용 필드의 드롭다운 값으로 **모두**&#x200B;를 선택해야 합니다.
 
-   추가 정보를 포함하여 CDN 로그와 AEM 로그(Apache/Dispatcher 포함) 간에 다른 값을 설정할 수 있습니다 **cdn** 및/또는 **aem** 다음 이후 차단 **기본값** 블록입니다. 여기서 속성은 다음에 정의된 속성을 재정의할 수 있습니다. **기본값** 블록, 활성화된 속성만 필요합니다. 아래 예제에서 보듯이 CDN 로그에 대해 다른 Splunk 인덱스를 사용하는 것이 사용 사례일 수 있습니다.
+   **default** 블록 뒤에 추가 **cdn** 및/또는 **aem** 블록을 포함하여 CDN 로그와 AEM 로그(Apache/Dispatcher 포함) 간에 다른 값을 설정할 수 있습니다. 여기서 속성은 **default** 블록에 정의된 값을 무시할 수 있습니다. 활성화된 속성만 필요합니다. 아래 예제에서 보듯이 CDN 로그에 대해 다른 Splunk 인덱스를 사용하는 것이 사용 사례일 수 있습니다.
 
    ```
       kind: "LogForwarding"
@@ -148,7 +148,7 @@ data:
 
 #### Azure Blob 저장소 CDN 로그 {#azureblob-cdn}
 
-전역적으로 분산된 각 로깅 서버는 `aemcdn` 폴더를 삭제합니다. 파일이 만들어지면에 더 이상 추가되지 않습니다. 파일 이름 형식은 YYYY-MM-DDThh입니다.:mm:ss.sss-uniqueid.log. 예: 2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log.
+전역으로 분산된 각 로깅 서버는 `aemcdn` 폴더 아래에서 몇 초마다 새 파일을 생성합니다. 파일이 만들어지면에 더 이상 추가되지 않습니다. 파일 이름 형식은 YYYY-MM-DDThh:mm:ss.sss-uniqueid.log입니다. 예: 2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log.
 
 예를 들어, 특정 시점에서 다음과 같은 작업을 수행할 수 있습니다.
 
@@ -169,7 +169,7 @@ aemcdn/
    2024-03-04T10:00:30.000-mno.log
 ```
 
-각 파일에는 여러 JSON 로그 항목이 포함되어 있으며 각 항목은 별도의 줄에 있습니다. 로그 항목 형식은 다음에 설명되어 있습니다 [기록 문서](/help/implementing/developing/introduction/logging.md), 각 로그 항목에는 다음에 언급된 추가 속성도 포함됩니다. [로그 항목 형식](#log-format) 아래 섹션.
+각 파일에는 여러 JSON 로그 항목이 포함되어 있으며 각 항목은 별도의 줄에 있습니다. 로그 항목 형식은 [로깅 문서](/help/implementing/developing/introduction/logging.md)에 설명되어 있으며 각 로그 항목에는 아래의 [로그 항목 형식](#log-format) 섹션에 언급된 추가 속성도 포함되어 있습니다.
 
 #### Azure Blob 저장소 AEM 로그 {#azureblob-aem}
 
@@ -183,7 +183,7 @@ AEM 로그(Apache/Dispatcher 포함)는 다음 명명 규칙을 사용하여 폴
 
 각 폴더 아래에 하나의 파일이 만들어지고 추가됩니다. 고객은 이 파일의 크기가 너무 커지지 않도록 처리 및 관리를 담당합니다.
 
-다음에서 로그 항목 형식 확인: [기록 문서](/help/implementing/developing/introduction/logging.md). 로그 항목에는 다음에 언급된 추가 속성도 포함됩니다. [로그 항목 형식](#log-formats) 아래 섹션.
+[로깅 문서](/help/implementing/developing/introduction/logging.md)에서 로그 항목 형식을 참조하십시오. 로그 항목에는 아래의 [로그 항목 형식](#log-formats) 섹션에서 언급한 추가 속성도 포함됩니다.
 
 
 ### Datadog {#datadog}
@@ -234,7 +234,7 @@ data:
 
 ![탄력적인 배포 자격 증명](/help/implementing/developing/introduction/assets/ec-creds.png)
 
-* 선택적 파이프라인 속성은 로그 항목을 적절한 인덱스로 라우팅하도록 구성할 수 있는 Elasticsearch 또는 OpenSearch 수집 파이프라인의 이름으로 설정되어야 합니다. 파이프라인의 프로세서 유형을 로 설정해야 합니다. *script* 스크립트 언어는 다음으로 설정해야 합니다. *고통 없이*. 다음은 aemaccess_dev_26_06_2024와 같은 인덱스로 로그 항목을 라우팅하는 샘플 스크립트 스니펫입니다.
+* 선택적 파이프라인 속성은 로그 항목을 적절한 인덱스로 라우팅하도록 구성할 수 있는 Elasticsearch 또는 OpenSearch 수집 파이프라인의 이름으로 설정되어야 합니다. 파이프라인의 프로세서 유형을 *script*(으)로 설정하고 스크립트 언어를 *painless*(으)로 설정해야 합니다. 다음은 aemaccess_dev_26_06_2024와 같은 인덱스로 로그 항목을 라우팅하는 샘플 스크립트 스니펫입니다.
 
 ```
 def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
@@ -260,20 +260,20 @@ data:
 
 #### HTTPS CDN 로그 {#https-cdn}
 
-웹 요청(POST)은 로그 항목의 배열인 JSON 페이로드와 함께 연속적으로 전송되며 로그 항목 형식은 다음에 설명되어 있습니다. [기록 문서](/help/implementing/developing/introduction/logging.md#cdn-log). 추가 속성은에 설명되어 있습니다. [로그 항목 형식](#log-formats) 아래 섹션.
+[로깅 문서](/help/implementing/developing/introduction/logging.md#cdn-log)에 설명된 로그 항목 형식을 사용하여 로그 항목의 배열인 json 페이로드와 함께 웹 요청(POST)이 지속적으로 전송됩니다. 추가 속성은 아래의 [로그 항목 형식](#log-formats) 섹션에 설명되어 있습니다.
 
-이름이 인 속성도 있습니다. `sourcetype`, 값으로 설정됨 `aemcdn`.
+`aemcdn` 값으로 설정된 `sourcetype` 속성도 있습니다.
 
 >[!NOTE]
 >
-> 첫 번째 CDN 로그 항목이 전송되기 전에 HTTP 서버는 경로로 전송된 요청을 성공적으로 완료해야 합니다 ``wellknownpath`` 다음으로 응답해야 함 ``*``.
+> 첫 번째 CDN 로그 항목이 전송되기 전에 HTTP 서버가 일회성 요청을 성공적으로 완료해야 합니다. ``wellknownpath`` 경로로 전송된 요청은 ``*``(으)로 응답해야 합니다.
 
 
 #### HTTPS AEM 로그 {#https-aem}
 
-AEM 로그(apache/dispatcher 포함)의 경우 웹 요청(POST)이 로그 항목의 배열인 json 페이로드와 함께 지속적으로 전송되며, 여기에 설명된 다양한 로그 항목 형식이 사용됩니다. [기록 문서](/help/implementing/developing/introduction/logging.md). 추가 속성은에 설명되어 있습니다. [로그 항목 형식](#log-format) 아래 섹션.
+AEM 로그(apache/dispatcher 포함)의 경우 [logging article](/help/implementing/developing/introduction/logging.md)에 설명된 대로 다양한 로그 항목 형식이 포함된 로그 항목의 배열인 json 페이로드와 함께 웹 요청(POST)이 지속적으로 전송됩니다. 추가 속성은 아래의 [로그 항목 형식](#log-format) 섹션에 설명되어 있습니다.
 
-이름이 인 속성도 있습니다. `sourcetype`: 다음 값 중 하나로 설정됩니다.
+다음 값 중 하나로 설정된 `sourcetype` 속성도 있습니다.
 
 * aemaccess
 * aemerror
@@ -318,7 +318,7 @@ data:
 
 ## 로그 항목 형식 {#log-formats}
 
-일반 참조 [기록 문서](/help/implementing/developing/introduction/logging.md) 각 로그 유형의 형식용(CDN 로그 및 Apache/Dispatcher을 포함한 AEM 로그)
+각 로그 유형(CDN 로그 및 Apache/Dispatcher을 포함한 AEM 로그)의 형식은 일반 [로깅 문서](/help/implementing/developing/introduction/logging.md)를 참조하십시오.
 
 여러 프로그램 및 환경의 로그를 동일한 로깅 대상으로 전달할 수 있으므로 로깅 문서에 설명된 출력 외에 각 로그 항목에는 다음 속성이 포함됩니다.
 
@@ -345,9 +345,9 @@ aem_tier: author
 
 일부 조직에서는 로깅 대상에서 수신할 수 있는 트래픽을 제한하도록 선택합니다.
 
-CDN 로그의 경우에서 설명한 대로 IP 주소를 허용 목록에 추가할 수 있습니다 [이 문서](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). 공유 IP 주소 목록이 너무 크면 (Adobe이 아닌) Azure Blob Store에 트래픽을 보내는 것이 좋습니다. 여기서 논리를 작성하여 전용 IP에서 로그를 최종 대상으로 보낼 수 있습니다.
+CDN 로그의 경우 [이 문서](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)에 설명된 대로 IP 주소를 허용 목록에 추가할 수 있습니다. 공유 IP 주소 목록이 너무 크면 (Adobe이 아닌) Azure Blob Store에 트래픽을 보내는 것이 좋습니다. 여기서 논리를 작성하여 전용 IP에서 로그를 최종 대상으로 보낼 수 있습니다.
 
-AEM 로그(Apache/Dispatcher 포함)의 경우 다음을 거치도록 로그 전달을 구성할 수 있습니다 [고급 네트워킹](/help/security/configuring-advanced-networking.md). 선택 사항을 사용하는 아래 세 가지 고급 네트워킹 유형에 대한 패턴을 참조하십시오 `port` 매개 변수, `host` 매개 변수.
+AEM 로그(Apache/Dispatcher 포함)의 경우 [고급 네트워킹](/help/security/configuring-advanced-networking.md)을 거치도록 로그 전달을 구성할 수 있습니다. `host` 매개 변수와 함께 선택적 `port` 매개 변수를 사용하는 아래 세 가지 고급 네트워킹 유형에 대한 패턴을 참조하십시오.
 
 ### 유연한 포트 이그레스 {#flex-port}
 

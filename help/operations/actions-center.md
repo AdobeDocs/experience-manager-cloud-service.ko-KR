@@ -47,7 +47,7 @@ AEM as Cloud Service는 최적화에 즉각적인 조치 및 사전 알림 추�
 
 ![알림 목록](/help/operations/assets/notification-list.png)
 
-대부분의 경우 팝업은 문제를 해결하는 데 필요한 모든 컨텍스트를 제공해야 합니다. 하지만 Adobe 지원에 대한 질문이 있는 경우 **지원 문의** 링크를 클릭합니다. 이렇게 하면 질문을 설명하고 지원 티켓을 만들기 위해 제출할 수 있는 양식이 표시되며, 여기에는 Adobe 지원 엔지니어가 관련 컨텍스트를 확보할 수 있도록 특정 알림에 대한 참조도 포함됩니다.
+대부분의 경우 팝업은 문제를 해결하는 데 필요한 모든 컨텍스트를 제공해야 합니다. 그러나 Adobe 지원에 대한 질문이 있는 경우 팝업에서 **지원 문의** 링크를 클릭할 수 있습니다. 이렇게 하면 질문을 설명하고 지원 티켓을 만들기 위해 제출할 수 있는 양식이 표시되며, 여기에는 Adobe 지원 엔지니어가 관련 컨텍스트를 확보할 수 있도록 특정 알림에 대한 참조도 포함됩니다.
 
 ![지원에 문의 1](/help/operations/assets/contact-support1.png)
 
@@ -65,7 +65,7 @@ AEM as a Cloud Service에는 여러 유형의 알림이 있지만 아래 그림�
 |---------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
 | 운영 인시던트 | 즉각적인 조치가 필요한 중대 인시던트 | “인시던트 알림 - Cloud Service” 제품 프로필에 할당된 사용자 | X |
 | 사전 알림 추천 | 계획을 수립해야 하는 최적화 | “사전 알림 - Cloud Service” 제품 프로필에 할당된 사용자 | X |
-| Cloud Manager 파이프라인 상태 | 파이프라인 상태에 대한 정보 | 비즈니스 소유자, 프로그램 관리자 또는 배포 관리자 역할을 가진 사용자가에서 &quot;기타&quot; 확인란이 선택됨 [Experience Cloud 환경 설정](https://experience.adobe.com/preferences), 로서의 [여기에 설명됨](/help/implementing/cloud-manager/notifications.md). |                           |
+| Cloud Manager 파이프라인 상태 | 파이프라인 상태에 대한 정보 | 비즈니스 소유자, 프로그램 관리자 또는 배포 관리자 역할의 사용자, &quot;기타&quot; 확인란이 [Experience Cloud 환경 설정](https://experience.adobe.com/preferences)에서 [여기에 설명된](/help/implementing/cloud-manager/notifications.md)대로 선택되었습니다. |                           |
 
 ## 지원되는 알림 유형 {#supported-notification-types}
 
@@ -74,14 +74,14 @@ AEM as a Cloud Service에는 여러 유형의 알림이 있지만 아래 그림�
 | 알림 유형 | 관련 제품 프로필 | 수정 조치 |
 |---------------------------------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 차단된 복제 대기열 | 인시던트 | [복제 문서](/help/operations/replication.md#troubleshooting)의 지침에 따라 대기열 차단을 해제합니다. |
-| 잘못된 지속 GraphQL 쿼리 | 인시던트 | 를 참조하여 잘못된 GraphQL 쿼리를 수정합니다. [지속 GraphQL 쿼리 문제 해결 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
-| 원본 트래픽 스파이크 | 인시던트 | 원본 경고의 기본 트래픽 스파이크보다 낮은 임계값에서 트리거하는 비율 제한 트래픽 필터 규칙을 구성하여 원본을 Protect 합니다.  다음을 참조하십시오. [트래픽 규칙을 사용하여 DoS 및 DDoS 공격 차단](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) 튜토리얼을 참조하는 트래픽 필터 규칙 설명서의 섹션입니다. |
-| 페이지에 많은 수의 노드가 포함되어 있습니다. | 사전 알림 | 페이지 내 총 노드 수를 줄입니다. 을(를) 참조하십시오 [페이지 복잡성 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | |
-| 실행 중인 많은 워크플로 인스턴스 | 사전 알림 | 더 이상 필요하지 않은 실행 중인 워크플로우를 종료합니다. 방법 알아보기 [제거 작업 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/maintenance) |               |
-| 만료되는 S2S 인증서 | 사전 알림 | [서버측 API용 액세스 토큰 생성 문서](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)에서 자격 증명을 새로 고치는 방법에 대해 알아보십시오. | 높은 연결 수 | 사전 알림 | 에서 연결 풀링에 대해 알아보기 [고급 네트워킹 설명서와 함께 연결 풀링](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
-| 더 이상 사용되지 않는 서비스 사용자 매핑 | 사전 알림 | 에 표시된 대로 최신 Sling 서비스 사용자 매핑 형식을 사용하는 방법에 대해 알아봅니다. [Sling 서비스 사용자 매핑 및 서비스 사용자 정의에 대한 우수 사례](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition) |
-| 높은 연결 수 | 사전 알림 | 에서 연결 풀링에 대해 알아보기 [고급 네트워킹 설명서](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |  |
-| 사용자 정의 그룹에 직접 추가된 사용자 | 사전 알림 | 사용자를 관련 IMS 그룹에 추가하고 이러한 IMS 그룹을 AEM 그룹의 멤버로 추가해야 합니다. 정렬 기준 [IMS 모범 사례](/help/security/ims-support.md) | |
-| JCR 콘텐츠 누락 | 사전 알림 | 누락된 JCR 콘텐츠 노드를 추가합니다. 을(를) 참조하십시오 [Assets Content Validator 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
-| 완료된 워크플로가 삭제되지 않음 | 사전 알림 | 90일 이상 된 워크플로 인스턴스를 삭제하여 워크플로 인스턴스 수를 최소화하고 성능을 향상시킵니다. 방법 알아보기 [유지 관리 작업 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/maintenance) | |
-| 페이지에 Sling 리소스 유형 누락 | 사전 알림 | 누락된 Sling 리소스 유형 노드를 추가합니다. 을(를) 참조하십시오 [Assets Content Validator 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) |
+| 잘못된 지속 GraphQL 쿼리 | 인시던트 | [지속된 GraphQL 쿼리 문제 해결 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html)를 참조하여 잘못된 GraphQL 쿼리를 수정하십시오. |
+| 원본 트래픽 스파이크 | 인시던트 | 원본 경고의 기본 트래픽 스파이크보다 낮은 임계값에서 트리거하는 비율 제한 트래픽 필터 규칙을 구성하여 원본을 Protect 합니다.  자습서를 참조하는 트래픽 필터 규칙 설명서의 [트래픽 규칙을 사용하여 DoS 및 DDoS 공격 차단](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) 섹션을 참조하십시오. |
+| 페이지에 많은 수의 노드가 포함되어 있습니다. | 사전 알림 | 페이지 내 총 노드 수를 줄입니다. [페이지 복잡성 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx)를 참조하세요. | |
+| 실행 중인 많은 워크플로 인스턴스 | 사전 알림 | 더 이상 필요하지 않은 실행 중인 워크플로우를 종료합니다. [제거 작업을 구성하는 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/maintenance) 알아보기 |               |
+| 만료되는 S2S 인증서 | 사전 알림 | [서버측 API용 액세스 토큰 생성 문서](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)에서 자격 증명을 새로 고치는 방법에 대해 알아보십시오. | 높은 연결 수 | 사전 알림 | [고급 네트워킹 설명서와 함께 연결 풀링에 대해 알아봅니다](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
+| 더 이상 사용되지 않는 서비스 사용자 매핑 | 사전 알림 | [Sling 서비스 사용자 매핑 및 서비스 사용자 정의에 대한 우수 사례](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition)에 나와 있는 대로 최신 Sling 서비스 사용자 매핑 형식을 사용하는 방법에 대해 알아봅니다. |
+| 높은 연결 수 | 사전 알림 | [고급 네트워킹 설명서](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking)에서 연결 풀링에 대해 알아봅니다. |  |
+| 사용자 정의 그룹에 직접 추가된 사용자 | 사전 알림 | 사용자를 관련 IMS 그룹에 추가하고 이러한 IMS 그룹을 AEM 그룹의 멤버로 추가해야 합니다. [IMS 모범 사례](/help/security/ims-support.md)에 맞추기 | |
+| JCR 콘텐츠 누락 | 사전 알림 | 누락된 JCR 콘텐츠 노드를 추가합니다. [Assets Content Validator 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv)를 참조하세요. | |
+| 완료된 워크플로가 삭제되지 않음 | 사전 알림 | 90일 이상 된 워크플로 인스턴스를 삭제하여 워크플로 인스턴스 수를 최소화하고 성능을 향상시킵니다. [유지 관리 작업을 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/maintenance)하는 방법 알아보기 | |
+| 페이지에 Sling 리소스 유형 누락 | 사전 알림 | 누락된 Sling 리소스 유형 노드를 추가합니다. [Assets Content Validator 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv)를 참조하세요. |

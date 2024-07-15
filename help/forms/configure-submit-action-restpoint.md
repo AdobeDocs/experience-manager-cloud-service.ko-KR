@@ -15,13 +15,13 @@ ht-degree: 60%
 
 # REST 끝점 제출 작업에 대한 적응형 양식 구성
 
-사용 **[!UICONTROL REST 끝점에 제출]** 제출된 데이터를 REST URL에 게시하는 작업입니다. URL은 내부 서버(양식이 렌더링되는 서버) 또는 외부 서버일 수 있습니다.
+**[!UICONTROL REST 끝점에 제출]** 작업을 사용하여 제출된 데이터를 REST URL에 게시합니다. URL은 내부 서버(양식이 렌더링되는 서버) 또는 외부 서버일 수 있습니다.
 
-AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 제출 액션을 제공합니다. 다음에서 이러한 옵션에 대해 자세히 알아볼 수 있습니다. [적응형 양식 제출 액션](/help/forms/configure-submit-actions-core-components.md)  기사.
+AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 제출 액션을 제공합니다. [적응형 양식 제출 액션](/help/forms/configure-submit-actions-core-components.md) 문서에서 이러한 옵션에 대해 자세히 알아볼 수 있습니다.
 
 ## 장점
 
-를 구성할 때의 몇 가지 이점 **[!UICONTROL REST 끝점에 제출]** 적응형 Forms에 대한 제출 액션은 다음과 같습니다.
+적응형 Forms에 대한 **[!UICONTROL REST 끝점에 제출]** 제출 액션을 구성하는 것의 이점 중 일부는 다음과 같습니다.
 
 * RESTful API를 통해 양식 데이터를 외부 시스템 및 서비스와 매끄럽게 통합할 수 있습니다.
 * 적응형 Forms의 데이터 제출을 유연하게 처리하여 다이내믹하고 복잡한 데이터 구조를 지원합니다.
@@ -35,8 +35,8 @@ AEM as a Cloud Service에서는 양식 제출을 처리하기 위한 다양한 �
 1. 콘텐츠 브라우저를 열고 적응형 양식의 **[!UICONTROL 안내서 컨테이너]** 구성 요소를 선택합니다.
 1. 안내서 컨테이너 속성 ![안내서 속성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭합니다. 적응형 양식 컨테이너 대화 상자가 열립니다.
 1. **[!UICONTROL 제출]** 탭을 클릭합니다.
-1. 다음에서 **[!UICONTROL 제출 액션]** 드롭다운 목록에서 다음을 선택합니다. **[!UICONTROL Rest 끝점에 제출]**.
-   ![Rest에 제출 엔드포인트의 작업 구성](/help/forms/assets/submit-action-restendpoint.png)
+1. **[!UICONTROL 작업 제출]** 드롭다운 목록에서 **[!UICONTROL Rest 끝점에 제출]**을 선택합니다.
+   ![Rest 끝점에 제출의 작업 구성](/help/forms/assets/submit-action-restendpoint.png)
 
    데이터를 내부 서버에 게시하려면 리소스 경로를 제공합니다. 데이터는 리소스 경로에 게시됩니다. 예, `/content/restEndPoint`. 해당 게시 요청이 있는 경우 제출 요청에 대한 인증 정보가 사용됩니다.
 

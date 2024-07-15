@@ -83,7 +83,7 @@ AEM에서는 일반적으로 사용되는 일부 기능(편집, 속성, 복사/�
 
 ## 페이지 편집기의 키보드 단축키 {#keyboard-shortcuts-for-the-page-editor}
 
-AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 일부는 콘솔 사용에 적용되고 일부는 다음에 적용됩니다 [페이지 편집](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
+AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 일부는 콘솔 사용에 적용되고 일부는 [페이지 편집](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)에 적용됩니다.
 
 ## Content 조각 콘솔의 키보드 단축키 {#keyboard-shortcuts-for-the-content-fragments-console}
 

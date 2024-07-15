@@ -47,7 +47,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
       * [미리보기 모드](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)
       * [게시됨으로 보기](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 
-* 버전이 페이지 편집기에서 시작/작성되지 않습니다. 이제 다음에서 이 작업을 수행합니다. **사이트** 콘솔(다음 중 하나를 통해) **만들기** 또는 [타임라인](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) (선택한 리소스)에 사용할 수 있습니다.
+* 버전이 페이지 편집기에서 시작/작성되지 않습니다. 이제 선택한 리소스에 대해 **만들기** 또는 [타임라인](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)을 통해 **사이트** 콘솔에서 이 작업을 수행합니다.
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 1. Adobe Experience Manager 링크(왼쪽 상단)를 선택하면 트리거되는(드롭다운) **전역 탐색**&#x200B;에서 **Sites** 옵션을 사용하여 [Sites](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) 콘솔을 엽니다.
 
-1. 해당 페이지를 탭/클릭하여 트리 아래로 탐색합니다. 페이지 리소스가 표시되는 방식은 사용 중인 보기에 따라 다릅니다. - [카드, 목록 또는 열](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources):
+1. 해당 페이지를 탭/클릭하여 트리 아래로 탐색합니다. 페이지 리소스가 표시되는 방식은 사용 중인 보기([카드, 목록 또는 열](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources))에 따라 다릅니다.
 
    ![선택 항목 보기 드롭다운](/help/sites-cloud/authoring/assets/views.png)
 
@@ -76,7 +76,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 ### 새 페이지 만들기 {#creating-a-new-page}
 
-종료 [페이지 만들기](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
+[페이지를 만들려면](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
 
 1. 새 페이지를 만들 [위치로 이동](#finding-your-page)합니다.
 1. **만들기** 아이콘을 사용한 다음 목록에서 **페이지**&#x200B;를 선택합니다.
@@ -114,7 +114,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 [빠른 작업](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)을 사용할 수 있습니다.
 
-1. [페이지로 이동](#finding-your-page) 행동하고 싶으시군요.
+1. [수행할 페이지로 이동](#finding-your-page).
 1. 필요한 리소스를 나타내는 카드 위로 마우스 포인터를 가져갑니다. 빠른 작업이 표시됩니다.
 
    ![카드 작업](/help/sites-cloud/authoring/assets/card-actions.png)
@@ -160,11 +160,11 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
    * 다음 방법 중 하나로 [구성 요소를 이동](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component)합니다.
 
       * 필요한 구성 요소를 새 위치로 끕니다.
-      * 둘 중 하나를 선택하여 구성 요소 도구 모음을 엽니다. 사용 **잘라내기** 그러면 **붙여넣기** 필요한 아이콘입니다.
+      * 둘 중 하나를 선택하여 구성 요소 도구 모음을 엽니다. 필요한 경우 **잘라내기**&#x200B;를 사용한 다음 **붙여넣기** 아이콘을 사용합니다.
 
    * 구성 요소 [복사(및 붙여넣기):](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)
 
-      * 둘 중 하나를 선택하여 구성 요소 도구 모음을 엽니다. 사용 **복사** 그러면 **붙여넣기** 필요에 따라 아이콘을 클릭합니다.
+      * 둘 중 하나를 선택하여 구성 요소 도구 모음을 엽니다. 필요에 따라 **복사**&#x200B;를 사용한 다음 **붙여넣기** 아이콘을 사용합니다.
 
    >[!NOTE]
    >
@@ -172,7 +172,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    * 구성 요소 [삭제:](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)
 
-      * 을(를) 선택하여 구성 요소 도구 모음을 열고 다음을 사용합니다. **삭제** 아이콘.
+      * 둘 중 하나를 선택하여 구성 요소 도구 모음을 열고 **삭제** 아이콘을 사용합니다.
 
    * 페이지에 [주석 추가](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations):
 
@@ -302,7 +302,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    ![타임라인 보기 옵션](/help/sites-cloud/authoring/assets/timeline.png)
 
-1. 타임라인 열 오른쪽 하단에 있는 생략 부호를 선택하여 다음을 포함한 추가 단추를 표시합니다. **다른 버전으로 저장**.
+1. 타임라인 열 오른쪽 하단에 있는 생략 부호를 선택하여 **다른 버전으로 저장**&#x200B;을 비롯한 추가 단추를 표시합니다.
 
    ![타임라인 보기](/help/sites-cloud/authoring/assets/timeline-view.png)
 

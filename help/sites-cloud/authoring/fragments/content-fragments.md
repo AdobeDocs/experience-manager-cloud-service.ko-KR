@@ -133,8 +133,8 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
 
 중간 콘텐츠에서 다음 작업을 수행할 수 있습니다.
 
-* 에서 구성 요소 추가 [구성 요소 브라우저.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
-* 에서 에셋 추가 [에셋 브라우저.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
+* [구성 요소 브라우저에서 구성 요소를 추가합니다.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+* [Assets 브라우저에서 자산을 추가합니다.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
 * 중간 콘텐츠 소스로 [연결된 콘텐츠](#using-associated-content)를 사용합니다.
 
 >[!CAUTION]

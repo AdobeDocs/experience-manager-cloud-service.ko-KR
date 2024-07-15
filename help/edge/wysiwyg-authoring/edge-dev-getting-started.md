@@ -131,7 +131,7 @@ Edge Delivery는 GitHub를 활용하므로 GitHub 저장소에서 바로 코드�
 >
 >Universal Editor를 사용하여 사이트를 편집하려면 Chromium 기반 브라우저를 사용해야 합니다.
 
-1. GitHub에서 Edge Delivery Services 사이트 템플릿을 사용하여 최신 WYSIWYG 작성 다운로드: [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
+1. [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)의 GitHub에서 Edge Delivery Services 사이트 템플릿을 사용하여 최신 WYSIWYG 작성을 다운로드합니다.
 
 1. AEM as a Cloud Service 작성 인스턴스에 로그인하고 사이트 콘솔로 이동하여 **만들기** -> **템플릿으로 사이트 생성**&#x200B;을 탭하거나 클릭합니다.
 
@@ -199,4 +199,4 @@ Universal Editor를 사용하여 새 사이트 편집을 마쳤다면 콘텐츠�
 
 >[!TIP]
 >
->AEMas a Cloud Service 를 콘텐츠 소스로 사용하여 WYSIWYG 작성을 위해 활성화된 새 Edge Delivery Services 프로젝트 만들기에 대한 전체적인 설명은 를 참조하십시오. [이 AEM GEM 웨비나.](https://experienceleague.adobe.com/ko/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>AEM as a Cloud Service을 콘텐츠 소스로 사용하여 WYSIWYG 작성을 위해 사용할 수 있는 새 Edge Delivery Services 프로젝트를 만드는 방법에 대한 전체적인 설명은 [이 AEM GEM 웨비나를 참조하십시오.](https://experienceleague.adobe.com/ko/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)

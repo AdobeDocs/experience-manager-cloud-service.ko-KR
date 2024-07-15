@@ -36,7 +36,7 @@ Cloud Service 환경에서 적응형 Forms 캐시를 구성하거나 사용하�
 
 1. Experience Manager 프로젝트를 엽니다.
 1. 편집할 `dispatcher/scr/conf.d/rewrites/rewrite.rules`을 엽니다.
-1. 를 엽니다. `conf.d/httpd-dispatcher.conf` 또는 런타임 시 로드되도록 구성된 기타 모든 구성 파일입니다.
+1. 런타임 시 로드되도록 구성된 `conf.d/httpd-dispatcher.conf` 또는 다른 구성 파일을 엽니다.
 1. 다음 코드를 파일에 추가하고 저장합니다. 샘플 코드이며 환경에 맞게 수정합니다.
 
 ```shellscript
@@ -61,7 +61,7 @@ CDN 캐싱은 300초 후에 작동을 멈추고 CDN에서 캐시하기 위한 �
 
 이 문제를 해결하려면 age 헤더를 0으로 설정합니다.
 
-1. 다음 위치에 파일 만들기 `src\conf.d\available_vhosts`
+1. `src\conf.d\available_vhosts`에 파일 만들기
 
 1. 파일에 다음을 추가하여 연령 헤더 설정
 
@@ -73,4 +73,4 @@ CDN 캐싱은 300초 후에 작동을 멈추고 CDN에서 캐시하기 위한 �
    ```
 
 1. 파일을 저장하고 닫습니다.
-1. 의 소프트 링크 수정 `src\conf.d\enabled_vhosts\default.vhost` 새 파일을 가리킵니다.
+1. 새 파일을 가리키도록 `src\conf.d\enabled_vhosts\default.vhost`에 대한 소프트 링크를 수정하십시오.

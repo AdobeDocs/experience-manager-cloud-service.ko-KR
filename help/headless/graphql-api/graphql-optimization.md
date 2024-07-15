@@ -21,13 +21,13 @@ ht-degree: 64%
 
 ## GraphQL 검사 목록 {#graphql-checklist}
 
-다음 체크리스트는 Adobe Experience Manager(AEM as a Cloud Service)에서 GraphQL의 구성 및 사용을 최적화하는 데 도움이 되는 것입니다.
+다음 체크리스트는 Adobe Experience Manager(AEM as a Cloud Service)의 GraphQL 구성 및 사용을 최적화하는 데 도움이 되는 것입니다.
 
 ### 첫 번째 원칙 {#first-principles}
 
 #### 지속 GraphQL 쿼리 사용 {#use-persisted-graphql-queries}
 
-**추천**
+**권장 사항**
 
 지속 GraphQL 쿼리를 사용하는 것이 좋습니다.
 
@@ -46,9 +46,9 @@ ht-degree: 64%
 
 #### AEM Dispatcher 캐싱 활성화 {#enable-aem-dispatcher-caching}
 
-**추천**
+**권장 사항**
 
-[AEM 디스패처](/help/implementing/dispatcher/overview.md) 는 AEM 서비스 내에서 CDN 캐시 이전의 첫 번째 수준 캐시입니다.
+[AEM Dispatcher](/help/implementing/dispatcher/overview.md)은(는) CDN 캐시 이전의 AEM 서비스 내 첫 번째 수준 캐시입니다.
 
 **추가 참조**
 
@@ -58,9 +58,9 @@ ht-degree: 64%
 
 #### CDN(Content Delivery Network) 사용 {#use-cdn}
 
-**추천**
+**권장 사항**
 
-GraphQL 쿼리 및 해당 JSON 응답은 타깃팅한 경우 캐시될 수 있습니다. `GET` cdn 사용 시 요청. 반대로 캐시되지 않은 요청은 매우 (리소스) 비용이 많이 들고 처리 속도가 느릴 수 있으며, 이로 인해 원본 리소스에 추가 해로운 영향을 미칠 수 있습니다.
+CDN을 사용할 때 `GET` 요청으로 타깃팅된 경우 GraphQL 쿼리 및 해당 JSON 응답이 캐시될 수 있습니다. 반대로 캐시되지 않은 요청은 매우 (리소스) 비용이 많이 들고 처리 속도가 느릴 수 있으며, 이로 인해 원본 리소스에 추가 해로운 영향을 미칠 수 있습니다.
 
 **추가 참조**
 
@@ -70,11 +70,11 @@ GraphQL 쿼리 및 해당 JSON 응답은 타깃팅한 경우 캐시될 수 있�
 
 #### HTTP 캐시 제어 헤더 설정 {#set-http-cache-control-headers}
 
-**추천**
+**권장 사항**
 
 CDN과 함께 지속 GraphQL 쿼리를 사용하는 경우 적절한 HTTP 캐시 제어 헤더를 설정하는 것이 좋습니다.
 
-각 지속 쿼리에는 고유한 캐시 제어 헤더 집합이 있을 수 있습니다. 머리글은 다음에 대해 설정할 수 있습니다. [GRAPHQL API](/help/headless/graphql-api/content-fragments.md) 또는 [AEM GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md).
+각 지속 쿼리에는 고유한 캐시 제어 헤더 집합이 있을 수 있습니다. 헤더는 [GraphQL API](/help/headless/graphql-api/content-fragments.md) 또는 [AEM GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)를 통해 설정할 수 있습니다.
 
 **추가 참조**
 
@@ -85,7 +85,7 @@ CDN과 함께 지속 GraphQL 쿼리를 사용하는 경우 적절한 HTTP 캐시
 
 #### AEM GraphQL 사전 캐싱 사용 {#use-aem-graphql-pre-caching}
 
-**추천**
+**권장 사항**
 
 이 기능을 사용하면 AEM에서 GraphQL 쿼리 범위 내에 콘텐츠를 추가로 캐싱할 수 있으며, 이 콘텐츠를 한 줄에 하나씩 캐싱하지 않고 JSON 출력의 블록으로 어셈블할 수 있습니다.
 
@@ -110,11 +110,11 @@ AEM은 GraphQL 쿼리를 최적화하는 데 2가지 접근 방식을 제공합�
 
    * [정렬](#use-graphql-sorting)은 최적화와 직접적인 관련은 없지만 페이징과 관련이 있음
 
-각 접근 방식에는 독자적인 사용 사례와 제한 사항이 있습니다. 이 섹션에서는 하이브리드 필터링 및 페이징에 대한 정보와 함께 [우수 사례](#best-practices) GraphQL 쿼리 최적화에 사용됩니다.
+각 접근 방식에는 독자적인 사용 사례와 제한 사항이 있습니다. 이 섹션에서는 GraphQL 쿼리를 최적화하는 데 사용되는 일부 [모범 사례](#best-practices)와 함께 하이브리드 필터링 및 페이징에 대한 정보를 제공합니다.
 
 #### AEM GraphQL 하이브리드 필터링 사용 {#use-aem-graphql-hybrid-filtering}
 
-**추천**
+**권장 사항**
 
 하이브리드 필터링은 JCR 필터링과 AEM 필터링을 결합한 것입니다.
 
@@ -139,14 +139,14 @@ JCR 필터(쿼리 제한 형식)를 적용한 후에 AEM 필터링을 위해 결
 
 #### GraphQL 페이지 매김 사용 {#use-aem-graphql-pagination}
 
-**추천**
+**권장 사항**
 
 GraphQL 표준인 페이지 매김을 사용하여 응답을 청크로 세분화함으로써, 결과 세트가 큰 복잡한 쿼리의 응답 시간을 향상시킬 수 있습니다.
 
 AEM에서 GraphQL은 2가지 유형의 페이지 매김을 지원합니다.
 
-* [limit/offset 기반 페이지 매김](/help/headless/graphql-api/content-fragments.md#list-offset-limit)
-목록 쿼리에 사용되며 다음으로 끝납니다. `List`; 예, `articleList`.
+* [제한/오프셋 기반 페이지 매김](/help/headless/graphql-api/content-fragments.md#list-offset-limit)
+목록 쿼리에 사용됩니다. `List`(예: `articleList`)로 끝납니다.
 이 페이지 매김을 사용하려면 반환할 첫 번째 항목의 위치(`offset`)와 반환할 항목 수(`limit` 또는 페이지 크기)를 제공해야 합니다.
 
 * [커서 기반 페이지 매김](/help/headless/graphql-api/content-fragments.md#paginated-first-after)(`first` 및 `after`로 표시)
@@ -169,7 +169,7 @@ AEM에서 GraphQL은 2가지 유형의 페이지 매김을 지원합니다.
 
 #### GraphQL 정렬 사용 {#use-graphql-sorting}
 
-**추천**
+**권장 사항**
 
 또한 GraphQL 표준인 정렬을 통해 클라이언트는 정렬된 순서대로 JSON 콘텐츠를 수신할 수 있습니다. 이를 통해 클라이언트에 대한 추가 처리 필요성을 줄일 수 있습니다.
 
@@ -290,7 +290,7 @@ GraphQL 쿼리에도 이 접근 방식을 적용해야 합니다.
 
 ### 모든 형식 출력 안 함(여러 줄 텍스트 요소) {#do-not-output-all-formats}
 
-AEM GraphQL은 다음에서 작성된 텍스트를 반환할 수 있습니다. **[여러 줄 텍스트](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** 데이터 유형(리치 텍스트, 단순 텍스트 및 Markdown 등 다양한 형식).
+AEM GraphQL은 **[여러 줄 텍스트](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** 데이터 형식으로 작성된 텍스트를 서식 있는 텍스트, 간단한 텍스트 및 Markdown의 다양한 형식으로 반환할 수 있습니다.
 
 세 형식을 모두 출력하면 JSON의 텍스트 출력 크기가 3배율로 증가합니다. 따라서 매우 광범위한 쿼리의 일반적으로 큰 결과 세트와 함께 매우 큰 JSON 응답을 생성할 수 있으므로 계산하는 데 시간이 오래 걸립니다. 콘텐츠를 렌더링하는 데 필요한 텍스트 형식으로만 출력을 제한하는 것이 좋습니다.
 

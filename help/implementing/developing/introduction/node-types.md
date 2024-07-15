@@ -18,6 +18,6 @@ AEM은 Sling을 기반으로 하며 JCR 저장소를 사용하므로 다음 두 
 * [JCR 노드 유형](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Sling 노드 유형](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
-이 외에도. AEM은 다양한 사용자 지정 노드 유형을 제공합니다. 연결된 모든 속성이 있는 최신 목록의 경우 [crxde 사용](/help/implementing/developing/tools/crxde.md) AEM 저장소에서 다음 경로를 찾아보려면 다음과 같이 하십시오.
+이 외에도. AEM은 다양한 사용자 지정 노드 유형을 제공합니다. 연결된 모든 속성이 있는 최신 목록을 보려면 [CRXDE를 사용](/help/implementing/developing/tools/crxde.md)하여 AEM 저장소에서 다음 경로를 찾아보십시오.
 
 `/jcr:system/jcr:nodeTypes`

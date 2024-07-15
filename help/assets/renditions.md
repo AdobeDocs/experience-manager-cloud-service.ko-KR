@@ -22,43 +22,43 @@ Dynamic Media 이미지 사전 설정 및 스마트 자르기 렌디션은 브�
 ## 정적 표현물 {#static-renditions}
 
 정적 렌디션은 디지털 에셋의 사전 생성된 버전으로, 일반적으로 에셋 수집 또는 수정 중에 만들어집니다. 이러한 렌디션은 웹 썸네일, 응답형 디자인을 위한 모바일 친화적 형식 또는 인쇄용 고해상도 버전과 같은 특정 목적 및 플랫폼에 최적화되어 효율적이고 일관된 경험을 보장합니다.
-학습 [보기 및 다운로드 방법](#view-dynamic-renditions) 의 정적 렌디션 [!DNL Experience Manager Assets].
+[!DNL Experience Manager Assets]에서 [정적 표현물을 보고 다운로드하는 방법](#view-dynamic-renditions)을 알아보세요.
 
 ## 동적 변환 {#dynamic-renditions}
 
 동적 변환은 장치 해상도에 따라 이미지 크기를 조정하거나 다양한 종횡비에 맞게 자르는 것과 같이 특정 요구 사항을 충족하도록 실시간으로 만들어진 자산의 사용자 지정 버전입니다.
-이러한 렌디션을 통해 조직은 다양한 대상 요구 사항에 개인화되고 최적화된 경험을 전달할 수 있습니다. 에서 동적 변환을 보고 다운로드할 수 있습니다. [!DNL Experience Manager Assets].
+이러한 렌디션을 통해 조직은 다양한 대상 요구 사항에 개인화되고 최적화된 경험을 전달할 수 있습니다. [!DNL Experience Manager Assets]에서 동적 변환을 보고 다운로드할 수 있습니다.
 
 ### 시작하기에 앞서
 
 * 라이선스가 있는 AEM Dynamic Media 사용자여야 합니다.
 
-* 사용 [!UICONTROL 관리자 보기] 설정하려면 다음을 수행하십시오.
+* [!UICONTROL 관리자 보기]를 사용하여 다음을 설정하십시오.
    * [스마트 자르기 이미지 프로필](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)
    * [이미지 사전 설정](/help/assets/dynamic-media/managing-image-presets.md)
 
-  다음을 수행할 수 있습니다. [보기 전환](/help/assets/assets-view-introduction.md#how-to-access-assets-view) 나중에 를 클릭하여 자산 보기에서 동적 변환을 미리 봅니다.
+  나중에 [보기를 전환](/help/assets/assets-view-introduction.md#how-to-access-assets-view)하여 Assets 보기에서 동적 변환을 미리 볼 수 있습니다.
 
 ### 동적 변환 보기 및 다운로드 {#view-renditions}
 
-에서 이미지의 동적 변환을 보거나 다운로드하려면 [!DNL Experience Manager Assets], 다음 단계를 수행합니다.
+[!DNL Experience Manager Assets]에서 이미지의 동적 변환을 보거나 다운로드하려면 다음 단계를 수행합니다.
 
-1. 다음으로 이동 **[!UICONTROL Assets 관리]** > **[!UICONTROL 에셋]**.
+1. **[!UICONTROL Assets 관리]** > **[!UICONTROL Assets]**(으)로 이동합니다.
 
 1. 해당 에셋 폴더로 이동합니다.
 
-1. 보려는 이미지를 클릭하고 **[!UICONTROL 세부 사항]**.
+1. 보려는 이미지를 클릭하고 **[!UICONTROL 세부 정보]**&#x200B;를 클릭합니다.
 
-1. 오른쪽 메뉴에서 **[!UICONTROL 표현물]**. <br> 다음 **[!UICONTROL 표현물]** 사용 가능한 패널 열기 **[!UICONTROL 동적]** 및 **[!UICONTROL 스마트 자르기]** 표현물.
+1. 오른쪽 메뉴에서 **[!UICONTROL 표현물]**&#x200B;을 클릭합니다. <br> **[!UICONTROL 렌디션]** 패널이 사용 가능한 **[!UICONTROL Dynamic]** 및 **[!UICONTROL 스마트 자르기]** 렌디션으로 열립니다.
 
    ![동적 변환](assets/preset_smart_crop.png)
    <!-- ![dynamic renditions](assets/preset_smart_crop_view.png) -->
 
 1. 보거나 다운로드해야 하는 렌디션을 클릭합니다.
 
-1. 다음을 클릭합니다. ![다운로드 아이콘](assets/do-not-localize/download-icon.png) 아이콘 다운로드해야 하는 동적 렌디션 옆에 있습니다. <br> 또는 이미지 렌디션을 선택하고 **[!UICONTROL 렌디션 다운로드]** 맨 아래에 있는 옵션입니다.
+1. 다운로드해야 하는 동적 렌디션 옆에 있는 ![다운로드 아이콘](assets/do-not-localize/download-icon.png) 아이콘을 클릭합니다. <br> 또는 이미지 렌디션을 선택하고 하단의 **[!UICONTROL 렌디션 다운로드]** 옵션을 클릭할 수 있습니다.
 
-   다음을 클릭할 수 있습니다 ![다운로드 아이콘](assets/do-not-localize/download-icon.png) 아이콘 위에 사용 가능 **[!UICONTROL 스마트 자르기]** 렌디션 섹션을 통해 해당 에셋에 대해 사용 가능한 모든 스마트 자르기 렌디션을 다운로드할 수 있습니다.
+   **[!UICONTROL 스마트 자르기]** 렌디션 섹션의 맨 위에 있는 ![다운로드 아이콘](assets/do-not-localize/download-icon.png) 아이콘을 클릭하여 해당 에셋에 대해 사용 가능한 모든 스마트 자르기 렌디션을 다운로드할 수 있습니다.
 
 >[!NOTE]
 >

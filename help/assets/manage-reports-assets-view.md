@@ -41,21 +41,21 @@ Assets 보기를 사용하면 [인사이트] 대시보드를 사용하여 Assets
 
 자동 생성된 다음과 같은 차트를 보려면 왼쪽 탐색 창에 있는 **[!UICONTROL 인사이트]**&#x200B;를 클릭하십시오.
 
-* **다운로드**: 지난 30일 또는 12개월 동안 자산 보기 환경에서 다운로드한 자산 수를 선 그래프로 표시합니다.
-  ![insights-다운로드](/help/assets/assets/insights-downloads2341.svg)
+* **다운로드**: 지난 30일 또는 12개월 동안 Assets 보기 환경에서 다운로드한 에셋 수를 선 그래프로 표시합니다.
+  ![인사이트-다운로드](/help/assets/assets/insights-downloads2341.svg)
 
-* **업로드**: 지난 30일 또는 12개월 동안 자산 보기 환경에 업로드된 자산 수를 선 그래프로 표시합니다.
-  ![인사이트-업로드](/help/assets/assets/insights-uplods2.svg)
+* **업로드**: 지난 30일 또는 12개월 동안 Assets 보기 환경에 업로드된 에셋 수를 선 그래프로 표시합니다.
+  ![인사이트 업로드](/help/assets/assets/insights-uplods2.svg)
   <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
-* **스토리지 사용량**: 막대 차트를 사용하여 표시되는 Assets 보기 환경의 저장소 사용량(바이트)입니다.
-  ![인사이트-업로드](/help/assets/assets/insights-storage-usage1.svg)
+* **저장소 사용량**: 막대 차트로 표시되는 Assets 보기 환경의 저장소 사용량(바이트)입니다.
+  ![인사이트 업로드](/help/assets/assets/insights-storage-usage1.svg)
   <!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
 
 <!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
 * **인기 검색어**: 지난 30일 또는 12개월 동안 Assets 보기 환경에서 해당 용어가 검색된 횟수와 함께 가장 많이 검색된 용어를 표 형식으로 표시합니다.
-  ![인사이트-업로드](/help/assets/assets/insights-top-search.svg)
+  ![인사이트 업로드](/help/assets/assets/insights-top-search.svg)
   <!--
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)

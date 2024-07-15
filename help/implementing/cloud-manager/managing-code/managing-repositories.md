@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '624'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Cloud Manager에서 만들어진 저장소는 파이프라인을 추가하거나
 
 * 저장소 유형
    * **Adobe**&#x200B;는 Adobe 관리 저장소를 나타냅니다.
-   * **GitHub** 사용자가 관리하는 개인 GitHub 저장소를 나타냅니다.
+   * **GitHub**&#x200B;는 사용자가 관리하는 비공개 GitHub 저장소를 나타냅니다.
 * 만들어 질 때
 * 저장소와 연결된 파이프라인
 
@@ -79,12 +79,12 @@ Cloud Manager는 Adobe에서 관리하는 저장소(**Adobe 저장소**)와 사�
 
 ## 분기 점검 및 프로젝트 만들기 {#check-branches}
 
-다음 **분기 확인 / 프로젝트 만들기** 작업은 저장소의 상태에 따라 두 가지 기능을 수행합니다.
+**분기 확인 / 프로젝트 만들기** 액션은 저장소의 상태에 따라 두 가지 기능을 수행합니다.
 
-* 저장소가 새로 만들어지면 작업은 다음에 준하여 샘플 프로젝트를 만듭니다. [AEM project archetype.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview)
-* 저장소에서 이미 샘플 프로젝트를 만든 경우, 저장소 및 해당 분기의 상태를 확인하고 샘플 프로젝트가 이미 있는지 다시 보고합니다.
+* 저장소가 새로 생성된 경우 이 액션은 [AEM Project Archetype](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/overview)을 기반으로 샘플 프로젝트를 생성합니다.
+* 저장소에 이미 샘플 프로젝트가 생성된 경우 저장소와 해당 분기의 상태를 확인하고 샘플 프로젝트가 이미 존재하는지 여부를 다시 보고합니다.
 
-![분기 작업 확인](assets/check-branches.png)
+![분기 확인 액션](assets/check-branches.png)
 
 ## 저장소 URL 복사 {#copy-url}
 

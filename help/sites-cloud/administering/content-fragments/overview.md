@@ -1,6 +1,6 @@
 ---
 title: 콘텐츠 조각 작업 개요
-description: AEM의 콘텐츠 조각을 as a Cloud Service으로 사용하여 Headless 게재 및 페이지 작성에 이상적인 콘텐츠를 만들고 사용하는 방법에 대해 알아봅니다.
+description: AEM as a Cloud Service의 콘텐츠 조각을 사용하여 Headless 게재 및 페이지 작성에 이상적인 콘텐츠를 만들고 사용하는 방법에 대해 알아봅니다.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a

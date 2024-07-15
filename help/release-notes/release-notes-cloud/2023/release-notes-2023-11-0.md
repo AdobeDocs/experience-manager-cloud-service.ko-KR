@@ -92,7 +92,7 @@ ht-degree: 98%
 
 
 
-### 의 새로운 기능 [!DNL Forms] 프리릴리스 {#prerelease-features-forms}
+### [!DNL Forms] 프리릴리스의 새로운 기능 {#prerelease-features-forms}
 
 * **[Microsoft® SharePoint 목록을 사용하여 적응형 양식 연결](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: AEM Forms는 양식 데이터를 SharePoint 목록에 직접 제출하는 OOTB 통합을 제공하므로 SharePoint의 목록 기능을 활용할 수 있습니다. Microsoft SharePoint List를 양식 데이터 모델의 데이터 소스로 구성하고 **양식 데이터 모델을 사용하여 제출** 제출 작업을 사용하여 적응형 양식을 SharePoint 목록과 연결할 수 있습니다.
 

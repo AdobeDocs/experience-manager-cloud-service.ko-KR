@@ -58,11 +58,11 @@ Adobe Analytics은 양식 사용에 대한 중요한 통찰력을 제공하고 �
 Analytics, Data Collection (Formerly Adobe Launch), and Experience Manager (experience.adobe.com)
 -->
 
-Experience Cloud 설정 자동화를 사용하려면 **Adobe Analytics 라이선스**, **데이터 수집(이전 Adobe 실행)** 추적 스크립트를 관리하려면 **Experience Manager Forms 라이선스** 능률적인 데이터 집계 및 통찰력 생성.
+Experience Cloud 설정 자동화에는 추적 스크립트를 관리하기 위해 **Adobe Analytics 라이선스**, **데이터 수집(이전 Adobe Launch)**&#x200B;이 필요하며, 간소화된 데이터 집계와 통찰력 생성을 위해 **Experience Manager Forms 라이선스**&#x200B;가 필요합니다.
 
-다음에 대한 활성 라이센스가 있는 경우 **Adobe Analytics** 및 **Experience Manager Forms**, 와 통합되었습니다. **데이터 수집(이전 Adobe 실행)**, 개발자 콘솔 내에서 가용성을 확인해야 합니다.
+**Adobe Analytics** 및 **Experience Manager Forms**&#x200B;에 대한 활성 라이선스가 있고 **데이터 수집(이전 Adobe Launch)**&#x200B;과(와) 통합한 경우 개발자 콘솔 내에서 사용 가능 여부를 확인해야 합니다.
 
-Forms as a Cloud Service 환경에서 앞에서 설명한 것을 사용할 수 있는지 확인하려면 다음을 방문하십시오. [개발자 콘솔](https://developer.adobe.com/console/projects)로 이동하여 프로그램 id가 환경 id인 프로젝트에서 URL이 있는 환경을 검색합니다 `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`, 프로그램 id - 환경 id는 `p45913-e175111`. Experience Cloud 설정 자동화, Adobe Analytics 및 Experience Platform Launch API가 제공되고 있는지 확인합니다. 이러한 항목이 나열되어 있으면 적응형 Forms의 빠른 트랙 분석을 위해 Adobe Analytics을 활성화할 수 있습니다.
+앞서 설명한 Forms as a Cloud Service 개발자 환경을 사용할 수 있는지 확인하려면 [콘솔](https://developer.adobe.com/console/projects)을(를) 방문하여 프로젝트로 이동하고 프로그램 id가 환경 id인 프로젝트를 검색합니다(예: URL이 `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`이고 프로그램 id가 `p45913-e175111`인 환경). Experience Cloud 설정 자동화, Adobe Analytics 및 Experience Platform Launch API가 제공되고 있는지 확인합니다. 이러한 항목이 나열되어 있으면 적응형 Forms의 빠른 트랙 분석을 위해 Adobe Analytics을 활성화할 수 있습니다.
 
 ![사전 양식 분석 통합](assets/analytics-aem.png){width="100%"}
 
@@ -95,7 +95,7 @@ Forms as a Cloud Service 환경에서 앞에서 설명한 것을 사용할 수 �
 1. 클라우드 서비스의 구성 컨테이너 만들기:
    1. **[!UICONTROL 도구 > 일반 > 구성 브라우저]**&#x200B;로 이동합니다.
    1. 구성 컨테이너를 선택하거나 만들고 **[!UICONTROL 클라우드 구성]** 폴더를 활성화합니다
-   1. 선택 **[!UICONTROL 저장 및 닫기]** 구성을 저장하고 대화 상자를 종료합니다.
+   1. 구성을 저장하고 대화 상자를 종료하려면 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택하십시오.
 1. AEM 인스턴스에서 **[Forms]** >> **[양식 및 문서]**&#x200B;로 이동합니다.
 1. **[!UICONTROL 구성 컨테이너]**&#x200B;에서 **[!UICONTROL 양식]** >> **[!UICONTROL 속성]**&#x200B;을 선택한 다음 1단계의 **[!UICONTROL 구성 브라우저]**&#x200B;에서 만들거나 선택한 구성 컨테이너를 선택합니다.
 1. 왼쪽 레일에서 작업 패널을 선택하고 **Analytics 설정** 및 **Adobe Analytics 활성화**&#x200B;를 클릭합니다.
@@ -147,21 +147,21 @@ AEM Sites용 적응형 Forms에서 analytics를 연결하고 활성화하려면 
 
 ### 사이트에서 적응형 Forms을 연결하여 Analytics 활성화 {#Connect-analytics-to-adaptive-forms}
 
-AEM Sites 페이지에서 적응형 양식에 연결하여 빠른 트랙 분석을 위해 Analytics를 활성화하려면 다음을 포함하십시오. `customfooterlibs` AEM Archetype/Git 저장소 및 배포 파이프라인을 사용하여 AEM Sites 페이지에 클라이언트 라이브러리를 연결합니다.
+AEM Sites 페이지에서 적응형 양식을 연결하여 빠른 트랙 분석을 위해 Analytics를 활성화하려면 AEM Archetype/Git 저장소 및 배포 파이프라인을 사용하여 AEM Sites 페이지에 `customfooterlibs` 클라이언트 라이브러리를 포함하십시오.
 
-1. 을(를) 엽니다 [AEM Forms Archetype 또는 복제된 Git 저장소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 텍스트 편집기의 프로젝트. 예: Visual Studio Code.
+1. 텍스트 편집기에서 [AEM Forms Archetype 또는 복제된 Git 저장소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 프로젝트를 엽니다. 예: Visual Studio Code.
 
-1. 적응형 양식이 있는 사이트 페이지로 이동합니다(예: 이 데모 프로젝트에서는 ). `ui.apps/src/main/content/jcr_root/apps/corecomponents/components/page/.content.xml`.
+1. 적응형 양식이 있는 사이트 페이지로 이동합니다. 예를 들어 이 데모 프로젝트에는 `ui.apps/src/main/content/jcr_root/apps/corecomponents/components/page/.content.xml`이(가) 있습니다.
 
-1. 값 복사 `sling:resourceSuperType`. 예를 들어 값은 입니다. `core/wcm/components/page/v3/page`.
+1. `sling:resourceSuperType`의 값을 복사합니다. 예를 들어 값은 `core/wcm/components/page/v3/page`입니다.
 
    ![Sling 리소스](/help/forms/assets/slingresource.png){width="100%"}
 
-1. 위치에 유사한 구조를 만듭니다. `ui.apps/src/main/content/jcr_root/apps` 과 동일 `core/wcm/components/page/v3/page`.
+1. `ui.apps/src/main/content/jcr_root/apps` 위치에 `core/wcm/components/page/v3/page`과(와) 동일한 유사한 구조를 만듭니다.
 
    ![오버레이 구조](/help/forms/assets/overlaystructure.png){width="100%"}
 
-1. 추가 `customfooterlibs.html` 파일.
+1. `customfooterlibs.html` 파일을 추가합니다.
 
    ```
    // customheaderlibs.html
@@ -170,53 +170,53 @@ AEM Sites 페이지에서 적응형 양식에 연결하여 빠른 트랙 분석�
    </sly>
    ```
 
-   다음 `customfooterlibs.html` 는 JavaScript에 사용됩니다.
+   `customfooterlibs.html`은(는) JavaScript에 사용됩니다.
 
-1. [파이프라인 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) 를 눌러 변경 사항을 배포합니다.
+1. [파이프라인을 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html)하여 변경 내용을 배포합니다.
 
 ### Sites에서 Forms에 양식 분석 규칙 활성화 {#bind-forms-analytics-rules-to-forms-in-sites}
 
-1. 다음 방문: **Adobe Experience Platform 데이터 수집**.
-1. 클릭 **태그** 왼쪽에 있습니다.
-1. 예를 들어 아래 이미지에 표시된 대로 프로그램 ID로 프로젝트에서 URL이 있는 환경을 검색합니다 `https://author-p45921-e175111-cmstg.adobeaemcloud.com/index.html`, 프로그램 id는 `45921`.
+1. **Adobe Experience Platform 데이터 수집**&#x200B;을(를) 방문하세요.
+1. 왼쪽에 있는 **태그**&#x200B;를 클릭합니다.
+1. 아래 이미지에 표시된 대로 프로그램 ID로 프로젝트를 검색합니다. 예를 들어 URL이 `https://author-p45921-e175111-cmstg.adobeaemcloud.com/index.html`이고 프로그램 ID가 `45921`인 환경에 대해 검색할 수 있습니다.
 
-   ![데이터 수집에서 양식 검색](/help/forms/assets/aep-data-collection.png){width="100%"}
+   ![Search-your-form-in-data-collection](/help/forms/assets/aep-data-collection.png){width="100%"}
 
-1. 다음에 대한 구성 추가 **양식 규칙** 및 **데이터 요소** 아래와 같이:
+1. 아래와 같이 **양식 규칙** 및 **데이터 요소**&#x200B;에 대한 구성을 추가하십시오.
 
 #### 양식 규칙 추가 {#form-rules}
 
-1. 양식을 선택하고 추가 **새 속성** 오른쪽 위에 있거나 양식을 클릭합니다.
-1. 속성 페이지에서 **규칙** 양식에 대한 이벤트를 선택합니다. 아래 예제 이미지에서 **양식 이벤트**.
+1. 양식을 선택하고 오른쪽 상단에 있는 **새 속성**&#x200B;을 추가하거나 양식을 클릭하십시오.
+1. 속성 페이지에서 **규칙**&#x200B;을 클릭하고 양식에 대한 이벤트를 선택합니다. 아래 예제 이미지에서는 **양식 이벤트**&#x200B;입니다.
 
-   ![데이터 수집에서 양식 검색](/help/forms/assets/aep-form-event-properties.png){width="100%"}
+   ![Search-your-form-in-data-collection](/help/forms/assets/aep-form-event-properties.png){width="100%"}
 
-1. 양식의 모든 이벤트를 선택하고 **복사** 오른쪽 위 레일에 있습니다.
-1. 복사한 후에는 **규칙 복사** 프로젝트 id로 Sites 페이지를 검색하여 양식 규칙을 붙여넣는 위치에 팝업이 나타납니다.
+1. 폼의 모든 이벤트를 선택하고 오른쪽 위 레일에 있는 **복사**&#x200B;를 선택합니다.
+1. 복사하면 프로젝트 ID로 Sites 페이지를 검색하여 양식 규칙을 붙여넣는 **규칙 복사** 팝업이 나타납니다.
 
    ![양식 규칙 복사](/help/forms/assets/copy-form-rules.png){width="100%"}
 
-1. 클릭 **복사** 을 눌러 양식 규칙을 사이트 페이지에 붙여넣습니다.
+1. **복사**&#x200B;를 클릭하여 양식 규칙을 Sites 페이지에 붙여넣습니다.
 
 #### 데이터 요소 추가 {#data-elements}
 
-1. 양식을 선택하고 추가 **새 속성** 오른쪽 위에 있거나 양식을 클릭합니다.
-1. 속성 페이지에서 **데이터 요소** 양식에 대한 이벤트를 선택합니다.
-1. 양식의 모든 이벤트를 선택하고 **복사** 오른쪽 위 레일에 있습니다.
-1. 복사한 후에는 **규칙 복사** 프로젝트 id로 Sites 페이지를 검색하여 양식 규칙을 붙여넣는 위치에 팝업이 나타납니다.
-1. 클릭 **복사** 을 눌러 양식 규칙을 사이트 페이지에 붙여넣습니다.
+1. 양식을 선택하고 오른쪽 상단에 있는 **새 속성**&#x200B;을 추가하거나 양식을 클릭하십시오.
+1. 속성 페이지에서 **데이터 요소**&#x200B;를 클릭하고 양식에 대한 이벤트를 선택합니다.
+1. 폼의 모든 이벤트를 선택하고 오른쪽 위 레일에 있는 **복사**&#x200B;를 선택합니다.
+1. 복사하면 프로젝트 ID로 Sites 페이지를 검색하여 양식 규칙을 붙여넣는 **규칙 복사** 팝업이 나타납니다.
+1. **복사**&#x200B;를 클릭하여 양식 규칙을 Sites 페이지에 붙여넣습니다.
 
-   ![양식 데이터 요소](/help/forms/assets/form-data-elements.png){width="100%"}
+   ![Form-data-elements](/help/forms/assets/form-data-elements.png){width="100%"}
 
 위의 단계를 통해 양식 및 사이트 규칙을 바인딩하면 다음 단계를 수행하여 Sites 페이지의 적응형 양식에 Analytics를 활성화합니다.
 
-1. 클릭 **게시 플로우** 왼쪽이요
-1. 클릭 **라이브러리 추가** 원하는 이름을 입력합니다.
-1. 다음에서 **환경** 오른쪽의 드롭다운에서 **개발**.
-1. 클릭 **변경된 모든 리소스 추가**.
-1. 클릭 **개발에 저장 및 구축**.
+1. 왼쪽의 **흐름 게시**&#x200B;를 클릭합니다.
+1. **라이브러리 추가**&#x200B;를 클릭하고 원하는 이름을 입력하십시오.
+1. 오른쪽의 **환경** 드롭다운에서 **개발**&#x200B;을 선택합니다.
+1. **변경된 모든 리소스 추가**&#x200B;를 클릭합니다.
+1. **개발에 저장 및 빌드**&#x200B;를 클릭합니다.
 
-![게시-개발](/help/forms/assets/publish-to-dev.png){width="100%"}
+![개발 게시](/help/forms/assets/publish-to-dev.png){width="100%"}
 
 
 <!--

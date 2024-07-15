@@ -31,14 +31,14 @@ ht-degree: 49%
 * 양식 데이터 모델(FDM)을 사용하여 구성된 데이터 소스에 데이터를 원활하게 전송합니다.
 * 편리하게 데이터를 REST 엔드포인트에 제출합니다.
 
-다음을 수행할 수 있습니다. [기본 제출 액션 확장](custom-submit-action-form.md). 조직별 요구 사항에 대해 제출 액션을 사용자 지정할 수도 있습니다.
+기본 제출 액션을 [확장](custom-submit-action-form.md)할 수 있습니다. 조직별 요구 사항에 대해 제출 액션을 사용자 지정할 수도 있습니다.
 
-적응형 양식에 대한 제출 액션을 정의하려면 의 구성 대화 상자 를 사용합니다 **적응형 양식 컨테이너** 구성 요소. 의 구성 대화 상자 **적응형 양식 컨테이너** 구성 요소에는 다음이 포함됩니다.
+적응형 양식에 대한 제출 액션을 정의하려면 **적응형 양식 컨테이너** 구성 요소의 구성 대화 상자를 사용하십시오. **적응형 양식 컨테이너** 구성 요소의 구성 대화 상자에 다음이 포함됩니다.
 * 기본 탭
 * 양식 데이터 모델 탭
 * 제출 탭
 
-구성 대화 상자를 사용하여 양식 컨테이너 속성을 정의할 수 있습니다. 양식 컨테이너 구성 요소의 구성 대화 상자에 대해 자세히 알아보려면 다음을 수행하십시오. [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html)
+구성 대화 상자를 사용하여 양식 컨테이너 속성을 정의할 수 있습니다. 양식 컨테이너 구성 요소의 구성 대화 상자에 대해 자세히 알아보려면 [여기를 클릭하세요.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html)
 
 ## 적응형 양식의 제출 액션 선택 및 구성 {#select-and-configure-submit-action}
 
@@ -51,7 +51,7 @@ ht-degree: 49%
 
    ![제출 액션을 구성하려면 공구 모양 아이콘을 클릭하여 적응형 양식 컨테이너 대화 상자를 엽니다.](/help/forms/assets/adaptive-forms-submit-message.png)
 
-1. 선택 및 구성 **[!UICONTROL 제출 액션]**&#x200B;을 참조하십시오.
+1. 요구 사항에 따라 **[!UICONTROL 제출 액션]**&#x200B;을 선택하고 구성하십시오.
 
 적응형 양식 제출을 위해 다양한 작업을 구성할 수도 있습니다.
 * **리디렉션 URL/경로** - 이 옵션을 사용하면 적응형 양식을 제출한 후 양식 사용자가 리디렉션되는 각 양식에 대한 페이지를 구성할 수 있습니다.
@@ -74,7 +74,7 @@ ht-degree: 49%
 * [Salesforce 애플리케이션에 적응형 양식 연결](/help/forms/aem-forms-salesforce-integration.md)
 * [Microsoft® Dynamics OData에 적응형 양식 연결](/help/forms/ms-dynamics-odata-configuration.md)
 
-다음을 수행할 수 있습니다. [기본 제출 액션 사용자 정의](custom-submit-action-form.md). 또한 특정 조직 요구 사항에 맞게 제출 액션을 사용자 지정할 수 있습니다.
+[기본 제출 액션을 사용자 지정](custom-submit-action-form.md)할 수 있습니다. 또한 특정 조직 요구 사항에 맞게 제출 액션을 사용자 지정할 수 있습니다.
 
 
 <!--
@@ -213,7 +213,7 @@ If end-user bypass those validations and submit the forms, the server again perf
 
 AEM 보안 및 강화 지침의 일부로, 400.jsp, 404.jsp 및 500.jsp와 같은 사용자 정의 오류 페이지를 구성합니다. 이러한 핸들러는 양식 제출 시 400, 404 또는 500 오류가 나타나면 호출됩니다. 게시 노드에서 이러한 오류 코드가 트리거되면 핸들러가 호출되기도 합니다. 또한 다른 HTTP 오류 코드에 대한 JSP 페이지를 만들 수 있습니다.
 
-양식 데이터 모델(FDM) 또는 스키마 기반 적응형 양식에 데이터가 포함되지 않은 스키마에 대한 XML 또는 JSON 데이터 컴플레인을 미리 채우는 경우 `<afData>`, `<afBoundData>`, 및 `</afUnboundData>` 태그를 지정하면 적응형 양식의 제한되지 않은 필드 데이터가 손실됩니다. 스키마는 XML 스키마, JSON 스키마 또는 양식 데이터 모델(FDM)일 수 있습니다. 무제한 필드는 `bindref` 속성이 없는 적응형 양식 필드입니다.
+데이터에 `<afData>`, `<afBoundData>` 및 `</afUnboundData>` 태그가 포함되어 있지 않은 스키마에 대해 XML 또는 JSON 데이터 컴플레인을 사용하여 FDM(양식 데이터 모델) 또는 스키마 기반 적응형 양식을 미리 채우면 적응형 양식의 무제한 필드 데이터가 손실됩니다. 스키마는 XML 스키마, JSON 스키마 또는 양식 데이터 모델(FDM)일 수 있습니다. 무제한 필드는 `bindref` 속성이 없는 적응형 양식 필드입니다.
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 

@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## 개요 {#overview}
 
-***AEM Screens*** 는 Adobe Analytics을 활용하므로 시장에서 독보적인 성과를 창출할 수 있습니다. 크로스 채널 분석 을 통해 위치에 표시된 콘텐츠를 다른 데이터 소스와 상호 연관시킬 수 있습니다.
+***AEM Screens***&#x200B;은(는) Adobe Analytics을 활용하므로 시장에서 고유한 것(위치에 표시된 콘텐츠를 다른 데이터 소스와 상호 연관시키는 데 도움이 되는 크로스 채널 분석)을 달성할 수 있습니다.
 
 AEM Screens은 Adobe Analytics과의 획기적인 통합을 제공하며 재생 증명을 제공합니다.
 
@@ -39,7 +39,7 @@ AEM Screens은 Adobe Analytics과의 획기적인 통합을 제공하며 재생 
 * 시간 경과에 따른 재생 이벤트를 추적하는 피드백 루프를 작성할 수 있도록 합니다.
 * 시스템은 콘텐츠 작성자가 정의한 성공 기준에 따라 콘텐츠 및 레이아웃을 수정할 수 있습니다
 
-AEM Screens과 Adobe Analytics 통합은 다음을 적용합니다 *목표*:
+따라서 AEM Screens과 Adobe Analytics 통합은 다음 *목표*&#x200B;를 적용합니다.
 
 * 디지털 사이니지 구현에서 ROI 활성화
 * 향후 사용 정보 수집 및 분석을 위한 기반으로 Analytics 통합
@@ -63,4 +63,4 @@ Screens Cloud에서 Adobe 분석을 활성화하려면 Adobe 관계 관리자에
 Analytics 이벤트는 indexedDB에 오프라인으로 저장되고 나중에 청크되어 클라우드로 전송됩니다.
 
 >[!NOTE]
->이벤트의 시퀀싱 및 표준 데이터 모델에 대한 자세한 내용은 [AEM Screens용 Adobe Analytics 구성](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html) 을 참조하십시오.
+>이벤트의 시퀀싱 및 표준 데이터 모델에 대한 자세한 내용은 [AEM Screens용 Adobe Analytics 구성](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html)을 참조하세요.

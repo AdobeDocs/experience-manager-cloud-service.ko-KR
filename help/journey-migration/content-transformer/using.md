@@ -1,6 +1,6 @@
 ---
 title: 컨텐츠 변환기 사용
-description: AEM으로 as a Cloud Service으로 마이그레이션할 것을 대비하여 콘텐츠 구조를 변형하는 방법에 대해 알아봅니다.
+description: AEM as a Cloud Service으로 마이그레이션할 것을 대비하여 콘텐츠 구조를 변형하는 방법에 대해 알아봅니다.
 exl-id: 40516ff7-5686-42e6-bdd1-c9c6de432b09
 feature: Migration
 role: Admin
@@ -20,12 +20,12 @@ ht-degree: 1%
 * 콘텐츠 변환기를 사용하려면 먼저 Adobe Experience Manager(AEM) 환경에서 모범 사례 분석기를 실행해야 합니다.
 * 프로덕션 환경에서 콘텐츠 변환기를 실행할 수 있지만 프로덕션 환경의 복제본에서 콘텐츠 변환기를 실행하는 것이 좋습니다. 더 중요한 것은 BPA와 CT가 동일한 환경에서 실행되는지 확인해야 한다는 것입니다.
 * 콘텐츠 변환기를 실행하려는 환경에서 관리자여야 합니다.
-* 소스 컨텐츠( 이동/제거/이름 바꾸기 )를 변경할 수 있는 모든 작업은 기본적으로 아래에 소스 경로의 백업 패키지를 만듭니다. `/etc/packages/content-transformation` 변환 전. 각 작업 대화 상자에는 백업 패키지 생성을 비활성화/활성화하는 옵션이 있지만, 항상 패키지 생성 활성화를 선택하는 것이 좋습니다.
+* 소스 콘텐츠( 이동/제거/이름 바꾸기 )를 변경할 수 있는 모든 작업은 기본적으로 변환 전에 `/etc/packages/content-transformation` 아래에 소스 경로의 백업 패키지를 만듭니다. 각 작업 대화 상자에는 백업 패키지 생성을 비활성화/활성화하는 옵션이 있지만, 항상 패키지 생성 활성화를 선택하는 것이 좋습니다.
 * 콘텐츠 변환기의 각 페이지는 최대 50개의 검색 결과를 나열하도록 구성되므로 한 번에 최대 50개의 검색 결과를 변환할 수 있습니다. 이 작업은 UI에 적시성 응답을 제공하기 위해 수행됩니다.
 
 ## 사용 가능 {#availability-ct}
 
-콘텐츠 변환기는 와 함께 번들로 제공됩니다. [컨텐츠 전송 도구](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) 소프트웨어 배포 포털에서 zip 파일로 다운로드할 수 있습니다. 패키지 관리자를 통해 소스 AEM 인스턴스에 패키지를 설치할 수 있습니다.
+콘텐츠 변환기는 소프트웨어 배포 포털에서 zip 파일로 다운로드할 수 있는 [콘텐츠 전송 도구](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)와 함께 번들로 제공됩니다. 패키지 관리자를 통해 소스 AEM 인스턴스에 패키지를 설치할 수 있습니다.
 
 >[!NOTE]
 >콘텐츠 변환기는 콘텐츠 전송 도구 v2.0.20 이상에서 사용할 수 있습니다.
@@ -40,7 +40,7 @@ ht-degree: 1%
    >[!NOTE]
    > 이전에 BPA 보고서를 실행한 적이 있는지 확인하고 URL http://host:port/apps/best-practices-analyzer/content/BestPracticesReport.html을 사용하여 확인합니다.
 
-1. 제목이 있는 카드 클릭 **BPA 보고서에 대한 컨텐츠 변환기**
+1. 제목이 **BPA용 콘텐츠 변환기 보고서**&#x200B;인 카드를 클릭합니다.
 
    ![이미지](/help/journey-migration/content-transformer/assets/ct-2.png)
 
@@ -50,25 +50,25 @@ ht-degree: 1%
 
    ![이미지](/help/journey-migration/content-transformer/assets/ct-3.png)
 
-1. 다음을 기반으로 문제를 필터링할 수 있습니다. `Pattern Code`, `Subtype`, `Importance`, 및 `Source`.
+1. `Pattern Code`, `Subtype`, `Importance` 및 `Source`을(를) 기준으로 문제를 필터링할 수 있습니다.
 
    ![이미지](/help/journey-migration/content-transformer/assets/ct-4.png)
 
-1. 모든 문제 또는 특정 문제를 선택하고 이를 해결하기 위해 이동하거나 제거하거나 이름을 바꿀 수 있습니다. 을 사용하여 사용자 정의 경로를 추가할 수도 있습니다. **경로 추가** 오른쪽 상단의 버튼입니다.
+1. 모든 문제 또는 특정 문제를 선택하고 이를 해결하기 위해 이동하거나 제거하거나 이름을 바꿀 수 있습니다. 오른쪽 상단의 **경로 추가** 단추를 사용하여 사용자 지정 경로를 추가할 수도 있습니다.
 
    >[!NOTE]
-   > 이동 작업을 사용할 때는 모든 경로를 하나의 폴더(예: 아래)로만 이동하는 것이 좋습니다. `/etc/packages/content-transformation/paths`) 따라서 백업 패키지를 설치하여 인스턴스를 원래 상태로 되돌리면 폴더 (`/etc/packages/content-transformation/paths`)은 저장소 크기를 줄이기 위해 제거 작업을 사용하여 삭제할 수 있습니다.
+   > 이동 작업을 사용할 때는 모든 경로를 하나의 폴더(예: `/etc/packages/content-transformation/paths` 아래)로만 이동하는 것이 좋습니다. 따라서 인스턴스를 원래 상태로 되돌리기 위해 백업 패키지를 설치할 때 저장소 크기를 줄이기 위해 제거 작업을 사용하여 폴더(`/etc/packages/content-transformation/paths`)를 삭제할 수 있습니다.
 
    ![이미지](/help/journey-migration/content-transformer/assets/ct-5.png)
    ![이미지](/help/journey-migration/content-transformer/assets/ct-6.png)
 
    >[!NOTE]
-   > 소스 콘텐츠를 변경할 수 있는 모든 작업(`move`/`remove`/`rename`)는 기본적으로 아래에 소스 경로의 백업 패키지를 만듭니다. `/etc/packages/content-transformation` 변환 전. 각 작업 대화 상자에는 백업 패키지 생성을 비활성화/활성화하는 옵션이 있지만, 항상 패키지 생성 활성화를 선택하는 것이 좋습니다.
+   > 소스 콘텐츠(`move`/`remove`/`rename`)를 변경할 수 있는 모든 작업은 기본적으로 변환 전에 `/etc/packages/content-transformation` 아래에 소스 경로의 백업 패키지를 만듭니다. 각 작업 대화 상자에는 백업 패키지 생성을 비활성화/활성화하는 옵션이 있지만, 항상 패키지 생성 활성화를 선택하는 것이 좋습니다.
 
-1. 경로 이동 작업을 위해 만든 백업 패키지의 예는 아래에 나와 있습니다. 설치 를 클릭하여 소스 경로를 다시 가져옵니다. 소스 경로가 원래 위치로 복구될 뿐, 변환 중에 이동된 경로는 삭제되지 않습니다. 이동된 위치에서 경로를 삭제하려면 **경로 추가** 위치를 추가하는 버튼(예: `/etc/packages/content-transformation/paths`), 위치를 선택하고 **제거**.
+1. 경로 이동 작업을 위해 만든 백업 패키지의 예는 아래에 나와 있습니다. 설치 를 클릭하여 소스 경로를 다시 가져옵니다. 소스 경로가 원래 위치로 복구될 뿐, 변환 중에 이동된 경로는 삭제되지 않습니다. 이동한 위치에서 경로를 삭제하려면 **경로 추가** 단추를 클릭하여 위치(예: `/etc/packages/content-transformation/paths`)를 추가하고 위치를 선택한 다음 **제거**&#x200B;를 클릭합니다.
 
    >[!CAUTION]
-   > 삭제하지 않음 `/etc/packages/content-transformation` 백업 패키지가 있는 위치입니다. 이러한 패키지가 더 이상 필요하지 않은 경우에만 이 위치를 삭제하여 저장소 크기를 줄일 수 있습니다.
+   > 백업 패키지가 있는 위치이므로 `/etc/packages/content-transformation`을(를) 삭제하지 마십시오. 이러한 패키지가 더 이상 필요하지 않은 경우에만 이 위치를 삭제하여 저장소 크기를 줄일 수 있습니다.
 
    ![이미지](/help/journey-migration/content-transformer/assets/ct-7.png)
    ![이미지](/help/journey-migration/content-transformer/assets/ct-8.png)

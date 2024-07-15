@@ -22,7 +22,7 @@ Cloud Manager의 두 위치에서 사용자 정의 도메인 이름을 추가할
 
 >[!NOTE]
 >
->사용자에게 다음이 있어야 합니다. **비즈니스 소유자** 또는 **배포 관리자** cloud Manager에서 사용자 정의 도메인 이름을 추가할 역할이며 Fastly CDN을 사용해야 합니다.
+>Cloud Manager에서 사용자 정의 도메인 이름을 추가하려면 사용자에게 **비즈니스 소유자** 또는 **배포 관리자** 역할이 있어야 하며 Fastly CDN을 사용해야 합니다.
 
 ## 도메인 설정 페이지에서 사용자 정의 도메인 이름 추가 {#adding-cdn-settings}
 
@@ -34,11 +34,11 @@ Cloud Manager의 두 위치에서 사용자 정의 도메인 이름을 추가할
 
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
 
-1. 다음으로 이동하여 **도메인 설정** 왼쪽 탐색 패널의 탭입니다.
+1. 왼쪽 탐색 패널에서 **도메인 설정 선택** 탭으로 이동합니다.
 
    ![도메인 설정 창](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)으로 이동합니다.
 
-1. 다음을 클릭합니다. **도메인 추가** 오른쪽 상단의 단추를 클릭하여 **도메인 이름 추가** 대화 상자.
+1. 오른쪽 상단의 **도메인 추가** 단추를 클릭하여 **도메인 이름 추가** 대화 상자를 엽니다.
 
    ![도메인 추가 대화 상자](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
 
@@ -64,7 +64,7 @@ CDN 배포에는 유효한 SSL 인증서와 성공적인 TXT 확인이 필요합
 
 >[!TIP]
 >
->의 필요성에 대한 다음 문서를 검토하십시오. [다음으로 CNAME 또는 A 레코드 추가](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) 사용자 정의 도메인에 DNS 레코드를 추가할 때 작업이 두 배로 증가하지 않도록 합니다. TXT 항목과 CNAME 또는 A 레코드를 관리 DNS 서버에서 동시에 설정할 수 있습니다.
+>사용자 지정 도메인에 DNS 레코드를 추가할 때 두 배가 되지 않도록 [CNAME 또는 A 레코드를 다음으로 추가](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)해야 하는 것에 대한 다음 문서를 검토하십시오. TXT 항목과 CNAME 또는 A 레코드를 관리 DNS 서버에서 동시에 설정할 수 있습니다.
 
 >[!TIP]
 >
@@ -90,7 +90,7 @@ CDN 배포에는 유효한 SSL 인증서와 성공적인 TXT 확인이 필요합
 
    1. 사용자 정의 도메인 이름을 입력합니다.
    1. 드롭다운 목록에서 이 이름과 연결된 SSL 인증서를 선택합니다.
-   1. 클릭 **+추가**.
+   1. **+추가**&#x200B;를 클릭합니다.
 
    ![사용자 정의 도메인 이름 추가](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 

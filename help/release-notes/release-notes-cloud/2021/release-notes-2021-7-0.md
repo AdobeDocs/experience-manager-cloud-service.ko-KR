@@ -30,39 +30,39 @@ ht-degree: 38%
 
 ## 릴리스 비디오 {#release-video}
 
-다음을 살펴보십시오. [2021년 7월 릴리스 개요](https://video.tv.adobe.com/v/335580) 추가된 기능에 대한 요약을 보려면 비디오 를 사용하십시오.
+추가된 기능에 대한 요약을 보려면 [2021년 7월 릴리스 개요](https://video.tv.adobe.com/v/335580) 비디오를 보십시오.
 
-## Experience Manager 재단 as a Cloud Service {#foundation}
+## Experience Manager as a Cloud Service 재단 {#foundation}
 
 ### 새로운 기능 {#what-is-new-foundation}
 
-* 보다 유연한 Dispatcher 구성: 프로젝트를 보다 쉽게 구성할 수 있습니다. 예를 들어 이제 사이트 구조를 반영하는 여러 재작성 규칙 파일을 포함할 수 있습니다. [다음에 대해 알아보기](/help/implementing/dispatcher/disp-overview.md#validation-debug) 이 유연한 모드에는 Dispatcher 구성을 활용하여 구성하는 방법이 포함되어 있습니다.
-* 복제 에이전트의 &quot;배포&quot; 탭 아래에 있는 트리 복제 UI는 더 이상 사용되지 않는 것으로 간주되어 2021년 9월 30일 이후에 제거되었습니다. [다음에 대해 알아보기](/help/operations/replication.md#tree-activation) 대체 복제 전략
-* 번들 `org.apache.sling.datasource-1.0.4.jar` sling 데이터 소스 지원은 기능이 뒤쳐지고 고객이 사용하지 않기 때문에 제거되었습니다.
+* 보다 유연한 Dispatcher 구성: 프로젝트를 보다 쉽게 구성할 수 있습니다. 예를 들어 이제 사이트 구조를 반영하는 여러 재작성 규칙 파일을 포함할 수 있습니다. [이 유연한 모드에 대해 알아봅니다](/help/implementing/dispatcher/disp-overview.md#validation-debug). 이를 활용할 수 있도록 Dispatcher 구성을 구성하는 방법을 포함합니다.
+* 복제 에이전트의 &quot;배포&quot; 탭 아래에 있는 트리 복제 UI는 더 이상 사용되지 않는 것으로 간주되어 2021년 9월 30일 이후에 제거되었습니다. [대체 복제 전략에 대해 알아봅니다](/help/operations/replication.md#tree-activation).
+* Sling 데이터 원본 지원에 대한 `org.apache.sling.datasource-1.0.4.jar` 번들은 기능이 뒤쳐지고 고객이 사용하지 않기 때문에 제거되었습니다.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets]의 새로운 기능 {#assets-features}
 
-* 콘텐츠 자동화 기능을 통해 다음과 같은 작업을 수행할 수 있습니다 [!DNL Experience Manager Assets] 사용 [!DNL Adobe Creative Cloud] 규모에 맞게 에셋 제작을 자동화하는 API입니다. 동일한 에셋의 변형을 만드는 데 소요되는 시간과 필요한 반복을 크게 줄여 콘텐츠 속도를 향상시킵니다. 이 기능은 프로그래밍이 필요하지 않으며 DAM 내에서 작동합니다. 다음을 참조하십시오 [Creative Cloud 통합을 사용하여 에셋 변형 생성](/help/assets/cc-api-integration.md).
+* 콘텐츠 자동화 기능을 통해 [!DNL Experience Manager Assets]이(가) [!DNL Adobe Creative Cloud] API를 사용하여 규모에 맞춰 에셋 제작을 자동화할 수 있습니다. 동일한 에셋의 변형을 만드는 데 소요되는 시간과 필요한 반복을 크게 줄여 콘텐츠 속도를 향상시킵니다. 이 기능은 프로그래밍이 필요하지 않으며 DAM 내에서 작동합니다. [Creative Cloud 통합을 사용하여 에셋 변형 생성](/help/assets/cc-api-integration.md)을 참조하십시오.
 
-* [!DNL Experience Manager Assets] 다음을 포함: [!DNL Document Cloud] PDF 뷰어를 사용하여 PDF 문서를 기본적으로 미리 볼 수 있습니다. 이 기능을 사용하면 다중 페이지 PDF 파일을 파일 처리 또는 변환 없이 미리 볼 수 있습니다. 이 기능은 를 사용하여 패리티를 향상시킵니다. [!DNL Experience Manager] 6.5. 뷰어에서 사용할 수 있는 컨트롤에는 확대/축소, 페이지로 이동, 컨트롤 분리 및 전체 화면으로 보기가 포함됩니다. 사용자는 페이지 및 책갈피를 미리 보고 바로 이동할 수도 있습니다. 파일 자체에 대한 댓글이 지원됩니다. PDF 파일 내에 있는 콘텐츠에 대한 댓글 달기 및 주석 기능은 향후 릴리스에서 제공될 예정입니다.
+* [!DNL Experience Manager Assets]에는 기본적으로 PDF 문서를 미리 볼 수 있는 [!DNL Document Cloud] PDF 뷰어가 포함되어 있습니다. 이 기능을 사용하면 다중 페이지 PDF 파일을 파일 처리 또는 변환 없이 미리 볼 수 있습니다. 이 기능은 [!DNL Experience Manager] 6.5로 패리티를 향상시킵니다. 뷰어에서 사용할 수 있는 컨트롤에는 확대/축소, 페이지로 이동, 컨트롤 분리 및 전체 화면으로 보기가 포함됩니다. 사용자는 페이지 및 책갈피를 미리 보고 바로 이동할 수도 있습니다. 파일 자체에 대한 댓글이 지원됩니다. PDF 파일 내에 있는 콘텐츠에 대한 댓글 달기 및 주석 기능은 향후 릴리스에서 제공될 예정입니다.
 
-  ![에서 PDF 파일 미리 보기 [!DNL Experience Manager] PDF 뷰어 사용](/help/assets/assets/preview-pdf-file-viewer.png)
+  ![PDF 뷰어를 사용하여 [!DNL Experience Manager]에서 PDF 파일 미리 보기](/help/assets/assets/preview-pdf-file-viewer.png)
 
-* 이 링크 공유 다운로드 기능은 다운로드 속도를 향상시키는 비동기 다운로드를 사용합니다. 자세한 내용은 [링크 공유를 사용하여 공유된 에셋 다운로드](/help/assets/download-assets-from-aem.md#link-share-download).
+* 이 링크 공유 다운로드 기능은 다운로드 속도를 향상시키는 비동기 다운로드를 사용합니다. 자세한 내용은 [링크 공유를 사용하여 공유된 에셋 다운로드](/help/assets/download-assets-from-aem.md#link-share-download)를 참조하십시오.
 
   ![받은 편지함 다운로드](/help/assets/assets/download-inbox.png)
 
 * 사용자가 기본 보기와 기본 정렬 매개 변수를 선택할 수 있도록 보기 설정이 개선되었습니다.
 
-  ![에서 기본 보기 설정 [!UICONTROL 설정 보기]](/help/assets/assets/view-settings-for-defaults.png)
+  ![기본 보기를 [!UICONTROL 보기 설정]](/help/assets/assets/view-settings-for-defaults.png)에서 설정
 
 * 사용자는 속성 술어에 따라 폴더를 검색하고 필터링할 수 있습니다.
 
-  ![검색 술어를 사용하여 검색 폴더 필터링](/help/assets/assets/search-folders-via-predicates.png)
+  ![검색 조건자를 사용하여 검색 폴더 필터링](/help/assets/assets/search-folders-via-predicates.png)
 
-### 에서 사용할 수 있는 새로운 기능 [!DNL Assets] 프리릴리스 채널 {#assets-prerelease-features}
+### [!DNL Assets] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#assets-prerelease-features}
 
 <!-- TBD: Not sure about GA of these enh. Shall check with the team.
 
@@ -79,13 +79,13 @@ ht-degree: 38%
 
 ### [!DNL Assets]의 수정된 버그 {#assets-bugs-fixed}
 
-API `com.day.cq.dam.api.collection.SmartCollection` 에서 사용할 수 없음 [!DNL Experience Manager] as a [!DNL Cloud Service]. (CQ-4326322)
+API `com.day.cq.dam.api.collection.SmartCollection`은(는) [!DNL Experience Manager]에서 [!DNL Cloud Service](으)로 사용할 수 없습니다. (CQ-4326322)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms]의 새로운 기능 {#what-is-new-forms}
 
-* 이제 Automated forms conversion 서비스를 사용하여 다음을 수행할 수 있습니다. [프랑스어, 독일어 및 스페인어로 PDF forms 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) 적응형 양식용.
+* 이제 Automated forms conversion 서비스를 사용하여 [프랑스어, 독일어 및 스페인어로 된 PDF forms을 적응형 양식으로 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model)할 수 있습니다.
 * 템플릿 편집기에 별도의 패널을 추가하여 적응형 양식 구성 요소와 관련된 오류를 표시합니다. 모든 적응형 양식 오류를 한 위치에서 통합하고 해결 시간을 단축하는 데 도움이 됩니다.
 
 ### [!DNL Forms] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#beta-features-forms}
@@ -99,7 +99,7 @@ API `com.day.cq.dam.api.collection.SmartCollection` 에서 사용할 수 없음 
 
 * **Acroform 기반 기록 문서**: XFA 기반 양식 템플릿 외에 [기록 문서의 템플릿으로도 Adobe Acrobat Form PDF(Acroform PDF)를 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html)할 수 있습니다.
 
-* **Microsoft® Azure 데이터 스토어 커넥터**: 이제 다음 작업을 수행할 수 있습니다 [양식 데이터 모델을 Microsoft® Azure Storage에 연결](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). 적응형 양식 데이터를 검색하여 Microsoft® Azure Storage에 BLOB로 저장할 수 있습니다.
+* **Microsoft® Azure 데이터 스토어 커넥터**: 이제 [양식 데이터 모델을 Microsoft® Azure Storage에 연결](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html)할 수 있습니다. 적응형 양식 데이터를 검색하여 Microsoft® Azure Storage에 BLOB로 저장할 수 있습니다.
 
 ## CIF 추가 기능 {#cloud-services-cif}
 
@@ -110,7 +110,7 @@ API `com.day.cq.dam.api.collection.SmartCollection` 에서 사용할 수 없음 
    * 향후 변경 사항에 대한 가시성을 개선하기 위해 작성 모드에서 스테이징된 제품 데이터에 대한 시각적 표시기
    * 콘텐츠 및 상거래 페이지를 위한 새 사이트맵 구성 요소
 
-* 지원 대상 [Adobe Commerce Sensei 제품 추천, Adobe Sensei 제공](https://business.adobe.com/products/magento/product-recommendations.html) 미리 정의되거나 즉석에서 생성된 권장 사항을 사용하는 AEM Storefront에서
+* 미리 정의되거나 즉석에서 생성된 권장 사항을 사용하여 AEM Storefront에서 [Adobe Sensei에서 제공하는 Adobe Commerce Sensei 제품 권장 사항](https://business.adobe.com/products/magento/product-recommendations.html)을 지원합니다.
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
@@ -122,17 +122,17 @@ API `com.day.cq.dam.api.collection.SmartCollection` 에서 사용할 수 없음 
 
 * Screens 콘텐츠 구조를 확장할 수 있습니다.
 
-* `bulk-offline-update-service` 일부 환경에 대한 모든 권한이 누락되었습니다.
+* `bulk-offline-update-service`에 일부 환경에 대한 모든 권한이 없습니다.
 
 * 새 screens cloud 설명서와 일치하도록 도움말 링크가 업데이트되었습니다.
 
 * 이제 재생 목록 할당 해제 및 플레이어가 할당된 재생 목록 제거 허용 안 함이 작동합니다.
 
-* 이제 &quot;모든&quot; 캐시가 지워지면 플레이어에서 자산을 다시 다운로드합니다.
+* 이제 &quot;모든&quot; 캐시가 지워지면 플레이어에서 Assets을 다시 다운로드합니다.
 
-* 다음과 같은 경우 반복 예약이 작동합니다. *종료 시간* 는 다음 날에 대해 설정됩니다.
+* *종료 시간*&#x200B;이 다음 날로 설정된 경우 이제 반복 예약이 작동합니다.
 
-* `Back&Forward` 이제 Screens as a Cloud Service UI에서 작동합니다.
+* `Back&Forward`이(가) 이제 Screens as a Cloud Service UI에서 작동합니다.
 
 * 이름은 같지만 네임스페이스가 다른 태그를 이전에 만들 수 없습니다.
 
@@ -140,15 +140,15 @@ API `com.day.cq.dam.api.collection.SmartCollection` 에서 사용할 수 없음 
 
 ### 새로운 기능 {#what-is-new-xml-documentation}
 
-XML Documentation for Experience Manager as a Cloud Service은 일반적으로 사용할 수 있습니다. 이를 통해 Experience Manager 고객은 Experience Manager Sites을 비롯한 여러 채널에서 기술 콘텐츠를 가져오고, 만들고, 관리하고, 전달할 수 있는 XML Documentation 추가 기능을 as a Cloud Service으로 확보할 수 있습니다.
+XML Documentation for Experience Manageras a Cloud Service 는 일반적으로 사용할 수 있습니다. 이를 통해 Experience Manager as a Cloud Service 고객은 Experience Manager Sites을 비롯한 여러 채널에서 기술 콘텐츠를 가져오고, 만들고, 관리하고, 제공할 수 있는 XML Documentation 추가 기능을 확보할 수 있습니다.
 
 ## Cloud Manager {#cloud-manager}
 
-이 섹션에서는 AEM as a Cloud Service 2021.7.0의 Cloud Manager 릴리스 정보에 대해 간략히 소개합니다.
+이 섹션에서는 AEM as a Cloud Service 2021.7.0의 Cloud Manager 릴리스 정보에 대해 간략히 설명합니다.
 
 ### 릴리스 일자 {#release-cm-july}
 
-AEM as a Cloud Service 2021.7.0의 Cloud Manager 릴리스 일자는 2021년 7월 15일입니다.
+AEM as a Cloud Service 2021.7.0의 Cloud Manager 릴리스 날짜는 2021년 7월 15일입니다.
 다음 릴리스는 2021년 8월 12일에 예정되어 있습니다.
 
 ### 새로운 기능 {#what-is-new-cm-july}
@@ -157,7 +157,7 @@ AEM as a Cloud Service 2021.7.0의 Cloud Manager 릴리스 일자는 2021년 7�
 
 * 이제 아웃바운드 이그레스 IP가 빌드 단계 로그 파일에 기록됩니다.
 
-* 이전 버전의 AEM을 실행하는 단계 및 프로덕션 환경에서는 이제 상태가 **업데이트 사용 가능**.
+* 이전 버전의 AEM을 실행하는 단계 및 프로덕션 환경에서는 이제 **업데이트 사용 가능** 상태가 보고됩니다.
 
 * 지원되는 최대 SSL 인증서가 프로그램당 20개로 증가했습니다.
 
@@ -187,12 +187,12 @@ Azul JDK를 사용하도록 전환하는 고객은 모든 기존 애플리케이
 
 ### 릴리스 일자 {#release-date-july-cam}
 
-Cloud Acceleration Manager 의 릴리스 날짜는 2021년 7월 15일입니다.
+Cloud Acceleration Manager의 릴리스 날짜는 2021년 7월 15일입니다.
 
 ### 새로운 기능 {#what-is-new-cam}
 
-Cloud Acceleration Manager는 계획 수립에서 Cloud Service로의 이행까지의 전환 과정 전반에 걸쳐 IT 팀을 안내하도록 설계된 클라우드 기반의 애플리케이션입니다. AEM as Cloud Service에 대한 여정의 모든 단계에서 도움이 되는 Adobe 권장 모범 사례, 팁, 설명서 및 도구를 사용하여 성공적인 마이그레이션을 위해 팀을 구성하십시오. 자세히 알아보기 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html).
+Cloud Acceleration Manager는 계획 수립에서 Cloud Service로의 이행까지의 전환 과정 전반에 걸쳐 IT 팀을 안내하도록 설계된 클라우드 기반의 애플리케이션입니다. AEM as Cloud Service에 대한 여정의 모든 단계에서 도움이 되는 Adobe 권장 모범 사례, 팁, 설명서 및 도구를 사용하여 성공적인 마이그레이션을 위해 팀을 구성하십시오. [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html)에서 자세히 알아보세요.
 
 >[!NOTE]
 >
-> 이 항목 확인 [Cloud Acceleration Manager 데모 비디오](https://video.tv.adobe.com/v/335547).
+> 이 [Cloud Acceleration Manager 데모 비디오](https://video.tv.adobe.com/v/335547)를 확인하세요.

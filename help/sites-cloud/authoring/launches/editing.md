@@ -21,7 +21,7 @@ ht-degree: 87%
 1. [참조의 론치(Sites 콘솔)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)에 액세스하여 사용 가능한 동작을 표시합니다.
 1. **페이지로 이동**&#x200B;을 선택하여 편집할 페이지를 엽니다.
 
-페이지를 편집할 때 상단 도구 모음에 표시와 함께 **나가기** 및 **탐색** 옵션:
+페이지를 편집할 때 상단 도구 모음에 **나가기** 및 **탐색** 옵션이 표시됩니다.
 
 ![페이지 편집기에서 나가기 및 론치 탐색](/help/sites-cloud/authoring/assets/launches-edit-01.png)
 

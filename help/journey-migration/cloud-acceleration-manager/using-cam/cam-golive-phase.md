@@ -1,6 +1,6 @@
 ---
-title: Cloud Acceleration Manager의 실행 단계
-description: 이 페이지에서는 Cloud Acceleration Manager의 실행 단계에 대한 개요를 제공합니다.
+title: Cloud Acceleration Manager의 Go-live 단계
+description: 이 페이지에서는 Cloud Acceleration Manager의 Go-Live 단계에 대한 개요를 제공합니다.
 exl-id: 2ec31445-899d-40b8-b3eb-073cb07aff12
 feature: Migration
 role: Admin
@@ -11,23 +11,23 @@ ht-degree: 2%
 
 ---
 
-# Cloud Acceleration Manager의 실행 단계 {#golive-phase-cam}
+# Cloud Acceleration Manager의 라이브 단계 {#golive-phase-cam}
 
-Go-Live 카드는 준비, 수행해야 할 특정 작업, 그리고 AEM에서 원활하고 성공적인 Go-Live를 보장하기 위한 철저한 고려를 강조하는 모든 관련 콘텐츠를 as a Cloud Service으로 제공합니다.
+Go-Live 카드는 AEM as a Cloud Service에서 유연하고 성공적인 Go-Live를 할 수 있도록 준비, 취해야 할 특정 작업, 철저한 고려 사항을 강조 표시하는 모든 관련 콘텐츠를 제공합니다.
 
-프로젝트 카드를 클릭하여 프로젝트 랜딩 페이지를 열고 로 이동합니다. **실행** 섹션에 있는 마지막 항목이 될 필요가 없습니다.
+프로젝트 카드를 클릭하여 프로젝트 랜딩 페이지를 열고 아래 그림과 같이 **Go Live** 섹션으로 이동합니다.
 
 ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
 >[!NOTE]
->다음을 참조하십시오 [Cloud Acceleration Manager에서 프로젝트 생성 및 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html#create-project) 자세히 알아보십시오.
+>자세한 내용은 [Cloud Acceleration Manager에서 프로젝트 만들기 및 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html#create-project)를 참조하십시오.
 
 
 ## Go-Live 활동 카드 사용 {#go-live}
 
 Go Live 활동 카드를 살펴보려면 다음 섹션을 따르십시오.
 
-1. 다음을 클릭합니다. **보기** 단추 **실행** 카드.
+1. **Go Live** 카드에서 **보기** 단추를 클릭합니다.
 
    ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 

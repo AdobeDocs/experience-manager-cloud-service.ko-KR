@@ -47,7 +47,7 @@ Cloud Manager에서 경험 감사를 사용할 수 있습니다.
 * 기본적으로 사이트 프로덕션 파이프라인입니다.
 * 프론트엔드 개발 파이프라인(선택 사항).
 
-다음을 참조하십시오. [구성 섹션](#configuration) 선택적 환경에 대한 감사를 구성하는 방법에 대한 자세한 정보.
+선택적 환경에 대한 감사를 구성하는 방법에 대한 자세한 내용은 [구성 섹션](#configuration)을 참조하십시오.
 
 ## 구성 {#configuration}
 
@@ -57,25 +57,25 @@ Cloud Manager에서 경험 감사를 사용할 수 있습니다.
 
 1. 구성하려는 파이프라인 유형에 따라 다음 지침을 따르십시오.
 
-   * 새 항목 추가 [프로덕션 파이프라인,](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 감사에서 평가할 경로를 정의하려는 경우.
-   * 새 항목 추가 [비프로덕션 파이프라인,](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 프론트엔드 또는 개발 전체 스택 파이프라인에서 감사를 활성화하려는 경우.
-   * 또는 다음을 수행할 수 있습니다 [기존 파이프라인 편집,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) 기존 옵션을 업데이트합니다.
+   * 감사에서 평가할 경로를 정의하려면 새 [프로덕션 파이프라인 ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)을(를) 추가하십시오.
+   * 프론트엔드 또는 개발 전체 스택 파이프라인에서 감사를 활성화하려면 새 [비프로덕션 파이프라인 ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)을(를) 추가하십시오.
+   * 또는 [기존 파이프라인을 편집](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)하고 기존 옵션을 업데이트할 수 있습니다.
 
-1. 경험 감사를 사용할 비프로덕션 파이프라인을 추가하거나 편집하는 경우 다음을 선택해야 합니다. **경험 감사** 의 확인란 **소스 코드** 탭.
+1. 경험 감사를 사용할 비프로덕션 파이프라인을 추가하거나 편집하는 경우 **Source 코드** 탭에서 **경험 감사** 확인란을 선택해야 합니다.
 
-   ![경험 감사 활성화](assets/experience-audit-enable.jpg)
+   ![경험 감사 사용](assets/experience-audit-enable.jpg)
 
    * 비프로덕션 파이프라인에만 필요합니다.
-   * 다음 **경험 감사** 확인란을 선택하면 탭이 나타납니다.
+   * 확인란을 선택하면 **경험 감사** 탭이 나타납니다.
 
-1. 프로덕션 파이프라인과 비프로덕션 파이프라인 모두에서 의 경험 감사에 포함되어야 하는 경로를 정의합니다. **경험 감사** 탭.
+1. 프로덕션 및 비프로덕션 파이프라인 모두에 대해 **경험 감사** 탭에서 경험 감사에 포함해야 하는 경로를 정의합니다.
 
-   * 페이지 경로는 다음으로 시작해야 합니다. `/` 및 은 사이트에 상대적입니다.
-   * 예를 들어 사이트가 `wknd.site` 다음을 포함하려고 합니다. `https://wknd.site/us/en/about-us.html` 경험 감사에서 경로를 입력합니다. `/us/en/about-us.html`.
+   * 페이지 경로는 `/`(으)로 시작해야 하며 사이트에 상대적입니다.
+   * 예를 들어 사이트가 `wknd.site`이고 경험 감사에 `https://wknd.site/us/en/about-us.html`을(를) 포함하려면 `/us/en/about-us.html` 경로를 입력하십시오.
 
    ![경험 감사의 경로 정의](assets/experience-audit-add-page.png)
 
-1. 탭 또는 클릭 **페이지 추가** 환경 주소를 사용하여 경로가 자동으로 완료되고 경로 테이블에 추가됩니다.
+1. **페이지 추가**&#x200B;를 탭하거나 클릭하면 환경 주소를 사용하여 경로가 자동으로 완료되고 경로 테이블에 추가됩니다.
 
    ![표에 경로 저장](assets/experience-audit-page-added.png)
 
@@ -107,7 +107,7 @@ Cloud Manager에서 경험 감사를 사용할 수 있습니다.
 
 * **음수 값** - 마지막 프로덕션 파이프라인 실행 이후 선택한 테스트에서 페이지가 회귀했습니다.
 
-* **변경 내용 없음** - 페이지가 마지막 프로덕션 파이프라인 실행 이후 동일한 점수를 받았습니다.
+* **변경 없음** - 페이지가 마지막 프로덕션 파이프라인 실행 이후 동일한 점수를 받았습니다.
 
 * **해당 사항 없음** - 비교할 수 있는 이전 점수가 없습니다.
 

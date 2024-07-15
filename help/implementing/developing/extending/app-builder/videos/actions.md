@@ -1,6 +1,6 @@
 ---
 title: App Builder 작업
-description: Adobe 런타임 작업과 이 작업을 App Builder 응용 프로그램에서 사용하는 방법에 대해 알아봅니다.
+description: Adobe 런타임 작업과 이러한 작업을 App Builder 애플리케이션에서 사용하는 방법에 대해 알아봅니다.
 version: Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development

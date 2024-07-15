@@ -16,7 +16,7 @@ ht-degree: 1%
 
 이 섹션에서는 파노라마 이미지 뷰어를 사용하여 공간, 속성, 위치 또는 풍경을 360° 몰입형으로 볼 수 있도록 구형 파노라마 이미지를 렌더링하는 방법에 대해 설명합니다.
 
-참조: [뷰어 사전 설정 관리](/help/assets/dynamic-media/managing-viewer-presets.md).
+[뷰어 사전 설정 관리](/help/assets/dynamic-media/managing-viewer-presets.md)도 참조하세요.
 
 ![panoramic-image2](assets/panoramic-image2.png)
 
@@ -27,11 +27,11 @@ ht-degree: 1%
 * 종횡비가 2입니다.
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* 키워드로 태그 지정됨 `equirectangular`, 또는 `spherical`및 `panorama`, 또는 `spherical` 및 `panoramic`. 다음을 참조하십시오 [태그 사용](/help/sites-cloud/authoring/sites-console/tags.md).
+* 키워드 `equirectangular`, `spherical` 및 `panorama` 또는 `spherical` 및 `panoramic`을(를) 태그 지정했습니다. [태그 사용](/help/sites-cloud/authoring/sites-console/tags.md)을 참조하세요.
 
-종횡비와 키워드 기준은 모두 자산 세부 사항 페이지 및 의 파노라마 자산에 적용됩니다. `Panoramic Media` WCM 구성 요소입니다.
+종횡비와 키워드 기준은 모두 자산 세부 정보 페이지 및 `Panoramic Media` WCM 구성 요소의 파노라마 자산에 적용됩니다.
 
-파노라마 이미지 뷰어에 사용할 자산을 업로드하려면 다음을 참조하십시오. [에셋 업로드](/help/assets/manage-digital-assets.md#uploading-assets).
+파노라마 이미지 뷰어에 사용할 자산을 업로드하려면 [자산 업로드](/help/assets/manage-digital-assets.md#uploading-assets)를 참조하세요.
 
 <!--  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
 
@@ -78,8 +78,8 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 ## 파노라마 이미지 미리 보기 {#previewing-panoramic-images}
 
-다음을 참조하십시오 [에셋 미리보기](/help/assets/dynamic-media/previewing-assets.md).
+[자산 미리 보기](/help/assets/dynamic-media/previewing-assets.md)를 참조하세요.
 
-## 파노라마 이미지 게시 {#publishing-panoramic-images}
+## Publish 파노라마 이미지 {#publishing-panoramic-images}
 
-다음을 참조하십시오 [자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+[Publish 자산](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)을 참조하세요.

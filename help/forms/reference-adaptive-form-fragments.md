@@ -8,8 +8,8 @@ discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 docset: aem65
 source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 2%
+source-wordcount: '396'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 적응형 양식 조각은 필드 그룹이거나 양식을 만들 때 사용할 수 있는 필드 그룹이 포함된 패널입니다. 이를 통해 양식을 쉽고 빠르게 만들 수 있습니다. 사이드바의 에셋 브라우저를 사용하여 적응형 양식 조각을 양식으로 드래그 앤 드롭할 수 있으며 양식 편집기에서 편집할 수 있습니다.
 
-적응형 Forms 작성자의 경우 다음에서 참조 조각을 제공합니다. [!DNL AEM Forms] 패키지 [[!DNL AEM FORMS] 참조 조각](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS). 여기에는 다음 조각이 포함됩니다.
+적응형 Forms 작성자의 경우 참조 조각이 [!DNL AEM Forms] 패키지 [[!DNL AEM FORMS] 참조 조각](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS)에 제공됩니다. 여기에는 다음 조각이 포함됩니다.
 
 * 주소
 * 연락처 정보
@@ -31,7 +31,7 @@ ht-degree: 2%
 * 약관
 * 스크리블 사용 약관
 
-패키지를 설치하면 Forms 및 문서 아래에 참조 조각이 포함된 참조 조각 폴더가 만들어집니다. 패키지 설치는 다음을 참조하십시오. [Cloud Manager 및 Package Manager를 통해 콘텐츠 패키지 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#deploying-content-packages-via-cloud-manager-and-package-manager) 및 [패키지를 사용하여 작업하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
+패키지를 설치하면 Forms 및 문서 아래에 참조 조각이 포함된 참조 조각 폴더가 만들어집니다. 패키지를 설치하려면 [Cloud Manager 및 패키지 관리자를 통해 콘텐츠 패키지 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#deploying-content-packages-via-cloud-manager-and-package-manager) 및 [패키지를 사용하여 작업하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)을 참조하십시오.
 
 ![나열된 모든 조각](assets/ootb-frags.png)
 
@@ -39,7 +39,7 @@ ht-degree: 2%
 
 우편 주소를 지정하는 필드를 포함합니다. 사용 가능한 필드는 주소, 우편 번호, 도시, 주 및 국가입니다. 또한 지정된 미국 우편번호에 대해 시 및 주를 채우는 사전 구성된 웹 서비스가 포함되어 있습니다.
 
-![주소 단편](assets/address.png)
+![주소 조각](assets/address.png)
 
 <!--[Click to enlarge
 
@@ -84,7 +84,7 @@ ht-degree: 2%
 
 고용 내역을 캡처하는 필드를 포함합니다. 여러 조직을 추가할 수 있습니다.
 
-![고용 내역 조각](assets/emp-history.png)
+![고용 기록 조각](assets/emp-history.png)
 
 <!--[Click to enlarge
 
@@ -114,7 +114,7 @@ ht-degree: 2%
 
 사용자가 양식을 제출하기 전에 동의할 약관을 지정합니다.
 
-![사용 약관 조각](assets/tnc.png)
+![약관 조각](assets/tnc.png)
 
 <!--[Click to enlarge
 

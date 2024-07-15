@@ -46,14 +46,14 @@ ht-degree: 30%
   <tr>
     <td>버전 삭제</td>
     <td>고객</td>
-    <td>버전 삭제는 현재 기본적으로 비활성화되어 있지만 다음에 설명된 대로 정책을 구성할 수 있습니다. <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">버전 삭제 및 감사 로그 삭제 유지 관리 작업</a> 섹션.<br/><br/>삭제는 곧 기본적으로 활성화되고 해당 값은 재정의할 수 있습니다.<br>
+    <td>버전 제거는 현재 기본적으로 사용하지 않도록 설정되어 있지만 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">버전 제거 및 감사 로그 제거 유지 관리 작업</a> 섹션에 설명된 대로 정책을 구성할 수 있습니다.<br/><br/>제거가 곧 기본적으로 사용되며 해당 값은 재정의할 수 있습니다.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>감사 로그 삭제</td>
     <td>고객</td>
-    <td>감사 로그 제거는 현재 기본적으로 비활성화되어 있지만 다음에 설명된 대로 정책을 구성할 수 있습니다. <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">버전 삭제 및 감사 로그 삭제 유지 관리 작업</a> 섹션.<br/><br/>삭제는 곧 기본적으로 활성화되고 해당 값은 재정의할 수 있습니다.<br>
+    <td>감사 로그 제거는 현재 기본적으로 사용하지 않도록 설정되어 있지만 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">버전 제거 및 감사 로그 제거 유지 관리 작업</a> 섹션에 설명된 대로 정책을 구성할 수 있습니다.<br/><br/>제거가 곧 기본적으로 사용되며 해당 값은 재정의할 수 있습니다.<br>
    </td>
    </td>
   </tr>
@@ -67,15 +67,15 @@ ht-degree: 30%
     <td>애드혹 작업 삭제</td>
     <td>고객</td>
     <td>
-    <p>git에서 수행해야 합니다. 아래의 기본 제공 유지 관리 창 구성 노드 재정의 <code>/libs</code> 폴더 아래에 속성을 생성하여 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> 또는 <code>granite_monthly</code>.</p>
-    <p>추가적인 구성 세부 정보는 아래의 유지 관리 창 표를 참조하십시오. 위의 노드 아래에 다른 노드를 추가하여 유지 관리 작업을 활성화합니다. 이름 지정 <code>granite_TaskPurgeTask</code>, 속성 포함 <code>sling:resourceType</code> 을 로 설정 <code>granite/operations/components/maintenance/task</code> 및 속성 <code>granite.maintenance.name</code> 을 로 설정 <code>TaskPurge</code>. OSGI 속성을 구성합니다. 다음을 참조하십시오. <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> 속성 목록.</p>
+    <p>git에서 수행해야 합니다. <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> 또는 <code>granite_monthly</code> 폴더 아래에 속성을 만들어 <code>/libs</code>에서 기본 제공 유지 관리 창 구성 노드를 재정의합니다.</p>
+    <p>추가적인 구성 세부 정보는 아래의 유지 관리 창 표를 참조하십시오. 위의 노드 아래에 다른 노드를 추가하여 유지 관리 작업을 활성화합니다. <code>sling:resourceType</code> 특성이 <code>granite/operations/components/maintenance/task</code>(으)로 설정되고 <code>granite.maintenance.name</code> 특성이 <code>TaskPurge</code>(으)로 설정된 <code>granite_TaskPurgeTask</code>(으)로 이름을 지정합니다. OSGI 속성을 구성하십시오. 속성 목록은 <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code>을(를) 참조하십시오.</p>
   </td>
   </tr>
     <tr>
     <td>워크플로 삭제</td>
     <td>고객</td>
     <td>
-    <p>git에서 수행해야 합니다. 아래의 기본 제공 유지 관리 창 구성 노드 재정의 <code>/libs</code> 폴더 아래에 속성을 생성하여 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> 또는 <code>granite_monthly</code>. 추가적인 구성 세부 정보는 아래의 유지 관리 창 표를 참조하십시오.</p>
+    <p>git에서 수행해야 합니다. <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> 또는 <code>granite_monthly</code> 폴더 아래에 속성을 만들어 <code>/libs</code>에서 기본 제공 유지 관리 창 구성 노드를 재정의합니다. 추가적인 구성 세부 정보는 아래의 유지 관리 창 표를 참조하십시오.</p>
     <p>적절한 속성을 사용해 위 노드 아래에서 또 다른 노드를 추가하여(<code>granite_WorkflowPurgeTask</code>로 이름 지정) 유지 관리 작업을 활성화합니다. OSGI 속성을 구성합니다. <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html#regular-purging-of-workflow-instances">AEM 6.5 유지 관리 작업 문서</a>를 참조하십시오.</p>
   </td>
   </tr>
@@ -83,7 +83,7 @@ ht-degree: 30%
     <td>프로젝트 삭제</td>
     <td>고객</td>
     <td>
-    <p>git에서 수행해야 합니다. 아래의 기본 제공 유지 관리 창 구성 노드 재정의 <code>/libs</code> 폴더 아래에 속성을 생성하여 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> 또는 <code>granite_monthly</code>. 추가적인 구성 세부 정보는 아래의 유지 관리 창 표를 참조하십시오.</p>
+    <p>git에서 수행해야 합니다. <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> 또는 <code>granite_monthly</code> 폴더 아래에 속성을 만들어 <code>/libs</code>에서 기본 제공 유지 관리 창 구성 노드를 재정의합니다. 추가적인 구성 세부 정보는 아래의 유지 관리 창 표를 참조하십시오.</p>
     <p>적절한 속성을 사용해 위 노드 아래에서 또 다른 노드를 추가하여(<code>granite_ProjectPurgeTask</code>로 이름 지정) 유지 관리 작업을 활성화합니다. "프로젝트 Adobe 제거 구성" 아래의 OSGI 속성 목록을 참조하십시오.</p>
   </td>
   </tr>
@@ -118,7 +118,7 @@ ht-degree: 30%
     <p>24시간 시계로 사용하는 <strong>windowStartTime=HH:MM</strong>입니다. 주별 유지 관리 창과 연계된 유지 관리 작업을 실행해야 하는 시점을 정의합니다.</p>
     <p>24시간 시계로 사용하는 <strong>windowEndTime=HH:MM</strong>입니다. 주별 유지 관리 창과 연계된 유지 관리 작업이 완료된 상태가 아닌 경우 실행을 정지해야 하는 시점을 정의합니다.</p>
     <p>이 일정 동안에는 유지 관리 작업을 두 번 이상 실행할 수 없습니다.</p>
-    <p><strong>windowScheduleWeekdays= 1~7의 두 값 배열(예: [5,5])</strong> 배열의 첫 번째 값은 작업이 예약된 시작일이며 두 번째 값은 작업이 중지되는 종료일입니다. 정확한 시작 및 종료 시간은 각각 windowStartTime과 windowEndTime이 제어합니다.</p>
+    <p><strong>windowScheduleWeekdays= Array of two values from 1-7 (예: [5,5])</strong> 배열의 첫 번째 값은 작업이 예약된 시작일이며 두 번째 값은 작업이 정지되어야 하는 종료일입니다. 정확한 시작 및 종료 시간은 각각 windowStartTime과 windowEndTime이 제어합니다.</p>
     </td>
   </tr>
   <tr>
@@ -126,11 +126,11 @@ ht-degree: 30%
     <td>고객</td>
     <td>JCR 노드 정의</td>
     <td>
-    <p><strong>windowSchedule=monthly</strong> (이 값은 변경해서는 안 됨)</p>
+    <p><strong>windowSchedule=monthly</strong>(이 값은 변경해서는 안 됨)</p>
     <p>24시간 시계로 사용하는 <strong>windowStartTime=HH:MM</strong>입니다. 월별 유지 관리 창과 연계된 유지 관리 작업을 실행해야 하는 시점을 정의합니다.</p>
     <p>24시간 시계로 사용하는 <strong>windowEndTime=HH:MM</strong>입니다. 월별 유지 관리 창과 연계된 유지 관리 작업이 완료된 상태가 아닌 경우 실행을 정지해야 하는 시점을 정의합니다.</p>
     <p>이 일정 동안에는 유지 관리 작업을 두 번 이상 실행할 수 없습니다.</p>
-    <p><strong>windowScheduleWeekdays=1-7 사이의 두 값 배열(예: [5,5])</strong> 배열의 첫 번째 값은 작업이 예약된 시작일이며 두 번째 값은 작업이 중지되는 종료일입니다. 정확한 시작 및 종료 시간은 각각 windowStartTime과 windowEndTime이 제어합니다.</p>
+    <p><strong>windowScheduleWeekdays=Array of two values from 1-7 (example, [5,5])</strong> 배열의 첫 번째 값은 작업이 예약된 시작일이며 두 번째 값은 작업이 정지되어야 하는 종료일입니다. 정확한 시작 및 종료 시간은 각각 windowStartTime과 windowEndTime이 제어합니다.</p>
     <p><strong>windowFirstLastStartDay= 0/1</strong> 0은 당월의 첫째 주에 예약하는 것이며 1은 당월 마지막 주에 예약하는 것을 뜻합니다. 값이 없으면 windowScheduleWeekdays(매월)가 제어하는 날에 작업이 효과적으로 예약됩니다.</p>
     </td>
     </tr>
@@ -219,21 +219,21 @@ ht-degree: 30%
 > 
 >마찬가지로, 구성 파일에 감사 로그 제거 노드를 배포한 후에는 선언된 상태를 유지하고 제거하지 않아야 합니다.
 
-**1** - Git에서 프로젝트의 최상위 수준 폴더에 다음 폴더 및 파일 구조를 만듭니다.
+**1** - Git에서 프로젝트의 최상위 폴더에 다음 폴더 및 파일 구조를 만듭니다.
 
 ```
 config/
      mt.yaml
 ```
 
-**2** - 구성 파일에서 다음을 포함하는 속성을 선언합니다.
+**2** - 다음을 포함하는 구성 파일의 속성을 선언합니다.
 
 * 값이 &quot;MaintenanceTasks&quot;인 &quot;kind&quot; 속성.
 * &quot;version&quot; 속성(현재 버전 1)입니다.
-* 속성이 있는 선택적 &quot;metadata&quot; 개체 `envTypes` 이 구성이 유효한 환경 유형(dev, stage, prod)을 쉼표로 구분한 목록으로 표시합니다. 메타데이터 개체가 선언되지 않으면 모든 환경 유형에 대해 구성이 유효합니다.
-* 두 항목이 모두 포함된 데이터 개체 `versionPurge` 및 `auditLogPurge` 개체.
+* 속성이 `envTypes`인 선택적 &quot;metadata&quot; 개체로, 이 구성이 유효한 환경 유형(dev, stage, prod)의 쉼표로 구분된 목록입니다. 메타데이터 개체가 선언되지 않으면 모든 환경 유형에 대해 구성이 유효합니다.
+* `versionPurge` 및 `auditLogPurge` 개체가 모두 있는 데이터 개체입니다.
 
-의 정의 및 구문을 참조하십시오. `versionPurge` 및 `auditLogPurge` 아래에 있는 개체입니다.
+아래 `versionPurge` 및 `auditLogPurge` 개체의 정의 및 구문을 참조하십시오.
 
 다음 예제와 유사하게 구성을 구성해야 합니다.
 
@@ -271,13 +271,13 @@ data:
 * 아래 속성 표의 유형(정수, 문자열, 부울 등)은 준수해야 합니다.
 
 >[!NOTE]
->다음을 사용할 수 있습니다. `yq` 구성 파일의 YAML 형식을 로컬로 검증하려면 다음을 수행합니다. `yq mt.yaml`).
+>`yq`을(를) 사용하여 구성 파일의 YAML 형식을 로컬로 확인할 수 있습니다(예: `yq mt.yaml`).
 
-**3** - 비프로덕션 및 프로덕션 구성 파이프라인 구성
+**3** - 비프로덕션 및 프로덕션 구성 파이프라인을 구성합니다.
 
 RDE(신속한 개발 환경)는 제거를 지원하지 않습니다. 프로덕션(샌드박스가 아닌) 프로그램의 다른 환경 유형의 경우 Cloud Manager에서 타깃팅된 배포 구성 파이프라인을 만듭니다.
 
-다음을 참조하십시오 [프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 및 [비프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 을 참조하십시오.
+자세한 내용은 [프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 및 [비프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)을 참조하십시오.
 
 ### 버전 삭제 {#version-purge}
 
@@ -309,7 +309,7 @@ RDE(신속한 개발 환경)는 제거를 지원하지 않습니다. 프로덕�
 
 허용되는 속성은 다음과 같습니다.
 
-을 나타내는 열 *기본값* 기본값이 적용될 때 미래의 기본값을 나타냅니다. *TBD* 는 여전히 결정되지 않은 환경 id를 반영합니다.
+*default*&#x200B;을(를) 나타내는 열은 기본값이 적용될 때 미래의 기본값을 나타냅니다. *TBD*&#x200B;은(는) 아직 결정되지 않은 환경 ID를 반영합니다.
 
 | 속성 | envs>TBD의 향후 기본값 | envs&lt;=TBD의 향후 기본값 | required | 유형 | 값 |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
@@ -332,9 +332,9 @@ maximumVersions = 10
 minimumVersions = 2
 ```
 
-23일에 11개의 버전이 있는 경우 다음 번에 제거 유지 관리 작업이 실행될 때 다음 이후 가장 오래된 버전이 삭제됩니다. `maximumVersions` 속성은 10으로 설정됩니다.
+`maximumVersions` 속성이 10으로 설정되어 있으므로 23일에 11개의 버전이 있는 경우 다음 번에 제거 유지 관리 작업이 실행될 때 가장 오래된 버전이 삭제됩니다.
 
-31일에 5개의 버전이 있는 경우 `minimumVersions` 속성은 2로 설정됩니다.
+31일에 5개의 버전이 있는 경우 `minimumVersions` 속성이 2로 설정되어 있으므로 3개만 삭제됩니다.
 
 예:
 
@@ -344,7 +344,7 @@ maximumVersions = 0
 minimumVersions = 1
 ```
 
-다음 이후 30일 이상 버전은 삭제되지 않습니다. `maximumVersions` 속성은 0으로 설정됩니다.
+`maximumVersions` 속성이 0으로 설정되어 30일 이상 버전이 삭제되지 않습니다.
 
 30일 넘는 이전 버전 하나가 유지됩니다.
 
@@ -375,7 +375,7 @@ minimumVersions = 1
 
 허용되는 속성은 다음과 같습니다.
 
-을 나타내는 열 *기본값* 기본값이 적용될 때 미래의 기본값을 나타냅니다. *TBD* 는 여전히 결정되지 않은 환경 id를 반영합니다.
+*default*&#x200B;을(를) 나타내는 열은 기본값이 적용될 때 미래의 기본값을 나타냅니다. *TBD*&#x200B;은(는) 아직 결정되지 않은 환경 ID를 반영합니다.
 
 
 | 속성 | envs>TBD의 향후 기본값 | envs&lt;=TBD의 향후 기본값 | required | 유형 | 값 |
@@ -383,4 +383,4 @@ minimumVersions = 1
 | 규칙 | - | - | 예 | 오브젝트 | 복제, 페이지, dam 노드 중 하나 이상. 이러한 각 노드는 아래의 속성을 사용하여 규칙을 정의합니다. 모든 속성을 선언해야 합니다. |
 | maximumAgeDays | 7일 | 전체 2557(7년 + 2윤일) | 예 | 정수 | 복제, 페이지 또는 dam의 경우: 감사 로그가 유지되는 일 수입니다. 구성된 값보다 오래된 감사 로그는 제거됩니다. |
 | contentPath | &quot;/content&quot; | &quot;/content&quot; | 예 | 문자열 | 관련 유형에 대해 감사 로그가 삭제되는 경로. &quot;/content&quot;로 설정해야 합니다. |
-| 유형 | 모든 값 | 모든 값 | 예 | 열거형 배열 | 대상 **복제**, 열거된 값은 활성화, 비활성화, 삭제, 테스트, 역방향, 내부 폴입니다. 대상 **페이지**, 열거된 값은 PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, PageRestored, PageRolled Out, PageValid, PageInvalid입니다. 대상 **dam**, 열거형 값은 ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVED, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT, RENDITION_UPDATED, ACCEPTED, DOWNLOADED, SUBASSET_UPDATED, SUBASSET_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITIONS_DOWNLOADED, RENDITION_DOWNLOADED. |
+| 유형 | 모든 값 | 모든 값 | 예 | 열거형 배열 | **복제**&#x200B;의 경우 열거된 값은 활성화, 비활성화, 삭제, 테스트, 역방향, 내부 폴링입니다. **페이지**&#x200B;의 경우 열거된 값은 PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, PageRestored, PageRolled Out, PageValid, PageInvalid입니다. **dam**&#x200B;의 경우 열거형 값은 ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVED, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT, RENDITION_UPDATED, ACCEPTED, DOWNLOADED, SUBASSET_UPDATED, ASSET_CREATED, ASSET_SHARED, RENDITION_DOWNLOADED, REJECTED입니다. |

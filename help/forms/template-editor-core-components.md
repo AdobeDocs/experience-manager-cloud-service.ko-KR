@@ -14,7 +14,7 @@ ht-degree: 5%
 
 # 핵심 구성 요소 기반 적응형 템플릿 만들기 {#adaptive-form-templates}
 
-양식을 작성할 때 편집기에서 양식 구조, 콘텐츠 및 작업을 정의하는 필드 및 구성 요소를 추가합니다. 에서 필드 및 구성 요소를 추가합니다 `guideRootPanel` 양식 컨테이너. 템플릿 편집기를 사용하면 작성자가 양식을 만드는 데 사용할 수 있는 기본 구조와 초기 콘텐츠가 포함된 템플릿을 만들 수 있습니다.
+양식을 작성할 때 편집기에서 양식 구조, 콘텐츠 및 작업을 정의하는 필드 및 구성 요소를 추가합니다. 양식 컨테이너의 `guideRootPanel`에 필드 및 구성 요소를 추가합니다. 템플릿 편집기를 사용하면 작성자가 양식을 만드는 데 사용할 수 있는 기본 구조와 초기 콘텐츠가 포함된 템플릿을 만들 수 있습니다.
 
 예를 들어 모든 양식 작성자가 등록 양식에 특정 텍스트 상자, 탐색 단추 및 제출 단추를 포함할 수 있습니다. 작성자가 다른 등록 양식과 일치하는 양식을 만드는 데 사용할 수 있는 구성 요소로 템플릿을 만들 수 있습니다. 작성자가 템플릿을 사용하여 적응형 양식을 만들면 새 양식은 템플릿에서 지정한 구조 및 구성 요소를 상속받습니다. 템플릿 편집기 를 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 
@@ -28,33 +28,33 @@ You can download and install [!DNL AEM Forms] reference content package from [So
 
 ## 전제 조건
 
-**환경에 맞는 적응형 Forms 핵심 구성 요소 활성화**: 프로그램을 만들 때 환경에 대한 적응형 Forms 핵심 구성 요소가 이미 활성화되었습니다. InDesign을 기반으로 하는 as a Cloud Service이 있는 경우 [AEM Archetype 39 이하](https://github.com/adobe/aem-project-archetype), [환경에 맞는 적응형 Forms 핵심 구성 요소 활성화](enable-adaptive-forms-core-components.md).
+**환경에 적응형 Forms 핵심 구성 요소 사용**: 프로그램을 만들 때 환경에 대해 적응형 Forms 핵심 구성 요소가 이미 활성화되었습니다. [AEM Archetype 39 이하](https://github.com/adobe/aem-project-archetype)를 기반으로 하는 Forms 양식 환경이 있는 경우 [환경에 맞는 적응형 as a Cloud Service 핵심 구성 요소를 활성화](enable-adaptive-forms-core-components.md)하십시오.
 
 >[!NOTE]
 >
-> Archetype 45를 기반으로 하는 Forms as a Cloud Service 환경 배포 시 **적응형 Forms(핵심 구성 요소)** 템플릿 및 핵심 구성 요소 기반 테마가 환경에 추가됩니다.
+> Archetype 45를 기반으로 하는 Forms as a Cloud Service 환경을 배포할 때 **적응형 Forms(핵심 구성 요소)** 템플릿과 핵심 구성 요소 기반 테마가 환경에 추가됩니다.
 
 ## 템플릿 작업 {#working-with-templates}
 
-도구 메뉴에서 다음 위치로 이동하여 템플릿 편집기에 액세스할 수 있습니다. **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL 템플릿]**. 여기에서 템플릿은 편집 가능한 템플릿을 사용할 수 있도록 설정된 폴더로 구성됩니다.
+도구 메뉴에서 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL 템플릿]**&#x200B;으로 이동하여 템플릿 편집기에 액세스할 수 있습니다. 여기에서 템플릿은 편집 가능한 템플릿을 사용할 수 있도록 설정된 폴더로 구성됩니다.
 
 >[!NOTE]
 >
 > 핵심 구성 요소별 폴더에서 편집 가능한 핵심 구성 요소 기반 템플릿을 찾을 수 있습니다.
 
-Experience Manager은 템플릿을 구성할 수 있는 전역 폴더를 제공합니다. 그러나 기본적으로 활성화되어 있지는 않습니다. 전역 폴더를 활성화하거나 템플릿용 폴더를 만들도록 관리자에게 요청할 수 있습니다. 폴더를 만드는 방법에 대한 자세한 내용은 [템플릿 폴더](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors).
+Experience Manager은 템플릿을 구성할 수 있는 전역 폴더를 제공합니다. 그러나 기본적으로 활성화되어 있지는 않습니다. 전역 폴더를 활성화하거나 템플릿용 폴더를 만들도록 관리자에게 요청할 수 있습니다. 폴더를 만드는 방법에 대한 자세한 내용은 [템플릿 폴더](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors)를 참조하십시오.
 
 ## 템플릿 만들기 {#create-template}
 
 폴더를 만든 후 폴더를 열고 다음 단계를 수행하여 템플릿을 만듭니다.
 
-1. 선택 **[!UICONTROL 만들기]** 을(를) 생성한 폴더 내에서 선택합니다.
-1. 다음에서 **[!UICONTROL 템플릿 유형 선택]** 섹션, 선택 **[!UICONTROL 적응형 양식(핵심 구성 요소) 템플릿]** 및 선택 **[!UICONTROL 다음]**.
+1. 만든 폴더 내에서 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 템플릿 유형 선택]** 섹션에서 **[!UICONTROL 적응형 양식(핵심 구성 요소) 템플릿]**&#x200B;을 선택하고 **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 
-1. 다음에서 **[!UICONTROL 템플릿 세부 정보]** 섹션, 다음을 제공합니다. **템플릿 제목** 및 선택 **[!UICONTROL 만들기]**.
+1. **[!UICONTROL 템플릿 세부 정보]** 섹션에서 **템플릿 제목**&#x200B;을 제공하고 **[!UICONTROL 만들기]**를 선택합니다.
 설명을 입력할 수도 있습니다.
 
-1. 선택 **[!UICONTROL 완료]** 콘솔로 돌아가거나 **[!UICONTROL 열기]** 를 클릭하여 편집기에서 템플릿을 엽니다.
+1. **[!UICONTROL 완료]**&#x200B;를 선택하여 콘솔로 돌아가거나 **[!UICONTROL 열기]**&#x200B;를 선택하여 편집기에서 템플릿을 엽니다.
 
 ## 템플릿 편집기 UI {#template-editor-ui}
 
@@ -66,10 +66,10 @@ Experience Manager은 템플릿을 구성할 수 있는 전역 폴더를 제공�
    * **사이드 패널 전환**: 사이드바를 표시하거나 숨길 수 있습니다.
    * **페이지 정보**: 게시/게시 취소 시간, 썸네일, 클라이언트측 라이브러리, 페이지 정책 및 페이지 디자인 클라이언트측 라이브러리와 같은 정보를 지정할 수 있습니다.
      <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
-   * **모드 선택기:** 모드를 변경할 수 있습니다. 다음을 선택할 수 있습니다. **[!UICONTROL 구조]** 모드, **[!UICONTROL 초기 컨텐츠]**, **[!UICONTROL 레이아웃 제어]** 모드. 구조 모드에서는 머리글과 바닥글을 추가하고 사용자 정의할 수 있습니다. 초기 컨텐츠 모드에서는 양식 컨텐츠를 사용자 정의할 수 있습니다.
-   * **미리 보기:** 템플릿을 게시할 때 템플릿이 어떻게 표시되는지 미리 볼 수 있습니다. [레이어 선택기] 및 [미리 보기]를 사용하여 편집 모드와 미리 보기 모드를 전환할 수 있습니다.
-* **사이드바:** Content, Properties, Assets 및 Components 브라우저를 제공합니다.
-* **구성 요소 도구 모음:** 구성 요소를 선택하면 구성 요소를 사용자 정의할 수 있는 도구 모음이 표시됩니다.
+   * **모드 선택기:** 모드를 변경할 수 있습니다. **[!UICONTROL 구조]** 모드, **[!UICONTROL 초기 콘텐츠]**, **[!UICONTROL 레이아웃 제어]** 모드를 선택할 수 있습니다. 구조 모드에서는 머리글과 바닥글을 추가하고 사용자 정의할 수 있습니다. 초기 컨텐츠 모드에서는 양식 컨텐츠를 사용자 정의할 수 있습니다.
+   * **미리 보기:** 템플릿을 게시할 때 템플릿의 모양을 미리 볼 수 있습니다. [레이어 선택기] 및 [미리 보기]를 사용하여 편집 모드와 미리 보기 모드를 전환할 수 있습니다.
+* **사이드바:**&#x200B;은(는) 콘텐츠, 속성, Assets 및 구성 요소 브라우저를 제공합니다.
+* **구성 요소 도구 모음:** 구성 요소를 선택하면 구성 요소를 사용자 지정할 수 있는 도구 모음이 표시됩니다.
 * **페이지**: 템플릿을 만들기 위해 콘텐츠를 추가하는 영역입니다.
 
 <!-- See [Introduction to authoring Adaptive Forms](introduction-forms-authoring.md) to understand the Touch UI editor. -->
@@ -121,9 +121,9 @@ Header and footer are added in the Initial Content layer.
 
 초기 컨텐츠 옵션을 선택하면 템플릿의 적응형 양식 컨테이너가 편집을 위한 적응형 양식처럼 열립니다. 템플릿과 연결된 적응형 Forms을 만드는 동안 변경할 수 있는 사전 정의된 콘텐츠를 만들 수 있습니다. 적응형 양식 작성과 마찬가지로 테마 선택 및 작업 제출과 같은 초기 설정을 지정할 수 있습니다.
 
-양식 작성자는 이 필드를 기반으로 양식을 만듭니다. 컨텐츠 흐름 구조는 템플릿의 초기 컨텐츠 레이어에 지정됩니다. 양식 템플릿의 초기 콘텐츠를 편집하는 것으로 전환하려면 페이지 도구 모음에서 미리 보기 전에 을 선택합니다. ![캔버스 드롭다운](assets/canvas-drop-down.png) **>** **[!UICONTROL 초기 컨텐츠]**.
+양식 작성자는 이 필드를 기반으로 양식을 만듭니다. 컨텐츠 흐름 구조는 템플릿의 초기 컨텐츠 레이어에 지정됩니다. 양식 템플릿의 초기 콘텐츠를 편집하는 것으로 전환하려면 페이지 도구 모음에서 미리 보기 전에 ![캔버스-드롭다운](assets/canvas-drop-down.png) **>** **[!UICONTROL 초기 콘텐츠]**&#x200B;를 선택합니다.
 
-![초기 컨텐츠 레이어에 머리글 및 바닥글 추가됨](assets/header-and-footer.png)
+![머리글과 바닥글이 초기 콘텐츠 레이어에 추가됨](assets/header-and-footer.png)
 
 초기 컨텐츠 레이어에서 작성자가 기반으로 사용하는 적응형 양식 템플릿을 만듭니다. 템플릿 작성은 양식 작성과 유사하며, 사이드바에서 사용할 수 있는 옵션을 사용합니다. 사이드바는 콘텐츠, 속성, 에셋 및 구성 요소 브라우저를 제공합니다.
 
@@ -139,33 +139,33 @@ Header and footer are added in the Initial Content layer.
 
 ![구조 레이어의 레이아웃 컨테이너](/help/forms/assets/layout-template-core-component.png)
 
-이 문서 참조 [응답형 레이아웃 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=en) 추가 정보.
+자세한 내용은 문서 [응답형 레이아웃 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=en)를 참조하십시오.
 
 ## 템플릿 활성화 {#enabling-the-template}
 
 템플릿을 만들면 초안으로 추가됩니다. 적응형 Forms 생성에 사용할 수 있도록 템플릿을 활성화합니다. 템플릿을 활성화하려면 다음 작업을 수행하십시오.
 
-1. 다음으로 이동 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 도구]** > **[!UICONTROL 템플릿]**을 클릭하고 템플릿을 만든 폴더를 엽니다.
+1. **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 도구]** > **[!UICONTROL 템플릿]**(으)로 이동하여 템플릿을 만든 폴더를 엽니다.
 생성한 템플릿이 초안으로 표시됩니다.
-1. 템플릿을 선택하고 **[!UICONTROL 사용]** 을 클릭합니다.
+1. 템플릿을 선택하고 도구 모음에서 **[!UICONTROL 사용]**을 선택합니다.
 적응형 양식을 만들 때 템플릿을 선택하라는 메시지가 표시되면 템플릿이 나열된 것을 볼 수 있습니다.
 
 ## 템플릿 가져오기 또는 내보내기 {#importing-or-exporting-a-template}
 
-양식은 템플릿으로 작동합니다. 사용자 지정된 템플릿을 사용하여 만든 적응형 양식을 다운로드할 때 템플릿이 다운로드되지 않습니다. 다른 페이지에서 양식을 가져올 때 [!DNL AEM Forms] 예를 들어 템플릿 없이 가져옵니다. 양식을 가져왔지만 해당 템플릿을 사용할 수 없는 경우 양식이 렌더링되지 않습니다. 에서 사용자 지정 템플릿을 패키징할 수 있습니다. `/conf` 의 노드 `https://<server>:<port>/crx/packmgr`및 를 사용하여 [!DNL AEM Forms] 양식을 업로드할 인스턴스입니다. 다음을 수행할 수도 있습니다. [AEM Archetype을 사용하여 템플릿을 만들고 Cloud Service 인스턴스에 배포합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
+양식은 템플릿으로 작동합니다. 사용자 지정된 템플릿을 사용하여 만든 적응형 양식을 다운로드할 때 템플릿이 다운로드되지 않습니다. 다른 [!DNL AEM Forms] 인스턴스에서 양식을 가져올 때 해당 서식 파일 없이 가져옵니다. 양식을 가져왔지만 해당 템플릿을 사용할 수 없는 경우 양식이 렌더링되지 않습니다. `https://<server>:<port>/crx/packmgr`의 `/conf` 노드에서 사용자 지정 템플릿을 패키징하고 양식을 업로드할 [!DNL AEM Forms] 인스턴스에 포팅할 수 있습니다. [AEM Archetype을 사용하여 템플릿을 만들고 Cloud Service 인스턴스에 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites)할 수도 있습니다.
 
 >[!NOTE]
 >
-> * 다음을 구성할 수도 있습니다 [!UICONTROL 기록 문서] 적응형 양식 편집기 또는 적응형 양식 템플릿 편집기에서 바로 템플릿을 사용할 수 있습니다. 자세한 내용은 [적응형 Forms을 위한 기록 문서 생성](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+> * 적응형 양식 편집기 또는 적응형 양식 템플릿 편집기에서 직접 [!UICONTROL 기록 문서] 템플릿을 구성할 수도 있습니다. 자세한 내용은 [적응형 Forms에 대한 기록 문서 생성](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)을 참조하십시오.
 
 ## 양식 데이터 모델 스키마를 템플릿에 연결 {#associating-form-data-model-schema-in-template}
 
-작성자가 [!UICONTROL 양식 데이터 모델 스키마] 템플릿 편집기의 적응형 양식 템플릿을 참조하십시오. 이를 통해 작성자는 템플릿 편집기에서 스키마를 선택할 수 있습니다. 스키마를 템플릿에 연결하면 양식 작성자가 템플릿을 기반으로 양식을 만들 때 양식에 대해 스키마가 미리 선택됩니다. 양식 작성자가 스키마 사용을 규제하고 양식 작성자의 시간도 절약할 수 있습니다. 템플릿 편집기에서 양식 데이터 모델 스키마를 선택하려면 다음을 수행하십시오.
+작성자는 템플릿 편집기에서 [!UICONTROL 양식 데이터 모델 스키마]를 적응형 양식 템플릿에 연결할 수 있습니다. 이를 통해 작성자는 템플릿 편집기에서 스키마를 선택할 수 있습니다. 스키마를 템플릿에 연결하면 양식 작성자가 템플릿을 기반으로 양식을 만들 때 양식에 대해 스키마가 미리 선택됩니다. 양식 작성자가 스키마 사용을 규제하고 양식 작성자의 시간도 절약할 수 있습니다. 템플릿 편집기에서 양식 데이터 모델 스키마를 선택하려면 다음을 수행하십시오.
 
-1. 선택 **[!UICONTROL 컨텐츠 브라우저]** 왼쪽에 있습니다.
-1. 양식 컨테이너로 이동 **[!UICONTROL 설정]**.
-1. 선택 **[!UICONTROL 데이터 모델]**.
-1. 다음을 통해 양식 데이터 모델(FDM) 선택 **[!UICONTROL 양식 데이터 모델 선택]** 구성을 저장합니다.
+1. 왼쪽에 있는 **[!UICONTROL 콘텐츠 브라우저]**&#x200B;를 선택합니다.
+1. 양식 컨테이너 **[!UICONTROL 설정]**(으)로 이동합니다.
+1. **[!UICONTROL 데이터 모델]**&#x200B;을(를) 선택하십시오.
+1. **[!UICONTROL 양식 데이터 모델 선택]**&#x200B;에서 양식 데이터 모델(FDM)을 선택하고 구성을 저장합니다.
 
 ![Form-Data-Model-Association-in-Forms](/help/forms/assets/select-form-data-model-img-core-component.png)
 
@@ -202,7 +202,7 @@ After you have added fields, you can add buttons such as Submit and Reset.
 
 ### 템플릿 정책을 사용하여 적응형 양식 구성 요소에 사용자 지정 속성 추가
 
-사용자 정의 속성을 사용하면 양식 템플릿을 사용하여 사용자 정의 속성(키-값 쌍)을 적응형 양식 핵심 구성 요소에 연결할 수 있습니다. 사용자 지정 속성이에 반영됩니다. **[!UICONTROL 속성]** 구성 요소의 헤드리스 렌디션 섹션에 자세히 설명되어 있습니다. 사용자 정의 속성 값에 따라 조정되는 동적 양식 동작을 만들 수 있습니다. 예를 들어 개발자는 모바일, 데스크탑 또는 웹 플랫폼을 위한 Headless 양식 구성 요소의 다양한 표현을 디자인하여 다양한 디바이스에서 사용자 경험을 크게 향상시킬 수 있습니다.
+사용자 정의 속성을 사용하면 양식 템플릿을 사용하여 사용자 정의 속성(키-값 쌍)을 적응형 양식 핵심 구성 요소에 연결할 수 있습니다. 사용자 지정 속성은 구성 요소의 Headless 렌디션의 **[!UICONTROL 속성]** 섹션에 반영됩니다. 사용자 정의 속성 값에 따라 조정되는 동적 양식 동작을 만들 수 있습니다. 예를 들어 개발자는 모바일, 데스크탑 또는 웹 플랫폼을 위한 Headless 양식 구성 요소의 다양한 표현을 디자인하여 다양한 디바이스에서 사용자 경험을 크게 향상시킬 수 있습니다.
 
 적응형 양식 핵심 구성 요소 필드에 사용자 지정 속성을 추가하는 단계는 다음과 같습니다.
 
@@ -211,35 +211,35 @@ After you have added fields, you can add buttons such as Submit and Reset.
 
 #### 템플릿 편집기의 정책에 사용자 지정 그룹 이름 추가 {#add-a-custom-group-name}
 
-1. 다음으로 이동 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL 템플릿]**.
+1. **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL 템플릿]**(으)로 이동합니다.
 1. 핵심 구성 요소를 기반으로 템플릿을 선택하고 편집 모드로 엽니다.
-1. 다음을 클릭합니다. **[!UICONTROL 정책]** ![정책](/help/forms/assets/Smock_FeedManagement_18_N.svg) 사용자 지정 속성을 정의해야 하는 적응형 양식 핵심 구성 요소 필드의 아이콘. 다음 **[!UICONTROL 적응형 양식 필드]** 대화 상자가 나타납니다.
-1. 다음 항목 선택 **[!UICONTROL 사용자 지정 속성]** 탭.
-1. 다음을 지정합니다. **[!UICONTROL 정책 제목]** 다음 아래에 **[!UICONTROL 정책]** 섹션.
-1. 다음을 지정합니다. **[!UICONTROL 그룹 이름]** 특정 그룹에 연결된 키-값 쌍을 추가합니다. 그룹 이름은 구성 요소의 편집 대화 상자에서 양식 작성자가 볼 수 있습니다. 그룹 이름을 선택하면 연관된 모든 키-값 쌍을 구성 요소에 적용할 수 있습니다.
+1. 사용자 지정 속성을 정의해야 하는 적응형 양식 핵심 구성 요소 필드의 **[!UICONTROL 정책]** ![정책](/help/forms/assets/Smock_FeedManagement_18_N.svg) 아이콘을 클릭합니다. **[!UICONTROL 적응형 양식 필드]** 대화 상자가 나타납니다.
+1. **[!UICONTROL 사용자 지정 속성]** 탭을 선택합니다.
+1. **[!UICONTROL 정책]** 섹션에서 **[!UICONTROL 정책 제목]**&#x200B;을 지정하십시오.
+1. **[!UICONTROL 그룹 이름]**&#x200B;을(를) 지정하고 특정 그룹에 연결된 키-값 쌍을 추가합니다. 그룹 이름은 구성 요소의 편집 대화 상자에서 양식 작성자가 볼 수 있습니다. 그룹 이름을 선택하면 연관된 모든 키-값 쌍을 구성 요소에 적용할 수 있습니다.
 1. **[완료]**&#x200B;를 클릭합니다.
 
-![템플릿 편집기에서 사용자 지정 속성 그룹 이름 추가](/help/forms/assets/custom-properties-core-component.png)
+![템플릿 편집기에서 사용자 지정 속성 그룹 이름을 추가](/help/forms/assets/custom-properties-core-component.png)
 
-템플릿 정책을 사용하여 하나 이상의 사용자 지정 속성 그룹을 추가할 때 **[!UICONTROL 고급]** 해당 핵심 구성 요소의 편집 대화 상자에 탭이 표시됩니다.
+템플릿 정책을 사용하여 사용자 지정 속성 그룹을 하나 이상 추가하면 해당 핵심 구성 요소의 편집 대화 상자에 **[!UICONTROL 고급]** 탭이 표시됩니다.
 
 #### 핵심 구성 요소의 편집 대화 상자에서 사용자 지정 그룹 이름 선택 {#select-a-custom-group-name}
 
 1. 편집 모드에서 적응형 양식을 엽니다.
-1. 템플릿 편집기에서 사용자 지정 속성이 정의된 구성 요소를 선택하고 ![settings_icon](assets/configure-icon.svg) 구성 요소의 편집 대화 상자를 엽니다.
-1. 다음 항목 선택 **[!UICONTROL 고급]** 탭.
-1. 에서 사용자 정의 속성 그룹 이름 선택 **[!UICONTROL 사용자 지정 속성 선택]** 드롭다운. 정의된 모든 사용자 정의 그룹 이름은 드롭다운 목록에서 자동으로 채워집니다.
-1. 선택 **[!UICONTROL 완료]** 속성을 저장합니다.
+1. 템플릿 편집기에서 사용자 지정 속성이 정의된 구성 요소를 선택하고 ![settings_icon](assets/configure-icon.svg)을(를) 선택하여 구성 요소의 편집 대화 상자를 엽니다.
+1. **[!UICONTROL 고급]** 탭을 선택합니다.
+1. **[!UICONTROL 사용자 지정 속성 선택]** 드롭다운에서 사용자 지정 속성 그룹 이름을 선택합니다. 정의된 모든 사용자 정의 그룹 이름은 드롭다운 목록에서 자동으로 채워집니다.
+1. 속성을 저장하려면 **[!UICONTROL 완료]**&#x200B;를 선택하십시오.
 
-![사용자 정의 속성 그룹 이름 선택](/help/forms/assets/select-custom-properties-group-name.png)
+![사용자 지정 속성 그룹 이름 선택](/help/forms/assets/select-custom-properties-group-name.png)
 
 >[!NOTE]
 >
-> * 다음 **[!UICONTROL 추가 사용자 지정 속성]** 확인란을 선택하면 템플릿 정책에 제공된 속성 외에 구성 요소별 사용자 지정 속성을 동적으로 추가할 수 있습니다. 키 이름 값이 일치하면 특정 구성 요소의 사용자 지정 속성이 템플릿 정책에 설정된 사용자 지정 속성보다 우선합니다.
+> * **[!UICONTROL 추가 사용자 지정 속성]** 확인란을 사용하면 템플릿 정책에 제공된 속성 외에 구성 요소별 사용자 지정 속성을 동적으로 추가할 수 있습니다. 키 이름 값이 일치하면 특정 구성 요소의 사용자 지정 속성이 템플릿 정책에 설정된 사용자 지정 속성보다 우선합니다.
 
 ## 템플릿을 사용하여 적응형 양식 만들기 {#creating-an-adaptive-form-using-the-template}
 
-템플릿을 만들고 활성화한 후 적응형 양식을 만들 때 Forms 관리자에서 사용할 수 있습니다. 템플릿을 사용하고 적응형 양식을 만들려면 다음을 참조하십시오. [핵심 구성 요소를 기반으로 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md).
+템플릿을 만들고 활성화한 후 적응형 양식을 만들 때 Forms 관리자에서 사용할 수 있습니다. 템플릿을 사용하고 적응형 양식을 만들려면 [핵심 구성 요소를 기반으로 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md)를 참조하십시오.
 <!--
 ## Change display option of out of the box templates  {#change-display-option-of-out-of-the-box-templates}
 
@@ -280,7 +280,7 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 
 ## 모범 사례 {#best-practices}
 
-* 적응형 양식 텍스트, 적응형 양식 컨테이너 등 핵심 구성 요소 기반의 구성 요소를 사용하여 템플릿을 만듭니다. 적응형 Forms 핵심 구성 요소에 대한 정보를 얻으려면 [여기를 클릭하십시오](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html).
+* 적응형 양식 텍스트, 적응형 양식 컨테이너 등 핵심 구성 요소 기반의 구성 요소를 사용하여 템플릿을 만듭니다. 적응형 Forms 핵심 구성 요소에 대한 정보를 보려면 [여기를 클릭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)하십시오.
 * 웹 사이트에서 사용할 수 있는 근본적으로 다른 양식 유형과 일치하도록 템플릿 수 제한
 * 템플릿에 사용되는 사용자 지정 구성 요소에 필요한 유연성과 구성 기능을 제공합니다.
 

@@ -24,7 +24,7 @@ ht-degree: 11%
 
 >[!TIP]
 >
->범용 편집기에 사용할 앱을 계측하는 방법에 익숙하지 않은 경우 문서를 참조하십시오 [AEM 개발자를 위한 유니버설 편집기 개요.](/help/implementing/universal-editor/developer-overview.md)
+>범용 편집기에 사용할 앱을 계측하는 방법에 익숙하지 않은 경우 문서 [AEM 개발자를 위한 범용 편집기 개요](/help/implementing/universal-editor/developer-overview.md)를 참조하십시오.
 
 ## 모델 정의 구조 {#model-structure}
 
@@ -41,9 +41,9 @@ ht-degree: 11%
 ]
 ```
 
-다음을 참조하십시오. **[필드](#fields)** 을(를) 정의하는 방법에 대한 자세한 내용은 이 문서의 섹션을 참조하십시오. `fields` 배열입니다.
+`fields` 배열을 정의하는 방법에 대한 자세한 내용은 이 문서의 **[필드](#fields)** 섹션을 참조하십시오.
 
-컴포넌트와 함께 모델 정의를 사용하려면 `data-aue-model` 속성을 사용할 수 있습니다.
+구성 요소에 모델 정의를 사용하려면 `data-aue-model` 특성을 사용할 수 있습니다.
 
 ```html
 <div data-aue-resource="urn:datasource:/content/path" data-aue-type="component"  data-aue-model="model-id">Click me</div>
@@ -77,11 +77,11 @@ ht-degree: 11%
 | `description` | `FieldDescription` | 필드 설명 | 아니요 |
 | `placeholder` | `string` | 필드에 대한 자리 표시자 | 아니요 |
 | `value` | `FieldValue` | 기본값 | 아니요 |
-| `valueType` | `ValueType` | 표준 유효성 검사이며 다음과 같을 수 있습니다. `string`, `string[]`, `number`, `date`, `boolean` | 아니요 |
+| `valueType` | `ValueType` | 표준 유효성 검사에는 `string`, `string[]`, `number`, `date`, `boolean`이(가) 포함될 수 있습니다. | 아니요 |
 | `required` | `boolean` | 필수 필드임 | 아니요 |
 | `readOnly` | `boolean` | 필드가 읽기 전용임 | 아니요 |
 | `hidden` | `boolean` | 기본적으로 필드가 숨겨져 있음 | 아니요 |
-| `condition` | `RulesLogic` | 다음을 기반으로 필드를 표시하거나 숨기는 규칙: [조건](/help/implementing/universal-editor/customizing.md#conditionally-hide) | 아니요 |
+| `condition` | `RulesLogic` | [조건](/help/implementing/universal-editor/customizing.md#conditionally-hide)을(를) 기반으로 필드를 표시하거나 숨기는 규칙 | 아니요 |
 | `multi` | `boolean` | 필드가 다중 필드입니까 | 아니요 |
 | `validation` | `ValidationType` | 필드에 대한 유효성 검사 규칙 | 아니요 |
 | `raw` | `unknown` | 구성 요소에서 사용할 수 있는 원시 데이터 | 아니요 |
@@ -93,12 +93,12 @@ ht-degree: 11%
 | 설명 | 구성 요소 유형 |
 |---|---|
 | [AEM 태그](#aem-tag) | `aem-tag` |
-| [AEM 컨텐츠](#aem-content) | `aem-content` |
+| [AEM 콘텐츠](#aem-content) | `aem-content` |
 | [부울](#boolean) | `boolean` |
 | [확인란 그룹](#checkbox-group) | `checkbox-group` |
 | [컨테이너](#container) | `container` |
 | [콘텐츠 조각](#content-fragment) | `aem-content-fragment` |
-| [날짜/시간](#date-time) | `date-time` |
+| [날짜 시간](#date-time) | `date-time` |
 | [다중 선택](#multiselect) | `multiselect` |
 | [숫자](#number) | `number` |
 | [라디오 그룹](#radio-group) | `radio-group` |
@@ -132,7 +132,7 @@ AEM 태그 구성 요소 유형을 사용하면 구성 요소에 태그를 첨�
 
 >[!TAB 스크린샷]
 
-![AEM 태그 구성 요소 유형의 스크린샷](assets/component-types/aem-tag-picker.png)
+![AEM 태그 구성 요소 형식의 스크린샷](assets/component-types/aem-tag-picker.png)
 
 >[!ENDTABS]
 
@@ -161,7 +161,7 @@ AEM 콘텐츠 구성 요소 유형 은 콘텐츠 참조를 설정하는 데 사�
 
 >[!TAB 스크린샷]
 
-![AEM 콘텐츠 구성 요소 유형의 스크린샷](assets/component-types/aem-content-picker.png)
+![AEM 콘텐츠 구성 요소 형식의 스크린샷](assets/component-types/aem-content-picker.png)
 
 >[!ENDTABS]
 
@@ -212,7 +212,7 @@ AEM 콘텐츠 구성 요소 유형 은 콘텐츠 참조를 설정하는 데 사�
 
 >[!TAB 스크린샷]
 
-![부울 구성 요소 유형의 스크린샷](assets/component-types/boolean.png)
+![부울 구성 요소 형식의 스크린샷](assets/component-types/boolean.png)
 
 >[!ENDTABS]
 
@@ -244,7 +244,7 @@ AEM 콘텐츠 구성 요소 유형 은 콘텐츠 참조를 설정하는 데 사�
 
 >[!TAB 스크린샷]
 
-![확인란 그룹 구성 요소 유형의 스크린샷](assets/component-types/checkbox-group.png)
+![확인란 그룹 구성 요소 형식의 스크린샷](assets/component-types/checkbox-group.png)
 
 >[!ENDTABS]
 
@@ -291,13 +291,13 @@ AEM 콘텐츠 구성 요소 유형 은 콘텐츠 참조를 설정하는 데 사�
 
 >[!TAB 스크린샷]
 
-![컨테이너 구성 요소 유형의 스크린샷](assets/component-types/container.png)
+컨테이너 구성 요소 형식의 ![스크린샷](assets/component-types/container.png)
 
 >[!ENDTABS]
 
 #### 콘텐츠 조각 {#content-fragment}
 
-콘텐츠 조각 선택기를 사용하여 다음을 선택할 수 있습니다. [컨텐츠 조각](/help/sites-cloud/authoring/fragments/content-fragments.md) 및 해당 변형(필요한 경우). 추가 구성을 제공합니다.
+콘텐츠 조각 선택기를 사용하여 [콘텐츠 조각](/help/sites-cloud/authoring/fragments/content-fragments.md) 및 해당 변형을 선택할 수 있습니다(필요한 경우). 추가 구성을 제공합니다.
 
 | 구성 | 값 유형 | 설명 | 필수 |
 |---|---|---|---|
@@ -343,7 +343,7 @@ AEM 콘텐츠 구성 요소 유형 은 콘텐츠 참조를 설정하는 데 사�
 
 | 유효성 검사 유형 | 값 유형 | 설명 | 필수 |
 |---|---|---|---|
-| `customErrorMsg` | `string` | 다음과 같은 경우에 표시되는 메시지 `valueFormat` 충족되지 않음 | 아니요 |
+| `customErrorMsg` | `string` | `valueFormat`이(가) 충족되지 않으면 표시할 메시지 | 아니요 |
 
 >[!BEGINTABS]
 
@@ -417,13 +417,13 @@ AEM 콘텐츠 구성 요소 유형 은 콘텐츠 참조를 설정하는 데 사�
 
 >[!TAB 스크린샷]
 
-![날짜 시간 구성 요소 유형의 스크린샷](assets/component-types/date-time.png)
+![날짜/시간 구성 요소 형식의 스크린샷](assets/component-types/date-time.png)
 
 >[!ENDTABS]
 
 #### 경험 조각 {#experience-fragment}
 
-경험 조각 선택기를 사용하여 다음을 선택할 수 있습니다 [경험 조각](/help/sites-cloud/authoring/fragments/experience-fragments.md) 및 해당 변형(필요한 경우). 추가 구성을 제공합니다.
+경험 조각 선택기를 사용하여 [경험 조각](/help/sites-cloud/authoring/fragments/experience-fragments.md) 및 해당 변형을 선택할 수 있습니다(필요한 경우). 추가 구성을 제공합니다.
 
 | 구성 | 값 유형 | 설명 | 필수 |
 |---|---|---|---|
@@ -520,8 +520,8 @@ AEM 콘텐츠 구성 요소 유형 은 콘텐츠 참조를 설정하는 데 사�
 
 >[!TAB 스크린샷]
 
-![다중 선택 구성 요소 유형의 스크린샷](assets/component-types/multiselect.png)
-![그룹화가 포함된 다중 선택 구성 요소 유형의 스크린샷](assets/component-types/multiselect-group.png)
+![다중 선택 구성 요소 형식의 스크린샷](assets/component-types/multiselect.png)
+![그룹화가 있는 다중 선택 구성 요소 유형의 스크린샷](assets/component-types/multiselect-group.png)
 
 >[!ENDTABS]
 
@@ -533,7 +533,7 @@ AEM 콘텐츠 구성 요소 유형 은 콘텐츠 참조를 설정하는 데 사�
 |---|---|---|---|
 | `numberMin` | `number` | 허용되는 최소 수 | 아니요 |
 | `numberMax` | `number` | 허용되는 최대 수 | 아니요 |
-| `customErrorMsg` | `string` | 다음과 같은 경우에 표시되는 메시지 `numberMin` 또는 `numberMax` 충족되지 않음 | 아니요 |
+| `customErrorMsg` | `string` | `numberMin` 또는 `numberMax`이(가) 충족되지 않을 경우 표시되는 메시지 | 아니요 |
 
 >[!BEGINTABS]
 
@@ -580,7 +580,7 @@ AEM 콘텐츠 구성 요소 유형 은 콘텐츠 참조를 설정하는 데 사�
 
 >[!TAB 스크린샷]
 
-![번호 구성 요소 유형의 스크린샷](assets/component-types/number.png)
+![숫자 구성 요소 형식의 스크린샷](assets/component-types/number.png)
 
 >[!ENDTABS]
 
@@ -612,7 +612,7 @@ AEM 콘텐츠 구성 요소 유형 은 콘텐츠 참조를 설정하는 데 사�
 
 >[!TAB 스크린샷]
 
-![라디오 그룹 구성 요소 유형의 스크린샷](assets/component-types/radio.png)
+라디오 그룹 구성 요소 형식의 ![스크린샷](assets/component-types/radio.png)
 
 >[!ENDTABS]
 
@@ -640,7 +640,7 @@ AEM 콘텐츠 구성 요소 유형 은 콘텐츠 참조를 설정하는 데 사�
 
 >[!TAB 스크린샷]
 
-![참조 구성 요소 유형의 스크린샷](assets/component-types/reference.png)
+참조 구성 요소 형식의 ![스크린샷](assets/component-types/reference.png)
 
 >[!ENDTABS]
 
@@ -651,7 +651,7 @@ AEM 콘텐츠 구성 요소 유형 은 콘텐츠 참조를 설정하는 데 사�
 | 유효성 검사 유형 | 값 유형 | 설명 | 필수 |
 |---|---|---|---|
 | `maxSize` | `number` | 허용되는 최대 문자 수 | 아니요 |
-| `customErrorMsg` | `string` | 다음과 같은 경우에 표시되는 메시지 `maxSize` 초과됨 | 아니요 |
+| `customErrorMsg` | `string` | `maxSize`을(를) 초과할 경우 표시되는 메시지 | 아니요 |
 
 >[!BEGINTABS]
 
@@ -693,7 +693,7 @@ AEM 콘텐츠 구성 요소 유형 은 콘텐츠 참조를 설정하는 데 사�
 
 >[!TAB 스크린샷]
 
-![텍스트 영역 구성 요소 유형의 스크린샷](assets/component-types/richtext.png)
+![텍스트 영역 구성 요소 형식의 스크린샷](assets/component-types/richtext.png)
 
 >[!ENDTABS]
 
@@ -733,7 +733,7 @@ AEM 콘텐츠 구성 요소 유형 은 콘텐츠 참조를 설정하는 데 사�
 
 탭 구성 요소 유형을 사용하면 여러 탭에서 다른 입력 필드를 함께 그룹화하여 작성자의 레이아웃 구성을 향상시킬 수 있습니다.
 
-A `tab` 정의는 배열의 구분 기호로 생각할 수 있습니다. `fields`. 다음에 오는 모든 것 `tab` 이(가) 새 `tab` 이 발생하면 다음 항목이 새 탭에 배치됩니다.
+`tab` 정의는 `fields` 배열에서 구분 기호로 간주할 수 있습니다. `tab` 다음에 오는 모든 항목은 새 `tab`이(가) 발견될 때까지 해당 탭에 배치되며, 그 후에는 다음 항목이 새 탭에 배치됩니다.
 
 모든 탭 위에 표시되는 항목을 포함하려면 탭 앞에 항목을 정의해야 합니다.
 
@@ -773,7 +773,7 @@ A `tab` 정의는 배열의 구분 기호로 생각할 수 있습니다. `fields
 
 >[!TAB 스크린샷]
 
-![탭 구성 요소 유형의 스크린샷](assets/component-types/tab.png)
+탭 구성 요소 유형의 ![스크린샷](assets/component-types/tab.png)
 
 >[!ENDTABS]
 
@@ -786,7 +786,7 @@ A `tab` 정의는 배열의 구분 기호로 생각할 수 있습니다. `fields
 | `minLength` | `number` | 허용되는 최소 문자 수 | 아니요 |
 | `maxLength` | `number` | 허용되는 최대 문자 수 | 아니요 |
 | `regExp` | `string` | 입력 텍스트가 일치해야 하는 정규 표현식 | 아니요 |
-| `customErrorMsg` | `string` | 다음과 같은 경우에 표시되는 메시지 `minLength`, `maxLength`, 및/또는 `regExp` 위반됨/위반됨 | 아니요 |
+| `customErrorMsg` | `string` | `minLength`, `maxLength` 및/또는 `regExp`을(를) 위반할 경우 표시되는 메시지 | 아니요 |
 
 >[!BEGINTABS]
 
@@ -832,6 +832,6 @@ A `tab` 정의는 배열의 구분 기호로 생각할 수 있습니다. `fields
 
 >[!TAB 스크린샷]
 
-![텍스트 구성 요소 유형의 스크린샷](assets/component-types/simpletext.png)
+![텍스트 구성 요소 형식의 스크린샷](assets/component-types/simpletext.png)
 
 >[!ENDTABS]

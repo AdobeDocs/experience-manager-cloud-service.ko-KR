@@ -66,7 +66,7 @@ UI는 모바일 장치와 데스크탑 장치 모두에 대해 만족하지만, 
 * **참조**
 * **필터**
 
-기본값은 입니다 **콘텐츠만** (레일 숨김).
+기본값은 **컨텐츠 전용**(레일 숨김)입니다.
 
 ![왼쪽 레일](assets/ui-left-rail.png)
 
@@ -76,11 +76,11 @@ UI는 모바일 장치와 데스크탑 장치 모두에 대해 만족하지만, 
 
 ### 콘텐츠 프레임 {#content-frame}
 
-페이지 콘텐츠는 콘텐츠 프레임에 렌더링됩니다. 콘텐츠 프레임은 편집기와 독립적입니다. 이렇게 하면 CSS 또는 JavaScript로 인해 충돌이 발생하지 않습니다.
+페이지 콘텐츠는 콘텐츠 프레임에 렌더링됩니다. 콘텐츠 프레임은 편집기와 독립적입니다. 따라서 CSS 또는 JavaScript으로 인한 충돌이 발생하지 않습니다.
 
 콘텐츠 프레임은 창의 오른쪽 섹션에 있으며 도구 모음 아래에 있습니다.
 
-![컨텐츠 프레임](assets/ui-content-frame.png)
+![콘텐츠 프레임](assets/ui-content-frame.png)
 
 ### 편집기 프레임 {#editor-frame}
 
@@ -97,21 +97,21 @@ UI는 모바일 장치와 데스크탑 장치 모두에 대해 만족하지만, 
 
 ### 사이드 패널 {#side-panel}
 
-세 개의 기본 탭을 포함합니다. 다음 **에셋** 및 **구성 요소** 탭에서는 이러한 요소를 선택하고 패널에서 드래그하여 페이지에 놓을 수 있습니다. 다음 **컨텐츠 트리** 탭에서는 페이지의 콘텐츠 계층을 검사할 수 있습니다.
+세 개의 기본 탭을 포함합니다. **Assets** 및 **구성 요소** 탭을 사용하여 이러한 요소를 선택하고 패널에서 드래그하여 페이지에 놓을 수 있습니다. **콘텐츠 트리** 탭에서는 페이지의 콘텐츠 계층 구조를 검사할 수 있습니다.
 
 기본적으로 사이드 패널은 숨겨져 있습니다. 이 옵션을 선택하면 왼쪽에 표시되거나 창 너비가 1024픽셀 미만인 경우 모바일 장치에서 처럼 전체 창을 덮도록 미끄러져 가로로 표시됩니다.
 
 ![사이드 패널](assets/ui-side-panel.png)
 
-### 사이드 패널 - 에셋 {#side-panel-assets}
+### 사이드 패널 - Assets {#side-panel-assets}
 
-에셋 탭에서 에셋 범위에서 선택할 수 있습니다. 특정 용어를 필터링하거나 그룹을 선택할 수도 있습니다.
+Assets 탭에서 에셋 범위에서 선택할 수 있습니다. 특정 용어를 필터링하거나 그룹을 선택할 수도 있습니다.
 
-![에셋 탭](assets/ui-side-panel-assets.png)
+![Assets 탭](assets/ui-side-panel-assets.png)
 
 ### 사이드 패널 - 자산 그룹 {#side-panel-asset-groups}
 
-에셋 탭에는 특정 에셋 그룹을 선택하는 데 사용할 수 있는 드롭다운이 있습니다.
+Assets 탭에는 특정 에셋 그룹을 선택하는 데 사용할 수 있는 드롭다운이 있습니다.
 
 ![자산 그룹](assets/ui-side-panel-asset-groups.png)
 
@@ -129,7 +129,7 @@ UI는 모바일 장치와 데스크탑 장치 모두에 대해 만족하지만, 
 
 ### 오버레이 {#overlays}
 
-컨텐츠 프레임을 오버레이하고 에서 사용합니다. [레이어](#layer) 구성 요소 및 해당 컨텐츠와 투명하게 상호 작용하는 방법을 실현하기 위해
+콘텐츠 프레임을 오버레이하고 [레이어](#layer)에서 구성 요소 및 해당 콘텐츠와 투명하게 상호 작용할 수 있는 방법을 구현하기 위해 사용합니다.
 
 오버레이는 실제로 컨텐츠 프레임에 적절한 구성 요소를 오버레이하지만 편집기 프레임(다른 모든 페이지 작성 요소와 함께)에 있습니다.
 
@@ -170,4 +170,4 @@ AEM에는 편집, 미리 보기, 주석 레이어 등 페이지 작성을 위해
 
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
-자세한 기술 정보는 [JS 설명서 세트](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html) 페이지 편집기용
+자세한 기술 정보는 페이지 편집기의 [JS 설명서 집합](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)을 참조하세요.

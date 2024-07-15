@@ -20,30 +20,30 @@ ht-degree: 2%
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
 | AEM as a Cloud Service | 이 문서 |
 
-테마를 만들고 적용하여 적응형 양식을 스타일링할 수 있습니다<!-- or an interactive communication-->. 테마에는 구성 요소 및 패널에 대한 스타일 지정 세부 사항이 포함되어 있습니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일은 해당 구성 요소에 반영됩니다. 테마는 적응형 양식에 대한 참조 없이 독립적으로 관리됩니다<!-- or interactive communication -->.
+테마를 만들고 적용하여 적응형 양식<!-- or an interactive communication-->을(를) 양식화할 수 있습니다. 테마에는 구성 요소 및 패널에 대한 스타일 지정 세부 사항이 포함되어 있습니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일은 해당 구성 요소에 반영됩니다. 테마는 적응형 양식<!-- or interactive communication -->에 대한 참조 없이 독립적으로 관리됩니다.
 
-다운로드하여 설치할 수 있습니다. [!DNL AEM Forms] 다음에서 콘텐츠 패키지 참조: [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 포털을 통해 참조 테마 및 템플릿을 환경으로 가져올 수 있습니다.
+[소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 포털에서 [!DNL AEM Forms] 참조 콘텐츠 패키지를 다운로드하여 설치하여 참조 테마 및 템플릿을 환경에 가져올 수 있습니다.
 
 ## 테마 만들기, 다운로드 또는 업로드 {#creating-downloading-or-uploading-a-theme}
 
-테마는 별도의 엔티티로 만들어지고 저장되며 적응형 Forms과 같은 메타 속성과 함께 완료됩니다. 여러 적응형 Forms에서 테마를 재사용할 수 있습니다<!-- or  and interactive communications-->. 테마를 다른 인스턴스로 이동하여 다시 사용할 수도 있습니다.
+테마는 별도의 엔티티로 만들어지고 저장되며 적응형 Forms과 같은 메타 속성과 함께 완료됩니다. 여러 적응형 Forms<!-- or  and interactive communications-->에서 테마를 다시 사용할 수 있습니다. 테마를 다른 인스턴스로 이동하여 다시 사용할 수도 있습니다.
 
 ### 테마 만들기 {#creating-a-theme}
 
 테마를 만들려면 다음 작업을 수행하십시오.
 
-1. 클릭 **[!UICONTROL Adobe Experience Manager]**, 클릭 **[!UICONTROL Forms]**, 및 클릭 **[!UICONTROL 테마]**.
+1. **[!UICONTROL Adobe Experience Manager]**, **[!UICONTROL Forms]**, **[!UICONTROL 테마]**&#x200B;를 클릭합니다.
 
-1. 테마 페이지에서 **[!UICONTROL 만들기]** > **[!UICONTROL 테마]**.
+1. 테마 페이지에서 **[!UICONTROL 만들기]** > **[!UICONTROL 테마]**를 클릭합니다.
 테마를 만드는 마법사가 실행됩니다.
 
-1. 지정 **[!UICONTROL 이름]** 을 참조하십시오.
+1. 테마의 **[!UICONTROL 이름]**&#x200B;을(를) 지정하십시오.
 
-1. 다음에서 테마를 미리 볼 양식 지정 **[!UICONTROL 이 테마의 기본 미리 보기]** 필드. 클릭 **[!UICONTROL 기본값 사용]** 기본 양식을 사용하여 테마를 미리 봅니다.
+1. **[!UICONTROL 이 테마의 기본 미리 보기]** 필드에서 테마를 미리 볼 양식을 지정하십시오. 테마를 미리 보려면 **[!UICONTROL 기본 사용]**&#x200B;을 클릭하세요.
 
-1. 지정 **[!UICONTROL 구성 컨테이너]**. 다음을 선택할 수 있습니다. **[!UICONTROL 구성 컨테이너]** 계정에 대한 Adobe 글꼴의 구성 세부 정보가 포함되어 있습니다. 지금 옵션을 비워 두고 나중에 세부 사항을 지정할 수도 있습니다. [테마 속성](#metadata-of-a-theme).
+1. **[!UICONTROL 구성 컨테이너]**&#x200B;를 지정하십시오. 계정에 대한 Adobe 글꼴의 구성 세부 정보가 포함된 **[!UICONTROL 구성 컨테이너]**&#x200B;를 선택할 수 있습니다. 지금은 옵션을 비워 두고 나중에 [테마 속성](#metadata-of-a-theme)에서 세부 정보를 지정할 수도 있습니다.
 
-1. 클릭 **[!UICONTROL 만들기]** 그런 다음 을 클릭합니다. **[!UICONTROL 편집]** 테마 편집기에서 테마를 열려면 **[!UICONTROL 완료]** 테마 페이지로 돌아갑니다.
+1. **[!UICONTROL 만들기]**&#x200B;를 클릭한 다음 **[!UICONTROL 편집]**&#x200B;을 클릭하여 테마 편집기에서 테마를 열거나 **[!UICONTROL 완료]**&#x200B;를 클릭하여 테마 페이지로 돌아갑니다.
 
 ### Experience Manager 6.5 Forms 및 이전 버전의 테마와 차이점 {#difference-in-themes}
 
@@ -51,25 +51,25 @@ Cloud Service 인스턴스에서 만든 테마:
 
 * 버전 번호가 2입니다.
 
-* 다음 위치에 저장됩니다. `/content/dam/formsanddocuments-themes/<theme-name>/`
+* `/content/dam/formsanddocuments-themes/<theme-name>/`에 저장됩니다.
 
 * 클라이언트 라이브러리 옵션을 제공하지 마십시오. 클라이언트 라이브러리 범주 및 경로는 지정할 수 없습니다.
 
 * /apps 위치에 쓰기 및 업데이트 권한이 없습니다(Forms-user 그룹에는 /apps 위치에 쓰기 및 업데이트 권한이 없음).
 
-* 에 생성된 테마 업로드 전 [!DNL Experience Manager Forms] Cloud Service 인스턴스에 대한 6.5 또는 이전 버전에서는 클라이언트 라이브러리 위치가 `etc/clientlibs/fd/themes`. 클라이언트 라이브러리가에 없는 경우 `etc` 폴더, 수동으로 위치 업데이트 `etc/clientlibs/fd/themes`.  다음에서 변경할 수 있습니다. [!DNL Experience Manager Forms] 6.5 또는 이전 버전 인스턴스. 관리자는 클라이언트 라이브러리의 위치를 설정한 후 테마를 Cloud Service 인스턴스에 업로드하거나 컨텐츠 전송 도구를 사용하여 테마를 6.5 또는 이전 버전 인스턴스에서 Cloud Service 인스턴스로 마이그레이션할 수 있습니다.
+* [!DNL Experience Manager Forms] 6.5 또는 이전 버전에서 만든 테마를 Cloud Service 인스턴스에 업로드하기 전에 클라이언트 라이브러리 위치가 `etc/clientlibs/fd/themes`(으)로 설정되어 있는지 확인하십시오. 클라이언트 라이브러리가 `etc` 폴더에 없으면 수동으로 위치를 `etc/clientlibs/fd/themes`(으)로 업데이트하십시오.  [!DNL Experience Manager Forms] 6.5 또는 이전 버전 인스턴스에서 변경할 수 있습니다. 관리자는 클라이언트 라이브러리의 위치를 설정한 후 테마를 Cloud Service 인스턴스에 업로드하거나 컨텐츠 전송 도구를 사용하여 테마를 6.5 또는 이전 버전 인스턴스에서 Cloud Service 인스턴스로 마이그레이션할 수 있습니다.
 
-  또한 카테고리 이름을 변경합니다. 이름을 변경하지 않으면 오류가 발생합니다. `theme with same category name exists` 발생할 수 있습니다. 카테고리 이름을 변경해도 테마를 사용하는 적응형 Forms에는 영향을 주지 않습니다.
+  또한 카테고리 이름을 변경합니다. 이름을 변경하지 않으면 `theme with same category name exists` 오류가 발생할 수 있습니다. 카테고리 이름을 변경해도 테마를 사용하는 적응형 Forms에는 영향을 주지 않습니다.
 
 ### 테마 다운로드 {#downloading-a-theme}
 
 테마를 zip 파일로 내보내고 다른 프로젝트 또는 Experience Manager 인스턴스에서 이러한 테마를 사용할 수 있습니다. 테마를 다운로드하려면:
 
-1. 클릭 **[!UICONTROL Adobe Experience Manager]**, 클릭 **[!UICONTROL Forms]**&#x200B;을 클릭한 다음 을 클릭합니다 **[!UICONTROL 테마]**.
+1. **[!UICONTROL Adobe Experience Manager]**&#x200B;을 클릭하고 **[!UICONTROL Forms]**&#x200B;을 클릭한 다음 **[!UICONTROL 테마]**&#x200B;를 클릭합니다.
 
-1. 테마 페이지에서 **[!UICONTROL 선택]** 테마 및 클릭 **[!UICONTROL 다운로드]**. 테마의 세부 정보가 포함된 대화 상자가 표시됩니다.
+1. 테마 페이지에서 테마를 **[!UICONTROL 선택]**&#x200B;한 다음 **[!UICONTROL 다운로드]**&#x200B;를 클릭합니다. 테마의 세부 정보가 포함된 대화 상자가 표시됩니다.
 
-1. 클릭 **[!UICONTROL 다운로드]**. 테마는 zip 파일로 다운로드됩니다.
+1. **[!UICONTROL 다운로드]**&#x200B;를 클릭합니다. 테마는 zip 파일로 다운로드됩니다.
 
 >[!NOTE]
 >
@@ -77,14 +77,14 @@ Cloud Service 인스턴스에서 만든 테마:
 
 ### 테마 업로드 {#uploading-a-theme}
 
-관리자 권한이 있는 사용자는에서 만든 테마를 업로드할 수 있습니다. [!DNL Experience Manager Forms] 6.5 이하 버전입니다.
+관리자 권한이 있는 사용자는 [!DNL Experience Manager Forms] 6.5 이전 버전에서 만든 테마를 업로드할 수 있습니다.
 
 테마를 업로드하려면:
 
-1. 클릭 **[!UICONTROL Adobe Experience Manager]**, 클릭 **[!UICONTROL Forms]**&#x200B;을 클릭한 다음 을 클릭합니다 **[!UICONTROL 테마]**.
+1. **[!UICONTROL Adobe Experience Manager]**&#x200B;을 클릭하고 **[!UICONTROL Forms]**&#x200B;을 클릭한 다음 **[!UICONTROL 테마]**&#x200B;를 클릭합니다.
 
-1. 테마 페이지에서 **[!UICONTROL 만들기]** > **[!UICONTROL 파일 업로드]**.
-1. 파일 업로드 프롬프트에서 컴퓨터에서 테마 패키지를 찾아 선택하고 을(를) 클릭합니다. **[!UICONTROL 업로드]**.
+1. 테마 페이지에서 **[!UICONTROL 만들기]** > **[!UICONTROL 파일 업로드]**&#x200B;를 클릭합니다.
+1. 파일 업로드 프롬프트에서 컴퓨터에서 테마 패키지를 찾아 선택하고 **[!UICONTROL 업로드]**를 클릭합니다.
 업로드한 테마는 테마 페이지에서 사용할 수 있습니다.
 
 ## 테마의 메타데이터 {#metadata-of-a-theme}
@@ -202,42 +202,43 @@ Cloud Service 인스턴스에서 만든 테마:
 
 ## 테마 편집기 정보 {#about-the-theme-editor}
 
-테마 편집기는 다양한 적응형 양식의 스타일을 지정하는 데 필요한 기능을 제공하는 비즈니스 사용자 및 웹 디자이너/개발자에게 친숙한 인터페이스입니다 <!-- and interactive communication --> 쉽게 요소를 생성할 수 있습니다. 테마를 만들면 폼과 같은 별도의 엔티티로 저장됩니다 <!--  , interactive communications, letters, document fragments, and data dictionaries-->.
+테마 편집기는 다양한 적응형 양식 <!-- and interactive communication --> 요소의 스타일을 쉽게 지정하는 데 필요한 기능을 제공하는 비즈니스 사용자 및 웹 디자이너/개발자에게 친숙한 인터페이스입니다. 테마를 만들면 <!--  , interactive communications, letters, document fragments, and data dictionaries--> 양식처럼 별도의 엔터티로 저장됩니다.
 
-테마 편집기 를 사용하여 테마에서 스타일링된 구성 요소의 스타일을 맞춤화할 수 있습니다. 양식 작성 방법을 사용자 지정할 수 있습니다 <!-- or interactive communication --> 장치를 봅니다.
+테마 편집기 를 사용하여 테마에서 스타일링된 구성 요소의 스타일을 맞춤화할 수 있습니다. 장치에서 양식 <!-- or interactive communication -->의 모양을 사용자 지정할 수 있습니다.
 
 테마 편집기는 다음 두 개의 패널로 나뉘어 있습니다.
 
-* **캔버스** - 오른쪽에 나타납니다. 샘플 적응형 양식을 표시합니다. <!--  or interactive communication --> 모든 스타일 변경이 순식간에 반영되는. 캔버스에서 직접 오브젝트를 선택하여 해당 오브젝트와 연관된 스타일을 조회하고 해당 스타일을 편집할 수도 있습니다. 맨 위에 있는 장치 해상도 눈금자가 캔버스를 제어합니다. 눈금자에서 해상도 중단점을 선택하면 샘플 양식의 미리 보기가 표시됩니다 <!--  or interactive communication --> (해당 해상도). 캔버스는 자세히 논의됩니다. [아래](themes.md#using-canvas).
+* **캔버스** - 오른쪽에 나타납니다. 모든 스타일 변경 내용이 즉시 반영되는 샘플 적응형 양식 <!--  or interactive communication -->을(를) 표시합니다. 캔버스에서 직접 오브젝트를 선택하여 해당 오브젝트와 연관된 스타일을 조회하고 해당 스타일을 편집할 수도 있습니다. 맨 위에 있는 장치 해상도 눈금자가 캔버스를 제어합니다. 눈금자에서 해상도 중단점을 선택하면 각 해상도에 대한 샘플 양식 <!--  or interactive communication -->의 미리 보기가 표시됩니다. 캔버스는 [아래](themes.md#using-canvas)에 자세히 설명되어 있습니다.
 
-* **사이드바**- 왼쪽에 표시됩니다. 여기에는 다음 항목이 있습니다.
+* **사이드바**- 왼쪽에 나타납니다. 여기에는 다음 항목이 있습니다.
 
-   * **선택기:** 스타일링을 위해 선택한 구성 요소와 스타일을 지정할 수 있는 해당 속성을 표시합니다. 선택기는 유형의 모든 구성 요소를 나타냅니다. 스타일을 지정할 테마에서 텍스트 상자 구성 요소를 선택하면 양식의 모든 텍스트 상자가 표시됩니다 <!-- or interactive communication --> 스타일 상속. 선택기를 사용하여 일반 구성 요소나 스타일을 지정할 특정 구성 요소를 선택할 수 있습니다. 예를 들어, 필드 구성 요소는 일반 구성 요소이고 텍스트 상자는 특정 구성 요소입니다.
+   * **선택기:** 스타일을 지정하기 위해 선택한 구성 요소와 스타일을 지정할 수 있는 해당 속성을 표시합니다. 선택기는 유형의 모든 구성 요소를 나타냅니다. 스타일을 지정할 테마의 텍스트 상자 구성 요소를 선택하면 <!-- or interactive communication --> 양식의 모든 텍스트 상자가 스타일을 상속합니다. 선택기를 사용하여 일반 구성 요소나 스타일을 지정할 특정 구성 요소를 선택할 수 있습니다. 예를 들어, 필드 구성 요소는 일반 구성 요소이고 텍스트 상자는 특정 구성 요소입니다.
 
      **일반 구성 요소 스타일링:**
 필드는 age와 같은 숫자 상자 필드이거나 address와 같은 텍스트 상자 필드일 수 있습니다.
 필드 스타일을 지정하면 나이, 이름, 주소 등 모든 필드에 스타일이 지정됩니다.
 
-     **특정 구성 요소 스타일링**: 특정 구성 요소는 특정 카테고리의 오브젝트에 영향을 줍니다. 테마에서 숫자 상자 구성 요소의 스타일을 지정할 때 의 숫자 상자 개체만 스타일을 상속합니다.
+     **특정 구성 요소 스타일링**:
+특정 구성 요소는 특정 카테고리의 객체에 영향을 줍니다. 테마에서 숫자 상자 구성 요소의 스타일을 지정할 때 의 숫자 상자 개체만 스타일을 상속합니다.
 
      예를 들어, 주소가 더 긴 텍스트 상자 필드와 age와 같은 숫자 상자 필드가 더 짧습니다. 숫자 상자 필드를 선택하고 길이를 줄인 다음 양식에 적용할 수 있습니다. 양식에서 모든 숫자 상자 필드의 너비가 줄어듭니다.
 
      특정 배경색으로 모든 필드 구성 요소를 사용자 지정하면 나이, 이름, 주소와 같은 모든 필드가 배경색을 상속합니다. age와 같은 숫자 상자를 선택하고 그 너비를 줄이면 age, 가족 구성원 수와 같은 모든 숫자 상자의 너비가 줄어듭니다. 텍스트 상자의 너비는 변경되지 않습니다.
 
-   * **상태:** 특정 상태의 오브젝트 스타일을 사용자 지정할 수 있습니다. 예를 들어, 객체가 기본값, 포커스, 비활성화됨, 마우스로 가리키거나 오류 상태인 경우 객체의 모양을 지정할 수 있습니다.
-   * **속성 범주:** 스타일 속성은 다양한 카테고리로 나뉩니다. 예를 들어 Dimension 및 위치, 텍스트, 배경, 테두리 및 효과 등이 있습니다. 각 카테고리 아래에 스타일 정보를 제공합니다. 예를 들어 [배경]에서 [배경색]과 [이미지 및 그라디언트]를 제공할 수 있습니다.
+   * **상태:** 특정 상태에서 개체의 스타일을 사용자 지정할 수 있습니다. 예를 들어, 객체가 기본값, 포커스, 비활성화됨, 마우스로 가리키거나 오류 상태인 경우 객체의 모양을 지정할 수 있습니다.
+   * **속성 범주:** 스타일 속성은 여러 범주로 나뉩니다. 예를 들어 Dimension 및 위치, 텍스트, 배경, 테두리 및 효과 등이 있습니다. 각 카테고리 아래에 스타일 정보를 제공합니다. 예를 들어 [배경]에서 [배경색]과 [이미지 및 그라디언트]를 제공할 수 있습니다.
 
-   * **고급:** 사용자 지정 CSS를 오브젝트에 추가할 수 있습니다. 이렇게 하면 겹치는 경우 시각적 컨트롤이 정의하는 속성을 재정의합니다.
+   * **고급:** 개체에 사용자 지정 CSS를 추가할 수 있습니다. 이렇게 하면 겹치는 경우 비주얼 컨트롤이 정의하는 속성을 재정의합니다.
 
    * **CSS 보기**: 선택한 구성 요소의 CSS를 볼 수 있습니다.
 
-  또한 사이드바에 아래쪽 화살표가 있습니다. 화살표를 클릭하면 다음 두 가지 옵션이 추가로 제공됩니다. **시뮬레이트 성공** 및 **시뮬레이트 오류.** 위에서 설명한 옵션과 함께 이러한 옵션에 대해 자세히 설명합니다 [아래](themes.md#using-rail).
+  또한 사이드바에 아래쪽 화살표가 있습니다. 화살표를 클릭하면 **성공 시뮬레이션** 및 **오류 시뮬레이션 옵션이 추가로 제공됩니다.** 위에서 설명한 옵션과 함께 이러한 옵션은 [아래](themes.md#using-rail)에 자세히 설명되어 있습니다.
 
 [![테마 편집기](assets/themes.png)](assets/themes-1.png) **A.** 사이드바 **B.** 캔버스
 
 ### 구성 요소 스타일 지정 {#styling-components}
 
-여러 적응형 Forms에서 테마를 사용할 수 있습니다<!-- and interactive communications -->테마에 지정한 구성 요소 형식을 가져옵니다. 제목, 설명, 패널, 필드, 아이콘 및 텍스트 상자와 같은 다양한 구성 요소의 스타일을 지정할 수 있습니다. 위젯을 사용하여 테마에서 구성 요소 속성을 구성합니다. CSS 무시 섹션을 통해 CSS 코드를 작성하거나 사용자 지정 선택기를 제공할 수 있지만 CSS 이하에 대한 사전 지식은 필요하지 않지만 원하는 것입니다. 사이드바에서 구성 요소를 선택하면 CSS Overrides 섹션이 나타납니다.
+여러 적응형 Forms<!-- and interactive communications -->에서 테마를 사용할 수 있으며, 테마에 지정한 구성 요소 형식을 가져옵니다. 제목, 설명, 패널, 필드, 아이콘 및 텍스트 상자와 같은 다양한 구성 요소의 스타일을 지정할 수 있습니다. 위젯을 사용하여 테마에서 구성 요소 속성을 구성합니다. CSS 무시 섹션을 통해 CSS 코드를 작성하거나 사용자 지정 선택기를 제공할 수 있지만 CSS 이하에 대한 사전 지식은 필요하지 않지만 원하는 것입니다. 사이드바에서 구성 요소를 선택하면 CSS Overrides 섹션이 나타납니다.
 
 ![사이드바의 스타일 가능한 구성 요소](assets/stylable-components.png)
 
@@ -245,11 +246,11 @@ Cloud Service 인스턴스에서 만든 테마:
 
 사이드바의 구성 요소에 대해 편집 버튼을 클릭하면 캔버스에서 구성 요소가 선택되고 사이드바의 옵션을 사용하여 구성 요소의 스타일을 지정할 수 있습니다.
 
-텍스트 상자, 숫자 상자, 라디오 단추 및 확인란과 같은 특정 구성 요소는 필드와 같은 일반 구성 요소 아래에 분류됩니다. 예를 들어 라디오 단추의 스타일을 사용자 지정할 수 있습니다. 스타일을 지정할 라디오 단추를 선택하려면 **[!UICONTROL 필드]** > **[!UICONTROL 위젯]** > **[!UICONTROL 라디오 단추]**.
+텍스트 상자, 숫자 상자, 라디오 단추 및 확인란과 같은 특정 구성 요소는 필드와 같은 일반 구성 요소 아래에 분류됩니다. 예를 들어 라디오 단추의 스타일을 사용자 지정할 수 있습니다. 스타일을 지정할 라디오 단추를 선택하려면 **[!UICONTROL 필드]** > **[!UICONTROL 위젯]** > **[!UICONTROL 라디오 단추]**&#x200B;를 선택하십시오.
 
 ### 스타일 패널 레이아웃 {#styling-panel-layouts-br}
 
-의 테마 [!DNL AEM Forms] 양식의 패널 레이아웃에서 요소 스타일링 지원<!-- and  interactive communications -->. 기본 레이아웃 및 사용자 정의 레이아웃의 요소 스타일링이 지원됩니다.
+[!DNL AEM Forms]의 테마는 양식의 패널 레이아웃에서 요소의 스타일을 지원합니다<!-- and  interactive communications -->. 기본 레이아웃 및 사용자 정의 레이아웃의 요소 스타일링이 지원됩니다.
 
 기본 제공 패널은 다음과 같습니다.
 
@@ -278,7 +279,7 @@ Cloud Service 인스턴스에서 만든 테마:
 
 >[!NOTE]
 >
->테마는 먼저 양식을 사용하여 만들어집니다.<!-- or interactive communication-->을 클릭한 다음 다른 양식에 적용합니다<!-- or interactive communications-->. 테마 만들기에 사용된 중단점은 양식과 다를 수 있습니다 <!-- or interactive communication --> 테마를 적용할 수 있습니다. CSS 미디어 쿼리는 양식을 기반으로 합니다 <!-- or interactive communication --> 양식이 아닌 테마 만들기에 사용됨 <!-- or interactive communication --> 테마를 적용할 수 있습니다.
+>테마는 먼저 <!-- or interactive communication--> 양식을 사용하여 만든 다음 다른 <!-- or interactive communications-->에 적용됩니다. 테마 만들기에 사용된 중단점은 테마가 적용되는 양식 <!-- or interactive communication -->과(와) 다를 수 있습니다. CSS 미디어 쿼리는 테마가 적용되는 <!-- or interactive communication --> 형식이 아니라 테마 만들기에 사용된 <!-- or interactive communication --> 형식을 기반으로 합니다.
 
 ### 개체 선택 시 사이드바의 스타일 속성 컨텍스트 변경 사항 {#styling-properties-context-changes-in-sidebar-on-selecting-objects}
 
@@ -288,7 +289,7 @@ Cloud Service 인스턴스에서 만든 테마:
 
 테마 편집기는 구성 요소에 적용된 최대 10개의 스타일을 캐시합니다. 캐싱된 스타일을 테마의 다른 구성 요소와 함께 사용할 수 있습니다. 최근에 사용한 스타일은 사이드바에서 선택한 구성 요소 바로 아래에 목록 상자로 사용할 수 있습니다. 처음에는 최근에 사용된 스타일 목록이 비어 있습니다.
 
-![Asset-library](assets/asset-library.png)
+![자산 라이브러리](assets/asset-library.png)
 
 구성 요소의 스타일을 지정하면 스타일이 캐시되어 목록 상자에 나열됩니다. 이 예제에서 텍스트 상자의 레이블은 글꼴 크기와 색상을 변경하도록 스타일이 지정됩니다. 이미지를 선택하거나 색상을 변경하여 구성 요소의 스타일을 지정하는 유사한 단계를 따를 수 있습니다. 필드 레이블 스타일이 변경될 때 스타일이 캐시되어 목록 상자에 나열되는지 확인합니다.
 
@@ -296,22 +297,22 @@ Cloud Service 인스턴스에서 만든 테마:
 
 이 예에서 필드 레이블의 스타일이 변경되고, 스타일에 대해 반응형 패널 설명 을 선택하면 자산 라이브러리에 목록 항목이 추가됩니다. 에셋 라이브러리의 항목을 사용하여 반응형 패널 설명의 스타일을 변경할 수 있습니다.
 
-에셋 라이브러리에 스타일이 추가되면 다른 테마와 [스타일 모드](inline-style-adaptive-forms.md) 양식 편집기 UI 마찬가지로 양식 편집기의 스타일 모드를 사용할 때 <!-- or interactive communication editor --> 구성 요소의 스타일을 지정하는 UI입니다. 스타일은 캐시되며 테마에서 사용할 수 있습니다.
+자산 라이브러리에 스타일이 추가되면 다른 테마와 양식 편집기 UI의 [스타일 모드](inline-style-adaptive-forms.md)에서 사용할 수 있습니다. 마찬가지로 양식 편집기 <!-- or interactive communication editor --> UI의 스타일 모드를 사용하여 구성 요소의 스타일을 지정하면 스타일이 캐시되고 테마에서 사용할 수 있습니다.
 
 에셋 라이브러리에 대한 더하기 버튼을 사용하면 제공된 이름으로 스타일을 영구적으로 저장할 수 있습니다. 구성 요소에 스타일을 적용하기 위해 사이드바에서 저장 버튼을 클릭하지 않아도 더하기 버튼에 스타일이 저장됩니다. 나중에 사용할 수 있도록 스타일을 저장하는 더하기 버튼은 스타일 모드에서 사용할 수 없습니다.
 
-![에셋 라이브러리에 대한 사용자 지정 스타일 이름 제공](assets/custom-style-name.png)
+![자산 라이브러리에 대한 사용자 지정 스타일 이름 제공](assets/custom-style-name.png)
 
 스타일에 대한 사용자 지정 이름을 제공하면 해당 스타일은 테마에 연결되어 더 이상 다른 테마에서 사용할 수 없습니다. 저장된 스타일을 삭제하려면
 
-1. 캔버스 도구 모음에서 를 클릭합니다 **[!UICONTROL 테마 옵션]** ![theme-options](assets/theme-options.png) > **[!UICONTROL 스타일 관리]**.
-1. 스타일 관리 대화 상자에서 저장된 스타일을 선택하고 **[!UICONTROL 삭제]**.
+1. 캔버스 도구 모음에서 **[!UICONTROL 테마 옵션]** ![테마 옵션](assets/theme-options.png) > **[!UICONTROL 스타일 관리]**&#x200B;를 클릭합니다.
+1. 스타일 관리 대화 상자에서 저장된 스타일을 선택하고 **[!UICONTROL 삭제]**&#x200B;를 클릭합니다.
 
    ![저장된 스타일 삭제](assets/manage-styles.png)
 
 ### 실시간 미리 보기, 저장 및 변경 내용 버리기 {#live-preview-save-and-discard-changes}
 
-스타일링을 수정하면 양식에 즉시 반영됩니다 <!-- or interactive communication --> 캔버스에 로드되었습니다. 라이브 미리 보기를 통해 상호 작용 방식으로 스타일을 정의하고 스타일링의 영향을 확인할 수 있습니다. 구성 요소의 스타일을 변경하면 **[!UICONTROL 완료]** 사이드바에서 버튼을 사용할 수 있습니다. 변경 내용을 유지하려면 **[!UICONTROL 완료]** 단추를 클릭합니다.
+스타일링을 수정하면 캔버스에 로드된 <!-- or interactive communication --> 양식에 즉시 반영됩니다. 라이브 미리 보기를 통해 상호 작용 방식으로 스타일을 정의하고 스타일링의 영향을 확인할 수 있습니다. 구성 요소의 스타일을 변경하면 사이드바에서 **[!UICONTROL 완료]** 버튼이 활성화됩니다. 변경 내용을 유지하려면 **[!UICONTROL 완료]** 단추를 사용하세요.
 
 >[!NOTE]
 >
@@ -319,25 +320,25 @@ Cloud Service 인스턴스에서 만든 테마:
 
 ### 다른 적응형 양식이 있는 테마 {#theme-with-another-adaptive-form}
 
-테마를 만들면 테마 편집기와 함께 제공되는 양식으로 만들어집니다. 이 양식의 구성 요소에 스타일을 제공합니다. 테마 편집기와 함께 제공되는 양식 대신 양식을 선택할 수 있습니다 <!-- or interactive communication --> 스타일링을 제공하고 결과를 미리 보기 위해 선택한 옵션입니다.
+테마를 만들면 테마 편집기와 함께 제공되는 양식으로 만들어집니다. 이 양식의 구성 요소에 스타일을 제공합니다. 테마 편집기와 함께 제공되는 양식 대신 원하는 <!-- or interactive communication --> 양식을 선택하여 스타일을 지정하고 결과를 미리 볼 수 있습니다.
 
-현재 양식을 바꾸려면 <!-- interactive communication --> 테마 편집기 캔버스에서:
+테마 편집기 캔버스에서 현재 양식 또는 <!-- interactive communication -->을(를) 바꾸려면 다음을 수행하십시오.
 
-1. 테마 편집기 패널에서 **[!UICONTROL 테마 옵션]** ![theme-options](assets/theme-options.png) > **[!UICONTROL 구성]**.
+1. 테마 편집기 패널에서 **[!UICONTROL 테마 옵션]** ![테마 옵션](assets/theme-options.png) > **[!UICONTROL 구성]**&#x200B;을 클릭합니다.
 
-1. 일반 탭에서 양식을 찾아 선택합니다 <!-- or interactive communication --> 대상: **[!UICONTROL 적응형 양식]** 필드.
+1. [일반] 탭에서 **[!UICONTROL 적응형 양식]** 필드에 대한 <!-- or interactive communication --> 양식을 찾아 선택합니다.
 
 ### 다시 실행/실행 취소 {#redo-undo}
 
 실수로 발생한 원하지 않는 변경 사항을 실행 취소하거나 재실행할 수 있습니다. 캔버스에서 재실행/실행 취소 단추를 사용합니다.
 
-![작업 재실행 및 실행 취소](assets/redo_undo_new.png)
+![작업 다시 실행 및 실행 취소](assets/redo_undo_new.png)
 
 테마 편집기에서 구성 요소 스타일을 지정할 때 다시 실행/실행 취소 버튼이 표시됩니다.
 
 ## 테마 편집기 사용 {#using-the-theme-editor}
 
-테마 편집기 를 사용하여 만들거나 업로드한 테마를 편집할 수 있습니다. 다음으로 이동 **[!UICONTROL Forms 및 문서]** > **[!UICONTROL 테마]**&#x200B;을 클릭하고 테마를 선택한 다음 엽니다. 테마가 테마 편집기에서 열립니다.
+테마 편집기 를 사용하여 만들거나 업로드한 테마를 편집할 수 있습니다. **[!UICONTROL Forms 및 문서]** > **[!UICONTROL 테마]**(으)로 이동한 다음 테마를 선택하고 엽니다. 테마가 테마 편집기에서 열립니다.
 
 위에서 설명한 대로 테마 편집기에는 사이드바와 캔버스라는 두 개의 패널이 있습니다.
 ![테마 편집기](assets/theme-editor.png)
@@ -346,23 +347,23 @@ Cloud Service 인스턴스에서 만든 테마:
 
 ### 캔버스 사용 {#using-canvas}
 
-테마는 기본 양식을 사용하거나 양식을 사용하여 만들어집니다 <!-- or interactive communication --> 원하는 대로 선택할 수 있습니다. 캔버스에는 양식 또는 의 미리보기가 표시됩니다. <!-- interactive communication --> 테마에 지정된 맞춤화를 사용하여 테마를 만드는 데 사용됩니다. 양식 위의 눈금자는 장치의 디스플레이 크기에 따라 레이아웃을 결정하는 데 사용됩니다.
+기본 제공 양식을 사용하거나 선택한 <!-- or interactive communication --> 양식을 사용하여 테마를 만듭니다. 캔버스에는 테마에 지정된 사용자 지정으로 테마를 만드는 데 사용되는 양식 또는 <!-- interactive communication -->의 미리 보기가 표시됩니다. 양식 위의 눈금자는 장치의 디스플레이 크기에 따라 레이아웃을 결정하는 데 사용됩니다.
 
 캔버스 도구 모음에는 다음이 표시됩니다.
 
-* **[!UICONTROL 사이드 패널 전환]** ![토글 사이드 패널](assets/toggle-side-panel.png): 사이드바를 표시하거나 숨길 수 있습니다.
-* **[!UICONTROL 테마 옵션]** ![theme-options](assets/theme-options.png): 세 가지 옵션을 제공합니다
+* **[!UICONTROL 사이드 패널 전환]** ![사이드 패널 전환](assets/toggle-side-panel.png): 사이드바를 표시하거나 숨길 수 있습니다.
+* **[!UICONTROL 테마 옵션]** ![테마 옵션](assets/theme-options.png): 세 가지 옵션을 제공합니다.
 
-   * 구성: 미리보기 양식 선택 옵션을 제공합니다. <!-- or interactive communication , base clientlib, -->및 Adobe Fonts 구성.
+   * 구성: 미리 보기 양식 <!-- or interactive communication , base clientlib, --> 및 Adobe Fonts 구성을 선택하는 옵션을 제공합니다.
    * 테마 CSS 보기: 선택한 테마에 대한 CSS를 생성합니다.
    * 스타일 관리: 텍스트 및 이미지 스타일을 관리하는 옵션을 제공합니다.
    * 도움말: 테마 편집기의 이미지 가이드 둘러보기를 실행합니다.
 
-* **[!UICONTROL 에뮬레이터]** ![눈금자](assets/ruler.png): 다양한 디스플레이 크기에 대해 테마 디자인을 에뮬레이션합니다. 표시 크기가 에뮬레이터에서 중단점으로 처리됩니다. 중단점을 선택하고 그 스타일을 지정할 수 있습니다. 예를 들어, 데스크탑과 태블릿은 두 개의 중단점입니다. 각 중단점에 대해 서로 다른 스타일을 지정할 수 있습니다.
+* **[!UICONTROL 에뮬레이터]** ![눈금자](assets/ruler.png): 다른 표시 크기에 대해 테마의 모양을 에뮬레이션합니다. 표시 크기가 에뮬레이터에서 중단점으로 처리됩니다. 중단점을 선택하고 그 스타일을 지정할 수 있습니다. 예를 들어, 데스크탑과 태블릿은 두 개의 중단점입니다. 각 중단점에 대해 서로 다른 스타일을 지정할 수 있습니다.
 
 캔버스에서 구성 요소를 선택하면 그 위에 구성 요소 도구 모음이 표시됩니다. 구성 요소 도구 모음을 사용하여 구성 요소를 선택하거나 일반 구성 요소로 전환할 수 있습니다. 예를 들어, 패널에서 숫자 텍스트 상자를 선택합니다. 구성 요소 도구 모음에는 다음 옵션이 표시됩니다.
 
-* **[!UICONTROL 숫자 상자 위젯]**: 사이드바에서 모양을 사용자 지정할 구성 요소를 선택할 수 있습니다.
+* **[!UICONTROL 숫자 상자 위젯]**: 사이드바의 모양을 사용자 지정할 구성 요소를 선택할 수 있습니다.
 * **[!UICONTROL 필드 위젯]**: 스타일을 지정할 일반 구성 요소를 선택할 수 있습니다. 이 예제에서는 모든 텍스트 입력 구성 요소(텍스트 상자/숫자 상자/숫자 스텝퍼/날짜 입력)를 스타일링에 대해 선택합니다.
 
 * ![필드 수준](assets/select_parent_icon.svg): 스타일을 지정할 상위 구성 요소를 선택할 수 있습니다. 숫자 상자를 선택하고 이 아이콘을 선택하면 필드 구성 요소가 선택됩니다. 필드 구성 요소를 선택하고 이 아이콘을 선택하면 패널이 선택됩니다. 선택할 수 있도록 이 아이콘을 계속 탭하면 스타일을 지정할 레이아웃이 선택됩니다.
@@ -420,7 +421,7 @@ Cloud Service 인스턴스에서 만든 테마:
    <td><p>고급</p> </td>
    <td><p>다음을 추가할 수 있습니다.</p>
     <ul>
-     <li>속성 <code>::before</code> 및 <code>::after</code> 선택기에서 기본 콘텐츠 뒤 또는 앞에 콘텐츠를 추가하고 스타일을 지정하는 의사 요소.<br /> 다음을 참조하십시오 <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">CSS 의사 요소</a>.</li>
+     <li>선택기에서 기본 콘텐츠 뒤 또는 앞에 콘텐츠를 추가하고 스타일을 지정할 <code>::before</code> 및 <code>::after</code> 의사 요소에 대한 속성입니다.<br /> <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">CSS 의사 요소</a>를 참조하십시오.</li>
      <li>구성 요소에 인라인 사용자 지정 CSS 코드.</li>
     </ul> <p>사용자 지정 CSS 코드를 추가하면 사이드바의 옵션을 사용하여 추가한 사용자 지정이 무시됩니다. </p> </td>
   </tr>
@@ -433,9 +434,11 @@ Cloud Service 인스턴스에서 만든 테마:
 
 예를 들어 양식에 숫자 필드를 추가하고 테마 편집기에서 스타일을 지정합니다. 사용자가 필드에 영숫자 값을 입력할 때 텍스트 상자의 배경색을 변경할 수 있습니다. 테마의 숫자 필드를 선택하고 사이드바에서 상태 옵션을 사용합니다. 사이드바에서 오류 상태를 선택하고 배경색을 빨간색으로 변경합니다. 비헤이비어를 미리 보려면 사이드바에서 사용할 수 있는 오류 시뮬레이트 옵션을 사용할 수 있습니다. 시뮬레이트 오류 및 성공 옵션은 아래에 자세히 설명되어 있습니다.
 
-* **시뮬레이트 성공**: 성공 상태에 대한 스타일을 지정하는 경우 구성 요소의 모양을 확인할 수 있습니다. 예를 들어 양식에서 고객은 암호를 설정합니다. 사용자는 사용자가 제공하는 지침에 따라 암호를 설정할 수 있습니다. 사용자가 제공하는 모든 지침에 따라 암호를 입력하면 텍스트 상자가 녹색으로 바뀝니다. 텍스트 상자가 녹색으로 바뀌면 성공 상태가 됩니다. 성공 상태의 구성 요소에 대해 스타일을 지정하고 성공 시뮬레이트 옵션을 사용하여 구성 요소의 모양을 시뮬레이션할 수 있습니다.
+* **성공 시뮬레이션**:
+성공 상태에 대한 스타일을 지정하는 경우 구성 요소의 모양을 확인할 수 있습니다. 예를 들어 양식에서 고객은 암호를 설정합니다. 사용자는 사용자가 제공하는 지침에 따라 암호를 설정할 수 있습니다. 사용자가 제공하는 모든 지침에 따라 암호를 입력하면 텍스트 상자가 녹색으로 바뀝니다. 텍스트 상자가 녹색으로 바뀌면 성공 상태가 됩니다. 성공 상태의 구성 요소에 대해 스타일을 지정하고 성공 시뮬레이트 옵션을 사용하여 구성 요소의 모양을 시뮬레이션할 수 있습니다.
 
-* **시뮬레이트 오류**: 오류 상태에 대한 스타일을 지정하는 경우 구성 요소의 모양을 확인할 수 있습니다. 예를 들어 양식에서 고객은 암호를 설정합니다. 사용자는 사용자가 제공하는 지침에 따라 암호를 설정할 수 있습니다. 사용자가 제공한 모든 지침을 따르지 않는 암호를 입력하면 텍스트 상자가 빨간색으로 바뀝니다. 텍스트 상자가 빨간색으로 바뀌면 오류 상태가 됩니다. 오류 상태의 구성 요소에 대해 스타일을 지정하고 오류 시뮬레이트 옵션을 사용하여 구성 요소의 모양을 시뮬레이션할 수 있습니다.
+* **오류 시뮬레이션**:
+오류 상태에 대한 스타일을 지정하는 경우 구성 요소의 모양을 확인할 수 있습니다. 예를 들어 양식에서 고객은 암호를 설정합니다. 사용자는 사용자가 제공하는 지침에 따라 암호를 설정할 수 있습니다. 사용자가 제공한 모든 지침을 따르지 않는 암호를 입력하면 텍스트 상자가 빨간색으로 바뀝니다. 텍스트 상자가 빨간색으로 바뀌면 오류 상태가 됩니다. 오류 상태의 구성 요소에 대해 스타일을 지정하고 오류 시뮬레이트 옵션을 사용하여 구성 요소의 모양을 시뮬레이션할 수 있습니다.
 
 ### 구성 요소 스타일링 {#styling-a-component}
 
@@ -449,11 +452,11 @@ Cloud Service 인스턴스에서 만든 테마:
    * **[!UICONTROL 숫자 상자 위젯]**
    * **[!UICONTROL 필드 위젯]**
 
-1. 선택 **[!UICONTROL 숫자 상자 위젯]**.
+1. **[!UICONTROL 숫자 상자 위젯]**&#x200B;을 선택하세요.
 1. 사이드바 제목이 숫자 상자 위젯으로 변경되고 모양을 사용자 지정하는 옵션이 표시됩니다.
-사용 **[!UICONTROL Dimension 및 위치]** 구성 요소 크기를 사용자 지정하는 사이드바 옵션. 상태가 인지 확인합니다. **[!UICONTROL 기본값]**.
+사이드바의 **[!UICONTROL Dimension 및 위치]** 옵션을 사용하여 구성 요소의 크기를 사용자 지정합니다. 상태가 **[!UICONTROL 기본]**&#x200B;인지 확인하십시오.
 
-을(를) 선택하는 대신 **[!UICONTROL 숫자 상자 위젯]**, 선택 **[!UICONTROL 필드 위젯]** 구성 요소 도구 모음에서 를 클릭하고 위의 단계를 수행합니다. 다음에 대한 차원을 선택할 때 **[!UICONTROL 필드 위젯]** 옵션을 사용하면 숫자 상자를 제외한 모든 텍스트 상자의 크기가 같습니다.
+**[!UICONTROL 숫자 상자 위젯]**&#x200B;을 선택하는 대신 구성 요소 도구 모음에서 **[!UICONTROL 필드 위젯]**&#x200B;을 선택하고 위의 단계를 수행합니다. **[!UICONTROL 필드 위젯]** 옵션의 차원을 선택하면 숫자 상자를 제외한 모든 텍스트 상자의 크기가 같습니다.
 
 ### 주어진 상태에 대한 필드 스타일 지정 {#styling-fields-given-state}
 
@@ -464,45 +467,45 @@ Cloud Service 인스턴스에서 만든 테마:
 1. 캔버스에서 구성 요소를 선택하고 구성 요소 도구 모음에서 적절한 옵션을 선택합니다.
 사이드바에는 구성 요소의 스타일을 사용자 지정하는 옵션이 표시됩니다.
 1. 사이드바에서 상태를 선택합니다. 예를 들어 오류 상태입니다.
-1. 다음과 같은 옵션 사용 **[!UICONTROL 테두리, 배경]** 구성 요소 모양을 사용자 지정할 수 있습니다.
-1. 사용 **[!UICONTROL 시뮬레이트 오류]** 사이드바 하단에 있는 옵션을 사용하여 편집 시 스타일이 어떻게 보이는지 확인할 수 있습니다.
+1. 사이드바에서 **[!UICONTROL 테두리, 배경]** 등의 옵션을 사용하여 구성 요소의 모양을 사용자 지정합니다.
+1. 사이드바 아래쪽에 있는 **[!UICONTROL 오류 시뮬레이션]** 옵션을 사용하여 편집 시 스타일을 확인합니다.
 
-상태를 지정한 후 구성 요소의 스타일을 사용자 지정하면 지정된 상태에 대해서만 구성 요소에 대한 사용자 지정이 표시됩니다. 예를 들어 마우스로 가리키기 상태를 선택할 때 구성 요소에 대한 스타일을 사용자 지정하는 경우. 렌더링된 양식의 구성 요소 위로 포인터를 이동하면 구성 요소에 대한 사용자 지정이 표시됩니다 <!-- or interactive communication --> 테마를 적용할 대상.
+상태를 지정한 후 구성 요소의 스타일을 사용자 지정하면 지정된 상태에 대해서만 구성 요소에 대한 사용자 지정이 표시됩니다. 예를 들어 마우스로 가리키기 상태를 선택할 때 구성 요소에 대한 스타일을 사용자 지정하는 경우. 테마를 적용한 렌더링된 양식 <!-- or interactive communication -->의 구성 요소 위로 포인터를 이동하면 구성 요소에 대한 사용자 지정이 표시됩니다.
 
-오류 및 성공 이외의 상태의 비헤이비어를 시뮬레이션하려면 미리보기 모드를 사용합니다. 미리보기 모드를 사용하려면 **[!UICONTROL 미리 보기]** 을 클릭하여 제품에서 사용할 수 있습니다.
+오류 및 성공 이외의 상태의 비헤이비어를 시뮬레이션하려면 미리보기 모드를 사용합니다. 미리 보기 모드를 사용하려면 페이지 도구 모음에서 **[!UICONTROL 미리 보기]**&#x200B;를 클릭합니다.
 
 ### 더 작은 디스플레이를 위한 레이아웃 스타일링 {#styling-layouts-for-smaller-displays}
 
-캔버스에서 눈금자를 사용하여 디스플레이가 작은 장치의 중단점을 선택합니다. 에뮬레이터 클릭 ![눈금자](assets/emulator-icon.svg) 캔버스에서 눈금자와 중단점을 볼 수 있습니다. 중단점을 사용하면 양식을 미리 볼 수 있습니다 <!-- or interactive communication --> 휴대폰 및 태블릿과 같은 다양한 장치와 관련된 디스플레이 크기의 경우. 테마 편집기에서 여러 디스플레이 크기가 지원됩니다.
+캔버스에서 눈금자를 사용하여 디스플레이가 작은 장치의 중단점을 선택합니다. 눈금자와 중단점을 보려면 캔버스에서 에뮬레이터 ![눈금자](assets/emulator-icon.svg)를 클릭하십시오. 중단점을 사용하면 휴대폰, 태블릿과 같은 다양한 장치와 관련된 디스플레이 크기에 대한 <!-- or interactive communication --> 양식을 미리 볼 수 있습니다. 테마 편집기에서 여러 디스플레이 크기가 지원됩니다.
 
 다른 중단점에 대해 구성 요소의 스타일을 지정하려면 다음을 수행합니다.
 
 1. 캔버스에서 눈금자 위에 있는 중단점을 선택합니다.
 중단점은 모바일 장치와 표시 크기를 나타냅니다.
-1. 사이드바를 사용하여 양식 스타일 사용자 지정 <!-- or interactive communication --> 선택한 디스플레이 크기에 대한 테마의 구성 요소.
+1. 사이드바를 사용하여 선택한 표시 크기에 맞게 테마에서 <!-- or interactive communication --> 양식 구성 요소의 스타일을 맞춤화하세요.
 1. 사용자 지정이 저장되었는지 확인합니다.
 
-양식의 스타일을 지정할 수 있습니다. <!-- or interactive communication --> 여러 디바이스용 구성 요소 양식 <!-- and interactive communication --> 데스크탑 및 모바일 장치용 구성 요소는 완전히 다른 스타일을 가질 수 있습니다.
+여러 장치에 대해 양식 <!-- or interactive communication --> 구성 요소의 스타일을 지정할 수 있습니다. 데스크톱 및 모바일 장치용 양식 <!-- and interactive communication --> 구성 요소는 완전히 다른 스타일을 가질 수 있습니다.
 
 ### 테마에서 Web Fonts 사용 {#using-web-fonts-in-a-theme}
 
-이제 적응형 양식의 웹 서비스에서 사용할 수 있는 글꼴을 사용할 수 있습니다 <!-- or interactive communication -->. 기본 제공, [Adobe Fonts](https://fonts.adobe.com/), Adobe의 웹 글꼴 서비스를 구성으로 사용할 수 있습니다. Adobe Fonts을 사용하려면 키트를 만들고 키트에 글꼴을 추가한 다음 [Adobe Fonts](https://fonts.adobe.com/).
+이제 적응형 양식 <!-- or interactive communication -->의 웹 서비스에서 사용할 수 있는 글꼴을 사용할 수 있습니다. Adobe의 웹 글꼴 서비스인 [Adobe Fonts](https://fonts.adobe.com/)을(를) 기본 구성으로 사용할 수 있습니다. Adobe Fonts을 사용하려면 키트를 만들고 키트에 글꼴을 추가한 다음 [Adobe Fonts](https://fonts.adobe.com/)에서 키트 ID를 가져옵니다.
 
 Experience Manager에서 Adobe Fonts을 구성하려면 다음 단계를 수행하십시오.
 
-1. 작성자 인스턴스에서 ![Adobe Experience Manager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager ]**>**[!UICONTROL &#x200B;도구&#x200B;]**![망치](assets/hammer.png) >**[!UICONTROL &#x200B;배포&#x200B;]**>**[!UICONTROL  Cloud Service ]**.
-1. 다음에서 **[!UICONTROL Cloud Service]** 페이지에서 로 이동하여 **[!UICONTROL Adobe Fonts]** 옵션을 선택합니다. 구성 폴더를 열고 **[!UICONTROL 만들기]**.
-1. 다음에서 **[!UICONTROL 구성 만들기]** 대화 상자에서 구성의 제목을 지정하고 **[!UICONTROL 만들기]**.
+1. 작성자 인스턴스에서 ![Adobe Experience Manager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager ]**>**[!UICONTROL &#x200B;도구&#x200B;]**![hammer](assets/hammer.png) >**[!UICONTROL &#x200B;배포&#x200B;]**>**[!UICONTROL  Cloud Service ]**을 클릭합니다.
+1. **[!UICONTROL Cloud Service]** 페이지에서 로 이동하여 **[!UICONTROL Adobe Fonts]** 옵션을 엽니다. 구성 폴더를 열고 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 구성 만들기]** 대화 상자에서 구성의 제목을 지정하고 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
    구성 페이지로 리디렉션됩니다.
 
-1. 표시되는 구성 요소 편집 대화 상자에서 키트 ID를 입력하고 를 클릭합니다 **[!UICONTROL 확인]**.
+1. 표시되는 구성 요소 편집 대화 상자에서 키트 ID를 입력하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
 Adobe Fonts 구성을 사용하도록 테마를 구성하려면 다음 단계를 수행하십시오.
 
 1. 작성자 인스턴스에서 테마 편집기에서 테마를 엽니다.
-1. 테마 편집기에서 다음으로 이동 **[!UICONTROL 테마 옵션]** ![theme-options](assets/theme-options.png) > **[!UICONTROL 구성]**.
-1. 위치 **[!UICONTROL Adobe Fonts 구성]** 필드를 선택하고 키트를 선택한 다음 **[!UICONTROL 저장]**.
+1. 테마 편집기에서 **[!UICONTROL 테마 옵션]** ![테마 옵션](assets/theme-options.png) > **[!UICONTROL 구성]**&#x200B;으로 이동합니다.
+1. **[!UICONTROL Adobe Fonts 구성]** 필드에서 키트를 선택하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
    이제 테마의 font-family 속성에 글꼴이 추가되었음을 확인할 수 있습니다.
 
@@ -538,25 +541,25 @@ You can use the theme configuration service to add more fonts to the theme edito
 
 #### 테마 편집기에 적용된 마스크 스타일 {#mask-styles-applied-in-theme-editor}
 
-테마에 적용된 스타일을 마스크할 수 있습니다. 테마 편집기 사이드바에서 ![toggle_eyes](assets/toggle_eye.png)아이콘을 클릭하여 적용된 스타일을 비활성화합니다. 예를 들어 양식의 구성 요소 차원을 변경하는 경우 <!-- or interactive communication -->그런 다음 속성 왼쪽에 있는 마스크 단추를 사용하여 비활성화할 수 있습니다. 테마를 저장하면 선택한 마스킹 옵션이 유지됩니다.
+테마에 적용된 스타일을 마스크할 수 있습니다. 테마 편집기 사이드바에서 ![toggle_eye](assets/toggle_eye.png)아이콘을 사용하여 적용된 스타일을 비활성화할 수 있습니다. 예를 들어 <!-- or interactive communication --> 양식에서 구성 요소의 차원을 변경하는 경우 속성 왼쪽의 마스크 단추를 사용하여 비활성화할 수 있습니다. 테마를 저장하면 선택한 마스킹 옵션이 유지됩니다.
 
 ![테마 편집기 사이드바에서 사용 가능한 마스크 옵션](assets/mask-styles.png)
 
 아래 예제는 테마의 마스크된 스타일과 마스크되지 않은 스타일을 보여 줍니다.
 
-![마스크 및 마스크 해제된 스타일링](assets/mask2.png)
+![마스크되고 마스크되지 않은 스타일링](assets/mask2.png)
 
 ## 양식에 테마 적용 {#applying-a-theme-to-a-form-or-interactive-communication-br}
 
 적응형 양식에 테마를 적용하려면 다음을 수행합니다.
 
-1. 편집 모드에서 양식을 엽니다. 편집 모드에서 양식을 열려면 양식을 선택하고 **[!UICONTROL 열기]**.
-1. 편집 모드에서 구성 요소를 선택하고 ![필드 수준](assets/select_parent_icon.svg) > **[!UICONTROL 적응형 양식 컨테이너]**&#x200B;을 클릭한 다음 을 클릭합니다 ![cmppr](assets/cmppr.png).
+1. 편집 모드에서 양식을 엽니다. 편집 모드에서 양식을 열려면 양식을 선택하고 **[!UICONTROL 열기]**&#x200B;를 클릭합니다.
+1. 편집 모드에서 구성 요소를 선택한 다음 ![필드 수준](assets/select_parent_icon.svg) > **[!UICONTROL 적응형 양식 컨테이너]**&#x200B;를 클릭하고 ![cmpr](assets/cmppr.png)을 클릭합니다.
 
    사이드바에서 양식의 속성을 편집할 수 있습니다.
 
-1. 사이드바에서 를 클릭합니다. **[!UICONTROL 스타일링]**.
-1. 에서 테마 선택 **[!UICONTROL 적응형 양식 테마]** 드롭다운 및 클릭 **[!UICONTROL 완료]** ![확인 단추](assets/check-button.png).
+1. 사이드바에서 **[!UICONTROL 스타일]**&#x200B;을 클릭하세요.
+1. **[!UICONTROL 적응형 양식 테마]** 드롭다운에서 테마를 선택하고 **[!UICONTROL 완료]** ![확인 단추](assets/check-button.png)를 클릭합니다.
 
 적응형 양식을 만들 때 사용할 테마를 정의할 수도 있습니다.
 
@@ -571,7 +574,7 @@ You can use the theme configuration service to add more fonts to the theme edito
 
 ### 런타임 시 양식의 테마 변경 {#change-theme-of-a-form-at-runtime}
 
-테마는 양식의 다양한 구성 요소를 스타일링합니다. 다음을 사용할 수 있습니다. `themeOverride` 속성을 사용하여 폼의 테마를 동적으로 변경할 수 있습니다. 양식의 일반적인 URL은 다음과 같습니다.
+테마는 양식의 다양한 구성 요소를 스타일링합니다. `themeOverride` 속성을 사용하여 양식의 테마를 동적으로 변경할 수 있습니다. 양식의 일반적인 URL은 다음과 같습니다.
 
 `https://<server>:<port>/content/forms/af/test.html`
 
@@ -579,32 +582,32 @@ themeOverride 매개 변수를 사용하여 런타임에 테마를 적용할 수
 
 `https://<server>:<port>/content/forms/af/test.html?themeOverride=/content/dam/formsanddocuments-themes/simpleEnrollmentTheme`
 
-다음 `themeOverride` 옵션을 사용하면 테마에 대한 경로를 제공할 수 있습니다. 양식의 테마를 변경하고 업데이트된 스타일로 양식을 새로 고칩니다.
+`themeOverride` 옵션을 사용하면 테마의 경로를 제공할 수 있습니다. 양식의 테마를 변경하고 업데이트된 스타일로 양식을 새로 고칩니다.
 
 ## 테마를 사용하여 특정 모양 가져오기 {#specific-af-appearance}
 
-포함 [!DNL AEM Forms], 기본 제공 캔버스 테마와 함께 다른 많은 테마가 있습니다. 양식을 디자인하려는 경우 <!-- or interactive communication --> 다른 테마를 사용하여 더 많은 변경 사항과 함께 테마 라이브러리 폴더에서 테마를 복사합니다. 복사된 테마를 테마 라이브러리 폴더 외부에 붙여넣고, 원하는 변경 내용에 따라 복사된 테마를 편집합니다.
+[!DNL AEM Forms]을(를) 사용하면 기본 제공 캔버스 테마와 함께 다른 테마가 많이 있습니다. 다른 테마를 사용하여 <!-- or interactive communication --> 양식을 디자인하고 더 많은 변경 내용을 적용하려면 테마 라이브러리 폴더에서 테마를 복사하십시오. 복사된 테마를 테마 라이브러리 폴더 외부에 붙여넣고, 원하는 변경 내용에 따라 복사된 테마를 편집합니다.
 
 테마를 복사하려면 다음 단계를 수행하십시오.
 
-1. 작성 인스턴스에서 다음으로 이동합니다. **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL 테마]**.
+1. 제작 인스턴스에서 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL 테마]**&#x200B;로 이동합니다.
 1. 테마 라이브러리 폴더를 엽니다.
-1. 테마 라이브러리 폴더에서 해당 기본 테마 위로 포인터를 가져간 다음 을 선택합니다 **[!UICONTROL 복사]**.
+1. 테마 라이브러리 폴더에서 해당 기본 테마를 가리키고 **[!UICONTROL 복사]**&#x200B;를 선택합니다.
 1. 복사된 테마를 테마 라이브러리 폴더 외부에 붙여넣습니다.
 1. 복사된 테마를 사용자 지정합니다.
 
-테마를 맞춤화한 후 양식에 적용합니다 <!-- or interactive communication -->.
+테마를 맞춤화한 후 <!-- or interactive communication --> 양식에 적용하세요.
 
 >[!NOTE]
 >
->테마 라이브러리 폴더에서 사용할 수 있는 테마를 수정하지 마십시오. 이 폴더에는 시스템 테마가 포함되어 있습니다. 이 테마에 대한 변경 사항은 의 최신 버전 또는 핫픽스를 설치할 때 덮어쓰여집니다. [!DNL AEM Forms].
+>테마 라이브러리 폴더에서 사용할 수 있는 테마를 수정하지 마십시오. 이 폴더에는 시스템 테마가 포함되어 있습니다. [!DNL AEM Forms]의 최신 버전 또는 핫픽스를 설치할 때 이러한 테마에 대한 변경 내용을 덮어씁니다.
 
 ## 다른 적응형 양식 사용 사례에 미치는 영향 {#impact-on-other-adaptive-form-use-cases}
 
-* **양식 Publish/게시 취소:** 양식을 게시할 때에에 적용된 테마도 게시됩니다(아직 게시되지 않은 경우)
-* **양식 가져오기/내보내기:** 양식을 가져오거나 내보낼 때 관련 테마를 자동으로 가져오거나 내보냅니다.
-* **양식의 참조:** 양식 참조의 참조 섹션에는 테마에 대한 추가 항목이 포함되어 있습니다.
-* **양식의 마지막 수정 시간:** 연결된 테마가 변경되면 업데이트됩니다.
+* **Publish/양식 게시 취소:** 양식을 게시할 때 적용된 테마도 게시됩니다(아직 게시되지 않은 경우).
+* **양식 가져오기/내보내기:** 양식을 가져오거나 내보낼 때 연결된 테마를 자동으로 가져오거나 내보냅니다.
+* **양식의 참조:** 양식 참조의 참조 섹션에 테마에 대한 추가 항목이 포함되어 있습니다.
+* **양식의 마지막 수정 시간:** 연결된 테마를 변경할 때 업데이트되었습니다.
 <!-- * **A/B Testing:** You can apply a different theme to two versions of the form in A/B testing. The information of the two themes is individually stored on the two guide containers. -->
 
 ## CSS 생성 시퀀스 {#css-generation-sequence}
@@ -615,7 +618,7 @@ CSS 보기를 선택하면 테마 편집기에서 모든 스타일 정보를 수
 1. 사이드바의 속성을 사용하여 지정된 사용자 정의 스타일링입니다.
 1. CSS 무시 옵션을 사용하여 제공된 CSS 스타일입니다.
 
-예를들어 텍스트 상자의 배경색은 파란색입니다<!-- in the base client library-->. 사이드바의 속성을 사용하여 분홍색으로 변경합니다. CSS를 생성하면 텍스트 상자의 배경색이 분홍색으로 표시됩니다. 속성을 사용하여 배경색을 변경한 후 다른 작성자는 CSS 무시 옵션을 사용하여 배경색 텍스트 상자를 흰색으로 변경합니다. CSS를 생성하면 생성된 CSS에서 배경색이 흰색으로 표시됩니다.
+예를들어 텍스트 상자의 배경색은 blue<!-- in the base client library-->입니다. 사이드바의 속성을 사용하여 분홍색으로 변경합니다. CSS를 생성하면 텍스트 상자의 배경색이 분홍색으로 표시됩니다. 속성을 사용하여 배경색을 변경한 후 다른 작성자는 CSS 무시 옵션을 사용하여 배경색 텍스트 상자를 흰색으로 변경합니다. CSS를 생성하면 생성된 CSS에서 배경색이 흰색으로 표시됩니다.
 
 ## 디버깅 스타일 {#debugging-styles}
 
@@ -623,14 +626,14 @@ CSS 보기를 선택하면 테마 편집기에서 모든 스타일 정보를 수
 
 다음 옵션을 사용하여 생성된 CSS를 볼 수 있습니다.
 
-* **CSS 보기** 사이드바의 옵션: 테마에서 구성 요소를 선택하면 사이드바에 CSS 보기 옵션이 표시됩니다. 에 대한 CSS를 포함하여 생성된 CSS를 표시합니다. `::before` 및 `::after` 의사 요소.
-* **테마 CSS 보기** 캔버스 도구 모음의 옵션: 캔버스 도구 모음에서 ![theme-options](assets/theme-options.png) > **[!UICONTROL 테마 CSS 보기]**. 테마 편집기에서 정의한 속성에서 생성된 전체 테마 CSS를 볼 수 있습니다.
+* 사이드바에서 **CSS 보기** 옵션: 테마에서 구성 요소를 선택하면 사이드바에서 CSS 보기 옵션을 볼 수 있습니다. `::before` 및 `::after` 의사 요소의 CSS를 포함하여 생성된 CSS를 표시합니다.
+* 캔버스 도구 모음의 **테마 CSS 보기** 옵션: 캔버스 도구 모음에서 ![테마 옵션](assets/theme-options.png) > **[!UICONTROL 테마 CSS 보기]**&#x200B;를 클릭합니다. 테마 편집기에서 정의한 속성에서 생성된 전체 테마 CSS를 볼 수 있습니다.
 
 ## 문제 해결, 권장 사항 및 모범 사례 {#troubleshooting-recommendations-and-best-practices}
 
-* **다른 테마의 에셋 방지**
+* **다른 테마에서 자산 사용 안 함**
 
-  테마를 편집할 때 다른 테마의 에셋(예: 이미지)을 찾아보고 추가할 수 있습니다. 예를 들어 페이지의 배경을 편집하는 경우 예를 들어 다음을 선택할 경우 **[!UICONTROL 페이지]** ![편집 단추](assets/edit-button.png)> **[!UICONTROL 배경]** > **[!UICONTROL 추가]** > **[!UICONTROL 이미지]**&#x200B;다른 테마의 이미지를 찾아보고 추가할 수 있는 대화 상자가 표시됩니다.
+  테마를 편집할 때 다른 테마의 에셋(예: 이미지)을 찾아보고 추가할 수 있습니다. 예를 들어 페이지의 배경을 편집하는 경우 예를 들어 **[!UICONTROL 페이지]** ![편집 단추](assets/edit-button.png)> **[!UICONTROL 배경]** > **[!UICONTROL 추가]** > **[!UICONTROL 이미지]**&#x200B;를 선택하면 다른 테마의 이미지를 찾아보고 추가할 수 있는 대화 상자가 표시됩니다.
 
 * 자산이 다른 테마에서 추가되고 다른 테마가 이동 또는 삭제되는 경우 현재 테마와 관련된 문제에 직면할 수 있습니다. 다른 테마에서 에셋을 찾아보거나 추가하지 않는 것이 좋습니다.
 
@@ -647,22 +650,22 @@ CSS 보기를 선택하면 테마 편집기에서 모든 스타일 정보를 수
         1. Click **[!UICONTROL Save]**.
 
       The styling you specify in client library is imported in the theme that uses it. For example, you specify styling for text box, numeric box, and switch in the client library. When you import your client library in the theme, styling for text box, numeric box, and switch is imported. You can then style other components using theme editor. -->
-    테마를 만들고 복사본을 만든 다음 유사한 사용 사례에 대해 복사된 테마에 제공된 스타일을 수정할 수도 있습니다.
-    참조: [테마를 사용하여 특정 모양 가져오기](#specific-af-appearance)
+    테마를 만들고, 테마의 복사본을 만든 다음 유사한 사용 사례에 대해 복사된 테마에 제공된 스타일을 수정할 수도 있습니다.
+    참조[테마를 사용하여 특정 모양 만들기](#specific-af-appearance)
     
     * **테마 편집기:**
     
-    테마 편집기를 사용하여 테마를 만들어 양식의 스타일을 지정할 수 있습니다 &lt;!>— 또는 대화형 통신 —> 개발하는 여러 양식 간에 모양과 느낌의 일관성을 가능하게 하는 구성 요소의 스타일을 테마로 지정할 수 있습니다. 테마에서 스타일 정보를 지정한 다음 테마를 양식에 적용하는 것이 좋습니다.
+    테마 편집기를 사용하여 테마를 만들어 양식 스타일을 지정할 수 있습니다. &lt;!— 또는 대화형 통신 —> 개발하는 여러 양식 간에 모양과 느낌의 일관성을 가능하게 하는 구성 요소의 스타일을 테마로 지정할 수 있습니다. 테마에서 스타일 정보를 지정한 다음 테마를 양식에 적용하는 것이 좋습니다.
     
-    * **인라인 스타일:**
+    * **인라인 스타일링:**
     
-    양식의 스타일 모드를 사용하여 구성 요소의 스타일을 지정할 수 있습니다 &lt;!>— 또는 대화형 통신 —> 다중 채널 편집기 를 사용할 수 있습니다. 스타일 모드를 사용하여 양식 구성 요소 스타일을 변경하면 테마에 지정된 스타일이 무시됩니다. 특정 양식의 특정 구성 요소에 대한 스타일을 변경하려면 [구성 요소의 인라인 스타일 지정](inline-style-adaptive-forms.md)을 참조하십시오.
+    양식 &lt;!의 스타일 모드를 사용하여 구성 요소의 스타일을 지정할 수 있습니다.— 또는 대화형 통신 —> 다중 채널 편집기 를 사용할 수 있습니다. 스타일 모드를 사용하여 양식 구성 요소 스타일을 변경하면 테마에 지정된 스타일이 무시됩니다. 특정 양식의 특정 구성 요소에 대한 스타일을 변경하려면 [구성 요소의 인라인 스타일](inline-style-adaptive-forms.md)을 참조하십시오.
 
 <!-- * **Using client-side libraries**
 
   If you want to create client libraries to import styling information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/clientlibs.html). After you create a client library, you can import it in your theme using the steps mentioned above. -->
 
-* **컨테이너 패널 레이아웃 폭 변경**
+* **컨테이너 패널 레이아웃 너비 변경**
 
   컨테이너 패널 레이아웃 너비는 변경하지 않는 것이 좋습니다. 컨테이너 패널의 너비를 지정하면 정적 패널이 되어 다른 디스플레이에 맞게 조정되지 않습니다.
 

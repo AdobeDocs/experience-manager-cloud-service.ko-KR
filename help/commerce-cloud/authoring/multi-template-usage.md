@@ -24,7 +24,7 @@ ht-degree: 0%
 >
 > 이 기능은 CIF을 기반으로 하는 상점(예: Venia)에만 작동합니다.
 
-[AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components) 는 콘텐츠 작성자가 추가 카테고리 및 제품 페이지를 만들 수 있는 기능을 제공합니다. 이러한 페이지는 추가 마케팅 콘텐츠로 보강하고 특정 카테고리 및 제품을 타겟팅하도록 구성할 수 있습니다. 다음 비디오는 이 기능의 설정을 안내합니다.
+[AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)는 콘텐츠 작성자에게 추가 범주 및 제품 페이지를 만드는 기능을 제공합니다. 이러한 페이지는 추가 마케팅 콘텐츠로 보강하고 특정 카테고리 및 제품을 타겟팅하도록 구성할 수 있습니다. 다음 비디오는 이 기능의 설정을 안내합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
@@ -37,4 +37,4 @@ ht-degree: 0%
 
 ## 관련 리소스 {#related}
 
-페이지의 특정 영역을 동적으로 타겟팅하고 동일한 템플릿을 다시 사용할 수도 있습니다. 방법 알아보기 [관련 AEM 콘텐츠를 사용하여 제품 데이터 강화](./enrich-product-associated-content.md).
+페이지의 특정 영역을 동적으로 타겟팅하고 동일한 템플릿을 다시 사용할 수도 있습니다. [관련 AEM 콘텐츠로 제품 데이터를 보강](./enrich-product-associated-content.md)하는 방법에 대해 알아봅니다.

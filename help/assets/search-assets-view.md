@@ -1,5 +1,5 @@
 ---
-title: 에서 에셋을 검색하고 검색하는 방법 알아보기 [!DNL Assets view]?
+title: ' [!DNL Assets view]에서 자산을 검색하고 검색하는 방법을 알아보세요.'
 description: AEM Assets 보기에서 에셋을 검색하고 검색하는 방법을 알아봅니다. 강력한 검색 기능을 통해 적절한 에셋을 빠르게 찾고 콘텐츠 속도를 높일 수 있습니다.
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
@@ -49,7 +49,7 @@ ht-degree: 92%
 
 * 만료 날짜: `Expired` 자산 상태를 기반으로 검색 결과를 필터링합니다. 또한 자산의 만료 날짜 범위를 지정하여 검색 결과를 추가로 필터링할 수 있습니다.
 
-* 맞춤형 필터: [맞춤형 필터 추가](#custom-filters) (자산 보기 사용자 인터페이스 참조) 표준 필터 외에 맞춤형 필터를 적용하여 검색 결과를 구체화합니다.
+* 사용자 지정 필터: [Assets 보기 사용자 인터페이스에 사용자 지정 필터를 추가](#custom-filters)합니다. 표준 필터 외에 맞춤형 필터를 적용하여 검색 결과를 구체화합니다.
 
 검색된 자산을 `Name`, `Relevancy`, `Size`, `Modified` 및 `Created`의 오름차순 또는 내림차순으로 정렬할 수 있습니다.
 
@@ -57,9 +57,9 @@ ht-degree: 92%
 
 **필요한 권한:**  `Can Edit`, `Owner` 또는 관리자.
 
-에셋 보기를 사용하면 사용자 인터페이스에 사용자 지정 필터를 추가할 수도 있습니다. 그런 다음 [표준 필터](#refine-search-results) 외에 이러한 사용자 정의 필터를 적용하여 검색 결과를 구체화할 수 있습니다.
+Assets 보기를 사용하면 사용자 인터페이스에 사용자 지정 필터를 추가할 수도 있습니다. 그런 다음 [표준 필터](#refine-search-results) 외에 이러한 사용자 정의 필터를 적용하여 검색 결과를 구체화할 수 있습니다.
 
-에셋 보기는 다음과 같은 사용자 지정 필터를 제공합니다.
+Assets 보기는 다음과 같은 사용자 정의 필터를 제공합니다.
 
 <table>
     <tbody>
@@ -322,13 +322,13 @@ Experience Manager Assets에서 상황별 검색에 액세스하는 방법:
 
 ### 상황별 검색 피드백 {#contextual-search-feedback}
 
-상황별 검색 기능에 대한 피드백을 제공해야 하는 경우 ![상황별 검색 아이콘](assets/do-not-localize/Smock_Help_18_N.svg) 피드백 아이콘을 클릭합니다. 피드백 유형을 선택하고 제목과 설명을 지정한 후에 **[!UICONTROL 제출]**&#x200B;을 클릭합니다.
+상황별 검색 기능에 대한 피드백을 제공해야 하는 경우 ![상황별 검색 아이콘](assets/do-not-localize/Smock_Help_18_N.svg)을 클릭하고 피드백 아이콘을 클릭합니다. 피드백 유형을 선택하고 제목과 설명을 지정한 후에 **[!UICONTROL 제출]**&#x200B;을 클릭합니다.
 
 ![상황별 검색 피드백](assets/contextual-search-feedback.png)
 
 ## 다음 단계 {#next-steps}
 
-* [자산 보기에서 자산을 검색하려면 비디오 보기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html)
+* [Assets 보기에서 에셋을 검색하는 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html)
 
 * Assets 보기 사용자 인터페이스에서 사용 가능한 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백 제공
 

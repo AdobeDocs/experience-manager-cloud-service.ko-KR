@@ -24,7 +24,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 
 | 위치 | 단축키 | 설명 |
 |---|---|---|
-| 임의 편집 창 모드 | `Ctrl-Shift-m` | 전환 **미리 보기** 및 현재 선택됨 [모드](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) (예: **편집**, **레이아웃**&#x200B;등)* |
+| 임의 편집 창 모드 | `Ctrl-Shift-m` | **미리 보기**&#x200B;와 현재 선택한 [모드](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)(예: **편집**, **레이아웃** 등) 간을 전환합니다.* |
 | **편집** 모드 | `Ctrl-z` | [마지막 변경 내용을 실행 취소합니다](/help/sites-cloud/authoring/page-editor/edit-content.md) |
 |  | `Ctrl-y` | [마지막 변경 내용을 재실행합니다](/help/sites-cloud/authoring/page-editor/edit-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | 여러 단락을 선택합니다 |

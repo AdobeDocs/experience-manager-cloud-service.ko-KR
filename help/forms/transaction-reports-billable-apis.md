@@ -31,9 +31,9 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링에 필요한 여�
 
 과금 API는 페이지 수, 문서 또는 양식의 길이 또는 렌더링된 문서의 최종 포맷을 고려하지 않습니다. 트랜잭션 보고서는 트랜잭션을 Forms 제출됨 및 렌더링된 문서, 이렇게 두 가지 범주로 나눕니다.
 
-* **Forms 제출됨:** AEM Forms으로 만든 모든 유형의 양식에서 데이터를 제출하고 데이터를 데이터 저장소 또는 데이터베이스로 제출한 경우 양식 제출로 간주됩니다. 예를 들어 적응형 양식 또는 양식 세트를 제출하면 제출된 양식으로 간주됩니다. 양식 세트에 5개의 양식이 있는 경우 양식 세트가 제출되면 거래 보고 서비스는 5개의 제출로 계산합니다.
+* **Forms 제출됨:** AEM Forms으로 만든 모든 유형의 양식에서 데이터를 제출하고 데이터를 데이터 저장소 저장소 또는 데이터베이스에 제출하는 경우 양식 제출로 간주됩니다. 예를 들어 적응형 양식 또는 양식 세트를 제출하면 제출된 양식으로 간주됩니다. 양식 세트에 5개의 양식이 있는 경우 양식 세트가 제출되면 거래 보고 서비스는 5개의 제출로 계산합니다.
 
-* **렌더링된 문서:** 템플릿과 데이터를 결합하여 문서를 생성하거나, 문서에 디지털 서명 또는 인증을 하거나, 문서 서비스를 위해 청구 가능한 문서 서비스 API를 사용하거나, 문서를 한 형식에서 다른 형식으로 변환하면 문서가 렌더링되는 것으로 간주됩니다.
+* **렌더링된 문서:** 템플릿과 데이터를 결합하여 문서를 생성하거나, 문서에 디지털 서명 또는 인증을 수행하거나, 문서 서비스를 위해 청구 가능한 문서 서비스 API를 사용하거나, 문서를 한 형식에서 다른 형식으로 변환하면 문서가 렌더링되는 것으로 간주됩니다.
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_submission_graph_en"
@@ -495,7 +495,7 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링에 필요한 여�
 
 ## 청구 가능 데이터 캡처 API {#billable-data-capture-apis}
 
-적응형 양식의 모든 제출 이벤트는 거래로 계산됩니다. 기본적으로 PDF 양식 제출은 거래로 간주되지 않습니다. 제공된 를 사용하십시오 [트랜잭션 레코더 API](record-transaction-custom-implementation.md) PDF forms 제출을 거래로 기록하려면 다음과 같이 하십시오.
+적응형 양식의 모든 제출 이벤트는 거래로 계산됩니다. 기본적으로 PDF 양식 제출은 거래로 간주되지 않습니다. 제공된 [트랜잭션 레코더 API](record-transaction-custom-implementation.md)를 사용하여 PDF forms 제출을 트랜잭션으로 기록합니다.
 
 ### 적응형 양식 {#adaptive-forms}
 
@@ -647,7 +647,7 @@ Assign task and document services steps of Form-centric AEM Workflows on OSGi an
 
 ## 사용자 지정 코드에 대한 트랜잭션으로 청구 가능 API 기록 {#recording-billable-apis-as-transactions-for-custom-code}
 
-PDF 양식 제출, 에이전트 UI를 사용하여 대화형 통신 미리 보기, 비표준 양식 제출 및 사용자 지정 구현과 같은 작업은 트랜잭션으로 계산되지 않습니다. AEM Forms은 트랜잭션과 같은 작업을 기록하는 API를 제공합니다. 사용자 지정 구현에서 API를 호출하여 [거래 기록](/help/forms/record-transaction-custom-implementation.md).
+PDF 양식 제출, 에이전트 UI를 사용하여 대화형 통신 미리 보기, 비표준 양식 제출 및 사용자 지정 구현과 같은 작업은 트랜잭션으로 계산되지 않습니다. AEM Forms은 트랜잭션과 같은 작업을 기록하는 API를 제공합니다. 사용자 지정 구현에서 API를 호출하여 [트랜잭션을 기록](/help/forms/record-transaction-custom-implementation.md)할 수 있습니다.
 
 ## 관련 문서 {#related-articles}
 

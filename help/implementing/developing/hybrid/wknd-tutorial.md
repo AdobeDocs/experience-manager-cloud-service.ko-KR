@@ -22,4 +22,4 @@ AEM WKND 튜토리얼과 마찬가지로, SPA에 초점을 맞춘 이 상대방�
 * [AEM에서 첫 번째 Angular SPA 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
 * [AEM에서 첫 번째 React SPA 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
 
-그러나 AEM용 SPA 프로젝트를 시작하기 전에 다음을 검토할 수도 있습니다. [AEM용 SPA 개발](developing.md) 문서.
+그러나 AEM용 SPA 프로젝트를 시작하기 전에 [AEM용 SPA 개발](developing.md) 문서도 검토할 수 있습니다.

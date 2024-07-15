@@ -1,6 +1,6 @@
 ---
-title: '''[!DNL Live Search] 제품 목록 페이지 CIF 구성 요소'
-description: CIF 구성 요소를 사용하여 활성화 [!DNL Live Search] AEM 사이트의 제품 목록 페이지 구성 요소
+title: '[!DNL Live Search] 제품 목록 페이지 CIF 구성 요소'
+description: CIF 구성 요소를 사용하여 AEM 사이트에서  [!DNL Live Search] 제품 목록 페이지 구성 요소 활성화
 exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
 feature: Commerce Integration Framework
 role: Admin
@@ -15,17 +15,17 @@ ht-degree: 0%
 
 Adobe Commerce 라이브 검색은 추가 비용 없이 빠르고, 관련성이 높고, 직관적인 검색 경험을 제공합니다. Adobe Sensei에서 제공하는 라이브 검색은 인공 지능과 머신 러닝 알고리즘을 사용하여 집계된 방문자 데이터를 심층 분석합니다. 이 데이터를 Adobe Commerce 카탈로그와 결합하면 연관성 있고 개인화된 쇼핑 경험이 구축됩니다.
 
-이 항목에서는 AEM CIF 구성 요소를 사용하여 를 구현하는 방법을 설명합니다. [!DNL Live Search] AEM 사이트에 PLP(제품 목록 페이지) 위젯.
+이 항목에서는 AEM CIF 구성 요소를 사용하여 AEM 사이트에 [!DNL Live Search] PLP(제품 목록 페이지) 위젯을 구현하는 방법에 대해 설명합니다.
 
 ## 사전 요구 사항 {#prerequisites}
 
-이 항목에서는 사용자가 로컬을 가지고 있다고 가정합니다. [AEM 환경](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=ko-KR) 설정합니다.
+이 항목에서는 사용자가 로컬 [AEM 환경](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=ko-KR)을 설정했다고 가정합니다.
 
-PLP 구성 요소에는 [[!DNL Live Search] 팝오버 CIF 구성 요소](live-search-popover.md) 설치. PLP 위젯을 사용하려면 팝오버에 의해 생성된 브라우저 세션 변수가 필요합니다.
+PLP 구성 요소를 설치하려면 [[!DNL Live Search] Popover CIF 구성 요소](live-search-popover.md)가 설치되어 있어야 합니다. PLP 위젯을 사용하려면 팝오버에 의해 생성된 브라우저 세션 변수가 필요합니다.
 
 ## 작성기 업데이트 {#update-composer}
 
-이벤트 모듈 추가 `ui.frontend/package.json`.
+이벤트 모듈을 `ui.frontend/package.json`에 추가합니다.
 
 27번 행에서 다음을 변경합니다.
 
@@ -54,11 +54,11 @@ PLP 구성 요소에는 [[!DNL Live Search] 팝오버 CIF 구성 요소](live-se
 
 ## 파일 변경 사항 {#files-changes}
 
-활성화하려면 여러 파일을 업데이트해야 합니다. [!DNL Live Search] 기능. 다음 파일을 편집합니다. 줄 번호는 여기에 표시된 것과 약간 다를 수 있습니다.
+[!DNL Live Search] 기능을 사용하려면 여러 파일을 업데이트해야 합니다. 다음 파일을 편집합니다. 줄 번호는 여기에 표시된 것과 약간 다를 수 있습니다.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/clientlibs/clientlib-cif/.content.xml
 
-  추가 `core.cif.productlist.v1` (으)로 `embed` 줄.
+  `embed` 줄에 `core.cif.productlist.v1`을(를) 추가합니다.
 
   ```
   embed="[core.cif.components.common,core.cif.components.product.v3,core.cif.components.productcarousel.v1,core.cif.components.productcollection.v2,core.cif.components.productteaser.v1,core.cif.components.searchbar.v2,core.cif.components.header.v1,core.cif.components.carousel.v1,core.cif.components.categorycarousel.v1,core.cif.components.featuredcategorylist.v1,core.cif.components.storefront-events.v1,core.cif.components.extensions.product-recs.storefront-events-collector.v1,core.wcm.components.commons.site.link,core.cif.productlist.v1]"
@@ -66,7 +66,7 @@ PLP 구성 요소에는 [[!DNL Live Search] 팝오버 CIF 구성 요소](live-se
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/.content.xml
 
-  파일 만들기 `.content.xml`:
+  `.content.xml` 파일 만들기:
 
   ```xml
   <?xml version="1.0" encoding="UTF-8"?>
@@ -79,7 +79,7 @@ PLP 구성 요소에는 [[!DNL Live Search] 팝오버 CIF 구성 요소](live-se
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/css.txt
 
-  파일 만들기 `css.txt`:
+  `css.txt` 파일 만들기:
 
   ```text
   #base=css
@@ -89,7 +89,7 @@ PLP 구성 요소에는 [[!DNL Live Search] 팝오버 CIF 구성 요소](live-se
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/css/productlist.css
 
-  파일 만들기 `productlist.css`
+  `productlist.css` 파일 만들기
 
   ```css
     /* #search-plp-root */
@@ -118,7 +118,7 @@ PLP 구성 요소에는 [[!DNL Live Search] 팝오버 CIF 구성 요소](live-se
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/js.txt
 
-  파일 만들기 `js.txt`:
+  `js.txt` 파일 만들기:
 
   ```text
   js/productlist.js
@@ -126,7 +126,7 @@ PLP 구성 요소에는 [[!DNL Live Search] 팝오버 CIF 구성 요소](live-se
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/js/productlist.js
 
-  파일 만들기 `productlist.js`:
+  `productlist.js` 파일 만들기:
 
   ```javascript
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -281,7 +281,7 @@ PLP 구성 요소에는 [[!DNL Live Search] 팝오버 CIF 구성 요소](live-se
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/productlist.html
 
-  파일 만들기 `productlist.html`:
+  `productlist.html` 파일 만들기:
 
   ```html
   <div
@@ -295,7 +295,7 @@ PLP 구성 요소에는 [[!DNL Live Search] 팝오버 CIF 구성 요소](live-se
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchresults/.content.xml
 
-  편집 `.content.xml` 6행:
+  줄 6에서 `.content.xml` 편집:
 
   ```xml
   sling:resourceSuperType="venia/components/commerce/productlist"
@@ -303,7 +303,7 @@ PLP 구성 요소에는 [[!DNL Live Search] 팝오버 CIF 구성 요소](live-se
 
 * ui.content/src/main/content/jcr_root/content/venia/language-masters/en/search/.content.xml
 
-  편집 `.content.xml` 21-22행:
+  `.content.xml`을(를) 21-22줄에서 편집합니다.
 
   ```xml
   sling:resourceType="venia/components/commerce/productlist"
@@ -311,7 +311,7 @@ PLP 구성 요소에는 [[!DNL Live Search] 팝오버 CIF 구성 요소](live-se
 
 * ui.content/src/main/content/jcr_root/content/venia/us/en/search/.content.xml
 
-  편집 `.content.xml` 26행:
+  26행에서 `.content.xml` 편집:
 
   ```xml
   sling:resourceType="venia/components/commerce/productlist"
@@ -319,7 +319,7 @@ PLP 구성 요소에는 [[!DNL Live Search] 팝오버 CIF 구성 요소](live-se
 
 * ui.frontend/src/main/components/App/App.js
 
-  편집 `App.js` 47호선에서 `../../site/main.scss`:
+  `../../site/main.scss` 바로 위의 47행에서 `App.js`을(를) 편집합니다.
 
   ```javascript
   import '@adobe/magento-storefront-event-collector';
@@ -327,7 +327,7 @@ PLP 구성 요소에는 [[!DNL Live Search] 팝오버 CIF 구성 요소](live-se
 
 * ui.tests/test-module/specs/venia/productlist-dialog.js
 
-  편집 `productlist-dialog.js` 및 변경 `describe` 끝 `describe.skip` 20행:
+  `productlist-dialog.js`을(를) 편집하고 `describe`을(를) 20행 `describe.skip`(으)로 변경합니다.
 
   ```javascript
   describe.skip('Product List Component Dialog', function () {
@@ -337,11 +337,11 @@ PLP 구성 요소에는 [[!DNL Live Search] 팝오버 CIF 구성 요소](live-se
 
 PLP 위젯을 사용하는 것보다, 디폴트 카테고리 또는 카탈로그 페이지가 원하는 몇몇 카테고리들이 있을 수 있다. AEM에서 이러한 범주 페이지는 수동으로 구성해야 합니다.
 
-1. 작성자 페이지에서 카테고리 페이지 템플릿을 선택합니다. _Venia Store - 홈_ > _카탈로그 페이지_ > _Venia Store - 카테고리 페이지_ 그리고 &quot;모양 쇼핑&quot;을 선택하거나 새 페이지 템플릿을 만듭니다.
+1. 작성자 페이지에서 카테고리 페이지 템플릿을 선택합니다. _Venia Store - Home_ > _카탈로그 페이지_ > _Venia Store - 카테고리 페이지_&#x200B;를 선택하고 &quot;모양 찾기&quot;를 선택하거나 새 페이지 템플릿을 만듭니다.
 
 ![템플릿 선택](../assets/cif-widget-1.jpg)
 
-1. 다음을 클릭합니다. _속성_ 섹션을 선택하고 _상거래_ 탭.
+1. _속성_ 섹션을 클릭하고 _Commerce_ 탭을 선택합니다.
 
 ![속성 선택](../assets/cif-widget-2.jpg)
 

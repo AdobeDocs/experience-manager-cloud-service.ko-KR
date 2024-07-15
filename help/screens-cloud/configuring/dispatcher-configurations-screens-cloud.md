@@ -1,6 +1,6 @@
 ---
-title: 화면의 Dispatcher 구성 as a Cloud Service
-description: 이 페이지에서는 Screens as a Cloud Service의 Dispatcher 구성에 대해 설명합니다.
+title: Screensas a Cloud Service 의 Dispatcher 구성
+description: 이 페이지에서는 Screensas a Cloud Service 의 Dispatcher 구성에 대해 설명합니다.
 exl-id: cc04b480-9310-4975-a7c2-20682c567fa4
 feature: Administering Screens
 role: Admin, Developer, User
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# 화면의 Dispatcher 구성 as a Cloud Service {#dispatcher-configurations-screens-cloud}
+# Screensas a Cloud Service 의 Dispatcher 구성 {#dispatcher-configurations-screens-cloud}
 
-이 섹션에서는 Screens as a Cloud Service에 대한 Dispatcher 구성을 설명합니다.
+이 섹션에서는 Screensas a Cloud Service 용 dispatcher 구성에 대해 설명합니다.
 
-## 화면 as a Cloud Service 배포를 위해 Dispatcher에서 필터 및 캐시 규칙 추가 {#deployment}
+## Screens as a Cloud Service 배포를 위한 Dispatcher의 필터 및 캐시 규칙 추가 {#deployment}
 
-Screens의 게시 인스턴스에 대해 dispatcher에서 다음 필터 및 캐시 규칙을 as a Cloud Service으로 허용합니다.
+Screensas a Cloud Service 의 dispatcher에서 다음 필터 및 캐시 규칙을 허용합니다.
 
 ### AEM Screens 필터 {#filters}
 
@@ -34,12 +34,12 @@ Screens의 게시 인스턴스에 대해 dispatcher에서 다음 필터 및 캐�
 
 ### 캐시 규칙 {#cache-rules}
 
-* 추가 `/statfileslevel "10"` 끝 `/cache` 의 섹션 `publish_farm.any`/.
+* `publish_farm.any`/의 `/cache` 섹션에 `/statfileslevel "10"`을(를) 추가합니다.
 
   >[!NOTE]
   >이 캐시 규칙은 캐시 docroot에서 최대 10개 수준의 캐싱을 지원하며 모든 것을 무효화하는 대신 콘텐츠가 게시될 때 무효화됩니다. 콘텐츠 구조가 얼마나 깊이 설정되어 있는지 기준으로 이 수준을 변경할 수 있습니다.
 
-* 다음에 추가 `/invalidate` 의 섹션 `publish_farm.any`.
+* `publish_farm.any`의 `/invalidate` 섹션에 다음 내용을 추가하십시오.
 
   ```
   /0003 {
@@ -48,7 +48,7 @@ Screens의 게시 인스턴스에 대해 dispatcher에서 다음 필터 및 캐�
   }
   ```
 
-* 에 다음 규칙 추가 `/rules` 의 섹션 `/cache` publish_farm.any 또는 `publish_farm.any`.
+* publish_farm.any 또는 `publish_farm.any`에서 포함된 파일의 `/cache`에 있는 `/rules` 섹션에 다음 규칙을 추가하십시오.
 
   ```
   ## Allow Dispatcher Cache for Screens channels

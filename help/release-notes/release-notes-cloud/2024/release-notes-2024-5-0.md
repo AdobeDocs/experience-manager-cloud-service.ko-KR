@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2024.5.0 �
 source-git-commit: 076d2a6aa6e02a7ef6f9347f2dc36ca02103c130
 workflow-type: tm+mt
 source-wordcount: '1949'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->여기에서 2022 또는 2023과 같은 이전 버전의 릴리스 정보로 이동할 수 있습니다.
+>여기에서 2022년 또는 2023년과 같은 이전 버전의 릴리스 정보로 이동할 수 있습니다.
 >
 >[!DNL Experience Manager] as a Cloud Service의 향후 기능 활성화에 대해 알아보려면 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)을 살펴보십시오.
 
@@ -118,11 +118,11 @@ ht-degree: 95%
 
 
 
-### AEM Forms의 조기 액세스 기능 {#forms-new-early-access-features}
+### AEM Forms의 얼리 액세스 기능 {#forms-new-early-access-features}
 
-AEM Forms 조기 액세스 프로그램 은 다른 사람들보다 먼저 최신 혁신 기술에 독점적으로 액세스하고 개발을 구체화할 수 있는 특별한 기회를 제공합니다. 이 프로그램은 여러 혁신에 액세스할 수 있습니다.
+AEM Forms 얼리 액세스 프로그램은 누구보다 먼저 최첨단 혁신에 독점적으로 액세스할 수 있는 특별한 기회를 제공하며, 혁신의 발전을 구체화하는 데 도움을 줍니다. 이 프로그램은 여러 혁신에 액세스할 수 있습니다.
 
-이 릴리스 정보에는 현재 릴리스에서 제공되는 혁신 사항이 나열되어 있습니다. Early Access 프로그램에서 사용할 수 있는 혁신적인 기능의 전체 목록은 다음을 참조하십시오. [AEM Forms 조기 액세스 프로그램 설명서](/help/forms/early-access-ea-features.md).
+이 릴리스 정보에는 현재 릴리스에서 제공되는 혁신 사항이 나열되어 있습니다. 얼리 액세스 프로그램에서 사용할 수 있는 전체 혁신 목록은 [AEM Forms 얼리 액세스 프로그램 설명서](/help/forms/early-access-ea-features.md)를 참조하십시오.
 
 #### 향상된 봇 보호 방법
 
@@ -134,7 +134,7 @@ AEM Forms는 널리 사용되는 두 가지 CAPTCHA 솔루션인 Cloudflare Turn
 
 AEM Forms는 다양한 CAPTCHA 옵션을 제공하여 특정 요구 사항에 가장 적합한 솔루션을 선택할 수 있도록 지원합니다.
 
-이러한 CAPTCHA 솔루션을 적응형 양식과 통합할 준비가 되셨습니까? 설명서에는 [Cloudflare Turnstile](https://experienceleague.adobe.com/kr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/kr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) 및 [Google reCAPTCHA](https://experienceleague.adobe.com/kr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components)에 대한 자세한 지침이 있습니다.
+이러한 CAPTCHA 솔루션을 적응형 양식과 통합할 준비가 되셨습니까? 설명서에는 [Cloudflare Turnstile](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) 및 [Google reCAPTCHA](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components)에 대한 자세한 지침이 있습니다.
 
 
 ### Forms 서비스
@@ -147,7 +147,7 @@ Forms 서비스는 데이터 캡처를 위한 대화형 PDF 양식을 생성합�
 
 >[!IMPORTANT]
 >
-> 초기 액세스 혁신을 위해 Early Access 프로그램에 참여하고자 하는 경우 공식 주소로 이메일을 보내면 됩니다. [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) 액세스 권한 요청. 전체 또는 특정 혁신에 대한 액세스를 요청할 수 있습니다.
+> 얼리 액세스 혁신을 위해 얼리 액세스 프로그램에 참여하고 싶다면 공식 주소에서 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)으로 이메일을 보내 액세스 권한을 요청하십시오. 전체 또는 특정 혁신에 대한 액세스를 요청할 수 있습니다.
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
@@ -213,7 +213,7 @@ RDE 명령줄 인터페이스에는 개발자 환경을 개선하는 몇 가지 
 
 #### 클라이언트측 리디렉션(얼리 어답터 프로그램) {#client-side-redirects-early-adopter}
 
-소스 제어에서 301/302 클라이언트측 리디렉션을 구성하고 CDN에 배포합니다. [자세히 알아보기](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> 요청 및 응답 변환, AEM 외부 사이트로의 라우팅 트래픽 등 [CDN 구성](/help/implementing/dispatcher/cdn-configuring-traffic.md)과 관련하여 이미 사용 가능한 여러 다른 기능이 있습니다.
+소스 제어에서 301/302 클라이언트측 리디렉션을 구성하고 콘텐츠 전송 네트워크에 배포합니다. [자세히 알아보기](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> 요청 및 응답 변환, AEM 외부 사이트로의 라우팅 트래픽 등 [CDN 구성](/help/implementing/dispatcher/cdn-configuring-traffic.md)과 관련하여 이미 사용 가능한 여러 다른 기능이 있습니다.
 
 #### 트래픽 필터 규칙 경고(얼리 어답터 프로그램) {#traffic-filter-rules-alerts-early-adopter}
 
@@ -236,7 +236,7 @@ AEM 6.5와 유사하게 Apache/Dispatcher는 게시 저장소의 특정 위치�
 * **주제 자산 메타데이터를 기본 PDF 출력으로 전달하는 기능**
 기본 PDF 출력을 생성하면서 주제 자산 메타데이터를 추가할 수 있습니다. 이 기능을 사용하면 주제 제목, 작성자와 같은 다양한 주제에 대한 특정 메타데이터를 주제 페이지 머리글 및 바닥글에 추가할 수 있습니다.
 
-릴리스에서 수정된 새로운 기능과 향상된 기능 및 문제에 대한 자세한 내용은 [Experience Manager Guides 릴리스 로드맵](https://experienceleague.adobe.com/kr/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)을 참조하십시오.
+릴리스에서 수정된 새로운 기능과 향상된 기능 및 문제에 대한 자세한 내용은 [Experience Manager Guides 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)을 참조하십시오.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -248,5 +248,5 @@ AEM 6.5와 유사하게 Apache/Dispatcher는 게시 저장소의 특정 위치�
 
 ## Experience Cloud 릴리스 정보 {#experience-cloud}
 
-다른 Experience Cloud 애플리케이션 릴리스에 대한 정보는 [여기](https://experienceleague.adobe.com/kr/docs/release-notes/experience-cloud/current)에서 확인할 수 있습니다.
+다른 Experience Cloud 애플리케이션 릴리스에 대한 정보는 [여기](https://experienceleague.adobe.com/ko/docs/release-notes/experience-cloud/current)에서 확인할 수 있습니다.
 Experience Cloud 릴리스 정보의 업데이트에 대한 월별 이메일 알림을 받아 보려면 [Adobe 우선 순위 제품 업데이트](https://www.adobe.com/kr/subscription/priority-product-update.html)를 구독하십시오.

@@ -32,17 +32,17 @@ HTTPS로 보호되는 외부 프레임 내에서 비보안 HTTP 프레임을 로
 
 이를 위해 HTTPS에서 실행하려면 AEM을 설정해야 합니다. 개발 목적으로 자체 서명된 인증서를 사용할 수 있습니다.
 
-[이 문서 보기](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html) 자체 서명된 인증서를 포함하여 HTTPS에서 실행되는 AEM을 설정하는 방법에 대해 설명합니다.
+사용할 수 있는 자체 서명된 인증서를 포함하여 HTTPS에서 실행되는 AEM을 설정하는 방법은 [이 문서를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html).
 
 ## Universal Editor Service 설치 {#install-ue-service}
 
 범용 편집기 서비스는 범용 편집기의 전체 복사본이 아니라 로컬 AEM 환경의 호출이 인터넷을 통해 라우팅되지 않고 사용자가 제어하는 정의된 끝점에서 라우팅되도록 하는 기능의 하위 집합일 뿐입니다.
 
-[NodeJS 버전 16](https://nodejs.org/en/download/releases) 범용 편집기 서비스의 로컬 복사본을 실행하는 데 필요합니다.
+유니버설 편집기 서비스의 로컬 복사본을 실행하려면 [NodeJS 버전 16](https://nodejs.org/en/download/releases)이 필요합니다.
 
-범용 편집기 서비스는 소프트웨어 배포를 통해 사용할 수 있습니다. 다음을 참조하십시오. [소프트웨어 배포 설명서](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html) 에 액세스하는 방법에 대한 자세한 내용을 보려면 여기를 클릭하십시오.
+범용 편집기 서비스는 소프트웨어 배포를 통해 사용할 수 있습니다. 액세스 방법에 대한 자세한 내용은 [소프트웨어 배포 설명서](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)를 참조하세요.
 
-저장 `universal-editor-service.cjs` 소프트웨어 배포에서 로컬 개발 환경으로 파일을 복사합니다.
+소프트웨어 배포의 `universal-editor-service.cjs` 파일을 로컬 개발 환경에 저장합니다.
 
 ## HTTPS를 사용하여 Universal Editor Service를 실행할 인증서 만들기 {#ue-https}
 
@@ -106,9 +106,9 @@ Universal Editor는 페이지 구성 방식에 따라 페이지를 편집하는 
 
 >[!NOTE]
 >
->직접 액세스 시도 중 `https://localhost:8000` 다음에 결과: `404` 오류. 이는 예상되는 비헤이비어입니다.
+>`https://localhost:8000`에 직접 액세스하려고 하면 `404` 오류가 발생합니다. 이는 예상되는 비헤이비어입니다.
 >
->로컬 유니버설 편집기 서비스에 액세스를 테스트하려면 `https://localhost:8000/corslib/LATEST`. 다음을 참조하십시오. [다음 섹션](#editing) 을 참조하십시오.
+>로컬 유니버설 편집기 서비스에 액세스를 테스트하려면 `https://localhost:8000/corslib/LATEST`을(를) 사용하십시오. 자세한 내용은 [다음 섹션](#editing)을 참조하세요.
 
 >[!TIP]
 >

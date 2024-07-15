@@ -25,7 +25,7 @@ Cloud Manager는 특수 빌드 환경을 사용하여 코드를 빌드하고 테
 * Apache Maven 3.9.4가 설치되어 있습니다.
    * Adobe는 사용자가 [HTTP 대신 HTTPS를 사용하도록 Maven 저장소를 업데이트](#https-maven)할 것을 권장합니다.
 * 설치된 Java 버전은 Oracle JDK 11.0.22 및 Oracle JDK 8u401입니다.
-* **중요 사항**: 기본적으로 `JAVA_HOME` 환경 변수가 로 설정되어 있습니다 `/usr/lib/jvm/jdk1.8.0_401` oracle JDK 8u401을 포함합니다. *_AEM Cloud 프로젝트가 JDK 11을 사용하려면 이 기본값을 재정의해야 합니다_*. 다음을 참조하십시오. [Maven JDK 버전 설정](#alternate-maven-jdk-version) 섹션에 자세히 설명되어 있습니다.
+* **중요**: 기본적으로 `JAVA_HOME` 환경 변수는 Oracle JDK 8u401을 포함하는 `/usr/lib/jvm/jdk1.8.0_401`(으)로 설정됩니다. *_JDK 11_*&#x200B;을 사용하려면 AEM Cloud Projects에서 이 기본값을 재정의해야 합니다. 자세한 내용은 [Maven JDK 버전 설정](#alternate-maven-jdk-version) 섹션을 참조하십시오.
 * 필요한 몇 가지 추가 시스템 패키지가 설치되어 있습니다.
    * `bzip2`
    * `unzip`
@@ -54,13 +54,13 @@ Cloud Manager [릴리스 2023.10.0](/help/implementing/cloud-manager/release-not
 
 ### 특정 Java 버전 사용 {#using-java-support}
 
-기본적으로 프로젝트는 Oracle 8 JDK를 사용하는 Cloud Manager 빌드 프로세스를 통해 빌드되지만 AEM Cloud Service 고객은 Maven을 실행하는 데 사용되는 JDK 버전을 다음으로 설정하는 것이 좋습니다. `11`.
+기본적으로 프로젝트는 Oracle 8 JDK를 사용하는 Cloud Manager 빌드 프로세스를 통해 빌드되지만 AEM Cloud Service 고객은 Maven을 실행하는 데 사용되는 JDK 버전을 `11`(으)로 설정하는 것이 좋습니다.
 
 #### Maven JDK 버전 설정 {#alternate-maven-jdk-version}
 
-전체 Maven 실행에 대한 JDK 버전을 다음으로 설정하는 것이 좋습니다. `11` 다음 기간: `.cloudmanager/java-version` 파일.
+`.cloudmanager/java-version` 파일에서 전체 Maven 실행에 대한 JDK 버전을 `11`(으)로 설정하는 것이 좋습니다.
 
-이렇게 하려면 파이프라인에서 사용하는 git 저장소 분기에 `.cloudmanager/java-version`이라는 파일을 생성합니다. 텍스트만 포함되도록 파일 편집 `11`. Cloud Manager는 또한 값을 `8`, 이 버전은 AEM Cloud Service 프로젝트에 대해 더 이상 지원되지 않습니다. 다른 모든 값은 무시됩니다. 날짜 `11` 을 지정하면 Oracle 11이 사용되고 `JAVA_HOME` 환경 변수가 로 설정되어 있습니다 `/usr/lib/jvm/jdk-11.0.22`.
+이렇게 하려면 파이프라인에서 사용하는 git 저장소 분기에 `.cloudmanager/java-version`이라는 파일을 생성합니다. `11` 텍스트만 포함되도록 파일을 편집합니다. Cloud Manager에서도 `8` 값을 허용하지만 이 버전은 더 이상 AEM Cloud Service 프로젝트에 지원되지 않습니다. 다른 모든 값은 무시됩니다. `11`을(를) 지정하면 Oracle 11이 사용되고 `JAVA_HOME` 환경 변수가 `/usr/lib/jvm/jdk-11.0.22`(으)로 설정됩니다.
 
 ## 환경 변수 {#environment-variables}
 
@@ -87,7 +87,7 @@ Cloud Manager [릴리스 2023.10.0](/help/implementing/cloud-manager/release-not
 
 빌드 프로세스가 git 저장소에 배치하기에 부적절하거나 동일한 분기를 사용하는 파이프라인 실행 간에 달라져야 하는 특정 구성 변수에 따라 달라질 수 있습니다.
 
-문서를 참조하십시오. [파이프라인 변수 구성](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) 추가 정보
+자세한 내용은 [파이프라인 변수 구성](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) 문서를 참조하십시오
 
 ## 추가 시스템 패키지 설치 {#installing-additional-system-packages}
 

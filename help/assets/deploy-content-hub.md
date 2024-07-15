@@ -1,5 +1,5 @@
 ---
-title: 배포 [!DNL Content Hub]
+title: ' [!DNL Content Hub] 배포'
 description: Content Hub을 배포하고 활성화하고 다양한 유형의 권한을 가진 사용자에게 액세스를 제공하는 방법(자산 업로드, Adobe Express 사용자)과 사용자에게 관리자 권한을 제공하는 방법에 대해 알아봅니다.
 role: Admin
 source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
@@ -24,13 +24,13 @@ Content Hub에 대한 권한의 변형은 다음과 같습니다.
 
 * [Content Hub 사용자](#onboard-content-hub-users): Content Hub 포털에서 브랜드 승인 자산에 액세스합니다.
 
-* [Content Hub 관리자](#onboard-content-hub-administrator): 액세스 권한 [구성 사용자 인터페이스](/help/assets/configure-content-hub-ui-options.md) Content Hub에서 브랜드 승인 에셋에 액세스, Content Hub에 에셋 업로드 및 이미지를 편집하는 Adobe Express 통합(Adobe Express 권한이 있는 경우).
+* [Content Hub 관리자](#onboard-content-hub-administrator): 브랜드 승인 에셋에 액세스, Content Hub에 에셋 업로드, 이미지 편집을 위한 Adobe Express 통합(Adobe Express 권한이 있는 경우) 외에도 Content Hub의 [구성 사용자 인터페이스](/help/assets/configure-content-hub-ui-options.md)에 액세스할 수 있습니다.
 
-* [에셋을 추가할 수 있는 권한이 있는 Content Hub 사용자](#onboard-content-hub-users-add-assets): 다음을 수행할 수 있습니다. [Content Hub에 에셋 업로드](/help/assets/upload-brand-approved-assets.md) Content Hub 포털에서 brand approved assets에 액세스할 수 있습니다.
+* [에셋을 추가할 수 있는 권한이 있는 Content Hub 사용자](#onboard-content-hub-users-add-assets): Content Hub 포털에서 브랜드 승인 에셋에 액세스할 수 있을 뿐만 아니라 [Content Hub에 에셋을 업로드](/help/assets/upload-brand-approved-assets.md)할 수 있습니다.
 
-* [자산을 새 변형으로 리믹스할 수 있는 권한이 있는 Content Hub 사용자](#onboard-content-hub-users-remix-assets): [Adobe Express 통합](/help/assets/edit-images-content-hub.md) (Adobe Express 권한이 있는 경우) Content Hub 포털에서 브랜드 승인 에셋에 액세스할 수 있습니다.
+* [자산을 새 변형으로 다시 혼합할 수 있는 권한이 있는 Content Hub 사용자](#onboard-content-hub-users-remix-assets): [Adobe Express 통합](/help/assets/edit-images-content-hub.md)(Adobe Express 권한이 있는 경우), Content Hub 포털에서 브랜드 승인 자산에 액세스할 수도 있습니다.
 
-* [Experience Manager Assets 사용자](#experience-manager-assets-users): Experience Manager Assetsas a Cloud Service 에서 자산을 승인하여 Content Hub에서 해당 자산을 사용할 수 있도록 하는 기능입니다.
+* [Experience Manager Assets 사용자](#experience-manager-assets-users): Experience Manager Assetsas a Cloud Service 에서 자산을 승인하여 Content Hub에서 해당 자산을 사용할 수 있도록 합니다.
 
 ## 1단계: Cloud Manager을 사용하여 Experience Manager Assets용 Content Hub 활성화 {#enable-content-hub}
 
@@ -38,18 +38,18 @@ Content Hub 포털에 액세스하려면 먼저 관리자가 Cloud Manager을 �
 
 1. Cloud Manager에 로그온합니다. 로그인하는 동안 올바른 조직을 선택해야 합니다. Cloud Manager에 모든 프로그램이 나열됩니다.
 
-1. Experience Manager Assets as a Cloud Service 프로그램으로 이동하고 추가 옵션 아이콘(...)을 클릭합니다. **[!UICONTROL 프로그램 편집]**.
+1. Experience Manager Assets as a Cloud Service 프로그램으로 이동하고 추가 옵션 아이콘(...)을 클릭한 다음 **[!UICONTROL 프로그램 편집]**&#x200B;을 선택합니다.
 
    ![Cloud Manager에서 프로그램 편집](assets/edit-program-cloud-manager.png)
 
-1. 다음에서 [!UICONTROL 프로그램 편집] 대화 상자에서 **[!UICONTROL 솔루션 및 추가 기능]** 탭.
+1. [!UICONTROL 프로그램 편집] 대화 상자에서 **[!UICONTROL 솔루션 및 추가 기능]** 탭을 선택합니다.
 
-1. 확장 **[!UICONTROL Assets]** 및 선택 **[!UICONTROL Content Hub]**.
+1. **[!UICONTROL Assets]**&#x200B;을(를) 확장하고 **[!UICONTROL Content Hub]**을(를) 선택합니다.
    ![Cloud Manager에서 Content Hub 선택](assets/edit-program-cloud-manager-content-hub.png)
 
    >[!NOTE]
    >
-   >If **[!UICONTROL 업데이트]** Content Hub을 선택한 후에는 이 활성화되지 않습니다. 프로그램에 대해 Go-Live 설정을 지정했는지 확인하십시오.
+   >Content Hub을 선택한 후 **[!UICONTROL 업데이트]**&#x200B;를 사용할 수 없는 경우 프로그램에 대한 Go-Live 설정을 지정했는지 확인하십시오.
 
 1. **[!UICONTROL 업데이트]**&#x200B;를 클릭합니다.
 
@@ -60,15 +60,15 @@ Content Hub 포털에 액세스하려면 먼저 관리자가 Cloud Manager을 �
 >최대 250명의 Content Hub 사용자와 Content Hub에 액세스하고 사용할 수 있습니다. 추가 질문이 있는 경우 Adobe 담당자에게 문의하십시오.
 
 
-Experience Manager Assets을 처음 사용하는 경우 **[!UICONTROL 프로그램 추가]** 그런 다음 프로그램 세부 사항(프로그램 이름, 프로덕션용 설정)을 입력하고 **[!UICONTROL 계속]**. 그런 다음 을(를) 선택할 수 있습니다 **[!UICONTROL Assets]** 및 **[!UICONTROL Content Hub]** 다음에서 **[!UICONTROL 솔루션 및 추가 기능]** 탭.
+Experience Manager Assets을 처음 사용하는 경우 **[!UICONTROL 프로그램 추가]**&#x200B;를 클릭한 다음 프로그램 세부 정보(프로그램 이름, 프로덕션 설정)를 입력하고 **[!UICONTROL 계속]**&#x200B;을 클릭합니다. **[!UICONTROL 솔루션 및 추가 기능]** 탭에서 **[!UICONTROL Assets]** 및 **[!UICONTROL Content Hub]**&#x200B;을(를) 선택할 수 있습니다.
 
 ### Admin Console의 Content Hub 인스턴스 및 제품 프로필{#content-hub-instance-product-profile}
 
-다음 이후 [Cloud Manager을 사용하여 Assetsas a Cloud Service 용 Content Hub 활성화](#enable-content-hub), AEM Assets as a Cloud Service Admin Console 내에 을 사용하여 새로 만든 인스턴스가 있습니다. `contenthub` 접미사로:
+{Cloud Manager을 사용하여 Assetsas a Cloud Service 용 Content Hub ](#enable-content-hub)을(를) 실행한 후 AEM Assets as a Cloud Service Admin Console 내에서 접미사 `contenthub`을(를) 사용하는 새 인스턴스가 생성되었습니다.[
 
 ![Content Hub의 새 인스턴스](assets/new-instance-content-hub.png)
 
-은(는) 없습니다. `author` 또는 `publish` Content Hub에 대한 인스턴스 이름으로.
+Content Hub의 인스턴스 이름에 `author` 또는 `publish`이(가) 없습니다.
 
 Content Hub 제품 프로필을 보려면 인스턴스 이름을 클릭합니다.
 
@@ -76,26 +76,26 @@ Content Hub 제품 프로필을 보려면 인스턴스 이름을 클릭합니다
 
 ## 2단계: Content Hub 관리자 온보드 {#onboard-content-hub-administrator}
 
-Content Hub 관리자는 [구성 사용자 인터페이스](/help/assets/configure-content-hub-ui-options.md) Content Hub에서 브랜드 승인 에셋에 액세스, Content Hub에 에셋 업로드 및 이미지를 편집하는 Adobe Express 통합(Adobe Express 권한이 있는 경우).
+Content Hub 관리자는 브랜드 승인 에셋에 액세스, Content Hub에 에셋 업로드, 이미지 편집을 위한 Adobe Express 통합(Adobe Express 권한이 있는 경우) 외에도 Content Hub에서 [구성 사용자 인터페이스](/help/assets/configure-content-hub-ui-options.md)에 액세스할 수 있습니다.
 
 Content Hub 관리자를 온보딩하려면:
 
-1. [Content Hub 사용자 제품 프로필에 액세스하여 클릭합니다](#content-hub-instance-product-profile).
+1. [Content Hub 사용자 제품 프로필에 액세스하여 클릭](#content-hub-instance-product-profile)합니다.
 
-1. 클릭 **[!UICONTROL 사용자 추가]** 제품 프로필에 사용자 또는 사용자 그룹을 추가합니다.
+1. 제품 프로필에 사용자 또는 사용자 그룹을 추가하려면 **[!UICONTROL 사용자 추가]**&#x200B;를 클릭하십시오.
 
-1. 클릭 **[!UICONTROL 저장]** 변경 내용을 저장합니다.
+1. 변경 내용을 저장하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 
 1. Content Hub 제품 프로필에 사용자를 추가한 후 Admin Console의 제품 목록에서 AEM as a Cloud Service 제품 이름을 클릭하여 Experience Manager Assets 제품 프로필에 액세스합니다.
 
 1. AEM as a Cloud Service에 대한 프로덕션 작성자 인스턴스 를 클릭합니다.
-   ![AEM as a Cloud Service의 제품 프로필](assets/aem-cloud-service-instances.png)
+   AEM as a Cloud Service의 ![제품 프로필](assets/aem-cloud-service-instances.png)
 
    Admin Console은 AEM as a Cloud Service에 대한 두 개의 제품 프로필(관리자 및 사용자)을 표시합니다.
-1. Administrators 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]** 사용자를 제품 프로필에 추가합니다.
+1. 관리자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**를 클릭하여 사용자를 제품 프로필에 추가합니다.
    ![관리자 제품 프로필](assets/aem-cs-admin-product-profile.png)
 
-1. 클릭 **[!UICONTROL 저장]** 변경 내용을 저장합니다.
+1. 변경 내용을 저장하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 
 ## 3단계: Content Hub 사용자 온보드 {#onboard-content-hub-users}
 
@@ -103,11 +103,11 @@ Content Hub 사용자는 포털에서 사용할 수 있는 에셋에 액세스�
 
 Content Hub 사용자를 온보딩하려면:
 
-1. [Content Hub 사용자 제품 프로필에 액세스하여 클릭합니다](#content-hub-instance-product-profile).
+1. [Content Hub 사용자 제품 프로필에 액세스하여 클릭](#content-hub-instance-product-profile)합니다.
 
-1. 클릭 **[!UICONTROL 사용자 추가]** 제품 프로필에 사용자 또는 사용자 그룹을 추가합니다.
+1. 제품 프로필에 사용자 또는 사용자 그룹을 추가하려면 **[!UICONTROL 사용자 추가]**&#x200B;를 클릭하십시오.
 
-1. 클릭 **[!UICONTROL 저장]** 변경 내용을 저장합니다.
+1. 변경 내용을 저장하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 
 이제 이러한 사용자는 Content Hub 포털에서 사용할 수 있는 자산에 액세스할 수 있습니다.
 
@@ -123,54 +123,54 @@ Content Hub은 다음과 같은 방법으로 액세스할 수 있습니다.
 
   `https://experience.adobe.com/#/assets/contenthub`
 
-* 에 로그온 `experience.adobe com` 및 클릭 **[!UICONTROL Experience Manager Assets Content Hub]** 다음에서 사용 가능 **[!UICONTROL 빠른 액세스]** 섹션:
+* `experience.adobe com`에 로그온하여 **[!UICONTROL 빠른 액세스]** 섹션에서 사용 가능한 **[!UICONTROL Experience Manager Assets Content Hub]**을(를) 클릭합니다.
   ![Content Hub 액세스](assets/access-content-hub.png)
 
-* 에 로그온 `experience.adobe com` 및 클릭 **[!UICONTROL Experience Manager Assets Content Hub]** 제품 전환기에서 사용 가능:
-  ![Content Hub 액세스 방법 3](assets/access-content-hub-alternate.png)
+* `experience.adobe com`에 로그온하고 제품 전환기에서 사용 가능한 **[!UICONTROL Experience Manager Assets Content Hub]**을(를) 클릭합니다.
+  ![Content Hub 액세스 메서드 3](assets/access-content-hub-alternate.png)
 
 ### 사용자에게 이메일 알림 비활성화 {#disable-email-notifications}
 
 관리자가 Content Hub 제품 프로필에 추가될 때 사용자에게 전송된 이메일 알림을 비활성화해야 하는 경우:
 
-제품 프로필 이름 옆에 있는 검색 아이콘을 클릭하고 **[!UICONTROL 전자 메일로 사용자에게 알림]** 토글.
+제품 프로필 이름 옆에 있는 검색 아이콘을 클릭하고 **[!UICONTROL 전자 메일로 사용자에게 알림]** 토글을 사용하지 않도록 설정합니다.
 
-![이메일 알림 비활성화](assets/disable-email-notifications.png)
+![전자 메일 알림 사용 안 함](assets/disable-email-notifications.png)
 
 
 ## 4단계: 에셋을 추가할 수 있는 권한이 있는 Content Hub 사용자 온보딩(선택 사항) {#onboard-content-hub-users-add-assets}
 
-에셋을 추가할 수 있는 권한이 있는 Content Hub 사용자는 [Content Hub에 새 브랜드 승인 에셋 업로드](/help/assets/upload-brand-approved-assets.md).
+에셋을 추가할 수 있는 권한이 있는 Content Hub 사용자는 [새 브랜드로 승인된 에셋을 Content Hub에 업로드](/help/assets/upload-brand-approved-assets.md)할 수 있습니다.
 
 사용자를 추가할 수 있는 권한이 있는 Content Hub 사용자를 온보딩하려면 다음을 수행하십시오.
 
-1. [Content Hub 제품 프로필에 사용자 추가 후](#onboard-content-hub-users), Admin Console의 제품 목록에서 Experience Manager Assets 제품 이름을 클릭하여 AEM as a Cloud Service 제품 프로필에 액세스합니다.
+1. [Content Hub 제품 프로필에 사용자를 추가한 후](#onboard-content-hub-users) Admin Console의 제품 목록에서 AEM as a Cloud Service 제품 이름을 클릭하여 Experience Manager Assets 제품 프로필에 액세스합니다.
 
 1. AEM as a Cloud Service에 대한 프로덕션 작성자 인스턴스 를 클릭합니다.
-   ![AEM as a Cloud Service의 제품 프로필](assets/aem-cloud-service-instances.png)
+   AEM as a Cloud Service의 ![제품 프로필](assets/aem-cloud-service-instances.png)
 
    Admin Console은 AEM as a Cloud Service에 대한 두 개의 제품 프로필(관리자 및 사용자)을 표시합니다.
-1. 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]** 사용자를 제품 프로필에 추가합니다.
+1. 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**를 클릭하여 사용자를 제품 프로필에 추가합니다.
    ![사용자 제품 프로필](assets/aem-cs-user-product-profile.png)
 
-1. 클릭 **[!UICONTROL 저장]** 변경 내용을 저장합니다.
+1. 변경 내용을 저장하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 
 ## 4단계: 에셋을 새 변형에 리믹스할 수 있는 권한이 있는 Content Hub 사용자 온보딩(선택 사항) {#onboard-content-hub-users-remix-assets}
 
-자산을 새 변형에 재혼합할 수 있는 권한이 있는 Content Hub 사용자는 [Adobe Express을 사용하여 기존 에셋을 수정하고 에셋을 저장소에 저장](/help/assets/edit-images-content-hub.md). Adobe Express을 사용하여 에셋을 편집하는 것은 사용자에게 Adobe Express 권한이 있는 경우에만 사용할 수 있습니다.
+자산을 새 변형으로 다시 혼합할 수 있는 권한이 있는 Content Hub 사용자는 [Adobe Express을 사용하여 기존 자산을 수정하고 저장소에 해당 자산을 저장할 수 있습니다](/help/assets/edit-images-content-hub.md). Adobe Express을 사용하여 에셋을 편집하는 것은 사용자에게 Adobe Express 권한이 있는 경우에만 사용할 수 있습니다.
 
 자산을 새 변형에 재혼합할 수 있는 권한이 있는 Content Hub 사용자를 온보딩하려면 다음을 수행하십시오.
 
-1. [Content Hub 제품 프로필에 사용자 추가 후](#onboard-content-hub-users), Admin Console의 제품 목록에서 Experience Manager Assets 제품 이름을 클릭하여 AEM as a Cloud Service 제품 프로필에 액세스합니다.
+1. [Content Hub 제품 프로필에 사용자를 추가한 후](#onboard-content-hub-users) Admin Console의 제품 목록에서 AEM as a Cloud Service 제품 이름을 클릭하여 Experience Manager Assets 제품 프로필에 액세스합니다.
 
 1. AEM as a Cloud Service에 대한 프로덕션 작성자 인스턴스 를 클릭합니다.
-   ![AEM as a Cloud Service의 제품 프로필](assets/aem-cloud-service-instances.png)
+   AEM as a Cloud Service의 ![제품 프로필](assets/aem-cloud-service-instances.png)
 
    Admin Console은 AEM as a Cloud Service에 대한 두 개의 제품 프로필(관리자 및 사용자)을 표시합니다.
-1. 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]** 사용자를 제품 프로필에 추가합니다.
+1. 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**를 클릭하여 사용자를 제품 프로필에 추가합니다.
    ![사용자 제품 프로필](assets/aem-cs-user-product-profile.png)
 
-1. 클릭 **[!UICONTROL 저장]** 변경 내용을 저장합니다.
+1. 변경 내용을 저장하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 
 ## Experience Manager Assets 사용자 {#experience-manager-assets-users}
 
@@ -181,17 +181,17 @@ Experience Manager Assets 사용자를 구성하려면 다음 작업을 수행�
 1. Admin Console의 제품 목록에서 Experience Manager Assets 제품 이름을 클릭하여 AEM as a Cloud Service 제품 프로필에 액세스합니다.
 
 1. AEM as a Cloud Service에 대한 프로덕션 작성자 인스턴스 를 클릭합니다.
-   ![AEM as a Cloud Service의 제품 프로필](assets/aem-cloud-service-instances.png)
+   AEM as a Cloud Service의 ![제품 프로필](assets/aem-cloud-service-instances.png)
 
    Admin Console은 AEM as a Cloud Service에 대한 두 개의 제품 프로필(관리자 및 사용자)을 표시합니다.
-1. 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]** 사용자를 제품 프로필에 추가합니다.
+1. 사용자 제품 프로필을 클릭하고 **[!UICONTROL 사용자 추가]**를 클릭하여 사용자를 제품 프로필에 추가합니다.
    ![사용자 제품 프로필](assets/aem-cs-user-product-profile.png)
 
-1. 클릭 **[!UICONTROL 저장]** 변경 내용을 저장합니다.
+1. 변경 내용을 저장하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 
    >[!NOTE]
    >
-   > 에 추가할 필요는 없습니다. [Content Hub 제품 프로필](#onboard-content-hub-users) Experience Manager Assets 사용자용
+   > Experience Manager Assets 사용자를 위해 [Content Hub 제품 프로필](#onboard-content-hub-users)에 추가할 필요는 없습니다.
 
 
 

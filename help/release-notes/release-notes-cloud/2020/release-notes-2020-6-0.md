@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 2020.6.0용 릴리스 노트
-description: "[!DNL Adobe Experience Manager] 2020.6.0용 as a Cloud Service 릴리스 노트"
+description: "[!DNL Adobe Experience Manager] as a Cloud Service 6 릴리스 노트(220.0)"
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 feature: Release Information
 role: Admin
@@ -48,9 +48,9 @@ AEM as a Cloud Service 릴리스 2020.6.0에 있는 AEM Sites의 새로운 기�
 
 * 화면 판독기를 향상했습니다.
 
-## AEM의 기본 사항에 대한 새로운 기능 as a Cloud Service {#foundations}
+## AEM as a Cloud Service Foundations의 새로운 기능 {#foundations}
 
-AEM 프로젝트 빌드 시간은 AEM 프로젝트 pom.xml의 모든 참조를 원격 저장소에 제거하여 개선됩니다. `https://downloads.experiencecloud.adobe.com/content/maven/public`.
+AEM 프로젝트의 pom.xml에 있는 모든 참조를 원격 저장소 `https://downloads.experiencecloud.adobe.com/content/maven/public`에 제거하여 AEM 프로젝트 빌드 시간을 개선합니다.
 
 해당 위치에서 이전에 호스팅된 AEM as a Cloud Service SDK API Jar는 이제 Maven의 기본 아티팩트 저장소인 Maven Central에 있습니다.
 
@@ -104,14 +104,14 @@ AEM as a Cloud Service 릴리스 2020.6.0에 있는 Cloud Manager의 새로운 �
 
 * Cloud Manager에서 직접 개발자 콘솔로 연결되는 링크에는 샌드박스 프로그램 환경의 최대 절전 모드 해제/최대 절전 모드 해제 옵션이 표시되지 않습니다. 이 문제를 해결하려면 개발자 콘솔에서 `#release-cm-p1234-e5678` 패턴을 URL 끝에 추가합니다. 여기서 *1234*&#x200B;를 프로그램 ID이고 *5678*&#x200B;은 환경 ID입니다. 이 문제는 향후 릴리스에서 해결될 예정입니다.
 
-## 의 새로운 기능 [!DNL Adobe Experience Manager Assets] {#aem-assets}
+## [!DNL Adobe Experience Manager Assets]의 새로운 기능 {#aem-assets}
 
 **Adobe Sensei 기반의 향상된 스마트 태그를 위한 사용자 경험 가이드**
 
 고급 스마트 태그를 사용하면 일반 스마트 태그 외에도 고급 태그 모델 기반의 이미지를 인식할 수 있도록 고급 태그 지정 모델을 교육할 수 있습니다.
 
 이번 릴리스에는 고객별 태그의 세트에 대한 스마트 태그 교육을 설정하고, 자산에 대한 교육을 제공하는 가이드 방식의 새로운 사용자 경험이 포함되어 있으며, 이를 인식하여 향후 태그를 지정해야 합니다. 이제 경험이 보다 직관적이 됩니다.
-고급 스마트 태그를 트레이닝하여 더욱 직관적인 스마트 태그 트레이닝을 받을 수 있습니다. 다음을 참조하십시오 [자산에 스마트 태그를 추가하는 방법](/help/assets/smart-tags.md).
+고급 스마트 태그를 트레이닝하여 더욱 직관적인 스마트 태그 트레이닝을 받을 수 있습니다. [자산에 스마트 태그를 추가하는 방법](/help/assets/smart-tags.md)을 참조하세요.
 
 **3D 컨텐츠 수집, 미리 보기 및 전달 지원**
 
@@ -178,7 +178,7 @@ AEM as a Cloud Service 릴리스 2020.6.0에 있는 Cloud Manager의 새로운 �
 * 자산 처리 프로필로 자산을 재처리할 수 있으므로 프로세스를 완전히 제어할 수 있습니다(전체 자산 처리 실행, 특정 처리 프로필 적용, 사후 처리 워크플로우 실행 여부 결정).
 * 검색 쿼리는 기본 클러스터 인스턴스가 백그라운드에서 다시 시작되었을 때 결과를 빠르게 반환합니다(이러한 경우 초기 검색 실행이 더 오래 지속될 수 있음).
 * 자산 인터페이스 및 검색 결과의 목록 보기에서 자산을 볼 때는 &#39;이름&#39;으로 정렬합니다. [자산 검색](/help/assets/search-assets.md#sort)을 참조하십시오.
-* 자산 인터페이스 및 검색 결과의 목록 보기에서 자산을 볼 때 &#39;생성됨&#39;(날짜)을 기준으로 정렬합니다. [자산 검색](/help/assets/search-assets.md#sort)을 참조하십시오.
+* Assets 인터페이스 및 검색 결과의 목록 보기에서 자산을 볼 때 &#39;생성됨&#39;(날짜)을 기준으로 정렬합니다. [자산 검색](/help/assets/search-assets.md#sort)을 참조하십시오.
 * 자산 마이크로서비스를 사용하여 EPS 파일을 이미지로 변환하도록 지원합니다.
 
 ### 버그 수정 {#assets-bug-fixes}

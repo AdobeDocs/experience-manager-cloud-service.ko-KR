@@ -1,9 +1,10 @@
 ---
-title: AEM Forms as a Cloud Service으로 제공되는 사용자 그룹은 무엇입니까?
+title: AEM Formsas a Cloud Service 에서 바로 사용할 수 있는 사용자 그룹은 무엇입니까?
 description: 즉시 사용 가능한 사용자 그룹 및 각 그룹에 할당된 권한 목록
 role: Admin, Developer, User
 feature: Adaptive Forms
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 26%
@@ -17,9 +18,9 @@ ht-degree: 26%
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html) |
 | AEM as a Cloud Service | 이 문서 |
 
-다음을 수행할 수 있습니다. [그룹 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) 및 정책 할당 [사용자](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) 그룹에게 보냅니다. 이러한 정책은 그룹에 속한 사용자의 권한을 제어합니다.
+[그룹을 만들고](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) 그룹에 정책 및 [사용자](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing)를 할당할 수 있습니다. 이러한 정책은 그룹에 속한 사용자의 권한을 제어합니다.
 
-설정한 후 [!DNL AEM Forms] as a Cloud Service으로 제공되며, 아래 표에 나열된 그룹은 [!DNL forms-users] 및 forms-power-user는 지정에 자동으로 사용할 수 있습니다.
+as a Cloud Service [!DNL AEM Forms]을(를) 설정하면 아래 표에 나열된 그룹(예: [!DNL forms-users] 및 forms-power-user)을 자동으로 할당할 수 있습니다.
 
 <table>
  <tbody>
@@ -61,7 +62,7 @@ ht-degree: 26%
    <td>[!DNL template-authors] <sup>[2]</sup></td> 
    <td>
     <ul> 
-     <li>적응형 Forms 만들기 및 미리 보기 <!-- or interactive communications --> 템플릿</li> 
+     <li>적응형 Forms <!-- or interactive communications --> 템플릿 만들기 및 미리 보기</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -107,7 +108,7 @@ ht-degree: 26%
  </tbody>
 </table>
 
-## 참고 항목
+## 추가 참조
 
 * [Cloud Service 환경에 온보드](/help/forms/setup-forms-cloud-service.md)
 * [로컬 개발 환경 설정](/help/forms/setup-local-development-environment.md)

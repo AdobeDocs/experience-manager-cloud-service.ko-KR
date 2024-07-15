@@ -79,8 +79,8 @@ Assets 보기는 다음 순서를 사용하여 기존 메타데이터 양식 이
 
 MIME 하위 유형 > MIME 유형 > `default` 양식 > 기본 제공 양식
 
-예를 들어 이름이 `PDF` 또는 `pdf`인 메타데이터 양식이 있는 경우 업로드된 PDF 문서에는 양식에 정의된 메타데이터 필드가 포함됩니다. 메타데이터 양식 이름 `PDF` 또는 `pdf` 존재하지 않습니다. 이름이 인 메타데이터 양식이 있는 경우 Assets 보기가 일치합니다. `application`. 이름이 `application`인 메타데이터 양식이 있는 경우 업로드된 PDF 문서에는 양식에 정의된 메타데이터 필드가 포함됩니다. Assets 보기에서 일치하는 메타데이터 양식을 찾지 못하면 `default` 양식에 정의된 메타데이터 필드를 업로드된 PDF 문서에 적용하는 메타데이터 양식입니다. 이 단계 중 어느 것도 작동하지 않는 경우 Assets 보기는 기본 제공 양식에 정의된 메타데이터 필드를 업로드된 모든 PDF 문서에 적용합니다.
-폴더에 메타데이터 양식을 할당하려는 경우 [참조](#assign-metadata-form-folder).
+예를 들어 이름이 `PDF` 또는 `pdf`인 메타데이터 양식이 있는 경우 업로드된 PDF 문서에는 양식에 정의된 메타데이터 필드가 포함됩니다. 이름이 `PDF` 또는 `pdf`인 메타데이터 양식이 없는 경우 이름이 `application`인 메타데이터 양식이 있으면 Assets 보기가 일치합니다. 이름이 `application`인 메타데이터 양식이 있는 경우 업로드된 PDF 문서에는 양식에 정의된 메타데이터 필드가 포함됩니다. Assets 보기에서 일치하는 메타데이터 양식을 찾지 못하는 경우 양식에 정의된 메타데이터 필드를 업로드된 PDF 문서에 적용하기 위해 `default` 메타데이터 양식을 검색합니다. 이 단계 중 어느 것도 작동하지 않는 경우 Assets 보기는 기본 제공 양식에 정의된 메타데이터 필드를 업로드된 모든 PDF 문서에 적용합니다.
+메타데이터 양식을 폴더에 할당하려면 [참조](#assign-metadata-form-folder)을(를) 참조하십시오.
 
 >[!IMPORTANT]
 >
@@ -146,7 +146,7 @@ Assets 보기 배포 내의 폴더에 메타데이터 양식을 할당할 수도
 
 2. **[!UICONTROL 폴더에 할당]**&#x200B;을 선택합니다.
 
-3. 폴더를 선택하고 **[!UICONTROL 할당]**. 폴더 이름을 클릭하여 폴더를 선택할 수 있습니다.
+3. 폴더를 선택하고 **[!UICONTROL 할당]**&#x200B;을 클릭합니다. 폴더 이름을 클릭하여 폴더를 선택할 수 있습니다.
 
    ![폴더에 메타데이터 양식 할당](assets/assign-to-folder.png)
 
@@ -170,7 +170,7 @@ Assets 보기 배포 내의 폴더에 메타데이터 양식을 할당할 수도
 
 ## 다음 단계 {#next-steps}
 
-* [Assets 보기에서 메타데이터 양식 관리에 대한 비디오 보기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
+* [Assets 보기에서 메타데이터 양식을 관리하려면 비디오를 시청하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * Assets 보기 사용자 인터페이스에서 사용 가능한 [!UICONTROL 피드백] 옵션을 사용하여 제품 피드백 제공
 

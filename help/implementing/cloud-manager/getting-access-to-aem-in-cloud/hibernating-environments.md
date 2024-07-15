@@ -34,7 +34,7 @@ Developer Console에서 샌드박스 프로그램을 수동으로 최대 절전 
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 최대 절전 모드로 전환할 프로그램을 탭하거나 클릭하여 세부 정보를 표시합니다.
+1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 최대 절전 모드로 전환할 프로그램을 탭하거나 클릭하여 세부 정보를 표시합니다.
 
 1. **환경** 카드에서 줄임표 버튼을 클릭하고 **Developer Console**&#x200B;을 선택합니다.
 
@@ -50,11 +50,11 @@ Developer Console에서 샌드박스 프로그램을 수동으로 최대 절전 
 
    ![최대 절전 모드 확인](assets/hibernate-2.png)
 
-최대 절전 모드로 전환되면 환경에 대한 최대 절전 모드 프로세스 완료 알림이 **개발자 콘솔** 화면.
+최대 절전 모드로 전환되면 **Developer Console** 화면에 사용자의 환경에 대한 최대 절전 모드 프로세스 완료 알림이 표시됩니다.
 
 ![최대 절전 모드 확인](assets/hibernate-4.png)
 
-Developer Console에서 **환경** 위의 경로에서 링크 **Pod** 최대 절전 모드로 전환할 환경 목록에 대한 드롭다운 목록입니다.
+Developer Console에서 **Pod** 드롭다운 목록 위의 경로에서 **환경** 링크를 클릭하여 최대 절전 모드로 전환할 환경 목록을 확인할 수도 있습니다.
 
 ![최대 절전 모드로 전환할 환경 목록](assets/hibernate-1b.png)
 
@@ -68,13 +68,13 @@ Developer Console에서 샌드박스 프로그램을 수동으로 최대 절전 
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 최대 절전 모드를 해제할 프로그램을 탭하거나 클릭하여 세부 정보를 표시합니다.
+1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 최대 절전 모드를 해제할 프로그램을 탭하거나 클릭하여 세부 정보를 표시합니다.
 
 1. **환경** 카드에서 줄임표 버튼을 클릭하고 **Developer Console**&#x200B;을 선택합니다.
 
    * Developer Console에 대한 자세한 내용은 [Developer Console 액세스](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)를 참조하십시오.
 
-1. 클릭 **최대 절전 모드 해제**.
+1. **최대 절전 모드 해제**&#x200B;를 클릭합니다.
 
    ![최대 절전 모드 해제 버튼](assets/de-hibernation-img1.png)
 
@@ -91,7 +91,7 @@ Developer Console에서 샌드박스 프로그램을 수동으로 최대 절전 
    ![최대 절전 모드 해제 완료](assets/de-hibernation-img4.png)
 
 
-Developer Console에서 **환경** 위의 경로에서 링크 **Pod** 최대 절전 모드를 해제할 환경 목록에 대한 드롭다운 목록입니다.
+Developer Console에서 최대 절전 모드를 해제할 환경 목록을 보려면 **Pod** 드롭다운 목록 위의 경로에서 **환경** 링크를 클릭할 수도 있습니다.
 
 ![최대 절전 모드로 전환된 Pod 목록](assets/de-hibernate-1b.png)
 

@@ -63,7 +63,7 @@ ht-degree: 87%
 사용자 고유의 구성 요소에 대해 스타일 시스템을 사용하려면 다음을 수행하십시오.
 
 1. [개요](#overview) 섹션에서 설명한 대로 CSS를 클라이언트 라이브러리로 설치합니다.
-1. 섹션에 설명된 대로 콘텐츠 작성자가 사용할 수 있도록 하려는 CSS 클래스를 구성합니다 [템플릿 작성자](#as-a-template-author).
+1. [템플릿 작성자로](#as-a-template-author) 섹션에 설명된 대로 콘텐츠 작성자가 사용할 수 있도록 하려는 CSS 클래스를 구성합니다.
 1. 그러면 콘텐츠 작성자는 [콘텐츠 작성자](#as-a-content-author) 섹션에 설명된 대로 스타일을 사용할 수 있습니다.
 
 ### 콘텐츠 작성자 {#as-a-content-author}
@@ -73,7 +73,7 @@ ht-degree: 87%
 
    ![작성자를 위한 스타일 시스템](/help/sites-cloud/authoring/assets/style-system-author1.png)
 
-1. 다음 항목 선택 **스타일** 을 클릭합니다. **목록** 구성 요소를 사용하여 스타일 메뉴를 열고 구성 요소의 모양을 변경합니다.
+1. **List** 구성 요소의 도구 모음에서 **스타일** 단추를 선택하여 스타일 메뉴를 열고 구성 요소의 모양을 변경합니다.
 
    ![스타일 선택](/help/sites-cloud/authoring/assets/style-system-author2.png)
 
@@ -83,7 +83,7 @@ ht-degree: 87%
 
 ### 템플릿 작성자 {#as-a-template-author}
 
-1. WKND의 영어 마스터 홈 페이지를 편집하는 동안 `http://<host>:<port>/sites.html/content/wknd/language-masters/en`를 통해 페이지의 템플릿을 편집합니다. **페이지 정보 > 템플릿 편집**.
+1. `http://<host>:<port>/sites.html/content/wknd/language-masters/en`에서 WKND의 영어 마스터 홈 페이지를 편집하는 동안 **페이지 정보 > 템플릿 편집**&#x200B;을 통해 페이지의 템플릿을 편집하십시오.
 
    ![템플릿 편집](/help/sites-cloud/authoring/assets/style-system-edit-template.png)
 
@@ -95,7 +95,7 @@ ht-degree: 87%
 
    ![속성 편집](/help/sites-cloud/authoring/assets/style-system-properties.png)
 
-   * **그룹 이름:** 구성 요소의 스타일을 구성할 때 콘텐츠 작성자에게 표시되는 스타일 메뉴 내에서 스타일을 함께 그룹화할 수 있습니다.
+   * **그룹 이름:** 구성 요소의 스타일을 구성할 때 콘텐츠 작성자에게 표시되는 스타일 메뉴에서 스타일을 함께 그룹화할 수 있습니다.
    * **스타일을 결합할 수 있음:** 해당 그룹 내의 여러 스타일을 은 한꺼번에 선택할 수 있습니다.
    * **스타일 이름:** 구성 요소의 스타일을 구성할 때 콘텐츠 작성자에게 표시할 스타일에 대한 설명입니다.
    * **CSS 클래스:** 스타일과 연관된 CSS 클래스의 실제 이름입니다.
@@ -159,4 +159,4 @@ ht-degree: 87%
 
 스타일 이름을 정의하는 기능은 레이아웃 컨테이너 또는 콘텐츠 조각 구성 요소와 같은 일반적인 구성 요소에 추가적인 의미를 제공할 때 유용합니다.
 
-예를 들어 레이아웃 컨테이너에 다음과 같은 의미 체계를 부여할 수 있습니다. `<main>`, `<aside>`, `<nav>`등.
+예를 들어 레이아웃 컨테이너에 `<main>`, `<aside>`, `<nav>` 등의 의미 체계를 부여할 수 있습니다.

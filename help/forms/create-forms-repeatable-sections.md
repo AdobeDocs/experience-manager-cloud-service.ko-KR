@@ -31,10 +31,10 @@ ht-degree: 8%
 * 적응형 양식 구성 요소에 대한 최소 또는 최대 반복 횟수 설정
 * 규칙 편집기를 사용하여 반복 가능한 섹션에 대한 추가 또는 삭제 작업을 구성합니다.
 
-다음을 사용할 수 있습니다. [패널](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel), [어코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), [세로 탭](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) 또는 [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) 적응형 양식의 섹션을 반복 가능하게 만들 구성 요소. 이러한 구성 요소에 하위 구성 요소를 추가하여 양식에 반복 가능한 섹션을 만들 수 있습니다.
+[패널](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel), [아코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), [세로 탭](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) 또는 [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) 구성 요소를 사용하여 적응형 양식의 섹션을 반복 가능하도록 만들 수 있습니다. 이러한 구성 요소에 하위 구성 요소를 추가하여 양식에 반복 가능한 섹션을 만들 수 있습니다.
 
 
-이 문서의 예제는 [패널](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) 구성 요소. 동일한 단계를 수행하여 다음을 만들 수 있습니다 [패널](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), [어코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), [세로 탭](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) 또는 [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) 구성 요소가 반복 가능합니다.
+이 문서의 예제는 [패널](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) 구성 요소를 기반으로 합니다. 동일한 단계를 수행하여 [패널](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), [아코디언](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [가로 탭](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), [세로 탭](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) 또는 [마법사](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) 구성 요소를 반복할 수 있습니다.
 
 ## 양식에서 반복 가능한 섹션 추가 또는 삭제 {#add-or-delete-repeatable-section-in-panel-container}
 
@@ -49,10 +49,10 @@ ht-degree: 8%
 ![접근성 탭](/help/forms/assets/repeat-panel.png)
 
 패널이 반복 가능하도록 하려면 다음 단계를 수행하십시오.
-1. 패널 컨테이너를 선택하고 을(를) 선택합니다 ![cmppr](/help/forms/assets/cmppr.png).
-1. 다음을 클릭합니다. **반복 패널** 토글을 다음으로 전환 **패널이 반복 가능하도록 설정**.
-1. 설정 **최소 반복** 반복 가능한 최소 섹션에 필요한 경우 다음을 설정할 수 있습니다 **최소 반복** 패널을 복원하지 않거나 반복된 패널을 제거하려면 0으로 설정합니다. 기본적으로 최소 반복 값은 0입니다.
-1. 설정 **최대 반복** 필요한 횟수만큼 패널을 반복하려면 기본적으로 값이 무한대입니다.
+1. 패널 컨테이너를 선택하고 ![cmppr](/help/forms/assets/cmppr.png)을(를) 선택합니다.
+1. **반복 패널**&#x200B;을 클릭하고 **반복 패널 만들기**(으)로 전환합니다.
+1. 최소 반복 가능한 섹션에 필요한 대로 **최소 반복**&#x200B;을(를) 설정합니다. 패널을 반복하지 않거나 반복된 패널을 제거하려면 **최소 반복**&#x200B;을(를) 0으로 설정할 수 있습니다. 기본적으로 최소 반복 값은 0입니다.
+1. 필요한 패널 횟수를 반복하려면 **최대 반복**&#x200B;을(를) 설정하십시오. 기본적으로 값은 무한대입니다.
 
    >[!NOTE]
    >
@@ -64,17 +64,17 @@ ht-degree: 8%
 
 반복할 패널의 상위 항목에는 패널의 반복 인스턴스를 관리하기 위한 추가 버튼이 포함되어 있어야 합니다. 상위에 단추를 삽입하고 단추에 스크립트를 활성화하려면 다음 단계를 수행하십시오.
 
-1. 추가 **버튼 구성 요소** (으)로 변경되었습니다. 아래 예제 비디오에서 레이블 이름이 인 버튼 구성 요소 **추가** 및 필드 이름 **패널 추가**&#x200B;가 사용됩니다. 구성 요소를 선택하고 을 선택합니다. ![규칙 편집](/help/forms/assets/edit-rules.png). 버튼 구성 요소의 규칙이 규칙 편집기에 열립니다.
-1. 규칙 편집기 창에서 **만들기**.
+1. 패널의 부모에 **단추 구성 요소**&#x200B;를 추가합니다. 아래 예제 비디오에서는 레이블 이름이 **Add**&#x200B;이고 필드 이름이 **AddPanel**&#x200B;인 단추 구성 요소를 사용합니다. 구성 요소를 선택하고 ![편집-규칙](/help/forms/assets/edit-rules.png)을(를) 선택하십시오. 버튼 구성 요소의 규칙이 규칙 편집기에 열립니다.
+1. 규칙 편집기 창에서 **만들기**&#x200B;를 클릭합니다.
 
-   선택 **비주얼 편집기** 양식 개체 및 함수 행에서
+   양식 개체 및 함수 행에서 **비주얼 편집기**&#x200B;를 선택하십시오.
 
-   1. 규칙 영역의 WHEN에서 state를 선택합니다 **클릭됨**.
-   1. THEN에서 **인스턴스 추가**&#x200B;을 클릭하고 다음을 사용하여 패널을 드래그 앤 드롭합니다 ![토글 사이드 패널](/help/forms/assets/toggle-side-panel.png) 또는 다음을 사용하여 선택 **개체를 놓거나 여기를 선택하십시오.**
+   1. 규칙 영역의 WHEN에서 상태 **클릭됨**&#x200B;을(를) 선택합니다.
+   1. THEN에서 **인스턴스 추가**&#x200B;를 선택하고 ![사이드 패널 전환](/help/forms/assets/toggle-side-panel.png)을 사용하여 패널을 드래그 앤 드롭하거나 **개체를 놓거나 여기를 선택하십시오**
 
-   선택 **코드 편집기** 양식 개체 및 함수 행에서 클릭 **규칙 편집** 코드 영역에서 다음을 수행합니다.
+   양식 개체 및 함수 행에서 **코드 편집기**&#x200B;를 선택하십시오. **규칙 편집**&#x200B;을 클릭하고 코드 영역에서 다음을 수행합니다.
 
-   * 패널 추가 단추를 만들려면 다음을 지정합니다 `this.panel.instanceManager.addInstance()`
+   * 패널 추가 단추를 만들려면 `this.panel.instanceManager.addInstance()`을(를) 지정하십시오.
 
    **완료**&#x200B;를 클릭합니다.
 
@@ -85,24 +85,24 @@ ht-degree: 8%
 
 패널의 상위에는 반복 가능한 패널의 인스턴스를 삭제하려면 삭제 단추가 있어야 합니다. 상위에 단추를 삽입하고 단추에 스크립트를 활성화하여 반복 가능한 패널을 삭제하려면 다음 단계를 수행하십시오.
 
-1. 추가 **버튼 구성 요소** 패널의 상위, 아래 비디오에서 레이블 이름이 인 버튼 구성 요소 **삭제** 및 필드 이름 **DeletePanel** 를 사용합니다. 구성 요소를 선택하고 을 선택합니다. ![규칙 편집](/help/forms/assets/edit-rules.png). 버튼 구성 요소의 규칙이 규칙 편집기에 열립니다.
-1. 규칙 편집기 창에서 **만들기**.
+1. 패널의 부모에 **단추 구성 요소**&#x200B;를 추가합니다. 아래 비디오에서는 레이블 이름이 **delete**&#x200B;이고 필드 이름이 **DeletePanel**&#x200B;인 단추 구성 요소가 사용됩니다. 구성 요소를 선택하고 ![편집-규칙](/help/forms/assets/edit-rules.png)을(를) 선택하십시오. 버튼 구성 요소의 규칙이 규칙 편집기에 열립니다.
+1. 규칙 편집기 창에서 **만들기**&#x200B;를 클릭합니다.
 
-   선택 **비주얼 편집기** 양식 개체 및 함수 행에서
+   양식 개체 및 함수 행에서 **비주얼 편집기**&#x200B;를 선택하십시오.
 
-   1. 규칙 영역에서 WHEN **DeletePanel**, 상태 선택 **클릭됨**.
-   1. THEN에서 **인스턴스 제거**&#x200B;을 클릭하고 다음을 사용하여 패널을 드래그 앤 드롭합니다 ![토글 사이드 패널](/help/forms/assets/toggle-side-panel.png) 또는 다음을 사용하여 선택 **개체를 놓거나 여기를 선택하십시오.**
+   1. 규칙 영역의 WHEN **DeletePanel**&#x200B;에서 상태 **클릭함**&#x200B;을(를) 선택합니다.
+   1. THEN에서 **인스턴스 제거**&#x200B;를 선택하고 ![사이드 패널 전환](/help/forms/assets/toggle-side-panel.png)을 사용하여 패널을 드래그 앤 드롭하거나 **개체를 놓거나 여기를 선택하십시오**
 
-   선택 **코드 편집기** 양식 개체 및 함수 행에서 클릭 **규칙 편집** 코드 영역에서 다음을 수행합니다.
+   양식 개체 및 함수 행에서 **코드 편집기**&#x200B;를 선택하십시오. **규칙 편집**&#x200B;을 클릭하고 코드 영역에서 다음을 수행합니다.
 
-   * 패널 삭제 단추를 만들려면 다음을 지정합니다 `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
+   * 패널 삭제 단추를 만들려면 `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`을(를) 지정하십시오.
 
    **완료**&#x200B;를 클릭합니다.
 >[!VIDEO](https://video.tv.adobe.com/v/3421620/adaptive-forms-repeatable-sections)
 
 >[!NOTE]
 >
->필드가 반복 가능 패널에 속해 있으면 스크립트에서 해당 이름을 사용하여 직접 액세스할 수 없습니다. 필드에 액세스하려면 다음을 사용하여 필드가 속한 반복 가능 인스턴스를 지정합니다. `instances` 의 API `InstanceManager`. 사용할 구문 `instances` 의 API `InstanceManager` 은(는)
+>필드가 반복 가능 패널에 속해 있으면 스크립트에서 해당 이름을 사용하여 직접 액세스할 수 없습니다. 필드에 액세스하려면 `InstanceManager`의 `instances` API를 사용하여 필드가 속한 반복 가능한 인스턴스를 지정하십시오. `InstanceManager`에서 `instances` API를 사용하는 구문은 다음과 같습니다.
 >
 >
 >`<panelName>.instanceManager.instances[<instanceNumber>].<fieldname>`
@@ -171,8 +171,8 @@ A panel has various layouts options. The Layout for accordian design option has 
 1. 최소 반복 횟수를 지정하려면 최소 횟수(Min Count)를 선택하고 연관된 상자에 숫자를 입력합니다. 이 옵션을 0으로 설정하고 데이터 병합 시 하위 양식의 개체에 대해 데이터가 제공되지 않으면 양식을 렌더링할 때 하위 양식이 배치되지 않습니다.
 1. 하위 양식 반복의 최대 횟수를 지정하려면 최대값을 선택하고 연관된 상자에 숫자를 입력합니다. [최대] 상자에 값을 지정하지 않으면 하위 양식 반복 횟수는 제한이 없습니다.
 1. 데이터 수량에 관계없이 하위 양식 반복 횟수를 지정하려면 초기 수를 선택하고 관련 상자에 숫자를 입력합니다. 이 옵션을 선택하고 사용할 수 있는 데이터가 없거나 지정된 초기 개수 값보다 적은 데이터 항목이 있는 경우 하위 양식의 빈 인스턴스가 계속 양식에 배치됩니다.
-1. 상위 하위 양식에 인스턴스 추가 단추와 반복 가능한 하위 양식의 인스턴스 삭제 단추 두 개를 추가합니다. 자세한 단계는 를 참조하십시오. [작업 빌드](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
-1. 이제 양식 템플릿을 적응형 양식에 연결합니다. 자세한 단계는 를 참조하십시오. [템플릿을 기반으로 적응형 양식 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=en#create-an-adaptive-form-based-on-an-xfa-form-template).
+1. 상위 하위 양식에 인스턴스 추가 단추와 반복 가능한 하위 양식의 인스턴스 삭제 단추 두 개를 추가합니다. 자세한 단계는 [작업 빌드](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2)를 참조하십시오.
+1. 이제 양식 템플릿을 적응형 양식에 연결합니다. 자세한 단계는 [템플릿을 기반으로 적응형 양식 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=en#create-an-adaptive-form-based-on-an-xfa-form-template)를 참조하십시오.
 1. 9단계에서 만든 단추를 사용하여 하위 양식을 추가하거나 제거합니다.
 
 첨부된 .zip 파일에는 반복 가능한 하위 양식 샘플이 포함되어 있습니다.
@@ -181,9 +181,9 @@ A panel has various layouts options. The Layout for accordian design option has 
 
 ## XSD(XML 스키마)의 반복 설정 사용 {#using-repeat-settings-of-an-xml-schema-xsd-br}
 
-XML 스키마와 복합 유형 요소의 minOccours 및 maxOccurs 속성에서 반복 가능한 패널을 만들 수 있습니다. XML 스키마에 대한 자세한 내용은 [XML 스키마를 양식 모델로 사용하여 적응형 양식 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-xml-schema-form-model.html).
+XML 스키마와 복합 유형 요소의 minOccours 및 maxOccurs 속성에서 반복 가능한 패널을 만들 수 있습니다. XML 스키마에 대한 자세한 내용은 [XML 스키마를 양식 모델로 사용하여 적응형 양식 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-xml-schema-form-model.html)를 참조하십시오.
 
-다음 코드에서는 `SampleType`패널은 minOccours 및 maxOccurs 속성을 사용합니다.
+다음 코드에서 `SampleType` 패널은 minOccours 및 maxOccurs 속성을 사용합니다.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

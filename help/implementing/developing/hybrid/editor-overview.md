@@ -27,9 +27,9 @@ AEM의 SPA 지원을 통해 페이지 편집기에 로드하는 경우 SPA JS �
 
 AEM의 SPA에 대한 자세한 내용은 다음을 참조하십시오.
 
-* [SPA 블루프린트](blueprint.md) SPA의 기술 요구 사항에 대해 설명합니다.
-* [React를 사용하여 AEM에서 SPA 시작하기](getting-started-react.md) React를 사용하여 간단한 SPA을 간단히 살펴볼 수 있습니다.
-* [angular을 사용하여 AEM에서 SPA 시작하기](getting-started-angular.md) angular을 사용하는 간단한 SPA을 간단히 살펴볼 수 있습니다.
+* SPA의 기술 요구 사항에 대한 [SPA 블루프린트](blueprint.md).
+* [React를 사용하여 AEM에서 SPA 시작하기](getting-started-react.md) React를 사용하여 간단한 SPA을 빠르게 살펴봅니다.
+* angular을 사용하는 간단한 SPA 둘러보기를 위해 [Angular을 사용하여 AEM에서 SPA 시작하기](getting-started-angular.md).
 
 ## 디자인 {#design}
 

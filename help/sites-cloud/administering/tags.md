@@ -52,7 +52,7 @@ AEM(Adobe Experience Manager)에서 태그는 다음의 속성일 수 있습니�
    * 컨테이너 태그가 아닌 태그를 리프 태그라고 합니다.
    * 태그 네임스페이스는 리프 태그 또는 컨테이너 태그일 수 있습니다.
 
-태그 작동 방식에 대한 자세한 내용은 [AEM 태깅 프레임워크](/help/implementing/developing/introduction/tagging-framework.md).
+태그 작동 방식에 대한 자세한 기술 정보는 [AEM 태그 지정 프레임워크](/help/implementing/developing/introduction/tagging-framework.md)를 참조하십시오.
 
 ## 태그 지정 콘솔 {#tagging-console}
 
@@ -65,7 +65,7 @@ AEM(Adobe Experience Manager)에서 태그는 다음의 속성일 수 있습니�
 태그 지정 콘솔에 액세스하려면 다음 작업을 수행하십시오.
 
 1. 관리 권한으로 작성 환경에 로그인합니다.
-1. 전역 탐색 메뉴에서 을(를) 선택합니다 **`Tools`** > **`General`** >
+1. 전역 탐색 메뉴에서 **`Tools`** > **`General`** >
    **`Tagging`**&#x200B;을 선택합니다.
 
 ![AEM의 태그 지정 콘솔](/help/sites-cloud/administering/assets/tagging-console.png)
@@ -82,7 +82,7 @@ AEM(Adobe Experience Manager)에서 태그는 다음의 속성일 수 있습니�
 
 네임스페이스는 다른 태그를 정리하는 데 사용됩니다. 가장 낮은 수준의 태그라고 생각하면 되며 일반적으로 다른 태그를 그룹화하는 데 사용합니다.
 
-1. 네임스페이스를 만들려면 [태깅 콘솔](#tagging-console) 및 선택 **만들기** 단추를 클릭하고 **네임스페이스 만들기**.
+1. 네임스페이스를 만들려면 [태그 지정 콘솔](#tagging-console)을 열고 도구 모음에서 **만들기** 단추를 선택한 다음 **네임스페이스 만들기**&#x200B;를 선택하십시오.
 
    ![네임스페이스 추가 대화 상자](/help/sites-cloud/administering/assets/add-namespace.png)
 
@@ -92,7 +92,7 @@ AEM(Adobe Experience Manager)에서 태그는 다음의 속성일 수 있습니�
    * **이름** - 이름을 지정하지 않으면 **제목**&#x200B;을 사용해 유효한 노드 이름이 만들어집니다. 자세한 내용은 [AEM 태그 지정 프레임워크](/help/implementing/developing/introduction/tagging-framework.md#tagid) 문서를 참조하십시오.
    * **설명** - 네임스페이스에 대한 설명입니다(선택 사항).
 
-1. 필요한 정보를 입력하고 다음을 선택합니다. **만들기**.
+1. 필요한 정보를 입력하고 나면 **만들기**&#x200B;를 선택하세요.
 
 네임스페이스가 만들어집니다. 태깅 콘솔에서 네임스페이스는 가장 낮은 수준(콘솔의 맨 왼쪽 열)에 있으며 폴더 아이콘으로 표시되며, 이는 해당 특성을 &quot;컨테이너&quot; 또는 다른 태그 그룹화로 반영합니다.
 
@@ -104,11 +104,11 @@ AEM(Adobe Experience Manager)에서 태그는 다음의 속성일 수 있습니�
 
 태그는 일반적으로 네임스페이스에 추가됩니다.
 
-1. 태그를 만들려면 [태깅 콘솔.](#tagging-console)
+1. 태그를 만들려면 [태그 지정 콘솔을 엽니다.](#tagging-console)
 
 1. 태그를 만들 네임스페이스를 선택합니다. 또는 다른 태그를 선택하여 그 아래에 하위 태그를 만듭니다.
 
-1. 다음 항목 선택 **만들기** 단추를 클릭하고 **태그 만들기**.
+1. 도구 모음에서 **만들기** 단추를 선택한 다음 **태그 만들기**&#x200B;를 선택하십시오.
 
 1. **태그 만들기** 대화 상자가 열립니다. 새 태그의 필수 정보를 입력합니다.
 
@@ -134,7 +134,7 @@ AEM에서 다른 콘텐츠를 만들 때와 마찬가지로 태그(또는 네임
 
 1. 태그를 게시하려면 [태그 지정 콘솔](#tagging-console)을 엽니다.
 
-1. 게시할 태그를 선택하고 도구 모음에서 를 선택합니다 **게시**.
+1. 게시할 태그를 선택하고 도구 모음에서 **Publish**&#x200B;을 선택합니다.
 
    ![콘솔에서 태그 선택](assets/select-tags.png)
 
@@ -178,7 +178,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 1. 태그의 속성을 보려면 [태그 지정 콘솔](#tagging-console)을 엽니다.
 
-1. 속성을 보려는 태그를 선택하고 왼쪽 레일에서 을 선택합니다 **속성**.
+1. 속성을 보려는 태그를 선택하고 왼쪽 레일에서 **속성**&#x200B;을 선택합니다.
 
    ![속성 보기 선택](assets/view-tag-properties.png)
 
@@ -186,7 +186,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
    ![태그 속성 보기](assets/tag-properties.png)
 
-보기 모드 및 레일 선택에 대한 자세한 내용은 [기본 처리](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
+보기 모드 및 레일 선택에 대한 자세한 내용은 [기본 처리](/help/sites-cloud/authoring/basic-handling.md#rail-selector)를 참조하십시오.
 
 ### 태그 편집 {#editing-tags}
 
@@ -194,7 +194,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 1. 태그를 편집하려면 [태그 지정 콘솔](#tagging-console)을 엽니다.
 
-1. 편집할 태그를 선택하고 도구 모음에서 를 선택합니다. **편집**.
+1. 편집할 태그를 선택하고 도구 모음에서 **편집**&#x200B;을 선택합니다.
 
 1. 원하는 대로 변경합니다. 다음을 변경할 수 있습니다.
 
@@ -202,7 +202,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
    * **설명**
    * [**지역화**](#managing-tags-in-different-languages)
 
-1. 편집한 후 선택 **제출**.
+1. 편집한 후 **제출**&#x200B;을 선택합니다.
 
 언어 번역 추가에 대한 자세한 내용은 [다양한 언어로 태그 관리](#managing-tags-in-different-languages)의 섹션을 참조하십시오.
 
@@ -214,7 +214,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 1. 태그를 게시 취소하려면 [태그 지정 콘솔](#tagging-console)을 엽니다.
 
-1. 게시를 취소할 태그를 선택하고 도구 모음에서 를 선택합니다 **게시 취소**.
+1. 게시를 취소할 태그를 선택하고 도구 모음에서 **게시 취소**&#x200B;를 선택합니다.
 
    ![콘솔에서 태그 선택](assets/select-tags.png)
 
@@ -234,7 +234,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 1. 태그의 참조를 보려면 [태그 지정 콘솔](#tagging-console)을 엽니다.
 
-1. 보려는 참조가 있는 태그를 선택하고 왼쪽 레일에서 을 선택합니다 **참조**.
+1. 보려는 참조가 있는 태그를 선택하고 왼쪽 레일에서 **참조**&#x200B;를 선택합니다.
 
    ![속성 보기 선택](assets/view-tag-references.png)
 
@@ -248,7 +248,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 마우스로 가리키거나 목록에서 참조 콘텐츠를 선택하여 콘텐츠의 전체 경로를 표시합니다.
 
-보기 모드 및 레일 선택에 대한 자세한 내용은 [기본 처리](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
+보기 모드 및 레일 선택에 대한 자세한 내용은 [기본 처리](/help/sites-cloud/authoring/basic-handling.md#rail-selector)를 참조하십시오.
 
 ### 태그로 이동 {#moving-tags}
 
@@ -260,14 +260,14 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 1. 태그를 이동하거나 태그의 이름을 변경하려면 [태그 지정 콘솔](#tagging-console)을 엽니다.
 
-1. 이동하거나 이름을 변경할 태그를 선택하고 **이동** 을 클릭합니다.
+1. 이동하거나 이름을 바꿀 태그를 선택하고 도구 모음에서 **이동**&#x200B;을 선택합니다.
 
-1. 다음에서 **태그 이동** 대화 상자에서 변경할 속성을 지정합니다.
+1. **태그 이동** 대화 상자에서 변경할 속성을 지정합니다.
 
    * **이름 바꾸기** - 태그에 지정할 새 이름
       * 이 필드는 태그의 현재 이름으로 미리 채워져 있습니다.
       * 태그만 이동하고 이름을 바꾸지 않으려면 수정되지 않은 상태로 두십시오.
-   * **이동 위치:** - 태그를 이동할 위치
+   * **이동** - 태그를 이동할 위치
       * 이 필드는 태그의 현재 위치로 미리 채워져 있습니다.
       * 태그의 이름만 바꾸고 태그는 이동하지 않으려면 수정되지 않은 상태로 두십시오.
 
@@ -283,15 +283,15 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 1. 두 태그를 병합하려면 [태그 지정 콘솔](#tagging-console)을 엽니다.
 
-1. 다른 태그로 병합할 태그를 선택한 다음 를 선택합니다 **병합** 을 클릭합니다.
+1. 다른 태그로 병합할 태그를 선택한 다음 도구 모음에서 **병합**&#x200B;을 선택합니다.
 
-1. 다음에서 **태그 병합** 대화 상자에서 **찾아보기** 아이콘 **다음 항목에 병합** 선택한 태그를 병합할 태그를 지정하는 필드입니다.
+1. **태그 병합** 대화 상자에서 **다음으로 병합** 필드의 **찾아보기** 아이콘을 선택하여 선택한 태그를 병합할 태그를 지정합니다.
 
    ![태그 병합 대화 상자](assets/merge-tag.png)
 
 1. **제출**&#x200B;을 선택합니다.
 
-콘솔에서 선택한 태그가 대화 상자에서 지정된 태그에 병합됩니다. 참조된 태그가 이동하거나 병합되더라도 태그가 물리적으로 삭제되지는 않으므로 참조를 유지할 수 있습니다. 다음을 참조하십시오 [AEM 태깅 프레임워크](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags) 추가 정보.
+콘솔에서 선택한 태그가 대화 상자에서 지정된 태그에 병합됩니다. 참조된 태그가 이동하거나 병합되더라도 태그가 물리적으로 삭제되지는 않으므로 참조를 유지할 수 있습니다. 자세한 내용은 [AEM 태그 지정 프레임워크](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags)를 참조하십시오.
 
 ### 태그 삭제 {#deleting-tags}
 
@@ -299,7 +299,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 1. 태그를 삭제하려면 [태그 지정 콘솔](#tagging-console)을 엽니다.
 
-1. 삭제할 태그를 선택한 다음 를 선택합니다 **삭제** 을 클릭합니다.
+1. 삭제할 태그를 선택한 다음 도구 모음에서 **삭제**&#x200B;를 선택합니다.
 
 1. **태그 삭제** 대화 상자에서 선택한 태그를 삭제할 것인지 확인합니다. **삭제**&#x200B;를 선택합니다.
 
@@ -307,7 +307,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 1. AEM은 태그가 참조되지 않았는지 확인합니다.
 
-   1. 참조가 없으면 AEM에서 최종 삭제 확인을 요청합니다. 선택 **삭제**
+   1. 참조가 없으면 AEM에서 최종 삭제 확인을 요청합니다. **삭제** 선택
 
       ![참조를 찾을 수 없음](assets/no-references-found.png)
 
@@ -356,13 +356,13 @@ Tag permissions are ['secure (by default)'](/help/sites-administering/production
 
 태그의 `title` 속성은 여러 언어로 번역될 수 있습니다. 번역이 완료되면 사용자 또는 콘텐츠 언어에 따라 적절한 태그 제목이 표시될 수 있습니다.
 
-라는 태그가 있다고 가정해 보겠습니다. `Animals` 독일어와 불어로 번역하고 싶습니다.
+`Animals`(이)라는 태그가 독일어와 프랑스어로 번역된다고 가정해 보겠습니다.
 
 1. [태그 지정 콘솔](#tagging-console)을 엽니다.
 
-1. 번역할 태그를 선택한 다음 를 선택합니다 **편집** 을 클릭합니다.
+1. 번역할 태그를 선택한 다음 도구 모음에서 **편집**&#x200B;을 선택합니다.
 
-1. 다음에서 **태그 편집** 대화 상자, **로컬라이제이션** 열에서 대상 언어(예: 독일어)를 선택합니다.
+1. **태그 편집** 대화 상자의 **지역화** 열에서 대상 언어(예: 독일어)를 선택합니다.
 
 1. **독일어** 필드가 나타나면 번역된 제목을 입력합니다.
 
@@ -380,4 +380,4 @@ Tag permissions are ['secure (by default)'](/help/sites-administering/production
 
 >[!TIP]
 >
->AEM 현지화 기능에 대해 자세히 알아보려면 다음을 참조하십시오. [다국어 사이트를 위한 콘텐츠 번역](/help/sites-cloud/administering/translation/overview.md).
+>AEM 로컬라이제이션 기능에 대해 자세히 알아보려면 [다국어 사이트를 위한 콘텐츠 번역](/help/sites-cloud/administering/translation/overview.md)을 참조하세요.

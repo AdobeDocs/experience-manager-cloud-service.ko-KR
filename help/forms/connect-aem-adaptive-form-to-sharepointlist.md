@@ -1,6 +1,6 @@
 ---
 title: AEM 적응형 양식을 Microsoft&reg; SharePoint 목록에 연결하는 방법
-description: 적응형 양식을 Microsoft&reg; SharePoint 목록에 연결합니다. Microsoft&reg; SharePoint 목록을 구성하고 구성을 사용하여 FDM(양식 데이터 모델)을 만드는 방법에 대해 알아봅니다. 또한 FDM을 적응형 양식과 통합하는 방법도 알아봅니다.
+description: 적응형 양식을 Microsoft&reg; SharePoint 목록에 연결합니다. Microsoft&reg; SharePoint 목록을 구성하고 구성을 사용하여 FDM(양식 데이터 모델)을 만드는 방법을 알아봅니다. 또한 FDM을 적응형 양식과 통합하는 방법도 알아봅니다.
 role: User, Developer
 keywords: AEM 적응형 양식을 Microsoft SharePoint 목록에 연결, 적응형 양식을 Microsoft SharePoint 목록에 연결, AEM 적응형 양식을 Microsoft SharePoint 목록에 통합, 적응형 양식을 Microsoft 목록에 통합, 적응형 양식의 데이터를 SharePoint 목록에 제출, SharePoint 워크플로우를 AEM SharePoint 목록에 제출.
 hide: true
@@ -17,10 +17,10 @@ ht-degree: 4%
 
 <span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)을 통해 액세스할 수 있습니다. </span>
 
-**Microsoft® SharePoint**: Microsoft® SharePoint은 모든 팀, 부서 및 부서에 역동적이고 효율적인 팀 사이트를 제공하여 공동 작업을 지원합니다. Microsoft® Edge, Internet Explorer, Chrome 또는 Firefox와 같은 웹 브라우저를 사용하여 모든 장치에서 정보를 저장, 구성, 공유 및 액세스하는 데 사용됩니다. 의 두 가지 주요 구성 요소 **Microsoft® SharePoint** 은(는)
+**Microsoft® SharePoint**: Microsoft® SharePoint은 모든 팀, 부서 및 부서에 역동적이고 효율적인 팀 사이트를 제공하여 공동 작업을 지원합니다. Microsoft, Edge, Internet Explorer® Chrome 또는 Firefox와 같은 웹 브라우저를 사용하는 모든 장치에서 정보를 저장, 구성, 공유 및 액세스하는 데 사용됩니다. **Microsoft® SharePoint**&#x200B;의 두 가지 기본 구성 요소는 다음과 같습니다.
 
-* **Microsoft® SharePoint 문서 라이브러리**: Microsoft® SharePoint Document Library는 파일 및 폴더 목록을 마지막으로 수정한 날짜 및 파일 소유자와 같은 주요 정보와 함께 표시합니다. 이 기능을 사용하면 파일을 쉽게 구성하고 탐색할 수 있습니다.
-를 통합하는 방법에 대한 지침 **Microsoft® SharePoint 문서 라이브러리** 적응형 양식을 사용하여 다음을 참조하십시오. [적응형 양식 제출 액션](/help/forms/configuring-submit-actions.md#submit-to-sharepoint) 기사.
+* **Microsoft® SharePoint Document Library**: Microsoft® SharePoint Document Library는 마지막으로 수정한 날짜 및 파일 소유자와 같은 주요 정보와 함께 파일 및 폴더 목록을 표시합니다. 이 기능을 사용하면 파일을 쉽게 구성하고 탐색할 수 있습니다.
+**Microsoft® SharePoint 문서 라이브러리**&#x200B;를 적응형 양식과 통합하는 방법에 대한 지침은 [적응형 양식 제출 액션](/help/forms/configuring-submit-actions.md#submit-to-sharepoint) 문서를 참조하십시오.
 
 * **Microsoft® SharePoint 목록**: Microsoft® SharePoint 목록은 데이터의 컬렉션입니다. 다양한 유형의 데이터에 대해 열을 추가하고 보기를 만들어 데이터를 효과적으로 표시할 수 있습니다. 목록을 쉽게 그룹화, 필터링, 정렬 및 서식을 지정할 수 있습니다.
 
@@ -42,7 +42,7 @@ Microsoft® SharePoint 목록에 적응형 양식을 연결하기 전에 다음 
 
 ## Microsoft® SharePoint 목록에 적응형 양식 연결 {#connect-af-sharepoint-list}
 
-Microsoft® SharePoint 목록을 적응형 양식에 통합하려면 [양식 데이터 모델(FDM)을 사용하도록 적응형 양식 구성](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
+Microsoft® SharePoint 목록을 적응형 양식에 통합하려면 [양식 데이터 모델(FDM)을 사용하도록 적응형 양식을 구성하십시오](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
 
 FDM(양식 데이터 모델)을 사용하도록 적응형 양식을 구성한 후 다음을 수행할 수 있습니다.
 
@@ -53,7 +53,7 @@ FDM(양식 데이터 모델)을 사용하도록 적응형 양식을 구성한 �
 
 Microsoft® SharePoint 목록을 AEM Workflow에 통합하려면
 
-1. [FDM(양식 데이터 모델)을 호출하는 워크플로우 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)
+1. [FDM(양식 데이터 모델)을 호출하는 워크플로우를 만듭니다.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)
 
    <!--
     To create a workflow with the editor:
@@ -69,7 +69,7 @@ Microsoft® SharePoint 목록을 AEM Workflow에 통합하려면
 1. [AEM Workflow를 호출하도록 제출 액션 구성](/help/forms/configuring-submit-actions.md#invoke-an-aem-workflow)
 
 
-방법 알아보기 [AEM 워크플로우 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/workflow/use-workflow.html) 적응형 양식에서 콘텐츠를 공동 작업, 관리 및 처리합니다.
+[AEM 워크플로를 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/workflow/use-workflow.html)하여 적응형 양식에서 콘텐츠를 공동 작업하고, 관리하고, 처리하는 방법에 대해 알아봅니다.
 
 ## 모범 사례 {#best-practices}
 

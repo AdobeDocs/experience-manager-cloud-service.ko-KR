@@ -21,7 +21,7 @@ Adobe은 Workfront에 대해 기존 향상된 커넥터 설치에 대한 구성 
 
 외부 종속성을 제거하려면 다음 작업을 수행하십시오.
 
-1. 상위 항목에서 다음 Hoodoo 저장소 구성 제거 `pom.xml`:
+1. 부모 `pom.xml`에서 다음 Hoodoo 저장소 구성을 제거하십시오.
 
    ```XML
      <repository>
@@ -31,7 +31,7 @@ Adobe은 Workfront에 대해 기존 향상된 커넥터 설치에 대한 구성 
      </repository>
    ```
 
-1. 에서 다음 서버 구성을 제거합니다. `settings.xml` 파일, 사용 가능한 위치 `./cloudmanager/maven/settings.xml`:
+1. `./cloudmanager/maven/settings.xml`에서 사용할 수 있는 `settings.xml` 파일에서 다음 서버 구성을 제거합니다.
 
    ```XML
          <server>
@@ -47,4 +47,4 @@ Adobe은 Workfront에 대해 기존 향상된 커넥터 설치에 대한 구성 
          </server>
    ```
 
-1. 실행 [새로운 설치 단계](workfront-connector-install.md).
+1. [새 설치 단계](workfront-connector-install.md)를 실행합니다.

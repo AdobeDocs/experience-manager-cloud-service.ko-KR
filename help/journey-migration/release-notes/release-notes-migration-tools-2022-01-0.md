@@ -23,7 +23,7 @@ ht-degree: 6%
 
 ### 새로운 기능 {#what-is-new-ctt}
 
-* 사용자가 비활성화할 수 있도록 콘텐츠 전송 도구 의 추출 단계에 추가된 토글 [사전 복사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) 추출 중. 추출 속도를 최적화하려면 작은 마이그레이션 세트에 대해 추출 중 사전 복사를 비활성화하거나 마지막 추출 이후 몇 개의 블롭만 추가된 경우 비활성화해야 합니다.
+* 사용자가 추출 중에 [사전 복사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html)를 사용하지 않도록 설정할 수 있도록 콘텐츠 전송 도구의 추출 단계에 추가된 토글 추출 속도를 최적화하려면 작은 마이그레이션 세트에 대해 추출 중 사전 복사를 비활성화하거나 마지막 추출 이후 몇 개의 블롭만 추가된 경우 비활성화해야 합니다.
 
 ### 버그 수정 {#bug-fixes-ctt}
 

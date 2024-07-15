@@ -1,6 +1,6 @@
 ---
-title: 아키텍처 [!DNL Assets]
-description: Adobe Experience Manager Assets as a의 건축 [!DNL Cloud Service]
+title: ' [!DNL Assets]의 아키텍처'
+description: Adobe Experience Manager Assets as a [!DNL Cloud Service] 아키텍처
 contentOwner: AG
 feature: Asset Management, Asset Compute Microservices
 role: Architect
@@ -12,11 +12,11 @@ ht-degree: 36%
 
 ---
 
-# Assets as a 아키텍처 [!DNL Cloud Service] 솔루션 {#assets-architecture}
+# Assets as a [!DNL Cloud Service] 솔루션의 아키텍처 {#assets-architecture}
 
-[!DNL Experience Manager Assets] as a [!DNL Cloud Service] 은(는) 다음을 기반으로 합니다. [!DNL Adobe Experience Manager] 최신 오퍼링과 우수한 비교 [!DNL Experience Manager] 6.5. [!DNL Cloud Service] 에는 클라우드 네이티브 서비스가 되도록 조정된 아키텍처 및 기능이 있습니다. 기본 아키텍처가 변경되었다고 해서 모든 Experience Manager 6.5 기능이 [!DNL Cloud Service].
+[!DNL Cloud Service](으)로 [!DNL Experience Manager Assets]은(는) [!DNL Adobe Experience Manager]을(를) 기반으로 하며 최신 제공 [!DNL Experience Manager] 6.5와 비교됩니다. [!DNL Cloud Service] 서비스에는 클라우드 네이티브 서비스가 되도록 조정된 아키텍처 및 기능이 있습니다. 기본 아키텍처를 변경해도 모든 Experience Manager 6.5 기능이 [!DNL Cloud Service]에 포함되지 않습니다.
 
-에셋 마이크로서비스의 아키텍처 개요를 보려면 다음을 참조하십시오. [에셋 마이크로서비스 개요](asset-microservices-overview.md#asset-microservices-architecture).
+자산 마이크로서비스의 아키텍처 개요를 보려면 이 [자산 마이크로서비스 개요](asset-microservices-overview.md#asset-microservices-architecture)를 참조하세요.
 
 **추가 참조**
 
@@ -37,5 +37,5 @@ ht-degree: 36%
 >[!MORELIKETHIS]
 >
 >* [개요 및 새로운 기능](/help/assets/overview.md)
->* [지원되는 파일 형식 및 MIME 유형](file-format-support.md)
+>* [지원되는 파일 형식 및 MIME 형식](file-format-support.md)
 >* [자산 마이크로서비스 개요](asset-microservices-overview.md)

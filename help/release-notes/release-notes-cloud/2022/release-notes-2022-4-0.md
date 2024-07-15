@@ -13,7 +13,7 @@ ht-degree: 85%
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2022.4.0 릴리스 정보 {#release-notes}
 
-다음 섹션에서는 의 2022.4.0 버전에 대한 기능 릴리스 노트를 간략하게 설명합니다 [!DNL Experience Manager] as a Cloud Service.
+as a Cloud Service 다음 섹션에서는 [!DNL Experience Manager] 의 2022.4.0 버전 기능 릴리스 노트를 간략하게 설명합니다.
 
 >[!NOTE]
 >
@@ -74,7 +74,7 @@ AEM as a Cloud Service SDK Build Analyzer Maven 플러그인은 누락된 종속
 
 ### TLS 1.0, 1.1 사용 중단
 
-2022년 6월 30일부터 Experience Manager as a Cloud Service으로 전환하려면 사용자 시스템과의 보다 안전한 네트워크 통신 및 데이터 교환이 필요합니다. AEM은 TLS(전송 계층 보안), 1.2 프로토콜만 사용합니다. 이전 TLS 버전 1.0 및 1.1은 이제 더 이상 사용되지 않습니다.
+2022년 6월 30일부터 Experience Manageras a Cloud Service 는 보다 안전한 네트워크 통신 및 사용자 시스템과의 데이터 교환을 요구할 것입니다. AEM은 TLS(전송 계층 보안), 1.2 프로토콜만 사용합니다. 이전 TLS 버전 1.0 및 1.1은 이제 더 이상 사용되지 않습니다.
 
 이전 버전의 TLS를 1.0, 1.1로 계속 사용하는 경우 Experience Manager as a Cloud Service에 대한 액세스 권한을 잃을 수 있습니다.
 

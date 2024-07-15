@@ -33,7 +33,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->MSM은 콘텐츠 조각을 포함하여 자산에도 사용할 수 있습니다. 다음을 참조하십시오 [에셋용 MSM을 사용하여 콘텐츠 조각 재사용](/help/assets/reuse-assets-using-msm.md) (자산 콘솔을 통해서만 사용할 수 있습니다.)
+>MSM은 콘텐츠 조각을 포함하여 자산에도 사용할 수 있습니다. [Assets용 MSM을 사용하여 콘텐츠 조각 재사용](/help/assets/reuse-assets-using-msm.md)(Assets 콘솔을 통해서만 사용 가능)을 참조하십시오.
 
 ## 가능한 시나리오 {#possible-scenarios}
 
@@ -145,7 +145,7 @@ MSM은 적절한 콘솔에서 다양한 옵션을 사용하여 UI에서 직접 �
 
 >[!NOTE]
 >
->MSM은 페이지 및 와 함께 사용할 수 있습니다. [경험 조각](/help/sites-cloud/authoring/fragments/experience-fragments.md) 따라서 이러한 조각은 경험(페이지)의 일부입니다.
+>MSM은 경험(페이지)의 일부이므로 페이지와 [경험 조각](/help/sites-cloud/authoring/fragments/experience-fragments.md) 모두에서 사용할 수 있습니다.
 
 >[!NOTE]
 >
@@ -177,7 +177,7 @@ MSM은 적절한 콘솔에서 다양한 옵션을 사용하여 UI에서 직접 �
 
 >[!TIP]
 >
->다음을 참조하십시오 [다중 사이트 관리자 확장](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) 객체 이름.
+>개체 이름은 [다중 사이트 관리자 확장](/help/implementing/developing/extending/msm.md#overview-of-the-java-api)을 참조하십시오.
 
 ## Live Copy {#live-copies}
 
@@ -194,7 +194,7 @@ MSM Live Copy는 원본 소스와의 라이브 관계가 유지되는 특정 사
 
 * `/content/wknd/language-masters/en` 아래의 콘텐츠는 소스입니다.
 * `/content/wknd/language-masters/en` 아래의 콘텐츠는 `/content/wknd/us/en/` 및 `/content/wknd/ca/en` 노드 아래에 복사됩니다. 이를 Live Copy라고 합니다.
-* 작성자가 아래 페이지 변경 `/content/wknd/language-masters/en`.
+* 작성자가 `/content/wknd/language-masters/en` 아래의 페이지를 변경합니다.
 * 트리거되면 MSM은 이러한 변경 내용을 Live Copy에 동기화합니다.
 
 ### Live Copy - 구성 {#live-copies-composition}
@@ -324,11 +324,11 @@ Live Copy 페이지에 대한 Live Copy 상속을 **일시 중단**&#x200B;하�
 1. 소스 사이트의 콘텐츠를 개발합니다.
 1. 사용할 롤아웃 구성을 결정합니다.
 
-   1. MSM [여러 롤아웃 구성 설치](live-copy-sync-config.md#installed-rollout-configurations) 이를 통해 여러 사용 사례를 충족할 수 있습니다.
-   1. 필요한 경우 다음을 수행할 수 있습니다. [롤아웃 구성 만들기](live-copy-sync-config.md#creating-a-rollout-configuration) 필요한 경우.
+   1. MSM [여러 사용 사례를 충족할 수 있는 여러 롤아웃 구성을 설치](live-copy-sync-config.md#installed-rollout-configurations)합니다.
+   1. 필요한 경우 [롤아웃 구성을 만들](live-copy-sync-config.md#creating-a-rollout-configuration)수 있습니다.
 
 1. [사용할 롤아웃 구성을 지정](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use)해야 하는 위치를 결정하고 필요에 따라 구성합니다.
-1. 필요한 경우 [블루프린트 구성 만들기](creating-live-copies.md#creating-a-blueprint-configuration) 라이브 카피의 소스 콘텐츠를 식별합니다.
+1. 필요한 경우 Live Copy의 소스 콘텐츠를 식별하는 [블루프린트 구성을 만듭니다](creating-live-copies.md#creating-a-blueprint-configuration).
 1. [Live Copy를 만듭니다.](creating-live-copies.md#creating-a-live-copy)
 1. 필요에 따라 소스 콘텐츠를 변경합니다. 귀사에서 수립한 일반 콘텐츠 검토 및 승인 프로세스를 사용해야 합니다.
 1. 블루프린트를 [롤아웃](creating-live-copies.md#rolling-out-a-blueprint)하거나 변경 내용으로 [Live Copy를 동기화](creating-live-copies.md#synchronizing-a-live-copy)합니다.

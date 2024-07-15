@@ -11,47 +11,47 @@ ht-degree: 1%
 
 ---
 
-# 구성 [!DNL Azure] 스토리지 {#configure-azure-storage}
+# [!DNL Azure] 저장소 구성 {#configure-azure-storage}
 
 
 ![데이터 통합](assets/data-integeration.png)
 
-[[!DNL Experience Manager Forms] 데이터 통합](data-integration.md) 는 을(를) 제공합니다 [!DNL Azure] 양식을 와 통합하기 위한 스토리지 구성 [!DNL Azure] 스토리지 서비스. 양식 데이터 모델(FDM)을 사용하여 상호 작용하는 적응형 Forms을 생성할 수 있습니다 [!DNL Azure] 비즈니스 워크플로를 활성화하는 서버입니다. 예:
+[[!DNL Experience Manager Forms] 데이터 통합](data-integration.md)은(는) 양식을 [!DNL Azure] 저장소 서비스와 통합하기 위한 [!DNL Azure] 저장소 구성을 제공합니다. 양식 데이터 모델(FDM)을 사용하여 [!DNL Azure] 서버와 상호 작용하여 비즈니스 워크플로를 가능하게 하는 적응형 Forms을 만들 수 있습니다. 예:
 
-* 에 데이터 쓰기 [!DNL Azure] 을 참조하십시오.
-* 데이터 쓰기 [!DNL Azure] 를 통해 양식 데이터 모델(FDM)에 정의된 사용자 정의 엔티티와 반대로
-* 쿼리 [!DNL Azure] 서버입니다. 또한 적응형 Forms을 미리 채웁니다.
-* 데이터 읽기 [!DNL Azure] 서버입니다.
+* 적응형 양식 제출 시 [!DNL Azure]에 데이터를 쓰십시오.
+* FDM(양식 데이터 모델)에 정의된 사용자 지정 엔터티를 통해 [!DNL Azure]에 데이터를 쓰고, 반대로 작성합니다.
+* [!DNL Azure] 서버에 데이터를 쿼리하고 적응형 Forms을 미리 채웁니다.
+* [!DNL Azure] 서버에서 데이터를 읽습니다.
 
-## 만들기 [!DNL Azure] 스토리지 구성 {#create-azure-storage-configuration}
+## [!DNL Azure] 저장소 구성 만들기 {#create-azure-storage-configuration}
 
-이러한 단계를 실행하기 전에 [!DNL Azure] 저장소 계정 및 액세스 권한 부여 액세스 키 [!DNL Azure] 저장소 계정입니다.
+이 단계를 실행하기 전에 [!DNL Azure] 저장소 계정과 [!DNL Azure] 저장소 계정에 대한 액세스를 승인할 액세스 키가 있는지 확인하십시오.
 
-1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Azure 스토리지]**.
-1. 구성을 생성할 폴더를 선택하고 **[!UICONTROL 만들기]**.
-1. 에서 구성의 제목을 지정합니다. **[!UICONTROL 제목]** 필드.
-1. 의 이름을 지정합니다. [!DNL Azure] 의 저장소 계정 **[!UICONTROL Azure 스토리지 계정]** 필드.
-1. 에서 Azure 스토리지 계정에 액세스할 키를 지정합니다. **[!UICONTROL Azure 액세스 키]** 필드 및 선택 **[!UICONTROL 저장]**.
+1. **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Azure 저장소]**&#x200B;로 이동합니다.
+1. 구성을 만들 폴더를 선택하고 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 제목]** 필드에 구성의 제목을 지정합니다.
+1. **[!UICONTROL Azure 저장소 계정]** 필드에 [!DNL Azure] 저장소 계정의 이름을 지정하십시오.
+1. **[!UICONTROL Azure 액세스 키]** 필드에서 Azure 저장소 계정에 액세스할 키를 지정하고 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
 ## 양식 데이터 모델 만들기 {#create-azure-form-data-model}
 
-를 만든 후 [!DNL Azure] 스토리지 구성, 다음과 같은 작업을 수행할 수 있습니다. [양식 데이터 모델 만들기](create-form-data-models.md). 다음 항목이 포함된 폴더 지정 [!DNL Azure] 에서 구성 **[!UICONTROL 데이터 소스 구성]** 필드는 양식 데이터 모델(FDM)을 만드는 동안 표시됩니다. 그런 다음 지정된 폴더 이름에 있는 구성 목록에서 구성을 선택할 수 있습니다.
+[!DNL Azure] 저장소 구성을 만든 후 [양식 데이터 모델을 만들 수 있습니다](create-form-data-models.md). FDM(양식 데이터 모델)을 만드는 동안 **[!UICONTROL 데이터 Source 구성]** 필드에 [!DNL Azure] 구성을 포함하는 폴더를 지정하십시오. 그런 다음 지정된 폴더 이름에 있는 구성 목록에서 구성을 선택할 수 있습니다.
 
-### 추가 [!DNL Azure] 양식 데이터 모델에 대한 서비스 {#add-azure-services}
+### 양식 데이터 모델에 [!DNL Azure] 서비스 추가 {#add-azure-services}
 
-양식 데이터 모델(FDM) 및 데이터 모델 객체를 생성한 후 추가할 수 있습니다 [!DNL Azure] 를 양식 데이터 모델(FDM)에 추가합니다.
+양식 데이터 모델(FDM) 및 데이터 모델 개체를 만든 후 [!DNL Azure] 서비스를 양식 데이터 모델(FDM)에 추가할 수 있습니다.
 
-추가하려면 [!DNL Azure] 서비스:
+[!DNL Azure] 서비스를 추가하려면:
 
-1. 편집 모드에서 **[!UICONTROL 서비스]** 왼쪽 창에서 섹션을 선택하고 **[!UICONTROL 선택 항목 추가]**. 선택한 서비스가 **[!UICONTROL 서비스]** 양식 데이터 모델(FDM)의 탭
+1. 편집 모드에서 왼쪽 창의 **[!UICONTROL 서비스]** 섹션에서 서비스를 선택하고 **[!UICONTROL 선택한 항목 추가]**&#x200B;를 선택합니다. 선택한 서비스는 양식 데이터 모델(FDM)의 **[!UICONTROL 서비스]** 탭에 표시됩니다.
 
    ![선택한 서비스 추가](assets/select-services.png)
 
-1. 다음에서 **[!UICONTROL 서비스]** 탭에서 서비스를 선택하고 **[!UICONTROL 속성 편집]**. 서비스를 기반으로 서비스에 대한 입력 또는 출력 모델 개체를 정의합니다.
+1. **[!UICONTROL 서비스]** 탭에서 서비스 및 **[!UICONTROL 속성 편집]**&#x200B;을 선택합니다. 서비스를 기반으로 서비스에 대한 입력 또는 출력 모델 개체를 정의합니다.
 
-1. 선택 **[!UICONTROL 저장]** 을 눌러 양식 데이터 모델(FDM)을 저장합니다.
+1. 양식 데이터 모델(FDM)을 저장하려면 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
-   다음 표에서는 사용 가능한 [!DNL Azure] 서비스:
+   다음 표에서는 사용 가능한 [!DNL Azure] 서비스에 대해 설명합니다.
 
    <table>
     <tbody>
@@ -94,9 +94,9 @@ ht-degree: 1%
 
 데이터 모델 개체 속성을 검색 키로 정의하려면 다음을 수행합니다.
 
-1. 다음에서 **[!UICONTROL 모델]** 탭에서 데이터 모델 개체 속성을 선택하고 **[!UICONTROL 속성 편집]**.
-1. 전환 **[!UICONTROL 검색 키]** 옵션을 켜짐 상태로 전환합니다. 이 옵션은 기본 데이터 유형에만 사용할 수 있습니다.
-1. 선택 **[!UICONTROL 완료]** 다음을 선택합니다. **[!UICONTROL 저장]** 을 눌러 양식 데이터 모델(FDM)을 저장합니다.
+1. **[!UICONTROL 모델]** 탭에서 데이터 모델 개체 속성을 선택하고 **[!UICONTROL 속성 편집]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 검색 키]** 전환 옵션을 [켜짐] 상태로 전환합니다. 이 옵션은 기본 데이터 유형에만 사용할 수 있습니다.
+1. **[!UICONTROL 완료]**&#x200B;를 선택한 다음 **[!UICONTROL 저장]**&#x200B;을 선택하여 FDM(양식 데이터 모델)을 저장합니다.
 
 데이터 모델 개체 속성을 검색 키로 정의한 후 해시 값은 Azure 인덱스 태그에 저장되고 Base64 인코딩 값은 Azure 메타데이터에 저장됩니다.
 

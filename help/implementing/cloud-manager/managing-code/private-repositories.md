@@ -28,7 +28,7 @@ ht-degree: 77%
 
 ### 저장소 추가 {#add-repo}
 
-1. Cloud Manager의 **프로그램 개요** 페이지에서 **저장소** 탭을으로 전환합니다. **저장소** 페이지 및 클릭 **저장소 추가**.
+1. Cloud Manager의 **프로그램 개요** 페이지에서 **저장소** 탭을 선택하여 **저장소** 페이지로 전환하고 **저장소 추가**&#x200B;를 클릭합니다.
 
 1. **저장소 추가** 대화 상자에서 **비공개 저장소**&#x200B;를 저장소 유형으로 선택합니다.
 
@@ -44,7 +44,7 @@ ht-degree: 77%
 
 >[!TIP]
 >
->Cloud Manager에서 저장소 관리에 대한 자세한 내용은 [Cloud Manager 저장소](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
+>Cloud Manager의 저장소 관리에 대한 자세한 내용은 [Cloud Manager 저장소](/help/implementing/cloud-manager/managing-code/managing-repositories.md)를 참조하십시오.
 
 ### 비공개 저장소 소유권 유효성 검사 {#validate-ownership}
 
@@ -58,7 +58,7 @@ ht-degree: 77%
    * GitHub 조직의 소유자는 `https://github.com/apps/cloud-manager-for-aem`에 있는 앱을 설치하고 저장소에 대한 액세스 권한을 부여해야 합니다.
    * 이 작업을 수행하는 방법에 대한 자세한 내용은 GitHub 설명서 를 참조하십시오.
 
-1. 보안 강화를 위해 저장소의 기본 분기에 시크릿 파일을 만들어야 합니다. 선택 **생성**.
+1. 보안 강화를 위해 저장소의 기본 분기에 시크릿 파일을 만들어야 합니다. **생성**&#x200B;을 선택하십시오.
 
 1. **확인**&#x200B;을 탭하거나 클릭하여 시크릿 파일이 생성되었는지 확인합니다.
 
@@ -72,7 +72,7 @@ ht-degree: 77%
 
 1. `.well-known/adobe/cloud-manager-challenge`라는 GitHub 저장소의 기본 분기에 새 파일을 만들고 시크릿 파일 콘텐츠를 해당 파일에 붙여넣어 저장합니다.
 
-1. 앱이 설치되고 저장소에 비밀 파일이 있으면 다음을 선택할 수 있습니다. **유효성 검사** 다음에서 **개인 저장소 소유권 확인** 대화 상자.
+1. 앱이 설치되고 저장소에 비밀 파일이 있으면 **개인 저장소 소유권 확인** 대화 상자에서 **확인**&#x200B;을 선택할 수 있습니다.
 
 앱을 설치하고 시크릿 파일을 순서에 관계없이 만들 수 있습니다. 그러나 유효성을 검사하려면 두 단계를 모두 완료해야 합니다.
 
@@ -80,9 +80,9 @@ ht-degree: 77%
 
 ![검증되지 않은 저장소](/help/implementing/cloud-manager/assets/repos/unvalidated-repo.png)
 
-다음 **유형** 열은 Adobe 제공 저장소를 쉽게 식별합니다(**Adobe**) 및 고유한 GitHub 저장소(**GitHub**).
+**Type** 열은 Adobe이 제공한 저장소(**Adobe**)와 고유한 GitHub 저장소(**GitHub**)를 쉽게 식별합니다.
 
-나중에 저장소로 돌아가 검증을 완료해야 하는 경우 **저장소** 페이지에서 방금 추가한 GitHub 저장소를 나타내는 행의 줄임표 버튼을 선택하고 을(를) 선택합니다 **소유권 유효성 검사** 드롭다운 메뉴에서 을(를) 선택합니다.
+나중에 저장소로 돌아가서 유효성 검사를 완료해야 하는 경우 **저장소** 페이지에서 방금 추가한 GitHub 저장소를 나타내는 행의 줄임표 버튼을 선택하고 드롭다운 메뉴에서 **소유권 유효성 검사**&#x200B;를 선택합니다.
 
 ## Cloud Manager로 비공개 저장소 사용 {#using}
 
@@ -120,7 +120,7 @@ Cloud Manager에서 GitHub 저장소의 유효성을 검사하면 통합이 완�
 
 Cloud Manager으로 비공개 저장소를 사용하는 경우 특정 제한 사항이 있습니다.
 
-* Cloud Manager의 GitHub 검사를 사용하여 가져오기 요청 유효성 검사를 일시 중지할 수 없습니다.
+* Cloud Manager에서 GitHub 검사를 사용하여 가져오기 요청 유효성 검사를 일시 중지할 수 없습니다.
    * GitHub 저장소가 Cloud Manager에서 검증되면 Cloud Manager는 항상 해당 저장소에 대해 생성된 가져오기 요청의 유효성 검사를 시도합니다.
 * Adobe GitHub 애플리케이션이 GitHb 조직에서 제거되면 모든 저장소에 대한 가져오기 요청 유효성 검사 기능이 제거됩니다.
 * 웹 계층 및 구성 파이프라인은 비공개 저장소에서 지원되지 않습니다.

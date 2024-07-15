@@ -41,7 +41,7 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->개인을 달성하려면 `ETag` 캐시된 지속 쿼리에 대한 헤더 계산( 용 *각각* 고유한 응답) `FileETag Digest` dispatcher 구성 가상 호스트 구성(아직 없는 경우)에서 설정을 사용해야 합니다.
+>캐시된 지속 쿼리에 대해 개별 `ETag` 헤더 계산을 수행하려면(*고유한 각* 응답에 대해) Dispatcher 구성 가상 호스트 구성에서 `FileETag Digest` 설정을 사용해야 합니다(아직 없는 경우).
 >
 >```xml
 ><Directory />    

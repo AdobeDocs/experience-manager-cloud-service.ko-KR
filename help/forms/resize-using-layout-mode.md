@@ -27,11 +27,11 @@ ht-degree: 5%
 
 ## 레이아웃 모드 액세스 {#access-layout-mode}
 
-선택 **[!UICONTROL 레이아웃]** 다음 옆에 있는 적응형 양식 작성 인터페이스 맨 위에 표시되는 드롭다운 목록에서 **[!UICONTROL 미리 보기]** 옵션을 선택합니다. 양식이 레이아웃 모드로 표시됩니다.
+**[!UICONTROL 미리 보기]** 옵션 옆에 있는 적응형 양식 작성 인터페이스 맨 위에 표시되는 드롭다운 목록에서 **[!UICONTROL 레이아웃]**&#x200B;을(를) 선택합니다. 양식이 레이아웃 모드로 표시됩니다.
 
-1. 에 로그인합니다 [!DNL Adobe Experience Manager] 작성자 인스턴스 및 다음으로 이동 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**.
-1. 새로 만들기 또는 기존 열기 [적응형 양식](creating-adaptive-form.md).
-1. 선택 **[!UICONTROL 레이아웃]** (이)가 표시되는 드롭다운 목록에서 **[!UICONTROL 미리 보기]** 옵션을 선택합니다. 양식이 레이아웃 모드로 표시됩니다.
+1. [!DNL Adobe Experience Manager] 작성자 인스턴스에 로그인하고 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**(으)로 이동합니다.
+1. 새 양식을 만들거나 기존 [적응형 양식](creating-adaptive-form.md)을 여십시오.
+1. **[!UICONTROL 미리 보기]** 옵션 옆 맨 위에 표시되는 드롭다운 목록에서 **[!UICONTROL 레이아웃]**&#x200B;을 선택합니다. 양식이 레이아웃 모드로 표시됩니다.
 
    ![레이아웃 모드](assets/layout_mode_ic_new.png)
 
@@ -40,15 +40,15 @@ ht-degree: 5%
 1. 레이아웃 모드에서 크기를 조정할 구성 요소를 선택합니다. 파란색 점은 응답형 격자의 시작과 끝에 표시됩니다.
 1. 파란색 점을 드래그 앤 드롭하여 응답형 격자에서 구성 요소의 위치를 정의합니다.
 
-   ![레이아웃 모드를 사용한 크기 조정](assets/layout_mode_resize_new_updated1.png)
+   ![레이아웃 모드를 사용하여 크기 조정](assets/layout_mode_resize_new_updated1.png)
 
    구성 요소를 탭한 후 표시되는 도구 모음은 다음 옵션으로 구성됩니다.
 
-   * **[!UICONTROL 상위]**: 구성 요소의 상위 항목을 선택합니다.
-   * **[!UICONTROL 중단점 레이아웃 되돌리기]**: 모든 크기 변경 내용을 실행 취소하고 구성 요소에 기본 레이아웃을 적용합니다.
-   * **[!UICONTROL 새 라인으로 이동]**: 동일한 행 내에 여러 구성 요소가 있는 경우 구성 요소를 다음 행으로 이동합니다.
+   * **[!UICONTROL 상위]**: 구성 요소의 상위 항목을 선택하십시오.
+   * **[!UICONTROL 중단점 레이아웃 되돌리기]**: 모든 크기 변경 내용을 실행 취소하고 기본 레이아웃을 구성 요소에 적용합니다.
+   * **[!UICONTROL 새 줄로 이동]**: 같은 줄에 여러 구성 요소가 있는 경우 구성 요소를 다음 줄로 이동합니다.
 
-   다음을 사용할 수도 있습니다 **[!UICONTROL 중단점 레이아웃 되돌리기]** ( ![중단점 되돌리기](assets/reverttopreviouslypublishedversion.png)) 모든 크기 변경 내용을 실행 취소할 수 있는 패널 수준의 옵션입니다.
+   또한 패널 수준에서 **[!UICONTROL 중단점 레이아웃 되돌리기]**(![중단점 되돌리기](assets/reverttopreviouslypublishedversion.png)) 옵션을 사용하여 모든 크기 조정 변경 내용을 실행 취소할 수 있습니다.
 
    >[!NOTE]
    >
@@ -56,48 +56,48 @@ ht-degree: 5%
 
 ### 예 {#example}
 
-**목표:** 표 구성 요소와 이미지 구성 요소를 삽입하고 적응형 양식에서 서로 평행하게 배치하려고 합니다.
+**목표:** 테이블 구성 요소와 이미지 구성 요소를 삽입하고 적응형 양식에서 서로 평행하게 배치하려고 합니다.
 
-1. 다음을 사용하여 표 및 이미지 구성 요소 삽입 [!UICONTROL 편집] 를 입력합니다. 이미지 구성 요소가 테이블 구성 요소 뒤에 표시됩니다.
-1. 다음으로 전환 [!UICONTROL 레이아웃] 을(를) 클릭하고 [!UICONTROL 표] 구성 요소. 구성 요소 크기를 조정하기 위한 파란색 점이 1열과 12열에 표시됩니다.
+1. 적응형 양식에서 [!UICONTROL 편집] 모드를 사용하여 표 및 이미지 구성 요소를 삽입합니다. 이미지 구성 요소가 테이블 구성 요소 뒤에 표시됩니다.
+1. [!UICONTROL 레이아웃] 모드로 전환하고 [!UICONTROL 테이블] 구성 요소를 선택합니다. 구성 요소 크기를 조정하기 위한 파란색 점이 1열과 12열에 표시됩니다.
 1. 열 12의 파란색 점을 응답형 격자의 열 6으로 드래그합니다.
 
-   ![테이블의 끝점 정의](assets/layout_mode_end_point_table_new.png)
+   ![테이블의 끝점을 정의합니다](assets/layout_mode_end_point_table_new.png)
 
-1. 마찬가지로 [!UICONTROL 이미지] 구성 요소를 클릭하고 열 1의 파란색 점을 응답형 격자의 열 7로 드래그합니다. 테이블 및 이미지 구성 요소는 서로 평행하게 표시됩니다.
+1. 마찬가지로 [!UICONTROL 이미지] 구성 요소를 선택하고 열 1의 파란색 점을 응답형 격자의 열 7로 끕니다. 테이블 및 이미지 구성 요소는 서로 평행하게 표시됩니다.
 
-   ![레이아웃 모드에서 병렬 표 및 이미지](assets/table_image_parallel_new.png)
+   레이아웃 모드에서 ![테이블 및 이미지를 동시에 표시](assets/table_image_parallel_new.png)
 
-   이미지 구성 요소를 선택하고 **[!UICONTROL 새 라인으로 이동]** 도구 모음에서 다음 줄로 이미지 구성 요소를 이동할 수 있는 옵션을 사용할 수 있습니다.
+   이미지 구성 요소를 선택하고 도구 모음에서 **[!UICONTROL 새 줄로 이동]** 옵션을 선택하여 이미지 구성 요소를 다음 줄로 이동할 수 있습니다.
 
 ## 패널 크기 조정 {#resize-panels-layout-mode}
 
 개별 구성 요소 대신 전체 패널의 크기를 조정하려면 다음 단계를 수행하십시오.
 
-1. 패널에서 크기를 조정할 구성 요소를 선택하고 ![상위 선택](assets/select_parent_icon.svg)패널 이 구성 요소의 바로 상위 항목인 경우 드롭다운 목록에서 첫 번째 옵션을 선택합니다.
+1. 패널에서 크기를 조정할 구성 요소를 선택하고 ![상위 선택](assets/select_parent_icon.svg)을 선택한 다음 패널이 구성 요소의 바로 상위 패널인 경우 드롭다운 목록에서 첫 번째 옵션을 선택합니다.
 
    파란색 점은 응답형 격자의 시작과 끝에 표시됩니다.
 
 1. 파란색 점을 드래그 앤 드롭하여 응답형 격자에서 패널의 위치를 정의합니다.
-1단계와 2단계를 반복하고 를 선택할 수 있습니다 ![상위 선택](assets/float_to_new_line_icon.svg) 크기 조정된 패널을 다음 줄로 이동합니다.
+1단계와 2단계를 반복하고 ![상위 선택](assets/float_to_new_line_icon.svg)을 선택하여 크기 조정된 패널을 다음 줄로 이동할 수 있습니다.
 
 ## 패널의 다중 열 레이아웃 정의
 
 다음 단계를 실행하여 패널의 열 수를 정의합니다.
 
-1. 위치 **[!UICONTROL 편집]** 모드, 패널 선택, 선택 ![구성](assets/configure-icon.svg), 및 선택 **[!UICONTROL 응답형 - 탐색 없이 페이지에 있는 모든 항목]** 옵션에서 **[!UICONTROL 패널 레이아웃]** 드롭다운 목록입니다.
+1. **[!UICONTROL 편집]** 모드에서 패널을 선택하고 ![구성](assets/configure-icon.svg)을 선택한 다음 **[!UICONTROL 패널 레이아웃]** 드롭다운 목록에서 **[!UICONTROL 응답형 - 탐색 없이 페이지에 있는 모든 항목]** 옵션을 선택합니다.
 
-1. 선택 ![저장](assets/save_icon.svg) 속성을 저장합니다.
+1. 속성을 저장하려면 ![저장](assets/save_icon.svg)을(를) 선택하십시오.
 
-1. 다음에서 **[!UICONTROL 레이아웃]** 모드, 패널에서 구성 요소 중 하나를 선택하고 ![상위 선택](assets/select_parent_icon.svg)을 누르고 패널을 선택합니다.
+1. **[!UICONTROL 레이아웃]** 모드에서 패널의 구성 요소를 선택하고 ![상위 선택](assets/select_parent_icon.svg)을 선택한 다음 패널을 선택합니다.
 
-1. 선택 ![다중 열](assets/multi-column.svg) 드롭다운 목록에서 열 수를 선택합니다. 열의 수는 1에서 12 사이일 수 있습니다. 패널은 다중 열 레이아웃으로 나뉘어집니다.
+1. ![다중 열](assets/multi-column.svg)을(를) 선택하고 드롭다운 목록에서 열 수를 선택합니다. 열의 수는 1에서 12 사이일 수 있습니다. 패널은 다중 열 레이아웃으로 나뉘어집니다.
 
 ![레이아웃 모드의 다중 열](assets/multi-column-layout.png)
 
 ## 이전 반응형 레이아웃에 새 반응형 그리드 활성화 {#enableresponsivegrid}
 
-을 사용하여 만드는 양식의 새 반응형 그리드 활성화 [!DNL Adobe Experience Manager] Forms 6.4 이하 버전으로 구성 요소 크기를 조정할 수 있습니다.
+[!DNL Adobe Experience Manager] Forms 6.4 이하 버전을 사용하여 만든 양식의 새 반응형 그리드를 활성화하여 구성 요소의 크기를 조정할 수 있습니다.
 
 >[!NOTE]
 >
@@ -105,8 +105,8 @@ ht-degree: 5%
 
 새 응답형 격자를 활성화하려면 다음 단계를 수행하십시오.
 
-1. 선택 **[!UICONTROL 레이아웃]** (이)가 표시되는 드롭다운 목록에서 **[!UICONTROL 미리 보기]** 옵션을 선택합니다. 레이아웃 모드 활성화 확인이 표시됩니다.
-1. 선택 **[!UICONTROL 예]** 을(를) 활성화하려면 **[!UICONTROL 레이아웃]** 를 입력합니다.
+1. **[!UICONTROL 미리 보기]** 옵션 옆 맨 위에 표시되는 드롭다운 목록에서 **[!UICONTROL 레이아웃]**&#x200B;을 선택합니다. 레이아웃 모드 활성화 확인이 표시됩니다.
+1. 양식에 대해 **[!UICONTROL 레이아웃]** 모드를 활성화하려면 **[!UICONTROL 예]**&#x200B;를 선택하십시오.
 
 ### 새 반응형 레이아웃으로 적응형 양식에 이전 단편 포함 {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
 
@@ -116,7 +116,7 @@ ht-degree: 5%
 
 새 반응형 레이아웃이 포함된 조각을 이전 반응형 레이아웃이 있는 적응형 양식에 포함하는 경우, 양식에 대해 레이아웃 모드를 활성화하고 조각을 다시 포함할 것인지 묻는 메시지가 표시됩니다.
 
-레이아웃 모드를 활성화하려면 **[!UICONTROL 레이아웃]** (이)가 표시되는 드롭다운 목록에서 **[!UICONTROL 미리 보기]** 옵션 및 선택 **[!UICONTROL 예]** 확인할 수 있습니다. 선택 **[!UICONTROL 편집]** 를 입력하여 조각을 다시 포함할 수 있습니다.
+레이아웃 모드를 활성화하려면 **[!UICONTROL 미리 보기]** 옵션 옆에 맨 위에 표시되는 드롭다운 목록에서 **[!UICONTROL 레이아웃]**&#x200B;을(를) 선택하고 **[!UICONTROL 예]**&#x200B;를(를) 선택하여 확인하십시오. 조각을 다시 포함하려면 **[!UICONTROL 편집]** 모드를 선택하십시오.
 
 ## 이전 반응형 레이아웃이 있는 양식의 레이아웃 모드 비활성화 {#disable-layout-mode-for-forms-with-old-responsive-layout}
 
@@ -124,13 +124,13 @@ ht-degree: 5%
 
 레이아웃 모드를 비활성화하려면 다음 단계를 수행하십시오.
 
-1. 선택 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL 템플릿]** 및 의 양식에 사용된 템플릿 열기 **[!UICONTROL 편집]** 모드.
-1. 왼쪽 창에서 양식 컨테이너 를 선택하고 을(를) 선택합니다. **[!UICONTROL 정책.]**
+1. **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL 서식 파일]**&#x200B;을 선택하고 **[!UICONTROL 편집]** 모드에서 양식에 사용된 서식 파일을 엽니다.
+1. 왼쪽 창에서 양식 컨테이너를 선택하고 **[!UICONTROL 정책을 선택합니다.]**
 
    ![레이아웃 모드 비활성화](assets/policy_disable_layout_mode.png)
 
-1. 다음 항목 선택 **[!UICONTROL 레이아웃 설정]** 탭하고 선택 **[!UICONTROL 레이아웃 모드 비활성화]**.
-1. 선택 ![변경 내용 저장](assets/save_icon.svg) 템플릿 속성을 저장합니다.
+1. **[!UICONTROL 레이아웃 설정]** 탭을 선택하고 **[!UICONTROL 레이아웃 모드 비활성화]**&#x200B;를 선택합니다.
+1. 템플릿 속성을 저장하려면 ![변경 내용 저장](assets/save_icon.svg)을 선택합니다.
 
 ## 추가 참조 {#see-also}
 

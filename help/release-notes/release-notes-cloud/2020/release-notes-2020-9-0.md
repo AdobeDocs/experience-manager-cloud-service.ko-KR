@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2020.9.0 릴리스 정보입니다.'
-description: "[!DNL Adobe Experience Manager] 2020.9.0용 as a Cloud Service 릴리스 노트"
+description: "[!DNL Adobe Experience Manager] as a Cloud Service 릴리스 노트(220.9.0)"
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
 feature: Release Information
 role: Admin
@@ -11,32 +11,32 @@ ht-degree: 14%
 
 ---
 
-# 의 릴리스 정보 [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
+# as a Cloud Service [!DNL Adobe Experience Manager] 2.020.0 릴리스 정보 {#release-notes}
 
-다음 섹션에서는 의 일반 릴리스 정보에 대해 간략히 소개합니다. [!DNL Experience Manager] as a Cloud Service 2020.9.0.
+다음 섹션에서는 [!DNL Experience Manager] as a Cloud Service 2.020.9.0에 대한 일반 릴리스 노트를 간략하게 설명합니다.
 
 ## 릴리스 일자 {#release-date}
 
-의 릴리스 날짜 [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0은 2020년 9월 24일입니다.
+as a Cloud Service [!DNL Adobe Experience Manager] 2020.9.0의 릴리스 날짜는 2020년 9월 24일입니다.
 
-## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
+## as a Cloud Service [!DNL Adobe Experience Manager Sites] {#sites}
 
 ### [!DNL Sites]의 새로운 기능 {#what-is-new-sites}
 
-* SPA(단일 페이지 애플리케이션) 편집기 JavaScript SDK [현재 오픈 소스](/help/implementing/developing/hybrid/reference-materials.md).
+* SPA(Single Page Application) Editor JavaScript SDK [은(는) 이제 오픈 소스](/help/implementing/developing/hybrid/reference-materials.md)입니다.
 
-## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
+## as a Cloud Service [!DNL Adobe Experience Manager Assets] {#assets}
 
 ### [!DNL Assets]의 새로운 기능 {#what-is-new-assets}
 
-* 워터마크 이미지 파일은 자산 마이크로서비스에서 생성된 변환에 대해 지원됩니다. 처리 프로필로 구성할 수 있으며 PNG 파일을 워터마크로 사용합니다. 다음을 참조하십시오 [자산에 워터마크 지정](/help/assets/watermark-assets.md).
+* 워터마크 이미지 파일은 자산 마이크로서비스에서 생성된 변환에 대해 지원됩니다. 처리 프로필로 구성할 수 있으며 PNG 파일을 워터마크로 사용합니다. [자산을 워터마크 지정](/help/assets/watermark-assets.md)을 참조하십시오.
 
-* 의 개선 사항 [!DNL Dynamic Media]
+* [!DNL Dynamic Media]의 개선 사항
 
-   * 선택적 게시 - 이제 마케팅 팀이 액세스할 수 있습니다. [!DNL Dynamic Media] 동기화된 스마트 자르기 이미지 및 동적 변환 [!DNL Dynamic Media] 따라서 이러한 에셋을에 게시할 필요 없이 홍보 자료를 만들 수 있습니다. [!DNL Dynamic Media] 글로벌 게재용. [!DNL Experience Manager] 및 [!DNL Dynamic Media] 게시는 분리되며 이를 위해 별도로 발생할 수 있습니다. 다음을 참조하십시오 [선택적 게시](/help/assets/dynamic-media/selective-publishing.md).
-   * 이제 관리자가 재설정할 수 있습니다. [!DNL Dynamic Media] 프로비저닝 시 받은 Cloud Service 암호입니다. 재설정은에서 수행할 수 있습니다. [!DNL Experience Manager] 를 사용하지 않고도 사용자 인터페이스 [!DNL Dynamic Media Classic] 데스크탑 앱입니다.
+   * 선택적 Publish - 이제 마케팅 팀이 [!DNL Dynamic Media]과(와) 동기화된 [!DNL Dynamic Media]개의 스마트 자르기 이미지 및 동적 변환에 액세스할 수 있으므로 전역 전송을 위해 [!DNL Dynamic Media]에 해당 자산을 게시하지 않고도 홍보 자료를 만들 수 있습니다. [!DNL Experience Manager] 및 [!DNL Dynamic Media] 게시는 분리되며 이를 위해 별도로 발생할 수 있습니다. [선택적 게시](/help/assets/dynamic-media/selective-publishing.md)를 참조하십시오.
+   * 이제 관리자는 프로비전 시 받은 [!DNL Dynamic Media] Cloud Service 암호를 재설정할 수 있습니다. [!DNL Dynamic Media Classic] 데스크톱 앱을 사용하지 않고도 [!DNL Experience Manager] 사용자 인터페이스에서 재설정할 수 있습니다.
 
-* 다음 개선 사항에 대해 알아보려면 를 참조하십시오. [Brand Portal의 새로운 기능](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
+* 다음 개선 사항에 대해 알아보려면 [Brand Portal의 새로운 기능](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html)을 참조하세요.
 
    * Adobe Document Cloud 보기 SDK 통합을 통해 향상된 PDF 미리보기.
    * 한 번의 클릭으로 다운로드 기능을 사용할 수 있습니다.
@@ -52,7 +52,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### 새로운 기능 {#what-is-new-commerce}
 
-* CIF 코어 구성 요소 v1.3.0이 릴리스되었습니다. 다음을 참조하십시오 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) 을 참조하십시오.
+* CIF 코어 구성 요소 v1.3.0이 릴리스되었습니다. 자세한 내용은 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0)를 참조하십시오.
 
 * 이제 제품 및 카테고리 템플릿을 위한 제품/카테고리가 포함된 미리 보기 기능을 사용할 수 있습니다. 이를 통해 AEM의 비즈니스 사용자/마케터는 실제 데이터로 제품/카테고리 템플릿을 볼 수 있습니다.
 
@@ -70,7 +70,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### 릴리스 날짜 {#release-date-cm}
 
-의 릴리스 날짜 [!UICONTROL Cloud Manager] 버전 2020.9.0은 2020년 9월 3일입니다.
+[!UICONTROL Cloud Manager] 버전 2020.9.0의 릴리스 날짜는 2020년 9월 3일입니다.
 
 ### 새로운 기능 {#what-is-new-cloud-manager}
 
@@ -88,7 +88,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### 새로운 기능 {#what-is-new-cra}
 
-* CRA(Cloud Readiness Analyzer)에는 명시적인 내용을 표시하는 시작 상태 콘솔이 있습니다 **보고서 생성** 사용자가 클릭하여 CRA를 실행하는 단추입니다.
+* CRA(Cloud Readiness Analyzer)에는 사용자가 CRA를 실행하기 위해 클릭하는 명시적 **보고서 생성** 단추를 표시하는 시작 상태 콘솔이 있습니다.
 
 * 실행 중인 CRA UI에 진행률이 표시됩니다. 분석 중인 항목과 실행 중에 발견된 결과를 표시합니다.
 
@@ -108,9 +108,9 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 * CTT 사용자 인터페이스에는 30초마다 개요 페이지를 다시 로드하는 자동 재로드 기능이 있습니다.
 
-* 검색할 CTT 사용자 인터페이스에 단추가 추가되었습니다. *액세스 토큰* 쉽게.
+* *액세스 토큰*&#x200B;을(를) 쉽게 검색하기 위해 CTT 사용자 인터페이스에 단추가 추가되었습니다.
 
-* 다음에 대한 설명 유효성 검사 메시지가 추가되었습니다. *URL* 및 *마이그레이션 세트 이름*.
+* *URL* 및 *마이그레이션 세트 이름*&#x200B;에 설명 유효성 검사 메시지가 추가되었습니다.
 
 ## 코드 리팩터링 도구 {#code-refactoring}
 
@@ -120,8 +120,8 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 * AIO-CLI 플러그인은 Repository Modernizer를 지원하며 사용자는 플러그인을 사용하여 도구를 실행할 수 있습니다.
 
-  다음을 참조하십시오 [Git 리소스: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 을 참조하십시오.
+  자세한 내용은 [Git 리소스: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)을 참조하십시오.
 
-* Repository Modernizer 유틸리티를 사용하여 기존 프로젝트 패키지를 AEMas a Cloud Service 용으로 정의된 프로젝트 구조와 호환되는 패키지로 재구성할 수 있습니다.
+* Repository Modernizer 유틸리티를 사용하여 기존 프로젝트 패키지를 AEM as a Cloud Service에 대해 정의된 프로젝트 구조와 호환되는 패키지로 재구성할 수 있습니다.
 
-  다음을 참조하십시오 [Git 리소스: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 을 참조하십시오.
+  자세한 내용은 [Git 리소스: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)를 참조하십시오.

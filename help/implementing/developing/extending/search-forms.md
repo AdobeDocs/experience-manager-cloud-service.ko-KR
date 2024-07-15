@@ -13,9 +13,9 @@ ht-degree: 9%
 
 # 검색 양식 구성 {#configuring-search-forms}
 
-Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites-cloud/authoring/search.md) 메커니즘.
+Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites-cloud/authoring/search.md) 메커니즘이 포함되어 있습니다.
 
-이와 함께 콘텐츠를 필터링하는 데 도움이 되는 사전 정의된 옵션 세트도 있습니다. 여기에는 다음과 같이 사전 정의된 패싯이 포함됩니다. **수정한 날짜**, **게시 상태**, 또는 **라이브 카피 상태** 필요한 리소스로 신속하게 드릴다운할 수 있도록 지원합니다.
+이와 함께 콘텐츠를 필터링하는 데 도움이 되는 사전 정의된 옵션 세트도 있습니다. 여기에는 필요한 리소스로 빠르게 드릴다운할 수 있도록 **수정된 날짜**, **Publish 상태** 또는 **라이브 카피 상태**&#x200B;와 같은 미리 정의된 패싯이 있습니다.
 
 ![검색 및 필터 사용](assets/csf-usage.png)
 
@@ -23,15 +23,15 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
 
 * [검색 및 필터링](/help/sites-cloud/authoring/search.md#search-and-filter)
 * [레일 선택기](/help/sites-cloud/authoring/basic-handling.md#rail-selector)
-* 다음 [에셋 브라우저](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) (페이지 편집 시)
+* [Assets 브라우저](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)(페이지 편집 시)
 
 >[!NOTE]
 >
->기본 항목을 구성할 수 있습니다. [콘텐츠 검색 및 색인화](/help/operations/indexing.md) 서비스.
+>기본 [콘텐츠 검색 및 인덱싱](/help/operations/indexing.md) 서비스를 구성할 수 있습니다.
 
-사용 **Forms 검색**, 특정 요구 사항에 따라 이러한 패널을 사용자 정의하고 확장할 수 있습니다.
+**Forms 검색**&#x200B;을 사용하면 특정 필요에 따라 이러한 패널을 사용자 지정하고 확장할 수 있습니다.
 
-다음 **Forms 검색** 기본 제공 [술어](#predicates-and-their-settings) 을 사용하여 를 결합하고 정의할 수 있습니다. 다음 [이러한 양식을 구성하기 위한 대화 상자](#configuring-your-search-forms) 을 통해 액세스할 수 있습니다.
+**Forms 검색**&#x200B;에서는 결합하고 정의할 수 있는 [술어](#predicates-and-their-settings)을(를) 기본적으로 선택할 수 있습니다. 다음 양식을 구성하기 위한 [대화 상자](#configuring-your-search-forms)에 액세스할 수 있습니다.
 
 * **도구**
    * **일반**
@@ -39,13 +39,13 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
 
 ## 기본 Forms {#default-forms}
 
-에 처음 액세스하면 **Forms 검색** 콘솔 모든 구성에 자물쇠 기호가 있는 것을 볼 수 있습니다. 이는 해당 구성이 기본(기본) 구성이며 삭제할 수 없음을 나타냅니다. 구성을 사용자 지정하고 저장하면 잠금 기능이 사라집니다. 다음 작업을 수행하면 다시 나타납니다. [사용자 지정된 구성 삭제](#deleting-a-configuration-to-reinstate-the-default), 이 경우 기본값(및 자물쇠 표시기)이 복원됩니다.
+**Forms 검색** 콘솔에 처음 액세스하면 모든 구성에 자물쇠 기호가 있음을 알 수 있습니다. 이는 해당 구성이 기본(기본) 구성이며 삭제할 수 없음을 나타냅니다. 구성을 사용자 지정하고 저장하면 잠금 기능이 사라집니다. [사용자 지정된 구성을 삭제](#deleting-a-configuration-to-reinstate-the-default)하면 다시 나타납니다. 이 경우 기본값(및 자물쇠 표시기)이 복원됩니다.
 
-![검색 양식 구성 개요](assets/csf-overview.png)
+![검색 양식 개요 구성](assets/csf-overview.png)
 
 사용할 수 있는 기본 구성(알파벳순으로 나열됨)은 다음과 같습니다.
 
-* **에셋 관리자 검색 레일**
+* **Assets 관리자 검색 레일**
 * **페이지 편집기(문서 검색)**
 * **페이지 편집기(경험 조각 검색)**
 * **페이지 편집기(이미지 검색)**
@@ -66,7 +66,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
 
 >[!NOTE]
 >
->에셋 관련 검색 양식에 대한 자세한 내용은 [에셋 - 검색 패싯](/help/assets/search-facets.md).
+>자산 관련 검색 양식에 대한 자세한 내용은 [Assets - 검색 패싯](/help/assets/search-facets.md)을 참조하세요.
 
 
 ## 술어 및 설정 {#predicates-and-their-settings}
@@ -137,7 +137,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
   </tr>
   <tr>
    <td>구성 요소</td>
-   <td>작성자는 특정 구성 요소가 있는 페이지를 검색/필터링할 수 있습니다. 예를 들어 이미지 갤러리가 있습니다.<br /> </td>
+   <td>작성자는 특정 구성 요소가 있는 페이지를 검색/필터링할 수 있습니다. 이미지 갤러리를 예로 들 수 있습니다.<br /> </td>
    <td>
     <ul>
      <li>플레이스홀더</li>
@@ -258,7 +258,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
   </tr>
   <tr>
    <td>옵션</td>
-   <td><p>옵션은 사용자가 만든 콘텐츠 노드입니다.</p> <p>다음을 참조하십시오 <a href="#addinganoptionspredicate">옵션 설명 추가</a> 추가 정보.</p> </td>
+   <td><p>옵션은 사용자가 만든 콘텐츠 노드입니다.</p> <p>자세한 내용은 <a href="#addinganoptionspredicate">옵션 설명 추가</a>를 참조하십시오.</p> </td>
    <td>
     <ul>
      <li>필드 레이블</li>
@@ -288,7 +288,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
    <td>
     <ul>
      <li>필드 레이블</li>
-     <li>게시 속성 이름*</li>
+     <li>Publish 속성 이름*</li>
      <li>잠긴 페이지 속성 이름*</li>
      <li>설명</li>
     </ul> </td>
@@ -339,7 +339,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
    </td>
   </tr>
   <tr>
-   <td>게시 상태</td>
+   <td>Publish 상태</td>
    <td>게시 상태에 따라 리소스를 필터링합니다.</td>
    <td>
     <ul>
@@ -482,7 +482,7 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
 >일반적인 검색 조건자는 다음에서 정의됩니다.
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->이 정보는 참조용이므로 변경해서는 안 됩니다. `/libs`.
+>이 정보는 참조용이므로 `/libs`을(를) 변경할 수 없습니다.
 
 <!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
@@ -509,9 +509,9 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
 
 * **속성 이름**
 
-  검색할 속성입니다. 상대 경로와 와일드카드를 사용합니다 `*/*/*` 을(를) 기준으로 속성의 깊이를 지정합니다. `jcr:content` 노드(각 별표는 하나의 노드 레벨을 나타냅니다.)
+  검색할 속성입니다. 상대 경로를 사용하며 와일드카드 `*/*/*`은(는) `jcr:content` 노드에 상대적인 속성의 깊이를 지정합니다(각 별표는 하나의 노드 수준을 나타냄).
 
-  을(를) 가진 리소스의 첫 번째 수준 하위 노드에서만 검색하려면 `x` 다음에 대한 속성 `jcr:content` 노드 사용 `*/jcr:content/x`
+  `jcr:content` 노드에 `x` 속성이 있는 리소스의 첫 번째 수준 하위 노드에서만 검색하려면 `*/jcr:content/x`을(를) 사용하십시오.
 
 * **속성 깊이**
 
@@ -519,43 +519,43 @@ Adobe Experience Manager as a Cloud Service에는 강력한 [검색](/help/sites
 
 * **속성 값**
 
-  속성 값(절대 문자열 또는 표현식 언어). 예: `cq:Page` 또는
+  속성 값을 절대 문자열 또는 표현식 언어로 지정합니다(예: `cq:Page` 또는
 
   `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`
 
 * **범위 텍스트**
 
-  에 있는 범위 필드의 레이블 **날짜 범위** 조건자.
+  **날짜 범위** 조건자에 있는 범위 필드의 레이블입니다.
 
 * **옵션 경로**
 
-  사용자는 술어 설정 탭의 경로 브라우저를 사용하여 경로를 선택할 수 있습니다. 을(를) 선택한 후 **+** 아이콘을 사용하여 유효한 옵션 목록에 선택 항목을 추가한 다음 **-** 아이콘 을 클릭하여 제거할 수 있습니다.
+  사용자는 술어 설정 탭의 경로 브라우저를 사용하여 경로를 선택할 수 있습니다. **+** 아이콘을 선택한 후 유효한 옵션 목록에 선택 항목을 추가하는 데 사용합니다(필요한 경우 제거할 **-** 아이콘).
 
   옵션은 사용자가 만든 콘텐츠 노드로서 다음 구조를 갖습니다.
 
   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
 * **옵션 노드 경로**
-와 효과적으로 동일 **옵션 경로**&#x200B;에서는 이 항목만 일반 술어 필드에 있으며, 다른 항목은 에셋에 따라 다릅니다.
+**옵션 경로**&#x200B;와(과) 사실상 동일하지만 이 경로만 일반 조건자 필드에 있으며 다른 경로는 에셋에 따라 다릅니다.
 
 * **단일 선택**
 선택하면 옵션이 단일 선택 항목만 허용하는 확인란으로 렌더링됩니다. 잘못 선택한 경우 확인란을 선택 취소할 수 있습니다.
 
-* **게시 및 라이브 카피 속성 이름**
+* **Publish 및 Live Copy 속성 이름**
 Sites 특정 술어에 대한 게시 및 라이브 카피 확인란의 레이블입니다.
 
-* 필드 레이블의 &amp;ast; **설정** 탭은 필드가 필수임을 의미하며 비워 두면 오류 메시지가 표시됩니다.
+* **설정** 탭의 필드 레이블에 있는 &amp;ast;는 필드가 필수임을 의미하며 비워 두면 오류 메시지가 나타납니다.
 
 ## 검색 Forms 구성 {#configuring-your-search-forms}
 
 ### 사용자 지정된 구성 만들기/열기 {#creating-opening-a-customized-configuration}
 
-1. 다음으로 이동 **도구**, **일반**, **Forms 검색**.
+1. **도구**, **일반**, **Forms 검색**&#x200B;으로 이동합니다.
 
 1. 사용자 지정할 구성을 선택합니다.
-1. 사용 **편집** 아이콘을 클릭하여 업데이트할 구성을 엽니다.
-1. 새 사용자 지정의 경우 [새 술어 필드 추가 및 설정 정의](#add-edit-a-predicate-field-and-define-field-settings) 필요에 따라. 기존 사용자 지정의 경우 기존 필드를 선택하고 [설정 업데이트](#add-edit-a-predicate-field-and-define-field-settings).
-1. 선택 **완료** 구성을 저장합니다. 다음 번에 구성을 사용하면 변경 사항을 볼 수 있습니다.
+1. **편집** 아이콘을 사용하여 업데이트할 구성을 엽니다.
+1. 새 사용자 지정의 경우 [새 설명 필드를 추가하고 필요에 따라 설정을 정의](#add-edit-a-predicate-field-and-define-field-settings)할 수 있습니다. 기존 사용자 지정의 경우 기존 필드를 선택하고 [설정을 업데이트](#add-edit-a-predicate-field-and-define-field-settings)할 수 있습니다.
+1. **완료**&#x200B;를 선택하여 구성을 저장합니다. 다음 번에 구성을 사용하면 변경 사항을 볼 수 있습니다.
 
    >[!NOTE]
    >
@@ -568,8 +568,8 @@ Sites 특정 술어에 대한 게시 및 라이브 카피 확인란의 레이블
 
 필드를 추가 또는 편집하고 설정을 정의/업데이트할 수 있습니다.
 
-1. [사용자 지정된 구성을 엽니다.](#creating-opening-a-customized-configuration) 업데이트용.
-1. 새 필드를 추가하려면 **조건자 선택** 필요한 설명을 탭하고 필요한 위치로 드래그합니다. 예를 들어 **날짜 범위 조건자**:
+1. 업데이트를 위해 [사용자 지정된 구성을 엽니다](#creating-opening-a-customized-configuration).
+1. 새 필드를 추가하려면 **설명 선택** 탭을 열고 필요한 설명을 필요한 위치로 끕니다. 예를 들어 **날짜 범위 조건자**&#x200B;는 다음과 같습니다.
 
    ![조건자 추가](assets/csf-add-predicate.png)
 
@@ -577,17 +577,17 @@ Sites 특정 술어에 대한 게시 및 라이브 카피 확인란의 레이블
 
    * 새 필드를 추가하고 있습니다.
 
-     술어를 추가한 후 **설정** 탭이 열리고 정의할 수 있는 속성이 표시됩니다.
+     술어를 추가하면 **설정** 탭이 열리고 정의할 수 있는 속성이 표시됩니다.
 
    * 기존 술어를 업데이트하려고 합니다.
 
-     술어 필드(오른쪽)를 선택한 다음 **설정** 탭.
+     설명 필드(오른쪽)를 선택한 다음 **설정** 탭을 엽니다.
 
-   예를 들어, 다음에 대한 설정 **날짜 범위 조건자**:
+   예를들어, **날짜 범위 조건자**&#x200B;에 대한 설정은 다음과 같습니다.
 
-   ![설명 수정](assets/csf-modify-predicate.png)
+   ![조건자 수정](assets/csf-modify-predicate.png)
 
-1. 필요에 따라 변경하고 확인합니다. **완료**. 다음 번에 구성을 사용하면 변경 사항을 볼 수 있습니다.
+1. 필요에 따라 변경하고 **완료**(으)로 확인합니다. 다음 번에 구성을 사용하면 변경 사항을 볼 수 있습니다.
 
 ### 검색 구성 미리 보기 {#previewing-the-search-configuration}
 
@@ -599,18 +599,18 @@ Sites 특정 술어에 대한 게시 및 라이브 카피 확인란의 레이블
 
    ![양식 미리 보기](assets/csf-preview-form.png)
 
-1. **닫기** 구성을 반환하고 완료하는 미리보기.
+1. 미리 보기를 **닫고** 돌아가서 구성을 완료합니다.
 
 ### 술어 필드 삭제 {#deleting-a-predicate-field}
 
-1. [사용자 지정된 구성을 엽니다.](#creating-opening-a-customized-configuration) 업데이트용.
-1. 술어 필드(오른쪽)를 선택하고 **설정** 탭을 선택한 다음 **삭제** 아이콘(왼쪽 하단).
+1. 업데이트를 위해 [사용자 지정된 구성을 엽니다](#creating-opening-a-customized-configuration).
+1. 설명 필드(오른쪽)를 선택하고 **설정** 탭을 연 다음 **삭제** 아이콘(왼쪽 하단)을 선택합니다.
 
    ![삭제 아이콘](assets/csf-delete-icon.png)
 
 1. 대화 상자에서 삭제 작업 확인을 요청합니다.
 
-1. 을(를) 통해 이 변경 사항 및 기타 변경 사항을 확인합니다. **완료**.
+1. **완료**&#x200B;를 사용하여 이 변경 내용 및 기타 변경 내용을 확인합니다.
 
 ### 구성 삭제(기본값 복원) {#deleting-a-configuration-to-reinstate-the-default}
 
@@ -622,7 +622,7 @@ Sites 특정 술어에 대한 게시 및 라이브 카피 확인란의 레이블
 
 사용자 정의된 구성을 삭제하는 작업은 콘솔에서 수행됩니다.
 
-1. 필요한 구성 선택(예: **페이지 편집기(단락 검색)**) 그런 다음 **삭제** 아이콘(도구 모음):
+1. 필요한 구성(예: **페이지 편집기(단락 검색)**)을 선택한 다음 도구 모음에서 **삭제** 아이콘을 선택합니다.
 
    ![기본값 복원](assets/csf-restore-default.png)
 
@@ -647,19 +647,19 @@ Sites 특정 술어에 대한 게시 및 라이브 카피 확인란의 레이블
 
    >[!NOTE]
    >
-   >본인 ***필수*** 의 아무 것도 변경하지 마십시오. `/libs` 경로.
+   >***은(는) `/libs` 경로에서 아무 것도 변경하지 말아야***&#x200B;합니다.
    >
-   >이는 의 콘텐츠가 `/libs` 는 다음에 인스턴스를 업그레이드할 때 덮어쓰기됩니다(또한 핫픽스 또는 기능 팩을 적용할 때 덮어쓰기될 수도 있음).
+   >이는 다음에 인스턴스를 업그레이드할 때 `/libs`의 콘텐츠가 덮어쓰기되기 때문입니다(핫픽스 또는 기능 팩을 적용할 때 덮어쓸 수도 있음).
    >
    >구성 및 기타 변경에 권장되는 방법은 다음과 같습니다.
    >
-   >1. 필요한 항목이 있는 대로 다시 만들기 `/libs`, 아래 `/apps`. 이 경우 다음에서:
+   >1. 필요한 항목이 `/apps` 아래 `/libs`에 존재하므로 다시 만드십시오. 이 경우 다음에서:
    >1. `/libs/cq/gui/content/common/options/predicates`
-   >1. 다음 범위 내에서 변경 `/apps.`
+   >1. `/apps.` 내에서 변경
 
-1. 를 엽니다. **Forms 검색** 콘솔을 클릭하고 업데이트할 구성을 선택합니다. 예를 들어, **사이트 관리자 검색 레일**. 그런 다음 을 선택합니다 **편집**.
+1. **Forms 검색** 콘솔을 열고 업데이트할 구성을 선택합니다. 예를 들어 **사이트 관리자 검색 레일**&#x200B;입니다. **편집**&#x200B;을 선택합니다.
 
-1. 구성에 따라 **옵션** 또는 **Options 속성** 구성을 참조하십시오.
+1. 구성에 따라 **Options** 또는 **Options 속성**&#x200B;을 구성에 추가하십시오.
 1. 필드를 업데이트합니다. 특히
 
    * **속성 이름**
@@ -676,8 +676,8 @@ Sites 특정 술어에 대한 게시 및 라이브 카피 확인란의 레이블
 
    ![옵션 조건자](assets/csf-options-predicate-02.png)
 
-1. 선택 **완료** 구성을 저장합니다.
-1. 적절한 콘솔로 이동합니다(이 예제에서는 **사이트**) 및 를 엽니다 **검색 - 필터** 레일. 다양한 옵션과 함께 새로 정의된 검색 양식이 표시됩니다. 필요한 옵션을 선택하여 검색 결과를 확인합니다.
+1. **완료**&#x200B;를 선택하여 구성을 저장합니다.
+1. 적절한 콘솔(이 예제에서는 **사이트**)로 이동하여 **검색 - 필터** 레일을 엽니다. 다양한 옵션과 함께 새로 정의된 검색 양식이 표시됩니다. 필요한 옵션을 선택하여 검색 결과를 확인합니다.
 
    ![사용 중인 옵션](assets/csf-options-usage.png)
 
@@ -696,15 +696,15 @@ Sites 특정 술어에 대한 게시 및 라이브 카피 확인란의 레이블
  <tbody>
   <tr>
    <td>편집 </td>
-   <td>읽기, 쓰기 권한 <code>/apps </code>노드.</td>
+   <td><code>/apps </code> 노드에 대한 읽기, 쓰기 권한입니다.</td>
   </tr>
   <tr>
    <td>삭제</td>
-   <td>읽기, 쓰기, 삭제 권한 <code>/apps</code> 노드</td>
+   <td><code>/apps</code> 노드에 대한 읽기, 쓰기, 삭제 권한</td>
   </tr>
   <tr>
    <td>미리보기</td>
-   <td>읽기, 쓰기, 삭제 권한 <code>/var/dam/content</code> 노드.<br /> 읽기, 쓰기 권한 <code>/apps</code> 노드.</td>
+   <td><code>/var/dam/content</code> 노드에 대한 읽기, 쓰기, 삭제 권한입니다.<br /> <code>/apps</code> 노드에 대한 읽기, 쓰기 권한입니다.</td>
   </tr>
  </tbody>
 </table>

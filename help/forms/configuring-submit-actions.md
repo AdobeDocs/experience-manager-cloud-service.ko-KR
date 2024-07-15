@@ -18,9 +18,9 @@ ht-degree: 73%
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service | 이 문서 |
 
-**적용 대상**: ✔️ Form Foundation 구성 요소를 빌드합니다. ❌ [적응형 양식 핵심 구성 요소](/help/forms/configure-submit-actions-core-components.md). Adobe은 핵심 구성 요소를 사용하여 다음을 수행할 것을 권장합니다. [AEM Sites 페이지에 적응형 Forms 추가](create-or-add-an-adaptive-form-to-aem-sites-page.md) 또는 종료 [독립 실행형 적응형 Forms 만들기](creating-adaptive-form-core-components.md).
+**적용 대상**: ✔️ Form Foundation 구성 요소 [적응형 양식 핵심 구성 요소](/help/forms/configure-submit-actions-core-components.md)를 ❌. Adobe은 핵심 구성 요소를 사용하여 [AEM Sites 페이지에 적응형 Forms을 추가](create-or-add-an-adaptive-form-to-aem-sites-page.md)하거나 [독립 실행형 적응형 Forms 만들기](creating-adaptive-form-core-components.md)할 것을 권장합니다.
 
-사용자가 를 클릭하면 제출 작업이 트리거됩니다. **[!UICONTROL 제출]** 적응형 양식의 단추입니다. Formsas a Cloud Service 에서 제출 액션 실행
+사용자가 적응형 양식에서 **[!UICONTROL 제출]** 단추를 클릭하면 제출 액션이 트리거됩니다. Formsas a Cloud Service 에서 제출 액션 실행
 
 * [REST 엔드포인트에 제출](#submit-to-rest-endpoint)
 * [이메일 보내기](#send-email)
@@ -32,9 +32,9 @@ ht-degree: 73%
 * [Power Automate에 제출](#microsoft-power-automate)
 * [Workfront Fusion에 제출](#workfront-fusion)
 
-다음을 수행할 수도 있습니다. [기본 제출 액션 확장](custom-submit-action-form.md) 고유한 제출 액션을 만들 수 있습니다.
+[기본 제출 액션을 확장](custom-submit-action-form.md)하여 자신의 제출 액션을 만들 수도 있습니다.
 
-다음에서 제출 액션을 구성할 수 있습니다. **[!UICONTROL 제출]** 섹션에 있는 섹션을 참조하십시오.
+사이드바의 적응형 양식 컨테이너 속성에 있는 **[!UICONTROL 제출]** 섹션에서 제출 액션을 구성할 수 있습니다.
 
 ![제출 액션 구성](assets/submission.png)
 
@@ -98,7 +98,7 @@ ht-degree: 73%
 
 ## 이메일 보내기 {#send-email}
 
-다음을 사용할 수 있습니다. **[!UICONTROL 이메일 보내기]** 제출 액션을 선택하면 양식 제출 시 한 명 이상의 수신자에게 이메일을 보낼 수 있습니다. 생성된 이메일에는 사전 정의된 형식의 양식 데이터가 포함될 수 있습니다. 예를 들어 다음 템플릿에서 고객 이름, 배송 주소, 주 이름 및 우편 번호는 제출된 양식 데이터에서 검색됩니다.
+**[!UICONTROL 전자 메일 보내기]** 제출 액션을 사용하여 양식을 성공적으로 제출하면 한 명 이상의 받는 사람에게 전자 메일을 보낼 수 있습니다. 생성된 이메일에는 사전 정의된 형식의 양식 데이터가 포함될 수 있습니다. 예를 들어 다음 템플릿에서 고객 이름, 배송 주소, 주 이름 및 우편 번호는 제출된 양식 데이터에서 검색됩니다.
 
     ```
     
@@ -118,9 +118,9 @@ ht-degree: 73%
 >[!NOTE]
 >
 > * 필드가 적응형 양식의 서로 다른 패널에 배치된 경우에도 모든 양식 필드에는 서로 다른 요소 이름이 있어야 합니다.
-> * AEM as a Cloud Service을 사용하려면 아웃바운드 메일을 암호화해야 합니다. 기본적으로 아웃바운드 이메일은 비활성화됩니다. 활성화하려면 지원 티켓을 다음으로 제출하십시오. [액세스 요청 중](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ko#sending-email).
+> * AEM as a Cloud Service을 사용하려면 아웃바운드 메일을 암호화해야 합니다. 기본적으로 아웃바운드 이메일은 비활성화됩니다. 활성화하려면 [액세스 요청](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ko#sending-email)에 지원 티켓을 제출하세요.
 
-이메일에 첨부 파일과 기록 문서(DoR)를 포함할 수도 있습니다. 활성화하려면 **[!UICONTROL 기록 문서 첨부]** 옵션을 선택하고 적응형 양식을 구성하여 기록 문서(DoR)를 생성합니다. 옵션을 활성화하여 적응형 양식 속성에서 기록 문서를 생성할 수 있습니다.
+이메일에 첨부 파일과 기록 문서(DoR)를 포함할 수도 있습니다. **[!UICONTROL 기록 문서 첨부]** 옵션을 활성화하려면 DoR(기록 문서)을 생성하도록 적응형 양식을 구성하십시오. 옵션을 활성화하여 적응형 양식 속성에서 기록 문서를 생성할 수 있습니다.
 
 
 
@@ -140,9 +140,9 @@ For information about how to configure the Submit to forms workflow Submit Actio
 
 ## 양식 데이터 모델(FDM)을 사용하여 제출 {#submit-using-form-data-model}
 
-다음 **[!UICONTROL 양식 데이터 모델을 사용하여 제출]** 제출 액션은 양식 데이터 모델(FDM)의 지정된 데이터 모델 객체에 대해 제출된 적응형 양식 데이터를 해당 데이터 소스에 기록합니다. 제출 액션을 구성할 때 데이터 소스에 다시 쓰려는 제출된 데이터가 있는 데이터 모델 오브젝트를 선택할 수 있습니다.
+**[!UICONTROL 양식 데이터 모델을 사용하여 제출]** 제출 액션은 FDM(양식 데이터 모델)의 지정된 데이터 모델 개체에 대해 제출된 적응형 양식 데이터를 해당 데이터 소스에 기록합니다. 제출 액션을 구성할 때 데이터 소스에 다시 쓰려는 제출된 데이터가 있는 데이터 모델 오브젝트를 선택할 수 있습니다.
 
-또한 FDM(양식 데이터 모델) 및 DoR(기록 문서)을 사용하여 양식 첨부 파일을 데이터 소스에 제출할 수 있습니다. 양식 데이터 모델(FDM)에 대한 자세한 내용은 [[!DNL AEM Forms] 데이터 통합](data-integration.md).
+또한 FDM(양식 데이터 모델) 및 DoR(기록 문서)을 사용하여 양식 첨부 파일을 데이터 소스에 제출할 수 있습니다. 양식 데이터 모델(FDM)에 대한 자세한 내용은 [[!DNL AEM Forms] 데이터 통합](data-integration.md)을 참조하십시오.
 
 <!--
 ## Forms Portal Submit Action {#forms-portal-submit-action}
@@ -177,24 +177,24 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 SharePoint에 제출을 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 * [적응형 양식을 SharePoint 문서 라이브러리에 연결](#connect-af-sharepoint-doc-library)
-* [SharePoint 목록에 적응형 양식 연결](#connect-af-sharepoint-list)
+* [적응형 양식을 SharePoint 목록에 연결](#connect-af-sharepoint-list)
 
 
 ### 적응형 양식을 SharePoint 문서 라이브러리에 연결 {#connect-af-sharepoint-doc-library}
 
-을(를) 사용하려면 **[!UICONTROL SharePoint 문서 라이브러리에 제출]** 적응형 양식에서 작업 제출:
+적응형 양식에서 **[!UICONTROL SharePoint 문서 라이브러리에 제출]** 제출 액션을 사용하려면:
 
-1. [SharePoint 문서 라이브러리 구성 만들기](#create-a-sharepoint-configuration-create-sharepoint-configuration): AEM Forms을 Microsoft® Sharepoint 스토리지에 연결합니다.
+1. [SharePoint 문서 라이브러리 구성 만들기](#create-a-sharepoint-configuration-create-sharepoint-configuration): AEM Forms을 Microsoft® Sharepoint 저장소에 연결합니다.
 2. [적응형 양식에서 SharePoint에 제출 액션 사용](#use-sharepoint-configuartion-in-af): Adaptive Form을 구성된 Microsoft® SharePoint에 연결합니다.
 
 #### SharePoint 문서 라이브러리 구성 만들기 {#create-sharepoint-configuration}
 
 AEM Forms을 Microsoft® Sharepoint Document Library 스토리지에 연결하려면:
 
-1. 다음으로 이동 **AEM Forms 작성자** 인스턴스 > **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
-1. 을(를) 선택하면 **[!UICONTROL Microsoft® SharePoint]**&#x200B;로 리디렉션됩니다. **[!UICONTROL SharePoint 브라우저]**.
+1. **AEM Forms 작성자** 인스턴스 > **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® SharePoint]**(으)로 이동합니다.
+1. **[!UICONTROL Microsoft® SharePoint]**&#x200B;을(를) 선택하면 **[!UICONTROL SharePoint 브라우저]**(으)로 리디렉션됩니다.
 1. **구성 컨테이너**&#x200B;를 선택합니다. 선택한 구성 컨테이너에 구성을 저장합니다.
-1. 클릭 **[!UICONTROL 만들기]** > **[!UICONTROL SharePoint 문서 라이브러리]** 을 클릭합니다. SharePoint 구성 마법사가 나타납니다.
+1. 드롭다운 목록에서 **[!UICONTROL 만들기]** > **[!UICONTROL SharePoint 문서 라이브러리]**&#x200B;를 클릭합니다. SharePoint 구성 마법사가 나타납니다.
 
    ![SharePoint 구성](/help/forms/assets/sharepoint_configuration.png)
 1. **[!UICONTROL 제목]**, **[!UICONTROL 클라이언트 ID]**, **[!UICONTROL 클라이언트 보안]** 및 **[!UICONTROL OAuth URL]**&#x200B;을 지정합니다. OAuth URL의 클라이언트 ID, 클라이언트 보안, 테넌트 ID를 검색하는 방법에 대한 자세한 내용은 [Microsoft® Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)을 참조하십시오.
@@ -209,12 +209,12 @@ AEM Forms을 Microsoft® Sharepoint Document Library 스토리지에 연결하�
 
 1. **[!UICONTROL 연결]**&#x200B;을 클릭합니다. 연결이 완료되면 `Connection Successful` 메시지가 나타납니다.
 
-1. 지금, 선택 **SharePoint 사이트** > **문서 라이브러리** > **SharePoint 폴더**&#x200B;를 클릭하여 데이터를 저장합니다.
+1. 이제 **SharePoint 사이트** > **문서 라이브러리** > **SharePoint 폴더**&#x200B;를 선택하여 데이터를 저장합니다.
 
    >[!NOTE]
    >
-   >* 기본적으로, `forms-ootb-storage-adaptive-forms-submission` 은(는) 선택한 SharePoint 사이트에 있습니다.
-   >* 폴더를 다음으로 만들기 `forms-ootb-storage-adaptive-forms-submission`에 아직 없는 경우 `Documents` 다음을 클릭하여 선택한 SharePoint 사이트의 라이브러리 **폴더 만들기**.
+   >* 기본적으로 `forms-ootb-storage-adaptive-forms-submission`은(는) 선택한 SharePoint 사이트에 있습니다.
+   >* **폴더 만들기**&#x200B;를 클릭하여 선택한 SharePoint 사이트의 `Documents` 라이브러리에 아직 없는 경우 폴더를 `forms-ootb-storage-adaptive-forms-submission`(으)로 만듭니다.
 
 이제 적응형 양식의 제출 작업에 이 SharePoint Sites 구성을 사용할 수 있습니다.
 
@@ -226,7 +226,7 @@ AEM Forms을 Microsoft® Sharepoint Document Library 스토리지에 연결하�
 
    >[!NOTE]
    >
-   > * 동일하게 선택 [!UICONTROL 구성 컨테이너] SharePoint 문서 라이브러리 저장소를 생성한 적응형 양식용.
+   > * 적응형 양식에 대해 동일한 [!UICONTROL 구성 컨테이너]를 선택합니다. 여기서 SharePoint 문서 라이브러리 저장소를 만들었습니다.
    > * [!UICONTROL 구성 컨테이너]가 선택되지 않은 경우 제출 액션 속성 창에 글로벌 [!UICONTROL 스토리지 구성] 폴더가 나타납니다.
 
 1. **제출 액션**&#x200B;을 **[!UICONTROL SharePoint에 제출]**로 선택합니다.
@@ -241,22 +241,22 @@ AEM Forms을 Microsoft® Sharepoint Document Library 스토리지에 연결하�
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
-을(를) 사용하려면 [!UICONTROL SharePoint 목록에 제출] 적응형 양식에서 작업 제출:
+적응형 양식에서 [!UICONTROL SharePoint 목록에 제출] 제출 액션을 사용하려면:
 
-1. [SharePoint 목록 구성 만들기](#create-sharepoint-list-configuration): AEM Forms을 Microsoft® Sharepoint 목록 스토리지에 연결합니다.
-1. [적응형 양식에서 FDM(양식 데이터 모델)을 사용하여 제출 사용](#use-submit-using-fdm): 적응형 양식을 구성된 Microsoft® SharePoint에 연결합니다.
+1. [SharePoint 목록 구성 만들기](#create-sharepoint-list-configuration): AEM Forms을 Microsoft® Sharepoint 목록 저장소에 연결합니다.
+1. [적응형 양식에서 FDM(양식 데이터 모델)을 사용하여 제출](#use-submit-using-fdm): 적응형 양식을 구성된 Microsoft® SharePoint에 연결합니다.
 
 #### SharePoint 목록 구성 만들기 {#create-sharepoint-list-configuration}
 
 AEM Forms을 Microsoft® Sharepoint 목록에 연결하려면:
 
-1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® SharePoint]**&#x200B;로 이동합니다.
 1. **구성 컨테이너**&#x200B;를 선택합니다. 선택한 구성 컨테이너에 구성을 저장합니다.
-1. 클릭 **[!UICONTROL 만들기]** > **[!UICONTROL SharePoint 목록]** 을 클릭합니다. SharePoint 구성 마법사가 나타납니다.
+1. 드롭다운 목록에서 **[!UICONTROL 만들기]** > **[!UICONTROL SharePoint 목록]**&#x200B;을 클릭합니다. SharePoint 구성 마법사가 나타납니다.
 1. **[!UICONTROL 제목]**, **[!UICONTROL 클라이언트 ID]**, **[!UICONTROL 클라이언트 보안]** 및 **[!UICONTROL OAuth URL]**&#x200B;을 지정합니다. OAuth URL의 클라이언트 ID, 클라이언트 보안, 테넌트 ID를 검색하는 방법에 대한 자세한 내용은 [Microsoft® Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)을 참조하십시오.
    * Microsoft® Azure 포털에서 앱의 `Client ID` 및 `Client Secret`를 검색할 수 있습니다.
    * Microsoft® Azure 포털에서 리디렉션 URI를 `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`로 추가합니다. `[author-instance]`를 작성자 인스턴스의 URL로 대체합니다.
-   * API 권한 추가 `offline_access` 및 `Sites.Manage.All` 다음에서 **Microsoft® 그래프** 읽기/쓰기 권한을 제공하는 탭입니다. 추가 `AllSites.Manage` 의 권한 **Sharepoint** 탭으로 이동하여 SharePoint 데이터와 원격으로 상호 작용할 수 있습니다.
+   * 읽기/쓰기 권한을 제공하려면 **Microsoft® 그래프** 탭에서 API 권한 `offline_access` 및 `Sites.Manage.All`을(를) 추가하십시오. SharePoint 데이터와 원격으로 상호 작용하려면 **Sharepoint** 탭에 `AllSites.Manage` 권한을 추가하십시오.
    * OAuth URL 사용: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Microsoft® Azure 포털에서 `<tenant-id>`를 앱의 `tenant-id`로 대체합니다.
 
      >[!NOTE]
@@ -264,8 +264,8 @@ AEM Forms을 Microsoft® Sharepoint 목록에 연결하려면:
      > **클라이언트 보안** 필드는 Azure Active Directory 애플리케이션 구성에 따라 필수 또는 선택 사항입니다. 애플리케이션을 구성하여 클라이언트 보안을 사용하는 경우 클라이언트 보안을 제공해야 합니다.
 
 1. **[!UICONTROL 연결]**&#x200B;을 클릭합니다. 연결이 완료되면 `Connection Successful` 메시지가 나타납니다.
-1. 선택 **[!UICONTROL SharePoint 사이트]** 및 **[!UICONTROL SharePoint 목록]** 을 클릭합니다.
-1. 선택 **[!UICONTROL 만들기]** Microsoft® SharePointList에 대한 클라우드 구성을 만듭니다.
+1. 드롭다운 목록에서 **[!UICONTROL SharePoint 사이트]** 및 **[!UICONTROL SharePoint 목록]**&#x200B;을 선택합니다.
+1. Microsoft® SharePointList에 대한 클라우드 구성을 만들려면 **[!UICONTROL 만들기]**&#x200B;를 선택하십시오.
 
 
 #### 적응형 양식에서 FDM(양식 데이터 모델)을 사용하여 제출 사용 {#use-submit-using-fdm}
@@ -409,7 +409,7 @@ AEM Forms를 Azure Storage 컨테이너에 연결하려면
 
 제출 시 Workfront Fusion에 데이터를 제출하도록 적응형 양식을 구성할 수 있습니다. Workfront Fusion을 사용하면 동일한 작업을 반복해서 반복하지 않고 새로운 작업에 집중할 수 있도록 프로세스를 자동화할 수 있습니다. 이 제품은 단순하고 복잡한 작업을 모두 자동화하여 시간을 절약하고 일관된 프로세스 실행을 보장합니다.
 
-적응형 Forms 편집기는 **Workfront Fusion 시나리오 호출** Workfront Fusion 시나리오에 적응형 Forms 데이터 또는 첨부 파일을 전송하는 작업을 제출합니다. 제출 액션을 사용하여 캡처된 데이터를 Workfront Fusion 시나리오에 보내려면 다음을 참조하십시오. [Adobe Workfront Fusion에 적응형 양식 제출](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
+적응형 Forms 편집기는 적응형 Forms 데이터 또는 첨부 파일을 Workfront Fusion 시나리오로 전송하는 **Workfront Fusion 시나리오 호출** 제출 액션을 제공합니다. 캡처된 데이터를 Workfront Fusion 시나리오에 전송하는 데 제출 액션을 사용하려면 [Adobe Workfront Fusion에 적응형 양식 제출](/help/forms/submit-adaptive-form-to-workfront-fusion.md)을 참조하십시오.
 
 ## 동기 제출 또는 비동기 제출 사용 {#use-synchronous-or-asynchronous-submission}
 
@@ -463,7 +463,7 @@ AEM Forms를 Azure Storage 컨테이너에 연결하려면
 
 AEM 보안 및 강화 지침의 일부로, 400.jsp, 404.jsp 및 500.jsp와 같은 사용자 정의 오류 페이지를 구성합니다. 이러한 핸들러는 양식 제출 시 400, 404 또는 500 오류가 나타나면 호출됩니다. 게시 노드에서 이러한 오류 코드가 트리거되면 핸들러가 호출되기도 합니다. 또한 다른 HTTP 오류 코드에 대한 JSP 페이지를 만들 수 있습니다.
 
-양식 데이터 모델(FDM) 또는 스키마 기반 적응형 양식에 데이터가 포함되지 않은 스키마에 대한 XML 또는 JSON 데이터 컴플레인을 미리 채우는 경우 `<afData>`, `<afBoundData>`, 및 `</afUnboundData>` 태그를 지정하면 적응형 양식의 제한되지 않은 필드 데이터가 손실됩니다. 스키마는 XML 스키마, JSON 스키마 또는 양식 데이터 모델(FDM)일 수 있습니다. 무제한 필드는 `bindref` 속성이 없는 적응형 양식 필드입니다.
+데이터에 `<afData>`, `<afBoundData>` 및 `</afUnboundData>` 태그가 포함되어 있지 않은 스키마에 대해 XML 또는 JSON 데이터 컴플레인을 사용하여 FDM(양식 데이터 모델) 또는 스키마 기반 적응형 양식을 미리 채우면 적응형 양식의 무제한 필드 데이터가 손실됩니다. 스키마는 XML 스키마, JSON 스키마 또는 양식 데이터 모델(FDM)일 수 있습니다. 무제한 필드는 `bindref` 속성이 없는 적응형 양식 필드입니다.
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 

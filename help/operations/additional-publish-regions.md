@@ -51,7 +51,7 @@ AEM Sites로 설정된 프로그램에서 추가 게시 지역에 라이선스�
 
 ## 로깅 {#logging}
 
-추가 게시 영역이 활성화된 경우 Cloud Manager를 통해 각 영역에 대한 별도의 로그를 사용할 수 있습니다. 자세한 내용은 [로그 액세스 및 관리](/help/implementing/cloud-manager/manage-logs.md) 및 [추가 게시 영역에 대한 로그](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions).
+추가 게시 영역이 활성화되면 Cloud Manager을 통해 각 영역에 대한 별도의 로그를 사용할 수 있습니다. 자세한 내용은 [로그 액세스 및 관리](/help/implementing/cloud-manager/manage-logs.md) 및 [추가 Publish 지역에 대한 로그](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions)를 참조하십시오.
 
 ## 제한 사항 {#limitations}
 

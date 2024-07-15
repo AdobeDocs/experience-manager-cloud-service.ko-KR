@@ -41,9 +41,10 @@ ht-degree: 66%
    1. Authorizable 인터페이스의 `setProperty()` 방법을 사용하여 캡처된 프로필 데이터 유지
 1. 선택적 플로우 (예: 사용자에게 이메일 유효성 확인 요구)
 
-**전제 조건:**
+**필수 구성 요소:**
 
-위에서 설명한 논리가 제대로 작동하려면 를 활성화하십시오. [데이터 동기화](#data-synchronization-data-synchronization) 적절한 프로그램 및 환경을 나타내는 요청을 고객 지원 센터에 제출하여.
+위에서 설명한 논리가 올바르게 작동하려면 다음을 제출하여 [데이터 동기화](#data-synchronization-data-synchronization)를 활성화하십시오.
+적절한 프로그램 및 환경을 나타내는 고객 지원 센터 요청.
 
 ### 외부 {#external-managed-registration}
 
@@ -64,9 +65,10 @@ ht-degree: 66%
 * [Sling 인증 프레임워크](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html)
 * 또한 로그인에 관련하여 [AEM 커뮤니티 전문가 세션에 문의](https://bit.ly/ATACEFeb15)할 수도 있습니다.
 
-**전제 조건:**
+**필수 구성 요소:**
 
-위에서 설명한 논리가 제대로 작동하려면 를 활성화하십시오. [데이터 동기화](#data-synchronization-data-synchronization) 적절한 프로그램 및 환경을 나타내는 요청을 고객 지원 센터에 제출하여.
+위에서 설명한 논리가 올바르게 작동하려면 다음을 제출하여 [데이터 동기화](#data-synchronization-data-synchronization)를 활성화하십시오.
+적절한 프로그램 및 환경을 나타내는 고객 지원 센터 요청.
 
 ### ID 공급자와 통합 {#integration-with-an-idp}
 
@@ -88,15 +90,15 @@ AEM의 SSO 인증 핸들러 서비스 사용에 대한 자세한 내용은 [SSO(
 
 원하는 OAuth 공급자를 통해 `com.adobe.granite.auth.oauth.provider` 인터페이스를 구현할 수 있습니다.
 
-**전제 조건:**
+**필수 구성 요소:**
 
-사용자별 데이터를 저장할 때 항상 idP(ID 공급자)를 단일 관리 지점으로 사용하는 것이 좋습니다. 추가 사용자 정보가 idP의 일부가 아닌 로컬 저장소에 저장된 경우 을 활성화하십시오. [데이터 동기화](#data-synchronization-data-synchronization) 적절한 프로그램 및 환경을 나타내는 요청을 고객 지원 센터에 제출하여. 에 더하여 [데이터 동기화](#data-synchronization-data-synchronization)SAML 인증 공급자의 경우 다음을 확인합니다. [동적 그룹 멤버십](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) 이(가) 활성화되었습니다.
+사용자별 데이터를 저장할 때 항상 idP(ID 공급자)를 단일 관리 지점으로 사용하는 것이 좋습니다. 추가 사용자 정보가 idP의 일부가 아닌 로컬 저장소에 저장된 경우 고객 지원 센터에 적절한 프로그램 및 환경을 나타내는 요청을 제출하여 [데이터 동기화](#data-synchronization-data-synchronization)를 활성화하십시오. SAML 인증 공급자의 경우 [데이터 동기화](#data-synchronization-data-synchronization) 외에 [동적 그룹 구성원](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)이 활성화되어 있는지 확인하십시오.
 
 ### 고정 세션 및 압축된 토큰 {#sticky-sessions-and-encapsulated-tokens}
 
-AEM as a Cloud Service은 쿠키 기반의 고정 세션을 활성화하여 최종 사용자가 각 요청에 대해 동일한 게시 노드로 라우팅되도록 합니다. 사용자 트래픽 스파이크와 같은 특별한 경우에는 캡슐화된 토큰 기능이 성능을 높일 수 있으므로 각 요청에서 저장소의 사용자 레코드를 참조하지 않아도 됩니다. 최종 사용자가 친화성을 갖는 게시 노드가 교체된 경우, 의 설명에 따라 새 게시 노드에서 사용자 ID 레코드를 사용할 수 있습니다. [데이터 동기화](#data-synchronization-data-synchronization) 아래 섹션.
+AEM as a Cloud Service은 쿠키 기반의 고정 세션을 활성화하여 최종 사용자가 각 요청에 대해 동일한 게시 노드로 라우팅되도록 합니다. 사용자 트래픽 스파이크와 같은 특별한 경우에는 캡슐화된 토큰 기능이 성능을 높일 수 있으므로 각 요청에서 저장소의 사용자 레코드를 참조하지 않아도 됩니다. 최종 사용자가 선호도를 갖는 게시 노드가 교체된 경우, 아래 [데이터 동기화](#data-synchronization-data-synchronization) 섹션에 설명된 대로 새 게시 노드에서 사용자 ID 레코드를 사용할 수 있습니다.
 
-캡슐화된 토큰 기능을 활용하려면 고객 지원 센터에 적절한 프로그램 및 환경을 나타내는 요청을 제출하십시오. 더 중요한 것은 캡슐화된 토큰을 활성화하려면 [데이터 동기화](#data-synchronization-data-synchronization) 및 을 함께 활성화해야 합니다. 따라서 활성화하기 전에 사용 사례를 주의 깊게 검토하고 기능이 필수인지 확인하십시오.
+캡슐화된 토큰 기능을 활용하려면 고객 지원 센터에 적절한 프로그램 및 환경을 나타내는 요청을 제출하십시오. 더 중요한 것은 캡슐화된 토큰을 [데이터 동기화](#data-synchronization-data-synchronization) 없이 사용할 수 없으므로 함께 사용해야 한다는 것입니다. 따라서 활성화하기 전에 사용 사례를 주의 깊게 검토하고 기능이 필수인지 확인하십시오.
 
 ## 사용자 프로필 {#user-profile}
 
@@ -109,9 +111,10 @@ AEM as a Cloud Service은 쿠키 기반의 고정 세션을 활성화하여 최�
 * `com.adobe.granite.security.user` 인터페이스 UserPropertiesManager 인터페이스를 통한 서버측 사용. 데이터가 `/home/users`에서 사용자의 노드 아래에 배치됩니다. 사용자별로 고유한 페이지가 캐시되지 않았는지 확인하십시오.
 * [설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html#personalization)에 따라 ContextHub를 사용하는 클라이언트측
 
-**전제 조건:**
+**필수 구성 요소:**
 
-서버측 사용자 프로필 지속성 로직이 올바르게 작동하려면 을(를) 활성화하십시오. [데이터 동기화](#data-synchronization-data-synchronization) 적절한 프로그램 및 환경을 나타내는 요청을 고객 지원 센터에 제출하여.
+서버측 사용자 프로필 지속성 로직이 올바르게 작동하려면 다음을 제출하여 [데이터 동기화](#data-synchronization-data-synchronization)를 활성화하십시오.
+적절한 프로그램 및 환경을 나타내는 고객 지원 센터 요청.
 
 ### 서드파티 데이터 저장소 {#third-party-data-stores}
 
@@ -119,9 +122,10 @@ AEM as a Cloud Service은 쿠키 기반의 고정 세션을 활성화하여 최�
 
 프로필 속성을 검색하기 위해 서드파티 서비스에 실시간으로 액세스할 수 있지만, AEM에서의 요청 처리에 물리적으로 영향을 미치지 않도록 해야 합니다.
 
-**전제 조건:**
+**필수 구성 요소:**
 
-위에서 설명한 논리가 제대로 작동하려면 를 활성화하십시오. [데이터 동기화](#data-synchronization-data-synchronization) 적절한 프로그램 및 환경을 나타내는 요청을 고객 지원 센터에 제출하여.
+위에서 설명한 논리가 올바르게 작동하려면 다음을 제출하여 [데이터 동기화](#data-synchronization-data-synchronization)를 활성화하십시오.
+적절한 프로그램 및 환경을 나타내는 고객 지원 센터 요청.
 
 ## 권한 (폐쇄형 사용자 그룹) {#permissions-closed-user-groups}
 
@@ -134,7 +138,7 @@ AEM as a Cloud Service은 쿠키 기반의 고정 세션을 활성화하여 최�
 
 ## 데이터 동기화 {#data-synchronization}
 
-웹 사이트 최종 사용자는 모든 웹 페이지 요청마다, 심지어 다른 브라우저를 사용하여 로그인할 때에도 일관된 경험을 기대합니다. 그러나 자신이 모를 때에도 이들 최종 사용자는 게시 계층 인프라의 서로 다른 서버 노드로 이동합니다. AEM as a Cloud Service은 를 빠르게 동기화하여 이 작업을 수행합니다. `/home` 게시 계층의 모든 노드에 걸친 폴더 계층 구조(사용자 프로필 정보, 그룹 멤버십 등).
+웹 사이트 최종 사용자는 모든 웹 페이지 요청마다, 심지어 다른 브라우저를 사용하여 로그인할 때에도 일관된 경험을 기대합니다. 그러나 자신이 모를 때에도 이들 최종 사용자는 게시 계층 인프라의 서로 다른 서버 노드로 이동합니다. AEM as a Cloud Service은 게시 계층의 모든 노드에 걸쳐 `/home` 폴더 계층 구조(사용자 프로필 정보, 그룹 멤버십 등)를 빠르게 동기화함으로써 이를 수행합니다.
 
 다른 AEM 솔루션과 달리 AEM as a Cloud Service의 사용자 및 그룹 멤버십 동기화는 지점 간 메시징 접근 방식을 사용하지 않으며, 대신 고객 구성이 필요하지 않은 게시-구독 접근 방식을 구현합니다.
 

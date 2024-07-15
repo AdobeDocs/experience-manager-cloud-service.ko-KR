@@ -40,7 +40,7 @@ AEM 앱을 온보딩하고 유니버설 편집기를 사용하도록 계측하�
 @adobe/universal-editor-cors
 ```
 
-계측을 활성화하려면 다음 가져오기를 `index.js`.
+계측을 활성화하려면 `index.js`에 다음 가져오기를 추가해야 합니다.
 
 ```javascript
 import "@adobe/universal-editor-cors";
@@ -57,8 +57,8 @@ React 앱을 구현하지 않거나 서버측 렌더링이 필요한 경우 대�
 항상 최신 버전을 사용하는 것이 좋지만, 변경 사항이 있을 경우 이전 버전의 서비스를 참조할 수 있습니다.
 
 * `https://universal-editor-service.experiencecloud.live/corslib/LATEST` - 최신 UE CORS 라이브러리
-* `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST` - 최신 UE CORS 라이브러리 버전 2.x
-* `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST` - 최신 UE CORS 라이브러리 버전 2.1.x
+* `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST` - 버전 2.x의 최신 UE CORS 라이브러리
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST` - 버전 2.1.x의 최신 UE CORS 라이브러리
 * `https://universal-editor-service.experiencecloud.live/corslib/2.1.1`- 정확한 UE CORS 라이브러리 버전 2.1.1
 
 ## 필요한 OSGi 구성 추가 {#osgi-configurations}
@@ -109,9 +109,9 @@ Universal Editor 서비스에는 편집 중인 앱의 콘텐츠에 대한 올바
 <meta name="urn:adobe:aue:<category>:<referenceName>" content="<protocol>:<url>">
 ```
 
-* `<category>` - 두 가지 옵션을 가진 연결의 분류입니다.
+* `<category>` - 두 가지 옵션이 있는 연결의 분류입니다.
    * `system` - 연결 끝점의 경우
-   * `config` - 대상 [선택적 구성 설정 정의](#configuration-settings)
+   * `config` - [선택적 구성 설정 정의](#configuration-settings)에 대해
 * `<referenceName>` - 연결을 식별하기 위해 문서에서 재사용되는 짧은 이름입니다. 예: `aemconnection`
 * `<protocol>` - Universal Editor 지속성 서비스의 어떤 지속성 플러그인을 사용할 것인지 나타냅니다. 예: `aem`
 * `<url>` - 변경 사항이 지속되어야 하는 시스템의 URL입니다. 예: `http://localhost:4502`
@@ -165,12 +165,12 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 ### 구성 설정 {#configuration-settings}
 
-다음을 사용할 수 있습니다. `config` 필요한 경우 서비스 및 확장 끝점을 설정하려면 연결 URN의 접두사를 사용하십시오.
+필요한 경우 연결 URN에서 `config` 접두사를 사용하여 서비스 및 확장 끝점을 설정할 수 있습니다.
 
 Adobe이 호스팅하는 유니버설 편집기 서비스를 사용하지 않고 호스팅된 자체 버전을 사용하려면 메타 태그에서 이를 설정할 수 있습니다. 범용 편집기에서 제공하는 기본 서비스 끝점을 덮어쓰려면 고유한 서비스 끝점을 설정합니다.
 
 * 메타 이름 - `urn:adobe:aue:config:service`
-* 메타 콘텐츠 - `content="https://adobe.com"` (예)
+* 메타 콘텐츠 - `content="https://adobe.com"`(예)
 
 ```html
 <meta name="urn:adobe:aue:config:service" content="<url>">
@@ -179,7 +179,7 @@ Adobe이 호스팅하는 유니버설 편집기 서비스를 사용하지 않고
 페이지에 대해 특정 확장만 활성화하려는 경우 메타 태그에서 설정할 수 있습니다. 확장을 가져오려면 확장 끝점을 설정합니다.
 
 * 메타 이름: `urn:adobe:aue:config:extensions`
-* 메타 콘텐츠: `content="https://adobe.com,https://anotherone.com,https://onemore.com"` (예)
+* 메타 콘텐츠: `content="https://adobe.com,https://anotherone.com,https://onemore.com"`(예)
 
 ```html
 <meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">

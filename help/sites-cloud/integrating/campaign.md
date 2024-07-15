@@ -25,7 +25,7 @@ Adobe Campaign과의 통합을 위한 AEM as a Cloud Service의 지원에 대해
 
 ## Adobe Campaign v7/v8과 통합 {#acc}
 
-AEMas a Cloud Service 과의 통합에 대한 지원은 구현한 Campaign 버전에 따라 다릅니다.
+AEM as a Cloud Service과의 통합에 대한 지원은 구현한 Campaign 버전에 따라 다릅니다.
 
 | Campaign 버전 | AEMaaCS와 통합 |
 |---|---|

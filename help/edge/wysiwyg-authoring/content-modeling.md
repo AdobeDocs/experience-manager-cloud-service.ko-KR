@@ -18,7 +18,7 @@ Edge Delivery Services 프로젝트를 사용하여 WYSIWYG 작성에 콘텐츠 
 
 ## 사전 요구 사항 {#prerequisites}
 
-WYSIWYG 작성을 Edge Delivery ServicesEdge Delivery Services 와 함께 사용하는 프로젝트는 컨텐츠 소스나 [작성 방법.](/help/edge/wysiwyg-authoring/authoring.md)
+Edge Delivery Services과 함께 WYSIWYG 작성을 사용하는 프로젝트는 컨텐츠 소스나 [작성 방법과 관계없이 다른 Edge Delivery Services 프로젝트의 대부분의 메커니즘을 상속합니다.](/help/edge/wysiwyg-authoring/authoring.md)
 
 프로젝트의 콘텐츠 모델링을 시작하기 전에 먼저 다음 문서를 읽어보십시오.
 
@@ -39,7 +39,7 @@ AEM에서 이 콘텐츠는 Markdown 및 HTML로 직렬화할 수 있는 모든 �
 * **이미지**: 소스, 설명
 * **버튼**: 텍스트, 제목, URL, 유형(기본, 주, 보조)
 
-이러한 구성 요소의 모델은 [Edge Delivery Services을 사용하여 WYSIWYG 작성을 위한 Boilerplate.](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
+이러한 구성 요소의 모델은 WYSIWYG 작성용 [Boilerplate의 일부로 Edge Delivery Services을 사용합니다.](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
 
 ## 블록 {#blocks}
 
@@ -345,7 +345,7 @@ Edge Delivery Services을 사용하여 WYSIWYG를 작성하는 경우 리치 텍
 * **이미지** - AEM의 리소스에 대한 참조가 `image/`로 시작되는 MIME 유형이 있는 자산인 경우, 참조는 `<picture><img src="${reference}"></picture>`로 렌더링됩니다.
 * **링크** - 참조가 AEM에 있고 이미지가 아닌 경우나 값이 `https?://` 또는 `#`으로 시작하는 경우, 참조는 `<a href="${reference}">${reference}</a>`로 렌더링됩니다.
 * **서식 있는 텍스트** - 트리밍된 값이 단락으로 시작되는 경우(`p`, `ul`, `ol`, `h1`-`h6` 등), 값은 서식 있는 텍스트로 렌더링됩니다.
-* **클래스 이름** - `classes` 속성이 다음으로 처리됨 [블록 옵션](/help/edge/developer/markup-sections-blocks.md#block-options) 테이블 헤더에 렌더링됩니다. [단순 블록,](#simple) 또는 의 항목에 대한 값 목록으로 [컨테이너 블록.](#container) 원하는 경우 유용합니다. [블록 스타일을 다르게 지정,](/help/edge/wysiwyg-authoring/create-block.md#block-options) 그러나 완전히 새로운 블록을 만들 필요는 없습니다.
+* **클래스 이름** - `classes` 속성은 [블록 옵션](/help/edge/developer/markup-sections-blocks.md#block-options)(으)로 처리되며 [단순 블록,](#simple)에 대한 테이블 헤더 또는 [컨테이너 블록에 있는 항목에 대한 값 목록으로 렌더링됩니다.](#container) 이 방법은 [블록 스타일을 다르게 지정](/help/edge/wysiwyg-authoring/create-block.md#block-options)하되 완전히 새 블록을 만들 필요는 없는 경우에 유용합니다.
 * **값 목록** - 값이 다중 값 속성이고 첫 번째 값이 이전 값이 아닌 경우, 모든 값은 쉼표로 구분된 목록으로 연결됩니다.
 
 다른 모든 내용은 일반 텍스트로 렌더링됩니다.
@@ -652,11 +652,11 @@ AEM에서 사용할 수 있는 기본 페이지 속성 중 다수는 문서의 �
 
 콘텐츠를 모델링하는 방법을 알았으므로 WYSIWYG 작성 프로젝트를 사용하여 Edge Delivery Services에 대한 블록을 만들 수 있습니다.
 
-문서 보기 [범용 편집기에서 사용하기 위해 계측된 블록 만들기](/help/edge/wysiwyg-authoring/create-block.md) Edge Delivery Services 프로젝트를 사용하여 WYSIWYG 작성에서 유니버설 편집기와 함께 사용할 수 있도록 계측된 블록을 만드는 방법을 알아봅니다.
+WYSIWYG에서 Edge Delivery Services 프로젝트로 작성하는 데 사용되는 블록을 만드는 방법에 대해 알아보려면 문서 [유니버설 편집기에서 사용하기 위해 계측된 블록 만들기](/help/edge/wysiwyg-authoring/create-block.md)를 참조하십시오.
 
-블록 만들기에 익숙하다면 문서를 참조하십시오 [Edge Delivery Services을 사용한 WYSIWYG 작성에 대한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) Edge Delivery Services 및 컨텐츠 작성용 범용 편집기를 사용하여 새 Adobe Experience Manager 사이트를 시작하고 실행할 수 있도록 하기 위해
+블록 만들기에 익숙하다면 문서 [Edge Delivery Services을 사용한 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)를 참조하여 Edge Delivery Services 및 콘텐츠 작성을 위한 유니버설 편집기를 사용하여 새 Adobe Experience Manager 사이트를 시작하고 실행할 수 있도록 하십시오.
 
 >[!TIP]
 >
->AEMas a Cloud Service 를 콘텐츠 소스로 사용하여 WYSIWYG 작성을 위해 활성화된 새 Edge Delivery Services 프로젝트 만들기에 대한 전체적인 설명은 를 참조하십시오. [이 AEM GEM 웨비나.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)
+>AEM as a Cloud Service을 콘텐츠 소스로 사용하여 WYSIWYG 작성을 위해 사용할 수 있는 새 Edge Delivery Services 프로젝트를 만드는 방법에 대한 전체적인 설명은 [이 AEM GEM 웨비나를 참조하십시오.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)
 

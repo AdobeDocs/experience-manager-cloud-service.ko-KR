@@ -18,7 +18,7 @@ ht-degree: 95%
 
 ## 바로 편집 {#in-place-editing}
 
-한 번의 클릭으로 텍스트 기반 구성 요소를 선택하여 [구성 요소 도구 모음](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+한 번의 클릭으로 텍스트 기반 구성 요소를 선택하여 [구성 요소 도구 모음을 표시합니다.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
 
 ![구성 요소 도구 모음](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 

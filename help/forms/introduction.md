@@ -2,7 +2,7 @@
 title: Adobe Experience Manager(AEM) Forms as a Cloud Service 개요
 description: AEM Forms as a Cloud Service는 엔터프라이즈급 양식 및 비즈니스 프로세스를 생성하고, 관리하고, 게시하기 위한 플랫폼입니다.
 source-git-commit: 8fbbdd8b22eaa34e21507a497e388f671be701c7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 100%
 

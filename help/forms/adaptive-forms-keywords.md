@@ -236,4 +236,4 @@ ht-degree: 4%
  </tbody>
 </table>
 
-위에 나열된 키워드 외에도 와 유사한 이름을 사용하지 마십시오. [적응형 Forms JavaScript API](https://adobe.com/go/learn_aemforms_javascript_api_63).
+위에 나열된 키워드 외에 [적응형 Forms JavaScript API](https://adobe.com/go/learn_aemforms_javascript_api_63)와 유사한 이름을 사용하지 마십시오.

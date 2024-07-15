@@ -1,6 +1,6 @@
 ---
 title: App Builder SDK 및 CLI
-description: App Builder 애플리케이션 개발에 사용되는 SDK 및 CLI에 대해 알아봅니다.
+description: App Builder 애플리케이션을 개발하는 데 사용되는 SDK 및 CLI에 대해 알아봅니다.
 version: Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## SDK
 
-Adobe I/O SDK와 이 SDK를 사용하여 App Builder 애플리케이션을 개발하는 방법에 대해 알아봅니다.
+Adobe I/O SDK와 이를 사용하여 App Builder 애플리케이션을 개발하는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339166/?quality=12&learn=on)
 

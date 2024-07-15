@@ -38,13 +38,13 @@ ht-degree: 77%
 
 적응형 양식을 만들려면 다음이 필요합니다.
 
-* **환경에 맞는 적응형 Forms 핵심 구성 요소 활성화**: 프로그램을 만들 때 환경에 대한 적응형 Forms 핵심 구성 요소가 이미 활성화되었습니다. Archetype 39 또는 이전 버전을 기반으로 하는 Forms as a Cloud Service 환경을 이용하는 경우, [해당 환경에 대해 적응형 양식 핵심 구성 요소를 활성화](enable-adaptive-forms-core-components.md)하십시오. 환경에 대해 핵심 구성 요소를 활성화하면 **적응형 양식 (핵심 구성 요소)** 템플릿 및 캔버스 테마가 해당 환경에 추가됩니다. 적응형 양식 핵심 구성 요소는 2023.02.0 릴리스 이전의 프리릴리스 일부로 제공되었으므로 사용 중인 AEM SDK 버전이 2023.02.0 이전 버전이라면 [해당 환경에서 `prerelease` 플래그가 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features)되어 있어야 합니다.
+* **환경에 적응형 Forms 핵심 구성 요소 사용**: 프로그램을 만들 때 환경에 대해 적응형 Forms 핵심 구성 요소가 이미 활성화되었습니다. Archetype 39 또는 이전 버전을 기반으로 하는 Forms as a Cloud Service 환경을 이용하는 경우, [해당 환경에 대해 적응형 양식 핵심 구성 요소를 활성화](enable-adaptive-forms-core-components.md)하십시오. 환경에 대해 핵심 구성 요소를 활성화하면 **적응형 양식 (핵심 구성 요소)** 템플릿 및 캔버스 테마가 해당 환경에 추가됩니다. 적응형 양식 핵심 구성 요소는 2023.02.0 릴리스 이전의 프리릴리스 일부로 제공되었으므로 사용 중인 AEM SDK 버전이 2023.02.0 이전 버전이라면 [해당 환경에서 `prerelease` 플래그가 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ko#new-features)되어 있어야 합니다.
 
 * **적응형 양식 템플릿**: 템플릿은 기본 구조를 제공하고 적응형 양식의 모양(레이아웃 및 스타일)을 정의합니다. 특정 속성과 콘텐츠 구조를 포함하는 서식이 미리 지정된 구성 요소가 있습니다. 또한 테마와 제출 액션을 정의하는 옵션이 제공됩니다. 테마는 모양과 느낌을 정의하고 제출 액션은 적응형 양식 제출 시 수행할 작업을 정의합니다. 예: 수집된 데이터를 데이터 소스로 보내기. 클라우드 서비스는 blank라는 OOTB 템플릿을 제공합니다.
 
    * `blank` 템플릿은 새로운 모든 AEM Forms as a Cloud Service 프로그램에 포함됩니다.
    * 패키지 관리자를 통해 참조 패키지를 설치하여 `blank` 템플릿을 AEM Forms as a Cloud Service 프로그램에 추가할 수 있습니다.
-   * 다음을 수행할 수도 있습니다. [적응형 Forms 템플릿(핵심 구성 요소) 만들기](template-editor.md) 처음부터.
+   * [적응형 Forms 템플릿(핵심 구성 요소)을 ](template-editor.md)할 수도 있습니다.
 
 * **적응형 양식 테마**: 테마에 구성 요소 및 패널에 대한 스타일링 세부 정보가 포함됩니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일은 해당 구성 요소에 반영됩니다.  `Canvas` 템플릿은 새로운 모든 AEM Forms as a Cloud Service 프로그램에 포함됩니다.
   <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
@@ -57,9 +57,9 @@ ht-degree: 77%
 
 1. [!DNL Experience Manager Forms] 작성자 인스턴스에 로그인합니다. 클라우드 인스턴스 또는 로컬 개발 인스턴스일 수 있습니다.
 
-1. Experience Manager 로그인 페이지에서 자격 증명을 입력합니다. 로그인한 후 왼쪽 상단 모서리에서 을(를) 선택합니다. **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**.
+1. Experience Manager 로그인 페이지에서 자격 증명을 입력합니다. 로그인 후 왼쪽 상단 모서리에서 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**&#x200B;를 선택합니다.
 
-1. 선택 **[!UICONTROL 만들기]**  > **[!UICONTROL 적응형 Forms]**. 마법사가 열립니다. 소스 탭에서 템플릿을 선택합니다.
+1. **[!UICONTROL 만들기]** > **[!UICONTROL 적응형 Forms]**&#x200B;을(를) 선택합니다. 마법사가 열립니다. 소스 탭에서 템플릿을 선택합니다.
 
    ![핵심 구성 요소 템플릿](/help/forms/assets/core-components-template.png){width="100%" align="center"}
 
@@ -78,7 +78,7 @@ ht-degree: 77%
 
 1. (선택 사항) 데이터 탭에서 데이터 모델을 선택합니다.
 
-   * **양식 데이터 모델**: A [양식 데이터 모델(FDM)](data-integration.md) 서로 다른 데이터 소스의 엔티티와 서비스를 적응형 양식에 통합할 수 있습니다. 생성 중인 적응형 양식에 여러 데이터 소스에서 데이터를 가져오고 쓰는 작업이 포함된 경우 양식 데이터 모델(FDM)을 선택합니다.
+   * **양식 데이터 모델**: [양식 데이터 모델(FDM)](data-integration.md)을 사용하면 개별 데이터 소스의 엔터티 및 서비스를 적응형 양식에 통합할 수 있습니다. 생성 중인 적응형 양식에 여러 데이터 소스에서 데이터를 가져오고 쓰는 작업이 포함된 경우 양식 데이터 모델(FDM)을 선택합니다.
 
    * **JSON 스키마**: [JSON 스키마](adaptive-form-json-schema-form-model.md) 핵심 구성 요소 기반의 적응형 양식을 통해 생성 또는 사용 중인 데이터의 구조를 나타내는 JSON 스키마를 연결함으로써 조직의 백엔드 시스템과 원활하게 통합할 수 있습니다. 이 연결을 통해 작성자는 스키마 요소를 사용하여 콘텐츠를 적응형 양식에 동적으로 추가할 수 있습니다. 작성 프로세스 중에 컨텐츠 브라우저의 데이터 모델 개체 탭에서 스키마 요소에 쉽게 액세스할 수 있으며, 모든 필드는 만든 적응형 양식에 자동으로 추가됩니다.
 
@@ -98,18 +98,18 @@ ht-degree: 77%
    * **[!UICONTROL 이름:]** 양식의 이름을 지정합니다. 이름이 지정된 노드가 저장소에서 만들어집니다. 제목 입력이 시작되면 이름 필드 값이 자동으로 생성됩니다. 제안 값을 변경할 수 있습니다. 이름 필드에는 영숫자 문자, 하이픈 및 밑줄만 포함될 수 있습니다. 잘못된 모든 입력은 하이픈으로 대체됩니다.
    * **[!UICONTROL 경로:]** 적응형 양식을 저장할 위치를 지정합니다. 적응형 양식을 `/content/dam/formsanddocuments`에서 바로 저장하거나 `/content/dam/formsanddocuments/adaptiveforms`와 같은 폴더를 만들어 적응형 양식을 저장할 수 있습니다. 경로에서 사용하기 전에 폴더를 만들어야 합니다. **[!UICONTROL 경로]** 필드는 폴더를 자동으로 만들지 않습니다.
 
-1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다. 적응형 양식을 만들고 적응형 양식 편집기에서 엽니다. 편집기에 템플릿에서 사용 가능한 콘텐츠가 표시됩니다.  적응형 양식 유형에 따라 연관된 양식 요소에 있는 양식 요소 <!--XFA form template, XML schema or --> JSON 스키마 또는 양식 데이터 모델(FDM)이 **[!UICONTROL 데이터 모델 개체]** 의 탭 **[!UICONTROL 컨텐츠 브라우저]** 를 클릭합니다.
+1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다. 적응형 양식을 만들고 적응형 양식 편집기에서 엽니다. 편집기에 템플릿에서 사용 가능한 콘텐츠가 표시됩니다.  적응형 양식 유형에 따라 연결된 <!--XFA form template, XML schema or --> JSON 스키마 또는 양식 데이터 모델(FDM)에 있는 양식 요소가 사이드바의 **[!UICONTROL 콘텐츠 브라우저]**&#x200B;에 있는 **[!UICONTROL 데이터 모델 개체]** 탭에 표시됩니다.
 
 이제 [적응형 양식 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko#components) 또는 스키마 요소를 드래그 앤 드롭하여 적응형 양식을 작성할 수 있습니다.
 
 
 ## 적응형 양식의 양식 모델 속성 편집 {#edit-form-model-core-components-based-adaptive-forms}
 
-1. 적응형 양식을 선택하고 ![페이지 정보](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL 속성 열기]**. 양식 속성 페이지가 열립니다.
+1. 적응형 양식을 선택하고 ![페이지 정보](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL 속성 열기]**&#x200B;를 선택합니다. 양식 속성 페이지가 열립니다.
 
 1. **[!UICONTROL 양식 모델]** 탭으로 이동하고 양식 모델을 선택합니다. 적응형 양식에 양식 모델이 없는 경우 JSON 스키마 또는 양식 데이터 모델(FDM)을 선택할 수 있습니다. 반면에 적응형 양식이 이미 양식 모델을 기반으로 하는 경우 같은 유형의 다른 양식 모델로 전환할 수 있는 옵션이 있습니다. 예를 들어 양식이 JSON 스키마를 사용하는 경우 다른 JSON 스키마로 쉽게 전환할 수 있으며, 마찬가지로 양식이 양식 데이터 모델(FDM)을 사용하는 경우 다른 양식 데이터 모델(FDM)로 전환할 수 있습니다.
 
-1. 선택 **[!UICONTROL 저장]** 속성을 저장합니다.
+1. 속성을 저장하려면 **[!UICONTROL 저장]**&#x200B;을(를) 선택하십시오.
 
 >[!TAB 기초 구성 요소로 적응형 양식 만들기]
 
@@ -117,11 +117,11 @@ ht-degree: 77%
 
 * **권한**: 사용자를 [!DNL forms-users]에 추가하여 적응형 양식을 만들 수 있는 권한을 제공합니다. 양식별 사용자 그룹에 대한 세부 목록은 [그룹 및 권한](forms-groups-privileges-tasks.md)을 참조하십시오.
 
-* **적응형 양식 테마**: 테마에 구성 요소 및 패널에 대한 스타일링 세부 정보가 포함됩니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일은 해당 구성 요소에 반영됩니다. 다음을 수행할 수 있습니다. [테마 만들기](themes.md) 또는 [기존 테마 가져오기](import-export-forms-templates.md#uploading-a-theme). 일부 샘플 테마에 [최신 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project)을 배포할 수도 있습니다.
+* **적응형 양식 테마**: 테마에 구성 요소 및 패널에 대한 스타일링 세부 정보가 포함됩니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일은 해당 구성 요소에 반영됩니다. [테마를 만들거나](themes.md) [기존 테마를 가져올](import-export-forms-templates.md#uploading-a-theme)수 있습니다. 일부 샘플 테마에 [최신 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project)을 배포할 수도 있습니다.
 
 * **적응형 양식 템플릿**: 템플릿은 기본 구조를 제공하고 적응형 양식의 모양(레이아웃 및 스타일)을 정의합니다. 특정 속성과 콘텐츠 구조를 포함하는 서식이 미리 지정된 구성 요소가 있습니다. 또한 테마와 제출 액션을 정의하는 옵션이 제공됩니다. 테마는 모양과 느낌을 정의하고 제출 액션은 적응형 양식 제출 시 수행할 작업을 정의합니다. 예: 수집된 데이터를 데이터 소스로 보내기. 클라우드 서비스는 두 가지 유형의 템플릿을 지원합니다.
 
-   * **편집 가능한 템플릿**: 다음 작업을 수행할 수 있습니다 [만들기](template-editor.md) 또는 [편집 가능한 기존 템플릿 가져오기](migrate-to-forms-as-a-cloud-service.md). 또한 [최신 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ko#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.)을 배포하여 일부 편집 가능한 샘플 템플릿을 가져올 수 있습니다.
+   * **편집 가능한 템플릿**: [만들기](template-editor.md) 또는 [기존 편집 가능한 템플릿을 가져오기](migrate-to-forms-as-a-cloud-service.md)할 수 있습니다. 또한 [최신 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ko#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.)을 배포하여 일부 편집 가능한 샘플 템플릿을 가져올 수 있습니다.
 
    * **정적 템플릿**: 레거시 템플릿으로서 Adobe Managed Services(AMS) 및 온프레미스 AEM Forms 설치(AEM 6.5 Forms 이하)에서 마이그레이션하는 고객에게만 권장됩니다. 이를 통해 정적 템플릿에 대한 기존의 투자를 계속 이용할 수 있습니다. 적응형 양식을 만들 때 편집 가능한 템플릿을 사용하십시오.
 
@@ -132,9 +132,9 @@ ht-degree: 77%
 
 1. Experience Manager 로그인 페이지에서 자격 증명을 입력합니다.
 
-   로그인한 후 왼쪽 상단 모서리에서 을(를) 선택합니다. **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**.
+   로그인 후 왼쪽 상단 모서리에서 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**&#x200B;를 선택합니다.
 
-1. 선택 **[!UICONTROL 만들기]**  > **[!UICONTROL 적응형 Forms]**. 마법사가 열립니다.
+1. **[!UICONTROL 만들기]** > **[!UICONTROL 적응형 Forms]**&#x200B;을(를) 선택합니다. 마법사가 열립니다.
 1. 소스 탭에서 템플릿을 선택합니다.
 
    * 편집 가능한 템플릿을 선택하면 템플릿에 지정된 테마와 제출 액션이 자동으로 선택되고 **[!UICONTROL 만들기]** 버튼이 활성화됩니다. **[!UICONTROL 스타일]** 또는 **[!UICONTROL 제출]** 탭으로 이동하여 다른 테마를 선택하거나 액션을 제출할 수 있습니다. 선택한 편집 가능한 템플릿이 테마를 지정하지 않으면 만들기 버튼은 비활성화된 상태로 유지됩니다. **[!UICONTROL 스타일]** 탭으로 이동하여 테마를 수동으로 선택할 수 있습니다.
@@ -152,7 +152,7 @@ ht-degree: 77%
 
 1. (선택 사항) **[!UICONTROL 데이터]** 탭에서 데이터 모델을 선택합니다.
 
-   * **양식 데이터 모델**: A [양식 데이터 모델(FDM)](data-integration.md) 서로 다른 데이터 소스의 엔티티와 서비스를 적응형 양식에 통합할 수 있습니다. 생성 중인 적응형 양식에 여러 데이터 소스에서 데이터를 가져오고 쓰는 작업이 포함된 경우 양식 데이터 모델(FDM)을 선택합니다.
+   * **양식 데이터 모델**: [양식 데이터 모델(FDM)](data-integration.md)을 사용하면 서로 다른 데이터 소스의 엔터티 및 서비스를 적응형 양식에 통합할 수 있습니다. 생성 중인 적응형 양식에 여러 데이터 소스에서 데이터를 가져오고 쓰는 작업이 포함된 경우 양식 데이터 모델(FDM)을 선택합니다.
 
    * **JSON 스키마**: [JSON 스키마](adaptive-form-json-schema-form-model.md)는 조직의 백엔드 시스템에서 데이터를 생성 또는 사용하는 구조를 나타냅니다. 스키마를 적응형 양식에 연결하고 해당 요소를 사용하여 동적 콘텐츠를 적응형 양식에 추가할 수 있습니다. 적응형 Forms을 작성할 때 콘텐츠 브라우저의 데이터 모델 개체 탭에서 스키마 요소를 사용할 수 있으며 모든 필드는 작성된 적응형 양식에도 추가됩니다.
 
@@ -180,7 +180,7 @@ ht-degree: 77%
 
 1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다. 적응형 양식을 만들고 적응형 양식 편집기에서 엽니다. 편집기에 템플릿에서 사용 가능한 콘텐츠가 표시됩니다. 또한 필요에 따라 생성된 양식을 사용자 정의할 수 있는 사이드바가 표시됩니다.
 
-   적응형 양식 유형에 따라 연관된 양식 요소에 있는 양식 요소 <!--XFA form template, XML schema or --> JSON 스키마 또는 양식 데이터 모델(FDM)이 **[!UICONTROL 데이터 모델 개체]** 의 탭 **[!UICONTROL 컨텐츠 브라우저]** 를 클릭합니다. 이러한 요소를 드래그 앤 드롭하여 적응형 양식을 작성할 수도 있습니다.
+   적응형 양식 유형에 따라 연결된 <!--XFA form template, XML schema or --> JSON 스키마 또는 양식 데이터 모델(FDM)에 있는 양식 요소가 사이드바의 **[!UICONTROL 콘텐츠 브라우저]**&#x200B;에 있는 **[!UICONTROL 데이터 모델 개체]** 탭에 표시됩니다. 이러한 요소를 드래그 앤 드롭하여 적응형 양식을 작성할 수도 있습니다.
 
 <!-- ## Create an Adaptive Form based on a Form Data Model {#fdm}
 
@@ -235,13 +235,13 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
 적응형 양식(JSON 기반 또는 양식 데이터 모델(FDM))에 대한 양식 모델을 변경할 수 있습니다. 한 양식 모델에서 다른 양식 모델로 변경할 수 없습니다.
 
-1. 적응형 양식을 선택하고 **속성** 아이콘.
+1. 적응형 양식을 선택하고 **속성** 아이콘을 선택합니다.
 1. **[!UICONTROL 양식 모델]** 탭을 열고 다음 중 하나를 수행합니다.
 
-   * 적응형 양식에 양식 모델이 없는 경우 다른 양식 모델을 선택하고 그에 따라 을(를) 선택할 수 있습니다 <!-- a form template, --> XML 또는 JSON 스키마 또는 양식 데이터 모델(FDM).
-   * 적응형 양식이 양식 모델을 기반으로 하는 경우 다른 양식을 선택할 수 있습니다 <!-- form template, --> 동일한 양식 모델에 대한 XML 또는 JSON 스키마 또는 양식 데이터 모델(FDM).
+   * 적응형 양식에 양식 모델이 없는 경우 다른 양식 모델을 선택할 수 있으므로 <!-- a form template, --> XML 또는 JSON 스키마 또는 양식 데이터 모델(FDM)을 선택할 수 있습니다.
+   * 적응형 양식이 양식 모델을 기반으로 하는 경우 동일한 양식 모델에 대해 다른 <!-- form template, --> XML 또는 JSON 스키마 또는 양식 데이터 모델(FDM)을 선택할 수 있습니다.
 
-1. 선택 **[!UICONTROL 저장]** 속성을 저장합니다.
+1. 속성을 저장하려면 **[!UICONTROL 저장]**&#x200B;을(를) 선택하십시오.
 
 적응형 양식 편집기나 적응형 양식 템플릿 편집기에서 양식 모델 속성을 수정할 수도 있습니다.
 
@@ -249,9 +249,9 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 1. ![아이콘 구성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭하여 적응형 양식 컨테이너의 **[!UICONTROL 속성]**&#x200B;을 엽니다.
 1. **[!UICONTROL 데이터 모델]** 탭을 선택하고 다음 중 하나를 수행합니다.
 
-   * 적응형 양식에 양식 모델이 없는 경우 양식 모델을 선택하고 그에 따라 을(를) 선택할 수 있습니다 <!-- a form template, --> XML 또는 JSON 스키마 또는 양식 데이터 모델(FDM).
-   * 적응형 양식이 양식 모델을 기반으로 하는 경우 양식 모델을 변경할 수 없습니다. 다른 항목을 선택할 수 있습니다. <!-- form template, --> 해당되는 경우 동일한 양식 모델에 대한 XML 또는 JSON 스키마 또는 양식 데이터 모델(FDM).
-1. 선택 ![저장](/help/forms/assets/check-button.png) 속성을 저장합니다.
+   * 적응형 양식에 양식 모델이 없는 경우 양식 모델을 선택하고 그에 따라 <!-- a form template, --> XML 또는 JSON 스키마 또는 양식 데이터 모델(FDM)을 선택할 수 있습니다.
+   * 적응형 양식이 양식 모델을 기반으로 하는 경우 양식 모델을 변경할 수 없습니다. 적용 가능한 것과 동일한 양식 모델에 대해 다른 <!-- form template, --> XML 또는 JSON 스키마 또는 양식 데이터 모델(FDM)을 선택할 수 있습니다.
+1. 속성을 저장하려면 ![저장](/help/forms/assets/check-button.png)을(를) 선택하십시오.
 
 ![FDM 스키마 지원](/help/forms/assets/fdmsupport.png){width="100%" align="center"}
 

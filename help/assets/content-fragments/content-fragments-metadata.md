@@ -1,5 +1,5 @@
 ---
-title: 메타데이터 - 조각 속성(자산 - 콘텐츠 조각)
+title: 메타데이터 - 조각 속성(Assets - 콘텐츠 조각)
 description: 콘텐츠 조각의 메타데이터 속성을 보고 편집하는 방법에 대해 알아봅니다.
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
 feature: Content Fragments
@@ -20,7 +20,7 @@ AEM에서 콘텐츠 조각에 대한 메타데이터 속성을 보고 편집하�
 >
 >콘텐츠 조각은 Sites 기능이지만 **자산**&#x200B;으로 저장됩니다.
 >
->콘텐츠 조각 작성용 편집기에는 두 가지가 있습니다. 이 단원에서는 주로 **에셋** 콘솔. 사이트 설명서 를 참조하십시오. [컨텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md), 새 편집기에 대한 세부 정보(주로 **컨텐츠 조각** console).
+>콘텐츠 조각 작성용 편집기에는 두 가지가 있습니다. 이 섹션에서는 주로 **Assets** 콘솔에서 액세스하는 원본 편집기에 대해 설명합니다. 새 편집기(**콘텐츠 조각** 콘솔에서 주로 액세스)에 대한 자세한 내용은 사이트 설명서 [콘텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md)을 참조하십시오.
 
 ## 속성/메타데이터 편집 {#editing-properties-meta-data}
 
@@ -51,4 +51,4 @@ AEM에서 콘텐츠 조각에 대한 메타데이터 속성을 보고 편집하�
    * **작성일**(표시만)
 
    예:
-   ![메타데이터 예](assets/cfm-metadata-02.png)
+   ![메타데이터의 예](assets/cfm-metadata-02.png)

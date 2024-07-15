@@ -25,40 +25,40 @@ ht-degree: 19%
 컨텐츠 전송 도구에서 마이그레이션 세트를 추출하려면 아래 단계를 따르십시오.
 
 >[!NOTE]
->Amazon S3, Azure Data Store 또는 파일 데이터 저장소를 데이터 저장소 유형으로 사용하는 경우 선택적 사전 복사 단계를 실행하여 추출 단계의 속도를 높일 수 있습니다. 사전 복사 단계는 첫 번째 전체 추출 및 수집에 가장 효과적입니다. 다음을 참조하십시오 [대형 콘텐츠 저장소 처리](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) 을 참조하십시오.
+>Amazon S3, Azure Data Store 또는 파일 데이터 저장소를 데이터 저장소 유형으로 사용하는 경우 선택적 사전 복사 단계를 실행하여 추출 단계의 속도를 높일 수 있습니다. 사전 복사 단계는 첫 번째 전체 추출 및 수집에 가장 효과적입니다. 자세한 내용은 [대용량 콘텐츠 저장소 처리](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)를 참조하십시오.
 
-1. 다음에서 마이그레이션 세트 선택: **컨텐츠 전송** 마법사 및 클릭 **Extract** 추출을 시작하려면
+1. **콘텐츠 전송** 마법사에서 마이그레이션 세트를 선택하고 **추출**&#x200B;을 클릭하여 추출을 시작합니다.
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png)
 
    >[!TIP]
-   >이제 추출 성공 직후 수집이 자동으로 시작되도록 예약할 수 있습니다. 다음을 참조하십시오 [Target에 컨텐츠 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) 추가 정보.
+   >이제 추출 성공 직후 수집이 자동으로 시작되도록 예약할 수 있습니다. 자세한 내용은 [Target으로 콘텐츠 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)을 참조하십시오.
 
    >[!IMPORTANT]
    >
-   >추출 키가 유효하고 만료 날짜가 아닌지 확인하십시오. 만료 날짜가 가까워지면 마이그레이션 세트를 선택하고 속성을 클릭하여 추출 키를 갱신할 수 있습니다. 클릭 **갱신**. 이를 통해 다음을 클릭할 수 있는 Cloud Acceleration Manager 로 이동합니다. **추출 키 복사**. 클릭할 때마다 **추출 키 복사**를 입력하면 만든 시점부터 14일 동안 유효한 새 추출 키가 생성됩니다.
+   >추출 키가 유효하고 만료 날짜가 아닌지 확인하십시오. 만료 날짜가 가까워지면 마이그레이션 세트를 선택하고 속성을 클릭하여 추출 키를 갱신할 수 있습니다. **갱신**&#x200B;을 클릭합니다. 이렇게 하면 **추출 키 복사**&#x200B;를 클릭할 수 있는 Cloud Acceleration Manager으로 이동합니다. **추출 키 복사**를 클릭할 때마다 생성 시점부터 14일 동안 유효한 새 추출 키가 생성됩니다.
    >![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
 
-1. 이렇게 하면 추출 대화 상자가 표시됩니다. 클릭 **Extract** 추출 단계를 시작합니다.
+1. 이렇게 하면 추출 대화 상자가 표시됩니다. 추출 단계를 시작하려면 **추출**&#x200B;을 클릭하세요.
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14b.png)
 
    >[!NOTE]
-   >추출 단계 중에 스테이징 컨테이너를 선택적으로 덮어쓸 수 있습니다. If **스테이징 컨테이너 덮어쓰기** 가 비활성화되어 콘텐츠 경로 또는 포함 버전 설정이 변경되지 않은 후속 마이그레이션에 대해 추출 속도를 높일 수 있습니다. 하지만 콘텐츠 경로 또는 포함 버전 설정이 변경된 경우 **스테이징 컨테이너 덮어쓰기** 을 활성화해야 합니다.
+   >추출 단계 중에 스테이징 컨테이너를 선택적으로 덮어쓸 수 있습니다. **스테이징 컨테이너 덮어쓰기**&#x200B;를 사용하지 않도록 설정하면 콘텐츠 경로 또는 포함 버전 설정이 변경되지 않은 후속 마이그레이션에 대한 추출 속도를 높일 수 있습니다. 그러나 콘텐츠 경로 또는 포함 버전 설정이 변경된 경우 **스테이징 컨테이너 덮어쓰기**&#x200B;를 사용하도록 설정해야 합니다.
 
-1. 다음 **추출** 이제 필드에 **실행 중** 추출이 진행 중임을 나타내는 상태.
+1. 이제 **추출** 필드에 추출이 진행 중임을 나타내는 **실행 중** 상태가 표시됩니다.
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam15.png)
 
-   다음을 클릭할 수 있습니다. **진행 상황 보기** 진행 중인 추출을 세부적으로 볼 수 있습니다.
+   진행 중인 추출을 자세히 보려면 **진행률 보기**&#x200B;를 클릭할 수 있습니다.
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
 
-   또한 콘텐츠 전송 페이지를 방문하여 Cloud Acceleration Manager에서 추출 단계 진행 상황을 모니터링하고 다음을 클릭하여 더 자세히 볼 수 있습니다. **...** > **세부 정보 보기**.
+   콘텐츠 전송 페이지를 방문하여 Cloud Acceleration Manager에서 추출 단계 진행 상황을 모니터링하고 **...** > **세부 정보 보기**&#x200B;를 클릭하여 자세히 볼 수도 있습니다.
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam17.png)
 
-1. 추출이 완료되면 다음과 같은 다른 열을 검토합니다. **소스** 및 **경로** 을 참조하십시오. 클릭 **...** > **세부 정보 보기** 추출의 각 단계 기간을 포함하여 세부 정보를 확인합니다. 추출 중에 이 대화 상자를 보면 단계가 어떻게 진행되고 있는지 알 수 있습니다.
+1. 추출이 완료되면 **Source** 및 **경로**&#x200B;와 같은 다른 열에서 채운 마이그레이션 세트에 대한 세부 정보를 검토하십시오. 추출의 각 단계 기간을 포함하여 세부 정보를 보려면 **..** > **세부 정보 보기**&#x200B;를 클릭합니다. 추출 중에 이 대화 상자를 보면 단계가 어떻게 진행되고 있는지 알 수 있습니다.
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18b.png)
 
@@ -75,11 +75,11 @@ ht-degree: 19%
 
 아래 단계를 따르십시오.
 
-1. 다음 위치로 이동 **컨텐츠 전송** 추가 추출을 수행할 마이그레이션 세트를 마법사로 선택하고 선택합니다. **추출**&#x200B;을 클릭하여 추가 추출을 시작합니다.
+1. **콘텐츠 전송** 마법사로 이동하고 추가 추출을 수행할 마이그레이션 세트를 선택합니다. **추출**&#x200B;을 클릭하여 추가 추출을 시작합니다.
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam19.png)
 
-1. 다음 **마이그레이션 세트 추출** 대화 상자가 표시됩니다. 클릭 **Extract**.
+1. **마이그레이션 세트 추출** 대화 상자가 표시됩니다. **추출**&#x200B;을 클릭합니다.
 
    >[!IMPORTANT]
    >**추출 중에 스테이징 컨테이너 덮어쓰기** 옵션을 비활성화해야 합니다.
@@ -88,4 +88,4 @@ ht-degree: 19%
 
 ## 다음 단계 {#whats-next}
 
-컨텐츠 전송 도구의 소스에서 컨텐츠 추출에 대해 학습한 후, 이제 컨텐츠 전송 도구의 수집 프로세스에 대해 배울 준비가 되었습니다. 다음을 참조하십시오 [Target에 컨텐츠 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) 콘텐츠 전송 도구에서 마이그레이션 세트를 수집하는 방법을 배울 수 있습니다.
+컨텐츠 전송 도구의 Source에서 컨텐츠 추출을 학습했다면 이제 컨텐츠 전송 도구의 수집 프로세스에 대해 학습할 준비가 된 것입니다. 콘텐츠 전송 도구에서 마이그레이션 세트를 수집하는 방법을 배울 수 있는 [Target으로 콘텐츠 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)을 참조하십시오.

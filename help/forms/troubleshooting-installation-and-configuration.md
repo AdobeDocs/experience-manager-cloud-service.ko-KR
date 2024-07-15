@@ -18,21 +18,21 @@ Cloud Service 환경을 구성하는 동안 다음 문제 중 일부가 발생�
 
 ## Forms 옵션을 사용할 수 없음
 
-다음 **[!UICONTROL Forms]** 옵션은에서 사용할 수 없음 **[!UICONTROL 탐색]** 페이지를 가리키도록 업데이트하는 중입니다.
+**[!UICONTROL 탐색]** 페이지에서 **[!UICONTROL Forms]** 옵션을 사용할 수 없습니다.
 
-![Forms 옵션을 사용할 수 없음](assets/installation-configuration-forms-option-unavailable-troubleshooting.png)
+![Forms 옵션을 사용할 수 없습니다](assets/installation-configuration-forms-option-unavailable-troubleshooting.png)
 
-활성화하려면 **[!UICONTROL Forms]** 옵션:
+**[!UICONTROL Forms]** 옵션을 활성화하려면:
 
-1. 에 로그인 [Cloud Manager](https://experience.adobe.com/)
-1. 프로그램을 찾은 다음 ![Forms 옵션을 사용할 수 없음](assets/Smock_Edit_18_N.svg) 아이콘. 프로그램의 프로그램 편집 페이지가 열립니다.
-1. 를 엽니다. **[!UICONTROL 솔루션 및 추가 기능]** 탭.
-1. 다음 항목 선택 **[!UICONTROL Forms]** option 및 클릭 **[!UICONTROL 저장]**.
+1. [Cloud Manager](https://experience.adobe.com/)에 로그인
+1. 프로그램을 찾은 다음 ![Forms 옵션을 사용할 수 없음](assets/Smock_Edit_18_N.svg) 아이콘을 클릭합니다. 프로그램의 프로그램 편집 페이지가 열립니다.
+1. **[!UICONTROL 솔루션 및 추가 기능]** 탭을 엽니다.
+1. **[!UICONTROL Forms]** 옵션을 선택하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
    ![Forms 옵션 선택](assets/installation-configuration-select-forms-option.png)
-1. [만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) 및 [실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) 프로덕션 및 비프로덕션 파이프라인 모두.
+1. 프로덕션 파이프라인과 비프로덕션 파이프라인 모두 [만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) 및 [실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)합니다.
 
-파이프라인이 빌드되고 배포되면 **[!UICONTROL Forms]** 옵션 **[!UICONTROL 탐색]** 페이지를 가리키도록 업데이트하는 중입니다.
+파이프라인이 빌드되고 배포되면 **[!UICONTROL 탐색]** 페이지의 **[!UICONTROL Forms]** 옵션이 표시됩니다.
 
 <!--  
 ## Environment creation fails {#environment-creation-fails}
@@ -52,7 +52,7 @@ If the profile exists and issues still persist, contact Adobe Support. -->
 
 사용자가 빌드 파이프라인을 실행할 수 없습니다. 파이프라인이 일정 시간 동안 실행된 후 실패합니다.
 
-이 문제를 해결하려면 Cloud Manager을 열고 **[!UICONTROL 업데이트]** 를 설정하는 것이 좋습니다.
+이 문제를 해결하려면 Cloud Manager을 열고 환경에 대한 **[!UICONTROL 업데이트]** 옵션을 선택한 다음 파이프라인을 실행하십시오.
 
 
 ## 번들이 활성 상태가 아닙니다. {#bundles-inactive-state}
@@ -61,5 +61,5 @@ If the profile exists and issues still persist, contact Adobe Support. -->
 
 1. AEM을 시작하고 모든 번들이 시작될 때까지 완전히 시작될 때까지 기다립니다.
 1. AEM 중지(Ctrl + C).
-1. Forms 배치 `.far` 파일을 설치 폴더에 저장합니다.
+1. Forms `.far` 파일을 설치 폴더에 넣습니다.
 1. AEM 서버를 다시 시작합니다.

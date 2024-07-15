@@ -1,5 +1,5 @@
 ---
-title: GraphQL에서 컨텐츠 조각을 사용하여 Headless 컨텐츠 전달(자산 - 컨텐츠 조각)
+title: GraphQL에서 컨텐츠 조각을 사용하여 Headless 컨텐츠 전달(Assets - 컨텐츠 조각)
 description: GraphQL에서 Headless 콘텐츠 게재를 위해 콘텐츠 조각을 사용하여 AEM Headless CMS를 구현하기 위한 기본 개념을 알아봅니다.
 feature: Content Fragments
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51

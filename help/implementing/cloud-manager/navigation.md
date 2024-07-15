@@ -23,7 +23,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 >[!TIP]
 >
->다음 항목도 확인하십시오. [온보딩 설명서 여정](/help/journey-onboarding/overview.md) AEM Cloud Manager를 사용하여 as a Cloud Service으로 시작하고 실행하는 방법에 대한 전체 개요입니다.
+>또한 Cloud Manager을 사용하여 AEM as a Cloud Service을 시작하고 실행하는 방법에 대한 전체 개요는 [온보딩 설명서 여정](/help/journey-onboarding/overview.md)을 확인하십시오.
 
 ## 내 프로그램 콘솔 {#my-programs}
 
@@ -106,7 +106,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 * 프로그램 이미지(구성된 경우)
 * 프로그램 이름
-* 서비스 유형: **Experience Manager 클라우드** AEM as a * Cloud Service 프로그램용 또는 [**Experience Manager** ams 프로그램용](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
+* 서비스 유형: **AEM as a * Cloud Service 프로그램용 Experience Manager 클라우드** 또는 AMS 프로그램용 [**Experience Manager**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [프로그램 유형](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md): 샌드박스 또는 프로덕션
 * 상태
 * 구성된 솔루션
@@ -116,7 +116,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 * [HIPAA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
-  ![HIPA 배지](assets/hipaa.png)
+  ![HIPAA 배지](assets/hipaa.png)
 
 * [WAF-DDOS 보호](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
@@ -149,7 +149,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 #### 라이선스 탭 {#license-tab}
 
-다음 **라이선스** 탭에서는 [라이선스 대시보드.](/help/implementing/cloud-manager/license-dashboard.md)
+**라이선스** 탭에서는 [라이선스 대시보드에 빠르게 액세스할 수 있습니다.](/help/implementing/cloud-manager/license-dashboard.md)
 
 ### 빠른 링크 {#quick-links}
 
@@ -168,7 +168,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 1. [콜 투 액션](#cta) - 프로그램의 마지막 작업에 기반
 1. [환경 개요](#environments) - 프로그램의 환경 개요
 1. [파이프라인 개요](#pipelines) - 프로그램의 파이프라인 개요
-1. An [성능 개요](#performance) / 프로그램
+1. 프로그램의 [성능 개요](#performance)
 1. [유용한 리소스](#useful-resources) - 유용한 리소스 링크
 
 ### 도구 모음 {#program-overview-toolbar}
@@ -237,7 +237,7 @@ Cloud Manager 헤더에는 프로그램 개요의 탐색 가능한 탭을 표시
 
 ### 성능 카드 {#performance}
 
-다음 **성능** 카드는 의 개요를 제공합니다. **[CDN 대시보드.](/help/implementing/cloud-manager/cdn-performance.md)**
+**성능** 카드는 **[CDN 대시보드에 대한 개요를 제공합니다.](/help/implementing/cloud-manager/cdn-performance.md)**
 
 ![성능 카드](/help/implementing/cloud-manager/assets/cdn-performance-dashboard.png)
 

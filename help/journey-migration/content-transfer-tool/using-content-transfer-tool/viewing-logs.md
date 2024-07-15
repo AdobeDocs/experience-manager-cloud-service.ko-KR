@@ -31,15 +31,15 @@ ht-degree: 36%
 
 그런 다음 아래 단계를 수행합니다.
 
-1. 마이그레이션 세트를 선택하고 **로그 보기** 작업 표시줄에서 그러면 로그 대화 상자가 표시됩니다. 클릭 **추출 로그** 새 탭에서 로그를 봅니다.
+1. 마이그레이션 세트를 선택하고 작업 표시줄에서 **로그 보기**&#x200B;를 클릭합니다. 그러면 로그 대화 상자가 표시됩니다. 새 탭에서 로그를 보려면 **추출 로그**&#x200B;를 클릭하십시오.
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam25.png) \
-   또는 **완료됨** 상태: 새 탭에서 로그를 봅니다.
+   또는 **FINISHED** 상태를 클릭하여 새 탭에서 로그를 봅니다.
 
 1. 사용자 인터페이스를 사용하지 않고 로그를 추적하려면 소스 AEM 환경에 SSH를 사용하여 `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`를 추적할 수 있습니다.
 
 ### 수집 로그
 
-수집 로그를 보려면 Cloud Acceleration Manager의 수집 작업 목록으로 이동한 후 원하는 마이그레이션 작업을 찾아 세 점(**...**)을 클릭하여 제품에서 사용할 수 있습니다. 그런 다음 을(를) 클릭합니다 **로그 다운로드** 로그를 다운로드하려면 다음을 수행하십시오.
+수집 로그를 보려면 Cloud Acceleration Manager의 수집 작업 목록으로 이동한 다음 원하는 마이그레이션 작업을 찾아 작업의 세 점(**...**)을 클릭합니다. **로그 다운로드**&#x200B;를 클릭하여 로그를 다운로드할 수 있습니다.
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam28.png)

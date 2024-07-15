@@ -24,7 +24,7 @@ Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 활
 * 작성 clientlib `cq.authoring.editor.sites.page`에 의존합니다.
 * 적절한 `cq.authoring.editor.sites.page.hook` 카테고리에 속합니다.
 
-다음을 참조하십시오 [AEM에서 클라이언트측 라이브러리 as a Cloud Service 사용](/help/implementing/developing/introduction/clientlibs.md).
+[AEM as a Cloud Service에서 클라이언트측 라이브러리 사용](/help/implementing/developing/introduction/clientlibs.md)을 참조하십시오.
 
 ## 오버레이 {#overlays}
 
@@ -32,9 +32,9 @@ Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 활
 
 오버레이를 만들 때 원본의 1:1 사본은 필요하지 않습니다. [Sling 리소스 병합](/help/implementing/developing/introduction/sling-resource-merger.md)을 통해 상속되기 때문입니다.
 
-자세한 내용은 [JS 설명서 세트](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
+자세한 내용은 [JS 설명서 집합](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)을 참조하세요.
 
-오버레이에 대한 자세한 내용은 [Adobe Experience Manager as a Cloud Service용 오버레이](/help/implementing/developing/introduction/overlays.md).
+오버레이에 대한 자세한 내용은 [Adobe Experience Manager as a Cloud Service에 대한 오버레이](/help/implementing/developing/introduction/overlays.md)를 참조하십시오.
 
 ## 새 레이어(모드) 추가 {#add-new-layer-mode}
 
@@ -160,7 +160,7 @@ MSM 보기를 위한 레이어(모드)를 만드는 방법을 보여 주는 샘�
 
 ## 새 페이지 작업 추가 {#add-a-new-page-action}
 
-페이지 도구 모음에 새 페이지 작업을 추가하려면(예: ) **사이트로 돌아가기** (콘솔) 작업.
+페이지 도구 모음에 새 페이지 작업을 추가하려면(예: **사이트로 돌아가기**(콘솔) 작업)
 
 ### 코드 샘플 {#code-sample-3}
 

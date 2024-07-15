@@ -56,7 +56,7 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 프로덕션 및 비프로덕션 외에도 배포하는 코드 유형에 따라 파이프라인을 구분할 수 있습니다.
 
 * **[전체 스택 파이프라인](#full-stack-pipeline)** - HTTPD/Dispatcher 구성과 함께 하나 이상의 AEM 서버 애플리케이션을 포함하는 백엔드 및 프론트엔드 코드 빌드를 동시에 배포합니다.
-* **[파이프라인 구성](#config-deployment-pipeline)** - WAF 규칙을 포함한 트래픽 필터 규칙을 몇 분 내에 구성하고 배포할 수 있습니다.
+* **[파이프라인 구성](#config-deployment-pipeline)** - WAF 규칙을 포함한 트래픽 필터 규칙을 몇 분 내에 구성하고 배포합니다.
 * **[프론트엔드 파이프라인](#front-end)** - 하나 이상의 클라이언트측 UI 애플리케이션을 포함하는 프론트엔드 코드 빌드를 배포합니다.
 * **[웹 계층 구성 파이프라인](#web-tier-config-pipelines)** - HTTPD/Dispatcher 구성을 배포합니다.
 
@@ -118,7 +118,7 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 
 구성 파이프라인을 사용하여 몇 분 내에 WAF 규칙을 포함한 트래픽 필터 규칙을 구성하고 배포할 수 있습니다.
 
-다음을 참조하십시오 [WAF 규칙을 포함한 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 저장소 구성을 관리하여 올바로 배포하는 방법에 대해 알아봅니다.
+WAF 규칙을 포함한 [트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md)을(를) 참조하여 올바르게 배포되도록 저장소의 구성을 관리하는 방법에 대해 알아보십시오.
 
 ### 구성 파이프라인 구성 {#configure-config-deployment}
 

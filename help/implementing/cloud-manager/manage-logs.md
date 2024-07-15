@@ -39,7 +39,7 @@ AEM as a Cloud Service에서 개발 프로세스를 지원하기 위해 로그�
 
    ![로그 다운로드 대화 상자](assets/download-preview.png)
 
-   만일의 경우 [추가 게시 영역](/help/operations/additional-publish-regions.md) 은 환경에 대해 활성화되어 있으며 아래와 같이 각 지역을 선택하고 로그를 별도로 다운로드할 수 있습니다.
+   사용자 환경에 대해 [추가 Publish 지역](/help/operations/additional-publish-regions.md)을 사용하도록 설정한 경우 아래와 같이 각 지역을 선택하고 해당 로그를 별도로 다운로드할 수 있습니다.
 
    ![추가 게시 영역에 대한 로그 다운로드](assets/download-publish-region-logs.png)
 
@@ -92,14 +92,14 @@ Environment Id Service    Name
 
 >[!TIP]
 >
->체크아웃 [이 비디오 리소스](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) AEM as a Cloud Service 디버깅에 대해 자세히 알아보십시오.
+>AEM as a Cloud Service 디버깅에 대한 자세한 내용을 보려면 [이 비디오 리소스](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab)을(를) 확인하십시오.
 
 Cloud Manager API 및 Adobe I/O CLI에 대한 자세한 내용은 다음 추가 리소스를 참조하십시오.
 
 * [Cloud Manager API 설명서](https://developer.adobe.com/experience-cloud/cloud-manager/)
 * [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 
-AEM의 로그 파일에 대한 자세한 내용은 다음 추가 리소스를 as a Cloud Service으로 참조하십시오.
+AEM as a Cloud Service의 로그 파일에 대한 자세한 내용은 다음 추가 리소스를 참조하십시오.
 
 * [Cloud 5 AEM 로그 파일](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html)
 * [로그를 사용하여 AEM as a Cloud Service 디버깅](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html)

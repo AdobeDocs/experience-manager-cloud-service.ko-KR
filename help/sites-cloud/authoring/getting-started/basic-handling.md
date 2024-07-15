@@ -17,7 +17,7 @@ ht-degree: 89%
 >[!NOTE]
 >
 >* 몇 가지 기능을 일부 콘솔에서 사용할 수 없거나, 추가 기능을 일부 콘솔에서 사용할 수 있습니다. 개별 콘솔에 대한 특정 정보 및 관련 기능은 다른 페이지에서 더 자세히 다룹니다.
->* AEM 전체에서 키보드 단축키를 사용할 수 있습니다. 특히 다음의 경우에 [콘솔 사용](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) 및 [페이지 편집](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
+>* AEM 전체에서 키보드 단축키를 사용할 수 있습니다. 특히 [콘솔을 사용](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) 및 [페이지를 편집](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)하는 경우.
 
 {{edge-delivery-authoring}}
 
@@ -31,7 +31,7 @@ AEM 사용자 인터페이스는 터치가 활성화되어 있습니다. 터치 
 
 ![탐색 패널](/help/sites-cloud/authoring/assets/navigation.png)
 
-AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트** 콘솔을 기반으로 합니다. 선택 **사이트** 시작합니다.
+AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트** 콘솔을 기반으로 합니다. 시작하려면 **사이트**&#x200B;에서 선택하십시오.
 
 ## 제품 탐색 {#product-navigation}
 
@@ -39,7 +39,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
 ![탐색 튜토리얼](/help/sites-cloud/authoring/assets/tutorial.png)
 
-선택 **다음** 개요의 다음 페이지로 이동합니다. 선택 **닫기** 닫으려면 개요 대화 상자의 외부를 선택하십시오.
+개요의 다음 페이지로 이동하려면 **다음**&#x200B;을 선택합니다. 닫으려면 **닫기**&#x200B;를 선택하거나 개요 대화 상자 바깥쪽을 선택합니다.
 
 모든 슬라이드를 표시하지 않거나 **다시 표시 안 함** 옵션을 선택하지 않은 한 이후에 콘솔에 액세스하면 개요가 다시 시작됩니다.
 
@@ -53,7 +53,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
 전역 탐색에는 다음과 같은 두 개의 패널이 있으며 화면의 왼쪽 여백에 아이콘으로 표시됩니다.
 
-* **[탐색](#navigation-panel)** - AEM에 로그인할 때 나침반 및 기본 패널로 표시됨
+* **[탐색](#navigation-panel)** - AEM에 로그인할 때 나침반과 기본 패널로 표시됩니다.
 * **[도구](#tools-panel)** - 망치로 표시됨
 
 이러한 패널에서 사용 가능한 옵션은 아래에 설명되어 있습니다.
@@ -171,7 +171,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
 * **콘솔 도구 모음**
 
-  위치에 따라 **도움말** 아이콘 은 적절한 리소스를 엽니다.
+  위치에 따라 **도움말** 아이콘을 사용하면 적절한 리소스가 열립니다.
 
   ![도움말 아이콘](/help/sites-cloud/authoring/assets/help-console.png)
 
@@ -475,6 +475,6 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
 ### 필터 {#filter}
 
-다음과 유사한 패널이 열립니다. [검색](/help/sites-cloud/authoring/getting-started/search.md) 적절한 위치 필터가 이미 설정되어 있는 상태에서 보려는 콘텐츠를 추가로 필터링할 수 있습니다.
+적절한 위치 필터가 이미 설정된 [검색](/help/sites-cloud/authoring/getting-started/search.md)과 유사한 패널이 열리므로, 보려는 콘텐츠를 추가로 필터링할 수 있습니다.
 
 ![필터 예](/help/sites-cloud/authoring/assets/filter.png)

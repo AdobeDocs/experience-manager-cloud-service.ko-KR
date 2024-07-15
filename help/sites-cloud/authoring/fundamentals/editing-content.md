@@ -151,9 +151,9 @@ ht-degree: 94%
 
      ![구성 요소 삽입](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
-   * 데스크탑 디바이스를 사용하는 경우 **여기에 구성 요소 드래그** 상자.
+   * 데스크톱 장치를 사용하는 경우 **구성 요소를 여기로 드래그하십시오** 상자를 두 번 클릭합니다.
 
-   * 다음 **새 구성 요소 삽입** 필수 구성 요소를 선택할 수 있는 대화 상자가 열립니다.
+   * 필요한 구성 요소를 선택할 수 있는 **새 구성 요소 삽입** 대화 상자가 열립니다.
 
      ![새 구성 요소 삽입 대화 상자](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
@@ -173,7 +173,7 @@ ht-degree: 94%
 
    자산 유형에 적절한 구성 요소가 필요한 위치에 만들어지게 됩니다. 여기에 선택한 자산이 포함됩니다.
 
-1. [편집](#edit-content) 필요한 경우 구성 요소입니다.
+1. 필요한 경우 구성 요소를 [편집](#edit-content)합니다.
 
 >[!NOTE]
 >
@@ -261,7 +261,7 @@ ht-degree: 94%
 
 * **경험 조각 변형으로 변환**
 
-  이렇게 하면 다음을 만들 수 있습니다. [경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) 선택한 구성 요소에서 선택하거나 기존 경험 조각에 추가합니다.
+  선택한 구성 요소에서 [경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)을 만들거나 기존 경험 조각에 추가할 수 있습니다.
 
   ![경험 조각 변형으로 변환 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 
@@ -341,7 +341,7 @@ ht-degree: 94%
 
    ![페이지 구성 요소의 구성 요소 도구 모음](/help/sites-cloud/authoring/assets/editing-layout-toolbar.png)
 
-   다음 항목 선택 **레이아웃** 구성 요소 레이아웃을 조정하는 작업
+   **레이아웃** 작업을 선택하여 구성 요소의 레이아웃을 조정합니다.
 
    ![구성 요소 도구 모음의 레이아웃 버튼](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 

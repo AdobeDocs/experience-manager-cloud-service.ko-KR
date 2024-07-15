@@ -1,5 +1,5 @@
 ---
-title: 콘텐츠 조각 - 구성 브라우저 (에셋 - 콘텐츠 조각)
+title: 콘텐츠 조각 - 구성 브라우저(Assets - 콘텐츠 조각)
 description: 구성 브라우저에서 콘텐츠 조각 기능을 활성화하는 방법을 알아봅니다.
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 feature: Content Fragments
@@ -41,7 +41,7 @@ ht-degree: 80%
 
 >[!NOTE]
 >
->다음을 참조하십시오 [구성 브라우저](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+>[구성 브라우저](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ ht-degree: 80%
 
 ### 자산 폴더에 구성 적용 {#apply-the-configuration-to-your-assets-folder}
 
-구성 시 **글로벌** 가 콘텐츠 조각 기능에 대해 활성화된 후 모든 에셋 폴더에 적용됩니다.
+**전역** 구성이 콘텐츠 조각 기능에 대해 활성화된 경우 모든 Assets 폴더에 적용됩니다.
 
 비교 가능한 Assets 폴더와 함께 다른 구성(전역 제외)을 사용하려면 연결을 정의해야 합니다. 해당 폴더의 **폴더 속성**&#x200B;에 있는 **클라우드 서비스** 탭에서 해당 **구성**&#x200B;을 선택하여 연결합니다.
 

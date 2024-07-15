@@ -19,26 +19,26 @@ ht-degree: 2%
 
 >[!INFO]
 >
->이 기능은 CTT(Content Transfer Tool) 버전 1.8.x 릴리스에서 사용할 수 있습니다. AEM Cloud Service 대상 환경은 버전 6158 이상을 실행 중이어야 합니다. 또한 소스 환경을 설정하여 실행해야 합니다 [사전 복사](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). 유효성 검사 기능은 소스에서 azcopy.config 파일을 찾습니다. 이 파일을 찾지 못하면 유효성 검사가 실행되지 않습니다. azcopy.config 파일을 구성하는 방법에 대한 자세한 내용은 [이 페이지](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
+>이 기능은 CTT(Content Transfer Tool) 버전 1.8.x 릴리스에서 사용할 수 있습니다. AEM Cloud Service 대상 환경은 버전 6158 이상을 실행 중이어야 합니다. [사전 복사](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step)를 실행하려면 원본 환경도 설정해야 합니다. 유효성 검사 기능은 소스에서 azcopy.config 파일을 찾습니다. 이 파일을 찾지 못하면 유효성 검사가 실행되지 않습니다. azcopy.config 파일을 구성하는 방법에 대한 자세한 내용은 [이 페이지](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file)를 참조하십시오.
 
 컨텐츠 전송 유효성 검사는 선택적 기능입니다. 이 기능을 활성화하면 추출 및 수집을 수행하는 데 걸리는 시간이 모두 늘어납니다. 이 기능을 사용하려면 다음 단계에 따라 소스 AEM 환경의 시스템 콘솔에서 활성화하십시오.
 
-1. 다음 위치로 이동하여 소스 인스턴스의 Adobe Experience Manager 웹 콘솔로 이동합니다. **도구 - 작업 - 웹 콘솔** 또는 을 통해 URL로 바로 이동할 수 있습니다 *https://serveraddress:serverport/system/console/configMgr*
-1. 검색 대상 **컨텐츠 전송 도구 추출 서비스 구성**
+1. **도구 - 작업 - 웹 콘솔**(으)로 이동하거나 *https://serveraddress:serverport/system/console/configMgr*&#x200B;의 URL로 직접 이동하여 소스 인스턴스에서 Adobe Experience Manager 웹 콘솔로 이동합니다.
+1. **콘텐츠 전송 도구 추출 서비스 구성 검색**
 1. 연필 아이콘 버튼을 사용하여 구성 값을 편집합니다
-1. 활성화 **추출 중 마이그레이션 유효성 검사 활성화** 설정 후 누르기 **저장**:
+1. **추출 중 마이그레이션 유효성 검사 사용** 설정을 사용하도록 설정한 다음 **저장**&#x200B;을 누르십시오.
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets/CTTvalidation1.png)
 
 이 설정이 활성화되고 대상 AEM Cloud Service 환경이 호환되는 릴리스를 실행하면 뒤따르는 모든 추출 및 수집 중에 마이그레이션 유효성 검사가 발생합니다.
 
-컨텐츠 전송 도구 설치 방법에 대한 자세한 내용은 [컨텐츠 전송 도구 시작하기](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md).
+콘텐츠 전송 도구 설치 방법에 대한 자세한 내용은 [콘텐츠 전송 도구 시작하기](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)를 참조하십시오.
 
 ## 컨텐츠 전송의 유효성 검사 방법 {#how-to-validate-a-content-transfer}
 
 소스 AEM 환경에서 마이그레이션 유효성 검사를 활성화한 상태에서 추출을 시작합니다.
 
-If **추출 중 스테이징 컨테이너 덮어쓰기** 가 활성화되면 추출과 관련된 모든 노드가 추출 경로 다이제스트에 기록됩니다. 이 설정을 사용할 때는 를 활성화해야 합니다. **수집하기 전에 클라우드 인스턴스의 기존 콘텐츠 지우기** 수집 중에 를 설정합니다. 그렇지 않으면 수집 다이제스트에서 누락된 노드가 있을 수 있습니다. 이는 이전 수집에서 대상에 이미 존재하는 노드입니다.
+**추출 중 스테이징 컨테이너 덮어쓰기**&#x200B;가 활성화된 경우 추출과 관련된 모든 노드가 추출 경로 다이제스트에 기록됩니다. 이 설정을 사용하는 경우 수집 중에 **수집 전에 클라우드 인스턴스에서 기존 콘텐츠 지우기** 설정을 사용하도록 설정하는 것이 중요합니다. 그렇지 않으면 수집 다이제스트에서 누락된 노드가 있을 수 있습니다. 이는 이전 수집에서 대상에 이미 존재하는 노드입니다.
 
 이에 대한 그래픽 설명은 다음 예를 참조하십시오.
 
@@ -74,7 +74,7 @@ If **추출 중 스테이징 컨테이너 덮어쓰기** 가 활성화되면 추
 
 추출이 완료되면 수집을 시작합니다.
 
-수집 로그의 맨 위에는 과 유사한 항목이 포함됩니다. `aem-ethos/tools:1.2.438`. 이 버전 번호가 **1.2.438** 또는 그 이상이며, 그렇지 않은 경우 사용 중인 AEM as a Cloud Service 릴리스에서는 유효성 검사가 지원되지 않습니다.
+수집 로그의 맨 위에는 `aem-ethos/tools:1.2.438`과(와) 유사한 항목이 포함됩니다. 이 버전 번호가 **1.2.438** 이상인지 확인하십시오. 그렇지 않으면 사용 중인 AEM as a Cloud Service 릴리스에서 유효성 검사가 지원되지 않습니다.
 
 수집이 완료되고 유효성 검사가 시작되면 수집 로그에 다음 로그 항목이 기록됩니다.
 
@@ -129,22 +129,22 @@ Migration validation took 0 minutes
 
 위의 실패 예제는 수집을 실행한 다음 지우기 를 비활성화한 상태로 동일한 수집을 다시 실행하여 수집 중에 노드가 포함되지 않도록 함으로써 달성했습니다. 모든 것이 대상에 이미 존재합니다.
 
-유효성 검사 보고서는 수집 로그에 포함될 뿐만 아니라 **수집 작업** cloud Acceleration Manager의 사용자 인터페이스. 이렇게 하려면 세 점(**...**)을 클릭한 다음 을 클릭합니다 **유효성 검사 보고서** 을 클릭하여 유효성 검사 보고서를 확인합니다.
+유효성 검사 보고서는 수집 로그에 포함될 뿐만 아니라 Cloud Acceleration Manager의 **수집 작업** 사용자 인터페이스에서도 액세스할 수 있습니다. 이렇게 하려면 세 점(**..**)을 클릭한 다음 드롭다운에서 **유효성 검사 보고서**&#x200B;를 클릭하여 유효성 검사 보고서를 확인합니다.
 
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
 
 ## 주도자 마이그레이션의 유효성을 검사하는 방법 {#how-to-validate-principal-migration}
 
-다음을 참조하십시오 [사용자 매핑 및 사용자 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 주요 마이그레이션에 대한 세부 정보 및 필요한 이유를 읽어 보십시오.
+사용자 마이그레이션 세부 정보 및 필요한 이유를 읽어 보려면 [사용자 매핑 및 사용자 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)을 참조하십시오.
 
 추출 및 수집이 성공적으로 완료되면 주요 마이그레이션에 대한 요약 및 보고서를 사용할 수 있습니다. 이 정보는 어떤 사용자 및 그룹이 성공적으로 마이그레이션되었는지 확인하고, 일부가 마이그레이션되지 않은 이유를 확인하는 데 사용할 수 있습니다.
 
-이 정보를 보려면 Cloud Acceleration Manager 로 이동하십시오. 프로젝트 카드를 클릭하고 컨텐츠 전송 카드를 클릭합니다. 다음으로 이동 **수집 작업** 확인할 수집을 찾습니다. 세 점(**...**)을 클릭하여 해당 수집을 수행합니다. **사용자 요약 보기** 을 클릭합니다.
+이 정보를 보려면 Cloud Acceleration Manager으로 이동하십시오. 프로젝트 카드를 클릭하고 컨텐츠 전송 카드를 클릭합니다. **수집 작업**(으)로 이동하여 확인할 수집을 찾습니다. 해당 수집에 대한 세 점(**..**)을 클릭한 다음 드롭다운에서 **사용자 요약 보기**&#x200B;를 클릭합니다.
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-요약 정보가 포함된 대화 상자가 표시됩니다. 도움말 아이콘을 사용하여 자세한 설명을 읽을 수 있습니다. 다음을 클릭합니다. **보고서 다운로드** 단추를 클릭하여 전체 CSV(쉼표로 구분) 보고서를 다운로드합니다.
+요약 정보가 포함된 대화 상자가 표시됩니다. 도움말 아이콘을 사용하여 자세한 설명을 읽을 수 있습니다. **보고서 다운로드** 단추를 클릭하여 전체 CSV(쉼표로 구분) 보고서를 다운로드합니다.
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
@@ -156,7 +156,7 @@ Migration validation took 0 minutes
 
 ### 유효성 검사에 실패했습니다. 이제 어쩌지? {#validation-fail}
 
-첫 번째 단계는 수집이 실제로 실패했는지 또는 추출된 콘텐츠가 대상 환경에 이미 있는지 확인하는 것입니다. 이 문제는 수집이 와 반복되는 경우 발생할 수 있습니다. **수집하기 전에 클라우드 인스턴스의 기존 콘텐츠 지우기** 옵션이 비활성화되었습니다.
+첫 번째 단계는 수집이 실제로 실패했는지 또는 추출된 콘텐츠가 대상 환경에 이미 있는지 확인하는 것입니다. 이 문제는 **수집하기 전에 클라우드 인스턴스에서 기존 콘텐츠 지우기** 옵션이 비활성화된 상태로 수집이 반복되는 경우 발생할 수 있습니다.
 
 확인하려면 유효성 검사 보고서에서 경로를 선택하고 대상 환경에 있는지 확인합니다. 게시 환경의 경우 페이지 및 에셋을 직접 확인하는 것으로 제한될 수 있습니다. 이 단계에 대한 지원이 필요한 경우 고객 지원 센터에서 티켓을 엽니다.
 
@@ -164,8 +164,8 @@ Migration validation took 0 minutes
 
 추출 및 수집 다이제스트의 일부 경로는 수집 완료 후 2시간 이내에 마이그레이션 유효성 검사 결과를 계산할 수 있도록 이러한 파일의 크기를 관리 가능하게 유지하기 위해 의도적으로 제외됩니다.
 
-현재 다이제스트에서 제외되는 경로는 다음과 같습니다. `cqdam.text.txt` 렌디션, 노드 `/home`, 및 다음 내의 노드 `/jcr:system`.
+현재 다이제스트에서 제외되는 경로에는 `cqdam.text.txt` 렌디션, `/home` 내의 노드 및 `/jcr:system` 내의 노드가 포함됩니다.
 
 ### 폐쇄된 사용자 그룹이 작동하지 않음 {#validating-cugs}
 
-다음을 참조하십시오 [폐쇄된 사용자 그룹 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) CUG(폐쇄형 사용자 그룹) 정책을 사용할 때의 추가 고려 사항입니다.
+CUG(폐쇄형 사용자 그룹) 정책을 사용할 때 추가 고려 사항은 [폐쇄형 사용자 그룹 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)을 참조하십시오.

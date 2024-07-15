@@ -26,7 +26,7 @@ ht-degree: 79%
 
 ## 일반 사용법 {#general-usage}
 
-구성 요소는에서 사용할 수 있습니다. **구성 요소** 다음과 같은 경우 페이지 편집기의 측면 패널에 있는 탭 [페이지 편집.](/help/sites-cloud/authoring/page-editor/edit-content.md)
+구성 요소는 [페이지를 편집할 때 페이지 편집기의 측면 패널에 있는 **구성 요소** 탭에서 사용할 수 있습니다.](/help/sites-cloud/authoring/page-editor/edit-content.md)
 
 구성 요소를 선택한 다음 페이지에서 필요한 위치로 끌어올 수 있습니다. 그런 뒤에, 다음을 사용하여 편집할 수 있습니다.
 
@@ -34,7 +34,7 @@ ht-degree: 79%
 * [콘텐츠 편집](/help/sites-cloud/authoring/page-editor/edit-content.md)
 * [콘텐츠 편집 - 전체 화면 모드](/help/sites-cloud/authoring/page-editor/edit-content.md#edit-content-full-screen-mode)
 
-페이지에 구성 요소를 추가하는 방법에 대한 자세한 내용은 [페이지 컨텐츠 편집](/help/sites-cloud/authoring/page-editor/edit-content.md)
+페이지에 구성 요소를 추가하는 방법에 대한 자세한 내용은 [페이지 콘텐츠 편집](/help/sites-cloud/authoring/page-editor/edit-content.md)을 참조하십시오.
 
 ## 모든 구성 요소 개요 {#overview-of-all-components}
 

@@ -36,7 +36,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->사용자는 다음 구성원의 구성원이어야 합니다. `project-administrators` 언어 복사 기능을 사용할 그룹입니다.
+>언어 복사 기능을 사용하려면 사용자가 `project-administrators` 그룹의 구성원이어야 합니다.
 
 ## 모범 사례 {#best-practices}
 

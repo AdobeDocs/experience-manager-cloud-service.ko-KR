@@ -21,7 +21,7 @@ ContextHub 도구 모음은 ContextHub 저장소의 데이터를 표시하고 �
 * UI 모드는 도구 모음의 왼쪽에 표시되는 아이콘입니다. 아이콘을 선택하면 도구 모음에 포함된 UI 모듈이 표시됩니다.
 * UI 모듈은 하나 이상의 ContextHub 저장소에서 가져온 데이터를 표시합니다. 일부 UI 모듈을 사용하면 스토어 데이터를 조작할 수도 있습니다.
 
-ContextHub는 여러 UI 모드 및 UI 모듈을 설치합니다. 관리자가 다음을 수행할 수 있습니다. [구성된 ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) 다른 항목을 표시합니다.
+ContextHub는 여러 UI 모드 및 UI 모듈을 설치합니다. 관리자가 [다른 ContextHub를 표시하도록 ](/help/implementing/developing/personalization/configuring-contexthub.md)을(를) 구성했을 수 있습니다.
 
 ## ContextHub 도구 모음 표시 {#revealing-the-contexthub-toolbar}
 

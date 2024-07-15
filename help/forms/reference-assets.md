@@ -10,14 +10,14 @@ ht-degree: 2%
 
 ---
 
-# Forms용 참조 자산 as a Cloud Service {#reference-themes}
+# Formsas a Cloud Service 용 Assets 참조 {#reference-themes}
 
-다음을 설치하여 참조 테마, 템플릿 및 양식 데이터 모델(FDM)을 가져올 수 있습니다. [참조 자산 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). 적응형 Forms 개발을 신속하게 시작하고 가속화하는 데 도움이 됩니다. 다음을 사용할 수 있습니다. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) Forms as a Cloud Service 환경에 이 패키지를 배포합니다.
+[참조 Assets 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip)를 설치하여 참조 테마, 템플릿 및 양식 데이터 모델(FDM)을 가져올 수 있습니다. 적응형 Forms 개발을 신속하게 시작하고 가속화하는 데 도움이 됩니다. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html)를 사용하여 이 패키지를 Forms as a Cloud Service 환경에 배포할 수 있습니다.
 패키지에 포함된 참조 자산은 다음과 같습니다.
 
 ## 테마 {#themes}
 
-[테마](/help/forms/themes.md) css에 대한 깊은 지식 없이 양식을 스타일링할 수 있습니다. 다음 테마가 포함되어 있습니다.
+[테마](/help/forms/themes.md)를 사용하면 CSS에 대한 깊은 지식 없이 양식을 스타일링할 수 있습니다. 다음 테마가 포함되어 있습니다.
 
 * 베릴
 * 고요해
@@ -31,7 +31,7 @@ ht-degree: 2%
 
 이 패키지에 포함된 테마는 응답형이며, 이러한 테마의 스타일은 모바일 및 데스크탑 디스플레이에 대해 정의됩니다. 다양한 장치의 최신 브라우저는 이러한 테마 중 하나와 함께 적용된 양식을 번거로움 없이 렌더링할 수 있습니다.
 
-패키지 설치에 대한 자세한 내용은 [패키지를 사용하여 작업하는 방법](/help/implementing/developing/tools/package-manager.md).
+패키지 설치에 대한 자세한 내용은 [패키지를 사용하여 작업하는 방법](/help/implementing/developing/tools/package-manager.md)을 참조하세요.
 
 ### 베릴 {#beryl}
 
@@ -74,7 +74,7 @@ Liberty theme uses a minimalist approach to highlight the important. For example
 
 고요한 테마는 고요한 색상 구성표의 밝은 색조와 어두운 색조를 제공하여 양식의 다양한 구성 요소를 강조 표시합니다. 예를 들어 라디오 단추, 패널 및 탭의 녹색 음영이 다릅니다.
 
-![고요한 테마](/help/forms/assets/tranquil.png)
+![조용한 테마](/help/forms/assets/tranquil.png)
 
 <!--[Click to enlarge](assets/tranquil-1.png)-->
 
@@ -82,14 +82,14 @@ Liberty theme uses a minimalist approach to highlight the important. For example
 
 울트라마린 테마는 진한 파란색 음영을 사용하여 탭, 패널, 텍스트 상자 및 버튼과 같은 구성 요소를 강조 표시합니다.
 
-![울트라마린 테마](/help/forms/assets/ultramarine.png)
+![Ultramarine 테마](/help/forms/assets/ultramarine.png)
 <!--[Click to enlarge](assets/ultramarine-1.png)-->
 
 ### 우르바네 {#urbane}
 
 Urbane theme는 귀하의 양식에 대해 미니멀하고 기능적인 모습을 강조합니다. 양식에 도시 테마를 적용하면 구성 요소가 균일함을 알 수 있습니다. 패널의 윤곽선이 얇아 현대적인 느낌을 줍니다.
 
-![도회 테마](/help/forms/assets/urbane.png)
+![도시 테마](/help/forms/assets/urbane.png)
 <!--[Click to enlarge](assets/urbane-1.png)-->
 
 <!-- ## U.S. Web Design Standards {#u-s-web-design-standards}

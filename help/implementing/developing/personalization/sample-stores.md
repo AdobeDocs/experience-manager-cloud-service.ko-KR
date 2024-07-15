@@ -27,17 +27,17 @@ ContextHub는 솔루션에서 사용할 수 있는 몇 가지 샘플 저장소 �
 
 해결되거나 해결되지 않은 ContextHub 세그먼트를 저장합니다. ContextHub SegmentManager에서 세그먼트를 자동으로 검색합니다.
 
-### 소스 위치 {#source-location-segmentation}
+### Source 위치 {#source-location-segmentation}
 
 `/libs/settings/cloudsettings/legacy/contexthub/segmentation`
 
 ### 기본 구현 {#base-implementation-segmentation}
 
-aem.segmentation 저장소 후보가 확장됨 [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore).
+aem.segmentation 저장소 후보가 [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore)을(를) 확장합니다.
 
 ### 구성 {#configuration-segmentation}
 
-다음을 만들 때 `aem.segmentation` store에서 자세한 구성을 제공할 필요가 없습니다. 기본 구성은 ContextHub 세그먼트 정의의 위치를 지정합니다.
+`aem.segmentation` 스토어를 만들 때 자세한 구성을 제공할 필요가 없습니다. 기본 구성은 ContextHub 세그먼트 정의의 위치를 지정합니다.
 
 ```xml
 {
@@ -51,15 +51,15 @@ aem.segmentation 저장소 후보가 확장됨 [`ContextHub.Store.PersistedJSONP
 
 ## contexthub.geolocation 샘플 저장소 후보 {#contexthub-geolocation-sample-store-candidate}
 
-다음 `contexthub.geolocation` 샘플 저장소 후보는 Google 맵을 사용하여 클라이언트 위치에 대한 정보를 가져오고 저장합니다.
+`contexthub.geolocation` 샘플 저장소 후보는 Google 맵을 사용하여 클라이언트 위치에 대한 정보를 가져오고 저장합니다.
 
-### 소스 위치 {#source-location-geolocation}
+### Source 위치 {#source-location-geolocation}
 
 `/libs/settings/cloudsettings/legacy/contexthub/geolocation`
 
 ### 기본 구현 {#base-implementation-geolocation}
 
-다음 `contexthub.geolocation` 저장소 후보 확장 [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore).
+`contexthub.geolocation` 저장소 후보가 [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore)을(를) 확장합니다.
 
 ### 구성 {#configuration-geolocation}
 
@@ -107,23 +107,23 @@ aem.segmentation 저장소 후보가 확장됨 [`ContextHub.Store.PersistedJSONP
 >
 >Chrome 50.x에 도입된 보안 정책을 사용하려면 모든 지리적 위치 관련 호출이 보안 연결을 통해 수행되어야 합니다. 따라서 AEM은 https에서도 AEM이 실행 중인 경우 지리적 위치 API 호출에 https 사용을 강제합니다. 그렇지 않으면 http를 사용하여 동일한 출처의 정책을 준수합니다.
 >
->다음을 참조하십시오 [이 Google 블로그 게시물](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) chrome의 변경 사항에 대한 자세한 내용은 를 참조하십시오.
+>Chrome 변경에 대한 자세한 내용은 [이 Google 블로그 게시물](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only)을 참조하십시오.
 
 ## contexthub.surferinfo 샘플 저장소 후보 {#contexthub-surferinfo-sample-store-candidate}
 
 장치, 창, 브라우저, 날짜 및 시간 등 현재 클라이언트 환경에 대한 정보를 저장합니다.
 
-### 소스 위치 {#source-location-surferinfo}
+### Source 위치 {#source-location-surferinfo}
 
 `/libs/settings/cloudsettings/legacy/contexthub/surferinfo`
 
 ### 기본 구현 {#base-implementation-surferinfo}
 
-다음 `contexthub.surferinfo` 저장소 후보 확장 [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore).
+`contexthub.surferinfo` 저장소 후보가 [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore)을(를) 확장합니다.
 
 ### 구성 {#configuration-surferinfo}
 
-기본 구성은에서 상속됩니다. `ContextHub.Store.PersistedStore`.
+기본 구성은 `ContextHub.Store.PersistedStore`에서 상속됩니다.
 
 ### 데이터 항목 {#data-items-surferinfo}
 
@@ -178,19 +178,19 @@ aem.segmentation 저장소 후보가 확장됨 [`ContextHub.Store.PersistedJSONP
 
 ## granite.emulators 샘플 저장소 후보 {#granite-emulators-sample-store-candidate}
 
-다음 `granite.emulators` 샘플 저장소 후보는 클라이언트 장치에 대한 정보를 저장합니다.
+`granite.emulators` 샘플 저장소 후보는 클라이언트 장치에 대한 정보를 저장합니다.
 
-### 소스 위치 {#source-location-emulators}
+### Source 위치 {#source-location-emulators}
 
 `/libs/settings/cloudsettings/legacy/contexthub/emulators`
 
 ### 기본 구현 {#base-implementation-emulators}
 
-다음 `granite.emulators` 저장소 후보 확장 [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore).
+`granite.emulators` 저장소 후보가 [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore)을(를) 확장합니다.
 
 ### 구성 {#configuration-emulators}
 
-기본 구성에는 `defaultEmulators` 다른 장치에 대한 정보가 들어 있습니다. 저장소를 만들 때 다음 예제에 나와 있는 형식을 사용하여 필요에 따라 세부 구성 속성에 다른 장치 프로필을 제공합니다.
+기본 구성에는 서로 다른 장치에 대한 정보가 포함된 `defaultEmulators`(이)라는 배열이 포함되어 있습니다. 저장소를 만들 때 다음 예제에 나와 있는 형식을 사용하여 필요에 따라 세부 구성 속성에 다른 장치 프로필을 제공합니다.
 
 ```javascript
 {
@@ -313,13 +313,13 @@ aem.segmentation 저장소 후보가 확장됨 [`ContextHub.Store.PersistedJSONP
 
 현재 사용자에 대한 정보를 저장합니다.
 
-### 소스 위치 {#source-location-profile}
+### Source 위치 {#source-location-profile}
 
 `/libs/settings/cloudsettings/legacy/contexthub/profile`
 
 ### 기본 구현 {#base-implementation-profile}
 
-다음 `granite.profile` 저장소 후보 확장 [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore).
+`granite.profile` 저장소 후보가 [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore)을(를) 확장합니다.
 
 ### 구성 {#configuration-profile}
 

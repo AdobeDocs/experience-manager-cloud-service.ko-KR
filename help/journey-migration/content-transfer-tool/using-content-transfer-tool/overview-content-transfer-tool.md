@@ -1,6 +1,6 @@
 ---
 title: 콘텐츠 전송 도구 개요
-description: 컨텐츠 전송 도구를 사용하여 컨텐츠를 온-프레미스 AEM 인스턴스에서 AEM as a Cloud Service으로 전송하는 방법에 대해 알아봅니다
+description: 컨텐츠 전송 도구를 사용하여 컨텐츠를 On-Premise AEM 인스턴스에서 AEM as a Cloud Service으로 전송하는 방법을 알아봅니다
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
@@ -21,9 +21,9 @@ ht-degree: 52%
 
 컨텐츠 전송 도구는 Adobe에서 개발한 도구로, 소스 AEM 인스턴스(온-프레미스 또는 AMS)에서 대상 AEM Cloud Service 인스턴스로 기존 컨텐츠를 마이그레이션하는 데 사용할 수 있습니다.
 
-이 도구는 주체(사용자 또는 그룹)도 자동으로 전송합니다.  다음을 참조하십시오 [사용자 매핑 및 사용자 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 추가 정보.
+이 도구는 주체(사용자 또는 그룹)도 자동으로 전송합니다.  자세한 내용은 [사용자 매핑 및 사용자 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)을 참조하십시오.
 
-컨텐츠 전송 도구는 컨텐츠 전송 프로세스를 Cloud Acceleration Manager와 통합합니다. 이를 통해 사용자는 다음과 같은 이점을 얻을 수 있습니다.
+컨텐츠 전송 도구는 컨텐츠 전송 프로세스를 Cloud Acceleration Manager과 통합합니다. 이를 통해 사용자는 다음과 같은 이점을 얻을 수 있습니다.
 
 * 마이그레이션 세트를 한 번 추출하여 동시에 여러 환경에서 수집하는 셀프서비스 방식
 * 로드 상태, 보호 기능 및 오류 처리를 개선하여 사용자 경험 개선
@@ -36,10 +36,10 @@ ht-degree: 52%
 
 1. **추출**: 추출이란 소스 AEM 인스턴스에서 *마이그레이션 세트*&#x200B;라고 하는 임시 영역으로 콘텐츠를 추출하는 것입니다. *마이그레이션 세트*&#x200B;는 소스 AEM 인스턴스와 클라우드 서비스 AEM 인스턴스 간에 전송된 콘텐츠를 임시 저장할 수 있도록 Adobe가 제공하는 클라우드 저장소 영역입니다.
 
-   다음을 참조하십시오 [컨텐츠 전송의 추출 프로세스](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) 을 참조하십시오.
+   자세한 내용은 [콘텐츠 전송의 추출 프로세스](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)를 참조하십시오.
 
    >[!NOTE]
-   >사용자 매핑은 이제 작성자에서 추출 단계의 일부로 자동으로 실행됩니다(그러나 선택적으로 작성자에서 비활성화하거나 게시할 때 활성화할 수 있음). 다음을 참조하십시오 [사용자 매핑 및 사용자 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 을 참조하십시오.
+   >사용자 매핑은 이제 작성자에서 추출 단계의 일부로 자동으로 실행됩니다(그러나 선택적으로 작성자에서 비활성화하거나 게시할 때 활성화할 수 있음). 자세한 내용은 [사용자 매핑 및 사용자 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)을 참조하십시오.
 
 1. **수집**: 수집은 *마이그레이션 세트*&#x200B;의 콘텐츠를 대상 클라우드 서비스 인스턴스로 수집하는 것입니다.
 
@@ -57,9 +57,9 @@ ht-degree: 52%
 >[!NOTE]
 >처음 콘텐츠 전송 후 클라우드 서비스에서 라이브로 전환되기 전에 최종 차등 콘텐츠 전송에 대한 콘텐츠 고정 기간을 단축하기 위해 자주 차등 콘텐츠 추가를 수행하는 것이 좋습니다.
 
-추출 단계에서 기존 마이그레이션 세트를 ***추가***&#x200B;하려면 *덮어쓰기* 옵션을 비활성화해야 합니다. 다음을 참조하십시오 [추가 추출](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) 을 참조하십시오.
+추출 단계에서 기존 마이그레이션 세트를 ***추가***&#x200B;하려면 *덮어쓰기* 옵션을 비활성화해야 합니다. 자세한 내용은 [추출 추가](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)를 참조하십시오.
 
-수집 단계에서 델타 콘텐츠를 현재 콘텐츠 위에 적용하려면 *지우기* 옵션을 비활성화해야 합니다. 다음을 참조하십시오 [추가 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 을 참조하십시오.
+수집 단계에서 델타 콘텐츠를 현재 콘텐츠 위에 적용하려면 *지우기* 옵션을 비활성화해야 합니다. 자세한 내용은 [수집 추가](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)를 참조하십시오.
 
 ## 마이그레이션 세트 만료 {#migration-set-expiry}
 

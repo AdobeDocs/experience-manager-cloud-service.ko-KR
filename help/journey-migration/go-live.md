@@ -24,27 +24,27 @@ ht-degree: 3%
 
 여정의 이전 단계에서
 
-* 에서 AEM으로 as a Cloud Service으로 이동하는 방법을 배웠습니다. [시작](/help/journey-migration/getting-started.md) 페이지를 가리키도록 업데이트하는 중입니다.
-* 를 읽고 배포를 클라우드로 이동할 준비가 되었는지 확인했습니다. [준비 단계](/help/journey-migration/readiness.md)
-* 에서 코드 및 콘텐츠 클라우드를 준비할 수 있는 도구 및 프로세스에 익숙해집니다. [구현 단계](/help/journey-migration/implementation.md).
+* [시작](/help/journey-migration/getting-started.md) 페이지에서 AEM as a Cloud Service으로 이동하는 방법을 배웠습니다.
+* [준비 단계](/help/journey-migration/readiness.md)를 읽고 배포를 클라우드로 이동할 준비가 되었는지 확인했습니다.
+* [구현 단계](/help/journey-migration/implementation.md)에서 코드 및 콘텐츠 클라우드를 준비할 수 있는 도구 및 프로세스에 익숙해집니다.
 
 ## 목표 {#objective}
 
-이 문서는 여정의 이전 단계를 잘 알고 있는 경우 AEM으로 as a Cloud Service으로 마이그레이션하는 방법을 이해하는 데 도움이 됩니다. 초기 프로덕션 마이그레이션을 수행하는 방법과 AEM as a Cloud Service으로 마이그레이션할 때 따라야 할 모범 사례를 알아봅니다.
+이 문서는 여정의 이전 단계를 잘 알고 있는 경우 AEM as a Cloud Service으로 마이그레이션하는 방법을 이해하는 데 도움이 됩니다. 초기 프로덕션 마이그레이션을 수행하는 방법과 AEM as a Cloud Service으로 마이그레이션할 때 따라야 할 모범 사례를 알아봅니다.
 
 ## 초기 프로덕션 마이그레이션 {#initial-migration}
 
-프로덕션 마이그레이션을 수행하기 전에 다음에 요약된 마이그레이션 기능 및 증명 단계를 따르십시오. [컨텐츠 마이그레이션 전략 및 타임라인](/help/journey-migration/implementation.md##strategy-timeline) 의 섹션 [구현 단계](/help/journey-migration/implementation.md).
+프로덕션 마이그레이션을 수행하기 전에 [구현 단계](/help/journey-migration/implementation.md)의 [콘텐츠 마이그레이션 전략 및 타임라인](/help/journey-migration/implementation.md##strategy-timeline) 섹션에 설명된 마이그레이션 기능 및 증명 단계를 따르십시오.
 
-* 클론에 대해 수행된 AEM as a Cloud Service 마이그레이션 과정에서 얻은 경험에 따라 프로덕션에서 마이그레이션을 시작합니다.
+* 클론에서 수행된 AEM as a Cloud Service 단계 마이그레이션 과정에서 얻은 경험을 기반으로 프로덕션에서 마이그레이션을 시작합니다.
    * Author-Author
    * Publish-Publish
 
 * AEM as a Cloud Service 작성자 및 게시 계층 모두에 수집된 콘텐츠의 유효성을 검사합니다.
 * 수집이 완료될 때까지 소스와 대상 모두에서 컨텐츠가 이동하지 않도록 컨텐츠 작성 팀에 지시합니다
 * 새 콘텐츠를 추가, 편집 또는 삭제할 수 있지만 이동하지 마십시오. 이는 소스와 대상 모두에 적용됩니다.
-* 레코드 [수행한 시간](/help/journey-migration/implementation.md#gathering-data) 전체 추출 및 수집을 통해 향후 추가 마이그레이션 일정에 대한 예상 값을 얻을 수 있습니다.
-* 만들기 [마이그레이션 플래너](/help/journey-migration/implementation.md#migration-plan) 작성자와 게시 모두에 해당합니다.
+* 전체 추출 및 수집에 [소요된 시간](/help/journey-migration/implementation.md#gathering-data)을 기록하여 향후 추가 마이그레이션 타임라인을 예측하십시오.
+* 작성자와 게시 모두에 대해 [마이그레이션 플래너](/help/journey-migration/implementation.md#migration-plan)를 만듭니다.
 
 ## 증분 추가 {#top-up}
 
@@ -69,7 +69,7 @@ ht-degree: 3%
 
 마이그레이션을 계획하거나 수행할 때는 다음 지침을 고려해야 합니다.
 
-* 작성자에서 작성자로 마이그레이션 및 게시로 게시
+* 작성자에서 작성자로, Publish에서 Publish으로 마이그레이션
 * 다음을 수행하는 데 사용할 수 있는 운영 클론 요청:
    * 저장소 통계 캡처
    * 마이그레이션 활동 증명
@@ -77,14 +77,14 @@ ht-degree: 3%
    * 컨텐츠 고정 요구 사항 식별
    * 프로덕션에서 마이그레이션을 수행할 때 프로덕션의 업사이징 요구 사항 파악
 
-**컨텐츠 전송 도구 모범 사례**
+**콘텐츠 전송 도구 모범 사례**
 
-라이브 진행 시 클론 대신 프로덕션에서 컨텐츠 마이그레이션을 실행해야 합니다. 좋은 방법은 [AZCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) 초기 마이그레이션 후 자주(심지어 매일) 추가 추출을 실행하여 더 작은 청크를 추출하고 소스 AEM에 대한 장기적인 로드를 방지합니다.
+라이브 진행 시 클론 대신 프로덕션에서 컨텐츠 마이그레이션을 실행해야 합니다. 초기 마이그레이션에 [AZCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)을 사용한 다음, 더 작은 청크를 추출하고 소스 AEM에 대한 장기적인 로드를 방지하기 위해 추출 작업을 자주(매일) 실행하는 것이 좋습니다.
 
 다음과 같은 이유로 운영 마이그레이션을 수행할 때는 클론에서 컨텐츠 전송 도구를 실행하지 않아야 합니다.
 
 * 고객이 추가 마이그레이션 중에 컨텐츠 버전을 마이그레이션해야 하는 경우 클론에서 컨텐츠 전송 도구를 실행해도 버전이 마이그레이션되지 않습니다. 라이브 작성자에서 클론을 자주 재생성하더라도 클론이 생성될 때마다 컨텐츠 전송 도구에서 델타를 계산하는 데 사용하는 체크포인트가 재설정됩니다.
-* 클론은 전체적으로 새로 고칠 수 없으므로 ACL 쿼리 패키지를 사용하여 프로덕션에서 클론으로 추가 또는 편집되는 콘텐츠를 패키징하고 설치해야 합니다. 이 방법의 문제는 소스 및 클론 모두에서 수동으로 삭제되지 않는 한 소스 인스턴스의 삭제된 컨텐츠는 클론에 도달하지 않는다는 것입니다. 이렇게 하면 프로덕션에서 삭제된 콘텐츠가 클론과 AEM에서 as a Cloud Service으로 삭제되지 않을 수 있습니다.
+* 클론은 전체적으로 새로 고칠 수 없으므로 ACL 쿼리 패키지를 사용하여 프로덕션에서 클론으로 추가 또는 편집되는 콘텐츠를 패키징하고 설치해야 합니다. 이 방법의 문제는 소스 및 클론 모두에서 수동으로 삭제되지 않는 한 소스 인스턴스의 삭제된 컨텐츠는 클론에 도달하지 않는다는 것입니다. 이렇게 하면 프로덕션에서 삭제된 콘텐츠가 클론 및 AEM as a Cloud Service에서 삭제되지 않을 수 있습니다.
 
 **콘텐츠 마이그레이션을 수행하는 동안 AEM 소스에 대한 로드 최적화**
 
@@ -92,7 +92,7 @@ AEM 소스의 로드는 추출 단계 동안 더 커집니다. 다음 사항에 
 
 * 컨텐츠 전송 도구는 4GB의 JVM 힙을 사용하는 외부 Java 프로세스입니다
 * AzCopy가 아닌 버전은 바이너리를 다운로드하고 소스 AEM 작성자의 임시 공간에 저장하여 디스크 I/O를 사용한 다음 네트워크 대역폭을 사용하는 Azure 컨테이너에 업로드합니다
-* [AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) blob을 blob 저장소에서 Azure 컨테이너로 직접 전송하여 디스크 I/O 및 네트워크 대역폭을 저장합니다. AzCopy 버전에서는 여전히 디스크 및 네트워크 대역폭을 사용하여 세그먼트 저장소에서 Azure 컨테이너로 데이터를 추출하고 업로드합니다
+* [AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)은(는) blob 저장소에서 디스크 I/O 및 네트워크 대역폭을 저장하는 Azure 컨테이너로 직접 blob을 전송합니다. AzCopy 버전에서는 여전히 디스크 및 네트워크 대역폭을 사용하여 세그먼트 저장소에서 Azure 컨테이너로 데이터를 추출하고 업로드합니다
 * 컨텐츠 전송 툴 프로세스는 수집 로그만 스트리밍하고 디스크 I/O 또는 네트워크 대역폭에 관한 한 소스 인스턴스에 대한 로드가 많지 않으므로 수집 단계에서 시스템 리소스에 대한 부담이 적습니다.
 
 ## 알려진 제한 사항 {#known-limitations}
@@ -101,22 +101,22 @@ AEM 소스의 로드는 추출 단계 동안 더 커집니다. 다음 사항에 
 
 * 이름이 150자를 초과하는 JCR 노드
 * 16MB보다 큰 JCR 노드
-* 을(를) 가진 모든 사용자/그룹 `rep:AuthorizableID` 이미 AEM as a Cloud Service에 있는 수집 중
+* `rep:AuthorizableID`이(가) 포함된 모든 사용자/그룹이 이미 AEM as a Cloud Service에 있습니다.
 * 추출되어 수집된 에셋이 마이그레이션의 다음 반복 전에 소스 또는 대상에서 다른 경로로 이동하는 경우.
 
 ## 에셋 상태 {#asset-health}
 
-수집 위의 섹션과 비교 **다음이 아님** 다음 자산 문제로 인해 실패합니다. 그러나 다음 시나리오에서 적절한 단계를 수행하는 것이 좋습니다.
+위의 섹션과 비교하여 다음 자산 문제로 인해 **does**&#x200B;이(가) 실패합니다. 그러나 다음 시나리오에서 적절한 단계를 수행하는 것이 좋습니다.
 
 * 원본 렌디션이 누락된 모든 에셋
-* 누락된 모든 폴더 `jcr:content` 노드.
+* 누락된 `jcr:content` 노드가 있는 모든 폴더입니다.
 
-위의 두 항목은 모두에서 식별되고 보고됩니다 [Best Practice Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) 보고서.
+위의 두 항목은 [모범 사례 분석기](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) 보고서에서 확인 및 보고됩니다.
 
 ## 실행 체크리스트 {#Go-Live-Checklist}
 
-자세한 내용은 [실행 체크리스트](/help/journey-onboarding/go-live-checklist.md) 설명서를 참조하십시오.
+자세한 내용은 [Go-Live 확인 목록](/help/journey-onboarding/go-live-checklist.md) 설명서를 참조하십시오.
 
 ## 다음 단계 {#what-is-next}
 
-AEM으로 as a Cloud Service으로 마이그레이션하는 방법을 이해하면 [Go-Live 후](/help/journey-migration/post-go-live.md) 원활한 인스턴스 실행을 위한 페이지.
+AEM as a Cloud Service으로 마이그레이션하는 방법을 이해하면 [Post-Go-Live](/help/journey-migration/post-go-live.md) 페이지에서 원활한 인스턴스 실행을 확인할 수 있습니다.

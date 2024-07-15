@@ -30,14 +30,14 @@ JSON 스키마를 양식 모델로 사용하여 핵심 구성 요소를 기반�
 
 ## 양식 모델로 JSON 스키마 사용  {#using-a-json-schema-as-form-model}
 
-Adobe Experience Manager Forms에서는 기존 JSON 스키마를 양식 모델로 사용하여 핵심 구성 요소를 기반으로 하는 적응형 양식 만들기를 지원합니다. 이 JSON 스키마는 조직의 백엔드 시스템이 데이터를 생산 또는 소비하는 구조를 나타냅니다. 사용하는 JSON 스키마는 [v4 사양](https://json-schema.org/draft-04/schema).
+Adobe Experience Manager Forms에서는 기존 JSON 스키마를 양식 모델로 사용하여 핵심 구성 요소를 기반으로 하는 적응형 양식 만들기를 지원합니다. 이 JSON 스키마는 조직의 백엔드 시스템이 데이터를 생산 또는 소비하는 구조를 나타냅니다. 사용하는 JSON 스키마는 [v4 사양](https://json-schema.org/draft-04/schema)을 준수해야 합니다.
 
 JSON 스키마 사용의 주요 기능은 다음과 같습니다.
 
 * JSON 구조는 적응형 양식의 작성 모드에서 콘텐츠 파인더 탭에 트리로 표시됩니다. 요소를 JSON 계층에서 핵심 구성 요소를 기반으로 하는 적응형 양식으로 드래그하여 추가할 수 있습니다.
 * 연결된 스키마와 호환되는 JSON을 사용하여 양식을 미리 채울 수 있습니다.
 * 제출 시 사용자가 입력한 데이터는 관련 스키마에 맞는 JSON으로 제출됩니다.
-* 의 사양에 따라 JSON 스키마를 기반으로 양식을 만들 수도 있습니다. [2012-20 버전](https://json-schema.org/draft/2020-12/release-notes).
+* [2012-20 버전](https://json-schema.org/draft/2020-12/release-notes)의 사양에 따라 JSON 스키마를 기반으로 양식을 만들 수도 있습니다.
 
 JSON 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. 요소에는 요소에 규칙을 추가하는 속성이 있습니다. 이러한 요소와 속성을 적응형 양식으로 드래그하면 해당 적응형 양식 구성 요소에 자동으로 매핑됩니다.
 
@@ -83,12 +83,12 @@ JSON 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. �
    <td><br /> <br /> 텍스트 필드<br /> <br /> <br /> </td>
   </tr>
   <tr>
-   <td>숫자 속성<br /> </td>
-   <td>하위 유형이 float로 설정된 숫자 필드<br /> </td>
+   <td>number 속성<br /> </td>
+   <td>하위 형식이 float<br />(으)로 설정된 숫자 필드 </td>
   </tr>
   <tr>
    <td>정수 속성<br /> </td>
-   <td>하위 유형이 정수로 설정된 숫자 필드<br /> </td>
+   <td>하위 유형이 정수<br />(으)로 설정된 숫자 필드 </td>
   </tr>
   <tr>
    <td>부울 속성<br /> </td>
@@ -109,17 +109,17 @@ JSON 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. �
 
 적응형 양식은 JSON 스키마에서 사용할 수 있는 정보를 사용하여 생성된 각 필드를 매핑합니다. 특히
 
-* 다음 `title` 속성은 적응형 양식 구성 요소에 대한 레이블 역할을 합니다.
-* 다음 `description` 속성은 적응형 양식 구성 요소에 대한 긴 설명으로 설정됩니다.
-* 다음 `default` 속성은 적응형 양식 필드의 초기 값 역할을 합니다.
-* 다음 `maxLength` 속성이 다음으로 설정됨: `maxlength` 텍스트 필드 구성 요소의 속성입니다.
-* 다음 `minimum`, `maximum`, `exclusiveMinimum`, 및 `exclusiveMaximum` 속성은 숫자 상자 구성 요소에 사용됩니다.
-* 범위를 지원하려면 `DatePicker component` 추가 JSON 스키마 속성 `minDate` 및 `maxDate` 제공됩니다.
-* 다음 `minItems` 및 `maxItems` 속성은 패널 구성 요소에서 추가하거나 제거할 수 있는 항목/필드의 수를 제한하는 데 사용됩니다.
-* 다음 `readOnly` 속성은 다음을 설정합니다. `readonly` 적응형 양식 구성 요소 속성.
-* 다음 `required` 속성은 적응형 양식 필드를 필수 항목으로 표시하지만 패널(유형이 개체인 경우)에서 최종 제출된 JSON 데이터에는 해당 개체에 해당하는 빈 값이 있는 필드가 있습니다.
-* 다음 `pattern` 속성은 적응형 양식에서 유효성 검사 패턴(정규 표현식)으로 설정됩니다.
-* JSON 스키마 파일의 확장은 .schema.json을 유지해야 합니다. 예를 들어, &lt;filename>.schema.json.
+* `title` 속성은 적응형 양식 구성 요소에 대한 레이블 역할을 합니다.
+* `description` 속성은 적응형 양식 구성 요소에 대한 긴 설명으로 설정됩니다.
+* `default` 속성은 적응형 양식 필드의 초기 값 역할을 합니다.
+* `maxLength` 속성이 텍스트 필드 구성 요소의 `maxlength` 특성으로 설정되어 있습니다.
+* `minimum`, `maximum`, `exclusiveMinimum` 및 `exclusiveMaximum` 속성은 Numeric Box 구성 요소에 사용됩니다.
+* `DatePicker component` 추가 JSON 스키마 속성 `minDate` 및 `maxDate`에 대한 범위를 지원하기 위해 제공됩니다.
+* `minItems` 및 `maxItems` 속성은 패널 구성 요소에서 추가하거나 제거할 수 있는 항목/필드의 수를 제한하는 데 사용됩니다.
+* `readOnly` 속성은 적응형 양식 구성 요소의 `readonly` 특성을 설정합니다.
+* `required` 속성은 적응형 양식 필드를 필수 항목으로 표시하지만 패널(유형이 개체인 경우)에서 최종 제출된 JSON 데이터에는 해당 개체에 해당하는 빈 값이 있는 필드가 있습니다.
+* `pattern` 속성은 적응형 양식에서 유효성 검사 패턴(정규 표현식)으로 설정되어 있습니다.
+* JSON 스키마 파일의 확장은 .schema.json을 유지해야 합니다. 예: &lt;filename>.schema.json.
 
 ## 샘플 JSON 스키마 {#sample-json-schema}
 
@@ -429,12 +429,12 @@ JSON 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. �
 >[!ENDTABS]
 
 JSON 스키마 V4에서 버전 2020-12 사양으로 주요 변경 사항은 다음과 같습니다.
-* ID가 다음으로 선언됨: `$id`
-* 정의는 다음과 같이 선언됩니다. `$defs`
+* ID가 `$id`(으)로 선언되었습니다.
+* 정의가 `$defs`(으)로 선언되었습니다.
 
 ### 재사용 가능한 스키마 정의 {#reusable-schema-definitions}
 
-정의 키는 재사용 가능한 스키마를 식별하는 데 사용됩니다. 재사용 가능한 스키마 정의는 조각을 만드는 데 사용됩니다. <!-- It is similar to identifying complex types in XSD.--> 다음은 정의가 있는 샘플 JSON 스키마 입니다.
+정의 키는 재사용 가능한 스키마를 식별하는 데 사용됩니다. 재사용 가능한 스키마 정의는 조각을 만드는 데 사용됩니다. <!-- It is similar to identifying complex types in XSD.--> 정의가 있는 샘플 JSON 스키마가 아래에 제공됩니다.
 
 ```json
 {
@@ -857,10 +857,10 @@ JSON 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 �
 
 양식 제출 시 모든 JSON 스키마 기반 적응형 Forms이 스키마 호환 데이터를 생성할 수 있도록 하려면 다음 단계를 따르십시오.
 
-1. 다음 위치에서 Experience Manager 웹 콘솔로 이동 `https://server:host/system/console/configMgr`.
-1. 찾기 **[!UICONTROL 적응형 양식 및 대화형 통신 웹 채널 구성]**.
+1. `https://server:host/system/console/configMgr`의 Experience Manager 웹 콘솔로 이동합니다.
+1. **[!UICONTROL 적응형 양식 및 대화형 통신 웹 채널 구성]**&#x200B;을 찾습니다.
 1. 을(를) 선택하여 편집 모드로 구성을 엽니다.
-1. 다음 항목 선택 **[!UICONTROL 스키마 준수 데이터 생성]** 확인란.
+1. **[!UICONTROL 스키마 호환 데이터 생성]** 확인란을 선택하십시오.
 1. 설정을 저장합니다.
 
 ![적응형 양식 및 대화형 통신 웹 채널 구성](/help/forms/assets/af-ic-web-channel-configuration.png)
@@ -889,13 +889,13 @@ JSON 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 �
 * 트리 구조를 스크롤합니다.
 * 검색 상자를 사용하여 요소 찾기
 
-**JSON 스키마 파일의 확장자는 어떻게 해야 합니까?**
+**JSON 스키마 파일의 확장명은 무엇입니까?**
 
-JSON 스키마 파일의 확장명은 .schema.json이어야 합니다. 예를 들어, &lt;filename>.schema.json.
+JSON 스키마 파일의 확장명은 .schema.json이어야 합니다. 예: &lt;filename>.schema.json.
 
-**다음과 같음 `aem:afProperties` 핵심 구성 요소를 기반으로 하는 적응형 Forms에서 JSON 스키마의 일부로 지원됩니까?**
+**핵심 구성 요소를 기반으로 하는 적응형 Forms에서 `aem:afProperties`이(가) JSON 스키마의 일부로 지원됩니까?**
 
-아니요, `aem:afProperties` 은(는) 코어 구성 요소에 대해 지원되지 않습니다. 이 속성은 기초 구성 요소에서만 지원됩니다.
+아니요. `aem:afProperties`은(는) 핵심 구성 요소에 대해 지원되지 않습니다. 이 속성은 기초 구성 요소에서만 지원됩니다.
 
 ## 추가 참조 {#see-also}
 

@@ -149,7 +149,7 @@ interface SelectedDestination {
 
 이 예는 통합 셸에서 [!DNL Adobe] 애플리케이션을 실행할 때 SUSI 외 흐름을 통해 대상 선택기를 사용하는 방법과 인증용으로 생성된 `imsToken`을 이미 보유한 경우에 대해 설명합니다.
 
-를 사용하여 코드에 대상 선택기 패키지 포함 `script` 태그로 표시 _라인 6-15_ 아래 예제 참조. 스크립트가 로드되면 `PureJSSelectors` 전역 변수를 사용할 수 있습니다. 대상 선택기 정의 [속성](#destination-selector-properties) 에 보여진 것처럼 _라인 16-23_. SUSI 외 흐름 인증에는 `imsOrg` 및 `imsToken` 속성이 모두 필요합니다. `handleSelection` 속성은 선택한 자산을 처리하는 데 사용됩니다. 대상 선택기를 렌더링하려면 _17행_&#x200B;에서 언급한 대로 `renderDestinationSelector` 기능을 호출합니다. `<div>`21~22행&#x200B;_에 표시된 대로_ 컨테이너 요소에 대상 선택기가 표시됩니다.
+아래 예제의 _줄 6-15_&#x200B;에 표시된 대로 `script` 태그를 사용하여 코드에 대상 선택기 패키지를 포함하십시오. 스크립트가 로드되면 `PureJSSelectors` 전역 변수를 사용할 수 있습니다. _행 16~23_&#x200B;에 표시된 대로 대상 선택기 [속성](#destination-selector-properties)을(를) 정의합니다. SUSI 외 흐름 인증에는 `imsOrg` 및 `imsToken` 속성이 모두 필요합니다. `handleSelection` 속성은 선택한 자산을 처리하는 데 사용됩니다. 대상 선택기를 렌더링하려면 _17행_&#x200B;에서 언급한 대로 `renderDestinationSelector` 기능을 호출합니다. `<div>`21~22행&#x200B;_에 표시된 대로_ 컨테이너 요소에 대상 선택기가 표시됩니다.
 
 다음 단계를 따르면 [!DNL Adobe] 애플리케이션에서 SUSI 외 흐름과 함께 대상 선택기를 사용할 수 있습니다.
 
@@ -190,14 +190,14 @@ interface SelectedDestination {
 
 | 속성 | 유형 | 필수 | 기본값 | 설명 |
 |---|---|---|---|---|
-| *imsOrg* | 문자열 | 예 | | 조직에 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]를 프로비저닝하는 중에 할당된 Adobe IMS(Identity Management System)입니다. 다음 `imsOrg` 액세스하려는 조직이 Adobe IMS에 속해 있는지 여부를 인증하려면 키가 필요합니다. |
-| *imsToken* | 문자열 | 아니요 | | 인증에 사용되는 IMS 전달자 토큰입니다. `imsToken` SUSI 흐름을 사용하는 경우에는 이 필요하지 않습니다. 그러나 비SUSI 흐름을 사용하는 경우에는 필수입니다. |
-| *apiKey* | 문자열 | 아니요 | | AEM Discovery 서비스에 액세스하는 데 사용되는 API 키입니다. `apiKey` SUSI 흐름을 사용하는 경우에는 이 필요하지 않습니다. 단, SUSI 외 흐름의 경우에는 필요합니다. |
-| *rootPath* | 문자열 | 아니요 | /content/dam/ | 대상 선택기에 자산이 표시되는 폴더 경로입니다. 캡슐화된 형태로도 `rootPath`를 사용할 수 있습니다. 예를 들어 다음 경로가 주어지면 `/content/dam/marketing/subfolder/`, 대상 선택기를 사용하면 상위 폴더를 통과할 수 없지만 하위 폴더만 표시됩니다. |
+| *imsOrg* | 문자열 | 예 | | 조직에 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]를 프로비저닝하는 중에 할당된 Adobe IMS(Identity Management System)입니다. 액세스 중인 조직이 Adobe IMS에 속해 있는지 여부를 인증하려면 `imsOrg` 키가 필요합니다. |
+| *imsToken* | 문자열 | 아니요 | | 인증에 사용되는 IMS 전달자 토큰입니다. SUSI 흐름을 사용하는 경우에는 `imsToken`이(가) 필요하지 않습니다. 그러나 비SUSI 흐름을 사용하는 경우에는 필수입니다. |
+| *apiKey* | 문자열 | 아니요 | | AEM Discovery 서비스에 액세스하는 데 사용되는 API 키입니다. SUSI 흐름을 사용하는 경우에는 `apiKey`이(가) 필요하지 않습니다. 단, SUSI 외 흐름의 경우에는 필요합니다. |
+| *rootPath* | 문자열 | 아니요 | /content/dam/ | 대상 선택기에 자산이 표시되는 폴더 경로입니다. 캡슐화된 형태로도 `rootPath`를 사용할 수 있습니다. 예를 들어 다음 경로 `/content/dam/marketing/subfolder/`이(가) 주어지면 대상 선택기에서 상위 폴더를 통과할 수 없지만 하위 폴더만 표시합니다. |
 | *hasMore* | 부울 | 아니요 | | 애플리케이션에 표시할 콘텐츠가 많은 경우 이 속성을 사용하여 콘텐츠를 로드하는 로더를 추가하면 콘텐츠를 애플리케이션에 표시할 수 있습니다. 이 표시기로 콘텐츠 로딩이 진행 중임을 나타냅니다. |
 | *orgName* | 부울 | 아니요 | | AEM과 연관된 조직의 이름 (orgID) |
 | *initRepoID* | 문자열 | 아니요 | | 기본 초기 보기에서 사용하려는 자산 저장소의 경로 |
-| *onCreateFolder* | 문자열 | 아니요 | | 다음 `onCreateFolder` 속성을 사용하면 응용 프로그램에 새 폴더를 추가하는 아이콘을 추가할 수 있습니다. |
+| *onCreateFolder* | 문자열 | 아니요 | | `onCreateFolder` 속성을 사용하면 응용 프로그램에 새 폴더를 추가하는 아이콘을 추가할 수 있습니다. |
 | *onConfirm* | 문자열 | 아니요 | | 확인 버튼을 누를 시 콜백입니다. |
 | *confirmDisabled* | 문자열 | 아니요 | | 이 속성은 확인 버튼의 토글을 제어합니다. |
 | *viewType* | 문자열 | 아니요 | | `viewType` 속성은 자산 표시에 사용하는 보기를 지정하는 데 사용됩니다. |
@@ -262,7 +262,7 @@ interface SelectedDestination {
 
 ### 폴더 만들기 {#create-new-folder}
 
-폴더의 대상 폴더에 폴더를 만들 수 있습니다. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+[!DNL Adobe Experience Manager]의 대상 폴더에 폴더를 [!DNL Cloud Service](으)로 만들 수 있습니다.
 
 ### 보기 유형 {#types-of-view}
 
@@ -279,4 +279,4 @@ interface SelectedDestination {
 
 ### 폴더 선택 {#select-folder}
 
-폴더 선택 단추를 사용하여 다음과 관련된 다양한 작업을 수행할 에셋을 선택할 수 있습니다. [속성](#destination-selector-properties) 대상 선택기에서.
+폴더 선택 단추를 사용하면 대상 선택기에서 [속성](#destination-selector-properties)과 관련된 다양한 작업을 수행할 자산을 선택할 수 있습니다.

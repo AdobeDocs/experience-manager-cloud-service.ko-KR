@@ -19,7 +19,7 @@ ht-degree: 61%
 
 >[!TIP]
 >
->AEM 전체에서 키보드 단축키를 사용할 수 있습니다. 특히 다음의 경우에 [사이트 콘솔 사용](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) 및 [페이지 편집기](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
+>AEM 전체에서 키보드 단축키를 사용할 수 있습니다. 특히 [사이트 콘솔을 사용](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) 및 [페이지 편집기](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)를 사용하는 경우.
 
 {{edge-delivery-authoring}}
 
@@ -33,7 +33,7 @@ AEM 사용자 인터페이스는 터치가 활성화되어 있습니다. 터치 
 
 ![탐색 패널](assets/basic-handling-navigation.png)
 
-AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트** 콘솔을 기반으로 합니다. 선택 **사이트** 시작합니다.
+AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트** 콘솔을 기반으로 합니다. 시작하려면 **사이트**&#x200B;에서 선택하십시오.
 
 ## 제품 탐색 {#product-navigation}
 
@@ -41,13 +41,13 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
 ![탐색 튜토리얼](assets/basic-handling-tutorial.png)
 
-선택 **다음** 개요의 다음 페이지로 이동합니다. 선택 **닫기** 닫으려면 개요 대화 상자의 외부를 선택하십시오.
+개요의 다음 페이지로 이동하려면 **다음**&#x200B;을 선택합니다. 닫으려면 **닫기**&#x200B;를 선택하거나 개요 대화 상자 바깥쪽을 선택합니다.
 
 모든 슬라이드를 표시하지 않거나 **다시 표시 안 함** 옵션을 선택하지 않은 한 이후에 콘솔에 액세스하면 개요가 다시 시작됩니다.
 
 ## 전역 탐색 {#global-navigation}
 
-전역 탐색 패널을 사용하여 콘솔 간을 탐색할 수 있습니다. 을 선택하면 전체 화면 드롭다운으로 트리거됩니다. **Adobe Experience Manager** 화면 왼쪽 상단의 링크.
+전역 탐색 패널을 사용하여 콘솔 간을 탐색할 수 있습니다. 화면 왼쪽 상단에서 **Adobe Experience Manager** 링크를 선택하면 전체 화면 드롭다운으로 트리거됩니다.
 
 **닫기**&#x200B;를 클릭하거나 탭하여 전역 탐색 패널을 닫고 이전 위치로 돌아갈 수 있습니다.
 
@@ -55,14 +55,14 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
 전역 탐색에는 다음과 같은 두 개의 패널이 있으며 화면의 왼쪽 여백에 아이콘으로 표시됩니다.
 
-* **[탐색](#navigation-panel)** - AEM에 로그인할 때 나침반 및 기본 패널로 표시됨
+* **[탐색](#navigation-panel)** - AEM에 로그인할 때 나침반과 기본 패널로 표시됩니다.
 * **[도구](#tools-panel)** - 망치로 표시됨
 
 이러한 패널에서 사용 가능한 옵션은 아래에 설명되어 있습니다.
 
 ### 탐색 패널 {#navigation-panel}
 
-다음 **탐색** 패널:
+**탐색** 패널:
 
 ![탐색 패널](assets/basic-handling-navigation.png)
 
@@ -73,16 +73,16 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 | 콘솔 | 목적 |
 |---|---|
 | 프로젝트 | 프로젝트 콘솔에서는 프로젝트에 직접 액세스할 수 있습니다. [프로젝트는 가상 대시보드](/help/sites-cloud/authoring/projects/overview.md)로서 팀을 만드는 데 사용할 수 있습니다. 팀을 만든 후에는 공동 목표를 위한 작업을 수행할 수 있도록 이 팀에 리소스, 워크플로 및 작업에 대한 액세스 권한을 부여할 수 있습니다. |
-| Sites | [사이트 콘솔](/help/sites-cloud/authoring/sites-console/introduction.md) AEM 인스턴스에서 실행되는 사이트를 만들고, 보고, 관리할 수 있습니다. 이 콘솔을 통해 페이지를 만들고, 편집하고, 복사하고, 이동하고, 삭제하며 워크플로를 시작하고, 페이지를 게시할 수 있습니다. |
+| Sites | [사이트 콘솔](/help/sites-cloud/authoring/sites-console/introduction.md)을 사용하여 AEM 인스턴스에서 실행되는 사이트를 만들고, 보고, 관리할 수 있습니다. 이 콘솔을 통해 페이지를 만들고, 편집하고, 복사하고, 이동하고, 삭제하며 워크플로를 시작하고, 페이지를 게시할 수 있습니다. |
 | 경험 조각 | [경험 조각](/help/sites-cloud/authoring/fragments/content-fragments.md)은 여러 채널 간에 재사용할 수 있으며 변형이 있는 독립형 환경으로, 경험 또는 경험 일부를 반복해서 복사하고 붙여넣는 단조로운 작업을 수행할 필요를 없애줍니다. |
 | 자산 | 자산 콘솔을 사용하여 [이미지, 비디오, 문서 및 오디오 파일과 같은 디지털 자산](/help/assets/overview.md)을 가져오고 관리할 수 있습니다. 그런 다음 동일한 AEM 인스턴스에서 실행되는 사이트에서 이러한 자산을 사용할 수 있습니다. 또한 자산 콘솔에서는 [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)을 만들고 관리할 수도 있습니다. |
 | 개인화 | [이 콘솔은 타겟팅된 콘텐츠를 작성하고 개인화된 환경을 제공하기 위한 도구 프레임워크를 제공합니다](/help/sites-cloud/authoring/personalization/overview.md). |
 | 콘텐츠 조각 | [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/overview.md)을 사용하여 페이지 독립적인 콘텐츠를 디자인하고, 만들고, 선별하고, 게시할 수 있습니다. 이를 통해 페이지 작성과 Headless 게재 모두에 이상적인, 여러 위치/여러 채널에서 사용할 수 있도록 구조화된 콘텐츠를 준비할 수 있습니다. |
-| 변형 생성 | [변형 생성](/help/generative-ai/generate-variations.md) 는 생성 인공 지능(AI)을 사용하여 프롬프트에 따라 콘텐츠 변형을 만듭니다. 이러한 프롬프트는 Adobe이 제공하거나 사용자가 만들고 관리합니다. |
+| 변형 생성 | [변형 생성](/help/generative-ai/generate-variations.md)은(는) 생성 AI(인공 지능)를 사용하여 프롬프트에 따라 콘텐츠 변형을 만듭니다. 이러한 프롬프트는 Adobe이 제공하거나 사용자가 만들고 관리합니다. |
 
 ## 도구 패널 {#tools-panel}
 
-다음 **도구** 패널에는 유사한 콘솔을 함께 그룹화하는 다양한 카테고리가 포함된 사이드 패널이 있습니다. 다음 **도구** 콘솔에서는 웹 사이트, 디지털 자산 및 콘텐츠 저장소의 다른 측면을 관리하는 데 도움이 되는 몇 가지 전문 도구 및 콘솔에 액세스할 수 있습니다.
+**도구** 패널에는 유사한 콘솔을 함께 그룹화하는 다양한 범주가 포함된 사이드 패널이 있습니다. **도구** 콘솔에서는 웹 사이트, 디지털 자산 및 콘텐츠 저장소의 다른 측면을 관리하는 데 도움이 되는 몇 가지 전문 도구 및 콘솔에 액세스할 수 있습니다.
 
 ![도구 패널](assets/basic-handling-tools.png)
 
@@ -92,7 +92,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
 ![탐색 헤더](/help/sites-cloud/authoring/assets/basic-handling-navigation-bar.png)
 
-* [전역 탐색](#global-navigation) - 다음을 선택합니다. **Adobe Experience Manager** 콘솔 간에 이동하는 링크입니다.
+* [전역 탐색](#global-navigation) - 콘솔 간에 탐색하려면 **Adobe Experience Manager** 링크를 선택하십시오.
 
   ![전역 탐색](/help/sites-cloud/authoring/assets/basic-handling-global-navigation.png)
 
@@ -106,7 +106,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
   ![솔루션 버튼](/help/sites-cloud/authoring/assets/basic-handling-solutions.png)
 
-* [검색](/help/sites-cloud/authoring/search.md) - 다음을 사용할 수도 있습니다 [바로 가기 키](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `/` (슬래시) 모든 콘솔에서 검색을 호출합니다.
+* [검색](/help/sites-cloud/authoring/search.md) - [바로 가기 키](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `/`(슬래시)를 사용하여 모든 콘솔에서 검색을 호출할 수도 있습니다.
 
   ![검색 아이콘](/help/sites-cloud/authoring/assets/basic-handling-search-icon.png)
 
@@ -114,11 +114,11 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
   ![도움말 버튼](/help/sites-cloud/authoring/assets/basic-handling-help-icon.png)
 
-* [알림](/help/sites-cloud/authoring/inbox.md) - 이 아이콘에는 현재 할당된 미완료 알림 수가 배지로 표시되어 있습니다.
+* [알림](/help/sites-cloud/authoring/inbox.md) -   이 아이콘에는 현재 할당된 미완료 알림 수가 배지로 표시됩니다.
 
   ![알림 버튼](/help/sites-cloud/authoring/assets/basic-handling-notifications.png)
 
-* [사용자 속성](/help/sites-cloud/authoring/account-environment.md) - 사용자 설정을 변경하려면 선택하십시오.
+* [사용자 속성](/help/sites-cloud/authoring/account-environment.md) - 사용자 설정을 변경하려면 이 항목을 선택하십시오.
 
   ![사용자 속성 버튼](/help/sites-cloud/authoring/assets/basic-handling-user-properties.png)
 
@@ -126,22 +126,22 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
 사용 가능한 도움말 리소스와 몇 가지 방법으로 액세스할 수 있습니다.
 
-* **도구 모음** - 위치에 따라 **도움말** 아이콘 은 적절한 리소스를 엽니다.
+* **도구 모음** - 위치에 따라 **도움말** 아이콘이 적절한 리소스를 엽니다.
 
   ![도움말 아이콘](assets/basic-handling-help.png)
 
-* **콘솔** - 시스템을 처음 탐색하면 [AEM 탐색을 소개하는 일련의 슬라이드](#product-navigation).
+* **콘솔** - 시스템을 처음 탐색하면 [일련의 슬라이드가 AEM 탐색을 도입합니다](#product-navigation).
 
   ![튜토리얼](assets/basic-handling-console-tutorial.png)
 
-* **페이지 편집기** - 페이지를 처음 편집할 때 일련의 슬라이드가 페이지 편집기에 도입됩니다.
+* **페이지 편집기** - 페이지를 처음 편집할 때 일련의 슬라이드를 통해 페이지 편집기를 소개합니다.
 
   ![편집기 튜토리얼](assets/basic-handling-editor-tutorial.png)
 
    * 모든 콘솔에 처음 액세스할 때 [제품 탐색 개요](#product-navigation)와 마찬가지로 이 개요를 탐색합니다.
    * [**페이지 정보** 메뉴에서 **도움말**](#accessing-help)&#x200B;을 선택하여 언제든지 이 페이지를 다시 볼 수 있습니다.
 
-* **도구 콘솔** - 출처: **도구** 콘솔 또한 외부에 액세스할 수 있습니다 **리소스**:
+* **도구 콘솔** - **도구** 콘솔에서 외부 **리소스**&#x200B;에 액세스할 수도 있습니다.
 
    * **설명서** - 웹 경험 관리 설명서 보기
    * **개발자 리소스** - 개발자 리소스 및 다운로드

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # SPA 및 서버측 렌더링{#spa-and-server-side-rendering}
 
-단일 페이지 애플리케이션(SPA)은 종종 기본 애플리케이션처럼 익숙한 방식으로 반응하고 작동하는 풍부하고 동적인 경험을 사용자에게 제공할 수 있습니다. [이 기능은 클라이언트에 의존하여 콘텐츠를 맨 앞에 로드한 다음 사용자 상호 작용을 처리하는 대규모 작업을 수행함으로써 수행됩니다](introduction.md#how-does-a-spa-work). 이 프로세스는 클라이언트와 서버 사이에 필요한 통신량을 최소화하므로 앱이 반응성이 높아집니다.
+단일 페이지 애플리케이션(SPA)은 종종 기본 애플리케이션처럼 익숙한 방식으로 반응하고 작동하는 풍부하고 동적인 경험을 사용자에게 제공할 수 있습니다. [이 기능은 클라이언트를 통해 콘텐츠를 먼저 로드한 다음 사용자 상호 작용을 처리하는 데 필요한 작업을 수행하는 방식으로 수행됩니다](introduction.md#how-does-a-spa-work). 이 프로세스는 클라이언트와 서버 사이에 필요한 통신량을 최소화하므로 앱이 반응성이 높아집니다.
 
 그러나 이 프로세스를 수행하면 특히 SPA의 크기가 크고 컨텐츠가 풍부한 경우 초기 로드 시간이 길어질 수 있습니다. 로드 시간을 최적화하기 위해 일부 콘텐츠를 서버측에서 렌더링할 수 있습니다. SSR(서버측 렌더링)을 사용하면 페이지의 초기 로드를 가속화한 다음 추가적인 렌더링을 클라이언트에 전달할 수 있습니다.
 
@@ -25,18 +25,18 @@ SSR을 구현하기로 결정할 때는 먼저 장기 유지 관리를 포함하
 
 SSR은 일반적으로 다음 질문 중 하나에 명확한 &quot;예&quot;가 있을 때 일부 값을 제공합니다.
 
-* **SEO:** 트래픽을 가져오는 검색 엔진에 의해 사이트가 제대로 인덱싱되려면 여전히 SSR이 필요합니까? 이제 기본 검색 엔진 크롤러가 JS를 평가한다는 점을 기억하십시오.
-* **페이지 속도:** SSR이 실제 환경에서 측정 가능한 속도 개선을 제공하고 전반적인 사용자 경험을 추가합니까?
+* **SEO:** 트래픽을 가져오는 검색 엔진에서 사이트를 제대로 인덱싱하려면 SSR이 계속 필요합니까? 이제 기본 검색 엔진 크롤러가 JS를 평가한다는 점을 기억하십시오.
+* **페이지 속도:** SSR이 실제 환경에서 측정 가능한 속도 개선을 제공하고 전체 사용자 경험을 추가합니까?
 
-프로젝트에 대해 이 두 가지 질문 중 하나 이상이 명확한 &quot;예&quot;로 답변되는 경우에만 SSR을 구현하는 것이 Adobe에 좋습니다. 다음 섹션에서는 다음의 일부인 Adobe I/O Runtime을 사용하여 이 작업을 수행하는 방법을 설명합니다. [App Builder](https://developer.adobe.com/app-builder).
+프로젝트에 대해 이 두 가지 질문 중 하나 이상이 명확한 &quot;예&quot;로 답변되는 경우에만 SSR을 구현하는 것이 Adobe에 좋습니다. 다음 섹션에서는 [App Builder](https://developer.adobe.com/app-builder)의 일부인 Adobe I/O Runtime을 사용하여 이 작업을 수행하는 방법에 대해 설명합니다.
 
 ## Adobe I/O Runtime {#adobe-i-o-runtime}
 
-다음을 수행하는 경우 [프로젝트에 SSR 구현이 필요하다고 확신함](#when-to-use-ssr), Adobe의 권장 솔루션은 Adobe I/O Runtime을 사용하는 것입니다.
+[프로젝트에 SSR을 구현해야 한다고 확신하는 경우](#when-to-use-ssr) Adobe이 권장하는 해결 방법은 Adobe I/O Runtime을 사용하는 것입니다.
 
 Adobe I/O Runtime에 대한 자세한 내용은 다음을 참조하십시오.
 
-* [https://developer.adobe.com/runtime](https://developer.adobe.com/runtime) - App Builder의 런타임 기능에 대한 개요
+* [https://developer.adobe.com/runtime](https://developer.adobe.com/runtime) - App Builder 런타임 기능에 대한 개요입니다.
 * [https://developer.adobe.com/app-builder](https://developer.adobe.com/app-builder) - 전체 App Builder 제품에 대한 세부 정보
 * [https://developer.adobe.com/runtime/docs/](https://developer.adobe.com/runtime/docs) - 자세한 설명서
 
@@ -47,26 +47,26 @@ Adobe I/O Runtime에 대한 자세한 내용은 다음을 참조하십시오.
 
 >[!NOTE]
 >
->Adobe은 환경(단계, 프로덕션, 테스트 등)별로 별도의 Adobe I/O Runtime 작업공간을 권장합니다. 이렇게 하면 서로 다른 환경에 배포된 단일 애플리케이션의 서로 다른 버전을 사용하는 일반적인 SDLC(시스템 개발 수명 주기) 패턴을 사용할 수 있습니다. 다음을 참조하십시오 [App Builder 애플리케이션용 CI/CD](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) 추가 정보.
+>Adobe은 환경(단계, 프로덕션, 테스트 등)별로 별도의 Adobe I/O Runtime 작업공간을 권장합니다. 이렇게 하면 서로 다른 환경에 배포된 단일 애플리케이션의 서로 다른 버전을 사용하는 일반적인 SDLC(시스템 개발 수명 주기) 패턴을 사용할 수 있습니다. 자세한 내용은 [App Builder 애플리케이션용 CI/CD](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/)를 참조하십시오.
 >
 >인스턴스 유형별 런타임 구현에 차이가 없는 한 인스턴스(작성자, 게시)별로 별도의 작업 영역이 필요하지 않습니다.
 
 >[!NOTE]
 >
->Cloud Manager는 Adobe I/O Runtime에 대한 배포를 지원하지 않습니다. 따라서 Adobe I/O Runtime에 SSR 코드를 배포하려면 자체 인프라를 설정해야 합니다.
+>Cloud Manager은 Adobe I/O Runtime에 대한 배포를 지원하지 않습니다. 따라서 Adobe I/O Runtime에 SSR 코드를 배포하려면 자체 인프라를 설정해야 합니다.
 
 ## 원격 렌더러 구성 {#remote-content-renderer-configuration}
 
-AEM은 원격으로 렌더링된 콘텐츠를 검색할 수 있는 위치를 알고 있어야 합니다. 에 상관없이 [ssr에 대해 구현하도록 선택한 모델,](#adobe-i-o-runtime) 이 원격 렌더링 서비스에 액세스하는 방법을 AEM에 지정해야 합니다.
+AEM은 원격으로 렌더링된 콘텐츠를 검색할 수 있는 위치를 알고 있어야 합니다. [SSR에 대해 구현하도록 선택한 모델](#adobe-i-o-runtime)에 관계없이 이 원격 렌더링 서비스에 액세스하는 방법을 AEM에 지정해야 합니다.
 
-이 서비스는 다음을 통해 수행됩니다. **RemoteContentRenderer - Configuration Factory OSGi 서비스**. 웹 콘솔 구성 콘솔에서 문자열 &quot;RemoteContentRenderer&quot;를 검색합니다. `http://<host>:<port>/system/console/configMgr`.
+이 서비스는 **RemoteContentRenderer - Configuration Factory OSGi 서비스**&#x200B;를 통해 수행됩니다. `http://<host>:<port>/system/console/configMgr`의 웹 콘솔 구성 콘솔에서 문자열 &quot;RemoteContentRenderer&quot;를 검색합니다.
 
 ![렌더러 구성](assets/renderer-configuration.png)
 
 구성에 사용할 수 있는 필드는 다음과 같습니다.
 
-* **컨텐츠 경로 패턴** - 필요한 경우 컨텐츠의 일부와 일치하는 정규 표현식
-* **원격 끝점 URL** - 콘텐츠 생성을 담당하는 엔드포인트의 URL
+* **콘텐츠 경로 패턴** - 필요한 경우 콘텐츠의 일부와 일치하는 정규 표현식
+* **원격 끝점 URL** - 콘텐츠 생성을 담당하는 끝점의 URL
    * 로컬 네트워크에 없는 경우 보안 HTTPS 프로토콜을 사용합니다.
 * **추가 요청 헤더** - 원격 끝점으로 전송된 요청에 추가할 추가 헤더
    * 패턴: `key=value`
@@ -74,15 +74,15 @@ AEM은 원격으로 렌더링된 콘텐츠를 검색할 수 있는 위치를 알
 
 >[!NOTE]
 >
->를 구현할지 여부에 관계없이 [AEM 기반 통신 흐름](#aem-driven-communication-flow) 또는 [Adobe I/O Runtime 기반 플로우,](#adobe-i-o-runtime-driven-communication-flow) 원격 콘텐츠 렌더러 구성을 정의해야 합니다.
+>[AEM 기반 통신 흐름](#aem-driven-communication-flow) 또는 [Adobe I/O Runtime 기반 흐름을 구현하도록 선택했는지 여부에 관계없이 원격 콘텐츠 렌더러 구성을 정의해야 합니다.](#adobe-i-o-runtime-driven-communication-flow)
 
 >[!NOTE]
 >
->이 구성은 [원격 콘텐츠 렌더러,](#remote-content-renderer) 추가 확장 및 사용자 정의 옵션을 사용할 수 있습니다.
+>이 구성은 추가 확장 및 사용자 지정 옵션을 사용할 수 있는 [원격 콘텐츠 렌더러](#remote-content-renderer)을(를) 사용합니다.
 
 ## AEM 기반 통신 흐름 {#aem-driven-communication-flow}
 
-SSR을 사용하는 경우 [구성 요소 상호 작용 워크플로](introduction.md#interaction-with-the-spa-editor) AEM의 SPA에는 앱의 초기 콘텐츠가 Adobe I/O Runtime에서 생성되는 단계가 포함됩니다.
+SSR을 사용하는 경우 AEM에서 SPA의 [구성 요소 상호 작용 워크플로](introduction.md#interaction-with-the-spa-editor)에는 앱의 초기 콘텐츠가 Adobe I/O Runtime에서 생성되는 단계가 포함됩니다.
 
 1. 브라우저가 AEM에서 SSR 콘텐츠를 요청합니다.
 1. AEM은 모델을 Adobe I/O Runtime에 게시합니다.
@@ -115,19 +115,19 @@ SSR을 사용하는 경우 [구성 요소 상호 작용 워크플로](introducti
     </ul> </td>
    <td>
     <ul>
-     <li>SPA 개발자에게 생소할 수 있음<br /> </li>
+     <li>SPA 개발자<br />에게 생소할 수 있음 </li>
     </ul> </td>
   </tr>
   <tr>
    <th><strong>Adobe I/O Runtime을 통해<br /> </strong></th>
    <td>
     <ul>
-     <li>SPA 개발자에게 더 친숙함<br /> </li>
+     <li>SPA 개발자에게 더 친숙합니다<br /> </li>
     </ul> </td>
    <td>
     <ul>
-     <li>CSS 및 JavaScript와 같이 애플리케이션에 필요한 Clientlib 리소스는 AEM 개발자가 <code><a href="/help/implementing/developing/introduction/clientlibs.md">allowProxy</a></code> 속성<br /> </li>
-     <li>AEM과 Adobe I/O Runtime 간에 리소스를 동기화해야 합니다.<br /> </li>
+     <li>CSS 및 JavaScript과 같이 응용 프로그램에 필요한 Clientlib 리소스는 <code><a href="/help/implementing/developing/introduction/clientlibs.md">allowProxy</a></code> 속성을 통해 AEM 개발자가 사용할 수 있도록 해야 합니다.<br /> </li>
+     <li>AEM과 Adobe I/O Runtime<br /> 간에 리소스를 동기화해야 합니다. </li>
      <li>SPA 작성을 활성화하려면 Adobe I/O Runtime용 프록시 서버가 필요할 수 있습니다</li>
     </ul> </td>
   </tr>
@@ -154,21 +154,21 @@ AEM이 Angular 및 React SPA 프레임워크를 기본적으로 지원하는 것
 
 ## 원격 콘텐츠 렌더러 {#remote-content-renderer}
 
-다음 [원격 콘텐츠 렌더러 구성](#remote-content-renderer-configuration) AEM에서 SPA과 함께 SSR을 사용하는 것이 필요하며, 필요에 따라 확장 및 사용자 정의할 수 있는 보다 일반적인 렌더링 서비스를 제공합니다.
+AEM에서 SPA과 함께 SSR을 사용하는 데 필요한 [원격 콘텐츠 렌더러 구성](#remote-content-renderer-configuration)은(는) 요구 사항에 맞게 확장 및 사용자 지정할 수 있는 보다 일반적인 렌더링 서비스로 전환됩니다.
 
 ### RemoteContentRenderingService {#remotecontentrenderingservice}
 
-`RemoteContentRenderingService` Adobe I/O 등 원격 서버에서 렌더링된 콘텐츠를 검색하는 OSGi 서비스입니다. 원격 서버로 전송된 콘텐츠는 전달된 요청 매개 변수를 기반으로 합니다.
+`RemoteContentRenderingService` Adobe I/O 등 원격 서버에서 렌더링된 콘텐츠를 검색할 OSGi 서비스입니다. 원격 서버로 전송된 콘텐츠는 전달된 요청 매개 변수를 기반으로 합니다.
 
-`RemoteContentRenderingService` 추가적인 컨텐츠 조작이 필요한 경우 종속성 반전 을 통해 사용자 지정 Sling 모델 또는 서블릿에 삽입할 수 있습니다.
+추가 콘텐츠 조작이 필요한 경우 종속성 반전을 통해 사용자 지정 Sling 모델 또는 서블릿에 `RemoteContentRenderingService`을(를) 삽입할 수 있습니다.
 
-이 서비스는 내부적으로 [RemoteContentRendererRequestHandlerServlet](#remotecontentrendererrequesthandlerservlet).
+이 서비스는 내부적으로 [RemoteContentRendererRequestHandlerServlet](#remotecontentrendererrequesthandlerservlet)에 사용됩니다.
 
 ### RemoteContentRendererRequestHandlerServlet {#remotecontentrendererrequesthandlerservlet}
 
-다음 `RemoteContentRendererRequestHandlerServlet` 은 요청 구성을 프로그래밍 방식으로 설정하는 데 사용됩니다. `DefaultRemoteContentRendererRequestHandlerImpl`제공된 기본 요청 처리기 구현에서는 콘텐츠 구조의 위치를 원격 끝점에 매핑할 수 있도록 여러 OSGi 구성을 만들 수 있습니다.
+`RemoteContentRendererRequestHandlerServlet`은(는) 프로그래밍 방식으로 요청 구성을 설정하는 데 사용됩니다. 제공된 기본 요청 처리기 구현인 `DefaultRemoteContentRendererRequestHandlerImpl`을(를) 사용하면 콘텐츠 구조의 위치를 원격 끝점에 매핑할 수 있도록 여러 OSGi 구성을 만들 수 있습니다.
 
-사용자 지정 요청 핸들러를 추가하려면 `RemoteContentRendererRequestHandler` 인터페이스. 다음을 설정하십시오. `Constants.SERVICE_RANKING` 구성 요소 속성을 100보다 큰 정수로 지정합니다. 이 값은 `DefaultRemoteContentRendererRequestHandlerImpl`.
+사용자 지정 요청 처리기를 추가하려면 `RemoteContentRendererRequestHandler` 인터페이스를 구현하십시오. `Constants.SERVICE_RANKING` 구성 요소 속성을 `DefaultRemoteContentRendererRequestHandlerImpl`의 순위인 100보다 큰 정수로 설정해야 합니다.
 
 ```javascript
 @Component(immediate = true,
@@ -181,7 +181,7 @@ public class CustomRemoteContentRendererRequestHandlerImpl implements RemoteCont
 
 ### 기본 핸들러의 OSGi 구성 구성 {#configure-default-handler}
 
-섹션에 설명된 대로 기본 핸들러의 구성을 구성해야 합니다 [원격 콘텐츠 렌더러 구성](#remote-content-renderer-configuration).
+[원격 콘텐츠 렌더러 구성](#remote-content-renderer-configuration) 섹션에 설명된 대로 기본 처리기의 구성을 구성해야 합니다.
 
 ### 원격 콘텐츠 렌더러 사용 {#usage}
 
@@ -200,4 +200,4 @@ public class CustomRemoteContentRendererRequestHandlerImpl implements RemoteCont
 
 ### 요구 사항 {#requirements}
 
-서블릿은 슬링 모델 익스포터를 사용하여 구성 요소 데이터를 직렬화합니다. 기본적으로 `com.adobe.cq.export.json.ContainerExporter` 및 `com.adobe.cq.export.json.ComponentExporter` 슬링 모델 어댑터로 지원됩니다. 필요한 경우 요청을 조정할 클래스를 추가할 수 있습니다. `RemoteContentRendererServlet` 및 구현 `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses`. 추가 클래스는 `ComponentExporter`.
+서블릿은 슬링 모델 익스포터를 사용하여 구성 요소 데이터를 직렬화합니다. 기본적으로 `com.adobe.cq.export.json.ContainerExporter`과(와) `com.adobe.cq.export.json.ComponentExporter`은(는) 모두 Sling 모델 어댑터로 지원됩니다. 필요한 경우 `RemoteContentRendererServlet`을(를) 사용하고 `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses`을(를) 구현하기 위해 요청을 조정해야 하는 클래스를 추가할 수 있습니다. 추가 클래스는 `ComponentExporter`을(를) 확장해야 합니다.

@@ -21,12 +21,12 @@ ht-degree: 5%
 * [콘텐츠 전송](#content-transfer)
 
 
-프로젝트 카드를 클릭하면 프로젝트 랜딩 페이지를 열고 로 이동할 수 있습니다. **구현** 다음 그림과 같은 섹션입니다.
+다음 그림과 같이 프로젝트 랜딩 페이지를 열고 **구현** 섹션으로 이동할 수 있도록 프로젝트 카드를 클릭합니다.
 
 ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
 >[!NOTE]
->다음을 참조하십시오 [Cloud Acceleration Manager에서 프로젝트 생성 및 관리](getting-started-cam.md#create-project) 자세히 알아보십시오.
+>자세한 내용은 [Cloud Acceleration Manager에서 프로젝트 만들기 및 관리](getting-started-cam.md#create-project)를 참조하십시오.
 
 
 ## 로컬 개발 카드 사용 {#local-development}
@@ -35,7 +35,7 @@ ht-degree: 5%
 
 로컬 개발 활동 카드를 살펴볼 수 있도록 다음 섹션을 따르십시오.
 
-1. 클릭 **보기** 다음에서 **로컬 개발** 카드.
+1. **로컬 개발** 카드에서 **보기**&#x200B;를 클릭합니다.
 
    ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/implementation-2.png)
 
@@ -50,7 +50,7 @@ ht-degree: 5%
 
 코드 리팩터링 활동 카드를 살펴볼 수 있도록 다음 섹션을 따르십시오.
 
-1. 클릭 **리뷰** 다음에서 **코드 리팩터링** 활동 카드.
+1. **코드 리팩터링** 활동 카드에서 **검토**&#x200B;를 클릭합니다.
 
    ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/implementation-4.png)
 
@@ -65,22 +65,22 @@ ht-degree: 5%
 >[!NOTE]
 >모범 사례 분석기에서 다루지 않는 몇 가지 추가 영역을 이해하려면 이 탭의 내용을 검토하십시오.
 
-다음 **디스패처** 탭에서는 클라우드 환경에 배포하기 전에 AEM as a Cloud Service Apache 및 Dispatcher 구성을 구성하는 방법과 이를 로컬에서 확인하고 실행하는 방법에 대해 설명합니다. 또한 클라우드 환경에서의 디버깅에 대해서도 설명합니다.
+**Dispatcher** 탭에는 AEM as a Cloud Service Apache 및 Dispatcher 구성을 구성하는 방법과 클라우드 환경에 배포하기 전에 로컬에서 확인하고 실행하는 방법에 대한 정보가 제공됩니다. 또한 클라우드 환경에서의 디버깅에 대해서도 설명합니다.
 
 ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
-다음 **테스트** 탭은 기능, 경험 감사 및 UI 테스트에 대한 정보를 제공합니다.
+**테스트** 탭은 기능, 경험 감사 및 UI 테스트에 대한 정보를 제공합니다.
 
 ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-3.png)
 
 
 ## AEM as a Cloud Service 배포 카드 사용 {#aem-as-a-cloud-service-deployment}
 
-AEM as a Cloud Service AEM 배포 카드는 코드를 as a Cloud Service으로 배포하는 데 도움이 되는 모든 관련 콘텐츠를 제공합니다.
+AEM as a Cloud Service 배포 카드는 AEM as a Cloud Service에 코드를 배포하는 데 도움이 되는 모든 관련 콘텐츠를 제공합니다.
 
-AEM as a Cloud Service 배포 카드 활동 카드를 탐색할 수 있도록 다음 섹션을 따르십시오.
+AEM as a Cloud Service 배포 카드 활동 카드를 살펴볼 수 있도록 이 섹션을 따르십시오.
 
-1. 클릭 **보기** 다음에서 **AEM as a Cloud Service 배포** 활동 카드.
+1. **AEM as a Cloud Service 배포** 활동 카드에서 **보기**&#x200B;를 클릭합니다.
 
    ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/implementation-6.png)
 
@@ -91,27 +91,27 @@ AEM as a Cloud Service 배포 카드 활동 카드를 탐색할 수 있도록 �
 
 ## 컨텐츠 전송 카드 사용 {#content-transfer}
 
-컨텐츠 전송 카드를 사용하면 현재 AEM AEM 인스턴스에서 as a Cloud Service으로 컨텐츠 전송을 시작 및 관리할 수 있습니다.
+컨텐츠 전송 카드를 사용하면 현재 AEM 인스턴스에서 AEM as a Cloud Service으로 컨텐츠 전송을 시작 및 관리할 수 있습니다.
 
 콘텐츠 전송 활동 카드를 살펴볼 수 있도록 다음 섹션을 따르십시오.
 
-1. 클릭 **리뷰** 다음에서 **컨텐츠 전송** 활동 카드.
+1. **콘텐츠 전송** 활동 카드에서 **검토**&#x200B;를 클릭합니다.
 
    ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
 
-1. 콘텐츠 전송을 시작하려면 마이그레이션 세트를 만들어야 합니다. 클릭 **마이그레이션 세트 만들기**. 마이그레이션 세트는 콘텐츠를 AEM에 as a Cloud Service으로 전송할 수 있도록 해줍니다.
+1. 콘텐츠 전송을 시작하려면 마이그레이션 세트를 만들어야 합니다. **마이그레이션 세트 만들기**&#x200B;를 클릭합니다. 마이그레이션 세트는 콘텐츠를 AEM as a Cloud Service으로 전송할 수 있도록 해줍니다.
 
    ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
 
    >[!NOTE]
-   >오랫동안 사용하지 않으면 마이그레이션 세트가 만료됩니다. 다음을 참조하십시오 [마이그레이션 세트 만료](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 을 참조하십시오.
+   >오랫동안 사용하지 않으면 마이그레이션 세트가 만료됩니다. 자세한 내용은 [마이그레이션 세트 만료](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry)을 참조하십시오.
 
    >[!NOTE]
-   >다음을 참조하십시오 [전제 조건](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html) 및 [우수 사례 및 지침](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) 컨텐츠 전송 도구를 사용하기 전에.
+   >콘텐츠 전송 도구를 사용하기 전에 [필수 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html) 및 [모범 사례 및 지침](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)을(를) 참조하십시오.
 
-1. 콘텐츠 전송 도구 를 다운로드하여 설치하고 마이그레이션 세트를 채우고 콘텐츠 전송의 추출 단계를 완료합니다. 리뷰 [컨텐츠 전송 도구 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html) 콘텐츠 전송 도구 사용 방법을 알아봅니다.
+1. 콘텐츠 전송 도구 를 다운로드하여 설치하고 마이그레이션 세트를 채우고 콘텐츠 전송의 추출 단계를 완료합니다. [콘텐츠 전송 도구 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html)를 검토하여 콘텐츠 전송 도구를 사용하는 방법을 알아보십시오.
 
-1. AEM에서 환경으로 마이그레이션 세트의 컨텐츠를 as a Cloud Service으로 수집하려면 수집을 시작해야 합니다. 다음으로 이동 **수집 작업** 및 클릭 **새로운 수집**. 리뷰 [Target에 컨텐츠 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) 따라서 콘텐츠 전송의 수집 단계를 완료하는 방법을 배울 수 있습니다.
+1. 마이그레이션 세트에서 AEM as a Cloud Service의 환경으로 컨텐츠를 수집하려면 수집을 시작해야 합니다. **수집 작업**(으)로 이동한 다음 **새 수집**&#x200B;을 클릭합니다. 콘텐츠 전송의 수집 단계를 완료하는 방법을 배울 수 있도록 [Target에 콘텐츠 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)을 검토하십시오.
 
    ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 
@@ -130,4 +130,4 @@ You can also estimate the size of specific repository paths by using the `path` 
 
 ## 다음 단계 {#whats-next}
 
-Cloud Acceleration Manager에 로그온하는 방법과 구현 단계를 사용하는 방법을 배운다면 의 다음 단계를 검토할 준비가 된 것입니다. [실행 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-golive-phase.html).
+Cloud Acceleration Manager에 로그온하는 방법과 구현 단계를 사용하는 방법을 학습하면 [라이브 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-golive-phase.html)의 다음 단계를 검토할 수 있습니다.

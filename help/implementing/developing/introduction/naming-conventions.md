@@ -19,13 +19,13 @@ ht-degree: 1%
 
 이러한 이름 지정 규칙은 다양한 수준에서 구현됩니다.
 
-* JcrUtil: 의 AEM 구현 [JCR 유틸리티](#jcr-utilities).
-* PageManager: [페이지 관리자](#page-manager) 페이지 수준 작업을 위한 메서드를 제공합니다.
-* AEM UI 내 {#ui-behavior}
+* JcrUtil: [JCR 유틸리티](#jcr-utilities)의 AEM 구현입니다.
+* PageManager: [페이지 관리자](#page-manager)에서 페이지 수준 작업을 위한 메서드를 제공합니다.
+* AEM UI {#ui-behavior} 내
 
 ### JCR 유틸리티 {#jcr-utilities}
 
-[JcrUtil](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) 는 JCR 유틸리티의 AEM 구현입니다. 이름 확인에 특히 중요한 것은 이 변수가 제어하는 문자 매핑과 다음 유효성 검사입니다.
+[JcrUtil](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html)은(는) JCR 유틸리티의 AEM 구현입니다. 이름 확인에 특히 중요한 것은 이 변수가 제어하는 문자 매핑과 다음 유효성 검사입니다.
 
 * `isValidName`
    * 이름이 비어 있지 않고 유효한 문자만 포함되어 있는지 확인합니다.
@@ -36,7 +36,7 @@ ht-degree: 1%
 
 ### 페이지 관리자 {#page-manager}
 
-[PageManager](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) 은 다음을 기반으로 페이지 수준 작업을 위한 메서드를 제공합니다. [JCRUtil](#jcr-utilities).
+[PageManager](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html)은(는) [JCRUtil](#jcr-utilities)을(를) 기반으로 페이지 수준 작업에 대한 메서드를 제공합니다.
 
 ### AEM UI 동작 {#ui-behavior}
 

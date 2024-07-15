@@ -24,14 +24,14 @@ ht-degree: 43%
 
 ## 릴리스 일자 {#release-date}
 
-의 릴리스 날짜 [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0은 2021년 5월 6일입니다.
+as a Cloud Service [!DNL Adobe Experience Manager]의 릴리스 일자 2021년 5월 2021일은 2021년 5월 6일입니다.
 다음 릴리스(2021.5.0) 날짜는 2021년 5월 27일입니다.
 
-## AEM as a Cloud Service Foundation{#aem-as-a-cloud-service-foundation}
+## AEM as a Cloud Service 재단{#aem-as-a-cloud-service-foundation}
 
 ### 새로운 기능 {#what-is-new-foundation}
 
-* [콘텐츠 트리 워크플로 게시](/help/operations/replication.md#publish-content-tree-workflow) - 새로운 워크플로우 모델 및 단계는 깊은 계층의 콘텐츠를 게시할 때 향상된 성능을 제공합니다.
+* [Publish 콘텐츠 트리 워크플로](/help/operations/replication.md#publish-content-tree-workflow) - 새로운 워크플로 모델 및 단계는 깊은 계층의 콘텐츠의 게시할 때 향상된 성능을 제공합니다.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -55,21 +55,21 @@ ht-degree: 43%
 
 ### [!DNL Assets]의 새로운 기능 {#what-is-new-assets}
 
-* [!DNL Experience Manager] 는 원본 파일이 다운로드된 단일 에셋 다운로드를 보관하지 않습니다. 이 향상된 기능을 통해 더 빠른 다운로드가 가능합니다.
+* [!DNL Experience Manager]은(는) 원본 파일을 다운로드한 단일 자산 다운로드를 보관하지 않습니다. 이 향상된 기능을 통해 더 빠른 다운로드가 가능합니다.
 
 * 이제 linkshare 옵션을 통해 에셋을 다운로드할 때 렌디션을 다운로드할지 여부를 선택할 수 있습니다. 이전에는 모든 에셋 렌디션이 다운로드되었습니다.
 
-* 관리자는 을 구성할 수 있습니다 [!DNL Experience Manager] 일괄 에셋 수집을 수행한 후 에셋 소스를 삭제합니다. 다음을 참조하십시오 [일괄 에셋 수집](/help/assets/add-assets.md#asset-bulk-ingestor).
+* 관리자는 일괄 에셋 수집을 수행한 후 에셋 소스를 삭제하도록 [!DNL Experience Manager]을(를) 구성할 수 있습니다. [일괄 에셋 수집](/help/assets/add-assets.md#asset-bulk-ingestor)을 참조하십시오.
 
-* 에셋을 일괄로 가져오기 위해 상태 검사를 실행할 때 이제 Experience Manager은 실패 이유에 대한 자세한 정보를 제공합니다. 다음을 참조하십시오 [일괄 에셋 수집](/help/assets/add-assets.md#asset-bulk-ingestor).
+* 에셋을 일괄로 가져오기 위해 상태 검사를 실행할 때 이제 Experience Manager은 실패 이유에 대한 자세한 정보를 제공합니다. [일괄 에셋 수집](/help/assets/add-assets.md#asset-bulk-ingestor)을 참조하십시오.
 
-* 일괄 가져오기 도구를 사용하여 에셋을 가져올 때 관리자는 이제 가져오기가 완료된 후 소스 파일을 삭제할 수 있는 옵션이 있습니다. 다음을 참조하십시오 [일괄 에셋 수집](/help/assets/add-assets.md#asset-bulk-ingestor).
+* 일괄 가져오기 도구를 사용하여 에셋을 가져올 때 관리자는 이제 가져오기가 완료된 후 소스 파일을 삭제할 수 있는 옵션이 있습니다. [일괄 에셋 수집](/help/assets/add-assets.md#asset-bulk-ingestor)을 참조하십시오.
 
 * 메타데이터 스키마를 편집할 때 새로운 루트 경로 선택기 필드를 사용하면 관리자가 빠르고 쉽게 선택할 수 있으므로 구성 시간이 단축됩니다.
 
-* 메타데이터 스키마를 편집할 때 메타데이터 편집기에서 자유 형식 텍스트 영역을 제공하는 데이터 유형이 추가됩니다. 사용자는 이 텍스트 영역을 사용하여 자유 형식의 텍스트를 에셋의 메타데이터로 입력할 수 있습니다. 다음을 참조하십시오 [메타데이터 스키마 편집기](/help/assets/metadata-schemas.md).
+* 메타데이터 스키마를 편집할 때 메타데이터 편집기에서 자유 형식 텍스트 영역을 제공하는 데이터 유형이 추가됩니다. 사용자는 이 텍스트 영역을 사용하여 자유 형식의 텍스트를 에셋의 메타데이터로 입력할 수 있습니다. [메타데이터 스키마 편집기](/help/assets/metadata-schemas.md)를 참조하십시오.
 
-* 많은 에셋의 메타데이터는 CSV 파일을 사용하여 일괄로 가져올 수 있으며 CSV 파일로 내보낼 수 있습니다. 이제 기본 날짜 형식은 입니다 `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. 사용자는 열 머리글을 업데이트하여 다른 형식을 사용할 수 있습니다. 예: 추가 `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` csv 파일의 열 머리글로 사용됩니다(단어 대신). `Date`.
+* 많은 에셋의 메타데이터는 CSV 파일을 사용하여 일괄로 가져올 수 있으며 CSV 파일로 내보낼 수 있습니다. 이제 기본 날짜 형식은 `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`입니다. 사용자는 열 머리글을 업데이트하여 다른 형식을 사용할 수 있습니다. 예를 들어 CSV 파일의 열 머리글로 단어 `Date` 대신 `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`을(를) 추가합니다.
 
 * 열 보기에서 에셋을 검색할 때 시각적 표시기가 각 에셋의 승인 또는 거부 상태를 표시합니다.
 
@@ -138,7 +138,7 @@ ht-degree: 43%
 
 * AEM 상점 첫 화면의 단계적 카탈로그 데이터에 대한 시각적 표시기
 
-* 이제 Commerce 끝점을 Cloud Manager UI를 통해 구성할 수 있습니다
+* 이제 Commerce UI를 통해 Cloud Manager 엔드포인트를 구성할 수 있습니다
 
 ### 버그 수정 {#bug-fixes-commerce}
 
@@ -146,7 +146,7 @@ ht-degree: 43%
 
 ## Cloud Manager {#cloud-manager}
 
-이 섹션에서는 AEM as a Cloud Service 2021.4.0의 Cloud Manager 릴리스 정보에 대해 간략히 소개합니다.
+이 섹션에서는 AEM as a Cloud Service 2021.4.0의 Cloud Manager 릴리스 정보에 대해 간략히 설명합니다.
 
 ### 릴리스 일자 {#release-date-cm-april}
 

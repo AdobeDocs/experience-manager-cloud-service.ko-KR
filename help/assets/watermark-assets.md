@@ -19,36 +19,36 @@ ht-degree: 16%
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html) |
 | AEM as a Cloud Service | 이 문서 |
 
-[!DNL Adobe Experience Manager Assets] 이미지 및 비디오에 디지털 워터마크를 추가할 수 있습니다. [!DNL Assets] 는 이미지를 다른 이미지 파일에 워터마크로 적용할 수 있도록 지원합니다. 워터마크는 사용자가 에셋의 진정성과 저작권 소유권을 확인하는 데 도움이 될 수 있습니다. 또한 워터마크를 사용하여 기밀, 초안, 유효성 등과 같은 문서의 상태를 표시할 수 있습니다.
+[!DNL Adobe Experience Manager Assets]을(를) 사용하면 이미지 및 비디오에 디지털 워터마크를 추가할 수 있습니다. [!DNL Assets]에서는 다른 이미지 파일에 이미지를 워터마크로 적용할 수 있습니다. 워터마크는 사용자가 에셋의 진정성과 저작권 소유권을 확인하는 데 도움이 될 수 있습니다. 또한 워터마크를 사용하여 기밀, 초안, 유효성 등과 같은 문서의 상태를 표시할 수 있습니다.
 
-구성하려면 [!DNL Experience Manager] 에셋에 워터마크 지정 방법:
+자산을 워터마크 지정하도록 [!DNL Experience Manager]을(를) 구성하려면:
 
 1. PNG 파일은 워터마크로 적용됩니다. 이 파일을 DAM 저장소에 업로드합니다.
 
-1. 다음으로 이동 **[!UICONTROL 도구 > 에셋 > 에셋 구성]**.
+1. **[!UICONTROL 도구 > Assets > Assets 구성]**(으)로 이동합니다.
 
-1. 클릭 **[!UICONTROL 시스템 워터마킹 프로필]**.
+1. **[!UICONTROL 시스템 워터마크 프로필]**&#x200B;을 클릭합니다.
 
-1. 다음에서 [!UICONTROL 시스템 워터마킹 프로필 페이지]1단계에서 DAM 저장소에 업로드되는 이미지 경로를 지정합니다.
+1. [!UICONTROL 시스템 워터마킹 프로필 페이지]에서 1단계에서 DAM 리포지토리에 업로드된 이미지 경로를 지정합니다.
 
-1. 렌디션 너비를 기준으로 0.0~1.0 범위의 워터마크 배율을 **[!UICONTROL 크기 조절]** 필드.
+1. **[!UICONTROL 크기 조정]** 필드에 렌디션 너비를 기준으로 0.0 - 1.0 범위의 워터마크 크기를 지정합니다.
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
-   ![에셋 중복 감지기](assets/system-watermarking-profile.png)
+   ![자산 중복 감지기](assets/system-watermarking-profile.png)
 
    >[!NOTE]
    >
-   >다음을 사용하여 시스템 워터마킹 프로필을 구성한 경우 `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` Adobe 구성 파일(OSGi 구성)은 계속 사용할 수 있지만 새 메서드를 사용하는 것이 좋습니다.
+   >`com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` 구성 파일(OSGi 구성)을 사용하여 시스템 워터마킹 프로필을 구성한 경우 계속 사용할 수 있지만, Adobe은 새 메서드를 사용하는 것을 권장합니다.
 
 
-1. [처리 프로필 만들기](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) 자산 마이크로서비스 를 사용하여 워터마크를 적용합니다.
+1. 자산 마이크로서비스를 사용하여 워터마크를 적용하려면 [처리 프로필을 만듭니다](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile).
 
-   ![워터마크를 만드는 자산 처리 프로필](assets/watermark-processing-profile.png)
+   ![워터마크를 만들 자산 처리 프로필](assets/watermark-processing-profile.png)
 
-   다음을 활성화했는지 확인합니다. **[!UICONTROL 워터마크]** 처리 프로필을 만드는 동안 전환합니다.
+   처리 프로필을 만드는 동안 **[!UICONTROL 워터마크]** 전환을 활성화하십시오.
 
-1. [폴더에 처리 프로필 적용](/help/assets/asset-microservices-configure-and-use.md#use-profiles) 워터마크 에셋을 만듭니다.
+1. [폴더에 처리 프로필을 적용](/help/assets/asset-microservices-configure-and-use.md#use-profiles)하여 워터마크가 지정된 자산을 만듭니다.
 
 ## 팁 및 제한 사항 {#tips-limitations-bestpractices}
 
@@ -74,5 +74,5 @@ ht-degree: 16%
 
 >[!MORELIKETHIS]
 >
->* [에셋 마이크로서비스 개요](/help/assets/asset-microservices-overview.md).
->* [처리 프로필에서 자산 마이크로서비스 사용](/help/assets/asset-microservices-configure-and-use.md).
+>* [자산 마이크로서비스 개요](/help/assets/asset-microservices-overview.md).
+>* [처리 프로필에 자산 마이크로서비스 사용](/help/assets/asset-microservices-configure-and-use.md).

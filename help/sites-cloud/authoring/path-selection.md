@@ -18,7 +18,7 @@ ht-degree: 43%
 
 ## 경로 필드 {#path-fields}
 
-여기에 사용되는 예제는 이미지 구성 요소입니다. 구성 요소 사용 및 편집에 대한 자세한 내용은 을 참조하십시오. [페이지 작성을 위한 구성 요소](/help/sites-cloud/authoring/page-editor/components.md)
+여기에 사용되는 예제는 이미지 구성 요소입니다. 구성 요소 사용 및 편집에 대한 자세한 내용은 [페이지 작성을 위한 구성 요소](/help/sites-cloud/authoring/page-editor/components.md)를 참조하십시오.
 
 경로 필드에는 자동 완성 및 예측 기능이 있어 리소스를 쉽게 찾을 수 있습니다.
 
@@ -32,13 +32,13 @@ ht-degree: 43%
 
 ## 경로 브라우저 {#path-browser}
 
-경로 브라우저는 다음과 같이 구성됩니다. [열 보기](/help/sites-cloud/authoring/basic-handling.md#column-view) / [**사이트** 콘솔,](/help/sites-cloud/authoring/sites-console/introduction.md) 리소스를 더 자세히 선택할 수 있습니다.
+경로 브라우저는 [**사이트** 콘솔의 [열 보기](/help/sites-cloud/authoring/basic-handling.md#column-view),](/help/sites-cloud/authoring/sites-console/introduction.md)와 같이 구성되어 리소스에 대한 상세한 선택을 허용합니다.
 
 ![경로 브라우저](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* 리소스를 선택하면 **선택** 대화 상자의 오른쪽 상단에 있는 버튼이 활성화됩니다.
-   * 을(를) 선택하여 선택 항목을 확인하거나 **취소** 중단합니다.
-* 컨텍스트에서 여러 리소스를 선택할 수 있는 경우 리소스를 선택하면 **선택** 버튼을 누르고 선택한 리소스 수의 카운트를 창의 오른쪽 상단에 추가합니다.
+* 리소스를 선택하면 대화 상자의 오른쪽 상단에 **선택** 단추가 활성화됩니다.
+   * 선택을 확인하려면 선택하고, 중단하려면 **취소**&#x200B;를 선택하십시오.
+* 컨텍스트에서 여러 리소스를 선택할 수 있는 경우 리소스를 선택하면 **Select** 단추도 활성화되지만 선택한 리소스 수의 카운트가 창의 오른쪽 위에 추가됩니다.
    * 번호 옆에 있는 **X**&#x200B;를 클릭하여 모두 선택 취소합니다.
 * 트리를 탐색할 때 대화 상자의 맨 위에 있는 탐색 표시에 위치가 반영됩니다.
    * 이러한 이동 경로를 사용하여 리소스 계층 구조 내에서 빠르게 이동할 수도 있습니다.

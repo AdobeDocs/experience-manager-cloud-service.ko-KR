@@ -4,8 +4,8 @@ description: Dynamic Media는 다양한 시각적 머천다이징 및 마케팅 
 contentOwner: Rick Brough
 source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 61%
+source-wordcount: '165'
+ht-degree: 63%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 61%
 
 Dynamic Media은 확대/축소, 360° 회전 및 비디오를 비롯한 대화형 보기 환경을 제공합니다. Dynamic Media은 디지털 캠페인 관리 프로세스를 간소화하고 간소화하기 위해 Adobe Experience Manager 디지털 에셋 관리(Assets) 솔루션의 워크플로를 고유하게 통합합니다.
 
-클래식 사용자 인터페이스에서는 Dynamic Media 작업을 사용할 수 없습니다. 다음을 참조하십시오 [Dynamic Media을 사용하여 작업](/help/assets/dynamic-media/dynamic-media.md) 터치 지원 사용자 인터페이스를 포함합니다.
+클래식 사용자 인터페이스에서는 Dynamic Media 작업을 사용할 수 없습니다. 터치 사용 사용자 인터페이스를 다루는 [Dynamic Media 작업,](/help/assets/dynamic-media/dynamic-media.md)을 참조하세요.
 
 <!-- 
 

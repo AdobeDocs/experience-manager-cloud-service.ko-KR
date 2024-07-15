@@ -108,11 +108,11 @@ ht-degree: 93%
 
 저장소의 `LiveAction` 구성 노드를 사용하여 `LiveAction` 인스턴스의 런타임 동작에 영향을 미치는 정보를 저장합니다. `LiveAction` 구성을 저장하는 저장소의 노드는 런타임 시 `LiveActionFactory` 오브젝트에 사용할 수 있습니다. 따라서 구성 노드에 속성을 추가하여 필요에 따라 `LiveActionFactory` 구현에서 사용할 수 있습니다.
 
-예: `LiveAction` 블루프린트 작성자의 이름을 저장해야 합니다. 구성 노드의 속성에는 정보를 저장하는 블루프린트 페이지의 속성 이름이 포함됩니다. 런타임 시 `LiveAction`이 구성에서 속성 이름을 검색한 다음 속성 값을 가져옵니다.
+예를 들어 `LiveAction`은(는) 블루프린트 작성자의 이름을 저장해야 합니다. 구성 노드의 속성에는 정보를 저장하는 블루프린트 페이지의 속성 이름이 포함됩니다. 런타임 시 `LiveAction`이 구성에서 속성 이름을 검색한 다음 속성 값을 가져옵니다.
 
 [`LiveActionFactory.createAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) 메서드의 매개변수는 `Resource` 오브젝트입니다. 이 `Resource` 오브젝트는 롤아웃 구성에서 이 라이브 작업에 대한 `cq:LiveSyncAction` 노드를 나타냅니다.
 
-다음을 참조하십시오 [롤아웃 구성 만들기](/help/sites-cloud/administering/msm/live-copy-sync-config.md#creating-a-rollout-configuration) 추가 정보.
+자세한 내용은 [롤아웃 구성 만들기](/help/sites-cloud/administering/msm/live-copy-sync-config.md#creating-a-rollout-configuration)를 참조하십시오.
 
 평소와 같이 구성 노드를 사용할 때 이를 `ValueMap` 오브젝트에 맞게 조정해야 합니다.
 
@@ -138,7 +138,7 @@ public LiveAction createAction(Resource resource) throws WCMException {
    * `autoSave` 값은 `LiveAction`이 저장소의 변경 사항을 저장해야 하는지 여부를 나타냅니다.
    * `reset` 값은 롤아웃 재설정 모드를 나타냅니다.
 
-이러한 개체에서 다음에 대한 정보를 얻을 수 있습니다. `LiveCopy`. 또한 `Resource` 오브젝트를 사용하여 `ResourceResolver`, `Session` 및 `Node` 오브젝트를 얻을 수 있습니다. 이러한 오브젝트는 저장소 콘텐츠를 조작하는 데 유용합니다.
+이러한 개체에서 `LiveCopy`에 대한 정보를 가져올 수 있습니다. 또한 `Resource` 오브젝트를 사용하여 `ResourceResolver`, `Session` 및 `Node` 오브젝트를 얻을 수 있습니다. 이러한 오브젝트는 저장소 콘텐츠를 조작하는 데 유용합니다.
 
 다음 코드의 첫 번째 줄에서 소스는 소스 페이지의 `Resource` 오브젝트입니다.
 
@@ -177,7 +177,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 1. 이 위치 아래에서 다음 속성을 사용하여 노드를 만듭니다.
 
-   * **이름**: 롤아웃 구성의 노드 이름(예: ) `contentCopy` 또는 `workflow`
+   * **이름**: 롤아웃 구성의 노드 이름(예: `contentCopy` 또는 `workflow`)
    * **유형**: `cq:RolloutConfig`
 
 1. 이 노드에 다음 속성을 추가합니다.
@@ -206,7 +206,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 `cq:LiveSyncAction` 유형의 하위 노드를 추가하여 롤아웃 구성에 동기화 작업을 추가합니다. 동기화 작업 노드의 순서에 따라 작업이 발생하는 순서가 결정됩니다.
 
-1. CRXDE Lite에서 [롤아웃 구성](#create-the-rollout-configuration) 노드(예: ) `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`.
+1. CRXDE Lite에서 [롤아웃 구성](#create-the-rollout-configuration) 노드를 선택합니다(예: `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`).
 
 1. 다음 노드 속성을 사용하여 노드를 만듭니다.
 
@@ -351,7 +351,7 @@ Eclipse 컴파일러가 `LiveActionFactory` 코드에서 사용되는 클래스�
 
 다음 `LiveActionFactory` 클래스는 소스 및 대상 페이지에 대한 메시지를 로깅하고 소스 노드에서 대상 노드로 `cq:lastModifiedBy` 속성을 복사하는 `LiveAction`을 구현합니다. 라이브 작업의 이름은 `exampleLiveAction`입니다.
 
-1. Eclipse 프로젝트 탐색기에서 `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` 패키지 및 클릭 **신규** > **클래스**.
+1. Eclipse 프로젝트 탐색기에서 `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` 패키지를 마우스 오른쪽 단추로 클릭하고 **새로 만들기** > **클래스**&#x200B;를 클릭합니다.
 
 1. **이름**&#x200B;으로 `ExampleLiveActionFactory`를 입력한 다음 **마침**&#x200B;을 클릭합니다.
 
@@ -619,7 +619,7 @@ MSM은 저장된 언어 및 국가 코드 목록을 사용하여 페이지의 �
 * 연락처 이메일:
 
    * 롤아웃된 속성에서 제외되도록 합니다.
-   * 다음을 참조하십시오 [라이브 카피 동기화 구성](/help/sites-cloud/administering/msm/live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) 추가 정보.
+   * 자세한 내용은 [Live Copy 동기화 구성](/help/sites-cloud/administering/msm/live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization)을 참조하십시오.
 
 * 주요 시각 스타일:
 

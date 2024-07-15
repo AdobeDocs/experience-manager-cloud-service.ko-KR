@@ -12,7 +12,7 @@ ht-degree: 85%
 
 ---
 
-# Brand Portal에 자산 게시 {#publish-assets-to-brand-portal}
+# Publish assets를 Brand Portal으로 {#publish-assets-to-brand-portal}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -25,17 +25,17 @@ AEM(Adobe Experience Manager) Assets 관리자는 자산, 폴더 및 컬렉션�
 
 AEM Assets에서 원래 자산, 폴더 또는 컬렉션을 차후에 수정하는 경우 AEM Assets에서 다시 게시하기 전까지는 변경 내용이 Brand Portal에 반영되지 않습니다. 이 기능은 진행 중인 작업 변경 사항을 Brand Portal에서 사용할 수 없도록 합니다. 관리자가 게시한 승인된 변경 사항만 Brand Portal에서 사용할 수 있습니다.
 
-* [Brand Portal에 자산 게시](#publish-assets-to-bp)
-* [폴더를 Brand Portal에 게시](#publish-folders-to-brand-portal)
-* [Brand Portal에 컬렉션 게시](#publish-collections-to-brand-portal)
+* [Publish assets를 Brand Portal으로](#publish-assets-to-bp)
+* [Publish 폴더를 Brand Portal으로](#publish-folders-to-brand-portal)
+* [Brand Portal에 Publish 컬렉션](#publish-collections-to-brand-portal)
 
 >[!NOTE]
 >
 >AEM 작성자가 초과 리소스를 차지하지 않도록 가급적이면 피크가 아닌 시간에, 시차 게시를 수행하는 것이 좋습니다.
->자산은 묶음으로 게시해야 합니다. 배치 크기에 대한 권장 사항은 15K입니다.
-> 대상 [!DNL Experience Manager Assets] as a [!DNL Cloud Service], lab 조건에서 관찰된 전송 비율은 시간당 1000개의 에셋입니다. 이 속도는 평균 10MB 에셋의 크기로 관찰됩니다.
+>Assets은 일괄로 게시해야 합니다. 배치 크기에 대한 권장 사항은 15K입니다.
+> [!DNL Experience Manager Assets]의 [!DNL Cloud Service]인 경우 랩 조건에서 관찰되는 전송 속도는 시간당 1,000개의 에셋입니다. 이 속도는 평균 10MB 에셋의 크기로 관찰됩니다.
 
-## Brand Portal에 자산 게시 {#publish-assets-to-bp}
+## Publish assets를 Brand Portal으로 {#publish-assets-to-bp}
 
 다음은 AEM Assets의 자산을 Brand Portal에 게시하는 절차입니다.
 
@@ -47,7 +47,7 @@ AEM Assets에서 원래 자산, 폴더 또는 컬렉션을 차후에 수정하�
    * [지금 게시](#publish-to-bp-now)(자산을 즉시 게시함)
    * [나중에 게시](#publish-to-bp-later)(자산 게시를 예약함)
 
-### 지금 자산 게시 {#publish-to-bp-now}
+### 지금 Publish 에셋 {#publish-to-bp-now}
 
 선택한 자산을 Brand Portal에 게시하려면 다음 중 하나를 수행하십시오.
 
@@ -65,7 +65,7 @@ AEM Assets에서 원래 자산, 폴더 또는 컬렉션을 차후에 수정하�
 
 자산이 Brand Portal에 게시하기 위한 큐에 올라갔음을 나타내는 메시지가 나타납니다. Brand Portal 인터페이스에 로그인하여 게시된 자산을 확인합니다.
 
-### 나중에 자산 게시 {#publish-to-bp-later}
+### 나중에 Publish 에셋 {#publish-to-bp-later}
 
 나중 날짜 또는 시간에 Brand Portal에 자산을 게시하는 일정을 예약하려면,
 
@@ -87,7 +87,7 @@ AEM Assets에서 원래 자산, 폴더 또는 컬렉션을 차후에 수정하�
 
    <!--![publishworkflow](assets/publishworkflow.png)-->
 
-   ![게시 워크플로](assets/publish-workflow.png)
+   ![워크플로 게시](assets/publish-workflow.png)
 
 >[!NOTE]
 >
@@ -100,11 +100,11 @@ AEM Assets에서 원래 자산, 폴더 또는 컬렉션을 차후에 수정하�
 >`/content : jcr:read, crx:replicate`
 >`/content/dam/ : jcr:read,modify, crx:replicate`
 
-## 폴더를 Brand Portal에 게시 {#publish-folders-to-brand-portal}
+## Publish 폴더를 Brand Portal으로 {#publish-folders-to-brand-portal}
 
 자산 폴더를 즉시 게시 또는 게시 취소하거나 나중 날짜 또는 시간으로 예약할 수 있습니다.
 
-### 폴더를 Brand Portal에 게시 {#publish-folders-to-bp}
+### Publish 폴더를 Brand Portal으로 {#publish-folders-to-bp}
 
 1. Assets 콘솔에서 게시하려는 폴더를 선택하고 도구 모음에서 **[!UICONTROL 빠른 게시]** 옵션을 클릭합니다.
 
@@ -130,7 +130,7 @@ AEM Assets에서 원래 자산, 폴더 또는 컬렉션을 차후에 수정하�
 
    폴더가 Brand Portal에 게시하기 위한 큐에 올라갔음을 나타내는 메시지가 나타납니다. Brand Portal 인터페이스에 로그인하여 게시된 폴더를 확인합니다.
 
-1. **나중에 폴더 게시**
+1. **나중에 Publish 폴더**
 나중 날짜 또는 시간에 자산 폴더를 게시하는 일정을 예약하려면 다음 작업을 수행하십시오.
 
    1. 게시 일정을 예약하려는 폴더를 선택하고 맨 위의 도구 모음에서 **[!UICONTROL 게시 관리]**&#x200B;를 선택합니다.
@@ -142,7 +142,7 @@ AEM Assets에서 원래 자산, 폴더 또는 컬렉션을 차후에 수정하�
 
       <!--![publishlaterbp](assets/publishlaterbp.png)-->
 
-   ![나중에 게시 폴더](assets/publish-later-folder.png)
+   ![나중에 폴더 게시](assets/publish-later-folder.png)
 
    1. **[!UICONTROL 범위]**&#x200B;에서 선택 내용을 확인합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
@@ -150,7 +150,7 @@ AEM Assets에서 원래 자산, 폴더 또는 컬렉션을 차후에 수정하�
 
       <!--![manageschedulepub](assets/manageschedulepub.png)-->
 
-   ![게시 워크플로](assets/publish-workflow.png)
+   ![워크플로 게시](assets/publish-workflow.png)
 
 ### Brand Portal에 게시된 파일 또는 폴더 보기 {#view-published-file-folder}
 
@@ -158,7 +158,7 @@ AEM Assets에서 원래 자산, 폴더 또는 컬렉션을 차후에 수정하�
 
    ![bp_landingpage](assets/bp_landingpage.png)
 
-1. 목록 보기로 전환 ![목록 보기](assets/list-view.svg) 를 클릭하여 자산의 현재 게시 상태를 확인합니다.
+1. 에셋의 현재 게시 상태를 보려면 목록 보기 ![목록 보기](assets/list-view.svg)(으)로 전환하십시오.
 
 <!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
@@ -210,7 +210,7 @@ Brand Portal에서 자산 폴더의 게시를 취소하려면,
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
 
-## Brand Portal에 컬렉션 게시 {#publish-collections-to-brand-portal}
+## Brand Portal에 Publish 컬렉션 {#publish-collections-to-brand-portal}
 
 AEM Assets 클라우드 인스턴스에서 컬렉션을 게시하거나 게시 취소할 수 있습니다.
 
@@ -220,7 +220,7 @@ AEM Assets 클라우드 인스턴스에서 컬렉션을 게시하거나 게시 �
 >
 >컨텐츠 조각이 포함된 컬렉션이 AEM Assets에서 Brand Portal로 게시되면 컨텐츠 조각을 제외한 폴더의 모든 컨텐츠가 Brand Portal 인터페이스에 복제됩니다.
 
-### 컬렉션 게시 {#publish-collections}
+### Publish 컬렉션 {#publish-collections}
 
 다음은 AEM Assets의 컬렉션을 Brand Portal에 게시하는 절차입니다.
 

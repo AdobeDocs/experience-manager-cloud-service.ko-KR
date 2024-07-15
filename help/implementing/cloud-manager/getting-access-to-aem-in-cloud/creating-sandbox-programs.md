@@ -22,7 +22,7 @@ ht-degree: 74%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔, 탭 또는 클릭 **프로그램 추가** 화면 오른쪽 상단 모서리 근처.
+1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 화면 오른쪽 상단 근처에 있는 **프로그램 추가**&#x200B;를 탭하거나 클릭합니다.
 
    ![Cloud Manager 랜딩 페이지](assets/log-in.png)
 
@@ -34,7 +34,7 @@ ht-degree: 74%
 
    * 이미지는 프로그램 개요 창에서 타일 역할만 하며 프로그램을 식별하는 데 도움이 됩니다.
 
-1. 다음에서 **샌드박스 설정** 대화 상자에서 샌드박스 프로그램에서 활성화할 솔루션을 선택합니다. **솔루션 및 추가 기능** 테이블.
+1. **샌드박스 설정** 대화 상자에서 **솔루션 및 추가 기능** 테이블의 옵션을 선택하여 샌드박스 프로그램에서 활성화할 솔루션을 선택합니다.
 
    * 솔루션 이름 옆 갈매기 모양 표시를 사용하여 솔루션에 대한 추가적인 옵션 추가 기능을 표시합니다.
 
@@ -74,4 +74,4 @@ ht-degree: 74%
 
 >[!TIP]
 >
->문서를 참조하십시오. [Cloud Manager UI 탐색](/help/implementing/cloud-manager/navigation.md) cloud Manager 탐색 방법 및 이해 **내 프로그램** 콘솔.
+>Cloud Manager 탐색 방법 및 **내 프로그램** 콘솔 이해에 대한 자세한 내용은 [Cloud Manager UI 탐색](/help/implementing/cloud-manager/navigation.md) 문서를 참조하십시오.

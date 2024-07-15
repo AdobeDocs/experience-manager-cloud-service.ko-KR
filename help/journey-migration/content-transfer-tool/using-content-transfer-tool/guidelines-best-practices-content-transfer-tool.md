@@ -37,9 +37,9 @@ ht-degree: 15%
 
 다음 지침 및 모범 사례는 새 버전의 콘텐츠 전송 도구에 적용됩니다.
 
-* 실행 [개정 정리](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) 및 [데이터 저장소 일관성 검사](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html) 다음에 있음 **소스** 잠재적인 문제를 식별하고 저장소의 크기를 줄일 수 있습니다.
+* 잠재적인 문제를 식별하고 저장소의 크기를 줄일 수 있도록 **원본** 저장소에서 [수정 정리](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) 및 [데이터 저장소 일관성 검사](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html)를 실행하십시오.
 
-* Adobe 수집 단계에서는 다음을 사용하여 수집을 실행하는 것이 좋습니다. *지우기* 모드는 target Adobe Experience Manager(AEM) Cloud Service 환경의 기존 저장소(작성자 또는 게시)가 삭제되는 경우에 활성화됩니다. 그런 다음 마이그레이션 세트 데이터로 업데이트합니다. 이 모드는 현재 콘텐츠 위에 마이그레이션 세트가 적용되는 지우지 않음 모드보다 빠릅니다.
+* Adobe 수집 단계에서는 대상 Adobe Experience Manager(AEM) Cloud Service 환경의 기존 저장소(작성자 또는 게시)가 삭제되는 *지우기* 모드를 사용하여 수집을 실행하는 것이 좋습니다. 그런 다음 마이그레이션 세트 데이터로 업데이트합니다. 이 모드는 현재 콘텐츠 위에 마이그레이션 세트가 적용되는 지우지 않음 모드보다 빠릅니다.
 
 * 컨텐츠 전송 활동이 완료되면 클라우드 서비스 환경에서 컨텐츠가 성공적으로 렌더링되도록 하려면 클라우드 서비스 환경에 올바른 프로젝트 구조가 필요합니다.
 
@@ -51,7 +51,7 @@ ht-degree: 15%
    * *노드 저장소 크기*: 세그먼트 저장소 디렉토리 크기 또는 MongoDB 데이터베이스 크기입니다.
 따라서 세그먼트 저장소 크기가 20GB인 경우 필요한 여유 디스크 공간은 94GB입니다.
 
-* 콘텐츠 추가를 지원하려면 콘텐츠 전송 작업 전반에 걸쳐 마이그레이션 세트를 유지 관리해야 합니다. Cloud Acceleration Manager의 프로젝트당 최대 20개의 마이그레이션 세트는 콘텐츠 전송 활동 중에 한 번에 만들고 유지 관리할 수 있습니다. 마이그레이션 세트가 20개 이상 필요한 경우 Cloud Acceleration Manager에서 두 번째 프로젝트를 만듭니다. 그러나 이를 위해서는 여러 사용자가 타겟의 콘텐츠를 덮어쓰는 것을 방지하기 위해 추가적인 프로젝트 관리 및 제품 외 거버넌스가 필요합니다.
+* 콘텐츠 추가를 지원하려면 콘텐츠 전송 작업 전반에 걸쳐 마이그레이션 세트를 유지 관리해야 합니다. Cloud Acceleration Manager에서 프로젝트당 최대 20개의 마이그레이션 세트를 만들고 컨텐츠 전송 활동 중에 유지 관리할 수 있습니다. 마이그레이션 세트가 20개 이상 필요한 경우 Cloud Acceleration Manager에서 두 번째 프로젝트를 만듭니다. 그러나 이를 위해서는 여러 사용자가 타겟의 콘텐츠를 덮어쓰는 것을 방지하기 위해 추가적인 프로젝트 관리 및 제품 외 거버넌스가 필요합니다.
 
 * CTT 도구의 설치 디렉토리를 변경하지 마십시오. 기본적으로 설치는 crx-quickstart/cloud-migration 경로에서 수행됩니다. 이 특정 위치는 다른 라이브러리에서 내부적으로 사용됩니다. 이 경로를 수정하면 추출 문제가 발생할 수 있습니다.
 
@@ -61,38 +61,38 @@ ht-degree: 15%
 
 * 컨텐츠 전송 도구의 최소 시스템 요구 사항은 AEM 6.3 이상 및 Java™ 8입니다. 더 낮은 AEM 버전을 사용하는 경우 컨텐츠 저장소를 AEM 6.5로 업그레이드하여 컨텐츠 전송 도구를 사용하십시오.
 
-* AEM 환경에서 Java™을 구성해야 합니다. `java` AEM을 시작하는 사용자가 명령을 실행할 수 있습니다.
+* AEM을 시작하는 사용자가 `java` 명령을 실행할 수 있도록 AEM 환경에서 Java™을 구성해야 합니다.
 
 * 컨텐츠 전송 도구는 파일 데이터 저장소, S3 데이터 저장소, 공유 S3 데이터 저장소 및 Azure Blob 저장소 데이터 저장소 유형과 함께 사용할 수 있습니다.
 
-* 를 사용하는 경우 *샌드박스 환경*, 환경이 최신 상태이고 최신 릴리스로 업그레이드되었는지 확인하십시오. *프로덕션 환경*&#x200B;을 사용하는 경우 자동으로 업데이트됩니다.
+* *샌드박스 환경*&#x200B;을(를) 사용하는 경우 환경이 최신이고 최신 릴리스로 업그레이드되었는지 확인하십시오. *프로덕션 환경*&#x200B;을 사용하는 경우 자동으로 업데이트됩니다.
 
-* 수집을 시작하려면 로컬 AEM에 속해야 합니다 **관리자** 컨텐츠를 전송하는 Cloud Service 인스턴스의 그룹입니다. 권한이 없는 사용자는 수동으로 마이그레이션 토큰을 제공하지 않으면 수집을 시작할 수 없습니다.
+* 수집을 시작하려면 콘텐츠를 전송할 Cloud Service 인스턴스의 로컬 AEM **관리자** 그룹에 속해 있어야 합니다. 권한이 없는 사용자는 수동으로 마이그레이션 토큰을 제공하지 않으면 수집을 시작할 수 없습니다.
 
-* 다음과 같은 경우 **수집하기 전에 클라우드 인스턴스의 기존 콘텐츠 지우기** 이 옵션을 활성화하면 기존 저장소 전체가 삭제되고 컨텐츠를 수집할 새 저장소가 만들어집니다. 즉, 대상 Cloud Service 인스턴스에 대한 권한을 포함한 모든 설정이 재설정됩니다. 에 추가된 관리자 사용자에게도 마찬가지입니다. **관리자** 그룹입니다. 사용자는 다음 위치로 이동해야 합니다 **관리자** 그룹 을 클릭하여 콘텐츠 전송 도구에 대한 액세스 토큰을 검색합니다.
+* **수집하기 전에 클라우드 인스턴스에서 기존 콘텐츠 지우기** 옵션을 사용하도록 설정한 경우 전체 기존 저장소를 삭제하고 콘텐츠를 수집할 새 저장소를 만듭니다. 즉, 대상 Cloud Service 인스턴스에 대한 권한을 포함한 모든 설정이 재설정됩니다. **관리자** 그룹에 추가된 관리자 사용자도 마찬가지입니다. 콘텐츠 전송 도구에 대한 액세스 토큰을 검색하려면 **관리자** 그룹에 대한 사용자 권한이 있어야 합니다.
 
 * 두 소스의 콘텐츠가 타겟의 동일한 경로로 이동되는 경우, 수집은 여러 소스의 콘텐츠를 타겟 Cloud Service 인스턴스로 병합하는 것을 지원하지 않습니다. 여러 소스의 콘텐츠를 단일 타겟 Cloud Service 인스턴스로 이동하려면 소스의 콘텐츠 경로가 겹치지 않도록 하십시오.
 
 * 추출 키를 만들거나 갱신한 시점부터 14일 동안 유효합니다. 언제든지 갱신할 수 있습니다. 추출 키가 만료된 경우 추출을 수행할 수 없습니다.
 
-* CTT(컨텐츠 전송 도구)는 소스 인스턴스에서 대상 인스턴스로 컨텐츠를 전송하기 전에 어떠한 종류의 컨텐츠 분석도 수행하지 않습니다. 예를 들어 CTT는 컨텐츠를 게시 환경에 수집하는 동안 게시된 컨텐츠와 게시되지 않은 컨텐츠를 구분하지 않습니다. 마이그레이션 세트에 지정된 모든 콘텐츠는 선택한 대상 인스턴스로 수집됩니다. 사용자는 마이그레이션 세트를 작성자 인스턴스나 게시 인스턴스 또는 둘 다에 수집할 수 있습니다. Adobe은 컨텐츠를 프로덕션 인스턴스로 이동하는 동안 소스 작성자 인스턴스에 CTT를 설치하여 컨텐츠를 타겟 작성자 인스턴스로 이동하는 것을 권장합니다. 마찬가지로 소스 게시 인스턴스에 CTT를 설치하여 콘텐츠를 타겟 게시 인스턴스로 이동합니다. 다음을 참조하십시오 [게시 인스턴스에서 컨텐츠 전송 도구 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) 을 참조하십시오.
+* CTT(컨텐츠 전송 도구)는 소스 인스턴스에서 대상 인스턴스로 컨텐츠를 전송하기 전에 어떠한 종류의 컨텐츠 분석도 수행하지 않습니다. 예를 들어 CTT는 컨텐츠를 Publish 환경으로 수집하는 동안 게시된 컨텐츠와 게시되지 않은 컨텐츠를 구분하지 않습니다. 마이그레이션 세트에 지정된 모든 콘텐츠는 선택한 대상 인스턴스로 수집됩니다. 사용자는 마이그레이션 세트를 작성자 인스턴스 또는 Publish 인스턴스 또는 둘 다로 수집할 수 있습니다. Adobe은 컨텐츠를 프로덕션 인스턴스로 이동하는 동안 소스 작성자 인스턴스에 CTT를 설치하여 컨텐츠를 타겟 작성자 인스턴스로 이동하는 것을 권장합니다. 마찬가지로 소스 Publish 인스턴스에 CTT를 설치하여 컨텐츠를 대상 Publish 인스턴스로 이동합니다. 자세한 내용은 [Publish 인스턴스에서 컨텐츠 전송 도구 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool)을 참조하십시오.
 
-* 컨텐츠 전송 도구에서 전송한 사용자 및 그룹은 컨텐츠에서 권한을 충족하기 위해 필요한 사용자 및 그룹입니다. 다음 _추출_ 전체 복사 처리 `/home` 마이그레이션 세트에 추가되고 각 사용자의 이메일 주소에서 만든 필드를 추가하여 사용자 매핑을 수행합니다. 자세한 내용은 [사용자 매핑 및 사용자 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). 다음 _수집_ 프로세스는 마이그레이션된 콘텐츠 ACL에서 참조된 모든 사용자 및 그룹을 복사합니다. 다음을 참조하십시오 [폐쇄된 사용자 그룹 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) CUG(폐쇄형 사용자 그룹) 정책에 사용된 그룹에 대한 추가 고려 사항.
+* 컨텐츠 전송 도구에서 전송한 사용자 및 그룹은 컨텐츠에서 권한을 충족하기 위해 필요한 사용자 및 그룹입니다. _추출_ 프로세스는 전체 `/home`을(를) 마이그레이션 세트에 복사하고 각 사용자의 전자 메일 주소에서 만든 필드를 추가하여 사용자 매핑을 수행합니다. 자세한 내용은 [사용자 매핑 및 사용자 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)을 참조하십시오. _수집_ 프로세스는 마이그레이션된 콘텐츠 ACL에서 참조된 모든 사용자 및 그룹을 복사합니다. CUG(폐쇄형 사용자 그룹) 정책에 사용된 그룹에 대한 추가 고려 사항은 [폐쇄형 사용자 그룹 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)을 참조하십시오.
 
 * 추출 단계 중에 컨텐츠 전송 도구는 활성 AEM 소스 인스턴스에서 실행됩니다.
 
-* 다음 *수집 단계* 작성자는 전체 작성자 배포를 축소합니다. 즉, 전체 수집 프로세스 중에는 작성자 AEM을 사용할 수 없습니다. 또한 를 실행하는 동안 Cloud Manager 파이프라인이 실행되지 않도록 하십시오. *수집* 단계.
+* 작성자의 *수집 단계*&#x200B;는 전체 작성자 배포를 축소합니다. 즉, 전체 수집 프로세스 중에는 작성자 AEM을 사용할 수 없습니다. 또한 *수집* 단계를 실행하는 동안에는 Cloud Manager 파이프라인이 실행되지 않아야 합니다.
 
-* 사용 시 `Amazon S3` 또는 `Azure` 소스 AEM 시스템의 데이터 저장소로, 저장된 블롭을 삭제(가비지 수집)할 수 없도록 데이터 저장소를 구성해야 합니다. 이렇게 하면 인덱스 데이터의 무결성이 보장되며 이러한 방식을 구성하지 않으면 인덱스 데이터의 무결성이 부족하여 추출에 실패할 수 있습니다.
+* 소스 AEM 시스템에서 `Amazon S3` 또는 `Azure`을(를) 데이터 저장소로 사용하는 경우 저장된 Blob을 삭제(가비지 수집)할 수 없도록 데이터 저장소를 구성해야 합니다. 이렇게 하면 인덱스 데이터의 무결성이 보장되며 이러한 방식을 구성하지 않으면 인덱스 데이터의 무결성이 부족하여 추출에 실패할 수 있습니다.
 
-* 사용자 지정 색인을 사용하는 경우 다음을 사용하여 사용자 지정 색인을 구성해야 합니다 `tika` 컨텐츠 전송 도구를 실행하기 전의 노드입니다. 다음을 참조하십시오 [새 색인 정의 준비](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#preparing-the-new-index-definition) 을 참조하십시오.
+* 사용자 지정 색인을 사용하는 경우 콘텐츠 전송 도구를 실행하기 전에 `tika` 노드를 사용하여 사용자 지정 색인을 구성해야 합니다. 자세한 내용은 [새 색인 정의 준비](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#preparing-the-new-index-definition)를 참조하십시오.
 
 * 추가 추출을 하려는 경우 기존 콘텐츠의 콘텐츠 구조는 초기 추출을 하는 시점부터 추가 추출을 실행할 때까지 변경되지 않아야 합니다. 초기 추출 이후 구조가 변경된 콘텐츠에서는 추가 작업을 실행할 수 없습니다. 마이그레이션 프로세스 중에 이를 제한해야 합니다.
 
-* 버전을 마이그레이션 세트의 일부로 포함하려는 경우 다음을 사용하여 추가 작업을 수행합니다 `wipe=false`, 콘텐츠 전송 도구의 현재 제한으로 인해 버전 지우기를 비활성화해야 합니다. 버전 삭제를 활성화하고 마이그레이션 세트에 대해 추가 작업을 수행하는 경우 수집 작업을 다음과 같이 수행해야 합니다. `wipe=true`.
+* 버전을 마이그레이션 세트의 일부로 포함하고 `wipe=false`을(를) 사용하여 추가 작업을 수행하는 경우 콘텐츠 전송 도구의 현재 제한으로 인해 버전 삭제를 비활성화해야 합니다. 버전 삭제를 활성화하고 마이그레이션 세트에 대한 추가를 수행하는 경우 `wipe=true`(으)로 수집을 수행해야 합니다.
 
-* 마이그레이션 세트는 장기간 사용하지 않으면 만료되며 그 이후에는 데이터를 더 이상 사용할 수 없습니다. 리뷰 [마이그레이션 세트 만료](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) 을 참조하십시오.
+* 마이그레이션 세트는 장기간 사용하지 않으면 만료되며 그 이후에는 데이터를 더 이상 사용할 수 없습니다. 자세한 내용은 [마이그레이션 세트 만료](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry)를 검토하십시오.
 
 ## 다음 단계 {#whats-next}
 
-지침, 모범 사례 및 컨텐츠 전송 도구 사용에 대한 중요한 고려 사항을 학습하면 이제 마이그레이션 세트 생성부터 시작하여 도구를 설치하고 사용할 준비가 된 것입니다. 다음을 참조하십시오 [컨텐츠 전송 도구 시작하기](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md).
+지침, 모범 사례 및 컨텐츠 전송 도구 사용에 대한 중요한 고려 사항을 학습하면 이제 마이그레이션 세트 생성부터 시작하여 도구를 설치하고 사용할 준비가 된 것입니다. [콘텐츠 전송 도구 시작하기](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)를 참조하세요.

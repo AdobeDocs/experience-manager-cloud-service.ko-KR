@@ -29,11 +29,11 @@ Cloud Manager 라이선스 대시보드를 사용하면 다음 정보에 쉽게 
 
 >[!NOTE]
 >
->의 사용자 **비즈니스 소유자** 라이선스 대시보드를 보려면 역할이 로그인해야 합니다.
+>라이선스 대시보드를 보려면 **비즈니스 소유자** 역할의 사용자가 로그인해야 합니다.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. 다음에서 **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔, 로 전환 **라이선스** 탭.
+1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 **라이선스** 탭으로 전환합니다.
 
 ![라이선스 대시보드](assets/license-dashboard.png)
 
@@ -45,14 +45,14 @@ Cloud Manager 라이선스 대시보드를 사용하면 다음 정보에 쉽게 
 
 각 섹션에는 사용 가능한 항목과 사용 방법이 요약되어 있습니다. 현재 테넌트에 다른 솔루션이 있는 경우에도 Sites 솔루션만 표시됩니다.
 
-* 다음 **상태** 열에는 테넌트가 사용할 수 있는 총 사용 권한과 사용되지 않은 권한 수가 표시됩니다.
+* **상태** 열에는 사용되지 않은 권한 수와 테넌트가 사용할 수 있는 총 권한 수가 표시됩니다.
 * **구성** 열은 솔루션 권한이 적용된 프로그램을 나타냅니다.
    * 권한은 프로덕션 환경이 생성되었거나 존재하는 경우 업데이트 파이프라인이 실행된 경우에만 사용된 것으로 간주됩니다.
 * **사용량** 열은 클릭 시 지난 12개월 동안 사용한 콘텐츠 요청을 그래프로 표시합니다.
 
 >[!TIP]
 >
->Admin Console에서 전체 조직의 Adobe 권한을 관리하는 방법을 알아보려면 [Admin Console 개요](https://helpx.adobe.com/enterprise/using/admin-console.html).
+>Admin Console에서 전체 조직의 Adobe 권한을 관리하는 방법을 알아보려면 [Admin Console 개요](https://helpx.adobe.com/enterprise/using/admin-console.html)를 참조하세요.
 
 ## 자주 묻는 질문 {#faq}
 
@@ -64,7 +64,7 @@ Cloud Manager 라이선스 대시보드를 사용하면 다음 정보에 쉽게 
 
 Adobe 요청은 제품 및 서비스 제공만을 목적으로 콘텐츠 요청에 의해 또는 콘텐츠 요청을 대신하여 시작된 요청이나 활동을 제외합니다. 일반 검색 엔진 및 소셜 미디어 서비스와 관련된 봇, 크롤러 및 스파이더의 Adobe 식별 사용자 에이전트 트래픽도 제외됩니다.
 
-참조: [Cloud Service 컨텐츠 요청 이해](/help/implementing/cloud-manager/content-requests.md).
+[Cloud Service 콘텐츠 요청 이해](/help/implementing/cloud-manager/content-requests.md)도 참조하세요.
 
 ### Adobe Experience Manager는 콘텐츠 요청을 어떻게 측정합니까? {#how-are-content-requests-measured}
 
@@ -72,11 +72,11 @@ Adobe 요청은 제품 및 서비스 제공만을 목적으로 콘텐츠 요청�
 
 또한 AEM에는 검색 인덱스나 서비스를 새로 고치기 위해 사이트를 정기적으로 방문하는 잘 알려진 서비스를 포함하여 잘 알려진 봇을 제외하는 규칙이 있습니다.
 
-참조: [Cloud Service 컨텐츠 요청 이해](/help/implementing/cloud-manager/content-requests.md).
+[Cloud Service 콘텐츠 요청 이해](/help/implementing/cloud-manager/content-requests.md)도 참조하세요.
 
 ### 내 Analytics 보고서에 AEM 콘텐츠 요청과 다른 결과가 표시되는 이유는 무엇입니까? {#why-are-reports-different}
 
-콘텐츠 요청은 조직의 Analytics 보고 도구와 차이가 있을 수 있습니다. 자세한 내용은 [Cloud Service 컨텐츠 요청 이해](/help/implementing/cloud-manager/content-requests.md).
+콘텐츠 요청은 조직의 Analytics 보고 도구와 차이가 있을 수 있습니다. 자세한 내용은 [Cloud Service 콘텐츠 요청 이해](/help/implementing/cloud-manager/content-requests.md)를 참조하십시오.
 
 ### 내 콘텐츠 요청 볼륨에 대해 자세히 알고 싶으면 어떻게 해야 합니까? {#current-request-volumes}
 

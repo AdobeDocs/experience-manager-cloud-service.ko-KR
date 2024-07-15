@@ -17,27 +17,27 @@ ht-degree: 20%
 
 ## CIF 추가 기능
 
-as a Cloud Service Experience Manager을 위해 CIF 추가 기능은 Adobe Commerce 및 서드파티 상거래 솔루션에 대해 유일하게 지원되는 상거래 통합 솔루션입니다. Experience Manager as a Cloud Service의 고객에 대해 CIF 추가 기능이 자동으로 배포되므로 수동으로 배포하지 않아도 됩니다. [AEM Commerce as a Cloud Service 시작하기](getting-started.md)를 참조하십시오.
+Experience Manageras a Cloud Service 의 경우 CIF 추가 기능은 Adobe Commerce 및 서드파티 상거래 솔루션에서만 지원됩니다. Experience Manager as a Cloud Service의 고객에 대해 CIF 추가 기능이 자동으로 배포되므로 수동으로 배포하지 않아도 됩니다. [AEM Commerce as a Cloud Service 시작하기](getting-started.md)를 참조하십시오.
 
-CIF Adobe을 배포하는 프로젝트를 지원하려면 다음을 제공합니다. [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components).
+CIF AdobeAEM 를 배포하는 프로젝트를 지원하려면 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)를 제공하십시오.
 
 [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)을 통해 AEM 6.5에서도 CIF 추가 기능을 사용할 수 있습니다. 이는 Experience Manager as a Cloud Service와 호환되며 Experience Manager as a Cloud Service용 CIF 추가 기능과 동일한 기능을 제공하므로 따로 조정하지 않아도 됩니다.
 
-클래식 CIF와 그 종속성은 더 이상 사용할 수 없습니다. 다음을 사용하여 이 CIF 버전에 의존하는 코드 `com.adobe.cq.commerce.api` Java API는 CIF 추가 기능 및 그 원칙에 맞게 조정되어야 합니다.
+클래식 CIF와 그 종속성은 더 이상 사용할 수 없습니다. `com.adobe.cq.commerce.api`개의 Java API를 사용하는 이 CIF 버전에 의존하는 코드는 CIF 추가 기능 및 그 원칙에 맞게 조정해야 합니다.
 
 이전에 사용 가능했던 CIF 커넥터는 더 이상 설치할 수 없습니다. 이 커넥터에 의존하는 코드는 CIF 추가 기능 및 그 원칙에 맞게 조정해야 합니다.
 
 ## 프로젝트 구조
 
-다음을 알아봅니다. [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 그리고 AEMas a Cloud Service 의 특징. 프로젝트 설정을 AEM as a Cloud Service 레이아웃으로 조정합니다.
+[AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 및 AEM as a Cloud Service의 특성에 대해 알아봅니다. 프로젝트 설정을 AEM as a Cloud Service 레이아웃으로 조정합니다.
 AEM 6.5 배포와 비교하여 두 가지 주요 차이점이 있습니다.
 
-* GraphQL 클라이언트 OSGI 번들 **은(는) 해서는 안 됨** 더 이상 AEM 프로젝트에 포함될 수 있도록, CIF 추가 기능을 통해 배포됩니다
-* GraphQL 클라이언트 및 Graphql 데이터 서비스용 OSGI 구성 **은(는) 해서는 안 됨** 더 이상 AEM 프로젝트에 포함됨
+* GraphQL 클라이언트 OSGI 번들 **은(는) 더 이상 AEM 프로젝트에 포함되지 않아야**, CIF 추가 기능을 통해 배포됩니다.
+* GraphQL 클라이언트 및 Graphql 데이터 서비스 **용 OSGI 구성은 더 이상 AEM 프로젝트에 포함되지 않아야** 합니다
 
 >[!TIP]
 >
->다음을 확인하십시오. [AEM Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia) gitHub의 프로젝트입니다. 이 프로젝트는 다양한 프레임워크 조건을 고려한 AEM as a Cloud Service 및 온프레미스 배포를 위한 Maven 프로필을 제공합니다.
+>GitHub에서 [AEM Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia) 프로젝트를 확인하십시오. 이 프로젝트는 다양한 프레임워크 조건을 고려한 AEM as a Cloud Service 및 온프레미스 배포용 Maven 프로필을 제공합니다.
 
 ## 제품 카탈로그
 
@@ -45,7 +45,7 @@ AEM 6.5 배포와 비교하여 두 가지 주요 차이점이 있습니다.
 
 >[!TIP]
 >
->사용 가능한 실시간 API가 없는 경우 API가 있는 외부 제품 캐시를 사용하여 통합해야 합니다. 예 [Magento 오픈 소스](https://business.adobe.com/products/magento/open-source.html).
+>사용 가능한 실시간 API가 없는 경우 API가 있는 외부 제품 캐시를 사용하여 통합해야 합니다. 예제 [Magento 오픈 소스](https://business.adobe.com/products/magento/open-source.html).
 
 ## AEM 렌더링을 통한 제품 카탈로그 경험
 
@@ -53,4 +53,4 @@ AEM 6.5 배포와 비교하여 두 가지 주요 차이점이 있습니다.
 
 ## 캐시 불가능 데이터 및 쇼핑 상호 작용
 
-캐시할 수 없는 데이터 및 상호 작용(예: 장바구니에 추가, 검색)에 대한 클라이언트측 요청은 CDN/Dispatcher를 통해 상거래 끝점(상거래 솔루션 또는 통합 계층)으로 직접 이동해야 합니다. AEM이 프록시였던 모든 호출을 제거합니다.
+캐시할 수 없는 데이터 및 상호 작용(예: 장바구니에 추가, 검색)에 대한 클라이언트측 요청은 CDN/Dispatcher을 통해 상거래 끝점(상거래 솔루션 또는 통합 계층)으로 직접 이동해야 합니다. AEM이 프록시였던 모든 호출을 제거합니다.

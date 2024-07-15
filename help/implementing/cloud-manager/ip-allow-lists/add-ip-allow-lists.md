@@ -23,7 +23,7 @@ Cloud Manager를 사용하여 고유한 IP 허용 목록을 추가하는 방법�
 
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
 
-1. 다음에서 **개요** 페이지, 다음으로 이동 **IP 허용 목록** 측면 탐색 탭을 사용하여 페이지를 표시합니다.
+1. **개요** 페이지에서 측면 탐색 탭을 사용하여 **IP 허용 목록** 페이지로 이동합니다.
 
    ![사이드 패널의 IP 허용 목록 옵션](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 

@@ -20,13 +20,13 @@ ht-degree: 0%
 
 ## 스토리지 라이브러리 소개
 
-App Builder 저장소 옵션 및 App Builder 애플리케이션에서 저장소가 중요한 이유에 대해 알아봅니다.
+App Builder 스토리지 옵션과 App Builder 애플리케이션에서 스토리지가 중요한 이유에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339238/?quality=12&learn=on)
 
 ## 상태 스토리지 라이브러리 사용
 
-App Builder 애플리케이션에서 상태 스토리지 라이브러리를 설치하고 이를 사용하여 상태를 관리하는 방법을 알아봅니다.
+App Builder 애플리케이션에 상태 스토리지 라이브러리를 설치하고 이를 사용하여 상태를 관리하는 방법을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339240/?quality=12&learn=on)
 

@@ -26,6 +26,6 @@ ht-degree: 16%
 
 ### 새로운 기능 {#what-is-new-ctt}
 
-* 옵션 지원 [사전 복사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) 소스 AEM 인스턴스가 파일 데이터 저장소를 사용하여 추출 단계를 크게 가속화하도록 구성된 경우 컨텐츠 전송 도구에서 사용할 단계가 추가되었습니다.
+* 소스 AEM 인스턴스가 파일 데이터 저장소를 사용하여 추출 단계를 크게 가속화하도록 구성된 경우 콘텐츠 전송 도구에서 사용할 선택적 [사전 복사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) 단계에 대한 지원이 추가되었습니다.
 
 * 인덱싱 및 mongo 복구 단계가 진행 중인 시기를 나타내기 위해 컨텐츠 전송 도구 UI의 수집 단계에 추가된 추가 설명 메시지입니다.

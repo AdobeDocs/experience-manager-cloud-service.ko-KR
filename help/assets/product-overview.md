@@ -27,13 +27,13 @@ AEM Assets은 신뢰할 수 있는 단일 소스 역할을 하며 검색 환경�
 
 검색을 위한 필터, 에셋을 추가하거나 가져오는 동안 사용할 수 있는 필드, 에셋 속성, 브랜딩을 위한 배너 콘텐츠와 같은 Content Hub 내의 가장 일반적인 속성을 구성할 수 있으며 관리자는 요구 사항에 따라 Content Hub 사용자 인터페이스를 쉽게 구성할 수 있습니다.
 
-**비크리에이티브가 브랜드를 사용하는 동안 콘텐츠를 편집하고 재혼합할 수 있는 권한 부여**
+**브랜드를 사용하는 동안 크리에이티브 이외의 사용자에게 콘텐츠를 편집하고 다시 혼합할 수 있는 권한을 부여합니다**
 
 Content Hub을 사용하면 Adobe Express으로 새 컨텐츠를 만들 수 있습니다(Adobe Express 권한이 있는 경우). 사용하기 쉬운 도구로 기존 콘텐츠를 편집하고, 템플릿 및 브랜드 요소를 사용하여 브랜드 내 변형을 작성하고, Adobe Firefly의 최신 GenAI 기능을 사용하여 새 콘텐츠를 만들 수 있습니다.
 
-**팀 간에 콘텐츠를 사용하는 방법에 대한 통찰력 확보**
+**팀 간에 콘텐츠를 사용하는 방법에 대한 통찰력을 얻으십시오**
 
-[!DNL Content Hub] 는 마케팅 캠페인, 채널 및 다양한 지역에서 사용되는 자산 사용 통계와 같이 마케팅 이해 관계자가 자주 직면하는 일반적인 문제를 해결하면서 자산에 대한 중요한 통찰력을 제공합니다. 에셋의 성능과 인기를 명확하게 이해함으로써 사용자 경험을 개선하는 데 필수적인 실행 가능한 통찰력을 제공합니다.
+[!DNL Content Hub]은(는) 마케팅 캠페인, 채널 및 다른 지역에서 사용되는 자산 사용 통계와 같이 마케팅 이해 당사자가 자주 직면하는 일반적인 문제를 해결하면서 자산에 대한 중요한 통찰력을 제공합니다. 에셋의 성능과 인기를 명확하게 이해함으로써 사용자 경험을 개선하는 데 필수적인 실행 가능한 통찰력을 제공합니다.
 
 ## 사전 요구 사항 {#prerequisites-content-hub}
 
@@ -41,25 +41,25 @@ Content Hub에는 프로덕션 환경인 Experience Manager as a Cloud Service, 
 
 ## Content Hub에 액세스하는 방법 {#access-content-hub}
 
-[Content Hub 설정 후](/help/assets/deploy-content-hub.md) 및에 사용자 추가 [Content Hub 제품 프로필](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), Content Hub은 다음과 같은 방법으로 액세스할 수 있습니다.
+[Content Hub을 설정하고](/help/assets/deploy-content-hub.md)사용자를 [Content Hub 제품 프로필](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile)에 추가한 후 다음과 같은 방법으로 Content Hub에 액세스할 수 있습니다.
 
 * 다음 링크를 사용하여 Content Hub에 액세스합니다.
 
   `https://experience.adobe.com/#/assets/contenthub`
 
-* experience.adobe com에 로그온하고 **[!UICONTROL Experience Manager Assets Content Hub]** 다음에서 사용 가능 **[!UICONTROL 빠른 액세스]** 섹션:
+* experience.adobe com에 로그온하여 **[!UICONTROL 빠른 액세스]** 섹션에서 사용할 수 있는 **[!UICONTROL Experience Manager Assets Content Hub]**을(를) 클릭합니다.
   ![Content Hub 액세스](assets/access-content-hub.png)
 
-* experience.adobe com에 로그온하고 **[!UICONTROL Experience Manager Assets Content Hub]** 제품 전환기에서 사용 가능:
-  ![Content Hub 액세스 방법 3](assets/access-content-hub-alternate.png)
+* experience.adobe com에 로그온하고 제품 전환기에서 사용할 수 있는 **[!UICONTROL Experience Manager Assets Content Hub]**을(를) 클릭합니다.
+  ![Content Hub 액세스 메서드 3](assets/access-content-hub-alternate.png)
 
 
 
 ## Content Hub 피드백 제공 {#provide-content-hub-feedback}
 
-제품 관련 개선 사항을 추천하려면 다음을 클릭하십시오. **[!UICONTROL 피드백]** Content Hub 사용자 인터페이스 상단의 조직 이름 옆에 있습니다.
+제품 관련 개선 사항을 추천하려면 Content Hub 사용자 인터페이스 상단의 조직 이름 옆에 있는 **[!UICONTROL 피드백]**&#x200B;을 클릭하세요.
 
-제목, 권장 사항에 대한 설명을 지정하고 필요한 경우 파일을 첨부합니다. 클릭 **[!UICONTROL 제출]** Adobe에 피드백을 제출합니다.
+제목, 권장 사항에 대한 설명을 지정하고 필요한 경우 파일을 첨부합니다. 피드백을 Adobe에 제출하려면 **[!UICONTROL 제출]**&#x200B;을 클릭하세요.
 
 ![Content Hub 피드백](assets/content-hub-feedback.png)
 
@@ -67,21 +67,21 @@ Content Hub에는 프로덕션 환경인 Experience Manager as a Cloud Service, 
 
 팀을 위한 Content Hub을 설정하려면 다음 단계를 따르십시오.
 
-1. [Cloud Manager을 사용하여 Experience Manager Assets용 Content Hub 활성화](deploy-content-hub.md#enable-content-hub).
+1. [Cloud Manager을 사용하여 Experience Manager Assets용 Content Hub을 사용하도록 설정](deploy-content-hub.md#enable-content-hub).
 
-1. [Content Hub 관리자 온보드](deploy-content-hub.md#onboard-content-hub-administrator).
+1. [Content Hub 관리자 온보딩](deploy-content-hub.md#onboard-content-hub-administrator).
 
 1. [주요 Content Hub 사용자 추가](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
 1. [Experience Manager 자산을 사용하여 자산을 승인할 DAM 작성자 또는 관리자](approve-assets.md).
 
-1. [관리자는 다른 사용자를 위해 Content Hub 사용자 인터페이스를 구성할 수 있습니다](configure-content-hub-ui-options.md).
+1. [관리자가 다른 사용자를 위해 Content Hub 사용자 인터페이스를 구성할 수 있습니다](configure-content-hub-ui-options.md).
 
-1. [팀에서 더 많은 사용자에게 Content Hub 액세스 권한 부여](deploy-content-hub.md#onboard-content-hub-consumer-users).
+1. [팀에서 더 많은 사용자에게 Content Hub 액세스 권한을 부여합니다](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
-1. [Content Hub 포털 액세스](#access-content-hub).
+1. [Content Hub 포털에 액세스](#access-content-hub).
 
-1. [Content Hub 피드백 제공](#provide-content-hub-feedback).
+1. [Content Hub 피드백을 제공](#provide-content-hub-feedback).
 
 
 ## 주요 기능에 대해 자세히 알아보기 {#key-capabilities-content-module}
@@ -97,7 +97,7 @@ Content Hub에는 프로덕션 환경인 Experience Manager as a Cloud Service, 
       </a>
    </div>
    <p>
-      <em>관리자가 Content Hub 사용자 인터페이스를 구성하는 방법에 대해 알아봅니다. </em>
+      <em>관리자가 Content Hub 사용자 인터페이스를 구성하는 방법을 알아봅니다. </em>
    </p>
 </td>
 
@@ -112,7 +112,7 @@ Content Hub에는 프로덕션 환경인 Experience Manager as a Cloud Service, 
       </a>
    </div>
    <p>
-      <em>다양한 기능을 활용하여 검색 결과 범위를 좁히는 방법을 알아봅니다.</em>
+      <em>다양한 기능을 사용하여 검색 결과를 좁히는 방법을 알아봅니다.</em>
    </p>
 </td>
 <td>
@@ -136,11 +136,11 @@ Content Hub에는 프로덕션 환경인 Experience Manager as a Cloud Service, 
    </a>
    <div>
       <a href="/help/assets/share-assets-content-hub.md">
-      <strong>Content Hub에서 사용 가능한 에셋 공유</strong>
+      <strong>Content Hub에서 사용 가능한 자산 공유</strong>
       </a>
    </div>
    <p>
-      <em>하나 이상의 자산을 링크로 공유한 다음 액세스하는 방법을 알아봅니다.</em>
+      <em>하나 이상의 자산을 링크로 공유한 다음 액세스하는 방법에 대해 알아봅니다.</em>
    </p>
 </td>
 <td>
@@ -166,7 +166,7 @@ Content Hub에는 프로덕션 환경인 Experience Manager as a Cloud Service, 
       </a>
    </div>
    <p>
-      <em> 콘텐츠 모듈은 마케팅 이해 당사자가 자주 직면하는 일반적인 문제를 해결하면서 자산에 대한 중요한 통찰력을 제공합니다</em>
+      <em> 콘텐츠 모듈은 마케팅 이해 당사자가 자주 직면하는 일반적인 문제를 해결하면서 자산에 대한 중요한 통찰력을 제공합니다.</em>
    </p>
 </td>
 </table>

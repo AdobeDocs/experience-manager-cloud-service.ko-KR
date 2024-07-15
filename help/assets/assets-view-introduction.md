@@ -1,6 +1,6 @@
 ---
-title: AEM에서 에셋 보기를 통해 얻을 수 있는 이점은 무엇입니까?
-description: AEM에서 에셋 보기의 주요 이점에 대해 자세히 알아보십시오. Adobe은 마케팅 및 크리에이티브 전문가에게 권한을 부여하는 전문 지식을 사용하여 게임을 변화시킬 새로운 사용자 경험을 도입합니다.
+title: AEM의 Assets 보기가 어떤 도움이 됩니까?
+description: AEM에서 Assets 보기를 통해 얻을 수 있는 주요 이점에 대해 자세히 알아보십시오. Adobe은 마케팅 및 크리에이티브 전문가에게 권한을 부여하는 전문 지식을 사용하여 게임을 변화시킬 새로운 사용자 경험을 도입합니다.
 mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
@@ -12,13 +12,13 @@ ht-degree: 69%
 
 ---
 
-# 자산 보기 소개 {#assets-view}
+# Assets 보기 소개 {#assets-view}
 
 ![Assets Essentials 배포](assets/banner-image.jpg)
 
 실시간 콘텐츠 생성 및 게재가 필수적인 오늘날의 급변하는 디지털 중심 환경에서는 다운스트림 마케팅 속도를 위해 설계된 디지털 자산 관리(DAM) 경험이 무엇보다 중요합니다. Adobe은 마케팅 및 크리에이티브 전문가에게 권한을 부여하는 전문 지식을 사용하여 게임을 변화시킬 새로운 사용자 경험을 도입합니다. 이 워크플로 중심 접근 방식은 기업이 동적 디지털 자산을 처리하는 방식을 혁신하여 마케터가 자산을 찾고, 공동 작업하고, 개인화하고, 게재하는 데 효율성을 극대화하도록 합니다. 이처럼 간소화된 워크플로는 콘텐츠 속도를 가속화하고 마케팅 활동을 새로운 차원으로 끌어올립니다.
 
-Assets에 대해 as a Cloud Service으로 사용할 수 있는 페르소나 기반 경험에 대한 자세한 내용은 을 참조하십시오. [as a Cloud Service Assets 소개](/help/assets/overview.md#persona-based-experiences).
+Assetsas a Cloud Service 에 사용할 수 있는 사용자 기반 경험에 대해 자세히 알아보려면 [Assets as a Cloud Service 소개](/help/assets/overview.md#persona-based-experiences)를 참조하십시오.
 
 ## 자산 보기에 어떻게 액세스합니까? {#access-assets-view}
 
@@ -49,7 +49,7 @@ Assets에 대해 as a Cloud Service으로 사용할 수 있는 페르소나 기�
 
 ## 자산 보기를 사용해야 하는 이유는 무엇입니까?
 
-자산 보기는 관리자 보기에서 사용할 수 없는 다음과 같은 주요 이점을 제공합니다.
+Assets 보기는 관리 보기에서 사용할 수 없는 다음과 같은 주요 이점을 제공합니다.
 
 * [능률적인 경험을 제공하는 내 작업 영역 대시보드](#my-workspace-for-streamlined-experience)
 * [효율성 향상을 위한 검색 중심 접근 방식](#search-first)
@@ -61,7 +61,7 @@ Assets에 대해 as a Cloud Service으로 사용할 수 있는 페르소나 기�
 
 ### 능률적인 경험을 제공하는 내 작업 영역 대시보드 {#my-workspace-for-streamlined-experience}
 
-여러 조직 역할의 다양한 요구 사항을 이해하는 디지털 자산 관리 솔루션을 소개합니다. 매끄러운 Assets 보기 보기는 사용 편의성과 속도를 우선시하며 시각적 매력과 깔끔한 작업 공간에 대한 마케터의 선호도를 충족시킵니다. 사용자 정의 가능한 사용자별 내 작업 영역 대시보드를 통해 마케터는 놀라운 효율성으로 자산을 빠르게 찾고, 미리 보고, 편집하고, 관리하고, 게재할 수 있습니다. 특정 자산을 검색하는 데 소모하는 끝없는 시간에 작별을 고하고, 필요한 모든 것을 간편하게 제공하는 능률적인 경험을 만나 보십시오.
+여러 조직 역할의 다양한 요구 사항을 이해하는 디지털 자산 관리 솔루션을 소개합니다. 매끄러운 Assets 보기 보기를 통해 사용 편의성과 속도를 우선시하므로 시각적 호소력과 깔끔한 작업 공간에 대한 마케터의 선호도를 충족할 수 있습니다. 사용자 정의 가능한 사용자별 내 작업 영역 대시보드를 통해 마케터는 놀라운 효율성으로 자산을 빠르게 찾고, 미리 보고, 편집하고, 관리하고, 게재할 수 있습니다. 특정 자산을 검색하는 데 소모하는 끝없는 시간에 작별을 고하고, 필요한 모든 것을 간편하게 제공하는 능률적인 경험을 만나 보십시오.
 
 ![내 작업 영역 개요](assets/my-workspace-demo.gif)
 
@@ -69,7 +69,7 @@ Assets에 대해 as a Cloud Service으로 사용할 수 있는 페르소나 기�
 
 ### 데이터 기반 의사 결정을 위한 인사이트 {#insights-data}
 
-콘텐츠 속도에 보조를 맞추려면 실행 가능한 인사이트가 필수적입니다. 에셋 보기는 내 작업 영역 내에서 고급 인사이트를 제공하여 에셋 성능, 대상 사용 및 참여에 대한 중요한 데이터를 제공합니다. 마케터는 데이터 기반 의사 결정을 내리고, 콘텐츠 전략을 최적화하고, 다운스트림 게재를 개선하여 최적의 결과를 얻을 수 있습니다. 의미 있는 인사이트에 액세스할 수 있는 기업은 경쟁에서 앞서 나가고 우수한 결과를 창출할 수 있습니다.
+콘텐츠 속도에 보조를 맞추려면 실행 가능한 인사이트가 필수적입니다. Assets 보기는 My Workspace 내에 고급 통찰력을 제공하며 에셋 성능, 대상 사용 및 참여에 대한 중요한 데이터를 제공합니다. 마케터는 데이터 기반 의사 결정을 내리고, 콘텐츠 전략을 최적화하고, 다운스트림 게재를 개선하여 최적의 결과를 얻을 수 있습니다. 의미 있는 인사이트에 액세스할 수 있는 기업은 경쟁에서 앞서 나가고 우수한 결과를 창출할 수 있습니다.
 
 ![인사이트 개요](assets/insights-overview.gif)
 
@@ -85,7 +85,7 @@ Adobe Photoshop Express와 통합된 자산 보기의 기능을 이해하려면 
 
 [![안내서 참조](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](edit-images-assets-view.md)
 
-에셋 as a Cloud Service에 대해 예정된 릴리스에는 다음도 포함됩니다 [Adobe Express을 통한 Adobe Firefly 통합](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838).
+Assetsas a Cloud Service 용 향후 릴리스에는 [Adobe Express을 통한 Adobe Firefly 통합](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838)도 포함됩니다.
 
 ### 조직의 계층 구조를 설정하기 위한 폴더 업로드 {#folder-uploads}
 
@@ -103,7 +103,7 @@ Adobe Photoshop Express와 통합된 자산 보기의 기능을 이해하려면 
 
 ### 효율적인 자산 관리를 위해 저장소 콘텐츠 구독 {#subscribe-content}
 
-에셋 보기는 저장소에서 사용할 수 있는 에셋, 폴더 또는 컬렉션에서 수행된 작업을 모니터링하는 기능을 제공합니다. 알림을 받을 콘텐츠를 선택하고 구독해야 합니다. 구독한 콘텐츠 삭제, 구독한 콘텐츠 수정 등과 같은 이벤트 유형을 구성할 수도 있습니다. 그러면 해당 이벤트 유형에 대해서만 알림이 전송됩니다.
+Assets 보기는 저장소에서 사용할 수 있는 에셋, 폴더 또는 컬렉션에서 수행된 작업을 모니터링하는 기능을 제공합니다. 알림을 받을 콘텐츠를 선택하고 구독해야 합니다. 구독한 콘텐츠 삭제, 구독한 콘텐츠 수정 등과 같은 이벤트 유형을 구성할 수도 있습니다. 그러면 해당 이벤트 유형에 대해서만 알림이 전송됩니다.
 
 ![알림 수신](assets/notifications.gif)
 
@@ -123,10 +123,10 @@ Adobe Photoshop Express와 통합된 자산 보기의 기능을 이해하려면 
 
 * 저장소 내에서 사용할 수 있는 에셋 및 폴더의 이름을 변경합니다.
 
-에셋 보기는 워크플로를 능률화하고, 공동 작업을 촉진하며, 에셋 전달을 가속화하도록 맞춤화되었습니다. 콘텐츠 속도를 수용하여 마케터는 디지털 에셋의 잠재력을 최대한 활용하고 이전과는 전혀 다른 창의력을 발휘할 수 있습니다.
+Assets 보기는 워크플로우를 능률화하고, 공동 작업을 촉진하고, 에셋 전달을 가속화하기 위해 맞춤화되었습니다. 콘텐츠 속도를 수용하여 마케터는 디지털 에셋의 잠재력을 최대한 활용하고 이전과는 전혀 다른 창의력을 발휘할 수 있습니다.
 
 
-다음 링크를 사용하여 자산 보기를 빠르게 시작할 수 있습니다.
+다음 링크를 사용하여 Assets 보기를 빠르게 시작할 수 있습니다.
 
 * [내 작업 영역](/help/assets/my-workspace-assets-view.md)
-* [자산 보기 사용 시작하기](/help/assets/get-started-assets-view.md)
+* [Assets 보기 사용 시작하기](/help/assets/get-started-assets-view.md)

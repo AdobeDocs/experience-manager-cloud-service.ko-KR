@@ -26,13 +26,13 @@ ht-degree: 0%
 
 ## 로컬 개발 환경 설정
 
-App Builder 개발을 위한 로컬 환경을 설정하는 방법에 대해 알아보십시오.
+App Builder 개발을 위한 로컬 환경을 설정하는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339169/?quality=12&learn=on)
 
 ## 첫 번째 프로젝트 초기화
 
-App Builder 프로젝트를 초기화하는 방법을 알아봅니다.
+App Builder 프로젝트를 초기화하는 방법에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339170/?quality=12&learn=on)
 

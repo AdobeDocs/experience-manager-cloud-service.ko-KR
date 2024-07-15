@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # 양식 게시 중 문제{#form-creation-fails}
 
-사용자가 AEM Forms as a Cloud Service 버전으로 업데이트한 후 `2024.5.16461`:
+사용자가 AEM Forms as a Cloud Service 버전 `2024.5.16461`으로 업데이트한 후:
 
-**일부 사용자** 양식을 만드는 동안 문제가 발생할 수 있습니다. 사용자가 양식을 만들 때 만들기 대화 상자에 다음 오류 메시지가 표시되는 문제가 있습니다.
+**일부 사용자**&#x200B;는 양식을 만드는 동안 문제가 발생할 수 있습니다. 사용자가 양식을 만들 때 만들기 대화 상자에 다음 오류 메시지가 표시되는 문제가 있습니다.
 
 `A server error occurred. Try again after sometime.`
 
 ## 원인 {#cause-form-creation-fails}
 
-이 문제는 작성자가 을 제외하고 양식을 게시하기 때문에 발생합니다 **템플릿 첫 게시** 사용되었습니다. 그 결과 `jcr:uuid` 및에 대한 기타 보호 및 시스템 생성 속성 `<template-path>/initial/jcr:content` 노드를 반환하여 이후 양식 만들기에 실패합니다.
+작성자가 **먼저 서식 파일을 게시**&#x200B;하지 않고 양식을 게시하기 때문에 문제가 발생합니다. 이렇게 하면 `jcr:uuid` 및 다른 보호 및 시스템 생성 속성이 `<template-path>/initial/jcr:content` 노드에 추가되어 후속 양식 만들기에 오류가 발생합니다.
 
 ## 해결 방법 {#resolution-form-creation-fails}
 
 이 문제를 해결하려면 다음 단계를 수행하십시오.
 
-1. 양식에서 사용하는 템플릿에 `jcr:uuid` 및 기타 시스템에서 경로에서 보호된 속성 생성 `<template-path>/initial/jcr:content node`.
+1. 양식에서 사용하는 템플릿에 `<template-path>/initial/jcr:content node` 경로에 `jcr:uuid` 및 다른 시스템에서 생성한 보호된 속성이 없는지 확인합니다.
 1. 템플릿 콘솔을 사용하여 템플릿을 명시적으로 Publish 합니다.
 1. 이제 템플릿이 게시되면 템플릿을 사용하여 새 양식을 만들어 보십시오.
 1. 사용한 템플릿이 향후 릴리스에서 업데이트되는 경우 양식 작성 실패 문제를 방지하기 위해 템플릿을 다시 Publish(2단계에서 설명)합니다.

@@ -258,35 +258,37 @@ query getAdventuresByActivity($activity: String!) {
 <AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
 ```
 
-UTF-8 인코딩 `%3B` 다음에 대한 `;` 및 `%3D` 다음에 대한 인코딩입니다. `=`. 실행할 지속 쿼리에 대해 쿼리 변수 및 특수 문자를 [올바르게 인코딩](#encoding-query-url)해야 합니다.
+UTF-8 인코딩 `%3B`은(는) `;`에 대한 것이고 `%3D`은(는) `=`에 대한 인코딩입니다. 실행할 지속 쿼리에 대해 쿼리 변수 및 특수 문자를 [올바르게 인코딩](#encoding-query-url)해야 합니다.
 
 ### 쿼리 변수 사용 - 우수 사례 {#query-variables-best-practices}
 
 쿼리에 변수를 사용할 때 따라야 하는 몇 가지 모범 사례가 있습니다.
 
-* 인코딩 일반적인 접근 방식으로 모든 특수 문자를 인코딩하는 것이 좋습니다(예: ). `;`, `=`, `?`, `&`, 기타.
+* 인코딩
+일반적인 접근 방법으로는 항상 모든 특수 문자를 인코딩하는 것이 좋습니다(예: `;`, `=`, `?`, `&`).
 
-* 여러 변수(세미콜론으로 구분)를 사용하는 세미콜론 지속 쿼리는 다음 중 하나를 보유해야 합니다.
-   * 인코딩된 세미콜론(`%3B`); URL을 인코딩하면 이 작업도 수행됩니다
+* 세미콜론
+여러 변수(세미콜론으로 구분)를 사용하는 지속 쿼리에는 다음 중 하나가 있어야 합니다.
+   * 인코딩된 세미콜론(`%3B`); URL을 인코딩하면 이와 같이 됩니다.
    * 또는 쿼리 끝에 후행 세미콜론이 추가됨
 
 * `CACHE_GRAPHQL_PERSISTED_QUERIES`
-날짜 `CACHE_GRAPHQL_PERSISTED_QUERIES` 는 Dispatcher에 대해 활성화된 다음 가 포함된 매개 변수 `/` 또는 `\` 값의 문자는 Dispatcher 수준에서 두 번 인코딩됩니다.
+Dispatcher에 대해 `CACHE_GRAPHQL_PERSISTED_QUERIES`을(를) 활성화하면 해당 값에 `/` 또는 `\` 문자가 포함된 매개 변수가 Dispatcher 수준에서 두 번 인코딩됩니다.
 이러한 상황을 방지하려면:
 
-   * 사용 `DispatcherNoCanonURL` Dispatcher에서.
-이렇게 하면 Dispatcher가 원본 URL을 AEM에 전달하므로 인코딩이 중복되지 않습니다.
-그러나 이 설정은 현재 `vhost` level을 지정했습니다. 따라서 URL을 다시 작성할 Dispatcher 구성이 이미 있는 경우(예: 단축된 URL을 사용할 때) 별도의 항목이 필요할 수 있습니다 `vhost` 지속 쿼리 URL용
+   * Dispatcher에서 `DispatcherNoCanonURL` 사용
+이렇게 하면 Dispatcher에서 원본 URL을 AEM에 전달하게 되므로 인코딩이 중복되지 않습니다.
+그러나 이 설정은 현재 `vhost` 수준에서만 작동하므로 URL을 다시 작성할 Dispatcher 구성이 이미 있는 경우(예: 단축된 URL을 사용하는 경우) 지속 쿼리 URL에 대해 별도의 `vhost`이 필요할 수 있습니다.
 
-   * 보내기 `/` 또는 `\` 인코딩이 해제된 문자입니다.
-지속 쿼리 URL을 호출할 때 `/` 또는 `\` 지속 쿼리 변수의 값에는 문자가 인코딩되지 않은 상태로 유지됩니다.
+   * `/` 또는 `\`자를 인코딩하지 않은 상태로 보냅니다.
+지속 쿼리 URL을 호출할 때 모든 `/` 또는 `\` 문자가 지속 쿼리 변수의 값에 인코딩되지 않은 상태로 유지되는지 확인하십시오.
      >[!NOTE]
      >
-     >이 옵션은 다음과 같은 경우에만 권장됩니다. `DispatcherNoCanonURL` 어떤 이유로든 솔루션을 구현할 수 없습니다.
+     >이 옵션은 어떤 이유로든 `DispatcherNoCanonURL` 솔루션을 구현할 수 없는 경우에만 권장됩니다.
 
 * `CACHE_GRAPHQL_PERSISTED_QUERIES`
 
-  날짜 `CACHE_GRAPHQL_PERSISTED_QUERIES` 은 Dispatcher에 대해 활성화된 다음 `;` 변수 값에는 문자를 사용할 수 없습니다.
+  Dispatcher에 대해 `CACHE_GRAPHQL_PERSISTED_QUERIES`을(를) 활성화하면 변수 값에 `;` 문자를 사용할 수 없습니다.
 
 ## 지속 쿼리 캐싱 {#caching-persisted-queries}
 
@@ -409,7 +411,7 @@ curl -u admin:admin -X POST \
 
 기본적으로 `PersistedQueryServlet`은 실제 결과에 관계없이 쿼리를 실행할 때 `200` 응답을 보냅니다.
 
-다음을 수행할 수 있습니다. [osgI 설정 구성](/help/implementing/deploying/configuring-osgi.md) 대상: **지속 쿼리 서비스 구성** 더 자세한 상태 코드가 `/execute.json/persisted-query` 끝점: 지속 쿼리에 오류가 있는 경우.
+[지속 쿼리에 오류가 있는 경우 **지속 쿼리 서비스 구성**&#x200B;에 대한 OSGi 설정을 구성](/help/implementing/deploying/configuring-osgi.md)하여 `/execute.json/persisted-query` 끝점에서 더 자세한 상태 코드를 반환할지 여부를 제어할 수 있습니다.
 
 >[!NOTE]
 >
@@ -418,15 +420,16 @@ curl -u admin:admin -X POST \
 필드`Respond with application/graphql-response+json`(`responseContentTypeGraphQLResponseJson`)은 필요에 따라 정의할 수 있습니다.
 
 * `false`(기본값):
-지속 쿼리의 성공 여부는 상관없습니다. 다음 `Content-Type` 반환된 헤더는 입니다. `application/json`및 `/execute.json/persisted-query` *항상* 상태 코드 반환 `200`.
+지속 쿼리의 성공 여부는 상관없습니다. 반환된 `Content-Type` 헤더가 `application/json`이고 `/execute.json/persisted-query` *always*&#x200B;이(가) 상태 코드 `200`을(를) 반환합니다.
 
-* `true`: 반환된 `Content-Type` 은(는) `application/graphql-response+json`및 지속 쿼리를 실행할 때 어떤 형태의 오류도 발생하는 경우 끝점은 적절한 응답 코드를 반환합니다.
+* `true`:
+반환된 `Content-Type`은(는) `application/graphql-response+json`이며, 지속 쿼리를 실행할 때 오류가 발생하면 끝점이 적절한 응답 코드를 반환합니다.
 
   | 코드 | 설명 |
   |--- |--- |
   | 200 | 성공한 응답 |
-  | 400 | 헤더가 누락되었거나 지속 쿼리 경로에 문제가 있음을 나타냅니다. 예를 들어 구성 이름이 지정되지 않았거나 접미사가 지정되지 않았거나 기타.<br>다음을 참조하십시오 [문제 해결 - GraphQL 엔드포인트가 구성되지 않음](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url). |
-  | 404 | 요청한 리소스를 찾을 수 없습니다. 예를 들어 서버에서 Graphql 끝점을 사용할 수 없습니다.<br>다음을 참조하십시오 [문제 해결 - GraphQL 지속 쿼리 URL에 경로가 없음](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured). |
+  | 400 | 헤더가 누락되었거나 지속 쿼리 경로에 문제가 있음을 나타냅니다. 예를 들어 구성 이름이 지정되지 않았거나 접미사가 지정되지 않았거나 기타.<br>문제 해결 - GraphQL 끝점이 구성되지 않았음](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url)을 참조하십시오.[ |
+  | 404 | 요청한 리소스를 찾을 수 없습니다. 예를 들어 서버에서 Graphql 끝점을 사용할 수 없습니다.<br>문제 해결 - GraphQL 지속 쿼리 URL에 경로가 없음](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured)을 참조하세요.[ |
   | 500 | 내부 서버 오류. 예를 들어 유효성 검사 오류, 지속성 오류 등이 있습니다. |
 
   >[!NOTE]
@@ -478,8 +481,8 @@ URL은 다음과 같은 부분들로 나눌 수 있습니다.
 1. 패키지 정의 대화 상자에서 **일반**&#x200B;에 “wknd-persistent-queries”와 같은 **이름**&#x200B;을 입력합니다.
 1. “1.0”과 같은 버전 번호를 입력합니다.
 1. **필터** 아래에 새 **필터**&#x200B;를 추가합니다. 경로 파인더를 사용하여 구성 아래에서 `persistentQueries` 폴더를 선택합니다. 예를 들어 `wknd` 구성의 경우, 전체 경로는 `/conf/wknd/settings/graphql/persistentQueries`입니다.
-1. 선택 **저장** 새 패키지 정의를 저장하고 대화 상자를 닫습니다.
-1. 다음 항목 선택 **빌드** 생성된 패키지 정의에 있는 단추입니다.
+1. **저장**&#x200B;을 선택하여 새 패키지 정의를 저장하고 대화 상자를 닫습니다.
+1. 생성된 패키지 정의에서 **빌드** 단추를 선택합니다.
 
 패키지를 빌드하면 다음과 같은 작업을 수행할 수 있습니다.
 

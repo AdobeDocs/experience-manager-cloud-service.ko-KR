@@ -15,13 +15,13 @@ ht-degree: 6%
 
 ![색상 태그 지정 배너](assets/banner-image.png)
 
-Adobe Experience Manager(AEM) Assets는 Adobe Sensei AI 기능을 사용하여 이미지의 색상을 구분하고 수집 시 태그로 자동 적용합니다. 이러한 태그를 사용하면 이미지 색상 구성에 따라 향상된 검색 환경을 사용할 수 있습니다.
+Adobe Experience Manager(AEM) Assets은 Adobe Sensei AI 기능을 사용하여 이미지의 색상을 구분하고 수집 시 태그로 자동 적용합니다. 이러한 태그를 사용하면 이미지 색상 구성에 따라 향상된 검색 환경을 사용할 수 있습니다.
 
 나중에 해당 색상을 기준으로 이미지를 검색할 수 있도록 이미지에 태그가 지정된 색상 수를 1~40 범위 내에서 구성할 수 있습니다. Experience Manager Assets은 이미지의 색상 범위를 기반으로 태그를 적용합니다. 색상 태그의 표시 형식을 구성할 수도 있습니다.
 
 다음 그림은 Experience Manager Assets에서 이미지에 대한 색상 태깅을 구성하고 관리하기 위해 수행하는 작업의 시퀀스를 보여 줍니다.
 
-![색상 태깅](assets/color-tagging-dfd.gif)
+![색상 태그 지정](assets/color-tagging-dfd.gif)
 
 ## 지원되는 파일 형식 {#supported-file-formats-color-tags}
 
@@ -38,15 +38,15 @@ Adobe Experience Manager(AEM) Assets는 Adobe Sensei AI 기능을 사용하여 �
 
 이미지에 대한 색상 태깅 속성을 관리하려면 다음 작업을 수행하십시오.
 
-1. 다음으로 이동 **[!UICONTROL 도구 > 에셋 > 색상 태그 지정]**.
+1. **[!UICONTROL 도구 > Assets > 색상 태그 지정]**(으)로 이동합니다.
 
-   ![색상 태깅 속성](assets/color-tag-settings.png)
+   ![색상 태그 지정 속성](assets/color-tag-settings.png)
 
-1. 에서 색상 태그의 표시 형식 지정 **[!UICONTROL 표시 형식]** 필드. 가능한 옵션에는 색상 이름, RGB 또는 HEX 형식이 포함됩니다.
+1. **[!UICONTROL 표시 형식]** 필드에 색 태그의 표시 형식을 지정하십시오. 가능한 옵션에는 색상 이름, RGB 또는 HEX 형식이 포함됩니다.
 
-1. 에서 이미지에 태그를 지정할 색상 수를 지정합니다. **[!UICONTROL 제한]** 필드. 이러한 색상은 이미지에 대한 속성을 볼 때 표시됩니다. 이 필드에서는 1에서 40 사이의 숫자를 정의할 수 있습니다. 이 필드의 기본값은 10색입니다.
+1. **[!UICONTROL 제한]** 필드에 이미지에 태그를 지정할 색상 수를 지정하십시오. 이러한 색상은 이미지에 대한 속성을 볼 때 표시됩니다. 이 필드에서는 1에서 40 사이의 숫자를 정의할 수 있습니다. 이 필드의 기본값은 10색입니다.
 
-1. 에서 검색 결과에 색상 태그를 포함할 최소 색상 적용 범위 비율을 지정합니다. **[!UICONTROL 적용 범위/우위성 임계값 %]** 필드. 예를 들어, 이미지의 빨강 색상에 대한 적용 범위가 10%이고 이 필드에 9%를 정의하면 빨강 색상에 대한 이미지를 검색할 때 이미지가 포함됩니다. 그러나 이미지의 빨강 색상에 대한 적용 범위가 10%이고 이 필드에 11%를 정의하면 빨강 색상에 대한 이미지를 검색할 때 이미지가 포함되지 않습니다.
+1. **[!UICONTROL 적용 범위/우위성 임계값 %]** 필드의 검색 결과에 색상 태그를 포함할 최소 색상 적용 범위 비율을 지정하십시오. 예를 들어, 이미지의 빨강 색상에 대한 적용 범위가 10%이고 이 필드에 9%를 정의하면 빨강 색상에 대한 이미지를 검색할 때 이미지가 포함됩니다. 그러나 이미지의 빨강 색상에 대한 적용 범위가 10%이고 이 필드에 11%를 정의하면 빨강 색상에 대한 이미지를 검색할 때 이미지가 포함되지 않습니다.
 
    이 필드에는 5에서 100 사이의 숫자를 지정할 수 있습니다. 기본값은 11입니다.
 
@@ -66,11 +66,11 @@ Adobe Experience Manager(AEM) Assets는 Adobe Sensei AI 기능을 사용하여 �
 
 폴더 수준에서 색상 태그 지정을 비활성화하려면 다음을 수행합니다.
 
-1. 다음으로 이동 **[!UICONTROL Adobe Experience Manager > 에셋 > 파일]**.
+1. **[!UICONTROL Adobe Experience Manager > Assets > 파일]**(으)로 이동합니다.
 
-1. 폴더를 선택하고 **[!UICONTROL 속성]**.
+1. 폴더를 선택하고 **[!UICONTROL 속성]**&#x200B;을 클릭하세요.
 
-1. 다음에서 **[!UICONTROL 자산 처리]** 탭에서 다음 위치로 이동 **[!UICONTROL 이미지용 색상 태그]** 폴더를 삭제합니다. 드롭다운 목록에서 다음 값 중 하나를 선택합니다.
+1. **[!UICONTROL 자산 처리]** 탭에서 **[!UICONTROL 이미지에 대한 색상 태그]** 폴더로 이동합니다. 드롭다운 목록에서 다음 값 중 하나를 선택합니다.
 
    * 상속 - 폴더는 상위 폴더에서 활성화 또는 비활성화 옵션을 상속합니다.
 
@@ -82,7 +82,7 @@ Adobe Experience Manager(AEM) Assets는 Adobe Sensei AI 기능을 사용하여 �
 
 ## 스마트 색상 태그 구성 요소를 추가하도록 메타데이터 스키마 구성 {#configure-metadata-schema}
 
-메타데이터 스키마에는 채울 특정 정보에 대한 특정 필드가 포함되어 있습니다. 또한 사용자에게 친숙한 방식으로 메타데이터 필드를 표시하기 위한 레이아웃 정보가 포함되어 있습니다. 메타데이터 속성에는 제목, 설명, MIME 유형, 태그 등이 포함됩니다. 다음을 사용할 수 있습니다. [!UICONTROL 메타데이터 스키마 Forms] 기존 스키마를 수정하거나 사용자 지정 메타데이터 스키마를 추가하는 편집기.
+메타데이터 스키마에는 채울 특정 정보에 대한 특정 필드가 포함되어 있습니다. 또한 사용자에게 친숙한 방식으로 메타데이터 필드를 표시하기 위한 레이아웃 정보가 포함되어 있습니다. 메타데이터 속성에는 제목, 설명, MIME 유형, 태그 등이 포함됩니다. [!UICONTROL 메타데이터 스키마 Forms] 편집기를 사용하여 기존 스키마를 수정하거나 사용자 지정 메타데이터 스키마를 추가할 수 있습니다.
 
 >[!NOTE]
 >
@@ -90,15 +90,15 @@ Adobe Experience Manager(AEM) Assets는 Adobe Sensei AI 기능을 사용하여 �
 
 메타데이터 스키마 양식 편집기에 스마트 색상 태그 구성 요소를 추가하려면 다음을 수행합니다.
 
-1. 다음으로 이동 **[!UICONTROL 도구 > 에셋 > 메타데이터 스키마]**.
+1. **[!UICONTROL 도구 > Assets > 메타데이터 스키마]**&#x200B;로 이동합니다.
 
-1. 스키마 이름을 선택하고 **[!UICONTROL 편집]**.
+1. 스키마 이름을 선택하고 **[!UICONTROL 편집]**&#x200B;을 클릭합니다.
 
-1. 드래그 **[!UICONTROL 스마트 색상 태그]** 다음에서 **[!UICONTROL 양식 작성]** 에 대한 탭 **[!UICONTROL 메타데이터 스키마 양식 편집기]**.
+1. **[!UICONTROL 스마트 색상 태그]**&#x200B;을(를) **[!UICONTROL 양식 작성]** 탭에서 **[!UICONTROL 메타데이터 스키마 양식 편집기]**(으)로 드래그합니다.
 
-1. 다음을 클릭합니다. **[!UICONTROL 스마트 색상 태그 필드]** 다음에서 **[!UICONTROL 메타데이터 스키마 양식 편집기]**.
+1. **[!UICONTROL 메타데이터 스키마 양식 편집기]**&#x200B;에서 **[!UICONTROL 스마트 색상 태그 필드]**&#x200B;을(를) 클릭합니다.
 
-1. 에 적절한 값을 지정합니다. **[!UICONTROL 필드 레이블]** 의 필드 **[!UICONTROL 설정]**  탭.
+1. **[!UICONTROL 설정]** 탭의 **[!UICONTROL 필드 레이블]** 필드에 적절한 값을 지정하십시오.
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
@@ -106,36 +106,36 @@ Adobe Experience Manager(AEM) Assets는 Adobe Sensei AI 기능을 사용하여 �
 
 ## DAM의 기존 이미지에 대한 색상 태그 {#color-tags-existing-images}
 
-DAM의 기존 이미지는 색상 태그가 자동으로 지정되지 않습니다. [!UICONTROL 자산 재처리] 색상 태그를 수동으로 생성합니다.
+DAM의 기존 이미지는 색상 태그가 자동으로 지정되지 않습니다. [!UICONTROL Assets을 수동으로 재처리]하여 색상 태그를 생성합니다.
 
 에셋 저장소에 있는 에셋의 이미지 또는 폴더(하위 폴더 포함)에 색상을 지정하려면 다음 단계를 수행합니다.
 
-1. 다음 항목 선택 [!DNL Adobe Experience Manager] 로고를 만든 다음 [!UICONTROL 탐색] 페이지를 가리키도록 업데이트하는 중입니다.
+1. [!DNL Adobe Experience Manager] 로고를 선택한 다음 [!UICONTROL 탐색] 페이지에서 자산을 선택하십시오.
 
-1. 선택 [!UICONTROL 파일].
+1. [!UICONTROL 파일]을 선택하세요.
 
 1. Assets 인터페이스에서 색상 태그를 적용할 폴더로 이동합니다.
 
 1. 전체 폴더 또는 특정 이미지를 선택합니다.
 
-1. 선택 ![에셋 재처리 아이콘](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL 자산 재처리] 아이콘을 클릭하고 [!UICONTROL 전체 프로세스] 옵션을 선택합니다.
+1. ![에셋 재처리 아이콘](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Assets 재처리] 아이콘을 선택하고 [!UICONTROL 전체 처리] 옵션을 선택합니다.
 
-프로세스가 완료되면 다음 위치로 이동합니다. [!UICONTROL 속성] 폴더에 있는 모든 이미지의 페이지입니다. 자동으로 추가된 태그는 [!UICONTROL 스마트 색상 태그] 의 섹션 [!UICONTROL 기본] 탭.
+프로세스가 완료되면 폴더 내 이미지의 [!UICONTROL 속성] 페이지로 이동합니다. 자동으로 추가된 태그는 [!UICONTROL 기본] 탭의 [!UICONTROL 스마트 색상 태그] 섹션에 표시됩니다.
 
 
 ## 이미지에 대한 스마트 색상 태그 보기 {#view-color-tags}
 
 이미지에 대한 스마트 색상 태그를 보려면 다음과 같이 하십시오.
 
-1. 다음으로 이동 **[!UICONTROL Adobe Experience Manager > 에셋 > 파일]**.
+1. **[!UICONTROL Adobe Experience Manager > Assets > 파일]**(으)로 이동합니다.
 
 1. 해당 폴더를 클릭하고 이미지를 선택합니다.
 
-1. 선택 **[!UICONTROL 속성]** 및 의 태그 보기 **[!UICONTROL 스마트 색상 태그]** 필드.
+1. **[!UICONTROL 속성]**&#x200B;을 선택하고 **[!UICONTROL 스마트 색상 태그]** 필드에서 태그를 봅니다.
 
    ![색상 태그 보기](assets/view-color-tags.png)
 
-   을(를) 볼 수 있도록 마우스를 색상 태그 위에 놓습니다. **[!UICONTROL 적용 범위/우위성 임계값 %]** 이미지의 색상입니다.
+   이미지에 있는 색상의 **[!UICONTROL 적용 범위/우위성 임계값 %]**&#x200B;을(를) 볼 수 있도록 마우스를 색상 태그 위로 가져갑니다.
 
 ## AEM Assets 색상 술어 구성 {#configure-search-predicate}
 
@@ -145,19 +145,19 @@ DAM의 기존 이미지는 색상 태그가 자동으로 지정되지 않습니�
 >
 >기본 검색 양식을 사용하지 않는 경우에만 AEM Assets 색상 술어를 구성합니다.
 
-검색 필터를 구성하려면 에셋 관리자 검색 레일을 사용하여 에셋 색상 술어를 만듭니다.
+검색 필터를 구성하려면 Assets 관리 검색 레일을 사용하여 에셋 색상 술어를 만듭니다.
 
 검색 필터를 구성하려면:
 
-1. 다음으로 이동 **[!UICONTROL 도구 > 일반 > Forms 검색]**.
+1. **[!UICONTROL 도구 > 일반 > Forms 검색]**(으)로 이동합니다.
 
-1. 선택 **[!UICONTROL 에셋 관리자 검색 레일]** 및 클릭 **[!UICONTROL 편집]**.
+1. **[!UICONTROL Assets 관리자 검색 레일]**&#x200B;을 선택하고 **[!UICONTROL 편집]**&#x200B;을 클릭합니다.
 
-1. 드래그 **[!UICONTROL 에셋 색상 술어]** 다음에서 **[!UICONTROL 조건자 선택]** 에 대한 탭 **[!UICONTROL 검색 양식 편집기]**.
+1. **[!UICONTROL 설명 선택]** 탭에서 **[!UICONTROL 자산 색상 설명]**&#x200B;을(를) **[!UICONTROL 검색 양식 편집기]**(으)로 드래그합니다.
 
-1. 에 적절한 값을 지정합니다. **[!UICONTROL 필드 레이블]** 의 필드 **[!UICONTROL 설정]**  탭.
+1. **[!UICONTROL 설정]** 탭의 **[!UICONTROL 필드 레이블]** 필드에 적절한 값을 지정하십시오.
 
-1. 클릭 **[!UICONTROL 완료]** 설정을 저장합니다.
+1. 설정을 저장하려면 **[!UICONTROL 완료]**&#x200B;를 클릭하세요.
 
    >[!VIDEO](https://video.tv.adobe.com/v/340110)
 
@@ -165,22 +165,22 @@ DAM의 기존 이미지는 색상 태그가 자동으로 지정되지 않습니�
 
 >[!VIDEO](https://video.tv.adobe.com/v/340761)
 
-모든 색상 태그 지정 속성 및 [에셋 색상 술어 구성](#search-images-based-on-colors)를 클릭하고 색상을 필터로 사용하여 이미지를 검색할 수 있습니다.
+모든 색상 태그 지정 속성을 구성하고 [Assets 색상 술어를 구성](#search-images-based-on-colors)한 후 색상을 기준으로 이미지를 필터로 검색할 수 있습니다.
 
 색상을 기준으로 이미지를 검색하려면 다음을 수행합니다.
 
-1. 다음으로 이동 **[!UICONTROL 에셋 > 파일]**.
+1. **[!UICONTROL Assets > 파일]**(으)로 이동합니다.
 
-1. 선택 **[!UICONTROL 필터]** 을 클릭합니다.
-   ![자산 필터링](assets/filter-assets.png)
+1. 드롭다운 목록에서 **[!UICONTROL 필터]**을(를) 선택합니다.
+   ![Assets 필터링](assets/filter-assets.png)
 
-1. 다음 항목 선택 [AEM Assets 색상 술어](#configure-search-predicate).
+1. [AEM Assets 색상 술어](#configure-search-predicate)를 선택하십시오.
 
 1. 색상 선택기를 드래그하여 적절한 색상을 선택합니다. 선택한 색상은 색상 선택기 아래에 있는 읽기 전용 필드에 표시됩니다. 색상의 표시 형식으로 RGB 또는 HEX를 선택할 수 있습니다.
 
-   ![색상 피커](assets/color-picker-color-tags.png)
+   ![색상 선택기](assets/color-picker-color-tags.png)
 
-   선택한 색상을 기준으로 이미지를 필터링할 수 있습니다. 선택한 색상이 스마트 색상 태그 중 하나이며 그 위에 있는 이미지 [적용 범위/우위성 임계값 %](#manage-color-tagging-settings) 오른쪽 창에 을 표시합니다.
+   선택한 색상을 기준으로 이미지를 필터링할 수 있습니다. 선택한 색상이 스마트 색상 태그 중 하나이고 [적용 범위/우위성 임계값 %](#manage-color-tagging-settings)을(를) 초과하는 이미지가 오른쪽 창에 표시됩니다.
 
 1. 검색 창에서 X 를 클릭하여 필터를 지웁니다.
 

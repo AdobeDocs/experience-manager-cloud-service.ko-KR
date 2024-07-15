@@ -20,12 +20,12 @@ RDE를 사용하면 개발자가 변경 사항을 신속하게 배포하고 검�
 RDE에서 변경 사항을 테스트하면 Cloud Manager 파이프라인을 통해 일반 클라우드 개발 환경에 배포할 수 있습니다.
 
 >[!NOTE]
-> 의 RDE 개발자에게 문의하십시오. [디스코드 채널](https://discord.com/channels/1131492224371277874/1245304281184079872). RDE 주제에 대해 자유롭게 질문하거나 피드백을 제공해 주십시오.
+> [디스코드 채널](https://discord.com/channels/1131492224371277874/1245304281184079872)에서 RDE 개발자에게 연락하십시오. RDE 주제에 대해 자유롭게 질문하거나 피드백을 제공해 주십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-추가 비디오를 시연해 보십시오 [설정 방법](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html), [사용 방법](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html)및 [개발 수명 주기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html) RDE를 사용합니다.
+RDE를 사용하여 [설정 방법](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html), [사용 방법](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html) 및 [개발 수명 주기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html)를 보여 주는 추가 비디오를 볼 수 있습니다.
 
 ## 소개 {#introduction}
 
@@ -33,7 +33,7 @@ RDE는 코드, 콘텐츠 및 Apache 또는 Dispatcher 구성에 사용할 수 �
 
 모든 프로그램은 RDE로 프로비저닝됩니다. Sandbox 계정이 있는 경우 몇 시간 동안 사용하지 않으면 최대 절전 모드로 전환됩니다.
 
-생성 시 RDE는 가장 최근에 사용 가능한 Adobe Experience Manager(AEM) 버전으로 설정됩니다. Cloud Manager를 사용하여 수행할 수 있는 RDE 재설정은 RDE를 순환시키고 가장 최근에 사용할 수 있는 AEM 버전으로 설정합니다.
+생성 시 RDE는 가장 최근에 사용 가능한 Adobe Experience Manager(AEM) 버전으로 설정됩니다. Cloud Manager을 사용하여 수행할 수 있는 RDE 재설정은 RDE를 순환시키고 가장 최근에 사용할 수 있는 AEM 버전으로 설정합니다.
 
 일반적으로 RDE는 특정 기능을 테스트 및 디버깅하기 위해 주어진 시간에 단일 개발자에 의해 사용됩니다. 개발 세션이 완료되면 RDE는 다음 사용을 위해 기본 상태로 재설정될 수 있습니다.
 
@@ -41,13 +41,13 @@ RDE는 코드, 콘텐츠 및 Apache 또는 Dispatcher 구성에 사용할 수 �
 
 ## 프로그램에서 RDE 활성화 {#enabling-rde-in-a-program}
 
-Cloud Manager를 사용하여 프로그램에 대한 RDE를 생성할 수 있도록 다음 단계를 따르십시오.
+Cloud Manager을 사용하여 프로그램에 대한 RDE를 만들 수 있도록 다음 단계를 따르십시오.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
 1. RDE를 추가할 프로그램을 클릭하여 세부 정보를 표시합니다.
 
-   * RDE는 두 항목 모두에 추가할 수 있습니다. [샌드박스 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) 및 [제작 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
+   * RDE는 [샌드박스 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) 및 [프로덕션 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)에 모두 추가할 수 있습니다.
 
 1. **프로그램 개요** 페이지에서 **환경** 카드의 **환경 추가**&#x200B;를 클릭하여 환경을 추가합니다.
 
@@ -61,32 +61,32 @@ Cloud Manager를 사용하여 프로그램에 대한 RDE를 생성할 수 있도
 
 1. **환경 추가** 대화 상자가 나타나면 다음 작업을 수행하십시오.
 
-   * 선택 **신속한 개발** 다음 아래에 **환경 유형 선택** 제목.
+   * **환경 유형 선택** 제목에서 **신속한 개발**&#x200B;을 선택합니다.
       * 사용 가능한/사용된 환경 수는 환경 유형 뒤의 괄호 안에 표시됩니다.
-   * 다음을 제공합니다. **이름** 환경용입니다.
-   * 선택 사항 제공 **설명** 환경용입니다.
+   * 환경에 **이름**&#x200B;을(를) 제공하십시오.
+   * 환경에 대한 선택적 **설명**&#x200B;을(를) 제공합니다.
    * **클라우드 영역**&#x200B;을 선택합니다.
 
    ![환경 추가 대화 상자](/help/implementing/cloud-manager/assets/add-environment-wizard.png)
 
 1. **저장**&#x200B;을 클릭하여 지정된 환경을 추가합니다.
 
-다음 **개요** 이제 화면에 새 환경이 **환경** 카드.
+이제 **개요** 화면에 **환경** 카드에 새 환경이 표시됩니다.
 
-생성 시 RDE는 가장 최근에 사용할 수 있는 AEM 버전으로 설정됩니다. Cloud Manager를 사용하여 수행할 수도 있는 RDE 재설정은 RDE를 순환시키고 가장 최근에 사용할 수 있는 AEM 버전으로 설정합니다.
+생성 시 RDE는 가장 최근에 사용할 수 있는 AEM 버전으로 설정됩니다. Cloud Manager을 사용하여 수행할 수도 있는 RDE 재설정은 RDE를 순환시키고 가장 최근에 사용할 수 있는 AEM 버전으로 설정합니다.
 
-Cloud Manager를 사용하여 환경을 만들고, 환경에 액세스할 수 있는 사용자를 관리하고, 사용자 정의 도메인을 할당하는 방법에 대한 자세한 내용은 다음을 참조하십시오. [cloud Manager 설명서](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+Cloud Manager을 사용하여 환경을 만들고, 환경에 액세스할 수 있는 사용자를 관리하고, 사용자 지정 도메인을 할당하는 방법에 대한 자세한 내용은 [Cloud Manager 설명서](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)를 참조하십시오.
 
 ## RDE 명령줄 도구 설치 {#installing-the-rde-command-line-tools}
 
-Cloud Manager를 사용하여 프로그램에 대한 RDE를 추가한 후 다음 단계에 설명된 대로 명령줄 도구를 설정하여 RDE와 상호 작용할 수 있습니다.
+Cloud Manager을 사용하여 프로그램에 대한 RDE를 추가한 후 다음 단계에 설명된 대로 명령줄 도구를 설정하여 상호 작용할 수 있습니다.
 
 >[!IMPORTANT]
 >
->버전 20이 있는지 확인합니다. [노드 및 NPM 설치됨](https://nodejs.org/en/download/) Adobe I/O CLI 및 관련 플러그인이 제대로 작동하는지 확인하십시오.
+>Adobe I/O CLI 및 관련 플러그인이 제대로 작동하도록 [노드 및 NPM의 버전 20이 설치](https://nodejs.org/en/download/)되어 있는지 확인하십시오.
 
 
-1. 이에 따라 Adobe I/O CLI 도구를 설치합니다. [프로시저](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+1. 이 [프로시저](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/)에 따라 Adobe I/O CLI 도구를 설치하십시오.
 1. Adobe I/O CLI 도구 AEM RDE 플러그인을 설치합니다.
 
    ```
@@ -112,12 +112,12 @@ Setup the CLI configuration necessary to use the RDE commands.
 ? Do you want to store the information you enter in this setup procedure locally? (y/N)
 ```
 
-선택 `no` 끝
+`no` 선택
 * aio 구성에 조직, 프로그램 및 환경을 전체적으로 저장합니다.
 * 단일 RDE로만 작업합니다.
 
-선택 `yes` 끝
-* 조직, 프로그램 및 환경을 현재 디렉터리의 `.aio` 파일. 이 기능은 git 저장소를 복제하는 다른 사용자가 사용할 수 있도록 파일을 버전 제어에 커밋하려는 경우 편리합니다.
+`yes` 선택
+* 조직, 프로그램 및 환경을 현재 디렉터리의 `.aio` 파일에 로컬로 저장합니다. 이 기능은 git 저장소를 복제하는 다른 사용자가 사용할 수 있도록 파일을 버전 제어에 커밋하려는 경우 편리합니다.
 * 다른 디렉터리로 전환하면 대신 해당 구성이 사용되도록 많은 RDE에서 작업합니다.
 * 구성을 참조할 수 있는 스크립트와 같은 프로그래밍 컨텍스트에서 구성을 사용합니다.
 
@@ -153,7 +153,7 @@ Setup the CLI configuration necessary to use the RDE commands.
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * 메서드를 사용하여 자신의 조직 ID를 조회할 수 있습니다 [여기에 문서화되어 있습니다.](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255)
+   * [여기에 설명된 ](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) 메서드를 사용하여 자신의 조직 ID를 조회할 수 있습니다.
 
 1. 다음으로 프로그램 ID를 구성합니다.
 
@@ -167,33 +167,33 @@ Setup the CLI configuration necessary to use the RDE commands.
 
    `aio login`
 
-   이러한 단계를 수행하려면 Cloud Manager의 멤버여야 합니다 **개발자 - Cloud Service** 제품 프로필. 다음을 참조하십시오 [이 페이지](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) 을 참조하십시오.
+   이 단계를 수행하려면 Cloud Manager **개발자 - Cloud Service** 제품 프로필의 멤버여야 합니다. 자세한 내용은 [이 페이지](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)를 참조하세요.
 
-자세한 내용 및 데모를 보려면 비디오 튜토리얼을 시청하십시오 [rde 설정 방법 (06:24)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html).
+자세한 내용과 데모를 보려면 비디오 튜토리얼 [RDE를 설정하는 방법(06:24)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html)을 시청하십시오.
 </details>
 
 ## 새 기능을 개발하는 동안 RDE 사용 {#using-rde-while-developing-a-new-feature}
 
 Adobe은 새 기능을 개발하기 위해 다음 워크플로를 권장합니다.
 
-* 중간 이정표에 도달하고 AEM as a Cloud Service SDK를 사용하여 로컬에서 성공적으로 유효성을 검사하면 git 기능 분기에 코드를 커밋합니다. git에 커밋은 선택 사항이지만 분기는 아직 주 라인에 포함되지 않아야 합니다. &#39;중간 이정표&#39;를 구성하는 것은 팀 습관에 따라 다르다. 예를 들면 몇 개의 새로운 코드 줄, 반나절 작업 또는 하위 기능 완료가 있습니다.
+* AEM as a Cloud Service SDK를 사용하여 중간 이정표에 도달하고 로컬에서 성공적으로 검증되면 코드를 git 기능 분기에 커밋합니다. git에 커밋은 선택 사항이지만 분기는 아직 주 라인에 포함되지 않아야 합니다. &#39;중간 이정표&#39;를 구성하는 것은 팀 습관에 따라 다르다. 예를 들면 몇 개의 새로운 코드 줄, 반나절 작업 또는 하위 기능 완료가 있습니다.
 
-* 다른 기능에서 RDE를 사용했으며 다음 작업을 수행하려는 경우 RDE를 재설정합니다. [기본 상태로 재설정](#reset-rde). <!-- Alexandru: hiding for now, do not delete This can be done by way of [Cloud Manager](#reset-the-rde-cloud-manager) or by way of the [command line](#reset-the-rde-command-line). -->재설정하는 데 몇 분이 소요되며 기존의 모든 콘텐츠와 코드가 삭제됩니다. RDE status 명령을 사용하여 RDE가 준비되었는지 확인할 수 있습니다. RDE에 최신 AEM 릴리스 버전이 표시됩니다.
+* 다른 기능에서 RDE를 사용했으며 [기본 상태로 재설정](#reset-rde)하려는 경우 RDE를 재설정하십시오. <!-- Alexandru: hiding for now, do not delete This can be done by way of [Cloud Manager](#reset-the-rde-cloud-manager) or by way of the [command line](#reset-the-rde-command-line). -->다시 설정하는 데 몇 분 정도 소요되며 기존의 모든 콘텐츠와 코드가 삭제됩니다. RDE status 명령을 사용하여 RDE가 준비되었는지 확인할 수 있습니다. RDE에 최신 AEM 릴리스 버전이 표시됩니다.
 
   >[!IMPORTANT]
   >
   > 스테이징 및 프로덕션 환경이 자동 AEM 릴리스 업데이트를 받지 못하고 최신 AEM 릴리스 버전보다 오래된 경우 RDE에서 실행되는 코드가 스테이징 및 프로덕션에서 작동하는 방식과 일치하지 않을 수 있습니다. 이 경우 코드를 프로덕션에 배포하기 전에 스테이징에서 철저한 테스트를 수행하는 것이 특히 중요합니다.
 
 
-* RDE 명령줄 인터페이스를 사용하여 로컬 코드를 RDE에 동기화합니다. 옵션에는 Apache/Dispatcher 구성의 콘텐츠 패키지, 특정 번들, OSGI 구성 파일, 콘텐츠 파일 및 zip 파일 설치가 포함됩니다. 원격 콘텐츠 패키지를 참조할 수도 있습니다. 다음을 참조하십시오 [RDE 명령줄 도구](/help/implementing/developing/introduction/rapid-development-environments.md#rde-cli-commands) 추가 정보. status 명령을 사용하여 배포가 성공했는지 확인할 수 있습니다. 필요한 경우 패키지 관리자를 사용하여 콘텐츠 패키지를 설치합니다.
+* RDE 명령줄 인터페이스를 사용하여 로컬 코드를 RDE에 동기화합니다. 옵션에는 Apache/Dispatcher 구성의 컨텐츠 패키지, 특정 번들, OSGI 구성 파일, 컨텐츠 파일 및 zip 파일 설치가 포함됩니다. 원격 콘텐츠 패키지를 참조할 수도 있습니다. 자세한 내용은 [RDE 명령줄 도구](/help/implementing/developing/introduction/rapid-development-environments.md#rde-cli-commands)를 참조하십시오. status 명령을 사용하여 배포가 성공했는지 확인할 수 있습니다. 필요한 경우 패키지 관리자를 사용하여 콘텐츠 패키지를 설치합니다.
 
-* RDE에서 코드를 테스트합니다. Cloud Manager에서는 작성자 및 게시 URL을 사용할 수 있습니다.
+* RDE에서 코드를 테스트합니다. 작성자 및 Publish URL은 Cloud Manager에서 사용할 수 있습니다.
 
 * 코드가 예상대로 작동하지 않으면 표준 디버깅 기술을 사용하여 문제를 이해하고 적절하게 변경합니다. 코드 수정 사항을 git에 커밋하지 않고(유효성이 검사되지 않았으므로) 로컬 CLI를 사용하여 코드를 RDE에 동기화합니다. 문제가 해결될 때까지 계속 반복하십시오.
 
 * 코드가 예상대로 작동하면 코드를 git 기능 분기에 커밋합니다.
 
-* RDE로 동기화된 코드는 Cloud Manager 파이프라인을 사용하지 않으므로 이제 Cloud Manager 비프로덕션 파이프라인을 사용하여 git 기능 분기를 클라우드 개발 환경에 배포해야 합니다. 코드가 Cloud Manager 품질 게이트를 통과하는지, 그리고 나중에 Cloud Manager 프로덕션 파이프라인을 사용하여 코드가 성공적으로 배포되었는지 확인할 수 있습니다.
+* RDE로 동기화된 코드는 Cloud Manager 파이프라인을 사용하지 않으므로 이제 Cloud Manager 비프로덕션 파이프라인을 사용하여 git 기능 분기를 클라우드 개발 환경에 배포해야 합니다. 이렇게 하면 코드가 Cloud Manager 품질 게이트를 통과하는지, 그리고 나중에 Cloud Manager 프로덕션 파이프라인을 사용하여 코드가 성공적으로 배포되었는지 확인할 수 있습니다.
 
 * 기능에 대한 모든 코드가 준비되고 RDE 및 클라우드 개발 환경 모두에서 잘 실행될 때까지 각 중간 이정표에 대해 위의 단계를 반복합니다.
 
@@ -240,17 +240,17 @@ RDE는 한 번에 하나의 프로젝트를 지원합니다. 코드는 로컬 �
 
   `aio aem rde <command> --organizationId=<value> --programId=<value> --environmentId=<value>`
 
-  여기에는 여전히 ```aio login``` 수행할 수 있습니다.
+  이 작업을 수행하려면 ```aio login```이(가) 필요합니다.
 
 ### RDE에 배포 {#deploying-to-rde}
 
 이 섹션에서는 번들, OSGI 구성, 콘텐츠 패키지, 개별 콘텐츠 파일 및 Apache 또는 Dispatcher 구성의 배포, 설치 또는 업데이트에 RDE CLI를 사용하는 방법에 대해 설명합니다.
 
-일반적인 사용 패턴은 다음과 같습니다 `aio aem:rde:install <artifact>`.
+일반적인 사용 패턴은 `aio aem:rde:install <artifact>`입니다.
 
 다음은 몇 가지 예입니다.
 
-<u>컨텐츠 패키지 배포</u>
+<u>콘텐츠 패키지 배포</u>
 
 `aio aem:rde:install sample.demo.ui.apps.all-1.0.0-SNAPSHOT.zip`
 
@@ -267,7 +267,7 @@ RDE는 한 번에 하나의 프로젝트를 지원합니다. 코드는 로컬 �
 
 기본적으로 아티팩트는 작성자 및 게시 계층 모두에 배포되지만 &quot;-s&quot; 플래그를 사용하여 특정 계층을 타깃팅할 수 있습니다.
 
-코드, 콘텐츠 또는 가 포함된 패키지와 같은 모든 AEM 패키지를 배포할 수 있습니다. [컨테이너 패키지](/help/implementing/developing/introduction/aem-project-content-package-structure.md#container-packages) (&quot;모든&quot; 패키지라고도 함).
+코드, 콘텐츠가 있는 패키지 또는 [컨테이너 패키지](/help/implementing/developing/introduction/aem-project-content-package-structure.md#container-packages)(&quot;모든&quot; 패키지라고도 함)와 같은 모든 AEM 패키지를 배포할 수 있습니다.
 
 >[!IMPORTANT]
 >
@@ -314,11 +314,11 @@ RDE는 한 번에 하나의 프로젝트를 지원합니다. 코드는 로컬 �
 
 이러한 유형의 구성을 위해서는 전체 폴더 구조가 zip 파일 형식이어야 합니다.
 
-다음에서 `dispatcher` AEM 프로젝트의 모듈에서는 아래 maven 명령을 실행하여 Dispatcher 구성을 압축할 수 있습니다.
+AEM 프로젝트의 `dispatcher` 모듈에서 아래 maven 명령을 실행하여 Dispatcher 구성을 압축할 수 있습니다.
 
 `mvn clean package`
 
-또는 의 아래 zip 명령 사용 `src` 디렉토리 `dispatcher` 모듈:
+또는 `dispatcher` 모듈의 `src` 디렉터리에서 아래 zip 명령을 사용합니다.
 
 `zip -y -r dispatcher.zip .`
 
@@ -328,11 +328,11 @@ RDE는 한 번에 하나의 프로젝트를 지원합니다. 코드는 로컬 �
 
 >[!TIP]
 >
->위의 명령은 를 배포하는 것으로 가정합니다. [WKND](https://github.com/adobe/aem-guides-wknd) 프로젝트의 Dispatcher 구성 다음을 교체해야 합니다. `X.X.X` 프로젝트의 Dispatcher 구성을 배포할 때 해당 WKND 프로젝트 버전 번호 또는 프로젝트별 버전 번호 사용
+>위의 명령은 사용자가 [WKND](https://github.com/adobe/aem-guides-wknd) 프로젝트의 Dispatcher 구성을 배포하고 있다고 가정합니다. 프로젝트의 Dispatcher 구성을 배포할 때 `X.X.X`을(를) 해당 WKND 프로젝트 버전 번호 또는 프로젝트별 버전 번호로 바꾸십시오.
 
 >[!NOTE]
 >
->RDE는 &quot;유연한 모드&quot; Dispatcher 구성을 지원하지만 &quot;레거시 모드&quot; Dispatcher 구성은 지원하지 않습니다. 다음을 참조하십시오 [Dispatcher 설명서](/help/implementing/dispatcher/disp-overview.md#validation-debug) 두 가지 모드에 대한 정보. 다음 설명서도 참조하십시오. [유연한 모드로 마이그레이션](/help/implementing/dispatcher/validation-debug.md#migrating), 아직 수행하지 않았다면 다음을 수행합니다.
+>RDE는 &quot;유연한 모드&quot; Dispatcher 구성을 지원하지만 &quot;레거시 모드&quot; Dispatcher 구성은 지원하지 않습니다. 두 모드에 대한 자세한 내용은 [Dispatcher 설명서](/help/implementing/dispatcher/disp-overview.md#validation-debug)를 참조하세요. 아직 수행하지 않았다면 [유연한 모드로 마이그레이션](/help/implementing/dispatcher/validation-debug.md#migrating)에 대한 설명서를 참조할 수도 있습니다.
 
 배포가 성공하면 다음과 유사한 응답이 생성됩니다.
 
@@ -364,13 +364,13 @@ The analyser found the following errors for publish :
 
 ### 사이트 테마 및 사이트 템플릿을 기반으로 프론트엔드 코드 배포 {#deploying-themes-to-rde}
 
-RDE는 다음을 기반으로 프론트엔드 코드 지원 [사이트 테마](/help/sites-cloud/administering/site-creation/site-themes.md) 및 [사이트 템플릿](/help/sites-cloud/administering/site-creation/site-templates.md). RDE에서는 Cloud Manager가 아닌 명령줄 지시문을 사용하여 프론트엔드 패키지를 배포합니다 [프론트엔드 파이프라인](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) 다른 환경 유형에 사용됩니다.
+RDE는 [사이트 테마](/help/sites-cloud/administering/site-creation/site-themes.md) 및 [사이트 템플릿](/help/sites-cloud/administering/site-creation/site-templates.md)을 기반으로 프론트엔드 코드를 지원합니다. RDE를 사용하면 다른 환경 유형에 사용되는 Cloud Manager [프론트엔드 파이프라인](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)이 아니라 명령줄 지시문을 사용하여 프론트엔드 패키지를 배포할 수 있습니다.
 
 평소대로 npm을 사용하여 프론트엔드 패키지를 빌드합니다.
 
 `npm run build`
 
-다음을 생성합니다. `dist/` 프론트엔드 패키지 폴더에 `package.json` 파일 및 `dist` 폴더:
+프론트엔드 패키지 폴더에 `package.json` 파일과 `dist` 폴더가 포함되도록 `dist/` 폴더를 생성해야 합니다.
 
 ```
 ls ./path-to-frontend-pkg-folder/
@@ -389,7 +389,7 @@ Logs:
 > with workspace hash 692021864642a20d6d298044a927d66c0d9cf2adf42d4cca0c800a378ac3f8d3
 ```
 
-또는 를 압축할 수 있습니다. `package.json` 파일 및 `dist` 해당 zip 파일을 폴더에 저장하고 배포합니다.
+또는 `package.json` 파일과 `dist` 폴더를 압축하고 해당 zip 파일을 배포할 수 있습니다.
 
 `zip -r frontend-pkg.zip ./path-to-frontend-pkg-folder/dist ./path-to-frontend-pkg-folder/package.json`
 
@@ -449,9 +449,9 @@ Environment: Ready
 
 ### RDE에서 삭제 {#deleting-from-rde}
 
-CLI 도구를 통해 이전에 RDE에 배포된 구성 및 번들을 삭제할 수 있습니다. 사용 `status` 삭제할 수 있는 항목 목록을 나타내는 명령 `bsn` 번들 및 `pid` 구성 을 delete 명령에서 참조할 수 있습니다.
+CLI 도구를 통해 이전에 RDE에 배포된 구성 및 번들을 삭제할 수 있습니다. 삭제할 수 있는 항목 목록에 `status` 명령을 사용하십시오. 이 목록에는 번들 `bsn` 및 delete 명령에서 참조할 구성 `pid`이(가) 포함됩니다.
 
-예를 들어 다음과 같습니다. `com.adobe.granite.demo.MyServlet.cfg.json` 이(가) 설치되었으므로 `bsn` 은(는) 입니다. `com.adobe.granite.demo.MyServlet`, (이)가 없는 **cfg.json** 접미사.
+예를 들어 `com.adobe.granite.demo.MyServlet.cfg.json`이(가) 설치된 경우 `bsn`은(는) **cfg.json** 접미사가 없는 `com.adobe.granite.demo.MyServlet`입니다.
 
 컨텐츠 패키지 또는 컨텐츠 파일 삭제는 지원되지 않습니다. 이를 제거하려면 RDE를 재설정해야 하며, 이렇게 하면 RDE가 기본 상태로 돌아갑니다.
 
@@ -463,27 +463,27 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
 
-자세한 내용 및 데모는 비디오 튜토리얼 을 참조하십시오. [RDE 명령 사용 방법(10:01)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html).
+자세한 내용과 데모는 비디오 튜토리얼 [RDE 명령 사용 방법(10:01)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html)을 참조하세요.
 
 ## 로그 {#rde-logging}
 
-다른 환경 유형과 유사하게 OSGi 구성을 수정하여 로그 수준을 설정할 수 있지만, 위에서 설명한 대로 RDE에 대한 배포 모델에 Cloud Manager 배포가 아닌 명령줄이 포함됩니다. 다음 확인: [로깅 설명서](/help/implementing/developing/introduction/logging.md) 로그를 보고 다운로드하고 해석하는 방법에 대한 자세한 내용을 보려면 를 참조하십시오.
+다른 환경 유형과 유사하게 OSGi 구성을 수정하여 로그 수준을 설정할 수 있지만, 위에서 설명한 대로 RDE에 대한 배포 모델에 Cloud Manager 배포가 아닌 명령줄이 포함됩니다. 로그를 보고 다운로드하고 해석하는 방법에 대한 자세한 내용은 [로깅 설명서](/help/implementing/developing/introduction/logging.md)를 참조하세요.
 
 RDE CLI에는 기록해야 하는 클래스와 패키지 및 로그 수준을 빠르게 구성하는 데 사용할 수 있는 자체 log 명령도 있습니다. 이러한 구성은 버전 제어에서 OSGI 속성을 수정하지 않으므로 사용 후 삭제로 볼 수 있습니다. 이 기능은 먼 과거의 로그를 조회하는 것보다 실시간으로 로그를 추적하는 데 중점을 둡니다.
 
-다음 예제에서는 하나의 패키지를 디버그 로그 수준으로 설정하고 두 패키지(공백으로 구분)를 정보 디버그 수준으로 설정하여 작성자 계층을 추적하는 방법을 보여 줍니다. 다음을 포함하는 출력 **인증** 패키지가 강조 표시됩니다.
+다음 예제에서는 하나의 패키지를 디버그 로그 수준으로 설정하고 두 패키지(공백으로 구분)를 정보 디버그 수준으로 설정하여 작성자 계층을 추적하는 방법을 보여 줍니다. **auth** 패키지가 포함된 출력이 강조 표시됩니다.
 
 `aio aem:rde:logs --target=author --debug=org.apache.sling --info=org.apache.sling.commons.threads.impl org.apache.sling.jcr.resource.internal.helper.jcr -H .auth.`
 
 >[!TIP]
 >
->오류가 표시되면 `RDECLI:UNEXPECTED_API_ERROR` author 서비스에 대한 로그 명령을 사용하여 재생할 때 환경을 재설정하고 다시 시도하십시오. 이 오류는 최근 재설정 작업이 2024년 5월 말 이전인 경우 발생합니다.
+>작성자 서비스에 대한 로그 명령을 재생할 때 `RDECLI:UNEXPECTED_API_ERROR` 오류가 표시되면 환경을 재설정하고 다시 시도하십시오. 이 오류는 최근 재설정 작업이 2024년 5월 말 이전인 경우 발생합니다.
 >
 ```
 >aio aem:rde:reset
 >```
 
-다음을 참조하십시오 `aio aem:rde:logs --help` 명령줄 옵션의 전체 집합입니다.
+명령줄 옵션의 전체 집합은 `aio aem:rde:logs --help`을(를) 참조하십시오.
 
 기능은 다음과 같습니다.
 
@@ -519,7 +519,7 @@ This usually takes a few minutes. Use the [status command](#checking-rde-status)
 
 ### Reset the RDE in Cloud Manager {#reset-the-rde-cloud-manager} -->
 
-Cloud Manager를 사용하여 아래 단계에 따라 RDE를 재설정할 수 있습니다.
+Cloud Manager을 사용하여 아래 단계를 수행하여 RDE를 재설정할 수 있습니다.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
@@ -533,35 +533,35 @@ Cloud Manager를 사용하여 아래 단계에 따라 RDE를 재설정할 수 �
 
      ![모두 표시 옵션](/help/implementing/cloud-manager/assets/environment-showall.png)
 
-1. 다음 **환경** 창이 열리고 프로그램에 대한 모든 환경이 나열됩니다.
+1. **환경** 창이 열리고 프로그램에 대한 모든 환경이 나열됩니다.
 
    ![환경 탭](/help/implementing/cloud-manager/assets/environments-tab-populated.png)
 
-1. 재설정할 RDE의 줄임표 버튼을 클릭한 다음 을 선택합니다 **재설정**.
+1. 재설정할 RDE의 줄임표 단추를 클릭한 다음 **재설정**&#x200B;을 선택합니다.
 
    ![환경 세부 정보 보기](/help/implementing/cloud-manager/assets/rde-reset.png)
 
-1. 을 클릭하여 RDE를 재설정할지 확인합니다. **재설정** 을 클릭합니다.
+1. 대화 상자에서 **재설정**&#x200B;을 클릭하여 RDE를 재설정할지 확인하십시오.
 
    ![재설정 확인](/help/implementing/cloud-manager/assets/rde-reset-confirm.png)
 
-1. Cloud Manager는 배너 알림을 통해 재설정 프로세스가 시작되었음을 확인합니다.
+1. Cloud Manager은 배너 알림을 통해 재설정 프로세스가 시작되었음을 확인합니다.
 
    ![배너 알림 재설정](/help/implementing/cloud-manager/assets/rde-reset-banner.png)
 
-RDE 재설정 프로세스가 시작되면 일반적으로 완료되어 환경을 기본 상태로 되돌리는 데 몇 분이 소요됩니다. 재설정 프로세스의 상태는 언제든지 **상태** 열 **환경** 카드 또는 **환경** 창.
+RDE 재설정 프로세스가 시작되면 일반적으로 완료되어 환경을 기본 상태로 되돌리는 데 몇 분이 소요됩니다. 재설정 프로세스의 상태는 언제든지 **환경** 카드의 **상태** 열 또는 **환경** 창에서 볼 수 있습니다.
 
 ![RDE 재설정 상태](/help/implementing/cloud-manager/assets/rde-reset-status-environments-card.png)
 
-에서 바로 줄임표 버튼을 사용하여 RDE를 재설정할 수도 있습니다. **환경** 다음에 대한 카드 **개요** 페이지를 가리키도록 업데이트하는 중입니다.
+**개요** 페이지의 **환경** 카드에서 바로 줄임표 버튼을 사용하여 RDE를 재설정할 수도 있습니다.
 
 ![환경 카드에서 RDE 재설정](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
-Cloud Manager를 사용하여 환경을 관리하는 방법에 대한 자세한 내용은 [cloud Manager 설명서](/help/implementing/cloud-manager/manage-environments.md).
+Cloud Manager을 사용하여 환경을 관리하는 방법에 대한 자세한 내용은 [Cloud Manager 설명서](/help/implementing/cloud-manager/manage-environments.md)를 참조하세요.
 
 ## JSON 출력을 지원하는 명령 {#json-commands}
 
-대부분의 명령은 글로벌 ```--json``` 콘솔 출력을 억제하고 스크립트에서 처리할 유효한 json을 반환하는 플래그입니다. 다음은 json 출력의 예와 함께 몇 가지 지원되는 명령입니다.
+대부분의 명령은 콘솔 출력을 억제하고 스크립트에서 처리할 유효한 json을 반환하는 전역 ```--json``` 플래그를 지원합니다. 다음은 json 출력의 예와 함께 몇 가지 지원되는 명령입니다.
 
 ### 상태 {#status}
 
@@ -930,11 +930,11 @@ Cloud Manager를 사용하여 환경을 관리하는 방법에 대한 자세한 
 * `config.author.rde`
 * `config.publish.rde`
 
-다음을 참조하십시오. [실행 모드 설명서](/help/implementing/deploying/overview.md#runmodes) 실행 모드에 대한 일반적인 정보.
+실행 모드에 대한 일반적인 정보는 [실행 모드 설명서](/help/implementing/deploying/overview.md#runmodes)를 참조하세요.
 
 >[!NOTE]
 >
->RDE OSGI 구성은 번들에 의해 선언된 모든 OSGI 속성의 값을 상속한다는 점에서 고유합니다. `dev` 실행 모드.
+>RDE OSGI 구성은 번들의 `dev` 실행 모드에서 선언된 모든 OSGI 속성 값을 상속한다는 점에서 고유합니다.
 
 RDE는 컨텐츠를 /apps 아래의 install.rde 폴더(또는 install.author.rde 또는 install.publish.rde)에 설치할 수 있다는 점에서 다른 환경과 구별됩니다. 이렇게 하면 명령줄 도구를 사용하여 콘텐츠를 git에 커밋하고 RDE에 전달할 수 있습니다.
 
@@ -946,7 +946,7 @@ RDE가 재설정되면 모든 컨텐츠가 제거되므로 원할 경우 컨텐�
 
 1. /apps 아래의 install.rde 폴더 내의 git에 샘플 콘텐츠를 배치하고 커밋한 다음 명령줄 도구를 사용하여 중요한 콘텐츠 패키지를 RDE에 동기화합니다.
 
-1. 사용 [콘텐츠 복사 도구](/help/implementing/developing/tools/content-copy.md) 정의된 콘텐츠 세트를 프로덕션, 스테이지 또는 개발 환경 또는 다른 RDE에서 복사하려면 다음을 수행합니다.
+1. [콘텐츠 복사 도구](/help/implementing/developing/tools/content-copy.md)를 사용하여 프로덕션, 스테이징, 개발 환경 또는 다른 RDE에서 정의된 콘텐츠 세트를 복사합니다.
 
 1. 패키지 관리자 사용
 
@@ -955,7 +955,7 @@ RDE가 재설정되면 모든 컨텐츠가 제거되므로 원할 경우 컨텐�
 
 ## RDE는 클라우드 개발 환경과 어떻게 다릅니까? {#how-are-rds-different-from-cloud-development-environments}
 
-RDE는 여러 가지 면에서 클라우드 개발 환경과 유사하지만 코드를 빠르게 동기화할 수 있는 일부 사소한 아키텍처 차이점이 있습니다. RDE에 코드를 가져오는 메커니즘은 다릅니다. RDE의 경우 로컬 개발 환경에서 코드를 동기화하지만 클라우드 개발 환경의 경우 Cloud Manager를 통해 코드를 배포합니다.
+RDE는 여러 가지 면에서 클라우드 개발 환경과 유사하지만 코드를 빠르게 동기화할 수 있는 일부 사소한 아키텍처 차이점이 있습니다. RDE에 코드를 가져오는 메커니즘은 다릅니다. RDE의 경우 로컬 개발 환경에서 하나의 코드가 동기화되고, 클라우드 개발 환경의 경우 Cloud Manager을 통해 코드를 배포합니다.
 
 이러한 이유로 RDE 환경에서 코드를 확인한 후 비프로덕션 파이프라인을 사용하여 클라우드 개발 환경에 코드를 배포하는 것이 좋습니다. 마지막으로 프로덕션 파이프라인으로 배포하기 전에 코드를 테스트합니다.
 
@@ -991,7 +991,7 @@ Forms 개발자는 AEM Forms Cloud Service 신속 개발 환경을 사용하여 
 
 ## RDE 자습서
 
-AEM에서 RDE에 대해 as a Cloud Service으로 알아보려면 다음을 보여 주는 비디오 튜토리얼을 참조하십시오. [설정 방법, 사용 방법 및 개발 수명 주기(01:25)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html).
+AEM as a Cloud Service의 RDE에 대해 알아보려면 [설정 방법, 사용 방법 및 개발 수명 주기(01:25)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)를 보여 주는 비디오 튜토리얼을 참조하십시오.
 
 # 문제 해결 {#troubleshooting}
 
@@ -999,13 +999,13 @@ AEM에서 RDE에 대해 as a Cloud Service으로 알아보려면 다음을 보�
 
 ### 기존 RDE에 대한 최신 AEM 버전을 얻는 방법 {#get-latest-aem-version}
 
-생성 시 RDE는 가장 최근에 사용 가능한 Adobe Experience Manager(AEM) 버전으로 설정됩니다. An [RDE 재설정,](#reset-rde) Cloud Manager 또는 `aio aem:rde:reset` 명령을 실행하고 RDE를 순환한 다음 가장 최근에 사용 가능한 AEM 버전으로 설정합니다.
+생성 시 RDE는 가장 최근에 사용 가능한 Adobe Experience Manager(AEM) 버전으로 설정됩니다. Cloud Manager 또는 `aio aem:rde:reset` 명령을 사용하여 수행할 수 있는 [RDE 재설정,](#reset-rde)은(는) RDE를 순환하고 가장 최근에 사용 가능한 AEM 버전으로 설정합니다.
 
 ## aio RDE 플러그인 문제 해결 {#aio-rde-plugin-troubleshooting}
 
 ### 권한 부족 관련 오류 {#insufficient-permissions}
 
-RDE 플러그인을 사용하려면 Cloud Manager의 멤버여야 합니다 **개발자 - Cloud Service** 제품 프로필. 다음을 참조하십시오 [이 페이지](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) 을 참조하십시오.
+RDE 플러그인을 사용하려면 Cloud Manager **개발자 - Cloud Service** 제품 프로필의 멤버여야 합니다. 자세한 내용은 [이 페이지](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)를 참조하세요.
 
 또는 이 명령을 실행하여 개발자 콘솔에 로그인할 수 있는 경우 이 개발자 역할이 있는지 확인할 수 있습니다.
 
@@ -1013,7 +1013,7 @@ RDE 플러그인을 사용하려면 Cloud Manager의 멤버여야 합니다 **�
 
 >[!TIP]
 >
->다음 항목이 표시되면 `Warning: cloudmanager:* is not a aio command.` 오류입니다. 다음을 설치해야 합니다. [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) 아래 명령을 실행하여 다음을 수행합니다.
+>`Warning: cloudmanager:* is not a aio command.` 오류가 표시되면 아래 명령을 실행하여 [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager)를 설치해야 합니다.
 >
 >```
 >aio plugins:install @adobe/aio-cli-plugin-cloudmanager

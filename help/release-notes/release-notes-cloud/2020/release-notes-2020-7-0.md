@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 릴리스의 릴리스 노트'
-description: "[!DNL Adobe Experience Manager] 2020.7.0용 as a Cloud Service 릴리스 노트"
+description: "[!DNL Adobe Experience Manager] as a Cloud Service 릴리스 노트(220.0)"
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
 feature: Release Information
 role: Admin
@@ -11,7 +11,7 @@ ht-degree: 73%
 
 ---
 
-# 의 릴리스 정보 [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 {#release-notes}
+# as a Cloud Service [!DNL Adobe Experience Manager] 2.020.0 릴리스 정보 {#release-notes}
 
 다음 섹션에서는 Experience Manager as a Cloud Service 2020.7.0 일반 릴리스 노트를 간략하게 설명합니다.
 
@@ -31,11 +31,11 @@ ht-degree: 73%
 
 * 이제 구성이 Experience Manager 저장소의 `/etc/cloudsettings`가 아닌 `/conf`에 저장됩니다.
 
-## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
+## as a Cloud Service [!DNL Adobe Experience Manager Assets] {#assets}
 
 ### [!DNL Assets]의 새로운 기능 {#what-is-new-assets}
 
-* [!DNL Asset Compute Service]는 자산을 처리하는 확장 가능한 서비스입니다. 관리자는 을 구성할 수 있습니다 [!DNL Experience Manager] 을 사용하여 생성된 사용자 정의 응용 프로그램을 호출하려면 [!DNL Asset Compute Service]. 개발자는 이 서비스를 사용하여 복잡한 사용 사례에 맞는 전문 사용자 정의 애플리케이션을 만들 수 있습니다. 이 웹 서비스는 다양한 파일 유형에 대한 썸네일 생성, Adobe 파일 형식의 고품질 이미지 렌더링, 비디오 인코딩(미래), 메타데이터 추출, 색인을 생성하기 위한 사전 설정으로 전체 텍스트 추출, 사용 가능한 모든 것을 통한 자산 실행 등의 작업을 수행할 수 있습니다 [!DNL Sensei] 서비스. 참조 [자산 마이크로서비스 및 처리 프로필 사용](/help/assets/asset-microservices-configure-and-use.md).
+* [!DNL Asset Compute Service]는 자산을 처리하는 확장 가능한 서비스입니다. 관리자는 [!DNL Asset Compute Service]을(를) 사용하여 만든 사용자 지정 응용 프로그램을 호출하도록 [!DNL Experience Manager]을(를) 구성할 수 있습니다. 개발자는 이 서비스를 사용하여 복잡한 사용 사례에 맞는 전문 사용자 정의 애플리케이션을 만들 수 있습니다. 이 웹 서비스는 다양한 파일 유형에 대한 썸네일 생성, Adobe 파일 형식의 고품질 이미지 렌더링, 비디오 인코딩(미래), 메타데이터 추출, 색인을 생성하기 위한 사전 설정으로 전체 텍스트 추출, 사용 가능한 모든 [!DNL Sensei] 서비스를 통한 자산 실행 등의 작업을 수행할 수 있습니다. [자산 마이크로서비스 및 처리 프로필 사용](/help/assets/asset-microservices-configure-and-use.md)을 참조하세요.
 
 * [!DNL Experience Manager] as a Cloud Service에서 [!DNL Dynamic Media]의 초기 구성이 더욱 강력하게 개선되었습니다. 이제 관리자에게 프로세스 진행 상황을 제공합니다.
 
@@ -43,13 +43,13 @@ ht-degree: 73%
 
 * 클라우드 서비스 배포와 호환되지 않는 워크플로우 단계에는 이제 [!UICONTROL 워크플로우 모델] 편집기에서 경고가 표시됩니다. 또한 Cloud Service 환경에서 기존 워크플로우를 실행할 때 호환되지 않는 워크플로우 단계를 건너뜁니다.
 
-* 고객이 생성하여 로 배포되는 워크플로 모델 `/conf/global` 의 환경과 연결된 Git 프로젝트에서 [!DNL Cloud Manager] 자동으로에 배포됩니다. `/var` 따라서 다음에서 사용 가능 [!DNL Experience Manager]. 고객이 변경한 `/libs`의 제품 워크플로우 모델은 자동으로 `/var`에 배포되지 않습니다.
+* 고객이 만든 워크플로 모델 중 [!DNL Cloud Manager]의 환경과 연결된 Git 프로젝트의 `/conf/global`에 배포되는 모델은 `/var`에 자동으로 배포되어 [!DNL Experience Manager]에서 사용할 수 있습니다. 고객이 변경한 `/libs`의 제품 워크플로우 모델은 자동으로 `/var`에 배포되지 않습니다.
 
 ### 수정된 버그 {#assets-bugs-fixed}
 
 * 에셋 이동 마법사가 컬렉션에 포함된 에셋에 대해 예상대로 로드되지 않습니다. (CQ-4296756)
-* 값: `dam:size` 및 `dam:sha1` XMP 원본에 쓰기에서 제외됩니다. (CQ-4237355)
-* 일괄 에셋 게시를 취소할 때 [!DNL Brand Portal] 은 요청 URI가 너무 길다는 오류를 생성합니다. (CQ-4299474)
+* `dam:size` 및 `dam:sha1`의 값이 XMP 원본에 쓰지 않습니다. (CQ-4237355)
+* 자산을 일괄적으로 게시 취소할 때 [!DNL Brand Portal]에서 요청 URI가 너무 길다는 오류가 발생합니다. (CQ-4299474)
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -57,7 +57,7 @@ ht-degree: 73%
 
 이제 Cloud Service에서 AEM Commerce을 사용할 수 있습니다.
 
-다음을 참조하십시오 [AEM Commerce as a Cloud Service 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) 을 참조하십시오.
+자세한 내용은 [AEM Commerce as a Cloud Service 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html)를 참조하십시오.
 
 ## 핵심 구성 요소 {#core-components}
 
@@ -68,7 +68,7 @@ ht-degree: 73%
 * 새로운 [PDF 뷰어 구성 요소](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html) 소개
 
 * 이제 코어 구성 요소에 대한 AMP(Accelerated Mobile Page) 지원을 사용할 수 있습니다. Google 모바일 검색 결과에서 사이트 방문 시 즉시 페이지를 전환하여 더 빠른 고객 경험을 제공하고 사용자 참여도와 SEO를 향상합니다.
-다음을 참조하십시오 [핵심 구성 요소에 대한 AMP 지원](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) 을 참조하십시오.
+자세한 내용은 [핵심 구성 요소에 대한 AMP 지원](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html)을 참조하십시오.
 
 * [Adobe 클라이언트 데이터 레이어](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) 버전 1.0.2와의 호환성.
 
@@ -123,7 +123,7 @@ ht-degree: 73%
 
 ### 새로운 기능 {#what-is-new-foundations}
 
-* [로그를 Splunk 계정에 전달할 수 있습니다.](/help/implementing/developing/introduction/logging.md#splunk-logs)를 통해 조직에서 Splunk 투자를 사용할 수 있습니다.
+* [로그를 Splunk 계정에 전달](/help/implementing/developing/introduction/logging.md#splunk-logs)할 수 있으며, 이를 통해 조직에서 해당 Splunk 투자를 사용할 수 있습니다.
 
 * [정적 전용 송신 IP 주소](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address)를 Java 코드로 프로그래밍된 아웃바운드 트래픽에 할당할 수 있으며 이는 일부 통합에 유용합니다.
 
@@ -139,7 +139,7 @@ ht-degree: 73%
 
 * AEM(Adobe Experience Manager) 6.1에서 이전 버전의 CRA를 실행할 수 없습니다. 관리자 그룹의 사용자를 허용하는 명시적 지원이 추가되었습니다.
 
-  다음을 참조하십시오 [AEM 6.1에 CRA 설치](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) 을 참조하십시오.
+  자세한 내용은 [AEM 6.1에 CRA 설치](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61)를 참조하십시오.
 
 * 요약 보고서에 표시되는 만료 타임스탬프가 잘못되었습니다.
 
