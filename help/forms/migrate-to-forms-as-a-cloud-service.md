@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ---
 
-# [!DNL AEM Forms](온-프레미스 및 AMS 환경)에서 {1 an as a Cloud Service}(으)로 마이그레이션[!DNL AEM Forms]  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
+# [!DNL AEM Forms](온-프레미스 및 AMS 환경)에서 1 an as a Cloud Service(으)로 마이그레이션[!DNL AEM Forms]  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
