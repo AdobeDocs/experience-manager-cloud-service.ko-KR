@@ -2,10 +2,10 @@
 title: OpenAPI 기능이 포함된 Dynamic Media
 description: OpenAPI 기능과 함께 Dynamic Media을 사용하는 이유 및 활성화 방법과 같은 주요 개념을 알아봅니다.
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+source-git-commit: 8cd8eb834b548a52d6a9e094cb2c4447f228ab0d
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 0%
+source-wordcount: '1061'
+ht-degree: 1%
 
 ---
 
@@ -117,6 +117,10 @@ AEM as a Cloud Service에서 OpenAPI 기능을 사용하는 Dynamic Media을 활
 </td>
 </table>
 <table>
+
+
+
+<table>
 <td>
    <a href="/help/assets/search-assets-api.md">
    <img alt="에셋 검색 Experience Manager Assets 저장소" src="./assets/search-assets-api-overview.png" />
@@ -156,5 +160,48 @@ AEM as a Cloud Service에서 OpenAPI 기능을 사용하는 Dynamic Media을 활
       <em> DAM 관리자 또는 브랜드 관리자는 AEM as a Cloud Service 작성자 인스턴스에서 승인된 자산에 대한 역할을 구성하여 액세스를 제한합니다.</em>
    </p>
 </td>
+
+</table>
+<table>
+<td>
+   <a href="/help/assets/integrate-remote-approved-assets-with-sites.md">
+   <img alt="원격 AEM Assets를 AEM Sites와 통합" src="./assets/connected-assets-rdam.png" />
+   </a>
+   <div>
+      <a href="/help/assets/integrate-remote-approved-assets-with-sites.md">
+      <strong>AEM Sites과 원격 AEM Assets 통합</strong>
+      </a>
+   </div>
+   <p>
+      <em>원격 AEM Assets을 AEM Sites 환경과 통합하는 방법을 알아봅니다. </em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/dynamic-media-open-apis-faqs.md">
+   <img alt="OpenAPI 기능이 포함된 Dynamic Media FAQ" src="./assets/dynamic-media-faqs.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/dynamic-media-open-apis-faqs.md">
+      <strong>OpenAPI 기능이 포함된 Dynamic Media FAQ</strong>
+      </a>
+   </div>
+   <p>
+      <em>OpenAPI 기능을 사용하여 가장 자주 묻는 Dynamic Media FAQ에 대한 응답을 가져옵니다.</em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/configure-custom-domain.md">
+   <img alt="사용자 정의 도메인 구성" src="./assets/configure-custom-domain.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/configure-custom-domain.md">
+      <strong>사용자 지정 도메인 구성</strong>
+      </a>
+   </div>
+   <p>
+      <em>AEM as a Cloud Service에 기본 도메인이 제공되면 필요에 따라 사용자 지정할 수 있습니다.</em>
+   </p>
+</td>
+
 </table>
 
