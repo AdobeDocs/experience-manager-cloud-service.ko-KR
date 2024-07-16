@@ -4,7 +4,7 @@ description: 콘텐츠 전송 도구를 시작하는 방법 알아보기
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 67bc538fe174034c05808d4a62c51c404dfaf38c
 workflow-type: tm+mt
 source-wordcount: '1362'
 ht-degree: 16%
@@ -88,7 +88,7 @@ SSL/TLS 연결 문제를 이해하는 것은 때때로 어려울 수 있습니�
 
    >[!NOTE]
    >
-   >Cloud Acceleration Manager의 프로젝트당 만료된 세트를 포함하여 최대 20개의 마이그레이션 세트를 만들 수 있습니다.
+   >Cloud Acceleration Manager의 프로젝트당 만료된 세트를 포함하여 최대 10개의 마이그레이션 세트를 만들 수 있습니다.
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
