@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
+source-git-commit: cf69db380097992ba8adfe1ac07b3ffa26217a07
 workflow-type: tm+mt
-source-wordcount: '5627'
+source-wordcount: '5735'
 ht-degree: 1%
 
 ---
@@ -193,7 +193,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
    * value: deps
 1. Click **[!UICONTROL Done]**. -->
 
-조건 기능에서 허용되는 여러 필드에 문제가 발생하면 다음과 같이 문제 해결 단계를 팔로우 합니다.
+조건 기능의 허용된 여러 필드에 문제가 발생하는 경우 문제 해결 단계를 다음과 같이 수행하십시오.
 
 1. 편집 모드로 양식을 엽니다.
 1. 콘텐츠 브라우저를 열고 적응형 양식의 **[!UICONTROL 안내서 컨테이너]** 구성 요소를 선택합니다.
@@ -900,6 +900,15 @@ In [!DNL Experience Manager Forms] versions prior to [!DNL Experience Manager 6.
 Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor. -->
 
 ## 규칙 예 {#example}
+
+### 기본 제공 기능을 사용하여 반복 가능한 패널에서 복잡한 계산 간소화
+
+규칙 편집기를 사용하면 반복 가능한 패널 내의 필드에서 Sum, Min, Max 및 Join과 같은 기본 함수를 바로 사용할 수 있습니다. 이렇게 하면 강력한 자동화가 잠금 해제되므로 사용자 지정 코드 없이 복잡한 비즈니스 논리를 구현할 수 있습니다.
+반복 가능한 패널이 있는 양식을 상상해 보십시오. 각 패널 인스턴스는 제품 수량과 같은 데이터를 수집할 수 있습니다. Sum 함수를 사용하여 모든 패널의 총 수량을 자동으로 계산할 수 있으므로 수동 계산과 잠재적 오류가 제거됩니다.
+
+![OOTB 함수에서 반복 가능한 패널 필드 지원](/help/forms/assets/ootb-function-support-repeatable-panel.png)
+
+이것은 단지 하나의 예입니다! 사용 가능한 [함수](#b-form-objects-and-functions-br)를 탐색하여 워크플로우를 간소화하고 양식 내에서 데이터 정확도를 향상시킵니다.
 
 ### 양식 데이터 모델 서비스 호출 {#invoke}
 
