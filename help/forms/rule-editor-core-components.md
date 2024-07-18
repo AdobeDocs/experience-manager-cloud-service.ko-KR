@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: cf69db380097992ba8adfe1ac07b3ffa26217a07
+source-git-commit: 46a6f413be2ba41df8ca72bd7751ec453ae438ec
 workflow-type: tm+mt
 source-wordcount: '5735'
 ht-degree: 1%
@@ -13,13 +13,13 @@ ht-degree: 1%
 ---
 
 
+# 적응형 양식에 규칙 추가(핵심 구성 요소) {#adaptive-forms-rule-editor}
+
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (핵심 구성 요소) | 이 문서 |
 | AEM as a Cloud Service(Foundation 구성 요소) | [여기 클릭](/help/forms/rule-editor.md) |
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
-
-# 적응형 양식에 규칙 추가(핵심 구성 요소) {#adaptive-forms-rule-editor}
 
 규칙 편집기 기능을 사용하면 forms 비즈니스 사용자 및 개발자가 적응형 양식 개체에 대한 규칙을 작성할 수 있습니다. 이러한 규칙은 양식에 대한 사전 설정 조건, 사용자 입력 및 사용자 작업을 기반으로 양식 개체에서 트리거하는 작업을 정의합니다. 정확성과 속도를 보장하는 양식 채우기 환경을 더욱 간소화하는 데 도움이 됩니다.
 
