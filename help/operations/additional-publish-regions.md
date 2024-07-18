@@ -4,12 +4,13 @@ description: AEM as a Cloud Service가 추가 게시 지역을 지원하여 가�
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: c7362a77fd929d812db3cd40bf01763ed3bef02c
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 78%
+source-wordcount: '663'
+ht-degree: 71%
 
 ---
+
 
 # 추가 게시 지역 {#additional-publish-regions}
 
@@ -22,7 +23,9 @@ AEM Sites로 설정된 프로그램에서 추가 게시 지역에 라이선스�
 
 >[!NOTE]
 >
->이 기능은 현재 AEM Sites에서만 사용할 수 있습니다. 샌드박스 프로그램에는 적용될 수 없습니다. 또한 추가 게시 영역 기능을 사용하려면 프로그램을 AEM 릴리스 버전 12142 이상으로 업데이트해야 합니다.
+>* 이 기능은 Sites 및 Forms 솔루션에 사용할 수 있습니다.
+>* 이 기능은 [샌드박스 프로그램에 적용할 수 없습니다.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+>* 이 기능을 사용하려면 프로그램을 AEM 릴리스 버전 12142 이상으로 업데이트해야 합니다.
 
 ## 사용 사례 {#use-cases}
 
@@ -57,7 +60,9 @@ AEM Sites로 설정된 프로그램에서 추가 게시 지역에 라이선스�
 
 추가 게시 지역 사용 고려 시 해당 제한 사항을 고려하십시오.
 
-* 추가 게시 지역은 AEM Sites에만 추가할 수 있습니다. 추가 게시 영역은 동일한 프로그램에 배포된 다른 AEM 솔루션 또는 관련 기능(예: AEM Forms 또는 Adobe Learning Manager)으로 확장되지 않습니다.
+* 추가 게시 영역은 AEM Sites 또는 AEM Forms에만 추가할 수 있습니다.
+   * 추가 게시 영역은 동일한 프로그램에 배포된 다른 AEM 솔루션 또는 관련 기능(예: AEM Assets 또는 Adobe Learning Manager)으로 확장되지 않습니다.
+   * 그러나 하나 이상의 사이트 또는 Forms 솔루션이 적용되는 한 이러한 솔루션을 프로그램에 추가할 수 있습니다.
 * 추가 지역은 관련 권한이 테넌트에 사용되지 않는 경우에만 추가할 수 있습니다.
 * 최대 세 개의 추가 게시 지역을 개별 환경에 추가할 수 있습니다.
 * 추가 지역은 프로덕션 프로그램에서만 사용할 수 있습니다. 샌드박스 프로그램에서는 기능을 사용할 수 없습니다.

@@ -4,7 +4,7 @@ description: AEM as a Cloud Service용 로깅을 사용하여 중앙 로깅 서�
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
+source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
 workflow-type: tm+mt
 source-wordcount: '2797'
 ht-degree: 8%
@@ -561,9 +561,9 @@ CDN 로그는 json 형식을 준수한다는 점에서 다른 로그와 구별�
 
 ### 추가 Publish 지역 로그 {#logs-for-additional-publish-regions}
 
-특정 환경에 대해 추가 Publish 지역이 활성화된 경우 위에서 언급한 대로 Cloud Manager에서 각 지역에 대한 로그를 다운로드할 수 있습니다.
+특정 환경에 대해 추가 게시 영역이 활성화된 경우 위에서 언급한 대로 Cloud Manager에서 각 영역에 대한 로그를 다운로드할 수 있습니다.
 
-추가 Publish 영역에 대한 AEM 로그 및 Dispatcher 로그는 아래 샘플에서 **nld2**(네덜란드에 있는 추가 AEM 게시 인스턴스 참조)로 예시된 대로 환경 ID 다음의 처음 3문자로 영역을 지정합니다.
+추가 게시 영역에 대한 AEM 로그 및 Dispatcher 로그는 아래 샘플에서 **nld2**(네덜란드에 있는 추가 AEM 게시 인스턴스 참조)로 예시된 대로 환경 ID 다음의 처음 3문자로 영역을 지정합니다.
 
 ```
 cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"

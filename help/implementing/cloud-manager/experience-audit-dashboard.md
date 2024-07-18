@@ -5,9 +5,9 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: c7362a77fd929d812db3cd40bf01763ed3bef02c
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1995'
 ht-degree: 8%
 
 ---
@@ -112,7 +112,7 @@ Cloud Manager에서 경험 감사를 사용할 수 있습니다.
 
 **가장 느린 페이지 보기**&#x200B;를 탭하거나 클릭하면 [감사하도록 구성된 가장 성과가 낮은 5개 페이지를 표시하는 **가장 느린 5개 페이지** 대화 상자가 열립니다.](#configuration)
 
-![가장 느린 5개](assets/experience-audit-slowest-five.jpg)
+![가장 느린 5개](assets/experience-audit-slowest-five.png)
 
 점수는 마지막 감사에서 각 지표의 편차와 함께 **성능**, **접근성**, **모범 사례**, **SEO**&#x200B;별로 분류됩니다.
 
@@ -166,7 +166,7 @@ Cloud Manager의 **보고서** 탭이 열려 **경험 감사**&#x200B;를 표시
 
 권장 사항에 대한 V자 버튼을 탭하거나 클릭하여 세부 정보를 표시합니다.
 
-![권장 사항 세부 정보](assets/experience-audit-recommendation-details.png)
+![권장 사항 세부 정보](assets/experience-audit-recommendations-details.png)
 
 사용 가능한 경우 확장된 권장 사항 세부 정보에는 가장 영향을 미치는 변경 사항에 집중할 수 있도록 권장 사항 영향의 백분율도 포함됩니다.
 
@@ -184,7 +184,7 @@ Cloud Manager의 **보고서** 탭이 열려 **경험 감사**&#x200B;를 표시
 
 ![페이지 결과](assets/experience-audit-page-results.png)
 
-**원시 보고서** 탭은 페이지의 모든 감사에 대한 점수를 제공합니다. 원시 데이터의 JSON 파일을 검색하려면 **다운로드** 아이콘을 탭하거나 클릭합니다.
+**원시 보고서** 탭은 페이지의 모든 감사에 대한 점수를 제공합니다. **Lighthouse 보고서** 열에서 보고서 날짜를 탭하거나 클릭하여 원시 데이터의 JSON 파일을 검색합니다.
 
 ![원시 보고서](assets/experience-audit-raw-reports.png)
 
@@ -200,6 +200,10 @@ Cloud Manager의 **보고서** 탭이 열려 **경험 감사**&#x200B;를 표시
 
 ![요청 시 검사](assets/experience-audit-on-demand.png)
 
+요청 시 검사가 이미 실행되고 있는 경우 **검사 실행** 단추를 사용할 수 없게 되고 시계 아이콘으로 배지가 지정됩니다.
+
+![요청 시 검사 실행 중](assets/experience-audit-on-demand-running.png)
+
 온디맨드 검사는 최신 25개의 [구성된 페이지](#configuration)에 대한 경험 감사를 트리거하고 일반적으로 몇 분 안에 끝납니다.
 
 완료되면 점수 차트가 자동으로 업데이트되며 파이프라인 실행 스캔과 정확히 동일한 결과를 검사할 수 있습니다.
@@ -214,15 +218,15 @@ Cloud Manager의 **보고서** 탭이 열려 **경험 감사**&#x200B;를 표시
 
 ## 경험 감사에 문제가 발생했습니다. {#issues}
 
-감사할 [페이지](#configuration)를 사용할 수 없는 경우 경험 감사에서 이를 반영합니다.
+감사하도록 구성한 [페이지](#configuration)를 사용할 수 없거나 감사에 다른 오류가 있는 경우 경험 감사에서 이를 반영합니다.
 
 파이프라인에 확장 가능한 오류 섹션이 표시되어 액세스할 수 없는 상대 URL 경로를 볼 수 있습니다.
 
 ![경험 감사에서 발생한 문제](assets/experience-audit-issues.jpg)
 
-전체 보고서를 보면 세부 정보가 **[경험 감사 검사 결과](#results)** 섹션에 표시됩니다.
+전체 보고서를 볼 경우 세부 정보는 **[경험 감사 검사 결과](#results)** 섹션에 표시되며 확장 가능합니다.
 
-![전체 보고서 문제](assets/experience-audit-issues-reports.jpeg)
+![전체 보고서 문제](assets/experience-audit-issues-report.png)
 
 페이지를 사용할 수 없는 몇 가지 이유는 다음과 같습니다.
 
@@ -253,8 +257,7 @@ Cloud Manager의 **보고서** 탭이 열려 **경험 감사**&#x200B;를 표시
 
 다음 세부 정보는 경험 감사가 사이트를 평가하는 방법에 대한 추가 정보를 제공합니다. 이 기능은 기능의 일반적인 사용에 필요하지 않으며, 완결성을 위해 여기에 제공됩니다.
 
-* [구성된 경험 감사 페이지 경로](#configuration)이(가) 게시자의 `.com` 도메인을 표시하지만, 감사에서는 원본(`.net`) 도메인을 검사하여 개발 중에 발생한 문제를 감지합니다.
-   * `.com` 도메인이 CDN을 사용하므로 더 나은 점수를 얻거나 캐시된 결과를 포함할 수 있습니다.
+* 감사는 게시자의 [구성된 경험 감사 페이지 경로](#configuration)에 정의된 원본(`.com`) 도메인을 검사하여 실제 사용자 경험을 보다 정확하게 시뮬레이션하고 웹 사이트 관리 및 최적화에 대해 보다 현명한 결정을 내리는 데 도움이 됩니다.
 * 프로덕션 전체 스택 파이프라인에서 스테이징 환경을 스캔합니다.
    * 감사 시 감사 시 관련 세부 정보를 제공하려면 스테이징 환경의 콘텐츠가 프로덕션 환경에 최대한 가깝어야 합니다.
 * [**페이지 점수 - 트렌드** 섹션](#trend)의 **선택** 드롭다운에 표시된 페이지는 모두 경험 감사에서 과거에 검사한 알려진 페이지입니다.

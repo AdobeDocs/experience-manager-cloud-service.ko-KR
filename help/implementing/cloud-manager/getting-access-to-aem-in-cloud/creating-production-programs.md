@@ -5,9 +5,9 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1040'
 ht-degree: 34%
 
 ---
@@ -87,7 +87,7 @@ Adobe HIPAA 준수 및 WAF(Web Application Firewall)는 취약점으로부터 �
 
 필요한 권한이 있는 경우 **SLA** 탭이 **프로덕션 설정** 대화 상자에서 두 번째 또는 세 번째 탭으로 표시됩니다.
 
-AEM Sites은 표준 99.9% SLA(서비스 수준 계약)를 제공합니다. **99.99% 서비스 수준 계약** 옵션을 사용하면 프로덕션 환경에서 99.99%의 최소 가동 시간 비율을 사용할 수 있습니다.
+AEM Sites과 Forms은 표준 99.9% SLA(서비스 수준 계약)를 제공합니다. **99.99% 서비스 수준 계약** 옵션을 사용하면 사이트 및/또는 Forms의 프로덕션 환경에서 99.99%의 최소 가동 시간 비율을 사용할 수 있습니다.
 
 99.99%의 SLA는 높은 가용성과 낮은 지연 시간을 포함한 이점을 제공하며 [추가 게시 영역](/help/implementing/cloud-manager/manage-environments.md#multiple-regions)을(를) 프로그램의 프로덕션 환경에 적용해야 합니다.
 
@@ -105,7 +105,7 @@ AEM Sites은 표준 99.9% SLA(서비스 수준 계약)를 제공합니다. **99.
 * 99.99% SLA 및 보고가 활성화되려면 [프로덕션/스테이징 환경](/help/implementing/cloud-manager/manage-environments.md#adding-environments)이(가) 만들어져야 하며 프로덕션/스테이징 환경에 하나 이상의 추가 게시 영역이 적용되어야 합니다.
    * [고급 네트워킹을 사용하는 경우](/help/security/configuring-advanced-networking.md)지역 오류 발생 시 연결이 유지되도록 [새 환경에 여러 Publish 지역 추가](/help/implementing/cloud-manager/manage-environments.md#adding-regions) 문서에 권장 사항이 있는지 확인하십시오.
 * 하나 이상의 추가 게시 영역은 99.99% SLA 프로그램에 유지되어야 합니다. 사용자는 99.99% SLA 프로그램에서 마지막 추가 게시 영역을 삭제할 수 없습니다.
-* Sites 솔루션이 활성화된 프로덕션 프로그램에 대해서는 99.99%의 SLA가 지원됩니다.
+* 사이트 또는 Forms 솔루션이 활성화된 프로덕션 프로그램에 대해서는 99.99%의 SLA가 지원됩니다.
 * 99.99% SLA를 활성화(또는 프로그램 편집 시 비활성화)하려면 [전체 스택 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)을(를) 실행해야 합니다.
 
 ## 프로그램 액세스 {#accessing}

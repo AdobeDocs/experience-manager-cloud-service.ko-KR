@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ceaa3b075953e9bdbcc0ae8c47106150be9a52d7
+source-git-commit: 51fa6e0fe56b1d5f0d8ada6bd2335175d603bc8c
 workflow-type: tm+mt
-source-wordcount: '4482'
-ht-degree: 88%
+source-wordcount: '4513'
+ht-degree: 87%
 
 ---
 
@@ -1267,3 +1267,12 @@ AEM Cloud Service에서는 분석기에서 이름이 잘못된 토큰라이저�
 >[!WARNING]
 >
 >[Cloud Manager 2024년 8월 릴리스](/help/implementing/cloud-manager/release-notes/current.md)부터 파이프라인에 장애가 발생하므로 가능한 한 빨리 이 문제를 해결해야 합니다.
+
+### 색인 정의 구성에 공백이 없어야 합니다. {#oakpal-indexing-definitions-spaces}
+
+* **키**: PathSpacesCheck
+* **유형**: 개선
+* **심각도**: 사소
+* **이후**: 버전 2024.7.0
+
+AEM Cloud Service에서는 공백이 있는 속성이 포함된 인덱싱 정의를 만들 수 없습니다.

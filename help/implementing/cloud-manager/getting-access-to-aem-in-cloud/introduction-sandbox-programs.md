@@ -5,10 +5,10 @@ exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 98%
+source-wordcount: '488'
+ht-degree: 90%
 
 ---
 
@@ -48,7 +48,15 @@ ht-degree: 98%
 
 ### 사용자 정의 도메인 또는 IP 허용 목록 없음 {#ip-allow}
 
-샌드박스 프로그램에서는 사용자 정의 도메인 및 IP 허용 목록을 사용할 수 없습니다.
+[사용자 지정 도메인](/help/implementing/cloud-manager/custom-domain-names/introduction.md) 및 [IP 허용 목록](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)은(는) 샌드박스 프로그램에서 사용할 수 없습니다.
+
+### 추가 Publish 지역 없음 {#additional-publish-regions}
+
+[추가 게시 영역](/help/operations/additional-publish-regions.md)은(는) 샌드박스 프로그램에서 사용할 수 없습니다.
+
+### 99.99% SLA 없음 {#999-sla}
+
+[99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)은(는) 샌드박스 프로그램에 적용되지 않습니다.
 
 ### 고급 네트워킹 없음 {#advanced-networking}
 
