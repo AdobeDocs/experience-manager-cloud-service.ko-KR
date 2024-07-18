@@ -4,7 +4,7 @@ description: 웹 애플리케이션 방화벽(WAF)이 포함된 트래픽 필터
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 23d532f70e031608855bb9fc768aae5398c81e0f
+source-git-commit: b8fc132e7871a488cad99440d320e72cd8c31972
 workflow-type: tm+mt
 source-wordcount: '3938'
 ht-degree: 96%
@@ -530,7 +530,7 @@ data:
 
 이 임계값이 충족되면 Adobe에서 해당 IP 주소의 트래픽을 차단하지만, 더 낮은 임계값에서 트래픽 스파이크를 차단하도록 속도 제한 트래픽 필터 규칙을 구성하는 등 원본을 보호하기 위한 추가 조치를 취하는 것이 좋습니다. 단계별 안내는 [트래픽 규칙을 사용하여 DoS 및 DDoS 공격 차단 튜토리얼](#tutorial-blocking-DDoS-with-rules)을 참조하십시오.
 
-이 경고는 기본적으로 활성화되어 있지만 false로 설정된 *enable_ddos_alerts* 속성을 사용하여 비활성화할 수 있습니다. 경고가 트리거되면 다음 날(UTC)까지 다시 실행되지 않습니다.
+이 경고는 기본적으로 활성화되어 있지만 false로 설정된 *defaultTrafficAlerts* 속성을 사용하여 비활성화할 수 있습니다. 경고가 트리거되면 다음 날(UTC)까지 다시 실행되지 않습니다.
 
 ```
 kind: "CDN"
@@ -539,7 +539,7 @@ metadata:
   envTypes: ["dev"]
 data:
   trafficFilters:
-    enable_ddos_alerts: false
+   defaultTrafficAlerts: false
 ```
 
 ## CDN 로그 {#cdn-logs}
