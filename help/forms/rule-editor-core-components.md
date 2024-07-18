@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 46a6f413be2ba41df8ca72bd7751ec453ae438ec
+source-git-commit: a9596774326d5756477c0a44c2715fc5c3561e2a
 workflow-type: tm+mt
-source-wordcount: '5735'
+source-wordcount: '5787'
 ht-degree: 1%
 
 ---
@@ -904,9 +904,17 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 ### 기본 제공 기능을 사용하여 반복 가능한 패널에서 복잡한 계산 간소화
 
 규칙 편집기를 사용하면 반복 가능한 패널 내의 필드에서 Sum, Min, Max 및 Join과 같은 기본 함수를 바로 사용할 수 있습니다. 이렇게 하면 강력한 자동화가 잠금 해제되므로 사용자 지정 코드 없이 복잡한 비즈니스 논리를 구현할 수 있습니다.
-반복 가능한 패널이 있는 양식을 상상해 보십시오. 각 패널 인스턴스는 제품 수량과 같은 데이터를 수집할 수 있습니다. Sum 함수를 사용하여 모든 패널의 총 수량을 자동으로 계산할 수 있으므로 수동 계산과 잠재적 오류가 제거됩니다.
+각 패널 인스턴스가 자산의 선언된 값에 대한 정보를 수집하는 반복 가능한 패널이 있는 양식을 상상해 보십시오.
+
+![반복 가능한 양식](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
+
+`Sum` 함수를 사용하여 모든 패널에서 총 에셋 값을 자동으로 계산할 수 있으므로 수동으로 계산할 필요가 없고 오류가 발생할 가능성이 줄어듭니다.
 
 ![OOTB 함수에서 반복 가능한 패널 필드 지원](/help/forms/assets/ootb-function-support-repeatable-panel.png)
+
+에셋 값을 선언할 인스턴스를 추가하여 양식을 작성할 때 `Calculate Asset Value` 단추는 선언된 모든 에셋 값의 총 합계를 계산하고 그 결과를 `assetvalue` 텍스트 상자에 표시합니다.
+
+![OOTB 함수에서 반복 가능한 패널 필드 지원](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
 
 이것은 단지 하나의 예입니다! 사용 가능한 [함수](#b-form-objects-and-functions-br)를 탐색하여 워크플로우를 간소화하고 양식 내에서 데이터 정확도를 향상시킵니다.
 
