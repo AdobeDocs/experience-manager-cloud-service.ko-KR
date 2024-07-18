@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 445d15c1449b968325c77becce8b0a547ba151d6
+source-git-commit: 544fa6be686071275abd34a76f785c89b5ac3ed9
 workflow-type: tm+mt
-source-wordcount: '1941'
-ht-degree: 99%
+source-wordcount: '1965'
+ht-degree: 98%
 
 ---
 
@@ -32,13 +32,11 @@ ht-degree: 99%
 
 [ 여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
 
-<!--  ## Release Video {#release-video}
+## 릴리스 비디오 {#release-video}
 
-Have a look at the June 2024 Release Overview video for a summary of the features added in the 2024.6.0 release:
+2024년 6월 릴리스 개요 비디오를 통해 2024.6.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429503?quality=12)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3430779?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -252,4 +250,4 @@ AEM 6.5와 유사하게 Apache/Dispatcher는 게시 저장소의 특정 위치�
 
 ## Experience Cloud 릴리스 정보 {#experience-cloud}
 
-다른 Experience Cloud 응용 프로그램의 릴리스에 대한 정보는 [여기](https://experienceleague.adobe.com/ko/docs/release-notes/experience-cloud/current)에서 확인할 수 있습니다.
+다른 Experience Cloud 응용 프로그램의 릴리스에 대한 정보는 [여기](https://experienceleague.adobe.com/kr/docs/release-notes/experience-cloud/current)에서 확인할 수 있습니다.
