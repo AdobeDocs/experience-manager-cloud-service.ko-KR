@@ -5,10 +5,10 @@ contentOwner: KK
 role: Admin,User
 feature: Selectors
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: d12aba19a8f166afcaa071478c1cb6d995010cd8
+source-git-commit: 61647c0f190c7c71462f034a131f5a7c13fd7162
 workflow-type: tm+mt
-source-wordcount: '4725'
-ht-degree: 36%
+source-wordcount: '4871'
+ht-degree: 35%
 
 ---
 
@@ -812,6 +812,60 @@ interface SelectedAsset {
 | *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].height>* | 숫자 | 렌디션의 높이입니다. |
 
 전체 속성 목록과 자세한 예를 보려면 [자산 선택기 코드 예](https://github.com/adobe/aem-assets-selectors-mfe-examples)를 방문하십시오.
+
+### 상황별 호출 필터{#contextual-invocation-filter}
+
+자산 선택기를 사용하여 태그 선택기 필터를 추가할 수 있습니다. 모든 관련 태그를 특정 태그 그룹에 결합하는 태그 그룹을 지원합니다. 또한 찾고 있는 자산에 해당하는 추가 태그를 선택할 수 있습니다. 또한 사용자가 주로 사용하는 상황별 호출 필터 아래에 기본 태그 그룹을 설정하여 이동 중에 액세스할 수도 있습니다.
+
+> 
+>
+> * 검색에서 태그 지정 필터를 활성화하려면 상황별 호출 코드 조각을 추가해야 합니다.
+> * 태그 그룹 형식 `(property=xcm:keywords.id=)`에 해당하는 이름 속성을 사용해야 합니다.
+
+구문:
+
+```
+const filterSchema=useMemo(() => {
+    return: [
+        {
+            element: 'taggroup',
+            name: 'property=xcm:keywords.id='
+        },
+    ];
+}, []);
+```
+
+필터 패널에서 태그 그룹을 추가하려면 기본적으로 하나 이상의 태그 그룹을 추가해야 합니다. 또한 아래 코드 조각을 사용하여 태그 그룹에서 미리 선택된 기본 태그를 추가하십시오.
+
+```
+export const WithAssetTags = (props) = {
+const [selectedTags, setSelectedTags] = useState (
+new Set(['orientation', 'color', 'facebook', 'experience-fragments:', 'dam', 'monochrome'])
+const handleSelectTags = (selected) => {
+setSelectedTags (new Set (selected)) ;
+};
+const filterSchema = useMemo ((); => {
+    return {
+        schema: [
+            ｛
+                fields: [
+                    {
+                    element: 'checkbox', 
+                    name: 'property=xcm:keywords=', 
+                    defaultValue: Array. from(selectedTags), 
+                    options: assetTags, 
+                    orientation: 'vertical',
+                    },
+                ],
+    header: 'Asset Tags', 
+    groupkey: 'AssetTagsGroup',
+        ],
+    },
+｝；
+}, [selectedTags]);
+```
+
+![태그 그룹 필터](assets/tag-group.gif)
 
 ## 오브젝트 스키마를 사용한 자산 선택 처리 {#handling-selection}
 
