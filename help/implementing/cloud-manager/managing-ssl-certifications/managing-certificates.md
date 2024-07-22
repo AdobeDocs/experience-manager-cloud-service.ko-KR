@@ -5,9 +5,9 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 35ac4cfb18e348281d2b126bdc3b292c84590f3a
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '649'
 ht-degree: 71%
 
 ---
@@ -39,7 +39,9 @@ SSL 인증서 페이지에서 SSL 인증서의 상태에 대한 개요를 파악
 1. **환경** 화면에서 **SSL 인증서** 화면으로 이동합니다.
 1. 프로그램에 성공적으로 설치된 각 SSL 인증서에 대한 행이 있는 표를 볼 수 있습니다. 업데이트하려는 인증서 행의 맨 오른쪽 끝에 있는 줄임표 버튼을 클릭하고 **보기 및 업데이트**&#x200B;를 선택합니다.
 1. 인증서 세부 정보가 표시되고 업데이트할 수 있습니다.
-1. 파이프라인을 실행하여 업데이트된 인증서를 배포합니다.
+1. 변경 사항을 저장합니다.
+
+변경 사항을 저장하면 자동으로 적용됩니다.
 
 >[!NOTE]
 >
