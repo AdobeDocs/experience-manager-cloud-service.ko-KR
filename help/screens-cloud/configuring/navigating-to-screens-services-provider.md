@@ -4,7 +4,7 @@ description: 이 페이지에서는 Screens 서비스 공급자로 이동하는 
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: f91166ca0349636386aa8721ded5b3bbda1cdb51
+source-git-commit: ea374f6e521d3b94d1d38af5c8f6780275ae2cb4
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 4%
@@ -52,38 +52,36 @@ Screens 서비스 공급자를 설정하려면 아래 단계를 따르십시오.
 화이트리스트에 추가해야 하는 IP도 구성 파일로 이동하고 Cloud Manager 설정에서 [적용 취소](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list)해야 합니다.
 
    ![이미지](/help/screens-cloud/assets/configure/configure-screens20.png)
-
 AEM CDN 구성에서 동일한 키를 구성해야 합니다.  헤더 값을 GITHub에 직접 입력하지 않고 [비밀 참조](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication#rotating-secrets)를 사용하는 것이 좋습니다.
 샘플 [CDN 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)은(는) 아래에 제공됩니다.
+종류: &quot;CDN&quot;
+버전: &quot;1&quot;
+메타데이터:
+envTypes: [&quot;dev&quot;, &quot;stage&quot;, &quot;prod&quot;]
+데이터:
+트래픽 필터:
+규칙:
+- 이름: &quot;block-request-from-not-allowed-ips&quot;
+시기:
+모두:
+- reqProperty: clientIp
+notIn: [&quot;101.41.112.0/24&quot;]
+- reqProperty: 계층
+다음과 같음: 게시
+작업: 차단
+- 이름: &quot;allow-requests-with-header&quot;
+시기:
+모두:
+- reqProperty: 계층
+다음과 같음: 게시
+- reqProperty: 경로
+다음과 같음: /screens/channels.json
+허용 목록에 추가하다 - reqHeader: x-screens-key
+다음과 같음: ${\
+   {CDN_HEADER_KEY}
+작업:
+유형: 허용
 
-허용 목록에 추가하다     종류: &quot;CDN&quot;
-    버전: &quot;1&quot;
-    메타데이터:
-    envTypes: [&quot;dev&quot;, &quot;stage&quot;, &quot;prod&quot;]
-    데이터:
-    trafficFilters:
-    규칙:
-    - 이름: &quot;block-request-from-not-allowed-ips&quot;
-    when:
-    allOf:
-    - reqProperty: clientIp
-    notIn: [&quot;101.41.112.0/24&quot;]
-    - reqProperty: tier
-    equals: publish
-    action: block
-    - 이름: &quot;allow-requests-with-header&quot;
-    when:
-    all8}- 속성: tier
-    equals: publish
-    - reqProperty: path
-    equals: /screens/channels.json
-    - reqHeader: x-screens-key
-    equals: ${\
-    {CDN_HEADER_KEY}
-    action:
-    type: allow
-
-    
 1. 왼쪽 탐색 모음에서 **채널**&#x200B;을 선택하고 **콘텐츠 공급자에서 열기**&#x200B;를 클릭합니다.
 
    ![이미지](/help/screens-cloud/assets/configure/configure-screens1.png)
@@ -91,6 +89,10 @@ AEM CDN 구성에서 동일한 키를 구성해야 합니다.  헤더 값을 GIT
 1. Screens 콘텐츠 공급자는 콘텐츠를 만들 수 있는 다른 탭에서 열립니다.
 
    ![이미지](/help/screens-cloud/assets/configure/configure-screens2.png)
+
+
+
+
 
 ## 다음 단계 {#whats-next}
 
