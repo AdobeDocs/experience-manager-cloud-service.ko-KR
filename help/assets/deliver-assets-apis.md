@@ -2,7 +2,7 @@
 title: 게재 API
 description: 배달 API를 사용하는 방법을 알아봅니다.
 role: User
-source-git-commit: 6fdc44b93e11a20b6859419813fd7eadbefd95c1
+source-git-commit: deae260ce34a0801ee534ddadfb14823ef461a87
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Experience Manager 에셋 저장소에서 사용할 수 있는 [승인된 에셋
 
 | 배달 API | 설명 |
 |---|---|
-| [요청된 출력 형식의 자산에 대한 웹에 최적화된 이진 표현](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) | 요청에서 보낸 에셋 ID를 기반으로 요청된 출력 형식으로 에셋의 웹에 최적화된 이진 표현을 반환합니다. 또한 폭, 높이, 회전, 뒤집기, 품질, 자르기, 형식 및 [스마트 자르기](/help/assets/dynamic-media/image-profiles.md)와 같은 다양한 이미지 수정자를 정의할 수 있습니다. 지원되는 형식 및 이미지 수정자에 대해서는 [API 세부 정보](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/getAssetSeoFormat)를 참조하십시오.<br>Adobe은 모든 이미지 형식 유형에 이 API를 사용할 것을 권장합니다. |
+| [요청된 출력 형식의 자산에 대한 웹에 최적화된 이진 표현](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) | 요청에서 보낸 에셋 ID를 기반으로 요청된 출력 형식으로 에셋의 웹에 최적화된 이진 표현을 반환합니다. 또한 폭, 높이, 회전, 뒤집기, 품질, 자르기, 형식 및 [스마트 자르기](/help/assets/dynamic-media/image-profiles.md)와 같은 다양한 이미지 수정자를 정의할 수 있습니다. 지원되는 형식 및 이미지 수정자에 대해서는 [API 세부 정보](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat)를 참조하십시오.<br>Adobe은 모든 이미지 형식 유형에 이 API를 사용할 것을 권장합니다. |
 | [에셋의 웹에 최적화된 이진 표시](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAsset) | 응답에서 반환된 에셋의 웹에 최적화된 이진 표현에 기본값을 적용하는 편의 API입니다. 기본값에는 표준 JPEG/WEBP 형식, 품질 => 65, 너비 => 1024가 포함됩니다. |
 | [자산의 원본 업로드된 이진 파일](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetOriginal) | 에셋에 대해 원래 업로드된 바이너리를 반환합니다. Adobe은 문서 형식 유형 및 SVG 이미지에 이 API를 사용하는 것을 권장합니다. |
 | [AEM Assets 작성 환경에서 사용할 수 있는 자산의 미리 생성된 렌디션](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetRendition) | 요청에서 전송된 자산 ID 및 렌디션 이름을 기반으로 AEM Assets 작성 환경에서 사용할 수 있는 자산 렌디션의 비트스트림을 반환합니다. |
