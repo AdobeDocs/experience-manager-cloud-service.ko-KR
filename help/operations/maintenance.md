@@ -4,9 +4,9 @@ description: AEM as a Cloud Service의 유지 관리 작업과 이를 구성하�
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: b8bed4acf895f1cf04ea92ae27b87c7bfb38863d
+source-git-commit: b0e72f0eee0f20b19b0d9c4317a061855ffd4f62
 workflow-type: tm+mt
-source-wordcount: '2110'
+source-wordcount: '2107'
 ht-degree: 30%
 
 ---
@@ -84,7 +84,7 @@ ht-degree: 30%
     <td>고객</td>
     <td>
     <p>git에서 수행해야 합니다. <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> 또는 <code>granite_monthly</code> 폴더 아래에 속성을 만들어 <code>/libs</code>에서 기본 제공 유지 관리 창 구성 노드를 재정의합니다. 추가적인 구성 세부 정보는 아래의 유지 관리 창 표를 참조하십시오.</p>
-    <p>적절한 속성을 사용해 위 노드 아래에서 또 다른 노드를 추가하여(<code>granite_ProjectPurgeTask</code>로 이름 지정) 유지 관리 작업을 활성화합니다. **Adobe 프로젝트 제거 구성** 아래의 [OSGI 속성](/help/implementing/deploying/configuring-osgi.md) 목록을 참조하십시오.</p>
+    <p>적절한 속성을 사용해 위 노드 아래에서 또 다른 노드를 추가하여(<code>granite_ProjectPurgeTask</code>로 이름 지정) 유지 관리 작업을 활성화합니다. <b>Adobe 프로젝트 제거 구성</b>에 대한 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">OSGi 속성</a> 목록을 참조하십시오.</p>
   </td>
   </tr>
   </tbody>
