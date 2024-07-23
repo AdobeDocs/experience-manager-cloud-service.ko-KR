@@ -1,8 +1,8 @@
 ---
-source-git-commit: 2acaafab86c0552e63e7b38b2a774c3c6afd6f9c
+source-git-commit: a35556164ace2245577c3e22da1bc276fc3d98d0
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 86%
+source-wordcount: '656'
+ht-degree: 74%
 
 ---
 # 스니펫 {#snippets}
@@ -117,3 +117,13 @@ ht-degree: 86%
   <table>
   </tbody>
 
+## 규칙 편집기 참조 {#see-also-rule-editor}
+
+* [핵심 구성 요소를 기반으로 하는 적응형 Forms을 위한 규칙 편집기 소개](/help/forms/rule-editor-core-components.md)
+* [핵심 구성 요소를 기반으로 하는 적응형 양식의 규칙 편집기에서 연산자 유형 및 이벤트](/help/forms/rule-editor-core-components-events-operators.md)
+* [핵심 구성 요소 기반 적응형 Forms을 위한 규칙 편집기 사용자 인터페이스](/help/forms/rule-editor-core-components-user-interface.md)
+* [핵심 구성 요소를 기반으로 하는 적응형 양식에 대한 규칙 편집기의 다양한 사용 사례](/help/forms/rule-editor-core-components-user-interface.md)
+* [규칙 편집기의 다양한 버전 차이점](/help/forms/rule-editor-core-components-difference-tables.md)
+* [핵심 구성 요소를 기반으로 하는 적응형 Forms을 위한 맞춤형 기능 소개](/help/forms/create-and-use-custom-functions.md)
+* [핵심 구성 요소를 기반으로 적응형 양식에 대한 사용자 지정 기능 만들기](/help/forms/custom-function-core-component-create-function.md)
+* [사용자 지정 함수 개발 및 사용의 예](/help/forms/custom-function-core-components-use-cases.md)

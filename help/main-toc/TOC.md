@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2814a61976d1815e0f0deff2e35ccad4731cfb09
+source-git-commit: 11624bc35020247494e3ae66c9601c1da505c8bf
 workflow-type: tm+mt
-source-wordcount: '5160'
-ht-degree: 100%
+source-wordcount: '5265'
+ht-degree: 97%
 
 ---
 
@@ -692,13 +692,21 @@ ht-degree: 100%
             + [적응형 양식에서 Turnstile 사용](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [적응형 양식에서 사용자 정의 오류 핸들러 추가](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [핵심 구성 요소 기반 적응형 양식의 로케일 추가](/help/forms/supporting-new-language-localization-core-components.md)
-            + [사용자 정의 함수 만들기 및 사용](/help/forms/create-and-use-custom-functions.md)
-            + [핵심 구성 요소 기반 적응형 양식에 규칙 추가](/help/forms/rule-editor-core-components.md)
             + [적응형 양식에 대한 JSON 스키마 디자인(핵심 구성 요소)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [적응형 양식에 버전 관리, 댓글 및 주석 추가](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [적응형 양식 비교](/help/forms/compare-forms.md)
             + [마이그레이션 유틸리티 도구를 사용하여 기초 구성 요소 기반 적응형 양식을 핵심 구성 요소 기반 양식으로 변환](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [적응형 양식을 초안으로 저장](/help/forms/save-core-component-based-form-as-draft.md)
+            + 핵심 구성 요소를 기반으로 하는 적응형 Forms용 규칙 편집기 소개{#rule-editor-core-components}
+               + [핵심 구성 요소를 기반으로 하는 적응형 Forms을 위한 규칙 편집기 소개](/help/forms/rule-editor-core-components.md)
+               + [핵심 구성 요소 기반 적응형 Forms을 위한 규칙 편집기 사용자 인터페이스](/help/forms/rule-editor-core-components-user-interface.md)
+               + [기초 규칙 편집기와 핵심 구성 요소 규칙 편집기의 차이점](/help/forms/rule-editor-core-components-difference-tables.md)
+               + [핵심 구성 요소를 기반으로 하는 적응형 양식에 대해 규칙 편집기에서 사용할 수 있는 연산자 및 이벤트 유형](/help/forms/rule-editor-core-components-events-operators.md)
+               + [핵심 구성 요소를 기반으로 하는 적응형 양식용 규칙 편집기의 예](/help/forms/rule-editor-core-components-usecases.md)
+            + 핵심 구성 요소를 기반으로 하는 적응형 Forms을 위한 사용자 지정 기능 소개{#create-and-use-custom-function-core-component}
+               + [핵심 구성 요소를 기반으로 하는 적응형 Forms을 위한 맞춤형 기능 소개](/help/forms/create-and-use-custom-functions.md)
+               + [핵심 구성 요소를 기반으로 적응형 양식에 대한 사용자 지정 기능 만들기 및 사용](/help/forms/custom-function-core-component-create-function.md)
+               + [핵심 구성 요소를 기반으로 하는 적응형 양식에 대한 사용자 지정 기능의 예](/help/forms/custom-function-core-components-use-cases.md)
       + 기초 구성 요소 {#authoring-adaptive-forms-foundation-components}
          + PDF 양식을 적응형 양식으로 변환 {#afcs}
             + [자동 양식 전환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ko-KR)
