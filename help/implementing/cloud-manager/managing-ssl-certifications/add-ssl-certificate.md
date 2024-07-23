@@ -5,10 +5,10 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 07696086644d52199bada102e9aee163d868c9c0
+source-git-commit: 83c9c6a974b427317aa2f83a3092d0775aac1d53
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 73%
+source-wordcount: '598'
+ht-degree: 82%
 
 ---
 
@@ -63,14 +63,6 @@ Cloud Manager를 사용하여 인증서를 추가하려면 다음 단계를 수�
 ## 인증서 오류 {#certificate-errors}
 
 인증서가 제대로 설치되지 않았거나 Cloud Manager의 요구 사항을 충족하지 않으면 특정 오류가 발생할 수 있습니다.
-
-### 올바른 선 서식 지정 확인 {#line-formatting}
-
-**인증서**, **개인 키** 및 **인증서 체인**&#x200B;의 값을 붙여넣을 때 새 줄은 BEGIN CERTIFICATE 이후와 END CERTIFICATE 이전이어야 합니다. 즉, 붙여넣은 값은 다음과 같이 생성되어야 합니다.
-
-* `-----BEGIN CERTIFICATE-----`은(는) 자신의 줄에 표시되어야 합니다.
-* `-----END CERTIFICATE-----`은(는) 자신의 줄에 표시되어야 합니다.
-* 인증서 콘텐츠는 `-----BEGIN CERTIFICATE-----`에서 `-----END CERTIFICATE-----` 사이에 새 줄 없이 **하나의 긴 문자열로 나타나야 합니다**.
 
 ### 클라이언트 인증서 제거 {#client-certificates}
 
