@@ -1,18 +1,18 @@
 ---
-title: Edge Delivery Services용 콘텐츠 작성
+title: Edge Delivery Services을 위한 WYSIWYG 컨텐츠 작성
 description: Edge Delivery Services를 통한 콘텐츠 작성 방법과 Edge Delivery Services를 사용한 AEM 콘텐츠 작성 방법을 알아보십시오.
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: f0cb108c620a31c4f8a48f1d2530860ca01b06c3
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 85%
+source-wordcount: '448'
+ht-degree: 69%
 
 ---
 
 
-# Edge Delivery Services용 콘텐츠 작성 {#authoring-edge}
+# Edge Delivery Services을 위한 WYSIWYG 컨텐츠 작성 {#authoring-edge}
 
 Edge Delivery Services를 사용하여 쉽고, 빠르고, 유연하게 콘텐츠를 작성할 수 있습니다. Edge Delivery Services용 콘텐츠를 작성하기 위한 두 가지 옵션이 있습니다.
 
@@ -25,7 +25,7 @@ AEM as a Cloud Service와 함께 Edge Delivery Services를 사용할 때 이해�
 
 ![Edge Delivery Services에서 WYSIWYG 작성이 작동하는 방식](assets/how-aem-edge-works.png)
 
-1. [WYSIWYG 작성 환경](/help/sites-cloud/authoring/quick-start.md)은(는) 새 페이지, 경험 조각, 콘텐츠 조각 등을 만드는 등 콘텐츠 관리에 사용됩니다.
+1. [AEM Sites 환경](/help/sites-cloud/authoring/quick-start.md)은(는) 새 페이지, 경험 조각, 콘텐츠 조각 등을 만드는 등 콘텐츠 관리에 사용됩니다.
    * 워크플로, MSM, 번역, 실행 등의 모든 AEM 기능을 사용할 수 있습니다.
 1. [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)는 AEM에서 관리되는 콘텐츠를 작성하는 데 사용됩니다.
    * Universal Editor는 콘텐츠 작성을 위한 새로운 최신 UI를 제공합니다.
@@ -52,9 +52,8 @@ Universal Editor를 사용하여 작성하는 방법에 대한 자세한 내용�
 
 AEM 및 Edge Delivery Services을 사용하여 프로젝트를 직접 작성하는 방법에 대해 알아보려면 [Edge Delivery Services을 사용하여 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)를 참조하십시오.
 
-## 문서 기반 작성  {#document-based}
+## 추가 작성 방법  {#authoring-methods}
 
-문서 기반 작성을 사용하는 경우, Microsoft Word 및 Google Docs 문서 등 다양한 소스로 작업할 수 있습니다. 이러한 소스의 문서는 웹 사이트의 페이지가 됩니다. 제목, 목록, 이미지, 글꼴 요소 및 비디오는 모두 초기 소스에서 내 웹 사이트로 전송할 수 있습니다. SEO 용도로 메타데이터를 추가하거나 블록을 사용하여 구조화된 콘텐츠로 작업하고 기능을 추가할 수 있습니다.
+WYSIWYG 작성은 콘텐츠 작성자를 위한 강력하고 직관적인 도구입니다. 하지만 작성 사용 사례는 매우 다양하므로 AEM에서 추가 작성 솔루션을 제공합니다.
 
-문서 기반 작성에 대한 자세한 내용은 [Edge Delivery Services 설명서의 이 문서](/help/edge/docs/authoring.md)를 참조하십시오.
-
+문서 기반 작성 및 Headless를 포함하여 AEM에서 제공하는 작성 솔루션에 대한 자세한 내용은 [작성 방법 선택](/help/edge/authoring-methods.md) 문서를 참조하십시오.
