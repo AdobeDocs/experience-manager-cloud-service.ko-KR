@@ -2,7 +2,8 @@
 title: Experience Manager에서 에셋 전달 제한
 description: ' [!DNL Experience Manager]에서 에셋 전달을 제한하는 방법에 대해 알아봅니다.'
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
+source-git-commit: 16b313a4fb79f915613044d12d29e618209113ec
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 0%
@@ -19,7 +20,7 @@ Experience Manager의 중앙 자산 거버넌스를 사용하면 DAM 관리자 �
 
 ## IMS 토큰을 사용한 제한된 게재 {#restrict-delivery-ims-token}
 
-Experience Manager 시 IMS를 통한 제한된 전달에는 두 가지 주요 단계가 포함됩니다.
+Experience Manager Assets에서 IMS를 통한 제한된 전달에는 두 가지 주요 단계가 포함됩니다.
 
 * 작성
 * 제공
@@ -43,7 +44,7 @@ Experience Manager 시 IMS를 통한 제한된 전달에는 두 가지 주요 �
       1. **[!UICONTROL 속성에 매핑]**&#x200B;을(를) _(으)로 업데이트합니다./jcr:content/metadata/dam:roles_.
 
 1. 에셋의 역할 메타데이터에 추가할 IMS 그룹을 가져옵니다. IMS 그룹을 가져오려면 다음 단계를 따르십시오.
-   1. https://adminconsole.adobe.com/에 로그인합니다.
+   1. `https://adminconsole.adobe.com/.`에 로그인
    1. 해당 조직으로 이동한 다음 **[!UICONTROL 사용자 그룹]**(으)로 이동합니다.
    1. 추가해야 하는 **[!UICONTROL 사용자 그룹]**&#x200B;을(를) 선택하고 URL에서 **[!UICONTROL 조직 ID]** 및 **[!UICONTROL 사용자 그룹 ID]**&#x200B;을(를) 추출하거나 조직 ID(예: `{orgID}@AdobeOrg:{usergroupID}`)를 사용하십시오.
 
