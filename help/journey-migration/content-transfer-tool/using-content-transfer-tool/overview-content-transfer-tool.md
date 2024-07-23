@@ -4,7 +4,7 @@ description: 컨텐츠 전송 도구를 사용하여 컨텐츠를 On-Premise AEM
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
-source-git-commit: 67bc538fe174034c05808d4a62c51c404dfaf38c
+source-git-commit: d9565e86c4b7e513cb1a95ecbe7a30c9586d9fb1
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 52%
@@ -49,7 +49,7 @@ ht-degree: 52%
 
 마이그레이션 세트에는 다음 속성이 있습니다.
 
-* 새 버전을 사용하면 Cloud Acceleration Manager에서 만든 프로젝트 내에 최대 20개의 마이그레이션 세트를 만들 수 있습니다.
+* 새 버전을 사용하면 Cloud Acceleration Manager에서 만든 프로젝트 내에 최대 10개의 마이그레이션 세트를 만들 수 있습니다.
 * 각 마이그레이션 세트의 이름은 고유해야 합니다.
 
 콘텐츠 전송 도구에는 이전 콘텐츠 전송 활동 이후 수행된 변경 사항만 전송할 수 있는 차등 콘텐츠 추가를 지원하는 기능이 있습니다.
