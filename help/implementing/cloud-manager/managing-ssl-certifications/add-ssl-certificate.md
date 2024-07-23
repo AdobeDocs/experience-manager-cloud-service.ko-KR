@@ -5,10 +5,10 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 07696086644d52199bada102e9aee163d868c9c0
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 80%
+source-wordcount: '665'
+ht-degree: 73%
 
 ---
 
@@ -43,7 +43,6 @@ Cloud Manager를 사용하여 인증서를 추가하려면 다음 단계를 수�
    * **인증서 이름**&#x200B;에 인증서 이름을 입력합니다.
       * 이 이름은 정보 제공의 목적으로만 사용되며 인증서를 쉽게 참조하는 데 도움이 되는 모든 이름을 사용할 수 있습니다.
    * **인증서**, **비공개 키** 및 **인증서 체인** 값을 해당 필드에 붙여넣습니다. 세 필드는 모두 필수입니다.
-   * 경우에 따라 최종 사용자 인증서가 체인에 포함될 수 있으므로 체인을 필드에 붙여넣기 전에 제거해야 합니다.
 
    ![SSL 인증서 추가 대화 상자](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
@@ -61,13 +60,27 @@ Cloud Manager를 사용하여 인증서를 추가하려면 다음 단계를 수�
 >
 >Cloud Manager에서 SSL 인증서를 설치하려면 사용자가 **비즈니스 소유자** 또는 **배포 관리자** 역할의 멤버여야 합니다.
 
->[!NOTE]
->
->`The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.`과(와) 유사한 오류가 발생하면 인증서 체인에 클라이언트 인증서를 포함했을 수 있습니다. 체인에 클라이언트 인증서가 포함되어 있지 않은지 확인하고 다시 시도하십시오.
-
 ## 인증서 오류 {#certificate-errors}
 
 인증서가 제대로 설치되지 않았거나 Cloud Manager의 요구 사항을 충족하지 않으면 특정 오류가 발생할 수 있습니다.
+
+### 올바른 선 서식 지정 확인 {#line-formatting}
+
+**인증서**, **개인 키** 및 **인증서 체인**&#x200B;의 값을 붙여넣을 때 새 줄은 BEGIN CERTIFICATE 이후와 END CERTIFICATE 이전이어야 합니다. 즉, 붙여넣은 값은 다음과 같이 생성되어야 합니다.
+
+* `-----BEGIN CERTIFICATE-----`은(는) 자신의 줄에 표시되어야 합니다.
+* `-----END CERTIFICATE-----`은(는) 자신의 줄에 표시되어야 합니다.
+* 인증서 콘텐츠는 `-----BEGIN CERTIFICATE-----`에서 `-----END CERTIFICATE-----` 사이에 새 줄 없이 **하나의 긴 문자열로 나타나야 합니다**.
+
+### 클라이언트 인증서 제거 {#client-certificates}
+
+인증서를 추가할 때 다음과 유사한 오류가 표시되는 경우:
+
+```text
+The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.
+```
+
+인증서 체인에 클라이언트 인증서를 포함했을 수 있습니다. 체인에 클라이언트 인증서가 포함되어 있지 않은지 확인하고 다시 시도하십시오.
 
 ### 인증서 정책 {#certificate-policy}
 
