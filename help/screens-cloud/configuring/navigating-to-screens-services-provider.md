@@ -4,9 +4,9 @@ description: 이 페이지에서는 Screens 서비스 공급자로 이동하는 
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: 093cd62f282bd9842ad74124bb9bd4d5a33ef1c5
+source-git-commit: 5452a02ed20d70c09728b3e34f248c7d37fc4668
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '383'
 ht-degree: 4%
 
 ---
@@ -48,39 +48,41 @@ Screens 서비스 공급자를 설정하려면 아래 단계를 따르십시오.
 
 1. Screens 콘텐츠 공급자에 연결하려면 **저장**&#x200B;을 클릭하십시오.
 
-1. AEM 게시 인스턴스가 Cloud Manager의 IP 주소 허용 목록에 추가하다 구성별로 신뢰할 수 있는 IP에만 액세스할 수 있도록 허용했다면 아래와 같이 설정 대화 상자에서 키 값으로 헤더를 구성해야 합니다.
+1. Cloud Manager의 IP 허용 목록에 추가하다 기능을 통해 신뢰할 수 있는 IP 주소에만 액세스할 수 있도록 AEM 게시 인스턴스를 구성한 경우 아래 표시된 대로 설정 대화 상자에서 키 값으로 헤더를 구성해야 합니다.
 화이트리스트에 추가해야 하는 IP도 구성 파일로 이동하고 Cloud Manager 설정에서 [적용 취소](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list)해야 합니다.
 
-   ![이미지](/help/screens-cloud/assets/configure/configure-screens20.png)
+   ![이미지](/help/screens-cloud/assets/configure/configure-screens20b.png)
 AEM CDN 구성에서 동일한 키를 구성해야 합니다.  헤더 값을 GITHub에 직접 입력하지 않고 [비밀 참조](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication#rotating-secrets)를 사용하는 것이 좋습니다.
 샘플 [CDN 구성](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)은(는) 아래에 제공됩니다.
-종류: &quot;CDN&quot;
-버전: &quot;1&quot;
-메타데이터:
-envTypes: [&quot;dev&quot;, &quot;stage&quot;, &quot;prod&quot;]
-데이터:
-트래픽 필터:
-규칙:
-- 이름: &quot;block-request-from-not-allowed-ips&quot;
-시기:
-모두:
-- reqProperty: clientIp
-notIn: [&quot;101.41.112.0/24&quot;]
-reqProperty: 계층
-다음과 같음: 게시
-작업: 차단
-- 이름: &quot;allow-requests-with-header&quot;
-시기:
-모두:
-- reqProperty: 계층
-다음과 같음: 게시
-- reqProperty: 경로
-다음과 같음: /screens/channels.json
-허용 목록에 추가하다 - reqHeader: x-screens-key
-다음과 같음: $\
-   {CDN_HEADER_KEY}
-작업:
-유형: 허용
+
+   ```kind: "CDN"
+       version: "1"
+       metadata:
+         envTypes: ["dev", "stage", "prod"]
+       data:
+         trafficFilters:
+           rules:
+             - name: "block-request-from-not-allowed-ips"
+               when:
+                 allOf:
+                   - reqProperty: clientIp
+                     notIn: ["101.41.112.0/24"]
+                    reqProperty: tier
+                     equals: publish
+               action: block
+             - name: "allow-requests-with-header"
+               when:
+                 allOf:
+                   - reqProperty: tier
+                     equals: publish
+                   - reqProperty: path
+                     equals: /screens/channels.json
+                   - reqHeader: x-screens-allowlist-key
+                     equals: $\
+       {CDN_HEADER_KEY}
+               action:
+                 type: allow
+   ```
 
 1. 왼쪽 탐색 모음에서 **채널**&#x200B;을 선택하고 **콘텐츠 공급자에서 열기**&#x200B;를 클릭합니다.
 
