@@ -4,10 +4,10 @@ description: AEM as a Cloud Service의 Cloud Manager 2024.7.0 릴리스 정보�
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: a5cd55bcdc6044dd8db26f009b955216cda5daee
+source-git-commit: 12e19fe771c0b70ec471949944141f4d6858cbfd
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 58%
+source-wordcount: '633'
+ht-degree: 57%
 
 ---
 
@@ -39,6 +39,7 @@ AEM as a Cloud Service의 Cloud Manager 릴리스 2024.7.0의 릴리스 날짜�
       * 이제 Lighthouse 원시 보고서 링크를 보다 직관적인 방식으로 스캔 스냅샷 세부 정보 패널에 직접 볼 수 있습니다.
       * 등대 권장 사항 섹션이 향상되었습니다.
    * PWA 지표는 Lighthouse 버전 12.0.0에 따라 제거되었으며 이 지표는 제거되었습니다.
+* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)이(가) [버전 49.](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)(으)로 업데이트되었습니다
 
 ## 얼리 어답터 프로그램 {#early-adoption}
 
