@@ -120,7 +120,7 @@ When looking at the asset details, any image with content credentials added, suc
 
 #### 핵심 구성 요소 기반의 적응형 양식을 위한 향상된 시각적 규칙 편집기
 
-이 릴리스에서는 핵심 구성 요소 기반 적응형 양식을 위한 시각적 규칙 편집기가 대폭 업그레이드되었습니다. 이제 다음을 수행할 수 있습니다.
+이 릴리스에서는 핵심 구성 요소 기반 적응형 양식을 위한 시각적 규칙 편집기가 대폭 업그레이드되었습니다. 이제 다음과 같은 작업을 수행할 수 있습니다.
 
 * 시각적 규칙 편집기에서 [기본 양식 제출 성공/실패 메시지를 재정의](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers)하는 규칙을 만듭니다.
 
@@ -252,4 +252,4 @@ AEM 6.5와 유사하게 Apache/Dispatcher는 게시 저장소의 특정 위치�
 
 ## Experience Cloud 릴리스 정보 {#experience-cloud}
 
-다른 Experience Cloud 응용 프로그램의 릴리스에 대한 정보는 [여기](https://experienceleague.adobe.com/ko/docs/release-notes/experience-cloud/current)에서 확인할 수 있습니다.
+다른 Experience Cloud 애플리케이션 릴리스에 대한 정보는 [여기](https://experienceleague.adobe.com/ko/docs/release-notes/experience-cloud/current)에서 확인할 수 있습니다.
