@@ -4,7 +4,7 @@ description: 이 페이지에서는 Screens 서비스 공급자로 이동하는 
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: ea374f6e521d3b94d1d38af5c8f6780275ae2cb4
+source-git-commit: 093cd62f282bd9842ad74124bb9bd4d5a33ef1c5
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 4%
@@ -66,7 +66,7 @@ envTypes: [&quot;dev&quot;, &quot;stage&quot;, &quot;prod&quot;]
 모두:
 - reqProperty: clientIp
 notIn: [&quot;101.41.112.0/24&quot;]
-- reqProperty: 계층
+reqProperty: 계층
 다음과 같음: 게시
 작업: 차단
 - 이름: &quot;allow-requests-with-header&quot;
@@ -77,7 +77,7 @@ notIn: [&quot;101.41.112.0/24&quot;]
 - reqProperty: 경로
 다음과 같음: /screens/channels.json
 허용 목록에 추가하다 - reqHeader: x-screens-key
-다음과 같음: ${\
+다음과 같음: $\
    {CDN_HEADER_KEY}
 작업:
 유형: 허용
