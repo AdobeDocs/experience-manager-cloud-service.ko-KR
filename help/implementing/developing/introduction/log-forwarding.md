@@ -4,9 +4,9 @@ description: AEM as a Cloud Service의 Splunk 및 기타 로깅 공급업체에 
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 4116f63c4a19b90849e4b55f0c10409530be7d3e
+source-git-commit: cb4299be4681b24852a7e991c123814d31f83cad
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1349'
 ht-degree: 1%
 
 ---
@@ -109,7 +109,7 @@ AEM 및 Apache/Dispatcher 로그를 전용 이그레스 IP와 같은 AEM의 고�
             enabled: false
    ```
 
-1. RDE 이외의 환경 유형(현재 지원되지 않음)의 경우 Cloud Manager에서 타깃팅된 배포 구성 파이프라인을 생성합니다.
+1. RDE(현재 지원되지 않음) 이외의 환경 유형의 경우 Cloud Manager에서 타깃팅된 배포 구성 파이프라인을 만듭니다. 전체 스택 파이프라인 및 웹 계층 파이프라인은 구성 파일을 배포하지 않습니다.
 
    * [프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)을 참조하십시오.
    * [비프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)을 참조하십시오.
@@ -254,10 +254,15 @@ data:
   https:
     default:
       enabled: true
-      url: "https://example.com/aem_logs/aem"
+      url: "https://example.com:8443/aem_logs/aem"
       authHeaderName: "X-AEMaaCS-Log-Forwarding-Token"
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
+
+고려 사항:
+
+* URL 문자열에 **https://**&#x200B;이(가) 포함되어야 합니다. 그렇지 않으면 유효성 검사가 실패합니다. URL 문자열에 포트가 포함되지 않으면 포트 443(기본 HTTPS 포트)이 가정됩니다.
+* 443이 아닌 포트를 사용하려면 URL의 일부로 제공하십시오.
 
 #### HTTPS CDN 로그 {#https-cdn}
 
@@ -267,8 +272,7 @@ data:
 
 >[!NOTE]
 >
-> 첫 번째 CDN 로그 항목이 전송되기 전에 HTTP 서버가 일회성 요청을 성공적으로 완료해야 합니다. ``wellknownpath`` 경로로 전송된 요청은 ``*``(으)로 응답해야 합니다.
-
+> 첫 번째 CDN 로그 항목이 전송되기 전에 HTTP 서버가 일회성 요청을 성공적으로 완료해야 합니다. ``/.well-known/fastly/logging/challenge`` 경로로 전송된 요청은 본문의 별표 ``*`` 및 200 상태 코드로 응답해야 합니다.
 
 #### HTTPS AEM 로그 {#https-aem}
 
