@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 573de431328650778b3ef0979a24190477382310
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '332'
-ht-degree: 40%
+ht-degree: 100%
 
 ---
 
@@ -18,26 +18,26 @@ ht-degree: 40%
 
 ## 릴리스 17098 {#release-17098}
 
-다음은 2024년 7월 16일에 공개적으로 릴리스된 유지 보수 릴리스 17098에 대한 지속적인 개선 사항을 요약했습니다. 이전 유지 관리 릴리스는 릴리스 16971.
+2024년 7월 16일에 릴리스된 유지 관리 릴리스 17098의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이전 유지 관리 릴리스는 릴리스 16971이었습니다.
 
-2024.7.0 기능 활성화는 이 유지 관리 릴리스에 대한 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
+이 유지 관리 릴리스(2024.7.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
 
 ### 개선 사항 {#enhancements-17098}
 
-- SKYOPS-79817: 서비스 사용자 매핑에 대해 Sling 기능 분석기 작업 활성화
+- SKYOPS-79817: 서비스 사용자 매핑을 위한 Sling 기능 분석기 작업 활성화
 
 ### 해결된 문제 {#fixed-issues-17098}
 
-- ASSETS-39665: 6.5에서 AEM CS로 마이그레이션한 후 Smart Crops 동기화가 작동하지 않음
-- FORMS-14993: Forms API가 이전에 작업한 자료에 대해 500을 반환합니다
+- ASSETS-39665: 6.5에서 AEMCS로 마이그레이션한 후 스마트 자르기 동기화가 작동하지 않음
+- FORMS-14993: 양식 API가 이전에 작업한 자료에 대해 500을 반환함
 - GRANITE-52120: 액세스 제어 데이터를 표시할 때 CRXDE가 500을 반환함
-- GRANITE-52573: 다시 작성된 URL에서 //를 사용할 때 400을 반환하는 요청
-- GRANITE-52746: 노드 만들기 대화 상자에 모든 노드 유형이 로드되지 않음
-- GRANITE-52777: 요청이 래핑될 때 404의 손상된 처리
-- GRANITE-52871: publish-worker가 golden-publish와 동기화되고 압축되기 전에 완료되는지 확인합니다.
+- GRANITE-52573: 다시 작성된 URL에서 “//”를 사용할 때 요청이 400을 반환함
+- GRANITE-52746: 노드 만들기 대화 상자에 일부 노드 유형이 로드되지 않음
+- GRANITE-52777: 요청이 래핑될 때 404 처리가 중단됨
+- GRANITE-52871: 게시 작업자가 골든 게시와 동기화되고 압축 전에 완료되었는지 확인
 - SKYOPS-79173: 복제기가 지정된 AgentIdFilter와 일치하는 여러 에이전트에 복제하지 않음
-- SKYOPS-80075: 게시 큐 차단을 초래하는 자산 이름 움라우트 문제(Mac)
-- SKYOPS-81032: 고급 로깅을 사용할 때 로그를 가져오려면 요청에 의해 생성된 로그를 필터링합니다
+- SKYOPS-80075: 자산 이름에 모음 기호 문자가 포함되어 게시 대기 차단이 발생하는 문제(Mac)
+- SKYOPS-81032: 향상된 로깅을 사용할 때 로그 가져오기 요청으로 생성된 로그가 필터링됨
 
 ### 알려진 문제 {#known-issues-17098}
 
@@ -49,7 +49,7 @@ ht-degree: 40%
 
 ### 사용 중단된 기능 및 API {#deprecated-17098}
 
-AEM as a Cloud Service에서 사용이 중단되거나 제거된 기능 및 API는 [사용이 중단되거나 제거된 기능 및 API](/help/release-notes/deprecated-removed-features.md) 문서에 자세히 설명되어 있습니다.
+AEM as a Cloud Service에서 더 이상 사용되지 않는 기능과 API는 [사용 중단된 기능 및 API](/help/release-notes/deprecated-removed-features.md) 문서에 자세히 설명되어 있습니다.
 
 ### 임베드된 기술 {#embedded-tech-17098}
 
