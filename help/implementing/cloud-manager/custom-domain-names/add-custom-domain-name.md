@@ -5,30 +5,40 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 73%
+source-wordcount: '725'
+ht-degree: 35%
 
 ---
 
 
 # 사용자 정의 도메인 이름 추가 {#adding-cdn}
 
+Cloud Manager를 사용하여 사용자 정의 도메인 이름을 추가하는 방법을 알아봅니다.
+
+## 요구 사항 {#requirements}
+
+Cloud Manager에서 사용자 정의 도메인 이름을 추가하기 전에 이러한 요구 사항을 충족해야 합니다.
+
+* [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) 문서에 설명된 대로 사용자 정의 도메인 이름을 추가하기 전에 추가하려는 도메인에 대한 도메인 SSL 인증서를 추가해야 합니다.
+* Cloud Manager에서 사용자 정의 도메인 이름을 추가하려면 **비즈니스 소유자** 또는 **배포 관리자** 역할이 있어야 합니다.
+* Fastly CDN을 사용해야 합니다.
+
+## 사용자 정의 도메인 이름 추가 위치 {#where}
+
 Cloud Manager의 두 위치에서 사용자 정의 도메인 이름을 추가할 수 있습니다.
 
 * [도메인 설정 페이지](#adding-cdn-settings)
 * [환경 페이지](#adding-cdn-environments)
 
->[!NOTE]
->
->Cloud Manager에서 사용자 정의 도메인 이름을 추가하려면 사용자에게 **비즈니스 소유자** 또는 **배포 관리자** 역할이 있어야 하며 Fastly CDN을 사용해야 합니다.
+사용자 정의 도메인 이름을 추가하면 도메인이 가장 구체적이고 유효한 인증서를 사용하여 제공됩니다. 여러 인증서에 동일한 도메인이 있으면 가장 최근에 업데이트된 이 선택됩니다. Adobe은 도메인이 겹치지 않도록 인증서를 관리할 것을 권장합니다.
+
+이 문서에 설명된 단계는 Fastly를 기반으로 합니다. 다른 CDN을 사용하는 경우 사용하기로 선택한 CDN으로 도메인을 구성해야 합니다.
 
 ## 도메인 설정 페이지에서 사용자 정의 도메인 이름 추가 {#adding-cdn-settings}
 
-사용자 정의 도메인 이름을 추가하면 도메인이 가장 구체적이고 유효한 인증서를 사용하여 제공됩니다. 여러 인증서에 동일한 도메인이 있으면 가장 최근에 업데이트된 이 선택됩니다. Adobe은 도메인이 겹치지 않도록 인증서를 관리할 것을 권장합니다.
-
-**도메인 설정** 페이지에서 사용자 정의 도메인 이름을 추가하려면 다음 단계를 따르십시오. 이러한 단계는 Fastly를 기반으로 합니다. 다른 CDN을 사용하는 경우 사용하기로 선택한 CDN으로 도메인을 구성해야 합니다.
+**도메인 설정** 페이지에서 사용자 정의 도메인 이름을 추가하려면 다음 단계를 따르십시오.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
@@ -42,7 +52,7 @@ Cloud Manager의 두 위치에서 사용자 정의 도메인 이름을 추가할
 
    ![도메인 추가 대화 상자](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
 
-1. **도메인 이름** 필드에 사용자 정의 도메인 이름을 입력합니다.
+1. **도메인 이름** 탭에서 **도메인 이름** 필드에 사용자 지정 도메인 이름을 입력합니다.
 
    >[!NOTE]
    >
@@ -54,31 +64,30 @@ Cloud Manager의 두 위치에서 사용자 정의 도메인 이름을 추가할
 
 1. 드롭다운에서 도메인 이름과 연결된 **도메인 SSL 인증서**&#x200B;를 선택하고 **계속**&#x200B;을 선택합니다.
 
-1. **도메인 이름 추가** 대화 상자가 나타나고 도메인 이름 확인 프로세스로 이동합니다. 제공된 지침에 따라 환경에 대한 도메인 소유권을 증명합니다. **만들기**&#x200B;를 클릭합니다.
+1. **확인** 탭이 나타납니다.
 
    ![도메인 이름 확인](/help/implementing/cloud-manager/assets/cdn/cdn-create6.png)
 
-CDN 배포에는 유효한 SSL 인증서와 성공적인 TXT 확인이 필요합니다. 상태는 **확인 및 배포됨**&#x200B;으로 표시됩니다.
+   * **확인** 탭에서는 필요한 TXT 레코드를 만드는 사용자 정의 도메인 이름을 구성하는 다음 단계에 대해 설명합니다.
+   * 이 작업은 대화 상자에서 **만들기**&#x200B;를 탭하거나 클릭하기 전에 즉시 수행하거나 대화 상자에서 **만들기**&#x200B;를 탭하거나 클릭한 후에 수행할 수 있습니다.
+   * 옵션 및 다음 단계는 아래에 설명되어 있습니다.
 
-다양한 상태와 잠재적인 문제를 해결하는 방법에 대한 자세한 내용은 [사용자 정의 도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 문서를 참조하십시오.
+1. **만들기**&#x200B;를 탭하거나 클릭하여 Cloud Manager에서 사용자 지정 도메인 이름을 저장합니다.
 
->[!TIP]
->
->사용자 지정 도메인에 DNS 레코드를 추가할 때 두 배가 되지 않도록 [CNAME 또는 A 레코드를 다음으로 추가](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)해야 하는 것에 대한 다음 문서를 검토하십시오. TXT 항목과 CNAME 또는 A 레코드를 관리 DNS 서버에서 동시에 설정할 수 있습니다.
+**사용자 지정 도메인 추가** 마법사의 확인 단계에서 **만들기**&#x200B;를 선택하면 Cloud Manager에서 TXT 확인을 자동으로 트리거하므로 Cloud Manager에서 사용자 지정 도메인 이름을 만들 때 TXT 레코드를 만드는 것이 좋습니다. 단, 이 작업은 필수가 아닙니다. 이후 확인 시 상태 옆에 있는 다시 확인 아이콘을 선택해야 합니다.
 
->[!TIP]
->
->TXT 레코드에 대한 자세한 내용은 [TXT 레코드 추가](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)를 참조하십시오.
+TXT 항목이 추가되고 Cloud Manager에서 확인해야 이름이 활성화됩니다. 성공적인 TXT 확인은 **확인 및 배포됨** 상태로 표시됩니다.
 
->[!NOTE]
->
->DNS 전파 지연으로 인해 DNS 확인을 처리하는 데 몇 시간이 걸릴 수 있습니다.
->
->Cloud Manager는 소유권을 확인하고 도메인 설정 표에 표시되는 상태를 업데이트합니다. 자세한 내용은 [사용자 정의 도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)을 참조하십시오.
+* TXT 레코드에 대한 자세한 내용은 [TXT 레코드 추가](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)를 참조하십시오.
+* Cloud Manager에서 사용자 지정 도메인 이름과 TXT 항목을 확인하는 방법에 대한 자세한 내용은 [도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)을 참조하십시오.
+
+## 다음 단계 {#next-steps}
+
+Cloud Manager에서 사용자 정의 도메인 이름을 만든 후에는 도메인의 소유권을 확인하기 위해 TXT 항목을 추가해야 합니다. 사용자 지정 도메인 이름을 계속 설정하려면 [TXT 레코드 추가](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) 문서를 계속 진행하십시오.
 
 ## 환경 페이지에서 사용자 정의 도메인 이름 추가 {#adding-cdn-environments}
 
-**환경** 페이지에서 사용자 정의 도메인 이름을 추가하려면 다음 단계를 따르십시오.
+**환경** 페이지에서 사용자 지정 도메인 이름을 추가하는 단계는 [도메인 설정 페이지](#adding-cdn-settings)에서 사용자 지정 도메인 이름을 추가하는 단계와 동일하지만 시작 지점이 다릅니다. **환경** 페이지에서 사용자 정의 도메인 이름을 추가하려면 다음 단계를 따르십시오.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
@@ -94,28 +103,4 @@ CDN 배포에는 유효한 SSL 인증서와 성공적인 TXT 확인이 필요합
 
    ![사용자 정의 도메인 이름 추가](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 
-1. **도메인 이름 추가** 대화 상자에서 선택한 값을 확인하고 **계속**&#x200B;을 클릭합니다.
-
-   ![도메인 이름 창](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
-
-   >[!NOTE]
-   >
-   >도메인 이름을 입력할 때 `http://`, `https://` 또는 공백을 포함하지 마십시오.
-
-1. **도메인 이름 추가** 대화 상자가 나타나고 도메인 이름 확인 프로세스로 이동합니다. 제공된 지침에 따라 환경에 대한 도메인 소유권을 증명합니다. **만들기**&#x200B;를 클릭합니다.
-
-   ![도메인 이름 확인](/help/implementing/cloud-manager/assets/cdn/cdn-create6.png)
-
-CDN 배포에는 유효한 SSL 인증서와 성공적인 TXT 확인이 필요합니다. 상태는 **확인 및 배포됨**&#x200B;으로 표시됩니다.
-
-다양한 상태와 잠재적인 문제를 해결하는 방법에 대한 자세한 내용은 [사용자 정의 도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 문서를 참조하십시오.
-
->[!NOTE]
->
->DNS 전파 지연으로 인해 DNS 확인을 처리하는 데 몇 시간이 걸릴 수 있습니다.
->
->Cloud Manager는 소유권을 확인하고 도메인 설정 표에 표시되는 상태를 업데이트합니다. 자세한 내용은 [사용자 정의 도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)을 참조하십시오.
-
->[!TIP]
->
->TXT 레코드에 대한 자세한 내용은 [TXT 레코드 추가](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)를 참조하십시오.
+1. **도메인 이름 추가** 대화 상자가 열리고 **도메인 이름** 탭이 표시됩니다. [도메인 설정 페이지에서 사용자 지정 도메인 이름을 추가하는 것처럼 계속합니다.](#adding-cdn-settings)

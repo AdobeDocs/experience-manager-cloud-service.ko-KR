@@ -5,12 +5,13 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 83c9c6a974b427317aa2f83a3092d0775aac1d53
+source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 82%
+source-wordcount: '664'
+ht-degree: 70%
 
 ---
+
 
 # SSL 인증서 추가 {#adding-an-ssl-certificate}
 
@@ -18,7 +19,7 @@ Cloud Manager의 셀프서비스 도구를 사용하여 자체 SSL 인증서를 
 
 >[!TIP]
 >
->인증서를 프로비저닝하는 데 며칠이 걸릴 수 있습니다. 따라서 Adobe는 인증서를 미리 프로비저닝할 것을 권장합니다.
+>인증서를 프로비저닝하는 데 며칠이 걸릴 수 있습니다. 따라서 Adobe은 모든 기한 또는 Go-Live 날짜 이전에 인증서를 프로비저닝할 것을 권장합니다.
 
 ## 인증서 요구 사항 {#certificate-requirements}
 
@@ -42,7 +43,8 @@ Cloud Manager를 사용하여 인증서를 추가하려면 다음 단계를 수�
 
    * **인증서 이름**&#x200B;에 인증서 이름을 입력합니다.
       * 이 이름은 정보 제공의 목적으로만 사용되며 인증서를 쉽게 참조하는 데 도움이 되는 모든 이름을 사용할 수 있습니다.
-   * **인증서**, **비공개 키** 및 **인증서 체인** 값을 해당 필드에 붙여넣습니다. 세 필드는 모두 필수입니다.
+   * **인증서**, **개인 키** 및 **인증서 체인** 값을 해당 필드에 붙여 넣으십시오.
+      * 세 필드는 모두 필수입니다.
 
    ![SSL 인증서 추가 대화 상자](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
@@ -63,6 +65,32 @@ Cloud Manager를 사용하여 인증서를 추가하려면 다음 단계를 수�
 ## 인증서 오류 {#certificate-errors}
 
 인증서가 제대로 설치되지 않았거나 Cloud Manager의 요구 사항을 충족하지 않으면 특정 오류가 발생할 수 있습니다.
+
+### 올바른 인증서 순서 {#correct-certificate-order}
+
+인증서 배포가 실패하는 가장 일반적인 이유는 중간 또는 체인 인증서의 순서가 올바르지 않기 때문입니다.
+
+중간 인증서 파일은 루트 인증서 또는 루트에 가장 가까운 인증서로 끝나야 합니다. `main/server` 인증서에서 루트까지 내림차순이어야 합니다.
+
+다음 명령을 사용하여 중간 파일의 순서를 결정할 수 있습니다.
+
+```shell
+openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
+```
+
+다음 명령을 사용하여 개인 키와 `main/server` 인증서가 일치하는지 확인할 수 있습니다.
+
+```shell
+openssl x509 -noout -modulus -in certificate.pem | openssl md5
+```
+
+```shell
+openssl rsa -noout -modulus -in ssl.key | openssl md5
+```
+
+>[!NOTE]
+>
+>이 두 명령의 출력은 정확히 동일해야 합니다. `main/server` 인증서에 대해 일치하는 개인 키를 찾을 수 없는 경우, 새 CSR을 생성하거나 SSL 공급업체에 업데이트된 인증서를 요청하여 인증서 키를 다시 지정해야 합니다.
 
 ### 클라이언트 인증서 제거 {#client-certificates}
 
@@ -124,32 +152,13 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
 openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 ```
 
-### 올바른 인증서 순서 {#correct-certificate-order}
-
-인증서 배포가 실패하는 가장 일반적인 이유는 중간 또는 체인 인증서의 순서가 올바르지 않기 때문입니다.
-
-중간 인증서 파일은 루트 인증서 또는 루트에 가장 가까운 인증서로 끝나야 합니다. `main/server` 인증서에서 루트까지 내림차순이어야 합니다.
-
-다음 명령을 사용하여 중간 파일의 순서를 결정할 수 있습니다.
-
-```shell
-openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
-```
-
-다음 명령을 사용하여 개인 키와 `main/server` 인증서가 일치하는지 확인할 수 있습니다.
-
-```shell
-openssl x509 -noout -modulus -in certificate.pem | openssl md5
-```
-
-```shell
-openssl rsa -noout -modulus -in ssl.key | openssl md5
-```
-
->[!NOTE]
->
->이 두 명령의 출력은 정확히 동일해야 합니다. `main/server` 인증서에 대해 일치하는 개인 키를 찾을 수 없는 경우, 새 CSR을 생성하거나 SSL 공급업체에 업데이트된 인증서를 요청하여 인증서 키를 다시 지정해야 합니다.
-
 ### 인증서 유효 날짜 {#certificate-validity-dates}
 
 Cloud Manager는 SSL 인증서가 현재 날짜로부터 최소 90일 동안 유효할 것으로 예상합니다. 인증서 체인의 유효성을 확인해야 합니다.
+
+## 다음 단계 {#next-steps}
+
+축하합니다! 이제 프로젝트에 대해 작동하는 SSL 인증서가 있습니다. 이는 종종 사용자 정의 도메인 이름을 설정하는 첫 번째 단계입니다.
+
+* 사용자 지정 도메인 이름을 계속 설정하려면 [사용자 지정 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) 문서를 참조하십시오.
+* Cloud Manager에서 SSL 인증서를 업데이트하고 관리하는 방법에 대한 자세한 내용은 [SSL 인증서 관리](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md) 문서를 참조하십시오.

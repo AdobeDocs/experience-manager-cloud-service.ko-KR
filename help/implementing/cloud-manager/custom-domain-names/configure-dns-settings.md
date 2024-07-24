@@ -1,30 +1,35 @@
 ---
 title: DNS 설정 구성
-description: 사용자 정의 도메인 이름에 대한 DNS 설정을 구성하는 방법에 대해 알아봅니다.
+description: 사용자 정의 도메인 이름에 대한 DNS 설정을 구성하면 사이트에서 방문자에게 서비스를 제공하는 방법에 대해 알아봅니다.
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 95%
+source-wordcount: '416'
+ht-degree: 49%
 
 ---
 
+
 # DNS 설정 구성 {#configure-dns}
 
-사용자 정의 도메인 이름이 정상적으로 확인 및 배포되면 DNS 공급자를 통해 사용자 정의 도메인 이름에 대한 DNS 레코드를 업데이트할 수 있습니다. 이렇게 하면 사이트에서 방문자에게 서비스를 제공할 수 있습니다. 따라서 이 활동은 일반적으로 라이브로 전환되기 전에 수행됩니다.
+사용자 정의 도메인 이름이 [확인 및 배포되면 ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) DNS 공급자를 통해 사용자 정의 도메인 이름에 대한 DNS 레코드를 업데이트할 준비가 되었습니다. 이렇게 하면 사이트에서 방문자에게 서비스를 제공할 수 있습니다. 따라서 이 활동은 일반적으로 라이브로 전환되기 전에 수행됩니다.
 
 ## DNS 설정이란? {#dns-settings}
 
 `CNAME` 또는 A 레코드가 프로비저닝되면 도메인의 모든 인터넷 트래픽이 지정된 위치로 라우팅됩니다. 해당 위치에서 트래픽을 처리할 수 있도록 프로비저닝되지 않은 경우, 중단이 발생합니다. 테스트를 거치지 않은 경우 콘텐츠에 오류가 발생할 수 있습니다. 따라서 이 단계는 항상 테스트가 완료되고 실행 준비가 된 후에 수행됩니다.
 
-이러한 설정을 구성하려면 사용자 정의 도메인 이름이 Cloud Manager 도메인 이름을 가리키도록 `CNAME` 또는 Apex 레코드를 구성해야 하는지 여부를 결정해야 합니다. 다음 섹션에서는 DNS 구성에 적합한 레코드 유형을 결정하는 데 도움이 되는 정보를 제공합니다.
+이러한 설정을 구성하려면 사용자 정의 도메인 이름이 Cloud Manager 도메인 이름을 가리키도록 `CNAME` 또는 apex 레코드를 구성해야 하는지 여부를 결정해야 합니다. 이 문서의 다음 섹션에서는 DNS 구성에 적합한 레코드 유형을 결정하는 데 도움이 됩니다.
 
->[!NOTE]
->
->귀하 또는 귀하의 조직에서 적절한 개인이 로그인하거나 DNS 공급자(도메인을 구입한 회사)에 연락하여 DNS 설정을 업데이트할 수 있어야 합니다.
+## 요구 사항 {#requirements}
+
+DNS 레코드를 구성하기 전에 이러한 요구 사항을 충족해야 합니다.
+
+* 도메인 호스트 또는 등록자를 아직 모르는 경우 이를 확인해야 합니다.
+* 조직의 도메인에 대한 DNS 레코드를 편집하거나 편집할 수 있는 적절한 담당자에게 문의할 수 있어야 합니다.
+* [도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 문서에 설명된 대로 구성된 사용자 정의 도메인 이름을 이미 확인했어야 합니다.
 
 ## CNAME 레코드 {#cname-record}
 
@@ -51,3 +56,7 @@ Apex 도메인은 `example.com`과 같은 하위 도메인을 포함하지 않�
 * `A record for domain @ pointing to IP 151.101.131.10`
 
 * `A record for domain @ pointing to IP 151.101.195.10`
+
+## 다음 단계 {#next-steps}
+
+사용자 정의 도메인 이름에 대한 DNS 레코드를 구성한 후에는 Cloud Manager에서 해당 설정을 확인해야 합니다. [DNS 레코드 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) 문서로 이동하여 사용자 지정 도메인 이름을 완료합니다.
