@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 83cf953853c88c1f4b7149bc63c7f07b1e73faf3
 workflow-type: tm+mt
-source-wordcount: '5273'
+source-wordcount: '5283'
 ht-degree: 97%
 
 ---
@@ -330,8 +330,10 @@ ht-degree: 97%
          + [스타일 시스템](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [다시 실행 실행 취소 제한 사항](/help/sites-cloud/authoring/page-editor/undo-redo.md)
       + 범용 편집기 {#universal-editor}
+         + [범용 편집기 탐색](/help/sites-cloud/authoring/universal-editor/navigation.md)
          + [범용 편집기로 콘텐츠 작성](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [범용 편집기로 콘텐츠 게시](/help/sites-cloud/authoring/universal-editor/publishing.md)
+         + [유니버설 편집기의 콘텐츠 상속](/help/sites-cloud/authoring/universal-editor/inheritance.md)
       + 조각 {#fragments}
          + [콘텐츠 조각](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [경험 조각](/help/sites-cloud/authoring/fragments/experience-fragments.md)
