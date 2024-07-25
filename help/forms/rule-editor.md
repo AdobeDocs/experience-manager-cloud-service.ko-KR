@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
 workflow-type: tm+mt
 source-wordcount: '6492'
 ht-degree: 1%
@@ -561,7 +561,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 * 사용자 지정 구성 및 설명을 원하는 경우
 * `JavaScript,`에서 함수를 선언하는 방법에는 여러 가지가 있으며 주석을 사용하면 함수를 추적할 수 있습니다.
 
-규칙 편집기는 스크립트 및 사용자 지정 함수에 대한 JavaScript ES2015 구문을 지원합니다.
+규칙 편집기는 스크립트 및 사용자 지정 함수에 대한 JavaScript ES5 구문을 지원합니다.
 자세한 내용은 [jsdoc.app](https://jsdoc.app/)을(를) 참조하십시오.
 
 지원되는 `jsdoc`개 태그:

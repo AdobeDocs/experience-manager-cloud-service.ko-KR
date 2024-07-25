@@ -1,10 +1,11 @@
 ---
 title: Foundation과 핵심 구성 요소 규칙 편집기의 차이점은 무엇입니까?
 description: 이 문서에서는 기초 및 핵심 구성 요소 규칙 편집기의 차이점에 대해 설명합니다
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms, Core Components, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 780c68f0c21ef94ff6a73ce991370100b1a88db9
+exl-id: 0feef02c-6186-45f2-9929-07120126c596
+source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 1%

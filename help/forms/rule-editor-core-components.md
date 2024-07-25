@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 780c68f0c21ef94ff6a73ce991370100b1a88db9
+source-git-commit: 8585ec309b04e04b9a8dcaa43063369d1c9d5d24
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1174'
 ht-degree: 4%
 
 ---
@@ -91,8 +91,6 @@ ht-degree: 4%
 * 규칙이 조건을 확인하고 필드에 값을 제공하거나 필드를 종료할 때 즉시 작업을 수행하는 경우 조건이 평가되는 필드에 조건-작업 구문 또는 When 규칙 유형이 있는 규칙을 작성하는 것이 좋습니다.
 * 사용자가 When 규칙이 적용되는 객체의 값을 변경할 때 When 규칙의 조건이 평가됩니다. 그러나 값을 미리 채우는 경우처럼 값이 서버측에서 변경될 때 작업을 트리거하려면 필드가 초기화될 때 작업을 트리거하는 When 규칙을 작성하는 것이 좋습니다.
 * 드롭다운, 라디오 단추 또는 확인란 개체에 대한 규칙을 작성할 때 양식에 있는 이러한 양식 개체의 옵션 또는 값이 규칙 편집기에 미리 채워집니다.
-
-## 다음 단계
 
 규칙 편집기에서 규칙을 작성 및 관리하기 위해 사용자 인터페이스를 사용하는 방법에 대한 자세한 내용은 [핵심 구성 요소를 기반으로 하는 적응형 Forms용 규칙 편집기 사용자 인터페이스](/help/forms/rule-editor-core-components-user-interface.md) 문서를 참조하십시오.
 

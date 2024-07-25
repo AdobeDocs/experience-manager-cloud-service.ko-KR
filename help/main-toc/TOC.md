@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 83cf953853c88c1f4b7149bc63c7f07b1e73faf3
+source-git-commit: f6b4ca55d69de3bb20e2232dbc29d1aadae2cd10
 workflow-type: tm+mt
-source-wordcount: '5283'
+source-wordcount: '5297'
 ht-degree: 97%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 97%
    + AEMaaCS 기능 릴리스 정보 {#release-notes}
       + [최신 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
+         + [2024.6.0 릴리스 정보](/help/release-notes/release-notes-cloud/2024/release-notes-2024-6-0.md)
          + [2024.5.0 릴리스 정보](/help/release-notes/release-notes-cloud/2024/release-notes-2024-5-0.md)
          + [2024.4.0 릴리스 정보](/help/release-notes/release-notes-cloud/2024/release-notes-2024-4-0.md)
          + [2024.3.0 릴리스 정보](/help/release-notes/release-notes-cloud/2024/release-notes-2024-3-0.md)
@@ -686,6 +687,7 @@ ht-degree: 97%
             + [Azure Blob Storage에 적응형 양식 제출](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [Microsoft에 적응형 양식 제출](/help/forms/configure-submit-action-onedrive.md)
             + [Microsoft에 적응형 양식 연결](/help/forms/configure-submit-action-sharepoint.md)
+            + [인증 범위를 사용하여 제한된 액세스로 SharePoint 사이트 구성](/help/forms/configure-sharepoint-site-limited-access.md)
             + [AEM 적응형 양식과 AEM Workflow 통합](/help/forms/configure-submit-action-workflow.md)
             + [적응형 양식의 REST 엔드포인트에 제출 액션 구성](/help/forms/configure-submit-action-restpoint.md)
             + [적응형 양식의 이메일 보내기 제출 액션 구성](/help/forms/configure-submit-action-send-email.md)

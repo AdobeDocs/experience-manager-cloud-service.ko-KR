@@ -4,13 +4,13 @@ description: 이 문서에서는 핵심 구성 요소를 기반으로 하는 적
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: c600af3f2e866483cda2426e188dbc104b07688e
+exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
+source-git-commit: 34be2ca89433e36a68e7d8eae42c6bd9ad6e623f
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1125'
 ht-degree: 0%
 
 ---
-
 
 # 규칙 편집기의 다양한 사용 사례
 
@@ -18,9 +18,10 @@ ht-degree: 0%
 이제 규칙 편집기에 대한 다양한 구현에 대해 살펴보겠습니다.
 
 
-## 기본 제공 기능을 사용하여 반복 가능한 패널에서 복잡한 계산 간소화
+## 함수를 사용하여 반복 가능한 패널에서 복잡한 계산 간소화
 
-규칙 편집기를 사용하면 반복 가능한 패널 내의 필드에서 Sum, Min, Max 및 Join과 같은 기본 함수를 바로 사용할 수 있습니다. 이렇게 하면 강력한 자동화가 잠금 해제되므로 사용자 지정 코드 없이 복잡한 비즈니스 논리를 구현할 수 있습니다.
+규칙 편집기를 사용하면 반복 가능한 패널 내의 필드에서 Sum, Min, Max 및 Join과 같은 기본 함수를 바로 사용할 수 있습니다. 숫자 배열, 문자열 배열, 부울 배열 등을 허용하는 함수에 반복 가능한 패널 필드 값을 전달할 수도 있습니다. 이렇게 하면 강력한 자동화가 잠금 해제되므로 사용자 지정 코드 없이 복잡한 비즈니스 논리를 구현할 수 있습니다.
+
 각 패널 인스턴스가 자산의 선언된 값에 대한 정보를 수집하는 반복 가능한 패널이 있는 양식을 상상해 보십시오.
 
 ![반복 가능한 양식](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
@@ -32,6 +33,10 @@ ht-degree: 0%
 에셋 값을 선언할 인스턴스를 추가하여 양식을 작성할 때 `Calculate Asset Value` 단추는 선언된 모든 에셋 값의 총 합계를 계산하고 그 결과를 `assetvalue` 텍스트 상자에 표시합니다.
 
 ![OOTB 함수에서 반복 가능한 패널 필드 지원](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
+
+>[!NOTE]
+>
+> 반복 가능 패널 필드의 값이 배열을 허용하지 않는 함수에 전달되는 경우 반복 가능 패널의 마지막 인스턴스의 필드 값이 함수에 전달됩니다.
 
 이것은 단지 하나의 예입니다! 사용 가능한 [함수](#b-form-objects-and-functions-br)를 탐색하여 워크플로우를 간소화하고 양식 내에서 데이터 정확도를 향상시킵니다.
 

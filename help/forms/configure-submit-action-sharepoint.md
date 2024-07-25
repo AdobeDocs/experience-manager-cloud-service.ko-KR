@@ -6,10 +6,10 @@ feature: Adaptive Forms, Core Components
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
 title: "적응형 양식에 대한 제출 액션을 구성하는 방법"
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 5e1d08e82cafc3a8a715653727f42ce0048f2b1f
 workflow-type: tm+mt
-source-wordcount: '1052'
-ht-degree: 34%
+source-wordcount: '1117'
+ht-degree: 31%
 
 ---
 
@@ -51,7 +51,12 @@ AEM Forms을 Microsoft® Sharepoint Document Library 스토리지에 연결하�
 1. **[!UICONTROL 제목]**, **[!UICONTROL 클라이언트 ID]**, **[!UICONTROL 클라이언트 보안]** 및 **[!UICONTROL OAuth URL]**&#x200B;을 지정합니다. OAuth URL의 클라이언트 ID, 클라이언트 보안, 테넌트 ID를 검색하는 방법에 대한 자세한 내용은 [Microsoft® Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)을 참조하십시오.
    * Microsoft® Azure 포털에서 앱의 `Client ID` 및 `Client Secret`를 검색할 수 있습니다.
    * Microsoft® Azure 포털에서 리디렉션 URI를 `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`로 추가합니다. `[author-instance]`를 작성자 인스턴스의 URL로 대체합니다.
-   * `offline_access` 및 `Sites.Manage.All` API 권한을 추가하여 읽기/쓰기 권한을 제공합니다.
+   * 읽기/쓰기 권한을 제공하려면 API 권한 `offline_access` 및 `Sites.Manage.All`을(를) 추가하십시오. `Sites.Manage.All`은(는) 응용 프로그램에 사이트 삭제 또는 수정과 같은 SharePoint 사이트의 모든 측면을 관리할 수 있는 권한을 부여하는 Microsoft Graph API의 권한 범위입니다.
+
+     >[!NOTE]
+     >
+     > Microsoft의 Graph API에서 `Sites.Selected` 권한 범위를 사용하여 [액세스가 제한된 SharePoint 사이트를 구성](/help/forms/configure-sharepoint-site-limited-access.md)할 수도 있습니다. `Sites.Selected`은(는) Microsoft 사이트에 대한 보다 세분화되고 제한된 액세스를 허용하는 SharePoint Graph API의 권한 범위입니다.
+
    * OAuth URL 사용: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Microsoft® Azure 포털에서 `<tenant-id>`를 앱의 `tenant-id`로 대체합니다.
 
    >[!NOTE]

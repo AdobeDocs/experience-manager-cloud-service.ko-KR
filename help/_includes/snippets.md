@@ -1,8 +1,8 @@
 ---
-source-git-commit: a35556164ace2245577c3e22da1bc276fc3d98d0
+source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 74%
+source-wordcount: '662'
+ht-degree: 72%
 
 ---
 # 스니펫 {#snippets}
@@ -100,7 +100,7 @@ ht-degree: 74%
    </tr>
    <tr>
     <td>ES10 지원 </td>
-    <td>ES10은 아직 지원되지 않습니다. </td>
+    <td>ES10은 아직 지원되지 않습니다. ES5 JavaScript 기능만 지원합니다. </td>
     <td>사용자 정의 함수 내에서 let 및 arrow 함수(ES10 지원)와 같은 최신 JavaScript 기능을 지원합니다. 
    </td>
    </tr>
