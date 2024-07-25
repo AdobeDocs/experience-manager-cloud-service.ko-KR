@@ -4,9 +4,9 @@ description: 자산 선택기를 사용하여 애플리케이션 내에서 자�
 contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: a2646fa72788cb887066751efb171e92b597f4f5
+source-git-commit: 04560cd5b15ceb79b6a480c60e78e061276a39eb
 workflow-type: tm+mt
-source-wordcount: '4550'
+source-wordcount: '4561'
 ht-degree: 36%
 
 ---
@@ -424,8 +424,7 @@ Admin Console을 통해 지원 티켓을 기록하는 절차:
 | *dialogSize* | 소형, 중형, 대형, 전체 화면 또는 전체 화면 인계 | 문자열 | 옵션 | 제공된 옵션을 사용하여 크기를 지정하여 레이아웃을 제어할 수 있습니다. |
 | *colorScheme* | 밝은 색 또는 어두운 색 | 아니요 | | 이 속성은 자산 선택기 응용 프로그램의 테마를 설정하는 데 사용됩니다. 밝은 테마 또는 어두운 테마 중에서 선택할 수 있습니다. |
 | *filterRepoList* | 함수 | 아니요 |  | Experience Manager 저장소를 호출하고 필터링된 저장소 목록을 반환하는 `filterRepoList` 콜백 함수를 사용할 수 있습니다. |
-| *getExpiryStatus* | 함수 | 아니요 | | 만료된 에셋의 상태를 제공합니다. 함수는 제공한 에셋의 만료 날짜에 따라 `EXPIRED`, `EXPIRING_SOON` 또는 `NOT_EXPIRED`을(를) 반환합니다. [만료된 에셋 사용자 지정](#customize-expired-assets)을 참조하십시오. |
-| *allowSelectionAndDrag* | 부울 | 아니요 | 거짓 | 함수 값은 `true` 또는 `false`일 수 있습니다. 값을 `false`(으)로 설정하면 만료된 에셋을 캔버스에서 선택하거나 드래그할 수 없습니다. |
+| *만료 옵션* | 함수 | | | 만료된 에셋의 상태를 제공하는 **getExpiryStatus** 속성 사이에서 사용할 수 있습니다. 함수는 제공한 에셋의 만료 날짜에 따라 `EXPIRED`, `EXPIRING_SOON` 또는 `NOT_EXPIRED`을(를) 반환합니다. [만료된 에셋 사용자 지정](#customize-expired-assets)을 참조하십시오. 또한 함수 값이 `true` 또는 `false`일 수 있는 **allowSelectionAndDrag**&#x200B;을(를) 사용할 수 있습니다. 값을 `false`(으)로 설정하면 만료된 에셋을 캔버스에서 선택하거나 드래그할 수 없습니다. |
 | *showToast* | | 아니요 | | 이를 통해 에셋 선택기에서 만료된 에셋에 대한 사용자 지정 Toast 메시지를 표시할 수 있습니다. |
 <!--
 | *expirationDate* | Function | No | | This function is used to set the usability period of an asset. |
