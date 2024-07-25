@@ -4,10 +4,10 @@ description: Adobe Experience Manager(AEM as a Cloud Service)가 CI/CD(지속적
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 role: Admin
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 73fac04561f43a4053e1694da9e096a2ecbc1484
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 1%
+source-wordcount: '997'
+ht-degree: 2%
 
 ---
 
@@ -33,7 +33,7 @@ NIMU를 통해 고객은 AEM 버전 업데이트가 예약되거나 진행 중�
 #### 활동 업데이트
 
 Cloud Manager UI 환경 패널을 사용하여 이전과 마찬가지로 현재 AEM 버전을 각 환경에 대해 확인할 수 있습니다. 파이프라인에서 사용되는 것과 동일한 품질 게이트를 고객 서면 테스트를 포함한 비침입 유지 관리 업데이트에서 사용합니다.
-프로그램 환경에 비간섭 유지 관리 업데이트가 적용될 때마다 Cloud Manager UI 알림이 전송됩니다. 이메일로도 전송되도록 구성할 수 있습니다.
+프로그램 환경에 비간섭 유지 관리 업데이트가 적용될 때마다 [Cloud Manager UI 알림](/help/implementing/cloud-manager/notifications.md)이 전송됩니다. 이메일로도 전송되도록 구성할 수 있습니다.
 
 >[!NOTE]
 >
@@ -102,3 +102,11 @@ AEM 업데이트는 여러 단계를 포함하는 강력하고 완전히 자동�
 이 기능을 사용하면 AEM에서 여러 저장소를 동시에 참조할 수 있습니다. [롤링 배포](/help/implementing/deploying/overview.md#how-rolling-deployments-work)에서 새 AEM 버전에는 고유한 `/libs`(TarMK 기반 변경 불가능한 저장소)이 포함되어 있습니다. 둘 다 `/content` , `/conf` , `/etc` 등과 같은 영역을 포함하는 공유 DocumentMK 기반 변경 가능한 리포지토리를 참조하지만, 이전 AEM 버전과 구별됩니다.
 
 이전 버전과 새 버전 모두 자체 버전 `/libs`을(를) 가지고 있으므로 순환 업데이트 중에 모두 활성화할 수 있습니다. 그리고, 둘 다 옛 것이 새 것으로 완전히 대체될 때까지 트래픽을 맡을 수 있습니다.
+
+## 추가 정보 {#further-information}
+
+관련 테마에 대한 자세한 내용은 다음을 참조하십시오.
+
+* [Cloud Manager CI/CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+* [Cloud Manager UI 알림](/help/implementing/cloud-manager/notifications.md)
+* [Adobe Experience Manager as a Cloud Service의 건축](/help/overview/architecture.md)
