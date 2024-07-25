@@ -6,10 +6,10 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 585c934465215c48b9441a95c03e4c116859103e
 workflow-type: tm+mt
-source-wordcount: '1418'
-ht-degree: 89%
+source-wordcount: '1500'
+ht-degree: 84%
 
 ---
 
@@ -56,7 +56,8 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 프로덕션 및 비프로덕션 외에도 배포하는 코드 유형에 따라 파이프라인을 구분할 수 있습니다.
 
 * **[전체 스택 파이프라인](#full-stack-pipeline)** - HTTPD/Dispatcher 구성과 함께 하나 이상의 AEM 서버 애플리케이션을 포함하는 백엔드 및 프론트엔드 코드 빌드를 동시에 배포합니다.
-* **[파이프라인 구성](#config-deployment-pipeline)** - WAF 규칙을 포함한 트래픽 필터 규칙을 몇 분 내에 구성하고 배포합니다.
+* **[파이프라인 구성](#config-deployment-pipeline)** - 로그 전달, 제거 관련 유지 관리 작업, 트래픽 필터 규칙(WAF 규칙 포함), 요청 및 응답 변환, 원본 선택기, 클라이언트측 리디렉션, 오류 페이지, 고객 관리 CDN 키, 제거 API 키 및 기본 인증과 같은 다양한 CDN 구성과 같은 기능에 대한 구성을 빠르게 배포합니다.
+   * 자세한 내용은 [구성 파이프라인 사용](/help/operations/config-pipeline.md) 문서를 참조하십시오.
 * **[프론트엔드 파이프라인](#front-end)** - 하나 이상의 클라이언트측 UI 애플리케이션을 포함하는 프론트엔드 코드 빌드를 배포합니다.
 * **[웹 계층 구성 파이프라인](#web-tier-config-pipelines)** - HTTPD/Dispatcher 구성을 배포합니다.
 
@@ -71,11 +72,10 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 | 프로덕션 또는 비프로덕션 | 배포 | 전체 스택 | HTTPD/Dispatcher 구성과 함께 백엔드 및 프론트엔드 코드 빌드 동시 배포 | 프론트엔드 코드를 AEM 서버 코드와 동시에 배포해야 하는 경우.<br>프론트엔드 파이프라인 또는 웹 계층 구성 파이프라인이 아직 채택되지 않은 경우. |
 | 프로덕션 또는 비프로덕션 | 배포 | 프론트엔드 | 하나 이상의 클라이언트측 UI 애플리케이션을 포함하는 프론트엔드 코드 빌드 배포 | 여러 개의 동시 프론트엔드 파이프라인 지원<br>전체 스택 배포보다 훨씬 빠름 |
 | 프로덕션 또는 비프로덕션 | 배포 | 웹 계층 구성 | HTTPD/Dispatcher 구성 배포 | 몇 분 만에 배포 |
-| 프로덕션 또는 비프로덕션 | 배포 | 구성 | 트래픽 필터링 규칙 배포 | 몇 분 만에 배포 |
+| 프로덕션 또는 비프로덕션 | 배포 | 구성 | CDN, 로그 전달 및 제거 유지 관리 작업과 관련된 [많은 기능에 대한 구성](/help/operations/config-pipeline.md)을 배포합니다. | 몇 분 만에 배포 |
 | 비프로덕션 | 코드 품질 | 전체 스택 | 배포 없이 전체 스택 코드에서 코드 품질 검사 실행 | 여러 파이프라인 지원 |
 | 비프로덕션 | 코드 품질 | 프론트엔드 | 배포 없이 프론트엔드 코드에서 코드 품질 검사 실행 | 여러 파이프라인 지원 |
 | 비프로덕션 | 코드 품질 | 웹 계층 구성 | 배포 없이 Dispatcher 구성에서 코드 품질 검사 실행 | 여러 파이프라인 지원 |
-| 비프로덕션 | 코드 품질 | 구성 | 트래픽 필터링 규칙 배포 |  |
 
 다음 다이어그램은 기존의 단일 프론트엔드 저장소 또는 독립적인 프론트엔드 저장소 설정을 사용하는 Cloud Manager의 파이프라인 구성을 보여 줍니다.
 
@@ -116,9 +116,9 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 
 ## 파이프라인 구성 {#config-deployment-pipeline}
 
-구성 파이프라인을 사용하여 몇 분 내에 WAF 규칙을 포함한 트래픽 필터 규칙을 구성하고 배포할 수 있습니다.
+구성 파이프라인을 사용하면 로그 전달, 제거 관련 유지 관리 작업, 트래픽 필터 규칙(WAF 규칙 포함), 요청 및 응답 변환, 원본 선택기, 클라이언트측 리디렉션, 오류 페이지, 고객 관리 CDN 키, 제거 API 키 및 기본 인증과 같은 다양한 CDN 구성에 대한 구성을 빠르게 배포할 수 있습니다.
 
-WAF 규칙을 포함한 [트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md)을(를) 참조하여 올바르게 배포되도록 저장소의 구성을 관리하는 방법에 대해 알아보십시오.
+지원되는 기능의 전체 목록을 보려면 문서 [구성 파이프라인 사용](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)을 참조하여 저장소에서 구성을 관리하여 올바르게 배포하는 방법에 대해 알아보십시오.
 
 ### 구성 파이프라인 구성 {#configure-config-deployment}
 

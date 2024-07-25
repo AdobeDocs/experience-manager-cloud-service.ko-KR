@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '1367'
-ht-degree: 69%
+source-wordcount: '1376'
+ht-degree: 68%
 
 ---
 
@@ -114,9 +114,9 @@ ht-degree: 69%
 
 타깃팅된 배포는 AEM 애플리케이션의 선택한 부분에 대해서만 코드를 배포합니다. 이러한 배포에서는 다음 코드 유형 중 하나를 **포함**&#x200B;하도록 선택할 수 있습니다.
 
-* **구성** - AEM 환경에서 트래픽 필터 규칙에 대한 설정을 구성합니다.
-   * WAF 규칙을 포함한 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 문서를 참조하여 제대로 배포되도록 저장소의 구성을 관리하는 방법에 대해 알아보십시오.[
-   * 타깃팅된 배포 파이프라인을 실행할 때 [WAF 구성](/help/security/traffic-filter-rules-including-waf.md)이(가) 파이프라인에 정의된 환경, 저장소 및 분기에 저장되면 배포됩니다.
+* **구성** - AEM 환경의 다양한 기능에 대한 설정을 구성합니다.
+   * 로그 전달, 제거 관련 유지 관리 작업 및 다양한 CDN 구성을 포함하여 지원되는 구성 목록을 보고 저장소에서 이를 관리하여 올바르게 배포하려면 [구성 파이프라인 사용 문서](/help/operations/config-pipeline.md)를 참조하십시오.
+   * 타깃팅된 배포 파이프라인을 실행할 때 구성이 파이프라인에 정의된 환경, 저장소 및 분기에 저장되면 배포됩니다.
    * 언제든지 환경당 하나의 구성 파이프라인만 있을 수 있습니다.
 * **프론트엔드 코드** - AEM 애플리케이션의 프론트엔드에 맞게 JavaScript 및 CSS를 구성합니다.
    * 프론트엔드 파이프라인을 사용하면 프론트엔드 개발자에게 더 많은 독립성을 부여하고 개발 프로세스를 가속화할 수 있습니다.

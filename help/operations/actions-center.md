@@ -4,10 +4,10 @@ description: 문제 및 기타 중요한 정보에 대해 편리하게 조치를
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 7630481aab89b31057509f23aab334e17c537257
+source-git-commit: 22d5975a0c4ee180bbcda906b035d306a352b752
 workflow-type: tm+mt
-source-wordcount: '988'
-ht-degree: 59%
+source-wordcount: '1045'
+ht-degree: 56%
 
 ---
 
@@ -76,6 +76,7 @@ AEM as a Cloud Service에는 여러 유형의 알림이 있지만 아래 그림�
 | 차단된 복제 대기열 | 인시던트 | [복제 문서](/help/operations/replication.md#troubleshooting)의 지침에 따라 대기열 차단을 해제합니다. |
 | 잘못된 지속 GraphQL 쿼리 | 인시던트 | [지속된 GraphQL 쿼리 문제 해결 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html)를 참조하여 잘못된 GraphQL 쿼리를 수정하십시오. |
 | 원본 트래픽 스파이크 | 인시던트 | 원본 경고의 기본 트래픽 스파이크보다 낮은 임계값에서 트리거하는 비율 제한 트래픽 필터 규칙을 구성하여 원본을 Protect 합니다.  자습서를 참조하는 트래픽 필터 규칙 설명서의 [트래픽 규칙을 사용하여 DoS 및 DDoS 공격 차단](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) 섹션을 참조하십시오. |
+| CDN 트래픽 필터 규칙 트리거됨 | 인시던트 | 일치하는 트래픽 필터 규칙이 공격을 반영하지만 사이트에서 해당 트래픽을 차단하지 않는 경우 차단 모드에서 트래픽 필터 규칙을 구성하여 사이트를 보호하십시오. 자습서를 참조하는 트래픽 필터 규칙 설명서의 [트래픽 필터 규칙으로 웹 사이트 보호(WAF 규칙 포함)](/help/security/traffic-filter-rules-including-waf.md#tutorial-protecting-websites) 섹션을 참조하십시오. |
 | 페이지에 많은 수의 노드가 포함되어 있습니다. | 사전 알림 | 페이지 내 총 노드 수를 줄입니다. [페이지 복잡성 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx)를 참조하세요. | |
 | 실행 중인 많은 워크플로 인스턴스 | 사전 알림 | 더 이상 필요하지 않은 실행 중인 워크플로우를 종료합니다. [제거 작업을 구성하는 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/maintenance) 알아보기 |               |
 | 만료되는 S2S 인증서 | 사전 알림 | [서버측 API용 액세스 토큰 생성 문서](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)에서 자격 증명을 새로 고치는 방법에 대해 알아보십시오. | 높은 연결 수 | 사전 알림 | [고급 네트워킹 설명서와 함께 연결 풀링에 대해 알아봅니다](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |

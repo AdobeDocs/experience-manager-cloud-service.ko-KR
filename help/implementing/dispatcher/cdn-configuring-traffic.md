@@ -4,12 +4,13 @@ description: 구성 파일에서 규칙 및 필터를 선언하고 Cloud Manager
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: c34aa4ad34d3d22e1e09e9026e471244ca36e260
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '1326'
-ht-degree: 3%
+source-wordcount: '1319'
+ht-degree: 2%
 
 ---
+
 
 # CDN에서 트래픽 구성 {#cdn-configuring-cloud}
 
@@ -24,7 +25,7 @@ AEM as a Cloud Service은 [Adobe 관리 CDN](/help/implementing/dispatcher/cdn.m
 
 또한 CDN이 해당 원본에 연결할 수 없는 경우 자체 호스팅된 사용자 지정 오류 페이지를 참조하는 규칙을 작성할 수 있습니다(그런 다음 렌더링됨). [CDN 오류 페이지 구성](/help/implementing/dispatcher/cdn-error-pages.md) 문서를 읽고 이에 대해 자세히 알아보십시오.
 
-소스 제어의 구성 파일에서 선언된 이러한 모든 규칙은 [Cloud Manager의 구성 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)을 사용하여 배포됩니다. 구성 파일의 누적 크기는 트래픽 필터 규칙을 포함하여 100KB를 초과할 수 없습니다.
+소스 제어의 구성 파일에서 선언된 이러한 모든 규칙은 Cloud Manager [구성 파이프라인을 사용하여 배포됩니다.](/help/operations/config-pipeline.md) 구성 파일의 누적 크기는 트래픽 필터 규칙을 포함하여 100KB를 초과할 수 없습니다.
 
 ## 평가 순서 {#order-of-evaluation}
 
@@ -36,23 +37,24 @@ AEM as a Cloud Service은 [Adobe 관리 CDN](/help/implementing/dispatcher/cdn.m
 
 CDN에서 트래픽을 구성하려면 먼저 다음을 수행해야 합니다.
 
-* Git 프로젝트의 최상위 수준 폴더에서 이 폴더 및 파일 구조를 만듭니다.
+1. 아래 섹션에서 다양한 구성 조각을 참조하여 이름이 `cdn.yaml`이거나 유사한 파일을 만드십시오.
 
-```
-config/
-     cdn.yaml
-```
+   모든 코드 조각에는 이러한 일반 속성이 있으며, 이는 [Config Pipeline 문서](/help/operations/config-pipeline.md#common-syntax)에 설명되어 있습니다. `kind` 속성 값은 *CDN*&#x200B;이고 `version` 속성은 *1*(으)로 설정해야 합니다.
 
-* `cdn.yaml` 구성 파일에는 아래 예제에 설명된 메타데이터와 규칙이 모두 포함되어야 합니다. `kind` 매개 변수는 `CDN`(으)로 설정해야 하며 버전은 현재 `1`인 스키마 버전으로 설정해야 합니다.
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   ```
 
-* Cloud Manager에서 타깃팅된 배포 구성 파이프라인을 만듭니다. [프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 및 [비프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)을 참조하십시오.
+1. [파이프라인 구성 문서](/help/operations/config-pipeline.md#folder-structure)에 설명된 대로 파일을 *config* 또는 유사한 최상위 폴더 아래에 배치합니다.
 
-**메모**
+1. [파이프라인 구성 문서](/help/operations/config-pipeline.md#managing-in-cloud-manager)에 설명된 대로 Cloud Manager에서 구성 파이프라인을 만듭니다.
 
-* RDE는 현재 구성 파이프라인을 지원하지 않습니다.
-* `yq`을 사용하여 구성 파일(예: `yq cdn.yaml`)의 YAML 서식을 로컬에서 확인할 수 있습니다.
+1. 구성 배포.
 
-## 구문 {#configuration-syntax}
+## 규칙 구문 {#configuration-syntax}
 
 아래 섹션의 규칙 유형은 일반적인 구문을 공유합니다.
 
@@ -313,7 +315,7 @@ data:
 원본 선택기를 사용하여 AEM Publish을 통해 AEM Edge Delivery Services으로 트래픽을 라우팅해야 하는 시나리오가 있습니다.
 
 * 일부 컨텐츠는 AEM Publish에서 관리하는 도메인에 의해 전달되지만, 동일한 도메인의 다른 컨텐츠는 Edge Delivery Services에 의해 전달됩니다
-* Edge Delivery Services이 전달한 콘텐츠는 트래픽 필터 규칙 또는 요청/응답 변환을 포함하여 구성 파이프라인을 통해 배포된 규칙의 이점을 받습니다
+* Edge Delivery Services에 의해 전달된 콘텐츠는 트래픽 필터 규칙 또는 요청/응답 변환을 포함하여 구성 파이프라인을 통해 배포된 규칙의 이점을 받습니다
 
 다음은 이를 수행할 수 있는 원본 선택기 규칙의 예입니다.
 

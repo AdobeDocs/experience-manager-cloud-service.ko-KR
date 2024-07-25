@@ -4,12 +4,13 @@ description: AEM 관리 CDN을 사용하는 방법과 자체 CDN을 AEM 관리 C
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1128'
 ht-degree: 23%
 
 ---
+
 
 # AEM as a Cloud Service의 CDN {#cdn}
 
@@ -43,7 +44,7 @@ AEM의 기본 CDN을 사용하여 Cloud Manager 셀프서비스 UI를 사용하�
 
 ### CDN에서 트래픽 구성 {#cdn-configuring-cloud}
 
-CDN 트래픽 및 필터를 구성하는 규칙은 [Cloud Manager의 구성 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)을 사용하여 구성 파일에서 선언하고 CDN에 배포할 수 있습니다. 자세한 내용은 [CDN에서 트래픽 구성](/help/implementing/dispatcher/cdn-configuring-traffic.md) 및 [WAF 규칙을 포함한 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md)을 참조하십시오.
+CDN 트래픽 및 필터를 구성하는 규칙은 [Cloud Manager의 구성 파이프라인을 사용하여 구성 파일에서 선언하고 CDN에 배포할 수 있습니다.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline) 자세한 내용은 [CDN에서 트래픽 구성](/help/implementing/dispatcher/cdn-configuring-traffic.md) 및 [WAF 규칙을 포함한 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md)을 참조하십시오.
 
 ### CDN 오류 페이지 구성 {#cdn-error-pages}
 
@@ -70,7 +71,7 @@ AEM에 도달할 수 없는 드문 이벤트에서 브라우저에 제공되는 
 1. SNI를 Adobe CDN의 인그레스로 설정합니다.
 1. 호스트 헤더를 원본 도메인으로 설정합니다. 예: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. AEM에서 호스트 헤더를 확인할 수 있도록 `X-Forwarded-Host` 헤더를 도메인 이름으로 설정합니다. 예: `X-Forwarded-Host:example.com`.
-1. `X-AEM-Edge-Key`을(를) 설정합니다. 값은 Adobe에서 가져와야 합니다.
+1. `X-AEM-Edge-Key`을(를) 설정합니다. [이 문서에 설명된 대로 Cloud Manager 구성 파이프라인을 사용하여 값을 구성해야 합니다.](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value)
 
    * Adobe CDN이 요청 소스의 유효성을 검사하고 `X-Forwarded-*` 헤더를 AEM 애플리케이션에 전달할 수 있어야 합니다. 예를 들어 `X-Forwarded-For`은(는) 클라이언트 IP를 확인하는 데 사용됩니다. 따라서 `X-Forwarded-*` 헤더가 정확한지 확인하는 것은 신뢰할 수 있는 호출자(즉, 고객 관리 CDN)의 책임입니다(아래 참고 사항 참조).
    * 선택적으로, `X-AEM-Edge-Key`이(가) 없을 때 Adobe CDN 인그레스에 대한 액세스를 차단할 수 있습니다. Adobe CDN의 인그레스에 직접 액세스해야 하는 경우 Adobe에게 알립니다(차단됨).
@@ -79,7 +80,7 @@ AEM에 도달할 수 없는 드문 이벤트에서 브라우저에 제공되는 
 
 라이브 트래픽을 수락하기 전에 Adobe의 고객 지원 센터를 통해 종단 간 트래픽 라우팅이 올바르게 작동하는지 확인해야 합니다.
 
-`X-AEM-Edge-Key`을(를) 가져온 후에는 요청이 다음과 같이 올바르게 라우팅되는지 테스트할 수 있습니다.
+`X-AEM-Edge-Key`을(를) 설정한 후 요청이 다음과 같이 올바르게 라우팅되는지 테스트할 수 있습니다.
 
 Linux®:
 

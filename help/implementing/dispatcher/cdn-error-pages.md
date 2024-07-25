@@ -4,38 +4,31 @@ description: Amazon S3 또는 Azure Blob Storage와 같은 자체 호스팅 저�
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 5%
+source-wordcount: '365'
+ht-degree: 1%
 
 ---
 
+
 # CDN 오류 페이지 구성 {#cdn-error-pages}
 
-[Adobe 관리 CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)이(가) AEM 원본에 도달할 수 없는 경우에는 기본적으로 CDN에 서버에 도달할 수 없음을 나타내는 브랜드가 없는 일반 오류 페이지가 표시됩니다. Amazon S3 또는 Azure Blob Storage와 같은 자체 호스팅 저장소에서 정적 파일을 호스팅하고 [Cloud Manager 구성 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)을 사용하여 배포된 구성 파일에서 참조하여 기본 오류 페이지를 재정의할 수 있습니다.
+[Adobe 관리 CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)이(가) AEM 원본에 도달할 수 없는 경우에는 기본적으로 CDN에 서버에 도달할 수 없음을 나타내는 브랜드가 없는 일반 오류 페이지가 표시됩니다. Amazon S3 또는 Azure Blob Storage와 같은 자체 호스팅 저장소에서 정적 파일을 호스팅하고 Cloud Manager [구성 파이프라인을 사용하여 배포된 구성 파일에서 참조하여 기본 오류 페이지를 재정의할 수 있습니다.](/help/operations/config-pipeline.md#managing-in-cloud-manager)
 
 ## 설정 {#setup}
 
 기본 오류 페이지를 재정의하려면 먼저 다음을 수행해야 합니다.
 
-* Git 프로젝트의 최상위 수준 폴더에서 이 폴더 및 파일 구조를 만듭니다.
+1. 아래 구문 섹션을 참조하여 이름이 `cdn.yaml`이거나 유사한 파일을 만드십시오.
 
-```
-config/
-     cdn.yaml
-```
+1. [구성 파이프라인 문서](/help/operations/config-pipeline.md#folder-structure)에 설명된 대로 파일을 *config* 또는 유사한 최상위 폴더 아래에 배치합니다.
 
-* `cdn.yaml` 구성 파일에는 아래 예제에 설명된 메타데이터와 규칙이 모두 포함되어야 합니다. `kind` 매개 변수는 `CDN`(으)로 설정해야 하며 버전은 현재 `1`인 스키마 버전으로 설정해야 합니다.
+1. [구성 파이프라인 문서](/help/operations/config-pipeline.md#managing-in-cloud-manager)에 설명된 대로 Cloud Manager에서 구성 파이프라인을 만듭니다.
 
-* Cloud Manager에서 타깃팅된 배포 구성 파이프라인을 만듭니다. [프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 및 [비프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)을 참조하십시오.
+1. 구성 배포.
 
-**메모**
-
-* RDE는 현재 구성 파이프라인을 지원하지 않습니다.
-* `yq`을 사용하여 구성 파일(예: `yq cdn.yaml`)의 YAML 서식을 로컬에서 확인할 수 있습니다.
-
-### 구성 {#configuration}
+### 구문 {#syntax}
 
 오류 페이지는 단일 페이지 애플리케이션(SPA)으로 구현되며 아래 예와 같이 몇 가지 속성을 참조합니다.  URL에서 참조하는 정적 파일은 Amazon S3 또는 Azure Blob Storage와 같이 인터넷에 액세스할 수 있는 서비스에서 호스팅해야 합니다.
 
@@ -54,6 +47,8 @@ data:
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
 ```
+데이터 노드 위의 속성에 대한 설명은 [구성 파이프라인 문서](/help/operations/config-pipeline.md#common-syntax)를 참조하십시오. 종류 속성 값은 *CDN*&#x200B;이어야 하며 `version` 속성은 *1*(으)로 설정해야 합니다.
+
 
 | 이름 | 허용된 속성 | 의미 |
 |-----------|--------------------------|-------------|

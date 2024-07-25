@@ -4,12 +4,13 @@ description: AEM as a Cloud Service의 유지 관리 작업과 이를 구성하�
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: b0e72f0eee0f20b19b0d9c4317a061855ffd4f62
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '2107'
+source-wordcount: '2055'
 ht-degree: 30%
 
 ---
+
 
 # AEM as a Cloud Service에서의 유지 관리 작업 {#maintenance-tasks-in-aem-as-a-cloud-service}
 
@@ -215,27 +216,23 @@ ht-degree: 30%
 다음 단계에 설명된 대로 구성 파일을 선언하고 배포합니다.
 
 >[!NOTE]
->구성 파일에 버전 제거 노드를 배포한 후에는 선언된 상태를 유지하고 제거하지 말아야 합니다. 그럴 경우 구성 파이프라인이 실패합니다.
+>구성 파일에 버전 제거 노드를 배포한 후에는 선언된 상태를 유지하고 제거하지 말아야 합니다. 이렇게 하면 구성 파이프라인이 실패합니다.
 > 
 >마찬가지로, 구성 파일에 감사 로그 제거 노드를 배포한 후에는 선언된 상태를 유지하고 제거하지 않아야 합니다.
 
-**1** - Git에서 프로젝트의 최상위 폴더에 다음 폴더 및 파일 구조를 만듭니다.
+**1** 이름이 `mt.yaml`이거나 유사한 파일을 만듭니다.
 
-```
-config/
-     mt.yaml
-```
+**2** [구성 파이프라인 문서에 설명된 대로 파일을 `config` 또는 유사한 최상위 폴더 아래에 배치합니다.](/help/operations/config-pipeline.md#folder-structure)
 
-**2** - 다음을 포함하는 구성 파일의 속성을 선언합니다.
+**3** - 다음을 포함하는 구성 파일의 속성을 선언합니다.
 
-* 값이 &quot;MaintenanceTasks&quot;인 &quot;kind&quot; 속성.
-* &quot;version&quot; 속성(현재 버전 1)입니다.
-* 속성이 `envTypes`인 선택적 &quot;metadata&quot; 개체로, 이 구성이 유효한 환경 유형(dev, stage, prod)의 쉼표로 구분된 목록입니다. 메타데이터 개체가 선언되지 않으면 모든 환경 유형에 대해 구성이 유효합니다.
+* 데이터 노드 위의 몇 가지 속성입니다. 설명은 [구성 파이프라인 문서](/help/operations/config-pipeline.md#common-syntax)를 참조하십시오. `kind` 속성 값은 *MaintenanceTasks*&#x200B;이고 버전은 *1*(으)로 설정해야 합니다.
+
 * `versionPurge` 및 `auditLogPurge` 개체가 모두 있는 데이터 개체입니다.
 
 아래 `versionPurge` 및 `auditLogPurge` 개체의 정의 및 구문을 참조하십시오.
 
-다음 예제와 유사하게 구성을 구성해야 합니다.
+구성을 다음 예제와 유사하게 구성합니다.
 
 ```
 kind: "MaintenanceTasks"
@@ -270,14 +267,7 @@ data:
 * 모든 속성을 정의해야 합니다. 상속된 기본값은 없습니다.
 * 아래 속성 표의 유형(정수, 문자열, 부울 등)은 준수해야 합니다.
 
->[!NOTE]
->`yq`을(를) 사용하여 구성 파일의 YAML 형식을 로컬로 확인할 수 있습니다(예: `yq mt.yaml`).
-
-**3** - 비프로덕션 및 프로덕션 구성 파이프라인을 구성합니다.
-
-RDE(신속한 개발 환경)는 제거를 지원하지 않습니다. 프로덕션(샌드박스가 아닌) 프로그램의 다른 환경 유형의 경우 Cloud Manager에서 타깃팅된 배포 구성 파이프라인을 만듭니다.
-
-자세한 내용은 [프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 및 [비프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)을 참조하십시오.
+**4** - [구성 파이프라인 문서에 설명된 대로 Cloud Manager에서 구성 파이프라인을 만듭니다.](/help/operations/config-pipeline.md#managing-in-cloud-manager) 샌드박스 및 RDE(신속한 개발 환경)는 제거를 지원하지 않습니다.
 
 ### 버전 삭제 {#version-purge}
 
