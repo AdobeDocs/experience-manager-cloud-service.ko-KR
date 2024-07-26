@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a1b0d37b2f2f4e58b491651cb8e6504a6909393e
+source-git-commit: af2985f29cb867162061bbac465b19637aa0ecad
 workflow-type: tm+mt
-source-wordcount: '1381'
+source-wordcount: '1405'
 ht-degree: 10%
 
 ---
@@ -57,7 +57,7 @@ AEM as a Cloud Service을 기반으로 자체 CDN을 가져오는 고객의 경�
 | --- | --- | --- |
 | HTTP 코드 100-299 | 포함됨 | 이는 모든 콘텐츠 또는 일부 콘텐츠를 제공하는 일반 요청입니다. |
 | 자동화를 위한 HTTP 라이브러리 | 포함됨 | 예:<br>· Amazon CloudFront<br>· Apache Http 클라이언트<br>· 비동기 Http 클라이언트<br>· Axios<br>· Azureus<br>· Curl<br>· GitHub 노드 가져오기<br>· Guzzle<br>· Go-http-client<br>· Headless Chrome<br>· Java™ 클라이언트<br>· Jersey<br>· Node Oembed<br>· okhttp<br>· Python 요청<br>· Reactor Netty<br>· Wget<br>· WinHTTP |
-| 모니터링 및 상태 확인 도구 | 포함됨 | 사이트의 특정 측면을 모니터링하기 위해 고객이 설정합니다. 가용성 또는 실제 사용자 성능 등을 예로 들 수 있습니다. 사이트의 실제 HTML 페이지가 아닌 `/system/probes/health` 끝점을 사용합니다.<br>예:<br>· Amazon-Route53-Health-Check-Service<br>· EyeMonIT_bot_version_0.1_[(https://www.eyemon.it/)](https://www.eyemon.it/)<br>· Investis-Site24x7<br>· Mozilla/5.0+(호환 가능; UptimeRobot/2.0; [https://uptimerobot.com/](https://uptimerobot.com/))<br>· ThousandEyes-Dragonfly-x1<br>· OmtrBot/1.0<br>· WebMon/2.0.0.0 |
+| 모니터링 및 상태 확인 도구 | 포함됨 | 사이트의 특정 측면을 모니터링하기 위해 고객이 설정합니다. 예를 들어 가용성 또는 실제 사용자 성능을 사용합니다. 상태 검사를 위해 /system/probes/health와 같은 특정 끝점을 대상으로 하는 경우 사이트의 실제 HTML 페이지가 아닌 `/system/probes/health` 끝점을 사용하는 것이 좋습니다.[아래 참조](#excluded-content-request)<br>예:<br>· Amazon-Route53-Health-Check-Service<br>· EyeMonIT_bot_version_0.1_[(https://www.eyemon.it/)](https://www.eyemon.it/)<br>· Investis-Site24x7<br>· Mozilla/5.0+(호환; UptimeRobot/2.0; [https://uptimerobot.com/](https://uptimerobot.com/))<br>· ThousandEyes-Dragonfly-x1<br>· OmtrBot/1.0<br>· WebMon/2.0.0 |
 | `<link rel="prefetch">`개 요청 | 포함됨 | 다음 페이지 로드 속도를 높이기 위해 고객은 사용자가 링크를 클릭하기 전에 이미 캐시에 있도록 브라우저에서 페이지 세트를 로드하도록 할 수 있습니다. *주의: 미리 가져온 페이지 수에 따라 트래픽이 크게 증가하고 있습니다*. |
 | Adobe Analytics 또는 Google Analytics 보고를 차단하는 트래픽 | 포함됨 | 사이트 방문자는 Google Analytics 또는 Adobe Analytics의 정확성에 영향을 주는 개인 정보 보호 소프트웨어(광고 차단기 등)를 설치하는 것이 더 일반적입니다. AEM as a Cloud Service은 클라이언트측이 아닌 Adobe 운영 인프라의 첫 번째 진입점에 대한 요청을 계산합니다. |
 
@@ -73,7 +73,7 @@ AEM as a Cloud Service을 기반으로 자체 CDN을 가져오는 고객의 경�
 | /libs/*로 이동하는 요청 | 제외됨 | 청구할 수 없는 CSRF 토큰과 같은 AEM 내부 JSON 요청. |
 | DDOS 공격의 트래픽 | 제외됨 | DDOS 보호. AEM은 일부 DDOS 공격을 자동으로 탐지하여 차단합니다. 감지된 경우 DDOS 공격은 청구할 수 없습니다. |
 | AEM as a Cloud Service New Relic 모니터링 | 제외됨 | AEM as a Cloud Service 글로벌 모니터링. |
-| 고객이 Cloud Service 프로그램을 모니터링할 수 있는 URL | 제외됨 | 외부에서 가용성을 모니터링하는 권장 URL입니다.<br><br>`/system/probes/health` |
+| 고객이 Cloud Service 프로그램을 모니터링할 수 있는 URL | 제외됨 | URL을 사용하여 가용성 또는 상태 검사를 외부에서 모니터링하는 것이 좋습니다.<br><br>`/system/probes/health` |
 | AEM as a Cloud Service Pod 준비 서비스 | 제외됨 |
 | 요원: 스카이라인-서비스-웜업/1* |
 | 잘 알려진 검색 엔진, 소셜 네트워크 및 HTTP 라이브러리(Fastly에서 태그 지정) | 제외됨 | 검색 인덱스 또는 서비스를 새로 고치기 위해 사이트를 정기적으로 방문하는 잘 알려진 서비스:<br><br>예:<br>· AddSearchBot<br>· AhrefsBot<br>· Applebot<br>· Jeeves Corporate Spider에 문의<br>· Bingbot<br>· BingPreview<br>· BLEXBot<br>· BuiltWith<br>· Bytespider<br>· CrawlerKengo<br>· Facebookexternalhit<br>· Google AdsBot<br>· Google AdsBot Mobile<br>· Googlebot<br>· Lmspider1}· LucidWorks<br>· MJ12bot<br>· Pingdom<br>· Pinterest<br>· SemrushBot<br>· SiteImprove<br>· StashBot<br>· StatusCake<br>· YandexBot<br><br> |
