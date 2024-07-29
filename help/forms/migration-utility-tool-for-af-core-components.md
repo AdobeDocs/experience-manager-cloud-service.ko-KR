@@ -8,14 +8,16 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 5d8f4d5d628b090b8bf54de0f2d9d62c02544522
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 1%
+source-wordcount: '991'
+ht-degree: 3%
 
 ---
 
 # 소개
+
+<span class="preview"> 이 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
 
 [AEM 현대화 도구](https://opensource.adobe.com/aem-modernize-Tools/) 제품군의 일부인 Forms 변환 유틸리티를 사용하면 레거시 Foundation 구성 요소로 빌드된 적응형 Forms을 핵심 구성 요소의 현대적이고 지원되는 기능을 활용하는 양식으로 쉽게 변환할 수 있습니다.
 
