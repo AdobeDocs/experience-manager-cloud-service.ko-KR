@@ -5,7 +5,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5296d46658f591d7736587c98b112006d947321d
+source-git-commit: 96bf1d56d24da851ad4713e3cb0728fd7a18da18
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 10%
@@ -21,6 +21,10 @@ ht-degree: 10%
 ## Cloud Service 콘텐츠 요청 이해 {#understanding-cloud-service-content-requests}
 
 기본 제공 CDN을 사용하는 고객의 경우 Cloud Service 컨텐츠 요청은 서버측 데이터 수집을 통해 측정됩니다. 이 컬렉션은 CDN 로그 분석을 통해 활성화됩니다. 컨텐츠 요청은 Adobe Experience Manager as a Cloud Service CDN에서 시작되는 로그 파일의 자동화된 분석을 통해 AEM as a Cloud Service의 가장자리에 서버측에서 자동으로 수집됩니다. 이 작업은 CDN에서 HTML `(text/html)` 또는 JSON `(application/json)` 콘텐츠를 반환하는 요청을 격리하여 수행되며 아래에 설명된 여러 포함 및 제외 규칙을 기반으로 합니다. 콘텐츠 요청은 CDN 캐시에서 처리 중인 반환된 콘텐츠 또는 CDN(AEM의 dispatchers) 소스로 돌아가는 콘텐츠와는 독립적으로 발생합니다.
+
+<!-- REMOVED AS PER EMAIL REQUEST FROM SHWETA DUA, JULY 30, 2024 TO RICK BROUGH AND ALEXANDRU SARCHIZ   For customers employing their own CDN, client-side collection offers a more precise reflection of interactions, ensuring a reliable measure of website engagement via the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) service. This gives customers advanced insights into their page traffic and performance. While it is beneficial for all customers, it offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of page views from the client side. 
+
+For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting results in numbers that cannot be used to compare with the licensed content requests. With the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md), Adobe can reflect a reliable measure of website engagement. -->
 
 ### Cloud Service 컨텐츠 요청 분산 {#content-requests-variances}
 
