@@ -4,10 +4,10 @@ description: AEM 관리 CDN을 사용하는 방법과 자체 CDN을 AEM 관리 C
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 4c145559d1ad18d31947c0437d6d1d31fb3af1bb
+source-git-commit: 655b92f0fd3c6fb69bdd9343719537d6328fa7be
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 20%
+source-wordcount: '1552'
+ht-degree: 16%
 
 ---
 
@@ -44,7 +44,8 @@ AEM의 기본 CDN을 사용하여 Cloud Manager 셀프서비스 UI를 사용하�
 
 ### CDN에서 트래픽 구성 {#cdn-configuring-cloud}
 
-CDN에서 트래픽을 다음과 같은 다양한 방법으로 구성합니다.
+CDN에서 트래픽을 다음과 같은 다양한 방법으로 구성할 수 있습니다.
+
 * [트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md)(선택적으로 라이선스가 부여된 고급 WAF 규칙 포함)으로 악성 트래픽 차단
 * [요청 및 응답](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)의 특성 수정
 * 301/302 [클라이언트측 리디렉션 적용](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)
@@ -64,7 +65,7 @@ HTTP Cache-Control 헤더를 사용하여 TTL 을 설정하는 것은 콘텐츠 
 
 ### CDN에서의 기본 인증 {#basic-auth}
 
-비즈니스 이해 관계자가 콘텐츠를 검토하는 등 간단한 인증 사용 사례의 경우 사용자 이름과 암호가 필요한 기본 인증 대화 상자를 열어 콘텐츠를 보호하십시오. [자세히 알아보기](/help/implementing/dispatcher/cdn-credentials-authentication.md) 얼리어답터 프로그램에 참여하세요.
+비즈니스 이해 관계자가 콘텐츠를 검토하는 등 가벼운 인증 사용 사례의 경우, 사용자 이름과 암호를 요구하는 기본 인증 대화 상자를 표시하여 콘텐츠를 보호하십시오. [자세히 알아보기](/help/implementing/dispatcher/cdn-credentials-authentication.md) 얼리어답터 프로그램에 참여하세요.
 
 ## 고객 CDN AEM 관리 CDN을 가리킴 {#point-to-point-CDN}
 
@@ -145,6 +146,26 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
+
+### 일반적인 오류 {#common-errors}
+
+제공된 샘플 구성은 필요한 기본 설정을 표시하지만, 고객 구성에는 AEM as a Cloud Service이 트래픽을 제공하는 데 필요한 헤더를 제거, 수정 또는 재정렬하는 다른 영향을 주는 규칙이 있을 수 있습니다. 다음은 AEM as a Cloud Service을 가리키도록 고객 관리 CDN을 구성할 때 발생하는 일반적인 오류입니다.
+
+**Publish 서비스 끝점으로 리디렉션**
+
+요청이 403 금지된 응답을 수신하면 요청에 일부 필수 헤더가 누락되었음을 의미합니다. CDN이 Apex 및 `www` 도메인 트래픽을 모두 관리하고 있지만 `www` 도메인에 대한 올바른 헤더를 추가하지 않는 것이 일반적인 원인입니다. 이 문제는 AEM as a Cloud Service CDN 로그를 확인하고 필요한 요청 헤더를 확인하여 트리거할 수 있습니다.
+
+**리디렉션 루프가 너무 많음**
+
+페이지에 &quot;너무 많은 리디렉션&quot; 루프가 발생하면 일부 요청 헤더가 강제로 자신에게 다시 돌아가는 리디렉션과 일치하는 CDN에 추가됩니다. 예:
+
+* CDN 규칙은 apex 도메인 또는 www 도메인과 일치하도록 만들어지고 apex 도메인의 X-Forwarded-Host 헤더만 추가합니다.
+* Apex 도메인에 대한 요청은 이 CDN 규칙과 일치하며, 이 규칙은 apex 도메인을 X-Forwarded-Host 헤더로 추가합니다.
+* 리디렉션이 apex 도메인에 대해 호스트 헤더와 명시적으로 일치하는 원본(예: ^example.com)으로 요청이 전송됩니다.
+* Apex 도메인에 대한 요청을 www 하위 도메인과의 https로 재작성하는 재작성 규칙이 트리거됩니다.
+* 그런 다음 해당 리디렉션이 고객 에지로 전송되며, 여기서 CDN 규칙이 www 하위 도메인이 아닌 Apex 도메인에 대한 X-Forwarded-Host 헤더를 다시 추가하면서 트리거됩니다. 그런 다음 요청이 실패할 때까지 프로세스가 다시 시작됩니다.
+
+이 문제를 해결하려면 SSL 리디렉션 전략, CDN 규칙, 리디렉션 및 다시 작성 규칙 조합을 평가합니다.
 
 ## 지리적 위치 헤더 {#geo-headers}
 
