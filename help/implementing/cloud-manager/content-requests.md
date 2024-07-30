@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: af2985f29cb867162061bbac465b19637aa0ecad
+source-git-commit: 5296d46658f591d7736587c98b112006d947321d
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1288'
 ht-degree: 10%
 
 ---
@@ -21,11 +21,6 @@ ht-degree: 10%
 ## Cloud Service 콘텐츠 요청 이해 {#understanding-cloud-service-content-requests}
 
 기본 제공 CDN을 사용하는 고객의 경우 Cloud Service 컨텐츠 요청은 서버측 데이터 수집을 통해 측정됩니다. 이 컬렉션은 CDN 로그 분석을 통해 활성화됩니다. 컨텐츠 요청은 Adobe Experience Manager as a Cloud Service CDN에서 시작되는 로그 파일의 자동화된 분석을 통해 AEM as a Cloud Service의 가장자리에 서버측에서 자동으로 수집됩니다. 이 작업은 CDN에서 HTML `(text/html)` 또는 JSON `(application/json)` 콘텐츠를 반환하는 요청을 격리하여 수행되며 아래에 설명된 여러 포함 및 제외 규칙을 기반으로 합니다. 콘텐츠 요청은 CDN 캐시에서 처리 중인 반환된 콘텐츠 또는 CDN(AEM의 dispatchers) 소스로 돌아가는 콘텐츠와는 독립적으로 발생합니다.
-
-자체 CDN을 사용하는 고객의 경우 클라이언트측 컬렉션은 상호 작용을 보다 정확하게 반영하여 [실제 사용 모니터링](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) 서비스를 통해 웹 사이트 참여를 안정적으로 측정할 수 있도록 합니다. 이를 통해 고객은 페이지 트래픽 및 성능에 대한 고급 통찰력을 얻을 수 있습니다. 모든 고객에게 유익하지만 사용자 상호 작용의 대표적인 반영을 제공하여 클라이언트 측의 페이지 보기 수를 캡처하여 웹 사이트 참여에 대한 신뢰할 수 있는 측정을 보장합니다.
-
-AEM as a Cloud Service을 기반으로 자체 CDN을 가져오는 고객의 경우 서버측 보고는 라이선스가 부여된 콘텐츠 요청과 비교하는 데 사용할 수 없는 숫자를 생성합니다. [실제 사용 모니터링](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)을 통해 Adobe은 웹 사이트 참여에 대한 신뢰할 수 있는 측정을 반영할 수 있습니다.
-
 
 ### Cloud Service 컨텐츠 요청 분산 {#content-requests-variances}
 
