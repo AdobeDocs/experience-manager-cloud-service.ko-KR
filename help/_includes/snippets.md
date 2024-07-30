@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
+source-git-commit: 964d4a04c6c645a5cdab29218f93431649d41588
 workflow-type: tm+mt
 source-wordcount: '662'
-ht-degree: 72%
+ht-degree: 98%
 
 ---
 # 스니펫 {#snippets}
@@ -87,8 +87,8 @@ ht-degree: 72%
      </tr>
    <tr>
     <td>반복 가능한 패널 필드에서 수학 연산 수행 </td>
-    <td>OOTB 수학 함수는 규칙 편집기를 사용하여 합계, 평균과 같은 함수를 수행하기 위해 반복 가능한 패널 필드에 적용할 수 있습니다. 두 개의 인수를 제공해야 합니다. 첫 번째 인수는 필드를 포함하는 반복 가능한 패널을 지정하는 반면, 두 번째 인수는 해당 반복 가능한 패널 내의 필드를 지정합니다. </td>
-    <td>반복 가능 패널 필드에 대한 수학 연산은 사용자 정의 함수를 사용하여 수행할 수 있습니다. 규칙 편집기를 사용하여 반복 가능 패널의 필드에 직접 수학 함수를 적용할 수도 있습니다.
+    <td>OOTB 수학 함수를 반복 가능한 패널 필드에 적용하면 규칙 편집기를 사용하여 합계, 평균과 같은 함수를 수행할 수 있습니다. 두 개의 인수를 제공해야 합니다. 첫 번째 인수는 필드가 포함된 반복 가능한 패널을 지정하고, 두 번째 인수는 해당 반복 가능한 패널 내의 필드를 지정합니다. </td>
+    <td>반복 가능한 패널 필드에 대한 수학 연산은 사용자 정의 함수를 사용하여 수행할 수 있습니다. 규칙 편집기를 사용하여 반복 가능한 패널의 필드에 직접 수학 함수를 적용할 수도 있습니다.
    </td>
    </tr>
       <tr>
@@ -117,13 +117,13 @@ ht-degree: 72%
   <table>
   </tbody>
 
-## 규칙 편집기 참조 {#see-also-rule-editor}
+## 규칙 편집기 추가 참조 {#see-also-rule-editor}
 
-* [핵심 구성 요소를 기반으로 하는 적응형 Forms을 위한 규칙 편집기 소개](/help/forms/rule-editor-core-components.md)
-* [핵심 구성 요소를 기반으로 하는 적응형 양식의 규칙 편집기에서 연산자 유형 및 이벤트](/help/forms/rule-editor-core-components-events-operators.md)
-* [핵심 구성 요소 기반 적응형 Forms을 위한 규칙 편집기 사용자 인터페이스](/help/forms/rule-editor-core-components-user-interface.md)
-* [핵심 구성 요소를 기반으로 하는 적응형 양식에 대한 규칙 편집기의 다양한 사용 사례](/help/forms/rule-editor-core-components-user-interface.md)
-* [규칙 편집기의 다양한 버전 차이점](/help/forms/rule-editor-core-components-difference-tables.md)
-* [핵심 구성 요소를 기반으로 하는 적응형 Forms을 위한 맞춤형 기능 소개](/help/forms/create-and-use-custom-functions.md)
-* [핵심 구성 요소를 기반으로 적응형 양식에 대한 사용자 지정 기능 만들기](/help/forms/custom-function-core-component-create-function.md)
-* [사용자 지정 함수 개발 및 사용의 예](/help/forms/custom-function-core-components-use-cases.md)
+* [핵심 구성 요소 기반 적응형 양식의 규칙 편집기 소개](/help/forms/rule-editor-core-components.md)
+* [핵심 구성 요소 기반 적응형 양식의 규칙 편집기에서 사용 가능한 연산자 유형 및 이벤트](/help/forms/rule-editor-core-components-events-operators.md)
+* [핵심 구성 요소 기반 적응형 양식의 규칙 편집기 사용자 인터페이스](/help/forms/rule-editor-core-components-user-interface.md)
+* [핵심 구성 요소 기반 적응형 양식의 규칙 편집기의 다양한 사용 사례](/help/forms/rule-editor-core-components-usecases.md)
+* [다양한 규칙 편집기 에디션의 차이점](/help/forms/rule-editor-core-components-difference-tables.md)
+* [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 소개](/help/forms/create-and-use-custom-functions.md)
+* [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 만들기](/help/forms/custom-function-core-component-create-function.md)
+* [사용자 정의 함수 개발 및 사용의 예](/help/forms/custom-function-core-components-use-cases.md)
