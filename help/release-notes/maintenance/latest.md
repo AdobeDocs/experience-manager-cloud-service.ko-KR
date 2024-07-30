@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 573de431328650778b3ef0979a24190477382310
-workflow-type: ht
-source-wordcount: '332'
-ht-degree: 100%
+source-git-commit: dc7150c6ce971aa6f89fa24f7ca387cbb28db1f2
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 51%
 
 ---
 
@@ -16,42 +16,41 @@ ht-degree: 100%
 
 다음 섹션에서는 Experience Manager as a Cloud Service 현재 유지 관리 릴리스의 기술 릴리스 정보에 대해 간략히 소개합니다.
 
-## 릴리스 17098 {#release-17098}
+## 릴리스 17258 {#release-17258}
 
-2024년 7월 16일에 릴리스된 유지 관리 릴리스 17098의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이전 유지 관리 릴리스는 릴리스 16971이었습니다.
+다음은 2024년 7월 30일에 공개적으로 릴리스된 유지 보수 릴리스 17258에 대한 지속적인 개선 사항을 요약했습니다. 이전 유지 관리 릴리스는 릴리스 17098.
 
-이 유지 관리 릴리스(2024.7.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
+2024.8.0 기능 활성화는 이 유지 관리 릴리스에 대한 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
 
-### 개선 사항 {#enhancements-17098}
+### 개선 사항 {#enhancements-17258}
 
-- SKYOPS-79817: 서비스 사용자 매핑을 위한 Sling 기능 분석기 작업 활성화
+* ASSETS-31445 - 초기 Dynamic Media 템플릿 기능
+* ASSETS-40399 - 업데이트된 DM 자동 트랜스크립션 큐 설정
+* ASSETS-40873 - OSGI 구성을 통해 메타데이터 내보내기 최대 행을 설정할 수 있음
 
-### 해결된 문제 {#fixed-issues-17098}
+### 해결된 문제 {#fixed-issues-17258}
 
-- ASSETS-39665: 6.5에서 AEMCS로 마이그레이션한 후 스마트 자르기 동기화가 작동하지 않음
-- FORMS-14993: 양식 API가 이전에 작업한 자료에 대해 500을 반환함
-- GRANITE-52120: 액세스 제어 데이터를 표시할 때 CRXDE가 500을 반환함
-- GRANITE-52573: 다시 작성된 URL에서 “//”를 사용할 때 요청이 400을 반환함
-- GRANITE-52746: 노드 만들기 대화 상자에 일부 노드 유형이 로드되지 않음
-- GRANITE-52777: 요청이 래핑될 때 404 처리가 중단됨
-- GRANITE-52871: 게시 작업자가 골든 게시와 동기화되고 압축 전에 완료되었는지 확인
-- SKYOPS-79173: 복제기가 지정된 AgentIdFilter와 일치하는 여러 에이전트에 복제하지 않음
-- SKYOPS-80075: 자산 이름에 모음 기호 문자가 포함되어 게시 대기 차단이 발생하는 문제(Mac)
-- SKYOPS-81032: 향상된 로깅을 사용할 때 로그 가져오기 요청으로 생성된 로그가 필터링됨
+* ASSETS-30613 - 에셋 바꾸기가 새 게재 계층에서 에셋을 삭제하고 추가하지 않음
+* ASSETS-31882 - 작성자의 스트리밍 매니페스트 파일에 액세스할 수 없습니다.
+* ASSETS-39598 - 일괄 가져오기를 통해 S3 백엔드에서 이름에 특수 문자가 있는 자산을 삭제할 수 없음
+* CNTBF-209 - 역류 작업 취소 개선
+* SCRNS-3762 - 브라우저에서 채널을 미리 볼 때 시퀀스 채널의 playerLogger를 개선하여 콘솔에 로그를 배치합니다.
+* SCRNS-4455 - 채널 컨텐츠 공급자에서 관리자가 아닌 사용자를 위한 &quot;게시 관리&quot; 및 &quot;빠른 Publish&quot; 버튼 누락
+* SITES-22940 - 콘텐츠 조각을 워크플로 페이로드로 볼 수 없음
 
-### 알려진 문제 {#known-issues-17098}
+### 알려진 문제 {#known-issues-17258}
 
 없음
 
-### 변경 사항 공지 {#change-notice-17098}
+### 변경 사항 공지 {#change-notice-17258}
 
-- 2024년 9월부터 AEM as a Cloud Service는 Sling Model Exporter 프레임워크를 통해 Resource Resolver의 직렬화를 비활성화합니다. 자세한 내용은 [설명서](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)를 참조하십시오.
+* 2024년 9월부터 AEM as a Cloud Service는 Sling Model Exporter 프레임워크를 통해 Resource Resolver의 직렬화를 비활성화합니다. 자세한 내용은 [설명서](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)를 참조하십시오.
 
-### 사용 중단된 기능 및 API {#deprecated-17098}
+### 사용 중단된 기능 및 API {#deprecated-17258}
 
 AEM as a Cloud Service에서 더 이상 사용되지 않는 기능과 API는 [사용 중단된 기능 및 API](/help/release-notes/deprecated-removed-features.md) 문서에 자세히 설명되어 있습니다.
 
-### 임베드된 기술 {#embedded-tech-17098}
+### 임베드된 기술 {#embedded-tech-17258}
 
 | 기술 | 버전 | 링크 |
 |---|---|---|
