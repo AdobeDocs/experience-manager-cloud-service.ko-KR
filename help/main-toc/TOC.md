@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 06fc5cd31b07fcd8bf085b41bc5f39907d4f5a79
 workflow-type: tm+mt
 source-wordcount: '5299'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -276,7 +276,7 @@ ht-degree: 97%
          + [마이그레이션 세트 삭제](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [게시 인스턴스에서 콘텐츠 전송 도구 실행](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [콘텐츠 전송 도구 문제 해결](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
-         + 기존 사용자 매핑 도구(레거시){#legacy-user-mapping-tool}
+         + 기존 사용자 매핑 도구 (레거시){#legacy-user-mapping-tool}
             + [개요](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + [중요 고려 사항](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [사용자 매핑 도구 사용](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
@@ -326,7 +326,7 @@ ht-degree: 97%
          + [반응형 레이아웃](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
          + [구성 요소](/help/sites-cloud/authoring/page-editor/components.md)
          + [모바일 디바이스용 작성](/help/sites-cloud/authoring/page-editor/mobile.md)
-         + [액세스 가능한 콘텐츠 제작(WCAG 2.1 적합성)](/help/sites-cloud/authoring/page-editor/accessible-content.md)
+         + [액세스 가능한 콘텐츠 제작 (WCAG 2.1 적합성)](/help/sites-cloud/authoring/page-editor/accessible-content.md)
          + [키보드 단축키](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
          + [스타일 시스템](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [다시 실행 실행 취소 제한 사항](/help/sites-cloud/authoring/page-editor/undo-redo.md)
@@ -363,7 +363,7 @@ ht-degree: 97%
          + [타겟팅된 콘텐츠에 대한 다중 사이트 관리 구성 방식](/help/sites-cloud/authoring/personalization/multisite-structure.md)
          + [활동 관리](/help/sites-cloud/authoring/personalization/activities.md)
          + [대상자 관리](/help/sites-cloud/authoring/personalization/audiences.md)
-         + [오퍼 생성 및 관리(오퍼 콘솔)](/help/sites-cloud/authoring/personalization/offers.md)
+         + [오퍼 생성 및 관리 (오퍼 콘솔)](/help/sites-cloud/authoring/personalization/offers.md)
          + [세분화 이해](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [ContextHub를 사용하여 세분화 구성](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [등록, 로그인 및 사용자 프로필](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
@@ -698,21 +698,21 @@ ht-degree: 97%
             + [적응형 양식에서 Turnstile 사용](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [적응형 양식에서 사용자 정의 오류 핸들러 추가](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [핵심 구성 요소 기반 적응형 양식의 로케일 추가](/help/forms/supporting-new-language-localization-core-components.md)
-            + [적응형 양식에 대한 JSON 스키마 디자인(핵심 구성 요소)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
+            + [적응형 양식에 대한 JSON 스키마 디자인 (핵심 구성 요소)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [적응형 양식에 버전 관리, 댓글 및 주석 추가](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [적응형 양식 비교](/help/forms/compare-forms.md)
             + [마이그레이션 유틸리티 도구를 사용하여 기초 구성 요소 기반 적응형 양식을 핵심 구성 요소 기반 양식으로 변환](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [적응형 양식을 초안으로 저장](/help/forms/save-core-component-based-form-as-draft.md)
-            + 핵심 구성 요소를 기반으로 하는 적응형 Forms용 규칙 편집기 소개{#rule-editor-core-components}
-               + [핵심 구성 요소를 기반으로 하는 적응형 Forms을 위한 규칙 편집기 소개](/help/forms/rule-editor-core-components.md)
-               + [핵심 구성 요소 기반 적응형 Forms을 위한 규칙 편집기 사용자 인터페이스](/help/forms/rule-editor-core-components-user-interface.md)
-               + [기초 규칙 편집기와 핵심 구성 요소 규칙 편집기의 차이점](/help/forms/rule-editor-core-components-difference-tables.md)
-               + [핵심 구성 요소를 기반으로 하는 적응형 양식에 대해 규칙 편집기에서 사용할 수 있는 연산자 및 이벤트 유형](/help/forms/rule-editor-core-components-events-operators.md)
-               + [핵심 구성 요소를 기반으로 하는 적응형 양식용 규칙 편집기의 예](/help/forms/rule-editor-core-components-usecases.md)
-            + 핵심 구성 요소를 기반으로 하는 적응형 Forms을 위한 사용자 지정 기능 소개{#create-and-use-custom-function-core-component}
-               + [핵심 구성 요소를 기반으로 하는 적응형 Forms을 위한 맞춤형 기능 소개](/help/forms/create-and-use-custom-functions.md)
-               + [핵심 구성 요소를 기반으로 적응형 양식에 대한 사용자 지정 기능 만들기 및 사용](/help/forms/custom-function-core-component-create-function.md)
-               + [핵심 구성 요소를 기반으로 하는 적응형 양식에 대한 사용자 지정 기능의 예](/help/forms/custom-function-core-components-use-cases.md)
+            + 핵심 구성 요소 기반 적응형 양식의 규칙 편집기 소개{#rule-editor-core-components}
+               + [핵심 구성 요소 기반 적응형 양식의 규칙 편집기 소개](/help/forms/rule-editor-core-components.md)
+               + [핵심 구성 요소 기반 적응형 양식의 규칙 편집기 사용자 인터페이스](/help/forms/rule-editor-core-components-user-interface.md)
+               + [기초 규칙 편집기와 핵심 구성 요소의 규칙 편집기 간 차이점](/help/forms/rule-editor-core-components-difference-tables.md)
+               + [핵심 구성 요소 기반 적응형 양식의 규칙 편집기에서 사용 가능한 연산자 및 이벤트 유형](/help/forms/rule-editor-core-components-events-operators.md)
+               + [핵심 구성 요소 기반 적응형 양식의 규칙 편집기 예](/help/forms/rule-editor-core-components-usecases.md)
+            + 핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 소개{#create-and-use-custom-function-core-component}
+               + [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 소개](/help/forms/create-and-use-custom-functions.md)
+               + [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 만들기 및 사용](/help/forms/custom-function-core-component-create-function.md)
+               + [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수의 예](/help/forms/custom-function-core-components-use-cases.md)
       + 기초 구성 요소 {#authoring-adaptive-forms-foundation-components}
          + PDF 양식을 적응형 양식으로 변환 {#afcs}
             + [자동 양식 전환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ko-KR)
@@ -939,7 +939,7 @@ ht-degree: 97%
 + Headless {#headless}
    + [Headless CMS란 무엇입니까?](/help/headless/what-is-headless.md)
    + [AEM Headless 소개](/help/headless/introduction.md)
-   + [개발자 포털(추가 리소스)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko-KR)
+   + [개발자 포털 (추가 리소스)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko-KR)
    + [모범 사례 - 설정 및 사용](/help/headless/best-practices-setup-use.md)
    + 설정 {#setup}
       + [소개](/help/headless/setup/introduction.md)
@@ -989,7 +989,7 @@ ht-degree: 97%
          + [결합 방법](/help/journey-headless/developer/put-it-all-together.md)
          + [Headless 애플리케이션 실행 방법](/help/journey-headless/developer/go-live.md)
          + [옵션 - AEM을 통해 단일 페이지 애플리케이션을 제작하는 방법](/help/journey-headless/developer/create-spa.md)
-         + [개발자 포털(추가 리소스)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko-KR)
+         + [개발자 포털 (추가 리소스)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko-KR)
       + Headless 콘텐츠 설계 여정 {#architect}
          + [AEM Headless 콘텐츠 설계 여정 개요](/help/journey-headless/architect/overview.md)
          + [AEM을 통한 Headless용 콘텐츠 모델링 - 소개](/help/journey-headless/architect/introduction.md)
@@ -1100,7 +1100,7 @@ ht-degree: 97%
       + [AEM 기술 재단](/help/implementing/developing/introduction/aem-technologies.md)
       + [API 참조 자료](/help/implementing/developing/reference-materials.md)
       + [서버측 API용 액세스 토큰 생성](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-      + [서버측 API용 액세스 토큰 생성(레거시)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
+      + [서버측 API용 액세스 토큰 생성 (레거시)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
       + [빠른 사이트 생성 및 프론트엔드 맞춤화](/help/implementing/developing/introduction/quick-site-creation.md)
       + [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [사이트 템플릿 및 테마 맞춤화](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
