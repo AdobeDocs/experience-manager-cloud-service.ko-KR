@@ -134,7 +134,7 @@ HTTP Cache-Control 헤더를 사용하여 TTL 을 설정하는 것은 콘텐츠 
 
 ### 콘텐츠 게재 관련 얼리 어답터 프로그램 {#foundation-early-adopter}
 
-아래의 얼리 어답터 프로그램 중 관심 있는 프로그램을 이 이메일 주소(**<aemcs-cdn-config-adopter@adobe.com>**)로 알려주십시오.
+아래의 얼리 어답터 프로그램 중 관심 있는 프로그램을 이 이메일 주소(**<aemcs-cdn-config-adopter@adobe.com>**)로 알려 주십시오.
 
 #### 콘텐츠 전송 네트워크의 기본 인증(얼리 어답터 프로그램) {#basicauth-cdn}
 
