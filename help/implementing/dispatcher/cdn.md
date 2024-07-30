@@ -4,10 +4,10 @@ description: AEM 관리 CDN을 사용하는 방법과 자체 CDN을 AEM 관리 C
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 4c145559d1ad18d31947c0437d6d1d31fb3af1bb
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 23%
+source-wordcount: '1250'
+ht-degree: 20%
 
 ---
 
@@ -44,13 +44,29 @@ AEM의 기본 CDN을 사용하여 Cloud Manager 셀프서비스 UI를 사용하�
 
 ### CDN에서 트래픽 구성 {#cdn-configuring-cloud}
 
-CDN 트래픽 및 필터를 구성하는 규칙은 [Cloud Manager의 구성 파이프라인을 사용하여 구성 파일에서 선언하고 CDN에 배포할 수 있습니다.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline) 자세한 내용은 [CDN에서 트래픽 구성](/help/implementing/dispatcher/cdn-configuring-traffic.md) 및 [WAF 규칙을 포함한 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md)을 참조하십시오.
+CDN에서 트래픽을 다음과 같은 다양한 방법으로 구성합니다.
+* [트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md)(선택적으로 라이선스가 부여된 고급 WAF 규칙 포함)으로 악성 트래픽 차단
+* [요청 및 응답](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)의 특성 수정
+* 301/302 [클라이언트측 리디렉션 적용](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)
+* [원본 선택기](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)을(를) 선언하여 비 AEM 백엔드에 대한 요청을 프록시로 되돌립니다.
+
+git에서 YAML 파일을 사용하고 Cloud Manager [Config Pipeline](/help/implementing/dispatcher/cdn-configuring-traffic.md)을 사용하여 배포하여 이러한 기능을 구성하는 방법에 대해 알아봅니다.
 
 ### CDN 오류 페이지 구성 {#cdn-error-pages}
 
 AEM에 도달할 수 없는 드문 이벤트에서 브라우저에 제공되는 기본적이고 브랜드가 지정되지 않은 페이지를 재정의하도록 CDN 오류 페이지를 구성할 수 있습니다. 자세한 내용은 [CDN 오류 페이지 구성](/help/implementing/dispatcher/cdn-error-pages.md)을 참조하십시오.
 
-## 고객 CDN은 AEM 관리 CDN에 지정 {#point-to-point-CDN}
+### CDN에서 캐시된 컨텐츠 제거 {#purge-cdn}
+
+HTTP Cache-Control 헤더를 사용하여 TTL 을 설정하는 것은 콘텐츠 전달 성능과 콘텐츠 신선도의 균형을 유지하는 효과적인 방법입니다. 그러나 업데이트된 콘텐츠를 즉시 제공하는 것이 중요한 시나리오에서는 CDN 캐시를 직접 제거하는 것이 유용할 수 있습니다.
+
+[제거 API 토큰 구성](/help/implementing/dispatcher/cdn-credentials-authentication.md/#purge-API-token) 및 [캐시된 CDN 콘텐츠 제거](/help/implementing/dispatcher/cdn-cache-purge.md)에 대해 읽어 보십시오.
+
+### CDN에서의 기본 인증 {#basic-auth}
+
+비즈니스 이해 관계자가 콘텐츠를 검토하는 등 간단한 인증 사용 사례의 경우 사용자 이름과 암호가 필요한 기본 인증 대화 상자를 열어 콘텐츠를 보호하십시오. [자세히 알아보기](/help/implementing/dispatcher/cdn-credentials-authentication.md) 얼리어답터 프로그램에 참여하세요.
+
+## 고객 CDN AEM 관리 CDN을 가리킴 {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
@@ -71,7 +87,7 @@ AEM에 도달할 수 없는 드문 이벤트에서 브라우저에 제공되는 
 1. SNI를 Adobe CDN의 인그레스로 설정합니다.
 1. 호스트 헤더를 원본 도메인으로 설정합니다. 예: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. AEM에서 호스트 헤더를 확인할 수 있도록 `X-Forwarded-Host` 헤더를 도메인 이름으로 설정합니다. 예: `X-Forwarded-Host:example.com`.
-1. `X-AEM-Edge-Key`을(를) 설정합니다. [이 문서에 설명된 대로 Cloud Manager 구성 파이프라인을 사용하여 값을 구성해야 합니다.](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value)
+1. `X-AEM-Edge-Key`을(를) 설정합니다. [이 문서에 설명된 대로 Cloud Manager 구성 파이프라인을 사용하여 값을 구성해야 합니다.](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)
 
    * Adobe CDN이 요청 소스의 유효성을 검사하고 `X-Forwarded-*` 헤더를 AEM 애플리케이션에 전달할 수 있어야 합니다. 예를 들어 `X-Forwarded-For`은(는) 클라이언트 IP를 확인하는 데 사용됩니다. 따라서 `X-Forwarded-*` 헤더가 정확한지 확인하는 것은 신뢰할 수 있는 호출자(즉, 고객 관리 CDN)의 책임입니다(아래 참고 사항 참조).
    * 선택적으로, `X-AEM-Edge-Key`이(가) 없을 때 Adobe CDN 인그레스에 대한 액세스를 차단할 수 있습니다. Adobe CDN의 인그레스에 직접 액세스해야 하는 경우 Adobe에게 알립니다(차단됨).

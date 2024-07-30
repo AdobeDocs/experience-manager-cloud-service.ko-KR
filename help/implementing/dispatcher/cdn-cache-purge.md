@@ -4,20 +4,17 @@ description: API 호출에 사용할 수 있는 제거 API 토큰을 구성하�
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 3b55f3094b7154b7723ef7ae2230d7ae01eb4abc
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 3%
+source-wordcount: '437'
+ht-degree: 1%
 
 ---
 
 # CDN 캐시 삭제 {#cdn-purge-cache}
 
->[!NOTE]
->이 기능은 아직 일반적으로 사용할 수 없습니다. 얼리 어답터 프로그램에 참여하려면 `aemcs-cdn-config-adopter@adobe.com`에게 전자 메일을 보내십시오.
-
 지우기는 Adobe CDN 캐시에서 개체를 제거하여 향후 요청이 캐시에서 처리되지 않고 캐시 누락으로 원점으로 진행됩니다.
-AEM as a Cloud Service을 사용하면 제거 API 토큰을 구성할 수 있으며, 이 토큰을 API 호출에 사용할 수 있습니다. Cloud Manager 구성 파이프라인 인증 지시문을 사용하여 이 토큰을 구성하는 방법에 대해 알아보려면 [CDN 자격 증명 및 인증 구성 문서](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)를 읽어 보십시오.
+AEM as a Cloud Service을 사용하면 제거 API 토큰을 구성할 수 있으며, 이 토큰을 제거 API 호출에 사용할 수 있습니다. Cloud Manager 구성 파이프라인 인증 지시문을 사용하여 이 토큰을 구성하는 방법에 대해 알아보려면 [CDN 자격 증명 및 인증 구성 문서](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)를 읽어 보십시오.
 
 세 가지 지원되는 삭제 변형이 있습니다.
 
