@@ -5,9 +5,9 @@ feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
 source-git-commit: 12e19fe771c0b70ec471949944141f4d6858cbfd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '633'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
@@ -22,24 +22,24 @@ ht-degree: 57%
 
 ## 릴리스 일자 {#release-date}
 
-AEM as a Cloud Service의 Cloud Manager 릴리스 2024.7.0의 릴리스 날짜는 2024년 7월 18일입니다. 다음 릴리스는 2024년 8월 8일에 예정되어 있습니다.
+AEM as a Cloud Service의 Cloud Manager 릴리스 2024.7.0 출시 일자는 2024년 7월 18일입니다. 다음 릴리스는 2024년 8월 8일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
-* 커밋에서 파이프라인을 시작하기 위한 [프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline) 및 [비프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline) 트리거 **Git 변경 시**&#x200B;를 이제 [개인 저장소에서 사용할 수 있습니다.](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-   * 이는 8월 중순까지 완료되는 대로 단계적으로 출시될 예정입니다.
-* 이제 [Adobe 관리 DV 인증서를 추가할 때 ](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)각 도메인에 대한 인증서를 만드는 대신 여러 도메인을 포함하는 단일 인증서를 추가할 수 있습니다.
-* 프로그램에 Sites 또는 Forms 솔루션 이상이 있는 한 [추가 게시 영역](/help/operations/additional-publish-regions.md)이 없는 솔루션은 프로그램에 추가할 수 있습니다.
-* 프로그램에 Sites 또는 Forms 솔루션 이상이 있는 한 [99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)가 없는 솔루션을 프로그램에 추가할 수 있습니다.
-* [경험 감사 대시보드](/help/implementing/cloud-manager/experience-audit-dashboard.md)가 여러 가지 방법으로 향상되었습니다.
-   * 이제 CDN을 통해 `.com` 끝점에 대해 감사가 실행되어 이전 `.net` 접근 방식이 대체되었습니다.
-      * 이 변경 사항은 실제 사용자 경험을 보다 정확하게 시뮬레이션하며 웹 사이트 관리 및 최적화에 대해 보다 현명한 결정을 내리는 데 도움이 됩니다.
-   * 경험 감사 UI에 다음과 같은 여러 가지 기능이 개선되었습니다.
-      * 성능, 모범 사례, SEO 및 접근성에 대한 트렌드 보기가 추가되었습니다.
-      * 이제 Lighthouse 원시 보고서 링크를 보다 직관적인 방식으로 스캔 스냅샷 세부 정보 패널에 직접 볼 수 있습니다.
-      * 등대 권장 사항 섹션이 향상되었습니다.
-   * PWA 지표는 Lighthouse 버전 12.0.0에 따라 제거되었으며 이 지표는 제거되었습니다.
-* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)이(가) [버전 49.](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)(으)로 업데이트되었습니다
+* 이제 [프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline) 및 [비프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline) 트리거 **Git 변경 시**&#x200B;를 통해 [비공개 저장소](/help/implementing/cloud-manager/managing-code/private-repositories.md)에 대해 커밋에서 파이프라인을 시작할 수 있습니다.
+   * 이는 단계적으로 출시될 예정이며 8월 중순에 완료됩니다.
+* 이제 [Adobe 관리 DV 인증서](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)를 추가할 때 각 도메인에 대한 인증서를 만드는 대신 여러 도메인을 다루는 단일 인증서를 추가할 수 있습니다.
+* 이제 프로그램에 Sites 또는 Forms 솔루션이 적용되어 있는 한 [추가 게시 지역](/help/operations/additional-publish-regions.md)이 없는 솔루션을 해당 프로그램에 추가할 수 있습니다.
+* 이제 프로그램에 Sites 또는 Forms 솔루션이 적용되어 있는 한 [99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)가 없는 솔루션을 해당 프로그램에 추가할 수 있습니다.
+* [경험 감사 대시보드](/help/implementing/cloud-manager/experience-audit-dashboard.md)가 다방면으로 개선되었습니다.
+   * 감사는 이제 이전의 `.net` 접근법 대신 CDN을 통한 `.com` 엔드포인트에 대해 수행됩니다.
+      * 이러한 변경 사항은 실제 사용자 경험을 보다 정확하게 시뮬레이션하고 웹 사이트 관리 및 최적화에서 더 정확한 의사 결정을 내릴 수 있도록 해 줍니다.
+   * 경험 감사 UI에는 다음을 포함한 여러 개선 사항이 적용되었습니다.
+      * 성과, 모범 사례, SEO, 접근성에 대한 트렌드 보기가 추가되었습니다.
+      * 이제 Lighthouse 원시 보고서 링크를 스캔 스냅샷 세부 정보 패널에서 더 직관적으로 바로 볼 수 있습니다.
+      * Lighthouse 추천 섹션이 개선되었습니다.
+   * PWA 지표가 Lighthouse 버전 12.0.0에서 제거됨에 따라 해당 지표가 삭제되었습니다.
+* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)이 [버전 49](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)로 업데이트되었습니다.
 
 ## 얼리 어답터 프로그램 {#early-adoption}
 
