@@ -6,7 +6,7 @@ feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
+source-git-commit: 22de8ac77af27114099de2f6b4349232524cb94f
 workflow-type: tm+mt
 source-wordcount: '3454'
 ht-degree: 1%
@@ -30,6 +30,7 @@ ht-degree: 1%
 >Dynamic Media [_스냅숏_](https://snapshot.scene7.com/)을(를) 사용하여 Dynamic Media 이미지 수정자 및 스마트 이미징의 이점을 알아보십시오.
 >
 > 스냅샷은 Dynamic Media의 최적화된 동적 이미지 제공 기능을 보여 주기 위해 설계된 시각적 데모 도구입니다. 테스트 이미지 또는 Dynamic Media URL로 테스트하여 다양한 Dynamic Media 이미지 수정자의 출력을 시각적으로 관찰하고 다음에 대한 스마트 이미징 최적화를 수행합니다.
+>
 >* 파일 크기(WebP 및 AVIF 게재 포함)
 >* 네트워크 대역폭
 >* DPR(장치 픽셀 비율)
@@ -133,13 +134,15 @@ DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측
 * 브라우저가 형식을 지원하는 경우 AVIF로 자동 변환
 * AVIF 전환이 유용하지 않거나 브라우저가 AVIF를 지원하지 않는 경우 자동으로 WebP로 전환합니다.
 * Safari에서 WebP를 지원하지 않는 경우 자동으로 JPEG2000으로 전환
-* IE 9+용 JPEGXR로 자동 변환하거나 Edge에서 WebP를 지원하지 않는 경우\
+* IE 9+용 JPEGXR로 자동 변환하거나 Edge에서 WebP를 지원하지 않는 경우
+
   | 이미지 형식 | 지원되는 브라우저 |
-|—|—|
-| AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) |
-| 웹P | [https://caniuse.com/webp](https://caniuse.com/webp) |
-| 2000 JPEG | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) |
-| JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
+  |---|---|
+  | AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) |
+  | 웹P | [https://caniuse.com/webp](https://caniuse.com/webp) |
+  | 2000 JPEG | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) |
+  | JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
+
 * 이러한 형식을 지원하지 않는 브라우저의 경우 원래 요청한 이미지 형식이 제공됩니다.
 
 원본 이미지 크기가 Smart Imaging에서 생성하는 크기보다 작으면 원본 이미지가 제공됩니다.
@@ -477,5 +480,5 @@ See also [When working with images](/help/assets/dynamic-media/adding-dynamic-me
 
 >[!MORELIKETHIS]
 >
->* [Image optimization with next generation image formats WebP and AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4) -->
->>
+>* [Image optimization with next generation image formats WebP and AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4) 
+-->

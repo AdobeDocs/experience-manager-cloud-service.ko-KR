@@ -4,7 +4,7 @@ description: ' [!DNL Brand Portal], [!DNL desktop app] 및  [!DNL Asset Link]을
 feature: Asset Management, Collaboration, Asset Distribution
 role: Admin, User
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 3%
@@ -121,6 +121,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 | `${emailMessage}` | 이메일 본문 |
 | `${pagePath}` | 공유 링크의 URL |
 | `${linkExpiry}` | 공유 링크 만료일 |
+
 <!--| `${host.prefix}` | Origin of the [!DNL Experience Manager] instance, for example `http://www.adobe.com"` |-->
 
 #### 사용자 지정된 이메일 템플릿 예 {#custom-email-template-example}

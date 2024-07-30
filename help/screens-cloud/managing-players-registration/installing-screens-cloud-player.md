@@ -4,7 +4,7 @@ description: 이 페이지에서는 Screensas a Cloud Service 에서 플레이�
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 1%
@@ -71,10 +71,12 @@ AEM Screens 플레이어에서 기본 재생 모니터링을 사용하면 다음
 | lastContentChange {string} | 마지막 콘텐츠 변경 타임스탬프 |
 
 >[!NOTE]
+>
 >선택적으로, 플레이어 환경 설정에서 고급 속성을 활성화할 수 있습니다(재생 모니터링 활성화).
->|속성|설명|
->|—|—|
->|isContentRendering {boolean}|GPU가 실제 콘텐츠를 재생하고 있는지 확인할 수 있는 경우 참(픽셀 분석 기반)|
+>
+>| 속성 | 설명 |
+>|---|---|
+>| isContentRendering {boolean} | GPU가 실제 콘텐츠를 재생하고 있는지 확인할 수 있으면 true입니다(픽셀 분석 기반). |
 
 ### 제한 사항 {#limitations}
 
