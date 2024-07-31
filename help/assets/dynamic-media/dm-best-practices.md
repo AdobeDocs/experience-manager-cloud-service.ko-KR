@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: fca8b4b34718bd7d22186740fac383b87e968cdb
+source-git-commit: 57c5b886b5964e13219b2525c7ed0073292277a0
 workflow-type: tm+mt
 source-wordcount: '4105'
 ht-degree: 0%
@@ -76,15 +76,23 @@ Dynamic Media 뷰어 우수 사례는 AEM에서 Dynamic Media 에셋의 성능, 
 
 이러한 모범 사례를 따르면 원활한 통합, 효율적인 에셋 관리 및 향상된 뷰어 상호 작용을 달성할 수 있습니다. 자산 동기화, 스마트 자르기 사용, JavaScript 파일 포함 지침 준수는 모두 중요한 사례입니다. 이러한 권장 사항은 다양한 플랫폼 및 디바이스에서 미디어 전달의 무결성과 안정성을 유지하는 데 도움이 됩니다.
 
-* **뷰어 Assets 동기화:** 플레이어를 사용하기 전에 모든 뷰어 자산이 Dynamic Media과 동기화되는지 확인하십시오. 뷰어 문제 해결은 [Dynamic Media 뷰어 문제 해결](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) 문서로 이동하십시오.
-* **샘플 관리자 페이지:** `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`에서 샘플 관리자 페이지에 액세스합니다.
-* **Publish Assets:** 게재 뷰어에서 보기 전에 에셋이 게시되었는지 확인하십시오.
-* **비디오 자동 재생 음소거:** 브라우저에서 볼륨으로 비디오 재생을 제한하므로 비디오의 자동 재생 기능을 사용하려면 음소거된 비디오 설정을 사용하십시오.
-* **스마트 자르기:** 스마트 자르기 구성 요소에 이미지 v3 구성 요소를 사용하여 이미지 에셋 프레젠테이션을 향상시킵니다.
-* **JavaScript 파일 포함:** 페이지에 기본 뷰어 JavaScript 파일만 포함합니다. 뷰어의 런타임 로직에서 다운로드할 수 있는 추가 JavaScript 파일을 참조하지 마십시오. 특히 `/s7viewers` 컨텍스트 경로(통합 SDK 포함)에서 HTML5 SDK `Utils.js` 라이브러리에 직접 연결하지 마십시오. 뷰어 로직은 릴리스 간에 변경될 수 있는 `Utils.js` 또는 유사한 런타임 뷰어 라이브러리의 위치를 관리합니다. Adobe은 서버에 포함된 보조 뷰어의 이전 버전을 유지하지 않으므로, 직접 참조하면 향후 업데이트에서 뷰어 기능을 손상시킬 수 있습니다.
-* **포함 지침:** 각 뷰어에 해당하는 포함 지침을 보려면 설명서를 사용하십시오.
+* **뷰어 Assets 동기화:**
+플레이어를 사용하기 전에 모든 뷰어 자산이 Dynamic Media과 동기화되었는지 확인하십시오. 뷰어 문제 해결은 [Dynamic Media 뷰어 문제 해결](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) 문서로 이동하십시오.
+* **샘플 관리자 페이지:**
+`/libs/dam/gui/content/s7dam/samplemanager/samplemanager`에서 샘플 관리자 페이지에 액세스합니다.
+* **Publish Assets:**
+게재 뷰어에서 보기 전에 에셋이 게시되었는지 확인하십시오.
+* **자동 재생 비디오 음소거:**
+브라우저에서 볼륨으로 비디오 재생을 제한하므로 비디오에서 자동 재생 기능의 경우 음소거된 비디오 설정을 사용하십시오.
+* **스마트 자르기:**
+스마트 자르기에 이미지 v3 구성 요소를 사용하여 이미지 에셋 프레젠테이션을 향상시킵니다.
+* **JavaScript 파일 포함:**
+기본 뷰어 JavaScript 파일만 페이지에 포함하십시오. 뷰어의 런타임 로직에서 다운로드할 수 있는 추가 JavaScript 파일을 참조하지 마십시오. 특히 `/s7viewers` 컨텍스트 경로(통합 SDK 포함)에서 HTML5 SDK `Utils.js` 라이브러리에 직접 연결하지 마십시오. 뷰어 로직은 릴리스 간에 변경될 수 있는 `Utils.js` 또는 유사한 런타임 뷰어 라이브러리의 위치를 관리합니다. Adobe은 서버에 포함된 보조 뷰어의 이전 버전을 유지하지 않으므로, 직접 참조하면 향후 업데이트에서 뷰어 기능을 손상시킬 수 있습니다.
+* **포함 지침:**
+각 뷰어에 고유한 포함 지침을 보려면 설명서를 사용하십시오.
 자세히 알아보시겠습니까? [AEM Assets용 뷰어](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers)(으)로 이동합니다.
-* **SDK 자습서 및 예제:** SDK 구성 요소 API에 대한 자세한 내용은 [Viewer SDK 자습서](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) 및 [HTML5 SDK 응용 프로그램 예제](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html)를 검토하십시오.
+* **SDK 자습서 및 예제:**
+SDK 구성 요소 API에 대한 자세한 내용은 [HTML SDK 자습서](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) 및 [뷰어 SDK 5 애플리케이션 예제](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html)를 검토하십시오.
 
 
 ## 게재를 위한 자산 준비
