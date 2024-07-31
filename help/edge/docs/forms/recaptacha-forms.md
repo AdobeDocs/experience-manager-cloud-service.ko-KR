@@ -4,114 +4,131 @@ description: EDS 양식에서 Google reCAPTCHA 사용
 feature: Edge Delivery Services
 exl-id: ac104e23-f175-435f-8414-19847efa5825
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: fe45123b3aefddaf02bc8584283941db168ba174
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 100%
+source-wordcount: '841'
+ht-degree: 24%
 
 ---
 
 
 # AEM Forms as a Cloud Service용 Edge Delivery Services와 함께 reCAPTCHA 사용
 
+<span>**reCAPTCHA** 기능은 시험판 프로그램에 있습니다. AEM Forms Edge Delivery Services의 **reCAPTCHA** 기능에 대한 액세스를 요청하려면 회사 주소에서 mailto:aem-forms-ea@adobe.com으로 전자 메일을 보내십시오.</span>
+
 reCAPTCHA는 사기 행위, 스팸, 오용으로부터 웹 사이트를 보호하는 데 사용되는 인기 도구입니다. Edge Delivery Services에서 적응형 양식 블록은 인간과 봇을 구별하도록 Google reCAPTCHA를 추가하는 기능을 제공합니다. 이 기능을 사용하여 사용자는 스팸 및 오용으로부터 웹 사이트를 보호할 수 있습니다.
 여행 시작 및 종료 날짜, 객실 예산, 여행 예상 비용 및 여행자 정보 등의 데이터를 수집하는 문의 양식을 고려해 보십시오. 이러한 경우, 악의적인 사용자가 피싱 이메일을 보내거나 스팸봇을 사용하여 관련이 없거나 유해한 콘텐츠를 대량으로 보내는 등의 목적으로 양식을 악용할 위험이 있습니다. reCAPTCHA를 통합하면 실제 사용자가 제출한 것인지 확인해서 스팸 항목을 효과적으로 최소화하여 보안을 강화합니다.
 
-Edge Delivery Services는 적응형 양식 블록에 대해 **점수 기반(v3)-reCAPTCHA**&#x200B;만 지원합니다.
+<!-- ![Recaptcha Image](/help/edge/docs/forms/assets/recaptcha-image.png){width="300" align="center"} -->
 
-![Recaptcha V2](/help/forms/assets/recaptcha-v2-invisible.png)
+Edge Delivery Services은 적응형 양식 블록에 대한 **점수 기반(v3)-reCAPTCHA**&#x200B;만 지원합니다.
 
-**reCAPTCHA** 기능은 프리릴리스 프로그램에 포함되어 있습니다. AEM Forms Edge Delivery Services의 **reCAPTCHA** 기능에 대한 액세스를 요청하려면 회사 주소에서 mailto:aem-forms-ea@adobe.com로 이메일을 보내십시오.
-
-<!--
-By the end of this article, you learn to:
-  * [Enable Google reCAPTCHA's for a single form](#enable-google-recaptchas-for-a-single-form)
-  * [Enable reCAPTCHA for all the forms on your Site](#enable-recaptcha-for-all-the-forms)
-
-## Pre-requisite
-
-Register your domain with [Google reCAPTCHA and obtain credentials](https://www.google.com/recaptcha/admin/create).
-
-## Enable Google reCAPTCHA's for a single form {#enable-google-recaptchas-for-a-single-form}
-
-Enabling Google reCAPTCHA for a single form involves integrating Google's reCAPTCHA service into a specific web form to prevent automated abuse or spam submissions.
-
-To enable Google reCAPTCHA's for a single form:
-1. [Configure the reCAPTCHA secret key in project configuration file](#configure-secret-key)
-1. [Add reCAPTCHA site key to your form](#add-site-key)
+![Recaptcha V2](/help/forms/assets/recaptcha-v2-invisible.png){width="300" align="center"}
 
 
-### Configure the reCAPTCHA secret key in project configuration file {#configure-secret-key}
+이 문서가 작성되면 다음 방법을 파악할 수 있습니다.
+* [단일 양식에 Google reCAPTCHA 활성화](#enable-google-recaptchas-for-a-single-form)
+* [사이트의 모든 양식에 대해 reCAPTCHA 활성화](#enable-recaptcha-for-all-the-forms)
 
-The Site Secret for domain registered with Google reCAPTCHA is added to project the configuration file (`.helix/config`) in your AEM Project folder at Microsoft SharePoint or Google Drive. To add the Site Secret to the config file:
+## 전제 조건
 
-1. Go to your AEM Project folder on Microsoft® SharePoint or Google Drive. 
-1. Create the `.helix/config.xlsx` file in your AEM Project folder in Microsoft SharePoint Site or the `.helix/config` file in AEM Project folder within your Google Drive. 
+* [적응형 Forms 블록을 사용하여 양식 만들기](/help/edge/docs/forms/create-forms.md)에 설명된 단계에 따라 Edge Delivery Services Forms 개발을 시작하십시오.
+* [Google reCAPTCHA에 도메인을 등록하고 자격 증명을 획득](https://www.google.com/recaptcha/admin/create)합니다.
 
-    >[!NOTE]
-    >
-    > The [project configuration file](https://www.aem.live/docs/configuration) is a spreadsheet located at `/.helix/config`. If the file does not exist, create it.
+## 단일 양식에 Google reCAPTCHA 활성화 {#enable-google-recaptchas-for-a-single-form}
 
-1. Open the `config` file and add the following key and value pairs:
+단일 양식에 대해 Google reCAPTCHA를 활성화하려면 자동화된 악용 또는 스팸 제출을 방지하기 위해 Google의 reCAPTCHA 서비스를 특정 웹 양식에 통합해야 합니다.
 
-    * **captcha.secret**: Google reCAPTCHA secret key value
-    * **captcha.type**: reCAPTCHA v2
-  
-   Refer to the image for an illustration of a project configuration file:
+단일 양식에 대해 Google reCAPTCHA를 활성화하려면 다음을 수행하십시오.
+1. [프로젝트 구성 파일에서 reCAPTCHA 비밀 키 구성](#configure-secret-key)
+1. [양식에 reCAPTCHA 사이트 키 추가](#add-site-key)
 
-    ![Project configuration file](/help/forms/assets/recaptcha-config-file.png)
+Edge Delivery Services Forms에서 reCaptcha 구성을 시작하려면 양식에 대한 양식 정의를 포함하는 다음 [스프레드시트](/help/edge/docs/forms/assets/recaptcha.xlsx)를 참조하십시오.
 
-    >[!NOTE]
-    >
-    >  You can retrieve the reCAPTCHA keys from the [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin).
+### 프로젝트 구성 파일에서 reCAPTCHA 비밀 키 구성 {#configure-secret-key}
 
-1.  Preview and publish the `config` file using [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content). 
+Google reCAPTCHA에 등록된 도메인의 사이트 암호가 Microsoft SharePoint 또는 Google 드라이브의 AEM Project 폴더에 구성 파일(`.helix/config`)을 투영하도록 추가됩니다. 구성 파일에 사이트 암호를 추가하려면:
 
-### Add reCAPTCHA site key to your form {#add-site-key}
+1. Microsoft® SharePoint 또는 Google 드라이브의 AEM 프로젝트 폴더로 이동합니다.
+1. Microsoft SharePoint 사이트의 AEM 프로젝트 폴더에 `.helix/config.xlsx` 파일을 만들거나 Google 드라이브의 AEM 프로젝트 폴더에 `.helix/config` 파일을 만듭니다.
 
-The Site Key for domain registered with Google reCAPTCHA is added to the spreadsheet of the form that is to be protected. To add the Site key to a form:
+   >[!NOTE]
+   >
+   > [프로젝트 구성 파일](https://www.aem.live/docs/configuration)은(는) `/.helix/config`에 있는 스프레드시트입니다. 파일이 없으면 만듭니다.
 
-1. Go to your AEM Project folder on Microsoft® SharePoint or Google Drive and open your spreadsheet. You can also create new spreadsheet for a form.
-1. Insert a row into the spreadsheet to add new field as CAPTCHA, including the following details:
-    * **type**: captcha
-    * **value**: Google reCAPTCHA site key value
-  
-    Refer to the illustration below, depicting the spreadsheet with the new row type as CAPTCHA:
-  
-   ![Recaptcha spreadsheet](/help/forms/assets/recaptcha-spreadsheet.png)
+1. `config` 파일을 열고 다음 키 및 값 쌍을 추가합니다.
 
-    >[!NOTE]
-    >
-    >  You can retrieve the reCAPTCHA keys from the [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin).
+   * **captcha.secret**: Google reCAPTCHA 비밀 키 값
+   * **captcha.type**: reCAPTCHA v2
 
-1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview and publish the sheet. 
-You can refer to the [spreadsheet](/help/forms/assets/recaptcha-enquiry.xlsx) that includes the form definition for an enquiry form.
+   >[!NOTE]
+   >
+   >  * [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin)에서 reCAPTCHA 키를 검색할 수 있습니다.
+   >  * `config` 파일의 **captcha.type** 값을 **reCAPTCHA v2**(으)로 지정해야 합니다.
 
-After adding new row in the form definition, a reCAPTCHA badge appears at the bottom-right corner of the form. This ensures that the form is now protected from fraudulent activities, spam, and misuse.
+   아래 프로젝트 구성 파일의 스크린샷을 참조하십시오.
 
-![recaptcha-form](/help/forms/assets/recaptcha-form.png)
+   ![프로젝트 구성 파일](/help/forms/assets/recaptcha-config-file.png)
 
-Refer to the URL below, which showcases the live form with the reCAPTCHA badge:
-https://main--wefinance--wkndforms.hlx.live/enquiry
+1. `config` 파일을 저장합니다.
 
-## Enable reCAPTCHA for all the forms on your Site{#enable-recaptcha-for-all-the-forms}
+1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content)을(를) 사용하여 `config` 파일을 미리 보고 게시합니다.
 
-To apply Google reCAPTCHA to all the forms on your Site that use Adaptive Forms Block, skip the previous steps and directly embed the `sitekey` value into the `recaptcha.js` file. To include site key value in the `recaptcha.js` file:
+### 양식에 reCAPTCHA 사이트 키 추가 {#add-site-key}
 
-1. Open the corresponding GitHub repository on your local machine. 
-1. Navigate to `../blocks/form/integrations/recaptcha.js` file.
-1. Replace the `siteKey` with Google reCAPTCHA site key value.
+Google reCAPTCHA에 등록된 도메인의 사이트 키는 보호되는 양식 스프레드시트에 추가됩니다. 양식에 사이트 키를 추가하려면:
 
-    ![Recaptcha apply to all forms](/help/forms/assets/recaptcha-apply-to-all-forms.png)
+1. Microsoft® SharePoint 또는 Google Drive의 AEM 프로젝트 폴더로 이동하여 스프레드시트를 엽니다. 양식의 스프레드시트를 새로 만들 수도 있습니다.
+1. 다음 세부 정보를 포함하여 새 필드를 CAPTCHA로 추가하려면 스프레드시트에 행을 삽입합니다.
+   * **유형**: captcha
+   * **값**: Google reCAPTCHA 사이트 키 값
 
-    >[!NOTE]
-    >
-    >  You can retrieve the reCAPTCHA keys from the [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin).
+   스프레드시트를 CAPTCHA로 새 행 유형으로 보여 주는 아래 스크린샷을 참조하십시오.
 
-1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview and publish the site. 
+   ![Recaptcha 스프레드시트](/help/edge/docs/forms/assets/recaptcha-spreadsheet.png)
 
-The reCAPTCHA badge starts appearing for all the forms on your Site. 
--->
+   >[!NOTE]
+   >
+   >  [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin)에서 reCAPTCHA 키를 검색할 수 있습니다.
+
+1. 스프레드시트를 저장합니다.
+1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content)을 사용하여 시트를 미리 보고 게시합니다.
+
+양식 정의에 새 행을 추가하면 양식의 오른쪽 하단 모서리에 reCAPTCHA 배지가 나타납니다. 이렇게 하면 이제 양식이 사기 활동, 스팸 및 오용으로부터 보호됩니다.
+
+![recaptcha-form](/help/edge/docs/forms/assets/recaptcha-form.png)
+
+## 사이트의 모든 양식에 대해 reCAPTCHA 활성화{#enable-recaptcha-for-all-the-forms}
+
+적응형 Forms 블록을 사용하는 사이트의 모든 양식에 Google reCAPTCHA를 적용하려면 이전 단계를 건너뛰고 `sitekey` 값을 `recaptcha.js` 파일에 직접 포함하십시오. `recaptcha.js` 파일에 사이트 키 값을 포함하려면:
+
+1. [recaptcha.js 파일에서 Google reCAPTCHA 사이트 키 업데이트](#1-update-google-recaptcha-site-key-in-recaptchajs-file)
+1. [파일 배포 및 프로젝트 빌드](#2-deploy-the-file-and-build-the-project)
+1. [AEM 사이드 킥을 사용하여 사이트 미리보기](#3-preview-the-site-using-the-aem-sidekick)
+
+### recaptcha.js 파일에서 Google reCAPTCHA 사이트 키 업데이트
+
+1. 로컬 컴퓨터에서 해당 GitHub 리포지토리를 엽니다.
+1. `[../Form Block/integrations]` 폴더로 이동하여 `recaptcha.js` 파일을 엽니다.
+1. `siteKey`을(를) Google reCAPTCHA 사이트 키 값으로 바꿉니다.
+
+   ![Recaptcha가 모든 양식에 적용됨](/help/forms/assets/recaptcha-apply-to-all-forms.png)
+
+   >[!NOTE]
+   >
+   >  [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin)에서 reCAPTCHA 키를 검색할 수 있습니다.
+
+1. `recaptcha.js` 파일을 저장합니다.
+
+### 파일 배포 및 프로젝트 빌드
+
+업데이트된 `recaptcha.js` 파일을 GitHub 프로젝트에 배포하고 빌드 성공 여부를 확인합니다.
+
+### AEM 사이드 킥을 사용하여 사이트 미리보기
+
+[AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content)을(를) 사용하여 사이트를 미리 보고 게시하십시오.
+
+reCAPTCHA 배지는 사이트의 모든 양식에 대해 표시되기 시작합니다.
 
 ## 추가 참조
 
