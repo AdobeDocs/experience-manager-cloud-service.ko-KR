@@ -4,9 +4,9 @@ description: 웹 애플리케이션 방화벽(WAF)이 포함된 트래픽 필터
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 7ce397b2564373a006d7f413409d29265c74d768
 workflow-type: tm+mt
-source-wordcount: '3939'
+source-wordcount: '3932'
 ht-degree: 93%
 
 ---
@@ -505,10 +505,6 @@ data:
 ```
 
 ## 원본 기본 트래픽 스파이크 경고 {#traffic-spike-at-origin-alert}
-
->[!NOTE]
->
->이 기능은 점진적으로 제공되고 있습니다.
 
 원본으로 상당한 양의 트래픽이 전송되며 임계값이 높은 요청이 동일한 IP 주소에서 들어와 DDoS 공격이 의심되는 경우 [액션 센터](/help/operations/actions-center.md) 이메일 알림이 전송됩니다.
 
