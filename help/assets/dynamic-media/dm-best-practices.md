@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media 모범 사례
-description: Dynamic Media의 이미지 및 비디오 작업 모범 사례에 대해 알아봅니다.
+description: Dynamic Media 뷰어에 대한 이미지 및 비디오 작업 및 모범 사례와 관련된 Dynamic Media의 모범 사례에 대해 알아봅니다.
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: de1116ee39024d30e14838f8b36f9ab087a45f85
+source-git-commit: fca8b4b34718bd7d22186740fac383b87e968cdb
 workflow-type: tm+mt
-source-wordcount: '3571'
+source-wordcount: '4105'
 ht-degree: 0%
 
 ---
@@ -68,6 +68,23 @@ Dynamic Media과 동기화할 자산을 선택할 수 있는 사전 예방 기�
 이 두 가지 모범 사례는 리치 미디어 콘텐츠에 대한 제어, 거버넌스 및 생산성을 개선하는 데 도움이 됩니다.
 
 자세히 알아보시겠습니까? [Dynamic Media의 폴더 수준에서 선택적 Publish 구성](/help/assets/dynamic-media/selective-publishing.md)(으)로 이동합니다.
+
+
+## Dynamic Media 뷰어
+
+Dynamic Media 뷰어 우수 사례는 AEM에서 Dynamic Media 에셋의 성능, 기능 및 사용자 경험을 최적화하기 위해 고안된 필수 지침입니다. 이러한 사례를 통해 Dynamic Media의 전체 기능을 사용하도록 에셋을 올바르게 동기화, 게시 및 구성할 수 있습니다.
+
+이러한 모범 사례를 따르면 원활한 통합, 효율적인 에셋 관리 및 향상된 뷰어 상호 작용을 달성할 수 있습니다. 자산 동기화, 스마트 자르기 사용, JavaScript 파일 포함 지침 준수는 모두 중요한 사례입니다. 이러한 권장 사항은 다양한 플랫폼 및 디바이스에서 미디어 전달의 무결성과 안정성을 유지하는 데 도움이 됩니다.
+
+* **뷰어 Assets 동기화:** 플레이어를 사용하기 전에 모든 뷰어 자산이 Dynamic Media과 동기화되는지 확인하십시오. 뷰어 문제 해결은 [Dynamic Media 뷰어 문제 해결](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) 문서로 이동하십시오.
+* **샘플 관리자 페이지:** `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`에서 샘플 관리자 페이지에 액세스합니다.
+* **Publish Assets:** 게재 뷰어에서 보기 전에 에셋이 게시되었는지 확인하십시오.
+* **비디오 자동 재생 음소거:** 브라우저에서 볼륨으로 비디오 재생을 제한하므로 비디오의 자동 재생 기능을 사용하려면 음소거된 비디오 설정을 사용하십시오.
+* **스마트 자르기:** 스마트 자르기 구성 요소에 이미지 v3 구성 요소를 사용하여 이미지 에셋 프레젠테이션을 향상시킵니다.
+* **JavaScript 파일 포함:** 페이지에 기본 뷰어 JavaScript 파일만 포함합니다. 뷰어의 런타임 로직에서 다운로드할 수 있는 추가 JavaScript 파일을 참조하지 마십시오. 특히 `/s7viewers` 컨텍스트 경로(통합 SDK 포함)에서 HTML5 SDK `Utils.js` 라이브러리에 직접 연결하지 마십시오. 뷰어 로직은 릴리스 간에 변경될 수 있는 `Utils.js` 또는 유사한 런타임 뷰어 라이브러리의 위치를 관리합니다. Adobe은 서버에 포함된 보조 뷰어의 이전 버전을 유지하지 않으므로, 직접 참조하면 향후 업데이트에서 뷰어 기능을 손상시킬 수 있습니다.
+* **포함 지침:** 각 뷰어에 해당하는 포함 지침을 보려면 설명서를 사용하십시오.
+자세히 알아보시겠습니까? [AEM Assets용 뷰어](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers)(으)로 이동합니다.
+* **SDK 자습서 및 예제:** SDK 구성 요소 API에 대한 자세한 내용은 [Viewer SDK 자습서](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) 및 [HTML5 SDK 응용 프로그램 예제](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html)를 검토하십시오.
 
 
 ## 게재를 위한 자산 준비
@@ -156,7 +173,6 @@ Dynamic Media의 스마트 이미징 및 스마트 자르기 기능을 사용하
 
 자세히 알아보시겠습니까? [Google에 대한 URL 구조 모범 사례](https://developers.google.com/search/docs/crawling-indexing/url-structure) 및 [Google 이미지 SEO 모범 사례](https://developers.google.com/search/docs/appearance/google-images)(으)로 이동
 
-
 ### 명령을 사용하여 이미지를 동적으로 향상시키고 시각적 효과를 만듭니다.
 
 **비즈니스 사례:** *이미지에 다양한 시각적 효과를 적용합니다.*
@@ -191,7 +207,7 @@ Dynamic Media을 사용하면 URL을 통해 직접 이미지를 조작할 수 �
 | --- | --- |
 | **기본 이미지 업로드 및 게시** | 먼저 로고나 아이콘을 겹칠 기본 이미지를 업로드하고 게시합니다. 모든 이미지를 기반으로 사용할 수 있습니다.<br>예를 들어 기본 이미지는 <br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa)입니다. |
 | **로고 또는 아이콘 이미지를 업로드 및 게시합니다** | 그런 다음 기본 이미지 위에 겹칠 이미지를 업로드하고 게시합니다. 이 이미지는 오버레이할 로고 또는 아이콘이 있는 투명 PNG여야 합니다.<br>투명 효과가 있는 별 개체의 투명 PNG 이미지는 다음과 같습니다.<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
-| **Dynamic Media URL 적용** | 이제 기본 이미지와 로고 또는 아이콘 이미지를 결합하는 Dynamic Media URL을 만듭니다. URL 명령을 사용하여 이 효과를 얻을 수 있습니다.<br>URL 구조는 다음과 같습니다.<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>여기서<br>· `hotspotRetailBaseImage`은(는) 기본 이미지입니다.<br>· `starxp`은(는) 로고/아이콘 이미지입니다.<br>· `layer=1`은(는) 로고 또는 아이콘이 기본 이미지 위에 겹치도록 지정합니다.<br>· `scale=1.25`에서 로고/아이콘의 크기를 조정합니다.<br>· `posN=0.33,-.25`이(가) 기본 이미지를 기준으로 로고/아이콘의 위치를 결정합니다.<br>· `fmt=png`은(는) 출력이 PNG 형식인지 확인합니다. |
+| **Dynamic Media URL 적용** | 이제 기본 이미지와 로고 또는 아이콘 이미지를 결합하는 Dynamic Media URL을 만듭니다. URL 명령을 사용하여 이 효과를 얻을 수 있습니다.<br>URL 구조는 다음과 같습니다.<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>여기서 에셋<br>· `hotspotRetailBaseImage`은(는) 기본 이미지입니다.<br>· `starxp`은(는) 로고/아이콘 이미지입니다.<br>· `layer=1`은(는) 로고 또는 아이콘이 기본 이미지 위에 겹치도록 지정합니다.<br>· `scale=1.25`에서 로고/아이콘의 크기를 조정합니다.<br>· `posN=0.33,-.25`이(가) 기본 이미지를 기준으로 로고/아이콘의 위치를 결정합니다.<br>· `fmt=png`은(는) 출력이 PNG 형식인지 확인합니다. |
 
 자세한 내용 `src` 명령 및 기타 Dynamic Media URL 명령에 대한 자세한 내용을 보려면 [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src)(으)로 이동하십시오.
 
@@ -246,6 +262,28 @@ Dynamic Media을 사용하면 URL을 통해 직접 이미지를 조작할 수 �
 
 특정 요구 사항에 맞게 이러한 변형을 자유롭게 탐색할 수 있습니다.
 URL 내에서 사용할 수 있는 명령에 대해 자세히 알아보시겠습니까? [명령 참조](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)(으)로 이동합니다.
+
+### GIF 이미지 게재
+
+**비즈니스 사례:** *Dynamic Media을 사용하여 GIF 스트리밍*
+
+Dynamic Media을 통해 GIF을 업로드하고 게재할 수 있습니다. 애니메이션 GIF을 렌더링하려면 URL에서 `is/image`을(를) `is/content`(으)로 바꾸십시오. 예를 들어 `abc.gif`을(를) 업로드한 경우 다음을 사용하십시오.
+
+* 이 URL 경로는 GIF의 정적 보기를 렌더링합니다.
+
+  ```
+  https://your.domain.com/is/image/yourfolder/abc
+  ```
+
+* 이 URL 경로는 GIF의 애니메이션 보기를 렌더링합니다.
+
+  ```
+  https://your.domain.com/is/content/yourfolder/abc
+  ```
+
+>[!NOTE]
+>
+>URL 경로에서 `is/content`을(를) 사용하는 경우 이미지 변환 명령이 자산에 적용되지 않습니다.
 
 ### 내 웹 사이트용 Publish 비디오
 
@@ -349,3 +387,11 @@ Adobe은 이미지 형식을 수동으로 `webp` 또는 `avif`(으)로 설정하
 스마트 이미징을 사용하면 각 사용자의 검색 환경에 맞게 가능한 가장 효율적인 방식으로 이미지가 제공되도록 할 수 있습니다. 이 접근법은 프로세스를 단순화하고 이미지 로딩 시간 및 전반적인 사용자 경험의 관점에서 개선된 성능으로 이어질 수 있다.
 
 자세히 알아보시겠습니까? [스마트 이미징](/help/assets/dynamic-media/imaging-faq.md)(으)로 이동합니다.
+
+### 고객에게 에셋 게재 게시
+
+**비즈니스 사례:** *새 콘텐츠를 게시하거나 기존 콘텐츠를 덮어쓴 후 변경 내용이 CDN에 바로 표시되도록 하려면 어떻게 해야 합니까?*
+
+CDN(Content Delivery Network)은 고객에게 신속하게 전달하기 위해 Dynamic Media 에셋을 캐시합니다. 이러한 에셋에 대한 업데이트가 이루어진 경우 변경 사항이 웹 사이트에 즉시 적용되는 것이 중요합니다. CDN 캐시를 지우거나 무효화하면 Dynamic Media에서 제공하는 자산을 빠르게 업데이트할 수 있습니다. 이 방법을 사용하면 일반적으로 10시간으로 설정된 TTL(Time To Live) 값을 기반으로 캐시가 만료될 때까지 기다릴 필요가 없습니다. 대신 Dynamic Media 사용자 인터페이스 내에서 캐시를 몇 분 내에 만료하도록 요청을 보낼 수 있습니다.
+
+자세히 알아보시겠습니까? [Dynamic Media을 통해 CDN 캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)(으)로 이동합니다.
