@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 57c5b886b5964e13219b2525c7ed0073292277a0
+source-git-commit: ce5f9fc101c86ffdfb685ff493e8f5e508f45e37
 workflow-type: tm+mt
-source-wordcount: '4105'
+source-wordcount: '4118'
 ht-degree: 0%
 
 ---
@@ -77,9 +77,11 @@ Dynamic Media 뷰어 우수 사례는 AEM에서 Dynamic Media 에셋의 성능, 
 이러한 모범 사례를 따르면 원활한 통합, 효율적인 에셋 관리 및 향상된 뷰어 상호 작용을 달성할 수 있습니다. 자산 동기화, 스마트 자르기 사용, JavaScript 파일 포함 지침 준수는 모두 중요한 사례입니다. 이러한 권장 사항은 다양한 플랫폼 및 디바이스에서 미디어 전달의 무결성과 안정성을 유지하는 데 도움이 됩니다.
 
 * **뷰어 Assets 동기화:**
-플레이어를 사용하기 전에 모든 뷰어 자산이 Dynamic Media과 동기화되었는지 확인하십시오. 뷰어 문제 해결은 [Dynamic Media 뷰어 문제 해결](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) 문서로 이동하십시오.
-* **샘플 관리자 페이지:**
-`/libs/dam/gui/content/s7dam/samplemanager/samplemanager`에서 샘플 관리자 페이지에 액세스합니다.
+플레이어를 사용하기 전에 모든 뷰어 자산이 Dynamic Media과 동기화되었는지 확인하십시오.
+
+   * `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`에서 샘플 관리자 페이지에 액세스합니다. 이 페이지에서는 기본 제공 아이콘, CSS 파일 및 사전 설정을 포함한 뷰어의 에셋을 재동기화할 수 있습니다.
+   * 뷰어 문제가 발생하면 [Dynamic Media 뷰어 문제 해결](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) 문서로 이동하십시오.
+
 * **Publish Assets:**
 게재 뷰어에서 보기 전에 에셋이 게시되었는지 확인하십시오.
 * **자동 재생 비디오 음소거:**
@@ -400,6 +402,7 @@ Adobe은 이미지 형식을 수동으로 `webp` 또는 `avif`(으)로 설정하
 
 **비즈니스 사례:** *새 콘텐츠를 게시하거나 기존 콘텐츠를 덮어쓴 후 변경 내용이 CDN에 바로 표시되도록 하려면 어떻게 해야 합니까?*
 
-CDN(Content Delivery Network)은 고객에게 신속하게 전달하기 위해 Dynamic Media 에셋을 캐시합니다. 이러한 에셋에 대한 업데이트가 이루어진 경우 변경 사항이 웹 사이트에 즉시 적용되는 것이 중요합니다. CDN 캐시를 지우거나 무효화하면 Dynamic Media에서 제공하는 자산을 빠르게 업데이트할 수 있습니다. 이 방법을 사용하면 일반적으로 10시간으로 설정된 TTL(Time To Live) 값을 기반으로 캐시가 만료될 때까지 기다릴 필요가 없습니다. 대신 Dynamic Media 사용자 인터페이스 내에서 캐시를 몇 분 내에 만료하도록 요청을 보낼 수 있습니다.
+CDN(Content Delivery Network)은 고객에게 신속하게 전달하기 위해 Dynamic Media 에셋을 캐시합니다. 이러한 에셋에 대한 업데이트가 이루어진 경우 변경 사항이 웹 사이트에 즉시 적용되는 것이 중요합니다. CDN 캐시를 지우거나 무효화하면 Dynamic Media에서 제공하는 자산을 빠르게 업데이트할 수 있습니다. 이 방법을 사용하면 일반적으로 10시간으로 설정된 TTL(Time To Live) 값을 기반으로 캐시가 만료될 때까지 기다릴 필요가 없습니다.
+특정 사용 사례에 따라 CDN TTL(Time to Live) 설정을 그에 따라 업데이트할 수 있습니다.
 
 자세히 알아보시겠습니까? [Dynamic Media을 통해 CDN 캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)(으)로 이동합니다.
