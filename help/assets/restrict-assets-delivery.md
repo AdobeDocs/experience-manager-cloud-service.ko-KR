@@ -3,9 +3,9 @@ title: Experience Manager에서 에셋 전달 제한
 description: ' [!DNL Experience Manager]에서 에셋 전달을 제한하는 방법에 대해 알아봅니다.'
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 16b313a4fb79f915613044d12d29e618209113ec
+source-git-commit: 65f0018a25c57189229fc56332ad874ebd0deef4
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1130'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Experience Manager Assets에서 IMS를 통한 제한된 전달에는 두 가지 
    1. 추가해야 하는 **[!UICONTROL 사용자 그룹]**&#x200B;을(를) 선택하고 URL에서 **[!UICONTROL 조직 ID]** 및 **[!UICONTROL 사용자 그룹 ID]**&#x200B;을(를) 추출하거나 조직 ID(예: `{orgID}@AdobeOrg:{usergroupID}`)를 사용하십시오.
 
 1. 그룹 ID를 자산 속성의 **[!UICONTROL 역할]** 필드에 추가하십시오. <br>
-**[!UICONTROL 역할]** 필드에 정의된 그룹 ID만 자산에 액세스할 수 있습니다. **[!UICONTROL 역할]** 필드에 IMS 클라이언트 ID와 IMS 프로필 ID를 추가할 수도 있습니다. 예: `{orgId}@AdobeOrg:{profileId}`
+**[!UICONTROL 역할]** 필드에 정의된 그룹 ID만 자산에 액세스할 수 있습니다. IMS 그룹 ID와 별도로 **[!UICONTROL 역할]** 필드에 IMS 사용자 ID와 IMS 프로필 ID를 추가할 수도 있습니다. 예: `{orgId}@AdobeOrg:{profileId}`
 
    >[!NOTE]
    >
