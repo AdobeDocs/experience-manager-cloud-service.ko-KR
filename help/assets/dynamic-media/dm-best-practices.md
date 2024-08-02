@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: ce5f9fc101c86ffdfb685ff493e8f5e508f45e37
+source-git-commit: 5e028e99b472dc10ecd739ee5e5c70ea4daa2078
 workflow-type: tm+mt
 source-wordcount: '4118'
 ht-degree: 0%
@@ -162,14 +162,17 @@ Dynamic Media에서 이미지 사전 설정을 정기적으로 사용하면 이�
 
 * **의미 있는 이미지 파일 이름:**
 이미지 내용을 반영하는 수사적 파일 이름을 사용합니다. 예:
+
    * `myCompany-Silver-Wrist-Watch` 사용
    * *방지* `myCompany_Silver_Wrist_Watch` 또는 `myCompanySilverWristWatch`
 
   이렇게 하면 검색 엔진이 이미지 컨텍스트를 이해하고 SEO를 개선하는 데 도움이 됩니다. Google에서는 파일 이름에서 밑줄 또는 공백보다 하이픈을 선호합니다. 또한 파일 이름에 단어를 연결하지 마십시오.
 * **사용자 지정 도메인:**
 브랜드 인지도와 신뢰를 강화하기 위해 회사 또는 브랜드 이름을 포함하는 사용자 정의 도메인을 구현합니다. 예:
+
    * `http://images.mycompany.com/is/image/companyname/` 사용
    * *방지* `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
+
 * **SEO에 친숙한 폴더 구조:**
 `http://images.mycompany.com/is/image/companyname/`과 같은 더 나은 색인화를 위해 회사 이름이나 브랜드를 포함하는 폴더 구조로 이미지를 구성하십시오.
 * **Dynamic Media 규칙 집합:**
@@ -309,6 +312,7 @@ Dynamic Media을 통해 GIF을 업로드하고 게재할 수 있습니다. 애�
 모든 것이 예상대로 보이도록 비디오를 미리 봅니다. 만족스러우면 게시하십시오. 이 단계에서는 대상자가 비디오에 액세스할 수 있습니다.
 * **링크 또는 포함:**
 게시 후 두 가지 옵션이 있습니다.
+
    * **직접 연결:**
 제공된 URL을 사용하여 비디오에 직접 연결합니다. 마케팅 사이트에서 적절하게 하이퍼링크를 지정합니다.
    * **비디오 포함:**
