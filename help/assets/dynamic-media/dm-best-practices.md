@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 5e028e99b472dc10ecd739ee5e5c70ea4daa2078
+source-git-commit: 220a8d8aecde76c7d77ebab16fda2158316c08dd
 workflow-type: tm+mt
 source-wordcount: '4118'
 ht-degree: 0%
@@ -406,7 +406,6 @@ Adobe은 이미지 형식을 수동으로 `webp` 또는 `avif`(으)로 설정하
 
 **비즈니스 사례:** *새 콘텐츠를 게시하거나 기존 콘텐츠를 덮어쓴 후 변경 내용이 CDN에 바로 표시되도록 하려면 어떻게 해야 합니까?*
 
-CDN(Content Delivery Network)은 고객에게 신속하게 전달하기 위해 Dynamic Media 에셋을 캐시합니다. 이러한 에셋에 대한 업데이트가 이루어진 경우 변경 사항이 웹 사이트에 즉시 적용되는 것이 중요합니다. CDN 캐시를 지우거나 무효화하면 Dynamic Media에서 제공하는 자산을 빠르게 업데이트할 수 있습니다. 이 방법을 사용하면 일반적으로 10시간으로 설정된 TTL(Time To Live) 값을 기반으로 캐시가 만료될 때까지 기다릴 필요가 없습니다.
-특정 사용 사례에 따라 CDN TTL(Time to Live) 설정을 그에 따라 업데이트할 수 있습니다.
+CDN(Content Delivery Network)은 고객에게 신속하게 전달하기 위해 Dynamic Media 에셋을 캐시합니다. 이러한 에셋에 대한 업데이트가 이루어진 경우 변경 사항이 웹 사이트에 즉시 적용되는 것이 중요합니다. CDN 캐시를 지우거나 무효화하면 Dynamic Media에서 제공하는 자산을 빠르게 업데이트할 수 있습니다. 이 방법을 사용하면 일반적으로 10시간으로 설정된 TTL(Time To Live) 값을 기반으로 캐시가 만료될 때까지 기다릴 필요가 없습니다. 특정 사용 사례에 따라 CDN TTL(Time to Live) 설정을 그에 따라 업데이트할 수 있습니다.
 
 자세히 알아보시겠습니까? [Dynamic Media을 통해 CDN 캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)(으)로 이동합니다.
