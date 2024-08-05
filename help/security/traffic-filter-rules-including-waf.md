@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 7ce397b2564373a006d7f413409d29265c74d768
 workflow-type: tm+mt
 source-wordcount: '3932'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 93%
 
 트래픽 필터 규칙의 하위 범주는 향상된 보안 라이선스와 WAF-DDoS 보호 라이선스 중 하나가 필요합니다. 이러한 강력한 규칙은 WAF(웹 애플리케이션 방화벽) 트래픽 필터 규칙(이하 WAF 규칙)이라고 하며 이 문서 후반부에 설명된 [WAF 플래그](#waf-flags-list)에 액세스할 수 있습니다.
 
-트래픽 필터 규칙은 Cloud Manager 구성 파이프라인을 통해 프로덕션(샌드박스가 아닌) 프로그램의 개발, 스테이지 및 프로덕션 환경 유형에 배포할 수 있습니다. RDE에 대한 지원은 향후 제공될 예정입니다.
+Cloud Manager 구성 파이프라인을 통해 트래픽 필터 규칙을 프로덕션(비샌드박스) 프로그램의 개발, 스테이징 및 프로덕션 환경 유형에 배포할 수 있습니다. RDE에 대한 지원은 향후 제공될 예정입니다.
 
 [튜토리얼을 참고하면](#tutorial) 이 기능에 대한 전문 지식을 빠르게 습득할 수 있습니다.
 
@@ -63,13 +63,13 @@ Edge에서 Adobe Managed CDN은 대규모 및 반사/증폭 공격(레이어 3 �
 
 예를 들어 Apache 계층에서 고객은 [Dispatcher 모듈](https://experienceleague.adobe.com/ko/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter)과 [ModSecurity](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) 중 하나를 구성하여 특정 콘텐츠에 대한 액세스를 제한할 수 있습니다.
 
-이 문서에서 설명하는 대로 트래픽 필터 규칙은 Cloud Manager의 [config 파이프라인을 사용하여 Adobe 관리 CDN에 배포할 수 있습니다.](/help/operations/config-pipeline.md) IP 주소, 경로 및 헤더와 같은 속성을 기반으로 하는 트래픽 필터 규칙이나 속도 제한을 기반으로 하는 규칙 외에, 고객은 WAF 규칙이라는 강력한 하위 범주의 트래픽 필터 규칙에 라이선스를 부여할 수도 있습니다.
+이 문서의 설명에 따라 Cloud Manager의 [구성 파이프라인을 사용하여 트래픽 필터 규칙을 Adobe Managed CDN에 배포할 수 있습니다.](/help/operations/config-pipeline.md) IP 주소, 경로 및 헤더 등 속성 기반의 트래픽 필터 규칙 또는 속도 제한 설정 기반의 규칙 외에도 고객은 WAF 규칙이라는 트래픽 필터 규칙의 강력한 하위 범주에 라이선스를 부여할 수도 있습니다.
 
 ## 권장 프로세스 {#suggested-process}
 
 다음 프로세스는 올바른 트래픽 필터 규칙을 권장하는 높은 수준의 엔드 투 엔드 프로세스입니다.
 
-1. [설정](#setup) 섹션에 설명된 대로 비프로덕션 및 프로덕션 구성 파이프라인을 구성합니다.
+1. [설정](#setup) 섹션의 설명에 따라 비프로덕션 및 프로덕션 구성 파이프라인을 구성하십시오.
 1. WAF 트래픽 필터 규칙의 하위 범주에 라이선스를 부여한 고객은 Cloud Manager에서 해당 규칙을 활성화해야 합니다.
 1. 라이선스가 부여된 경우, WAF 규칙 등 트래픽 필터 규칙을 사용하는 방법을 구체적으로 이해하려면 튜토리얼을 읽고 테스트해 보십시오. 튜토리얼은 개발 환경에 규칙을 배포하고, 악성 트래픽을 시뮬레이션하고, [CDN 로그](#cdn-logs)를 다운로드하고, [대시보드 도구](#dashboard-tooling)로 로그를 분석하는 과정에 대해 소개합니다.
 1. 권장 스타터 규칙을 `cdn.yaml`에 복사하고 로그 모드에서 구성을 프로덕션 환경에 배포하십시오.
@@ -79,7 +79,7 @@ Edge에서 Adobe Managed CDN은 대규모 및 반사/증폭 공격(레이어 3 �
 
 ## 설정 {#setup}
 
-1. WAF 규칙을 포함한 일련의 트래픽 필터 규칙을 사용하여 `cdn.yaml` 파일을 만듭니다.
+1. WAF 규칙을 포함한 트래픽 필터 규칙 세트로 `cdn.yaml` 파일을 만듭니다.
 
    ```
    kind: "CDN"
@@ -100,22 +100,22 @@ Edge에서 Adobe Managed CDN은 대규모 및 반사/증폭 공격(레이어 3 �
          action: block
    ```
 
-   `data` 노드 위의 속성에 대한 설명은 [구성 파이프라인 문서](/help/operations/config-pipeline.md#common-syntax)를 참조하십시오. `kind` 속성 값을 *CDN*(으)로 설정하고 버전을 `1`(으)로 설정해야 합니다.
+   `data` 노드 위의 속성에 대한 설명은 [구성 파이프라인 문서](/help/operations/config-pipeline.md#common-syntax)를 참조하십시오. `kind` 속성 값은 *콘텐츠 전송 네트워크*&#x200B;로 설정하고 버전은 `1`로 설정해야 합니다.
 
 
 1. WAF 규칙에 라이선스가 부여된 경우, 신규 및 기존 프로그램 시나리오 모두에 대해 아래에 설명된 대로 Cloud Manager에서 기능을 활성화해야 합니다.
 
    1. 새 프로그램에서 WAF를 구성하려면 [프로덕션 프로그램 추가 시 **보안 탭**&#x200B;의 **WAF-DDOS 보호** 확인란을 선택하십시오.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 
-   1. 기존 프로그램에서 WAF을 구성하려면 [프로그램을 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)하고 **보안** 탭에서 **WAF-DDOS** 옵션을 선택 취소하거나 언제든지 선택하십시오.
+   1. 기존 프로그램에서 WAF를 구성하려면 **보안** 탭에서 [프로그램을 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)하여 언제든지 **WAF-DDOS** 옵션을 선택 취소하거나 선택하십시오.
 
-1. [구성 파이프라인 문서에 설명된 대로 Cloud Manager에서 구성 파이프라인을 만듭니다.](/help/operations/config-pipeline.md#managing-in-cloud-manager) 파이프라인이 [여기](/help/operations/config-pipeline.md#folder-structure)에 설명된 대로 아래 어딘가에 `cdn.yaml` 파일이 있는 최상위 수준 `config` 폴더를 참조합니다.
+1. [구성 파이프라인 문서에 설명된 대로 Cloud Manager에서 구성 파이프라인을 만듭니다.](/help/operations/config-pipeline.md#managing-in-cloud-manager) 파이프라인은 [여기 설명](/help/operations/config-pipeline.md#folder-structure)된 대로 아래 어딘가에 `cdn.yaml` 파일이 있는 최상위 `config` 폴더를 참조합니다.
 
 ## 트래픽 필터 규칙 구문 {#rules-syntax}
 
-IP, 사용자 에이전트, 요청 헤더, 호스트 이름, 지역 및 URL과 같은 패턴과 일치하도록 *트래픽 필터 규칙*&#x200B;을 구성할 수 있습니다.
+IPS, 사용자 에이전트, 요청 헤더, 호스트 이름, 지역 및 URL과 같은 패턴을 일치하도록 *트래픽 필터 규칙*&#x200B;을 구성할 수 있습니다.
 
-향상된 보안 또는 WAF-DDoS Protection Security 서비스 라이선스가 부여된 고객은 하나 이상의 [WAF 플래그](#waf-flags-list)를 참조하는 *WAF 트래픽 필터 규칙*(또는 간단히 WAF 규칙)이라는 특별한 트래픽 필터 규칙 범주를 구성할 수도 있습니다.
+향상된 보안 또는 WAF-DDoS 보호 보안 제품에 라이선스를 부여한 고객은 하나 이상의 [WAF 플래그](#waf-flags-list)를 참조하는 *WAF 트래픽 필터 규칙*(이하 WAF 규칙)의 특수 범주를 구성할 수도 있습니다.
 
 다음은 WAF 규칙도 포함하는 트래픽 필터 규칙 세트의 예입니다.
 
@@ -261,7 +261,7 @@ when:
 | SCANNER | 스캐너 | 널리 사용되는 스캔 서비스 및 도구를 식별합니다. |
 | RESPONSESPLIT | HTTP 응답 분할 | 헤더를 HTTP 응답에 삽입하기 위해 CRLF 문자가 애플리케이션에 대한 입력으로 제출되는 시점을 식별합니다. |
 | XML-ERROR | XML 인코딩 오류 | “Content-Type” 요청 헤더 내에 XML을 포함하도록 지정되었지만 XML 구문 분석 오류가 포함된 POST, PUT 또는 PATCH 요청 본문입니다. 흔히 프로그래밍 오류나 자동화된 요청 또는 악성 요청과 관련이 있습니다. |
-| DATACENTER | 데이터 센터 | 알려진 호스팅 공급자에서 온 요청임을 식별합니다. 이러한 유형의 트래픽은 일반적으로 실제 최종 사용자와 연결되지 않습니다. |
+| 데이터센터 | 데이터센터 | 알려진 호스팅 공급자에서 요청한 것으로 식별합니다. 이러한 유형의 트래픽은 일반적으로 실제 최종 사용자와 연결되지 않습니다. |
 
 
 ## 고려 사항 {#considerations}
