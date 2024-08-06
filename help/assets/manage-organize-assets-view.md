@@ -5,10 +5,10 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 7ec5d5e3ca487ff84bc0b1f7f040aec9475059e0
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 93%
+source-wordcount: '1204'
+ht-degree: 90%
 
 ---
 
@@ -131,6 +131,7 @@ Assets 보기를 사용하면 저장소에서 사용 가능한 에셋의 상태�
 1. 자산을 선택하고 도구 모음에서 **[!UICONTROL 세부 정보]**&#x200B;를 클릭합니다.
 
 1. **[!UICONTROL 기본]** 탭의 **[!UICONTROL 상태]** 드롭다운 목록에서 에셋 상태를 선택합니다. 가능한 값에는 승인됨, 거부됨 및 상태 없음(기본값)이 포함됩니다.
+OpenAPI 기능이 있는 Dynamic Media이 환경에 프로비저닝되어 있는 경우, Experience Manager Assets은 자산을 `Approved`(으)로 표시하는 즉시 공개 URL을 생성합니다.
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 
