@@ -4,16 +4,18 @@ description: ' [!DNL Adobe Express] 기반 옵션을 사용하여 이미지를 �
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: 23b43f22b62451c9d0a5460999fcd43479438d7e
+source-git-commit: 610da7c1e8f20156b165d819a4bb91ec5ffcad80
 workflow-type: tm+mt
-source-wordcount: '1089'
-ht-degree: 79%
+source-wordcount: '1127'
+ht-degree: 59%
 
 ---
 
 # [!DNL Assets view]에서 이미지 편집 {#edit-images-in-assets-view}
 
-Assets 보기를 사용하면 크기 조정, 배경 제거, 자르기 및 JPEG 및 PNG 형식 간 변환 등 기본 이미지 편집을 사용할 수 있습니다. 또한 Adobe Express와의 통합을 통해 고급 편집을 사용할 수도 있습니다. 이미지를 편집한 후 새 이미지를 새 버전으로 저장할 수 있습니다. 필요한 경우 버전 관리를 통해 나중에 원본 자산으로 되돌릴 수 있습니다. 이미지를 편집하려면 [미리보기를 열고](https://experienceleague.adobe.com/ko/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) **이미지 편집**&#x200B;을 클릭합니다.
+Assets 보기 UI를 통해 UI에 통합된 Adobe Express 기반의 기본 이미지 편집 기능을 사용할 수 있습니다. 이러한 편집에는 크기 조정, 배경 제거, 자르기 및 JPEG 및 PNG 형식 간 변환이 포함됩니다. 또한 Assets 보기 UI 내에 임베드된 Adobe Express 인터페이스를 통해 고급 편집을 수행할 수 있습니다.
+
+이미지를 편집한 후 새 이미지를 새 버전으로 저장할 수 있습니다. 필요한 경우 버전 관리를 통해 나중에 원본 자산으로 되돌릴 수 있습니다. 이미지를 편집하려면 [미리보기를 열고](https://experienceleague.adobe.com/ko/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) **이미지 편집**&#x200B;을 클릭합니다.
 
 >[!NOTE]
 >
@@ -23,7 +25,7 @@ Assets 보기를 사용하면 크기 조정, 배경 제거, 자르기 및 JPEG �
 
 ## 이미지 편집 {#edit-image}
 
-[Assets 보기](https://experience.adobe.com/#/assets) 링크를 사용하고 올바른 저장소를 선택하여 Assets 보기에 도달합니다. 액세스 권한을 받으려면 귀사의 관리자에게 문의하십시오.
+[Assets 보기](https://experience.adobe.com/#/assets) 링크를 사용하고 올바른 저장소를 선택하여 Assets 보기 UI로 이동합니다. 액세스 권한을 받으려면 귀사의 관리자에게 문의하십시오.
 추가 참조 정보는 [Adobe Experience Manager Assets 보기 사용 시작](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Assets 보기 사용자 인터페이스 이해](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) 및 [Assets 보기 사용 사례](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases)를 참조하세요.
 <!--
 >[!CONTEXTUALHELP]
@@ -33,13 +35,13 @@ Assets 보기를 사용하면 크기 조정, 배경 제거, 자르기 및 JPEG �
 
 ### Adobe Express을 사용하여 Assets 보기에서 이미지 편집 {#edit-image-on-assets-view-using-adobe-express}
 
-Assets 보기에 도착한 후 **Assets**&#x200B;을(를) 클릭하고 이미지를 선택한 다음 상단 레일에서 **편집**&#x200B;을(를) 클릭합니다. 새 화면에 크기 조정, 배경 제거, 자르기, JPEG와 PNG 포맷 간 변환 등 사용 가능한 편집 옵션이 표시됩니다.
+Assets 보기로 이동한 후 **Assets**&#x200B;을 클릭하고 이미지를 선택한 다음 상단 레일에서 **편집**&#x200B;을 클릭합니다. 새 화면에는 크기 조정, 배경 제거, 자르기 및 JPEG 및 PNG 형식 간 변환 등 Adobe Express에서 제공하는 사용 가능한 편집 옵션이 표시됩니다.
 
 #### 이미지 크기 조정 {#resize-image-using-express}
 
 이미지 크기를 특정 크기로 조정하는 것이 일반적인 사용 사례입니다. Assets 보기를 사용하면 특정 사진 크기에 대해 미리 계산된 새로운 해상도를 제공하여 일반적인 사진 크기에 맞게 빠르게 이미지 크기를 조정할 수 있습니다. Assets 보기를 사용하여 이미지 크기를 조정하려면 아래 단계를 따르십시오.
 
-1. 왼쪽 창에서 **이미지 크기 조정**&#x200B;을 클릭합니다.
+1. 왼쪽 창에서 **이미지 크기 조정**&#x200B;을 클릭합니다. 대화 상자에는 Adobe Express에서 제공하는 크기 조정 이미지 기능이 표시됩니다.
 1. [크기 조정] 드롭다운 목록에서 적절한 소셜 미디어 플랫폼을 선택하고 표시되는 옵션에서 이미지 크기 조정을 선택합니다.
 1. 필요한 경우 **이미지 크기 조정** 필드를 사용하여 이미지 크기를 조정합니다.
 1. **[!UICONTROL 적용]**을 클릭하여 변경 내용을 적용합니다.
@@ -68,7 +70,7 @@ Assets 보기에 도착한 후 **Assets**&#x200B;을(를) 클릭하고 이미지
    ![Adobe Express로 이미지 저장](assets/adobe-express-crop-image.png)
 잘린 이미지를 다운로드할 수 있습니다. 편집한 자산을 동일한 자산의 새 버전으로 저장하거나 새 자산으로 저장할 수 있습니다.
 
-#### 이미지 파일 포맷 간 변환 {#convert-image-types-using-express}
+#### JPEG를 PNG로 변환하기 {#convert-image-types-using-express}
 
 Adobe Express를 사용하여 JPEG 및 PNG 이미지 포맷 간 빠르게 변환할 수 있습니다. 다음 단계를 실행합니다.
 
@@ -78,34 +80,28 @@ Adobe Express를 사용하여 JPEG 및 PNG 이미지 포맷 간 빠르게 변환
 
 #### 제한 사항 {#limitations-adobe-express}
 
-* 지원되는 이미지 해상도: 차원당 최소 50픽셀, 최대 6000픽셀.
-
+* 지원되는 이미지 해상도: 차원당 최소 50픽셀, 최대 6,000픽셀.
 * 지원되는 최대 파일 크기: 17MB.
 
 ### 임베드된 Adobe Express 편집기에서 이미지 편집 {#edit-images-in-adobe-express-embedded-editor}
 
-Express 권한이 있는 사용자는 Assets 보기 내에서 임베드된 Express 편집기를 사용하여 컨텐츠를 쉽게 편집하고 Adobe Firefly의 GenAI로 새 컨텐츠를 만들 수 있습니다. 이를 통해 콘텐츠 재사용이 향상되고 콘텐츠 속도가 빨라집니다. 또한 사전 정의된 요소를 사용하여 자산을 멋지게 보이게 하거나 몇 번의 클릭만으로 빠른 작업을 수행하여 이미지를 편집할 수 있습니다.
+Express 권한이 있는 사용자는 Assets 보기 내에서 임베드된 Express 편집기를 사용하여 컨텐츠를 쉽게 편집하고 Adobe Firefly의 GenAI로 새 컨텐츠를 만들 수 있습니다. 이 기능은 콘텐츠 재사용을 개선하고 콘텐츠 속도를 가속화합니다. 또한 사전 정의된 요소를 사용하여 자산을 멋지게 보이게 하거나 몇 번의 클릭만으로 빠른 작업을 수행하여 이미지를 편집할 수 있습니다.
 ![essentials UI의 Express](/help/assets/assets/express-in-essentials-ui.jpg)
 [!DNL Adobe Express] 포함된 편집기를 사용하여 이미지를 편집하려면 아래 단계를 따르십시오.
 
-1. [AEM Assets 보기](https://experience.adobe.com/#/assets) 링크를 사용하여 AEM Assets 보기에 도달하고 올바른 리포지토리를 선택합니다.
+1. [AEM Assets 보기](https://experience.adobe.com/#/assets) 링크를 사용하여 AEM Assets 보기로 이동한 후 올바른 리포지토리를 선택합니다.
 1. **자산**&#x200B;을 클릭하고 폴더를 입력한 다음 이미지를 선택합니다.
 1. **Adobe Express에서 열기**&#x200B;를 클릭합니다. Express 캔버스에서 이미지가 열립니다.
 1. 이미지에 필요한 편집을 수행합니다.
 1. 프로젝트에 페이지를 더 추가해야 하는 경우 **추가**&#x200B;를 클릭하고, 자산을 선택한 다음 폴더를 입력하고, 캔버스 페이지로 가져올 이미지를 선택한 다음 이미지에 필요한 편집을 수행합니다.
-1. 이미지를 저장하려면 **저장**&#x200B;을 클릭합니다. 저장 대화 상자가 표시됩니다.
+1. 하나 이상의 자산을 저장하려면 **저장**&#x200B;을 클릭하세요. 저장 대화 상자에 저장 옵션이 표시됩니다. 저장 옵션 중에서 선택하려면 요구 사항에 맞는 아래 지침 중 하나를 따르십시오.
+   1. 단일 페이지를 저장하려면 **다른 버전으로 저장**&#x200B;을 클릭하여 이미지를 새 버전으로 내보내고(원래 형식을 그대로 유지) 동일한 폴더에 저장합니다.
 
-   >[!NOTE]
-   >
-   > **1. 단일 페이지의 경우**
-   >
-   > **버전으로 저장:** 이 기능은 단일 자산 저장만 지원합니다. 이미지를 원본 포맷을 유지한 채로 새 버전으로 내보내고 동일한 폴더에 저장하려면 이 옵션을 선택합니다.
-   > **새 자산으로 저장:** 자산을 원본과 다른 포맷으로 내보내고 폴더에 새 자산으로 저장하려면 이 옵션을 선택합니다.
-   >  
-   > **2. 여러 페이지의 경우**
-   >
-   > **버전으로 저장:** 이 기능은 단일 자산 저장만 지원합니다. 여러 페이지에서 단일 페이지를 저장하려면 이 옵션을 선택하여 자산을 원래 포맷으로 원래 위치에 저장합니다.\
-   > **새 자산으로 저장:** 이 옵션을 사용하면 여러 자산 또는 단일 자산을 임의의 폴더로 내보낸 후 원본 파일 포맷이나 다른 파일 포맷의 새 자산으로 저장할 수 있습니다.
+   1. 한 페이지를 저장하려면 **새 자산으로 저장**&#x200B;을 클릭하여 자산을 다른 형식으로 내보내고 모든 폴더에 새 자산으로 저장합니다.
+
+   1. 여러 페이지에서 한 페이지를 저장하려면 **다른 버전으로 저장**&#x200B;을 클릭하여 자산을 원래 형식과 위치에 저장합니다.
+
+   1. 여러 페이지 또는 여러 페이지 중 한 페이지를 저장하려면 **새 자산으로 저장**&#x200B;을 클릭하세요. 이 작업을 수행하면 단일 또는 여러 에셋을 폴더에 내보내고 원래 또는 다른 형식의 새 에셋이나 에셋으로 저장합니다.
 
 1. [저장] 대화 상자에서 다음 작업을 수행합니다.
    1. **다른 이름으로 저장** 필드에 파일 이름을 입력합니다.
