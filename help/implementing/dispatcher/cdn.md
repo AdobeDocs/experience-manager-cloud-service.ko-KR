@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 655b92f0fd3c6fb69bdd9343719537d6328fa7be
 workflow-type: tm+mt
 source-wordcount: '1552'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
 
@@ -59,7 +59,7 @@ AEM에 도달할 수 없는 드문 이벤트에서 브라우저에 제공되는 
 
 ### CDN에서 캐시된 컨텐츠 제거 {#purge-cdn}
 
-HTTP Cache-Control 헤더를 사용하여 TTL 을 설정하는 것은 콘텐츠 전달 성능과 콘텐츠 신선도의 균형을 유지하는 효과적인 방법입니다. 그러나 업데이트된 콘텐츠를 즉시 제공하는 것이 중요한 시나리오에서는 CDN 캐시를 직접 제거하는 것이 유용할 수 있습니다.
+HTTP Cache-Control 헤더를 사용하여 TTL을 설정하는 것은 콘텐츠 게재 성능과 콘텐츠 신선도의 균형을 맞추는 효과적인 방법입니다. 그러나 업데이트된 콘텐츠를 즉시 제공하는 것이 중요한 시나리오에서는 CDN 캐시를 직접 제거하는 것이 유용할 수 있습니다.
 
 [제거 API 토큰 구성](/help/implementing/dispatcher/cdn-credentials-authentication.md/#purge-API-token) 및 [캐시된 CDN 콘텐츠 제거](/help/implementing/dispatcher/cdn-cache-purge.md)에 대해 읽어 보십시오.
 
@@ -67,7 +67,7 @@ HTTP Cache-Control 헤더를 사용하여 TTL 을 설정하는 것은 콘텐츠 
 
 비즈니스 이해 관계자가 콘텐츠를 검토하는 등 가벼운 인증 사용 사례의 경우, 사용자 이름과 암호를 요구하는 기본 인증 대화 상자를 표시하여 콘텐츠를 보호하십시오. [자세히 알아보기](/help/implementing/dispatcher/cdn-credentials-authentication.md) 얼리어답터 프로그램에 참여하세요.
 
-## 고객 CDN AEM 관리 CDN을 가리킴 {#point-to-point-CDN}
+## 고객 CDN은 AEM 관리 CDN에 지정 {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
