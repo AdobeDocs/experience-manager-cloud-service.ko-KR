@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 96bf1d56d24da851ad4713e3cb0728fd7a18da18
+source-git-commit: f8b058549162b7ae3d57b1a7dd3461f738b75320
 workflow-type: tm+mt
-source-wordcount: '1288'
-ht-degree: 10%
+source-wordcount: '1269'
+ht-degree: 11%
 
 ---
 
@@ -28,7 +28,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 
 ### Cloud Service 컨텐츠 요청 분산 {#content-requests-variances}
 
-콘텐츠 요청은 다음 표에 요약된 바와 같이 조직의 Analytics 보고 도구 내에 차이를 가질 수 있습니다. 일반적으로 *트리거할 사용자 동의에 따라 종종 트리거되어 트래픽의 상당 부분이 누락되기 때문에 클라이언트측 계측을 통해 데이터를 수집하는 분석 도구를 사용하여 특정 사이트에 대한 콘텐츠 요청 수를 보고합니다.* Analytics 도구는 로그 파일에서 서버측에서 데이터를 수집하거나, AEM as a Cloud Service의 맨 위에서 자체 CDN을 추가하는 고객을 위한 CDN 보고서를 통해 더 나은 카운트를 제공합니다. 페이지 보기 수와 관련 성능에 대한 보고를 위해 [Adobe RUM 데이터 서비스](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)가 Adobe 권장 옵션입니다.
+콘텐츠 요청은 다음 표에 요약된 바와 같이 조직의 Analytics 보고 도구 내에 차이를 가질 수 있습니다. 일반적으로 *트리거할 사용자 동의에 따라 종종 트리거되어 트래픽의 상당 부분이 누락되기 때문에 클라이언트측 계측을 통해 데이터를 수집하는 분석 도구를 사용하여 특정 사이트에 대한 콘텐츠 요청 수를 보고합니다.* Analytics 도구는 로그 파일에서 서버측에서 데이터를 수집하거나, AEM as a Cloud Service의 맨 위에서 자체 CDN을 추가하는 고객을 위한 CDN 보고서를 통해 더 나은 카운트를 제공합니다.
 
 | 차이가 나는 이유 | 설명 |
 |---|---|
