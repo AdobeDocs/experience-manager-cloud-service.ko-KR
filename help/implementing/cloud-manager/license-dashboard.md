@@ -5,16 +5,23 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: eae5c75e1bf4f7201fe2c01d08737d36489ca3e4
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 58%
+source-wordcount: '1101'
+ht-degree: 31%
 
 ---
+
 
 # 라이선스 대시보드 {#license-dashboard}
 
 Cloud Manager는 조직 또는 테넌트가 사용할 수 있는 AEMaaCS 제품 권한을 쉽게 볼 수 있도록 대시보드를 제공합니다.
+
+>[!IMPORTANT]
+>
+>라이선스 대시보드는 AEM as a Cloud Service 프로그램에만 적용됩니다. [AMS 프로그램](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)이 라이선스 대시보드에 포함되어 있지 않습니다.
+>
+>프로그램에 있는 서비스 유형(AMS 또는 AEMaaCS)을 확인하려면 [Cloud Manager UI 탐색](/help/implementing/cloud-manager/navigation.md#program-cards) 문서를 참조하십시오.
 
 ## 개요 {#overview}
 
@@ -32,8 +39,8 @@ Cloud Manager 라이선스 대시보드를 사용하면 다음 정보에 쉽게 
 >라이선스 대시보드를 보려면 **비즈니스 소유자** 역할의 사용자가 로그인해야 합니다.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
-
-1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 **라이선스** 탭으로 전환합니다.
+1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 [Cloud Manager 헤더의 햄버거 메뉴 버튼을 탭하거나 클릭합니다.](/help/implementing/cloud-manager/navigation.md#cloud-manager-header) 탭이 표시됩니다.
+1. 탭에서 **라이선스** 옵션을 탭하거나 클릭합니다.
 
 ![라이선스 대시보드](assets/license-dashboard.png)
 
@@ -41,18 +48,56 @@ Cloud Manager 라이선스 대시보드를 사용하면 다음 정보에 쉽게 
 
 * **솔루션** - 이 섹션에서는 Sites 또는 Assets와 같이 사용 허가된 솔루션을 요약합니다.
 * **추가 기능** - 이 섹션에서는 사용 허가된 솔루션에 대한 추가 기능을 요약합니다.
-* **샌드박스 및 개발 환경** - 이 섹션에서는 사용 가능한 환경을 요약합니다.
+* **기타 권한** - 이 섹션에서는 테넌트 내에서 사용할 수 있는 기타 권한뿐만 아니라 샌드박스 및 개발 환경을 요약합니다.
 
-각 섹션에는 사용 가능한 항목과 사용 방법이 요약되어 있습니다. 현재 테넌트에 다른 솔루션이 있는 경우에도 Sites 솔루션만 표시됩니다.
+각 섹션에는 사용 가능한 항목과 사용 방법이 요약되어 있습니다. 현재 테넌트에 다른 솔루션이 있는 경우에도 Sites 및 Assets 솔루션만 표시됩니다.
 
 * **상태** 열에는 사용되지 않은 권한 수와 테넌트가 사용할 수 있는 총 권한 수가 표시됩니다.
 * **구성** 열은 솔루션 권한이 적용된 프로그램을 나타냅니다.
    * 권한은 프로덕션 환경이 생성되었거나 존재하는 경우 업데이트 파이프라인이 실행된 경우에만 사용된 것으로 간주됩니다.
-* **사용량** 열은 클릭 시 지난 12개월 동안 사용한 콘텐츠 요청을 그래프로 표시합니다.
+   * 제한된 수의 프로그램만 열에 개별적으로 나열되며 나머지는 `+x` 항목으로 표시됩니다.
+   * `+x` 항목 위로 마우스를 가져가면 모든 프로그램에 대한 세부 정보가 포함된 팝업이 표시됩니다.
+* **사용량** 열에는 솔루션에 대한 사용량 통계를 표시하는 **[사용량 세부 정보 보기](#view-usage-details)** 단추가 표시됩니다.
 
 >[!TIP]
 >
 >Admin Console에서 전체 조직의 Adobe 권한을 관리하는 방법을 알아보려면 [Admin Console 개요](https://helpx.adobe.com/enterprise/using/admin-console.html)를 참조하세요.
+
+## 사용 세부 정보 보기 {#view-usage-details}
+
+**사용 세부 정보 보기** 단추를 사용하면 선택한 솔루션의 **사용 세부 정보** 창에 액세스할 수 있습니다. 이 창에서는 솔루션의 사용량을 보여 주는 차트를 포함하여 자세한 분류를 제공합니다. 사용 측정 방법은 선택한 솔루션에 따라 다릅니다.
+
+### 사이트 사용 세부 정보 {#sites-usage-details}
+
+**사이트 사용 세부 정보** 창은 [콘텐츠 요청을 기반으로 사이트 라이선스 사용에 대한 개요를 보여주는 그래프를 제공합니다.](#what-is-a-content-request)
+
+![사이트 사용 세부 정보 창](assets/sites-usage-details.png)
+
+창 왼쪽에는 **계약 연도 보기** 드롭다운에서 선택한 계약 연도의 계약 분석을 보여주는 파이 차트가 표시됩니다.
+
+창의 오른쪽에는 선택한 계약 연도의 시간 경과에 따라 프로그램별로 분류된 사용량을 보여주는 영역 차트가 표시됩니다. 마우스로 가리키면 선택한 시점의 프로그램당 세부 정보가 포함된 팝업이 표시됩니다.
+
+### Assets 사용 세부 정보 {#assets-usage-details}
+
+**Assets 사용 세부 정보** 창은 [저장소](#storage) 및 [표준 사용자를 기반으로 Assets 라이선스 사용에 대한 개요를 제공하는 그래프를 표시합니다.](#standard-users) 보기 간에 전환하려면 적절한 탭을 선택합니다.
+
+저장소 및 표준 사용자 보기 모두에 대해 **환경 유형** 드롭다운을 사용하여 프로덕션, 스테이징 및 개발 환경 간에 보기를 전환할 수 있습니다.
+
+#### 스토리지 {#storage}
+
+![저장소에 대한 Assets 사용 세부 정보 창](assets/assets-usage-details-storage.png)
+
+창 왼쪽에는 **계약 연도 보기** 드롭다운에서 선택한 계약 연도의 계약 분석을 보여주는 파이 차트가 표시됩니다.
+
+창의 오른쪽에는 선택한 계약 연도의 시간 경과에 따라 프로그램별로 분류된 사용량을 보여주는 영역 차트가 표시됩니다. 마우스로 가리키면 선택한 시점의 프로그램당 세부 정보가 포함된 팝업이 표시됩니다.
+
+#### 표준 사용자 {#standard-users}
+
+![표준 사용자를 위한 Assets 사용 세부 정보 창](assets/assets-usage-details-standard-users.png)
+
+창 왼쪽에는 **계약 연도 보기** 드롭다운에서 선택한 계약 연도의 계약 분석을 보여주는 파이 차트가 표시됩니다.
+
+창의 오른쪽에는 선택한 계약 연도의 시간 경과에 따라 프로그램별로 분류된 사용량을 보여주는 영역 차트가 표시됩니다. 마우스로 가리키면 선택한 시점의 프로그램당 세부 정보가 포함된 팝업이 표시됩니다.
 
 ## 자주 묻는 질문 {#faq}
 
