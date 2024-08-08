@@ -4,7 +4,7 @@ description: AEM as a Cloud Service용 로깅을 사용하여 중앙 로깅 서�
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6cb2665f2a2e61216608dfe9c3444adeb472395f
+source-git-commit: 6f658c5e991c89ff4129352444ba9960d83c8884
 workflow-type: tm+mt
 source-wordcount: '2829'
 ht-degree: 8%
@@ -617,9 +617,9 @@ CDN 로그는 새 지원 티켓 요청을 위해 Splunk에 전달됩니다. 이�
 
 >[!NOTE]
 >
->특정 로그 및 특정 사용자 로그는 Splunk에 전달할 수 없습니다.
+>*특정* 로그 및 *특정* 사용자 로그를 Splunk에 전달할 수 없습니다.
 >
->모든 로그는 Splunk에 전달되며, 여기에서 고객이 요구 사항에 따라 추가 필터링을 수행할 수 있습니다.
+>**모든** 로그가 Splunk로 전달됩니다. 고객이 해당 요구 사항에 따라 추가 필터링을 수행할 수 있습니다.
 
 ### Splunk 전달 활성화 {#enabling-splunk-forwarding}
 
