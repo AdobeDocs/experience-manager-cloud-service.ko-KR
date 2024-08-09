@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 7c8f54d7c1139485717cc42dafbc87be74fd5883
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 100%
+source-wordcount: '527'
+ht-degree: 94%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 [!DNL Assets view]는 다양한 파일 형식을 지원하며 각 기능 또한 다양한 파일 형식을 지원합니다.
 
 * ![image file type icon](assets/image-icon.svg) 이미지: JPG, PNG, GIF, TIFF 등
-* ![creative cloudtype icon](assets/creative-cloud-files.svg) Creative Cloud 파일: PSD, AI 및 INDD
+* ![creative cloudtype icon](assets/creative-cloud-files.svg) Creative Cloud 파일: PSD, PSB, AI 및 INDD
 * ![camera type icon](assets/camera-icon.svg) Camera RAW 파일: CR2/CR3, NEF, SRW/SRF 및 기타
 * ![document file type icon](assets/document-icon.svg) 문서: DOCX, PDF, PPTX 및 XLSX
 * ![video file type icon](assets/video-icon.svg) 비디오: MP4
@@ -46,7 +46,7 @@ ht-degree: 100%
 | 폴더 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | − | − |
 | MP4 비디오 | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
 | PDF | ✓ | ✓ | ✓ | − | ✓ | ✓ | − | ✓ |
-| PSD, AI 및 INDD | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
+| PSD, PSB, AI 및 INDD | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
 | 기타 바이너리 파일 | ✓ | ✓ | ✓ | − | ✓ | ✓ | − | ✓ |
 
 <!-- Hiding CC Libraries (considered beta) as per PM feedback.
@@ -63,7 +63,7 @@ ht-degree: 100%
 | 비디오 | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | CC Libraries | − | − | − | − | − | ✓ | ✓ |
 | PDF | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
-| PSD | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
+| PSD 및 PSB | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | AI 및 INDD | ✓ | ✓ | − | ✓ | − | ✓ | ✓ |
 | 기타 바이너리 파일 | ✓ | ✓ | − | ✓ | − | ✓ | ✓ |
 
@@ -78,7 +78,7 @@ ht-degree: 100%
 | 비디오 | − | ✓ | ✓ |
 | CC Libraries | − | − | − |
 | PDF | − | ✓ | ✓ |
-| PSD, AI 및 INDD | − | ✓ | ✓ |
+| PSD, PSB, AI 및 INDD | − | ✓ | ✓ |
 | 기타 바이너리 파일 | − | ✓ | ✓ |
 | DOC | − | ✓ | ✓ |
 | DOCX | − | ✓ | ✓ |
@@ -99,7 +99,8 @@ ht-degree: 100%
 | 비디오 | ✓ | − | ✓ | ✓ | ✓ |
 | CC Libraries | ✓ | − | − | − | − |
 | PDF | ✓ | − | ✓ | ✓ | ✓ |
-| PSD, AI 및 INDD | ✓ | − | ✓ | ✓ | ✓ |
+| AI 및 INDD | ✓ | − | ✓ | ✓ | ✓ |
+| PSD 및 PSB | ✓ | ✓ | ✓ | ✓ | ✓ |
 | 기타 바이너리 파일 | ✓ | − | ✓ | ✓ | ✓ |
 
 [!DNL Adobe Asset Link] 사용자는 지원되는 [!DNL Adobe Creative Cloud] 데스크탑 애플리케이션에서 [!DNL Assets view] 저장소에 파일을 업로드하고 체크인(새 버전 업로드)할 수 있습니다.
@@ -112,7 +113,7 @@ ht-degree: 100%
 | Videos        |          |
 | CC Libraries  |          |
 | PDF files     |          |
-| PSD           |          |
+| PSD, PSB           |          |
 | AI            |          |
 | INDD          |          |
 
