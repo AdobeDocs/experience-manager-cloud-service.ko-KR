@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 4f01ca0076248442fe93161bbc8b98bffb64551b
-workflow-type: ht
-source-wordcount: '5315'
+source-git-commit: f12e60cdfce24dd2f6c1400157180d16b1b98653
+workflow-type: tm+mt
+source-wordcount: '5321'
 ht-degree: 100%
 
 ---
@@ -84,6 +84,7 @@ ht-degree: 100%
    + AEMaaCS 유지 관리 릴리스 정보 {#maintenance}
       + [현재 유지 관리 릴리스 정보](/help/release-notes/maintenance/latest.md)
       + 2024 {#2024}
+         + [2024.8.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2024/2024-8-0.md)
          + [2024.7.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2024/2024-7-0.md)
          + [2024.6.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2024/2024-6-0.md)
          + [2024.5.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2024/2024-5-0.md)
@@ -207,7 +208,7 @@ ht-degree: 100%
    + [AEM as a Cloud Service에 대한 IMS 통합 설정](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [Sling 서비스 사용자 매핑 및 서비스 사용자 정의의 모범 사례](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
 + 온보딩 {#onboarding}
-   + [여기에서 시작](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
+   + [여기에서 시작](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/onboarding/journey/overview)
    + 온보딩 여정 {#journey}
       + [온보딩 여정 개요](/help/journey-onboarding/overview.md)
       + [온보딩 준비](/help/journey-onboarding/preparation.md)
