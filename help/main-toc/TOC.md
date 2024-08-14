@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a1baa7f29c6e15af11347debdd341f9972c06e83
+source-git-commit: bd5f77e8e27b55c538bbe50d28ae56f6e983f541
 workflow-type: tm+mt
-source-wordcount: '5315'
-ht-degree: 100%
+source-wordcount: '5320'
+ht-degree: 99%
 
 ---
 
@@ -859,6 +859,7 @@ ht-degree: 100%
          + [SEO에 대한 URL 구성](/help/commerce-cloud/configuring/advanced-url-configuration.md)
          + [캐싱 옵션](/help/commerce-cloud/configuring/caching.md)
          + [사용자 정의 HTTP 헤더](/help/commerce-cloud/configuring/custom-http-headers.md)
+         + [장바구니 및 Dispatcher 설정](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
       + 개발 {#developing}
          + [AEM Cloud Service SDK를 사용하여 개발](/help/commerce-cloud/develop.md)
          + [CIF 구성 요소 스타일링](/help/commerce-cloud/customizing/style-cif-component.md)
