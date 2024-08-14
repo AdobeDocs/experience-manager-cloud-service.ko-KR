@@ -1,68 +1,60 @@
 ---
-title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2024.7.0 릴리스 정보
-description: AEM as a Cloud Service의 Cloud Manager 2024.7.0 릴리스 정보입니다.
+title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2024.8.0 릴리스 정보
+description: AEM as a Cloud Service의 Cloud Manager 2024.8.0 릴리스 정보에 대해 알아봅니다.
 feature: Release Information
-exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: 8d9f5296a2e79ee5560d1ede967b3eb2155cd151
-workflow-type: ht
-source-wordcount: '633'
-ht-degree: 100%
+source-git-commit: bf8bab5a195dde6cf15a2fd52e51d58c0215fdf3
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 30%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service의 Cloud Manager 2024.7.0 릴리스 정보 {#release-notes}
+# Adobe Experience Manager as a Cloud Service의 Cloud Manager 2024.8.0 릴리스 노트 {#release-notes}
 
-이 페이지에서는 AEM as a Cloud Service의 Cloud Manager 2024.7.0 릴리스 정보에 대해 설명합니다.
+이 페이지에서는 AEM as a Cloud Service의 Cloud Manager 2024.8.0 릴리스 정보에 대해 설명합니다.
 
 >[!NOTE]
 >
 >Adobe Experience Manager as a Cloud Service의 최신 릴리스 정보는 [이 페이지](/help/release-notes/release-notes-cloud/release-notes-current.md)를 참조하십시오.
 
-## 릴리스 일자 {#release-date}
+## 릴리스 날짜 {#release-date}
 
-AEM as a Cloud Service의 Cloud Manager 릴리스 2024.7.0 출시 일자는 2024년 7월 18일입니다. 다음 릴리스는 2024년 8월 12일에 예정되어 있습니다.
+AEM as a Cloud Service의 Cloud Manager 2024.8.0 릴리스 일자는 2024년 8월 12일 화요일입니다. 다음 릴리스는 2024년 9월 14일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
-* 이제 [프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline) 및 [비프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline) 트리거 **Git 변경 시**&#x200B;를 통해 [비공개 저장소](/help/implementing/cloud-manager/managing-code/private-repositories.md)에 대해 커밋에서 파이프라인을 시작할 수 있습니다.
-   * 이는 단계적으로 출시될 예정이며 8월 중순에 완료됩니다.
-* 이제 [Adobe 관리 DV 인증서](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)를 추가할 때 각 도메인에 대한 인증서를 만드는 대신 여러 도메인을 다루는 단일 인증서를 추가할 수 있습니다.
-* 이제 프로그램에 Sites 또는 Forms 솔루션이 적용되어 있는 한 [추가 게시 지역](/help/operations/additional-publish-regions.md)이 없는 솔루션을 해당 프로그램에 추가할 수 있습니다.
-* 이제 프로그램에 Sites 또는 Forms 솔루션이 적용되어 있는 한 [99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)가 없는 솔루션을 해당 프로그램에 추가할 수 있습니다.
-* [경험 감사 대시보드](/help/implementing/cloud-manager/experience-audit-dashboard.md)가 다방면으로 개선되었습니다.
-   * 감사는 이제 이전의 `.net` 접근법 대신 CDN을 통한 `.com` 엔드포인트에 대해 수행됩니다.
-      * 이러한 변경 사항은 실제 사용자 경험을 보다 정확하게 시뮬레이션하고 웹 사이트 관리 및 최적화에서 더 정확한 의사 결정을 내릴 수 있도록 해 줍니다.
-   * 경험 감사 UI에는 다음을 포함한 여러 개선 사항이 적용되었습니다.
-      * 성과, 모범 사례, SEO, 접근성에 대한 트렌드 보기가 추가되었습니다.
-      * 이제 Lighthouse 원시 보고서 링크를 스캔 스냅샷 세부 정보 패널에서 더 직관적으로 바로 볼 수 있습니다.
-      * Lighthouse 추천 섹션이 개선되었습니다.
-   * PWA 지표가 Lighthouse 버전 12.0.0에서 제거됨에 따라 해당 지표가 삭제되었습니다.
-* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)이 [버전 49](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)로 업데이트되었습니다.
+* 이제 AEM Formsas a Cloud Service 에서 [추가 게시 영역](/help/operations/additional-publish-regions.md) 및 [99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)(서비스 수준 계약)을 사용할 수 있습니다.
+   * 이러한 향상된 기능을 통해 가동 시간을 늘리고 지연 시간을 줄임으로써 더 높은 SLA를 달성하여 전 세계에 분포한 사용자에게 동급 최고의 경험을 제공할 수 있습니다.
 
-## 얼리 어답터 프로그램 {#early-adoption}
+## 조기 채택 프로그램 {#early-adoption}
 
 Adobe의 얼리 어답터 프로그램에 참여하여 향후 기능을 테스트할 기회를 얻으십시오.
 
-### Cloud Manager에서의 Edge Delivery Services 지원 {#edge-delivery-services}
+### Cloud Manager의 Edge Delivery Services 지원 {#edge-delivery-services}
 
-Adobe Experience Manager Sites의 일부로 Edge Delivery Services에 라이선스를 부여한 경우, [이제 Cloud Manager에서 Edge Delivery Services를 직접 사이트에 온보딩하고](/help/implementing/cloud-manager/edge-delivery-services.md) 안내식 셀프서비스 경험을 사용하여 라이브로 전환할 수 있습니다.
+AEM Sites의 일부로 Edge Delivery Services 라이선스가 부여된 경우 [이제 Cloud Manager에서 직접 Edge Delivery Services을 사용하여 사이트를 온보딩하고](/help/implementing/cloud-manager/edge-delivery-services.md) 안내식 셀프서비스 환경을 사용하여 라이브로 전환할 수 있습니다.
 
-이를 통해 모든 AEM 속성에 대해 통합된 경험이 가능해지며 도메인 이름 관리, SSL 인증서 관리 및 CDN 매핑을 포함한 모든 중요한 워크플로와의 일관성이 보장됩니다.
+이 기능은 모든 AEM 속성에 대해 통합 환경을 제공합니다. 도메인 이름 관리, SSL 인증서 관리 및 CDN 매핑과 같은 중요한 워크플로에서 일관성을 보장합니다.
 
-이러한 새 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 `aemcs-cmedgedelsvs-program-adopter@adobe.com`에 이메일을 보내주십시오.
+이 새로운 기능을 테스트하고 피드백을 공유하려면 Adobe ID과 연결된 전자 메일 주소에서 `aemcs-cmedgedelsvs-program-adopter@adobe.com`(으)로 전자 메일을 보내세요.
 
-### DV(Domain Validated) 인증서
+### DV(도메인 확인) 인증서
 
-이제 Cloud Manager를 통해 [DV(Domain Validated) SSL 인증서를 셀프서비스로 생성하고 관리할 수 있습니다.](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) 이를 통해 귀하의 온라인 비즈니스를 위한 안전한 웹 사이트를 구축할 수 있는 가장 빠르고 쉬우며 비용 효율적인 솔루션이 제공됩니다.
+이제 Cloud Manager을 사용하여 [셀프서비스에서 도메인 확인(DV) SSL 인증서를 생성하고 관리](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)할 수 있습니다. 이 기능은 온라인 비즈니스를 위한 안전한 웹 사이트를 만들 수 있는 가장 빠르고 쉽고 비용 효율적인 솔루션을 제공합니다.
 
-이러한 새 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 `Grp-aemcs-dv-dert-adopter@adobe.com`에 이메일을 보내주십시오.
+이 새로운 기능을 테스트하고 피드백을 제공하려면 Adobe ID에 연결된 전자 메일 주소를 사용하여 `Grp-aemcs-dv-dert-adopter@adobe.com`에게 전자 메일을 보내세요.
 
 ### 경험 감사 대시보드 {#experience-audit-dashboard}
 
 [Cloud Manager 경험 감사 대시보드](/help/implementing/cloud-manager/experience-audit-dashboard.md)에는 개선에 도움이 되는 인사이트 및 권장 사항과 함께 페이지 성능 점수의 트렌드 보기가 포함됩니다. 경험 감사는 Cloud Manager 프로덕션 파이프라인의 한 단계로 포함됩니다.
 
-대시보드는 웹 앱의 품질을 개선하기 위한 오픈 소스 자동화 도구인 Google Lighthouse를 사용합니다. 공개 또는 인증이 필요한 모든 웹 페이지에 대해 실행할 수 있습니다. 성능, 접근성, 점진적 웹 앱, SEO 등에 대한 감사가 있습니다.
+대시보드는 웹 앱의 품질을 개선하기 위한 오픈 소스 자동화 도구인 Google Lighthouse를 사용합니다. 이를 사용하여 공개 또는 인증이 필요한 웹 페이지를 감사할 수 있습니다. 성능, 접근성, 점진적 웹 앱, SEO 등에 대한 평가를 제공합니다.
 
-새 대시보드를 테스트해 보고 싶으십니까? Adobe ID와 연결된 이메일로 `aem-lighthouse-pilot@adobe.com`에 이메일을 보내 주시면 귀하의 시작을 도와드릴 수 있습니다.
+새로운 대시보드를 시험해 보는 것이 궁금하신가요? 먼저 Adobe ID에 연결된 전자 메일을 사용하여 `aem-lighthouse-pilot@adobe.com`에게 전자 메일을 보냅니다.
+
+## 버그 수정
+
+* 파이프라인이 삭제된 후 파이프라인 단계가 실행되는 드문 문제가 수정되었습니다.
+* 드문 경우지만 구성 파이프라인이 `FAILED` 상태를 잘못 표시하는 문제가 해결되었습니다.
