@@ -4,9 +4,9 @@ description: AEM as a Cloud Service의 Splunk 및 기타 로깅 공급업체에 
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cb4299be4681b24852a7e991c123814d31f83cad
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1375'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->이 기능은 아직 릴리스되지 않았으며 일부 로깅 대상은 릴리스 시점에 사용하지 못할 수 있습니다. 그동안 [로깅 문서](/help/implementing/developing/introduction/logging.md)에 설명된 대로 지원 티켓을 열어 로그를 **Splunk**&#x200B;에 전달할 수 있습니다.
+>이 기능은 아직 릴리스되지 않았으며 일부 로깅 대상은 릴리스 시점에 사용하지 못할 수 있습니다. 그동안 [AEM as a Cloud Service에 대한 로깅](/help/implementing/developing/introduction/logging.md)에 설명된 대로 지원 티켓을 열어 로그를 **Splunk**&#x200B;에 전달할 수 있습니다.
 
 로깅 공급업체나 로깅 제품 호스트에 대한 라이센스가 있는 고객은 AEM 로그(Apache/Dispatcher 포함) 및 CDN 로그를 관련 로깅 대상으로 전달할 수 있습니다. AEM as a Cloud Service은 다음 로깅 대상을 지원합니다.
 
@@ -169,7 +169,7 @@ aemcdn/
    2024-03-04T10:00:30.000-mno.log
 ```
 
-각 파일에는 여러 JSON 로그 항목이 포함되어 있으며 각 항목은 별도의 줄에 있습니다. 로그 항목 형식은 [로깅 문서](/help/implementing/developing/introduction/logging.md)에 설명되어 있으며 각 로그 항목에는 아래의 [로그 항목 형식](#log-format) 섹션에 언급된 추가 속성도 포함되어 있습니다.
+각 파일에는 여러 JSON 로그 항목이 포함되어 있으며 각 항목은 별도의 줄에 있습니다. 로그 항목 형식은 [AEM as a Cloud Service에 대한 로깅](/help/implementing/developing/introduction/logging.md)에 설명되어 있으며 각 로그 항목에는 아래 [로그 항목 형식](#log-format) 섹션에 언급된 추가 속성도 포함되어 있습니다.
 
 #### Azure Blob 저장소 AEM 로그 {#azureblob-aem}
 
@@ -183,7 +183,7 @@ AEM 로그(Apache/Dispatcher 포함)는 다음 명명 규칙을 사용하여 폴
 
 각 폴더 아래에 하나의 파일이 만들어지고 추가됩니다. 고객은 이 파일의 크기가 너무 커지지 않도록 처리 및 관리를 담당합니다.
 
-[로깅 문서](/help/implementing/developing/introduction/logging.md)에서 로그 항목 형식을 참조하십시오. 로그 항목에는 아래의 [로그 항목 형식](#log-formats) 섹션에서 언급한 추가 속성도 포함됩니다.
+[AEM as a Cloud Service에 대한 로깅](/help/implementing/developing/introduction/logging.md)에서 로그 항목 형식을 참조하십시오. 로그 항목에는 아래의 [로그 항목 형식](#log-formats) 섹션에서 언급한 추가 속성도 포함됩니다.
 
 
 ### Datadog {#datadog}
@@ -266,7 +266,7 @@ data:
 
 #### HTTPS CDN 로그 {#https-cdn}
 
-[로깅 문서](/help/implementing/developing/introduction/logging.md#cdn-log)에 설명된 로그 항목 형식을 사용하여 로그 항목의 배열인 json 페이로드와 함께 웹 요청(POST)이 지속적으로 전송됩니다. 추가 속성은 아래의 [로그 항목 형식](#log-formats) 섹션에 설명되어 있습니다.
+웹 요청(POST)은 로그 항목의 배열인 json 페이로드와 함께 지속적으로 전송되며, 로그 항목 형식은 [AEM as a Cloud Service에 대한 로깅](/help/implementing/developing/introduction/logging.md#cdn-log)에 설명되어 있습니다. 추가 속성은 아래의 [로그 항목 형식](#log-formats) 섹션에 설명되어 있습니다.
 
 `aemcdn` 값으로 설정된 `sourcetype` 속성도 있습니다.
 
@@ -276,7 +276,7 @@ data:
 
 #### HTTPS AEM 로그 {#https-aem}
 
-AEM 로그(apache/dispatcher 포함)의 경우 [logging article](/help/implementing/developing/introduction/logging.md)에 설명된 대로 다양한 로그 항목 형식이 포함된 로그 항목의 배열인 json 페이로드와 함께 웹 요청(POST)이 지속적으로 전송됩니다. 추가 속성은 아래의 [로그 항목 형식](#log-format) 섹션에 설명되어 있습니다.
+AEM 로그(apache/dispatcher 포함)의 경우 [AEM as a Cloud Service에 대한 로깅](/help/implementing/developing/introduction/logging.md)에 설명된 대로 다양한 로그 항목 형식이 포함된 로그 항목의 배열인 json 페이로드와 함께 웹 요청(POST)이 지속적으로 전송됩니다. 추가 속성은 아래의 [로그 항목 형식](#log-format) 섹션에 설명되어 있습니다.
 
 다음 값 중 하나로 설정된 `sourcetype` 속성도 있습니다.
 
@@ -323,7 +323,7 @@ data:
 
 ## 로그 항목 형식 {#log-formats}
 
-각 로그 유형(CDN 로그 및 Apache/Dispatcher을 포함한 AEM 로그)의 형식은 일반 [로깅 문서](/help/implementing/developing/introduction/logging.md)를 참조하십시오.
+각 로그 유형(CDN 로그 및 Apache/Dispatcher을 포함한 AEM 로그)의 형식은 [AEM as a Cloud Service에 대한 로깅](/help/implementing/developing/introduction/logging.md)을 참조하십시오.
 
 여러 프로그램 및 환경의 로그를 동일한 로깅 대상으로 전달할 수 있으므로 로깅 문서에 설명된 출력 외에 각 로그 항목에는 다음 속성이 포함됩니다.
 
@@ -350,7 +350,7 @@ aem_tier: author
 
 일부 조직에서는 로깅 대상에서 수신할 수 있는 트래픽을 제한하도록 선택합니다.
 
-CDN 로그의 경우 [이 문서](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)에 설명된 대로 IP 주소를 허용 목록에 추가할 수 있습니다. 공유 IP 주소 목록이 너무 크면 (Adobe이 아닌) Azure Blob Store에 트래픽을 보내는 것이 좋습니다. 여기서 논리를 작성하여 전용 IP에서 로그를 최종 대상으로 보낼 수 있습니다.
+CDN 로그의 경우 [fastly 설명서 - 공개 IP 목록](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)에 설명된 대로 IP 주소를 허용 목록에 추가할 수 있습니다. 공유 IP 주소 목록이 너무 크면 (Adobe이 아닌) Azure Blob Store에 트래픽을 보내는 것이 좋습니다. 여기서 논리를 작성하여 전용 IP에서 로그를 최종 대상으로 보낼 수 있습니다.
 
 AEM 로그(Apache/Dispatcher 포함)의 경우 [고급 네트워킹](/help/security/configuring-advanced-networking.md)을 거치도록 로그 전달을 구성할 수 있습니다. `host` 매개 변수와 함께 선택적 `port` 매개 변수를 사용하는 아래 세 가지 고급 네트워킹 유형에 대한 패턴을 참조하십시오.
 

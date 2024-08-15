@@ -4,9 +4,9 @@ description: AEM as a Cloud Service의 유지 관리 작업과 이를 구성하�
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '2055'
+source-wordcount: '2053'
 ht-degree: 30%
 
 ---
@@ -222,11 +222,11 @@ ht-degree: 30%
 
 **1** 이름이 `mt.yaml`이거나 유사한 파일을 만듭니다.
 
-**2** [구성 파이프라인 문서에 설명된 대로 파일을 `config` 또는 유사한 최상위 폴더 아래에 배치합니다.](/help/operations/config-pipeline.md#folder-structure)
+**2** [구성 파이프라인 사용](/help/operations/config-pipeline.md#folder-structure)에 설명된 대로 파일을 `config` 또는 유사한 최상위 폴더 아래에 배치합니다.
 
 **3** - 다음을 포함하는 구성 파일의 속성을 선언합니다.
 
-* 데이터 노드 위의 몇 가지 속성입니다. 설명은 [구성 파이프라인 문서](/help/operations/config-pipeline.md#common-syntax)를 참조하십시오. `kind` 속성 값은 *MaintenanceTasks*&#x200B;이고 버전은 *1*(으)로 설정해야 합니다.
+* 데이터 노드 위의 몇 가지 속성 — 설명은 [구성 파이프라인 사용](/help/operations/config-pipeline.md#common-syntax)을 참조하십시오. `kind` 속성 값은 *MaintenanceTasks*&#x200B;이고 버전은 *1*(으)로 설정해야 합니다.
 
 * `versionPurge` 및 `auditLogPurge` 개체가 모두 있는 데이터 개체입니다.
 

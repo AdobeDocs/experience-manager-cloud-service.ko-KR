@@ -4,7 +4,7 @@ description: 다음 자습서에서는 AEM Screens에 대한 사용자 지정 �
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 2%
@@ -35,7 +35,7 @@ ht-degree: 2%
 
 ## 프로젝트 설정 {#project-setup}
 
-Screens 프로젝트의 소스 코드는 일반적으로 다중 모듈 Maven 프로젝트로 관리됩니다. 자습서를 신속하게 수행하기 위해 프로젝트가 [AEM Project Archetype 13](https://github.com/adobe/aem-project-archetype)을(를) 사용하여 사전 생성되었습니다. [Maven AEM Project Archetype을 사용하여 프로젝트를 만드는 방법에 대한 자세한 내용은 여기에서 ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)을(를) 참조하십시오.
+Screens 프로젝트의 소스 코드는 일반적으로 다중 모듈 Maven 프로젝트로 관리됩니다. 자습서를 신속하게 수행하기 위해 프로젝트가 [AEM Project Archetype 13](https://github.com/adobe/aem-project-archetype)을(를) 사용하여 사전 생성되었습니다. Maven AEM Project Archetype을 사용하여 프로젝트를 만드는 방법에 대한 자세한 내용은 [프로젝트 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)을 참조하십시오.
 
 1. [CRX 패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)를 사용하여 다음 패키지를 다운로드하여 설치하십시오.
 

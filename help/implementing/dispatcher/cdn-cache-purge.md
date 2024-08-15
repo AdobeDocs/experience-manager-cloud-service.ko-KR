@@ -4,9 +4,9 @@ description: API 호출에 사용할 수 있는 제거 API 토큰을 구성하�
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 3b55f3094b7154b7723ef7ae2230d7ae01eb4abc
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '433'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 # CDN 캐시 삭제 {#cdn-purge-cache}
 
 지우기는 Adobe CDN 캐시에서 개체를 제거하여 향후 요청이 캐시에서 처리되지 않고 캐시 누락으로 원점으로 진행됩니다.
-AEM as a Cloud Service을 사용하면 제거 API 토큰을 구성할 수 있으며, 이 토큰을 제거 API 호출에 사용할 수 있습니다. Cloud Manager 구성 파이프라인 인증 지시문을 사용하여 이 토큰을 구성하는 방법에 대해 알아보려면 [CDN 자격 증명 및 인증 구성 문서](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)를 읽어 보십시오.
+AEM as a Cloud Service을 사용하면 제거 API 토큰을 구성할 수 있으며, 이 토큰을 제거 API 호출에 사용할 수 있습니다. Cloud Manager 구성 파이프라인 인증 지시문을 사용하여 이 토큰을 구성하는 방법에 대해 알아보려면 [CDN 자격 증명 및 인증 구성](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)을 참조하십시오.
 
 세 가지 지원되는 삭제 변형이 있습니다.
 
@@ -75,4 +75,4 @@ curl
 
 ## Apache/Dispatcher 계층과의 상호 작용 {#apache-layer}
 
-[컨텐츠 배달 흐름 문서](/help/implementing/dispatcher/overview.md)에 설명된 대로 CDN은 캐시가 만료된 경우 Apache/Dispatcher 계층에서 컨텐츠를 검색합니다. 이는 CDN에서 리소스를 제거하기 전에 Dispatcher에서도 새로운 버전의 콘텐츠를 사용할 수 있는지 확인해야 함을 의미합니다. 자세한 내용은 [Dispatcher 캐시 무효화](/help/implementing/dispatcher/caching.md#disp)도 참조하십시오.
+[컨텐츠 전달 흐름](/help/implementing/dispatcher/overview.md)에 설명된 대로 CDN은 캐시가 만료된 경우 Apache/Dispatcher 레이어에서 컨텐츠를 검색합니다. 이는 CDN에서 리소스를 제거하기 전에 Dispatcher에서도 새로운 버전의 콘텐츠를 사용할 수 있는지 확인해야 함을 의미합니다. 자세한 내용은 [Dispatcher 캐시 무효화](/help/implementing/dispatcher/caching.md#disp)도 참조하십시오.

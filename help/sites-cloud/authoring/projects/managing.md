@@ -5,10 +5,10 @@ exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 82%
+source-wordcount: '876'
+ht-degree: 81%
 
 ---
 
@@ -92,7 +92,7 @@ ht-degree: 82%
 
    ![타일에 항목 추가](/help/sites-cloud/authoring/assets/project-workflows.png)
 
-1. 타일을 만들 때처럼 타일에 항목을 추가합니다. 프로젝트 타일은 [여기](/help/sites-cloud/authoring/projects/overview.md#project-tiles)에 설명됩니다. 이 예제에서는 워크플로가 더 추가되었습니다.
+1. 타일을 만들 때처럼 타일에 항목을 추가합니다. 자세한 내용은 [프로젝트 타일](/help/sites-cloud/authoring/projects/overview.md#project-tiles)을 참조하세요. 이 예제에서는 워크플로가 더 추가되었습니다.
 
 ### 타일 열기 {#opening-a-tile}
 

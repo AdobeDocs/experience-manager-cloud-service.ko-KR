@@ -4,9 +4,9 @@ description: AEM 관리 CDN을 사용하는 방법과 자체 CDN을 AEM 관리 C
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 655b92f0fd3c6fb69bdd9343719537d6328fa7be
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1555'
 ht-degree: 18%
 
 ---
@@ -178,7 +178,7 @@ AEM 관리 CDN은 다음을 사용하여 각 요청에 헤더를 추가합니다
 >
 >고객 관리 CDN이 있는 경우 이러한 헤더는 실제 클라이언트가 아닌 고객 CDN 프록시 서버의 위치를 반영합니다. 따라서 고객 관리 CDN의 경우 지리적 위치 헤더는 고객 CDN에서 관리해야 합니다.
 
-국가 코드 값은 [여기](https://en.wikipedia.org/wiki/kr/ISO_3166-1)에 설명된 Alpha-2 코드입니다.
+국가 코드 값은 [ISO 3166-1](https://en.wikipedia.org/wiki/kr/ISO_3166-1)에 설명된 Alpha-2 코드입니다.
 
 대륙 코드의 값은 다음과 같습니다.
 

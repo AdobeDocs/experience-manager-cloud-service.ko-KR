@@ -4,9 +4,9 @@ description: 컨텐츠 전송 도구를 사용하여 컨텐츠 전송의 유효�
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1080'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 >[!INFO]
 >
->이 기능은 CTT(Content Transfer Tool) 버전 1.8.x 릴리스에서 사용할 수 있습니다. AEM Cloud Service 대상 환경은 버전 6158 이상을 실행 중이어야 합니다. [사전 복사](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step)를 실행하려면 원본 환경도 설정해야 합니다. 유효성 검사 기능은 소스에서 azcopy.config 파일을 찾습니다. 이 파일을 찾지 못하면 유효성 검사가 실행되지 않습니다. azcopy.config 파일을 구성하는 방법에 대한 자세한 내용은 [이 페이지](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file)를 참조하십시오.
+>이 기능은 CTT(Content Transfer Tool) 버전 1.8.x 릴리스에서 사용할 수 있습니다. AEM Cloud Service 대상 환경은 버전 6158 이상을 실행 중이어야 합니다. [사전 복사](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step)를 실행하려면 원본 환경도 설정해야 합니다. 유효성 검사 기능은 소스에서 azcopy.config 파일을 찾습니다. 이 파일을 찾지 못하면 유효성 검사가 실행되지 않습니다. azcopy.config 파일을 구성하는 방법에 대한 자세한 내용은 [대용량 콘텐츠 저장소 처리 - azcopy.config 파일 구성](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file)을 참조하십시오.
 
 컨텐츠 전송 유효성 검사는 선택적 기능입니다. 이 기능을 활성화하면 추출 및 수집을 수행하는 데 걸리는 시간이 모두 늘어납니다. 이 기능을 사용하려면 다음 단계에 따라 소스 AEM 환경의 시스템 콘솔에서 활성화하십시오.
 

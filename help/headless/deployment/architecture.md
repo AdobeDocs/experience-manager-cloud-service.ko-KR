@@ -4,10 +4,10 @@ description: Headless 배포와 관련된 Adobe Experience Manager의 고급 아
 feature: Headless, Content Fragments,GraphQL API
 exl-id: 5ba6921f-b06e-463d-b956-d1fb434090c9
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 100%
+source-wordcount: '552'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 * **Dispatcher**&#x200B;는 AEM Dispatcher 모듈로 보강된 정적 웹 서버입니다. 캐싱 기능과 보안의 또 다른 계층을 제공합니다. **Dispatcher**&#x200B;는 **Publish** 및 **미리보기** 서비스 앞에 위치합니다.
 
-AEM as a Cloud Service Program 내에서 Dev, Stage, Prod 등의 여러 환경을 가질 수 있습니다. 각 환경에는 고유한 **Author**, **Publish**, **미리보기** 서비스가 있습니다. [여기](/help/implementing/cloud-manager/manage-environments.md)에서 환경 관리에 대해 자세히 알아볼 수 있습니다.
+AEM as a Cloud Service Program 내에서 Dev, Stage, Prod 등의 여러 환경을 가질 수 있습니다. 각 환경에는 고유한 **Author**, **Publish**, **미리보기** 서비스가 있습니다. 자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md)를 참조하세요.
 
 ## Author Publish 모델
 

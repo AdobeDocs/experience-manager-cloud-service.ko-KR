@@ -4,10 +4,10 @@ description: Adobe Experience Manager를 사용한 Headless 구현에 대한 다
 feature: Headless, Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 96%
+source-wordcount: '817'
+ht-degree: 93%
 
 ---
 
@@ -37,7 +37,7 @@ Author 서비스는 내부 사용자가 콘텐츠를 만들고 관리하고 게�
 
 >[!TIP]
 >
-> IMS 및 AEM 사용자 및 그룹 관리에 대한 자세한 비디오 설명은 [여기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html)에서 확인할 수 있습니다.
+>IMS 및 AEM 사용자 및 그룹 관리에 대한 자세한 비디오 설명은 [AEM as a Cloud Service에 대한 액세스 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html)을 참조하십시오.
 
 AEM에서 **그룹**&#x200B;을 관리하려면 **도구** > **보안** > **그룹**&#x200B;으로 이동합니다.
 

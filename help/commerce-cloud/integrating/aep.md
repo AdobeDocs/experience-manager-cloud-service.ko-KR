@@ -11,9 +11,9 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1866'
+source-wordcount: '1868'
 ht-degree: 1%
 
 ---
@@ -329,7 +329,7 @@ React 기반 Peregrine 및 CIF 핵심 구성 요소를 초기화하려면 필요
    - 는 Experience Platform 및/또는 ACDS에 대해 주어진 구성으로 초기화합니다.
    - Peregrine에서 모든 이벤트를 구독하고 이벤트 SDK에 전달합니다.
 
-   `EventCollectorContext` [여기](https://github.com/adobe/aem-core-cif-components/blob/3d4e44d81fff2f398fd2376d24f7b7019f20b31b/extensions/experience-platform-connector/src/events-collector/EventCollectorContext.js)의 구현 세부 정보를 검토할 수 있습니다.
+   `EventCollectorContext`의 구현 세부 정보를 검토할 수 있습니다. GitHub의 [aem-core-cif-components](https://github.com/adobe/aem-core-cif-components/blob/3d4e44d81fff2f398fd2376d24f7b7019f20b31b/extensions/experience-platform-connector/src/events-collector/EventCollectorContext.js)을(를) 참조하십시오.
 
 ### 업데이트된 AEM 프로젝트 빌드 및 배포
 

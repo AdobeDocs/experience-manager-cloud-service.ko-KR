@@ -4,10 +4,10 @@ description: 콘텐츠 조각 콘텐츠의 Headless 게재를 위해 GraphQL API
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 97%
+source-wordcount: '677'
+ht-degree: 96%
 
 ---
 
@@ -45,7 +45,7 @@ GraphQL API를 사용하려면 먼저 GraphQL 엔드포인트를 만들어야 �
    /content/cq:graphql/<configuration-name>/endpoint
    ```
 
-GraphQL 엔드포인트 활성화에 대한 자세한 내용은 [여기](/help/headless/graphql-api/graphql-endpoint.md)에서 확인할 수 있습니다.
+GraphQL 끝점 활성화에 대한 자세한 내용은 [AEM에서 GraphQL 끝점 관리](/help/headless/graphql-api/graphql-endpoint.md)를 참조하십시오.
 
 ## GraphiQL로 GraphQL을 사용하여 콘텐츠 쿼리
 

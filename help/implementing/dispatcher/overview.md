@@ -4,10 +4,10 @@ description: 콘텐츠 게재 데이터 흐름과 콘텐츠 게시 방법에 대
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 feature: Dispatcher
 role: Admin
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -36,4 +36,4 @@ ht-degree: 100%
 * [캐싱](/help/implementing/dispatcher/caching.md)
 
 
-작성자 서비스에서 게시 서비스로의 복제에 대한 정보는 [여기에서](/help/operations/replication.md) 확인할 수 있습니다.
+작성자 서비스에서 게시 서비스로의 복제에 대한 자세한 내용은 [복제](/help/operations/replication.md)를 참조하십시오.

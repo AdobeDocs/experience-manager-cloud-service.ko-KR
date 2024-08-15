@@ -4,9 +4,9 @@ description: 구성 파일에서 규칙 및 필터를 선언하고 Cloud Manager
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 3c546a05cf91dd8dcba39e42cd0f19857713f130
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1314'
 ht-degree: 2%
 
 ---
@@ -39,7 +39,7 @@ CDN에서 트래픽을 구성하려면 먼저 다음을 수행해야 합니다.
 
 1. 아래 섹션에서 다양한 구성 조각을 참조하여 이름이 `cdn.yaml`이거나 유사한 파일을 만드십시오.
 
-   모든 코드 조각에는 이러한 일반 속성이 있으며, 이는 [Config Pipeline 문서](/help/operations/config-pipeline.md#common-syntax)에 설명되어 있습니다. `kind` 속성 값은 *CDN*&#x200B;이고 `version` 속성은 *1*(으)로 설정해야 합니다.
+   모든 코드 조각에는 이러한 공통 속성이 있으며, 이는 [Config Pipeline](/help/operations/config-pipeline.md#common-syntax)에 설명되어 있습니다. `kind` 속성 값은 *CDN*&#x200B;이고 `version` 속성은 *1*(으)로 설정해야 합니다.
 
    ```
    kind: "CDN"
@@ -48,9 +48,9 @@ CDN에서 트래픽을 구성하려면 먼저 다음을 수행해야 합니다.
      envTypes: ["dev"]
    ```
 
-1. [파이프라인 구성 문서](/help/operations/config-pipeline.md#folder-structure)에 설명된 대로 파일을 *config* 또는 유사한 최상위 폴더 아래에 배치합니다.
+1. [Config Pipeline](/help/operations/config-pipeline.md#folder-structure)에 설명된 대로 파일을 *config* 또는 이와 유사한 최상위 폴더 아래에 위치시킵니다.
 
-1. [파이프라인 구성 문서](/help/operations/config-pipeline.md#managing-in-cloud-manager)에 설명된 대로 Cloud Manager에서 구성 파이프라인을 만듭니다.
+1. [구성 파이프라인](/help/operations/config-pipeline.md#managing-in-cloud-manager)에 설명된 대로 Cloud Manager에서 구성 파이프라인을 만듭니다.
 
 1. 구성 배포.
 

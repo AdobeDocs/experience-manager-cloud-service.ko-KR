@@ -4,10 +4,10 @@ description: 문제 및 기타 중요한 정보에 대해 편리하게 조치를
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 22d5975a0c4ee180bbcda906b035d306a352b752
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 56%
+ht-degree: 54%
 
 ---
 
@@ -30,7 +30,7 @@ AEM as Cloud Service는 최적화에 즉각적인 조치 및 사전 알림 추�
 
 ## 구성 {#configuration}
 
-액션 센터 이메일 알림 수신을 구성하려면 [이 문서](/help/journey-onboarding/notification-profiles.md)에 설명된 제품 프로필, 즉 인시던트 알림 - Cloud Service 및 사전 알림 - Cloud Service를 만듭니다. 또한 해당 프로필에 조직의 적절한 Adobe ID를 할당합니다. 이를 통해 관리자는 해당 이메일 알림을 수신하려는 사용자를 확인할 수 있습니다.
+수신 관리 센터 전자 메일 알림을 구성하려면 [알림 프로필](/help/journey-onboarding/notification-profiles.md)에 설명된 대로 제품 프로필을 만듭니다. 즉, 문제 알림 - Cloud Service 및 사전 알림 - Cloud Service. 또한 해당 프로필에 조직의 적절한 Adobe ID를 할당합니다. 이를 통해 관리자는 해당 이메일 알림을 수신하려는 사용자를 확인할 수 있습니다.
 
 >[!NOTE]
 >액션 센터 이메일 알림은 조직 수준에서 작동하므로 구독자는 해당 프로그램 내의 모든 프로그램 및 환경에 대한 알림을 수신합니다.
@@ -65,7 +65,7 @@ AEM as a Cloud Service에는 여러 유형의 알림이 있지만 아래 그림�
 |---------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
 | 운영 인시던트 | 즉각적인 조치가 필요한 중대 인시던트 | “인시던트 알림 - Cloud Service” 제품 프로필에 할당된 사용자 | X |
 | 사전 알림 추천 | 계획을 수립해야 하는 최적화 | “사전 알림 - Cloud Service” 제품 프로필에 할당된 사용자 | X |
-| Cloud Manager 파이프라인 상태 | 파이프라인 상태에 대한 정보 | 비즈니스 소유자, 프로그램 관리자 또는 배포 관리자 역할의 사용자, &quot;기타&quot; 확인란이 [Experience Cloud 환경 설정](https://experience.adobe.com/preferences)에서 [여기에 설명된](/help/implementing/cloud-manager/notifications.md)대로 선택되었습니다. |                           |
+| Cloud Manager 파이프라인 상태 | 파이프라인 상태에 대한 정보 | 비즈니스 소유자, 프로그램 관리자 또는 배포 관리자 역할의 사용자, &quot;기타&quot; 확인란이 [Experience Cloud 환경 설정](https://experience.adobe.com/preferences)에서 선택되었습니다. [알림](/help/implementing/cloud-manager/notifications.md)을 참조하세요. |                           |
 
 ## 지원되는 알림 유형 {#supported-notification-types}
 

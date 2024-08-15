@@ -4,10 +4,10 @@ description: AEM as a Cloud Service에 대해 VPN 또는 유연한/전용 이그
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: a21a0cda116077a3752f33aaff6dc6c180b855aa
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '5744'
-ht-degree: 100%
+source-wordcount: '5743'
+ht-degree: 99%
 
 ---
 
@@ -785,7 +785,7 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시합니다. 약 10�
 절차는 대부분 이전 지침과 유사합니다. 단, 프로덕션 환경이 고급 네트워킹에 대해 아직 활성화되지 않은 경우 스테이징 환경에서 먼저 활성화하여 구성을 테스트할 수 있습니다.
 
 1. [Cloud Manager Create Network Infrastructure API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure)에 대한 POST 호출을 통해 모든 지역에 네트워킹 인프라를 만듭니다. 기본 지역과 비교하여 페이로드 JSON 구성의 유일한 차이점은 지역 속성입니다.
-1. 스테이징 환경의 경우 `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`을 실행하여 환경에서 설정한 고급 네트워킹을 활성화하고 구성합니다. 자세한 내용은 [여기](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)에서 API 설명서를 참조하십시오.
+1. 스테이징 환경의 경우 `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`을 실행하여 환경에서 설정한 고급 네트워킹을 활성화하고 구성합니다. 자세한 내용은 [API 설명서](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)를 참조하세요.
 1. 필요한 경우, FQDN을 통해 외부 인프라를 잠급니다(예: `p1234.external.adobeaemcloud.com`). 그렇지 않으면 IP 주소를 통해 잠글 수 있습니다.
 1. 스테이징 환경이 예상대로 작동하는 경우 프로덕션의 환경에서 설정한 고급 네트워킹 구성을 활성화하고 구성합니다.
 

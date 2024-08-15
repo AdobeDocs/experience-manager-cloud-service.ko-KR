@@ -4,9 +4,9 @@ description: Cloud Manager 구성 파이프라인을 사용하여 배포되는 �
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1266'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ AEM as a Cloud Service의 [CDN](/help/implementing/dispatcher/cdn.md#point-to-po
 
 설정의 일부로 Adobe CDN과 고객 CDN은 `X-AEM-Edge-Key` HTTP 헤더의 값에 동의해야 합니다. 이 값은 Adobe CDN으로 라우팅되기 전에 고객 CDN의 각 요청에 대해 설정되고, 이 값은 값이 예상대로 맞는지 검증하므로 요청을 적절한 AEM 소스로 라우팅하는 데 도움이 되는 헤더를 포함하여 다른 HTTP 헤더를 신뢰할 수 있습니다.
 
-*X-AEM-Edge-Key* 값은 `cdn.yaml` 또는 유사한 파일의 `edgeKey1` 및 `edgeKey2` 속성에 의해 참조되며 최상위 `config` 폴더 아래에 있습니다. 폴더 구조 및 구성 배포 방법에 대한 자세한 내용은 [Config Pipeline 문서](/help/operations/config-pipeline.md#folder-structure)를 참조하십시오.
+*X-AEM-Edge-Key* 값은 `cdn.yaml` 또는 유사한 파일의 `edgeKey1` 및 `edgeKey2` 속성에 의해 참조되며 최상위 `config` 폴더 아래에 있습니다. 폴더 구조 및 구성 배포 방법에 대한 자세한 내용은 [구성 파이프라인 사용](/help/operations/config-pipeline.md#folder-structure)을 참조하십시오.
 
 구문은 아래에 설명되어 있습니다.
 
@@ -54,7 +54,7 @@ data:
           authenticator: edge-auth
 ```
 
-`data` 노드 위의 속성에 대한 설명은 [구성 파이프라인 문서](/help/operations/config-pipeline.md#common-syntax)를 참조하십시오. `kind` 속성 값은 *CDN*&#x200B;이고 `version` 속성은 `1`(으)로 설정해야 합니다.
+`data` 노드 위의 속성에 대한 설명은 [구성 파이프라인 사용](/help/operations/config-pipeline.md#common-syntax)을 참조하십시오. `kind` 속성 값은 *CDN*&#x200B;이고 `version` 속성은 `1`(으)로 설정해야 합니다.
 
 추가 속성은 다음과 같습니다.
 
@@ -76,7 +76,7 @@ data:
 
 ## API 토큰 제거 {#purge-API-token}
 
-고객은 선언된 제거 API 토큰을 사용하여 [CDN 캐시를 제거](/help/implementing/dispatcher/cdn-cache-purge.md)할 수 있습니다. 토큰이 최상위 `config` 폴더 아래에 있는 `cdn.yaml` 또는 유사한 파일에 선언되었습니다. 폴더 구조 및 구성 배포 방법에 대한 자세한 내용은 [구성 파이프라인 문서](/help/operations/config-pipeline.md#folder-structure)을(를) 참조하십시오.
+고객은 선언된 제거 API 토큰을 사용하여 [CDN 캐시를 제거](/help/implementing/dispatcher/cdn-cache-purge.md)할 수 있습니다. 토큰이 최상위 `config` 폴더 아래에 있는 `cdn.yaml` 또는 유사한 파일에 선언되었습니다. 폴더 구조 및 구성 배포 방법에 대한 자세한 내용은 [구성 파이프라인 사용](/help/operations/config-pipeline.md#folder-structure)을 참조하십시오.
 
 구문은 아래에 설명되어 있습니다.
 
@@ -100,7 +100,7 @@ data:
            authenticator: purge-auth
 ```
 
-`data` 노드 위의 속성에 대한 설명은 [구성 파이프라인 문서](/help/operations/config-pipeline.md#common-syntax)를 참조하십시오. `kind` 속성 값은 *CDN*&#x200B;이고 `version` 속성은 `1`(으)로 설정해야 합니다.
+`data` 노드 위의 속성에 대한 설명은 [구성 파이프라인 사용](/help/operations/config-pipeline.md#common-syntax)을 참조하십시오. `kind` 속성 값은 *CDN*&#x200B;이고 `version` 속성은 `1`(으)로 설정해야 합니다.
 
 추가 속성은 다음과 같습니다.
 
@@ -156,7 +156,7 @@ data:
            authenticator: my-basic-authenticator
 ```
 
-`data` 노드 위의 속성에 대한 설명은 [구성 파이프라인 문서](/help/operations/config-pipeline.md#common-syntax)를 참조하십시오. `kind` 속성 값은 *CDN*&#x200B;이고 `version` 속성은 `1`(으)로 설정해야 합니다.
+`data` 노드 위의 속성에 대한 설명은 [구성 파이프라인 사용](/help/operations/config-pipeline.md#common-syntax)을 참조하십시오. `kind` 속성 값은 *CDN*&#x200B;이고 `version` 속성은 `1`(으)로 설정해야 합니다.
 
 또한 구문에는 다음이 포함됩니다.
 

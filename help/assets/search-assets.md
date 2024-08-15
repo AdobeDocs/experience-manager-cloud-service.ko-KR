@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '5503'
+source-wordcount: '5506'
 ht-degree: 6%
 
 ---
@@ -87,7 +87,7 @@ Experience Manager Assets은 기본적으로 다음 두 속성에 대한 Facet �
 
 이전 동작(`statistical` 모드)으로 전환해야 하는 경우 [콘텐츠 검색 및 색인화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html)를 참조하여 `damAssetLucene-9` 색인의 사용자 지정 버전을 만드십시오. Adobe은 결과 집합이 큰 검색 응답 시간에 영향을 주므로 `secure` 모드로 전환하지 않는 것이 좋습니다.
 
-이러한 모드에 대한 자세한 설명을 포함하여 Oak의 Facet 기능에 대한 자세한 내용은 [이 문서](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets)를 참조하십시오.
+이러한 모드에 대한 자세한 설명을 포함하여 Oak의 Facet 기능에 대한 자세한 내용은 [Facet - Oak 설명서 - Lucene 색인](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets)을 참조하십시오.
 
 ## 입력할 때 제안 사항 검색 {#searchsuggestions}
 

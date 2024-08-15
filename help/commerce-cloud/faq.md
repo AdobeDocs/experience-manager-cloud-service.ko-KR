@@ -4,10 +4,10 @@ description: AEM - Commerce Integration Framework를 사용한 전자 상거래 
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 feature: Commerce Integration Framework
 role: Admin, Architect, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 100%
+source-wordcount: '965'
+ht-degree: 98%
 
 ---
 
@@ -77,4 +77,4 @@ Adobe는 추상화된 결제 방법을 사용할 것을 권장합니다. 이를 
 
 ## 16. I/O Runtime 체험판 라이선스를 요청하려면 어떻게 해야 합니까?
 
-[여기](https://developer.adobe.com/app-builder/trial/)에서 I/O Runtime을 사용하기 위한 체험판 라이선스를 요청할 수 있습니다.
+I/O Runtime을 사용하기 위해 체험판 라이선스를 요청하는 자세한 내용은 [액세스 권한 받기](https://developer.adobe.com/runtime/docs/guides/overview/getting_access/)를 참조하십시오.

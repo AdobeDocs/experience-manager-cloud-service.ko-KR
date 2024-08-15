@@ -4,9 +4,9 @@ description: AEM 설치를 클라우드로 이동할 준비가 되었는지 확�
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1900'
+source-wordcount: '1907'
 ht-degree: 6%
 
 ---
@@ -38,7 +38,7 @@ AEM as a Cloud Service은 AEM 프로젝트 관리를 위한 많은 새로운 기
 
 이러한 개선 사항과 함께 AEM 및 Adobe Managed Services의 온프레미스 설치 간에 AEM as a Cloud Service과 비교하여 몇 가지 차이점이 도입되었습니다.
 
-아래 표의 항목 목록은 AEM as a Cloud Service으로의 마이그레이션과 가장 관련이 있는 변경 사항의 하위 집합입니다. 주목할 만한 변경 내용의 전체 목록을 [여기](/help/release-notes/aem-cloud-changes.md)에서 확인할 수 있습니다.
+아래 표의 항목 목록은 AEM as a Cloud Service으로의 마이그레이션과 가장 관련이 있는 변경 사항의 하위 집합입니다. [Adobe Experience Manager as a Cloud Service의 주요 변경 내용](/help/release-notes/aem-cloud-changes.md)의 전체 목록을 확인할 수 있습니다.
 
 <table>
 <thead>
@@ -117,7 +117,7 @@ AEM as a Cloud Service은 AEM 프로젝트 관리를 위한 많은 새로운 기
   <tr>
     <td>워크플로 런처</td>
     <td></td>
-    <td>코드에서 기본 제공 또는 사용자 지정 DAM 자산 업데이트 워크플로우를 트리거하는 워크플로우 런처를 제거합니다. <br>AEM as a Cloud Service에 업로드된 모든 자산은 자산 처리 서비스에서 처리됩니다. 사용자 지정 단계는 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows"> Post 처리 워크플로</a>에서 사후 처리 워크플로를 설정하고 구성하는 방법을 참조하십시오.</td>
+    <td>코드에서 기본 제공 또는 사용자 지정 DAM 자산 업데이트 워크플로우를 트리거하는 워크플로우 런처를 제거합니다. <br>AEM as a Cloud Service에 업로드된 모든 자산은 자산 처리 서비스에서 처리됩니다. 사용자 지정 단계는 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows"> 사후 처리 워크플로</a>에서 사후 처리 워크플로를 설정하고 구성하는 방법을 참조하십시오.</td>
   </tr>
   <tr>
     <td>사용자 지정 렌디션 단계</td>

@@ -5,10 +5,10 @@ exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1060'
-ht-degree: 100%
+source-wordcount: '1071'
+ht-degree: 97%
 
 ---
 
@@ -70,7 +70,7 @@ AEM Headless 애플리케이션을 실행할 수 있도록 준비하려면 아�
 
 업데이트가 Cloud Manager에 업로드되면 [Cloud Manager의 CI/CD 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)을 사용하여 AEM as a Cloud Service에 배포할 수 있습니다.
 
-[여기에서](/help/implementing/deploying/overview.md) 전반적으로 다룬 Cloud Manager CI/CD 파이프라인을 사용하여 코드 배포를 시작할 수 있습니다.
+Cloud Manager CI/CD 파이프라인을 사용하여 코드 배포를 시작할 수 있습니다. 이 파이프라인은 [Cloud Manager 및 패키지 관리자를 통한 콘텐츠 패키지 배포](/help/implementing/deploying/overview.md)에 자세히 설명되어 있습니다.
 
 ## 성능 모니터링 {#performance-monitoring}
 

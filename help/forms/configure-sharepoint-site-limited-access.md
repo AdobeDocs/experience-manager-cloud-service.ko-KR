@@ -4,17 +4,17 @@ Description: Learn how to configure SharePoint Site with limited access using th
 keywords: 제한된 액세스로 SharePoint 사이트를 구성하는 방법. 제한된 액세스로 SharePoint 구성, 인증 범위를 사용하여 SharePoint 사이트에 대한 액세스를 제한합니다.
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 4962c058e2cc2135dd3626655ba7b21dbdcbd455
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 15%
+source-wordcount: '817'
+ht-degree: 16%
 
 ---
 
 
 <span class="preview"> 이 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
 
-# 인증 범위를 사용하여 제한된 액세스로 SharePoint 사이트 구성
+# 인증 범위를 사용하여 제한된 액세스로 SharePoint Site 구성
 
 제한 또는 제한된 액세스의 목적은 관리자가 특정 SharePoint 사이트 또는 SharePoint 사이트 그룹에 대한 사용자 액세스를 제어할 수 있도록 하여 보안 관리를 향상시키는 것입니다. 권한 수준은 허용되지 않는 다른 SharePoint 사이트를 볼 수 있도록 허용하지 않고 특정 사이트에 대한 액세스 권한을 사용자 또는 그룹에 부여해야 할 때 유용합니다.
 
@@ -52,7 +52,7 @@ Microsoft의 Graph API에서 `Sites.Selected` 권한 범위를 사용하여 [Mic
 
 `Sites.Selected` API 권한을 사용하려면 SharePoint Online Sites에 대해 적절한 권한이 설정된 Azure 포털에 등록된 응용 프로그램이 필요합니다. 이 설정을 사용하면 정의된 범위 내에서 SharePoint 사이트와 상호 작용하는 데 필요한 권한이 애플리케이션에 부여되므로 필요한 제한된 액세스를 제공할 수 있습니다.
 
-SharePoint Online Sites에 대한 `Sites.Selected` 권한을 사용하는 응용 프로그램을 개발하는 방법에 대한 지침은 [문서](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476)를 참조하세요.
+SharePoint Online Sites에 대해 `Sites.Selected` 권한을 사용하는 응용 프로그램을 개발하는 방법에 대한 지침은 [블로그 문서 - SPO Sites에 대해 Sites.Selected 권한을 사용하는 응용 프로그램 개발](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476)을(를) 참조하십시오.
 
 ### AEM 인스턴스에서 인증 범위 설정
 

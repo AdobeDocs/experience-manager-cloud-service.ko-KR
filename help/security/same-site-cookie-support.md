@@ -4,16 +4,16 @@ description: Adobe Experience Manager as a Cloud Service에 대한 Same Site 쿠
 exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 100%
+source-wordcount: '280'
+ht-degree: 96%
 
 ---
 
 # Adobe Experience Manager as a Cloud Service에 대한 Same Site 쿠키 지원 {#same-site-cookie-support-for-adobe-experience-manager-as-a-cloud-service}
 
-버전 80부터 Chrome과 이후 Safari에 쿠키 보안을 위한 새로운 모델이 도입되었습니다. 이 모드는 `SameSite`라는 설정을 통해 서드파티 사이트에 대한 쿠키 가용성의 보안 제어를 도입하기 위해 설계되었습니다. 자세한 내용은 이 [문서](https://web.dev/articles/samesite-cookies-explained)를 참조하십시오.
+버전 80부터 Chrome과 이후 Safari에 쿠키 보안을 위한 새로운 모델이 도입되었습니다. 이 모드는 `SameSite`라는 설정을 통해 서드파티 사이트에 대한 쿠키 가용성의 보안 제어를 도입하기 위해 설계되었습니다. 자세한 내용은 [web.dev - SameSite 쿠키 설명](https://web.dev/articles/samesite-cookies-explained)을 참조하십시오.
 
 이 설정의 기본값(`SameSite=Lax`)으로 인해 AEM 인스턴스 또는 서비스 간 인증이 제대로 작동하지 않을 수 있습니다. 이들 서비스의 도메인 또는 URL 구조가 이 쿠키 정책의 제한 조건에 해당하지 않을 수 있기 때문입니다.
 

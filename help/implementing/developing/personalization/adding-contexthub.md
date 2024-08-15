@@ -4,9 +4,9 @@ description: 페이지에 ContextHub를 추가하여 ContextHub 기능을 활성
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '898'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ ContextHub에서는 JavaScript 개체를 조작하기 위한 [`ContextHub.Utils.
 >
 >ContextHub는 기본적으로 게시 서버에서 현재 사용된 로그인 정보를 인식하지 못하며 이러한 사용자는 ContextHub에서 &quot;익명&quot;으로 간주됩니다.
 >
->프로필 스토어를 로드하여 ContextHub에서 로그인한 사용자를 인식하도록 할 수 있습니다. [GitHub의 샘플 코드](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js)를 참조하세요.
+>프로필 스토어를 로드하여 ContextHub에서 로그인한 사용자를 인식하도록 할 수 있습니다. 샘플 코드: [GitHub의 aem-sample-we-retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js)을(를) 참조하십시오.
 
 ### ContextHub 이벤트 {#contexthub-eventing}
 

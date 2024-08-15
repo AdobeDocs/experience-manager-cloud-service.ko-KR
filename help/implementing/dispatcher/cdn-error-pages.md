@@ -4,9 +4,9 @@ description: Amazon S3 또는 Azure Blob Storage와 같은 자체 호스팅 저�
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '364'
 ht-degree: 1%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 1%
 
 1. 아래 구문 섹션을 참조하여 이름이 `cdn.yaml`이거나 유사한 파일을 만드십시오.
 
-1. [구성 파이프라인 문서](/help/operations/config-pipeline.md#folder-structure)에 설명된 대로 파일을 *config* 또는 유사한 최상위 폴더 아래에 배치합니다.
+1. [구성 파이프라인 사용](/help/operations/config-pipeline.md#folder-structure)에 설명된 대로 파일을 *config* 또는 유사한 최상위 폴더 아래에 배치합니다.
 
-1. [구성 파이프라인 문서](/help/operations/config-pipeline.md#managing-in-cloud-manager)에 설명된 대로 Cloud Manager에서 구성 파이프라인을 만듭니다.
+1. [구성 파이프라인 사용](/help/operations/config-pipeline.md#managing-in-cloud-manager)에 설명된 대로 Cloud Manager에서 구성 파이프라인을 만듭니다.
 
 1. 구성 배포.
 
@@ -47,7 +47,7 @@ data:
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
 ```
-데이터 노드 위의 속성에 대한 설명은 [구성 파이프라인 문서](/help/operations/config-pipeline.md#common-syntax)를 참조하십시오. 종류 속성 값은 *CDN*&#x200B;이어야 하며 `version` 속성은 *1*(으)로 설정해야 합니다.
+데이터 노드 위의 속성에 대한 설명은 [구성 파이프라인 사용](/help/operations/config-pipeline.md#common-syntax)을 참조하십시오. 종류 속성 값은 *CDN*&#x200B;이어야 하며 `version` 속성은 *1*(으)로 설정해야 합니다.
 
 
 | 이름 | 허용된 속성 | 의미 |

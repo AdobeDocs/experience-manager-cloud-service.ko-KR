@@ -4,10 +4,10 @@ description: Dispatcher는 Adobe Experience Manager 게시 환경 앞에 있는 
 feature: Headless, Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 100%
+source-wordcount: '222'
+ht-degree: 90%
 
 ---
 
@@ -40,4 +40,4 @@ AEM Project의 일부로 Dispatcher에 대한 구성이 포함된 Dispatcher 모
 /0061 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
 ```
 
-지속 쿼리는 Dispatcher 및 CDN 수준에서 응답을 캐싱하여 `GET`을 통해 요청할 수 있습니다. 캐싱 및 캐시 무효화에 대한 자세한 내용은 [여기](/help/implementing/dispatcher/caching.md)에서 확인할 수 있습니다.
+지속 쿼리는 Dispatcher 및 CDN 수준에서 응답을 캐싱하여 `GET`을 통해 요청할 수 있습니다. 캐싱 및 캐시 무효화에 대한 자세한 내용은 [AEM as a Cloud Service의 캐싱 소개](/help/implementing/dispatcher/caching.md)에서 확인할 수 있습니다.

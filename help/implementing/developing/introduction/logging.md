@@ -4,9 +4,9 @@ description: AEM as a Cloud Service용 로깅을 사용하여 중앙 로깅 서�
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6f658c5e991c89ff4129352444ba9960d83c8884
+source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
 workflow-type: tm+mt
-source-wordcount: '2829'
+source-wordcount: '2831'
 ht-degree: 8%
 
 ---
@@ -628,7 +628,7 @@ CDN 로그는 새 지원 티켓 요청을 위해 Splunk에 전달됩니다. 이�
 * Splunk HEC 끝점 주소입니다. 이 끝점에는 유효한 SSL 인증서가 있어야 하며 공개적으로 액세스할 수 있습니다.
 * Splunk 인덱스
 * Splunk 포트
-* Splunk HEC 토큰. 자세한 내용은 [이 페이지](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples)를 참조하세요.
+* Splunk HEC 토큰. 자세한 내용은 [HTTP 이벤트 수집기 예제](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples)를 참조하십시오.
 
 위의 속성은 각 관련 프로그램/환경 유형 조합에 대해 지정해야 합니다. 예를 들어 고객이 개발, 스테이징 및 프로덕션 환경을 원하는 경우 아래에 표시된 대로 세 가지 정보 세트를 제공해야 합니다.
 

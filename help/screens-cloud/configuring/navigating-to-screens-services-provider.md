@@ -4,9 +4,9 @@ description: 이 페이지에서는 Screens 서비스 공급자로 이동하는 
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: 5452a02ed20d70c09728b3e34f248c7d37fc4668
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '382'
 ht-degree: 4%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 4%
 
 Screens 서비스 공급자를 설정하려면 아래 단계를 따르십시오.
 
-1. [여기](https://experience.adobe.com/screens)에서 Screens 서비스 공급자로 이동합니다.
+1. [Screens 서비스 공급자](https://experience.adobe.com/screens)(으)로 이동합니다.
 
    >[!CAUTION]
    >여러 조직에 대한 액세스 권한이 있는 경우 올바른 조직에 로그인했는지 확인하십시오. 조직을 변경하려면 화면 오른쪽 상단에서 조직 이름을 클릭하고 액세스가 필요한 필수 조직을 선택합니다.

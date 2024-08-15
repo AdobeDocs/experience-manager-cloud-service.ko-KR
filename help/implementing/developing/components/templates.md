@@ -4,9 +4,9 @@ description: 페이지 템플릿은 새 페이지의 기반으로 사용되는 �
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '3267'
+source-wordcount: '3268'
 ht-degree: 4%
 
 ---
@@ -357,7 +357,7 @@ When creating an editable template, the value is copied from the template type t
 
 다른 템플릿의 기반으로 사용할 수 있는 템플릿을 생성한 경우 이 템플릿을 템플릿 유형으로 복사할 수 있습니다.
 
-1. 여기에 설명된 대로 [페이지 템플릿](/help/sites-cloud/authoring/sites-console/templates.md#creating-a-new-template-template-author)과(와) 같은 템플릿을 만드십시오. 이 템플릿은 템플릿 유형의 기반으로 사용됩니다.
+1. 임의의 페이지 템플릿과 마찬가지로 템플릿을 만듭니다. [페이지 템플릿 만들기](/help/sites-cloud/authoring/sites-console/templates.md#creating-a-new-template-template-author)를 참조하십시오. 이 작업은 템플릿 유형의 기반으로 사용됩니다.
 1. CRXDE Lite을 사용하여 `templates` 노드에서 [템플릿 폴더](#template-folders) 아래의 `template-types` 노드로 만든 템플릿을 복사합니다.
 1. [템플릿 폴더](#template-folders) 아래의 `templates` 노드에서 템플릿을 삭제하십시오.
 1. `template-types` 노드 아래에 있는 템플릿의 복사본에서 모든 `jcr:content` 노드에서 모든 `cq:template` 및 `cq:templateType` 속성을 삭제합니다.

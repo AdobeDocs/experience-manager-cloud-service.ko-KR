@@ -5,10 +5,10 @@ exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 recommendations: noDisplay
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 100%
+source-wordcount: '1292'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ AEM as a Cloud Service를 선택해 주셔서 감사합니다. 이 문서는 온
 
 ## 소개 {#introduction}
 
-Adobe Experience Manager는 채널에서 깊은 인상을 주는 개인화된 경험을 신속하게 제공하여 모두에게 콘텐츠를 제공하는 구성 가능한 강력한 콘텐츠 서비스 세트입니다. **Edge Delivery Services**&#x200B;는 최고의 콘텐츠 속도와 탁월한 경험을 제공하는 Adobe Experience Manager의 최신 혁신 기술입니다. [이 페이지](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)를 방문하여 Edge Delivery Services를 시작하는 방법에 대해 알아봅니다. Edge Delivery Services를 사용하는 방법을 이해하려면 [개발자 튜토리얼](https://www.hlx.live/developer/tutorial) 페이지를 참조하십시오.
+Adobe Experience Manager는 채널에서 깊은 인상을 주는 개인화된 경험을 신속하게 제공하여 모두에게 콘텐츠를 제공하는 구성 가능한 강력한 콘텐츠 서비스 세트입니다. **Edge Delivery Services**&#x200B;는 최고의 콘텐츠 속도와 탁월한 경험을 제공하는 Adobe Experience Manager의 최신 혁신 기술입니다. [Edge Delivery Services 개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)를 참조하여 Edge Delivery Services을 시작하는 방법을 알아보세요. Edge Delivery Services를 사용하는 방법을 이해하려면 [개발자 튜토리얼](https://www.hlx.live/developer/tutorial) 페이지를 참조하십시오.
 
 온보딩은 지정된 시스템 관리자가 조직에 대해 AEM as a Cloud Service을 설정하는 프로세스입니다. 이 프로세스에는 클라우드 리소스의 초기 프로비저닝과 직무에 따라 사용자를 역할에 할당하는 것이 포함됩니다. 결과적으로 각 멤버는 AEM as a Cloud Service 리소스에 로그인하고 액세스할 수 있습니다.
 

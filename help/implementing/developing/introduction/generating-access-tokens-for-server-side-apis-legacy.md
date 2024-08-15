@@ -5,7 +5,7 @@ hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 서버 간 흐름 {#the-server-to-server-flow}
 
-AEM 작성자의 IMS 조직 관리자 역할과 AEM 사용자 또는 AEM 관리자 제품 프로필 멤버인 사용자는 AEM as a Cloud Service 자격 증명을 생성할 수 있습니다. 이 자격 증명은 나중에 AEM as a Cloud Service 환경 관리자 역할이 있는 사용자가 검색할 수 있으며 서버에 설치해야 하며, 비밀 키로 주의 깊게 처리해야 합니다. 이 JSON 형식 파일에는 AEM as a Cloud Service API와 통합하는 데 필요한 모든 데이터가 포함되어 있습니다. 이 데이터는 IMS 액세스 토큰으로 IMS와 교환되는 서명된 JWT 토큰을 생성하는 데 사용됩니다. 그런 다음 이 액세스 토큰을 전달자 인증 토큰으로 사용하여 AEM as a Cloud Service에 요청할 수 있습니다. 자격 증명은 기본적으로 1년 후에 만료되지만 [여기](#refresh-credentials)에 설명된 대로 필요할 때 새로 고칠 수 있습니다.
+AEM 작성자의 IMS 조직 관리자 역할과 AEM 사용자 또는 AEM 관리자 제품 프로필 멤버인 사용자는 AEM as a Cloud Service 자격 증명을 생성할 수 있습니다. 이 자격 증명은 나중에 AEM as a Cloud Service 환경 관리자 역할이 있는 사용자가 검색할 수 있으며 서버에 설치해야 하며, 비밀 키로 주의 깊게 처리해야 합니다. 이 JSON 형식 파일에는 AEM as a Cloud Service API와 통합하는 데 필요한 모든 데이터가 포함되어 있습니다. 이 데이터는 IMS 액세스 토큰으로 IMS와 교환되는 서명된 JWT 토큰을 생성하는 데 사용됩니다. 그런 다음 이 액세스 토큰을 전달자 인증 토큰으로 사용하여 AEM as a Cloud Service에 요청할 수 있습니다. 자격 증명은 기본적으로 1년 후에 만료되지만 필요한 경우 새로 고칠 수 있습니다. [자격 증명 새로 고침](#refresh-credentials)을 참조하세요.
 
 서버 간 흐름에는 다음 단계가 포함됩니다.
 

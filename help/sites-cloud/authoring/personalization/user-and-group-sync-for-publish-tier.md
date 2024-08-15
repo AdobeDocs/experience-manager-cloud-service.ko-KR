@@ -5,10 +5,10 @@ exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: 54159c25b60277268ade16b437891f268873fecf
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 66%
+source-wordcount: '1343'
+ht-degree: 64%
 
 ---
 
@@ -129,7 +129,7 @@ AEM as a Cloud Service은 쿠키 기반의 고정 세션을 활성화하여 최�
 
 ## 권한 (폐쇄형 사용자 그룹) {#permissions-closed-user-groups}
 
-폐쇄형 사용자 그룹(CUG)이라고도 하는 게시 계층 액세스 정책은 [여기에 설명된 대로](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages) AEM 작성자에 정의되어 있습니다. 일부 사용자로부터 웹 사이트의 특정 섹션 또는 페이지를 제한하려면 여기에 설명된 대로 AEM 작성자를 사용하여 필요에 따라 CUG를 적용한 다음 게시 계층에 복제하십시오.
+CUG(폐쇄형 사용자 그룹)라고도 하는 Publish 계층 액세스 정책은 AEM 작성자에 정의되어 있습니다. [폐쇄형 사용자 그룹 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages)를 참조하십시오. 일부 사용자로부터 웹 사이트의 특정 섹션 또는 페이지를 제한하려면 여기에 설명된 대로 AEM 작성자를 사용하여 필요에 따라 CUG를 적용한 다음 게시 계층에 복제하십시오.
 
 * 사용자가 SAML을 사용하여 ID 공급자(IdP)를 통해 인증하여 로그인하는 경우, 인증 핸들러는 사용자의 그룹 멤버십(게시 계층의 CUG와 일치해야 함)을 식별한 다음 저장소 레코드를 통해 사용자와 그룹 간의 연결을 유지합니다.
 * IdP 통합 없이 로그인하는 경우 사용자 정의 코드를 동일한 저장소 구조 관계에 적용할 수 있습니다.

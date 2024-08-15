@@ -4,9 +4,9 @@ description: AEM as a Cloud Service 캐싱의 기본 사항에 대해 알아봅�
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '2894'
+source-wordcount: '2897'
 ht-degree: 1%
 
 ---
@@ -245,7 +245,7 @@ AEM 레이어는 기본적으로 Blob 콘텐츠를 캐시하지 않습니다.
 
 이 동작을 비활성화하려면 지원 티켓을 제출하십시오.
 
-2023년 10월 이전에 생성된 환경의 경우 Dispatcher 구성의 `ignoreUrlParams` 속성을 [여기에 문서화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters)하여 구성하는 것이 좋습니다.
+2023년 10월 이전에 생성된 환경의 경우 Dispatcher 구성의 `ignoreUrlParams` 속성을 구성하는 것이 좋습니다. [Dispatcher 구성 - URL 매개 변수 무시](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters)를 참조하십시오.
 
 마케팅 매개 변수를 무시할 수 있는 방법에는 두 가지가 있습니다. (첫 번째 플러그인이 쿼리 매개 변수를 통해 캐시 무효화를 무시하는 것이 좋습니다.)
 

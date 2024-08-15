@@ -5,10 +5,10 @@ exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 100%
+source-wordcount: '974'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 예. Java™ 11에 대한 적절한 설정과 함께 `maven-toolchains-plugin`을 추가합니다.
 
-프로세스는 [여기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started)에 설명되어 있습니다.
+프로세스가 문서화되었습니다. [프로젝트 만들기 마법사](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started)를 참조하세요.
 
 예를 들어 [wknd 프로젝트 샘플 프로젝트 코드](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)를 참조하십시오.
 
@@ -33,7 +33,7 @@ ht-degree: 100%
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 > [Help 1]
 ```
 
-이 플러그인을 제거하는 방법에 대한 지침은 [여기](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/)를 참조하십시오.
+이 플러그인을 제거하는 방법에 대한 지침은 [SCR 주석에서 OSGI 주석으로](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/)를 참조하십시오.
 
 ## Java™ 8에서 Java™ 11로 전환한 후 RequireJavaVersion에 대한 오류와 함께 빌드가 실패합니다. 어떻게 해야 합니까? {#build-fails-requirejavaversion}
 
@@ -61,11 +61,11 @@ Cloud Manager 빌드의 경우 `maven-enforcer-plugin`이 실패하고 이러한
 
 단계 및 프로덕션 빌드 또는 배포에 대해 버전을 `-SNAPSHOT`으로 설정할 수도 있습니다. Cloud Manager는 자동으로 적절한 버전 번호를 설정하고 git에 태그를 생성합니다. 필요한 경우 이 태그를 나중에 참조할 수 있습니다.
 
-버전 처리에 대한 자세한 내용은 [여기에 문서화](/help/implementing/cloud-manager/managing-code/project-version-handling.md)되어 있습니다.
+버전 처리에 대한 자세한 내용은 [Maven 프로젝트 버전 처리](/help/implementing/cloud-manager/managing-code/project-version-handling.md)를 참조하십시오.
 
 ## 패키지 및 번들 버전 관리는 스테이지 및 프로덕션 배포에서 어떻게 작동합니까? {#snapshot-version}
 
-스테이지 및 프로덕션 배포에서는 [여기에 설명](/help/implementing/cloud-manager/managing-code/project-version-handling.md)된 대로 자동 버전이 생성됩니다.
+단계 및 프로덕션 배포에서는 자동 버전이 생성됩니다. [Maven 프로젝트 버전 처리](/help/implementing/cloud-manager/managing-code/project-version-handling.md)를 참조하십시오.
 
 스테이지 및 프로덕션 배포에서 사용자 정의 버전을 사용하려면 `1.0.0`과 같이 적절한 3부분으로 구성된 Maven 버전을 설정합니다. 프로덕션에 배포할 때마다 버전을 늘립니다.
 

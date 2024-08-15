@@ -4,9 +4,9 @@ description: 이 페이지에서는 Screensas a Cloud Service 에서 채널을 �
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 feature: Authoring Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1102'
 ht-degree: 1%
 
 ---
@@ -95,7 +95,7 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
 
 이 기능을 사용하면 채널에 대한 기본 활성화 일정을 정의하고 표시에 대한 모든 할당에 대해 기본적으로 사용할 수 있습니다. 이는 번거로운 스케줄 정의를 반복할 필요가 없도록 하는 방법을 제공한다.
 
-1. [여기](https://experience.adobe.com/screens)에서 Screens 서비스 공급자로 이동합니다.
+1. [Screens 서비스 공급자](https://experience.adobe.com/screens)(으)로 이동합니다.
 
 ### 채널에 대한 기본 할당 세부 정보 만들기 {#create-default}
 

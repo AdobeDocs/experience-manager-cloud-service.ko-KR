@@ -4,10 +4,10 @@ description: 커넥터와 그 기능에 대해 자세히 알아보고 Experience
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 96%
+source-wordcount: '936'
+ht-degree: 94%
 
 ---
 
@@ -60,7 +60,7 @@ Experience Manager as a Cloud Service [설명서](../overview/introduction.md)�
 * `/apps`
 * `/content` 및 `/conf`
 
-커넥터는 [이 문서](/help/implementing/developing/introduction/aem-project-content-package-structure.md)에 설명된 패키징 가이드라인을 준수해야 합니다. 기존 커넥터도 이에 부합하도록 리팩터링되어야 합니다.
+커넥터는 [AEM 프로젝트 구조](/help/implementing/developing/introduction/aem-project-content-package-structure.md)에 설명된 패키징 가이드라인을 준수해야 합니다. 기존 커넥터도 이에 부합하도록 리팩터링되어야 합니다.
 
 또한 Adobe만 `/libs`에, 고객 및 파트너는 `/apps`에 코드를 작성해야 합니다.
 

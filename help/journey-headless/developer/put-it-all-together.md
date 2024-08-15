@@ -5,10 +5,10 @@ exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1061'
-ht-degree: 100%
+source-wordcount: '1056'
+ht-degree: 99%
 
 ---
 
@@ -43,7 +43,7 @@ AEM SDK를 사용하여 사용자 정의 코드를 빌드하고 배포합니다.
 
 AEM SDK와 달리 AEM **Headless SDK**&#x200B;는 라이브러리 세트입니다. 이를 사용하여 클라이언트는 HTTP를 통해 빠르고 쉽게 AEM Headless API와 상호 작용할 수 있습니다.
 
-AEM Headless SDK에 대한 자세한 내용은 [설명서 여기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html)를 참조하십시오.
+자세한 내용은 [AEM Headless SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html)를 참조하십시오.
 
 ## 추가 개발 도구 {#additional-development-tools}
 

@@ -4,9 +4,9 @@ description: CIF에서 이미 보낸 헤더와 함께 상거래 엔진으로 보
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '284'
 ht-degree: 3%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 3%
 
 ## 제한 사항 {#restrictions}
 
-서비스를 통해 표준 헤더 이름을 비롯한 모든 헤더 이름을 정의할 수 있지만, 구성할 때는 사용할 수 없습니다. 즉, 이 기능을 사용하여 표준 HTTP 헤더를 재정의할 수 없습니다. 제한된 헤더 이름 목록을 [여기](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)에서 찾을 수 있습니다. 이들 외에도 사용할 수 없는 두 개의 헤더가 더 있습니다.
+서비스를 통해 표준 헤더 이름을 비롯한 모든 헤더 이름을 정의할 수 있지만, 구성할 때는 사용할 수 없습니다. 즉, 이 기능을 사용하여 표준 HTTP 헤더를 재정의할 수 없습니다. 제한된 헤더 이름 목록은 [mdn 웹 문서 - HTTP 헤더](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)에서 찾을 수 있습니다. 이들 외에도 사용할 수 없는 두 개의 헤더가 더 있습니다.
 
 * &quot;Store&quot; - CIF에서 Adobe Commerce 스토어를 식별하는 데 사용됨
 * &quot;Preview-Version&quot; - CIF에서 스테이징된 제품을 검색하는 데 사용

@@ -4,7 +4,7 @@ description: AEM as a Cloud Service 개발에 대한 지침과 AMS의 AEM On-Pre
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '2745'
 ht-degree: 4%
@@ -184,7 +184,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 고객은 작성 계층의 개발 환경에서 CRXDE lite에 액세스할 수 있지만, 스테이지나 프로덕션 환경에서는 액세스할 수 없습니다. 변경할 수 없는 저장소(`/libs`, `/apps`)를 런타임에 쓸 수 없으므로 이 작업을 시도하면 오류가 발생합니다.
 
-대신 AEM as a Cloud Service Developer Console에서 저장소 브라우저를 시작하여 작성자, 게시 및 미리보기 계층의 모든 환경에 대해 저장소에 대한 읽기 전용 보기를 제공할 수 있습니다. 저장소 브라우저 [여기](/help/implementing/developing/tools/repository-browser.md)에 대해 자세히 알아보세요.
+대신 AEM as a Cloud Service Developer Console에서 저장소 브라우저를 시작하여 작성자, 게시 및 미리보기 계층의 모든 환경에 대해 저장소에 대한 읽기 전용 보기를 제공할 수 있습니다. 자세한 내용은 [저장소 브라우저](/help/implementing/developing/tools/repository-browser.md)를 참조하세요.
 
 AEM as a Cloud Service 개발자 환경을 디버깅하기 위한 도구 세트는 RDE, 개발, 스테이지 및 프로덕션 환경용 AEM as a Cloud Service Developer Console에서 사용할 수 있습니다. URL은 다음과 같이 작성자 또는 Publish 서비스 URL을 조정하여 결정할 수 있습니다.
 
@@ -194,7 +194,7 @@ AEM as a Cloud Service 개발자 환경을 디버깅하기 위한 도구 세트�
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
-자세한 내용은 [이 페이지](/help/release-notes/home.md)를 참조하세요.
+자세한 내용은 [릴리스 정보](/help/release-notes/home.md)를 참조하세요.
 
 개발자는 상태 정보를 생성하고 다양한 리소스를 해결할 수 있다.
 

@@ -4,9 +4,9 @@ description: 이 문서에서는 샘플 SPA 애플리케이션을 제공하고, 
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '978'
 ht-degree: 6%
 
 ---
@@ -59,7 +59,7 @@ AEM에서 SPA이 작동하는 방법에 대한 자세한 내용은 다음 문서
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-자세한 내용은 GitHub에서 [여기](https://github.com/wcm-io-frontend/aem-clientlib-generator)를 참조하십시오.
+자세한 내용은 GitHub의 [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator)를 참조하십시오.
 
 `aem-clientlib-generator`이(가) `clientlib.config.js` 파일에 다음과 같이 구성되어 있습니다.
 

@@ -4,9 +4,9 @@ description: 클라우드 환경에서 신속한 개발 반복을 위해 빠른 
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 85dc92e1adc11a2ee513b7a43e0945b18b2f4790
+source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
 workflow-type: tm+mt
-source-wordcount: '4215'
+source-wordcount: '4241'
 ht-degree: 4%
 
 ---
@@ -153,7 +153,7 @@ Setup the CLI configuration necessary to use the RDE commands.
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * [여기에 설명된 ](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) 메서드를 사용하여 자신의 조직 ID를 조회할 수 있습니다.
+   * [조직 ID 보기](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255)에 설명된 메서드를 사용하여 자신의 조직 ID를 조회할 수 있습니다.
 
 1. 다음으로 프로그램 ID를 구성합니다.
 
@@ -167,7 +167,7 @@ Setup the CLI configuration necessary to use the RDE commands.
 
    `aio login`
 
-   이 단계를 수행하려면 Cloud Manager **개발자 - Cloud Service** 제품 프로필의 멤버여야 합니다. 자세한 내용은 [이 페이지](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)를 참조하세요.
+   이 단계를 수행하려면 Cloud Manager **개발자 - Cloud Service** 제품 프로필의 멤버여야 합니다. 자세한 내용은 [Cloud Manager 제품 프로필에 팀원 할당 - 개발자 제품 프로필 할당](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)을 참조하십시오.
 
 자세한 내용과 데모를 보려면 비디오 튜토리얼 [RDE를 설정하는 방법(06:24)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html)을 시청하십시오.
 </details>
@@ -1005,7 +1005,7 @@ AEM as a Cloud Service의 RDE에 대해 알아보려면 [설정 방법, 사용 �
 
 ### 권한 부족 관련 오류 {#insufficient-permissions}
 
-RDE 플러그인을 사용하려면 Cloud Manager **개발자 - Cloud Service** 제품 프로필의 멤버여야 합니다. 자세한 내용은 [이 페이지](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)를 참조하세요.
+RDE 플러그인을 사용하려면 Cloud Manager **개발자 - Cloud Service** 제품 프로필의 멤버여야 합니다. 자세한 내용은 [Cloud Manager 제품 프로필에 팀원 할당 - 개발자 제품 프로필 할당](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)을 참조하십시오.
 
 또는 이 명령을 실행하여 개발자 콘솔에 로그인할 수 있는 경우 이 개발자 역할이 있는지 확인할 수 있습니다.
 

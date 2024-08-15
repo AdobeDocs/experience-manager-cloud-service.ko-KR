@@ -4,7 +4,7 @@ description: 이 문서에서는 독립 실행형 SPA을 AEM 인스턴스에 업
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '2374'
 ht-degree: 1%
@@ -362,7 +362,7 @@ AEM에서 이 구성 요소가 포함된 페이지를 편집할 때 작성자가
 
 ## 프레임워크 제한 사항 {#framework-limitations}
 
-RemotePage 구성 요소에서는 구현이 [여기에 있는 ](https://github.com/shellscape/webpack-manifest-plugin)과(와) 같은 자산 매니페스트를 제공할 것으로 예상합니다. 그러나 RemotePage 구성 요소는 React 프레임워크(및 remote-page-next 구성 요소를 통한 Next.js)에서만 작동하도록 테스트되었으므로 Angular과 같은 다른 프레임워크에서 원격으로 응용 프로그램을 로드할 수 없습니다.
+RemotePage 구성 요소에서는 구현이 GitHub의 [webpack-manifest-plugin](https://github.com/shellscape/webpack-manifest-plugin)과(와) 같은 자산 매니페스트를 제공할 것으로 예상합니다. 그러나 RemotePage 구성 요소는 React 프레임워크(및 remote-page-next 구성 요소를 통한 Next.js)에서만 작동하도록 테스트되었으므로 Angular과 같은 다른 프레임워크에서 원격으로 응용 프로그램을 로드할 수 없습니다.
 
 ## 추가 리소스 {#additional-resources}
 

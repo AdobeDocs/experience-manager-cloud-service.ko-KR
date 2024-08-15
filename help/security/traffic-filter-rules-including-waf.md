@@ -4,10 +4,10 @@ description: 웹 애플리케이션 방화벽(WAF)이 포함된 트래픽 필터
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 7ce397b2564373a006d7f413409d29265c74d768
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '3932'
-ht-degree: 100%
+source-wordcount: '3937'
+ht-degree: 98%
 
 ---
 
@@ -100,7 +100,7 @@ Edge에서 Adobe Managed CDN은 대규모 및 반사/증폭 공격(레이어 3 �
          action: block
    ```
 
-   `data` 노드 위의 속성에 대한 설명은 [구성 파이프라인 문서](/help/operations/config-pipeline.md#common-syntax)를 참조하십시오. `kind` 속성 값은 *콘텐츠 전송 네트워크*&#x200B;로 설정하고 버전은 `1`로 설정해야 합니다.
+   `data` 노드 위의 속성에 대한 설명은 [구성 파이프라인 사용](/help/operations/config-pipeline.md#common-syntax)을 참조하십시오. `kind` 속성 값은 *콘텐츠 전송 네트워크*&#x200B;로 설정하고 버전은 `1`로 설정해야 합니다.
 
 
 1. WAF 규칙에 라이선스가 부여된 경우, 신규 및 기존 프로그램 시나리오 모두에 대해 아래에 설명된 대로 Cloud Manager에서 기능을 활성화해야 합니다.
@@ -109,7 +109,7 @@ Edge에서 Adobe Managed CDN은 대규모 및 반사/증폭 공격(레이어 3 �
 
    1. 기존 프로그램에서 WAF를 구성하려면 **보안** 탭에서 [프로그램을 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)하여 언제든지 **WAF-DDOS** 옵션을 선택 취소하거나 선택하십시오.
 
-1. [구성 파이프라인 문서에 설명된 대로 Cloud Manager에서 구성 파이프라인을 만듭니다.](/help/operations/config-pipeline.md#managing-in-cloud-manager) 파이프라인은 [여기 설명](/help/operations/config-pipeline.md#folder-structure)된 대로 아래 어딘가에 `cdn.yaml` 파일이 있는 최상위 `config` 폴더를 참조합니다.
+1. [구성 파이프라인 문서에 설명된 대로 Cloud Manager에서 구성 파이프라인을 만듭니다.](/help/operations/config-pipeline.md#managing-in-cloud-manager) 파이프라인이 아래 어딘가에 `cdn.yaml` 파일이 있는 최상위 `config` 폴더를 참조합니다. [구성 파이프라인 사용](/help/operations/config-pipeline.md#folder-structure)을(를) 참조하십시오.
 
 ## 트래픽 필터 규칙 구문 {#rules-syntax}
 
@@ -214,7 +214,7 @@ when:
   in: [ "192.168.0.0/24" ]
 ```
 
-* 정규 표현식을 사용하여 작업할 때 [regex101](https://regex101.com/) 및 [Fastly Fiddle](https://fiddle.fastly.dev/)을 사용하는 것이 좋습니다. 이 [문서](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes)에서 Fastly가 정규 표현식을 처리하는 방법에 대한 자세한 내용을 알아볼 수 있습니다.
+* 정규 표현식을 사용하여 작업할 때 [regex101](https://regex101.com/) 및 [Fastly Fiddle](https://fiddle.fastly.dev/)을 사용하는 것이 좋습니다. 또한 Fastly가 [fastly 설명서 - Fastly VCL의 정규 표현식](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes)에서 정규 표현식을 처리하는 방법에 대해 자세히 알아볼 수 있습니다.
 
 
 ### 액션 구조 {#action-structure}

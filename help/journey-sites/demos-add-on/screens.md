@@ -4,10 +4,10 @@ description: 제작한 데모 사이트에서 전체 AEM Screens as a Cloud Serv
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '2654'
-ht-degree: 100%
+source-wordcount: '2666'
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->AEM Screens 데모에는 Cloud Manager 프로그램에 Screens 추가 기능을 추가해야 합니다. 추가 방법은 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/adding-screens-addon/add-on-new-program-screens-cloud.html)에서 알아보십시오.
+>AEM Screens 데모에는 Cloud Manager 프로그램에 Screens 추가 기능을 추가해야 합니다. [Screens을 Cloud Manager의 새 프로그램에 추가 기능으로 추가](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md)하는 방법에 대해 알아봅니다.
 
 ## 지금까지의 스토리 {#story-so-far}
 

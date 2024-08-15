@@ -6,10 +6,10 @@ index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 feature: Headless
 role: Admin, User, Developer
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 100%
+source-wordcount: '1003'
+ht-degree: 98%
 
 ---
 
@@ -82,7 +82,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->**모험** 모델은 AEM용 WKND 샘플 사이트를 기반으로 합니다. [여기 사이트를 방문](https://wknd.site/us/en/adventures/yosemite-backpacking.html)해서 **모험 모델**&#x200B;을 사용하는 콘텐츠를 볼 수 있습니다.
+>**모험** 모델은 AEM용 WKND 샘플 사이트를 기반으로 합니다. [여기 WKND 사이트를 방문](https://wknd.site/us/en/adventures/yosemite-backpacking.html)하여 **모험** 모델을 사용하는 콘텐츠를 볼 수 있습니다.
 
 이들 필드를 추가하려면 위와 동일한 단계를 따르십시오. 유일한 차이점은 설정해야 하는 속성입니다.
 
