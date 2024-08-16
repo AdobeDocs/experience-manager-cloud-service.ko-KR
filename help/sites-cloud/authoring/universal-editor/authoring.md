@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 3922375b52ae64d08cdc64d475a95e8bd240a587
+source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 44%
+source-wordcount: '1297'
+ht-degree: 40%
 
 ---
 
@@ -33,7 +33,7 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 
 ## 콘텐츠 편집 {#editing-content}
 
-콘텐츠 편집은 간단하고 직관적입니다. 편집기에서 콘텐츠 위로 마우스를 가져가면 편집 가능한 콘텐츠가 파란색 상자로 강조 표시됩니다.
+콘텐츠 편집은 간단하고 직관적입니다. 편집기에서 콘텐츠 위로 마우스를 가져가면 편집 가능한 콘텐츠가 가는 파란색 윤곽선으로 강조 표시됩니다.
 
 ![편집 가능한 콘텐츠는 파란색 상자로 강조 표시됩니다](assets/editable-content.png)
 
@@ -49,7 +49,7 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 
 ![콘텐츠 편집](assets/editing-content.png)
 
-Enter/Return 키를 누르거나 텍스트 상자 바깥쪽을 선택하여 변경 내용을 저장합니다.
+얇은 파란색 윤곽선이 짙은 파란색 윤곽선으로 바뀌면 선택 표시가 나타나고 커서가 나타납니다. 변경한 다음 Enter/Return 키를 누르거나 텍스트 상자 바깥쪽을 선택하여 변경 내용을 저장합니다.
 
 텍스트 구성 요소를 선택하면 자세한 내용이 [속성 레일에 표시됩니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) 레일에서 텍스트를 편집할 수도 있습니다.
 
@@ -65,10 +65,21 @@ Enter/Return 키를 누르거나 텍스트 상자 바깥쪽을 선택하여 변�
 
 사용자의 편의를 위해 서식 옵션 및 텍스트에 대한 세부 사항을 두 곳에서 사용할 수 있습니다.
 
-* **컨텍스트 메뉴**&#x200B;가 서식 있는 텍스트 블록 위에 열리고 컨텍스트에서 기본 서식 옵션을 제공합니다. 공간 제약으로 인해 일부 옵션이 줄임표 버튼 뒤에 숨겨질 수 있습니다.
-* **[속성 레일](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)**&#x200B;에 텍스트와 함께 사용할 수 있는 모든 서식 옵션이 표시됩니다.
+#### 컨텍스트 메뉴 {#context-menu}
+
+상황에 맞는 메뉴가 서식 있는 텍스트 블록 위에 열리고 상황에 맞는 기본 서식 옵션을 제공합니다. 공간 제약으로 인해 일부 옵션이 줄임표 버튼 뒤에 숨겨질 수 있습니다.
+
+![서식 있는 텍스트 상황에 맞는 메뉴](assets/rich-text-context-menu.png)
 
 포커스가 편집된 필드를 떠나면 변경 사항이 자동으로 저장됩니다.
+
+#### 속성 레일 {#properties-rail}
+
+[속성 레일](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)에 선택한 텍스트에 대한 항목이 표시됩니다. 텍스트를 편집하려면 더 큰 캔버스를 표시하는 대화 상자를 열려면 항목을 탭하십시오.
+
+![서식 있는 텍스트 편집 대화 상자](assets/rich-text-canvas.png)
+
+변경 내용을 취소하거나 저장하려면 각각 **취소** 또는 **완료**&#x200B;를 탭하거나 클릭합니다.
 
 ### 미디어 편집 {#edit-media}
 
@@ -95,9 +106,19 @@ Enter/Return 키를 누르거나 텍스트 상자 바깥쪽을 선택하여 변�
 
 포커스가 속성 레일의 편집된 필드를 떠나면 변경 사항이 자동으로 저장됩니다.
 
-대신 [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md)에서 콘텐츠 조각을 편집하려면 속성 레일에서 [편집 단추](/help/sites-cloud/authoring/universal-editor/navigation.md#edit)를 클릭하십시오.
+대신 [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md)에서 콘텐츠 조각을 편집하려면 속성 레일에서 [**CF 편집기에서 열기** 단추](/help/sites-cloud/authoring/universal-editor/navigation.md#edit)를 탭하거나 클릭합니다.
+
+>[!TIP]
+>
+>핫키 `e`을(를) 사용하여 콘텐츠 조각 편집기에서 선택한 콘텐츠 조각을 편집합니다.
 
 워크플로우의 필요에 따라 범용 편집기에서 또는 콘텐츠 조각 편집기에서 직접 콘텐츠 조각을 편집할 수 있습니다.
+
+>[!NOTE]
+>
+>유니버설 편집기 [모델에 따라 콘텐츠 조각 필드의 유효성을 검사합니다](/help/assets/content-fragments/content-fragments-models.md#validation). 정규식 패턴 및 고유성 제약 조건과 같은 데이터 무결성 규칙을 적용할 수 있습니다.
+>
+>이렇게 하면 콘텐츠가 게시되기 전에 특정 비즈니스 요구 사항을 충족하게 됩니다.
 
 ### 컨테이너에 구성 요소 추가 {#adding-components}
 
@@ -110,7 +131,7 @@ Enter/Return 키를 누르거나 텍스트 상자 바깥쪽을 선택하여 변�
 
 >[!TIP]
 >
->단축키 `A`를 사용하여 선택한 컨테이너에 구성 요소를 추가합니다.
+>단축키 `a`를 사용하여 선택한 컨테이너에 구성 요소를 추가합니다.
 
 ### 컨테이너에서 구성 요소 삭제 {#deleting-components}
 

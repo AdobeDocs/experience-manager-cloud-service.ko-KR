@@ -4,10 +4,10 @@ description: 범용 편집기 액세스 및 탐색에 대한 기본 사항을 �
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 58c58243dc98a21161afe0976da4dcdc235da0d3
+source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
 workflow-type: tm+mt
-source-wordcount: '1512'
-ht-degree: 48%
+source-wordcount: '1576'
+ht-degree: 43%
 
 ---
 
@@ -137,7 +137,7 @@ Experience Cloud 헤더는 항상 화면 상단에 있습니다. Experience Clou
 
 >[!TIP]
 >
->단축키 `L`을 사용하여 주소 표시줄을 엽니다.
+>주소 표시줄을 열려면 핫키 `l`(문자 l)을(를) 사용하세요.
 
 >[!NOTE]
 >
@@ -175,7 +175,7 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 >[!TIP]
 >
->핫키 `P`을(를) 사용하여 미리 보기 모드로 전환하거나 미리 보기 모드에서 전환합니다.
+>핫키 `p`을(를) 사용하여 미리 보기 모드로 전환하거나 미리 보기 모드에서 전환합니다.
 
 #### 앱 미리보기 열기 {#open-app-preview}
 
@@ -185,7 +185,11 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 >[!TIP]
 >
->단축키 `O`(O자)를 사용하여 앱 미리보기를 엽니다.
+>핫키 `o`(문자 o)을(를) 사용하여 앱 미리 보기를 엽니다.
+
+>[!TIP]
+>
+>[앱의 미리 보기 URL을 사용자 지정할 수 있습니다.](/help/implementing/universal-editor/customizing.md#custom-preview-urls)
 
 #### 게시 {#publish}
 
@@ -196,6 +200,14 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 >[!TIP]
 >
 >유니버설 편집기를 사용하여 게시하는 방법에 대한 자세한 내용은 [유니버설 편집기를 사용하여 콘텐츠 게시](publishing.md) 문서를 참조하십시오.
+
+#### 생략 부호 {#ellipsis}
+
+또한 줄임표 버튼을 사용하여 표준 옵션에 액세스할 수 있습니다.
+
+![생략 부호 버튼](assets/ellipsis.png)
+
+예를 들어, 줄임표 버튼을 통해 페이지 게시를 취소(즉, [**Publish** 버튼](#publish)의 동작을 되돌림)하는 기능에 액세스할 수 있습니다.
 
 #### 추가 단추 {#additional-toolbar-buttons}
 
@@ -216,7 +228,7 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 속성 레일은 항상 편집기의 오른쪽에 표시됩니다. 해당 모드에 따라 콘텐츠 또는 페이지 콘텐츠의 계층 구조에서 선택한 구성 요소에 대한 세부 정보를 표시할 수 있습니다.
 
-![속성 레일](assets/component-rail.png)
+![속성 레일](assets/properties-rail.png)
 
 #### 속성 모드 {#properties-mode}
 
@@ -232,7 +244,7 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 >[!TIP]
 >
->단축키 `D`를 사용하여 속성 모드로 전환합니다.
+>단축키 `d`를 사용하여 속성 모드로 전환합니다.
 
 #### 콘텐츠 트리 모드 {#content-tree-mode}
 
@@ -246,21 +258,21 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 >[!TIP]
 >
->단축키 `F`를 사용하여 콘텐츠 트리 모드로 전환합니다.
+>단축키 `f`를 사용하여 콘텐츠 트리 모드로 전환합니다.
 
-##### 편집 {#edit}
+##### CF 편집기에서 열기 {#edit}
 
-편집할 때 선택한 구성 요소에 대한 옵션이 속성 레일에 나타나고 여기서 선택한 구성 요소를 편집할 수 있습니다. 선택한 구성 요소가 콘텐츠 조각인 경우 편집 버튼을 선택할 수도 있습니다.
+편집할 때 선택한 구성 요소에 대한 옵션이 속성 레일에 나타나고 여기서 선택한 구성 요소를 편집할 수 있습니다. 선택한 구성 요소가 콘텐츠 조각인 경우 **CF 편집기에서 열기** 버튼을 선택할 수도 있습니다.
 
-![편집 아이콘](assets/edit.png)
+![CF 편집기에서 열기 아이콘](assets/open-in-cf-editor.png)
 
-편집 버튼을 탭하거나 클릭하면 새 탭에 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)가 열립니다. 이를 통해 콘텐츠 조각 편집기의 모든 기능에 액세스하여 연결된 콘텐츠 조각을 편집할 수 있습니다.
+**CF 편집기에서 열기** 단추를 탭하거나 클릭하면 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)가 새 탭에서 열립니다. 이를 통해 콘텐츠 조각 편집기의 전체 기능에 액세스하여 관련 콘텐츠 조각을 편집할 수 있습니다.
 
 워크플로우의 필요에 따라 범용 편집기에서 또는 콘텐츠 조각 편집기에서 직접 콘텐츠 조각을 편집할 수 있습니다.
 
 >[!TIP]
 >
->단축키 `E`를 사용하여 선택한 구성 요소를 편집합니다.
+>핫키 `e`을(를) 사용하여 콘텐츠 조각 편집기에서 선택한 콘텐츠 조각을 엽니다.
 
 ##### 추가 {#add}
 
@@ -274,7 +286,7 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 >[!TIP]
 >
->단축키 `A`를 사용하여 선택한 컨테이너 구성 요소에 구성 요소를 추가합니다.
+>단축키 `a`를 사용하여 선택한 컨테이너 구성 요소에 구성 요소를 추가합니다.
 
 ##### 삭제 {#delete}
 
