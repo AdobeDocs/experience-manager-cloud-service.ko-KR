@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2024.8.0 릴
 description: AEM as a Cloud Service의 Cloud Manager 2024.8.0 릴리스 정보에 대해 알아봅니다.
 feature: Release Information
 role: Admin
-source-git-commit: bf8bab5a195dde6cf15a2fd52e51d58c0215fdf3
+source-git-commit: a823bcd1461b847983d0243cd9abd59efd8d7b6f
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 30%
@@ -21,7 +21,7 @@ ht-degree: 30%
 
 ## 릴리스 날짜 {#release-date}
 
-AEM as a Cloud Service의 Cloud Manager 2024.8.0 릴리스 일자는 2024년 8월 12일 화요일입니다. 다음 릴리스는 2024년 9월 14일에 예정되어 있습니다.
+AEM as a Cloud Service의 Cloud Manager 2024.8.0 릴리스 일자는 2024년 8월 14일 목요일입니다. 다음 릴리스는 2024년 9월 14일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
