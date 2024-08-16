@@ -212,7 +212,7 @@ ht-degree: 99%
    + [AEM as a Cloud Service에 대한 IMS 통합 설정](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [Sling 서비스 사용자 매핑 및 서비스 사용자 정의의 모범 사례](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
 + 온보딩 {#onboarding}
-   + [여기에서 시작](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/onboarding/journey/overview)
+   + [여기에서 시작](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + 온보딩 여정 {#journey}
       + [온보딩 여정 개요](/help/journey-onboarding/overview.md)
       + [온보딩 준비](/help/journey-onboarding/preparation.md)
