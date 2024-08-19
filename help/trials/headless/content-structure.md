@@ -7,9 +7,9 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 feature: Headless
 role: Admin, User, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1003'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="모델 콘솔 실행"
->abstract="Adobe Experience Manager as a Cloud Service에서 콘텐츠에 대한 재사용 가능한 스키마(콘텐츠 조각 모델)를 만드는 방법에 대해 살펴보겠습니다. 비디오를 시청하여 이 단계가 중요한 이유에 대해 알아보십시오. <br><br>이 학습 모듈에서는 여행 사이트를 예로 들어 여행을 나타내는 모델을 만드는 과정을 안내합니다.<br><br>아래 버튼을 클릭하여 새 탭에서 이 모듈을 실행한 다음 이 안내서를 따르십시오."
+>abstract="Adobe Experience Manager as a Cloud Service에서 콘텐츠에 대한 재사용 가능한 스키마(콘텐츠 조각 모델)를 만드는 방법에 대해 알아보겠습니다. 비디오를 시청하여 이 단계가 중요한 이유에 대해 알아보십시오. <br><br>이 학습 모듈에서는 여행 사이트를 예로 들어 여행을 나타내는 모델을 만드는 과정을 안내합니다.<br><br>아래 버튼을 클릭하여 새 탭에서 이 모듈을 실행한 다음 이 안내서를 따르십시오."
 >additional-url="https://video.tv.adobe.com/v/3413261" text="콘텐츠 구조 소개 비디오"
 
 >[!CONTEXTUALHELP]
@@ -82,7 +82,7 @@ ht-degree: 98%
 
 >[!TIP]
 >
->**모험** 모델은 AEM용 WKND 샘플 사이트를 기반으로 합니다. [여기 WKND 사이트를 방문](https://wknd.site/us/en/adventures/yosemite-backpacking.html)하여 **모험** 모델을 사용하는 콘텐츠를 볼 수 있습니다.
+>**모험** 모델은 AEM용 WKND 샘플 사이트를 기반으로 합니다. [WKND 사이트](https://wknd.site/us/en/adventures/yosemite-backpacking.html)를 방문하여 **모험 모델**&#x200B;을 사용하는 콘텐츠를 확인해 보십시오.
 
 이들 필드를 추가하려면 위와 동일한 단계를 따르십시오. 유일한 차이점은 설정해야 하는 속성입니다.
 

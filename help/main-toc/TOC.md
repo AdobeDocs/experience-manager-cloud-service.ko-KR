@@ -7,9 +7,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 source-git-commit: a9b7e2fbafcfc4b5592cc95e6bbd1e8e0f631757
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5340'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -194,8 +194,8 @@ ht-degree: 99%
    + 범용 편집기 릴리스 정보 {#univeral-editor}
       + [범용 편집기 최신 릴리스 정보](/help/release-notes/universal-editor/current.md)
       + 2024 {#2024}
-         + [2024.07.28 릴리스 노트](/help/release-notes/universal-editor/2024/2024-07-28.md)
-         + [2024.06.28 릴리스 노트](/help/release-notes/universal-editor/2024/2024-06-28.md)
+         + [2024.07.28 릴리스 정보](/help/release-notes/universal-editor/2024/2024-07-28.md)
+         + [2024.06.28 릴리스 정보](/help/release-notes/universal-editor/2024/2024-06-28.md)
    + [새로운 기능](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service의 주요 변경 사항](/help/release-notes/aem-cloud-changes.md)
    + [사용 중단되거나 제거된 기능 및 API](/help/release-notes/deprecated-removed-features.md)
@@ -864,7 +864,7 @@ ht-degree: 99%
          + [SEO에 대한 URL 구성](/help/commerce-cloud/configuring/advanced-url-configuration.md)
          + [캐싱 옵션](/help/commerce-cloud/configuring/caching.md)
          + [사용자 정의 HTTP 헤더](/help/commerce-cloud/configuring/custom-http-headers.md)
-         + [장바구니 및 Dispatcher 설정](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
+         + [장바구니 및 디스패처 설정](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
       + 개발 {#developing}
          + [AEM Cloud Service SDK를 사용하여 개발](/help/commerce-cloud/develop.md)
          + [CIF 구성 요소 스타일링](/help/commerce-cloud/customizing/style-cif-component.md)

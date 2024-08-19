@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '974'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 94%
 
 예. Java™ 11에 대한 적절한 설정과 함께 `maven-toolchains-plugin`을 추가합니다.
 
-프로세스가 문서화되었습니다. [프로젝트 만들기 마법사](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started)를 참조하세요.
+이 과정은 문서화되어 있습니다. [프로젝트 생성 마법사](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started)를 참조하십시오.
 
 예를 들어 [wknd 프로젝트 샘플 프로젝트 코드](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)를 참조하십시오.
 
@@ -65,7 +65,7 @@ Cloud Manager 빌드의 경우 `maven-enforcer-plugin`이 실패하고 이러한
 
 ## 패키지 및 번들 버전 관리는 스테이지 및 프로덕션 배포에서 어떻게 작동합니까? {#snapshot-version}
 
-단계 및 프로덕션 배포에서는 자동 버전이 생성됩니다. [Maven 프로젝트 버전 처리](/help/implementing/cloud-manager/managing-code/project-version-handling.md)를 참조하십시오.
+단계적 배포와 프로덕션 배포에서는 자동 버전이 생성됩니다. [Maven 프로젝트 버전 처리](/help/implementing/cloud-manager/managing-code/project-version-handling.md)를 참조하십시오.
 
 스테이지 및 프로덕션 배포에서 사용자 정의 버전을 사용하려면 `1.0.0`과 같이 적절한 3부분으로 구성된 Maven 버전을 설정합니다. 프로덕션에 배포할 때마다 버전을 늘립니다.
 

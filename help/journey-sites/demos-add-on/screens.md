@@ -5,9 +5,9 @@ exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2666'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->AEM Screens 데모에는 Cloud Manager 프로그램에 Screens 추가 기능을 추가해야 합니다. [Screens을 Cloud Manager의 새 프로그램에 추가 기능으로 추가](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md)하는 방법에 대해 알아봅니다.
+>AEM Screens 데모에는 Cloud Manager 프로그램에 Screens 추가 기능을 추가해야 합니다. [Cloud Manager의 새 프로그램에 추가 기능으로 화면을 추가하는 방법](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md)을 살펴보십시오.
 
 ## 지금까지의 스토리 {#story-so-far}
 
