@@ -6,9 +6,9 @@ feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 22de8ac77af27114099de2f6b4349232524cb94f
+source-git-commit: 1b985a83fd58522ee485c02b96bfb6a697da6ce0
 workflow-type: tm+mt
-source-wordcount: '3454'
+source-wordcount: '3455'
 ht-degree: 1%
 
 ---
@@ -106,7 +106,7 @@ CSS 픽셀 비율이라고도 하는 디바이스 픽셀 비율(DPR)은 디바�
 
 [이미지로 작업할 때](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) 및 [스마트 자르기로 작업할 때](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop)도 참조하세요.
 
-### 네트워크 대역폭 최적화 정보 {#bandwidth}
+### 네트워크 대역폭 최적화 기본 정보 {#bandwidth}
 
 네트워크 대역폭을 켜면 실제 네트워크 대역폭에 따라 제공되는 이미지 품질이 자동으로 조정됩니다. 네트워크 대역폭이 낮은 경우 DPR(장치 픽셀 비율) 최적화가 이미 설정되어 있더라도 자동으로 꺼집니다.
 
@@ -166,7 +166,7 @@ PNG와 같이 투명성을 지원하는 이미지 파일 형식의 경우 손실
 
 +++**스마트 이미징과 관련된 라이선스 비용이 있습니까?**
 
-아니. 스마트 이미징은 기존 라이선스에 포함되어 있습니다. 이 규칙은 Dynamic Media Classic 또는 Experience Manager - Dynamic Media(온프레미스, AMS 및 Experience Manager as a Cloud Service)에 적용됩니다.
+아니요. 스마트 이미징은 기존 라이선스에 포함되어 있습니다. 이 규칙은 Dynamic Media Classic 또는 Experience Manager - Dynamic Media(온프레미스, AMS 및 Experience Manager as a Cloud Service)에 적용됩니다.
 
 >[!IMPORTANT]
 >
@@ -204,7 +204,7 @@ PNG와 같이 투명성을 지원하는 이미지 파일 형식의 경우 손실
 
 +++**URL, 이미지 사전 설정을 변경하거나 사이트에서 새 코드를 배포해야 합니까?**
 
-아니. 스마트 이미징은 기존 이미지 URL 및 이미지 사전 설정과 원활하게 작동합니다. 또한 스마트 이미징에서는 사용자의 브라우저를 감지하기 위해 웹 사이트에 코드를 추가할 필요가 없습니다. 이 기능은 모두 자동으로 처리됩니다.
+아니요. 스마트 이미징은 기존 이미지 URL 및 이미지 사전 설정과 원활하게 작동합니다. 또한 스마트 이미징에서는 사용자의 브라우저를 감지하기 위해 웹 사이트에 코드를 추가할 필요가 없습니다. 이 기능은 모두 자동으로 처리됩니다.
 
 <!-- Smart Imaging works seamlessly with your existing image URLs and image presets if you configure Smart Imaging on your existing custom domain. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. It is all handled automatically.
 
@@ -239,7 +239,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 +++**계정에 대해 스마트 이미징을 사용하도록 설정할 수 있습니까?**
 
-아니. 스마트 이미징을 사용하도록 요청을 시작합니다. 이 요청은 자동으로 활성화되지 않습니다.
+아니요. 스마트 이미징을 사용하도록 요청을 시작합니다. 이 요청은 자동으로 활성화되지 않습니다.
 
 아래 설명에 따라 지원 사례를 만듭니다. 지원 사례에서는 계정에 활성화하려는 다음 스마트 이미징 기능(하나 이상의 기능) 중 하나를 언급하십시오.
 
@@ -392,7 +392,7 @@ WebP에서 스마트 이미징을 이미 활성화했지만 위에 나열된 다
 
 +++**최소 및 최대 품질 설정을 지정할 수 있습니까?**
 
-아니. 현재 그러한 프로비저닝이 없습니다.
+아니요. 현재 그러한 프로비저닝이 없습니다.
 
 +++
 
