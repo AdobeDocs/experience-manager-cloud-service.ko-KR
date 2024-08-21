@@ -1,8 +1,8 @@
 ---
-source-git-commit: 964d4a04c6c645a5cdab29218f93431649d41588
-workflow-type: ht
-source-wordcount: '662'
-ht-degree: 100%
+source-git-commit: 4eee52c28a57b466cfba52a99b832108b936a5d3
+workflow-type: tm+mt
+source-wordcount: '673'
+ht-degree: 95%
 
 ---
 # 스니펫 {#snippets}
@@ -80,7 +80,7 @@ ht-degree: 100%
   </tr>
   <tr>
     <td>드롭다운 목록 옵션 설정 </td>
-    <td>드롭다운 목록 옵션은 규칙 편집기의 <b>옵션 설정</b> 속성을 사용하여 설정됩니다.</td>
+    <td>규칙 편집기의 <b>옵션 설정 </b> 속성을 사용하여 드롭다운 목록 옵션을 설정합니다.</td>
     <td>드롭다운 옵션은 사용자 정의 함수를 사용하여 설정됩니다. 
    </td>
    </tr>
@@ -92,7 +92,7 @@ ht-degree: 100%
    </td>
    </tr>
       <tr>
-    <td>'Then'에서 필드/패널/양식 규칙 유효성 검사/재설정 </td>
+    <td>'Then'에서 필드/패널/양식 규칙의 유효성 검사/재설정 </td>
     <td>유효성 검사 및 재설정 함수는 규칙 편집기의 양식 오브젝트만 지원합니다. 
    </td>
     <td>유효성 검사 및 재설정 함수는 규칙 편집기의 양식/패널/필드 오브젝트를 지원합니다. 
@@ -127,3 +127,10 @@ ht-degree: 100%
 * [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 소개](/help/forms/create-and-use-custom-functions.md)
 * [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 만들기](/help/forms/custom-function-core-component-create-function.md)
 * [사용자 정의 함수 개발 및 사용의 예](/help/forms/custom-function-core-components-use-cases.md)
+
+
+## IP 허용 목록 및 프론트엔드 파이프라인 {#allowlist-frontend-pipeline}
+
+>[!IMPORTANT]
+>
+>여기에 중요 메모를 추가합니다.
