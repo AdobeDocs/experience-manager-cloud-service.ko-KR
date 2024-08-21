@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4eee52c28a57b466cfba52a99b832108b936a5d3
+source-git-commit: 90bc7320899053b6b1d6cf0d1b06b193ad1c68f3
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 95%
+source-wordcount: '818'
+ht-degree: 78%
 
 ---
 # 스니펫 {#snippets}
@@ -129,8 +129,14 @@ ht-degree: 95%
 * [사용자 정의 함수 개발 및 사용의 예](/help/forms/custom-function-core-components-use-cases.md)
 
 
-## IP 허용 목록 및 프론트엔드 파이프라인 {#allowlist-frontend-pipeline}
+## Cloud Manager IP 허용 목록 및 프론트엔드 파이프라인 {#allowlist-frontend-pipeline}
 
 >[!IMPORTANT]
 >
->여기에 중요 메모를 추가합니다.
+>프론트엔드 파이프라인을 사용하려면 먼저 다음 IP 허용 목록을 Cloud Manager에 추가해야 합니다.
+>필요한 경우 아래 주소 블록을 복사하여 [IP 허용 목록을 추가](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)하십시오. 각 주소는 쉼표로 구분됩니다. **IP 허용 목록 추가** 대화 상자의 **IP 주소/CIDR** 필드에 블록을 붙여 넣습니다. 주소 목록에서 첫 번째 쉼표 바로 뒤에 커서를 놓고 **Enter**를 누릅니다. 목록을 저장합니다.
+>프론트엔드 파이프라인 실행이 중단되지 않도록 이 IP 허용 목록이 Cloud Manager *before*&#x200B;에 추가되어 있는지 확인하려면 파이프라인을 활성화하십시오.
+>
+>**Cloud Manager IP 허용 목록**
+>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>   
