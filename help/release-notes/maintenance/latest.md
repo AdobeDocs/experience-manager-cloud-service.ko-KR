@@ -4,8 +4,8 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 80edd0255b38beee93b3f9c779ae0f364500b4a5
-workflow-type: ht
+source-git-commit: 1eeb15c16581c945beb90495801c525697a46710
+workflow-type: tm+mt
 source-wordcount: '1176'
 ht-degree: 100%
 
@@ -96,8 +96,7 @@ ht-degree: 100%
 * ASSETS-40875 - AssetDeleteHandler 클래스는 자산 삭제 이벤트를 수신하고 삭제 이벤트 유형(PRE_DELETE 또는 POST_DELETE)에 따라 특정 작업을 수행합니다. 특정 시나리오에서는 POST_DELETE 유형의 이벤트로 인해 NullPointerException이 발생합니다.
 * FORMS-14340 - FormsAndDocumentOmniSearchHandler 및 CloudStorageSubmitActionInserter를 인스턴스화하는 도중 오류가 발생했습니다. 이는 해를 미치지 않는 로그 구문입니다.
 * FORMS-15818 - 구성 요소 설명자 항목 &#39;OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml&#39; 이 서버 로그에서 구문을 찾을 수 없습니다. 이는 해를 미치지 않는 로그 구문입니다.
-* &#x200B;
-   * SITES-23662 - 게시를 트리거하는 사용자를 서버 로그의 JCR 로그 구문에서 추출할 수 없습니다. 이는 로그에 간헐적이고 해를 미치지 않는 “일괄 OSGI 이벤트에서 유효한 사용자 ID를 찾을 수 없습니다.”라는 오류가 발생할 수 있는 개발 중인 기능에 대한 것입니다.
+* SITES-23662 - 게시를 트리거하는 사용자를 서버 로그의 JCR 로그 구문에서 추출할 수 없습니다. 이는 로그에 간헐적이고 해를 미치지 않는 “일괄 OSGI 이벤트에서 유효한 사용자 ID를 찾을 수 없습니다.”라는 오류가 발생할 수 있는 개발 중인 기능에 대한 것입니다.
 
 ### 변경 사항 공지 {#change-notice-17465}
 
