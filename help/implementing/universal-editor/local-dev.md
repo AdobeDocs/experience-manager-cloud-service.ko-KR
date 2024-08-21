@@ -4,10 +4,10 @@ description: Universal Editor가 개발 목적으로 로컬 AEM 인스턴스 편
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5a6795056090908652a72730939024e974a9a697
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 61%
+source-wordcount: '819'
+ht-degree: 50%
 
 ---
 
@@ -38,7 +38,7 @@ HTTPS로 보호되는 외부 프레임 내에서 비보안 HTTP 프레임을 로
 
 범용 편집기 서비스는 범용 편집기의 전체 복사본이 아니라 로컬 AEM 환경의 호출이 인터넷을 통해 라우팅되지 않고 사용자가 제어하는 정의된 끝점에서 라우팅되도록 하는 기능의 하위 집합일 뿐입니다.
 
-유니버설 편집기 서비스의 로컬 복사본을 실행하려면 [NodeJS 버전 16](https://nodejs.org/en/download/releases)이 필요합니다.
+[NodeJS 버전 20](https://nodejs.org/en/download/releases)은(는) 유니버설 편집기 서비스의 로컬 복사본을 실행해야 합니다.
 
 범용 편집기 서비스는 소프트웨어 배포를 통해 사용할 수 있습니다. 액세스 방법에 대한 자세한 내용은 [소프트웨어 배포 설명서](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)를 참조하세요.
 
@@ -56,25 +56,43 @@ $ openssl req -newkey rsa:2048 -nodes -keyout key.pem -x509 -days 365 -out certi
 
 명령은 `key.pem` 및 `certificate.pem` 파일을 생성합니다. 이 파일을 `universal-editor-service.cjs` 파일과 같은 경로로 저장합니다.
 
-## Universal Editor Service 구성 설정 {#setting-up-service}
+## 범용 편집기 서비스 구성 설정 {#setting-up-service}
 
 Universal Editor Service를 로컬에서 실행하려면 NodeJS에서 여러 환경 변수를 설정해야 합니다.
 
 `universal-editor-service.cjs`, `key.pem` 및 `certificate.pem` 파일과 같은 경로에서 다음 콘텐츠로 `.env` 파일을 만듭니다.
 
 ```text
-EXPRESS_PORT=8000
-EXPRESS_PRIVATE_KEY=./key.pem
-EXPRESS_CERT=./certificate.pem
-NODE_TLS_REJECT_UNAUTHORIZED=0
+UES_PORT=8000
+UES_PRIVATE_KEY=./key.pem
+UES_CERT=./certificate.pem
+UES_TLS_REJECT_UNAUTHORIZED=false
 ```
 
-변수의 의미는 다음과 같습니다.
+이 예제에서 로컬 개발에 필요한 최소값은 다음과 같습니다. 다음 표에서는 이러한 값과 사용 가능한 추가 값에 대해 자세히 설명합니다.
 
-* `EXPRESS_PORT`: Universal Editor Service에서 수신하는 포트 정의
-* `EXPRESS_PRIVATE`: [이전에 만든 비공개 키 ](#ue-https) `key.pem`을 가리킴
-* `EXPRESS_CERT`: [이전에 만든 인증서, ](#ue-https) `certificate.pem`을 가리킴
-* `NODE_TLS_REJECT_UNAUTHORIZED=0`: 자체 서명된 인증서 허용
+| 값 | 옵션 | 기본값 | 설명 |
+|---|---|---|---|
+| `UES_PORT` | 예 | `8080` | 서버가 실행되는 포트 |
+| `UES_PRIVATE_KEY` | 예 | 없음 | HTTPS 서버의 개인 키 경로 |
+| `UES_CERT` | 예 | 없음 | HTTPS 서버의 인증 파일 경로 |
+| `UES_TLS_REJECT_UNAUTHORIZED` | 예 | `true` | 승인되지 않은 TLS 연결 거부 |
+| `UES_DISABLE_IMS_VALIDATION` | 예 | `false` | IMS 유효성 검사 비활성화 |
+| `UES_ENDPOINT_MAPPING` | 예 | 비어 있음 | 내부 재작성에 대한 끝점의 매핑<br>예: `UES_ENDPOINT_MAPPING='[{"https://your-public-facing-author-domain.net": "http://10.0.0.1:4502"}]'`<br>결과: Universal Editor Service가 제공된 연결 `https://your-public-facing-author-domain.net` 대신 `http://10.0.0.1:4502`에 연결합니다. |
+| `UES_LOG_LEVEL` | 예 | `info` | 서버의 로그 수준입니다. 가능한 값은 `silly`, `trace`, `debug`, `verbose`, `info`, `log`, `warn`, `error` 및 `fatal`입니다. |
+| `UES_SPLUNK_HEC_URL` | 예 | 없음 | Splunk 끝점에 대한 HEC URL |
+| `UES_SPLUNK_TOKEN` | 예 | 없음 | Splunk 토큰 |
+| `UES_SPLUNK_INDEX` | 예 | 없음 | 로그를 기록할 인덱스 |
+| `UES_SPLUNK_SOURCE` | 예 | `universal-editor-service` | splunk 로그의 소스 이름 |
+
+>[!NOTE]
+>
+>유니버설 편집기의 [2024.08.13 릴리스](/help/release-notes/universal-editor/current.md) 이전에는 `.env` 파일에 다음 변수가 필요했습니다. 이러한 값은 이전 버전과의 호환성을 위해 2024년 10월 1일까지 지원됩니다.
+>
+>`EXPRESS_PORT=8000`
+>`EXPRESS_PRIVATE_KEY=./key.pem`
+>`EXPRESS_CERT=./certificate.pem`
+>`NODE_TLS_REJECT_UNAUTHORIZED=0`
 
 ## Universal Editor Service 실행 {#running-ue}
 

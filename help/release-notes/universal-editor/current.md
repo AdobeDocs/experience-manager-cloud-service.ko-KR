@@ -4,9 +4,9 @@ description: 다음은 범용 편집기 2024.08.13 릴리스의 릴리스 정보
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: aad4d0353fb5e2eacb518b72e935def931d0798a
+source-git-commit: c66621eb336b8e6eb5ceb1056c089c190fcd1c34
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
@@ -22,14 +22,13 @@ ht-degree: 0%
 
 ## 새로운 기능 {#what-is-new}
 
-* **사용자 지정 데이터 형식**: 속성 패널에서 사용자 지정 필드를 만드는 기능을 사용하여 편집기를 고유한 데이터 요구 사항에 맞게 설정합니다.
+* **사용자 지정 데이터 형식**: [속성 패널에서 사용자 지정 필드를 만드는 기능으로 편집기를 고유한 데이터 요구 사항에 맞게 설정합니다.](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/item-types-renderers/)
    * 상거래 사용 사례에 대한 사용자 지정 제품 선택기를 개발하든, 백엔드의 값으로 드롭다운 목록을 채우든 간에, 이 기능은 작성자가 콘텐츠를 작성하는 데 사용하는 데이터에 대해 필요한 제어를 제공합니다.
 * **컨테이너 간 드래그 앤 드롭**: [콘텐츠 트리 패널 내에서 드래그 앤 드롭을 통해 [다른 컨테이너에서 구성 요소를 이동](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components)할 수 있으므로 레이아웃 구성을 보다 유연하게 사용할 수 있습니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
 * **최적화된 GitHub 통합**: GitHub 응답에 대한 캐싱이 도입되어 태그 및 `universal-editor-cors-library` 검색 속도가 크게 빨라져 사용자 경험이 더 빠르고 매끄러워졌습니다.
-* **Managed Services RPM 패키지**: 이제 Adobe에서 범용 편집기 서비스의 배포 및 관리를 간소화하는 RPM 패키지를 제공하여 유지 관리를 단순화하고 관리 서비스의 운영 오버헤드를 줄입니다.
-* **구성 가능한 IMS 토큰 유효성 검사**: 토큰 관리의 유연성을 높이기 위해 IMS 토큰 유효성 검사는 이제 선택 사항입니다.
+* **구성 가능한 IMS 토큰 유효성 검사**: 토큰 관리의 유연성을 높이기 위해 [IMS 토큰 유효성 검사는 이제 선택 사항입니다.](/help/implementing/universal-editor/local-dev.md#setting-up-service)
    * 이 구성 옵션을 사용하면 필요에 따라 유효성 검사를 비활성화하여 클라우드 게이트웨이 설정을 단순화할 수 있습니다.
-* **Splunk 통합**: Splunk 로깅이 로컬 개발을 위해 [Universal Editor Service에 통합되었습니다.](/help/implementing/universal-editor/local-dev.md) 모니터링 및 진단을 개선했습니다.
+* **Splunk 통합**: Splunk 로깅이 로컬 개발을 위해 [Universal Editor Service에 통합되었습니다.](/help/implementing/universal-editor/local-dev.md#setting-up-service) 모니터링 및 진단을 개선했습니다.
    * 이 통합을 통해 효율적인 로그 추적, 더 원활한 작업 및 더 빠른 문제 해결을 수행할 수 있습니다.
 
 ## 버그 수정 {#bug-fixes}
