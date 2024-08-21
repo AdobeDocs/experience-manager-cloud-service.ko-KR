@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 80edd0255b38beee93b3f9c779ae0f364500b4a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1176'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 79%
 
 ## 릴리스 17465 {#release-17465}
 
-다음은 2024년 8월 14일에 공개적으로 릴리스된 유지 보수 릴리스 17465에 대한 지속적인 개선 사항을 요약했습니다. 이전 유지 관리 릴리스는 릴리스 17258이었습니다.
+2024년 8월 14일에 릴리스된 유지 관리 릴리스 17465의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이전 유지 관리 릴리스는 릴리스 17258이었습니다.
 
 이 유지 관리 릴리스(2024.8.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
 
@@ -89,15 +89,15 @@ ht-degree: 79%
 * SITES-22203 - 콘텐츠 조각 REST API: 동일한 상황에 동일한 방식으로 응답하도록 관리 API를 정렬합니다.
 * SITES-21973 - 콘텐츠 조각 REST API: 모델에는 열거형에 대한 고유 속성이 없습니다.
 * SITES-20364 - 302 리디렉션이 URL의 선택기에서 작동하지 않습니다.
-* SITES-21198 - VersionPreviewServlet: 정리 가 병합 충돌 및 블록 커밋을 발생시키는 모든 클러스터 노드에서 동시에 실행됩니다.
+* SITES-21198 - VersionPreviewServlet: 병합 충돌을 유발하는 모든 클러스터 노드에서 정리를 동시에 실행하고 커밋을 차단합니다.
 
 ### 알려진 문제 {#known-issues-17465}
 
-* ASSETS DELETE-40875 - AssetDeleteHandler 클래스는 에셋 삭제 이벤트를 수신하고 삭제 이벤트 유형(PRE_event 또는 POST_DELETE)에 따라 특정 작업을 수행합니다. 특정 시나리오에서 이벤트의 POST DELETE 유형은 NullPointerException을 발생시킵니다.
-* FORMS-14340 - FormsAndDocumentOmniSearchHandler 및 CloudStorageSubmitActionInserter를 인스턴스화하는 동안 오류가 발생했습니다. 무해한 로그 문입니다.
-* FORMS-15818 - 구성 요소 설명자 항목 &#39;OSGI-INF/com.adobe.aemfd.docmanager.impl.서버 로그에서 *.xml&#39; 문을 찾을 수 없습니다. 무해한 로그 문입니다.
+* ASSETS-40875 - AssetDeleteHandler 클래스는 자산 삭제 이벤트를 수신하고 삭제 이벤트 유형(PRE_DELETE 또는 POST_DELETE)에 따라 특정 작업을 수행합니다. 특정 시나리오에서는 POST_DELETE 유형의 이벤트로 인해 NullPointerException이 발생합니다.
+* FORMS-14340 - FormsAndDocumentOmniSearchHandler 및 CloudStorageSubmitActionInserter를 인스턴스화하는 도중 오류가 발생했습니다. 이는 해를 미치지 않는 로그 구문입니다.
+* FORMS-15818 - 구성 요소 설명자 항목 &#39;OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml&#39; 이 서버 로그에서 구문을 찾을 수 없습니다. 이는 해를 미치지 않는 로그 구문입니다.
 * 
-   * SITES-23662 - 게시를 트리거하는 사용자는 서버 로그의 JCR 로그 문에서 추출할 수 없습니다. 이는 개발 중인 기능으로 인해 로그에 &quot;OSGI 이벤트 배치에서 유효한 사용자 ID를 찾을 수 없음&quot; 오류가 발생하여 간헐적이고 문제가 없을 수 있습니다.
+   * SITES-23662 - 게시를 트리거하는 사용자를 서버 로그의 JCR 로그 구문에서 추출할 수 없습니다. 이는 로그에 간헐적이고 해를 미치지 않는 “일괄 OSGI 이벤트에서 유효한 사용자 ID를 찾을 수 없습니다.”라는 오류가 발생할 수 있는 개발 중인 기능에 대한 것입니다.
 
 ### 변경 사항 공지 {#change-notice-17465}
 
@@ -105,13 +105,13 @@ ht-degree: 79%
 
 ### 사용 중단된 기능 및 API {#deprecated-17465}
 
-`com.day.cq.wcm.api`을(를) 업데이트하는 중입니다. 현재 릴리스에서는 일부 메서드 및 클래스를 `@Deprecated`(으)로 표시했습니다. 이러한 수정 사항은 향후 릴리스에서 제거될 예정이므로, 이러한 수정 사항 중 하나를 사용 중인 경우 해당 수정 사항으로 전환하는 것을 고려해 보십시오.
+현재 `com.day.cq.wcm.api` 업데이트가 진행 중이며, 현재 릴리스에서는 몇 가지 메서드와 클래스를 `@Deprecated`로 표시했습니다. 이러한 기능은 향후 릴리스에서 제거될 예정이므로, 해당 기능을 사용 중이라면 제안된 대체 기능으로 전환하는 것을 고려해 보시기 바랍니다.
 
 AEM as a Cloud Service에서 더 이상 사용되지 않는 기능과 API는 [사용 중단된 기능 및 API](/help/release-notes/deprecated-removed-features.md) 문서에 자세히 설명되어 있습니다.
 
-### 보안 수정 사항 {#security-17465}
+### 보안 수정 {#security-17465}
 
-AEM as a Cloud Service은 플랫폼의 보안 및 성능을 최적화하는 데 전념하고 있습니다. 이 유지 관리 릴리스는 7개의 식별된 취약점을 해결하여 강력한 시스템 보호에 대한 약속을 강화합니다.
+AEM as a Cloud Service는 플랫폼의 보안 및 성능을 최적화하는 데 사용됩니다. 이 유지 관리 릴리스에서는 강력한 시스템 보호에 대한 노력의 일환으로 식별된 취약점 7개가 해결되었습니다.
 
 ### 임베드된 기술 {#embedded-tech-17465}
 

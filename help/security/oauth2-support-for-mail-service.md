@@ -5,9 +5,9 @@ exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 feature: Security
 role: Admin
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '675'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -115,7 +115,7 @@ AEM측의 OAuth 구성을 진행하기에 앞서 아래 절차에 따라 accessT
 >
 > [이 위치](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow)에서 Postman API 컬렉션을 가져올 수 있습니다.
 >
-> 자세한 내용은 [MSFT OAuth 설명서](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth)를 참조하십시오.
+> 자세한 내용은 [MSFT OAuth 문서](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth)를 참조하십시오.
 
 ### AEM as a Cloud Service와 통합 {#integration-with-aem-as-a-cloud-service}
 
@@ -167,8 +167,8 @@ AEM측의 OAuth 구성을 진행하기에 앞서 아래 절차에 따라 accessT
    ```
 
 1. Outlook의 경우 `smtp.host` 구성 값은 `smtp.office365.com`입니다.
-1. 런타임 시 [Cloud Manager 변수 API](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api)를 사용하거나 [Cloud Manager을 사용하여 변수를 추가](/help/implementing/cloud-manager/environment-variables.md)하여 `refreshToken values` 및 `clientSecret` 비밀을 전달합니다. 변수 `SECRET_SMTP_OAUTH_REFRESH_TOKEN` 및 `SECRET_SMTP_OAUTH_CLIENT_SECRET`의 값을 정의해야 합니다.
+1. 런타임 시 [Cloud Manager 변수 API](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api)를 사용하거나 [변수를 추가하는 Cloud Manager](/help/implementing/cloud-manager/environment-variables.md)를 사용하여 `refreshToken values` 및 `clientSecret` 보안을 전달합니다. 변수 `SECRET_SMTP_OAUTH_REFRESH_TOKEN` 및 `SECRET_SMTP_OAUTH_CLIENT_SECRET`의 값을 정의해야 합니다.
 
 ### 문제 해결 {#troubleshooting}
 
-메일 서비스가 제대로 작동하지 않는 경우, 위에 설명된 바와 같이 Cloud Manager API를 통해 새 값을 전달하여 `refreshToken`을 다시 생성해야 합니다. 새 값을 배포하는 데 몇 분 정도 소요됩니다.
+메일 서비스가 제대로 작동하지 않는 경우, 위에 설명된 바와 같이 Cloud Manager API를 통해 새 값을 전달하여 `refreshToken` 을 다시 생성해야 합니다. 새 값을 배포하는 데 몇 분 정도 소요됩니다.

@@ -5,9 +5,9 @@ exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 feature: Security
 role: Admin
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1941'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 93%
 
 >[!TIP]
 >
->Adobe IMS를 사용하여 AEM as a Cloud Service에 인증하는 방법에 대한 소개는 [관리자를 위한 AEM에 대한 액세스 구성](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem)을 참조하십시오. 또한 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필을 사용하여 AEM 및 해당 기능에 대한 액세스를 제어하는 방법도 알아봅니다. Adobe ID가 필요합니다.
+>Adobe IMS를 사용하여 AEM as a Cloud Service에 인증하는 방법에 대한 소개는 [관리자를 위한 AEM에 대한 액세스 구성](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem_ko)을 참조하십시오. 또한 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필을 사용하여 AEM 및 해당 기능에 대한 액세스를 제어하는 방법도 알아봅니다. Adobe ID가 필요합니다.
 
 ## 주요 내용 {#key-highlights}
 
@@ -60,9 +60,9 @@ AEM 고객은 이미 조직이 프로비저닝되어 있어야 하며 IMS 프로
 1. 시스템 관리자는 SSO(Single Sign-On)를 설정하기 위해 Admin Console에서 IDP 구성을 수행합니다.
 1. AEM 관리자는 평소대로 로컬 그룹 및 권한을 관리합니다.
 
-IDP 구성을 포함한 Identity Management Adobe 기본 사항은 [ID 및 SSO(Single Sign-On) 설정](https://helpx.adobe.com/kr/enterprise/using/set-up-identity.html)에서 다룹니다.
+IDP 구성을 포함한 Adobe Identity Management 기본 사항은 [ID 및 SSO(Single Sign-On) 설정](https://helpx.adobe.com/kr/enterprise/using/set-up-identity.html)에서 다룹니다.
 
-엔터프라이즈 관리 및 Admin Console 사용법은 [엔터프라이즈 및 팀 관리 가이드 시작](https://helpx.adobe.com/kr/enterprise/admin-guide.html)에서 다룹니다.
+엔터프라이즈 관리 및 Admin Console 사용에 대해서는 [엔터프라이즈 및 팀 관리 안내서를 시작합니다.](https://helpx.adobe.com/kr/enterprise/admin-guide.html)에서 다룹니다.
 
 ### Admin Console에서 사용자 온보딩 {#onboarding-users-in-admin-console}
 
@@ -96,7 +96,7 @@ UST(사용자 동기화 도구)를 사용하면 Adobe 기업 고객은 Active Di
 
 >[!NOTE]
 >
->GitHub의 [사용자 동기화 도구 v2.4rc1](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)에서 동적 그룹 생성 지원과 함께 프리릴리스 버전 **2.4RC1**&#x200B;을(를) 사용할 수 있습니다.
+>[GitHub의 사용자 동기화 도구 v2.4rc1](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)에서 동적 그룹 생성 지원이 포함된 프리릴리스 버전 **2.4RC1**&#x200B;을 사용할 수 있습니다.
 
 이 릴리스의 주요 기능은 Admin Console에서 사용자 멤버십에 대한 새 LDAP 그룹을 동적으로 매핑하고 동적 사용자 그룹 생성을 수행하는 기능입니다.
 
@@ -108,17 +108,17 @@ UST(사용자 동기화 도구)를 사용하면 Adobe 기업 고객은 Active Di
 
 * [UST 설명서](https://adobe-apiplatform.github.io/user-sync.py/en/)
 
-* 사용자 동기화 도구는 [API 액세스를 위한 인증](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html)의 절차를 사용하여 Adobe Developer 클라이언트 UMAPI로 등록해야 합니다.
+* 사용자 동기화 도구는 [API 액세스 인증](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html)에서 절차를 사용하여 Adobe Developer 클라이언트 UMAPI로 등록해야 합니다.
 
 * [Adobe Developer Console 설명서](https://developer.adobe.com/developer-console/)
 
-* 사용자 동기화 도구에서 사용하는 [사용자 관리 API](https://adobe-apiplatform.github.io/user-sync.py/en/)
+* [사용자 동기화 도구에서 사용하는 User Management API](https://adobe-apiplatform.github.io/user-sync.py/en/)
 
 ## Adobe Experience as a Cloud Service 구성 {#aem-configuration}
 
 >[!NOTE]
 >
->필요한 AEM IMS 구성은 AEM 환경 및 인스턴스가 프로비저닝될 때 자동으로 구성됩니다. 그러나 관리자는 요구 사항에 따라 수정할 수 있습니다. [AEM as a Cloud Service에 배포](/help/implementing/deploying/overview.md)를 참조하십시오.
+>필요한 AEM IMS 구성은 AEM 환경 및 인스턴스가 프로비저닝될 때 자동으로 구성됩니다. 하지만 관리자는 요구 사항에 맞게 이를 수정할 수 있습니다. [AEM as a Cloud Service에 배포](/help/implementing/deploying/overview.md)를 참조하십시오.
 
 필요한 AEM IMS 구성은 AEM 환경 및 인스턴스가 프로비저닝될 때 자동으로 구성됩니다. 고객 관리자는 요구 사항에 따라 구성 일부를 수정할 수 있습니다.
 
