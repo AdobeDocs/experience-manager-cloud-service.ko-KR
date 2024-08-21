@@ -2,13 +2,13 @@
 title: ' [!DNL Content Hub] 배포'
 description: Content Hub을 배포하고 활성화하고 다양한 유형의 권한을 가진 사용자에게 액세스를 제공하는 방법(자산 업로드, Adobe Express 사용자)과 사용자에게 관리자 권한을 제공하는 방법에 대해 알아봅니다.
 role: Admin
-source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
+exl-id: 58194858-6e1c-460b-bab3-3496176b2851
+source-git-commit: 1cc17d10a687ede6b3b091578ed20a39414bb235
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
-
 
 # Content Hub 배포 {#deploy-content-hub}
 
@@ -64,15 +64,23 @@ Experience Manager Assets을 처음 사용하는 경우 **[!UICONTROL 프로그�
 
 ### Admin Console의 Content Hub 인스턴스 및 제품 프로필{#content-hub-instance-product-profile}
 
-{Cloud Manager을 사용하여 Assetsas a Cloud Service 용 Content Hub ](#enable-content-hub)을(를) 실행한 후 AEM Assets as a Cloud Service Admin Console 내에서 접미사 `contenthub`을(를) 사용하는 새 인스턴스가 생성되었습니다.[
+{Cloud Manager을 사용하여 Assetsas a Cloud Service 용 Content Hub ](#enable-content-hub)을(를) 실행한 후 AEM Assets as a Cloud Service Admin Console 내에서 접미사 `delivery`을(를) 사용하는 새 인스턴스가 생성되었습니다.[
 
 ![Content Hub의 새 인스턴스](assets/new-instance-content-hub.png)
+
+>[!NOTE]
+>
+>2024년 8월 14일 이전에 Content Hub을 프로비저닝한 경우 `contenthub`을(를) 접미사로 사용하여 새 인스턴스가 만들어집니다.
 
 Content Hub의 인스턴스 이름에 `author` 또는 `publish`이(가) 없습니다.
 
 Content Hub 제품 프로필을 보려면 인스턴스 이름을 클릭합니다.
 
 ![Content Hub 제품 프로필](assets/content-hub-product-profile.png)
+
+>[!NOTE]
+>
+>2024년 8월 14일 이전에 Content Hub을 프로비저닝한 경우 Content Hub 제품 프로필에 `delivery` 대신 `Limited Users` 뒤에 `contenthub`이(가) 언급되어 있습니다.
 
 ## 2단계: Content Hub 관리자 온보드 {#onboard-content-hub-administrator}
 
@@ -192,6 +200,3 @@ Experience Manager Assets 사용자를 구성하려면 다음 작업을 수행�
    >[!NOTE]
    >
    > Experience Manager Assets 사용자를 위해 [Content Hub 제품 프로필](#onboard-content-hub-users)에 추가할 필요는 없습니다.
-
-
-
