@@ -4,7 +4,7 @@ description: AEM Assets 보기에서 에셋을 검색하고 검색하는 방법�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 940e62432b8234f90c84d6c7a09dd60e643a3ae5
 workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 92%
@@ -239,7 +239,7 @@ Experience Manager Assets을 사용하면 조직의 기본 랜딩 페이지를 �
 1. **[!UICONTROL 검색 우선 홈 페이지 사용자 정의]**&#x200B;로 이동하고 **[!UICONTROL 미리보기]**&#x200B;를 클릭합니다. 홈 페이지를 어둡거나 밝은 테마로 미리 보려면 **[!UICONTROL 어두운 테마]** 버튼을 전환합니다.
 1. 미리보기 화면을 닫으려면 **[!UICONTROL 닫기]**&#x200B;를 클릭합니다.
 
-   ![검색 우선 홈 페이지 미리보기](assets/search-first-preview.gif)
+   ![검색 우선 홈 페이지 미리보기](/help/assets/assets/search-first-preview.gif)
 
 ## 상황별 검색 {#contextual-search}
 
@@ -255,7 +255,7 @@ Experience Manager Assets에서 상황별 검색에 액세스하는 방법:
 
 1. 검색 텍스트 상자에서 텍스트 프롬프트를 정의하고 **[!UICONTROL 상황별 검색]**&#x200B;을 클릭합니다.
 
-   ![상황별 검색 텍스트 프롬프트](assets/contextual-search-text-prompt.png)
+   ![상황별 검색 텍스트 프롬프트](/help/assets/assets/wknd-contextual-search.png)
 
    [!DNL Experience Manager Assets]는 검색 결과를 표시합니다.
 
