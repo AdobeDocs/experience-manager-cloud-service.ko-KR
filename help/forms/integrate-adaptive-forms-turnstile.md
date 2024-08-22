@@ -7,12 +7,15 @@ hide: true
 hidefromtoc: true
 exl-id: 644c351b-a167-4d18-8b99-b7cae6be48d5
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: d69d64a02c62b9a796188107cfe1ab7543b5a2be
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '956'
 ht-degree: 13%
 
 ---
+
+
+# 적응형 Forms과 Turnstile CAPTCHA 통합
 
 <span class="preview"> 이 기능은 얼리 어답터 프로그램 중입니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
 
