@@ -6,10 +6,10 @@ role: User
 feature: Adaptive Forms
 index: false
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
-source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
+source-git-commit: 5ee37f59bb959e0549c0541c6568aa8c135c330e
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 100%
+source-wordcount: '975'
+ht-degree: 98%
 
 ---
 
@@ -76,8 +76,8 @@ Custom parameters are planned for an upcoming release. -->
 * **적응형 양식에 차트를 추가할 수 있습니까?**
 예. 적응형 양식에 차트를 추가할 수 있습니다. 적응형 양식은 차트 구성 요소를 제공합니다. 이를 사용하여 적응형 양식에 차트를 추가할 수 있습니다.
 
-* **양식 데이터 모델을 관계형 데이터베이스 모델(FDM)에 연결할 수 있습니까?**
-양식 데이터 모델(FDM)을 [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services] 및 Experience Manager 사용자 프로필에 데이터 소스로 연결할 수 있습니다. 양식 데이터 모델(FDM)을 관계형 데이터베이스와 연결하는 기능은 지원되지 않습니다.
+* **양식 데이터 모델을 관계형 데이터베이스 모델에 연결할 수 있습니까?**
+양식 데이터 모델을 [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services]에 연결하고 사용자 프로필을 데이터 소스로 Experience Manager 할 수 있습니다. <!--Support to connect a Form Data Model with a relational database is not available.-->
 
 * **인증을 위해 양식 데이터 모델(FDM)에 대해 사용자 정의 인증서를 사용할 수 있습니까?**
 양식 데이터 모델(FDM)은 인증을 위해 사용자 정의 인증서를 사용하는 방법을 제공하지 않습니다. 따라서 x509 및 양방향 SSL과 같은 사용자 정의 인증서는 지원되지 않습니다.

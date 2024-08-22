@@ -4,9 +4,9 @@ description: 적응형 양식 또는 AEM Workflow에서 RESTful 웹 서비스, S
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 5ee37f59bb959e0549c0541c6568aa8c135c330e
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '542'
 ht-degree: 3%
 
 ---
@@ -59,6 +59,10 @@ ht-degree: 3%
 * [양식 데이터 모델(FDM) 작업](work-with-form-data-model.md)
 * [양식 데이터 모델(FDM) 사용](using-form-data-model.md)
 
+<!--
+
 >[!NOTE]
 >
->[!UICONTROL Experience Manager Forms]은(는) 관계형 데이터베이스를 지원하지 않습니다.
+>[!UICONTROL Experience Manager Forms] does not support relational database.
+
+-->
