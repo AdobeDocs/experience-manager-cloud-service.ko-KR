@@ -4,10 +4,10 @@ description: 스프레드시트를 사용하여 Edge Delivery Services 사이트
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: f8e305f636c7a7247d2a41f6ed25b1715bd8837c
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 98%
+source-wordcount: '970'
+ht-degree: 97%
 
 ---
 
@@ -130,6 +130,7 @@ AEM에서 스프레드시트의 데이터를 게시할 수 있으려면 프로�
 * 메타데이터
 * 헤더
 * 구성
+* [분류](/help/edge/wysiwyg-authoring/taxonomy.md)
 
 [스프레드시트 만들기](#spreadsheet) 및 [paths.json 업데이트](#paths-json) 섹션의 단계를 동일하게 따르고, 적절한 템플릿을 선택하고, `paths.json` 파일을 적절하게 업데이트하면 됩니다.
 
@@ -138,6 +139,7 @@ AEM에서 스프레드시트의 데이터를 게시할 수 있으려면 프로�
 * 구성: `/.helix/config.json`
 * 헤더: `/.helix/headers.json`
 * 메타데이터: `/metadata.json`
+* 분류: 자세한 내용은 [분류 데이터 관리](/help/edge/wysiwyg-authoring/taxonomy.md) 문서를 참조하십시오.
 
 또한 자체 용도를 위한 임의의 열을 사용해 [자체 스프레드시트를 만들](#own-spreadsheet) 수 있습니다.
 

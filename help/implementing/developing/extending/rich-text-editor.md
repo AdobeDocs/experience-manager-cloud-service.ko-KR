@@ -5,7 +5,7 @@ contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1858'
 ht-degree: 0%
@@ -154,7 +154,7 @@ RTE 플러그인에 대한 자세한 구성은 [RTE 플러그인을 활성화하
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-[핵심 구성 요소 텍스트 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)를 사용하면 템플릿 편집기에서 사용자 인터페이스를 콘텐츠 정책으로 사용하여 여러 RTE 플러그인을 구성할 수 있으므로 기술 구성이 필요하지 않습니다. 콘텐츠 정책은 이 문서에 설명된 대로 RTE UI 구성에서 작동할 수 있습니다. 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/sites-console/templates.md) 및 [핵심 구성 요소 개발자 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)를 참조하십시오.
+[핵심 구성 요소 텍스트 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)를 사용하면 템플릿 편집기에서 사용자 인터페이스를 콘텐츠 정책으로 사용하여 여러 RTE 플러그인을 구성할 수 있으므로 기술 구성이 필요하지 않습니다. 콘텐츠 정책은 이 문서에 설명된 대로 RTE UI 구성에서 작동할 수 있습니다. 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/page-editor/templates.md) 및 [핵심 구성 요소 개발자 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)를 참조하십시오.
 
 >참조용으로 기본 텍스트 구성 요소(표준 설치의 일부로 제공)는 다음에서 찾을 수 있습니다.
 >
@@ -220,7 +220,7 @@ RTE 플러그인에 대한 자세한 구성은 [RTE 플러그인을 활성화하
 
 ## RTE 사용자 인터페이스 설정 및 콘텐츠 정책 {#rtecontentpolicies}
 
-관리자는 위에서 설명한 대로 구성을 수행하는 대신 콘텐츠 정책을 사용하여 RTE 옵션을 제어할 수 있습니다. 콘텐츠 정책은 [편집 가능한 템플릿](/help/sites-cloud/authoring/sites-console/templates.md)의 일부로 사용되는 경우 구성 요소의 디자인 속성을 정의합니다. 예를 들어 RTE를 사용하는 텍스트 구성 요소를 편집 가능한 템플릿과 함께 사용하는 경우 콘텐츠 정책에서 굵게 옵션을 사용할 수 있고 몇 가지 단락 서식 옵션을 사용할 수 있도록 정의할 수 있습니다. 콘텐츠 정책은 재사용이 가능하며 여러 템플릿에 적용할 수 있습니다.
+관리자는 위에서 설명한 대로 구성을 수행하는 대신 콘텐츠 정책을 사용하여 RTE 옵션을 제어할 수 있습니다. 콘텐츠 정책은 [편집 가능한 템플릿](/help/sites-cloud/authoring/page-editor/templates.md)의 일부로 사용되는 경우 구성 요소의 디자인 속성을 정의합니다. 예를 들어 RTE를 사용하는 텍스트 구성 요소를 편집 가능한 템플릿과 함께 사용하는 경우 콘텐츠 정책에서 굵게 옵션을 사용할 수 있고 몇 가지 단락 서식 옵션을 사용할 수 있도록 정의할 수 있습니다. 콘텐츠 정책은 재사용이 가능하며 여러 템플릿에 적용할 수 있습니다.
 
 RTE에서 사용할 수 있는 옵션은 사용자 인터페이스 구성에서 콘텐츠 정책으로 다운스트림됩니다.
 

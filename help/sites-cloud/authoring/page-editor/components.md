@@ -5,7 +5,7 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 79%
@@ -42,7 +42,7 @@ ht-degree: 79%
 
 ## 핵심 구성 요소 {#core-components}
 
-[코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)는 페이지를 작성하는 데 필요한 콘텐츠 유형을 제공하는 유연하고 다양한 작성 기능을 제공합니다.
+[코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)는 페이지를 작성하는 데 필요한 콘텐츠 유형을 제공하는 유연하고 다양한 작성 기능을 제공합니다.
 
 이 구성 요소는 AEM 모범 사례를 사용하여 빌드되었으며 AEM 작성 환경의 기초입니다. 코어 구성 요소는 특정 프로젝트 요구 사항을 충족하도록 개발자가 쉽게 확장할 수 있습니다.
 
@@ -50,4 +50,4 @@ WCM 핵심 구성 요소와 함께 [적응형 양식 핵심 구성 요소](https
 
 ### 템플릿 구성 {#configuring-templates}
 
-페이지가 권장되는 편집 가능한 현대적 템플릿을 기반으로 하는 경우 [템플릿을 편집](/help/sites-cloud/authoring/sites-console/templates.md)하여 특정 구성 요소에 대해 이들 템플릿을 활성화/비활성화하고 매개변수를 편집할 수 있습니다.
+페이지가 권장되는 편집 가능한 현대적 템플릿을 기반으로 하는 경우 [템플릿을 편집](/help/sites-cloud/authoring/page-editor/templates.md)하여 특정 구성 요소에 대해 이들 템플릿을 활성화/비활성화하고 매개변수를 편집할 수 있습니다.

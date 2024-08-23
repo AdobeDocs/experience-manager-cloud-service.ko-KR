@@ -4,7 +4,7 @@ description: 범용 편집기 액세스 및 탐색에 대한 기본 사항을 �
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1576'
 ht-degree: 43%
@@ -48,7 +48,7 @@ Universal Editor로 앱의 콘텐츠를 작성하려면 개발자가 앱을 계�
 
 >[!NOTE]
 >
->[**사이트** 콘솔에서 페이지를 편집할 때](/help/sites-cloud/authoring/sites-console/introduction.md) 콘솔에서는 페이지의 [템플릿:](/help/sites-cloud/authoring/sites-console/templates.md)에 적합한 편집기를 엽니다. 이 문서에 설명된 범용 편집기 또는 [페이지 편집기.](/help/sites-cloud/authoring/page-editor/introduction.md)
+>[**사이트** 콘솔에서 페이지를 편집할 때](/help/sites-cloud/authoring/sites-console/introduction.md) 콘솔에서는 페이지의 [템플릿:](/help/sites-cloud/authoring/page-editor/templates.md)에 적합한 편집기를 엽니다. 이 문서에 설명된 범용 편집기 또는 [페이지 편집기.](/help/sites-cloud/authoring/page-editor/introduction.md)
 
 ### 직접 액세스 {#accessing-directly}
 

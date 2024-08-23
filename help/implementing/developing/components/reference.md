@@ -4,7 +4,7 @@ description: 구성 요소 및 해당 구조에 대한 세부 사항에 대한 �
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '3481'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 구성 요소 참조 안내서 {#components-reference-guide}
 
-구성 요소는 AEM에서 경험을 구축하는 핵심입니다. [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을(를) 사용하면 준비된 강력한 구성 요소의 도구 집합을 쉽게 시작할 수 있습니다. [WKND 튜토리얼](/help/implementing/developing/introduction/develop-wknd-tutorial.md)은(는) 개발자가 이러한 도구를 사용하는 방법과 사용자 지정 구성 요소를 빌드하여 AEM 사이트를 만드는 방법을 안내합니다.
+구성 요소는 AEM에서 경험을 구축하는 핵심입니다. [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 및 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을(를) 사용하면 준비된 강력한 구성 요소의 도구 집합을 쉽게 시작할 수 있습니다. [WKND 튜토리얼](/help/implementing/developing/introduction/develop-wknd-tutorial.md)은(는) 개발자가 이러한 도구를 사용하는 방법과 사용자 지정 구성 요소를 빌드하여 AEM 사이트를 만드는 방법을 안내합니다.
 
 >[!TIP]
 >
@@ -223,9 +223,9 @@ AEM 구성 요소에 대한 대화 상자:
 
 ### 디자인 대화 상자 {#design-dialogs}
 
-디자인 대화 상자는 콘텐츠를 편집하고 구성하는 데 사용되는 대화 상자와 유사하지만, 템플릿 작성자가 페이지 템플릿에서 해당 구성 요소에 대한 디자인 세부 정보를 미리 구성하고 제공할 수 있는 인터페이스를 제공합니다. 그런 다음 콘텐츠 작성자는 페이지 템플릿을 사용하여 콘텐츠 페이지를 만듭니다. 템플릿을 만드는 방법에 대한 자세한 내용은 [템플릿 설명서](/help/sites-cloud/authoring/sites-console/templates.md)를 참조하세요.
+디자인 대화 상자는 콘텐츠를 편집하고 구성하는 데 사용되는 대화 상자와 유사하지만, 템플릿 작성자가 페이지 템플릿에서 해당 구성 요소에 대한 디자인 세부 정보를 미리 구성하고 제공할 수 있는 인터페이스를 제공합니다. 그런 다음 콘텐츠 작성자는 페이지 템플릿을 사용하여 콘텐츠 페이지를 만듭니다. 템플릿을 만드는 방법에 대한 자세한 내용은 [템플릿 설명서](/help/sites-cloud/authoring/page-editor/templates.md)를 참조하세요.
 
-[페이지 템플릿을 편집할 때 디자인 대화 상자가 사용됩니다](/help/sites-cloud/authoring/sites-console/templates.md). 모든 구성 요소에 필요한 것은 아닙니다. 예를 들어 **제목** 및 **이미지 구성 요소**&#x200B;에는 모두 디자인 대화 상자가 있지만 **소셜 미디어 공유 구성 요소**&#x200B;에는 디자인 대화 상자가 없습니다.
+[페이지 템플릿을 편집할 때 디자인 대화 상자가 사용됩니다](/help/sites-cloud/authoring/page-editor/templates.md). 모든 구성 요소에 필요한 것은 아닙니다. 예를 들어 **제목** 및 **이미지 구성 요소**&#x200B;에는 모두 디자인 대화 상자가 있지만 **소셜 미디어 공유 구성 요소**&#x200B;에는 디자인 대화 상자가 없습니다.
 
 ### Coral UI 및 Granite UI {#coral-and-granite}
 
@@ -280,7 +280,7 @@ Content not found
 
 구성 요소를 정의한 후 사용할 수 있도록 해야 합니다. 구성 요소를 템플릿에서 사용할 수 있도록 하려면 템플릿의 레이아웃 컨테이너 정책에서 구성 요소를 활성화해야 합니다.
 
-템플릿을 만드는 방법에 대한 자세한 내용은 [템플릿 설명서](/help/sites-cloud/authoring/sites-console/templates.md)를 참조하세요.
+템플릿을 만드는 방법에 대한 자세한 내용은 [템플릿 설명서](/help/sites-cloud/authoring/page-editor/templates.md)를 참조하세요.
 
 ### 구성 요소 및 구성 요소가 만드는 콘텐츠 {#components-and-the-content-they-create}
 

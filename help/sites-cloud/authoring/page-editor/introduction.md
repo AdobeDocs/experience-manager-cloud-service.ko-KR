@@ -5,7 +5,7 @@ exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 39%
@@ -18,7 +18,7 @@ ht-degree: 39%
 
 >[!NOTE]
 >
->[**사이트** 콘솔에서 페이지를 편집할 때](/help/sites-cloud/authoring/sites-console/introduction.md) 콘솔에서는 페이지의 [템플릿:](/help/sites-cloud/authoring/sites-console/templates.md)에 적합한 편집기를 엽니다. 이 문서에 설명된 페이지 편집기 또는 [유니버설 편집기.](/help/sites-cloud/authoring/universal-editor/authoring.md)
+>[**사이트** 콘솔에서 페이지를 편집할 때](/help/sites-cloud/authoring/sites-console/introduction.md) 콘솔에서는 페이지의 [템플릿:](/help/sites-cloud/authoring/page-editor/templates.md)에 적합한 편집기를 엽니다. 이 문서에 설명된 페이지 편집기 또는 [유니버설 편집기.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ AEM 페이지 편집기는 주로 다음 세 섹션으로 구성됩니다.
 * [페이지 잠금](/help/sites-cloud/authoring/page-editor/introduction.md#locking-unlocking)
 * [페이지 게시](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-pages-1)
 * [페이지 게시 취소](/help/sites-cloud/authoring/sites-console/publishing-pages.md#unpublishing-pages)
-* [템플릿 편집](/help/sites-cloud/authoring/sites-console/templates.md)
+* [템플릿 편집](/help/sites-cloud/authoring/page-editor/templates.md)
 * [게시됨으로 보기](/help/sites-cloud/authoring/page-editor/introduction.md#view-as-published)
 * [관리자로 보기](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)
 * [도움말](/help/sites-cloud/authoring/basic-handling.md#accessing-help)

@@ -2,9 +2,12 @@
 title: 페이지 템플릿 만들기
 description: 템플릿은 결과 페이지의 구조를 정의하며, 템플릿 편집기를 사용하여 템플릿을 만들고 유지 관리하는 것은 더 이상 개발자 전용 작업이 아닙니다.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: c79aeaab9d33f1c2a15f93d58847798c6caff31c
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
-source-wordcount: '4522'
+source-wordcount: '4524'
 ht-degree: 86%
 
 ---
@@ -13,7 +16,7 @@ ht-degree: 86%
 
 페이지를 만들 때 새 페이지를 만드는 기준으로 사용할 템플릿을 선택해야 합니다. 템플릿은 결과 페이지의 구조, 초기 콘텐츠 및 사용할 수 있는 구성 요소를 정의합니다.
 
-**템플릿 편집기**&#x200B;를 사용하여 템플릿을 만들고 유지 관리하는 작업은 개발자 전용 작업이 아닙니다. **템플릿 작성자**&#x200B;라고 불리는 강력한 사용자 유형도 참여할 수 있습니다. 개발자는 여전히 환경을 설정하고 클라이언트 라이브러리를 생성하고 사용할 구성 요소를 생성해야 하지만, 이러한 기본 사항이 마련되면 **템플릿 작성자**&#x200B;는 개발 프로젝트 없이도 템플릿을 생성하고 구성할 수 있습니다.
+**템플릿 편집기**&#x200B;를 사용하면 템플릿을 만들고 유지 관리하는 작업은 더 이상 개발자 전용 작업이 아닙니다. **템플릿 작성자**&#x200B;라고 불리는 강력한 사용자 유형도 참여할 수 있습니다. 개발자는 여전히 환경을 설정하고 클라이언트 라이브러리를 생성하고 사용할 구성 요소를 생성해야 하지만, 이러한 기본 사항이 마련되면 **템플릿 작성자**&#x200B;는 개발 프로젝트 없이도 템플릿을 생성하고 구성할 수 있습니다.
 
 **템플릿 콘솔**&#x200B;을 사용하여 템플릿 작성자는 다음과 같은 작업을 수행할 수 있습니다.
 
@@ -78,7 +81,7 @@ ht-degree: 86%
    * [구조](#editing-a-template-structure-template-author) - 템플릿으로 만든 페이지에서 변경할 수 없는 사전 정의된 콘텐츠입니다.
    * [초기 콘텐츠](#editing-a-template-initial-content-author) - 템플릿으로 만든 페이지에서 변경할 수 있는 사전 정의된 콘텐츠입니다.
    * [레이아웃](#editing-a-template-layout-template-author) - 디바이스 범위에 해당합니다.
-   * [스타일](/help/sites-cloud/authoring/features/style-system.md) - 템플릿 및 해당 구성 요소와 함께 사용할 스타일을 정의합니다.
+   * [스타일](/help/sites-cloud/authoring/page-editor/style-system.md) - 템플릿 및 해당 구성 요소와 함께 사용할 스타일을 정의합니다.
 * 페이지를 만들 때 사용할 [템플릿을 활성화](#enabling-a-template-template-author)합니다.
 * 웹 사이트의 필수 페이지 또는 분기에 대해 [템플릿을 허용](#allowing-a-template-author)합니다.
 * [템플릿을 게시](#publishing-a-template-template-author)하여 게시 환경에서 사용할 수 있도록 합니다.
@@ -184,7 +187,7 @@ ht-degree: 86%
 
 1. **템플릿 콘솔**&#x200B;에서 템플릿을 선택합니다.
 1. 도구 모음에서 **활성화** 또는 **비활성화**&#x200B;를 선택하고 다시 확인 대화 상자에서 선택한 옵션을 다시 선택합니다.
-1. 이제 요구 사항에 따라 [템플릿을 편집](#editing-templates-template-authors)할 수 있지만 [페이지를 만들](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)때 템플릿을 사용할 수 있습니다.
+1. 이제 요구 사항에 따라 [템플릿을 편집](#editing-templates-template-authors)할 수 있지만 [페이지를 만들](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page)때 템플릿을 사용할 수 있습니다.
 
 >[!NOTE]
 >
@@ -194,7 +197,7 @@ ht-degree: 86%
 
 특정 페이지 분기에서 템플릿을 사용하거나 사용할 수 없게 지정할 수 있습니다.
 
-1. 템플릿을 사용할 수 있도록 하려는 분기의 루트 페이지에 대한 [페이지 속성](/help/sites-cloud/authoring/fundamentals/page-properties.md)을 엽니다.
+1. 템플릿을 사용할 수 있도록 하려는 분기의 루트 페이지에 대한 [페이지 속성](/help/sites-cloud/authoring/sites-console/page-properties.md)을 엽니다.
 1. **고급** 탭을 엽니다.
 1. **템플릿 설정**&#x200B;에서 **필드 추가**&#x200B;를 사용하여 템플릿에 대한 경로를 지정합니다.
 
@@ -270,7 +273,7 @@ ht-degree: 86%
 
 #### 레이아웃 {#template-layout}
 
-[레이아웃](#editing-a-template-layout-template-author)으로 필요한 디바이스 형식에 대한 템플릿 레이아웃을 미리 정의할 수 있습니다. 템플릿 작성에 대한&#x200B;**레이아웃** 모드는 [**페이지 작성에 대한 레이아웃** 모드](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)와 동일한 기능을 갖습니다.
+[레이아웃](#editing-a-template-layout-template-author)으로 필요한 디바이스 형식에 대한 템플릿 레이아웃을 미리 정의할 수 있습니다. 템플릿 작성에 대한&#x200B;**레이아웃** 모드는 [**페이지 작성에 대한 레이아웃** 모드](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode)와 동일한 기능을 갖습니다.
 
 #### 페이지 정책 {#template-page-policies}
 
@@ -278,9 +281,9 @@ ht-degree: 86%
 
 #### 스타일 {#template-styles}
 
-[스타일 시스템](/help/sites-cloud/authoring/features/style-system.md)을 사용하여 템플릿 작성자는 페이지에서 구성 요소를 편집할 때 콘텐츠 작성자가 선택할 수 있도록 구성 요소의 콘텐츠 정책에 스타일 클래스를 정의할 수 있습니다. 이러한 스타일은 보다 유연하게 사용할 수 있도록 구성 요소를 시각적으로 변형한 대체물일 수 있습니다.
+스타일 시스템을 사용하여 템플릿 작성자는 페이지에서 구성 요소를 편집할 때 콘텐츠 작성자가 선택할 수 있도록 구성 요소의 콘텐츠 정책에 스타일 클래스를 정의할 수 있습니다. 이러한 스타일은 보다 유연하게 사용할 수 있도록 구성 요소를 시각적으로 변형한 대체물일 수 있습니다.
 
-자세한 내용은 [스타일 시스템 설명서](/help/sites-cloud/authoring/features/style-system.md)를 참조하십시오.
+자세한 내용은 [스타일 시스템 설명서](/help/sites-cloud/authoring/page-editor/style-system.md)를 참조하십시오.
 
 ### 템플릿 편집 - 구조 - 템플릿 작성자 {#editing-a-template-structure-template-author}
 
@@ -319,7 +322,7 @@ ht-degree: 86%
 
 >[!NOTE]
 >
->동일하지는 않지만 구성 요소 및 자산을 템플릿에 추가하는 것은 [페이지 작성](/help/sites-cloud/authoring/fundamentals/editing-content.md) 시 수행되는 작업과 매우 비슷합니다.
+>동일하지는 않지만 구성 요소 및 자산을 템플릿에 추가하는 것은 [페이지 작성](/help/sites-cloud/authoring/page-editor/edit-content.md)할 때의 작업과 매우 비슷합니다.
 
 #### 구성 요소 작업 {#component-actions}
 
@@ -536,7 +539,7 @@ ht-degree: 86%
 
 ### 템플릿 편집 - 레이아웃 - 템플릿 작성자 {#editing-a-template-layout-template-author}
 
-디바이스 범위에 대한 템플릿 레이아웃을 정의할 수 있습니다. 템플릿에 대한 [반응형 레이아웃](/help/sites-cloud/authoring/features/responsive-layout.md)은 페이지 작성의 경우와 마찬가지로 작동합니다.
+디바이스 범위에 대한 템플릿 레이아웃을 정의할 수 있습니다. 템플릿에 대한 [반응형 레이아웃](/help/sites-cloud/authoring/page-editor/responsive-layout.md)은 페이지 작성의 경우와 마찬가지로 작동합니다.
 
 >[!NOTE]
 >
@@ -611,7 +614,7 @@ ht-degree: 86%
 
 ### 템플릿 편집 - 초기 페이지 속성 - 작성자 {#editing-a-template-initial-page-properties-author}
 
-**초기 페이지 속성** 옵션을 사용하여 결과 페이지를 생성할 때 사용할 초기 [페이지 속성](/help/sites-cloud/authoring/fundamentals/page-properties.md)을 정의할 수 있습니다.
+**초기 페이지 속성** 옵션을 사용하여 결과 페이지를 생성할 때 사용할 초기 [페이지 속성](/help/sites-cloud/authoring/sites-console/page-properties.md)을 정의할 수 있습니다.
 
 1. 템플릿 편집기의 도구 모음에서 **페이지 정보**&#x200B;를 선택한 다음, **초기 페이지 속성**&#x200B;을 선택하여 대화 상자를 엽니다.
 

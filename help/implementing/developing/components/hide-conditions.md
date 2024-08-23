@@ -4,7 +4,7 @@ description: 구성 요소 리소스의 렌더링 여부를 판별하기 위해 
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 조건 숨기기 사용 {#using-hide-conditions}
 
-구성 요소 리소스의 렌더링 여부를 판별하기 위해 숨기기 조건을 사용할 수 있습니다. 예제: 템플릿 작성자가 [템플릿 편집기](/help/sites-cloud/authoring/sites-console/templates.md)에서 핵심 구성 요소 [목록 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html)를 구성하고 하위 페이지를 기반으로 목록을 빌드하는 옵션을 비활성화하는 경우입니다. 디자인 대화 상자에서 이 옵션을 비활성화하면 속성이 설정되므로 목록 구성 요소가 렌더링될 때 숨기기 조건이 평가되고 하위 페이지를 표시하는 옵션이 표시되지 않습니다.
+구성 요소 리소스의 렌더링 여부를 판별하기 위해 숨기기 조건을 사용할 수 있습니다. 예제: 템플릿 작성자가 [템플릿 편집기](/help/sites-cloud/authoring/page-editor/templates.md)에서 핵심 구성 요소 [목록 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html)를 구성하고 하위 페이지를 기반으로 목록을 빌드하는 옵션을 비활성화하는 경우입니다. 디자인 대화 상자에서 이 옵션을 비활성화하면 속성이 설정되므로 목록 구성 요소가 렌더링될 때 숨기기 조건이 평가되고 하위 페이지를 표시하는 옵션이 표시되지 않습니다.
 
 ## 개요 {#overview}
 
@@ -51,9 +51,9 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 ## 예 {#example}
 
-숨기기 조건의 예는 특히 AEM 및 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 전체에서 찾을 수 있습니다. 예를 들어 [WKND 자습서](/help/implementing/developing/introduction/develop-wknd-tutorial.md)에서 구현된 [목록 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html)를 고려해 보십시오.
+숨기기 조건의 예는 특히 AEM 및 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 전체에서 찾을 수 있습니다. 예를 들어 [WKND 자습서](/help/implementing/developing/introduction/develop-wknd-tutorial.md)에서 구현된 [목록 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html)를 고려해 보십시오.
 
-[템플릿 편집기를 사용하여](/help/sites-cloud/authoring/sites-console/templates.md)템플릿 작성자는 디자인 대화 상자에서 페이지 작성자가 사용할 수 있는 목록 구성 요소의 옵션을 정의할 수 있습니다. 정적 목록, 하위 페이지 목록, 태그가 지정된 페이지 목록 등을 허용할지 여부와 같은 옵션을 활성화하거나 비활성화할 수 있습니다.
+[템플릿 편집기를 사용하여](/help/sites-cloud/authoring/page-editor/templates.md)템플릿 작성자는 디자인 대화 상자에서 페이지 작성자가 사용할 수 있는 목록 구성 요소의 옵션을 정의할 수 있습니다. 정적 목록, 하위 페이지 목록, 태그가 지정된 페이지 목록 등을 허용할지 여부와 같은 옵션을 활성화하거나 비활성화할 수 있습니다.
 
 템플릿 작성자가 하위 페이지 옵션을 비활성화하도록 선택하면 디자인 속성이 설정되고 숨기기 조건이 평가되어 페이지 작성자에 대해 옵션이 렌더링되지 않습니다.
 

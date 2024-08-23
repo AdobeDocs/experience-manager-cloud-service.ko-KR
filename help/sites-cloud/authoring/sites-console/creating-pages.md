@@ -5,12 +5,13 @@ exl-id: 77264562-e76a-40c8-9878-847a8878fb8e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6e13244d7ba7bb6e7a51525b66274427fe21d664
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 29%
+source-wordcount: '477'
+ht-degree: 27%
 
 ---
+
 
 # 페이지 만들기 {#creating-pages}
 
@@ -38,9 +39,8 @@ ht-degree: 29%
 
 1. 마법사의 첫 번째 단계에서 다음 중 하나를 수행할 수 있습니다.
 
-   * 새 페이지를 만드는 데 사용할 템플릿을 선택한 후 **다음**&#x200B;을(를) 선택하여 계속하십시오.
-
-   * 프로세스를 중단하려면 **취소**&#x200B;를 클릭/탭합니다.
+   * 새 페이지를 만드는 데 사용할 템플릿을 선택한 다음 **다음**&#x200B;을(를) 선택하여 계속 진행하거나 **취소**&#x200B;을(를) 선택하여 프로세스를 중단합니다.
+   * 템플릿은 [페이지 편집기](/help/sites-cloud/authoring/page-editor/introduction.md)와 [범용 편집기](/help/edge/wysiwyg-authoring/templates.md) 모두에서 지원됩니다.
 
    ![새 페이지에 사용할 템플릿 선택](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 

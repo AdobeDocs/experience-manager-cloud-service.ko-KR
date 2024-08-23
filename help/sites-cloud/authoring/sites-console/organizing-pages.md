@@ -5,7 +5,7 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 67%
@@ -118,7 +118,7 @@ AEM을 사용하여 웹 사이트를 구성하는 방법에 대해 알아봅니�
 
 ## 템플릿 {#templates}
 
-AEM에서 [template](/help/sites-cloud/authoring/sites-console/templates.md)은(는) 만들어지는 새 페이지의 기반으로 사용되는 특수 형식의 페이지입니다.
+AEM에서 [template](/help/sites-cloud/authoring/page-editor/templates.md)은(는) 만들어지는 새 페이지의 기반으로 사용되는 특수 형식의 페이지입니다.
 
 템플릿은 썸네일 이미지 및 기타 속성을 포함하는 페이지의 구조를 정의합니다. 예를 들어 제품 페이지, 사이트맵 및 연락처 정보에 대한 별도의 템플릿이 있을 수 있습니다. 템플릿은 [구성 요소](#components)로 구성됩니다.
 

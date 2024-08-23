@@ -4,7 +4,7 @@ description: AEM 단일 페이지 애플리케이션(SPA) 편집기와 함께 �
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 1%
@@ -158,7 +158,7 @@ function Home() {
     itemPath='root/responsivegrid' />
    ```
 
-1. 만든 `wknd-spa/components/imagecard` 구성 요소를 페이지 템플릿](/help/sites-cloud/authoring/sites-console/templates.md)의 컨테이너 구성 요소 [에 대해 허용되는 구성 요소에 추가하십시오.
+1. 만든 `wknd-spa/components/imagecard` 구성 요소를 페이지 템플릿](/help/sites-cloud/authoring/page-editor/templates.md)의 컨테이너 구성 요소 [에 대해 허용되는 구성 요소에 추가하십시오.
 
 이제 `imagecard` 구성 요소를 AEM 편집기의 컨테이너에 바로 추가할 수 있습니다.
 

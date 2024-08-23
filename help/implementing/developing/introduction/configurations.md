@@ -4,7 +4,7 @@ description: AEM(Adobe Experience Manager) 구성과 AEM에서 작업 공간 설
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 5%
@@ -37,7 +37,7 @@ AEM 내의 다양한 기능에 대해 구성을 만들 수 있습니다.
 
 * [Context Hub 세그먼트](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-* [편집 가능한 템플릿](/help/sites-cloud/authoring/sites-console/templates.md)
+* [편집 가능한 템플릿](/help/sites-cloud/authoring/page-editor/templates.md)
 * 다양한 클라우드 구성
 
 ### 예 {#administrator-example}
@@ -83,7 +83,7 @@ AEM 내의 다양한 기능에 대해 구성을 만들 수 있습니다.
 1. 허용하려는 구성 유형을 확인합니다.
    * [Context Hub 세그먼트](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
    * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-   * [편집 가능한 템플릿](/help/sites-cloud/authoring/sites-console/templates.md)
+   * [편집 가능한 템플릿](/help/sites-cloud/authoring/page-editor/templates.md)
    * 다양한 클라우드 구성
 1. **만들기**&#x200B;를 선택합니다.
 

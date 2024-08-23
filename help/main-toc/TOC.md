@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a9b7e2fbafcfc4b5592cc95e6bbd1e8e0f631757
-workflow-type: ht
-source-wordcount: '5340'
-ht-degree: 100%
+source-git-commit: 773ce75975f4dcc2c5310422bcc377b487ebec25
+workflow-type: tm+mt
+source-wordcount: '5348'
+ht-degree: 99%
 
 ---
 
@@ -319,7 +319,6 @@ ht-degree: 100%
          + [페이지 속성](/help/sites-cloud/authoring/sites-console/page-properties.md)
          + [페이지 미리보기](/help/sites-cloud/authoring/sites-console/previewing-content.md)
          + [페이지 게시](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
-         + [페이지 템플릿](/help/sites-cloud/authoring/sites-console/templates.md)
          + [페이지 버전](/help/sites-cloud/authoring/sites-console/page-versions.md)
          + [페이지 비교](/help/sites-cloud/authoring/sites-console/page-diff.md)
          + [태그 사용](/help/sites-cloud/authoring/sites-console/tags.md)
@@ -330,6 +329,7 @@ ht-degree: 100%
          + [페이지 편집기](/help/sites-cloud/authoring/page-editor/introduction.md)
          + [편집기 사이드 패널](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
          + [페이지 편집](/help/sites-cloud/authoring/page-editor/edit-content.md)
+         + [페이지 템플릿](/help/sites-cloud/authoring/page-editor/templates.md)
          + [페이지 주석 추가](/help/sites-cloud/authoring/page-editor/annotations.md)
          + [리치 텍스트 편집기](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
          + [반응형 레이아웃](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
@@ -344,6 +344,7 @@ ht-degree: 100%
          + [범용 편집기로 콘텐츠 작성](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [범용 편집기로 콘텐츠 게시](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [범용 편집기에서의 콘텐츠 상속](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+         + [페이지 템플릿](/help/edge/wysiwyg-authoring/templates.md)
       + 조각 {#fragments}
          + [콘텐츠 조각](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [경험 조각](/help/sites-cloud/authoring/fragments/experience-fragments.md)
@@ -886,6 +887,8 @@ ht-degree: 100%
       + [콘텐츠 모델링](/help/edge/wysiwyg-authoring/content-modeling.md)
       + [표 형식 데이터 및 스프레드시트](/help/edge/wysiwyg-authoring/tabular-data.md)
       + [기존 프로젝트 및 Edge Delivery](/help/edge/wysiwyg-authoring/existing-projects.md)
+      + [분류 데이터 관리](/help/edge/wysiwyg-authoring/taxonomy.md)
+      + [WIP Sites 기능](/help/edge/wysiwyg-authoring/wip-features.md)
    + 문서 기반 작성 {#document-authoring}
       + [작성](/help/edge/docs/authoring.md)
       + [대량 메타데이터](/help/edge/docs/bulk-metadata.md)

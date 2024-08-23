@@ -5,7 +5,7 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '2268'
 ht-degree: 91%
@@ -118,7 +118,7 @@ ht-degree: 91%
 
 * **템플릿 설정**
 
-   * **허용된 템플릿** - 이 하위 분기 내에서 [사용할 수 있는 템플릿 목록을 정의](/help/sites-cloud/authoring/sites-console/templates.md#enabling-and-allowing-a-template-template-author)합니다.
+   * **허용된 템플릿** - 이 하위 분기 내에서 [사용할 수 있는 템플릿 목록을 정의](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author)합니다.
 
 * **인증 요구 사항**
 

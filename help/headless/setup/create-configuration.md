@@ -4,7 +4,7 @@ description: AEM as a Cloud Service에서 Headless를 시작하기 위한 첫 �
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 92%
@@ -21,7 +21,7 @@ AEM as a Cloud Service에서 Headless를 시작하는 첫 번째 단계로 구�
 
 AEM에서 Headless 콘텐츠 관리의 맥락에서 구성을 미래 콘텐츠 및 콘텐츠 조각의 구조를 정의하는 콘텐츠 모델을 만들 수 있는 AEM 내 작업 영역으로 생각하십시오. 이러한 모델들을 분리하기 위해 구성을 여러 개 가질 수 있습니다.
 
-[전체 스택 AEM 구현의 페이지 템플릿](/help/sites-cloud/authoring/sites-console/templates.md)에 익숙하다면 콘텐츠 모델 관리를 위한 구성 사용법도 유사합니다.
+[전체 스택 AEM 구현의 페이지 템플릿](/help/sites-cloud/authoring/page-editor/templates.md)에 익숙하다면 콘텐츠 모델 관리를 위한 구성 사용법도 유사합니다.
 
 ## 구성을 만드는 방법 {#how-to-create-a-configuration}
 

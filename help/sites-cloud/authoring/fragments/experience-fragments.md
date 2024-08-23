@@ -5,7 +5,7 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '2099'
 ht-degree: 93%
@@ -95,7 +95,7 @@ Adobe Experience Manager as a Cloud Service 내 경험 조각은
 
   >[!NOTE]
   >
-  >[템플릿 편집기](/help/sites-cloud/authoring/sites-console/templates.md)를 사용하여 나만의 템플릿을 생성할 수 있습니다.
+  >[템플릿 편집기](/help/sites-cloud/authoring/page-editor/templates.md)를 사용하여 나만의 템플릿을 생성할 수 있습니다.
 
 WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화합니다. 사용된 구조는 다중 사이트 관리(언어 사본 포함)와 같은 다른 기능을 사용할 방법도 보여 줍니다.
 

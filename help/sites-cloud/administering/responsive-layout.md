@@ -5,7 +5,7 @@ exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 3%
@@ -223,9 +223,9 @@ AEM에서는 LESS를 사용하여 필요한 CSS의 일부를 생성하지만 이
 
 작성자가 컨텐츠 페이지에 응답형 그리드를 더 추가할 수 있도록 하려면 페이지에 대해 레이아웃 컨테이너 구성 요소를 활성화해야 합니다. 다음 중 하나를 사용하여 이 작업을 수행할 수 있습니다.
 
-* **작성자 환경을 통해** - [페이지 템플릿을 편집](/help/sites-cloud/authoring/sites-console/templates.md)하여 페이지에 대한 레이아웃 컨테이너를 사용하도록 설정합니다.
+* **작성자 환경을 통해** - [페이지 템플릿을 편집](/help/sites-cloud/authoring/page-editor/templates.md)하여 페이지에 대한 레이아웃 컨테이너를 사용하도록 설정합니다.
 * **구성 요소 정의** - 구성 요소를 정의할 때 `allowedComponent` 또는 정적 포함을 사용합니다.
 
 ### 레이아웃 컨테이너의 그리드 구성 {#configure-the-grid-of-the-layout-container}
 
-페이지 템플릿을 편집하여 레이아웃 컨테이너 [의 각 특정 인스턴스에 사용할 수 있는 열 수를 구성할 수 있습니다.](/help/sites-cloud/authoring/sites-console/templates.md)
+페이지 템플릿을 편집하여 레이아웃 컨테이너 [의 각 특정 인스턴스에 사용할 수 있는 열 수를 구성할 수 있습니다.](/help/sites-cloud/authoring/page-editor/templates.md)
