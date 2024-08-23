@@ -4,7 +4,7 @@ description: AEM Assets 보기에서 에셋을 검색하고 검색하는 방법�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: f30d9d43de926e3d0d62dba351c75a0c9641c53e
+source-git-commit: de5aaead0955f997cf5304c3cd1d540b2eded16b
 workflow-type: tm+mt
 source-wordcount: '2002'
 ht-degree: 76%
@@ -149,7 +149,7 @@ Assets 보기는 다음과 같은 사용자 정의 필터를 제공합니다.
 
    * **다른 이름으로 저장** 필드에 파일 이름을 입력합니다.
    * 대상 폴더를 선택합니다.
-   * 프로젝트 또는 캠페인 이름, 키워드, 채널, 시간대 및 지역 등 세부 정보를 제공합니다.
+   * 프로젝트 또는 캠페인 이름, 키워드, 채널, 시간대 및 지역 등 세부 정보를 입력합니다.
 
    ![Firefly 통합](assets/save-generated-asset.png)
 
