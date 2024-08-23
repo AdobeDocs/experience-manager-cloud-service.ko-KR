@@ -1,12 +1,11 @@
 ---
-title: AEM Forms as a Cloud Service용 Edge Delivery Services에 대한 실시간 사용자 모니터링(RUM)
+title: AEM Forms as a Cloud Service용 Edge Delivery Services에 대한 실제 사용자 모니터링(RUM)
 description: AEM Forms as a Cloud Service용 Edge Delivery Services에 대한 실시간 사용자 모니터링(RUM)에는 양식과의 사용자 상호 작용을 지속적으로 추적하여 분석하는 작업이 포함됩니다.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: b078edeb9da059d3c39ac33ece5ce17b60793a24
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 100%
