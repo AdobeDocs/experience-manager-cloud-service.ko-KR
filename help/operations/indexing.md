@@ -4,10 +4,10 @@ description: AEM as a Cloud Service의 콘텐츠 검색 및 색인화에 대해 
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: 65e67225a6a91d871218c12c4696dd281787cd58
+source-git-commit: 4de04b0a2c74406544757f9a92c061abfde5b615
 workflow-type: tm+mt
-source-wordcount: '2449'
-ht-degree: 29%
+source-wordcount: '2531'
+ht-degree: 25%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 29%
 
 ## AEM as a Cloud Service의 변경 내용 {#changes-in-aem-as-a-cloud-service}
 
-AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 Cloud Manager의 CI/CD 파이프라인 기반 n-x AEM 컨테이너를 사용하는 서비스 중심 보기로 이전하는 중입니다. 단일 AEM 인스턴스의 색인을 구성 및 유지하는 대신 배포 전 색인 구성을 지정해야 합니다. 프로덕션의 구성을 변경하면 CI/CD 정책을 위반하게 됩니다. 프로덕션으로 가져오기 전에 지정, 테스트 및 색인 재지정을 하지 않은 경우 시스템 안정성과 성능에 영향을 줄 수 있기 때문에 색인 변경에도 똑같이 적용됩니다.
+AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 Cloud Manager의 CI/CD 파이프라인 기반 n-x AEM 컨테이너를 사용하는 서비스 중심 보기로 이전하는 중입니다. 단일 AEM 인스턴스의 색인을 구성 및 유지하는 대신 배포 전 색인 구성을 지정해야 합니다. 프로덕션의 구성을 변경하면 CI/CD 정책을 위반하게 됩니다. 프로덕션으로 가져오기 전에 지정, 테스트 및 색인 재지정을 하지 않을 경우 시스템 안정성과 성능에 영향을 줄 수 있으므로 색인 변경에도 동일하게 적용됩니다.
 
 다음은 AEM 6.5 및 이전 버전과 비교한 주요 변경 사항 목록입니다.
 
@@ -212,7 +212,7 @@ Jackrabbit `filevault-package-maven-plugin`의 버전 >= `1.3.2`을(를) 사용�
    </plugin>
    ```
 
-3. `ui.apps/pom.xml` 및 `ui.apps.structure/pom.xml`에서 `filevault-package-maven-plugin`의 `allowIndexDefinitions` 및 `noIntermediateSaves` 옵션을 활성화해야 합니다. `allowIndexDefinitions`을(를) 사용하면 사용자 지정 인덱스 정의를 사용할 수 있지만, `noIntermediateSaves`을(를) 사용하면 구성이 올바르게 추가됩니다.
+3. `ui.apps/pom.xml` 및 `ui.apps.structure/pom.xml`에서는 `filevault-package-maven-plugin`에서 `allowIndexDefinitions` 및 `noIntermediateSaves` 옵션을 활성화해야 합니다. `allowIndexDefinitions`을(를) 사용하면 사용자 지정 인덱스 정의를 사용할 수 있지만, `noIntermediateSaves`을(를) 사용하면 구성이 올바르게 추가됩니다.
 
    파일 이름: `ui.apps/pom.xml` 및 `ui.apps.structure/pom.xml`
 
@@ -308,11 +308,22 @@ Adobe이 &quot;damAssetLucene&quot; 또는 &quot;cqPageLucene&quot; 같은 기�
 | /oak:index/cqPageLucene | 예 | 예 | 아니요 |
 | /oak:index/cqPageLucene-2 | 예 | 아니요 | 예 |
 
+환경은 서로 다른 AEM 버전에 있을 수 있습니다. 예를 들어 `dev`에 필요한 테스트를 수행한 후 스테이징 및 프로덕션이 아직 릴리스 `X`에 있고 릴리스 `X+1`(으)로 업그레이드되기를 기다리는 동안 `dev` 환경이 릴리스 `X+1`에 있습니다. 릴리스 `X+1`이(가) 사용자 지정된 새 버전의 제품 색인과 함께 제공되고 해당 색인의 새 사용자 지정이 필요한 경우 다음 표에서 AEM 릴리스를 기반으로 환경에 설정해야 하는 버전을 설명합니다.
+
+| 환경(AEM 릴리스 버전) | 제품 색인 버전 | 기존 사용자 지정 인덱스 버전 | 새 사용자 정의 인덱스 버전 |
+|-----------------------------------|-----------------------|-------------------------------|----------------------------|
+| 개발(X+1) | damAssetLucene-11 | damAssetLucene-11-custom-1 | damAssetLucene-11-custom-2 |
+| 단계(X) | damAssetLucene-10 | damAssetLucene-10-custom-1 | damAssetLucene-10-custom-2 |
+| 프로덕션(X) | damAssetLucene-10 | damAssetLucene-10-custom-1 | damAssetLucene-10-custom-2 |
+
+
 ### 현재 제한 사항 {#current-limitations}
 
 색인 관리는 `compatVersion`이(가) `2`(으)로 설정된 `lucene` 유형의 색인에 대해서만 지원됩니다. 내부적으로 다른 색인을 구성하고 쿼리에 사용할 수 있습니다(예: Elasticsearch 색인). `damAssetLucene` 색인에 대해 작성된 쿼리는 AEM as a Cloud Service에서 이 색인의 Elasticsearch 버전에 대해 실행될 수 있습니다. 이 차이는 응용 프로그램 사용자에게는 보이지 않지만 `explain` 기능과 같은 특정 도구에서는 다른 색인을 보고합니다. Lucene 색인과 Elasticsearch 색인의 차이에 대해서는 [Apache Jackrabbit Oak의 Elasticsearch 설명서](https://jackrabbit.apache.org/oak/docs/query/elastic.html)를 참조하십시오. 고객은 Elasticsearch 색인을 직접 구성할 수 없으며 구성할 필요가 없습니다.
 
 기본 제공 분석기 (즉, 제품과 함께 제공되는 분석기)만 지원됩니다. 사용자 정의 분석기는 지원되지 않습니다.
+
+현재 `/oak:index`의 콘텐츠 인덱싱은 지원되지 않습니다.
 
 최상의 운영 성능을 위해서는 인덱스가 너무 커서는 안 됩니다. 모든 인덱스의 총 크기를 안내서로 사용할 수 있습니다. 사용자 정의 색인이 추가된 후 이 크기가 100% 이상 증가하고 개발 환경에서 표준 색인을 조정한 경우 사용자 정의 색인 정의를 조정해야 합니다. AEM as a Cloud Service은 시스템 안정성과 성능에 부정적인 영향을 주는 인덱스 배포를 방지할 수 있습니다.
 
@@ -350,30 +361,7 @@ Adobe이 &quot;damAssetLucene&quot; 또는 &quot;cqPageLucene&quot; 같은 기�
 
 다음은 사용자 정의에만 적용됩니다. 제품 색인은 AEM에서 사용되고 있어 삭제되지 않을 수 있습니다.
 
-애플리케이션의 최신 버전에서 색인이 제거되면 새 이름의 빈 색인(사용되지 않으며 데이터를 포함하지 않는 빈 색인)을 정의할 수 있습니다. 이 예제에서는 이름을 `/oak:index/acme.product-custom-3`로 지정할 수 있습니다. 이 이름은 인덱스 `/oak:index/acme.product-custom-2`을(를) 대체합니다. 시스템에서 `/oak:index/acme.product-custom-2`을(를) 제거하면 빈 색인 `/oak:index/acme.product-custom-3`을(를) 제거할 수 있습니다. 이 같은 빈 색인의 예는 다음과 같습니다.
-
-```xml
-<acme.product-custom-3
-        jcr:primaryType="oak:QueryIndexDefinition"
-        async="async"
-        compatVersion="2"
-        includedPaths="/dummy"
-        queryPaths="/dummy"
-        type="lucene">
-        <indexRules jcr:primaryType="nt:unstructured">
-            <rep:root jcr:primaryType="nt:unstructured">
-                <properties jcr:primaryType="nt:unstructured">
-                    <dummy
-                        jcr:primaryType="nt:unstructured"
-                        name="dummy"
-                        propertyIndex="{Boolean}true"/>
-                </properties>
-            </rep:root>
-        </indexRules>
-</acme.product-custom-3>
-```
-
-기본 제공 색인의 맞춤화가 더 이상 필요하지 않은 경우 기본 제공 색인 정의를 복사해야 합니다. 예를 들어 이미 `damAssetLucene-8-custom-3`을 배포했지만 더 이상 맞춤화가 필요하지 않고 기본 `damAssetLucene-8` 색인으로 다시 바꾸고 싶다면 `damAssetLucene-8`의 색인 정의가 포함된 색인 `damAssetLucene-8-custom-4`를 추가해야 합니다.
+맞춤화된 색인은 고객 저장소에서 제거하여 최신 버전의 고객 애플리케이션에서 제거할 수 있습니다. 저장소에서 제거된 색인은 AEM의 쿼리에 사용되지 않지만 잠시 동안 인스턴스에 있을 수 있습니다. 정기적으로 실행되는 정리 메커니즘이 있으며 이 메커니즘은 인스턴스에서 이전 버전의 인덱스를 정리합니다.
 
 ## 색인 및 쿼리 최적화 {#index-query-optimizations}
 
