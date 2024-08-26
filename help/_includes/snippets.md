@@ -1,8 +1,8 @@
 ---
-source-git-commit: 90bc7320899053b6b1d6cf0d1b06b193ad1c68f3
+source-git-commit: 8728af7d9baee0c9324c1e9be1ae66d105396c40
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 78%
+source-wordcount: '711'
+ht-degree: 75%
 
 ---
 # 스니펫 {#snippets}
@@ -18,9 +18,9 @@ ht-degree: 78%
 ## 추가 참조 {#see-also}
 
 * [AEM 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md)
-* [AEM 적응형 양식을 AEM Sites 페이지에 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [AEM Sites 페이지에 AEM 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [AEM 적응형 양식에 테마 적용](/help/forms/using-themes-in-core-components.md)
-* [AEM 적응형 양식에 구성 요소 추가](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#components)
+* [AEM 적응형 양식에 구성 요소 추가](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
 * [AEM 적응형 양식에서 CAPTCHA 사용](/help/forms/captcha-adaptive-forms-core-components.md)
 * [AEM 적응형 양식의 PDF 버전(DoR) 생성](/help/forms/generate-document-of-record-core-components.md)
 * [AEM 적응형 양식 번역](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
@@ -32,7 +32,7 @@ ht-degree: 78%
 * [Salesforce에 적응형 양식 연결](/help/forms/aem-forms-salesforce-integration.md)
 * [AEM 적응형 양식에서 Adobe Sign 사용](/help/forms/working-with-adobe-sign.md)
 * [적응형 양식에 대해 새 로케일 추가](/help/forms/supporting-new-language-localization-core-components.md)
-* [적응형 양식 데이터를 데이터베이스로 보내기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html)
+* [적응형 양식 데이터를 데이터베이스로 보내기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
 * [적응형 양식 데이터를 REST 엔드포인트로 보내기](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [적응형 양식 데이터를 AEM 워크플로로 보내기](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [Forms 포털을 사용하여 AEM 웹 사이트에 AEM 적응형 양식 나열](/help/forms/configure-forms-portal.md)
@@ -66,7 +66,7 @@ ht-degree: 78%
 * [적응형 양식 블록 구성 요소 및 해당 속성](/help/edge/docs/forms/form-components.md)
 
 
-## 핵심 구성 요소의 규칙 편집기와 기초 구성 요소의 규칙 편집기 간 차이점  {#rule-editor-diff}
+## 핵심 구성 요소의 규칙 편집기와 기초 구성 요소의 규칙 편집기 간의 차이점 {#rule-editor-diff}
 
 다음 표에서는 규칙 편집기의 핵심 구성 요소와 규칙 편집기의 기본 구성 요소에서 사용할 수 있는 기능 간의 차이점을 보여 줍니다.
 
@@ -79,23 +79,23 @@ ht-degree: 78%
     </tr>
   </tr>
   <tr>
-    <td>드롭다운 목록 옵션 설정 </td>
-    <td>규칙 편집기의 <b>옵션 설정 </b> 속성을 사용하여 드롭다운 목록 옵션을 설정합니다.</td>
+    <td>옵션 드롭다운 목록 설정 </td>
+    <td>옵션 드롭다운 목록은 규칙 편집기의 <b>옵션 설정 </b> 속성을 사용하여 설정됩니다.</td>
     <td>드롭다운 옵션은 사용자 정의 함수를 사용하여 설정됩니다. 
    </td>
    </tr>
      </tr>
    <tr>
     <td>반복 가능한 패널 필드에서 수학 연산 수행 </td>
-    <td>OOTB 수학 함수를 반복 가능한 패널 필드에 적용하면 규칙 편집기를 사용하여 합계, 평균과 같은 함수를 수행할 수 있습니다. 두 개의 인수를 제공해야 합니다. 첫 번째 인수는 필드가 포함된 반복 가능한 패널을 지정하고, 두 번째 인수는 해당 반복 가능한 패널 내의 필드를 지정합니다. </td>
-    <td>반복 가능한 패널 필드에 대한 수학 연산은 사용자 정의 함수를 사용하여 수행할 수 있습니다. 규칙 편집기를 사용하여 반복 가능한 패널의 필드에 직접 수학 함수를 적용할 수도 있습니다.
+    <td>OOTB 수학 함수는 규칙 편집기를 사용하여 합계, 평균과 같은 함수를 수행하기 위해 반복 가능한 패널 필드에 적용할 수 있습니다. 두 개의 인수를 제공해야 합니다. 첫 번째 인수는 필드가 포함된 반복 가능한 패널을 지정하고, 두 번째 인수는 해당 반복 가능한 패널 내의 필드를 지정합니다. </td>
+    <td>반복 가능한 패널 필드에 대한 수학 연산은 사용자 정의 함수를 사용하여 수행할 수 있습니다. 규칙 편집기에서 반복 가능 패널의 필드에 수학 함수를 직접 적용할 수도 있습니다.
    </td>
    </tr>
       <tr>
-    <td>'Then'에서 필드/패널/양식 규칙의 유효성 검사/재설정 </td>
-    <td>유효성 검사 및 재설정 함수는 규칙 편집기의 양식 오브젝트만 지원합니다. 
+    <td>“Then”에서 필드/패널/양식 규칙 유효성 검사/재설정 </td>
+    <td>유효성 검사 및 재설정 기능은 규칙 편집기의 양식 객체만 지원합니다. 
    </td>
-    <td>유효성 검사 및 재설정 함수는 규칙 편집기의 양식/패널/필드 오브젝트를 지원합니다. 
+    <td>유효성 검사 및 재설정 기능은 규칙 편집기에서 양식/패널/필드 개체를 지원합니다. 
    </td>
    </tr>
    <tr>
@@ -126,17 +126,12 @@ ht-degree: 78%
 * [다양한 규칙 편집기 에디션의 차이점](/help/forms/rule-editor-core-components-difference-tables.md)
 * [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 소개](/help/forms/create-and-use-custom-functions.md)
 * [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 만들기](/help/forms/custom-function-core-component-create-function.md)
-* [사용자 정의 함수 개발 및 사용의 예](/help/forms/custom-function-core-components-use-cases.md)
+* [사용자 지정 함수 개발 및 사용의 예](/help/forms/custom-function-core-components-use-cases.md)
 
 
-## Cloud Manager IP 허용 목록 및 프론트엔드 파이프라인 {#allowlist-frontend-pipeline}
+## Cloud Manager IP 허용 목록 및 프론트엔드 파이프라인 추가 {#add-cm-allowlist-frontend-pipeline}
 
 >[!IMPORTANT]
 >
->프론트엔드 파이프라인을 사용하려면 먼저 다음 IP 허용 목록을 Cloud Manager에 추가해야 합니다.
->필요한 경우 아래 주소 블록을 복사하여 [IP 허용 목록을 추가](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)하십시오. 각 주소는 쉼표로 구분됩니다. **IP 허용 목록 추가** 대화 상자의 **IP 주소/CIDR** 필드에 블록을 붙여 넣습니다. 주소 목록에서 첫 번째 쉼표 바로 뒤에 커서를 놓고 **Enter**를 누릅니다. 목록을 저장합니다.
->프론트엔드 파이프라인 실행이 중단되지 않도록 이 IP 허용 목록이 Cloud Manager *before*&#x200B;에 추가되어 있는지 확인하려면 파이프라인을 활성화하십시오.
->
->**Cloud Manager IP 허용 목록**
->52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
->   
+>프론트엔드 파이프라인을 사용하여 사이트를 개발하려는 경우, 먼저 Cloud Manager IP 허용 목록을 추가해야 합니다.
+>[프론트엔드 파이프라인과 함께 Cloud Manager IP 허용 목록 사용](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)을 참조하세요.

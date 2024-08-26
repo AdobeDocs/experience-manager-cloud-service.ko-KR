@@ -5,7 +5,7 @@ exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f4c6331491bb08e81964476ad58065c1ee022967
+source-git-commit: 1415d07235641262814e81362c806572bcf582ba
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 18%
@@ -16,6 +16,8 @@ ht-degree: 18%
 # IP 허용 목록 적용 및 적용 취소 {#apply-allow-list}
 
 IP 허용 목록을 적용할 때 목록의 정의에 포함된 모든 IP 범위는 환경 내의 작성자 또는 게시 서비스와 연결됩니다. 목록 적용을 취소하는 것은 이 프로세스의 반대입니다.
+
+{{add-cm-allowlist-frontend-pipeline}}
 
 ## IP 허용 목록 적용 {#applying}
 

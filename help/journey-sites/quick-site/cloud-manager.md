@@ -5,7 +5,7 @@ exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 1415d07235641262814e81362c806572bcf582ba
 workflow-type: tm+mt
 source-wordcount: '1113'
 ht-degree: 100%
@@ -112,6 +112,8 @@ Cloud Manager에 대한 경험이 광범위하지 않더라도 전반적인 흐�
 ![빠른 사이트 생성 흐름](assets/qsc-flow.png)
 
 빠른 사이트 생성 도구를 사용할 때의 주요 장점은 순수 프론트엔드 개발자만 실제 맞춤화를 담당한다는 것입니다. 프론트엔드 개발자는 AEM과 상호 작용하지 않거나 AEM에 대한 지식이 필요하지 않습니다.
+
+{{add-cm-allowlist-frontend-pipeline}}
 
 ## 다음 단계 {#what-is-next}
 
