@@ -7,7 +7,7 @@ feature: Asset Management, Publishing, Collaboration, Asset Processing
 source-git-commit: de5aaead0955f997cf5304c3cd1d540b2eded16b
 workflow-type: tm+mt
 source-wordcount: '2002'
-ht-degree: 76%
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 76%
 >abstract="검색창에서 키워드를 지정하거나 상태, 파일 유형, MIME 유형, 크기, 생성, 수정 및 만료 일자를 기준으로 필터링하여 자산을 검색하십시오. 표준 필터 외에도 사용자 정의 필터를 적용할 수 있습니다. 필터링된 결과를 “저장된 검색” 또는 “스마트 컬렉션”으로 저장할 수 있습니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-collections.html?lang=ko-KR#manage-smart-collection" text="스마트 컬렉션 만들기"
 
-[!DNL Assets view]은(는) 기본적으로 작동하는 효과적인 검색을 제공합니다. 전체 텍스트 검색이므로 포괄적입니다. 강력한 검색 기능을 통해 적절한 자산을 빠르게 찾고 콘텐츠 속도를 높일 수 있습니다. [!DNL Assets view]는 스마트 태그, 제목, 생성 날짜 및 저작권과 같은 메타데이터를 통해 전체 텍스트 검색 및 다중 검색 기능을 제공합니다.
+[!DNL Assets view]는 기본적으로 작동하는 효과적인 검색 기능을 제공합니다. 검색 기능은 전체 텍스트 검색이므로 포괄적입니다. 강력한 검색 기능을 통해 적절한 자산을 빠르게 찾고 콘텐츠 속도를 높일 수 있습니다. [!DNL Assets view]는 스마트 태그, 제목, 생성 날짜 및 저작권과 같은 메타데이터를 통해 전체 텍스트 검색 및 다중 검색 기능을 제공합니다.
 
 자산을 검색하려면
 
@@ -135,17 +135,17 @@ Assets 보기는 다음과 같은 사용자 정의 필터를 제공합니다.
 
 1. [!DNL AEM Assets] 작업 영역으로 이동합니다.
 
-1. 검색 창에 자산 이름을 입력합니다. 예를 들어 키워드 `Bugatti Type 57`을(를) 사용하여 자산을 검색할 수 있습니다. 에셋을 검색할 때 에셋이 에셋 폴더에 없기 때문에 결과를 찾을 수 없습니다. AI를 사용하여 에셋을 생성하려면 **[!UICONTROL Firefly으로 생성]**&#x200B;을 클릭하세요. [!DNL Adobe Firefly] 화면이 나타납니다.
+1. 검색 창에 자산 이름을 입력합니다. 예를 들어 `Bugatti Type 57` 키워드를 사용하여 자산을 검색할 수 있습니다. 자산을 검색할 때 자산이 자산 폴더에 없기 때문에 결과를 찾을 수 없습니다. AI를 사용하여 자산을 생성하려면 **[!UICONTROL Firefly로 생성]**&#x200B;을 클릭합니다. [!DNL Adobe Firefly] 화면이 나타납니다.
 
    ![Firefly 통합](assets/firefly-integration.png)
 
-   새 자산이 정상적으로 생성되었습니다. 설명 상자에 새 텍스트 프롬프트를 입력하여 이미지 설명을 변경할 수도 있습니다. [AI 프롬프트를 작성하여 특별하고 적절한 콘텐츠를 생성하는 방법을 알아봅니다.](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html) 또는 스타일, 이미지 크기 변경 등 다양한 기능을 사용하여 [이미지를 편집할 수 있습니다.](https://helpx.adobe.com/in/firefly/using/text-to-image.html)
+   새 자산이 정상적으로 생성되었습니다. 또한 설명 상자에 새 텍스트 프롬프트를 입력하여 이미지 설명을 변경할 수도 있습니다. [뛰어나고 관련성 높은 콘텐츠를 생성하는 효율적인 AI 프롬프트를 작성하는 방법을 알아보십시오.](https://helpx.adobe.com/kr/firefly/using/tips-and-tricks.html) 또는 [스타일 변경, 이미지 차원 등 다양한 다른 기능으로 이미지를 편집](https://helpx.adobe.com/kr/firefly/using/text-to-image.html)할 수 있습니다.
 
    ![Firefly 통합](assets/bugatti-type-57.png)
 
-1. 저장할 이미지를 선택합니다. 쉽게 액세스할 수 있도록 기본 폴더에 자산을 저장하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
+1. 저장하려는 이미지를 선택합니다. **[!UICONTROL 저장]**&#x200B;을 클릭하여 원하는 폴더에 자산을 저장한 다음 간편하게 액세스하도록 합니다.
 
-1. 에셋 저장 양식이 나타납니다. 다음 필드를 지정합니다.
+1. 자산 저장 양식이 나타납니다. 다음 필드를 지정합니다.
 
    * **다른 이름으로 저장** 필드에 파일 이름을 입력합니다.
    * 대상 폴더를 선택합니다.
@@ -153,7 +153,7 @@ Assets 보기는 다음과 같은 사용자 정의 필터를 제공합니다.
 
    ![Firefly 통합](assets/save-generated-asset.png)
 
-1. 자산을 저장하려면 **새 자산으로 저장**&#x200B;을 클릭하세요.
+1. **새 자산으로 저장**&#x200B;을 클릭하여 자산을 저장합니다.
 
 ### 자산 업로드 {#upload-assets-firefly}
 
@@ -165,7 +165,7 @@ Assets 보기는 다음과 같은 사용자 정의 필터를 제공합니다.
 
 ## 저장된 검색 {#saved-search}
 
-검색 기능은 [!DNL Assets view]에서 사용하기 매우 간단합니다. 검색 상자 내에서 키워드를 입력하고 Return 키를 눌러 결과를 볼 수 있을 뿐만 아니라 한 번의 클릭으로 최근에 검색한 키워드를 빠르게 다시 검색할 수도 있습니다.
+검색 기능은 [!DNL Assets view]에서 사용하기 매우 간단합니다. 검색 상자 내에서 키워드를 입력하고 Return 키를 눌러 결과를 볼 수 있을 뿐만 아니라, 한 번의 클릭으로 최근 검색한 키워드를 빠르게 다시 검색할 수 있습니다.
 
 메타데이터 및 자산 유형에 대한 특정 기준에 따라 검색 결과를 필터링할 수도 있습니다. 자주 사용하는 필터의 경우 검색 경험을 개선하기 위해 [!DNL Assets view]을 사용하여 검색 매개변수를 저장할 수 있습니다. 그런 다음 저장된 검색을 선택하여 한 번의 클릭으로 필터를 검색하고 적용할 수 있습니다.
 
@@ -188,7 +188,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 검색 결과에 표시되는 자산을 선택하고 다음 작업을 수행할 수 있습니다.
 
-* **유사한 이미지 찾기**: 메타데이터 및 스마트 태그를 기반으로 Assets UI에서 유사한 이미지 에셋을 찾습니다.
+* **유사 이미지 찾기**: 메타데이터 및 스마트 태그를 기반으로 Assets UI에서 유사한 이미지 자산을 찾습니다.
 
 * **세부 정보**: 자산 속성을 보고 편집합니다.
 
@@ -225,20 +225,20 @@ Assets 보기를 사용하면 조직의 기본 랜딩 페이지를 선택할 수
 검색 우선 홈 페이지를 구성하려면 아래 단계를 실행하십시오.
 
 1. **[!UICONTROL 설정]** > **[!UICONTROL 일반 설정]**&#x200B;으로 이동합니다.
-1. **[!UICONTROL 검색 우선]**&#x200B;을 선택합니다. 검색 첫 번째 관련 구성이 더 열립니다. 홈 페이지의 [정렬](#setting-alignment-search-bar)을 설정하거나 [배경 및 로고 이미지를 설정](#setting-background-image-and-logo)할 수 있습니다.
+1. **[!UICONTROL 검색 우선]**&#x200B;을 선택합니다. 검색 우선 관련된 구성이 열립니다. 홈 페이지의 [정렬](#setting-alignment-search-bar) 또는 [배경 및 로고 이미지 설정](#setting-background-image-and-logo)을 설정할 수 있습니다.
 
 ### 검색 창 정렬 설정 {#setting-alignment-search-bar}
 
-[!DNL Assets view]을(를) 사용하면 검색 창 정렬을 변경할 수 있습니다. 검색 막대를 중앙이나 맨 위에 표시할 수 있습니다. 적절한 정렬을 선택하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+[!DNL Assets view]를 사용하면 검색 창 정렬을 변경할 수 있습니다. 검색 창을 중앙이나 상단에 표시할 수 있습니다. 적절한 정렬을 선택하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 ![검색 우선 홈 페이지 정렬](assets/search-first-alignment.png)
 
 ### 홈 페이지 배경 및 로고 이미지 설정 {#setting-background-image-and-logo}
 
-검색 첫 번째 홈페이지에 브랜드 로고와 배경 이미지를 추가할 수 있습니다. 다음 단계를 실행합니다.
+검색 우선 홈 페이지에 브랜드 로고와 배경 이미지를 추가할 수 있습니다. 다음 단계를 실행합니다.
 
-1. **[!UICONTROL 홈 페이지]**&#x200B;의 **[!UICONTROL 배경 및 로고 이미지]** 섹션으로 이동합니다.
-1. 기존 에셋 저장소에서 이미지를 찾아보려면 **[!UICONTROL 바꾸기]**&#x200B;를 클릭하십시오.
+1. **[!UICONTROL 홈 페이지]** 아래의 **[!UICONTROL 배경 및 로고 이미지]** 섹션으로 이동합니다.
+1. 기존의 자산 저장소에서 이미지를 찾아보려면 **[!UICONTROL 바꾸기]**&#x200B;를 클릭합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 수정 사항을 검토하려면 변경 사항을 [미리 봅니다](#preview-configured-homepage).
 
 ### 구성된 홈 페이지 미리보기 {#preview-configured-homepage}
@@ -246,7 +246,7 @@ Assets 보기를 사용하면 조직의 기본 랜딩 페이지를 선택할 수
 검색 우선 홈 페이지의 레이아웃과 서식을 미리보기로 확인할 수 있습니다. **[!UICONTROL 미리보기]**&#x200B;를 사용하면 레이아웃을 수정하거나 요구 사항에 따라 수정할 수 있습니다. 구성된 홈 페이지를 미리 보려면 아래 단계를 수행하십시오.
 
 1. **[!UICONTROL 일반 설정]**&#x200B;을 클릭하고 **[!UICONTROL 검색 우선]**&#x200B;을 선택합니다.
-1. **[!UICONTROL 검색 우선 홈 페이지 사용자 정의]**&#x200B;로 이동하고 **[!UICONTROL 미리보기]**&#x200B;를 클릭합니다. **[!UICONTROL 어두운 테마]** 단추를 전환하여 어두운 테마 또는 밝은 테마로 홈 페이지를 미리 봅니다.
+1. **[!UICONTROL 검색 우선 홈 페이지 사용자 정의]**&#x200B;로 이동하고 **[!UICONTROL 미리보기]**&#x200B;를 클릭합니다. 홈 페이지를 어둡거나 밝은 테마로 미리 보려면 **[!UICONTROL 어두운 테마]** 버튼을 토글합니다.
 1. 미리보기 화면을 닫으려면 **[!UICONTROL 닫기]**&#x200B;를 클릭합니다.
 
    ![검색 우선 홈 페이지 미리보기](/help/assets/assets/search-first-preview.gif)
@@ -311,7 +311,7 @@ Experience Manager Assets에서 상황별 검색에 액세스하는 방법:
 
 **예 3**
 
-**텍스트 프롬프트**: 1500픽셀 및 2500픽셀 높이의 파란색 하늘 이미지가 필요하며 만료되지 않고 승인되지 않은 지난 달에 생성되었습니다.
+**텍스트 프롬프트**: 높이가 1500 및 2500픽셀이고 지난 달에 생성되었으며 만료 및 승인되지 않은 푸른 하늘 이미지가 필요합니다.
 
 [!DNL Experience Manager Assets]는 다음 필터를 자동으로 적용하고 검색 결과를 표시합니다.
 
