@@ -1,5 +1,5 @@
 ---
-source-git-commit: 8728af7d9baee0c9324c1e9be1ae66d105396c40
+source-git-commit: 7a1181a372928602b8fd0eb4699789217473a94c
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 75%
@@ -133,5 +133,5 @@ ht-degree: 75%
 
 >[!IMPORTANT]
 >
->프론트엔드 파이프라인을 사용하여 사이트를 개발하려는 경우, 먼저 Cloud Manager IP 허용 목록을 추가해야 합니다.
+>프론트엔드 파이프라인을 사용하여 사이트를 개발하는 경우 먼저 Cloud Manager IP 허용 목록을 추가해야 합니다.
 >[프론트엔드 파이프라인과 함께 Cloud Manager IP 허용 목록 사용](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)을 참조하세요.
