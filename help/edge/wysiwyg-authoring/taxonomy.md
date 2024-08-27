@@ -1,16 +1,17 @@
 ---
-title: 분류 데이터 관리
+title: 분류 체계 데이터 관리
 description: Edge Delivery Services 사이트를 통해 AEM과 함께 태그를 사용하기 위한 분류 데이터를 관리하는 방법에 대해 알아봅니다.
+feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: f6716611efa3de845ead15048eab89243bdedcc1
+source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
 workflow-type: tm+mt
 source-wordcount: '829'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
 
-# 분류 데이터 관리 {#managing-taxonomy-data}
+# 분류 체계 데이터 관리 {#managing-taxonomy-data}
 
 Edge Delivery Services 사이트를 통해 AEM과 함께 태그를 사용하기 위한 분류 데이터를 관리하는 방법에 대해 알아봅니다.
 

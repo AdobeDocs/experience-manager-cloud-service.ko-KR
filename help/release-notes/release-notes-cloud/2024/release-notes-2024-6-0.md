@@ -1,10 +1,12 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2024.6.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2024.6.0 릴리스 정보입니다.'
-source-git-commit: effb2f01dc26a7ab80b18c9e80ecc7286cb67284
+feature: Release Information
+role: Admin
+source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
 workflow-type: tm+mt
 source-wordcount: '1972'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -190,7 +192,7 @@ Sling 리소스 누락이 감지되면 액션 센터를 통해 사전 알림을 
 
 ### 콘텐츠 게재 관련 얼리 어답터 프로그램 {#foundation-early-adopter}
 
-아래의 얼리 어답터 프로그램 중 관심 있는 프로그램을 이 이메일 주소(**<aemcs-cdn-config-adopter@adobe.com>**)로 알려주십시오.
+아래의 얼리 어답터 프로그램 중 관심 있는 프로그램을 이 이메일 주소(**<aemcs-cdn-config-adopter@adobe.com>**)로 알려 주십시오.
 
 #### 콘텐츠 전송 네트워크의 기본 인증(얼리 어답터 프로그램) {#basicauth-cdn}
 

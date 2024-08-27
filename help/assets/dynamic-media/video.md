@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: f41e2f6ce39fff9615e35928d3f569e9254325d0
+source-git-commit: e3667a6172447072d7c528213826fd0171e9acc2
 workflow-type: tm+mt
 source-wordcount: '9406'
 ht-degree: 2%
@@ -143,7 +143,7 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that sup
 * 브랜딩 요구 사항을 충족하도록 비디오 플레이어를 구성합니다.
 * 간단한 URL 또는 포함 코드를 사용하여 비디오를 웹 사이트, 모바일 사이트 또는 모바일 애플리케이션에 통합합니다.
 
-[동적 비디오 재생](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) 샘플을 참조하십시오.
+<!-- GIVES a 404 See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
 [Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources)에서 [Experience Manager Assets 및 Dynamic Media Classic용 뷰어](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) 및 [Experience Manager Assets 전용 뷰어](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)도 참조하세요.
 
@@ -562,7 +562,7 @@ Dynamic Media에서 다음에 대한 지원을 활성화할 수 있습니다.
 
 ## Dynamic Media의 비디오에 대한 여러 캡션 및 오디오 트랙 지원 정보{#about-msma}
 
-Dynamic Media의 여러 캡션 및 오디오 트랙 기능을 사용하면 기본 비디오에 여러 캡션 및 오디오 트랙을 쉽게 추가할 수 있습니다. 즉, 이러한 기능을 통해 글로벌 대상자는 비디오에 액세스할 수 있습니다. 여러 언어로 글로벌 대상자에게 게시된 하나의 기본 비디오를 사용자 정의하고 지역별 액세스 가능성 가이드라인을 준수할 수 있습니다. 작성자는 사용자 인터페이스의 단일 탭에서 캡션 및 오디오 트랙을 관리할 수도 있습니다.
+Dynamic Media의 여러 캡션 및 오디오 트랙 기능을 사용하면 기본 비디오에 여러 캡션 및 오디오 트랙을 쉽게 추가할 수 있습니다. 이 기능은 비디오를 전역 대상자가 액세스할 수 있음을 의미합니다. 여러 언어로 글로벌 대상자에게 게시된 하나의 기본 비디오를 사용자 정의하고 지역별 액세스 가능성 가이드라인을 준수할 수 있습니다. 작성자는 사용자 인터페이스의 단일 탭에서 캡션 및 오디오 트랙을 관리할 수도 있습니다.
 
 ![Dynamic Media의 캡션 및 오디오 트랙 탭과 업로드된 .VTT 캡션 파일 및 비디오용 .MP3 오디오 트랙 파일을 보여 주는 표를 함께 제공합니다.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
 
@@ -618,7 +618,7 @@ Dynamic Media에서 지원되는 모든 [비디오 형식](/help/assets/file-for
 1. (선택 사항) 비디오에 캡션 파일을 하나 이상 추가하려면 다음을 수행합니다.
 
    * **[!UICONTROL 캡션 업로드]**&#x200B;를 선택합니다.
-   * 하나 이상의 .vtt (비디오 텍스트 트랙) 파일로 이동하여 선택한 다음 엽니다.
+   * 하나 이상의 `.vtt`(비디오 텍스트 트랙) 파일로 이동하여 선택한 다음 엽니다.
    * 미디어 플레이어에 캡션이 표시되도록 하려면 업로드한 각 캡션 파일에 대한 필수 세부 정보(메타데이터)를 추가해야 합니다. 캡션 파일 이름 오른쪽에 있는 연필 아이콘을 선택합니다. 캡션 편집 대화 상자에서 파일에 대한 다음의 필수 정보를 입력한 다음 **[!UICONTROL 저장]**&#x200B;을 선택합니다. 업로드한 각 캡션 파일에 대해 이 프로세스를 반복합니다.
 
 
@@ -626,7 +626,7 @@ Dynamic Media에서 지원되는 모든 [비디오 형식](/help/assets/file-for
    | --- | --- | 
    | 파일 이름 | 기본 파일 이름은 원래 파일 이름에서 파생됩니다. 파일 이름은 업로드 중에만 변경할 수 있으며 나중에 변경할 수 없습니다. 파일 이름 문자 요구 사항은 AEM Assets의 요구 사항과 동일합니다.<br>추가 캡션 파일 및 오디오 트랙 파일에 같은 파일 이름을 사용할 수 없습니다. |
    | 언어 | 캡션의 언어를 선택합니다. |
-   | 유형 | 사용 중인 캡션 유형을 선택합니다.<br>**자막** - 대화 상자를 변환하거나 기록하는 비디오와 함께 표시되는 캡션 텍스트입니다.<br>**캡션** - 캡션 텍스트에는 대화 상자의 번역 또는 트랜스크립션과 함께 배경 소음, 스피커 분화 및 기타 관련 정보도 포함되어 있으므로 귀가 들리지 않거나 난청인 개인에게 콘텐츠에 더 쉽게 액세스할 수 있습니다. |
+   | 유형 | 사용 중인 캡션 유형을 선택합니다.<br>**자막** - 대화 상자를 변환하거나 기록하는 비디오와 함께 표시되는 캡션 텍스트입니다.<br>**캡션** - 캡션 텍스트에 배경 소음과 스피커 식별이 포함됩니다. 또한 대화 상자의 번역 또는 트랜스크립션과 함께 다른 관련 세부 정보도 포함됩니다. 이 기능을 사용하면 귀가 들리지 않거나 난청인 개인이 콘텐츠에 더 쉽게 액세스할 수 있습니다. |
    | 레이블 | 미디어 플레이어의 **[!UICONTROL 오디오 또는 캡션 선택]** 팝업 목록에서 캡션 이름에 대해 표시되는 텍스트입니다. 레이블은 자막 또는 캡션 트랙에 해당하는 것으로, 고객에게 표시됩니다. 예: 영어(CC) |
 
    필요한 경우 나중에 캡션 메타데이터를 변경하거나 편집할 수 있습니다. 비디오가 게시되면 이러한 세부 사항이 게시된 비디오의 공개 URL에 반영됩니다.
@@ -635,7 +635,7 @@ Dynamic Media에서 지원되는 모든 [비디오 형식](/help/assets/file-for
 
    * **[!UICONTROL 오디오 트랙 업로드]**&#x200B;를 선택합니다.
    * 하나 이상의 .mp3 파일로 이동하여 선택한 다음 엽니다.
-   * 미디어 플레이어의 **[!UICONTROL 오디오 또는 캡션 선택]** 팝업 목록에 오디오 트랙을 표시하려면 추가한 각 오디오 트랙 파일에 대한 필수 세부 정보를 추가해야 합니다. 오디오 트랙 파일 이름 오른쪽에 있는 연필 아이콘을 선택합니다. [오디오 트랙 편집] 대화 상자에서 다음 필수 세부 정보를 입력한 다음 **[!UICONTROL 저장]**&#x200B;을 선택합니다. 업로드한 각 오디오 트랙 파일에 대해 이 프로세스를 반복합니다.
+   * 미디어 플레이어의 **[!UICONTROL 오디오 또는 캡션 선택]** 팝업 목록에 오디오 트랙을 표시하려면 각 오디오 트랙 파일에 필요한 세부 정보를 추가하십시오. 적절한 표시를 위해 필요한 모든 정보를 포함해야 합니다. 오디오 트랙 파일 이름 오른쪽에 있는 연필 아이콘을 선택합니다. [오디오 트랙 편집] 대화 상자에서 다음 필수 세부 정보를 입력한 다음 **[!UICONTROL 저장]**&#x200B;을 선택합니다. 업로드한 각 오디오 트랙 파일에 대해 이 프로세스를 반복합니다.
 
    | 오디오 트랙 메타데이터 | 설명 |
    | --- | --- |
@@ -931,7 +931,7 @@ Dynamic Media에서는 URL 수정자를 통해 비디오가 포함된 단일 캡
 1. 오른쪽 상단 모서리에서 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택합니다.
 1. Publish 비디오입니다. [Publish 자산](publishing-dynamicmedia-assets.md)을 참조하세요.
 
-### 여러 캡션 및 오디오 트랙이 있는 비디오 미리 보기{#preview-video-audio-subtitle}
+### 여러 캡션 및 오디오 트랙이 있는 비디오 미리 보기 {#preview-video-audio-subtitle}
 
 캡션 파일 및 오디오 트랙 파일이 비디오에 업로드되고 처리된 후 Dynamic Media 비디오 뷰어를 사용하여 다른 모든 트랙을 미리 볼 수 있습니다. 이렇게 하면 비디오가 고객에게 어떤 모습과 소리로 들리는지 확인하고 예상대로 작동하는지 확인하는 데 도움이 됩니다.
 
@@ -993,7 +993,7 @@ Dynamic Media에서는 URL 수정자를 통해 비디오가 포함된 단일 캡
 
 **사용 사례:** `.vtt` 파일에서 오류가 발견되면 캡션 파일을 다운로드해야 합니다. 잘못된 `.vtt` 파일을 다운로드하여 일반 텍스트 편집기에서 열고 수정하기만 하면 됩니다. `.vtt` 파일을 저장한 후 다시 업로드하십시오. 그런 다음 **[!UICONTROL 캡션 번역]** 옵션을 사용하여 수정된 `.vtt` 파일을 다시 번역합니다.
 
-**비디오에서 캡션 또는 오디오 트랙 파일을 다운로드하려면:**
+**비디오에 업로드된 캡션 또는 오디오 트랙 파일을 다운로드하려면:**
 
 1. 기본 오디오 트랙을 설정할 비디오 자산으로 이동합니다.
 1. 에셋 선택 모드의 목록 보기 또는 카드 보기에서 비디오 에셋을 선택합니다.
