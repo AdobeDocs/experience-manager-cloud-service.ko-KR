@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: 1415d07235641262814e81362c806572bcf582ba
+source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
 workflow-type: tm+mt
 source-wordcount: '544'
-ht-degree: 47%
+ht-degree: 45%
 
 ---
 
@@ -50,7 +50,7 @@ AEM은 자동으로 기존 사이트를 프론트엔드 파이프라인을 사�
 
 {{add-cm-allowlist-frontend-pipeline}}
 
-Sites 콘솔에서 [사이트 레일](site-rail.md)을 사용하여 사이트를 활성화할 수 있습니다.
+사이트 콘솔에서 [사이트 레일](site-rail.md)을 사용하여 사이트를 사용하도록 설정합니다.
 
 1. AEM에 로그인한 다음 **전역 탐색** > **사이트**&#x200B;를 통해 사이트로 이동합니다.
 1. 콘솔에서 사이트를 선택합니다. 하위 페이지가 아닌 사이트 루트를 선택합니다.
