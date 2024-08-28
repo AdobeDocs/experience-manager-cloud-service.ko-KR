@@ -7,9 +7,9 @@ feature: Adaptive Forms
 index: false
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
 source-git-commit: 5ee37f59bb959e0549c0541c6568aa8c135c330e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '975'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 98%
 Custom parameters are planned for an upcoming release. -->
 
 * **보안 콘텐츠를 캐싱할 수 있습니까?**
-보안 콘텐츠 캐싱 기능은 기본적으로 비활성화되어 있습니다. 이 기능을 활성화하려면 [보안 콘텐츠 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ko-KR)에 제공된 지침을 수행하면 됩니다.
+보안 콘텐츠 캐싱 기능은 기본적으로 비활성화되어 있습니다. 이 기능을 활성화하려면 [보안 콘텐츠 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ko)에 제공된 지침을 수행하면 됩니다.
 
 * **현지화된 적응형 양식이 있습니다. 현지화된 버전을 렌더링하지 않습니까? 원인은 무엇이며 해결 방법은 무엇입니까?**
 
@@ -77,7 +77,7 @@ Custom parameters are planned for an upcoming release. -->
 예. 적응형 양식에 차트를 추가할 수 있습니다. 적응형 양식은 차트 구성 요소를 제공합니다. 이를 사용하여 적응형 양식에 차트를 추가할 수 있습니다.
 
 * **양식 데이터 모델을 관계형 데이터베이스 모델에 연결할 수 있습니까?**
-양식 데이터 모델을 [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services]에 연결하고 사용자 프로필을 데이터 소스로 Experience Manager 할 수 있습니다. <!--Support to connect a Form Data Model with a relational database is not available.-->
+양식 데이터 모델을 [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services] 및 Experience Manager 사용자 프로필에 데이터 소스로 연결할 수 있습니다. <!--Support to connect a Form Data Model with a relational database is not available.-->
 
 * **인증을 위해 양식 데이터 모델(FDM)에 대해 사용자 정의 인증서를 사용할 수 있습니까?**
 양식 데이터 모델(FDM)은 인증을 위해 사용자 정의 인증서를 사용하는 방법을 제공하지 않습니다. 따라서 x509 및 양방향 SSL과 같은 사용자 정의 인증서는 지원되지 않습니다.

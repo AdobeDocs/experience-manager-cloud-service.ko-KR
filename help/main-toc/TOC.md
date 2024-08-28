@@ -7,9 +7,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 773ce75975f4dcc2c5310422bcc377b487ebec25
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5348'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -727,7 +727,7 @@ ht-degree: 99%
          + PDF 양식을 적응형 양식으로 변환 {#afcs}
             + [자동 양식 전환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ko)
             + [기존 PDF 양식을 적응형 양식으로 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=ko)
-            + [전환된 양식 검토 및 수정](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=ko#welcome-to-review-and-correct-editor)
+            + [전환된 양식 검토 및 수정](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html#welcome-to-review-and-correct-editor)
          + 적응형 양식 만들기 {#create-an-adaptive-form-on-forms-cs}
             + [적응형 양식 작성 소개](/help/forms/introduction-forms-authoring.md)
             + [적응형 양식 만들기](/help/forms/creating-adaptive-form.md)
@@ -887,8 +887,8 @@ ht-degree: 99%
       + [콘텐츠 모델링](/help/edge/wysiwyg-authoring/content-modeling.md)
       + [표 형식 데이터 및 스프레드시트](/help/edge/wysiwyg-authoring/tabular-data.md)
       + [기존 프로젝트 및 Edge Delivery](/help/edge/wysiwyg-authoring/existing-projects.md)
-      + [분류 데이터 관리](/help/edge/wysiwyg-authoring/taxonomy.md)
-      + [WIP Sites 기능](/help/edge/wysiwyg-authoring/wip-features.md)
+      + [분류 체계 데이터 관리](/help/edge/wysiwyg-authoring/taxonomy.md)
+      + [WIP 사이트 기능](/help/edge/wysiwyg-authoring/wip-features.md)
    + 문서 기반 작성 {#document-authoring}
       + [작성](/help/edge/docs/authoring.md)
       + [대량 메타데이터](/help/edge/docs/bulk-metadata.md)
