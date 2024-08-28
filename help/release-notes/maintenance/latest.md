@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 82be9b2b328343e827b90bd8266d93127757f477
+source-git-commit: eb01b6982578ad1300163c2fd536e844afc815fa
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 32%
+source-wordcount: '736'
+ht-degree: 45%
 
 ---
 
@@ -27,22 +27,16 @@ ht-degree: 32%
 * CQ-4353778: 번역 프로세스 이벤트.
 * CQ-4354583: Adobe 파이프라인을 통해 번역 프로세스 이벤트를 보냅니다.
 * CQ-4356479: Adobe 코드에서만 /adobe 서블릿 컨텍스트를 사용할 수 있습니다.
-* CQ-4358133: Jenkins 작업자 사용을 최적화합니다.
 * CQ-4358226: 번역 키워드 저장 기능이 특정 문자열 형식에 대해 작동하지 않습니다.
 * CQ-4358270: AEM 번역 키트: 8월 08일
 * CQ-4358310: quickstart에 oak-compat-query-spi-1.2를 추가합니다.
-* GRANITE-36205: QS의 내부 oak 릴리스에 대한 자동 업데이트.
 * GRANITE-49833: 이벤트 발신자 및 프록시에 대한 일괄 처리 지원.
 * GRANITE-52053: Commons Collections 사용 제거 3: Platform 기타.
 * GRANITE-52492: PIT 복원 시 Elastic async catchup.
-* GRANITE-53086: AEMaaCS에서 jacoco 플러그인 버전을 0.8.12로 업데이트합니다.
 * GRANITE-53099: Apache Felix Http Jetty 5.1.24로 업데이트합니다.
 * GRANITE-53125: CloudEvent에 분류를 추가합니다.
 * GRANITE-53328: 스태싱 로깅 개선 사항이 포함된 3.8.0-T20240726111512-3cc11d50으로 Filevault를 업데이트합니다.
-* GRANITE-53340: AEM660: 660 CQ/Platform에 대한 적절한 버전 관리 및 분기.
-* GRANITE-53341: ACS Commons 6 사용에 대해 경고하지 마십시오.
 * GRANITE-53453: commons-lang을 3.15.0으로 업데이트합니다.
-* GRANITE-53473: Sling 설정을 사용하지 않습니다.
 * GRANITE-53478: Filevault를 버전 3.8.0으로 업데이트합니다.
 * GRANITE-53505: QS를 commons-collections-3.2.2-adobe-2로 업데이트합니다.
 * GRANITE-53528: 플랫폼 아티팩트의 버전을 업데이트합니다 .
@@ -71,7 +65,10 @@ ht-degree: 32%
 
 ### 알려진 문제 {#known-issues-17569}
 
-없음.
+* ASSETS-40875 - AssetDeleteHandler 클래스는 자산 삭제 이벤트를 수신하고 삭제 이벤트 유형(PRE_DELETE 또는 POST_DELETE)에 따라 특정 작업을 수행합니다. 특정 시나리오에서는 POST_DELETE 유형의 이벤트로 인해 NullPointerException이 발생합니다.
+* FORMS-14340 - FormsAndDocumentOmniSearchHandler 및 CloudStorageSubmitActionInserter를 인스턴스화하는 도중 오류가 발생했습니다. 이는 해를 미치지 않는 로그 구문입니다.
+* FORMS-15818 - 구성 요소 설명자 항목 &#39;OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml&#39; 이 서버 로그에서 구문을 찾을 수 없습니다. 이는 해를 미치지 않는 로그 구문입니다.
+* SITES-23662 - 게시를 트리거하는 사용자를 서버 로그의 JCR 로그 구문에서 추출할 수 없습니다. 이는 로그에 간헐적이고 해를 미치지 않는 “일괄 OSGI 이벤트에서 유효한 사용자 ID를 찾을 수 없습니다.”라는 오류가 발생할 수 있는 개발 중인 기능에 대한 것입니다.
 
 ### 변경 사항 공지 {#change-notice-17569}
 
