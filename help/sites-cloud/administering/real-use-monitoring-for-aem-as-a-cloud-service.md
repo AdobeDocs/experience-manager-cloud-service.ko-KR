@@ -4,10 +4,10 @@ description: RUM(Real Use Monitoring)을 사용하여 웹 사이트 또는 애�
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 8ccef0103ae7fb75171431eeb36f7352f6467d56
+source-git-commit: ae9951fa89edeab5f34ae3506cf8a4864201c93e
 workflow-type: tm+mt
-source-wordcount: '1302'
-ht-degree: 0%
+source-wordcount: '1282'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->클라이언트측 모니터링은 AEM Cloud Service 버전 **2024.5.16461** 이상인 고객에게만 작동합니다.
+>클라이언트측 모니터링은 AEM(Adobe Experience Manager) Cloud Service 버전이 **2024.5.16461** 이상인 고객에게만 작동합니다.
 
 ## 개요 {#overview}
 
@@ -33,9 +33,8 @@ RUM을 사용하면 요청이 브라우저에 다시 제공될 때까지 URL을 
 
 ## 누가 실제 사용 모니터링 서비스를 활용할 수 있습니까? {#who-can-benefit-from-rum-service}
 
-Real Use Monitoring 서비스는 모든 고객에게 유용합니다. 이는 사용자 상호 작용의 대표적인 반영을 제공하여 클라이언트측 페이지 보기 수를 캡처하여 웹 사이트 참여에 대한 신뢰할 수 있는 측정을 보장합니다.
+AEM은 고객 및 Adobe이 AEM 사이트와 상호 작용하는 방법을 이해할 수 있도록 RUM을 개발했습니다. RUM을 사용하여 성능 문제를 진단하고 실험의 효과를 측정할 수 있습니다. RUM은 샘플링을 통해 방문자의 개인 정보를 보존하며 - 모든 페이지 보기의 일부만 모니터링되며 - PII(개인 식별 정보)는 수집되지 않습니다.
 
-모든 Adobe 고객을 위해 이 서비스는 사용자 상호 작용에 대한 중요한 통찰력을 제공합니다. 자체 CDN을 사용하는 고객은 트래픽 보고의 간소화를 활용할 수 있습니다. 이제 Adobe이 데이터 수집을 직접 통합하므로 갱신 주기 동안 별도의 보고서가 필요하지 않습니다.
 
 ## Real Use Monitoring Service 작동 방식 이해 {#understand-how-the-rum-service-works}
 
@@ -110,7 +109,7 @@ RUM 데이터를 분석할 때 페이지 보기 수 및 기타 성능 지표에 
 
 1. **내 사이트에서 `/.rum` 경로가 차단되어 있습니다. 어떻게 수정해야 합니까?**
 
-   RUM 컬렉션을 사용하려면 `/.rum` 경로가 필요합니다. Adobe이 AEM as a Cloud Service의 일부로 제공하는 항목 앞에 CDN이 있는 경우 `/.rum` 경로가 나머지 AEM 콘텐츠와 동일한 AEM 오리진으로 전달되는지 확인하십시오. 그리고 어떤 식으로든 조정되지 않았는지 확인하십시오.
+   RUM 컬렉션을 사용하려면 `/.rum` 경로가 필요합니다. Adobe의 AEM as a Cloud Service 앞에서 CDN을 사용하는 경우 `/.rum` 경로가 다른 AEM 콘텐츠와 동일한 AEM 원본으로 전달되는지 확인하십시오. 그리고 어떤 식으로든 조정되지 않았는지 확인하십시오.
 
 1. **RUM 수집은 계약 목적으로 콘텐츠 요청에 포함됩니까?**
 
