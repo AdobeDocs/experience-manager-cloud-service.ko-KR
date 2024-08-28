@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 773ce75975f4dcc2c5310422bcc377b487ebec25
-workflow-type: ht
-source-wordcount: '5348'
-ht-degree: 100%
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+workflow-type: tm+mt
+source-wordcount: '5478'
+ht-degree: 97%
 
 ---
 
@@ -681,6 +681,7 @@ ht-degree: 100%
          + [양식 데이터 모델 만들기](/help/forms/create-form-data-models.md)
          + [양식 데이터 모델을 사용하여 작업](/help/forms/work-with-form-data-model.md)
          + [양식 데이터 모델 사용](/help/forms/using-form-data-model.md)
+         + [적응형 양식을 위한 XML 스키마 디자인](/help/forms/adaptive-form-xml-schema-form-model.md)
    + 적응형 양식 {#adaptive-forms-authoring}
       + [적응형 양식 만들기](/help/forms/create-an-adaptive-form.md)
       + [적응형 양식 조각 만들기](/help/forms/adaptive-form-fragments.md)
@@ -730,12 +731,17 @@ ht-degree: 100%
             + [전환된 양식 검토 및 수정](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html#welcome-to-review-and-correct-editor)
          + 적응형 양식 만들기 {#create-an-adaptive-form-on-forms-cs}
             + [적응형 양식 작성 소개](/help/forms/introduction-forms-authoring.md)
+            + [양식 필드에 대한 컨텍스트 내 도움말 작성](/help/forms/authoring-in-field-help.md)
             + [적응형 양식 만들기](/help/forms/creating-adaptive-form.md)
             + [참조 테마, 템플릿 및 데이터 모델](/help/forms/reference-themes-templates-data-models.md)
             + [템플릿 만들기](/help/forms/template-editor.md)
             + [테마 만들기](/help/forms/themes.md)
+            + [적응형 양식 단편 참조](/help/forms/reference-adaptive-form-fragments.md)
+            + [적응형 Forms과 XFA 양식 템플릿 동기화](/help/forms/synchronizing-adaptive-forms-xfa.md)
+            + [XDP 기반 적응형 Forms에서 XFA 지원](/help/forms/xfa-api-supported-in-adaptive-form.md)
             + [적응형 양식에 대한 JSON 스키마 디자인](/help/forms/adaptive-form-json-schema-form-model.md)
             + [소극적 로드 옵션이 있는 대용량 양식의 성능 향상](/help/forms/lazy-loading-adaptive-forms.md)
+            + [양식 및 문서 게시 및 게시 취소](/help/forms/publishing-unpublishing-forms.md)
          + 적응형 양식에 구성 요소 추가 {#add-components-to-an-adaptive-form}
             + [적응형 양식에서 CAPTCHA 사용](/help/forms/captcha-adaptive-forms.md)
             + [적응형 양식에서 hCaptcha 사용](/help/forms/integrate-adaptive-forms-hcaptcha.md)
@@ -748,10 +754,15 @@ ht-degree: 100%
             + [적응형 양식의 레이아웃 설정](/help/forms/layout-capabilities-adaptive-forms.md)
             + [레이아웃 모드를 사용하여 구성 요소 크기 변경](/help/forms/resize-using-layout-mode.md)
             + [여러 단계 데이터 캡처 경험 만들기](/help/forms/introduction-form-sequence.md)
+            + [적응형 Forms에 대한 스타일 구성](/help/forms/styling-constructs-adaptive-forms.md)
             + [개별 적응형 양식 구성 요소에 인라인 CSS 스타일 적용](/help/forms/inline-style-adaptive-forms.md)
+            + [적응형 Forms에서 분리자 구성 요소를 사용하는 방법](/help/forms/separator-component-in-adaptive-forms.md)
          + 적응형 양식에 규칙 추가 및 표현식 사용 {#add-rules-and-use-expressions-in-an-adaptive-form}
             + [적응형 양식에 규칙 추가](/help/forms/rule-editor.md)
             + [규칙 편집기의 호출 서비스를 사용하여 사용자 정의 오류 핸들러 추가](/help/forms/add-custom-error-handler-adaptive-forms.md)
+            + [사용자 그룹을 선택하는 규칙 편집기 액세스 부여](/help/forms/rule-editor-access-user-groups.md)
+            + [적응형 Forms에서 SOM 표현식 사용](/help/forms/using-som-expressions-adaptive-forms.md)
+            + [적응형 양식 표현식](/help/forms/adaptive-form-expressions.md)
          + [!DNL Adobe Sign] 사용 {#use-adobe-sign}
             + [Adobe Sign을 사용하여 적응형 양식에 전자 서명](/help/forms/working-with-adobe-sign.md)
          + 제출 액션 및 메타데이터 제출 구성 {#configure-submit-actions-and-metadata-submission}
@@ -759,6 +770,8 @@ ht-degree: 100%
             + [리디렉션 페이지 구성](/help/forms/configuring-redirect-page.md)
             + [적응형 양식에 대한 비동기 제출 구성](/help/forms/asynchronous-submissions-adaptive-forms.md)
             + [사용자 정의 제출 액션 만들기](/help/forms/custom-submit-action-form.md)
+            + [양식 제출 메타데이터에 사용자 데이터의 정보 추가](/help/forms/form-submission-metadata.md)
+            + [적응형 Forms에서 양식 데이터 모델(FDM) 서비스를 호출하는 API](/help/forms/invoke-form-data-model-services.md)
          + [적응형 양식 필드 미리 채우기](/help/forms/prepopulate-adaptive-form-fields.md)
          + [기록 문서 생성](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
          + [적응형 양식에 새 로케일 지원 추가](/help/forms/supporting-new-language-localization.md)
@@ -769,11 +782,16 @@ ht-degree: 100%
             + [접근성 높은 적응형 양식 만들기](/help/forms/creating-accessible-adaptive-forms.md)
          + [Forms 포털 구성](/help/forms/configure-forms-portal.md)
          + [검토 만들기 및 관리](/help/forms/create-reviews-forms.md)
+         + [제출 검토자를 양식과 연결](/help/forms/adding-reviewers-form.md)
+         + [적응형 양식에 대한 검토 만들기 및 관리](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [적응형 양식 키워드](/help/forms/adaptive-forms-keywords.md)
       + [양식 미리보기](/help/forms/previewing-forms.md)
    + 양식 중심 워크플로 {#create-form-centric-workflows}
+      + [Forms 중심 워크플로우 소개](/help/forms/aem-forms-workflow.md)
       + [워크플로 + 단계 참조에서 양식 중심 단계 사용](/help/forms/aem-forms-workflow-step-reference.md)
       + [양식 중심 워크플로에서 변수 사용](/help/forms/variable-in-aem-workflows.md)
+      + [AEM Workflow의 동적 사용자 또는 그룹 선택](/help/forms/dynamically-select-a-user-or-group-for-aem-workflow.md)
+      + [AEM 받은 편지함에서 Forms 애플리케이션 및 작업 관리](/help/forms/manage-applications-inbox.md)
       + [[Out of Office] 옵션 사용](/help/forms/configure-out-of-office-settings.md)
    + 커뮤니케이션 API {#using-communications}
       + [커뮤니케이션 API 소개](/help/forms/aem-forms-cloud-service-communications-introduction.md)
@@ -781,6 +799,7 @@ ht-degree: 100%
       + [커뮤니케이션 API - 일괄 처리](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [Forms Designer 설치 및 구성](/help/forms/installing-configuring-designer.md)
       + [Forms Designer를 사용하여 템플릿 만들기](/help/forms/use-forms-designer.md)
+      + [Designer에서 Page Zero 콘텐츠 변경](/help/forms/changing-page-zero-content-designer.md)
       + [PDF 문서에서 사용자 정의 글꼴 사용하기](/help/forms/use-custom-fonts.md)
       + [PDF 문서에서 지원되는 글꼴 목록](/help/forms/supported-out-of-the-box-fonts.md)
       + [알려진 문제, 모범 사례 및 자주 묻는 질문](/help/forms/communications-known-issues-limitations.md)
@@ -926,6 +945,7 @@ ht-degree: 100%
          + [URL에서 양식으로 옵션 로드](/help/edge/docs/forms/load-options-from-url.md)
          + [양식 모양 사용자 정의&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
          + [규칙을 사용하여 양식에 동적 비헤이비어 추가](/help/edge/docs/forms/rules-forms.md)
+         + [유효성 검사를 위한 정규 표현식](/help/edge/docs/forms/regex-forms.md)
          + [양식 제출 후 사용자 정의 감사 메시지 표시](/help/edge/docs/forms/thank-you-page-form.md)
       + 기능 {#advanced-features-edge-delivery-services-forms}
          + [양식 조각 사용](/help/edge/docs/forms/form-fragments.md)

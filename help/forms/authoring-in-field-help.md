@@ -3,10 +3,13 @@ title: AEM 적응형 Forms 필드에 대한 도움말 텍스트를 추가하는 
 description: AEM Forms을 사용하면 상황에 맞는 도움말을 적응형 양식 필드 및 패널에 텍스트나 비디오를 비롯한 리치 미디어로 추가할 수 있습니다.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-docset: aem65
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+feature: Adaptive Forms, Foundation Components
+role: User
+hide: true
+hidefromtoc: true
+source-git-commit: d661f869f1264e4a2317692ab6fd22263c89e072
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -64,8 +67,3 @@ ht-degree: 0%
 패널에 대한 도움말을 추가하면 **이(가) 표시됩니까?패널 설명 옆의** 아이콘. 아이콘을 클릭하면 패널 편집 대화 상자의 도움말 콘텐츠 섹션에 추가된 콘텐츠가 표시됩니다.
 
 ![양식 패널 수준의 상황에 맞는 도움말 예제](assets/photoshop-1.png)
-
->[!MORELIKETHIS]
->
->* [양식 필드에 자리 표시자 텍스트 추가](/help/forms/placeholder-text-in-aem-forms.md)
->* [서식 있는 텍스트를 위한 적응형 양식에 각주 추가](/help/forms/footnotes-richtextsupport.md)

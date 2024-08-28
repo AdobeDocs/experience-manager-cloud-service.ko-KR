@@ -3,8 +3,9 @@ title: Designer에서 Page Zero 콘텐츠를 변경하는 방법
 description: Adobe PDF 뷰어가 아닌 뷰어에 대해 XFA PDF의 페이지 0에 표시되는 메시지를 변경합니다.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-docset: aem65
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Adaptive Forms
+role: User
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 0%

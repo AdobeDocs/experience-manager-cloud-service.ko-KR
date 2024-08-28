@@ -5,7 +5,11 @@ uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Adaptive Forms
+role: User
+hide: true
+hidefromtoc: true
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
 workflow-type: tm+mt
 source-wordcount: '1084'
 ht-degree: 2%
@@ -72,7 +76,7 @@ Forms 워크플로우 트리거를 통해 피할당자 또는 피할당자 그�
 
 * 작업 세부 정보
 * 양식
-* 워크플로우 세부 정보
+* 워크플로 세부 정보
 * 작업 도구 모음
 
 #### 작업 세부 정보 {#task-details}
@@ -83,7 +87,7 @@ Forms 워크플로우 트리거를 통해 피할당자 또는 피할당자 그�
 
 기본 컨텐츠 영역의 양식 탭에는 제출된 양식과 필드 수준 첨부 파일(있는 경우)이 표시됩니다.
 
-#### 워크플로우 세부 정보 {#workflow-details}
+#### 워크플로 세부 정보 {#workflow-details}
 
 맨 위에 있는 워크플로 세부 사항 탭에는 워크플로의 다양한 단계를 통한 작업 진행 상황이 표시됩니다. 작업에 대해 완료된 단계, 현재 단계 및 보류 단계가 표시됩니다. 워크플로의 단계는 연결된 워크플로의 [작업 할당 단계](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)에 정의되어 있습니다.
 

@@ -1,12 +1,9 @@
 ---
 title: 적응형 양식의 모양을 사용자 지정하는 방법
 description: 적응형 Forms에 대해 LESS 프레임워크를 사용하여 적응형 Forms의 모양을 사용자 지정합니다.
-uuid: d2e45ad9-7322-43ce-a1dd-ad97e2eea742
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: develop
-discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
-docset: aem65
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+feature: Adaptive Forms, Foundation Components
+role: User
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
 workflow-type: tm+mt
 source-wordcount: '2307'
 ht-degree: 3%

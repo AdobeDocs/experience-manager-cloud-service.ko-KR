@@ -4,9 +4,13 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: 'AEM Forms 워크플로를 사용하여 비즈니스 프로세스 워크플로를 자동화하고 신속하게 구축할 수 있습니다. 예: 검토 및 승인, PDF 생성, Adobe Sign 워크플로.'
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+feature: Adaptive Forms
+role: User, Developer
+hide: true
+hidefromtoc: true
+source-git-commit: d661f869f1264e4a2317692ab6fd22263c89e072
 workflow-type: tm+mt
-source-wordcount: '2373'
+source-wordcount: '2335'
 ht-degree: 1%
 
 ---
@@ -197,7 +201,7 @@ AEM은 제공된 워크플로우 단계를 사용하여 워크플로우 모델�
 
 ### AEM 받은 편지함에서 애플리케이션 제출 {#inbox}
 
-만든 워크플로우 응용 프로그램은 받은 편지함에서 응용 프로그램으로 사용할 수 있습니다. [!DNL workflow-users] 그룹의 구성원인 사용자는 연결된 워크플로우를 트리거하는 응용 프로그램을 작성하여 제출할 수 있습니다. AEM 받은 편지함을 사용하여 응용 프로그램을 제출하고 작업을 관리하는 방법에 대한 자세한 내용은 [AEM 받은 편지함에서 Forms 응용 프로그램 및 작업 관리](manage-applications-/help/sites-cloud/authoring/inbox.md)를 참조하십시오.
+만든 워크플로우 응용 프로그램은 받은 편지함에서 응용 프로그램으로 사용할 수 있습니다. [!DNL workflow-users] 그룹의 구성원인 사용자는 연결된 워크플로우를 트리거하는 응용 프로그램을 작성하여 제출할 수 있습니다.
 
 <!-- ### Submitting an application from [!DNL AEM Forms] App {#afa}
 
@@ -270,9 +274,3 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 ### 워크플로 인스턴스 제거 {#purge-workflow-instances}
 
 워크플로 인스턴스 수를 최소화하면 워크플로 엔진의 성능이 향상되므로 완료되었거나 실행 중인 워크플로 인스턴스를 저장소에서 정기적으로 제거할 수 있습니다. 자세한 내용은 [워크플로 인스턴스 정기적 제거](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html?lang=ko-KR)워크플로 인스턴스 정리를 참조하십시오.
-
-
->[!MORELIKETHIS]
->
->* [AEM 번역 워크플로를 사용하여 적응형 Forms 및 기록 문서를 현지화합니다](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms.md)
->* Forms 중심 AEM 워크플로의 [변수](/help/forms/variable-in-aem-workflows.md)

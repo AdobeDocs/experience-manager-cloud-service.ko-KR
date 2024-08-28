@@ -1,7 +1,11 @@
 ---
 title: 적응형 양식 표현식이란?
 description: 적응형 Forms 표현식을 사용하여 자동 유효성 검사, 계산을 추가하고 섹션의 가시성을 켜거나 끕니다.
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+feature: Adaptive Forms, Foundation Components
+role: User
+hide: true
+hidefromtoc: true
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
 workflow-type: tm+mt
 source-wordcount: '2686'
 ht-degree: 0%
