@@ -4,9 +4,9 @@ description: 코드 및 콘텐츠가 클라우드에 준비되면 마이그레�
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1223'
 ht-degree: 3%
 
 ---
@@ -101,7 +101,6 @@ AEM 소스의 로드는 추출 단계 동안 더 커집니다. 다음 사항에 
 
 * 이름이 150자를 초과하는 JCR 노드
 * 16MB보다 큰 JCR 노드
-* `rep:AuthorizableID`이(가) 포함된 모든 사용자/그룹이 이미 AEM as a Cloud Service에 있습니다.
 * 추출되어 수집된 에셋이 마이그레이션의 다음 반복 전에 소스 또는 대상에서 다른 경로로 이동하는 경우.
 
 ## 에셋 상태 {#asset-health}

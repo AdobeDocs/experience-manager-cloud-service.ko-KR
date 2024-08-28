@@ -1,27 +1,28 @@
 ---
 title: 콘텐츠 전송 도구 개요
-description: 컨텐츠 전송 도구를 사용하여 컨텐츠를 On-Premise AEM 인스턴스에서 AEM as a Cloud Service으로 전송하는 방법을 알아봅니다
+description: 컨텐츠 전송 도구를 사용하여 온-프레미스 AEM 인스턴스에서 AEM as a Cloud Service으로 컨텐츠를 전송하는 방법에 대해 알아봅니다
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
-source-git-commit: d9565e86c4b7e513cb1a95ecbe7a30c9586d9fb1
+source-git-commit: e73933acc3ff23d1456f03b288f2f842a6289ace
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 52%
+source-wordcount: '612'
+ht-degree: 55%
 
 ---
+
 
 # 개요 {#overview-content-transfer-tool}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="개요"
->abstract="콘텐츠 전송 도구는 Adobe에서 개발한 도구로, 기존 콘텐츠를 소스 AEM 인스턴스(온프레미스 또는 AMS)에서 대상 AEM Cloud Service 인스턴스로 마이그레이션하는 데 사용할 수 있습니다. 이 도구는 주체(사용자 또는 그룹)도 자동으로 전송합니다."
+>abstract="콘텐츠 전송 도구는 Adobe에서 개발한 도구로, 기존 콘텐츠를 소스 AEM 인스턴스(온프레미스 또는 AMS)에서 대상 AEM Cloud Service 인스턴스로 마이그레이션하는 데 사용할 수 있습니다. 이 도구는 또한 그룹을 자동으로 전송합니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="지침 및 모범 사례"
 
 컨텐츠 전송 도구는 Adobe에서 개발한 도구로, 소스 AEM 인스턴스(온-프레미스 또는 AMS)에서 대상 AEM Cloud Service 인스턴스로 기존 컨텐츠를 마이그레이션하는 데 사용할 수 있습니다.
 
-이 도구는 주체(사용자 또는 그룹)도 자동으로 전송합니다.  자세한 내용은 [사용자 매핑 및 사용자 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)을 참조하십시오.
+이 도구는 또한 그룹을 자동으로 전송합니다.  자세한 내용은 [그룹 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)을 참조하세요.
 
 컨텐츠 전송 도구는 컨텐츠 전송 프로세스를 Cloud Acceleration Manager과 통합합니다. 이를 통해 사용자는 다음과 같은 이점을 얻을 수 있습니다.
 
@@ -37,9 +38,6 @@ ht-degree: 52%
 1. **추출**: 추출이란 소스 AEM 인스턴스에서 *마이그레이션 세트*&#x200B;라고 하는 임시 영역으로 콘텐츠를 추출하는 것입니다. *마이그레이션 세트*&#x200B;는 소스 AEM 인스턴스와 클라우드 서비스 AEM 인스턴스 간에 전송된 콘텐츠를 임시 저장할 수 있도록 Adobe가 제공하는 클라우드 저장소 영역입니다.
 
    자세한 내용은 [콘텐츠 전송의 추출 프로세스](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)를 참조하십시오.
-
-   >[!NOTE]
-   >사용자 매핑은 이제 작성자에서 추출 단계의 일부로 자동으로 실행됩니다(그러나 선택적으로 작성자에서 비활성화하거나 게시할 때 활성화할 수 있음). 자세한 내용은 [사용자 매핑 및 사용자 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)을 참조하십시오.
 
 1. **수집**: 수집은 *마이그레이션 세트*&#x200B;의 콘텐츠를 대상 클라우드 서비스 인스턴스로 수집하는 것입니다.
 
@@ -78,7 +76,6 @@ ht-degree: 52%
 마이그레이션 세트 행에서 마이그레이션 세트의 만료를 모니터링할 수 있습니다. 마이그레이션 세트가 만료 날짜에 도달하고 있다는 유용한 시각적 표시기도 프로젝트 카드를 추가했습니다.
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
-
 
 ## 다음 단계 {#whats-next}
 

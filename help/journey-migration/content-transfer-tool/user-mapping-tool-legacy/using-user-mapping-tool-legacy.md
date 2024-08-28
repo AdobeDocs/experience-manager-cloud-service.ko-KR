@@ -6,18 +6,19 @@ hide: true
 hidefromtoc: true
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '803'
 ht-degree: 1%
 
 ---
+
 
 # 사용자 매핑 도구 사용(기존) {#using-user-mapping-tool}
 
 >[!INFO]
 >
->이 설명서는 더 이상 사용되지 않는 버전의 도구를 참조합니다. 최신 버전에 대한 자세한 내용은 [사용자 매핑 및 사용자 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)을 참조하십시오.
+>이 설명서는 더 이상 사용되지 않는 버전의 도구를 참조합니다. 최신 버전에 대한 자세한 내용은 [그룹 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)을 참조하세요.
 
 사용자 매핑 도구는 이메일로 Adobe Identity Management System(IMS) 사용자를 조회하고 IMS ID를 반환할 수 있는 API를 사용합니다. 이 API를 사용하려면 사용자가 조직에 대한 클라이언트 ID, 클라이언트 암호 및 액세스 또는 전달자 토큰을 만들어야 합니다.
 

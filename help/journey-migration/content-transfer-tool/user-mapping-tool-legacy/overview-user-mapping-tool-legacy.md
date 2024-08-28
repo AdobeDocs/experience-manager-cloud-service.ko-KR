@@ -6,18 +6,19 @@ hide: true
 hidefromtoc: true
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '289'
 ht-degree: 21%
 
 ---
+
 
 # 사용자 매핑 도구 개요(레거시) {#overview-user-mapping-tool}
 
 >[!INFO]
 >
->이 설명서는 더 이상 사용되지 않는 버전의 도구를 참조합니다. 최신 버전에 대한 자세한 내용은 [사용자 매핑 및 사용자 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)을 참조하십시오.
+>이 설명서는 더 이상 사용되지 않는 버전의 도구를 참조합니다. 최신 버전에 대한 자세한 내용은 [그룹 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)을 참조하세요.
 
 <!-- Alexandru: drafting this for now
 

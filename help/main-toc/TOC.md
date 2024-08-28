@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+source-git-commit: 260761e6380846f44756adf4aa4c5410a40ce446
 workflow-type: tm+mt
-source-wordcount: '5478'
+source-wordcount: '5481'
 ht-degree: 97%
 
 ---
@@ -224,6 +224,7 @@ ht-degree: 97%
       + [환경 만들기](/help/journey-onboarding/create-environments.md)
       + [AEM 제품 프로필 할당](/help/journey-onboarding/assign-profiles-aem.md)
       + [개발자 및 배포 관리자 작업](/help/journey-onboarding/developers.md)
+      + [주도자 관리](/help/journey-migration/managing-principals.md)
       + [AEM 사용자 작업](/help/journey-onboarding/aem-users.md)
       + [실행 체크리스트](/help/journey-onboarding/go-live-checklist.md)
    + AEM 참조 데모 추가 기능 여정 {#demo-add-on}
@@ -276,13 +277,14 @@ ht-degree: 97%
          + [콘텐츠 전송 확인](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
          + [폐쇄형 사용자 그룹 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)
          + [대형 콘텐츠 저장소 처리](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
-         + [사용자 매핑 및 주요 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
+         + [그룹 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)
          + [소스에서 콘텐츠 추출](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [클라우드 서비스에 콘텐츠 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
          + [콘텐츠 마이그레이션 후 색인화](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md)
          + [마이그레이션 세트에 대한 로그 보기](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
          + [마이그레이션 세트 삭제](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [게시 인스턴스에서 콘텐츠 전송 도구 실행](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
+         + [마이그레이션 후 주도자 관리](/help/journey-migration/managing-principals-after-migration.md)
          + [콘텐츠 전송 도구 문제 해결](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + 기존 사용자 매핑 도구 (레거시){#legacy-user-mapping-tool}
             + [개요](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)

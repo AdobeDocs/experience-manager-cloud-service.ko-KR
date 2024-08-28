@@ -4,7 +4,7 @@ description: 소스 AEM(Adobe Experience Manager) 인스턴스에서 콘텐츠�
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4408f15ef85d0fc2c6a0e2b45038dc900d212187
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 19%
@@ -41,7 +41,7 @@ ht-degree: 19%
 
 1. 이렇게 하면 추출 대화 상자가 표시됩니다. 추출 단계를 시작하려면 **추출**&#x200B;을 클릭하세요.
 
-   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14b.png)
+   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14c.png)
 
    >[!NOTE]
    >추출 단계 중에 스테이징 컨테이너를 선택적으로 덮어쓸 수 있습니다. **스테이징 컨테이너 덮어쓰기**&#x200B;를 사용하지 않도록 설정하면 콘텐츠 경로 또는 포함 버전 설정이 변경되지 않은 후속 마이그레이션에 대한 추출 속도를 높일 수 있습니다. 그러나 콘텐츠 경로 또는 포함 버전 설정이 변경된 경우 **스테이징 컨테이너 덮어쓰기**&#x200B;를 사용하도록 설정해야 합니다.

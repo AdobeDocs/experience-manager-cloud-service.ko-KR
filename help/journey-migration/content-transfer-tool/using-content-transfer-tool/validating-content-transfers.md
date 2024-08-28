@@ -4,12 +4,13 @@ description: 컨텐츠 전송 도구를 사용하여 컨텐츠 전송의 유효�
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: b7e485e3b7ce6f2d2fa7fe9b2953d2296186871d
 workflow-type: tm+mt
-source-wordcount: '1080'
-ht-degree: 2%
+source-wordcount: '1189'
+ht-degree: 1%
 
 ---
+
 
 # 콘텐츠 전송 확인 {#validating-content-transfers}
 
@@ -134,23 +135,28 @@ Migration validation took 0 minutes
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
 
-## 주도자 마이그레이션의 유효성을 검사하는 방법 {#how-to-validate-principal-migration}
+## 주도자 마이그레이션의 유효성을 검사하는 방법 {#how-to-validate-group-migration}
 
-사용자 마이그레이션 세부 정보 및 필요한 이유를 읽어 보려면 [사용자 매핑 및 사용자 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)을 참조하십시오.
+사용자 마이그레이션 세부 정보 및 필요한 이유를 읽어 보려면 [그룹 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)을 참조하세요.
 
-추출 및 수집이 성공적으로 완료되면 주요 마이그레이션에 대한 요약 및 보고서를 사용할 수 있습니다. 이 정보는 어떤 사용자 및 그룹이 성공적으로 마이그레이션되었는지 확인하고, 일부가 마이그레이션되지 않은 이유를 확인하는 데 사용할 수 있습니다.
+추출 및 수집이 성공적으로 완료되면 주요 마이그레이션에 대한 요약 및 보고서를 사용할 수 있습니다. 이 정보는 성공적으로 마이그레이션된 그룹을 확인하고, 일부가 마이그레이션되지 않은 이유를 확인하는 데 사용할 수 있습니다.
 
 이 정보를 보려면 Cloud Acceleration Manager으로 이동하십시오. 프로젝트 카드를 클릭하고 컨텐츠 전송 카드를 클릭합니다. **수집 작업**(으)로 이동하여 확인할 수집을 찾습니다. 해당 수집에 대한 세 점(**..**)을 클릭한 다음 드롭다운에서 **사용자 요약 보기**&#x200B;를 클릭합니다.
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-요약 정보가 포함된 대화 상자가 표시됩니다. 도움말 아이콘을 사용하여 자세한 설명을 읽을 수 있습니다. **보고서 다운로드** 단추를 클릭하여 전체 CSV(쉼표로 구분) 보고서를 다운로드합니다.
+요약 정보가 포함된 대화 상자가 표시됩니다. 도움말 아이콘을 사용하여 자세한 설명을 읽을 수 있습니다. **보고서 다운로드** 단추를 클릭하여 전체 CSV(쉼표로 구분) 보고서를 다운로드합니다.  또한 이 보고서의 끝에는 마이그레이션 후 사용자 관리에 사용할 수 있는 사용자 보고서가 있습니다.
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
->[!NOTE]
->
->사용자 매핑이 비활성화되면 이 대화 상자의 다른 변형이 표시됩니다. 사용자 매핑이 비활성화되었음을 나타내며 사용자 매핑 값을 제공하는 3개의 필드가 표시되지 않습니다.
+사용자 마이그레이션 보고서는 다음과 같이 보고합니다.
+
+* 각 그룹이 마이그레이션되었으며 해당 그룹을 마이그레이션하도록 트리거한 첫 번째 콘텐츠 경로. 그룹은 다른 경로에 있을 수도 있지만 지정된 그룹에 대해 발견된 첫 번째 콘텐츠만 보고됩니다. 또한 ACL 또는 CUG 정책에서 검색되었는지 여부도 보고합니다.
+* 각 그룹이 마이그레이션되지 않았고 마이그레이션되지 않은 이유입니다.  일반적으로 다음과 같은 이유 중 하나일 것입니다.
+   * 기본 제공 그룹입니다.
+   * 이미 타겟 시스템에 있습니다.
+   * 마이그레이션 중인 콘텐츠에 대한 ACL 또는 CUG 정책에 없습니다.
+   * 중복 고유 필드가 있습니다(rep:principalName, rep:authorizableId, jcr:uuid 또는 rep:externalId 중 하나가 대상에 이미 있지만 모두 고유해야 함).
 
 ## 문제 해결 {#troubleshooting}
 
@@ -166,6 +172,6 @@ Migration validation took 0 minutes
 
 현재 다이제스트에서 제외되는 경로에는 `cqdam.text.txt` 렌디션, `/home` 내의 노드 및 `/jcr:system` 내의 노드가 포함됩니다.
 
-### 폐쇄된 사용자 그룹이 작동하지 않음 {#validating-cugs}
+### 폐쇄된 사용자 그룹 {#validating-cugs}
 
 CUG(폐쇄형 사용자 그룹) 정책을 사용할 때 추가 고려 사항은 [폐쇄형 사용자 그룹 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)을 참조하십시오.
