@@ -1,8 +1,8 @@
 ---
-source-git-commit: 7a1181a372928602b8fd0eb4699789217473a94c
+source-git-commit: c7b78b5c4e4851d57314a437b3b7fa06c1f167d5
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 75%
+source-wordcount: '892'
+ht-degree: 77%
 
 ---
 # 스니펫 {#snippets}
@@ -128,6 +128,26 @@ ht-degree: 75%
 * [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 만들기](/help/forms/custom-function-core-component-create-function.md)
 * [사용자 지정 함수 개발 및 사용의 예](/help/forms/custom-function-core-components-use-cases.md)
 
+
+## Forms 포털{#forms-portal-see-also}
+
+* [Forms 포털 구성 요소 소개](/help/forms/configure-forms-portal.md)
+* [사이트 페이지에 양식 나열](/help/forms/list-forms-on-sites-page.md)
+* [양식을 초안으로 저장](/help/forms/save-core-component-based-form-as-draft.md)
+* [사이트 페이지에 양식 링크 추가](/help/forms/add-form-link-to-aem-sites-page.md)
+
+
+## Cloud Manager IP 허용 목록 및 프론트엔드 파이프라인 {#allowlist-frontend-pipeline}
+
+>[!IMPORTANT]
+>
+>프론트엔드 파이프라인의 경우 다음 IP 허용 목록을 미리 Cloud Manager에 추가해야 합니다.
+>필요한 경우 아래 주소 블록을 복사하여 [IP 허용 목록을 추가](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)하십시오. 각각의 주소는 쉼표로 구분됩니다. **IP 허용 목록 추가** 대화 상자의 **IP 주소/CIDR** 필드에 블록을 붙여넣습니다. 주소 목록의 첫 번째 쉼표 바로 뒤에 커서를 놓고 **Enter** 키를 누릅니다. 목록을 저장합니다.
+>프론트엔드 파이프라인 실행이 중단되는 것을 방지하려면 파이프라인을 활성화하기 *전에* 이 IP 허용 목록이 Cloud Manager에 추가되었는지 확인하십시오.
+>
+>**Cloud Manager IP 허용 목록**
+>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>   
 
 ## Cloud Manager IP 허용 목록 및 프론트엔드 파이프라인 추가 {#add-cm-allowlist-frontend-pipeline}
 

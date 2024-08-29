@@ -4,10 +4,10 @@ description: 다양한 디바이스에서 적응형 Forms의 레이아웃 및 �
 feature: Adaptive Forms, Foundation Components
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: ba98b4e17a1245a5a5d208b4bf8698b4da4e9f6b
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 8%
+source-wordcount: '858'
+ht-degree: 7%
 
 ---
 
@@ -19,7 +19,8 @@ ht-degree: 8%
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
-| AEM as a Cloud Service | 이 문서 |
+| AEM as a Cloud Service (핵심 구성 요소) | [여기 클릭](/help/forms/layout-capabilities-adaptive-forms-core-components.md) |
+| AEM as a Cloud Service(Foundation 구성 요소) | 이 문서 |
 
 [!DNL Adobe Experience Manager]을(를) 사용하면 최종 사용자에게 동적 경험을 제공하는 사용하기 쉬운 적응형 Forms을 만들 수 있습니다. 양식 레이아웃은 적응형 양식에 항목 또는 구성 요소가 표시되는 방식을 제어합니다.
 

@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 260761e6380846f44756adf4aa4c5410a40ce446
+source-git-commit: 9c6cf85ccc4e15671669b2fc59b01e7c0cef10e2
 workflow-type: tm+mt
-source-wordcount: '5481'
-ht-degree: 97%
+source-wordcount: '5528'
+ht-degree: 96%
 
 ---
 
@@ -691,6 +691,7 @@ ht-degree: 97%
       + 핵심 구성 요소 {#authoring-adaptive-forms-core-components}
          + 적응형 양식 만들기 {#create-an-adaptive-form-on-forms-cs}
             + [적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md)
+            + [핵심 구성 요소를 기반으로 적응형 양식의 레이아웃 설정](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
             + [적응형 양식 조각 만들기](/help/forms/adaptive-form-fragments-core-components.md)
             + [적응형 양식의 테마 만들기 - 핵심 구성 요소](/help/forms/using-themes-in-core-components.md)
             + [핵심 구성 요소 기반 적응형 템플릿 만들기](/help/forms/template-editor-core-components.md)
@@ -715,7 +716,6 @@ ht-degree: 97%
             + [적응형 양식에 버전 관리, 댓글 및 주석 추가](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [적응형 양식 비교](/help/forms/compare-forms.md)
             + [마이그레이션 유틸리티 도구를 사용하여 기초 구성 요소 기반 적응형 양식을 핵심 구성 요소 기반 양식으로 변환](/help/forms/migration-utility-tool-for-af-core-components.md)
-            + [적응형 양식을 초안으로 저장](/help/forms/save-core-component-based-form-as-draft.md)
             + 핵심 구성 요소 기반 적응형 양식의 규칙 편집기 소개{#rule-editor-core-components}
                + [핵심 구성 요소 기반 적응형 양식의 규칙 편집기 소개](/help/forms/rule-editor-core-components.md)
                + [핵심 구성 요소 기반 적응형 양식의 규칙 편집기 사용자 인터페이스](/help/forms/rule-editor-core-components-user-interface.md)
@@ -726,6 +726,11 @@ ht-degree: 97%
                + [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 소개](/help/forms/create-and-use-custom-functions.md)
                + [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 만들기 및 사용](/help/forms/custom-function-core-component-create-function.md)
                + [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수의 예](/help/forms/custom-function-core-components-use-cases.md)
+            + Forms 포털 및 해당 구성 요소 소개{#introduction-to-forms-portal}
+               + [Forms 포털 구성 요소 소개](/help/forms/configure-forms-portal.md)
+               + [Search &amp; List 구성 요소를 사용하여 Sites 페이지의 목록 양식](/help/forms/list-forms-on-sites-page.md)
+               + [초안 및 제출 구성 요소를 사용하여 Sites 페이지에서 양식을 초안으로 저장하고 나열](/help/forms/save-core-component-based-form-as-draft.md)
+               + [링크 구성 요소를 사용하여 사이트 페이지에 양식 링크 추가](/help/forms/add-form-link-to-aem-sites-page.md)
       + 기초 구성 요소 {#authoring-adaptive-forms-foundation-components}
          + PDF 양식을 적응형 양식으로 변환 {#afcs}
             + [자동 양식 전환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ko)
@@ -782,7 +787,6 @@ ht-degree: 97%
             + [적응형 양식의 메타데이터 속성 재사용](/help/forms/reusing-adaptive-forms.md)
          + 적응형 양식의 접근성 개선 {#accessible-adaptive-forms}
             + [접근성 높은 적응형 양식 만들기](/help/forms/creating-accessible-adaptive-forms.md)
-         + [Forms 포털 구성](/help/forms/configure-forms-portal.md)
          + [검토 만들기 및 관리](/help/forms/create-reviews-forms.md)
          + [제출 검토자를 양식과 연결](/help/forms/adding-reviewers-form.md)
          + [적응형 양식에 대한 검토 만들기 및 관리](/help/forms/review-adaptiveforms-in-sites-page.md)
