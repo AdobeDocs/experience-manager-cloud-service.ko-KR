@@ -3,8 +3,8 @@ title: 핵심 구성 요소 기반 적응형 양식을 초안으로 저장하고
 description: 적응형 양식 기반의 핵심 구성 요소를 초안으로 저장하는 방법에 대해 알아봅니다. 또한 초안 및 제출 구성 요소를 사용하여 로그인한 사용자의 초안 및 제출을 나열하는 방법을 이해하시겠습니까?
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
-role: User, Developer, Admin
-source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
+role: User, Developer
+source-git-commit: 2561145c37fe2ba6a38482fb2d1be614a971b418
 workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 3%
