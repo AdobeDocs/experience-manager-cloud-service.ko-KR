@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 92c0e556eb1f92dadd396a479a8bf933715935a7
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 100%
+source-wordcount: '364'
+ht-degree: 91%
 
 ---
 
@@ -39,12 +39,14 @@ AEM 사이트 템플릿을 통해 생성되는 사이트를 사용하면 테마�
 
 ## 사이트 테마 구조 {#structure}
 
-사이트 테마는 패키지 콘텐츠의 목적을 명확하게 반영하는 논리적 구조를 갖춘 패키지입니다. 사이트 테마는 다음과 같이 프론트엔드 프로젝트를 보여 주는 구조를 갖고 있습니다.
+사이트 테마는 패키지 콘텐츠의 목적을 명확하게 반영하는 논리적 구조를 갖춘 패키지입니다. 일반적인 프론트엔드 프로젝트의 경우 Adobe은 사이트 테마에 대해 다음 구조를 권장합니다.
 
-* `src/main.ts`: JS 및 CSS 테마의 주요 진입점
+* `src/theme.ts`: JS 및 CSS 테마의 주요 진입점
 * `src/site`: 전체 사이트에 적용되는 JS 및 CSS 파일
 * `src/components`: AEM 구성 요소와 관련된 JS 및 CSS 파일
 * `src/resources`: 아이콘, 로고 및 글꼴과 같은 정적 파일
+
+특정 프로젝트 요구 사항에 따라 기본 진입점 `src/theme.ts`이(가) 유지되는 한 테마 구조가 달라질 수 있습니다.
 
 ## 표준 사이트 테마 {#standard-site-theme}
 
