@@ -28,7 +28,7 @@ ht-degree: 0%
 >abstract="콘텐츠 전송 도구는 더 이상 사용자를 마이그레이션하지 않습니다. 사용자는 Admin Console에서 관리되어야 합니다."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="AEM Admin Console 설명서"
 >additional-url="https://adminconsole.adobe.com/" text="AEM Admin Console"
->
+
 Adobe Experience Manager(AEM)로 전환 여정의 일부로 기존 AEM 시스템에서 AEM as a Cloud Service으로 as a Cloud Service 그룹을 마이그레이션해야 합니다. 이 작업은 콘텐츠 전송 도구에서 수행합니다.
 
 AEM as a Cloud Service의 주요 변경 사항은 작성자 계층 액세스에 대한 Adobe ID의 완전히 통합된 사용입니다. 이 프로세스에서는 사용자 및 사용자 그룹을 관리하기 위해 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)을(를) 사용해야 합니다. 사용자 프로필 정보는 모든 Adobe 클라우드 애플리케이션에서 단일 사인온을 제공하는 IMS(Adobe Identity Management System)에 중앙 집중화됩니다. 자세한 내용은 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management)을 참조하세요. 이러한 변경 사항으로 인해 사용자가 IMS를 통해 처음 로그인할 때 AEM에 자동으로 생성됩니다.  따라서 CTT는 사용자를 클라우드 시스템으로 마이그레이션하지 않습니다.  IMS 사용자는 IMS 그룹에 넣어야 합니다. IMS 그룹은 마이그레이션되는 그룹 또는 마이그레이션되는 AEM 콘텐츠에 액세스할 수 있는 권한이 주어진 AEM 그룹에 있는 새 그룹으로 이동할 수 있습니다.  이 방법으로 클라우드 시스템의 사용자는 소스 AEM 시스템에서 보유했던 동일한 액세스 권한을 갖게 됩니다.
