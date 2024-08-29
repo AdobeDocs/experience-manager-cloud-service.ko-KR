@@ -4,7 +4,7 @@ description: 다양한 디바이스에서 적응형 Forms의 레이아웃 및 �
 feature: Adaptive Forms, Core Components
 keywords: 핵심 구성 요소를 기반으로 하는 적응형 양식 레이아웃, 양식에 대한 다양한 레이아웃, 동적 양식 레이아웃 AEM, AEM Cloud Service 양식 레이아웃, AEM 핵심 구성 요소의 양식 레이아웃 유형, 적응형 양식 레이아웃
 role: User, Developer, Admin
-source-git-commit: b06d86ffc620327a744f53733e3bf84fe8c03f2f
+source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 1%
@@ -44,7 +44,7 @@ ht-degree: 1%
 
 패널 레이아웃은 해당 컨텐츠를 더 쉽게 탐색하고 찾을 수 있도록 관련 필드를 구성하는 데 유용합니다. 패널 레이아웃은 적응형 양식의 개별, 섹션 또는 패널 내에 양식 구성 요소를 정렬합니다.
 
-![패널 레이아웃](/help/forms/assets/panel-layout.png){width="250" align="center"}
+![패널 레이아웃](/help/forms/assets/panel-layout.png)
 
 패널 레이아웃
 
@@ -54,7 +54,7 @@ ht-degree: 1%
 
 마법사 레이아웃은 복잡한 양식을 별도의 단계로 나누어 단순화하는 데 도움이 됩니다. 각 단계는 프로세스의 다른 부분을 나타내며 사용자는 **다음** 및 **이전** 단추를 사용하여 단계를 순차적으로 탐색합니다. 마법사 레이아웃을 사용하여 여러 섹션이나 단계가 포함된 양식을 만들 수 있습니다.
 
-![마법사 레이아웃](/help/forms/assets/wizard-layout-compare.gif){width="250" align="center"}
+![마법사 레이아웃](/help/forms/assets/wizard-layout-compare.gif)
 
 마법사 레이아웃
 
@@ -64,7 +64,7 @@ ht-degree: 1%
 
 세로 탭 레이아웃은 왼쪽 레이아웃의 탭이라고도 합니다. 세로 탭 레이아웃은 폼의 왼쪽을 따라 패널이나 섹션을 구성합니다. 읽기 및 탐색이 쉽도록 패널/섹션이 세로로 스택된 양식에 대한 일반적인 레이아웃입니다.
 
-![세로 레이아웃](/help/forms/assets/vertical-tab.gif){width="250" align="center"}
+![세로 레이아웃](/help/forms/assets/vertical-tab.gif)
 
 세로 탭 레이아웃
 
@@ -76,7 +76,7 @@ ht-degree: 1%
 수평 탭 레이아웃은 상단 레이아웃의 탭이라고도 합니다. 가로 탭 레이아웃은 한 행에 패널이나 섹션을 나란히 정렬합니다. 이 레이아웃은 양식 또는 패널의 너비에 걸쳐 양식 섹션을 선형 방식으로 표시합니다.
 
 
-![가로 레이아웃](/help/forms/assets/horizontal-layout.gif){width="250" align="center"}
+![가로 레이아웃](/help/forms/assets/horizontal-layout.gif)
 
 가로 탭 레이아웃
 
@@ -87,7 +87,7 @@ ht-degree: 1%
 
 아코디언 레이아웃은 적응형 양식의 축소 가능한 섹션이나 패널에 콘텐츠를 표시합니다. 섹션을 확장하면 내의 컨텐츠가 표시되고 다른 섹션은 축소된 상태로 유지됩니다. 이 레이아웃은 대량의 정보를 컴팩트한 형식으로 표시하는 데 이상적입니다.
 
-![아코디언 레이아웃](/help/forms/assets/accordion-layout-compare.gif){width="250" align="center"}
+![아코디언 레이아웃](/help/forms/assets/accordion-layout-compare.gif)
 
 어코디언 레이아웃
 
@@ -132,7 +132,7 @@ ht-degree: 1%
 1. 왼쪽 상단 모서리에서 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**&#x200B;를 선택합니다.
 1. 기존 적응형 양식이 이미 생성된 경우 편집 모드로 엽니다.
 
-   ![적응형 양식 열기](/help/forms/assets/insert-layout.png){width="250" align="center"}
+   ![적응형 양식 열기](/help/forms/assets/insert-layout.png)
 
    또는 [새 적응형 양식을 만들](/help/forms/creating-adaptive-form-core-components.md)수도 있습니다.
 
@@ -176,13 +176,13 @@ ht-degree: 1%
 
    ![가로 탭의 항목 탭](/help/forms/assets/tabs-on-top-items-tab.png){width="200" align="center"}
 
-2. 새 패널을 추가하려면 **추가** 아이콘을 클릭하십시오.
+1. 새 패널을 추가하려면 **추가** 아이콘을 클릭하십시오.
 
    ![새 패널 추가](/help/forms/assets/tabs-on-top-add-panel.png){width="200" align="center"}
 
    **추가** 아이콘을 클릭하면 **새 구성 요소 삽입** 대화 상자가 나타납니다.
 
-3. 패널 구성 요소를 선택합니다.
+1. 패널 구성 요소를 선택합니다.
 
    ![새 패널 추가](/help/forms/assets/tabs-on-top-new-panel.png){width="200" align="center"}
 
@@ -192,11 +192,11 @@ ht-degree: 1%
 
    새 패널의 이름을 입력합니다. 그렇지 않으면 가로 탭 구성 요소의 속성을 저장할 수 없습니다.
 
-4. 아래 그림과 같이 패널 이름을 지정합니다.
+1. 아래 그림과 같이 패널 이름을 지정합니다.
 
    ![패널 이름](/help/forms/assets/tabs-on-tops-panel-name.png){width="200" align="center"}
 
-5. **완료**&#x200B;를 클릭합니다.
+1. **완료**&#x200B;를 클릭합니다.
 
    **완료**&#x200B;를 클릭하면 세 개의 패널이 나란히 표시됩니다. 패널 이름은 각 패널의 제목으로 표시되며 양식 구성 요소를 각 패널에 추가할 수 있습니다.
 
@@ -204,15 +204,15 @@ ht-degree: 1%
 
    패널 구성 요소의 속성을 구성할 수 있습니다. 예를 들어 IT 요청 양식에 패널 제목이 포함되지 않은 경우 패널 구성 요소의 속성을 구성하는 단계입니다.
 
-6. 첫 번째 패널의 속성을 엽니다.
+1. 첫 번째 패널의 속성을 엽니다.
 
    ![패널 1 속성](/help/forms/assets/tabs-on-tops-panel1-properties.png){width="200" align="center"}
 
-7. **기본** 탭에서 **제목 숨기기** 확인란을 선택합니다.
+1. **기본** 탭에서 **제목 숨기기** 확인란을 선택합니다.
 
    ![제목 숨기기](/help/forms/assets/tabs-on-top-hide-panel.png){width="200" align="center"}
 
-8. **완료**&#x200B;를 클릭합니다.
+1. **완료**&#x200B;를 클릭합니다.
 
 마찬가지로 다른 두 패널의 제목도 숨길 수 있습니다. 완료되면 각 패널에 양식 구성 요소를 추가할 수 있습니다.
 
@@ -262,7 +262,7 @@ ht-degree: 1%
 
 1. 작성 환경의 오른쪽 상단 모서리에서 **[!UICONTROL 미리 보기]**&#x200B;를 클릭합니다.
 
-   ![가로 레이아웃](/help/forms/assets/horizontal-layout.gif){width="250" align="center"}
+   ![가로 레이아웃](/help/forms/assets/horizontal-layout.gif)
 
 [구성 요소를 드래그 앤 드롭하여](#extra-bytes)하여 각 패널에 양식 구성 요소를 추가할 수도 있습니다.
 
@@ -341,7 +341,7 @@ ht-degree: 1%
 
    레이아웃을 선택하면 그에 따라 레이아웃 내의 구성 요소 배열이 변경됩니다. 예를 들어, **[!UICONTROL 구성 요소 바꾸기]** 대화 상자에서 세로 탭 구성 요소를 선택합니다. 패널 배열이 왼쪽의 탭으로 변경됩니다.
 
-   ![세로 레이아웃](/help/forms/assets/vertical-tab.gif){width="250" align="center"}
+   ![세로 레이아웃](/help/forms/assets/vertical-tab.gif)
 
 ## 추가 바이트
 

@@ -3,7 +3,7 @@ title: Forms 포털 구성 요소를 사용하여 Adobe Experience Manager Sites
 description: AEM Sites 페이지에 양식을 나열하는 방법을 알아봅니다.
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 58533d9a950fa4dc0e043ef8cb935d65fc68d233
+source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Forms 포털의 **검색 및 목록 작성기** 구성 요소를 사용하여 Sites 페이지에 양식을 표시하고 나열할 수 있습니다. 사용자는 조직 요구 사항을 충족하기 위해 특정 기준에 따라 포괄적인 양식 목록을 구성하고 제공할 수 있습니다. 익명의 사용자는 사이트 페이지를 방문하여 사용 가능한 양식을 보고 검색할 수 있습니다. 화면의 오른쪽 상단에 있는 **정렬 기준** 드롭다운 옵션을 사용하여 나열된 양식을 오름차순 또는 내림차순으로 정렬할 수 있습니다.
 
-![검색 및 목록 작성자 아이콘](assets/search-and-lister-component.png){width="250" align="center"}
+![검색 및 목록 작성자 아이콘](assets/search-and-lister-component.png)
 
 ## 전제 조건
 
@@ -58,11 +58,11 @@ Sites 페이지에 **Search &amp; List** 포털 구성 요소를 추가하려면
 
 1. **편집** 모드로 AEM Sites 페이지를 엽니다.
 1. **[!UICONTROL 페이지 정보]** > **[!UICONTROL 템플릿 편집]**(으)로 이동
-   ![템플릿 정책 편집](/help/forms/assets/save-form-as-draft-edit-template.png){width="250" align="center"}
+   ![템플릿 정책 편집](/help/forms/assets/save-form-as-draft-edit-template.png)
 
 1. **[!UICONTROL 정책]**&#x200B;을 클릭하고 **[AEM Archetype 프로젝트 이름] - Forms 및 통신 포털**&#x200B;에서 **[!UICONTROL 검색 및 목록 작성자]** 확인란을 선택하십시오.
 
-   ![정책 선택](/help/forms/assets/search-lister-enable-policy.png){width="250" align="center"}
+   ![정책 선택](/help/forms/assets/search-lister-enable-policy.png)
 
 1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 1. 이제 작성 모드에서 AEM Sites 페이지를 다시 엽니다.
@@ -78,7 +78,7 @@ Sites 페이지에 **Search &amp; List** 포털 구성 요소를 추가하려면
 
 1. 대화 상자에서 사용 가능한 구성 요소를 탐색하고 목록에서 원하는 구성 요소를 선택합니다. 예를 들어 목록에서 **검색 및 목록 작성기** 구성 요소를 선택하여 **검색 및 목록 작성기** Forms 포털 구성 요소를 추가합니다.
 
-   ![검색 및 목록 작성자 구성 요소](/help/forms/assets/add-search-lister.png){width="250" align="center"}
+   ![검색 및 목록 작성자 구성 요소](/help/forms/assets/add-search-lister.png)
 
 이제 **검색 및 목록 작성기** 구성 요소의 속성을 구성하십시오.
 
@@ -88,7 +88,7 @@ Sites 페이지에 **Search &amp; List** 포털 구성 요소를 추가하려면
 
 ### 탭 표시
 
-![탭 표시](/help/forms/assets/search-and-lister-display-tab.png){width="250" align="center"}
+![탭 표시](/help/forms/assets/search-and-lister-display-tab.png)
 
 1. **[!UICONTROL 제목]**&#x200B;에서 검색 및 목록 구성 요소의 제목을 지정합니다. 직설적인 제목을 사용하면 사용자가 양식 목록에서 빠른 검색을 수행할 수 있습니다.
 1. **[!UICONTROL 레이아웃]** 목록에서 카드 또는 목록 형식으로 양식을 나타내는 레이아웃을 선택하십시오.
@@ -97,14 +97,14 @@ Sites 페이지에 **Search &amp; List** 포털 구성 요소를 추가하려면
 
 ### 에셋 탭
 
-![자산 탭](/help/forms/assets/search-and-lister-asset-tab.png){width="250" align="center"}
+![자산 탭](/help/forms/assets/search-and-lister-asset-tab.png)
 
 1. **[!UICONTROL 자산 폴더]** 탭에서 양식을 가져와서 페이지에 나열하는 위치를 지정합니다.
 1. **[!UICONTROL 다른 위치 추가]**&#x200B;를 사용하여 여러 폴더 위치를 구성할 수 있습니다.
 
 ### 결과 탭
 
-![탭 표시](/help/forms/assets/search-and-lister-result-tab.png){width="250" align="center"}
+![탭 표시](/help/forms/assets/search-and-lister-result-tab.png)
 
 **[!UICONTROL 결과]** 탭에서 페이지당 표시할 최대 양식 수를 구성합니다. 기본값은 페이지당 8개의 양식입니다.
 
@@ -112,7 +112,7 @@ Sites 페이지에 **Search &amp; List** 포털 구성 요소를 추가하려면
 
 양식 목록을 보려면 **검색 및 목록 작성기** Forms 포털 구성 요소를 사용하십시오. 화면에 표시된 **Assets** 폴더의 양식 목록을 보려면 AEM Sites 페이지를 미리 봅니다. 검색 창을 사용하여 특정 양식을 검색할 수도 있습니다.
 
-![검색 및 목록 작성자 아이콘](assets/search-and-lister-component.png){width="250" align="center"}
+![검색 및 목록 작성자 아이콘](assets/search-and-lister-component.png)
 
 <!--
 ## Configure Azure Storage for Adaptive Forms {#configure-azure-storage-adaptive-forms}

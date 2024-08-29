@@ -5,10 +5,10 @@ exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: power automate에 AEM forms 연결, Power Automate AEM Forms, Adaptive Forms에 power automate 통합, Adaptive Forms에서 Power Automate로 데이터 전송
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: ae2815a49a674521344ded8da009290c4d999fdf
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 13%
+source-wordcount: '1209'
+ht-degree: 12%
 
 ---
 
@@ -72,14 +72,14 @@ Forms as a Cloud Service 인스턴스를 Microsoft® Power Automate와 연결하
    * 액세스 토큰(암시적 흐름에 사용됨)
    * ID 토큰(암시적 흐름과 하이브리드 흐름에 사용)
 
-1. API 권한 페이지에서 권한 추가를 클릭합니다.
-1. Microsoft® API에서 흐름 서비스를 선택하고 다음 권한을 선택합니다.
+1. API 권한 페이지에서 `Add a permission`을(를) 클릭합니다.
+
+1. Microsoft® API에서 `Power Automate`을(를) 선택하고 다음 권한을 선택합니다.
    * Flows.Manage.All
    * Flows.Read.All
-
-   권한 추가 를 클릭하여 권한을 저장합니다.
-1. API 권한 페이지에서 권한 추가를 클릭합니다. 내 조직에서 사용하는 API를 선택하고 `DataVerse`을(를) 검색합니다.
-1. user_impersonation을 활성화하고 권한 추가를 클릭합니다.
+   * GCC 권한(GCC(정부 클라우드 컴퓨팅) 테넌트에 연결하려는 경우 선택 사항)
+`Add permissions`을(를) 클릭하여 권한을 저장합니다.
+1. API 권한 페이지에서 `Add a permission`을(를) 클릭합니다. 내 조직에서 사용하는 API를 선택하고 `DataVerse`을(를) 검색한 다음 `user_impersonation` `Add` 권한을 클릭합니다.
 1. (선택 사항) 인증서 및 암호 페이지에서 새 클라이언트 암호를 클릭합니다. 클라이언트 암호 추가 화면에서 암호가 만료될 수 있는 설명 및 기간을 입력하고 추가를 클릭합니다. 비밀 문자열이 생성됩니다.
 1. 조직별 [Dynamics 환경 URL](https://docs.microsoft.com/en-us/power-automate/web-api#compose-http-requests)을(를) 메모해 두십시오.
 
@@ -88,15 +88,15 @@ Forms as a Cloud Service 인스턴스를 Microsoft® Power Automate와 연결하
 1. AEM Forms 작성자 인스턴스에서 **[!UICONTROL 도구]** ![hammer](assets/hammer.png) > **[!UICONTROL 일반]** > **[!UICONTROL 구성 브라우저]**&#x200B;로 이동합니다.
 1. **[!UICONTROL 구성 브라우저]** 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 구성 만들기]** 대화 상자에서 구성에 대한 **[!UICONTROL 제목]**&#x200B;을 지정하고 **[!UICONTROL 클라우드 구성]**&#x200B;을 사용하도록 설정하고 **[!UICONTROL 만들기]**&#x200B;를 선택합니다. 이를 통해 Cloud Service를 저장하는 구성 컨테이너가 생성됩니다. 폴더 이름에는 공백이 없어야 합니다.
-1. **[!UICONTROL 도구]** ![hammer](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft®® Power Automate Dataverse]**(으)로 이동하여 이전 단계에서 만든 구성 컨테이너를 엽니다.
+1. **[!UICONTROL 도구]** ![hammer](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® Power Automate Dataverse]**(으)로 이동하여 이전 단계에서 만든 구성 컨테이너를 엽니다.
 
 
    >[!NOTE]
    >
    >적응형 양식을 만들 때 **[!UICONTROL 구성 컨테이너]** 필드에 컨테이너 이름을 지정하십시오.
 
-1. 구성 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 선택하여 AEM Forms에서 [!DNL Microsoft®®® Power Automate Flow Service] 구성을 만듭니다.
-1. **[!UICONTROL Microsoft®®(r) Power Automate에 대한 Dataverse 서비스 구성]** 페이지에서 **[!UICONTROL 클라이언트 ID]**(응용 프로그램 ID라고도 함), **[!UICONTROL 클라이언트 암호]**, **[!UICONTROL OAuth URL]** 및 **[!UICONTROL 동적 환경 URL]**&#x200B;을 지정합니다. 이전 섹션에서 만든 [Microsoft® Azure Active Directory 응용 프로그램](#ms-power-automate-application)의 클라이언트 ID, 클라이언트 암호, OAuth URL 및 동적 환경 URL을 사용합니다. Microsoft® Azure Active Directory 애플리케이션 UI의 끝점 옵션을 사용하여 OAuth URL 찾기
+1. 구성 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 선택하여 AEM Forms에서 [!DNL Microsoft® Power Automate Flow Service] 구성을 만듭니다.
+1. **[!UICONTROL Microsoft® Power Automate에 대한 Dataverse 서비스 구성]** 페이지에서 **[!UICONTROL 클라이언트 ID]**(응용 프로그램 ID라고도 함), **[!UICONTROL 클라이언트 암호]**, **[!UICONTROL OAuth URL]** 및 **[!UICONTROL 동적 환경 URL]**&#x200B;을 지정합니다. 이전 섹션에서 만든 [Microsoft® Azure Active Directory 응용 프로그램](#ms-power-automate-application)의 클라이언트 ID, 클라이언트 암호, OAuth URL 및 동적 환경 URL을 사용합니다. Microsoft® Azure Active Directory 애플리케이션 UI의 끝점 옵션을 사용하여 OAuth URL 찾기
 
    ![Microsoft Power Automate 응용 프로그램 UI의 끝점 옵션을 사용하여 OAuth URL 찾기](assets/endpoints.png)
 
@@ -112,7 +112,18 @@ Forms as a Cloud Service 인스턴스를 Microsoft® Power Automate와 연결하
    >적응형 양식을 만들 때 **[!UICONTROL 구성 컨테이너]** 필드에 컨테이너 이름을 지정하십시오.
 
 1. 구성 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 선택하여 AEM Forms에서 [!DNL Microsoft® Power Automate Flow Service] 구성을 만듭니다.
+
+1. (선택 사항) GCC 테넌트에 연결하려면 `Connect to Microsoft GCC` 확인란을 선택하십시오.
+
+   >[!NOTE]
+   >
+   > GCC(정부 클라우드 컴퓨팅) 테넌트에 연결하려면 Microsoft Azure 포털에서 GCC 권한을 선택합니다.
+
+
+   ![Power Automate 클라우드 구성](/help/forms/assets/power-automate.png)
+
 1. **[!UICONTROL Microsoft® Power Automate에 대한 Dataverse 구성]** 페이지에서 **[!UICONTROL 클라이언트 ID]**(응용 프로그램 ID라고도 함), **[!UICONTROL 클라이언트 암호]**, **[!UICONTROL OAuth URL]** 및 **[!UICONTROL 동적 환경 URL]**&#x200B;을 지정합니다. 클라이언트 ID, 클라이언트 암호, OAuth URL 및 Dynamics 환경 ID를 사용합니다. Microsoft® Azure Active Directory 응용 프로그램 UI의 끝점 옵션을 사용하여 OAuth URL을 찾습니다. [내 흐름](https://us.flow.microsoft.com) 링크를 열고 [내 흐름]을 선택합니다. URL에 나열된 ID를 Dynamics 환경 ID로 사용합니다.
+
 1. **[!UICONTROL 연결]**&#x200B;을 선택합니다. 메시지가 표시되면 Microsoft® Azure 계정에 로그인합니다. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
 ### Publish Microsoft® Power Automate Dataverse 및 Microsoft® Power Automate Flow Service 클라우드 구성 모두 {#publish-microsoft-power-automate-dataverse-cloud-configuration}
