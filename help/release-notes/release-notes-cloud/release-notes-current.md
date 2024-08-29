@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: e11c869c2f8cc8847869ad67a2c752e7239bd44c
+source-git-commit: 9cc49bf83d278d4064faa1d0157201226a067cb1
 workflow-type: tm+mt
-source-wordcount: '1511'
-ht-degree: 72%
+source-wordcount: '1142'
+ht-degree: 51%
 
 ---
 
@@ -28,21 +28,35 @@ ht-degree: 72%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Cloud Service] 현재 기능 릴리스(2024.7.0)인 [!DNL Adobe Experience Manager]의 릴리스 날짜는 2024년 7월 25일입니다. 다음 기능 릴리스(2024.8.0)는 2024년 8월 29일에 예정되어 있습니다.
+[!DNL Cloud Service] 현재 기능 릴리스(2024.8.0)인 [!DNL Adobe Experience Manager]의 릴리스 날짜는 2024년 8월 29일입니다. 다음 기능 릴리스(2024.9.0)는 2024년 9월 26일에 예정되어 있습니다.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
 [ 여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
 
-## 릴리스 비디오 {#release-video}
+<!-- ## Release Video {#release-video}
 
-2024년 7월 릴리스 개요 비디오를 통해 2024.7.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
+Have a look at the August 2024 Release Overview video for a summary of the features added in the 2024.8.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3431707?quality=12)
+
+-->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Experience Manager Sites의 새로운 기능 {#new-feature-sites}
+
+**Edge Delivery Services를 위한 AEM 작성**
+
+기존 사이트 [상속](/help/sites-cloud/authoring/universal-editor/inheritance.md) 기능은 이제 다음을 포함하여 지원됩니다.
+
+* [AEM 론치](/help/sites-cloud/authoring/launches/overview.md)
+* 페이지 수준의 [MSM](/help/sites-cloud/administering/msm/overview.md)
+
+또한 다음과 같은 페이지 관리 기능이 지원됩니다.
+
+* [AEM 태그](/help/sites-cloud/authoring/sites-console/tags.md)를 [분류](/help/edge/wysiwyg-authoring/taxonomy.md)(으)로 Edge Delivery Services에 내보낼 수 있습니다.
+* Edge Delivery Services에 대한 [템플릿](/help/edge/wysiwyg-authoring/templates.md)이 곧 제공됩니다!
 
 ### 얼리 어답터 프로그램 {#sites-early-adopter}
 
@@ -50,87 +64,70 @@ ht-degree: 72%
 
 이제 클라우드 서비스에서 액세스 가능한 AEM의 새로운 기능인 [변형 생성](/help/generative-ai/generate-variations.md)을 통해 GenAI를 활용할 수 있습니다. 변형 생성은 생성형 AI를 사용하여 콘텐츠 제작을 생성하고 확장하는 데 도움이 됩니다. 프로그램 참여를 고려한다면 Adobe 계정 팀에 문의하십시오.
 
-**콘텐츠 조각 콘솔에서 자산 찾아보기**
-
-이제 콘텐츠 작성자는 콘텐츠 조각 콘솔을 종료하지 않고도 이미지 및 기타 자산을 찾아보고, 보고, 작업을 수행할 수 있습니다.
-
-![자산 찾아보기](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-browse.png)
-
-기능을 사용해 보고 피드백을 공유하고 싶으십니까? 공식 이메일 ID로 aemcs-headless-adopter@adobe.com에 이메일을 보내 얼리 어답터 프로그램에 대해 자세히 알아보십시오.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**자산 선택기를 사용하여 자산 업로드**
-
-이제 에셋 선택기를 사용하여 콘텐츠 작성자가 로컬 파일 시스템에서 찾아보거나 드래그하여 선택기에서 직접 최종 에셋을 업로드할 수 있습니다. 이렇게 하면 선택한 애플리케이션에서 최종 자산을 DAM에 업로드할 수 있습니다.
-
 ### Assets 보기의 새로운 기능 {#assets-view-new-features}
 
-**Content credentials 통합**
+**업데이트된 Adobe Firefly 이미지 생성**
 
-Experience Manager Assets은 이제 지원되는 이미지 형식에 대한 content credentials을 지원합니다. 이를 통해 GenAI를 사용하여 자산을 수정했는지 여부 등 자산의 계보와 생성 방법에 대한 정보를 제공합니다.
+Assetsas a Cloud Service 에서는 이제 Adobe Firefly을 사용하여 다양한 스타일의 Firefly 위젯을 생성합니다. 스타일, 컴포지션, 차원 등을 정의하고 내장된 Firefly 편집기를 사용하여 즉시 사용할 수 있도록 AEM Assets 저장소 내에서 직접 필요한 에셋을 빠르게 생성하고 저장할 수 있습니다.
 
-![Content credentials](/help/assets/assets/content-credentials.png)
+![Adobe Firefly 이미지 생성](/help/assets/assets/bugatti-type-57.png)
 
-**폴더 내용을 시각적으로 미리 봅니다**
+**PSB 파일 지원**
 
-이제 Experience Manager Assets은 컨텐츠를 찾아보거나 검색할 때 폴더 썸네일에 폴더 컨텐츠의 시각적 미리보기를 표시하여 AEM Assets 저장소 내에서 사용할 수 있는 자산의 검색 기능을 향상시킵니다.
+Assetsas a Cloud Service 는 기존 PSD 파일 지원 외에도 Photoshop 대용량 문서(SB 파일)를 지원합니다.
 
-<!--
+### Content Hub의 새로운 개선 사항 {#content-hub-new-enhancements}
 
+* 긴 파일 이름을 더 잘 처리하고 툴팁을 통해 전체 이름을 쉽게 확장할 수 있습니다.
+* 컨텐츠 종횡비에 맞게 썸네일을 개선하고 더 넓은 컨텐츠 영역을 커버했습니다.
+* 콘텐츠 허브에 지원되는 AEM의 사용자 지정 썸네일 경험.
+* 색상 검색 개선.
+* 향상된 구성 덕분에 경험을 저장할 수 있습니다.
+* 작성자 이름을 반영하도록 컬렉션의 정보 페이지가 개선되었습니다.
 
-**Content Credentials**
-
-Content Credentials feature in Assets view now provides detailed asset provenance data adhered to an asset. This helps to trace the enroute edits along the asset's lifecycle to prevent users from deception through deliberately tempered assets. This ensures content authenticity among users and fosters trust through transparency.
-
-When looking at the asset details, any image with content credentials added, such as those created with GenAI, displays the manifest details in a dedicated panel. If the asset is downloaded, published, or shared, the credentials remain intact with the asset.
-
-![check publish status1](/help/release-notes/assets/content-credentials.png)
-
--->
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### AEM Forms의 새로운 기능 {#forms-new-prerelease-features}
+### AEM Forms의 새로운 프리릴리스 기능 {#forms-new-prerelease-features}
 
-#### 핵심 구성 요소 기반의 적응형 양식을 위한 향상된 시각적 규칙 편집기
+#### 적응형 Forms 기반의 핵심 구성 요소에 대한 초안 자동 저장
 
-적응형 양식 작성자는 사용자 정의나 개발 팀의 도움 없이도 핵심 구성 요소가 시각적 규칙 편집기에서 사용할 수 있는 즉시 사용 가능한 양식 필드를 사용하여 복잡한 비즈니스 논리를 양식에 작성할 수 있습니다.
+이제 부분적으로 완료된 양식을 초안으로 자동으로 저장하는 자동 저장 기능을 사용할 수 있습니다. 나중에 다시 돌아와 동일한 장치나 다른 장치에서 작성을 완료할 수 있습니다. 이 기능은 사용자가 처음부터 양식 채우기를 다시 시작할 필요가 없으므로 양식 포기를 줄여 조직의 전환율을 개선합니다.
+
 
 ### AEM Forms의 얼리 액세스 기능 {#forms-new-early-access-features}
 
-AEM Forms 얼리 액세스 프로그램은 누구보다 먼저 최첨단 혁신에 독점적으로 액세스할 수 있는 특별한 기회를 제공하며, 혁신의 발전을 구체화하는 데 도움을 줍니다. 이 프로그램은 여러 혁신에 액세스할 수 있습니다.
+AEM Forms 조기 액세스 프로그램 은 혁신적인 최신 기술에 독점적으로 액세스하고 개발 환경을 구축할 수 있는 특별한 기회를 제공합니다.
 
 이 릴리스 정보에는 현재 릴리스에서 제공되는 혁신 사항이 나열되어 있습니다. 얼리 액세스 프로그램에서 사용할 수 있는 전체 혁신 목록은 [AEM Forms 얼리 액세스 프로그램 설명서](/help/forms/early-access-ea-features.md)를 참조하십시오.
 
-#### 범용 편집기를 사용하여 적응형 양식 작성
+#### AEM Forms AI Assistant
 
-Adobe Experience Manager [유니버설 편집기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)를 활용하여 Edge Delivery Service를 통해 제공되는 Headless 및 Headful 등록 경험에 대해 WYSIWYG 드래그-드롭 작성을 사용하는 적응형 양식을 만드십시오. 적응형 양식 작성자는 웹 페이지에서 양식의 변형에 대한 실험을 쉽게 만들고 시작할 수 있으며 최종 사용자에게 최상의 성능 경험을 결정할 수 있습니다.
+적응형 Forms을 위한 생성 AI는 양식 개발 프로세스에 완전히 새로운 수준의 권한과 편의성을 제공합니다. 이를 통해 이전보다 더 나은 양식을 더 빠르게 작성할 수 있습니다.
+
+![생성 AI 도우미, 적응형 Forms](/help/forms/assets/generative-ai-assistant.png)
+
+오퍼의 생성 AI 기능은 다음과 같습니다.
+
+* **제품 쿼리에 대한 AI 도우미**: AEM 양식 관련 질문에 대한 답변을 즉시 받아 보십시오. AI 비서는 고유한 개인 지식 기반 역할을 하며 플랫폼 내에서 직접 통찰력 있는 지침과 추천을 제공합니다.
+
+* **적응형 양식 생성**: 생성 AI 프롬프트가 있는 완전한 양식을 쉽게 만들 수 있습니다. 생성 AI는 드롭오프를 줄이고 경험을 개인화하는 사용자 친화적인 양식을 자동으로 생성합니다.
+
+* **Forms에 대한 패널 생성**: 특정 데이터 수집 요구에 맞는 양식 섹션을 생성합니다. 예를 들어 결제 정보, 고객 환경 설정 또는 여행 세부 정보를 수집하기 위한 섹션을 생성합니다.
+
+* **양식 레이아웃 변경**: 생성 AI 프롬프트를 사용하여 다양한 레이아웃 및 디자인을 실험해 보십시오. 마법사나 탭 보기와 같은 다양한 레이아웃을 사용하여 폼에 가장 적합한 레이아웃을 선택하십시오. 생성 AI 프롬프트 를 사용하여 모바일 응답성에 대한 양식을 최적화하고 사용자가 좋아하는 시각적으로 매력적인 양식을 만들 수 있습니다.
+
+* **제출 동작 구성**: 양식에 대한 제출 동작을 쉽게 구성하려면 생성 AI 프롬프트를 사용합니다. 사전 빌드된 제출 액션 라이브러리 또는 자체 개발 팀에서 만들고 배포한 사용자 지정 제출 액션 목록에서 선택합니다.
 
 >[!IMPORTANT]
 >
-> 얼리 액세스 혁신을 위해 Adobe의 얼리 액세스 프로그램에 참여하고 싶다면 공식 주소에서 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)으로 이메일을 보내 액세스 권한을 요청하십시오. 전체 또는 특정 혁신에 대한 액세스를 요청할 수 있습니다.
+> 혁신적인 기능을 위해 조기 액세스 프로그램에 참여하려면 공식 주소에서 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)(으)로 관심 있는 기능 목록과 함께 전자 메일을 보내면 됩니다.
+
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
-
-### Self-Serve API 키를 사용하여 CDN에서 컨텐츠 제거 {#purge-cdn}
-
-HTTP Cache-Control 헤더를 사용하여 TTL 을 설정하는 것은 콘텐츠 전달 성능과 콘텐츠 신선도의 균형을 유지하는 효과적인 방법입니다. 그러나 업데이트된 콘텐츠를 즉시 제공하는 것이 중요한 시나리오에서는 CDN 캐시 를 직접 제거하는 것이 유용할 수 있습니다.
-
-[Cloud Manager 구성 파이프라인을 사용하여 제거 API 토큰을 셀프 서비스로 구성](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)하여 다음 변형 중 하나로 [제거 API를 호출](/help/implementing/dispatcher/cdn-cache-purge.md)할 수 있습니다.
-* 단일 URL
-* 태그를 사용하는 여러 URL
-* 전체 CDN 캐시 삭제
-
-### 고객 관리 CDN을 위한 X-AEM-Edge-Key의 셀프서비스 구성 {#customermanaged-keys}
-
-이전에는 고객 관리형 콘텐츠 전송 네트워크 구성에 필요한 X-AEM-Edge-Key를 생성하려면 지원 티켓이 필요했습니다. 이제 구성 파이프라인을 사용하여 배포되는 구성 파일에서 키 값을 선언하여 새 환경 온보딩에 대한 지연을 제거하여 셀프서비스를 합니다. [자세히 알아보기](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
-
-### 트래픽 필터 규칙 경고 {#traffic-filter-rules-alerts}
-
-선택적으로 라이선스가 부여된 웹 응용 프로그램 방화벽(WAF) 규칙을 포함하는 트래픽 필터 규칙을 사용하면 차단할 트래픽을 구성할 수 있습니다.
-
-이제 트래픽 필터 규칙이 트리거될 때마다 [경고를 구독](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts)할 수 있습니다. 액션 센터 이메일 알림은 특정 트래픽 상황이 발생할 때 적절한 조치를 취할 수 있도록 지속적으로 정보를 제공해 줍니다.
 
 ### 콘텐츠 게재 관련 얼리 어답터 프로그램 {#foundation-early-adopter}
 
@@ -152,33 +149,6 @@ AEM 6.5와 유사하게 Apache/Dispatcher는 게시 저장소의 특정 위치�
 
 이제 Adobe Managed CDN은 에지 수준 동적 웹 콘텐츠 어셈블리를 위한 마크업 언어인 [ESI(에지측 포함)](/help/implementing/dispatcher/edge-side-includes.md)를 지원합니다. ESI 스니펫을 포함하면 더 높은 TTL을 사용하여 CDN에서 전체 HTML 페이지를 캐싱하는 동시에 더 높은 케이던스 업데이트(낮은 TTL)가 필요한 작은 섹션을 출처에서 더 자주 가져올 수 있습니다. <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
-### 콘텐츠 상태 관련 액션 센터 알림 얼리 어답터 프로그램 {#actions-center-notifications}
-
-[액션 센터](/help/operations/actions-center.md)는 중요한 사고가 발생하거나 사용자가 사전 예방 조치를 취해야 할 코드 또는 구성에 대해 발견한 경우 이메일 알림을 보냅니다. Adobe는 이제 콘텐츠 상태와 관련된 몇 가지 새로운 유형의 알림을 도입했습니다. 이 기능은 얼리 어답터 프로그램을 통해 사용할 수 있습니다. 참여하려면 Adobe 고객 지원 센터에 문의하십시오.
-
-#### 페이지에 많은 수의 노드가 포함됨 {#page-nodes}
-
-노드 수가 많으면 렌더링 성능이 저하되고 페이지 로드 시간이 단축될 수 있습니다. 페이지에서 많은 수의 노드가 감지되면 액션 센터를 통해 사전 알림을 받아 페이지 내 총 노드 수를 줄이는 데 필요한 조치를 취할 수 있습니다.
-
-#### 실행 중인 워크플로 인스턴스 수가 너무 많음 {#running-workflows}
-
-작성자 환경에서 실행 중인 워크플로 수가 많으면 워크플로 엔진 성능이 영향을 받습니다. 실행 중인 워크플로 인스턴스가 너무 많이 감지되면 액션 센터를 통해 사전 알림을 받습니다. 이 프로세스를 통해 불필요하게 실행 중인 워크플로를 종료하도록 제거 작업을 구성할 수 있습니다.
-
-#### 사용자 정의 그룹에 사용자가 바로 추가됨 {#users-customgroups}
-
-사용자가 사용자 정의 그룹에 바로 추가되면 액션 센터를 통해 사전 알림을 받습니다. 이 프로세스를 통해 관련 IMS 그룹에 사용자를 추가한 다음 해당 IMS 그룹을 AEM 그룹의 멤버로 포함하여 IMS 모범 사례를 따를 수 있습니다.
-
-#### JCR 콘텐츠 누락 {#jcr-content}
-
-JCR 콘텐츠 누락이 감지되면 액션 센터를 통해 사전 알림을 받습니다. 이러한 접근 방식을 통해 누락된 콘텐츠를 추가하고 특정 AEM Assets 기능의 실패를 방지할 수 있습니다.
-
-#### 완료된 워크플로가 제거되지 않음 {#workflows}
-
-완료된 지 90일이 넘은 워크플로가 제거되지 않은 경우 액션 센터를 통해 사전 알림을 받습니다. 이러한 접근 방식은 워크플로 인스턴스 수를 줄여 워크플로 엔진의 성능을 개선하는 데 도움이 됩니다.
-
-#### Sling 리소스 누락 {#sling-resource}
-
-Sling 리소스 누락이 감지되면 액션 센터를 통해 사전 알림을 받습니다. 이러한 접근 방식을 통해 누락된 리소스를 추가하고 특정 AEM Assets 기능의 실패를 방지할 수 있습니다.
 
 ## [!DNL Experience Manager] 안내서 {#guides}
 
