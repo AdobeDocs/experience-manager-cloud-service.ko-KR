@@ -4,7 +4,7 @@ description: 다양한 디바이스에서 적응형 Forms의 레이아웃 및 �
 feature: Adaptive Forms, Core Components
 keywords: 핵심 구성 요소를 기반으로 하는 적응형 양식 레이아웃, 양식에 대한 다양한 레이아웃, 동적 양식 레이아웃 AEM, AEM Cloud Service 양식 레이아웃, AEM 핵심 구성 요소의 양식 레이아웃 유형, 적응형 양식 레이아웃
 role: User, Developer, Admin
-source-git-commit: 0397e5ec20b48a45df74d7d1c03eaae3739000dd
+source-git-commit: 9f14950170cc92d1ab433fdaa1a5d68b4dc53484
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 1%
@@ -326,8 +326,6 @@ ht-degree: 1%
 ## 기존 레이아웃을 새 레이아웃으로 바꾸는 방법
 
 양식의 레이아웃을 새 레이아웃으로 바꿀 수 있습니다. 이 레이아웃에는 양식 내에서 구성 요소가 정렬되고 표시되는 방식이 수정됩니다.
-
-
 
 양식의 기존 레이아웃을 바꾸려면 다음 단계를 수행하십시오.
 
