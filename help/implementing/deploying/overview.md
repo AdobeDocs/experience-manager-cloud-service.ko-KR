@@ -4,10 +4,10 @@ description: AEM as a Cloud Service에 배포할 때의 기본 사항 및 모범
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 1ad144fb630eca51f2004300c71d75f627cf9977
 workflow-type: tm+mt
-source-wordcount: '3441'
-ht-degree: 96%
+source-wordcount: '3440'
+ht-degree: 95%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 코드 개발의 기본 사항은 AEM On Premise 및 Managed Services 솔루션과 비교할 경우 AEM as a Cloud Service의 기본 사항과 유사합니다. 개발자는 코드를 작성하고 로컬에서 테스트한 다음, AEM as a Cloud Service의 원격 환경에 푸시합니다. Managed Services용 선택적 콘텐츠 게재 도구였던 Cloud Manager가 필요합니다. 이 게재 도구는 코드를 AEM as a Cloud Service 개발, 스테이징 및 프로덕션 환경에 배포하기 위한 유일한 메커니즘입니다. 앞서 언급한 환경을 배포하기 전에 빠른 기능 검증 및 디버깅을 위해 코드를 로컬 환경에서 [신속한 개발 환경](/help/implementing/developing/introduction/rapid-development-environments.md)으로 동기화할 수 있습니다.
 
-[AEM 버전](/help/implementing/deploying/aem-version-updates.md) 업데이트는 항상 [사용자 정의 코드](#customer-releases) 푸시와는 별도의 배포 이벤트입니다. 다른 관점에서 보면 사용자 정의 코드 릴리스는 상단에 배포되는 항목이므로 프로덕션에 있는 AEM 버전과 비교하여 테스트해야 합니다. 이후 발생하는 AEM 버전 업데이트는 자주 발생하고 자동으로 적용됩니다. 이미 배포된 사용자 정의 코드와 역으로 호환하기 위해 업데이트됩니다.
+[AEM 버전](/help/implementing/deploying/aem-version-updates.md) 업데이트는 항상 [사용자 정의 코드](#customer-releases) 푸시와는 별도의 배포 이벤트입니다. 다른 관점에서 보면 사용자 정의 코드 릴리스는 상단에 배포되는 항목이므로 프로덕션에 있는 AEM 버전과 비교하여 테스트해야 합니다. 이후 발생하는 AEM 버전 업데이트(빈번하고 자동으로 적용됨)는 이미 배포된 고객 코드와 역호환되도록 설계되었습니다.
 
 이 문서의 나머지 부분에서는 개발자가 AEM as a Cloud Service의 버전 업데이트 및 고객 업데이트로 작업하도록 사례를 조정하는 방법에 대해 설명합니다.
 
