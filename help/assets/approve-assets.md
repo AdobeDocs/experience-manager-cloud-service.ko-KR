@@ -2,9 +2,10 @@
 title: Experience Manager에서 에셋 승인
 description: ' [!DNL Experience Manager]에서 자산을 승인하는 방법을 알아봅니다.'
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
+source-git-commit: 9b3b93100c45c7053549c3f9899a344ca7db104d
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '676'
 ht-degree: 2%
 
 ---
@@ -36,7 +37,7 @@ AEM Assets에서 에셋을 승인하여 에셋 관리를 간소화하여 에셋 
 
 ## 자산 승인 {#approve-assets}
 
-[!DNL Experience Manager]과(와) [!DNL Experience Manager Assets] 모두에서 에셋을 승인할 수 있습니다. [!DNL Experience Manager]에서 자산을 승인하려면 다음 단계를 수행하십시오.
+[!DNL Experience Manager Admin view]에서 자산을 승인하려면 다음 단계를 수행하십시오.
 
 1. 자산을 선택하고 상단 창에서 **[!UICONTROL 속성]**&#x200B;을(를) 클릭합니다.
 1. **[!UICONTROL 기본]** 탭에서 **[!UICONTROL 검토 상태]**(으)로 스크롤합니다.
@@ -51,7 +52,7 @@ AEM Assets에서 에셋을 승인하여 에셋 관리를 간소화하여 에셋 
 ## 자산 일괄 승인 {#bulk-approve-assets}
 
 여러 에셋을 한 번에 빠르게 승인하여 워크플로를 간소화합니다. 자산을 일괄 승인하여 승인 프로세스를 신속하게 진행할 수 있으므로 시간을 절약하고 생산성을 향상시킬 수 있습니다.
-<br>다음 단계에 따라 [!DNL Experience Manager]에서 대량 자산을 승인하십시오.
+<br>다음 단계에 따라 [!DNL Experience Manager Admin view]에서 대량 자산을 승인하십시오.
 
 1. 작성 환경(https://author-pXXX-eYYY.adobeaemcloud.com)에 폴더를 만듭니다. _XXX_&#x200B;을(를) 프로그램 ID로 바꾸고 _YYY_&#x200B;을(를) Experience Manager의 환경 ID로 바꿉니다.
 1. **[!UICONTROL 도구]** > **[!UICONTROL Assets]** > **[!UICONTROL 메타데이터 프로필]**&#x200B;로 이동합니다.
@@ -102,4 +103,3 @@ AEM as a Cloud Service 인스턴스에서 [!UICONTROL OpenAPI 기능이 있는 D
    >[!NOTE]
    >
    >승인된 에셋에 대한 게재 URL을 복사하는 옵션은 Assets 보기에서만 사용할 수 있습니다.
-
