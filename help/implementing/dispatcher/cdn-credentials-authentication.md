@@ -4,10 +4,10 @@ description: Cloud Manager 구성 파이프라인을 사용하여 배포되는 �
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: e8c40d6205bfa2de18374e5161fe0fea42c8ce32
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 3%
+source-wordcount: '1283'
+ht-degree: 6%
 
 ---
 
@@ -54,7 +54,7 @@ data:
           authenticator: edge-auth
 ```
 
-`data` 노드 위의 속성에 대한 설명은 [구성 파이프라인 사용](/help/operations/config-pipeline.md#common-syntax)을 참조하십시오. `kind` 속성 값은 *CDN*&#x200B;이고 `version` 속성은 `1`(으)로 설정해야 합니다.
+`data` 노드 위의 속성에 대한 설명은 [구성 파이프라인 사용하기](/help/operations/config-pipeline.md#common-syntax)를 참조하십시오. `kind` 속성 값은 *CDN*&#x200B;이고 `version` 속성은 `1`(으)로 설정해야 합니다.
 
 추가 속성은 다음과 같습니다.
 
@@ -100,7 +100,7 @@ data:
            authenticator: purge-auth
 ```
 
-`data` 노드 위의 속성에 대한 설명은 [구성 파이프라인 사용](/help/operations/config-pipeline.md#common-syntax)을 참조하십시오. `kind` 속성 값은 *CDN*&#x200B;이고 `version` 속성은 `1`(으)로 설정해야 합니다.
+`data` 노드 위의 속성에 대한 설명은 [구성 파이프라인 사용하기](/help/operations/config-pipeline.md#common-syntax)를 참조하십시오. `kind` 속성 값은 *CDN*&#x200B;이고 `version` 속성은 `1`(으)로 설정해야 합니다.
 
 추가 속성은 다음과 같습니다.
 
@@ -118,6 +118,8 @@ data:
 
 >[!NOTE]
 >제거 키를 참조하는 구성이 배포되기 전에 제거 키를 [암호 유형 Cloud Manager 환경 변수](/help/operations/config-pipeline.md#secret-env-vars)(으)로 구성해야 합니다.
+
+제거 키를 구성하고 CDN 캐시 제거를 수행하는 데 중점을 둔 [자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)를 참조할 수 있습니다.
 
 ## 기본 인증 {#basic-auth}
 
@@ -156,7 +158,7 @@ data:
            authenticator: my-basic-authenticator
 ```
 
-`data` 노드 위의 속성에 대한 설명은 [구성 파이프라인 사용](/help/operations/config-pipeline.md#common-syntax)을 참조하십시오. `kind` 속성 값은 *CDN*&#x200B;이고 `version` 속성은 `1`(으)로 설정해야 합니다.
+`data` 노드 위의 속성에 대한 설명은 [구성 파이프라인 사용하기](/help/operations/config-pipeline.md#common-syntax)를 참조하십시오. `kind` 속성 값은 *CDN*&#x200B;이고 `version` 속성은 `1`(으)로 설정해야 합니다.
 
 또한 구문에는 다음이 포함됩니다.
 

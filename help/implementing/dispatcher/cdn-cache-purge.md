@@ -4,9 +4,9 @@ description: API 호출에 사용할 수 있는 제거 API 토큰을 구성하�
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: 5b777171cb9246c2a0174985e060d7d1b6ed8591
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '450'
 ht-degree: 1%
 
 ---
@@ -30,6 +30,8 @@ AEM as a Cloud Service을 사용하면 제거 API 토큰을 구성할 수 있으
 
 >[!CAUTION]
 >특히 하드 플래그를 사용하여 CDN 캐시를 지우면 원본의 트래픽이 증가하며 제대로 실행되지 않을 경우 중단이 발생할 수 있습니다.
+
+제거 키를 구성하고 CDN 캐시 제거를 수행하는 데 중점을 둔 [자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)를 참조할 수 있습니다.
 
 ## 단일 URL 삭제 {#single-purge}
 
