@@ -4,9 +4,9 @@ description: Cloud Acceleration Manager을 사용하여 마이그레이션 세�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4d34dc8464a51bcc11ee435de4d19183b2f3e3b2
 workflow-type: tm+mt
-source-wordcount: '2905'
+source-wordcount: '2982'
 ht-degree: 12%
 
 ---
@@ -214,11 +214,20 @@ AEM의 각 노드에는 고유한 UUID가 있어야 합니다. 이 오류는 수
 >abstract="수집 실패의 일반적인 원인은 노드 속성 값의 최대 크기를 초과하는 것입니다. 이러한 상황을 해결하려면 BPA 보고서와 관련된 문서를 포함한 설명서를 따르십시오."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html" text="마이그레이션 사전 요구 사항"
 
-MongoDB에 저장된 노드 속성 값은 16MB를 초과할 수 없습니다. 노드 값이 지원되는 크기를 초과하면 수집이 실패하고 로그에 `BSONObjectTooLarge` 오류가 포함되고 최대값을 초과하는 노드를 지정합니다. MongoDB 제한 사항입니다.
+MongoDB에 저장된 노드 속성 값은 16MB를 초과할 수 없습니다. 노드 값이 지원되는 크기를 초과하면 수집이 실패하고 로그에 다음 중 하나가 포함됩니다.
+
+* `BSONObjectTooLarge` 오류 및 최대값을 초과하는 노드 지정 또는
+* 최대 크기를 초과하는 유니코드 문자가 포함되어 있을 수 있는 노드가 있음을 나타내는 `BsonMaximumSizeExceededException` **
+
+MongoDB 제한 사항입니다.
 
 자세한 내용 및 모든 큰 노드를 찾는 데 도움이 될 수 있는 Oak 도구에 대한 링크는 [콘텐츠 전송 도구를 위한 필수 구성 요소](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)의 `Node property value in MongoDB` 메모를 참조하십시오. 크기가 큰 모든 노드가 복구되면 추출 및 수집을 다시 실행합니다.
 
 이러한 제한을 방지하려면 소스 AEM 인스턴스에서 [모범 사례 분석기](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)를 실행하고 표시되는 결과, 특히 [&quot;지원되지 않는 저장소 구조&quot;(URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs) 패턴을 검토하십시오.
+
+>[!NOTE]
+>
+>[모범 사례 분석기](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) 버전 2.1.50+는 최대 크기를 초과하는 유니코드 문자를 포함하는 큰 노드에 대해 보고합니다. 최신 버전을 실행 중인지 확인하십시오. 2.1.50 이전 버전의 BPA는 이러한 큰 노드를 식별하고 보고하지 않으며 위에서 언급한 사전 요구 사항 Oak 도구를 사용하여 개별적으로 검색해야 합니다.
 
 ### 수집 취소됨 {#ingestion-rescinded}
 
