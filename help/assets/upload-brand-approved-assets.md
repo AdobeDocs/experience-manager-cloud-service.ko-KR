@@ -2,17 +2,19 @@
 title: ' [!DNL Content Hub]에 브랜드 승인 에셋 업로드'
 description: 브랜드 승인 에셋을 Content Hub에 업로드하는 방법을 알아봅니다.
 role: User
-source-git-commit: c85b4e1c828ed1fb7f4063f965fe116215ca0244
+exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
+source-git-commit: 85fbbcf77bd5b2ef1a68454e2cf1d2202c8f90c4
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '895'
 ht-degree: 0%
 
 ---
 
-
 # Content Hub에 브랜드 승인 에셋 업로드 {#upload-brand-approved-assets-content-hub}
 
 자산을 추가할 권한이 있는 [Content Hub 사용자](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets)는 로컬 파일 시스템에서 Content Hub에 자산을 추가하거나 OneDrive 또는 Dropbox 데이터 원본에서 자산을 가져올 수 있습니다. 모든 에셋은 로컬 파일 시스템에서 사용할 수 있는 폴더 구조 또는 OneDrive 및 Dropbox 데이터 소스와 관계없이 Content Hub의 최상위 수준에 표시되어 검색 기능을 향상시킵니다.
+
+Assetsas a Cloud Service 에 `Approved`(으)로 표시된 자산은 Content Hub에서 자동으로 사용할 수 있습니다. 자세한 내용은 [Content Hub에 대한 자산 승인](/help/assets/approve-assets-content-hub.md)을 참조하세요.
 
 Content Hub을 사용하면 에셋 검색을 더욱 향상시킬 수 있습니다.
 
@@ -72,3 +74,14 @@ OneDrive 또는 Dropbox 데이터 소스에서 Content Hub에 자산을 추가�
 
 또한 관리자는 캠페인 이름, 키워드, 채널 등과 같은 에셋을 업로드하는 동안 표시되는 필수 및 선택 필드를 구성할 수 있습니다. 자세한 내용은 [Content Hub 사용자 인터페이스 구성](configure-content-hub-ui-options.md#configure-upload-options-content-hub)을 참조하십시오.
 
+## Content Hub을 사용하여 업로드된 에셋 관리 {#manage-assets-uploaded-using-content-hub}
+
+[에셋을 추가할 수 있는 권한이 있는 Content Hub 사용자](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets)는 로컬 파일 시스템에서 [Content Hub에 에셋을 추가](/help/assets/upload-brand-approved-assets.md)하거나 OneDrive 또는 Dropbox 데이터 원본에서 에셋을 가져올 수 있습니다. 모든 에셋은 로컬 파일 시스템에서 사용할 수 있는 폴더 구조 또는 OneDrive 및 Dropbox 데이터 소스와 관계없이 Content Hub의 최상위 수준에 표시되어 검색 기능을 향상시킵니다.
+
+Content Hub을 사용하여 업로드한 에셋의 표시 여부는 [자동 승인 토글](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub)을 활성화했는지 여부에 따라 다릅니다.
+
+* **[!UICONTROL 자동 승인]** 전환이 활성화된 경우 Content Hub을 사용하여 업로드하는 에셋을 자동으로 사용할 수 있습니다.
+
+* **[!UICONTROL 자동 승인]** 전환이 비활성화된 경우 Content Hub을 사용하여 업로드한 자산이 자동으로 표시되지 않습니다. 자산은 Assets as a Cloud Service 환경의 `hydrated-assets` 폴더에서 사용할 수 있습니다. 폴더로 이동한 다음 해당 에셋의 상태를 [일괄 편집](#bulk-approve-assets-content-hub)하여 해당 에셋을 Content Hub에 표시할 수 있도록 `Approved`합니다.
+
+![Content Hub 승인 프로세스](/help/assets/assets/content-hub-approval.png)
