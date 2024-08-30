@@ -4,9 +4,9 @@ description: 적응형 양식 기반의 핵심 구성 요소를 초안으로 저
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 2561145c37fe2ba6a38482fb2d1be614a971b418
+source-git-commit: 2933b3be569724800a77b4ea93e91441046746f6
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1384'
 ht-degree: 3%
 
 ---
@@ -44,6 +44,8 @@ ht-degree: 3%
 1. **[!UICONTROL Azure 저장소 계정]** 및 **[!UICONTROL Azure 액세스 키]** 필드에 [!DNL Azure] 저장소 계정의 이름을 지정하십시오.
 
    ![Azure Storage 구성](/help/forms/assets/save-form-as-draft-azure-storage.png)
+
+   `Azure Storage Account` 텍스트 상자에 `Connection String`을(를) 입력하고 `Azure Access key` 텍스트 상자에 `Azure Key`을(를) 입력합니다.
 
 1. **저장**&#x200B;을 클릭합니다.
 
