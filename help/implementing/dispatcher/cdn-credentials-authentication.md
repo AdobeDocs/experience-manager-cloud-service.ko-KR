@@ -4,10 +4,10 @@ description: Cloud Manager 구성 파이프라인을 사용하여 배포되는 �
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: e8c40d6205bfa2de18374e5161fe0fea42c8ce32
+source-git-commit: c8059260ab0ff13ed85f55eda2e09ca5cb678fa9
 workflow-type: tm+mt
-source-wordcount: '1283'
-ht-degree: 6%
+source-wordcount: '1379'
+ht-degree: 5%
 
 ---
 
@@ -73,6 +73,29 @@ data:
 
 >[!NOTE]
 >Edge 키를 참조하는 구성을 배포하기 전에 해당 키를 [암호 형식 Cloud Manager 환경 변수](/help/operations/config-pipeline.md#secret-env-vars)(으)로 구성해야 합니다.
+
+### 트래픽 차단 위험을 줄이기 위해 안전하게 마이그레이션 {#migrating-safely}
+
+사이트가 이미 라이브 상태인 경우 잘못된 구성이 공개 트래픽을 차단할 수 있으므로 고객 관리 CDN으로 마이그레이션할 때 주의하십시오. 이는 예상 X-AEM-Edge-Key 헤더 값이 있는 요청만 Adobe CDN에서 허용되기 때문입니다. 추가 조건이 일시적으로 인증 규칙에 포함되어 테스트 헤더가 포함된 경우에만 요청을 평가하는 접근 방식이 권장됩니다.
+
+```
+    - name: edge-auth-rule
+        when:
+          allOf:  
+            - { reqProperty: tier, equals: "publish" }
+            - { reqHeader: x-edge-test, equals: "test" }
+        action:
+          type: authenticate
+          authenticator: edge-auth
+```
+
+다음 `curl` 요청 패턴을 사용할 수 있습니다.
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <CONFIGURED_EDGE_KEY>" -H "x-edge-test: test"
+```
+
+성공적으로 테스트한 후 추가 조건을 제거하고 구성을 다시 배포할 수 있습니다.
 
 ## API 토큰 제거 {#purge-API-token}
 
