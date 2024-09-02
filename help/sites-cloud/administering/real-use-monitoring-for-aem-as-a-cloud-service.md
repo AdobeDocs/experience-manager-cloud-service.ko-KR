@@ -4,9 +4,9 @@ description: RUM(Real Use Monitoring)을 사용하여 웹 사이트 또는 애�
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 2515bc51fd54b014ffb701a8aef38cd08d6725b3
+source-git-commit: 1bb463fe59e89e6360dceefdaaec395084fc80c5
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1213'
 ht-degree: 1%
 
 ---
@@ -34,11 +34,6 @@ RUM을 사용하면 요청이 브라우저에 다시 제공될 때까지 URL을 
 ## Real Use Monitoring Service를 통해 혜택을 얻을 수 있는 사람은 누구입니까? {#who-can-benefit-from-rum-service}
 
 AEM은 고객 및 Adobe이 AEM 사이트와 상호 작용하는 방법을 이해할 수 있도록 RUM을 개발했습니다. RUM을 사용하여 성능 문제를 진단하고 실험의 효과를 측정할 수 있습니다. RUM은 샘플링을 통해 방문자의 개인 정보를 보존하며 - 모든 페이지 보기의 일부만 모니터링되며 - PII(개인 식별 정보)는 수집되지 않습니다.
-
-
-## Real Use Monitoring 서비스의 작동 방식 이해 {#understand-how-the-rum-service-works}
-
-AEM은 RUM을 사용하여 고객 및 Adobe이 방문자와 AEM 사이트의 상호 작용을 이해하는 데 도움을 줍니다. 성능 문제를 진단하고 실험의 효과를 측정할 수 있도록 도와줍니다. RUM은 샘플링을 통해 방문자의 개인 정보를 보존하며 - 모든 페이지 보기의 일부만 모니터링되며 - PII(개인 식별 정보)는 수집되지 않습니다.
 
 ## 모니터링 서비스 및 개인 정보 보호 실제 사용 {#rum-service-and-privacy}
 
