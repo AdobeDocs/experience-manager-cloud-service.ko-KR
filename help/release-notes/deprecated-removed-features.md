@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  [!DNL Cloud Service]에서 더 �
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: d80872b1df4d31d784745dabeb0e1680fc921cb8
 workflow-type: tm+mt
-source-wordcount: '2193'
+source-wordcount: '2172'
 ht-degree: 100%
 
 ---
@@ -95,12 +95,6 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
     <td>대안으로 Sling의 검색 API를 사용하십시오.</td>
     <td>2015</td>
     <td>제거됨</td>
-  </tr>
-  <tr>
-    <td>org.apache.sling.settings</td>
-    <td>AEM as a Cloud Service는 런타임 시 실행 모드 또는 파일 시스템 액세스를 지원하지 않습니다. </td>
-    <td>10/5/20</td>
-    <td>2021년 말</td>
   </tr>
   <tr>
     <td>org.apache.fop.apps</td>
