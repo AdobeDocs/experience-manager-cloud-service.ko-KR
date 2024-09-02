@@ -4,9 +4,9 @@ description: AEM as a Cloud Service용 로깅을 사용하여 중앙 로깅 서�
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: bc103cfe43f2c492b20ee692c742189d6e454856
 workflow-type: tm+mt
-source-wordcount: '2831'
+source-wordcount: '2834'
 ht-degree: 8%
 
 ---
@@ -144,12 +144,13 @@ AEM 로그 수준은 OSGi 구성을 통해 환경 유형별로 설정되며, OSG
 
 AEM Java 로그는 OSGi 구성으로 정의되므로 실행 모드 폴더를 사용하여 특정 AEM as a Cloud Service 환경을 타깃팅합니다.
 
-Sling LogManager 팩토리에 대한 OSGi 구성을 통해 사용자 지정 Java 패키지에 대한 Java 로깅을 구성합니다. 지원되는 구성 속성에는 두 가지가 있습니다.
+Sling LogManager 팩토리에 대한 OSGi 구성을 통해 사용자 지정 Java 패키지에 대한 Java 로깅을 구성합니다. 지원되는 구성 속성에는 세 가지가 있습니다.
 
 | OSGi 구성 속성 | 설명 |
 |---|---|
-| org.apache.sling.commons.log.names | 로그 문을 수집할 Java 패키지입니다. |
-| org.apache.sling.commons.log.level | org.apache.sling.commons.log.names에 의해 지정된 Java 패키지를 기록하는 로그 수준 |
+| `org.apache.sling.commons.log.names` | 로그 문을 수집할 Java 패키지입니다. |
+| `org.apache.sling.commons.log.level` | `org.apache.sling.commons.log.names`에서 지정한 Java 패키지를 기록할 로그 수준입니다. |
+| `org.apache.sling.commons.log.file` | 출력의 대상 지정: `logs/error.log` |
 
 다른 LogManager OSGi 구성 속성을 변경하면 AEM as a Cloud Service에서 가용성 문제가 발생할 수 있습니다.
 
@@ -163,6 +164,7 @@ Sling LogManager 팩토리에 대한 OSGi 구성을 통해 사용자 지정 Java
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "debug"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
@@ -174,6 +176,7 @@ Sling LogManager 팩토리에 대한 OSGi 구성을 통해 사용자 지정 Java
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "warn"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
@@ -185,6 +188,7 @@ Sling LogManager 팩토리에 대한 OSGi 구성을 통해 사용자 지정 Java
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "error"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
