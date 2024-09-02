@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  [!DNL Cloud Service]에서 더 �
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: d80872b1df4d31d784745dabeb0e1680fc921cb8
+source-git-commit: c5057120d68e1119211c7733a8eb0424590096bd
 workflow-type: tm+mt
 source-wordcount: '2172'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -18,8 +18,7 @@ ht-degree: 100%
 >title="AEM as a Cloud Service에서 사용 중단되거나 제거된 기능"
 >abstract="AEM as a Cloud Service에는 클라우드 기반 배포 모델이 있습니다. 일부 기능은 클라우드 기반 기능으로 대체되었으며 이 탭에서 이들 기능이 표시됩니다."
 
-
-Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 전반적인 고객 가치를 향상하도록 오랜 시간에 걸쳐 오래된 기능을 새롭게 만들거나 더 현대적인 대안으로 교체하기 위해 제품 기능을 지속해서 평가합니다. 또한 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]에서 클라우드 기반 배포 모델을 제공함에 따라, 일부 기능이 클라우드 기반 기능으로 대체되었습니다.
+Adobe은 항상 이전 기능과의 호환성을 신중하게 고려하면서 전반적인 고객 가치를 향상하도록 오랜 시간에 걸쳐 오래된 기능을 새롭게 만들거나 더 현대적인 대안으로 교체하기 위해 제품 기능을 지속적으로 평가합니다. 또한 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]에서 클라우드 기반 배포 모델을 제공함에 따라, 일부 기능이 클라우드 기반 기능으로 대체되었습니다.
 
 [!DNL Experience Manager] 기능의 제거/교체가 임박했음을 알리기 위해 다음 규칙이 적용됩니다.
 
