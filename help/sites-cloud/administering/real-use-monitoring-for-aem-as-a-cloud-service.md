@@ -4,9 +4,9 @@ description: RUM(Real Use Monitoring)을 사용하여 웹 사이트 또는 애�
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 1bb463fe59e89e6360dceefdaaec395084fc80c5
+source-git-commit: 917e9496dcbb8c6fe72b7a718211ee5bbecb3323
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1200'
 ht-degree: 1%
 
 ---
@@ -93,10 +93,11 @@ RUM 데이터를 분석할 때 페이지 보기 수 및 기타 성능 지표에 
 
 ## FAQ {#faq}
 
+<!-- REMOVED THIS FAQ AS PER EMAIL REQUEST FROM SHWETA DUA, SEPTEMBER 4, 2024 TO THE DL-AEM-DOCS GROUP 
+1. **Can customers integrate the RUM service scripts with third-party systems like Dynatrace?**
 
-1. **고객이 RUM 서비스 스크립트를 Dynatrace과 같은 서드파티 시스템과 통합할 수 있습니까?**
-
-   예.
+   Yes.
+-->
 
 1. **다음 페인트에 대한 상호 작용, 첫 번째 바이트에 대한 시간 및 첫 번째 내용 페인트 웹 바이탈 지표가 수집되고 있습니까?**
 
