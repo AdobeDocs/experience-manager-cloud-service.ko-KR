@@ -3,9 +3,9 @@ title: ' [!DNL Content Hub] 배포'
 description: Content Hub을 배포하고 활성화하고 다양한 유형의 권한을 가진 사용자에게 액세스를 제공하는 방법(자산 업로드, Adobe Express 사용자)과 사용자에게 관리자 권한을 제공하는 방법에 대해 알아봅니다.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: ea5ce2f443f1502a690b34cbf1b951ecf6aae9b2
+source-git-commit: 9ac22ebcca619d91a38111bd706986b8d4a4d189
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1567'
 ht-degree: 1%
 
 ---
@@ -47,6 +47,10 @@ Content Hub에 대한 권한의 변형은 다음과 같습니다.
 | AEM > 프로덕션 작성자 인스턴스 > AEM 관리자 | − | − | − | ✓ |
 | Adobe Express | − | − | ✓ | − |
 | **추가 정보** | [Content Hub 사용자](#onboard-content-hub-users) 보기 | 자산을 추가할 수 있는 권한이 있는 [Content Hub 사용자](#onboard-content-hub-users-add-assets) 보기 | 자산을 새 변형으로 다시 혼합할 수 있는 권한이 있는 [Content Hub 사용자](#onboard-content-hub-users-remix-assets)를 참조하세요. | [Content Hub 관리자](#onboard-content-hub-administrator) 보기 |
+
+>[!NOTE]
+>
+>[Experience Manager Assets 사용자](#experience-manager-assets-users)는 Experience Manager Assetsas a Cloud Service 에서 자산을 승인하여 해당 자산을 Content Hub에서 사용할 수 있도록 설정할 수 있습니다. 이러한 사용자는 Admin Console을 사용하여 AEM > 프로덕션 작성자 인스턴스 > AEM 사용자 제품 프로필에 추가해야 합니다.
 
 ## 1단계: Cloud Manager을 사용하여 Experience Manager Assets용 Content Hub 활성화 {#enable-content-hub}
 
