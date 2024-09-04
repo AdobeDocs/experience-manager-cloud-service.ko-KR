@@ -1,8 +1,8 @@
 ---
-source-git-commit: c7b78b5c4e4851d57314a437b3b7fa06c1f167d5
+source-git-commit: 57fb7a011cb2da853cdca4f3233cd56775f4a459
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 77%
+source-wordcount: '914'
+ht-degree: 75%
 
 ---
 # 스니펫 {#snippets}
@@ -155,3 +155,9 @@ ht-degree: 77%
 >
 >프론트엔드 파이프라인을 사용하여 사이트를 개발하는 경우 먼저 Cloud Manager IP 허용 목록을 추가해야 합니다.
 >[프론트엔드 파이프라인과 함께 Cloud Manager IP 허용 목록 사용](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)을 참조하세요.
+
+## Dynamic Media를 사용하여 작업 {#work-with-dynamic-media}
+
+>[!TIP]
+>
+>Dynamic Media을 처음 사용하십니까? Dynamic Media에 대한 빠른 개요 및 높은 수준의 개요를 보려면 [Dynamic Media 작업](/help/assets/dynamic-media/dynamic-media.md)을 참조하세요.

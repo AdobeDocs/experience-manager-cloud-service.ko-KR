@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management, Best Practices
 role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: 62af768370ee0affa4003a7ae0c520ad1a065e8c
+source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
 workflow-type: tm+mt
 source-wordcount: '1648'
 ht-degree: 1%
@@ -13,6 +13,8 @@ ht-degree: 1%
 ---
 
 # 이미지 품질 최적화 모범 사례 {#best-practices-for-optimizing-the-quality-of-your-images}
+
+{{work-with-dynamic-media}}
 
 많은 요소가 허용되는 결과를 렌더링하는 데 기여하므로 이미지 품질을 최적화하는 것은 시간이 오래 걸리는 프로세스일 수 있습니다. 결과는 개인들이 이미지 품질을 다르게 인식하기 때문에 부분적으로 주관적이다. 구조화된 실험이 핵심입니다.
 

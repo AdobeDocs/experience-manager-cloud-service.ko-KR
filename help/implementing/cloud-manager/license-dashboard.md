@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: eae5c75e1bf4f7201fe2c01d08737d36489ca3e4
+source-git-commit: 57fb7a011cb2da853cdca4f3233cd56775f4a459
 workflow-type: tm+mt
-source-wordcount: '1101'
-ht-degree: 31%
+source-wordcount: '925'
+ht-degree: 37%
 
 ---
 
@@ -65,9 +65,12 @@ Cloud Manager 라이선스 대시보드를 사용하면 다음 정보에 쉽게 
 
 ## 사용 세부 정보 보기 {#view-usage-details}
 
-**사용 세부 정보 보기** 단추를 사용하면 선택한 솔루션의 **사용 세부 정보** 창에 액세스할 수 있습니다. 이 창에서는 솔루션의 사용량을 보여 주는 차트를 포함하여 자세한 분류를 제공합니다. 사용 측정 방법은 선택한 솔루션에 따라 다릅니다.
+<!--
+The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution. -->
 
-### 사이트 사용 세부 정보 {#sites-usage-details}
+Cloud Manager의 라이선스 영역에 있는 **사용 세부 정보 보기** 단추는 현재 리소스 사용에 대한 자세한 분석을 제공합니다. 클릭하면 라이선스와 관련된 중요한 지표를 보여 주는 보고서나 대시보드가 열립니다. <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> 이 기능을 사용하면 더 나은 리소스 계획 및 최적화를 위한 통찰력을 제공하는 동시에 계약 한도 내에서 모니터링하고 유지할 수 있습니다.
+
+### Sites 사용량 세부 정보 {#sites-usage-details}
 
 **사이트 사용 세부 정보** 창은 [콘텐츠 요청을 기반으로 사이트 라이선스 사용에 대한 개요를 보여주는 그래프를 제공합니다.](#what-is-a-content-request)
 
@@ -77,27 +80,28 @@ Cloud Manager 라이선스 대시보드를 사용하면 다음 정보에 쉽게 
 
 창의 오른쪽에는 선택한 계약 연도의 시간 경과에 따라 프로그램별로 분류된 사용량을 보여주는 영역 차트가 표시됩니다. 마우스로 가리키면 선택한 시점의 프로그램당 세부 정보가 포함된 팝업이 표시됩니다.
 
-### Assets 사용 세부 정보 {#assets-usage-details}
+<!-- REMOVED AS PER CQDOC-21983
+### Assets usage details {#assets-usage-details}
 
-**Assets 사용 세부 정보** 창은 [저장소](#storage) 및 [표준 사용자를 기반으로 Assets 라이선스 사용에 대한 개요를 제공하는 그래프를 표시합니다.](#standard-users) 보기 간에 전환하려면 적절한 탭을 선택합니다.
+The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users.](#standard-users) Select the appropriate tab to toggle between the views.
 
-저장소 및 표준 사용자 보기 모두에 대해 **환경 유형** 드롭다운을 사용하여 프로덕션, 스테이징 및 개발 환경 간에 보기를 전환할 수 있습니다.
+For both storage and standard users views, you can use the **Environment Type** dropdown to toggle the view between production, stage, and development environments.
 
-#### 스토리지 {#storage}
+#### Storage {#storage}
 
-![저장소에 대한 Assets 사용 세부 정보 창](assets/assets-usage-details-storage.png)
+![Assets usage details window for storage](assets/assets-usage-details-storage.png)
 
-창 왼쪽에는 **계약 연도 보기** 드롭다운에서 선택한 계약 연도의 계약 분석을 보여주는 파이 차트가 표시됩니다.
+The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-창의 오른쪽에는 선택한 계약 연도의 시간 경과에 따라 프로그램별로 분류된 사용량을 보여주는 영역 차트가 표시됩니다. 마우스로 가리키면 선택한 시점의 프로그램당 세부 정보가 포함된 팝업이 표시됩니다.
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time.
 
-#### 표준 사용자 {#standard-users}
+#### Standard Users {#standard-users}
 
-![표준 사용자를 위한 Assets 사용 세부 정보 창](assets/assets-usage-details-standard-users.png)
+![Assets usage details window for standard-users](assets/assets-usage-details-standard-users.png)
 
-창 왼쪽에는 **계약 연도 보기** 드롭다운에서 선택한 계약 연도의 계약 분석을 보여주는 파이 차트가 표시됩니다.
+The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-창의 오른쪽에는 선택한 계약 연도의 시간 경과에 따라 프로그램별로 분류된 사용량을 보여주는 영역 차트가 표시됩니다. 마우스로 가리키면 선택한 시점의 프로그램당 세부 정보가 포함된 팝업이 표시됩니다.
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time. -->
 
 ## 자주 묻는 질문 {#faq}
 
