@@ -4,9 +4,9 @@ description: Cloud Manager 구성 파이프라인을 사용하여 배포되는 �
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: c8059260ab0ff13ed85f55eda2e09ca5cb678fa9
+source-git-commit: 5d51ff056d4e4f0fdbb3004cbac55803ac91f8ca
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1443'
 ht-degree: 5%
 
 ---
@@ -72,7 +72,7 @@ data:
    * 작업 - 의도한 인증자가 참조된 &quot;인증&quot;을 지정해야 합니다.
 
 >[!NOTE]
->Edge 키를 참조하는 구성을 배포하기 전에 해당 키를 [암호 형식 Cloud Manager 환경 변수](/help/operations/config-pipeline.md#secret-env-vars)(으)로 구성해야 합니다.
+>Edge 키를 참조하는 구성을 배포하기 전에 해당 키를 [암호 형식 Cloud Manager 환경 변수](/help/operations/config-pipeline.md#secret-env-vars)(으)로 구성해야 합니다. 최소 32바이트 길이의 고유한 임의 키를 사용하는 것이 좋습니다. 예를 들어 Open SSL 암호화 라이브러리는 `openssl rand -hex 32` 명령을 실행하여 임의 키를 생성할 수 있습니다.
 
 ### 트래픽 차단 위험을 줄이기 위해 안전하게 마이그레이션 {#migrating-safely}
 
@@ -140,7 +140,7 @@ data:
    * 작업 - 의도한 인증자가 참조된 &quot;인증&quot;을 지정해야 합니다.
 
 >[!NOTE]
->제거 키를 참조하는 구성이 배포되기 전에 제거 키를 [암호 유형 Cloud Manager 환경 변수](/help/operations/config-pipeline.md#secret-env-vars)(으)로 구성해야 합니다.
+>제거 키를 참조하는 구성이 배포되기 전에 제거 키를 [암호 유형 Cloud Manager 환경 변수](/help/operations/config-pipeline.md#secret-env-vars)(으)로 구성해야 합니다. 최소 32바이트 길이의 고유한 임의 키를 사용하는 것이 좋습니다. 예를 들어 Open SSL 암호화 라이브러리는 openssl rand -hex 32 명령을 실행하여 임의 키를 생성할 수 있습니다.
 
 제거 키를 구성하고 CDN 캐시 제거를 수행하는 데 중점을 둔 [자습서](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)를 참조할 수 있습니다.
 
