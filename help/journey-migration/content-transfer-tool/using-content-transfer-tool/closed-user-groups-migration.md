@@ -9,7 +9,7 @@ role: Admin
 source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 12%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cug_migration"
->title="폐쇄된 사용자 그룹의 마이그레이션"
+>title="폐쇄형 사용자 그룹의 마이그레이션"
 >abstract="폐쇄형 사용자 그룹(CUG)의 마이그레이션은 현재 마이그레이션 후 작동을 위한 몇 가지 확인 및 단계가 필요합니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html" text="AEM의 폐쇄형 사용자 그룹"
 

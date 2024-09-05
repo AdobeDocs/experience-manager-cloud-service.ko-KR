@@ -5,7 +5,7 @@ exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
 source-git-commit: 1f9526f8e8aa6a070e95827fab16431b0ee7566b
 workflow-type: tm+mt
 source-wordcount: '1315'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_groupmigration"
 >title="그룹 마이그레이션"
->abstract="컨텐츠 전송 도구 는 기존 Adobe Experience Manager(AEM) 시스템에서 AEM as a Cloud Service으로 그룹을 복사하는 데 도움이 됩니다."
+>abstract="콘텐츠 전송 도구는 그룹을 기존 AEM(Adobe Experience Manager) 시스템에서 AEM as a Cloud Service로 복사하는 데 유용합니다."
 
 >[!NOTE]
 >이전 버전의 사용자 매핑 도구에 대해서는 [레거시 설명서](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)를 참조하십시오.
@@ -24,9 +24,9 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermigration"
->title="사용자가 마이그레이션되지 않음"
->abstract="콘텐츠 전송 도구는 더 이상 사용자를 마이그레이션하지 않습니다. 사용자는 Admin Console에서 관리되어야 합니다."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="AEM Admin Console 설명서"
+>title="사용자는 마이그레이션되지 않습니다."
+>abstract="콘텐츠 전송 도구는 더 이상 사용자를 마이그레이션하지 않습니다. 사용자는 Admin Console에서 관리해야 합니다."
+>additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="AEM Admin Console 설명서"
 >additional-url="https://adminconsole.adobe.com/" text="AEM Admin Console"
 
 Adobe Experience Manager(AEM)로 전환 여정의 일부로 기존 AEM 시스템에서 AEM as a Cloud Service으로 as a Cloud Service 그룹을 마이그레이션해야 합니다. 이 작업은 콘텐츠 전송 도구에서 수행합니다.

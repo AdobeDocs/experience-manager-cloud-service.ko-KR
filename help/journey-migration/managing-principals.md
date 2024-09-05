@@ -1,20 +1,20 @@
 ---
-title: 주도자 관리
+title: 주체 관리
 description: Admin Console을 사용하여 마이그레이션할 주도자 관리
-source-git-commit: 5bf497fb2122cc3d3ff0903aeb680a35e90f33b0
+exl-id: a75598d0-8f59-466b-984e-dfe527388c2a
+source-git-commit: a5bec2c05b46f8db55762b7ee1f346f3bb099d24
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
-
-# 주도자 관리 {#managing-principals}
+# 주체 관리 {#managing-principals}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_managingprincipals"
->title="주도자 관리"
->abstract="콘텐츠 마이그레이션 중 또는 후에 사용자를 관리하기 위해 수행해야 하는 작업에 대해 알아봅니다"
+>title="주체 관리"
+>abstract="콘텐츠 마이그레이션 중 또는 이후에 사용자를 관리하기 위해 수행해야 할 작업에 대해 알아보기"
 
 콘텐츠가 AEM as a Cloud Service 클라우드 환경으로 전송되기 전에 Admin Console에서 수행할 수 있는 작업이 몇 가지 있습니다.  사용자 및 그룹은 사용자를 만들고, 그룹을 만들고, 그룹에 사용자를 할당합니다. 이러한 사용자 및 그룹은 모든 Adobe 클라우드 기반 서비스의 사용자 및 그룹을 관리하는 데 사용되는 Adobe의 Identity Management 서비스인 IMS에 있습니다.
 

@@ -1,24 +1,24 @@
 ---
-title: 마이그레이션 후 주도자 관리
+title: 마이그레이션 후 주체 관리
 description: IMS 및 AEM에서 사용자 및 그룹을 설정하는 방법 알아보기
-source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
+exl-id: 46c4abfb-7e28-4f18-a6d4-f729dd42ea7b
+source-git-commit: a5bec2c05b46f8db55762b7ee1f346f3bb099d24
 workflow-type: tm+mt
 source-wordcount: '773'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
-
-# 마이그레이션 후 주도자 관리 {#managing-principals-after-migration}
+# 마이그레이션 후 주체 관리 {#managing-principals-after-migration}
 
 >[!CONTEXTUALHELP]
 >id="managing-principals"
->title="마이그레이션 후 주도자 관리"
+>title="마이그레이션 후 주체 관리"
 >abstract="IMS 및 AEM에서 사용자 및 그룹을 설정하는 방법 알아보기"
 
 이 문서에서는 고객이 AEM as a Cloud Service 환경에서 작동하도록 IMS 및 AEM에서 사용자 및 그룹을 설정하는 데 수행해야 하는 높은 수준의 절차에 대해 설명합니다.
 
-## 주도자 관리 {#managing-principals}
+## 주체 관리 {#managing-principals}
 
 AEM as a Cloud Service의 경우 주로 Admin Console을 사용하여 사용자와 그룹을 관리해야 합니다.  마이그레이션을 고려할 때 이러한 작업 중 일부는 콘텐츠 마이그레이션이 수행되기 전에 수행할 수 있습니다.  기본적으로 이러한 주요 임무 그룹 중
 
@@ -56,5 +56,3 @@ AEM 보안 UI를 사용하여 IMS 그룹을 로컬 AEM 그룹에 할당합니다
 * 사용자가 처음 로그인하면 IMS 사용자가 AEM에 생성되고 새 그룹 및 이에 따라 원래 컬렉션 그룹에 액세스할 수 있습니다.
 
 참고: 사용자를 일괄 할당하는 경우 위의 단계를 사용하여 IMS에서 사용자를 만들어야 합니다. IMS에 이미 있는 사용자는 일괄 업로드로 다시 만들 수 없습니다.
-
-
