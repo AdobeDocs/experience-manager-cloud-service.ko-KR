@@ -1,20 +1,20 @@
 ---
-title: Edge Delivery Services을 사용한 WYSIWYG 작성에 대한 개발자 시작 안내서
-description: 이 안내서를 통해 Edge Delivery Services 및 WYSIWYG 콘텐츠 작성용 유니버설 편집기를 사용하여 새 Adobe Experience Manager 사이트를 시작하고 실행할 수 있습니다.
+title: Edge Delivery Services을 사용한 WYSIWYG 작성용 개발자 시작 안내서
+description: 이 안내서를 통해 Edge Delivery Services 및 WYSIWYG 컨텐츠 작성용 범용 편집기를 사용하여 새 Adobe Experience Manager 사이트를 시작하고 실행할 수 있습니다.
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
 workflow-type: tm+mt
-source-wordcount: '1298'
-ht-degree: 87%
+source-wordcount: '1207'
+ht-degree: 86%
 
 ---
 
 
-# Edge Delivery Services을 사용한 WYSIWYG 작성에 대한 개발자 시작 안내서 {#edge-dev-getting-started}
+# Edge Delivery Services을 사용한 WYSIWYG 작성용 개발자 시작 안내서 {#edge-dev-getting-started}
 
-이 안내서를 통해 Edge Delivery Services 및 WYSIWYG 콘텐츠 작성용 유니버설 편집기를 사용하여 새 Adobe Experience Manager 사이트를 시작하고 실행할 수 있습니다.
+이 안내서를 통해 Edge Delivery Services 및 WYSIWYG 컨텐츠 작성용 범용 편집기를 사용하여 새 Adobe Experience Manager 사이트를 시작하고 실행할 수 있습니다.
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -23,15 +23,6 @@ ht-degree: 87%
 * [Edge Delivery Service 튜토리얼](/help/edge/developer/tutorial.md)이 완료되었습니다.
 * [AEM Cloud Service 샌드박스](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)에 액세스할 수 있습니다.
 * [동일한 샌드박스 환경에서 Universal Editor를 활성화](/help/implementing/universal-editor/getting-started.md)했습니다.
-
-## 적합한 편집기 선택 {#editor-choice}
-
-AEM은 두 가지 콘텐츠 편집기를 제공하며 상황에 따라 사용할 항목을 선택할 수 있도록 지원합니다.
-
-* **Universal Editor** - 새 사이트의 기본 선택 항목이어야 합니다.
-* **AEM 페이지 편집기** - Edge Delivery Services로의 기존 AEM Sites 마이그레이션을 위해 선택해야 합니다.
-
-이 안내서는 Universal Editor를 사용하는 Edge Delivery Services의 AEM 프로젝트에 중점을 둡니다. 적합한 편집기를 선택하는 방법 및 기존 AEM Sites를 Edge Delivery Services로 마이그레이션하는 방법에 대한 자세한 내용은 [AEM과 함께 Edge Delivery Services 사용](/help/edge/using.md) 문서를 참조하십시오.
 
 ## Edge Delivery Services 개발 시 핵심 개념 {#core-concepts}
 
@@ -141,7 +132,7 @@ Edge Delivery는 GitHub를 활용하므로 GitHub 저장소에서 바로 코드�
 
    ![템플릿 가져오기](assets/edge-dev-getting-started/site-templates.png)
 
-1. GitHub에서 다운로드한 Edge Delivery Services 사이트 템플릿을 사용하여 WYSIWYG 작성을 업로드합니다.
+1. GitHub에서 다운로드한 Edge Delivery Services 사이트 템플릿을 사용하여 WYSIWYG 작성 을 업로드합니다.
 
    * 템플릿은 한 번만 업로드해야 합니다. 업로드한 후에는 추가 사이트를 만드는 데 다시 사용할 수 있습니다.
 
@@ -193,10 +184,10 @@ Universal Editor를 사용하여 새 사이트 편집을 마쳤다면 콘텐츠�
 
 ## 다음 단계 {#next-steps}
 
-이제 WYSIWYG를 Edge Delivery Services 프로젝트로 작성하고 있으므로 나만의 블록을 만들고 스타일을 지정할 수 있습니다.
+이제 Edge Delivery Services 프로젝트를 사용하여 WYSIWYG을 작성하고 작업했으므로 나만의 블록을 만들고 스타일을 지정할 수 있습니다.
 
 자세한 내용은 [Universal Editor에 사용하도록 구성된 블록 만들기](/help/edge/wysiwyg-authoring/create-block.md) 안내서를 참조하십시오.
 
 >[!TIP]
 >
->AEM as a Cloud Service을 콘텐츠 소스로 사용하여 WYSIWYG 작성을 위해 사용할 수 있는 새 Edge Delivery Services 프로젝트를 만드는 방법에 대한 전체적인 설명은 [이 AEM GEM 웨비나를 참조하십시오.](https://experienceleague.adobe.com/ko/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>AEM as a Cloud Service을 콘텐츠 소스로 사용하여 WYSIWYG 작성에 사용할 수 있는 새 Edge Delivery Services 프로젝트를 만드는 방법에 대한 전체 연습은 [이 AEM GEM 웨비나를 참조하십시오.](https://experienceleague.adobe.com/ko/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)

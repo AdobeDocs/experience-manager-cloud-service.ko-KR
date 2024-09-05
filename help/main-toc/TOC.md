@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: f7508f2113d81aae205c63a25097ed920b124011
+source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
 workflow-type: tm+mt
-source-wordcount: '5538'
+source-wordcount: '5533'
 ht-degree: 96%
 
 ---
@@ -225,7 +225,7 @@ ht-degree: 96%
       + [환경 만들기](/help/journey-onboarding/create-environments.md)
       + [AEM 제품 프로필 할당](/help/journey-onboarding/assign-profiles-aem.md)
       + [개발자 및 배포 관리자 작업](/help/journey-onboarding/developers.md)
-      + [주도자 관리](/help/journey-migration/managing-principals.md)
+      + [주체 관리](/help/journey-migration/managing-principals.md)
       + [AEM 사용자 작업](/help/journey-onboarding/aem-users.md)
       + [실행 체크리스트](/help/journey-onboarding/go-live-checklist.md)
    + AEM 참조 데모 추가 기능 여정 {#demo-add-on}
@@ -609,7 +609,7 @@ ht-degree: 96%
       + [자산, 폴더 및 컬렉션 보기](/help/assets/manage-notifications-assets-view.md)
       + [보고서 관리](/help/assets/manage-reports-assets-view.md)
       + [태그 관리](/help/assets/tagging-management-assets-view.md)
-      + [콘텐츠 자격 증명](/help/assets/content-credentials.md)
+      + [Content Credentials](/help/assets/content-credentials.md)
       + [AEM 및 Dynamic Media에 자산 게시](/help/assets/publish-assets-to-aem-and-dm.md)
 
 
@@ -913,7 +913,6 @@ ht-degree: 96%
       + [블록 만들기](/help/edge/wysiwyg-authoring/create-block.md)
       + [콘텐츠 모델링](/help/edge/wysiwyg-authoring/content-modeling.md)
       + [표 형식 데이터 및 스프레드시트](/help/edge/wysiwyg-authoring/tabular-data.md)
-      + [기존 프로젝트 및 Edge Delivery](/help/edge/wysiwyg-authoring/existing-projects.md)
       + [분류 체계 데이터 관리](/help/edge/wysiwyg-authoring/taxonomy.md)
       + [WIP 사이트 기능](/help/edge/wysiwyg-authoring/wip-features.md)
    + 문서 기반 작성 {#document-authoring}
