@@ -2,7 +2,8 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선택기'
 description: 에셋 선택기를 다양한 Adobe, 비Adobe 및 타사 애플리케이션과 통합합니다.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 3%
@@ -18,11 +19,11 @@ ht-degree: 3%
 
 Asset Selector를 OpenAPI 기능과 Dynamic Media과 통합하는 경우 다음 전제 조건을 사용하십시오.
 
-* [커뮤니케이션 방법](#overview-asset-selector.md#prereqs)
+* [커뮤니케이션 방법](/help/assets/overview-asset-selector.md#prereqs)
 * OpenAPI 기능을 사용하여 Dynamic Media에 액세스하려면 다음에 대한 라이센스가 있어야 합니다.
    * Assets 저장소(예: Experience Manager Assets as a Cloud Service)
    * AEM Dynamic Media.
-* 브랜드 일관성을 유지하기 위해 [승인된 자산](#approved-assets.md)만 사용할 수 있습니다.
+* 브랜드 일관성을 유지하기 위해 [승인된 자산](/help/assets/approve-assets.md)만 사용할 수 있습니다.
 
 ## OpenAPI 기능과 Dynamic Media 통합 {#adobe-app-integration-polaris}
 
@@ -36,7 +37,7 @@ Dynamic Media OpenAPI 프로세스와 에셋 선택기를 통합하려면 사용
 aemTierType:[1: "delivery"]
 ```
 
-이 구성을 사용하면 폴더 없이 또는 플랫 구조로 승인된 모든 에셋을 볼 수 있습니다. 자세한 내용을 보려면 [자산 선택기 속성](#asset-selector-properties.md) 아래의 `aemTierType` 속성으로 이동하십시오.
+이 구성을 사용하면 폴더 없이 또는 플랫 구조로 승인된 모든 에셋을 볼 수 있습니다. 자세한 내용을 보려면 [자산 선택기 속성](/help/assets/asset-selector-properties.md) 아래의 `aemTierType` 속성으로 이동하십시오.
 
 
 ### 승인된 자산에서 동적 게재 URL 만들기 {#create-dynamic-media-url}

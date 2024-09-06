@@ -2,7 +2,8 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선택기'
 description: 에셋 선택기를 사용하여 애플리케이션 내에서 에셋의 메타데이터와 렌디션을 검색, 찾기 및 검색할 수 있습니다.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 35%
@@ -19,7 +20,7 @@ ht-degree: 35%
 
 자산 선택기는 다음과 같은 많은 이점을 제공합니다.
 
-* 바닐라 JavaScript 라이브러리를 사용하여 [Adobe](#integrate-asset-selector-adobe-app.md) 또는 [Adobe 이외](#integrate-asset-selector.md) 응용 프로그램과 쉽게 통합할 수 있습니다.
+* 바닐라 JavaScript 라이브러리를 사용하여 [Adobe](/help/assets/integrate-asset-selector-adobe-app.md) 또는 [Adobe 이외](/help/assets/integrate-asset-selector-non-adobe-app.md) 응용 프로그램과 쉽게 통합할 수 있습니다.
 * 자산 선택기 패키지에 대한 업데이트가 애플리케이션에서 사용할 수 있는 자산 선택기에 자동으로 배포되므로 유지 관리가 간편합니다. 최신 수정 사항을 로드하기 위해 애플리케이션 내에서 업데이트를 수행하지 않아도 됩니다.
 * 애플리케이션 내에서 자산 선택기 표시를 제어하는 속성을 통해 손쉽게 사용자 정의할 수 있습니다.
 * 전체 텍스트 검색, 기본 제공 및 사용자 정의 필터를 통해 작성 경험 내에서 사용할 자산을 빠르게 탐색할 수 있습니다.
@@ -51,8 +52,8 @@ ht-degree: 35%
 
 **자세히 보기**
 
-* [에셋 선택기를 Adobe 앱과 통합](#integrate-asset-selector-adobe-app.md)
-* [에셋 선택기를 Adobe이 아닌 앱과 통합](#integrate-asset-selector-non-adobe-app.md)
+* [에셋 선택기를 Adobe 앱과 통합](/help/assets/integrate-asset-selector-adobe-app.md)
+* [에셋 선택기를 Adobe이 아닌 앱과 통합](/help/assets/integrate-asset-selector-non-adobe-app.md)
 * [자산 선택기 Dynamic Media Open API 통합](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
@@ -124,7 +125,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 * **[!UICONTROL Status]:**&#x200B;에는 `all`, `approved`, `rejected` 또는 `no status` 중 에셋의 현재 상태가 포함됩니다.
 * **[!UICONTROL 파일 형식]:**&#x200B;에 `folder`, `file`, `images`, `documents` 또는 `video`이(가) 포함되어 있습니다.
-* **[!UICONTROL 만료 상태]:**&#x200B;에서 만료 기간을 기준으로 자산을 언급합니다. `[!UICONTROL Expired]` 확인란을 선택하여 만료된 에셋을 필터링하거나, 에셋의 `[!UICONTROL Expiration Duration]`을(를) 설정하여 만료 기간에 따라 에셋을 표시할 수 있습니다. 에셋이 이미 만료되었거나 만료될 위기에 처하면 동일한 정보를 나타내는 배지가 나타납니다. 또한 만료된 에셋을 사용(또는 드래그 앤 드롭)할지 여부를 제어할 수 있습니다. [만료된 에셋 사용자 지정](#asset-selector-customization.md#customize-expired-assets)에 대해 자세히 알아보세요. 기본적으로 향후 30일 이내에 만료되는 자산에 대해 **곧 만료** 배지가 표시됩니다. 그러나 `expirationDate` 속성을 사용하여 만료를 구성할 수 있습니다.
+* **[!UICONTROL 만료 상태]:**&#x200B;에서 만료 기간을 기준으로 자산을 언급합니다. `[!UICONTROL Expired]` 확인란을 선택하여 만료된 에셋을 필터링하거나, 에셋의 `[!UICONTROL Expiration Duration]`을(를) 설정하여 만료 기간에 따라 에셋을 표시할 수 있습니다. 에셋이 이미 만료되었거나 만료될 위기에 처하면 동일한 정보를 나타내는 배지가 나타납니다. 또한 만료된 에셋을 사용(또는 드래그 앤 드롭)할지 여부를 제어할 수 있습니다. [만료된 에셋 사용자 지정](/help/assets/asset-selector-customization.md#customize-expired-assets)에 대해 자세히 알아보세요. 기본적으로 향후 30일 이내에 만료되는 자산에 대해 **곧 만료** 배지가 표시됩니다. 그러나 `expirationDate` 속성을 사용하여 만료를 구성할 수 있습니다.
 
   >[!TIP]
   >

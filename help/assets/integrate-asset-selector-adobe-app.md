@@ -2,13 +2,13 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선택기'
 description: 에셋 선택기를 다양한 Adobe, 비Adobe 및 타사 애플리케이션과 통합합니다.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: a0c030e2-2213-406b-ad92-4761f1e2ee9f
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 8%
 
 ---
-
 
 # 에셋 선택기와 Adobe 애플리케이션 통합 {#integrate-asset-selector-with-adobe-app}
 
@@ -18,7 +18,7 @@ ht-degree: 8%
 
 자산 선택기를 [!DNL Adobe] 응용 프로그램과 통합하는 경우 다음 사전 요구 사항을 사용하십시오.
 
-* [커뮤니케이션 방법](#overview-asset-selector.md#prereqs)
+* [커뮤니케이션 방법](/help/assets/overview-asset-selector.md#prereqs)
 * imsOrg
 * imsToken
 * apikey
@@ -27,7 +27,7 @@ ht-degree: 8%
 
 다음 예제에서는 Unified Shell에서 [!DNL Adobe] 응용 프로그램을 실행하거나 인증을 위해 이미 `imsToken`을(를) 생성한 경우 자산 선택기를 사용하는 방법을 보여 줍니다.
 
-아래 예제의 _줄 6-15_&#x200B;에 표시된 대로 `script` 태그를 사용하여 코드에 자산 선택기 패키지를 포함하십시오. 스크립트가 로드되면 `PureJSSelectors` 전역 변수를 사용할 수 있습니다. _행 16~23_&#x200B;에 표시된 대로 자산 선택기 [속성](#asset-selector-properties.md)을(를) 정의합니다. Adobe 응용 프로그램에서 인증하려면 `imsOrg` 및 `imsToken` 속성이 모두 필요합니다. `handleSelection` 속성은 선택한 자산을 처리하는 데 사용됩니다. 자산 선택기를 렌더링하려면 _17행_&#x200B;에서 언급한 대로 `renderAssetSelector` 기능을 호출합니다. _21~22행_&#x200B;에 표시된 대로 `<div>` 컨테이너 요소에 자산 선택기가 표시됩니다.
+아래 예제의 _줄 6-15_&#x200B;에 표시된 대로 `script` 태그를 사용하여 코드에 자산 선택기 패키지를 포함하십시오. 스크립트가 로드되면 `PureJSSelectors` 전역 변수를 사용할 수 있습니다. _행 16~23_&#x200B;에 표시된 대로 자산 선택기 [속성](/help/assets/asset-selector-properties.md)을(를) 정의합니다. Adobe 응용 프로그램에서 인증하려면 `imsOrg` 및 `imsToken` 속성이 모두 필요합니다. `handleSelection` 속성은 선택한 자산을 처리하는 데 사용됩니다. 자산 선택기를 렌더링하려면 _17행_&#x200B;에서 언급한 대로 `renderAssetSelector` 기능을 호출합니다. _21~22행_&#x200B;에 표시된 대로 `<div>` 컨테이너 요소에 자산 선택기가 표시됩니다.
 
 다음 단계를 따라 [!DNL Adobe] 응용 프로그램에서 자산 선택기를 사용할 수 있습니다.
 
@@ -153,4 +153,3 @@ onErrorReceived: (type, msg) => {
 >* [자산 선택기 속성](/help/assets/asset-selector-properties.md)
 >* [자산 선택기 Dynamic Media Open API 통합](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 >* [자산 선택기 사용자 지정](/help/assets/asset-selector-customization.md)
-

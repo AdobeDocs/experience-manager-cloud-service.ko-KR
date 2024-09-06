@@ -2,17 +2,17 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선택기'
 description: 에셋 선택기를 다양한 Adobe, 비Adobe 및 타사 애플리케이션과 통합합니다.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 1c0051a3-549c-4783-9fc1-594f424a70c3
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 47%
 
 ---
 
-
 # Vanilla JS를 사용하여 자산 선택기 통합 {#integration-using-vanilla-js}
 
-[!DNL Adobe] 또는 Adobe이 아닌 응용 프로그램을 [!DNL Experience Manager Assets] 리포지토리와 통합하고 응용 프로그램 내에서 에셋을 선택할 수 있습니다. [다양한 응용 프로그램과 자산 선택기 통합](#integrate-asset-selector.md)을 참조하십시오.
+[!DNL Adobe] 또는 Adobe이 아닌 응용 프로그램을 [!DNL Experience Manager Assets] 리포지토리와 통합하고 응용 프로그램 내에서 에셋을 선택할 수 있습니다. [다양한 응용 프로그램과 자산 선택기 통합](#asset-selector-integration-with-apps)을 참조하십시오.
 
 이러한 통합은 자산 선택기 패키지를 가져온 다음 Vanilla JavaScript 라이브러리를 사용하여 Assets as a Cloud Service에 연결하여 수행할 수 있습니다. `index.html` 또는 응용 프로그램 내의 적절한 파일을 편집하여 다음 작업을 수행합니다.
 
@@ -39,4 +39,3 @@ ht-degree: 47%
 >* [자산 선택기 사용자 지정](/help/assets/asset-selector-customization.md)
 >* [자산 선택기 속성](/help/assets/asset-selector-properties.md)
 >* [자산 선택기 Dynamic Media Open API 통합](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
-

@@ -2,17 +2,17 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선택기'
 description: 자산 선택기를 사용하여 요구 사항에 따라 사용자 지정하는 예제.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 7a393a96-f2a2-4a25-922c-577271cafc57
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 57%
+source-wordcount: '252'
+ht-degree: 50%
 
 ---
 
-
 # 자산 선택기 속성 사용 예 {#usage-examples}
 
-`index.html` 파일에서 자산 선택기 [속성](#asset-selector-properties.md)을 정의하여 애플리케이션 내 자산 선택기 표시를 사용자 정의할 수 있습니다.
+**index.html** 파일에서 자산 선택기 [속성](/help/assets/asset-selector-properties.md)을(를) 정의하여 응용 프로그램 내의 자산 선택기 표시를 사용자 지정할 수 있습니다.
 
 ## 예 1: 레일 보기의 자산 선택기
 
@@ -55,4 +55,3 @@ Assets display panel shows the out of the box metadata that can be displayed in 
 >* [자산 선택기 사용자 지정](/help/assets/asset-selector-customization.md)
 >* [자산 선택기 속성](/help/assets/asset-selector-properties.md)
 >* [자산 선택기 Dynamic Media Open API 통합](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
-

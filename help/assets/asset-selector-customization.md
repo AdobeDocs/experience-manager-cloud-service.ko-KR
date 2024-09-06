@@ -2,13 +2,13 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선택기'
 description: 함수를 사용하여 애플리케이션 내에서 에셋 선택기를 사용자 지정합니다.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1241'
 ht-degree: 24%
 
 ---
-
 
 # 자산 선택기 사용자 지정 {#asset-selector-customization}
 
@@ -21,7 +21,7 @@ ht-degree: 24%
 * [만료된 에셋 사용자 지정](#customize-expired-assets)
 * [상황별 호출 필터](#contextual-invocation-filter)
 
-[!DNL Experience Manager Assets] 저장소에 액세스하기 위한 인증 세부 정보를 정의하려면 응용 프로그램 구현 내의 `index.html` 파일 또는 유사한 파일에서 필수 구성 요소를 정의해야 합니다. 완료되면 요구 사항에 따라 코드 조각을 추가할 수 있습니다.
+[!DNL Experience Manager Assets] 저장소에 액세스하기 위한 인증 세부 정보를 정의하려면 응용 프로그램 구현 내의 **index.html** 파일 또는 유사한 파일에서 필수 구성 요소를 정의해야 합니다. 완료되면 요구 사항에 따라 코드 조각을 추가할 수 있습니다.
 
 ## 필터 패널 사용자 지정 {#customize-filter-panel}
 
@@ -186,12 +186,12 @@ interface SelectedAsset {
 | *tiff:imageLength* | 숫자 | 자산의 높이입니다. |
 | *computedMetadata* | `Record<string, any>` | 모든 종류의 모든 자산 메타데이터(저장소, 애플리케이션 또는 임베드된 메타데이터)에 대한 버킷을 나타내는 오브젝트입니다. |
 | *_links* | `Record<string, any>` | 관련 자산에 대한 하이퍼미디어 링크입니다. 메타데이터 및 렌디션과 같은 리소스에 대한 링크가 포함됩니다. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | 자산의 렌디션에 대한 정보가 포함된 오브젝트 배열입니다. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].href>* | 문자열 | 렌디션에 대한 URI입니다. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].type>* | 문자열 | 렌디션의 MIME 유형입니다. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].repo:size>&#39;* | 숫자 | 렌디션의 크기입니다(바이트). |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].width>* | 숫자 | 렌디션의 폭입니다. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].height>* | 숫자 | 렌디션의 높이입니다. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition>`* | `Array<Object>` | 자산의 렌디션에 대한 정보가 포함된 오브젝트 배열입니다. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].href>`* | 문자열 | 렌디션에 대한 URI입니다. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].type>`* | 문자열 | 렌디션의 MIME 유형입니다. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].repo:size>`* | 숫자 | 렌디션의 크기입니다(바이트). |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].width>`* | 숫자 | 렌디션의 폭입니다. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].height>`* | 숫자 | 렌디션의 높이입니다. |
 
 ### 오브젝트 스키마를 사용한 자산 선택 처리 {#handling-selection}
 

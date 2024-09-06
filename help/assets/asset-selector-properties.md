@@ -2,13 +2,13 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선택기'
 description: 자산 선택기를 사용하여 애플리케이션 내에서 자산의 메타데이터와 렌디션을 검색하고 찾을 수 있습니다.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '1277'
-ht-degree: 43%
+ht-degree: 42%
 
 ---
-
 
 # 자산 선택기 속성 {#asset-selector-properties}
 
@@ -33,8 +33,8 @@ ht-degree: 43%
 | *dropOptions* | `{allowList?: Object}` | 아니요 | | “allowList”를 사용하여 드롭 옵션을 구성합니다. |
 | *colorScheme* | 문자열 | 아니요 | | 자산 선택기에 대한 테마를 구성합니다(`light` 또는 `dark`). |
 | *테마* | 문자열 | 아니요 | 기본값 | `default`에서 `express` 사이의 자산 선택기 응용 프로그램에 테마를 적용합니다. `@react-spectrum/theme-express`도 지원합니다. |
-| *handleSelection* | 함수 | 아니요 | | 자산을 선택하고 모달의 `Select` 버튼을 클릭하면 자산 항목 배열과 함께 호출됩니다. 이 함수는 모달 보기에서만 호출됩니다. 레일 보기의 경우 `handleAssetSelection` 또는 `onDrop` 함수를 사용하십시오. 예: <pre>handleSelection=(assets: Asset[])=> {...}</pre> 자세한 내용은 [선택된 자산 유형](#selected-asset-type)을 참조하십시오. |
-| *handleAssetSelection* | 함수 | 아니요 | | 자산을 선택하거나 선택 취소할 때 항목 배열과 함께 호출됩니다. 이 속성은 사용자가 자산을 선택할 때 자산을 수신하려는 경우에 유용합니다. 예: <pre>handleSelection=(assets: Asset[])=> {...}</pre> 자세한 내용은 [선택된 자산 유형](#selected-asset-type)을 참조하십시오. |
+| *handleSelection* | 함수 | 아니요 | | 자산을 선택하고 모달의 `Select` 버튼을 클릭하면 자산 항목 배열과 함께 호출됩니다. 이 함수는 모달 보기에서만 호출됩니다. 레일 보기의 경우 `handleAssetSelection` 또는 `onDrop` 함수를 사용하십시오. 예: <pre>handleSelection=(assets: Asset[])=> {...}</pre> 자세한 내용은 [자산 선택](/help/assets/asset-selector-customization.md#selection-of-assets)을 참조하세요. |
+| *handleAssetSelection* | 함수 | 아니요 | | 자산을 선택하거나 선택 취소할 때 항목 배열과 함께 호출됩니다. 이 속성은 사용자가 자산을 선택할 때 자산을 수신하려는 경우에 유용합니다. 예: <pre>handleSelection=(assets: Asset[])=> {...}</pre> 자세한 내용은 [자산 선택](/help/assets/asset-selector-customization.md#selection-of-assets)을 참조하세요. |
 | *onClose* | 함수 | 아니요 | | 모달 보기에서 `Close` 버튼을 누르면 호출됩니다. 이 속성은 `modal` 보기에서만 호출되며 `rail` 보기에서는 무시됩니다. |
 | *onFilterSubmit* | 함수 | 아니요 | | 사용자가 다른 필터 조건을 변경할 때 필터 항목과 함께 호출됩니다. |
 | *selectionType* | 문자열 | 아니요 | 미혼 | 한 번에 `single` 자산을 선택할지 또는 `multiple` 자산을 선택할지에 대한 구성입니다. |
@@ -45,7 +45,7 @@ ht-degree: 43%
 | *dialogSize* | 소형, 중형, 대형, 전체 화면 또는 전체 화면 인계 | 문자열 | 옵션 | 제공된 옵션을 사용하여 크기를 지정하여 레이아웃을 제어할 수 있습니다. |
 | *colorScheme* | 밝은 색 또는 어두운 색 | 아니요 | | 이 속성은 자산 선택기 응용 프로그램의 테마를 설정하는 데 사용됩니다. 밝은 테마 또는 어두운 테마 중에서 선택할 수 있습니다. |
 | *filterRepoList* | 함수 | 아니요 |  | Experience Manager 저장소를 호출하고 필터링된 저장소 목록을 반환하는 `filterRepoList` 콜백 함수를 사용할 수 있습니다. |
-| *만료 옵션* | 함수 | | | 만료된 에셋의 상태를 제공하는 **getExpiryStatus** 속성 사이에서 사용할 수 있습니다. 함수는 제공한 에셋의 만료 날짜에 따라 `EXPIRED`, `EXPIRING_SOON` 또는 `NOT_EXPIRED`을(를) 반환합니다. [만료된 에셋 사용자 지정](#customize-expired-assets)을 참조하십시오. 또한 함수 값이 `true` 또는 `false`일 수 있는 **allowSelectionAndDrag**&#x200B;을(를) 사용할 수 있습니다. 값을 `false`(으)로 설정하면 만료된 에셋을 캔버스에서 선택하거나 드래그할 수 없습니다. |
+| *만료 옵션* | 함수 | | | 만료된 에셋의 상태를 제공하는 **getExpiryStatus** 속성 사이에서 사용할 수 있습니다. 함수는 제공한 에셋의 만료 날짜에 따라 `EXPIRED`, `EXPIRING_SOON` 또는 `NOT_EXPIRED`을(를) 반환합니다. [만료된 에셋 사용자 지정](/help/assets/asset-selector-customization.md#customize-expired-assets)을 참조하십시오. 또한 함수 값이 `true` 또는 `false`일 수 있는 **allowSelectionAndDrag**&#x200B;을(를) 사용할 수 있습니다. 값을 `false`(으)로 설정하면 만료된 에셋을 캔버스에서 선택하거나 드래그할 수 없습니다. |
 | *showToast* | | 아니요 | | 이를 통해 에셋 선택기에서 만료된 에셋에 대한 사용자 지정 Toast 메시지를 표시할 수 있습니다. |
 | *metadataSchema* | 배열 | 아니요 | | 사용자로부터 메타데이터를 수집하기 위해 제공하는 필드 배열을 추가합니다. 이 속성을 사용하면 자산에 자동으로 할당되지만 사용자에게 표시되지 않는 숨겨진 메타데이터를 사용할 수도 있습니다. |
 | *onMetadataFormChange* | 콜백 함수 | 아니요 | | `property`과(와) `value`(으)로 구성됩니다. `Property`은(는) 값이 업데이트되는 *metadataSchema*&#x200B;에서 전달된 필드의 *mapToProperty*&#x200B;과(와) 같습니다. 반면, `value`은(는) 새 값이 입력으로 제공됩니다. |
@@ -63,8 +63,5 @@ ht-degree: 43%
 | *rootPath* | String | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
 | *path* | String | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |
 | *expirationDate* | Function | No | | This function is used to set the usability period of an asset. |
-| *disableDefaultBehaviour* | Boolean | No | False | It is a function that is used to enable or disable the selection of an expired asset. You can customize the default behavior of an asset that is set to expire. See [customize expired assets](#customize-expired-assets). |
+| *disableDefaultBehaviour* | Boolean | No | False | It is a function that is used to enable or disable the selection of an expired asset. You can customize the default behavior of an asset that is set to expire. See [customize expired assets](/help/assets/asset-selector-customization.md#customize-expired-assets). |
 -->
-
-
-

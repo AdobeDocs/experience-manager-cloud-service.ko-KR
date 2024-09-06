@@ -2,13 +2,13 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선택기'
 description: 에셋 선택기를 사용하여 애플리케이션 내에서 에셋의 메타데이터와 렌디션을 검색, 찾기 및 검색할 수 있습니다.
 role: Admin,User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 1%
 
 ---
-
 
 # 파일 및 폴더를 자산 선택기에 업로드 {#upload-files-folders}
 
@@ -28,13 +28,13 @@ ht-degree: 1%
 
    썸네일을 사용하여 선택한 이미지를 미리 보고 X 아이콘을 클릭하여 목록에서 특정 이미지를 제거할 수도 있습니다. X 아이콘은 마우스로 이미지 이름이나 크기를 가리키면 표시됩니다. **[!UICONTROL 모두 제거]**&#x200B;를 클릭하여 업로드 목록에서 모든 항목을 삭제할 수도 있습니다.
 
-1. 업로드 프로세스를 완료하려면 **[!UICONTROL 업로드]**&#x200B;를 클릭하세요. 업로드한 에셋이 표시됩니다. 구성 가능한 코드는 [기본 업로드](asset-selector-customization.md#basic-upload)를 참조하십시오.
+1. 업로드 프로세스를 완료하려면 **[!UICONTROL 업로드]**&#x200B;를 클릭하세요. 업로드한 에셋이 표시됩니다. 구성 가능한 코드는 [기본 업로드](/help/assets/asset-selector-customization.md#basic-upload)를 참조하십시오.
 
 ## 메타데이터를 사용하여 에셋 업로드 {#upload-assets-with-metadata}
 
-애플리케이션에 즉시 업로드하면서 에셋에 메타데이터를 추가할 수 있습니다. 메타데이터에는 비즈니스 제목 줄, 제품 세부 사항, 캠페인 등과 같은 다양한 필드가 포함됩니다. 이를 위해 `metadataSchema` 속성이 사용됩니다. `metadataSchema` 속성에 대해 자세히 알아보려면 [자산 선택기 속성](asset-selector-properties.md)(으)로 이동하십시오.
+애플리케이션에 즉시 업로드하면서 에셋에 메타데이터를 추가할 수 있습니다. 메타데이터에는 비즈니스 제목 줄, 제품 세부 사항, 캠페인 등과 같은 다양한 필드가 포함됩니다. 이를 위해 `metadataSchema` 속성이 사용됩니다. `metadataSchema` 속성에 대해 자세히 알아보려면 [자산 선택기 속성](/help/assets/asset-selector-properties.md)(으)로 이동하십시오.
 
-구성에 필요한 코드 조각에 대해서는 [메타데이터로 업로드](#upload-with-metadata)를 참조하십시오.
+구성에 필요한 코드 조각에 대해서는 [메타데이터로 업로드](/help/assets/asset-selector-customization.md#upload-with-metadata)를 참조하십시오.
 
 ![메타데이터가 있는 에셋 업로드](assets/upload-with-metadata.png)
 
@@ -51,7 +51,6 @@ ht-degree: 1%
 
 ## 사용자 지정된 업로드 {#customize-upload}
 
-에셋 선택기를 사용하면 사용자 지정된 업로드 양식을 추가할 수 있습니다. 사용할 수 있는 몇 가지 사용자 지정 사항이 있습니다. 예를 들어 [hideUploadButton](#asset-selector-properties.md) 속성을 사용하면 응용 프로그램에 기본적으로 표시되는 업로드 단추를 숨길 수 있습니다. 대신 요구 사항에 따라 MFE 애플리케이션 외부에서 렌더링하도록 사용자 지정할 수 있습니다. 구성에 대해서는 [사용자 지정된 업로드](#asset-selector-customization.md#customized-upload)를 참조하십시오.
+에셋 선택기를 사용하면 사용자 지정된 업로드 양식을 추가할 수 있습니다. 사용할 수 있는 몇 가지 사용자 지정 사항이 있습니다. 예를 들어 [hideUploadButton](/help/assets/asset-selector-properties.md) 속성을 사용하면 응용 프로그램에 기본적으로 표시되는 업로드 단추를 숨길 수 있습니다. 대신 요구 사항에 따라 MFE 애플리케이션 외부에서 렌더링하도록 사용자 지정할 수 있습니다. 구성에 대해서는 [사용자 지정된 업로드](/help/assets/asset-selector-customization.md#customized-upload)를 참조하십시오.
 
 ![사용자 지정된 업로드](assets/customized-upload.png)
-

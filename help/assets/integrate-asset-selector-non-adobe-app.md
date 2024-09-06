@@ -2,13 +2,13 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선택기'
 description: 에셋 선택기를 다양한 Adobe, 비Adobe 및 타사 애플리케이션과 통합합니다.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 55848de0-aff2-42a0-b959-c771235d9425
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 6%
 
 ---
-
 
 # Adobe이 아닌 애플리케이션과 통합 {#integrate-asset-selector-non-adobe-app}
 
@@ -18,7 +18,7 @@ Asset Selector를 사용하면 다양한 비 Adobe 또는 타사 애플리케이
 
 에셋 선택기를 Adobe이 아닌 응용 프로그램과 통합하는 경우 다음 사전 요구 사항을 사용하십시오.
 
-* [커뮤니케이션 방법](#overview-asset-selector.md#prereqs)
+* [커뮤니케이션 방법](/help/assets/overview-asset-selector.md#prereqs)
 * imsClientId
 * imsScope
 * redirectUrl
