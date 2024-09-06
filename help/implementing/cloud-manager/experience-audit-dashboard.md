@@ -5,10 +5,10 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 72868ab808ebbd99c5e81805e7669083c5c754fb
+source-git-commit: 505e0887124472693216fee2f0a3e960591b5ae5
 workflow-type: tm+mt
-source-wordcount: '1927'
-ht-degree: 7%
+source-wordcount: '1950'
+ht-degree: 6%
 
 ---
 
@@ -17,17 +17,11 @@ ht-degree: 7%
 
 경험 감사에서 배포 프로세스를 검증하여 변경 사항이 성능, 접근성, 모범 사례 및 SEO에 대한 기준 표준을 충족하는지 확인하는 방법을 알아봅니다. 이러한 지표를 추적할 수 있는 명확하고 유용한 대시보드 인터페이스를 제공합니다.
 
->[!NOTE]
->
->이 기능은 [얼리어답터 프로그램](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)에서만 사용할 수 있습니다.
->
->AEM as a Cloud Service의 기존 경험 감사 기능에 대한 자세한 내용은 [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-testing.md)를 참조하십시오.
-
 ## 개요 {#overview}
 
 경험 감사는 배포 프로세스를 검증하고 변경 사항이 배포되었는지 확인합니다.
 
-1. 성능, 접근성, 모범 사례, SEO(검색 엔진 최적화) 및 PWA(점진적 웹 앱)에 대한 기준 표준을 충족합니다.
+1. 성능, 접근성, 모범 사례 및 SEO(검색 엔진 최적화)에 대한 기준 표준을 충족합니다.
 
 1. 회귀를 도입하지 마십시오.
 
@@ -88,7 +82,7 @@ Cloud Manager에서 경험 감사를 사용할 수 있습니다.
 
 경험 감사 결과는 [프로덕션 파이프라인 실행 페이지](/help/implementing/cloud-manager/deploy-code.md)를 통해 프로덕션 파이프라인의 **단계 테스트** 단계에 표시됩니다.
 
-![파이프라인의 대시보드](assets/experience-audit-dashboard.jpg)
+![파이프라인의 대시보드](assets/experience-audit-dashboard.png)
 
 경험 감사에서는 [구성된 페이지](#configuration)에 대한 중간 Google 등대 점수와 이전 스캔과의 점수 차이를 제공합니다.
 
@@ -139,9 +133,17 @@ Cloud Manager의 **보고서** 탭이 열려 **경험 감사**&#x200B;를 표시
 
 #### 페이지 점수 — 트렌드 {#trend}
 
-기본적으로 **페이지 점수 — 트렌드**&#x200B;에 대해 선택한 보기는 **최근 6개월**&#x200B;에 대한 **중간 점수**&#x200B;입니다.
+기본적으로 **페이지 점수 — 트렌드**&#x200B;에 대해 선택한 보기는 **작년**&#x200B;의 **중간 점수**&#x200B;입니다.
 
-차트 단추 상단과 하단의 **선택** 및 **보기** 드롭다운을 사용하여 각각 페이지별 세부 정보와 다른 시간대를 선택합니다. 선택 사항을 적용하고 차트를 새로 고치려면 차트 맨 위에서 **트렌드 업데이트**&#x200B;를 클릭합니다.
+범례에서 카테고리 이름을 클릭하여 특정 등대 카테고리의 트렌드를 보도록 선택할 수 있습니다.
+
+![트렌드 선택 가능](assets/experience-audit-trend-selectable.png)
+
+차트 상단의 **선택** 드롭다운을 사용하여 페이지별 세부 정보를 선택하고 하단의 **보기** 및 **트리거** 드롭다운을 사용하여 각각 다른 시간대와 트리거 유형을 선택합니다.
+
+**보기** 드롭다운을 사용하면 미리 설정된 시간대나 더 구체적인 보기에 대한 사용자 지정 간격을 선택할 수 있습니다.
+
+![트렌드 보기](assets/experience-audit-trend-view.png)
 
 차트 위로 마우스를 가져가면 도구 설명에 특정 시점의 Google Lighthouse 카테고리 값이 표시됩니다.
 
@@ -164,11 +166,11 @@ Cloud Manager의 **보고서** 탭이 열려 **경험 감사**&#x200B;를 표시
 
 ![Recommendations](assets/experience-audit-recommendations.png)
 
-권장 사항에 대한 V자형 화살표를 클릭하여 세부 정보를 표시합니다.
+권장 사항을 클릭하여 세부 정보를 표시합니다.
 
 ![권장 사항 세부 정보](assets/experience-audit-recommendations-details.png)
 
-사용 가능한 경우 확장된 권장 사항 세부 정보에는 가장 영향을 미치는 변경 사항에 집중할 수 있도록 권장 사항 영향의 백분율도 포함됩니다.
+사용 가능한 경우 확장된 권장 사항 세부 정보에는 가장 영향을 미치는 변경 사항에 집중할 수 있도록 권장 사항 영향의 백분율도 포함됩니다. 이 외에도 확장된 권장 사항에는 제안된 수정 사항을 구현하는 방법을 안내할 수 있는 관련 AEM 설명서 링크 및 팁이 포함될 수 있습니다.
 
 권장 사항이 적용되는 페이지를 보려면 세부 정보 보기에서 **페이지 보기** 링크를 클릭하십시오.
 
@@ -222,7 +224,7 @@ Cloud Manager의 **보고서** 탭이 열려 **경험 감사**&#x200B;를 표시
 
 파이프라인에 확장 가능한 오류 섹션이 표시되어 액세스할 수 없는 상대 URL 경로를 볼 수 있습니다.
 
-![경험 감사에서 발생한 문제](assets/experience-audit-issues.jpg)
+![경험 감사에서 발생한 문제](assets/experience-audit-issues.png)
 
 전체 보고서를 볼 경우 세부 정보는 **[경험 감사 검사 결과](#results)** 섹션에 표시되며 확장 가능합니다.
 
