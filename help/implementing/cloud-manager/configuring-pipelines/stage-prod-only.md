@@ -1,10 +1,10 @@
 ---
 title: 스테이징 전용 및 프로덕션 전용 파이프라인
 description: 전용 파이프라인을 사용하여 스테이징 및 프로덕션 배포를 분할하는 방법에 대해 알아보십시오.
-source-git-commit: 94e5ecb67212bcced45141cba3af8c830791473b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 92%
+source-wordcount: '942'
+ht-degree: 88%
 
 ---
 
@@ -54,9 +54,9 @@ ht-degree: 92%
 
 ## 파이프라인 만들기 {#pipeline-creation}
 
-프로덕션 전용 및 스테이징 전용 파이프라인은 표준 결합 [프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 및 [비프로덕션 파이프라인과 유사한 방식으로 생성됩니다.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 자세한 내용은 해당 문서를 참조하십시오.
+프로덕션 전용 및 스테이징 전용 파이프라인은 표준 결합 [프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 및 [비프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)과 유사한 방식으로 생성됩니다. 자세한 내용은 해당 문서를 참조하십시오.
 
-1. **파이프라인** 창에서 **파이프라인 추가**&#x200B;를 탭하거나 클릭합니다.
+1. **파이프라인** 창에서 **파이프라인 추가**&#x200B;를 클릭합니다.
 
    * 스테이징 전용 파이프라인을 만들려면 **비프로덕션 파이프라인 추가**&#x200B;를 선택합니다.
    * 프로덕션 전용 파이프라인을 만들려면 **프로덕션 전용 파이프라인 추가**&#x200B;를 선택합니다.
@@ -74,7 +74,7 @@ ht-degree: 92%
 ### 스테이징 전용 파이프라인 {#stage-only}
 
 1. **비프로덕션 파이프라인 추가** 옵션을 선택하면 **비프로덕션 파이프라인 추가** 대화상자가 열립니다.
-1. 스테이징 전용 파이프라인을 만들려면 파이프라인의 **적합한 배포 환경** 필드에서 스테이징 환경을 선택합니다. 나머지 필드를 완료하고 **계속**&#x200B;을 탭하거나 클릭합니다.
+1. 스테이징 전용 파이프라인을 만들려면 파이프라인의 **적합한 배포 환경** 필드에서 스테이징 환경을 선택합니다. 나머지 필드를 완료하고 **계속**&#x200B;을 클릭합니다.
 
    ![스테이징 전용 파이프라인 만들기](assets/stage-only.png)
 
@@ -82,12 +82,12 @@ ht-degree: 92%
 
 ### 프로덕션 전용 파이프라인 {#prod-only}
 
-1. **프로덕션 전용 파이프라인 추가** 옵션을 선택하면 **프로덕션 전용 파이프라인 추가** 대화상자가 열립니다.
-1. **파이프라인 이름**&#x200B;을 입력합니다. 대화 상자의 나머지 옵션과 기능은 표준 결합 파이프라인 생성 대화 상자와 동일하게 작동합니다. **저장**&#x200B;을 탭하거나 클릭하여 파이프라인을 저장합니다.
+1. **프로덕션 전용 파이프라인 추가** 옵션을 선택하면 **프로덕션 전용 파이프라인 추가** 대화 상자가 열립니다.
+1. **파이프라인 이름**&#x200B;을 입력합니다. 대화 상자의 나머지 옵션과 기능은 표준 결합 파이프라인 생성 대화 상자와 동일하게 작동합니다. **저장**&#x200B;을 클릭하여 파이프라인을 저장합니다.
 
 ## 프로덕션 전용 및 스테이징 전용 파이프라인 실행 {#running}
 
-프로덕션 전용 파이프라인과 스테이징 전용 파이프라인은 [다른 모든 파이프라인이 실행되는 것과 동일한 방식으로 실행됩니다.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)자세한 내용은 이 문서를 참조하십시오.
+프로덕션 전용 파이프라인과 스테이징 전용 파이프라인은 [다른 모든 파이프라인이 실행되는 것](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)과 동일한 방식으로 실행됩니다. 자세한 내용은 이 문서를 참조하십시오.
 
 또한 프로덕션 전용 파이프라인 실행은 스테이징 전용 파이프라인의 실행 세부 정보에서 직접 트리거될 수 있습니다.
 
@@ -97,7 +97,7 @@ ht-degree: 92%
 
 ![스테이징 전용 파이프라인 실행](assets/stage-only-pipeline-run.png)
 
-**빌드 프로모션** 버튼은 최근에 성공한 스테이징 전용 파이프라인이 실행 중인 경우에만 나타납니다. 탭하거나 클릭하면 프로덕션 전용 파이프라인의 실행을 확인하라는 메시지가 표시되고, 프로덕션 전용 파이프라인이 아직 없는 경우 생성하라는 메시지가 표시됩니다.
+**빌드 프로모션** 버튼은 최근에 성공한 스테이징 전용 파이프라인이 실행 중인 경우에만 나타납니다. 클릭하면 프로덕션 전용 파이프라인의 실행을 확인하거나 파이프라인이 없는 경우 프로덕션 전용 파이프라인을 생성하라는 메시지가 표시됩니다.
 
 ### 프로덕션 전용 파이프라인 {#prod-only-run}
 

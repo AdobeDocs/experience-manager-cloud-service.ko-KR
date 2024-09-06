@@ -1,60 +1,52 @@
 ---
-title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2024.8.0 릴리스 정보
-description: AEM as a Cloud Service의 Cloud Manager 2024.8.0 릴리스 정보에 대해 간략히 알아봅니다.
+title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2024.9.0 릴리스 정보
+description: AEM as a Cloud Service의 Cloud Manager 2024.9.0 릴리스 정보에 대해 알아봅니다.
 feature: Release Information
 role: Admin
-source-git-commit: a823bcd1461b847983d0243cd9abd59efd8d7b6f
-workflow-type: ht
-source-wordcount: '465'
-ht-degree: 100%
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+workflow-type: tm+mt
+source-wordcount: '332'
+ht-degree: 22%
 
 ---
 
+# Adobe Experience Manager as a Cloud Service의 Cloud Manager 2024.9.0 릴리스 정보 {#release-notes}
 
-# Adobe Experience Manager as a Cloud Service의 Cloud Manager 2024.8.0 릴리스 정보 {#release-notes}
-
-이 페이지에서는 AEM as a Cloud Service의 Cloud Manager 2024.8.0 릴리스 정보에 대해 설명합니다.
+이 페이지에서는 AEM as a Cloud Service의 Cloud Manager 2024.9.0 릴리스 정보에 대해 설명합니다.
 
 >[!NOTE]
 >
->Adobe Experience Manager as a Cloud Service의 최신 릴리스 정보는 [이 페이지](/help/release-notes/release-notes-cloud/release-notes-current.md)를 참조하십시오.
+>[Adobe Experience Manager as a Cloud Service의 최신 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)를 참조하세요.
 
 ## 릴리스 일자 {#release-date}
 
-AEM as a Cloud Service의 Cloud Manager 2024.8.0 릴리스 일자는 2024년 8월 14일입니다. 다음 릴리스는 2024년 9월 14일에 예정되어 있습니다.
+AEM as a Cloud Service의 Cloud Manager 2024.9.0 릴리스 일자는 2024년 9월 5일 금요일입니다. 다음 릴리스는 2024년 10월 3일 금요일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
-* AEM Forms as a Cloud Service에서는 [추가 게시 지역](/help/operations/additional-publish-regions.md) 및 [99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)(서비스 수준 계약) 기능을 사용할 수 있습니다.
-   * 이러한 향상된 기능을 사용하면 가동 시간은 늘리고 지연 시간은 줄여 더 높은 SLA를 달성할 수 있으므로, 전 세계에 분산된 사용자에게 최상의 경험을 보장할 수 있습니다.
+* **경험 감사 대시보드:**
 
-## 얼리 어답터 프로그램 {#early-adoption}
+  Google Lighthouse에서 제공하는 Adobe Cloud Manager의 [향상된 경험 감사 대시보드](/help/implementing/cloud-manager/experience-audit-dashboard.md)는 핵심 웹 바이탈, SEO 및 접근성 지표를 평가하여 AEM Sites의 품질과 성능에 대한 통찰력을 제공합니다. 사용자가 실행 가능한 권장 사항을 제공하여 개선할 영역을 식별하는 데 도움이 되며, 이를 통해 팀은 사용자 경험, 페이지 로드 시간 및 사이트 준수를 향상시킬 수 있습니다. 이 대시보드는 중요한 사이트 지표의 모니터링을 단순화하고 AEM 애플리케이션이 높은 성능 및 접근성 표준을 충족하도록 합니다.
 
-Adobe의 얼리 어답터 프로그램에 참여하여 향후 기능을 테스트할 기회를 얻으십시오.
+* **Adobe 생성 및 관리되는 도메인 유효성 검사 인증서:**
 
-### Cloud Manager에서의 Edge Delivery Services 지원 {#edge-delivery-services}
+  이제 Cloud Manager을 사용하여 [DV(도메인 유효성 검사) SSL 인증서를 생성하고 관리하는 셀프서비스 Adobe](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)을 할 수 있습니다. 이 기능은 온라인 조직 또는 비즈니스를 위한 안전한 웹 사이트를 만들 수 있는 가장 빠르고 쉽고 비용 효율적인 솔루션을 제공합니다. <!-- CMGR-52403 -->
 
-AEM Sites의 일부로 Edge Delivery Services에 라이선스를 부여한 경우, [이제 Cloud Manager에서 Edge Delivery Services를 직접 사이트에 온보딩하고](/help/implementing/cloud-manager/edge-delivery-services.md) 안내식 셀프서비스 경험을 사용하여 라이브로 전환할 수 있습니다.
+* Cloud Manager에서 **Edge Delivery Services 지원:**
 
-이 기능은 모든 AEM 속성에 대해 통합된 경험을 제공합니다. 도메인 이름 관리, SSL 인증서 관리, CDN 매핑 등의 중요한 워크플로 간에 일관성을 보장합니다.
+  AEM Sites의 일부로 Edge Delivery Services 라이선스가 있는 경우 [이제 Cloud Manager을 통해 직접 Edge Delivery Services을 통해 사이트를 온보딩할 수 있습니다](/help/implementing/cloud-manager/edge-delivery-services.md). 이 기능을 사용하면 셀프 서비스 Go-Live 경험을 안내할 수 있습니다. 또한 모든 AEM 속성에서 도메인 이름 관리, SSL 인증서 및 CDN 매핑과 같은 필수 워크플로우를 통합하여 일관성과 효율성을 보장합니다. <!-- CMGR-49859 -->
 
-이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일로 `aemcs-cmedgedelsvs-program-adopter@adobe.com`에 이메일 주소를 보내 주십시오.
+* GitHub 저장소를 사용하는 고객은 이제 웹 계층 구성 파이프라인을 만들고 사용할 수 있습니다. <!--( KEEP IN? SP: YES CMGR-59046 and Slack https://cq-dev.slack.com/archives/C07LFP5BZ2L/p1725407057847379 ) -->
 
-### DV(Domain Validated) 인증서
+<!--
+## Early adoption program {#early-adoption}
 
-이제 Cloud Manager를 통해 [DV(Domain Validated) SSL 인증서를 셀프서비스로 생성하고 관리](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)할 수 있습니다. 이 기능을 통해 귀하의 온라인 비즈니스를 위한 안전한 웹 사이트를 구축할 수 있는 가장 빠르고 쉬우며 비용 효율적인 솔루션이 제공됩니다.
+For a chance to test some upcoming features, be a part of Adobe's early adoption program. -->
 
-이 새로운 기능을 테스트하고 피드백을 제공하려면 Adobe ID에 연결된 이메일 주소를 사용하여 `Grp-aemcs-dv-dert-adopter@adobe.com`으로 이메일을 보내 주십시오.
-
-### 경험 감사 대시보드 {#experience-audit-dashboard}
-
-[Cloud Manager 경험 감사 대시보드](/help/implementing/cloud-manager/experience-audit-dashboard.md)에는 개선에 도움이 되는 인사이트 및 권장 사항과 함께 페이지 성능 점수의 트렌드 보기가 포함됩니다. 경험 감사는 Cloud Manager 프로덕션 파이프라인의 한 단계로 포함됩니다.
-
-대시보드는 웹 앱의 품질을 개선하기 위한 오픈 소스 자동화 도구인 Google Lighthouse를 사용합니다. 이를 사용하면 공개 또는 인증이 필요한 모든 웹 페이지를 감사할 수 있습니다. 성능, 접근성, 점진적 웹 앱, SEO 등에 대한 평가를 제공합니다.
-
-새로운 대시보드를 사용해보고 싶으십니까? 시작하려면 Adobe ID에 연결된 이메일을 사용하여 `aem-lighthouse-pilot@adobe.com`으로 이메일을 보내 주십시오.
 
 ## 버그 수정
 
-* 파이프라인이 삭제된 후에도 파이프라인 단계가 드물게 실행되는 문제가 수정되었습니다.
-* 구성 파이프라인에서 `FAILED` 상태가 드물게 잘못 표시되는 문제가 해결되었습니다.
+* 이제 SSL 인증서 테이블 보기에 대한 페이지 매김이 예상대로 작동합니다. <!-- (CMGR-60804 - [UI] Pagination doesn't work for ssl certificates) -->
+* 실행에서 **빌드 승격** 단추를 사용할 때 잘못된 아티팩트 버전이 승격되었습니다. <!-- ( KEEP IN? SP: YES CMGR-59519 and Slack https://cq-dev.slack.com/archives/C07LFPN2R08/p1725408253474129 ) -->
+
+<!-- * Slack message says next release? SP: REMOVE (Leave in for now) SSL Certificates table in Cloud Manager now enables pagination in the user experience. ( https://jira.corp.adobe.com/browse/CMGR-61041 and Slack https://cq-dev.slack.com/archives/C07LFRE9QJU/p1725408553760009 ) --<>

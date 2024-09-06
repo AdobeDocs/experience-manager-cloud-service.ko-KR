@@ -4,7 +4,7 @@ description: Cloud Manager에서 Adobe 관리 저장소를 만드는 방법을 �
 exl-id: 6c32c4ae-f48d-4440-bfc2-cdc1a3d59599
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 100%
@@ -31,7 +31,7 @@ Cloud Manager에서 Adobe 관리 저장소를 만드는 방법을 알아봅니�
 
    ![저장소 추가 대화 상자](assets/add-adobe-repository.png)
 
-마법사를 닫으면 새 저장소가 **저장소** 창의 표에 표시됩니다. 이제 [CI/CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)을 연결하거나 [**저장소** 창 내에서 관리할 수 있습니다.](managing-repositories.md)
+마법사를 닫으면 새 저장소가 **저장소** 창의 표에 표시됩니다. 이제 [CI/CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)을 연결하거나 [**저장소** 창](managing-repositories.md) 내에서 관리할 수 있습니다.
 
 >[!TIP]
 >

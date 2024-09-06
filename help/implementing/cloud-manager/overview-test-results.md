@@ -5,7 +5,7 @@ exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 100%
@@ -27,7 +27,7 @@ Cloud Manager for Cloud Services 파이프라인에서 지원하는 테스트에
 
    * 기능 테스트는 [프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)의 단계 테스트 단계의 일부이며, 선택적으로 [비프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 테스트 단계의 일부입니다.
 
-1. [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-testing.md)
+1. [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-dashboard.md)
 
    * 경험 감사 테스트는 모든 Cloud Manager 프로덕션 파이프라인에서 활성화되며 건너뛸 수 없습니다.
 

@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0c9328dc5be8f0a5e0924d0fc2ec59c9fce4141b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '826'
-ht-degree: 64%
+ht-degree: 66%
 
 ---
 
@@ -41,7 +41,7 @@ Cloud Manager 내에서 사용자 정의 도메인 이름의 상태를 확인할
 
 >[!NOTE]
 >
->[Cloud Manager에 새 사용자 지정 도메인 이름을 추가할 때 **사용자 지정 도메인 추가** 마법사의 확인 단계에서 **만들기**&#x200B;를 선택하면 Cloud Manager에서 자동으로 확인을 트리거합니다.](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) 이후 확인 시 상태 옆에 있는 다시 확인 아이콘을 선택해야 합니다.
+>[Cloud Manager에 새 사용자 지정 도메인 이름을 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)할 때 **사용자 지정 도메인 추가** 마법사의 확인 단계에서 **만들기**&#x200B;을(를) 선택하면 Cloud Manager에서 자동으로 확인을 트리거합니다. 이후 확인 시 상태 옆에 있는 다시 확인 아이콘을 선택해야 합니다.
 
 ## 확인 상태 이해 {#statuses}
 

@@ -5,10 +5,10 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '988'
-ht-degree: 77%
+ht-degree: 76%
 
 ---
 
@@ -118,7 +118,7 @@ ht-degree: 77%
 
 ### Dispatcher {#dispatcher}
 
-[Dispatcher에는 일반 환경 변수만 사용할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 비밀은 사용할 수 없습니다.
+[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 암호는 일반 환경 변수만 사용할 수 있습니다.
 
 그러나 환경 변수는 `IfDefine` 지침에서 사용할 수 없습니다.
 

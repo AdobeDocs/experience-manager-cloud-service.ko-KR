@@ -6,9 +6,9 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1402'
 ht-degree: 75%
 
 ---
@@ -103,7 +103,7 @@ ht-degree: 75%
       * **제품 기능 테스트** - 개발 환경에 대해 [제품 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)를 실행합니다.
       * **사용자 정의 기능 테스트** - 개발 환경에 대해 [사용자 정의 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)를 실행합니다.
       * **사용자 정의 UI 테스트** - 사용자 정의 애플리케이션에 대한 [사용자 정의 UI 테스트](/help/implementing/cloud-manager/ui-testing.md)를 실행합니다.
-      * **경험 감사** - [경험 감사 실행](/help/implementing/cloud-manager/experience-audit-testing.md)
+      * **경험 감사** - [경험 감사 실행](/help/implementing/cloud-manager/experience-audit-dashboard.md)
 
    ![전체 스택 파이프라인](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
@@ -152,13 +152,13 @@ ht-degree: 75%
    * **Git 분기** - 이 옵션은 선택한 파이프라인에서 코드를 검색해야 하는 분기를 정의합니다.
       * 분기 이름의 처음 몇 글자와 이 필드의 자동 완성 기능을 입력합니다. 선택할 수 있는 일치하는 분기를 찾습니다.
    * **코드 위치** - 이 옵션은 파이프라인이 코드를 검색해야 하는 선택한 저장소 분기의 경로를 정의합니다.
-   * **파이프라인** - 프론트엔드 비프로덕션 파이프라인의 경우 **[경험 감사를 활성화할 수 있습니다.](/help/implementing/cloud-manager/experience-audit-testing.md)**
+   * **파이프라인** - 프론트엔드 비프로덕션 파이프라인의 경우 **[경험 감사](/help/implementing/cloud-manager/experience-audit-dashboard.md)**&#x200B;를 활성화할 수 있습니다.
 
    ![파이프라인 구성](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
 1. 경험 감사를 활성화한 경우 **계속**&#x200B;을 탭하거나 클릭하여 경험 감사에 항상 포함되어야 하는 경로를 정의할 수 있는 **경험 감사** 탭으로 이동합니다.
 
-   * **경험 감사**&#x200B;를 사용하도록 설정한 경우 구성 방법에 대한 자세한 내용은 [경험 감사](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) 문서를 참조하십시오.
+   * **경험 감사**&#x200B;를 사용하도록 설정한 경우 구성 방법에 대한 자세한 내용은 [경험 감사](/help/implementing/cloud-manager/experience-audit-dashboard.md) 문서를 참조하십시오.
    * 그렇지 않은 경우 이 단계를 건너뜁니다.
 
 1. **저장**&#x200B;을 탭하거나 클릭하여 파이프라인을 저장합니다.

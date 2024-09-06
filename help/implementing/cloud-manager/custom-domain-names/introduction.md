@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1c9924b4477d53d86bb72eda8597a02304450195
+source-git-commit: 4e887b753eaf09e104c68484792f00dcb08ee304
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 65%
+source-wordcount: '714'
+ht-degree: 47%
 
 ---
 
@@ -36,20 +36,20 @@ Adobe Experience Manager as a Cloud Service는 `*.adobeaemcloud.com`으로 끝�
 >
 >Cloud Manager는 도메인 이름 등록자가 아니므로 DNS 서비스를 제공하지 않습니다.
 
-## 사용자 정의 도메인 이름 및 BYO CDN {#byo-cdn}
+## 사용자 정의 도메인 이름 및 고유한 CDN 가져오기 {#byo-cdn}
 
-AEM as a Cloud Service는 내장된 콘텐츠 게재 네트워크(CDN) 서비스를 제공하지만 BYO(Bring-Your-Own) CDN 방식에 따라 AEM과 함께 사용할 수 있습니다. 사용자 정의 도메인은 AEM 관리 CDN 또는 자체 관리 CDN에 설치할 수 있습니다.
+AEM as a Cloud Service은 내장된 콘텐츠 전송 네트워크(CDN) 서비스를 제공하며 AEM에서 사용할 BYO(Bring Your Own) CDN도 사용할 수 있습니다. 사용자 정의 도메인은 AEM 관리 CDN 또는 자체 관리 CDN에 설치할 수 있습니다.
 
-* AEM 관리 CDN에 설치된 사용자 정의 도메인의 이름(및 인증서)은 Cloud Manager를 통해 관리됩니다.
-* 자체 CDN에 설치된 사용자 정의 도메인의 이름(및 인증서)은 해당 특정 CDN을 통해 관리됩니다.
+* Cloud Manager은 AEM 관리 CDN에 설치된 사용자 정의 도메인 이름과 인증서를 관리합니다.
+* BYO CDN에 설치된 사용자 정의 도메인 이름과 인증서는 해당 CDN 내에서 직접 관리됩니다.
 
-자체 CDN에서 관리되는 **도메인은 Cloud Manager을 통해 설치할 필요가 없습니다.** X-Forwarded-Host를 통해 AEM에서 사용할 수 있으며 Dispatcher에 정의된 vhost와 일치합니다. [CDN 설명서를 참조하십시오.](/help/implementing/dispatcher/cdn.md)
+**자체 CDN에서 관리되는 도메인은 Cloud Manager을 통해 설치할 필요가 없습니다.** - X-Forwarded-Host를 통해 AEM에서 사용할 수 있으며 Dispatcher에 정의된 vhost와 일치합니다. [CDN 설명서](/help/implementing/dispatcher/cdn.md)를 참조하십시오.
 
-하나의 환경에서 두 도메인을 AEM 관리 CDN과 자체 CDN에 설치할 수 있습니다.
+한 환경에서는 AEM 관리 CDN에 설치되고 BYO CDN에 설치된 두 개의 도메인이 모두 있을 수 있습니다.
 
 ## 워크플로 {#workflow}
 
-사용자 정의 도메인 이름을 추가하려면 DNS 서비스와 Cloud Manager 간의 상호 작용이 필요합니다. 따라서 사용자 정의 도메인 이름을 설치, 구성 및 확인하는 데 몇 가지 단계가 필요합니다. 다음 표는 이러한 단계를 완료하는 데 필요한 설명서 리소스에 대한 링크를 포함하여 필요한 단계에 대한 개요를 제공합니다.
+사용자 정의 도메인 이름을 추가하려면 DNS 서비스와 Cloud Manager 간의 상호 작용이 필요합니다. 이 워크플로우로 인해 사용자 정의 도메인 이름을 설치, 구성 및 확인하는 데 여러 단계가 필요합니다. 다음 표는 이러한 단계를 완료하는 데 필요한 설명서 리소스에 대한 링크를 포함하여 필요한 단계에 대한 개요를 제공합니다.
 
 | 단계 | 설명 | 설명서 |
 |---|---|---|
@@ -77,7 +77,7 @@ AEMaaCS에서 사용자 정의 도메인 이름을 사용하는 데에는 몇 �
 * AEM as a Cloud Service는 `*.example.com`와 같은 와일드카드 도메인을 지원하지 않습니다.
 * 사용자 정의 도메인 이름을 추가하기 전에 사용자 정의 도메인 이름(와일드카드 인증서가 유효함)이 포함된 유효한 SSL 인증서가 프로그램에 설치되어 있어야 합니다.
 
-## 시작! {#get-started}
+## 시작하기 {#get-started}
 
-* [SSL 인증서를 추가하여 프로젝트에 대한 새 사용자 정의 도메인 이름 구성을 시작하십시오.](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+* [SSL 인증서를 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)하여 프로젝트에 대한 새 사용자 정의 도메인 이름 구성을 시작하십시오.
 * [사용자 정의 도메인 이름 관리](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) 문서를 검토하여 기존 도메인 이름을 관리합니다.

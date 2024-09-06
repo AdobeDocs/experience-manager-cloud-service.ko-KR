@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9defb49b2639aa8945d1fed0332400b8ab5ced8c
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '2377'
-ht-degree: 78%
+source-wordcount: '2375'
+ht-degree: 73%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 78%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 환경을 추가할 프로그램을 탭하거나 클릭합니다.
+1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 환경을 추가할 프로그램을 클릭합니다.
 
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 **환경** 카드의 **환경 추가**&#x200B;를 클릭하여 환경을 추가합니다.
 
@@ -58,7 +58,7 @@ ht-degree: 78%
 
 1. **환경 추가** 대화 상자가 나타나면 다음 작업을 수행하십시오.
 
-   * [**환경 유형**&#x200B;을 선택합니다.](#environment-types)
+   * [**환경 유형**](#environment-types)&#x200B;을(를) 선택하십시오.
       * 사용 가능한/사용된 환경의 수가 환경 유형 이름 뒤의 괄호 안에 표시됩니다.
    * 환경 **이름**&#x200B;을 제공합니다.
       * 환경이 생성되면 환경 이름을 변경할 수 없습니다.
@@ -74,7 +74,7 @@ ht-degree: 78%
 
 이제 **개요** 화면의 **환경** 카드에 새 환경이 표시됩니다. 이제 새 환경에 대한 파이프라인을 설정할 수 있습니다.
 
-## 여러 게시 지역 {#multiple-regions}
+## 여러 게시 영역 {#multiple-regions}
 
 **비즈니스 소유자** 역할을 가진 사용자는 기본 지역 외에 최대 세 개의 추가 게시 지역을 포함하도록 프로덕션 및 스테이징 환경을 구성할 수 있습니다. 추가 게시 지역은 가용성을 높일 수 있습니다. 자세한 내용은 [추가 게시 지역 설명서](/help/operations/additional-publish-regions.md)를 참조하십시오.
 
@@ -82,7 +82,7 @@ ht-degree: 78%
 >
 >[Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments)를 사용하여 사용 가능한 지역의 현재 목록을 쿼리할 수 있습니다.
 
-### 새 환경에 여러 게시 지역 추가 {#add-regions}
+### 새 환경에 여러 게시 영역 추가 {#add-regions}
 
 환경을 추가할 때 기본 지역 외에 추가 지역 구성을 선택할 수 있습니다.
 
@@ -99,11 +99,11 @@ ht-degree: 78%
 
 선택한 지역은 프로덕션 환경 및 스테이징 환경 모두에 적용됩니다.
 
-추가 지역을 지정하지 않으면 [환경을 만든 후 나중에 지정할 수 있습니다.](#edit-regions)
+추가 영역을 지정하지 않으면 [환경이 만들어진 후 나중에 지정할 수 있습니다](#edit-regions).
 
 프로그램의 [고급 네트워킹](/help/security/configuring-advanced-networking.md)을 프로비저닝하려면 Cloud Manager API를 사용하여 추가 게시 지역을 환경에 추가하기 전에 이 프로비저닝을 수행하는 것이 좋습니다. 그렇지 않은 경우, 추가 게시 지역의 트래픽이 기본 지역의 프록시로 이동합니다.
 
-### 여러 게시 지역 편집 {#edit-regions}
+### 여러 게시 영역 편집 {#edit-regions}
 
 처음에 추가 지역을 지정하지 않으면 환경을 만들고 필요한 권한이 있는 경우 지정할 수 있습니다.
 
@@ -179,7 +179,7 @@ Cloud Manager는 AEM as a Cloud Service 환경에 미리보기 서비스(추가 
 >
 >환경이 AEM 버전 `2021.05.5368.20210529T101701Z` 이상이어야 미리보기 서비스를 사용할 수 있습니다. 미리보기 서비스를 사용할 수 있도록 사용자 환경에서 업데이트 파이프라인이 실행되었는지 확인합니다.
 
-### 추가 게시 지역 상태 {#additional-region-status}
+### 추가 게시 영역 상태 {#additional-region-status}
 
 추가 게시 지역이 활성화되면 **환경** 카드에서 해당 지역의 상태를 확인할 수 있습니다.
 
@@ -209,7 +209,7 @@ Cloud Manager는 AEM as a Cloud Service 환경에 미리보기 서비스(추가 
 
 추가 작업을 수행하기 전에 시스템이 자체적으로 복구될 때까지 대기하는 시간은 해당 지역의 장애가 시스템에 미치는 영향에 따라 다릅니다.
 
-어떤 경우든 [트래픽은 항상 온라인 상태의 가장 가까운 다른 지역으로 라우팅됩니다.](/help/operations/additional-publish-regions.md) 문제가 계속 표시되면 Adobe 고객 지원 센터에 문의하십시오.
+어떤 경우든 [트래픽은 항상 온라인 상태인 가장 가까운 다른 지역으로 라우팅됩니다](/help/operations/additional-publish-regions.md). 문제가 계속 표시되면 Adobe 고객 지원 센터에 문의하십시오.
 
 ## 환경 업데이트 {#updating-dev-environment}
 

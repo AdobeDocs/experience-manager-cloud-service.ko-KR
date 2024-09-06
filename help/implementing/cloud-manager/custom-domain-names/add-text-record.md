@@ -5,7 +5,7 @@ exl-id: d441de29-af41-4d3e-9155-531af9702841
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 28%
@@ -45,7 +45,7 @@ Cloud Manager에서 사용할 사용자 정의 도메인 이름 확인의 일부
 
 1. `_aemverification.[yourdomainname]`을(를) 값의 **이름**(으)로 추가하고 **도메인 이름 추가** 대화 상자에 표시되는 대로 TXT 값을 정확하게 추가합니다.
 
-   * 다음 섹션에서 [예제를 참조하십시오.](#examples)
+   * 다음 섹션의 [예제를 참조하십시오](#examples).
 
 1. TXT 레코드를 도메인 호스트에 저장합니다.
 

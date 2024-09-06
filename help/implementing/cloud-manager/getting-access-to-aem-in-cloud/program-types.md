@@ -5,10 +5,10 @@ exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 93%
+source-wordcount: '521'
+ht-degree: 81%
 
 ---
 
@@ -20,7 +20,7 @@ Cloud Manager는 엔티티 계층을 기반으로 구축됩니다. 이에 대한
 ![Cloud Manager 계층](assets/program-types1.png)
 
 * **테넌트** - 계층의 최상위입니다. 모든 고객은 테넌트를 사용하여 프로비저닝됩니다.
-* **프로그램** - 각 테넌트에는 [사용 허가된 고객의 솔루션을 반영](introduction-production-programs.md)하는 하나 이상의 프로그램이 있습니다.
+* **프로그램** - 각 테넌트에는 고객의 라이선스가 부여된 솔루션을 반영하는 하나 이상의 프로그램 [이(가) 있습니다](introduction-production-programs.md).
 * **환경** - 각 프로그램에는 라이브 콘텐츠 프로덕션 환경, 스테이징 환경 및 개발 목적의 환경 등 여러 환경이 있습니다.
    * 각 프로그램에는 하나의 프로덕션 환경만 있을 수 있지만 비프로덕션 환경은 여러 개 있을 수 있습니다.
 * **저장소** - 프로그램에는 환경을 위해 애플리케이션 및 프론트엔드 코드가 유지되는 git 저장소가 있습니다.
@@ -62,5 +62,5 @@ $ git clone {URL}
    * 자세한 내용은 [프로덕션 프로그램 소개](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)를 참조하십시오.
 * **샌드박스 프로그램**&#x200B;은 일반적으로 교육, 데모 실행, 활성화, POC 또는 문서화 목적으로 만들어집니다.
    * 샌드박스 환경은 라이브 트래픽을 전달하기 위한 것이 아니며 프로덕션 프로그램에는 없는 제한 사항이 있습니다.
-   * 여기에는 Sites 및 Assets가 포함되며 샘플 코드, 개발 환경 및 비프로덕션 파이프라인이 포함된 git 분기가 자동으로 채워져 제공됩니다.
+   * 여기에는 Sites, Assets 및 Edge Delivery Services이 포함되며 샘플 코드, 개발 환경 및 비프로덕션 파이프라인이 포함된 git 분기가 자동으로 채워져 제공됩니다.
    * 자세한 내용은 [샌드박스 프로그램 소개](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)를 참조하십시오.

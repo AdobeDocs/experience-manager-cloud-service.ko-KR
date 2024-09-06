@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '1850'
-ht-degree: 80%
+ht-degree: 78%
 
 ---
 
@@ -109,7 +109,7 @@ AEM as a Cloud Service용 New Relic One APM에는 많은 기능이 있습니다.
 
 1. New Relic에서 계정 확인을 위한 링크가 포함된 이메일을 보내드립니다.
 
-New Relic에서 확인 이메일을 받지 못한 경우, [문제 해결 섹션](#troubshooting)을 참조하십시오.
+New Relic에서 확인 이메일을 받지 못한 경우 [문제 해결 섹션](#troubshooting)을 참조하십시오.
 
 ## New Relic One 액세스 {#accessing-new-relic}
 
@@ -159,7 +159,7 @@ New Relic One에 로그인하는 동안 이메일을 확인하라는 메시지�
 
 1. New Relic에서 계정 확인을 위한 링크가 포함된 이메일을 보내드립니다.
 
-가입 절차를 완료했는데 이메일 또는 암호 오류 메시지로 인해 계정에 로그인할 수 없는 경우, [Admin Console](https://adminconsole.adobe.com/)을 사용하여 지원 티켓을 기록하십시오.
+가입 절차를 완료했는데 전자 메일 또는 암호 오류 메시지로 인해 계정에 로그인할 수 없는 경우 [Admin Console](https://adminconsole.adobe.com/)을 통해 지원 티켓을 기록하십시오.
 
 New Relic에서 이메일을 받지 못한 경우, 다음 작업을 수행하십시오.
 
@@ -172,7 +172,7 @@ New Relic에서 이메일을 받지 못한 경우, 다음 작업을 수행하십
 New Relic One에 사용자를 추가하는 경우 다음 제한이 적용됩니다.
 
 * 최대 30명의 사용자를 추가할 수 있습니다. 최대 사용자 수에 도달한 경우, 새 사용자를 추가할 수 있도록 사용자를 제거하십시오.
-* New Relic에 추가된 사용자는 **제한됨** 유형이 됩니다. [자세한 내용은 New Relic 설명서를 ](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)참조하십시오.
+* New Relic에 추가된 사용자의 유형이 **제한됨**&#x200B;입니다. 자세한 내용은 [New Relic 설명서](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)를 참조하십시오.
 * AEM as a Cloud Service는 New Relic One APM 솔루션만 제공하며 경고, 로깅 또는 API 통합에 대한 지원은 제공하지 않습니다.
 
 >[!NOTE]
@@ -181,7 +181,7 @@ New Relic One에 사용자를 추가하는 경우 다음 제한이 적용됩니�
 >
 >이 문서의 [New Relic One 하위 계정 활성화](#activate-sub-account) 섹션에서 동일한 단계에 따라 New Relic One 하위 계정을 다시 활성화하십시오.
 
-AEM as a Cloud Service 프로그램의 New Relic One 서비스에 대한 추가 도움말 또는 추가 지침을 보려면 [AEM 지원 포털](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)을 통해 지원 티켓을 여십시오.
+AEM as a Cloud Service 프로그램용 New Relic One에 대한 추가 도움말 또는 추가 지침을 보려면 [AEM 지원 포털](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)을 사용하여 지원 티켓을 엽니다.
 
 ## New Relic One에 대해 자주 묻는 질문 {#faqs}
 
@@ -203,7 +203,7 @@ New Relic One 계정은 Adobe에서 관리하는 주 계정에 연결되어 있�
 
 ### Adobe는 New Relic One에서 경고 알림을 전송합니까? {#alerting-new-relic}
 
-Adobe는 가시성 목적으로만 New Relic One 액세스를 제공하고 고객 경고나 내부 작업 경고에는 이를 활용하지 않습니다. 모든 인시던트에 대한 알림은 [사용자 알림 프로필](/help/journey-onboarding/notification-profiles.md)을 통해 전송됩니다.
+Adobe는 가시성 목적으로만 New Relic One 액세스를 제공하고 고객 경고나 내부 작업 경고에는 이를 활용하지 않습니다. 인시던트에 대한 알림은 [사용자 알림 프로필](/help/journey-onboarding/notification-profiles.md)을 사용하여 전송됩니다.
 
 ### New Relic One Cloud Service 데이터에 접근할 수 있는 권한은 누구에게 있습니까? {#access-new-relic-cloud}
 

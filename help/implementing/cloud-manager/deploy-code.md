@@ -5,10 +5,10 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3a5451020b8f76f95bcd8bff7b6eabd06be00f31
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1197'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -64,7 +64,7 @@ _전체 스택 코드 파이프라인 유형만 코드 스캔, 기능 테스트,
 * **코드 스캔** - 이 단계에서는 애플리케이션 코드의 품질을 평가합니다.
    * 테스트 프로세스에 대한 자세한 내용은 [코드 품질 테스트](/help/implementing/cloud-manager/code-quality-testing.md)를 참조하십시오.
 * **이미지 빌드** - 이 프로세스는 빌드 단계에서 생성된 콘텐츠 및 Dispatcher 패키지를 도커 이미지 및 Kubernetes 구성으로 변환하는 역할을 합니다.
-* **스테이지에 배포** - [스테이지 테스트 단계](#stage-testing)를 준비하기 위해 이미지가 스테이징 환경에 배포됩니다.
+* **스테이지에 배포** - [스테이지 테스트 단계](#stage-testing)를 준비하는 동안 이미지가 스테이징 환경에 배포됩니다.
 
 ![스테이지 배포](assets/stage-deployment.png)
 
@@ -86,7 +86,7 @@ _전체 스택 코드 파이프라인 유형만 코드 스캔, 기능 테스트,
    * 구성된 페이지는 서비스에 제출되고 평가됩니다.
    * 결과는 정보 제공용이며 점수, 현재 점수와 이전 점수 간의 변화를 보여 줍니다.
    * 이 인사이트는 현재 배포에 도입될 회귀가 있는지 확인하는 데 유용합니다.
-   * 자세한 내용은 [경험 감사 결과 이해](/help/implementing/cloud-manager/experience-audit-testing.md)를 참조하십시오.
+   * 자세한 내용은 [경험 감사 결과 이해](/help/implementing/cloud-manager/experience-audit-dashboard.md)를 참조하십시오.
 
 ![스테이지 테스트](assets/stage-testing.png)
 
@@ -154,7 +154,7 @@ _전체 스택 코드 파이프라인 유형만 코드 스캔, 기능 테스트,
 
 ### 재실행 API {#reexecute-API}
 
-UI에서 사용할 수 있을 뿐만 아니라 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution)를 사용하여 재실행을 트리거하고 재실행으로 트리거된 실행을 식별할 수 있습니다.
+UI에서 사용할 수 있으며, [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution)를 사용하여 재실행을 트리거하고 재실행으로 트리거된 실행을 식별할 수도 있습니다.
 
 #### 재실행 트리거 {#reexecute-deployment-api}
 

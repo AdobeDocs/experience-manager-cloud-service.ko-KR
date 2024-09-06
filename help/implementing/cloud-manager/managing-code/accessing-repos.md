@@ -5,10 +5,10 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 100%
+source-wordcount: '399'
+ht-degree: 96%
 
 ---
 
@@ -59,10 +59,10 @@ Cloud Manager를 사용하면 파이프라인 카드에 있는 **저장소 정�
 
 ## 저장소 창에서 저장소 정보 액세스 {#repositories-window}
 
-**저장소 정보 액세스** 버튼은 [**저장소** 창의 도구 모음에서도 사용할 수 있습니다.](managing-repositories.md) Adobe 관리 저장소 액세스에 대한 정보와 동일한 내용이 표시됩니다.
+**저장소 정보 액세스** 단추는 [**저장소** 창](managing-repositories.md)의 도구 모음에서도 사용할 수 있습니다. Adobe 관리 저장소 액세스에 대한 정보와 동일한 내용이 표시됩니다.
 
 ## 액세스 암호 취소 {#revoke-password}
 
-언제든지 액세스 암호를 취소할 수 있습니다. 암호를 취소하려면 [이 요청에 대한 지원 티켓을 만드십시오.](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support)
+언제든지 액세스 암호를 취소할 수 있습니다. 암호를 취소하려면 [이 요청에 대한 지원 티켓을 만드십시오](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support).
 
 티켓이 우선적으로 처리되며 1일 이내에 취소해야 합니다.

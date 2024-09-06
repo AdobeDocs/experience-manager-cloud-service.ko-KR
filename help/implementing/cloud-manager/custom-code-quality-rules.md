@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 51fa6e0fe56b1d5f0d8ada6bd2335175d603bc8c
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '4513'
-ht-degree: 87%
+ht-degree: 84%
 
 ---
 
@@ -645,7 +645,7 @@ public class DontDoThis implements Page {
 * **심각도**: Blocker
 * **이후**: 2021.8.0
 
-`lucene` 유형의 Oak 인덱스는 항상 비동기식으로 인덱싱되어야 합니다. 이렇게 하지 않으면 시스템이 불안정해질 수 있습니다. Lucene 인덱스 구조에 대한 자세한 내용은 [Oak 설명서](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition)를 참조하십시오.
+`lucene` 유형의 Oak 인덱스는 항상 비동기식으로 인덱싱되어야 합니다. 이렇게 하지 않으면 시스템이 불안정해질 수 있습니다. Lucene 인덱스 구조에 대한 자세한 내용은 [Oak 설명서](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition)를 참조하세요.
 
 #### 비준수 코드 {#non-compliant-code-indexasync}
 
@@ -908,7 +908,7 @@ Experience Manager as a Cloud Service에서의 자산 처리를 위해 Asset 마
 
 기존 기초 구성 요소(예: `/libs/foundation` 아래의 구성 요소)는 핵심 구성 요소를 위한 여러 Experience Manager 릴리스에서 더 이상 사용되지 않습니다. 오버레이 또는 상속 여부에 관계없이 기존 기초 구성 요소를 사용자 정의 구성 요소의 기반으로 사용하는 것은 권장되지 않으며 해당 핵심 구성 요소로 변환해야 합니다.
 
-이러한 전환은 [Experience Manager 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/)를 통해 용이하게 수행할 수 있습니다.
+이러한 변환은 [Experience Manager 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/)를 통해 용이하게 수행할 수 있습니다.
 
 ### 지원되는 실행 모드 이름 및 순서만 사용해야 함 {#oakpal-supported-runmodes}
 
@@ -1207,7 +1207,7 @@ AEM Cloud Service는 UI 콘텐츠 패키지에 사용자 정의 검색 색인 �
 
 >[!WARNING]
 >
->[Cloud Manager 2024년 8월 릴리스](/help/implementing/cloud-manager/release-notes/current.md)부터 파이프라인에 장애가 발생하므로 가능한 한 빨리 이 문제를 해결해야 합니다.
+>[Cloud Manager 2024년 8월 릴리스](/help/implementing/cloud-manager/release-notes/current.md)부터 파이프라인이 실패하므로 가능한 한 빨리 이 문제를 해결해야 합니다.
 
 ### 유형 damAssetLucene의 사용자 정의 전체 텍스트 색인 정의는 “damAssetLucene” 접두사가 올바르게 추가되어야 합니다. {#oakpal-dam-asset-lucene}
 
@@ -1220,7 +1220,7 @@ AEM Cloud Service는 `damAssetLucene`의 사용자 정의 전체 텍스트 색�
 
 >[!WARNING]
 >
->[Cloud Manager 2024년 8월 릴리스](/help/implementing/cloud-manager/release-notes/current.md)부터 파이프라인에 장애가 발생하므로 가능한 한 빨리 이 문제를 해결해야 합니다.
+>[Cloud Manager 2024년 8월 릴리스](/help/implementing/cloud-manager/release-notes/current.md)부터 파이프라인이 실패하므로 가능한 한 빨리 이 문제를 해결해야 합니다.
 
 ### 색인 정의 노드에는 동일한 이름의 속성이 포함되면 안 됩니다. {#oakpal-index-property-name}
 
@@ -1233,7 +1233,7 @@ AEM Cloud Service는 사용자 정의 검색 색인 정의(즉, 유형 `oak:Quer
 
 >[!WARNING]
 >
->[Cloud Manager 2024년 8월 릴리스](/help/implementing/cloud-manager/release-notes/current.md)부터 파이프라인에 장애가 발생하므로 가능한 한 빨리 이 문제를 해결해야 합니다.
+>[Cloud Manager 2024년 8월 릴리스](/help/implementing/cloud-manager/release-notes/current.md)부터 파이프라인이 실패하므로 가능한 한 빨리 이 문제를 해결해야 합니다.
 
 ### 특정 OOTB 색인 정의는 사용자 정의할 수 없습니다. {#oakpal-customizing-ootb-index}
 
@@ -1253,7 +1253,7 @@ AEM Cloud Service는 다음 OOTB 색인의 무단 수정을 금지합니다.
 
 >[!WARNING]
 >
->[Cloud Manager 2024년 8월 릴리스](/help/implementing/cloud-manager/release-notes/current.md)부터 파이프라인에 장애가 발생하므로 가능한 한 빨리 이 문제를 해결해야 합니다.
+>[Cloud Manager 2024년 8월 릴리스](/help/implementing/cloud-manager/release-notes/current.md)부터 파이프라인이 실패하므로 가능한 한 빨리 이 문제를 해결해야 합니다.
 
 ### Analyzers의 토큰화 구성은 “tokenizer”라는 이름으로 생성해야 합니다. {#oakpal-tokenizer}
 
@@ -1266,13 +1266,13 @@ AEM Cloud Service에서는 분석기에서 이름이 잘못된 토큰라이저�
 
 >[!WARNING]
 >
->[Cloud Manager 2024년 8월 릴리스](/help/implementing/cloud-manager/release-notes/current.md)부터 파이프라인에 장애가 발생하므로 가능한 한 빨리 이 문제를 해결해야 합니다.
+>[Cloud Manager 2024년 8월 릴리스](/help/implementing/cloud-manager/release-notes/current.md)부터 파이프라인이 실패하므로 가능한 한 빨리 이 문제를 해결해야 합니다.
 
-### 색인 정의 구성에 공백이 없어야 합니다. {#oakpal-indexing-definitions-spaces}
+### 색인화 정의 구성에는 공백이 포함되어서는 안 됩니다. {#oakpal-indexing-definitions-spaces}
 
 * **키**: PathSpacesCheck
 * **유형**: 개선
 * **심각도**: 사소
 * **이후**: 버전 2024.7.0
 
-AEM Cloud Service에서는 공백이 있는 속성이 포함된 인덱싱 정의를 만들 수 없습니다.
+AEM Cloud Service는 공백이 있는 속성을 포함하는 색인화 &#x200B;&#x200B;정의 생성을 금지합니다.

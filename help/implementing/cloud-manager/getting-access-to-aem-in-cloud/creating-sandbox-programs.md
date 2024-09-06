@@ -5,16 +5,16 @@ exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 17306cf0877513d1412ffba311bd5d601edec062
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 74%
+source-wordcount: '436'
+ht-degree: 15%
 
 ---
 
 # 샌드박스 프로그램 만들기 {#create-sandbox-program}
 
-샌드박스 프로그램은 일반적으로 교육, 데모 실행, 지원, POC 또는 문서화 목적으로 만들어지며 라이브 트래픽을 전달하기 위한 것이 아닙니다.
+샌드박스 프로그램은 일반적으로 교육, 데모 실행, 활성화, POC 또는 문서화 목적으로 만들어지며 라이브 트래픽을 전달하기 위한 것이 아닙니다. [샌드박스 프로그램 소개](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)를 참조하세요.
 
 프로그램 유형에 대한 자세한 내용은 [프로그램 및 프로그램 유형 이해](program-types.md) 문서를 참조하십시오.
 
@@ -22,41 +22,44 @@ ht-degree: 74%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 화면 오른쪽 상단 근처에 있는 **프로그램 추가**&#x200B;를 탭하거나 클릭합니다.
+1. 오른쪽 상단 근처에 있는 **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 **프로그램 추가**&#x200B;를 클릭합니다.
 
    ![Cloud Manager 랜딩 페이지](assets/log-in.png)
 
-1. 프로그램 만들기 마법사에서 **샌드박스 설정**&#x200B;을 선택하고 프로그램 이름을 입력합니다.
+1. *프로그램을 만들어 보세요* 마법사의 **프로그램 이름** 텍스트 필드에 프로그램에 사용할 이름을 입력합니다.
+
+1. **프로그램 목표**&#x200B;에서 **`Set up a sandbox`**&#x200B;을(를) 선택합니다.
 
    ![프로그램 유형 만들기](assets/create-sandbox.png)
 
-1. 필요한 경우, 파일 브라우저에서 이미지를 선택하려면 이미지 파일을 **프로그램 이미지 추가** 타깃으로 드래그 앤 드롭하거나 클릭하여 이미지를 프로그램에 추가할 수 있습니다. **계속**&#x200B;을 선택합니다.
+1. (선택 사항) 마법사 대화 상자의 오른쪽 아래 모서리에서 다음 중 하나를 수행합니다.
 
-   * 이미지는 프로그램 개요 창에서 타일 역할만 하며 프로그램을 식별하는 데 도움이 됩니다.
+   * 이미지 파일을 **프로그램 이미지 추가** 대상으로 끌어서 놓습니다.
+   * **프로그램 이미지 추가**&#x200B;를 클릭한 다음 파일 브라우저에서 이미지를 선택합니다.
+   * 추가한 이미지를 삭제하려면 휴지통 아이콘을 클릭합니다.
 
-1. **샌드박스 설정** 대화 상자에서 **솔루션 및 추가 기능** 테이블의 옵션을 선택하여 샌드박스 프로그램에서 활성화할 솔루션을 선택합니다.
+1. **계속**&#x200B;을 클릭합니다.
 
-   * 솔루션 이름 옆 갈매기 모양 표시를 사용하여 솔루션에 대한 추가적인 옵션 추가 기능을 표시합니다.
+1. **솔루션 및 추가 기능** 목록 상자에서 프로그램에 포함할 하나 이상의 솔루션을 선택합니다.
 
-   * **Sites** 및 **Assets** 솔루션은 샌드박스 프로그램에 항상 포함되고 선택을 해제할 수 없습니다.
+   * 솔루션 이름 왼쪽에 있는 V자형 화살표를 클릭하여 선택한 솔루션에 포함할 사용 가능한 선택적 추가 기능을 표시합니다.
+   * 샌드박스 프로그램을 만들 때 **Sites**, **Assets** 및 **Edge Deliver Services** 솔루션이 항상 기본적으로 선택됩니다. 이러한 옵션은 선택 취소할 수 없습니다.
 
    ![샌드박스용 솔루션 및 추가 기능 선택](assets/sandbox-solutions-add-ons.png)
 
-1. 샌드박스 프로그램용 솔루션 및 추가 기능을 선택한 다음에는 **만들기**&#x200B;를 클릭합니다.
-
-설정 프로세스가 진행됨에 따라 상태 표시기가 있는 새로운 샌드박스 프로그램 카드가 랜딩 페이지에 표시됩니다.
+1. **만들기**&#x200B;를 클릭합니다. Cloud Manager은 샌드박스 프로그램을 만들고 랜딩 페이지에 표시하여 선택합니다.
 
 ![개요 페이지에서 샌드박스 만들기](assets/sandbox-setup.png)
 
 ## 샌드박스 액세스 {#access}
 
-프로그램 개요 페이지에서 샌드박스 설정의 세부 정보를 보고 환경에 액세스(사용 가능한 경우)할 수 있습니다.
+새 샌드박스 프로그램 만들기가 완료되면 프로그램 개요 페이지에서 샌드박스 설정의 세부 정보를 보고 환경에 액세스할 수 있습니다.
 
-1. Cloud Manager 랜딩 페이지에서 만든 프로그램의 줄임표 버튼을 클릭합니다.
+1. Cloud Manager 랜딩 페이지에서 만든 샌드박스 프로그램의 줄임표 버튼을 클릭합니다.
 
    ![프로그램 개요 액세스](assets/program-overview-sandbox.png)
 
-1. 프로젝트 만들기 단계가 완료된 후에 **저장소 정보 액세스** 링크에 액세스하여 git 저장소를 사용할 수 있습니다.
+1. 프로젝트 만들기 단계가 완료되면 **저장소 정보 액세스** 링크를 클릭하여 git 저장소를 사용할 수 있습니다.
 
    ![프로그램 구성](assets/create-program4.png)
 
@@ -64,7 +67,7 @@ ht-degree: 74%
    >
    >Git 저장소 액세스 및 관리에 대한 자세한 내용은 [Git 액세스](/help/implementing/cloud-manager/managing-code/accessing-repos.md)를 참조하십시오.
 
-1. 개발 환경이 생성되면 **AEM 액세스** 링크를 사용하여 AEM에 로그인할 수 있습니다.
+1. 개발 환경이 만들어지면 **AEM 액세스**&#x200B;를 클릭하고 AEM에 로그인할 수 있습니다.
 
    ![AEM 링크 액세스](assets/create-program5.png)
 
@@ -74,4 +77,4 @@ ht-degree: 74%
 
 >[!TIP]
 >
->Cloud Manager 탐색 방법 및 **내 프로그램** 콘솔 이해에 대한 자세한 내용은 [Cloud Manager UI 탐색](/help/implementing/cloud-manager/navigation.md) 문서를 참조하십시오.
+>Cloud Manager 탐색 방법 및 **내 프로그램** 콘솔 이해에 대한 자세한 내용은 [Cloud Manager UI 탐색](/help/implementing/cloud-manager/navigation.md)을 참조하십시오.

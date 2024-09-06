@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '1119'
-ht-degree: 58%
+source-wordcount: '1110'
+ht-degree: 71%
 
 ---
 
@@ -48,15 +48,15 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 
 1. **프로그램 개요** 페이지에서 **파이프라인** 탭을 선택하여 **파이프라인** 창으로 전환합니다.
 
-1. **파이프라인 카드**&#x200B;에서와 같이 프로그램의 모든 파이프라인 목록을 보고 파이프라인 실행을 시작하고 중지할 수 있습니다.
+1. 여기서는 **파이프라인 카드**&#x200B;에서와 같이 프로그램의 모든 파이프라인 목록을 보고 파이프라인 실행을 시작 및 정지할 수도 있습니다.
 
-파이프라인이 실행 중인 경우 **상태** 열에서 정보 아이콘을 탭하면 실행에 대한 세부 정보가 표시됩니다.
+파이프라인이 실행 중인 경우 **상태** 열에서 정보 아이콘을 클릭하면 실행에 대한 세부 정보가 표시됩니다.
 
 ![파이프라인 실행 세부 정보](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
 
-**세부 정보 보기**&#x200B;를 탭하거나 클릭하면 [파이프라인 실행에 대한 세부 정보를 확인할 수 있습니다.](#view-details)
+**세부 정보 보기**&#x200B;를 클릭하면 [파이프라인 실행에 대한 세부 정보](#view-details)를 확인할 수 있습니다.
 
-파이프라인의 줄임표 버튼을 탭하거나 클릭하여 [편집](#editing-pipelines) 또는 [실행 취소](#cancel)와 같은 파이프라인 상태에 적합한 추가 작업을 수행할 수도 있습니다.
+파이프라인의 줄임표 버튼을 클릭하여 [편집](#editing-pipelines) 또는 [실행 취소](#cancel)와 같은 파이프라인 상태에 적합한 추가 작업을 수행할 수도 있습니다.
 
 ![파이프라인 작업](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
 
@@ -70,13 +70,13 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 
 1. 여기에서는 현재 실행과 이전 실행을 포함하여 프로그램에 대한 모든 파이프라인 실행 목록을 볼 수 있습니다.
 
-파이프라인이 실행 중인 경우 **상태** 열에서 정보 아이콘을 탭하면 실행에 대한 세부 정보가 표시됩니다.
+파이프라인이 실행 중인 경우 **상태** 열에서 정보 아이콘을 클릭하면 실행에 대한 세부 정보가 표시됩니다.
 
 ![파이프라인 실행 세부 정보](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
 
-파이프라인 실행을 나타내는 행을 탭하거나 클릭하면 [파이프라인 실행에 대한 세부 정보로 이동합니다.](#view-details)
+파이프라인 실행을 나타내는 행을 탭하거나 클릭하면 [파이프라인 실행의 세부 정보](#view-details)로 이동합니다.
 
-줄임표 버튼을 탭하거나 클릭하여 자세한 내용을 보거나 로그를 다운로드하는 등 파이프라인 실행에 대한 추가 작업을 수행할 수도 있습니다. 그러면 [파이프라인 세부 정보 페이지로 이동합니다.](#view-details)
+줄임표 버튼을 클릭하여 자세한 내용을 보거나 로그를 다운로드하는 등 파이프라인 실행에 대한 추가 작업을 수행할 수도 있습니다. 그러면 [파이프라인 세부 정보 페이지](#view-details)로 이동합니다.
 
 ![파이프라인 실행 작업](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-execution-actions.png)
 
@@ -84,7 +84,7 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
-1. **프로그램 개요** 페이지에서 **파이프라인** 카드로 이동한 다음 실행하는 파이프라인 옆에 있는 줄임표 버튼을 클릭하고 메뉴에서 **실행**&#x200B;을 선택합니다.
+1. **프로그램 개요** 페이지에서 **파이프라인** 카드로 이동한 다음 실행할 파이프라인 옆에 있는 줄임표 버튼을 클릭하고 메뉴에서 **실행**&#x200B;을 선택합니다.
 
 1. 파이프라인 실행이 시작되고 **상태** 열에 표시됩니다.
 

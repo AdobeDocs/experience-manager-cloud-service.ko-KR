@@ -6,10 +6,10 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f4c6331491bb08e81964476ad58065c1ee022967
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '1482'
-ht-degree: 36%
+ht-degree: 35%
 
 ---
 
@@ -99,7 +99,7 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 * 파이프라인을 구성하거나 실행하려면 사용자가 **배포 관리자** 역할로 로그인해야 합니다.
 * 언제든지 환경당 하나의 전체 스택 파이프라인만 있을 수 있습니다.
 
-또한 [웹 계층 구성 파이프라인](#web-tier-config-pipelines)을 도입하기로 선택한 경우, 전체 스택 파이프라인이 작동하는 방식을 알고 있어야 합니다.
+또한 [웹 계층 구성 파이프라인](#web-tier-config-pipelines)을 도입하기로 선택한 경우 전체 스택 파이프라인이 작동하는 방식을 알고 있어야 합니다.
 
 * 해당 웹 계층 구성 파이프라인이 있는 경우 환경에 대한 전체 스택 파이프라인은 Dispatcher 구성을 무시합니다.
 * 환경에 해당하는 웹 계층 구성 파이프라인이 존재하지 않는 경우 사용자는 전체 스택 파이프라인을 구성하거나 Dispatcher 구성을 무시할 수 있습니다.

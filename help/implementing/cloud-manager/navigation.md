@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b2950c62c55942614e23d08b3bb96864d4112e8c
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 80%
+source-wordcount: '1499'
+ht-degree: 76%
 
 ---
 
@@ -37,7 +37,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 1. [도구 모음](#toolbars-my-programs-toolbars) - 조직 선택, 알림 및 계정 설정
 1. 프로그램의 현재 보기를 토글할 수 있는 탭입니다.
    * **홈** 보기(기본값) - 모든 프로그램의 개요가 포함된 **내 프로그램** 보기 선택
-   * [라이선스 대시보드에 액세스하는 **라이선스**.](/help/implementing/cloud-manager/license-dashboard.md)
+   * [라이선스 대시보드](/help/implementing/cloud-manager/license-dashboard.md)에 액세스하는 **라이선스**.
    * 탭은 기본적으로 닫혀 있으며 [Cloud Manager 헤더](#cloud-manager-header)의 햄버거 메뉴를 사용하여 표시할 수 있습니다.
 1. [통계 및 콜 투 액션](#statistics) - 최근 활동 개요
 1. [**내 프로그램** 섹션](#my-programs-section) - 사용자의 모든 프로그램에 대한 개요 포함
@@ -63,7 +63,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 1. 조직 선택기는 현재 로그인되어 있는 조직(이 예에서는 Foundation Internal)을 표시합니다. Adobe ID가 여러 조직과 연결된 경우 탭하거나 클릭하여 다른 조직으로 전환합니다.
 1. 솔루션 전환기를 탭하거나 클릭하면 다른 Experience Cloud 솔루션으로 빠르게 이동할 수 있습니다.
 1. 도움말 아이콘은 학습 및 지원 리소스에 대한 바로 가기를 제공합니다.
-1. 알림 아이콘에는 현재 할당된 불완전 [알림](/help/implementing/cloud-manager/notifications.md) 수가 배지로 지정됩니다.
+1. 알림 아이콘에 현재 할당된 미완료 [알림](/help/implementing/cloud-manager/notifications.md) 수가 배지로 표시되어 있습니다.
 1. 사용자를 나타내는 아이콘을 선택하여 사용자 설정에 액세스합니다. 사용자 사진을 구성하지 않은 경우, 아이콘이 임의로 할당됩니다.
 
 #### 프로그램 도구 모음 {#program-toolbar}
@@ -74,7 +74,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 1. 프로그램 선택기는 다른 프로그램을 빠르게 선택하거나 새 프로그램 만들기와 같이 상황에 맞는 작업을 수행할 수 있는 드롭다운을 엽니다.
 1. 시작하기 링크를 통해 [온보딩 설명서 여정](/help/journey-onboarding/overview.md)에 액세스하여 Cloud Manager를 시작하고 실행할 수 있습니다.
-1. 작업 버튼으로 새 프로그램 만들기와 같이 상황에 맞는 작업을 수행할 수 있습니다.
+1. 액션 버튼으로 새 프로그램 만들기와 같이 상황에 맞는 액션을 수행할 수 있습니다.
 
 ### 통계 및 콜 투 액션 {#statistics}
 
@@ -183,7 +183,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 ### 도구 모음 {#program-overview-toolbar}
 
-프로그램 개요의 도구 모음은 [내 프로그램 콘솔의 도구 모음과 매우 비슷합니다.](#my-programs-toolbars) 여기서는 차이점만 설명합니다.
+프로그램 개요의 도구 모음은 [내 프로그램 콘솔](#my-programs-toolbars)의 도구 모음과 비슷합니다. 여기서는 차이점만 설명합니다.
 
 #### Cloud Manager 헤더 {#cloud-manager-header-2}
 
@@ -225,7 +225,7 @@ Cloud Manager 헤더에는 프로그램 개요의 탐색 가능한 탭을 표시
 
 ### 콜 투 액션 {#cta}
 
-콜 투 액션 섹션에서는 프로그램 상태에 따라 유용한 정보를 제공합니다. 새 프로그램의 경우 제공되는 다음 단계와 실행 날짜 알림([프로그램을 만들 때 설정](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md))을 볼 수 있습니다.
+콜 투 액션 섹션에서는 프로그램 상태에 따라 유용한 정보를 제공합니다. 새 프로그램의 경우 다음 단계 및 Go-Live 날짜 알림 메시지가 표시될 수 있습니다. [프로그램 생성 중 설정](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
 ![새 프로그램에 대한 클릭 유도 문안](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 
@@ -251,7 +251,7 @@ Cloud Manager 헤더에는 프로그램 개요의 탐색 가능한 탭을 표시
 
 ### 성능 카드 {#performance}
 
-**성능** 카드는 **[CDN 대시보드에 대한 개요를 제공합니다.](/help/implementing/cloud-manager/cdn-performance.md)**
+**성능** 카드는 **[CDN 대시보드](/help/implementing/cloud-manager/cdn-performance.md)**&#x200B;에 대한 개요를 제공합니다.
 
 ![성능 카드](/help/implementing/cloud-manager/assets/cdn-performance-dashboard.png)
 

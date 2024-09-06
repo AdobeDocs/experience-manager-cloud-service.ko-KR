@@ -5,7 +5,7 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1373'
 ht-degree: 9%
@@ -97,7 +97,7 @@ Junit을 사용하여 구현되고 Maven을 사용하여 실행되며 공식 [AE
 >
 >사용자 지정 UI 테스트는 AEM 애플리케이션에서 사용하는 프로덕션 및 비프로덕션(옵트인) 파이프라인에서 실행되며, 이 파이프라인은 AEM 애플리케이션 변경 배포 및 제품 푸시 업데이트를 변경하므로 애플리케이션이 제대로 작동하는지 확인하고 릴리스 안전성을 높이는 데 도움이 되는 주요 기여입니다. 고객 UI 테스트는 각 고객에 대한 내부 프리릴리스 유효성 검사 파이프라인에서도 실행되므로 초기 피드백을 제공하는 데 도움이 됩니다.
 >
->Selenium이 아닌 컨테이너는 [UI 테스트 섹션의 환경 변수를 기반으로 하는 HTTP 프록시를 사용하여 테스트를 실행해야 합니다.](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
+>Selenium이 아닌 컨테이너는 [UI 테스트 섹션](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)의 환경 변수를 기반으로 하는 HTTP 프록시를 사용하여 테스트를 실행해야 합니다.
 
 파이프라인 실행을 효율적으로 유지하기 위해서는 주요 기능 및 주요 사용자 상호 작용 흐름에 중점을 두는 것이 좋습니다. 이 품질 게이트에 맞지 않는 전체 UI 테스트 세트는 고객의 개발 흐름 동안 일반적인 고객 유효성 검사 파이프라인의 일부로 실행하는 것이 좋습니다.
 
@@ -111,7 +111,7 @@ Junit을 사용하여 구현되고 Maven을 사용하여 실행되며 공식 [AE
 
 이 품질 게이트는 AEM에서 기본적으로 제공하지만 배포 파이프라인을 차단하지 않습니다. 기본적으로 게시 인스턴스의 루트 페이지(`/`)에 대한 감사가 수행됩니다. 감사에 고려되는 최대 25개의 사용자 지정 경로를 구성하여 기여할 수 있습니다.
 
-자세한 내용은 [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-testing.md)를 참조하십시오.
+자세한 내용은 [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-dashboard.md)를 참조하십시오.
 
 ### 고객 유효성 검사
 

@@ -5,7 +5,7 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 20%
@@ -51,7 +51,7 @@ Cloud Manager UI를 통해 파이프라인 변수를 구성하고 관리할 수 
 
 1. **변수 구성** 창이 열립니다. 표의 첫 행에 변수 세부 정보를 입력하고 **추가**&#x200B;를 탭하거나 클릭합니다.
 
-   * **구성 이름**&#x200B;은(는) 변수에 대한 고유 식별자로, [파이프라인 변수 이름 지정 규칙을 가리켜야 합니다.](#naming-conventions)
+   * **구성 이름**&#x200B;은(는) 변수에 대한 고유 식별자로, [파이프라인 변수 이름 지정 규칙](#naming-conventions)을(를) 가리켜야 합니다.
    * **Value**&#x200B;은(는) 변수가 보유한 값입니다.
    * **단계 적용됨**&#x200B;은(는) 변수가 적용되는 파이프라인의 단계입니다. 필수입니다.
       * **빌드**

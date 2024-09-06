@@ -4,10 +4,10 @@ description: AEM 관리 CDN을 사용하는 방법과 자체 CDN을 AEM 관리 C
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
 workflow-type: tm+mt
-source-wordcount: '1555'
-ht-degree: 18%
+source-wordcount: '1603'
+ht-degree: 11%
 
 ---
 
@@ -19,18 +19,24 @@ ht-degree: 18%
 >title="AEM as a Cloud Service의 CDN"
 >abstract="AEM as Cloud Service는 빌트인된 CDN과 함께 제공됩니다. 주요 목적은 브라우저 근처 가장자리에 CDN 노드에서 캐시 가능 콘텐츠를 게재하여 지연 시간을 줄이는 것입니다. AEM 애플리케이션 최적의 성능을 위해 완벽하게 관리 및 구성됩니다."
 
-AEM as Cloud Service는 빌트인된 CDN과 함께 제공됩니다. 주요 목적은 브라우저 근처 가장자리에 CDN 노드에서 캐시 가능 콘텐츠를 게재하여 지연 시간을 줄이는 것입니다. AEM 애플리케이션 최적의 성능을 위해 완벽하게 관리 및 구성됩니다.
+AEM as a Cloud Service에는 사용자의 브라우저와 가까운 에지 노드에서 캐시 가능 컨텐츠를 전달하여 지연 시간을 줄이도록 설계된 통합 CDN이 포함되어 있습니다. 이 완전 관리 CDN은 AEM 애플리케이션 성능에 최적화되어 있습니다.
 
-AEM 관리 CDN은 대부분의 고객 성능 및 보안 요구 사항을 충족합니다. 게시 계층의 경우 고객은 관리해야 할 자신의 CDN에서 지정할 수 있습니다(선택 사항). 이 시나리오는 중단할 수 없는 고객과 CDN 공급업체의 기존 통합을 포함하되 이에 국한되지 않고 특정 사전 요구 사항을 충족하는지에 따라 사례별로 지정됩니다.
+AEM 관리 CDN은 대부분의 고객의 성능 및 보안 요구 사항을 충족합니다. 게시 계층의 경우 고객은 관리해야 하는 자체 CDN을 통해 트래픽을 라우팅하도록 선택할 수 있습니다. 이 옵션은 특히 고객이 대체하기 어려운 CDN 공급자와의 기존 레거시 통합을 보유하고 있는 경우 사안별로 사용할 수 있습니다.
+
+Edge Delivery Services 계층에 게시하려는 고객은 Adobe의 관리 CDN을 이용할 수 있습니다. [Adobe 관리 CDN](#aem-managed-cdn)을(를) 참조하십시오. <!-- CQDOC-21758, 5b -->
+
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
 
-## AEM 관리 CDN  {#aem-managed-cdn}
+## Adobe 관리 CDN {#aem-managed-cdn}
 
-AEM의 기본 CDN을 사용하여 Cloud Manager 셀프서비스 UI를 사용하여 컨텐츠 전달을 준비하려면 아래 섹션을 따르십시오.
+<!-- CQDOC-21758, 5a -->
 
-1. [SSL 인증서 관리](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-1. [사용자 정의 도메인 이름 관리](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+Cloud Manager의 셀프서비스 UI를 통해 AEM의 기본 제공 CDN을 사용하여 컨텐츠 전달을 준비하려면 Adobe의 관리 CDN 기능을 활용할 수 있습니다. 이 기능을 사용하면 DV(도메인 유효성 검사) 또는 EV/OV(확장/조직 유효성 검사) 인증서와 같은 SSL 인증서 구성 및 설치를 포함하여 셀프서비스 CDN 관리를 처리할 수 있습니다. 이러한 메서드에 대한 자세한 내용은 다음을 참조하십시오.
+
+* [SSL 인증서 관리](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+* [사용자 정의 도메인 이름 관리](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+* [Cloud Manager에서의 Edge Delivery Services 지원](/help/implementing/cloud-manager/edge-delivery-services.md)
 
 **트래픽 제한**
 
@@ -40,7 +46,7 @@ AEM의 기본 CDN을 사용하여 Cloud Manager 셀프서비스 UI를 사용하�
 
 >[!CAUTION]
 >
->허용된 IP의 요청만 AEM의 관리 CDN에서 제공됩니다. 자체 CDN을 AEM 허용 목록에 추가하다 관리 CDN으로 지정하는 경우 CDN의 IP가 CDN에 포함되어 있는지 확인합니다.
+>AEM의 관리되는 CDN은 허용된 IP의 요청만 처리합니다. 자체 CDN을 AEM 관리 CDN으로 지정하는 경우 CDN의 IP가 IP 허용 목록에 포함되어 있는지 확인합니다.
 
 ### CDN에서 트래픽 구성 {#cdn-configuring-cloud}
 
@@ -51,13 +57,13 @@ CDN에서 트래픽을 다음과 같은 다양한 방법으로 구성할 수 있
 * 301/302 [클라이언트측 리디렉션 적용](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)
 * [원본 선택기](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)을(를) 선언하여 비 AEM 백엔드에 대한 요청을 프록시로 되돌립니다.
 
-git에서 YAML 파일을 사용하고 Cloud Manager [Config Pipeline](/help/implementing/dispatcher/cdn-configuring-traffic.md)을 사용하여 배포하여 이러한 기능을 구성하는 방법에 대해 알아봅니다.
+Git의 YAML 파일을 사용하여 이러한 기능을 구성합니다. Cloud Manager [구성 파이프라인](/help/implementing/dispatcher/cdn-configuring-traffic.md)을(를) 사용하여 배포하십시오.
 
 ### CDN 오류 페이지 구성 {#cdn-error-pages}
 
-AEM에 도달할 수 없는 드문 이벤트에서 브라우저에 제공되는 기본적이고 브랜드가 지정되지 않은 페이지를 재정의하도록 CDN 오류 페이지를 구성할 수 있습니다. 자세한 내용은 [CDN 오류 페이지 구성](/help/implementing/dispatcher/cdn-error-pages.md)을 참조하십시오.
+CDN 오류 페이지를 구성하여 기본 브랜드가 지정되지 않은 페이지를 바꿀 수 있습니다. 이 사용자 지정 페이지는 AEM을 사용할 수 없는 드문 이벤트에 표시됩니다. 자세한 내용은 [CDN 오류 페이지 구성](/help/implementing/dispatcher/cdn-error-pages.md)을 참조하십시오.
 
-### CDN에서 캐시된 컨텐츠 제거 {#purge-cdn}
+### CDN에서 캐시된 콘텐츠 제거 {#purge-cdn}
 
 HTTP Cache-Control 헤더를 사용하여 TTL을 설정하는 것은 콘텐츠 게재 성능과 콘텐츠 신선도의 균형을 맞추는 효과적인 방법입니다. 그러나 업데이트된 콘텐츠를 즉시 제공하는 것이 중요한 시나리오에서는 CDN 캐시를 직접 제거하는 것이 유용할 수 있습니다.
 
@@ -67,19 +73,19 @@ HTTP Cache-Control 헤더를 사용하여 TTL을 설정하는 것은 콘텐츠 �
 
 비즈니스 이해 관계자가 콘텐츠를 검토하는 등 가벼운 인증 사용 사례의 경우, 사용자 이름과 암호를 요구하는 기본 인증 대화 상자를 표시하여 콘텐츠를 보호하십시오. [자세히 알아보기](/help/implementing/dispatcher/cdn-credentials-authentication.md) 얼리어답터 프로그램에 참여하세요.
 
-## 고객 CDN은 AEM 관리 CDN에 지정 {#point-to-point-CDN}
+## 고객 관리 CDN이 AEM 관리 CDN을 가리킴 {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
 >title="고객 CDN은 AEM Managed CDN에 지정"
 >abstract="AEM as Cloud Service는 고객이 기존 CDN을 사용할 수 있는 옵션을 제공합니다. 게시 계층의 경우 고객은 관리해야 할 자신의 CDN에서 지정할 수 있습니다(선택 사항). 이 시나리오는 중단할 수 없는 고객과 CDN 공급업체의 기존 통합을 포함하되 이에 국한되지 않고 특정 사전 요구 사항을 충족하는지에 따라 사례별로 지정됩니다."
 
-고객이 기존 CDN을 사용해야 하는 경우 이를 관리하고 AEM 관리 CDN을 지정할 수 있으며, 이는 다음 사항이 충족되면 해당됩니다.
+고객이 기존 CDN을 사용해야 하는 경우 이를 관리하고 AEM 관리 CDN을 지정할 수 있으며, 이는 다음을 충족하면 됩니다.
 
 * 고객은 교체해야 하는 기존 CDN이 있어야 합니다.
 * 고객이 관리해야 합니다.
-* 고객이 AEM as a Cloud Service에서 작동하도록 CDN을 구성할 수 있어야 합니다. 아래 표시된 구성 지침을 참조하십시오.
-* 고객은 관련 문제가 발생할 경우 언제든지 연락할 수 있는 엔지니어링 CDN 전문가를 보유해야 합니다.
+* 고객은 AEM as a Cloud Service에서 작동하도록 CDN을 구성할 수 있어야 합니다. 아래 표시된 구성 지침을 참조하십시오.
+* 고객은 관련 문제가 발생할 경우 언제든지 연락할 수 있는 엔지니어링 CDN 전문가를 보유하고 있어야 합니다.
 * 고객은 프로덕션으로 이동하기 전에 로드 테스트를 수행하고 성공적으로 통과해야 합니다.
 
 구성 지침:
@@ -88,7 +94,7 @@ HTTP Cache-Control 헤더를 사용하여 TTL을 설정하는 것은 콘텐츠 �
 1. SNI를 Adobe CDN의 인그레스로 설정합니다.
 1. 호스트 헤더를 원본 도메인으로 설정합니다. 예: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. AEM에서 호스트 헤더를 확인할 수 있도록 `X-Forwarded-Host` 헤더를 도메인 이름으로 설정합니다. 예: `X-Forwarded-Host:example.com`.
-1. `X-AEM-Edge-Key`을(를) 설정합니다. [이 문서에 설명된 대로 Cloud Manager 구성 파이프라인을 사용하여 값을 구성해야 합니다.](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)
+1. `X-AEM-Edge-Key`을(를) 설정합니다. [이 문서](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)에 설명된 대로 Cloud Manager 구성 파이프라인을 사용하여 값을 구성해야 합니다.
 
    * Adobe CDN이 요청 소스의 유효성을 검사하고 `X-Forwarded-*` 헤더를 AEM 애플리케이션에 전달할 수 있어야 합니다. 예를 들어 `X-Forwarded-For`은(는) 클라이언트 IP를 확인하는 데 사용됩니다. 따라서 `X-Forwarded-*` 헤더가 정확한지 확인하는 것은 신뢰할 수 있는 호출자(즉, 고객 관리 CDN)의 책임입니다(아래 참고 사항 참조).
    * 선택적으로, `X-AEM-Edge-Key`이(가) 없을 때 Adobe CDN 인그레스에 대한 액세스를 차단할 수 있습니다. Adobe CDN의 인그레스에 직접 액세스해야 하는 경우 Adobe에게 알립니다(차단됨).
@@ -113,8 +119,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->자체 CDN을 사용하는 경우 Cloud Manager에 도메인 및 인증서를 설치할 필요가 없습니다. Adobe CDN의 라우팅은 요청 `Host` 헤더에서 전송해야 하는 기본 도메인 `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`을(를) 사용하여 수행됩니다. 사용자 지정 도메인 이름으로 요청 `Host` 헤더를 덮어쓰면 Adobe CDN에서 요청이 잘못 라우팅될 수 있습니다.
-
+>자체 CDN을 사용하는 경우 Cloud Manager에 도메인 및 인증서를 설치할 필요가 없습니다. Adobe CDN의 라우팅은 기본 도메인 `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`을(를) 사용하여 수행되며, 이는 요청 `Host` 헤더에서 전송되어야 합니다. 요청 `Host` 헤더를 사용자 지정 도메인 이름으로 덮어쓰면 Adobe CDN을 통해 요청이 잘못 라우팅될 수 있습니다.
 
 >[!NOTE]
 >
@@ -122,7 +127,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->샌드박스 프로그램 환경은 고객 제공 CDN을 지원하지 않습니다.
+>샌드박스 프로그램 환경은 고객이 제공한 CDN을 지원하지 않습니다.
 
 고객 CDN과 AEM CDN 간의 추가 홉은 캐시 누락이 있는 경우에만 필요합니다. 이 문서에 설명된 캐시 최적화 전략을 사용하면 고객 CDN을 추가하면 무시할 수 있는 지연만 발생합니다.
 
@@ -149,9 +154,9 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 ### 일반적인 오류 {#common-errors}
 
-제공된 샘플 구성은 필요한 기본 설정을 표시하지만, 고객 구성에는 AEM as a Cloud Service이 트래픽을 제공하는 데 필요한 헤더를 제거, 수정 또는 재정렬하는 다른 영향을 주는 규칙이 있을 수 있습니다. 다음은 AEM as a Cloud Service을 가리키도록 고객 관리 CDN을 구성할 때 발생하는 일반적인 오류입니다.
+제공된 샘플 구성은 필요한 기본 설정을 보여 줍니다. 하지만 고객 구성에는 AEM as a Cloud Service이 트래픽을 처리하는 데 필요한 헤더를 제거, 편집 또는 다시 정렬하는 다른 영향을 주는 규칙이 있을 수 있습니다. 다음은 AEM as a Cloud Service을 가리키도록 고객 관리 CDN을 구성할 때 발생하는 일반적인 오류입니다.
 
-**Publish 서비스 끝점으로 리디렉션**
+**게시 서비스 끝점으로 리디렉션**
 
 요청이 403 금지된 응답을 수신하면 요청에 일부 필수 헤더가 누락되었음을 의미합니다. CDN이 Apex 및 `www` 도메인 트래픽을 모두 관리하고 있지만 `www` 도메인에 대한 올바른 헤더를 추가하지 않는 것이 일반적인 원인입니다. 이 문제는 AEM as a Cloud Service CDN 로그를 확인하고 필요한 요청 헤더를 확인하여 트리거할 수 있습니다.
 
@@ -169,14 +174,14 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 ## 지리적 위치 헤더 {#geo-headers}
 
-AEM 관리 CDN은 다음을 사용하여 각 요청에 헤더를 추가합니다.
+AEM Managed CDN은 다음과 같이 각 요청에 헤더를 추가합니다.
 
 * 국가 코드: `x-aem-client-country`
 * 대륙 코드: `x-aem-client-continent`
 
 >[!NOTE]
 >
->고객 관리 CDN이 있는 경우 이러한 헤더는 실제 클라이언트가 아닌 고객 CDN 프록시 서버의 위치를 반영합니다. 따라서 고객 관리 CDN의 경우 지리적 위치 헤더는 고객 CDN에서 관리해야 합니다.
+>고객 관리 CDN이 있는 경우 이러한 헤더는 실제 클라이언트가 아닌 고객의 CDN 프록시 서버의 위치를 반영합니다. 고객이 관리하는 CDN을 사용할 때는 고객이 자체 CDN을 통해 지리적 위치 헤더를 관리해야 합니다.
 
 국가 코드 값은 [ISO 3166-1](https://en.wikipedia.org/wiki/kr/ISO_3166-1)에 설명된 Alpha-2 코드입니다.
 
@@ -190,4 +195,4 @@ AEM 관리 CDN은 다음을 사용하여 각 요청에 헤더를 추가합니다
 * 오세아니아
 * 남아메리카
 
-이 정보는 요청의 원본(국가)을 기반으로 다른 URL로 리디렉션하는 것과 같은 사용 사례에 유용할 수 있습니다. 지역 정보에 따라 응답을 캐시하려면 Vary 헤더를 사용합니다. 예를 들어, 특정 국가 랜딩 페이지로 리디렉션하는 경우 항상 `Vary: x-aem-client-country`을(를) 포함해야 합니다. 필요한 경우 `Cache-Control: private`을(를) 사용하여 캐싱을 방지할 수 있습니다. [캐싱](/help/implementing/dispatcher/caching.md#html-text)도 참조하세요.
+이 정보는 요청의 원본 국가를 기준으로 다른 URL로 리디렉션하는 데 유용합니다. 지역 정보에 따라 응답을 캐시하려면 Vary 헤더를 사용합니다. 예를 들어, 특정 국가 랜딩 페이지로 리디렉션하는 경우 항상 `Vary: x-aem-client-country`을(를) 포함해야 합니다. 필요한 경우 `Cache-Control: private`을(를) 사용하여 캐싱을 방지할 수 있습니다. [캐싱](/help/implementing/dispatcher/caching.md#html-text)도 참조하세요.

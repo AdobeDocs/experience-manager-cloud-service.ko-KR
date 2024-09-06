@@ -5,9 +5,9 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ec95438d704568076af045d8933be2125885f482
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '923'
 ht-degree: 37%
 
 ---
@@ -39,7 +39,7 @@ Cloud Manager 라이선스 대시보드를 사용하면 다음 정보에 쉽게 
 >라이선스 대시보드를 보려면 **비즈니스 소유자** 역할의 사용자가 로그인해야 합니다.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
-1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 [Cloud Manager 헤더의 햄버거 메뉴 버튼을 탭하거나 클릭합니다.](/help/implementing/cloud-manager/navigation.md#cloud-manager-header) 탭이 표시됩니다.
+1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 [Cloud Manager 헤더](/help/implementing/cloud-manager/navigation.md#cloud-manager-header)의 햄버거 메뉴 단추를 클릭합니다. 그러면 탭이 표시됩니다.
 1. 탭에서 **라이선스** 옵션을 탭하거나 클릭합니다.
 
 ![라이선스 대시보드](assets/license-dashboard.png)
@@ -72,7 +72,7 @@ Cloud Manager의 라이선스 영역에 있는 **사용 세부 정보 보기** �
 
 ### Sites 사용량 세부 정보 {#sites-usage-details}
 
-**사이트 사용 세부 정보** 창은 [콘텐츠 요청을 기반으로 사이트 라이선스 사용에 대한 개요를 보여주는 그래프를 제공합니다.](#what-is-a-content-request)
+**사이트 사용 세부 정보** 창은 [콘텐츠 요청](#what-is-a-content-request)을 기반으로 Sites 라이선스의 사용 개요를 보여주는 그래프를 표시합니다.
 
 ![사이트 사용 세부 정보 창](assets/sites-usage-details.png)
 
@@ -83,7 +83,7 @@ Cloud Manager의 라이선스 영역에 있는 **사용 세부 정보 보기** �
 <!-- REMOVED AS PER CQDOC-21983
 ### Assets usage details {#assets-usage-details}
 
-The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users.](#standard-users) Select the appropriate tab to toggle between the views.
+The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users](#standard-users). Select the appropriate tab to toggle between the views.
 
 For both storage and standard users views, you can use the **Environment Type** dropdown to toggle the view between production, stage, and development environments.
 

@@ -4,10 +4,10 @@ description: "[!DNL Adobe Experience Manager] as a Cloud Service 릴리스 노�
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1031'
-ht-degree: 34%
+ht-degree: 35%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 34%
   >[!NOTE]
   >이후 콘텐츠 감사는 경험 감사로 이름이 변경되었습니다.
 
-  자세한 내용은 [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-testing.md)를 참조하십시오.
+  자세한 내용은 [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-dashboard.md)를 참조하십시오.
 
 * Assets 프로그램에서 새로 만들어진 환경은 이제 스마트 콘텐츠 서비스로 자동 구성됩니다.
 

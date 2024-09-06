@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 503c6712aeea33fc093dbaec780e50c1e72579cd
+source-git-commit: 2bf129d763fcad024eb3799cdf2a97bdbc2472c5
 workflow-type: tm+mt
-source-wordcount: '5578'
+source-wordcount: '5586'
 ht-degree: 95%
 
 ---
@@ -105,6 +105,7 @@ ht-degree: 95%
    + Cloud Manager 릴리스 정보 {#cloud-manager}
       + [최신 릴리스 정보](/help/implementing/cloud-manager/release-notes/current.md)
       + 2024 {#2024}
+         + [2024.8.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2024/2024-8-0.md)
          + [2024.7.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2024/2024-7-0.md)
          + [2024.6.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2024/2024-6-0.md)
          + [2024.5.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2024/2024-5-0.md)
@@ -1073,7 +1074,6 @@ ht-degree: 95%
          + [샌드박스 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [프로그램 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [환경 절전 모드 설정](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
-         + [Edge Delivery Services 지원](/help/implementing/cloud-manager/edge-delivery-services.md)
       + AEM 애플리케이션 프로젝트 만들기 {#create-application-project}
          + [프로젝트 제작 마법사](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [프로젝트 설정](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
@@ -1107,7 +1107,6 @@ ht-degree: 95%
             + [기능 테스트 개요](/help/implementing/cloud-manager/functional-testing.md)
             + [Java 기능 테스트](/help/implementing/cloud-manager/java-functional-testing.md)
             + [UI 테스트](/help/implementing/cloud-manager/ui-testing.md)
-         + [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-testing.md)
          + [경험 감사 대시보드](/help/implementing/cloud-manager/experience-audit-dashboard.md)
       + [로그 액세스 및 관리](/help/implementing/cloud-manager/manage-logs.md)
       + [사용자 정의 권한](/help/implementing/cloud-manager/custom-permissions.md)
@@ -1116,11 +1115,9 @@ ht-degree: 95%
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [알림](/help/implementing/cloud-manager/notifications.md)
       + [고급 네트워킹](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=ko)
-      + SSL 인증서 {#manage-ssl-certificates}
-         + [소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-         + [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-         + [SSL 인증서 관리](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-      + 사용자 정의 도메인 이름 {#custom-domain-names}
+      + Edge Delivery 사이트 {#edge-delivery-sites}
+         + [Cloud Manager의 Edge Delivery 지원](/help/implementing/cloud-manager/edge-delivery-services.md)
+      + 도메인 설정 {#custom-domain-names}
          + [소개](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [사용자 정의 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [TXT 레코드 추가](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
@@ -1128,7 +1125,12 @@ ht-degree: 95%
          + [DNS 설정 구성](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [DNS 레코드 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [사용자 정의 도메인 이름 관리](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
-         + [DV(Domain Validated) 인증서](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)
+      + SSL 인증서 {#manage-ssl-certificates}
+         + [소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         + [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+         + [SSL 인증서 관리](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+      + CDN 구성 {#cdn-configurations}
+         + [CDN 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
       + IP 허용 목록 {#ip-allow-lists}
          + [소개](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [IP 허용 목록 추가](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)

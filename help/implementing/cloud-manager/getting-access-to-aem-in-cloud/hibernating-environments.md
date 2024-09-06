@@ -5,10 +5,10 @@ exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 84%
+source-wordcount: '696'
+ht-degree: 83%
 
 ---
 
@@ -117,7 +117,7 @@ AEM as a Cloud Service에 액세스할 수 있는 제품 프로필을 가진 모
 
 * 샌드박스 프로그램의 환경은 8시간 동안 비활성 상태인 경우 자동으로 절전 모드로 전환됩니다.
    * 비활성은 작성자 서비스나 미리보기 또는 게시 서비스에서 요청을 수신하지 않는 것으로 정의됩니다.
-   * 일단 절전 모드로 전환되면 [수동으로 절전 모드를 해제할 수 있습니다.](#de-hibernation-introduction)
+   * 최대 절전 모드로 전환되면 [수동으로 최대 절전 모드를 해제]할 수 있습니다.(#de-hibernation-introduction)
 * 샌드박스 프로그램은 연속 최대 절전 모드에서 6개월 후에 삭제되며 그 후 다시 만들 수 있습니다.
 
 >[!NOTE]

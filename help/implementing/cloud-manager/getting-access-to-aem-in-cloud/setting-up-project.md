@@ -5,7 +5,7 @@ exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '1399'
 ht-degree: 96%
@@ -243,7 +243,7 @@ Maven 저장소에 이진과 함께 전체 프로젝트 소스를 배포하는 �
 
 ## 콘텐츠 패키지 건너뛰기 {#skipping-content-packages}
 
-Cloud Manager에서 빌드는 콘텐츠 패키지를 원하는 수만큼 생성할 수 있습니다. 여러 가지 이유로, 콘텐츠 패키지를 생성하지만 배포하지 않는 것이 바람직할 수 있습니다. 예를 들어 테스트용으로만 사용되거나 빌드 프로세스의 다른 단계에서 다시 패키징될 콘텐츠 패키지를 빌드할 때를 들 수 있습니다. 즉, 다른 패키지의 하위 패키지입니다.
+Cloud Manager에서 빌드는 콘텐츠 패키지를 원하는 수만큼 생성할 수 있습니다. 여러 가지 이유로 콘텐츠 패키지를 생성하지만 배포하지 않는 것이 바람직할 수 있습니다. 예를 들어 테스트용으로만 사용되거나 빌드 프로세스의 다른 단계에서 다시 패키징될 콘텐츠 패키지를 빌드할 때를 들 수 있습니다. 즉, 다른 패키지의 하위 패키지입니다.
 
 이러한 시나리오를 수용하기 위해 Cloud Manager는 빌드된 콘텐츠 패키지의 속성에서 `cloudManagerTarget`이라는 속성을 찾습니다. 이 속성을 `none`으로 설정하면 패키지를 건너뛰고 배포되지 않습니다.
 

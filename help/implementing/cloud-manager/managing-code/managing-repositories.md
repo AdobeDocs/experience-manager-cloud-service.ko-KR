@@ -4,10 +4,10 @@ description: Cloud Manager에서 git 저장소를 생성, 확인 및 삭제하�
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 100%
+source-wordcount: '621'
+ht-degree: 92%
 
 ---
 
@@ -71,7 +71,7 @@ Cloud Manager는 Adobe에서 관리하는 저장소(**Adobe 저장소**)와 사�
 
 ## 저장소 정보 확인 {#repo-info}
 
-**저장소** 창에서 저장소를 볼 때 도구 모음에서 **저장소 정보 액세스** 버튼을 탭하거나 클릭하여 Adobe 관리 저장소에 액세스하는 방법에 대한 세부 정보를 프로그래밍 방식으로 볼 수 있습니다.
+**저장소** 창에서 저장소를 볼 때 도구 모음의 **저장소 정보 액세스** 단추를 클릭하여 프로그래밍 방식으로 Adobe 관리 저장소에 액세스하는 방법에 대한 세부 정보를 볼 수 있습니다.
 
 ![저장소 정보](assets/repo-info.png)
 

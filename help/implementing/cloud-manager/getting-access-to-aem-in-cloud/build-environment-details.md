@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '788'
 ht-degree: 77%
@@ -23,7 +23,7 @@ Cloud Manager는 특수 빌드 환경을 사용하여 코드를 빌드하고 테
 
 * 빌드 환경은 Linux 기반이며 Ubuntu 22.04에서 파생되었습니다.
 * Apache Maven 3.9.4가 설치되어 있습니다.
-   * Adobe는 사용자가 [HTTP 대신 HTTPS를 사용하도록 Maven 저장소를 업데이트](#https-maven)할 것을 권장합니다.
+   * Adobe는 사용자가 [HTTP 대신 HTTPS를 사용하도록 Maven 저장소를 업데이트할 것](#https-maven)을 권장합니다.
 * 설치된 Java 버전은 Oracle JDK 11.0.22 및 Oracle JDK 8u401입니다.
 * **중요**: 기본적으로 `JAVA_HOME` 환경 변수는 Oracle JDK 8u401을 포함하는 `/usr/lib/jvm/jdk1.8.0_401`(으)로 설정됩니다. *_JDK 11_*&#x200B;을 사용하려면 AEM Cloud Projects에서 이 기본값을 재정의해야 합니다. 자세한 내용은 [Maven JDK 버전 설정](#alternate-maven-jdk-version) 섹션을 참조하십시오.
 * 필요한 몇 가지 추가 시스템 패키지가 설치되어 있습니다.
@@ -46,7 +46,7 @@ Cloud Manager는 특수 빌드 환경을 사용하여 코드를 빌드하고 테
 
 ## HTTPS Maven 저장소 {#https-maven}
 
-Cloud Manager [릴리스 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md)에서는 빌드 환경에 대한 롤링 업데이트(릴리스 2023.12.0으로 완료)를 시작했으며, 여기에는 Maven 3.8.8 업데이트가 포함되어 있습니다. Maven 3.8.1에 도입된 주요 변경 사항은 잠재적인 취약점을 완화하기 위한 보안 강화 기능입니다. 구체적으로, Maven은 이제 [Maven 릴리스 정보](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)에 설명된 바와 같이 안전하지 않은 모든 `http://*` 미러를 기본적으로 비활성화합니다.
+Cloud Manager [릴리스 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md)에서는 빌드 환경에 대한 롤링 업데이트(릴리스 2023.12.0으로 완료)를 시작했으며, 여기에는 Maven 3.8.8 업데이트가 포함되어 있습니다. Maven 3.8.1에 도입된 주요 변경 사항은 잠재적인 취약점을 완화하기 위한 보안 강화 기능입니다. 구체적으로 Maven은 이제 [Maven 릴리스 정보](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)에 설명된 바와 같이 안전하지 않은 모든 `http://*` 미러를 기본적으로 비활성화합니다.
 
 이러한 보안 강화로 인해 일부 사용자는 빌드 단계에서 문제에 직면할 수 있으며, 특히 안전하지 않은 HTTP 연결을 사용하는 Maven 저장소에서 아티팩트를 다운로드할 때 이와 같은 문제가 보다 빈번하게 발생할 수 있습니다.
 

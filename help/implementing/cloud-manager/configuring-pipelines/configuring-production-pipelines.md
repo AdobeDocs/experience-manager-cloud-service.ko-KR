@@ -6,7 +6,7 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1374'
 ht-degree: 69%
@@ -102,11 +102,11 @@ ht-degree: 69%
 
 1. 경험 감사에 포함될 경로를 제공합니다.
 
-   * 자세한 내용은 [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) 문서를 참조하십시오.
+   * 자세한 내용은 [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-dashboard.md#configuration) 문서를 참조하십시오.
 
 1. 파이프라인을 저장하려면 **저장**&#x200B;을 클릭합니다.
 
-경험 감사를 위해 구성된 경로는 파이프라인이 실행될 때 성능, 접근성, SEO(검색 엔진 최적화), 모범 사례 및 PWA(점진적 웹 앱) 테스트에 따라 서비스에 제출되고 평가됩니다. 자세한 내용은 [경험 감사 결과 이해](/help/implementing/cloud-manager/experience-audit-testing.md)를 참조하십시오.
+경험 감사를 위해 구성된 경로는 파이프라인이 실행될 때 성능, 접근성, SEO(검색 엔진 최적화), 모범 사례 및 PWA(점진적 웹 앱) 테스트에 따라 서비스에 제출되고 평가됩니다. 자세한 내용은 [경험 감사 결과 이해](/help/implementing/cloud-manager/experience-audit-dashboard.md)를 참조하십시오.
 
 파이프라인이 저장되고 이제 **프로그램 개요** 페이지의 **파이프라인** 카드에서 [파이프라인을 관리](managing-pipelines.md)할 수 있습니다.
 

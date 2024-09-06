@@ -5,10 +5,10 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -22,12 +22,12 @@ Cloud Manager에서 새 코드 저장소를 만들면 `it.tests` 폴더와 샘�
 
 >[!NOTE]
 >
->Cloud Manager에서 `it.tests` 폴더를 자동으로 만들기 전에 저장소가 만들어진 경우 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)을 사용하여 최신 버전을 생성할 수도 있습니다.
+>Cloud Manager가 자동으로 `it.tests` 폴더를 생성하기 전에 사용자 저장소가 생성되었다면 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)을 사용해서 최신 버전도 생성할 수 있습니다.
 
 `it.tests` 폴더에 콘텐츠가 생기면 자체 테스트를 위한 기반으로 이를 사용할 수 있으며, 이후 다음과 같은 작업을 수행할 수 있습니다.
 
-1. [테스트 사례를 개발합니다.](#writing-functional-tests)
-1. [로컬에서 테스트를 실행합니다.](#local-test-execution)
+1. [테스트 사례 개발](#writing-functional-tests).
+1. [로컬에서 테스트 실행](#local-test-execution).
 1. Cloud Manager 저장소에 코드를 커밋하고 Cloud Manager 파이프라인을 실행합니다.
 
 ## 사용자 정의 기능 테스트 작성 {#writing-functional-tests}
