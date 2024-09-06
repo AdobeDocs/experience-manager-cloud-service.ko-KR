@@ -2,9 +2,10 @@
 title: OpenAPI 기능이 포함된 Dynamic Media FAQ
 description: OpenAPI 기능이 포함된 Dynamic Media FAQ
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
+source-git-commit: dcc233be4d1bb84534aaef64316406bb960ce51d
 workflow-type: tm+mt
-source-wordcount: '1495'
+source-wordcount: '1494'
 ht-degree: 0%
 
 ---
@@ -108,14 +109,14 @@ Adobe의 일반적인 지침은 통합 사용 사례(자사 또는 타사 앱)�
 | [Assetsas a Cloud Service 에서만 사용 가능](/help/assets/dynamic-media-open-apis-overview.md#prerequisites-dynaminc-media-open-apis) | 추가 구성 및 프로비저닝 단계가 포함된 온프레미스 또는 Adobe Managed Services에서도 사용할 수 있습니다. |
 | [너비, 높이, 회전, 뒤집기, 품질 및 형식과 같은 지원되는 이미지 수정자의 제한된 집합](/help/assets/deliver-assets-apis.md) | 사용 가능한 다양한 이미지 수정자 세트 |
 | [사용자, 역할, 날짜 및 시간에 따라 제한된 에셋 배달](/help/assets/restrict-assets-delivery.md) | Dynamic Media에 게시된 Assets은 모든 사용자가 액세스할 수 있습니다 |
-| 대부분의 개발자는 OpenAPI 사양에 익숙합니다. [Micro Frontend 자산 선택기](/help/assets/asset-selector.md)를 사용하면 AEM Assets 확장이 매우 간단해집니다. | SOAP 기반 API를 사용하십시오. |
+| 대부분의 개발자는 OpenAPI 사양에 익숙합니다. [Micro-Frontend 자산 선택기](/help/assets/overview-asset-selector.md)를 사용하면 AEM Assets 확장이 매우 간단해집니다. | SOAP 기반 API를 사용하십시오. |
 | 버전 업데이트 및 메타데이터 수정 사항을 포함하여 DAM의 승인된 에셋에 대한 모든 변경 사항은 게재 URL에 자동으로 반영됩니다. CDN을 통해 OpenAPI 기능이 있는 Dynamic Media에 대해 10분의 짧은 TTL(Time-to-Live) 값을 구성하면 10분 이내에 모든 작성 및 게시된 인터페이스에 업데이트가 표시됩니다. | 권장 CDN TTL: 10시간. 캐시 무효화 작업을 사용하여 TTL 값을 재정의할 수 있습니다. |
 | 승인된 자산만 다운스트림 애플리케이션으로의 자산 전달에 사용할 수 있으므로 디지털 경험의 브랜드 승인된 자산에 대해 활성화합니다. | Dynamic Media에 게시된 에셋에 대한 모든 업데이트는 승인 작업 과정 없이 자동으로 게시되며 디지털 경험의 브랜드 승인 에셋에 대해서는 게시되지 않습니다. |
 | 게재된 에셋 수를 기반으로 한 사용량 보고서. 이 기능은 곧 사용할 수 있습니다. | 사용량 보고서를 사용할 수 없습니다. 이 기능은 곧 사용할 수 있습니다. |
 | Assets as a Cloud Service 저장소에서 만료됨으로 표시된 Assets은 더 이상 다운스트림 애플리케이션에서 사용할 수 없습니다. | 내재된 자산 만료 없음. 에셋은 AEM as a Cloud Service 저장소에서 삭제될 때까지 공개 상태로 유지됩니다. |
 | 이미지 사전 설정 및 비디오 스마트 자르기 기능을 지원하지 않습니다. | 이미지 사전 설정 및 비디오 스마트 자르기 기능을 지원합니다. |
 | 입력 비디오에 따라 최고의 인코딩이 제공되도록 하는 동적 비디오 인코딩입니다. 기본 비디오 제공에는 설정이 필요하지 않습니다. | 표준 3은 입력 비디오에 관계없이 인코딩합니다(비디오 게재 성능에 영향을 줄 수 있음). 비디오 비트 전송률에 따라 다른 인코딩을 수동으로 설정해야 합니다. |
-| 자산 UID 기반 URL을 추측하기 어려우나(URL 난독화를 활성화함) SEO가 최적화되었습니다. | URL 난독화는 URL 쿼리 매개 변수에만 사용할 수 있습니다. URL의 Assets ID(자산 이름)를 인식할 수 있습니다. |
+| 에셋 UID 기반 URL을 추측하기 어려우나(URL 난독화를 활성화함) SEO가 최적화되었습니다. | URL 난독화는 URL 쿼리 매개 변수에만 사용할 수 있습니다. URL의 Assets ID(자산 이름)를 인식할 수 있습니다. |
 
 +++
 
@@ -135,6 +136,3 @@ Adobe의 일반적인 지침은 통합 사용 사례(자사 또는 타사 앱)�
 | 원격 DAM의 자산 메타데이터는 AEM Sites 인스턴스에서도 사용할 수 있습니다. | 원격 DAM의 자산 메타데이터를 AEM Sites 인스턴스에서 사용할 수 없습니다. |
 
 +++
-
-
-

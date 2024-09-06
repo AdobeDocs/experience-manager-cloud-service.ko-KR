@@ -2,7 +2,8 @@
 title: OpenAPI 기능이 포함된 Dynamic Media
 description: OpenAPI 기능과 함께 Dynamic Media을 사용하는 이유 및 활성화 방법과 같은 주요 개념을 알아봅니다.
 role: User
-source-git-commit: 8cd8eb834b548a52d6a9e094cb2c4447f228ab0d
+exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
+source-git-commit: 1041769d4c1efa4465745a85df65c803939b472b
 workflow-type: tm+mt
 source-wordcount: '1061'
 ht-degree: 1%
@@ -19,7 +20,7 @@ Dynamic Media의 OpenAPI 기능은 DAM을 애자일 기반의 효율적인 콘�
 
 OpenAPI 기능이 포함된 Dynamic Media은 다음과 같은 주요 이점을 제공합니다.
 
-* **원활한 통합**: OpenAPI 기능이 포함된 Dynamic Media은 포괄적인 검색 및 게재 API 세트를 제공합니다. 이를 통해 개발자는 쉽게 [자산 배달을 애플리케이션과 통합](/help/assets/integrate-dynamic-media-open-apis.md)할 수 있습니다. 애플리케이션에는 Adobe 및 타사 애플리케이션이 포함됩니다. 승인된 자산을 검색 및 선택할 수 있는 [마이크로 프론트엔드 자산 선택기 사용자 인터페이스](/help/assets/asset-selector.md)를 제공합니다. 선택기는 React JS, Angular JS 및 Vanilla JS와 같은 JavaScript 프레임워크를 기반으로 하는 모든 애플리케이션과 손쉽게 통합할 수 있습니다.
+* **원활한 통합**: OpenAPI 기능이 포함된 Dynamic Media은 포괄적인 검색 및 게재 API 세트를 제공합니다. 이를 통해 개발자는 쉽게 [자산 배달을 애플리케이션과 통합](/help/assets/integrate-dynamic-media-open-apis.md)할 수 있습니다. 애플리케이션에는 Adobe 및 타사 애플리케이션이 포함됩니다. 승인된 자산을 검색 및 선택할 수 있는 [마이크로 프론트엔드 자산 선택기 사용자 인터페이스](/help/assets/overview-asset-selector.md)를 제공합니다. 선택기는 React JS, Angular JS 및 Vanilla JS와 같은 JavaScript 프레임워크를 기반으로 하는 모든 애플리케이션과 손쉽게 통합할 수 있습니다.
 
 * **디지털 에셋의 중앙 관리**: DAM은 모든 디지털 에셋에 대한 신뢰할 수 있는 단일 소스입니다. 디지털 에셋은 AEM Assets에서 중앙에서 관리되며 에셋 바이너리를 복사하지 않고 게재 URL을 사용하여 참조함으로써 소비되는 애플리케이션에 전달됩니다.
 
@@ -103,11 +104,11 @@ AEM as a Cloud Service에서 OpenAPI 기능을 사용하는 Dynamic Media을 활
    </p>
 </td>
 <td>
-   <a href="/help/assets/asset-selector.md">
+   <a href="/help/assets/overview-asset-selector.md">
    <img alt="Adobe의 자산 선택기" src="./assets/asset-selector-prereqs.png" />
    </a>
    <div>
-      <a href="/help/assets/asset-selector.md">
+      <a href="/help/assets/overview-asset-selector.md">
       <strong>Adobe의 Micro-Frontend 자산 선택기</strong>
       </a>
    </div>
@@ -204,4 +205,3 @@ AEM as a Cloud Service에서 OpenAPI 기능을 사용하는 Dynamic Media을 활
 </td>
 
 </table>
-

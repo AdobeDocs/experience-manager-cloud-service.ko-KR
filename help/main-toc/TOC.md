@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
+source-git-commit: 503c6712aeea33fc093dbaec780e50c1e72579cd
 workflow-type: tm+mt
-source-wordcount: '5533'
-ht-degree: 96%
+source-wordcount: '5578'
+ht-degree: 95%
 
 ---
 
@@ -456,7 +456,17 @@ ht-degree: 96%
    + [자산 마이크로서비스 개요](/help/assets/asset-microservices-overview.md)
    + [ [!DNL Assets]에서의 접근성](/help/assets/accessibility.md)
    + 디지털 자산 관리 {#manage}
-      + [마이크로 프론트엔드 자산 선택기](/help/assets/asset-selector.md)
+      + Micro-Frontend 자산 선택기 {#asset-selector}
+         + [자산 선택기 개요](/help/assets/overview-asset-selector.md)
+         + 자산 선택기 통합 {#asset-selector-integration}
+            + [Asset Selector 통합 개요](/help/assets/integrate-asset-selector.md)
+            + [에셋 선택기를 Adobe 애플리케이션과 통합](/help/assets/integrate-asset-selector-adobe-app.md)
+            + [에셋 선택기를 Adobe이 아닌 애플리케이션과 통합](/help/assets/integrate-asset-selector-non-adobe-app.md)
+            + [OpenAPI 기능과 Dynamic Media용 Asset Selector 통합](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+         + [자산 선택기 속성](/help/assets/asset-selector-properties.md)
+         + [자산 선택기 예](/help/assets/asset-selector-examples.md)
+         + [자산 선택기 사용자 지정](/help/assets/asset-selector-customization.md)
+         + [자산 선택기 업로드](/help/assets/asset-selector-upload.md)
       + [마이크로 프론트엔드 대상 선택기](/help/assets/destination-selector.md)
       + [자산 공유](/help/assets/share-assets.md)
       + [자산 재처리](/help/assets/reprocessing.md)

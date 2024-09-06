@@ -2,7 +2,8 @@
 title: AEM Assets을 다운스트림 애플리케이션과 통합
 description: AEM Assets을 다운스트림 애플리케이션과 통합
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+exl-id: abd48b5d-2b43-453c-8eb6-31ff509245ca
+source-git-commit: ffe90d3919c0f0c1a1c60efccc0191118dfaa84a
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 0%
@@ -19,5 +20,4 @@ Experience Manager 에셋 저장소에서 사용할 수 있는 [승인된 에셋
 
 API를 사용하면 AEM Assets 저장소에서 승인된 에셋을 검색한 다음 배달 URL을 사용하여 다운스트림 애플리케이션에 에셋을 게재할 수 있습니다. 자세한 내용은 [검색](/help/assets/search-assets-api.md) 및 [배달](/help/assets/deliver-assets-apis.md) API를 참조하십시오.
 
-Adobe의 Micro-Frontend 자산 선택기는 [!DNL Experience Manager Assets as a Cloud Service] 리포지토리와 쉽게 통합되는 사용자 인터페이스를 제공하므로 리포지토리에서 사용할 수 있는 승인된 디지털 자산을 찾아보거나 검색하고 응용 프로그램 작성 환경에서 사용할 수 있습니다. 자세한 내용은 [Micro-Frontend 자산 선택기](/help/assets/asset-selector.md)를 참조하십시오.
-
+Adobe의 Micro-Frontend 자산 선택기는 [!DNL Experience Manager Assets as a Cloud Service] 리포지토리와 쉽게 통합되는 사용자 인터페이스를 제공하므로 리포지토리에서 사용할 수 있는 승인된 디지털 자산을 찾아보거나 검색하고 응용 프로그램 작성 환경에서 사용할 수 있습니다. 자세한 내용은 [Micro-Frontend 자산 선택기](/help/assets/overview-asset-selector.md)를 참조하십시오.

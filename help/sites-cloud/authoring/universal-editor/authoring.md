@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
+source-git-commit: ffe90d3919c0f0c1a1c60efccc0191118dfaa84a
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 40%
@@ -88,7 +88,7 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 ![미디어 편집](assets/ue-edit-media.png)
 
 1. 속성 레일에서 선택한 이미지의 미리보기를 탭하거나 클릭합니다.
-1. 자산을 선택할 수 있는 [자산 선택기](/help/assets/asset-selector.md#using-asset-selector) 창이 열립니다.
+1. 자산을 선택할 수 있는 [자산 선택기](/help/assets/overview-asset-selector.md#using-asset-selector) 창이 열립니다.
 1. 새 자산을 선택하려면 를 선택합니다.
 1. 자산을 바꾼 속성 레일로 돌아가려면 **선택**&#x200B;을(를) 선택하십시오.
 
