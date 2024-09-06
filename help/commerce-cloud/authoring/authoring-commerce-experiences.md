@@ -4,9 +4,9 @@ description: 컨텍스트를 종료하지 않고 제품 데이터 및 콘텐츠�
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: dbf5c47f6d66b1ce35536b0762556511386a7e38
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '720'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ CIF 추가 기능은 상거래 관련 기능으로 AEM 작성을 확장합니다
 
 ![선택 없이 슬라이드 구성 요소](../assets/authoring/carousel_component_without_selection.png)
 
-이 구성 요소의 구성 대화 상자에는 1 : n 카테고리가 필요합니다. CIF은 UID / ID를 범주 식별자로 사용합니다. 작성자가 직접 UID를 입력하거나 폴더 아이콘을 클릭하여 범주 선택기를 열 수 있습니다. 선택기를 선택하고 닫으면 구성 요소 대화 상자에 선택한 범주의 이름이 표시됩니다.
+이 구성 요소의 구성 대화 상자에는 1 : n 카테고리가 필요합니다. CIF은 UID / ID를 카테고리 식별자로 사용합니다. 작성자가 직접 UID을 입력하거나 폴더 아이콘을 클릭하여 범주 선택기를 열 수 있습니다. 선택기를 선택하고 닫으면 구성 요소 대화 상자에 선택한 범주의 이름이 표시됩니다.
 
 ![선택 영역이 있는 슬라이드 구성 요소](../assets/authoring/carousel_component_with_selection.png)
 
@@ -71,9 +71,9 @@ CIF 제품 카탈로그 페이지는 즉시 렌더링되는 가상 페이지입�
 
 ![RTE](../assets/authoring/RTE.png)
 
-    >[!NOTE]
-    >
-    > 범주와 제품을 모두 선택하면 제품을 사용합니다.
+>[!NOTE]
+>
+> 범주와 제품을 모두 선택하면 제품을 가져옵니다.
 
 이렇게 하면 페이지가 렌더링될 때 실제 링크로 대체되는 자리 표시자 링크가 만들어집니다.
 
@@ -103,4 +103,4 @@ Omnisearch를 사용하면 전문가가 전체 텍스트 검색을 사용하여 
 
 >[!NOTE]
 >
-> Omnisearch의 전체 텍스트 검색은 연결된 콘텐츠 조각을 지원하지 않습니다. SKU 또는 UID를 사용하여 관련 콘텐츠 조각을 찾습니다.
+> Omnisearch의 전체 텍스트 검색은 연결된 콘텐츠 조각을 지원하지 않습니다. SKU 또는 UID을 사용하여 관련 콘텐츠 조각을 찾습니다.

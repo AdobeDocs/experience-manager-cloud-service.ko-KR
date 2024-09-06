@@ -4,9 +4,9 @@ description: 단계적 제품 카탈로그 경험을 관리하는 방법을 알�
 exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: f172f514eaa8f1337359f00fad964f5781fba769
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '485'
 ht-degree: 10%
 
 ---
@@ -25,9 +25,9 @@ AEM 컨텐츠 및 Commerce 여정의 이전 문서인 [제품 카탈로그 페�
 
 이 문서는 스테이징된 제품 데이터 및 AEM Launches를 기반으로 제품 카탈로그 경험을 관리하는 방법을 이해하는 데 도움이 됩니다. 많은 경우, 작성자는 예정된 제품 출시(예: 새로운 의류 컬렉션)를 동시에 준비해야 합니다. 이를 위해서는 스테이징된 제품 데이터(아직 라이브가 아님)에 대한 액세스와 콘텐츠 준비 기능이 필요합니다. 이 새로운 콘텐츠는 제품 출시에 맞춰 활성화됩니다.
 
-    >[!NOTE]
-    >
-    >이 기능은 토큰 기반 인증을 지원하는 Adobe Commerce 또는 Cloud Edition 및 타사 커넥터에서만 사용할 수 있습니다. 자세한 내용은 [시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html)를 참조하십시오.
+>[!NOTE]
+>
+>이 기능은 토큰 기반 인증을 지원하는 Adobe Commerce 또는 Cloud Edition 및 서드파티 커넥터에서만 사용할 수 있습니다. 자세한 내용은 [시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html)를 참조하십시오.
 
 먼저 작성자가 CIF을 사용하여 단계적 제품 데이터에 액세스하는 방법을 살펴보겠습니다.
 
@@ -45,9 +45,9 @@ AEM 컨텐츠 및 Commerce 여정의 이전 문서인 [제품 카탈로그 페�
 
 ![스테이지 plp](assets/staged-plp.png)
 
-    >[!NOTE]
-    >
-    >Omnisearch에 컨텍스트가 없으므로 라이브 제품 카탈로그 데이터만 반환합니다.
+>[!NOTE]
+>
+>Omnisearch에는 컨텍스트가 없으므로 라이브 제품 카탈로그 데이터만 반환됩니다
 
 ## AEM 론치 {#launches}
 
