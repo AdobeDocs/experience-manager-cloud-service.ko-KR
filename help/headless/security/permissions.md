@@ -5,9 +5,9 @@ feature: Headless, Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
 role: Admin, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '817'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Author 서비스는 내부 사용자가 콘텐츠를 만들고 관리하고 게�
 
 가장 좋은 방법은 AEM의 그룹에 권한을 설정하는 것입니다. 로컬 그룹이라고도 하는 이러한 그룹은 AEM Author 환경 내에서 관리할 수 있습니다.
 
-그룹 멤버십을 관리하는 가장 쉬운 방법은 Adobe IMS(Identity Management System) 그룹을 사용하고 [IMS 그룹을 로컬 AEM 그룹에 할당](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#managing-permissions-in-aem)하는 것입니다.
+그룹 멤버십을 관리하는 가장 쉬운 방법은 Adobe IMS(Identity Management System) 그룹을 사용하고 [IMS 그룹을 로컬 AEM 그룹에 할당](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=ko-KR#managing-permissions-in-aem)하는 것입니다.
 
 ![Admin Console 권한 흐름](assets/admin-console-aem-group-permissions.png)
 
@@ -37,7 +37,7 @@ Author 서비스는 내부 사용자가 콘텐츠를 만들고 관리하고 게�
 
 >[!TIP]
 >
->IMS 및 AEM 사용자 및 그룹 관리에 대한 자세한 비디오 설명은 [AEM as a Cloud Service에 대한 액세스 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html)을 참조하십시오.
+>IMS와 AEM 사용자 및 그룹 관리에 대한 자세한 비디오 워크스루는 [AEM as a Cloud Service 액세스 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=ko-KR)을 참조하십시오.
 
 AEM에서 **그룹**&#x200B;을 관리하려면 **도구** > **보안** > **그룹**&#x200B;으로 이동합니다.
 
@@ -80,7 +80,7 @@ Publish 서비스는 “라이브” 환경으로 간주되며 일반적으로 G
 
 ### 콘텐츠 권한
 
-AEM의 GraphQL API를 통해 노출된 콘텐츠는 자산 폴더에 설정된 [CUG(폐쇄형 사용자 그룹)](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html)를 사용하여 제한할 수 있으며, 이는 자산 폴더의 콘텐츠에 액세스할 수 있는 AEM 사용자 그룹(및 해당 멤버)을 지정합니다.
+AEM의 GraphQL API를 통해 노출된 콘텐츠는 자산 폴더에 설정된 [CUG(폐쇄형 사용자 그룹)](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html?lang=ko-KR)를 사용하여 제한할 수 있으며, 이는 자산 폴더의 콘텐츠에 액세스할 수 있는 AEM 사용자 그룹(및 해당 멤버)을 지정합니다.
 
 자산 CUG의 작동 방식:
 

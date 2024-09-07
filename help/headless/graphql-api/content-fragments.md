@@ -5,9 +5,9 @@ feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
 source-git-commit: 4492536120989423b639bbb75105568a9c328507
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5469'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ AEM에서 GraphQL API를 사용하면 Headless CMS 구현에서 JavaScript 클�
 
 >[!NOTE]
 >
->Experience Manager API에 대한 최신 정보를 보려면 [Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/)도 방문하세요.
+>Experience Manager API에 대한 최신 정보는 [Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/)에서도 확인할 수 있습니다.
 
 ## GraphQL API {#graphql-api}
 
@@ -112,7 +112,7 @@ AEM은 쿼리(두 유형 모두)를 Dispatcher 및 CDN에서 [캐시할 수 있�
 [지속 쿼리](/help/headless/graphql-api/persisted-queries.md)는 게시 인스턴스에서 다음과 같이 사용하도록 권장되는 방법입니다.
 
 * 캐시됩니다.
-* AEM as a Cloud Service을 통해 중앙 집중식으로 관리됩니다.
+* AEM as a Cloud Service를 통해 중앙 집중식으로 관리됩니다.
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ AEM은 쿼리(두 유형 모두)를 Dispatcher 및 CDN에서 [캐시할 수 있�
 
 POST 요청을 사용하는 GraphQL 쿼리는 캐시되지 않으므로 권장되지 않습니다. 따라서 기본 인스턴스에서는 Dispatcher가 이러한 쿼리를 차단하도록 구성됩니다.
 
-GraphQL은 GET 요청도 지원하지만 이러한 요청은 지속 쿼리를 사용하여 피할 수 있는 제한(예: URL 길이)에 도달할 수 있습니다.
+GraphQL은 GET 요청도 지원하지만 이러한 요청은 지속 쿼리를 사용하면 피할 수 있는 제한(예: URL 길이)에 도달할 수 있습니다.
 
 자세한 내용은 [지속 쿼리 캐싱 활성화](/help/headless/deployment/dispatcher-caching.md)를 참조하십시오.
 
@@ -161,13 +161,13 @@ GraphQL은 GET 요청도 지원하지만 이러한 요청은 지속 쿼리를 �
 
 GraphQL 쿼리는 기본 요청의 AEM 사용자 권한으로 실행됩니다. 사용자에게 일부 조각(자산으로 저장됨)에 대한 읽기 액세스 권한이 없는 경우 이들 조각은 결과 세트의 일부가 되지 않습니다.
 
-또한 GraphQL 쿼리를 실행할 수 있으려면 사용자에게 GraphQL 엔드포인트에 대한 액세스 권한이 있어야 합니다.
+또한 GraphQL 쿼리를 실행할 수 있으려면 사용자가 GraphQL 엔드포인트에 대한 액세스 권한을 보유해야 합니다.
 
 ## 스키마 생성 {#schema-generation}
 
 GraphQL은 강력한 포맷의 API입니다. 즉, 데이터는 유형별로 명확하게 구조화되고 구성되어야 합니다.
 
-GraphQL 사양은 특정 인스턴스에서 데이터의 정보를 얻기 위해 강력한 API를 만드는 방법에 대한 일련의 지침을 제공합니다. 이렇게 하려면 클라이언트가 쿼리에 필요한 모든 형식을 포함하는 [스키마](#schema-generation)을(를) 가져와야 합니다.
+GraphQL 사양은 특정 인스턴스에서 데이터의 정보를 얻기 위해 강력한 API를 만드는 방법에 대한 일련의 지침을 제공합니다. 이렇게 하려면 클라이언트가 쿼리에 필요한 모든 유형을 포함하는 [스키마](#schema-generation)를 가져와야 합니다.
 
 콘텐츠 조각의 경우 GraphQL 스키마(구조 및 유형)는 **활성화됨** 상태인 [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) 및 해당 데이터 형식을 기반으로 합니다.
 
@@ -240,9 +240,9 @@ Sites GraphQL 서비스는 콘텐츠 조각 모델에 대한 수정 사항을 �
 
   다양한 [데이터 유형](#Data-types)은 콘텐츠 조각 모델을 구성하는 방법을 기반으로 필드를 만드는 데 사용됩니다. 필드 이름은 **데이터 유형** 탭의 **속성 이름** 필드에서 가져옵니다.
 
-   * 사용자가 특정 데이터 유형을 구성할 때 고려해야 하는 **렌더링 형식** 설정도 있습니다. 예를 들어 드롭다운 목록에서 `multifield`을(를) 선택하여 여러 개의 한 줄 텍스트를 포함하도록 한 줄 텍스트 필드를 구성할 수 있습니다.
+   * 사용자가 특정 데이터 유형을 구성할 때 고려해야 하는 **렌더링 형식** 설정도 있습니다. 예를 들어 드롭다운 목록에서 `multifield`를 선택하여 여러 개의 한 줄 텍스트를 포함하도록 한 줄 텍스트 필드를 구성할 수 있습니다.
 
-* GraphQL for AEM에서도 여러 [도우미 필드](#helper-fields)를 생성합니다.
+* AEM용 GraphQL은 또한 여러 [도우미 필드](#helper-fields)를 생성합니다.
 
 ### 데이터 유형 {#data-types}
 
@@ -250,7 +250,7 @@ AEM용 GraphQL은 유형 목록을 지원합니다. 지원되는 모든 콘텐�
 
 | 콘텐츠 조각 모델 - 데이터 형식 | GraphQL 유형 | 설명 |
 |--- |--- |--- |
-| 한 줄 텍스트 | `String`, `[String]` | 작성자 이름, 위치 이름 등과 같은 간단한 문자열에 사용됩니다. |
+| 한 줄 텍스트 | `String`, `[String]` | 작성자 이름, 위치 이름 등과 같은 간단한 문자열에 사용됨 |
 | 여러 줄 텍스트 | `String`, `[String]` | 기사의 본문과 같은 텍스트 출력에 사용됨 |
 | 숫자 | `Float`, `[Float]` | 부동 소수점 숫자 및 일반 숫자를 표시하는 데 사용됨 |
 | 부울 | `Boolean` | 확인란을 표시하는 데 사용됨 → 간단한 참/거짓 진술 |
@@ -258,13 +258,13 @@ AEM용 GraphQL은 유형 목록을 지원합니다. 지원되는 모든 콘텐�
 | 열거 | `String` | 모델 생성 시 정의된 옵션 목록에서 옵션을 표시하는 데 사용됨 |
 | 태그 | `[String]` | AEM에서 사용되는 태그를 나타내는 문자열 목록을 표시하는 데 사용됨 |
 | 콘텐츠 참조 | `String`, `[String]` | AEM에서 다른 자산에 대한 경로를 표시하는 데 사용됨 |
-| 조각 참조 |  *모델 유형* <br><br>단일 필드: `Model` - 직접 참조된 모델 유형 <br><br>다중 필드, 하나의 참조 유형: `[Model]` - 배열 `Model`에서 직접 참조된 배열, 여러 참조 유형: `[AllFragmentModels]` - 유니온 유형이 있는 배열에서 참조된 모든 모델 유형의 배열<br><br> |  모델이 생성될 때 정의된 특정 모델 유형의 다른 콘텐츠 조각을 하나 이상 참조하는 데 사용됨 |
+| 조각 참조 |  *모델 유형* <br><br>단일 필드: `Model` - 모델 유형, 직접 참조 <br><br>하나의 참조 유형이 있는 다중 필드: `[Model]` - 유형의 배열 `Model`, 배열에서 직접 참조 <br><br>다중 참조 유형이 있는 다중 필드: `[AllFragmentModels]` - 공용 유형의 배열에서 참조되는 모든 모델 유형의 배열 |  모델이 생성될 때 정의된 특정 모델 유형의 다른 콘텐츠 조각을 하나 이상 참조하는 데 사용됨 |
 
 {style="table-layout:auto"}
 
 ### 도우미 필드 {#helper-fields}
 
-사용자 생성 필드의 데이터 형식 외에도 GraphQL for AEM은 콘텐츠 조각을 식별하거나 콘텐츠 조각에 대한 추가 정보를 제공하기 위해 여러 *도우미* 필드도 생성합니다.
+사용자 생성 필드의 데이터 형식 외에도 AEM용 GraphQL은 콘텐츠 조각 식별을 돕거나 콘텐츠 조각에 대한 추가 정보를 제공하기 위해 여러 *도우미* 필드를 생성합니다.
 
 이 [도우미 필드](#helper-fields)는 사용자가 정의한 것과 자동 생성된 것을 구별하기 위해 앞에 `_`로 표시됩니다.
 
@@ -370,7 +370,7 @@ AEM은 또한 GraphQL을 통해 콘텐츠 조각의 메타데이터를 노출합
 
 >[!NOTE]
 >
->원본 데이터(UI에서 *기본*(으)로 참조됨)는 명시적 변형으로 간주되지 않으므로 `_variations` 필드에 `master` 변형이 포함되어 있지 않습니다.
+>원본 데이터(UI에서 *마스터*&#x200B;로 참조됨)는 명시적 변형으로 간주되지 않으므로 `_variations` 필드에는 `master` 변형이 포함되어 있지 않습니다.
 
 [샘플 쿼리 - 이름이 붙은 변형이 있는 모든 도시](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)를 참조하십시오.
 
@@ -508,7 +508,7 @@ GraphQL 쿼리에서 필터링을 사용하여 특정 데이터를 반환할 수
 
 | 옵션 | 유형 | 설명 |
 |--- |--- |--- |
-| `_ignoreCase` | `String` | 문자열의 대/소문자를 무시합니다. 예를 들어 `time` 값은 `TIME`, `time`, `tImE`과(와) 일치합니다. |
+| `_ignoreCase` | `String` | 문자열의 대소문자를 무시합니다. 예를 들어 `time` 값은 `TIME`, `time`, `tImE` 등과 일치합니다. |
 | `_sensitiveness` | `Float` | `float` 값의 내부 표현으로 인한 기술적 제한을 해결하기 위해 `float` 값의 특정 여백이 동일하게 간주되도록 합니다. 이 옵션을 사용하면 성능에 부정적인 영향을 미칠 수 있으므로 피해야 합니다. |
 
 표현식은 논리 연산자(`_logOp`)를 사용하여 세트로 결합할 수 있습니다.
@@ -520,11 +520,11 @@ GraphQL 쿼리에서 필터링을 사용하여 특정 데이터를 반환할 수
 
 필터 정의(쿼리에 `filter` 인수로 전달됨)에는 다음이 포함됩니다.
 
-* 각 필드에 대한 하위 정의입니다. 필드는 해당 이름을 통해 액세스할 수 있습니다. 예를 들어 데이터(필드) 유형의 `lastName` 필드에 대한 필터에는 `lastName` 필드가 있습니다.
+* 각 필드에 대한 하위 정의이며, 필드는 해당 이름을 통해 액세스할 수 있습니다. 예를 들어 데이터(필드) 유형의 `lastName` 필드에 대한 필터에는 `lastName` 필드가 있습니다.
 * 각 하위 정의에는 표현식 세트를 제공하는 `_expressions` 배열과 표현식을 결합해야 하는 논리 연산자를 정의하는 `_logOp` 필드가 포함됩니다.
 * 각 표현식은 필드의 내용과 비교해야 하는 값(`value` 필드)과 연산자(`_operator` 필드)로 정의됩니다.
 
-항목을 `AND`과(와) 결합하려는 경우 `_logOp`을(를) 생략할 수 있으며 동일한지 확인하려는 경우 기본값인 `_operator`을(를) 생략할 수 있습니다.
+항목을 `AND`와 결합하고자 하는 경우 `_logOp`를 생략할 수 있으며 동일한지 확인하고자 하는 경우 기본값인 `_operator`를 생략할 수 있습니다.
 
 다음 예는 `Provo`의 `lastName` 또는 `sjö`를 포함하는 모든 사람을 대소문자에 관계없이 필터링하는 전체 쿼리를 보여 줍니다.
 
@@ -577,7 +577,7 @@ GraphQL 쿼리에서 필터링을 사용하여 특정 데이터를 반환할 수
 
 * 필드 경로를 나타내는 쉼표로 구분된 값 목록입니다.
    * 목록의 첫 번째 필드는 기본 정렬 순서를 정의하고, 두 번째 필드는 기본 정렬 기준의 두 값이 동일한 경우 사용되며, 세 번째 필드는 처음 두 기준이 동일한 경우 사용됩니다.
-   * 점으로 구분된 표기법, 즉 field1.subfield.subfield 등...
+   * 점으로 구분된 표기법 (예: field1.subfield.subfield 등)
 * 선택적 정렬 방향
    * (ASC(오름차순) 또는 DESC(내림차순))이 포함되며, 기본값 ASC가 적용됩니다.
    * 방향은 필드별로 지정할 수 있습니다. 즉, 한 필드는 오름차순으로 정렬하고 다른 필드는 내림차순으로 정렬할 수 있습니다(name, firstName DESC).
@@ -716,7 +716,7 @@ query {
 
 웹에 최적화된 이미지 게재를 통해 Graphql 쿼리를 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 
-* DAM 에셋 이미지에 URL 요청(**콘텐츠 참조**&#x200B;에서 참조)
+* DAM 자산 이미지에 대한 URL을 요청(**콘텐츠 참조**&#x200B;에서 참조됨)
 
 * 이미지의 특정 렌디션이 자동으로 생성되고 반환되도록 쿼리와 함께 매개변수 전달
 
@@ -728,7 +728,7 @@ query {
 
 AEM을 사용해 다음을 할 수 있습니다.
 
-* [웹에 최적화된 이미지 게재](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html)를 GraphQL 쿼리에 전달합니다.
+* [웹에 최적화된 이미지 게재](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=ko-KR)를 GraphQL 쿼리에 전달합니다.
 
 즉, 해당 이미지에 대한 GET 요청의 URL 매개변수와 동일한 방식으로 쿼리 실행 중에 명령이 적용됩니다.
 
@@ -736,17 +736,17 @@ AEM을 사용해 다음을 할 수 있습니다.
 
 GraphQL의 솔루션으로 다음과 같은 작업을 수행할 수 있습니다.
 
-* URL 요청: `ImageRef` 참조에서 `_dynamicUrl` 사용
+* URL 요청: `_dynamicUrl` 참조에서 `ImageRef` 사용
 
-* 매개 변수 전달: 필터가 정의된 목록 헤더에 `_assetTransform` 추가
+* 매개변수 전달: 필터가 정의된 목록 헤더에 `_assetTransform` 추가
 
 >[!NOTE]
 >
->**콘텐츠 참조**&#x200B;는 DAM 에셋과 Dynamic Media 에셋 모두에 사용할 수 있습니다. 적절한 URL을 검색하면 다음과 같이 서로 다른 매개 변수를 사용합니다.
+>**콘텐츠 참조**&#x200B;는 DAM 자산과 Dynamic Media 자산 모두에 사용할 수 있습니다. 적절한 URL을 검색하려면 다양한 매개변수를 사용합니다.
 >* `_dynamicUrl` : DAM 자산
 >* `_dmS7Url` : Dynamic Media 자산
 > 
->참조된 자산이 DAM 자산인 경우 `_dmS7Url`의 값은 `null`이(가) 됩니다. [GraphQL 쿼리에서 URL로 Dynamic Media 에셋 배달](#dynamic-media-asset-delivery-by-url)을 참조하십시오.
+>참조된 자산이 DAM 자산인 경우 `_dmS7Url`에 대한 값은 `null`입니다. [GraphQL 쿼리에서 URL을 통한 Dynamic Media 자산 게재](#dynamic-media-asset-delivery-by-url)을 참조하십시오.
 
 ### 변환 요청의 구조 {#structure-transformation-request}
 
@@ -911,7 +911,7 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
      >
      >후행 `;`은 매개변수 목록을 완전히 종료하려면 필수입니다.
 
-### 웹에 최적화된 이미지 제공의 제한 사항 {#web-optimized-image-delivery-limitations}
+### 웹 최적화 이미지 게재의 한계 {#web-optimized-image-delivery-limitations}
 
 다음과 같은 제한 사항이 있습니다.
 
@@ -922,9 +922,9 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
    * 작성자에 대한 캐싱 없음
    * 게시 시 캐싱 - 최대 수명 10분 (클라이언트에서 변경할 수 없음)
 
-## GraphQL 쿼리의 URL로 Dynamic Media 에셋 전달{#dynamic-media-asset-delivery-by-url}
+## GraphQL 쿼리에서 URL을 통한 Dynamic Media 자산 게재{#dynamic-media-asset-delivery-by-url}
 
-AEM 콘텐츠 조각용 GraphQL을 사용하면 AEM Dynamic Media(Scene7) 에셋(**콘텐츠 참조**&#x200B;에서 참조)에 대한 URL을 요청할 수 있습니다.
+AEM 콘텐츠 조각용 GraphQL을 사용하면 **콘텐츠 참조**&#x200B;에서 참조하는 AEM Dynamic Media(Scene7) 자산에 대한 URL을 요청할 수 있습니다.
 
 GraphQL의 솔루션으로 다음과 같은 작업을 수행할 수 있습니다.
 
@@ -932,23 +932,23 @@ GraphQL의 솔루션으로 다음과 같은 작업을 수행할 수 있습니다
 
 >[!NOTE]
 >
->이를 위해서는 [Dynamic Media 클라우드 구성](/help/assets/dynamic-media/config-dm.md)이 필요합니다.
+>이를 위해서는 [Dynamic Media Cloud 구성](/help/assets/dynamic-media/config-dm.md)이 필요합니다.
 >
->자산 메타데이터에 `dam:scene7File` 및 `dam:scene7Domain` 특성이 만들어질 때 추가됩니다.
+>이렇게 하면 자산이 생성될 때 자산의 메타데이터에 `dam:scene7File` 및 `dam:scene7Domain` 속성이 추가됩니다.
 
 >[!NOTE]
 >
->**콘텐츠 참조**&#x200B;는 DAM 에셋과 Dynamic Media 에셋 모두에 사용할 수 있습니다. 적절한 URL을 검색하면 다음과 같이 서로 다른 매개 변수를 사용합니다.
+>**콘텐츠 참조**&#x200B;는 DAM 자산과 Dynamic Media 자산 모두에 사용할 수 있습니다. 적절한 URL을 검색하려면 다양한 매개변수를 사용합니다.
 >
 >* `_dmS7Url` : Dynamic Media 자산
 >* `_dynamicUrl` : DAM 자산
 > 
->참조된 자산이 Dynamic Media 자산인 경우 `_dynamicURL`의 값은 `null`이(가) 됩니다. [GraphQL 쿼리의 웹에 최적화된 이미지 제공](#web-optimized-image-delivery-in-graphql-queries)을 참조하십시오.
+>참조된 자산이 Dynamic Media 자산인 경우 `_dynamicURL`에 대한 값은 `null`입니다. [GraphQL 쿼리에서 웹에 최적화된 이미지 게재](#web-optimized-image-delivery-in-graphql-queries)를 참조하십시오.
 
-### URL을 통한 Dynamic Media 에셋 전달을 위한 샘플 쿼리 - 이미지 참조{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
+### URL을 통한 Dynamic Media 자산 게재를 위한 샘플 쿼리 - 이미지 참조{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
 
 다음은 샘플 쿼리입니다.
-* `team` 및 `person` 유형의 여러 콘텐츠 조각에 대해 `ImageRef` 반환
+* `team` 및 `person` 유형의 여러 가지 콘텐츠 조각의 경우, `ImageRef`를 반환
 
 ```graphql
 query allTeams {
@@ -972,10 +972,10 @@ query allTeams {
 } 
 ```
 
-### URL을 통한 Dynamic Media 에셋 전달을 위한 샘플 쿼리 - 다중 참조{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
+### URL을 통한 Dynamic Media 자산 게재를 위한 샘플 쿼리 - 다중 참조{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
 
 다음은 샘플 쿼리입니다.
-* `ImageRef`, `MultimediaRef` 및 `DocumentRef`을(를) 반환하는 `team` 및 `person` 유형의 여러 콘텐츠 조각의 경우:
+* `team` 및 `person` 유형의 여러 가지 콘텐츠 조각의 경우, `ImageRef`, `MultimediaRef` 및 `DocumentRef`를 반환:
 
 ```graphql
 query allTeams {
@@ -1018,7 +1018,7 @@ query allTeams {
 AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 따릅니다. AEM의 GraphQL 쿼리에 몇 가지 확장이 있습니다.
 
 * 하나의 결과가 필요한 경우:
-   * 모델 이름을 사용하십시오(예: 도시).
+   * 모델 이름 사용 (예: 도시)
 
 * 결과 목록을 기대하는 경우:
    * 모델 이름에 `List`를 추가하십시오. 예: `cityList`
@@ -1038,7 +1038,7 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
 
    * [샘플 쿼리 - 모든 도시에 대한 모든 정보](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)를 참조하십시오
 
-* 필터 `includeVariations`은 `List` 및 `Paginated` 쿼리 유형에 포함되어 있습니다.  쿼리 결과에서 콘텐츠 조각 변형을 검색하려면 `includeVariations` 필터를 `true`로 설정해야 합니다.
+* 필터 `includeVariations`는 `List` 및 `Paginated` 쿼리 유형에 포함되어 있습니다. 쿼리 결과에서 콘텐츠 조각 변형을 검색하려면 `includeVariations` 필터를 `true`로 설정해야 합니다.
 
    * [주어진 모델의 복수 콘텐츠 조각과 변형에 대한 샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model) 참조
 
@@ -1085,34 +1085,34 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
 
          * [샘플 쿼리 - 이름이 붙은 변형이 있는 모든 도시](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)를 참조하십시오
 
-   * 이미지 게재용:
+   * 이미지 게재:
 
       * `_authorURL`: AEM 작성자의 이미지 자산에 대한 전체 URL
-      * `_publishURL`: AEM Publish의 이미지 에셋에 대한 전체 URL
+      * `_publishURL`: AEM 게시의 이미지 자산에 대한 전체 URL
 
-      * [웹에 최적화된 이미지 제공](#web-optimized-image-delivery-in-graphql-queries)(DAM 자산)의 경우:
+      * [웹 최적화 이미지 게재](#web-optimized-image-delivery-in-graphql-queries)의 경우(DAM 자산):
 
-         * `_dynamicUrl`: `ImageRef` 참조의 웹에 최적화된 DAM 에셋에 대한 전체 URL
+         * `_dynamicUrl`: `ImageRef` 참조의 웹에 최적화된 DAM 자산에 대한 전체 URL
 
            >[!NOTE]
            >
-           >`_dynamicUrl`은(는) 웹에 최적화된 DAM 에셋에 사용할 기본 URL이며 가능한 경우 `_path`, `_authorUrl` 및 `_publishUrl`의 사용을 대체해야 합니다.
+           >`_dynamicUrl`은 웹에 최적화된 DAM 자산에 사용할 기본 URL이며 가능할 때마다 `_path`, `_authorUrl` 및 `_publishUrl` 사용을 대체합니다.
 
-         * `_assetTransform`: 필터가 정의된 목록 헤더의 매개 변수를 전달합니다.
+         * `_assetTransform`: 필터가 정의된 목록 헤더에 매개변수를 전달
 
          * 다음을 참조하십시오.
 
-            * [전체 매개 변수를 사용하여 웹에 최적화된 이미지 제공을 위한 샘플 쿼리](#web-optimized-image-delivery-full-parameters)
+            * [전체 매개변수가 있는 웹에 최적화된 이미지 게재를 위한 샘플 쿼리](#web-optimized-image-delivery-full-parameters)
 
-            * [지정된 단일 매개 변수를 사용하여 웹에 최적화된 이미지 제공을 위한 샘플 쿼리](#web-optimized-image-delivery-single-query-variable)
+            * [단일 지정된 매개변수를 통해 웹에 최적화된 이미지 게재를 위한 샘플 쿼리](#web-optimized-image-delivery-single-query-variable)
 
-      * `_dmS7Url`: [Dynamic Media 자산](#dynamic-media-asset-delivery-by-url)에 URL을 전달하기 위한 `ImageRef` 참조에서
+      * `_dmS7Url`: [Dynamic Media 자산](#dynamic-media-asset-delivery-by-url)에 URL을 게재하기 위한 `ImageRef` 참조
 
-         * [URL별 Dynamic Media 자산 게재용 샘플 쿼리 - ImageRef](#sample-query-dynamic-media-asset-delivery-by-url-imageref)를 참조하십시오.
+         * [URL을 통한 Dynamic Media 자산 게재를 위한 샘플 쿼리 - 이미지 참조](#sample-query-dynamic-media-asset-delivery-by-url-imageref)를 참조하십시오.
 
-         * [URL별 Dynamic Media 자산 게재에 대한 샘플 쿼리 - 다중 참조](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)를 참조하십시오.
+         * [URL을 통한 Dynamic Media 자산 게재를 위한 샘플 쿼리 - 다중 참조](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)를 참조하십시오.
 
-   * `_tags`: 태그가 포함된 콘텐츠 조각 또는 변형의 ID를 표시합니다. 이것은 `cq:tags` 식별자의 배열입니다.
+   * `_tags`: 태그가 포함된 콘텐츠 조각 ID 또는 변형 표시, `cq:tags` 식별자 배열.
 
       * [샘플 쿼리 - City Break로 태그된 모든 도시의 이름](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks) 참조
       * [특정 태그가 첨부된 주어진 모델의 콘텐츠 조각 변형에 대한 샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag) 참조
@@ -1157,44 +1157,44 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
 
 ## 자동화된 테스트 {#automated-testing}
 
-AEM Cloud Manager에서 배포 파이프라인을 실행할 때 파이프라인 실행 중에 자동화된 테스트가 실행됩니다.
+AEM Cloud Manager에서 배포 파이프라인을 실행하면 파이프라인 실행 중에 자동화된 테스트가 실행됩니다.
 
-정확한 결과를 제공하려면 AEM as a Cloud Service **Stage** 환경이 **프로덕션** 환경을 가능한 한 가깝게 미러링해야 합니다. 이는 콘텐츠에 특히 중요합니다.
+정확한 결과를 제공하려면 AEM as a Cloud Service **단계** 환경이 **프로덕션** 환경을 최대한 반영해야 합니다. 이는 특히 콘텐츠의 경우 중요합니다.
 
-AEM as a Cloud Service [콘텐츠 복사 도구](/help/implementing/developing/tools/content-copy.md)를 사용하여 프로덕션 콘텐츠를 스테이징 환경에 복사하면 이를 수행할 수 있습니다.
+AEM as a Cloud Service [ 콘텐츠 복사 도구](/help/implementing/developing/tools/content-copy.md)를 사용하여 프로덕션 콘텐츠를 스테이징 환경으로 복사함으로써 이를 달성할 수 있습니다.
 
 ## 제한 사항 {#limitations}
 
-잠재적인 문제로부터 보호하기 위해 쿼리에 적용되는 기본 제한 사항이 있습니다.
+발생 가능한 문제를 방지하기 위해 쿼리에 다음과 같은 기본 제한이 적용됩니다.
 
-* 쿼리에 1M(1024 * 1024)자를 초과할 수 없습니다.
-* 쿼리에 15000개 이상의 토큰을 포함할 수 없습니다.
-* 쿼리에 200000개 이상의 공백 토큰을 포함할 수 없습니다.
+* 쿼리는 100만(1024*1024) 자를 초과할 수 없습니다.
+* 쿼리에는 15,000개가 넘는 토큰이 포함될 수 없습니다.
+* 쿼리에는 20만 개 이상의 공백 토큰이 포함될 수 없습니다.
 
-또한 다음 사항을 알고 있어야 합니다.
+다음 사항 또한 참고하시기 바랍니다.
 
-* GraphQL 쿼리에 둘 이상의 모델에서 이름이 같은 필드가 포함되어 있고 다음 조건이 충족되면 필드 충돌 오류가 반환됩니다.
+* GraphQL 쿼리에 두 개 이상의 모델에 동일한 이름의 필드가 포함되어 있고 다음 조건이 충족되면 필드 충돌 오류가 반환됩니다.
 
-   * 여기서
+   * 조건:
 
-      * 두 개 이상의 모델이 가능한 참조로 사용됩니다. 콘텐츠 조각 참조에서 허용된 **모델 유형**(으)로 정의된 경우.
-
-     및:
-
-      * 이 두 모델에는 공통 이름을 갖는 필드가 있습니다. 즉, 두 모델에서 동일한 이름이 발생합니다.
+      * 두 개(또는 그 이상)의 모델이 콘텐츠 조각 참조에서 허용된 **모델 유형**&#x200B;으로 정의된 경우 가능한 참조로 사용됩니다.
 
      및
 
-      * 이러한 필드는 다른 데이터 유형입니다.
+      * 이 두 모델은 공통된 이름을 있는 필드를 가지고 있습니다. 즉, 두 모델에 같은 이름이 있습니다.
+
+     및
+
+      * 해당 필드는 서로 다른 데이터 유형입니다.
 
    * 예:
 
-      * 모델이 다른 두 개(예: `M1`, `M2`) 이상의 조각이 다른 조각에서 가능한 참조(콘텐츠 참조 또는 조각 참조)로 사용되는 경우(예: `Fragment1` `MultiField/List`)
-      * 모델이 다른 두 조각(`M1`, `M2`)에는 이름은 같지만 유형이 다른 필드가 있습니다.
+      * 서로 다른 모델을 갖는 두 개 이상의 조각(예: `M1`, `M2`)이 `Fragment1` `MultiField/List` 등 다른 조각의 가능한 참조(콘텐츠 참조 또는 조각 참조)로 사용되는 경우
+      * 서로 다른 모델을 갖는 이 두 조각(`M1`, `M2`)이 이름은 같지만 유형이 다른 필드를 갖는 경우
 예시:
-         * `M1.Title`을(를) `Text`(으)로
-         * `M2.Title`을(를) `Text/MultiField`(으)로
-      * 그러면 GraphQL 쿼리에 `Title` 필드가 포함된 경우 필드 충돌 오류가 발생합니다.
+         * `M1.Title` as `Text`
+         * `M2.Title` as `Text/MultiField`
+      * GraphQL 쿼리에 `Title` 필드가 포함되어 있으면 필드 충돌 오류가 발생합니다.
 
 ## FAQ {#faqs}
 
@@ -1208,4 +1208,4 @@ AEM as a Cloud Service [콘텐츠 복사 도구](/help/implementing/developing/t
 
 ## 튜토리얼 - AEM Headless 및 GraphQL 시작하기 {#tutorial}
 
-실습형 튜토리얼을 찾고 계십니까? Headless CMS 시나리오에서 AEM의 GraphQL API를 사용하여 콘텐츠를 빌드하고 노출하고 외부 앱에서 사용하는 방법을 보여 주는 [AEM Headless 및 GraphQL 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) 엔드투엔드 튜토리얼을 확인하십시오.
+실습형 튜토리얼을 찾고 계십니까? Headless CMS 시나리오에서 AEM의 GraphQL API를 사용하여 콘텐츠를 빌드하고 노출하고 외부 앱에서 사용하는 방법을 보여 주는 [AEM Headless 및 GraphQL 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko-KR) 엔드투엔드 튜토리얼을 확인하십시오.

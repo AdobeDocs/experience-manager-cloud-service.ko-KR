@@ -5,9 +5,9 @@ feature: Headless, Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 role: Admin, Developer
 source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1136'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 94%
 * 쿼리에 사용하려는 Sites 구성에 적합한 **엔드포인트**&#x200B;를 선택합니다.
 * 새 쿼리 직접 입력
 * **[지속 쿼리](/help/headless/graphql-api/persisted-queries.md)** 제작 및 액세스
-* 쿼리를 실행하여 결과를 즉시 확인
+* 바로 결과를 조회하기 위해 쿼리 실행
 * **쿼리 변수** 관리
 * **지속 쿼리** 저장 및 관리
 * **게시** 또는 **미리보기** 서비스에 **지속 쿼리** 게시 또는 게시 취소(예: `dev-publish`에/에서)
@@ -83,7 +83,7 @@ GraphiQL 로고 바로 아래 왼쪽 중간 패널에 있는 편집기에 새 �
 
 두 경우 모두 편집기 패널에 표시되는 쿼리는 다음 두 가지 작업을 수행하는 경우에 실행되는 쿼리입니다.
 
-* **쿼리 실행** 아이콘을 선택합니다.
+* **쿼리 실행** 아이콘 선택
 * 키보드 조합 `Control-Enter` 사용
 
 ## 쿼리 변수 {#query-variables}
@@ -100,13 +100,13 @@ GraphiQL IDE를 사용하여 [쿼리 변수](/help/headless/graphql-api/content-
 
 >[!NOTE]
 >
->[지속 쿼리 캐싱](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)을 참조하세요.
+>[지속 쿼리 캐싱](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)을 참조하십시오.
 
 >[!NOTE]
 >
 >Dispatcher의 사용자 정의 재작성 규칙은 AEM 게시의 기본값을 재정의할 수 있습니다.
 >
->위치 일치 패턴을 기반으로 Dispatcher에서 TTL 기반 캐시 제어 헤더를 보내는 경우 필요한 경우 일치에서 `/graphql/execute.json/*`을(를) 제외할 수 있습니다.
+>위치 일치 패턴을 기반으로 Dispatcher에서 TTL 기반 캐시 제어 헤더를 보낼 때 필요한 경우 일치에서 `/graphql/execute.json/*`를 제외할 수 있습니다.
 
 GraphQL을 사용하여 HTTP 캐시 헤더를 구성하여 개별 지속 쿼리에 대해 이러한 매개변수를 제어할 수 있습니다.
 
@@ -114,7 +114,7 @@ GraphQL을 사용하여 HTTP 캐시 헤더를 구성하여 개별 지속 쿼리�
 
    ![지속 쿼리 HTTP 캐시 헤더](assets/cfm-graphqlapi-headers-01.png "지속 쿼리 HTTP 캐시 헤더")
 
-1. 이 옵션을 선택하면 **캐시 구성** 대화 상자가 열립니다.
+1. 이 옵션을 선택하면 **캐시 구성** 대화 사자가 열립니다.
 
    ![지속 쿼리 HTTP 캐시 헤더 설정](assets/cfm-graphqlapi-headers-02.png "지속 쿼리 HTTP 캐시 헤더 설정")
 

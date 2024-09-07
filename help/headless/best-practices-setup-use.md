@@ -1,34 +1,34 @@
 ---
-title: 컨텐츠 조각과 함께 AEM GraphQL 설정 및 사용 모범 사례
-description: 콘텐츠 조각과 함께 AEM GraphQL의 설정 및 사용에 대한 권장 모범 사례에 대해 알아봅니다.
+title: AEM GraphQL 설정 및 사용에 대한 모범 사례와 콘텐츠 조각
+description: AEM GraphQL 설정 및 사용에 대한 권장 모범 사례와 콘텐츠 조각을 학습합니다.
 exl-id: 4d6a5aaa-c8be-4858-ad07-085dc4fb77e7
 feature: Headless
 role: Admin, Developer
 source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '702'
-ht-degree: 29%
+ht-degree: 100%
 
 ---
 
-# 컨텐츠 조각과 함께 AEM GraphQL 설정 및 사용 모범 사례{#best-practices-setup-use-aem-graphql-content-fragments}
+# AEM GraphQL 설정 및 사용에 대한 모범 사례와 콘텐츠 조각{#best-practices-setup-use-aem-graphql-content-fragments}
 
-이 지침에서는 GraphQL 및 컨텐츠 조각의 AEM 설정, 구성 및 사용에 대한 권장 모범 사례를 요약합니다.
+이 지침에는 GraphQL 및 Content Fragments와 함께 AEM을 설정, 구성 및 사용하기 위한 권장 모범 사례가 요약되어 있습니다.
 
 ## 시작 {#getting-started}
 
-다음 작업을 수행하여 속도를 높이십시오.
+최신 정보를 위한 참고 자료:
 
 * [Headless 소개](/help/headless/what-is-headless.md)
-* AEM [Architecture](/help/headless/deployment/architecture.md)의 다양한 환경에 대한 개요
+* AEM [아키텍처](/help/headless/deployment/architecture.md) 내 다양한 환경에 대한 개요
 
 ## 설정 {#setup}
 
-콘텐츠 조각 및 앱에서 사용할 AEM GraphQL을 안전하게 설정하려면 다양한 구성 요소를 구성해야 합니다.
+콘텐츠 조각 및 앱과 함께 사용하기 위해 AEM GraphQL을 안전하게 설정하려면 다양한 구성 요소를 구성해야 합니다.
 
-### GraphQL 끝점 만들기(보안 포함) {#graphql-endpoint-creation}
+### GraphQL 엔드포인트 생성(보안 포함) {#graphql-endpoint-creation}
 
-엔드포인트는 AEM용 GraphQL에 액세스하는 데 사용되는 경로입니다. 이러한 엔드포인트는 안전하게 액세스할 수 있도록 만들고 게시해야 합니다.
+엔드포인트는 AEM용 GraphQL에 액세스하는 데 사용되는 경로입니다. 안전하게 액세스할 수 있도록 이러한 엔드포인트를 생성하고 게시해야 합니다.
 
 #### 세부 사항 {#details-graphql-endpoint-creation}
 
@@ -36,7 +36,7 @@ ht-degree: 29%
 
 #### 환경 {#environments-graphql-endpoint-creation}
 
-끝점은 다음 위치에 구성해야 합니다.
+엔드포인트는 다음에서 구성되어야 합니다.
 
 * 작성자
 * 미리보기
@@ -51,7 +51,7 @@ ht-degree: 29%
 ### AEM Dispatcher 캐싱 {#dispatcher-caching}
 
 >[!NOTE]
->Dispatcher에서 캐싱이 활성화되면 [CORS 설정](#cors-setup)이 필요하지 않으므로 무시할 수 있습니다.
+>Dispatcher에서 캐싱이 활성화된 경우 [CORS 설정](#cors-setup)이 필요하지 않으므로 무시해도 됩니다.
 
 지속 쿼리 캐싱은 기본적으로 Dispatcher에서 활성화되어 있지 않습니다. 원본이 여러 개인 CORS(원본 간 리소스 공유)를 사용하는 고객은 Dispatcher 구성을 검토하고 업데이트해야 하므로 기본값으로 활성화할 수는 없습니다.
 
@@ -61,16 +61,16 @@ ht-degree: 29%
 
 #### 환경 {#environments-dispatcher-caching}
 
-Dispatcher은 일반적으로 다음과 같이 구성됩니다.
+Dispatcher는 일반적으로 다음에 대해 구성됩니다.
 
-* Publish: 프로덕션
+* 게시: 프로덕션
 
 ### CORS 설정 {#cors-setup}
 
 >[!NOTE]
->[AEM Dispatcher](#dispatcher-caching)에서 캐싱을 사용하면 CORS 설정이 필요하지 않으므로 이 섹션을 무시할 수 있습니다.
+>[AEM Dispatcher](#dispatcher-caching)에서 캐싱이 활성화된 경우 CORS 설정이 필요하지 않으므로 해당 섹션은 무시해도 됩니다.
 
-GraphQL 끝점에 액세스하려면 CORS 정책을 구성하고 Cloud Manager을 통해 AEM에 배포된 AEM 프로젝트에 추가해야 합니다. 이 작업은 원하는 끝점에 대한 적절한 OSGi CORS 구성 파일을 추가하여 수행됩니다.
+GraphQL 엔드포인트에 액세스하려면 CORS 정책을 구성하고 Cloud Manager를 통해 AEM에 배포된 AEM 프로젝트에 추가해야 합니다. 원하는 엔드포인트에 대한 적절한 OSGi CORS 구성 파일 추가를 통해 수행됩니다.
 
 #### 세부 사항 {#details-cors-setup}
 
@@ -78,13 +78,13 @@ GraphQL 끝점에 액세스하려면 CORS 정책을 구성하고 Cloud Manager�
 
 #### 환경 {#environments-cors-setup}
 
-CORS는 일반적으로 다음과 같이 구성됩니다.
+CORS는 일반적으로 다음에 대해 구성됩니다.
 
-* Publish: 프로덕션
+* 게시: 프로덕션
 
 ### 인증 {#authentication}
 
-컨텐츠 조각 전달을 위한 Adobe Experience Manager as a Cloud Service(AEM) GraphQL API의 주요 사용 사례는 서드파티 애플리케이션 또는 서비스의 원격 쿼리를 수락하는 것입니다. Headless 콘텐츠 게재를 보호하기 위해 이러한 원격 쿼리에는 인증된 API 액세스가 필요할 수 있습니다.
+콘텐츠 조각 게재를 위한 AEM(Adobe Experience Manager as a Cloud Service) GraphQL API의 주요 사용 사례는 서드파티 애플리케이션 또는 서비스의 원격 쿼리를 수락하는 것입니다. Headless 콘텐츠 게재를 보호하기 위해 이러한 원격 쿼리에는 인증된 API 액세스가 필요할 수 있습니다.
 
 #### 세부 사항 {#details-authentication}
 
@@ -125,9 +125,9 @@ Headless 구현으로 여러 보안 및 권한 영역을 다뤄야 합니다. AE
 * 테스트
 * 프로덕션
 
-### CDN(Content Delivery Network) 사용 {#cdn}
+### 콘텐츠 전송 네트워크(CDN) 사용 {#cdn}
 
-CDN을 사용할 때 `GET` 요청으로 타깃팅된 경우 GraphQL 쿼리 및 해당 JSON 응답이 캐시될 수 있습니다. 반대로 캐시되지 않은 요청은 매우 (리소스) 비용이 많이 들고 처리 속도가 느릴 수 있으며, 이로 인해 원본 리소스에 추가 해로운 영향을 미칠 수 있습니다.
+GraphQL 쿼리와 해당 JSON 응답은 CDN을 사용할 때 `GET` 요청으로 지정되면 캐시될 수 있습니다. 반면, 캐시되지 않은 요청은 (리소스) 비용이 매우 높고 처리 속도가 느릴 수 있으며 원본 리소스에 더 해로운 영향을 미칠 가능성이 있습니다.
 
 #### 세부 사항 {#details-cdn}
 
@@ -137,11 +137,11 @@ CDN을 사용할 때 `GET` 요청으로 타깃팅된 경우 GraphQL 쿼리 및 �
 
 CDN은 일반적으로 다음에 대해 구성됩니다.
 
-* Publish: 프로덕션
+* 게시: 프로덕션
 
 ### 콘텐츠 조각 구성 및 만들기 {#cconfigure-create-content-fragments}
 
-AEM GraphQL은 콘텐츠 조각에서 정보를 검색하는 데 사용됩니다. 콘텐츠를 만들기 전에 이를 구성한 다음 구조와 위치를 정의해야 합니다.
+AEM GraphQL은 콘텐츠 조각에서 정보를 검색하는 데 사용됩니다. 콘텐츠를 만들기 전에 콘텐츠를 구성한 다음 구조와 위치를 정의해야 합니다.
 
 #### 세부 사항 {#details-content-fragments}
 
@@ -152,7 +152,7 @@ AEM GraphQL은 콘텐츠 조각에서 정보를 검색하는 데 사용됩니다
 
 #### 환경 {#eenvironments-content-fragments}
 
-콘텐츠 조각 정의됨, 작성됨, 테스트됨, 게시됨 및 액세스됨
+콘텐츠 조각은 다음에서 정의, 작성, 테스트, 게시 및 액세스됩니다.
 
 * 작성자
 * 미리보기
@@ -168,7 +168,7 @@ AEM GraphQL은 콘텐츠 조각에서 정보를 검색하는 데 사용됩니다
 
 ### GraphQL 쿼리 최적화 {#optimize-graphql-queries}
 
-이 지침은 GraphQL 쿼리와 관련된 성능 문제를 방지하기 위해 제공됩니다.
+이러한 지침은 GraphQL 쿼리의 성능 문제를 방지하는 데 도움이 되도록 제공됩니다.
 
 #### 세부 사항 {#details-optimize-graphql-queries}
 
@@ -176,21 +176,21 @@ AEM GraphQL은 콘텐츠 조각에서 정보를 검색하는 데 사용됩니다
 
 >[!NOTE]
 >
->최적화 지침은 [Setup](#setup)에서 이미 다룬 캐시 구성을 다룹니다.
+>최적화 지침은 이미 [설정](#setup)에서 다룬 캐시 구성을 다룹니다.
 
-### 앱에서 GraphQL에 액세스 {#access-graphql-from-your-apps}
+### Access 앱의 GraphQL {#access-graphql-from-your-apps}
 
-AEM Headless CMS는 개발자가 이미 익숙한 언어, 프레임워크 및 도구를 사용하여 탁월한 경험을 구축하고 제공할 수 있는 자유를 제공합니다.
+AEM Headless CMS를 사용하면 개발자가 이미 익숙한 언어, 프레임워크 및 도구를 사용하여 탁월한 경험을 자유롭게 구축 및 전달할 수 있습니다.
 
 #### 세부 사항 {#details-your-apps}
 
-* [개발용 AEM SDK를 설치하고 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html)
+* [개발용 AEM SDK 설치 및 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html?lang=ko-KR)
 * [AEM Headless 개발자 리소스](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko-KR)
-* 예: [React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html), [Next.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/next-js.html), [Node.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/server-to-server-app.html) 등
+* [React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html?lang=ko-KR), [Next.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/next-js.html?lang=ko-KR), [Node.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/server-to-server-app.html?lang=ko-KR)를 비롯한 예시
 
 #### 환경 {#environments-your-apps}
 
-앱은 일반적으로 다음 사이트에서 개발, 테스트 및 사용됩니다.
+앱은 일반적으로 다음에서 개발, 테스트 및 사용됩니다.
 
 * 미리보기
 * 게시
@@ -203,7 +203,7 @@ AEM Headless CMS는 개발자가 이미 익숙한 언어, 프레임워크 및 �
 
 ### 추가 리소스
 
-AEM GraphQL 및 컨텐츠 조각에 대한 자세한 내용은 다음을 참조하십시오.
+AEM GraphQL 및 콘텐츠 조각에 대한 자세한 내용은 다음을 참조하십시오.
 
 * [콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
 * [GraphiQL IDE 사용](/help/headless/graphql-api/graphiql-ide.md)

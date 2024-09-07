@@ -5,9 +5,9 @@ feature: Headless, Dispatcher, GraphQL API
 exl-id: 30a97e56-6699-41c4-a4eb-fc6236667f8f
 role: Admin, Developer
 source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '339'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->Dispatcher에 대한 자세한 설명서는 [Dispatcher 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)를 참조하십시오.
+>Dispatcher에 대한 자세한 설명서는 [Dispatcher 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)를 참조하십시오.
 
 ## 지속 쿼리 캐싱 활성화 {#enable-caching-persisted-queries}
 
@@ -41,7 +41,7 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->캐시된 지속 쿼리에 대해 개별 `ETag` 헤더 계산을 수행하려면(*고유한 각* 응답에 대해) Dispatcher 구성 가상 호스트 구성에서 `FileETag Digest` 설정을 사용해야 합니다(아직 없는 경우).
+>캐시된 지속 쿼리에서 개별 `ETag` 헤더 계산을 수행하려면 고유한 *각* 응답에 대해 Dispatcher 구성 가상 호스트 구성에서 `FileETag Digest` 설정을 사용해야 합니다(아직 존재하지 않는 경우).
 >
 >```xml
 ><Directory />    
@@ -52,7 +52,7 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->[캐시할 수 있는 문서에 대한 Dispatcher의 요구 사항](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F)을 준수하기 위해 Dispatcher는 `.json` 접미사를 모든 지속 쿼리 URL에 추가하여 결과를 캐시할 수 있도록 합니다.
+>[캐시할 수 있는 문서에 대한 Dispatcher의 요구 사항](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html?lang=ko-KR#how-does-the-dispatcher-return-documents%3F)을 준수하기 위해 Dispatcher는 `.json` 접미사를 모든 지속 쿼리 URL에 추가하여 결과를 캐시할 수 있도록 합니다.
 >
 >이 접미사는 지속 쿼리 캐싱이 활성화되면 다시 쓰기 규칙에 의해 추가됩니다.
 

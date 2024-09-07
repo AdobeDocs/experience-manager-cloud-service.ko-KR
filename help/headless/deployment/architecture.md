@@ -5,9 +5,9 @@ feature: Headless, Content Fragments,GraphQL API
 exl-id: 5ba6921f-b06e-463d-b956-d1fb434090c9
 role: Admin, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '552'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 98%
 
 * **Dispatcher**&#x200B;는 AEM Dispatcher 모듈로 보강된 정적 웹 서버입니다. 캐싱 기능과 보안의 또 다른 계층을 제공합니다. **Dispatcher**&#x200B;는 **Publish** 및 **미리보기** 서비스 앞에 위치합니다.
 
-AEM as a Cloud Service Program 내에서 Dev, Stage, Prod 등의 여러 환경을 가질 수 있습니다. 각 환경에는 고유한 **Author**, **Publish**, **미리보기** 서비스가 있습니다. 자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md)를 참조하세요.
+AEM as a Cloud Service Program 내에서 Dev, Stage, Prod 등의 여러 환경을 가질 수 있습니다. 각 환경에는 고유한 **Author**, **Publish**, **미리보기** 서비스가 있습니다. 자세한 정보는 [ 환경 관리](/help/implementing/cloud-manager/manage-environments.md)를 참조하십시오.
 
 ## Author Publish 모델
 

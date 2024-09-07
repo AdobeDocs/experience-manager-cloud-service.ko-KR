@@ -5,22 +5,22 @@ feature: Headless, Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
 role: Admin, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '222'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
 # Dispatcher - AEM Headless를 통한 엔드포인트 구성
 
-[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)는 Adobe Experience Manager 게시 환경 앞에 있는 캐싱 및 보안 계층입니다. Headless 애플리케이션에 대한 GraphQL 엔드포인트를 여는 데 여러 구성이 기본적으로 포함되어 있습니다.
+[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)는 Adobe Experience Manager 게시 환경 앞에 있는 캐싱 및 보안 계층입니다. Headless 애플리케이션에 대한 GraphQL 엔드포인트를 여는 데 여러 구성이 기본적으로 포함되어 있습니다.
 
 >[!NOTE]
 >
->Dispatcher에 대한 자세한 설명서는 [Dispatcher 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 를 참조하십시오.
+>Dispatcher에 대한 자세한 설명서는 [Dispatcher 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)를 참조하십시오.
 
-AEM Project의 일부로 Dispatcher에 대한 구성이 포함된 Dispatcher 모듈이 포함되어 있습니다. [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)에서 새로 생성된 프로젝트에는 GraphQL 엔드포인트를 활성화하는 [필터](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?#defining-a-filter)가 자동으로 포함됩니다.
+AEM Project의 일부로 Dispatcher에 대한 구성이 포함된 Dispatcher 모듈이 포함되어 있습니다. [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)에서 새로 생성된 프로젝트에는 GraphQL 엔드포인트를 활성화하는 [필터](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko-KR?#defining-a-filter)가 자동으로 포함됩니다.
 
 ## GraphQL 엔드포인트
 
@@ -40,4 +40,4 @@ AEM Project의 일부로 Dispatcher에 대한 구성이 포함된 Dispatcher 모
 /0061 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
 ```
 
-지속 쿼리는 Dispatcher 및 CDN 수준에서 응답을 캐싱하여 `GET`을 통해 요청할 수 있습니다. 캐싱 및 캐시 무효화에 대한 자세한 내용은 [AEM as a Cloud Service의 캐싱 소개](/help/implementing/dispatcher/caching.md)에서 확인할 수 있습니다.
+지속 쿼리는 Dispatcher 및 CDN 수준에서 응답을 캐싱하여 `GET`을 통해 요청할 수 있습니다. 캐싱 및 캐시 무효화에 대한 자세한 내용은 [AEM as a Cloud Service에서 캐싱 소개](/help/implementing/dispatcher/caching.md)에서 확인할 수 있습니다.

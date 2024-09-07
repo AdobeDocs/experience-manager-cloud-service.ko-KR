@@ -5,9 +5,9 @@ exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '325'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ AEM에서 Headless 콘텐츠 관리의 맥락에서 구성을 미래 콘텐츠 �
 
 관리자는 구성을 한 번만 만들면 되며, 매우 드물게 콘텐츠 모델을 구성하기 위해 새 작업 영역이 필요한 경우에 만들어야 합니다. 이 시작 안내서에서는 구성을 하나만 만들면 됩니다.
 
-1. AEM as a Cloud Service에 로그인하고 메인 메뉴에서 **도구 > 일반 > 구성 브라우저**&#x200B;를 선택합니다.
+1. AEM as a Cloud Service에 로그인하고 메인 메뉴에서 **도구 - 일반 - 구성 브라우저**&#x200B;를 선택합니다.
 1. 구성의 **제목** 및 **이름**&#x200B;을 입력합니다.
    * **제목**&#x200B;은 설명적이어야 합니다.
    * **이름**&#x200B;은 저장소의 노드 이름이 됩니다.
@@ -39,7 +39,7 @@ AEM에서 Headless 콘텐츠 관리의 맥락에서 구성을 미래 콘텐츠 �
 
    ![구성 만들기](../assets/create-configuration.png)
 
-1. **만들기** 선택
+1. **만들기**&#x200B;를 선택합니다.
 
 필요한 경우 여러 구성을 만들 수 있습니다. 구성은 중첩될 수도 있습니다.
 

@@ -5,9 +5,9 @@ exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '375'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ AEM 콘텐츠 조각 모델을 사용하여 Headless 콘텐츠의 기반이 되�
 
 관리자는 콘텐츠가 만들어질 때 콘텐츠를 구성하기 위해 가끔씩만 폴더를 만들면 됩니다. 이 시작 안내서에서는 폴더를 하나만 만들면 됩니다.
 
-1. AEM as a Cloud Service에 로그인하고 메인 메뉴에서 **탐색 > Assets > 파일**&#x200B;을 선택합니다.
+1. AEM as a Cloud Service에 로그인하고 메인 메뉴에서 **탐색 - 자산 - 파일**&#x200B;을 선택합니다.
 1. **만들기 > 폴더**&#x200B;를 선택합니다.
 1. 폴더의 **제목** 및 **이름**&#x200B;을 입력합니다.
    * **제목**&#x200B;은 설명적이어야 합니다.
@@ -36,7 +36,7 @@ AEM 콘텐츠 조각 모델을 사용하여 Headless 콘텐츠의 기반이 되�
       * 필요한 경우 조정할 수 있습니다.
 
    ![폴더 만들기](../assets/assets-folder-create.png)
-1. 마우스를 가져간 후 확인 표시를 눌러 만든 폴더를 선택합니다. 그런 다음 도구 모음에서&#x200B;**속성**&#x200B;을 선택합니다(또는 `p` [키보드 단축키](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)사용).
+1. 마우스를 가져가서 확인 표시를 눌러 만든 폴더를 선택합니다. 그런 다음 도구 모음에서&#x200B;**속성**&#x200B;을 선택합니다(또는 `p` [키보드 단축키](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)사용).
 1. **속성** 창에서 **Cloud Services** 탭을 선택합니다.
 1. **클라우드 구성**&#x200B;의 경우 [이전에 생성한 구성](create-configuration.md)을 선택합니다.
    ![자산 폴더 구성](../assets/assets-folder-configure.png)

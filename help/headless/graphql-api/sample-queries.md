@@ -5,9 +5,9 @@ feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
 source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1826'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -363,7 +363,7 @@ query {
 }
 ```
 
-### 샘플 쿼리 - 구/군/시 구분으로 태그가 지정된 모든 구의 이름 {#sample-names-all-cities-tagged-city-breaks}
+### 샘플 쿼리 - City Break로 태그된 모든 도시의 이름 {#sample-names-all-cities-tagged-city-breaks}
 
 다음 작업을 수행하는 경우:
 
@@ -1350,7 +1350,7 @@ query {
 
 >[!NOTE]
 >
->`fragments` 필드에는 `fragment-reference` 데이터 유형이 있고, `Article` 모델이 선택됩니다. 쿼리가 `fragments`을(를) `[Article]`의 배열로 전달합니다.
+>`fragments` 필드에는 `fragment-reference` 데이터 유형이 있고, `Article` 모델이 선택됩니다. 쿼리는 `fragments`의 배열로 `[Article]`를 제공합니다.
 
 ```graphql
 {
@@ -1796,19 +1796,19 @@ query {
 } 
 ```
 
-## DAM 및 Dynamic Media Assets 전달을 위한 샘플 쿼리 {#sample-queries-delivery-DAM-DM}
+## DAM 및 Dynamic Media 자산 게재를 위한 샘플 쿼리 {#sample-queries-delivery-DAM-DM}
 
-웹에 최적화된 이미지 제공(DAM 에셋):
+웹 최적화 이미지 게재의 경우(DAM 자산):
 
-* [전체 매개 변수를 사용하여 웹에 최적화된 이미지 제공을 위한 샘플 쿼리](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-full-parameters)
+* [전체 매개변수가 있는 웹에 최적화된 이미지 게재를 위한 샘플 쿼리](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-full-parameters)
 
-* [지정된 단일 매개 변수를 사용하여 웹에 최적화된 이미지 제공을 위한 샘플 쿼리](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-single-query-variable)
+* [단일 지정된 매개변수를 통해 웹에 최적화된 이미지 게재를 위한 샘플 쿼리](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-single-query-variable)
 
-Dynamic Media 에셋으로의 URL 전달용
+Dynamic Media 자산에 대한 URL 게재의 경우
 
-* [URL별 Dynamic Media 자산 게재용 샘플 쿼리 - 이미지 참조](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)를 참조하십시오.
+* [URL을 통한 Dynamic Media 자산 게재를 위한 샘플 쿼리 - 이미지 참조](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)를 참조하십시오.
 
-* [URL별 Dynamic Media 자산 게재에 대한 샘플 쿼리 - 다중 참조](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)를 참조하십시오.
+* [URL을 통한 Dynamic Media 자산 게재를 위한 샘플 쿼리 - 다중 참조](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)를 참조하십시오.
 
 ## 샘플 콘텐츠 조각 구조 (GraphQL과 함께 사용) {#content-fragment-structure-graphql}
 

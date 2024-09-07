@@ -5,9 +5,9 @@ exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '341'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -25,11 +25,11 @@ Headless 게재를 위해 AEM의 콘텐츠 조각을 사용하여 페이지 독�
 
 ## 콘텐츠 조각을 만드는 방법 {#how-to-create-a-content-fragment}
 
-콘텐츠 작성자는 자신이 만드는 콘텐츠를 표시하기 위해 콘텐츠 조각을 원하는 수만큼 만듭니다. 이것이 AEM에서 작성자의 주요 작업입니다. 이 시작 안내서에서는 하나만 만들면 됩니다.
+콘텐츠 작성자는 자신이 만드는 콘텐츠를 표시하기 위해 콘텐츠 조각을 원하는 수만큼 만듭니다. 이는 AEM에서 작성자의 주요 작업입니다. 이 시작 안내서에서는 하나만 만들면 됩니다.
 
 1. AEM as a Cloud Service에 로그인하고 메인 메뉴에서 **탐색** > **콘텐츠 조각**&#x200B;을 선택합니다.
 
-1. 이전에 만든 [폴더를 선택하십시오.](create-assets-folder.md)
+1. 이전에 만든 [폴더를 선택합니다.](create-assets-folder.md)
 1. **만들기**&#x200B;를 선택합니다.
 1. 콘텐츠 조각 만들기는 대화 상자로 표시됩니다.
 콘텐츠 조각을 만드는 데 사용할 위치 및 모델을 선택합니다.
@@ -41,7 +41,7 @@ Headless 게재를 위해 AEM의 콘텐츠 조각을 사용하여 페이지 독�
 
    ![새 콘텐츠 조각 만들기 대화 상자](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
-1. **만들기** 또는 **만들기 및 열기**&#x200B;를 선택합니다.
+1. **만들기** 또는 **만들고 열기**&#x200B;를 선택합니다.
 
 콘텐츠 조각은 다른 콘텐츠 조각을 참조할 수 있으므로 필요한 경우 중첩된 콘텐츠 구조를 허용합니다.
 

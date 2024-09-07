@@ -5,9 +5,9 @@ feature: Headless, Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 role: Admin, Developer
 source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1952'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -258,37 +258,37 @@ query getAdventuresByActivity($activity: String!) {
 <AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
 ```
 
-UTF-8 인코딩 `%3B`은(는) `;`에 대한 것이고 `%3D`은(는) `=`에 대한 인코딩입니다. 실행할 지속 쿼리에 대해 쿼리 변수 및 특수 문자를 [올바르게 인코딩](#encoding-query-url)해야 합니다.
+`%3B`는 `;`에 대한 UTF-8 인코딩이며 `%3D`는 `=`에 대한 인코딩입니다. 실행할 지속 쿼리에 대해 쿼리 변수 및 특수 문자를 [올바르게 인코딩](#encoding-query-url)해야 합니다.
 
-### 쿼리 변수 사용 - 우수 사례 {#query-variables-best-practices}
+### 쿼리 변수 사용 - 모범 사례 {#query-variables-best-practices}
 
-쿼리에 변수를 사용할 때 따라야 하는 몇 가지 모범 사례가 있습니다.
+쿼리에서 변수를 사용할 때 따라야 할 몇 가지 모범 사례가 있습니다.
 
 * 인코딩
-일반적인 접근 방법으로는 항상 모든 특수 문자를 인코딩하는 것이 좋습니다(예: `;`, `=`, `?`, `&`).
+일반적으로 모든 특수 문자를 인코딩하는 것이 좋습니다. 예를 들면 `;`, `=`, `?`, `&` 등이 있습니다.
 
 * 세미콜론
-여러 변수(세미콜론으로 구분)를 사용하는 지속 쿼리에는 다음 중 하나가 있어야 합니다.
-   * 인코딩된 세미콜론(`%3B`); URL을 인코딩하면 이와 같이 됩니다.
-   * 또는 쿼리 끝에 후행 세미콜론이 추가됨
+여러 변수(세미콜론으로 구분)를 사용하는 지속 쿼리에는 다음 중 하나가 필요합니다.
+   * 세미콜론 인코딩(`%3B`): URL을 인코딩하여 세미콜론을 인코딩할 수도 있습니다.
+   * 또는 쿼리 끝에 세미콜론을 추가
 
 * `CACHE_GRAPHQL_PERSISTED_QUERIES`
-Dispatcher에 대해 `CACHE_GRAPHQL_PERSISTED_QUERIES`을(를) 활성화하면 해당 값에 `/` 또는 `\` 문자가 포함된 매개 변수가 Dispatcher 수준에서 두 번 인코딩됩니다.
-이러한 상황을 방지하려면:
+`CACHE_GRAPHQL_PERSISTED_QUERIES`가 Dispatcher에 대해 활성화된 경우, `/` 또는 `\` 문자를 값에 포함하는 매개변수는 Dispatcher 레벨에서 두 번 인코딩됩니다.
+이를 방지하려면 다음을 따릅니다.
 
-   * Dispatcher에서 `DispatcherNoCanonURL` 사용
-이렇게 하면 Dispatcher에서 원본 URL을 AEM에 전달하게 되므로 인코딩이 중복되지 않습니다.
-그러나 이 설정은 현재 `vhost` 수준에서만 작동하므로 URL을 다시 작성할 Dispatcher 구성이 이미 있는 경우(예: 단축된 URL을 사용하는 경우) 지속 쿼리 URL에 대해 별도의 `vhost`이 필요할 수 있습니다.
+   * Dispatcher에서 `DispatcherNoCanonURL`을 활성화합니다.
+이렇게 하면 Dispatcher가 원래 URL을 AEM으로 전달하도록 지시하여 인코딩 중복을 방지할 수 있습니다.
+그러나 이 설정은 현재 `vhost` 레벨에서만 작동하므로 URL을 다시 작성하는 Dispatcher 구성이 이미 있는 경우(예: 단축 URL을 사용하는 경우) 지속 쿼리 URL에 대한 별도의 `vhost`가 필요할 수 있습니다.
 
-   * `/` 또는 `\`자를 인코딩하지 않은 상태로 보냅니다.
-지속 쿼리 URL을 호출할 때 모든 `/` 또는 `\` 문자가 지속 쿼리 변수의 값에 인코딩되지 않은 상태로 유지되는지 확인하십시오.
+   * `/` 또는 인코딩되지 않은 `\` 문자를 보냅니다.
+지속형 쿼리 URL을 호출할 때 지속형 쿼리 변수의 값에 있는 모든 `/` 또는 `\` 문자가 인코딩되지 않은 상태로 유지되도록 합니다.
      >[!NOTE]
      >
-     >이 옵션은 어떤 이유로든 `DispatcherNoCanonURL` 솔루션을 구현할 수 없는 경우에만 권장됩니다.
+     >이 옵션은 어떠한 이유에서든 `DispatcherNoCanonURL` 솔루션을 구현할 수 없는 경우에만 권장됩니다.
 
 * `CACHE_GRAPHQL_PERSISTED_QUERIES`
 
-  Dispatcher에 대해 `CACHE_GRAPHQL_PERSISTED_QUERIES`을(를) 활성화하면 변수 값에 `;` 문자를 사용할 수 없습니다.
+  Dispatcher에 대해 `CACHE_GRAPHQL_PERSISTED_QUERIES`가 활성화된 경우, `;` 문자를 변수 값에 사용할 수 없습니다.
 
 ## 지속 쿼리 캐싱 {#caching-persisted-queries}
 
@@ -309,7 +309,7 @@ Dispatcher에 대해 `CACHE_GRAPHQL_PERSISTED_QUERIES`을(를) 활성화하면 �
 
 작성자 인스턴스의 경우 기본값은 다음과 같습니다.
 
-* `max-age`  : 60
+* `max-age` : 60
 * `s-maxage` : 60
 * `stale-while-revalidate` : 86400
 * `stale-if-error` : 86400
@@ -326,7 +326,7 @@ Dispatcher에 대해 `CACHE_GRAPHQL_PERSISTED_QUERIES`을(를) 활성화하면 �
 
 게시 인스턴스의 경우 기본값은 다음과 같습니다.
 
-* `max-age`  : 60
+* `max-age` : 60
 * `s-maxage` : 7200
 * `stale-while-revalidate` : 86400
 * `stale-if-error` : 86400
@@ -367,7 +367,7 @@ curl -u admin:admin -X POST \
 --data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
 ```
 
-`cache-control`은 생성 시간(PUT) 또는 그 이후에 설정될 수 있습니다(예: 인스턴스의 POST 요청을 통해 설정). AEM에서 기본값을 제공하기 때문에 지속 쿼리 생성 시 캐시 제어는 옵션입니다. cURL을 사용하여 쿼리를 지속하는 사례는 [GraphQL 쿼리를 지속하는 방법](#how-to-persist-query)을 참조하십시오.
+`cache-control`은 생성 시간(PUT) 또는 그 이후에 설정할 수 있습니다(예: 인스턴스의 POST 요청을 통해 설정). AEM에서 기본값을 제공하기 때문에 지속 쿼리 생성 시 캐시 제어는 옵션입니다. cURL을 사용하여 쿼리를 지속하는 사례는 [GraphQL 쿼리를 지속하는 방법](#how-to-persist-query)을 참조하십시오.
 
 ### Cloud Manager 변수를 사용하여 캐시 관리 {#cache-cloud-manager-variables}
 
@@ -411,7 +411,7 @@ curl -u admin:admin -X POST \
 
 기본적으로 `PersistedQueryServlet`은 실제 결과에 관계없이 쿼리를 실행할 때 `200` 응답을 보냅니다.
 
-[지속 쿼리에 오류가 있는 경우 **지속 쿼리 서비스 구성**&#x200B;에 대한 OSGi 설정을 구성](/help/implementing/deploying/configuring-osgi.md)하여 `/execute.json/persisted-query` 끝점에서 더 자세한 상태 코드를 반환할지 여부를 제어할 수 있습니다.
+**지속 쿼리 서비스 구성**&#x200B;에 대한 [OSGi 설정을 구성](/help/implementing/deploying/configuring-osgi.md)하여 지속 쿼리에 오류가 발생하면 `/execute.json/persisted-query` 엔드포인트에서 보다 상세한 상태 코드가 반환되는지 여부를 제어할 수 있습니다.
 
 >[!NOTE]
 >
@@ -420,21 +420,21 @@ curl -u admin:admin -X POST \
 필드`Respond with application/graphql-response+json`(`responseContentTypeGraphQLResponseJson`)은 필요에 따라 정의할 수 있습니다.
 
 * `false`(기본값):
-지속 쿼리의 성공 여부는 상관없습니다. 반환된 `Content-Type` 헤더가 `application/json`이고 `/execute.json/persisted-query` *always*&#x200B;이(가) 상태 코드 `200`을(를) 반환합니다.
+지속 쿼리의 성공 여부는 상관없습니다. 반환되는 `Content-Type` 헤더는 `application/json`이며 `/execute.json/persisted-query`는 *항상* 상태 코드 `200`을 반환합니다.
 
 * `true`:
-반환된 `Content-Type`은(는) `application/graphql-response+json`이며, 지속 쿼리를 실행할 때 오류가 발생하면 끝점이 적절한 응답 코드를 반환합니다.
+반환되는 `Content-Type`은 `application/graphql-response+json`이며 엔드포인트는 지속 쿼리 실행 시 오류가 발생할 때 적절한 응답 코드를 반환합니다.
 
   | 코드 | 설명 |
   |--- |--- |
-  | 200 | 성공한 응답 |
-  | 400 | 헤더가 누락되었거나 지속 쿼리 경로에 문제가 있음을 나타냅니다. 예를 들어 구성 이름이 지정되지 않았거나 접미사가 지정되지 않았거나 기타.<br>문제 해결 - GraphQL 끝점이 구성되지 않았음](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url)을 참조하십시오.[ |
-  | 404 | 요청한 리소스를 찾을 수 없습니다. 예를 들어 서버에서 Graphql 끝점을 사용할 수 없습니다.<br>문제 해결 - GraphQL 지속 쿼리 URL에 경로가 없음](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured)을 참조하세요.[ |
-  | 500 | 내부 서버 오류. 예를 들어 유효성 검사 오류, 지속성 오류 등이 있습니다. |
+  | 200 | 성공적인 응답 |
+  | 400 | 헤더가 누락되었거나 지속된 쿼리 경로에 문제가 있음을 나타냅니다. 예를 들어 구성 이름 미지정, 접미사 미지정 등의 문제가 있습니다.<br> [문제 해결 - GraphQL 엔드포인트 미구성](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url)을 참조하십시오. |
+  | 404 | 요청한 리소스를 찾을 수 없습니다. 예를 들어 Graphql 엔드포인트는 서버에서 사용할 수 없습니다.<br> [문제 해결 - GraphQL 지속형 쿼리 URL 내 경로 누락](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured)을 참조하십시오. |
+  | 500 | 내부 서버 오류. 예를 들어 검증 오류, 지속성 오류 등이 있습니다. |
 
   >[!NOTE]
   >
-  >https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes 참조
+  >https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes를 참조하십시오.
 
 ## 앱에서 사용할 쿼리 URL 인코딩 {#encoding-query-url}
 
@@ -482,7 +482,7 @@ URL은 다음과 같은 부분들로 나눌 수 있습니다.
 1. “1.0”과 같은 버전 번호를 입력합니다.
 1. **필터** 아래에 새 **필터**&#x200B;를 추가합니다. 경로 파인더를 사용하여 구성 아래에서 `persistentQueries` 폴더를 선택합니다. 예를 들어 `wknd` 구성의 경우, 전체 경로는 `/conf/wknd/settings/graphql/persistentQueries`입니다.
 1. **저장**&#x200B;을 선택하여 새 패키지 정의를 저장하고 대화 상자를 닫습니다.
-1. 생성된 패키지 정의에서 **빌드** 단추를 선택합니다.
+1. 만든 패키지 정의에 있는 **빌드** 버튼을 선택합니다.
 
 패키지를 빌드하면 다음과 같은 작업을 수행할 수 있습니다.
 
