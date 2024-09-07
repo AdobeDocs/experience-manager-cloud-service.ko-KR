@@ -4,10 +4,10 @@ description: ' [!DNL Workfront for Experience Manager enhanced connector] 릴리
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 346f36a476a11dc7fe022df8b7b8df7aff06a2ba
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 100%
+source-wordcount: '1678'
+ht-degree: 98%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 100%
 
 다음 섹션에서는 [!DNL Workfront for Experience Manager enhanced connector]의 일반 릴리스 정보에 대해 간략히 설명합니다.
 
-[!DNL Workfront for Experience Manager enhanced connector] 최신 버전 1.9.19의 릴리스 일자는 2024년 4월 12일입니다.
+최신 버전 1.9.20([!DNL Workfront for Experience Manager enhanced connector])의 릴리스 날짜는 2024년 9월 6일입니다.
 
 ## 릴리스 하이라이트 {#release-highlights}
 
 최신 버전의 [!DNL Workfront for Experience Manager enhanced connector]에는 다음과 같은 버그 수정 사항이 포함됩니다.
 
-* HTTP 클라이언트를 닫지 못하면 메모리 부족 문제가 발생합니다.
+* 기존 에셋의 새 버전을 업로드하고 만드는 동안 MIME 유형이 손실됩니다.
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->Adobe는 [!DNL Workfront for Experience Manager enhanced connector]의 [최신 1.9.19 버전으로 업그레이드](/help/assets/workfront-connector-install.md)할 것을 권장합니다.
+>Adobe는 [!DNL Workfront for Experience Manager enhanced connector]의 [최신 1.9.20 버전으로 업그레이드](/help/assets/workfront-connector-install.md)할 것을 권장합니다.
 
 ## 알려진 문제 {#known-issues}
 
@@ -38,6 +38,11 @@ ht-degree: 100%
 * 기존의 Workfront 경험을 사용하는 경우, **[!UICONTROL 추가]** 드롭다운 목록에서 사용할 수 있는 **[!UICONTROL 수신인]** 옵션을 사용하면 Experience Manager에서 타깃 대상을 선택할 수 없습니다. **[!UICONTROL 수신인]** 옵션은 **[!UICONTROL 문서 작업]** 드롭다운 목록을 사용하여 올바르게 작동합니다. The **[!UICONTROL 수신인]** 옵션은 새로운 Workfront 경험에서 사용할 수 있는 **[!UICONTROL 추가]** 드롭다운 목록 및 **[!UICONTROL 문서 작업]** 목록에서 올바르게 작동합니다.
 
 ## 이전 출시 버전 {#previous-releases}
+
+### 2024년 4월 릴리스 {#april-2024-release}
+
+* HTTP 클라이언트를 닫지 못하면 메모리 부족 문제가 발생합니다.
+
 
 ### 2024년 3월 릴리스 {#march-2024-release}
 
@@ -68,7 +73,7 @@ ht-degree: 100%
 
 * 연결된 폴더, 문서 업데이트 및 메모 업데이트의 중요한 흐름에 대한 요청 시간 처리가 없습니다.
 
-### 2023년 11월 릴리스 {#november-2023-release}
+### 2023년 11월 릴리스 {#nov-2023-release}
 
 * AEM 폴더 목록을 확인할 경우, 대화 상자를 로드하는 데 1분 이상 걸립니다.
 * 승인된[!DNL Workfront] 사용자가 계속 인증 실패 오류 로그를 받습니다.
