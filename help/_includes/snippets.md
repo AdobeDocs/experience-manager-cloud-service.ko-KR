@@ -1,8 +1,8 @@
 ---
-source-git-commit: 57fb7a011cb2da853cdca4f3233cd56775f4a459
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 75%
+source-wordcount: '915'
+ht-degree: 74%
 
 ---
 # 스니펫 {#snippets}
@@ -56,7 +56,7 @@ ht-degree: 75%
 
 ## 추가 참조 {#see-more-forms-eds}
 
-* [AEM Forms Edge Delivery Services 시작하기](/help/edge/docs/forms/tutorial.md)
+* [AEM Forms용 Edge Delivery Services 시작](/help/edge/docs/forms/tutorial.md)
 * [Google Sheets 또는 Microsoft Excel을 사용하여 양식 만들기](/help/edge/docs/forms/create-forms.md)
 * [Google Sheets 또는 Microsoft Excel 파일을 설정하여 데이터 수신 시작&#x200B;](/help/edge/docs/forms/submit-forms.md)
 * [양식 게시 및 데이터 수집 시작](/help/edge/docs/forms/publish-forms.md)

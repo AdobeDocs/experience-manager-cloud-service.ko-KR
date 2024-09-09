@@ -1,13 +1,13 @@
 ---
-title: AEM Forms Edge Delivery Services 양식의 테마 및 스타일 사용자 정의
-description: AEM Forms Edge Delivery Services 양식의 테마 및 스타일 사용자 정의
+title: AEM Forms용 Edge Delivery Services의 테마 및 스타일 맞춤화
+description: AEM Forms용 Edge Delivery Services의 테마 및 스타일 맞춤화
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '2014'
-ht-degree: 100%
+source-wordcount: '2016'
+ht-degree: 98%
 
 ---
 

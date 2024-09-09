@@ -1,20 +1,20 @@
 ---
-title: AEM Forms Edge Delivery Services 양식 번역 및 현지화
-description: AEM Forms Edge Delivery Services 양식 번역 및 현지화
+title: AEM Forms에 대한 Edge Delivery Services 번역 및 현지화
+description: AEM Forms에 대한 Edge Delivery Services 번역 및 현지화
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 100%
+source-wordcount: '546'
+ht-degree: 94%
 
 ---
 
 
-# AEM Forms Edge Delivery Services 양식 번역 및 현지화
+# AEM Forms에 대한 Edge Delivery Services 번역 및 현지화
 
 Edge Delivery Services에서 양식 번역에는 정확성, 명확성 및 일관성에 중점을 두고 양식 콘텐츠를 한 언어에서 다른 언어로 변환하는 작업이 포함됩니다. 번역되거나 현지화된 양식을 사용하면 다양한 지리적 위치에서 더 넓은 대상자 그룹에 연결할 수 있으므로 사용자 경험이 향상되고 다양한 언어 기본 설정에서 커뮤니케이션이 수월해집니다.
 

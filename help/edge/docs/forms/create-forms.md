@@ -1,13 +1,13 @@
 ---
-title: AEM Forms Edge Delivery Service 시작하기. 양식을 만듭니다.
+title: AEM Forms용 Edge Delivery Services 시작하기 양식을 만듭니다.
 description: 완벽한 양식을 빠르게 제작하십시오. ⚡ AEM Forms Edge Delivery 문서 기반 작성 = 놀라운 속도 및 만족도가 높은 사용자를 위한 SEO 친화적 양식과 검색 엔진.
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
-source-git-commit: f6a320b0f3960ae789559b837995986bf0a4bbad
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 100%
+source-wordcount: '806'
+ht-degree: 98%
 
 ---
 

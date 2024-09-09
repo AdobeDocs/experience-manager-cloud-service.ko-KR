@@ -1,19 +1,20 @@
 ---
 title: AEM Forms Edge Delivery Services 개요
-description: 최고의 성능을 위해 구축된 AEM Forms Edge Delivery Services를 통해 간소화된 데이터 수집 및 사용자 참여라는 미래를 구상할 수 있습니다.
+description: AEM Forms Edge Delivery Services
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 5670e0ab7e6cb47bcc2dd7608aa3f01dc4ec0704
-workflow-type: ht
-source-wordcount: '1043'
-ht-degree: 100%
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+workflow-type: tm+mt
+source-wordcount: '1037'
+ht-degree: 83%
 
 ---
 
 # AEM Forms Edge Delivery Services
 
-AEM Forms Edge Delivery Services는 새 양식을 빠르게 업데이트, 게시 및 시작할 수 있는 신속한 개발 환경을 지원하는 구성 가능한 서비스 세트입니다. 이러한 서비스는 참여와 전환을 촉진하는 탁월하고 영향력 있는 양식 경험을 선사합니다. 이러한 양식 환경은 쉽게 작성하고 개발할 수 있습니다.
+
+AEM Forms용 Edge Delivery Services은 작성자가 새로운 양식을 신속하게 업데이트, 게시 및 실행할 수 있는 신속한 개발 환경을 구현하는 구성 가능한 서비스 세트입니다. 이러한 서비스는 참여와 전환을 촉진하는 탁월하고 영향력 있는 양식 경험을 선사합니다. 이러한 양식 환경은 쉽게 작성하고 개발할 수 있습니다.
 
 이러한 서비스를 통해 다음이 가능합니다.
 
@@ -21,11 +22,13 @@ AEM Forms Edge Delivery Services는 새 양식을 빠르게 업데이트, 게시
 
 * **뛰어난 디지털 등록 경험 제공:** 실제 사용 모니터링(RUM)을 통해 신속하게 로드 및 렌더링하고 양식 성능을 지속적으로 모니터링하는 디지털 등록 경험을 제공합니다. 로드 시간이 빠르고 사용자 경험이 최적화되어 있으면 양식 작성률과 전환율을 향상할 수 있습니다.
 
-* **개발자 친화적인 도구 세트 사용:** AEM Forms Edge Delivery Services는 일반 HTML, 최신 CSS 및 바닐라 JavaScript를 사용하여 특정 프레임워크의 가파른 학습 곡선을 방지하면서 뛰어난 경험을 창출합니다. 기본적인 웹 개발 기술을 갖춘 개발자라면 양식 구성 요소와 경험을 사용자 정의하고 손쉽게 빌드할 수 있습니다. 파이프라인이 실행될 때까지 기다릴 필요 없이 코드를 GitHub에 체크인하면 변경 사항이 적용됩니다.
+* **개발자에게 친숙한 도구 집합 사용:** AEM Forms Edge Delivery Services
+에서는 일반 HTML, 최신 CSS 및 바닐라 JavaScript을 사용하여 특정 프레임워크의 가파른 학습 곡선을 피하고 예외적인 경험을 만듭니다. 기본적인 웹 개발 기술을 갖춘 개발자라면 양식 구성 요소와 경험을 사용자 정의하고 손쉽게 빌드할 수 있습니다. 파이프라인이 실행될 때까지 기다릴 필요 없이 코드를 GitHub에 체크인하면 변경 사항이 적용됩니다.
 
 ## AEM Forms Edge Delivery Services 개요 {#edge-overview}
 
-AEM Forms Edge Delivery 서비스를 사용하면 웹 사이트에서 양식을 작성하는 방법과 관련해 높은 수준의 유연성을 누릴 수 있습니다. [WYSIWYG 작성](/help/forms/creating-adaptive-form-core-components.md)뿐만 아니라 [문서 기반 작성](/help/edge/docs/forms/create-forms.md)을 사용하여 콘텐츠 및 양식을 작성할 수 있습니다. AEM Forms Edge Delivery Services에서 제공되는 [적응형 양식 블록](/help/edge/docs/forms/create-forms.md)이라는 양식 블록을 사용하여 Edge Delivery Services 사이트에 양식을 추가할 수 있습니다.
+AEM Forms용 Edge Delivery Services을 사용하면 웹 사이트에서 양식을 작성하는 방법을 매우 유연하게 사용할 수 있습니다. [WYSIWYG 작성](/help/forms/creating-adaptive-form-core-components.md)뿐만 아니라 [문서 기반 작성](/help/edge/docs/forms/create-forms.md)을 사용하여 콘텐츠 및 양식을 작성할 수 있습니다. AEM Forms Edge Delivery Services
+Edge Delivery Services 사이트에 양식을 추가하려면 [적응형 Forms 블록](/help/edge/docs/forms/create-forms.md)(으)로 알려진 양식 블록을 제공하십시오.
 
 예를 들어 Microsoft Excel 또는 Google Sheets에서 직접 양식을 작성하면 이러한 스프레드시트가 웹 사이트용 양식으로 변환됩니다. 새 양식 필드와 같은 새 양식이나 양식 콘텐츠를 재빌드 프로세스 없이 웹 사이트에서 즉시 사용할 수 있습니다.
 
@@ -33,7 +36,7 @@ AEM Forms Edge Delivery 서비스를 사용하면 웹 사이트에서 양식을 
 
 ![Edge Delivery Services 및 AEM에 게시](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
 
-AEM Forms Edge Delivery Services는 GitHub를 사용하므로 고객은 GitHub 저장소에서 바로 코드를 관리 및 배포할 수 있습니다. 예를 들어 [Google Sheets](/help/edge/docs/forms/create-forms.md) 또는 [Microsoft Excel](/help/edge/docs/forms/create-forms.md)에서 양식을 작성할 수 있고, GitHub 저장소의 CSS 및 JavaScript를 사용하여 양식의 구성 요소를 작성할 수 있습니다.
+AEM Forms용 Edge Delivery Services은 GitHub를 사용하므로 고객은 GitHub 저장소에서 직접 코드를 관리하고 배포할 수 있습니다. 예를 들어 [Google Sheets](/help/edge/docs/forms/create-forms.md) 또는 [Microsoft Excel](/help/edge/docs/forms/create-forms.md)에서 양식을 작성할 수 있고, GitHub 저장소의 CSS 및 JavaScript를 사용하여 양식의 구성 요소를 작성할 수 있습니다.
 
 양식이 준비되면 Chrome 브라우저 확장 기능인 [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content)을 사용하여 콘텐츠 업데이트를 미리 보고 게시할 수 있습니다.
 
@@ -86,17 +89,19 @@ WYSIWYG 작성에서는 양식 작성에 WYSIWYG 인터페이스(범용 편집�
 >
 > WYSIWYG 작성 기능은 얼리 어답터 프로그램을 통해 사용할 수 있습니다. 관심이 있는 경우 회사 주소에서 aem-forms-ea@adobe.com으로 간단한 이메일을 보내 해당 기능에 대한 액세스를 요청하시기 바랍니다.
 
-### AEM Forms Edge Delivery Services: 양식 작성, 게시 및 제출
+### AEM Forms Edge Delivery Services
+
+: Forms 작성, 게시 및 제출
 
 다음 다이어그램은 문서 기반 작성 및 WYSIWYG 작성을 사용하여 양식을 만들고, 게시하고, 제출하는 프로세스를 보여 줍니다.
 
-![문서 기반 작성 ](/help/edge/assets/document-based-authoring-workflow.png)
+![문서 기반 작성](/help/edge/assets/document-based-authoring-workflow.png)
 
 ![WYSIWYG 작성](/help/edge/assets/wysiwyg-authoring-workflow.png)
 
 ## 양식 만들기 시작
 
-* [AEM Forms Edge Delivery Services 시작하기](/help/edge/docs/forms/tutorial.md)
+* [AEM Forms용 Edge Delivery Services 시작](/help/edge/docs/forms/tutorial.md)
 * [Google Sheets 또는 Microsoft Excel을 사용하여 양식 만들기](/help/edge/docs/forms/create-forms.md)
 * [Google Sheets 또는 Microsoft Excel 파일을 설정하여 데이터 수신 시작&#x200B;](/help/edge/docs/forms/submit-forms.md)
 * [양식 게시 및 데이터 수집 시작](/help/edge/docs/forms/publish-forms.md)

@@ -1,13 +1,13 @@
 ---
 title: 규칙을 사용하여 양식에 동적 비헤이비어 추가
-description: AEM Forms Edge Delivery Services는 최고의 성능을 발휘하도록 구축되어 데이터 수집 및 사용자 참여를 간소화하는 미래를 구상할 수 있도록 지원합니다. 규칙을 사용하여 내 양식에 동적 비헤이비어를 추가합니다.
+description: AEM Forms용 Edge Delivery Services은 최고 성능을 위해 구축되어 간소화된 데이터 수집과 사용자 참여의 미래를 구상할 수 있도록 해줍니다. 규칙을 사용하여 내 양식에 동적 비헤이비어를 추가합니다.
 feature: Edge Delivery Services
 exl-id: 58042016-e655-446f-a2bf-83f1811525e3
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '2216'
-ht-degree: 100%
+source-wordcount: '2218'
+ht-degree: 98%
 
 ---
 
