@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선
 description: 에셋 선택기를 사용하여 애플리케이션 내에서 에셋의 메타데이터와 렌디션을 검색, 찾기 및 검색할 수 있습니다.
 role: Admin,User
 exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '517'
 ht-degree: 1%
 
 ---
@@ -54,3 +54,9 @@ ht-degree: 1%
 에셋 선택기를 사용하면 사용자 지정된 업로드 양식을 추가할 수 있습니다. 사용할 수 있는 몇 가지 사용자 지정 사항이 있습니다. 예를 들어 [hideUploadButton](/help/assets/asset-selector-properties.md) 속성을 사용하면 응용 프로그램에 기본적으로 표시되는 업로드 단추를 숨길 수 있습니다. 대신 요구 사항에 따라 MFE 애플리케이션 외부에서 렌더링하도록 사용자 지정할 수 있습니다. 구성에 대해서는 [사용자 지정된 업로드](/help/assets/asset-selector-customization.md#customized-upload)를 참조하십시오.
 
 ![사용자 지정된 업로드](assets/customized-upload.png)
+
+>[!MORELIKETHIS]
+>
+>* [자산 선택기 예](/help/assets/asset-selector-examples.md)
+>* [다양한 응용 프로그램과 자산 선택기 통합](/help/assets/integrate-asset-selector.md)
+>* [자산 선택기 속성](/help/assets/asset-selector-properties.md)

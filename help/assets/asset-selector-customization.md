@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선
 description: 함수를 사용하여 애플리케이션 내에서 에셋 선택기를 사용자 지정합니다.
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1243'
 ht-degree: 24%
 
 ---
@@ -611,4 +611,4 @@ const ControlledUploadExample = () => {
 >* [자산 선택기 속성](/help/assets/asset-selector-properties.md)
 >* [다양한 응용 프로그램과 자산 선택기 통합](/help/assets/integrate-asset-selector.md)
 >* [자산 선택기 속성](/help/assets/asset-selector-properties.md)
->* [자산 선택기 Dynamic Media Open API 통합](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [OpenAPI 기능을 사용하여 Dynamic Media과 자산 선택기 통합](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)

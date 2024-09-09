@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선
 description: 에셋 선택기를 다양한 Adobe, 비Adobe 및 타사 애플리케이션과 통합합니다.
 role: Admin, User
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 6%
+source-wordcount: '424'
+ht-degree: 5%
 
 ---
 
@@ -141,3 +141,9 @@ Admin Console을 통해 지원 티켓을 기록하는 단계:
 >
 >로그인 워크플로우를 사용하여 자산 선택기를 통합했지만 여전히 게재 저장소에 액세스할 수 없는 경우 브라우저 쿠키가 정리되었는지 확인하십시오. 그렇지 않으면 콘솔에 `invalid_credentials All session cookies are empty` 오류가 발생합니다.
 
+>[!MORELIKETHIS]
+>
+>* [다양한 응용 프로그램과 자산 선택기 통합](/help/assets/integrate-asset-selector.md)
+>* [자산 선택기 속성](/help/assets/asset-selector-properties.md)
+>* [OpenAPI 기능을 사용하여 Dynamic Media과 자산 선택기 통합](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [자산 선택기 사용자 지정](/help/assets/asset-selector-customization.md)

@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선
 description: 에셋 선택기를 다양한 Adobe, 비Adobe 및 타사 애플리케이션과 통합합니다.
 role: Admin, User
 exl-id: a0c030e2-2213-406b-ad92-4761f1e2ee9f
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '767'
 ht-degree: 8%
 
 ---
@@ -151,5 +151,5 @@ onErrorReceived: (type, msg) => {
 >
 >* [다양한 응용 프로그램과 자산 선택기 통합](/help/assets/integrate-asset-selector.md)
 >* [자산 선택기 속성](/help/assets/asset-selector-properties.md)
->* [자산 선택기 Dynamic Media Open API 통합](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [OpenAPI 기능을 사용하여 Dynamic Media과 자산 선택기 통합](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 >* [자산 선택기 사용자 지정](/help/assets/asset-selector-customization.md)

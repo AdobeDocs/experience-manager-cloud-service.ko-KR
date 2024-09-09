@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선
 description: 에셋 선택기를 사용하여 애플리케이션 내에서 에셋의 메타데이터와 렌디션을 검색, 찾기 및 검색할 수 있습니다.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 35%
+source-wordcount: '1295'
+ht-degree: 34%
 
 ---
 
@@ -219,7 +219,13 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
         <em>사용 편이성에 따라 에셋 선택기의 다양한 구성 요소를 구성하고 사용자 지정합니다. </em>
         </p>
     </td>
-    <td></td>
+    <td>
+        <img src="assets/asset-selector-upload.gif" width="70px" height="70px" alt="자산 선택기 업로드 그래픽"><br/>
+        <a href="asset-selector-upload.md">자산 선택기 사용자 지정</a>
+        <p>
+        <em>로컬 또는 타사 파일 시스템에서 자산 선택기에 파일이나 폴더를 업로드하는 방법을 알아봅니다. </em>
+        </p>
+    </td>
 </tr>
 </table>
 
@@ -228,4 +234,4 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 >* [자산 선택기 사용자 지정](/help/assets/asset-selector-customization.md)
 >* [다양한 응용 프로그램과 자산 선택기 통합](/help/assets/integrate-asset-selector.md)
 >* [자산 선택기 속성](/help/assets/asset-selector-properties.md)
->* [자산 선택기 Dynamic Media Open API 통합](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [OpenAPI 기능을 사용하여 Dynamic Media과 자산 선택기 통합](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
