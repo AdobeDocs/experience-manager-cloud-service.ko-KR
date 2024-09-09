@@ -1,18 +1,18 @@
 ---
-title: Cloud Manager와 함께 git 사용
+title: Cloud Manager과 함께 Git 사용
 description: Cloud Manager의 git 저장소를 사용하는 방법과 자체 On-Premise 고객 관리 git 저장소를 Cloud Manager와 통합하는 방법을 알아봅니다.
 exl-id: 57e71b8a-4546-4d7f-825c-a1637d08e608
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 80206fc1396896fe45e2c959c78a0bf30eba71c5
 workflow-type: tm+mt
 source-wordcount: '309'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
-# Cloud Manager와 함께 git 사용 {#git-integration}
+# Cloud Manager과 함께 Git 사용 {#git-integration}
 
 Adobe Cloud Manager는 Cloud Manager의 CI/CD 파이프라인을 사용하여 코드를 배포하는 데 사용되는 단일 git 저장소와 함께 제공됩니다.
 
@@ -66,6 +66,6 @@ Cloud Manager의 git 저장소를 즉시 사용할 수 있지만 고객 관리 g
 
 ## 추가 리소스 {#additional-resources}
 
-* [GitHub 리소스](https://try.github.io)
+* [GitHub 리소스](https://docs.github.com/en/get-started/getting-started-with-git/set-up-git)
 * [Atlassian Git 튜토리얼](https://www.atlassian.com/git/tutorials/what-is-version-control)
 * [Git 치트 시트](https://education.github.com/git-cheat-sheet-education.pdf)

@@ -4,9 +4,9 @@ description: Edge Delivery Services을 사용하여 Cloud Manager 프로젝트�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4e887b753eaf09e104c68484792f00dcb08ee304
+source-git-commit: bc6ea60abed904ef514a4b010a9848511c28128e
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1503'
 ht-degree: 5%
 
 ---
@@ -75,7 +75,7 @@ AEM as a Cloud Service Sites Edge Delivery Services 라이선스와 계약을 �
 
 프로덕션 프로그램에 Edge Delivery Services을 추가하면 Edge Delivery Services 라이선스가 적용됩니다.
 
-**Edge Delivery**&#x200B;이라는 클릭 가능한 새 탭이 개요 페이지에 표시됩니다. 탭을 클릭하면 추가한 각 Edge Delivery 사이트를 나열하는 테이블이 표시됩니다. 왼쪽 탐색 패널의 **서비스** 그룹화 아래에 **Edge Delivery 사이트**&#x200B;라는 메뉴 옵션이 표시됩니다.
+개요 페이지에 **Edge Delivery**&#x200B;이라는 클릭 가능한 탭이 표시됩니다. 탭을 클릭하면 추가한 각 Edge Delivery 사이트를 나열하는 테이블이 표시됩니다. 왼쪽 탐색 패널의 **서비스** 그룹화 아래에 **Edge Delivery 사이트**&#x200B;라는 메뉴 옵션이 있습니다.
 
 ![왼쪽 탐색 패널 및 Edge Delivery 게재 탭 오른쪽에 있는 Edge Delivery 탭에 Publish 사이트를 표시하는 개요 페이지](/help/implementing/cloud-manager/assets/cm-overview-eds.png)
 
@@ -127,7 +127,7 @@ AEM as a Cloud Service Sites Edge Delivery Services 라이선스와 계약을 �
 | 5 | SSL 인증서 추가 | [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)를 참조하십시오. |
 | 6 | Edge Delivery 사이트의 CDN 구성 | [CDN 구성 추가](#add-cdn)를 참조하십시오. |
 
->[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on) (2 분, 13 초)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Edge Delivery 사이트에 CDN 구성 추가 {#add-cdn}
 

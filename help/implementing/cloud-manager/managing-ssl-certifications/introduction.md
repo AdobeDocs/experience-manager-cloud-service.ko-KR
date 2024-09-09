@@ -5,9 +5,9 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fcde1f323392362d826f9b4a775e468de9550716
+source-git-commit: a9bcbae1317d95e3710a19a79115f1437b418e41
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '745'
 ht-degree: 42%
 
 ---
@@ -27,12 +27,14 @@ Cloud Manager은 SSL(Secure Socket Layer) 인증서를 설치하고 관리하는
 
 <!-- CQDOC-21758, #1 -->
 
-* **사용 사례 1:** Cloud Manager은 플랫폼 TLS(전송 계층 보안) 서비스를 사용하여 *암호화하겠습니다*.
-* **사용 사례 2:** Cloud Manager을 사용하면 빠른 도메인 설정을 위해 Adobe에서 제공되는 DV(도메인 유효성 검사) 인증서를 구성할 수 있습니다. DV 인증서는 가장 기본적인 수준의 SSL 인증서이며 테스트 목적이나 기본 암호화를 사용하는 웹 사이트 보호에 사용되는 경우가 많습니다. DV 인증서는 [프로덕션 및 샌드박스 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)에서 모두 사용할 수 있습니다.
+| | 사용 사례 | 설명 |
+| --- | --- | --- |
+| 1 | **Adobe 관리 인증서(DV)** | Cloud Manager을 사용하면 빠른 도메인 설정을 위해 Adobe에서 제공되는 DV(도메인 유효성 검사) 인증서를 구성할 수 있습니다. DV 인증서는 가장 기본적인 수준의 SSL 인증서이며 테스트 목적이나 기본 암호화를 사용하는 웹 사이트 보호에 사용되는 경우가 많습니다. DV 인증서는 [프로덕션 및 샌드박스 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)에서 모두 사용할 수 있습니다. |
+| 2 | **고객 관리 인증서(OV/EV)** | Cloud Manager은 플랫폼 TLS(전송 계층 보안) 서비스를 사용하여 *암호화하겠습니다*. |
 
-  >
-  >
-  >고객은 DV(도메인 유효성 검사) 인증서를 업로드할 수 없습니다.
+>[!NOTE]
+>
+>고객은 DV(도메인 유효성 검사) 인증서를 업로드할 수 없습니다.
 
 
 ## 인증서 소개 {#certificates}
