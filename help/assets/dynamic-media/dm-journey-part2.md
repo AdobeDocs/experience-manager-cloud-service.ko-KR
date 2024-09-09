@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
 workflow-type: tm+mt
-source-wordcount: '2677'
+source-wordcount: '2621'
 ht-degree: 0%
 
 ---
@@ -212,15 +212,18 @@ _플라이아웃 뷰어가 적용된 `Running` 이미지 집합입니다._
 
 방금 읽은 내용에 대해 자세히 알아보려면 아래 자료를 사용하여 개념을 자세히 살펴보십시오. 그렇지 않으면 Dynamic Media 여정이 완료된 것입니다!
 
-_Dynamic Media 도움말 항목_
+{{see-also-dm}}
 
-* [이미지 사전 설정을 만드는 방법](/help/assets/dynamic-media/image-presets.md)
-* 이미지 사전 설정을 만들 때 Image Modifier 필드에서 사용할 수 있는 [이미지 처리 매개 변수](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) 목록입니다
-* [에셋 미리보기 방법](/help/assets/dynamic-media/previewing-assets.md)
-* [3D 에셋 미리보기 방법](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [이미지 집합을 만드는 방법](/help/assets/dynamic-media/image-sets.md)
-* [회전 집합을 만드는 방법](/help/assets/dynamic-media/spin-sets.md)
-* [혼합 미디어 세트를 만드는 방법](/help/assets/dynamic-media/mixed-media-sets.md)
+<!--
+_Dynamic Media Help topics_
+
+* [How to create image presets](/help/assets/dynamic-media/image-presets.md)
+* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) that you can use in the Image Modifier field when you create an image preset
+* [How to preview assets](/help/assets/dynamic-media/previewing-assets.md)
+* [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [How to create Image sets](/help/assets/dynamic-media/image-sets.md)
+* [How to create Spin sets](/help/assets/dynamic-media/spin-sets.md)
+* [How to create Mixed Media sets](/help/assets/dynamic-media/mixed-media-sets.md) -->
 
 _Dynamic Media 자습서_
 

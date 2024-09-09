@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
 workflow-type: tm+mt
-source-wordcount: '3674'
+source-wordcount: '3615'
 ht-degree: 0%
 
 ---
@@ -268,18 +268,20 @@ _선택한 &quot;ZoomVertical_light&quot; 뷰어 사전 설정을 기반으로 �
 
 이 여정의 1부는 다양한 Dynamic Media 주제의 기본 사항을 다룹니다. 읽은 내용에 대해 자세히 알아보려면 아래 자료를 사용하여 개념을 자세히 살펴보십시오. 그렇지 않으면 여정 2부를 계속 진행할 수 있습니다. [이 Dynamic Media 여정의 다음 단계](#whats-next)를 참조하세요.
 
-_Dynamic Media 도움말 항목_
+{{see-also-dm}}
+<!--
+_Dynamic Media Help topics_
 
-* [Experience Manager에서 Dynamic Media 작업](/help/assets/dynamic-media/dynamic-media.md)
-* [스마트 이미징 기본 정보](/help/assets/dynamic-media/imaging-faq.md)
-* [응용 비디오 세트를 만드는 방법](/help/assets/dynamic-media/video.md)
-* [이미지 품질 최적화 모범 사례](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
-* [에셋 업로드 방법](/help/assets/add-assets.md#upload-assets)
-* [에셋 미리보기 방법](/help/assets/dynamic-media/previewing-assets.md)
-* [3D 에셋 미리보기 방법](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [Dynamic Media Assets 제공 방법](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
-* [자산을 게시하는 방법](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
-* [Dynamic Media의 선택적 게시를 사용하여 작업](/help/assets/dynamic-media/selective-publishing.md)
+* [Work with Dynamic Media in Experience Manager](/help/assets/dynamic-media/dynamic-media.md)
+* [About Smart Imaging](/help/assets/dynamic-media/imaging-faq.md)
+* [How to create Adaptive Video Sets](/help/assets/dynamic-media/video.md)
+* [Best practices for optimizing the quality of your images](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
+* [How to upload assets](/help/assets/add-assets.md#upload-assets)
+* [How to preview assets](/help/assets/dynamic-media/previewing-assets.md)
+* [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [How to deliver Dynamic Media Assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
+* [How to publish assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+* [Work with Selective Publish in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md) -->
 
 _Dynamic Media 자습서_
 
