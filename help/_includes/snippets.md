@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 11368914a78c1f47c2f341a112bf981545cf6203
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 74%
+source-wordcount: '993'
+ht-degree: 69%
 
 ---
 # 스니펫 {#snippets}
@@ -161,3 +161,23 @@ ht-degree: 74%
 >[!TIP]
 >
 >Dynamic Media을 처음 사용하십니까? Dynamic Media에 대한 빠른 개요 및 높은 수준의 개요를 보려면 [Dynamic Media 작업](/help/assets/dynamic-media/dynamic-media.md)을 참조하세요.
+
+## Dynamic Media 관련 항목 참조 {#see-also-dm}
+
+>[!NOTE]
+>
+>* Dynamic Media을 처음 사용하십니까? Dynamic Media에 대한 빠른 개요 및 높은 수준의 개요를 보려면 [Dynamic Media 작업](/help/assets/dynamic-media/dynamic-media.md)을 참조하세요.
+>
+>* [Dynamic Media 우수 사례](/help/assets/dynamic-media/dm-best-practices.md)를 따라 값을 최대한 활용하십시오.
+>
+>* [스냅숏 도구](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot)로 Dynamic Media 이미지 기능을 사용해 보세요.
+>
+>* [응용 비디오](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash)를 사용하여 비디오가 원활하게 재생되는지 확인하십시오.
+>
+>* 스마트 자르기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)로 [이미지 자르기 자동화
+>
+>* 스마트 자르기로 [비디오 자르기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video)를 자동화합니다.
+>
+>* [대화형 3D 기반 경험](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video)을 제공합니다.
+>* 다른 [Dynamic Media 리소스 은행](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
+
