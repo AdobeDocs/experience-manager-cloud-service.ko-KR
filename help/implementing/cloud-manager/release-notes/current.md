@@ -3,10 +3,11 @@ title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2024.9.0 릴
 description: AEM as a Cloud Service의 Cloud Manager 2024.9.0 릴리스 정보에 대해 알아봅니다.
 feature: Release Information
 role: Admin
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
+source-git-commit: 610ae004b6da2f7fc0dae2baa613cb363fe9fb00
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 22%
+source-wordcount: '367'
+ht-degree: 20%
 
 ---
 
@@ -32,9 +33,17 @@ AEM as a Cloud Service의 Cloud Manager 2024.9.0 릴리스 일자는 2024년 9�
 
   이제 Cloud Manager을 사용하여 [DV(도메인 유효성 검사) SSL 인증서를 생성하고 관리하는 셀프서비스 Adobe](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)을 할 수 있습니다. 이 기능은 온라인 조직 또는 비즈니스를 위한 안전한 웹 사이트를 만들 수 있는 가장 빠르고 쉽고 비용 효율적인 솔루션을 제공합니다. <!-- CMGR-52403 -->
 
+  >[!NOTE]
+  >
+  >[Content Hub](/help/assets/product-overview.md) 고객은 점진적 롤아웃의 일부로 이 기능을 단계적으로 받을 예정입니다.
+
 * Cloud Manager에서 **Edge Delivery Services 지원:**
 
   AEM Sites의 일부로 Edge Delivery Services 라이선스가 있는 경우 [이제 Cloud Manager을 통해 직접 Edge Delivery Services을 통해 사이트를 온보딩할 수 있습니다](/help/implementing/cloud-manager/edge-delivery-services.md). 이 기능을 사용하면 셀프 서비스 Go-Live 경험을 안내할 수 있습니다. 또한 모든 AEM 속성에서 도메인 이름 관리, SSL 인증서 및 CDN 매핑과 같은 필수 워크플로우를 통합하여 일관성과 효율성을 보장합니다. <!-- CMGR-49859 -->
+
+  >[!NOTE]
+  >
+  >[Content Hub](/help/assets/product-overview.md) 고객은 점진적 롤아웃의 일부로 이 기능을 단계적으로 받을 예정입니다.
 
 * GitHub 저장소를 사용하는 고객은 이제 웹 계층 구성 파이프라인을 만들고 사용할 수 있습니다. <!--( KEEP IN? SP: YES CMGR-59046 and Slack https://cq-dev.slack.com/archives/C07LFP5BZ2L/p1725407057847379 ) -->
 
