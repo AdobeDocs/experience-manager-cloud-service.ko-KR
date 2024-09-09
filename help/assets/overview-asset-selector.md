@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선
 description: 에셋 선택기를 사용하여 애플리케이션 내에서 에셋의 메타데이터와 렌디션을 검색, 찾기 및 검색할 수 있습니다.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
+source-git-commit: 0b8c345efa4c8f59b423644944ca2a6f8d54cbb4
 workflow-type: tm+mt
 source-wordcount: '1295'
 ht-degree: 34%
@@ -221,7 +221,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
     </td>
     <td>
         <img src="assets/asset-selector-upload.gif" width="70px" height="70px" alt="자산 선택기 업로드 그래픽"><br/>
-        <a href="asset-selector-upload.md">자산 선택기 사용자 지정</a>
+        <a href="asset-selector-upload.md">자산 선택기 업로드</a>
         <p>
         <em>로컬 또는 타사 파일 시스템에서 자산 선택기에 파일이나 폴더를 업로드하는 방법을 알아봅니다. </em>
         </p>
