@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management, Connected Assets, Asset Distribution
 role: Admin, User, Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 638b18beb5202ec34c1957a74d5b293236c2cf4e
 workflow-type: tm+mt
-source-wordcount: '3842'
+source-wordcount: '3869'
 ht-degree: 13%
 
 ---
@@ -22,6 +22,10 @@ ht-degree: 13%
 | AEM as a Cloud Service | 이 문서 |
 
 대기업에서는 웹 사이트를 구축하는 데 필요한 인프라를 배포할 수 있습니다. 이러한 웹 사이트를 만드는 데 사용되는 웹 사이트 제작 기능과 디지털 자산이 서로 다른 배포에 있을 수 있습니다. 함께 작업하는 데 필요한 기존 배포가 지리적으로 분산되는 이유 중 하나가 될 수 있습니다. 또 다른 이유는 모회사가 함께 사용하려는 다른 [!DNL Experience Manager] 버전을 포함하여 형식이 다른 인프라로 이어지는 획득일 수 있습니다.
+
+>[!NOTE]
+>
+>AdobeDynamic Media 는 OpenAPI 기능과 함께 AEM Assets as a Cloud Service 및 AEM Sites을 연결하는 데 활용할 것을 권장합니다. [AEM Sites과 원격 AEM Assets 통합](/help/assets/integrate-remote-approved-assets-with-sites.md)을 참조하십시오.
 
 연결된 Assets 기능은 [!DNL Experience Manager Sites]과(와) [!DNL Experience Manager Assets]을(를) 통합하여 위의 사용 사례를 지원합니다. 사용자는 별도의 [!DNL Assets] 배포의 디지털 자산을 사용하는 웹 페이지를 [!DNL Sites]에서 만들 수 있습니다.
 
@@ -114,9 +118,9 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
 
    1. [!DNL Sites] 배포에서 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로]** > **[!UICONTROL 런처]**&#x200B;를 클릭합니다.
 
-   1. **[!UICONTROL DAM 자산 업데이트]** 및 **[!UICONTROL DAM 메타데이터 원본에 쓰기]**&#x200B;로 워크플로우를 사용하여 런처를 검색합니다.
+   1. **[!UICONTROL DAM 자산 업데이트]** 및 **[!UICONTROL DAM 메타데이터 원본에 쓰기]**&#x200B;로 워크플로를 사용하여 런처를 검색합니다.
 
-   1. 워크플로우 런처를 선택하고 작업 표시줄에서 **[!UICONTROL 속성]**&#x200B;을 클릭합니다.
+   1. 워크플로 런처를 선택하고 작업 표시줄에서 **[!UICONTROL 속성]**&#x200B;을 클릭합니다.
 
    1. [!UICONTROL 속성] 마법사에서 **[!UICONTROL 경로]** 필드를 다음 매핑으로 변경하여 마운트 지점 **[!UICONTROL connectedassets]**&#x200B;을(를) 제외하도록 정규식을 업데이트합니다.
 
@@ -323,7 +327,7 @@ Experience Manager은 사이트 작성자가 사이트 페이지에서 자산을
 ### 권한 및 자산 관리 {#permissions-and-managing-assets}
 
 * 로컬 자산은 읽기 전용 복사본입니다. [!DNL Experience Manager]개의 구성 요소가 자산을 원본에 영향을 주지 않고 편집합니다. 다른 편집 작업은 허용되지 않습니다.
-* 로컬로 가져온 자산은 작성용으로만 사용할 수 있습니다. 자산 업데이트 워크플로우를 적용할 수 없고 메타데이터를 편집할 수 없습니다.
+* 로컬로 가져온 자산은 작성용으로만 사용할 수 있습니다. 자산 업데이트 워크플로를 적용할 수 없고 메타데이터를 편집할 수 없습니다.
 * [!DNL Sites] 페이지에서 [!DNL Dynamic Media]을(를) 사용하는 경우 원본 자산을 가져오지 않고 로컬 배포에 저장됩니다. [!DNL Assets] 배포에서 생성된 `dam:Asset` 노드, 메타데이터 및 렌디션을 모두 [!DNL Sites] 배포에서 가져옵니다.
 * 이미지 및 나열된 문서 형식만 지원됩니다. [!DNL Content Fragments] 및 [!DNL Experience Fragments]은(는) 지원되지 않습니다.
 * [!DNL Experience Manager]이(가) 메타데이터 스키마를 가져오지 않습니다. 즉, 가져온 모든 메타데이터가 표시되지 않을 수 있습니다. 스키마가 [!DNL Sites] 배포에서 별도로 업데이트되면 모든 메타데이터 속성이 표시됩니다.
