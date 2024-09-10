@@ -4,9 +4,9 @@ description: Edge Delivery Services을 사용하여 Cloud Manager 프로젝트�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc6ea60abed904ef514a4b010a9848511c28128e
+source-git-commit: dda5444ccfced079125c358f65f0dae43293ae55
 workflow-type: tm+mt
-source-wordcount: '1503'
+source-wordcount: '1502'
 ht-degree: 5%
 
 ---
@@ -71,7 +71,7 @@ AEM as a Cloud Service Sites Edge Delivery Services 라이선스와 계약을 �
 * SLA 보고에 액세스(*곧 제공*) <!-- ADD LINK TO IT WHEN FINALLY ADDED -->
 * Adobe 지원을 받습니다. Adobe의 적절한 인식 및 지원을 위해 Cloud Manager의 프로덕션 프로그램을 통해 Edge Delivery Services 사이트가 등록되었는지 확인하십시오.
 
-## Edge Delivery Services 사이트 추가 {#eds-add-site}
+## Edge Delivery 사이트 추가 {#eds-add-site}
 
 프로덕션 프로그램에 Edge Delivery Services을 추가하면 Edge Delivery Services 라이선스가 적용됩니다.
 
