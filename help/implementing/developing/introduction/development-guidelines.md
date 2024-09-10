@@ -4,10 +4,10 @@ description: AEM as a Cloud Service 개발에 대한 지침과 AMS의 AEM On-Pre
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: ea631743af99879d2a76d3a4a78ecf5883f39c69
 workflow-type: tm+mt
-source-wordcount: '2745'
-ht-degree: 4%
+source-wordcount: '2770'
+ht-degree: 3%
 
 ---
 
@@ -181,6 +181,9 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 >[!NOTE]
 >AEM as a Cloud Service Developer Console을 비슷한 이름의 [*Adobe Developer Console*](https://developer.adobe.com/developer-console/)와 혼동하면 안 됩니다.
 >
+
+>[!NOTE]
+>일부 고객은 AEM Cloud Service Developer Console을 위해 향상된 환경을 시도할 수 있습니다. 자세한 내용은 [이 문서](/help/implementing/developing/introduction/developer-console.md)을(를) 참조하십시오.]
 
 고객은 작성 계층의 개발 환경에서 CRXDE lite에 액세스할 수 있지만, 스테이지나 프로덕션 환경에서는 액세스할 수 없습니다. 변경할 수 없는 저장소(`/libs`, `/apps`)를 런타임에 쓸 수 없으므로 이 작업을 시도하면 오류가 발생합니다.
 
