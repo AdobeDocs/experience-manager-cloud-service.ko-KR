@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: eb01b6982578ad1300163c2fd536e844afc815fa
+source-git-commit: 9323464610b804ff407f5eedf404ab2cca93a8da
 workflow-type: tm+mt
-source-wordcount: '736'
-ht-degree: 45%
+source-wordcount: '572'
+ht-degree: 40%
 
 ---
 
@@ -16,75 +16,60 @@ ht-degree: 45%
 
 다음 섹션에서는 Experience Manager as a Cloud Service 현재 유지 관리 릴리스의 기술 릴리스 정보에 대해 간략히 소개합니다.
 
-## 릴리스 17569 {#release-17569}
+## 릴리스 17689 {#release-17689}
 
-다음은 2024년 8월 27일에 공개적으로 릴리스된 유지 보수 릴리스 17569에 대한 지속적인 개선 사항을 요약합니다. 이전 유지 관리 릴리스는 릴리스 17465.
+다음은 2024년 9월 10일에 공개적으로 릴리스된 유지 보수 릴리스 17689에 대한 지속적인 개선 사항을 요약합니다. 이전 유지 관리 릴리스는 릴리스 17569.
 
 2024.9.0 기능 활성화는 이 유지 관리 릴리스에 대한 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
 
-### 개선 사항 {#enhancements-17569}
+### 개선 사항 {#enhancements-17689}
 
-* CQ-4353778: 번역 프로세스 이벤트.
-* CQ-4354583: Adobe 파이프라인을 통해 번역 프로세스 이벤트를 보냅니다.
-* CQ-4356479: Adobe 코드에서만 /adobe 서블릿 컨텍스트를 사용할 수 있습니다.
-* CQ-4358226: 번역 키워드 저장 기능이 특정 문자열 형식에 대해 작동하지 않습니다.
-* CQ-4358270: AEM 번역 키트: 8월 08일
-* CQ-4358310: quickstart에 oak-compat-query-spi-1.2를 추가합니다.
-* GRANITE-49833: 이벤트 발신자 및 프록시에 대한 일괄 처리 지원.
-* GRANITE-52053: Commons Collections 사용 제거 3: Platform 기타.
-* GRANITE-52492: PIT 복원 시 Elastic async catchup.
-* GRANITE-53099: Apache Felix Http Jetty 5.1.24로 업데이트합니다.
-* GRANITE-53125: CloudEvent에 분류를 추가합니다.
-* GRANITE-53328: 스태싱 로깅 개선 사항이 포함된 3.8.0-T20240726111512-3cc11d50으로 Filevault를 업데이트합니다.
-* GRANITE-53453: commons-lang을 3.15.0으로 업데이트합니다.
-* GRANITE-53478: Filevault를 버전 3.8.0으로 업데이트합니다.
-* GRANITE-53505: QS를 commons-collections-3.2.2-adobe-2로 업데이트합니다.
-* GRANITE-53528: 플랫폼 아티팩트의 버전을 업데이트합니다 .
-* GRANITE-53547: Apache Commons Lang 2의 사용을 피하는 대체 API를 제공합니다.
-* GRANITE-53575: CS에서 BSAFE 6.2.5를 사용하십시오.
-* GRANITE-53608: Oak을 최신 공개 릴리스(1.68.0)로 업데이트합니다.
-* SITES-23583: Java 17에서 사이트 에버그린 테스트가 실패합니다.
-* SKYOPS-79535: Rum 스크립트 v2로 업데이트합니다.
-* SKYOPS-79816: FACT의 서비스 사용자 매핑에 대해 Sling 기능 분석기 작업을 활성화합니다.
-* SKYOPS-81179: AEM은 번들을 전환하기 위한 테스트를 빌드합니다.
-* SKYOPS-81866: Java 21과 호환되지 않는 것으로 알려진 번들에 대한 경고를 보고합니다.
-* SKYOPS-82660: Sling API를 2.27.6으로 업데이트합니다.
-* SKYOPS-82961: Sling ResourceResolver 1.12.0-T20240723153354-a0270a0으로 업데이트합니다.
-* SKYOPS-83356: AEM 배포에 사용되는 JVM 버전을 추적하기 위한 전역 대시보드를 만듭니다.
-* SKYOPS-83436: Java Runtime 21 롤아웃은 적응형 양식 AEM Forms 생성을 중단합니다.
-* SKYOPS-84272: AEM 런처 시작에 사용되는 Java 버전을 기록합니다.
+* ASSETS-41404: DRM 개선 사항을 지원하도록 변경되었습니다.
+* ASSETS-41621: 비동기 자산 복사 작업이 업데이트되었습니다.
+* ASSETS-32166: 비동기 자산 이동 작업이 업데이트되었습니다.
+* ASSETS-41429: DM OpenAPI에서 이미지 사전 설정이 지원됩니다.
+* ASSETS-38968: 콘텐츠 조각 참조의 표현을 개선합니다.
+* ASSETS-41787, ASSETS-41183: Assets 대량 작업 프레임워크 개선 사항.
+* GRANITE-52917: 콘텐츠 복사 패키지 설치 시간을 개선하기 위해 최적화되었습니다.
+* SCRNS-3980: 자산이 예약되지 않은 하위 시퀀스가 있는 플레이어에서 회색 화면을 감지합니다.
 
-### 해결된 문제 {#fixed-issues-17569}
+### 해결된 문제 {#fixed-issues-17689}
 
-* CMGR-60225: AEM 릴리스 정보에 대한 업데이트를 확인하는 동안 AEM Sites CS 고객에서 파이프라인 실행 오류가 17486.
-* GRANITE-45919: 사용자 설정 편집의 국가/지역 목록에 수출 금지 국가가 있습니다.
-* GRANITE-51715: 선택기가 텍스트 필드에 선택 항목을 입력하지 않는 경우가 있습니다.
-* GRANITE-53290: XSS 검사에서 URL을 구문 분석할 때 프로토콜을 올바르게 확인합니다.
-* GRANITE-53576: OSGi 구성에서 서비스 순위 정의가 잘못되었습니다.
-* SKYOPS-82129: Sling 모델의 Memoryleak.
+* ASSETS-40875: AssetDeleteHandler에 의해 기록된 가짜 NPE.
+* ASSETS-42422: 단일 자산 이동에 대해 비동기 작업을 트리거하지 마십시오.
+* ASSETS-41234: 검색 창을 열면 통합 셸 - 전역 탐색이 작동하지 않을 수 있습니다.
+* ASSETS-42256: 통합 쉘 - 환경을 나타내는 태그/배지는 간헐적으로 작동합니다.
+* ASSETS-41271: 이동 작업 중에 Assets을 불필요하게 다시 게시하지 마십시오.
+* ASSETS-38894: 처리 감시기별로 재시도를 제한합니다.
+* ASSETS-40815: PDF 공유 UI에서 PPT 파일을 표시하기 위해 미리 보기 링크 표현물을 사용합니다.
+* ASSETS-37123: 링크 공유 대화 상자에서 에셋 미리보기를 로드할 수 없습니다.
+* CQ-4358156: 삭제 중인 태그의 백링크를 업데이트합니다.
+* SCRNS-4495: 고정 붙여넣기 단추가 다른 사용자 그룹에 대해 제대로 작동하지 않습니다.
+* SCRNS-4512: AEMaaCS 화면에서 장치와 관련된 구성 요소를 제거합니다.
+* SCRNS-4466: 채널 대시보드에서 숨기기 - 매니페스트 보기, 오프라인 콘텐츠 생성, 매니페스트 캐시 업데이트, 디스플레이 패널.
+* SCRNS-4513: 목록 보기의 검색 결과 페이지에 대한 열 헤더를 추가합니다.
 
-### 알려진 문제 {#known-issues-17569}
+### 알려진 문제 {#known-issues-17689}
 
-* ASSETS-40875 - AssetDeleteHandler 클래스는 자산 삭제 이벤트를 수신하고 삭제 이벤트 유형(PRE_DELETE 또는 POST_DELETE)에 따라 특정 작업을 수행합니다. 특정 시나리오에서는 POST_DELETE 유형의 이벤트로 인해 NullPointerException이 발생합니다.
-* FORMS-14340 - FormsAndDocumentOmniSearchHandler 및 CloudStorageSubmitActionInserter를 인스턴스화하는 도중 오류가 발생했습니다. 이는 해를 미치지 않는 로그 구문입니다.
-* FORMS-15818 - 구성 요소 설명자 항목 &#39;OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml&#39; 이 서버 로그에서 구문을 찾을 수 없습니다. 이는 해를 미치지 않는 로그 구문입니다.
-* SITES-23662 - 게시를 트리거하는 사용자를 서버 로그의 JCR 로그 구문에서 추출할 수 없습니다. 이는 로그에 간헐적이고 해를 미치지 않는 “일괄 OSGI 이벤트에서 유효한 사용자 ID를 찾을 수 없습니다.”라는 오류가 발생할 수 있는 개발 중인 기능에 대한 것입니다.
+* FORMS-14340: FormsAndDocumentOmniSearchHandler 및 CloudStorageSubmitActionInserter를 인스턴스화하는 동안 오류가 발생했습니다. 이는 해를 미치지 않는 로그 구문입니다.
+* FORMS-15818: 구성 요소 설명자 항목 &#39;OSGI-INF/com.adobe.aemfd.docmanager.impl.서버 로그에서 *.xml&#39; 구문을 찾을 수 없습니다. 이는 해를 미치지 않는 로그 구문입니다.
+* SITES-23662: 게시를 트리거하는 사용자는 서버 로그의 JCR 로그 문에서 추출할 수 없습니다. 이는 개발 중인 기능으로 인해 로그에 &quot;OSGI 이벤트 일괄 처리에서 유효한 사용자 ID를 찾을 수 없음&quot; 오류가 발생하고 안전할 수 있습니다.
 
-### 변경 사항 공지 {#change-notice-17569}
+### 변경 사항 공지 {#change-notice-17689}
 
 * 2024년 9월부터 AEM as a Cloud Service는 Sling Model Exporter 프레임워크를 통해 Resource Resolver의 직렬화를 비활성화합니다. 자세한 내용은 [설명서](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)를 참조하십시오.
 
-### 사용 중단된 기능 및 API {#deprecated-17569}
+### 사용 중단된 기능 및 API {#deprecated-17689}
 
 현재 `com.day.cq.wcm.api` 업데이트가 진행 중이며, 현재 릴리스에서는 몇 가지 메서드와 클래스를 `@Deprecated`로 표시했습니다. 이러한 기능은 향후 릴리스에서 제거될 예정이므로, 해당 기능을 사용 중이라면 제안된 대체 기능으로 전환하는 것을 고려해 보시기 바랍니다.
 
 AEM as a Cloud Service에서 더 이상 사용되지 않는 기능과 API는 [사용 중단된 기능 및 API](/help/release-notes/deprecated-removed-features.md) 문서에 자세히 설명되어 있습니다.
 
-### 보안 수정 {#security-17569}
+### 보안 수정 {#security-17689}
 
 AEM as a Cloud Service는 플랫폼의 보안 및 성능을 최적화하는 데 사용됩니다. 이 유지 관리 릴리스는 4가지 식별된 취약점을 해결하여 강력한 시스템 보호에 대한 약속을 강화합니다.
 
-### 임베드된 기술 {#embedded-tech-17569}
+### 임베드된 기술 {#embedded-tech-17689}
 
 | 기술 | 버전 | 링크 |
 |---|---|---|

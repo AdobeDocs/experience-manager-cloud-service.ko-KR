@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 9cc49bf83d278d4064faa1d0157201226a067cb1
+source-git-commit: 99a36bab3ca8d5e6a64e1fdb9c179cf8a3190a14
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 51%
+source-wordcount: '1166'
+ht-degree: 50%
 
 ---
 
@@ -34,13 +34,11 @@ ht-degree: 51%
 
 [ 여기](/help/release-notes/maintenance/latest.md)에서 최신 유지 관리 릴리스 정보를 확인할 수 있습니다.
 
-<!-- ## Release Video {#release-video}
+## 릴리스 비디오 {#release-video}
 
-Have a look at the August 2024 Release Overview video for a summary of the features added in the 2024.8.0 release:
+2024년 8월 릴리스 개요 비디오를 통해 2024.8.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3431707?quality=12)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3433381?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
