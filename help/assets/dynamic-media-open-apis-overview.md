@@ -3,9 +3,9 @@ title: OpenAPI 기능이 포함된 Dynamic Media
 description: OpenAPI 기능과 함께 Dynamic Media을 사용하는 이유 및 활성화 방법과 같은 주요 개념을 알아봅니다.
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: 1041769d4c1efa4465745a85df65c803939b472b
+source-git-commit: 6199a8ae0033feee0c1bee4e4c50e19cd55c805c
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1062'
 ht-degree: 1%
 
 ---
@@ -62,7 +62,7 @@ AEM as a Cloud Service에서 OpenAPI 기능을 사용하는 Dynamic Media을 활
 
   >[!NOTE]
   >
-  > Adobe이 아닌 애플리케이션과 통합하려면 애플리케이션이 호스팅되는 화이트리스트에 도메인 이름을 제공하십시오.
+  > Adobe이 아닌 애플리케이션과 통합하려면 애플리케이션이 호스팅된 허용 목록에 도메인 이름을 제공하십시오.
 
 * 통합 프로젝트와 관련된 주요 고객 연락처 세부 정보.
 
