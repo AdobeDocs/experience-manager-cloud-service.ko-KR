@@ -4,9 +4,9 @@ description: AEM 관리 CDN을 사용하는 방법과 자체 CDN을 AEM 관리 C
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
+source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1607'
 ht-degree: 11%
 
 ---
@@ -35,8 +35,10 @@ Edge Delivery Services 계층에 게시하려는 고객은 Adobe의 관리 CDN�
 Cloud Manager의 셀프서비스 UI를 통해 AEM의 기본 제공 CDN을 사용하여 컨텐츠 전달을 준비하려면 Adobe의 관리 CDN 기능을 활용할 수 있습니다. 이 기능을 사용하면 DV(도메인 유효성 검사) 또는 EV/OV(확장/조직 유효성 검사) 인증서와 같은 SSL 인증서 구성 및 설치를 포함하여 셀프서비스 CDN 관리를 처리할 수 있습니다. 이러한 메서드에 대한 자세한 내용은 다음을 참조하십시오.
 
 * [SSL 인증서 관리](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+* [CDN 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
 * [사용자 정의 도메인 이름 관리](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 * [Cloud Manager에서의 Edge Delivery Services 지원](/help/implementing/cloud-manager/edge-delivery-services.md)
+
 
 **트래픽 제한**
 

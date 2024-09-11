@@ -4,13 +4,13 @@ description: Edge Delivery 사이트 또는 Cloud Manager 환경에 대한 CDN �
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: e57a6ceb2482e61acabe928da0f539d26989985c
+exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
+source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 8%
 
 ---
-
 
 # CDN 구성 추가 {#add-cdn}
 
@@ -41,7 +41,3 @@ SSL을 사용하여 도메인을 구성하려면 CDN 구성 추가를 완료해�
    * SSL 인증서를 선택합니다. **Adobe 관리 CDN**&#x200B;을(를) CDN 유형으로 선택한 경우에만 필요합니다.
 
 1. **저장**&#x200B;을 클릭합니다.
-
-
-
-

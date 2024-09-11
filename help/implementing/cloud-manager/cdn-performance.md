@@ -5,9 +5,9 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '384'
 ht-degree: 4%
 
 ---
@@ -68,11 +68,11 @@ Cache Hit Ratio = Cache Hits / (Hits + Misses + Passes + Other)
 
 * **히트** - 캐시에서 데이터가 요청되었으며 검색되었습니다.
 * **Miss** - 캐시에서 데이터를 요청했지만 찾을 수 없습니다.
-* **통과** - 캐시에서 데이터가 요청되며 어떤 경우에도 이 데이터를 캐싱하지 않도록 설정됩니다.
+* **전달** - 캐시에서 데이터가 요청되었으며 어떤 경우에도 이 데이터를 캐시하지 않도록 설정되었습니다.
 * **기타** - 캐시의 모든 데이터 요청이 다른 사례와 일치하지 않습니다.
 
 캐시 지표는 24시간마다 업데이트됩니다.
 
 >[!TIP]
 >
->Cloud Manager 및 CDN이 Dispatcher과 상호 작용하는 방법에 대한 자세한 내용은 [AEM as a Cloud Service의 캐싱](/help/implementing/dispatcher/caching.md) 문서를 참조하십시오.
+>Cloud Manager 및 CDN이 Dispatcher과 상호 작용하는 방법에 대한 자세한 내용은 [AEM as a Cloud Service의 캐싱](/help/implementing/dispatcher/caching.md)을 참조하십시오.

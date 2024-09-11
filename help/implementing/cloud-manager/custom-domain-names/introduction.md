@@ -5,9 +5,9 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4e887b753eaf09e104c68484792f00dcb08ee304
+source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '705'
 ht-degree: 47%
 
 ---
@@ -38,7 +38,7 @@ Adobe Experience Manager as a Cloud Service는 `*.adobeaemcloud.com`으로 끝�
 
 ## 사용자 정의 도메인 이름 및 고유한 CDN 가져오기 {#byo-cdn}
 
-AEM as a Cloud Service은 내장된 콘텐츠 전송 네트워크(CDN) 서비스를 제공하며 AEM에서 사용할 BYO(Bring Your Own) CDN도 사용할 수 있습니다. 사용자 정의 도메인은 AEM 관리 CDN 또는 자체 관리 CDN에 설치할 수 있습니다.
+AEM as a Cloud Service은 내장된 CDN(Content Delivery Network) 서비스를 제공하지만 AEM에서 사용할 BYO(Bring Your Own) CDN을 사용할 수도 있습니다. 사용자 정의 도메인은 AEM 관리 CDN 또는 자체 관리 CDN에 설치할 수 있습니다.
 
 * Cloud Manager은 AEM 관리 CDN에 설치된 사용자 정의 도메인 이름과 인증서를 관리합니다.
 * BYO CDN에 설치된 사용자 정의 도메인 이름과 인증서는 해당 CDN 내에서 직접 관리됩니다.
@@ -52,13 +52,12 @@ AEM as a Cloud Service은 내장된 콘텐츠 전송 네트워크(CDN) 서비스
 사용자 정의 도메인 이름을 추가하려면 DNS 서비스와 Cloud Manager 간의 상호 작용이 필요합니다. 이 워크플로우로 인해 사용자 정의 도메인 이름을 설치, 구성 및 확인하는 데 여러 단계가 필요합니다. 다음 표는 이러한 단계를 완료하는 데 필요한 설명서 리소스에 대한 링크를 포함하여 필요한 단계에 대한 개요를 제공합니다.
 
 | 단계 | 설명 | 설명서 |
-|---|---|---|
+| --- | --- | --- |
 | 1 | Cloud Manager에 SSL 인증서 추가 | [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
 | 2 | Cloud Manager에 사용자 정의 도메인 추가 | [사용자 지정 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 3 | TXT 레코드를 추가하여 도메인 확인 | [TXT 레코드 추가](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
+| 3 | AEM as a Cloud Service를 가리키는 DNS CNAME 또는 APEX 레코드를 추가하여 DNS 설정 구성 | [사용자 지정 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
 | 4 | 도메인 확인 상태 검토 | [도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 5 | AEM as a Cloud Service를 가리키는 DNS CNAME 또는 APEX 레코드를 추가하여 DNS 설정 구성 | [DNS 설정 구성](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) |
-| 6 | DNS 레코드 상태 확인 | [DNS 레코드 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+| 5 | DNS 레코드 상태 확인 | [DNS 레코드 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]
 >
