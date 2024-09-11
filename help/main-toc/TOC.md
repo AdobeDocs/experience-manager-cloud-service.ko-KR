@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 26225938ff525a782314820f32f28c5af98c3669
+source-git-commit: 9ffec422ec4b5a45962f07142c49a466e8892754
 workflow-type: tm+mt
-source-wordcount: '5598'
-ht-degree: 95%
+source-wordcount: '5602'
+ht-degree: 93%
 
 ---
 
@@ -1066,6 +1066,8 @@ ht-degree: 95%
    + [변형 생성](/help/generative-ai/generate-variations.md)
 + 구현 {#implementing}
    + [AEM as a Cloud Service용 애플리케이션 구현](/help/implementing/home.md)
+
+
    + Cloud Manager 사용 {#using-cloud-manager}
       + [탐색](/help/implementing/cloud-manager/navigation.md)
       + 프로그램 {#programs}
@@ -1075,7 +1077,7 @@ ht-degree: 95%
          + [샌드박스 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
          + [샌드박스 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [프로그램 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
-         + [환경 절전 모드 설정](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
+         + [환경 최대 절전 모드](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + AEM 애플리케이션 프로젝트 만들기 {#create-application-project}
          + [프로젝트 제작 마법사](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [프로젝트 설정](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
@@ -1085,10 +1087,10 @@ ht-degree: 95%
          + [Maven 프로젝트 버전 처리](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Cloud Manager에서 저장소 관리](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Adobe 저장소 추가](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
-         + [비공개 저장소 추가](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+         + [개인 저장소 추가](/help/implementing/cloud-manager/managing-code/private-repositories.md)
          + [저장소 액세스](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [git 하위 모듈 지원](/help/implementing/cloud-manager/managing-code/git-submodules.md)
-         + [Cloud Manager와 함께 git 사용](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
+         + [Cloud Manager과 함께 Git 사용](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [여러 저장소 사용](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [엔터프라이즈 개발 팀 설정](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
          + [GitHub 검사 구성](/help/implementing/cloud-manager/managing-code/github-check-config.md)
@@ -1128,6 +1130,7 @@ ht-degree: 95%
       + SSL 인증서 {#manage-ssl-certificates}
          + [소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+         + [SSL 인증서 오류 문제 해결](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [SSL 인증서 관리](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + CDN 구성 {#cdn-configurations}
          + [CDN 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
@@ -1140,6 +1143,8 @@ ht-degree: 95%
       + [Cloud Service 콘텐츠 요청 이해](/help/implementing/cloud-manager/content-requests.md)
       + [CDN 성능 대시보드](/help/implementing/cloud-manager/cdn-performance.md)
       + [Cloud Manager FAQ](/help/implementing/cloud-manager/faqs.md)
+
+
    + AEM as a Cloud Service용 개발 {#developing}
       + [AEM 프로젝트 구조](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [AEM 프로젝트 저장소 구조 패키지](/help/implementing/developing/introduction/repository-structure-package.md)
