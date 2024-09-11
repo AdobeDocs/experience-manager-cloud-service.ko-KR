@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
+source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
 workflow-type: tm+mt
 source-wordcount: '4118'
 ht-degree: 0%
@@ -33,7 +33,7 @@ In the accompanying guide, you'll find a comprehensive list of best practices fo
 
 Stage Business Problem Best Practice Recommendation: This section will outline specific business challenges and provide targeted best practices and recommendations to address them effectively. -->
 
-{{work-with-dynamic-media}}
+{{see-also-dm}}
 
 조직에서는 사용자와 소통하기 위한 채널 및 장치가 폭증하고 있습니다. 고객 여정은 물리적 상점, 웹, 모바일, 소셜 미디어, 이메일 및 상거래를 포괄합니다. 이러한 요구 사항을 충족하기 위해 Adobe Experience Manager(AEM)의 Dynamic Media은 포괄적인 솔루션을 제공합니다. 자산 전달을 최적화하고 개인화를 처리하며 채널 및 장치 간에 일관되고 성능이 뛰어나며 브랜드 중심 경험을 보장합니다.
 
@@ -412,4 +412,3 @@ CDN(Content Delivery Network)은 고객에게 신속하게 전달하기 위해 D
 
 자세히 알아보시겠습니까? [Dynamic Media을 통해 CDN 캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)(으)로 이동합니다.
 
-{{see-also-dm}}

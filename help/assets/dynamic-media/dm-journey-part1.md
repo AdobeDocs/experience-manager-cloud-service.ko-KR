@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
+source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
 workflow-type: tm+mt
 source-wordcount: '3615'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Dynamic Media 여정: 기본 사항, 1부 {#dm-journey-part1}
 
-{{work-with-dynamic-media}}
+{{see-also-dm}}
 
 Dynamic Media 여정에 오신 것을 환영합니다.
 
@@ -268,7 +268,6 @@ _선택한 &quot;ZoomVertical_light&quot; 뷰어 사전 설정을 기반으로 �
 
 이 여정의 1부는 다양한 Dynamic Media 주제의 기본 사항을 다룹니다. 읽은 내용에 대해 자세히 알아보려면 아래 자료를 사용하여 개념을 자세히 살펴보십시오. 그렇지 않으면 여정 2부를 계속 진행할 수 있습니다. [이 Dynamic Media 여정의 다음 단계](#whats-next)를 참조하세요.
 
-{{see-also-dm}}
 <!--
 _Dynamic Media Help topics_
 

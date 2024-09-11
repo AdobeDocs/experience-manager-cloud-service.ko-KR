@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
+source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
 workflow-type: tm+mt
 source-wordcount: '2621'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Dynamic Media 여정: 기본 사항, 2부  {#dm-journey-part2}
 
-{{work-with-dynamic-media}}
+{{see-also-dm}}
 
 Dynamic Media 여정 시작: 다음을 배울 수 있는 기본 사항, 2부
 
@@ -211,8 +211,6 @@ _플라이아웃 뷰어가 적용된 `Running` 이미지 집합입니다._
 ## 선택 사항 - 자세히 알아보기
 
 방금 읽은 내용에 대해 자세히 알아보려면 아래 자료를 사용하여 개념을 자세히 살펴보십시오. 그렇지 않으면 Dynamic Media 여정이 완료된 것입니다!
-
-{{see-also-dm}}
 
 <!--
 _Dynamic Media Help topics_
