@@ -3,9 +3,10 @@ title: AEM as a Cloud Service 릴리스 2024.05.0의 마이그레이션 도구 �
 description: AEM as a Cloud Service 릴리스 2024.05.0의 마이그레이션 도구 릴리스 정보
 feature: Release Information
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+exl-id: f50a74fa-ad7d-4837-b0a1-9945c32af02f
+source-git-commit: 3b2ed44b438fe8587a9b9603ddfacc41111fb903
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '208'
 ht-degree: 6%
 
 ---
@@ -18,11 +19,16 @@ ht-degree: 6%
 
 ### 릴리스 날짜 {#release-date-bpa}
 
-모범 사례 분석기 v2.1.48의 릴리스 날짜는 2024년 5월 9일입니다.
+모범 사례 분석기 v2.1.50의 릴리스 날짜는 2024년 5월입니다.
 
 ### 새로운 기능 {#what-is-new-bpa}
 
 * 이제 BPA(모범 사례 분석기)는 BPA에서 생성된 보고서를 CAM(Cloud Acceleration Manager)에 직접 자동 업로드하도록 지원합니다. 사용자는 더 이상 보고서를 수동으로 다운로드하여 CAM에 업로드할 필요가 없습니다. 자세한 내용은 [모범 사례 분석기 사용](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)을 참조하세요.
+
+### 버그 수정 {#bug-fixes-bpa}
+
+* 이제 Best Practices Analyzer 가 16MB 이상의 모든 노드를 감지합니다
+* NCC 발견의 산발적 발생을 야기하는 경합 상태가 수정되었습니다.
 
 ## Cloud Acceleration Manager {#cam-release}
 

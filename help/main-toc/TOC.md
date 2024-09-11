@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 16379d9cb7cdf876502205c12a233a95b410a67a
+source-git-commit: 26225938ff525a782314820f32f28c5af98c3669
 workflow-type: tm+mt
-source-wordcount: '5593'
+source-wordcount: '5598'
 ht-degree: 95%
 
 ---
@@ -170,6 +170,7 @@ ht-degree: 95%
       + 2024 {#2024}
          + [2024.01.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2024-01-0.md)
          + [2024.05.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2024-05-0.md)
+         + [2024.07.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2024-07-0.md)
       + 2023 {#2023}
          + [2023.10.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2023-10-0.md)
          + [2023.9.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2023-09-0.md)
