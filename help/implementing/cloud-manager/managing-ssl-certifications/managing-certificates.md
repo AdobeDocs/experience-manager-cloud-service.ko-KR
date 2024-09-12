@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
+source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
 workflow-type: tm+mt
 source-wordcount: '722'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
@@ -25,7 +25,7 @@ Cloud Manager을 사용하여 Adobe 관리 및 고객 관리 SSL 인증서의 �
 | --- | --- |
 | 녹색 | 인증서는 현재 날짜로부터 최소 14일 동안 유효합니다. |
 | 주황색 | 인증서는 14일 이내에 만료됩니다.<br>· 가능한 사이트 액세스 또는 중단을 방지하기 위해 인증서를 갱신하고 Cloud Manager 사용자 인터페이스를 통해 인증서를 교체할 계획이 있는지 확인하십시오.<br>· Cloud Manager에서 인증서 만료가 임박했음을 알리기 위해 UI에 일반 알림을 보냅니다. |
-| 빨간색 | SSL 인증서가 만료되었습니다.<br>만료된 SSL 인증서 업데이트](#update-ssl-certificate) 또는 [SSL 인증서 삭제](#deleting-an-ssl-certificate)를 참조하십시오.[ |
+| 빨간색 | SSL 인증서가 만료되었습니다.<br>만료된 고객 관리 SSL 인증서 업데이트](#update-ssl-certificate) 또는 [SSL 인증서 삭제](#deleting-an-ssl-certificate)를 참조하십시오.[ |
 
 ## 만료된 고객 관리 SSL 인증서 업데이트 {#update-ssl-certificate}
 
@@ -33,7 +33,7 @@ Cloud Manager을 사용하여 Adobe 관리 및 고객 관리 SSL 인증서의 �
 
 이 작업을 완료하려면 사용자가 **비즈니스 소유자** 또는 **배포 관리자** 역할의 멤버여야 합니다.
 
-**만료된 SSL 인증서를 업데이트하려면**
+**만료된 고객 관리 SSL 인증서를 업데이트하려면:**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직 선택
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.

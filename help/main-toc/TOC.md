@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 9ffec422ec4b5a45962f07142c49a466e8892754
+source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
 workflow-type: tm+mt
-source-wordcount: '5602'
-ht-degree: 93%
+source-wordcount: '5605'
+ht-degree: 98%
 
 ---
 
@@ -288,7 +288,7 @@ ht-degree: 93%
          + [마이그레이션 세트에 대한 로그 보기](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
          + [마이그레이션 세트 삭제](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [게시 인스턴스에서 콘텐츠 전송 도구 실행](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
-         + [마이그레이션 후 주도자 관리](/help/journey-migration/managing-principals-after-migration.md)
+         + [마이그레이션 후 주체 관리](/help/journey-migration/managing-principals-after-migration.md)
          + [콘텐츠 전송 도구 문제 해결](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + 기존 사용자 매핑 도구 (레거시){#legacy-user-mapping-tool}
             + [개요](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
@@ -432,7 +432,7 @@ ht-degree: 93%
                + [콘텐츠 번역](/help/journey-sites/translation/translate-content.md)
                + [번역된 콘텐츠 게시](/help/journey-sites/translation/publish-content.md)
             + [Headless 번역 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=ko)
-            + [다국어 사이트를 위한 콘텐츠 번역](/help/sites-cloud/administering/translation/overview.md)
+            + [다국어 Sites를 위한 콘텐츠 번역](/help/sites-cloud/administering/translation/overview.md)
             + [번역을 위한 콘텐츠 준비](/help/sites-cloud/administering/translation/preparation.md)
             + [번역 프로젝트 관리](/help/sites-cloud/administering/translation/managing-projects.md)
             + [언어 복사 마법사](/help/sites-cloud/administering/translation/wizard.md)
@@ -459,16 +459,16 @@ ht-degree: 93%
    + [자산 마이크로서비스 개요](/help/assets/asset-microservices-overview.md)
    + [ [!DNL Assets]에서의 접근성](/help/assets/accessibility.md)
    + 디지털 자산 관리 {#manage}
-      + Micro-Frontend 자산 선택기 {#asset-selector}
+      + 마이크로 프론트엔드 자산 선택기 {#asset-selector}
          + [자산 선택기 개요](/help/assets/overview-asset-selector.md)
          + 자산 선택기 통합 {#asset-selector-integration}
-            + [Asset Selector 통합 개요](/help/assets/integrate-asset-selector.md)
-            + [에셋 선택기를 Adobe 애플리케이션과 통합](/help/assets/integrate-asset-selector-adobe-app.md)
-            + [에셋 선택기를 Adobe이 아닌 애플리케이션과 통합](/help/assets/integrate-asset-selector-non-adobe-app.md)
-            + [OpenAPI 기능과 Dynamic Media용 Asset Selector 통합](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+            + [자산 선택기 통합 개요](/help/assets/integrate-asset-selector.md)
+            + [자산 선택기와 Adobe 애플리케이션 통합](/help/assets/integrate-asset-selector-adobe-app.md)
+            + [자산 선택기와 비 Adobe 애플리케이션 통합](/help/assets/integrate-asset-selector-non-adobe-app.md)
+            + [OpenAPI 기능으로 Dynamic Media에 대한 자산 선택기 통합](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
          + [자산 선택기 속성](/help/assets/asset-selector-properties.md)
-         + [자산 선택기 예](/help/assets/asset-selector-examples.md)
-         + [자산 선택기 사용자 지정](/help/assets/asset-selector-customization.md)
+         + [자산 선택기 예제](/help/assets/asset-selector-examples.md)
+         + [자산 선택기 사용자 정의](/help/assets/asset-selector-customization.md)
          + [자산 선택기 업로드](/help/assets/asset-selector-upload.md)
       + [마이크로 프론트엔드 대상 선택기](/help/assets/destination-selector.md)
       + [자산 공유](/help/assets/share-assets.md)
@@ -668,11 +668,11 @@ ht-degree: 93%
    + 설정 및 마이그레이션 {#setup-configure-migrate}
       + [Cloud Service 환경에 온보드](/help/forms/setup-forms-cloud-service.md)
       + [로컬 개발 환경 설정](/help/forms/setup-local-development-environment.md)
-      + [AEM Forms as a Cloud Service 및 로컬 개발 환경에서 적응형 양식 핵심 구성 요소 활성화](/help/forms/enable-adaptive-forms-core-components.md)
+      + [AEM Forms as a Cloud Service 및 로컬 개발 환경에서 적응형 Forms 핵심 구성 요소 활성화](/help/forms/enable-adaptive-forms-core-components.md)
       + [통합 스토리지 커넥터 구성](/help/forms/configure-unified-storage-connector.md)
       + [ [!DNL AEM 6.5 Forms] 이하 버전에서 [!DNL AEM Forms] as a Cloud Service로 마이그레이션](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [그룹 및 권한](/help/forms/forms-groups-privileges-tasks.md)
-      + [적응형 양식, PDF 양식 및 기타 자산 가져오기, 내보내기 및 구성](/help/forms/import-export-forms-templates.md)
+      + [적응형 Forms, PDF Forms 및 기타 자산 가져오기, 내보내기 및 구성](/help/forms/import-export-forms-templates.md)
    + 시작하기 {#getting-started-forms}
       + [사용 사례 및 개발 환경 설정](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [대출 신청서 양식 만들기](/help/forms/create-adaptive-form-tutorial.md)
@@ -681,138 +681,138 @@ ht-degree: 93%
          + [Adobe Sign과 AEM Forms as a Cloud Service 통합](/help/forms/adobe-sign-integration-adaptive-forms.md)
          + [DocuSign과 AEM Forms as a Cloud Service 통합](/help/forms/integrate-docusign-adaptive-forms.md)
          + [Adobe Analytics와 AEM Forms as a Cloud Service 통합](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-         + [Adobe Analytics에 적응형 양식 통합](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
-         + [적응형 양식 분석 보고서 보기 및 이해](/help/forms/view-understand-aem-forms-analytics-reports.md)
-         + [Adobe Workfront Fusion에 적응형 양식 제출](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-         + [Microsoft Power Automate와 적응형 양식 통합](/help/forms/forms-microsoft-power-automate-integration.md)
-         + [AEM Sites 페이지에 적응형 양식 임베드](/help/forms/embed-adaptive-form-aem-sites.md)
+         + [Adobe Analytics에 적응형 Forms 통합](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+         + [적응형 Forms 분석 보고서 보기 및 이해](/help/forms/view-understand-aem-forms-analytics-reports.md)
+         + [Adobe Workfront Fusion에 적응형 Forms 제출](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+         + [Microsoft Power Automate와 적응형 Forms 통합](/help/forms/forms-microsoft-power-automate-integration.md)
+         + [AEM Sites 페이지에 적응형 Forms 임베드](/help/forms/embed-adaptive-form-aem-sites.md)
          + [외부 웹 페이지에 핵심 구성 요소 기반 적응형 양식 임베드](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [외부 웹 페이지에 기초 구성 요소 기반 적응형 양식 임베드](/help/forms/embed-adaptive-form-external-web-page.md)
-      + 양식 데이터 모델 {#use-form-data-model}
+      + Forms 데이터 모델 {#use-form-data-model}
          + [AEM Forms를 데이터베이스 또는 데이터 소스에 연결](/help/forms/data-integration.md)
          + [데이터 소스 구성](/help/forms/configure-data-sources.md)
          + [ [!DNL Microsoft Dynamics] OData 구성](/help/forms/ms-dynamics-odata-configuration.md)
-         + [OAuth 2.0 클라이언트 자격 증명 흐름을 사용하여 Salesforce 애플리케이션에 적응형 양식 연결](/help/forms/aem-forms-salesforce-integration.md)
+         + [OAuth 2.0 클라이언트 자격 증명 흐름을 사용하여 Salesforce 애플리케이션에 적응형 Forms 연결](/help/forms/aem-forms-salesforce-integration.md)
          + [ [!DNL Azure] 스토리지 구성](/help/forms/configure-azure-storage.md)
          + [ [!DNL Microsoft Dynamics 365] 및 [!DNL Salesforce] Cloud Service 구성](/help/forms/configure-msdynamics-salesforce.md)
-         + [양식 데이터 모델 만들기](/help/forms/create-form-data-models.md)
-         + [양식 데이터 모델을 사용하여 작업](/help/forms/work-with-form-data-model.md)
-         + [양식 데이터 모델 사용](/help/forms/using-form-data-model.md)
-         + [적응형 양식을 위한 XML 스키마 디자인](/help/forms/adaptive-form-xml-schema-form-model.md)
-   + 적응형 양식 {#adaptive-forms-authoring}
-      + [적응형 양식 만들기](/help/forms/create-an-adaptive-form.md)
-      + [적응형 양식 조각 만들기](/help/forms/adaptive-form-fragments.md)
-      + [AEM Sites 페이지 또는 경험 조각에 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+         + [Forms 데이터 모델 만들기](/help/forms/create-form-data-models.md)
+         + [Forms 데이터 모델을 사용하여 작업](/help/forms/work-with-form-data-model.md)
+         + [Forms 데이터 모델 사용](/help/forms/using-form-data-model.md)
+         + [적응형 Forms에 대한 XML 스키마 디자인](/help/forms/adaptive-form-xml-schema-form-model.md)
+   + 적응형 Forms {#adaptive-forms-authoring}
+      + [적응형 Forms 만들기](/help/forms/create-an-adaptive-form.md)
+      + [적응형 Forms 조각 만들기](/help/forms/adaptive-form-fragments.md)
+      + [AEM Sites 페이지 또는 경험 조각에 적응형 Forms 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + 핵심 구성 요소 {#authoring-adaptive-forms-core-components}
-         + 적응형 양식 만들기 {#create-an-adaptive-form-on-forms-cs}
-            + [적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md)
-            + [핵심 구성 요소를 기반으로 적응형 양식의 레이아웃 설정](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
-            + [적응형 양식 조각 만들기](/help/forms/adaptive-form-fragments-core-components.md)
-            + [적응형 양식의 테마 만들기 - 핵심 구성 요소](/help/forms/using-themes-in-core-components.md)
+         + 적응형 Forms 만들기 {#create-an-adaptive-form-on-forms-cs}
+            + [적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md)
+            + [핵심 구성 요소 기반 적응형 Forms의 레이아웃 설정](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
+            + [적응형 Forms 조각 만들기](/help/forms/adaptive-form-fragments-core-components.md)
+            + [적응형 Forms의 테마 만들기 - 핵심 구성 요소](/help/forms/using-themes-in-core-components.md)
             + [핵심 구성 요소 기반 적응형 템플릿 만들기](/help/forms/template-editor-core-components.md)
-            + [적응형 양식의 기록 문서 생성](/help/forms/generate-document-of-record-core-components.md)
-            + [기계 번역 또는 인간 번역을 사용하여 적응형 양식 번역](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+            + [적응형 Forms의 기록 문서 생성](/help/forms/generate-document-of-record-core-components.md)
+            + [기계 번역 또는 인간 번역을 사용하여 적응형 Forms 번역](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [리디렉션 페이지 또는 감사 메시지 구성](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [반복 가능한 섹션으로 양식 만들기](/help/forms/create-forms-repeatable-sections.md)
-            + [적응형 양식에 대한 제출 액션 구성](/help/forms/configure-submit-actions-core-components.md)
-            + [Azure Blob Storage에 적응형 양식 제출](/help/forms/configure-submit-action-azure-blob-storage.md)
-            + [Microsoft에 적응형 양식 제출](/help/forms/configure-submit-action-onedrive.md)
-            + [Microsoft에 적응형 양식 연결](/help/forms/configure-submit-action-sharepoint.md)
+            + [적응형 Forms에 대한 제출 액션 구성](/help/forms/configure-submit-actions-core-components.md)
+            + [Azure Blob Storage에 적응형 Forms 제출](/help/forms/configure-submit-action-azure-blob-storage.md)
+            + [Microsoft에 적응형 Forms 제출](/help/forms/configure-submit-action-onedrive.md)
+            + [Microsoft에 적응형 Forms 연결](/help/forms/configure-submit-action-sharepoint.md)
             + [인증 범위를 사용하여 제한된 액세스로 SharePoint Site 구성](/help/forms/configure-sharepoint-site-limited-access.md)
-            + [AEM 적응형 양식과 AEM Workflow 통합](/help/forms/configure-submit-action-workflow.md)
-            + [적응형 양식의 REST 엔드포인트에 제출 액션 구성](/help/forms/configure-submit-action-restpoint.md)
-            + [적응형 양식의 이메일 보내기 제출 액션 구성](/help/forms/configure-submit-action-send-email.md)
-            + [적응형 양식에서 Google reCAPTCHA 사용](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [적응형 양식에서 hCAPTCHA 사용](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
-            + [적응형 양식에서 Turnstile 사용](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
-            + [적응형 양식에서 사용자 정의 오류 핸들러 추가](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
-            + [핵심 구성 요소 기반 적응형 양식의 로케일 추가](/help/forms/supporting-new-language-localization-core-components.md)
-            + [적응형 양식에 대한 JSON 스키마 디자인 (핵심 구성 요소)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
-            + [적응형 양식에 버전 관리, 댓글 및 주석 추가](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
-            + [적응형 양식 비교](/help/forms/compare-forms.md)
-            + [마이그레이션 유틸리티 도구를 사용하여 기초 구성 요소 기반 적응형 양식을 핵심 구성 요소 기반 양식으로 변환](/help/forms/migration-utility-tool-for-af-core-components.md)
-            + 핵심 구성 요소 기반 적응형 양식의 규칙 편집기 소개{#rule-editor-core-components}
-               + [핵심 구성 요소 기반 적응형 양식의 규칙 편집기 소개](/help/forms/rule-editor-core-components.md)
-               + [핵심 구성 요소 기반 적응형 양식의 규칙 편집기 사용자 인터페이스](/help/forms/rule-editor-core-components-user-interface.md)
+            + [AEM 적응형 Forms과 AEM Workflow 통합](/help/forms/configure-submit-action-workflow.md)
+            + [적응형 Forms의 REST 엔드포인트에 제출 액션 구성](/help/forms/configure-submit-action-restpoint.md)
+            + [적응형 Forms의 이메일 보내기 제출 액션 구성](/help/forms/configure-submit-action-send-email.md)
+            + [적응형 Forms에서 Google reCAPTCHA 사용](/help/forms/captcha-adaptive-forms-core-components.md)
+            + [적응형 Forms에서 hCAPTCHA 사용](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [적응형 Forms에서 Turnstile 사용](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
+            + [적응형 Forms에서 사용자 정의 오류 핸들러 추가](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
+            + [핵심 구성 요소 기반 적응형 Forms의 로케일 추가](/help/forms/supporting-new-language-localization-core-components.md)
+            + [적응형 Forms에 대한 JSON 스키마 디자인 (핵심 구성 요소)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
+            + [적응형 Forms에 버전 관리, 댓글 및 주석 추가](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
+            + [적응형 Forms 비교](/help/forms/compare-forms.md)
+            + [마이그레이션 유틸리티 도구를 사용하여 기초 구성 요소 기반 적응형 Forms을 핵심 구성 요소 기반 Forms으로 변환](/help/forms/migration-utility-tool-for-af-core-components.md)
+            + 핵심 구성 요소 기반 적응형 Forms의 규칙 편집기 소개{#rule-editor-core-components}
+               + [핵심 구성 요소 기반 적응형 Forms의 규칙 편집기 소개](/help/forms/rule-editor-core-components.md)
+               + [핵심 구성 요소 기반 적응형 Forms의 규칙 편집기 사용자 인터페이스](/help/forms/rule-editor-core-components-user-interface.md)
                + [기초 규칙 편집기와 핵심 구성 요소의 규칙 편집기 간 차이점](/help/forms/rule-editor-core-components-difference-tables.md)
-               + [핵심 구성 요소 기반 적응형 양식의 규칙 편집기에서 사용 가능한 연산자 및 이벤트 유형](/help/forms/rule-editor-core-components-events-operators.md)
-               + [핵심 구성 요소 기반 적응형 양식의 규칙 편집기 예](/help/forms/rule-editor-core-components-usecases.md)
-            + 핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 소개{#create-and-use-custom-function-core-component}
-               + [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 소개](/help/forms/create-and-use-custom-functions.md)
-               + [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 만들기 및 사용](/help/forms/custom-function-core-component-create-function.md)
-               + [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수의 예](/help/forms/custom-function-core-components-use-cases.md)
+               + [핵심 구성 요소 기반 적응형 Forms의 규칙 편집기에서 사용 가능한 연산자 및 이벤트 유형](/help/forms/rule-editor-core-components-events-operators.md)
+               + [핵심 구성 요소 기반 적응형 Forms의 규칙 편집기 예](/help/forms/rule-editor-core-components-usecases.md)
+            + 핵심 구성 요소 기반 적응형 Forms의 사용자 정의 함수 소개{#create-and-use-custom-function-core-component}
+               + [핵심 구성 요소 기반 적응형 Forms의 사용자 정의 함수 소개](/help/forms/create-and-use-custom-functions.md)
+               + [핵심 구성 요소 기반 적응형 Forms의 사용자 정의 함수 만들기 및 사용](/help/forms/custom-function-core-component-create-function.md)
+               + [핵심 구성 요소 기반 적응형 Forms의 사용자 정의 함수의 예](/help/forms/custom-function-core-components-use-cases.md)
             + Forms 포털 및 해당 구성 요소 소개{#introduction-to-forms-portal}
                + [Forms 포털 구성 요소 소개](/help/forms/configure-forms-portal.md)
-               + [Search &amp; List 구성 요소를 사용하여 Sites 페이지의 목록 양식](/help/forms/list-forms-on-sites-page.md)
-               + [초안 및 제출 구성 요소를 사용하여 Sites 페이지에서 양식을 초안으로 저장하고 나열](/help/forms/save-core-component-based-form-as-draft.md)
-               + [링크 구성 요소를 사용하여 사이트 페이지에 양식 링크 추가](/help/forms/add-form-link-to-aem-sites-page.md)
+               + [검색 및 리스터 구성 요소를 사용해 Sites 페이지에서 양식 나열](/help/forms/list-forms-on-sites-page.md)
+               + [초안 및 제출 구성 요소를 사용하여 Sites 페이지에서 초안으로 양식 저장 및 나열](/help/forms/save-core-component-based-form-as-draft.md)
+               + [링크 구성 요소를 사용하여 Sites 페이지에 양식 링크 추가](/help/forms/add-form-link-to-aem-sites-page.md)
       + 기초 구성 요소 {#authoring-adaptive-forms-foundation-components}
-         + PDF 양식을 적응형 양식으로 변환 {#afcs}
-            + [자동 양식 전환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ko)
-            + [기존 PDF 양식을 적응형 양식으로 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=ko)
+         + PDF Forms을 적응형 Forms으로 변환 {#afcs}
+            + [자동 Forms 전환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ko)
+            + [기존 PDF Forms을 적응형 Forms으로 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=ko)
             + [전환된 양식 검토 및 수정](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html#welcome-to-review-and-correct-editor)
-         + 적응형 양식 만들기 {#create-an-adaptive-form-on-forms-cs}
-            + [적응형 양식 작성 소개](/help/forms/introduction-forms-authoring.md)
+         + 적응형 Forms 만들기 {#create-an-adaptive-form-on-forms-cs}
+            + [적응형 Forms 작성 소개](/help/forms/introduction-forms-authoring.md)
             + [양식 필드에 대한 컨텍스트 내 도움말 작성](/help/forms/authoring-in-field-help.md)
-            + [적응형 양식 만들기](/help/forms/creating-adaptive-form.md)
+            + [적응형 Forms 만들기](/help/forms/creating-adaptive-form.md)
             + [참조 테마, 템플릿 및 데이터 모델](/help/forms/reference-themes-templates-data-models.md)
             + [템플릿 만들기](/help/forms/template-editor.md)
             + [테마 만들기](/help/forms/themes.md)
-            + [적응형 양식 단편 참조](/help/forms/reference-adaptive-form-fragments.md)
-            + [적응형 Forms과 XFA 양식 템플릿 동기화](/help/forms/synchronizing-adaptive-forms-xfa.md)
+            + [적응형 Forms 단편 참조](/help/forms/reference-adaptive-form-fragments.md)
+            + [적응형 Forms과 XFA Forms 템플릿 동기화](/help/forms/synchronizing-adaptive-forms-xfa.md)
             + [XDP 기반 적응형 Forms에서 XFA 지원](/help/forms/xfa-api-supported-in-adaptive-form.md)
-            + [적응형 양식에 대한 JSON 스키마 디자인](/help/forms/adaptive-form-json-schema-form-model.md)
+            + [적응형 Forms에 대한 JSON 스키마 디자인](/help/forms/adaptive-form-json-schema-form-model.md)
             + [소극적 로드 옵션이 있는 대용량 양식의 성능 향상](/help/forms/lazy-loading-adaptive-forms.md)
             + [양식 및 문서 게시 및 게시 취소](/help/forms/publishing-unpublishing-forms.md)
-         + 적응형 양식에 구성 요소 추가 {#add-components-to-an-adaptive-form}
-            + [적응형 양식에서 CAPTCHA 사용](/help/forms/captcha-adaptive-forms.md)
-            + [적응형 양식에서 hCaptcha 사용](/help/forms/integrate-adaptive-forms-hcaptcha.md)
-            + [적응형 양식에서 Turnstile 사용](/help/forms/integrate-adaptive-forms-turnstile.md)
+         + 적응형 Forms에 구성 요소 추가 {#add-components-to-an-adaptive-form}
+            + [적응형 Forms에서 CAPTCHA 사용](/help/forms/captcha-adaptive-forms.md)
+            + [적응형 Forms에서 hCaptcha 사용](/help/forms/integrate-adaptive-forms-hcaptcha.md)
+            + [적응형 Forms에서 Turnstile 사용](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [핵심 구성 요소 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
             + [스크리블 서명 적용](/help/forms/signing-forms-using-scribble.md)
             + [적응형 양식에 테이블 추가](/help/forms/adaptive-forms-tables.md)
-            + [적응형 양식에 각주 지원 추가](/help/forms/footnotes-richtextsupport.md)
-         + 적응형 양식에 레이아웃 구성 및 스타일 적용{#configure-layout-of-an-adaptive-form}
-            + [적응형 양식의 레이아웃 설정](/help/forms/layout-capabilities-adaptive-forms.md)
+            + [적응형 Forms에 각주 지원 추가](/help/forms/footnotes-richtextsupport.md)
+         + 적응형 Forms에 레이아웃 구성 및 스타일 적용{#configure-layout-of-an-adaptive-form}
+            + [적응형 Forms의 레이아웃 설정](/help/forms/layout-capabilities-adaptive-forms.md)
             + [레이아웃 모드를 사용하여 구성 요소 크기 변경](/help/forms/resize-using-layout-mode.md)
             + [여러 단계 데이터 캡처 경험 만들기](/help/forms/introduction-form-sequence.md)
-            + [적응형 Forms에 대한 스타일 구성](/help/forms/styling-constructs-adaptive-forms.md)
-            + [개별 적응형 양식 구성 요소에 인라인 CSS 스타일 적용](/help/forms/inline-style-adaptive-forms.md)
-            + [적응형 Forms에서 분리자 구성 요소를 사용하는 방법](/help/forms/separator-component-in-adaptive-forms.md)
-         + 적응형 양식에 규칙 추가 및 표현식 사용 {#add-rules-and-use-expressions-in-an-adaptive-form}
-            + [적응형 양식에 규칙 추가](/help/forms/rule-editor.md)
+            + [적응형 Forms에 대한 구성 스타일 지정](/help/forms/styling-constructs-adaptive-forms.md)
+            + [개별 적응형 Forms 구성 요소에 인라인 CSS 스타일 적용](/help/forms/inline-style-adaptive-forms.md)
+            + [적응형 Forms에서 분리자 구성 요소 사용 방법](/help/forms/separator-component-in-adaptive-forms.md)
+         + 적응형 Forms에 규칙 추가 및 표현식 사용 {#add-rules-and-use-expressions-in-an-adaptive-form}
+            + [적응형 Forms에 규칙 추가](/help/forms/rule-editor.md)
             + [규칙 편집기의 호출 서비스를 사용하여 사용자 정의 오류 핸들러 추가](/help/forms/add-custom-error-handler-adaptive-forms.md)
             + [사용자 그룹을 선택하는 규칙 편집기 액세스 부여](/help/forms/rule-editor-access-user-groups.md)
             + [적응형 Forms에서 SOM 표현식 사용](/help/forms/using-som-expressions-adaptive-forms.md)
-            + [적응형 양식 표현식](/help/forms/adaptive-form-expressions.md)
+            + [적응형 Forms 표현식](/help/forms/adaptive-form-expressions.md)
          + [!DNL Adobe Sign] 사용 {#use-adobe-sign}
-            + [Adobe Sign을 사용하여 적응형 양식에 전자 서명](/help/forms/working-with-adobe-sign.md)
+            + [Adobe Sign을 사용하여 적응형 Forms에 전자 서명](/help/forms/working-with-adobe-sign.md)
          + 제출 액션 및 메타데이터 제출 구성 {#configure-submit-actions-and-metadata-submission}
-            + [적응형 양식에 대한 제출 액션 설정](/help/forms/configuring-submit-actions.md)
+            + [적응형 Forms에 대한 제출 액션 설정](/help/forms/configuring-submit-actions.md)
             + [리디렉션 페이지 구성](/help/forms/configuring-redirect-page.md)
-            + [적응형 양식에 대한 비동기 제출 구성](/help/forms/asynchronous-submissions-adaptive-forms.md)
+            + [적응형 Forms에 대한 비동기 제출 구성](/help/forms/asynchronous-submissions-adaptive-forms.md)
             + [사용자 정의 제출 액션 만들기](/help/forms/custom-submit-action-form.md)
             + [양식 제출 메타데이터에 사용자 데이터의 정보 추가](/help/forms/form-submission-metadata.md)
-            + [적응형 Forms에서 양식 데이터 모델(FDM) 서비스를 호출하는 API](/help/forms/invoke-form-data-model-services.md)
-         + [적응형 양식 필드 미리 채우기](/help/forms/prepopulate-adaptive-form-fields.md)
+            + [적응형 Forms에서 Forms 데이터 모델(FDM) 서비스 호출을 위한 API](/help/forms/invoke-form-data-model-services.md)
+         + [적응형 Forms 필드 미리 채우기](/help/forms/prepopulate-adaptive-form-fields.md)
          + [기록 문서 생성](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
          + [적응형 양식에 새 로케일 지원 추가](/help/forms/supporting-new-language-localization.md)
          + 메타데이터 추가 또는 개선 {#manage-metadata}
-            + [적응형 양식의 메타데이터 추가, 제거 또는 편집](/help/forms/manage-form-metadata.md)
-            + [적응형 양식의 메타데이터 속성 재사용](/help/forms/reusing-adaptive-forms.md)
-         + 적응형 양식의 접근성 개선 {#accessible-adaptive-forms}
-            + [접근성 높은 적응형 양식 만들기](/help/forms/creating-accessible-adaptive-forms.md)
+            + [적응형 Forms의 메타데이터 추가, 제거 또는 편집](/help/forms/manage-form-metadata.md)
+            + [적응형 Forms의 메타데이터 속성 재사용](/help/forms/reusing-adaptive-forms.md)
+         + 적응형 Forms의 접근성 개선 {#accessible-adaptive-forms}
+            + [접근성 높은 적응형 Forms 만들기](/help/forms/creating-accessible-adaptive-forms.md)
          + [검토 만들기 및 관리](/help/forms/create-reviews-forms.md)
-         + [제출 검토자를 양식과 연결](/help/forms/adding-reviewers-form.md)
-         + [적응형 양식에 대한 검토 만들기 및 관리](/help/forms/review-adaptiveforms-in-sites-page.md)
+         + [제출 검토자와 양식 연결](/help/forms/adding-reviewers-form.md)
+         + [적응형 Forms에 대한 평가 생성 및 관리](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [적응형 양식 키워드](/help/forms/adaptive-forms-keywords.md)
       + [양식 미리보기](/help/forms/previewing-forms.md)
-   + 양식 중심 워크플로 {#create-form-centric-workflows}
-      + [Forms 중심 워크플로우 소개](/help/forms/aem-forms-workflow.md)
-      + [워크플로 + 단계 참조에서 양식 중심 단계 사용](/help/forms/aem-forms-workflow-step-reference.md)
-      + [양식 중심 워크플로에서 변수 사용](/help/forms/variable-in-aem-workflows.md)
-      + [AEM Workflow의 동적 사용자 또는 그룹 선택](/help/forms/dynamically-select-a-user-or-group-for-aem-workflow.md)
-      + [AEM 받은 편지함에서 Forms 애플리케이션 및 작업 관리](/help/forms/manage-applications-inbox.md)
+   + Forms 중심 워크플로 {#create-form-centric-workflows}
+      + [Forms 중심 워크플로 소개](/help/forms/aem-forms-workflow.md)
+      + [워크플로 + 단계 참조에서 Forms 중심 단계 사용](/help/forms/aem-forms-workflow-step-reference.md)
+      + [Forms 중심 워크플로에서 변수 사용](/help/forms/variable-in-aem-workflows.md)
+      + [AEM 워크플로에서 동적 사용자 또는 그룹 선택](/help/forms/dynamically-select-a-user-or-group-for-aem-workflow.md)
+      + [AEM 받은 편지함 Forms 애플리케이션 및 작업 관리](/help/forms/manage-applications-inbox.md)
       + [[Out of Office] 옵션 사용](/help/forms/configure-out-of-office-settings.md)
    + 커뮤니케이션 API {#using-communications}
       + [커뮤니케이션 API 소개](/help/forms/aem-forms-cloud-service-communications-introduction.md)
@@ -829,7 +829,7 @@ ht-degree: 93%
       + [사용자 정의 구현을 위한 트랜잭션 기록](/help/forms/record-transaction-custom-implementation.md)
       + [가치 실현 대시보드 이해](/help/forms/aem-forms-value-realization-dashboard.md)
    + 개발자 API 참조 {#aem-forms-developer-api-reference}
-      + [적응형 양식 API 참조](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
+      + [적응형 Forms API 참조](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms Cloud Service 커뮤니케이션 API 참조](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
       + [AEM Forms Cloud Service JavaScript API 참조](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
       + [AEM Forms Cloud Service Java API 참조](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/index.html)
@@ -837,7 +837,7 @@ ht-degree: 93%
       + [설치 및 구성](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher 및 CDN 캐싱](/help/forms/troubleshooting-caching-performance.md)
       + [AEM SDK 다시 시작](/help/forms/restart-aem-sdk.md)
-      + [양식 생성 실패 해결](/help/forms/form-creation-failing.md)
+      + [Forms 생성 실패 해결](/help/forms/form-creation-failing.md)
 + Screens {#screens-as-cloud-service}
    + Screens as a Cloud Service 개요 {#overview}
       + [소개](/help/screens-cloud/introduction/introduction.md)
@@ -927,7 +927,7 @@ ht-degree: 93%
       + [콘텐츠 모델링](/help/edge/wysiwyg-authoring/content-modeling.md)
       + [표 형식 데이터 및 스프레드시트](/help/edge/wysiwyg-authoring/tabular-data.md)
       + [분류 체계 데이터 관리](/help/edge/wysiwyg-authoring/taxonomy.md)
-      + [WIP 사이트 기능](/help/edge/wysiwyg-authoring/wip-features.md)
+      + [WIP Sites 기능](/help/edge/wysiwyg-authoring/wip-features.md)
    + 문서 기반 작성 {#document-authoring}
       + [작성](/help/edge/docs/authoring.md)
       + [대량 메타데이터](/help/edge/docs/bulk-metadata.md)
@@ -954,7 +954,7 @@ ht-degree: 93%
       + [Akamai 설정](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Fastly 설정](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [리디렉션](/help/edge/docs/redirects.md)
-   + 양식 빌드 {#build-forms}
+   + Forms 빌드 {#build-forms}
       + [개요](/help/edge/docs/forms/overview.md)
       + 시작하기 {#getting-started-edge-delivery-services-forms}
          + [시작](/help/edge/docs/forms/tutorial.md)
@@ -965,17 +965,17 @@ ht-degree: 93%
          + [URL에서 양식으로 옵션 로드](/help/edge/docs/forms/load-options-from-url.md)
          + [양식 모양 사용자 정의&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
          + [규칙을 사용하여 양식에 동적 비헤이비어 추가](/help/edge/docs/forms/rules-forms.md)
-         + [유효성 검사를 위한 정규 표현식](/help/edge/docs/forms/regex-forms.md)
+         + [유효성 검사를 위한 정규 표현 표현식](/help/edge/docs/forms/regex-forms.md)
          + [양식 제출 후 사용자 정의 감사 메시지 표시](/help/edge/docs/forms/thank-you-page-form.md)
       + 기능 {#advanced-features-edge-delivery-services-forms}
-         + [양식 조각 사용](/help/edge/docs/forms/form-fragments.md)
+         + [Forms 조각 사용](/help/edge/docs/forms/form-fragments.md)
          + [양식에 반복 가능한 섹션 추가&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
          + [양식 번역](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA를 사용하여 양식 보호](/help/edge/docs/forms/recaptacha-forms.md)
          + [사용자 정의 구성 요소](/help/edge/docs/forms/custom-components-forms.md)
          + [양식에 대한 실제 사용 모니터링](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
       + 참조 {#forms-references}
-         + [적응형 양식 블록 구성 요소 및 해당 속성](/help/edge/docs/forms/form-components.md)
+         + [적응형 Forms 블록 구성 요소 및 해당 속성](/help/edge/docs/forms/form-components.md)
    + Edge Delivery 리소스 {#resources}
       + Sidekick {#sidekick}
          + [Sidekick 사용](/help/edge/docs/sidekick.md)
@@ -1068,6 +1068,7 @@ ht-degree: 93%
    + [AEM as a Cloud Service용 애플리케이션 구현](/help/implementing/home.md)
 
 
+
    + Cloud Manager 사용 {#using-cloud-manager}
       + [탐색](/help/implementing/cloud-manager/navigation.md)
       + 프로그램 {#programs}
@@ -1119,8 +1120,8 @@ ht-degree: 93%
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [알림](/help/implementing/cloud-manager/notifications.md)
       + [고급 네트워킹](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=ko)
-      + Edge Delivery 사이트 {#edge-delivery-sites}
-         + [Cloud Manager의 Edge Delivery 지원](/help/implementing/cloud-manager/edge-delivery-services.md)
+      + Edge Delivery Sites {#edge-delivery-sites}
+         + [Cloud Manager에서의 Edge Delivery 지원](/help/implementing/cloud-manager/edge-delivery-services.md)
       + 도메인 설정 {#custom-domain-names}
          + [소개](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [사용자 정의 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
@@ -1134,6 +1135,7 @@ ht-degree: 93%
          + [SSL 인증서 관리](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + CDN 구성 {#cdn-configurations}
          + [CDN 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+         + [CDN 구성 관리](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + IP 허용 목록 {#ip-allow-lists}
          + [소개](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [IP 허용 목록 추가](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
@@ -1143,6 +1145,7 @@ ht-degree: 93%
       + [Cloud Service 콘텐츠 요청 이해](/help/implementing/cloud-manager/content-requests.md)
       + [CDN 성능 대시보드](/help/implementing/cloud-manager/cdn-performance.md)
       + [Cloud Manager FAQ](/help/implementing/cloud-manager/faqs.md)
+
 
 
    + AEM as a Cloud Service용 개발 {#developing}
@@ -1269,8 +1272,8 @@ ht-degree: 93%
       + [콘텐츠 조각 맞춤화 및 확장](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [렌더링용 구성 요소를 구성하는 콘텐츠 조각](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
       + [콘텐츠 조각 콘솔 및 편집기 맞춤화](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
-      + 검색 양식 관리 {#manage-search-forms}
-         + [검색 양식 구성](/help/implementing/developing/extending/search-forms.md)
+      + 검색 Forms 관리 {#manage-search-forms}
+         + [검색 Forms 구성](/help/implementing/developing/extending/search-forms.md)
          + [받은 편지함용 검색 필터 구성](/help/implementing/developing/extending/configure-inbox-search-rail.md)
       + [리치 텍스트 편집기 구성](/help/implementing/developing/extending/rich-text-editor.md)
       + [RTE 플러그인 구성](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
