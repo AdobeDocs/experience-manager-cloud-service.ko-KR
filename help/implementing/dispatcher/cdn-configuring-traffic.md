@@ -4,9 +4,9 @@ description: 구성 파일에서 규칙 및 필터를 선언하고 Cloud Manager
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: 35d3dcca6b08e42c0d2a97116d0628ac9bbb6a7c
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1350'
 ht-degree: 2%
 
 ---
@@ -153,6 +153,21 @@ data:
 |         | queryParammatch | 지정된 정규 표현식과 일치하는 모든 쿼리 매개 변수를 제거합니다. |
 | **변환** | op:replace, (reqProperty 또는 reqHeader 또는 queryParam 또는 reqCookie), 일치, 대체 | 요청 매개 변수(&quot;path&quot; 속성만 지원됨) 또는 요청 헤더, 쿼리 매개 변수 또는 쿠키의 일부를 새 값으로 바꿉니다. |
 |              | op:tolower, (reqProperty 또는 reqHeader 또는 queryParam 또는 reqCookie) | 요청 매개 변수(&quot;path&quot; 속성만 지원됨) 또는 요청 헤더, 쿼리 매개 변수 또는 쿠키를 소문자 값으로 설정합니다. |
+
+아래 그림과 같이 작업을 바꾸면 캡처 그룹이 지원됩니다.
+
+```
+      - name: replace-jpg-with-jpeg
+        when:
+          reqProperty: path
+          like: /mypath          
+        actions:
+          - type: transform
+            reqProperty: path
+            op: replace
+            match: (.*)(\.jpg)$
+            replacement: "\1\.jpeg"          
+```
 
 작업은 함께 연결될 수 있습니다. 예:
 
@@ -384,3 +399,31 @@ data:
 |-----------|--------------------------|-------------|
 | **리디렉션** | 위치 | &quot;위치&quot; 헤더 값. |
 |     | 상태(선택 사항, 기본값은 301) | 리디렉션 메시지에 사용할 HTTP 상태, 기본적으로 301. 허용되는 값은 301, 302, 303, 307, 308입니다. |
+
+리디렉션의 위치는 문자열 리터럴(예: https://www.example.com/page) 또는 다음 구문으로 선택적으로 변환되는 속성(예: path)의 결과일 수 있습니다.
+
+```
+experimental_redirects:
+  rules:
+    - name: country-code-redirect
+      when: { reqProperty: path, like: "/" }
+      action:
+        type: redirect
+        location:
+          reqProperty: clientCountry
+          transform:
+            - op: replace
+              match: '^(/.*)$'
+              replacement: 'https://www.example.com/\1/home'
+            - op: tolower
+    - name: www-redirect
+      when: { reqProperty: domain, equals: "example.com" }
+      action:
+        type: redirect
+        location:
+          reqProperty: path
+          transform:
+            - op: replace
+              match: '^(/.*)$'
+              replacement: 'https://www.example.com/\1'
+```
