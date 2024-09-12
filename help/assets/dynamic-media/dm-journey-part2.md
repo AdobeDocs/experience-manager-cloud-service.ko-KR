@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
+source-git-commit: 74172fe7fcf9a22837645a154f2e85fd6fa6b40e
 workflow-type: tm+mt
 source-wordcount: '2621'
 ht-degree: 0%
@@ -24,9 +24,9 @@ ht-degree: 0%
 
 Dynamic Media 여정 시작: 다음을 배울 수 있는 기본 사항, 2부
 
-* Dynamic Media URL 구조 및 Dynamic Media에서 콘텐츠를 제공하는 방법
-* 자산 렌더링용 이미지 사전 설정 만들기의 기본 사항
-* 이미지 세트, 스핀 세트 및 혼합 미디어 세트
+* Dynamic Media URL 구조 및 Dynamic Media에서 콘텐츠를 전달하는 방법.
+* 자산을 렌더링할 이미지 사전 설정을 만드는 기본 사항.
+* 이미지 세트, 스핀 세트 및 혼합 미디어 세트입니다.
 
 [Dynamic Media 여정; 기본 사항, 파트 I](/help/assets/dynamic-media/dm-journey-part1.md)도 참조하세요.
 
