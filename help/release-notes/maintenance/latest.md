@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 9323464610b804ff407f5eedf404ab2cca93a8da
 workflow-type: tm+mt
 source-wordcount: '572'
-ht-degree: 40%
+ht-degree: 46%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 40%
 
 다음은 2024년 9월 10일에 공개적으로 릴리스된 유지 보수 릴리스 17689에 대한 지속적인 개선 사항을 요약합니다. 이전 유지 관리 릴리스는 릴리스 17569.
 
-2024.9.0 기능 활성화는 이 유지 관리 릴리스에 대한 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
+이 유지 관리 릴리스(2024.9.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
 
 ### 개선 사항 {#enhancements-17689}
 
@@ -67,7 +67,7 @@ AEM as a Cloud Service에서 더 이상 사용되지 않는 기능과 API는 [�
 
 ### 보안 수정 {#security-17689}
 
-AEM as a Cloud Service는 플랫폼의 보안 및 성능을 최적화하는 데 사용됩니다. 이 유지 관리 릴리스는 4가지 식별된 취약점을 해결하여 강력한 시스템 보호에 대한 약속을 강화합니다.
+AEM as a Cloud Service는 플랫폼의 보안 및 성능을 최적화하는 데 사용됩니다. 이 유지 관리 릴리스에서는 강력한 시스템 보호에 대한 노력의 일환으로 식별된 취약점 4개가 해결되었습니다.
 
 ### 임베드된 기술 {#embedded-tech-17689}
 
