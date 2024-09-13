@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: e3667a6172447072d7c528213826fd0171e9acc2
+source-git-commit: 7c195e5640f828d2c59dbabd8f29127692788576
 workflow-type: tm+mt
-source-wordcount: '9406'
+source-wordcount: '9402'
 ht-degree: 2%
 
 ---
@@ -526,7 +526,7 @@ Dynamic Media에서 다음에 대한 지원을 활성화할 수 있습니다.
 * 다중 캡션 및 오디오 트랙
 * AI 생성 캡션(조기 액세스)
 
-작성 및 제출하는 Adobe 고객 지원 사례를 통해.
+Adobe 고객 지원 사례를 만들고 제출하여.
 
 위의 세 가지 기능 중 하나를 활성화하면 모든 기능이 활성화됩니다. 따라서 DASH만 활성화하려는 경우 실제로 위에 나열된 세 가지 기능을 모두 활성화합니다.
 

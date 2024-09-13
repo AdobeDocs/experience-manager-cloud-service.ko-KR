@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: fc578f35214327567aaa6f5d88a637df9428f87f
+source-git-commit: 7c195e5640f828d2c59dbabd8f29127692788576
 workflow-type: tm+mt
-source-wordcount: '1245'
-ht-degree: 77%
+source-wordcount: '1266'
+ht-degree: 76%
 
 ---
 
@@ -67,9 +67,11 @@ ht-degree: 77%
 
 ### Dynamic Media의 조기 액세스 기능 {#dm-early-access}
 
-**AI 기반 비디오 캡션**
+**AI 생성 비디오 캡션**
 
-Dynamic Media Adobe의 AI 기반 비디오 캡션은 인공 지능을 사용하여 비디오 컨텐츠에 대한 캡션을 자동으로 생성합니다. 이 기능은 정확한 실시간 캡션을 제공하여 접근성을 향상시키고 사용자 경험을 향상시키도록 설계되었습니다. AI는 비디오의 오디오 트랙을 분석하여 음성을 기록하고 캡션을 생성하며, 캡션은 정확도 또는 사용자 지정을 위해 편집할 수 있습니다. 이러한 캡션은 액세스 가능성 요구 사항을 충족하고 텍스트 기반 비디오 지원에 의존하거나 선호하는 대상의 비디오 참여를 개선하는 데 도움이 됩니다.
+Dynamic Media Adobe의 AI 생성 비디오 캡션은 인공 지능을 사용하여 비디오 컨텐츠에 대한 캡션을 자동으로 생성합니다. 이 기능은 정확한 실시간 캡션을 제공하여 접근성을 향상시키고 사용자 경험을 향상시키도록 설계되었습니다. AI는 비디오의 오디오 트랙을 분석하여 음성을 기록하고 캡션을 생성하며, 캡션은 정확도 또는 사용자 지정을 위해 편집할 수 있습니다. 이러한 캡션은 액세스 가능성 요구 사항을 충족하고 텍스트 기반 비디오 지원에 의존하거나 선호하는 대상의 비디오 참여를 개선하는 데 도움이 됩니다.
+
+Dynamic Media 계정에서 AI 생성 캡션 지원에 일찍 액세스하려면 [Adobe 고객 지원 사례를 만들어 제출](/help/assets/dynamic-media/video.md##enable-dash)하십시오.
 
 ### Assets 보기의 새로운 기능 {#assets-view-new-features}
 
