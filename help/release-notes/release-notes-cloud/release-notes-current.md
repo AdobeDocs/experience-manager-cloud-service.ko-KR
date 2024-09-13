@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 99a36bab3ca8d5e6a64e1fdb9c179cf8a3190a14
+source-git-commit: fc578f35214327567aaa6f5d88a637df9428f87f
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 50%
+source-wordcount: '1245'
+ht-degree: 77%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 50%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Cloud Service] 현재 기능 릴리스(2024.8.0)인 [!DNL Adobe Experience Manager]의 릴리스 날짜는 2024년 8월 29일입니다. 다음 기능 릴리스(2024.9.0)는 2024년 9월 26일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 기능 릴리스(2024.8.0)의 릴리스 일자는 2024년 8월 29일입니다. 다음 기능 릴리스(2024.9.0)는 2024년 9월 26일에 예정되어 있습니다.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
@@ -46,15 +46,15 @@ ht-degree: 50%
 
 **Edge Delivery Services를 위한 AEM 작성**
 
-기존 사이트 [상속](/help/sites-cloud/authoring/universal-editor/inheritance.md) 기능은 이제 다음을 포함하여 지원됩니다.
+이제 다음이 포함된 기존 사이트 [상속](/help/sites-cloud/authoring/universal-editor/inheritance.md) 기능이 지원됩니다.
 
 * [AEM 론치](/help/sites-cloud/authoring/launches/overview.md)
 * 페이지 수준의 [MSM](/help/sites-cloud/administering/msm/overview.md)
 
-또한 다음과 같은 페이지 관리 기능이 지원됩니다.
+또한 다음 페이지 관리 기능이 지원됩니다.
 
-* [AEM 태그](/help/sites-cloud/authoring/sites-console/tags.md)를 [분류](/help/edge/wysiwyg-authoring/taxonomy.md)(으)로 Edge Delivery Services에 내보낼 수 있습니다.
-* Edge Delivery Services에 대한 [템플릿](/help/edge/wysiwyg-authoring/templates.md)이 곧 제공됩니다!
+* [AEM 태그](/help/sites-cloud/authoring/sites-console/tags.md)는[분류 체계](/help/edge/wysiwyg-authoring/taxonomy.md)로서 Edge Delivery Services로 내보낼 수 있습니다.
+* Edge Delivery Services용 [템플릿](/help/edge/wysiwyg-authoring/templates.md)이 곧 제공될 예정입니다.
 
 ### 얼리 어답터 프로그램 {#sites-early-adopter}
 
@@ -65,25 +65,31 @@ ht-degree: 50%
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
+### Dynamic Media의 조기 액세스 기능 {#dm-early-access}
+
+**AI 기반 비디오 캡션**
+
+Dynamic Media Adobe의 AI 기반 비디오 캡션은 인공 지능을 사용하여 비디오 컨텐츠에 대한 캡션을 자동으로 생성합니다. 이 기능은 정확한 실시간 캡션을 제공하여 접근성을 향상시키고 사용자 경험을 향상시키도록 설계되었습니다. AI는 비디오의 오디오 트랙을 분석하여 음성을 기록하고 캡션을 생성하며, 캡션은 정확도 또는 사용자 지정을 위해 편집할 수 있습니다. 이러한 캡션은 액세스 가능성 요구 사항을 충족하고 텍스트 기반 비디오 지원에 의존하거나 선호하는 대상의 비디오 참여를 개선하는 데 도움이 됩니다.
+
 ### Assets 보기의 새로운 기능 {#assets-view-new-features}
 
 **업데이트된 Adobe Firefly 이미지 생성**
 
-Assetsas a Cloud Service 에서는 이제 Adobe Firefly을 사용하여 다양한 스타일의 Firefly 위젯을 생성합니다. 스타일, 컴포지션, 차원 등을 정의하고 내장된 Firefly 편집기를 사용하여 즉시 사용할 수 있도록 AEM Assets 저장소 내에서 직접 필요한 에셋을 빠르게 생성하고 저장할 수 있습니다.
+이제 Assets as a Cloud Service는 Adobe Firefly를 통해 다양한 스타일의 이미지를 생성할 수 있는 Firefly에서 최신 위젯을 사용합니다. 내장된 Firefly 편집기를 사용하여 스타일, 구성, 차원 등을 정의하면 AEM Assets 저장소에서 직접 필요한 자산을 빠르게 만들고 저장하여 즉시 사용할 수 있습니다.
 
 ![Adobe Firefly 이미지 생성](/help/assets/assets/bugatti-type-57.png)
 
 **PSB 파일 지원**
 
-Assetsas a Cloud Service 는 기존 PSD 파일 지원 외에도 Photoshop 대용량 문서(SB 파일)를 지원합니다.
+이제 Assets as a Cloud Service는 기존 PSD 파일 지원 외에도 Photoshop 대용량 문서(PSB 파일)을 지원합니다.
 
-### Content Hub의 새로운 개선 사항 {#content-hub-new-enhancements}
+### Content Hub에 대한 새로운 개선 사항 {#content-hub-new-enhancements}
 
-* 긴 파일 이름을 더 잘 처리하고 툴팁을 통해 전체 이름을 쉽게 확장할 수 있습니다.
-* 컨텐츠 종횡비에 맞게 썸네일을 개선하고 더 넓은 컨텐츠 영역을 커버했습니다.
-* 콘텐츠 허브에 지원되는 AEM의 사용자 지정 썸네일 경험.
+* 긴 파일 이름을 처리하고, 작업 도구 설명을 통해 전체 이름을 간단히 확장할 수 있습니다.
+* 컨텐츠 종횡비에 맞게 썸네일을 개선하고 더 넓은 영역의 컨텐츠를 포함했습니다.
+* 콘텐츠 허브를 통해 지원되는 AEM에서 썸네일 경험을 사용자 정의합니다.
 * 색상 검색 개선.
-* 향상된 구성 덕분에 경험을 저장할 수 있습니다.
+* 구성 저장 경험이 개선되었습니다.
 * 작성자 이름을 반영하도록 컬렉션의 정보 페이지가 개선되었습니다.
 
 
@@ -91,38 +97,38 @@ Assetsas a Cloud Service 는 기존 PSD 파일 지원 외에도 Photoshop 대용
 
 ### AEM Forms의 새로운 프리릴리스 기능 {#forms-new-prerelease-features}
 
-#### 적응형 Forms 기반의 핵심 구성 요소에 대한 초안 자동 저장
+#### 핵심 구성 요소 기반 적응형 양식의 초안 자동 저장
 
-이제 부분적으로 완료된 양식을 초안으로 자동으로 저장하는 자동 저장 기능을 사용할 수 있습니다. 나중에 다시 돌아와 동일한 장치나 다른 장치에서 작성을 완료할 수 있습니다. 이 기능은 사용자가 처음부터 양식 채우기를 다시 시작할 필요가 없으므로 양식 포기를 줄여 조직의 전환율을 개선합니다.
+이제 사용자는 부분적으로 완료된 양식을 초안으로 자동 저장하는 자동 저장 기능을 활용할 수 있습니다. 나중에 돌아와 동일한 디바이스 또는 다른 디바이스에서 작성을 마칠 수 있습니다. 이 기능은 사용자가 처음부터 양식 채우기를 다시 시작할 필요가 없으므로 양식 포기를 줄여 조직의 전환율을 개선합니다.
 
 
 ### AEM Forms의 얼리 액세스 기능 {#forms-new-early-access-features}
 
-AEM Forms 조기 액세스 프로그램 은 혁신적인 최신 기술에 독점적으로 액세스하고 개발 환경을 구축할 수 있는 특별한 기회를 제공합니다.
+AEM Forms 얼리 액세스 프로그램은 최첨단 혁신에 독점적으로 액세스할 수 있는 특별한 기회를 제공하며, 혁신의 발전을 구체화하는 데 도움을 줍니다.
 
 이 릴리스 정보에는 현재 릴리스에서 제공되는 혁신 사항이 나열되어 있습니다. 얼리 액세스 프로그램에서 사용할 수 있는 전체 혁신 목록은 [AEM Forms 얼리 액세스 프로그램 설명서](/help/forms/early-access-ea-features.md)를 참조하십시오.
 
-#### AEM Forms AI Assistant
+#### AEM Forms AI 어시스턴트
 
-적응형 Forms을 위한 생성 AI는 양식 개발 프로세스에 완전히 새로운 수준의 권한과 편의성을 제공합니다. 이를 통해 이전보다 더 나은 양식을 더 빠르게 작성할 수 있습니다.
+적응형 양식에 생성형 AI를 사용하면 양식 개발 프로세스에 새로운 수준의 기능과 편의성이 구현됩니다. 그 어느 때보다 빠르게 효율적인 양식을 빌드할 수 있습니다.
 
-![생성 AI 도우미, 적응형 Forms](/help/forms/assets/generative-ai-assistant.png)
+![생성형 AI 어시스턴트, 적응형 양식](/help/forms/assets/generative-ai-assistant.png)
 
-오퍼의 생성 AI 기능은 다음과 같습니다.
+제공되는 생성형 AI 기능은 다음과 같습니다.
 
-* **제품 쿼리에 대한 AI 도우미**: AEM 양식 관련 질문에 대한 답변을 즉시 받아 보십시오. AI 비서는 고유한 개인 지식 기반 역할을 하며 플랫폼 내에서 직접 통찰력 있는 지침과 추천을 제공합니다.
+* **제품 쿼리용 AI 어시스턴트**: AEM 양식 관련 질문에 대한 즉각적인 답변을 얻습니다. AI 어시스턴트는 사용자 개인의 기술 자료로서 플랫폼에서 직접 통찰력 있는 지침 및 권장 사항을 제공합니다.
 
-* **적응형 양식 생성**: 생성 AI 프롬프트가 있는 완전한 양식을 쉽게 만들 수 있습니다. 생성 AI는 드롭오프를 줄이고 경험을 개인화하는 사용자 친화적인 양식을 자동으로 생성합니다.
+* **적응형 양식 생성**: 생성 AI 프롬프트가 있는 완전한 양식을 쉽게 만들 수 있습니다. Adobe의 생성 AI는 드롭오프를 줄이고 경험을 개인화하는 사용자 친화적인 양식을 자동으로 생성합니다.
 
-* **Forms에 대한 패널 생성**: 특정 데이터 수집 요구에 맞는 양식 섹션을 생성합니다. 예를 들어 결제 정보, 고객 환경 설정 또는 여행 세부 정보를 수집하기 위한 섹션을 생성합니다.
+* **양식용 패널 생성**: 특정 데이터 수집 요구에 맞춰 양식 섹션을 생성합니다. 예를 들어 결제 정보, 고객 선호도, 여행 세부 정보를 수집하는 섹션을 생성합니다.
 
-* **양식 레이아웃 변경**: 생성 AI 프롬프트를 사용하여 다양한 레이아웃 및 디자인을 실험해 보십시오. 마법사나 탭 보기와 같은 다양한 레이아웃을 사용하여 폼에 가장 적합한 레이아웃을 선택하십시오. 생성 AI 프롬프트 를 사용하여 모바일 응답성에 대한 양식을 최적화하고 사용자가 좋아하는 시각적으로 매력적인 양식을 만들 수 있습니다.
+* **양식 레이아웃 변경**: 생성 AI 프롬프트를 사용하여 다양한 레이아웃 및 디자인을 실험해 보십시오. 마법사 또는 탭 보기 등 다양한 레이아웃을 사용하여 양식에 가장 잘 맞는 디자인을 찾아 보십시오. 생성 AI 프롬프트를 사용하여 모바일 응답성을 위한 양식을 최적화하고 사용자가 좋아하는 시각적으로 매력적인 양식을 만듭니다.
 
-* **제출 동작 구성**: 양식에 대한 제출 동작을 쉽게 구성하려면 생성 AI 프롬프트를 사용합니다. 사전 빌드된 제출 액션 라이브러리 또는 자체 개발 팀에서 만들고 배포한 사용자 지정 제출 액션 목록에서 선택합니다.
+* **제출 동작 구성**: 양식에 대한 제출 동작을 쉽게 구성하려면 생성 AI 프롬프트를 사용합니다. 개발 팀에서 생성 및 배포한 미리 작성된 제출 액션 또는 사용자 지정 제출 액션의 라이브러리 중에서 선택합니다.
 
 >[!IMPORTANT]
 >
-> 혁신적인 기능을 위해 조기 액세스 프로그램에 참여하려면 공식 주소에서 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)(으)로 관심 있는 기능 목록과 함께 전자 메일을 보내면 됩니다.
+> Forms 혁신을 위한 Early Access Program에 참여하시겠습니까? 관심 있는 기능 목록을 포함하여 공식 주소에서 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)(으)로 전자 메일을 보냅니다.
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}

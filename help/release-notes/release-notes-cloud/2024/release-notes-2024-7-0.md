@@ -3,10 +3,11 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2024.7.0 릴리�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2024.7.0 릴리스 정보입니다.'
 feature: Release Information
 role: Admin
-source-git-commit: 2edaca5637c735645e2b761377b9681d9b48daa1
+exl-id: 6194df9d-8c3c-4c7f-be59-099b970a565a
+source-git-commit: fc578f35214327567aaa6f5d88a637df9428f87f
 workflow-type: tm+mt
-source-wordcount: '1518'
-ht-degree: 100%
+source-wordcount: '1605'
+ht-degree: 77%
 
 ---
 
@@ -60,19 +61,25 @@ ht-degree: 100%
 
 **자산 선택기를 사용하여 자산 업로드**
 
-이제 자산 선택기는 콘텐츠 작성자가 드래그하거나 로컬 파일 시스템에서 검색하여 최종 자산을 선택기에 직접 업로드할 수 있는 기능을 제공합니다. 이를 통해 선택한 애플리케이션에서 최종 자산을 DAM에 업로드할 수 있습니다.
+이제 에셋 선택기를 사용하여 콘텐츠 작성자가 로컬 파일 시스템에서 찾아보거나 드래그하여 선택기에서 직접 최종 에셋을 업로드할 수 있습니다. 이 기능을 사용하면 선택한 애플리케이션에서 최종 자산을 DAM에 업로드할 수 있습니다.
+
+### Dynamic Media의 조기 액세스 기능 {#dm-early-access}
+
+**AI 기반 비디오 캡션**
+
+Dynamic Media Adobe의 AI 기반 비디오 캡션은 인공 지능을 사용하여 비디오 컨텐츠에 대한 캡션을 자동으로 생성합니다. 이 기능은 정확한 실시간 캡션을 제공하여 접근성을 향상시키고 사용자 경험을 향상시키도록 설계되었습니다. AI는 비디오의 오디오 트랙을 분석하여 음성을 기록하고 캡션을 생성하며, 캡션은 정확도 또는 사용자 지정을 위해 편집할 수 있습니다. 이러한 캡션은 액세스 가능성 요구 사항을 충족하고 텍스트 기반 비디오 지원에 의존하거나 선호하는 대상의 비디오 참여를 개선하는 데 도움이 됩니다.
 
 ### Assets 보기의 새로운 기능 {#assets-view-new-features}
 
-**콘텐츠 자격 증명 통합**
+**Content Credentials 통합**
 
-이제 Experience Manager Assets는 지원되는 이미지 형식에 대해 콘텐츠 자격 증명을 지원합니다. 이를 통해 생성형 AI를 사용하여 수정되었는지 여부 등 자산의 계보와 생성 방법에 대한 정보를 제공합니다.
+이제 Experience Manager Assets는 지원되는 이미지 형식에 대해 Content Credentials을 지원합니다. 이 기능은 GenAI를 사용하여 자산을 수정했는지 여부 등 자산의 계보와 생성 방법에 대한 정보를 제공합니다.
 
-![콘텐츠 자격 증명](/help/assets/assets/content-credentials.png)
+![Content Credentials](/help/assets/assets/content-credentials.png)
 
 **폴더 콘텐츠의 시각적 미리보기**
 
-이제 Experience Manager Assets는 콘텐츠를 탐색하거나 검색할 때 폴더 썸네일에 폴더 내용의 시각적 미리보기를 표시하므로 AEM Assets 저장소 내에서 사용할 수 있는 자산의 검색 가능성이 향상됩니다.
+이제 Experience Manager Assets은 컨텐츠를 찾아보거나 검색할 때 폴더 썸네일에 폴더 컨텐츠의 시각적 미리보기를 표시하여 AEM Assets 저장소 내에서 사용할 수 있는 자산의 검색 기능을 향상시킵니다.
 
 <!--
 
@@ -93,7 +100,7 @@ When looking at the asset details, any image with content credentials added, suc
 
 #### 핵심 구성 요소 기반의 적응형 양식을 위한 향상된 시각적 규칙 편집기
 
-적응형 양식 작성자는 사용자 정의나 개발 팀의 도움 없이도 핵심 구성 요소에 대해 시각적 규칙 편집기에서 사용할 수 있는 반복 가능한 양식 필드를 사용하여 양식의 복잡한 비즈니스 로직을 구축할 수 있습니다.
+적응형 양식 작성자는 반복 가능한 양식 필드와 기본 제공 시각적 규칙 편집기 기능을 사용하여 사용자 정의나 개발 팀의 지원 없이 양식의 복잡한 비즈니스 논리를 만들 수 있습니다.
 
 ### AEM Forms의 얼리 액세스 기능 {#forms-new-early-access-features}
 
@@ -103,7 +110,7 @@ AEM Forms 얼리 액세스 프로그램은 누구보다 먼저 최첨단 혁신�
 
 #### 범용 편집기를 사용하여 적응형 양식 작성
 
-Adobe Experience Manager [범용 편집기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)를 사용하여 Edge Delivery Service를 통해 제공되는 헤드리스 및 헤드풀 등록 경험 모두에서 WYSIWYG 드래그 앤 드롭 작성 기능을 사용하여 적응형 양식을 만듭니다. 적응형 양식 작성자는 웹 페이지에서 양식의 변형에 대한 실험을 쉽게 만들고 실행할 수 있으며 최종 사용자를 위한 최상의 성능 경험을 결정할 수 있습니다.
+Adobe Experience Manager [범용 편집기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)를 사용하여 Edge Delivery Service를 통해 제공되는 헤드리스 및 헤드풀 등록 경험 모두에서 WYSIWYG 드래그 앤 드롭 작성 기능을 사용하여 적응형 양식을 만듭니다. 적응형 양식 작성자는 웹 페이지에서 양식의 변형에 대한 실험을 쉽게 만들고 시작할 수 있습니다. 이 기능을 통해 최종 사용자에게 최상의 성능 경험을 결정할 수 있습니다.
 
 >[!IMPORTANT]
 >
@@ -113,20 +120,21 @@ Adobe Experience Manager [범용 편집기](https://experienceleague.adobe.com/k
 
 ### 셀프서비스 API 키로 콘텐츠 전송 네트워크에서 콘텐츠 삭제 {#purge-cdn}
 
-HTTP Cache-Control 헤더를 사용하여 TTL을 설정하는 것은 콘텐츠 게재 성능과 콘텐츠 신선도의 균형을 맞추는 효과적인 방법입니다. 그러나 업데이트된 콘텐츠를 즉시 서비스하는 것이 중요한 상황에서는 콘텐츠 전송 네트워크 캐시를 직접 제거하는 것이 유용할 수 있습니다.
+HTTP Cache-Control 헤더를 사용하여 TTL을 설정하는 것은 콘텐츠 게재 성능과 콘텐츠 신선도의 균형을 맞추는 효과적인 방법입니다. 그러나 업데이트된 콘텐츠를 즉시 제공하는 것이 중요한 시나리오에서는 CDN 캐시를 직접 제거하는 것이 유용할 수 있습니다.
 
-Cloud Manager 구성 파이프라인을 사용하여 삭제 API 토큰을 셀프서비스로 구성하는 방법에 대해 [자세히 알아보십시오](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token). 다음과 같은 변형을 사용하여 [삭제 API를 호출](/help/implementing/dispatcher/cdn-cache-purge.md)할 수 있습니다.
+[Cloud Manager 구성 파이프라인을 사용하여 제거 API 토큰 구성을 셀프 서비스하는 방법을 알아봅니다](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token). 이렇게 하면 다음 변형 중 하나로 [제거 API를 호출](/help/implementing/dispatcher/cdn-cache-purge.md)할 수 있습니다.
+
 * 단일 URL
 * 태그를 사용한 여러 URL
 * 전체 콘텐츠 전송 네트워크 캐시 삭제
 
 ### 고객 관리 콘텐츠 전송 네트워크를 위한 X-AEM-Edge-Key의 셀프서비스 구성 {#customermanaged-keys}
 
-이전에는 고객 관리형 콘텐츠 전송 네트워크 구성에 필요한 X-AEM-Edge-Key를 생성하려면 지원 티켓이 필요했습니다. 이제 구성 파이프라인을 사용하여 배포되는 구성 파일에서 키 값을 선언하여 셀프서비스를 수행할 수 있으므로 새 환경에 대한 온보딩 작업이 지연되지 않습니다. [자세히 알아보기](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
+이전에는 고객 관리형 콘텐츠 전송 네트워크 구성에 필요한 X-AEM-Edge-Key를 생성하려면 지원 티켓이 필요했습니다. 이제 이 워크플로우는 구성 파이프라인을 사용하여 배포되는 구성 파일에서 키 값을 선언하여 새 환경 온보딩에 대한 지연을 제거하여 셀프서비스됩니다. [자세히 알아보기](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
 ### 트래픽 필터 규칙 경고 {#traffic-filter-rules-alerts}
 
-선택적으로 라이선스를 부여할 수 있는 WAF(웹 애플리케이션 방화벽) 규칙을 포함하는 트래픽 필터 규칙을 통해 차단되는 트래픽을 구성할 수 있습니다.
+선택적으로 라이선스가 부여된 웹 응용 프로그램 방화벽(WAF) 규칙을 포함하는 트래픽 필터 규칙을 사용하면 차단할 트래픽을 구성할 수 있습니다.
 
 이제 트래픽 필터 규칙이 트리거될 때마다 [경고를 구독](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts)할 수 있습니다. 액션 센터 이메일 알림은 특정 트래픽 상황이 발생할 때 적절한 조치를 취할 수 있도록 지속적으로 정보를 제공해 줍니다.
 
