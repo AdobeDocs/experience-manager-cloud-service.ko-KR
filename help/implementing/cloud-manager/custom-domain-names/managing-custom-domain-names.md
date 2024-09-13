@@ -5,7 +5,7 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4e887b753eaf09e104c68484792f00dcb08ee304
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 60%
@@ -41,7 +41,7 @@ Cloud Manager를 사용하여 사용자 정의 도메인 이름을 보고, 업�
 
 >[!NOTE]
 >
->SSL 인증서는 유효하고 [이미 구성됨](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)이어야 하며 업데이트하려는 사용자 지정 도메인 이름을 포함해야 합니다.
+>SSL 인증서는 유효하고 [이미 구성됨](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)이어야 하며 업데이트하려는 사용자 지정 도메인 이름을 포함해야 합니다.
 
 ## 사용자 정의 도메인 이름 삭제 {#deleting}
 

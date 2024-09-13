@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2020.12.0 �
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 11%
+source-wordcount: '657'
+ht-degree: 9%
 
 ---
 
@@ -32,7 +32,7 @@ as a Cloud Service 다음 섹션에서는 [!DNL Experience Manager]에 대한 �
 
 * 이제 AEM [!DNL Sites] 이미지 기반 핵심 구성 요소를 통해 [!DNL Dynamic Media] 기능에 액세스할 수 있습니다. 작성자는 웹 페이지를 만들 때 이미지 사전 설정, 스마트 자르기 및 이미지 수정자를 사용하도록 구성 요소를 빠르게 구성할 수 있습니다. [핵심 구성 요소 2.13.0 릴리스](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0)를 참조하십시오.
 
-* [!DNL Experience Manager] 데스크톱 앱을 사용하면 데스크톱 앱 인터페이스에서 Windows 탐색기 또는 Mac Finder의 파일을 끌어 놓아 파일과 폴더를 업로드할 수 있습니다. [데스크톱 앱을 사용하여 자산 추가](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)를 참조하세요.
+* [!DNL Experience Manager] 데스크톱 앱을 사용하면 데스크톱 앱 인터페이스에서 Windows 탐색기 또는 Mac Finder의 파일을 끌어 놓아 파일과 폴더를 업로드할 수 있습니다. [데스크톱 앱을 사용하여 자산 추가](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using#upload-and-add-new-assets-to-aem)를 참조하세요.
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -50,7 +50,7 @@ Adobe Experience Manager(AEM as a Cloud Service) 2020.12.0의 Cloud Manager 릴�
 
 ### [!DNL Cloud Manager]의 새로운 기능 {#what-is-new-cm}
 
-* [SSL 인증서](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) 및 [사용자 정의 도메인 이름](/help/implementing/cloud-manager/custom-domain-names/introduction.md)의 셀프서비스 관리
+* [SSL 인증서](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) 및 [사용자 정의 도메인 이름 소개](/help/implementing/cloud-manager/custom-domain-names/introduction.md)의 셀프 서비스 관리.
 
 * [IP 허용 목록](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)의 셀프서비스 관리
 
@@ -66,7 +66,7 @@ Adobe Experience Manager(AEM as a Cloud Service) 2020.12.0의 Cloud Manager 릴�
 
 ### [!DNL Code Refactoring Tools]의 새로운 기능 {#what-is-new-crt}
 
-* 새로운 버전의 AIO-CLI 플러그인이 출시되었습니다. 이 플러그인의 최신 버전에는 AEM Dispatcher Converter 및 Repository Modernizer에 대한 버그 수정이 포함되어 있으며 새 유틸리티인 Index Converter도 지원합니다. 이 플러그인에 대한 자세한 내용은 [통합 경험](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html#benefits)을 참조하세요.
+* 새로운 버전의 AIO-CLI 플러그인이 출시되었습니다. 이 플러그인의 최신 버전에는 AEM Dispatcher Converter 및 Repository Modernizer에 대한 버그 수정이 포함되어 있으며 새 유틸리티인 Index Converter도 지원합니다. 이 플러그인에 대한 자세한 내용은 [통합 경험](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience#benefits)을 참조하세요.
 
 * Index Converter는 고객의 사용자 지정 Oak 색인 정의를 AEM as a Cloud Service과 호환되는 Oak 색인 정의로 변환하는 데 사용할 수 있는 유틸리티입니다. 자세한 내용은 [인덱스 변환기](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)를 참조하십시오.
 
@@ -86,6 +86,6 @@ Adobe Experience Manager(AEM as a Cloud Service) 2020.12.0의 Cloud Manager 릴�
 
 ### 버그 수정 {#ctt-bug-fixes}
 
-* 마이그레이션 세트에 대한 CTT(Content Transfer Tool) 사용자 인터페이스 상태가 유지되지 않고 비활성 기간 후 변경되었습니다. 이 문제가 해결되었습니다.
-* 로그를 사용할 수 없는 경우 로그를 보는 옵션이 비활성화되었습니다. 이 문제가 해결되었으며 로그가 누락된 이유를 사용자에게 알리는 메시지가 추가되었습니다.
-* 사용자가 수집을 중지할 때 콘텐츠 전송 도구 사용자 인터페이스 상태가 *FAILED*&#x200B;로 표시되었습니다. 대신 *STOPPED*&#x200B;을 표시하도록 수정되었습니다.
+* 마이그레이션 세트에 대한 CTT(Content Transfer Tool) 사용자 인터페이스 상태가 유지되지 않고 비활성 기간 후 변경되었습니다. 이 문제는 이제 수정되었습니다.
+* 로그를 사용할 수 없는 경우 로그를 보는 옵션이 비활성화되었습니다. 이제 이 문제가 해결되었으며 로그가 누락된 이유를 사용자에게 알리기 위해 메시징이 추가되었습니다.
+* 사용자가 수집을 중지할 때 콘텐츠 전송 도구 사용자 인터페이스 상태가 *FAILED*&#x200B;로 표시되었습니다. 이 문제는 이제 *STOPPED*&#x200B;을(를) 대신 표시하도록 수정되었습니다.

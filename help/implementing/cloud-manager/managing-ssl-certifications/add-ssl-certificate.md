@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 9%
@@ -23,7 +23,7 @@ Cloud Manager의 셀프서비스 도구를 사용하여 고객 관리 SSL 인증
 
 인증서를 프로비저닝하는 데 며칠이 걸릴 수 있습니다. 따라서 Adobe은 마감일이나 Go-Live 날짜 이전에 인증서를 프로비저닝할 것을 권장합니다.
 
-[SSL 인증서 관리 소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements)에서 **인증서 요구 사항**&#x200B;을 검토하여 AEM as a Cloud Service에서 추가하려는 인증서를 지원하는지 확인하십시오.
+[SSL 인증서 관리 소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)에서 **인증서 요구 사항**&#x200B;을 검토하여 AEM as a Cloud Service에서 추가하려는 인증서를 지원하는지 확인하십시오.
 
 이 작업을 완료하려면 사용자가 **비즈니스 소유자** 또는 **배포 관리자** 역할의 멤버여야 합니다.
 
@@ -45,7 +45,7 @@ Cloud Manager의 셀프서비스 도구를 사용하여 고객 관리 SSL 인증
 
 1. 페이지의 오른쪽 상단 모서리에서 **SSL 인증서 추가**&#x200B;를 클릭합니다.
 
-1. **SSL 인증서 추가** 대화 상자에서 [특정 사용 사례](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)를 기준으로 다음 중 하나를 수행합니다.
+1. **SSL 인증서 추가** 대화 상자에서 [특정 사용 사례](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)를 기준으로 다음 중 하나를 수행합니다.
 
    | | 사용 사례 | 단계 |
    | --- | --- | --- |

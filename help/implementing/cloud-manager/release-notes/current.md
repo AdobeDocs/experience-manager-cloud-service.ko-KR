@@ -4,7 +4,7 @@ description: AEM as a Cloud Service의 Cloud Manager 2024.9.0 릴리스 정보�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 610ae004b6da2f7fc0dae2baa613cb363fe9fb00
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 83%
@@ -39,7 +39,7 @@ AEM as a Cloud Service의 Cloud Manager 2024.9.0 릴리스 일자는 2024년 9�
 
 * **Cloud Manager에서의 Edge Delivery Services 지원:**
 
-  AEM Sites의 일부로 Edge Delivery Services 라이선스가 있는 경우 [이제 Cloud Manager을 통해 직접 Edge Delivery Services을 통해 사이트를 온보딩할 수 있습니다](/help/implementing/cloud-manager/edge-delivery-services.md). 이 기능을 사용하여 안내식 셀프서비스 Go Live 경험을 제공합니다. 전체 AEM 속성에서 도메인 이름 관리, SSL 인증서, CDN 매핑과 같은 필수 워크플로를 통합하면 일관성과 효율성이 보장됩니다. <!-- CMGR-49859 -->
+  AEM Sites의 일부로 Edge Delivery Services 라이선스가 있는 경우 [이제 Cloud Manager을 통해 직접 Edge Delivery Services을 통해 사이트를 온보딩할 수 있습니다](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). 이 기능을 사용하여 안내식 셀프서비스 Go Live 경험을 제공합니다. 전체 AEM 속성에서 도메인 이름 관리, SSL 인증서, CDN 매핑과 같은 필수 워크플로를 통합하면 일관성과 효율성이 보장됩니다. <!-- CMGR-49859 -->
 
   >[!NOTE]
   >

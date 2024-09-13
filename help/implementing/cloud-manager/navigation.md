@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
 workflow-type: tm+mt
-source-wordcount: '1499'
-ht-degree: 76%
+source-wordcount: '1518'
+ht-degree: 68%
 
 ---
 
@@ -19,7 +19,7 @@ Cloud Manager UI가 구성되는 방식과 프로그램 및 환경을 관리하�
 
 Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니다.
 
-* [내 프로그램 콘솔](#my-programs-console)에서는 모든 프로그램을 조회하고 관리할 수 있습니다.
+* [내 프로그램 콘솔](#my-programs-console)에서는 모든 프로그램을 보고 관리할 수 있습니다.
 * [프로그램 개요 창](#program-overview)에서는 개별 프로그램의 세부 정보를 확인하고 관리할 수 있습니다.
 
 >[!TIP]
@@ -41,7 +41,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
    * 탭은 기본적으로 닫혀 있으며 [Cloud Manager 헤더](#cloud-manager-header)의 햄버거 메뉴를 사용하여 표시할 수 있습니다.
 1. [통계 및 콜 투 액션](#statistics) - 최근 활동 개요
 1. [**내 프로그램** 섹션](#my-programs-section) - 사용자의 모든 프로그램에 대한 개요 포함
-1. [빠른 링크](#quick-links-section) - 관련 리소스에 쉽게 액세스
+1. 관련 리소스에 쉽게 액세스할 수 있는 [빠른 링크](#quick-links-section).
 
 >[!TIP]
 >
@@ -57,7 +57,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 ![Experience Cloud 헤더](assets/experience-cloud-header.png)
 
-1. 햄버거 메뉴를 통해 개별 프로그램의 특정 부분으로 이동하거나 상황에 따라 [라이선스 대시보드](/help/implementing/cloud-manager/license-dashboard.md)와 **[내 프로그램](#my-programs-console)** 콘솔 간에 전환할 수 있는 탭에 액세스할 수 있습니다.
+1. 햄버거 메뉴를 통해 개별 프로그램의 특정 부분으로 이동할 수 있는 탭에 액세스할 수 있습니다. 또는 상황에 따라 [라이선스 대시보드](/help/implementing/cloud-manager/license-dashboard.md)와 **[내 프로그램](#my-programs-console)** 콘솔 간에 전환할 수 있습니다.
 1. Cloud Manager 버튼을 사용하면 Cloud Manager의 어느 위치에 있든 Cloud Manager의 내 프로그램 콘솔로 돌아갑니다.
 1. Cloud Manager에 대한 피드백을 Adobe에 제공하려면 피드백 버튼을 탭하거나 클릭합니다.
 1. 조직 선택기는 현재 로그인되어 있는 조직(이 예에서는 Foundation Internal)을 표시합니다. Adobe ID가 여러 조직과 연결된 경우 탭하거나 클릭하여 다른 조직으로 전환합니다.
@@ -96,7 +96,8 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 >
 >권한에 따라서는 특정 프로그램을 선택하지 못할 수도 있습니다.
 
-정렬 옵션을 사용하여 필요한 프로그램을 더 효과적으로 찾을 수 있습니다.
+
+필요한 프로그램을 보다 쉽게 찾으려면 정렬 옵션을 사용하십시오.
 
 ![정렬 옵션](/help/implementing/cloud-manager/assets/my-programs-sorting.png)
 
@@ -110,7 +111,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 #### 프로그램 카드 {#program-cards}
 
-모든 프로그램은 카드(또는 표의 행)로 표시되어 프로그램 개요, 그리고 조치를 취할 수 있는 빠른 링크를 제공합니다.
+카드(또는 테이블의 행)는 모든 프로그램을 나타내며 프로그램 개요 및 조치를 취할 수 있는 빠른 링크를 제공합니다.
 
 ![프로그램 카드](assets/program-card.png)
 
@@ -144,7 +145,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 ![정보](assets/information-list-view.png)
 
-줄임표 아이콘을 사용하면 프로그램에서 수행할 수 있는 추가 작업에 액세스할 수 있습니다.
+줄임표 아이콘을 사용하면 프로그램에서 수행할 수 있는 추가 액션에 액세스할 수 있습니다.
 
 ![프로그램의 줄임표 버튼](assets/program-ellipsis.png)
 
@@ -158,12 +159,13 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 >프로그램 및 프로그램 만들기 및 관리에 대한 자세한 내용은 다음 문서를 참조하십시오.
 >
 >* [프로그램 및 프로그램 유형](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
->* [샌드박스 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
 >* [프로덕션 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+>* [샌드박스 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
+
 
 ### 빠른 링크 섹션 {#quick-links-section}
 
-빠른 링크 섹션을 통해 일반적으로 사용되는 관련 리소스에 액세스할 수 있습니다.
+빠른 링크 섹션에서는 일반적으로 사용되는 관련 리소스에 액세스할 수 있습니다.
 
 ## 프로그램 개요 창 {#program-overview}
 
@@ -173,7 +175,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 프로그램 개요를 통해 Cloud Manager 프로그램의 모든 세부 정보에 액세스할 수 있습니다. **내 프로그램** 콘솔과 마찬가지로 여러 부분으로 구성됩니다.
 
-1. [도구 모음](#program-overview-toolbar) - 내 프로그램 콘솔로 빠르게 돌아가고 프로그램 탐색
+1. [도구 모음](#program-overview-toolbar): 내 프로그램 콘솔로 빠르게 돌아가서 프로그램을 탐색합니다.
 1. [탭](#program-tabs) - 프로그램의 다양한 측면 간 전환
 1. [콜 투 액션](#cta) - 프로그램의 마지막 작업에 기반
 1. [환경 개요](#environments) - 프로그램의 환경 개요
@@ -195,37 +197,47 @@ Cloud Manager 헤더에는 프로그램 개요의 탐색 가능한 탭을 표시
 
 #### 프로그램 도구 모음 {#program-toolbar-2}
 
-프로그램 도구 모음을 사용하면 다른 프로그램으로 빠르게 전환할 수 있을 뿐만 아니라 프로그램 추가 및 편집과 같이 상황에 맞는 작업에 액세스할 수도 있습니다.
+프로그램 도구 모음을 사용하면 다른 프로그램으로 빠르게 전환할 수 있을 뿐만 아니라 프로그램 추가 및 편집과 같이 상황에 맞는 액션에 액세스할 수도 있습니다.
 
 ![프로그램 도구 모음](assets/cloud-manager-program-toolbar.png)
 
-또한 햄버거 메뉴를 사용하여 탭을 숨긴 경우 도구 모음은 항상 현재 있는 탭을 표시합니다.
+햄버거 메뉴를 사용하여 탭을 숨긴 경우에도 도구 모음에는 현재 표시된 탭이 항상 표시됩니다.
 
 ### 프로그램 탭 {#program-tabs}
 
-각 프로그램에는 이와 관련된 많은 옵션과 데이터가 있습니다. 이러한 데이터는 탭으로 모여 있어 프로그램을 탐색하기가 더 쉽습니다. 탭을 통해 다음 항목에 액세스할 수 있습니다.
+각 프로그램에는 이와 관련된 많은 옵션과 데이터가 있습니다. 이러한 옵션과 데이터는 탭으로 취합되어 프로그램을 더 쉽게 탐색할 수 있습니다. 탭을 통해 다음 항목에 액세스할 수 있습니다.
+
+**프로그램**
 
 * 개요 - 현재 문서에 설명된 프로그램 개요
 * [활동](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) - 프로그램의 파이프라인 실행 기록
 * [파이프라인](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) - 프로그램에 대해 구성된 모든 파이프라인
 * [저장소](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - 프로그램에 대해 구성된 모든 저장소
 * [보고서](/help/implementing/cloud-manager/sla-reporting.md) - SLA 데이터 등의 지표
+
+**서비스**
+
 * [환경](/help/implementing/cloud-manager/manage-environments.md) - 프로그램에 대해 구성된 모든 환경
+* [Edge Delivery 사이트](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) - Edge Delivery 사이트 관리
 * [도메인 설정](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - 프로그램의 사용자 지정 도메인 이름 관리
-* [SSL 인증서](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) - 프로그램에 대한 SSL 인증서 관리
+* [SSL 인증서](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) - 프로그램에 대한 SSL 인증서 관리
+* [CDN 구성](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - CDN 구성 관리
 * [IP 허용 목록](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - 특정 IP 주소에 대한 허용 목록 정의
 * [콘텐츠 세트](/help/implementing/developing/tools/content-copy.md) - 복사 목적으로 만들어진 콘텐츠 세트
 * [콘텐츠 복사 활동](/help/implementing/developing/tools/content-copy.md) - 콘텐츠 복사 활동
 * [네트워크 인프라](/help/security/configuring-advanced-networking.md) - 프로그램의 고급 네트워킹 옵션 관리
+
+**리소스**
+
 * 학습 경로 - Cloud Manager의 추가 학습 리소스
 
 기본적으로 프로그램을 열면 **개요** 탭이 표시됩니다. 현재 탭이 강조 표시됩니다. 세부 정보를 보려면 다른 탭을 선택합니다.
 
 탭을 숨기려면 [Cloud Manager 헤더](#cloud-manager-header-2)의 햄버거 메뉴를 사용합니다.
 
-### 콜 투 액션 {#cta}
+### 콜 투 섹션 {#cta}
 
-콜 투 액션 섹션에서는 프로그램 상태에 따라 유용한 정보를 제공합니다. 새 프로그램의 경우 다음 단계 및 Go-Live 날짜 알림 메시지가 표시될 수 있습니다. [프로그램 생성 중 설정](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
+콜 투 액션 섹션에서는 프로그램 상태에 따라 유용한 정보를 제공합니다. 새 프로그램의 경우 지정된 다음 단계와 Go-Live 날짜 미리 알림을 볼 수 있습니다. [프로그램을 만드는 동안 설정](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
 ![새 프로그램에 대한 클릭 유도 문안](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 

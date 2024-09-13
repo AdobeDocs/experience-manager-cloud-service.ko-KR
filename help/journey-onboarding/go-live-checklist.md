@@ -4,10 +4,10 @@ description: AEM as a Cloud Service에서 성공적인 실행을 위해 갖춰�
 exl-id: b424a9db-0f3b-4a8d-be84-365d68df46ca
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
-workflow-type: ht
-source-wordcount: '568'
-ht-degree: 100%
+source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
+workflow-type: tm+mt
+source-wordcount: '567'
+ht-degree: 99%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 100%
       * CDN 공급업체의 설명서에 따라 SSL 및 DNS를 구성합니다.
    * 추가 CDN을 사용하지 않는 경우 다음 문서에 따라 SSL 및 DNS를 관리합니다.
       * SSL 인증서 관리
-         * [SSL 인증서 관리 소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         * [SSL 인증서 소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
          * [SSL 인증서 관리](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * 맞춤형 도메인 이름(DNS) 관리
          * DNS 컷오버로 인해 예기치 못한 문제가 발생하지는 않는지 확인하십시오. 실행 후 UAT 테스트를 수행하기 전에 프로덕션 인스턴스를 연결할 테스트 하위 도메인을 만드십시오. 즉, 도메인이 example.com인 경우 하위 도메인 test.example.com을 만들어 프로덕션에 적용할 수 있습니다. 도메인의 UAT 테스트 중에 적절한 링크 리디렉션, 캐싱 및 Dispatcher 구성과 같은 항목을 찾아보십시오.

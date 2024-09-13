@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 34904bc7cd0f13d7f2bccb6f6e21057cb7eb9a4f
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
-source-wordcount: '5621'
+source-wordcount: '5638'
 ht-degree: 97%
 
 ---
@@ -1122,7 +1122,9 @@ ht-degree: 97%
       + [알림](/help/implementing/cloud-manager/notifications.md)
       + [고급 네트워킹](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=ko)
       + Edge Delivery Sites {#edge-delivery-sites}
-         + [Cloud Manager에서의 Edge Delivery 지원](/help/implementing/cloud-manager/edge-delivery-services.md)
+         + [Cloud Manager의 Edge Delivery Services 소개](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
+         + [Cloud Manager에 Edge Delivery 사이트 추가](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
+         + [Cloud Manager에서 Edge Delivery 사이트 관리](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + 도메인 설정 {#custom-domain-names}
          + [도메인 설정 소개](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [사용자 정의 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
@@ -1130,7 +1132,7 @@ ht-degree: 97%
          + [DNS 레코드 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [사용자 정의 도메인 이름 관리](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
       + SSL 인증서 {#manage-ssl-certificates}
-         + [SSL 인증서 소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         + [SSL 인증서 소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
          + [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [SSL 인증서 오류 문제 해결](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [SSL 인증서 관리](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)

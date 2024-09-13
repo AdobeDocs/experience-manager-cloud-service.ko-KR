@@ -4,9 +4,9 @@ description: AEM 관리 CDN을 사용하는 방법과 자체 CDN을 AEM 관리 C
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
+source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1608'
 ht-degree: 11%
 
 ---
@@ -34,11 +34,10 @@ Edge Delivery Services 계층에 게시하려는 고객은 Adobe의 관리 CDN�
 
 Cloud Manager의 셀프서비스 UI를 통해 AEM의 기본 제공 CDN을 사용하여 컨텐츠 전달을 준비하려면 Adobe의 관리 CDN 기능을 활용할 수 있습니다. 이 기능을 사용하면 DV(도메인 유효성 검사) 또는 EV/OV(확장/조직 유효성 검사) 인증서와 같은 SSL 인증서 구성 및 설치를 포함하여 셀프서비스 CDN 관리를 처리할 수 있습니다. 이러한 메서드에 대한 자세한 내용은 다음을 참조하십시오.
 
-* [SSL 인증서 관리](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+* [Cloud Manager의 Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
+* [사용자 정의 도메인 이름 소개](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+* [SSL 인증서 소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
 * [CDN 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-* [사용자 정의 도메인 이름 관리](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-* [Cloud Manager에서의 Edge Delivery Services 지원](/help/implementing/cloud-manager/edge-delivery-services.md)
-
 
 **트래픽 제한**
 
@@ -185,7 +184,7 @@ AEM Managed CDN은 다음과 같이 각 요청에 헤더를 추가합니다.
 >
 >고객 관리 CDN이 있는 경우 이러한 헤더는 실제 클라이언트가 아닌 고객의 CDN 프록시 서버의 위치를 반영합니다. 고객이 관리하는 CDN을 사용할 때는 고객이 자체 CDN을 통해 지리적 위치 헤더를 관리해야 합니다.
 
-국가 코드 값은 [ISO 3166-1](https://en.wikipedia.org/wiki/kr/ISO_3166-1)에 설명된 Alpha-2 코드입니다.
+국가 코드 값은 [ISO 3166-1](https://ko.wikipedia.org/wiki/kr/ISO_3166-1)에 설명된 Alpha-2 코드입니다.
 
 대륙 코드의 값은 다음과 같습니다.
 
