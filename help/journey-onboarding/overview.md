@@ -6,20 +6,20 @@ recommendations: noDisplay
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1295'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
 
 # 온보딩 여정 {#onboarding-journey}
 
-AEM as a Cloud Service를 선택해 주셔서 감사합니다. 이 문서는 온보딩 프로세스를 통해 안내하는 여정의 시작점입니다. 새 애플리케이션을 배포하든 기존 애플리케이션을 마이그레이션하든 관계없이 이 온보딩 여정은 팀을 설정합니다. 이를 통해 AEM as a Cloud Service에 액세스할 수 있습니다.
+AEM as a Cloud Service를 선택해 주셔서 감사합니다. 이 문서는 온보딩 프로세스를 통해 안내하는 여정의 시작점입니다. 새로운 애플리케이션 배포 또는 기존 애플리케이션 마이그레이션 모두에서 이 온보딩 여정으로 팀을 준비할 수 있습니다. 이는 AEM as a Cloud Service를 사용할 수 있도록 해 줍니다.
 
 ## 소개 {#introduction}
 
-Adobe Experience Manager는 채널에서 깊은 인상을 주는 개인화된 경험을 신속하게 제공하여 모두에게 콘텐츠를 제공하는 구성 가능한 강력한 콘텐츠 서비스 세트입니다. **Edge Delivery Services**&#x200B;는 최고의 콘텐츠 속도와 탁월한 경험을 제공하는 Adobe Experience Manager의 최신 혁신 기술입니다. [Edge Delivery Services 개요](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview)를 참조하여 Edge Delivery Services를 시작하는 방법을 알아보십시오. Edge Delivery Services를 사용하는 방법을 이해하려면 [개발자 튜토리얼](https://www.aem.live/developer/tutorial) 페이지를 참조하십시오.
+Adobe Experience Manager는 채널에서 깊은 인상을 주는 개인화된 경험을 신속하게 제공하여 모두에게 콘텐츠를 제공하는 구성 가능한 강력한 콘텐츠 서비스 세트입니다. **Edge Delivery Services**&#x200B;는 최고의 콘텐츠 속도와 탁월한 경험을 제공하는 Adobe Experience Manager의 최신 혁신 기술입니다. [Edge Delivery Services 개요](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/edge-delivery/overview)를 참조하여 Edge Delivery Services를 시작하는 방법을 알아보십시오. Edge Delivery Services를 사용하는 방법을 이해하려면 [개발자 튜토리얼](https://www.aem.live/developer/tutorial) 페이지를 참조하십시오.
 
 온보딩은 지정된 시스템 관리자가 조직에 대해 AEM as a Cloud Service을 설정하는 프로세스입니다. 이 프로세스에는 클라우드 리소스의 초기 프로비저닝과 직무에 따라 사용자를 역할에 할당하는 것이 포함됩니다. 결과적으로 각 멤버는 AEM as a Cloud Service 리소스에 로그인하고 액세스할 수 있습니다.
 
@@ -42,34 +42,34 @@ AEM as a Cloud Service를 시작할 때 알아야 할 것이 많은 것처럼 �
 
 * **약정** - Adobe 약정은 온보딩 프로세스의 측면을 정의하므로 잘 알고 있어야 합니다.
 * **Admin Console** - 여기에서 사용자를 관리하고 역할을 할당합니다.
-* **Cloud Manager** - 프로그램, 환경 등의 리소스를 설정하는 도구입니다. 또한 여기에서 Git에 액세스하고 파이프라인을 만들어 사용자 지정 코드를 관리하고 배포할 수 있습니다.
+* **Cloud Manager** - 프로그램, 환경 등의 리소스를 설정하는 도구입니다. 또한 여기에서 Git에 액세스하고 파이프라인을 만들어 사용자 정의 코드를 관리 및 배포합니다.
 
-이러한 개념은 이 온보딩 여정에서 자세히 설명됩니다. 목표는 여정이 끝날 때 다음을 수행할 수 있다는 것입니다.
+이러한 개념은 이 온보딩 여정에서 자세히 설명됩니다. 이 여정의 목표는 여정이 끝났을 때 다음과 같은 작업을 수행할 수 있도록 하는 것입니다.
 
-* 필요한 사용자에게 AEM as a Cloud Service에 대한 액세스 권한을 부여합니다.
-* 프로젝트에 대한 첫 번째 클라우드 리소스를 설정합니다.
+* 필요한 사용자에게 AEM as a Cloud Service에 대한 액세스 권한 부여
+* 프로젝트에 대한 첫 번째 클라우드 리소스 설정.
 * 첫 번째 코드 배포 및 첫 번째 콘텐츠 작성 방법 이해
 
 기본적으로 새 AEM as a Cloud Service 프로젝트를 시작하게 됩니다!
 
 ## 대상자 {#audience}
 
-온보딩 여정은 일반적으로 AEM as a Cloud Service 및 AEM을 처음 사용하는 고객의 **시스템 관리자**&#x200B;를 위해 특별히 작성되었습니다. 시스템 관리자는 AEM as a Cloud Service 계약에 서명한 후 Adobe이 먼저 연락하는 사람입니다. 일반적으로 AEM as a Cloud Service 리소스를 처음 액세스하고 설정하는 사람입니다. 이 주제를 읽고 있다면 시스템 관리자일 가능성이 높습니다.
+일반적으로 온보딩 여정은 AEM as a Cloud Service 및 AEM을 처음 시작하는 고객의 **시스템 관리자**&#x200B;를 위해 특별히 작성되었습니다. 시스템 관리자는 AEM as a Cloud Service 약정에 서명한 후 Adobe에서 처음으로 연락하는 개인입니다. 일반적으로 AEM as a Cloud Service 리소스를 처음 액세스하고 설정하는 사람입니다. 이 주제를 읽고 있다면 시스템 관리자일 가능성이 높습니다.
 
 시스템 관리자는 액세스에서 권한에 이르기까지 조직의 AEMaaCS 사용자의 모든 측면을 관리합니다. 그러나 시스템 관리자는 그 과정에서 다른 담당자와 상호 작용해야 합니다.
 
 | 담당자 | 설명 | 여정에서의 역할 |
 |---|---|---|
-| 시스템 관리자 | 이 여정의 대상은 클라우드 리소스의 초기 프로비저닝과 직무에 따라 적절한 역할에 사용자를 할당합니다 | 액세스부터 권한까지 사용자의 모든 측면을 관리합니다. |
-| 콘텐츠 작성자 | AEM에서 콘텐츠를 만들고 검토합니다. | 시스템 관리자가 권한을 부여하면 작성자가 콘텐츠를 만들 때 자체 여정을 시작할 수 있습니다 |
-| 개발자 | 다양한 소스의 콘텐츠를 사용하는 AEM 애플리케이션 개발 | 시스템 관리자가 권한을 부여하면 개발자는 솔루션 개발에서 자체 여정을 시작할 수 있습니다 |
+| 시스템 관리자 | 이 여정의 대상은 클라우드 리소스의 초기 프로비저닝과 직무에 따라 적절한 역할에 사용자를 할당합니다. | 액세스부터 권한까지 사용자의 모든 측면을 관리합니다. |
+| 콘텐츠 작성자 | AEM에서 콘텐츠를 만들고 검토합니다. | 시스템 관리자가 권한을 부여하면 작성자가 콘텐츠를 만드는 여정을 시작할 수 있습니다. |
+| 개발자 | 다양한 소스의 콘텐츠를 사용하는 AEM 애플리케이션을 개발합니다 | 시스템 관리자가 권한을 부여하면 개발자는 솔루션 개발 여정을 시작할 수 있습니다 |
 | 배포 관리자 | 환경을 추가 또는 업데이트하고, 파이프라인을 실행하고, AEM 환경 또는 코드 품질에 코드를 배포합니다. | 시스템 관리자가 권한을 부여하면 배포 관리자는 배포 관리 여정을 시작할 수 있습니다. |
 
 이 온보딩 안내서는 시스템 관리자로서 온보딩하는 전체 프로세스를 보여 줍니다. AEM 사용자, 개발자 및 배포 관리자의 역할은 여정의 부가적인 선택 사항으로 간략하게 살펴봅니다.
 
 >[!TIP]
 >
->AEM as a Cloud Service을 처음 사용하고 AEM에 익숙하며 온-프레미스 또는 Adobe Managed Services에서 마이그레이션하는 경우 [AEM as a Cloud Service 마이그레이션 여정](/help/journey-migration/getting-started.md)을 확인하세요.
+>AEM as a Cloud Service를 처음 사용하고, AEM에 익숙하고, On-Premise 또는 Adobe Managed Services에서 마이그레이션하는 경우 [AEM as a Cloud Service 마이그레이션 여정](/help/journey-migration/getting-started.md)을 확인하십시오.
 
 ## 온보딩 여정 개요 {#overview}
 
@@ -95,14 +95,14 @@ AEM as a Cloud Service를 시작할 때 알아야 할 것이 많은 것처럼 �
 
 ## AEM 설명서 여정 {#documentation-journeys}
 
-[설명서 여정](/help/journey-documentation/documentation-journeys.md)은(는) 다양하고 복잡한 주제와 기능을 결합합니다. AEM을 처음 접할 수 있는 독자가 최소한의 사전 주제 또는 AEM 지식을 전제로 비즈니스 문제를 처음부터 끝까지 이해하고 해결하는 데 도움이 되는 묘사를 제공합니다.
+[설명서 여정](/help/journey-documentation/documentation-journeys.md)은 다양하고 복잡한 주제와 기능을 결합합니다. AEM을 처음 접할 수 있는 독자가 최소한의 사전 주제 또는 AEM 지식을 전제로 비즈니스 문제를 처음부터 끝까지 이해하고 해결하는 데 도움이 되는 묘사를 제공합니다.
 
-설명서 여정은 모범 사례 원칙을 중심으로 설계되었습니다. Adobe의 최신 연구, Adobe 컨설턴트의 입증된 구현 경험 및 고객 프로젝트의 피드백을 통해 관련 정보를 제공합니다.
+설명서 여정은 모범 사례 원칙을 중심으로 설계되었습니다. 이들은 Adobe의 최신 연구, Adobe 컨설턴트의 검증된 구현 경험, 고객 프로젝트에서의 피드백을 활용하여 정보를 얻습니다.
 
-Adobe이 새 AEM as a Cloud Service 애플리케이션에 팀을 온보딩하는 방법에 대해 권장하는 사항을 알아보려면 여기에서 시작하십시오.
+Adobe에서 권해 드리는 새로운 AEM as a Cloud Service 애플리케이션에 팀을 온보딩하는 방법을 알아보려면 여기에서 시작하십시오.
 
 ## 추가 리소스 {#additional-resources}
 
 온보딩 여정의 콘텐츠를 능가하려는 경우 다음은 추가적인 옵션 리소스입니다.
 
-* [AEM as a Cloud Service에 온보딩](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding) - 이 간략한 비디오는 AEM용 Cloud Service 온보딩 프로세스에 대한 개요를 제공합니다.
+* [AEM as a Cloud Service에 온보딩](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding) - 이 간략한 비디오는 AEM용 Cloud Service 온보딩 프로세스에 대한 개요를 제공합니다.
