@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
+source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
 workflow-type: tm+mt
 source-wordcount: '722'
-ht-degree: 17%
+ht-degree: 13%
 
 ---
 
@@ -87,4 +87,4 @@ SSL 인증서에 대한 CDN 구성이 이미 있는 경우 **SSL 인증서** 페
 
 자세한 내용은 [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)를 참조하십시오.
 
-IP 허용 목록 또는 사용자 정의 도메인 이름에 대한 기존 CDN 구성이 있는 환경의 **IP 허용 목록** 및 **환경** 페이지에도 유사한 메시지가 제공됩니다.
+IP 허용 목록 또는 사용자 지정 허용 목록 이름에 대한 기존 CDN 구성이 있는 환경의 **IP 도메인** 및 **환경** 페이지에도 유사한 메시지가 제공됩니다.

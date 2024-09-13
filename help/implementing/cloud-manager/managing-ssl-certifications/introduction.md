@@ -1,19 +1,19 @@
 ---
-title: SSL 인증서 관리 소개
+title: SSL 인증서 소개
 description: Cloud Manager가 SSL 인증서를 설치하기 위한 셀프서비스 도구를 제공하는 방법을 알아봅니다.
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc9aa376a402a55191e153f662262ff65df32f5e
+source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 41%
+source-wordcount: '765'
+ht-degree: 34%
 
 ---
 
 
-# SSL 인증서 관리 소개{#introduction}
+# SSL 인증서 소개{#introduction}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
@@ -37,7 +37,7 @@ Cloud Manager은 SSL(Secure Socket Layer) 인증서를 설치하고 관리하는
 >고객은 DV(도메인 유효성 검사) 인증서를 업로드할 수 없습니다.
 
 
-## 인증서 소개 {#certificates}
+## SSL 인증서 소개 {#certificates}
 
 기업과 조직은 웹 사이트를 보호하고 고객이 웹 사이트를 신뢰할 수 있도록 하기 위해 SSL 인증서를 사용합니다. SSL 프로토콜을 사용하려면 웹 서버에서 SSL 인증서를 사용해야 합니다.
 
@@ -46,8 +46,6 @@ Cloud Manager은 SSL(Secure Socket Layer) 인증서를 설치하고 관리하는
 >[!IMPORTANT]
 >
 >Cloud Manager는 SSL 인증서 또는 개인 키를 제공하지 않습니다. 이러한 사항은 신뢰할 수 있는 타사 조직인 인증 기관에서 받아야 합니다. 일부 잘 알려진 인증 기관에는 *DigiCert*, *암호화하겠습니다*, *GlobalSign*, *Entrust* 및 *Verisign*&#x200B;이(가) 있습니다.
-
-## Cloud Manager SSL 관리 기능 {#features}
 
 Cloud Manager는 다음과 같은 고객 SSL 인증서 사용 옵션을 지원합니다.
 
@@ -58,14 +56,9 @@ Cloud Manager는 다음과 같은 고객 SSL 인증서 사용 옵션을 지원�
 * 플랫폼 TLS 서비스는 종료하는 데 사용된 SSL 인증서와 해당 도메인을 호스팅하는 CDN 서비스를 기반으로 고객의 CDN 서비스로 요청을 라우팅합니다.
 * AEM as a Cloud Service는 도메인에 대한 와일드카드 SSL 인증서를 허용합니다.
 
-## 권장 사항 {#recommendations}
+AEM as a Cloud Service은 보안 `https`개 사이트만 지원합니다. 사용자 정의 도메인이 여러 개인 고객은 도메인을 추가할 때마다 인증서를 업로드하는 것을 원하지 않습니다. 이러한 고객은 여러 도메인이 포함된 하나의 인증서를 사용할 수 있습니다.
 
-AEM as a Cloud Service는 보안 `https` 사이트만 지원합니다.
-
-* 사용자 정의 도메인이 여러 개인 고객은 도메인을 추가할 때마다 인증서를 업로드하는 것을 원하지 않습니다.
-* 이러한 고객은 여러 도메인이 포함된 하나의 인증서를 사용할 수 있습니다.
-
-## 인증서 요구 사항 {#requirements}
+## SSL 인증서 요구 사항 {#requirements}
 
 * AEM as a Cloud Service은 OV(조직 유효성 검사), EV(확장 유효성 검사) 또는 DV(도메인 유효성 검사) 정책을 준수하는 인증서를 수락합니다. <!-- CQDOC-21758, #2 -->
 * 모든 인증서는 일치하는 2048비트 RSA 개인 키가 있는 신뢰할 수 있는 인증 기관의 X.509 TLS 인증서여야 합니다.
@@ -73,7 +66,7 @@ AEM as a Cloud Service는 보안 `https` 사이트만 지원합니다.
 
 OV 및 EV 인증서는 CA 검증 정보를 제공합니다. 이러한 정보는 사용자가 웹 사이트 소유자, 이메일 발신자 또는 코드 또는 PDF 문서의 디지털 서명자를 신뢰할 수 있는지 평가하는 데 도움이 됩니다. DV 인증서는 이러한 소유권 확인을 허용하지 않습니다.
 
-### 고객 관리 인증서 형식 {#certificate-format}
+### 고객 관리 SSL 인증서 형식 {#certificate-format}
 
 <!-- CQDOC-21758, #3 -->
 
@@ -99,14 +92,11 @@ Cloud Manager와 함께 설치하려면 SSL 인증서 파일이 PEM 포맷이어
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
 
-## 제한 사항 {#limitations}
+## 설치된 SSL 인증서 수 제한 {#limitations}
 
 언제든지 Cloud Manager에서 설치된 SSL 인증서를 최대 50개까지 허용합니다. 이러한 인증서는 프로그램에서 하나 이상의 환경과 연결될 수 있으며 만료된 인증서도 포함됩니다.
 
-제한에 도달한 경우 인증서를 검토하고 다음을 고려하십시오.
-
-* 만료된 인증서 삭제
-* 인증서에 여러 도메인(최대 100개의 SAN)을 포함할 수 있으므로 동일한 인증서에서 여러 도메인을 그룹화합니다.
+한도에 도달한 경우 인증서를 검토하고 만료된 인증서를 삭제하는 것을 고려하십시오. 또는 인증서에 여러 도메인(최대 100개의 SAN)을 포함할 수 있으므로 동일한 인증서에서 여러 도메인을 그룹화합니다.
 
 ## 자세히 알아보기 {#learn-more}
 
