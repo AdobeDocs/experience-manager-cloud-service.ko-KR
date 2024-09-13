@@ -2,7 +2,7 @@
 source-git-commit: 11368914a78c1f47c2f341a112bf981545cf6203
 workflow-type: tm+mt
 source-wordcount: '993'
-ht-degree: 69%
+ht-degree: 93%
 
 ---
 # 스니펫 {#snippets}
@@ -17,42 +17,42 @@ ht-degree: 69%
 
 ## 추가 참조 {#see-also}
 
-* [AEM 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md)
-* [AEM Sites 페이지에 AEM 적응형 양식 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [AEM 적응형 양식에 테마 적용](/help/forms/using-themes-in-core-components.md)
-* [AEM 적응형 양식에 구성 요소 추가](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
-* [AEM 적응형 양식에서 CAPTCHA 사용](/help/forms/captcha-adaptive-forms-core-components.md)
-* [AEM 적응형 양식의 PDF 버전(DoR) 생성](/help/forms/generate-document-of-record-core-components.md)
-* [AEM 적응형 양식 번역](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
-* [적응형 양식에 대해 Adobe Analytics를 활성화하여 양식 사용 추적](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
-* [Microsoft SharePoint에 적응형 양식 연결](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive)
-* [Microsoft Power Automate에 적응형 양식 연결](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
-* [Microsoft OneDrive에 적응형 양식 연결](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration)
-* [Microsoft Azure Blob Storage에 적응형 양식 연결](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
-* [Salesforce에 적응형 양식 연결](/help/forms/aem-forms-salesforce-integration.md)
-* [AEM 적응형 양식에서 Adobe Sign 사용](/help/forms/working-with-adobe-sign.md)
-* [적응형 양식에 대해 새 로케일 추가](/help/forms/supporting-new-language-localization-core-components.md)
-* [적응형 양식 데이터를 데이터베이스로 보내기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
-* [적응형 양식 데이터를 REST 엔드포인트로 보내기](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
-* [적응형 양식 데이터를 AEM 워크플로로 보내기](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
-* [Forms 포털을 사용하여 AEM 웹 사이트에 AEM 적응형 양식 나열](/help/forms/configure-forms-portal.md)
-* [적응형 양식에 버전 관리, 댓글 및 주석 추가](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
-* [적응형 양식 비교](/help/forms/compare-forms.md)
+* [AEM 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md)
+* [AEM 적응형 Forms을 AEM Sites 페이지에 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [AEM 적응형 Forms에 테마 적용](/help/forms/using-themes-in-core-components.md)
+* [AEM 적응형 Forms에 구성 요소 추가](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
+* [AEM 적응형 Forms에서 CAPTCHA 사용](/help/forms/captcha-adaptive-forms-core-components.md)
+* [AEM 적응형 Forms의 PDF 버전(DoR) 생성](/help/forms/generate-document-of-record-core-components.md)
+* [AEM 적응형 Forms 번역](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+* [적응형 Forms에 대해 Adobe Analytics를 활성화하여 Forms 사용 추적](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+* [Microsoft SharePoint에 적응형 Forms 연결](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive)
+* [Microsoft Power Automate에 적응형 Forms 연결](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+* [Microsoft OneDrive에 적응형 Forms 연결](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration)
+* [Microsoft Azure Blob Storage에 적응형 Forms 연결](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
+* [Salesforce에 적응형 Forms 연결](/help/forms/aem-forms-salesforce-integration.md)
+* [AEM 적응형 Forms에서 Adobe Sign 사용](/help/forms/working-with-adobe-sign.md)
+* [적응형 Forms에 대해 새 로케일 추가](/help/forms/supporting-new-language-localization-core-components.md)
+* [적응형 Forms 데이터를 데이터베이스로 보내기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
+* [적응형 Forms 데이터를 REST 엔드포인트로 보내기](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
+* [적응형 Forms 데이터를 AEM 워크플로로 보내기](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
+* [Forms 포털을 사용하여 AEM 웹 사이트에 AEM 적응형 Forms 나열](/help/forms/configure-forms-portal.md)
+* [적응형 Forms에 버전 관리, 댓글 및 주석 추가](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
+* [적응형 Forms 비교](/help/forms/compare-forms.md)
 
 
-## 적응형 양식 제출 액션 {#af-submit-action}
+## 적응형 Forms 제출 액션 {#af-submit-action}
 
 * [이메일 보내기](/help/forms/configure-submit-action-send-email.md)
 * [SharePoint에 제출](/help/forms/configure-submit-action-sharepoint.md)
-* [양식 데이터 모델을 사용하여 제출](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
+* [Forms 데이터 모델을 사용하여 제출](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
 * [Azure Blob 스토리지에 제출](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [REST 엔드포인트에 제출](/help/forms/configure-submit-action-restpoint.md)
 * [OneDrive에 제출](/help/forms/configure-submit-action-onedrive.md)
 * [AEM Workflow 호출](/help/forms/configure-submit-action-workflow.md)
 * [Power Automate에 제출](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Workfront Fusion에 제출](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Salesforce 애플리케이션에 적응형 양식 연결](/help/forms/aem-forms-salesforce-integration.md)
-* [Microsoft에 적응형 양식 연결](/help/forms/ms-dynamics-odata-configuration.md)
+* [Salesforce 애플리케이션에 적응형 Forms 연결](/help/forms/aem-forms-salesforce-integration.md)
+* [Microsoft에 적응형 Forms 연결](/help/forms/ms-dynamics-odata-configuration.md)
 
 ## 추가 참조 {#see-more-forms-eds}
 
@@ -63,10 +63,10 @@ ht-degree: 69%
 * [양식 모양 사용자 정의&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
 * [양식에 반복 가능한 섹션 추가&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [양식 제출 후 사용자 정의 감사 메시지 표시&#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
-* [적응형 양식 블록 구성 요소 및 해당 속성](/help/edge/docs/forms/form-components.md)
+* [적응형 Forms 블록 구성 요소 및 해당 속성](/help/edge/docs/forms/form-components.md)
 
 
-## 핵심 구성 요소의 규칙 편집기와 기초 구성 요소의 규칙 편집기 간의 차이점 {#rule-editor-diff}
+## 핵심 구성 요소의 규칙 편집기와 기초 구성 요소의 규칙 편집기 간 차이점 {#rule-editor-diff}
 
 다음 표에서는 규칙 편집기의 핵심 구성 요소와 규칙 편집기의 기본 구성 요소에서 사용할 수 있는 기능 간의 차이점을 보여 줍니다.
 
@@ -74,28 +74,28 @@ ht-degree: 69%
   <tbody>
   <tr>
     <td><strong>기능</strong></td>
-    <td><strong>적응형 양식 기초 구성 요소</strong></td>
-    <td><strong>적응형 양식 핵심 구성 요소</strong></td>   
+    <td><strong>적응형 Forms 기초 구성 요소</strong></td>
+    <td><strong>적응형 Forms 핵심 구성 요소</strong></td>   
     </tr>
   </tr>
   <tr>
-    <td>옵션 드롭다운 목록 설정 </td>
-    <td>옵션 드롭다운 목록은 규칙 편집기의 <b>옵션 설정 </b> 속성을 사용하여 설정됩니다.</td>
+    <td>옵션의 드롭다운 목록 설정 </td>
+    <td>옵션의 드롭다운 목록은 규칙 편집기의 <b>옵션 설정</b> 속성을 사용하여 설정됩니다.</td>
     <td>드롭다운 옵션은 사용자 정의 함수를 사용하여 설정됩니다. 
    </td>
    </tr>
      </tr>
    <tr>
     <td>반복 가능한 패널 필드에서 수학 연산 수행 </td>
-    <td>OOTB 수학 함수는 규칙 편집기를 사용하여 합계, 평균과 같은 함수를 수행하기 위해 반복 가능한 패널 필드에 적용할 수 있습니다. 두 개의 인수를 제공해야 합니다. 첫 번째 인수는 필드가 포함된 반복 가능한 패널을 지정하고, 두 번째 인수는 해당 반복 가능한 패널 내의 필드를 지정합니다. </td>
-    <td>반복 가능한 패널 필드에 대한 수학 연산은 사용자 정의 함수를 사용하여 수행할 수 있습니다. 규칙 편집기에서 반복 가능 패널의 필드에 수학 함수를 직접 적용할 수도 있습니다.
+    <td>OOTB 수학 함수를 반복 가능한 패널 필드에 적용하면 규칙 편집기를 사용하여 합계, 평균과 같은 함수를 수행할 수 있습니다. 두 개의 인수를 제공해야 합니다. 첫 번째 인수는 필드가 포함된 반복 가능한 패널을 지정하고, 두 번째 인수는 해당 반복 가능한 패널 내의 필드를 지정합니다. </td>
+    <td>반복 가능한 패널 필드에 대한 수학 연산은 사용자 정의 함수를 사용하여 수행할 수 있습니다. 규칙 편집기에서 반복 가능한 패널의 필드에 직접 수학 함수를 적용할 수도 있습니다.
    </td>
    </tr>
       <tr>
     <td>“Then”에서 필드/패널/양식 규칙 유효성 검사/재설정 </td>
-    <td>유효성 검사 및 재설정 기능은 규칙 편집기의 양식 객체만 지원합니다. 
+    <td>유효성 검사 및 재설정 함수는 규칙 편집기의 양식 오브젝트만 지원합니다. 
    </td>
-    <td>유효성 검사 및 재설정 기능은 규칙 편집기에서 양식/패널/필드 개체를 지원합니다. 
+    <td>유효성 검사 및 재설정 함수는 규칙 편집기의 양식/패널/필드 오브젝트를 지원합니다. 
    </td>
    </tr>
    <tr>
@@ -119,22 +119,22 @@ ht-degree: 69%
 
 ## 규칙 편집기 추가 참조 {#see-also-rule-editor}
 
-* [핵심 구성 요소 기반 적응형 양식의 규칙 편집기 소개](/help/forms/rule-editor-core-components.md)
-* [핵심 구성 요소 기반 적응형 양식의 규칙 편집기에서 사용 가능한 연산자 유형 및 이벤트](/help/forms/rule-editor-core-components-events-operators.md)
-* [핵심 구성 요소 기반 적응형 양식의 규칙 편집기 사용자 인터페이스](/help/forms/rule-editor-core-components-user-interface.md)
-* [핵심 구성 요소 기반 적응형 양식의 규칙 편집기의 다양한 사용 사례](/help/forms/rule-editor-core-components-usecases.md)
+* [핵심 구성 요소 기반 적응형 Forms의 규칙 편집기 소개](/help/forms/rule-editor-core-components.md)
+* [핵심 구성 요소 기반 적응형 Forms의 규칙 편집기에서 사용 가능한 연산자 유형 및 이벤트](/help/forms/rule-editor-core-components-events-operators.md)
+* [핵심 구성 요소 기반 적응형 Forms의 규칙 편집기 사용자 인터페이스](/help/forms/rule-editor-core-components-user-interface.md)
+* [핵심 구성 요소 기반 적응형 Forms의 규칙 편집기의 다양한 사용 사례](/help/forms/rule-editor-core-components-usecases.md)
 * [다양한 규칙 편집기 에디션의 차이점](/help/forms/rule-editor-core-components-difference-tables.md)
-* [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 소개](/help/forms/create-and-use-custom-functions.md)
-* [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 만들기](/help/forms/custom-function-core-component-create-function.md)
-* [사용자 지정 함수 개발 및 사용의 예](/help/forms/custom-function-core-components-use-cases.md)
+* [핵심 구성 요소 기반 적응형 Forms의 사용자 정의 함수 소개](/help/forms/create-and-use-custom-functions.md)
+* [핵심 구성 요소 기반 적응형 Forms의 사용자 정의 함수 만들기](/help/forms/custom-function-core-component-create-function.md)
+* [사용자 정의 함수 개발 및 사용의 예](/help/forms/custom-function-core-components-use-cases.md)
 
 
 ## Forms 포털{#forms-portal-see-also}
 
 * [Forms 포털 구성 요소 소개](/help/forms/configure-forms-portal.md)
 * [사이트 페이지에 양식 나열](/help/forms/list-forms-on-sites-page.md)
-* [양식을 초안으로 저장](/help/forms/save-core-component-based-form-as-draft.md)
-* [사이트 페이지에 양식 링크 추가](/help/forms/add-form-link-to-aem-sites-page.md)
+* [초안으로 양식 저장](/help/forms/save-core-component-based-form-as-draft.md)
+* [Sites 페이지에 양식 링크 추가](/help/forms/add-form-link-to-aem-sites-page.md)
 
 
 ## Cloud Manager IP 허용 목록 및 프론트엔드 파이프라인 {#allowlist-frontend-pipeline}
@@ -153,20 +153,20 @@ ht-degree: 69%
 
 >[!IMPORTANT]
 >
->프론트엔드 파이프라인을 사용하여 사이트를 개발하는 경우 먼저 Cloud Manager IP 허용 목록을 추가해야 합니다.
->[프론트엔드 파이프라인과 함께 Cloud Manager IP 허용 목록 사용](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)을 참조하세요.
+>프론트엔드 파이프라인을 사용하여 사이트를 개발하거나 사용하려는 경우 사전에 Cloud Manager IP 허용 목록을 추가해야 합니다.
+>[프론트엔드 파이프라인에서 Cloud Manager IP 허용 목록 사용](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)을 참조하시기 바랍니다.
 
 ## Dynamic Media를 사용하여 작업 {#work-with-dynamic-media}
 
 >[!TIP]
 >
->Dynamic Media을 처음 사용하십니까? Dynamic Media에 대한 빠른 개요 및 높은 수준의 개요를 보려면 [Dynamic Media 작업](/help/assets/dynamic-media/dynamic-media.md)을 참조하세요.
+>Dynamic Media를 처음 사용하십니까? Dynamic Media에 대한 빠르고 간략한 개요를 보시려면 [Dynamic Media로 작업](/help/assets/dynamic-media/dynamic-media.md)을 참조하시기 바랍니다.
 
 ## Dynamic Media 관련 항목 참조 {#see-also-dm}
 
 >[!NOTE]
 >
->* Dynamic Media을 처음 사용하십니까? Dynamic Media에 대한 빠른 개요 및 높은 수준의 개요를 보려면 [Dynamic Media 작업](/help/assets/dynamic-media/dynamic-media.md)을 참조하세요.
+>* Dynamic Media를 처음 사용하십니까? Dynamic Media에 대한 빠르고 간략한 개요를 보시려면 [Dynamic Media로 작업](/help/assets/dynamic-media/dynamic-media.md)을 참조하시기 바랍니다.
 >
 >* [Dynamic Media 우수 사례](/help/assets/dynamic-media/dm-best-practices.md)를 따라 값을 최대한 활용하십시오.
 >
