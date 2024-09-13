@@ -5,9 +5,9 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
 source-git-commit: dee1a768c1cec6cf0e7c321d4d76a486db661d13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3928'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -184,7 +184,7 @@ data:
 
 | **속성** | **유형** | **설명** |
 |---|---|---|
-| reqProperty | `string` | 요청 속성입니다.<br><br>다음 중 하나:<br><ul><li>`path`: 쿼리 매개변수 없이 URL의 전체 경로를 반환합니다.</li><li>`queryString`: URL의 쿼리 부분을 반환합니다.</li><li>`method`: 요청에 사용된 HTTP 메서드를 반환합니다.</li><li>`tier`: `author`, `preview` 또는 `publish` 중 하나를 반환합니다.</li><li>`domain`: (`Host` 헤더에 정의된) 도메인 속성을 소문자로 반환합니다.</li><li>`clientIp`: 클라이언트 IP를 반환합니다.</li><li>`clientCountry`: 두 자리 코드를 반환합니다(클라이언트가 위치한 국가를 식별하는 [지역 표시기 기호](https://en.wikipedia.org/wiki/kr/Regional_indicator_symbol)).</li></ul> |
+| reqProperty | `string` | 요청 속성입니다.<br><br>다음 중 하나:<br><ul><li>`path`: 쿼리 매개변수 없이 URL의 전체 경로를 반환합니다.</li><li>`queryString`: URL의 쿼리 부분을 반환합니다.</li><li>`method`: 요청에 사용된 HTTP 메서드를 반환합니다.</li><li>`tier`: `author`, `preview` 또는 `publish` 중 하나를 반환합니다.</li><li>`domain`: (`Host` 헤더에 정의된) 도메인 속성을 소문자로 반환합니다.</li><li>`clientIp`: 클라이언트 IP를 반환합니다.</li><li>`clientCountry`: 두 자리 코드를 반환합니다(클라이언트가 위치한 국가를 식별하는 [지역 표시기 기호](https://ko.wikipedia.org/wiki/kr/Regional_indicator_symbol)).</li></ul> |
 | reqHeader | `string` | 지정된 이름의 요청 헤더를 반환합니다. |
 | queryParam | `string` | 지정된 이름의 쿼리 매개변수를 반환합니다. |
 | reqCookie | `string` | 지정된 이름의 쿠키를 반환합니다. |
@@ -244,7 +244,7 @@ when:
 | XSS | 크로스 사이트 스크립팅 | 크로스 사이트 스크립팅은 악성 JavaScript 코드를 통해 사용자의 계정이나 웹 탐색 세션을 하이재킹하려는 시도입니다. |
 | TRAVERSAL | 디렉터리 순회 | 디렉터리 순회는 민감한 정보를 얻기 위해 시스템 전체에서 권한 있는 폴더를 탐색하려는 시도입니다. |
 | USERAGENT | 공격 툴링 | 공격 툴링은 자동화된 소프트웨어를 사용하여 보안 취약성을 식별하거나 발견된 취약성을 악용하려고 시도하는 것입니다. |
-| LOG4J-JNDI | Log4J JNDI | Log4J JNDI 공격은 2.16.0 이전 Log4J 버전에 있는 [Log4Shell 취약점](https://en.wikipedia.org/wiki/kr/Log4Shell)을 활용하려고 시도합니다. |
+| LOG4J-JNDI | Log4J JNDI | Log4J JNDI 공격은 2.16.0 이전 Log4J 버전에 있는 [Log4Shell 취약점](https://ko.wikipedia.org/wiki/kr/Log4Shell)을 활용하려고 시도합니다. |
 | BHH | 잘못된 홉 헤더 | 잘못된 홉 헤더는 잘못된 형식의 TE(Transfer-Encoding) 또는 CL(Content-Length) 헤더나 올바른 형식의 TE 및 CL 헤더를 통한 HTTP 스머글링 시도를 나타냅니다. |
 | CODEINJECTION | 코드 삽입 | 코드 삽입은 사용자 입력을 통해 임의의 애플리케이션 코드 명령으로 대상 시스템을 제어하거나 손상시키려는 시도입니다. |
 | ABNORMALPATH | 비정상 경로 | 비정상 경로는 원래 경로가 정규화된 경로와 다름을 나타냅니다(예: `/foo/./bar`는 `/foo/bar`로 정규화됨). |
@@ -254,7 +254,7 @@ when:
 | MALFORMED-DATA | 요청 본문의 형식이 잘못된 데이터 | “Content-Type” 요청 헤더에 따라 형식이 잘못된 POST, PUT 또는 PATCH 요청 본문입니다. 예를 들어 “Content-Type: application/x-www-form-urlencoded” 요청 헤더가 지정되고 json인 POST 본문을 포함하는 경우입니다. 흔히 프로그래밍 오류, 자동화된 요청 또는 악성 요청에 해당합니다. 에이전트 3.2 이상이 필요합니다. |
 | SANS | 악성 IP 트래픽 | 악성 활동에 연루된 것으로 보고된 [SANS 인터넷 스톰 센터](https://isc.sans.edu/) IP 주소 목록입니다. |
 | NO-CONTENT-TYPE | 누락된 “Content-Type” 요청 헤더 | “Content-Type” 요청 헤더가 없는 POST, PUT 또는 PATCH 요청입니다. 이 경우 기본적으로 애플리케이션 서버는 “Content-Type: text/plain; charset=us-ascii”를 가정하게 됩니다. 자동화된 요청 및 악성 요청 중 대다수에서 “Content Type”이 누락되어 있을 수 있습니다. |
-| NOUA | 사용자 에이전트 없음 | 요청에 &quot;User-Agent&quot; 헤더가 없거나 헤더 값이 설정되지 않았음을 나타냅니다. |
+| NOUA | 사용자 에이전트 없음 | 요청에 “User-Agent” 헤더가 없거나 헤더 값이 설정되지 않았음을 나타냅니다. |
 | TORNODE | Tor 트래픽 | Tor는 사용자의 신원을 숨기는 소프트웨어입니다. Tor 트래픽 스파이크가 발생한다면 공격자가 자신의 위치를 숨기려고 시도하고 있음을 나타낼 수 있습니다. |
 | NULLBYTE | Null 바이트 | Null 바이트는 일반적으로 요청에 표시되지 않으며, 요청이 잘못된 형식이고 잠재적으로 악성임을 나타냅니다. |
 | PRIVATEFILE | 비공개 파일 | 비공개 파일은 민감한 정보를 유출할 수 있는 Apache `.htaccess` 파일 또는 구성 파일 등으로서, 본질적으로 기밀입니다. |
@@ -619,7 +619,7 @@ data:
 | *timestamp* | TLS 종료 후에 요청이 시작된 시간입니다. |
 | *ttfb* | *Time To First Byte(첫 번째 바이트까지의 시간)*&#x200B;의 약어입니다. 요청이 시작된 후 응답 본문의 스트리밍이 시작되기까지의 시간 간격입니다. |
 | *cli_ip* | 클라이언트 IP 주소입니다. |
-| *cli_country* | 클라이언트 국가의 2글자 [ISO 3166-1](https://en.wikipedia.org/wiki/kr/ISO_3166-1) Alpha-2 국가 코드입니다. |
+| *cli_country* | 클라이언트 국가의 2글자 [ISO 3166-1](https://ko.wikipedia.org/wiki/kr/ISO_3166-1) Alpha-2 국가 코드입니다. |
 | *rid* | 요청을 고유하게 식별하는 데 사용되는 요청 헤더의 값입니다. |
 | *req_ua* | 해당 HTTP 요청을 담당하는 사용자 에이전트입니다. |
 | *host* | 요청이 의도한 대상 기관입니다. |
