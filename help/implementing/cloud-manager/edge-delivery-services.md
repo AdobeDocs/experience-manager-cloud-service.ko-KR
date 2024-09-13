@@ -4,9 +4,9 @@ description: Edge Delivery Services을 사용하여 Cloud Manager 프로젝트�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: dda5444ccfced079125c358f65f0dae43293ae55
+source-git-commit: bc9aa376a402a55191e153f662262ff65df32f5e
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1516'
 ht-degree: 5%
 
 ---
@@ -61,7 +61,7 @@ Adobe Experience Manager Sites의 일부로 Edge Delivery Services 라이선스�
 
 ## 계약된 고객에 대한 Adobe 권장 경로 {#recommended-path-eds}
 
-계약 고객은 Cloud Manager을 통해 Edge Delivery Services 라이선스에 액세스하고 사용함으로써 Adobe의 이점을 극대화하십시오. 이 접근 방식을 사용하면 [Adobe 관리 CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)을 사용하고 DV 또는 EV/OV 인증서의 구성 및 설치를 포함하여 셀프서비스 CDN 관리와 같은 주요 이점을 활용할 수 있습니다. Adobe에 Edge Delivery Services 라이선스가 없고 이러한 이점을 무시하기로 한 경우 고객 관리 CDN만 사용할 수 있습니다. 이 설정은 aem.live 플랫폼에 있어야 합니다.
+계약 고객은 Cloud Manager을 통해 Edge Delivery Services 라이선스에 액세스하고 사용함으로써 Adobe의 이점을 극대화하십시오. 이 접근 방식을 사용하면 [Adobe 관리 CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)을 사용하고 DV 인증서 구성 및 추가를 포함한 셀프서비스 CDN 관리와 같은 주요 이점을 활용할 수 있습니다. 또한 DV 인증서가 만들어지면 Adobe은 삭제하지 않는 한 3개월마다 자동으로 갱신합니다. Adobe이 있는 Edge Delivery Services 라이선스가 없고 이러한 이점을 무시하기로 결정한 경우 고객 관리 CDN만 사용할 수 있습니다. 이 설정은 `aem.live` 플랫폼에 있어야 합니다.
 
 AEM as a Cloud Service Sites Edge Delivery Services 라이선스와 계약을 체결한 경우 Cloud Manager에 로그인하여 다음을 수행할 수 있도록 합니다.
 

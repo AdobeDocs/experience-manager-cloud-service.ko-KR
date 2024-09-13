@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
+source-git-commit: bc9aa376a402a55191e153f662262ff65df32f5e
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 7%
+source-wordcount: '356'
+ht-degree: 8%
 
 ---
 
@@ -40,11 +40,11 @@ Adobe 관리 CDN의 경우 DV 인증서를 사용할 때 ACME 인증이 있는 �
    | Sites | Edge Delivery 사이트를 선택합니다. |
    | 환경 | AEM 설정 내에서 타깃팅할 특정 Cloud Service 환경을 선택합니다.<br>**계층** 드롭다운 목록에서 다음 중 하나를 선택합니다.<br>· 콘텐츠가 최종 사용자에게 제공되는 라이브 프로덕션 환경을 타깃팅하려면 **Publish**&#x200B;을(를) 선택합니다.<br>· 변경 내용을 실행하기 전에 테스트하는 스테이징 또는 비프로덕션 환경의 **미리 보기**&#x200B;를 선택합니다. |
 
-1. 다음 중 하나를 선택하여 CDN 유형을 선택합니다.
+1. 다음 중 하나를 선택하여 CDN 유형 및 관련 구성을 선택합니다.
 
-   | CDN 유형 | 설명 |
+   | CDN 유형 | 구성 세부 정보 |
    | --- | --- |
-   | Adobe 관리 CDN | a. **도메인** 드롭다운 목록에서 사용할 도메인 이름을 선택합니다.<br>드롭다운 목록에 사용 가능한 확인된 도메인이 없습니까? [사용자 지정 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)를 참조하십시오.<br>b. SSL 인증서 드롭다운 목록에서 사용할 인증서를 선택합니다.<br>드롭다운 목록에서 사용할 수 있는 SSL 인증서가 없습니까? [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)를 참조하십시오. |
-   | 기타 CDN 공급자. | 사용 가능한 Adobe 관리 CDN이 아닌 자체 CDN 공급자를 사용하는 경우 이 옵션을 선택합니다.<br>**도메인** 드롭다운 목록에서 사용할 도메인 이름을 선택합니다.<br>드롭다운 목록에 사용 가능한 SSL 인증서가 없습니까? [사용자 지정 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)를 참조하십시오. |
+   | Adobe 관리 CDN | **구성 정보**&#x200B;에서 다음을 수행합니다.<br>a. **도메인** 드롭다운 목록에서 사용할 도메인 이름을 선택합니다.<br>드롭다운 목록에 사용 가능한 확인된 도메인이 없습니까? [사용자 지정 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)를 참조하십시오.<br>b. **SSL 인증서** 드롭다운 목록에서 사용할 인증서를 선택합니다.<br>드롭다운 목록에서 사용할 수 있는 SSL 인증서가 없습니까? [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)를 참조하십시오. |
+   | 기타 CDN 공급자 | 사용 가능한 Adobe 관리 CDN이 아닌 자체 CDN 공급자를 사용하는 경우 이 옵션을 선택합니다.<br>**구성 정보**&#x200B;의 **도메인** 드롭다운 목록에서 사용할 도메인 이름을 선택합니다.<br>드롭다운 목록에 사용 가능한 확인된 도메인이 없습니까? [사용자 지정 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)를 참조하십시오. |
 
 1. **저장**&#x200B;을 클릭합니다.
