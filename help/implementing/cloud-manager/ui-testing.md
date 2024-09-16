@@ -5,9 +5,9 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: bb75e70fb83b63e12968f7cb01e6976e367ff70e
 workflow-type: tm+mt
-source-wordcount: '2610'
+source-wordcount: '2630'
 ht-degree: 79%
 
 ---
@@ -212,16 +212,20 @@ Adobe에서 제공하는 샘플을 사용하는 경우 다음을 참조하십시
 
 다음 환경 변수는 프레임워크에 따라 런타임 시 Docker 이미지로 전달됩니다.
 
+>[!NOTE]
+>
+> 이러한 값은 파이프라인 실행 중에 자동으로 설정됩니다. 파이프라인 변수로 수동으로 설정할 필요가 없습니다.
+
 | 변수 | 예 | 설명 | 테스트 프레임워크 |
-|----------------------------|----------------------------------|---------------------------------------------------------------------------------------------------|---------------------|
+|----------------------------|----------------------------------|----------------------------------------------------------------------------------------------------|---------------------|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | Selenium 서버의 URL | Selenium 전용 |
 | `SELENIUM_BROWSER` | `chrome` | Selenium 서버에서 사용하는 브라우저 구현 | Selenium 전용 |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | AEM 작성자 인스턴스의 URL | 모두 |
 | `AEM_AUTHOR_USERNAME` | `admin` | AEM 작성자 인스턴스에 로그인하기 위한 사용자 이름 | 모두 |
 | `AEM_AUTHOR_PASSWORD` | `admin` | AEM 작성자 인스턴스에 로그인하기 위한 암호 | 모두 |
-| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | AEM 게시 인스턴스의 URL | 모두 |
-| `AEM_PUBLISH_USERNAME` | `admin` | AEM 게시 인스턴스에 로그인하기 위한 사용자 이름 | 모두 |
-| `AEM_PUBLISH_PASSWORD` | `admin` | AEM 게시 인스턴스에 로그인하기 위한 암호 | 모두 |
+| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | AEM 게시 인스턴스의 URL | 모두 * |
+| `AEM_PUBLISH_USERNAME` | `admin` | AEM 게시 인스턴스에 로그인하기 위한 사용자 이름 | 모두 * |
+| `AEM_PUBLISH_PASSWORD` | `admin` | AEM 게시 인스턴스에 로그인하기 위한 암호 | 모두 * |
 | `REPORTS_PATH` | `/usr/src/app/reports` | 테스트 결과의 XML 보고서를 저장해야 하는 경로 | 모두 |
 | `UPLOAD_URL` | `http://upload-host:9090/upload` | 테스트 프레임워크에 액세스할 수 있도록 파일을 업로드해야 하는 URL | 모두 |
 | `PROXY_HOST` | `proxy-host` | 테스트 프레임워크에서 사용할 내부 HTTP 프록시의 호스트 이름 | Selenium을 제외한 모든 항목 |
@@ -231,6 +235,8 @@ Adobe에서 제공하는 샘플을 사용하는 경우 다음을 참조하십시
 | `PROXY_OBSERVABILITY_PORT` | `8081` | 프록시 서버의 HTTP 상태 검사 포트 | Selenium을 제외한 모든 항목 |
 | `PROXY_RETRY_ATTEMPTS` | `12` | 프록시 서버 준비 대기 중 권장 재시도 횟수 | Selenium을 제외한 모든 항목 |
 | `PROXY_RETRY_DELAY` | `5` | 프록시 서버 준비 대기 중 재시도 사이의 제안된 지연 시간 | Selenium을 제외한 모든 항목 |
+
+`* these values will be empty if there is no publish instance`
 
 Adobe 테스트 샘플은 구성 매개변수에 액세스하기 위한 도우미 기능을 제공합니다.
 
