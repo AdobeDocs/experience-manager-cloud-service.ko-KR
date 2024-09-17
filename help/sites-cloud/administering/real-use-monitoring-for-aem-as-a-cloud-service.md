@@ -4,9 +4,9 @@ description: 클라이언트측 데이터 수집을 모니터링할 수 있는 �
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: ed52bac52618e23b9bcbe7c6767501c6711aff00
+source-git-commit: fbc3358f1be3ae7ce3142cdc84815d304a2d6c38
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1009'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ RUM(Real Use Monitoring) 서비스는 웹 사이트 또는 애플리케이션에
 
 ## Real Use Monitoring Service를 통해 혜택을 얻을 수 있는 사람은 누구입니까? {#who-can-benefit-from-rum-service}
 
-AEM은 고객 및 Adobe이 최종 사용자가 AEM 사이트와 상호 작용하는 방법을 이해할 수 있도록 지원하는 Real Use Monitoring을 개발했습니다. Real Use Monitoring은 성능 문제를 진단하고 실험의 효과를 측정합니다. 실제 사용 모니터링은 샘플링을 통해 방문자의 개인 정보를 보존하며 - 모든 페이지 보기의 일부만 모니터링되며 - PII(개인 식별 정보)는 수집되지 않습니다.
+Real Use Monitoring은 고객 및 Adobe이 최종 사용자가 AEM 사이트와 상호 작용하는 방법을 이해하는 데 도움이 됩니다. Real Use Monitoring은 성능 문제를 진단하고 실험의 효과를 측정합니다. 실제 사용 모니터링은 샘플링을 통해 방문자의 개인 정보를 보존하며 - 모든 페이지 보기의 일부만 모니터링되며 - PII(개인 식별 정보)는 수집되지 않습니다.
 
 ## 모니터링 서비스 및 개인 정보 보호 실제 사용 {#rum-service-and-privacy}
 
@@ -59,7 +59,7 @@ Real Use Monitoring 서비스는 개인 식별 정보의 수집을 방지하기 
 
 ## 고객의 실제 사용 모니터링 작동 방식 {#how-rum-works-for-a-customer}
 
-Real Use Monitoring은 클라이언트측 트래픽을 자동으로 모니터링합니다. 이 서비스는 기존 설정에 완벽하게 통합되므로 Adobe 고객은 추가 단계를 수행하지 않아도 됩니다. RUM(Real Use Monitoring)이 GA(General Availability) 인 경우 이 새로운 기능을 자동으로 활용할 수 있습니다. Real Use Monitoring 서비스는 시각화 도구를 통해 오늘날 어떤 지표도 노출하지 않습니다. 당사는 이 기능을 최대한 빨리 제공하기 위해 노력하고 있습니다.
+Real Use Monitoring은 클라이언트측 트래픽을 자동으로 모니터링합니다. 이 서비스는 기존 설정에 완벽하게 통합되므로 Adobe 고객은 추가 단계를 수행하지 않아도 됩니다. RUM(Real Use Monitoring) 서비스를 일반적으로 사용할 수 있게 되면 이 새로운 기능을 자동으로 활용할 수 있습니다. Real Use Monitoring 서비스는 현재 모니터링할 고객 대면 지표를 노출하지 않습니다. 당사는 이 기능을 최대한 빨리 제공하기 위해 노력하고 있습니다.
 
 <!-- Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
 
