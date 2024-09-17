@@ -5,10 +5,10 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 505e0887124472693216fee2f0a3e960591b5ae5
+source-git-commit: 5dc3d571c553f2972295172c7a6d0249be3285b8
 workflow-type: tm+mt
 source-wordcount: '1950'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -47,10 +47,10 @@ Cloud Manager에서 경험 감사를 사용할 수 있습니다.
 
 경험 감사는 프로덕션 파이프라인에 기본적으로 사용할 수 있습니다. 전체 스택 및 프론트엔드 파이프라인 개발에 선택적으로 활성화할 수 있습니다. 모든 경우 파이프라인 실행 중에 평가되는 콘텐츠 경로를 정의해야 합니다.
 
-1. 구성하려는 파이프라인 유형에 따라 다음 지침을 따르십시오.
+1. 구성할 파이프라인 유형에 따라 다음 중 하나를 수행합니다.
 
    * 새 [프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)을(를) 추가하여 감사에서 평가할 경로를 정의합니다.
-   * 프론트엔드 또는 개발 전체 스택 파이프라인에서 감사를 활성화하려면 새 [비프로덕션 파이프라인 ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)을(를) 추가하십시오.
+   * 프론트엔드 또는 개발 전체 스택 파이프라인에서 감사를 활성화하려면 새 [비프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)을 추가하십시오.
    * 또는 [기존 파이프라인을 편집](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)하고 기존 옵션을 업데이트할 수 있습니다.
 
 1. 비프로덕션 파이프라인을 추가하거나 편집할 때 경험 감사를 사용하려면 **경험 감사** 확인란을 선택하십시오. 이 옵션은 **Source 코드** 탭에서 찾을 수 있습니다.
@@ -176,7 +176,7 @@ Cloud Manager의 **보고서** 탭이 열려 **경험 감사**&#x200B;를 표시
 
 ![권장 사항 세부 정보에 대한 페이지](assets/experience-audit-details-pages.png)
 
-##### 스캔한 페이지 {#scanned-pages}
+##### 스캔된 페이지 {#scanned-pages}
 
 **검사한 페이지** 섹션은 검사한 모든 페이지의 점수에 대한 세부 정보를 제공합니다. **이전** 및 **다음** 단추를 사용하여 결과를 페이징하고 표시할 페이지의 수를 선택하십시오.
 
@@ -236,7 +236,6 @@ Cloud Manager의 **보고서** 탭이 열려 **경험 감사**&#x200B;를 표시
 * 페이지가 존재하지 않습니다.
 * 기본 이외의 인증이 필요한 페이지로 리디렉션됩니다.
 * 내부 문제가 발생했습니다.
-* 등
 
 >[!TIP]
 >

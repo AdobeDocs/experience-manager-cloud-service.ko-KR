@@ -4,7 +4,7 @@ description: Edge Delivery Services을 사용하여 Cloud Manager 프로젝트�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
+source-git-commit: 5dc3d571c553f2972295172c7a6d0249be3285b8
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 6%
@@ -58,11 +58,11 @@ Adobe Experience Manager Sites의 일부로 Edge Delivery Services 라이선스�
 | Cloud Manager에 Edge Delivery 사이트를 추가하고 싶습니다. | [Edge Delivery 사이트 추가](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)를 참조하십시오. |
 | 신규 또는 기존 샌드박스 프로그램에 Edge Delivery Services을 추가하려고 합니다. | [샌드박스 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)를 참조하십시오.<br>샌드박스 프로그램을 만들면 기본적으로 Edge Delivery Services이 프로그램에 추가됩니다. 선택할 필요가 없습니다.<br>Edge Delivery의 일반 공급 전에 기존 샌드박스 프로그램에서 Edge Delivery Services을 자동으로 상속합니다. |
 
-## 계약된 고객에 대한 Adobe 권장 경로 {#recommended-path-eds}
+## 사용 허가된 고객을 위한 Adobe 권장 경로 {#recommended-path-eds}
 
-계약 고객은 Cloud Manager을 통해 Edge Delivery Services 라이선스에 액세스하고 사용함으로써 Adobe의 이점을 극대화하십시오. 이 접근 방식을 사용하면 [Adobe 관리 CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)을 사용하고 DV 인증서 구성 및 추가를 포함한 셀프서비스 CDN 관리와 같은 주요 이점을 활용할 수 있습니다. 또한 DV 인증서가 만들어지면 Adobe은 삭제하지 않는 한 3개월마다 자동으로 갱신합니다. Adobe이 있는 Edge Delivery Services 라이선스가 없고 이러한 이점을 무시하기로 결정한 경우 고객 관리 CDN만 사용할 수 있습니다. 이 설정은 `aem.live` 플랫폼에 있어야 합니다.
+라이센스 고객인 경우 Cloud Manager을 통해 Edge Delivery Services 라이센스에 액세스하고 사용함으로써 Adobe의 이점을 극대화하십시오. 이 접근 방식을 사용하면 [Adobe 관리 CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)을 사용하고 DV 인증서 구성 및 추가를 포함한 셀프서비스 CDN 관리와 같은 주요 이점을 활용할 수 있습니다. 또한 DV 인증서가 만들어지면 Adobe은 삭제하지 않는 한 3개월마다 자동으로 갱신합니다. Adobe이 있는 Edge Delivery Services 라이선스가 없고 이러한 이점을 무시하기로 결정한 경우 고객 관리 CDN만 사용할 수 있습니다. 이 설정은 `aem.live` 플랫폼에 있어야 합니다.
 
-AEM as a Cloud Service Sites Edge Delivery Services 라이선스와 계약을 체결한 경우 Cloud Manager에 로그인하여 다음을 수행할 수 있도록 합니다.
+AEM as a Cloud Service Sites Edge Delivery Services 라이선스로 라이선스가 부여된 경우 Cloud Manager에 로그인하여 다음을 수행할 수 있도록 합니다.
 
 * 선택한 프로그램에서 라이선스를 사용합니다.
 * CRUD(만들기, 읽기, 업데이트, 삭제) 작업을 수행하기 위해 [API 우선](https://developer.adobe.com/experience-cloud/experience-manager-apis/) 혜택을 활용하십시오.

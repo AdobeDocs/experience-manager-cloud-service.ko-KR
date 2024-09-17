@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
+source-git-commit: f45de13049f78f97b256235d9395695cb531c40d
 workflow-type: tm+mt
-source-wordcount: '1488'
-ht-degree: 20%
+source-wordcount: '1490'
+ht-degree: 21%
 
 ---
 
@@ -23,13 +23,13 @@ Cloud Manager에서 사용자 정의 도메인 이름을 추가하기 전에 이
 
 * [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) 문서에 설명된 대로 사용자 정의 도메인 이름을 추가하기 전에 추가할 도메인에 대한 도메인 SSL 인증서를 추가해야 합니다.
 * Cloud Manager에서 사용자 정의 도메인 이름을 추가하려면 **비즈니스 소유자** 또는 **배포 관리자** 역할이 있어야 합니다.
-* Fastly CDN을 사용하고 있습니다.
+* Fastly 또는 기타 CDN을 사용하고 있습니다.
 
 >[!IMPORTANT]
 >
 >비 Adobe CDN을 사용하는 경우에도 도메인을 Cloud Manager에 추가해야 합니다.
 
-## 사용자 정의 도메인 이름 {#}을(를) 추가할 위치
+## 사용자 정의 도메인 이름을 추가할 위치 {#where-to-add-cdn}
 
 Cloud Manager의 두 위치에서 사용자 정의 도메인 이름을 추가할 수 있습니다.
 
@@ -68,7 +68,7 @@ Cloud Manager의 두 위치에서 사용자 정의 도메인 이름을 추가할
 
    | 인증서 유형을 선택한 경우 | 설명 |
    | --- | ---  |
-   | Adobe 관리 인증서 | 다음 단계를 계속하기 전에 [Adobe 관리 인증서 단계](#abobe-managed-cert-steps)를 완료하십시오. |
+   | Adobe 관리 인증서 | 다음 단계를 계속하기 전에 [Adobe 관리 인증서 단계](#adobe-managed-cert-steps)를 완료하십시오. |
    | 고객 관리 인증서 | 다음 단계를 계속하기 전에 [고객 관리 인증서 단계](#customer-managed-cert-steps)를 완료하십시오. |
 
 1. **확인**&#x200B;을 클릭합니다.
@@ -78,7 +78,6 @@ Cloud Manager의 두 위치에서 사용자 정의 도메인 이름을 추가할
    >[!NOTE]
    >
    >자체 관리 SSL 인증서 및 자체 관리 CDN 공급자를 사용하는 경우 이 단계를 건너뛰고 준비가 되면 바로 [CDN 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)(으)로 이동할 수 있습니다.
-
 
 
 ### Adobe 관리 인증서 단계 {#adobe-managed-cert-steps}
@@ -97,7 +96,7 @@ Cloud Manager의 두 위치에서 사용자 정의 도메인 이름을 추가할
 >
 >Adobe 관리 CDN의 경우 DV(도메인 유효성 검사) 인증서를 사용할 때는 ACME 유효성 검사가 있는 사이트만 허용됩니다.
 
-#### 요구 사항 {#dv-requirements}
+#### 요구 사항 {#adobe-managed-cert-dv-requirements}
 
 DNS 레코드를 구성하기 전에 이러한 요구 사항을 충족하십시오.
 
@@ -105,7 +104,7 @@ DNS 레코드를 구성하기 전에 이러한 요구 사항을 충족하십시�
 * 조직의 도메인에 대한 DNS 레코드를 편집하거나, 편집할 수 있는 적절한 담당자에게 문의할 수 있습니다.
 * [도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 문서에 설명된 대로 구성된 사용자 정의 도메인 이름을 이미 확인했어야 합니다.
 
-#### CNAME 레코드 {#cname-record}
+#### CNAME 레코드 {#adobe-managed-cert-cname-record}
 
 정식 이름 또는 CNAME 레코드는 별칭 이름을 실제 또는 정식 도메인 이름에 매핑하는 DNS 레코드 유형입니다. CNAME 레코드는 일반적으로 `www.example.com`과 같은 하위 도메인을 해당 하위 도메인의 콘텐츠를 호스팅하는 도메인에 매핑하는 데 사용됩니다.
 
@@ -115,7 +114,7 @@ DNS 서비스 공급자에 로그인하고 다음 표와 같이 사용자 지정
 | --- | --- |
 | `www.customdomain.com` | `cdn.adobeaemcloud.com` |
 
-#### APEX 레코드 {#apex-record}
+#### APEX 레코드 {#adobe-managed-cert-apex-record}
 
 Apex 도메인은 `example.com`과 같은 하위 도메인을 포함하지 않는 사용자 정의 도메인입니다. DNS 공급자를 통해 Apex 도메인이 `A`, `ALIAS` 또는 `ANAME` 레코드로 구성되어 있습니다. Apex 도메인은 특정 IP 주소를 가리켜야 합니다.
 
@@ -132,7 +131,6 @@ Apex 도메인은 `example.com`과 같은 하위 도메인을 포함하지 않�
 * `A record for domain @ pointing to IP 151.101.195.10`
 
 
-
 ### 고객 관리 인증서 단계 {#customer-managed-cert-steps}
 
 인증서 유형 *고객 관리 인증서*&#x200B;를 선택한 경우 **도메인 확인** 대화 상자에서 다음 단계를 완료하십시오.
@@ -145,7 +143,7 @@ Apex 도메인은 `example.com`과 같은 하위 도메인을 포함하지 않�
 
 Cloud Manager은 특정 TXT 레코드를 사용하여 CDN 서비스에서 호스팅할 도메인을 승인합니다. Cloud Manager에서 사용자 지정 도메인과 함께 CDN 서비스를 배포하고 이를 백엔드 서비스와 연결하도록 권한을 부여하는 영역에 DNS TXT 레코드를 만듭니다. 이 연결은 전적으로 사용자의 통제 하에 있으며 Cloud Manager가 서비스에서 도메인으로 콘텐츠를 제공하도록 인증합니다. 이 인증은 허가될 수도 있고 철회될 수도 있습니다. TXT 레코드는 도메인 및 Cloud Manager 환경에 따라 다릅니다.
 
-## 요구 사항 {#requirements-customer-cert}
+#### 요구 사항 {#customer-managed-cert-requirements}
 
 TXT 레코드를 추가하기 전에 이러한 요구 사항을 충족하십시오.
 
@@ -153,7 +151,7 @@ TXT 레코드를 추가하기 전에 이러한 요구 사항을 충족하십시�
 * 조직의 도메인에 대한 DNS 레코드를 편집하거나, 편집할 수 있는 적절한 담당자에게 문의할 수 있습니다.
 * 먼저 이 문서의 앞부분에서 설명한 대로 사용자 정의 도메인 이름을 추가합니다.
 
-## 확인을 위해 TXT 레코드 추가 {#verification}
+#### 확인을 위해 TXT 레코드 추가 {#customer-managed-cert-verification}
 
 1. **도메인 확인** 대화 상자에서 Cloud Manager은 확인에 사용할 이름과 TXT 값을 표시합니다. 이 값을 복사합니다.
 
@@ -170,7 +168,7 @@ TXT 레코드를 추가하기 전에 이러한 요구 사항을 충족하십시�
 
 1. TXT 레코드를 도메인 호스트에 저장합니다.
 
-## TXT 레코드 확인 {#verify}
+#### TXT 레코드 확인 {#customer-managed-cert-verify}
 
 작업이 완료되면 다음 명령을 실행하여 결과를 확인할 수 있습니다.
 
