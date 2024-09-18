@@ -1,14 +1,20 @@
 ---
 title: Content Hub 사용자 인터페이스 구성
 description: Content Hub 사용자 인터페이스 구성
-source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
+exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
+source-git-commit: 96c50aad9368adc83f8698dc35266146b1883672
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1185'
 ht-degree: 5%
 
 ---
 
 # Content Hub 사용자 인터페이스 구성 {#configure-content-hub-user-interface}
+
+>[!CONTEXTUALHELP]
+>id="configure_content_hub"
+>title="Content Hub 사용자 인터페이스 구성"
+>abstract="Experience Manager Assets을 사용하면 관리자가 Content Hub 사용자 인터페이스에서 사용할 수 있는 옵션을 구성할 수 있습니다. 관리자가 선택한 구성 옵션에 따라 Content Hub 사용자는 Content Hub의 필드를 볼 수 있습니다. 구성 옵션에는 에셋을 가져오는 동안의 메타데이터, 필터, 에셋 속성, 에셋을 검색하는 동안의 메타데이터, 개인화된 브랜딩 및 모든 사용자 지정 링크가 포함됩니다."
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Content Hub에서 자산 구성](assets/configure-assets.png)
@@ -43,7 +49,7 @@ Content Hub에서 구성 옵션에 액세스하려면 다음을 수행하십시�
 
 ## Content Hub에서 구성 옵션 관리 {#manage-configuration-options}
 
-사용자를 위한 다음 구성 옵션을 관리합니다.
+관리자는 사용자에 대해 다음 구성 옵션을 관리합니다.
 
 * [가져오기](#configure-import-options-content-hub)
 
@@ -184,5 +190,3 @@ Content Hub을 사용하면 관리자가 에셋을 검색하는 동안 표시되
 사용자 지정 링크는 Content Hub 홈 페이지의 Insights 탭 옆에 새 탭으로 표시됩니다.
 
 ![Content Hub의 구성 UI 사용자 지정 링크 탭](assets/configuration-ui-custom-link-tab.png)
-
-
