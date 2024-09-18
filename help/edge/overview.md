@@ -4,10 +4,10 @@ description: AEM as a Cloud Service가 Edge Delivery Services에서 제공하는
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 6c7e704dff97e8549664618f879863c3ca0f8f86
-workflow-type: ht
-source-wordcount: '1356'
-ht-degree: 100%
+source-git-commit: fa50e661d05a5083be3605a8c6e26450357f4aec
+workflow-type: tm+mt
+source-wordcount: '1425'
+ht-degree: 93%
 
 ---
 
@@ -135,7 +135,11 @@ Adobe는 사용자에게 Edge Delivery Services, WYSIWYG 작성 및 문서 기�
 
 ### 지원 티켓 기록 {#support-ticket}
 
-제품 문제 해결에 추가 조사가 필요하고 응답 SLT를 충족해야 하는 경우 Admin Console을 사용하여 다음 프로세스에 따라 지원 티켓을 제출할 수 있습니다.
+제품 문제에 추가 조사 및 문제 해결이 필요하고 응답 SLT를 충족해야 하는 경우 지원 티켓을 제출할 수 있습니다.
+
+지원 티켓을 기록하려면 먼저 Cloud Manager에서 Edge Delivery 사이트를 등록해야 합니다. Cloud Manager에 웹 사이트를 등록하는 것은 모든 AEM as a Cloud Service 사용자에게 권장되며 [은(는) 다양한 이점을 제공합니다.](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) 사이트를 아직 등록하지 않은 경우 자세한 내용은 [Cloud Manager 설명서](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)를 참조하십시오.
+
+웹 사이트가 Cloud Manager에 등록되면 Admin Console을 사용하여 다음 프로세스에 따라 지원 티켓을 제출합니다.
 
 1. [표준 지원 프로세스에 따라](https://experienceleague.adobe.com/?support-tab=home#support) 티켓을 생성합니다.
 1. 티켓 제목에서 **Edge Delivery**&#x200B;를 추가합니다.
