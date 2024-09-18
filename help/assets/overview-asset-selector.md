@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선
 description: 에셋 선택기를 사용하여 애플리케이션 내에서 에셋의 메타데이터와 렌디션을 검색, 찾기 및 검색할 수 있습니다.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 0b8c345efa4c8f59b423644944ca2a6f8d54cbb4
+source-git-commit: 027922c304be9c36b600b04b264d571ea8ed60d4
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1314'
 ht-degree: 34%
 
 ---
@@ -196,15 +196,15 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
         <em>자산 선택기를 Dynamic Media Open API와 통합하는 방법을 이해합니다.</em>
         </p>
      </td>
-</tr>
-<tr>
-    <td>
+     <td>
         <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="자산 선택기 속성 그래픽"><br/>
         <a href="asset-selector-customization.md">자산 선택기 속성</a>
         <p>
         <em>필터, 에셋 선택, 만료된 에셋 등과 같은 에셋 선택기의 다양한 구성 요소를 사용자 지정하는 기본 사항에 대해 알아봅니다. </em>
         </p>
     </td>
+</tr>
+<tr>
     <td>
         <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="자산 선택기 예 그래픽"><br/>
         <a href="asset-selector-customization.md">자산 선택기 예</a>
@@ -225,6 +225,15 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
         <p>
         <em>로컬 또는 타사 파일 시스템에서 자산 선택기에 파일이나 폴더를 업로드하는 방법을 알아봅니다. </em>
         </p>
+    </td>
+     <td>
+        <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="에셋 선택기 컬렉션 그래픽"><br/>
+        <a href="asset-selector-collections.md">자산 선택기 컬렉션</a>
+        <p>
+        <em>Experience Manager 저장소를 사용하여 에셋 선택기 내에서 컬렉션을 사용하는 방법에 대해 알아봅니다. </em>
+        </p>
+    </td>
+    <td>
     </td>
 </tr>
 </table>
