@@ -19,8 +19,8 @@ ht-degree: 34%
 >id="aemcloud_golive_sslcert"
 >title="SSL 인증서 관리"
 >abstract="Cloud Manager가 SSL 인증서를 설치하고 관리하는 셀프서비스 도구를 제공하여 사용자의 사이트를 보호하는 방법에 대해 알아봅니다. Cloud Manager는 플랫폼 TLS 서비스를 사용하여 고객이 소유하고 서드파티 인증 기관에서 얻은 SSL 인증서 및 개인 키를 관리합니다."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="SSL 인증서 보기, 업데이트 및 바꾸기"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="SSL 인증서 상태 확인"
+>additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="SSL 인증서 보기, 업데이트 및 바꾸기"
+>additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="SSL 인증서 상태 확인"
 
 
 Cloud Manager은 SSL(Secure Socket Layer) 인증서를 설치하고 관리하는 셀프서비스 도구를 제공하여 사용자의 사이트 보안을 보장합니다. 다음 두 가지 사용 사례가 지원됩니다.
