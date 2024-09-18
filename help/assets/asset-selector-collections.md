@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선택기'
 description: 자산 선택기를 사용하여 애플리케이션 내에서 자산의 메타데이터와 렌디션을 검색하고 찾을 수 있습니다.
 role: Admin,User
-source-git-commit: 63174176c944195ed21e481264e0a50062fd34f3
+source-git-commit: 5c76b28726403a6b011a55add190e6e3a6d7a390
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 8%
