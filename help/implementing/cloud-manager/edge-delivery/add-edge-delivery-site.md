@@ -1,34 +1,29 @@
 ---
 title: Cloud Manager에 Edge Delivery 사이트 추가
-description: 프로덕션 프로그램 또는 샌드박스 프로그램에 Edge Delivery 사이트를 추가하는 방법과 이점을 알아봅니다.
+description: 프로덕션 프로그램 또는 샌드박스 프로그램에 Edge Delivery 사이트를 추가하는 방법을 알아봅니다.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 68f05c49ebc3d46aa44b3998e6142ab8547e5455
+source-git-commit: c952e69aa637b30abec4deba0e643b4287d84330
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '446'
 ht-degree: 2%
 
 ---
 
 
-# Cloud Manager에 Edge Delivery 사이트 추가 {#eds-add-site}
+# Cloud Manager에 Edge Delivery 사이트 추가 {#adding}
 
-프로덕션 프로그램 또는 샌드박스 프로그램에 Edge Delivery 사이트를 추가하는 방법과 이점을 알아봅니다.
+프로덕션 프로그램 또는 샌드박스 프로그램에 Edge Delivery 사이트를 추가할 수 있습니다.
 
-## 소개 {#introduction}
+[Edge Delivery 프로젝트에 대한 지원 티켓을 등록](/help/edge/overview.md##support-ticket)하려면 Cloud Manager에 Edge Delivery 사이트를 추가해야 합니다.
 
-AEM as a Cloud Service을 사용하는 Edge Delivery Services 프로젝트의 일부로 Edge Delivery 사이트를 Cloud Manager에 추가하는 것이 좋습니다. Edge Delivery 웹 사이트를 Cloud Manager에 추가하면 다음과 같은 이점이 있습니다.
+[Cloud Manager에서 Edge Delivery Services 소개](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)도 참조하세요.
 
-* [Adobe 관리 CDN에 대한 액세스](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-* [SLA 보고서에 대한 액세스](/help/implementing/cloud-manager/sla-reporting.md)
-* [라이선스 사용 현황 보고서 액세스](/help/implementing/cloud-manager/license-dashboard.md)
-
-[Edge Delivery 프로젝트에 대한 지원 티켓을 등록하려면 Edge Delivery 사이트를 Cloud Manager에 추가해야 합니다.](/help/edge/overview.md##support-ticket)
-
-## Cloud Manager에 및 Edge Delivery 사이트 추가 {#adding}
+**Cloud Manager에 Edge Delivery 사이트를 추가하려면:**
 
 1. [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 프로그램을 선택합니다.
 1. 다음 중 하나를 수행하십시오.
+
    * **프로그램 개요** 페이지에서 **Edge Delivery** 탭을 클릭합니다. 그런 다음 페이지의 오른쪽 아래 모서리에서 **Edge Delivery 사이트 추가**&#x200B;를 클릭합니다.
 
      ![Edge Delivery 탭에서 Edge Delivery 사이트 추가](/help/implementing/cloud-manager/assets/cm-eds-add1.png)
@@ -59,11 +54,3 @@ AEM as a Cloud Service을 사용하는 Edge Delivery Services 프로젝트의 �
 1. **확인**&#x200B;을 클릭합니다.
 
 저장소가 확인되면 Edge Deliver Sites 테이블의 상태가 내부에 흰색 확인 표시가 있는 녹색 원으로 변경됩니다.
-
-프로덕션 프로그램에 Edge Delivery Services을 추가하면 Edge Delivery Services 라이선스가 적용됩니다.
-
-각 Edge Delivery 사이트에는 Edge Delivery 사이트를 만드는 과정을 안내하는 **Edge Delivery 할 일 목록**&#x200B;이 있습니다.
-
-![Edge Delivery 할 일 앱](/help/implementing/cloud-manager/assets/edge-delivery-to-do-ist.png)
-
-이 단계에 대한 자세한 내용은 [Cloud Manager에서 Edge Delivery Services 소개](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list) 문서를 참조하십시오.
