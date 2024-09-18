@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: f0dc6a753590a1aaddcf01b9766ab0ab6373187c
+source-git-commit: 8349f6d4d4f04d8609d5a5241b973201b54b2cd2
 workflow-type: tm+mt
-source-wordcount: '5641'
+source-wordcount: '5651'
 ht-degree: 97%
 
 ---
@@ -625,8 +625,6 @@ ht-degree: 97%
       + [태그 관리](/help/assets/tagging-management-assets-view.md)
       + [Content Credentials](/help/assets/content-credentials.md)
       + [AEM 및 Dynamic Media에 자산 게시](/help/assets/publish-assets-to-aem-and-dm.md)
-
-
    + Content Hub {#content-hub}
       + [개요](/help/assets/product-overview.md)
       + [Content Hub 배포](/help/assets/deploy-content-hub.md)
@@ -1068,9 +1066,6 @@ ht-degree: 97%
    + [변형 생성](/help/generative-ai/generate-variations.md)
 + 구현 {#implementing}
    + [AEM as a Cloud Service용 애플리케이션 구현](/help/implementing/home.md)
-
-
-
    + Cloud Manager 사용 {#using-cloud-manager}
       + [탐색](/help/implementing/cloud-manager/navigation.md)
       + 프로그램 {#programs}
@@ -1149,9 +1144,6 @@ ht-degree: 97%
       + [Cloud Service 콘텐츠 요청 이해](/help/implementing/cloud-manager/content-requests.md)
       + [CDN 성능 대시보드](/help/implementing/cloud-manager/cdn-performance.md)
       + [Cloud Manager FAQ](/help/implementing/cloud-manager/faqs.md)
-
-
-
    + AEM as a Cloud Service용 개발 {#developing}
       + [AEM 프로젝트 구조](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [AEM 프로젝트 저장소 구조 패키지](/help/implementing/developing/introduction/repository-structure-package.md)
@@ -1259,7 +1251,7 @@ ht-degree: 97%
       + [ContextHub API](/help/implementing/developing/personalization/contexthub-api.md)
       + [ContextHub를 사용하여 세분화 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html)
    + AEM as a Cloud Service 구성 및 확장 {#configuring-and-extending}
-      + App Builder를 사용하여 AEM 확장{#app-builder}
+      + App Builder {#app-builder}을(를) 사용하여 AEM 확장
          + [Adobe Developer App Builder를 사용하여 AEM 확장](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [App Builder 소개](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Adobe Developer Console](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
@@ -1287,6 +1279,10 @@ ht-degree: 97%
       + [페이지 속성 확장](/help/implementing/developing/extending/page-properties.md)
       + [벌크 편집기 확장](/help/implementing/developing/extending/bulk-editor.md)
       + [MSM 확장](/help/implementing/developing/extending/msm.md)
+      + 다국어화{#internationalization}
+         + [구성 요소 다국어화](/help/implementing/developing/extending/i18n/components.md)
+         + [UI 문자열 다국어화](/help/implementing/developing/extending/i18n/dev.md)
+         + [번역할 문자열 추출](/help/implementing/developing/extending/i18n/extract.md)
    + AEM as a Cloud Service에 배포 {#deploying}
       + [AEM as a Cloud Service에 배포](/help/implementing/deploying/overview.md)
       + [AEM 버전 업데이트](/help/implementing/deploying/aem-version-updates.md)
