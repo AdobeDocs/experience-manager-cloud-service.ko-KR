@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
+source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 13%
+source-wordcount: '904'
+ht-degree: 11%
 
 ---
 
@@ -50,11 +50,30 @@ Cloud Manager을 사용하여 Adobe 관리 및 고객 관리 SSL 인증서의 �
    * **개인 키** 필드에서 인증서를 변경한 경우에만 이 필드를 업데이트하십시오.
    * **인증서 체인** 필드(또는 신뢰 체인)에 인증서 체인을 붙여 넣습니다.
 
-1. 변경 내용을 저장하고 자동으로 적용하려면 **업데이트**&#x200B;를 클릭하십시오.
+1. 변경 내용을 저장하고 자동으로 적용하려면 **업데이트**&#x200B;를 클릭하십시오. —>
 
 ## 만료된 고객 관리 SSL 인증서 바꾸기 {#replace-ssl-certificate}
 
 [만료된 SSL 인증서 업데이트](#update-ssl-certificate)에 설명된 것과 동일한 단계에 따라 만료된 고객 관리 SSL 인증서를 바꾸십시오.
+
+## Adobe 관리 SSL 인증서(#rename-an-ssl-certificate) 이름 바꾸기
+
+다음은 SSL 인증서의 이름을 변경할 수 있는 몇 가지 이유입니다.
+
+* **개선된 조직**: 인증서의 이름을 바꾸면 해당 환경(예: 스테이징, 프로덕션) 또는 도메인을 식별하는 등 용도를 명확하게 하는 데 도움이 될 수 있습니다.
+* **혼동 방지**: 여러 인증서를 관리하는 경우 명확하고 설명적인 이름을 사용하면 잘못된 도메인에 잘못된 인증서를 적용하는 것과 같은 실수를 방지할 수 있습니다.
+* **준수 및 감사**: 올바른 이름의 인증서를 보안 및 감사 목적으로 추적하기가 더 쉬울 수 있습니다.
+
+**Adobe 관리 SSL 인증서의 이름을 바꾸려면**
+
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 프로그램을 선택합니다.
+1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
+1. 페이지 왼쪽 상단 모서리에서 햄버거 아이콘을 클릭하여 왼쪽 탐색 메뉴를 표시합니다.
+1. **서비스** 제목에서 **SSL 인증서**&#x200B;를 클릭합니다.
+1. **SSL 인증서** 페이지에서 이름을 바꿀 인증서의 행 끝에 있는 줄임표를 클릭합니다.
+1. **이름 바꾸기**&#x200B;를 클릭합니다.
+1. **DV 인증서 이름 바꾸기** 대화 상자의 **인증서 이름** 텍스트 필드에 새 인증서 이름을 입력합니다.
+1. **이름 바꾸기**&#x200B;를 클릭합니다.
 
 ## SSL 인증서 삭제 {#deleting-an-ssl-certificate}
 

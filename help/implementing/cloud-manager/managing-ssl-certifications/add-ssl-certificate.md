@@ -5,9 +5,9 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
+source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '548'
 ht-degree: 9%
 
 ---
@@ -49,7 +49,7 @@ Cloud Manager의 셀프서비스 도구를 사용하여 고객 관리 SSL 인증
 
    | | 사용 사례 | 단계 |
    | --- | --- | --- |
-   | 1 | **Adobe 관리 인증서(DV) 추가** | **Adobe 관리 인증서(DV)를 추가하려면:**<br> a. 인증서 유형 **Adobe 관리(DV)**&#x200B;을(를) 선택합니다.<br>![DV 인증서를 추가합니다](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b. **도메인 선택** 드롭다운 목록에서 DV 인증서와 연결할 도메인을 하나 이상 선택합니다.<br>선택할 도메인이 없습니까? 이 경우 사용자 정의 도메인을 추가해야 합니다. [사용자 지정 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)를 참조하십시오. 사용자 정의 도메인 이름을 모두 추가했으면 이 항목으로 돌아가서 1단계에서 다시 시작합니다.<br>일. 7단계로 진행합니다. |
+   | 1 | **Adobe 관리 인증서(DV) 추가** | **Adobe 관리 인증서(DV)를 추가하려면:**<br> a. 인증서 유형 **Adobe 관리(DV)**&#x200B;을(를) 선택합니다.<br>![DV 인증서를 추가합니다](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b. **인증서 이름** 필드에 인증서와 연결할 이름을 입력하십시오.<br>c입니다. **도메인 선택** 드롭다운 목록에서 DV 인증서와 연결할 도메인을 하나 이상 선택합니다.<br>선택할 도메인이 없습니까? 이 경우 사용자 정의 도메인을 추가해야 합니다. [사용자 지정 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)를 참조하십시오. 사용자 정의 도메인 이름을 모두 추가했으면 이 항목으로 돌아가서 1단계에서 다시 시작합니다.<br>일. 7단계로 진행합니다. |
    | 2 | **고객 관리 인증서(OV/EV) 추가** | **고객 관리 인증서(OV/EV)를 추가하려면:**<br> a. 인증서 유형 **고객 관리(OV/EV)**&#x200B;을(를) 선택하십시오.<br>b. **인증서 이름** 필드에 인증서 이름을 입력합니다. 이 필드는 정보 제공용으로만 사용되며 인증서를 쉽게 참조하는 데 도움이 되는 모든 이름을 지정할 수 있습니다.<br>c입니다. **인증서**, **개인 키** 및 **인증서 체인** 필드에서 각 필드에 필요한 값을 붙여 넣습니다.<br>![SSL 인증서 추가 대화 상자](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)<br>값에서 발견된 오류가 표시됩니다. 인증서를 저장하려면 먼저 모든 오류를 해결해야 합니다. 일반적인 오류를 해결하는 방법에 대한 자세한 내용은 [인증서 오류](#certificate-errors)를 참조하세요.<br>일. 7단계로 진행합니다. |
 
 <!--
