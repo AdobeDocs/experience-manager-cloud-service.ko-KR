@@ -3,7 +3,7 @@ title: Cloud Manager에서 Edge Delivery 사이트 관리
 description: Edge Delivery 사이트에 CDN 구성을 추가하거나 Edge Delivery 사이트를 삭제하는 방법에 대해 알아봅니다.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
+source-git-commit: e28e4bf06c28f97d665e5fd86ab87d484116504f
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 0%
@@ -62,6 +62,8 @@ Edge Delivery 사이트 테이블에서 제거할 사이트가 있는 행의 끝
 
      ![Edge Delivery Sites 단추에서 Edge Delivery 사이트 추가](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
 
-### 지원 티켓 기록 {#eds-support-ticket}
+## 지원 티켓 기록 {#eds-support-ticket}
 
 {{support-ticket}}
+
+

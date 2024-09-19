@@ -4,7 +4,7 @@ description: Edge Delivery Services을 사용하여 Cloud Manager 프로젝트�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3db0b72a267a001b3fda5341a6c2c642babfb9eb
+source-git-commit: e28e4bf06c28f97d665e5fd86ab87d484116504f
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 6%
@@ -62,7 +62,10 @@ Cloud Manager을 통해 Edge Delivery Services 라이선스에 액세스하고 �
 >* 프로덕션 프로그램에 적용하려면 조직에 사용되지 않은 Edge Delivery Services 라이선스가 있어야 합니다.
 >* Edge Delivery Services 라이센스가 프로그램에 적용되거나 프로그램에서 제거되면 파이프라인을 실행할 필요 없이 변경 사항이 즉시 적용됩니다.
 
+
 ## Edge Delivery 할 일 목록 {#ed-todo-list}
+
+<!-- &#x2460; for "1" inside circle -->
 
 **Edge Delivery 할 일 목록**&#x200B;은(는) [go-live](/help/journey-onboarding/go-live-checklist.md)까지 온보딩, Edge Delivery 사이트 관리 과정을 안내하는 온보딩 작업 확인 목록입니다.
 
@@ -77,7 +80,6 @@ Cloud Manager을 통해 Edge Delivery Services 라이선스에 액세스하고 �
 | 5 | SSL 인증서 추가 | [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)를 참조하십시오. |
 | 6 | Edge Delivery 사이트의 CDN 구성 | [CDN 구성 추가](#add-cdn)를 참조하십시오. |
 
-<!-- &#x2460; for "1" inside circle -->
 
 ## 지원 티켓 기록 {#eds-support-ticket}
 
