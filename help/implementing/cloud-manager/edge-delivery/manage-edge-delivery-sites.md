@@ -3,9 +3,9 @@ title: Cloud Manager에서 Edge Delivery 사이트 관리
 description: Edge Delivery 사이트에 CDN 구성을 추가하거나 Edge Delivery 사이트를 삭제하는 방법에 대해 알아봅니다.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
+source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Cloud Manager Adobe에서 다음과 같은 여러 가지 이유로 Edge Delivery 사이트의 이름을 변경할 수 있습니다.
 
-* **명확성 및 조직**: 사이트의 목적이나 관련 환경(예: 프로덕션, 스테이징)을 더 잘 설명하십시오.
+* **명확성 및 조직**: 사이트의 목적이나 관련 환경(예: 프로덕션, 스테이징)을 더 잘 설명합니다.
 * **혼동 방지**: 여러 사이트를 사용 중인 경우 이름을 바꾸면 사이트를 쉽게 구분할 수 있으므로 잘못된 사이트에 구성 또는 업데이트를 적용할 가능성이 줄어듭니다.
 * **표준화**: 보다 쉬운 관리 및 감사를 위해 조직의 지침에 맞는 일관된 명명 규칙을 따릅니다.
 
@@ -61,3 +61,7 @@ Edge Delivery 사이트 테이블에서 제거할 사이트가 있는 행의 끝
 
 
      ![Edge Delivery Sites 단추에서 Edge Delivery 사이트 추가](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
+
+### 지원 티켓 기록 {#eds-support-ticket}
+
+{{support-ticket}}
