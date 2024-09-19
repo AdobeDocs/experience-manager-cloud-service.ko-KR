@@ -2,7 +2,7 @@
 source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
 workflow-type: tm+mt
 source-wordcount: '1139'
-ht-degree: 78%
+ht-degree: 83%
 
 ---
 # 스니펫 {#snippets}
@@ -17,30 +17,30 @@ ht-degree: 78%
 
 ## 추가 참조 {#see-also}
 
-* [AEM 적응형 Forms 만들기](/help/forms/creating-adaptive-form-core-components.md)
-* [AEM 적응형 Forms을 AEM Sites 페이지에 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [AEM 적응형 Forms에 테마 적용](/help/forms/using-themes-in-core-components.md)
-* [AEM 적응형 Forms에 구성 요소 추가](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
-* [AEM 적응형 Forms에서 CAPTCHA 사용](/help/forms/captcha-adaptive-forms-core-components.md)
-* [AEM 적응형 Forms의 PDF 버전(DoR) 생성](/help/forms/generate-document-of-record-core-components.md)
-* [AEM 적응형 Forms 번역](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
-* [적응형 Forms에 대해 Adobe Analytics를 활성화하여 Forms 사용 추적](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
-* [Microsoft SharePoint에 적응형 Forms 연결](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive)
-* [Microsoft Power Automate에 적응형 Forms 연결](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
-* [Microsoft OneDrive에 적응형 Forms 연결](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration)
-* [Microsoft Azure Blob Storage에 적응형 Forms 연결](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
-* [Salesforce에 적응형 Forms 연결](/help/forms/aem-forms-salesforce-integration.md)
-* [AEM 적응형 Forms에서 Adobe Sign 사용](/help/forms/working-with-adobe-sign.md)
-* [적응형 Forms에 대해 새 로케일 추가](/help/forms/supporting-new-language-localization-core-components.md)
-* [적응형 Forms 데이터를 데이터베이스로 보내기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
-* [적응형 Forms 데이터를 REST 엔드포인트로 보내기](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
-* [적응형 Forms 데이터를 AEM 워크플로로 보내기](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
-* [Forms 포털을 사용하여 AEM 웹 사이트에 AEM 적응형 Forms 나열](/help/forms/configure-forms-portal.md)
-* [적응형 Forms에 버전 관리, 댓글 및 주석 추가](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
-* [적응형 Forms 비교](/help/forms/compare-forms.md)
+* [AEM 적응형 양식 만들기](/help/forms/creating-adaptive-form-core-components.md)
+* [AEM 적응형 양식을 AEM Sites 페이지에 추가](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [AEM 적응형 양식에 테마 적용](/help/forms/using-themes-in-core-components.md)
+* [AEM 적응형 양식에 구성 요소 추가](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
+* [AEM 적응형 양식에서 CAPTCHA 사용](/help/forms/captcha-adaptive-forms-core-components.md)
+* [AEM 적응형 양식의 PDF 버전(DoR) 생성](/help/forms/generate-document-of-record-core-components.md)
+* [AEM 적응형 양식 번역](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+* [적응형 양식에 대해 Adobe Analytics를 활성화하여 Forms 사용 추적](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+* [Microsoft SharePoint에 적응형 양식 연결](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive)
+* [Microsoft Power Automate에 적응형 양식 연결](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+* [Microsoft OneDrive에 적응형 양식 연결](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration)
+* [Microsoft Azure Blob Storage에 적응형 양식 연결](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
+* [Salesforce에 적응형 양식 연결](/help/forms/aem-forms-salesforce-integration.md)
+* [AEM 적응형 양식에서 Adobe Sign 사용](/help/forms/working-with-adobe-sign.md)
+* [적응형 양식에 대해 새 로케일 추가](/help/forms/supporting-new-language-localization-core-components.md)
+* [적응형 양식 데이터를 데이터베이스로 보내기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
+* [적응형 양식 데이터를 REST 엔드포인트로 보내기](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
+* [적응형 양식 데이터를 AEM 워크플로로 보내기](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
+* [Forms 포털을 사용하여 AEM 웹 사이트에 AEM 적응형 양식 나열](/help/forms/configure-forms-portal.md)
+* [적응형 양식에 버전 관리, 댓글 및 주석 추가](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
+* [적응형 양식 비교](/help/forms/compare-forms.md)
 
 
-## 적응형 Forms 제출 액션 {#af-submit-action}
+## 적응형 양식 제출 액션 {#af-submit-action}
 
 * [이메일 보내기](/help/forms/configure-submit-action-send-email.md)
 * [SharePoint에 제출](/help/forms/configure-submit-action-sharepoint.md)
@@ -51,19 +51,19 @@ ht-degree: 78%
 * [AEM Workflow 호출](/help/forms/configure-submit-action-workflow.md)
 * [Power Automate에 제출](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Workfront Fusion에 제출](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Salesforce 애플리케이션에 적응형 Forms 연결](/help/forms/aem-forms-salesforce-integration.md)
-* [Microsoft에 적응형 Forms 연결](/help/forms/ms-dynamics-odata-configuration.md)
+* [Salesforce 애플리케이션에 적응형 양식 연결](/help/forms/aem-forms-salesforce-integration.md)
+* [Microsoft에 적응형 양식 연결](/help/forms/ms-dynamics-odata-configuration.md)
 
 ## 추가 참조 {#see-more-forms-eds}
 
-* [AEM Forms용 Edge Delivery Services 시작](/help/edge/docs/forms/tutorial.md)
+* [AEM Forms용 Edge Delivery Services 시작하기](/help/edge/docs/forms/tutorial.md)
 * [Google Sheets 또는 Microsoft Excel을 사용하여 양식 만들기](/help/edge/docs/forms/create-forms.md)
 * [Google Sheets 또는 Microsoft Excel 파일을 설정하여 데이터 수신 시작&#x200B;](/help/edge/docs/forms/submit-forms.md)
 * [양식 게시 및 데이터 수집 시작](/help/edge/docs/forms/publish-forms.md)
 * [양식 모양 사용자 정의&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
 * [양식에 반복 가능한 섹션 추가&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [양식 제출 후 사용자 정의 감사 메시지 표시&#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
-* [적응형 Forms 블록 구성 요소 및 해당 속성](/help/edge/docs/forms/form-components.md)
+* [적응형 양식 블록 구성 요소 및 해당 속성](/help/edge/docs/forms/form-components.md)
 
 
 ## 핵심 구성 요소의 규칙 편집기와 기초 구성 요소의 규칙 편집기 간 차이점 {#rule-editor-diff}
@@ -74,8 +74,8 @@ ht-degree: 78%
   <tbody>
   <tr>
     <td><strong>기능</strong></td>
-    <td><strong>적응형 Forms 기초 구성 요소</strong></td>
-    <td><strong>적응형 Forms 핵심 구성 요소</strong></td>   
+    <td><strong>적응형 양식 기초 구성 요소</strong></td>
+    <td><strong>적응형 양식 핵심 구성 요소</strong></td>   
     </tr>
   </tr>
   <tr>
@@ -119,13 +119,13 @@ ht-degree: 78%
 
 ## 규칙 편집기 추가 참조 {#see-also-rule-editor}
 
-* [핵심 구성 요소 기반 적응형 Forms의 규칙 편집기 소개](/help/forms/rule-editor-core-components.md)
-* [핵심 구성 요소 기반 적응형 Forms의 규칙 편집기에서 사용 가능한 연산자 유형 및 이벤트](/help/forms/rule-editor-core-components-events-operators.md)
-* [핵심 구성 요소 기반 적응형 Forms의 규칙 편집기 사용자 인터페이스](/help/forms/rule-editor-core-components-user-interface.md)
-* [핵심 구성 요소 기반 적응형 Forms의 규칙 편집기의 다양한 사용 사례](/help/forms/rule-editor-core-components-usecases.md)
+* [핵심 구성 요소 기반 적응형 양식의 규칙 편집기 소개](/help/forms/rule-editor-core-components.md)
+* [핵심 구성 요소 기반 적응형 양식의 규칙 편집기에서 사용 가능한 연산자 유형 및 이벤트](/help/forms/rule-editor-core-components-events-operators.md)
+* [핵심 구성 요소 기반 적응형 양식의 규칙 편집기 사용자 인터페이스](/help/forms/rule-editor-core-components-user-interface.md)
+* [핵심 구성 요소 기반 적응형 양식의 규칙 편집기의 다양한 사용 사례](/help/forms/rule-editor-core-components-usecases.md)
 * [다양한 규칙 편집기 에디션의 차이점](/help/forms/rule-editor-core-components-difference-tables.md)
-* [핵심 구성 요소 기반 적응형 Forms의 사용자 정의 함수 소개](/help/forms/create-and-use-custom-functions.md)
-* [핵심 구성 요소 기반 적응형 Forms의 사용자 정의 함수 만들기](/help/forms/custom-function-core-component-create-function.md)
+* [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 소개](/help/forms/create-and-use-custom-functions.md)
+* [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 만들기](/help/forms/custom-function-core-component-create-function.md)
 * [사용자 정의 함수 개발 및 사용의 예](/help/forms/custom-function-core-components-use-cases.md)
 
 
@@ -162,24 +162,24 @@ ht-degree: 78%
 >
 >Dynamic Media를 처음 사용하십니까? Dynamic Media에 대한 간략한 개요 정보를 보려면 [Dynamic Media 작업](/help/assets/dynamic-media/dynamic-media.md)을 참조하세요.
 
-## Dynamic Media 관련 항목 참조 {#see-also-dm}
+## Dynamic Media도 참조할 수 있습니다. {#see-also-dm}
 
 >[!NOTE]
 >
 >* Dynamic Media를 처음 사용하십니까? Dynamic Media에 대한 간략한 개요 정보를 보려면 [Dynamic Media 작업](/help/assets/dynamic-media/dynamic-media.md)을 참조하세요.
 >
->* [Dynamic Media 우수 사례](/help/assets/dynamic-media/dm-best-practices.md)를 따라 값을 최대한 활용하십시오.
+>* 기능을 최대로 활용하려면 [Dynamic Media 모범 사례](/help/assets/dynamic-media/dm-best-practices.md)를 참조하십시오.
 >
->* [스냅숏 도구](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot)로 Dynamic Media 이미지 기능을 사용해 보세요.
+>* [스냅숏 도구](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot)로 Dynamic Media 이미지 기능을 사용해 보세요.
 >
->* [응용 비디오](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash)를 사용하여 비디오가 원활하게 재생되는지 확인하십시오.
+>* [적응형 비디오](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash)로 원활한 비디오 재생을 보장합니다.
 >
->* 스마트 자르기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)로 [이미지 자르기 자동화
+>* [스마트 자르기를 이용해 이미지](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) 자르기를 자동화합니다.
 >
->* 스마트 자르기로 [비디오 자르기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video)를 자동화합니다.
+>* [스마트 자르기를 이용해 비디오](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) 자르기를 자동화합니다.
 >
->* [대화형 3D 기반 경험](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video)을 제공합니다.
->* 다른 [Dynamic Media 리소스 은행](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
+>* [대화형 3D 기반 경험](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video)을 제공합니다.
+>* 기타 [Dynamic Media 리소스 뱅크](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use)
 
 ## 지원 티켓 기록 {#support-ticket}
 
