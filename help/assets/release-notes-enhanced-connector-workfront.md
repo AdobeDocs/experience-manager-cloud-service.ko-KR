@@ -5,9 +5,9 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
 source-git-commit: 346f36a476a11dc7fe022df8b7b8df7aff06a2ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1678'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 98%
 
 다음 섹션에서는 [!DNL Workfront for Experience Manager enhanced connector]의 일반 릴리스 정보에 대해 간략히 설명합니다.
 
-최신 버전 1.9.20([!DNL Workfront for Experience Manager enhanced connector])의 릴리스 날짜는 2024년 9월 6일입니다.
+[!DNL Workfront for Experience Manager enhanced connector] 최신 버전 1.9.20의 릴리스 일자는 2024년 9월 6일입니다.
 
 ## 릴리스 하이라이트 {#release-highlights}
 
 최신 버전의 [!DNL Workfront for Experience Manager enhanced connector]에는 다음과 같은 버그 수정 사항이 포함됩니다.
 
-* 기존 에셋의 새 버전을 업로드하고 만드는 동안 MIME 유형이 손실됩니다.
+* 기존 자산의 새 버전을 업로드하고 생성하는 도중 MIME 유형이 손실됩니다.
 
 >[!NOTE]
 >
