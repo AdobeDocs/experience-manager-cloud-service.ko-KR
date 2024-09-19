@@ -7,15 +7,15 @@ hidefromtoc: true
 exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '665'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # 사용자 정의 구성 요소 만들기
 
-AEM Forms용 Edge Delivery Services을 사용하면 [기본 HTML 양식 구성 요소](/help/edge/docs/forms/form-components.md)를 사용자 지정하고 사용자에게 친숙한 대화형 양식을 만들 수 있습니다. 이를 통해 [양식 필드의 스타일](/help/edge/docs/forms/style-theme-forms.md)에서 설명한 대로 미리 정의된 마크업으로 양식 구성 요소를 수정하고, 사용자 정의 CSS(Cascading Style Sheets)와 구성 요소를 장식하는 사용자 정의 코드를 사용하여 적응형 양식 블록 내의 양식 필드 모양을 개선할 수 있습니다.
+AEM Forms용 Edge Delivery Services를 사용하면 [기본 HTML 양식 구성 요소](/help/edge/docs/forms/form-components.md)를 사용자 정의하고 사용하기 쉬운 대화형 양식을 만들 수 있습니다. 이를 통해 [양식 필드의 스타일](/help/edge/docs/forms/style-theme-forms.md)에서 설명한 대로 미리 정의된 마크업으로 양식 구성 요소를 수정하고, 사용자 정의 CSS(Cascading Style Sheets)와 구성 요소를 장식하는 사용자 정의 코드를 사용하여 적응형 양식 블록 내의 양식 필드 모양을 개선할 수 있습니다.
 
 ![사용자 정의 구성 요소](/help/edge/assets/custom-component-image.png)
 

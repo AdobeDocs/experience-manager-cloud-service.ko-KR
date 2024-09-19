@@ -1,13 +1,13 @@
 ---
 title: 규칙을 사용하여 양식에 동적 비헤이비어 추가
-description: AEM Forms용 Edge Delivery Services은 최고 성능을 위해 구축되어 간소화된 데이터 수집과 사용자 참여의 미래를 구상할 수 있도록 해줍니다. 규칙을 사용하여 내 양식에 동적 비헤이비어를 추가합니다.
+description: AEM Forms용 Edge Delivery Services는 최고의 성능을 발휘하도록 구축되어 데이터 수집 및 사용자 참여를 간소화하는 미래를 구상할 수 있도록 지원합니다. 규칙을 사용하여 내 양식에 동적 비헤이비어를 추가합니다.
 feature: Edge Delivery Services
 exl-id: 58042016-e655-446f-a2bf-83f1811525e3
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2218'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -297,7 +297,7 @@ MIN(ageLimits[“US”], ageLimits[“UK”], ageLimits[“France”])
 
 ## 사용자 정의 함수 만들기 및 배포
 
-기본(OOTB) 적응형 양식 블록은 다양한 [일반 스프레드시트 함수](#spreadsheet-functions-for-rules)를 구현합니다. 그러나 양식을 보다 세분화하여 제어하기 위해 적응형 양식 블록 내에서 Microsoft® Excel 또는 Google 시트에서 사용할 수 있는 모든 기본(OOTB) 함수를 사용할 수 있습니다. 적응형 양식 블록에는 Microsoft® Excel 또는 Google 시트에서 사용할 수 있는 모든 기본(OOTB) 함수 구현이 포함되어 있지 않습니다. 이러한 함수가 필요한 경우 비슷한 구문으로 사용자 정의 함수를 개발하여 Microsoft® Excel 또는 Google 시트에서 제공하는 기능을 구현할 수 있습니다. 예를 들어 [Microsoft® Excel&#39;s Year() 함수](https://support.microsoft.com/ko-kr/office/calculate-age-113d599f-5fea-448f-a4c3-268927911b37#)를 구현하여 출생일로부터 나이를 계산할 수 있습니다.
+기본(OOTB) 적응형 양식 블록은 다양한 [일반 스프레드시트 함수](#spreadsheet-functions-for-rules)를 구현합니다. 그러나 양식을 보다 세분화하여 제어하기 위해 적응형 양식 블록 내에서 Microsoft® Excel 또는 Google 시트에서 사용할 수 있는 모든 기본(OOTB) 함수를 사용할 수 있습니다. 적응형 양식 블록에는 Microsoft® Excel 또는 Google 시트에서 사용할 수 있는 모든 기본(OOTB) 함수 구현이 포함되어 있지 않습니다. 이러한 함수가 필요한 경우 비슷한 구문으로 사용자 정의 함수를 개발하여 Microsoft® Excel 또는 Google 시트에서 제공하는 기능을 구현할 수 있습니다. 예를 들어 [Microsoft® Excel&#39;s Year() 함수](https://support.microsoft.com/ko/office/calculate-age-113d599f-5fea-448f-a4c3-268927911b37#)를 구현하여 출생일로부터 나이를 계산할 수 있습니다.
 
 
 ### 사용자 정의 함수 만들기

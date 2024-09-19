@@ -1,13 +1,13 @@
 ---
-title: AEM Forms용 Edge Delivery Services의 테마 및 스타일 맞춤화
-description: AEM Forms용 Edge Delivery Services의 테마 및 스타일 맞춤화
+title: AEM Forms용 Edge Delivery Services 양식의 테마 및 스타일 사용자 정의
+description: AEM Forms용 Edge Delivery Services 양식의 테마 및 스타일 사용자 정의
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2016'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -738,7 +738,7 @@ first-name input {
 }
 ```
 
-이 선택기는 범례, 끌기 영역, 입력 필드 및 목록을 포함한 전체 파일 첨부 구성 요소의 스타일을 지정합니다.
+이 선택기는 범례, 드래그 영역, 입력 필드 및 목록을 포함한 전체 파일 첨부 구성 요소의 스타일을 지정합니다.
 
 * 특정 요소 타겟팅:
 

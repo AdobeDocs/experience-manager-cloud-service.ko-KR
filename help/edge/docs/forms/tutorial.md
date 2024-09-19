@@ -1,19 +1,19 @@
 ---
-title: AEM Forms용 Edge Delivery Services 시작하기 - 개발자 자습서
+title: AEM Forms용 Edge Delivery Services 시작하기 - 개발자 튜토리얼
 description: 이 튜토리얼에서는 새로운 AEM(Adobe Experience Manager Forms) 프로젝트를 시작하고 실행하는 방법을 안내합니다. 10~20분 안에 나만의 양식을 만들 수 있습니다.
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1850'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # 시작하기 - 개발자 튜토리얼
 
-오늘날의 디지털 시대에는 사용자 친화적인 양식을 만드는 것이 모든 조직에 필수적입니다. AEM Forms(EDS)용 Edge Delivery Services을 사용하면 Google 문서 및 Microsoft Office와 같은 친숙한 도구를 사용하여 양식을 만들 수 있습니다.
+오늘날의 디지털 시대에는 사용자 친화적인 양식을 만드는 것이 모든 조직에 필수적입니다. AEM Forms용 Edge Delivery Services(EDS)를 사용하면 Google Docs 및 Microsoft Office와 같은 친숙한 도구를 사용하여 양식을 생성할 수 있습니다.
 
 이러한 양식은 데이터를 Microsoft Excel 또는 Google Sheets 파일에 직접 제출하므로 Google Sheets, Microsoft Excel 및 Microsoft SharePoint의 활발한 에코시스템과 강력한 API를 사용하여 쉽게 제출 데이터를 처리하거나 기존 비즈니스 워크플로를 시작할 수 있습니다.
 

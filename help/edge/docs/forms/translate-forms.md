@@ -1,20 +1,20 @@
 ---
-title: AEM Forms에 대한 Edge Delivery Services 번역 및 현지화
-description: AEM Forms에 대한 Edge Delivery Services 번역 및 현지화
+title: AEM Forms용 Edge Delivery Services 양식 번역 및 현지화
+description: AEM Forms용 Edge Delivery Services 양식 번역 및 현지화
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '546'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
-# AEM Forms에 대한 Edge Delivery Services 번역 및 현지화
+# AEM Forms용 Edge Delivery Services 양식 번역 및 현지화
 
 Edge Delivery Services에서 양식 번역에는 정확성, 명확성 및 일관성에 중점을 두고 양식 콘텐츠를 한 언어에서 다른 언어로 변환하는 작업이 포함됩니다. 번역되거나 현지화된 양식을 사용하면 다양한 지리적 위치에서 더 넓은 대상자 그룹에 연결할 수 있으므로 사용자 경험이 향상되고 다양한 언어 기본 설정에서 커뮤니케이션이 수월해집니다.
 
@@ -81,10 +81,10 @@ https://main--wefinance--wkndforms.hlx.live/enquirytranslate
 
 **Q**: 양식에서 지정된 현지 언어로 입력하려면 어떻게 해야 합니까?
 
-**A**: 현지화된 특정 언어로 텍스트를 입력하려면 장치의 키보드 설정을 조정합니다. 수행 방법에 대한 지침은 다음 링크를 참조하십시오.
+**A**: 현지화된 특정 언어로 텍스트를 입력하려면 디바이스의 키보드 설정을 조정합니다. 수행 방법에 대한 지침은 다음 링크를 참조하십시오.
 
 * [다른 언어로 입력하도록 Mac 설정](https://support.apple.com/en-in/guide/mac-help/mchlp1406/mac)
-* [다른 언어로 입력하도록 Windows 설정](https://support.microsoft.com/en-us/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options)
+* [다른 언어로 입력하도록 Windows 설정](https://support.microsoft.com/ko/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options)
 * [다른 언어로 입력하도록 Android 또는 iPhone/iPad 설정](https://support.google.com/gboard/answer/7068494?hl=en&amp;co=GENIE.Platform%3DAndroid)
 
 

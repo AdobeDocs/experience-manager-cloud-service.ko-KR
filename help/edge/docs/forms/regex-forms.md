@@ -1,15 +1,15 @@
 ---
-title: AEM Forms용 Edge Delivery Services은 일반적으로 양식 필드 유효성 검사를 위해 사용되는 정규 표현식
-description: AEM Forms용 Edge Delivery Services은 일반적으로 양식 필드 유효성 검사를 위해 사용되는 정규 표현식
+title: AEM Forms용 Edge Delivery Services는 양식 필드 유효성을 검사하기 위해 일반적으로 사용되는 정규식을 사용합니다.
+description: AEM Forms용 Edge Delivery Services는 양식 필드 유효성을 검사하기 위해 일반적으로 사용되는 정규식을 사용합니다.
 feature: Edge Delivery Services
 role: User
 hide: true
 hidefromtoc: true
 exl-id: 5cfe23bb-155f-4639-b7b7-5edc172ba92a
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '195'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 

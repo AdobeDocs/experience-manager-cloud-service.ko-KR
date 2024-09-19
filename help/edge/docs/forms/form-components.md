@@ -1,19 +1,19 @@
 ---
 title: 적응형 양식 블록 구성 요소 및 해당 속성
-description: 이 문서에서는 AEM Forms용 Edge Delivery Services에서 사용할 수 있는 양식 구성 요소와 그 속성에 대한 개요를 제공합니다.
+description: 이 문서는 AEM Forms용 Edge Delivery Services에서 사용 가능한 양식 구성 요소와 해당 속성에 대한 개요를 제공합니다.
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1009'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # 적응형 양식 블록 구성 요소 및 해당 속성
 
-AEM Forms용 Edge Delivery Services을 사용하면 다양한 구성 요소를 사용하여 사용자 친화적이고 대화형 양식을 만들 수 있습니다. 이러한 구성 요소는 다양한 데이터 수집 유형에 적합하고 특정 요구 사항에 맞춰 간편하게 사용자 정의할 수 있습니다.
+AEM Forms용 Edge Delivery Services를 사용하면 다양한 구성 요소를 통해 사용하기 쉬운 대화형 양식을 만들 수 있습니다. 이러한 구성 요소는 다양한 데이터 수집 유형에 적합하고 특정 요구 사항에 맞춰 간편하게 사용자 정의할 수 있습니다.
 
 
 ![구성 요소 및 속성이 일부 포함된 샘플 스프레드시트](/help/edge/assets/sample-form-in-spreadsheet.png)
