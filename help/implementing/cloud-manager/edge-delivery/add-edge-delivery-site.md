@@ -3,10 +3,10 @@ title: Cloud Manager에 Edge Delivery 사이트 추가
 description: 프로덕션 프로그램 또는 샌드박스 프로그램에 Edge Delivery 사이트를 추가하는 방법을 알아봅니다.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2b384a4233672d69de09b922fcdef6d0f84ff7df
+source-git-commit: f684a52ca3b51d1aa4412122f7ad28dde3e2672f
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 2%
+source-wordcount: '500'
+ht-degree: 3%
 
 ---
 
@@ -28,8 +28,8 @@ ht-degree: 2%
 
      ![Edge Delivery 탭에서 Edge Delivery 사이트 추가](/help/implementing/cloud-manager/assets/cm-eds-add1.png)
 
-   * 페이지 왼쪽 상단 모서리에서 ![측면 탐색 표시 또는 숨기기](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)를 클릭하여 측면 탐색 메뉴를 표시합니다.
-**서비스** 제목에서 ![Edge Delivery 사이트 웹 페이지](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery 사이트**를 클릭합니다.
+   * 페이지의 왼쪽 상단 모서리에서 ![메뉴 아이콘 표시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)를 클릭하여 측면 탐색 메뉴를 표시합니다.
+**서비스** 제목에서 ![웹 페이지 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery 사이트**를 클릭합니다.
 페이지의 오른쪽 상단 근처에 있는 **사이트 추가**&#x200B;를 클릭합니다.
 
      ![Edge Delivery Sites 단추에서 Edge Delivery 사이트 추가](/help/implementing/cloud-manager/assets/cm-eds-add2.png)
@@ -48,14 +48,14 @@ ht-degree: 2%
 
    | 단계 번호 | 설명 |
    | - | - |
-   | **1** | **저장소 URL** 필드에 나열된 Git 저장소의 `main` 분기에 경로와 이름이 `well-known/adobe/cloudmanager-challenge.txt`인 파일을 추가하십시오. 위치 경로의 시작 부분에 마침표를 *추가하지 마십시오*.<br>필요한 경우 ![복사](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)를 클릭하여 클립보드에 경로를 복사합니다. |
-   | **2** | 2단계의 텍스트 필드에 표시된 코드를 1단계에서 방금 만든 파일에 추가합니다.<br>필요한 경우 ![복사](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)를 클릭하여 클립보드에 코드를 복사합니다. |
+   | **1** | **저장소 URL** 필드에 나열된 Git 저장소의 `main` 분기에 경로와 이름이 `well-known/adobe/cloudmanager-challenge.txt`인 파일을 추가하십시오. 위치 경로의 시작 부분에 마침표를 *추가하지 마십시오*.<br>필요한 경우 ![복사](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)를 클릭하여 클립보드에 경로를 복사합니다. |
+   | **2** | 2단계의 텍스트 필드에 표시된 코드를 1단계에서 방금 만든 파일에 추가합니다.<br>필요한 경우 ![복사](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)를 클릭하여 클립보드에 코드를 복사합니다. |
    | **3** | 방금 만든 변경 사항에 대해 Git 리포지토리에서 끌어오기 요청을 만든 다음 `main`에 병합하여 코드를 커밋합니다. |
 
 1. **확인**&#x200B;을 클릭합니다.
 
 저장소가 확인되면 Edge Delivery 사이트 테이블의 상태가 흰색 확인 표시가 있는 녹색 원으로 변경됩니다.
 
-같은 표에서 ![Edge Delivery 사이트에 대한 정보를 클릭할 수 있습니다.](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg): 저장소의 확인된 URL 및 미리 보기 및 프로덕션 웹 사이트의 URL 등 사이트에 대한 세부 정보를 봅니다.
+같은 표에서 ![Edge Delivery 사이트에 대한 정보를 클릭할 수 있습니다.](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg): 저장소의 확인된 URL 및 미리 보기 및 프로덕션 웹 사이트의 URL 등 사이트에 대한 세부 정보를 봅니다.
 
 
