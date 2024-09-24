@@ -5,7 +5,7 @@ exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
 source-git-commit: 96c50aad9368adc83f8698dc35266146b1883672
 workflow-type: tm+mt
 source-wordcount: '1185'
-ht-degree: 5%
+ht-degree: 13%
 
 ---
 
@@ -14,12 +14,12 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="configure_content_hub"
 >title="Content Hub 사용자 인터페이스 구성"
->abstract="Experience Manager Assets을 사용하면 관리자가 Content Hub 사용자 인터페이스에서 사용할 수 있는 옵션을 구성할 수 있습니다. 관리자가 선택한 구성 옵션에 따라 Content Hub 사용자는 Content Hub의 필드를 볼 수 있습니다. 구성 옵션에는 에셋을 가져오는 동안의 메타데이터, 필터, 에셋 속성, 에셋을 검색하는 동안의 메타데이터, 개인화된 브랜딩 및 모든 사용자 지정 링크가 포함됩니다."
+>abstract="Experience Manager Assets를 통해 관리자는 Content Hub 사용자 인터페이스에서 사용 가능한 옵션을 구성할 수 있습니다. 관리자가 선택한 구성 옵션에 따라 Content Hub 사용자는 Content Hub에서 필드를 조회할 수 있습니다. 구성 옵션에는 자산을 가져올 때의 메타데이터, 필터, 자산 속성, 자산을 검색할 때의 메타데이터, 개인화된 브랜딩 및 모든 사용자 정의 링크가 포함됩니다."
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Content Hub에서 자산 구성](assets/configure-assets.png)
 
-Experience Manager Assets을 사용하면 관리자가 Content Hub 사용자 인터페이스에서 사용할 수 있는 옵션을 구성할 수 있습니다. 관리자가 선택한 구성 옵션에 따라 Content Hub 사용자는 Content Hub의 필드를 볼 수 있습니다. 구성 옵션은 다음과 같습니다.
+Experience Manager Assets를 통해 관리자는 Content Hub 사용자 인터페이스에서 사용 가능한 옵션을 구성할 수 있습니다. 관리자가 선택한 구성 옵션에 따라 Content Hub 사용자는 Content Hub에서 필드를 조회할 수 있습니다. 구성 옵션은 다음과 같습니다.
 
 * 에셋을 검색하는 동안 사용자가 사용할 수 있는 필터.
 
