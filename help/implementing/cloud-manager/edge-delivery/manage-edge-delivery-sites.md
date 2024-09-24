@@ -3,10 +3,10 @@ title: Cloud Manager에서 Edge Delivery 사이트 관리
 description: Edge Delivery 사이트에 CDN 구성을 추가하거나 Edge Delivery 사이트를 삭제하는 방법에 대해 알아봅니다.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f684a52ca3b51d1aa4412122f7ad28dde3e2672f
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 0%
+source-wordcount: '540'
+ht-degree: 1%
 
 ---
 
@@ -34,8 +34,8 @@ Cloud Manager Adobe에서 다음과 같은 여러 가지 이유로 Edge Delivery
 
    * **프로그램 개요** 페이지에서 **Edge Delivery** 탭을 클릭합니다. Edge Delivery 사이트 테이블에서 이름을 바꿀 사이트의 행 끝에 있는 생략 부호를 클릭합니다.
 **이름 바꾸기**&#x200B;를 클릭합니다.
-   * 페이지 왼쪽 상단 모서리에서 햄버거 아이콘을 클릭하여 왼쪽 탐색 메뉴를 표시합니다. **서비스** 제목에서 **Edge Delivery 사이트**를 클릭합니다.
-Edge Delivery 사이트 테이블에서 이름을 바꿀 사이트의 행 끝에 있는 생략 부호를 클릭합니다. **이름 바꾸기**&#x200B;를 클릭합니다.
+   * 페이지의 왼쪽 상단 모서리에서 ![메뉴 아이콘 표시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)를 클릭하여 왼쪽 탐색 메뉴를 표시합니다. **서비스** 제목에서 ![웹 페이지 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery 사이트**를 클릭합니다.
+Edge Delivery 사이트 테이블에서 이름을 바꿀 사이트의 행 끝에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다. **이름 바꾸기**&#x200B;를 클릭합니다.
 
 1. **Edge Delivery 사이트 편집** 대화 상자의 **사이트 이름** 텍스트 필드에 사이트의 새 이름을 입력합니다.
 
@@ -51,13 +51,13 @@ Edge Delivery Services 사이트를 삭제하면 연결된 CDN 구성도 모두 
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 Edge Delivery 사이트를 추가할 Edge Delivery Services이 구성된 프로그램을 선택합니다.
 1. 다음 중 하나를 수행합니다.
 
-   * **프로그램 개요** 페이지에서 **Edge Delivery** 탭을 클릭합니다. Edge Delivery 사이트 테이블에서 제거할 사이트가 있는 행의 끝에 있는 생략 부호를 클릭합니다.
+   * **프로그램 개요** 페이지에서 **Edge Delivery** 탭을 클릭합니다. Edge Delivery 사이트 테이블에서 제거할 사이트의 행 끝에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
 ![Edge Delivery 사이트 삭제](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **삭제**&#x200B;를 클릭한 다음 **삭제**&#x200B;를 다시 클릭하여 사이트 제거를 확인합니다.
 
      ![Edge Delivery 탭에서 Edge Delivery 사이트 추가](/help/implementing/cloud-manager/assets/cm-eds-delete1.png)
 
    * 페이지 왼쪽 상단 모서리에서 ![측면 탐색 표시 또는 숨기기](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)를 클릭하여 측면 탐색 메뉴를 표시합니다. **서비스** 제목에서 ![Edge Delivery 사이트 웹 페이지](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery 사이트**를 클릭합니다.
-Edge Delivery 사이트 테이블에서 제거할 사이트가 있는 행의 끝에 있는 생략 부호를 클릭합니다. ![Edge Delivery 사이트 삭제](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **삭제**&#x200B;를 클릭한 다음 **삭제**&#x200B;를 다시 클릭하여 사이트 제거를 확인합니다.
+Edge Delivery 사이트 테이블에서 제거할 사이트의 행 끝에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다. ![Edge Delivery 사이트 삭제](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **삭제**&#x200B;를 클릭한 다음 **삭제**&#x200B;를 다시 클릭하여 사이트 제거를 확인합니다.
 
      ![Edge Delivery Sites 단추에서 Edge Delivery 사이트 추가](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
 

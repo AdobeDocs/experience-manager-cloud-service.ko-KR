@@ -4,15 +4,15 @@ description: Cloud Manager을 사용하여 Edge Delivery 사이트 또는 Cloud 
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 6%
+source-wordcount: '468'
+ht-degree: 7%
 
 ---
 
 
-# CDN 구성 관리 {#manage-cdn-configurations}
+# CDN(Content Delivery Network) 구성 관리 {#manage-cdn-configurations}
 
 Cloud Manager을 사용하여 Edge Delivery 사이트 또는 Cloud Manager 환경에 대한 CDN 구성을 편집 및 업데이트하거나 삭제하는 방법에 대해 알아봅니다.
 
@@ -31,7 +31,7 @@ Cloud Manager Adobe에서 몇 가지 이유로 환경 계층(Publish 또는 미�
 **CDN 구성을 편집하려면:**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
-1. 왼쪽 탐색 패널의 **서비스**&#x200B;에서 **CDN 구성**&#x200B;을 클릭합니다.
+1. 사이드 패널의 **서비스**&#x200B;에서 **CDN 구성**&#x200B;을 클릭합니다.
 1. **CDN 구성** 테이블에서 편집할 CDN 구성이 있는 행의 끝에 있는 생략 부호를 클릭합니다.
 
    ![CDN 구성 편집](/help/implementing/cloud-manager/assets/cdn-config-edit.png)

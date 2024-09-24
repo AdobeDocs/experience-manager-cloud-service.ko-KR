@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 11%
+source-wordcount: '949'
+ht-degree: 6%
 
 ---
 
@@ -35,10 +35,10 @@ Cloud Manager을 사용하여 Adobe 관리 및 고객 관리 SSL 인증서의 �
 
 **만료된 고객 관리 SSL 인증서를 업데이트하려면:**
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직 선택
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 프로그램을 선택합니다.
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
-1. **개요** 페이지에서 **환경** 화면으로 이동합니다.
-1. **환경** 화면에서 **SSL 인증서** 화면으로 이동합니다.
+1. 페이지의 왼쪽 상단 모서리에서 ![메뉴 아이콘 표시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)를 클릭하여 사이드 메뉴를 표시합니다.
+1. **서비스** 제목에서 ![닫힌 아이콘 잠금](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL 인증서 잠금**&#x200B;을 클릭합니다.
 1. 업데이트하려는 만료된 고객 관리 인증서 행에서 맨 오른쪽에 있는 줄임표 버튼을 클릭한 다음 **보기 및 업데이트**&#x200B;를 선택합니다.
 
    ![만료된 고객 관리 SSL 인증 업데이트](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
@@ -50,7 +50,7 @@ Cloud Manager을 사용하여 Adobe 관리 및 고객 관리 SSL 인증서의 �
    * **개인 키** 필드에서 인증서를 변경한 경우에만 이 필드를 업데이트하십시오.
    * **인증서 체인** 필드(또는 신뢰 체인)에 인증서 체인을 붙여 넣습니다.
 
-1. 변경 내용을 저장하고 자동으로 적용하려면 **업데이트**&#x200B;를 클릭하십시오. —>
+1. 변경 내용을 저장하고 자동으로 적용하려면 **업데이트**&#x200B;를 클릭하십시오.
 
 ## 만료된 고객 관리 SSL 인증서 바꾸기 {#replace-ssl-certificate}
 
@@ -68,10 +68,10 @@ Cloud Manager을 사용하여 Adobe 관리 및 고객 관리 SSL 인증서의 �
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 프로그램을 선택합니다.
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
-1. 페이지 왼쪽 상단 모서리에서 햄버거 아이콘을 클릭하여 왼쪽 탐색 메뉴를 표시합니다.
-1. **서비스** 제목에서 **SSL 인증서**&#x200B;를 클릭합니다.
-1. **SSL 인증서** 페이지에서 이름을 바꿀 인증서의 행 끝에 있는 줄임표를 클릭합니다.
-1. **이름 바꾸기**&#x200B;를 클릭합니다.
+1. 페이지의 왼쪽 상단 모서리에서 ![메뉴 아이콘 표시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)를 클릭하여 사이드 메뉴를 표시합니다.
+1. **서비스** 제목에서 ![닫힌 아이콘 잠금](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL 인증서 잠금**&#x200B;을 클릭합니다.
+1. **SSL 인증서** 페이지에서 이름을 바꿀 *Adobe 관리* 인증서가 있는 행 끝에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
+1. 드롭다운 메뉴에서 **이름 바꾸기**&#x200B;를 클릭합니다.
 1. **DV 인증서 이름 바꾸기** 대화 상자의 **인증서 이름** 텍스트 필드에 새 인증서 이름을 입력합니다.
 1. **이름 바꾸기**&#x200B;를 클릭합니다.
 
@@ -87,10 +87,12 @@ Cloud Manager에서 Adobe 관리 또는 고객 관리 SSL 인증서를 삭제하
 
 **SSL 인증서를 삭제하려면:**
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
-1. **개요** 페이지에서 **환경** 화면으로 이동합니다.
-1. **환경** 화면에서 **SSL 인증서** 화면으로 이동합니다.
-1. 삭제하려는 인증서 행에서 맨 오른쪽에 있는 줄임표 버튼을 클릭한 다음 **삭제**를 선택합니다.
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 프로그램을 선택합니다.
+1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
+1. 페이지의 왼쪽 상단 모서리에서 ![메뉴 아이콘 표시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)를 클릭하여 사이드 메뉴를 표시합니다.
+1. **서비스** 제목에서 ![닫힌 아이콘 잠금](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL 인증서 잠금**&#x200B;을 클릭합니다.
+1. SSL 인증서 페이지의 삭제하려는 인증서의 테이블 행에서 맨 오른쪽에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다
+1. 드롭다운 메뉴에서 **삭제**를 클릭합니다.
 삭제 버튼에 다음 이미지에 표시된 정보 아이콘이 있는 경우 위의 참고 사항을 참조하십시오.
 
    ![정보 아이콘이 있는 삭제 단추](/help/implementing/cloud-manager/assets/ssl/ssl-cert-delete-infoicon.png)
@@ -107,3 +109,4 @@ SSL 인증서에 대한 CDN 구성이 이미 있는 경우 **SSL 인증서** 페
 자세한 내용은 [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)를 참조하십시오.
 
 IP 허용 목록 또는 사용자 지정 허용 목록 이름에 대한 기존 CDN 구성이 있는 환경의 **IP 도메인** 및 **환경** 페이지에도 유사한 메시지가 제공됩니다.
+

@@ -5,9 +5,9 @@ exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 17306cf0877513d1412ffba311bd5d601edec062
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '455'
 ht-degree: 15%
 
 ---
@@ -26,17 +26,17 @@ ht-degree: 15%
 
    ![Cloud Manager 랜딩 페이지](assets/log-in.png)
 
-1. *프로그램을 만들어 보세요* 마법사의 **프로그램 이름** 텍스트 필드에 프로그램에 사용할 이름을 입력합니다.
+1. *프로그램 만들기* 마법사의 **프로그램 이름** 텍스트 필드에 프로그램에 사용할 이름을 입력합니다.
 
-1. **프로그램 목표**&#x200B;에서 **`Set up a sandbox`**&#x200B;을(를) 선택합니다.
+1. **프로그램 목표**&#x200B;에서 ![자동 선택 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MagicWand_18_N.svg) **샌드박스 설정**&#x200B;을 선택합니다.
 
    ![프로그램 유형 만들기](assets/create-sandbox.png)
 
 1. (선택 사항) 마법사 대화 상자의 오른쪽 아래 모서리에서 다음 중 하나를 수행합니다.
 
-   * 이미지 파일을 **프로그램 이미지 추가** 대상으로 끌어서 놓습니다.
-   * **프로그램 이미지 추가**&#x200B;를 클릭한 다음 파일 브라우저에서 이미지를 선택합니다.
-   * 추가한 이미지를 삭제하려면 휴지통 아이콘을 클릭합니다.
+   * 이미지 파일을 ![이미지 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **프로그램 이미지 추가** 대상으로 끌어다 놓습니다.
+   * ![이미지 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **프로그램 이미지 추가**&#x200B;를 클릭한 다음 파일 브라우저에서 이미지를 선택합니다.
+   * 추가한 이미지를 제거하려면 ![삭제 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg)을 클릭하세요.
 
 1. **계속**&#x200B;을 클릭합니다.
 
@@ -55,7 +55,7 @@ ht-degree: 15%
 
 새 샌드박스 프로그램 만들기가 완료되면 프로그램 개요 페이지에서 샌드박스 설정의 세부 정보를 보고 환경에 액세스할 수 있습니다.
 
-1. Cloud Manager 랜딩 페이지에서 만든 샌드박스 프로그램의 줄임표 버튼을 클릭합니다.
+1. Cloud Manager 랜딩 페이지의 샌드박스 프로그램에서 만든 샌드박스 프로그램의 ![더 작은 목록 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
 
    ![프로그램 개요 액세스](assets/program-overview-sandbox.png)
 

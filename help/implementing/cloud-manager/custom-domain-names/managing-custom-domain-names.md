@@ -5,9 +5,9 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '447'
 ht-degree: 34%
 
 ---
@@ -33,10 +33,10 @@ Cloud Manager Adobe에서 다음과 같은 이유로 사용자 정의 도메인 
 
 1. 페이지 왼쪽 상단 모서리에서 햄버거 아이콘을 클릭하여 왼쪽 탐색 메뉴를 표시합니다.
 1. **서비스** 제목에서 **CDN 구성**&#x200B;을 클릭합니다.
-1. **CDN 구성** 페이지에서 편집할 CDN이 있는 행의 끝에 있는 생략 부호를 클릭합니다.
+1. **CDN 구성** 페이지에서 편집할 CDN이 있는 행 끝에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
 1. **편집**&#x200B;을 클릭합니다.
 1. **CDN 구성 편집** 대화 상자에서 다음을 수행합니다.
-   * **계층** 드롭다운 목록에서 사용할 계층(작성자 또는 Publish)을 선택합니다.
+   * **계층** 드롭다운 목록에서 사용할 계층(Publish 또는 미리 보기)을 선택합니다.
    * **SSL 인증서** 드롭다운 목록에서 사용할 SSL 인증서를 선택합니다.
 1. **업데이트**&#x200B;를 클릭합니다.
 

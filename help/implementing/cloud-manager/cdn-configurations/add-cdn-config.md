@@ -5,15 +5,15 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '448'
 ht-degree: 6%
 
 ---
 
 
-# CDN 구성 추가 {#add-cdn}
+# CDN(Content Delivery Network) 구성 추가 {#add-cdn}
 
 프로그램 내의 Adobe 관리 CDN에서 도메인을 SSL 인증서와 연결하려면 CDN(Content Delivery Network) 구성을 추가해야 합니다.
 
