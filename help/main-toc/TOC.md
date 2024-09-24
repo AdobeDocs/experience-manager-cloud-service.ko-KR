@@ -7,9 +7,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 8349f6d4d4f04d8609d5a5241b973201b54b2cd2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5651'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -778,7 +778,7 @@ ht-degree: 99%
             + [여러 단계 데이터 캡처 경험 만들기](/help/forms/introduction-form-sequence.md)
             + [적응형 양식에 대한 구성 스타일 지정](/help/forms/styling-constructs-adaptive-forms.md)
             + [개별 적응형 양식 구성 요소에 인라인 CSS 스타일 적용](/help/forms/inline-style-adaptive-forms.md)
-            + [적응형 양식에서 분리자 구성 요소 사용 방법](/help/forms/separator-component-in-adaptive-forms.md)
+            + [적응형 양식에서 구분자 구성 요소 사용 방법](/help/forms/separator-component-in-adaptive-forms.md)
          + 적응형 양식에 규칙 추가 및 표현식 사용 {#add-rules-and-use-expressions-in-an-adaptive-form}
             + [적응형 양식에 규칙 추가](/help/forms/rule-editor.md)
             + [규칙 편집기의 호출 서비스를 사용하여 사용자 정의 오류 핸들러 추가](/help/forms/add-custom-error-handler-adaptive-forms.md)
@@ -1118,7 +1118,7 @@ ht-degree: 99%
       + [알림](/help/implementing/cloud-manager/notifications.md)
       + [고급 네트워킹](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=ko)
       + Edge Delivery Sites {#edge-delivery-sites}
-         + [Cloud Manager의 Edge Delivery Services 소개](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
+         + [Cloud Manager에서의 Edge Delivery Services 소개](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Cloud Manager에 Edge Delivery 사이트 추가](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
          + [Cloud Manager에서 Edge Delivery 사이트 관리](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + 도메인 설정 {#custom-domain-names}
@@ -1251,7 +1251,7 @@ ht-degree: 99%
       + [ContextHub API](/help/implementing/developing/personalization/contexthub-api.md)
       + [ContextHub를 사용하여 세분화 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html)
    + AEM as a Cloud Service 구성 및 확장 {#configuring-and-extending}
-      + App Builder {#app-builder}을(를) 사용하여 AEM 확장
+      + App Builder를 사용하여 AEM 확장 {#app-builder}
          + [Adobe Developer App Builder를 사용하여 AEM 확장](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [App Builder 소개](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Adobe Developer Console](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)

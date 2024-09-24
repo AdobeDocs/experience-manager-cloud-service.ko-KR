@@ -1,8 +1,8 @@
 ---
 source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1139'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 # 스니펫 {#snippets}
@@ -95,7 +95,7 @@ ht-degree: 83%
     <td>“Then”에서 필드/패널/양식 규칙 유효성 검사/재설정 </td>
     <td>유효성 검사 및 재설정 함수는 규칙 편집기의 양식 오브젝트만 지원합니다. 
    </td>
-    <td>유효성 검사 및 재설정 기능은 규칙 편집기에서 양식/패널/필드 개체를 지원합니다. 
+    <td>유효성 검사 및 재설정 함수는 규칙 편집기의 양식 / 패널 / 필드 오브젝트를 지원합니다. 
    </td>
    </tr>
    <tr>
@@ -134,7 +134,7 @@ ht-degree: 83%
 * [Forms 포털 구성 요소 소개](/help/forms/configure-forms-portal.md)
 * [사이트 페이지에 양식 나열](/help/forms/list-forms-on-sites-page.md)
 * [초안으로 양식 저장](/help/forms/save-core-component-based-form-as-draft.md)
-* [사이트 페이지에 양식 링크 추가](/help/forms/add-form-link-to-aem-sites-page.md)
+* [Sites 페이지에 양식 링크 추가](/help/forms/add-form-link-to-aem-sites-page.md)
 
 
 ## Cloud Manager IP 허용 목록 및 프론트엔드 파이프라인 {#allowlist-frontend-pipeline}
@@ -143,7 +143,7 @@ ht-degree: 83%
 >
 >프론트엔드 파이프라인의 경우 다음 IP 허용 목록을 미리 Cloud Manager에 추가해야 합니다.
 >필요한 경우 아래 주소 블록을 복사하여 [IP 허용 목록을 추가](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)하십시오. 각각의 주소는 쉼표로 구분됩니다. **IP 허용 목록 추가** 대화 상자의 **IP 주소/CIDR** 필드에 블록을 붙여넣습니다. 주소 목록의 첫 번째 쉼표 바로 뒤에 커서를 놓고 **Enter** 키를 누릅니다. 목록을 저장합니다.
->프론트엔드 파이프라인 실행이 중단되지 않도록 이 IP 허용 목록이 Cloud Manager *before*&#x200B;에 추가되어 있는지 확인하려면 파이프라인을 활성화하십시오.
+>프론트엔드 파이프라인 실행이 중단되는 것을 방지하려면 파이프라인을 활성화하기 *전에* 이 IP 허용 목록이 Cloud Manager에 추가되었는지 확인하십시오.
 >
 >**Cloud Manager IP 허용 목록**
 >52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
@@ -160,17 +160,17 @@ ht-degree: 83%
 
 >[!TIP]
 >
->Dynamic Media를 처음 사용하십니까? Dynamic Media에 대한 간략한 개요 정보를 보려면 [Dynamic Media 작업](/help/assets/dynamic-media/dynamic-media.md)을 참조하세요.
+>Dynamic Media를 처음 사용하십니까? Dynamic Media에 대한 빠르고 간략한 개요를 보시려면 [Dynamic Media로 작업](/help/assets/dynamic-media/dynamic-media.md)을 참조하시기 바랍니다.
 
 ## Dynamic Media도 참조할 수 있습니다. {#see-also-dm}
 
 >[!NOTE]
 >
->* Dynamic Media를 처음 사용하십니까? Dynamic Media에 대한 간략한 개요 정보를 보려면 [Dynamic Media 작업](/help/assets/dynamic-media/dynamic-media.md)을 참조하세요.
+>* Dynamic Media를 처음 사용하십니까? Dynamic Media에 대한 빠르고 간략한 개요를 보시려면 [Dynamic Media로 작업](/help/assets/dynamic-media/dynamic-media.md)을 참조하시기 바랍니다.
 >
 >* 기능을 최대로 활용하려면 [Dynamic Media 모범 사례](/help/assets/dynamic-media/dm-best-practices.md)를 참조하십시오.
 >
->* [스냅숏 도구](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot)로 Dynamic Media 이미지 기능을 사용해 보세요.
+>* [스냅샷 도구](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot)를 사용하여 Dynamic Media 이미지 기능을 사용해 보십시오.
 >
 >* [적응형 비디오](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash)로 원활한 비디오 재생을 보장합니다.
 >
@@ -183,13 +183,13 @@ ht-degree: 83%
 
 ## 지원 티켓 기록 {#support-ticket}
 
-제품 문제에 추가 조사 및 문제 해결이 필요하고 응답 SLT를 충족해야 하는 경우 지원 티켓을 제출할 수 있습니다.
+제품 문제 해결에 추가 조사가 필요하고 응답 SLT를 충족해야 하는 경우 지원 티켓을 제출할 수 있습니다.
 
-지원 티켓을 기록하려면 먼저 Cloud Manager에서 Edge Delivery 사이트를 등록해야 합니다. Cloud Manager에 웹 사이트를 등록하는 것은 모든 AEM as a Cloud Service 사용자에게 권장되며 [다양한 혜택을 제공합니다](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). 아직 사이트를 등록하지 않았다면 자세한 내용은 [Cloud Manager 설명서](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)를 참조하십시오.
+지원 티켓을 기록하려면 먼저 Cloud Manager에서 Edge Delivery 사이트를 등록해야 합니다. 모든 AEM as a Cloud Service 사용자는 Cloud Manager에 웹 사이트를 등록하는 것이 좋으며, [이를 통해 여러 이점을 얻을 수 있습니다](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). 아직 사이트를 등록하지 않았다면 [Cloud Manager 설명서](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)를 통해 자세히 알아보십시오.
 
 웹 사이트가 Cloud Manager에 등록되면 Admin Console을 사용하여 다음 프로세스에 따라 지원 티켓을 제출합니다.
 
-1. [표준 지원 프로세스를 따릅니다](https://experienceleague.adobe.com/?support-tab=home#support). 티켓을 만드십시오.
+1. [표준 지원 프로세스에 따라](https://experienceleague.adobe.com/?support-tab=home#support) 티켓을 생성합니다.
 1. 티켓 제목에서 **Edge Delivery**&#x200B;를 추가합니다.
 1. 설명에서 문제 설명 외에 다음 세부 정보를 제공합니다.
 
