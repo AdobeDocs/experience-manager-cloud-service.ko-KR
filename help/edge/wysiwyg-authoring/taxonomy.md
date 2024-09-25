@@ -3,13 +3,13 @@ title: 분류 체계 데이터 관리
 description: Edge Delivery Services 사이트를 통해 AEM과 함께 태그를 사용하기 위한 분류 데이터를 관리하는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
+exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
+source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 8%
+source-wordcount: '845'
+ht-degree: 7%
 
 ---
-
 
 # 분류 체계 데이터 관리 {#managing-taxonomy-data}
 
@@ -108,6 +108,10 @@ AEM은 기본 태그 및 네임스페이스를 업데이트할 때 분류 페이
    * 프로세스에 따라 `main`에 커밋하거나 가져오기 요청을 만듭니다.
 
 이 프로세스는 분류 페이지당 한 번만 수행하면 됩니다. 완료되면 분류법을 게시할 수 있습니다.
+
+>[!TIP]
+>
+>경로 매핑에 대한 자세한 내용은 [Edge Delivery Services의 경로 매핑](/help/edge/wysiwyg-authoring/path-mapping.md) 문서를 참조하십시오.
 
 ## 분류 게시 {#publishing}
 

@@ -4,10 +4,10 @@ description: 이 안내서를 통해 Edge Delivery Services 및 WYSIWYG 컨텐�
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
-source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
+source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
 workflow-type: tm+mt
-source-wordcount: '1207'
-ht-degree: 86%
+source-wordcount: '1223'
+ht-degree: 85%
 
 ---
 
@@ -113,6 +113,10 @@ Edge Delivery는 GitHub를 활용하므로 GitHub 저장소에서 바로 코드�
 1. 원하는 대로 커밋 메시지를 추가한 다음 **변경 사항 커밋**&#x200B;을 클릭하여 `main` 분기에 직접 커밋합니다.
 
    ![변경 사항 커밋](assets/edge-dev-getting-started/commit-paths-changes.png)
+
+>[!TIP]
+>
+>경로 매핑에 대한 자세한 내용은 [Edge Delivery Services의 경로 매핑](/help/edge/wysiwyg-authoring/path-mapping.md) 문서를 참조하십시오.
 
 ### 새 AEM 사이트 만들기 및 편집 {#create-aem-site}
 

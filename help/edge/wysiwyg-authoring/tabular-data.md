@@ -4,10 +4,10 @@ description: 스프레드시트를 사용하여 Edge Delivery Services 사이트
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: f8e305f636c7a7247d2a41f6ed25b1715bd8837c
+source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 97%
+source-wordcount: '986'
+ht-degree: 95%
 
 ---
 
@@ -121,6 +121,10 @@ AEM에서 스프레드시트의 데이터를 게시할 수 있으려면 프로�
    ![게시에 대한 배너 확인](assets/tabular-data/tabular-data-publish-banner.png)
 
 이제 리디렉션 스프레드시트가 게시되어 공개적으로 액세스할 수 있는 상태입니다.
+
+>[!TIP]
+>
+>경로 매핑에 대한 자세한 내용은 [Edge Delivery Services의 경로 매핑](/help/edge/wysiwyg-authoring/path-mapping.md) 문서를 참조하십시오.
 
 ## 기타 스프레드시트 유형 {#other}
 
