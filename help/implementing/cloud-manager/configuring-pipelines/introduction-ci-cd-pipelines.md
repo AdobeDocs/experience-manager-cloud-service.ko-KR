@@ -6,7 +6,7 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 7f6e8f91716b679f9715f9df33ae59aa5bf70751
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 35%
@@ -115,7 +115,7 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 
 구성 파이프라인을 사용하면 로그 전달, 제거 관련 유지 관리 작업 및 트래픽 필터 규칙(예: WAF(Web Application Firewall) 규칙)을 비롯한 다양한 CDN 구성에 대한 설정을 빠르게 배포할 수 있습니다. 또한 요청 및 응답 변환, 원본 선택기, 클라이언트측 리디렉션, 오류 페이지, 고객 관리 CDN 키, 제거 API 키 및 기본 인증을 관리할 수 있습니다.
 
-지원되는 기능의 전체 목록을 보려면 [구성 파이프라인 사용](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)을 참조하고, 올바르게 배포되도록 저장소에서 구성을 관리하는 방법에 대해 알아보십시오.
+지원되는 기능의 전체 목록을 보려면 [구성 파이프라인 사용](/help/operations/config-pipeline.md)을 참조하고, 올바르게 배포되도록 저장소에서 구성을 관리하는 방법에 대해 알아보십시오.
 
 ### 구성 파이프라인 구성 {#configure-config-deployment}
 

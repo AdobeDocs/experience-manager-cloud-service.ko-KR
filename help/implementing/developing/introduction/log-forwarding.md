@@ -4,10 +4,10 @@ description: AEM as a Cloud Service의 Splunk 및 기타 로깅 공급업체에 
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bf0b577de6174c13f5d3e9e4a193214c735fb04d
+source-git-commit: 17d195f18055ebd3a1c4a8dfe1f9f6bc35ebaf37
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 1%
+source-wordcount: '1362'
+ht-degree: 0%
 
 ---
 
@@ -44,14 +44,7 @@ AEM 및 Apache/Dispatcher 로그를 전용 이그레스 IP와 같은 AEM의 고�
 
 ## 설정 {#setup}
 
-1. Git의 프로젝트에서 최상위 폴더에 다음 폴더 및 파일 구조를 만듭니다.
-
-   ```
-   config/
-        logForwarding.yaml
-   ```
-
-1. `logForwarding.yaml`은(는) 메타데이터와 다음 형식과 유사한 구성을 포함해야 합니다(Splunk를 예로 사용).
+1. 이름이 `logForwarding.yaml`인 파일을 만듭니다. [구성 파이프라인 문서](/help/operations/config-pipeline.md#common-syntax)에 설명된 대로 메타데이터가 포함되어야 합니다(**종류**&#x200B;은(는) `LogForwarding`(으)로 설정되어야 하며 버전은 &quot;1&quot;(으)로 설정되어야 합니다). 다음과 유사한 구성을 사용해야 합니다(예를 들어 Splunk 사용).
 
    ```
    kind: "LogForwarding"
@@ -67,52 +60,51 @@ AEM 및 Apache/Dispatcher 로그를 전용 이그레스 IP와 같은 AEM의 고�
          index: "AEMaaCS"
    ```
 
-   **종류** 매개 변수는 `LogForwarding`(으)로 설정해야 합니다. 버전은 스키마 버전(1)으로 설정해야 합니다.
+1. [구성 파이프라인 사용](/help/operations/config-pipeline.md#folder-structure)에 설명된 대로 파일을 *config* 또는 유사한 최상위 폴더 아래에 배치합니다.
 
-   구성의 토큰(예: `${{SPLUNK_TOKEN}}`)은 비밀을 나타내며 Git에 저장해서는 안 됩니다. 대신 **암호** 형식의 Cloud Manager [환경 변수](/help/implementing/cloud-manager/environment-variables.md)(으)로 선언하십시오. 로그를 작성자, 게시 및 미리보기 계층에 전달할 수 있도록 서비스 적용 필드의 드롭다운 값으로 **모두**&#x200B;를 선택해야 합니다.
+1. RDE(현재 지원되지 않음) 이외의 환경 유형의 경우 [이 섹션](/help/operations/config-pipeline.md#creating-and-managing)에서 참조한 대로 Cloud Manager에서 타깃팅된 배포 구성 파이프라인을 만드십시오. 전체 스택 파이프라인 및 웹 계층 파이프라인은 구성 파일을 배포하지 않습니다.
 
-   **default** 블록 뒤에 추가 **cdn** 및/또는 **aem** 블록을 포함하여 CDN 로그와 AEM 로그(Apache/Dispatcher 포함) 간에 다른 값을 설정할 수 있습니다. 여기서 속성은 **default** 블록에 정의된 값을 무시할 수 있습니다. 활성화된 속성만 필요합니다. 아래 예제에서 보듯이 CDN 로그에 대해 다른 Splunk 인덱스를 사용하는 것이 사용 사례일 수 있습니다.
+1. 구성 배포.
 
-   ```
-      kind: "LogForwarding"
-      version: "1"
-      metadata:
-        envTypes: ["dev"]
-      data:
-        splunk:
-          default:
-            enabled: true
-            host: "splunk-host.example.com"
-            token: "${{SPLUNK_TOKEN}}"
-            index: "AEMaaCS"
-          cdn:
-            enabled: true
-            token: "${{SPLUNK_TOKEN_CDN}}"
-            index: "AEMaaCS_CDN"   
-   ```
+구성의 토큰(예: `${{SPLUNK_TOKEN}}`)은 비밀을 나타내며 Git에 저장해서는 안 됩니다. 대신 Cloud Manager [보안 환경 변수](/help/operations/config-pipeline.md#secret-env-vars)(으)로 선언하십시오. 로그를 작성자, 게시 및 미리보기 계층에 전달할 수 있도록 서비스 적용 필드의 드롭다운 값으로 **모두**&#x200B;를 선택해야 합니다.
 
-   또 다른 시나리오는 CDN 로그 또는 AEM 로그(Apache/Dispatcher 포함)의 전달을 비활성화하는 것입니다. 예를 들어 CDN 로그만 전달하려면 다음을 구성할 수 있습니다.
+**default** 블록 뒤에 추가 **cdn** 및/또는 **aem** 블록을 포함하여 CDN 로그와 AEM 로그(Apache/Dispatcher 포함) 간에 다른 값을 설정할 수 있습니다. 여기서 속성은 **default** 블록에 정의된 값을 무시할 수 있습니다. 활성화된 속성만 필요합니다. 아래 예제에서 보듯이 CDN 로그에 대해 다른 Splunk 인덱스를 사용하는 것이 사용 사례일 수 있습니다.
 
-   ```
-      kind: "LogForwarding"
-      version: "1"
-      metadata:
-        envTypes: ["dev"]
-      data:
-        splunk:
-          default:
-            enabled: true
-            host: "splunk-host.example.com"
-            token: "${{SPLUNK_TOKEN}}"
-            index: "AEMaaCS"
-          aem:
-            enabled: false
-   ```
+```
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     splunk:
+       default:
+         enabled: true
+         host: "splunk-host.example.com"
+         token: "${{SPLUNK_TOKEN}}"
+         index: "AEMaaCS"
+       cdn:
+         enabled: true
+         token: "${{SPLUNK_TOKEN_CDN}}"
+         index: "AEMaaCS_CDN"   
+```
 
-1. RDE(현재 지원되지 않음) 이외의 환경 유형의 경우 Cloud Manager에서 타깃팅된 배포 구성 파이프라인을 만듭니다. 전체 스택 파이프라인 및 웹 계층 파이프라인은 구성 파일을 배포하지 않습니다.
+또 다른 시나리오는 CDN 로그 또는 AEM 로그(Apache/Dispatcher 포함)의 전달을 비활성화하는 것입니다. 예를 들어 CDN 로그만 전달하려면 다음을 구성할 수 있습니다.
 
-   * [프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)을 참조하십시오.
-   * [비프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)을 참조하십시오.
+```
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     splunk:
+       default:
+         enabled: true
+         host: "splunk-host.example.com"
+         token: "${{SPLUNK_TOKEN}}"
+         index: "AEMaaCS"
+       aem:
+         enabled: false
+```
 
 ## 대상 구성 로깅 중 {#logging-destinations}
 
