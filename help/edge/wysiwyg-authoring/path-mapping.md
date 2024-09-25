@@ -3,7 +3,7 @@ title: Edge Delivery Services에 대한 경로 매핑
 description: AEM 작성 인스턴스에 사용된 페이지 경로를 웹 사이트에 사용된 공개 페이지 경로에 매핑하고 Edge Delivery Services에게 게시되는 콘텐츠를 제어하는 방법에 대해 알아봅니다.
 feature: Edge Delivery Services
 role: User
-source-git-commit: 51a2b453ccce39cb42c927a088bc088083545542
+source-git-commit: 2727744f276ee5facae718a987dcc6dc54d4e917
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%
@@ -95,8 +95,8 @@ Edge Delivery Services 페이지에 사용된 Assets은 일반적으로 웹 페�
    }'
    ```
 
-1. 프로젝트에서 구성 서비스를 사용하지 않는 경우, GitHub 프로젝트의 paths.json 파일을 통해 경로 매핑이 구성됩니다.
+1. 프로젝트가 구성 서비스를 사용하지 않는 경우 GitHub 프로젝트의 `paths.json` 파일을 통해 경로 매핑이 구성됩니다.
 
-   * 예제는 [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json`](/https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json)을(를) 참조하십시오.
+   * 예를 보려면 [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json)을(를) 참조하십시오.
 
 두 경우 모두 경로 매핑을 구성하면 공개적으로 액세스할 수 있는 구성 URL `https://<branch>--<site>--<org>.aem.page/config.json`을(를) 통해 구성을 확인할 수 있습니다.
