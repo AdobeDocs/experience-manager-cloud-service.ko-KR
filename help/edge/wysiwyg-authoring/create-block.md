@@ -1,33 +1,33 @@
 ---
 title: Universal Editor에 사용하도록 구성된 블록 만들기
-description: Edge Delivery Services 프로젝트를 사용하여 WYSIWYG 작성에서 유니버설 편집기와 함께 사용할 수 있도록 계측된 블록을 만드는 방법을 알아봅니다.
+description: Edge Delivery Services 프로젝트로 작성하는 WYSIWYG 작성의 유니버설 편집기와 함께 사용할 수 있도록 계측된 블록을 만드는 방법을 알아봅니다.
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 772fcc2688edb57eca3b84689de1d1c47f87dcd0
+source-git-commit: 3419fa943eb865d87467443527ea97fcd64909c2
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 59%
+source-wordcount: '1445'
+ht-degree: 57%
 
 ---
 
 
 # Universal Editor에 사용하도록 구성된 블록 만들기 {#create-block}
 
-Edge Delivery Services 프로젝트를 사용하여 WYSIWYG 작성에서 유니버설 편집기와 함께 사용할 수 있도록 계측된 블록을 만드는 방법을 알아봅니다.
+Edge Delivery Services 프로젝트로 작성하는 WYSIWYG 작성의 유니버설 편집기와 함께 사용할 수 있도록 계측된 블록을 만드는 방법을 알아봅니다.
 
 ## 사전 요구 사항 {#prerequisites}
 
-이 안내서는 Edge Delivery Services 프로젝트를 사용하여 WYSIWYG 작성에서 유니버설 편집기용으로 계측된 블록을 만드는 방법에 대한 단계별 지침을 제공합니다. 구성 요소 추가, Universal Editor에서 구성 요소 정의 로드, 페이지 게시, 블록 장식 및 스타일 구현, 변경 사항을 프로덕션에 적용하고 확인하는 방법을 다룹니다. 이 안내서를 완료하면 자체 프로젝트에 대한 새 블록을 만들어 배포할 수 있습니다.
+이 안내서에서는 Edge Delivery Services 프로젝트를 사용하여 WYSIWYG을 작성하는 과정에서 범용 편집기용으로 계측된 블록을 만드는 방법에 대한 단계별 지침을 제공합니다. 구성 요소 추가, Universal Editor에서 구성 요소 정의 로드, 페이지 게시, 블록 장식 및 스타일 구현, 변경 사항을 프로덕션에 적용하고 확인하는 방법을 다룹니다. 이 안내서를 완료하면 자체 프로젝트에 대한 새 블록을 만들어 배포할 수 있습니다.
 
-이 안내서에서는 유니버설 편집기와 Edge Delivery Services 프로젝트를 사용하여 WYSIWYG 작성에 대한 기존 지식이 반드시 필요합니다. 이 안내서를 시작하기 전에 Edge Delivery Services에 액세스하고 다음을 포함한 기본 사항을 숙지해야 합니다.
+이 안내서를 사용하려면 범용 편집기와 Edge Delivery Services 프로젝트를 사용하여 WYSIWYG을 작성하는 데 필요한 기존 지식이 있어야 합니다. 이 안내서를 시작하기 전에 Edge Delivery Services에 액세스하고 다음을 포함한 기본 사항을 숙지해야 합니다.
 
 * [Edge Delivery Service 튜토리얼](/help/edge/developer/tutorial.md)이 완료되었습니다.
 * [AEM Cloud Service 샌드박스](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)에 액세스할 수 있습니다.
 * [동일한 샌드박스 환경에서 Universal Editor를 활성화](/help/implementing/universal-editor/getting-started.md)했습니다.
-* WYSIWYG 작성에 대한 [Edge Delivery Services 사용 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 안내서를 완료했습니다.
+* [Edge Delivery Services으로 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 안내서를 완료했습니다.
 
-이 안내서는 [Edge Delivery Services을 사용하여 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 안내서에서 수행한 작업을 기반으로 합니다.
+이 안내서는 [Edge Delivery Services을 사용한 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 안내서에서 수행한 작업을 기반으로 합니다.
 
 ## 프로젝트에 새로운 블록 추가 {#add-block}
 
@@ -85,7 +85,7 @@ Adobe는 3단계 방식으로 블록을 개발할 것을 권장합니다.
 
 3&amp;period; 프로젝트의 루트에서 `component-models.json` 파일을 편집하고 새 견적 블록에 대해 다음 [모델 정의](/help/implementing/universal-editor/field-types.md#model-structure)를 추가하고 파일을 저장합니다.
 
-* 콘텐츠 모델을 만들 때 고려해야 할 중요한 사항에 대한 자세한 내용은 [Edge Delivery Services 프로젝트로 WYSIWYG 작성을 위한 콘텐츠 모델링](/help/edge/wysiwyg-authoring/content-modeling.md) 문서를 참조하십시오.
+* 콘텐츠 모델을 만들 때 고려해야 할 중요한 사항에 대한 자세한 내용은 [Edge Delivery Services 프로젝트를 사용하여 WYSIWYG 작성을 위한 콘텐츠 모델링](/help/edge/wysiwyg-authoring/content-modeling.md) 문서를 참조하십시오.
 
 >[!BEGINTABS]
 
@@ -155,7 +155,7 @@ Adobe는 3단계 방식으로 블록을 개발할 것을 권장합니다.
 
 이제 기본 인용 블록이 정의되어 샘플 프로젝트에 커밋되었기 때문에 기존 페이지에 인용 블록을 추가할 수 있습니다.
 
-1. 브라우저에서 AEM as a Cloud Service에 로그인합니다. [사이트 콘솔을 사용하여 ](/help/sites-cloud/authoring/basic-handling.md) [Edge Delivery Services을 사용한 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 안내서에서 만든 사이트로 이동하여 페이지를 선택합니다.
+1. 브라우저에서 AEM as a Cloud Service에 로그인합니다. [사이트 콘솔을 사용하여 ](/help/sites-cloud/authoring/basic-handling.md) [Edge Delivery Services을 사용하여 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 안내서에서 만든 사이트로 이동하여 페이지를 선택합니다.
 
    * 이 경우 `index`는 설명 목적으로 사용됩니다.
 
@@ -331,13 +331,19 @@ export default function decorate(block) {
 
 새 모델을 사용한 콘텐츠 게시는 모델이 `main` 분기에 병합된 경우에만 지원됩니다.
 
+## 문서 기반 작성에 블록 재사용 {#reusing-blocks}
+
+동일한 콘텐츠 모델을 준수하는 경우 문서 기반 작성에 범용 편집기를 사용하여 WYSIWYG 작성에 대해 만드는 블록을 사용할 수 있습니다.
+
+자세한 내용은 [WYSIWYG 및 문서 기반 작성용 블록](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md) 문서를 참조하십시오.
+
 ## 다음 단계 {#next-steps}
 
 블록을 생성하는 방법을 알았으므로 린 개발자 경험을 달성하기 위해 의미론적 방식으로 콘텐츠의 모델링 방법을 이해하는 것이 중요합니다.
 
-Edge Delivery Services 프로젝트를 사용하여 WYSIWYG 작성을 위한 [콘텐츠 모델링](/help/edge/wysiwyg-authoring/content-modeling.md) 문서를 참조하여 Edge Delivery Services 프로젝트를 사용하여 WYSIWYG 작성을 위한 콘텐츠 모델링이 작동하는 방식을 알아보십시오.
+Edge Delivery Services 프로젝트를 사용하여 WYSIWYG 작성에 콘텐츠 모델링이 작동하는 방식을 알아보려면 문서 [Edge Delivery Services 프로젝트를 사용하여 WYSIWYG 작성에 대한 콘텐츠 모델링](/help/edge/wysiwyg-authoring/content-modeling.md)을 참조하십시오.
 
 >[!TIP]
 >
->AEM as a Cloud Service을 콘텐츠 소스로 사용하여 WYSIWYG 작성을 위해 사용할 수 있는 새 Edge Delivery Services 프로젝트를 만드는 방법에 대한 전체적인 설명은 [이 AEM GEM 웨비나를 참조하십시오.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>AEM as a Cloud Service을 콘텐츠 소스로 사용하여 WYSIWYG 작성에 사용할 수 있는 새 Edge Delivery Services 프로젝트를 만드는 방법에 대한 전체 연습은 [이 AEM GEM 웨비나를 참조하십시오.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 
