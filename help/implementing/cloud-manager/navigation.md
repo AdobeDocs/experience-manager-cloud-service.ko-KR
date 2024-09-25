@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
+source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
 workflow-type: tm+mt
-source-wordcount: '1518'
-ht-degree: 68%
+source-wordcount: '1574'
+ht-degree: 52%
 
 ---
 
@@ -57,14 +57,14 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 ![Experience Cloud 헤더](assets/experience-cloud-header.png)
 
-1. 햄버거 메뉴를 통해 개별 프로그램의 특정 부분으로 이동할 수 있는 탭에 액세스할 수 있습니다. 또는 상황에 따라 [라이선스 대시보드](/help/implementing/cloud-manager/license-dashboard.md)와 **[내 프로그램](#my-programs-console)** 콘솔 간에 전환할 수 있습니다.
-1. Cloud Manager 버튼을 사용하면 Cloud Manager의 어느 위치에 있든 Cloud Manager의 내 프로그램 콘솔로 돌아갑니다.
-1. Cloud Manager에 대한 피드백을 Adobe에 제공하려면 피드백 버튼을 탭하거나 클릭합니다.
-1. 조직 선택기는 현재 로그인되어 있는 조직(이 예에서는 Foundation Internal)을 표시합니다. Adobe ID가 여러 조직과 연결된 경우 탭하거나 클릭하여 다른 조직으로 전환합니다.
-1. 솔루션 전환기를 탭하거나 클릭하면 다른 Experience Cloud 솔루션으로 빠르게 이동할 수 있습니다.
-1. 도움말 아이콘은 학습 및 지원 리소스에 대한 바로 가기를 제공합니다.
-1. 알림 아이콘에 현재 할당된 미완료 [알림](/help/implementing/cloud-manager/notifications.md) 수가 배지로 표시되어 있습니다.
-1. 사용자를 나타내는 아이콘을 선택하여 사용자 설정에 액세스합니다. 사용자 사진을 구성하지 않은 경우, 아이콘이 임의로 할당됩니다.
+1. 개별 프로그램의 특정 부분으로 이동할 수 있는 다양한 탭에 액세스하려면 ![메뉴 아이콘 표시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)(사이드 메뉴 표시/숨기기)를 클릭하십시오. 또는 상황에 따라 [라이선스 대시보드](/help/implementing/cloud-manager/license-dashboard.md)와 **[내 프로그램](#my-programs-console)** 콘솔 간에 전환할 수 있습니다.
+1. Cloud Manager Adobe 버튼을 클릭하면 Cloud Manager 내 위치와 관계없이 Cloud Manager의 내 프로그램 콘솔로 돌아갑니다.
+1. Cloud Manager Adobe에 대한 피드백을 제공하려면 **피드백**&#x200B;을 클릭하세요.
+1. 조직 선택기를 클릭하면 현재 로그인한 조직이 표시됩니다(이 예에서는 Foundation Internal). Adobe ID가 여러 조직과 연결된 경우 클릭하여 다른 조직으로 전환합니다.
+1. ![앱 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg)(솔루션 전환기)을 클릭하여 다른 Experience Cloud 솔루션으로 빠르게 이동합니다.
+1. 학습 및 지원 리소스에 빠르게 액세스하려면 ![도움말 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Help_18_N.svg)을 클릭하세요.
+1. 알림 및 알림 등을 보려면 ![벨 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg)([알림](/help/implementing/cloud-manager/notifications.md))을 클릭하세요.
+1. 사용자 설정에 대한 사용자 액세스를 나타내는 아이콘을 클릭합니다. 사용자 사진을 구성하지 않은 경우, 아이콘이 임의로 할당됩니다.
 
 #### 프로그램 도구 모음 {#program-toolbar}
 
@@ -72,9 +72,9 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 ![프로그램 도구 모음](assets/program-toolbar.png)
 
-1. 프로그램 선택기는 다른 프로그램을 빠르게 선택하거나 새 프로그램 만들기와 같이 상황에 맞는 작업을 수행할 수 있는 드롭다운을 엽니다.
-1. 시작하기 링크를 통해 [온보딩 설명서 여정](/help/journey-onboarding/overview.md)에 액세스하여 Cloud Manager를 시작하고 실행할 수 있습니다.
-1. 액션 버튼으로 새 프로그램 만들기와 같이 상황에 맞는 액션을 수행할 수 있습니다.
+1. **내 프로그램** 선택기에서 다른 프로그램을 빠르게 선택하거나 새 프로그램을 만드는 등 상황에 맞는 작업을 수행할 수 있는 드롭다운을 엽니다
+1. **시작하기** 링크를 통해 [온보딩 설명서 여정](/help/journey-onboarding/overview.md)에 액세스하여 Cloud Manager을 시작하고 실행할 수 있습니다.
+1. 작업 버튼은 프로그램 추가와 같은 상황에 맞는 작업을 제공합니다.
 
 ### 통계 및 콜 투 액션 {#statistics}
 
@@ -209,23 +209,23 @@ Cloud Manager 헤더에는 프로그램 개요의 탐색 가능한 탭을 표시
 
 **프로그램**
 
-* 개요 - 현재 문서에 설명된 프로그램 개요
-* [활동](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) - 프로그램의 파이프라인 실행 기록
-* [파이프라인](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) - 프로그램에 대해 구성된 모든 파이프라인
-* [저장소](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - 프로그램에 대해 구성된 모든 저장소
-* [보고서](/help/implementing/cloud-manager/sla-reporting.md) - SLA 데이터 등의 지표
+* ![최신 눈금 보기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ModernGridView_18_N.svg) 개요 - 현재 문서에 설명된 프로그램 개요
+* ![벨 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) [활동](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) - 프로그램의 파이프라인 실행 기록
+* ![워크플로 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) [파이프라인](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) - 프로그램에 대해 구성된 모든 파이프라인
+* ![폴더 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) [저장소](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - 프로그램에 대해 구성된 모든 저장소
+* ![그래프 원형 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GraphPie_18_N.svg) [보고서](/help/implementing/cloud-manager/sla-reporting.md) - SLA 데이터와 같은 지표
 
 **서비스**
 
-* [환경](/help/implementing/cloud-manager/manage-environments.md) - 프로그램에 대해 구성된 모든 환경
-* [Edge Delivery 사이트](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) - Edge Delivery 사이트 관리
-* [도메인 설정](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - 프로그램의 사용자 지정 도메인 이름 관리
-* [SSL 인증서](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) - 프로그램에 대한 SSL 인증서 관리
-* [CDN 구성](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - CDN 구성 관리
-* [IP 허용 목록](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - 특정 IP 주소에 대한 허용 목록 정의
-* [콘텐츠 세트](/help/implementing/developing/tools/content-copy.md) - 복사 목적으로 만들어진 콘텐츠 세트
-* [콘텐츠 복사 활동](/help/implementing/developing/tools/content-copy.md) - 콘텐츠 복사 활동
-* [네트워크 인프라](/help/security/configuring-advanced-networking.md) - 프로그램의 고급 네트워킹 옵션 관리
+* ![데이터 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) [환경](/help/implementing/cloud-manager/manage-environments.md) - 프로그램에 대해 구성된 모든 환경
+* ![웹 페이지 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) [Edge Delivery 사이트](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) - Edge Delivery 사이트 관리
+* ![설정 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) [도메인 설정](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - 프로그램의 사용자 지정 도메인 이름 관리
+* ![닫힌 아이콘 잠금](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) [SSL 인증서](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) - 프로그램에 대한 SSL 인증서 관리
+* ![소셜 네트워크 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [CDN 구성](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - CDN 구성 관리
+* ![작업 목록 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [IP 허용 목록](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - 특정 IP 주소에 대한 허용 목록 정의
+* ![상자 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) [콘텐츠 세트](/help/implementing/developing/tools/content-copy.md) - 복사 목적으로 만들어진 콘텐츠 세트
+* ![내역 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) [콘텐츠 복사 활동](/help/implementing/developing/tools/content-copy.md) - 콘텐츠 복사 활동
+* ![채널 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Channel_18_N.svg) [네트워크 인프라](/help/security/configuring-advanced-networking.md) - 프로그램의 고급 네트워킹 옵션 관리
 
 **리소스**
 

@@ -5,9 +5,9 @@ exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
+source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '234'
 ht-degree: 14%
 
 ---
@@ -21,11 +21,13 @@ Cloud Manager을 사용하여 나만의 IP 허용 목록을 추가하는 방법�
 
 {{add-cm-allowlist-frontend-pipeline}}
 
+**IP 허용 목록 추가:**
+
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
 
-1. **프로그램 개요** 페이지에서 왼쪽의 사이드 패널을 사용하여(왼쪽 상단에 있는 햄버거 아이콘을 클릭하여 패널을 표시해야 할 수 있음) **IP 허용 목록**&#x200B;을 클릭합니다.
+1. **프로그램 개요** 페이지에서 사이드 패널을 사용하여(왼쪽 상단 모서리에서 ![메뉴 아이콘 표시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)를 클릭하여 패널을 표시해야 할 수 있음) ![작업 목록 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP 허용 목록**&#x200B;을 클릭합니다.
 
    ![사이드 패널의 IP 허용 목록 옵션](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 

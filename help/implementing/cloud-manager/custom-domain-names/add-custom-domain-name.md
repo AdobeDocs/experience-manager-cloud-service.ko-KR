@@ -1,21 +1,21 @@
 ---
 title: 사용자 정의 도메인 이름 추가
-description: Cloud Manager를 사용하여 사용자 정의 도메인 이름을 추가하는 방법을 알아봅니다.
+description: Cloud Manager의 도메인 설정을 사용하여 사용자 정의 도메인 이름을 추가하는 방법에 대해 알아봅니다.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
+source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
 workflow-type: tm+mt
-source-wordcount: '1489'
-ht-degree: 20%
+source-wordcount: '1509'
+ht-degree: 18%
 
 ---
 
 
 # 사용자 정의 도메인 이름 추가 {#adding-cdn}
 
-Cloud Manager를 사용하여 사용자 정의 도메인 이름을 추가하는 방법을 알아봅니다.
+Cloud Manager에서 **도메인 설정**&#x200B;을 사용하여 사용자 정의 도메인 이름을 추가하는 방법을 알아봅니다.
 
 ## 요구 사항 {#requirements}
 
@@ -46,7 +46,7 @@ Cloud Manager의 다음 두 위치에서 사용자 정의 도메인 이름을 �
 
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
 
-1. 측면 메뉴의 **서비스**&#x200B;에서 **도메인 설정**&#x200B;을 선택합니다.
+1. 측면 메뉴의 **서비스**&#x200B;에서 ![설정 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) **도메인 설정**&#x200B;을 선택합니다.
 
    ![도메인 설정 창](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)으로 이동합니다.
 
@@ -61,8 +61,8 @@ Cloud Manager의 다음 두 위치에서 사용자 정의 도메인 이름을 �
 
    | 인증서 유형 옵션 | 설명 |
    | --- | --- |
-   | Adobe 관리 인증서 | DV(도메인 유효성 검사) 인증서를 사용하려면 선택합니다. 이 옵션은 기본 도메인 유효성 검사를 제공하는 대부분의 경우에 이상적입니다. Adobe이 자동으로 인증서를 관리하고 갱신합니다. |
-   | 고객 관리 인증서 | EV/OV 인증서를 사용하려면 선택합니다. 이 옵션은 EV(확장 유효성 검사) 또는 OV(조직 유효성 검사)를 통해 향상된 보안을 제공합니다. 더 엄격한 인증, 더 높은 신뢰 수준 또는 인증서에 대한 사용자 지정 제어가 필요한 경우 사용합니다. |
+   | Adobe 관리 인증서 | DV(도메인 유효성 검사) 인증서를 사용하려면 이 인증서 유형을 선택합니다. 이 옵션은 기본 도메인 유효성 검사를 제공하는 대부분의 경우에 이상적입니다. Adobe이 자동으로 인증서를 관리하고 갱신합니다. |
+   | 고객 관리 인증서 | EV/OV 인증서를 사용하려면 이 인증서 유형을 선택합니다. 이 옵션은 EV(확장 유효성 검사) 또는 OV(조직 유효성 검사)를 통해 향상된 보안을 제공합니다. 더 엄격한 인증, 더 높은 신뢰 수준 또는 인증서에 대한 사용자 지정 제어가 필요한 경우 사용합니다. |
 
 1. **도메인 확인** 대화 상자에서 선택한 인증서 유형에 따라 다음 중 하나를 수행합니다.
 
@@ -77,7 +77,7 @@ Cloud Manager의 다음 두 위치에서 사용자 정의 도메인 이름을 �
 
    >[!NOTE]
    >
-   >자체 관리 SSL 인증서 및 자체 관리 CDN 공급자를 사용하는 경우 이 단계를 건너뛰고 준비가 되면 바로 [CDN 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)(으)로 이동할 수 있습니다.
+   >고객 관리 SSL 인증서 및 고객 관리 CDN 공급자를 사용하는 경우 SSL 인증서 추가를 건너뛰고 준비가 되면 바로 [CDN 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)(으)로 이동할 수 있습니다.
 
 
 ### Adobe 관리 인증서 단계 {#adobe-managed-cert-steps}
@@ -222,8 +222,8 @@ Now that you created your TXT entry, you can verify your domain name status. Pro
 
    1. 사용자 정의 도메인 이름을 입력합니다.
    1. 드롭다운 목록에서 이 이름과 연결된 SSL 인증서를 선택합니다.
-   1. **+추가**&#x200B;를 클릭합니다.
+   1. ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **추가**&#x200B;를 클릭합니다.
 
    ![사용자 지정 도메인 이름 추가](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 
-1. **도메인 이름 추가** 대화 상자가 열리고 **도메인 이름** 탭이 표시됩니다. [도메인 설정 페이지에서 사용자 지정 도메인 이름을 추가](#adding-cdn-settings)할 때처럼 계속합니다. —>
+1. **도메인 이름 추가** 대화 상자가 열리고 **도메인 이름** 탭이 표시됩니다. [도메인 설정 페이지에서 사용자 지정 도메인 이름을 추가](#adding-cdn-settings)하는 것처럼 계속합니다.
