@@ -4,9 +4,9 @@ description: AEM UI에는 몇 가지 기본 원칙이 있으며 몇 가지 주�
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 55cf6a10c2cb4c62aa8f89fac7f9d1fb4c012d26
+source-git-commit: bd5601661cd59c158802f900677855be76d5893b
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '937'
 ht-degree: 3%
 
 ---
@@ -180,6 +180,8 @@ AEM에는 편집, 미리 보기, 주석 레이어 등 페이지 작성을 위해
 
 * [UI에서](/help/overview/aem-cloud-service-on-unified-shell.md#disabling-unified-shell)
 
-* 프로젝트 코드에서 `Boolean` 속성을 설정하여 다음을 수행합니다.
+* 프로젝트 코드에서 다음을 수행합니다.
 
-  `/conf/global/setting/unifiedshell` - `false`
+   * `/conf/global/setting/unifiedshell`에
+
+      * `Boolean` 속성 `enable`을(를) `false`(으)로 설정 중
