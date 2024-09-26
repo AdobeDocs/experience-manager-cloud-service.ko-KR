@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 22f8ffc3e3acec9846a2f868be48195ca62df88b
+source-git-commit: fa2da21ef6424bce0830d503eba650e1c1bf3dc2
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1353'
 ht-degree: 14%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 14%
 
 ## 릴리스 17964 {#release-17964}
 
-다음은 2024년 9월 25일에 공개적으로 릴리스된 유지 보수 릴리스 17964에 대한 지속적인 개선 사항을 요약합니다. 이전 유지 관리 릴리스는 릴리스 17689.
+다음은 2024년 9월 25일에 공개적으로 릴리스된 유지 보수 릴리스 17964에 대한 지속적인 개선 사항을 요약합니다. 이전 유지 관리 릴리스는 릴리스 17689. 문제17882 인해 릴리스 정보가 비공개로 설정되었습니다.
 
 2024.10.0 기능 활성화는 이 유지 관리 릴리스에 대한 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
 
