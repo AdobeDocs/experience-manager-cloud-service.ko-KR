@@ -4,10 +4,10 @@ description: AEM UI에는 몇 가지 기본 원칙이 있으며 몇 가지 주�
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 55cf6a10c2cb4c62aa8f89fac7f9d1fb4c012d26
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 4%
+source-wordcount: '935'
+ht-degree: 3%
 
 ---
 
@@ -171,3 +171,15 @@ AEM에는 편집, 미리 보기, 주석 레이어 등 페이지 작성을 위해
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
 자세한 기술 정보는 페이지 편집기의 [JS 설명서 집합](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)을 참조하세요.
+
+### 통합 쉘 {#unified-shell}
+
+통합 셸을 AEM UI로 사용하는 경우 [통합 셸의 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)을(를) 참조하십시오.
+
+맞춤화를 수행해야 하는(또는 이미 수행한) 경우 비활성화할 수 있습니다.
+
+* [UI에서](/help/overview/aem-cloud-service-on-unified-shell.md#disabling-unified-shell)
+
+* 프로젝트 코드에서 `Boolean` 속성을 설정하여 다음을 수행합니다.
+
+  `/conf/global/setting/unifiedshell` - `false`

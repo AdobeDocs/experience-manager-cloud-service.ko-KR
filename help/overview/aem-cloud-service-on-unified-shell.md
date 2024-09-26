@@ -4,10 +4,10 @@ description: Unified Shell에서 AEM as a Cloud Service의 이점에 대해 알�
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 55cf6a10c2cb4c62aa8f89fac7f9d1fb4c012d26
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 100%
+source-wordcount: '408'
+ht-degree: 95%
 
 ---
 
@@ -44,6 +44,10 @@ AEM as a Cloud Service(작성자 서비스)가 통합 셸과 통합되어 사용
 
    ![이미지](/help/overview/assets/unifiedshell3.png)
 
+>[!NOTE]
+>
+>프로젝트 코드에서 통합 셸을 비활성화할 수도 있습니다. [AEM UI의 구조 - 통합 쉘](/help/implementing/developing/introduction/ui-structure.md#unified-shell)을(를) 참조하십시오.
+
 ## 어두운 테마로 변경 {#changing-to-dark-theme}
 
 어두운 테마로 변경하려면 프로필 아이콘을 클릭합니다. 이 작업은 아래와 같이 팝오버를 표시합니다. 토글을 사용하여 통합 셸의 어두운 테마로 전환할 수 있습니다.
@@ -73,3 +77,4 @@ AEM 받은 편지함은 통합 셸에서 벨 아이콘을 클릭하여 액세스
 팝오버에서 [받은 편지함] 버튼을 클릭하여 AEM 받은 편지함으로 이동합니다.
 
 ![이미지](/help/overview/assets/unifiedshell6.png)
+
