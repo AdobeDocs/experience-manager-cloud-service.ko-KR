@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  [!DNL Cloud Service]에서 더 �
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: c5057120d68e1119211c7733a8eb0424590096bd
-workflow-type: ht
-source-wordcount: '2172'
-ht-degree: 100%
+source-git-commit: 708bf370c2843dd8e2937de8fbf77843e661cf02
+workflow-type: tm+mt
+source-wordcount: '2220'
+ht-degree: 97%
 
 ---
 
@@ -271,11 +271,36 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
     <td>4/11/2022</td>
     <td>8/30/2024</td>
   </tr>
+  <tr>
     <td>org.apache.sling.repoinit.jcr<br>org.apache.sling.repoinit.parser.operations</td>
     <td>해당 API는 AEM as a Cloud Service에서 사용할 수 없습니다.</td>
     <td>5/17/2024</td>
     <td>6/30/2024</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
+    <td>대신 org.apache.sling.xss를 사용하십시오.</td>
+    <td>2023년 12월 12일</td>
+    <td>6/30/2024</td>
+  </tr>
+  <tr>
+    <td>com.adobe.granite.xss<br>com.adobe.granite.xss.impl</td>
+    <td>com.adobe.granite.xss.impl.servlets의 서블릿은 더 이상 사용되지 않습니다</td>
+    <td>2023년 12월 12일</td>
+    <td>6/30/2024</td>
   </tr>  
+  <tr>
+    <td>com.drew.*</td>
+    <td>이미지 및 비디오에서 메타데이터 추출은 Cloud Service의 Asset compute 또는 Apache POI 또는 Apache Tika를 통해 수행해야 합니다.</td>
+    <td>2024년 9월 17일</td>
+    <td>12/17/2024</td>
+  </tr>
+  <tr>
+    <td>org.apache.jackrabbit.oak.plugins.blob.*</td>
+    <td></td>
+    <td>2024년 9월 23일</td>
+    <td>12/23/2024</td>
+  </tr>       
 </tbody>
 </table>
 </details>
