@@ -5,7 +5,7 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b5ae995623c41803f8704fa9699d3514c37e4550
+source-git-commit: eb2e1555f684a68807b0b3764cd1be03c2d439ab
 workflow-type: tm+mt
 source-wordcount: '1677'
 ht-degree: 42%
@@ -145,8 +145,8 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 * 프로그램의 특정 ![데이터 아이콘](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [환경](/help/implementing/cloud-manager/manage-environments.md)(으)로 이동
 * ![프로그램 개요 아이콘](/help/implementing/cloud-manager/assets/program-overview.svg) [프로그램 개요](#program-overview) 열기
-* ![편집 아이콘](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [프로그램 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![삭제 아이콘](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[샌드박스 프로그램 삭제](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![편집 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [프로그램 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
+* ![삭제 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[샌드박스 프로그램 삭제](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
@@ -183,9 +183,9 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 #### Cloud Manager 헤더 {#cloud-manager-header-2}
 
-페이지의 왼쪽 상단 모서리에는 Adobe Cloud Manager 헤더가 있습니다. ![사이드 메뉴 아이콘](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)을 클릭하여 탭의 사이드 메뉴를 소프트웨어의 다른 영역으로 표시하거나 숨길 수 있습니다.
+페이지의 왼쪽 상단 모서리에는 Adobe Cloud Manager 헤더가 있습니다. ![사이드 메뉴 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)을 클릭하여 탭의 사이드 메뉴를 소프트웨어의 다른 영역으로 표시하거나 숨길 수 있습니다.
 
-![Cloud Manager 햄버거 메뉴](assets/cloud-manager-hamburger.png)
+![Cloud Manager 사이드 메뉴](assets/cloud-manager-hamburger.png)
 
 Cloud Manager Adobe 를 클릭하여 홈으로 돌아갑니다.
 
