@@ -7,9 +7,9 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 feature: Headless
 role: Admin, User, Developer
 source-git-commit: c9cddf9f0e344a2a24ee1a608b3ea920e258f34a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1013'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -90,7 +90,7 @@ ht-degree: 99%
 
    * **렌더링 형식:** **텍스트 영역** - 모험을 생성하면 이 필드에 여행의 간단한 설명이 저장됩니다.
    * **필드 레이블:** `Description` - 모험을 만들 때 이 필드에 표시되는 레이블입니다.
-   * **기본 형식**: **일반 텍스트** - 이 예제에 필요한 형식입니다.
+   * **기본 유형**: **일반 텍스트** - 이 예시에 필요한 형식입니다.
 
 1. **한 줄 텍스트** 필드를 드래그 앤 드롭하여 모험 가격을 저장할 필드를 추가하고 다음 속성을 입력합니다.
 
