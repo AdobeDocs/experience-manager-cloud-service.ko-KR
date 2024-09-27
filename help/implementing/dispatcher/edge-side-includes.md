@@ -4,17 +4,14 @@ description: 이제 Adobe 관리 CDN은 에지 수준의 동적 웹 컨텐츠 �
 feature: Dispatcher
 exl-id: 35093477-2788-4f69-80a9-899f43567cae
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: d70a8030ca6687b1839adc0ce1becdf366ec7170
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 3%
+source-wordcount: '523'
+ht-degree: 2%
 
 ---
 
 # 에지측 포함 {#edge-side-includes}
-
->[!NOTE]
->이 기능은 아직 일반적으로 사용할 수 없습니다. 얼리 어답터 프로그램에 참여하려면 `aemcs-cdn-config-adopter@adobe.com`에 전자 메일을 보내 사용 사례를 설명하세요.
 
 컨텐츠 전달 속도는 높은 TTL(Time to Live) 값으로 캐시 헤더를 설정하여 적극적으로 페이지를 캐싱할 때 도움이 됩니다. 페이지에 동적 콘텐츠가 포함되어 있어 자주 새로 고쳐야 하거나 캐시할 수 없는 경우에는 문제가 될 수 있습니다. 다행히도 포함된 HTML 페이지를 높은 TTL로 캐시할 수 있어 클라이언트측 Javascript를 통해 또는 CDN에서 보다 동적 콘텐츠 스니펫 가져오기를 지연할 수 있는 전략이 있습니다. 후자의 접근 방식은 AEM 게시로 렌더링된 사이트에 대해 지원되는 ESI(Edge Side Includes)라는 표준입니다. HTML은 CDN이 이러한 태그를 평가할 때까지 브라우저에 대한 페이지 제공을 지연하도록 지시하는 ESI 태그를 포함하여 원본(또는 TTL이 만료되지 않은 경우 CDN 캐시)에서 추가적인 더 동적인(더 낮은 TTL) 콘텐츠를 검색합니다.
 

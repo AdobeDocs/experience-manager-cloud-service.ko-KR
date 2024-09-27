@@ -4,9 +4,9 @@ description: 구성 파일에서 규칙 및 필터를 선언하고 Cloud Manager
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 35d3dcca6b08e42c0d2a97116d0628ac9bbb6a7c
+source-git-commit: c31441baa6952d92be4446f9035591b784091324
 workflow-type: tm+mt
-source-wordcount: '1350'
+source-wordcount: '1321'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ AEM as a Cloud Service은 [Adobe 관리 CDN](/help/implementing/dispatcher/cdn.m
 
 * [요청 변환](#request-transformations) - 헤더, 경로 및 매개 변수를 포함하여 들어오는 요청의 측면을 수정합니다.
 * [응답 변환](#response-transformations) - 클라이언트로 돌아가는 중인 헤더를 수정합니다(예: 웹 브라우저).
-* [클라이언트측 리디렉션](#client-side-redirectors) - 브라우저 리디렉션을 트리거합니다. 이 기능은 아직 GA는 아니지만 얼리어답터가 사용할 수 있습니다.
+* [클라이언트측 리디렉션](#client-side-redirectors) - 브라우저 리디렉션을 트리거합니다.
 * [원본 선택기](#origin-selectors) - 다른 원본 백엔드에 대한 프록시입니다.
 
 또한 CDN에서 구성할 수 있는 것은 CDN에서 허용하거나 거부하는 트래픽을 제어하는 트래픽 필터 규칙 (WAF 포함)입니다. 이 기능은 이미 릴리스되었으며 자세한 내용은 [WAF 규칙을 포함한 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) 페이지에서 확인할 수 있습니다.
@@ -363,9 +363,6 @@ data:
 
 ## 클라이언트측 리디렉션 {#client-side-redirectors}
 
->[!NOTE]
->이 기능은 아직 일반적으로 사용할 수 없습니다. 얼리 어답터 프로그램에 참여하려면 `aemcs-cdn-config-adopter@adobe.com`에 전자 메일을 보내 사용 사례를 설명하세요.
-
 301, 302 및 유사한 클라이언트측 리디렉션에 대해 클라이언트측 리디렉션 규칙을 사용할 수 있습니다. 규칙이 일치하는 경우 CDN은 상태 코드 및 메시지(예: HTTP/1.1 301 영구적으로 이동됨)와 위치 헤더 세트를 포함하는 상태 라인으로 응답합니다.
 
 고정 값을 갖는 절대 위치와 상대 위치를 모두 사용할 수 있습니다.
@@ -380,7 +377,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_redirects:
+  redirects:
     rules:
       - name: redirect-absolute
         when: { reqProperty: path, equals: "/page.html" }

@@ -4,9 +4,9 @@ description: Cloud Manager 구성 파이프라인을 사용하여 배포되는 �
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 5d51ff056d4e4f0fdbb3004cbac55803ac91f8ca
+source-git-commit: c31441baa6952d92be4446f9035591b784091324
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: '1415'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ Adobe 제공 CDN에는 몇 가지 기능과 서비스가 있으며, 그중 일�
 
 * Adobe CDN이 고객 관리 CDN에서 발생하는 요청의 유효성을 검사하는 데 사용하는 X-AEM-Edge-Key HTTP 헤더 값입니다.
 * CDN 캐시에서 리소스를 제거하는 데 사용되는 API 토큰입니다.
-* 기본 인증 양식을 제출하여 제한된 콘텐츠에 액세스할 수 있는 사용자 이름/암호 조합 목록입니다. [이 기능은 얼리 어답터가 사용할 수 있습니다.](/help/release-notes/release-notes-cloud/release-notes-current.md#foundation-early-adopter)
+* 기본 인증 양식을 제출하여 제한된 콘텐츠에 액세스할 수 있는 사용자 이름/암호 조합 목록입니다.
 
 구성 구문을 포함한 이러한 각 요소에 대해서는 아래 해당 섹션에 설명되어 있습니다.
 
@@ -146,9 +146,6 @@ data:
 
 ## 기본 인증 {#basic-auth}
 
->[!NOTE]
->이 기능은 아직 일반적으로 사용할 수 없습니다. 얼리 어답터 프로그램에 참여하려면 `aemcs-cdn-config-adopter@adobe.com`에게 전자 메일을 보내십시오.
-
 사용자 이름과 암호를 요구하는 기본 인증 대화 상자를 표시하여 특정 콘텐츠 리소스를 보호합니다. 이 기능은 최종 사용자 액세스 권한에 대한 완전한 솔루션보다는 비즈니스 이해 당사자의 콘텐츠 검토와 같은 간단한 인증 사용 사례를 위한 것입니다.
 
 최종 사용자는 다음과 같이 기본 인증 대화 상자가 표시되는 것을 경험합니다.
@@ -164,7 +161,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_authentication:
+  authentication:
     authenticators:
        - name: my-basic-authenticator
          type: basic
@@ -185,12 +182,12 @@ data:
 
 또한 구문에는 다음이 포함됩니다.
 
-* `experimental_authentication` 노드가 포함된 `data` 노드(기능이 릴리스되면 실험 접두사가 제거됨).
-* `experimental_authentication`에서 하나의 `authenticators` 노드와 하나의 `rules` 노드가 배열입니다.
+* `authentication` 노드가 포함된 `data` 노드.
+* `authentication`에서 하나의 `authenticators` 노드와 하나의 `rules` 노드가 배열입니다.
 * 인증자: 이 시나리오에서는 다음 구조를 갖는 기본 인증자를 선언합니다.
    * name - 설명 문자열
    * 형식은 `basic`이어야 합니다.
-   * 최종 사용자가 기본 인증 대화 상자에 입력할 수 있는 다음 이름/값 쌍을 각각 포함하는 자격 증명 배열입니다.
+   * 최종 사용자가 기본 인증 대화 상자에 입력할 수 있는 다음 이름/값 쌍을 각각 포함하는 최대 10개의 자격 증명 배열입니다.
       * user - 사용자 이름
       * 암호 - 해당 값은 **모두**&#x200B;이(가) 서비스 필드로 선택된 [Cloud Manager 비밀 유형 환경 변수](/help/operations/config-pipeline.md#secret-env-vars)을(를) 참조해야 합니다.
 * 규칙: 사용해야 하는 인증자와 보호해야 하는 리소스를 선언할 수 있습니다. 각 규칙에는 다음이 포함됩니다.
@@ -208,7 +205,7 @@ data:
 1. 처음에는 `edgeKey1`만 정의되었습니다. 이 경우 `${{CDN_EDGEKEY_052824}}`(으)로 참조되며 권장 규칙으로 만들어진 날짜를 반영합니다.
 
    ```
-   experimental_authentication:
+   authentication:
      authenticators:
        - name: edge-auth
          type: edge
@@ -218,7 +215,7 @@ data:
 1. 구성에서 `edgeKey2`에서 참조하고 배포합니다.
 
    ```
-   experimental_authentication:
+   authentication:
      authenticators:
        - name: edge-auth
          type: edge
@@ -229,7 +226,7 @@ data:
 1. 이전 에지 키가 더 이상 사용되지 않으면 구성에서 `edgeKey1`을(를) 제거하여 제거하십시오.
 
    ```
-   experimental_authentication:
+   authentication:
      authenticators:
        - name: edge-auth
          type: edge
@@ -240,7 +237,7 @@ data:
 1. 다음 순환에 대한 준비가 되면 동일한 절차를 따르되, 이번에는 `${{CDN_EDGEKEY_031426}}`과(와) 같은 이름의 새 Cloud Manager 환경 암호를 참조하여 구성에 `edgeKey1`을(를) 추가합니다.
 
    ```
-   experimental_authentication:
+   authentication:
      authenticators:
        - name: edge-auth
          type: edge

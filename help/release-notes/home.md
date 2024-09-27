@@ -4,10 +4,10 @@ description: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 정보�
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
-source-git-commit: 25179e93715c169e3e04c1530761eb7eff037063
-workflow-type: ht
-source-wordcount: '345'
-ht-degree: 100%
+source-git-commit: 25e5fa5a37ac65010cbc6a55f50268f95e4e33a6
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 | 제품 | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| 버전 | 2024.8.0 |
+| 버전 | 2024.9.0 |
 | 유형 | 지속적인 업데이트 |
 | 가용 일자 | 연속 업데이트 |
 
