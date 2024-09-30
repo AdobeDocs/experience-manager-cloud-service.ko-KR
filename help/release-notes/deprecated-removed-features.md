@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  [!DNL Cloud Service]에서 더 �
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 708bf370c2843dd8e2937de8fbf77843e661cf02
+source-git-commit: 0bcb769f0d8beb4b501646d82fa91bd9233a2173
 workflow-type: tm+mt
-source-wordcount: '2220'
-ht-degree: 97%
+source-wordcount: '2496'
+ht-degree: 82%
 
 ---
 
@@ -79,7 +79,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 <tbody>
   <tr>
     <td>org.apache.sling.commons.auth<br>org.apache.sling.commons.auth.spi</td>
-    <td>대안으로 Sling의 인증 코어/인증 코어 SPI 인터페이스를 사용하십시오.</td>
+    <td>대안으로 Sling의 인증 코어/인증 코어 SPI 인터페이스를 사용하십시오. <a href="#org.apache.sling.commons.auth">아래의 제거 노트를 참조하세요.</a></td>
     <td>2015</td>
     <td>7/30/21</td>
   </tr>
@@ -143,15 +143,19 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
     <td>4/30/21</td>
     <td>7/30/21</td>
   </tr>
-  <tr>
-    <td>org.apache.felix.http.jetty<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.jmx<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.handler.jmx<br>org.eclipse.jetty.server.jmx<br>org.eclipse.jetty.server.nio<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.jmx<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.preventers<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread<br>org.eclipse.jetty.util.thread.strategy<br>org.eclipse.jetty.webapp<br>org.eclipse.jetty.websocket.api<br>org.eclipse.jetty.websocket.api.annotations<br>org.eclipse.jetty.websocket.api.extensions<br>org.eclipse.jetty.websocket.api.util<br>org.eclipse.jetty.websocket.client<br>org.eclipse.jetty.websocket.client.io<br>org.eclipse.jetty.websocket.client.masks<br>org.eclipse.jetty.websocket.common<br>org.eclipse.jetty.websocket.common.events<br>org.eclipse.jetty.websocket.common.events.annotated<br>org.eclipse.jetty.websocket.common.extensions<br>org.eclipse.jetty.websocket.common.extensions.compress<br>org.eclipse.jetty.websocket.common.extensions.fragment<br>org.eclipse.jetty.websocket.common.extensions.identity<br>org.eclipse.jetty.websocket.common.frames<br>org.eclipse.jetty.websocket.common.io<br>org.eclipse.jetty.websocket.common.io.http<br>org.eclipse.jetty.websocket.common.io.payload<br>org.eclipse.jetty.websocket.common.message<br>org.eclipse.jetty.websocket.common.scopes<br>org.eclipse.jetty.websocket.common.util<br>org.eclipse.jetty.websocket.server<br>org.eclipse.jetty.websocket.server.pathmap<br>org.eclipse.jetty.websocket.servlet<br>org.eclipse.jetty.xml<br>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.jmx<br>org.eclipse.jetty.client.util</td>
-    <td>Eclipse Jetty 및 Felix Http Jetty 패키지는 더 이상 지원되지 않습니다.</td>
+  <tr> <td>org.apache.felix.http.jetty<br>org.eclipse.jetty.client.jmx<br>org.eclipse.jetty.jmx<br>org.eclipse.jetty.server.handler.jmx<br>org.eclipse.jetty.server.nio<br>org.eclipse.jetty.server.jmx<br>org.eclipse.jetty.servlet.jmx<br>org.eclipse.jetty.util.preventers<br>org.eclipse.jetty.util.thread.strategy<br>org.eclipse.jetty.webapp<br>org.eclipse.jetty.websocket.api<br>org.eclipse.jetty.websocket.api.annotations<br>org.eclipse.jetty.websocket.api.extensions<br>org.eclipse.jetty.websocket.api.util<br>org.eclipse.jetty.websocket.client<br>org.eclipse.jetty.websocket.client.io<br>org.eclipse.jetty.websocket.client.masks<br>org.eclipse.jetty.websocket.common<br>org.eclipse.jetty.websocket.common.events<br>org.eclipse.jetty.websocket.common.events.annotated<br>org.eclipse.jetty.websocket.common.extensions<br>org.eclipse.jetty.websocket.common.extensions.compress<br>org.eclipse.jetty.websocket.common.extensions.fragment<br>org.eclipse.jetty.websocket.common.extensions.identity<br>org.eclipse.jetty.websocket.common.frames<br>org.eclipse.jetty.websocket.common.io<br>org.eclipse.jetty.websocket.common.io.http<br>org.eclipse.jetty.websocket.common.io.payload<br>org.eclipse.jetty.websocket.common.message<br>org.eclipse.jetty.websocket.common.scopes<br>org.eclipse.jetty.websocket.common.util<br>org.eclipse.jetty.websocket.server<br>org.eclipse.jetty.websocket.server.pathmap<br>org.eclipse.jetty.websocket.servlet<br>org.eclipse.jetty.xml</td>
+    <td>Eclipse Jetty 및 Felix Http Jetty 패키지는 더 이상 지원되지 않습니다. <a href="#org.eclipse.jetty">아래의 제거 노트를 참조하세요.</a></td>
     <td>5/27/21</td>
     <td>8/26/21</td>
   </tr>
-  <tr>
-    <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
-    <td>해당 API는 AEM as a Cloud Service에서 사용할 수 없습니다.</td>
+  <tr> <td>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.util<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread
+</td>
+    <td>Eclipse Jetty 및 Felix Http Jetty 패키지는 더 이상 지원되지 않습니다.</td>
+    <td>5/27/21</td>
+    <td>8/26/21</td>
+  </tr>  
+  <tr>     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
+    <td>이 API는 AEM as a Cloud Service에서 사용할 수 없습니다. <a href="#com.mongodb">아래의 제거 노트를 참조하세요.</a></td>
     <td>5/27/21</td>
     <td>7/30/21</td>
   </tr>
@@ -169,7 +173,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
   </tr>
   <tr>
     <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
-    <td>Apache Abdera가 2017년부터 중단됨에 따라 해당 API는 더 이상 사용되지 않습니다.</td>
+    <td>Apache Abdera가 2017년부터 중단됨에 따라 이 API는 더 이상 사용되지 않습니다. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">아래의 제거 노트를 참조하세요.</a></td>
     <td>7/29/21</td>
     <td>09/29/21</td>
   </tr>
@@ -198,13 +202,13 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
     <td>제거됨</td>
   <tr>
     <td>org.apache.sling.atom.taglib<br>org.apache.sling.atom.taglib.media</td>
-    <td>레거시 AEM 6.x API.</td>
+    <td>이전 AEM 6.x API입니다. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">아래의 제거 노트를 참조하세요.</a></td>
     <td>4/8/19</td>
     <td>09/29/21</td>
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
-    <td>Apache Felix Http Whiteboard는 더 이상 지원되지 않습니다. 코드를 OSGi Http Whiteboard로 마이그레이션합니다.</td>
+    <td>Apache Felix Http Whiteboard는 더 이상 지원되지 않습니다. 코드를 OSGi Http Whiteboard로 마이그레이션합니다. <a href="#org.apache.felix.http.whiteboard">아래의 제거 노트를 참조하세요.</a></td>
     <td>1/27/2022</td>
     <td>03/24/2022</td>
   </tr>
@@ -266,7 +270,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
     <td>6/15/2023</td>
   </tr>
   <tr>
-    <td>org.slf4j.event	</td>
+    <td>org.slf4j.event    </td>
     <td>이 내부 slf4j API는 AEM as a Cloud Service에서 지원되지 않습니다.</td>
     <td>4/11/2022</td>
     <td>8/30/2024</td>
@@ -285,7 +289,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
   </tr>
   <tr>
     <td>com.adobe.granite.xss<br>com.adobe.granite.xss.impl</td>
-    <td>com.adobe.granite.xss.impl.servlets의 서블릿은 더 이상 사용되지 않습니다</td>
+    <td>대신 org.apache.sling.xss를 사용하십시오.</td>
     <td>2023년 12월 12일</td>
     <td>6/30/2024</td>
   </tr>  
@@ -304,6 +308,52 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 </tbody>
 </table>
 </details>
+
+### `org.apache.sling.commons.auth*` {#org.apache.sling.commons.auth} 제거
+
+`org.apache.sling.commons.auth` 및/또는 `org.apache.sling.commons.auth.spi`을(를) 사용하는 경우 코드를 `org.apache.sling.auth` 다시 전송으로 마이그레이션하여 사용을 바꿀 수 있습니다. `org.apache.sling.auth.spi`. [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)의 이전 버전을 사용하는 경우 최신 버전으로 업데이트하십시오.
+
+작업 목록:
+* ACS AEM Commons를 최신 버전으로 업데이트
+* `org.apache.sling.commons.auth` 및/또는 `org.apache.sling.commons.auth.spi`에서 `org.apache.sling.auth` 다시 전송으로 마이그레이션합니다. `org.apache.sling.auth.spi`.
+
+### `org.eclipse.jetty*` {#org.eclipse.jetty} 제거
+
+패키지 `org.eclipse.jetty` 또는 하위 패키지 중 하나를 사용하는 경우 유사한 기능을 가진 다른 타사 라이브러리로 마이그레이션하는 것이 좋습니다. 마이그레이션을 수행할 수 없는 경우 아래 목록에서 필요한 번들을 프로젝트에 추가하십시오.
+
+작업 목록:
+* `org.eclipse.jetty` 패키지 사용을 다른 타사 라이브러리/자체 코드로 바꾸거나
+* 이 목록에서 필요한 번들을 선택하고 프로젝트에 추가합니다.
+   * org.eclipse.jetty:jetty-client:9.4.54.v20240208
+   * org.eclipse.jetty:jetty-http:9.4.54.v20240208
+   * org.eclipse.jetty:jetty-io:9.4.54.v20240208
+   * org.eclipse.jetty:jetty-security:9.4.54.v20240208
+   * org.eclipse.jetty:jetty-servlet:9.4.54.v20240208
+   * org.eclipse.jetty:jetty-server:9.4.54.v20240208
+   * org.eclipse.jetty:jetty-util:9.4.54.v20240208
+   * org.eclipse.jetty:jetty-util-ajax:9.4.54.v20240208
+
+### `com.mongodb` {#com.mongodb} 제거
+
+프로젝트에 Mongo 클라이언트 API를 추가합니다.
+
+작업 목록:
+* 프로젝트에 이 번들 추가
+   * org.mongodb:mongo-java-driver:3.12.7
+
+### `org.apache.abdera*` 및 `org.apache.sling.atom.taglib` {#org.apache.abdera_or_org.apache.sling.atom.taglib} 사용
+
+`org.apache.abdera` 및 `org.apache.sling.atom.taglib`의 패키지 사용을 유사한 기능 또는 사용자 고유의 코드를 제공하는 서드파티 라이브러리로 바꾸십시오.
+
+작업 목록:
+* `org.apache.abdera` 및 `org.apache.sling.atom.taglib`의 패키지 사용을 다른 타사 라이브러리/자체 코드로 바꾸십시오.
+
+### `org.apache.felix.http.whiteboard` {#org.apache.felix.http.whiteboard} 사용
+
+`org.apache.felix.http.whiteboard`의 사용을 [OSGi Http Whiteboard](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)(으)로 바꾸십시오. 공식 OSGi API에도 유사한 기능이 있으며 대부분 을 교체하려면 서비스 등록 속성을 변경해야 합니다.
+
+작업 목록:
+* `org.apache.felix.http.whiteboard`의 사용을 [OSGi Http Whiteboard](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)(으)로 바꾸기
 
 ## OSGI 구성 {#osgi-configuration}
 
