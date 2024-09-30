@@ -1,8 +1,8 @@
 ---
-source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
-workflow-type: ht
-source-wordcount: '1139'
-ht-degree: 100%
+source-git-commit: a77bff14b34f1e433ba185b19f0f0d61728b7c7a
+workflow-type: tm+mt
+source-wordcount: '1202'
+ht-degree: 94%
 
 ---
 # 스니펫 {#snippets}
@@ -155,6 +155,22 @@ ht-degree: 100%
 >
 >프론트엔드 파이프라인을 사용하여 사이트를 개발하거나 사용하려는 경우 사전에 Cloud Manager IP 허용 목록을 추가해야 합니다.
 >[프론트엔드 파이프라인에서 Cloud Manager IP 허용 목록 사용](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)을 참조하시기 바랍니다.
+
+## IP 허용 목록 및 유니버설 편집기 {#ip-allow-lists-ue}
+
+>[!IMPORTANT]
+>
+>[범용 편집기](/help/implementing/universal-editor/introduction.md)이(가) IP 허용 목록과 호환되지 않습니다.
+>
+>범용 편집기를 사용하려면 IP 허용 목록을 활성화하지 않아야 합니다.
+
+## 범용 편집기 및 IP 허용 목록 {#ue-ip-allow-lists}
+
+>[!IMPORTANT]
+>
+>범용 편집기가 [IP 허용 목록](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)와(과) 호환되지 않습니다.
+>
+>범용 편집기를 사용하려면 IP 허용 목록을 활성화하지 않아야 합니다.
 
 ## Dynamic Media를 사용하여 작업 {#work-with-dynamic-media}
 

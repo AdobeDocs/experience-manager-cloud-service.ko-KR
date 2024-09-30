@@ -1,10 +1,10 @@
 ---
 title: Universal Editor 소개
-description: 유니버설 편집기를 통해 Headless 및 Headful 환경의 WYSIWYG(보이는 그대로) 편집을 활성화하는 방법에 대해 알아봅니다. 콘텐츠 작성자가 탁월한 경험을 제공하고 콘텐츠 속도를 높이며 최신 개발자 경험을 제공하는 데 도움이 되는 방식에 대해 살펴보십시오.
+description: 유니버설 편집기를 통해 Headless 및 Headful 환경에서 "보이는 그대로"(WYSIWYG) 편집하는 방법에 대해 알아봅니다. 콘텐츠 작성자가 탁월한 경험을 제공하고 콘텐츠 속도를 높이며 최신 개발자 경험을 제공하는 데 도움이 되는 방식에 대해 살펴보십시오.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a77bff14b34f1e433ba185b19f0f0d61728b7c7a
 workflow-type: tm+mt
 source-wordcount: '973'
 ht-degree: 54%
@@ -14,7 +14,7 @@ ht-degree: 54%
 
 # Universal Editor 소개 {#introduction}
 
-범용 편집기는 Adobe Experience Manager Sites의 일부인 다목적 비주얼 편집기입니다. 이를 통해 작성자는 Headless 또는 Headful 경험에 대한 WYSIWYG(보이는 그대로) 편집을 수행할 수 있습니다. 콘텐츠 작성자가 탁월한 경험을 제공하는 데 어떻게 도움이 될 수 있으며 개발자에게 탁월한 자유를 제공하는 방법을 이해합니다.
+범용 편집기는 Adobe Experience Manager Sites의 일부인 다목적 비주얼 편집기입니다. 이를 통해 작성자는 Headless 또는 Headful 경험에 대해 원하는 대로(WYSIWYG) 편집할 수 있습니다. 콘텐츠 작성자가 탁월한 경험을 제공하는 데 어떻게 도움이 될 수 있으며 개발자에게 탁월한 자유를 제공하는 방법을 이해합니다.
 
 ## 배경 {#background}
 
@@ -91,6 +91,8 @@ Universal Editor를 사용하기 위한 구현 요구 사항은 매우 간단하
 * AEM as a Cloud Service 릴리스 `2023.8.13099` 이상이 필요합니다.
 * 컨텐츠 작성자는 고유한 개별 Experience Cloud 계정이 있어야 합니다.
 * Chrome 및 Edge이 지원되는 브라우저입니다
+
+{{ue-ip-allow-lists}}
 
 ## 다음 단계 {#next-steps}
 
