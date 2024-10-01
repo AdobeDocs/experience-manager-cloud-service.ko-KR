@@ -4,9 +4,9 @@ description: Amazon S3 또는 Azure Blob Storage와 같은 자체 호스팅 저�
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: 137ea509de353f9f800f0b64bb8f2f6375e7d83d
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '388'
 ht-degree: 1%
 
 ---
@@ -89,3 +89,9 @@ curl "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
 지원되는 코드는 403, 404, 406, 500 및 503입니다.
 
 이러한 방식으로, 주어진 오류 코드에 대한 합성 응답을 테스트하기 위해 CDN의 오류 핸들러를 직접 트리거합니다.
+
+### 튜토리얼
+
+CDN 제공 오류 페이지를 만들고 배포하고 테스트하는 방법에 대한 단계별 지침은 [CDN 오류 페이지](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) 자습서를 참조하십시오.
+
+
