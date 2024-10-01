@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 2d5fa0b15456ad9838fa236a2b5c79d41a9af7fe
+source-git-commit: 894c5df2cdc6637bae9b4b8f2cbdd1f1162b3942
 workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 68%
+source-wordcount: '1289'
+ht-degree: 66%
 
 ---
 
@@ -72,6 +72,12 @@ Dynamic Media 계정에서 AI 생성 캡션 지원에 얼리 액세스하려면 
 이제 에셋 선택기에서 컬렉션 탐색을 지원하여 원하는 에셋을 찾을 수 있습니다.
 ![자산 선택기 컬렉션](/help/assets/assets/collections-rail-modal-view.png)
 
+### Content Hub의 새로운 기능 {#content-hub-new-features}
+
+이제 관리자는 만료된 자산을 Content Hub에 표시해야 하는지 여부를 제어할 수 있습니다. 만료된 에셋이 표시되면 사용자가 해당 에셋을 다운로드할 수 있는지도 정의할 수 있습니다.
+
+![Content Hub에서 만료된 자산](/help/assets/assets/view-download-expired-assets.png)
+
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### AEM Forms의 새로운 프리릴리스 기능 {#forms-new-prerelease-features}
@@ -120,7 +126,7 @@ AEM Forms 얼리 액세스 프로그램은 최첨단 혁신에 독점적으로 �
 * Commerce 필드가 Assets 메타데이터 스키마 편집기와 제대로 통합되지 않습니다.
 * 끌어서 놓기에 대한 회전 메뉴 제품 다중 필드 문제.
 * 끌어서 놓기에 대한 회전 메뉴 범주 다중 필드 문제.
-* 카테고리 및 제품 편집기 페이지의 페이지 정보에 있는 메뉴에서 클릭 기능이 작동하지 않습니다.
+* 범주 및 제품 편집기 페이지의 페이지 정보에 있는 메뉴에 대해 클릭 시 작동하지 않습니다.
 * 주문 번호가 주문 확인 페이지에 표시되지 않습니다.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
