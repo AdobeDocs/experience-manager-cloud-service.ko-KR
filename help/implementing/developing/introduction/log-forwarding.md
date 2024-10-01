@@ -4,9 +4,9 @@ description: AEM as a Cloud Service의 Splunk 및 기타 로깅 공급업체에 
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 17d195f18055ebd3a1c4a8dfe1f9f6bc35ebaf37
+source-git-commit: 3aafe41554fd86637e34687660fc48ea817b01d7
 workflow-type: tm+mt
-source-wordcount: '1362'
+source-wordcount: '1603'
 ht-degree: 0%
 
 ---
@@ -40,6 +40,7 @@ AEM 및 Apache/Dispatcher 로그를 전용 이그레스 IP와 같은 AEM의 고�
 * 대상 구성 로깅 - 각 대상의 형식이 약간 다릅니다.
 * 로그 항목 형식 - 로그 항목 형식에 대한 정보
 * 고급 네트워킹 - 전용 이그레스 또는 VPN을 통해 AEM 및 Apache/Dispatcher 로그 전송
+* 이전 로그 전달에서 마이그레이션 - 이전에 Adobe으로 설정했던 로그 전달에서 셀프 서비스 접근 방식으로 이동하는 방법
 
 
 ## 설정 {#setup}
@@ -369,4 +370,23 @@ data:
     aem:
       advancedNetworking: true
 ```
+
+## 이전 로그 전달에서 마이그레이션 {#legacy-migration}
+
+셀프서비스 모델을 통해 로그 전달 구성을 수행하기 전에 고객에게 지원 티켓을 열도록 요청했으며, 여기서 Adobe은 통합을 시작합니다.
+
+Adobe에서 이러한 방식으로 설정했던 고객은 편리하게 셀프서비스 모델에 적응할 수 있습니다. 이렇게 전환하는 데는 몇 가지 이유가 있습니다.
+
+* 새 환경(예: 새 개발 환경 또는 RDE)이 프로비저닝되었습니다.
+* 기존 Splunk 끝점 또는 자격 증명에 대한 변경.
+* Adobe이 CDN 로그를 사용하기 전에 로그 전달을 설정했으며 CDN 로그를 수신하려고 합니다.
+* 시간에 민감한 변화가 필요하기 전에 조직에서 지식을 갖도록 셀프서비스 모델에 적극적으로 적응하려는 의식적인 결정입니다.
+
+마이그레이션할 준비가 되면 이전 섹션에서 설명한 대로 YAML 파일을 구성하면 됩니다. Cloud Manager 구성 파이프라인을 사용하여 구성을 적용해야 하는 각 환경에 배포합니다.
+
+구성이 모든 환경에 배포되어 모두 셀프서비스 제어 하에 있는 것이 좋지만 필수는 아닙니다. 그렇지 않으면 Adobe으로 구성된 환경과 셀프 서비스 방식으로 구성된 환경을 구분할 수 없습니다.
+
+>[!NOTE]
+>
+>이전에 Adobe 지원으로 구성한 환경에 로그 전달이 배포되면 최대 몇 시간 동안 중복 로그를 받을 수 있습니다. 이 문제는 결국 자동으로 해결됩니다.
 
