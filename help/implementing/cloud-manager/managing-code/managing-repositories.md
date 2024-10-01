@@ -1,13 +1,13 @@
 ---
 title: Cloud Manager에서 저장소 관리
-description: Cloud Manager에서 GIT 저장소를 생성, 확인 및 삭제하는 방법을 알아봅니다.
+description: Cloud Manager에서 Git 저장소를 추가, 보기 및 삭제하는 방법을 알아봅니다.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
+source-git-commit: b35b25bcd62c28f7894171b7b2269fa46d612686
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 14%
+source-wordcount: '708'
+ht-degree: 20%
 
 ---
 
@@ -50,6 +50,8 @@ Cloud Manager 내에서 만든 저장소는 파이프라인을 추가하거나 �
 
 ## 저장소 추가 {#adding-repositories}
 
+저장소를 추가하려면 사용자에게 **배포 관리자** 또는 **비즈니스 소유자** 역할이 있어야 합니다.
+
 **저장소** 페이지의 오른쪽 상단 모서리에서 **저장소 추가**&#x200B;를 클릭합니다
 
 ![저장소 추가 대화 상자](assets/repository-add.png)
@@ -60,11 +62,15 @@ Cloud Manager에서는 Adobe 관리 저장소(**Adobe 저장소**)와 자체 관
 * [Cloud Manager에서 Adobe 저장소 추가](adobe-repositories.md)
 * [Cloud Manager에서 비공개 저장소 추가](private-repositories.md)
 
->[!NOTE]
->
->* 저장소를 추가하려면 사용자에게 **배포 관리자** 또는 **비즈니스 소유자** 역할이 있어야 합니다.
->* 특정 회사 또는 IMS 조직의 모든 프로그램에서 300개의 저장소로 제한됩니다.
+특정 회사 또는 IMS 조직의 모든 프로그램에서 300개의 저장소로 제한됩니다.
 
+## 저장소 정보에 액세스 {#repo-info}
+
+**저장소** 창에서 저장소를 볼 때 도구 모음에서 **저장소 정보 액세스** 버튼을 클릭하여 Adobe 관리 저장소에 액세스하는 방법에 대한 세부 정보를 프로그래밍 방식으로 볼 수 있습니다.
+
+![저장소 정보](assets/repository-access-repo-info2.png)
+
+**저장소 정보** 창이 열리고 세부 정보가 나타납니다. 저장소 정보 액세스에 대한 자세한 내용은 [저장소 정보 액세스](/help/implementing/cloud-manager/managing-code/accessing-repos.md)를 참조하십시오.
 
 ## 분기 점검 및 프로젝트 만들기 {#check-branches}
 
@@ -91,7 +97,7 @@ Cloud Manager에서는 Adobe 관리 저장소(**Adobe 저장소**)와 자체 관
 
 ![삭제](assets/repository-delete.png)
 
-저장소를 삭제하면 나중에 생성되는 모든 새 저장소에서는 해당 이름을 사용할 수 없게 됩니다. 동일한 이름을 사용하려고 하면 다음과 같은 오류 메시지가 표시됩니다.
+저장소를 삭제하면 나중에 생성되는 모든 새 저장소에서는 해당 이름을 사용할 수 없게 됩니다. 삭제된 리포지토리와 동일한 이름을 사용하여 리포지토리를 추가하려고 하면 다음과 같은 오류 메시지가 표시됩니다.
 
 `Repository name should be unique within organization.`
 

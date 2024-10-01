@@ -5,9 +5,9 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
+source-git-commit: f2364de6237ca9f0285815b581bcf3881488188d
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '384'
 ht-degree: 44%
 
 ---
@@ -42,9 +42,9 @@ Cloud Manager을 사용하면 **파이프라인** 카드에서 **저장소 정�
 
    ![파이프라인 카드의 저장소 정보 액세스](assets/pipelines-card.png)
 
-1. 암호에 액세스하려면 새로운 암호를 생성해야 합니다. 저장소 정보 대화 상자에서 **`Generate password`**&#x200B;을(를) 클릭합니다.
+1. 암호에 액세스하려면 새로운 암호를 생성해야 합니다. **저장소 정보** 대화 상자에서 **암호 생성**&#x200B;을 선택합니다.
 
-1. 확인 대화 상자에서 **`Generate password`**&#x200B;을(를) 클릭합니다.
+1. 확인 대화 상자에서 **암호 생성**&#x200B;을 선택합니다.
 
    ![암호 생성 확인](assets/confirm-generated-password.png)
 
