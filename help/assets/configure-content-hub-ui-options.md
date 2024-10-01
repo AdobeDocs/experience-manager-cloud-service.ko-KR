@@ -2,10 +2,10 @@
 title: Content Hub 사용자 인터페이스 구성
 description: Content Hub 사용자 인터페이스 구성
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 96c50aad9368adc83f8698dc35266146b1883672
+source-git-commit: 0c31f83d3e115a676c7daa37f634e25d08f4d06c
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 13%
+source-wordcount: '1374'
+ht-degree: 12%
 
 ---
 
@@ -60,6 +60,8 @@ Content Hub에서 구성 옵션에 액세스하려면 다음을 수행하십시�
 * [검색](#configure-metadata-search-content-hub)
 
 * [브랜딩](#configure-branding-content-hub)
+
+* [만료된 자산](#expired-assets-content-hub)
 
 * [사용자 정의 링크](#configure-custom-links-content-hub)
 
@@ -168,6 +170,33 @@ Content Hub을 사용하면 관리자가 에셋을 검색하는 동안 표시되
 구성 사용자 인터페이스에서 활성화된 브랜딩 업데이트가 Content Hub 포털 배너에 표시됩니다.
 
 ![Content Hub의 구성 UI 브랜딩](assets/configuration-ui-branding-updates.png)
+
+### 만료된 자산 {#expired-assets-content-hub}
+
+관리자는 만료된 에셋을 Content Hub에 표시해야 하는지 여부를 제어할 수 있습니다. 만료된 에셋이 표시되면 사용자가 해당 에셋을 다운로드할 수 있는지도 정의할 수 있습니다.
+
+만료된 에셋은 기본적으로 Content Hub에 표시되지 않습니다.
+
+이렇게 하려면 다음 단계를 실행합니다.
+
+1. [구성](#access-configuration-options-content-hub) 사용자 인터페이스에서 **[!UICONTROL 만료된 Assets]**&#x200B;을(를) 클릭합니다.
+
+1. **[!UICONTROL 표시]** 섹션에서 **[!UICONTROL 사용자가 만료된 에셋을 볼 수 있도록 허용]** 전환을 활성화하여 만료된 모든 에셋을 Content Hub에 표시합니다.
+
+1. 에셋의 가시성을 활성화한 후 **[!UICONTROL 사용자가 만료된 에셋을 다운로드할 수 있도록 허용]** 전환을 사용하여 만료된 에셋을 다운로드하는 기능을 활성화하거나 비활성화할 수 있습니다.
+
+1. 변경 내용을 적용하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
+
+   ![Content Hub에서 만료된 자산](assets/expired-assets-content-hub.png)
+
+에셋의 가시성을 활성화한 후 다음 이미지에 표시된 대로 Content Hub에서 만료된 에셋을 볼 수 있습니다.
+
+![Content Hub에서 만료된 자산](assets/view-download-expired-assets.png)
+
+관리자가 다운로드를 활성화한 경우 Content Hub 사용자는 이미지에 강조 표시된 대로 다운로드할 수도 있습니다.
+
+만료된 에셋에 대한 가시성이 활성화된 경우 Content Hub에서는 에셋 카드의 `Expiring in n days` 메시지를 사용하여 향후 15일 이내에 만료되는 에셋도 강조 표시합니다.
+
 
 ### 사용자 정의 링크 {#configure-custom-links-content-hub}
 
