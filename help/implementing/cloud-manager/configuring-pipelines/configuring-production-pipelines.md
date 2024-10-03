@@ -1,20 +1,20 @@
 ---
-title: 프로덕션 파이프라인 구성
-description: 코드를 빌드하고 프로덕션 환경에 배포하기 위해 프로덕션 파이프라인을 구성하는 방법을 알아봅니다.
+title: 프로덕션 파이프라인 추가
+description: 프로덕션 파이프라인을 추가하여 코드를 빌드하고 프로덕션 환경에 배포하는 방법을 알아봅니다.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 69%
+source-wordcount: '1376'
+ht-degree: 67%
 
 ---
 
 
-# 프로덕션 파이프라인 구성 {#configure-production-pipeline}
+# 프로덕션 파이프라인 추가 {#configure-production-pipeline}
 
 코드를 빌드하고 프로덕션 환경에 배포하기 위해 프로덕션 파이프라인을 구성하는 방법을 알아봅니다. 프로덕션 파이프라인은 먼저 코드를 스테이징 환경에 배포하고 승인 시 동일한 코드를 프로덕션 환경에 배포합니다.
 

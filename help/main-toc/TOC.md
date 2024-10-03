@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2ea7700107d3f0b73828ba07d5cefdec126e37b8
+source-git-commit: 0b69e7ff3b35685ff9ac899eb19c3b58d7f37b41
 workflow-type: tm+mt
-source-wordcount: '5662'
+source-wordcount: '5675'
 ht-degree: 99%
 
 ---
@@ -104,9 +104,11 @@ ht-degree: 99%
          + [2023.4.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2023/2023-4-0.md)
          + [2023.2.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2023/2023-2-0.md)
          + [2023.1.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2023/2023-1-0.md)
+
    + Cloud Manager 릴리스 정보 {#cloud-manager}
       + [최신 릴리스 정보](/help/implementing/cloud-manager/release-notes/current.md)
       + 2024 {#2024}
+         + [2024.9.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2024/2024-9-0.md)
          + [2024.8.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2024/2024-8-0.md)
          + [2024.7.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2024/2024-7-0.md)
          + [2024.6.0 릴리스 정보](/help/implementing/cloud-manager/release-notes/2024/2024-6-0.md)
@@ -929,7 +931,7 @@ ht-degree: 99%
       + [경로 매핑](/help/edge/wysiwyg-authoring/path-mapping.md)
       + [표 형식 데이터 및 스프레드시트](/help/edge/wysiwyg-authoring/tabular-data.md)
       + [분류 체계 데이터 관리](/help/edge/wysiwyg-authoring/taxonomy.md)
-      + [WYSIWYG 및 Doc 기반 블록](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
+      + [WYSIWYG 및 문서 기반 블록](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
       + [WIP Sites 기능](/help/edge/wysiwyg-authoring/wip-features.md)
    + 문서 기반 작성 {#document-authoring}
       + [작성](/help/edge/docs/authoring.md)
@@ -1088,7 +1090,8 @@ ht-degree: 99%
          + [Maven 프로젝트 버전 처리](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Cloud Manager에서 저장소 관리](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Adobe 저장소 추가](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
-         + [비공개 저장소 추가](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+         + [개인 저장소 추가](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+         + [외부 저장소 추가(얼리 어답터)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [저장소에 액세스](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [git 하위 모듈 지원](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Cloud Manager와 함께 Git 사용](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)

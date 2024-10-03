@@ -5,9 +5,9 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 484f7b0fd8917902d028434451964dd9df3e3445
+source-git-commit: 075094f018ccf213cd8d1d69defdc390f0a90713
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '891'
 ht-degree: 23%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 23%
 
 # SSL 인증서 소개{#introduction}
 
-Cloud Manager에서 SSL 인증서를 설치하고 관리하는 데 제공하는 셀프서비스 도구에 대해 알아봅니다.
+Cloud Manager에서 SSL(Secure Socket Layer) 인증서를 설치하고 관리하는 데 제공하는 셀프서비스 도구에 대해 알아봅니다.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
@@ -32,7 +32,7 @@ Cloud Manager에서 SSL 인증서를 설치하고 관리하는 데 제공하는 
 
 >[!IMPORTANT]
 >
->Cloud Manager는 SSL 인증서 또는 개인 키를 제공하지 않습니다. 신뢰할 수 있는 타사 조직인 인증 기관에서 받아야 합니다. 일부 잘 알려진 인증 기관에는 *DigiCert*, *암호화하겠습니다*, *GlobalSign*, *Entrust* 및 *Verisign*&#x200B;이(가) 있습니다.
+>Cloud Manager는 SSL 인증서 또는 개인 키를 제공하지 않습니다. 이러한 부품은 신뢰할 수 있는 타사 조직인 인증 기관에서 받아야 합니다. 일부 잘 알려진 인증 기관에는 *DigiCert*, *암호화하겠습니다*, *GlobalSign*, *Entrust* 및 *Verisign*&#x200B;이(가) 있습니다.
 
 ## Cloud Manager을 사용하여 인증서 관리 {#cloud-manager}
 
@@ -40,10 +40,10 @@ Cloud Manager은 SSL 인증서를 설치하고 관리하는 셀프서비스 도�
 
 | | 모델 | 설명 |
 | --- | --- | --- |
-| 1 | **[Adobe 관리 인증서(DV)](#adobe-managed)** | Cloud Manager을 사용하면 빠른 도메인 설정을 위해 Adobe에서 제공하는 DV(도메인 유효성 검사) 인증서를 구성할 수 있습니다. |
-| 2 | **[고객 관리 인증서(OV/EV)](#customer-managed)** | Cloud Manager은 사용자가 소유한 OV 및 EV SSL 인증서와 *암호화하겠습니다*. |
+| A | **[Adobe 관리 인증서(DV)](#adobe-managed)** | Cloud Manager을 사용하면 빠른 도메인 설정을 위해 Adobe에서 제공하는 DV(도메인 유효성 검사) 인증서를 구성할 수 있습니다. |
+| B | **[고객 관리 인증서(OV/EV)](#customer-managed)** | Cloud Manager은 사용자가 소유한 OV 및 EV SSL 인증서와 *암호화하겠습니다*. |
 
-두 모델 모두 다음과 같은 일반 기능을 제공합니다.
+두 모델 모두 인증서 관리를 위한 다음과 같은 일반 기능을 제공합니다.
 
 * 각 Cloud Manager 환경은 여러 인증서를 사용할 수 있습니다.
 * 하나의 개인 키로 여러 SSL 인증서를 발급할 수 있습니다.
@@ -51,7 +51,7 @@ Cloud Manager은 SSL 인증서를 설치하고 관리하는 셀프서비스 도�
 
 >[!IMPORTANT]
 >
->[사용자 지정 도메인을 추가하고 환경에 연결하려면](/help/implementing/cloud-manager/custom-domain-names/introduction.md) 해당 도메인을 다루는 올바른 SSL 인증서가 있어야 합니다.
+>[사용자 지정 도메인을 환경에 추가 및 연결하려면](/help/implementing/cloud-manager/custom-domain-names/introduction.md) 해당 도메인을 다루는 올바른 SSL 인증서가 있어야 합니다.
 
 ### Adobe 관리 인증서 {#adobe-managed}
 
@@ -72,13 +72,13 @@ OV 및 EV는 Cloud Manager의 DV 인증서에 대해 이러한 기능을 추가�
 
 >[!TIP]
 >
->사용자 정의 도메인이 여러 개이고 도메인을 추가할 때마다 인증서를 업로드하지 않으려는 경우 여러 도메인이 있는 하나의 인증서를 얻을 수 있습니다.
+>사용자 정의 도메인이 여러 개인 경우 새 도메인을 추가할 때마다 인증서를 업로드하지 않을 수 있습니다. 이 경우 여러 도메인을 포함하는 단일 인증서를 얻을 수 있습니다.
 
 >[!NOTE]
 >
->동일한 도메인에 대해 두 개의 인증서가 설치된 경우 더 정확한 인증서가 적용됩니다.
+>동일한 도메인에 두 개의 인증서가 설치된 경우 더 정확한 인증서가 적용됩니다.
 >
->예를 들어 도메인이 `dev.adobe.com`이고 `*.adobe.com`을(를) 포함하는 인증서와 `dev.adobe.com`을(를) 포함하는 인증서가 있는 경우 보다 정확하므로 후자가 적용됩니다.
+>예를 들어 도메인이 `dev.adobe.com`이고 `*.adobe.com`에 대한 인증서 하나와 `dev.adobe.com`에 대한 인증서 하나가 있는 경우 보다 구체적인 인증서(`dev.adobe.com`)가 사용됩니다.
 
 #### 고객 관리 인증서 요구 사항 {#requirements}
 

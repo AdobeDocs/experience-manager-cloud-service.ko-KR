@@ -4,10 +4,10 @@ description: 보안 연결을 유지할 수 있도록 일반적인 원인을 식
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9ffec422ec4b5a45962f07142c49a466e8892754
+source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 63%
+source-wordcount: '377'
+ht-degree: 56%
 
 ---
 
@@ -15,6 +15,18 @@ ht-degree: 63%
 # SSL 인증서 오류 문제 해결 {#certificate-errors}
 
 인증서가 제대로 설치되지 않았거나 Cloud Manager의 요구 사항을 충족하지 않으면 특정 오류가 발생할 수 있습니다.
+
++++**잘못된 인증서**
+
+이 오류는 고객이 암호화된 개인 키를 추가하고 DER 형식의 개인 키를 사용했기 때문에 발생합니다.
+
++++
+
++++**개인 키가 PKCS 8 형식이어야 합니다**
+
+이 오류는 고객이 암호화된 개인 키를 추가하고 DER 형식의 개인 키를 사용했기 때문에 발생합니다.
+
++++
 
 +++**올바른 인증서 순서**
 

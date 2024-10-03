@@ -4,14 +4,14 @@ description: 개인 GitHub 저장소에서 작동하도록 Cloud Manager를 설�
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: eb2e1555f684a68807b0b3764cd1be03c2d439ab
+source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 36%
+source-wordcount: '928'
+ht-degree: 33%
 
 ---
 
-# Cloud Manager에서 비공개 저장소 추가 {#private-repositories}
+# Cloud Manager에서 개인 GitHub 저장소 추가 {#private-repositories}
 
 Cloud Manager을 설정하여 개인 GitHub 리포지토리와 통합하면 Cloud Manager을 사용하여 GitHub 내에서 직접 코드를 확인할 수 있습니다. 이 구성에서는 코드를 Adobe 저장소와 정기적으로 동기화해야 하는 요구 사항이 제거됩니다.
 
@@ -33,12 +33,12 @@ In essence, a "Build your own GitHub" in Adobe Cloud Manager empowers teams to m
 
 ## 구성 {#configuration}
 
-Cloud Manager에서 개인 저장소를 구성하는 단계는 다음 두 단계로 구성됩니다.
+Cloud Manager에서 개인 GitHub 저장소 구성은 다음 두 단계로 구성됩니다.
 
-1. 선택한 프로그램에 [개인 저장소를 추가](#add-repo)합니다.
-1. 그런 다음 [개인 리포지토리의 소유권을 확인](#validate-ownership)합니다.
+1. 선택한 프로그램에 [개인 GitHub 저장소를 추가](#add-repo)합니다.
+1. 그런 다음 [개인 GitHub 리포지토리의 소유권을 확인](#validate-ownership)합니다.
 
-### 프로그램에 개인 저장소 추가 {#add-repo}
+### 프로그램에 개인 GitHub 저장소 추가 {#add-repo}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
@@ -69,11 +69,13 @@ Cloud Manager에서 개인 저장소를 구성하는 단계는 다음 두 단계
 >
 >Cloud Manager의 저장소 관리에 대한 자세한 내용은 [Cloud Manager 저장소](/help/implementing/cloud-manager/managing-code/managing-repositories.md)를 참조하십시오.
 
-### 개인 저장소의 소유권 확인 {#validate-ownership}
+
+
+### 개인 GitHub 저장소의 소유권 확인 {#validate-ownership}
 
 이제 Cloud Manager는 GitHub 저장소에 대해 알게 되었지만, 여전히 이에 대한 액세스가 필요합니다. 액세스 권한을 부여하려면 Adobe GitHub 앱을 설치하고 지정된 저장소를 소유하고 있는지 확인해야 합니다.
 
-**개인 저장소의 소유권을 확인하려면:**
+**개인 GitHub 저장소의 소유권을 확인하려면:**
 
 1. 고유한 저장소를 추가한 후 **개인 저장소 소유권 확인** 대화 상자의 나머지 단계를 따릅니다.
 
@@ -104,11 +106,13 @@ Cloud Manager에서 개인 저장소를 구성하는 단계는 다음 두 단계
 
 나중에 저장소로 돌아가서 유효성 검사를 완료해야 하는 경우 **저장소** 페이지에서 방금 추가한 GitHub 저장소를 나타내는 행의 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다. 드롭다운 목록에서 **소유권 확인**&#x200B;을 선택합니다.
 
-## Cloud Manager로 비공개 저장소 사용 {#using}
+
+
+## Cloud Manager에서 개인 GitHub 저장소 사용 {#using}
 
 Cloud Manager에서 GitHub 리포지토리의 유효성을 검사하면 통합이 완료됩니다. Cloud Manager에서 저장소를 사용할 수 있습니다.
 
-**Cloud Manager에서 개인 리포지토리를 사용하려면:**
+**Cloud Manager에서 개인 저장소를 사용하려면:**
 
 1. 가져오기 요청을 만들면 GitHub 검사가 자동으로 시작됩니다.
 
@@ -130,22 +134,22 @@ Cloud Manager에서 GitHub 리포지토리의 유효성을 검사하면 통합�
 >
 >비공개 저장소에 대한 각각의 가져오기 요청 유효성 검사를 위해 자동으로 생성되는 파이프라인 제어할 수 있습니다. 자세한 내용은 [비공개 저장소에 대한 GitHub 검사 구성](github-check-config.md)을 참조하십시오.
 
+
+
 ## 비공개 저장소를 파이프라인과 연결 {#pipelines}
 
 유효성이 확인된 개인 저장소는 [전체 스택 및 프론트엔드 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)과 연결할 수 있습니다.
 
->[!NOTE]
->
->웹 계층 및 구성 파이프라인은 비공개 저장소에서 지원되지 않습니다.
+
 
 ## 제한 사항 {#limitations}
 
 Cloud Manager으로 비공개 저장소를 사용하는 경우 특정 제한 사항이 있습니다.
 
-* Cloud Manager에서 GitHub 검사를 사용하여 가져오기 요청 유효성 검사를 일시 중지할 수 없습니다.
-Cloud Manager에서 GitHub 리포지토리의 유효성을 검사하는 경우 Cloud Manager은 항상 해당 리포지토리에 대해 만들어진 가져오기 요청의 유효성을 검사합니다.
-* GitHub 조직에서 GitHub Adobe 앱을 제거하면 모든 저장소에 대한 가져오기 요청 유효성 검사 기능이 제거됩니다.
 * 웹 계층 및 구성 파이프라인은 비공개 저장소에서 지원되지 않습니다.
 * 프로덕션 전체 스택 파이프라인에서 비공개 저장소를 사용할 때 Git 태그가 생성 및 푸시되지 않습니다.
+* GitHub 조직에서 GitHub Adobe 앱을 제거하면 모든 저장소에 대한 가져오기 요청 유효성 검사 기능이 제거됩니다.
 * 비공개 저장소와 커밋 시 빌드 트리거를 사용하는 파이프라인은 새 커밋이 선택한 분기에 푸시될 때 자동으로 시작되지 않습니다.
 * [아티팩트 재사용 기능](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse)은 비공개 저장소에는 적용되지 않습니다.
+* Cloud Manager에서 GitHub 검사를 사용하여 가져오기 요청 유효성 검사를 일시 중지할 수 없습니다.
+Cloud Manager에서 GitHub 리포지토리의 유효성을 검사하는 경우 Cloud Manager은 항상 해당 리포지토리에 대해 만들어진 가져오기 요청의 유효성을 검사합니다.

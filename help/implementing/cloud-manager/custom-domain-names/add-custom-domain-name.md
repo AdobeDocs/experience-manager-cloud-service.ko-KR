@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
+source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
 workflow-type: tm+mt
-source-wordcount: '1509'
-ht-degree: 18%
+source-wordcount: '1000'
+ht-degree: 17%
 
 ---
 
@@ -23,7 +23,7 @@ Cloud Manager에서 사용자 정의 도메인 이름을 추가하기 전에 이
 
 * [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) 문서에 설명된 대로 사용자 정의 도메인 이름을 추가하기 전에 추가할 도메인에 대한 도메인 SSL 인증서를 추가해야 합니다.
 * Cloud Manager에서 사용자 정의 도메인 이름을 추가하려면 **비즈니스 소유자** 또는 **배포 관리자** 역할이 있어야 합니다.
-* Fastly 또는 기타 CDN(Content Delivery Network)을 사용하고 있습니다.
+* Fastly 또는 기타 CDN(Content Delivery Network)을 사용합니다.
 
 >[!IMPORTANT]
 >
@@ -68,8 +68,8 @@ Cloud Manager의 다음 두 위치에서 사용자 정의 도메인 이름을 �
 
    | 인증서 유형을 선택한 경우 | 설명 |
    | --- | ---  |
-   | Adobe 관리 인증서 | 다음 단계를 계속하기 전에 [Adobe 관리 인증서 단계](#adobe-managed-cert-steps)를 완료하십시오. |
-   | 고객 관리 인증서 | 다음 단계를 계속하기 전에 [고객 관리 인증서 단계](#customer-managed-cert-steps)를 완료하십시오. |
+   | Adobe 관리 인증서 | 9단계를 계속하기 전에 [Adobe 관리 인증서 단계](#adobe-managed-cert-steps)를 완료하십시오. |
+   | 고객 관리 인증서 | 9단계를 계속하기 전에 [고객 관리 인증서 단계](#customer-managed-cert-steps)를 완료하십시오. |
 
 1. **확인**&#x200B;을 클릭합니다.
 
@@ -130,100 +130,95 @@ Apex 도메인은 `example.com`과 같은 하위 도메인을 포함하지 않�
 
 * `A record for domain @ pointing to IP 151.101.195.10`
 
+>[!TIP]
+>
+>*CNAME* 또는 *A 레코드*&#x200B;을(를) 관리 DNS 서버에서 설정하여 시간을 절약할 수 있습니다.
+
 
 ### 고객 관리 인증서 단계 {#customer-managed-cert-steps}
 
-인증서 유형 *고객 관리 인증서*&#x200B;를 선택한 경우 **도메인 확인** 대화 상자에서 다음 단계를 완료하십시오.
+인증서 유형 *고객 관리 인증서*&#x200B;를 선택한 경우 다음 단계를 완료하십시오.
 
-![고객 관리 인증서 단계](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)
+1. **도메인 확인** 대화 상자에서 선택한 도메인을 다루는 새 EV/OV 인증서를 업로드합니다.
 
-사용 중인 도메인을 확인하려면 TXT 레코드를 추가하고 확인해야 합니다.
+   ![고객 관리 EV/OV 인증서의 도메인 확인](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
 
-텍스트 레코드(TXT 레코드라고도 함)는 DNS(Domain Name System)에 있는 리소스 레코드 유형입니다. 임의의 텍스트를 호스트 이름과 연결할 수 있습니다. 이 텍스트에는 서버 또는 네트워크 정보와 같이 사람이 읽을 수 있는 세부 정보가 포함될 수 있습니다.
+1. **확인**&#x200B;을 클릭합니다.
 
-Cloud Manager은 특정 TXT 레코드를 사용하여 CDN 서비스에서 호스팅할 도메인을 승인합니다. Cloud Manager에서 사용자 지정 도메인과 함께 CDN 서비스를 배포하고 이를 백엔드 서비스와 연결하도록 권한을 부여하는 영역에 DNS TXT 레코드를 만듭니다. 이 연결은 전적으로 사용자의 통제 하에 있으며 Cloud Manager가 서비스에서 도메인으로 콘텐츠를 제공하도록 인증합니다. 이 인증은 허가될 수도 있고 철회될 수도 있습니다. TXT 레코드는 도메인 및 Cloud Manager 환경에 따라 다릅니다.
+   유효한 EV/OV 인증서를 업로드한 후 **도메인 설정** 표에 도메인의 상태가 **확인됨**&#x200B;으로 표시됩니다.
 
-#### 요구 사항 {#customer-managed-cert-requirements}
+   ![확인된 상태를 표시하는 도메인 설정 테이블](/help/implementing/cloud-manager/assets/domain-settings-verified.png)
 
-TXT 레코드를 추가하기 전에 이러한 요구 사항을 충족하십시오.
+<!--
+![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)
 
-* 도메인 호스트 또는 등록자를 아직 모르는 경우 이를 확인합니다.
-* 조직의 도메인에 대한 DNS 레코드를 편집하거나, 편집할 수 있는 적절한 담당자에게 문의할 수 있습니다.
-* 먼저 이 문서의 앞부분에서 설명한 대로 사용자 정의 도메인 이름을 추가합니다.
+To verify the domain in use, you are required to add and verify a TXT record.
 
-#### 확인을 위해 TXT 레코드 추가 {#customer-managed-cert-verification}
+A text record (also known as a TXT record) is a type of resource record in the Domain Name System (DNS). It lets you associate arbitrary text with a hostname. This text could include human-readable details like server or network information.
 
-1. **도메인 확인** 대화 상자에서 Cloud Manager은 확인에 사용할 이름과 TXT 값을 표시합니다. 이 값을 복사합니다.
+Cloud Manager uses a specific TXT record to authorize a domain to be hosted in a CDN service. Create a DNS TXT record in the zone that authorizes Cloud Manager to deploy the CDN service with the custom domain and associate it with the backend service. This association is entirely under your control and authorizes Cloud Manager to serve content from the service to a domain. This authorization may be granted and withdrawn. The TXT record is specific to the domain and the Cloud Manager environment.
 
-1. DNS 서비스 공급자에 로그인하고 DNS 레코드 섹션을 찾습니다.
+#### Requirements {#customer-managed-cert-requirements}
 
-1. `aemverification.[yourdomainname]`을(를) 값의 **Name**(으)로 추가하고 **도메인 이름** 필드에 나타나는 대로 TXT 값을 정확하게 추가합니다.
+Fulfill these requirements before adding a TXT record.
 
-   **TXT 레코드 예**
+* Identify your domain host or registrar if you do not know it already.
+* Be able to edit the DNS records for your organization's domain, or contact the appropriate person who can.
+* First, add a custom domain name as described earlier in this article.
 
-   | 도메인 | 이름 | TXT 값 |
+#### Add a TXT record for verification {#customer-managed-cert-verification}
+
+1. In the **Verify domain** dialog box, Cloud Manager displays the name and TXT value to use for verification. Copy this value.
+
+1. Log in to your DNS service provider and find the DNS records section. 
+
+1. Add `aemverification.[yourdomainname]` as the **Name** of the value and add the TXT value exactly as it appears in the **Domain Name** field.
+
+   **TXT record examples**
+
+   | Domain | Name | TXT Value |
    | --- | --- | --- |
-   | `example.com` | `_aemverification.example.com` | Cloud Manager UI에 표시된 전체 값을 복사합니다. 이 값은 도메인 및 환경에 따라 다릅니다. 예:<br>`adobe-aem-verification=example.com/[program]/[env]/..*` |
-   | `www.example.com` | `_aemverification.www.example.com` | Cloud Manager UI에 표시된 전체 값을 복사합니다. 이 값은 도메인 및 환경에 따라 다릅니다. 예:<br>`adobe-aem-verification=www.example.com/[program]/[env]/..*` |
+   | `example.com` | `_aemverification.example.com` | Copy the entire value displayed in the Cloud Manager UI. This value is specific to the domain and the environment. For example:<br>`adobe-aem-verification=example.com/[program]/[env]/..*` |
+   | `www.example.com` | `_aemverification.www.example.com` | Copy the entire value displayed in the Cloud Manager UI. This value is specific to the domain and the environment. For example:<br>`adobe-aem-verification=www.example.com/[program]/[env]/..*` |
 
-1. TXT 레코드를 도메인 호스트에 저장합니다.
+1. Save the TXT record to your domain host.
 
-#### TXT 레코드 확인 {#customer-managed-cert-verify}
+#### Verify TXT record {#customer-managed-cert-verify}
 
-작업이 완료되면 다음 명령을 실행하여 결과를 확인할 수 있습니다.
+When you are done, you can verify the result by running the following command.
 
 ```shell
 dig _aemverification.[yourdomainname] -t txt
 ```
 
-예상 결과는 Cloud Manager UI의 **도메인 이름 추가** 대화 상자의 **확인** 탭에 제공된 TXT 값을 표시해야 합니다.
+The expected result should display the TXT value provided on the **Verification** tab of the **Add Domain Name** dialog of the Cloud Manager UI.
 
-예를 들어 도메인이 `example.com`이면 다음을 실행합니다.
+For example, if your domain is `example.com`, then run:
 
 ```shell
 dig TXT _aemverification.example.com -t txt
 ```
 
+
 >[!TIP]
 >
->[DNS 조회 도구](https://www.ultratools.com/tools/dnsLookup)를 사용할 수 있습니다. Google DoH를 사용하여 TXT 레코드 항목을 조회하고 TXT 레코드가 누락되었거나 오류가 있는지 식별할 수 있습니다.
+>There are several [DNS lookup tools](https://www.ultratools.com/tools/dnsLookup) available. Google DoH can be used to look up TXT record entries and identify if the TXT record is missing or erroneous.
+
+-->
 
 >[!NOTE]
 >
 >DNS 전파 지연으로 인해 DNS 확인을 처리하는 데 몇 시간이 걸릴 수 있습니다.
 >
->Cloud Manager은 소유권을 확인하고 도메인 설정 표에 표시되는 상태를 업데이트합니다. 자세한 내용은 [사용자 정의 도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)을 참조하십시오.
+>Cloud Manager은 소유권을 확인하고 **도메인 설정** 표에 표시되는 상태를 업데이트합니다. 자세한 내용은 [사용자 정의 도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)을 참조하십시오.
 
 <!--
 ## Next Steps {#next-steps}
 
 Now that you created your TXT entry, you can verify your domain name status. Proceed to the document [Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) to continue setting up your custom domain name. -->
 
->[!TIP]
->
->TXT 항목과 CNAME 또는 A 레코드를 관리 DNS 서버에서 동시에 설정할 수 있으므로 시간이 절약됩니다.
+
+><!-- The TXT entry and the CNAME or A Record can be set simultaneously on the governing DNS server, thus saving time. -->
 >
 ><!-- To do this, review the entire process of setting up a custom domain name as detailed in the document [Introduction to custom domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md) taking special note of the document [help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) and update your DNS settings appropriately. -->
 
-
-## 환경 페이지에서 사용자 정의 도메인 이름 추가 {#adding-cdn-environments}
-
-<!-- I DON'T SEE THIS ABILITY ANYMORE IN THE UI -->
-
-**환경** 페이지에서 사용자 지정 도메인 이름을 추가하는 단계는 [도메인 설정 페이지에서 사용자 지정 도메인 이름을 추가](#adding-cdn-settings)하는 단계와 동일하지만 시작 지점이 다릅니다. **환경** 페이지에서 사용자 정의 도메인 이름을 추가하려면 다음 단계를 따르십시오.
-
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
-
-1. 관심 환경의 **환경 세부 정보** 세부 정보 페이지로 이동합니다.
-
-   ![환경 세부 정보 페이지에 도메인 이름 입력](/help/implementing/cloud-manager/assets/cdn/cdn-create4.png)
-
-1. **도메인 이름** 표를 사용하여 사용자 정의 도메인 이름을 제출합니다.
-
-   1. 사용자 정의 도메인 이름을 입력합니다.
-   1. 드롭다운 목록에서 이 이름과 연결된 SSL 인증서를 선택합니다.
-   1. ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **추가**&#x200B;를 클릭합니다.
-
-   ![사용자 지정 도메인 이름 추가](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
-
-1. **도메인 이름 추가** 대화 상자가 열리고 **도메인 이름** 탭이 표시됩니다. [도메인 설정 페이지에서 사용자 지정 도메인 이름을 추가](#adding-cdn-settings)하는 것처럼 계속합니다.
