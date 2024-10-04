@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2024.10.0 �
 description: AEM as a Cloud Service의 Cloud Manager 2024.10.0 릴리스 정보에 대해 알아봅니다.
 feature: Release Information
 role: Admin
-source-git-commit: b90ace2250277005d8ac250c841104c93298a605
+source-git-commit: aa8d4c8c69a96054492b886893414c3e82b2f4ad
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 15%
+source-wordcount: '569'
+ht-degree: 13%
 
 ---
 
@@ -29,6 +29,16 @@ AEM as a Cloud Service의 Cloud Manager 릴리스 2024.10.0의 릴리스 날짜�
 * <!-- BOTH CS & AMS --> Cloud Manager에 사용된 AEM Archetype 버전이 이제 버전 26으로 업데이트되었습니다. [https://github.com/adobe/aem-project-archetype/releases](https://github.com/adobe/aem-project-archetype/releases) 보기
 
 <!-- (CMGR-59817) -->
+
+* <!-- CS ONLY --> 새 사용자 정의 도메인을 추가할 때 이전 확인 방법에는 긴 DNS 유효성 검사 프로세스가 포함되었습니다. Adobe은 고객을 위해 이 프로세스를 간소화했습니다. 이제 소유권 증명 역할을 하는 유효한 SSL 인증서(EV 또는 OV)만 제공하면 됩니다. 더 이상 DNS에서 TXT 레코드를 업데이트할 필요가 없습니다.
+
+  >[!NOTE]
+  >
+  >이 기능은 고객이 관리하는 EV 및 OV 인증서에만 적용할 수 있습니다. Adobe에서 관리하는 DV 인증서에는 CNAME 레코드가 있어야 합니다.
+
+  [사용자 지정 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)를 참조하십시오.
+
+  ![고객 관리 EV/OV 인증서의 도메인 확인](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
 
 * <!-- CS ONLY --> 네트워크 인프라를 추가하거나 편집할 때 IP 주소 및 네트워크 마스크 필드의 값은 다음 규칙에 따라 검증됩니다.
 
