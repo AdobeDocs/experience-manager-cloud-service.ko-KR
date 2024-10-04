@@ -4,10 +4,10 @@ description: 새 자산 UI(자산 보기)를 사용하여 자산을 일괄적으
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 816bf0f93dd67f193f4e8a7c9bc4a7df29cb6cf5
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 97%
+source-wordcount: '1881'
+ht-degree: 90%
 
 ---
 
@@ -125,11 +125,23 @@ OneDrive 계정에서 AEM Assets로 자산을 가져오기 전에 OneDrive 개�
    >* Dropbox 애플리케이션 및 `https://www.dropbox.com/home/bulkimport-assets`에 있는 자산이 포함된 폴더를 만드는 동안 **전체 Dropbox**&#x200B;를 선택하는 경우 **[!UICONTROL 소스 폴더]** 필드에서 `bulkimport-assets`를 지정합니다.
    >* Dropbox 애플리케이션 및 `https://www.dropbox.com/home/Apps/BulkImportAppFolderScope/bulkimport-assets`에 있는 자산이 포함된 폴더를 만드는 동안 **앱 폴더**&#x200B;를 선택하는 경우 **[!UICONTROL 소스 폴더]** 필드에서 `bulkimport-assets`를 지정합니다. 여기에서 `BulkImportAppFolderScope`은 애플리케이션의 이름을 나타냅니다. 이 경우 `Apps`가 `home` 다음에 자동으로 추가됩니다.
 
+   >[!NOTE]
+   >
+   >OneDrive를 데이터 원본으로 사용하는 경우 다음 규칙에 따라 원본 폴더 경로를 지정하십시오.
+   >* 도메인 없이 루트 폴더 이름만 지정하십시오. 폴더의 전체 URL 경로가 `https://my.sharepoint.com/my?id=/personal/user/Documents/Importfolder/`인 경우 **[!UICONTROL Source 폴더]** 필드에 `/Importfolder/`을(를) 지정하십시오.
+   >* 폴더 이름에 공백으로 구분된 여러 단어가 포함된 경우 대량 가져오기 구성에서 공백을 사용하여 이름을 지정합니다.
+   >* 소스 폴더는 디렉터리의 루트에 있어야 합니다. 폴더 경로는 지원되지 않습니다.
+
 1. (선택사항) **[!UICONTROL 가져오기 후 소스 파일 삭제]** 옵션을 선택하여 파일을 Experience Manager Assets로 가져온 후에 소스 데이터 저장소에서 원본 파일을 삭제합니다.
 1. **[!UICONTROL 가져오기 모드]**&#x200B;를 선택합니다. **[!UICONTROL 건너뛰기]**, **[!UICONTROL 바꾸기]** 또는 **[!UICONTROL 버전 만들기]**를 선택합니다. 건너뛰기 모드는 기본값이고, 자산이 이미 존재하는 경우 이 모드에서 수집기는 자산 가져오기를 건너뜁니다.
    ![소스 세부 정보 가져오기](/help/assets/assets/bulk-import-source-details.png)
 
 1. (선택 사항) **[!UICONTROL 메타데이터 파일]** 필드에서 가져올 메타데이터 파일(CSV 형식으로 제공)을 지정합니다. 메타데이터 소스 파일은 소스 폴더에 있어야 합니다. **[!UICONTROL 다음]**&#x200B;을 클릭하여 **[!UICONTROL 위치 및 필터]**&#x200B;로 이동합니다.
+
+   >[!NOTE]
+   >
+   >조직의 보안 규칙에 따라 일괄 가져오기 도구에 연결하려면 이 응용 프로그램에 대한 관리자 동의가 필요할 수 있습니다. 필요한 경우 벌크 가져오기 구성을 저장하기 전에 관리자가 동의해야 합니다.
+
 1. **[!UICONTROL 자산 대상 폴더]** 필드를 사용하여 자산을 가져올 수 있는 DAM에 위치를 정의하려면 경로를 지정합니다. 예: `/content/dam/imported_assets`
 1. (선택 사항) **[!UICONTROL 필터 선택]** 섹션에 자산의 최소 파일 크기(MB)를 제공하여 **[!UICONTROL 최소 크기로 필터링]** 필드의 수집 프로세스에 자산을 포함시킵니다.
 1. (선택 사항) 자산의 최대 파일 크기(MB)를 제공하여 **[!UICONTROL 최대 크기로 필터링]** 필드의 수집 프로세스에 자산을 포함시킵니다.
