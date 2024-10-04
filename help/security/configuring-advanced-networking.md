@@ -4,10 +4,10 @@ description: AEM as a Cloud Service에 대해 VPN 또는 유연한/전용 이그
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 09a1d6065c42406f1004eb1bdd7dbf902edb279f
+source-git-commit: fd6fb14bf3acdd30efb984e1666ed91a2327d810
 workflow-type: tm+mt
-source-wordcount: '5685'
-ht-degree: 100%
+source-wordcount: '5675'
+ht-degree: 99%
 
 ---
 
@@ -216,7 +216,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 전용 IP 주소를 사용하면 CRM 공급업체와 같은 SaaS 공급업체 또는 IP 주소 허용 목록을 제공하는 AEM as a Cloud Service 외부의 다른 통합과 통합 시 보안을 강화할 수 있습니다. 전용 IP 주소를 허용 목록에 추가하면 AEM Cloud Service의 트래픽만 외부 서비스로 연결되도록 허용할 수 있습니다. 다른 허용된 IP의 트래픽도 포함됩니다.
 
-Adobe 조직의 모든 프로그램 및 각 프로그램의 모든 환경에 동일한 전용 IP가 적용됩니다. 작성자 및 게시 서비스 모두에 적용됩니다.
+동일한 전용 IP가 프로그램의 모든 환경에 적용되며 작성자 및 Publish 서비스 모두에 적용됩니다.
 
 전용 IP 주소 기능을 활성화하지 않으면 AEM as a Cloud Service의 트래픽이 다른 AEM as a Cloud Service 고객과 공유된 IP 집합을 통해 흐릅니다.
 
