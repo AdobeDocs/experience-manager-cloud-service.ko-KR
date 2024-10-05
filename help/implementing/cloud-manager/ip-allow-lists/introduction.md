@@ -5,10 +5,10 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0edc6d2b32d06727c693d4630ce500e32aa336b4
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 24%
+source-wordcount: '452'
+ht-degree: 25%
 
 ---
 
@@ -38,7 +38,7 @@ Cloud Manager의 IP 허용 목록을 사용하여 이러한 신뢰할 수 있는
 
 ## 제한 사항 {#limitations}
 
-IP 허용 목록을 사용하기 전에 다음 제한 사항 기능, 사용 및 다른 기능에 미치는 영향을 이해하십시오.
+IP 허용 목록을 사용하기 전에 다음 제한 사항의 기능, 사용 및 다른 기능에 미치는 영향을 파악하십시오.
 
 ### IP 허용 목록의 일반적인 제한 사항 {#general}
 
@@ -80,7 +80,7 @@ IP 허용 목록을 사용하기 전에 다음 제한 사항 기능, 사용 및 
 
 프론트엔드 파이프라인 실행이 중단되지 않도록 하려면 이 Cloud Manager IP 허용 목록이 추가되었는지 확인하십시오. 그런 다음 목록을 작성자 환경 *이전*&#x200B;에 적용하여 파이프라인을 사용하도록 설정합니다.
 
-자세한 내용은 [IP 허용 목록 적용](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 및 [프론트엔드 파이프라인 사용](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) 문서를 참조하십시오.
+자세한 내용은 [IP 허용 목록 적용](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 및 [프론트엔드 파이프라인 사용](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)을 참조하십시오.
 
 ### 범용 편집기 및 IP 허용 목록 {#universal-editor}
 

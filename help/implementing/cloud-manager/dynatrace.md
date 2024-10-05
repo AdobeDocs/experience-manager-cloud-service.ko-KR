@@ -5,9 +5,9 @@ exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ Dynatrace 고객은 고객 지원 티켓을 통해 연결을 요청하여 AEM �
 | **필드** | **설명** |
 |---|---|
 | [!DNL Dynatrace Environment URL] | Dynatrace 환경 URL.<br><br>Dynatrace SaaS 고객의 경우 형식은 `https://<your-environment-id>.live.dynatrace.com`입니다.<br><br>Dynatrace 관리 고객의 경우 형식은 `https://<your-managed-url>/e/<environmentId>`입니다. |
-| [!DNL Dynatrace Environment ID] | Dynatrace 환경 ID입니다. [Dynatrace 연결 세부 정보를 어떻게 얻습니까?](#how-do-i-get-my-dynatrace-connection-details)을(를) 참조하십시오. |
-| [!DNL Dynatrace Environment Token] | Dynatrace 환경 토큰. [Dynatrace 연결 세부 정보를 어떻게 얻습니까?](#how-do-i-get-my-dynatrace-connection-details)을(를) 참조하십시오.<br><br>비밀로 간주해야 하므로 적절한 보안 방법을 사용하십시오. 예를 들어 고객 지원 티켓에서 암호와 함께 참조할 수 있는 **zerobin.net**&#x200B;과(와) 같은 웹 사이트에서 암호로 보호합니다. |
-| [!DNL Dynatrace API access token] | Dynatrace 환경의 API 액세스 토큰.  만드는 방법은 [Dynatrace API 액세스 토큰 만들기](#create-dynatrace-access-token)를 참조하십시오.<br><br>비밀로 간주해야 하므로 적절한 보안 방법을 사용하십시오. 예를 들어 고객 지원 티켓에서 암호와 함께 참조할 수 있는 **zerobin.net**&#x200B;과(와) 같은 웹 사이트에서 암호로 보호합니다.<br><br>참고: Dynatrace 관리에만 필요합니다. |
+| [!DNL Dynatrace Environment ID] | Dynatrace 환경 ID입니다. [Dynatrace 연결 세부 정보를 얻는 방법](#how-do-i-get-my-dynatrace-connection-details)을(를) 참조하십시오. |
+| [!DNL Dynatrace Environment Token] | Dynatrace 환경 토큰. [Dynatrace 연결 세부 정보를 얻는 방법](#how-do-i-get-my-dynatrace-connection-details)을(를) 참조하십시오.<br><br>비밀로 간주해야 하므로 적절한 보안 방법을 사용하십시오. 예를 들어 고객 지원 티켓에서 암호와 함께 참조할 수 있는 **zerobin.net**&#x200B;과(와) 같은 웹 사이트에서 암호로 보호합니다. |
+| [!DNL Dynatrace API access token] | Dynatrace 환경의 API 액세스 토큰. 만드는 방법은 [Dynatrace API 액세스 토큰 만들기](#create-dynatrace-access-token)를 참조하십시오.<br><br>비밀로 간주해야 하므로 적절한 보안 방법을 사용하십시오. 예를 들어 고객 지원 티켓에서 암호와 함께 참조할 수 있는 **zerobin.net**&#x200B;과(와) 같은 웹 사이트에서 암호로 보호합니다.<br><br>참고: Dynatrace 관리에만 필요합니다. |
 | [!DNL Dynatrace ActiveGate Port] | AEM 통합이 연결해야 하는 Dynatrace ActiveGate 포트입니다.<br><br>참고: Dynatrace 관리에만 필요합니다. |
 | [!DNL Dynatrace ActiveGate Network Zone] | [Dynatrace ActiveGate 네트워크 영역](https://docs.dynatrace.com/docs/manage/network-zones)을 통해 데이터 센터 및 네트워크 지역 간에 AEM 모니터링 데이터를 효율적으로 라우팅합니다.<br><br>참고: Dynatrace ActiveGate 네트워크 영역은 선택 사항입니다. |
 | [!DNL AEM Environment ID(s)] | Dynatrace에서 모니터링할 AEM 환경 ID. |

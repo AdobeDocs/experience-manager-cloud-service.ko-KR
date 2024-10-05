@@ -5,9 +5,9 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '382'
 ht-degree: 4%
 
 ---
@@ -28,7 +28,7 @@ CDN 대시보드는 모든 프로그램의 개요 페이지에서 사용할 수 
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 보려는 CDN 대시보드의 프로그램을 탭하거나 클릭합니다.
+1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 보려는 CDN 대시보드의 프로그램을 클릭합니다.
 
    ![내 프로그램 페이지](assets/my-programs.png)
 

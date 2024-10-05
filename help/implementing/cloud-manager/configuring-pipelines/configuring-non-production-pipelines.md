@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '1405'
-ht-degree: 73%
+source-wordcount: '1402'
+ht-degree: 71%
 
 ---
 
@@ -129,7 +129,7 @@ ht-degree: 73%
 
 >[!NOTE]
 >
->웹 계층 및 구성 파이프라인은 비공개 저장소에서 지원되지 않습니다. 자세한 내용과 제한 사항 전체 목록은 [Cloud Manager에서 비공개 저장소 추가](/help/implementing/cloud-manager/managing-code/private-repositories.md) 문서를 참조하십시오.
+>웹 계층 및 구성 파이프라인은 비공개 저장소에서 지원되지 않습니다. 제한 사항에 대한 자세한 내용 및 전체 목록은 [Cloud Manager에 개인 저장소 추가](/help/implementing/cloud-manager/managing-code/private-repositories.md)를 참조하십시오.
 
 배포 유형을 선택하면 비프로덕션 대상 배포 파이프라인의 생성을 완료하는 단계가 동일합니다.
 

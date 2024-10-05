@@ -5,9 +5,9 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '786'
 ht-degree: 77%
 
 ---
@@ -87,7 +87,7 @@ Cloud Manager [릴리스 2023.10.0](/help/implementing/cloud-manager/release-not
 
 빌드 프로세스가 git 저장소에 배치하기에 부적절하거나 동일한 분기를 사용하는 파이프라인 실행 간에 달라져야 하는 특정 구성 변수에 따라 달라질 수 있습니다.
 
-자세한 내용은 [파이프라인 변수 구성](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) 문서를 참조하십시오
+자세한 내용은 [파이프라인 변수 구성](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)도 참조하십시오
 
 ## 추가 시스템 패키지 설치 {#installing-additional-system-packages}
 

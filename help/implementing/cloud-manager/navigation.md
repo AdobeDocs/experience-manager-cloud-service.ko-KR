@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: eb2e1555f684a68807b0b3764cd1be03c2d439ab
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '1677'
-ht-degree: 42%
+source-wordcount: '1660'
+ht-degree: 40%
 
 ---
 
@@ -45,7 +45,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 >[!TIP]
 >
->프로그램에 대한 자세한 내용은 [프로그램 및 프로그램 유형](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) 문서를 참조하십시오.
+>프로그램에 대한 자세한 내용은 [프로그램 및 프로그램 유형](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)을 참조하십시오.
 
 ### 도구 모음 {#my-programs-toolbars}
 
@@ -229,7 +229,7 @@ Cloud Manager Adobe 를 클릭하여 홈으로 돌아갑니다.
 
 [Cloud Manager 헤더](#cloud-manager-header-2)의 왼쪽 상단 모서리에서 ![메뉴 아이콘 표시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)를 클릭하여 탭의 사이드 메뉴를 표시하거나 숨깁니다.
 
-### 콜 투 섹션 {#cta}
+### 콜 투 액션 {#cta}
 
 콜 투 액션 섹션에서는 프로그램 상태에 따라 유용한 정보를 제공합니다. 새 프로그램의 경우 지정된 다음 단계와 Go-Live 날짜 미리 알림을 볼 수 있습니다. [프로그램을 만드는 동안 설정](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
@@ -245,7 +245,7 @@ Cloud Manager Adobe 를 클릭하여 홈으로 돌아갑니다.
 
 **환경** 카드에는 세 가지 환경만 나열됩니다. 프로그램의 모든 환경을 보려면 **모두 표시**&#x200B;를 클릭합니다.
 
-환경을 관리하는 방법에 대한 자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md) 문서를 참조하십시오.
+[환경 관리](/help/implementing/cloud-manager/manage-environments.md)도 참조하세요.
 
 ### 파이프라인 카드 {#pipelines}
 
@@ -253,7 +253,7 @@ Cloud Manager Adobe 를 클릭하여 홈으로 돌아갑니다.
 
 **파이프라인** 카드에는 세 가지 파이프라인만 나열됩니다. 프로그램의 모든 파이프라인을 보려면 **모두 표시**&#x200B;를 클릭합니다.
 
-파이프라인을 관리하는 방법에 대한 자세한 내용은 [파이프라인 관리](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) 문서를 참조하십시오.
+파이프라인 관리 방법에 대한 자세한 내용은 [파이프라인 관리](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)를 참조하십시오.
 
 ### 성능 카드 {#performance}
 

@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2371'
 ht-degree: 73%
 
 ---
@@ -50,13 +50,13 @@ ht-degree: 73%
 
    ![환경 카드](assets/no-environments.png)
 
-   * **환경 추가** 옵션은 **환경** 탭에서도 사용할 수 있습니다.
+   * **환경 추가** 옵션은 ![데이터 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **환경** 탭에서도 사용할 수 있습니다.
 
      ![환경 탭](assets/environments-tab.png)
 
    * 사용 권한이 없거나 사용 허가된 리소스에 따라 **환경 추가** 옵션이 비활성화될 수 있습니다.
 
-1. **환경 추가** 대화 상자가 나타나면 다음 작업을 수행하십시오.
+1. **환경 추가** 대화 상자에서:
 
    * [**환경 유형**](#environment-types)&#x200B;을(를) 선택하십시오.
       * 사용 가능한/사용된 환경의 수가 환경 유형 이름 뒤의 괄호 안에 표시됩니다.
@@ -310,7 +310,7 @@ Adobe Experience Manager에 로컬로 로그온하려면 **환경** 카드에 �
 
 >[!TIP]
 >
->자세한 내용은 [사용자 정의 도메인 이름 소개](/help/implementing/cloud-manager/custom-domain-names/introduction.md) 문서를 참조하십시오.
+>자세한 내용은 [사용자 지정 도메인 이름 소개](/help/implementing/cloud-manager/custom-domain-names/introduction.md)를 참조하십시오.
 
 ## IP 허용 목록 관리 {#manage-ip-allow-lists}
 
@@ -324,4 +324,4 @@ IP 허용 목록을 적용하면 허용 목록에 추가하다 정의에 포함�
 
 >[!TIP]
 >
->자세한 내용은 [IP 허용 목록 소개](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) 문서를 참조하십시오.
+>자세한 내용은 [IP 허용 목록 소개](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)를 참조하십시오.

@@ -5,7 +5,7 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 20%
@@ -69,7 +69,7 @@ Cloud Manager UI를 통해 파이프라인 변수를 구성하고 관리할 수 
 
    ![파이프라인 변수 보기/편집](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. **변수 구성** 창이 열립니다. 편집하려는 변수의 줄임표 버튼을 탭하거나 클릭하고 **편집**&#x200B;을 선택합니다.
+1. **변수 구성** 창이 열립니다. 편집할 변수의 줄임표 버튼을 탭하거나 클릭한 다음 **편집**&#x200B;을 선택합니다.
 
    ![변수 편집](/help/implementing/cloud-manager/assets/pipeline-variables-edit.png)
 

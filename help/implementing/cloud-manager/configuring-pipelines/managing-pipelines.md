@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 71%
+source-wordcount: '1109'
+ht-degree: 69%
 
 ---
 
@@ -112,7 +112,7 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 
 >[!NOTE]
 >
->웹 계층 및 구성 파이프라인은 비공개 저장소에서 지원되지 않습니다. 자세한 내용과 제한 사항 전체 목록은 [Cloud Manager에서 비공개 저장소 추가](/help/implementing/cloud-manager/managing-code/private-repositories.md) 문서를 참조하십시오.
+>웹 계층 및 구성 파이프라인은 비공개 저장소에서 지원되지 않습니다. 자세한 내용 및 제한 사항의 전체 목록은 [Cloud Manager에 개인 저장소 추가](/help/implementing/cloud-manager/managing-code/private-repositories.md)를 참조하십시오.
 
 ## 파이프라인 삭제 {#deleting-pipelines}
 
