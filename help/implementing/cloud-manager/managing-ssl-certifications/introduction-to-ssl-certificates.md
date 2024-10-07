@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 075094f018ccf213cd8d1d69defdc390f0a90713
+source-git-commit: 912e63b2ff11e24392fc7509945f352ab07c60cc
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 23%
+source-wordcount: '914'
+ht-degree: 22%
 
 ---
 
@@ -112,6 +112,10 @@ Cloud Manager와 함께 설치하려면 SSL 인증서 파일이 PEM 포맷이어
   ```shell
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
+
+>[!TIP]
+>
+>Adobe Cloud manager를 사용하여 설치하기 전에 `openssl verify -untrusted intermediate.pem certificate.pem`과(와) 같은 도구를 사용하여 인증서의 무결성을 로컬에서 확인하는 것이 좋습니다.
 
 ## 설치된 SSL 인증서 수 제한 {#limitations}
 

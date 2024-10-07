@@ -5,21 +5,28 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
+source-git-commit: b735c724bd8d68273b3c09a2dc53a13f5f6095ae
 workflow-type: tm+mt
-source-wordcount: '949'
-ht-degree: 6%
+source-wordcount: '1038'
+ht-degree: 9%
 
 ---
 
 
 # SSL 인증서 관리 {#managing-ssl-certificates}
 
-Cloud Manager을 사용하여 Adobe 관리 및 고객 관리 SSL 인증서의 상태를 확인하는 방법과 이를 삭제하는 방법을 알아봅니다. 고객 관리 인증서의 경우 인증서를 편집하고 업데이트(대체)할 수도 있습니다.
+Cloud Manager를 사용하여 SSL 인증서의 상태를 확인하는 방법과 SSL 인증서를 편집, 교체, 업데이트 및 삭제하는 방법을 알아봅니다.
 
 ## SSL 인증서 상태 확인 {#checking-status-an-ssl-certificate}
 
-**SSL 인증서** 페이지에서 SSL 인증서의 상태를 한눈에 파악할 수 있습니다.
+Cloud Manager은 프로그램의 모든 인증서 상태에 대한 개요를 제공합니다.
+
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 프로그램을 선택합니다.
+1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
+1. 페이지의 왼쪽 상단 모서리에서 ![메뉴 아이콘 표시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)를 클릭하여 사이드 메뉴를 표시합니다.
+1. **서비스** 제목에서 ![닫힌 아이콘 잠금](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL 인증서 잠금**&#x200B;을 클릭합니다.
+
+**SSL 인증서** 페이지에서 SSL 인증서의 상태를 확인할 수 있습니다.
 
 | SSL 인증서 상태 | 설명 |
 | --- | --- |
@@ -51,6 +58,12 @@ Cloud Manager을 사용하여 Adobe 관리 및 고객 관리 SSL 인증서의 �
    * **인증서 체인** 필드(또는 신뢰 체인)에 인증서 체인을 붙여 넣습니다.
 
 1. 변경 내용을 저장하고 자동으로 적용하려면 **업데이트**&#x200B;를 클릭하십시오.
+
+>[!NOTE]
+>
+>동일한 SAN 도메인 항목을 포함하는 SAN 인증서가 두 개 이상 있는 경우, 해당 도메인에 한 개의 인증서가 포함되고 다른 인증서가 업데이트되면 이제 도메인에 대해 후자가 설치됩니다.
+>
+>자세한 내용은 [SSL 인증서 문제 해결](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert)을 참조하십시오.
 
 ## 만료된 고객 관리 SSL 인증서 바꾸기 {#replace-ssl-certificate}
 
@@ -109,4 +122,3 @@ SSL 인증서에 대한 CDN 구성이 이미 있는 경우 **SSL 인증서** 페
 자세한 내용은 [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)를 참조하십시오.
 
 IP 허용 목록 또는 사용자 지정 허용 목록 이름에 대한 기존 CDN 구성이 있는 환경의 **IP 도메인** 및 **환경** 페이지에도 유사한 메시지가 제공됩니다.
-
