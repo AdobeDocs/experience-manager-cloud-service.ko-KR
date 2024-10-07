@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: fa2da21ef6424bce0830d503eba650e1c1bf3dc2
+source-git-commit: ee3e1bedddddff0aa41665359a91a0de48fd19c8
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 98%
+source-wordcount: '1411'
+ht-degree: 89%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 98%
 * SITES - 24166: Touch-UI 편집기에 대한 원격 자산 완화.
 * SITES - 24409: 모든 요청 프로세서를 단 하나의 HTTP 메서드에만 등록합니다.
 * SITES - 25008: PersistenceExceptions 및 권한 문제 처리를 개선합니다.
-* SITES - 24821: [Xwalk] aem.page / aem.live를 기본값으로 설정합니다.
+* SITES - 24821: aem.page / aem.live를 기본값으로 설정합니다.
 
 ### 해결된 문제 {#fixed-issues-17964}
 
@@ -107,7 +107,7 @@ ht-degree: 98%
 * SITES - 23899: 이벤트: 페이지 이벤트가 지연되거나 전혀 생성되지 않습니다.
 * SITES - 23961: 이벤트: 구성 폴더가 있는 경우 참조가 포함된 콘텐츠 조각 모델 생성이 실패합니다.
 * SITES - 23963: 이벤트: 페이지 삭제 이벤트가 때때로 오지 않음
-* SITES - 23443: GraphQL: GraphQL 커서 쿼리 동작 불일치.
+* SITES - 23443: GraphQL: GraphQL 커서 쿼리가 일치하지 않는 동작입니다.
 * SITES - 10994: 키보드 초점 순서가 논리적이지 않습니다.
 * SITES - 16357: AEM: 사이트 메뉴의 설정 분석 탭에서 버튼이 잘렸습니다.
 * SITES - 19836: Ghost 컨테이너의 구성 요소가 게시 및 미리보기 인스턴스에 표시됩니다.
@@ -123,7 +123,7 @@ ht-degree: 98%
 * SITES - 24025: 302 내부 DNS 대신 공개 DNS를 사용하여 위치 헤더를 반환하는 AEM의 리디렉션
 * SITES - 24036: ASCII 형식의 AEM RTE 지속 문자에 대한 조사 필요
 * SITES - 24317: 기본 인증으로 프록시 구성이 작동하지 않음
-* SITES - 24918: [Xwalk] 전용 IP 이그레스를 사용할 때 가끔 발생하는 504 오류를 해결합니다.
+* SITES - 24918: 전용 IP 이그레스를 사용할 때 가끔 반환되는 504 오류를 수정합니다.
 
 ### 알려진 문제 {#known-issues-17964}
 
@@ -131,9 +131,19 @@ ht-degree: 98%
 
 ### 사용 중단된 기능 및 API {#deprecated-17964}
 
-현재 `com.day.cq.wcm.api` 업데이트가 진행 중이며, 현재 릴리스에서는 몇 가지 메서드와 클래스를 `@Deprecated`로 표시했습니다. 이러한 기능은 향후 릴리스에서 제거될 예정이므로, 해당 기능을 사용 중이라면 제안된 대체 기능으로 전환하는 것을 고려해 보시기 바랍니다.
-
 AEM as a Cloud Service에서 더 이상 사용되지 않는 기능과 API는 [사용 중단된 기능 및 API](/help/release-notes/deprecated-removed-features.md) 문서에 자세히 설명되어 있습니다.
+
+다음은 최근에 사용되지 않는 기능이나 사용 중단 과정에 있는 기능에 대한 요약입니다.
+
+#### JavaScript API 사용 {#javascript-use-api}
+
+[JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api)는 사용자가 API를 활용하는 코드를 디버깅하고 유지 관리하는 문제와 Java 대체 요소에 비해 성능 제한으로 인해 공식적으로 더 이상 사용되지 않습니다.
+
+더 나은 성능, 더 쉬운 디버깅 및 더 나은 장기적 지원을 제공하는 [Java Use API,](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api)(으)로 전환해야 합니다.
+
+#### com.day.cq.wcm.api {#com-day-cq-wcm-api}
+
+Adobe이 `com.day.cq.wcm.api`을(를) 업데이트하는 중입니다. 일부 메서드 및 클래스가 현재 릴리스에서 `@Deprecated`(으)로 표시되었습니다. 이러한 기능은 향후 릴리스에서 제거됩니다. 그들이 제안하는 대안으로 전환해 보십시오.
 
 ### 보안 수정 {#security-17964}
 

@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  [!DNL Cloud Service]에서 더 �
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 0bcb769f0d8beb4b501646d82fa91bd9233a2173
+source-git-commit: 4e59095a47a919fd0b6acb868e27d71f9193c520
 workflow-type: tm+mt
-source-wordcount: '2496'
-ht-degree: 82%
+source-wordcount: '2504'
+ht-degree: 81%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 82%
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
 >title="AEM as a Cloud Service에서 사용 중단되거나 제거된 기능"
->abstract="AEM as a Cloud Service에는 클라우드 기반 배포 모델이 있습니다. 일부 기능은 클라우드 기반 기능으로 대체되었으며 이 탭에서 이들 기능이 표시됩니다."
+>abstract="AEM as a Cloud Service에는 클라우드 기반 배포 모델이 있습니다. 일부 기능은 클라우드 기반 기능으로 대체되었으며 이 탭에서는 이러한 기능을 보여 줍니다."
 
 Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 전반적인 고객 가치를 향상하도록 오랜 시간에 걸쳐 오래된 기능을 새롭게 만들거나 더 현대적인 대안으로 대체하기 위해 제품 기능을 지속해서 평가합니다. 또한 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]에서 클라우드 기반 배포 모델을 제공함에 따라, 일부 기능이 클라우드 기반 기능으로 대체되었습니다.
 
@@ -35,6 +35,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 
 | 기능 | 사용되지 않는 기능 | 대체 |
 | ------------ | ------------------ | ----------- |
+| [!DNL Sites] | [JavaScript API 사용](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java 사용 API](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | **소셜 미디어 상태**&#x200B;에 대한 경험 조각 속성. | 해당 기능은 곧 제거됩니다. |
 | [!DNL Sites] | 템플릿 기반 간단 콘텐츠 조각. | 현재는 [모델 기반 구조 콘텐츠 조각](/help/assets/content-fragments/content-fragments-models.md)입니다. |
 | [!DNL Assets] | `DAM Asset Update` 수집된 이미지를 처리하는 워크플로입니다. | 이제 자산 수집은 [자산 마이크로서비스](/help/assets/asset-microservices-overview.md)를 사용합니다. |
