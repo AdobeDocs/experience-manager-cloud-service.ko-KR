@@ -3,14 +3,17 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선
 description: 에셋 선택기를 다양한 Adobe, 비Adobe 및 타사 애플리케이션과 통합합니다.
 role: Admin, User
 exl-id: 1c0051a3-549c-4783-9fc1-594f424a70c3
-source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 46%
+source-wordcount: '196'
+ht-degree: 47%
 
 ---
 
 # Vanilla JS를 사용하여 자산 선택기 통합 {#integration-using-vanilla-js}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Adobe] 또는 Adobe이 아닌 응용 프로그램을 [!DNL Experience Manager Assets] 리포지토리와 통합하고 응용 프로그램 내에서 에셋을 선택할 수 있습니다. [다양한 응용 프로그램과 자산 선택기 통합](#asset-selector-integration-with-apps)을 참조하십시오.
 
@@ -30,7 +33,7 @@ ht-degree: 46%
 에셋 선택기를 다음과 같은 다양한 애플리케이션과 통합할 수 있습니다.
 
 * [자산 선택기를  [!DNL Adobe] 응용 프로그램과 통합](/help/assets/integrate-asset-selector-adobe-app.md)
-* [에셋 선택기를 Adobe이 아닌 애플리케이션과 통합](/help/assets/integrate-asset-selector-non-adobe-app.md)
+* [자산 선택기와 비 Adobe 애플리케이션 통합](/help/assets/integrate-asset-selector-non-adobe-app.md)
 * [OpenAPI 기능과 Dynamic Media 통합](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 

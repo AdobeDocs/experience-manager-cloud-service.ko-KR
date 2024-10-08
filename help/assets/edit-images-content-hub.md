@@ -1,14 +1,18 @@
 ---
 title: Adobe Express을 사용하여 Content Hub에서 이미지 편집
 description: Adobe Express을 사용하여 Content Hub에서 이미지 편집
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '408'
 ht-degree: 2%
 
 ---
 
 # Content Hub에서 이미지 편집 {#edit-images-content-hub}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![Adobe Express을 사용하여 Content Hub에서 이미지 편집](assets/edit-images-content-hub.png)
 
@@ -49,5 +53,3 @@ Content Hub을 사용하여 이미지를 편집하려면:
 1. 자산을 저장하려면 **[!UICONTROL 새 자산으로 저장]**&#x200B;을 클릭하세요.
 
 또한 관리자는 Content Hub에 자산을 추가하는 동안 표시되는 캠페인 이름, 키워드, 채널 등과 같은 필수 및 선택적 필드를 구성할 수 있습니다. 자세한 내용은 [Content Hub 사용자 인터페이스 구성](configure-content-hub-ui-options.md#configure-upload-options-content-hub)을 참조하십시오.
-
-

@@ -4,14 +4,17 @@ description: 이 문서에서는 Experience Manager에서 검색 패싯을 만�
 feature: Metadata
 role: Admin, User
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '2505'
+source-wordcount: '2523'
 ht-degree: 19%
 
 ---
 
 # 검색 패싯 {#search-facets}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |

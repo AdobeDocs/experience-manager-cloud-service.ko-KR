@@ -2,14 +2,17 @@
 title: Publish 계층에 대한 사용자 정의 도메인 구성
 description: Adobe Cloud Manager에서 게시 계층에 대한 사용자 정의 도메인을 구성하는 방법을 알아봅니다.
 exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
-source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 6%
+source-wordcount: '279'
+ht-degree: 7%
 
 ---
 
 # 게시 계층에 대한 사용자 정의 도메인 구성{#configure-custom-domain}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Cloud Manager Adobe에서 사용자 정의 도메인을 추가하여 웹 사이트를 돋보이게 할 수 있습니다. AEM as a Cloud Service에는 기본 도메인이 제공되지만 필요에 따라 사용자 정의할 수 있습니다.
 

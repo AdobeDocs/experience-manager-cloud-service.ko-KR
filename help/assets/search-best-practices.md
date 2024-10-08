@@ -5,14 +5,17 @@ contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
 feature: Best Practices
 role: User
-source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '2527'
+source-wordcount: '2542'
 ht-degree: 2%
 
 ---
 
 # AEM Assets 검색 우수 사례
+
+| [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| --------------------------- |---------|----|-----|
 
 [!DNL Adobe Experience Manager Assets]은(는) 콘텐츠 속도를 높이는 데 도움이 되는 강력한 에셋 검색 방법을 제공합니다. 경우에 따라 적절한 자산을 찾는 것은 어렵고 시간이 많이 걸릴 수 있습니다. 따라서 [!DNL Adobe Experience Manager Assets]의 자산 검색 기능은 크리에이티브의 추가 사용, 비즈니스 사용자 및 마케터의 강력한 자산 관리 또는 DAM 관리자의 관리를 위한 디지털 자산 관리 시스템 사용의 중심입니다.
 

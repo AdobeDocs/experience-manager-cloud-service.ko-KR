@@ -4,9 +4,9 @@ description: 디지털 자산을 효과적으로 관리하기 위한 메타데�
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1399'
 ht-degree: 1%
 
 ---
@@ -17,6 +17,9 @@ aem metadata
 experience manager metadata-->
 
 # 메타데이터 관리 및 모범 사례 {#metadata-best-practices}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- |---------|----|-----|
 
 비즈니스를 돋보이게 하고 더 많은 고객을 참여시키려면 이미지, 비디오 및 기타 디지털 에셋과 같은 고품질 비주얼을 활용하는 것이 중요합니다. 이를 위해서는 모든 디지털 에셋에 메타데이터를 추가하고 쉽게 검색할 수 있도록 하는 프로세스가 필요합니다. 메타데이터는 에셋의 이름, 유형, 저장소 내의 위치, 수정된 날짜 및 관련 태그를 포함하여 디지털 에셋에 대한 필수 세부 정보를 제공하는 데이터입니다. 메타데이터는 에셋 관리를 간소화하고 검색 및 접근성을 개선하며 효과적인 버전 제어를 보장합니다.
 
@@ -34,7 +37,7 @@ DAM(디지털 에셋 관리) 시스템에서 메타데이터를 사용하여 [�
 * 파일 크기
 * 형식
 * 해결 방법
-* 차원
+* 치수
 * 색상 모드
 
 ### 정보 메타데이터

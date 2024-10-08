@@ -4,14 +4,17 @@ description: AEM Assets 및 Dynamic Media이 정적 및 동적 이미지 렌디�
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 0%
+source-wordcount: '453'
+ht-degree: 1%
 
 ---
 
 # Experience Manager Assets에서 렌디션 보기 및 관리{#renditions}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Adobe Experience Manager(AEM)의 렌디션은 최적의 성능을 보장하기 위해 다양한 디바이스 및 플랫폼에 맞게 디자인된 이미지와 같은 디지털 에셋의 사용자 지정 버전입니다. AEM을 사용하면 이러한 렌디션을 쉽게 만들고 관리할 수 있으므로 사용자 경험이 향상됩니다. 썸네일을 만들고, 웹 또는 모바일용 이미지를 최적화하고, 워터마크를 추가하고, 동적 렌디션이나 스마트 자르기 렌디션을 보고 다운로드하고, 더 많은 작업을 수행할 수 있습니다.
 

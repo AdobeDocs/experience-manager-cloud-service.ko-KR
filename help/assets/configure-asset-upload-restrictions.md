@@ -4,14 +4,17 @@ description: 사용자가 MIME 유형에 따라 업로드할 수 있는 에셋 �
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
 feature: Upload, Asset Ingestion
 role: User, Admin, Developer
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '390'
 ht-degree: 13%
 
 ---
 
 # 자산 업로드 제한 사항 구성 {#configure-asset-upload-restrictions}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 사용자가 MIME 유형에 따라 업로드할 수 있는 에셋 유형을 제한하도록 Adobe Experience Manager Assets을 구성할 수 있습니다.
 

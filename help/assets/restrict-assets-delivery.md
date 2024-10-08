@@ -3,14 +3,17 @@ title: Experience Manager에서 에셋 전달 제한
 description: ' [!DNL Experience Manager]에서 에셋 전달을 제한하는 방법에 대해 알아봅니다.'
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 65f0018a25c57189229fc56332ad874ebd0deef4
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 0%
+source-wordcount: '1148'
+ht-degree: 1%
 
 ---
 
 # [!DNL Experience Manager]의 자산에 대한 액세스 제한 {#restrict-access-to-assets}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Experience Manager의 중앙 자산 거버넌스를 사용하면 DAM 관리자 또는 브랜드 관리자가 자산에 대한 액세스를 관리할 수 있습니다. 작성 측, 특히 AEM as a Cloud Service 작성자 인스턴스에서 승인된 에셋에 대한 역할을 구성하여 액세스를 제한할 수 있습니다.
 

@@ -3,14 +3,17 @@ title: ' [!DNL Content Hub] 배포'
 description: Content Hub을 배포하고 활성화하고 다양한 유형의 권한을 가진 사용자에게 액세스를 제공하는 방법(자산 업로드, Adobe Express 사용자)과 사용자에게 관리자 권한을 제공하는 방법에 대해 알아봅니다.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 3bb3920d043c83dac6f8e566761b626236bd2a04
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1587'
 ht-degree: 1%
 
 ---
 
 # Content Hub 배포 {#deploy-content-hub}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![Content Hub 배포](assets/deploy-content-hub.png)
 

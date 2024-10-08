@@ -4,14 +4,17 @@ description: 링크를 생성하고 [!DNL Assets view] 애플리케이션에 대
 exl-id: 7d7d488b-410b-4e90-bd10-4ffbb5fcec49
 feature: Adobe Asset Link, Link Sharing
 role: Admin
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 93%
+source-wordcount: '415'
+ht-degree: 90%
 
 ---
 
 # 자산으로의 링크 공유 {#share-links-assets}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Assets view]에서 링크를 생성하고 [!DNL Assets view] 애플리케이션에 대한 액세스 권한이 없는 외부 관련자와 자산을 공유할 수 있습니다. 해당 링크에 대한 만료일을 정의한 다음 이메일 또는 메시징 서비스와 같이 선호하는 커뮤니케이션 수단을 사용하여 다른 사용자와 공유할 수 있습니다. 링크 수신자는 자산을 미리 보고 다운로드할 수 있습니다.
 

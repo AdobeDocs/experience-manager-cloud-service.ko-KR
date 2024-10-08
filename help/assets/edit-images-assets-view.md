@@ -4,16 +4,19 @@ description: ' [!DNL Adobe Express] 기반 옵션을 사용하여 이미지를 �
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: af5ca9c436dce1929f310d40369abf05e60836f8
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1127'
-ht-degree: 59%
+source-wordcount: '1145'
+ht-degree: 77%
 
 ---
 
 # [!DNL Assets view]에서 이미지 편집 {#edit-images-in-assets-view}
 
-Assets 보기 UI를 통해 UI에 통합된 Adobe Express 기반의 기본 이미지 편집 기능을 사용할 수 있습니다. 이러한 편집에는 크기 조정, 배경 제거, 자르기 및 JPEG 및 PNG 형식 간 변환이 포함됩니다. 또한 Assets 보기 UI 내에 임베드된 Adobe Express 인터페이스를 통해 고급 편집을 수행할 수 있습니다.
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
+
+Assets 보기 UI를 통해 UI에 통합된 Adobe Express 기반의 기본 이미지 편집 기능을 사용할 수 있습니다. 이 편집 기능에는 크기 조정, 배경 제거, 자르기, JPEG와 PNG 포맷 간 변환이 포함됩니다. 또한 Assets 보기 UI 내에 임베드된 Adobe Express 인터페이스를 통해 고급 편집을 수행할 수 있습니다.
 
 이미지를 편집한 후 새 이미지를 새 버전으로 저장할 수 있습니다. 필요한 경우 버전 관리를 통해 나중에 원본 자산으로 되돌릴 수 있습니다. 이미지를 편집하려면 [미리보기를 열고](https://experienceleague.adobe.com/ko/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) **이미지 편집**&#x200B;을 클릭합니다.
 
@@ -35,13 +38,13 @@ Assets 보기 UI를 통해 UI에 통합된 Adobe Express 기반의 기본 이미
 
 ### Adobe Express을 사용하여 Assets 보기에서 이미지 편집 {#edit-image-on-assets-view-using-adobe-express}
 
-Assets 보기로 이동한 후 **Assets**&#x200B;을 클릭하고 이미지를 선택한 다음 상단 레일에서 **편집**&#x200B;을 클릭합니다. 새 화면에는 크기 조정, 배경 제거, 자르기 및 JPEG 및 PNG 형식 간 변환 등 Adobe Express에서 제공하는 사용 가능한 편집 옵션이 표시됩니다.
+Assets 보기로 이동한 후 **Assets**&#x200B;을 클릭하고 이미지를 선택한 다음 상단 레일에서 **편집**&#x200B;을 클릭합니다. 새 화면에는 Adobe Express에서 제공하는 사용 가능한 편집 옵션이 표시됩니다. 여기에는 크기 조정, 배경 제거, 자르기, JPEG와 PNG 포맷 간 변환이 포함됩니다.
 
 #### 이미지 크기 조정 {#resize-image-using-express}
 
 이미지 크기를 특정 크기로 조정하는 것이 일반적인 사용 사례입니다. Assets 보기를 사용하면 특정 사진 크기에 대해 미리 계산된 새로운 해상도를 제공하여 일반적인 사진 크기에 맞게 빠르게 이미지 크기를 조정할 수 있습니다. Assets 보기를 사용하여 이미지 크기를 조정하려면 아래 단계를 따르십시오.
 
-1. 왼쪽 창에서 **이미지 크기 조정**&#x200B;을 클릭합니다. 대화 상자에는 Adobe Express에서 제공하는 크기 조정 이미지 기능이 표시됩니다.
+1. 왼쪽 창에서 **이미지 크기 조정**&#x200B;을 클릭합니다. 대화 상자에는 Adobe Express에서 제공하는 이미지 크기 조정 기능이 표시됩니다.
 1. [크기 조정] 드롭다운 목록에서 적절한 소셜 미디어 플랫폼을 선택하고 표시되는 옵션에서 이미지 크기 조정을 선택합니다.
 1. 필요한 경우 **이미지 크기 조정** 필드를 사용하여 이미지 크기를 조정합니다.
 1. **[!UICONTROL 적용]**을 클릭하여 변경 내용을 적용합니다.
@@ -85,7 +88,7 @@ Adobe Express를 사용하여 JPEG 및 PNG 이미지 포맷 간 빠르게 변환
 
 ### 임베드된 Adobe Express 편집기에서 이미지 편집 {#edit-images-in-adobe-express-embedded-editor}
 
-Express 권한이 있는 사용자는 Assets 보기 내에서 임베드된 Express 편집기를 사용하여 컨텐츠를 쉽게 편집하고 Adobe Firefly의 GenAI로 새 컨텐츠를 만들 수 있습니다. 이 기능은 콘텐츠 재사용을 개선하고 콘텐츠 속도를 가속화합니다. 또한 사전 정의된 요소를 사용하여 자산을 멋지게 보이게 하거나 몇 번의 클릭만으로 빠른 작업을 수행하여 이미지를 편집할 수 있습니다.
+Express 권한이 있는 사용자는 Assets 보기 내에서 임베드된 Express 편집기를 사용하여 컨텐츠를 쉽게 편집하고 Adobe Firefly의 GenAI로 새 컨텐츠를 만들 수 있습니다. 이 기능을 통해 콘텐츠 재사용이 향상되고 콘텐츠 속도가 빨라집니다. 또한 사전 정의된 요소를 사용하여 자산을 멋지게 보이게 하거나 몇 번의 클릭만으로 빠른 작업을 수행하여 이미지를 편집할 수 있습니다.
 
 ![essentials UI의 Express](/help/assets/assets/express-in-essentials-ui.jpg)
 [!DNL Adobe Express] 포함된 편집기를 사용하여 이미지를 편집하려면 아래 단계를 따르십시오.
@@ -95,14 +98,14 @@ Express 권한이 있는 사용자는 Assets 보기 내에서 임베드된 Expre
 1. **Adobe Express에서 열기**&#x200B;를 클릭합니다. Express 캔버스에서 이미지가 열립니다.
 1. 이미지에 필요한 편집을 수행합니다.
 1. 프로젝트에 페이지를 더 추가해야 하는 경우 **추가**&#x200B;를 클릭하고, 자산을 선택한 다음 폴더를 입력하고, 캔버스 페이지로 가져올 이미지를 선택한 다음 이미지에 필요한 편집을 수행합니다.
-1. 하나 이상의 자산을 저장하려면 **저장**&#x200B;을 클릭하세요. 저장 대화 상자에 저장 옵션이 표시됩니다. 저장 옵션 중에서 선택하려면 요구 사항에 맞는 아래 지침 중 하나를 따르십시오.
-   1. 단일 페이지를 저장하려면 **다른 버전으로 저장**&#x200B;을 클릭하여 이미지를 새 버전으로 내보내고(원래 형식을 그대로 유지) 동일한 폴더에 저장합니다.
+1. 하나 이상의 자산을 저장하려면 **저장**&#x200B;을 클릭합니다. 저장 옵션이 있는 저장 대화 상자가 표시됩니다. 저장 옵션을 선택하려면 아래의 지침 중 요구 사항에 맞는 것을 따르십시오.
+   1. 단일 페이지를 저장하려면 **다른 버전으로 저장**&#x200B;을 클릭하여 이미지를 원본 포맷을 유지한 채로 새 버전으로 내보내고 동일한 폴더에 저장합니다.
 
-   1. 한 페이지를 저장하려면 **새 자산으로 저장**&#x200B;을 클릭하여 자산을 다른 형식으로 내보내고 모든 폴더에 새 자산으로 저장합니다.
+   1. 단일 페이지를 저장하려면 **새 자산으로 저장**&#x200B;을 클릭하여 자산을 다른 포맷으로 내보내고 모든 폴더에 새 자산으로 저장합니다.
 
-   1. 여러 페이지에서 한 페이지를 저장하려면 **다른 버전으로 저장**&#x200B;을 클릭하여 자산을 원래 형식과 위치에 저장합니다.
+   1. 여러 페이지에서 단일 페이지를 저장하려면 **다른 버전으로 저장**&#x200B;을 클릭하여 자산을 원래 포맷으로 원래 위치에 저장합니다.
 
-   1. 여러 페이지 또는 여러 페이지 중 한 페이지를 저장하려면 **새 자산으로 저장**&#x200B;을 클릭하세요. 이 작업을 수행하면 단일 또는 여러 에셋을 폴더에 내보내고 원래 또는 다른 형식의 새 에셋이나 에셋으로 저장합니다.
+   1. 여러 페이지 또는 여러 페이지 중 한 페이지를 저장하려면 **새 자산으로 저장**&#x200B;을 클릭합니다. 이 작업을 수행하면 하나 또는 여러 개의 자산을 원하는 폴더로 내보내고 이를 새 자산으로 저장하거나 원본 포맷 또는 다른 포맷의 자산으로 저장할 수 있습니다.
 
 1. [저장] 대화 상자에서 다음 작업을 수행합니다.
    1. **다른 이름으로 저장** 필드에 파일 이름을 입력합니다.

@@ -4,14 +4,17 @@ description: Adobe Workfront과 Experience Manager as a Cloud Service 애플리�
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
 feature: Metadata, Workfront Integrations and Apps
 role: User, Admin
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1030'
 ht-degree: 4%
 
 ---
 
 # Adobe Workfront과 Experience Manager Assets 간의 에셋 메타데이터 매핑 구성 {#asset-metadata-mapping-workfront-aem-assets}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Adobe Workfront과 Experience Manager as a Cloud Service 에셋 메타데이터 응용 프로그램 간에 메타데이터 필드를 매핑할 수 있습니다. 메타데이터 필드를 매핑한 결과, Workfront에서 Experience Manager Assets으로 에셋을 전송하면 Experience Manager Assets에서 매핑된 에셋 메타데이터를 볼 수 있습니다.
 

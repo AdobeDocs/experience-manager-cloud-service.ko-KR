@@ -4,14 +4,17 @@ description: 새 자산 UI(자산 보기)를 사용하여 자산을 일괄적으
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 816bf0f93dd67f193f4e8a7c9bc4a7df29cb6cf5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1899'
 ht-degree: 90%
 
 ---
 
 # 자산 보기를 사용하여 자산 일괄 가져오기  {#bulk-import-assets-view}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 AEM Assets 보기의 일괄 가져오기는 관리자에게 데이터 소스에서 AEM Assets로 수많은 자산을 가져올 수 있는 기능을 제공합니다. 관리자는 더 이상 개별 자산 또는 폴더를 AEM Assets에 업로드할 필요가 없습니다.
 

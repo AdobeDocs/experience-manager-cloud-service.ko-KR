@@ -3,14 +3,17 @@ title: AEM Assets을 다운스트림 애플리케이션과 통합
 description: AEM Assets을 다운스트림 애플리케이션과 통합
 role: User
 exl-id: abd48b5d-2b43-453c-8eb6-31ff509245ca
-source-git-commit: 3022551a38ab287d4d6ea131dcee88fb1b40e5b7
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 0%
+source-wordcount: '173'
+ht-degree: 1%
 
 ---
 
 # AEM Assets을 다운스트림 애플리케이션과 통합 {#integrate-dynamic-media-open-apis}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Experience Manager 에셋 저장소에서 사용할 수 있는 [승인된 에셋](/help/assets/approve-assets.md)은 모두 다운스트림 응용 프로그램으로 전달할 수 있습니다.
 

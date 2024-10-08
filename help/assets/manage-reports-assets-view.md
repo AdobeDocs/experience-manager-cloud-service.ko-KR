@@ -4,14 +4,17 @@ description: Assets 보기의 보고서 섹션에 있는 데이터에 액세스�
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '817'
-ht-degree: 89%
+source-wordcount: '835'
+ht-degree: 88%
 
 ---
 
 # 보고서 관리 {#manage-reports}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 에셋 보고는 관리자가 Adobe Experience Manager Assets 보기 환경의 활동을 볼 수 있도록 합니다. 이 데이터는 사용자가 콘텐츠 및 제품과 상호 작용하는 방법에 대한 유용한 정보를 제공합니다. 모든 사용자는 인사이트 대시보드에 액세스할 수 있으며 관리자 제품 프로필에 할당된 사용자는 사용자 정의 보고서를 만들 수 있습니다.
 

@@ -2,14 +2,18 @@
 title: Assets API 검색
 description: Search Assets API를 사용하는 방법을 알아봅니다.
 role: User
-source-git-commit: 3e2fe458460fe8ec4c1dd12152c1134bfb9ca62b
+exl-id: 0c52e793-4c33-4230-b4f2-27296dd9e4b3
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
 
 # Assets API 검색 {#search-assets-api}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Experience Manager 에셋 저장소에서 사용할 수 있는 모든 [승인된 에셋](approve-assets.md)을 검색한 다음 배달 URL을 사용하여 통합된 다운스트림 응용 프로그램으로 배달할 수 있습니다.
 

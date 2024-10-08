@@ -4,14 +4,17 @@ description: Experience Manager은  [!DNL Adobe Sensei]을(를) 사용하여 상
 feature: Smart Tags
 role: Admin, User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1225'
-ht-degree: 3%
+source-wordcount: '1243'
+ht-degree: 4%
 
 ---
 
 # 비디오 자산에 스마트 태그 지정 {#video-smart-tags}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 새로운 콘텐츠에 대한 필요성이 증가함에 따라 매력적인 디지털 경험을 즉시 제공하기 위한 수작업 노력이 감소해야 합니다. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]은(는) 인공 지능을 사용하여 비디오 자산의 자동 태깅을 지원합니다. 비디오를 수동으로 태깅하는 데에는 시간이 많이 걸릴 수 있습니다. 그러나 [!DNL Adobe Sensei] 기반 비디오 스마트 태그 지정 기능은 인공 지능 모델을 사용하여 비디오 콘텐츠를 분석하고 태그를 비디오 자산에 추가합니다. 이를 통해 DAM 사용자가 고객에게 풍부한 경험을 전달하는 시간을 단축할 수 있습니다. Adobe의 머신 러닝 서비스는 비디오에 대해 두 세트의 태그를 생성합니다. 반면, 한 세트는 해당 비디오에 있는 객체, 장면 및 속성에 해당되며, 다른 세트는 음주, 달리기, 조깅 등의 작업에 관한 것입니다.
 

@@ -3,14 +3,17 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선
 description: 자산 선택기를 사용하여 애플리케이션 내에서 자산의 메타데이터와 렌디션을 검색하고 찾을 수 있습니다.
 role: Admin, User
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1295'
 ht-degree: 42%
 
 ---
 
 # 자산 선택기 속성 {#asset-selector-properties}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 자산 선택기 속성을 사용하여 자산 선택기가 렌더링되는 방식을 사용자 정의할 수 있습니다. 다음 표에는 자산 선택기를 사용자 정의하고 사용하는 데 사용할 수 있는 속성이 나열되어 있습니다.
 

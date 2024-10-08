@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1066'
+source-wordcount: '1084'
 ht-degree: 10%
 
 ---
 
 # 폴더 메타데이터 스키마 {#folder-metadata-schema}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Adobe Experience Manager Assets]을(를) 사용하면 폴더 속성 페이지에 표시되는 레이아웃 및 메타데이터를 정의하는 자산 폴더에 대한 메타데이터 스키마를 만들 수 있습니다.
 

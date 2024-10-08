@@ -4,14 +4,17 @@ description: ' [!DNL Assets view]의 사용자 인터페이스 및 탐색을 이
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: b8ee421c5105c95dc4a509d3b2e32fa43b1adc0b
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 81%
+source-wordcount: '984'
+ht-degree: 86%
 
 ---
 
 # 파일 및 폴더로 이동하여 자산 보기 {#view-assets-and-details}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 <!-- TBD: Give screenshots of all views with many assets. Zoom out to showcase how the thumbnails/tiles flow on the UI in different views. -->
 
@@ -31,10 +34,10 @@ ht-degree: 81%
 
 ## 자산과 폴더 검색 및 보기 {#browse-repository}
 
-메인 사용자 인터페이스 또는 왼쪽 사이드바에서 폴더를 검색할 수 있습니다. 이제 Experience Manager Assets은 컨텐츠를 찾아보거나 검색할 때 폴더 썸네일에 폴더 컨텐츠의 시각적 미리보기를 표시하여 AEM Assets 저장소 내에서 사용할 수 있는 자산의 검색 기능을 향상시킵니다. 이 폴더 썸네일을 사용하면 AEM Assets 저장소의 폴더 내에서 특정 에셋을 검색하는 데 소요되는 시간이 절약됩니다.
-폴더에서 에셋을 검색할 때 인터페이스를 사용하여 에셋 썸네일을 보고 저장소를 시각적으로 탐색하거나 에셋 세부 사항을 보고 원하는 에셋을 빠르게 찾을 수 있습니다. 왼쪽 사이드바에서 사용할 수 있는 옵션은 다음과 같습니다.
+메인 사용자 인터페이스 또는 왼쪽 사이드바에서 폴더를 검색할 수 있습니다. 이제 Experience Manager Assets는 콘텐츠를 탐색하거나 검색할 때 폴더 썸네일에 폴더 내용의 시각적 미리보기를 표시하므로 AEM Assets 저장소 내에서 사용할 수 있는 자산의 검색 가능성이 향상됩니다. 이 폴더 썸네일을 사용하면 AEM Assets 저장소의 폴더 내에서 특정 에셋을 검색하는 데 소요되는 시간이 절약됩니다.
+폴더에서 자산을 검색할 때 인터페이스를 사용하여 자산 썸네일을 보고 저장소를 시각적으로 탐색하거나 자산 세부 사항을 보고 필요한 자산을 빠르게 찾을 수 있습니다. 왼쪽 사이드바에서 사용할 수 있는 옵션은 다음과 같습니다.
 
-* [내 작업 영역](/help/assets/my-workspace-assets-view.md): 이제 Assets에는 Assets 사용자 인터페이스의 주요 영역과 사용자와 가장 관련성이 높은 정보에 편리하게 액세스할 수 있는 위젯을 제공하는 사용자 정의 가능한 작업 영역이 포함됩니다. 이 페이지는 작업 항목에 대한 개요 및 주요 워크플로에 대한 바로 가기를 제공하는 종합적인 솔루션 역할을 합니다. 이러한 옵션에 보다 편리하게 액세스하면 효율성과 콘텐츠 속도가 향상됩니다.
+* [내 작업 영역](/help/assets/my-workspace-assets-view.md): 이제 Assets에는 Assets 사용자 인터페이스의 주요 영역과 사용자와 가장 관련성이 높은 정보에 편리하게 액세스할 수 있는 위젯을 제공하는 사용자 정의 가능한 작업 영역이 포함됩니다. 이 페이지는 작업 항목에 대한 개요 및 주요 워크플로에 대한 빠른 액세스를 제공하는 종합적인 솔루션 역할을 합니다. 이러한 옵션에 보다 편리하게 액세스하면 효율성과 콘텐츠 속도가 향상됩니다.
 * [작업](/help/assets/my-workspace-assets-view.md): **내 작업** 탭 아래에서 본인에게 할당된 작업을 볼 수 있습니다. 반면 본인이 만든 작업은 **할당된 작업** 탭 아래에서 볼 수 있습니다. 또한 완료한 작업은 **완료된 작업** 탭에 있습니다.
 * [자산](/help/assets/manage-organize-assets-view.md): 액세스 권한이 있는 트리 보기의 모든 폴더 목록입니다.
 * **최근에 본 항목**: 최근에 미리 본 자산 목록입니다. [!DNL Assets view]는 미리보기하는 자산만 표시합니다. 저장소 파일 또는 폴더를 탐색할 때 스크롤한 자산은 표시되지 않습니다.

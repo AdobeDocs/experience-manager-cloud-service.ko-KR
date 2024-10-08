@@ -4,14 +4,17 @@ description: 기존 설치에 대해 외부 종속성 제거
 feature: Workfront Integrations and Apps
 exl-id: 5b28ce97-2719-47b8-a386-77d4aaddbe81
 role: Admin
-source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '122'
 ht-degree: 17%
 
 ---
 
 # 기존 설치에 대해 외부 종속성 제거 {#remove-external-depedencies}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Adobe은 Workfront에 대해 기존 향상된 커넥터 설치에 대한 구성 단계를 실행하여 Hoodoo 배포 지점에 대한 종속성을 제거할 것을 권장합니다.
 

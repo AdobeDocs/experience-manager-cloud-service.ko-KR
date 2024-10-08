@@ -4,14 +4,17 @@ description: Assets 보기 알림을 사용하여 저장소에서 사용할 수 
 exl-id: 1fe6a845-37d5-43c2-bb96-c5b149c238ab
 feature: Assets Essentials
 role: User, Leader
-source-git-commit: 763ef950ffa7642a345977485f56c1187f6ecc0a
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 70%
+source-wordcount: '635'
+ht-degree: 69%
 
 ---
 
 # 자산, 폴더 및 컬렉션 보기 {#watch-assets-folders}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Assets 보기 알림을 사용하면 저장소에서 사용할 수 있는 에셋, 폴더 또는 컬렉션에서 수행된 작업을 모니터링할 수 있습니다. 알림을 받을 콘텐츠를 선택하고 구독해야 합니다. 알림을 받을 범주를 구성할 수도 있습니다.
 

@@ -4,14 +4,17 @@ description: Adobe Experience Manager Assets을 사용하면 이미지의 색상
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
 feature: Smart Imaging, Interactive Images, Asset Management
 role: User, Admin
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1262'
 ht-degree: 6%
 
 ---
 
 # 이미지용 색상 태그 {#color-tag-images}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![색상 태그 지정 배너](assets/banner-image.png)
 

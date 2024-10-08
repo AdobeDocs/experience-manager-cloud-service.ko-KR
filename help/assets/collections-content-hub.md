@@ -2,14 +2,18 @@
 title: Content Hub에서 컬렉션 관리
 description: Content Hub에서 컬렉션을 관리하는 방법 알아보기
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 3%
+source-wordcount: '635'
+ht-degree: 4%
 
 ---
 
 # [!DNL Content Hub]에서 컬렉션 관리 {#manage-collections}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 <!-- ![Manage collections](assets/manage-collections.jpg) -->
 ![컬렉션 관리](assets/manage-collection.png)

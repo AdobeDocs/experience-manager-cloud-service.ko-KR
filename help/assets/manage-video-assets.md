@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Asset Management, Publishing, Collaboration, Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '4983'
+source-wordcount: '5001'
 ht-degree: 6%
 
 ---
 
 # 비디오 자산 관리 {#manage-video-assets}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |

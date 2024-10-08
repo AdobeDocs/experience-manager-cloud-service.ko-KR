@@ -2,14 +2,17 @@
 title: 원격 AEM Assets를 AEM Sites와 통합
 description: 승인된 AEM Assets과 AEM 사이트를 구성하고 연결하는 방법에 대해 알아봅니다.
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: e2c0c848c886dc770846d064e45dcc52523ed8e3
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '995'
 ht-degree: 14%
 
 ---
 
 # 원격 AEM Assets를 AEM Sites와 통합  {#integrate-approved-assets}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 다양한 온라인 플랫폼에서 매력적이고 일관된 브랜드 경험을 제공하기 위해서는 디지털 에셋을 효과적으로 관리하는 것이 중요합니다. OpenAPI 기능이 포함된 Dynamic Media은 AEM Sites과 AEM Assets as a Cloud Service 간의 원활한 통합을 통해 디지털 자산 관리를 향상시킵니다. 이 혁신적인 기능을 사용하면 여러 AEM 환경에서 서로 다른 유형의 승인된 디지털 에셋을 쉽게 공유 및 관리할 수 있으므로 사이트 작성자 및 콘텐츠 편집자를 위한 워크플로를 간소화할 수 있습니다.
 

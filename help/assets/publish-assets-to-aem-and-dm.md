@@ -4,14 +4,17 @@ description: Assets 보기의 빠른 Publish을 사용하면 자산을 AEM 및 D
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing, Dynamic Media
 role: User
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1188'
-ht-degree: 0%
+source-wordcount: '1206'
+ht-degree: 1%
 
 ---
 
 # AEM 및 Dynamic Media에 자산 게시{#Publish-Assets-to-AEM-and-Dynamic-Media}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Experience Manager Assets을 사용하면 Assets 보기를 사용하여 자산을 Experience Manager 및 Dynamic Media에 빠르게 게시할 수 있습니다. 이렇게 하면 자산을 관리하고 [Assets 보기로 전환하지 않고](/help/assets/overview.md##persona-based-experiences)을(를) 사용하여 게시할 수 있습니다.
 

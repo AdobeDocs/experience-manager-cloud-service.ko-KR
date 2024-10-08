@@ -5,14 +5,17 @@ contentOwner: Adobe
 role: Admin, User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 feature: Selectors
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1887'
-ht-degree: 85%
+source-wordcount: '1905'
+ht-degree: 84%
 
 ---
 
 # 마이크로 프론트엔드 대상 선택기 {#Overview}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 마이크로 프론트엔드 대상 선택기는 [!DNL Experience Manager Assets as a Cloud Service] 저장소와 간편하게 통합되는 애플리케이션 내에서 사용자 인터페이스를 제공합니다. [!DNL Experience Manager Assets as a Cloud Service] 저장소 내에서 적절한 폴더를 찾아보거나 검색하고, 애플리케이션에서 자산을 업로드할 수 있습니다.
 

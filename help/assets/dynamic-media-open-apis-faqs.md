@@ -3,14 +3,17 @@ title: OpenAPI 기능이 포함된 Dynamic Media FAQ
 description: OpenAPI 기능이 포함된 Dynamic Media FAQ
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: dcc233be4d1bb84534aaef64316406bb960ce51d
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1512'
 ht-degree: 0%
 
 ---
 
 # OpenAPI 기능이 포함된 Dynamic Media FAQ {#new-dynaminc-media-apis-frequently-asked-questions}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 +++**Experience Manager Assets as a Cloud Service Dynamic Media 저장소의 모든 자산을 OpenAPI 기능을 사용하여 검색하고 게재할 수 있습니까?**
 

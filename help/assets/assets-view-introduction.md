@@ -5,14 +5,17 @@ mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '972'
-ht-degree: 69%
+source-wordcount: '990'
+ht-degree: 68%
 
 ---
 
 # Assets 보기 소개 {#assets-view}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![Assets Essentials 배포](assets/banner-image.jpg)
 

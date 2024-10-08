@@ -2,22 +2,25 @@
 title: Content credentials 통합
 description: AEM Assets에 통합되고 Assets 보기 내에 포함된 Content credentials은 에셋의 작성 방법 및 작성 참여자 등 에셋 기록에 대한 컨텍스트를 제공할 수 있습니다. 디지털 콘텐츠에 대한 영양 레이블처럼 Content credentials은 투명성을 높이고 대상과 신뢰를 구축하는 데 도움이 될 수 있습니다.
 role: User
-source-git-commit: 1c0ffe9d6e45f1d6b3574d1ac5611b2c2e2d00e0
+exl-id: 27c25ae0-4477-40c3-85c8-3e0aa725aba7
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 0%
+source-wordcount: '480'
+ht-degree: 1%
 
 ---
 
+# Content Credentials {#content-credentials}
 
-# 콘텐츠 자격 증명 {#content-credentials}
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 브랜드는 콘텐츠 투명성, AI 공시, 자산 변조 방지에 어느 때보다 신경이 쓰인다. Adobe의 CAI(Content Authenticity Initiative)는 [Coalition for Content Provenance and Authenticity](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model)(C2PA) 기술 표준을 준수하는 도구를 빌드합니다. Content credentials은 새롭고 암호화된 변조 불가능한 메타데이터로서 시청자가 컨텐츠 계보를 이해하고 브랜드 자산의 무결성을 확인하는 데 도움이 될 수 있습니다. 여기에는 디지털 에셋의 기록에 대한 통찰력을 제공하는 광범위한 조달 데이터가 포함될 수 있습니다.
 
 이 정보는 다음과 같습니다.
 
 * **발급자 또는 서명자:** 인증서를 인증하거나 자산에 서명하기 위해 디지털 서명을 발급한 엔터티 또는 회사에 대한 정보입니다.
-* **문제 날짜:** 콘텐츠 자격 증명이 자산에 적용된 날짜입니다.
+* **문제 날짜:** Content Credential이 자산에 적용된 날짜입니다.
 * **크레딧 및 사용:** 이름, 소셜 미디어 핸들 또는 기타 ID 관련 정보를 포함하여 에셋 제작자에 대한 정보입니다.
 * **프로세스:** 에셋에 대한 편집 또는 수정 사항을 기록합니다.
 * **장치 정보:** 자산을 만들거나 편집하는 데 사용되는 앱 또는 장치에 대한 정보입니다.

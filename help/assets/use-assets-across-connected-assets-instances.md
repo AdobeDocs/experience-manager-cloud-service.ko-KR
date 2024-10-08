@@ -6,15 +6,18 @@ mini-toc-levels: 2
 feature: Asset Management, Connected Assets, Asset Distribution
 role: Admin, User, Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 638b18beb5202ec34c1957a74d5b293236c2cf4e
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '3869'
+source-wordcount: '3887'
 ht-degree: 13%
 
 ---
 
 
 # 연결된 Assets을 사용하여 [!DNL Experience Manager Sites]에서 DAM 에셋 공유 {#use-connected-assets-to-share-dam-assets-in-aem-sites}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |

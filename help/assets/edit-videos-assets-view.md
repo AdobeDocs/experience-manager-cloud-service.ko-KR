@@ -4,14 +4,17 @@ description: ' [!DNL Adobe Express] 기반 옵션을 사용하여 비디오를 �
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
 feature: Best Practices, Video, Interactive Videos
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '797'
 ht-degree: 17%
 
 ---
 
 # [!DNL Assets view]에서 비디오 편집 {#edit-videos}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Assets 사용자는 비디오에 대한 [!DNL Adobe Express] 빠른 작업이 임베드되어 있으므로 비디오 컨텐츠의 변형을 쉽게 만들 수 있습니다. [!DNL Adobe Express]에서 제공하는 [!DNL Assets view]의 빠른 작업은 비디오 자르기, 비디오 크기 조정, 비디오 트리밍, 비디오를 GIF으로 변환 등 사용자에게 친숙한 비디오 편집 옵션을 제공합니다.
 
@@ -21,7 +24,7 @@ Assets 사용자는 비디오에 대한 [!DNL Adobe Express] 빠른 작업이 �
 
 AEM Assets 내의 [!DNL Adobe Express] 및 하나 이상의 환경에 액세스할 수 있는 권한입니다. 환경은 [!DNL Assets as a Cloud Service] 또는 [!DNL Assets view] 내의 저장소 중 하나일 수 있습니다.
 
-## Adobe Express을 사용하여 비디오 편집 {#edit-video-using-express}
+## Adobe Express를 사용하여 비디오 편집 {#edit-video-using-express}
 
 포함된 [!DNL Adobe Express] 빠른 동작을 사용하면 비디오를 완벽한 크기 및 방향으로 쉽게 변환할 수 있습니다.
 

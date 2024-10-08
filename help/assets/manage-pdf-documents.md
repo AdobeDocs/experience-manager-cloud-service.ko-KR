@@ -4,14 +4,17 @@ description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]에서 P
 feature: Asset Management
 role: User, Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '856'
 ht-degree: 5%
 
 ---
 
 # Experience Manager Assetsas a Cloud Service 에서 PDF 문서 관리 {#add-assets-to-experience-manager}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Experience Manager Assets은 Document Cloud PDF 뷰어와 원활하게 통합되므로 PDF 문서의 여러 페이지를 미리 볼 수 있습니다. 또한 주석, 검색 텍스트, 책갈피 및 썸네일을 사용하여 PDF 문서를 탐색하는 등의 고급 Document Cloud PDF 뷰어 기능을 동일한 지붕 아래에서 사용할 수도 있습니다. 또한 Experience Manager Assets을 사용하면 지원되는 다른 형식의 문서를 업로드하고 PDF 형식으로 미리 볼 수 있습니다.
 

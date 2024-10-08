@@ -6,14 +6,17 @@ mini-toc-levels: 1
 feature: Asset Management, Metadata
 role: User, Architect, Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1944'
+source-wordcount: '1962'
 ht-degree: 9%
 
 ---
 
 # 디지털 에셋의 메타데이터 관리 {#managing-metadata-for-digital-assets}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -69,7 +72,7 @@ ht-degree: 9%
 * 파일 크기
 * 형식
 * 해결 방법
-* 차원
+* 치수
 * 색상 모드
 
 이러한 유형의 메타데이터는 사용자가 디지털 에셋을 이해하고 효율적으로 사용하는 데 도움이 됩니다.

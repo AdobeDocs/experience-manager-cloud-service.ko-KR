@@ -4,14 +4,17 @@ description: 에셋을  [!DNL Assets view]에 업로드하고, 업로드 상태�
 role: User
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 91%
+source-wordcount: '843'
+ht-degree: 89%
 
 ---
 
 # 에셋 업로드 {#add-assets}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 작업할 새 에셋을 추가하려면 로컬 파일 시스템에서 몇 가지 에셋을 업로드하십시오. <!-- TBD: Many of the [common file formats are supported](/help/assets/supported-file-formats-assets-view.md). -->
 

@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1938'
+source-wordcount: '1956'
 ht-degree: 7%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets]개의 개발자 사용 사례, API 및 참조 자료 {#assets-cloud-service-apis}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 이 문서에는 [!DNL Assets] as a [!DNL Cloud Service] 개발자를 위한 권장 사항, 참조 자료 및 리소스가 포함되어 있습니다. 여기에는 새로운 에셋 업로드 모듈, API 참조 및 사후 처리 워크플로우에서 제공되는 지원에 대한 정보가 포함됩니다.
 
@@ -30,7 +33,7 @@ ht-degree: 7%
 | × | 지원되지 않습니다. 사용하지 마십시오. |
 | - | 사용할 수 없음 |
 
-| 사용 사례 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/Sling/JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [Asset compute 서비스](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | 슬링 [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) 서블릿 | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) |
+| 사용 사례 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/Sling/JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [Asset compute 서비스](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | 슬링 [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) 서블릿 | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko-KR) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **원본 이진** |  |  |  |  |  |  |
 | 원본 만들기 | ✓ | × | - | × | × | - |

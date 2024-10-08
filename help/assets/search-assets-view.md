@@ -4,14 +4,17 @@ description: AEM Assets 보기에서 에셋을 검색하고 검색하는 방법�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: de5aaead0955f997cf5304c3cd1d540b2eded16b
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 95%
+source-wordcount: '2020'
+ht-degree: 94%
 
 ---
 
 # [!DNL Assets view]에서 자산 검색 {#search-assets}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 >[!CONTEXTUALHELP]
 >id="assets_search"

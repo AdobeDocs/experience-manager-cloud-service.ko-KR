@@ -2,14 +2,18 @@
 title: Content Hub에서 자산 통찰력 보기
 description: ' [!DNL Content Hub]에서 자산 통찰력을 보는 방법 알아보기'
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 0%
+source-wordcount: '296'
+ht-degree: 1%
 
 ---
 
 # [!DNL Content Hub]의 Assets Insights {#assets-insights}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![Assets 인사이트](assets/asset-insights-banner.jpg)
 
@@ -49,4 +53,3 @@ Content Hub을 사용하면 파일 형식, 캠페인, 채널 및 지역에 따�
 * **[!UICONTROL 캠페인별 Assets]**: 캠페인을 기반으로 한 에셋 수 및 해당 백분율.
 * **[!UICONTROL 채널별 Assets]**: 사용된 채널을 기반으로 하는 에셋 수 및 해당 백분율.
 * **[!UICONTROL 지역별 Assets]**: 에셋 사용 지역을 기반으로 하는 에셋 수 및 각각의 백분율.
-

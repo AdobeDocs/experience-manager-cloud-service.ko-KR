@@ -5,14 +5,17 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1536'
-ht-degree: 4%
+source-wordcount: '1554'
+ht-degree: 5%
 
 ---
 
 # Experience Manager Assets에서 게시 관리 {#manage-publication-in-aem}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Adobe Experience Manager Assets] 관리자는 작성자 인스턴스의 자산 및 자산을 포함하는 폴더를 [!DNL Experience Manager Assets], [!DNL Dynamic Media] 및 [!DNL Brand Portal]에 게시할 수 있습니다. 나중에 에셋 또는 폴더를 게시하도록 예약할 수도 있습니다. 게시되면 사용자는 에셋에 액세스하고 다른 사용자에게 에셋을 추가로 배포할 수 있습니다. 기본적으로 에셋 및 폴더를 [!DNL Experience Manager Assets]에 게시할 수 있습니다. 그러나 [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html) 및 [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html)에 게시하도록 [!DNL Experience Manager Assets]을(를) 구성할 수 있습니다.
 
@@ -59,7 +62,7 @@ ht-degree: 4%
 
 ![게시 범위 관리](assets/manage-publication-aem-scope.png)
 
-### 컨텐트 추가 {#add-content}
+### 콘텐츠 추가 {#add-content}
 
 [!DNL Experience Manager Assets]에 게시하면 게시 목록에 더 많은 콘텐츠(자산 및 폴더)를 추가할 수 있습니다. dam-repository의 목록에 더 많은 에셋 또는 폴더를 추가할 수 있습니다. 콘텐츠를 추가하려면 **[!UICONTROL 콘텐츠 추가]** 단추를 클릭하십시오.
 

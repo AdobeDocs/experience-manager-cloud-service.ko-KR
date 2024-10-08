@@ -3,14 +3,17 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선
 description: 에셋 선택기를 다양한 Adobe, 비Adobe 및 타사 애플리케이션과 통합합니다.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 3%
+source-wordcount: '902'
+ht-degree: 4%
 
 ---
 
 # OpenAPI 기능과 Dynamic Media 통합 {#integrate-asset-selector-dynamic-media-open-apis}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 에셋 선택기를 사용하면 다양한 Adobe 애플리케이션을 사용하여 를 통합하여 두 애플리케이션이 원활하게 함께 작동할 수 있습니다.
 
@@ -29,7 +32,7 @@ Asset Selector를 OpenAPI 기능과 Dynamic Media과 통합하는 경우 다음 
 
 Dynamic Media OpenAPI 프로세스와 에셋 선택기를 통합하려면 사용자 지정된 Dynamic Media URL을 생성하거나 Dynamic Media URL을 선택할 준비가 된 것 등을 포함하는 다양한 단계를 수행해야 합니다.
 
-### OpenAPI 기능과 Dynamic Media용 Asset Selector 통합 {#integrate-dynamic-media}
+### OpenAPI 기능으로 Dynamic Media에 대한 자산 선택기 통합 {#integrate-dynamic-media}
 
 `rootPath` 및 `path` 속성은 OpenAPI 기능을 사용하는 Dynamic Media에 속하지 않아야 합니다. 대신 `aemTierType` 속성을 구성할 수 있습니다. 다음은 구성 구문입니다.
 

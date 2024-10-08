@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '5506'
+source-wordcount: '5524'
 ht-degree: 6%
 
 ---
@@ -19,6 +19,9 @@ ht-degree: 6%
 | -------- | ---------------------------- |
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html) |
 | AEM as a Cloud Service | 이 문서 |
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Adobe Experience Manager Assets]은(는) 콘텐츠 속도를 높이는 데 도움이 되는 강력한 에셋 검색 방법을 제공합니다. 기본 기능과 사용자 지정 방법을 사용하여 매끄럽고 지능적인 에셋 검색 환경을 구축하여 출시 시간을 단축할 수 있습니다. 자산 검색 기능은 크리에이티브의 추가 사용, 비즈니스 사용자 및 마케터의 강력한 자산 관리 또는 DAM 관리자의 관리를 위한 디지털 자산 관리 시스템 사용의 중심입니다. [!DNL Assets] 사용자 인터페이스 또는 기타 앱 및 표면을 통해 수행할 수 있는 단순, 고급 및 사용자 지정 검색은 이러한 사용 사례를 충족시키는 데 도움이 됩니다.
 

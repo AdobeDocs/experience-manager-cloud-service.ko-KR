@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Asset Management,DRM
 role: User, Admin
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1368'
+source-wordcount: '1386'
 ht-degree: 6%
 
 ---
 
 # 디지털 에셋 Digital Rights Management {#digital-rights-management-in-assets}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |

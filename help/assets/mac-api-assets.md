@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1677'
-ht-degree: 5%
+source-wordcount: '1695'
+ht-degree: 6%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets] HTTP API {#assets-http-api}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |

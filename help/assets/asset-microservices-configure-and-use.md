@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Architect, Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '2866'
+source-wordcount: '2884'
 ht-degree: 3%
 
 ---
 
 # 자산 마이크로서비스 및 처리 프로필 사용 {#get-started-using-asset-microservices}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 에셋 마이크로서비스 는 클라우드 기반 애플리케이션(작업자라고도 함)을 사용하여 확장 가능하고 복원 가능한 에셋 처리를 제공합니다. Adobe은 다양한 에셋 유형 및 처리 옵션을 최적으로 처리하기 위해 서비스를 관리합니다.
 
@@ -181,11 +184,11 @@ Experience Manager이 이러한 폴더에 업로드되거나 업데이트된 에
 
 *그림: 상위 폴더에 적용된 처리 프로필로 생성된 두 개의 추가 표현물의 예입니다.*
 
-## Post 처리 워크플로우 {#post-processing-workflows}
+## 사후 처리 워크플로 {#post-processing-workflows}
 
-처리 프로필을 사용하여 달성할 수 없는 자산의 추가 처리가 필요한 경우 구성에 추가 사후 처리 워크플로우를 추가할 수 있습니다. Post 처리를 사용하면 에셋 마이크로서비스를 사용하여 구성 가능한 처리 맨 위에 완전히 맞춤화된 처리를 추가할 수 있습니다.
+처리 프로필을 사용하여 달성할 수 없는 자산의 추가 처리가 필요한 경우 구성에 추가 사후 처리 워크플로우를 추가할 수 있습니다. 후 처리를 사용하면 에셋 마이크로서비스를 사용하여 구성 가능한 처리 위에 완전히 맞춤화된 처리를 추가할 수 있습니다.
 
-Post 처리 워크플로 또는 구성된 경우 [자동 시작 워크플로](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/auto-start-workflows.html)는 마이크로 서비스 처리가 완료된 후 [!DNL Experience Manager]에 의해 자동으로 실행됩니다. 워크플로우를 트리거하기 위해 워크플로우 런처를 수동으로 추가할 필요가 없습니다. 예는 다음과 같습니다.
+사후 처리 워크플로 또는 구성된 경우 [자동 시작 워크플로](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/auto-start-workflows.html)는 마이크로서비스 처리가 완료된 후 [!DNL Experience Manager]에 의해 자동으로 실행됩니다. 워크플로우를 트리거하기 위해 워크플로우 런처를 수동으로 추가할 필요가 없습니다. 예는 다음과 같습니다.
 
 * 에셋을 처리하는 사용자 지정 워크플로 단계입니다.
 * 제품 또는 프로세스 정보와 같은 외부 시스템의 에셋에 메타데이터 또는 속성을 추가하는 통합.
@@ -202,7 +205,7 @@ Post 처리 워크플로 또는 구성된 경우 [자동 시작 워크플로](ht
 
 ### 사후 처리 워크플로 모델 만들기 {#create-post-processing-workflow-models}
 
-Post 처리 워크플로 모델은 일반 [!DNL Experience Manager] 워크플로 모델입니다. 서로 다른 저장소 위치 또는 에셋 유형에 대해 서로 다른 처리가 필요한 경우 서로 다른 모델을 만듭니다.
+사후 처리 워크플로 모델은 일반 [!DNL Experience Manager] 워크플로 모델입니다. 서로 다른 저장소 위치 또는 에셋 유형에 대해 서로 다른 처리가 필요한 경우 서로 다른 모델을 만듭니다.
 
 필요에 따라 처리 단계가 추가됩니다. 사용 가능한 지원되는 단계와 사용자 지정 구현 워크플로우 단계를 모두 사용할 수 있습니다.
 
@@ -229,8 +232,8 @@ Post 처리 워크플로 모델은 일반 [!DNL Experience Manager] 워크플로
 
 폴더에 워크플로우를 적용하여 쉽게 이행할 수 없는 고급 구성에 대해 사용자 지정 워크플로우 실행기 서비스를 구성할 수 있습니다. (예: 정규 표현식을 사용하는 워크플로우) Adobe CQ DAM 사용자 지정 워크플로우 실행기(`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`)는 OSGi 서비스입니다. 이 섹션에서는 구성을 위한 다음 두 가지 옵션을 제공합니다.
 
-* 경로별 Post 처리 워크플로(`postProcWorkflowsByPath`): 다양한 저장소 경로를 기반으로 여러 워크플로 모델을 나열할 수 있습니다. 콜론을 사용하여 경로와 모델을 구분합니다. 단순 저장소 경로가 지원됩니다. `/var` 경로의 워크플로 모델에 매핑합니다. 예: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
-* 식별 Post 처리 워크플로(`postProcWorkflowsByExpression`): 다양한 정규 표현식을 기반으로 여러 워크플로 모델을 나열할 수 있습니다. 표현식과 모델은 콜론으로 구분해야 합니다. 정규 표현식은 렌디션이나 파일 중 하나가 아닌 에셋 노드를 직접 가리켜야 합니다. 예: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
+* 경로별 사후 처리 워크플로(`postProcWorkflowsByPath`): 서로 다른 저장소 경로를 기반으로 여러 워크플로 모델을 나열할 수 있습니다. 콜론을 사용하여 경로와 모델을 구분합니다. 단순 저장소 경로가 지원됩니다. `/var` 경로의 워크플로 모델에 매핑합니다. 예: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
+* 식별 사후 처리 워크플로(`postProcWorkflowsByExpression`): 다양한 정규 표현식을 기반으로 여러 워크플로 모델을 나열할 수 있습니다. 표현식과 모델은 콜론으로 구분해야 합니다. 정규 표현식은 렌디션이나 파일 중 하나가 아닌 에셋 노드를 직접 가리켜야 합니다. 예: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 OSGi 구성을 배포하는 방법은 [배포 대상 [!DNL Experience Manager]](/help/implementing/deploying/overview.md)을 참조하십시오.
 

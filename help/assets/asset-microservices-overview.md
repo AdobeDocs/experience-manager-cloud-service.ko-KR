@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Ingestion, Asset Processing
 role: Architect, Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 100%
+source-wordcount: '855'
+ht-degree: 98%
 
 ---
 
 # 자산 마이크로서비스를 이용한 자산 수집 및 처리에 대한 개요 {#asset-microservices-overview}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Adobe Experience Manager as a [!DNL Cloud Service]는 클라우드 기반의 Experience Manager 애플리케이션 및 기능 사용 방법을 제공합니다. 이 새 아키텍처의 핵심 요소 중 하나는 자산 마이크로서비스에서 제공하는 자산 수집 및 처리입니다. 자산 마이크로서비스는 클라우드 서비스를 사용하여 확장 가능하고 탄력적인 자산 처리 워크플로를 제공합니다. Adobe는 다양한 자산 유형 및 옵션을 최적으로 처리할 수 있는 클라우드 서비스를 관리합니다. 클라우드 기반 자산 마이크로서비스의 주요 이점은 다음과 같습니다.
 

@@ -5,14 +5,17 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1783'
-ht-degree: 87%
+source-wordcount: '1801'
+ht-degree: 86%
 
 ---
 
 # 자산 보기의 메타데이터 {#metadata}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 메타데이터는 데이터 또는 데이터에 대한 설명을 의미합니다. 예를 들어 자산 이미지에는 클릭한 카메라에 대한 정보나 저작권 정보가 포함될 수 있습니다. 이 정보는 해당 이미지의 메타데이터입니다. 메타데이터는 효율적인 자산 관리에 있어 매우 중요합니다. 메타데이터는 자산에 대해 사용 가능한 모든 데이터의 집합이지만 해당 자산에 반드시 포함되지는 않을 수 있습니다.
 

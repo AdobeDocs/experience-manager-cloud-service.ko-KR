@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '757'
 ht-degree: 10%
 
 ---
 
 # 자산 메타데이터 일괄적으로 가져오기 및 내보내기 {#import-and-export-asset-metadata-in-bulk}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Adobe Experience Manager Assets을 사용하면 CSV 파일을 사용하여 에셋 메타데이터를 일괄적으로 가져올 수 있습니다. CSV 파일을 가져와서 최근에 업로드한 에셋 또는 기존 에셋에 대한 대량 업데이트를 수행할 수 있습니다. 자산 메타데이터를 CSV 형식으로 서드파티 시스템에서 일괄로 수집할 수도 있습니다.
 
@@ -31,7 +34,7 @@ Adobe Experience Manager Assets을 사용하면 CSV 파일을 사용하여 에�
    | 매개변수 | 설명 |
    | ---------------------- | ------- |
    | 일괄 처리 크기 | 메타데이터를 가져올 일괄 처리의 자산 수입니다. 기본값은 50입니다. 최대값은 100입니다. |
-   | 필드 분리 기호 | 기본값은 `,`(쉼표)입니다. 다른 문자를 지정할 수 있습니다. |
+   | 필드 구분자 | 기본값은 `,`(쉼표)입니다. 다른 문자를 지정할 수 있습니다. |
    | 다중 값 구분 기호 | 메타데이터 값에 대한 구분 기호입니다. 기본값은 `|`입니다. |
    | 워크플로우 실행 | 기본적으로 False입니다. `true`(으)로 설정된 경우 기본 설정이 DAM 메타데이터 WriteBack 워크플로(이진 XMP 데이터에 메타데이터를 기록함)에 적용됩니다. 워크플로우를 활성화하면 시스템 속도가 느려집니다. |
    | 자산 경로 열 이름 | 자산이 있는 CSV 파일의 열 이름을 정의합니다. |

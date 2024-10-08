@@ -2,15 +2,18 @@
 title: ' [!DNL the Content Hub]의 자산 속성'
 description: ' [!DNL Content Hub]에서 자산 속성을 보고 관리하는 방법을 알아봅니다.'
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 8%
+source-wordcount: '617'
+ht-degree: 9%
 
 ---
 
-
 # Content Hub에서 에셋 속성 관리 {#asset-properties}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![메타데이터 배너 이미지](assets/metadata-banner-image.png)
 
@@ -126,4 +129,3 @@ Content Hub에 에셋을 추가하는 동안 지정된 속성도 있습니다. �
 The date range allows you to select dates you want to see the assets. You can customize date range by choosing the start and end dates. 
 
 -->
-

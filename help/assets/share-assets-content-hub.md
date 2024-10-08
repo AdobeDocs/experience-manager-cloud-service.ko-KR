@@ -2,15 +2,18 @@
 title: ' [!DNL the Content Hub]에서 Assets 공유'
 description: ' [!DNL the Content Hub]에서 Assets 공유'
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '472'
 ht-degree: 3%
 
 ---
 
-
 # Content Hub에서 자산 공유 {#search-assets-as-a-link}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![자산 배너 이미지 공유](assets/share-assets-banner.png)
 
@@ -61,7 +64,3 @@ ht-degree: 3%
 공유 링크를 클릭하고 에셋 카드에 있는 다운로드 아이콘 을 클릭하여 에셋을 다운로드합니다.  여러 자산을 선택하고 **[!UICONTROL 다운로드]**&#x200B;를 클릭할 수도 있습니다. <!--You can either download original assets or Original+Renditions of an asset.--> [!DNL The Content Hub]이(가) 로컬 파일 시스템에 각 자산을 하나씩 다운로드합니다.
 
 ![공유 링크에 액세스](assets/content-hub-access-shared-links.png)
-
-
-
-

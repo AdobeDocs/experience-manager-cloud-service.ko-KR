@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
 role: User, Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '790'
 ht-degree: 5%
 
 ---
 
 # [!DNL Adobe Creative Cloud] 통합을 사용하여 자산의 변형 생성 {#content-automation}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 콘텐츠 자동화 추가 기능은 [!DNL Adobe Experience Manager Assets]을(를) [!DNL Cloud Service] 및 [!DNL Adobe Creative Cloud] API로 통합하여 규모에 맞게 창의적으로 자산을 처리합니다. [!DNL Experience Manager]은(는) 클라우드 기반의 [에셋 마이크로서비스](/help/assets/asset-microservices-overview.md)를 사용하여 [!DNL Adobe Creative Cloud] 기능을 사용하고 에셋 생성 및 미디어 처리를 자동화합니다.
 

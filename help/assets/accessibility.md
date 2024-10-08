@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Accessibility, Asset Management
 role: User, Architect, Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1923'
+source-wordcount: '1941'
 ht-degree: 2%
 
 ---
@@ -29,6 +29,9 @@ Possible topics to cover in this article are below.
 -->
 
 # [!DNL Cloud Service](으)로 [!DNL Adobe Experience Manager Assets]의 접근성 기능 {#accessibility-in-aem-assets}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Adobe Experience Manager]을(를) 사용하면 콘텐츠 작성자 및 게시자가 웹에서 놀라운 경험을 제공할 수 있습니다. Adobe은 [!DNL Experience Manager]의 접근성을 개선하여 장애가 있는 작성자를 포함하도록 노력하고 있습니다. 이 소프트웨어는 모든 유형의 사용자의 요구 사항을 충족하도록 지속적으로 향상되며 시각적, 청각적, 이동성 또는 기타 장애가 있는 개인을 포함한 전 세계 표준을 준수합니다.
 

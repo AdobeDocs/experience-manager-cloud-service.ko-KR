@@ -5,21 +5,24 @@ contentOwner: Adobe
 feature: Brand Portal, Asset Distribution, Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1287'
-ht-degree: 85%
+source-wordcount: '1305'
+ht-degree: 84%
 
 ---
 
 # Publish assets를 Brand Portal으로 {#publish-assets-to-brand-portal}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/brandportal/brand-portal-publish-assets) |
 | AEM as a Cloud Service | 이 문서 |
 
-AEM(Adobe Experience Manager) Assets 관리자는 자산, 폴더 및 컬렉션을 AEM Assets Brand Portal 인스턴스에 게시할 수 있습니다. 자산이나 폴더의 게시 워크플로우를 나중 날짜나 시간으로 예약할 수도 있습니다. 게시된 자산, 폴더 및 컬렉션은 Brand Portal 사용자가 액세스하고 다른 사용자에게 추가로 분배할 수 있습니다.
+AEM(Adobe Experience Manager) Assets 관리자는 자산, 폴더 및 컬렉션을 AEM Assets Brand Portal 인스턴스에 게시할 수 있습니다. 자산이나 폴더의 게시 워크플로를 나중 날짜나 시간으로 예약할 수도 있습니다. 게시된 자산, 폴더 및 컬렉션은 Brand Portal 사용자가 액세스하고 다른 사용자에게 추가로 분배할 수 있습니다.
 
 하지만 먼저 Brand Portal에서 AEM Assets를 구성해야 합니다. 자세한 내용은 [Brand Portal에서 AEM Assets 구성](configure-aem-assets-with-brand-portal.md)을 참조하십시오.
 
@@ -83,7 +86,7 @@ AEM Assets에서 원래 자산, 폴더 또는 컬렉션을 차후에 수정하�
 
 1. **활성화 날짜**&#x200B;를 선택하고 시간을 지정합니다. **다음**&#x200B;을 클릭합니다.
 
-1. **[!UICONTROL 워크플로우]**&#x200B;에서 **[!UICONTROL 워크플로우 제목]**&#x200B;을 지정합니다. **[!UICONTROL 나중에 게시]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 워크플로]**&#x200B;에서 **[!UICONTROL 워크플로 제목]**&#x200B;을 지정합니다. **[!UICONTROL 나중에 게시]**&#x200B;를 클릭합니다.
 
    <!--![publishworkflow](assets/publishworkflow.png)-->
 
@@ -146,7 +149,7 @@ AEM Assets에서 원래 자산, 폴더 또는 컬렉션을 차후에 수정하�
 
    1. **[!UICONTROL 범위]**&#x200B;에서 선택 내용을 확인합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
-   1. **[!UICONTROL 워크플로우]**&#x200B;에서 워크플로우 제목을 지정합니다. **[!UICONTROL 나중에 게시]**&#x200B;를 클릭합니다.
+   1. **[!UICONTROL 워크플로]**&#x200B;에서 워크플로 제목을 지정합니다. **[!UICONTROL 나중에 게시]**&#x200B;를 클릭합니다.
 
       <!--![manageschedulepub](assets/manageschedulepub.png)-->
 
@@ -206,7 +209,7 @@ Brand Portal에서 자산 폴더의 게시를 취소하려면,
 
    1. **[!UICONTROL 범위]**&#x200B;에서 선택 내용을 확인하고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
-   1. **[!UICONTROL 워크플로우]**&#x200B;에서 **[!UICONTROL 워크플로우 제목]**&#x200B;을 지정합니다. **[!UICONTROL 나중에 게시 취소]**&#x200B;를 클릭합니다.
+   1. **[!UICONTROL 워크플로]**&#x200B;에서 **[!UICONTROL 워크플로 제목]**&#x200B;을 지정합니다. **[!UICONTROL 나중에 게시 취소]**&#x200B;를 클릭합니다.
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
 

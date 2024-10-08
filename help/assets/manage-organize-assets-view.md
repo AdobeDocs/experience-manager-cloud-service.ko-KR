@@ -5,14 +5,17 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 7ec5d5e3ca487ff84bc0b1f7f040aec9475059e0
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1204'
-ht-degree: 90%
+source-wordcount: '1222'
+ht-degree: 92%
 
 ---
 
 # 자산 관리 {#manage-assets}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Assets view]의 사용자 친화적인 인터페이스를 사용하여 다양한 디지털 자산 관리(DAM) 작업을 간편하게 수행할 수 있습니다. 자산을 추가한 후 자산을 검색, 다운로드, 이동, 복사, 이름 변경, 삭제, 업데이트 및 편집할 수 있습니다.
 
@@ -131,7 +134,7 @@ Assets 보기를 사용하면 저장소에서 사용 가능한 에셋의 상태�
 1. 자산을 선택하고 도구 모음에서 **[!UICONTROL 세부 정보]**&#x200B;를 클릭합니다.
 
 1. **[!UICONTROL 기본]** 탭의 **[!UICONTROL 상태]** 드롭다운 목록에서 에셋 상태를 선택합니다. 가능한 값에는 승인됨, 거부됨 및 상태 없음(기본값)이 포함됩니다.
-OpenAPI 기능이 있는 Dynamic Media이 환경에 프로비저닝되어 있는 경우, Experience Manager Assets은 자산을 `Approved`(으)로 표시하는 즉시 공개 URL을 생성합니다.
+이용 중인 환경에 대해 프로비저닝된 OpenAPI 기능이 포함된 Dynamic Media를 보유한 경우 자산을 `Approved`로 표시하는 즉시 Experience Manager Assets는 공개 URL을 생성합니다.
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 

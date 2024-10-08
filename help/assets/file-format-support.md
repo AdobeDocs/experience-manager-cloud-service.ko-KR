@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
+source-git-commit: 02caeb490ad99d8417eb2b5c91850c4ab822f57d
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1441'
 ht-degree: 34%
 
 ---
 
 # 지원되는 파일 형식 [!DNL Assets]개 {#supported-file-formats}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]은(는) 포맷과 관계없이 모든 바이너리 파일에 대해 스토리지, 온라인 메타데이터 관리, 버전 관리, 업로드 및 다운로드 등의 기본 콘텐츠 관리 기능을 지원합니다. [!DNL Adobe Experience Manager Assets]은(는) 다양한 파일 형식을 지원하며 각 제품 기능마다 다양한 형식을 지원합니다.
 

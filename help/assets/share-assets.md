@@ -4,14 +4,17 @@ description: ' [!DNL Brand Portal], [!DNL desktop app] 및  [!DNL Asset Link]을
 feature: Asset Management, Collaboration, Asset Distribution
 role: Admin, User
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1847'
 ht-degree: 3%
 
 ---
 
 # [!DNL Experience Manager]에서 관리되는 에셋 공유 및 배포 {#share-assets-from-aem}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |

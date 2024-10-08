@@ -4,14 +4,17 @@ description: ' [!DNL Adobe Experience Manager] 6.5와 비교하여  [!DNL Adobe 
 feature: Release Information
 role: User, Leader, Architect, Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1016'
 ht-degree: 9%
 
 ---
 
 # [!DNL Experience Manager Assets]을(를) [!DNL Cloud Service](으)로 주요 변경 내용 {#notable-changes}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]은(는) Experience Manager 프로젝트를 관리할 수 있는 많은 새로운 기능과 가능성을 제공합니다. [!DNL Experience Manager Assets]의 온-프레미스 또는 Adobe 관리 서비스로 호스팅되는 것과 [!DNL Experience Manager]의 [!DNL Cloud Service](으)와의 차이점이 많습니다. 이 문서에서는 [!DNL Assets] 기능의 중요한 차이점을 조명합니다.
 

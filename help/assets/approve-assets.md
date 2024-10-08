@@ -3,14 +3,17 @@ title: Experience Manager에서 에셋 승인
 description: ' [!DNL Experience Manager]에서 자산을 승인하는 방법을 알아봅니다.'
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: 9b3b93100c45c7053549c3f9899a344ca7db104d
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '694'
 ht-degree: 2%
 
 ---
 
 # [!DNL Experience Manager]에서 자산 승인
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 브랜드 관리자 및 마케터는 브랜드 자산에 대한 엄격한 제어를 유지합니다. 모든 채널 및 애플리케이션에서 브랜드 일관성을 보장하기 위해 승인된 최신 버전의 자산만 사용할 수 있습니다.
 

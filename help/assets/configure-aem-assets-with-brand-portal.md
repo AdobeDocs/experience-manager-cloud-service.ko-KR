@@ -5,14 +5,17 @@ contentOwner: AK
 feature: Brand Portal, Asset Distribution, Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1766'
+source-wordcount: '1784'
 ht-degree: 9%
 
 ---
 
-# Brand Portal을 사용하여 Experience Manager Assets 구성 {#configure-aem-assets-with-brand-portal}
+# Brand Portal로 Experience Manager Assets 구성 {#configure-aem-assets-with-brand-portal}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -136,12 +139,12 @@ Experience Manager Assets as a [!DNL Cloud Service] 인스턴스와 Brand Portal
 Experience Manager Assets as a [!DNL Cloud Service] 인스턴스와 Brand Portal 테넌트 간의 연결을 확인하려면 Experience Manager Assets에서 Brand Portal으로 자산을 게시합니다. 연결에 성공하면 게시된 에셋이 Brand Portal 인터페이스에 표시됩니다.
 
 
-이제 다음을 수행할 수 있습니다.
+이제 다음과 같은 작업을 수행할 수 있습니다.
 
 * [Experience Manager Assets에서 Brand Portal으로 Publish 에셋](publish-to-brand-portal.md)
 * [Experience Manager Assets에서 Brand Portal으로 Publish 폴더](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Experience Manager Assets에서 Brand Portal으로 Publish 컬렉션](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* [Brand Portal에서 Experience Manager Assets으로 Publish 자산](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ko-KR) - Brand Portal의 자산 소싱
+* [Brand Portal에서 Experience Manager Assets으로 Publish 자산](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ko) - Brand Portal의 자산 소싱
 * [사전 설정, 스키마 및 패싯을 Brand Portal에 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [태그를 Brand Portal에 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 

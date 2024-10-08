@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Asset Management
 role: User, Leader, Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 100%
+source-wordcount: '945'
+ht-degree: 98%
 
 ---
 
@@ -16,6 +16,9 @@ ht-degree: 100%
 # AEM에서의 디지털 자산 관리를 위한 Assets as a [!DNL Cloud Service] 소개 {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Adobe Experience Manager Assets as a [!DNL Cloud Service]는 클라우드 기반의 비즈니스용 PaaS 솔루션을 제공하여 빠르고 효과적으로 디지털 자산 관리 및 Dynamic Media 작업을 수행할 뿐만 아니라 항상 최신 상태를 유지하고 항상 사용 가능하며 항상 학습하는 시스템 내에서 AI/ML과 같은 차세대 스마트 기능도 사용합니다.
 

@@ -5,14 +5,17 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 7c8f54d7c1139485717cc42dafbc87be74fd5883
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 94%
+source-wordcount: '545'
+ht-degree: 97%
 
 ---
 
 # [!DNL Assets view]에서 지원되는 파일 형식 {#file-format-support}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Assets view]는 다양한 파일 형식을 지원하며 각 기능 또한 다양한 파일 형식을 지원합니다.
 

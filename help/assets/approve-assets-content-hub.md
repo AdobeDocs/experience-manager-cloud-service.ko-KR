@@ -1,14 +1,18 @@
 ---
 title: Content Hub에 대한 자산 승인
 description: Assetsas a Cloud Service 에서 자산을 승인하여 Content Hub에서 사용할 수 있도록 하는 방법을 알아봅니다.
-source-git-commit: f540f5934c4acbed4d7eff51a5a4ac1484fcb765
+exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 2%
+source-wordcount: '746'
+ht-degree: 4%
 
 ---
 
 # Content Hub에 대한 자산 승인 {#approve-assets-content-hub}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![Content Hub에 대한 자산 승인](assets/content-hub-approve-assets.png)
 
@@ -98,6 +102,3 @@ Content Hub을 사용하여 업로드한 에셋의 표시 여부는 [자동 승�
 * **[!UICONTROL 자동 승인]** 전환이 비활성화된 경우 Content Hub을 사용하여 업로드한 자산이 자동으로 표시되지 않습니다. 자산은 Assets as a Cloud Service 환경의 `hydrated-assets` 폴더에서 사용할 수 있습니다. 폴더로 이동한 다음 해당 에셋의 상태를 [일괄 편집](#bulk-approve-assets-content-hub)하여 해당 에셋을 Content Hub에 표시할 수 있도록 `Approved`합니다.
 
 ![Content Hub 승인 프로세스](/help/assets/assets/content-hub-approval.png)
-
-
-

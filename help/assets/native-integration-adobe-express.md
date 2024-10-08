@@ -4,14 +4,17 @@ description: Adobe Express과 AEM Assets 기본 통합을 사용하면 Adobe Exp
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '653'
 ht-degree: 16%
 
 ---
 
 # Adobe Express과 기본 통합 {#native-integration-adobe-express}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 AEM Assets는 Adobe Express에 기본적으로 통합되므로 Adobe Express 사용자 인터페이스 내에서 AEM Assets에 저장된 자산에 직접 액세스할 수 있습니다. AEM Assets에서 관리되는 콘텐츠를 Express 캔버스에 배치한 다음 AEM Assets 저장소에 새 콘텐츠 또는 편집된 콘텐츠를 저장할 수 있습니다. 통합은 다음과 같은 주요 이점을 제공합니다.
 

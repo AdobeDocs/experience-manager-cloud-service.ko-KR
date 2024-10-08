@@ -4,14 +4,17 @@ description: 디지털 자산을  [!DNL Adobe Experience Manager] as a [!DNL Clo
 feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '3144'
+source-wordcount: '3162'
 ht-degree: 9%
 
 ---
 
 # 디지털 자산을 [!DNL Adobe Experience Manager]에 [!DNL Cloud Service] [!DNL Assets](으)로 추가 {#add-assets-to-experience-manager}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Adobe Experience Manager Assets]은(는) 다양한 소스의 다양한 디지털 에셋을 허용합니다. 바이너리와 생성된 렌디션을 저장하고, 다양한 워크플로우 및 [!DNL Adobe Sensei] 서비스를 사용하여 에셋 처리를 수행할 수 있으며, 여러 표면에 걸쳐 다양한 채널을 통해 배포할 수 있습니다.
 

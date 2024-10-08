@@ -5,14 +5,17 @@ contentOwner: KK
 exl-id: 4759fa8c-10c7-4446-a135-3104b9beaee8
 feature: Asset Processing
 role: User, Leader, Developer
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
 
 # 디지털 자산 재처리 {#reprocessing-digital-assets}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 나중에 변경한 기존 메타데이터 프로필이 이미 있는 폴더에서 에셋을 재처리할 수 있습니다. 새로 편집한 사전 설정을 폴더의 기존 에셋에 다시 적용하려면 폴더를 다시 처리해야 합니다. 에셋을 필요한 만큼 재처리할 수 있습니다.
 
@@ -50,7 +53,7 @@ ht-degree: 0%
       * **[!UICONTROL 처리 프로필]:** 선택한 프로필을 다시 처리하려면 이 옵션을 선택합니다. **[!UICONTROL 전체 프로세스]** 옵션을 선택하여 폴더 수준에서 할당된 기본 처리 및 사용자 지정 프로필을 포함할 수 있습니다.
         <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
 
-      * **[!UICONTROL Post 처리 워크플로]:** 처리 프로필을 사용하여 수행할 수 없는 추가 자산 처리가 필요한 경우 이 옵션을 선택하십시오. 추가적인 사후 처리 워크플로우를 구성에 추가할 수 있습니다. Post 처리를 사용하면 에셋 마이크로서비스를 사용하여 구성 가능한 처리 맨 위에 완전히 맞춤화된 처리를 추가할 수 있습니다.
+      * **[!UICONTROL 사후 처리 워크플로]:** 처리 프로필을 사용하여 수행할 수 없는 추가 자산 처리가 필요한 경우 이 옵션을 선택하십시오. 추가적인 사후 처리 워크플로우를 구성에 추가할 수 있습니다. 후 처리를 사용하면 에셋 마이크로서비스를 사용하여 구성 가능한 처리 위에 완전히 맞춤화된 처리를 추가할 수 있습니다.
 
 처리 프로필 및 사후 처리 워크플로에 대한 자세한 내용은 [자산 마이크로서비스 및 처리 프로필 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en)을 참조하세요.
 

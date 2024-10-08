@@ -3,14 +3,17 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선
 description: 함수를 사용하여 애플리케이션 내에서 에셋 선택기를 사용자 지정합니다.
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1261'
 ht-degree: 24%
 
 ---
 
-# 자산 선택기 사용자 지정 {#asset-selector-customization}
+# 자산 선택기 사용자 정의 {#asset-selector-customization}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 에셋 선택기를 사용하면 환경 설정, 요구 사항 또는 기능 요구 사항에 따라 다양한 구성 요소를 사용자 지정할 수 있습니다. 다음 구성 요소를 사용자 지정할 수 있습니다. [Micro-Frontend 자산 선택기](#overview-asset-selector.md):
 

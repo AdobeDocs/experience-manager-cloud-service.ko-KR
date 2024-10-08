@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '468'
 ht-degree: 9%
 
 ---
 
 # 메타데이터 편집 또는 추가 방법 {#how-to-edit-or-add-metadata}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 메타데이터는 검색할 수 있는 에셋에 대한 추가 정보입니다. 이미지를 업로드하면 자동으로 추출됩니다. 기존 메타데이터를 편집하거나 기존 필드에 새 메타데이터 속성을 추가할 수 있습니다(예: 메타데이터 필드가 비어 있는 경우).
 

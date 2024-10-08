@@ -3,14 +3,17 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선
 description: 에셋 선택기를 다양한 Adobe, 비Adobe 및 타사 애플리케이션과 통합합니다.
 role: Admin, User
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
-source-git-commit: 7590e0240f3f429831aee5d9620ea4fa6f32847b
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 5%
+source-wordcount: '442'
+ht-degree: 6%
 
 ---
 
 # Adobe이 아닌 애플리케이션과 통합 {#integrate-asset-selector-non-adobe-app}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Asset Selector를 사용하면 다양한 비 Adobe 또는 타사 애플리케이션을 사용하여 통합하여 이들 애플리케이션을 원활하게 함께 사용할 수 있습니다.
 

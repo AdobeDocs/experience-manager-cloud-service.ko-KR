@@ -2,15 +2,18 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선택기'
 description: 자산 선택기를 사용하여 애플리케이션 내에서 자산의 메타데이터와 렌디션을 검색하고 찾을 수 있습니다.
 role: Admin,User
-source-git-commit: 5c76b28726403a6b011a55add190e6e3a6d7a390
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 8%
+source-wordcount: '479'
+ht-degree: 9%
 
 ---
 
 
 # 자산 선택기 컬렉션 {#asset-selector-collections}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 컬렉션은 에셋, 폴더 또는 에셋 선택기 내의 다른 컬렉션 세트입니다. 컬렉션을 사용하여 사용자 간에 자산을 공유합니다. 폴더와 달리 컬렉션에는 서로 다른 위치의 자산이 포함될 수 있습니다.
 

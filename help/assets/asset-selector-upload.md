@@ -3,14 +3,17 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]용 자산 선
 description: 에셋 선택기를 사용하여 애플리케이션 내에서 에셋의 메타데이터와 렌디션을 검색, 찾기 및 검색할 수 있습니다.
 role: Admin,User
 exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
-source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '535'
 ht-degree: 1%
 
 ---
 
 # 파일 및 폴더를 자산 선택기에 업로드 {#upload-files-folders}
+
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 로컬 파일 시스템에서 파일 또는 폴더를 에셋 선택기에 업로드할 수 있습니다. 로컬 파일 시스템을 사용하여 파일을 업로드하려면 일반적으로 자산 선택기 마이크로 프론트엔드 애플리케이션에서 제공하는 업로드 기능을 사용해야 합니다.
 
