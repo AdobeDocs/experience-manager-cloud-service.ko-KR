@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  [!DNL Cloud Service]에서 더 �
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 4e59095a47a919fd0b6acb868e27d71f9193c520
+source-git-commit: b64c8f16976988d04840f1006afe4f7c9b28c705
 workflow-type: tm+mt
-source-wordcount: '2504'
-ht-degree: 81%
+source-wordcount: '2488'
+ht-degree: 82%
 
 ---
 
@@ -325,14 +325,14 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 작업 목록:
 * `org.eclipse.jetty` 패키지 사용을 다른 타사 라이브러리/자체 코드로 바꾸거나
 * 이 목록에서 필요한 번들을 선택하고 프로젝트에 추가합니다.
-   * org.eclipse.jetty:jetty-client:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-http:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-io:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-security:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-servlet:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-server:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-util:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-util-ajax:9.4.54.v20240208
+   * `org.eclipse.jetty:jetty-client:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-http:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-io:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-security:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-servlet:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-server:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-util:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-util-ajax:9.4.54.v20240208`
 
 ### `com.mongodb` {#com.mongodb} 제거
 
