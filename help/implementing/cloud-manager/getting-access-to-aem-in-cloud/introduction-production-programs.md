@@ -5,10 +5,10 @@ exl-id: bb8d4a5a-b26a-4718-9327-149fedb87e6a
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '490'
-ht-degree: 92%
+ht-degree: 87%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 92%
 
 프로덕션 프로그램은 라이브 트래픽을 호스팅하기 위해 배포할 목적으로 코드 작성, 빌드 및 테스트를 시작할 준비가 된 팀을 대상으로 합니다.
 
-[프로덕션 프로그램을 만든](creating-production-programs.md) 후 [프로그램 만들기 마법사](using-the-wizard.md)는 프로그램을 만들려는 사용자의 목표에 따라 선택할 수 있도록 안내합니다.
+[프로덕션 프로그램을 만들기](creating-production-programs.md)하면 [프로그램 만들기 마법사](using-the-wizard.md)가 프로그램을 만드는 데 필요한 사용자의 목표에 따라 선택할 수 있도록 안내합니다.
 
 ## 프로그램 만들기 옵션 {#program-creation-options}
 

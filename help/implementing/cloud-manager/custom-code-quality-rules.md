@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '4513'
-ht-degree: 84%
+ht-degree: 83%
 
 ---
 
@@ -794,7 +794,7 @@ Experience Manager 콘텐츠 저장소의 `/libs` 콘텐츠 트리는 고객이 
 * **심각도**: 주요
 * **이후**: 버전 2019.6.0
 
-[패키지에 중복된 OSGi 구성 규칙을 포함해서는 안 됨](#oakpal-package-osgi)과 마찬가지로, 여러 개의 개별 콘텐츠 패키지에 의해 동일한 노드 경로가 기록되는 복잡한 프로젝트에서 일반적인 문제입니다. 콘텐츠 패키지 종속성을 사용하면 일관된 결과를 보장할 수 있지만 중복을 완전히 피하는 것이 좋습니다.
+[패키지에 중복된 OSGi 구성 규칙을 포함해서는 안 됨](#oakpal-package-osgi)과(와) 마찬가지로, 여러 개의 개별 콘텐츠 패키지에 의해 동일한 노드 경로가 기록되는 복잡한 프로젝트에서 일반적인 문제입니다. 콘텐츠 패키지 종속성을 사용하면 일관된 결과를 보장할 수 있지만 중복을 완전히 피하는 것이 좋습니다.
 
 ### 기본 작성 모드를 Classic UI로 구성하지 않음 {#oakpal-default-authoring}
 
@@ -853,7 +853,7 @@ Experience Manager as a Cloud Service의 [릴리스 정보](/help/release-notes/
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
-Experience Manager 클라이언트 라이브러리에는 이미지 및 글꼴과 같은 정적 리소스가 포함될 수 있습니다. [프로세서 사용](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) 문서에 설명된 대로 프록시가 활성화된 클라이언트 라이브러리를 사용할 때 게시 인스턴스에서 효과적으로 참조하려면 이러한 정적 리소스가 `resources`라는 하위 폴더에 포함되어 있어야 합니다.
+Experience Manager 클라이언트 라이브러리에는 이미지 및 글꼴과 같은 정적 리소스가 포함될 수 있습니다. 문서 [프로세서 사용](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors)에 설명된 대로 프록시 클라이언트 라이브러리를 사용할 때 게시 인스턴스에서 효과적으로 참조하려면 이러한 정적 리소스가 `resources`이라는 하위 폴더에 포함되어 있어야 합니다.
 
 #### 비준수 코드 {#non-compliant-proxy-enabled}
 

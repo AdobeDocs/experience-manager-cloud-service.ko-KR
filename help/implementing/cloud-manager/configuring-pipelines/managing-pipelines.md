@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 69%
+source-wordcount: '1108'
+ht-degree: 67%
 
 ---
 
@@ -98,7 +98,7 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 
 1. **프로그램 개요** 페이지에서 **파이프라인** 카드로 이동한 다음 편집할 파이프라인 옆에 있는 줄임표 버튼을 클릭하고 메뉴에서 **편집**&#x200B;을 선택합니다.
 
-1. **프로덕션 파이프라인 편집** 또는 **비프로덕션 파이프라인 편집** 대화 상자가 표시되어 파이프라인을 생성할 때 입력한 것과 동일한 세부 정보를 편집할 수 있습니다.
+1. **프로덕션 파이프라인 편집** 또는 **비프로덕션 파이프라인 편집** 대화 상자가 표시되어 파이프라인을 만들 때 입력한 것과 동일한 세부 정보를 편집할 수 있습니다.
 
    * 파이프라인에 사용할 수 있는 필드 및 구성 옵션에 대한 자세한 내용은 다음 페이지를 참조하십시오.
       * [프로덕션 파이프라인 구성](configuring-production-pipelines.md)

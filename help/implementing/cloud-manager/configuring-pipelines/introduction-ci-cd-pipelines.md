@@ -1,14 +1,14 @@
 ---
-title: CI/CD 파이프라인
+title: CI/CD 파이프라인 소개
 description: Cloud Manager의 CI/CD 파이프라인과 이를 사용하여 코드를 효율적으로 배포하는 방법에 대해 알아봅니다.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7f6e8f91716b679f9715f9df33ae59aa5bf70751
+source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
 workflow-type: tm+mt
-source-wordcount: '1482'
+source-wordcount: '1488'
 ht-degree: 35%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 35%
 
 Cloud Manager의 CI/CD(Continuous Integration/Continuous Delivery) 파이프라인 및 이를 사용하여 코드를 효율적으로 배포하는 방법에 대해 알아봅니다.
 
-## 소개 {#introduction}
+## CI/CD 파이프라인 소개 {#introduction}
 
 Cloud Manager의 CI/CD 파이프라인은 소스 저장소에서 코드를 빌드하고 환경에 배포하는 메커니즘입니다. 이벤트는 Git(즉, 코드 변경)과 같은 소스 코드 저장소에서 가져오기 요청과 같은 파이프라인을 트리거합니다. 또는 릴리스 케이던스와 일치하도록 정기적인 일정에 따라 트리거할 수 있습니다.
 

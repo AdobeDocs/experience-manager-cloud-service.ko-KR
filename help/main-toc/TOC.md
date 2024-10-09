@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0b69e7ff3b35685ff9ac899eb19c3b58d7f37b41
+source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
 workflow-type: tm+mt
-source-wordcount: '5675'
+source-wordcount: '5678'
 ht-degree: 99%
 
 ---
@@ -1071,7 +1071,7 @@ ht-degree: 99%
    + [변형 생성](/help/generative-ai/generate-variations.md)
 + 구현 {#implementing}
    + [AEM as a Cloud Service용 애플리케이션 구현](/help/implementing/home.md)
-   + Cloud Manager 사용 {#using-cloud-manager}
+   + Cloud Manager {#using-cloud-manager} 사용
       + [탐색](/help/implementing/cloud-manager/navigation.md)
       + 프로그램 {#programs}
          + [프로그램 및 프로그램 유형](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
@@ -1081,7 +1081,7 @@ ht-degree: 99%
          + [샌드박스 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [프로그램 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [최대 절전 모드 환경](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
-      + AEM 애플리케이션 프로젝트 만들기 {#create-application-project}
+      + AEM 응용 프로그램 프로젝트 {#create-application-project} 만들기
          + [프로젝트 제작 마법사](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [프로젝트 설정](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [빌드 환경](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
@@ -1101,7 +1101,7 @@ ht-degree: 99%
          + [GitHub 검사 주석](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [환경 변수](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI-CD 파이프라인 {#cicd-pipelines}
-         + [소개](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+         + [CI-CD 파이프라인 소개](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [비프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
          + [파이프라인 관리](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)

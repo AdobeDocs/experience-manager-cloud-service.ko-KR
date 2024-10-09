@@ -3,10 +3,10 @@ title: Cloud Manager에서 외부 저장소 추가(얼리 어답터)
 description: Cloud Manager에 외부 저장소를 추가하는 방법을 알아봅니다. Cloud Manager은 GitHub, GitLab 및 Bitbucket 저장소와의 통합을 지원합니다.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b90ace2250277005d8ac250c841104c93298a605
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '742'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -17,7 +17,7 @@ Cloud Manager에 외부 저장소를 추가하는 방법을 알아봅니다. Clo
 
 >[!NOTE]
 >
->이 기능은 [얼리 어답터 프로그램](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)에만 사용할 수 있습니다.
+>이 기능은 [조기 채택 프로그램](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)에서만 사용할 수 있습니다.
 
 ## 외부 저장소 구성
 

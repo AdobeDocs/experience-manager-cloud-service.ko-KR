@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 17%
@@ -147,7 +147,7 @@ Apex 도메인은 `example.com`과 같은 하위 도메인을 포함하지 않�
 
    유효한 EV/OV 인증서를 업로드한 후 **도메인 설정** 표에 도메인의 상태가 **확인됨**&#x200B;으로 표시됩니다.
 
-   ![확인된 상태를 표시하는 도메인 설정 테이블](/help/implementing/cloud-manager/assets/domain-settings-verified.png)
+   ![확인된 상태를 표시하는 도메인 설정 테이블](/help/implementing/cloud-manager/assets/domain-settings-verified.png).
 
 <!--
 ![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)

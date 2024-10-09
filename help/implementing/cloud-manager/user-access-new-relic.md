@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '1850'
-ht-degree: 78%
+source-wordcount: '1836'
+ht-degree: 67%
 
 ---
 
@@ -23,7 +23,7 @@ Adobe는 애플리케이션의 모니터링, 가용성 및 성능에 중점을 �
 
 이 문서에서는 성능을 지원하고 AEM as a Cloud Service를 최대한 활용할 수 있도록 AEM as a Cloud Service 환경에서 활성화된 New Relic One APM(Application Performance Monitoring) 기능에 대한 액세스를 관리하는 방법을 설명합니다.
 
-새 프로덕션 프로그램이 만들어지면 AEM as a Cloud Service 프로그램과 연결된 New Relic One 하위 계정이 자동으로 만들어집니다. [데이터 수집을 시작하려면 이 하위 계정을 활성화해야 합니다](#activate-sub-account).
+새 프로덕션 프로그램이 만들어지면 AEM as a Cloud Service 프로그램과 연결된 New Relic One 하위 계정이 자동으로 만들어집니다. 데이터 수집을 시작하려면 [이 하위 계정을 활성화해야 합니다](#activate-sub-account).
 
 ## 기능 {#transaction-monitoring}
 
@@ -107,15 +107,15 @@ AEM as a Cloud Service용 New Relic One APM에는 많은 기능이 있습니다.
 
    ![이메일 주소 입력](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png)
 
-1. New Relic에서 계정 확인을 위한 링크가 포함된 이메일을 보내드립니다.
+1. New Relic에서 계정을 확인하는 링크가 포함된 이메일을 보냅니다.
 
 New Relic에서 확인 이메일을 받지 못한 경우 [문제 해결 섹션](#troubshooting)을 참조하십시오.
 
 ## New Relic One 액세스 {#accessing-new-relic}
 
-[New Relic 계정을 활성화하면](#activate-account) Cloud Manager를 통해 또는 직접 New Relic One에 액세스할 수 있습니다.
+[New Relic 계정을 활성화](#activate-account)하면 Cloud Manager을 통해 또는 직접 New Relic One에 액세스할 수 있습니다.
 
-Cloud Manager를 통해 New Relic One에 액세스하려면 다음 작업을 수행하십시오.
+**Cloud Manager에서 New Relic One에 액세스하려면:**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
@@ -129,7 +129,7 @@ Cloud Manager를 통해 New Relic One에 액세스하려면 다음 작업을 수
 
 1. 새 브라우저 탭이 열리면 New Relic One에 로그인합니다.
 
-New Relic One에 직접 액세스하려면 다음 작업을 수행하십시오.
+**New Relic One에 직접 액세스하려면:**
 
 1. New Relic 로그인 페이지([`https://login.newrelic.com/login`](https://login.newrelic.com/login))로 이동합니다.
 
@@ -137,7 +137,7 @@ New Relic One에 직접 액세스하려면 다음 작업을 수행하십시오.
 
 ### 이메일 확인 {#verify-email}
 
-New Relic One에 로그인하는 동안 이메일을 확인하라는 메시지가 표시되면 이메일이 여러 계정과 연결되어 있다는 의미입니다. 이를 통해 액세스할 계정을 선택할 수 있습니다.
+New Relic One에 로그인하는 동안 이메일을 확인하라는 메시지가 표시되면 이메일이 여러 계정과 연결되어 있다는 의미입니다. 액세스할 계정을 선택할 수 있습니다.
 
 이메일 주소를 확인하지 않는 경우, New Relic은 이메일 주소와 연결된 가장 최근에 만들어진 사용자 레코드로 로그인을 시도합니다. 로그인할 때마다 이메일을 확인하지 않으려면 로그인 화면에서 **내 정보 저장** 확인란을 클릭합니다.
 
@@ -157,15 +157,15 @@ New Relic One에 로그인하는 동안 이메일을 확인하라는 메시지�
 
    ![이메일 주소 입력](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png)
 
-1. New Relic에서 계정 확인을 위한 링크가 포함된 이메일을 보내드립니다.
+1. New Relic에서 계정을 확인하는 링크가 포함된 이메일을 보냅니다.
 
 가입 절차를 완료했는데 전자 메일 또는 암호 오류 메시지로 인해 계정에 로그인할 수 없는 경우 [Admin Console](https://adminconsole.adobe.com/)을 통해 지원 티켓을 기록하십시오.
 
-New Relic에서 이메일을 받지 못한 경우, 다음 작업을 수행하십시오.
+New Relic에서 이메일을 받지 못한 경우 다음을 수행하십시오.
 
 * [스팸 필터](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/)를 확인합니다.
 * 해당하는 경우 [이메일 허용 목록에 New Relic을 추가](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist)합니다.
-* 두 제안 모두 도움이 되지 않는 경우, 지원 티켓에 대한 피드백을 제공해 주시면 Adobe 지원 팀에서 추가로 도움을 드리겠습니다.
+* 두 제안 모두 도움이 되지 않는 경우 지원 티켓에 대한 피드백을 제공해 주십시오.
 
 ## 제한 사항 {#limitations}
 
@@ -181,9 +181,11 @@ New Relic One에 사용자를 추가하는 경우 다음 제한이 적용됩니�
 >
 >이 문서의 [New Relic One 하위 계정 활성화](#activate-sub-account) 섹션에서 동일한 단계에 따라 New Relic One 하위 계정을 다시 활성화하십시오.
 
-AEM as a Cloud Service 프로그램용 New Relic One에 대한 추가 도움말 또는 추가 지침을 보려면 [AEM 지원 포털](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)을 사용하여 지원 티켓을 엽니다.
+AEM as a Cloud Service 프로그램의 New Relic One 제공에 대한 추가 도움말 또는 추가 지침을 보려면 [AEM 지원 포털](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)을 통해 지원 티켓을 여십시오.
 
-## New Relic One에 대해 자주 묻는 질문 {#faqs}
+## 자주 묻는 질문 {#faqs}
+
++++
 
 ### Adobe가 New Relic One으로 모니터링하는 대상은 무엇입니까? {#adobe-monitor}
 
@@ -200,18 +202,30 @@ New Relic One 계정은 Adobe에서 관리하는 주 계정에 연결되어 있�
 * 각 애플리케이션은 하나의 라이선스 키를 사용합니다.
 * AEM as a Cloud Service 환경은 하나의 New Relic One 계정에만 보고합니다.
 * New Relic One에 대한 전체 모니터링 지표 및 이벤트는 7일 동안 유지됩니다.
++++
+
++++
 
 ### Adobe는 New Relic One에서 경고 알림을 전송합니까? {#alerting-new-relic}
 
 Adobe는 가시성 목적으로만 New Relic One 액세스를 제공하고 고객 경고나 내부 작업 경고에는 이를 활용하지 않습니다. 인시던트에 대한 알림은 [사용자 알림 프로필](/help/journey-onboarding/notification-profiles.md)을 사용하여 전송됩니다.
++++
+
++++
 
 ### New Relic One Cloud Service 데이터에 접근할 수 있는 권한은 누구에게 있습니까? {#access-new-relic-cloud}
 
 최대 30명의 팀원에게 전체 읽기 액세스 권한이 부여됩니다. 읽기 액세스에는 New Relic One 에이전트가 수집한 모든 APM 지표가 포함됩니다.
++++
+
++++
 
 ### 사용자 정의 SSO 구성이 지원됩니까? {#custom-sso}
 
 Adobe에서 제공한 New Relic One 계정에 대해서는 사용자 정의 SSO 구성이 지원되지 않습니다.
++++
+
++++
 
 ### 이미 On-Premise New Relic 구독이 있는 경우 어떻게 해야 합니까? {#new-relic-subscription}
 
@@ -219,12 +233,17 @@ New Relic One은 New Relic의 새로운 관찰 가능성 플랫폼으로, 여기
 
 New Relic One은 액세스 권한이 있는 모든 계정을 검색하고 모든 서비스 및 호스트의 데이터를 하나의 보기에서 시각화할 수 있는 기능을 사용자에게 제공합니다.
 
-Adobe 지원에서 서비스의 일부로 New Relic One 및 기타 사내 도구를 사용하여 AEM as a Cloud Service 애플리케이션을 모니터링하는 동안 귀하의 팀은 New Relic을 On-Premise 호스팅 서비스 및 인프라에 계속 사용할 수 있습니다. Adobe New Relic One 계정과 고객이 관리하는 New Relic 계정의 데이터를 시각화할 수 있습니다.
+Adobe 지원에서 서비스의 일부로 New Relic One 및 기타 사내 도구를 사용하여 AEM as a Cloud Service 애플리케이션을 모니터링하는 동안 귀하의 팀은 온프레미스 호스팅 서비스 및 인프라에 New Relic을 계속 사용할 수 있습니다. Adobe New Relic One 계정과 고객이 관리하는 New Relic 계정의 데이터를 시각화할 수 있습니다.
 
 >[!NOTE]
 >
 >New Relic One 내에서 두 데이터 세트를 모두 보려면 사용자에게 올바른 권한이 있어야 하며 두 계정(Adobe New Relic One 및 고객 관리 New Relic 계정)에 대해 동일한 로그인 방법을 사용해야 합니다.
 
++++
+
++++
+
 ### New Relic One 계정의 APM 에이전트가 중단됩니다. 어떻게 되었습니까? {#deactivated}
 
 활동이 90일 이상 감지되지 않으면 [APM 에이전트가 중단됩니다](#limitations). 이 문서의 [New Relic One 하위 계정 활성화](#activate-sub-account) 섹션에서 동일한 단계에 따라 New Relic One 하위 계정을 다시 활성화하십시오.
++++

@@ -3,10 +3,10 @@ title: Cloud Manager에 Edge Delivery 사이트 추가
 description: 프로덕션 프로그램 또는 샌드박스 프로그램에 Edge Delivery 사이트를 추가하는 방법을 알아봅니다.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f684a52ca3b51d1aa4412122f7ad28dde3e2672f
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 3%
+source-wordcount: '498'
+ht-degree: 5%
 
 ---
 
@@ -56,6 +56,6 @@ ht-degree: 3%
 
 저장소가 확인되면 Edge Delivery 사이트 테이블의 상태가 흰색 확인 표시가 있는 녹색 원으로 변경됩니다.
 
-같은 표에서 ![Edge Delivery 사이트에 대한 정보를 클릭할 수 있습니다.](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg): 저장소의 확인된 URL 및 미리 보기 및 프로덕션 웹 사이트의 URL 등 사이트에 대한 세부 정보를 봅니다.
+같은 표에서 ![Edge Delivery 사이트에 대한 정보](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)를 클릭하여 저장소의 확인된 URL 및 미리 보기 및 프로덕션 웹 사이트의 URL과 같은 사이트에 대한 세부 정보를 봅니다.
 
 

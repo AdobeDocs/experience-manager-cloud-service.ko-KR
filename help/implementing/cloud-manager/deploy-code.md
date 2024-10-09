@@ -5,10 +5,10 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '1197'
-ht-degree: 94%
+source-wordcount: '1195'
+ht-degree: 90%
 
 ---
 
@@ -82,7 +82,7 @@ _전체 스택 코드 파이프라인 유형만 코드 스캔, 기능 테스트,
    * UI 테스트는 언어 및 프레임워크(예: Java 및 Maven, Node 및 WebDriver.io 또는 Selenium을 기반으로 구축된 기타 프레임워크 및 기술)에서 다양한 선택을 허용하도록 도커 이미지에 패키징된 Selenium 기반 테스트입니다.
    * 자세한 내용을 보려면 [사용자 정의 UI 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)를 참조하십시오.
 
-* **경험 감사** - 파이프라인의 이 단계는 항상 실행되며 건너뛸 수 없습니다. 프로덕션 파이프라인이 실행되면 검사를 실행할 사용자 정의 기능 테스트 후에 경험 감사 단계가 포함됩니다.
+* **경험 감사** - 파이프라인의 이 단계는 항상 실행되며 건너뛸 수 없습니다. 프로덕션 파이프라인이 실행되면 검사를 실행하는 사용자 정의 기능 테스트 후 경험 감사 단계가 포함됩니다.
    * 구성된 페이지는 서비스에 제출되고 평가됩니다.
    * 결과는 정보 제공용이며 점수, 현재 점수와 이전 점수 간의 변화를 보여 줍니다.
    * 이 인사이트는 현재 배포에 도입될 회귀가 있는지 확인하는 데 유용합니다.
@@ -147,7 +147,7 @@ _전체 스택 코드 파이프라인 유형만 코드 스캔, 기능 테스트,
 
 ### 제한 사항 {#limitations}
 
-* 프로덕션 배포 단계를 다시 실행하는 것은 마지막 실행에 대해서만 가능합니다.
+* 프로덕션 배포 단계를 다시 실행하는 것은 마지막 실행에만 사용할 수 있습니다.
 * 푸시 업데이트 실행은 재실행이 불가능합니다.
    * 마지막 실행이 푸시 업데이트 실행인 경우 재실행이 불가능합니다.
 * 프로덕션 배포 단계 이전의 어느 시점에서 마지막 실행이 실패한 경우 재실행이 불가능합니다.

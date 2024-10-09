@@ -5,9 +5,9 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 493c5729c3107f151685a243006b17196b74c1bd
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '535'
 ht-degree: 6%
 
 ---
@@ -24,7 +24,7 @@ Cloud를 사용하여 자체 SSL 인증서 또는 Adobe 관리 DV(도메인 유�
 ## 사전 요구 사항 {#prerequisites}
 
 * 인증서를 추가하려면 사용자는 **비즈니스 소유자** 또는 **배포 관리자** 역할의 멤버여야 합니다.
-* 자체 인증서를 설치하는 경우 [SSL 인증서 관리 소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)에서 **인증서 요구 사항**&#x200B;을 검토하십시오.
+* 자체 인증서를 설치하는 경우 [SSL 인증서 관리 소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)에서 **인증서 요구 사항**&#x200B;을 참조하십시오.
 
 ## SSL 인증서 추가 {#add-certificate}
 
@@ -55,4 +55,4 @@ Cloud를 사용하여 자체 SSL 인증서 또는 Adobe 관리 DV(도메인 유�
 
 >[!TIP]
 >
->인증서를 추가하거나 관리하는 데 문제가 있는 경우 [SSL 인증서 오류 문제 해결](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md) 문서를 참조하십시오.
+>인증서를 추가하거나 관리하는 데 문제가 있는 경우 [SSL 인증서 오류 문제 해결](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)을 참조하십시오.

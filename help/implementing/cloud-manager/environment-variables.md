@@ -5,10 +5,10 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '988'
-ht-degree: 76%
+ht-degree: 72%
 
 ---
 
@@ -90,7 +90,7 @@ ht-degree: 76%
 
 1. 필요한 구성을 변경한 후 **저장**&#x200B;을 선택합니다.
 
-[변수를 추가할 때와 마찬가지로](#add-variables) **업데이트 중** 상태의 표시기가 표 상단과 새로 업데이트된 변수 옆에 표시되어 구성을 통해 환경이 업데이트되고 있음을 나타냅니다. 완료된 후에 업데이트된 환경 변수가 표에 표시됩니다.
+[변수를 추가할 때와 마찬가지로](#add-variables) 상태가 **업데이트 중**&#x200B;인 표시기가 표 상단과 새로 업데이트된 변수 옆에 표시되어 구성을 통해 환경이 업데이트되고 있음을 나타냅니다. 완료된 후에 업데이트된 환경 변수가 표에 표시됩니다.
 
 >[!TIP]
 >

@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 7c195e5640f828d2c59dbabd8f29127692788576
+source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
 workflow-type: tm+mt
-source-wordcount: '9402'
+source-wordcount: '10490'
 ht-degree: 2%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 2%
       * 제목, 설명, 태그 및 사용자 지정 메타데이터 필드와 같은 비디오의 속성을 편집합니다.
         [비디오 속성 편집](/help/assets/manage-digital-assets.md#editing-properties)
 
-      * [디지털 에셋에 대한 메타데이터 관리](/help/assets/manage-metadata.md)
+      * [디지털 에셋용 메타데이터 관리](/help/assets/manage-metadata.md)
       * [메타데이터 스키마](/help/assets/metadata-schemas.md)
 
    * 비디오 검토, 승인 및 주석 달기, 전체 버전 제어 유지
@@ -77,7 +77,7 @@ ht-degree: 2%
       * [비디오에 주석 달기](/help/assets/manage-video-assets.md#annotate-video-assets) 또는 [자산에 주석 달기](/help/assets/manage-digital-assets.md#annotating)
 
       * [버전 만들기](/help/assets/manage-digital-assets.md#asset-versioning)
-      * [에셋에서 워크플로 시작](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
+      * [자산에 대한 워크플로우 시작](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
 
       * [폴더 자산 검토](/help/assets/bulk-approval.md)
       * [프로젝트](/help/sites-cloud/authoring/projects/overview.md)
@@ -524,7 +524,7 @@ Dynamic Media에서 다음에 대한 지원을 활성화할 수 있습니다.
 
 * 대시
 * 다중 캡션 및 오디오 트랙
-* AI 생성 캡션(조기 액세스)
+* AI 생성 캡션(제한된 가용성)
 
 Adobe 고객 지원 사례를 만들고 제출하여.
 
@@ -534,7 +534,7 @@ Adobe 고객 지원 사례를 만들고 제출하여.
 | --- | --- |
 | 대시 | DASH(Digital Adaptive Streaming over HTTP)는 비디오 스트리밍에 대한 국제 표준이며 다양한 비디오 뷰어에서 널리 채택됩니다. 계정에서 DASH가 활성화되면 적응형 비디오 스트리밍을 위해 DASH 또는 HLS 중에서 선택할 수 있는 옵션이 제공됩니다. 또는 뷰어 사전 설정에서 재생 유형으로 **[!UICONTROL 자동]**&#x200B;이(가) 선택된 경우 플레이어 간에 자동 전환으로 둘 다 선택할 수 있습니다.<br>계정에서 DASH를 활성화하면 다음과 같은 몇 가지 주요 이점이 있습니다.<br>·적응형 비트 전송률 스트리밍을 위한 DASH 스트림 비디오 패키지. 이러한 방식은 전달의 효율성을 높이는 결과를 초래한다. 적응형 스트리밍은 고객에게 최상의 시청 환경을 제공합니다.<br>·브라우저가 HLS와 DASH 스트리밍 사이의 Dynamic Media 플레이어 스위치를 사용하여 스트리밍을 최적화하여 최상의 서비스 품질을 보장합니다. Safari 브라우저를 사용하면 비디오 플레이어가 HLS로 자동 전환됩니다.<br>·비디오 뷰어 사전 설정을 편집하여 선호하는 스트리밍 방법(HLS 또는 DASH)을 구성할 수 있습니다.<br>·최적화된 비디오 인코딩으로 DASH 기능을 사용하도록 설정하는 동안 추가 저장소를 사용하지 않도록 합니다. 비디오 저장 비용을 최적화하기 위해 HLS 및 DASH 둘 모두에 대해 단일 비디오 인코딩 세트가 생성된다.<br>·고객이 비디오 게재를 더 쉽게 이용할 수 있도록 지원합니다.<br>·API를 통해 스트리밍 URL도 가져옵니다. |
 | 다중 캡션 및 오디오 트랙 | 여러 캡션 및 오디오 트랙 지원을 자동으로 활성화할 수 있습니다. 활성화한 후 업로드하는 모든 후속 비디오는 비디오에 다중 캡션 및 오디오 트랙을 추가하는 지원이 포함된 새로운 백엔드 아키텍처로 처리됩니다. |
-| AI 생성 캡션(조기 액세스) | AI에서 제공하는 비디오의 캡션을 만듭니다. AI를 사용하여 비디오 트랜스크립트를 만들고 캡션으로 변환합니다. 타임라인도 정의되었습니다. |
+| AI 생성 캡션(제한된 가용성) | AI에서 제공하는 비디오의 캡션을 만듭니다. AI를 사용하여 비디오 트랜스크립트를 만들고 캡션으로 변환합니다. 타임라인도 정의되었습니다. |
 
 >[!IMPORTANT]
 >
@@ -549,7 +549,7 @@ Adobe 고객 지원 사례를 만들고 제출하여.
    * Cloud Service 환경(프로그램 ID 및 환경 ID)입니다.
    * Dynamic Media 회사 계정 이름.
    * Dynamic Media 지역: 북미(NA), 아시아 태평양(APAC) 또는 유럽-중동-아시아(EMEA).
-   * DASH, 다중 캡션 및 다중 오디오 트랙과 AEM as a Cloud Service의 Dynamic Media 계정에서 AI 생성 캡션(조기 액세스) 지원을 활성화하도록 지정합니다.
+   * DASH, 다중 캡션 및 다중 오디오 트랙, 그리고 AEM as a Cloud Service의 Dynamic Media 계정에서 AI 생성 캡션(제한된 가용성)을 지원하도록 지정합니다.
 
 1. Adobe 고객 지원에서 요청을 제출한 순서에 따라 사용자를 고객 대기 목록에 추가합니다.
 1. Adobe이 요청을 처리할 준비가 되면 고객 지원 센터에서 연락하여 지원 대상 날짜를 조정하고 설정합니다.
@@ -560,132 +560,26 @@ Adobe 고객 지원 사례를 만들고 제출하여.
    * 평소대로 [비디오 프로필](/help/assets/dynamic-media/video-profiles.md)을 만듭니다.
    * 비디오에 [여러 캡션 및 오디오 트랙을 추가](#add-msma)합니다.
 
-## Dynamic Media의 비디오에 대한 여러 캡션 및 오디오 트랙 지원 정보{#about-msma}
 
-Dynamic Media의 여러 캡션 및 오디오 트랙 기능을 사용하면 기본 비디오에 여러 캡션 및 오디오 트랙을 쉽게 추가할 수 있습니다. 이 기능은 비디오를 전역 대상자가 액세스할 수 있음을 의미합니다. 여러 언어로 글로벌 대상자에게 게시된 하나의 기본 비디오를 사용자 정의하고 지역별 액세스 가능성 가이드라인을 준수할 수 있습니다. 작성자는 사용자 인터페이스의 단일 탭에서 캡션 및 오디오 트랙을 관리할 수도 있습니다.
-
-![Dynamic Media의 캡션 및 오디오 트랙 탭과 업로드된 .VTT 캡션 파일 및 비디오용 .MP3 오디오 트랙 파일을 보여 주는 표를 함께 제공합니다.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
-
-
-기본 비디오에 여러 캡션 및 오디오 트랙을 추가하는 데 고려할 사용 사례는 다음과 같습니다.
-
-
-| 유형 | 사용 사례 |
-| --- | --- |
-| 캡션 | 다중 언어 지원<br>접근성을 위한 설명 텍스트 |
-| 오디오 트랙 | 다중 언어 지원<br>주석 트랙<br>설명 오디오 |
-
-
-Dynamic Media에서 지원되는 모든 [비디오 형식](/help/assets/file-format-support.md) 및 Dynamic Media Video_360 뷰어를 제외한 모든 Dynamic Media 비디오 뷰어는 여러 캡션 및 오디오 트랙과 함께 사용할 수 있습니다.
-
-다중 캡션 및 다중 오디오 추적 기능은 고객 지원 Adobe에서 활성화(켜기)해야 하는 기능 전환을 통해 Dynamic Media 계정에 사용할 수 있습니다.
-
-### 비디오에 여러 캡션 및 오디오 트랙 추가 {#add-msma}
-
-비디오에 여러 캡션 및 오디오 트랙을 추가하기 전에 이미 다음 캡션 및 오디오 트랙이 있는지 확인하십시오.
-
-* Dynamic Media은 AEM 환경에 설정됩니다.
-* [Dynamic Media 비디오 프로필이 비디오가 수집되는 폴더에 적용됩니다](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
-* [다중 캡션 및 다중 오디오 트랙이 Dynamic Media 계정에 활성화되어 있습니다](/help/assets/dynamic-media/video.md#enable-dash).
-
-추가된 캡션 및 캡션은 WebVTT 및 Adobe VTT 형식에서 지원됩니다. 또한 추가된 오디오 트랙 파일은 MP3 포맷으로 지원됩니다.
-
->[!IMPORTANT]
->
->Dynamic Media 계정에서 여러 캡션 및 오디오 트랙 지원을 사용하도록 설정하기 전에 업로드한 모든 비디오가 [다시 처리되어야 합니다](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). 이 비디오 재처리 단계는 여러 캡션 및 오디오 트랙 기능을 사용할 수 있도록 필요합니다. 비디오 URL은 재처리 후에도 계속 정상적으로 작동하고 재생됩니다.
-
-**비디오에 여러 캡션 및 오디오 트랙을 추가하려면:**
-
-1. [이미 비디오 프로필이 할당된 폴더에 기본 비디오를 업로드](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)합니다.
-1. 여러 캡션 및 오디오 트랙을 추가하려는 업로드된 비디오 자산으로 이동합니다.
-1. 에셋 선택 모드의 목록 보기 또는 카드 보기에서 비디오 에셋을 선택합니다.
-1. 도구 모음에서 속성 아이콘(안에 &quot;i&quot;가 있는 원)을 선택합니다.
-
-   ![자산 속성 단추입니다.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*카드 보기에서 선택한 비디오 자산입니다.*
-
-1. 비디오의 속성 페이지에서 **[!UICONTROL 캡션 및 오디오 트랙]** 탭을 선택합니다.
-
-
-   >[!TIP]
-   >[!UICONTROL 캡션 및 오디오 트랙] 탭이 표시되지 않으면 다음 두 가지 중 하나를 의미합니다.
-   >* 선택한 비디오가 있는 폴더에 비디오 프로필이 할당되어 있지 않습니다. 이 경우 [폴더에 비디오 프로필 적용](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)을 참조하세요.
-   >* 또는 Dynamic Media에서 비디오를 재처리해야 합니다. 이 경우 [폴더에서 Dynamic Media 자산 재처리](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)를 참조하십시오.
-
-   위의 작업 중 하나를 완료했으면 다음 단계로 돌아갑니다.
-
-   ![자산 속성&#x200B;](/help/assets/dynamic-media/assets/msma-audiotracks.png)*비디오의 속성 페이지에 있는 캡션 및 오디오 트랙 탭*
-
-1. (선택 사항) 비디오에 캡션 파일을 하나 이상 추가하려면 다음을 수행합니다.
-
-   * **[!UICONTROL 캡션 업로드]**&#x200B;를 선택합니다.
-   * 하나 이상의 `.vtt`(비디오 텍스트 트랙) 파일로 이동하여 선택한 다음 엽니다.
-   * 미디어 플레이어에 캡션이 표시되도록 하려면 업로드한 각 캡션 파일에 대한 필수 세부 정보(메타데이터)를 추가해야 합니다. 캡션 파일 이름 오른쪽에 있는 연필 아이콘을 선택합니다. 캡션 편집 대화 상자에서 파일에 대한 다음의 필수 정보를 입력한 다음 **[!UICONTROL 저장]**&#x200B;을 선택합니다. 업로드한 각 캡션 파일에 대해 이 프로세스를 반복합니다.
-
-
-   | 캡션 메타데이터 | 설명 |
-   | --- | --- | 
-   | 파일 이름 | 기본 파일 이름은 원래 파일 이름에서 파생됩니다. 파일 이름은 업로드 중에만 변경할 수 있으며 나중에 변경할 수 없습니다. 파일 이름 문자 요구 사항은 AEM Assets의 요구 사항과 동일합니다.<br>추가 캡션 파일 및 오디오 트랙 파일에 같은 파일 이름을 사용할 수 없습니다. |
-   | 언어 | 캡션의 언어를 선택합니다. |
-   | 유형 | 사용 중인 캡션 유형을 선택합니다.<br>**자막** - 대화 상자를 변환하거나 기록하는 비디오와 함께 표시되는 캡션 텍스트입니다.<br>**캡션** - 캡션 텍스트에 배경 소음과 스피커 식별이 포함됩니다. 또한 대화 상자의 번역 또는 트랜스크립션과 함께 다른 관련 세부 정보도 포함됩니다. 이 기능을 사용하면 귀가 들리지 않거나 난청인 개인이 콘텐츠에 더 쉽게 액세스할 수 있습니다. |
-   | 레이블 | 미디어 플레이어의 **[!UICONTROL 오디오 또는 캡션 선택]** 팝업 목록에서 캡션 이름에 대해 표시되는 텍스트입니다. 레이블은 자막 또는 캡션 트랙에 해당하는 것으로, 고객에게 표시됩니다. 예: 영어(CC) |
-
-   필요한 경우 나중에 캡션 메타데이터를 변경하거나 편집할 수 있습니다. 비디오가 게시되면 이러한 세부 사항이 게시된 비디오의 공개 URL에 반영됩니다.
-
-1. (선택 사항) 비디오에 하나 이상의 오디오 트랙을 추가하려면 다음을 수행하십시오.
-
-   * **[!UICONTROL 오디오 트랙 업로드]**&#x200B;를 선택합니다.
-   * 하나 이상의 .mp3 파일로 이동하여 선택한 다음 엽니다.
-   * 미디어 플레이어의 **[!UICONTROL 오디오 또는 캡션 선택]** 팝업 목록에 오디오 트랙을 표시하려면 각 오디오 트랙 파일에 필요한 세부 정보를 추가하십시오. 적절한 표시를 위해 필요한 모든 정보를 포함해야 합니다. 오디오 트랙 파일 이름 오른쪽에 있는 연필 아이콘을 선택합니다. [오디오 트랙 편집] 대화 상자에서 다음 필수 세부 정보를 입력한 다음 **[!UICONTROL 저장]**&#x200B;을 선택합니다. 업로드한 각 오디오 트랙 파일에 대해 이 프로세스를 반복합니다.
-
-   | 오디오 트랙 메타데이터 | 설명 |
-   | --- | --- |
-   | 파일 이름 | 기본 파일 이름은 원래 파일 이름에서 파생됩니다. 파일 이름은 업로드 중에만 변경할 수 있으며 나중에 변경할 수 없습니다. 파일 이름 문자 요구 사항은 AEM Assets의 요구 사항과 동일합니다.<br>추가 오디오 트랙 파일 또는 캡션 파일에 같은 파일 이름을 사용할 수 없습니다. |
-   | 언어 | 오디오 트랙의 언어를 선택합니다. |
-   | 유형 | 사용 중인 오디오 트랙 유형을 선택합니다.<br>**원본** - 비디오에 원래 첨부되고 기본적으로 영어로 선택된 레이블에 `[Original]`(으)로 표시되는 오디오 트랙입니다. **[!UICONTROL 오디오 트랙 편집]** 대화 상자에서 **[!UICONTROL Label]** 및 **[!UICONTROL Language]**&#x200B;을(를) 변경할 수 있지만 기본 비디오가 다시 처리되는 경우에는 기본값이 원래 값으로 설정됩니다.<br>**표준** - 원본이 아닌 언어에 대한 추가 기능 오디오 트랙입니다.<br>**오디오 설명** - 비디오 내의 비언어적 동작 및 제스처에 대한 설명 설명을 포함하는 오디오 트랙으로, 시각 장애가 있는 개인이 콘텐츠에 더 쉽게 액세스할 수 있습니다. |
-   | 레이블 | 미디어 플레이어의 **[!UICONTROL 오디오 또는 캡션 선택]** 팝업 목록에서 오디오 트랙 이름으로 표시되는 텍스트입니다. 레이블은 오디오 트랙에 해당하는 것으로, 고객에게 표시됩니다. 예, `English [Original]`. 비디오에 첨부된 오디오의 레이블은 기본적으로 `[Original]`(으)로 설정됩니다. |
-
-   필요한 경우 나중에 이 오디오 트랙 메타데이터를 변경하거나 편집할 수 있습니다. 비디오가 게시되면 이러한 세부 사항이 게시된 비디오의 공개 URL에 반영됩니다.
-
-1. 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 저장 및 닫기]** 드롭다운 목록에서 **[!UICONTROL 저장]**&#x200B;을 선택합니다. 인터페이스의 상태 열에 표시된 대로 파일이 업로드되고 메타데이터 처리가 시작됩니다.
-
-   >[!NOTE]
-   >
-   >인스턴스의 캐싱 설정에 따라 메타데이터 처리가 미리보기 및 게시된 URL에 반영되기까지 몇 분 정도 걸릴 수 있습니다.
-
-1. (선택 사항) 이전 단계에서 **[!UICONTROL 저장]**&#x200B;을 선택하는 대신 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택한 경우에도 업로드된 파일의 처리 상태를 볼 수 있습니다. [업로드된 캡션 및 오디오 추적 파일의 주기 상태 보기](/help/assets/dynamic-media/video.md#lifecycle-status-video)를 참조하세요.
-
-1. (선택 사항) 게시 전에 비디오를 미리 보고 캡션 및 오디오가 예상대로 작동하는지 확인합니다. [여러 캡션 및 오디오 트랙이 있는 비디오 미리 보기](/help/assets/dynamic-media/video.md#preview-video-audio-subtitle)를 참조하세요.
-
-1. Publish 비디오입니다. [Publish 자산](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)을 참조하세요.
-
-
-
-<!--
+<!-- HIDDEN AS OF OCTOBER 7, 2024 AS PER EMAIL REQUEST FROM RIYA MIDHA ON SAME DATE 
 
 ## About multiple caption and audio track support for videos in Dynamic Media{#about-msma}
 
-With multiple caption and audio track capability in Dynamic Media, you can easily add multiple audio tracks. You can also add multiple caption files using either your own `.vtt` (Video Text Track) files or AI-generated caption files. AI-generated captions in Dynamic Media are designed to enhance video accessibility and engagement by automatically generating accurate and synchronized subtitles. This technology uses advanced AI algorithms to transcribe spoken content into text, which is then displayed as captions on the video. Some key features of this technology include the following:
+With multiple caption and audio track capability in Dynamic Media, you can easily add multiple captions and audio tracks to a primary video. This capability means that your videos are accessible to a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the captions and audio tracks from a single tab in the user interface.
 
-* **Automatic Transcription:** The AI system transcribes spoken words into text in real-time, ensuring that captions are generated quickly and accurately.
-* **Multilingual Support:** Captions can be automatically delivered in more than 60 languages, making it easier to reach a global audience.
-* **Enhanced Accessibility:** By providing captions, videos become more accessible to viewers who are deaf or hard of hearing, or people who prefer to watch videos with the sound off.
-* **Improved Engagement:** Captions can help retain viewer attention and improve comprehension, especially in noisy environments or when the viewer's native language is different from the video's language.
+   ![Captions and audio tracks tab in Dynamic Media along with a table showing uploaded .VTT caption files and uploaded .MP3 audio track files for a video.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
 
-These features make AI-powered captions a valuable tool for content creators looking to enhance their video content's accessibility and engagement. 
-
-![Captions and audio tracks tab in Dynamic Media along with a table showing uploaded .VTT caption files and uploaded .MP3 audio track files for a video.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
 
 Some of the use cases to consider for adding multiple captions and audio tracks to your primary video include the following:
 
-| Type | Use case |
-|--- |--- |
-| **Captions** | Multiple language support |
-|  | Descriptive text for accessibility |
-| **Audio tracks** | Multiple language support  |
-|  | Commentary tracks |
-|  | Descriptive audio |
 
-All [video formats supported in Dynamic Media](/help/assets/file-format-support.md) and all Dynamic Media video viewers - except the Dynamic Media *Video_360* viewer - are supported for use with multiple captions and audio tracks.
+| Type | Use case | 
+| --- | --- |
+| Captions | Multiple language support<br>Descriptive text for accessibility |
+|Audio tracks | Multiple language support<br>Commentary tracks<br>Descriptive audio |
+
+
+All [video formats supported in Dynamic Media](/help/assets/file-format-support.md) and all Dynamic Media video viewers-except the Dynamic Media Video_360 viewer-are supported for use with multiple captions and audio tracks.
 
 Multi-caption and multi-audio track capability is available for your Dynamic Media account by way of a feature toggle that must be enabled (turned on) by Adobe Customer Support.
 
@@ -695,163 +589,268 @@ Before you add multiple caption and audio tracks to your video, be sure you alre
 
 * Dynamic Media is set up in an AEM environment.
 * A [Dynamic Media Video profile is applied to the folder where your videos are ingested](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
-* [Multi-caption/audio tracks and AI-generated captions are enabled on your Dynamic Media account](#enable-dash).
+* [Multi-caption, and multi-audio track is enabled on your Dynamic Media account](/help/assets/dynamic-media/video.md#enable-dash).
 
-Added captions are supported with WebVTT and Adobe VTT formats. And, added audio track files are supported with MP3 format.
+Added captions and captions are supported with WebVTT and Adobe VTT formats. And, added audio track files are supported with MP3 format.
 
 >[!IMPORTANT]
 >
->For videos uploaded *before* enabling multiple caption/audio track support or AI-generated captions on your Dynamic Media account, [you need to reprocess them](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). This reprocessing step ensures that these videos can use the multiple caption/audio track and AI-generated caption features. After reprocessing, the video URLs continue to function and play as usual.
+>Any videos that you uploaded before enabling multiple caption and audio track support on your Dynamic Media account, [must be reprocessed](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). This video reprocessing step is necessary so that multiple caption and audio track capability is available to them. The video URLs continue to work and play as usual, after reprocessing.
 
 **To add multiple captions and audio tracks to your video:**
 
 1. [Upload your primary video to a folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) that already has a video profile assigned to it.
 1. Navigate to the uploaded video asset that you want to add multiple caption and audio tracks.
 1. In asset selection mode, either from the List View or the Card View, select the video asset.
-1. On the toolbar, click the Properties icon (a circle with an "i" in it).
-![Selected video asset with checkmark over video thumbnail image and View Properties highlighted on the toolbar.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card View.*
+1. On the toolbar, select the Properties icon (a circle with an "i" in it). 
+
+   ![Asset properties button.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card View.*
+
 1. On the video's Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
 
+
    >[!TIP]
-   >If you do not see the **[!UICONTROL Captions & Audio Tracks]** tab, it means either one of two things:
-   >
+   >If you do not see the [!UICONTROL Captions & Audio Tracks] tab, it means either one of two things:
    >* The folder in which the selected video resides does not have a video profile assigned to it. In which case, see [Apply a video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
    >* Or, Dynamic Media must reprocess the video. In which case, see [Reprocess Dynamic Media assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+
+    When you have completed either one of the above tasks, return to these steps.
+
+   ![Asset properties](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Captions and audio tracks tab on the video's Properties page.*
+
+1. (Optional) To add one or more caption files to a video, do the following:
+
+    * Select **[!UICONTROL Upload Captions]**.
+    * Navigate to, and select, one or more `.vtt` (Video Text Tracks) files and open them.
+    * For captions to be visible on the media player, you must add required details (metadata) about each caption file that you uploaded. Select the pencil icon to the right of a caption file name. In the Edit Caption dialog box, enter the following required details about the file, then select **[!UICONTROL Save]**. Repeat this process for each caption file that you uploaded:
+
+
+    | Caption metadata | Description | 
+    | --- | --- | 
+    Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional caption files and audio track files. |
+    | Language | Select the language of the caption. |
+    | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text includes background noises and speaker identification. It also includes other relevant details alongside the translation or transcription of dialogue. This functionality makes the content more accessible to individuals who are deaf or hard of hearing. |
+    | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, English (CC). |
+
+    You can change or edit caption metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
+
+1. (Optional) To add one or more audio tracks to a video, do the following:
+
+    * Select **[!UICONTROL Upload Audio Tracks]**.
+    * Navigate to, and select, one or more .mp3 files and open them.
+    * To make audio tracks visible in the **[!UICONTROL Select audio or caption]** pop-up list on the media player, add the required details for each audio track file. Ensure you include all necessary information for proper display. Select the pencil icon to the right of an audio track file name. In the Edit Audio Track dialog box, enter the following required details, then select **[!UICONTROL Save]**. Repeat this process for each audio track file that you uploaded.
+
+    | Audio Track metadata | Description |
+    | --- | --- |
+    | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional audio track files or caption files.| 
+    | Language | Select the language of the audio track. |
+    | Type | Select the type of audio track that you are using.<br>**Original** - The audio track originally attached to the video and represented as `[Original]` in the label with English language selected by default. While **[!UICONTROL Label]** and **[!UICONTROL Language]** can be changed in the **[!UICONTROL Edit Audio Track]** dialog box, it defaults to the original values if the primary video is reprocessed.<br>**Standard** - An add-on audio track for a language other than the original.<br>**Audio description** - An audio track that also includes a descriptive narration of non-verbal actions and gestures in the video, making content more accessible for individuals who are visually impaired. |
+    | Label | The text that is displayed as the audio track's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to an audio track. For example, `English [Original]`. The label of audio attached to a video is set to `[Original]` by default. |
+
+    You can change or edit this audio track metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
+
+1. In the upper-right corner of the page, from the **[!UICONTROL Save & Close]** drop-down list, select **[!UICONTROL Save]**. The files are uploaded and metadata processing begins, as seen in the Status column of the interface.
+
+    >[!NOTE]
+    >
+    >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
+
+1. (Optional) If you selected **[!UICONTROL Save & Close]** in the previous step, instead of selecting **[!UICONTROL Save]**, you can still view the processing status of the uploaded files. See [View the lifecycle status of uploaded caption and audio track files](/help/assets/dynamic-media/video.md#lifecycle-status-video).
+
+1. (Optional) Preview the video before publishing to ensure the captions and audio work as expected. See [Preview a video that has multiple captions and audio tracks](/help/assets/dynamic-media/video.md#preview-video-audio-subtitle).
+
+1. Publish the video. See [Publish assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md). -->
+
+
+
+## Dynamic Media의 비디오에 대한 여러 캡션 및 오디오 트랙 지원 정보{#about-msma}
+
+Dynamic Media의 여러 캡션 및 오디오 트랙 기능을 사용하면 여러 오디오 트랙을 쉽게 추가할 수 있습니다. 자신의 `.vtt`(비디오 텍스트 트랙) 파일 또는 AI가 생성한 캡션 파일을 사용하여 여러 캡션 파일을 추가할 수도 있습니다. Dynamic Media의 AI 생성 캡션은 정확하고 동기화된 자막을 자동으로 생성하여 비디오 접근성과 참여를 향상시키도록 설계되었습니다. 이 기술은 고급 AI 알고리즘을 사용하여 음성 콘텐츠를 텍스트로 변환한 다음 비디오에 캡션으로 표시됩니다. 이 기술의 몇 가지 주요 기능은 다음과 같습니다.
+
+* **자동 트랜스크립션:** AI 시스템은 음성 단어를 텍스트로 실시간으로 트랜스크립션하여 캡션이 빠르고 정확하게 생성되도록 합니다.
+* **다국어 지원:** 캡션은 60개 이상의 언어로 자동으로 배달되므로 글로벌 대상자에게 쉽게 연결할 수 있습니다.
+* **향상된 액세스 가능성:** 캡션을 제공하면 청각 장애가 있거나 난청인 뷰어 또는 사운드가 꺼진 상태에서 비디오를 보려는 사용자가 비디오에 보다 쉽게 액세스할 수 있습니다.
+* **향상된 참여:** 캡션을 사용하면 특히 소음이 많은 환경에서 또는 뷰어의 기본 언어가 비디오의 언어와 다를 때 뷰어의 주의를 집중하고 이해력을 향상시킬 수 있습니다.
+
+이러한 기능을 통해 AI 기반 캡션은 비디오 콘텐츠의 접근성 및 참여를 향상시키려는 콘텐츠 크리에이터에게 유용한 도구가 됩니다.
+
+![Dynamic Media의 캡션 및 오디오 트랙 탭과 업로드된 .VTT 캡션 파일 및 비디오용 .MP3 오디오 트랙 파일을 보여 주는 표를 함께 제공합니다.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
+
+기본 비디오에 여러 캡션 및 오디오 트랙을 추가하는 데 고려할 사용 사례는 다음과 같습니다.
+
+| 유형 | 사용 사례 |
+|--- |--- |
+| **캡션** | 다중 언어 지원 |
+|  | 접근성을 위한 설명 텍스트 |
+| **오디오 트랙** | 다중 언어 지원 |
+|  | 주석 트랙 |
+|  | 설명 오디오 |
+
+Dynamic Media *Video_360* 뷰어를 제외한 Dynamic Media](/help/assets/file-format-support.md) 및 모든 Dynamic Media 비디오 뷰어에서 지원되는 모든 [비디오 형식 및 여러 캡션 및 오디오 트랙과 함께 사용할 수 있습니다.
+
+다중 캡션 및 다중 오디오 추적 기능은 고객 지원 Adobe에서 활성화(켜기)해야 하는 기능 전환을 통해 Dynamic Media 계정에 사용할 수 있습니다.
+
+### 비디오에 여러 캡션 및 오디오 트랙 추가 {#add-msma}
+
+비디오에 여러 캡션 및 오디오 트랙을 추가하기 전에 이미 다음 캡션 및 오디오 트랙이 있는지 확인하십시오.
+
+* Dynamic Media은 AEM 환경에 설정됩니다.
+* [Dynamic Media 비디오 프로필이 비디오가 수집되는 폴더에 적용됩니다](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
+* [다중 캡션/오디오 트랙 및 AI 생성 캡션이 Dynamic Media 계정에 활성화되어 있습니다](#enable-dash).
+
+추가된 캡션은 WebVTT 및 Adobe VTT 형식으로 지원됩니다. 또한 추가된 오디오 트랙 파일은 MP3 포맷으로 지원됩니다.
+
+>[!IMPORTANT]
+>
+>Dynamic Media 계정에서 여러 캡션/오디오 트랙 지원 또는 AI 생성 캡션을 사용하도록 *이전*&#x200B;에 업로드된 비디오의 경우 [다시 처리해야 합니다](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). 이 재처리 단계에서는 이러한 비디오가 여러 캡션/오디오 트랙 및 AI가 생성한 캡션 기능을 사용할 수 있도록 합니다. 재처리 후에도 비디오 URL은 평소대로 계속 작동하고 재생됩니다.
+
+**비디오에 여러 캡션 및 오디오 트랙을 추가하려면:**
+
+1. [이미 비디오 프로필이 할당된 폴더에 기본 비디오를 업로드](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)합니다.
+1. 여러 캡션 및 오디오 트랙을 추가하려는 업로드된 비디오 자산으로 이동합니다.
+1. 에셋 선택 모드의 목록 보기 또는 카드 보기에서 비디오 에셋을 선택합니다.
+1. 도구 모음에서 속성 아이콘(안에 &quot;i&quot;가 있는 원)을 클릭합니다.
+   ![선택한 비디오 자산에 비디오 썸네일 이미지 위에 체크 표시가 있고 도구 모음에 속성 보기가 강조 표시되어 있습니다.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*카드 보기에서 선택한 비디오 자산입니다.*
+1. 비디오의 속성 페이지에서 **[!UICONTROL 캡션 및 오디오 트랙]** 탭을 선택합니다.
+
+   >[!TIP]
+   >**[!UICONTROL 캡션 및 오디오 트랙]** 탭이 표시되지 않으면 다음 두 가지 중 하나를 의미합니다.
    >
-   >When you have completed either one of the above tasks, return to these steps.
-  
-   ![Captions and Audio Tracks tab on the Properties page.](/help/assets/dynamic-media/assets/msma-audiotracks.png)
-   *Captions and audio tracks tab on the video's Properties page.*
+   >* 선택한 비디오가 있는 폴더에 비디오 프로필이 할당되어 있지 않습니다. 이 경우 [폴더에 비디오 프로필 적용](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)을 참조하세요.
+   >* 또는 Dynamic Media에서 비디오를 재처리해야 합니다. 이 경우 [폴더에서 Dynamic Media 자산 재처리](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)를 참조하십시오.
+   >
+   >위의 작업 중 하나를 완료했으면 다음 단계로 돌아갑니다.
 
-1. To add one or more audio tracks to a video, do the following:
-   1. Select **[!UICONTROL Upload Audio Tracks]**.
-   1. Navigate to, and select, one or more .mp3 files and open them.
-   1. For audio tracks to be visible in the **[!UICONTROL Select audio or caption]** pop-up list on the media player, you must add required details about each audio track file. Doing so ensures that all audio tracks are properly listed and accessible. Select the pencil icon to the right of an audio track file name. In the **Edit Audio Track** dialog box, enter the following required details:
-    
-      | Audio Track metadata | Description |
+   속성 페이지의 ![캡션 및 오디오 트랙 탭](/help/assets/dynamic-media/assets/msma-audiotracks.png)
+   *비디오의 속성 페이지에 있는 캡션 및 오디오 트랙 탭*
+
+1. 비디오에 하나 이상의 오디오 트랙을 추가하려면 다음을 수행하십시오.
+   1. **[!UICONTROL 오디오 트랙 업로드]**&#x200B;를 선택합니다.
+   1. 하나 이상의 .mp3 파일로 이동하여 선택한 다음 엽니다.
+   1. 미디어 플레이어의 **[!UICONTROL 오디오 또는 캡션 선택]** 팝업 목록에 오디오 트랙을 표시하려면 각 오디오 트랙 파일에 대한 필수 세부 정보를 추가해야 합니다. 이렇게 하면 모든 오디오 트랙이 올바르게 나열되고 액세스할 수 있습니다. 오디오 트랙 파일 이름 오른쪽에 있는 연필 아이콘을 선택합니다. **오디오 트랙 편집** 대화 상자에 다음과 같은 필수 세부 정보를 입력하십시오.
+
+      | 오디오 트랙 메타데이터 | 설명 |
       |--- |--- |
-      | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional audio track files or caption files. |
-      | Language | Select the correct language of the audio track. |
-      | Type | Select the type of audio track that you are using.<br>**Original** - The audio track originally attached to the video and represented as `[Original]` in the label with `English` language selected by default. While **[!UICONTROL Label]** and **[!UICONTROL Language]** can be changed in the **[!UICONTROL Edit Audio Track]** dialog box, it defaults to the original values if the primary video is reprocessed.<br>**Standard** - An add-on audio track for a language other than the original.<br>**Audio description** - An audio track that also includes a descriptive narration of non-verbal actions and gestures in the video, making content more accessible for individuals who are visually impaired. |
-      | Label | The text that is displayed as the audio track's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to an audio track. For example, `English [Original]`. The label of audio attached to a video is set to `[Original]` by default. |
+      | 파일 이름 | 기본 파일 이름은 원래 파일 이름에서 파생됩니다. 파일 이름은 업로드 중에만 변경할 수 있으며 나중에 변경할 수 없습니다. 파일 이름 문자 요구 사항은 AEM Assets의 요구 사항과 동일합니다.<br>추가 오디오 트랙 파일 또는 캡션 파일에 같은 파일 이름을 사용할 수 없습니다. |
+      | 언어 | 오디오 트랙의 올바른 언어를 선택합니다. |
+      | 유형 | 사용 중인 오디오 트랙 유형을 선택합니다.<br>**원본** - 비디오에 원래 첨부되고 기본적으로 `English` 언어가 선택된 레이블에 `[Original]`(으)로 표시되는 오디오 트랙입니다. **[!UICONTROL 오디오 트랙 편집]** 대화 상자에서 **[!UICONTROL Label]** 및 **[!UICONTROL Language]**&#x200B;을(를) 변경할 수 있지만 기본 비디오가 다시 처리되는 경우에는 기본값이 원래 값으로 설정됩니다.<br>**표준** - 원본이 아닌 언어에 대한 추가 기능 오디오 트랙입니다.<br>**오디오 설명** - 비디오 내의 비언어적 동작 및 제스처에 대한 설명 설명을 포함하는 오디오 트랙으로, 시각 장애가 있는 개인이 콘텐츠에 더 쉽게 액세스할 수 있습니다. |
+      | 레이블 | 미디어 플레이어의 **[!UICONTROL 오디오 또는 캡션 선택]** 팝업 목록에서 오디오 트랙 이름으로 표시되는 텍스트입니다. 레이블은 오디오 트랙에 해당하는 것으로, 고객에게 표시됩니다. 예, `English [Original]`. 비디오에 첨부된 오디오의 레이블은 기본적으로 `[Original]`(으)로 설정됩니다. |
 
-      You can change or edit this audio track metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
+      필요한 경우 나중에 이 오디오 트랙 메타데이터를 변경하거나 편집할 수 있습니다. 비디오가 게시되면 이러한 세부 사항이 게시된 비디오의 공개 URL에 반영됩니다.
 
-   1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**.
-   1. Do one of the following:
-        * Repeat this process for each audio track file that you upload.
-        * Continue to the next step to add captions to a video.
+   1. 페이지의 오른쪽 상단 근처에 있는 **[!UICONTROL 저장 및 닫기]** 드롭다운에서 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+   1. 다음 중 하나를 수행하십시오.
+      * 업로드하는 각 오디오 트랙 파일에 대해 이 프로세스를 반복합니다.
+      * 다음 단계로 계속하여 비디오에 캡션을 추가합니다.
 
-1. To add one or more caption files to a video, choose which one of the following use cases best fits your scenario:
-   
-   |  | Use case | Create Caption option to use |
+1. 비디오에 하나 이상의 캡션 파일을 추가하려면 다음 사용 사례 중 시나리오에 가장 적합한 사용 사례를 선택합니다.
+
+   |  | 사용 사례 | 사용할 캡션 만들기 옵션 |
    | --- | --- | --- |
-   | **Option 1** | I have my own pre-existing caption files that are in the languages that I want to use.<br>See **Option 1** below. | **[!UICONTROL Upload Files]** |
-   | **Option 2** | I want AI to generate my caption files in multiple languages.<br>See **Option 2** below. | **[!UICONTROL Convert audio tracks]** |
-   | **Option 3** | Text in a caption file (`.vtt`) needs to be corrected, reuploaded to replace the old `.vtt` file, then have AI translate the corrected file.<br>See **Option 3** below. | **[!UICONTROL Translate caption]** |
+   | **옵션 1** | 사용하려는 언어로 된 기존 캡션 파일이 있습니다.<br>아래의 **옵션 1**&#x200B;을 참조하세요. | **[!UICONTROL 파일 업로드]** |
+   | **옵션 2** | AI가 여러 언어로 캡션 파일을 생성했으면 합니다.<br>아래의 **옵션 2**&#x200B;를 참조하세요. | **[!UICONTROL 오디오 트랙 변환]** |
+   | **옵션 3** | 캡션 파일(`.vtt`)의 텍스트를 수정하고 다시 업로드하여 이전 `.vtt` 파일을 바꾼 다음 AI가 수정된 파일을 번역하도록 해야 합니다.<br>아래의 **옵션 3**&#x200B;을 참조하세요. | **[!UICONTROL 캡션 번역]** |
 
-    ![Create Captions options.](/help/assets/dynamic-media/assets/msma-createcaption.png)
-    *The Create Captions drop-down menu gives you three options: Upload Files, Convert audio tracks, and Translate caption.*
+   ![캡션 만들기 옵션](/help/assets/dynamic-media/assets/msma-createcaption.png)
+   *캡션 만들기 드롭다운 메뉴에는 파일 업로드, 오디오 트랙 변환, 캡션 번역 등 세 가지 옵션이 있습니다.*
 
-    +++**Option 1:** *I have my own pre-existing caption files that are in the languages that I want to use* (**[!UICONTROL Upload Files]** option)
++++**옵션 1:** *사용하려는 언어로 된 기존 캡션 파일이 있습니다.*(**[!UICONTROL 파일 업로드]** 옵션)
 
-    1. Near the upper-right side of the page, click **[!UICONTROL Create Caption]** > **[!UICONTROL Upload files]**.
-    1. Navigate to, and select, one or more of your pre-existing `.vtt` files and open them.
-    1. For captions to be visible on the media player, you *must* add the required details about *each* caption file that you upload. Select the pencil icon to the right of a caption file name. In the **Edit Caption** dialog box, enter the following required details about the file:
-    
-        | Caption metadata | Description |
-        |--- |--- |
-        | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional caption files and audio track files. |
-        | Language | Select the language of the caption. After a caption file is processed, this language field becomes uneditable (dimmed) |
-        | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text includes background noises, speaker differentiation, and other relevant details, along with dialogue translation or transcription, enhancing accessibility for individuals who are deaf or hard of hearing. |
-        | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
+   1. 페이지 오른쪽 상단 근처에 있는 **[!UICONTROL 캡션 만들기]** > **[!UICONTROL 파일 업로드]**&#x200B;를 클릭합니다.
+   1. 기존 `.vtt`개 파일 중 하나 이상으로 이동하여 선택한 다음 엽니다.
+   1. 미디어 플레이어에 캡션을 표시하려면 *반드시*&#x200B;업로드하는 *각각* 캡션 파일에 대한 필수 세부 정보를 추가해야 합니다. 캡션 파일 이름 오른쪽에 있는 연필 아이콘을 선택합니다. **캡션 편집** 대화 상자에 파일에 대한 다음 필수 정보를 입력하십시오.
 
-        You can change or edit caption metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
+      | 캡션 메타데이터 | 설명 |
+      |--- |--- |
+      | 파일 이름 | 기본 파일 이름은 원래 파일 이름에서 파생됩니다. 파일 이름은 업로드 중에만 변경할 수 있으며 나중에 변경할 수 없습니다. 파일 이름 문자 요구 사항은 AEM Assets의 요구 사항과 동일합니다.<br>추가 캡션 파일 및 오디오 트랙 파일에 같은 파일 이름을 사용할 수 없습니다. |
+      | 언어 | 캡션의 언어를 선택합니다. 캡션 파일이 처리된 후에는 이 언어 필드를 편집할 수 없습니다(흐리게 표시됨). |
+      | 유형 | 사용 중인 캡션 유형을 선택합니다.<br>**자막** - 대화 상자를 변환하거나 기록하는 비디오와 함께 표시되는 캡션 텍스트입니다.<br>**캡션** - 캡션 텍스트에는 대화 상자 번역 또는 트랜스크립션과 함께 배경 소음, 스피커 차별화 및 기타 관련 세부 정보가 포함되어 있어 청각 장애가 있거나 난청인 개인의 접근성을 향상시킵니다. |
+      | 레이블 | 미디어 플레이어의 **[!UICONTROL 오디오 또는 캡션 선택]** 팝업 목록에서 캡션 이름에 대해 표시되는 텍스트입니다. 레이블은 자막 또는 캡션 트랙에 해당하는 것으로, 고객에게 표시됩니다. 예: `English (CC)` |
 
-    1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. The files are uploaded and metadata processing begins, as seen in the **Status** column of the interface.
+      필요한 경우 나중에 캡션 메타데이터를 변경하거나 편집할 수 있습니다. 비디오가 게시되면 이러한 세부 사항이 게시된 비디오의 공개 URL에 반영됩니다.
 
-        >[!NOTE]
-        >
-        >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
+   1. 페이지의 오른쪽 상단 근처에 있는 **[!UICONTROL 저장 및 닫기]** 드롭다운에서 **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 인터페이스의 **Status** 열에 표시된 대로 파일이 업로드되고 메타데이터 처리가 시작됩니다.
 
-    1. If you selected **[!UICONTROL Save & Close]** in the previous step, instead of selecting **[!UICONTROL Save]**, you can still view the processing status of the uploaded files. See [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
-    1. Continue to step 8.
+      >[!NOTE]
+      >
+      >인스턴스의 캐싱 설정에 따라 메타데이터 처리가 미리보기 및 게시된 URL에 반영되기까지 몇 분 정도 걸릴 수 있습니다.
 
-    +++
+   1. 이전 단계에서 **[!UICONTROL 저장]**&#x200B;을 선택하는 대신 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택한 경우에도 업로드된 파일의 처리 상태를 볼 수 있습니다. [업로드된 캡션 및 오디오 추적 파일의 주기 상태 보기](#lifecycle-status-video)를 참조하세요.
+   1. 8단계로 진행합니다.
 
-    +++**Option 2:** *I want AI to generate my caption files in multiple languages* (**[!UICONTROL Convert audio tracks]** option)
++++
 
-    1. Near the upper-right corner of the page, click **[!UICONTROL Create Caption]** > **[!UICONTROL Convert audio tracks]**.
++++**옵션 2:** *AI가 여러 언어로 캡션 파일을 생성하기를 원합니다*(**[!UICONTROL 오디오 트랙 변환]** 옵션)
 
-        ![Convert audio tracks dialog box.](/help/assets/dynamic-media/assets/msma-convertaudiotracks.png)
-        *The Convert Audio Tracks dialog box uses AI to generate caption files in multiple languages.*
+   1. 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 캡션 만들기]** > **[!UICONTROL 오디오 트랙 변환]**&#x200B;을 클릭합니다.
 
-    1. In the **Convert Audio Tracks** dialog box, set the following options:
-    
-        | Option | Description |
-        |--- |--- |
-        | Audio track to convert | In the drop-down list, choose the uploaded audio track file from which you want captions generated using AI.  |
-        | Output languages | In the drop-down list, select one or more languages in which you want the caption file to appear.<br>To remove a selected language, click **X**.<br>During video playback, the list of languages appears in the media player in the order that you select them here. |
+      ![오디오 트랙 변환 대화 상자](/help/assets/dynamic-media/assets/msma-convertaudiotracks.png)
+      *오디오 트랙 변환 대화 상자는 AI를 사용하여 여러 언어로 캡션 파일을 생성합니다.*
 
-    1. Click **[!UICONTROL Done]**.
-    1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. 
-    1. Click the **[!UICONTROL Captions & Audio tracks]** tab again. One or more caption files are created and processing begins, as seen in the **Status** column of the interface. See also [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
+   1. **오디오 트랙 변환** 대화 상자에서 다음 옵션을 설정합니다.
 
-        >[!NOTE]
-        >
-        >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
+      | 옵션 | 설명 |
+      |--- |--- |
+      | 변환할 오디오 트랙 | 드롭다운 목록에서 AI를 사용하여 캡션을 생성할 업로드된 오디오 트랙 파일을 선택합니다. |
+      | 출력 언어 | 드롭다운 목록에서 캡션 파일을 표시할 언어를 하나 이상 선택합니다.<br>선택한 언어를 제거하려면 **X**&#x200B;을 클릭하세요.<br>비디오를 재생하는 동안 여기에서 선택한 순서대로 미디어 플레이어에 언어 목록이 나타납니다. |
 
-    1. (Optional) Select the pencil icon to the right of a caption file name. In the **Edit Caption** dialog box, you can edit the following details about the file:
+   1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
+   1. 페이지의 오른쪽 상단 근처에 있는 **[!UICONTROL 저장 및 닫기]** 드롭다운에서 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+   1. **[!UICONTROL 캡션 및 오디오 트랙]** 탭을 다시 클릭합니다. 인터페이스의 **Status** 열에 표시되는 것과 같이 캡션 파일이 하나 이상 만들어지고 처리가 시작됩니다. [업로드된 캡션 및 오디오 추적 파일의 주기 상태 보기](#lifecycle-status-video)도 참조하세요.
 
-        | Caption metadata | Description |
-        | --- | --- |
-        | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text includes background noises and speaker differentiation. It also includes other relevant information, along with the translation or transcription of the dialogue. This approach makes the content more accessible for individuals who are deaf or hard of hearing. |
-        | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
+      >[!NOTE]
+      >
+      >인스턴스의 캐싱 설정에 따라 메타데이터 처리가 미리보기 및 게시된 URL에 반영되기까지 몇 분 정도 걸릴 수 있습니다.
 
-        You can change or edit certain caption metadata later, if necessary. When the video is published, these metadata details are reflected on public URLs in published videos.
-    1. Continue to step 8.
+   1. (선택 사항) 캡션 파일 이름 오른쪽에 있는 연필 아이콘을 선택합니다. **캡션 편집** 대화 상자에서 파일에 대한 다음 세부 정보를 편집할 수 있습니다.
 
-    +++
+      | 캡션 메타데이터 | 설명 |
+      | --- | --- |
+      | 유형 | 사용 중인 캡션 유형을 선택합니다.<br>**자막** - 대화 상자를 변환하거나 기록하는 비디오와 함께 표시되는 캡션 텍스트입니다.<br>**캡션** - 캡션 텍스트에 배경 소리와 스피커 차별화가 포함됩니다. 대화 상자의 번역이나 트랜스크립션과 함께 기타 관련 정보도 포함됩니다. 이러한 접근 방식은 청각장애가 있거나 난청인 개인에게 콘텐츠에 더 쉽게 접근할 수 있도록 한다. |
+      | 레이블 | 미디어 플레이어의 **[!UICONTROL 오디오 또는 캡션 선택]** 팝업 목록에서 캡션 이름에 대해 표시되는 텍스트입니다. 레이블은 자막 또는 캡션 트랙에 해당하는 것으로, 고객에게 표시됩니다. 예: `English (CC)` |
 
-    +++**Option 3:** *Text in a caption file (`.vtt`) needs to be corrected, reuploaded to replace the old `.vtt` file, then have AI translate the corrected file* (**[!UICONTROL Translate captions]** option)
+      필요한 경우 나중에 특정 캡션 메타데이터를 변경하거나 편집할 수 있습니다. 비디오가 게시되면 이러한 메타데이터 세부 사항이 게시된 비디오의 공개 URL에 반영됩니다.
+   1. 8단계로 진행합니다.
 
-    1. Click **[!UICONTROL Create Caption]** > **[!UICONTROL Translate captions]**. This option is available if one or more caption files were already added and processed.
++++
 
-        ![Translate Captions dialog box.](/help/assets/dynamic-media/assets/msma-translate-captions.png)
-        *The Translate Captions dialog box lets you use an existing caption file to have AI generate new caption files in multiple languages.*
++++**옵션 3:** *캡션 파일(`.vtt`)의 텍스트를 수정하고, 다시 업로드하여 이전 `.vtt` 파일을 바꾼 다음 AI가 수정된 파일을 번역하도록 해야 함*(**[!UICONTROL 캡션 번역]** 옵션)
 
-    1. In the **Translate caption** dialog box, set the following options:
+   1. **[!UICONTROL 캡션 만들기]** > **[!UICONTROL 캡션 번역]**&#x200B;을 클릭합니다. 이 옵션은 하나 이상의 캡션 파일이 이미 추가되고 처리된 경우에 사용할 수 있습니다.
 
-        | Option | Description |
-        |--- |--- |
-        | Caption to translate | In the drop-down list, choose a caption file from which you want the captions generated using AI. |
-        | Output languages | In the drop-down list, select one or more languages in which you want the caption file to appear.<br>To remove a selected language, click **X**.<br>During video playback, the list of languages appears in the media player in the order that you select them here. |
+      ![캡션 번역 대화 상자](/help/assets/dynamic-media/assets/msma-translate-captions.png)
+      *캡션 번역 대화 상자를 통해 기존 캡션 파일을 사용하여 AI가 여러 언어로 새 캡션 파일을 생성하도록 할 수 있습니다.*
 
-    1. Click **[!UICONTROL Done]**.
-    1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. 
-    1. Click the **[!UICONTROL Captions & Audio tracks]** tab again. One or more caption files are created and processing begins, as seen in the **Status** column of the interface. See also [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
+   1. **캡션 번역** 대화 상자에서 다음 옵션을 설정합니다.
 
-        >[!NOTE]
-        >
-        >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
+      | 옵션 | 설명 |
+      |--- |--- |
+      | 번역할 캡션 | 드롭다운 목록에서 AI를 사용하여 캡션을 생성할 캡션 파일을 선택합니다. |
+      | 출력 언어 | 드롭다운 목록에서 캡션 파일을 표시할 언어를 하나 이상 선택합니다.<br>선택한 언어를 제거하려면 **X**&#x200B;을 클릭하세요.<br>비디오를 재생하는 동안 여기에서 선택한 순서대로 미디어 플레이어에 언어 목록이 나타납니다. |
 
-    1. (Optional) Select the pencil icon to the right of a caption file name. In the **Edit Caption** dialog box, you can edit the following details about the file:
+   1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
+   1. 페이지의 오른쪽 상단 근처에 있는 **[!UICONTROL 저장 및 닫기]** 드롭다운에서 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+   1. **[!UICONTROL 캡션 및 오디오 트랙]** 탭을 다시 클릭합니다. 인터페이스의 **Status** 열에 표시되는 것과 같이 캡션 파일이 하나 이상 만들어지고 처리가 시작됩니다. [업로드된 캡션 및 오디오 추적 파일의 주기 상태 보기](#lifecycle-status-video)도 참조하세요.
 
-        | Caption metadata | Description |
-        | --- | --- |
-        | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text also includes background noises, speaker differentiation. It also includes other relevant information, along with the translation or transcription of the dialogue. This approach makes the content more accessible for individuals who are deaf or hard of hearing. |
-        | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
+      >[!NOTE]
+      >
+      >인스턴스의 캐싱 설정에 따라 메타데이터 처리가 미리보기 및 게시된 URL에 반영되기까지 몇 분 정도 걸릴 수 있습니다.
 
-        You can change or edit certain caption metadata later, if necessary. When the video is published, these metadata details are reflected on public URLs in published videos.
+   1. (선택 사항) 캡션 파일 이름 오른쪽에 있는 연필 아이콘을 선택합니다. **캡션 편집** 대화 상자에서 파일에 대한 다음 세부 정보를 편집할 수 있습니다.
 
-    1. Continue to step 8.
+      | 캡션 메타데이터 | 설명 |
+      | --- | --- |
+      | 유형 | 사용 중인 캡션 유형을 선택합니다.<br>**자막** - 대화 상자를 변환하거나 기록하는 비디오와 함께 표시되는 캡션 텍스트입니다.<br>**캡션** - 캡션 텍스트에는 배경 소음, 스피커 차별성도 포함됩니다. 대화 상자의 번역이나 트랜스크립션과 함께 기타 관련 정보도 포함됩니다. 이러한 접근 방식은 청각장애가 있거나 난청인 개인에게 콘텐츠에 더 쉽게 접근할 수 있도록 한다. |
+      | 레이블 | 미디어 플레이어의 **[!UICONTROL 오디오 또는 캡션 선택]** 팝업 목록에서 캡션 이름에 대해 표시되는 텍스트입니다. 레이블은 자막 또는 캡션 트랙에 해당하는 것으로, 고객에게 표시됩니다. 예: `English (CC)` |
 
-    +++
+      필요한 경우 나중에 특정 캡션 메타데이터를 변경하거나 편집할 수 있습니다. 비디오가 게시되면 이러한 메타데이터 세부 사항이 게시된 비디오의 공개 URL에 반영됩니다.
 
-1. (Optional) Preview the video before publishing to ensure the captions and audio work as expected. See [Preview a video that has multiple captions and audio tracks](#preview-video-audio-subtitle).
-1. Publish the video. See [Publish assets](publishing-dynamicmedia-assets.md).
+   1. 8단계로 진행합니다.
 
--->
++++
+
+1. (선택 사항) 게시 전에 비디오를 미리 보고 캡션 및 오디오가 예상대로 작동하는지 확인합니다. [여러 캡션 및 오디오 트랙이 있는 비디오 미리 보기](#preview-video-audio-subtitle)를 참조하세요.
+1. Publish 비디오입니다. [Publish 자산](publishing-dynamicmedia-assets.md)을 참조하세요.
 
 #### 이미 게시된 비디오에 캡션 및 오디오 트랙 파일 추가 정보
 

@@ -5,10 +5,10 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 20%
+source-wordcount: '551'
+ht-degree: 18%
 
 ---
 
@@ -37,19 +37,19 @@ Cloud Manager을 사용하여 여러 가지 방법으로 파이프라인 변수�
 * 각 `string` 변수 값은 2048자 미만이어야 합니다.
 * 각 `secretString` 형식 변수 값은 500자 이하여야 합니다.
 
-## Cloud Manager UI 사용 {#ui}
+## Cloud Manager 사용자 인터페이스 {#ui}
 
-Cloud Manager UI를 통해 파이프라인 변수를 구성하고 관리할 수 있습니다. 파이프라인 변수를 추가, 편집 및 삭제하려면 파이프라인을 편집할 수 있는 권한이 있어야 합니다.
+파이프라인 변수는 Cloud Manager 사용자 인터페이스를 통해 구성 및 관리할 수 있습니다. 파이프라인 변수를 추가, 편집 및 삭제하려면 파이프라인을 편집할 수 있는 권한이 있어야 합니다.
 
 파이프라인이 실행 중인 경우 변수 관리가 차단됩니다.
 
 ### 파이프라인 변수 추가 {#add-ui}
 
-1. [파이프라인을 관리할 때](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) 파이프라인 변수를 만들 파이프라인의 줄임표 버튼을 탭하거나 클릭하고 컨텍스트 메뉴에서 **변수 보기/편집**&#x200B;을 선택합니다.
+1. [파이프라인 관리](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)할 때 파이프라인 변수를 만들 파이프라인의 줄임표 버튼을 클릭하고 컨텍스트 메뉴에서 **변수 보기/편집**&#x200B;을 선택합니다.
 
    ![파이프라인 변수 보기/편집](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. **변수 구성** 창이 열립니다. 표의 첫 행에 변수 세부 정보를 입력하고 **추가**&#x200B;를 탭하거나 클릭합니다.
+1. **변수 구성** 창이 열립니다. 표의 첫 행에 변수 세부 정보를 입력하고 **추가**&#x200B;를 클릭합니다.
 
    * **구성 이름**&#x200B;은(는) 변수에 대한 고유 식별자로, [파이프라인 변수 이름 지정 규칙](#naming-conventions)을(를) 가리켜야 합니다.
    * **Value**&#x200B;은(는) 변수가 보유한 값입니다.
@@ -65,21 +65,21 @@ Cloud Manager UI를 통해 파이프라인 변수를 구성하고 관리할 수 
 
 ### 파이프라인 변수 편집 {#edit-ui}
 
-1. [파이프라인을 관리할 때](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) 파이프라인 변수를 만들 파이프라인의 줄임표 버튼을 탭하거나 클릭하고 컨텍스트 메뉴에서 **변수 보기/편집**&#x200B;을 선택합니다.
+1. [파이프라인 관리](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)할 때 파이프라인 변수를 만들 파이프라인의 줄임표 버튼을 클릭하고 컨텍스트 메뉴에서 **변수 보기/편집**&#x200B;을 선택합니다.
 
    ![파이프라인 변수 보기/편집](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. **변수 구성** 창이 열립니다. 편집할 변수의 줄임표 버튼을 탭하거나 클릭한 다음 **편집**&#x200B;을 선택합니다.
+1. **변수 구성** 창이 열립니다. 편집할 변수의 줄임표 버튼을 클릭하고 **편집**&#x200B;을 선택합니다.
 
    ![변수 편집](/help/implementing/cloud-manager/assets/pipeline-variables-edit.png)
 
-1. 필요에 따라 변수 값을 업데이트하고 **적용**(행 끝에 있는 확인 표시)을 탭하거나 클릭하여 변경 사항을 적용하거나 **취소**(뒤로 화살표)를 탭하거나 클릭하여 변경 사항을 되돌립니다.
+1. 필요에 따라 변수 값을 업데이트하고 **적용**(행 끝에 있는 확인 표시)을 클릭하여 변경 내용을 적용하거나 **취소**(뒤로 화살표)를 클릭하여 변경 내용을 되돌립니다.
 
    * 변수 값만 편집할 수 있습니다.
 
    ![변수 편집](/help/implementing/cloud-manager/assets/pipeline-variables-edit-save.png)
 
-1. 변수에 대한 변경 사항을 파이프라인에 저장하려면 **저장**&#x200B;을 탭하거나 클릭합니다.
+1. **저장**&#x200B;을 클릭합니다.
 
 변수를 삭제하려면 **변수 구성** 창의 파이프라인 변수 줄임표 메뉴에서 **편집** 대신 **삭제**&#x200B;을(를) 선택하십시오.
 
