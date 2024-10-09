@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: ee3e1bedddddff0aa41665359a91a0de48fd19c8
+source-git-commit: ea7e027b5247b64e78da1d14e4e602f39a37e4bd
 workflow-type: tm+mt
-source-wordcount: '1411'
-ht-degree: 89%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -16,120 +16,70 @@ ht-degree: 89%
 
 다음 섹션에서는 Experience Manager as a Cloud Service 현재 유지 관리 릴리스의 기술 릴리스 정보에 대해 간략히 소개합니다.
 
-## 릴리스 17964 {#release-17964}
+## 릴리스 18099 {#release-18099}
 
-2024년 9월 25일에 릴리스된 유지 관리 릴리스 17964의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이전 유지 관리 릴리스는 릴리스 17689. 문제17882 인해 릴리스 정보가 비공개로 설정되었습니다.
+다음은 2024년 10월 9일에 공개적으로 릴리스된 유지 보수 릴리스 18099에 대한 지속적인 개선 사항을 요약합니다. 이전 유지 관리 릴리스는 릴리스 17964.
 
 이 유지 관리 릴리스(2024.10.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
 
-### 개선 사항 {#enhancements-17964}
+### 개선 사항 {#enhancements-18099}
 
-* ASSETS - 37750: [우선 순위 4] [GraphQL] DM scene7에 대한 URL 지원: 이미지 스마트 자르기.
-* CQ - 4354583: [AEMaaCS] Adobe Pipeline을 통해 번역 프로세스 이벤트를 전송합니다.
-* CQ - 4357642: OOTB 커넥터에서 MSFT 자격 증명을 업데이트합니다.
-* CQ - 4358217: 요청 엔티티에서 요청 본문을 역직렬화합니다.
-* CQ - 4358342: 하나의 HTTP 메서드에만 RequestProcessors를 등록합니다.
-* FORMS - 10781: 규칙 편집기를 개선해 패널의 다음/이전 항목에 대한 규칙을 만듭니다.
-* FORMS - 14595: [브라우저 없는 기능] 브라우저 없는 렌더링을 위한 DoR을 계산하기 위해 미리 채워진 데이터를 사용하면 DoR에 값이 누락됩니다.
-* FORMS - 15619: AEM Forms 업데이트된 번역 키트.
-* FORMS - 16113: [Adobe Sign]다른 사용자가 계약 상태를 업데이트할 수 없습니다.
-* FORMS - 16155: [규칙 편집기] 비동기 기능을 구현합니다.
-* GRANITE - 53872: IMS 클라이언트 ID에 대한 새로운 env vars를 추가합니다.
-* SITES - 23738: 핵심 구성 요소 2.27.0 릴리스.
-* SITES - 16610: 콘텐츠 조각: 실행 세부 정보 엔드포인트를 가져옵니다.
-* SITES - 16614: 콘텐츠 조각: 실행 엔드포인트 다시 사용합니다.
-* SITES - 16615: 콘텐츠 조각: 실행 엔드포인트를 홍보합니다.
-* SITES - 24215: 콘텐츠 조각: 실행 소스 엔드포인트를 구현합니다.
-* SITES - 20336: 콘텐츠 조각: 콘텐츠 조각 모델을 삭제할 때 유효성 검사를 개선합니다.
-* SITES - 21090: 콘텐츠 조각: 숫자 필드에 대한 분수 최소/최대 값 지원 추가
-* SITES - 21658: 콘텐츠 조각: UUID 참조를 사용하도록 업그레이드합니다.
-* SITES - 23054: 콘텐츠 조각: 콘텐츠 조각 모델을 복사합니다.
-* SITES - 23264: 콘텐츠 조각: 모델의 정적 스키마를 만듭니다.
-* SITES - 23265: 콘텐츠 조각: UI 스키마 GET 엔드포인트를 통해 모델의 정적 스키마를 노출합니다.
-* SITES - 23266: 콘텐츠 조각: 콘텐츠 조각 모델에 제약 조건을 추가하는 기능.
-* SITES - 23778: 콘텐츠 조각: 검색 콘텐츠 조각 모델을 통해 게시된 적이 없는 모델을 검색할 수 있어야 합니다.
-* SITES - 23335: 콘텐츠 조각: 외부 자산 참조에 대한 지원 추가
-* SITES - 24626: 콘텐츠 조각: RTC: UUID 마이그레이션에 대한 권한: 2.
-* SITES - 24786: 콘텐츠 조각: `referencesTree` 엔드포인트에 대한 개선 사항.
-* SITES - 24833: 콘텐츠 조각: 허용된 HTML 태그 목록에 대한 HTML 입력 유효성 검사를 제거합니다.
-* SITES - 23380: GraphQL: 적절한 API를 사용하여 자산 메타데이터를 읽습니다.
-* SITES - 22864: [Edge Delivery] 새로운 AEM 콘텐츠 구조 통합 H2 2024를 갖춘 범용 편집기.
-* SITES - 23584: Java 17에서 Foundation 구성 요소 테스트가 실패했습니다.
-* SITES - 23662: 이벤트: 게시 요청을 트리거하는 사용자를 서버 로그의 JCR 로그 구문에서 추출할 수 없습니다.
-* SITES - 23301: 콘텐츠 조각의 번역을 만들 때 폴더 구조를 만들기 위해 새 워크플로를 시작할 수 있는 지원을 추가합니다.
-* SITES - 23336: 콘텐츠 조각: 외부 자산 참조에 대한 지원 추가
-* SITES - 24091: MSM 콘텐츠 패키지 분할: 마스터.
-* SITES - 24114: isSourceRenderCondition: 오류 로그 메시지를 DEBUG로 줄입니다.
-* SITES - 24166: Touch-UI 편집기에 대한 원격 자산 완화.
-* SITES - 24409: 모든 요청 프로세서를 단 하나의 HTTP 메서드에만 등록합니다.
-* SITES - 25008: PersistenceExceptions 및 권한 문제 처리를 개선합니다.
-* SITES - 24821: aem.page / aem.live를 기본값으로 설정합니다.
+* ASSETS-43015: 최신 auth.ims 번들로 업데이트합니다.
+* ASSETS-41684: src/main/features/docker/ethos/base-ims-oauth.json을 업데이트합니다.
+* ASSETS-38322: AEM에 대해 http 요청 이벤트 활성화.
+* ASSETS-41684: OOB OSGI 구성을 추가하여 Assets, Foundation, Sites 및 Forms에 대한 FI 대 그룹 매핑을 정의합니다.
+* ASSETS-41448: 그룹 매핑에 대한 FI를 지원하도록 auth.ims 번들을 업데이트합니다.
+* CQ-4356633: &quot;콘텐츠만&quot; 툴팁에 문자를 더 추가합니다.
+* SITES-23584: Java 17에서 기초 구성 요소 테스트가 실패합니다.
+* GUIDES-19069: AEM Guides 추가 기능에 대한 guidesPeerLinkIndex를 추가합니다.
+* GRANITE-54300: Oak을 최신 공개 릴리스(1.70.0)로 업데이트합니다.
+* GRANITE-54274: Firefly IMS 클라이언트를 허용합니다.
+* GRANITE-36205: 내부 Oak 릴리스 버전을 최신 버전으로 업데이트합니다.
+* GRANITE-45298: 권한이 낮은 사용자는 JS 없이 XSS 방식으로 악의적인 양식을 작성하여 RCE를 얻을 수 있습니다.
+* GRANITE-54266: 프로덕션 SDK에 검색 제안자 서비스가 없습니다.
+* GRANITE-50948 - AEM에 저장소 서비스 통합 로컬 개발을 위해 대체 저장소 서비스를 추가합니다.
+* GRANITE-53966: 컨텐츠 배포를 위해 별도의 스레드 풀을 사용합니다.
+* GRANITE-53514: 트리 활성화 1.0.26.
+* GRANITE-54054: com.adobe.granite.repository.impl.SystemUserValidation warnOnly에 대한 환경 변수.
+* GRANITE-50948: 저장소 서비스를 위한 AEM 지원에 저장소 서비스를 통합합니다.
+* GRANITE-52454: 지원 도우미 0.1.2 추가.
+* GRANITE-53514: 트리 활성화 1.0.26.
+* GRANITE IMS 54038: Creative Cloud Enterprise IMS 클라이언트를 AEM IMS-허용 목록에 추가하다에 추가합니다.
+* GRANITE-36205: 내부 Oak 릴리스 버전을 최신 버전으로 업데이트합니다.
+* GRANITE-53485: 복제 Azure Blob 스토리지에 대한 서비스 주체 인증을 지원합니다.
+* GRANITE-54006: Jackson을 2.17.2로 업데이트합니다.
+* GRANITE-53287: 보안 권한 통합 테스트 버전을 업데이트하는 중입니다.
+* GRANITE-53914: Java 17의 플랫폼 테스트 실패 모듈 버전이 업데이트되었습니다.
+* GRANITE-53870: 빠른 시작에 대한 최대 JVM 버전 검사를 건너뛰기 위한 내부 메커니즘을 생성합니다.
+* GRANITE-52454: AEMaaCS용 최신 릴리스를 사용하도록 Support Helper GRANITE-52454 업그레이드 지원 Helper.
+* SKYOPS-85335: org.apache.sling.jcr.repoinit를 1.1.52로 업데이트합니다.
+* SKYOPS-85336: Sling Commons Threads을 3.3.0으로 업데이트합니다.
+* SKYOPS-76378: i18n에서 ResourceBundle 등록/등록 취소의 스레드 안전성을 개선합니다.
+* SKYOPS-84951: 변경 가능한 콘텐츠 체크섬 생성 코드가 잘못되었습니다.
+* SKYOPS-82383: 명령 실행 설명자에 &#39;helm-values&#39; 변환-병합-분석 결과를 표시합니다.
+* SKYOPS-86329: java 21 sdk 지원을 위한 플랫폼 테스트 모듈의 버전을 업데이트합니다.
+* SKYOPS-69768: SlingModels는 ResourceResolver를 deserialize하지 않습니다.
+* SKYOPS-84810: RDE를 시작할 때 &quot;40-initialize-publish.sh&quot; 실행을 건너뜁니다.
+* SKYOPS-79285: Sling XSS를 2.4.2로 업데이트
 
-### 해결된 문제 {#fixed-issues-17964}
+### 해결된 문제 {#fixed-issues-18099}
 
-* CQ - 4356887: Akamai Technologies Inc.의 번역 프로젝트 상태 불일치
-* CQ - 4357878: 공급업체 실패 번역 시 번역 프레임워크가 오류 상태를 설정하지 않습니다.
-* CQ - 4358028: 썸네일이 업로드되면 프로젝트를 생성할 수 없습니다.
-* CQ - 4358290: 게시된 페이지에서 대상 설정이 작동하지 않습니다.
-* FORMS - 13173: 적응형 양식 > 규칙 편집기 > 오브젝트 필드 놓기에서 드롭다운 목록 오정렬.
-* FORMS - 13873: AFv2: 구성 요소 이름에 (“-”)가 있으면 규칙이 실패합니다.
-* FORMS - 14340: FormsAndDocumentOmniSearchHandler 및 CloudStorageSubmitActionInserter를 인스턴스화하는 도중 오류가 발생했습니다.
-* FORMS - 15363: 규칙 편집기에 표시되는 이름.
-* FORMS - 15381: 인증 범위 메시지의 UI 개선.
-* FORMS - 15595: AEM 양식 TnC 구성 요소 동의 텍스트 줄바꿈 문제.
-* FORM - 15623: AEMaaCS Forms - 한 번의 POST로 Dynamics에서 여러 테이블을 업데이트하는 대안.
-* FORMS - 15682: AEM Forms - DOR을 Dynamics FDM에 바인딩할 수 없습니다.
-* FORMS - 15799: Adobe Sign GovCloud 서명 페이지가 iframe에서 렌더링되지 않습니다.
-* FORMS - 15835: 제출 후 양식 URL을 다시 쓰는 문제.
-* FORMS - 16091: 재구성된 Binary.java를 소비합니다.
-* FORMS - 16096: Forms 사용자에게 restendpoint 대화 상자에 대한 액세스 권한이 없습니다.
-* FORMS - 16139: 핵심 구성 요소 양식에서 DoR에 필요한 로깅을 추가합니다.
-* FORMS - 6935: 활성 구성 요소의 상태에 3:1 대비 비율이 부족합니다.
-* FORMS - 7018: 빈 요소가 초점을 받습니다.
-* GRANITE - 53028: ExternalProcessPollingHandler의 NPE.
-* GRANITE - 53907: 서비스 사용자를 워크플로 슈퍼 사용자로 식별할 수 없습니다.
-* SITES - 24405: 콘텐츠 조각: 열거형에 대한 확장 정보가 더 탄력적이어야 함
-* SITES - 23024: 콘텐츠 조각: 열거형이 잠김 상태를 반환하지 않음: GET 조각에서 true.
-* SITES - 23269: 콘텐츠 조각: 콘텐츠 조각을 생성하면 잠긴 필드를 설정할 수 있습니다.
-* SITES - 23337: 콘텐츠 조각: `body`를 사용하는 배치 엔드포인트는 캐스팅 예외로 실패합니다.
-* SITES - 23474: 콘텐츠 조각: 페이지 매김은 검색 콘텐츠 조각에서 손상된 리소스를 제외해야 합니다.
-* SITES - 23615: 콘텐츠 조각: 콘텐츠 조각 복사본 AuthoringInfo가 업데이트되지 않습니다.
-* SITES - 23668: 콘텐츠 조각: 다중 필드가 있는 패치 라이브 복사가 400으로 실패함
-* SITES - 23695: 콘텐츠 조각: 탭 설명은 UiSchema에서 사용할 수 없습니다.
-* SITES - 23704: 콘텐츠 조각: _extendedInfo에서 다중 값 열거형이 지원되지 않음
-* SITES - 23781: 콘텐츠 조각: 열거형 필드에 중복 값이 허용되지 않음
-* SITES - 24150: 콘텐츠 조각: 콘텐츠 조각 버전 작성에 대한 데이터가 없습니다.
-* SITES - 24230: 콘텐츠 조각: 검색 콘텐츠 조각 모델에서 `modified` 복제 상태 이후 필터링 수정
-* SITES - 24233: 콘텐츠 조각: `publishedBy`를 통한 필터링은 검색 콘텐츠 조각 모델에 게시되지 않은 리소스를 포함할 수 있습니다.
-* SITES - 24355: 콘텐츠 조각: 폴더에서 생성된 콘텐츠 조각에 대해 라이브 관계가 존중되지 않습니다.
-* SITES - 24816: 콘텐츠 조각: ValidationStatus 메시지 순서 불일치.
-* SITES - 23896: 이벤트: 페이지 이동 이벤트와 함께 더 많은 이벤트가 함께 진행됩니다.
-* SITES - 23899: 이벤트: 페이지 이벤트가 지연되거나 전혀 생성되지 않습니다.
-* SITES - 23961: 이벤트: 구성 폴더가 있는 경우 참조가 포함된 콘텐츠 조각 모델 생성이 실패합니다.
-* SITES - 23963: 이벤트: 페이지 삭제 이벤트가 때때로 오지 않음
-* SITES - 23443: GraphQL: GraphQL 커서 쿼리가 일치하지 않는 동작입니다.
-* SITES - 10994: 키보드 초점 순서가 논리적이지 않습니다.
-* SITES - 16357: AEM: 사이트 메뉴의 설정 분석 탭에서 버튼이 잘렸습니다.
-* SITES - 19836: Ghost 컨테이너의 구성 요소가 게시 및 미리보기 인스턴스에 표시됩니다.
-* SITES - 22348: Live Copy 프로젝트에 대한 라이브 카피가 100개를 넘으면 개요 페이지가 로드되지 않습니다.
-* SITES - 22960: ContentFragmentModelOmniSearchHandler의 리소스 확인자가 닫히지 않음.
-* SITES - 23284: URL 인코딩으로 인해 빈 경로 브라우저 대화 상자 표시.
-* SITES - 23505: 페이지를 다른 위치로 이동하면 구성 요소에 잘못된 URL이 표시됩니다.
-* SITES - 23574: 다수의 페이지에서 현재 버전을 미리 보거나 비교할 수 없음
-* SITES - 23585: cq:responsive 노드가 있는 구성 요소에 대한 상속 복원 문제
-* SITES - 23650: AEM 작성자 환경에서 들어오는 링크 수의 불일치
-* SITES - 23659: 토글 FT_* SITES - 9757로 인해 발생한 콘텐츠 언어 서블릿 회귀
-* SITES - 23759: 경험 조각에 추가된 자산이 실행과 함께 게시되지 않음
-* SITES - 24025: 302 내부 DNS 대신 공개 DNS를 사용하여 위치 헤더를 반환하는 AEM의 리디렉션
-* SITES - 24036: ASCII 형식의 AEM RTE 지속 문자에 대한 조사 필요
-* SITES - 24317: 기본 인증으로 프록시 구성이 작동하지 않음
-* SITES - 24918: 전용 IP 이그레스를 사용할 때 가끔 반환되는 504 오류를 수정합니다.
+* CNTBF-298: CC 내보낸 패키지에서 jcr:uuid를 제거합니다.
+* SKYOPS-83910: SKYOPS-82371에서 발견된 동시성 문제를 수정합니다.
+* GRANITE-52876: com.adobe.granite.ui.content 0.8.1448로 업데이트합니다.
+* GRANITE-53088: SITES-11992의 수정으로 도입된 회귀.
+* GUIDES-14445: Node.js에 대한 종속성 가져오기와 관련된 오류로 인해 기본 PDF 생성에 실패합니다.
+* GUIDES-16961: `<conref>`이(가) 있는 제목이 웹 편집기의 기본 및 번역 대시보드에서 확인되지 않습니다.
+* GUIDES-17283: **topicmeta에 추가된 메타데이터 사용** 옵션을 선택할 때 메타데이터 속성이 기본 PDF 출력의 문서 고유성에 전파되지 않습니다.
+* GUIDES-17793: 게시된 콘텐츠의 일괄 활성화 중에 **Publish 대시보드 일괄**&#x200B;에서 참조된 PDF이 활성화되지 않습니다.
 
-### 알려진 문제 {#known-issues-17964}
+릴리스에서 수정된 새로운 및 향상된 Guides 기능 및 문제에 대한 자세한 내용은 [Experience Manager Guides 릴리스 로드맵](https://experienceleague.adobe.com/kr/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)을 참조하세요.
+
+### 알려진 문제 {#known-issues-18099}
 
 * FORMS - 15818: 구성 요소 설명자 항목 `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` 서버 로그에서 진술을 찾을 수 없음. 이는 해를 미치지 않는 로그 구문입니다.
 
-### 사용 중단된 기능 및 API {#deprecated-17964}
+### 사용 중단된 기능 및 API {#deprecated-18099}
 
 AEM as a Cloud Service에서 더 이상 사용되지 않는 기능과 API는 [사용 중단된 기능 및 API](/help/release-notes/deprecated-removed-features.md) 문서에 자세히 설명되어 있습니다.
 
@@ -145,15 +95,19 @@ AEM as a Cloud Service에서 더 이상 사용되지 않는 기능과 API는 [�
 
 Adobe이 `com.day.cq.wcm.api`을(를) 업데이트하는 중입니다. 일부 메서드 및 클래스가 현재 릴리스에서 `@Deprecated`(으)로 표시되었습니다. 이러한 기능은 향후 릴리스에서 제거됩니다. 그들이 제안하는 대안으로 전환해 보십시오.
 
-### 보안 수정 {#security-17964}
+#### org.apache.jackrabbit.oak.plugins.blob {#org.apache.jackrabbit.oak.plugins.blob}
 
-AEM as a Cloud Service는 플랫폼의 보안 및 성능을 최적화하는 데 사용됩니다. 이 유지 관리 릴리스에서는 강력한 시스템 보호에 대한 노력의 일환으로 식별된 취약점 16개가 해결되었습니다.
+* GRANITE-54165: 공용 API에서 org.apache.jackrabbit.oak.plugins.blob을 사용하지 않습니다.
 
-### 임베드된 기술 {#embedded-tech-17964}
+### 보안 수정 {#security-18099}
+
+AEM as a Cloud Service는 플랫폼의 보안 및 성능을 최적화하는 데 사용됩니다. 이 유지 관리 릴리스는 2개의 식별된 취약점을 해결하여 강력한 시스템 보호에 대한 약속을 강화합니다.
+
+### 임베드된 기술 {#embedded-tech-18099}
 
 | 기술 | 버전 | 링크 |
 |---|---|---|
-| AEM Oak | 1.68.0 | [Oak API 1.68.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.68.0/index.html) |
+| AEM Oak | 1.70.0 | [Oak API 1.70.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.70.0/index.html) |
 | AEM SLING API | 2.27.6 | [Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.24-1.4.0 | [HTML 템플릿 언어 사양](https://github.com/adobe/htl-spec) |
 | AEM 핵심 구성 요소 | 2.27.0 | [AEM WCM 핵심 구성 요소](https://github.com/adobe/aem-core-wcm-components) |
