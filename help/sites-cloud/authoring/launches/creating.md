@@ -5,10 +5,10 @@ exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: b5ded40d1cb8b8fab28583467b68c4586eecf1a0
+source-git-commit: c30ec18858c977f0701fef9bb2a7d3320e67dcba
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 96%
+source-wordcount: '1100'
+ht-degree: 94%
 
 ---
 
@@ -159,7 +159,8 @@ Sites 또는 론치 콘솔에서 론치를 만들 수 있습니다.
 
 * 썸네일을 탭/클릭하여 론치를 선택합니다.
 * 도구 모음이 나타납니다. 복제 를 선택합니다.
-   * 콘솔에 클론이 표시됩니다.
+   * 클론이 생성되어 콘솔에 표시됩니다.
+   * **시작 제목**&#x200B;은(는) 복제임을 나타냅니다. [시작 구성](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration)(**속성**)을 편집하여 제목을 업데이트할 수 있습니다.
 
 ## 론치 삭제 {#deleting-a-launch}
 
