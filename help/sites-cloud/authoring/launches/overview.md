@@ -5,10 +5,10 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: cc007536d14bd0464879b30d6303c24ccf15d2d0
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 94%
+source-wordcount: '897'
+ht-degree: 93%
 
 ---
 
@@ -105,9 +105,13 @@ ht-degree: 94%
 
 ## 론치 콘솔 {#the-launches-console}
 
-론치 콘솔은 론치에 대한 개요를 제공하며 나열된 론치에 대해 조치를 취할 수 있도록 해줍니다. 이 콘솔은 다음 방법으로 액세스할 수 있습니다.
+론치 콘솔은 론치에 대한 개요를 제공하며 나열된 론치에 대해 조치를 취할 수 있도록 해줍니다.
 
-* **도구** 콘솔: **도구**, **사이트**, **론치**
+![론치 콘솔 - 콘텐츠 관리](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
+
+이 콘솔은 다음 방법으로 액세스할 수 있습니다.
+
+* **도구** 콘솔: **도구**, **일반**, **시작**.
 
 * **참조** 레일의 **론치** 섹션 하단에 있는 **론치 콘솔**(Sites 콘솔에서 소스 콘텐츠 검색 시)
 
@@ -116,6 +120,3 @@ ht-degree: 94%
 * 오른쪽 상단의 **론치 버튼**(Sites 콘솔에서 론치 콘텐츠 검색 시):
 
   ![Sites 콘솔의 론치 옵션](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
-
-* 또는 직접
-  `https://<host>:<port>/libs/launches/content/launches.html`

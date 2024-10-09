@@ -5,7 +5,7 @@ exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: b5ded40d1cb8b8fab28583467b68c4586eecf1a0
 workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 98%
@@ -74,7 +74,9 @@ ht-degree: 98%
      >[!NOTE]
      >
      >여기서는 단일 론치만 다룹니다. 론치가 중첩된 경우에는 [중첩된 론치 홍보](#promoting-a-nested-launch)를 참조하십시오.
+
 1. **다음**&#x200B;을 선택하여 계속하십시오.
+
 1. 홍보할 페이지를 검토할 수 있습니다. 이는 선택한 페이지 범위에 따라 달라집니다.
 
    ![홍보 검토](/help/sites-cloud/authoring/assets/launches-promote-review.png)

@@ -5,7 +5,7 @@ exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: cc007536d14bd0464879b30d6303c24ccf15d2d0
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 89%
@@ -39,7 +39,8 @@ ht-degree: 89%
 * **론치** 콘솔: 특정 론치를 선택한 다음 **콘텐츠 관리**를 선택할 수 있습니다.
   ![론치 콘솔 - 콘텐츠 관리](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
 
-* **사이트** 콘솔: 특정 소스 페이지를 선택하고 **참조**&#x200B;를 선택하면 **론치**&#x200B;에 이어 **콘텐츠 관리**를 선택할 수 있습니다.
+* **사이트** 콘솔: 특정 소스 페이지를 선택하고 **참조**&#x200B;를 선택하면 **론치**&#x200B;에 이어 **콘텐츠 관리**&#x200B;를 선택할 수 있습니다.
+
   ![론치 콘솔 - 콘텐츠 관리](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
 
   >[!NOTE]

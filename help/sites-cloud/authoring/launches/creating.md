@@ -5,10 +5,10 @@ exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: b5ded40d1cb8b8fab28583467b68c4586eecf1a0
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 98%
+source-wordcount: '1077'
+ht-degree: 96%
 
 ---
 
@@ -153,7 +153,15 @@ Sites 또는 론치 콘솔에서 론치를 만들 수 있습니다.
 
 **완료**&#x200B;를 선택하면 **사이트** 콘솔의 **참조** 레일로 돌아가며, 적절한 페이지를 선택하면 새 론치가 표시됩니다.
 
-### 론치 삭제 {#deleting-a-launch}
+### Launch 복제 {#cloning-a-launch}
+
+[론치 콘솔](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)에서 론치를 복제할 수 있습니다.
+
+* 썸네일을 탭/클릭하여 론치를 선택합니다.
+* 도구 모음이 나타납니다. 복제 를 선택합니다.
+   * 콘솔에 클론이 표시됩니다.
+
+## 론치 삭제 {#deleting-a-launch}
 
 [론치 콘솔](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)에서 론치를 삭제할 수 있습니다.
 
