@@ -42,7 +42,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 | [!DNL Assets] | 자산을 [!DNL Experience Manager]에 직접 업로드합니다. [지원 중단된 자산 업로드 API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api)를 참조하십시오. | [다이렉트 이진 업로드](/help/assets/add-assets.md)를 사용합니다. 기술적인 세부 정보는 [직접 업로드 API](/help/assets/developer-reference-material-apis.md#upload-binary)를 참조하십시오. |
 | [!DNL Assets] | [!DNL ImageMagick]과 같은 호출 명령줄 도구를 포함하여 `DAM Asset Update` 워크플로의 [일부 워크플로 단계](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)는 지원되지 않습니다. | [자산 마이크로서비스](/help/assets/asset-microservices-overview.md)는 많은 워크플로에 대한 대체 기능을 제공합니다. 사용자 정의 처리에는 [사후 처리 워크플로](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)를 사용하십시오. |
 | [!DNL Assets] | 비디오의 FFmpeg 코드 변환. | FFmpeg 썸네일 생성의 경우 [자산 마이크로서비스](/help/assets/asset-microservices-overview.md)를 사용합니다. FFmpeg 코드 변환의 경우 [Dynamic Media](/help/assets/manage-video-assets.md)를 사용합니다. |
-| [!DNL Foundation] | 복제 에이전트의 “배치” 탭 아래에 있는 트리 복제 UI(2021년 9월 30일 이후 제거) | [게시 관리](/help/operations/replication.md#manage-publication) 또는 [콘텐츠 트리 게시 워크플로](/help/operations/replication.md#publish-content-tree-workflow) 접근 방식 |
+| [!DNL Foundation] | 복제 에이전트의 “배치” 탭 아래에 있는 트리 복제 UI (2021년 9월 30일 이후 제거) | [게시 관리](/help/operations/replication.md#manage-publication) 또는 [콘텐츠 트리 게시 워크플로](/help/operations/replication.md#publish-content-tree-workflow) 접근 방식 |
 | [!DNL Foundation] | 복제 에이전트 관리 화면의 배포 탭과 복제 API를 사용하면 10MB가 넘는 콘텐츠 패키지를 복제할 수 없습니다. 대신 [게시 관리](/help/operations/replication.md#manage-publication) 또는 [콘텐츠 트리 게시 워크플로](/help/operations/replication.md#publish-content-tree-workflow)를 사용하십시오. |
 | [!DNL Foundation] | Adobe Developer Console 프로젝트에서 생성된 자격 증명을 사용하는 통합에서는 JWT(서비스 계정) 자격 증명에 대한 지원이 점차 중단됩니다. 2024년 5월 1일 이후에는 Adobe Developer Console에서 새 서비스 계정(JWT) 자격 증명을 생성할 수 없습니다. 단, 기존 서비스 계정(JWT) 자격 증명은 2025년 1월 1일까지 이미 구성된 통합에 계속 사용할 수 있습니다. 계정(JWT) 자격 증명은 더 이상 작동하지 않으며 고객은 OAuth 서버 간 자격 증명으로 마이그레이션해야 합니다. [자세히 알아보기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | Adobe I/O OAuth 서버 간 자격 증명으로 [마이그레이션](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)합니다. |
 
@@ -57,7 +57,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 | [!DNL Sites] | 포털 디렉터 및 포틀릿 구성 요소 | 이들 기능은 [!DNL Experience Manager] 6.4에서 더 이상 사용되지 않으며 이제 [!DNL Experience Manager]에서 제거되었습니다. | 제거됨 |
 | [!DNL Sites] | 디자인 가져오기 | 런타임 시 [!DNL Experience Manager] 저장소의 변경 불가능한 섹션을 사용할 수 없으므로 이 기능은 제거되었습니다. | 제거됨 |
 | [!DNL Assets] | Marketing Cloud Assets 핵심 서비스 및 Creative Cloud 서비스와 공유 중인 [!DNL Assets]를 사용할 수 없습니다. | [!DNL Adobe Creative Cloud]와의 통합은 [Adobe Asset Link](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)를 사용하십시오. | 제거됨 |
-| [!DNL Foundation] | Apache Sling 데이터 소스 지원(OSGi 번들 org.apache.sling.datasource) | 해당 사항 없음 | 제거됨 |
+| [!DNL Foundation] | Apache Sling 데이터 소스 지원 (OSGi 번들 org.apache.sling.datasource) | 해당 사항 없음 | 제거됨 |
 | [!DNL Foundation] | JST 스크립팅 템플릿 지원(OSGi 번들 org.apache.sling.scripting.jst) | 해당 사항 없음 | 제거됨 |
 | [!DNL Foundation] | Apache Felix Http Whiteboard 지원 | OSGi Http Whiteboard | 2022년 3월 |
 | [!DNL Foundation] | com.adobe.granite.oauth.server 지원 | Adobe IMS 통합 | 2023년 3월 |
@@ -370,15 +370,15 @@ Cloud Manager 빌드 프로세스 중에 이러한 규칙의 유효성이 검사
 OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying/configuring-osgi.md)에서 확인할 수 있습니다.
 
 +++수정할 수 없는 OSGi 구성입니다.
-* **`org.apache.felix.webconsole.internal.servlet.OsgiManager`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
-* **`com.day.cq.auth.impl.cug.CugSupportImpl`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
-* **`com.day.cq.jcrclustersupport.ClusterStartLevelController`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
-* **`org.apache.felix.http (Factory)`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
-* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`**(공지 일자: 2021년 8월 25일, 시행 일자: 2021년 11월 26일)
+* **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
+* **`com.day.cq.auth.impl.cug.CugSupportImpl`** (공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
+* **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
+* **`org.apache.felix.http (Factory)`** (공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
+* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (공지 일자: 2021년 8월 25일, 시행 일자: 2021년 11월 26일)
 +++
 
 +++OSGi 구성에는 빌드 유효성 검사 규칙이 적용됩니다.
-* **`org.apache.felix.eventadmin.impl.EventAdmin`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
+* **`org.apache.felix.eventadmin.impl.EventAdmin`** (공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
 * `org.apache.felix.eventadmin.ThreadPoolSize`
    * 유형: 정수
    * 필수 범위: 2~100
@@ -394,7 +394,7 @@ OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying
    * 필수 범위: 적어도 `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`를 모두 포함해야 함
 * `org.apache.felix.eventadmin.IgnoreTopic`
    * 유형: 문자열 배열
-* **`org.apache.felix.http`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
+* **`org.apache.felix.http`** (공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
    * `org.apache.felix.http.timeout`
       * 유형: 정수
    * `org.apache.felix.http.session.timeout`
@@ -457,7 +457,7 @@ OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying
       * 유형: 문자열 배열
    * `org.apache.felix.http.session.uniqueid`
       * 유형: 부울
-* **`org.apache.sling.scripting.cache`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
+* **`org.apache.sling.scripting.cache`** (공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
    * `org.apache.sling.scripting.cache.size`
       * 유형: 정수
       * 필수 범위: >= 2,048
@@ -465,7 +465,7 @@ OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying
       * 필수
       * 유형: 문자열 배열
       * 필수 범위: js를 포함해야 함
-* **`com.day.cq.mailer.DefaultMailService`**(공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
+* **`com.day.cq.mailer.DefaultMailService`** (공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
    * `smtp.host`
       * 유형: 문자열
    * `smtp.port`
@@ -487,7 +487,7 @@ OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying
       * 유형: 부울
    * `oauth.flow`
       * 유형: 부울
-* **`org.apache.sling.commons.log.LogManager.factory.config`**(공지 일자: 2021년 11월 16일, 시행 일자: 2021년 2월 16일)
+* **`org.apache.sling.commons.log.LogManager.factory.config`** (공지 일자: 2021년 11월 16일, 시행 일자: 2021년 2월 16일)
    * `org.apache.sling.commons.log.level`
       * 유형: 열거
       * 필수 범위: INFO, DEBUG 또는 TRACE
