@@ -1,17 +1,17 @@
 ---
-title: 구성 파이프라인 사용
+title: 구성 파이프라인 사용하기
 description: 구성 파이프라인을 사용하여 로그 전달 설정, 제거 관련 유지 관리 작업 및 다양한 CDN 구성과 같은 다양한 구성을 AEM as a Cloud Service에 배포하는 방법에 대해 알아봅니다.
 feature: Operations
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
+source-git-commit: 3d0abce117cf94d7bf521e78be2ec019f216aa08
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '973'
 ht-degree: 1%
 
 ---
 
-
-# 구성 파이프라인 사용 {#config-pipelines}
+# 구성 파이프라인 사용하기 {#config-pipelines}
 
 구성 파이프라인을 사용하여 로그 전달 설정, 제거 관련 유지 관리 작업 및 다양한 CDN 구성과 같은 다양한 구성을 AEM as a Cloud Service에 배포하는 방법에 대해 알아봅니다.
 
@@ -38,7 +38,7 @@ Cloud Manager 구성 파이프라인은 YAML 형식으로 생성된 구성 파�
 | [WAF을 포함한 트래픽 필터 규칙](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | 악성 트래픽을 차단하는 규칙 선언 |
 | [변형 요청](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) | `CDN` | 규칙을 선언하여 트래픽 요청의 모양을 변환합니다. |
 | [응답 변환](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | 규칙을 선언하여 지정된 요청에 대한 응답의 모양을 변환합니다. |
-| [클라이언트측 리디렉션](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) | `CDN` | 301/302 스타일의 클라이언트측 리디렉션 선언 [(얼리어답터만 사용 가능)](/help/release-notes/release-notes-cloud/release-notes-current.md#foundation-early-adopter) |
+| [클라이언트측 리디렉션](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) | `CDN` | 301/302 스타일 클라이언트측 리디렉션 선언 |
 | [원본 선택기](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | Adobe이 아닌 애플리케이션을 포함하여 다양한 백엔드로 트래픽을 라우팅하는 규칙을 선언합니다. |
 | [CDN 오류 페이지](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | 구성 파일에서 자체 호스팅된 정적 콘텐츠의 위치를 참조하여 AEM 원본에 연결할 수 없는 경우 기본 오류 페이지를 재정의합니다. |
 | [CDN 삭제](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | CDN을 제거하는 데 사용되는 Purge API 키 선언 |
