@@ -4,9 +4,9 @@ description: AEM as a Cloud Service에 대해 VPN 또는 유연한/전용 이그
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: fd6fb14bf3acdd30efb984e1666ed91a2327d810
+source-git-commit: 09cc9c65aff42c3a169791d32dfdbdbfb044aecb
 workflow-type: tm+mt
-source-wordcount: '5675'
+source-wordcount: '5676'
 ht-degree: 99%
 
 ---
@@ -299,7 +299,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 <tbody>
   <tr>
     <td><b>HTTP 또는 HTTPS 프로토콜</b></td>
-    <td>Azure 또는 Adobe 서비스로의 트래픽</td>
+    <td>Azure(*.windows.net) 또는 Adobe 서비스로의 트래픽</td>
     <td>임의</td>
     <td>전용 IP가 아닌 공유 클러스터 IP를 통해</td>
     <td>adobe.io<br>api.windows.net</td>
