@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 7bc6d9a947a5ce7c56481eaec8a2f186caf36c64
+source-git-commit: 6fa6fc9015624bec9113a198285531a3bdd7e29c
 workflow-type: tm+mt
 source-wordcount: '773'
 ht-degree: 21%
@@ -16,13 +16,13 @@ ht-degree: 21%
 
 다음 섹션에서는 Experience Manager as a Cloud Service 현재 유지 관리 릴리스의 기술 릴리스 정보에 대해 간략히 소개합니다.
 
-## 릴리스 18099 {#release-18099}
+## 릴리스 18175 {#release-18175}
 
-다음은 2024년 10월 9일에 공개적으로 릴리스된 유지 보수 릴리스 18099에 대한 지속적인 개선 사항을 요약합니다. 이전 유지 관리 릴리스는 릴리스 17964.
+다음은 2024년 10월 10일에 공개적으로 릴리스된 유지 보수 릴리스 18175에 대한 지속적인 개선 사항을 요약했습니다. 이전 유지 관리 릴리스는 릴리스 17964. 문제18099 인해 릴리스 정보가 비공개로 설정되었습니다.
 
 이 유지 관리 릴리스(2024.10.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
 
-### 개선 사항 {#enhancements-18099}
+### 개선 사항 {#enhancements-18175}
 
 * ASSETS-38322: AEM에 대해 http 요청 이벤트 활성화.
 * ASSETS-41448: 그룹 매핑에 대한 FI를 지원하도록 auth.ims 번들을 업데이트합니다.
@@ -56,12 +56,11 @@ ht-degree: 21%
 * SKYOPS-85336: Sling Commons Threads을 3.3.0으로 업데이트합니다.
 * SKYOPS-86329: java 21 sdk 지원을 위한 플랫폼 테스트 모듈의 버전을 업데이트합니다.
 
-### 해결된 문제 {#fixed-issues-18099}
+### 해결된 문제 {#fixed-issues-18175}
 
 * CNTBF-298: CC 내보낸 패키지에서 jcr:uuid를 제거합니다.
 * SKYOPS-83910: SKYOPS-82371에서 발견된 동시성 문제를 수정합니다.
 * GRANITE-52876: com.adobe.granite.ui.content 0.8.1448로 업데이트합니다.
-* GRANITE-53088: SITES-11992의 수정으로 도입된 회귀.
 * GUIDES-14445: Node.js에 대한 종속성 가져오기와 관련된 오류로 인해 기본 PDF 생성에 실패합니다.
 * GUIDES-16961: `<conref>`이(가) 있는 제목이 웹 편집기의 기본 및 번역 대시보드에서 확인되지 않습니다.
 * GUIDES-17283: **topicmeta에 추가된 메타데이터 사용** 옵션을 선택할 때 메타데이터 속성이 기본 PDF 출력의 문서 고유성에 전파되지 않습니다.
@@ -69,11 +68,11 @@ ht-degree: 21%
 
 릴리스에서 수정된 새로운 및 향상된 Guides 기능 및 문제에 대한 자세한 내용은 [Experience Manager Guides 릴리스 로드맵](https://experienceleague.adobe.com/kr/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)을 참조하세요.
 
-### 알려진 문제 {#known-issues-18099}
+### 알려진 문제 {#known-issues-18175}
 
 * FORMS-15818: 구성 요소 설명자 항목 `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml`을(를) 서버 로그에서 찾을 수 없습니다. 이는 해를 미치지 않는 로그 구문입니다.
 
-### 사용 중단된 기능 및 API {#deprecated-18099}
+### 사용 중단된 기능 및 API {#deprecated-18175}
 
 AEM as a Cloud Service에서 더 이상 사용되지 않는 기능과 API는 [사용 중단된 기능 및 API](/help/release-notes/deprecated-removed-features.md) 문서에 자세히 설명되어 있습니다.
 
@@ -93,11 +92,11 @@ Adobe이 `com.day.cq.wcm.api`을(를) 업데이트하는 중입니다. 일부 �
 
 * GRANITE-54165: 공용 API에서 org.apache.jackrabbit.oak.plugins.blob을 사용하지 않습니다.
 
-### 보안 수정 {#security-18099}
+### 보안 수정 {#security-18175}
 
 AEM as a Cloud Service는 플랫폼의 보안 및 성능을 최적화하는 데 사용됩니다. 이 유지 관리 릴리스는 2개의 식별된 취약점을 해결하여 강력한 시스템 보호에 대한 약속을 강화합니다.
 
-### 임베드된 기술 {#embedded-tech-18099}
+### 임베드된 기술 {#embedded-tech-18175}
 
 | 기술 | 버전 | 링크 |
 |---|---|---|
