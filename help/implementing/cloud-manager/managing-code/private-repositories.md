@@ -1,19 +1,19 @@
 ---
-title: Cloud Manager에서 개인 GitHub 저장소 추가
+title: Cloud Manager에 개인 GitHub 저장소 추가
 description: 개인 GitHub 저장소에서 작동하도록 Cloud Manager를 설정하는 방법에 대해 알아봅니다.
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
+source-git-commit: 2fa4abca9823bbc62900023d637429f3fbfd894d
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 33%
+source-wordcount: '930'
+ht-degree: 42%
 
 ---
 
-# Cloud Manager에서 개인 GitHub 저장소 추가 {#private-repositories}
+# Cloud Manager에 개인 GitHub 저장소 추가 {#private-repositories}
 
-Cloud Manager을 설정하여 개인 GitHub 리포지토리와 통합하면 Cloud Manager을 사용하여 GitHub 내에서 직접 코드를 확인할 수 있습니다. 이 구성에서는 코드를 Adobe 저장소와 정기적으로 동기화해야 하는 요구 사항이 제거됩니다.
+Cloud Manager을 설정하여 개인 GitHub 리포지토리와 통합하면 Cloud Manager을 사용하여 GitHub 내에서 직접 코드를 확인할 수 있습니다. 이 구성은 코드를 Adobe 저장소와 정기적으로 동기화하기 위한 요구 사항을 제거합니다.
 
 <!-- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
 
@@ -44,11 +44,11 @@ Cloud Manager에서 개인 GitHub 저장소 구성은 다음 두 단계로 구�
 
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 개인 Git 저장소를 연결할 프로그램을 선택합니다.
 
-1. 사이드 메뉴의 **서비스**&#x200B;에서 ![폴더 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **저장소**&#x200B;를 선택합니다.
+1. 측면 메뉴의 **서비스**&#x200B;에서 ![폴더 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **저장소**&#x200B;를 선택합니다.
 
    ![저장소 페이지](/help/implementing/cloud-manager/managing-code/assets/repositories-tab.png)
 
-1. **저장소** 페이지의 오른쪽 상단 모서리에서 **저장소 추가**&#x200B;를 클릭합니다.
+1. **저장소** 페이지의 오른쪽 상단 근처에서 **저장소 추가**&#x200B;를 클릭합니다.
 
 1. **저장소 추가** 대화 상자에서 **비공개 저장소**&#x200B;를 저장소 유형으로 선택합니다.
 
@@ -58,9 +58,9 @@ Cloud Manager에서 개인 GitHub 저장소 구성은 다음 두 단계로 구�
 
    | 필드 | 설명 |
    | --- | --- |
-   | 저장소 이름 | 새 저장소의 표현식 이름. |
-   | 저장소 URL | `.git`(으)로 끝나야 하는 개인 저장소의 URL.<br>예: *`https://github.com/org-name/repo-name.git`*(URL 경로는 일러스트레이션 목적으로만 사용) |
-   | 설명(선택 사항) | 저장소에 대한 자세한 설명입니다. |
+   | 저장소 이름 | 새로운 저장소의 표현적인 이름. |
+   | 저장소 URL | `.git`(으)로 끝나야 하는 개인 저장소의 URL.<br>예: *`https://github.com/org-name/repo-name.git`* (URL 경로는 설명 목적으로만 사용됨) |
+   | 설명(선택 사항) | 저장소에 대한 자세한 설명. |
 
 1. **저장**을 선택합니다.
 이제 [개인 저장소의 소유권을 확인](#validate-ownership)할 수 있습니다.
@@ -112,7 +112,7 @@ Cloud Manager에서 개인 GitHub 저장소 구성은 다음 두 단계로 구�
 
 Cloud Manager에서 GitHub 리포지토리의 유효성을 검사하면 통합이 완료됩니다. Cloud Manager에서 저장소를 사용할 수 있습니다.
 
-**Cloud Manager에서 개인 저장소를 사용하려면:**
+**Cloud Manager로 비공개 저장소를 사용하려면:**
 
 1. 가져오기 요청을 만들면 GitHub 검사가 자동으로 시작됩니다.
 
@@ -138,7 +138,7 @@ Cloud Manager에서 GitHub 리포지토리의 유효성을 검사하면 통합�
 
 ## 비공개 저장소를 파이프라인과 연결 {#pipelines}
 
-유효성이 확인된 개인 저장소는 [전체 스택 및 프론트엔드 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)과 연결할 수 있습니다.
+유효성이 확인된 비공개 저장소는 [전체 스택 및 프론트엔드 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)과 연결될 수 있습니다.
 
 
 
