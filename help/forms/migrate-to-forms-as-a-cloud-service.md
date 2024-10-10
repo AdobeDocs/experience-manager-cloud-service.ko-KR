@@ -9,14 +9,14 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 1c6ab84a7fadb543cc8e28424efe634627923e70
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1380'
 ht-degree: 1%
 
 ---
 
-# [!DNL AEM Forms](온-프레미스 및 AMS 환경)에서 1 an as a Cloud Service(으)로 마이그레이션[!DNL AEM Forms]  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
+# [!DNL AEM Forms](온-프레미스 및 AMS 환경)에서 {1 an as a Cloud Service}(으)로 마이그레이션[!DNL AEM Forms]  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -64,8 +64,7 @@ AEM Forms 6.5에서 AEM as a Cloud Service 환경으로 원활하게 전환하�
 
   ![시험 실행 결과](assets/enable-add-on.png)
 
-* Cloud Service 환경에서 마이그레이션 유틸리티는 사용자 매핑 도구 및 컨텐츠 전송 도구와 함께 작동합니다. 마이그레이션 유틸리티는 [!DNL AEM Forms]을(를) Cloud Serviceas a Cloud Service 과 호환되도록 만들고, 콘텐츠 전송 도구는 콘텐츠를 [!DNL AEM Forms] 환경에서 [!DNL AEM] 환경으로 마이그레이션합니다. 마이그레이션 유틸리티를 사용하기 전에 [AEM as a Cloud Service으로 이동](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html)하는 프로세스를 알아보십시오. 이 프로세스에는 두 가지 도구가 있습니다.
-   * [사용자 매핑 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration): 사용자 매핑 도구를 사용하여 사용자를 해당 Adobe IMS 사용자 계정에 매핑할 수 있습니다.
+* Cloud Service 환경에서 마이그레이션 유틸리티는 컨텐츠 전송 도구와 함께 작동합니다. 마이그레이션 유틸리티는 [!DNL AEM Forms]을(를) Cloud Serviceas a Cloud Service 과 호환되도록 만들고, 콘텐츠 전송 도구는 콘텐츠를 [!DNL AEM Forms] 환경에서 [!DNL AEM] 환경으로 마이그레이션합니다. 마이그레이션 유틸리티를 사용하기 전에 [AEM as a Cloud Service으로 이동](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html)하는 프로세스를 알아보십시오. 이 프로세스에서는 다음 도구를 사용합니다.
    * [컨텐츠 전송 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration): 컨텐츠 전송 도구를 사용하여 기존 환경에서 Cloud Service 환경으로 컨텐츠를 준비하고 전송할 수 있습니다. 사용자가 AEM Forms에서 클라우드 환경으로 쉽게 업그레이드할 수 있도록 지원합니다.
 * as a Cloud Service [!DNL AEM Forms] 및 로컬 [!DNL AEM Forms] 환경에 대한 관리자 권한이 있는 계정입니다.
 * [소프트웨어 배포 포털에서 모범 사례 분석기, 콘텐츠 전송 도구 및 [!DNL AEM Forms] 마이그레이션 유틸리티를 다운로드하여 설치하십시오.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
@@ -86,11 +85,9 @@ AEM Forms 6.5에서 AEM as a Cloud Service 환경으로 원활하게 전환하�
 
    >[!NOTE]
    >
-   > 6.5에서 Cloud Service로 마이그레이션할 때는 복제된 환경을 사용하여 콘텐츠 전송 도구 및 마이그레이션 유틸리티를 실행하는 것이 좋습니다. 컨텐츠 전송 도구 및 마이그레이션 유틸리티는 컨텐츠 및 자산을 일부 변경합니다. 따라서 프로덕션 환경에서는 컨텐츠 전송 도구 및 마이그레이션 유틸리티를 실행하지 마십시오.
+   > 6.5에서 Cloud Service로 마이그레이션할 때는 복제된 환경을 사용하여 콘텐츠 전송 도구 및 마이그레이션 유틸리티를 실행하는 것이 좋습니다. 컨텐츠 전송 도구 및 마이그레이션 유틸리티는 컨텐츠 및 자산을 일부 변경합니다. 따라서 프로덕션 환경에서는 컨텐츠 전송 도구 나 마이그레이션 유틸리티를 실행하지 마십시오.
 
 1. 관리자 권한으로 복제된 환경에 로그인합니다.
-
-1. [사용자 매핑 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)를 실행하여 사용자를 해당 Adobe IMS 사용자 계정에 매핑합니다. as a Cloud Service [!DNL AEM Forms] 인스턴스에 로그인하려면 Adobe IMS 사용자 계정이 필요합니다.
 
 1. 복제된 환경에서 [콘텐츠 전송 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) 및 [ 소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)의 [!DNL AEM Forms] as a Cloud Service 마이그레이션 유틸리티를 다운로드하여 설치하십시오. AEM 패키지 관리자를 사용하여 도구 및 유틸리티를 설치할 수 있습니다.
 
