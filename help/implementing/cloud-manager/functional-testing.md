@@ -5,9 +5,9 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
+source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1321'
 ht-degree: 3%
 
 ---
@@ -22,13 +22,13 @@ ht-degree: 3%
 
 [AEM as a Cloud Service 배포 프로세스](/help/implementing/cloud-manager/deploy-code.md)에서 사용할 수 있는 품질 게이트와 다양한 유형의 기본 기능 테스트를 살펴보십시오. 포괄적인 테스트 전략의 프레임워크 내에서 활용을 기여하고 최적화하는 방법에 대해 알아봅니다.
 
-## 개요
+## 기능 테스트 기본 정보
 
 다음 다이어그램은 전체 테스트 전략 및 [AEM as a Cloud Service 배포 프로세스](/help/implementing/cloud-manager/deploy-code.md)의 컨텍스트에서 사용 가능한 파이프라인에 대한 높은 수준의 개요를 제공합니다.
 
 ![AEM Cloud Service 배포 품질 게이트](assets/functional-testing/quality-gates-compact.svg)
 
-## 용도
+## 기능 테스트의 목적
 
 AEM Cloud Service 배포 파이프라인의 목적은 개발 및 AEM 제품 릴리스 수명 주기의 다양한 단계에서 강력하고 안전한 배포를 용이하게 하는 것입니다. 이러한 파이프라인은 AEM 애플리케이션 변경 및 AEM 제품 업데이트 모두에 대한 배포의 무결성과 안전성을 보장하기 위해 다양한 수준의 여러 품질 게이트를 통합합니다.
 
@@ -38,13 +38,13 @@ Adobe은 여러 개의 내장된 품질 게이트를 제공하는 반면, 다른
 
 이러한 품질 게이트는 전체 테스트 전략에 대한 포괄적인 테스트 프레임워크가 아님을 유의해야 합니다. AEM 제품은 AEM Cloud Service 배포 프로세스에 들어가기 전에 광범위한 테스트를 거칩니다. 마찬가지로 응용 프로그램의 품질이 높아야 배포 단계에 도달할 수 있습니다. 이 방법을 사용하면 품질 게이트가 전체 테스트 요법을 대체하는 것이 아니라 배포 프로세스를 보호하는 주요 목표에 중점을 둘 수 있습니다.
 
-## 품질 게이트
+## 테스트의 품질 게이트
 
 다음 다이어그램은 사용 가능한 품질 게이트와 전체 테스트 전략 및 [AEM as a Cloud Service 배포 프로세스](/help/implementing/cloud-manager/deploy-code.md)에서의 사용을 자세히 보여 줍니다.
 
 ![AEM Cloud Service 배포 품질 게이트](assets/functional-testing/quality-gates-overview.svg)
 
-### 요약 고객 제공 품질 게이트
+### 고객이 제공한 품질 게이트 요약
 
 |                               | 단위 테스트 | 사용자 지정<br/> 기능 테스트 | 사용자 지정<br/> UI 테스트 | Customer<br/> 유효성 검사 | 수동<br/> 테스트 |
 |:------------------------------|:---------------------:|:-----------------------------------:|:-----------------------------------:|:-------------------------:|:-------------------:|
@@ -54,7 +54,7 @@ Adobe은 여러 개의 내장된 품질 게이트를 제공하는 반면, 다른
 | **고객 CI/CD** | 예 | 예 | 예 | 예 | 예 |
 | **고객 로컬 개발자** | 예 | 예 | 예 | 예 | 예 |
 
-### 단위 테스트
+### 단위 시험
 
 모든 테스트 전략의 기초가 되는 AEM 애플리케이션에 대한 단위 테스트를 제공하는 것이 좋습니다. 빠르고 자주 실행하고 일찍 빠르게 피드백을 제공하도록 설계되었습니다. 개발자 워크플로우, 고유한 CI/CD 및 AEM Cloud Service 배포 파이프라인에 긴밀하게 통합됩니다.
 

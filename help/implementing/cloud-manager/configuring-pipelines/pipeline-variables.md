@@ -1,22 +1,22 @@
 ---
-title: 파이프라인 변수 구성
+title: Cloud Manager의 파이프라인 변수
 description: Cloud Manager에서 파이프라인 변수를 사용하여 빌드에 대한 특정 구성 변수를 관리하는 방법을 알아봅니다.
 exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f7a8e823f058115f11241f0864517432a7dea5ab
+source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 15%
+source-wordcount: '621'
+ht-degree: 14%
 
 ---
 
-# 파이프라인 변수 구성 {#configuring-pipeline-variables}
+# Cloud Manager의 파이프라인 변수 {#configuring-pipeline-variables}
 
 빌드 프로세스는 Git 저장소에 저장해서는 안 되는 특정 구성 변수를 사용할 수 있습니다. 또는 동일한 분기에서 실행되는 파이프라인 간에 조정해야 할 수 있습니다. Cloud Manager을 사용하면 이러한 설정을 파이프라인 변수로 관리할 수 있습니다.
 
-## 파이프라인 변수 {#pipeline-variables}
+## 파이프라인 변수 기본 정보 {#pipeline-variables}
 
 Cloud Manager을 사용하여 여러 가지 방법으로 파이프라인 변수를 구성할 수 있습니다.
 
@@ -34,7 +34,7 @@ Cloud Manager 사용자 인터페이스를 통해 파이프라인 변수를 구�
 
 파이프라인이 실행 중인 경우 변수 관리가 차단됩니다.
 
-### 파이프라인 변수 추가 {#add-ui}
+**Cloud Manager을 통해 파이프라인 변수를 추가하려면:**
 
 1. [파이프라인을 관리](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)할 때 파이프라인 변수를 만들 파이프라인의 ![줄임표 - 자세히 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
 
@@ -59,7 +59,7 @@ Cloud Manager 사용자 인터페이스를 통해 파이프라인 변수를 구�
 
 1. **저장**&#x200B;을 클릭합니다.
 
-### 파이프라인 변수 편집 {#edit-ui}
+## 파이프라인 변수 편집 {#edit-ui}
 
 1. [파이프라인을 관리](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)할 때 파이프라인 변수를 편집할 파이프라인의 ![줄임표 - 자세히 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
 
@@ -84,7 +84,7 @@ Cloud Manager 사용자 인터페이스를 통해 파이프라인 변수를 구�
 
 1. **저장**&#x200B;을 클릭합니다.
 
-### 파이프라인 변수 삭제 {#delete-ui}
+## 파이프라인 변수 삭제 {#delete-ui}
 
 1. [파이프라인을 관리](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)할 때 파이프라인 변수를 삭제할 파이프라인의 ![줄임표 - 자세히 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
 
