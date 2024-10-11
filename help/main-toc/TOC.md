@@ -8,8 +8,8 @@ breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 2d41b880ec3988b72128c7aac8b619c337a89427
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '5684'
+ht-degree: 99%
 
 ---
 
@@ -610,7 +610,7 @@ ht-degree: 0%
          + [사용자 정의 도메인 구성](/help/assets/configure-custom-domain.md)
    + Assets 보기 작업 {#assets-view}
       + [소개](/help/assets/assets-view-introduction.md)
-      + [시작](/help/assets/get-started-assets-view.md)
+      + [시작하기](/help/assets/get-started-assets-view.md)
       + [내 작업 영역](/help/assets/my-workspace-assets-view.md)
       + [지원되는 파일 형식 및 사용 사례](/help/assets/supported-file-formats-assets-view.md)
       + [자산 보기](/help/assets/navigate-assets-view.md)
@@ -896,7 +896,7 @@ ht-degree: 0%
       + [서드파티 상거래 솔루션](/help/commerce-cloud/integrating/third-party.md)
       + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
    + AEM Storefront {#storefront}
-      + [시작](/help/commerce-cloud/getting-started.md)
+      + [시작하기](/help/commerce-cloud/getting-started.md)
       + 작성 {#authoring}
          + [상거래 경험](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
          + [제품 관리실](/help/commerce-cloud/authoring/product-cockpit.md)
@@ -963,7 +963,7 @@ ht-degree: 0%
    + Forms 빌드 {#build-forms}
       + [개요](/help/edge/docs/forms/overview.md)
       + 시작하기 {#getting-started-edge-delivery-services-forms}
-         + [시작](/help/edge/docs/forms/tutorial.md)
+         + [시작하기](/help/edge/docs/forms/tutorial.md)
          + [Google Sheets 또는 Microsoft Excel을 사용하여 양식 만들기](/help/edge/docs/forms/create-forms.md)
          + [Google Sheets 또는 Microsoft Excel 파일을 설정하여 데이터 수신 시작&#x200B;](/help/edge/docs/forms/submit-forms.md)
          + [양식 게시 및 데이터 수집 시작](/help/edge/docs/forms/publish-forms.md)
@@ -1091,8 +1091,8 @@ ht-degree: 0%
          + [Maven 프로젝트 버전 처리](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Cloud Manager에서 저장소 관리](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Adobe 저장소 추가](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
-         + [개인 저장소 추가](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [외부 저장소 추가(얼리 어답터)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [비공개 저장소 추가](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+         + [외부 저장소 추가 (얼리 어답터)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [저장소에 액세스](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [git 하위 모듈 지원](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Cloud Manager와 함께 Git 사용](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
@@ -1210,7 +1210,7 @@ ht-degree: 0%
          + [맞춤화](/help/implementing/universal-editor/customizing.md)
          + [아키텍처](/help/implementing/universal-editor/architecture.md)
          + [인증](/help/implementing/universal-editor/authentication.md)
-         + [시작](/help/implementing/universal-editor/getting-started.md)
+         + [시작하기](/help/implementing/universal-editor/getting-started.md)
          + [개발자 개요](/help/implementing/universal-editor/developer-overview.md)
          + [로컬 AEM 개발](/help/implementing/universal-editor/local-dev.md)
          + [호출](/help/implementing/universal-editor/calls.md)
