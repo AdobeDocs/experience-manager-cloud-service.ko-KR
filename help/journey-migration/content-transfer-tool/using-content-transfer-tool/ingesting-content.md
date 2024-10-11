@@ -1,17 +1,17 @@
 ---
-title: 클라우드 서비스에 콘텐츠 수집
+title: Cloud Service에 콘텐츠 수집
 description: Cloud Acceleration Manager을 사용하여 마이그레이션 세트의 컨텐츠를 대상 Cloud Service 인스턴스로 수집하는 방법을 알아봅니다.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 4d34dc8464a51bcc11ee435de4d19183b2f3e3b2
+source-git-commit: 766573bfeb5190d212e87b18331e41820ddd3e32
 workflow-type: tm+mt
-source-wordcount: '2982'
-ht-degree: 12%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# 클라우드 서비스에 콘텐츠 수집 {#ingesting-content}
+# Cloud Service에 콘텐츠 수집 {#ingesting-content}
 
 ## Cloud Acceleration Manager의 수집 프로세스 {#ingestion-process}
 
@@ -228,6 +228,20 @@ MongoDB 제한 사항입니다.
 >[!NOTE]
 >
 >[모범 사례 분석기](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) 버전 2.1.50+는 최대 크기를 초과하는 유니코드 문자를 포함하는 큰 노드에 대해 보고합니다. 최신 버전을 실행 중인지 확인하십시오. 2.1.50 이전 버전의 BPA는 이러한 큰 노드를 식별하고 보고하지 않으며 위에서 언급한 사전 요구 사항 Oak 도구를 사용하여 개별적으로 검색해야 합니다.
+
+### 예기치 않은 간헐적 오류로 인해 수집 실패 {#ingestion-failure-due-to-unexpected-intermittent-errors}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_intermittent_errors"
+>title="예기치 않은 간헐적 오류"
+>abstract="때때로 예기치 않은 간헐적인 다운스트림 서비스 오류가 발생할 수 있으며, 안타깝게도 유일한 요구는 수집을 다시 시도하는 것입니다."
+
+때때로 예상치 못한 간헐적인 문제가 발생하면 실패한 수집에 도움이 될 수 있으며, 안타깝게도 수집을 다시 시도하는 것만이 유일한 요구입니다. 수집 로그를 조사하여 실패의 원인을 파악하고 다시 시도해야 하는 아래 나열된 오류와 일치하는지 확인합니다.
+
+## MongoDB 문제 {#mongo-db-issues}
+
+* `Atlas prescale timeout error` - 수집 단계에서 대상 클라우드 데이터베이스를 수집 중인 마이그레이션 세트 콘텐츠의 크기에 맞는 크기로 미리 조정하려고 합니다. 드물게 이 작업이 예상 기간 내에 완료되지 않습니다.
+* `Exhausted mongo restore retries` - 수집된 마이그레이션 세트 컨텐츠의 로컬 덤프를 클라우드 데이터베이스로 복원하려고 시도했습니다. 이는 MongoDB의 전반적인 상태/네트워크 문제를 나타내며 몇 분 후에 해결되는 경우가 많습니다.
 
 ### 수집 취소됨 {#ingestion-rescinded}
 
