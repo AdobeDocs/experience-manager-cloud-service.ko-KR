@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
+source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 26%
+source-wordcount: '847'
+ht-degree: 24%
 
 ---
 
@@ -17,15 +17,11 @@ ht-degree: 26%
 
 Cloud Manager이 사용자 정의 도메인 이름을 성공적으로 확인했는지 확인하는 방법을 알아봅니다.
 
-## 요구 사항 {#requirements}
-
-Cloud Manager에서 도메인 이름 상태를 확인하기 전에 이러한 요구 사항을 충족하십시오.
-
-* 먼저 [사용자 정의 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) 문서에 설명된 대로 사용자 정의 도메인에 대한 EV/OV 인증서를 추가합니다.
-
 ## 사용자 정의 도메인 이름의 상태 확인 {#how-to}
 
-Cloud Manager 내에서 사용자 정의 도메인 이름의 상태를 확인할 수 있습니다.
+Cloud Manager에서 도메인 이름 상태를 확인하기 전에 [고객 관리 SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md##add-customer-managed-ssl-cert)에 설명된 대로 사용자 정의 도메인에 대한 고객 관리(OV/EV) SSL 인증서를 이미 추가했는지 확인하십시오.
+
+**사용자 지정 도메인 이름의 상태를 확인하려면:**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
@@ -33,7 +29,7 @@ Cloud Manager 내에서 사용자 정의 도메인 이름의 상태를 확인할
 
 1. **개요** 페이지에서 **환경** 화면으로 이동합니다.
 
-1. 왼쪽 탐색 패널에서 **도메인 설정**&#x200B;을 클릭합니다.
+1. 왼쪽 메뉴에서 **도메인 설정**&#x200B;을 클릭합니다.
 
 1. 도메인 이름에 대한 **상태** 아이콘을 클릭합니다.
 
@@ -41,11 +37,14 @@ Cloud Manager 내에서 사용자 정의 도메인 이름의 상태를 확인할
 
 >[!NOTE]
 >
->[Cloud Manager에 새 사용자 지정 도메인 이름을 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)할 때 **사용자 지정 도메인 추가** 마법사의 확인 단계에서 **만들기**&#x200B;을(를) 선택하면 Cloud Manager에서 자동으로 확인을 트리거합니다. 이후 확인 시 상태 옆에 있는 다시 확인 아이콘을 선택해야 합니다.
+>도메인과 함께 *DV(Adobe 관리) SSL 인증서*&#x200B;를 사용하는 경우 [사용자 지정 도메인 이름을 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)할 때 [도메인 확인] 대화 상자에서 **확인**&#x200B;을 클릭하면 Cloud Manager에서 자동으로 확인을 트리거합니다.
+>
+>**OV/EV(고객 관리) SSL 인증서**&#x200B;를 사용할 계획이라면 [OV/EV SSL 인증서를 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)한 후에&#x200B;*도메인이 확인됩니다.*
+
 
 ## 확인 상태 {#statuses}
 
-Cloud Manager은 고객 관리 인증서를 통해 도메인 소유권을 확인합니다. 완료되면 다음 상태 메시지 중 하나가 표시됩니다.
+Cloud Manager은 OV/EV(고객 관리) SSL 인증서를 통해 도메인 소유권을 확인합니다. 완료되면 다음 상태 메시지 중 하나가 표시됩니다.
 
 | 상태 | 설명 |
 | --- | --- |
