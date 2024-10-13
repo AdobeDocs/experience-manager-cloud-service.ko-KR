@@ -5,19 +5,19 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
+source-git-commit: 42b30c12f17106610cfb7f7b4c04c5ab703bab45
 workflow-type: tm+mt
 source-wordcount: '448'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
 
-# CDN(Content Delivery Network) 구성 추가 {#add-cdn}
+# CDN 구성 추가 {#add-cdn}
 
 프로그램 내의 Adobe 관리 CDN에서 도메인을 SSL 인증서와 연결하려면 CDN(Content Delivery Network) 구성을 추가해야 합니다.
 
-Adobe 관리 CDN의 경우 DV 인증서를 사용할 때 ACME 인증이 있는 사이트만 허용됩니다.
+Adobe 관리 CDN의 경우 DV SSL 인증서를 사용할 때 ACME 인증이 있는 사이트만 허용됩니다.
 
 >[!IMPORTANT]
 >
@@ -31,8 +31,8 @@ Adobe 관리 CDN의 경우 DV 인증서를 사용할 때 ACME 인증이 있는 �
 
    | 사용 사례 | 단계 |
    | --- | --- |
-   | Cloud Manager의 *기존* Edge Delivery 사이트에 CDN 구성을 추가하고 싶습니다 | a. 왼쪽 탐색 패널의 **서비스**&#x200B;에서 **Edge Delivery 사이트**&#x200B;를 클릭합니다.<br>b. Edge Delivery 테이블에서 연관된 도메인이 없는 행의 끝에 있는 줄임표를 클릭합니다.<br>c입니다. **CDN 구성**&#x200B;을 클릭합니다.  ![Edge Delivery 사이트에 대한 CDN 구성을 클릭합니다](/help/implementing/cloud-manager/assets/cm-eds-config-cdn.png) |
-   | Cloud Manager에 CDN 구성을 추가하려고 합니다. | a. 왼쪽 탐색 패널의 **서비스**&#x200B;에서 **CDN 구성**&#x200B;을 클릭합니다.<br>b. CDN 구성 페이지의 오른쪽 상단 모서리에서 **추가**&#x200B;를 클릭합니다. |
+   | Cloud Manager의 *기존* Edge Delivery 사이트에 CDN 구성을 추가하고 싶습니다 | a. 왼쪽 메뉴의 **서비스**&#x200B;에서 **Edge Delivery 사이트**&#x200B;를 클릭합니다.<br>b. Edge Delivery 테이블에서 연결된 도메인이 없는 행의 끝에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.<br>c입니다. **CDN 구성**&#x200B;을 클릭합니다.  ![Edge Delivery 사이트에 대한 CDN 구성을 클릭합니다](/help/implementing/cloud-manager/assets/cm-eds-config-cdn.png) |
+   | Cloud Manager에 CDN 구성을 추가하려고 합니다. | a. 왼쪽 메뉴의 **서비스**&#x200B;에서 **CDN 구성**&#x200B;을 클릭합니다.<br>b. CDN 구성 페이지의 오른쪽 상단 모서리에서 **추가**&#x200B;를 클릭합니다. |
 
 1. **CDN 구성** 대화 상자의 **원본** 드롭다운 목록에서 다음 중 하나를 선택합니다.
 
