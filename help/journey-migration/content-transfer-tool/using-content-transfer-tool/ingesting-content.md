@@ -4,7 +4,7 @@ description: Cloud Acceleration Manager을 사용하여 마이그레이션 세�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 766573bfeb5190d212e87b18331e41820ddd3e32
+source-git-commit: ec80660d45c69363690b653dd54634c74c3c9907
 workflow-type: tm+mt
 source-wordcount: '3137'
 ht-degree: 11%
@@ -19,7 +19,7 @@ ht-degree: 11%
 >id="aemcloud_ctt_ingestion"
 >title="콘텐츠 수집"
 >abstract="수집은 마이그레이션 세트의 콘텐츠를 대상 Cloud Service 인스턴스로 수집하는 것입니다. 콘텐츠 전송 도구에는 이전 콘텐츠 전송 활동 이후 수행된 변경 사항만 전송할 수 있는 차등 콘텐츠 추가를 지원하는 기능이 있습니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html#top-up-extraction-process" text="추가 추출"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content#top-up-extraction-process" text="추가 추출"
 
 Cloud Acceleration Manager을 사용하여 마이그레이션 세트를 수집하려면 아래 단계를 따르십시오.
 
@@ -94,7 +94,7 @@ Cloud Acceleration Manager을 사용하여 마이그레이션 세트를 수집�
 >id="aemcloud_ctt_ingestion_topup"
 >title="추가 수집"
 >abstract="추가 기능을 사용하여 이전 콘텐츠 전송 활동 이후 수정된 콘텐츠를 이동합니다. 수집이 완료되면 로그에서 오류 또는 경고를 확인하십시오. 모든 오류는 보고된 문제를 처리하거나 Adobe 고객 지원 센터에 문의하여 즉시 해결해야 합니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html" text="로그 보기"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs" text="로그 보기"
 
 콘텐츠 전송 도구에는 마이그레이션 세트의 *추가*&#x200B;를 수행하여 차등 콘텐츠를 추출할 수 있는 기능이 있습니다. 이렇게 하면 모든 콘텐츠를 다시 추출할 필요 없이 이전 추출 후 변경된 콘텐츠만 포함하도록 마이그레이션 세트를 수정할 수 있습니다.
 
@@ -113,7 +113,7 @@ Cloud Acceleration Manager을 사용하여 마이그레이션 세트를 수집�
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="콘텐츠 수집 문제 해결"
 >abstract="수집 로그 및 설명서를 참조하여 수집이 실패할 수 있는 일반적인 이유에 대한 솔루션을 찾고 문제를 해결하는 방법을 찾으십시오. 문제가 해결되면 수집을 다시 실행할 수 있습니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html" text="콘텐츠 전송 확인"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers" text="콘텐츠 전송 확인"
 
 ### CAM에서 마이그레이션 토큰을 검색할 수 없음 {#cam-unable-to-retrieve-the-migration-token}
 
@@ -146,13 +146,13 @@ Cloud Acceleration Manager을 사용하여 마이그레이션 세트를 수집�
 > 몇 가지 경우에 해당 토큰을 검색하는 것이 실제로 허용되지 않으므로 &quot;마이그레이션 토큰&quot; 필드가 표시됩니다. 수동으로 제공될 수 있게 함으로써, 이는 사용자가 어떠한 추가적인 도움 없이도 수집을 신속하게 시작할 수 있게 할 수 있다. 토큰을 제공하고 메시지가 여전히 나타나면, 토큰을 검색하는 것은 문제가 되지 않습니다.
 
 * AEM as a Cloud Service은 환경 상태를 유지하고 있으며, 경우에 따라 다양한 일반적인 이유로 마이그레이션 서비스를 다시 시작해야 합니다. 서비스를 다시 시작하는 경우에는 해당 서비스에 연결할 수 없지만 결국 사용할 수 있습니다.
-* 인스턴스에서 다른 프로세스가 실행되고 있을 수 있습니다. 예를 들어 [AEM 버전 업데이트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html)에서 업데이트를 적용하는 경우 시스템이 사용 중이고 마이그레이션 서비스를 정기적으로 사용할 수 없습니다. 해당 프로세스가 완료되면 수집 시작을 다시 시도할 수 있습니다.
+* 인스턴스에서 다른 프로세스가 실행되고 있을 수 있습니다. 예를 들어 [AEM 버전 업데이트](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates)에서 업데이트를 적용하는 경우 시스템이 사용 중이고 마이그레이션 서비스를 정기적으로 사용할 수 없습니다. 해당 프로세스가 완료되면 수집 시작을 다시 시도할 수 있습니다.
 * Cloud Manager을 통해 [IP 허용 목록이 적용](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)된 경우 Cloud Acceleration Manager이 마이그레이션 서비스에 도달하는 것이 차단됩니다. 주소가 동적이므로 수집에 IP 주소를 추가할 수 없습니다. 현재, 유일한 해결책은 수집 및 인덱싱 프로세스 동안 IP 허용 목록을 비활성화하는 것이다.
 * 조사가 필요한 다른 이유가 있을 수 있다. 수집 또는 색인화에 계속 오류가 발생하면 Adobe 고객 지원 센터에 문의하십시오.
 
 ### AEM 버전 업데이트 및 수집 {#aem-version-updates-and-ingestions}
 
-[AEM 버전 업데이트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html)는 최신 AEM as a Cloud Service 버전을 최신 상태로 유지하기 위해 환경에 자동으로 적용됩니다. 수집이 수행될 때 업데이트가 트리거되면 환경 손상 등 예측할 수 없는 결과가 발생할 수 있습니다.
+[AEM 버전 업데이트](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates)는 최신 AEM as a Cloud Service 버전을 최신 상태로 유지하기 위해 환경에 자동으로 적용됩니다. 수집이 수행될 때 업데이트가 트리거되면 환경 손상 등 예측할 수 없는 결과가 발생할 수 있습니다.
 
 대상 프로그램에 &quot;AEM 버전 업데이트&quot;가 온보딩되면 수집 프로세스는 시작하기 전에 해당 대기열을 비활성화하려고 시도합니다. 수집이 완료되면 버전 업데이트 프로그램 상태가 수집이 시작되기 전의 상태로 반환됩니다.
 
@@ -174,7 +174,7 @@ Cloud Acceleration Manager을 사용하여 마이그레이션 세트를 수집�
 >id="aemcloud_cam_ingestion_troubleshooting_uuid"
 >title="고유성 제한 사항 위반"
 >abstract="비삭제 수집 실패의 일반적인 원인은 노드 ID에서의 충돌입니다. 충돌하는 노드 중 하나만 존재할 수 있습니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="추가 수집"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="추가 수집"
 
 [추가 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 실패의 일반적인 원인은 노드 ID의 충돌입니다. 이 오류를 식별하려면 Cloud Acceleration Manager UI를 사용하여 수집 로그를 다운로드하고 다음과 같은 항목을 찾습니다.
 
@@ -194,7 +194,7 @@ AEM의 각 노드에는 고유한 UUID가 있어야 합니다. 이 오류는 수
 >id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
 >title="참조된 노드를 삭제할 수 없음"
 >abstract="비삭제 수집 실패의 일반적인 원인은 대상 인스턴스의 특정 노드에 대한 버전 충돌입니다. 노드 버전을 수정해야 합니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="추가 수집"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="추가 수집"
 
 [추가 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 실패의 또 다른 일반적인 원인은 대상 인스턴스의 특정 노드에 대한 버전 충돌입니다. 이 오류를 식별하려면 Cloud Acceleration Manager UI를 사용하여 수집 로그를 다운로드하고 다음과 같은 항목을 찾습니다.
 
@@ -212,7 +212,7 @@ AEM의 각 노드에는 고유한 UUID가 있어야 합니다. 이 오류는 수
 >id="aemcloud_cam_ingestion_troubleshooting_bson"
 >title="대형 노드 속성"
 >abstract="수집 실패의 일반적인 원인은 노드 속성 값의 최대 크기를 초과하는 것입니다. 이러한 상황을 해결하려면 BPA 보고서와 관련된 문서를 포함한 설명서를 따르십시오."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html" text="마이그레이션 사전 요구 사항"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool" text="마이그레이션 사전 요구 사항"
 
 MongoDB에 저장된 노드 속성 값은 16MB를 초과할 수 없습니다. 노드 값이 지원되는 크기를 초과하면 수집이 실패하고 로그에 다음 중 하나가 포함됩니다.
 
