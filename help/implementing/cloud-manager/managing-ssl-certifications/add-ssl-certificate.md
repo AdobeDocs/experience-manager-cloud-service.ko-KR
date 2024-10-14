@@ -5,9 +5,9 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f12392075b71b219bf449f585f63561167ddada9
+source-git-commit: 9645ee21bc8c44020d5bb7cdd513d67429353c7d
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '996'
 ht-degree: 4%
 
 ---
@@ -46,7 +46,7 @@ Cloud Manager에 추가되면 Adobe이 발급될 때까지 기다렸다가 사�
 * **고객 관리(OV/EV) SSL 인증서:**
 
    * 인증 기관에서 OV/EV SSL 인증서를 받습니다. 자세한 내용은 [고객 관리 OV/EV SSL 인증서에 대한 요구 사항](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)을 검토하십시오.
-   * 인증서를 얻은 후 [고객 관리(OV/EV) SSL 인증서의 ](#add-customer-manage-ssl-cert) 세부 정보를 Cloud Manager에 추가합니다.
+   * 인증서를 얻은 후 [고객 관리(OV/EV) SSL 인증서의 ](#add-customer-managed-ssl-cert) 세부 정보를 Cloud Manager에 추가합니다.
    * 추가되면 사용자 정의 도메인 이름이 확인된 것으로 표시되고 SSL 인증서가 적용됩니다.
 
 두 경우 모두 인증서를 확인하고 설치한 후 사용자 정의 도메인을 환경에서 안전하게 사용할 수 있습니다. 모든 것이 예상대로 작동하는지 확인하려면 Cloud Manager 인터페이스에서 [정기적으로 도메인의 상태를 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)하십시오.
@@ -76,8 +76,7 @@ Cloud Manager에 추가되면 Adobe이 발급될 때까지 기다렸다가 사�
 1. **인증서 이름** 필드에 DV SSL 인증서와 연결할 이름을 입력합니다.
 
 1. **도메인 선택** 드롭다운 목록에서 DV SSL 인증서와 연결하려는 확인된 도메인을 하나 이상 선택합니다.
-   * 선택할 도메인이 없습니까? 이 경우 SSL 인증서를 추가하려면 먼저 사용자 정의 도메인 이름을 추가하고 인증되었는지 확인해야 합니다.
-   * [사용자 지정 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)를 참조하십시오.
+   * 선택할 도메인이 없습니까? 이 경우 Adobe 관리 SSL 인증서를 추가하기 전에 먼저 [사용자 정의 도메인 이름을 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)하고 인증되었는지 확인해야 합니다.
    * 사용자 정의 도메인 이름을 모두 추가했으면 이 항목으로 돌아가서 1단계에서 다시 시작합니다.
 
 1. 대화 상자의 오른쪽 하단에 있는 **저장**&#x200B;을 클릭합니다.
