@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
+source-git-commit: f12392075b71b219bf449f585f63561167ddada9
 workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 4%
@@ -90,13 +90,18 @@ Cloud Manager에 추가되면 Adobe이 발급될 때까지 기다렸다가 사�
 
 ## OV/ED(고객 관리) SSL 인증서 추가 {#add-customer-managed-ssl-cert}
 
+<!-- IF THIS TOPIC GET UPDATED, REMEMBER TO UPDATE THE STEPS ALSO IN THE "MANAGE SSL CERTIFICATES TOPIC TOO -->
+
 도메인에서 Adobe 관리 SSL 인증서(권장) 또는 고객 관리 SSL 인증서를 사용할지 선택하는 데 도움이 필요하십니까? [추가할 SSL 인증서 선택](#which-ssl-to-add)을 참조하세요.
 
 **고객 관리(OV/EV) SSL 인증서를 추가하려면:**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 프로그램을 선택합니다.
+
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
+
 1. 페이지의 왼쪽 상단 모서리에서 ![메뉴 아이콘 표시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)를 클릭하여 사이드 메뉴를 표시합니다.
+
 1. **서비스** 제목에서 ![닫힌 아이콘 잠금](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL 인증서 잠금**&#x200B;을 클릭합니다.
 
    ![SSL 인증서 추가](/help/implementing/cloud-manager/assets/ssl/ssl-cert-add.png)
@@ -109,7 +114,8 @@ Cloud Manager에 추가되면 Adobe이 발급될 때까지 기다렸다가 사�
 이 필드는 정보 제공용으로만 사용되며 SSL 인증서를 쉽게 참조하는 데 도움이 되는 모든 이름이 될 수 있습니다.
 
 1. **인증서**, **개인 키** 및 **인증서 체인** 필드에서 OV 또는 EV SSL 인증서의 필수 값을 복사하여 대화 상자의 해당 필드에 붙여넣습니다.
-값에서 감지된 모든 오류가 표시됩니다. 인증서를 저장하려면 먼저 모든 오류를 해결해야 합니다. 일반적인 오류를 해결하는 방법에 대한 자세한 내용은 [인증서 오류](#certificate-errors)를 참조하세요.
+
+   값에서 감지된 모든 오류가 표시됩니다. 인증서를 저장하려면 먼저 모든 오류를 해결해야 합니다. 일반적인 오류를 해결하는 방법에 대한 자세한 내용은 [인증서 오류](#certificate-errors)를 참조하세요.
 
    ![SSL 인증서 추가 대화 상자](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)|
 

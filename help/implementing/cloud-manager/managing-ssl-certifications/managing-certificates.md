@@ -5,9 +5,9 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b735c724bd8d68273b3c09a2dc53a13f5f6095ae
+source-git-commit: f12392075b71b219bf449f585f63561167ddada9
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1034'
 ht-degree: 9%
 
 ---
@@ -59,9 +59,10 @@ Cloud Manager은 프로그램의 모든 인증서 상태에 대한 개요를 제
 
 1. 변경 내용을 저장하고 자동으로 적용하려면 **업데이트**&#x200B;를 클릭하십시오.
 
+
 >[!NOTE]
 >
->동일한 SAN 도메인 항목을 포함하는 SAN 인증서가 두 개 이상 있는 경우, 해당 도메인에 한 개의 인증서가 포함되고 다른 인증서가 업데이트되면 이제 도메인에 대해 후자가 설치됩니다.
+>동일한 SAN 도메인 항목을 포함하는 SAN 인증서가 두 개 이상 있는 경우, 해당 도메인에 한 개의 인증서가 포함되고 다른 인증서가 업데이트되면 도메인에 대해 두 인증서가 설치됩니다.
 >
 >자세한 내용은 [SSL 인증서 문제 해결](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert)을 참조하십시오.
 
@@ -80,13 +81,21 @@ Cloud Manager은 프로그램의 모든 인증서 상태에 대한 개요를 제
 **Adobe 관리 SSL 인증서의 이름을 바꾸려면**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 프로그램을 선택합니다.
+
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
+
 1. 페이지의 왼쪽 상단 모서리에서 ![메뉴 아이콘 표시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)를 클릭하여 사이드 메뉴를 표시합니다.
+
 1. **서비스** 제목에서 ![닫힌 아이콘 잠금](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL 인증서 잠금**&#x200B;을 클릭합니다.
-1. **SSL 인증서** 페이지에서 이름을 바꿀 *Adobe 관리* 인증서가 있는 행 끝에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
+
+1. **SSL 인증서** 페이지에서 이름을 바꿀 **Adobe 관리** SSL 인증서가 있는 행 끝에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
+
 1. 드롭다운 메뉴에서 **이름 바꾸기**&#x200B;를 클릭합니다.
+
 1. **DV 인증서 이름 바꾸기** 대화 상자의 **인증서 이름** 텍스트 필드에 새 인증서 이름을 입력합니다.
+
 1. **이름 바꾸기**&#x200B;를 클릭합니다.
+
 
 ## SSL 인증서 삭제 {#deleting-an-ssl-certificate}
 
@@ -101,17 +110,25 @@ Cloud Manager에서 Adobe 관리 또는 고객 관리 SSL 인증서를 삭제하
 **SSL 인증서를 삭제하려면:**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 프로그램을 선택합니다.
+
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
+
 1. 페이지의 왼쪽 상단 모서리에서 ![메뉴 아이콘 표시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)를 클릭하여 사이드 메뉴를 표시합니다.
+
 1. **서비스** 제목에서 ![닫힌 아이콘 잠금](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL 인증서 잠금**&#x200B;을 클릭합니다.
-1. SSL 인증서 페이지의 삭제하려는 인증서의 테이블 행에서 맨 오른쪽에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다
-1. 드롭다운 메뉴에서 **삭제**를 클릭합니다.
-삭제 버튼에 다음 이미지에 표시된 정보 아이콘이 있는 경우 위의 참고 사항을 참조하십시오.
+
+1. SSL 인증서 페이지의 삭제하려는 인증서의 테이블 행에서 맨 오른쪽에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
+
+1. 드롭다운 메뉴에서 **삭제**&#x200B;를 클릭합니다.
+
+   **Delete**&#x200B;에 다음 이미지에 표시된 정보 아이콘이 있는 경우 위의 메모를 참조하십시오.
 
    ![정보 아이콘이 있는 삭제 단추](/help/implementing/cloud-manager/assets/ssl/ssl-cert-delete-infoicon.png)
 
 1. **SSL 인증서 삭제** 대화 상자에서 **삭제**&#x200B;를 클릭하여 삭제를 확인합니다.
+
 1. 파이프라인을 실행하여 삭제된 인증서의 배포를 취소합니다.
+
 
 ## 기존 CDN 구성 {#pre-existing-cdn}
 

@@ -4,21 +4,21 @@ description: Cloud Manager을 사용하여 Edge Delivery 사이트 또는 Cloud 
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 42b30c12f17106610cfb7f7b4c04c5ab703bab45
+source-git-commit: 02f9b035320bb4b6219d5ed4273554259fc09e59
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '802'
 ht-degree: 9%
 
 ---
 
 
-# CDN(Content Delivery Network) 구성 관리 {#manage-cdn-configurations}
+# CDN 구성 관리 {#manage-cdn-configurations}
 
-Cloud Manager을 사용하여 Edge Delivery 사이트 또는 Cloud Manager 환경에 대한 CDN 구성을 편집 및 업데이트하거나 삭제하는 방법에 대해 알아봅니다.
+Cloud Manager을 사용하여 Edge Delivery 사이트 또는 Cloud Manager 환경에 대한 CDN 구성을 편집하거나 삭제하는 방법에 대해 알아봅니다.
 
 ## CDN 구성 페이지에서 CDN 구성 편집 {#edit-cdn}
 
-Cloud Manager Adobe에서 몇 가지 이유로 환경 계층(Publish 또는 미리보기)과 SSL 인증서를 포함한 CDN 구성을 편집할 수 있습니다.
+Cloud Manager Adobe에서 여러 가지 이유로 환경 계층(Publish 또는 미리보기)과 SSL 인증서를 포함한 CDN(Content Delivery Network) 구성을 편집할 수 있습니다.
 
 * **환경 변경**: 계층을 조정하면 라이브 프로덕션(Publish) 또는 테스트(미리보기) 여부에 관계없이 CDN 설정을 올바른 환경과 일치시킵니다.
 * **보안 개선 사항**: 인증서를 업데이트하거나 규정 준수 및 보안 요구 사항을 해결할 때 다른 SSL 인증서를 선택해야 합니다.
@@ -37,6 +37,7 @@ Cloud Manager Adobe에서 몇 가지 이유로 환경 계층(Publish 또는 미�
    ![CDN 구성 편집](/help/implementing/cloud-manager/assets/cdn-config-edit.png)
 
 1. 드롭다운 메뉴에서 **편집**&#x200B;을 클릭합니다.
+
 1. **CDN 구성 편집** 대화 상자에서 각 드롭다운 목록에 있는 옵션을 하나 이상 설정합니다.
 
    대화 상자에 표시되는 옵션은 **Adobe 관리 CDN**&#x200B;을 사용하는지 또는 **기타 CDN 공급자**(고객 관리 CDN)를 사용하는지에 따라 다릅니다.
@@ -44,6 +45,7 @@ Cloud Manager Adobe에서 몇 가지 이유로 환경 계층(Publish 또는 미�
 1. **업데이트**&#x200B;를 클릭합니다.
 
    편집된 CDN의 상태가 변경 사항을 반영하도록 **CDN 구성** 표에 업데이트됩니다.
+
 
 ## 환경 페이지에서 CDN 구성 편집
 
@@ -63,7 +65,7 @@ Cloud Manager Adobe에서 몇 가지 이유로 환경 계층(Publish 또는 미�
 
 1. 팝업 메뉴에서 **편집**&#x200B;을 클릭합니다.
 
-1. **구성 편집** 대화 상자에서 각 드롭다운 목록에 있는 옵션을 하나 이상 설정합니다.
+1. **CDN 구성 편집** 대화 상자에서 각 드롭다운 목록에 있는 옵션을 하나 이상 설정합니다.
 
 대화 상자에 표시되는 옵션은 **Adobe 관리 CDN**&#x200B;을 사용하는지 또는 **기타 CDN 공급자**(고객 관리 CDN)를 사용하는지에 따라 다릅니다.
 
@@ -87,11 +89,36 @@ Cloud Manager에서 Adobe 관리 CDN 또는 고객 관리 CDN 구성을 삭제�
 
 1. 왼쪽 패널의 **서비스**&#x200B;에서 **CDN 구성**&#x200B;을 클릭합니다.
 
-1. CDN 구성 테이블에서 제거할 CDN이 있는 행의 끝에 있는 생략 부호를 클릭합니다.
+1. CDN 구성 테이블에서 제거할 CDN에 해당하는 행 끝에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
 
    ![CDN 구성 삭제](/help/implementing/cloud-manager/assets/cdn-config-delete.png)
 
-1. **삭제**&#x200B;를 클릭합니다.
+1. 드롭다운 메뉴에서 **삭제**&#x200B;를 클릭합니다.
+
+1. **CDN 구성 삭제** 대화 상자에서 **삭제**&#x200B;를 클릭합니다.
+
+1. 사이트의 CDN 제거를 확인하려면 **삭제**&#x200B;를 다시 클릭합니다.
+
+
+## 환경 페이지에서 CDN 구성 삭제
+
+**환경** 페이지에서 CDN 구성을 삭제하는 단계는 [CDN 구성 페이지](#edit-cdn)에서 CDN 구성을 삭제하는 단계와 거의 동일하지만 시작 지점이 다릅니다.
+
+**환경 페이지에서 CDN 구성을 삭제하려면:**
+
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
+
+1. 왼쪽 메뉴에서 **환경**&#x200B;을 클릭합니다.
+
+1. **환경** 페이지에서 원하는 환경을 선택하십시오.
+
+1. 환경 세부 정보 페이지의 **CDN 구성** 그룹화에서 제거할 CDN 구성에 해당하는 ![자세히 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
+
+   환경 세부 정보 페이지의 ![CDN 구성 그룹](/help/implementing/cloud-manager/assets/cdn/environments-cdn-config.png)
+
+1. 드롭다운 메뉴에서 **삭제**&#x200B;를 클릭합니다.
+
+1. **CDN 구성 삭제** 대화 상자에서 **삭제**&#x200B;를 클릭합니다.
 
 1. 사이트의 CDN 제거를 확인하려면 **삭제**&#x200B;를 다시 클릭합니다.
 
