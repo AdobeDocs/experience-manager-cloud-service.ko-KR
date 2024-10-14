@@ -5,9 +5,9 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '376'
 ht-degree: 4%
 
 ---
@@ -42,17 +42,17 @@ CDN 대시보드는 모든 프로그램의 개요 페이지에서 사용할 수 
 
 ![CDN 성능 대시보드](assets/cdn-performance-dashboard.png)
 
-CDN 성능에 대한 세부 정보와 개선 방법에 대한 제안을 보려면 **트렌드 보기**&#x200B;를 탭하거나 클릭합니다.
+CDN 성능에 대한 세부 정보와 개선 방법에 대한 제안 사항을 보려면 **트렌드 보기**&#x200B;를 클릭하십시오.
 
 ![성능 트렌드](assets/cdn-performance-trend.png)
 
-차트 아래의 **보기**&#x200B;를 탭하거나 클릭하여 차트의 시간 범위를 변경합니다.
+차트의 시간 범위를 변경하려면 차트 아래의 **보기**&#x200B;를 클릭하십시오.
 
 CDN 성능을 향상시키는 방법에 대한 제안 사항은 **Recommendations** 탭을 선택하십시오.
 
 ![CDN 권장 사항](assets/cdn-performance-recommendations.png)
 
-개선해야 할 단계 및 문제의 원인에 대한 세부 정보를 보려면 목록에서 권장 사항 옆에 있는 V자형 화살표를 탭하거나 클릭합니다.
+개선해야 할 단계 및 문제의 원인에 대한 세부 정보를 보려면 목록에서 권장 사항 옆에 있는 V자형 화살표를 클릭하십시오.
 
 ## 캐시 적중 정의 {#cache-hit}
 

@@ -5,7 +5,7 @@ exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 19%
@@ -23,7 +23,7 @@ Cloud Manager에서 IP 허용 목록을 보고, 편집하고, 삭제하고, 상�
 **IP 허용 목록을 보고 업데이트하려면:**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그온한 다음 적절한 조직과 프로그램을 선택합니다.
-1. **개요** 페이지의 사이드 패널에서 **서비스**&#x200B;에 있는 ![작업 목록 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP 허용 목록**&#x200B;을 클릭합니다.
+1. **개요** 페이지의 왼쪽 메뉴에서 **서비스** 아래의 ![작업 목록 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP 허용 목록**&#x200B;을 클릭합니다.
 1. 보거나 업데이트할 IP 허용 목록의 행을 식별합니다.
 1. 행의 오른쪽 끝에 있는 ![기타 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
 1. 드롭다운 메뉴에서 **보기 및 업데이트**를 클릭합니다.
@@ -40,7 +40,7 @@ Cloud Manager에서 IP 허용 목록을 보고, 편집하고, 삭제하고, 상�
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그온한 다음 적절한 조직과 프로그램을 선택합니다.
 
-1. **개요** 페이지의 사이드 패널에서 **서비스**&#x200B;에 있는 ![작업 목록 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP 허용 목록**&#x200B;을 클릭합니다.
+1. **개요** 페이지의 왼쪽 메뉴에서 **서비스** 아래의 ![작업 목록 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP 허용 목록**&#x200B;을 클릭합니다.
 
 1. IP 허용 목록 테이블의 **상태** 열에서 사용 중인 녹색 IP 허용 목록 위에 마우스 포인터를 두면 적용된 하나 이상의 서비스를 볼 수 있습니다.
 
@@ -63,10 +63,9 @@ IP 허용 목록을 삭제하면 모든 서비스에서 목록이 자동으로 �
 **IP 허용 목록을 삭제하려면:**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그온한 다음 적절한 조직과 프로그램을 선택합니다.
-1. **개요** 페이지의 사이드 패널에서 **서비스**&#x200B;에 있는 ![작업 목록 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP 허용 목록**&#x200B;을 클릭합니다.
-1. 삭제할 IP 허용 목록의 행을 식별한 다음 행의 오른쪽 끝에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
-1. 드롭다운 메뉴에서 **삭제**&#x200B;를 클릭합니다.
-1. IP 허용 목록 삭제 대화 상자에서 **삭제**&#x200B;를 클릭합니다.
+1. **개요** 페이지의 왼쪽 메뉴에서 **서비스** 아래의 ![작업 목록 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP 허용 목록**&#x200B;을 클릭합니다.
+1. 삭제할 IP 허용 목록의 행을 식별한 다음 행 오른쪽 끝에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭하고 **삭제**&#x200B;를 클릭합니다.
+1. **IP 허용 목록 삭제** 대화 상자에서 **삭제**&#x200B;를 클릭합니다.
 
 ## 기존 CDN 구성 {#pre-existing-cdn}
 

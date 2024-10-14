@@ -5,9 +5,9 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '909'
 ht-degree: 34%
 
 ---
@@ -34,7 +34,7 @@ Cloud Manager 라이선스 대시보드를 사용하면 사용 가능한 항목 
 >라이선스 대시보드를 보려면 **비즈니스 소유자** 역할의 사용자가 로그인해야 합니다.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
-1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 [Cloud Manager 헤더](/help/implementing/cloud-manager/navigation.md#cloud-manager-header)의 햄버거 메뉴 단추를 클릭합니다. 그러면 탭이 표시됩니다.
+1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 [Cloud Manager 헤더](/help/implementing/cloud-manager/navigation.md#cloud-manager-header)의 https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg을 클릭합니다. 이 작업을 수행하면 탭이 표시됩니다.
 1. 탭에서 **라이선스** 옵션을 클릭합니다.
 
 ![라이선스 대시보드](assets/license-dashboard.png)

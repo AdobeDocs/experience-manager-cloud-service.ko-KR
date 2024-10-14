@@ -1,34 +1,31 @@
 ---
 title: 프로젝트 설정
-description: Maven을 사용하여 AEM 프로젝트를 빌드하는 방법과 자체 프로젝트를 만들 때 준수해야 하는 표준에 대해 알아봅니다.
+description: AEM 프로젝트를 Maven로 빌드하는 방법과 자체 프로젝트를 만들 때 준수해야 하는 표준에 대해 알아봅니다.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
 workflow-type: tm+mt
-source-wordcount: '1399'
-ht-degree: 96%
+source-wordcount: '1395'
+ht-degree: 68%
 
 ---
 
 # 프로젝트 설정 {#project-setup}
 
-Maven을 사용하여 AEM 프로젝트를 빌드하는 방법과 자체 프로젝트를 만들 때 준수해야 하는 표준에 대해 알아봅니다.
+AEM 프로젝트를 Maven로 빌드하는 방법과 자체 프로젝트를 만들 때 준수해야 하는 표준에 대해 알아봅니다.
 
 ## 프로젝트 설정 세부 정보 {#project-setup-details}
 
-Cloud Manager를 사용하여 빌드 및 배포하려면 AEM 프로젝트가 다음 지침을 준수해야 합니다.
+Cloud Manager을 사용하여 성공적으로 빌드하고 배포하려면 AEM Projects가 다음 지침을 준수해야 합니다.
 
 * 프로젝트는 [Apache Maven](https://maven.apache.org)을 사용하여 빌드해야 합니다.
 * git 저장소의 루트에 `pom.xml` 파일이 있어야 합니다. 이 `pom.xml` 파일은 여러 하위 모듈을 참조할 수 있습니다(다른 하위 모듈 등이 있을 수 있음).
-* `pom.xml` 파일에 추가 Maven 아티팩트 저장소에 대한 참조를 추가할 수 있습니다.
-   * 구성된 경우 [암호로 보호된 아티팩트 저장소](#password-protected-maven-repositories)에 대한 액세스가 지원됩니다. 그러나 네트워크로 보호된 아티팩트 저장소에 대한 액세스는 지원되지 않습니다.
-* 배포 가능한 콘텐츠 패키지는 `target`이라는 디렉터리에 포함된 콘텐츠 패키지 `.zip` 파일에서 검색됩니다.
-   * 여러 하위 모듈에서 콘텐츠 패키지를 생성할 수 있습니다.
-* 배포 가능한 Dispatcher 아티팩트는 `.zip` 파일(`target`이라는 디렉터리에도 포함됨)을 스캔하여 검색되며, 여기에는 `conf` 및 `conf.d`라는 디렉터리가 포함되어 있습니다.
-* 콘텐츠 패키지가 두 개 이상인 경우 패키지 배포 순서가 보장되지 않습니다.
-   * 특정 순서가 필요한 경우 콘텐츠 패키지 종속성을 사용하여 순서를 정의할 수 있습니다.
+* `pom.xml` 파일에 추가 Maven 아티팩트 저장소에 대한 참조를 추가할 수 있습니다. 구성된 경우 [암호로 보호된 아티팩트 저장소](#password-protected-maven-repositories)에 대한 액세스가 지원됩니다. 그러나 네트워크로 보호된 아티팩트 저장소에 대한 액세스는 지원되지 않습니다.
+* 배포 가능한 콘텐츠 패키지가 `target` 디렉터리에 포함된 콘텐츠 패키지 `.zip` 파일에서 검색되었습니다. 여러 하위 모듈에서 콘텐츠 패키지를 생성할 수 있습니다.
+* 배포 가능한 Dispatcher 아티팩트는 `conf` 및 `conf.d` 디렉터리가 있는 `.zip` 파일(`target` 디렉터리에도 포함됨)을 스캔하여 검색됩니다.
+* 콘텐츠 패키지가 두 개 이상인 경우 패키지 배포 순서가 보장되지 않습니다. 특정 순서가 필요한 경우 콘텐츠 패키지 종속성을 사용하여 순서를 정의할 수 있습니다.
 * 배포 중 패키지를 [건너뛸](#skipping-content-packages) 수 있습니다.
 
 ## Cloud Manager에서 Maven 프로필 활성화 {#activating-maven-profiles-in-cloud-manager}
@@ -37,7 +34,7 @@ Cloud Manager를 사용하여 빌드 및 배포하려면 AEM 프로젝트가 다
 
 `CM_BUILD` [환경 변수](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)를 찾아 Cloud Manager 빌드 환경 내에서 Maven 프로필을 활성화해야 합니다. 환경 변수를 찾아야 합니다. 마찬가지로 Cloud Manager 빌드 환경 외부에서만 사용하려는 프로필은 이 변수가 없는지 확인해야 합니다.
 
-예를 들어 빌드가 Cloud Manager 내에서 실행될 때만 간단한 메시지를 출력하려는 경우 이렇게 하면 됩니다.
+예를 들어 빌드가 Cloud Manager 내에서 실행될 때만 간단한 메시지를 출력하려는 경우 다음과 같이 하면 됩니다.
 
 ```xml
         <profile>
@@ -75,7 +72,7 @@ Cloud Manager를 사용하여 빌드 및 배포하려면 AEM 프로젝트가 다
 >
 >개발자 워크스테이션에서 이 프로필을 테스트하려면 명령줄(`-PcmBuild` 사용)이나 통합 개발 환경(IDE)에서 활성화할 수 있습니다.
 
-빌드가 Cloud Manager 외부에서 실행될 때만 간단한 메시지를 출력하려는 경우 이렇게 하면 됩니다.
+빌드가 Cloud Manager 외부에서 실행될 때만 간단한 메시지를 출력하려는 경우 다음과 같이 하면 됩니다.
 
 ```xml
         <profile>
@@ -109,13 +106,13 @@ Cloud Manager를 사용하여 빌드 및 배포하려면 AEM 프로젝트가 다
         </profile>
 ```
 
-## 암호로 보호된 Maven 저장소 지원 {#password-protected-maven-repositories}
+## Cloud Manager 내에서 암호로 보호된 Maven 저장소 사용 {#password-protected-maven-repositories}
 
 >[!NOTE]
 >
->암호로 보호된 Maven 저장소의 아티팩트는 이 메커니즘을 통해 배포된 코드가 현재 Cloud Manager의 품질 게이트에 구현된 [코드 품질 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md)을 통해 실행되지 않으므로 신중하게 사용해야 합니다. 따라서 AEM에 연결되지 않은 코드에만 드물게 사용해야 합니다 이진과 함께 전체 프로젝트 소스 코드 외에 Java 소스도 배포하는 것이 좋습니다.
+>Cloud Manager에서 해당 [코드 품질 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md)과 함께 이 코드를 평가하지 않으므로 암호로 보호된 Maven 저장소에서 아티팩트를 신중하게 배포하십시오. 이 메서드는 드문 경우에만 예약해야 하며 AEM과 관련이 없는 코드에만 적용되어야 합니다. Adobe은 이진과 함께 Java 소스 및 전체 프로젝트 소스 코드를 모두 포함하는 것을 권장합니다. 이렇게 하면 배포 프로세스 전반에 걸쳐 투명성과 유지 관리성이 향상됩니다.
 
-Cloud Manager 내에서 암호로 보호된 Maven 저장소를 사용하려면 다음 작업을 수행하십시오.
+**Cloud Manager 내에서 암호로 보호된 Maven 저장소를 사용하려면:**
 
 1. 암호(및 선택적으로 사용자 이름)를 비밀 [파이프라인 변수](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)로 지정합니다.
 1. 그런 다음 [Maven 설정 파일](https://maven.apache.org/settings.html) 스키마를 따르는 git 저장소의 `.cloudmanager/maven/settings.xml` 파일 내에서 해당 비밀로 참조합니다.
@@ -124,9 +121,9 @@ Cloud Manager 빌드 프로세스가 시작되면 다음 작업을 수행하십�
 
 * 이 파일의 `<servers>` 요소는 Cloud Manager에서 제공하는 기본 `settings.xml` 파일에 병합됩니다.
    * `adobe` 및 `cloud-manager`(으)로 시작하는 서버 ID는 예약된 것으로 간주됩니다. 사용자 지정 서버에서는 사용하지 마십시오.
-   * 이러한 접두사 중 하나와 일치하지 않는 서버 ID 또는 기본 ID `central`은 Cloud Manager에서 미러링되지 않습니다.
+   * Cloud Manager은 특정 접두사 또는 기본 ID `central`과(와) 일치하는 서버 ID만 미러링합니다. 다른 모든 서버 ID는 미러링에서 제외됩니다.
 * 이 파일이 있는 경우 서버 ID는 `pom.xml` 파일 내의 `<repository>` 및/또는 `<pluginRepository>` 요소 내부에서 참조됩니다.
-* 일반적으로 이러한 `<repository>` 및/또는 `<pluginRepository>` 요소는 [Cloud Manager별 프로필](#activating-maven-profiles-in-cloud-manager) 내에 포함되지만 반드시 필요한 것은 아닙니다.
+* 일반적으로 이러한 `<repository>` 및 `<pluginRepository>` 요소는 [Cloud Manager 관련 프로필](#activating-maven-profiles-in-cloud-manager) 내에 포함되지만 반드시 포함시켜야 하는 것은 아닙니다.
 
 예를 들어 저장소가 `https://repository.myco.com/maven2`에 있고 Cloud Manager가 사용해야 하는 사용자 이름은 `cloudmanager`, 암호가 `secretword`라고 가정해 보겠습니다. 다음 단계를 수행합니다.
 
@@ -136,7 +133,7 @@ Cloud Manager 빌드 프로세스가 시작되면 다음 작업을 수행하십�
    $ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSITORY_PASSWORD secretword`
    ```
 
-1. `.cloudmanager/maven/settings.xml` 파일에서 이를 참조합니다.
+1. 다음 파일의 `.cloudmanager/maven/settings.xml` 파일에서 이 암호를 참조합니다.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -216,9 +213,9 @@ Maven 저장소에 이진과 함께 Java 소스를 배포하는 것이 좋습니
 
 ### 프로젝트 소스 배포 {#deploying-project-sources}
 
-Maven 저장소에 이진과 함께 전체 프로젝트 소스를 배포하는 것이 좋습니다. 이를 통해 정확한 아티팩트를 재구축할 수 있습니다.
+Maven 저장소에 이진과 함께 전체 프로젝트 소스를 배포하는 것이 좋습니다. 이렇게 하면 정확한 아티팩트를 재구축할 수 있습니다.
 
-이렇게 하려면 프로젝트에서 maven-assembly-plugin을 구성합니다.
+다음 방식으로 프로젝트에서 maven-assembly-plugin을 구성합니다.
 
 ```xml
          <plugin>
@@ -243,7 +240,7 @@ Maven 저장소에 이진과 함께 전체 프로젝트 소스를 배포하는 �
 
 ## 콘텐츠 패키지 건너뛰기 {#skipping-content-packages}
 
-Cloud Manager에서 빌드는 콘텐츠 패키지를 원하는 수만큼 생성할 수 있습니다. 여러 가지 이유로 콘텐츠 패키지를 생성하지만 배포하지 않는 것이 바람직할 수 있습니다. 예를 들어 테스트용으로만 사용되거나 빌드 프로세스의 다른 단계에서 다시 패키징될 콘텐츠 패키지를 빌드할 때를 들 수 있습니다. 즉, 다른 패키지의 하위 패키지입니다.
+Cloud Manager에서 빌드는 콘텐츠 패키지를 원하는 수만큼 생성할 수 있습니다. 여러 가지 이유로 콘텐츠 패키지를 생성하지만 배포하지 않는 것이 바람직할 수 있습니다. 콘텐츠 패키지가 테스트 목적으로만 빌드되거나 빌드 프로세스의 다른 단계에서 다시 패키징되는 경우 예제가 발생합니다. 즉, 다른 패키지의 하위 패키지입니다.
 
 이러한 시나리오를 수용하기 위해 Cloud Manager는 빌드된 콘텐츠 패키지의 속성에서 `cloudManagerTarget`이라는 속성을 찾습니다. 이 속성을 `none`으로 설정하면 패키지를 건너뛰고 배포되지 않습니다.
 
@@ -310,7 +307,7 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 
 두 분기는 동일한 커밋 ID에 있습니다.
 
-1. 파이프라인 1을 먼저 실행하면 패키지가 정상적으로 빌드됩니다.
+1. 먼저 파이프라인 1을 실행하면 패키지가 정상적으로 빌드됩니다.
 1. 그런 다음 파이프라인 2를 실행하면 파이프라인 1에서 만든 패키지가 재사용됩니다.
 
 #### 예 2 {#example-2}
@@ -329,7 +326,7 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 
 ### 옵트아웃 {#opting-out}
 
-원하는 경우 파이프라인 변수 `CM_DISABLE_BUILD_REUSE`를 `true`로 설정하여 특정 파이프라인에 대해 재사용 비헤이비어를 비활성화할 수 있습니다. 이 변수가 설정되면 커밋 해시가 계속 추출되고 결과 아티팩트가 나중에 사용하기 위해 저장되지만 이전에 저장된 아티팩트는 재사용되지 않습니다. 이 비헤이비어를 이해하려면 다음 시나리오를 고려하십시오.
+원하는 경우 파이프라인 변수 `CM_DISABLE_BUILD_REUSE`를 `true`로 설정하여 특정 파이프라인에 대해 재사용 비헤이비어를 비활성화할 수 있습니다. 이 변수가 설정되면 시스템은 커밋 해시를 추출하고 나중에 사용할 수 있도록 결과 아티팩트를 저장하지만 이전에 저장된 아티팩트의 재사용은 건너뜁니다. 이 동작을 이해하려면 다음 시나리오를 고려하십시오.
 
 1. 새 파이프라인이 생성됩니다.
 1. 파이프라인이 실행되고(실행 #1) 현재 HEAD 커밋은 `becdddb`입니다. 실행이 성공하고 결과 아티팩트가 저장됩니다.
@@ -343,6 +340,7 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 
 * 빌드 아티팩트는 커밋 해시가 동일한지 여부에 관계없이 다른 프로그램에서 재사용되지 않습니다.
 * 빌드 아티팩트는 분기 및/또는 파이프라인이 다른 경우에도 동일한 프로그램 내에서 재사용됩니다.
-* [Maven 버전 처리](/help/implementing/cloud-manager/managing-code/project-version-handling.md)는 프로덕션 파이프라인에서만 프로젝트 버전을 대체합니다. 따라서 개발 배포 실행과 프로덕션 파이프라인 실행 모두에 동일한 커밋이 사용되고 개발 배포 파이프라인이 먼저 실행되면 버전이 변경되지 않고 스테이지 및 프로덕션에 배포됩니다. 그러나 이 경우에도 태그가 생성됩니다.
-* 저장된 아티팩트를 정상적으로 검색하지 못하면 아티팩트가 저장되지 않은 것처럼 빌드 단계가 실행됩니다.
+* [Maven 버전 처리](/help/implementing/cloud-manager/managing-code/project-version-handling.md)는 프로덕션 파이프라인에서만 프로젝트 버전을 대체합니다.
+개발 배포 및 프로덕션 파이프라인 모두에 동일한 커밋이 사용되고 개발 배포가 먼저 실행되는 경우 버전이 스테이징 및 프로덕션에 변경되지 않고 배포됩니다. 그러나 이 경우에도 태그가 생성됩니다.
+* 저장된 아티팩트를 성공적으로 검색하지 못하면 아티팩트가 저장되지 않은 것처럼 빌드 단계가 실행됩니다.
 * `CM_DISABLE_BUILD_REUSE` 이외의 파이프라인 변수는 Cloud Manager가 이전에 생성된 빌드 아티팩트를 재사용하기로 결정할 때 고려되지 않습니다.

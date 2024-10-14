@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 40%
+source-wordcount: '1656'
+ht-degree: 39%
 
 ---
 
@@ -38,7 +38,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 1. 프로그램의 현재 보기를 토글할 수 있는 탭입니다.
    * **홈** 보기(기본값) - 모든 프로그램의 개요가 포함된 **내 프로그램** 보기 선택
    * [라이선스 대시보드](/help/implementing/cloud-manager/license-dashboard.md)에 액세스하는 **라이선스**.
-   * 탭은 기본적으로 닫혀 있으며 [Cloud Manager 헤더](#cloud-manager-header)의 햄버거 메뉴를 사용하여 표시할 수 있습니다.
+   * 탭은 기본적으로 닫히며 [Cloud Manager 헤더](#cloud-manager-header)에서 https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg을 사용하여 표시할 수 있습니다.
 1. [통계 및 콜 투 액션](#statistics) - 최근 활동 개요
 1. [**내 프로그램** 섹션](#my-programs-section) - 사용자의 모든 프로그램에 대한 개요 포함
 1. 관련 리소스에 쉽게 액세스할 수 있는 [빠른 링크](#quick-links-section).
@@ -195,7 +195,7 @@ Cloud Manager Adobe 를 클릭하여 홈으로 돌아갑니다.
 
 ![프로그램 도구 모음](assets/cloud-manager-program-toolbar.png)
 
-햄버거 메뉴를 사용하여 탭을 숨긴 경우에도 도구 모음에는 현재 표시된 탭이 항상 표시됩니다.
+https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg 을 사용하여 탭을 숨긴 경우에도 도구 모음에 현재 있는 탭이 항상 표시됩니다.
 
 ### 프로그램 탭 {#program-tabs}
 

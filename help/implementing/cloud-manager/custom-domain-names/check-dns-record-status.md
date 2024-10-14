@@ -5,10 +5,10 @@ exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 24%
+ht-degree: 25%
 
 ---
 
@@ -33,7 +33,7 @@ Cloud Manager을 사용하여 DNS 레코드 상태를 확인하기 전에 이러
 
 1. **개요** 페이지에서 **환경** 화면으로 이동합니다.
 
-1. 왼쪽 탐색 패널에서 **도메인 설정**&#x200B;을 클릭합니다.
+1. 왼쪽 메뉴에서 **도메인 설정**&#x200B;을 클릭합니다.
 
 1. 도메인 이름에 대한 **상태** 아이콘을 클릭합니다.
 

@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '2371'
-ht-degree: 73%
+source-wordcount: '2357'
+ht-degree: 70%
 
 ---
 
@@ -109,7 +109,7 @@ ht-degree: 73%
 
 추가 게시 지역을 제거할 수도 있습니다. 단, 한 번의 트랜잭션에서만 지역을 추가 또는 제거할 수 있습니다. 하나의 지역을 추가하고 하나의 지역을 제거해야 하는 경우, 먼저 지역을 추가하고 변경 사항을 저장한 다음 제거합니다(또는 그 반대).
 
-1. 내 프로그램의 프로그램 개요 콘솔에서 프로덕션 환경의 줄임표 버튼을 클릭하고 메뉴에서 **편집**&#x200B;을 선택합니다.
+1. 프로그램의 프로그램 개요 콘솔에서 프로덕션 환경의 https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg을 클릭하고 메뉴에서 **편집**&#x200B;을 선택합니다.
 
    ![환경 편집](assets/select-edit-environment.png)
 
@@ -129,7 +129,7 @@ ht-degree: 73%
 
 **개요** 페이지에서 두 가지 방법으로 환경의 세부 정보에 액세스할 수 있습니다.
 
-1. **개요** 페이지에서 측면 탐색 패널의 **환경** 탭을 클릭합니다.
+1. **개요** 페이지의 왼쪽 메뉴에서 **환경** 탭을 클릭합니다.
 
    ![환경 탭](assets/environments-tab2.png)
 
@@ -141,11 +141,11 @@ ht-degree: 73%
 
    ![환경 탭](assets/environments-tab2.png)
 
-1. 세부 정보를 표시할 수 있도록 목록에서 환경을 탭하거나 클릭합니다.
+1. 목록에서 환경을 클릭하여 세부 정보를 표시합니다.
 
    ![환경 세부 정보](assets/environ-preview1.png)
 
-또는 원하는 환경의 줄임표 버튼을 클릭한 다음 **세부 정보 보기**&#x200B;를 선택합니다.
+또는 원하는 환경의 https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg을 클릭한 다음 **세부 정보 보기**&#x200B;를 선택합니다.
 
 ![환경 세부 정보 보기](assets/view-environment-details.png)
 
@@ -193,7 +193,7 @@ Cloud Manager는 AEM as a Cloud Service 환경에 미리보기 서비스(추가 
 
 1. **개요** 페이지에서&#x200B;**환경** 탭을 선택합니다.
 
-1. **환경** 탭의 왼쪽 탐색 패널에서 쿼리할 환경을 선택합니다.
+1. **환경** 탭의 왼쪽 메뉴에서 쿼리할 환경을 선택합니다.
 
 1. 환경이 선택되면
 
@@ -235,11 +235,11 @@ Cloud Manager는 파이프라인과 함께 마지막으로 배포된 버전보�
 >[!NOTE]
 > 2024년 현재, 개발 인스턴스 및 일부 샌드박스 프로그램은 이미 자동으로 업데이트되므로 업데이트를 수동으로 관리할 필요가 없습니다. 이 전환으로 인해 프로그램의 _일부_&#x200B;에서는 개발 인스턴스에 대해 환경을 수동으로 업데이트하는 옵션을 사용할 수 없습니다.
 
-**업데이트** 옵션은 환경의 줄임표 버튼을 클릭하여 샌드박스 프로그램의 일부 개발 환경 및 환경에 대해 **환경** 카드에서 사용할 수 있습니다.
+**업데이트** 옵션은 환경의 https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg을 클릭하여 샌드박스 프로그램의 일부 개발 환경 및 환경에 대한 **환경** 카드에서 사용할 수 있습니다.
 
 ![환경 카드의 업데이트 옵션](assets/environ-update2.png)
 
-이 옵션은 프로그램의 **환경** 탭을 클릭한 다음, 환경의 줄임표 버튼을 선택하여 사용할 수도 있습니다.
+이 옵션은 프로그램의 **환경** 탭을 클릭한 다음 환경의 https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg을 클릭하여 사용할 수도 있습니다.
 
 ![환경 탭의 업데이트 옵션](assets/environ-update3.png)
 
@@ -259,11 +259,11 @@ Cloud Manager는 파이프라인과 함께 마지막으로 배포된 버전보�
 
 **배포 관리자** 또는 **비즈니스 소유자** 역할을 가진 사용자가 개발 환경을 삭제할 수 있습니다.
 
-**환경** 카드에 있는 프로그램의 **개요** 화면에서 삭제하려는 개발 환경의 줄임표 버튼을 클릭합니다.
+**환경** 카드에 있는 프로그램의 **개요** 화면에서 삭제할 개발 환경의 https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg을 클릭합니다.
 
 ![삭제 옵션](assets/environ-delete.png)
 
-삭제 옵션은 프로그램 **개요** 창의 **환경** 탭에서도 사용할 수 있습니다. 환경의 줄임표 버튼을 클릭하고 **삭제**&#x200B;를 선택합니다.
+삭제 옵션은 프로그램 **개요** 창의 **환경** 탭에서도 사용할 수 있습니다. 환경의 https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg을 클릭하고 **삭제**&#x200B;를 선택합니다.
 
 ![환경 탭의 삭제 옵션](assets/environ-delete2.png)
 

@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
+source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
 workflow-type: tm+mt
-source-wordcount: '3744'
+source-wordcount: '3742'
 ht-degree: 6%
 
 ---
@@ -151,7 +151,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 
 다른 자산 유형에 대한 고급 처리 매개 변수를 정의하려면 [자산 처리 구성](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing)을 참조하십시오.
 
-**적응형 비트 전송률 스트리밍을 위한 비디오 프로필을 만들려면**,
+**적응형 비트 전송률 스트리밍을 위한 비디오 프로필을 만들려면:**
 
 1. Experience Manager 로고를 선택하고 **[!UICONTROL 도구]** > **[!UICONTROL Assets]** > **[!UICONTROL 비디오 프로필]**&#x200B;로 이동합니다.
 1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
@@ -192,7 +192,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 
 **[!UICONTROL 적응형 스트리밍을 위한 인코딩]** 옵션을 사용하지 않도록 선택하면 프로필에 추가하는 모든 인코딩 사전 설정은 단일 비트 전송률 스트리밍 또는 점진적 비디오 전송을 위한 개별 비디오 표현물로 처리됩니다. Also, there is no validation to ensure that all the video renditions have the same aspect ratio.
 
-지원되는 비디오 형식 코덱은 H.264(.mp4) 및 WebM입니다.
+지원되는 비디오 형식 코덱은 H.264(.mp4)입니다. <!-- use to also include WebM but was requested for removal by Riya Midha in email dated October 14, 2024 -->
 
 [적응형 비트율 스트리밍을 위한 비디오 인코딩 프로필 만들기](#creating-a-video-encoding-profile-for-adaptive-streaming)도 참조하세요.
 

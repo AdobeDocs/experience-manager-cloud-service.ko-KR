@@ -5,10 +5,10 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 49%
+source-wordcount: '427'
+ht-degree: 45%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 49%
 
    ![프로그램 삭제 옵션](assets/delete-sandbox1.png)
 
-또는 Cloud Manager 개요 페이지에서 프로그램 카드의 줄임표 버튼을 클릭하고 **프로그램 삭제**&#x200B;를 선택할 수 있습니다.
+또는 Cloud Manager 개요 페이지에서 프로그램 카드의 https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg을 클릭하고 **프로그램 삭제**&#x200B;를 선택할 수 있습니다.
 
 ![프로그램 카드의 샌드박스 삭제](assets/delete-sandbox2.png)
 

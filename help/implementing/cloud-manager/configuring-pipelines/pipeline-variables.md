@@ -5,9 +5,9 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '618'
 ht-degree: 14%
 
 ---
@@ -84,6 +84,7 @@ Cloud Manager 사용자 인터페이스를 통해 파이프라인 변수를 구�
 
 1. **저장**&#x200B;을 클릭합니다.
 
+
 ## 파이프라인 변수 삭제 {#delete-ui}
 
 1. [파이프라인을 관리](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)할 때 파이프라인 변수를 삭제할 파이프라인의 ![줄임표 - 자세히 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
@@ -92,10 +93,7 @@ Cloud Manager 사용자 인터페이스를 통해 파이프라인 변수를 구�
 
    ![파이프라인 변수 보기/편집](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. **변수 구성** 대화 상자에서 제거할 변수의 ![줄임표 - 자세히 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
-
-1. 드롭다운 메뉴에서 **삭제**&#x200B;를 클릭합니다.
-
+1. **변수 구성** 대화 상자에서 제거할 변수의 ![줄임표 - 기타 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭한 다음 **삭제**&#x200B;를 클릭합니다.
 
 ## Cloud Manager CLI를 사용하여 파이프라인 변수 설정 {#cli}
 

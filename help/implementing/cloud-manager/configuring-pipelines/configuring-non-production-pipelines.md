@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 71%
+source-wordcount: '1398'
+ht-degree: 72%
 
 ---
 
@@ -156,12 +156,12 @@ ht-degree: 71%
 
    ![파이프라인 구성](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. 경험 감사를 활성화한 경우 **계속**&#x200B;을 탭하거나 클릭하여 경험 감사에 항상 포함되어야 하는 경로를 정의할 수 있는 **경험 감사** 탭으로 이동합니다.
+1. 경험 감사를 활성화한 경우 **계속**&#x200B;을 클릭하여 경험 감사에 항상 포함되어야 하는 경로를 정의할 수 있는 **경험 감사** 탭으로 이동합니다.
 
    * **경험 감사**&#x200B;를 사용하도록 설정한 경우 구성 방법에 대한 자세한 내용은 [경험 감사](/help/implementing/cloud-manager/experience-audit-dashboard.md) 문서를 참조하십시오.
    * 그렇지 않은 경우 이 단계를 건너뜁니다.
 
-1. **저장**&#x200B;을 탭하거나 클릭하여 파이프라인을 저장합니다.
+1. **저장**&#x200B;을 클릭하여 파이프라인을 저장합니다.
 
 파이프라인이 저장되고 이제 **프로그램 개요** 페이지의 **파이프라인** 카드에서 [파이프라인을 관리](managing-pipelines.md)할 수 있습니다.
 

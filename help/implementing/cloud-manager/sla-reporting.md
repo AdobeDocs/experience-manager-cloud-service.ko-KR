@@ -5,7 +5,7 @@ exl-id: 03932415-a029-4703-b44a-f86a87edb328
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: c46b6df488722fe750e524ad2bb383f25bf00b0f
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 13%
@@ -36,7 +36,7 @@ SLA 보고서 데이터는 작성자 계층과 Publish 계층의 두 프로덕�
 
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
 
-1. **프로그램 개요** 페이지의 왼쪽 탐색 패널에서 **보고서**&#x200B;를 클릭합니다.
+1. **프로그램 개요** 페이지의 왼쪽 메뉴에서 **보고서**&#x200B;를 클릭합니다.
 
 1. **SLA 보고서**&#x200B;를 클릭합니다.
 

@@ -5,9 +5,9 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f12392075b71b219bf449f585f63561167ddada9
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1029'
 ht-degree: 9%
 
 ---
@@ -46,7 +46,7 @@ Cloud Manager은 프로그램의 모든 인증서 상태에 대한 개요를 제
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
 1. 페이지의 왼쪽 상단 모서리에서 ![메뉴 아이콘 표시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)를 클릭하여 사이드 메뉴를 표시합니다.
 1. **서비스** 제목에서 ![닫힌 아이콘 잠금](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL 인증서 잠금**&#x200B;을 클릭합니다.
-1. 업데이트하려는 만료된 고객 관리 인증서 행에서 맨 오른쪽에 있는 줄임표 버튼을 클릭한 다음 **보기 및 업데이트**&#x200B;를 선택합니다.
+1. 업데이트하려는 만료된 고객 관리 인증서 행에서 맨 오른쪽에 있는 https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg을 클릭한 다음 **보기 및 업데이트**&#x200B;를 클릭합니다.
 
    ![만료된 고객 관리 SSL 인증 업데이트](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
@@ -117,9 +117,7 @@ Cloud Manager에서 Adobe 관리 또는 고객 관리 SSL 인증서를 삭제하
 
 1. **서비스** 제목에서 ![닫힌 아이콘 잠금](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL 인증서 잠금**&#x200B;을 클릭합니다.
 
-1. SSL 인증서 페이지의 삭제하려는 인증서의 테이블 행에서 맨 오른쪽에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
-
-1. 드롭다운 메뉴에서 **삭제**&#x200B;를 클릭합니다.
+1. SSL 인증서 페이지의 삭제하려는 인증서의 테이블 행에서 맨 오른쪽에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭한 다음 **삭제**&#x200B;를 클릭합니다.
 
    **Delete**&#x200B;에 다음 이미지에 표시된 정보 아이콘이 있는 경우 위의 메모를 참조하십시오.
 

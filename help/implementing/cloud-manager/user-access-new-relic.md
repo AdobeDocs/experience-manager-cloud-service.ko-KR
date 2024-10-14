@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1836'
-ht-degree: 67%
+source-wordcount: '1825'
+ht-degree: 62%
 
 ---
 
@@ -47,13 +47,13 @@ AEM as a Cloud Service용 New Relic One APM에는 많은 기능이 있습니다.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 New Relic One 사용자를 관리할 프로그램을 탭하거나 클릭합니다.
+1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 New Relic One 사용자를 관리할 프로그램을 클릭합니다.
 
-1. 프로그램 개요 페이지의 **환경** 카드 하단에서 줄임표 버튼을 클릭하고 **New Relic 활성화**&#x200B;를 선택합니다.
+1. 프로그램 개요 페이지의 **환경** 카드 하단에서 https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg을 클릭하고 **New Relic 활성화**&#x200B;를 선택합니다.
 
    ![사용자 관리](assets/newrelic-activate-sub-account.png)
 
-   * 프로그램의 **환경** 화면 상단에 있는 줄임표 버튼을 통해 **사용자 관리** 옵션에 액세스할 수도 있습니다.
+   * 프로그램의 **환경** 화면 상단에 있는 https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg을 클릭하여 **사용자 관리** 옵션에 액세스할 수도 있습니다.
 
 1. 하위 계정 활성화를 완료하기 위해 동일한 환경에 대해 [파이프라인을 실행](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)합니다.
 
@@ -71,11 +71,11 @@ AEM as a Cloud Service용 New Relic One APM에는 많은 기능이 있습니다.
 
 1. New Relic One 사용자를 관리할 프로그램을 클릭합니다.
 
-1. 프로그램 개요 페이지의 **환경** 카드 하단에서 줄임표 버튼을 클릭하고 **사용자 관리**&#x200B;를 선택합니다.
+1. 프로그램 개요 페이지의 **환경** 카드 하단에서 https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg을 클릭하고 **사용자 관리**&#x200B;를 선택합니다.
 
    ![사용자 관리](assets/newrelic-manage-users.png)
 
-   * 프로그램의 **환경** 화면 상단에 있는 줄임표 버튼을 통해 **사용자 관리** 옵션에 액세스할 수도 있습니다.
+   * 프로그램의 **환경** 화면 상단에 있는 https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg을 클릭하여 **사용자 관리** 옵션에 액세스할 수도 있습니다.
 
 1. **New Relic 사용자 관리** 대화 상자에서 추가하려는 사용자의 이름과 성을 입력하고 **추가** 단추를 클릭합니다. 추가하려는 모든 사용자에 대해 이 단계를 반복합니다.
 
@@ -121,11 +121,11 @@ New Relic에서 확인 이메일을 받지 못한 경우 [문제 해결 섹션](
 
 1. New Relic One에 액세스할 프로그램을 클릭합니다.
 
-1. 프로그램 개요 페이지의 **환경** 카드 하단에서 줄임표 버튼을 클릭하고 **New Relic 열기**&#x200B;를 선택합니다.
+1. 프로그램 개요 페이지의 **환경** 카드 하단에서 https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg을 클릭하고 **New Relic 열기**&#x200B;를 선택합니다.
 
    ![사용자 관리](assets/newrelic-access.png)
 
-   * 프로그램의 **환경** 화면 상단에 있는 줄임표 버튼을 통해 New Relic에 액세스할 수도 있습니다.
+   * 프로그램의 **환경** 화면 상단에 있는 https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg을 클릭하여 New Relic에 액세스할 수도 있습니다.
 
 1. 새 브라우저 탭이 열리면 New Relic One에 로그인합니다.
 
