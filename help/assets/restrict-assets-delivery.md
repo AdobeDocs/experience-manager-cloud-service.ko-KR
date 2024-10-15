@@ -3,9 +3,9 @@ title: OpenAPI 기능을 사용하여 Dynamic Media으로 자산 배달 제한
 description: OpenAPI 기능을 사용하여 에셋 전달을 제한하는 방법에 대해 알아봅니다.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 6e9fa8301fba9cab1a185bf2d81917e45acfe3a3
+source-git-commit: 03e13d29629c5e0305401179502cd1fc24f9ad75
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1117'
 ht-degree: 2%
 
 ---
@@ -96,12 +96,4 @@ AEM Cloud Service 작성자 서비스와 Asset Selector에서 IMS 전달자 토�
 
 ### Publish 서비스에서 사용자 지정 ID 공급자에 대한 게재 {#delivery-custom-identity-provider}
 
-OpenAPI 라이선스가 있는 AEM Sites, AEM Assets 및 Dynamic Media을 함께 사용할 수 있으며 AEM Publish 또는 미리보기 서비스를 통해 제공되는 웹 사이트에서 제한된 에셋 전달을 구성할 수 있습니다.
-AEM Sites의 Publish 및 미리보기 서비스가 [사용자 지정 ID 공급자(IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)를 사용하도록 구성된 경우 설정 프로세스 중에 보안 자산에 대한 액세스 권한이 있어야 하는 그룹이 `groupMembership` 특성에 포함될 수 있습니다.\
-웹 사이트 사용자가 사용자 지정 ID 공급자에 로그온하여 Publish/미리보기 서비스에서 호스팅되는 웹 사이트에 액세스하면 `groupMembership` 특성이 읽히고 보안 쿠키가 만들어지고 웹 사이트에 전달된 후 인증이 성공적으로 게시됩니다. 이 보안 쿠키는 사용자 에이전트에게 웹 사이트 콘텐츠를 전달하기 위한 모든 후속 요청에 포함됩니다.
-
-페이지에서 보안 자산이 요청되면 AEM Publish 및 미리보기 계층은 보안 쿠키에서 인증 자료를 추출하고 액세스를 확인합니다. 일치하는 항목이 있으면 자산이 표시됩니다.
-
->[!NOTE]
->
-> [OpenAPI 기능을 사용하여 Dynamic Media을 활성화하는 지원 티켓](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities)에서 사용 사례에 제한된 게재를 언급하십시오. Adobe 엔지니어링은 제한된 게재를 위한 필요한 설명 및/또는 프로세스 설정을 도와줍니다.
+AEM Sites, AEM Assets 및 Dynamic Media(OpenAPI 포함) 라이선스를 함께 사용할 수 있으므로 AEM Publish 또는 미리보기 서비스에서 호스팅되는 웹 사이트에 제한된 에셋 전달을 구성할 수 있습니다. 보안 게재 흐름은 브라우저 쿠키를 활용하여 사용자의 액세스를 설정하며, 게시 도메인의 하위 도메인인 게재 계층에 대한 사용자 지정 도메인을 보유하는 것은 이 사용 사례를 구현하기 위한 전제 조건입니다. AEM Sites의 Publish 및 미리보기 서비스가 [사용자 지정 ID 공급자(IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)를 사용하도록 구성된 경우 `delivery-token`이라는 새 쿠키를 설정하여 사용자의 그룹 구성원을 캡슐화해야 합니다. 게재 계층은 보안 쿠키에서 인증 자료를 추출하고 액세스를 확인합니다. 자세한 내용은 [엔터프라이즈 지원 티켓](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities)을 기록하십시오.
