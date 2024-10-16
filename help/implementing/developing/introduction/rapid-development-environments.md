@@ -4,10 +4,10 @@ description: 클라우드 환경에서 신속한 개발 반복을 위해 빠른 
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: fd57437b16a87de2b279b0f8bc10c12a7d3f721a
 workflow-type: tm+mt
-source-wordcount: '4241'
-ht-degree: 4%
+source-wordcount: '4537'
+ht-degree: 3%
 
 ---
 
@@ -94,10 +94,38 @@ Cloud Manager을 사용하여 프로그램에 대한 RDE를 추가한 후 다음
    aio plugins:update
    ```
 
-1. 조직, 프로그램 및 환경을 사용하도록 RDE 플러그인을 구성합니다. 아래 설정 명령은 사용자에게 조직에 있는 프로그램 목록을 대화식으로 제공하고 해당 프로그램에서 선택할 수 있는 RDE 환경을 표시합니다.
+1. aio 클라이언트를 사용하여 로그인합니다.
 
    ```
    aio login
+   ```
+   로그인 정보(토큰)는 글로벌 aio 구성에 저장되므로 하나의 로그인 및 조직만 지원합니다. 서로 다른 로그인 또는 조직이 필요한 여러 RDE를 사용하려는 경우 아래 컨텍스트 소개 예를 따르십시오.
+
+   <details><summary>다음 예제에 따라 RDE 로그인 중 하나에 대한 로컬 컨텍스트를 설정합니다</summary>
+   로그인 정보를 특정 컨텍스트 내의 현재 디렉토리에 있는 .aio 파일에 로컬로 저장하려면 다음 단계를 수행합니다. 컨텍스트는 CI/CD 환경 또는 스크립트를 설정하는 영리한 방법이기도 합니다.  이 기능을 사용하려면 aio-cli 버전 10.3.1 이상을 사용해야 합니다. 'npm install -g @adobe/aio-cli'를 사용하여 업데이트
+
+   그런 다음 login 명령을 호출하기 전에 auth 플러그인을 사용하여 기본 컨텍스트로 설정하는 &#39;mycontext&#39;라는 컨텍스트를 만들어 보겠습니다.
+
+   ```
+   aio config set --json -l "ims.contexts.mycontext" "{ cli.bare-output: false }"
+   aio auth ctx -s mycontext
+   aio login --no-open
+   ```
+
+
+   >[!NOTE]
+   > `--no-open` 옵션이 있는 login 명령은 기본 브라우저를 여는 대신 터미널에 URL을 출력합니다. 이렇게 하면 브라우저의 **시크릿** 창을 사용하여 복사하고 열 수 있습니다. 이렇게 하면 일반 브라우저 창에서 현재 로그인한 세션이 그대로 유지되므로 컨텍스트에 필요한 특정 로그인 및 조직을 사용할 수 있습니다.
+
+   첫 번째 명령은 로컬 `.aio` 구성 파일에 `mycontext`이라는 새 로그인 컨텍스트 구성을 만듭니다(필요한 경우 파일이 만들어집니다). 두 번째 명령은 컨텍스트 `mycontext`을(를) &quot;현재&quot; 컨텍스트(기본값)로 설정합니다.
+
+   이 구성이 적용되면 login 명령은 컨텍스트 `mycontext`에 로그인 토큰을 자동으로 저장하므로 로컬로 유지합니다.
+
+   로컬 구성을 여러 폴더에 보관하여 여러 컨텍스트를 관리할 수 있습니다. 또는 단일 구성 파일 내에 여러 컨텍스트를 설정하고 &quot;현재&quot; 컨텍스트를 변경하여 이들 간에 전환할 수도 있습니다.
+   </details>
+
+1. 조직, 프로그램 및 환경을 사용하도록 RDE 플러그인을 구성합니다. 아래 설정 명령은 사용자에게 조직에 있는 프로그램 목록을 대화식으로 제공하고 해당 프로그램에서 선택할 수 있는 RDE 환경을 표시합니다.
+
+   ```
    aio aem:rde:setup
    ```
 
