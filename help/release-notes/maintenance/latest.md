@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 6fa6fc9015624bec9113a198285531a3bdd7e29c
 workflow-type: tm+mt
 source-wordcount: '773'
-ht-degree: 21%
+ht-degree: 95%
 
 ---
 
@@ -24,77 +24,77 @@ ht-degree: 21%
 
 ### 개선 사항 {#enhancements-18175}
 
-* ASSETS-38322: AEM에 대해 http 요청 이벤트 활성화.
-* ASSETS-41448: 그룹 매핑에 대한 FI를 지원하도록 auth.ims 번들을 업데이트합니다.
-* ASSETS-41684: OOB OSGI 구성을 추가하여 Assets, Foundation, Sites 및 Forms에 대한 FI 대 그룹 매핑을 정의합니다.
-* ASSETS-43015: 최신 auth.ims 번들로 업데이트합니다.
-* CQ-4356633: &quot;콘텐츠만&quot; 툴팁에 문자를 더 추가합니다.
-* GRANITE-50948: 저장소 서비스를 위한 AEM 지원에 저장소 서비스를 통합합니다.
+* ASSETS-38322: AEM에 대한 http 요청 이벤트 활성화.
+* ASSETS-41448: 그룹 매핑에 대한 FI를 지원하도록 auth.ims 번들 업데이트.
+* ASSETS-41684: Assets, Foundation, Sites 및 Forms에 대한 그룹 매핑에 대한 FI를 정의하기 위해 OOB OSGI 구성 추가.
+* ASSETS-43015: 최신 auth.ims 번들로 업데이트.
+* CQ-4356633: “콘텐츠 전용” 툴팁에 추가 문자 추가.
+* GRANITE-50948: 저장소 서비스를 위해 AEM 지원에 저장소 서비스 통합.
 * GRANITE-52454: 지원 도우미 0.1.2 추가.
-* GRANITE-52454: AEMaaCS용 최신 릴리스를 사용하도록 Support Helper GRANITE-52454 업그레이드 지원 Helper.
-* GRANITE-53287: 보안 권한 통합 테스트 버전을 업데이트하는 중입니다.
-* GRANITE-53485: 복제 Azure Blob 스토리지에 대한 서비스 주체 인증을 지원합니다.
-* GRANITE-53514: 트리 활성화 가 버전 1.0.26으로 업데이트되었습니다.
-* GRANITE-53870: 빠른 시작에 대한 최대 JVM 버전 검사를 건너뛰기 위한 내부 메커니즘을 생성합니다.
-* GRANITE-53914: Java 17 업데이트된 모듈 버전으로 플랫폼 테스트 오류를 수정합니다.
-* GRANITE-53966: 컨텐츠 배포를 위해 별도의 스레드 풀을 사용합니다.
-* GRANITE-54006: Jackson을 2.17.2로 업데이트합니다.
-* GRANITE IMS 54038: Creative Cloud Enterprise IMS 클라이언트를 AEM IMS-허용 목록에 추가하다에 추가합니다.
+* GRANITE-52454: 지원 도우미 GRANITE-52454 업그레이드 AEMaaCS의 최신 릴리스를 사용하도록 지원 도우미 업그레이드.
+* GRANITE-53287: 보안 권한 통합 테스트 버전 업데이트.
+* GRANITE-53485: Azure Blob Storage 복제에 대한 서비스 주체 인증 지원.
+* GRANITE-53514: 버전 1.0.26으로 트리 활성화 업데이트.
+* GRANITE-53870: 빠른 시작을 위해 최대 JVM 버전 확인을 건너뛸 수 있는 내부 메커니즘 생성.
+* GRANITE-53914: Java 17로 인한 플랫폼 테스트 실패 수정. 모듈 버전 업데이트.
+* GRANITE-53966: 콘텐츠 배포에 별도의 스레드 풀 사용.
+* GRANITE-54006: 2.17.2로 Jackson 업데이트.
+* GRANITE-54038: AEM IMS 클라이언트 허용 목록에 Creative Cloud Enterprise IMS 클라이언트 추가.
 * GRANITE-54054: com.adobe.granite.repository.impl.SystemUserValidation warnOnly에 대한 환경 변수.
-* GRANITE-54266: 프로덕션 SDK에 검색 제안자 서비스가 없습니다.
-* GRANITE-54274: Firefly IMS 클라이언트를 허용합니다.
-* GRANITE-54300: Oak을 최신 공개 릴리스(1.70.0)로 업데이트합니다.
-* GUIDES-19069: AEM Guides 추가 기능에 대한 guidesPeerLinkIndex를 추가합니다.
-* SITES-23584: Java 17에서 Foundation 구성 요소에 대한 실패 테스트를 수정합니다.
-* SKYOPS-69768: SlingModels는 ResourceResolver를 deserialize하지 않습니다.
-* SKYOPS-76378: i18n에서 ResourceBundle 등록/등록 취소의 스레드 안전성을 개선합니다.
-* SKYOPS-79285: Sling XSS를 2.4.2로 업데이트합니다.
-* SKYOPS-82383: 명령 실행 설명자에 &#39;helm-values&#39; 변환-병합-분석 결과를 표시합니다.
-* SKYOPS-84810: RDE를 시작할 때 &quot;40-initialize-publish.sh&quot; 실행을 건너뜁니다.
-* SKYOPS-84951: 변경 가능한 콘텐츠 체크섬 생성 코드를 수정합니다.
-* SKYOPS-85335: org.apache.sling.jcr.repoinit를 1.1.52로 업데이트합니다.
-* SKYOPS-85336: Sling Commons Threads을 3.3.0으로 업데이트합니다.
-* SKYOPS-86329: java 21 sdk 지원을 위한 플랫폼 테스트 모듈의 버전을 업데이트합니다.
+* GRANITE-54266: 프로덕션 SDK에 검색 제안 서비스 누락.
+* GRANITE-54274: Firefly IMS 클라이언트 수락.
+* GRANITE-54300: 최신 공개 릴리스(1.70.0)로 Oak 업데이트.
+* GUIDES-19069: AEM Guides 추가 기능에 guidesPeerLinkIndex 추가.
+* SITES-23584: Java 17에서 Foundation 구성 요소에 대한 테스트 실패 문제 수정.
+* SKYOPS-69768: SlingModels는 ResourceResolver를 역직렬화하지 않습니다.
+* SKYOPS-76378: i18n에서 ResourceBundle 등록/등록 해제의 스레드 안전성 개선.
+* SKYOPS-79285: 2.4.2로 Sling XSS 업데이트.
+* SKYOPS-82383: 명령 실행 설명자에서 “helm-values” 변환-병합-분석 결과를 노출합니다.
+* SKYOPS-84810: RDE 시작 시 “40-initialize-publish.sh” 실행 건너뜀.
+* SKYOPS-84951: 변경 가능한 콘텐츠 체크섬 생성 코드 수정.
+* SKYOPS-85335: 1.1.52로 org.apache.sling.jcr.repoinit 업데이트.
+* SKYOPS-85336: 3.3.0으로 Sling Commons Threads 업데이트.
+* SKYOPS-86329: Java 21 SDK를 지원하도록 플랫폼 테스트 모듈 버전 업데이트.
 
 ### 해결된 문제 {#fixed-issues-18175}
 
-* CNTBF-298: CC 내보낸 패키지에서 jcr:uuid를 제거합니다.
-* SKYOPS-83910: SKYOPS-82371에서 발견된 동시성 문제를 수정합니다.
-* GRANITE-52876: com.adobe.granite.ui.content 0.8.1448로 업데이트합니다.
-* GUIDES-14445: Node.js에 대한 종속성 가져오기와 관련된 오류로 인해 기본 PDF 생성에 실패합니다.
-* GUIDES-16961: `<conref>`이(가) 있는 제목이 웹 편집기의 기본 및 번역 대시보드에서 확인되지 않습니다.
-* GUIDES-17283: **topicmeta에 추가된 메타데이터 사용** 옵션을 선택할 때 메타데이터 속성이 기본 PDF 출력의 문서 고유성에 전파되지 않습니다.
-* GUIDES-17793: 게시된 콘텐츠의 일괄 활성화 중에 **Publish 대시보드 일괄**&#x200B;에서 참조된 PDF이 활성화되지 않습니다.
+* CNTBF-298: CC에서 내보낸 패키지에서 jcr:uuid 제거.
+* SKYOPS-83910: SKYOPS-82371에서 발견된 동시성 문제 수정.
+* GRANITE-52876: com.adobe.granite.ui.content 0.8.1448로 업데이트.
+* GUIDES-14445: Node.js에 대한 종속성을 가져오는 것과 관련된 오류로 인해 기본 PDF 생성이 실패합니다.
+* GUIDES-16961: 웹 편집기의 기준선 및 번역 대시보드에서 `<conref>`를 포함한 제목이 확인되지 않습니다.
+* GUIDES-17283: **topicmeta에 추가된 메타데이터 사용** 옵션을 선택하면 메타데이터 속성이 기본 PDF 출력의 문서 속성에 전파되지 않습니다.
+* GUIDES-17793: 게시된 콘텐츠의 대량 활성화 도중 참조된 PDF가 **대량 게시 대시보드**&#x200B;에서 활성화되지 않습니다.
 
-릴리스에서 수정된 새로운 및 향상된 Guides 기능 및 문제에 대한 자세한 내용은 [Experience Manager Guides 릴리스 로드맵](https://experienceleague.adobe.com/kr/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)을 참조하세요.
+릴리스에서 수정된 새로운 Guides 기능과 향상된 기능 및 문제에 대한 자세한 내용은 [Experience Manager Guides 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)을 참조하십시오.
 
 ### 알려진 문제 {#known-issues-18175}
 
-* FORMS-15818: 구성 요소 설명자 항목 `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml`을(를) 서버 로그에서 찾을 수 없습니다. 이는 해를 미치지 않는 로그 구문입니다.
+* FORMS-15818: 구성 요소 설명자 항목 `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` 서버 로그에서 진술을 찾을 수 없음. 이는 해를 미치지 않는 로그 구문입니다.
 
 ### 사용 중단된 기능 및 API {#deprecated-18175}
 
 AEM as a Cloud Service에서 더 이상 사용되지 않는 기능과 API는 [사용 중단된 기능 및 API](/help/release-notes/deprecated-removed-features.md) 문서에 자세히 설명되어 있습니다.
 
-다음은 최근에 사용되지 않는 기능이나 사용 중단 과정에 있는 기능에 대한 요약입니다.
+최근 사용이 중단된 기능이나 사용이 중단되는 과정에 있는 기능을 요약한 내용은 다음과 같습니다.
 
-#### JavaScript API 사용 {#javascript-use-api}
+#### JavaScript Use API {#javascript-use-api}
 
-[JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api)는 사용자가 API를 활용하는 코드를 디버깅하고 유지 관리하는 문제와 Java 대체 요소에 비해 성능 제한으로 인해 공식적으로 더 이상 사용되지 않습니다.
+[JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api)는 사용자가 API를 활용하는 코드를 디버깅하고 유지 관리하는 데 어려움을 겪고 Java 대안과 비교했을 때 성능이 제한되어 공식적으로 더 이상 사용되지 않습니다.
 
-더 나은 성능, 더 쉬운 디버깅 및 더 나은 장기적 지원을 제공하는 [Java Use API,](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api)(으)로 전환해야 합니다.
+더 나은 성능, 쉬운 디버깅 및 더 나은 장기 지원을 제공하는 [Java Use API](https://experienceleague.adobe.com/ko/docs/experience-manager-htl/content/java-use-api)로 전환해야 합니다.
 
 #### com.day.cq.wcm.api {#com-day-cq-wcm-api}
 
-Adobe이 `com.day.cq.wcm.api`을(를) 업데이트하는 중입니다. 일부 메서드 및 클래스가 현재 릴리스에서 `@Deprecated`(으)로 표시되었습니다. 이러한 기능은 향후 릴리스에서 제거됩니다. 그들이 제안하는 대안으로 전환해 보십시오.
+Adobe는 `com.day.cq.wcm.api`를 업데이트하고 있습니다. 최신 릴리스에서는 일부 메서드와 클래스가 `@Deprecated`로 표시되었습니다. 이러한 메서드와 클래스는 향후 릴리스에서 제거될 예정입니다. 제안된 대안으로 전환하는 것이 좋습니다.
 
 #### org.apache.jackrabbit.oak.plugins.blob {#org.apache.jackrabbit.oak.plugins.blob}
 
-* GRANITE-54165: 공용 API에서 org.apache.jackrabbit.oak.plugins.blob을 사용하지 않습니다.
+* GRANITE-54165: 공개 API에서 org.apache.jackrabbit.oak.plugins.blob을 더 이상 사용하지 않습니다.
 
 ### 보안 수정 {#security-18175}
 
-AEM as a Cloud Service는 플랫폼의 보안 및 성능을 최적화하는 데 사용됩니다. 이 유지 관리 릴리스는 2개의 식별된 취약점을 해결하여 강력한 시스템 보호에 대한 약속을 강화합니다.
+AEM as a Cloud Service는 플랫폼의 보안 및 성능을 최적화하는 데 사용됩니다. 이 유지 관리 릴리스에서는 강력한 시스템 보호에 대한 노력의 일환으로 식별된 취약점 2개가 해결되었습니다.
 
 ### 임베드된 기술 {#embedded-tech-18175}
 
