@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
+source-git-commit: d0d7a10b2c1dadb0f8bfaa654db7993d3e5e6635
 workflow-type: tm+mt
-source-wordcount: '1255'
+source-wordcount: '1272'
 ht-degree: 5%
 
 ---
@@ -81,6 +81,10 @@ Webhook를 추가하려면:
    > 지정된 웹후크 이름이 AEM 인스턴스에 나타나므로 웹후크 이름을 신중하게 선택하는 것이 좋습니다.
 
 1. 새 연결을 추가하려면 **[!UICONTROL 추가]**&#x200B;를 클릭하세요. **[!UICONTROL 연결 만들기]** 대화 상자가 나타납니다.
+
+>[!NOTE]
+>
+> 기술 계정이 **forms-users** 그룹의 구성원인지 확인하십시오. 그렇지 않으면 웹후크 추가가 실패합니다.
 
 #### 웹후크에 연결 추가 {#add-connection}
 
