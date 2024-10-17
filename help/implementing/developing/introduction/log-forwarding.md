@@ -4,9 +4,9 @@ description: AEM as a Cloud Service의 Splunk 및 기타 로깅 공급업체에 
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3aafe41554fd86637e34687660fc48ea817b01d7
+source-git-commit: e450a58587ca4d7dff2ab229f522c7e7d4f3f20c
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1663'
 ht-degree: 0%
 
 ---
@@ -305,6 +305,12 @@ data:
 고려 사항:
 
 * 기본적으로 포트는 443입니다. 필요한 경우 이름이 `port`인 속성으로 재정의할 수 있습니다.
+* Sourcetype 필드는 특정 로그에 따라 다음 값 중 하나를 갖습니다. *aemaccess*, *aemerror*,
+  *aemrequest*, *aemdispatcher*, *aemhttpdaccess*, *aemhttpderror*, *aemcdn*
+
+>[!NOTE]
+>
+> [이전 로그 전달에서 이 셀프 서비스 모델로 마이그레이션](#legacy-migration)하는 경우 Splunk 인덱스로 전송된 `sourcetype` 필드의 값이 변경되었을 수 있으므로 적절하게 조정하십시오.
 
 
 <!--
@@ -385,6 +391,10 @@ Adobe에서 이러한 방식으로 설정했던 고객은 편리하게 셀프서
 마이그레이션할 준비가 되면 이전 섹션에서 설명한 대로 YAML 파일을 구성하면 됩니다. Cloud Manager 구성 파이프라인을 사용하여 구성을 적용해야 하는 각 환경에 배포합니다.
 
 구성이 모든 환경에 배포되어 모두 셀프서비스 제어 하에 있는 것이 좋지만 필수는 아닙니다. 그렇지 않으면 Adobe으로 구성된 환경과 셀프 서비스 방식으로 구성된 환경을 구분할 수 없습니다.
+
+>[!NOTE]
+>
+>Splunk 인덱스로 전송된 `sourcetype` 필드의 값이 변경되었을 수 있으므로 적절하게 조정하십시오.
 
 >[!NOTE]
 >
