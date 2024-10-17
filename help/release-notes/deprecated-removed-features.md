@@ -310,7 +310,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 </table>
 </details>
 
-### `org.apache.sling.commons.auth*` {#org.apache.sling.commons.auth} 제거
+### `org.apache.sling.commons.auth*` 제거 {#org.apache.sling.commons.auth}
 
 `org.apache.sling.commons.auth` 및/또는 `org.apache.sling.commons.auth.spi`를 사용하는 경우 코드를 `org.apache.sling.auth` 응답으로 마이그레이션하여 사용을 바꿀 수 있습니다. `org.apache.sling.auth.spi`. [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) 의 이전 버전을 사용하고 있다면 최신 버전으로 업데이트하십시오.
 
@@ -318,7 +318,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 * ACS AEM Commons를 최신 버전으로 업데이트
 * `org.apache.sling.commons.auth` 및/또는 `org.apache.sling.commons.auth.spi`에서 `org.apache.sling.auth` 응답으로 마이그레이션합니다. `org.apache.sling.auth.spi`
 
-### `org.eclipse.jetty*` {#org.eclipse.jetty} 제거
+### `org.eclipse.jetty*` 제거 {#org.eclipse.jetty}
 
 패키지 `org.eclipse.jetty` 또는 하위 패키지 중 하나를 사용하는 경우 비슷한 기능을 가진 다른 서드파티 라이브러리로 마이그레이션하는 것이 좋습니다. 마이그레이션이 불가능한 경우 아래 목록에서 필요한 번들을 프로젝트에 추가하십시오.
 
@@ -334,7 +334,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
    * `org.eclipse.jetty:jetty-util:9.4.54.v20240208`
    * `org.eclipse.jetty:jetty-util-ajax:9.4.54.v20240208`
 
-### `com.mongodb` {#com.mongodb} 제거
+### `com.mongodb` 제거 {#com.mongodb}
 
 프로젝트에 Mongo 클라이언트 API를 추가합니다.
 
@@ -342,14 +342,14 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 * 프로젝트에 이 번들 추가
    * `org.mongodb:mongo-java-driver:3.12.7`
 
-### `org.apache.abdera*` 및 `org.apache.sling.atom.taglib` {#org.apache.abdera_or_org.apache.sling.atom.taglib} 사용
+### `org.apache.abdera*` 및 `org.apache.sling.atom.taglib` 사용 {#org.apache.abdera_or_org.apache.sling.atom.taglib}
 
 `org.apache.abdera` 및 `org.apache.sling.atom.taglib` 의 모든 패키지 사용을 비슷한 기능을 제공하는 서드파티 라이브러리나 자체 코드로 바꿉니다.
 
 액션 목록:
 * `org.apache.abdera` 및 `org.apache.sling.atom.taglib`의 패키지 사용을 다른 서드파티 라이브러리/자체 코드로 바꿉니다.
 
-### `org.apache.felix.http.whiteboard` {#org.apache.felix.http.whiteboard} 사용
+### `org.apache.felix.http.whiteboard` 사용 {#org.apache.felix.http.whiteboard}
 
 `org.apache.felix.http.whiteboard` 사용을 [OSGi Http Whiteboard](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)로 바꿉니다. 공식 OSGi API는 비슷한 기능을 가지고 있으며, 대부분 교체 시 서비스 등록 속성만 변경하면 됩니다.
 
