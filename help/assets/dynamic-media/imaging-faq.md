@@ -6,10 +6,10 @@ feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 0dbc3ae264f83672a212151d14011820aa5e3e78
+source-git-commit: 8d38ee90ed5b4e9a5d39d0580e35101187f2c457
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3243'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +32,7 @@ Adobe Sensei AI를 사용하는 스마트 이미징에서 각 사용자의 고�
 >
 >Dynamic Media [_스냅숏_](https://snapshot.scene7.com/)을(를) 사용하여 Dynamic Media 이미지 수정자 및 스마트 이미징의 이점을 알아보십시오.
 >
-> 스냅샷은 Dynamic Media의 최적화된 동적 이미지 제공 기능을 보여 주기 위해 설계된 시각적 데모 도구입니다. 테스트 이미지 또는 Dynamic Media URL로 실험하여 다양한 Dynamic Media 이미지 수정자의 출력을 시각적으로 관찰하고 다음에 대한 스마트 이미징 최적화를 확인하십시오.
+>스냅샷은 Dynamic Media의 최적화된 동적 이미지 제공 기능을 보여 주기 위해 설계된 시각적 데모 도구입니다. 테스트 이미지 또는 Dynamic Media URL로 실험하여 다양한 Dynamic Media 이미지 수정자의 출력을 시각적으로 관찰하고 다음에 대한 스마트 이미징 최적화를 확인하십시오.
 >
 >* 파일 크기(WebP 및 AVIF 게재 포함)
 >* 네트워크 대역폭
@@ -254,74 +254,73 @@ Smart Imaging을 활성화하려면 Experience Manager의 회사 Dynamic Media C
 +++
 
 
-<!-- QUESTIONS BELOW WERE REMOVED AS PER CQDOC-22085
++++
 
-+++**Can I enable Smart Imaging for my account?**
+**계정에서 스마트 이미징을 사용하도록 설정하는 프로세스는 무엇입니까?**
 
-No. You initiate a request to use Smart Imaging; it is not automatically enabled.
+스마트 이미징을 사용하려면 기존 URL 또는 사전 설정에 `bfc=on`, `dpr=on,dprValue` 또는 `network=on` 또는 세 매개 변수 설정을 모두 추가하십시오. 이러한 변경 작업을 수동으로 수행하지 않으려면 지원 사례를 만들어 기본적으로 스마트 이미징을 활성화할 수 있습니다.
 
-Create a support case as described below. In your support case, be sure you mention which of the following Smart Imaging capabilities (one or more) you want enabled on your account:
+지원 사례를 만들 때 계정에서 활성화할 스마트 이미징 기능을 지정합니다.
 
-* WebP
-* AVIF
-* DPR and Network Bandwidth optimization
-* PNG to lossy AVIF or lossy WebP
-
-If you already have Smart Imaging enabled with WebP, but desire other new capabilities as listed above, you must create a support case.
-
-**To create a support case to enable Smart Imaging on your account:**
-
-1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
-1. Provide the following information in your support case:
-
-    * Primary contact name, email, phone.
-
-    * List which of the following Smart Imaging capabilities (one or more) you want enabled on your account:
-      * WebP
-      * AVIF
-      * DPR and Network Bandwidth optimization
-      * PNG to lossy AVIF or lossy WebP
-    
-    * All domains to be enabled for Smart Imaging (that is, `images.company.com` or `mycompany.scene7.com`).
-
-       To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts. 
-
-       Go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.  
-
-       Look for the field labeled **[!UICONTROL Published Server Name]**.
-    
-    * Verify that you are using the CDN through Adobe and not managed with a direct relationship.
-
-    * Verify you are using a dedicated domain such as `images.company.com` or `mycompany.scene7.com`, and not a generic domain, such as `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.  
-
-       To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts.
-
-       Go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.  
-
-       Look for the field labeled **[!UICONTROL Published Server Name]**. If you are currently using a generic Dynamic Media Classic domain, you can request moving over to your own custom domain as part of this transition.
-
-    * Indicate if you want it to work over HTTP/2.
-
-1. Adobe Customer Support adds you to the Smart Imaging customer Wait List based on the order in which requests are submitted.
-1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date.
-1. **Optional**: You can optionally test Smart Imaging in Staging before Adobe pushes the new feature to production.
-1. You are notified after completion by Customer Support.
-1. To maximize the performance improvements of Smart Imaging, Adobe recommends setting the Time To Live (TTL) to 24 hours or longer. The TTL defines how long assets are cached by the CDN. To change this setting:
-
-    1. If you use Dynamic Media Classic, go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**. Set the **[!UICONTROL Default Client Cache Time To Live]** value to 24 or longer.
-    1. If you use Dynamic Media, follow [these instructions](config-dm.md). Set the **[!UICONTROL Expiration]** value 24 hours or longer.
-
-
-
-**When is my account enabled with Smart Imaging?**
-
-Requests are processed in the order in which they are received by Customer Support, according to the Wait List.
+* 브라우저 형식 변환(WebP 또는 AVIF)
+* 네트워크 대역폭 최적화
 
 >[!NOTE]
 >
->There can be a long lead time because enabling Smart Imaging involves Adobe clearing the cache. Therefore, only a few customer transitions can be handled at any given time.
+>DPR에서는 올바른 `dprValue`을(를) 결정하기 위해 클라이언트측 조정이 필요합니다. Adobe 따라서 `dpr=on,dprValue`을(를) 추가하여 URL을 통해 DPR을 활성화하는 것이 좋습니다.
 
--->
+**계정에 스마트 이미징을 사용하도록 설정하는 지원 사례를 만들려면:**
+
+1. [Admin Console을 사용하여 새 지원 사례 만들기를 시작합니다](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html).
+1. 지원 사례에 다음 정보를 제공하십시오.
+
+   * **기본 연락처 세부 정보:**
+
+      * 이름, 이메일 및 전화번호를 입력합니다.
+
+   * **사용할 스마트 이미징 기능:**
+
+      * 계정에 대해 원하는 기능을 나열합니다.
+
+         * 브라우저 형식 변환: WebP 또는 AVIF
+         * 네트워크 대역폭 최적화
+         * DPR: DPR에서는 올바른 `dprValue`을(를) 결정하기 위해 클라이언트측을 조정해야 합니다. Adobe 따라서 `dpr=on,dprValue`을(를) 추가하여 URL을 통해 DPR을 활성화하는 것이 좋습니다.
+
+   * **스마트 이미징용 도메인:**
+
+      * *`company.com`* 또는 *`mycompany.scene7.com`*&#x200B;과(와) 같은 모든 관련 도메인을 나열합니다.
+      * 스마트 이미징은 일반 도메인과 사용자 지정 도메인을 모두 지원합니다.
+      * 도메인을 식별하려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)을 열고 회사 계정에 로그인하세요.
+
+         1. **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**(으)로 이동합니다.
+         1. 도메인을 확인하려면 **[!UICONTROL 게시된 서버 이름]** 필드를 찾으십시오.
+         1. 다른 공급자가 관리하는 CDN이 아니라 Adobe의 CDN을 사용 중인지 확인합니다.
+
+   * **HTTP/2 지원 표시:**
+
+      * HTTP/2에서 작동하는 데 스마트 이미징이 필요한지 여부를 지정합니다.
+
+1. Adobe 고객 지원에서는 요청된 스마트 이미징 기능을 기본적으로 활성화하므로 매개 변수를 URL에 수동으로 추가할 필요가 없습니다.
+1. Adobe 캐싱을 통해 성능을 극대화하려면 TTL(Time To Live)을 최소 24시간으로 설정하는 것이 좋습니다.
+TTL을 조정하려면 다음을 수행하십시오.
+
+   1. **Dynamic Media Classic의 경우:**
+      1. **[!UICONTROL 설치]** > **[!UICONTROL 응용 프로그램 설치]** > **[!UICONTROL Publish 설치]** > **[!UICONTROL 이미지 서버]**&#x200B;로 이동합니다.
+      1. **[!UICONTROL 기본 클라이언트 캐시 시간을 Live로 설정]** 값을 24시간 이상으로 설정합니다.
+   1. **Adobe Experience Manager의 Dynamic Media:**
+      1. [다음 지침](/help/assets/dynamic-media/config-dm.md)을 따르십시오.
+      1. 24시간 이상 동안 **[!UICONTROL Expiration]** 값을 설정하십시오.
+
+
++++
+
+**계정이 스마트 이미징을 사용하도록 설정된 경우**
+
+고객 지원 팀은 대기 목록에 따라 요청을 받은 순서대로 요청을 처리합니다.
+
+>[!NOTE]
+>
+>스마트 이미징을 활성화하면 Adobe이 캐시를 지우므로 리드 타임이 길 수 있습니다. 따라서 특정 시간에 몇 개의 고객 전환만 처리할 수 있습니다.
 
 +++
 
@@ -469,27 +468,6 @@ PNG가 무손실 포맷이므로, 이전 WebP 및 AVIF가 전달되지 않았으
 
 예. 이제 스마트 이미징에서 품질 수준에 따라 손실 변환을 지원합니다. 회사 설정을 통해 또는 이미지의 URL 경로에 `qlt=100`을(를) 추가하여 품질을 100으로 설정하여 무손실 변환을 계속 사용할 수 있습니다.
 +++
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
