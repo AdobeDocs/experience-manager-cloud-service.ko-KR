@@ -1,6 +1,6 @@
 ---
 title: 사용자 정의 코드 품질 규칙
-description: 철저한 테스트를 통해 고품질 코드를 보장하기 위해 Adobe Experience Manager 엔지니어링 모범 사례를 기반으로 하는 Cloud Manager의 사용자 지정 코드 품질 규칙에 대해 알아봅니다.
+description: 철저한 테스트를 통한 고품질 코드를 보장하기 위해 Adobe Experience Manager 엔지니어링 모범 사례를 기반으로 하는 Cloud Manager의 사용자 정의 코드 품질 규칙에 대해 알아보십시오.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
 source-wordcount: '4421'
-ht-degree: 66%
+ht-degree: 67%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 66%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_customcodequalityrules"
 >title="사용자 정의 코드 품질 규칙"
->abstract="철저한 테스트를 통해 고품질 코드를 보장하기 위해 Adobe Experience Manager 엔지니어링 모범 사례를 기반으로 하는 Cloud Manager의 사용자 지정 코드 품질 규칙에 대해 알아봅니다."
+>abstract="철저한 테스트를 통한 고품질 코드를 보장하기 위해 Adobe Experience Manager 엔지니어링 모범 사례를 기반으로 하는 Cloud Manager의 사용자 정의 코드 품질 규칙에 대해 알아보십시오."
 
 철저한 테스트를 통해 고품질 코드를 보장하기 위해 Adobe Experience Manager 엔지니어링 모범 사례를 기반으로 하는 Cloud Manager의 사용자 지정 코드 품질 규칙에 대해 알아봅니다. [코드 품질 테스트](/help/implementing/cloud-manager/code-quality-testing.md)도 참조하세요.
 

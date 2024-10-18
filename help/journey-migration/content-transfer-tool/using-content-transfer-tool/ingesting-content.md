@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: ec80660d45c69363690b653dd54634c74c3c9907
 workflow-type: tm+mt
 source-wordcount: '3137'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -229,12 +229,12 @@ MongoDB 제한 사항입니다.
 >
 >[모범 사례 분석기](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) 버전 2.1.50+는 최대 크기를 초과하는 유니코드 문자를 포함하는 큰 노드에 대해 보고합니다. 최신 버전을 실행 중인지 확인하십시오. 2.1.50 이전 버전의 BPA는 이러한 큰 노드를 식별하고 보고하지 않으며 위에서 언급한 사전 요구 사항 Oak 도구를 사용하여 개별적으로 검색해야 합니다.
 
-### 예기치 않은 간헐적 오류로 인해 수집 실패 {#ingestion-failure-due-to-unexpected-intermittent-errors}
+### 예기치 않은 간헐적 오류로 인한 수집 실패 {#ingestion-failure-due-to-unexpected-intermittent-errors}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_intermittent_errors"
 >title="예기치 않은 간헐적 오류"
->abstract="때때로 예기치 않은 간헐적인 다운스트림 서비스 오류가 발생할 수 있으며, 안타깝게도 유일한 요구는 수집을 다시 시도하는 것입니다."
+>abstract="때때로 예기치 않은 간헐적 다운스트림 서비스 오류가 발생할 수 있으며, 이에 대한 유일한 대책은 간단히 수집을 다시 시도하는 것입니다."
 
 때때로 예상치 못한 간헐적인 문제가 발생하면 실패한 수집에 도움이 될 수 있으며, 안타깝게도 수집을 다시 시도하는 것만이 유일한 요구입니다. 수집 로그를 조사하여 실패의 원인을 파악하고 다시 시도해야 하는 아래 나열된 오류와 일치하는지 확인합니다.
 
