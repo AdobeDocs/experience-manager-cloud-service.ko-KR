@@ -4,9 +4,9 @@ description: 클라우드 환경에서 신속한 개발 반복을 위해 빠른 
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fd57437b16a87de2b279b0f8bc10c12a7d3f721a
+source-git-commit: 3c1cbf0930799c2919696465931bf7c1f76bf8bb
 workflow-type: tm+mt
-source-wordcount: '4537'
+source-wordcount: '4794'
 ht-degree: 3%
 
 ---
@@ -1052,3 +1052,17 @@ RDE 플러그인을 사용하려면 Cloud Manager **개발자 - Cloud Service** 
 `aio cloudmanager:list-programs`
 
 구성된 조직의 모든 프로그램을 나열하고 올바른 역할이 할당되었는지 확인해야 합니다.
+
+### 더 이상 사용되지 않는 컨텍스트 &quot;aio-cli-plugin-cloudmanager&quot; 사용 {#aio-rde-plugin-troubleshooting-deprecatedcontext}
+
+&#39;aio-cli-plugin-aem-rde&#39;의 연혁으로 인해 &#39;aio-cli-plugin-cloudmanager&#39;라는 컨텍스트 이름이 한동안 사용되었습니다. 이제 rde 플러그인은 컨텍스트 정보를 처리하는 IMS 방식을 사용합니다. 즉, 컨텍스트 정보를 전역 또는 로컬에 저장하는 옵션이 있을 뿐만 아니라 원하는 경우 구성된 기본값으로 모든 aio 호출을 기본값으로 설정합니다. 구성된 기본 컨텍스트는 로컬에 저장되고 개발자가 폴더 내에서 개별 컨텍스트 및 해당 정보를 추적하고 사용할 수 있도록 합니다. 자세한 내용은 위의 [로컬 컨텍스트를 설정하는 예제](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools)를 참조하십시오.
+
+aio-cli-plugin-cloudmanager와 aio-cli-plugin-aem-rde 두 플러그인을 모두 사용하고 모든 정보를 동일한 컨텍스트로 유지하고자 하는 개발자는 지금 옵션을 사용해야 합니다.
+
+#### &#39;aio-cli-plugin-cloudmanager&#39; 컨텍스트 계속 사용
+
+컨텍스트를 계속 사용할 수 있으며 RDE 플러그인에 사용 중단 경고가 표시됩니다. 이 경고는 ```--quiet``` 모드를 사용하여 제거할 수 있습니다. 최신 버전의 RDE 플러그인은 더 이상 &#39;aio-cli-plugin-cloudmanager&#39; 컨텍스트를 읽기 위한 대체를 제공하지 않습니다. 이 설정을 사용하려면 기본 컨텍스트를 &#39;aio-cli-plugin-cloudmanager&#39;로 구성하기만 하면 됩니다. 위의 [로컬 컨텍스트를 설정하는 예제](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools)를 참조하십시오.
+
+#### Cloud Manager 플러그인에도 다른 컨텍스트 이름을 사용하십시오
+
+Cloud Manager 플러그인은 사용할 컨텍스트를 정의하는 매개 변수를 제공합니다. 아직 IMS 기본 컨텍스트 구성을 지원하지 않습니다. 이렇게 하려면 [로컬 컨텍스트를 설정하는 예제](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools)를 사용하여 RDE 플러그인을 구성하고 Cloud Manager 플러그인에 모든 호출에서 ```--imsContextName=myContext```과(와) 같은 &#39;myContext&#39;를 사용하도록 합니다.
