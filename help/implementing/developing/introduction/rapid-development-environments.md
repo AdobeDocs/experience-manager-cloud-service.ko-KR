@@ -4,7 +4,7 @@ description: 클라우드 환경에서 신속한 개발 반복을 위해 빠른 
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3c1cbf0930799c2919696465931bf7c1f76bf8bb
+source-git-commit: e508ba2fcb709b1925b490bdb3e1a8774068927c
 workflow-type: tm+mt
 source-wordcount: '4794'
 ht-degree: 3%
@@ -99,6 +99,7 @@ Cloud Manager을 사용하여 프로그램에 대한 RDE를 추가한 후 다음
    ```
    aio login
    ```
+
    로그인 정보(토큰)는 글로벌 aio 구성에 저장되므로 하나의 로그인 및 조직만 지원합니다. 서로 다른 로그인 또는 조직이 필요한 여러 RDE를 사용하려는 경우 아래 컨텍스트 소개 예를 따르십시오.
 
    <details><summary>다음 예제에 따라 RDE 로그인 중 하나에 대한 로컬 컨텍스트를 설정합니다</summary>
@@ -111,7 +112,6 @@ Cloud Manager을 사용하여 프로그램에 대한 RDE를 추가한 후 다음
    aio auth ctx -s mycontext
    aio login --no-open
    ```
-
 
    >[!NOTE]
    > `--no-open` 옵션이 있는 login 명령은 기본 브라우저를 여는 대신 터미널에 URL을 출력합니다. 이렇게 하면 브라우저의 **시크릿** 창을 사용하여 복사하고 열 수 있습니다. 이렇게 하면 일반 브라우저 창에서 현재 로그인한 세션이 그대로 유지되므로 컨텍스트에 필요한 특정 로그인 및 조직을 사용할 수 있습니다.
@@ -153,8 +153,8 @@ Setup the CLI configuration necessary to use the RDE commands.
 로컬 또는 글로벌 구성을 선택하면 setup 명령은 현재 로그인에서 조직 ID를 읽은 다음 조직의 프로그램을 읽습니다. 조직을 찾을 수 없는 경우 몇 가지 지침과 함께 수동으로 입력할 수 있습니다.
 
 ```
- Selected only organization: XYXYXYXYXYXYXYXXYY
- retrieving programs of your organization ...
+Selected only organization: XYXYXYXYXYXYXYXXYY
+retrieving programs of your organization ...
 ```
 
 프로그램이 검색되면 사용자는 목록에서 선택하고 필터링할 내용을 입력할 수 있습니다.
@@ -248,7 +248,6 @@ RDE는 한 번에 하나의 프로젝트를 지원합니다. 코드는 로컬 �
 * 명령에 대한 자세한 도움말을 보려면 다음과같이 입력합니다.
 
   `aio aem rde <command> --help`
-
 
 ### 글로벌 플래그 {#global-flags}
 
@@ -507,7 +506,7 @@ RDE CLI에는 기록해야 하는 클래스와 패키지 및 로그 수준을 �
 >
 >작성자 서비스에 대한 로그 명령을 재생할 때 `RDECLI:UNEXPECTED_API_ERROR` 오류가 표시되면 환경을 재설정하고 다시 시도하십시오. 이 오류는 최근 재설정 작업이 2024년 5월 말 이전인 경우 발생합니다.
 >
-```
+>```
 >aio aem:rde:reset
 >```
 
@@ -683,6 +682,7 @@ Cloud Manager을 사용하여 환경을 관리하는 방법에 대한 자세한 
   }
 }
 ```
+
 </details>
 
 ### 설치 {#install}
@@ -723,6 +723,7 @@ Cloud Manager을 사용하여 환경을 관리하는 방법에 대한 자세한 
   ]
 }
 ```
+
 </details>
 
 ### 삭제 {#delete}
@@ -901,6 +902,7 @@ Cloud Manager을 사용하여 환경을 관리하는 방법에 대한 자세한 
   ]
 }
 ```
+
 </details>
 
 ### 재설정 {#reset}
@@ -931,6 +933,7 @@ Cloud Manager을 사용하여 환경을 관리하는 방법에 대한 자세한 
   "status": "reset"
 }
 ```
+
 </details>
 
 ### 다시 시작 {#restart}
