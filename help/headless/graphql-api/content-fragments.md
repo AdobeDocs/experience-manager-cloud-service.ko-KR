@@ -4,10 +4,10 @@ description: AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 4492536120989423b639bbb75105568a9c328507
-workflow-type: ht
-source-wordcount: '5469'
-ht-degree: 100%
+source-git-commit: 32803bc4304e55ccf0a618236e482cb42aa88e27
+workflow-type: tm+mt
+source-wordcount: '5557'
+ht-degree: 98%
 
 ---
 
@@ -929,6 +929,15 @@ AEM 콘텐츠 조각용 GraphQL을 사용하면 **콘텐츠 참조**&#x200B;에�
 GraphQL의 솔루션으로 다음과 같은 작업을 수행할 수 있습니다.
 
 * `ImageRef` 참조에 `_dmS7Url` 사용
+   * [URL별 Dynamic Media 에셋 게재용 샘플 쿼리 - 이미지 참조](#sample-query-dynamic-media-asset-delivery-by-url-imageref)를 참조하십시오.
+* 여러 참조에 `_dmS7Url` 사용: `ImageRef`, `MultimediaRef` 및 `DocumentRef`
+   * [URL별 Dynamic Media 에셋 게재용 샘플 쿼리 - 다중 참조](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)를 참조하십시오.
+
+* 스마트 자르기 기능으로 `_dmS7Url` 사용
+
+   * `_smartCrops` 속성은 특정 자산에 사용할 수 있는 스마트 자르기 구성을 노출합니다
+
+   * [URL별 Dynamic Media 에셋 전달을 위한 샘플 쿼리 - 스마트 자르기 사용](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)을 참조하십시오.
 
 >[!NOTE]
 >
@@ -1011,6 +1020,36 @@ query allTeams {
     }
   }
 }
+```
+
+### URL별 Dynamic Media 에셋 전달을 위한 샘플 쿼리 - 스마트 자르기 사용 {#sample-query-dynamic-media-asset-delivery-by-url-smart-crop}
+
+다음은 샘플 쿼리입니다.
+
+* 요청된 에셋에 사용 가능한 스마트 자르기 구성을 노출하려면
+
+```graphql
+query allTeams {
+  teamList {
+    items {
+      title
+      teamMembers {
+        profilePicture {
+          ... on ImageRef {
+            height
+            width
+            _dmS7Url
+            _smartCrops {
+              width
+              height
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+} 
 ```
 
 ## AEM용 GraphQL - 확장 요약 {#graphql-extensions}
