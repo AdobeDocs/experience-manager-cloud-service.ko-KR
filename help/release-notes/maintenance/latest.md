@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 6fa6fc9015624bec9113a198285531a3bdd7e29c
+source-git-commit: 9278ec9bb5bccd7b40cd65a120f296faba454b9c
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 95%
+source-wordcount: '569'
+ht-degree: 31%
 
 ---
 
@@ -16,87 +16,61 @@ ht-degree: 95%
 
 다음 섹션에서는 Experience Manager as a Cloud Service 현재 유지 관리 릴리스의 기술 릴리스 정보에 대해 간략히 소개합니다.
 
-## 릴리스 18175 {#release-18175}
+## 릴리스 18311 {#18311}
 
-다음은 2024년 10월 10일에 공개적으로 릴리스된 유지 보수 릴리스 18175에 대한 지속적인 개선 사항을 요약했습니다. 이전 유지 관리 릴리스는 릴리스 17964. 문제18099 인해 릴리스 정보가 비공개로 설정되었습니다.
+다음은 2024년 10월 22일에 공개적으로 릴리스된 유지 보수 릴리스 18311에 대한 지속적인 개선 사항을 요약합니다. 이전 유지 관리 릴리스는 릴리스 18175.
 
 이 유지 관리 릴리스(2024.10.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
 
-### 개선 사항 {#enhancements-18175}
+### 개선 사항 {#enhancements-18311}
 
-* ASSETS-38322: AEM에 대한 http 요청 이벤트 활성화.
-* ASSETS-41448: 그룹 매핑에 대한 FI를 지원하도록 auth.ims 번들 업데이트.
-* ASSETS-41684: Assets, Foundation, Sites 및 Forms에 대한 그룹 매핑에 대한 FI를 정의하기 위해 OOB OSGI 구성 추가.
-* ASSETS-43015: 최신 auth.ims 번들로 업데이트.
-* CQ-4356633: “콘텐츠 전용” 툴팁에 추가 문자 추가.
-* GRANITE-50948: 저장소 서비스를 위해 AEM 지원에 저장소 서비스 통합.
-* GRANITE-52454: 지원 도우미 0.1.2 추가.
-* GRANITE-52454: 지원 도우미 GRANITE-52454 업그레이드 AEMaaCS의 최신 릴리스를 사용하도록 지원 도우미 업그레이드.
-* GRANITE-53287: 보안 권한 통합 테스트 버전 업데이트.
-* GRANITE-53485: Azure Blob Storage 복제에 대한 서비스 주체 인증 지원.
-* GRANITE-53514: 버전 1.0.26으로 트리 활성화 업데이트.
-* GRANITE-53870: 빠른 시작을 위해 최대 JVM 버전 확인을 건너뛸 수 있는 내부 메커니즘 생성.
-* GRANITE-53914: Java 17로 인한 플랫폼 테스트 실패 수정. 모듈 버전 업데이트.
-* GRANITE-53966: 콘텐츠 배포에 별도의 스레드 풀 사용.
-* GRANITE-54006: 2.17.2로 Jackson 업데이트.
-* GRANITE-54038: AEM IMS 클라이언트 허용 목록에 Creative Cloud Enterprise IMS 클라이언트 추가.
-* GRANITE-54054: com.adobe.granite.repository.impl.SystemUserValidation warnOnly에 대한 환경 변수.
-* GRANITE-54266: 프로덕션 SDK에 검색 제안 서비스 누락.
-* GRANITE-54274: Firefly IMS 클라이언트 수락.
-* GRANITE-54300: 최신 공개 릴리스(1.70.0)로 Oak 업데이트.
-* GUIDES-19069: AEM Guides 추가 기능에 guidesPeerLinkIndex 추가.
-* SITES-23584: Java 17에서 Foundation 구성 요소에 대한 테스트 실패 문제 수정.
-* SKYOPS-69768: SlingModels는 ResourceResolver를 역직렬화하지 않습니다.
-* SKYOPS-76378: i18n에서 ResourceBundle 등록/등록 해제의 스레드 안전성 개선.
-* SKYOPS-79285: 2.4.2로 Sling XSS 업데이트.
-* SKYOPS-82383: 명령 실행 설명자에서 “helm-values” 변환-병합-분석 결과를 노출합니다.
-* SKYOPS-84810: RDE 시작 시 “40-initialize-publish.sh” 실행 건너뜀.
-* SKYOPS-84951: 변경 가능한 콘텐츠 체크섬 생성 코드 수정.
-* SKYOPS-85335: 1.1.52로 org.apache.sling.jcr.repoinit 업데이트.
-* SKYOPS-85336: 3.3.0으로 Sling Commons Threads 업데이트.
-* SKYOPS-86329: Java 21 SDK를 지원하도록 플랫폼 테스트 모듈 버전 업데이트.
+* ASSETS-41820 : 처리 watchdog에 대한 색인화 개선 사항입니다.
+* ASSETS-43720 : 처리 watchdog의 기능이 개선되었습니다.
+* ASSETS-42554 : 대형 폴더의 성능이 개선되었습니다.
+* SKYOPS-77603 : 비즈니스 사용자에 의한 리디렉션 관리.
 
-### 해결된 문제 {#fixed-issues-18175}
+### 해결된 문제 {#fixed-issues-18311}
 
-* CNTBF-298: CC에서 내보낸 패키지에서 jcr:uuid 제거.
-* SKYOPS-83910: SKYOPS-82371에서 발견된 동시성 문제 수정.
-* GRANITE-52876: com.adobe.granite.ui.content 0.8.1448로 업데이트.
-* GUIDES-14445: Node.js에 대한 종속성을 가져오는 것과 관련된 오류로 인해 기본 PDF 생성이 실패합니다.
-* GUIDES-16961: 웹 편집기의 기준선 및 번역 대시보드에서 `<conref>`를 포함한 제목이 확인되지 않습니다.
-* GUIDES-17283: **topicmeta에 추가된 메타데이터 사용** 옵션을 선택하면 메타데이터 속성이 기본 PDF 출력의 문서 속성에 전파되지 않습니다.
-* GUIDES-17793: 게시된 콘텐츠의 대량 활성화 도중 참조된 PDF가 **대량 게시 대시보드**&#x200B;에서 활성화되지 않습니다.
+* ASSETS-37534 : 승인 대상에 사용되는 속성을 표시하지 않도록 검색에서 변경합니다.
+* ASSETS-38322 : 게시 기준 공급자 구성 제거 게시 이벤트 기능.
+* ASSETS-40482 : Scene7 비디오 플레이어의 재생/일시 중지 및 음소거/음소거 해제 단추에 접근성 문제가 있습니다.
+* ASSETS-40593 : Assets > 파일에서 &quot;속성&quot; 버튼을 클릭하면 오류 페이지가 표시됩니다.
+* ASSETS-40598 : 동기화되지 않은 자산이 동기화 가능 폴더로 이동되면 스마트 자르기를 동기화합니다.
+* ASSETS-40743 : 파일 이름에 특정 문자가 있을 때 자산 바꾸기 대화 상자를 트리거하는 데 문제가 있습니다.
+* ASSETS-40825 : 검색 양식을 편집한 후 Assets 검색 패싯이 사라집니다.
+* ASSETS-41007 : AEM에서 삭제하면 경우에 따라 고아 Assets이 게재되지 않습니다.
+* ASSETS-41172 : Dynamic Media 템플릿 특수 문자는 이름에 사용할 수 없습니다.
+* ASSETS-41896 : 폴더의 cq:discarded 속성에 언급된 Assets은 Brand Portal에 게시되지 않아야 합니다.
+* ASSETS-42067 : Dynamic Media 템플릿 - 다운로드하면 오류가 발생합니다.
+* ASSETS-42070 : Dynamic Media 템플릿 - 관리자가 아닌 사용자는 템플릿 만들기/편집 액세스 권한이 있어야 합니다.
+* ASSETS-42344 : 연결된 Assets 동기화 연결 끊김 - 고객을 위한 다시 연결 및 조언.
+* ASSETS-42620 : 에셋 버전의 미리 보기 옵션 문제 - 에셋을 열면 빈 미리 보기가 표시됩니다.
+* ASSETS-42701 : 웹에 최적화된 이미지 제공 및 자르기 문제.
+* ASSETS-42966 : 여러 작업이 동일한 경로를 공유하는 경우 비동기 바리케이드가 오류에서 차단 해제될 수 있습니다.
+* ASSETS-43072 : Dynamic Media 템플릿 - 템플릿 참조에서 잘못된 참조에 대한 조회 나누기를 참조하십시오.
+* ASSETS-43212 : 메타데이터 스키마 편집기의 국제화 문제
+* ASSETS-43202 : 타임라인에서 인쇄할 주석을 선택하기 위한 수정 사항입니다.
+* ASSETS-43502 : AEM CS 기존 이미지 사전 설정 이름이 편집 페이지에 표시되지 않습니다.
+* ASSETS-43538 : 비동기 자산 복사 작업에서 소스 경로에 대해 잘못된 속성을 사용합니다.
+* ASSETS-43798 : 에셋을 복사하기 전에 먼저 대상 경로를 확인하십시오.
+* ASSETS-43945 : 비동기 자산 작업 큐의 재시도 지연을 20분으로 늘립니다.
+* ASSETS-44025 : 개별 에셋을 선택한 경우에 대한 비동기 에셋 삭제 작업이 실패합니다.
+* SITES-26128 : CreateLiveCopyStep에서 클래스 캐스트 예외가 발생했습니다.
+* SCRNS-4551 : 비디오 구성 요소가 포함된 [SG 풀] Screens 채널에 브라우저 미리 보기 및 플레이어에서 &quot;일반 페이지 오류&quot;가 표시됩니다
 
-릴리스에서 수정된 새로운 Guides 기능과 향상된 기능 및 문제에 대한 자세한 내용은 [Experience Manager Guides 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)을 참조하십시오.
-
-### 알려진 문제 {#known-issues-18175}
+### 알려진 문제 {#known-issues-18311}
 
 * FORMS-15818: 구성 요소 설명자 항목 `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` 서버 로그에서 진술을 찾을 수 없음. 이는 해를 미치지 않는 로그 구문입니다.
 
-### 사용 중단된 기능 및 API {#deprecated-18175}
+### 사용 중단된 기능 및 API {#deprecated-18311}
 
 AEM as a Cloud Service에서 더 이상 사용되지 않는 기능과 API는 [사용 중단된 기능 및 API](/help/release-notes/deprecated-removed-features.md) 문서에 자세히 설명되어 있습니다.
 
-최근 사용이 중단된 기능이나 사용이 중단되는 과정에 있는 기능을 요약한 내용은 다음과 같습니다.
+### 보안 수정 {#security-18311}
 
-#### JavaScript Use API {#javascript-use-api}
+AEM as a Cloud Service는 플랫폼의 보안 및 성능을 최적화하는 데 사용됩니다. 이 유지 관리 릴리스는 확인된 3가지 취약점을 해결하여 강력한 시스템 보호에 대한 약속을 강화합니다.
 
-[JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api)는 사용자가 API를 활용하는 코드를 디버깅하고 유지 관리하는 데 어려움을 겪고 Java 대안과 비교했을 때 성능이 제한되어 공식적으로 더 이상 사용되지 않습니다.
-
-더 나은 성능, 쉬운 디버깅 및 더 나은 장기 지원을 제공하는 [Java Use API](https://experienceleague.adobe.com/ko/docs/experience-manager-htl/content/java-use-api)로 전환해야 합니다.
-
-#### com.day.cq.wcm.api {#com-day-cq-wcm-api}
-
-Adobe는 `com.day.cq.wcm.api`를 업데이트하고 있습니다. 최신 릴리스에서는 일부 메서드와 클래스가 `@Deprecated`로 표시되었습니다. 이러한 메서드와 클래스는 향후 릴리스에서 제거될 예정입니다. 제안된 대안으로 전환하는 것이 좋습니다.
-
-#### org.apache.jackrabbit.oak.plugins.blob {#org.apache.jackrabbit.oak.plugins.blob}
-
-* GRANITE-54165: 공개 API에서 org.apache.jackrabbit.oak.plugins.blob을 더 이상 사용하지 않습니다.
-
-### 보안 수정 {#security-18175}
-
-AEM as a Cloud Service는 플랫폼의 보안 및 성능을 최적화하는 데 사용됩니다. 이 유지 관리 릴리스에서는 강력한 시스템 보호에 대한 노력의 일환으로 식별된 취약점 2개가 해결되었습니다.
-
-### 임베드된 기술 {#embedded-tech-18175}
+### 임베드된 기술 {#embedded-tech-18311}
 
 | 기술 | 버전 | 링크 |
 |---|---|---|
