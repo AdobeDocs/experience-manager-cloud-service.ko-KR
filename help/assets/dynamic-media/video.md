@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
+source-git-commit: c142ac7ad12179dd842ce6c81cc4d97ece36a197
 workflow-type: tm+mt
-source-wordcount: '10490'
+source-wordcount: '10543'
 ht-degree: 2%
 
 ---
@@ -440,7 +440,7 @@ Dynamic Media에서는 MP4 H.264 비디오 인코딩 사전 설정을 사용하�
 
 **비디오 보고서를 보려면:**
 
-1. Experience Manager의 왼쪽 상단 모서리에서 Experience Manager 로고를 선택합니다. 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL Assets]** > **[!UICONTROL 비디오 보고서]**(으)로 이동합니다.
+1. Experience Manager의 왼쪽 상단 모서리에서 Experience Manager 로고를 선택합니다. 왼쪽 레일에서 ![망치 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) > **[!UICONTROL Assets]** > **[!UICONTROL 비디오 보고서]**&#x200B;를 클릭합니다.
 1. 비디오 보고서 페이지에서 다음 중 하나를 수행합니다.
 
    * 오른쪽 상단 모서리에서 **[!UICONTROL 비디오 보고서 새로 고침]** 아이콘을 선택합니다.
@@ -532,7 +532,7 @@ Adobe 고객 지원 사례를 만들고 제출하여.
 
 | 기능 | 설명 |
 | --- | --- |
-| 대시 | DASH(Digital Adaptive Streaming over HTTP)는 비디오 스트리밍에 대한 국제 표준이며 다양한 비디오 뷰어에서 널리 채택됩니다. 계정에서 DASH가 활성화되면 적응형 비디오 스트리밍을 위해 DASH 또는 HLS 중에서 선택할 수 있는 옵션이 제공됩니다. 또는 뷰어 사전 설정에서 재생 유형으로 **[!UICONTROL 자동]**&#x200B;이(가) 선택된 경우 플레이어 간에 자동 전환으로 둘 다 선택할 수 있습니다.<br>계정에서 DASH를 활성화하면 다음과 같은 몇 가지 주요 이점이 있습니다.<br>·적응형 비트 전송률 스트리밍을 위한 DASH 스트림 비디오 패키지. 이러한 방식은 전달의 효율성을 높이는 결과를 초래한다. 적응형 스트리밍은 고객에게 최상의 시청 환경을 제공합니다.<br>·브라우저가 HLS와 DASH 스트리밍 사이의 Dynamic Media 플레이어 스위치를 사용하여 스트리밍을 최적화하여 최상의 서비스 품질을 보장합니다. Safari 브라우저를 사용하면 비디오 플레이어가 HLS로 자동 전환됩니다.<br>·비디오 뷰어 사전 설정을 편집하여 선호하는 스트리밍 방법(HLS 또는 DASH)을 구성할 수 있습니다.<br>·최적화된 비디오 인코딩으로 DASH 기능을 사용하도록 설정하는 동안 추가 저장소를 사용하지 않도록 합니다. 비디오 저장 비용을 최적화하기 위해 HLS 및 DASH 둘 모두에 대해 단일 비디오 인코딩 세트가 생성된다.<br>·고객이 비디오 게재를 더 쉽게 이용할 수 있도록 지원합니다.<br>·API를 통해 스트리밍 URL도 가져옵니다. |
+| 대시 | DASH(Digital Adaptive Streaming over HTTP)는 비디오 스트리밍에 대한 국제 표준이며 다양한 비디오 뷰어에서 널리 채택됩니다. 계정에서 DASH가 활성화되면 적응형 비디오 스트리밍을 위해 DASH 또는 HLS 중에서 선택할 수 있는 옵션이 제공됩니다. 또는 뷰어 사전 설정에서 재생 유형으로 **[!UICONTROL 자동]**&#x200B;이(가) 선택된 경우 플레이어 간에 자동 전환으로 둘 다 선택할 수 있습니다.<br>계정에서 DASH를 활성화하면 다음과 같은 몇 가지 주요 이점이 있습니다.<ul><li>적응형 비트율 스트리밍을 위한 DASH 스트림 비디오 패키지 이러한 방식은 전달의 효율성을 높이는 결과를 초래한다. 적응형 스트리밍은 고객에게 최상의 시청 환경을 제공합니다.</li><li>브라우저가 HLS와 DASH 스트리밍 간 전환된 Dynamic Media 플레이어로 스트리밍을 최적화하여 최상의 서비스 품질을 보장합니다. Safari 브라우저를 사용하면 비디오 플레이어가 HLS로 자동 전환됩니다.</li><li>비디오 뷰어 사전 설정을 편집하여 선호하는 스트리밍 방법(HLS 또는 DASH)을 구성할 수 있습니다.</li><li>최적화된 비디오 인코딩은 DASH 기능을 활성화하는 동안 추가 저장소가 사용되지 않도록 합니다. 비디오 저장 비용을 최적화하기 위해 HLS 및 DASH 둘 모두에 대해 단일 비디오 인코딩 세트가 생성된다.</li><li>고객이 보다 쉽게 비디오 게재를 이용할 수 있도록 지원합니다.</li><li>API를 통해 스트리밍 URL도 가져옵니다.</li></ul> |
 | 다중 캡션 및 오디오 트랙 | 여러 캡션 및 오디오 트랙 지원을 자동으로 활성화할 수 있습니다. 활성화한 후 업로드하는 모든 후속 비디오는 비디오에 다중 캡션 및 오디오 트랙을 추가하는 지원이 포함된 새로운 백엔드 아키텍처로 처리됩니다. |
 | AI 생성 캡션(제한된 가용성) | AI에서 제공하는 비디오의 캡션을 만듭니다. AI를 사용하여 비디오 트랜스크립트를 만들고 캡션으로 변환합니다. 타임라인도 정의되었습니다. |
 
@@ -554,7 +554,7 @@ Adobe 고객 지원 사례를 만들고 제출하여.
 1. Adobe 고객 지원에서 요청을 제출한 순서에 따라 사용자를 고객 대기 목록에 추가합니다.
 1. Adobe이 요청을 처리할 준비가 되면 고객 지원 센터에서 연락하여 지원 대상 날짜를 조정하고 설정합니다.
 1. Adobe 고객 지원 센터에서 완료 후 알려 줍니다.
-1. 이제 다음 중 하나를 수행합니다.
+1. 이제 다음 중 하나 이상을 수행합니다.
 
    * 평소대로 [비디오 뷰어 사전 설정](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset)을 만듭니다.
    * 평소대로 [비디오 프로필](/help/assets/dynamic-media/video-profiles.md)을 만듭니다.
@@ -708,8 +708,8 @@ Dynamic Media *Video_360* 뷰어를 제외한 Dynamic Media](/help/assets/file-f
 
 1. [이미 비디오 프로필이 할당된 폴더에 기본 비디오를 업로드](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)합니다.
 1. 여러 캡션 및 오디오 트랙을 추가하려는 업로드된 비디오 자산으로 이동합니다.
-1. 에셋 선택 모드의 목록 보기 또는 카드 보기에서 비디오 에셋을 선택합니다.
-1. 도구 모음에서 속성 아이콘(안에 &quot;i&quot;가 있는 원)을 클릭합니다.
+1. 에셋 선택 모드에서 ![카드 보기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg)(카드 보기) 또는 ![목록 보기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg)(목록 보기)에서 비디오 에셋을 선택합니다.
+1. 도구 모음에서 ![정보 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) 속성을 클릭합니다.
    ![선택한 비디오 자산에 비디오 썸네일 이미지 위에 체크 표시가 있고 도구 모음에 속성 보기가 강조 표시되어 있습니다.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*카드 보기에서 선택한 비디오 자산입니다.*
 1. 비디오의 속성 페이지에서 **[!UICONTROL 캡션 및 오디오 트랙]** 탭을 선택합니다.
 
@@ -727,7 +727,7 @@ Dynamic Media *Video_360* 뷰어를 제외한 Dynamic Media](/help/assets/file-f
 1. 비디오에 하나 이상의 오디오 트랙을 추가하려면 다음을 수행하십시오.
    1. **[!UICONTROL 오디오 트랙 업로드]**&#x200B;를 선택합니다.
    1. 하나 이상의 .mp3 파일로 이동하여 선택한 다음 엽니다.
-   1. 미디어 플레이어의 **[!UICONTROL 오디오 또는 캡션 선택]** 팝업 목록에 오디오 트랙을 표시하려면 각 오디오 트랙 파일에 대한 필수 세부 정보를 추가해야 합니다. 이렇게 하면 모든 오디오 트랙이 올바르게 나열되고 액세스할 수 있습니다. 오디오 트랙 파일 이름 오른쪽에 있는 연필 아이콘을 선택합니다. **오디오 트랙 편집** 대화 상자에 다음과 같은 필수 세부 정보를 입력하십시오.
+   1. 미디어 플레이어의 **[!UICONTROL 오디오 또는 캡션 선택]** 팝업 목록에 오디오 트랙을 표시하려면 각 오디오 트랙 파일에 대한 필수 세부 정보를 추가해야 합니다. 이렇게 하면 모든 오디오 트랙이 올바르게 나열되고 액세스할 수 있습니다. 오디오 트랙 파일 이름 오른쪽에 있는 ![그리기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg)을 클릭합니다. **오디오 트랙 편집** 대화 상자에 다음과 같은 필수 세부 정보를 입력하십시오.
 
       | 오디오 트랙 메타데이터 | 설명 |
       |--- |--- |
@@ -752,13 +752,13 @@ Dynamic Media *Video_360* 뷰어를 제외한 Dynamic Media](/help/assets/file-f
    | **옵션 3** | 캡션 파일(`.vtt`)의 텍스트를 수정하고 다시 업로드하여 이전 `.vtt` 파일을 바꾼 다음 AI가 수정된 파일을 번역하도록 해야 합니다.<br>아래의 **옵션 3**&#x200B;을 참조하세요. | **[!UICONTROL 캡션 번역]** |
 
    ![캡션 만들기 옵션](/help/assets/dynamic-media/assets/msma-createcaption.png)
-   *캡션 만들기 드롭다운 메뉴에는 파일 업로드, 오디오 트랙 변환, 캡션 번역 등 세 가지 옵션이 있습니다.*
+   *캡션 만들기 드롭다운 메뉴에는 파일 업로드, 오디오 트랙 변환 및 캡션 번역의 세 가지 옵션이 있습니다.*
 
 +++**옵션 1:** *사용하려는 언어로 된 기존 캡션 파일이 있습니다.*(**[!UICONTROL 파일 업로드]** 옵션)
 
    1. 페이지 오른쪽 상단 근처에 있는 **[!UICONTROL 캡션 만들기]** > **[!UICONTROL 파일 업로드]**&#x200B;를 클릭합니다.
    1. 기존 `.vtt`개 파일 중 하나 이상으로 이동하여 선택한 다음 엽니다.
-   1. 미디어 플레이어에 캡션을 표시하려면 *반드시*&#x200B;업로드하는 *각각* 캡션 파일에 대한 필수 세부 정보를 추가해야 합니다. 캡션 파일 이름 오른쪽에 있는 연필 아이콘을 선택합니다. **캡션 편집** 대화 상자에 파일에 대한 다음 필수 정보를 입력하십시오.
+   1. 미디어 플레이어에 캡션을 표시하려면 *반드시*&#x200B;업로드하는 *각각* 캡션 파일에 대한 필수 세부 정보를 추가해야 합니다. 캡션 파일 이름의 오른쪽에 있는 ![그리기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg)을 클릭합니다. **캡션 편집** 대화 상자에 파일에 대한 다음 필수 정보를 입력하십시오.
 
       | 캡션 메타데이터 | 설명 |
       |--- |--- |
@@ -791,8 +791,8 @@ Dynamic Media *Video_360* 뷰어를 제외한 Dynamic Media](/help/assets/file-f
 
       | 옵션 | 설명 |
       |--- |--- |
-      | 변환할 오디오 트랙 | 드롭다운 목록에서 AI를 사용하여 캡션을 생성할 업로드된 오디오 트랙 파일을 선택합니다. |
-      | 출력 언어 | 드롭다운 목록에서 캡션 파일을 표시할 언어를 하나 이상 선택합니다.<br>선택한 언어를 제거하려면 **X**&#x200B;을 클릭하세요.<br>비디오를 재생하는 동안 여기에서 선택한 순서대로 미디어 플레이어에 언어 목록이 나타납니다. |
+      | 변환할 오디오 트랙 | ![V자형 화살표 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg)을 클릭한 다음 AI를 사용하여 캡션을 생성할 업로드된 오디오 트랙 파일을 선택하십시오. |
+      | 출력 언어 | ![V자형 화살표 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg)을 클릭한 다음 캡션 파일을 표시할 언어를 하나 이상 선택하십시오.<br>선택한 언어를 제거하려면 ![닫기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg)을 클릭하세요.<br>비디오를 재생하는 동안 여기에서 선택한 순서대로 미디어 플레이어에 언어 목록이 나타납니다. |
 
    1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
    1. 페이지의 오른쪽 상단 근처에 있는 **[!UICONTROL 저장 및 닫기]** 드롭다운에서 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
@@ -802,7 +802,7 @@ Dynamic Media *Video_360* 뷰어를 제외한 Dynamic Media](/help/assets/file-f
       >
       >인스턴스의 캐싱 설정에 따라 메타데이터 처리가 미리보기 및 게시된 URL에 반영되기까지 몇 분 정도 걸릴 수 있습니다.
 
-   1. (선택 사항) 캡션 파일 이름 오른쪽에 있는 연필 아이콘을 선택합니다. **캡션 편집** 대화 상자에서 파일에 대한 다음 세부 정보를 편집할 수 있습니다.
+   1. (선택 사항) 캡션 파일 이름의 오른쪽에 있는 ![그리기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg)을 클릭합니다. **캡션 편집** 대화 상자에서 파일에 대한 다음 세부 정보를 편집할 수 있습니다.
 
       | 캡션 메타데이터 | 설명 |
       | --- | --- |
@@ -825,8 +825,8 @@ Dynamic Media *Video_360* 뷰어를 제외한 Dynamic Media](/help/assets/file-f
 
       | 옵션 | 설명 |
       |--- |--- |
-      | 번역할 캡션 | 드롭다운 목록에서 AI를 사용하여 캡션을 생성할 캡션 파일을 선택합니다. |
-      | 출력 언어 | 드롭다운 목록에서 캡션 파일을 표시할 언어를 하나 이상 선택합니다.<br>선택한 언어를 제거하려면 **X**&#x200B;을 클릭하세요.<br>비디오를 재생하는 동안 여기에서 선택한 순서대로 미디어 플레이어에 언어 목록이 나타납니다. |
+      | 번역할 캡션 | ![V자형 화살표 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg)을 클릭한 다음 AI를 사용하여 캡션을 생성할 캡션 파일을 선택하십시오. |
+      | 출력 언어 | ![V자형 화살표 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg)을 클릭한 다음 캡션 파일을 표시할 언어를 하나 이상 선택하십시오.<br>선택한 언어를 제거하려면 ![닫기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg)을 클릭하세요.<br>비디오를 재생하는 동안 여기에서 선택한 순서대로 미디어 플레이어에 언어 목록이 나타납니다. |
 
    1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
    1. 페이지의 오른쪽 상단 근처에 있는 **[!UICONTROL 저장 및 닫기]** 드롭다운에서 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
@@ -836,7 +836,7 @@ Dynamic Media *Video_360* 뷰어를 제외한 Dynamic Media](/help/assets/file-f
       >
       >인스턴스의 캐싱 설정에 따라 메타데이터 처리가 미리보기 및 게시된 URL에 반영되기까지 몇 분 정도 걸릴 수 있습니다.
 
-   1. (선택 사항) 캡션 파일 이름 오른쪽에 있는 연필 아이콘을 선택합니다. **캡션 편집** 대화 상자에서 파일에 대한 다음 세부 정보를 편집할 수 있습니다.
+   1. (선택 사항) 캡션 파일 이름의 오른쪽에 있는 ![그리기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg)을 클릭합니다. **캡션 편집** 대화 상자에서 파일에 대한 다음 세부 정보를 편집할 수 있습니다.
 
       | 캡션 메타데이터 | 설명 |
       | --- | --- |
@@ -888,11 +888,12 @@ Dynamic Media에서는 URL 수정자를 통해 비디오가 포함된 단일 캡
 **비디오의 라이프사이클 상태를 보려면:**
 
 1. 라이프사이클 상태를 보려는 비디오 자산으로 이동합니다.
-1. 에셋 선택 모드의 목록 보기 또는 카드 보기에서 비디오 에셋을 선택합니다.
-1. 도구 모음에서 속성 아이콘(안에 &quot;i&quot;가 있는 원)을 선택합니다.
-1. 속성 페이지에서 **[!UICONTROL 캡션 및 오디오 트랙]** 탭을 선택합니다. 상태 열에서 각 캡션 또는 오디오 파일의 상태를 확인합니다.
+1. 에셋 선택 모드에서 ![카드 보기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg)(카드 보기) 또는 ![목록 보기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg)(목록 보기)에서 비디오 에셋을 선택합니다.
+1. 도구 모음에서 ![정보 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) 속성을 클릭합니다.
+1. **속성** 페이지에서 **[!UICONTROL 캡션 및 오디오 트랙]** 탭을 선택합니다.
+1. **[!UICONTROL 상태]** 열에서 각 캡션 또는 오디오 파일의 상태를 확인합니다.
 
-| 캡션 또는 오디오 추적 상태 | 설명 |
+| 캡션 및 오디오 트랙 상태 | 설명 |
 | --- | --- |
 | 처리 중 | 새 캡션 또는 오디오 트랙 파일을 추가하고 저장하면 &quot;처리 중&quot; 상태가 됩니다. Dynamic Media은 스트리밍 매니페스트를 기본 비디오에 연결하여 파일을 처리합니다. |
 | 처리됨 | 처리가 완료되면 캡션 또는 오디오 트랙 파일 또는 기본 비디오와 연결된 원본 오디오 트랙이 &quot;처리됨&quot; 상태로 나타납니다. 비디오를 라이브로 게시하는 *이전*&#x200B;에 &quot;처리됨&quot;으로 표시되는 캡션 및 오디오 트랙 파일을 미리 볼 수 있습니다. |
@@ -900,7 +901,6 @@ Dynamic Media에서는 URL 수정자를 통해 비디오가 포함된 단일 캡
 | 실패 | &quot;실패&quot; 상태는 캡션 또는 오디오 트랙 파일 처리가 완료되지 않았음을 의미합니다. 캡션 또는 오디오 트랙 파일을 삭제하고 다시 업로드하십시오. |
 | 게시 취소됨 | 게시된 기본 비디오가 명시적으로 게시 취소되면 비디오에 추가한 캡션 또는 오디오 트랙 파일도 게시 취소됩니다. |
 
-![캡션 및 오디오 트랙 필드에 강조 표시된 상태 열입니다.](/help/assets/dynamic-media/assets/msma-lifecycle-status.png)*업로드된 각 캡션 및 오디오 추적 파일의 주기 상태입니다.*
 
 ### 여러 오디오 트랙이 있는 비디오의 기본 오디오 설정
 
@@ -918,16 +918,16 @@ Dynamic Media에서는 URL 수정자를 통해 비디오가 포함된 단일 캡
 **오디오 트랙이 여러 개인 비디오의 기본 오디오를 설정하려면:**
 
 1. 기본 오디오 트랙을 설정할 비디오 자산으로 이동합니다.
-1. 에셋 선택 모드의 목록 보기 또는 카드 보기에서 비디오 에셋을 선택합니다.
-1. 도구 모음에서 속성 아이콘(안에 &quot;i&quot;가 있는 원)을 선택합니다.
+1. 에셋 선택 모드에서 ![카드 보기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg)(카드 보기) 또는 ![목록 보기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg)(목록 보기)에서 비디오 에셋을 선택합니다.
+1. 도구 모음에서 ![정보 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) 속성을 클릭합니다.
 1. 속성 페이지에서 **[!UICONTROL 캡션 및 오디오 트랙]** 탭을 선택합니다.
 1. **오디오 트랙** 제목 아래에서 비디오의 기본값으로 설정할 오디오 트랙 파일을 선택합니다.
-1. **[!UICONTROL 기본값으로 설정]**을 선택합니다.
-**기본값으로 설정** 대화 상자에서 **[!UICONTROL 바꾸기]**&#x200B;를 선택합니다.
+1. ![오디오 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Audio_18_N.svg) **[!UICONTROL 기본값으로 설정]**&#x200B;을 클릭합니다.
+1. **기본값으로 설정** 대화 상자에서 **[!UICONTROL 바꾸기]**&#x200B;를 클릭합니다.
 
    ![선택한 오디오 트랙 파일 이름이 있고 &quot;기본값으로 설정&quot; 단추가 강조 표시된 오디오 트랙 머리글입니다.](/help/assets/dynamic-media/assets/msma-defaultaudiotrack.png)*비디오에 대한 기본 오디오 트랙을 설정하는 중입니다.*
 
-1. 오른쪽 상단 모서리에서 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택합니다.
+1. 오른쪽 상단 모서리에서 **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
 1. Publish 비디오입니다. [Publish 자산](publishing-dynamicmedia-assets.md)을 참조하세요.
 
 ### 여러 캡션 및 오디오 트랙이 있는 비디오 미리 보기 {#preview-video-audio-subtitle}
@@ -947,22 +947,21 @@ Dynamic Media에서는 URL 수정자를 통해 비디오가 포함된 단일 캡
 **여러 캡션 및 오디오 트랙이 있는 비디오를 미리 보려면:**
 
 1. **[!UICONTROL Assets]**&#x200B;에서 여러 캡션 및 오디오 트랙을 추가한 기존 비디오로 이동합니다.
-1. 비디오 자산을 미리보기 모드에서 열 수 있도록 클릭합니다.
-1. 미리 보기 페이지에서 페이지의 왼쪽 상단 근처에 있는 드롭다운 목록을 선택한 다음 **[!UICONTROL 뷰어]**&#x200B;를 선택합니다.
+1. 비디오 자산을 클릭하여 미리보기 모드로 엽니다.
+1. 미리 보기 페이지에서 페이지의 왼쪽 상단 모서리 근처에 있는 ![왼쪽 레일 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg) ![아래쪽 화살표 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg)을 클릭한 다음 **[!UICONTROL 뷰어]**&#x200B;을 선택합니다.
 
    ![뷰어 옵션을 표시하는 드롭다운 목록입니다.](/help/assets/dynamic-media/assets/msma-selectviewers.png)
 
-1. 뷰어 목록에서 비디오 미리 보기에 사용할 뷰어를 선택합니다. 예를 들어, 다음 스크린샷은 **[!UICONTROL 비디오]** 뷰어가 선택되어 있는 것을 보여 줍니다.
+1. 페이지의 왼쪽 상단 모서리 근처에서 ![왼쪽 레일 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg) 뷰어 ![아래쪽 화살표 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg)을 클릭한 다음 비디오 미리 보기에 사용할 뷰어를 선택합니다.
 
-   ![뷰어 드롭다운 목록에서 비디오 뷰어를 선택합니다.](/help/assets/dynamic-media/assets/msma-dmviewerselected.png)
-
-1. 오른쪽 하단 모서리 근처에서 볼륨 아이콘 왼쪽에 있는 말풍선 아이콘을 선택한 다음 들으려는 오디오나 캡션을 선택하거나 또는 둘 다 표시합니다. 필요한 경우 캡션 아래에서 **[!UICONTROL 끄기]**&#x200B;를 클릭하여 캡션 표시를 비활성화할 수 있습니다.
+1. 페이지의 오른쪽 하단 모서리 근처에서 말풍선 아이콘을 클릭한 다음 듣거나 볼 오디오 또는 자막/캡션을 선택하거나 둘 다 선택합니다.
 
    ![비디오 뷰어의 오디오 및 캡션 팝업 목록입니다.](/help/assets/dynamic-media/assets/msma-selectaudiosubtitle.png)*비디오 재생을 위한 오디오 및 캡션을 선택하는 사용자의 시뮬레이션.*
 
-1. 재생을 시작하려면 비디오의 **[!UICONTROL 재생]** 단추를 선택하십시오.
-왼쪽 아래에 있는 **[!UICONTROL URL]** 및 **[!UICONTROL 포함]** 단추를 참고하십시오. 이 단추를 사용하여 각각 [비디오의 URL을 웹 응용 프로그램에 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)하거나 [비디오를 웹 페이지에 포함](/help/assets/dynamic-media/embed-code.md)합니다.
-1. 미리 보기 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 닫기]**&#x200B;를 선택합니다.
+1. 재생을 시작하려면 ![재생 아이콘](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg)을 클릭하세요.
+원하는 경우 ![최대화 아이콘](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Maximize_22_N.svg)을 클릭하여 보기 창을 최대화합니다.
+페이지의 왼쪽 아래 모서리 근처에 **[!UICONTROL URL]** 및 **[!UICONTROL Embed]** 단추가 있습니다. 이 단추를 사용하여 각각 [비디오의 URL을 웹 응용 프로그램에 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)하거나 [비디오를 웹 페이지에 포함](/help/assets/dynamic-media/embed-code.md)합니다.
+1. 미리 보기 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 닫기]**&#x200B;를 클릭합니다.
 
 ### 비디오에서 캡션 또는 오디오 트랙 파일 삭제
 
@@ -973,13 +972,13 @@ Dynamic Media에서는 URL 수정자를 통해 비디오가 포함된 단일 캡
 **비디오에서 캡션 또는 오디오 트랙 파일을 삭제하려면:**
 
 1. 기본 오디오 트랙을 설정할 비디오 자산으로 이동합니다.
-1. 에셋 선택 모드의 목록 보기 또는 카드 보기에서 비디오 에셋을 선택합니다.
-1. 도구 모음에서 속성 아이콘(안에 &quot;i&quot;가 있는 원)을 선택합니다.
+1. 에셋 선택 모드에서 ![카드 보기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg)(카드 보기) 또는 ![목록 보기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg)(목록 보기)에서 비디오 에셋을 선택합니다.
+1. 도구 모음에서 ![정보 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) 속성을 클릭합니다.
 1. 속성 페이지에서 **[!UICONTROL 캡션 및 오디오 트랙]** 탭을 선택합니다.
 1. 다음 중 하나를 수행합니다.
 
-   * 캡션 - **캡션** 제목 아래에서 비디오에서 삭제할 캡션 파일을 하나 이상 선택한 다음 **[!UICONTROL 삭제]**&#x200B;를 클릭합니다.
-   * 오디오 트랙 - **오디오 트랙** 제목 아래에서 비디오에서 삭제할 오디오 트랙 파일을 하나 이상 선택한 다음 **[!UICONTROL 삭제]**&#x200B;를 클릭합니다.
+   * 캡션 - **캡션** 제목 아래에서 비디오에서 삭제할 캡션 파일을 하나 이상 선택한 다음 ![삭제 아이콘](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL 삭제]**&#x200B;을 클릭합니다.
+   * 오디오 트랙 - **오디오 트랙** 제목 아래에서 비디오에서 삭제할 오디오 트랙 파일을 하나 이상 선택한 다음 ![삭제 아이콘](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL 삭제]**&#x200B;을 클릭합니다.
 
 1. 삭제 대화 상자에서 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 1. Publish 비디오입니다.
@@ -995,22 +994,23 @@ Dynamic Media에서는 URL 수정자를 통해 비디오가 포함된 단일 캡
 **비디오에 업로드된 캡션 또는 오디오 트랙 파일을 다운로드하려면:**
 
 1. 기본 오디오 트랙을 설정할 비디오 자산으로 이동합니다.
-1. 에셋 선택 모드의 목록 보기 또는 카드 보기에서 비디오 에셋을 선택합니다.
-1. 도구 모음에서 속성 아이콘(안에 &quot;i&quot;가 있는 원)을 선택합니다.
-1. 속성 페이지에서 **[!UICONTROL 캡션 및 오디오 트랙]** 탭을 선택합니다.
+1. 에셋 선택 모드에서 ![카드 보기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg)(카드 보기) 또는 ![목록 보기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg)(목록 보기)에서 비디오 에셋을 선택합니다.
+1. 도구 모음에서 ![정보 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) 속성을 클릭합니다.
+1. **속성** 페이지에서 **[!UICONTROL 캡션 및 오디오 트랙]** 탭을 선택합니다.
 1. 다음 중 하나를 수행합니다.
 
-   * 캡션 - **캡션** 제목 아래에서 비디오에서 다운로드할 캡션 파일을 하나 이상 선택한 다음 **[!UICONTROL 다운로드]**&#x200B;를 선택합니다.
-   * 오디오 트랙 - **오디오 트랙** 제목 아래에서 비디오에서 다운로드할 오디오 트랙 파일을 하나 이상 선택한 다음 **[!UICONTROL 다운로드]**&#x200B;를 선택합니다.
+   * 캡션 - **캡션** 제목 아래에서 비디오에서 다운로드할 캡션 파일을 하나 이상 선택한 다음 ![다운로드 아이콘](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg) **[!UICONTROL 다운로드]**&#x200B;을 클릭합니다.
+   * 오디오 트랙 - **오디오 트랙** 제목 아래에서 비디오에서 다운로드할 오디오 트랙 파일을 하나 이상 선택한 다음 ![다운로드 아이콘](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg) **[!UICONTROL 다운로드]**&#x200B;을 클릭합니다.
 
 1. 다운로드 대화 상자에서 다음 옵션을 설정합니다.
 
-   | 옵션 | 설명 |
+   | 다운로드 옵션 | 설명 |
    |--- |--- |
    | 다른 이름으로 저장 | 다른 이름으로 저장 텍스트 필드에 지정된 기본 파일 이름을 사용하거나 고유한 이름을 지정합니다. |
    | 각 에셋에 대해 별도의 폴더 만들기 | 다운로드하도록 선택한 각 캡션 파일 또는 오디오 트랙 파일에 대한 폴더를 만듭니다. |
    | 이메일 | 기본 이메일 프로그램을 사용하여 .zip 파일을 지정된 이메일 주소로 전송합니다. |
    | 자산 | 다운로드하는 파일의 수와 선택한 모든 파일의 전체 크기를 지정합니다. 이 옵션을 선택 해제하면 **[!UICONTROL 다운로드]** 버튼이 흐려지고 꺼져서 파일을 다운로드할 수 없습니다. |
+   | 렌디션 | 렌디션은 일반적으로 더 작거나 낮은 해상도의 원본 파일 미리 보기나 대체 버전을 참조합니다. 0 B로 표시되면 대체 버전을 사용할 수 없거나 크기가 너무 작아 크기를 등록할 수 없다는 의미일 수 있습니다. |
 
 1. **[!UICONTROL 다운로드]**&#x200B;를 선택합니다.
 1. Publish 비디오입니다. [Publish 자산](publishing-dynamicmedia-assets.md)을 참조하세요.
@@ -1060,7 +1060,7 @@ URL에서 JSON 함수를 사용하는 방법에 대한 자세한 내용은 [정�
 
    For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
 
-   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then select **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video.-->
+   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then select **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video. -->
 
 사이트의 화면 지침을 따라 WebVTT 파일을 작성하고 저장합니다. 완료되면 캡션 파일 내용을 복사하여 일반 텍스트 편집기에 붙여넣고 VTT 파일 확장명으로 저장합니다.
 
@@ -1085,11 +1085,11 @@ URL에서 JSON 함수를 사용하는 방법에 대한 자세한 내용은 [정�
 
      캡션 경로의 끝에 `,1`을(를) 메모하십시오. 경로에서 VTT 파일 이름 확장자 바로 다음에 있는 `,1` 또는 `,0`(으)로 각각 설정하여 비디오 플레이어 막대에서 자막 버튼을 선택적으로 활성화(켜기)하거나 비활성화(끄기)할 수 있습니다.
 
-   * 포함된 비디오 뷰어 환경을 보려면 **[!UICONTROL 포함 코드]**&#x200B;를 선택하세요. 포함 코드 대화 상자에서 을 선택하고 포함 코드를 클립보드에 복사한 다음 코드를 간단한 텍스트 편집기에 붙여넣습니다. 복사된 포함 코드를 다음 구문과 함께 추가합니다.
+   * 포함된 비디오 뷰어 환경을 보려면 **[!UICONTROL 포함 코드]**&#x200B;를 클릭하세요. 포함 코드 대화 상자에서 을 선택하고 포함 코드를 클립보드에 복사한 다음 코드를 간단한 텍스트 편집기에 붙여넣습니다. 복사된 포함 코드를 다음 구문과 함께 추가합니다.
 
      `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
-     캡션 경로의 끝에 `,1`을(를) 메모하십시오. 경로에서 VTT 파일 이름 확장자 바로 다음에 있는 `,1` 또는 `,0`(으)로 각각 설정하여 비디오 플레이어 막대에서 자막 버튼을 선택적으로 활성화(켜기)하거나 비활성화(끄기)할 수 있습니다.
+     캡션 경로 끝에 `,1`이(가) 있습니다. 경로에서 VTT 파일 이름 확장자 바로 다음에 있는 `,1` 또는 `,0`(으)로 각각 설정하여 비디오 플레이어 막대에서 자막 버튼을 선택적으로 활성화(켜기)하거나 비활성화(끄기)할 수 있습니다.
 
 ## 비디오에 챕터 마커 추가 {#adding-chapter-markers-to-video}
 
@@ -1170,7 +1170,6 @@ HTML5 비디오 뷰어를 사용하고 있으므로, 만든 챕터 파일이 Web
    </table>
 
 
-
 ## 비디오 썸네일 기본 정보 {#about-video-thumbnails}
 
 비디오 썸네일은 고객에게 비디오를 나타내는 이미지 에셋 또는 비디오 프레임의 축소된 버전입니다. 썸네일은 고객이 비디오를 선택하도록 유도하는 역할을 해야 합니다.
@@ -1190,26 +1189,28 @@ Experience Manager의 모든 비디오에는 연결된 썸네일이 있어야 �
 
    * [비디오를 폴더에 업로드했습니다](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 
+
 1. 썸네일 이미지를 변경하고자 하는 업로드된 비디오 자산으로 이동합니다.
-1. 자산 선택 모드에서 **[!UICONTROL 목록 보기]** 또는 **[!UICONTROL 카드 보기]**&#x200B;에서 비디오 자산을 선택합니다.
-1. 도구 모음에서 **[!UICONTROL 속성]** 아이콘(안에 &quot;i&quot;가 있는 원)을 선택합니다.
-1. 비디오의 속성 페이지에서 **[!UICONTROL 썸네일 변경]**&#x200B;을 선택합니다.
-1. 썸네일 변경 페이지에서 다음 중 하나를 수행합니다.
+1. 에셋 선택 모드에서 ![카드 보기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg)(카드 보기) 또는 ![목록 보기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg)(목록 보기)에서 비디오 에셋을 선택합니다.
+1. 도구 모음에서 ![정보 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) 속성을 클릭합니다.
+1. 비디오의 속성 페이지에서 **[!UICONTROL 썸네일 변경]**&#x200B;을 클릭합니다.
+1. 썸네일 변경 대화 상자에서 다음 중 하나를 수행합니다.
 
    * 비디오의 프레임을 새 썸네일로 사용하려면 다음 작업을 수행하십시오.
 
-      * 도구 모음에서 **[!UICONTROL 비디오에서 프레임 선택]** 옵션을 클릭합니다.
-      * 재생 버튼을 선택한 다음 비디오의 새 썸네일로 캡처할 프레임에서 일시 중지 버튼을 선택합니다.
+      * 도구 모음에서 **[!UICONTROL 비디오에서 프레임 선택]** 탭을 클릭합니다.
+      * ![재생 아이콘](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg)을 클릭합니다.
+      * 비디오의 새 썸네일로 캡처할 프레임에서 ![일시 중지 아이콘](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PauseCircle_22_N.svg)을 클릭합니다.
 
    * 이미지 자산을 새 썸네일로 사용하려면 다음을 수행하십시오.
 
-      * 도구 모음에서 **[!UICONTROL Assets에서 썸네일 선택]**&#x200B;을 선택합니다.
-      * **[!UICONTROL 썸네일 선택]**&#x200B;을 선택합니다.
+      * 도구 모음에서 **[!UICONTROL Assets에서 썸네일 선택]** 탭을 클릭합니다.
+      * **[!UICONTROL 썸네일 선택]** 단추를 클릭합니다.
       * 사용할 이전에 업로드되고 게시된 이미지 자산으로 이동합니다. 에셋의 크기가 자동으로 조정되어 비디오의 썸네일 이미지로 사용됩니다.
-      * 이미지 자산을 선택한 다음 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
+      * 이미지 자산을 선택한 다음 **[!UICONTROL 선택]**&#x200B;을 클릭합니다.
 
-1. 썸네일 변경 페이지에서 **[!UICONTROL 변경 내용 저장]**&#x200B;을 선택합니다.
-1. 비디오의 속성 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택합니다.
+1. 썸네일 변경 대화 상자에서 **[!UICONTROL 변경 내용 저장]**&#x200B;을 클릭합니다.
+1. 비디오의 속성 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 저장 및 닫기]** 또는 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 
 
