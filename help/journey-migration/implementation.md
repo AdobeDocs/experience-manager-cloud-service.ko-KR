@@ -4,9 +4,9 @@ description: 코드 및 콘텐츠를 클라우드로 마이그레이션할 준�
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '2282'
+source-wordcount: '2288'
 ht-degree: 9%
 
 ---
@@ -49,7 +49,7 @@ Cloud Service으로 전환하는 정확한 단계는 구입한 시스템과 사�
 
 다음 그림은 AEM as a Cloud Service에서 사용할 코드 및 콘텐츠를 변환하는 단계와 관련된 주요 단계를 보여줍니다.
 
-![이미지](/help/journey-migration/assets/exec-image1.png)
+![전환 단계](/help/journey-migration/assets/exec-image1.png)
 
 아래 단원에서 이를 수행할 수 있도록 사용해야 하는 도구에 대한 세부 사항을 설명하겠습니다.
 
@@ -217,7 +217,7 @@ One more important datapoint is the amount of time it takes to complete the [use
 
 다음 섹션에서는 컨텐츠 마이그레이션 전략 및 타임라인을 수립하는 데 사용할 수 있는 중요한 단계 및 관련 작업을 보여줍니다.
 
-![이미지](/help/journey-migration/assets/content-migration2.png)
+![마이그레이션 전략을 만드는 단계](/help/journey-migration/assets/content-migration2.png)
 
 ### 장비 {#fitment}
 

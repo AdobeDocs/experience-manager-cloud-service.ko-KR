@@ -4,9 +4,9 @@ description: 모범 사례 분석기를 사용하여 업그레이드 준비 상�
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 9998fb4bc4f9f4c0f4adf67fd1b378ae662c8f70
+source-git-commit: 9f5d7ee97da1c92d3a3d4573fa3ec737356f54a9
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2701'
 ht-degree: 39%
 
 ---
@@ -73,45 +73,43 @@ Best Practices Analyzer(BPA) 실행을 위한 중요한 고려 사항을 이해�
 
 1. Adobe Experience Manager을 선택하고 도구 > **작업** > **모범 사례 분석기**&#x200B;로 이동합니다.
 
-   ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
+   ![모범 사례 분석기](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
 1. 모범 사례 분석기를 실행하려면 **보고서 생성**&#x200B;을 클릭하세요.
 
-   ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
+   ![보고서 생성](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
 1. 생성된 BPA 보고서를 [CAM(Cloud Acceleration Manager)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)에 자동으로 업로드하려면 BPA 업로드 키를 제공하십시오. 업로드 키를 가져오려면 [CAM의 모범 사례 분석](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)으로 이동하십시오.
 
-   ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
+   ![BPA 업로드 키 설정](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
 
 >[!NOTE]
 >**CAM으로 보고서 자동 업로드 건너뛰기**&#x200B;를 선택하여 CAM으로 자동 업로드를 건너뛸 수 있습니다. 건너뛰기를 선택하는 경우 BPA 보고서를 쉼표로 구분된 값 파일로 수동으로 다운로드한 다음 CAM에서 파일을 업로드해야 합니다. 업로드 키 옵션은 작업을 간소화하므로 사용하는 것이 좋습니다.
 
 1. 올바른 키를 제공하면 **생성** 단추가 활성화됩니다. 보고서 생성을 시작하려면 **생성**&#x200B;을 클릭하세요.
 
-   ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
-
+   ![보고서 생성](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
 
 1. BPA가 보고서를 생성하는 동안 도구에서 수행한 진행 상황을 화면에 볼 수 있습니다. 완료율 단위로 진행률이 표시됩니다. 또한 분석된 항목의 수와 발견된 검색 결과의 수를 표시합니다.
 
-   ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
+   ![보고서 생성](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
 
 >[!NOTE]
 >BPA 업로드 키 만료 타임스탬프가 오른쪽 맨 위에 표시됩니다. 만료 날짜가 가까워지면 BPA 업로드 키를 갱신해야 합니다. 키를 갱신하려면 **갱신**&#x200B;을 클릭하여 CAM으로 이동하여 키를 갱신할 수 있습니다.
 
 1. BPA 보고서가 생성되면 요약 및 결과 수가 검색 유형 및 중요도 수준별로 구성된 표 형식으로 표시됩니다. 특정 검색 결과에 대한 자세한 내용을 보려면 테이블에서 검색 유형에 해당하는 숫자를 클릭합니다.
 
-   ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
+   ![보고서 개요](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
 1. **CSV로 내보내기**&#x200B;를 클릭하여 쉼표로 구분된 값(CSV) 형식으로 보고서를 다운로드할 수 있습니다. **CAM으로 이동**&#x200B;을 클릭하여 CAM에서 보고서를 볼 수도 있습니다. CAM의 [모범 사례 분석](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) 페이지로 이동합니다.
 
 **보고서 새로 고침**&#x200B;을 클릭하여 BPA가 캐시를 지우고 보고서를 다시 생성하도록 할 수 있습니다.
 
-![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
-
+![보고서 새로 고침](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
 1. 캐시가 만료되면 **CAM에서 마지막으로 생성된 보고서 보기**&#x200B;를 클릭하여 CAM에서 마지막으로 생성된 보고서를 보거나 **새 보고서 생성**&#x200B;을 클릭하여 새 보고서 생성을 시작할 수 있습니다.
 
-![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
+![보고서 없음](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
 
 
 #### 모범 사례 분석기 보고서에서 필터 사용 {#bpa-filters}
@@ -120,14 +118,14 @@ Best Practices Analyzer(BPA) 실행을 위한 중요한 고려 사항을 이해�
 
 1. 페이지 왼쪽에 있는 왼쪽 레일 아이콘을 클릭합니다. **ACS Commons 필터**&#x200B;를 표시합니다. 아래 이미지에 표시된 대화형 확인란을 표시하려면 **ACS Commons 필터**&#x200B;를 클릭하십시오.
 
-   ![이미지](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
+   ![ACS Commons 필터](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
    >왼쪽 레일 아이콘은 BPA가 ACS Commons 사용을 감지한 경우에만 나타납니다.
 
 1. ACS Commons와 관련된 모든 검색 결과를 필터링하려면 상자를 선택 취소합니다. 아래 이미지에 표시된 대로 보고서에 **필터링된 검색 횟수**&#x200B;가 표시됩니다. 필터는 CSV(쉼표로 구분된 값) 형식으로 내보낼 때도 보고서에 적용됩니다.
 
-   ![이미지](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
+   ![필터링된 검색 횟수](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
    >ACS Commons 결과를 무시해서는 안 됩니다. AEM as a Cloud Service과의 호환성을 확인하려면 [설명서](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility)를 참조하세요.

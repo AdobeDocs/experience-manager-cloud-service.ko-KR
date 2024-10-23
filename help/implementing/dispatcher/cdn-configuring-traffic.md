@@ -4,9 +4,9 @@ description: 구성 파일에서 규칙 및 필터를 선언하고 Cloud Manager
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 6ea53e6b2b009895dccf99ac0265dc42b68db509
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1341'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ AEM as a Cloud Service은 [Adobe 관리 CDN](/help/implementing/dispatcher/cdn.m
 
 기능적으로 앞에서 언급한 다양한 기능들은 다음 순서로 평가됩니다.
 
-![이미지](/help/implementing/dispatcher/assets/order.png)
+![평가 순서](/help/implementing/dispatcher/assets/order.png)
 
 ## 설정 {#initial-setup}
 

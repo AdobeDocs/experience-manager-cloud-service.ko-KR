@@ -4,9 +4,9 @@ description: AEM 설치를 클라우드로 이동할 준비가 되었는지 확�
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 feature: Migration
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '1907'
+source-wordcount: '1913'
 ht-degree: 6%
 
 ---
@@ -169,7 +169,7 @@ AEM as a Cloud Service에 도입된 변경 사항을 숙지한 후에는 기존 
 
 다음 그림은 검토 단계 중에 포함된 주요 단계를 보여줍니다.
 
-![이미지](/help/journey-migration/assets/planning-phaseimg1.png)
+![검토 단계 중에 포함된 주요 단계](/help/journey-migration/assets/planning-phaseimg1.png)
 
 다음으로 이러한 각 단계가 무엇을 의미하는지 자세히 살펴봅니다.
 

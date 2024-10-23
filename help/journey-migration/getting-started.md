@@ -4,10 +4,10 @@ description: AEM as a Cloud Service로의 전환에 대한 기본 사항을 숙�
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 77%
+source-wordcount: '579'
+ht-degree: 74%
 
 ---
 
@@ -39,11 +39,11 @@ Cloud Service로의 마이그레이션 여정에는 다음 단계가 포함됩�
 
 아래 그림은 권장되는 AEM as a Cloud Service로의 전환 과정을 개략적으로 보여줍니다.
 
-![이미지](/help/journey-migration/assets/move-aemcloud-process.png)
+![AEM as a Cloud Service에 대한 권장 전환 여정의 상위 수준 표시](/help/journey-migration/assets/move-aemcloud-process.png)
 
 마이그레이션 여정에 대한 보다 상세하고 세부적인 보기를 위해 아래 다이어그램을 참조할 수도 있습니다.
 
-![이미지](/help/journey-migration/assets/migration-process.png)
+![마이그레이션 여정에 대한 세부 정보 보기](/help/journey-migration/assets/migration-process.png)
 
 ## Cloud Acceleration Manager {#cloud-acceleration-manager}
 

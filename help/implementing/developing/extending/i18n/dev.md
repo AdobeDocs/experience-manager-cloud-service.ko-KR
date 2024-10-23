@@ -4,9 +4,9 @@ description: Java&trade; 및 JavaScript API를 사용하면 문자열을 국제�
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a0afa0d733b8493883770d03fc1a55db247aaf71
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
@@ -174,7 +174,7 @@ UI에서 모든 문자열을 국제화했는지 테스트합니다. 다루고 �
 
 다음 이미지는 AEM 홈 페이지에 대한 스텁 번역을 보여 줍니다.
 
-![chlimage_1](/help/implementing/developing/extending/assets/i18n-dev1.jpeg)
+AEM 홈 페이지에 대한 ![스텁 번역](/help/implementing/developing/extending/assets/i18n-dev1.jpeg)
 
 사용자의 언어를 설정하려면 사용자 계정에 대한 환경 설정 노드의 언어 속성을 구성합니다.
 
