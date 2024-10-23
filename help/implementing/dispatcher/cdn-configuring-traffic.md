@@ -4,10 +4,10 @@ description: 구성 파일에서 규칙 및 필터를 선언하고 Cloud Manager
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 198b3e29c3cd392db3ee42eeca22e3c8c414420f
 workflow-type: tm+mt
-source-wordcount: '1341'
-ht-degree: 2%
+source-wordcount: '1351'
+ht-degree: 1%
 
 ---
 
@@ -79,7 +79,7 @@ kind: "CDN"
 version: "1"
 metadata:
   envTypes: ["dev", "stage", "prod"]
-data:  
+data:
   requestTransformations:
     removeMarketingParams: true
     rules:
@@ -98,7 +98,7 @@ data:
         actions:
           - type: set
             reqHeader: x-some-header
-            value: {reqProperty: path}           
+            value: {reqProperty: path}
       - name: unset-header-rule
         when:
           reqProperty: path
@@ -106,7 +106,7 @@ data:
         actions:
           - type: unset
             reqHeader: x-some-header
-            
+
       - name: unset-matching-query-params-rule
         when:
           reqProperty: path
@@ -114,7 +114,7 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^removeMe_.*$
-            
+
       - name: unset-all-query-params-except-exact-two-rule
         when:
           reqProperty: path
@@ -122,7 +122,7 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^(?!leaveMe$|leaveMeToo$).*$
-            
+
       - name: multi-action
         when:
           reqProperty: path
@@ -134,17 +134,17 @@ data:
           - type: set
             reqHeader: x-header2
             value: '201'
-            
+
       - name: replace-html
         when:
           reqProperty: path
           like: /mypath
         actions:
           - type: transform
-           reqProperty: path
-           op: replace
-           match: \.html$
-           replacement: ""
+            reqProperty: path
+            op: replace
+            match: \.html$
+            replacement: ""
 ```
 
 **작업**
@@ -158,22 +158,36 @@ data:
 | **설정 해제** | reqProperty | 지정된 요청 매개 변수(&quot;path&quot; 속성만 지원됨) 또는 요청 헤더, 쿼리 매개 변수 또는 쿠키를 문자열 리터럴 또는 요청 매개 변수일 수 있는 지정된 값으로 제거합니다. |
 |         | var | 지정된 변수를 제거합니다. |
 |         | queryParammatch | 지정된 정규 표현식과 일치하는 모든 쿼리 매개 변수를 제거합니다. |
-| **변환** | op:replace, (reqProperty 또는 reqHeader 또는 queryParam 또는 reqCookie), 일치, 대체 | 요청 매개 변수(&quot;path&quot; 속성만 지원됨) 또는 요청 헤더, 쿼리 매개 변수 또는 쿠키의 일부를 새 값으로 바꿉니다. |
-|              | op:tolower, (reqProperty 또는 reqHeader 또는 queryParam 또는 reqCookie) | 요청 매개 변수(&quot;path&quot; 속성만 지원됨) 또는 요청 헤더, 쿼리 매개 변수 또는 쿠키를 소문자 값으로 설정합니다. |
+| **변환** | op:replace, (reqProperty 또는 reqHeader 또는 queryParam 또는 reqCookie 또는 var), 일치, 대체 | 요청 매개 변수(&quot;path&quot; 속성만 지원됨), 요청 헤더 또는 쿼리 매개 변수, 쿠키 또는 변수의 일부를 새 값으로 바꿉니다. |
+|              | op:tolower, (reqProperty 또는 reqHeader 또는 queryParam 또는 reqCookie 또는 var) | 요청 매개 변수(&quot;path&quot; 속성만 지원됨) 또는 요청 헤더, 쿼리 매개 변수, 쿠키 또는 변수를 해당 소문자 값으로 설정합니다. |
 
 아래 그림과 같이 작업을 바꾸면 캡처 그룹이 지원됩니다.
 
 ```
+      - name: extract-country-code-from-path
+        when:
+          reqProperty: path
+          matches: ^/([a-zA-Z]{2})(/.*|$)
+        actions:
+          - type: set
+            var: country-code
+            value:
+              reqProperty: path
+          - type: transform
+            var: country-code
+            op: replace
+            match: ^/([a-zA-Z]{2})(/.*|$)
+            replacement: \1
       - name: replace-jpg-with-jpeg
         when:
           reqProperty: path
-          like: /mypath          
+          like: /mypath
         actions:
           - type: transform
             reqProperty: path
             op: replace
             match: (.*)(\.jpg)$
-            replacement: "\1\.jpeg"          
+            replacement: "\1\.jpeg"
 ```
 
 작업은 함께 연결될 수 있습니다. 예:
@@ -201,7 +215,7 @@ kind: "CDN"
 version: "1"
 metadata:
   envTypes: ["prod", "dev"]
-data:   
+data:
   requestTransformations:
     rules:
       - name: set-variable-rule
@@ -212,7 +226,7 @@ data:
           - type: set
             var: some_var_name
             value: some_value
- 
+
   responseTransformations:
     rules:
       - name: set-response-header-while-variable
@@ -247,7 +261,7 @@ data:
           - type: set
             value: value-set-by-resp-rule
             respHeader: x-resp-header
- 
+
       - name: unset-response-header-rule
         when:
           reqProperty: path
@@ -255,7 +269,7 @@ data:
         actions:
           - type: unset
             respHeader: x-header1
- 
+
       # Example: Multi-action on response header
       - name: multi-action-response-header-rule
         when:
@@ -304,7 +318,7 @@ data:
         domain: www.example.com
         # ip: '1.1.1.1'
         # forwardHost: true
-        # forwardCookie: true 
+        # forwardCookie: true
         # forwardAuthorization: true
         # timeout: 20
 ```
