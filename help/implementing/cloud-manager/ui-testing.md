@@ -5,10 +5,10 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f504f622446f082c3662c39cc0a249b6f92a4b6e
+source-git-commit: 8703240a5b7b8ed751620f602470da45025f7b74
 workflow-type: tm+mt
-source-wordcount: '2630'
-ht-degree: 79%
+source-wordcount: '2698'
+ht-degree: 74%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 79%
 
 AEM은 사용자 정의 애플리케이션에 대한 원활한 업데이트를 보장하기 위해 통합된 [Cloud Manager 품질 게이트](/help/implementing/cloud-manager/custom-code-quality-rules.md) 제품군을 제공합니다 특히 IT 테스트 게이트는 이미 AEM API를 사용한 사용자 정의 테스트의 만들기 및 자동화를 지원합니다.
 
-UI 테스트는 언어 및 프레임워크(예: Cypress, Selenium, Java 및 Maven, JavaScript)에서 다양한 선택을 허용하도록 Docker 이미지에 패키징되어 있습니다. 또한 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을(를) 사용하여 UI 테스트 프로젝트를 쉽게 생성할 수 있습니다.
+UI 테스트는 언어 및 프레임워크(예: Cypress, Selenium, Java 및 Maven, JavaScript)에서 다양한 선택을 허용하도록 Docker 이미지에 패키징되어 있습니다. 또한 [AEM Project Archetype](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/overview)을(를) 사용하여 UI 테스트 프로젝트를 쉽게 생성할 수 있습니다.
 
 Adobe는 실시간 리로딩 및 자동 대기 기능을 제공하여 테스트 중 시간을 절약하고 생산성을 향상시키는 데 도움이 되는 Cypress의 사용을 권장합니다. 또한 Cypress는 간단하고 직관적인 구문을 제공하므로 테스트를 처음 접하는 사용자도 쉽게 배우고 사용할 수 있습니다.
 
@@ -44,17 +44,15 @@ Java로 작성된 HTTP 테스트인 사용자 정의 기능 테스트와 달리 
 
 이 섹션에서는 Cloud Manager에서 실행할 UI 테스트를 설정하는 데 필요한 단계를 설명합니다.
 
-1. 사용하려는 프로그래밍 언어를 결정합니다.
+1. 사용할 테스트 프레임워크를 결정합니다.
 
-   * Cypress의 경우 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress)에 있는 샘플 코드를 사용하십시오.
+   * Cypress(기본값)의 경우 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress)의 샘플 코드를 사용하거나 Cloud Manager 저장소의 `ui.tests` 폴더에서 자동으로 생성된 샘플 코드를 사용합니다.
 
-   * JavaScript 및 WDIO의 경우 Cloud Manager 저장소의 `ui.tests` 폴더에서 자동으로 생성된 샘플 코드를 사용합니다.
+   * 플레이라이트의 경우 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright)의 샘플 코드를 사용하십시오.
 
-     >[!NOTE]
-     >
-     >Cloud Manager가 자동으로 `ui.tests` 폴더를 생성하기 전에 사용자 저장소가 생성되었다면 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)을 사용해서 최신 버전도 생성할 수 있습니다.
+   * Webdriver.IO의 경우 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio)의 샘플 코드를 사용합니다.
 
-   * Java 및 WebDriver의 경우 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)에 있는 샘플 코드를 사용하십시오.
+   * Selenium WebDriver의 경우 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)의 샘플 코드를 사용합니다.
 
    * 다른 프로그래밍 언어의 경우, 이 문서의 [UI 테스트 빌드](#building-ui-tests) 섹션을 참조하여 테스트 프로젝트를 설정합니다.
 
@@ -270,9 +268,9 @@ Docker 이미지가 다른 프로그래밍 언어 또는 테스트 실행자로 
 
 | 유형 | 값 | 설명 |
 |----------------------|-------|-----------------------------------------------------------------------|
-| CPU | 2.0 | 테스트 실행당 예약된 CPU 시간 |
-| 메모리 | 1Gi | 테스트에 할당된 메모리 양(기비바이트 값) |
-| 시간 초과 | 30m | 테스트가 종료되기까지의 기간입니다. |
+| CPU | 2.0 | 테스트 실행당 예약된 CPU-time 양입니다. |
+| 메모리 | 1Gi | 테스트에 할당된 메모리 양, 값(GB). |
+| 시간 초과 | 30m | 테스트가 종료되는 기간입니다. |
 | 권장 기간 | 15m | 이 시간보다 오래 걸리지 않도록 테스트를 작성하는 것이 좋습니다. |
 
 >[!NOTE]
@@ -290,7 +288,7 @@ Docker 이미지가 다른 프로그래밍 언어 또는 테스트 실행자로 
 테스트가 시작되기 전에 Selenium 서버가 실행 중인지 확인하는 것은 Docker 이미지의 책임입니다. Selenium 서비스 대기는 2단계 프로세스입니다.
 
 1. `SELENIUM_BASE_URL` 환경 변수에서 Selenium 서비스의 URL을 읽습니다.
-1. Selenium API에 의해 노출된 [상태 엔드포인트](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready)에 정기적으로 폴링합니다.
+1. Selenium API에 의해 노출된 [상태 끝점](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready)에 정기적으로 폴링합니다.
 
 Selenium의 상태 엔드포인트가 긍정 응답을 보내면 테스트를 시작할 수 있습니다.
 
@@ -360,7 +358,7 @@ UI 테스트 실행 중 테스트 결과 아카이브가 만들어지면 Cloud M
 
 >[!NOTE]
 >
-> 제공된 예제에서 Chrome은 프로젝트 브라우저로 사용되고 있다고 가정합니다.
+> 제시된 예에서 Chrome이 프로젝트 브라우저로 사용되고 있다고 가정합니다.
 
 비어 있지 않은 `PROXY_HOST` 환경 변수가 제공된 경우 Cypress와 마찬가지로 테스트에서 HTTP 프록시를 사용해야 합니다.
 
@@ -432,6 +430,11 @@ if (proxyServer !== '') {
 }
 ```
 
+>[!NOTE]
+>
+> 예제 구현은 [GitHub](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-playwright/)의 극작가 샘플 테스트 모듈에서 찾을 수 있습니다.
+
+
 ## 로컬에서 UI 테스트 실행 {#run-ui-tests-locally}
 
 Cloud Manager 파이프라인에서 UI 테스트를 활성화하기 전에 [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 또는 실제 AEM as a Cloud Service 인스턴스에 대해 로컬에서 UI 테스트를 실행하는 것이 좋습니다.
@@ -494,7 +497,36 @@ Cloud Manager 파이프라인에서 UI 테스트를 활성화하기 전에 [AEM 
 >* 로그 파일은 저장소의 `target/reports` 폴더에 저장됩니다.
 >* 테스트에서 테스트를 위해 ChromeDriver의 최신 릴리스를 자동으로 다운로드하므로 최신 크롬 버전이 실행 중인지 확인해야 합니다.
 >
->자세한 내용은 [AEM Project Archetype 저장소](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md)를 참고하십시오.
+>자세한 내용은 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio)를 참고하십시오.
+
+### 극작가 테스트 샘플 {#playwright-sample}
+
+1. 셸을 열고 저장소의 `ui.tests` 폴더로 이동합니다.
+
+1. Maven을 사용하여 도커 이미지를 작성하려면 아래 명령을 실행하십시오.
+
+   ```shell
+   mvn clean package -Pui-tests-docker-build
+   ```
+
+1. 아래 명령을 실행하여 Maven을 사용해 테스트를 시작합니다.
+
+   ```shell
+   mvn verify -Pui-tests-docker-execution \
+    -DAEM_AUTHOR_URL=https://author-<program-id>-<environment-id>.adobeaemcloud.com \
+    -DAEM_AUTHOR_USERNAME=<user> \
+    -DAEM_AUTHOR_PASSWORD=<password> \
+    -DAEM_PUBLISH_URL=https://publish-<program-id>-<environment-id>.adobeaemcloud.com \
+    -DAEM_PUBLISH_USERNAME=<user> \
+    -DAEM_PUBLISH_PASSWORD=<password>
+   ```
+
+>[!NOTE]
+>
+>로그 파일은 저장소의 `target/` 폴더에 저장됩니다.
+>
+>자세한 내용은 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright)를 참고하십시오.
+
 
 ### Java Selenium WebDriver 테스트 샘플 {#java-sample}
 
