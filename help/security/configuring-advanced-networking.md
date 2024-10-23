@@ -4,10 +4,10 @@ description: AEM as a Cloud Service에 대해 VPN 또는 유연한/전용 이그
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 09cc9c65aff42c3a169791d32dfdbdbfb044aecb
-workflow-type: ht
-source-wordcount: '5676'
-ht-degree: 100%
+source-git-commit: 47d38589071bb7b51d43a2dbc65bbd169810f9ee
+workflow-type: tm+mt
+source-wordcount: '5657'
+ht-degree: 99%
 
 ---
 
@@ -561,9 +561,7 @@ VPN을 사용하면 작성자, 게시 또는 미리보기 인스턴스에서 On-
 
 ### 구성에 유용한 도메인 {#vpn-useful-domains-for-configuration}
 
-다음 다이어그램은 구성 및 개발에 유용한 도메인 및 관련 IP 집합을 시각적으로 보여 줍니다. 다이어그램 아래의 표에서는 이들 도메인과 IP에 대해 설명합니다.
-
-![VPN 도메인 구성](/help/security/assets/AdvancedNetworking.jpg)
+아래 표에서는 구성 및 개발에 유용한 도메인 및 IP 집합에 대해 설명합니다.
 
 <table>
 <thead>
