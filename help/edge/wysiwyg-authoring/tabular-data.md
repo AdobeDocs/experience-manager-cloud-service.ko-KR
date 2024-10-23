@@ -4,10 +4,10 @@ description: 스프레드시트를 사용하여 Edge Delivery Services 사이트
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
+source-git-commit: 69c8e54bde6c6047fdefbbbb1f166af690584f88
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 95%
+source-wordcount: '1014'
+ht-degree: 92%
 
 ---
 
@@ -101,6 +101,10 @@ AEM에서 스프레드시트의 데이터를 게시할 수 있으려면 프로�
      ]
    }
    ```
+
+   >[!NOTE]
+   >
+   >이 `paths.json` 항목은 표 형식 데이터를 사용하여 리디렉션을 만드는 예제를 기반으로 합니다. 만들고 있는 스프레드시트의 [유형에 맞는 경로를 업데이트하십시오.](#other)
 
 1. **변경 사항 커밋...**&#x200B;을 클릭하여 `main`에 변경 사항을 저장합니다.
 

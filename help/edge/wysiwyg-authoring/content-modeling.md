@@ -4,10 +4,10 @@ description: Edge Delivery Services 프로젝트를 사용하여 WYSIWYG 작성�
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
+source-git-commit: 058f3c24ac883315dfaa9206a8c2caa4bb005d07
 workflow-type: tm+mt
-source-wordcount: '2242'
-ht-degree: 83%
+source-wordcount: '2196'
+ht-degree: 80%
 
 ---
 
@@ -608,20 +608,7 @@ Edge Delivery Services의 콘텐츠 모델은 섹션에 포함된 기본 콘텐�
 
 AEM as a Cloud Service에서 테이블과 같은 방식의 경로별 또는 경로 패턴별로 메타데이터를 정의할 수 있습니다. Excel 또는 Google Sheets와 유사한 테이블 형식 데이터에 대한 작성 UI가 있습니다.
 
-이러한 테이블을 만들려면 페이지를 만들고 Sites 콘솔에서 메타데이터 템플릿을 사용합니다.
-
-스프레드시트의 페이지 속성에서 URL과 함께 필요한 메타데이터 필드를 정의합니다. 그런 다음 페이지 경로 또는 페이지 경로 패턴별로 메타데이터를 추가합니다.
-
-게시하기 전에 스프레드시트가 경로 매핑에도 추가되었는지 확인하십시오.
-
-```json
-{
-  "mappings": [
-    "/content/site/:/",
-    "/content/site/metadata:/metadata.json"
-  ]
-}
-```
+자세한 내용은 [스프레드시트를 사용하여 테이블 형식 데이터 관리](/help/edge/wysiwyg-authoring/tabular-data.md) 문서를 참조하십시오.
 
 ### 페이지 속성 {#page-properties}
 
@@ -631,7 +618,7 @@ AEM에서 사용할 수 있는 기본 페이지 속성 중 다수는 문서의 �
 * 문서가 마지막으로 게시된 시간 - `published-time`(ISO8601 형식)
 * `cq:tags` - `cq-tags`(태그 ID를 쉼표로 구분한 목록)
 
-작성자에게 AEM Sites 페이지 속성 대화 상자의 탭으로 제공되는 사용자 정의 페이지 메타데이터에 대한 구성 요소 모델을 정의할 수도 있습니다.
+또한, 유니버설 편집기에서 작성자가 사용할 수 있게 되는 사용자 지정 페이지 메타데이터에 대한 구성 요소 모델을 정의할 수 있습니다.
 
 이렇게 하려면 ID `page-metadata`를 사용하여 구성 요소 모델을 만듭니다.
 
