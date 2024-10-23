@@ -4,10 +4,10 @@ description: 이 페이지에서는 Cloud Acceleration Manager의 Go-Live 단계
 exl-id: 2ec31445-899d-40b8-b3eb-073cb07aff12
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 53086e2ec6d9d962a8f1cb1cc40f0601da74ac63
 workflow-type: tm+mt
-source-wordcount: '137'
-ht-degree: 2%
+source-wordcount: '144'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ Go-Live 카드는 AEM as a Cloud Service에서 유연하고 성공적인 Go-Live
 
 프로젝트 카드를 클릭하여 프로젝트 랜딩 페이지를 열고 아래 그림과 같이 **Go Live** 섹션으로 이동합니다.
 
-![이미지](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
+![라이브 진행](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
 >[!NOTE]
 >자세한 내용은 [Cloud Acceleration Manager에서 프로젝트 만들기 및 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html#create-project)를 참조하십시오.
@@ -29,8 +29,8 @@ Go Live 활동 카드를 살펴보려면 다음 섹션을 따르십시오.
 
 1. **Go Live** 카드에서 **보기** 단추를 클릭합니다.
 
-   ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
+   ![라이브 - 보기](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
 1. 컨텐츠 캐러셀은 마이그레이션 여정의 이 단계에 대한 관련 정보를 표시합니다.
 
-   ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/golive-2.png)
+   ![콘텐츠 캐러셀에 관련 정보가 표시됨](/help/journey-migration/cloud-acceleration-manager/assets/golive-2.png)

@@ -4,9 +4,9 @@ description: 이 페이지에서는 Screensas a Cloud Service 에서 플레이�
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
+source-git-commit: 53086e2ec6d9d962a8f1cb1cc40f0601da74ac63
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '595'
 ht-degree: 1%
 
 ---
@@ -35,13 +35,13 @@ ht-degree: 1%
 
 1. **구성** 탭을 클릭하고 **재설정** 옵션에서 **팩터리로 이동** 단추를 클릭합니다.
 
-   ![이미지](/help/screens-cloud/assets/player/installplayer-2.png)
+   ![다시 설정 옵션 아래의 팩터리 단추](/help/screens-cloud/assets/player/installplayer-2.png)
 
 1. 플레이어를 재설정하려면 **확인**&#x200B;을 클릭하세요.
 
 1. **구성** 탭에서 다시 **실행 모드 전환** 옵션 아래의 **클라우드 모드로 변경** 단추를 클릭합니다.
 
-   ![이미지](/help/screens-cloud/assets/player/installplayer-1.png)
+   ![실행 모드 전환 옵션 아래의 클라우드 모드로 변경](/help/screens-cloud/assets/player/installplayer-1.png)
 
 1. 클라우드 모드로 전환할 때 플레이어의 등록을 취소할지 묻는 메시지를 표시하는 **확인**&#x200B;을 클릭합니다.
 

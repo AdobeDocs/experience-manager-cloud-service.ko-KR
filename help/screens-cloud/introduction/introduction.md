@@ -4,10 +4,10 @@ description: AEM Screens as a Cloud Service에 대해 이해합니다.
 exl-id: b1cc0a63-ecd3-4d89-ac49-f384cc610cdc
 feature: Screens Deployments
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 53086e2ec6d9d962a8f1cb1cc40f0601da74ac63
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 99%
+source-wordcount: '366'
+ht-degree: 98%
 
 ---
 
@@ -31,4 +31,4 @@ Screens as a Cloud Service에는 다음의 두 가지 주요 구성 요소가 �
 
 AEM Screens as a Cloud Service 사용자는 채널에서 콘텐츠를 추가 및 관리할 수 있습니다. Screens as a Cloud Service(즉, **Screens Services Provider** 및 **Screens Content Provider**)를 위해 특별히 설계된 인터페이스의 디스플레이와 플레이어를 등록 및 관리할 수 있습니다.
 
-![이미지](/help/screens-cloud/assets/architecture-screenscloud.png)
+![아키텍처 개요](/help/screens-cloud/assets/architecture-screenscloud.png)
