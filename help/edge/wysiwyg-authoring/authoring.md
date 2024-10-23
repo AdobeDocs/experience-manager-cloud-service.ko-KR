@@ -4,10 +4,10 @@ description: Edge Delivery Services를 통한 콘텐츠 작성 방법과 Edge De
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
-source-git-commit: f0cb108c620a31c4f8a48f1d2530860ca01b06c3
+source-git-commit: 7e8446bec18eaeb4eb017dd63436a066d3a90fed
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 69%
+source-wordcount: '452'
+ht-degree: 64%
 
 ---
 
@@ -16,14 +16,14 @@ ht-degree: 69%
 
 Edge Delivery Services를 사용하여 쉽고, 빠르고, 유연하게 콘텐츠를 작성할 수 있습니다. Edge Delivery Services용 콘텐츠를 작성하기 위한 두 가지 옵션이 있습니다.
 
-* [유니버설 편집기](#universal-editor) - AEM에서 콘텐츠를 작성할 수 있는 최신 WYSIWYG(보이는 그대로) UI
+* [유니버설 편집기](#universal-editor) - AEM 내에서 콘텐츠를 작성할 수 있는 최신(WYSIWYG) UI
 * [문서 기반 작성](#document-based) - Microsoft Word 또는 Google Docs 등
 
 ## Universal Editor 작성 {#universal-editor}
 
 AEM as a Cloud Service와 함께 Edge Delivery Services를 사용할 때 이해해야 할 가장 기본적인 사실은 작성한 콘텐츠가 AEM as a Cloud Service로 유지된다는 것입니다.
 
-![Edge Delivery Services에서 WYSIWYG 작성이 작동하는 방식](assets/how-aem-edge-works.png)
+![Edge Delivery Services에서 WYSIWYG 작성의 작동 방식](assets/how-aem-edge-works.png)
 
 1. [AEM Sites 환경](/help/sites-cloud/authoring/quick-start.md)은(는) 새 페이지, 경험 조각, 콘텐츠 조각 등을 만드는 등 콘텐츠 관리에 사용됩니다.
    * 워크플로, MSM, 번역, 실행 등의 모든 AEM 기능을 사용할 수 있습니다.
@@ -40,9 +40,9 @@ AEM as a Cloud Service와 함께 Edge Delivery Services를 사용할 때 이해�
 
 블록은 Edge Delivery Services에서 제공하는 페이지의 기본 구성 요소입니다. 작성자는 Adobe에서 표준으로 제공하는 기본 블록 또는 개발자가 프로젝트에 맞게 사용자 정의한 블록 중에서 선택할 수 있습니다.
 
-Universal Editor는 블록을 드래그 앤 드롭하여 콘텐츠를 작성할 수 있는 직관적인 최신 GUI를 제공합니다.
+범용 편집기는 블록을 추가하고 정렬하여 콘텐츠를 작성할 수 있는 현대적이고 직관적인 GUI를 제공합니다.
 
-![Universal Editor에서 블록 드래그 앤 드롭](assets/blocks.png)
+![유니버설 편집기에서 블록 추가 및 정렬](assets/blocks.png)
 
 그런 다음 속성 레일에서 블록의 세부 정보를 구성할 수 있습니다.
 
@@ -50,7 +50,7 @@ Universal Editor는 블록을 드래그 앤 드롭하여 콘텐츠를 작성할 
 
 Universal Editor를 사용하여 작성하는 방법에 대한 자세한 내용은 [Universal Editor를 사용하여 콘텐츠 작성](/help/sites-cloud/authoring/universal-editor/authoring.md)을 참조하십시오.
 
-AEM 및 Edge Delivery Services을 사용하여 프로젝트를 직접 작성하는 방법에 대해 알아보려면 [Edge Delivery Services을 사용하여 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)를 참조하십시오.
+AEM 및 Edge Delivery Services을 사용하여 프로젝트를 작성하는 방법에 대해 알아보려면 [Edge Delivery Services을 사용하여 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)를 참조하십시오.
 
 ## 추가 작성 방법  {#authoring-methods}
 
