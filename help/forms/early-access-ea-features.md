@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 681121c98f61f045702a7d9c2ffad1473d7f5b2a
+source-git-commit: 2c70f7aec042c384cd37985877954b627d95879e
 workflow-type: tm+mt
 source-wordcount: '1735'
-ht-degree: 22%
+ht-degree: 30%
 
 ---
 
@@ -27,23 +27,23 @@ AEM Forms 조기 액세스 프로그램 은 다른 사람들보다 먼저 최신
 
 ## 초기 액세스 혁신
 
-### AEM Forms Generative AI (Gen AI)
+### AEM Forms AI Assistant(Gen AI)
 
-적응형 Forms을 위한 생성 AI는 양식 개발 프로세스에 완전히 새로운 수준의 권한과 편의성을 제공합니다. 지능형 AI 기능을 통해 이전보다 더 나은 양식을 더 빠르게 구축할 수 있습니다.
+적응형 양식에 생성형 AI를 사용하면 양식 개발 프로세스에 새로운 수준의 기능과 편의성이 구현됩니다. 지능형 AI 기능을 통해 이전보다 더 나은 양식을 더 빠르게 구축할 수 있습니다.
 
-![생성 AI 도우미, 적응형 Forms](/help/forms/assets/generative-ai-assistant.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3435527)
 
-오퍼의 생성 AI 기능은 다음과 같습니다.
+AEM Forms AI Assistant를 통해 제공되는 생성 AI 기능은 다음과 같습니다.
 
-* **제품 쿼리에 대한 AI 도우미**: AEM 양식 관련 질문에 대한 답변을 즉시 받아 보십시오. 당사의 AI 비서는 고유한 개인 지식 베이스로 기능하여 플랫폼 내에서 직접 통찰력 있는 지침과 추천을 제공합니다.
+* **제품 쿼리용 AI 어시스턴트**: AEM 양식 관련 질문에 대한 즉각적인 답변을 얻습니다. 당사의 AI 비서는 고유한 개인 지식 베이스로 기능하여 플랫폼 내에서 직접 통찰력 있는 지침과 추천을 제공합니다.
 
-* **적응형 양식 생성**: 생성 AI 프롬프트가 있는 완전한 양식을 쉽게 만들 수 있습니다. 생성 AI는 드롭오프를 줄이고 경험을 개인화하는 사용자 친화적인 양식을 자동으로 생성합니다.
+* **적응형 양식 생성**: 생성형 AI 프롬프트를 사용하여 완전한 양식을 손쉽게 만듭니다. 생성형 AI는 드롭오프를 줄이고 경험을 개인화하는 사용자 친화적인 양식을 자동으로 생성합니다.
 
 * **Forms용 패널 생성**: AI가 중요한 작업을 수행하도록 합니다. 특정 데이터 수집 요구 사항에 맞게 미리 빌드된 양식 패널을 생성합니다. 예를 들어 결제 정보, 고객 환경 설정 또는 여행 세부 정보를 수집하기 위한 섹션을 생성합니다. 사전 정의된 레이아웃 및 기능으로 시간을 절약하고 일관성을 보장합니다.
 
-* **양식 레이아웃 변경**: 생성 AI 프롬프트를 사용하여 다양한 레이아웃 및 디자인을 실험해 보십시오. 마법사나 탭 보기와 같은 다양한 레이아웃을 사용하여 폼에 가장 적합한 레이아웃을 선택하십시오. 생성 AI 프롬프트 를 사용하여 모바일 응답성에 대한 양식을 최적화하고 사용자가 좋아하는 시각적으로 매력적인 양식을 만들 수 있습니다.
+* **양식 레이아웃 변경**: 생성형 AI 프롬프트를 사용하여 다양한 레이아웃과 디자인을 실험합니다. 마법사 또는 탭 보기 등 다양한 레이아웃을 사용하여 양식에 가장 잘 맞는 디자인을 찾아보십시오. 생성형 AI 프롬프트를 사용하여 모바일 응답성을 위해 양식을 최적화하고 사용자의 마음에 드는 시각적으로 매력적인 양식을 만듭니다.
 
-* **제출 동작 구성**: 양식에 대한 제출 동작을 쉽게 구성하려면 생성 AI 프롬프트를 사용합니다. 사전 빌드된 제출 액션 라이브러리 또는 자체 개발 팀에서 만들고 배포한 사용자 지정 제출 액션 목록에서 선택합니다.
+* **제출 액션 구성**: 생성형 AI 프롬프트를 사용하여 양식의 제출 액션을 간편하게 구성합니다. 사전 빌드된 제출 액션 라이브러리에서 선택하거나, 자체 개발 팀에서 만들고 배포한 사용자 정의 제출 액션 목록에서 선택합니다.
 
 
 ### AEM Forms Workfront Fusion Connector
@@ -76,7 +76,7 @@ AEM Forms Workfront Fusion Connector를 사용하면 적응형 양식 제출 시
 
 ### Edge Delivery Services을 위한 WYSIWYG 작성
 
-WYSIWYG 작성은 Edge Delivery Services에 적응형 양식을 작성하고 게시할 수 있는 WYSIWYG 인터페이스(범용 편집기 및 적응형 Forms 편집기)를 제공합니다. WYSIWYG 작성은 [문서 기반 작성](/help/edge/docs/forms/overview.md#document-based-authoring-features)의 모든 기능과 다양한 추가 기능을 제공합니다.
+WYSIWYG 작성은 WYSIWYG 인터페이스(범용 편집기 및 적응형 Forms 편집기)를 제공하여 적응형 양식을 작성하고 Edge Delivery Services에 게시합니다. WYSIWYG 작성은 [문서 기반 작성](/help/edge/docs/forms/overview.md#document-based-authoring-features)의 모든 기능과 다양한 추가 기능을 제공합니다.
 
 * 복잡한 로직을 생성하기 위한 고급 규칙 편집기.
 * 사용자 정의 기능을 위한 서버측 확장성.
@@ -135,12 +135,12 @@ AEM Forms는 다양한 CAPTCHA 옵션을 제공하여 특정 요구 사항에 �
 
 이러한 CAPTCHA 솔루션을 적응형 양식과 통합할 준비가 되셨습니까? 설명서에는 [Cloudflare Turnstile](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) 및 [Google reCAPTCHA](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components)에 대한 자세한 지침이 있습니다.
 
-### Doc Assurance API
+### 문서 Assurance API
 
 
-AEM Forms Doc Assurance API는 AEM Forms Cloud Service 커뮤니케이션 API 내의 도구 세트로, PDF 문서의 보안 및 사용자 상호 작용을 관리할 수 있습니다.
+AEM Forms Doc Assurance API는 AEM Forms Cloud Service 통신 API 내의 도구 세트로, PDF 문서의 보안 및 사용자 상호 작용을 관리할 수 있습니다.
 
-다음은 Doc Assurance API로 수행할 수 있는 작업에 대한 분류입니다.
+다음은 Assurance API를 통해 수행할 수 있는 작업에 대한 분류입니다.
 
 * **문서 암호화 및 암호 해독**: 암호화로 해당 내용을 읽을 수 없도록 하여 문서를 Protect합니다. 전체 문서, 특정 컨텐츠, 메타데이터 또는 첨부 파일을 포함하여 PDF의 암호화되는 부분을 제어할 수 있습니다.
 
@@ -152,7 +152,7 @@ AEM Forms Doc Assurance API는 AEM Forms Cloud Service 커뮤니케이션 API �
 
   PDF 문서에 적절한 사용 권한이 추가되면 수신자는 Adobe Reader 내에서 활성화된 활동을 수행할 수 있습니다.
 
-전체적으로 [Doc Assurance API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/)를 사용하면 추가 제어 계층을 추가하여 문서 보안 및 규정 준수를 개선할 수 있습니다.
+전체적으로 [문서 Assurance API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/)를 사용하면 추가 제어 계층을 추가하여 문서 보안 및 규정 준수를 개선할 수 있습니다.
 
 
 ### Forms 서비스 API
