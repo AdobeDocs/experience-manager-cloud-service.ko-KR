@@ -1,24 +1,24 @@
 ---
 title: 콘텐츠 조각
-description: Adobe Experience Manager as a Cloud Service 콘텐츠 조각을 사용하면 페이지 독립적 콘텐츠를 디자인, 작성, 조정 및 사용할 수 있습니다.
+description: Adobe Experience Manager as a Cloud Service 컨텐츠 조각을 사용하면 페이지를 작성할 때도 사용할 수 있는 채널 독립적인 컨텐츠를 디자인, 작성, 조정 및 사용할 수 있습니다.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: b2b38a3163925fdc2bd4c5f78aaddb44ae716601
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 99%
+source-wordcount: '1267'
+ht-degree: 90%
 
 ---
 
 # 콘텐츠 조각 {#content-fragments}
 
-Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이지에 영향을 받지 않는 자산으로 제작되고 관리됩니다](/help/sites-cloud/administering/content-fragments/overview.md).
+Adobe Experience Manager(AEM as a Cloud Service)의 컨텐츠 조각은 [페이지에 영향을 받지 않는 자산으로 만들고 관리](/help/sites-cloud/administering/content-fragments/overview.md)되므로 변형과 함께 채널 중립적인 컨텐츠를 만들 수 있습니다(채널별로 가능). 콘텐츠 페이지를 작성할 때 이러한 조각과 해당 변형을 사용할 수 있습니다.
 
-변형(채널별로 가능)과 함께 이 조각을 사용하여 채널 중립적인 콘텐츠를 만들 수 있습니다. 그런 다음 콘텐츠 페이지를 작성할 때 이러한 조각과 해당 변형을 사용할 수 있습니다.
-
-업데이트된 JSON Exporter와 함께 구조화된 콘텐츠 조각을 사용하여 AEM 페이지 이외의 채널에 콘텐츠 서비스를 통해 AEM 콘텐츠를 제공할 수도 있습니다.
+>[!CAUTION]
+>
+>이 페이지는 [콘텐츠 조각에서 사용](/help/sites-cloud/administering/content-fragments/overview.md) 및 관련 페이지와 함께 읽어야 합니다. 기본 용어 및 개념뿐 아니라 조각을 만들고 관리하는 방법, 구조화된 콘텐츠 조각을 AEM 페이지 이외의 채널에 전달하는 방법에 대한 정보도 함께 소개합니다.
 
 >[!NOTE]
 >
@@ -40,10 +40,6 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
 >경험 조각은 콘텐츠 조각 형태로 콘텐츠를 포함할 수 있지만 반대로는 불가능합니다.
 >
 >자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)를 참조하십시오.
-
->[!CAUTION]
->
->이 페이지는 [콘텐츠 조각에서 사용](/help/sites-cloud/administering/content-fragments/overview.md) 및 관련 페이지와 함께 읽어야 합니다. 기본 용어 및 개념뿐 아니라 조각 생성과 관리를 소개합니다.
 
 콘텐츠 조각을 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 
