@@ -1,20 +1,20 @@
 ---
 title: 컨텐츠 조각을 사용한 작업(Assets - 컨텐츠 조각)
-description: Adobe Experience Manager(AEM as a Cloud Service)의 콘텐츠 조각을 통해 페이지 작성 및 Headless 게재에 이상적인 페이지 독립적인 콘텐츠를 디자인하고, 작성하고, 선별하고, 사용하는 방법에 대해 알아봅니다. 또한 MSM과 함께 사용할 수 있는 방법입니다.
+description: Adobe Experience Manager(AEM as a Cloud Service)의 콘텐츠 조각을 통해 페이지 작성 및 Headless 게재에 이상적인 콘텐츠를 디자인하고, 작성하고, 선별하고, 사용하는 방법에 대해 알아봅니다.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 7afa76f62791cf7f34c39a09c5b80c6459028e5b
 workflow-type: tm+mt
-source-wordcount: '2230'
-ht-degree: 59%
+source-wordcount: '2220'
+ht-degree: 60%
 
 ---
 
 # 콘텐츠 조각을 사용하여 작업 {#working-with-content-fragments}
 
-Adobe Experience Manager(AEM as a Cloud Service)를 사용하면 콘텐츠 조각을 사용하여 페이지 독립적인 콘텐츠를 디자인하고 만들고 선별하고 [게시할 수 있습니다](/help/sites-cloud/authoring/fragments/content-fragments.md). 이를 통해 Headless 게재에 이상적인, 여러 위치/여러 채널에서 사용할 준비가 된 콘텐츠를 준비할 수 있습니다. 또한 [다중 사이트 관리 기능을 함께 사용하여 콘텐츠를 다시 사용할 수 있습니다](#reusing-content-fragments-with-msm).
+Adobe Experience Manager(AEM as a Cloud Service)를 사용하면 콘텐츠 조각을 사용하여 페이지를 정의하지 않고 콘텐츠를 디자인하고 만들고 선별하고 [게시할 수 있습니다](/help/sites-cloud/authoring/fragments/content-fragments.md). 이를 통해 Headless 게재에 이상적인, 여러 위치/여러 채널에서 사용할 준비가 된 콘텐츠를 준비할 수 있습니다. 또한 [다중 사이트 관리 기능을 함께 사용하여 콘텐츠를 다시 사용할 수 있습니다](#reusing-content-fragments-with-msm).
 
 콘텐츠 조각에는 구조화된 콘텐츠가 포함되어 있습니다.
 
