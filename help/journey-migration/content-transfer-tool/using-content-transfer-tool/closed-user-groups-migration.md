@@ -6,9 +6,9 @@ hidefromtoc: true
 exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
 feature: Migration
 role: Admin
-source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
+source-git-commit: c721a8db801602389822222b08ca4ea1fd2293e4
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '303'
 ht-degree: 13%
 
 ---
@@ -31,8 +31,9 @@ ht-degree: 13%
 AEM as a Cloud Service에서 CUG를 사용하려면 사용자가 작성자 인스턴스에 있고 관련 CUG 그룹의 멤버여야 합니다.  이는 패키지를 사용하여 수행할 수 있으며, 또는 CUG 사용자가 IMS 사용자인 경우 이미 있을 수 있습니다.  그런 다음 AEM CUG 그룹의 구성원으로 CUG 사용자를 만들어야 합니다.
 
 Publish 인스턴스에서 CUG 동작을 활성화하려면 다음을 수행하십시오.
-1. CUG 그룹을 활성화해야 하며(CUG 그룹과 해당 구성원을 Publish 인스턴스로 복제),
-1. CUG 정책으로 보호된 페이지는 게시해야 합니다(Publish 인스턴스 및 정책 추적 가능).
+1. CUG 그룹을 활성화해야 합니다(CUG 그룹과 해당 구성원을 Publish 인스턴스로 복제),
+1. *CUG 정책으로 보호된 모든* 페이지는 전역 CUG 수를 지우려면 게시를 취소해야 합니다.
+1. 그런 다음 CUG 정책으로 보호된 페이지를 게시해야 합니다(Publish 인스턴스 및 정책 추적 가능).
 1. 모든 페이지가 게시되면 CUG로 보호된 각 페이지에 대한 기능을 확인합니다.
 
 자세한 내용은 [폐쇄된 사용자 그룹](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html)을 참조하세요.
