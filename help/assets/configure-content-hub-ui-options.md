@@ -2,16 +2,16 @@
 title: Content Hub 사용자 인터페이스 구성
 description: Content Hub 사용자 인터페이스 구성
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: b74067002a676a4d206dac170022ce0ec6d223de
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1822'
 ht-degree: 12%
 
 ---
 
 # Content Hub 사용자 인터페이스 구성 {#configure-content-hub-user-interface}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 >[!CONTEXTUALHELP]
@@ -59,6 +59,7 @@ Content Hub에서 구성 옵션에 액세스하려면 다음을 수행하십시�
 * [필터](#configure-filters-content-hub)
 
 * [에셋 세부 정보](#configure-asset-details-content-hub)
+* [자산 카드](#asset-card)
 
 * [검색](#configure-metadata-search-content-hub)
 
@@ -143,6 +144,25 @@ Content Hub을 사용하면 관리자가 에셋을 검색하는 동안 표시되
 
 ![Content Hub의 자산 속성](assets/config-ui-asset-properties.png)
 
+### 자산 카드 {#asset-card}
+
+Content Hub UI에서 에셋 수준 보기는 승인된 에셋의 **에셋 카드**&#x200B;를 표시합니다. 에셋 카드에는 사용자에 대한 주요 에셋 세부 정보가 표시됩니다. 에셋 카드에는 에셋 썸네일, 에셋 메타데이터 및 기타 실행 가능한 옵션이 있습니다. Content Hub 관리자는 저장소 수준에서 메타데이터 필드를 추가하여 메타데이터 이름과 메타데이터 값을 모든 에셋의 에셋 카드에 한 번에 표시합니다. 에셋 카드는 6개의 메타데이터 필드를 허용합니다. 메타데이터 필드에는 메타데이터 이름 및 메타데이터 속성이 포함됩니다. 에셋 카드에 메타데이터 및 해당 메타데이터 값이 표시됩니다. 관리자가 메타데이터 이름을 지정하고 올바른 메타데이터 속성에 매핑합니다. 메타데이터 속성은 에셋 카드의 메타데이터 값을 렌더링합니다. 메타데이터 속성은 에셋의 속성에 연결되므로 렌더링된 메타데이터 값이 모든 에셋 카드에 대해 달라집니다. 예를 들어 관리자는 자산 카드에 메타데이터 **라이선스가 부여된**&#x200B;을(를) 추가하고 이 **라이선스가 부여된** 메타데이터를 올바른 메타데이터 속성에 매핑합니다. Content Hub UI의 에셋 카드에 이 **라이선스가 부여된** 메타데이터와 해당 메타데이터 값(**예** 또는 **아니요**)이 표시됩니다. 이 예제에서 라이선스가 있는 Assets은 에셋 카드에 **예**&#x200B;를 표시하고 라이선스가 없는 에셋은 **아니요**&#x200B;를 표시합니다.
+
+![Content Hub의 자산 속성](/help/assets/assets/metadata-on-asset-card.png)
+
+#### 에셋 카드에서 메타데이터 추가, 편집 또는 삭제 {#add-edit-delete-metadata}
+
+에셋에 메타데이터를 추가하려면 아래 지침을 참조하십시오.
+
+1. [구성](#access-configuration-options-content-hub) 사용자 인터페이스에서 **자산 카드**&#x200B;를 클릭합니다.
+2. **메타데이터 추가**&#x200B;를 클릭합니다. **자산 카드 메타데이터 추가** 대화 상자가 표시됩니다.
+3. **레이블** 필드에 메타데이터 이름을 지정하고 **메타데이터** 필드에서 메타데이터 속성을 선택합니다. 예를 들어 메타데이터 이름을 **Licensed**(으)로 지정하고 **dc:license**&#x200B;을(를) 메타데이터 속성으로 선택합니다. 선택한 메타데이터 속성은 Content Hub UI에서 메타데이터와 함께 표시되는 값에 매핑됩니다. 이 예제에서는 **dc:license** 속성이 라이선스 ID에 매핑됩니다. 이 속성은 지정된 에셋(PDF 라이선스) 경로를 따라 해당 에셋을 찾고 이에 따라 에셋의 현재 상태에 따라 UI에서 부울 값(**예** 또는 **아니요**)을 렌더링합니다. 라이선스 PDF이 있으면 **예**&#x200B;가 표시됩니다. 그렇지 않으면 **아니요**&#x200B;가 표시됩니다. 따라서 Content Hub UI에서 라이선스 ID가 있는 자산은 **예**&#x200B;를 표시하지만 라이선스 ID가 없는 자산은 **아니요**&#x200B;를 표시합니다.
+4. **확인**&#x200B;을 클릭한 다음 **저장**을 클릭하여 자산 세부 정보 페이지에 새 속성이 표시되도록 변경 사항을 적용합니다.
+   ![자산 카드](/help/assets/assets/asset-card.png)
+
+마찬가지로 각 사용 가능한 속성 옆에 있는 ![편집](/help/assets/assets/edit-content-hub.svg)을 클릭하여 필요한 수정 작업을 수행하거나 ![삭제](/help/assets/assets/delete-content-hub.svg)을 클릭하여 기존 메타데이터 속성을 삭제합니다. 변경 사항을 적용하려면 모든 수정 작업을 수행한 후 **저장**&#x200B;을 클릭하세요.
+
+
 ### 검색 {#configure-metadata-search-content-hub}
 
 관리자는 사용자가 Content Hub에서 검색 기준을 지정할 때 검색되는 메타데이터 필드를 정의할 수 있습니다. 다음 단계를 실행합니다.
@@ -174,9 +194,9 @@ Content Hub을 사용하면 관리자가 에셋을 검색하는 동안 표시되
 
 ![Content Hub의 구성 UI 브랜딩](assets/configuration-ui-branding-updates.png)
 
-### 만료된 자산 {#expired-assets-content-hub}
+### 만료된 자산{#expired-assets-content-hub}
 
-관리자는 만료된 에셋을 Content Hub에 표시해야 하는지 여부를 제어할 수 있습니다. 만료된 에셋이 표시되면 사용자가 해당 에셋을 다운로드할 수 있는지도 정의할 수 있습니다.
+관리자는 만료된 에셋을 Content Hub에 표시해야 하는지 여부를 제어할 수 있습니다. 만료된 자산이 표시되면 사용자가 해당 자산을 다운로드할 수 있는지 여부도 정의할 수 있습니다.
 
 만료된 에셋은 기본적으로 Content Hub에 표시되지 않습니다.
 
@@ -190,11 +210,11 @@ Content Hub을 사용하면 관리자가 에셋을 검색하는 동안 표시되
 
 1. 변경 내용을 적용하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 
-   ![Content Hub에서 만료된 자산](assets/expired-assets-content-hub.png)
+   ![Content Hub의 만료된 자산](assets/expired-assets-content-hub.png)
 
 에셋의 가시성을 활성화한 후 다음 이미지에 표시된 대로 Content Hub에서 만료된 에셋을 볼 수 있습니다.
 
-![Content Hub에서 만료된 자산](assets/view-download-expired-assets.png)
+![Content Hub의 만료된 자산](assets/view-download-expired-assets.png)
 
 관리자가 다운로드를 활성화한 경우 Content Hub 사용자는 이미지에 강조 표시된 대로 다운로드할 수도 있습니다.
 

@@ -2,16 +2,16 @@
 title: Content Hub에 대한 자산 승인
 description: Assetsas a Cloud Service 에서 자산을 승인하여 Content Hub에서 사용할 수 있도록 하는 방법을 알아봅니다.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 189fc257fed1115f66559d0f9063885ae527a0fa
 workflow-type: tm+mt
 source-wordcount: '746'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
 # Content Hub에 대한 자산 승인 {#approve-assets-content-hub}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Content Hub에 대한 자산 승인](assets/content-hub-approve-assets.png)
@@ -28,7 +28,7 @@ AEM Assetsas a Cloud Service 를 사용하여 자산을 승인하여 자산 관�
 
 * 에셋에 대한 [에셋 속성](/help/assets/manage-organize-assets-view.md##manage-asset-status)에서 사용할 수 있는 **[!UICONTROL 상태]** 필드를 편집할 수 있도록 에셋 메타데이터를 편집할 수 있는 쓰기 권한입니다.
 
-## Content Hub에 대한 자산 승인 {#approve-assets-for-content-hub}
+## Content Hub에 대한 자산 승인{#approve-assets-for-content-hub}
 
 Assetsas a Cloud Service 에 `approved`(으)로 표시된 자산은 Content Hub에서 자동으로 사용할 수 있습니다.
 
