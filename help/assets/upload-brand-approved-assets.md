@@ -6,16 +6,16 @@ exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
 source-git-commit: 54300b9f27f1092a491820ab5279ee1633c6d53d
 workflow-type: tm+mt
 source-wordcount: '958'
-ht-degree: 2%
+ht-degree: 7%
 
 ---
 
-# Content Hub에 브랜드 승인 에셋 업로드 {#upload-brand-approved-assets-content-hub}
+# 브랜드 승인 자산을 Content Hub로 업로드 {#upload-brand-approved-assets-content-hub}
 
 >[!CONTEXTUALHELP]
 >id="upload_assets_content_hub"
->title="Content Hub에 브랜드 승인 에셋 업로드"
->abstract="로컬 파일 시스템에서 승인된 자산을 Content Hub에 추가하거나 OneDrive 또는 Dropbox 데이터 소스에서 자산을 가져옵니다. 모든 에셋은 폴더 구조와 관계없이 Content Hub의 최상위 수준에 표시되어 검색 기능을 향상시킵니다."
+>title="브랜드 승인 자산을 Content Hub로 업로드"
+>abstract="로컬 파일 시스템에서 승인된 자산을 Content Hub에 추가하거나 OneDrive 또는 Dropbox 데이터 소스에서 자산을 가져옵니다. 모든 자산은 폴더 구조에 관계없이 Content Hub의 최상위 수준에 표시되어 검색 기능이 향상됩니다."
 
 | [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
