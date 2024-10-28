@@ -2,9 +2,9 @@
 title: 그룹 마이그레이션
 description: AEM as a Cloud Service의 그룹 마이그레이션 개요.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 1f9526f8e8aa6a070e95827fab16431b0ee7566b
+source-git-commit: 7e7b311d425ae6cdee9eb9311c0a12af84f81096
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1447'
 ht-degree: 4%
 
 ---
@@ -46,6 +46,8 @@ AEM as a Cloud Service의 주요 변경 사항은 작성자 계층 액세스에 
 
 마이그레이션된 대부분의 그룹은 IMS에서 관리하도록 구성됩니다.  즉, IMS에서 동일한 이름의 그룹이 AEM의 그룹에 연결되고, IMS 그룹의 모든 IMS 사용자는 AEM 사용자 및 AEM의 그룹 구성원이 됩니다.  이를 통해 해당 사용자는 그룹에 대한 ACL 또는 CUG 정책에 따라 콘텐츠에 액세스할 수 있습니다.
 
+마이그레이션된 그룹은 더 이상 &quot;로컬 그룹&quot;으로 간주되지 않습니다. IMS 그룹이며, AEM과 IMS 간에 동기화할 수 있도록 IMS에서 다시 만들어야 합니다.  그룹은 다른 방법 중에서도 개별적으로 또는 대량으로 Admin Console을 통해 IMS에서 만들 수 있습니다.  Admin Console에서 개별적으로 또는 대량으로 그룹을 만드는 방법에 대한 자세한 내용은 [사용자 그룹 관리](https://helpx.adobe.com/ca/enterprise/using/user-groups.html)를 참조하십시오.
+
 이 IMS 구성에 대한 예외는 Assets 컬렉션에서 만든 그룹에 있습니다. AEM에서 컬렉션을 만들면 해당 컬렉션에 액세스하기 위한 그룹이 만들어집니다. 이러한 그룹은 클라우드 시스템으로 마이그레이션되지만 IMS에서 관리되도록 구성되지 않습니다.  이러한 그룹에 IMS 사용자를 추가하려면 Assets UI의 그룹 속성 페이지에서 개별적으로 또는 집합적으로 다른 IMS 그룹의 일부로 추가해야 합니다.
 
 
@@ -53,7 +55,7 @@ AEM as a Cloud Service의 주요 변경 사항은 작성자 계층 액세스에 
 
 CTT 버전 3.0.20 이상에는 그룹 마이그레이션을 비활성화하는 옵션이 포함되어 있습니다.  이는 다음과 같이 OSGI 콘솔에서 구성됩니다.
 
-* OSGI 구성 `(http://<server> /system/console/configMgr)` 열기
+* OSGI 구성 `(http://<server>/system/console/configMgr)` 열기
 * **콘텐츠 전송 도구 추출 서비스 구성**&#x200B;이라는 구성을 클릭합니다.
 * 그룹 마이그레이션을 비활성화하려면 **마이그레이션에 그룹 포함**&#x200B;을 선택 취소합니다.
 * **저장**&#x200B;을 클릭하여 구성이 서버에 저장되고 활성 상태인지 확인하세요.
@@ -73,7 +75,9 @@ CTT 버전 3.0.20 이상에는 그룹 마이그레이션을 비활성화하는 �
 
 이러한 사례는 이전 사례와 동시에 발생할 수 있습니다.
 
-사용자 보고서는 사용자 마이그레이션 보고서의 끝에 추가되므로 그 일부입니다(아래 [최종 요약 및 보고서](#final-summary-and-report) 참조).
+사용자 보고서는 사용자 마이그레이션 보고서의 끝에 추가되므로 그 일부입니다(아래 [최종 요약 및 보고서](#final-summary-and-report) 참조).  각 사용자에 대해 보고된 그룹을 포함하여 이 보고서의 정보는 Admin Console에서 많은 사용자를 IMS로 일괄 생성하는 데 사용할 수 있는 일괄 사용자 업로드 파일을 만드는 데 사용할 수 있습니다.  기존 IMS 사용자는 일괄 편집할 수도 있습니다.
+
+[여러 사용자 관리 참조 | Admin Console 일괄 CSV 업로드](https://helpx.adobe.com/ca/enterprise/using/bulk-upload-users.html)를 사용하십시오.
 
 ## 추가 고려 사항 {#additional-considerations}
 
