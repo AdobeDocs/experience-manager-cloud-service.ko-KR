@@ -5,9 +5,9 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
 source-git-commit: 47d38589071bb7b51d43a2dbc65bbd169810f9ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5657'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -561,7 +561,7 @@ VPN을 사용하면 작성자, 게시 또는 미리보기 인스턴스에서 On-
 
 ### 구성에 유용한 도메인 {#vpn-useful-domains-for-configuration}
 
-아래 표에서는 구성 및 개발에 유용한 도메인 및 IP 집합에 대해 설명합니다.
+아래 테이블에서는 구성 및 개발에 유용한 도메인 세트와 IPS에 대해 설명합니다.
 
 <table>
 <thead>
