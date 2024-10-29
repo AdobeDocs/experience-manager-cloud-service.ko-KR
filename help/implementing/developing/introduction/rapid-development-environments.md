@@ -4,9 +4,9 @@ description: 클라우드 환경에서 신속한 개발 반복을 위해 빠른 
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e508ba2fcb709b1925b490bdb3e1a8774068927c
+source-git-commit: 33a30ea29023f90cc6ce1c8b64ed4f9cfdd4f4a7
 workflow-type: tm+mt
-source-wordcount: '4794'
+source-wordcount: '4863'
 ht-degree: 3%
 
 ---
@@ -277,7 +277,7 @@ RDE는 한 번에 하나의 프로젝트를 지원합니다. 코드는 로컬 �
 
 다음은 몇 가지 예입니다.
 
-<u>콘텐츠 패키지 배포</u>
+#### 컨텐츠 패키지 배포 {#deploy-content-package}
 
 `aio aem:rde:install sample.demo.ui.apps.all-1.0.0-SNAPSHOT.zip`
 
@@ -300,7 +300,7 @@ RDE는 한 번에 하나의 프로젝트를 지원합니다. 코드는 로컬 �
 >
 >WKND 프로젝트에 대한 Dispatcher 구성은 위의 콘텐츠 패키지 설치를 통해 배포되지 않습니다. &quot;Apache/Dispatcher 구성 배포&quot; 단계에 따라 별도로 배포합니다.
 
-<u>OSGI 구성 배포</u>
+#### OSGI 구성 배포 {#deploy-OSGI-config}
 
 `aio aem:rde:install com.adobe.granite.demo.MyServlet.cfg.json`
 
@@ -311,7 +311,7 @@ RDE는 한 번에 하나의 프로젝트를 지원합니다. 코드는 로컬 �
 #2: deploy completed for osgi-config com.adobe.granite.demo.MyServlet.cfg.json on author,publish - done by 9E0725C05D54FE1A0B49431C@AdobeID at 2022-09-13T11:54:36.390Z
 ```
 
-<u>번들 배포</u>
+#### 번들 배포 {#deploy-bundle}
 
 번들을 배포하려면 다음을 사용합니다.
 
@@ -324,7 +324,7 @@ RDE는 한 번에 하나의 프로젝트를 지원합니다. 코드는 로컬 �
 #3: deploy staged for osgi-bundle org.apache.felix.gogo.jline-1.1.8.jar on author,publish - done by 9E0725C05D53BE1A0B49431C@AdobeID at 2022-09-14T07:54:28.882Z
 ```
 
-<u>컨텐츠 파일 배포</u>
+#### 컨텐츠 파일 배포 {#deploy-content-file}
 
 컨텐츠 파일을 배포하려면 다음을 사용합니다.
 
@@ -337,7 +337,7 @@ RDE는 한 번에 하나의 프로젝트를 지원합니다. 코드는 로컬 �
 #4: deploy completed for content-file world.txt on author,publish - done by 9E0729C05C54FE1A0B49431C@AdobeID at 2022-09-14T07:49:30.644Z
 ```
 
-<u>Apache/Dispatcher 구성 배포</u>
+#### Apache/Dispatcher 구성 배포 {#deploy-apache-config}
 
 이러한 유형의 구성을 위해서는 전체 폴더 구조가 zip 파일 형식이어야 합니다.
 
@@ -388,6 +388,26 @@ The analyser found the following errors for publish :
 ```
 
 위의 코드 샘플은 번들이 해결되지 않는 경우의 동작을 보여 줍니다. 이 경우 &quot;스테이징됨&quot;이며 다른 코드 설치를 통해 요구 사항(이 경우 누락된 가져오기)이 충족되는 경우에만 설치됩니다.
+
+#### 구성 파이프라인 관련 구성 배포(yaml 구성) {#deploy-config-pipeline}
+
+문서 [구성 파이프라인 사용](/help/operations/config-pipeline.md)에 설명된 환경별 구성(1개 이상의 yaml 파일)은 다음과 같이 배포할 수 있습니다.
+
+`aio aem:rde:install -t env-config ./my-config-folder`
+여기서 my-config-folder는 yaml 구성이 들어 있는 상위 폴더입니다.
+
+또는 구성 폴더 트리가 포함된 zip 파일을 설치할 수도 있습니다.
+
+`aio aem:rde:install -t env-config config.zip`
+
+yaml 파일의 envTypes 배열에는 아래 예와 같이 값 *rde*&#x200B;이(가) 포함되어야 합니다.
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["rde"]
+```
 
 ### 사이트 테마 및 사이트 템플릿을 기반으로 프론트엔드 코드 배포 {#deploying-themes-to-rde}
 

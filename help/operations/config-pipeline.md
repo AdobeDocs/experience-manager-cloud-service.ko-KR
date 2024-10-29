@@ -4,9 +4,9 @@ description: 구성 파이프라인을 사용하여 로그 전달 설정, 제거
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 3d0abce117cf94d7bf521e78be2ec019f216aa08
+source-git-commit: 2247fdd919057703f1c35145ba2bc9c6ec47250b
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '1000'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 Cloud Manager 구성 파이프라인은 YAML 형식으로 생성된 구성 파일을 대상 환경에 배포합니다. 로그 전달, 제거 관련 유지 관리 작업 및 여러 CDN 기능을 포함하여 AEM as a Cloud Service의 다양한 기능을 이러한 방식으로 구성할 수 있습니다.
 
-구성 파이프라인은 Cloud Manager을 통해 프로덕션(샌드박스가 아닌) 프로그램의 개발, 스테이지 및 프로덕션 환경 유형에 배포할 수 있습니다. RDE는 지원되지 않습니다.
+구성 파이프라인은 Cloud Manager을 통해 프로덕션(샌드박스가 아닌) 프로그램의 개발, 스테이지 및 프로덕션 환경 유형에 배포할 수 있습니다. [명령줄 도구](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)를 사용하여 RDE(빠른 개발 환경)에 구성 파일을 배포할 수 있습니다.
 
 이 문서의 다음 섹션에서는 구성 파이프라인 을 사용하는 방법과 그에 대한 구성을 구성하는 방법에 관한 중요한 정보에 대한 개요를 제공합니다. 구성 파이프라인에서 지원하는 기능의 전체 또는 하위 집합에서 공유되는 일반적인 개념에 대해 설명합니다.
 
@@ -53,6 +53,9 @@ Cloud Manager 구성 파이프라인은 YAML 형식으로 생성된 구성 파�
 파이프라인을 만들고 구성하는 방법에 대한 자세한 내용은 [CI/CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline) 문서를 참조하십시오.
 
 Cloud Manager에서 구성 파이프라인을 만들 때 파이프라인을 구성할 때 **전체 스택 코드**&#x200B;이 아닌 **대상 배포**&#x200B;를 선택해야 합니다.
+
+앞에서 설명한 대로 RDE에 대한 구성은 파이프라인이 아닌 [명령줄 도구](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)를 사용하여 배포됩니다.
+
 
 ## 일반 구문 {#common-syntax}
 
