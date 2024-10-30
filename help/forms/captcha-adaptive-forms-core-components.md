@@ -6,9 +6,9 @@ keywords: Google reCAPTCHA 서비스, 적응형 Forms, CAPTCHA 과제, 보트 �
 feature: Adaptive Forms, Core Components
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: bba5e5d283da616baa57b788181af73d59d86ee3
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '937'
 ht-degree: 11%
 
 ---
@@ -25,7 +25,6 @@ CAPTCHA(컴퓨터와 인간을 구분하기 위해 완전히 자동화된 공공
 AEM Formsas a Cloud Service 에서 CAPTCHA 솔루션을 지원합니다.
 
 * [Google recaptcha](#connect-your-aem-forms-environment-with-recaptcha-service-by-google)
-* [Cloudflare 턴스타일](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
 * [hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
 
 
