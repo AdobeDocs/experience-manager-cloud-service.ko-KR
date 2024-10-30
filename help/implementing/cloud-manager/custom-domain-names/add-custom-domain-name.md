@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 02f9b035320bb4b6219d5ed4273554259fc09e59
+source-git-commit: d2fb23918b04f63aab3ae859485be673034e7aec
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 15%
+source-wordcount: '999'
+ht-degree: 16%
 
 ---
 
@@ -66,11 +66,12 @@ Cloud Manager의 [도메인 설정 페이지](#adding-cdn-settings)에서 사용
    | 인증서 유형을 선택한 경우 | 설명 |
    | --- | ---  |
    | Adobe 관리 인증서 | a. 아래의 [Adobe 관리 인증서 단계](#adobe-managed-cert-steps)를 완료합니다. 단계를 완료하면 **도메인 확인** 대화 상자에서 **확인**&#x200B;을 클릭합니다.<ul><li>DNS 전파 지연으로 인해 DNS 확인을 처리하는 데 몇 시간이 걸릴 수 있습니다.</li><li>Cloud Manager은 결국 도메인 이름 소유권을 확인하고 **도메인 설정** 테이블의 상태를 업데이트합니다. 자세한 내용은 [사용자 정의 도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)을 참조하십시오.</li>![도메인 상태 확인](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b. 이제 [DV(Adobe 관리) SSL 인증서를 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert)할 준비가 되었습니다.</li></ul> |
-   | 고객 관리 인증서 | a. **확인**&#x200B;을 클릭합니다.<br>b. 이제 [고객 관리(OV/EV) SSL 인증서를 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert)할 준비가 되었습니다.<br>인증서를 추가한 후 도메인 이름이 **도메인 설정** 표에 확인된 것으로 표시됩니다. 자세한 내용은 [사용자 정의 도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)을 참조하십시오.</li></ul><br>![고객 관리 EV/OV 인증서의 도메인 확인](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
+   | 고객 관리 인증서 | a. **확인**&#x200B;을 클릭합니다.<br>b. 이제 [고객 관리(OV/EV) SSL 인증서를 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert)할 준비가 되었습니다.<br>인증서를 추가한 후 도메인 이름이 **도메인 설정** 표에 확인된 것으로 표시됩니다. 자세한 내용은 [사용자 정의 도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)을 참조하십시오.</li></ul><br>![고객 관리 EV/OV 인증서에 대한 도메인 확인](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
 
    >[!NOTE]
    >
-   >OV/EV(고객 관리) SSL 인증서와 고객 관리 CDN 공급자를 사용하는 경우 SSL 인증서 추가를 건너뛰고 준비가 되면 바로 [CDN 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)(으)로 이동할 수 있습니다.
+   >자체 고객 관리(OV/EV 또는 DV) SSL 인증서를 사용하고 고객 관리 CDN ***공급자***&#x200B;를 사용하려는 경우 SSL 인증서 추가를 건너뛰고 준비가 되면 바로 [CDN 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)(으)로 이동할 수 있습니다.
+
 
 ### Adobe 관리 인증서 단계 {#adobe-managed-cert-steps}
 
