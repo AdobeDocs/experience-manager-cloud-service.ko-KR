@@ -4,7 +4,7 @@ description: 콘텐츠 게재 데이터 흐름과 콘텐츠 게시 방법에 대
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 feature: Dispatcher
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: d58055cd0ed2451b5e8063fbb4e7269885d0787c
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 93%
@@ -34,6 +34,5 @@ ht-degree: 93%
 다음 섹션에서는 콘텐츠 게재에 대해 자세히 설명합니다.
 * [CDN 구성](/help/implementing/dispatcher/cdn.md)
 * [캐싱](/help/implementing/dispatcher/caching.md)
-
 
 작성자 서비스에서 게시 서비스로의 복제에 대한 자세한 내용은 [복제](/help/operations/replication.md)를 참조하십시오.
