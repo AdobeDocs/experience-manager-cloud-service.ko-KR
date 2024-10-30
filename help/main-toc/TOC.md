@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 04c9ab33d0f6023195cffe9929cfad172a230216
+source-git-commit: d9fec7d96bbea19549f3fcfe53606c0d59a01a53
 workflow-type: tm+mt
-source-wordcount: '5681'
+source-wordcount: '5709'
 ht-degree: 99%
 
 ---
@@ -462,6 +462,10 @@ ht-degree: 99%
    + [지원되는 파일 형식](/help/assets/file-format-support.md)
    + [자산 마이크로서비스 개요](/help/assets/asset-microservices-overview.md)
    + [ [!DNL Assets]에서의 접근성](/help/assets/accessibility.md)
+   + [Assets as a Cloud Service 극단](/help/assets/assets-ultimate-overview.md)
+   + [Assets as a Cloud Service ultimate 활성화](/help/assets/enable-assets-ultimate.md)
+   + [Assets as a Cloud Service 프라임](/help/assets/assets-prime.md)
+   + [Assets Collaborator 사용자](/help/assets/assets-collaborator-users.md)
    + 디지털 자산 관리 {#manage}
       + 마이크로 프론트엔드 자산 선택기 {#asset-selector}
          + [자산 선택기 개요](/help/assets/overview-asset-selector.md)
@@ -640,6 +644,7 @@ ht-degree: 99%
       + [Content Hub에서 자산 공유](/help/assets/share-assets-content-hub.md)
       + [Content Hub를 사용하여 자산 다운로드](/help/assets/download-assets-content-hub.md)
       + [Content Hub에서 컬렉션 관리](/help/assets/collections-content-hub.md)
+      + [Content Hub에서 라이선스가 있는 Assets 관리](/help/assets/manage-licensed-assets-on-content-hub.md)
       + [Content Hub에서 Adobe Express를 사용하여 이미지 편집](/help/assets/edit-images-content-hub.md)
       + [Content Hub의 Asset Insights](/help/assets/insights-content-hub.md)
       + [Content Hub에 대해 자주 묻는 질문](/help/assets/frequently-asked-questions-content-hub.md)
@@ -1305,7 +1310,7 @@ ht-degree: 99%
       + [Dispatcher 도구 레거시를 사용하여 확인 및 디버깅](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [AEM as a Cloud Service의 CDN](/help/implementing/dispatcher/cdn.md)
       + [CDN에서 트래픽 구성](/help/implementing/dispatcher/cdn-configuring-traffic.md)
-      + [Pipeline-free URL Redirects](/help/implementing/dispatcher/pipeline-free-url-redirects.md)
+      + [파이프라인 없는 URL 리디렉션](/help/implementing/dispatcher/pipeline-free-url-redirects.md)
       + [에지측 포함](/help/implementing/dispatcher/edge-side-includes.md)
       + [CDN 자격 증명 및 인증 구성](/help/implementing/dispatcher/cdn-credentials-authentication.md)
       + [CDN 오류 페이지 구성](/help/implementing/dispatcher/cdn-error-pages.md)
