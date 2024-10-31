@@ -4,9 +4,9 @@ description: AEM as a Cloud Service에 대해 VPN 또는 유연한/전용 이그
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 47d38589071bb7b51d43a2dbc65bbd169810f9ee
-workflow-type: ht
-source-wordcount: '5657'
+source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
+workflow-type: tm+mt
+source-wordcount: '5618'
 ht-degree: 100%
 
 ---
@@ -236,10 +236,6 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 >
 >생성되면 전용 이그레스 IP 주소의 인프라 유형을 편집할 수 없습니다. 구성 값을 변경하는 유일한 방법은 해당 값을 삭제한 다음 다시 만드는 것입니다.
 
->[!INFO]
->
->전용 이그레스 IP가 구성된 경우 Splunk 전달에서는 동적 이그레스 범위를 계속 사용합니다. 전용 이그레스 IP를 사용하도록 Splunk 전달을 구성할 수 없습니다.
-
 ### UI 구성 {#configuring-dedicated-egress-provision-ui}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
@@ -409,7 +405,6 @@ VPN을 사용하면 작성자, 게시 또는 미리보기 인스턴스에서 On-
 >다음은 VPN 인프라에 대한 제한 사항입니다.
 >
 >* 지원은 단일 VPN 연결로 제한됩니다.
->* VPN 연결에는 Splunk 전달 기능을 사용할 수 없습니다.
 >* 비공개 호스트 이름을 확인하려면 DNS Resolver가 게이트웨이 주소 공간에 나열되어야 합니다.
 
 ### UI 구성 {#configuring-vpn-ui}

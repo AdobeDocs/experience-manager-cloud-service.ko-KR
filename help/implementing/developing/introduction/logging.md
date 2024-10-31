@@ -4,10 +4,10 @@ description: AEM as a Cloud Service용 로깅을 사용하여 중앙 로깅 서�
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc103cfe43f2c492b20ee692c742189d6e454856
+source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
 workflow-type: tm+mt
-source-wordcount: '2834'
-ht-degree: 8%
+source-wordcount: '2376'
+ht-degree: 9%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 AEM as a Cloud Service은 고객이 자신의 고객 기반을 위해 고유한 경험을 만들 수 있도록 사용자 지정 코드를 포함하는 플랫폼입니다. 이러한 점을 고려하여 로깅 서비스는 로컬 개발 및 클라우드 환경, 특히 AEM as a Cloud Service의 개발 환경에서 코드 실행을 디버깅하고 이해하는 데 중요한 기능입니다.
 
-AEM as a Cloud Service 로깅 설정 및 로그 수준은 Git에서 AEM 프로젝트의 일부로 저장되고 Cloud Manager을 통해 AEM 프로젝트의 일부로 배포되는 구성 파일에서 관리됩니다. AEM as a Cloud Service에서의 로깅은 두 개의 논리 세트로 나눌 수 있습니다.
+AEM as a Cloud Service 로깅 설정 및 로그 수준은 Git에서 AEM 프로젝트의 일부로 저장되고 Cloud Manager을 통해 AEM 프로젝트의 일부로 배포되는 구성 파일에서 관리됩니다. AEM as a Cloud Service에 로그인하는 것은 세 개의 논리 세트로 나눌 수 있습니다.
 
 * AEM 로깅 - AEM 애플리케이션 수준에서 로깅을 수행합니다.
 * Publish 계층에서 웹 서버 및 Dispatcher의 로깅을 수행하는 Apache HTTPD 웹 서버/Dispatcher 로깅.
@@ -344,7 +344,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 <td>310</td>
 </tr>
 <tr>
-<td>Referer</td>
+<td>참조한 사람</td>
 <td>-</td>
 </tr>
 <tr>
@@ -510,8 +510,6 @@ Define DISP_LOG_LEVEL debug
 
 AEM as a Cloud Service은 캐시 적중률 최적화를 포함한 사용 사례에 유용한 CDN 로그에 대한 액세스를 제공합니다. CDN 로그 형식은 사용자 지정할 수 없으며 정보, 경고 또는 오류와 같은 다양한 모드로 설정하는 개념이 없습니다.
 
-CDN 로그는 새로운 Splunk 전달 지원 티켓 요청을 위해 Splunk에 전달됩니다. 이미 Splunk 전달이 활성화된 고객은 향후 CDN 로그를 추가할 수 있습니다.
-
 **예**
 
 ```
@@ -543,7 +541,7 @@ CDN 로그는 json 형식을 준수한다는 점에서 다른 로그와 구별�
 | *timestamp* | TLS 종료 후 요청이 시작된 시간입니다. |
 | *ttfb* | *Time To First Byte(첫 번째 바이트까지의 시간)*&#x200B;의 약어입니다. 요청이 시작된 후 응답 본문의 스트리밍이 시작되기까지의 시간 간격입니다. |
 | *cli_ip* | 클라이언트 IP 주소입니다. |
-| *cli_country* | 클라이언트 국가의 2글자 [ISO 3166-1](https://en.wikipedia.org/wiki/kr/ISO_3166-1) Alpha-2 국가 코드입니다. |
+| *cli_country* | 클라이언트 국가의 2글자 [ISO 3166-1](https://ko.wikipedia.org/wiki/kr/ISO_3166-1) Alpha-2 국가 코드입니다. |
 | *rid* | 요청을 고유하게 식별하는 데 사용되는 요청 헤더의 값입니다. |
 | *req_ua* | 해당 HTTP 요청을 담당하는 사용자 에이전트입니다. |
 | *host* | 요청이 의도한 대상 기관입니다. |
@@ -611,82 +609,18 @@ Dispatcher를 포함한 Apache 계층 로그는 Dispatcher이 보관된 도커 �
 * 신중하게, 그리고 절대적으로 필요한 경우에만 수행
 * 적절한 수준으로 되돌리고 가능한 한 빨리 다시 배포합니다.
 
-## Splunk 로그 {#splunk-logs}
+## 로그 전달 {#log-forwarding}
 
-Splunk 계정이 있는 고객은 고객 지원 티켓을 통해 AEM Cloud Service 로그가 적절한 색인에 전달되도록 요청할 수 있습니다. 로깅 데이터는 Cloud Manager 로그 다운로드를 통해 사용할 수 있는 것과 동일하지만 고객은 Splunk 제품에서 사용할 수 있는 쿼리 기능을 사용하는 것이 편리할 수 있습니다.
+Cloud Manager에서 로그를 다운로드할 수 있지만 일부 조직에서는 이러한 로그를 기본 로깅 대상에 전달하는 것이 좋습니다. AEM은 다음 대상에 대한 스트리밍 로그를 지원합니다.
 
-Splunk로 전송된 로그와 관련된 네트워크 대역폭은 고객의 네트워크 I/O 사용의 일부로 간주됩니다.
+* Azure Blob 저장소
+* Datadog
+* HTTPD
+* Elasticsearch(및 OpenSearch)
+* 스플렁크
 
-CDN 로그는 새 지원 티켓 요청을 위해 Splunk에 전달됩니다. 이미 Splunk 전달이 활성화된 고객은 향후 CDN 로그를 추가할 수 있습니다.
-
->[!NOTE]
->
->*특정* 로그 및 *특정* 사용자 로그를 Splunk에 전달할 수 없습니다.
->
->**모든** 로그가 Splunk로 전달됩니다. 고객이 해당 요구 사항에 따라 추가 필터링을 수행할 수 있습니다.
-
-### Splunk 전달 활성화 {#enabling-splunk-forwarding}
-
-지원 요청에서 고객은 다음을 명시해야 합니다.
-
-* Splunk HEC 끝점 주소입니다. 이 끝점에는 유효한 SSL 인증서가 있어야 하며 공개적으로 액세스할 수 있습니다.
-* Splunk 인덱스
-* Splunk 포트
-* Splunk HEC 토큰. 자세한 내용은 [HTTP 이벤트 수집기 예제](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples)를 참조하십시오.
-
-위의 속성은 각 관련 프로그램/환경 유형 조합에 대해 지정해야 합니다. 예를 들어 고객이 개발, 스테이징 및 프로덕션 환경을 원하는 경우 아래에 표시된 대로 세 가지 정보 세트를 제공해야 합니다.
+이 기능을 구성하는 방법에 대한 자세한 내용은 [로그 전달 문서](/help/implementing/developing/introduction/log-forwarding.md)를 참조하십시오.
 
 >[!NOTE]
 >
->샌드박스 프로그램 환경에 대한 Splunk 전달은 지원되지 않습니다.
-
->[!NOTE]
->
->전용 이그레스 IP 주소에서는 Splunk 전달 기능을 사용할 수 없습니다.
-
-초기 요청에 단계/프로덕션 환경 외에 활성화해야 하는 모든 개발 환경이 포함되어 있는지 확인해야 합니다. Splunk에는 SSL 인증서가 있어야 하며 공개 대상이어야 합니다.
-
-초기 요청 후 생성된 새 개발 환경이 Splunk 전달을 사용하려고 하지만 활성화되지 않은 경우 추가 요청을 수행해야 합니다.
-
-또한 개발 환경이 요청된 경우 요청에 없는 다른 개발 환경이나 샌드박스 환경에서도 Splunk 전달이 활성화되고 Splunk 인덱스를 공유할 수 있습니다. 고객은 `aem_env_id` 필드를 사용하여 이러한 환경을 구분할 수 있습니다.
-
-아래에 샘플 고객 지원 요청이 있습니다.
-
-프로그램 123, 프로덕션 환경
-
-* Splunk HEC 끝점 주소: `splunk-hec-ext.acme.com`
-* Splunk index: acme_123prod(고객은 원하는 명명 규칙을 선택할 수 있음)
-* Splunk 포트: 443
-* Splunk HEC 토큰: ABC123
-
-프로그램 123, Stage 환경
-
-* Splunk HEC 끝점 주소: `splunk-hec-ext.acme.com`
-* Splunk 색인: acme_123stage
-* Splunk 포트: 443
-* Splunk HEC 토큰: ABC123
-
-프로그램 123, 개발 Envs
-
-* Splunk HEC 끝점 주소: `splunk-hec-ext.acme.com`
-* Splunk 인덱스: acme_123dev
-* Splunk 포트: 443
-* Splunk HEC 토큰: ABC123
-
-각 환경에 대해 동일한 Splunk 인덱스를 사용하면 충분할 수 있습니다. 이 경우 `aem_env_type` 필드를 사용하여 dev, stage 및 prod 값을 기준으로 구분할 수 있습니다. 개발 환경이 여러 개인 경우 `aem_env_id` 필드도 사용할 수 있습니다. 일부 조직에서는 관련 색인이 축소된 Splunk 사용자 집합에 대한 액세스를 제한하는 경우 프로덕션 환경의 로그에 대해 별도의 색인을 선택할 수 있습니다.
-
-다음은 로그 항목의 예입니다.
-
-```
-aem_env_id: 1242
-aem_env_type: dev
-aem_program_id: 12314
-aem_tier: author
-file_path: /var/log/aem/error.log
-host: 172.34.200.12 
-level: INFO
-msg: [FelixLogListener] com.adobe.granite.repository Service [5091, [org.apache.jackrabbit.oak.api.jmx.SessionMBean]] ServiceEvent REGISTERED
-orig_time: 16.07.2020 08:35:32.346
-pod_name: aemloggingall-aem-author-77797d55d4-74zvt
-splunk_customer: true
-```
+>샌드박스 프로그램 환경에 대한 로그 전달은 지원되지 않습니다.

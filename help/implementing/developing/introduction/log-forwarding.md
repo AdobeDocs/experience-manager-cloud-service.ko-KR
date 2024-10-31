@@ -1,12 +1,12 @@
 ---
 title: AEM as a Cloud Service에 대한 로그 전달
-description: AEM as a Cloud Service의 Splunk 및 기타 로깅 공급업체에 로그를 전달하는 방법에 대해 알아봅니다
+description: AEM as a Cloud Service의 로깅 공급업체에 로그를 전달하는 방법에 대해 알아봅니다.
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: af7e94a5727608cd480b2b32cd097d347abb23d3
+source-git-commit: f6de6b6636d171b6ab08fdf432249b52c2318c45
 workflow-type: tm+mt
-source-wordcount: '1663'
+source-wordcount: '1781'
 ht-degree: 0%
 
 ---
@@ -15,17 +15,17 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 기능은 아직 릴리스되지 않았으며 일부 로깅 대상은 릴리스 시점에 사용하지 못할 수 있습니다. 그동안 [AEM as a Cloud Service에 대한 로깅](/help/implementing/developing/introduction/logging.md)에 설명된 대로 지원 티켓을 열어 로그를 **Splunk**&#x200B;에 전달할 수 있습니다.
+>이제 로그 전달이 Adobe 지원 티켓을 제출해야 했던 기존 방법과 달리 셀프서비스 방식으로 구성됩니다. Adobe으로 로그 전달이 설정된 경우 [마이그레이션](#legacy-migration) 섹션을 참조하십시오.
 
-로깅 공급업체나 로깅 제품 호스트에 대한 라이센스가 있는 고객은 AEM 로그(Apache/Dispatcher 포함) 및 CDN 로그를 관련 로깅 대상으로 전달할 수 있습니다. AEM as a Cloud Service은 다음 로깅 대상을 지원합니다.
+로깅 공급업체에 라이센스가 있거나 로깅 제품을 호스팅하는 고객은 AEM 로그(Apache/Dispatcher 포함) 및 CDN 로그를 관련 로깅 대상에 전달할 수 있습니다. AEM as a Cloud Service은 다음 로깅 대상을 지원합니다.
 
 * Azure Blob 저장소
-* DataDog
+* Datadog
 * Elasticsearch 또는 OpenSearch
 * HTTPS
 * 스플렁크
 
-로그 전달은 Git에서 구성을 선언하고 Cloud Manager 구성 파이프라인을 통해 프로덕션(샌드박스가 아닌) 프로그램의 개발, 스테이지 및 프로덕션 환경 유형에 배포하여 셀프서비스 방식으로 구성됩니다.
+로그 전달은 Git에서 구성을 선언하고 Cloud Manager 구성 파이프라인을 통해 프로덕션(샌드박스가 아닌) 프로그램의 RDE, 개발, 스테이지 및 프로덕션 환경 유형에 배포하여 셀프서비스 방식으로 구성됩니다.
 
 AEM 및 Apache/Dispatcher 로그를 전용 이그레스 IP와 같은 AEM의 고급 네트워킹 인프라를 통해 라우팅하는 옵션이 있습니다.
 
@@ -139,6 +139,8 @@ data:
 
 ![Azure Blob SAS 토큰 구성](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
 
+이전에 제대로 작동한 후 로그 전달이 중지된 경우 구성한 SAS 토큰이 만료되었을 수 있으므로 여전히 유효한지 확인하십시오.
+
 #### Azure Blob 저장소 CDN 로그 {#azureblob-cdn}
 
 전역으로 분산된 각 로깅 서버는 `aemcdn` 폴더 아래에서 몇 초마다 새 파일을 생성합니다. 파일이 만들어지면에 더 이상 추가되지 않습니다. 파일 이름 형식은 YYYY-MM-DDThh:mm:ss.sss-uniqueid.log입니다. 예: 2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log.
@@ -202,10 +204,12 @@ data:
 고려 사항:
 
 * 특정 클라우드 공급자와의 통합 없이 API 키를 만듭니다.
-* 태그 속성은 선택 사항입니다.
+* 태그 속성은 선택 사항입니다
 * AEM 로그의 경우 Datadog 소스 태그가 `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess` 또는 `aemhttpderror` 중 하나로 설정되어 있습니다.
 * CDN 로그의 경우 Datadog 소스 태그가 `aemcdn`(으)로 설정됩니다.
-* datadog 서비스 태그가 `adobeaemcloud`(으)로 설정되어 있지만 태그 섹션에서 덮어쓸 수 있습니다
+* Datadog 서비스 태그가 `adobeaemcloud`(으)로 설정되어 있지만 태그 섹션에서 덮어쓸 수 있습니다
+* 수집 파이프라인이 Datadog 태그를 사용하여 전달 로그에 대한 적절한 인덱스를 결정하는 경우 이러한 태그가 로그 전달 YAML 파일에 올바르게 구성되어 있는지 확인하십시오. 태그가 누락되면 파이프라인이 종속된 경우 성공적인 로그 수집이 방해될 수 있습니다.
+
 
 
 ### Elasticsearch 및 OpenSearch {#elastic}
@@ -307,6 +311,8 @@ data:
 * 기본적으로 포트는 443입니다. 필요한 경우 이름이 `port`인 속성으로 재정의할 수 있습니다.
 * Sourcetype 필드는 특정 로그에 따라 다음 값 중 하나를 갖습니다. *aemaccess*, *aemerror*,
   *aemrequest*, *aemdispatcher*, *aemhttpdaccess*, *aemhttpderror*, *aemcdn*
+* 필요한 IP가 허용 목록에추가된으로 제공되었지만 로그가 계속 전달되지 않는 경우 Splunk 토큰 유효성 검사를 적용하는 방화벽 규칙이 없는지 확인하십시오. Fastly는 잘못된 Splunk 토큰이 의도적으로 전송되는 초기 유효성 검사 단계를 수행합니다. 방화벽이 잘못된 Splunk 토큰으로 연결을 종료하도록 설정된 경우 유효성 검사 프로세스가 실패하여 Fastly가 로그를 Splunk 인스턴스에 전달할 수 없습니다.
+
 
 >[!NOTE]
 >
