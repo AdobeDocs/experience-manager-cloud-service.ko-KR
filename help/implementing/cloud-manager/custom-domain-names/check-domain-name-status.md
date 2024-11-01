@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
+source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 24%
+source-wordcount: '846'
+ht-degree: 22%
 
 ---
 
@@ -80,7 +80,7 @@ Cloud Manager은 OV/EV(고객 관리) SSL 인증서를 통해 도메인 소유�
 
 >[!TIP]
 >
->Fastly로 도메인 위임 문제를 해결하는 데 일반적으로 영업일 기준 1~2일이 소요됩니다. 이러한 이유로 Go-Live 날짜 이전에 도메인을 설치하는 것이 좋습니다.
+>Fastly로 도메인 위임 문제를 해결하는 데 일반적으로 영업일 기준 1~2일이 소요됩니다. 따라서 Go-Live 날짜 이전에 도메인을 설치하는 것이 좋습니다.
 
 >[!NOTE]
 >
