@@ -1,14 +1,14 @@
 ---
-title: 빌드 환경
+title: Cloud Manager의 빌드 환경
 description: Cloud Manager의 빌드 환경과 코드 빌드 및 테스트 방법에 대해 알아봅니다.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
+source-git-commit: f5f7830ac6d7f5b65203b12bb1775e64379c7d14
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 77%
+source-wordcount: '776'
+ht-degree: 58%
 
 ---
 
@@ -33,7 +33,7 @@ Cloud Manager는 특수 빌드 환경을 사용하여 코드를 빌드하고 테
    * `imagemagick`
    * `graphicsmagick`
 * [추가 시스템 패키지 설치](#installing-additional-system-packages) 섹션에 설명된 대로 빌드 시 다른 패키지를 설치할 수 있습니다.
-* 모든 빌드는 깨끗한 환경에서 수행되며, 빌드 컨테이너는 실행 사이에 어떤 상태도 유지하지 않습니다.
+* 각 빌드는 깨끗한 환경에서 실행되며, 빌드 컨테이너는 실행 사이에 상태를 유지하지 않습니다.
 * Maven은 항상 다음 세 가지 명령을 사용하여 실행됩니다.
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
@@ -46,7 +46,7 @@ Cloud Manager는 특수 빌드 환경을 사용하여 코드를 빌드하고 테
 
 ## HTTPS Maven 저장소 {#https-maven}
 
-Cloud Manager [릴리스 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md)에서는 빌드 환경에 대한 롤링 업데이트(릴리스 2023.12.0으로 완료)를 시작했으며, 여기에는 Maven 3.8.8 업데이트가 포함되어 있습니다. Maven 3.8.1에 도입된 주요 변경 사항은 잠재적인 취약점을 완화하기 위한 보안 강화 기능입니다. 구체적으로 Maven은 이제 [Maven 릴리스 정보](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)에 설명된 바와 같이 안전하지 않은 모든 `http://*` 미러를 기본적으로 비활성화합니다.
+Cloud Manager [릴리스 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md)에서는 빌드 환경에 대한 롤링 업데이트(릴리스 2023.12.0으로 완료)를 시작했으며, 여기에는 Maven 3.8.8 업데이트가 포함되어 있습니다. Maven 3.8.1에 도입된 주요 변경 사항은 잠재적인 취약점을 완화하기 위한 보안 강화 기능입니다. 구체적으로 Maven은 이제 [Maven 릴리스 정보](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)에 설명된 바와 같이 안전하지 않은 모든 `http://*` 미러를 기본적으로 비활성화합니다.
 
 이러한 보안 강화로 인해 일부 사용자는 빌드 단계에서 문제에 직면할 수 있으며, 특히 안전하지 않은 HTTP 연결을 사용하는 Maven 저장소에서 아티팩트를 다운로드할 때 이와 같은 문제가 보다 빈번하게 발생할 수 있습니다.
 
@@ -54,21 +54,19 @@ Cloud Manager [릴리스 2023.10.0](/help/implementing/cloud-manager/release-not
 
 ### 특정 Java 버전 사용 {#using-java-support}
 
-기본적으로 프로젝트는 Oracle 8 JDK를 사용하는 Cloud Manager 빌드 프로세스를 통해 빌드되지만 AEM Cloud Service 고객은 Maven을 실행하는 데 사용되는 JDK 버전을 `11`(으)로 설정하는 것이 좋습니다.
+Cloud Manager 빌드 프로세스는 Oracle 8 JDK를 사용하여 기본적으로 프로젝트를 빌드하지만 AEM Cloud Service 고객은 Maven 실행 JDK 버전을 `11`(으)로 설정해야 합니다.
 
 #### Maven JDK 버전 설정 {#alternate-maven-jdk-version}
 
-`.cloudmanager/java-version` 파일에서 전체 Maven 실행에 대한 JDK 버전을 `11`(으)로 설정하는 것이 좋습니다.
+Adobe은 전체 Maven 실행에 대한 JDK 버전을 `.cloudmanager/java-version` 파일에서 `11`(으)로 설정할 것을 권장합니다.
 
-이렇게 하려면 파이프라인에서 사용하는 git 저장소 분기에 `.cloudmanager/java-version`이라는 파일을 생성합니다. `11` 텍스트만 포함되도록 파일을 편집합니다. Cloud Manager에서도 `8` 값을 허용하지만 이 버전은 더 이상 AEM Cloud Service 프로젝트에 지원되지 않습니다. 다른 모든 값은 무시됩니다. `11`을(를) 지정하면 Oracle 11이 사용되고 `JAVA_HOME` 환경 변수가 `/usr/lib/jvm/jdk-11.0.22`(으)로 설정됩니다.
+이렇게 하려면 파이프라인에서 사용하는 git 저장소 분기에 `.cloudmanager/java-version`(이)라는 파일을 만듭니다. `11` 텍스트만 포함되도록 파일을 편집합니다. Cloud Manager에서도 `8` 값을 허용하지만 이 버전은 더 이상 AEM Cloud Service 프로젝트에 지원되지 않습니다. 다른 모든 값은 무시됩니다. `11`을(를) 지정하면 Oracle 11이 사용되고 `JAVA_HOME` 환경 변수가 `/usr/lib/jvm/jdk-11.0.22`(으)로 설정됩니다.
 
-## 환경 변수 {#environment-variables}
-
-### 표준 환경 변수 {#standard-environ-variables}
+## 환경 변수 - 표준 {#environment-variables}
 
 프로그램 또는 파이프라인에 대한 정보를 기반으로 빌드 프로세스를 변경해야 할 수도 있습니다.
 
-예를 들어 작성 시간 JavaScript 축소가 gulp와 같은 도구를 통해 이루어진다면 스테이징과 프로덕션을 위한 빌드가 아닌 개발 환경을 위한 빌드를 만들 때 다른 축소 수준을 사용하려는 욕구가 있을 수 있습니다.
+예를 들어 gulp와 같은 도구를 사용하여 빌드 시 JavaScript 축소가 발생하는 경우 다양한 환경에 대해 다른 축소 수준이 선호될 수 있습니다. 개발 빌드는 스테이징 및 프로덕션에 비해 더 가벼운 축소 수준을 사용할 수 있습니다.
 
 이를 지원하기 위해 Cloud Manager는 모든 실행 시 빌드 컨테이너에 이러한 표준 환경 변수를 추가합니다.
 
@@ -83,15 +81,15 @@ Cloud Manager [릴리스 2023.10.0](/help/implementing/cloud-manager/release-not
 | `ARTIFACTS_VERSION` | 스테이지 또는 프로덕션 파이프라인의 경우 Cloud Manager에서 생성된 통합 버전 |
 | `CM_AEM_PRODUCT_VERSION` | 릴리스 버전 |
 
-### 파이프라인 변수 {#pipeline-variables}
+## 환경 변수 - 파이프라인 {#pipeline-variables}
 
-빌드 프로세스가 git 저장소에 배치하기에 부적절하거나 동일한 분기를 사용하는 파이프라인 실행 간에 달라져야 하는 특정 구성 변수에 따라 달라질 수 있습니다.
+빌드 프로세스에는 Git 저장소에 저장해서는 안 되는 특정 구성 변수가 필요할 수 있습니다. 또한 동일한 분기를 사용하는 파이프라인 실행 간에 이러한 변수를 조정해야 할 수 있습니다.
 
-자세한 내용은 [파이프라인 변수 구성](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)도 참조하십시오
+자세한 내용은 [파이프라인 변수 구성](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)도 참조하십시오.
 
 ## 추가 시스템 패키지 설치 {#installing-additional-system-packages}
 
-완벽한 작동을 위해서는 일부 빌드에 추가 시스템 패키지를 설치해야 합니다. 예를 들어 빌드는 Python 또는 Ruby 스크립트를 호출할 수 있으며 적절한 언어 인터프리터가 설치되어 있어야 합니다. 이 작업은 APT를 호출하기 위해 `pom.xml`에서 [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/)를 호출하여 수행할 수 있습니다. 이 실행은 일반적으로 Cloud Manager 전용 Maven 프로필로 래핑해야 합니다. 이 예에서는 Python을 설치합니다.
+일부 빌드가 완전히 작동하려면 추가 시스템 패키지가 필요합니다. 예를 들어 빌드는 Python 또는 Ruby 스크립트를 호출할 수 있으며 적절한 언어 인터프리터가 설치되어 있어야 합니다. APT를 호출하기 위해 `pom.xml`에서 [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/)을(를) 호출하여 이 설치 프로세스를 관리할 수 있습니다. 이 실행은 일반적으로 Cloud Manager 전용 Maven 프로필로 래핑해야 합니다. 이 예에서는 Python을 설치합니다.
 
 ```xml
         <profile>
