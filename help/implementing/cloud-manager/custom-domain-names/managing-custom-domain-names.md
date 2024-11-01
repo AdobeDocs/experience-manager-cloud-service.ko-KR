@@ -5,10 +5,10 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: f64a551bc18b53d0026736ece2a44e48cd0cfb4c
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 18%
+source-wordcount: '791'
+ht-degree: 19%
 
 ---
 
@@ -31,11 +31,11 @@ Cloud Manager Adobe에서 다음과 같은 이유로 사용자 정의 도메인 
 
 1. **[내 프로그램](/help/implementing/cloud-manager/navigation.md#my-programs)** 콘솔에서 프로그램을 선택합니다.
 
-1. 페이지의 왼쪽 상단 모서리에서 ![아이콘 표시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)를 클릭하여 왼쪽 메뉴를 표시합니다.
+1. 페이지의 왼쪽 상단 모서리에서 ![메뉴 아이콘 표시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)를 클릭하여 왼쪽 메뉴를 표시합니다.
 
 1. **서비스** 제목에서 **CDN 구성**&#x200B;을 클릭합니다.
 
-1. **CDN 구성** 페이지에서 편집할 CDN이 있는 행 끝에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.
+1. **CDN 구성** 페이지에서 편집할 CDN이 있는 행 끝에 있는 ![메뉴 아이콘 표시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)를 클릭합니다.
 
 1. **편집**&#x200B;을 클릭합니다.
 
@@ -82,7 +82,7 @@ Cloud Manager Adobe에서 다음과 같은 이유로 사용자 정의 도메인 
    | 인증서 유형을 선택한 경우 | 설명 |
    | --- | ---  |
    | Adobe 관리 인증서 | a. [Adobe 관리 인증서 단계](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-steps)를 완료합니다. **도메인 확인** 대화 상자의 단계를 완료하면 **확인**&#x200B;을 클릭합니다.<ul><li>DNS 전파 지연으로 인해 DNS 확인을 처리하는 데 몇 시간이 걸릴 수 있습니다.</li><li>Cloud Manager은 결국 도메인 이름 소유권을 확인하고 **도메인 설정** 테이블의 상태를 업데이트합니다. 자세한 내용은 [사용자 정의 도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)을 참조하십시오.</li>![도메인 상태 확인](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b. 이제 [DV(Adobe 관리) SSL 인증서를 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert)할 준비가 되었습니다.</li></ul> |
-   | 고객 관리 인증서 | a. **확인**&#x200B;을 클릭합니다.<br>b. 이제 [고객 관리(OV/EV) SSL 인증서를 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert)할 준비가 되었습니다.<br>인증서를 추가한 후 도메인 이름이 **도메인 설정** 표에 확인된 것으로 표시됩니다. 자세한 내용은 [사용자 정의 도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)을 참조하십시오.</li></ul><br>![고객 관리 EV/OV 인증서의 도메인 확인](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
+   | 고객 관리 인증서 | a. **확인**&#x200B;을 클릭합니다.<br>b. 이제 [고객 관리(OV/EV) SSL 인증서를 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert)할 준비가 되었습니다.<br>인증서를 추가한 후 도메인 이름이 **도메인 설정** 표에 확인된 것으로 표시됩니다. 자세한 내용은 [사용자 정의 도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)을 참조하십시오.</li></ul><br>![고객 관리 EV/OV 인증서에 대한 도메인 확인](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
 
 
 ## 연결된 모든 환경에서 사용자 정의 도메인 이름 삭제 {#deleting}
