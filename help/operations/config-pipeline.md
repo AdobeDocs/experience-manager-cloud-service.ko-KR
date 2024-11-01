@@ -1,12 +1,12 @@
 ---
-title: 구성 파이프라인 사용하기
+title: \s 사용
 description: 구성 파이프라인을 사용하여 로그 전달 설정, 제거 관련 유지 관리 작업 및 다양한 CDN 구성과 같은 다양한 구성을 AEM as a Cloud Service에 배포하는 방법에 대해 알아봅니다.
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 2247fdd919057703f1c35145ba2bc9c6ec47250b
+source-git-commit: 4d8f6f37541c0d712019f21a5684ec4bd5133de3
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '997'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Cloud Manager 구성 파이프라인은 YAML 형식으로 생성된 구성 파�
 
 구성 파이프라인은 Cloud Manager을 통해 프로덕션(샌드박스가 아닌) 프로그램의 개발, 스테이지 및 프로덕션 환경 유형에 배포할 수 있습니다. [명령줄 도구](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)를 사용하여 RDE(빠른 개발 환경)에 구성 파일을 배포할 수 있습니다.
 
-이 문서의 다음 섹션에서는 구성 파이프라인 을 사용하는 방법과 그에 대한 구성을 구성하는 방법에 관한 중요한 정보에 대한 개요를 제공합니다. 구성 파이프라인에서 지원하는 기능의 전체 또는 하위 집합에서 공유되는 일반적인 개념에 대해 설명합니다.
+이 문서의 다음 섹션에서는 구성 파이프라인을 사용하는 방법 및 그에 대한 구성을 구성하는 방법에 대한 중요한 정보에 대한 개요를 제공합니다. 구성 파이프라인에서 지원하는 기능의 전체 또는 하위 집합에서 공유되는 일반적인 개념에 대해 설명합니다.
 
 * [지원되는 구성](#configurations) - 구성 파이프라인으로 배포할 수 있는 구성 목록
 * [구성 파이프라인 만들기 및 관리](#creating-and-managing) - 구성 파이프라인을 만드는 방법.
@@ -43,10 +43,10 @@ Cloud Manager 구성 파이프라인은 YAML 형식으로 생성된 구성 파�
 | [CDN 오류 페이지](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | 구성 파일에서 자체 호스팅된 정적 콘텐츠의 위치를 참조하여 AEM 원본에 연결할 수 없는 경우 기본 오류 페이지를 재정의합니다. |
 | [CDN 삭제](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | CDN을 제거하는 데 사용되는 Purge API 키 선언 |
 | [고객 관리 CDN HTTP 토큰](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | 고객 CDN에서 Adobe CDN을 호출하는 데 필요한 X-AEM-Edge-Key 값 선언 |
-| [기본 인증](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | 특정 URL [(얼리어답터만 사용 가능)을(를) 보호하는 기본 인증 대화 상자에 대한 사용자 이름과 암호를 선언합니다](/help/release-notes/release-notes-cloud/release-notes-current.md#foundation-early-adopter) |
+| [기본 인증](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | 특정 URL을 보호하는 기본 인증 대화 상자의 사용자 이름 및 암호를 선언합니다. |
 | [버전 제거 유지 관리 작업](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 컨텐츠 버전을 제거해야 하는 시점을 기준으로 규칙을 선언하여 AEM 저장소를 최적화합니다 |
 | [감사 로그 제거 유지 관리 작업](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 로그를 제거해야 하는 시점을 기준으로 규칙을 선언하여 AEM 감사 로그를 최적화하여 성능 향상 |
-| [로그 전달](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | 아직 사용할 수 없음 - 로그를 다양한 대상(예: Splunk, Datadog, HTTPS)에 전달하기 위한 엔드포인트 및 자격 증명을 구성합니다. |
+| [로그 전달](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk 등 다양한 대상에 로그를 전달하기 위한 끝점 및 자격 증명을 구성합니다. |
 
 ## 구성 파이프라인 생성 및 관리 {#creating-and-managing}
 
@@ -70,7 +70,7 @@ Cloud Manager에서 구성 파이프라인을 만들 때 파이프라인을 구�
 
 | 속성 | 설명 | 기본값 |
 |---|---|---|
-| `kind` | 로그 전달, 트래픽 필터 규칙 또는 요청 변환 등 구성 유형을 결정하는 문자열입니다 | 필수, 기본값 없음 |
+| `kind` | 로그 전달, 트래픽 필터 규칙 또는 요청 변환 등 구성 유형을 결정하는 문자열 | 필수, 기본값 없음 |
 | `version` | 스키마 버전을 나타내는 문자열 | 필수, 기본값 없음 |
 | `envTypes` | 이 문자열 배열은 `metadata` 노드의 자식 속성입니다. 가능한 값은 dev, stage, prod 또는 모든 조합이며 구성이 처리될 환경 유형을 결정합니다. 예를 들어 배열에 `dev`만 포함된 경우 구성이 스테이지 또는 프로덕션 환경에 배포되더라도 구성이 로드되지 않습니다. | 모든 환경 유형(개발, 스테이지, 프로덕션) |
 

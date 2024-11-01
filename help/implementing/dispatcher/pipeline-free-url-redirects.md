@@ -3,17 +3,14 @@ title: 파이프라인 없는 URL 리디렉션
 description: Git 또는 Cloud Manager 파이프라인에 액세스하지 않고 301 또는 302 리디렉션을 선언하는 방법을 알아봅니다.
 feature: Dispatcher
 role: Admin
-source-git-commit: 567c75f456f609dbc254753b439151d0f4100bc0
+source-git-commit: 4be9d99de2a8fbebc508419630ce254d2f9fd6dc
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
 
 # 파이프라인 없는 URL 리디렉션 {#pipeline-free-redirects}
-
->[!NOTE]
->이 기능은 아직 릴리스되지 않았습니다.
 
 여러 가지 이유로 조직에서 301(또는 302) 리디렉션을 유발하는 방식으로 URL을 다시 작성합니다. 즉, 브라우저가 다른 페이지로 리디렉션됩니다.
 
@@ -78,6 +75,6 @@ RewriteRule ^(.*)$ ${map.foo:$1|/} [L,R=301]
 
 다음 사항에 유의하십시오.
 
-* 기본적으로 다시 작성 맵을 로드할 때 전체 맵 파일이 로드될 때까지 기다리지 않고 Apache가 시작되므로 전체 맵이 로드될 때까지 일시적으로 불일치가 발생할 수 있습니다. Apache가 전체 맵 콘텐츠가 로드될 때까지 기다리도록 이 설정을 변경할 수 있지만 Apache가 시작되는 데에는 더 오랜 시간이 걸립니다. Apache가 대기하도록 이 동작을 변경하려면 `wait:true`을(를) `managed-rewrite-maps.yaml` 파일에 추가하십시오.
-* 로드 빈도를 변경하려면 `ttl: <integer>`을(를) `managed-rewrite-maps.yaml` 파일에 추가하십시오. 예 `ttl: 120`.
+* 기본적으로 다시 작성 맵을 로드할 때 전체 맵 파일이 로드될 때까지 기다리지 않고 Apache가 시작되므로 전체 맵이 로드될 때까지 일시적으로 불일치가 발생할 수 있습니다. Apache가 전체 맵 콘텐츠가 로드될 때까지 기다리도록 이 설정을 변경할 수 있지만 Apache가 시작하는 데에는 더 오랜 시간이 걸립니다. Apache가 대기하도록 이 동작을 변경하려면 `wait:true`을(를) `managed-rewrite-maps.yaml` 파일에 추가하십시오.
+* 로드 빈도를 변경하려면 `ttl: <integer>`을(를) `managed-rewrite-maps.yaml` 파일에 추가하십시오. 예: `ttl: 120`.
 * Apache에는 RewriteMap 단일 항목에 대해 1024 길이 제한이 있습니다.

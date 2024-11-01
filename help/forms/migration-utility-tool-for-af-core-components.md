@@ -8,10 +8,10 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 5d8f4d5d628b090b8bf54de0f2d9d62c02544522
+source-git-commit: c52d649e569ef427e70c85a88fa0f48fcc534e9e
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 3%
+source-wordcount: '993'
+ht-degree: 4%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 3%
 
 <span class="preview"> 이 기능은 얼리어답터 프로그램에서 사용할 수 있습니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
 
-[AEM 현대화 도구](https://opensource.adobe.com/aem-modernize-Tools/) 제품군의 일부인 Forms 변환 유틸리티를 사용하면 레거시 Foundation 구성 요소로 빌드된 적응형 Forms을 핵심 구성 요소의 현대적이고 지원되는 기능을 활용하는 양식으로 쉽게 변환할 수 있습니다.
+[AEM 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/) 제품군의 일부인 Forms 변환 유틸리티를 사용하면 레거시 Foundation 구성 요소로 빌드된 적응형 Forms을 핵심 구성 요소의 현대적이고 지원되는 기능을 활용하는 양식으로 쉽게 변환할 수 있습니다.
 
 ## AEM 현대화 도구란 무엇입니까?
 
-[AEM 현대화 도구](https://opensource.adobe.com/aem-modernize-Tools/)은(는) AEM(Adobe Experience Manager) 프로젝트를 현대화하거나 업데이트하는 프로세스를 용이하게 하기 위해 고안된 유틸리티 또는 소프트웨어 응용 프로그램 집합을 나타냅니다. 이러한 도구는 일반적으로 AEM 내의 이전 구성 요소 또는 기능을 보다 효율적이고 지원되는 최신 대체 요소로 전환하는 데 도움이 됩니다. Forms 전환 유틸리티는 AEM 현대화 도구 아래에 설치되어 적응형 Forms 기반 기초 구성 요소를 핵심 구성 요소 기반 양식으로 변환합니다.
+[AEM 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/)은(는) AEM(Adobe Experience Manager) 프로젝트를 현대화하거나 업데이트하는 프로세스를 용이하게 하기 위해 고안된 유틸리티 또는 소프트웨어 응용 프로그램 집합을 나타냅니다. 이러한 도구는 일반적으로 AEM 내의 이전 구성 요소 또는 기능을 보다 효율적이고 지원되는 최신 대체 요소로 전환하는 데 도움이 됩니다. Forms 전환 유틸리티는 AEM 현대화 도구 아래에 설치되어 적응형 Forms 기반 기초 구성 요소를 핵심 구성 요소 기반 양식으로 변환합니다.
 
 Forms 전환 유틸리티는 이전 기초 구성 요소를 기반으로 하는 적응형 Forms을 최신 핵심 구성 요소 기반 양식으로 전환합니다. 이러한 변환 프로세스를 통해 양식이 최신 표준 및 기능에 맞게 조정되므로 AEM 환경 내에서 성능, 호환성 및 유지 관리의 용이성이 잠재적으로 향상될 수 있습니다.
 
@@ -68,7 +68,7 @@ AEM 현대화 도구 설치 및 구성 방법:
 
    `java -jar aem-author-p4502.jar`
 
-1. 로컬 시스템에서 [AEM 현대화 도구](https://git.corp.adobe.com/livecycle/forms-modernizer/tree/convertForms) 리포지토리를 복제합니다.
+1. 로컬 시스템에서 [AEM 현대화 도구](/help/journey-migration/refactoring-tools/aem-modernization-tools.md) 리포지토리를 복제합니다.
 
    ```Shell
    git clone [Path of Git repository of AEM Modernize Tool]
