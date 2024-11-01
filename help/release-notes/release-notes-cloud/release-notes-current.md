@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 9b6cbe2d1a076b6c06fb3e9d55b79e124d4abc96
+source-git-commit: d98aa9d206486022d465ca19c8888088562d56c3
 workflow-type: tm+mt
-source-wordcount: '1371'
-ht-degree: 62%
+source-wordcount: '1395'
+ht-degree: 61%
 
 ---
 
@@ -56,6 +56,10 @@ Have a look at the October 2024 Release Overview video for a summary of the feat
 **변형 생성**
 
 이제 Cloud Service에서 액세스 가능한 AEM의 새로운 기능인 [변형 생성](/help/generative-ai/generate-variations.md)을 통해 GenAI를 활용할 수 있습니다. 변형 생성은 생성형 AI를 사용하여 콘텐츠 제작을 생성하고 확장하는 데 도움이 됩니다. 프로그램 참여를 고려한다면 Adobe 계정 팀에 문의하십시오.
+
+**콘텐츠 조각 배달을 위한 AEM REST OpenAPI**
+
+[콘텐츠 조각 배달용 AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)를 이제 AEM as a Cloud Service에서 사용할 수 있습니다.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

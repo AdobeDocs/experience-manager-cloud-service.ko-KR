@@ -4,10 +4,10 @@ description: AEM에는 디지털 경험 프로젝트에 사용할 수 있는 광
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: b3405279393be51b805c1129c171bb2249fd5726
+source-git-commit: 7c2d2fc7b37d70bee4764921a138af6379401064
 workflow-type: tm+mt
-source-wordcount: '608'
-ht-degree: 4%
+source-wordcount: '635'
+ht-degree: 7%
 
 ---
 
@@ -31,7 +31,7 @@ AEM(Adobe Experience Manager)은 애플리케이션 개발 및 AEM 확장을 위
 
 >[!NOTE]
 >
->Experience Manager API에 대한 최신 정보를 보려면 [Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/)도 방문하세요.
+>Experience Manager API에 대한 최신 정보는 [Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/)에서도 확인할 수 있습니다.
 
 ## 추가 프레임워크 {#additional-apis}
 
@@ -67,7 +67,7 @@ AEM은 사용자 지정 가능한 구성 요소 및 컨텐츠 전달 옵션을 �
 
 | 기능 | 설명 |
 |---|---|
-| [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) | AEM용 표준화된 웹 콘텐츠 관리(WCM) 구성 요소로 개발 시간을 단축하고 웹 사이트의 유지 관리 비용을 절감합니다. |
+| [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) | AEM용 표준화된 웹 콘텐츠 관리(WCM) 구성 요소로 개발 시간을 단축하고 웹 사이트의 유지 관리 비용을 절감합니다. |
 | [JSON 내보내기](/help/implementing/developing/components/json-exporter.md) | 모든 AEM 페이지의 콘텐츠를 JSON 데이터 모델 형식으로 전달 |
 | [구성 요소에 대해 JSON 내보내기 활성화](/help/implementing/developing/components/enabling-json-exporter.md) | 모델러 프레임워크를 기반으로 구성 요소 콘텐츠의 JSON 내보내기 생성 |
 | [Assets API](/help/assets/mac-api-assets.md) | 바이너리, 메타데이터, 렌디션 및 주석을 포함하여 에셋에서 CRUD(create-read-update-delete) 작업을 수행할 수 있습니다. AEM Assets HTTP API 를 참조하십시오 |
@@ -75,6 +75,7 @@ AEM은 사용자 지정 가능한 구성 요소 및 컨텐츠 전달 옵션을 �
 | [컨텐츠 조각 GraphQL API](/help/headless/graphql-api/content-fragments.md) | Headless CMS 구현에서 JavaScript 클라이언트에 콘텐츠 조각을 효율적으로 게재할 수 있도록 합니다 |
 | [콘텐츠 조각 Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | 지원되는 HTTP 자산 요청의 정확한 형식 |
 | [콘텐츠 조각 및 콘텐츠 조각 모델 OpenAPI](/help/headless/content-fragment-openapis.md) | 컨텐츠 조각 및 컨텐츠 조각 모델 OpenAPI |
+| [콘텐츠 조각 배달을 위한 AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md) | 컨텐츠 조각의 구조화된 컨텐츠를 JSON 형식으로 전달하도록 설계된 AEM Edge Delivery Services의 HTTP REST API입니다. |
 
 ## SPA 관련 API {#spa-apis}
 
