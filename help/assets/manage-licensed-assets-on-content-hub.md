@@ -1,9 +1,9 @@
 ---
 title: Content Hub에서 라이선스가 있는 Assets 관리
-description: 다양한 메타데이터 관리 및 편집 방법에 대해 알아봅니다
-source-git-commit: 541d5819e19c67eb3f961e41000106178bff66de
+description: 에셋 메타데이터 양식에 라이선스 필드를 추가하고, 라이선스 메타데이터 속성을 에셋 폴더에 적용하고, 라이선스가 있는 에셋을 사용할 수 있도록 승인하는 방법에 대해 알아봅니다.
+source-git-commit: 9324faf8c93620f5fccb1476eb124f5e640f193e
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '251'
 ht-degree: 1%
 
 ---
@@ -21,5 +21,7 @@ ht-degree: 1%
 1. [라이선스가 부여된 PDF 승인](/help/assets/manage-organize-assets-view.md#set-asset-status)
 1. 자산을 선택하고 **세부 정보**&#x200B;를 클릭하여 해당 속성을 확인합니다. 1단계에서 추가된 라이선스 필드에서 3단계에서 승인되었거나 이미 이전에 승인된 에셋 라이선스의 절대 경로를 정의합니다. Content Hub 절대 경로는 다음 표준 패턴을 따릅니다. `/content/dam/(The asset's folder hierarchy within the DAM repository)/(asset_name).(file_extension)`. 예: /content/dam/teamA/projects/documents/file1.pdf
    ![절대 경로](/help/assets/assets/absolute-path.png)
+1. Content Hub에서 사용할 수 있도록 자산을 승인하고 **저장**&#x200B;을 클릭합니다. 에셋을 승인하는 방법에 대한 자세한 내용은 [에셋 상태 설정](/help/assets/manage-organize-assets-view.md#set-asset-status)을 참조하십시오.
+
 
 
