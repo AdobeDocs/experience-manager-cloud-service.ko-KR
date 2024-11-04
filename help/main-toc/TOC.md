@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0e7c58b2a4d0f0704f8693c0dddae0b1a033ec83
+source-git-commit: d256fe6c551943727c7e953a6dbd6443789616c3
 workflow-type: tm+mt
-source-wordcount: '5729'
-ht-degree: 99%
+source-wordcount: '5741'
+ht-degree: 98%
 
 ---
 
@@ -746,9 +746,11 @@ ht-degree: 99%
                + [기초 규칙 편집기와 핵심 구성 요소의 규칙 편집기 간 차이점](/help/forms/rule-editor-core-components-difference-tables.md)
                + [핵심 구성 요소 기반 적응형 양식의 규칙 편집기에서 사용 가능한 연산자 및 이벤트 유형](/help/forms/rule-editor-core-components-events-operators.md)
                + [핵심 구성 요소 기반 적응형 양식의 규칙 편집기 예](/help/forms/rule-editor-core-components-usecases.md)
+               + [적응형 양식에서 비동기 함수 사용](/help/forms/using-async-funct-in-rule-editor.md)
             + 핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 소개{#create-and-use-custom-function-core-component}
                + [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 소개](/help/forms/create-and-use-custom-functions.md)
                + [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 만들기 및 사용](/help/forms/custom-function-core-component-create-function.md)
+               + [사용자 지정 함수의 범위 개체](/help/forms/custom-function-core-component-scope-function.md)
                + [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수의 예](/help/forms/custom-function-core-components-use-cases.md)
             + Forms 포털 및 해당 구성 요소 소개{#introduction-to-forms-portal}
                + [Forms 포털 구성 요소 소개](/help/forms/configure-forms-portal.md)

@@ -4,15 +4,15 @@ description: 적응형 Forms 규칙 편집기는 다양한 연산자 유형과 �
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 780c68f0c21ef94ff6a73ce991370100b1a88db9
+exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
+source-git-commit: f6e1de0c2cc2c056b3bfcea6ce5d7aaed041f6f8
 workflow-type: tm+mt
-source-wordcount: '1921'
-ht-degree: 1%
+source-wordcount: '2106'
+ht-degree: 2%
 
 ---
 
-
-# 핵심 구성 요소를 기반으로 하는 적응형 양식의 규칙 편집기에서 연산자 유형 및 이벤트
+# 핵심 구성 요소 기반 적응형 양식의 규칙 편집기에서 사용 가능한 연산자 유형 및 이벤트
 
 AEM Forms as a Cloud에서 규칙 편집기에는 복잡한 조건 및 작업을 쉽게 정의하고 실행할 수 있는 다양한 연산자 유형 및 이벤트가 포함되어 있습니다.
 
@@ -36,7 +36,7 @@ AEM Forms as a Cloud에서 규칙 편집기에는 복잡한 조건 및 작업을
 * **비어 있지 않음**
 * **선택함:** 사용자가 확인란, 드롭다운, 라디오 단추에 대한 특정 옵션을 선택하면 true를 반환합니다.
 * **초기화됨(이벤트):** 브라우저에서 양식 개체가 렌더링될 때 true를 반환합니다.
-* **Is Changed (event):** 사용자가 양식 개체에 대해 입력한 값 또는 선택한 옵션을 변경하면 true를 반환합니다.
+* **변경됨(이벤트):** 사용자 양식 개체에 대해 입력한 값이나 선택한 옵션을 변경할 때 true를 반환합니다.
 
 <!--
 * **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
@@ -46,7 +46,7 @@ AEM Forms as a Cloud에서 규칙 편집기에는 복잡한 조건 및 작업을
 
 ### 규칙 편집기에서 사용 가능한 규칙 유형 {#available-rule-types-in-rule-editor}
 
-이 규칙 편집기는 규칙을 작성하는 데 사용할 수 있는 사전 정의된 규칙 유형 집합을 제공합니다. 각 규칙 유형에 대해 자세히 살펴보겠습니다. 규칙 편집기에서 규칙을 작성하는 방법에 대한 자세한 내용은 규칙](/help/forms/rule-editor-core-components-user-interface.md#write-rules) 쓰기를 참조하세요[.
+규칙 편집기는 규칙을 작성하는 데 사용할 수 있는 미리 정의된 규칙 유형 세트를 제공합니다. 각 규칙 유형에 대해 자세히 살펴보겠습니다. 규칙 편집기에서 규칙을 작성하는 방법에 대한 자세한 내용은 [규칙 작성](/help/forms/rule-editor-core-components-user-interface.md#write-rules)을 참조하십시오.
 
 #### [!UICONTROL When] {#whenruletype}
 
@@ -75,9 +75,9 @@ _
 
 예를 들어, 목록에는 빨강, 파랑, 녹색 및 노랑의 네 가지 옵션이 있습니다. 규칙을 만드는 동안 옵션(라디오 버튼)이 자동으로 검색되어 규칙 작성자는 다음과 같이 사용할 수 있습니다.
 
-![다중 값에 옵션 표시](assets/multivaluefcdisplaysoptions.png)
+![다중 값 표시 옵션](assets/multivaluefcdisplaysoptions.png)
 
-When 규칙 작성 중에 값 지우기 작업을 트리거할 수 있습니다. 작업의 값 지우기 지정된 개체의 값을 지웁니다. When 문에서 Clear 값 를 옵션으로 사용하면 여러 필드가 있는 복잡한 조건을 만들 수 있습니다. Else 문을 추가하여 조건을 더 추가할 수 있습니다
+When 규칙 작성 중에 값 지우기 작업을 트리거할 수 있습니다. [값 지우기] 작업을 수행하면 지정된 객체의 값이 지워집니다. When 문에서 Clear Value를 옵션으로 사용하면 여러 필드가 있는 복잡한 조건을 만들 수 있습니다. Else 문을 추가하여 조건을 추가할 수 있습니다
 
 ![값 지우기](assets/clearvalueof.png)
 
@@ -107,9 +107,9 @@ _
 
 ![When](/help/forms/assets/allowed-multiple-field-when.png)에서 여러 필드 허용됨
 
-**조건 기능에서 허용된 여러 필드를 사용하는 동안 고려 사항**
+**When 조건 기능에서 허용된 여러 필드를 사용하는 동안 고려 사항**
 
-* 규칙 편집기에서 이 기능을 사용하려면 핵심 구성 요소가 버전 3.0.14 이상으로](https://github.com/adobe/aem-core-forms-components) 설정되어 있는지 [확인하십시오.
+* [코어 구성 요소가 버전 3.0.14 이상으로](https://github.com/adobe/aem-core-forms-components) 설정되어 규칙 편집기에서 이 기능을 사용할 수 있는지 확인하십시오.
 * When 조건 내의 다른 필드에 규칙이 적용되는 경우 해당 필드 중 하나만 변경되면 규칙이 균일 트리거됩니다.
 
 
@@ -130,10 +130,10 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
    * value: deps
 1. Click **[!UICONTROL Done]**. -->
 
-조건 기능에서 허용되는 여러 필드에 문제가 발생하면 다음과 같이 문제 해결 단계를 팔로우 합니다.
+조건 기능의 허용된 여러 필드에 문제가 발생하는 경우 문제 해결 단계를 다음과 같이 수행하십시오.
 
-1. 양식을 편집 모드에서 엽니다.
-1. 컨텐츠 브라우저 를 열고 적응형 양식의 안내서 컨테이너&#x200B;]**구성 요소를 선택합니다**[!UICONTROL .
+1. 편집 모드로 양식을 엽니다.
+1. 콘텐츠 브라우저를 열고 적응형 양식의 **[!UICONTROL 안내서 컨테이너]** 구성 요소를 선택합니다.
 1. 안내서 컨테이너 속성 ![안내서 속성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭합니다. 적응형 양식 컨테이너 대화 상자가 열립니다.
 1. 완료 를 클릭하고 대화 상자를 다시 저장합니다.
 
@@ -184,11 +184,11 @@ FDM(양식 데이터 모델)에서 서비스를 구성하는 방법에 대한 �
 
 ![개체 속성](assets/object_property_set_property_new.png)
 
-**[!UICONTROL 값 지우기]** 지정한 개체의 값을 지웁니다.
+**[!UICONTROL 값]** 지우기 지정된 개체의 값을 지웁니다.
 
 **[!UICONTROL 초점]** 설정 지정된 개체에 포커스 설정.
 
-**[!UICONTROL 양식 제출]** 양식을 제출합니다.
+**[!UICONTROL 양식]** 제출 양식을 제출합니다.
 
 **** 재설정 양식 또는 지정된 개체를 재설정합니다.
 
@@ -196,7 +196,7 @@ FDM(양식 데이터 모델)에서 서비스를 구성하는 방법에 대한 �
 
 **[!UICONTROL 인스턴스]** 추가: 지정된 반복 가능 패널 또는 테이블 행의 인스턴스 를 추가합니다.
 
-**[!UICONTROL 인스턴스]** 제거 지정된 반복 가능 패널 또는 테이블 행의 인스턴스를 제거합니다.
+**[!UICONTROL 인스턴스 제거]** 지정한 반복 가능한 패널 또는 테이블 행의 인스턴스를 제거합니다.
 
 **[!UICONTROL 함수 출력]** 미리 정의된 함수 또는 사용자 지정 함수를 기반으로 규칙을 정의합니다.
 
@@ -218,7 +218,7 @@ FDM(양식 데이터 모델)에서 서비스를 구성하는 방법에 대한 �
 (수학 표현식의 값) OR
 (데이터모델 서비스의 출력값)
 
-다음과 같은 경우(선택 사항):
+시기(선택 사항):
 
 (조건 1 및 조건 2 및 조건 3)은 TRUE입니다.
 
@@ -226,7 +226,7 @@ FDM(양식 데이터 모델)에서 서비스를 구성하는 방법에 대한 �
 
 ![값 웹 서비스 설정](assets/set-value-web-service.png)
 
-양식 데이터 모델 서비스를 사용한 집합 값 규칙의 예.
+양식 데이터 모델 서비스를 사용한 값 설정 규칙의 예입니다.
 
 #### [!UICONTROL 표시] {#show}
 
@@ -309,6 +309,50 @@ Enable 규칙 유형과 유사한 **[!UICONTROL Disable]** 규칙 유형을 사�
 >지정된 값이 유효성 검사 규칙을 준수하지 않으면 사용자에게 유효성 검사 메시지를 표시할 수 있습니다. 사이드바의 구성 요소 속성에서 **[!UICONTROL 스크립트 유효성 검사 메시지]** 필드에 메시지를 지정할 수 있습니다.
 
 ![스크립트 유효성 검사](assets/script-validation.png)
+
+#### [!UICONTROL 패널 간 탐색]
+
+**[!UICONTROL 패널 간 탐색]** 규칙 유형을 사용하면 양식의 서로 다른 패널 간에 포커스를 이동할 수 있습니다. 예를 들어 다음 패널로 포커스를 이동하는 표현식을 만들 수 있습니다.
+
+포커스를 다음 패널로 이동하기 위한 일반적인 **패널 간 이동** 규칙은 다음과 같이 구성됩니다.
+
+`Navigate among the panels`
+
+`Shift focus to the next item Object A;`
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+마찬가지로 포커스 이전 패널로 이동하기 위해 규칙 패널&#x200B;**간 탐색을 작성할**&#x200B;수 있습니다.
+
+`Navigate among the panels`
+
+`Shift focus to the previous item Object A;`
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+패널 [에서 탐색하는 규칙 생성 방법에 대한 자세한 내용을 보려면 여기를](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons) 클릭하십시오.
+
+#### [!UICONTROL 비동기 함수 호출]
+
+<span class="preview"> 이는 프리릴리스 기능이고 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)을 통해 액세스할 수 있습니다. </span>
+
+**[!UICONTROL 비동기 함수 호출]** 규칙 유형을 사용하면 비동기 함수를 실행할 수 있습니다. 이 함수를 사용하면 기본 실행 스레드와 독립적으로 작동하는 함수 호출을 시작할 수 있으므로 비동기 함수가 완료될 때까지 기다리지 않고 다른 프로세스가 계속 실행될 수 있습니다.
+
+비동기 함수를 실행하기 위한 일반적인 비동기 함수 호출 규칙은 다음과 같이 구성됩니다.
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+`Async Function call`
+
+`[Callback Function];`
+
+시각적 규칙 편집기에서 비동기 함수 호출을 사용하는 방법에 대한 자세한 내용은 [규칙 편집기에서 비동기 함수 호출 사용](/help/forms/using-async-funct-in-rule-editor.md) 문서를 참조하십시오.
 
 <!--
 ### [!UICONTROL Set Options Of] {#setoptionsof}

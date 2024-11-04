@@ -4,15 +4,15 @@ description: AEM Forms은 사용자가 규칙 편집기 내에서 자체 함수�
 keywords: 사용자 지정 함수를 추가하고, 사용자 지정 함수를 사용하고, 사용자 지정 함수를 만들고, 규칙 편집기에서 사용자 지정 함수를 사용합니다.
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: f5c17382052b4d116deaae564f1a2b9fdbb5ea0a
+exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
+source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 3%
+source-wordcount: '1340'
+ht-degree: 5%
 
 ---
 
-
-# 핵심 구성 요소를 기반으로 적응형 양식에 대한 사용자 지정 기능 만들기
+# 핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 만들기
 
 핵심 구성 요소를 기반으로 하는 적응형 Forms은 사용자 입력에 따라 콘텐츠 및 동작을 조정하여 다이내믹한 사용자 경험을 제공합니다. 사용자 정의 기능을 사용하면 개발자가 기능을 확장하여 양식이 특정 요구 사항을 충족할 수 있습니다. 개발자는 사용자 정의 기능을 통합하여 복잡한 논리를 구현하고 프로세스를 자동화하며 특정 비즈니스 요구 사항 또는 사용자의 기대에 부합하는 고유한 상호 작용을 도입할 수 있습니다. 양식이 다양한 조건에 적응할 뿐만 아니라 다양한 사용 사례에 대해 보다 정확하고 효과적인 솔루션을 제공하도록 보장합니다.
 이 문서에서는 핵심 구성 요소를 사용하여 적응형 Forms에 대한 사용자 지정 기능을 만드는 단계를 안내합니다.
@@ -226,7 +226,7 @@ Cloud Service 환경에 AEM as a Cloud Service [AEMaaCS 프로젝트 디렉터�
 
 >[!NOTE]
 >
-> 다음 [사용자 지정 함수](/help/forms/assets//customfunctions.zip) 폴더를 참조할 수 있습니다. [패키지 관리자](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager)를 사용하여 AEM 인스턴스에 이 폴더를 다운로드하여 설치하십시오.
+> 다음 [사용자 지정 함수](/help/forms/assets//customfunctions.zip) 폴더를 참조할 수 있습니다. [패키지 관리자](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager)를 사용하여 AEM 인스턴스에 이 폴더를 다운로드하여 설치하십시오.
 
 ## 사용자 정의 함수의 기능
 
@@ -238,49 +238,7 @@ AEM Forms의 사용자 지정 기능은 양식의 기능을 확장하고 개인�
 
 ### 사용자 지정 함수에서의 비동기 지원 {#support-of-async-functions}
 
-비동기 사용자 지정 함수는 규칙 편집기 목록에 표시되지 않습니다. 그러나 동기 함수 표현식을 사용하여 만든 사용자 지정 함수 내에서 비동기 함수를 호출할 수 있습니다.
-
-![동기화 및 비동기 사용자 지정 함수](/help/forms/assets/workflow-for-sync-async-custom-fumction.png)
-
->[!NOTE]
->
-> 사용자 지정 함수에서 비동기 함수를 호출하는 경우 비동기 함수를 사용하면 사용자 지정 함수 내에서 각 함수가 사용된 결과를 사용하여 여러 작업을 동시에 실행할 수 있다는 이점이 있습니다.
-
-사용자 지정 함수를 사용하여 비동기 함수를 호출하는 방법은 아래 코드를 참조하십시오.
-
-```javascript
-    
-    async function asyncFunction() {
-    const response = await fetch('https://petstore.swagger.io/v2/store/inventory');
-    const data = await response.json();
-    return data;
-    }
-
-    /**
-    * callAsyncFunction
-    * @name callAsyncFunction callAsyncFunction
-    */
-    function callAsyncFunction() {
-    asyncFunction()
-        .then(responseData => {
-        console.log('Response data:', responseData);
-        })
-        .catch(error => {
-         console.error('Error:', error);
-    });
-}
-```
-
-위의 예에서 asyncFunction 함수는 `asynchronous function`입니다. `https://petstore.swagger.io/v2/store/inventory`에 `GET`을(를) 요청하여 비동기 작업을 수행합니다. `await`을(를) 사용하여 응답을 기다리고 `response.json()`을(를) 사용하여 응답 본문을 JSON으로 구문 분석한 다음 데이터를 반환합니다. `callAsyncFunction` 함수는 `asyncFunction` 함수를 호출하고 콘솔에 응답 데이터를 표시하는 동기 사용자 지정 함수입니다. `callAsyncFunction` 함수는 동기식이지만 비동기 asyncFunction 함수를 호출하고 그 결과를 `then` 및 `catch` 문으로 처리합니다.
-
-작동 여부를 확인하려면 단추를 추가하고 단추 클릭 시 비동기 함수를 호출하는 단추에 대한 규칙을 만들어 보겠습니다.
-
-![비동기 함수에 대한 규칙을 만드는 중](/help/forms/assets/rule-for-async-funct.png)
-
-사용자가 `Fetch` 단추를 클릭하면 사용자 지정 함수 `callAsyncFunction`이(가) 호출되어 비동기 함수 `asyncFunction`이(가) 호출되는지 보여 주려면 아래 콘솔 창의 그림을 참조하십시오. Inspect 콘솔 창에서 버튼에 대한 응답을 봅니다. 클릭:
-
-![콘솔 창](/help/forms/assets/async-custom-funct-console.png)
-
+사용자 지정 함수를 사용하여 규칙 편집기에서 비동기 함수를 구현할 수 있습니다. 이 방법에 대한 자세한 내용은 문서 [적응형 양식에서 비동기 기능 사용](/help/forms/using-async-funct-in-rule-editor.md)을 참조하세요.
 
 ### 사용자 지정 함수에서 필드 및 전역 범위 개체 지원 {#support-field-and-global-objects}
 
@@ -289,6 +247,8 @@ AEM Forms의 사용자 지정 기능은 양식의 기능을 확장하고 개인�
 >[!NOTE]
 >
 > `param {scope} globals`은(는) 마지막 매개 변수여야 하며 적응형 양식의 규칙 편집기에 표시되지 않습니다.
+
+범위 개체에 대한 자세한 내용은 [사용자 지정 함수의 범위 개체](/help/forms/custom-function-core-component-scope-function.md) 문서를 참조하십시오.
 
 ### 사용자 지정 함수에서 캐싱 지원
 

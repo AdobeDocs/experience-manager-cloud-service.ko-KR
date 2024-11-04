@@ -1,8 +1,8 @@
 ---
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: d761370dcf6530bf557de6f8a0e7b6e111eb9e35
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 97%
+source-wordcount: '1260'
+ht-degree: 95%
 
 ---
 # 스니펫 {#snippets}
@@ -111,6 +111,12 @@ ht-degree: 97%
    <td><b>값 설정</b> 옵션은 규칙 편집기에서 API 호출을 위한 <b>서비스 출력</b> 속성을 지원하지 않습니다.
    </td>
    </tr>
+   <tr>
+   <td>패널 간 탐색</td>
+   <td> <b>다음 단추</b> 및 <b>이전 단추</b> 구성 요소가 제공되어 패널 사이를 탐색합니다. 컨테이너 내에 배치된 탐색 단추는 하위 요소에서 작동합니다</td>
+   <td> <b>패널의 탐색</b> 규칙은 규칙 편집기에서 사용할 수 있으며, 사용자가 패널의 자식 간 탐색을 위한 규칙을 만들 수 있습니다.
+   </td>
+   </tr>
    </tr>
    </tr>
   </tbody>
@@ -126,6 +132,7 @@ ht-degree: 97%
 * [다양한 규칙 편집기 에디션의 차이점](/help/forms/rule-editor-core-components-difference-tables.md)
 * [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 소개](/help/forms/create-and-use-custom-functions.md)
 * [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 만들기](/help/forms/custom-function-core-component-create-function.md)
+* [사용자 지정 함수의 범위 개체](/help/forms/custom-function-core-component-scope-function.md)
 * [사용자 정의 함수 개발 및 사용의 예](/help/forms/custom-function-core-components-use-cases.md)
 
 
@@ -162,7 +169,7 @@ ht-degree: 97%
 >
 >[범용 편집기](/help/implementing/universal-editor/introduction.md)는 IP 허용 목록과 호환되지 않습니다.
 >
->범용 편집기를 사용하려면 IP 허용 목록을 활성화하지 않아야 합니다.
+>범용 편집기를 사용하려면 IP 허용 목록을 활성화해서는 안 됩니다.
 
 ## 범용 편집기 및 IP 허용 목록 {#ue-ip-allow-lists}
 
@@ -170,7 +177,7 @@ ht-degree: 97%
 >
 >범용 편집기는 [IP 허용 목록](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)과 호환되지 않습니다.
 >
->범용 편집기를 사용하려면 IP 허용 목록을 활성화하지 않아야 합니다.
+>범용 편집기를 사용하려면 IP 허용 목록을 활성화해서는 안 됩니다.
 
 ## Dynamic Media를 사용하여 작업 {#work-with-dynamic-media}
 

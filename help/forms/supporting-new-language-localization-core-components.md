@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 role: User, Developer
-source-git-commit: d9f4e14edb1d7a84f130dea0c82734574404601c
+source-git-commit: cc2a226898f5dbe9073ba9b5a859218da664b1d7
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2124'
 ht-degree: 3%
 
 ---
@@ -90,7 +90,7 @@ AEM Forms은 다음 방법에 우선순위를 지정하여 적응형 양식에 �
    git clone https://github.com/adobe/aem-core-forms-components.git
    ```
 
-   이 명령은 저장소를 다운로드하고 컴퓨터에 `aem-core-forms-components` 폴더를 만듭니다. 이 안내서에서는 이 폴더를 `[Adaptive Forms Core Components repository]`(으)로 참조합니다.
+   이 명령은 저장소를 다운로드하고 컴퓨터에 `aem-core-forms-components` 폴더를 만듭니다. 이 안내서에서는 이 폴더를 `[Adaptive Forms Core Components repository]`(으)로 지칭합니다.
 
 
 ## 로케일 추가 {#add-localization-support-for-non-supported-locales}
@@ -228,6 +228,28 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
       ![clientlib-it-custom-locale 붙여넣기](/help/forms/assets/clientlib-it-custom-locale-paste.png)
 
+1. `languageinit.js`에서 `aemLangUrl` 경로 업데이트
+
+   1. [AEMaaCS 프로젝트 디렉터리] 내에서 다음 디렉터리로 이동합니다.
+
+      ```
+      /ui.apps/src/main/content/jcr_root/apps/<app-id>/clientlib/clientlib-it-custom-locale/js
+      ```
+
+   1. 편집기에서 `languageinit.js` 파일을 엽니다.
+   1. `languageinit.js` 파일에서 다음 줄을 찾습니다.
+
+      `const aemLangUrl = /etc.clientlibs/forms-core-components-it/clientlibs/clientlib-it-custom-locale/resources/i18n/${lang}.json;`
+
+   1. `forms-core-components-it`을(를) 위 줄의 `<app-id>`(응용 프로그램의 실제 ID)로 바꾸십시오.
+
+      `const aemLangUrl = '/etc.clientlibs/<app-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/${lang}.json';`
+
+      ![language-init-file](/help/forms/assets/language-init-name-change.png)
+
+>[!NOTE]
+>  
+> `forms-core-components-it`을(를) 프로젝트 이름 또는 `<app-id>`(으)로 바꾸지 않으면 날짜 선택기 구성 요소가 번역되지 않습니다.
 
 ### 새 로케일에 대한 파일 만들기:
 

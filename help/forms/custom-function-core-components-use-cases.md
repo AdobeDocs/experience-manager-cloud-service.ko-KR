@@ -4,15 +4,15 @@ description: 이 문서에서는 핵심 구성 요소를 기반으로 하는 적
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 580e206427f2205fa8ca537ab4988a90c988171b
+exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
+source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
 workflow-type: tm+mt
 source-wordcount: '2108'
 ht-degree: 0%
 
 ---
 
-
-# 사용자 지정 함수 개발 및 사용의 예
+# 사용자 정의 함수 개발 및 사용의 예
 
 이 문서에서는 핵심 구성 요소를 기반으로 하는 적응형 양식에 대한 사용자 지정 기능의 세부 예제를 제공하여 다양한 시나리오에서 효과적인 구현에 대한 중요한 통찰력을 제공합니다. 사용자 지정 함수는 AEM Forms의 규칙 편집기에서 사용되며 개발자가 양식 동작을 제어하는 논리를 정의 및 제어할 수 있도록 합니다.
 이 문서에서는 다양한 사용자 정의 함수 구현에 대해 알아보고, 특정 요구 사항을 충족하도록 양식을 사용자 정의하고 전반적인 기능을 향상시키는 데 이 함수를 사용할 수 있는 방법을 소개합니다.
@@ -264,7 +264,7 @@ ht-degree: 0%
 
 사용자 지정 함수에서 필드 및 전역 개체를 사용하여 `Contact Us` 양식을 사용하여 제출 처리기를 재정의하는 방법을 알아보겠습니다.
 
-[create-custom-function](/help/forms/custom-function-core-component-create-function.md) 섹션에 설명된 대로 다음 코드 행을 추가하여 양식 제출을 위한 제출 또는 실패 메시지를 사용자 지정하고 양식 제출 메시지를 모달 상자에 표시합니다.
+[create-custom-functionas](/help/forms/custom-function-core-component-create-function.md) 섹션에서 설명한 대로 다음 코드 행을 추가하여 양식 제출을 위한 제출 또는 실패 메시지를 사용자 지정하고 양식 제출 메시지를 모달 상자에 표시합니다.
 
 ```javascript
 /**
