@@ -4,9 +4,9 @@ description: 유니버설 편집기의 주요 사용 사례와 그 사용 방법
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: 2db4428065b3611a43137514864573947d32fff7
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '858'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 개요 {#overview}
 
-범용 편집기는 Adobe Experience Manager Sites의 일부인 다목적 비주얼 편집기입니다. 이를 통해 작성자는 Headless 또는 Headful 경험에 대한 WYSIWYG(보이는 그대로) 편집을 수행할 수 있습니다.
+범용 편집기는 Adobe Experience Manager Sites의 일부인 다목적 비주얼 편집기입니다. 이를 통해 작성자는 Headless 또는 Headful 경험에 대한 보이는 항목(WYSIWYG) 편집을 수행할 수 있습니다.
 
 이 문서에서는 이 두 가지 사용 사례에 대해 자세히 설명하고 프로젝트에 유니버설 편집기를 구현할 수 있도록 자세히 알아볼 수 있는 방법을 보여 줍니다.
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 사용 사례인 경우 바로 다음 단계로, AEM의 범용 편집기를 시작하고 실행하는 방법에 대한 전체 개요는 다음 문서를 참조하십시오.
 
-1. [Edge Delivery Services으로 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) - AEM의 첫 번째 범용 편집기 프로젝트 시작
+1. [Edge Delivery Services을 사용한 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) - AEM의 첫 번째 범용 편집기 프로젝트 시작
 1. [유니버설 편집기에서 사용하기 위해 계측된 블록 만들기](/help/edge/wysiwyg-authoring/create-block.md) - 유니버설 편집기에서 콘텐츠를 편집할 수 있도록 블록을 계측하는 방법에 대해 알아봅니다.
 1. [Edge Delivery Services 프로젝트를 사용하여 WYSIWYG 작성을 위한 콘텐츠 모델링](/help/edge/wysiwyg-authoring/content-modeling.md) - 유니버설 편집기에서 사용할 콘텐츠를 효과적으로 모델링하기 위해 블록을 구성하는 방법에 대한 자세한 내용을 알아봅니다.
 
@@ -63,19 +63,22 @@ ht-degree: 0%
 유니버설 편집기는 다음과 같은 방식으로 작동합니다.
 
 1. 개발자는 범용 편집기를 사용하도록 앱 또는 페이지를 계측합니다. 이 계기는 편집기에 편집 가능한 콘텐츠 및 이를 유지하는 방법을 알려 줍니다.
-   * WYSIWYG 작성의 경우, 상용구 템플릿을 사용하여 만든 페이지는 자동으로 계측됩니다.
+   * [Edge Delivery Services을 사용한 WYSIWYG 작성에 대한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 설명서를 따르는 경우 페이지가 자동으로 계측됩니다.
    * Headless 작성의 경우 앱을 쉽게 계측할 수 있습니다.
 1. 콘텐츠 작성자는 범용 편집기를 로드하고, 이 편집용 페이지를 로드합니다. 계측된 콘텐츠이므로 편집할 수 있는 콘텐츠와 표시 및 지속되는 방법에 대해 알 수 있습니다.
 1. 콘텐츠 작성자는 직관적인 WYSIWYG 인터페이스에서 페이지 콘텐츠를 편집하고 바로 편집합니다.
-1. 범용 편집기는 변경 사항을 AEM에 자동으로 다시 유지합니다.
+1. 범용 편집기는 변경 사항을 데이터 소스에 자동으로 되돌려 줍니다.
 
 유니버설 편집기의 아키텍처에 대해 자세히 알아보려면 문서 [유니버설 편집기 아키텍처](/help/implementing/universal-editor/architecture.md)를 참조하십시오.
 
 ## 유니버설 편집기 개념 {#concepts}
 
-범용 편집기에서 페이지 또는 앱을 편집할 수 있으려면 적절하게 계측되어야 합니다. 계측된 후에는 프로젝트 요구 사항에 맞게 조정할 수 있습니다.
+범용 편집기에서 페이지 또는 앱을 편집할 수 있으려면 적절하게 계측되어야 합니다.
 
 * [특성 및 형식](/help/implementing/universal-editor/attributes-types.md) - 범용 편집기에서 앱 또는 페이지를 편집할 수 있으려면 적절하게 계측되어야 합니다. 여기에는 편집자가 앱의 콘텐츠를 편집할 수 있도록 적절한 메타데이터가 포함됩니다.
-* [모델 정의, 필드 및 구성 요소 유형](/help/implementing/universal-editor/field-types.md) - 구성 요소를 편집할 수 있는 메타데이터가 있으면 편집기의 속성 레일에서 조작할 수 있는 필드 및 구성 요소 유형을 정의합니다. 모델을 만든 다음 구성 요소에서 해당 모델에 연결하면 됩니다.
-* [범용 편집기 작성 환경 사용자 지정](/help/implementing/universal-editor/customizing.md) - 앱이나 페이지가 완전히 계측되면 사용 가능한 구성 요소를 필터링하거나 편집기의 기능을 확장하여 범용 편집기 환경을 추가로 조정할 수 있습니다.
-* [유니버설 편집기 이벤트](/help/implementing/universal-editor/events.md) - 콘텐츠 및 UI 변경 시 유니버설에서 전송하는 표준 이벤트에 반응하여 앱을 추가로 사용자 지정할 수 있습니다.
+* [모델 정의, 필드 및 구성 요소 유형](/help/implementing/universal-editor/field-types.md) - 구성 요소를 편집할 수 있는 메타데이터가 있으면 편집기의 속성 레일에서 조작할 수 있는 필드 및 구성 요소 유형을 정의합니다.
+* [유니버설 편집기 이벤트](/help/implementing/universal-editor/events.md) - 유니버설 편집기에서 콘텐츠 또는 UI 인터랙션에 내보내는 이벤트를 사용하여 앱의 편집 환경을 개선하여 앱을 추가로 사용자 지정할 수 있습니다.
+
+범용 편집기는 프로젝트 요구 사항에 맞게 조정할 수도 있습니다.
+
+* [유니버설 편집기 작성 환경 사용자 지정](/help/implementing/universal-editor/customizing.md) - 편집기의 다양한 측면을 필터링하거나 편집기 기능을 확장하여 유니버설 편집기 환경을 조정할 수 있습니다.

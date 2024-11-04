@@ -1,20 +1,20 @@
 ---
-title: Universal Editor를 사용하는 로컬 AEM 개발
-description: Universal Editor가 개발 목적으로 로컬 AEM 인스턴스 편집을 지원하는 방법에 대해 알아봅니다.
+title: 자체 범용 편집기 서비스 실행
+description: 로컬 개발을 위해 또는 자체 인프라의 일부로 고유한 범용 편집기 서비스를 실행하는 방법에 대해 알아봅니다.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 5a6795056090908652a72730939024e974a9a697
+source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 50%
+source-wordcount: '894'
+ht-degree: 42%
 
 ---
 
 
-# Universal Editor를 사용하는 로컬 AEM 개발 {#local-dev-ue}
+# 자체 범용 편집기 서비스 실행 {#local-ue-service}
 
-Universal Editor가 개발 목적으로 로컬 AEM 인스턴스 편집을 지원하는 방법에 대해 알아봅니다.
+로컬 개발을 위해 또는 자체 인프라의 일부로 고유한 범용 편집기 서비스를 실행하는 방법에 대해 알아봅니다.
 
 ## 개요 {#overview}
 
@@ -24,11 +24,20 @@ Universal Editor Service는 Universal Editor와 백엔드 시스템을 바인딩
 * 로컬 AEM SDK를 사용하여 개발하는 동안 인터넷에서 Adobe의 Universal Editor 서비스에 액세스할 수 없습니다.
 * AEM 인스턴스에 IP 제한이 있고 Adobe의 Universal Editor 서비스가 정의된 IP 범위에 있지 않은 경우 직접 호스팅할 수 있습니다.
 
-이 문서에서는 범용 편집기에서 사용할 AEM을 AEM에서 로컬로 개발할 수 있도록 범용 편집기 서비스의 로컬 복사본과 함께 HTTPS로 를 실행하는 방법을 설명합니다.
+## 사용 사례 {#use-cases}
+
+범용 편집기 서비스의 사용자 복사본은 다음 경우에 유용합니다.
+
+* 범용 편집기에서 사용할 AEM을 로컬로 개발합니다.
+* Adobe의 Universal Editor Service와 관계없이 자체 인프라의 일부로 Universal Editor Service를 실행하십시오.
+
+두 사용 사례가 모두 지원됩니다. 이 문서에서는 범용 편집기 서비스의 로컬 복사본과 함께 HTTPS로 AEM을 실행하는 방법을 설명합니다.
+
+자체 인프라의 일부로 범용 편집기 서비스를 실행하려는 경우 로컬 개발 예와 동일한 단계를 따릅니다.
 
 ## HTTPS에서 실행할 AEM 설정 {#aem-https}
 
-HTTPS로 보호되는 외부 프레임 내에서 비보안 HTTP 프레임을 로드할 수 없습니다. Universal Editor Service가 HTTPS에서 실행되므로 AEM 또는 다른 원격 페이지도 HTTPS에서 실행되어야 합니다.
+HTTPS로 보호되는 외부 프레임 내에서는 비보안 HTTP 프레임을 로드할 수 없습니다. Universal Editor Service가 HTTPS에서 실행되므로 AEM 또는 다른 원격 페이지도 HTTPS에서 실행되어야 합니다.
 
 이를 위해 HTTPS에서 실행하려면 AEM을 설정해야 합니다. 개발 목적으로 자체 서명된 인증서를 사용할 수 있습니다.
 

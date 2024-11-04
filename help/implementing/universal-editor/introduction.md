@@ -4,10 +4,10 @@ description: 유니버설 편집기를 통해 Headless 및 Headful 환경에서 
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a77bff14b34f1e433ba185b19f0f0d61728b7c7a
+source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
 workflow-type: tm+mt
-source-wordcount: '973'
-ht-degree: 54%
+source-wordcount: '1001'
+ht-degree: 52%
 
 ---
 
@@ -86,11 +86,13 @@ Universal Editor를 사용하기 위한 구현 요구 사항은 매우 간단하
 
 유니버설 편집기를 살펴보고 고유한 프로젝트에서 이를 구현하는 데 있어 다음 제한 사항을 염두에 두십시오.
 
-* 25개 이하의 AEM 리소스(콘텐츠 조각, 페이지, 경험 조각, Assets 등) 는 단일 페이지에서 계측을 참조해야 합니다.
+* 단일 페이지에서 계측으로 참조되는 AEM 리소스는 25개(콘텐츠 조각, 페이지, 경험 조각, Assets 등)를 초과할 수 없습니다.
 * AEM as a Cloud Service은 유일하게 지원되는 AEM 백엔드입니다.
+   * [AEM 6.5에 대한 지원은 조기 채택 프로그램의 일부로 제공됩니다.](/help/release-notes/universal-editor/current.md#early-adoption)
 * AEM as a Cloud Service 릴리스 `2023.8.13099` 이상이 필요합니다.
 * 컨텐츠 작성자는 고유한 개별 Experience Cloud 계정이 있어야 합니다.
-* Chrome 및 Edge이 지원되는 브라우저입니다
+* AEM의 일부로 범용 편집기는 AEM과 동일한 데스크탑 브라우저를 지원합니다.
+   * 이러한 브라우저의 모바일 버전은 지원되지 않습니다.
 
 {{ue-ip-allow-lists}}
 
