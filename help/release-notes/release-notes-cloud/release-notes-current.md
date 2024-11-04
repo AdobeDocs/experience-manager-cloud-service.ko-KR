@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 08b23f093e4362a9885919a3e3d87bdcaada8876
+source-git-commit: 9bb2d38feea2690bc112611d429dad22e7bcd278
 workflow-type: tm+mt
-source-wordcount: '1480'
-ht-degree: 58%
+source-wordcount: '1514'
+ht-degree: 55%
 
 ---
 
@@ -83,19 +83,19 @@ Dynamic Media 계정에서 AI 생성 캡션 지원에 얼리 액세스하려면 
 
 **사용 허가된 자산에 대한 디지털 권한 관리**
 
-이제 조직은 Content Hub의 사용자에게 라이선스가 부여된 자산에 대한 DRM을 활용하여 라이선스 준수를 높이고, 라이선스 약관이 있는 자산을 공유할 위험을 최소화할 수 있으므로, 라이선스 자산을 다운로드하기 전에 사용자가 라이선스 약관을 검토하고 동의해야 합니다.
+이제 조직은 Content Hub의 사용자에게 라이선스가 부여된 자산에 대한 DRM을 활용하여 라이선스 준수를 높이고, 라이선스 약관이 있는 자산을 공유할 위험을 최소화할 수 있으므로, 라이선스 자산을 다운로드하기 전에 사용자가 라이선스 약관을 검토하고 동의해야 합니다. 자세한 내용은 [Content Hub에서 라이선스 자산 관리](/help/assets/manage-licensed-assets-on-content-hub.md)를 참조하십시오.
 
 ![download-multiple-license](/help/assets/assets/download-multiple-license.png)
 
 **자산 카드 메타데이터 구성**
 
-이제 Content Hub을 사용하여 에셋 카드에 표시해야 하는 주요 메타데이터 필드를 최대 6개까지 구성할 수 있습니다.
+이제 Content Hub을 사용하여 에셋 카드에 표시해야 하는 주요 메타데이터 필드를 최대 6개까지 구성할 수 있습니다. 자세한 내용은 [Content Hub 구성](/help/assets/configure-content-hub-ui-options.md#asset-card)의 에셋 카드 섹션을 참조하십시오.
 
 자산 카드의 ![키 메타데이터](/help/assets/assets/asset-card-key-metadata.png)
 
 **만료된 에셋의 표시 여부 및 다운로드 구성**
 
-이제 관리자는 만료된 자산을 Content Hub에 표시할지 여부를 제어할 수 있습니다. 만료된 자산이 표시되면 사용자가 해당 자산을 다운로드할 수 있는지 여부도 정의할 수 있습니다.
+이제 관리자는 만료된 자산을 Content Hub에 표시할지 여부를 제어할 수 있습니다. 만료된 에셋이 표시되면 사용자가 해당 에셋을 다운로드할 수 있는지도 정의할 수 있습니다. 자세한 내용은 [Content Hub 구성](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub)에서 만료된 Assets 섹션을 참조하십시오.
 
 ![Content Hub의 만료된 자산](/help/assets/assets/expired-assets-content-hub.png)
 
