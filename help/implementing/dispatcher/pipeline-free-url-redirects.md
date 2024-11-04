@@ -3,7 +3,7 @@ title: 파이프라인 없는 URL 리디렉션
 description: Git 또는 Cloud Manager 파이프라인에 액세스하지 않고 301 또는 302 리디렉션을 선언하는 방법을 알아봅니다.
 feature: Dispatcher
 role: Admin
-source-git-commit: 4be9d99de2a8fbebc508419630ce254d2f9fd6dc
+source-git-commit: 36b7d72f24bd60ad94762c9c9937105bea6e31b6
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 0%
@@ -57,7 +57,7 @@ maps:
   path: /content/dam/redirectmaps/mysite-redirectmap.txt
 ```
 
-그런 다음 `rewrites/rewrite.rules` 또는 `<yourfile>.vhost`과(와) 같은 Apache 구성 파일에서 이름 속성(`my.map`(위의 샘플에서)에서 참조하는 맵 파일을 구성해야 합니다.
+그런 다음 `rewrites/rewrite.rules` 또는 `<yourfile>.vhost`과(와) 같은 Apache 구성 파일에서 이름 속성(`my.map`(위의 샘플에서)이 참조하는 맵 파일을 구성해야 합니다.
 
 `RewriteMap` 지시문은 `sdbm`(단순 DBM) 형식을 사용하여 DBM(데이터베이스 관리자) 파일 형식으로 데이터가 저장되었음을 나타내야 합니다.
 
