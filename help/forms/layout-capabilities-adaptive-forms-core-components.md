@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 keywords: 핵심 구성 요소를 기반으로 하는 적응형 양식 레이아웃, 양식에 대한 다양한 레이아웃, 동적 양식 레이아웃 AEM, AEM Cloud Service 양식 레이아웃, AEM 핵심 구성 요소의 양식 레이아웃 유형, 적응형 양식 레이아웃
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 3ab7ff01201a7da790fe556bfe68c8c76aff9698
+source-git-commit: 7cb963794ca0d7a12d8007564c9fd6e49b53d5c4
 workflow-type: tm+mt
-source-wordcount: '2107'
+source-wordcount: '2104'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 적응형 Forms은 양식을 효과적으로 레이아웃 및 디자인할 수 있는 퍼스트 클래스 구성 요소를 제공합니다. 레이아웃은 양식에 구성 요소가 표시되는 방식을 제어합니다. 적응형 Forms은 패널, 마법사, 아코디언, 상단/수평 탭의 탭, 왼쪽/수직 탭의 탭 등 다양한 레이아웃을 지원합니다.
 
-![레이아웃 유형](/help/forms/assets/generic-layout-hero-image.png){align="center"}
+<!-- ![Types of Layout](/help/forms/assets/generic-layout-hero-image.png){align="center"}-->
 
 ## 전제 조건
 
