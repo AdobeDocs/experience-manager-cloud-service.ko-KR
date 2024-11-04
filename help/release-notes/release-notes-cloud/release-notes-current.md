@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: a5159f2ff49b8e216087df4206c14a9ccd89f336
+source-git-commit: 08b23f093e4362a9885919a3e3d87bdcaada8876
 workflow-type: tm+mt
-source-wordcount: '1395'
-ht-degree: 61%
+source-wordcount: '1480'
+ht-degree: 58%
 
 ---
 
@@ -143,6 +143,19 @@ AEM Forms 얼리 액세스 프로그램은 최첨단 혁신에 독점적으로 �
 * 카테고리 URL 형식이 클라우드 인스턴스에서 예상대로 작동하지 않는 문제를 해결했습니다.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+
+### 양식 제출을 제어하는 구성 {#configuration-submissions}
+
+특정 위치에서 Coral 또는 Foundation 양식에 대한 양식 제출을 제어하기 위해 AEM에 새 구성이 도입되었습니다. `com.adobe.granite.ui.components.FormRestrict`. 이 구성은 다음 두 개의 필드로 구성됩니다.
+
+1. **허용되는 경로 추가**: 양식 작업이 허용되는 경로를 지정합니다.
+1. **동작 제한**: 제한된 경로(허용 목록에 포함되지 않은 경로)에 대한 동작을 결정합니다. 다음 두 옵션 중 하나를 선택할 수 있습니다.
+   * **팝업**(기본값): 팝업 알림을 표시합니다.
+   * **Prevent**:양식 제출을 차단합니다.
+
+>[!NOTE]
+>
+>이 구성은 `/apps`, `/libs`, `/mnt/overlay` 및 `/mnt/override`에 있는 모든 Coral 또는 Foundation 양식에 대해 지원되지 않습니다.
 
 ### 고급 네트워킹 옵션을 사용한 셀프서비스 로그 전달 {#log-forwarding}
 
