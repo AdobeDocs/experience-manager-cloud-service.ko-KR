@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 9278ec9bb5bccd7b40cd65a120f296faba454b9c
-workflow-type: ht
-source-wordcount: '569'
-ht-degree: 100%
+source-git-commit: c638039ea957f5f7ae0dc64f49c3ace4381cb040
+workflow-type: tm+mt
+source-wordcount: '583'
+ht-degree: 22%
 
 ---
 
@@ -16,61 +16,58 @@ ht-degree: 100%
 
 다음 섹션에서는 Experience Manager as a Cloud Service 현재 유지 관리 릴리스의 기술 릴리스 정보에 대해 간략히 소개합니다.
 
-## 릴리스 18311 {#18311}
+## 릴리스 18459 {#18459}
 
-2024년 10월 22일에 릴리스된 유지 관리 릴리스 18311의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이전 유지 관리 릴리스는 릴리스 18175였습니다.
+다음은 2024년 11월 5일에 공개적으로 릴리스된 유지 보수 릴리스 18459에 대한 지속적인 개선 사항을 요약합니다. 이전 유지 관리 릴리스는 릴리스 18311.
 
-이 유지 관리 릴리스(2024.10.0)에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
+2024.11.0 기능 활성화는 이 유지 관리 릴리스에 대한 전체 기능 세트를 제공합니다. 자세한 내용은 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)을 참조하십시오.
 
-### 개선 사항 {#enhancements-18311}
+### 개선 사항 {#enhancements-18459}
 
-* ASSETS-41820: 처리 감시를 위한 인덱싱 개선.
-* ASSETS-43720: 처리 감시 기능 개선.
-* ASSETS-42554: 대용량 폴더에 대한 성능 개선.
-* SKYOPS-77603: 비즈니스 사용자의 리디렉션 관리.
+* CQ-4357471: AEMaaCS에서 i18n 사전 번역에 대한 지원을 추가합니다.
+* SITES-23591: 콘텐츠 조각: UUID 지원을 위한 콘텐츠 조각 업그레이드.
+* SITES-25440: 콘텐츠 조각: 복제 상태를 표시하는 CFM 검색 API.
+* SITES-24369: 콘텐츠 조각: OpenAPI 설명서 개선 사항.
+* SITES-25478: 콘텐츠 조각: 외부 에셋 참조에 대한 백엔드 지원을 추가합니다.
+* SITES-26119: 콘텐츠 조각: 참조 유형의 외부 에셋 참조에 대한 지원을 추가합니다.
+* SITES-21199: 범용 편집기가 있는 Edge Delivery: 페이지에서 만든 템플릿에 대한 지원을 추가합니다.
+* SITES-20311: 범용 편집기가 있는 Edge Delivery: CSV를 스프레드시트로 가져오도록 지원을 추가합니다.
+* SITES-24821: 범용 편집기가 있는 Edge Delivery: aem.page / aem.live를 기본적으로 Edge Delivery과 통합하도록 설정합니다.
 
-### 해결된 문제 {#fixed-issues-18311}
+### 해결된 문제 {#fixed-issues-18459}
 
-* ASSETS-37534: 승인 대상에 사용되는 속성이 노출되지 않도록 검색 변경.
-* ASSETS-38322: 게시 기준 공급자 구성 제거 및 게시 이벤트 기능 제거.
-* ASSETS-40482: Scene7 비디오 플레이어의 재생/일시 정지 및 음소거/음소거 해제 버튼에 대한 접근성 문제.
-* ASSETS-40593: 자산 > 파일에서 “속성” 버튼을 클릭하면 오류 페이지 발생.
-* ASSETS-40598: 동기화되지 않은 자산을 동기화가 활성화된 폴더로 이동하는 경우 스마트 자르기 동기화.
-* ASSETS-40743: 파일 이름에 특정 문자가 있는 경우 자산 바꾸기 대화 상자 트리거 시 문제.
-* ASSETS-40825: 검색 양식을 편집한 후 자산 검색 패싯이 사라짐.
-* ASSETS-41007: AEM에서 삭제하면 게재 시 때때로 고립된 자산이 남아 있음.
-* ASSETS-41172: Dynamic Media 템플릿 이름에 특수 문자를 사용할 수 없음.
-* ASSETS-41896: 폴더의 cq:discarded 속성에 언급된 자산은 Brand Portal에 게시되어서는 안 됨.
-* ASSETS-42067: Dynamic Media 템플릿 - 다운로드 시 오류 발생.
-* ASSETS-42070: Dynamic Media 템플릿 - 관리자가 아닌 사용자는 템플릿 생성/편집 액세스 권한이 있어야 함.
-* ASSETS-42344: 연결된 자산 동기화 해제됨 - 다시 연결하고 고객에게 알리십시오.
-* ASSETS-42620: 자산 버전의 미리보기 옵션 문제 - 자산을 열면 빈 미리보기가 표시됨.
-* ASSETS-42701: 웹 최적화 이미지 게재 및 자르기 문제.
-* ASSETS-42966: 여러 작업이 동일한 경로를 공유하는 경우 오류로 인해 비동기 바리케이드가 차단 해제될 수 있음.
-* ASSETS-43072: Dynamic Media 템플릿 - 템플릿 참조 조회가 잘못된 참조로 인해 중단됨.
-* ASSETS-43212: 메타데이터 스키마 편집기의 다국어화 문제.
-* ASSETS-43202: 타임라인에서 인쇄할 주석 선택에 대한 수정 사항.
-* ASSETS-43502: AEM CS 기존 이미지 사전 설정 이름이 편집 페이지에 표시되지 않음.
-* ASSETS-43538: 비동기 복사 자산 작업이 소스 경로에 대해 잘못된 속성을 사용함.
-* ASSETS-43798: 자산을 복사하기 전에 먼저 대상 경로를 확인하십시오.
-* ASSETS-43945: 비동기 자산 작업 대기열의 재시도 지연 시간이 20분으로 늘어남.
-* ASSETS-44025: 개별 자산을 선택하면 비동기 자산 삭제 작업이 실패함.
-* SITES-26128: CreateLiveCopyStep에서 클래스 캐스트 예외 발생.
-* SCRNS-4551: 비디오 구성 요소가 포함된 [SG Pools] Screens 채널이 브라우저 미리보기 및 플레이어에서 “일반 페이지 오류”를 표시함
+* CQ-4358730: 번역할 키가 10개 이상 있는 경우 CQPagePreviewGenerator가 실패합니다.
+* FORMS-14978: 테마 편집기의 핵심 구성 요소 기반 양식에 대한 페이지 로드를 활성화합니다.
+* FORMS-16596: 접근성 문제: 비활성화된 단추가 화면 Reader에서 인식되지 않습니다.
+* SITES-10575: MSM: 블루프린트 블룸필터 로더가 100,000개 이상의 행을 로드하려고 합니다.
+* SITES-20755: 콘텐츠 조각: UUID 새로 고침이 있는 에셋 참조에 썸네일이 표시되지 않습니다.
+* SITES-26253: 콘텐츠 조각: UUID 마이그레이션: Sling 작업 주제를 일반으로 변경합니다.
+* SITES-21338: 콘텐츠 조각: referencedBy 끝점이 올바른 페이지 참조를 반환하지 않습니다.
+* SITES-24421: 컨텐츠 조각: CF 끝점 편집이 GET CF를 통해 검색된 CF에 대해 작동하지 않습니다.
+* SITES-25461: 콘텐츠 조각: CF 검색에서 모델별로 필터링하려면 대/소문자를 구분해야 합니다.
+* SITES-25471: 콘텐츠 조각: ModelValidatorServlet에서 전역 모델의 유효성 검사를 수정합니다.
+* SITES-25795: cq 날짜 세트가 없는 경우 콘텐츠 조각: CF 모델 API가 실패했습니다.
+* SITES-25817: 콘텐츠 조각: Enhance PromoteLaunch: CF 시작에 대한 마지막 프로모션을 업데이트합니다.
+* SITES-26030: 콘텐츠 조각: Endpoint /referencesTree가 필요한 헤더를 반환하지 않습니다.
+* SITES-26031: 콘텐츠 조각: CFM 검색 끝점에서 복제 상태가 반환되지 않았습니다.
+* SITES-26213: 콘텐츠 조각: 콘텐츠 조각 게시 취소는 게시된 참조의 유효성을 검사해야 합니다.
+* SITES-26226: 콘텐츠 조각: 제공된 경로 중 사용할 수 있는 경로가 없는 경우 워크플로우 시작 문제.
+* SITES-26238: 콘텐츠 조각: API에서 반환한 에셋 참조의 순서가 JCR의 순서와 다릅니다.
+* SITES-25456: 이벤트: 페이지를 이동할 때 페이지가 이동된 이벤트 외에 페이지가 삭제된 이벤트가 생성됩니다.
+* SITES-25658: 이벤트: 계층 및 sourceUrl이 페이지 콘텐츠 상태 이벤트에서 채워지지 않습니다.
+* SITES-6497: 시작: 시작에서 페이지 만들기가 작동하지 않습니다.
+* SITES-25393: 범용 편집기가 있는 Edge Delivery: 단일 단락으로 서식이 지정된 리치 텍스트를 렌더링할 때 텍스트 노드가 손실됩니다.
+* SITES-24643: 범용 편집기가 있는 Edge Delivery: OpenGraph 및 twitter 메타데이터 속성이 페이지 메타데이터 모델에서 작동하지 않습니다.
 
-### 알려진 문제 {#known-issues-18311}
+### 알려진 문제 {#known-issues-18459}
 
-* FORMS-15818: 구성 요소 설명자 항목 `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` 서버 로그에서 진술을 찾을 수 없음. 이는 해를 미치지 않는 로그 구문입니다.
+없음.
 
-### 사용 중단된 기능 및 API {#deprecated-18311}
+### 사용 중단된 기능 및 API {#deprecated-18459}
 
 AEM as a Cloud Service에서 더 이상 사용되지 않는 기능과 API는 [사용 중단된 기능 및 API](/help/release-notes/deprecated-removed-features.md) 문서에 자세히 설명되어 있습니다.
 
-### 보안 수정 {#security-18311}
-
-AEM as a Cloud Service는 플랫폼의 보안 및 성능을 최적화하는 데 사용됩니다. 이 유지 관리 릴리스에서는 강력한 시스템 보호에 대한 노력의 일환으로 식별된 취약점 3가지가 해결되었습니다.
-
-### 임베드된 기술 {#embedded-tech-18311}
+### 임베드된 기술 {#embedded-tech-18459}
 
 | 기술 | 버전 | 링크 |
 |---|---|---|
