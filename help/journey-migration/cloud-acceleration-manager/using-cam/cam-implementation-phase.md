@@ -4,10 +4,10 @@ description: 이 페이지에서는 Cloud Acceleration Manager의 구현 단계�
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: f86d681c8f8cb6d602058ef30b648c53ff7bad69
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 5%
+source-wordcount: '648'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 5%
 
 다음 그림과 같이 프로젝트 랜딩 페이지를 열고 **구현** 섹션으로 이동할 수 있도록 프로젝트 카드를 클릭합니다.
 
-![이미지](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
+![프로젝트 랜딩 페이지 - 구현](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
 >[!NOTE]
 >자세한 내용은 [Cloud Acceleration Manager에서 프로젝트 만들기 및 관리](getting-started-cam.md#create-project)를 참조하십시오.
@@ -37,11 +37,11 @@ ht-degree: 5%
 
 1. **로컬 개발** 카드에서 **보기**&#x200B;를 클릭합니다.
 
-   ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/implementation-2.png)
+   ![로컬 개발 카드](/help/journey-migration/cloud-acceleration-manager/assets/implementation-2.png)
 
 1. 컨텐츠 캐러셀은 마이그레이션 여정의 이 단계에 대한 관련 정보를 표시합니다.
 
-   ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/implementation-3.png)
+   ![로컬 개발 캐러셀](/help/journey-migration/cloud-acceleration-manager/assets/implementation-3.png)
 
 
 ## 코드 리팩터링 카드 사용 {#code-refactoring}
@@ -52,7 +52,7 @@ ht-degree: 5%
 
 1. **코드 리팩터링** 활동 카드에서 **검토**&#x200B;를 클릭합니다.
 
-   ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/implementation-4.png)
+   ![코드 리팩터링 카드](/help/journey-migration/cloud-acceleration-manager/assets/implementation-4.png)
 
 1. 이 페이지에는 심각도 수준별로 구성된 코드 리팩터링 활동 목록이 표시됩니다. 강조 표시된 두 개의 아이콘을 클릭하면 자세한 내용을 알 수 있습니다.
 
@@ -67,11 +67,11 @@ ht-degree: 5%
 
 **Dispatcher** 탭에는 AEM as a Cloud Service Apache 및 Dispatcher 구성을 구성하는 방법과 클라우드 환경에 배포하기 전에 로컬에서 확인하고 실행하는 방법에 대한 정보가 제공됩니다. 또한 클라우드 환경에서의 디버깅에 대해서도 설명합니다.
 
-![이미지](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
+![Dispatcher 탭](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
 **테스트** 탭은 기능, 경험 감사 및 UI 테스트에 대한 정보를 제공합니다.
 
-![이미지](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-3.png)
+![테스트 탭](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-3.png)
 
 
 ## AEM as a Cloud Service 배포 카드 사용 {#aem-as-a-cloud-service-deployment}
@@ -82,11 +82,11 @@ AEM as a Cloud Service 배포 카드 활동 카드를 살펴볼 수 있도록 �
 
 1. **AEM as a Cloud Service 배포** 활동 카드에서 **보기**&#x200B;를 클릭합니다.
 
-   ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/implementation-6.png)
+   ![AEM as a Cloud Service 배포 - 카드](/help/journey-migration/cloud-acceleration-manager/assets/implementation-6.png)
 
 1. 컨텐츠 캐러셀은 마이그레이션 여정의 이 단계에 대한 관련 정보를 표시합니다.
 
-   ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/aem-deployment-card.png)
+   ![AEM as a Cloud Service 배포 - 회전 메뉴](/help/journey-migration/cloud-acceleration-manager/assets/aem-deployment-card.png)
 
 
 ## 컨텐츠 전송 카드 사용 {#content-transfer}
@@ -97,11 +97,11 @@ AEM as a Cloud Service 배포 카드 활동 카드를 살펴볼 수 있도록 �
 
 1. **콘텐츠 전송** 활동 카드에서 **검토**&#x200B;를 클릭합니다.
 
-   ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
+   ![컨텐츠 전송 - 검토](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
 
 1. 콘텐츠 전송을 시작하려면 마이그레이션 세트를 만들어야 합니다. **마이그레이션 세트 만들기**&#x200B;를 클릭합니다. 마이그레이션 세트는 콘텐츠를 AEM as a Cloud Service으로 전송할 수 있도록 해줍니다.
 
-   ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
+   ![마이그레이션 세트 만들기](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
 
    >[!NOTE]
    >오랫동안 사용하지 않으면 마이그레이션 세트가 만료됩니다. 자세한 내용은 [마이그레이션 세트 만료](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry)을 참조하십시오.
@@ -113,13 +113,13 @@ AEM as a Cloud Service 배포 카드 활동 카드를 살펴볼 수 있도록 �
 
 1. 마이그레이션 세트에서 AEM as a Cloud Service의 환경으로 컨텐츠를 수집하려면 수집을 시작해야 합니다. **수집 작업**(으)로 이동한 다음 **새 수집**&#x200B;을 클릭합니다. 콘텐츠 전송의 수집 단계를 완료하는 방법을 배울 수 있도록 [Target에 콘텐츠 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)을 검토하십시오.
 
-   ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
+   ![수집 작업](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 
 <!--### Estimating Content Transfer Time {#calculating}
 
 A Content Transfer Tool calculator has been provided to estimate how long it could take to complete the content transfer activity. You can use the content repository size slider to select the size that applies to your project. The transfer times vary for the extraction and ingestion phases. 
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-4.png)
+   ![Content Transfer Tool calculator](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-4.png)
 
    >[!NOTE]
    >These times are estimates only. Factor such as network speeds and time to scale up instances have not been accounted for in these estimates.
