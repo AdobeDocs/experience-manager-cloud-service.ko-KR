@@ -4,11 +4,10 @@ description: Adobe Acrobat Sign as a Cloud Service for [!DNL AEM Forms] 을(를)
 feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
-exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 2128dac489c270d296f86b56ae811556fb5fe87e
+source-git-commit: 551123925e43c98f8870f4a5da028d211f5c8ffb
 workflow-type: tm+mt
-source-wordcount: '2117'
-ht-degree: 24%
+source-wordcount: '2195'
+ht-degree: 23%
 
 ---
 
@@ -57,7 +56,8 @@ ht-degree: 24%
 
 1. 이제 **[!UICONTROL 솔루션을 선택]**&#x200B;하여 [!DNL Adobe Acrobat Sign]을(를) 선택할 수 있습니다.
 
-   ![Adobe Acrobat Sign Solutions](assets/adobe-sign-solution.png)
+   <!--![Adobe Acrobat Sign Solutions](assets/adobe-sign-solution.png)-->
+   ![Adobe Acrobat Sign Solutions 구성](assets/adobe-sign-solution-config.png)
 
 <!--
 
@@ -104,11 +104,17 @@ ht-degree: 24%
    * [!DNL widget_write]
    * [!DNL workflow_read]
 
+   
+   > 범위 수정자를 `self`에서 `account`(으)로 12단계에서 지정한 대로 AEM UI에서 직접 변경할 수 있습니다.
+
    [!DNL Adobe Acrobat Sign] 애플리케이션에 대한 OAuth 설정을 구성하고 키를 얻는 방법에 대한 단계별 정보는 [애플리케이션에 대한 oAuth 설정 구성](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) 개발자 문서를 참조하십시오.
 
    ![OAuth Config](/help/forms/assets/oauthconfig-new.png)
 
 1. **[!UICONTROL Adobe Acrobat Sign 구성 만들기]** 페이지로 돌아갑니다. **[!UICONTROL 설정]** 탭에서 [**[!UICONTROL 클라이언트 ID]**(응용 프로그램 ID라고도 함) 및 **[!UICONTROL 클라이언트 암호]**]를 지정합니다. 이전 단계에서 만든 [Adobe Acrobat Sign 응용 프로그램의 클라이언트 ID 및 클라이언트 암호](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret)를 사용하십시오.
+
+1. 필요에 따라 [!UICONTROL 인증 범위] 섹션에서 접두사 &quot;self&quot; 또는 &quot;account&quot;를 추가하여 범위를 &quot;account&quot; 또는 &quot;self&quot;로 수정할 수 있습니다.
+   ![인증 범위](/help/forms/assets/authorization-scope.png)
 
 1. **[!UICONTROL 첨부 파일에 Adobe Acrobat Sign 사용]** 옵션을 선택하여 적응형 양식에 첨부된 파일을 서명을 위해 전송된 해당 [!DNL Adobe Acrobat Sign] 문서에 추가하십시오.
 
@@ -263,6 +269,10 @@ AEM Formsas a Cloud Service 는 일정 간격으로 서명자 상태를 확인�
 
 구성의 값을 설정하려면 [AEM SDK를 사용해 OSGi 구성을 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)하고 Cloud Service 인스턴스에 [구성을 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process)하십시오.
 
+## 자주 묻는 질문
+
+* **Q: iframe에서 Adobe Sign GovCloud 서명 페이지를 렌더링할 수 있습니까?**
+* **A:** 예, iframe에서 Adobe Sign GovCloud 서명 페이지를 렌더링할 수 있습니다.
 
 >[!MORELIKETHIS]
 >
