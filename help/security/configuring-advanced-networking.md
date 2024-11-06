@@ -4,10 +4,10 @@ description: AEM as a Cloud Service에 대해 VPN 또는 유연한/전용 이그
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
+source-git-commit: 2a7d46e91bbd6ca96bd8b7fd5d4d84cf69bdee36
 workflow-type: tm+mt
-source-wordcount: '5618'
-ht-degree: 100%
+source-wordcount: '5524'
+ht-degree: 99%
 
 ---
 
@@ -396,7 +396,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ## VPN (Virtual Private Network) {#vpn}
 
-VPN을 사용하면 작성자, 게시 또는 미리보기 인스턴스에서 On-Premise 인프라 또는 데이터센터에 연결할 수 있습니다. 예를 들면 데이터베이스에 대한 액세스를 보호하는 데 유용할 수 있습니다. 또한 VPN을 사용하면 이를 지원하는 CRM 공급업체와 같은 SaaS 공급업체에 연결하거나 기업 네트워크에서 AEM as a Cloud Service 작성자, 미리보기 또는 게시 인스턴스에 연결할 수 있습니다.
+VPN을 사용하면 작성자, 게시 또는 미리보기 인스턴스에서 On-Premise 인프라 또는 데이터센터에 연결할 수 있습니다. 예를 들면 데이터베이스에 대한 액세스를 보호하는 데 유용할 수 있습니다. 또한 VPN을 지원하는 CRM 공급업체와 같은 SaaS 공급업체에 연결할 수 있습니다.
 
 대부분의 IPSec 기술이 내장된 VPN 디바이스가 지원됩니다. [이 디바이스 목록의 **RouteBased 구성 지침** 열에 기재된 정보를 참조하십시오.](https://learn.microsoft.com/ko-kr/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable) 표에 설명된 대로 디바이스를 구성합니다.
 
@@ -556,7 +556,9 @@ VPN을 사용하면 작성자, 게시 또는 미리보기 인스턴스에서 On-
 
 ### 구성에 유용한 도메인 {#vpn-useful-domains-for-configuration}
 
-아래 테이블에서는 구성 및 개발에 유용한 도메인 세트와 IPS에 대해 설명합니다.
+다음 다이어그램은 구성 및 개발에 유용한 도메인 및 관련 IP 집합을 시각적으로 보여 줍니다. 다이어그램 아래의 표에서는 이들 도메인과 IP에 대해 설명합니다.
+
+![VPN 도메인 구성](/help/security/assets/AdvancedNetworking.jpg)
 
 <table>
 <thead>
@@ -579,21 +581,6 @@ VPN을 사용하면 작성자, 게시 또는 미리보기 인스턴스에서 On-
   </tr>
 </tbody>
 </table>
-
-### VPN을 인그레스 연결로 제한 {#restrict-vpn-to-ingress-connections}
-
-AEM으로의 VPN 액세스만 허용하려면 `p{PROGRAM_ID}.external.adobeaemcloud.com`에 의해 정의된 IP만 환경에 접근할 수 있도록 Cloud Manager에 환경 허용 목록을 구성해야 합니다. 이 작업은 Cloud Manager의 다른 IP 기반 허용 목록과 동일한 방식으로 수행할 수 있습니다.
-
-규칙이 경로 기반이어야 하는 경우 Dispatcher 수준에서 표준 HTTP 지시문을 사용하여 특정 IP를 거부하거나 허용하십시오. 요청이 항상 도메인에 도착하도록 원하는 경로도 CDN에서 캐시할 수 없어야 합니다.
-
-#### HTTPd 구성 예 {#httpd-example}
-
-```
-Order deny,allow
-Deny from all
-Allow from 192.168.0.1
-Header always set Cache-Control private
-```
 
 ## 환경에서 고급 네트워킹 구성 활성화 {#enabling}
 
