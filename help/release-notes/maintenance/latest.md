@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: dc7f95ac98fd300a803e307ce11a51937d604a07
+source-git-commit: 90e1ca38bd517215a631573987462a716bfed160
 workflow-type: tm+mt
-source-wordcount: '613'
-ht-degree: 24%
+source-wordcount: '629'
+ht-degree: 23%
 
 ---
 
@@ -56,8 +56,11 @@ ht-degree: 24%
 * SITES-25456: 이벤트: 페이지를 이동할 때 페이지가 이동된 이벤트 외에 페이지가 삭제된 이벤트가 생성됩니다.
 * SITES-25658: 이벤트: 계층 및 sourceUrl이 페이지 콘텐츠 상태 이벤트에서 채워지지 않습니다.
 * SITES-6497: 시작: 시작에서 페이지 만들기가 작동하지 않습니다.
+* SITES-25938: Launches: 번역 프로젝트 이후 예기치 않은 삭제가 발생했습니다.
 * SITES-25393: 범용 편집기가 있는 Edge Delivery: 단일 단락으로 서식이 지정된 리치 텍스트를 렌더링할 때 텍스트 노드가 손실됩니다.
 * SITES-24643: 범용 편집기가 있는 Edge Delivery: OpenGraph 및 twitter 메타데이터 속성이 페이지 메타데이터 모델에서 작동하지 않습니다.
+* SITES-25401: 경험 구성요소: 느린 XF 참조 업데이트
+
 
 ### 알려진 문제 {#known-issues-18459}
 
