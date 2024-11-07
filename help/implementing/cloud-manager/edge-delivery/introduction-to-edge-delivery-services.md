@@ -1,18 +1,18 @@
 ---
-title: Cloud Manager의 Edge Delivery Services 소개
+title: Cloud Manager에서의 Edge Delivery Services 소개
 description: Edge Delivery Services을 사용하여 Cloud Manager 프로젝트를 제공하는 방법을 알아봅니다.
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2b384a4233672d69de09b922fcdef6d0f84ff7df
+source-git-commit: 3941b7f97d434946a3cb796633f306b89e68c0a4
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 6%
+source-wordcount: '756'
+ht-degree: 10%
 
 ---
 
 
-# Cloud Manager의 Edge Delivery Services 소개 {#edge-delivery-services}
+# Cloud Manager에서의 Edge Delivery Services 소개 {#edge-delivery-services}
 
 Edge Delivery Services는 웹 사이트에서 콘텐츠를 작성하는 방법을 보다 유연하게 제공하는 구성 가능한 서비스 세트입니다. 이 기능을 사용하면 다음 작업을 수행할 수 있습니다.
 
@@ -76,9 +76,10 @@ Cloud Manager을 통해 Edge Delivery Services 라이선스에 액세스하고 �
 | 1 | 제품 공동 작업 채널 가입 | **지금 요청 제출**&#x200B;을 클릭하면 회사에 대한 채널을 만들기 위한 Adobe 요청을 제출합니다. 채널이 이미 존재하는 경우 회사의 채널로 전달됩니다. |
 | 2 | 사전 요구 사항 완료 | **시작 자습서 보기**&#x200B;를 클릭하면 [시작 - 개발자 자습서](https://www.aem.live/developer/tutorial)(으)로 이동합니다. |
 | 3 | Edge Delivery 사이트 추가 | [Edge Delivery 사이트 추가](#eds-add-site)를 참조하십시오. |
-| 4 | 도메인 추가 | [사용자 지정 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)를 참조하십시오. |
+| 4 | 도메인 추가 | [사용자 정의 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)를 참조하십시오. |
 | 5 | SSL 인증서 추가 | [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)를 참조하십시오. |
-| 6 | Edge Delivery 사이트의 CDN 구성 | [CDN 구성 추가](#add-cdn)를 참조하십시오. |
+| 6 | Edge Delivery 사이트의 CDN 구성 | [CDN 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)를 참조하십시오. |
+| 7 | 실행 | Go Live의 마지막 단계를 완료합니다. |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 

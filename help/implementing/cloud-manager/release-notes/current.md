@@ -1,72 +1,51 @@
 ---
-title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2024.10.0 릴리스 정보
-description: AEM as a Cloud Service의 Cloud Manager 2024.10.0 릴리스 정보에 대해 알아봅니다.
+title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2024.11.0 릴리스 정보
+description: AEM as a Cloud Service의 Cloud Manager 2024.11.0 릴리스에 대해 알아봅니다.
 feature: Release Information
 role: Admin
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
-workflow-type: ht
-source-wordcount: '569'
-ht-degree: 100%
+exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
+source-git-commit: db661281831dcb07491dca16e73e835b487814a6
+workflow-type: tm+mt
+source-wordcount: '799'
+ht-degree: 29%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service의 Cloud Manager 2024.10.0 릴리스 정보 {#release-notes}
+# Adobe Experience Manager as a Cloud Service의 Cloud Manager 2024.11.0 릴리스 정보 {#release-notes}
 
-이 페이지에서는 AEM as a Cloud Service의 Cloud Manager 2024.10.0 릴리스 정보에 대해 설명합니다.
+AEM(Adobe Experience Manager as a Cloud Service)의 Cloud Manager 2024.11.0 릴리스에 대해 알아봅니다.
 
 >[!NOTE]
 >
 >[최신 Adobe Experience Manager as a Cloud Service 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)를 참조하십시오.
 
-## 릴리스 일자 {#release-date}
+## 릴리스 날짜 {#release-date}
 
-AEM as a Cloud Service의 Cloud Manager 2024.10.0 릴리스 일자는 2024년 10월 3일입니다.
+AEM as a Cloud Service의 Cloud Manager 2024.11.0 릴리스 날짜는 2024년 11월 7일입니다.
 
-다음 릴리스는 2024년 11월 14일에 예정되어 있습니다.
+다음 예정 릴리스는 2024년 12월 5일입니다.
 
 ## 새로운 기능 {#what-is-new}
 
-* <!-- BOTH CS & AMS --> Cloud Manager에서 사용하는 AEM Archetype 버전은 이제 버전 26으로 업데이트되었습니다. [https://github.com/adobe/aem-project-archetype/releases](https://github.com/adobe/aem-project-archetype/releases) 참조
+* 샌드박스 프로그램에서 살펴볼 수 있는 AEM Cloud Service-now를 통해 최신 Edge Delivery Services 혁신을 경험해 보십시오. [자세히 알아보기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md#auto-creation) <!-- (CMGR-62319) -->
+* 이제 AEM Cloud Manager의 도메인 설정 페이지에 이름별로 도메인을 빠르게 찾을 수 있는 검색 기능이 포함됩니다. 검색 필드에 키워드를 입력하여 일치하는 도메인을 필터링하고 표시할 수 있으므로 여러 도메인을 보다 쉽게 효율적으로 관리할 수 있습니다. 또한 페이지는 검색 결과를 더 세분화하기 위해 **확인됨** 및 **확인되지 않음**&#x200B;과 같은 상태 필터를 제공합니다. <!-- (CMGR-62615) -->
 
-<!-- (CMGR-59817) -->
-
-* <!-- CS ONLY --> 새로운 사용자 정의 도메인을 추가할 때 이전의 확인 메서드에는 긴 DNS 확인 과정이 포함되었습니다. Adobe는 고객을 위해 이 과정을 단순화했습니다. 이제 소유권을 증명하는 유효한 SSL 인증서(EV 또는 OV)만 제공하면 됩니다. 더 이상 DNS에서 TXT 레코드를 업데이트할 필요가 없습니다.
-
-  >[!NOTE]
-  >
-  >이 기능은 고객이 관리하는 EV 및 OV 인증서에만 적용됩니다. Adobe에서 관리하는 DV 인증서에는 여전히 CNAME 레코드가 있어야 합니다.
-
-  [사용자 정의 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)를 참조하십시오.
-
-  ![고객 관리 EV/OV 인증서에 대한 도메인 확인](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
-
-* <!-- CS ONLY --> 네트워크 인프라를 추가하거나 편집할 때 IP 주소 및 네트워크 마스크 필드의 값은 다음 규칙에 따라 확인됩니다.
-
-   * 주소 공간은 연결 주소 공간에 정의된 주소와 겹치면 안 됩니다.
-   * DNS 주소는 연결 주소 공간에 정의된 네트워크 마스크에 속해야 하거나 공개 주소여야 합니다.
-
-  ![네트워크 인프라 추가 대화 상자](/help/implementing/cloud-manager/release-notes/assets/network-infrastructure-add.png)
-
-* <!-- CS ONLY --> 색인화, 변경 가능한 콘텐츠 설치 및 변환 작업에 대한 환경 배포 로그 포맷이 변경되고 있습니다.
-
-  >[!NOTE]
-  >
-  >이러한 변경 사항은 단계적으로 도입되어 2024년 12월에 완료될 예정입니다.
-
-  ![프로덕션에 배포 카드](/help/implementing/cloud-manager/release-notes/assets/deploy-to-production-card.png)
-
-  기록 포맷은 다음과 같은 간단한 항목으로 변경됩니다.
-
-  ![간단한 항목을 보여 주는 로그 파일](/help/implementing/cloud-manager/release-notes/assets/log-file-simple-entry.png)
-
-  다음에서 볼 수 있는 JSON 항목에 대해:
-
-  ![JSON 항목을 보여 주는 로그 파일](/help/implementing/cloud-manager/release-notes/assets/log-file-json-entry.png)
-
+![도메인 설정의 검색 필드](/help/implementing/cloud-manager/assets/domain-settings-search.png)
 
 ## 얼리 어답터 프로그램 {#early-adoption}
 
 Cloud Manager의 얼리 어답터 프로그램에 참여하여 향후 기능을 테스트할 기회를 얻으십시오.
+
+### AEM 홈 {#aem-home}
+
+AEM 홈은 Adobe Experience Manager 내에서 컨텐츠, 자산 및 사이트를 관리할 수 있는 새로운 중앙 집중식 시작점입니다. 개인화된 환경을 제공하도록 맞춤화된 AEM Home은 사용자가 각자의 역할과 목표를 기반으로 AEM 에코시스템을 원활하게 탐색할 수 있도록 지원합니다. 이 안내서는 원하는 결과를 효율적으로 달성하기 위한 주요 통찰력과 권장 조치를 제공하는 안내서로 설계되었습니다. AEM Home은 명확한 사용자 중심 로드맵을 제시함으로써 사용자가 목표를 달성하는 데 필요한 사항을 신속하게 찾을 수 있도록 함으로써 모든 AEM 기능에 대해 보다 효율적이고 효과적인 경험을 제공합니다.
+
+얼리 어답터 고객이 사용할 수 있는 AEM 홈은 워크플로우를 최적화하고, 목표를 우선시하며, 결과를 도출하는 향상된 경험을 먼저 살펴봅니다. 옵트인을 선택하면 AEM Home의 발전을 구체화할 수 있으며 AEM 커뮤니티에 가장 적합한 발전을 제공하는 데 영향을 주는 피드백을 제공할 수 있습니다.
+
+이 새로운 기능을 테스트하고 피드백을 공유하려면 Adobe ID과 연결된 전자 메일 주소에서 [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com)(으)로 전자 메일을 보내세요. 다음 정보를 포함해야 합니다.
+
+* 프로필에 가장 적합한 역할: 콘텐츠 작성자, 개발자, 비즈니스 소유자, 관리자 또는 기타(설명을 제공).
+* 기본 AEM 액세스 표면: AEM Sites, AEM Assets, AEM Forms, Cloud Manager 또는 기타(설명을 제공).
 
 ### 자체 Git 가져오기 - GitLab 및 Bitbucket 지원 포함 {#gitlab-bitbucket}
 
@@ -82,12 +61,17 @@ Cloud Manager의 얼리 어답터 프로그램에 참여하여 향후 기능을 
 >
 >현재 기본 제공 풀 요청 코드 품질 검사는 GitHub 호스팅 저장소에만 적용되지만, 이 기능을 다른 Git 공급업체로 확장하기 위한 업데이트가 진행 중입니다.
 
-이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com)에 이메일을 보내 주십시오. 사용하려는 Git 플랫폼과 비공개/공개 또는 기업 저장소 구조인지 여부를 반드시 포함해야 합니다.
+이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com)에 이메일을 보내 주십시오. 사용할 Git 플랫폼과 개인/공용 또는 기업 저장소 구조를 포함해야 합니다. —>
 
 
-<!-- ## Bug fixes
+## 버그 수정
+
+* 최근 업데이트에서는 SonarQube에서 특정 경우에 하드 코딩된 암호가 검색되지 않는 문제를 해결했습니다. 이제 이 수정 사항에는 확장된 패턴 검사가 포함되어 있으며 SonarQube의 기본 감지 표준에 맞게 조정됩니다. <!-- CMGR-62682 -->
+* Cloud Manager에서 SSL 인증서를 업데이트하려고 할 때 **[!UICONTROL SSL 인증서 보기 및 업데이트]** 대화 상자에서 **[!UICONTROL 업데이트]**&#x200B;를 클릭하면 알 수 없는 오류가 표시됩니다. <!-- CMGR-62848 -->
+* Cloud Manager에서 도메인은 동일하지만 서신 대/소문자(대문자 또는 소문자)가 다른 경우에도 &quot;새 인증서가 기존 도메인과 일치하지 않습니다.&quot;라는 오류 메시지와 함께 SSL 인증서 업데이트가 실패합니다. 이제 업데이트는 도메인을 RFC 표준에 맞게 대소문자를 구분하지 않는 것으로 인식합니다. <!-- CMGR-62844 -->
+* Cloud Manager허용 목록에 추가하다 에서 도메인 구성에 대한 외래 키 링크가 누락되었기 때문에 IP 도메인 바인딩이 실행 중 상태로 남아 있었습니다. 허용 목록에 추가하다 이제 이 수정은 IP 도메인 바인딩 링크를 관련 도메인 구성에 올바르게 연결합니다. <!-- CMGR-62838 -->
+* Cloud Manager은 SSL 인증서의 OCSP(온라인 인증서 상태 프로토콜) 상태를 확인합니다. Adobe은 Cloud Manager을 통해 설치하기 전에 `openssl verify -untrusted intermediate.pem certificate.pem`과(와) 같은 도구를 사용하여 인증서의 무결성을 로컬에서 확인하는 것을 권장합니다. 자세한 내용은 [SSL 인증서 요구 사항 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates#requirements)를 참조하세요. <!-- CMGR-62341  -->
 
 
 
-
-## Known issues {#known-issues} -->
+<!-- ## Known issues {#known-issues} -->
