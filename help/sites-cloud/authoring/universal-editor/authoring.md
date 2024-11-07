@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1375'
-ht-degree: 38%
+ht-degree: 36%
 
 ---
 
@@ -41,7 +41,7 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 >
 >기본적으로 콘텐츠를 탭하거나 클릭하면 편집할 콘텐츠가 선택됩니다. 다음 링크를 통해 콘텐츠를 탐색하려면 [미리 보기 모드로 전환하세요.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
-선택한 콘텐츠에 따라 즉석 편집 옵션이 다를 수 있으며 [속성 레일에서 콘텐츠에 대한 추가 정보 및 옵션이 있을 수 있습니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+선택한 콘텐츠에 따라 즉석 편집 옵션이 다를 수 있으며 [속성 패널에서 콘텐츠에 대한 추가 정보 및 옵션이 있을 수 있습니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ### 일반 텍스트 편집 {#edit-plain-text}
 
@@ -51,11 +51,11 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 
 얇은 파란색 윤곽선이 짙은 파란색 윤곽선으로 바뀌면 선택 표시가 나타나고 커서가 나타납니다. 변경한 다음 Enter/Return 키를 누르거나 텍스트 상자 바깥쪽을 선택하여 변경 내용을 저장합니다.
 
-텍스트 구성 요소를 선택하면 자세한 내용이 [속성 레일에 표시됩니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) 레일에서 텍스트를 편집할 수도 있습니다.
+텍스트 구성 요소를 선택하기로 선택하면 해당 구성 요소의 세부 정보가 [속성 패널에 표시됩니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) 패널에서 텍스트를 편집할 수도 있습니다.
 
-![속성 레일에서 텍스트 편집](assets/ue-editing-text-component-rail.png)
+![속성 패널에서 텍스트 편집](assets/ue-editing-text-component-rail.png)
 
-텍스트에 대한 자세한 내용은 속성 레일에서 확인할 수 있습니다. 포커스가 속성 레일의 편집된 필드를 떠나면 변경 사항이 자동으로 저장됩니다.
+텍스트에 대한 자세한 내용은 속성 패널에서 확인할 수 있습니다. 포커스가 속성 패널의 편집된 필드를 떠나면 변경 사항이 자동으로 저장됩니다.
 
 ### 리치 텍스트 편집 {#edit-rich-text}
 
@@ -73,9 +73,9 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 
 포커스가 편집된 필드를 떠나면 변경 사항이 자동으로 저장됩니다.
 
-#### 속성 레일 {#properties-rail}
+#### 속성 패널 {#properties-rail}
 
-[속성 레일](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)에 선택한 텍스트에 대한 항목이 표시됩니다. 텍스트를 편집하려면 더 큰 캔버스를 표시하는 대화 상자를 열려면 항목을 탭하십시오.
+[속성 패널](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)에 선택한 텍스트에 대한 항목이 표시됩니다. 텍스트를 편집하려면 더 큰 캔버스를 표시하는 대화 상자를 열려면 항목을 탭하십시오.
 
 ![서식 있는 텍스트 편집 대화 상자](assets/rich-text-canvas.png)
 
@@ -83,30 +83,30 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 
 ### 미디어 편집 {#edit-media}
 
-[속성 레일에서 세부 정보를 볼 수 있습니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+[속성 패널에서 자세한 내용을 볼 수 있습니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![미디어 편집](assets/ue-edit-media.png)
 
-1. 속성 레일에서 선택한 이미지의 미리보기를 탭하거나 클릭합니다.
+1. [속성] 패널에서 선택한 이미지의 미리 보기를 탭하거나 클릭합니다.
 1. 자산을 선택할 수 있는 [자산 선택기](/help/assets/overview-asset-selector.md#using-asset-selector) 창이 열립니다.
 1. 새 자산을 선택하려면 를 선택합니다.
-1. 자산을 바꾼 속성 레일로 돌아가려면 **선택**&#x200B;을(를) 선택하십시오.
+1. 자산을 바꾼 속성 패널로 돌아가려면 **Select**&#x200B;을(를) 선택하십시오.
 
 변경 사항은 콘텐츠에 자동으로 저장됩니다.
 
 ### 콘텐츠 조각 편집 {#edit-content-fragment}
 
-[콘텐츠 조각,](/help/sites-cloud/administering/content-fragments/overview.md)을(를) 선택하면 [속성 레일에서 세부 정보를 편집할 수 있습니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+[콘텐츠 조각,](/help/sites-cloud/administering/content-fragments/overview.md)을(를) 선택한 경우 [속성 패널에서 세부 정보를 편집할 수 있습니다.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![콘텐츠 조각 편집](assets/ue-edit-cf.png)
 
-선택한 콘텐츠 조각의 콘텐츠 모델에 정의된 필드가 속성 레일에 표시되고 편집할 수 있습니다.
+선택한 콘텐츠 조각의 콘텐츠 모델에 정의된 필드가 표시되고 속성 패널에서 편집할 수 있습니다.
 
-콘텐츠 조각과 관련된 필드를 선택하면 구성 요소 레일에 콘텐츠 조각이 로드되어 필드가 자동으로 스크롤됩니다.
+콘텐츠 조각과 관련된 필드를 선택하면 콘텐츠 조각이 구성 요소 패널에 로드되고 해당 필드는 자동으로 스크롤됩니다.
 
-포커스가 속성 레일의 편집된 필드를 떠나면 변경 사항이 자동으로 저장됩니다.
+포커스가 속성 패널의 편집된 필드를 떠나면 변경 사항이 자동으로 저장됩니다.
 
-대신 [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md)에서 콘텐츠 조각을 편집하려면 속성 레일에서 [**CF 편집기에서 열기** 단추](/help/sites-cloud/authoring/universal-editor/navigation.md#edit)를 탭하거나 클릭합니다.
+대신 [콘텐츠 조각 편집기](/help/sites-cloud/administering/content-fragments/authoring.md)에서 콘텐츠 조각을 편집하려면 속성 패널에서 [**CF 편집기에서 열기** 단추](/help/sites-cloud/authoring/universal-editor/navigation.md#edit)를 탭하거나 클릭합니다.
 
 >[!TIP]
 >
@@ -123,7 +123,7 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 ### 컨테이너에 구성 요소 추가 {#adding-components}
 
 1. [콘텐츠 트리](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) 또는 편집기에서 컨테이너 구성 요소를 선택하십시오.
-1. 그런 다음 속성 레일에서 추가 아이콘을 선택합니다.
+1. 그런 다음 속성 패널에서 추가 아이콘을 선택합니다.
 
    ![컨테이너에 추가할 구성 요소 선택](assets/ue-add-component.png)
 
@@ -136,7 +136,7 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 ### 컨테이너의 구성 요소 복제 {#duplicating-components}
 
 1. [콘텐츠 트리](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) 또는 편집기를 사용하여 컨테이너에서 구성 요소를 선택합니다.
-1. 그런 다음 속성 레일에서 **복제** 아이콘을 선택합니다.
+1. 그런 다음 속성 패널에서 **복제** 아이콘을 선택합니다.
 
    ![컨테이너에 추가할 구성 요소 선택](assets/ue-duplicate-component.png)
 1. 구성 요소가 복제되고 선택한 구성 요소 아래에 삽입됩니다.
@@ -148,7 +148,7 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 1. [콘텐츠 트리](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) 또는 편집기에서 컨테이너 구성 요소를 선택하십시오.
 1. 컨테이너의 V자형 아이콘을 선택하여 콘텐츠 트리에서 해당 콘텐츠를 확장합니다.
 1. 그런 다음 콘텐츠 트리에서 컨테이너 내의 구성 요소를 선택합니다.
-1. 속성 레일에서 삭제 아이콘을 선택합니다.
+1. 속성 패널에서 삭제 아이콘을 선택합니다.
 
    ![구성 요소 삭제](assets/ue-delete-component.png)
 

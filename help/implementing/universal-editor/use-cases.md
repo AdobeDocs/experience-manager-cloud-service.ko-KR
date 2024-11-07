@@ -4,7 +4,7 @@ description: 유니버설 편집기의 주요 사용 사례와 그 사용 방법
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 2db4428065b3611a43137514864573947d32fff7
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 0%
@@ -76,7 +76,7 @@ ht-degree: 0%
 범용 편집기에서 페이지 또는 앱을 편집할 수 있으려면 적절하게 계측되어야 합니다.
 
 * [특성 및 형식](/help/implementing/universal-editor/attributes-types.md) - 범용 편집기에서 앱 또는 페이지를 편집할 수 있으려면 적절하게 계측되어야 합니다. 여기에는 편집자가 앱의 콘텐츠를 편집할 수 있도록 적절한 메타데이터가 포함됩니다.
-* [모델 정의, 필드 및 구성 요소 유형](/help/implementing/universal-editor/field-types.md) - 구성 요소를 편집할 수 있는 메타데이터가 있으면 편집기의 속성 레일에서 조작할 수 있는 필드 및 구성 요소 유형을 정의합니다.
+* [모델 정의, 필드 및 구성 요소 유형](/help/implementing/universal-editor/field-types.md) - 구성 요소를 편집할 수 있는 메타데이터가 있으면 편집기의 속성 패널에서 조정할 수 있는 필드와 구성 요소 유형을 정의합니다.
 * [유니버설 편집기 이벤트](/help/implementing/universal-editor/events.md) - 유니버설 편집기에서 콘텐츠 또는 UI 인터랙션에 내보내는 이벤트를 사용하여 앱의 편집 환경을 개선하여 앱을 추가로 사용자 지정할 수 있습니다.
 
 범용 편집기는 프로젝트 요구 사항에 맞게 조정할 수도 있습니다.

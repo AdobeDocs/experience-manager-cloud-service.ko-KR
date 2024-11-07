@@ -4,7 +4,7 @@ description: 범용 편집기에서 원격 앱의 콘텐츠 또는 UI 변경 사
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 2%
@@ -55,7 +55,7 @@ ht-degree: 2%
 
 ### aue:content-details {#content-details}
 
-구성 요소가 속성 레일에 로드되면 `aue:content-details` 이벤트가 트리거됩니다.
+구성 요소가 속성 패널에 로드되면 `aue:content-details` 이벤트가 트리거됩니다.
 
 페이로드는 구성 요소의 콘텐츠 및 선택적으로 해당 스키마입니다.
 
@@ -91,7 +91,7 @@ ht-degree: 2%
 
 ### aue:content-patch {#content-patch}
 
-`aue:content-patch` 이벤트는 구성 요소의 데이터가 속성 레일에서 업데이트될 때 트리거됩니다.
+`aue:content-patch` 이벤트는 구성 요소의 데이터가 속성 패널에서 업데이트될 때 트리거됩니다.
 
 페이로드는 업데이트된 속성의 JSON 패치입니다.
 
@@ -258,7 +258,7 @@ ht-degree: 2%
 
 ### 콘텐츠 업데이트 {#content-update-fallbacks}
 
-| 이벤트 | 동작 |
+| 이벤트 | 비헤이비어 |
 |---|---|
 | `aue:content-add` | 페이지 다시 로드 |
 | `aue:content-details` | 아무 작업도 하지 않음 |
@@ -269,7 +269,7 @@ ht-degree: 2%
 
 ### UI 이벤트 {#ui-event-fallbacks}
 
-| 이벤트 | 동작 |
+| 이벤트 | 비헤이비어 |
 |---|---|
 | `aue:ui-publish` | 아무 작업도 하지 않음 |
 | `aue:ui-select` | 선택한 요소로 스크롤 |

@@ -4,10 +4,10 @@ description: Edge Delivery Services를 통한 콘텐츠 작성 방법과 Edge De
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
-source-git-commit: 7e8446bec18eaeb4eb017dd63436a066d3a90fed
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 64%
+ht-degree: 61%
 
 ---
 
@@ -44,7 +44,7 @@ AEM as a Cloud Service와 함께 Edge Delivery Services를 사용할 때 이해�
 
 ![유니버설 편집기에서 블록 추가 및 정렬](assets/blocks.png)
 
-그런 다음 속성 레일에서 블록의 세부 정보를 구성할 수 있습니다.
+그런 다음 [속성] 패널에서 블록의 세부 사항을 구성할 수 있습니다.
 
 ![블록 속성 구성](assets/block-properties.png)
 

@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1615'
-ht-degree: 41%
+ht-degree: 38%
 
 ---
 
@@ -63,7 +63,7 @@ UI는 이러한 기본 영역으로 나뉩니다.
 * [Experience Cloud 헤더](#experience-cloud-header)
 * [범용 편집기 도구 모음](#universal-editor-toolbar)
 * [편집기](#editor)
-* [속성 레일](#properties-rail)
+* [속성 패널](#properties-rail)
 
 ![Universal Editor UI](assets/ui.png)
 
@@ -224,19 +224,19 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 편집기가 [미리보기 모드](#preview-mode)에 있는 경우 콘텐츠를 탐색하고 링크를 따라갈 수 있지만, 콘텐츠를 편집할 수 없습니다.
 
-### 속성 레일 {#properties-rail}
+### 속성 패널 {#properties-rail}
 
-속성 레일은 항상 편집기의 오른쪽에 표시됩니다. 해당 모드에 따라 콘텐츠 또는 페이지 콘텐츠의 계층 구조에서 선택한 구성 요소에 대한 세부 정보를 표시할 수 있습니다.
+속성 패널은 항상 편집기의 오른쪽에 표시됩니다. 해당 모드에 따라 콘텐츠 또는 페이지 콘텐츠의 계층 구조에서 선택한 구성 요소에 대한 세부 정보를 표시할 수 있습니다.
 
-![속성 레일](assets/properties-rail.png)
+![속성 패널](assets/properties-rail.png)
 
 #### 속성 모드 {#properties-mode}
 
-속성 모드의 레일에 편집기에서 현재 선택한 구성 요소의 속성이 표시됩니다. 페이지가 로드될 때 속성 레일의 기본 모드입니다.
+속성 모드에서 패널은 편집기에서 현재 선택한 구성 요소의 속성을 표시합니다. 페이지가 로드될 때 속성 패널의 기본 모드입니다.
 
 ![속성 모드](assets/properties-mode.png)
 
-선택한 구성 요소 유형에 따라 속성 레일에 세부 정보가 표시될 수 있으며 여기에서 해당 세부 정보를 수정할 수 있습니다.
+선택한 구성 요소의 유형에 따라 세부 정보가 속성 패널에 표시되고 수정될 수 있습니다.
 
 ![구성 요소 세부 정보](assets/component-details.png)
 
@@ -248,7 +248,7 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 #### 콘텐츠 트리 모드 {#content-tree-mode}
 
-콘텐츠 트리 모드의 경우 레일에 페이지 콘텐츠의 계층 구조가 표시됩니다.
+콘텐츠 트리 모드에서 패널은 페이지 콘텐츠의 계층 구조를 보여 줍니다.
 
 ![콘텐츠 트리 모드](assets/content-tree-mode.png)
 
@@ -262,7 +262,7 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 ##### CF 편집기에서 열기 {#edit}
 
-편집할 때 선택한 구성 요소에 대한 옵션이 속성 레일에 나타나고 여기서 선택한 구성 요소를 편집할 수 있습니다. 선택한 구성 요소가 콘텐츠 조각인 경우 **CF 편집기에서 열기** 버튼을 선택할 수도 있습니다.
+편집할 때 선택한 구성 요소에 대한 옵션이 속성 패널에 나타나며, 이 패널에서 선택한 구성 요소를 편집할 수 있습니다. 선택한 구성 요소가 콘텐츠 조각인 경우 **CF 편집기에서 열기** 버튼을 선택할 수도 있습니다.
 
 ![CF 편집기에서 열기 아이콘](assets/open-in-cf-editor.png)
 
@@ -276,7 +276,7 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 ##### 추가 {#add}
 
-콘텐츠 트리 또는 편집기에서 컨테이너 구성 요소를 선택하면 속성 레일에 추가 옵션이 표시됩니다.
+콘텐츠 트리 또는 편집기에서 컨테이너 구성 요소를 선택하면 속성 패널에 추가 옵션이 표시됩니다.
 
 ![추가 아이콘](assets/ue-add-component-icon.png)
 
@@ -290,7 +290,7 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 ##### 복제 {#duplicate}
 
-콘텐츠 트리 또는 편집기에서 컨테이너 구성 요소 내의 구성 요소를 선택하면 속성 레일에 복제 옵션이 표시됩니다.
+콘텐츠 트리 또는 편집기에서 컨테이너 구성 요소 내의 구성 요소를 선택하면 [속성] 패널에 복제 옵션이 표시됩니다.
 
 ![중복 아이콘](assets/duplicate.png)
 
@@ -298,7 +298,7 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 ##### 삭제 {#delete}
 
-콘텐츠 트리 또는 편집기에서 컨테이너 구성 요소 내의 구성 요소를 선택하면 속성 레일에 삭제 옵션이 표시됩니다.
+콘텐츠 트리 또는 편집기에서 컨테이너 구성 요소 내의 구성 요소를 선택하면 속성 패널에 삭제 옵션이 표시됩니다.
 
 ![삭제 아이콘](assets/ue-delete-component-icon.png)
 
@@ -310,7 +310,7 @@ Universal Editor에서 모바일 디바이스를 에뮬레이션할 수도 있�
 
 #### 추가 단추 {#additional-properties-rail-buttons}
 
-유니버설 편집기는 맞춤화가 가능하고 확장 가능한 작성 환경을 제공합니다. 속성 레일에 추가 버튼이 표시되면 범용 편집기가 확장된 것입니다.
+유니버설 편집기는 맞춤화가 가능하고 확장 가능한 작성 환경을 제공합니다. 속성 패널에 추가 단추가 표시되면 유니버설 편집기가 확장된 것입니다.
 
 * 확장 가능성에 대한 자세한 내용은 [범용 편집기 사용자 지정 및 확장을 참조하십시오.](/help/implementing/universal-editor/customizing.md)
 * 개별 확장의 작동 방식에 대한 자세한 내용은 [Extension Manager 설명서를 참조하십시오.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)

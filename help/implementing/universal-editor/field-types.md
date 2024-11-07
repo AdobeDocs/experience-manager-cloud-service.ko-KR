@@ -1,10 +1,10 @@
 ---
 title: 모델 정의, 필드 및 구성 요소 유형
-description: 예가 포함된 속성 레일에서 유니버설 편집기가 편집할 수 있는 필드 및 구성 요소 유형에 대해 알아봅니다. 모델 정의를 만들고 구성 요소에 연결하여 나만의 앱을 계측하는 방법을 이해합니다.
+description: 예를 들어 범용 편집기가 속성 패널에서 편집할 수 있는 필드와 구성 요소 유형에 대해 알아봅니다. 모델 정의를 만들고 구성 요소에 연결하여 나만의 앱을 계측하는 방법을 이해합니다.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 5153d18b6bb8934479a02cbaa5236acef7c80cd1
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 11%
@@ -14,11 +14,11 @@ ht-degree: 11%
 
 # 모델 정의, 필드 및 구성 요소 유형 {#field-types}
 
-예가 포함된 속성 레일에서 유니버설 편집기가 편집할 수 있는 필드 및 구성 요소 유형에 대해 알아봅니다. 모델 정의를 만들고 구성 요소에 연결하여 나만의 앱을 계측하는 방법을 이해합니다.
+예를 들어 범용 편집기가 속성 패널에서 편집할 수 있는 필드와 구성 요소 유형에 대해 알아봅니다. 모델 정의를 만들고 구성 요소에 연결하여 나만의 앱을 계측하는 방법을 이해합니다.
 
 ## 개요 {#overview}
 
-범용 편집기에서 사용할 앱을 조정할 때 구성 요소를 계측하고 편집기의 속성 레일에서 조작할 수 있는 필드와 구성 요소 유형을 정의해야 합니다. 모델을 만든 다음 구성 요소에서 해당 모델에 연결하면 됩니다.
+범용 편집기에서 사용할 앱을 조정할 때 구성 요소를 계측하고 편집기의 속성 패널에서 조작할 수 있는 필드와 구성 요소 유형을 정의해야 합니다. 모델을 만든 다음 구성 요소에서 해당 모델에 연결하면 됩니다.
 
 이 문서에서는 예제 구성과 함께 사용 가능한 모델 정의 및 필드와 구성 요소 유형에 대한 개요를 제공합니다.
 
@@ -28,7 +28,7 @@ ht-degree: 11%
 
 ## 모델 정의 구조 {#model-structure}
 
-범용 편집기의 속성 레일을 통해 구성 요소를 구성하려면 모델 정의가 존재하고 구성 요소에 연결되어 있어야 합니다.
+범용 편집기의 속성 패널을 통해 구성 요소를 구성하려면 모델 정의가 존재하고 구성 요소에 연결되어 있어야 합니다.
 
 모델 정의는 모델 배열로 시작하는 JSON 구조입니다.
 
@@ -36,7 +36,7 @@ ht-degree: 11%
 [
   {
     "id": "model-id",        // must be unique
-    "fields": []             // array of fields which shall be rendered in the properties rail
+    "fields": []             // array of fields which shall be rendered in the properties panel
   }
 ]
 ```

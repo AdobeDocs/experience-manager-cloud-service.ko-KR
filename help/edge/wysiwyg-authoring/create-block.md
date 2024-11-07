@@ -4,10 +4,10 @@ description: Edge Delivery Services 프로젝트로 작성하는 WYSIWYG 작성�
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 3419fa943eb865d87467443527ea97fcd64909c2
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1445'
-ht-degree: 57%
+ht-degree: 54%
 
 ---
 
@@ -165,7 +165,7 @@ Adobe는 3단계 방식으로 블록을 개발할 것을 권장합니다.
 
    * 페이지를 로드하려면 **Adobe에 로그인**&#x200B;을 탭하거나 클릭하여 Universal Editor에서 AEM에 인증해야 할 수도 있습니다.
 
-1. Universal Editor에서 섹션을 선택합니다. 속성 레일에서 **추가** 아이콘을 탭하거나 클릭한 다음, 메뉴에서 새 **인용** 블록을 선택합니다.
+1. Universal Editor에서 섹션을 선택합니다. 속성 패널에서 **추가** 아이콘을 탭하거나 클릭한 다음 메뉴에서 새 **견적** 블록을 선택합니다.
 
    * **추가** 아이콘은 더하기 기호입니다.
    * 선택한 오브젝트의 파란색 윤곽선에 **섹션**&#x200B;이라는 레이블이 지정된 탭이 있으면 섹션이 선택된 것입니다.
@@ -175,7 +175,7 @@ Adobe는 3단계 방식으로 블록을 개발할 것을 권장합니다.
 
 1. 페이지가 다시 로드되고 `component-definitions.json` 파일에 지정된 기본 콘텐츠와 함께 선택한 섹션의 아래쪽에 인용 블록이 추가됩니다.
 
-   * 인용 블록은 내부 또는 속성 레일에서 다른 블록처럼 선택하고 편집할 수 있습니다.
+   * 따옴표 블록은 즉석 또는 속성 패널에서 다른 블록으로 선택하고 편집할 수 있습니다.
    * 추가 단계에서 스타일링이 적용됩니다.
 
    ![선택한 섹션에 새 인용 블록이 있는 페이지](assets/create-block/quote-added.png)

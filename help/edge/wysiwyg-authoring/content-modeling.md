@@ -4,10 +4,10 @@ description: Edge Delivery Services 프로젝트를 사용하여 WYSIWYG 작성�
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 058f3c24ac883315dfaa9206a8c2caa4bb005d07
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '2196'
-ht-degree: 80%
+ht-degree: 79%
 
 ---
 
@@ -112,7 +112,7 @@ Edge Delivery Services과 함께 WYSIWYG 작성을 사용할 때 작성자에게
 * 블록의 테이블 헤더에 렌더링될 블록 이름을 정의해야 합니다.
    * 블록 이름은 블록을 장식하는 데 적합한 스타일과 스크립트를 가져오는 데 사용됩니다.
 * [모델 ID](/help/implementing/universal-editor/field-types.md#model-structure)를 정의할 수 있습니다.
-   * 모델 ID는 속성 레일에서 작성자가 사용할 수 있는 필드를 정의하는 구성 요소 모델에 대한 참조입니다.
+   * 모델 ID는 구성 요소의 모델에 대한 참조로서, 속성 패널에서 작성자가 사용할 수 있는 필드를 정의합니다.
 * [필터 ID](/help/implementing/universal-editor/customizing.md#filtering-components)를 정의할 수 있습니다.
    * 필터 ID는 구성 요소 필터에 대한 참조이며, 이를 통해 작성 동작을 변경할 수 있습니다(예: 블록이나 섹션에 추가할 수 있는 하위 요소 또는 활성화되는 RTE 기능 제한).
 

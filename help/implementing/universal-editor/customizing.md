@@ -4,7 +4,7 @@ description: 콘텐츠 작성자의 요구 사항을 지원하도록 범용 편�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6612abbd95599791ff9571b59154aa8ab34fb5f8
+source-git-commit: 732b0648e7114594cb8d35df03f83b842d62736e
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 1%
@@ -75,9 +75,9 @@ data-aue-filter="container-filter"
 ]
 ```
 
-### 속성 레일에서 조건부로 구성 요소 표시 및 숨기기 {#conditionally-hide}
+### [속성] 패널에서 구성 요소를 조건부로 표시 및 숨기기 {#conditionally-hide}
 
-일반적으로 작성자가 구성 요소를 사용할 수 있지만 의미가 없는 상황이 있을 수 있습니다. 이러한 경우 구성 요소 모델의 [ 필드에 `condition` 특성을 추가하여 속성 레일에서 구성 요소를 숨길 수 있습니다.](/help/implementing/universal-editor/field-types.md#fields)
+일반적으로 작성자가 구성 요소를 사용할 수 있지만 의미가 없는 상황이 있을 수 있습니다. 이러한 경우 구성 요소 모델의 [ 필드에 `condition` 특성을 추가하여 속성 패널에서 구성 요소를 숨길 수 있습니다.](/help/implementing/universal-editor/field-types.md#fields)
 
 [JsonLogic 스키마를 사용하여 조건을 정의할 수 있습니다.](https://jsonlogic.com/) 조건이 true이면 필드가 표시됩니다. 조건이 false이면 필드가 숨겨집니다.
 
@@ -132,7 +132,7 @@ data-aue-filter="container-filter"
 
 Adobe Experience Cloud 서비스로서, App Builder 및 Experience Manager을 사용하여 유니버설 편집기의 UI를 확장할 수 있습니다.
 
-UI 확장은 Adobe App Builder으로 구축된 JavaScript 애플리케이션으로, 범용 편집기와 같은 Adobe Experience Cloud 통합 셸에서 실행되는 UI 애플리케이션에 임베드할 수 있습니다. 헤더 메뉴 및 속성 레일에 고유한 버튼과 작업을 추가할 수 있을 뿐만 아니라 범용 편집기에 대한 고유한 이벤트를 만들 수도 있습니다.
+UI 확장은 Adobe App Builder으로 구축된 JavaScript 애플리케이션으로, 범용 편집기와 같은 Adobe Experience Cloud 통합 셸에서 실행되는 UI 애플리케이션에 임베드할 수 있습니다. 헤더 메뉴 및 속성 패널에 고유한 버튼과 작업을 추가할 수 있을 뿐만 아니라 범용 편집기에 대한 고유한 이벤트를 만들 수도 있습니다.
 
 이러한 가능성을 알아보려면 다음 리소스를 참조하십시오.
 
