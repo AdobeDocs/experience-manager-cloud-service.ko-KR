@@ -4,10 +4,10 @@ description: AEM as a Cloud Service의 Cloud Manager 2024.11.0 릴리스에 대�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: db661281831dcb07491dca16e73e835b487814a6
+source-git-commit: 87293526ca9c10a142bc1d1d3a35562b171da385
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 29%
+source-wordcount: '784'
+ht-degree: 30%
 
 ---
 
@@ -38,9 +38,9 @@ Cloud Manager의 얼리 어답터 프로그램에 참여하여 향후 기능을 
 
 ### AEM 홈 {#aem-home}
 
-AEM 홈은 Adobe Experience Manager 내에서 컨텐츠, 자산 및 사이트를 관리할 수 있는 새로운 중앙 집중식 시작점입니다. 개인화된 환경을 제공하도록 맞춤화된 AEM Home은 사용자가 각자의 역할과 목표를 기반으로 AEM 에코시스템을 원활하게 탐색할 수 있도록 지원합니다. 이 안내서는 원하는 결과를 효율적으로 달성하기 위한 주요 통찰력과 권장 조치를 제공하는 안내서로 설계되었습니다. AEM Home은 명확한 사용자 중심 로드맵을 제시함으로써 사용자가 목표를 달성하는 데 필요한 사항을 신속하게 찾을 수 있도록 함으로써 모든 AEM 기능에 대해 보다 효율적이고 효과적인 경험을 제공합니다.
+AEM 홈에서는 Adobe Experience Manager 내의 콘텐츠, 에셋 및 사이트 관리를 위한 중앙 집중식 시작점을 제공합니다. 개인화된 경험을 제공하도록 설계된 AEM Home을 사용하면 역할과 목표에 따라 AEM 에코시스템을 원활하게 탐색할 수 있습니다. 가이드 역할을 하여 목표를 효율적으로 달성하는 데 도움이 되는 주요 인사이트 및 권장 작업을 제공합니다. 명확한 사용자 중심의 레이아웃을 통해 AEM Home은 필수 도구에 빠르게 액세스하여 모든 AEM 기능에 대해 간소화되고 효과적인 경험을 제공합니다.
 
-얼리 어답터 고객이 사용할 수 있는 AEM 홈은 워크플로우를 최적화하고, 목표를 우선시하며, 결과를 도출하는 향상된 경험을 먼저 살펴봅니다. 옵트인을 선택하면 AEM Home의 발전을 구체화할 수 있으며 AEM 커뮤니티에 가장 적합한 발전을 제공하는 데 영향을 주는 피드백을 제공할 수 있습니다.
+얼리어답터가 사용할 수 있는 AEM 홈은 워크플로 개선, 목표 우선 순위 지정 및 결과 전달에 초점을 맞춘 최적화된 경험을 제공합니다. 옵트인을 사용하면 AEM Home의 미래를 설정하고 전체 AEM 커뮤니티에 대한 가치를 높이는 데 도움이 되는 피드백을 제공하여 Home의 개발에 영향을 줄 수 있습니다.
 
 이 새로운 기능을 테스트하고 피드백을 공유하려면 Adobe ID과 연결된 전자 메일 주소에서 [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com)(으)로 전자 메일을 보내세요. 다음 정보를 포함해야 합니다.
 
