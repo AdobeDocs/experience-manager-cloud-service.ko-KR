@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 31fc69523107719d6f33d7a0845407547b57f4a7
+source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1375'
 ht-degree: 38%
 
 ---
@@ -132,6 +132,16 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 >[!TIP]
 >
 >단축키 `a`를 사용하여 선택한 컨테이너에 구성 요소를 추가합니다.
+
+### 컨테이너의 구성 요소 복제 {#duplicating-components}
+
+1. [콘텐츠 트리](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) 또는 편집기를 사용하여 컨테이너에서 구성 요소를 선택합니다.
+1. 그런 다음 속성 레일에서 **복제** 아이콘을 선택합니다.
+
+   ![컨테이너에 추가할 구성 요소 선택](assets/ue-duplicate-component.png)
+1. 구성 요소가 복제되고 선택한 구성 요소 아래에 삽입됩니다.
+
+구성 요소가 컨테이너에 삽입되며 편집기에서 편집할 수 있습니다.
 
 ### 컨테이너에서 구성 요소 삭제 {#deleting-components}
 
