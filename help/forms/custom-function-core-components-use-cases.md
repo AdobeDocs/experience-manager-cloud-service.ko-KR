@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
-source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
+source-git-commit: 88b9686a1ceec6729d9657d4bb6f458d9c411065
 workflow-type: tm+mt
-source-wordcount: '2108'
+source-wordcount: '2134'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,12 @@ ht-degree: 0%
 이 문서에서는 핵심 구성 요소를 기반으로 하는 적응형 양식에 대한 사용자 지정 기능의 세부 예제를 제공하여 다양한 시나리오에서 효과적인 구현에 대한 중요한 통찰력을 제공합니다. 사용자 지정 함수는 AEM Forms의 규칙 편집기에서 사용되며 개발자가 양식 동작을 제어하는 논리를 정의 및 제어할 수 있도록 합니다.
 이 문서에서는 다양한 사용자 정의 함수 구현에 대해 알아보고, 특정 요구 사항을 충족하도록 양식을 사용자 정의하고 전반적인 기능을 향상시키는 데 이 함수를 사용할 수 있는 방법을 소개합니다.
 
-## 사용자 정의 함수를 사용하여 드롭다운 목록 옵션 설정
+## 사용자 지정 함수를 사용하여 드롭다운 목록 옵션 채우기
 
-핵심 구성 요소의 규칙 편집기에서 런타임에 드롭다운 목록 옵션을 설정하는 **옵션 설정 of** 속성을 지원하지 않습니다. 그러나 사용자 지정 함수를 사용하여 드롭다운 목록 옵션을 설정할 수 있습니다.
+핵심 구성 요소의 규칙 편집기는 런타임 시 드롭다운 목록 옵션을 동적으로 채우기 위한 **옵션 설정** 속성을 지원하지 않습니다. 그러나 사용자 지정 함수를 사용하여 드롭다운 목록 옵션을 채우면 특정 논리를 기반으로 옵션을 검색할 수 있습니다. 사용자 지정 기능을 사용하면 드롭다운 옵션의 작성 방법과 시기를 보다 유연하게 제어하고, 사용자 경험을 향상시킬 수 있습니다.
 
-[create-custom-function](/help/forms/custom-function-core-component-create-function.md) 섹션에서 설명한 대로 사용자 지정 함수에 다음 코드를 추가하여 사용자 지정 함수를 사용하여 드롭다운 목록 옵션을 설정합니다.
+사용자 지정 함수를 사용하여 드롭다운 목록 옵션을 채우려면 [create-custom-function](/help/forms/custom-function-core-component-create-function.md) 섹션에 설명된 대로 다음 코드를 추가합니다.
+
 
 ```javascript
     /**
