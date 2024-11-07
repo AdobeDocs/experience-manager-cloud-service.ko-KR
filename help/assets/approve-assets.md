@@ -3,16 +3,16 @@ title: Experience Manager에서 에셋 승인
 description: ' [!DNL Experience Manager]에서 자산을 승인하는 방법을 알아봅니다.'
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 2%
+source-wordcount: '713'
+ht-degree: 4%
 
 ---
 
 # [!DNL Experience Manager]에서 자산 승인
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 브랜드 관리자 및 마케터는 브랜드 자산에 대한 엄격한 제어를 유지합니다. 모든 채널 및 애플리케이션에서 브랜드 일관성을 보장하기 위해 승인된 최신 버전의 자산만 사용할 수 있습니다.
@@ -96,13 +96,15 @@ AEM as a Cloud Service 인스턴스에서 [!UICONTROL OpenAPI 기능이 있는 D
 
 1. 자산을 선택하고 **[!UICONTROL 세부 정보]**&#x200B;를 클릭합니다.
 
-1. 오른쪽 창에서 사용할 수 있는 렌디션 아이콘을 클릭합니다.
+1. 오른쪽 창에서 사용할 수 있는 Dynamic Media 아이콘을 클릭합니다.
 
-1. **[!UICONTROL 동적]** 섹션에서 사용할 수 있는 **[!UICONTROL OpenAPI가 있는 Dynamic Media]**&#x200B;을(를) 선택하십시오.
+1. **[!UICONTROL Dynamic Media]** 패널에서 사용할 수 있는 **[!UICONTROL OpenAPI가 있는 Dynamic Media]**&#x200B;을(를) 선택합니다.
 
 1. 자산의 배달 URL을 복사하려면 **[!UICONTROL URL 복사]**를 클릭하세요.
-   ![배달 URL 복사](/help/assets/assets/copy-delivery-url.png)
+   ![동적 변환](/help/assets/assets/dm-with-openapi-non-image-assets.png)
 
    >[!NOTE]
    >
    >승인된 에셋에 대한 게재 URL을 복사하는 옵션은 Assets 보기에서만 사용할 수 있습니다.
+
+Dynamic Media 패널 내에 표시되는 다른 변환에 대한 자세한 내용은 [Dynamic Media 변환 보기 및 다운로드](/help/assets/renditions.md#view-download-dm-renditions)를 참조하십시오.

@@ -4,16 +4,16 @@ description: ' [!DNL Assets view]의 사용자 인터페이스 및 탐색을 이
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 86%
+source-wordcount: '998'
+ht-degree: 74%
 
 ---
 
 # 파일 및 폴더로 이동하여 자산 보기 {#view-assets-and-details}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 <!-- TBD: Give screenshots of all views with many assets. Zoom out to showcase how the thumbnails/tiles flow on the UI in different views. -->
@@ -34,7 +34,7 @@ ht-degree: 86%
 
 ## 자산과 폴더 검색 및 보기 {#browse-repository}
 
-메인 사용자 인터페이스 또는 왼쪽 사이드바에서 폴더를 검색할 수 있습니다. 이제 Experience Manager Assets는 콘텐츠를 탐색하거나 검색할 때 폴더 썸네일에 폴더 내용의 시각적 미리보기를 표시하므로 AEM Assets 저장소 내에서 사용할 수 있는 자산의 검색 가능성이 향상됩니다. 이 폴더 썸네일을 사용하면 AEM Assets 저장소의 폴더 내에서 특정 에셋을 검색하는 데 소요되는 시간이 절약됩니다.
+메인 사용자 인터페이스 또는 왼쪽 사이드바에서 폴더를 검색할 수 있습니다. Experience Manager Assets은 컨텐츠를 찾아보거나 검색할 때 폴더 썸네일에 폴더 컨텐츠의 시각적 미리보기를 표시합니다. 이렇게 하면 AEM Assets 저장소 내에서 사용할 수 있는 에셋의 검색 기능이 향상됩니다. 이 폴더 썸네일을 사용하면 AEM Assets 저장소의 폴더 내에서 특정 에셋을 검색하는 데 소요되는 시간이 절약됩니다.
 폴더에서 자산을 검색할 때 인터페이스를 사용하여 자산 썸네일을 보고 저장소를 시각적으로 탐색하거나 자산 세부 사항을 보고 필요한 자산을 빠르게 찾을 수 있습니다. 왼쪽 사이드바에서 사용할 수 있는 옵션은 다음과 같습니다.
 
 * [내 작업 영역](/help/assets/my-workspace-assets-view.md): 이제 Assets에는 Assets 사용자 인터페이스의 주요 영역과 사용자와 가장 관련성이 높은 정보에 편리하게 액세스할 수 있는 위젯을 제공하는 사용자 정의 가능한 작업 영역이 포함됩니다. 이 페이지는 작업 항목에 대한 개요 및 주요 워크플로에 대한 빠른 액세스를 제공하는 종합적인 솔루션 역할을 합니다. 이러한 옵션에 보다 편리하게 액세스하면 효율성과 콘텐츠 속도가 향상됩니다.
@@ -77,9 +77,9 @@ ht-degree: 86%
 
 자산을 미리 보려면 자산을 선택하고 상단의 도구 모음에서 [!UICONTROL 세부 정보] (![details icon](assets/do-not-localize/edit-in-icon.png))를 클릭합니다. 에셋을 볼 수 있을 뿐만 아니라 세부 메타데이터를 보고 다른 작업을 수행할 수도 있습니다.
 
-![자산 미리보기](assets/preview-asset-2.png)
+![자산 미리보기](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A**: 저장소의 현재 폴더 또는 현재 검색 결과로 돌아가기 **B**: 미리 보고 있는 파일의 이름 및 포맷 **C**: 작업 할당 **D**: 고급 메타데이터 **E**: 키워드 및 스마트 태그 **F**: 댓글 및 주석 달기 **G**: 선택한 자산과 관련된 작업 보기 **H**: 버전 보기 및 관리 **I**: 이미지의 렌디션 보기 **J**: 이미지 편집 **K**: 기본 메타데이터 **L**: L: 고급 메타데이터 **M**: 키워드 및 스마트 태그 **N**: 더 자세히 미리보기 확대/축소, 전체 화면 및 기타 옵션 **O**: 폴더로 돌아가지 않고 현재 폴더의 이전 또는 다음 자산으로 진행
+**A**: 저장소의 현재 폴더 또는 현재 검색 결과로 돌아가기 **B**: 미리 보고 있는 파일의 이름 및 형식 **C**: 작업 할당 **D**: 고급 메타데이터 **E**: 키워드 및 스마트 태그 **F**: 댓글 및 주석 **G**: 선택한 에셋과 관련된 작업 보기 **H**: 버전 보기 및 관리 **I**: 이미지 렌디션 보기 **J**: 이미지 편집 **K**: Smart Crop 및 Dynamic Media을 포함한 Dynamic Media 렌디션 보기 API 기능 표현물. **L**: 기본 메타데이터 **M**: 고급 메타데이터 **N**: 키워드 및 스마트 태그 **O**: **P** 폴더로 돌아가지 않고 현재 폴더의 이전 또는 다음 에셋으로 진행: 더 자세히 미리 보기. 확대/축소, 전체 화면 및 기타 옵션
 
 비디오를 미리 볼 수도 있습니다.
 
