@@ -4,10 +4,10 @@ description: AEM as a Cloud Service 팀 및 제품 프로필이 사용 허가된
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 0ff50aa77711d70d372a1f43ad7336c39ab1167c
+source-git-commit: c8534ddf84998377ee63575403417165ccec2dbd
 workflow-type: tm+mt
-source-wordcount: '1821'
-ht-degree: 39%
+source-wordcount: '2059'
+ht-degree: 34%
 
 ---
 
@@ -275,6 +275,27 @@ Forms Communication Solution에 라이센스가 부여되면 해당 제품 프�
 >
 >* AEM 제품 프로필에 대한 자세한 내용은 [AEM 제품 프로필 할당](/help/journey-onboarding/assign-profiles-aem.md) 문서를 참조하십시오.
 >* 온보딩 프로세스에 대한 자세한 내용은 [온보딩 여정](/help/journey-onboarding/overview.md)을 참조하십시오.
+
+### 기존 환경에 대한 제품 프로필 추가 {#adding-product-profiles-for-existing-environments}
+
+2024년 11월 초 전에 생성된 환경에는 위의 섹션에 설명된 조직 수준 제품 인스턴스와 특정 제품 프로필이 누락될 수 있습니다. 기존 제품 프로필에도 서비스 전환이 누락됩니다. 이러한 제품 프로필을 업데이트하는 것이 좋습니다. 이 프로필은 향후 API에 액세스하기 위한 필수 조건입니다.
+
+프로그램에 있는 하나 이상의 환경에서 제품 프로필을 업데이트해야 하는 경우 Cloud Manager에 아래 알림이 표시됩니다. 제품 프로필을 업데이트하려면 환경이 최신 AEM 버전이어야 합니다.
+
+![제품 프로필 현대화](/help/onboarding/assets/modernize-product-profiles.png)
+
+**제품 프로필 추가** 단추를 클릭하면 프로그램 또는 개별 환경에서 사용할 수 있는 모든 환경에 새 제품 프로필을 추가하는 옵션을 표시하는 메뉴가 열립니다.
+
+![환경 바꾸기](/help/onboarding/assets/choose-env-r.png)
+
+**모든 환경**&#x200B;을 클릭하여 프로그램의 모든 환경에 새 제품 프로필을 추가합니다. 또는 **개별 환경**&#x200B;을 클릭하여 선택한 환경에 새 제품 프로필을 추가합니다. 이렇게 하면 사용자가 환경 목록 페이지로 이동하며, 여기서 **추가 옵션** 아이콘에서 **제품 프로필 추가** 작업을 선택할 수 있습니다.
+
+![개별 환경](/help/onboarding/assets/individual-environments.png)
+
+프로그램 개요 페이지의 환경 섹션으로 이동하고 환경에 해당하는 추가 옵션 아이콘을 클릭한 다음 제품 프로필 추가를 선택하여 선택한 환경에 제품 프로필을 추가할 수도 있습니다.
+
+새 제품 프로필이 추가되는 동안 환경 상태가 제품 프로필 추가 를 표시한 다음 프로세스가 완료되면 실행 중 을 표시합니다.
+
 
 ## Cloud Manager 제품 프로필 {#cloud-manager-product-profiles}
 
