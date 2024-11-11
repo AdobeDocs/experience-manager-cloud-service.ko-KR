@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: 9bb2d38feea2690bc112611d429dad22e7bcd278
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1514'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
@@ -24,11 +24,11 @@ ht-degree: 55%
 
 >[!NOTE]
 >
->Experience Cloud 릴리스 정보의 업데이트에 대한 월별 이메일 알림을 받아 보려면 [Adobe 우선 순위 제품 업데이트](https://www.adobe.com/kr/subscription/priority-product-update.html)를 구독하십시오.
+>Experience Cloud 릴리스 정보의 업데이트에 대한 월별 이메일 알림을 받아 보려면 [Adobe 우선순위 제품 업데이트](https://www.adobe.com/kr/subscription/priority-product-update.html)를 구독하십시오.
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Cloud Service] 현재 기능 릴리스(2024.10.0)인 [!DNL Adobe Experience Manager]의 릴리스 날짜는 2024년 10월 31일입니다. 다음 기능 릴리스(2024.11.0)는 2024년 11월 21일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 기능 릴리스(2024.10.0)의 릴리스 일자는 2024년 10월 31일입니다. 다음 기능 릴리스(2024.11.0)는 2024년 11월 21일에 예정되어 있습니다.
 
 ## 유지 관리 릴리스 정보 {#maintenance}
 
@@ -44,9 +44,9 @@ Have a look at the October 2024 Release Overview video for a summary of the feat
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-**현대화 페이지 이벤트**
+**현대화된 페이지 이벤트**
 
-이제 다음 AEM Sites 페이지 이벤트를 AEM as a Cloud Service 이벤트 플랫폼을 기반으로 하는 외부에서 사용할 수 있는 이벤트로 사용할 수 있습니다. 이벤트들은 외부 프로세스들과 상호작용하기 위해 Adobe I/O을 통해 처리될 수 있다.
+이제 다음 AEM Sites 페이지 이벤트를 AEM as a Cloud Service 이벤트 플랫폼으로서의 외부에서 사용할 수 있는 이벤트로 제공됩니다. 해당 이벤트는 Adobe I/O를 통해 처리되어 외부 프로세스와 상호 작용할 수 있습니다.
 * 페이지 게시됨
 * 페이지 게시 취소됨
 * 페이지 삭제됨
@@ -57,9 +57,9 @@ Have a look at the October 2024 Release Overview video for a summary of the feat
 
 이제 Cloud Service에서 액세스 가능한 AEM의 새로운 기능인 [변형 생성](/help/generative-ai/generate-variations.md)을 통해 GenAI를 활용할 수 있습니다. 변형 생성은 생성형 AI를 사용하여 콘텐츠 제작을 생성하고 확장하는 데 도움이 됩니다. 프로그램 참여를 고려한다면 Adobe 계정 팀에 문의하십시오.
 
-**콘텐츠 조각 배달을 위한 AEM REST OpenAPI**
+**콘텐츠 조각 게재를 위한 AEM REST OpenAPI**
 
-[콘텐츠 조각 배달용 AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)를 이제 AEM as a Cloud Service에서 사용할 수 있습니다.
+[콘텐츠 조각 게재를 위한 AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)가 AEM as a Cloud Service에서 현재 사용 가능합니다.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -75,27 +75,27 @@ Dynamic Media 계정에서 AI 생성 캡션 지원에 얼리 액세스하려면 
 
 **예약된 보고서**
 
-이제 Assets 보기에서 반복 일정 또는 미래 날짜에 보고서를 자동으로 생성할 수 있으므로 데이터 기반 인사이트를 발견하는 수고를 줄일 수 있습니다.
+이제 Assets 보기에서 반복적인 일정이나 향후 날짜에 보고서를 자동으로 생성할 수 있어 데이터 기반 인사이트를 발견하는 수고를 줄일 수 있습니다.
 
 ![예약된 보고서-](/help/assets/assets/scheduled-reports-tab.png)
 
 ### Content Hub의 새로운 기능 {#content-hub-new-features}
 
-**사용 허가된 자산에 대한 디지털 권한 관리**
+**사용 허가된 자산용 디지털 자산 관리**
 
-이제 조직은 Content Hub의 사용자에게 라이선스가 부여된 자산에 대한 DRM을 활용하여 라이선스 준수를 높이고, 라이선스 약관이 있는 자산을 공유할 위험을 최소화할 수 있으므로, 라이선스 자산을 다운로드하기 전에 사용자가 라이선스 약관을 검토하고 동의해야 합니다. 자세한 내용은 [Content Hub에서 라이선스 자산 관리](/help/assets/manage-licensed-assets-on-content-hub.md)를 참조하십시오.
+이제 조직은 Content Hub 사용자의 사용 허가된 자산에 대한 DRM을 활용하여 라이선스 규정 준수를 향상시키고 라이선스 약관과 자산을 공유하는 데 따른 위험을 최소화할 수 있으며, 사용자가 사용 허가된 자산 다운로드를 시작하기 전에 라이선스 약관을 검토하고 수락하도록 요구할 수 있습니다. 자세한 내용은 [Content Hub의 사용 허가된 자산 관리](/help/assets/manage-licensed-assets-on-content-hub.md)를 참조하십시오.
 
-![download-multiple-license](/help/assets/assets/download-multiple-license.png)
+![다운로드-다중-라이선스](/help/assets/assets/download-multiple-license.png)
 
 **자산 카드 메타데이터 구성**
 
-이제 Content Hub을 사용하여 에셋 카드에 표시해야 하는 주요 메타데이터 필드를 최대 6개까지 구성할 수 있습니다. 자세한 내용은 [Content Hub 구성](/help/assets/configure-content-hub-ui-options.md#asset-card)의 에셋 카드 섹션을 참조하십시오.
+이제 Content Hub를 사용하면 자산 카드에 표시해야 하는 주요 메타데이터 필드를 최대 6개까지 구성할 수 있습니다. 자세한 내용은 [Content Hub 구성](/help/assets/configure-content-hub-ui-options.md#asset-card)의 자산 카드 섹션을 참조하십시오.
 
-자산 카드의 ![키 메타데이터](/help/assets/assets/asset-card-key-metadata.png)
+![자산 카드의 주요 메타데이터](/help/assets/assets/asset-card-key-metadata.png)
 
-**만료된 에셋의 표시 여부 및 다운로드 구성**
+**만료된 자산의 가시성 및 다운로드 구성**
 
-이제 관리자는 만료된 자산을 Content Hub에 표시할지 여부를 제어할 수 있습니다. 만료된 에셋이 표시되면 사용자가 해당 에셋을 다운로드할 수 있는지도 정의할 수 있습니다. 자세한 내용은 [Content Hub 구성](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub)에서 만료된 Assets 섹션을 참조하십시오.
+이제 관리자는 만료된 자산을 Content Hub에 표시할지 여부를 제어할 수 있습니다. 만료된 자산이 표시되면 사용자가 해당 자산을 다운로드할 수 있는지 여부도 정의할 수 있습니다. 자세한 내용은 [Content Hub 구성](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub)의 만료된 자산 섹션을 참조하십시오.
 
 ![Content Hub의 만료된 자산](/help/assets/assets/expired-assets-content-hub.png)
 
@@ -139,45 +139,45 @@ AEM Forms 얼리 액세스 프로그램은 최첨단 혁신에 독점적으로 �
 
 ### 버그 수정 {#bug-fixes-cif}
 
-* 핵심 CIF 구성 요소에서 UI 테스트가 제대로 작동하지 않는 문제가 해결되었습니다.
-* 카테고리 URL 형식이 클라우드 인스턴스에서 예상대로 작동하지 않는 문제를 해결했습니다.
+* 코어 CIF 구성 요소에서 제대로 작동하도록 UI 테스트를 수정했습니다.
+* 카테고리 URL 형식이 클라우드 인스턴스에서 예상대로 작동하지 않는 문제가 해결되었습니다.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### 양식 제출을 제어하는 구성 {#configuration-submissions}
 
-특정 위치에서 Coral 또는 Foundation 양식에 대한 양식 제출을 제어하기 위해 AEM에 새 구성이 도입되었습니다. `com.adobe.granite.ui.components.FormRestrict`. 이 구성은 다음 두 개의 필드로 구성됩니다.
+특정 위치에서 Coral 또는 Foundation 양식의 제출 양식을 제어하기 위해 AEM은 새로운 구성인 `com.adobe.granite.ui.components.FormRestrict`를 도입했습니다. 이 구성은 두 개의 필드로 구성됩니다.
 
-1. **허용되는 경로 추가**: 양식 작업이 허용되는 경로를 지정합니다.
-1. **동작 제한**: 제한된 경로(허용 목록에 포함되지 않은 경로)에 대한 동작을 결정합니다. 다음 두 옵션 중 하나를 선택할 수 있습니다.
+1. **허용된 경로 추가**: 양식 액션이 허용되는 경로를 지정합니다.
+1. **동작 제한**: 제한된 경로(허용 목록에 포함되지 않은 경로)에 대한 동작을 결정합니다. 두 가지 옵션 중에서 선택할 수 있습니다.
    * **팝업**(기본값): 팝업 알림을 표시합니다.
-   * **Prevent**:양식 제출을 차단합니다.
+   * **방지**: 양식 제출을 차단합니다.
 
 >[!NOTE]
 >
->이 구성은 `/apps`, `/libs`, `/mnt/overlay` 및 `/mnt/override`에 있는 모든 Coral 또는 Foundation 양식에 대해 지원되지 않습니다.
+>이 구성은 `/apps`, `/libs`, `/mnt/overlay` 및 `/mnt/override` 아래에 위치한 모든 Coral 또는 Foundation 양식에 대해 지원되지 않습니다.
 
-### 고급 네트워킹 옵션을 사용한 셀프서비스 로그 전달 {#log-forwarding}
+### 고급 네트워킹 옵션을 통한 셀프서비스 로그 전달 {#log-forwarding}
 
-AEM(Apache/Dispatcher 포함) 및 CDN 로그는 Cloud Manager에서 다운로드할 수 있지만, 많은 조직에서는 이러한 로그를 기본 로깅 대상으로 스트리밍하는 것이 유용할 것으로 생각합니다. AEM은 이제 Azure Blob Storage, Datadog, HTTPS, Elasticsearch(및 OpenSearch) 및 Splunk에 대한 [로그 전달](/help/implementing/developing/introduction/log-forwarding.md)을 지원합니다. AEM 로그는 전용 IP 주소 사용과 같은 고급 네트워킹 구성을 통해 선택적으로 전달할 수 있습니다.
+AEM(Apache/Dispatcher 포함) 및 CDN 로그는 Cloud Manager에서 다운로드할 수 있지만, 많은 조직에서 이러한 로그를 선호하는 로깅 대상으로 스트리밍하는 것이 유용하다고 생각합니다. AEM이 이제 Azure Blob Storage, Datadog, HTTPS, Elasticsearch(및 OpenSearch), Splunk로의 [로그 전달](/help/implementing/developing/introduction/log-forwarding.md)을 지원합니다. AEM 로그는 전용 IP 주소를 사용하는 등 고급 네트워킹 구성을 통해 선택적으로 전달할 수 있습니다.
 
-이 기능은 사용자가 셀프서비스 방식으로 구성하고 [구성 파이프라인](/help/operations/config-pipeline.md)을(를) 사용하여 배포합니다.
+이 기능은 사용자가 셀프서비스 방식으로 구성하고 [구성 파이프라인](/help/operations/config-pipeline.md)을 사용하여 배포합니다.
 
 ### 비즈니스 사용자를 위한 파이프라인 없는 URL 리디렉션 {#pipeline-free-redirects}
 
-브라우저 측 리디렉션은 웹 페이지가 다운되었거나 이동된 경우 또는 기타 시나리오에서 유용합니다. [파이프라인 없는 URL 리디렉션](/help/implementing/dispatcher/pipeline-free-url-redirects.md)을 사용하면 Apache 재작성 맵 파일을 AEM 게시 위치에 배치할 수 있습니다. 이 위치에서 파일은 자동으로 로드되므로 소스 제어에 커밋하거나 Cloud Manager 파이프라인을 시작할 필요가 없습니다.
+브라우저 측 리디렉션은 웹 페이지가 삭제되었거나 이동되었거나 기타 시나리오가 있을 때 유용합니다. [파이프라인이 없는 URL 리디렉션](/help/implementing/dispatcher/pipeline-free-url-redirects.md)을 사용하면 Apache 재작성 맵 파일을 AEM 게시 위치에 배치할 수 있으며, 해당 위치에서 자동으로 로드됩니다. 파일을 소스 제어에 커밋하거나 Cloud Manager 파이프라인을 시작할 필요가 없습니다.
 
-재작성 파일을 게시하는 옵션에는 자산으로 업로드, ACS Commons 재작성 맵 관리자 사용 또는 사용자 지정 사용자 인터페이스와의 상호 작용이 포함됩니다.
+재작성 파일을 게시하는 옵션에는 자산으로 업로드하거나, ACS Commons 재작성 맵 관리자를 사용하거나, 사용자 정의 사용자 인터페이스와 상호 작용하는 것이 있습니다.
 
-### RDE에 대한 파이프라인 구성 {#config-pipeline-rdes}
+### RDE를 위한 구성 파이프라인 {#config-pipeline-rdes}
 
-신속한 개발 환경은 클라우드 환경에서 코드 및 구성을 신속하게 배포하고 테스트하는 강력한 도구입니다. 이제 RDE는 트래픽 필터 규칙 및 요청/응답 변환과 같은 CDN 설정과 로그 전달 및 기타 구성 옵션을 포함하여 [구성 YAML-파일의 동기화](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)를 지원합니다. 자세한 내용은 지원되는 구성 옵션의 전체 목록을 [참조하십시오](/help/operations/config-pipeline.md).
+신속한 개발 환경은 클라우드 환경에서 코드 및 구성을 빠르게 배포하고 테스트할 수 있는 강력한 도구입니다. 이제 RDE는 트래픽 필터 규칙 및 요청/응답 변환과 같은 CDN 설정은 물론 로그 전달 및 기타 구성 옵션을 포함한 [구성 YAML 파일의 동기화](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)를 지원합니다. 자세한 내용은 지원되는 구성 옵션의 [전체 목록을 참조하십시오.](/help/operations/config-pipeline.md)
 
 ### 새 제품 프로필 {#new-product-profiles}
 
-새 AEM 환경이 생성되면 제품 프로필이 자동으로 Adobe Admin Console에 표시되므로 관리자는 라이선스가 부여된 솔루션 및 기능에 대한 액세스 권한을 할당할 수 있습니다.
+새 AEM 환경이 생성되면 제품 프로필이 Adobe Admin Console에 자동으로 표시되므로 관리자는 사용 허가된 솔루션 및 기능에 대한 액세스 권한을 할당할 수 있습니다.
 
-이제 새 환경에는 업데이트된 제품 프로필 세트가 포함되어 있어 Adobe Developer Console에서 API 자격 증명 생성을 포함하여 향후 기능과 호환될 수 있습니다. 기존 환경은 향후 릴리스에서 제품 프로필을 업데이트할 수 있습니다. [자세히 알아보기](/help/onboarding/aem-cs-team-product-profiles.md).
+이제 새로운 환경에는 업데이트된 제품 프로필 세트가 포함되어 있어 Adobe Developer Console에서 API 자격 증명 생성을 포함한 향후 기능과 호환됩니다. 기존 환경에서는 향후 릴리스에서 제품 프로필을 업데이트할 수 있습니다. [자세히 알아보기](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ### 새로운 AEM Developer Console (공개 Beta) {#aem-developer-console-beta}
 
@@ -189,7 +189,7 @@ AEM(Apache/Dispatcher 포함) 및 CDN 로그는 Cloud Manager에서 다운로드
 
 ## [!DNL Experience Manager] 안내서 {#guides}
 
-[여기](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0)에서 Adobe Experience Manager Guides 최신 릴리스의 새로운 기능과 향상된 기능의 전체 목록을 찾을 수 있습니다.
+[여기](https://experienceleague.adobe.com/ko/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0)에서 Adobe Experience Manager Guides 최신 릴리스의 새로운 기능과 향상된 기능의 전체 목록을 찾을 수 있습니다.
 
 ## Cloud Manager {#cloud-manager}
 
