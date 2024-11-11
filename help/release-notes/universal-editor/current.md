@@ -1,18 +1,18 @@
 ---
-title: Universal Editor 2024.11.05 릴리스 노트
-description: 다음은 범용 편집기 2024.11.05 릴리스의 릴리스 정보입니다.
+title: 범용 편집기 2024.11.05 릴리스 정보
+description: 다음은 범용 편집기 2024.11.05 릴리스에 대한 릴리스 정보입니다.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 7ace83e0df1d917c359f07a806da638739b4a4a6
 workflow-type: tm+mt
 source-wordcount: '151'
-ht-degree: 0%
+ht-degree: 29%
 
 ---
 
 
-# Universal Editor 2024.11.05 릴리스 노트 {#release-notes}
+# 범용 편집기 2024.11.05 릴리스 정보 {#release-notes}
 
 다음은 범용 편집기의 2024년 11월 5일 릴리스 정보입니다.
 
