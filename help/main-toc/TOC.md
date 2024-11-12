@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 69428ec9709dae212e568e6100b4451ea3c67289
+source-git-commit: c1ecafc1790917ad247ae05720d6c4ed8e165cea
 workflow-type: tm+mt
-source-wordcount: '5782'
+source-wordcount: '5787'
 ht-degree: 98%
 
 ---
@@ -642,6 +642,7 @@ ht-degree: 98%
       + [태그 관리](/help/assets/tagging-management-assets-view.md)
       + [Content Credentials](/help/assets/content-credentials.md)
       + [AEM 및 Dynamic Media에 자산 게시](/help/assets/publish-assets-to-aem-and-dm.md)
+      + [AEM Assets 보기 UI 확장성](/help/assets/aem-assets-view-ui-extensibility.md)
    + Content Hub {#content-hub}
       + [개요](/help/assets/product-overview.md)
       + [Content Hub 배포](/help/assets/deploy-content-hub.md)
