@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3ebfc556a2b7edeb245f3f039a54c7c561da66dd
+source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
 workflow-type: tm+mt
-source-wordcount: '5791'
+source-wordcount: '5794'
 ht-degree: 98%
 
 ---
@@ -1163,6 +1163,7 @@ ht-degree: 98%
          + [SSL 인증서 관리](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + CDN 구성 {#cdn-configurations}
          + [CDN 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+         + [푸시 유효성 검사 설정](/help/implementing/cloud-manager/cdn-configurations/cdn-setup-push-invalidation.md)
          + [CDN 구성 관리](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + IP 허용 목록 {#ip-allow-lists}
          + [IP 허용 목록 소개](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)

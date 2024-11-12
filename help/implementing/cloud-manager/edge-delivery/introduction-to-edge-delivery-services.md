@@ -4,9 +4,9 @@ description: Edge Delivery Services을 사용하여 Cloud Manager 프로젝트�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3941b7f97d434946a3cb796633f306b89e68c0a4
+source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '752'
 ht-degree: 10%
 
 ---
@@ -32,7 +32,7 @@ AEM as a Cloud Service의 Cloud Manager을 사용하면 프로젝트에 Edge Del
 
 Adobe Experience Manager Sites의 일부로 Edge Delivery Services 라이선스가 부여된 경우 Cloud Manager에서 직접 Edge Delivery Services을 사용하여 사이트를 온보딩하고 [가이드 셀프 서비스 환경을 사용하여](/help/implementing/cloud-manager/managing-code/private-repositories.md) 라이브로 전환할 수 있습니다.
 
-또한 주요 워크플로 전반에서 일관성을 유지하면서 모든 AEM 속성을 관리할 수 있는 통합된 환경에 액세스할 수 있습니다. 여기에는 도메인 이름 관리, SSL 인증서 관리 및 CDN 매핑이 포함됩니다.
+또한 주요 워크플로 전반에서 일관성을 유지하면서 모든 AEM 속성을 관리할 수 있는 통합된 환경에 액세스할 수 있습니다. 이러한 워크플로에는 도메인 이름 관리, SSL 인증서 관리 및 CDN 매핑이 포함됩니다.
 
 ## Edge Delivery Services Adobe 권장 경로 사용의 이점 {#recommended-path-eds}
 
@@ -67,19 +67,20 @@ Cloud Manager을 통해 Edge Delivery Services 라이선스에 액세스하고 �
 
 <!-- &#x2460; for "1" inside circle -->
 
-**Edge Delivery 할 일 목록**&#x200B;은(는) [go-live](/help/journey-onboarding/go-live-checklist.md)까지 온보딩, Edge Delivery 사이트 관리 과정을 안내하는 온보딩 작업 확인 목록입니다.
+**Edge Delivery 할 일 목록**&#x200B;은(는) [Go-Live](/help/journey-onboarding/go-live-checklist.md)까지 온보딩, Edge Delivery 사이트 관리 과정을 안내하는 온보딩 작업 확인 목록입니다.
 
 ![Edge Delivery 사이트 할 일 목록](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | 작업 | 설명 |
 | --- | --- | --- |
 | 1 | 제품 공동 작업 채널 가입 | **지금 요청 제출**&#x200B;을 클릭하면 회사에 대한 채널을 만들기 위한 Adobe 요청을 제출합니다. 채널이 이미 존재하는 경우 회사의 채널로 전달됩니다. |
-| 2 | 사전 요구 사항 완료 | **시작 자습서 보기**&#x200B;를 클릭하면 [시작 - 개발자 자습서](https://www.aem.live/developer/tutorial)(으)로 이동합니다. |
+| 2 | 사전 요구 사항 완료 | [시작 자습서 보기](https://www.aem.live/developer/tutorial)를 참조하십시오. |
 | 3 | Edge Delivery 사이트 추가 | [Edge Delivery 사이트 추가](#eds-add-site)를 참조하십시오. |
 | 4 | 도메인 추가 | [사용자 정의 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)를 참조하십시오. |
 | 5 | SSL 인증서 추가 | [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)를 참조하십시오. |
 | 6 | Edge Delivery 사이트의 CDN 구성 | [CDN 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)를 참조하십시오. |
-| 7 | 실행 | Go Live의 마지막 단계를 완료합니다. |
+| 7 | 푸시 유효성 검사 설정 | [푸시 유효성 검사 설정](/help/implementing/cloud-manager/cdn-configurations/cdn-setup-push-invalidation.md)을 참조하십시오. |
+| 8 | 실행 | [Go-Live 확인 목록](/help/edge/docs/go-live-checklist.md)을 참조하세요. |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 

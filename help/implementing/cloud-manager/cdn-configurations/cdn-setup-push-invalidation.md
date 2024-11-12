@@ -4,17 +4,16 @@ description: 자체 프로덕션 CDN을 구축하기 위해 푸시 무효화를 
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-hide: true
-source-git-commit: 3941b7f97d434946a3cb796633f306b89e68c0a4
+source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '160'
 ht-degree: 2%
 
 ---
 
 # 푸시 무효화 설정
 
-푸시 무효화를 사용하면 작성자가 만든 콘텐츠 업데이트가 게시할 때 CDN(Managed Content Delivery Network)에서 자동으로 제거되므로 최신 콘텐츠만 제공됩니다.
+푸시 무효화를 사용하면 작성자가 게시한 콘텐츠 업데이트가 CDN(Managed Content Delivery Network)에서 자동으로 제거됩니다. 이렇게 하면 최신 콘텐츠만 제공됩니다.
 
 시스템에서는 특정 URL과 캐시 태그 또는 키를 기준으로 콘텐츠를 지워 오래된 버전이 삭제되도록 합니다.
 
@@ -28,3 +27,5 @@ ht-degree: 2%
 | `cdn.prod.type` | 관리됨 |   |
 
 구성 시트가 변경되면 사용자는 업데이트를 적용하려면 [Sidekick 도구](/help/edge/docs/sidekick.md)를 사용하여 미리 보고 활성화해야 합니다.
+
+[Cloud Manager에서 Edge Delivery Services 소개](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list)도 참조하세요.

@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 42b30c12f17106610cfb7f7b4c04c5ab703bab45
+source-git-commit: cd15fd36b8baf8e693ae449031a51fa1febefaee
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 8%
+source-wordcount: '440'
+ht-degree: 10%
 
 ---
 
@@ -31,7 +31,7 @@ Adobe 관리 CDN의 경우 DV SSL 인증서를 사용할 때 ACME 인증이 있�
 
    | 사용 사례 | 단계 |
    | --- | --- |
-   | Cloud Manager의 *기존* Edge Delivery 사이트에 CDN 구성을 추가하고 싶습니다 | a. 왼쪽 메뉴의 **서비스**&#x200B;에서 **Edge Delivery 사이트**&#x200B;를 클릭합니다.<br>b. Edge Delivery 테이블에서 연결된 도메인이 없는 행의 끝에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.<br>c입니다. **CDN 구성**&#x200B;을 클릭합니다.  ![Edge Delivery 사이트에 대한 CDN 구성을 클릭합니다](/help/implementing/cloud-manager/assets/cm-eds-config-cdn.png) |
+   | Cloud Manager의 *기존* Edge Delivery 사이트에 CDN 구성을 추가하고 싶습니다 | a. 왼쪽 메뉴의 **서비스**&#x200B;에서 **Edge Delivery 사이트**&#x200B;를 클릭합니다.<br>b. Edge Delivery 테이블에서 연결된 도메인이 없는 행의 끝에 있는 ![추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭합니다.<br>c입니다. **CDN 구성**&#x200B;을 클릭합니다. |
    | Cloud Manager에 CDN 구성을 추가하려고 합니다. | a. 왼쪽 메뉴의 **서비스**&#x200B;에서 **CDN 구성**&#x200B;을 클릭합니다.<br>b. CDN 구성 페이지의 오른쪽 상단 모서리에서 **추가**&#x200B;를 클릭합니다. |
 
 1. **CDN 구성** 대화 상자의 **원본** 드롭다운 목록에서 다음 중 하나를 선택합니다.
@@ -47,7 +47,7 @@ Adobe 관리 CDN의 경우 DV SSL 인증서를 사용할 때 ACME 인증이 있�
 
    | CDN 유형 | 구성 세부 정보 |
    | --- | --- |
-   | Adobe 관리 CDN | **구성 정보**&#x200B;에서 다음을 수행합니다.<br>a. **도메인** 드롭다운 목록에서 사용할 도메인 이름을 선택합니다.<br>드롭다운 목록에 사용 가능한 확인된 도메인이 없습니까? [사용자 지정 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)를 참조하십시오.<br>b. **SSL 인증서** 드롭다운 목록에서 사용할 인증서를 선택합니다.<br>드롭다운 목록에서 사용할 수 있는 SSL 인증서가 없습니까? [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)를 참조하십시오. |
-   | 기타 CDN 공급자 | 사용 가능한 Adobe 관리 CDN이 아닌 자체 CDN 공급자를 사용하는 경우 이 옵션을 선택합니다.<br>**구성 정보**&#x200B;의 **도메인** 드롭다운 목록에서 사용할 도메인 이름을 선택합니다.<br>드롭다운 목록에 사용 가능한 확인된 도메인이 없습니까? [사용자 지정 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)를 참조하십시오. |
+   | Adobe 관리 CDN | **구성 정보**&#x200B;에서 다음을 수행합니다.<br>a. **도메인** 드롭다운 목록에서 사용할 도메인 이름을 선택합니다.<br>드롭다운 목록에 사용 가능한 확인된 도메인이 없습니까? [사용자 정의 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)를 참조하십시오.<br>b. **SSL 인증서** 드롭다운 목록에서 사용할 인증서를 선택합니다.<br>드롭다운 목록에서 사용할 수 있는 SSL 인증서가 없습니까? [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)를 참조하십시오. |
+   | 기타 CDN 공급자 | 사용 가능한 Adobe 관리 CDN이 아닌 자체 CDN 공급자를 사용하는 경우 이 옵션을 선택합니다.<br>**구성 정보**&#x200B;의 **도메인** 드롭다운 목록에서 사용할 도메인 이름을 선택합니다.<br>드롭다운 목록에 사용 가능한 확인된 도메인이 없습니까? [사용자 정의 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)를 참조하십시오. |
 
 1. **저장**&#x200B;을 클릭합니다.
