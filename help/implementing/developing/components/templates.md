@@ -1,46 +1,60 @@
 ---
-title: 페이지 템플릿
-description: 페이지 템플릿은 새 페이지의 기반으로 사용되는 페이지를 만들 때 사용됩니다
+title: 편집 가능한 템플릿
+description: 페이지를 만들고, 초기 컨텐츠, 구조화된 컨텐츠, 작성 정책 및 레이아웃을 정의할 때 편집 가능한 템플릿을 사용하는 방법에 대해 알아봅니다.
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 33eb71b2828314ee2c75206ef7034313e2638360
 workflow-type: tm+mt
-source-wordcount: '3268'
+source-wordcount: '3443'
 ht-degree: 4%
 
 ---
 
-# 페이지 템플릿 {#page-templates}
+# 편집 가능한 템플릿 {#editable-templates}
 
-페이지를 만들 때 템플릿을 선택해야 합니다. 페이지 템플릿은 새 페이지의 기반으로 사용됩니다. 템플릿은 결과 페이지의 구조, 초기 콘텐츠 및 사용할 수 있는 구성 요소(디자인 속성)를 정의합니다. 여기에는 다음과 같은 몇 가지 이점이 있습니다.
+페이지를 만들고, 초기 컨텐츠, 구조화된 컨텐츠, 작성 정책 및 레이아웃을 정의할 때 편집 가능한 템플릿을 사용하는 방법에 대해 알아봅니다.
 
-* 페이지 템플릿을 사용하면 전문 작성자가 [템플릿을 만들고 편집](/help/sites-cloud/authoring/page-editor/templates.md)할 수 있습니다.
-   * 이러한 전문 작성자를 **템플릿 작성자**&#x200B;라고 합니다.
-   * 템플릿 작성자는 `template-authors` 그룹의 구성원이어야 합니다.
-* 페이지 템플릿에서 만든 모든 페이지에 대한 동적 연결은 유지됩니다. 이렇게 하면 템플릿에 대한 모든 변경 사항이 페이지 자체에 반영됩니다.
-* 페이지 템플릿 을 사용하면 페이지 구성 요소를 보다 일반적으로 사용할 수 있으므로 맞춤화 없이 핵심 페이지 구성 요소를 사용할 수 있습니다.
+## 개요 {#overview}
 
-페이지 템플릿을 사용하면 페이지를 만드는 조각이 구성 요소 내에서 격리됩니다. UI에서 필요한 구성 요소 조합을 구성할 수 있으므로 각 페이지 변형에 대해 새로운 페이지 구성 요소를 개발할 필요가 없습니다.
+페이지를 만들 때 템플릿을 선택해야 합니다. 페이지 템플릿은 새 페이지의 기반으로 사용됩니다. 템플릿은 결과 페이지의 구조, 초기 콘텐츠 및 사용할 수 있는 구성 요소(디자인 속성)를 정의할 수 있습니다.
+
+* 편집 가능한 템플릿을 사용하면 작성자가 템플릿을 만들고 사용할 수 있습니다.
+* 편집 가능한 템플릿은 를 사용하여 편집할 수 있는 페이지를 만드는 데 사용할 수 있습니다.
+   * [페이지 편집기](/help/sites-cloud/authoring/page-editor/templates.md) 및
+   * [범용 편집기](/help/sites-cloud/authoring/universal-editor/templates.md)
+
+범용 편집기로 편집 가능한 페이지를 만드는 데 사용되는 페이지 템플릿은 편집 가능한 템플릿 기능의 제한된 하위 집합을 사용합니다. 따라서 이 문서의 나머지 부분은 페이지 편집기로 편집할 수 있는 페이지를 만드는 데 사용되는 편집 가능한 템플릿에 중점을 둡니다.
+
+## 페이지 편집기로 편집 가능한 템플릿 및 페이지 {#page-editor}
+
+페이지 편집기로 편집할 수 있는 페이지를 만드는 템플릿을 만들 때 일반적으로 전문화된 작성자가 식별됩니다.
+
+* 이러한 전문 작성자를 **템플릿 작성자**&#x200B;라고 합니다.
+* 템플릿 작성자는 `template-authors` 그룹의 구성원이어야 합니다.
+* 편집 가능한 템플릿은 템플릿에서 만든 모든 페이지에 대한 동적 연결을 유지합니다. 이렇게 하면 템플릿에 대한 모든 변경 사항이 페이지 자체에 반영됩니다.
+* 편집 가능한 템플릿을 사용하면 페이지 구성 요소의 일반성이 향상되므로 맞춤화 없이 핵심 페이지 구성 요소를 사용할 수 있습니다.
+
+편집 가능한 템플릿을 사용하면 페이지를 만드는 조각이 구성 요소 내에 격리됩니다. UI에서 필요한 구성 요소 조합을 구성할 수 있으므로 각 페이지 변형에 대해 새로운 페이지 구성 요소를 개발할 필요가 없습니다.
 
 이 문서는
 
-* 페이지 템플릿 만들기에 대한 개요를 제공합니다.
+* 편집 가능한 템플릿 만들기에 대한 개요를 제공합니다.
 * 편집 가능한 템플릿을 만드는 데 필요한 관리/개발자 작업에 대해 설명합니다.
 * 편집 가능한 템플릿의 기술 정보를 설명합니다
 * AEM이 템플릿의 가용성을 평가하는 방법을 설명합니다.
 
 >[!NOTE]
 >
->이 문서에서는 사용자가 이미 템플릿 만들기 및 편집에 익숙하다고 가정합니다. 템플릿 작성자에게 노출되는 편집 가능한 템플릿의 기능에 대해 자세히 설명하는 작성 문서 [페이지 템플릿 만들기](/help/sites-cloud/authoring/page-editor/templates.md)를 참조하십시오.
+>이 문서에서는 사용자가 이미 템플릿 만들기 및 편집에 익숙하다고 가정합니다. 템플릿 작성자에게 표시되는 편집 가능한 템플릿의 기능에 대해 자세히 설명하는 작성 문서 [페이지 편집기로 편집할 수 있는 페이지를 만드는 템플릿](/help/sites-cloud/authoring/page-editor/templates.md)을 참조하십시오.
 
 >[!TIP]
 >
->[WKND 튜토리얼](/help/implementing/developing/introduction/develop-wknd-tutorial.md)은(는) 예제를 구현하여 페이지 템플릿을 사용하는 방법에 대해 자세히 알아보고 새 프로젝트에서 템플릿을 설정하는 방법을 이해하는 데 유용합니다
+>[WKND 튜토리얼](/help/implementing/developing/introduction/develop-wknd-tutorial.md)에서는 예제를 구현하여 편집 가능한 템플릿을 사용하는 방법에 대해 자세히 알아보고 새 프로젝트에서 템플릿을 설정하는 방법을 이해하는 데 유용합니다
 
-## 새 템플릿 만들기 {#creating-a-new-template}
+## 편집 가능한 새 템플릿 만들기 {#creating-a-new-template}
 
-페이지 템플릿 만들기는 주로 템플릿 작성자가 [템플릿 콘솔 및 템플릿 편집기](/help/sites-cloud/authoring/page-editor/templates.md)를 사용하여 수행합니다. 이 섹션은 이 프로세스에 대한 개요를 제공하며 다음 기술 수준에서 발생하는 사항에 대한 설명을 제공합니다.
+편집 가능한 템플릿 만들기는 주로 템플릿 작성자가 [템플릿 콘솔 및 템플릿 편집기](/help/sites-cloud/authoring/page-editor/templates.md)를 사용하여 수행합니다. 이 섹션은 이 프로세스에 대한 개요를 제공하며 다음 기술 수준에서 발생하는 사항에 대한 설명을 제공합니다.
 
 편집 가능한 템플릿을 만들 때 다음 작업을 수행하십시오.
 
@@ -60,7 +74,7 @@ ht-degree: 4%
    * 페이지 작성자가 구성 요소를 추가 및 제거할 수 있도록 하려면 템플릿에 단락 시스템을 추가하십시오.
    * 초기 콘텐츠를 정의할 수 있도록 하려면 구성 요소 잠금을 해제했다가 다시 잠글 수 있습니다.
 
-   템플릿 작성자가 구조를 정의하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author)를 참조하십시오.
+   템플릿 작성자가 구조를 정의하는 방법에 대한 자세한 내용은 [페이지 편집기로 편집할 수 있는 페이지 만들기 템플릿](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author)을 참조하십시오.
 
    구조에 대한 기술적인 세부 정보는 이 문서의 [구조](#structure)를 참조하십시오.
 
@@ -72,7 +86,7 @@ ht-degree: 4%
 
    * 이러한 속성은 템플릿(및 템플릿으로 만든 페이지)에 적용될 수 있습니다.
 
-   템플릿 작성자가 정책을 정의하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author)를 참조하십시오.
+   템플릿 작성자가 정책을 정의하는 방법에 대한 자세한 내용은 [페이지 편집기로 편집할 수 있는 페이지 만들기 템플릿](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author)을 참조하십시오.
 
    정책에 대한 기술적인 세부 정보는 이 문서에서 [콘텐츠 정책](#content-policies)을(를) 참조하십시오.
 
@@ -81,7 +95,7 @@ ht-degree: 4%
    * 초기 콘텐츠 는 템플릿을 기반으로 페이지를 처음 만들 때 표시되는 콘텐츠를 정의합니다.
    * 그런 다음 페이지 작성자는 초기 콘텐츠를 편집할 수 있습니다.
 
-   템플릿 작성자가 구조를 정의하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-initial-content-author)를 참조하십시오.
+   템플릿 작성자가 구조를 정의하는 방법에 대한 자세한 내용은 [페이지 편집기로 편집할 수 있는 페이지 만들기 템플릿](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-initial-content-author)을 참조하십시오.
 
    초기 콘텐츠에 대한 자세한 내용은 이 문서에서 [초기 콘텐츠](#initial-content)를 참조하십시오.
 
@@ -90,7 +104,7 @@ ht-degree: 4%
    * 디바이스 범위에 대한 템플릿 레이아웃을 정의할 수 있습니다.
    * 템플릿에 대한 응답형 레이아웃은 페이지 작성의 경우와 마찬가지로 작동합니다.
 
-   템플릿 작성자가 템플릿 레이아웃을 정의하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-layout-template-author)를 참조하십시오.
+   템플릿 작성자가 템플릿 레이아웃을 정의하는 방법에 대한 자세한 내용은 [페이지 편집기로 편집할 수 있는 페이지를 만드는 템플릿](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-layout-template-author)을 참조하십시오.
 
    템플릿 레이아웃에 대한 기술적인 세부 정보는 이 문서의 [레이아웃](#layout)을(를) 참조하십시오.
 
@@ -99,7 +113,7 @@ ht-degree: 4%
    * 페이지 작성자가 템플릿을 사용하거나 사용할 수 없게 하기 위해 템플릿을 활성화하거나 비활성화할 수 있습니다.
    * 특정 페이지 분기에서 템플릿을 사용하거나 사용할 수 없게 지정할 수 있습니다.
 
-   템플릿 작성자가 템플릿을 사용하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author)를 참조하십시오.
+   템플릿 작성자가 템플릿을 사용하는 방법에 대한 자세한 내용은 [페이지 편집기로 편집할 수 있는 페이지 만들기 템플릿](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author)을 참조하십시오.
 
    템플릿 사용에 대한 자세한 내용은 이 문서에서 [템플릿 사용 및 허용](#enabling-and-allowing-a-template-for-use)을 참조하십시오
 
@@ -129,8 +143,6 @@ ht-degree: 4%
 >모든 샘플 콘텐츠 페이지에는 `cq.shared`이(가) 포함되어 있으므로 이를 기반으로 하는 모든 콘텐츠에는 자동으로 `cq.shared`이(가) 포함됩니다. 그러나 샘플 콘텐츠를 기반으로 하지 않고 처음부터 고유한 콘텐츠 페이지를 만들려는 경우에는 `cq.shared` 네임스페이스를 포함해야 합니다.
 >
 >자세한 내용은 [클라이언트측 라이브러리 사용](/help/implementing/developing/introduction/clientlibs.md)을 참조하십시오.
-
-
 
 ## 템플릿 폴더 {#template-folders}
 
@@ -357,7 +369,7 @@ When creating an editable template, the value is copied from the template type t
 
 다른 템플릿의 기반으로 사용할 수 있는 템플릿을 생성한 경우 이 템플릿을 템플릿 유형으로 복사할 수 있습니다.
 
-1. 임의의 페이지 템플릿과 마찬가지로 템플릿을 만듭니다. [페이지 템플릿 만들기](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author)를 참조하십시오. 이 작업은 템플릿 유형의 기반으로 사용됩니다.
+1. 임의의 페이지 템플릿과 마찬가지로 템플릿을 만듭니다. [페이지 편집기로 편집할 수 있는 페이지를 만드는 템플릿](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author)을 참조하세요. 이 작업은 템플릿 유형의 기반으로 사용됩니다.
 1. CRXDE Lite을 사용하여 `templates` 노드에서 [템플릿 폴더](#template-folders) 아래의 `template-types` 노드로 만든 템플릿을 복사합니다.
 1. [템플릿 폴더](#template-folders) 아래의 `templates` 노드에서 템플릿을 삭제하십시오.
 1. `template-types` 노드 아래에 있는 템플릿의 복사본에서 모든 `jcr:content` 노드에서 모든 `cq:template` 및 `cq:templateType` 속성을 삭제합니다.
@@ -455,9 +467,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 ### 레이아웃 {#layout}
 
-[템플릿을 편집할 때 레이아웃을 정의할 수 있습니다](/help/sites-cloud/authoring/page-editor/templates.md). 이 레이아웃은 [표준 반응형 레이아웃](/help/sites-cloud/authoring/page-editor/responsive-layout.md)을 사용합니다.
-
-<!-- that can also be [configured](/help/sites-administering/configuring-responsive-layout.md). -->
+[템플릿을 편집할 때 레이아웃을 정의할 수 있습니다](/help/sites-cloud/authoring/page-editor/templates.md). 이 레이아웃은 [표준 반응형 레이아웃](/help/sites-cloud/administering/responsive-layout.md)을 사용합니다. [콘텐츠 작성자가 페이지에서 구성할 수 있습니다.](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 
 ### 컨텐츠 정책 {#content-policies}
 

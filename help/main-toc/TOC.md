@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8406caedaec4236d9fb2a0ce3e97f96417186c45
+source-git-commit: 69428ec9709dae212e568e6100b4451ea3c67289
 workflow-type: tm+mt
-source-wordcount: '5780'
+source-wordcount: '5782'
 ht-degree: 98%
 
 ---
@@ -362,7 +362,7 @@ ht-degree: 98%
          + [범용 편집기로 콘텐츠 작성](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [범용 편집기로 콘텐츠 게시](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [범용 편집기에서의 콘텐츠 상속](/help/sites-cloud/authoring/universal-editor/inheritance.md)
-         + [페이지 템플릿](/help/edge/wysiwyg-authoring/templates.md)
+         + [페이지 템플릿](/help/sites-cloud/authoring/universal-editor/templates.md)
       + 조각 {#fragments}
          + [콘텐츠 조각](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [경험 조각](/help/sites-cloud/authoring/fragments/experience-fragments.md)
@@ -454,6 +454,7 @@ ht-degree: 98%
             + [번역 모범 사례](/help/sites-cloud/administering/translation/best-practices.md)
       + [태그 관리](/help/sites-cloud/administering/tags.md)
       + [워크플로 관리](/help/sites-cloud/administering/workflows-administering.md)
+      + [템플릿 콘솔](/help/sites-cloud/administering/templates-console.md)
    + AEM as a Cloud Service와 통합 {#integrations}
       + [Adobe Analytics와 통합](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Adobe Analytics 자동 설정과 통합](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)

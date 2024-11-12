@@ -4,13 +4,13 @@ description: 진행 중인 AEM Sites 기능 및 사용 사례를 알아보고 Ed
 solution: Experience Manager Sites
 feature: Edge Delivery Services
 role: User
-source-git-commit: 50421f55444f61d64cd2ecd046bd7bc5f1f859e3
+exl-id: 21745f53-a7ef-4eec-9170-b267c2f4314e
+source-git-commit: dbe4cd619f4dc680e6fc4826f6a4fea92bab9707
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 4%
 
 ---
-
 
 # Edge Delivery Services을 위한 진행 중인 사이트 기능 {#wip-sites-features}
 
@@ -34,8 +34,8 @@ AEM Sites에서 Edge Delivery Services을 사용할 때 대부분의 Sites 기�
 | [구성 요소 상속](/help/sites-cloud/administering/msm-and-translation.md) | 부분적으로 사용 가능하 | 구성 요소는 콘텐츠를 상속하지만 상속은 페이지 수준에서만 되돌릴 수 있습니다. | [유니버설 편집기의 콘텐츠 상속](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
 | [언어 사본](/help/sites-cloud/administering/translation/overview.md) | 부분적으로 사용 가능하 | 구성 요소는 콘텐츠를 상속하지만 상속은 페이지 수준에서만 되돌릴 수 있습니다. | [유니버설 편집기의 콘텐츠 상속](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
 | [다중 사이트 관리](/help/sites-cloud/administering/msm/overview.md) | 부분적으로 사용 가능하 | 구성 요소는 콘텐츠를 상속하지만 상속은 페이지 수준에서만 되돌릴 수 있습니다. | [유니버설 편집기의 콘텐츠 상속](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
-| [론치](/help/sites-cloud/authoring/launches/overview.md) | 부분적으로 사용 가능하 | 구성 요소는 콘텐츠를 상속하지만 상속은 페이지 수준에서만 되돌릴 수 있습니다. | [Universal Editor에서 컨텐츠 상속](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
-| [페이지 템플릿](/help/sites-cloud/authoring/page-editor/templates.md) | 개봉박두! | 템플릿에서 만든 페이지는 원본 템플릿의 독립적인 복사본입니다. | [범용 편집기에서 페이지 템플릿 사용](/help/edge/wysiwyg-authoring/templates.md) |
+| [론치](/help/sites-cloud/authoring/launches/overview.md) | 부분적으로 사용 가능하 | 구성 요소는 콘텐츠를 상속하지만 상속은 페이지 수준에서만 되돌릴 수 있습니다. | [유니버설 편집기의 콘텐츠 상속](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
+| [페이지 템플릿](/help/sites-cloud/authoring/page-editor/templates.md) | 곧 출시 예정! | 템플릿에서 생성된 페이지는 원본 템플릿의 독립적인 복사본입니다. | [범용 편집기에서 페이지 템플릿 사용](/help/sites-cloud/authoring/universal-editor/templates.md) |
 | [Context Hub 및 타깃팅](/help/sites-cloud/authoring/personalization/overview.md) | 사용할 수 없음 |  |  |
 | [타임워프](/help/sites-cloud/authoring/launches/preview.md) | 사용할 수 없음 |  |  |
 | [관련 콘텐츠](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#associated-content-browser) | 사용할 수 없음 |  |  |

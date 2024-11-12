@@ -3,7 +3,8 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2024.8.0 릴리�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2024.8.0 릴리스 정보입니다.'
 feature: Release Information
 role: Admin
-source-git-commit: d6f058bbb6bd7222327ff7bf3c5fe6a6ecf0461b
+exl-id: dd1d4b8f-8331-4e97-a754-37e720974db6
+source-git-commit: dbe4cd619f4dc680e6fc4826f6a4fea92bab9707
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 100%
@@ -22,7 +23,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Experience Cloud 릴리스 정보의 업데이트에 대한 월별 이메일 알림을 받아 보려면 [Adobe 우선 순위 제품 업데이트](https://www.adobe.com/kr/subscription/priority-product-update.html)를 구독하십시오.
+>Experience Cloud 릴리스 정보의 업데이트에 대한 월별 이메일 알림을 받아 보려면 [Adobe 우선순위 제품 업데이트](https://www.adobe.com/kr/subscription/priority-product-update.html)를 구독하십시오.
 
 ## 릴리스 일자 {#release-date}
 
@@ -52,7 +53,7 @@ ht-degree: 100%
 또한 다음 페이지 관리 기능이 지원됩니다.
 
 * [AEM 태그](/help/sites-cloud/authoring/sites-console/tags.md)는[분류 체계](/help/edge/wysiwyg-authoring/taxonomy.md)로서 Edge Delivery Services로 내보낼 수 있습니다.
-* Edge Delivery Services용 [템플릿](/help/edge/wysiwyg-authoring/templates.md)이 곧 제공될 예정입니다.
+* Edge Delivery Services용 [템플릿](/help/sites-cloud/authoring/universal-editor/templates.md)이 곧 제공될 예정입니다.
 
 ### 얼리 어답터 프로그램 {#sites-early-adopter}
 
