@@ -1,10 +1,10 @@
 ---
-title: 범용 편집기 2024.11.12 릴리스 정보
-description: 다음은 범용 편집기 2024.11.12 릴리스에 대한 릴리스 정보입니다.
+title: 범용 편집기 2024.11.13 릴리스 정보
+description: 다음은 범용 편집기 2024.11.13 릴리스에 대한 릴리스 정보입니다.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 03ccad00e689052ada8cca976d6c385be01d3cc9
+source-git-commit: 98795cab471470442cf5c424a67ce2846cfe85dc
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 12%
@@ -12,9 +12,9 @@ ht-degree: 12%
 ---
 
 
-# 범용 편집기 2024.11.12 릴리스 정보 {#release-notes}
+# 범용 편집기 2024.11.13 릴리스 정보 {#release-notes}
 
-유니버설 편집기의 2024년 11월 12일 릴리스에 대한 릴리스 정보입니다.
+유니버설 편집기의 2024년 11월 13일 릴리스에 대한 릴리스 정보입니다.
 
 >[!TIP]
 >
