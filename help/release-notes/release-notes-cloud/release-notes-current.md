@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 9bb2d38feea2690bc112611d429dad22e7bcd278
-workflow-type: ht
-source-wordcount: '1514'
-ht-degree: 100%
+source-git-commit: 428942c8fd4a4b83dc5d226e48eda190165768d4
+workflow-type: tm+mt
+source-wordcount: '1670'
+ht-degree: 89%
 
 ---
 
@@ -101,11 +101,19 @@ Dynamic Media 계정에서 AI 생성 캡션 지원에 얼리 액세스하려면 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
+### AEM Forms의 새로운 기능 {#forms-new-features}
+
+* **패널 레이아웃의 탐색 단추를 사용하여 사용자 환경 개선**: 이제 가로 탭, 세로 탭, 아코디언 또는 마법사와 같은 탐색 단추를 패널 레이아웃에 추가할 수 있습니다. 이러한 단추는 선택한 패널에 초점을 맞춰 패널 간 전환을 단순화하여 사용자 경험을 향상시킵니다.
+
+* **DoR(Document of Record) 구성 요소의 표시 스타일을 지정합니다**: 이제 XFA 파일에서 기록 문서 구성 요소의 표시 스타일을 지정할 수 있습니다. 이러한 스타일은 나중에 적응형 Forms 편집기의 해당 구성 요소에 적용할 수 있습니다.
+
 ### AEM Forms의 새로운 프리릴리스 기능 {#forms-new-prerelease-features}
 
-#### 핵심 구성 요소 기반 적응형 양식의 초안 자동 저장
+* **적응형 Forms 기반의 핵심 구성 요소에 대한 초안 자동 저장**: 이제 사용자는 부분적으로 완료된 양식을 초안으로 자동 저장하는 자동 저장 기능을 활용할 수 있습니다. 나중에 돌아와 동일한 디바이스 또는 다른 디바이스에서 작성을 마칠 수 있습니다. 이 기능을 통해 사용자가 처음부터 양식을 작성할 필요가 없으므로 양식 폐기를 방지하여 전환율을 높일 수 있습니다.
 
-이제 사용자는 부분적으로 완료된 양식을 초안으로 자동 저장하는 자동 저장 기능을 활용할 수 있습니다. 나중에 돌아와 동일한 디바이스 또는 다른 디바이스에서 작성을 마칠 수 있습니다. 이 기능을 통해 사용자가 처음부터 양식을 작성할 필요가 없으므로 양식 폐기를 방지하여 전환율을 높일 수 있습니다.
+* **Adobe Sign 범위를 쉽게 업데이트**: AEM Cloud 구성 페이지에서 직접 Adobe Sign 구성의 범위를 수정할 수 있으므로 기존 구성을 더 빠르고 쉽게 업데이트할 수 있습니다.
+
+* **적응형 Forms에 대한 비동기 기능 지원**: 적응형 양식에 외부 프로세스 대기 또는 데이터 검색과 같은 비동기 작업이 필요한 경우, 사용자 지정 함수로 이러한 작업을 구현하고 규칙 편집기에서 구성할 수 있습니다.
 
 ### AEM Forms의 얼리 액세스 기능 {#forms-new-early-access-features}
 
