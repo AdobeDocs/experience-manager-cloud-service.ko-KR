@@ -4,9 +4,9 @@ description: Edge Delivery Services을 사용하여 Cloud Manager 프로젝트�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
+source-git-commit: abd0fa0ea3e6e18187bcb60731ec6fe823a98e45
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '757'
 ht-degree: 10%
 
 ---
@@ -79,7 +79,7 @@ Cloud Manager을 통해 Edge Delivery Services 라이선스에 액세스하고 �
 | 4 | 도메인 추가 | [사용자 정의 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)를 참조하십시오. |
 | 5 | SSL 인증서 추가 | [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)를 참조하십시오. |
 | 6 | Edge Delivery 사이트의 CDN 구성 | [CDN 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)를 참조하십시오. |
-| 7 | 푸시 유효성 검사 설정 | [푸시 유효성 검사 설정](/help/implementing/cloud-manager/cdn-configurations/cdn-setup-push-invalidation.md)을 참조하십시오. |
+| 7 | 푸시 유효성 검사 설정 | [Edge Delivery 사이트에 대한 푸시 유효성 검사 설정](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)을 참조하십시오. |
 | 8 | 실행 | [Go-Live 확인 목록](/help/edge/docs/go-live-checklist.md)을 참조하세요. |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
