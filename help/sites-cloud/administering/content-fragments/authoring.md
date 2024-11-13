@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '2704'
 ht-degree: 76%
 
 ---
@@ -60,6 +60,7 @@ ht-degree: 76%
    * **속성** 탭에서 조각 또는 **변형**&#x200B;에 대한 **제목** 및 **설명**&#x200B;을 업데이트할 수 있습니다.
 * 중앙 패널: 선택한 변형의 실제 필드와 콘텐츠 표시
    * 콘텐츠 편집 허용
+      * 모델에 복수로 구성된 경우 다양한 데이터 형식을 사용하면 관련 필드의 인스턴스를 **추가**&#x200B;할 수 있습니다
    * **탭 자리 표시자** 필드가 모델 내에 정의되어 있으면 여기에 표시되고 탐색에 사용할 수 있습니다. 필드는 가로로 표시되거나 드롭다운 목록으로 표시됩니다.
 
   >[!NOTE]

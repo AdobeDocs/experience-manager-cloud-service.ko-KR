@@ -5,10 +5,10 @@ exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 45%
+source-wordcount: '292'
+ht-degree: 44%
 
 ---
 
@@ -20,7 +20,7 @@ Adobe Experience Manager의 콘텐츠 조각(AEM as a Cloud Service)의 경우 �
 >
 >콘텐츠 조각은 Sites 기능이지만 **자산**&#x200B;으로 저장됩니다.
 >
->콘텐츠 조각 작성용 편집기에는 두 가지가 있습니다. 이 섹션에서는 주로 **Assets** 콘솔에서 액세스하는 원본 편집기에 대해 설명합니다.
+>콘텐츠 조각 작성에는 두 개의 편집기가 있습니다. 기본 기능은 동일하지만 몇 가지 차이점이 있습니다. 이 섹션에서는 주로 **Assets** 콘솔에서 액세스하는 원본 편집기에 대해 설명합니다.
 
 ## 관련 콘텐츠 추가 {#adding-associated-content}
 

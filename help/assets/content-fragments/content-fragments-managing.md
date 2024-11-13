@@ -5,9 +5,9 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '1885'
+source-wordcount: '1896'
 ht-degree: 75%
 
 ---
@@ -41,7 +41,7 @@ Headless 콘텐츠의 기반 또는 페이지 작성으로 Assets 콘솔을 사�
 >
 >이제 **Assets** 콘솔에서 관리할 수 있지만 주로 **[콘텐츠 조각](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** 콘솔로 관리됩니다. 이 섹션에서는 **Assets** 콘솔의 관리에 대해 설명합니다.
 >
->콘텐츠 조각 작성용 편집기에는 두 가지가 있습니다. 이 섹션에서는 주로 **Assets** 콘솔에서 액세스하는 원본 편집기에 대해 설명합니다. 새 편집기(**콘텐츠 조각** 콘솔에서 주로 액세스)에 대한 자세한 내용은 사이트 설명서 [콘텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md)을 참조하십시오. 두 편집기 모두 상단 도구 모음에 토글 스위치가 있어 다른 편집기에 빠르게 액세스할 수 있습니다.
+>콘텐츠 조각 작성에는 두 개의 편집기가 있습니다. 기본 기능은 동일하지만 몇 가지 차이점이 있습니다. 이 섹션에서는 주로 **Assets** 콘솔에서 액세스하는 원본 편집기에 대해 설명합니다. 새 편집기(**콘텐츠 조각** 콘솔에서 주로 액세스)에 대한 자세한 내용은 사이트 설명서 [콘텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md)을 참조하십시오. 두 편집기 모두 상단 도구 모음에 토글 스위치가 있어 다른 편집기에 빠르게 액세스할 수 있습니다.
 
 ## 콘텐츠 조각 만들기 {#creating-content-fragments}
 

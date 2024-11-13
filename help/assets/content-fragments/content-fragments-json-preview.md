@@ -5,10 +5,10 @@ exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 72%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ AEM Headless 구현의 일부로 콘텐츠 조각용 모델을 개발할 때, �
 >
 >콘텐츠 조각은 Sites 기능이지만 **자산**&#x200B;으로 저장됩니다.
 >
->콘텐츠 조각 작성용 편집기에는 두 가지가 있습니다. 이 섹션에서는 주로 **Assets** 콘솔에서 액세스하는 원본 편집기에 대해 설명합니다. 새 편집기(**콘텐츠 조각** 콘솔에서 주로 액세스)에 대한 자세한 내용은 사이트 설명서 [콘텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md)을 참조하십시오.
+>콘텐츠 조각 작성에는 두 개의 편집기가 있습니다. 기본 기능은 동일하지만 몇 가지 차이점이 있습니다. 이 섹션에서는 주로 **Assets** 콘솔에서 액세스하는 원본 편집기에 대해 설명합니다. 새 편집기(**콘텐츠 조각** 콘솔에서 주로 액세스)에 대한 자세한 내용은 사이트 설명서 [콘텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md)을 참조하십시오.
 
 **미리보기** 아이콘을 사용하여
 

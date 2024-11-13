@@ -5,10 +5,10 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '2474'
-ht-degree: 53%
+source-wordcount: '2504'
+ht-degree: 52%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 53%
 >
 >콘텐츠 조각은 Sites 기능이지만 **자산**&#x200B;으로 저장됩니다.
 >
->콘텐츠 조각 작성용 편집기에는 두 가지가 있습니다. 이 섹션에서는 주로 **Assets** 콘솔에서 액세스하는 원본 편집기에 대해 설명합니다. 새 편집기(**콘텐츠 조각** 콘솔에서 주로 액세스)에 대한 자세한 내용은 사이트 설명서 [콘텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md)을 참조하십시오.
+>콘텐츠 조각 작성에는 두 개의 편집기가 있습니다. 기본 기능은 동일하지만 몇 가지 차이점이 있습니다. 이 섹션에서는 주로 **Assets** 콘솔에서 액세스하는 원본 편집기에 대해 설명합니다. 새 편집기(**콘텐츠 조각** 콘솔에서 주로 액세스)에 대한 자세한 내용은 사이트 설명서 [콘텐츠 조각 - 작성](/help/sites-cloud/administering/content-fragments/authoring.md)을 참조하십시오.
 
 **변형** 탭에서 다음을 수행할 수 있습니다.
 
@@ -56,6 +56,8 @@ ht-degree: 53%
 다음과 같은 작업을 수행할 수 있습니다.
 
 * **변형** 탭에서 직접 콘텐츠를 편집합니다. 각 데이터 유형은 다음 예와 같이 다양한 편집 옵션을 제공합니다.
+
+   * 모델에 복수로 구성된 경우 다양한 데이터 형식을 사용하면 관련 필드의 인스턴스를 **추가**&#x200B;할 수 있습니다
 
    * **여러 줄 텍스트** 필드의 경우 [전체 화면 편집기](#full-screen-editor)를 열어 다음을 수행할 수도 있습니다.
 
