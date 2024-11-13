@@ -3,9 +3,10 @@ title: AEM Assets 보기 UI 확장성
 description: AEM Assets 보기의 UI 확장성 기능에 대해 알아봅니다. AEM Assets 보기 UI를 사용하면 특정 비즈니스 요구 사항을 충족하도록 사용자 지정 UI 구성 요소를 추가할 수 있습니다.
 feature: App Builder
 role: User, Developer
-source-git-commit: c1446200898102881a20508031d4853c61f7c964
+exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
+source-git-commit: e47a8fc65e58ae2ffff805966d7dae8c6edc7aac
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '581'
 ht-degree: 3%
 
 ---
@@ -26,7 +27,7 @@ AEM Assets 보기에는 UI 확장성 기능이 있습니다. 이 기능을 사�
 다음과 같은 방법으로 Assets 보기에 액세스합니다.
 ![access-assets-view-ui](/help/assets/assets/access-assets-view.jpg)
 
-## Assets 보기 UI에서 추가된 UI 확장성 구성 요소가 어디에 표시됩니까? {#ui-extensibility-panel-assets-view}
+## Assets 보기 UI에서 UI 확장은 어디에 표시됩니까? {#ui-extensibility-panel-assets-view}
 
 Assets 보기에서 에셋, 폴더 또는 컬렉션의 세부 정보 페이지로 이동합니다. 이 세부 정보 페이지에는 추가된 UI 확장을 표시하는 전용 패널이 있습니다.
 ![내 작업 공간](/help/assets/assets/my-workspace-assets-view3.png)
@@ -52,5 +53,3 @@ Assets 보기에서 에셋, 폴더 또는 컬렉션의 세부 정보 페이지�
 1. 첫 번째 UI 확장을 만들어 Assets 보기에서 직접 로컬 환경을 설정하고 UI 확장을 개발하는 프로세스를 경험하십시오. 자세한 내용은 [단계별 AEM Assets 보기 확장 개발](https://developer.adobe.com/uix/docs/services/aem-assets-view/extension-development/)을 참조하십시오.
 1. AIO CLI를 사용하여 앱을 설정하여 기본 확장 구조 및 필수 코드를 생성합니다. 자세한 내용은 [AEM Assets 보기에 대한 코드 생성](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/)을 참조하십시오.
 1. 확장을 로컬에서 테스트하여 배포하기 전에 예상대로 작동하는지 확인합니다. 완전히 격리된 환경 또는 부분 격리된 환경에서 확장을 실행하고 테스트를 위해 프로덕션 AEM Assets 보기에 확장을 연결합니다. 자세한 내용은 [문제 해결 - AEM Assets 보기 확장성](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/)을 참조하십시오.
-
-
