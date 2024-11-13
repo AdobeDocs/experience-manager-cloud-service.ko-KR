@@ -4,9 +4,10 @@ description: 자체 프로덕션 CDN을 구축하기 위해 푸시 무효화를 
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
+exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
+source-git-commit: 0ac6856e8f3e664fcc7e3c08faac4c4f5c16af18
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '161'
 ht-degree: 2%
 
 ---
@@ -28,4 +29,4 @@ ht-degree: 2%
 
 구성 시트가 변경되면 사용자는 업데이트를 적용하려면 [Sidekick 도구](/help/edge/docs/sidekick.md)를 사용하여 미리 보고 활성화해야 합니다.
 
-[Cloud Manager에서 Edge Delivery Services 소개](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list)도 참조하세요.
+[Cloud Manager의 Edge Delivery 할 일 목록](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list)도 참조하세요.

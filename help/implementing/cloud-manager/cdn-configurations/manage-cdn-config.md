@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: cd15fd36b8baf8e693ae449031a51fa1febefaee
+source-git-commit: ea478d73307c3b57b0a12e35b247bb1c46b33595
 workflow-type: tm+mt
 source-wordcount: '773'
 ht-degree: 8%
@@ -63,7 +63,7 @@ Cloud Manager Adobe에서 여러 가지 이유로 환경 계층(Publish 또는 �
 
 1. **CDN 구성 편집** 대화 상자에서 각 드롭다운 목록에 있는 옵션을 하나 이상 설정합니다.
 
-대화 상자에 표시되는 옵션은 **Adobe 관리 CDN**&#x200B;을 사용하는지 또는 **기타 CDN 공급자**(고객 관리 CDN)를 사용하는지에 따라 다릅니다.
+   대화 상자에 표시되는 옵션은 **Adobe 관리 CDN**&#x200B;을 사용하는지 또는 **기타 CDN 공급자**(고객 관리 CDN)를 사용하는지에 따라 다릅니다.
 
 1. **업데이트**&#x200B;를 클릭합니다.
 
