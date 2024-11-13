@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 90e1ca38bd517215a631573987462a716bfed160
+source-git-commit: eadb29c44dd57bda51f77a92a62016eae51dcc65
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 23%
+source-wordcount: '820'
+ht-degree: 18%
 
 ---
 
@@ -33,6 +33,10 @@ ht-degree: 23%
 * SITES-21199: 범용 편집기가 있는 Edge Delivery: 페이지에서 만든 템플릿에 대한 지원을 추가합니다.
 * SITES-20311: 범용 편집기가 있는 Edge Delivery: CSV를 스프레드시트로 가져오도록 지원을 추가합니다.
 * SITES-24821: 범용 편집기가 있는 Edge Delivery: aem.page / aem.live를 기본적으로 Edge Delivery과 통합하도록 설정합니다.
+* FORMS-11646: AEM Forms 관련 페이지에 대한 globalContext 변수 설정
+* FORMS-14833: 이제 AEM Forms에 최종 기록 문서(DoR)에 적응형 양식 단편을 포함할 수 있습니다.
+* FORMS-14255: 이제 사용자는 부분적으로 완료된 양식을 초안으로 자동으로 저장하는 자동 저장 기능을 활용할 수 있습니다. 나중에 다시 돌아와 동일한 장치나 다른 장치에서 작성을 완료할 수 있습니다.
+
 
 ### 해결된 문제 {#fixed-issues-18459}
 
@@ -60,6 +64,11 @@ ht-degree: 23%
 * SITES-25393: 범용 편집기가 있는 Edge Delivery: 단일 단락으로 서식이 지정된 리치 텍스트를 렌더링할 때 텍스트 노드가 손실됩니다.
 * SITES-24643: 범용 편집기가 있는 Edge Delivery: OpenGraph 및 twitter 메타데이터 속성이 페이지 메타데이터 모델에서 작동하지 않습니다.
 * SITES-25401: 경험 구성요소: 느린 XF 참조 업데이트
+* GRANITE-53907: 서비스 사용자를 워크플로우 수퍼 사용자로 식별할 수 없음
+* CQ-4358028: 프로젝트 관리자 그룹만 있는 사용자가 프로젝트 생성 페이지에서 새 썸네일을 업로드할 때 AEM 프로젝트 생성이 실패합니다.
+* FORMS-15682: 이 문제에는 AEM Forms 및 Dynamics FDM 통합이 포함됩니다. 사용자가 양식을 제출할 때 기록 문서(DOR)가 지정된 엔티티 필드에 대한 PDF 첨부 파일로 전송되지 않습니다.
+* FORMS-15799: Adobe Sign GovCloud 서명 페이지는 iframe에서 렌더링됨을 확인합니다.
+* FORMS-16113: Adobe Sign 계정의 관리자인 사용자가 다른 사용자(또한 관리자)가 보낸 문서에 액세스하려고 하면 계약 가져오기 API가 계약 생성 시 처음 생성된 ID와 다른 계약 ID를 반환할 수 있습니다.
 
 
 ### 알려진 문제 {#known-issues-18459}
