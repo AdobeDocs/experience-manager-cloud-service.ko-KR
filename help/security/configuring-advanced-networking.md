@@ -5,9 +5,9 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
 source-git-commit: 2a7d46e91bbd6ca96bd8b7fd5d4d84cf69bdee36
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5524'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ AEM as a Cloud Service는 다음과 같은 고급 네트워킹 옵션을 제공�
 
 >[!TIP]
 >
->유연한 포트 이그레스와 전용 이그레스 IP 주소 사이에서 결정할 때, 특정 IP 주소가 필요하지 않은 경우 유연한 포트 이그레스를 선택하는 것이 좋습니다. Adobe에서 유연한 포트 이그레스 트래픽의 성능을 최적화할 수 있기 때문입니다.
+>유연한 포트 이그레스와 전용 이그레스 IP 주소 사이에서 결정할 때 특정 IP 주소가 필요하지 않은 경우 유연한 포트 이그레스를 선택하는 것이 좋습니다. Adobe에서 유연한 포트 이그레스 트래픽의 성능을 최적화할 수 있기 때문입니다.
 
 >[!NOTE]
 >
@@ -224,7 +224,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 >[!TIP]
 >
->유연한 포트 이그레스와 전용 이그레스 IP 주소 사이에서 결정할 때, 특정 IP 주소가 필요하지 않은 경우 유연한 포트 이그레스를 선택하십시오. Adobe에서 유연한 포트 이그레스 트래픽의 성능을 최적화할 수 있기 때문입니다.
+>유연한 포트 이그레스와 전용 이그레스 IP 주소 사이에서 결정할 때 특정 IP 주소가 필요하지 않은 경우 유연한 포트 이그레스를 선택하십시오. Adobe에서 유연한 포트 이그레스 트래픽의 성능을 최적화할 수 있기 때문입니다.
 
 >[!NOTE]
 >
@@ -396,7 +396,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ## VPN (Virtual Private Network) {#vpn}
 
-VPN을 사용하면 작성자, 게시 또는 미리보기 인스턴스에서 On-Premise 인프라 또는 데이터센터에 연결할 수 있습니다. 예를 들면 데이터베이스에 대한 액세스를 보호하는 데 유용할 수 있습니다. 또한 VPN을 지원하는 CRM 공급업체와 같은 SaaS 공급업체에 연결할 수 있습니다.
+VPN을 사용하면 작성자, 게시 또는 미리보기 인스턴스에서 On-Premise 인프라 또는 데이터센터에 연결할 수 있습니다. 예를 들면 데이터베이스에 대한 액세스를 보호하는 데 유용할 수 있습니다. 또한 VPN을 지원하는 CRM 공급업체 등의 SaaS 공급업체에 연결할 수도 있습니다.
 
 대부분의 IPSec 기술이 내장된 VPN 디바이스가 지원됩니다. [이 디바이스 목록의 **RouteBased 구성 지침** 열에 기재된 정보를 참조하십시오.](https://learn.microsoft.com/ko-kr/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable) 표에 설명된 대로 디바이스를 구성합니다.
 
