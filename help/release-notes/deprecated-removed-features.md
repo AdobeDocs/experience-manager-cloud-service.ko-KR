@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  [!DNL Cloud Service]에서 더 �
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 04ec933125da9ee3c84ffd948b144581d31763d6
+source-git-commit: de73e38580895e3d8fe2029b59907d4c722556db
 workflow-type: tm+mt
-source-wordcount: '2485'
-ht-degree: 100%
+source-wordcount: '2576'
+ht-degree: 96%
 
 ---
 
@@ -499,3 +499,16 @@ OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying
       * 유형: 부울
 +++
 
+## 버전 21로 Java 런타임 업데이트 {#java-runtime-update-21}
+
+AEM as a Cloud Service이 Java 21 런타임으로 이동합니다. 호환성을 보장하려면 다음 사항을 조정해야 합니다.
+
+### org.objectweb.asm의 최소 버전 {#org.objectweb.asm}
+
+최신 JVM 런타임 지원을 위해 org.objectweb.asm의 사용을 버전 9.5 이상으로 업데이트합니다.
+
+### org.apache.groovy {#org.apache.groovy}의 최소 버전
+
+최신 JVM 런타임 지원을 위해 org.apache.groovy의 사용을 버전 4.0.22 이상으로 업데이트합니다.
+
+AEM Groovy Console과 같은 서드파티 종속성을 추가하여 이 번들을 간접적으로 포함할 수 있습니다.
