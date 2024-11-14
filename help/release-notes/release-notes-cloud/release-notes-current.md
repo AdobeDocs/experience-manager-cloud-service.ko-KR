@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 428942c8fd4a4b83dc5d226e48eda190165768d4
+source-git-commit: 4e74efa73f0f7d6d9db13001dbc5ebc2ddba98cd
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1633'
 ht-degree: 89%
 
 ---
@@ -103,17 +103,17 @@ Dynamic Media 계정에서 AI 생성 캡션 지원에 얼리 액세스하려면 
 
 ### AEM Forms의 새로운 기능 {#forms-new-features}
 
-* **패널 레이아웃의 탐색 단추를 사용하여 사용자 환경 개선**: 이제 가로 탭, 세로 탭, 아코디언 또는 마법사와 같은 탐색 단추를 패널 레이아웃에 추가할 수 있습니다. 이러한 단추는 선택한 패널에 초점을 맞춰 패널 간 전환을 단순화하여 사용자 경험을 향상시킵니다.
+* [패널 레이아웃의 탐색 단추를 사용하여 사용자 환경 개선](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button): 이제 가로 탭, 세로 탭, 아코디언 또는 마법사와 같은 탐색 단추를 패널 레이아웃에 추가할 수 있습니다. 이러한 단추는 선택한 패널에 초점을 맞춰 패널 간 전환을 단순화하여 사용자 경험을 향상시킵니다.
 
-* **DoR(Document of Record) 구성 요소의 표시 스타일을 지정합니다**: 이제 XFA 파일에서 기록 문서 구성 요소의 표시 스타일을 지정할 수 있습니다. 이러한 스타일은 나중에 적응형 Forms 편집기의 해당 구성 요소에 적용할 수 있습니다.
+<!--* **Specify Display Styles for Document of Record (DoR) Components**: In an XFA file, you can now specify the display styles for Document of Record components. These styles can later be applied to the corresponding components in Adaptive Forms Editor.-->
 
 ### AEM Forms의 새로운 프리릴리스 기능 {#forms-new-prerelease-features}
 
-* **적응형 Forms 기반의 핵심 구성 요소에 대한 초안 자동 저장**: 이제 사용자는 부분적으로 완료된 양식을 초안으로 자동 저장하는 자동 저장 기능을 활용할 수 있습니다. 나중에 돌아와 동일한 디바이스 또는 다른 디바이스에서 작성을 마칠 수 있습니다. 이 기능을 통해 사용자가 처음부터 양식을 작성할 필요가 없으므로 양식 폐기를 방지하여 전환율을 높일 수 있습니다.
+* [적응형 Forms 기반의 핵심 구성 요소에 대한 초안 자동 저장](/help/forms/save-core-component-based-form-as-draft.md): 이제 사용자는 부분적으로 완료된 양식을 초안으로 자동 저장하는 자동 저장 기능을 활용할 수 있습니다. 나중에 돌아와 동일한 디바이스 또는 다른 디바이스에서 작성을 마칠 수 있습니다. 이 기능을 통해 사용자가 처음부터 양식을 작성할 필요가 없으므로 양식 폐기를 방지하여 전환율을 높일 수 있습니다.
 
-* **Adobe Sign 범위를 쉽게 업데이트**: AEM Cloud 구성 페이지에서 직접 Adobe Sign 구성의 범위를 수정할 수 있으므로 기존 구성을 더 빠르고 쉽게 업데이트할 수 있습니다.
+* [Adobe Sign 범위를 쉽게 업데이트](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms): AEM Cloud 구성 페이지에서 직접 Adobe Sign 구성의 범위를 수정할 수 있으므로 기존 구성을 더 빠르고 쉽게 업데이트할 수 있습니다.
 
-* **적응형 Forms에 대한 비동기 기능 지원**: 적응형 양식에 외부 프로세스 대기 또는 데이터 검색과 같은 비동기 작업이 필요한 경우, 사용자 지정 함수로 이러한 작업을 구현하고 규칙 편집기에서 구성할 수 있습니다.
+* [적응형 Forms에 대한 비동기 기능 지원](/help/forms/using-async-funct-in-rule-editor.md): 적응형 양식에 외부 프로세스 대기 또는 데이터 검색과 같은 비동기 작업이 필요한 경우, 사용자 지정 함수로 이러한 작업을 구현하고 규칙 편집기에서 구성할 수 있습니다.
 
 ### AEM Forms의 얼리 액세스 기능 {#forms-new-early-access-features}
 
@@ -123,7 +123,7 @@ AEM Forms 얼리 액세스 프로그램은 최첨단 혁신에 독점적으로 �
 
 #### AEM Forms AI 어시스턴트
 
-적응형 양식에 생성형 AI를 사용하면 양식 개발 프로세스에 새로운 수준의 기능과 편의성이 구현됩니다. 그 어느 때보다 빠르게 효율적인 양식을 빌드할 수 있습니다.
+[적응형 Forms용 생성 AI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features#aem-forms-ai-assistant-gen-ai)는 양식 개발 프로세스에 완전히 새로운 수준의 기능을 제공하고 쉽게 사용할 수 있도록 합니다. 그 어느 때보다 빠르게 효율적인 양식을 빌드할 수 있습니다.
 
 ![생성형 AI 어시스턴트, 적응형 양식](/help/forms/assets/generative-ai-assistant.png)
 
