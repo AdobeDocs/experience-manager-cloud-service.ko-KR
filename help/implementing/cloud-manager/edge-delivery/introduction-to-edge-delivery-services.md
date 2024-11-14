@@ -4,9 +4,9 @@ description: Edge Delivery Services을 사용하여 Cloud Manager 프로젝트�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: abd0fa0ea3e6e18187bcb60731ec6fe823a98e45
+source-git-commit: 0fb5476b4cff9e26971696bd8352181a71e7b3e4
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '766'
 ht-degree: 10%
 
 ---
@@ -63,13 +63,13 @@ Cloud Manager을 통해 Edge Delivery Services 라이선스에 액세스하고 �
 >* Edge Delivery Services 라이센스가 프로그램에 적용되거나 프로그램에서 제거되면 파이프라인을 실행할 필요 없이 변경 사항이 즉시 적용됩니다.
 
 
-## Edge Delivery 할 일 목록 {#ed-todo-list}
+## Cloud Manager의 Edge Delivery 할 일 목록 {#ed-todo-list}
 
 <!-- &#x2460; for "1" inside circle -->
 
-**Edge Delivery 할 일 목록**&#x200B;은(는) [Go-Live](/help/journey-onboarding/go-live-checklist.md)까지 온보딩, Edge Delivery 사이트 관리 과정을 안내하는 온보딩 작업 확인 목록입니다.
+Cloud Manager의 **Edge Delivery 할 일 목록**&#x200B;은(는) 온보딩을 안내하고 [Go-Live](/help/journey-onboarding/go-live-checklist.md)까지 Edge Delivery 사이트를 관리하는 온보딩 작업 확인 목록입니다.
 
-![Edge Delivery 사이트 할 일 목록](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
+![Cloud Manager의 Edge Delivery 사이트 할 일 목록](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | 작업 | 설명 |
 | --- | --- | --- |
