@@ -1,8 +1,8 @@
 ---
-source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
+source-git-commit: f3502de1aebd44a056e1263b059e1588243f5845
 workflow-type: tm+mt
-source-wordcount: '1274'
-ht-degree: 93%
+source-wordcount: '1259'
+ht-degree: 92%
 
 ---
 # 스니펫 {#snippets}
@@ -214,7 +214,7 @@ ht-degree: 93%
 
 지원 티켓을 기록하려면 먼저 Cloud Manager에서 Edge Delivery 사이트를 등록해야 합니다. 모든 AEM as a Cloud Service 사용자는 Cloud Manager에 웹 사이트를 등록하는 것이 좋으며, [이를 통해 여러 이점을 얻을 수 있습니다](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). 아직 사이트를 등록하지 않았다면 [Cloud Manager 설명서](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)를 통해 자세히 알아보십시오.
 
-웹 사이트가 Cloud Manager에 등록되면 Admin Console을 사용하여 다음 프로세스에 따라 지원 티켓을 제출합니다.
+**지원 티켓을 기록하려면:**
 
 1. [표준 지원 프로세스에 따라](https://experienceleague.adobe.com/?support-tab=home#support) 티켓을 생성합니다.
 1. 티켓 제목에서 **Edge Delivery**&#x200B;를 추가합니다.
