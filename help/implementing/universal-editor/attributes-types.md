@@ -4,10 +4,10 @@ description: 범용 편집기에 필요한 데이터 특성 및 항목 유형에
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: edef86c67becf3b8094196d39baa9e69d6c81777
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 73%
+source-wordcount: '574'
+ht-degree: 53%
 
 ---
 
@@ -31,8 +31,8 @@ Universal Editor에서 앱을 편집할 수 있으려면 앱이 적절하게 구
 | `data-aue-resource` | 리소스에 대한 URN은 [AEM에서 Universal Editor 시작하기 문서의 페이지 계측](getting-started.md#instrument-thepage) 섹션을 참조하십시오. |
 | `data-aue-prop` | 리소스의 속성은 [AEM에서 Universal Editor 시작하기 문서의 페이지 계측](getting-started.md#instrument-thepage) 섹션을 참조하십시오. |
 | `data-aue-type` | [편집 가능한 항목의 유형](#item-types)(예: 텍스트, 이미지, 참조) |
-| `data-aue-filter` | 사용할 수 있는 참조 정의 |
-| `data-aue-label` | 편집기에 표시되는 선택 가능한 항목에 대한 사용자 정의 레이블 정의 <br>`data-aue-model`이 설정된 경우, 레이블은 모델을 통해 검색 |
+| `data-aue-filter` | 다음을 정의합니다.<br>- 사용할 수 있는 RTE 기능<br>- 컨테이너에 추가할 수 있는 구성 요소<br>- 미디어 유형에 추가할 수 있는 자산 |
+| `data-aue-label` | 편집기에 표시되는 선택 가능한 항목에 대한 사용자 지정 레이블을 정의합니다. |
 | `data-aue-model` | 속성 패널에서 양식 기반 편집에 사용되는 모델을 정의합니다. |
 | `data-aue-behavior` | 계기의 [동작을 정의합니다](#behaviors). 예를 들어, 독립 실행형 텍스트 또는 이미지는 구성 요소를 모방하여 이동하거나 삭제할 수 있습니다 |
 
@@ -47,10 +47,14 @@ Universal Editor에서 앱을 편집할 수 있으려면 앱이 적절하게 구
 | `component` | 편집 가능 항목은 구성 요소입니다. 추가 기능을 추가하지 않습니다. DOM의 이동/삭제 가능한 부분을 표시하고 속성 패널과 해당 필드를 여는 데 필요합니다. | 필수 | 해당 사항 없음 | 해당 사항 없음 | 옵션 | 옵션 | 해당 사항 없음 |
 | `reference` | 편집 가능한 는 콘텐츠 조각, 경험 조각 또는 제품과 같은 참조입니다 | 상황에 따라 다름 <br>아래 참조 | 상황에 따라 다름 <br>아래 참조 | 옵션<br>콘텐츠 조각, 제품 또는 참조 선택기에 전달되는 경험 조각 필터 조건 목록 | 옵션 | 옵션 | 해당 사항 없음 |
 
-사용 사례에 따라 다름 `data-aue-prop` 또는 `data-aue-resource`가 필요할 수도 있고 필요하지 않을 수도 있습니다. 예:
+`data-aue-resource`은(는) 콘텐츠 변경 내용이 기록되는 위치를 나타내는 기본 키이므로 항상 필요합니다.
 
-* GraphQL을 통해 콘텐츠 조각을 쿼리하고 상황에 따라 목록을 편집할 수 있도록 하려면 `data-aue-resource`가 필요합니다.
-* 참조된 콘텐츠 조각의 콘텐츠를 렌더링하는 구성 요소가 있고 구성 요소 내에서 참조를 업데이트하려는 경우 `data-aue-prop`이 필요합니다.
+* `data-aue-type`이(가) 설정된 태그에는 직접 필요하지 않습니다.
+* 설정되지 않은 경우 가장 가까운 부모의 `data-aue-resource` 특성이 사용됩니다.
+
+`data-aue-prop`은(는) 선택적 컨테이너인 컨테이너를 제외하고 컨텍스트에서 편집을 수행할 때마다 필요합니다(컨테이너가 콘텐츠 조각이고 prop이 다중 참조 필드를 가리키는 경우).
+
+* `data-aue-prop`은(는) `data-aue-resource`의 기본 키에 대해 업데이트할 특성입니다.
 
 ## 동작 {#behaviors}
 

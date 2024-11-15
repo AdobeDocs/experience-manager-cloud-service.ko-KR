@@ -4,10 +4,10 @@ description: Universal Editor에 액세스하는 방법과 이를 사용하기 �
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 395cb7b2e37c7358baa7ae07329f42bd5a560cb1
+source-git-commit: edef86c67becf3b8094196d39baa9e69d6c81777
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 68%
+source-wordcount: '574'
+ht-degree: 72%
 
 ---
 
@@ -20,82 +20,7 @@ Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번
 >
 >예를 바로 살펴보고 싶다면 [GitHub의 Universal Editor 샘플 앱](https://github.com/adobe/universal-editor-sample-editable-app)을 검토할 수 있습니다.
 
-## 온보딩 단계 {#onboarding}
-
-Universal Editor는 모든 소스의 콘텐츠를 편집할 수 있지만 이 문서에서는 AEM 앱을 예로 사용합니다.
-
-AEM 앱을 온보딩하고 유니버설 편집기를 사용하도록 계측하는 몇 가지 단계가 있습니다.
-
-1. [Universal Editor 핵심 라이브러리를 포함합니다.](#core-library)
-1. [필요한 OSGi 구성을 추가합니다.](#osgi-configurations)
-1. [페이지를 계측합니다.](#instrument-page)
-
-이 문서에서는 이러한 단계를 안내합니다.
-
-## Universal Editor 핵심 라이브러리 포함 {#core-library}
-
-범용 편집기에서 사용하기 위해 앱을 계측하려면 먼저 다음 종속성을 포함해야 합니다.
-
-```javascript
-@adobe/universal-editor-cors
-```
-
-계측을 활성화하려면 `index.js`에 다음 가져오기를 추가해야 합니다.
-
-```javascript
-import "@adobe/universal-editor-cors";
-```
-
-### 비 React 앱의 대안 {#alternative}
-
-React 앱을 구현하지 않거나 서버측 렌더링이 필요한 경우 대체 방법은 문서 본문에 다음 사항을 포함하는 것입니다.
-
-```html
-<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST" async></script>
-```
-
-항상 최신 버전을 사용하는 것이 좋지만, 변경 사항이 있을 경우 이전 버전의 서비스를 참조할 수 있습니다.
-
-* `https://universal-editor-service.experiencecloud.live/corslib/LATEST` - 최신 UE CORS 라이브러리
-* `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST` - 버전 2.x의 최신 UE CORS 라이브러리
-* `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST` - 버전 2.1.x의 최신 UE CORS 라이브러리
-* `https://universal-editor-service.experiencecloud.live/corslib/2.1.1`- 정확한 UE CORS 라이브러리 버전 2.1.1
-
-## 필요한 OSGi 구성 추가 {#osgi-configurations}
-
-Universal Editor를 사용하여 앱에서 AEM 콘텐츠를 편집할 수 있으려면 AEM 내에서 CORS 및 쿠키 설정을 수행해야 합니다.
-
-다음 [OSGi 구성을 AEM 작성 인스턴스에서 설정해야 합니다.](/help/implementing/deploying/configuring-osgi.md)
-
-* `SameSite Cookies = None`-`com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`
-* X-FRAME-OPTIONS 제거: `org.apache.sling.engine.impl.SlingMainServlet`의 SAMEORIGIN 헤더
-
-### com.day.crx.security.token.impl.impl.TokenAuthenticationHandler {#samesite-cookies}
-
-로그인 토큰 쿠키는 서드파티 도메인으로 AEM에 전송되어야 합니다. 따라서 동일 사이트 쿠키는 명시적으로 `None`으로 설정되어야 합니다.
-
-이 속성은 `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler` OSGi 구성에서 설정해야 합니다.
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-          xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
-          token.samesite.cookie.attr="None" />
-```
-
-### org.apache.sling.engine.impl.SlingMainServlet {#sameorigin}
-
-X-Frame-Options: SAMEORIGIN은 iframe 내에서 AEM 페이지 렌더링을 방지합니다. 헤더를 제거하면 페이지를 로드할 수 있습니다.
-
-이 속성은 `org.apache.sling.engine.impl.SlingMainServlet` OSGi 구성에서 설정해야 합니다.
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-          xmlns:jcr="http://www.jcp.org/jcr/1.0"
-          jcr:primaryType="sling:OsgiConfig"
-          sling.additional.response.headers="[X-Content-Type-Options=nosniff]"/>
-```
+범용 편집기는 모든 소스에서 콘텐츠를 편집할 수 있지만 이 문서에서는 AEM 앱을 예로 사용합니다. 이 문서에서는 이러한 단계를 안내합니다.
 
 ## 페이지 계측 {#instrument-page}
 
