@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 311230e2d6a395f9382af80df1cbe0fb25427874
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 9%
+source-wordcount: '991'
+ht-degree: 10%
 
 ---
 
 # 자산 보고서 {#asset-reports}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 | 버전 | 문서 링크 |
@@ -26,7 +26,7 @@ ht-degree: 9%
 
 보고서의 정보를 사용하여 기업 내 및 고객에 의한 [!DNL Assets]의 채택률을 측정하기 위한 주요 성공 지표를 도출할 수 있습니다.
 
-[!DNL Assets] 보고 프레임워크는 [!DNL Sling] 작업을 사용하여 순서대로 보고서 요청을 비동기적으로 처리합니다. 대형 저장소에 대해 확장 가능합니다. 비동기 보고서 처리를 통해 보고서가 생성되는 효율성과 속도가 향상됩니다.
+[!DNL Assets] 보고 프레임워크는 [!DNL Sling]개의 작업을 비동기적으로 사용하여 순서대로 보고서 요청을 처리합니다. 대형 저장소에 대해 확장 가능합니다. 비동기 보고서 처리를 통해 보고서가 생성되는 효율성과 속도가 향상됩니다.
 
 보고서 관리 인터페이스는 직관적이고, 보관된 보고서에 액세스하고 보고서 실행 상태(성공, 실패 및 대기 중)를 보기 위한 세분화된 옵션 및 제어를 포함합니다.
 
@@ -65,7 +65,7 @@ ht-degree: 9%
    자산 보고서를 탐색할 ![도구 페이지](assets/navigation.png)
 
 1. [!UICONTROL 자산 보고서] 페이지의 도구 모음에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
-1. **[!UICONTROL 보고서 만들기]** 페이지에서 만들려는 보고서를 선택하고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL 보고서 만들기]** 페이지에서 만들려는 보고서를 선택하고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다. **다운로드** 보고서를 만들 수 있는 **AEM 관리자 제품 프로필** 권한을 부여합니다. AEM 관리자 제품 프로필에 대한 권한을 얻으려면 [AEM 제품 프로필 할당](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem)을 참조하십시오.
 
    ![보고서 유형 선택](assets/choose_report.png)
 
@@ -108,7 +108,7 @@ ht-degree: 9%
    ![보고서 열 선택 또는 취소](assets/custom_columns.png)
 
 1. 도구 모음에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 보고서 생성이 시작되었음을 알리는 메시지가 표시됩니다.
-1. [!UICONTROL 자산 보고서] 페이지에서 보고서 생성 상태는 보고서 작업의 현재 상태(예: [!UICONTROL 성공], [!UICONTROL 실패], [!UICONTROL 큐에 있음] 또는 [!UICONTROL 예약됨])를 기반으로 합니다. 받은 편지함에도 동일한 상태가 나타납니다.보고서 페이지를 보려면 보고서 링크를 클릭하십시오. 또는 보고서를 선택하고 도구 모음에서 **[!UICONTROL 보기]**&#x200B;를 클릭합니다.
+1. [!UICONTROL 자산 보고서] 페이지에서 보고서 생성 상태는 보고서 작업의 현재 상태(예: [!UICONTROL 성공], [!UICONTROL 실패], [!UICONTROL 큐에 있음] 또는 [!UICONTROL 예약됨])를 기반으로 합니다. 알림 받은 편지함에도 동일한 상태가 표시됩니다. 보고서 페이지를 보려면 보고서 링크를 클릭합니다. 또는 보고서를 선택하고 도구 모음에서 **[!UICONTROL 보기]**&#x200B;를 클릭합니다.
 
    <!--![A generated report](assets/report_page.png)-->
    ![생성된 보고서 상태](assets/report-status.JPG)
