@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 311230e2d6a395f9382af80df1cbe0fb25427874
+source-git-commit: 6a03eb1a4ac8284299c1ffcf27d6a6c8a8b9abc4
 workflow-type: tm+mt
 source-wordcount: '991'
 ht-degree: 10%
@@ -65,7 +65,11 @@ ht-degree: 10%
    자산 보고서를 탐색할 ![도구 페이지](assets/navigation.png)
 
 1. [!UICONTROL 자산 보고서] 페이지의 도구 모음에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
-1. **[!UICONTROL 보고서 만들기]** 페이지에서 만들려는 보고서를 선택하고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다. **다운로드** 보고서를 만들 수 있는 **AEM 관리자 제품 프로필** 권한을 부여합니다. AEM 관리자 제품 프로필에 대한 권한을 얻으려면 [AEM 제품 프로필 할당](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem)을 참조하십시오.
+1. **[!UICONTROL 보고서 만들기]** 페이지에서 만들려는 보고서를 선택하고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+
+   >[!NOTE]
+   >
+   >**다운로드** 보고서를 만들 수 있는 **AEM 관리자 제품 프로필** 권한을 부여합니다. AEM 관리자 제품 프로필에 대한 권한을 얻으려면 [AEM 제품 프로필 할당](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem)을 참조하십시오.
 
    ![보고서 유형 선택](assets/choose_report.png)
 
