@@ -4,10 +4,10 @@ description: 로컬 개발을 위해 또는 자체 인프라의 일부로 고유
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
+source-git-commit: 4fedb7a812b53fd9ebd9c82e86fa8f05394d464f
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 42%
+source-wordcount: '932'
+ht-degree: 40%
 
 ---
 
@@ -76,9 +76,17 @@ UES_PORT=8000
 UES_PRIVATE_KEY=./key.pem
 UES_CERT=./certificate.pem
 UES_TLS_REJECT_UNAUTHORIZED=false
+UES_CORS_PRIVATE_NETWORK=true
 ```
 
-이 예제에서 로컬 개발에 필요한 최소값은 다음과 같습니다. 다음 표에서는 이러한 값과 사용 가능한 추가 값에 대해 자세히 설명합니다.
+이 예제에서 로컬 개발에 필요한 최소값은 다음과 같습니다.
+
+>[!NOTE]
+>
+>Chrome 버전 130 이상을 실행 중인 경우 `UES_CORS_PRIVATE_NETWORK` 옵션을 사용하여 [개인 네트워크 액세스](https://wicg.github.io/private-network-access/#private-network-request)에 대한 CORS 헤더 전송을 활성화해야 합니다.
+
+
+다음 표에서는 이러한 값과 사용 가능한 추가 값에 대해 자세히 설명합니다.
 
 | 값 | 옵션 | 기본값 | 설명 |
 |---|---|---|---|
@@ -93,6 +101,7 @@ UES_TLS_REJECT_UNAUTHORIZED=false
 | `UES_SPLUNK_TOKEN` | 예 | 없음 | Splunk 토큰 |
 | `UES_SPLUNK_INDEX` | 예 | 없음 | 로그를 기록할 인덱스 |
 | `UES_SPLUNK_SOURCE` | 예 | `universal-editor-service` | splunk 로그의 소스 이름 |
+| `UES_CORS_PRIVATE_NETWORK` | 예 | `false` | [개인 네트워크를 허용하도록 CORS 헤더 전송을 활성화하십시오.Chrome 버전 130+의 사용자에게 ](https://wicg.github.io/private-network-access/#private-network-request) 필요 |
 
 >[!NOTE]
 >
