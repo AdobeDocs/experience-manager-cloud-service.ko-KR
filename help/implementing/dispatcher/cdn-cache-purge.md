@@ -4,9 +4,9 @@ description: API 호출에 사용할 수 있는 제거 API 토큰을 구성하�
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 5b777171cb9246c2a0174985e060d7d1b6ed8591
+source-git-commit: e5e0606c83f144f92f9ae57e5380a30389e8df1b
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '469'
 ht-degree: 1%
 
 ---
@@ -74,6 +74,19 @@ curl
 ```
 
 `X-AEM-Purge` 헤더에는 &#39;all&#39; 값이 포함되어야 합니다.
+
+## Customer Managed CDN과의 상호 작용
+
+[고객 관리 CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)의 경우 `X-Forwarded-Host` 및 `X-AEM-Edge-Key`도 제공해야 합니다.
+
+```
+curl
+-X PURGE "https://publish-p1234-e5467.adobeaemcloud.com/resource-path" \
+-H 'X-AEM-Purge-Key: <my_purge_key>' \
+-H 'X-AEM-Edge-Key: <my_edge_key>' \
+-H 'X-Forwarded-Host: <my_forwarded_domain>'
+```
+
 
 ## Apache/Dispatcher 계층과의 상호 작용 {#apache-layer}
 
