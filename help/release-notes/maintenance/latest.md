@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 9a653fbe13b29fa60af7410fff178cbac6ca554d
+source-git-commit: f9f3d1fcb32445269e5ca4b9479b8e9075c73c10
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 71%
+source-wordcount: '852'
+ht-degree: 70%
 
 ---
 
@@ -33,6 +33,7 @@ ht-degree: 71%
 * SITES-24369: 콘텐츠 조각: OpenAPI 설명서가 개선되었습니다.
 * SITES-25478: 콘텐츠 조각: 외부 자산 참조에 대한 백엔드 지원이 추가되었습니다.
 * SITES-26119: 콘텐츠 조각: 참조 유형에서 외부 자산 참조에 대한 지원이 추가되었습니다.
+* SITES-24609: 콘텐츠 조각: 콘텐츠 조각을 삭제할 때 유효성 검사를 강화합니다.
 * SITES-21199: 범용 편집기가 포함된 Edge Delivery: 페이지에서 생성된 템플릿에 대한 지원이 추가되었습니다.
 * SITES-20311: 범용 편집기가 포함된 Edge Delivery: CSV를 스프레드시트로 가져오는 기능이 추가되었습니다.
 * SITES-24821: 범용 편집기가 포함된 Edge Delivery: Edge Delivery와 통합하기 위해 aem.page / aem.live가 기본값으로 설정됩니다.
