@@ -3,10 +3,10 @@ title: OpenAPI 기능이 포함된 Dynamic Media
 description: OpenAPI 기능과 함께 Dynamic Media을 사용하는 이유 및 활성화 방법과 같은 주요 개념을 알아봅니다.
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 1%
+source-wordcount: '1109'
+ht-degree: 2%
 
 ---
 
@@ -14,6 +14,12 @@ ht-degree: 1%
 
 | [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|-----|
+
+>[!AVAILABILITY]
+>
+>이제 OpenAPI 기능 안내서를 포함한 Dynamic Media을 PDF 형식으로 사용할 수 있습니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI Assistant를 사용하여 질문에 답변합니다.
+>
+>[!BADGE OpenAPI 기능을 사용하는 Dynamic Media 안내서 PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 오늘날 빠르게 변화하는 디지털 세계에서 브랜드 디지털 자산의 잠재력을 최대한 발휘하는 것은 경쟁에서 앞서가는 데 매우 중요합니다. 전체적인 디지털 Assets 관리(DAM) 솔루션은 자산 거버넌스를 촉진하고, 브랜드 일관성을 증진하며, 브랜드 무결성과 탁월한 고객 경험을 보장하면서 컨텐츠 제공을 가속화합니다.
 
@@ -65,7 +71,7 @@ AEM as a Cloud Service에서 OpenAPI 기능을 사용하는 Dynamic Media을 활
 
   >[!NOTE]
   >
-  > Adobe이 아닌 애플리케이션과 통합하려면 애플리케이션이 호스팅된 허용 목록에 도메인 이름을 제공하십시오.
+  Adobe이 아닌 애플리케이션과 통합하려면 애플리케이션이 호스팅된 허용 목록에 도메인 이름을 제공하십시오.
 
 * 통합 프로젝트와 관련된 주요 고객 연락처 세부 정보.
 
@@ -75,7 +81,7 @@ AEM as a Cloud Service에서 OpenAPI 기능을 사용하는 Dynamic Media을 활
 
 >[!NOTE]
 >
->OpenAPI 기능을 사용하여 Dynamic Media이 비활성화되지 않도록 하려면 모든 콘텐츠 패키지에서 `/conf/global/settings/dam/assets-configurations/assetdelivery`을(를) 제외하십시오.
+OpenAPI 기능을 사용하여 Dynamic Media이 비활성화되지 않도록 하려면 모든 콘텐츠 패키지에서 `/conf/global/settings/dam/assets-configurations/assetdelivery`을(를) 제외하십시오.
 
 ## 주요 기능에 대해 자세히 알아보기 {#learn-more-key-capabilities}
 

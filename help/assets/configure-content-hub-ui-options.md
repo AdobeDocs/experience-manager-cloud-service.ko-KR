@@ -2,9 +2,9 @@
 title: Content Hub 사용자 인터페이스 구성
 description: Content Hub 사용자 인터페이스 구성
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 76337282b7d3008864763541a957c44327e1a5be
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1557'
 ht-degree: 15%
 
 ---
@@ -18,9 +18,16 @@ ht-degree: 15%
 >id="configure_content_hub"
 >title="Content Hub 사용자 인터페이스 구성"
 >abstract="Experience Manager Assets를 통해 관리자는 Content Hub 사용자 인터페이스에서 사용 가능한 옵션을 구성할 수 있습니다. 관리자가 선택한 구성 옵션에 따라 Content Hub 사용자는 Content Hub에서 필드를 조회할 수 있습니다. 구성 옵션에는 자산을 가져올 때의 메타데이터, 필터, 자산 속성, 자산을 검색할 때의 메타데이터, 개인화된 브랜딩 및 모든 사용자 정의 링크가 포함됩니다."
+>additional-url="https://images-tv.adobe.com/mpcv3/4477/98bce651-721c-442e-98b8-c43e7708e44c_1698834577.854x480at800_h264.mp4" text="비디오 시청"
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Content Hub에서 자산 구성](assets/configure-assets.png)
+
+>[!AVAILABILITY]
+>
+>이제 Content Hub 안내서를 PDF 형식으로 사용할 수 있습니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI Assistant를 사용하여 질문에 답변합니다.
+>
+>[!BADGE Content Hub 안내서 PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Experience Manager Assets를 통해 관리자는 Content Hub 사용자 인터페이스에서 사용 가능한 옵션을 구성할 수 있습니다. 관리자가 선택한 구성 옵션에 따라 Content Hub 사용자는 Content Hub에서 필드를 조회할 수 있습니다. 구성 옵션은 다음과 같습니다.
 
@@ -112,7 +119,7 @@ Content Hub을 사용하면 관리자가 에셋을 검색하는 동안 표시되
 
    >[!NOTE]
    >
-   >저장소에 필터 조건과 일치하는 에셋이 하나 이상 있는 경우에만 새 필터가 검색 페이지에 표시됩니다.
+   저장소에 필터 조건과 일치하는 에셋이 하나 이상 있는 경우에만 새 필터가 검색 페이지에 표시됩니다.
 
 마찬가지로 사용 가능한 각 필터 옆에 있는 ![편집 아이콘](assets/do-not-localize/edit_icon.svg)을 클릭하여 레이블을 편집하거나 삭제 아이콘을 클릭하여 기존 필터를 삭제할 수 있습니다. 변경 사항을 적용하려면 모든 수정 작업을 수행한 후 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 
@@ -148,7 +155,7 @@ Content Hub을 사용하면 관리자가 에셋을 검색하는 동안 표시되
 
 **자산 카드**&#x200B;에 표시해야 하는 주요 메타데이터 필드를 최대 6개까지 구성할 수도 있습니다. 이렇게 하려면 다음 단계를 실행합니다.
 
-자산 카드의 ![키 메타데이터](/help/assets/assets/asset-card-key-metadata.png)
+![자산 카드의 주요 메타데이터](/help/assets/assets/asset-card-key-metadata.png)
 
 1. [구성](#access-configuration-options-content-hub) 사용자 인터페이스에서 **자산 카드**&#x200B;를 클릭합니다.
 2. **메타데이터 추가**&#x200B;를 클릭합니다. **자산 카드 메타데이터 추가** 대화 상자가 표시됩니다.

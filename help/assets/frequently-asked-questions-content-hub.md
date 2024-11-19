@@ -1,9 +1,10 @@
 ---
 title: Content Hub 자주 묻는 질문(FAQ)
 description: Content Hub에 대해 가장 자주 묻는 질문(FAQ) 중 일부에 대한 응답을 얻을 수 있습니다.
-source-git-commit: 3b8a80e346fe63450f9b57733c67de2e4b52b2b8
+exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1128'
 ht-degree: 1%
 
 ---
@@ -14,6 +15,12 @@ ht-degree: 1%
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Content Hub 자주 묻는 질문](assets/content-hub-faqs.png)
+
+>[!AVAILABILITY]
+>
+>이제 Content Hub 안내서를 PDF 형식으로 사용할 수 있습니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI Assistant를 사용하여 질문에 답변합니다.
+>
+>[!BADGE Content Hub 안내서 PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 ## Content Hub란? {#what-is-content-hub}
 
@@ -87,5 +94,3 @@ Adobe은 Adobe 지원 티켓을 생성하여 사용할 수 있는 Brand Portal�
 ## Content Hub에서 제품 설정/구성 옵션이 표시되지 않는 이유는 무엇입니까? {#ui-configuration-option-missing}
 
 [구성 사용자 인터페이스](/help/assets/configure-content-hub-ui-options.md)에 액세스하려면 [Content Hub 관리자](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator)여야 합니다. Adobe Admin Console의 프로덕션 작성자 인스턴스에서 AEM 관리자 제품 프로필에 할당되어 구성 옵션이 표시되지 않는 경우 AEM 관리자 제품 프로필의 이름이 바뀌지 않았는지 확인하십시오. 자세한 내용은 [AEM as a Cloud Service 팀 및 제품 프로필](/help/onboarding/aem-cs-team-product-profiles.md)을 참조하세요.
-
-

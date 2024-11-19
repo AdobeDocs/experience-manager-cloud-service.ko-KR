@@ -3,19 +3,25 @@ title: ' [!DNL the Content Hub]에서 Assets 공유'
 description: ' [!DNL the Content Hub]에서 Assets 공유'
 role: User
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 3%
+source-wordcount: '500'
+ht-degree: 6%
 
 ---
 
 # Content Hub에서 자산 공유 {#search-assets-as-a-link}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 ![자산 배너 이미지 공유](assets/share-assets-banner.png)
+
+>[!AVAILABILITY]
+>
+>이제 Content Hub 안내서를 PDF 형식으로 사용할 수 있습니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI Assistant를 사용하여 질문에 답변합니다.
+>
+>[!BADGE Content Hub 안내서 PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 링크를 통해 자산을 공유하면 [!DNL the Content Hub]명의 사용자가 리소스를 편리하게 사용할 수 있습니다. 이 기능을 사용하면 인가된 사용자가 공유된 에셋에 액세스하고 다운로드할 수 있습니다. 공유 링크에서 자산을 다운로드할 때 [!DNL the Content Hub]은(는) 더 빠르고 중단 없는 다운로드를 제공하는 비동기 서비스를 사용합니다.
 

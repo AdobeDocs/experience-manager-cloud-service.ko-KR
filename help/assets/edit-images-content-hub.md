@@ -2,19 +2,25 @@
 title: Adobe Express을 사용하여 Content Hub에서 이미지 편집
 description: Adobe Express을 사용하여 Content Hub에서 이미지 편집
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 2%
+source-wordcount: '436'
+ht-degree: 6%
 
 ---
 
 # Content Hub에서 이미지 편집 {#edit-images-content-hub}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Adobe Express을 사용하여 Content Hub에서 이미지 편집](assets/edit-images-content-hub.png)
+
+>[!AVAILABILITY]
+>
+>이제 Content Hub 안내서를 PDF 형식으로 사용할 수 있습니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI Assistant를 사용하여 질문에 답변합니다.
+>
+>[!BADGE Content Hub 안내서 PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Content Hub을 사용하면 Adobe Express으로 새 콘텐츠를 만들 수 있습니다. 사용하기 쉬운 도구로 기존 콘텐츠를 편집하고, 템플릿 및 브랜드 요소를 사용하여 브랜드 내 변형을 작성하고, Adobe Firefly의 최신 GenAI 기능을 사용하여 새 콘텐츠를 만들 수 있습니다.
 
@@ -24,7 +30,7 @@ Adobe Express 및 [자산을 새 변형에 다시 혼합할 수 있는 권한이
 
 >[!NOTE]
 >
->[!DNL Adobe Express]을(를) 사용하여 PNG 및 JPG/JPEG 파일 형식의 이미지를 편집할 수 있습니다.
+[!DNL Adobe Express]을(를) 사용하여 PNG 및 JPG/JPEG 파일 형식의 이미지를 편집할 수 있습니다.
 
 ## [!DNL Adobe Express]를 사용하여 이미지 편집 {#edit-images-using-content-hub}
 

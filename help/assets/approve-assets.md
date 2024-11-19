@@ -3,9 +3,9 @@ title: Experience Manager에서 에셋 승인
 description: ' [!DNL Experience Manager]에서 자산을 승인하는 방법을 알아봅니다.'
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '747'
 ht-degree: 4%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 4%
 
 | [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>이제 OpenAPI 기능 안내서를 포함한 Dynamic Media을 PDF 형식으로 사용할 수 있습니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI Assistant를 사용하여 질문에 답변합니다.
+>
+>[!BADGE OpenAPI 기능을 사용하는 Dynamic Media 안내서 PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 브랜드 관리자 및 마케터는 브랜드 자산에 대한 엄격한 제어를 유지합니다. 모든 채널 및 애플리케이션에서 브랜드 일관성을 보장하기 위해 승인된 최신 버전의 자산만 사용할 수 있습니다.
 
@@ -36,7 +42,7 @@ AEM Assets에서 에셋을 승인하여 에셋 관리를 간소화하여 에셋 
 
 >[!NOTE]
 >
->에셋 또는 폴더에 다른 기본 스키마가 있는 경우 해당 특정 스키마에서 이 업데이트를 수행해야 합니다.
+에셋 또는 폴더에 다른 기본 스키마가 있는 경우 해당 특정 스키마에서 이 업데이트를 수행해야 합니다.
 
 ## 자산 승인 {#approve-assets}
 
@@ -78,7 +84,7 @@ AEM Assets에서 에셋을 승인하여 에셋 관리를 간소화하여 에셋 
 
 >[!NOTE]
 > 
->이 접근 방법에서는 폴더에 새로 생성된 에셋을 승인합니다. 폴더의 기존 에셋에 대해서는 해당 에셋을 수동으로 선택하고 승인해야 합니다. <br> 또는 **[!UICONTROL 재처리]** 옵션을 사용하여 메타데이터 프로필의 변경 내용을 이전 에셋에 적용할 수 있습니다.
+이 접근 방법에서는 폴더에 새로 생성된 에셋을 승인합니다. 폴더의 기존 에셋에 대해서는 해당 에셋을 수동으로 선택하고 승인해야 합니다. <br> 또는 **[!UICONTROL 재처리]** 옵션을 사용하여 메타데이터 프로필의 변경 내용을 이전 에셋에 적용할 수 있습니다.
 
 마찬가지로 Assets 보기에서 폴더 내의 자산을 일괄 승인하려면 다음을 수행합니다.
 
@@ -105,6 +111,6 @@ AEM as a Cloud Service 인스턴스에서 [!UICONTROL OpenAPI 기능이 있는 D
 
    >[!NOTE]
    >
-   >승인된 에셋에 대한 게재 URL을 복사하는 옵션은 Assets 보기에서만 사용할 수 있습니다.
+   승인된 에셋에 대한 게재 URL을 복사하는 옵션은 Assets 보기에서만 사용할 수 있습니다.
 
 Dynamic Media 패널 내에 표시되는 다른 변환에 대한 자세한 내용은 [Dynamic Media 변환 보기 및 다운로드](/help/assets/renditions.md#view-download-dm-renditions)를 참조하십시오.

@@ -3,17 +3,23 @@ title: OpenAPI 기능이 포함된 Dynamic Media FAQ
 description: OpenAPI 기능이 포함된 Dynamic Media FAQ
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1512'
-ht-degree: 0%
+source-wordcount: '1546'
+ht-degree: 1%
 
 ---
 
 # OpenAPI 기능이 포함된 Dynamic Media FAQ {#new-dynaminc-media-apis-frequently-asked-questions}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>이제 OpenAPI 기능 안내서를 포함한 Dynamic Media을 PDF 형식으로 사용할 수 있습니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI Assistant를 사용하여 질문에 답변합니다.
+>
+>[!BADGE OpenAPI 기능을 사용하는 Dynamic Media 안내서 PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 +++**Experience Manager Assets as a Cloud Service Dynamic Media 저장소의 모든 자산을 OpenAPI 기능을 사용하여 검색하고 게재할 수 있습니까?**
 

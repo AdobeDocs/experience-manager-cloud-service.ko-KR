@@ -3,19 +3,25 @@ title: ' [!DNL Content Hub] 배포'
 description: Content Hub을 배포하고 활성화하고 다양한 유형의 권한을 가진 사용자에게 액세스를 제공하는 방법(자산 업로드, Adobe Express 사용자)과 사용자에게 관리자 권한을 제공하는 방법에 대해 알아봅니다.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1587'
-ht-degree: 1%
+source-wordcount: '1615'
+ht-degree: 2%
 
 ---
 
 # Content Hub 배포 {#deploy-content-hub}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Content Hub 배포](assets/deploy-content-hub.png)
+
+>[!AVAILABILITY]
+>
+>이제 Content Hub 안내서를 PDF 형식으로 사용할 수 있습니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI Assistant를 사용하여 질문에 답변합니다.
+>
+>[!BADGE Content Hub 안내서 PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Content Hub은 조직 및 비즈니스 파트너를 위한 온브랜드 콘텐츠에 대한 액세스를 민주화하기 위해 Experience Manager Assets as a Cloud Service의 일부로 사용할 수 있습니다.
 
@@ -53,7 +59,7 @@ Content Hub에 대한 권한의 변형은 다음과 같습니다.
 
 >[!NOTE]
 >
->[Experience Manager Assets 사용자](#experience-manager-assets-users)는 Experience Manager Assets as a Cloud Service 환경에서 자산을 승인하여 해당 자산을 Content Hub에서 사용할 수 있도록 할 수 있습니다. 이러한 사용자는 Admin Console을 사용하여 AEM > 프로덕션 작성자 인스턴스 > AEM 사용자 제품 프로필에 추가해야 합니다.
+[Experience Manager Assets 사용자](#experience-manager-assets-users)는 Experience Manager Assets as a Cloud Service 환경에서 자산을 승인하여 해당 자산을 Content Hub에서 사용할 수 있도록 할 수 있습니다. 이러한 사용자는 Admin Console을 사용하여 AEM > 프로덕션 작성자 인스턴스 > AEM 사용자 제품 프로필에 추가해야 합니다.
 
 ## 1단계: Cloud Manager을 사용하여 Experience Manager Assets용 Content Hub 활성화 {#enable-content-hub}
 
@@ -72,7 +78,7 @@ Content Hub 포털에 액세스하려면 먼저 관리자가 Cloud Manager을 �
 
    >[!NOTE]
    >
-   >Content Hub을 선택한 후 **[!UICONTROL 업데이트]**&#x200B;를 사용할 수 없는 경우 프로그램에 대한 Go-Live 설정을 지정했는지 확인하십시오.
+   Content Hub을 선택한 후 **[!UICONTROL 업데이트]**&#x200B;를 사용할 수 없는 경우 프로그램에 대한 Go-Live 설정을 지정했는지 확인하십시오.
 
 1. **[!UICONTROL 업데이트]**&#x200B;를 클릭합니다.
 
@@ -80,7 +86,7 @@ Content Hub 포털에 액세스하려면 먼저 관리자가 Cloud Manager을 �
 
 >[!NOTE]
 >
->최대 250명의 Content Hub 사용자와 Content Hub에 액세스하고 사용할 수 있습니다. 추가 질문이 있는 경우 Adobe 담당자에게 문의하십시오.
+최대 250명의 Content Hub 사용자와 Content Hub에 액세스하고 사용할 수 있습니다. 추가 질문이 있는 경우 Adobe 담당자에게 문의하십시오.
 
 
 Experience Manager Assets을 처음 사용하는 경우 **[!UICONTROL 프로그램 추가]**&#x200B;를 클릭한 다음 프로그램 세부 정보(프로그램 이름, 프로덕션 설정)를 입력하고 **[!UICONTROL 계속]**&#x200B;을 클릭합니다. **[!UICONTROL 솔루션 및 추가 기능]** 탭에서 **[!UICONTROL Assets]** 및 **[!UICONTROL Content Hub]**&#x200B;을(를) 선택할 수 있습니다.
@@ -93,7 +99,7 @@ Experience Manager Assets을 처음 사용하는 경우 **[!UICONTROL 프로그�
 
 >[!NOTE]
 >
->2024년 8월 14일 이전에 Content Hub을 프로비저닝한 경우 `contenthub`을(를) 접미사로 사용하여 새 인스턴스가 만들어집니다.
+2024년 8월 14일 이전에 Content Hub을 프로비저닝한 경우 `contenthub`을(를) 접미사로 사용하여 새 인스턴스가 만들어집니다.
 
 Content Hub의 인스턴스 이름에 `author` 또는 `publish`이(가) 없습니다.
 
@@ -103,7 +109,7 @@ Content Hub 제품 프로필을 보려면 인스턴스 이름을 클릭합니다
 
 >[!NOTE]
 >
->2024년 8월 14일 이전에 Content Hub을 프로비저닝한 경우 Content Hub 제품 프로필에 `delivery` 대신 `Limited Users` 뒤에 `contenthub`이(가) 언급되어 있습니다.
+2024년 8월 14일 이전에 Content Hub을 프로비저닝한 경우 Content Hub 제품 프로필에 `delivery` 대신 `Limited Users` 뒤에 `contenthub`이(가) 언급되어 있습니다.
 
 ## 2단계: Content Hub 관리자 온보드 {#onboard-content-hub-administrator}
 
@@ -144,7 +150,7 @@ Content Hub 사용자를 온보딩하려면:
 
 >[!NOTE]
 >
->외부 ID 공급자와의 동기화와 같은 모든 고급 엔터프라이즈 기능을 사용할 수 있습니다.
+외부 ID 공급자와의 동기화와 같은 모든 고급 엔터프라이즈 기능을 사용할 수 있습니다.
 
 ### Content Hub에 액세스하는 방법 {#access-content-hub}
 
@@ -222,4 +228,4 @@ Experience Manager Assets 사용자를 구성하려면 다음 작업을 수행�
 
    >[!NOTE]
    >
-   > Experience Manager Assets 사용자를 위해 [Content Hub 제품 프로필](#onboard-content-hub-users)에 추가할 필요는 없습니다.
+   Experience Manager Assets 사용자를 위해 [Content Hub 제품 프로필](#onboard-content-hub-users)에 추가할 필요는 없습니다.

@@ -3,9 +3,9 @@ title: OpenAPI 기능을 사용하여 Dynamic Media으로 자산 배달 제한
 description: OpenAPI 기능을 사용하여 에셋 전달을 제한하는 방법에 대해 알아봅니다.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 03e13d29629c5e0305401179502cd1fc24f9ad75
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1151'
 ht-degree: 2%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 2%
 
 | [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>이제 OpenAPI 기능 안내서를 포함한 Dynamic Media을 PDF 형식으로 사용할 수 있습니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI Assistant를 사용하여 질문에 답변합니다.
+>
+>[!BADGE OpenAPI 기능을 사용하는 Dynamic Media 안내서 PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Experience Manager의 중앙 자산 거버넌스를 사용하면 DAM 관리자 또는 브랜드 관리자가 OpenAPI 기능을 통해 Dynamic Media을 통해 사용할 수 있는 자산에 대한 액세스를 관리할 수 있습니다. AEM as a Cloud Service 작성자 서비스의 에셋에 대한 특정 메타데이터를 구성하여 승인된 에셋(개별 에셋까지)을 선택한 [IMS(Identity Management 시스템) Adobe 사용자 또는 그룹](https://helpx.adobe.com/in/enterprise/using/users.html#user-mgt-strategy)(으)로 배달을 제한할 수 있습니다.
 
@@ -34,7 +40,7 @@ IMS 사용자 및 그룹 ID 를 기준으로 [!DNL Experience Manager] 내의 �
 
 >[!NOTE]
 >
-> 이 기능은 현재 셀프 서비스가 아닙니다. IMS [사용자](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) 및 [그룹](https://helpx.adobe.com/in/enterprise/using/user-groups.html)에 대한 자산 전달을 제한하려면 Enterprise 지원 팀에 연락하여 [Adobe Admin Console](https://adminconsole.adobe.com/) 포털에서 액세스를 제한하는 데 필요한 정보를 검색하는 방법과 AEM as a Cloud Service 작성자 서비스에서 액세스를 구성하는 방법에 대한 지침을 확인하십시오.
+이 기능은 현재 셀프 서비스가 아닙니다. IMS [사용자](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) 및 [그룹](https://helpx.adobe.com/in/enterprise/using/user-groups.html)에 대한 자산 전달을 제한하려면 Enterprise 지원 팀에 연락하여 [Adobe Admin Console](https://adminconsole.adobe.com/) 포털에서 액세스를 제한하는 데 필요한 정보를 검색하는 방법과 AEM as a Cloud Service 작성자 서비스에서 액세스를 구성하는 방법에 대한 지침을 확인하십시오.
 
 ### 설정 및 해제 날짜 및 시간을 사용하여 에셋 게재 제한 {#restrict-delivery-assets-date-time}
 
@@ -82,7 +88,7 @@ AEM Cloud Service 작성자 서비스와 Asset Selector에서 IMS 전달자 토�
 
 >[!NOTE]
 >
->AEM Asset Selector 기반 통합에서 IMS 인증을 활성화하는 방법에 대한 자세한 내용은 엔터프라이즈 지원에 문의하십시오
+AEM Asset Selector 기반 통합에서 IMS 인증을 활성화하는 방법에 대한 자세한 내용은 엔터프라이즈 지원에 문의하십시오
 
 1. 비 Asset Selector 기반 경험의 경우 현재 OpenAPI 기능이 있는 AEM as a Cloud Service 및 Dynamic Media에서 서버측 API 통합을 지원하고 IMS Bearer 토큰을 생성할 수 있습니다.
    * [여기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow)의 지침에 따라 [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)을 통해 IMS Bearer 토큰을 검색할 수 있는 서비스 대 서버 API 통합을 수행합니다

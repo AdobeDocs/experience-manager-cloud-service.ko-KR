@@ -3,19 +3,25 @@ title: Content Hub에서 자산 통찰력 보기
 description: ' [!DNL Content Hub]에서 자산 통찰력을 보는 방법 알아보기'
 role: User
 exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 1%
+source-wordcount: '324'
+ht-degree: 5%
 
 ---
 
 # [!DNL Content Hub]의 Assets Insights {#assets-insights}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Assets 인사이트](assets/asset-insights-banner.jpg)
+
+>[!AVAILABILITY]
+>
+>이제 Content Hub 안내서를 PDF 형식으로 사용할 수 있습니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI Assistant를 사용하여 질문에 답변합니다.
+>
+>[!BADGE Content Hub 안내서 PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 [!DNL Content Hub]은(는) 마케팅 캠페인, 채널 및 다른 지역에서 사용되는 자산 사용 통계와 같이 마케팅 이해 당사자가 자주 직면하는 일반적인 문제를 해결하면서 자산에 대한 중요한 통찰력을 제공합니다. 에셋의 성능과 인기를 명확하게 이해함으로써 사용자 경험을 개선하는 데 필수적인 실행 가능한 통찰력을 제공합니다.
 

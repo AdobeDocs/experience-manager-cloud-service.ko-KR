@@ -2,17 +2,23 @@
 title: Content Hub에서 자산 검색
 description: ' [!DNL Content Hub]에서 자산을 검색하는 방법 알아보기'
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '662'
 ht-degree: 0%
 
 ---
 
-
 # [!DNL Content Hub]에서 Assets 검색 {#search-assets}
 
 ![자산 배너 이미지 공유](assets/search.png)
+
+>[!AVAILABILITY]
+>
+>이제 Content Hub 안내서를 PDF 형식으로 사용할 수 있습니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI Assistant를 사용하여 질문에 답변합니다.
+>
+>[!BADGE Content Hub 안내서 PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 저장소에 에셋이 많으면 적절한 에셋을 검색하는 데 시간이 오래 걸립니다. [!DNL The Content Hub] 검색에서는 승인된 에셋을 찾아 컬렉션 다운로드, 공유 또는 만들기와 같은 추가 작업을 수행할 수 있는 기능을 제공합니다. 텍스트 기반 검색 수행, 필터 사용, 태그 또는 스마트 태그별 검색 수행, 특정 파일 형식 검색 등과 같은 다양한 기능을 사용하여 검색 결과 범위를 좁힐 수 있습니다.
 

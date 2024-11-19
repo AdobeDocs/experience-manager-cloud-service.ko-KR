@@ -2,9 +2,9 @@
 title: Content Hub에 대한 자산 승인
 description: Assetsas a Cloud Service 에서 자산을 승인하여 Content Hub에서 사용할 수 있도록 하는 방법을 알아봅니다.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 189fc257fed1115f66559d0f9063885ae527a0fa
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '774'
 ht-degree: 6%
 
 ---
@@ -15,6 +15,12 @@ ht-degree: 6%
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Content Hub에 대한 자산 승인](assets/content-hub-approve-assets.png)
+
+>[!AVAILABILITY]
+>
+>이제 Content Hub 안내서를 PDF 형식으로 사용할 수 있습니다. 전체 안내서를 다운로드하고 Adobe Acrobat AI Assistant를 사용하여 질문에 답변합니다.
+>
+>[!BADGE Content Hub 안내서 PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 브랜드 관리자 및 마케터는 브랜드 자산에 대한 엄격한 제어를 유지합니다. Content Hub 내에서는 승인된 최신 버전의 자산만 사용할 수 있으므로 모든 채널 및 애플리케이션에서 브랜드 일관성이 보장됩니다.
 
@@ -34,7 +40,7 @@ Assetsas a Cloud Service 에 `approved`(으)로 표시된 자산은 Content Hub�
 
 >[!NOTE]
 >
->Assets as a Cloud Service Content Hub에 표시하려면 Content Hub과 동일한 조직을 사용해야 합니다.
+Assets as a Cloud Service Content Hub에 표시하려면 Content Hub과 동일한 조직을 사용해야 합니다.
 
 AEM as a Cloud Service 내의 Assets 보기를 사용하여 에셋 상태를 `approved`(으)로 설정하려면 다음을 수행하십시오.
 
@@ -89,7 +95,7 @@ Assets 보기에서 관리자 보기로 전환한 후 폴더에 추가된 모든
 
 >[!NOTE]
 > 
->이 접근 방법에서는 폴더에 새로 생성된 에셋을 승인합니다. 폴더의 기존 에셋에 대해서는 해당 에셋을 수동으로 선택하고 승인해야 합니다.
+이 접근 방법에서는 폴더에 새로 생성된 에셋을 승인합니다. 폴더의 기존 에셋에 대해서는 해당 에셋을 수동으로 선택하고 승인해야 합니다.
 
 ## Content Hub을 사용하여 업로드된 에셋 관리 {#manage-assets-uploaded-using-content-hub}
 
