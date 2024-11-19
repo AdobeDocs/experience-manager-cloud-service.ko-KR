@@ -4,9 +4,9 @@ description: 콘텐츠 전송 도구 사용에 대한 지침과 모범 사례에
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 feature: Migration
 role: Admin
-source-git-commit: 208a4de5aab5326490908fade8f12f17b8f3c0d7
+source-git-commit: 943685ed9c33ba42c4dd1cb941b2eca1cce8bfe8
 workflow-type: tm+mt
-source-wordcount: '1368'
+source-wordcount: '1389'
 ht-degree: 14%
 
 ---
@@ -72,8 +72,6 @@ ht-degree: 14%
 
 * **수집하기 전에 클라우드 인스턴스에서 기존 콘텐츠 지우기** 옵션을 사용하도록 설정한 경우 전체 기존 저장소를 삭제하고 콘텐츠를 수집할 새 저장소를 만듭니다. 즉, 대상 Cloud Service 인스턴스에 대한 권한을 포함한 모든 설정이 재설정됩니다. **관리자** 그룹에 추가된 관리자 사용자도 마찬가지입니다. 콘텐츠 전송 도구에 대한 액세스 토큰을 검색하려면 **관리자** 그룹에 대한 사용자 권한이 있어야 합니다.
 
-* 두 소스의 콘텐츠가 타겟의 동일한 경로로 이동되는 경우, 수집은 여러 소스의 콘텐츠를 타겟 Cloud Service 인스턴스로 병합하는 것을 지원하지 않습니다. 여러 소스의 콘텐츠를 단일 타겟 Cloud Service 인스턴스로 이동하려면 소스의 콘텐츠 경로가 겹치지 않도록 하십시오.
-
 * 추출 키를 만들거나 갱신한 시점부터 14일 동안 유효합니다. 언제든지 갱신할 수 있습니다. 추출 키가 만료된 경우 추출을 수행할 수 없습니다.
 
 * CTT(컨텐츠 전송 도구)는 소스 인스턴스에서 대상 인스턴스로 컨텐츠를 전송하기 전에 어떠한 종류의 컨텐츠 분석도 수행하지 않습니다. 예를 들어 CTT는 컨텐츠를 Publish 환경으로 수집하는 동안 게시된 컨텐츠와 게시되지 않은 컨텐츠를 구분하지 않습니다. 마이그레이션 세트에 지정된 모든 콘텐츠는 선택한 대상 인스턴스로 수집됩니다. 사용자는 마이그레이션 세트를 작성자 인스턴스나 Publish 인스턴스 또는 둘 다로 수집할 수 있습니다. Adobe은 컨텐츠를 프로덕션 인스턴스로 이동하는 동안 소스 작성자 인스턴스에 CTT를 설치하여 컨텐츠를 타겟 작성자 인스턴스로 이동하는 것을 권장합니다. 마찬가지로 소스 Publish 인스턴스에 CTT를 설치하여 컨텐츠를 대상 Publish 인스턴스로 이동합니다. 자세한 내용은 [Publish 인스턴스에서 컨텐츠 전송 도구 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool)을 참조하십시오.
@@ -91,6 +89,8 @@ ht-degree: 14%
 * 추가 추출을 하려는 경우 기존 콘텐츠의 콘텐츠 구조는 초기 추출을 하는 시점부터 추가 추출을 실행할 때까지 변경되지 않아야 합니다. 초기 추출 이후 구조가 변경된 콘텐츠에서는 추가 작업을 실행할 수 없습니다. 마이그레이션 프로세스 중에 이를 제한해야 합니다.
 
 * 버전을 마이그레이션 세트의 일부로 포함하고 `wipe=false`을(를) 사용하여 추가 작업을 수행하는 경우 콘텐츠 전송 도구의 현재 제한으로 인해 버전 삭제를 비활성화해야 합니다. 버전 삭제를 활성화하고 마이그레이션 세트에 대한 추가를 수행하는 경우 `wipe=true`(으)로 수집을 수행해야 합니다.
+
+* CTT(콘텐츠 전송 도구)는 병합 수집을 지원하지 않습니다. 여러 시스템의 컨텐츠를 단일 Cloud Service 인스턴스로 통합하려면 하나의 소스 시스템의 버전만 마이그레이션할 수 있습니다. 이 프로세스에서는 지우기=false 매개 변수를 사용한 마이그레이션을 사용해야 하며, 이로 인해 작업의 증분 특성으로 인해 수집 시간이 길어질 수 있습니다. 가능하면 마이그레이션을 시작하기 전에 콘텐츠를 단일 소스 시스템으로 통합하여 콘텐츠를 병합할 필요가 없습니다.
 
 * 마이그레이션 세트는 장기간 사용하지 않으면 만료되며 그 이후에는 데이터를 더 이상 사용할 수 없습니다. 자세한 내용은 [마이그레이션 세트 만료](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry)를 검토하십시오.
 
