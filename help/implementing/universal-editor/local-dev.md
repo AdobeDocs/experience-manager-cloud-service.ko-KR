@@ -4,7 +4,7 @@ description: 로컬 개발을 위해 또는 자체 인프라의 일부로 고유
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 4fedb7a812b53fd9ebd9c82e86fa8f05394d464f
+source-git-commit: ccdb43c31e3ba1365a514bff696c9ec11dbbc21e
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 40%
@@ -154,7 +154,7 @@ Universal Editor는 페이지 구성 방식에 따라 페이지를 편집하는 
 
 [Universal Editor Service가 로컬에서 실행](#running-ue)하고 [콘텐츠 페이지를 구성하여 로컬 서비스를 사용](#using-loca-ue)하면 편집기를 시작할 수 있습니다.
 
-1. 브라우저를 열고 `https://localhost:8000/corslib/LATEST`으로 이동합니다.
+1. 브라우저를 열고 `https://localhost:8000/ping`으로 이동합니다.
 1. [자체 서명된 인증서](#ue-https)를 허용하도록 브라우저를 내보냅니다.
 1. 자체 서명된 인증서를 신뢰하는 경우 로컬 Universal Editor Service를 사용하여 페이지를 편집할 수 있습니다.
 
