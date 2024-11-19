@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: 33eb71b2828314ee2c75206ef7034313e2638360
+source-git-commit: 92da26452438f2b56cdec1aecc76587d4982f00e
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '763'
 ht-degree: 2%
 
 ---
@@ -16,10 +16,6 @@ ht-degree: 2%
 # 범용 편집기로 편집할 수 있는 페이지를 만드는 템플릿 {#page-templates}
 
 범용 편집기로 편집할 수 있는 페이지를 만드는 데 사용할 수 있는 템플릿을 만들어 시간을 절약하고 일관된 브랜딩을 보장하는 방법을 알아봅니다.
-
->[!NOTE]
->
->이 기능은 AEM as a Cloud Service의 향후 릴리스에서 사용할 수 있습니다.
 
 >[!NOTE]
 >
