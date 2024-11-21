@@ -1,12 +1,12 @@
 ---
-title: \s 사용
+title: 구성 파이프라인 사용하기
 description: 구성 파이프라인을 사용하여 로그 전달 설정, 제거 관련 유지 관리 작업 및 다양한 CDN 구성과 같은 다양한 구성을 AEM as a Cloud Service에 배포하는 방법에 대해 알아봅니다.
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 4d8f6f37541c0d712019f21a5684ec4bd5133de3
+source-git-commit: 20338fde4b0875f9f40a2f3f1702b8e1c01a0a88
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '998'
 ht-degree: 1%
 
 ---
