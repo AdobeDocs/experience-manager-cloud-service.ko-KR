@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 083e334c2ac248e15168ae3ec4c8daf2b2888ee5
+source-git-commit: 5d2c09a3e1c67e6c2435d84112546107d284259f
 workflow-type: tm+mt
-source-wordcount: '1722'
-ht-degree: 40%
+source-wordcount: '1778'
+ht-degree: 39%
 
 ---
 
@@ -51,6 +51,10 @@ Edge Delivery 페이지를 페이지 템플릿으로 빠르게 전환합니다. 
 AEM 인스턴스를 통해 게시하기 위한 **[!DNL Edge Delivery Services]CSV 가져오기**
 
 즐겨 사용하는 스프레드시트 도구에서 Edge Delivery 스프레드시트 데이터(예: 리디렉션)를 효율적으로 관리하고 새 CSV 가져오기를 통해 AEM에 업로드합니다. [자세한 내용](/help/edge/wysiwyg-authoring/tabular-data.md#importing).
+
+### AEM Sites의 프리릴리스 기능
+
+고유 ID 기반 참조와 함께 참조되는 콘텐츠 조각을 개선하여 에셋 또는 조각을 이동할 때에도 유효한 링크로 유지될 수 있으므로 업데이트나 다시 게시할 필요가 없습니다. 현재 제한 사항: 페이지 참조는 아직 고유 ID로 지원되지 않습니다. 페이지가 콘텐츠 조각에서 참조되는 경우 이 기능을 사용해서는 안 됩니다.
 
 ### 얼리 어답터 프로그램 {#sites-early-adopter}
 
