@@ -4,10 +4,10 @@ description: AEM as a Cloud Service의 배포 및 복제 문제 해결에 대해
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 60006b0e0b5215263b53cbb7fec840c47fcef1a8
 workflow-type: tm+mt
-source-wordcount: '1312'
-ht-degree: 38%
+source-wordcount: '1701'
+ht-degree: 31%
 
 ---
 
@@ -23,11 +23,10 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
 
 >[!NOTE]
 >
->콘텐츠를 일괄 게시하려면 [Publish 콘텐츠 트리 워크플로](#publish-content-tree-workflow)를 사용하십시오.
->이 워크플로 단계는 Cloud Service을 위해 특별히 빌드되었으며 대용량 페이로드를 효율적으로 처리할 수 있습니다.
+>콘텐츠 벌크 게시에 관심이 있는 경우 [트리 활성화 워크플로 단계](#tree-activation)를 사용하여 워크플로를 만드십시오. 그러면 대규모 페이로드를 효율적으로 처리할 수 있습니다.
 >벌크 게시 사용자 지정 코드를 빌드하는 것은 권장되지 않습니다.
->어떤 이유로든 사용자 정의해야 하는 경우, 기존 워크플로 API를 사용하여 이 워크플로/워크플로 단계를 트리거할 수 있습니다.
->게시해야 하는 콘텐츠만 게시하는 것이 좋습니다. 또한 필요하지 않은 경우 많은 수의 콘텐츠를 게시하지 않도록 주의하십시오. 그러나 Publish 콘텐츠 트리 워크플로우를 통해 보낼 수 있는 콘텐츠의 양에 대해서는 제한이 없습니다.
+>어떤 이유로든 사용자 정의해야 하는 경우, 기존 워크플로 API를 사용하여 이 단계로 워크플로를 트리거할 수 있습니다.
+>게시해야 하는 콘텐츠만 게시하는 것이 좋습니다. 그리고 필요하지 않은 경우 많은 수의 콘텐츠를 게시하지 않도록 주의하십시오. 그러나 트리 활성화 워크플로 단계가 있는 워크플로를 통해 보낼 수 있는 콘텐츠 양에 대해서는 제한이 없습니다.
 
 ### 빠른 게시 취소/게시 - 예정된 게시 취소/게시 {#publish-unpublish}
 
@@ -51,7 +50,84 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
 
 게시 관리에 대한 자세한 내용은 [게시 기본 사항 설명서](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication)를 참조하십시오.
 
+### 트리 활성화 워크플로 단계 {#tree-activation}
+
+트리 활성화 워크플로 단계는 깊은 계층의 콘텐츠 노드를 복제하기 위한 것입니다. 큐가 너무 커지면 자동으로 일시 중지되므로 다른 복제가 지연 시간을 최소화하면서 동시에 진행될 수 있습니다.
+
+`TreeActivation` 프로세스 단계를 사용하는 워크플로 모델 만들기:
+
+1. AEM as a Cloud Service 홈페이지에서 **도구 - 워크플로 - 모델**(으)로 이동합니다.
+1. 워크플로 모델 페이지에서 화면 오른쪽 상단의 **만들기**&#x200B;를 누릅니다.
+1. 모델에 제목과 이름을 추가합니다. 자세한 내용은 [워크플로 모델 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)를 참조하십시오.
+1. 목록에서 만든 모델을 선택하고 **편집**&#x200B;을 누릅니다.
+1. 다음 창에서 기본적으로 나타나는 단계를 삭제합니다
+1. 프로세스 단계를 현재 모델 플로우로 끌어서 놓습니다.
+
+   ![프로세스 단계](/help/operations/assets/processstep.png)
+
+1. 흐름에서 프로세스 단계를 선택하고 렌치 아이콘을 눌러 **구성**&#x200B;을(를) 선택합니다.
+1. **프로세스** 탭을 선택하고 드롭다운 목록에서 `Publish Content Tree`을(를) 선택한 다음 **핸들러 고급** 확인란을 선택합니다
+
+   ![트리 활성화](/help/operations/assets/new-treeactivationstep.png)
+
+1. **인수** 필드에서 추가 매개변수를 설정합니다. 여러 개의 쉼표로 구분된 인수를 함께 연결할 수 있습니다. 예:
+
+   `enableVersion=false,agentId=publish,chunkSize=50,maxTreeSize=500000,dryRun=false,filters=onlyModified,maxQueueSize=10`
+
+   >[!NOTE]
+   >
+   >매개변수 목록은 아래의 **매개변수** 섹션을 참조하십시오.
+
+1. **완료**&#x200B;를 눌러 워크플로 모델을 저장합니다.
+
+**매개변수**
+
+| 이름 | 기본 | 설명 |
+| -------------- | ------- | --------------------------------------------------------------- |
+| 경로 |         | 시작할 루트 경로 |
+| agentId | 게시 | 사용할 복제 에이전트 이름 |
+| 청크 크기 | 50 | 단일 복제에 번들로 묶을 경로 수 |
+| maxTreeSize | 500000 | 트리로 작은 것으로 간주할 최대 노드 수 |
+| maxQueueSize | 10 | 복제 큐의 최대 항목 수 |
+| enableVersion | false | 버전 관리 활성화 |
+| dryRun | false | true로 설정된 경우 복제는 실제로 호출되지 않습니다. |
+| userId |         | 작업 전용입니다. 워크플로우에서는 해당 워크플로우를 호출하는 사용자가 사용됩니다 |
+| 개의 필터 |         | 노드 필터 이름 목록입니다. 아래의 지원되는 필터 를 참조하십시오 |
+
+**지원 필터**
+
+| 이름 | 설명 |
+| ------------- | ------------------------------------------- |
+| only수정됨 | 마지막 게시 이후 수정된 노드 |
+| onlyPublish | 이전에 게시된 노드 |
+
+
+**지원 다시 시작**
+
+워크플로는 콘텐츠를 청크 단위로 처리하며, 각 청크는 게시할 전체 콘텐츠의 하위 집합을 나타냅니다.  시스템이 워크플로우를 중지하면 중단된 부분부터 계속 진행됩니다.
+
+**워크플로 진행 상황 모니터링**
+
+1. AEM as a Cloud Service 홈페이지에서 **도구 - 일반 - 작업**(으)로 이동합니다.
+1. 워크플로우에 해당하는 행을 확인합니다. *progress* 열은 복제가 진행되는 방식을 나타냅니다. 예를 들어 41/564를 표시하고 새로 고침하면 52/564로 업데이트할 수 있습니다.
+
+   ![트리 활성화 진행률](/help/operations/assets/treeactivation-progress.png)
+
+
+1. 행을 선택하고 열면 워크플로우 실행 상태에 대한 추가 세부 정보가 제공됩니다.
+
+   ![트리 활성화 상태 세부 정보](/help/operations/assets/treeactivation-progress-details.png)
+
+
+
 ### 콘텐츠 트리 게시 워크플로 {#publish-content-tree-workflow}
+
+>[!NOTE]
+>
+>이 기능은 사용자 지정 워크플로에 포함할 수 있는 더 많은 성능 트리 활성화 단계를 위해 더 이상 사용되지 않습니다.
+
+<details>
+<summary>더 이상 사용되지 않는 기능에 대한 자세한 내용을 보려면 여기를 클릭하십시오 .</summary>
 
 **도구 - 워크플로 - 모델**&#x200B;을 선택한 다음 아래와 같이 기본 워크플로 모델의 **콘텐츠 트리 게시**&#x200B;를 복사하여 트리 복제를 트리거할 수 있습니다.
 
@@ -117,10 +193,7 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
 ```
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
-
-**지원 다시 시작**
-
-워크플로는 콘텐츠를 청크 단위로 처리하며, 각 청크는 게시할 전체 콘텐츠의 하위 집합을 나타냅니다. 시스템에서 워크플로우를 중지하면 아직 처리되지 않은 청크가 다시 시작되고 처리됩니다. 로그 문에는 특정 경로에서 콘텐츠가 다시 시작되었다고 표시됩니다.
+</details>
 
 ### 복제 API {#replication-api}
 
