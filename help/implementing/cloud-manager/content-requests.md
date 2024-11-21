@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 16941385a05358d9a5cf3f57405b8f2174902af2
+source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1276'
 ht-degree: 9%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 9%
 
 ## 소개 {#introduction}
 
-컨텐츠 요청은 Edge Delivery Services 또는 컨텐츠 전달 네트워크와 같은 고객 제공 캐싱 시스템과 관련된 요청을 포함하여 AEM Sites에 대한 요청을 참조합니다. 이러한 요청은 headless 방식으로 페이지 보기(예: 페이지 및 경험 조각)를 통해 HTML 형식으로 또는 API 호출을 통해 JSON 형식으로 콘텐츠 또는 데이터를 제공합니다. 콘텐츠 요청은 페이지 보기 또는 5개의 API 호출로 계산되며, 콘텐츠 요청을 수신하기 위한 첫 번째 캐싱 시스템의 인그레스에서 측정됩니다. 특정 HTTP 요청은 콘텐츠 요청 계산을 위해 포함되거나 제외됩니다. 포함 및 제외된 HTTP 요청과 그 기술 정의에 대한 전체 목록은 설명서에서 확인할 수 있습니다.
+컨텐츠 요청은 Edge Delivery Services 또는 컨텐츠 전달 네트워크와 같은 고객 제공 캐싱 시스템과 관련된 요청을 포함하여 AEM Sites에 대한 요청을 참조합니다. 이러한 요청은 headless 방식으로 페이지 보기(예: 페이지 및 경험 조각)를 통해 HTML 형식으로 또는 API 호출을 통해 JSON 형식으로 콘텐츠 또는 데이터를 제공합니다. 콘텐츠 요청은 페이지 보기 또는 5개의 API 호출로 계산되며, 콘텐츠 요청을 수신하기 위한 첫 번째 캐싱 시스템의 인그레스에서 측정됩니다. 특정 HTTP 요청은 콘텐츠 요청 계산을 위해 포함되거나 제외됩니다. 이러한 포함 및 제외된 HTTP 요청의 전체 목록과 해당 기술 정의는 설명서에서 확인할 수 있습니다.
 
 ## Cloud Service 컨텐츠 요청 기본 정보 {#understanding-cloud-service-content-requests}
 

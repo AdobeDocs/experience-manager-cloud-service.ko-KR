@@ -6,9 +6,9 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f7a8e823f058115f11241f0864517432a7dea5ab
+source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1162'
 ht-degree: 34%
 
 ---
@@ -62,7 +62,7 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 
 ## 활동 페이지 {#activity}
 
-**활동** 페이지에는 선택한 프로그램에 대한 모든 파이프라인 실행과 기타 중요한 프로그램 이벤트의 전체 목록이 표시됩니다.
+**활동** 페이지에는 선택한 프로그램 및 기타 중요한 프로그램 이벤트에 대한 모든 파이프라인 실행의 전체 목록이 표시됩니다.
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 

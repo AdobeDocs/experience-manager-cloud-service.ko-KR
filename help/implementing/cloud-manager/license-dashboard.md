@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8f3ceb5ebf348b5f3f496b1db04d7dd7c9a0ac5c
+source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 25%
+source-wordcount: '890'
+ht-degree: 22%
 
 ---
 
@@ -41,9 +41,9 @@ Cloud Manager 라이선스 대시보드를 사용하면 사용 가능한 항목 
 
 대시보드는 다음을 표시하는 세 섹션으로 나뉩니다.
 
-* **솔루션** - 이 섹션에서는 Sites 또는 Assets와 같이 사용 허가된 솔루션을 요약합니다.
-* **추가 기능** - 이 섹션에서는 사용 허가된 솔루션에 대한 추가 기능을 요약합니다.
-* **기타 권한** - 이 섹션에서는 테넌트 내에서 사용할 수 있는 기타 권한뿐만 아니라 샌드박스 및 개발 환경을 요약합니다.
+* **솔루션** - 라이선스가 부여된 솔루션.
+* **추가 기능** - 사용 허가된 솔루션에 대한 추가 기능.
+* **기타 권한** - 테넌트 내에서 사용할 수 있는 샌드박스 및 개발 환경 및 기타 권한.
 
 각 섹션에는 사용 가능한 항목과 사용 방법이 요약되어 있습니다. 현재 테넌트에 다른 솔루션이 있는 경우에도 Sites 및 Assets 솔루션만 표시됩니다.
 

@@ -5,9 +5,9 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '374'
 ht-degree: 4%
 
 ---
@@ -42,7 +42,7 @@ CDN 대시보드는 모든 프로그램의 개요 페이지에서 사용할 수 
 
 ![CDN 성능 대시보드](assets/cdn-performance-dashboard.png)
 
-CDN 성능에 대한 세부 정보와 개선 방법에 대한 제안 사항을 보려면 **트렌드 보기**&#x200B;를 클릭하십시오.
+CDN 성능에 대한 자세한 내용 및 개선 방법에 대한 제안을 보려면 **트렌드 보기**&#x200B;를 클릭하세요.
 
 ![성능 트렌드](assets/cdn-performance-trend.png)
 
