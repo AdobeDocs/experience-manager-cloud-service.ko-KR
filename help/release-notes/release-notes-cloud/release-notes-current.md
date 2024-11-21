@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: b72d5fca4113f6d3b9cbabab655e36f2370231d9
+source-git-commit: 083e334c2ac248e15168ae3ec4c8daf2b2888ee5
 workflow-type: tm+mt
-source-wordcount: '1721'
+source-wordcount: '1722'
 ht-degree: 40%
 
 ---
@@ -171,7 +171,7 @@ intuitive and improving the mobile form-filling experience.
 
 개발자는 AEM as Cloud Service 기능을 자체 애플리케이션 및 도구에 심층적으로 통합할 수 있습니다. 새로운 AEM as a Cloud Service API는 일관되고, 잘 문서화되고, 사용자 친화적인 목표를 가지고 OpenAPI 사양을 따릅니다. 인증이 필요한 엔드포인트에 대한 자격 증명은 Adobe Developer Console 프로젝트를 생성하여 생성됩니다.
 
-OpenAPI 기반 AEM API에 대해 자세히 알아보고 구성 및 사용을 보여 주는 종단간 튜토리얼을 사용해 보십시오.
+[OpenAPI 기반 AEM API](/help/implementing/developing/open-api-based-apis.md)에 대해 자세히 알아보고 구성 및 사용을 보여 주는 [엔드 투 엔드 튜토리얼](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)을 사용해 보세요.
 
 구체적으로 아래 나열된 API 끝점은 얼리어답터 프로그램의 일부로 사용할 수 있습니다. 관심이 있는 경우 사용 방법을 설명하는 [aem-apis@adobe.com](mailto:aem-apis@adobe.com)(으)로 전자 메일을 보내십시오.
 * [사이트 콘텐츠 조각 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
