@@ -4,9 +4,9 @@ description: AEM Assets 보기의 UI 확장성 기능에 대해 알아봅니다.
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: e47a8fc65e58ae2ffff805966d7dae8c6edc7aac
+source-git-commit: af7e6ab40212dfa3d91cda80a76b1b6b01dd65a3
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '598'
 ht-degree: 3%
 
 ---
@@ -17,10 +17,13 @@ ht-degree: 3%
 | ------------- | --------------------------- |---------|----|-----|
 
 AEM Assets 보기에는 UI 확장성 기능이 있습니다. 이 기능을 사용하면 사용자가 Assets 보기의 기본 기능이 충족하지 않는 특정 비즈니스 요구 사항을 충족하도록 AEM Assets 보기 UI에 사용자 지정 UI 구성 요소를 추가할 수 있습니다. 이 확장성 기능은 조직이 특정 워크플로우 및 요구 사항에 맞게 인터페이스를 조정할 수 있도록 하는 AEM Assets 보기의 유연성을 향상시킵니다.
-자산, 폴더 및 컬렉션 수준에 확장을 추가할 수 있습니다. 추가된 확장은 에셋, 컬렉션 또는 폴더의 세부 사항 페이지에 있는 전용 패널 내에 표시됩니다.
+자산, 폴더 및 컬렉션 수준에 확장을 추가할 수 있습니다. 추가된 확장은 에셋, 컬렉션 또는 폴더 세부 사항 페이지의 전용 패널 내에 표시됩니다.
 
 >[!IMPORTANT]
-> AEM Assets 보기 UI 확장은 [Assets Ultimate](/help/assets/assets-ultimate-overview.md)에서 사용할 수 있습니다.
+>
+> * AEM Assets 보기 UI 확장은 [Assets Ultimate](/help/assets/assets-ultimate-overview.md)에서 사용할 수 있습니다.
+> * Assets View UI 확장은 Beta 릴리스로 사용할 수 있습니다. Assets 보기 UI 확장성에 일찍 액세스하려면 [Adobe 고객 지원 사례를 만들어 제출](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)하십시오.
+> * 세부 피드백 옵션을 확장하고 문제 보고를 클릭하여 설명서 피드백을 제공할 수 있습니다.
 
 ## <a id="1"></a> Assets 보기에 액세스하는 방법
 
@@ -32,9 +35,6 @@ AEM Assets 보기에는 UI 확장성 기능이 있습니다. 이 기능을 사�
 Assets 보기에서 에셋, 폴더 또는 컬렉션의 세부 정보 페이지로 이동합니다. 이 세부 정보 페이지에는 추가된 UI 확장을 표시하는 전용 패널이 있습니다.
 ![내 작업 공간](/help/assets/assets/my-workspace-assets-view3.png)
 
->[!NOTE]
->
-> AEM Assets View UI 확장은 Beta 릴리스로 사용할 수 있습니다. 세부 피드백 옵션을 확장하고 문제 보고를 클릭하여 설명서 피드백을 제공할 수 있습니다.
 
 ## 확장성 구성 요소를 추가하기 위한 사전 요구 사항
 
