@@ -1,8 +1,8 @@
 ---
-source-git-commit: f3502de1aebd44a056e1263b059e1588243f5845
+source-git-commit: 60cf4c34f3b4d7c7a757f2274f1a02de8ae51e11
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 92%
+source-wordcount: '1323'
+ht-degree: 88%
 
 ---
 # 스니펫 {#snippets}
@@ -53,6 +53,7 @@ ht-degree: 92%
 * [Workfront Fusion에 제출](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Salesforce 애플리케이션에 적응형 양식 연결](/help/forms/aem-forms-salesforce-integration.md)
 * [Microsoft에 적응형 양식 연결](/help/forms/ms-dynamics-odata-configuration.md)
+* [Adobe Marketo Engage에 적응형 양식 연결](/help/forms/integrate-form-to-marketo-engage.md)
 * [사용자 지정 제출 액션 만들기](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
 ## 추가 참조 {#see-more-forms-eds}
@@ -131,6 +132,8 @@ ht-degree: 92%
 * [핵심 구성 요소 기반 적응형 양식의 규칙 편집기 사용자 인터페이스](/help/forms/rule-editor-core-components-user-interface.md)
 * [핵심 구성 요소 기반 적응형 양식의 규칙 편집기의 다양한 사용 사례](/help/forms/rule-editor-core-components-usecases.md)
 * [다양한 규칙 편집기 에디션의 차이점](/help/forms/rule-editor-core-components-difference-tables.md)
+* [적응형 양식에서 비동기 함수 사용](/help/forms/using-async-funct-in-rule-editor.md)
+* [핵심 구성 요소를 기반으로 하는 양식의 시각적 규칙 편집기에서 서비스 개선 사항 호출](/help/forms/invoke-service-enhancements-rule-editor.md)
 * [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 소개](/help/forms/create-and-use-custom-functions.md)
 * [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 만들기](/help/forms/custom-function-core-component-create-function.md)
 * [사용자 지정 함수의 범위 개체](/help/forms/custom-function-core-component-scope-function.md)
@@ -144,6 +147,12 @@ ht-degree: 92%
 * [초안으로 양식 저장](/help/forms/save-core-component-based-form-as-draft.md)
 * [Sites 페이지에 양식 링크 추가](/help/forms/add-form-link-to-aem-sites-page.md)
 
+## Marketo Engage{#marketo-engage-see-also}
+
+* [AEM Forms과 Marketo Engage 통합](/help/forms/integrate-form-to-marketo-engage.md)
+* [Marketo Engage과 통합할 새 양식 구성](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+* [기존 적응형 Forms에 대한 Marketo Engage 데이터 소스 구성](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [Marketo Engage 기존 양식에 대한 제출 액션을 구성합니다.](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 ## Cloud Manager IP 허용 목록 및 프론트엔드 파이프라인 {#allowlist-frontend-pipeline}
 

@@ -4,9 +4,9 @@ description: 적응형 양식 기반의 핵심 구성 요소를 초안으로 저
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 2933b3be569724800a77b4ea93e91441046746f6
+source-git-commit: 2e4c9a7d30b954045082baf242737ac2f7426c70
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1387'
 ht-degree: 3%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # 양식을 초안으로 저장하고 사이트 페이지에 나열
 
-<span class="preview"> 이 문서에는 시험판 기능인 **자동 저장** 기능에 대한 내용이 포함되어 있습니다. 이 프리릴리스 기능은 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)을 통해서만 액세스할 수 있습니다.</span>
+<span class="preview"> 이 문서에는 시험판 기능인 **초안** 기능에 대한 내용이 포함되어 있습니다. 이 프리릴리스 기능은 [프리릴리스 채널](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)을 통해서만 액세스할 수 있습니다.</span>
 
 양식 작성을 시작하지만 나중에 일시 중지했다가 다시 돌아가야 하는 사용자를 고려하십시오. AEM에서는 `save-as-draft` 옵션을 제공하므로 사용자가 나중에 완료할 수 있도록 양식을 초안으로 저장할 수 있습니다. 이를 용이하게 하기 위해 AEM에서는 AEM Sites 페이지에 초안 및 제출을 표시하는 기본 제공 **초안 및 제출** 양식 포털 구성 요소를 제공합니다. 구성 요소에는 제출된 양식과 함께 나중에 완료할 수 있도록 초안으로 저장된 양식이 나열됩니다. 로그인한 사용자만 초안을 편집하거나 제출된 양식을 볼 수 있습니다. 그러나 익명 사용자가 **검색 및 목록** 구성 요소를 사용하여 양식 목록을 탐색하고 양식을 초안으로 저장하는 경우 해당 초안이 **초안 및 제출** 구성 요소에 의해 나열되지 않습니다. 초안과 제출을 보려면 양식 제출 시 사용자가 로그인해야 합니다.
 
@@ -137,7 +137,7 @@ ht-degree: 3%
 
 적응형 양식을 미리 보고 작성하고 **양식 저장** 단추를 클릭하면 양식이 초안으로 저장됩니다.
 
-### 자동 저장
+### 초안
 
 >[!NOTE]
 >
@@ -147,13 +147,13 @@ ht-degree: 3%
 
 1. 작성자 인스턴스에서 편집 모드로 적응형 양식을 엽니다.
 1. 콘텐츠 브라우저를 열고 적응형 양식의 **[!UICONTROL 안내서 컨테이너]** 구성 요소를 선택합니다.
-1. 가이드 컨테이너 속성 ![가이드 속성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭하고 **[!UICONTROL 자동 저장]** 탭을 엽니다.
+1. 가이드 컨테이너 속성 ![가이드 속성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭하고 **[!UICONTROL 초안]** 탭을 엽니다.
 
    ![자동 저장](/help/forms/assets/auto-save.png)
 
-1. **[!UICONTROL 사용]** 확인란을 선택하여 양식 자동 저장을 사용하도록 설정합니다.
-1. **[!UICONTROL Trigger]**&#x200B;을(를) **Time based**(으)로 구성하여 특정 시간 간격 후 <!--based on the occurrence of an event or--> 양식을 자동 저장합니다.
-1. 정의된 간격에서 양식의 자동 저장을 트리거하는 기간을 설정하려면 **[!UICONTROL 이 간격(초)에 자동 저장]**&#x200B;을 지정하십시오.
+1. 양식을 초안으로 자동 저장하려면 **[!UICONTROL 자동으로 초안 저장]** 확인란을 선택하십시오.
+1. **[!UICONTROL 환경 설정 저장]**&#x200B;을(를) **일정한 간격으로 초안 저장**(으)로 구성하여 특정 시간 간격 후에 <!--based on the occurrence of an event or--> 양식을 자동 저장합니다.
+1. **[!UICONTROL 저장 간격 빈도(초)]**&#x200B;로 시간 간격을 지정하여 정의된 간격에 양식의 자동 저장을 트리거하는 기간을 설정하십시오.
 1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
 ## 초안 및 제출 구성 요소를 사용하여 사이트 페이지에서 초안/제출된 양식 보기

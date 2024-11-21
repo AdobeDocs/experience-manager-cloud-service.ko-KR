@@ -5,10 +5,10 @@ keywords: 적응형 양식에 대한 제출 액션을 선택하고, 적응형 �
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 6266da34305bc5d8b2bbb0d336028f4fede6c165
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 49%
+source-wordcount: '701'
+ht-degree: 47%
 
 ---
 
@@ -21,7 +21,8 @@ ht-degree: 49%
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
-| AEM as a Cloud Service | 이 문서 |
+| AEM as a Cloud Service(Foundation 구성 요소) | [여기 클릭](/help/forms/configuring-submit-actions.md) |
+| AEM as a Cloud Service (핵심 구성 요소) | 이 문서 |
 
 제출 액션을 사용하면 적응형 양식을 통해 캡처되는 데이터의 대상을 선택할 수 있습니다. 사용자가 적응형 양식에서 **[!UICONTROL 제출]** 버튼을 클릭하면 제출 액션이 트리거됩니다. 핵심 구성 요소를 기반으로 하는 적응형 양식의 Forms as a Cloud Service는 다수의 사전 빌드된 제출 액션을 제공합니다. 이러한 기본 제공 제출 액션을 통해 다음과 같은 작업을 수행할 수 있습니다.
 
@@ -68,11 +69,13 @@ ht-degree: 49%
 * [REST 엔드포인트에 제출](/help/forms/configure-submit-action-restpoint.md)
 * [OneDrive에 제출](/help/forms/configure-submit-action-onedrive.md)
 * [AEM Workflow 호출](/help/forms/configure-submit-action-workflow.md)
+* [Marketo 조직에 제출](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 적응형 양식을 다른 스토리지 구성에 제출할 수도 있습니다.
 
 * [Salesforce 애플리케이션에 적응형 양식 연결](/help/forms/aem-forms-salesforce-integration.md)
 * [Microsoft® Dynamics OData에 적응형 양식 연결](/help/forms/ms-dynamics-odata-configuration.md)
+* [Adobe Marketo Engage에 적응형 양식 연결](/help/forms/integrate-form-to-marketo-engage.md)
 
 [기본 제출 액션을 사용자 지정](custom-submit-action-form.md)할 수 있습니다. 또한 특정 조직 요구 사항에 맞게 제출 액션을 사용자 지정할 수 있습니다.
 

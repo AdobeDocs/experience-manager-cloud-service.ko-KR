@@ -5,10 +5,10 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: dcf7bde3bc73b70002f87f14d905cd294280ff94
 workflow-type: tm+mt
-source-wordcount: '2290'
-ht-degree: 42%
+source-wordcount: '2374'
+ht-degree: 41%
 
 ---
 
@@ -194,7 +194,7 @@ PDF documents contain metadata, which is information about the document (as dist
 
 ### PDF/A호환 문서로 변환하고 확인합니다.
 
-커뮤니케이션 문서 변환 API 는 PDF 문서를 PDF/A로 변환하는 데 도움이 됩니다. API를 사용하여 PDF 문서를 PDF/A 호환 문서로 변환하고 PDF 문서가 PDF/A 호환 문서인지 확인할 수 있습니다. PDF/A는 문서 내용을 장기간 보존하기 위한 보관 형식입니다. 글꼴이 문서 내에 임베드되어 있고 파일이 압축 해제되어 있습니다. 따라서 PDF/A 문서는 일반적으로 표준 PDF 문서보다 큽니다. 또한 PDF/A 문서에는 오디오 및 비디오 콘텐츠가 포함되지 않습니다.
+커뮤니케이션 문서 변환 API 는 PDF 문서를 PDF/A로 변환하는 데 도움이 됩니다. API를 사용하여 PDF 문서를 PDF/A 호환 문서로 변환하고 PDF 문서가 PDF/A 호환 문서인지 확인할 수 있습니다. PDF/A는 문서 내용을 장기간 보존하기 위한 보관 형식입니다. 글꼴이 문서 내에 임베드되어 있고 파일이 압축 해제되어 있습니다. 따라서 PDF/A 문서는 일반적으로 표준 PDF 문서보다 큽니다. 또한 PDF/A 문서에는 오디오 및 비디오 컨텐츠가 포함되어 있지 않습니다. 지원되는 PDF/A 준수 표준에는 PDF/A-1a, 1b, 2a, 2b, 3a 및 3b가 포함됩니다.
 
 ### PDF을 XDP로 변환 {#convert-pdf-to-xdp}
 
@@ -202,7 +202,7 @@ PDF documents contain metadata, which is information about the document (as dist
 
 PDF 문서를 XDP 파일로 변환합니다. PDF 문서를 XDP 파일로 성공적으로 변환하려면 PDF 문서에 사전에 XFA 스트림이 있어야 합니다.
 
-## 문서 보증 {#doc-assurance}
+## 문서 Assurance {#doc-assurance}
 
 DocAssurance 서비스에는 서명 및 암호화 API가 포함되어 있습니다.
 
@@ -214,6 +214,24 @@ DocAssurance 서비스에는 서명 및 암호화 API가 포함되어 있습니�
 * PDF 문서에 보이지 않는 서명 필드를 추가합니다.
 * PDF 문서에서 지정된 서명 필드에 서명합니다.
 * PDF 문서 인증
+* PDF 문서의 지정된 서명 필드에서 서명 제거
+* PDF 문서에서 지정된 서명 필드 삭제
+
+<span class="preview"> 얼리어답터 프로그램에서 사용할 수 있는 PDF 문서에서 지정된 서명 필드에서 서명을 제거하고 지정된 서명 필드를 삭제합니다. 공식 이메일 ID를 사용하여 aem-forms-ea@adobe.com으로 이메일을 보내 얼리 어답터 프로그램에 참여하고 기능에 대한 액세스 권한을 요청할 수 있습니다. </span>
+
+
+<!--
+
+### Remove Signature APIs
+
+The Remove Signature API helps to remove an existing digital signatures from a PDF document. This API is useful when you need to update or revise a signed document and reapply signatures. It maintains document integrity while effectively clearing signatures from specific pages or the entire file. Use cases include re-signing documents with updated data or clearing previous approvals for revised versions.
+
+
+### Remove Signature Field APIs
+
+The Remove Signature Field API is tailored for removing signature fields from a PDF document. This is ideal when you need to delete empty or unused signature fields to streamline document presentation. It enables users to eliminate signature fields without impacting other form fields or the document structure, making it easier to create cleaner, final versions of a document that no longer require signatures.
+
+-->
 
 ### 암호화 API
 

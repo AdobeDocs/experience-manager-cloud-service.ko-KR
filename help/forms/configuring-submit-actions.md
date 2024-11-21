@@ -4,9 +4,9 @@ description: 적응형 양식은 여러 제출 액션을 제공합니다. 제출
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: db0487ab11f48690cb36b410b895324e0d4cf684
 workflow-type: tm+mt
-source-wordcount: '3914'
+source-wordcount: '3929'
 ht-degree: 73%
 
 ---
@@ -16,7 +16,8 @@ ht-degree: 73%
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
-| AEM as a Cloud Service | 이 문서 |
+| AEM as a Cloud Service (핵심 구성 요소) | [여기 클릭](/help/forms/configure-submit-actions-core-components.md) |
+| AEM as a Cloud Service(Foundation 구성 요소) | 이 문서 |
 
 **적용 대상**: ✔️ Form Foundation 구성 요소 [적응형 양식 핵심 구성 요소](/help/forms/configure-submit-actions-core-components.md)를 ❌. Adobe은 핵심 구성 요소를 사용하여 [AEM Sites 페이지에 적응형 Forms을 추가](create-or-add-an-adaptive-form-to-aem-sites-page.md)하거나 [독립 실행형 적응형 Forms 만들기](creating-adaptive-form-core-components.md)할 것을 권장합니다.
 
@@ -31,6 +32,7 @@ ht-degree: 73%
 * [Azure Blob 스토리지에 제출](#azure-blob-storage)
 * [Power Automate에 제출](#microsoft-power-automate)
 * [Workfront Fusion에 제출](#workfront-fusion)
+* [Marketo Engage에 제출](/help/forms/integrate-form-to-marketo-engage.md)
 
 [기본 제출 액션을 확장](custom-submit-action-form.md)하여 자신의 제출 액션을 만들 수도 있습니다.
 

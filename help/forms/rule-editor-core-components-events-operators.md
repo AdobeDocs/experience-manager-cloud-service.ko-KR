@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: f6e1de0c2cc2c056b3bfcea6ce5d7aaed041f6f8
+source-git-commit: 7acbf2099a2b47b5f42885e8f9a9e1727a8112b5
 workflow-type: tm+mt
-source-wordcount: '2106'
+source-wordcount: '2148'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,7 @@ AEM Forms as a Cloud에서 규칙 편집기에는 복잡한 조건 및 작업을
 * **비어 있지 않음**
 * **선택함:** 사용자가 확인란, 드롭다운, 라디오 단추에 대한 특정 옵션을 선택하면 true를 반환합니다.
 * **초기화됨(이벤트):** 브라우저에서 양식 개체가 렌더링될 때 true를 반환합니다.
-* **변경됨(이벤트):** 사용자 양식 개체에 대해 입력한 값이나 선택한 옵션을 변경할 때 true를 반환합니다.
+* **Is Changed (event):** 사용자가 양식 개체에 대해 입력한 값 또는 선택한 옵션을 변경하면 true를 반환합니다.
 
 <!--
 * **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
@@ -46,7 +46,7 @@ AEM Forms as a Cloud에서 규칙 편집기에는 복잡한 조건 및 작업을
 
 ### 규칙 편집기에서 사용 가능한 규칙 유형 {#available-rule-types-in-rule-editor}
 
-규칙 편집기는 규칙을 작성하는 데 사용할 수 있는 미리 정의된 규칙 유형 세트를 제공합니다. 각 규칙 유형에 대해 자세히 살펴보겠습니다. 규칙 편집기에서 규칙을 작성하는 방법에 대한 자세한 내용은 [규칙 작성](/help/forms/rule-editor-core-components-user-interface.md#write-rules)을 참조하십시오.
+규칙 편집기는 규칙을 작성하는 데 사용할 수 있는 사전 정의된 규칙 유형 집합을 제공합니다. 각 규칙 유형을 자세히 살펴보겠습니다. 규칙 편집기에서 규칙을 작성하는 방법에 대한 자세한 내용은 [규칙 작성](/help/forms/rule-editor-core-components-user-interface.md#write-rules)을 참조하십시오.
 
 #### [!UICONTROL When] {#whenruletype}
 
@@ -63,27 +63,25 @@ When 규칙 유형을 사용하여 양식 객체의 조건을 평가하고 하�
 `Then, do the following:`
 
 `Action 2 on Object B;`
-`AND`
-`개체 C에 대한 작업 3;
+`AND`&#39;개체 C에 대한 작업 3;
 
 `Else, do the following:`
 
-`Action 2 on Object C;`
-_
+`Action 2 on Object C;`_
 
 라디오 버튼이나 목록과 같은 다중 값 구성 요소가 있는 경우 해당 구성 요소에 대한 규칙을 만드는 동안 해당 옵션이 자동으로 검색되어 규칙 작성자에게 제공됩니다. 옵션 값을 다시 입력할 필요는 없습니다.
 
 예를 들어, 목록에는 빨강, 파랑, 녹색 및 노랑의 네 가지 옵션이 있습니다. 규칙을 만드는 동안 옵션(라디오 버튼)이 자동으로 검색되어 규칙 작성자는 다음과 같이 사용할 수 있습니다.
 
-![다중 값 표시 옵션](assets/multivaluefcdisplaysoptions.png)
+![다중 값에 옵션 표시](assets/multivaluefcdisplaysoptions.png)
 
-When 규칙 작성 중에 값 지우기 작업을 트리거할 수 있습니다. [값 지우기] 작업을 수행하면 지정된 객체의 값이 지워집니다. When 문에서 Clear Value를 옵션으로 사용하면 여러 필드가 있는 복잡한 조건을 만들 수 있습니다. Else 문을 추가하여 조건을 추가할 수 있습니다
+When 규칙을 작성하는 동안 값 지우기 작업을 트리거할 수 있습니다. 작업의 값 지우기 지정된 개체의 값을 지웁니다. When 문에서 Clear 값 를 옵션으로 사용하면 여러 필드가 있는 복잡한 조건을 만들 수 있습니다. Else 문을 추가하여 조건을 더 추가할 수 있습니다
 
 ![값 지우기](assets/clearvalueof.png)
 
 >[!NOTE]
 >
-> 규칙 유형이 단일 레벨 then-else 문만 지원하는 경우.
+> 규칙 형식이 단일 수준 then-else 문만 지원하는 경우.
 
 ##### [!UICONTROL When]에 여러 필드가 허용됨 {#allowed-multiple-fields}
 
@@ -99,18 +97,18 @@ When 규칙 작성 중에 값 지우기 작업을 트리거할 수 있습니다.
 
 (오브젝트 B 조건 2)
 
-그런 다음 다음을 수행합니다.
+그런 다음, 다음을 수행합니다.
 
 개체 A에 대한 작업 1
 
 _
 
-![When](/help/forms/assets/allowed-multiple-field-when.png)에서 여러 필드 허용됨
+![경우에 허용되는 여러 필드](/help/forms/assets/allowed-multiple-field-when.png)
 
-**When 조건 기능에서 허용된 여러 필드를 사용하는 동안 고려 사항**
+**조건 기능에서 허용된 여러 필드를 사용하는 동안 고려 사항**
 
-* [코어 구성 요소가 버전 3.0.14 이상으로](https://github.com/adobe/aem-core-forms-components) 설정되어 규칙 편집기에서 이 기능을 사용할 수 있는지 확인하십시오.
-* When 조건 내의 다른 필드에 규칙이 적용되는 경우 해당 필드 중 하나만 변경되면 규칙이 균일 트리거됩니다.
+* 규칙 편집기에서 이 기능을 사용하려면 [핵심 구성 요소가 버전 3.0.14 이상으로 설정되어 있는지 확인](https://github.com/adobe/aem-core-forms-components)하십시오.
+* When 조건 내의 다른 필드에 규칙이 적용되면 해당 필드 중 하나만 변경되더라도 규칙이 트리거됩니다.
 
 
 <!--
@@ -130,10 +128,10 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
    * value: deps
 1. Click **[!UICONTROL Done]**. -->
 
-조건 기능의 허용된 여러 필드에 문제가 발생하는 경우 문제 해결 단계를 다음과 같이 수행하십시오.
+조건 기능에서 허용되는 여러 필드에 문제가 발생하면 다음과 같이 문제 해결 단계를 팔로우 합니다.
 
-1. 편집 모드로 양식을 엽니다.
-1. 콘텐츠 브라우저를 열고 적응형 양식의 **[!UICONTROL 안내서 컨테이너]** 구성 요소를 선택합니다.
+1. 양식을 편집 모드에서 엽니다.
+1. 컨텐츠 브라우저 를 열고 적응형 양식의 안내서 컨테이너&#x200B;]**구성 요소를 선택합니다**[!UICONTROL .
 1. 안내서 컨테이너 속성 ![안내서 속성](/help/forms/assets/configure-icon.svg) 아이콘을 클릭합니다. 적응형 양식 컨테이너 대화 상자가 열립니다.
 1. 완료 를 클릭하고 대화 상자를 다시 저장합니다.
 
@@ -145,7 +143,13 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 **[!UICONTROL 사용 안 함]** 지정한 개체를 사용하지 않습니다.
 
-**[!UICONTROL 서비스 호출]** 양식 데이터 모델(FDM)에 구성된 서비스를 호출합니다. 서비스 호출 작업을 선택하면 필드가 나타납니다. 필드를 탭하면 [!DNL Experience Manager] 인스턴스의 모든 양식 데이터 모델(FDM)에 구성된 모든 서비스가 표시됩니다. 양식 데이터 모델 서비스를 선택하면 양식 개체를 지정된 서비스에 대한 입력 및 출력 매개 변수와 매핑할 수 있는 필드가 더 많이 나타납니다. 양식 데이터 모델(FDM) 서비스를 호출하는 예제 규칙을 참조하십시오.
+**[!UICONTROL 서비스 호출]** 양식 데이터 모델(FDM)에 구성된 서비스를 호출합니다. 서비스 호출 작업을 선택하면 필드가 나타납니다. 필드를 탭하면 [!DNL Experience Manager] 인스턴스의 모든 양식 데이터 모델(FDM)에 구성된 모든 서비스가 표시됩니다. 양식 데이터 모델 서비스를 선택하면 양식 개체를 지정된 서비스에 대한 입력 매개 변수와 매핑할 수 있는 필드가 더 많이 나타납니다. 지정된 서비스에 대한 이벤트 페이로드 옵션을 통해 출력 매개 변수를 매핑할 수 있습니다. 규칙 편집기를 사용하여 서비스 호출 작업의 성공 및 실패 응답을 처리하는 규칙을 만들 수도 있습니다.
+
+>[!NOTE]
+>
+> Invoke 서비스에 대해 자세히 알아보려면 [여기를 클릭하세요](/help/forms/invoke-service-enhancements-rule-editor.md).
+
+양식 데이터 모델(FDM) 서비스를 호출하는 예제 규칙을 참조하십시오.
 
 양식 데이터 모델 서비스 외에 웹 서비스를 호출할 직접 WSDL URL을 지정할 수 있습니다. 그러나 양식 데이터 모델 서비스에는 많은 이점이 있으며 서비스를 호출하는 데 권장되는 방법이 있습니다.
 
@@ -164,13 +168,13 @@ FDM(양식 데이터 모델)에서 서비스를 구성하는 방법에 대한 �
 * readOnly(부울)
 * 필수(부울)
 * screenReaderText(문자열)
-* valid(부울)
+* 유효(부울)
 * errorMessage(문자열)
 * 기본값(숫자, 문자열, 날짜)
 * enumNames(String[])
 * chartType (String)
 
-예를 들어, 버튼을 클릭할 때 텍스트 상자를 표시하는 규칙을 정의할 수 있습니다. 사용자 지정 함수, 양식 개체, 개체 속성 또는 서비스 출력을 사용하여 규칙을 정의할 수 있습니다.
+예를 들어 버튼 클릭 시 텍스트 상자를 표시하는 규칙을 정의할 수 있습니다. 사용자 지정 함수, 양식 개체, 개체 속성 또는 서비스 출력을 사용하여 규칙을 정의할 수 있습니다.
 
 ![속성 설정](assets/set_property_rule_new.png)
 
@@ -184,29 +188,29 @@ FDM(양식 데이터 모델)에서 서비스를 구성하는 방법에 대한 �
 
 ![개체 속성](assets/object_property_set_property_new.png)
 
-**[!UICONTROL 값]** 지우기 지정된 개체의 값을 지웁니다.
+**[!UICONTROL 값 지우기]** 지정한 개체의 값을 지웁니다.
 
-**[!UICONTROL 초점]** 설정 지정된 개체에 포커스 설정.
+**[!UICONTROL 포커스 설정]** 지정한 개체에 포커스를 설정합니다.
 
-**[!UICONTROL 양식]** 제출 양식을 제출합니다.
+**[!UICONTROL 양식 제출]** 양식을 제출합니다.
 
-**** 재설정 양식 또는 지정된 개체를 재설정합니다.
+**[!UICONTROL Reset]** 폼이나 지정한 개체를 다시 설정합니다.
 
-**[!UICONTROL 유효성 검사]** 폼이나 지정된 개체의 유효성을 검사합니다.
+**[!UICONTROL 유효성 검사]** 폼 또는 지정된 개체의 유효성을 검사합니다.
 
-**[!UICONTROL 인스턴스]** 추가: 지정된 반복 가능 패널 또는 테이블 행의 인스턴스 를 추가합니다.
+**[!UICONTROL 인스턴스 추가]** 지정한 반복 가능한 패널 또는 테이블 행의 인스턴스를 추가합니다.
 
 **[!UICONTROL 인스턴스 제거]** 지정한 반복 가능한 패널 또는 테이블 행의 인스턴스를 제거합니다.
 
 **[!UICONTROL 함수 출력]** 미리 정의된 함수 또는 사용자 지정 함수를 기반으로 규칙을 정의합니다.
 
-**[!UICONTROL 이동]** 다른 적응형 Forms, 이미지 또는 문서 조각과 같은 기타 에셋 또는 외부 URL로 이동합니다. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+**[!UICONTROL 다음으로 이동]** 다른 적응형 Forms, 이미지나 문서 조각과 같은 다른 자산 또는 외부 URL로 이동합니다. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
-**[!UICONTROL 이벤트 발송]** 미리 정의된 조건이나 이벤트를 기반으로 특정 작업이나 동작을 트리거합니다.
+**[!UICONTROL 이벤트]** 발송: 사전 정의된 조건이나 이벤트에 따라 특정 작업이나 동작을 트리거합니다.
 
 #### [!UICONTROL 값 설정] {#set-value-of}
 
-**[!UICONTROL Set Value of]** 규칙 형식을 사용하면 지정된 조건을 충족하는지 여부에 따라 양식 개체의 값을 설정할 수 있습니다. 값은 다른 개체의 값, 리터럴 문자열, 수학적 식이나 함수에서 파생된 값, 다른 개체의 속성 값 또는 양식 데이터 모델 서비스의 출력으로 설정할 수 있습니다. 마찬가지로 구성 요소, 문자열, 속성 또는 함수나 수학 표현식에서 파생된 값에 대한 조건을 확인할 수 있습니다.
+규칙 **[!UICONTROL 유형의 Set 값]** 를 사용하면 지정된 조건이 충족되는지 여부에 따라 양식 개체의 값을 설정할 수 있습니다. 이 값은 다른 개체의 값, 리터럴 문자열, 수학 표현식 또는 함수에서 파생된 값, 다른 개체의 속성 값 또는 양식 데이터 모델 서비스의 출력으로 설정할 수 있습니다. 마찬가지로 구성 요소, 문자열, 속성 또는 함수나 수학 표현식에서 파생된 값에 대한 조건을 확인할 수 있습니다.
 
 **Set Value Of** 규칙 형식은 패널 및 도구 모음 단추와 같은 모든 양식 개체에 사용할 수 없습니다. 표준 규칙 값 설정(Set Value Of rule)의 구조는 다음과 같습니다.
 
@@ -224,7 +228,7 @@ FDM(양식 데이터 모델)에서 서비스를 구성하는 방법에 대한 �
 
 다음 예제에서는 as `True` 의 `Question2` 값을 선택하고 as`correct`의 `Result` 값을 설정합니다.
 
-![값 웹 서비스 설정](assets/set-value-web-service.png)
+![Set-value-web-service](assets/set-value-web-service.png)
 
 양식 데이터 모델 서비스를 사용한 값 설정 규칙의 예입니다.
 
@@ -324,7 +328,7 @@ Enable 규칙 유형과 유사한 **[!UICONTROL Disable]** 규칙 유형을 사�
 
 `(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
 
-마찬가지로 포커스 이전 패널로 이동하기 위해 규칙 패널&#x200B;**간 탐색을 작성할**&#x200B;수 있습니다.
+마찬가지로 포커스를 이전 패널로 전환하기 위한 **패널 간 탐색** 규칙을 쓸 수 있습니다.
 
 `Navigate among the panels`
 
@@ -334,7 +338,7 @@ Enable 규칙 유형과 유사한 **[!UICONTROL Disable]** 규칙 유형을 사�
 
 `(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
 
-패널 [에서 탐색하는 규칙 생성 방법에 대한 자세한 내용을 보려면 여기를](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons) 클릭하십시오.
+패널에서 탐색할 규칙을 만드는 방법에 대한 자세한 내용을 보려면 [여기를 클릭](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons)하십시오.
 
 #### [!UICONTROL 비동기 함수 호출]
 

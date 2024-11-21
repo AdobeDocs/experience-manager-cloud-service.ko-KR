@@ -5,7 +5,7 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 6266da34305bc5d8b2bbb0d336028f4fede6c165
 workflow-type: tm+mt
 source-wordcount: '2129'
 ht-degree: 2%
@@ -29,7 +29,7 @@ ht-degree: 2%
 * SOAP 기반 웹 서비스
 * OData 서비스(버전 4.0)
 * Microsoft® Dynamics
-* SalesForce
+* Salesforce
 * Microsoft® Azure Blob 저장소
 
 데이터 통합은 OAuth2.0([인증 코드](https://oauth.net/2/grant-types/authorization-code/), [클라이언트 자격 증명](https://oauth.net/2/grant-types/client-credentials/)), 기본 인증 및 API 키 인증 유형을 즉시 사용할 수 있도록 지원하며, 이를 통해 웹 서비스에 액세스하기 위한 사용자 지정 인증을 구현할 수 있습니다. RESTful, SOAP as a Cloud Service 기반 및 OData 서비스가 [!DNL Experience Manager]에 구성되어 있지만 [!DNL Experience Manager] 사용자 프로필에 대한 관계형 데이터베이스의 JDBC 및 커넥터는 [!DNL Experience Manager] 웹 콘솔에 구성되어 있습니다.
@@ -329,7 +329,6 @@ When you enable mutual authentication for form data model (FDM), both the data s
 ## 다음 단계 {#next-steps}
 
 데이터 소스를 구성했습니다. 그런 다음 양식 데이터 모델(FDM)을 만들거나 데이터 소스 없이 이미 양식 데이터 모델(FDM)을 만든 경우 구성한 데이터 소스와 연결할 수 있습니다. 자세한 내용은 [양식 데이터 모델 만들기](create-form-data-models.md)를 참조하십시오.
-
 
 <!--
 

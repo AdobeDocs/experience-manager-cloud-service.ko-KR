@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 87acfc03c4497fcbfb94ff43cdd380cd6725bcf2
+source-git-commit: 6653a761ee8d0cb1d7b07acd263121422d419a8b
 workflow-type: tm+mt
-source-wordcount: '5801'
-ht-degree: 98%
+source-wordcount: '5873'
+ht-degree: 97%
 
 ---
 
@@ -32,6 +32,7 @@ ht-degree: 98%
    + AEMaaCS 기능 릴리스 정보 {#release-notes}
       + [최신 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
+         + [2024.10.0 릴리스 정보](/help/release-notes/release-notes-cloud/2024/release-notes-2024-10-0.md)
          + [2024.9.0 릴리스 정보](/help/release-notes/release-notes-cloud/2024/release-notes-2024-9-0.md)
          + [2024.8.0 릴리스 정보](/help/release-notes/release-notes-cloud/2024/release-notes-2024-8-0.md)
          + [2024.7.0 릴리스 정보](/help/release-notes/release-notes-cloud/2024/release-notes-2024-7-0.md)
@@ -719,6 +720,11 @@ ht-degree: 98%
          + [Forms 데이터 모델을 사용하여 작업](/help/forms/work-with-form-data-model.md)
          + [Forms 데이터 모델 사용](/help/forms/using-form-data-model.md)
          + [적응형 양식에 대한 XML 스키마 디자인](/help/forms/adaptive-form-xml-schema-form-model.md)
+         + Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}와 적응형 Forms 통합
+            + [Adobe Marketo Engage과 AEM Forms 통합](/help/forms/integrate-form-to-marketo-engage.md)
+            + [Marketo Engage과 통합할 새 양식 구성](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+            + [기존 적응형 Adobe Marketo Engage에 대한 Forms 데이터 소스 구성](/help/forms/use-marketo-engage-data-source-in-form.md)
+            + [Marketo Engage 기존 양식에 대한 제출 액션을 구성합니다.](/help/forms/submit-adaptive-form-to-marketo-engage.md)
    + 적응형 양식 {#adaptive-forms-authoring}
       + [적응형 양식 만들기](/help/forms/create-an-adaptive-form.md)
       + [적응형 양식 조각 만들기](/help/forms/adaptive-form-fragments.md)
@@ -730,6 +736,7 @@ ht-degree: 98%
             + [적응형 양식 조각 만들기](/help/forms/adaptive-form-fragments-core-components.md)
             + [적응형 양식의 테마 만들기 - 핵심 구성 요소](/help/forms/using-themes-in-core-components.md)
             + [핵심 구성 요소 기반 적응형 템플릿 만들기](/help/forms/template-editor-core-components.md)
+            + [XFA 양식 템플릿을 기반으로 적응형 양식(핵심 구성 요소) 만들기](/help/forms/create-adaptive-form-using-xfa-templates.md)
             + [적응형 양식의 기록 문서 생성](/help/forms/generate-document-of-record-core-components.md)
             + [기계 번역 또는 인간 번역을 사용하여 적응형 양식 번역](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [리디렉션 페이지 또는 감사 메시지 구성](/help/forms/configure-redirect-page-or-thank-you-message.md)
@@ -758,6 +765,7 @@ ht-degree: 98%
                + [핵심 구성 요소 기반 적응형 양식의 규칙 편집기에서 사용 가능한 연산자 및 이벤트 유형](/help/forms/rule-editor-core-components-events-operators.md)
                + [핵심 구성 요소 기반 적응형 양식의 규칙 편집기 예](/help/forms/rule-editor-core-components-usecases.md)
                + [적응형 양식에서 비동기 함수 사용](/help/forms/using-async-funct-in-rule-editor.md)
+               + [핵심 구성 요소를 기반으로 하는 양식의 시각적 규칙 편집기에서 서비스 개선 사항 호출](/help/forms/invoke-service-enhancements-rule-editor.md)
             + 핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 소개{#create-and-use-custom-function-core-component}
                + [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 소개](/help/forms/create-and-use-custom-functions.md)
                + [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 만들기 및 사용](/help/forms/custom-function-core-component-create-function.md)
