@@ -2,7 +2,7 @@
 title: Content Hub 사용자 인터페이스 구성
 description: Content Hub 사용자 인터페이스 구성
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 794d8f51f0a44b708538c491b8945c564382f1c5
 workflow-type: tm+mt
 source-wordcount: '1557'
 ht-degree: 15%
@@ -18,7 +18,7 @@ ht-degree: 15%
 >id="configure_content_hub"
 >title="Content Hub 사용자 인터페이스 구성"
 >abstract="Experience Manager Assets를 통해 관리자는 Content Hub 사용자 인터페이스에서 사용 가능한 옵션을 구성할 수 있습니다. 관리자가 선택한 구성 옵션에 따라 Content Hub 사용자는 Content Hub에서 필드를 조회할 수 있습니다. 구성 옵션에는 자산을 가져올 때의 메타데이터, 필터, 자산 속성, 자산을 검색할 때의 메타데이터, 개인화된 브랜딩 및 모든 사용자 정의 링크가 포함됩니다."
->additional-url="https://images-tv.adobe.com/mpcv3/4477/98bce651-721c-442e-98b8-c43e7708e44c_1698834577.854x480at800_h264.mp4" text="비디오 시청"
+>additional-url="https://images-tv.adobe.com/mpcv3/4477/74a81d1c-0cfe-41f4-8a06-18ff70604e45_1732023385.854x480at800_h264.mp4" text="비디오 시청"
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Content Hub에서 자산 구성](assets/configure-assets.png)
