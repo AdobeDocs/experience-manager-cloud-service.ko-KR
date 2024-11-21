@@ -4,9 +4,9 @@ description: 예를 들어 범용 편집기가 속성 패널에서 편집할 수
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 13e5d573d7522d9772f5a4080c2b2f0b460b5513
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1343'
 ht-degree: 11%
 
 ---
@@ -139,7 +139,7 @@ AEM 태그 구성 요소 유형을 사용하면 구성 요소에 태그를 첨�
 
 #### AEM 컨텐츠 {#aem-content}
 
-AEM 콘텐츠 구성 요소 유형 은 콘텐츠 참조를 설정하는 데 사용할 수 있는 AEM 콘텐츠 선택기를 활성화합니다. 추가 유효성 검사 유형을 제공합니다.
+AEM 콘텐츠 구성 요소 유형을 사용하면 AEM 콘텐츠 선택기를 사용할 수 있습니다. 이 선택기는 AEM 리소스를 선택하는 데 사용할 수 있습니다. 에셋만 선택할 수 있는 [참조 구성 요소](#reference)와 달리 AEM 콘텐츠 구성 요소는 모든 AEM 콘텐츠를 참조할 수 있습니다. 추가 유효성 검사 유형을 제공합니다.
 
 | 유효성 검사 유형 | 값 유형 | 설명 | 필수 |
 |---|---|---|---|
@@ -636,6 +636,8 @@ AEM 콘텐츠 구성 요소 유형 은 콘텐츠 참조를 설정하는 데 사�
 >[!ENDTABS]
 
 #### 참조 {#reference}
+
+참조 구성 요소 유형을 사용하면 AEM 에셋 선택기를 사용할 수 있습니다. 이 선택기는 참조할 AEM 에셋을 선택하는 데 사용할 수 있습니다. AEM 리소스를 선택할 수 있는 [AEM 콘텐츠 구성 요소](#aem-content)와 달리 참조 구성 요소는 에셋만 참조할 수 있습니다. 추가 유효성 검사 유형을 제공합니다.
 
 참조 구성 요소 유형을 사용하면 현재 개체에서 다른 데이터 개체를 참조할 수 있습니다.
 
