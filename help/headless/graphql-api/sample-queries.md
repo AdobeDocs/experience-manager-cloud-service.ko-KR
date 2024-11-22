@@ -4,16 +4,22 @@ description: AEM으로 GraphQL을 사용하여 샘플 콘텐츠 및 쿼리 탐�
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: ht
-source-wordcount: '1826'
-ht-degree: 100%
+source-git-commit: afff23f505b789667e4d34683d0dfd11b1a436a8
+workflow-type: tm+mt
+source-wordcount: '1940'
+ht-degree: 94%
 
 ---
 
 # AEM을 통해 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐츠 및 쿼리 {#learn-graphql-with-aem-sample-content-queries}
 
 AEM으로 GraphQL을 사용하여 샘플 콘텐츠 및 쿼리 탐색을 통해 Headless 방식으로 콘텐츠를 제공하는 방법을 배웁니다.
+
+>[!IMPORTANT]
+>
+>컨텐츠 조각과 함께 사용하기 위한 GraphQL API의 다양한 기능은 얼리어답터 프로그램을 통해 사용할 수 있습니다.
+>
+>상태 및 관심 있는 경우 적용 방법을 보려면 [릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)를 확인하세요.
 
 >[!NOTE]
 >
@@ -1479,6 +1485,79 @@ query {
         ... on ArchiveRef {
           _path
           format
+        }
+      }
+    }
+  }
+}
+```
+
+### UUID 참조를 사용하는 특정 모델의 콘텐츠 조각에 대한 샘플 쿼리 {#sample-wknd-fragment-specific-model-uuid-references}
+
+<!-- CQDOC-21487 - need more details on both, text must be checked too -->
+
+이들 쿼리는 다음에 대한 정보를 얻습니다.
+
+* 콘텐츠 조각 및 참조된 콘텐츠 조각 또는 에셋의 UUID
+* 결과는 JSON 속성 `_id`을(를) 통해 반환됩니다
+
+#### UUID 참조를 사용하는 특정 모델의 콘텐츠 조각에 대한 샘플 쿼리 {#sample-wknd-fragment-specific-model-using-a-uuid-reference}
+
+다음 쿼리는 `_id` 및 `_path`을(를) 사용하여 모든 콘텐츠 참조를 반환합니다.
+
+```graphql
+{
+  articleList {
+    items {
+        _id
+        _path
+        title
+        featuredImage {
+          ... on ImageRef {
+            _id
+            _path           
+          }
+        }
+        authorFragment {
+          firstName
+          lastName
+          profilePicture {
+            ... on ImageRef {
+              _id
+              _path
+            }
+          }
+        }
+      }
+  }
+}
+```
+
+#### UUID 참조별 콘텐츠 조각에 대한 샘플 쿼리 {#sample-wknd-fragment-specific-model-by-uuid-reference}
+
+다음 쿼리는 특정 `_id`과(와) 관련된 모든 콘텐츠 참조를 반환합니다.
+
+```graphql
+{
+  articleById(_id: "3ce2bf53-7436-4d3e-b19a-2793bc2ca63e") {
+    item {
+      _id
+      _path
+      title
+      featuredImage {
+        ... on ImageRef {
+          _id
+          _path
+        }
+      }
+      authorFragment {
+        firstName
+        lastName
+        profilePicture {
+          ... on ImageRef {
+            _id
+            _path
+          }
         }
       }
     }

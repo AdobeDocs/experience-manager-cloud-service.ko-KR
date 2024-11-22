@@ -4,15 +4,21 @@ description: AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 575b626447f6b88c1be601fbbd4de7eeb0264019
+source-git-commit: e44872277c4bda66fafd074416ea5253c365cc2f
 workflow-type: tm+mt
-source-wordcount: '5582'
-ht-degree: 98%
+source-wordcount: '5814'
+ht-degree: 95%
 
 ---
 
 
 # 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API {#graphql-api-for-use-with-content-fragments}
+
+>[!IMPORTANT]
+>
+>컨텐츠 조각과 함께 사용하기 위한 GraphQL API의 다양한 기능은 얼리어답터 프로그램을 통해 사용할 수 있습니다.
+>
+>상태 및 관심 있는 경우 적용 방법을 보려면 [릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)를 확인하세요.
 
 AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud Service에서 Headless 콘텐츠 게재를 위해 콘텐츠 조각을 사용하는 방법을 알아봅니다.
 
@@ -252,6 +258,8 @@ Sites GraphQL 서비스는 콘텐츠 조각 모델에 대한 수정 사항을 �
 
 AEM용 GraphQL은 유형 목록을 지원합니다. 지원되는 모든 콘텐츠 조각 모델 데이터 형식 및 해당 GraphQL 유형이 표시됩니다.
 
+<!-- CQDOC-21487 - check additions to table -->
+
 | 콘텐츠 조각 모델 - 데이터 형식 | GraphQL 유형 | 설명 |
 |--- |--- |--- |
 | 한 줄 텍스트 | `String`, `[String]` | 작성자 이름, 위치 이름 등과 같은 간단한 문자열에 사용됨 |
@@ -262,7 +270,9 @@ AEM용 GraphQL은 유형 목록을 지원합니다. 지원되는 모든 콘텐�
 | 열거 | `String` | 모델 생성 시 정의된 옵션 목록에서 옵션을 표시하는 데 사용됨 |
 | 태그 | `[String]` | AEM에서 사용되는 태그를 나타내는 문자열 목록을 표시하는 데 사용됨 |
 | 콘텐츠 참조 | `String`, `[String]` | AEM에서 다른 자산에 대한 경로를 표시하는 데 사용됨 |
+| 콘텐츠 참조 (UUID) | `String`, `[String]` | AEM의 다른 에셋에 대한 UUID로 표현되는 경로 표시에 사용됩니다. |
 | 조각 참조 |  *모델 유형* <br><br>단일 필드: `Model` - 모델 유형, 직접 참조 <br><br>하나의 참조 유형이 있는 다중 필드: `[Model]` - 유형의 배열 `Model`, 배열에서 직접 참조 <br><br>다중 참조 유형이 있는 다중 필드: `[AllFragmentModels]` - 공용 유형의 배열에서 참조되는 모든 모델 유형의 배열 |  모델이 생성될 때 정의된 특정 모델 유형의 다른 콘텐츠 조각을 하나 이상 참조하는 데 사용됨 |
+| 조각 참조 (UUID) |  *모델 유형* <br><br>단일 필드: `Model` - 모델 유형, 직접 참조 <br><br>하나의 참조 유형이 있는 다중 필드: `[Model]` - 유형의 배열 `Model`, 배열에서 직접 참조 <br><br>다중 참조 유형이 있는 다중 필드: `[AllFragmentModels]` - 공용 유형의 배열에서 참조되는 모든 모델 유형의 배열 |  모델이 생성될 때 정의된 특정 모델 유형의 다른 콘텐츠 조각을 하나 이상 참조하는 데 사용됨 |
 
 {style="table-layout:auto"}
 
@@ -306,6 +316,27 @@ AEM용 GraphQL은 유형 목록을 지원합니다. 지원되는 모든 콘텐�
 ```
 
 [샘플 쿼리 - 단일 특정 도시 조각](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)을 참조하십시오.
+
+#### ID (UUID) {#id-uuid}
+
+ID 필드는 AEM GraphQL에서 식별자로도 사용됩니다. AEM 저장소 내의 콘텐츠 조각 에셋의 경로를 나타내지만 실제 경로를 보유하는 대신 리소스를 나타내는 UUID를 보유합니다. 다음과 같은 이유로 콘텐츠 조각의 식별자로 선택되었습니다.
+
+* AEM 내에서 고유합니다.
+* 쉽게 가져올 수 있습니다.
+* 리소스를 이동할 때 은 변경되지 않습니다.
+
+JSON 속성 `_id`을(를) 통해 콘텐츠 조각 및 참조된 콘텐츠 조각 또는 에셋의 UUID를 반환할 수 있습니다.
+
+```graphql
+{
+  articleList {
+    items {
+        _id
+        _path
+    }
+  }
+}
+```
 
 #### 메타데이터 {#metadata}
 
@@ -1112,6 +1143,11 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
 
       * `_path`: 저장소 내의 콘텐츠 조각에 대한 경로
          * [샘플 쿼리 - 단일 특정 도시 조각](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)을 참조하십시오
+
+      * `_id_` : 저장소 내의 콘텐츠 조각에 대한 UUID
+        <!-- CQDOC-21487 -->
+         * UUID 참조가 있는 특정 모델의 콘텐츠 조각에 대한 [샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references)를 참조하십시오
+         * [UUID 참조별 콘텐츠 조각에 대한 샘플 쿼리 를 참조하십시오](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
 
       * `_reference`: 참조 표시, 서식 있는 텍스트 편집기에 인라인 참조 포함
          * [프리페치된 참조가 포함된 복수 콘텐츠 조각에 대한 샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-prefetched-references)를 참조하십시오
