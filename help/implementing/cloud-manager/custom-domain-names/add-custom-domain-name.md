@@ -5,9 +5,9 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d2fb23918b04f63aab3ae859485be673034e7aec
+source-git-commit: 9d169ad7a2982ee44d9b47a418d50b2806942ce2
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '1016'
 ht-degree: 16%
 
 ---
@@ -52,6 +52,11 @@ Cloud Manager의 [도메인 설정 페이지](#adding-cdn-settings)에서 사용
 1. **도메인 추가** 대화 상자의 **도메인 이름** 필드에 사용 중인 사용자 지정 도메인 이름을 입력합니다.
 도메인 이름을 입력할 때 `http://`, `https://` 또는 공백을 포함하지 마십시오.
 
+   >[!NOTE]
+   >
+   >`www` 및 `non-www` 버전의 도메인이 모두 필요한 경우 별도로 추가해야 합니다. 예: `example.com` 및 `www.example.com`.
+   <!-- Marius Petria on SLACK tmp-skyline-cdn-certificates - Actually  my opinion is that this option should be explicit in UI (that was present in the initial mocks of the design but for some reason it was dropped). I think when adding a domain there should be a check mark to also add www.domain. When adding example.com Customer should be prompted with the following options: Do you also want to add www.example.com and have a redirect example.com -> www.example.com?Do you also want to add www.example.com and have a redirect www.example.com -> example.com? -->
+
 1. **만들기**&#x200B;를 클릭합니다.
 
 1. **도메인 확인** 대화 상자의 **이 도메인에 사용할 인증서 종류를 선택하십시오.** 드롭다운 목록에서 다음 옵션 중 하나를 선택하십시오.
@@ -70,7 +75,7 @@ Cloud Manager의 [도메인 설정 페이지](#adding-cdn-settings)에서 사용
 
    >[!NOTE]
    >
-   >자체 고객 관리(OV/EV 또는 DV) SSL 인증서를 사용하고 고객 관리 CDN ***공급자***&#x200B;를 사용하려는 경우 SSL 인증서 추가를 건너뛰고 준비가 되면 바로 [CDN 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)(으)로 이동할 수 있습니다.
+   >자체 고객 관리(OV/EV 또는 DV) SSL 인증서를 사용하며 고객 관리 CDN ***provider***&#x200B;을(를) 사용하려는 경우 SSL 인증서 추가를 건너뛸 수 있습니다. 대신 준비가 되면 바로 [CDN 구성 추가](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)(으)로 이동합니다.
 
 
 ### Adobe 관리 인증서 단계 {#adobe-managed-cert-steps}

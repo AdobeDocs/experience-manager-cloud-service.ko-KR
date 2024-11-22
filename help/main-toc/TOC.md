@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d74ca698d0b6992d1f58173fbcd6bac399421fef
+source-git-commit: e454581a2e6f2b8184a54d6550daec60e58bbc6c
 workflow-type: tm+mt
-source-wordcount: '5883'
-ht-degree: 97%
+source-wordcount: '5886'
+ht-degree: 96%
 
 ---
 
@@ -1100,6 +1100,7 @@ ht-degree: 97%
          + [콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기](/help/journey-headless/author/metadata-tagging.md)
 + 생성형 AI {#generative-ai}
    + [변형 생성](/help/generative-ai/generate-variations.md)
+   + [어시스턴트(제한된 Beta)](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + 구현 {#implementing}
    + [AEM as a Cloud Service용 애플리케이션 구현](/help/implementing/home.md)
    + Cloud Manager 사용 {#using-cloud-manager}
@@ -1123,7 +1124,7 @@ ht-degree: 97%
          + [Cloud Manager에서 저장소 관리](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Adobe 저장소 추가](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [비공개 저장소 추가](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [외부 저장소 추가 (얼리 어답터)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [외부 저장소 추가(제한된 Beta)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [저장소에 액세스](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [git 하위 모듈 지원](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Cloud Manager와 함께 Git 사용](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
