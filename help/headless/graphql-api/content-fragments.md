@@ -4,7 +4,7 @@ description: AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: e44872277c4bda66fafd074416ea5253c365cc2f
+source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
 workflow-type: tm+mt
 source-wordcount: '5814'
 ht-degree: 95%
@@ -257,8 +257,6 @@ Sites GraphQL 서비스는 콘텐츠 조각 모델에 대한 수정 사항을 �
 ### 데이터 유형 {#data-types}
 
 AEM용 GraphQL은 유형 목록을 지원합니다. 지원되는 모든 콘텐츠 조각 모델 데이터 형식 및 해당 GraphQL 유형이 표시됩니다.
-
-<!-- CQDOC-21487 - check additions to table -->
 
 | 콘텐츠 조각 모델 - 데이터 형식 | GraphQL 유형 | 설명 |
 |--- |--- |--- |
@@ -1145,7 +1143,7 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
          * [샘플 쿼리 - 단일 특정 도시 조각](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)을 참조하십시오
 
       * `_id_` : 저장소 내의 콘텐츠 조각에 대한 UUID
-        <!-- CQDOC-21487 -->
+
          * UUID 참조가 있는 특정 모델의 콘텐츠 조각에 대한 [샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references)를 참조하십시오
          * [UUID 참조별 콘텐츠 조각에 대한 샘플 쿼리 를 참조하십시오](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
 

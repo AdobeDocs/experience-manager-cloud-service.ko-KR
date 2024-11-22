@@ -4,7 +4,7 @@ description: AEM으로 GraphQL을 사용하여 샘플 콘텐츠 및 쿼리 탐�
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: afff23f505b789667e4d34683d0dfd11b1a436a8
+source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
 workflow-type: tm+mt
 source-wordcount: '1940'
 ht-degree: 94%
@@ -1493,8 +1493,6 @@ query {
 ```
 
 ### UUID 참조를 사용하는 특정 모델의 콘텐츠 조각에 대한 샘플 쿼리 {#sample-wknd-fragment-specific-model-uuid-references}
-
-<!-- CQDOC-21487 - need more details on both, text must be checked too -->
 
 이들 쿼리는 다음에 대한 정보를 얻습니다.
 
