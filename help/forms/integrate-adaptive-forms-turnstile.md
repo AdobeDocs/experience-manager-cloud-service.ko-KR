@@ -3,13 +3,10 @@ title: AEM 적응형 양식에서 Turnstile을 사용하는 방법
 description: 턴스타일 서비스를 통해 손쉽게 양식 보안을 강화할 수 있습니다. 단계별 안내서가 포함되어 있습니다.
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Foundation Components
-hide: true
-hidefromtoc: true
-exl-id: 644c351b-a167-4d18-8b99-b7cae6be48d5
 role: User, Developer
-source-git-commit: d69d64a02c62b9a796188107cfe1ab7543b5a2be
+source-git-commit: 553f456f0eab43cee11fb9e66ce9e1dbacdc2b5c
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '952'
 ht-degree: 13%
 
 ---
@@ -29,13 +26,13 @@ AEM Formsas a Cloud Service 에서 CAPTCHA 솔루션을 지원합니다.
 
 ## AEM Forms 환경과 Turnstile Captcha 통합
 
-Cloudflare의 Turnstile Captcha는 자동화된 봇, 악의적인 공격, 스팸 및 원치 않는 자동화된 트래픽으로부터 양식 및 사이트를 보호하는 것을 목표로 하는 보안 조치입니다. 양식 제출을 허용하기 전에 양식 제출에 대한 확인란을 표시하여 사람인지 확인합니다. 적응형 Forms 구성 요소의 AEM Forms as a Cloud Service Capstille Cha 지원
+Cloudflare의 Turnstile Captcha는 자동화된 봇, 악의적인 공격, 스팸 및 원치 않는 자동화된 트래픽으로부터 양식 및 사이트를 보호하는 것을 목표로 하는 보안 조치입니다. 양식 제출을 허용하기 전에 양식 제출에 대한 확인란을 표시하여 사람인지 확인합니다. AEM Forms as a Cloud Service 적응형 Forms의 Capstille Captcha 지원
 
 <!-- ![Turnstile](assets/Turnstile-challenge.png)-->
 
 ### AEM Forms 환경을 Turnstile Captcha와 통합하기 위한 사전 요구 사항 {#prerequisite}
 
-AEM Forms 핵심 구성 요소에 대해 Turnstile을 구성하려면 Turnstile 웹 사이트에서 [Turnstile 사이트 키 및 비밀 키](https://developers.cloudflare.com/turnstile/get-started/)를 가져와야 합니다.
+AEM Forms에 대해 Turnstile을 구성하려면 Turnstile 웹 사이트에서 [Turnstile 사이트 키 및 비밀 키](https://developers.cloudflare.com/turnstile/get-started/)를 가져와야 합니다.
 
 ### AEM Forms용 Turnstile을 구성하는 단계{#steps-to-configure-turnstile}
 
