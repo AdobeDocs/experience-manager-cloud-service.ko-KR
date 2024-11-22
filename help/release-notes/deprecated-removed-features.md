@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  [!DNL Cloud Service]에서 더 �
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 644228b1bdae20c1ed6ca1de71b4c60d75f2cc4a
+source-git-commit: 0ab75d1e49e06152cf3f4e8effe7d6d918b262c8
 workflow-type: tm+mt
-source-wordcount: '2603'
+source-wordcount: '2709'
 ht-degree: 93%
 
 ---
@@ -501,16 +501,71 @@ OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying
       * 유형: 부울
 +++
 
-## 버전 21로 Java 런타임 업데이트 {#java-runtime-update-21}
+## Java 버전 21 런타임 업데이트 {#java-runtime-update-21}
 
-AEM as a Cloud Service이 Java 21 런타임으로 이동합니다. 호환성을 보장하려면 다음 사항을 조정해야 합니다.
+AEM as a Cloud Service은 Java 21 런타임으로 이전됩니다. 호환성을 보장하기 위해 아래와 같은 조정이 필요합니다.
 
-### org.objectweb.asm의 최소 버전 {#org.objectweb.asm}
+### 작성 시간 요구 사항 :
 
-최신 JVM 런타임 지원을 위해 org.objectweb.asm의 사용을 버전 9.5 이상으로 업데이트합니다.
+#### org.objectweb.asm의 최소 버전 {#org.objectweb.asm}
 
-### org.apache.groovy {#org.apache.groovy}의 최소 버전
+최신 JVM 런타임에 대한 지원을 보장하기 위해 org.objectweb.asm의 사용을 9.5 이상 버전으로 업데이트해야 합니다.
 
-최신 JVM 런타임 지원을 위해 org.apache.groovy의 사용을 버전 4.0.22 이상으로 업데이트합니다.
+#### org.apache.groovy의 최소 버전 {#org.apache.groovy}
 
-AEM Groovy Console과 같은 서드파티 종속성을 추가하여 이 번들을 간접적으로 포함할 수 있습니다.
+최신 JVM 런타임에 대한 지원을 보장하기 위해 org.apache.groovy의 사용을 4.0.22 이상 버전으로 업데이트해야 합니다.
+
+이 번들은 AEM Groovy Console과 같은 서드파티 종속성을 추가함으로써 간접적으로 포함될 수 있습니다.
+
+#### bnd-maven-plugin 최소 버전 {#bnd-maven-plugin}
+
+bnd-maven-plugin 사용을 버전 6.4.0 이상으로 업데이트하여 최신 JVM 런타임 지원을 보장합니다.
+
+#### Aemanalyzer-maven-plugin 최소 버전 {#aemanalyser-maven-plugin}
+
+Aemanalyzer-maven-plugin 사용을 버전 1.6.6 이상으로 업데이트하여 최신 JVM 런타임 지원을 보장합니다.
+
+#### Maven-bundle-plugin 최소 버전  {#maven-bundle-plugin}
+
+최신 JVM 런타임 지원을 위해 maven-bundle-plugin 사용을 버전 5.1.5 이상으로 업데이트합니다.
+
+#### maven-scr-plugin의 종속성 업데이트  {#maven-scr-plugin}
+
+`maven-scr-plugin`은(는) Java 17 및 21과 직접 호환되지 않습니다. 그러나 아래 코드 조각과 유사하게 플러그인 구성 내에서 ASM 종속성 버전을 업데이트하여 설명자 파일을 생성할 수 있습니다.
+
+```
+[source,xml]
+ <project>
+   ...
+   <build>
+     ...
+     <plugins>
+       ...
+       <plugin>
+         <groupId>org.apache.felix</groupId>
+         <artifactId>maven-scr-plugin</artifactId>
+         <version>1.26.4</version>
+         <executions>
+           <execution>
+             <id>generate-scr-scrdescriptor</id>
+             <goals>
+               <goal>scr</goal>
+             </goals>
+           </execution>
+         </executions>
+         <dependencies>
+           <dependency>
+             <groupId>org.ow2.asm</groupId>
+             <artifactId>asm-analysis</artifactId>
+             <version>9.7.1</version>
+             <scope>compile</scope>
+           </dependency>
+         </dependencies>
+       </plugin>
+       ...
+     </plugins>
+     ...
+   </build>
+   ...
+ </project>
+```
