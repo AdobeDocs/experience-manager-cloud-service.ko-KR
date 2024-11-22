@@ -4,7 +4,7 @@ description: AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
+source-git-commit: b1b28cdc5fd1b697a2c2cd2893340d3c6afc8562
 workflow-type: tm+mt
 source-wordcount: '5814'
 ht-degree: 95%
@@ -1142,7 +1142,7 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
       * `_path`: 저장소 내의 콘텐츠 조각에 대한 경로
          * [샘플 쿼리 - 단일 특정 도시 조각](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)을 참조하십시오
 
-      * `_id_` : 저장소 내의 콘텐츠 조각에 대한 UUID
+      * `_id` : 저장소 내의 콘텐츠 조각에 대한 UUID
 
          * UUID 참조가 있는 특정 모델의 콘텐츠 조각에 대한 [샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references)를 참조하십시오
          * [UUID 참조별 콘텐츠 조각에 대한 샘플 쿼리 를 참조하십시오](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
