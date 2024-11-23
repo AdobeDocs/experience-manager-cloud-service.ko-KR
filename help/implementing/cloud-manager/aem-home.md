@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
-source-git-commit: 0ca20c601a640e7acea5b49c7d399475e7af9fbc
+source-git-commit: ecf42a4bda424bb344e1b348924f1435a99f26c7
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 34%
@@ -52,5 +52,6 @@ Adobe Experience Manager의 중앙 허브 역할을 하는 AEM 홈 페이지는 
 사용 가능한 프로덕션 AEM Cloud Service 환경이 없는 경우 사용자에 대해 옵션이 흐리게(사용할 수 없음) 표시됩니다.
 
 ![](/help/implementing/cloud-manager/assets/aem-home-no-prod-environs.png)
+
 
 
