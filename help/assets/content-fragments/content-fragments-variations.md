@@ -5,7 +5,7 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: abc114373f5db501bb8709fd2d4c33aebc1c5ec9
 workflow-type: tm+mt
 source-wordcount: '2504'
 ht-degree: 52%
@@ -14,7 +14,7 @@ ht-degree: 52%
 
 # 변형 - 조각 콘텐츠 작성{#variations-authoring-fragment-content}
 
-[변형](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)은(는) Adobe 내보내기 관리자(AEM as a Cloud Service) 콘텐츠 조각의 중요한 기능입니다. 특정 채널 및 시나리오에서 사용할 **기본** 컨텐츠의 복사본을 만들고 편집할 수 있기 때문입니다. 특히 Headless 콘텐츠 전달을 보다 유연하게 만듭니다.
+[변형](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)은(는) Adobe Experience Manager(AEM as a Cloud Service) 콘텐츠 조각의 중요한 기능입니다. 특정 채널 및 시나리오에서 사용할 **기본** 컨텐츠의 복사본을 만들고 편집할 수 있기 때문입니다. 특히 Headless 콘텐츠 전달을 보다 유연하게 만듭니다.
 
 >[!NOTE]
 >
