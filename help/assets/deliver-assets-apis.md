@@ -3,9 +3,9 @@ title: 게재 API
 description: 배달 API를 사용하는 방법을 알아봅니다.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 7727aa87693cc96e3497dcda71190866b198975d
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '619'
 ht-degree: 3%
 
 ---
@@ -40,6 +40,11 @@ Experience Manager 에셋 저장소에서 사용할 수 있는 [승인된 에셋
 | [자산 메타데이터](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata) | title, description, CreateDate, ModifyDate 등과 같이 에셋과 연결된 속성을 반환합니다. |
 | 비디오 자산에 대한 [플레이어 컨테이너](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) | 비디오 자산에 대한 플레이어 컨테이너를 반환합니다. 플레이어를 iframe HTML 요소에 임베드하고 비디오를 재생할 수 있습니다. |
 | [선택한 출력 형식의 재생 매니페스트](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoManifestDelivery) | 지정된 비디오 자산에 대한 재생 매니페스트 파일을 선택한 출력 형식으로 반환합니다. 재생 매니페스트 파일을 가져와서 비디오를 재생하려면 HLS 또는 DASH 프로토콜을 통해 적응형 스트리밍이 가능한 사용자 지정 플레이어를 빌드해야 합니다. |
+
+
+>[!NOTE]
+>
+[이미지 사전 설정, 스마트 이미징 및 추가 이미지 수정자](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/)를 제한된 가용성 기능으로 사용할 수 있습니다. 액세스하려면 [Adobe 고객 지원 사례를 만들어 제출](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)하세요.
 
 ## 게재 API 엔드포인트 {#delivery-apis-endpoint}
 
