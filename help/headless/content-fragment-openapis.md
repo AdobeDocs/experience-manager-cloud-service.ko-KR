@@ -4,10 +4,10 @@ description: 콘텐츠 조각과 콘텐츠 조각 모델 OpenAPI에 대해 알�
 exl-id: 077eed73-a066-4273-b2f5-da4bf5cd900c
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 5e2d5a1ec2cca834338ed0178eee3a94b71d2119
+source-git-commit: 1a55c35814d6651173f7bdeaa677a7dbdec13f73
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 73%
+source-wordcount: '165'
+ht-degree: 55%
 
 ---
 
@@ -16,6 +16,12 @@ ht-degree: 73%
 콘텐츠 조각 관리 API의 현대화된 OpenAPI 구현을 통해 개발자는 AEM 작성자에서 프로그래밍 방식으로 만들기, 읽기, 업데이트 및 삭제 작업을 수행하여 AEM에 저장된 콘텐츠 조각 모델 및 콘텐츠 조각을 관리할 수 있습니다. 이러한 API는 다양한 사용 사례를 지원합니다.
 
 콘텐츠 조각에 대한 기존의 [자산 HTTP API](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) 사용은 새로운 콘텐츠 조각 관리 OpenAPI로 마이그레이션되어야 합니다. 전체 문서는 [ 콘텐츠 조각 관리 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)를 참조하십시오.
+
+>[!NOTE]
+>
+>AEM에 로그인하지 않은 경우 OpenAPI에 액세스하려면 인증이 필요합니다. 예를 들어 OpenAPI를 통합의 일부로 다른 제품에서 사용하는 경우가 있습니다.
+>
+>OpenAPI에 대한 액세스 권한 부여에 대한 자세한 내용은 [OpenAPI 기반 API](/help/implementing/developing/open-api-based-apis.md)를 참조하십시오.
 
 >[!NOTE]
 >
