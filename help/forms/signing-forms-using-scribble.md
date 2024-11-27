@@ -7,10 +7,10 @@ topic-tags: author
 feature: Adaptive Forms, Foundation Components
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: ad28fd933a85c8b5ba1cdad4927f0a0a45ad478d
 workflow-type: tm+mt
-source-wordcount: '709'
-ht-degree: 9%
+source-wordcount: '1318'
+ht-degree: 54%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 9%
 | AEM as a Cloud Service | 이 문서 |
 
 
-**스크리블 서명** 구성 요소와 **서명 단계** 구성 요소를 사용하여 적응형 양식에 스크리블 서명을 그릴 수 있습니다. 서명 단계 구성 요소는 적응형 양식의 PDF 버전을 표시합니다. 서명 단계 구성 요소를 사용하려면 기록 문서 옵션을 활성화하거나 양식 템플릿 기반의 적응형 Forms이 필요합니다.
+**스크리블 서명** 구성 요소를 사용하여 적응형 양식에 스크리블 서명을 그릴 수 있습니다. <!-- The Signature step component displays a PDF version of the Adaptive Form. You require a Document of Record option enabled or form template based Adaptive Forms to use the Signature step component. -->
 
 ![스크리블 서명 대화 상자](assets/scribble-signature.png)
 
@@ -55,50 +55,89 @@ ht-degree: 9%
 
 ## 스크리블 서명을 사용하도록 적응형 양식 구성 {#configure-an-adaptive-form-to-use-scribble-signature}
 
-1. 적응형 양식 기반의 양식 템플릿 또는 활성화된 기록 문서 옵션 만들기 단계별 정보는 [적응형 양식 만들기](creating-adaptive-form.md)를 참조하십시오.
+1. 편집 모드에서 적응형 양식을 엽니다.
 1. 구성 요소 브라우저에서 **스크리블 서명** 구성 요소를 적응형 양식으로 드래그 앤 드롭하십시오.
-1. **구성** ![구성](assets/configure.png) 아이콘을 선택합니다. 속성 브라우저를 열고 스크리블 서명 구성 요소의 속성을 표시합니다. 스크리블 서명 구성 요소의 속성을 구성합니다.
-1. 구성 요소 브라우저의 서명 단계 구성 요소를 적응형 양식으로 드래그 앤 드롭합니다.
+1. **구성** ![구성](assets/configure.png) 아이콘을 선택합니다. 속성 브라우저를 열고 스크리블 서명 구성 요소의 속성을 표시합니다. 다음 섹션에서 설명한 대로 [스크리블 서명의 속성을 구성](#properties-of-scribble-signature-component)합니다.
 
-   >[!NOTE]
-   >
-   >서명 단계 구성 요소는 양식에 사용할 수 있는 전체 너비를 차지합니다. 서명 단계 구성 요소가 포함된 섹션에는 다른 구성 요소가 없는 것이 좋습니다.
+   ![스크리블 서명](/help/forms/assets/scribblesig.png)
 
-1. 콘텐츠 브라우저에서 **양식 컨테이너**&#x200B;를 선택하고 **구성** ![구성 아이콘](assets/configure.png) 아이콘을 선택합니다. 속성 브라우저를 열고 적응형 양식 컨테이너 속성을 표시합니다. **적응형 양식 컨테이너** > **전자 서명**(으)로 이동한 다음 **Adobe Sign 사용** 옵션의 선택을 해제합니다. 변경 사항을 저장하려면 완료 ![aem_forms_save](assets/aem_forms_save.png) 아이콘을 선택하십시오.
+1. 변경 사항을 저장하려면 완료 ![aem_forms_save](assets/aem_forms_save.png) 아이콘을 선택하십시오. 서명이 구성되었습니다.
 
-   >[!NOTE]
-   >
-   >적응형 양식에 서명 단계 구성 요소를 추가하면 Adobe Sign 활성화 옵션이 자동으로 선택됩니다.
+## 스크리블 서명 구성 요소의 속성 구성
 
-1. **구성** ![구성](assets/configure.png) 아이콘을 선택합니다. 속성 브라우저를 열고 서명 단계 속성을 표시합니다. 다음 속성을 구성합니다.
+구성 대화 상자를 통해 방문자에 대한 스크리블 서명 구성 요소를 손쉽게 맞춤화할 수 있습니다.
 
-   * **요소 이름**: 구성 요소의 이름을 지정하십시오.
+### 기본 탭
 
-   * **제목:** 구성 요소의 고유한 제목을 지정합니다.
-   * **템플릿 메시지:** 서명 PDF을 로드하는 동안 표시할 메시지를 지정합니다. Adobe Sign 서비스는 서명 PDF을 준비하고 로드하는 데 시간이 소요됩니다.
-   * **서명 서비스:** **스크리블 서명** 옵션을 선택하십시오.
+![기본 탭](/help/forms/assets/scribblesig-basic.png)
 
-   * **CSS 클래스**: 클라이언트 라이브러리의 CSS 클래스(있는 경우)를 지정합니다. Adobe은 CSS 클래스 대신 [테마](themes.md) 및 [인라인 스타일](inline-style-adaptive-forms.md)을(를) 사용하는 것이 좋습니다.
+* **이름** - 양식과 규칙 편집기 모두에서 고유한 이름으로 양식 구성 요소를 쉽게 식별할 수 있습니다. 단, 이름에는 공백이나 특수 문자가 포함되어서는 안 됩니다.
 
-   변경 사항을 저장하려면 완료 ![aem_forms_save](assets/aem_forms_save.png) 아이콘을 선택하십시오. 서명이 구성되었습니다.
+* **제목** - 제목을 사용하면 양식에서 구성 요소를 쉽게 식별할 수 있으며, 기본적으로 제목은 구성 요소 상단에 나타납니다. 제목을 추가하지 않으면 제목 텍스트 대신 구성 요소의 이름이 표시됩니다.
 
-   이제 양식을 채울 때 적응형 양식의 PDF 버전이 표시되고 PDF 문서에 서명할 수 있는 옵션이 제공됩니다. 자세한 내용은 [스크리블 서명을 사용하여 적응형 양식에 서명](signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature)을 참조하세요.
+* **제목에 대해 서식 있는 텍스트 허용** - 이 기능을 사용하면 사용자가 굵게, 기울임꼴, 밑줄 친 텍스트, 다양한 글꼴, 글꼴 크기, 색상, 추가 옵션과 같은 기능을 통합해 일반 텍스트 제목의 서식을 지정하여 시각적 표현 및 사용자 정의를 향상할 수 있습니다. 더 큰 유연성과 창의적인 제어 기능으로 문서, 웹 사이트 또는 애플리케이션 내에서 제목을 돋보이게 할 수 있습니다.\
+  **제목에 대해 서식 있는 텍스트 허용** 확인란을 선택하면 구성 요소 제목의 스타일을 지정할 수 있는 서식 지정 옵션이 표시됩니다. 사용 가능한 모든 서식 옵션에 액세스하려면 ![전체 화면 아이콘](/help/forms/assets/fullscreen-icon.png) 탭을 클릭하면 됩니다.
 
-## 스크리블 서명을 사용하여 적응형 양식에 서명 {#sign-an-adaptive-form-using-scribble-signature}
+  ![서식 있는 텍스트 지원](/help/forms/assets/richtext-support-title.png)
 
-1. 적응형 양식을 작성하고 서명 단계 페이지에 도달하면 서명 화면이 표시됩니다.
+* **제목 숨기기** - 구성 요소의 제목을 숨기려면 이 옵션을 선택합니다.
+* **필수 필드** - 필드를 필수 필수로 설정하려면 옵션을 선택하십시오.
+* **필수 필드 메시지** - **필수 필드 메시지**&#x200B;은(는) 사용자가 필수 필드를 입력하지 않고 양식을 제출하려고 할 때 표시되는 사용자 지정 가능한 메시지입니다.
+* **데이터 모델 바인드 참조** - 바인드 참조는 외부 데이터 원본에 저장되어 양식에서 사용되는 데이터 요소에 대한 참조입니다. 바인드 참조를 사용하면 데이터를 양식 필드에 동적으로 바인딩하여 양식이 데이터 소스의 최신 데이터를 표시하도록 할 수 있습니다. 예를 들어 바인드 참조를 사용하여 양식에 입력된 고객의 ID를 기반으로 고객의 이름과 주소를 양식에 표시할 수 있습니다. 바인드 참조를 사용하여 양식에 입력된 데이터로 데이터 소스를 업데이트할 수도 있습니다. 이러한 방식으로 AEM Forms를 사용하면 외부 데이터 소스와 상호 작용하는 양식을 만들어 데이터 수집 및 관리를 위한 원활한 사용자 경험을 제공할 수 있습니다.
+* **개체 숨기기** - 양식에서 구성 요소를 숨기려면 옵션을 선택합니다. 구성 요소는 다른 용도로(예: 규칙 편집기에서 계산에 사용) 계속 액세스할 수 있습니다. 구성 요소 숨기기는 사용자가 보거나 직접 변경할 필요가 없는 정보를 저장해야 할 때 유용합니다.
+* **개체 비활성화** - 구성 요소를 비활성화하는 옵션을 선택합니다. 비활성화된 구성 요소는 활성 상태가 아니므로 최종 사용자가 편집할 수 없습니다. 사용자는 필드 값을 볼 수 있지만 수정할 수는 없습니다. 구성 요소는 다른 용도로(예: 규칙 편집기에서 계산에 사용) 계속 액세스할 수 있습니다.
+* **종횡비** - 스크리블 서명 구성 요소의 종횡비는 너비와 높이 간의 비례 관계를 정의합니다.
+* **필드 레이아웃** - **필드 레이아웃** 옵션은 레이블(캡션) 및 오류 메시지를 포함한 양식 요소를 구성 요소를 기준으로 배치하는 방법을 결정합니다. **위젯의 맨 위로 캡션 및 오류**&#x200B;은 필드의 캡션(레이블) 및 오류 메시지를 구성 요소 위에 배치합니다. **적응형 양식 구성에서 상속**&#x200B;은(는) 적응형 양식 구성에 지정된 기본 필드 레이아웃 설정을 사용합니다.
+* **CSS 클래스** - **CSS 클래스**&#x200B;을(를) 사용하면 스타일시트에 정의된 하나 이상의 CSS 클래스를 할당하여 구성 요소에 사용자 지정 스타일을 적용할 수 있습니다. 적응형 양식 전체에서 일관된 스타일 및 레이아웃 사용자 지정이 가능합니다.
 
-   ![EchoSign 페이지의 서명 화면](assets/esignscribblesign.jpg)
+### 도움말 컨텐츠
 
-1. **[!UICONTROL 서명]**&#x200B;을 클릭합니다. 낙서 기호 대화 상자가 나타납니다. 양식에 서명하고 완료 ![aem_forms_save](assets/aem_forms_save.png) 아이콘을 클릭하여 서명을 저장합니다.
+![도움말 콘텐츠 탭](/help/forms/assets/scribblesig-help.png)
 
-   ![스크리블 서명 대화 상자](assets/scribblewidget.png)
+* **간단한 설명** - 간단한 설명은 특정 양식 필드의 용도에 대한 추가 정보 또는 설명을 제공하는 간단한 텍스트 설명입니다. 사용자가 필드에 입력해야 하는 데이터 유형을 이해하는 데 도움이 되며 입력된 정보가 유효하고 원하는 기준을 충족하는지 확인하는 데 도움이 되는 지침 또는 예시를 제공할 수 있습니다. 기본적으로 간단한 설명은 숨겨진 상태로 유지됩니다. **간단한 설명 항상 표시** 옵션을 활성화하여 구성 요소 아래에 표시할 수 있습니다.
 
-1. 완료 를 클릭하여 서명 프로세스를 완료합니다.
+* **간단한 설명 항상 표시** - 이 옵션을 활성화하여 구성 요소 아래에 간단한 설명을 표시할 수 있습니다.
 
-   ![서명 프로세스를 완료합니다](assets/scribblecomplete.jpg)
+* **긴 설명** - 양식 필드를 올바르게 작성하는 데 도움이 되도록 사용자에게 제공되는 추가 정보 또는 지침을 참조합니다. 구성 요소 옆에 있는 도움말 아이콘(i)을 클릭하면 표시됩니다. 양식 필드의 레이블이나 자리 표시자 텍스트보다 더 자세한 정보를 제공하며 사용자가 필드의 요구 사항이나 제약 조건을 이해하는 데 도움이 되도록 설계되었습니다. 또한 양식을 보다 쉽고 정확하게 작성할 수 있도록 제안이나 예시를 제공할 수도 있습니다.
 
-서명이 양식에 추가되고 양식 컨트롤이 다음 패널로 이동합니다.
+### 접근성 탭 {#accessibility}
+
+![접근성 탭](/help/forms/assets/scribblesig-acc.png)
+
+**접근성** 탭에는 구성 요소에 대한 [ARIA 접근성](https://www.w3.org/WAI/standards-guidelines/aria/) 레이블에 값이 설정되어 있습니다. 다양한 옵션을 통해 화면 판독기용 텍스트를 사용할 수 있습니다.
+
+* **화면 Reader 우선 순위** - 화면 Reader 우선 순위는 화면 판독기와 같은 보조 기술에 의해 읽히기 위해 특별히 고안된 시각 장애가 있는 사용자가 사용하는 추가 텍스트를 나타냅니다. 이 텍스트는 양식 필드의 용도에 대한 오디오 설명을 제공하며, 여기에는 필드의 제목, 설명, 이름 및 관련 메시지(사용자 정의 텍스트)에 대한 정보가 포함될 수 있습니다. 화면 판독기 텍스트는 시각 장애가 있는 사용자를 포함한 모든 사용자가 양식에 액세스할 수 있도록 돕고 양식 필드 및 해당 요구 사항을 완전히 이해할 수 있도록 합니다.
+
+   * **사용자 정의 텍스트**: ARIA 접근성 레이블에 사용자 정의 텍스트를 사용하려면 이 옵션을 선택합니다. 이 옵션을 선택하면 사용자 정의 텍스트 대화 상자가 표시됩니다. 사용자 정의 텍스트 대화 상자에서 관련 정보를 추가할 수 있습니다.
+   * **간단한 설명**: ARIA 액세스 가능성 레이블에 대한 설명을 사용하려면 이 옵션을 선택하십시오.
+   * **제목**: ARIA 접근성 레이블에 제목을 사용하려면 이 옵션을 선택합니다.
+   * **이름**: ARIA 접근성 레이블에 이름을 사용하려면 이 옵션을 선택합니다.
+   * **없음**: ARIA 접근성 레이블에 아무 것도 추가하지 않으려면 이 옵션을 선택합니다.
+
+<!--
+
+ * **Element Name**: Specify name of the component.
+
+    * **Title:** Specify unique title of the component.
+    * **Template message:** Specify the message to be displayed while the signature PDF is being loaded. Adobe Sign services take some time to prepare and load signature PDF.
+    * **Signing Service:** Select the **Scribble Signature** option.
+
+    * **CSS Class**: Specify CSS class of the client library, if any. Adobe recommends using [themes](themes.md) and [in-line styles](inline-style-adaptive-forms.md) instead of CSS Class.
+## Sign an Adaptive Form using Scribble Signature {#sign-an-adaptive-form-using-scribble-signature}
+
+1. After you fill an Adaptive Form and reach the Signature Step page, the signature screen is displayed.
+
+   ![Signature screen for EchoSign page](assets/esignscribblesign.jpg)
+
+1. Click **[!UICONTROL Sign]**. The scribble sign dialog appears. Sign the form and click the Done ![aem_forms_save](assets/aem_forms_save.png) icon to save the signature.
+
+   ![Scribble sign dialog](assets/scribblewidget.png)
+
+1. Click complete to finish the signing process.
+
+   ![Complete the signing process](assets/scribblecomplete.jpg)
+
+The signatures are added to the form and the form control moves to the next panel. -->
 
 ## 추가 참조 {#see-also}
 
