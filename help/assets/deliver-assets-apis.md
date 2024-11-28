@@ -3,10 +3,10 @@ title: 게재 API
 description: 배달 API를 사용하는 방법을 알아봅니다.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 7727aa87693cc96e3497dcda71190866b198975d
+source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 3%
+source-wordcount: '627'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 Experience Manager 에셋 저장소에서 사용할 수 있는 [승인된 에셋](approve-assets.md)은 모두 [검색](search-assets-api.md)한 다음 배달 URL을 사용하여 통합 다운스트림 응용 프로그램으로 배달할 수 있습니다.
 
-버전 업데이트 및 메타데이터 수정 사항을 포함하여 DAM의 승인된 에셋에 대한 모든 변경 사항은 게재 URL에 자동으로 반영됩니다. CDN을 통한 에셋 전달에 대해 구성된 10분의 짧은 TTL(Time-to-Live) 값을 사용하면 10분 이내에 모든 작성 및 게시된 인터페이스에 업데이트가 표시됩니다.
+버전 업데이트 및 메타데이터 수정을 포함하여 DAM에서 승인된 자산에 대한 변경 사항은 게재 URL에 자동으로 반영됩니다. CDN을 통한 에셋 전달에 대해 구성된 10분의 짧은 TTL(Time-to-Live) 값을 사용하면 10분 이내에 모든 작성 및 게시된 인터페이스에 업데이트가 표시됩니다.
 
 다음 이미지는 사용 가능한 게재 URL을 보여 줍니다.
 
@@ -44,7 +44,8 @@ Experience Manager 에셋 저장소에서 사용할 수 있는 [승인된 에셋
 
 >[!NOTE]
 >
-[이미지 사전 설정, 스마트 이미징 및 추가 이미지 수정자](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/)를 제한된 가용성 기능으로 사용할 수 있습니다. 액세스하려면 [Adobe 고객 지원 사례를 만들어 제출](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)하세요.
+* [이미지 사전 설정, 스마트 이미징 및 추가 이미지 수정자](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/)를 제한된 가용성 기능으로 사용할 수 있습니다. 액세스하려면 [Adobe 고객 지원 사례를 만들어 제출](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)하세요.
+* 스마트 자르기는 [Assets Prime](/help/assets/assets-ultimate-overview.md)에서 사용할 수 없습니다.
 
 ## 게재 API 엔드포인트 {#delivery-apis-endpoint}
 

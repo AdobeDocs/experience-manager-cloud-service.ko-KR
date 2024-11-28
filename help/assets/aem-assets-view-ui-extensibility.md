@@ -4,9 +4,9 @@ description: AEM Assets 보기의 UI 확장성 기능에 대해 알아봅니다.
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: af7e6ab40212dfa3d91cda80a76b1b6b01dd65a3
+source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '589'
 ht-degree: 3%
 
 ---
@@ -39,7 +39,7 @@ Assets 보기에서 에셋, 폴더 또는 컬렉션의 세부 정보 페이지�
 ## 확장성 구성 요소를 추가하기 위한 사전 요구 사항
 
 * [Assets 보기에 액세스](#1).
-* 기본적으로 [Assets Ultimate](/help/assets/assets-ultimate-overview.md)에 포함된 [Adobe 앱 빌더](https://developer.adobe.com/app-builder/docs/overview/)에 액세스합니다.
+* [Adobe 앱 빌더](https://developer.adobe.com/app-builder/docs/overview/)에 액세스합니다.
 * 조직 내에서 시스템 관리자 역할의 개발자에게 권한이 부여됩니다. 자세한 내용은 [this](https://developer.adobe.com/uix/docs/guides/get-access/)을(를) 참조하십시오.
 * Adobe IO 명령줄 도구(AIO CLI)가 로컬 시스템에 설치되어 있어야 합니다. 이 도구는 확장 프로젝트를 만들고 배포하는 데 필수적입니다. 자세한 내용은 [this](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up)을(를) 참조하십시오.
 * JavaScript, Node.js 및 React 기술에 대한 올바른 이해입니다.
