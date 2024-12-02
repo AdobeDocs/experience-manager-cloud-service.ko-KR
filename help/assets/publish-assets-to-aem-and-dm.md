@@ -4,21 +4,21 @@ description: Assets 보기의 빠른 Publish을 사용하면 자산을 AEM 및 D
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing, Dynamic Media
 role: User
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 8ab19fe82fc390d28d33b17222177fd8486c8fc7
 workflow-type: tm+mt
-source-wordcount: '1206'
-ht-degree: 1%
+source-wordcount: '1209'
+ht-degree: 2%
 
 ---
 
 # AEM 및 Dynamic Media에 자산 게시{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-Experience Manager Assets을 사용하면 Assets 보기를 사용하여 자산을 Experience Manager 및 Dynamic Media에 빠르게 게시할 수 있습니다. 이렇게 하면 자산을 관리하고 [Assets 보기로 전환하지 않고](/help/assets/overview.md##persona-based-experiences)을(를) 사용하여 게시할 수 있습니다.
+Experience Manager Assets을 사용하면 Assets 보기를 사용하여 자산을 Experience Manager 및 Dynamic Media에 빠르게 게시할 수 있습니다. 이렇게 하면 자산을 관리한 다음 관리 보기](/help/assets/overview.md##persona-based-experiences)(으)로 전환하지 않고 [Assets 보기를 사용하여 게시할 수 있습니다.
 
-Experience Manager Assets 보기는 자산을 AEM나 Dynamic Media 또는 두 가지 모두에 동시에 게시할 수 있는 유연성을 제공합니다. 에셋을 업로드하고, 탐색하고, 검색하는 동안 에셋을 게시할 수 있습니다. 자산을 게시하는 이러한 모든 옵션은 이 문서 내에 자세히 설명되어 있습니다.
+Experience Manager Assets 보기는 자산을 AEM나 Dynamic Media 또는 두 가지 모두에 동시에 게시할 수 있는 유연성을 제공합니다. 에셋을 업로드하고, 탐색하고, 검색하는 동안 에셋을 게시할 수 있습니다. 자산을 게시하는 이러한 모든 옵션은 이 문서에서 자세히 설명합니다.
 
 ## 시작하기에 앞서 {#before-you-begin}
 
@@ -27,9 +27,9 @@ AEM 및 Dynamic Media에 대한 게시 옵션을 보려면 다음 설정을 구�
 * Dynamic Media에 대한 게시 옵션을 보려면 관리 보기를 사용하여 다음 설정을 구성합니다.
 
    * [Dynamic Media 클라우드 구성 만들기](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
-   * 폴더 수준에서 Dynamic Media Publish 모드를 설정합니다. Dynamic Media 클라우드 구성을 만드는 동안 이러한 설정을 구성할 수도 있습니다. 폴더 수준에서 이러한 설정을 덮어쓰려면 [Dynamic Media의 폴더 수준에서 Publish 선택 구성](/help/assets/dynamic-media/selective-publishing.md)을 참조하십시오.
+   * 폴더 수준에서 Dynamic Media Publish 모드를 설정합니다. Dynamic Media Cloud 구성을 만드는 동안 이러한 설정을 구성할 수도 있습니다. 폴더 수준에서 이러한 설정을 덮어쓰려면 [Dynamic Media의 폴더 수준에서 선택적 Publish 구성](/help/assets/dynamic-media/selective-publishing.md)을 참조하십시오.
 
-* AEM에 대한 게시 옵션을 보려면 환경에 대해 AEM 게시 끝점을 구성해야 합니다.
+* AEM용 게시 옵션을 보려면 환경에 대해 AEM 게시 끝점을 구성해야 합니다.
 
 ## 업로드 중 Publish Assets {#piblish-assets-during-upload}
 
@@ -52,7 +52,7 @@ Dynamic Media Publish 모드가 **활성화 시**(으)로 설정된 폴더에 �
 
 Dynamic Media Publish 모드가 **즉시**(으)로 설정된 폴더에 업로드하는 동안 자산을 게시하려면:
 
-1. 자산을 업로드할 적절한 폴더로 이동하려면 **Assets 추가** > **찾아보기** > **파일 찾아보기**&#x200B;를 클릭하십시오. Publish 옵션 섹션에는 **DM Publish 모드**&#x200B;가 **즉시**(으)로 표시됩니다.
+1. 자산을 업로드할 적절한 폴더로 이동하려면 **Assets 추가** > **찾아보기** > **파일 찾아보기**&#x200B;를 클릭하십시오. Publish 옵션 섹션에 **DM Publish 모드**&#x200B;가 **즉시**(으)로 표시됩니다.
    ![파일 업로드 이미지 - 즉시 모드](/help/assets/assets/resized-image-pdf-svg-new.svg)
 
 
@@ -82,7 +82,7 @@ Dynamic Media Publish 모드가 **선택적 Publish**(으)로 설정된 폴더�
 에셋 검색 페이지를 사용하여 에셋을 게시하려면 다음 작업을 수행하십시오.
 
 1. 왼쪽 창에 있는 **Assets 관리** 섹션에서 **Assets**&#x200B;을(를) 클릭합니다.
-2. 게시해야 하는 에셋 또는 폴더를 선택하고 **Publish**&#x200B;을(를) 클릭합니다.
+2. 게시해야 하는 에셋 또는 폴더를 하나 이상 선택하고 **Publish**&#x200B;을(를) 클릭합니다.
 3. 자산을 AEM 및 Dynamic Media에 게시하려면 **AEM**&#x200B;을(를) 선택하고 **Publish**을(를) 클릭하십시오.
    ![자산 찾아보기](/help/assets/assets/browse-uactivation-immediate.svg)
 Dynamic Media Publish 모드가 **선택적 게시로 설정된 폴더는 게시할 수 없습니다.** AEM을 선택하면 다른 모든 선택한 폴더 또는 자산이 AEM 및 Dynamic Media에 게시됩니다.
@@ -104,11 +104,11 @@ Dynamic Media Publish 모드가 **선택적 게시로 설정된 폴더는 게시
 
 ## Publish 상태 확인 {#check-publish-status}
 
-에셋 또는 폴더에 대한 게시 상태를 확인하려면:
+에셋 또는 폴더에 대해 게시된 상태를 확인하려면:
 
 1. 왼쪽 창에 있는 **[!UICONTROL Assets 관리]** 섹션에서 **[!UICONTROL Assets]**&#x200B;을(를) 클릭합니다.
-2. 보기 전환기를 사용하여 목록 보기로 전환합니다. AEM Publish, Dynamic Media Publish, 제목, 크기, 차원 등과 같은 에셋 속성을 볼 수 있습니다.\
-   에셋 또는 폴더가 게시되지 않은 경우 **AEM Publish** 및 **Dynamic Media Publish** 열의 상태가 **N/A.**(으)로 표시됩니다
+2. 보기 전환기를 사용하여 목록 보기로 전환합니다. AEM 게시, Dynamic Media Publish, 제목, 크기, 차원 등과 같은 자산 속성을 볼 수 있습니다.\
+   에셋 또는 폴더가 게시되지 않은 경우 **AEM Publish** 및 **Dynamic Media Publish** 열의 상태가 **N/A.**(으)로 표시됩니다.
    ![게시 상태 확인1](/help/assets/assets/check-publish-status1.png)
 목록 보기에서 AEM Publish 및 Dynamic Media Publish 열을 볼 수 없는 경우:
    1. ![설정](/help/assets/assets/settings-icon.svg)을 클릭하고 **구성 가능한 열** 대화 상자에서 **AEM Publish** 및 **Dynamic Media Publish** 열을 선택합니다.
@@ -124,7 +124,7 @@ Dynamic Media Publish 모드가 **선택적 게시로 설정된 폴더는 게시
 
 자산을 AEM 및 Dynamic Media에 게시하는 동안 현재 다음 기능은 사용할 수 없습니다.
 
-* 자산 세부 사항 페이지에서 AEM 및 Dynamic Media으로 Publish 자산.
+* Publish 에셋을 에셋 세부 사항 페이지에서 AEM 및 Dynamic Media으로 복사합니다.
 * 빠른 Publish 마법사를 사용하여 자산이 게시되는 끝점을 시각화합니다.
 * 빠른 Publish 마법사에서 더 많은 에셋을 추가하거나 삭제합니다.
 * 게시된 자산을 볼 수 있는 페이지입니다.
