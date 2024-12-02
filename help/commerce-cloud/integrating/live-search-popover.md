@@ -1,5 +1,5 @@
 ---
-title: '[!DNL Live Search] Popover CIF 구성 요소'
+title: '[!DNL Live Search] 팝오버 CIF 구성 요소'
 description: CIF 구성 요소를 사용하여 AEM 사이트에서  [!DNL Live Search] 팝오버 구성 요소 활성화
 exl-id: 9dac6693-fe87-4a47-a920-2cf788933499
 feature: Commerce Integration Framework

@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 2020.4.0용 릴리스 노트
-description: "[!DNL Adobe Experience Manager] as a Cloud Service 릴리스 노트(220.0)"
+description: as a Cloud Service [!DNL Adobe Experience Manager] 20.0 릴리스 노트.
 exl-id: d98a3862-76fa-4b5b-b81a-333f5f532b67
 feature: Release Information
 role: Admin
@@ -31,8 +31,8 @@ ht-degree: 93%
    * [!DNL Experience Manager]는 [!DNL Adobe Asset Link]용으로 사전 구성되어 있어서 크리에이티브 전문가가 [쉽게 구성](https://helpx.adobe.com/kr/enterprise/using/configure-aem-assets-for-asset-link.html)하고 더 빠른 롤아웃을 수행할 수 있습니다.
    * [!DNL Asset Link]는 이제 크리에이티브 사용자가 다른 [!DNL Experience Manager] 환경에 쉽게 연결할 수 있도록 해주는 [Experience Manager 환경 전환기](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink)를 지원합니다. 이 기능은 예를 들어 다양한 [!DNL Experience Manager Assets] 배포를 사용하여 여러 고객과 작업하는 에이전시 디자이너에게 유용합니다.
 
-* 사용자는 특정 폴더 계층 구조에 대한 폴더 [!UICONTROL 속성] 사용자 인터페이스에서 [사후 처리 워크플로우](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)를 자동으로 시작하도록 구성할 수 있습니다.
-   * 폴더 [!UICONTROL 속성] 사용자 인터페이스는 메타데이터 프로필, 처리 프로필 및 새로운 자동 시작 워크플로우 구성을 포함하는 새로운 [!UICONTROL 자산 처리] 탭을 사용하여 단순화되었습니다.
+* 사용자는 특정 폴더 계층 구조에 대한 폴더 [!UICONTROL 속성] 사용자 인터페이스에서 [사후 처리 워크플로](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)를 자동으로 시작하도록 구성할 수 있습니다.
+   * 폴더 [!UICONTROL 속성] 사용자 인터페이스는 메타데이터 프로필, 처리 프로필 및 새로운 자동 시작 워크플로 구성을 포함하는 새로운 [!UICONTROL 자산 처리] 탭을 사용하여 단순화되었습니다.
 
      ![처리 프로필은 폴더에 쉽게 적용할 수 있으며 폴더에 업로드된 모든 자산은 이러한 프로필을 사용하여 처리 중입니다](/help/assets/assets/asset-processing-folder-properties.png)
 

@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 릴리스의 릴리스 노트'
-description: "[!DNL Adobe Experience Manager] as a Cloud Service 릴리스 노트(220.0)"
+description: as a Cloud Service [!DNL Adobe Experience Manager] 20.0 릴리스 노트
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
 feature: Release Information
 role: Admin
@@ -41,9 +41,9 @@ ht-degree: 73%
 
 * 자산 마이크로서비스를 사용하고 일괄 게시 벡엔드를 향상하여 자산 게시를 전체 자산 처리 파이프라인에 필수 요소로 통합함으로서 [!DNL Dynamic Media]의 자산 게시가 더 단순화되고 더 강력해졌습니다.
 
-* 클라우드 서비스 배포와 호환되지 않는 워크플로우 단계에는 이제 [!UICONTROL 워크플로우 모델] 편집기에서 경고가 표시됩니다. 또한 Cloud Service 환경에서 기존 워크플로우를 실행할 때 호환되지 않는 워크플로우 단계를 건너뜁니다.
+* 클라우드 서비스 배포와 호환되지 않는 워크플로 단계에는 이제 [!UICONTROL 워크플로 모델] 편집기에서 경고가 표시됩니다. 또한 Cloud Service 환경에서 기존 워크플로우를 실행할 때 호환되지 않는 워크플로우 단계를 건너뜁니다.
 
-* 고객이 만든 워크플로 모델 중 [!DNL Cloud Manager]의 환경과 연결된 Git 프로젝트의 `/conf/global`에 배포되는 모델은 `/var`에 자동으로 배포되어 [!DNL Experience Manager]에서 사용할 수 있습니다. 고객이 변경한 `/libs`의 제품 워크플로우 모델은 자동으로 `/var`에 배포되지 않습니다.
+* 고객이 만든 워크플로 모델 중 [!DNL Cloud Manager]의 환경과 연결된 Git 프로젝트의 `/conf/global`에 배포되는 모델은 `/var`에 자동으로 배포되어 [!DNL Experience Manager]에서 사용할 수 있습니다. 고객이 변경한 `/libs`의 제품 워크플로 모델은 자동으로 `/var`에 배포되지 않습니다.
 
 ### 수정된 버그 {#assets-bugs-fixed}
 
@@ -63,7 +63,7 @@ ht-degree: 73%
 
 ### 새로운 기능 {#what-is-new-core-components}
 
-[AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)의 릴리스 2.11.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
+[AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)의 릴리스 2.11.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
 
 * 새로운 [PDF 뷰어 구성 요소](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html) 소개
 

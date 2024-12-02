@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL Assets]에 대한 개발자 참조'
-description: "[!DNL Assets]개의 API 및 개발자 참조 콘텐츠를 사용하여 이진 파일, 메타데이터, 렌디션, 주석 및 [!DNL Content Fragments]을 포함한 에셋을 관리할 수 있습니다."
+description: '[!DNL Assets] API 및 개발자 참조 콘텐츠를 사용하여 이진 파일, 메타데이터, 렌디션, 주석 및 [!DNL Content Fragments]을 포함한 에셋을 관리할 수 있습니다.'
 contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
@@ -8,13 +8,13 @@ exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
 source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
 source-wordcount: '1956'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets]개의 개발자 사용 사례, API 및 참조 자료 {#assets-cloud-service-apis}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 이 문서에는 [!DNL Assets] as a [!DNL Cloud Service] 개발자를 위한 권장 사항, 참조 자료 및 리소스가 포함되어 있습니다. 여기에는 새로운 에셋 업로드 모듈, API 참조 및 사후 처리 워크플로우에서 제공되는 지원에 대한 정보가 포함됩니다.

@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.2.0 릴리스 정보입니다.'
-description: "[!DNL Adobe Experience Manager] as a Cloud Service 221.0에 대한 릴리스 노트"
+description: as a Cloud Service [!DNL Adobe Experience Manager] 21.0에 대한 021 릴리스 노트.
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
 feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1185'
-ht-degree: 32%
+ht-degree: 33%
 
 ---
 
@@ -59,7 +59,7 @@ as a Cloud Service 다음 섹션에서는 [!DNL Experience Manager]에 대한 �
 
 * [!DNL Cloud Service](으)로서 [!DNL Experience Manager Assets]은(는) 사전 구성된 [!DNL Brand Portal] 인스턴스를 가질 수 있습니다. [!DNL Cloud Manager] 사용자는 [!DNL Experience Manager Assets]에서 [!DNL Brand Portal]을(를) [!DNL Cloud Service](으)로 활성화할 수 있습니다. [Brand Portal 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html)를 참조하세요.
 
-* 이제 기업은 [!DNL Brand Portal]을(를) 사용하여 자산을 소싱할 수 있습니다. 에셋 소싱 기능은 [!DNL Brand Portal]을(를) 사용하여 고객이 에이전시 사용자와 협력하여 새로운 마케팅 캠페인, 사진 촬영 및 프로젝트를 위한 에셋을 소싱할 수 있도록 지원합니다. [자산 소싱 위치 [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ko-KR)를 참조하십시오.
+* 이제 기업은 [!DNL Brand Portal]을(를) 사용하여 자산을 소싱할 수 있습니다. 에셋 소싱 기능은 [!DNL Brand Portal]을(를) 사용하여 고객이 에이전시 사용자와 협력하여 새로운 마케팅 캠페인, 사진 촬영 및 프로젝트를 위한 에셋을 소싱할 수 있도록 지원합니다. [자산 소싱 위치 [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ko)를 참조하십시오.
 
 * 이제 [!DNL Brand Portal] 사용량 보고서에 활성 사용자만 표시됩니다. 비활성 사용자는 현재 표시되지 않습니다. 활성 사용자는 [!DNL Admin Console]의 제품 프로필에 계정이 할당된 사용자입니다. [[!DNL Brand Portal] 보고서](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html)를 참조하세요.
 
@@ -123,7 +123,7 @@ AEM as a Cloud Service 2021.2.0의 Cloud Manager 릴리스 일자는 2021년 2�
 
 ## 콘텐츠 전송 도구 {#content-transfer-tool}
 
-### 릴리스 날짜 {#release-date-ctt}
+### 릴리스 일자 {#release-date-ctt}
 
 콘텐츠 전송 도구 v1.2.4의 릴리스 날짜는 2021년 2월 10일입니다.
 
@@ -144,7 +144,7 @@ AEM as a Cloud Service 2021.2.0의 Cloud Manager 릴리스 일자는 2021년 2�
 
 ## Best Practices Analyzer {#best-practices-analyzer}
 
-### 릴리스 날짜 {#release-date-bpa}
+### 릴리스 일자 {#release-date-bpa}
 
 Best Practices Analyzer v2.1.2의 릴리스 날짜는 2021년 2월 18일입니다.
 

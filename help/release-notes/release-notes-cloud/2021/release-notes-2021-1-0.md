@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.1.0 릴리스 정보입니다.'
-description: "[!DNL Adobe Experience Manager] as a Cloud Service 릴리스 노트(221.0)"
+description: as a Cloud Service [!DNL Adobe Experience Manager] 21.0에 대한 021 릴리스 노트.
 exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
 feature: Release Information
 role: Admin

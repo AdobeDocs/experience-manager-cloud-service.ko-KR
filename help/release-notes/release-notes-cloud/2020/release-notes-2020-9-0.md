@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2020.9.0 릴리스 정보입니다.'
-description: "[!DNL Adobe Experience Manager] as a Cloud Service 릴리스 노트(220.9.0)"
+description: as a Cloud Service [!DNL Adobe Experience Manager] 20.0 릴리스 노트.
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
 feature: Release Information
 role: Admin

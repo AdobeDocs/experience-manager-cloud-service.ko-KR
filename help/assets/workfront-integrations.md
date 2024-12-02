@@ -1,5 +1,5 @@
 ---
-title: ''' [!DNL Adobe Workfront]''과(와) ''[!DNL Experience Manager Assets] 통합'
+title: ' [!DNL Adobe Workfront]과(와) [!DNL Experience Manager Assets] 통합'
 description: ' [!DNL Assets] 과(와) [!DNL Workfront] 간의 통합 소개'
 role: Admin, Leader, Architect
 feature: Workfront Integrations and Apps
@@ -7,13 +7,13 @@ exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
 source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
 source-wordcount: '408'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
 # [!DNL Adobe Experience Manager]을(를) [!DNL Cloud Service] [!DNL Assets](으)로 [!DNL Adobe Workfront]과(와) 통합 {#assets-integration-overview}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 | 버전 | 문서 링크 |

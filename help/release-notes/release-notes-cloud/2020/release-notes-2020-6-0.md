@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 2020.6.0용 릴리스 노트
-description: "[!DNL Adobe Experience Manager] as a Cloud Service 6 릴리스 노트(220.0)"
+description: as a Cloud Service [!DNL Adobe Experience Manager] 20.0 릴리스 노트.
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 feature: Release Information
 role: Admin
@@ -25,7 +25,7 @@ AEM as a Cloud Service 릴리스 2020.6.0에 있는 AEM Sites의 새로운 기�
 
 ### 새로운 기능 {#whats-new-2020.6.0}
 
-[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)의 릴리스 2.9.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
+[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)의 릴리스 2.9.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
 
 * [Adobe 클라이언트 데이터 레이어](https://github.com/adobe/adobe-client-data-layer)와 핵심 구성 요소 간의 통합
 * 모든 구성 요소에 대해 구성 가능한 HTML ID 속성
@@ -129,7 +129,7 @@ AEM as a Cloud Service 릴리스 2020.6.0에 있는 Cloud Manager의 새로운 �
 
 사용자 인터페이스 요소는 화면 판독기 친화적이고, 키보드를 사용하여 액세스할 수 있으며, 더 나은 대비를 보여줍니다. 다음은 향상된 기능의 세부 목록입니다.
 
-* [!UICONTROL 게시 관리] 페이지의 [!UICONTROL 옵션], [!UICONTROL 범위] 및 [!UICONTROL 워크플로우] 진행률 표시줄은 화면 판독기에서 진행률 표시줄로 읽지 않습니다. 대신 화면 판독기 사용자는 이러한 상태 표시기를 탭 목록으로 인식합니다. (CQ-4273015)
+* [!UICONTROL 게시 관리] 페이지의 [!UICONTROL 옵션], [!UICONTROL 범위] 및 [!UICONTROL 워크플로] 진행률 표시줄은 화면 판독기에서 진행률 표시줄로 읽지 않습니다. 대신 화면 판독기 사용자는 이러한 상태 표시기를 탭 목록으로 인식합니다. (CQ-4273015)
 
 * 자산의 [!UICONTROL 속성] 페이지에서 태그를 추가할 때 사용자는 태그의 트리 구조를 탐색합니다. 화면 판독기 사용자가 트리 구조를 탐색할 때 아무 소리도 들리지 않으므로 트리 구조에 액세스할 수 없습니다. (CQ-4272964)
 
@@ -149,7 +149,7 @@ AEM as a Cloud Service 릴리스 2020.6.0에 있는 Cloud Manager의 새로운 �
 
 * 이제 화면 판독기에서 콤보 상자의 목록 상자 팝업 메뉴 항목을 옵션 목록으로 읽을 수 있습니다(여러 페이지의 다양한 필드). (CQ-4294017)
 
-* 자산에 워크플로우를 적용하려면 [!UICONTROL 타임라인]에 있는 V자 모양 화살표에 키보드로 액세스할 수 있습니다. (CQ-4289268)
+* 자산에 워크플로를 적용하려면 [!UICONTROL 타임라인]에 있는 V자 모양 화살표에 키보드로 액세스할 수 있습니다. (CQ-4289268)
 
 * 사용자는 [!UICONTROL  기호를 사용하여 자산의 ]속성[!UICONTROL  페이지의 ]기본 사항[!UICONTROL  탭에 있는 ]태그`x` 필드에서 선택한 태그를 제거할 수 있습니다. 이제 화면 판독기에서 선택한 태그의 용도와 수를 알려줍니다(CQ-4273033).
 
@@ -175,7 +175,7 @@ AEM as a Cloud Service 릴리스 2020.6.0에 있는 Cloud Manager의 새로운 �
 
 이 릴리스에서는 다음과 같은 기타 개선 사항이 제공됩니다.
 
-* 자산 처리 프로필로 자산을 재처리할 수 있으므로 프로세스를 완전히 제어할 수 있습니다(전체 자산 처리 실행, 특정 처리 프로필 적용, 사후 처리 워크플로우 실행 여부 결정).
+* 자산 처리 프로필로 자산을 재처리할 수 있으므로 프로세스를 완전히 제어할 수 있습니다(전체 자산 처리 실행, 특정 처리 프로필 적용, 사후 처리 워크플로 실행 여부 결정).
 * 검색 쿼리는 기본 클러스터 인스턴스가 백그라운드에서 다시 시작되었을 때 결과를 빠르게 반환합니다(이러한 경우 초기 검색 실행이 더 오래 지속될 수 있음).
 * 자산 인터페이스 및 검색 결과의 목록 보기에서 자산을 볼 때는 &#39;이름&#39;으로 정렬합니다. [자산 검색](/help/assets/search-assets.md#sort)을 참조하십시오.
 * Assets 인터페이스 및 검색 결과의 목록 보기에서 자산을 볼 때 &#39;생성됨&#39;(날짜)을 기준으로 정렬합니다. [자산 검색](/help/assets/search-assets.md#sort)을 참조하십시오.

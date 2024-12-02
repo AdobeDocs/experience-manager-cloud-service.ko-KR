@@ -4,7 +4,7 @@ Description: Explore the process of automated workflow initiation with AEM Forms
 keywords: AEM 워크플로, 적응형 양식과 AEM 워크플로 통합, AEM 워크플로 호출 제출 액션
 feature: Adaptive Forms, Core Components
 exl-id: b7788e3d-acd8-4867-b232-f9767cf6b2f5
-title: "적응형 양식에 대한 제출 액션을 구성하는 방법"
+title: 적응형 양식에 대한 제출 액션을 구성하는 방법
 role: User, Developer
 source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt

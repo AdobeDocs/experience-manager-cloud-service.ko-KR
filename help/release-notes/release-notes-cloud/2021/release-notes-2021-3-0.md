@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.3.0 릴리스 정보입니다.'
-description: "[!DNL Adobe Experience Manager] as a Cloud Service 릴리스 노트(221.0)"
+description: as a Cloud Service [!DNL Adobe Experience Manager] 21.0에 대한 021 릴리스 노트.
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
 feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1271'
-ht-degree: 33%
+ht-degree: 34%
 
 ---
 
@@ -134,7 +134,7 @@ AEM as a Cloud Service 2021.3.0의 Cloud Manager 릴리스 날짜는 2021년 3�
 
 ## 콘텐츠 전송 도구 {#content-transfer-tool}
 
-### 릴리스 날짜 {#release-date-ctt}
+### 릴리스 일자 {#release-date-ctt}
 
 컨텐츠 전송 도구 v1.3.4의 릴리스 날짜는 2021년 3월 19일입니다.
 
@@ -157,7 +157,7 @@ AEM as a Cloud Service 2021.3.0의 Cloud Manager 릴리스 날짜는 2021년 3�
 
 ## Best Practices Analyzer {#best-practices-analyzer}
 
-### 릴리스 날짜 {#release-date-bpa}
+### 릴리스 일자 {#release-date-bpa}
 
 Best Practices Analyzer v2.1.8의 릴리스 날짜는 2021년 3월 22일입니다.
 

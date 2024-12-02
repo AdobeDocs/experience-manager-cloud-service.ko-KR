@@ -1,6 +1,6 @@
 ---
 title: 기본 디지털 자산 관리에 Media Library 사용
-description: "[!DNL Experience Manager Assets] 및 자산 관리용 Media Library"
+description: 자산 관리용 [!DNL Experience Manager Assets] 및 Media Library.
 contentOwner: AG
 feature: Asset Management, Publishing
 role: User, Architect, Leader
@@ -8,7 +8,7 @@ exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
 source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
 source-wordcount: '603'
-ht-degree: 9%
+ht-degree: 11%
 
 ---
 
@@ -23,7 +23,7 @@ Define what is not included
 
 # 기본 에셋 관리에 Media Library 사용 {#manage-assets-using-media-library}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 | 버전 | 문서 링크 |

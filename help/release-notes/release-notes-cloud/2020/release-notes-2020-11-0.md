@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2020.11.0 릴리스 정보입니다.'
-description: "[!DNL Adobe Experience Manager] as a Cloud Service 릴리스 노트(220.1.0)"
+description: as a Cloud Service [!DNL Adobe Experience Manager] 20.20.1.0에 대한 릴리스 노트
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
 feature: Release Information
 role: Admin
@@ -135,7 +135,7 @@ AEM as a Cloud Service SDK Build Analyzer Maven 플러그인은 누락된 종속
 
 ## Best Practices Analyzer {#best-practices-analyzer}
 
-### 릴리스 날짜 {#release-date-bpa}
+### 릴리스 일자 {#release-date-bpa}
 
 모범 사례 분석기의 릴리스 날짜는 2020년 11월 13일입니다.
 

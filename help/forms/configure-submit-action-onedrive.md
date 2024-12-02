@@ -4,7 +4,7 @@ Description: Explore the streamlined process of connecting AEM Forms with Micros
 keywords: AEM Forms OneDrive 통합, AEM Forms를 사용하여 Microsoft OneDrive, OneDrive 구성 설정에 연결
 feature: Adaptive Forms, Core Components
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
-title: "적응형 양식에 대한 제출 액션을 구성하는 방법"
+title: 적응형 양식에 대한 제출 액션을 구성하는 방법
 role: User, Developer
 source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt

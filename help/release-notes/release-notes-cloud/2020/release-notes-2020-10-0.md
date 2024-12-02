@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2020.10.0 릴리스 정보입니다.'
-description: "[!DNL Adobe Experience Manager] as a Cloud Service 릴리스 노트(220.0.0)"
+description: as a Cloud Service [!DNL Adobe Experience Manager] 20.0.0에 대한 01 릴리스 노트
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
 feature: Release Information
 role: Admin
@@ -24,7 +24,7 @@ ht-degree: 24%
 
 ### [!DNL Sites]의 새로운 기능 {#what-is-new-sites}
 
-* **[핵심 구성 요소 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)**: Adobe Experience Manager as a Cloud Service은 핵심 구성 요소의 최신 릴리스에 대한 자동 업데이트를 통해 이점을 제공합니다. 릴리스 2.12.0에는 커뮤니티에서 제공한 최신 개선 사항이 포함되어 있습니다. 개선 사항에는 [새 POST 양식 핸들러;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) 컨텍스트 인식 구성을 통해 사용자 지정 CSS, JavaScript 및 메타데이터 [태그를 포함하는 기능;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) 및 [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) 유틸리티가 사용자 지정 구성 요소에서 Adobe 데이터 레이어 통합을 단순화하는 기능이 포함됩니다. 2.12.0의 [변경 내용 목록](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0)을 참조하세요.
+* **[핵심 구성 요소 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)**: Adobe Experience Manager as a Cloud Service은 핵심 구성 요소의 최신 릴리스에 대한 자동 업데이트를 통해 이점을 제공합니다. 릴리스 2.12.0에는 커뮤니티에서 제공한 최신 개선 사항이 포함되어 있습니다. 개선 사항에는 [새 POST 양식 핸들러;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) 컨텍스트 인식 구성을 통해 사용자 지정 CSS, JavaScript 및 메타데이터 [태그를 포함하는 기능;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) 및 [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) 유틸리티가 사용자 지정 구성 요소에서 Adobe 데이터 레이어 통합을 단순화하는 기능이 포함됩니다. 2.12.0의 [변경 내용 목록](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0)을 참조하세요.
 
 * **[Project Archetype 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)**: 새 Experience Manager 프로젝트를 시작하는 데 권장되는 기반이 개선되었습니다. 이제 새로운 [Adobe 클라이언트 데이터 레이어](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html), [AMP에서 사이트 배달,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) 옵션 및 프로젝트 CSS/JS를 추가하는 새로운 [확장 지점이 포함됩니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)
 

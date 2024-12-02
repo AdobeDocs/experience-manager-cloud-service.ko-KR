@@ -17,9 +17,9 @@ Adobe Commerce 라이브 검색은 추가 비용 없이 빠르고, 관련성이 
 
 이 항목에서는 AEM CIF 구성 요소를 사용하여 AEM 사이트에 [!DNL Live Search] PLP(제품 목록 페이지) 위젯을 구현하는 방법에 대해 설명합니다.
 
-## 사전 요구 사항 {#prerequisites}
+## 전제 조건 {#prerequisites}
 
-이 항목에서는 사용자가 로컬 [AEM 환경](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=ko-KR)을 설정했다고 가정합니다.
+이 항목에서는 사용자가 로컬 [AEM 환경](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=ko)을 설정했다고 가정합니다.
 
 PLP 구성 요소를 설치하려면 [[!DNL Live Search] Popover CIF 구성 요소](live-search-popover.md)가 설치되어 있어야 합니다. PLP 위젯을 사용하려면 팝오버에 의해 생성된 브라우저 세션 변수가 필요합니다.
 
