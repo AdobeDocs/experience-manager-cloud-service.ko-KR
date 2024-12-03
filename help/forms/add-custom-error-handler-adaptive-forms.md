@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
 role: User, Developer
-source-git-commit: e1e122b730de07d9fff36828bb85ceec7c0b101b
+source-git-commit: 13c1febf55c9b15eab49d356fc1ba3f3d91ad055
 workflow-type: tm+mt
-source-wordcount: '2336'
+source-wordcount: '2323'
 ht-degree: 86%
 
 ---
@@ -185,7 +185,7 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 
 규칙 편집기를 사용하여 다음 작업을 수행할 수 있습니다.
 * [기본 오류 핸들러 함수 추가](#add-default-errror-handler)
-* [사용자 정의 오류 핸들러 함수 추가](#add-custom-errror-handler)
+* [사용자 정의 오류 핸들러 함수 추가](#add-custom-error-handler-function)
 
 
 ### 기본 오류 핸들러 함수 추가 {#add-default-errror-handler}
@@ -208,7 +208,7 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 
 ![양식에서 기본 오류 핸들러를 추가하여 오류 응답을 처리할 때 기본 오류 메시지 표시](/help/forms/assets/default-error-message.png)
 
-### 사용자 정의 오류 핸들러 함수 추가 {#add-custom-errror-handler}
+### 사용자 정의 오류 핸들러 함수 추가
 
 사용자 정의 오류 핸들러 함수를 추가하여 다음의 일부 작업을 수행할 수 있습니다.
 
@@ -222,14 +222,12 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 [규칙 편집기의 호출 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) 작업을 통해 사용자 정의 오류 핸들러를 만들고 사용하는 방법을 이해하려면 두 필드, **펫 ID** 및 **펫 이름**&#x200B;을 사용하여 간단한 적응형 양식의 예를 살펴본 다음 **펫 ID** 필드의 사용자 정의 오류 핸들러를 사용하여 외부 서비스를 호출하도록 구성된 REST 엔드포인트에서 반환된 다양한 오류를 확인하십시오(예: `200 - OK`,`404 - Not Found`, `400 - Bad Request`).
 
 적응형 양식에서 사용자 정의 오류 핸들러를 추가하고 사용하려면 다음 단계를 수행합니다.
-1. [오류 처리기에 대한 사용자 지정 함수 추가](#1-add-custom-function-for-error-handler)
+1. [오류 처리기에 대한 사용자 지정 함수 추가](#1-add-the-custom-function-for-the-error-handler)
 2. [규칙 편집기를 사용하여 사용자 정의 오류 핸들러 구성](#use-custom-error-handler)
 
 #### 1. 오류 처리기에 대한 사용자 지정 함수 추가
 
->[!NOTE]
->
-> 사용자 지정 기능을 추가하는 방법에 대해 알아보려면 [핵심 구성 요소를 기반으로 하는 적응형 양식에서 사용자 지정 기능 만들기](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function)를 클릭하세요.
+사용자 지정 기능을 추가하는 방법에 대해 알아보려면 [핵심 구성 요소를 기반으로 하는 적응형 양식에서 사용자 지정 기능 만들기](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function)를 클릭하세요.
 
 <!-- To create a custom error function, perform the following steps:
 
@@ -258,6 +256,20 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
        }
    ```
 
+   >[!NOTE]
+   >
+   > * 사용자 지정 오류 처리기에서 기본 오류 처리기를 호출하기 위해 샘플 코드의 다음 줄이 사용됩니다. `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+   > * `.content.xml` 파일에서 `allowProxy` 및 `categories` 속성을 추가하여 적응형 양식의 사용자 지정 오류 처리기 클라이언트 라이브러리를 사용합니다.
+   >
+   >   * `allowProxy = [Boolean]true`
+   >   * `categories= customfunctionsdemo`
+   >       예: 이 경우에 [custom-errorhandler-name]이 `customfunctionsdemo`로 제공됩니다.
+
+
+1. 저장소에서 변경 사항을 추가, 커밋 및 푸시합니다.
+
+<!--
+
 <!--
 1. Save the `function.js` file.
 1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder.
@@ -271,22 +283,7 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 3. Save the `js.txt` file.    
 The created folder structure looks like:
 
-    ![Created Client Library Folder Structure](/help/forms/assets/customclientlibrary_folderstructure.png) -->
-
-
-    >[!NOTE]
-    >
-    > * 사용자 지정 오류 처리기에서 기본 오류 처리기를 호출하려면 샘플 코드의 다음 줄이 사용됩니다. &#39;guidelib.dataIntegrationUtils.defaultErrorHandler(응답, 헤더) &#39;
-    > * &#39;.content.xml&#39; 파일의 &#39;allowProxy&#39; 및 &#39;categories&#39; 속성을 추가하여 적응형 양식에서 사용자 지정 오류 처리기 클라이언트 라이브러리를 사용합니다.
-    >
-    >   * `allowProxy = [Boolean]true`
-    >   * &#39;categories= customfunctionsdemo&#39;
-    >       예를 들어 이 경우 [custom-errorhandler-name]은(는) &#39;customfunctionsdemo&#39;로 제공됩니다.
-
-
-1. 저장소에서 변경 사항을 추가, 커밋 및 푸시합니다.
-
-<!--
+    ![Created Client Library Folder Structure](/help/forms/assets/customclientlibrary_folderstructure.png) 
     using the below commands:
          
     ```javascript
@@ -295,8 +292,8 @@ The created folder structure looks like:
         git commit -a -m "Adding error handling files"
         git push
     ```
-
 -->
+
 1. [파이프라인 실행.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)
 
 파이프라인이 정상적으로 실행되면 사용자 정의 오류 핸들러를 적응형 양식 규칙 편집기에 사용할 수 있게 됩니다. 이제 AEM Forms에서 규칙 편집기의 호출 서비스를 통해 사용자 정의 오류 핸들러를 구성하고 사용하는 방법을 살펴보겠습니다.
