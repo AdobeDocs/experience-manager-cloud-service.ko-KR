@@ -4,9 +4,9 @@ description: AEM Assets 보기의 UI 확장성 기능에 대해 알아봅니다.
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
+source-git-commit: bbb183470e12c0fc81c821fc2e0c1e7d77c33707
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '576'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ AEM Assets 보기에는 UI 확장성 기능이 있습니다. 이 기능을 사�
 >[!IMPORTANT]
 >
 > * AEM Assets 보기 UI 확장은 [Assets Ultimate](/help/assets/assets-ultimate-overview.md)에서 사용할 수 있습니다.
-> * Assets View UI 확장은 Beta 릴리스로 사용할 수 있습니다. Assets 보기 UI 확장성에 일찍 액세스하려면 [Adobe 고객 지원 사례를 만들어 제출](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)하십시오.
+> * Assets 보기 UI 확장성에 액세스하려면 [Adobe 고객 지원 사례를 만들어 제출](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)하십시오.
 > * 세부 피드백 옵션을 확장하고 문제 보고를 클릭하여 설명서 피드백을 제공할 수 있습니다.
 
 ## <a id="1"></a> Assets 보기에 액세스하는 방법
