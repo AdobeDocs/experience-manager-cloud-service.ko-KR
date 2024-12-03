@@ -1,20 +1,20 @@
 ---
-title: 범용 편집기 2024.11.13 릴리스 정보
-description: 다음은 범용 편집기 2024.11.13 릴리스에 대한 릴리스 정보입니다.
+title: 범용 편집기 2024.12.02 릴리스 정보
+description: 다음은 범용 편집기 2024.12.02 릴리스에 대한 릴리스 정보입니다.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 98795cab471470442cf5c424a67ce2846cfe85dc
-workflow-type: ht
-source-wordcount: '370'
-ht-degree: 100%
+source-git-commit: 2aae8c63358680758e4f5324f38dea1bc2c47155
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 16%
 
 ---
 
 
-# 범용 편집기 2024.11.13 릴리스 정보 {#release-notes}
+# 범용 편집기 2024.12.02 릴리스 정보 {#release-notes}
 
-다음은 범용 편집기 2024년 11월 13일 릴리스에 대한 릴리스 정보입니다.
+다음은 범용 편집기의 2024년 12월 2일 릴리스 정보입니다.
 
 >[!TIP]
 >
@@ -22,22 +22,18 @@ ht-degree: 100%
 
 ## 새로운 기능 {#what-is-new}
 
-* **CORS 시간 초과 시 재시도 옵션:** [2024년 9월 26일 릴리스](/help/release-notes/universal-editor/2024/2024-09-26.md)에서는 편집기가 로드된 페이지로의 연결을 설정하지 못했을 때 무한 로딩 상태를 방지하기 위해 오류 패널이 도입되었습니다.
-   * 해당 릴리스에서는 편집기가 자동으로 연결을 재시도하며, 연결이 성공하면 편집을 재개할 수 있습니다.
-   * 이 기능은 초기화 초과 시간이 1분 이상인 페이지에 특히 유용합니다.
-* **개발자를 위한 확장성 향상:** 이제 범용 편집기가 확장 기능에 대한 이벤트를 브로드캐스트하는 기능을 지원합니다. 이를 통해 확장 기능 개발자는 [이벤트](/help/implementing/universal-editor/events.md)를 구독하고,
-   * [맞춤형 확장 기능 내에서 편집기 이벤트에 대응](/help/implementing/universal-editor/customizing.md#extending)할 수 있습니다.
-* **지속적인 구성 요소 선택:** 편집기에서 선택한 구성 요소는 이제 브라우저를 새로 고친 후에도 유지됩니다.
-   * 이를 통해 사용자는 페이지를 다시 로드하더라도 컨텍스트를 잃지 않고 작업을 계속할 수 있습니다.
-* **현지화된 빠른 링크:** 이제 홈 화면의 **빠른 링크** 섹션에서 문서에 대한 현지화된 링크를 제공합니다. 사용자는 자신의 언어 환경 설정에 따라 관련 안내서에 손쉽게 액세스할 수 있습니다.
-* **고급 디버깅을 위한 요청 ID:** 오류 알림의 세부 정보 섹션에는 이제 **요청 ID**&#x200B;가 포함되며, 이는 `x-request-id header`와 연관됩니다.
-   * Adobe 엔지니어링 팀은 이 오류를 내부 로그와 일치시켜 문제를 더 쉽게 추적하고 진단할 수 있습니다.
+* **콘텐츠 트리의 키보드 탐색**: [측면 패널에서 사용할 수 있는 콘텐츠 트리,](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)는 이제 키보드를 통해 액세스할 수 있습니다.
+   * 작성자는 접근성을 위해 [WCAG 2.1 지침](/help/sites-cloud/authoring/page-editor/accessible-content.md)을 준수하여 표준 키보드 컨트롤을 사용하여 트리 보기 항목을 탐색하고 상호 작용할 수 있습니다.
+   * 이러한 향상된 기능은 트리 내의 모든 대화형 요소가 키보드에서 작동 가능하므로 키보드 탐색에 의존하는 사용자의 포괄성이 향상됩니다.
+* **편집 가능 요소 선택 해제**: 이제 작성자는 페이지에서 이전에 선택한 편집 가능 요소를 선택 해제할 수 있습니다.
+   * 따라서 작성자가 활성 선택 테두리 없이 페이지를 보려고 할 때 주의해야 할 사항이 없습니다.
+* **조각 선택기**: AEM as a Cloud Service 인스턴스에서 조각 참조는 이제 조각 선택기를 콘텐츠 선택기로 열어 허용된 콘텐츠 조각 모델 준수, 콘텐츠 조각 검색 및 개선된 전체 경험과 같은 향상된 기능을 제공합니다.
+   * 다른 Adobe UI와 일치하고 일관성을 향상시킵니다.
+   * [AEM 6.5 환경의 경우](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) 기존 콘텐츠 선택기가 사용 중입니다.
+* **컨테이너 설명**: [콘텐츠를 참조하기 위해 [속성 패널](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel-properties-rail)에서 사용되는 컨테이너 구성 요소](/help/implementing/universal-editor/field-types.md#container)에서 이제 컨테이너 필드 위에 표시되는 설명 특성을 지원합니다.
+   * 이렇게 하면 작성자가 편집하고 있는 그룹화된 필드에 대한 컨텍스트를 제공하여 명확성을 높일 수 있습니다.
 
 ## 기타 개선 사항 {#other-improvements}
 
-* **긴 콘텐츠 트리 레이블 수정:** **콘텐츠 트리** 패널에서 긴 레이블이 잘리는 문제가 해결되었습니다.
-   * 이제 드래그 앤 드롭 핸들이 항상 표시되어 콘텐츠를 재정렬할 수 있습니다.
-* **긴 속성 레이블 수정:** **속성** 패널의 긴 필드 레이블이 필드 유효성 정보와 겹치는 버그가 해결되었습니다.
-* **속성 패널의 가로 스크롤:** **속성** 패널의 전체 요소로 인해 가로 스크롤이 발생하는 문제가 해결되었습니다.
-* **알림 중에 비활성화된 도구 모음 고정:** [알림](https://spectrum.adobe.com/page/toast/)이 표시되는 동안 **Adobe Experience Cloud** 상단 도구 모음이 비활성화되는 문제가 해결되었습니다.
-* **안정성 개선:** 예상치 못한 값을 처리하기 위한 오류 경계를 추가하여 단일 렌더러 또는 검사기가 실패하더라도 UI 전체가 충돌하지 않도록 하여 안정성을 강화하였습니다.
+* **서식 있는 텍스트 필드 동기화**: 속성 패널의 서식 있는 텍스트 필드 내에서 원시 콘텐츠와 렌더링된 콘텐츠의 동기화를 개선하여 서식 있는 텍스트 콘텐츠와 렌더링된 표현이 다를 수 있는 Edge Delivery Services 프로젝트 내의 문제를 해결했습니다.
+* **편집 모드 이벤트**: 이제 유니버설 편집기에서 원격 앱을 다시 로드한 후를 포함하여 편집 모드 이벤트를 안정적으로 내보냅니다.

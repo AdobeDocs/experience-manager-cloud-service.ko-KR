@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e454581a2e6f2b8184a54d6550daec60e58bbc6c
+source-git-commit: 47ee6803146acd93ed62b7eef1419d52f870ae90
 workflow-type: tm+mt
-source-wordcount: '5886'
-ht-degree: 96%
+source-wordcount: '5890'
+ht-degree: 97%
 
 ---
 
@@ -200,11 +200,12 @@ ht-degree: 96%
          + [2021.10.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Experience Manager 강화 커넥터용 Workfront 릴리스 정보{#workfront}
       + [Experience Manager 강화 커넥터용 Workfront 최신 릴리스 정보](/help/assets/release-notes-enhanced-connector-workfront.md)
-   + 변형 생성 릴리스 정보 {#generate-variations}
-      + [변형 생성 최신 릴리스 정보](/help/generative-ai/release-notes-generate-variations.md)
+   + 베리에이션 생성 릴리스 정보 {#generate-variations}
+      + [베리에이션 생성 최신 릴리스 정보](/help/generative-ai/release-notes-generate-variations.md)
    + 범용 편집기 릴리스 정보 {#univeral-editor}
       + [범용 편집기 최신 릴리스 정보](/help/release-notes/universal-editor/current.md)
       + 2024 {#2024}
+         + [2024.11.13 릴리스 정보](/help/release-notes/universal-editor/2024/2024-11-13.md)
          + [2024.11.05 릴리스 정보](/help/release-notes/universal-editor/2024/2024-11-05.md)
          + [2024.10.29 릴리스 정보](/help/release-notes/universal-editor/2024/2024-10-29.md)
          + [2024.09.27 릴리스 정보](/help/release-notes/universal-editor/2024/2024-09-27.md)
@@ -289,7 +290,7 @@ ht-degree: 96%
          + [콘텐츠 트랜스포머 사용](/help/journey-migration/content-transformer/using.md)
       + 콘텐츠 전송 도구 {#content-transfer-tool}
          + [개요](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
-         + [콘텐츠 전송 도구 사전 요구 사항](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
+         + [콘텐츠 전송 도구 전제 조건](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
          + [콘텐츠 전송 도구 사용을 위한 지침 및 모범 사례](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
          + [콘텐츠 전송 도구 시작하기](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
          + [콘텐츠 전송 확인](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
@@ -473,10 +474,10 @@ ht-degree: 96%
    + [지원되는 파일 형식](/help/assets/file-format-support.md)
    + [자산 마이크로서비스 개요](/help/assets/asset-microservices-overview.md)
    + [ [!DNL Assets]에서의 접근성](/help/assets/accessibility.md)
-   + [Assets as a Cloud Service 극단](/help/assets/assets-ultimate-overview.md)
-   + [Assets as a Cloud Service ultimate 활성화](/help/assets/enable-assets-ultimate.md)
-   + [Assets as a Cloud Service 프라임](/help/assets/assets-prime.md)
-   + [Assets Collaborator 사용자](/help/assets/assets-collaborator-users.md)
+   + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
+   + [Assets as a Cloud Service Ultimate 활성화](/help/assets/enable-assets-ultimate.md)
+   + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
+   + [Assets 공동 작업자 사용자](/help/assets/assets-collaborator-users.md)
    + 디지털 자산 관리 {#manage}
       + 마이크로 프론트엔드 자산 선택기 {#asset-selector}
          + [자산 선택기 개요](/help/assets/overview-asset-selector.md)
@@ -655,7 +656,7 @@ ht-degree: 96%
       + [자산 속성](/help/assets/asset-properties-content-hub.md)
       + [Content Hub에서 자산 공유](/help/assets/share-assets-content-hub.md)
       + [Content Hub를 사용하여 자산 다운로드](/help/assets/download-assets-content-hub.md)
-      + [Content Hub에서 라이선스가 있는 Assets 관리](/help/assets/manage-licensed-assets-on-content-hub.md)
+      + [Content Hub에서 사용 허가된 자산 관리](/help/assets/manage-licensed-assets-on-content-hub.md)
       + [Content Hub에서 컬렉션 관리](/help/assets/collections-content-hub.md)
       + [Content Hub에서 Adobe Express를 사용하여 이미지 편집](/help/assets/edit-images-content-hub.md)
       + [Content Hub의 Asset Insights](/help/assets/insights-content-hub.md)
@@ -756,7 +757,7 @@ ht-degree: 96%
             + [적응형 양식에 대한 JSON 스키마 디자인 (핵심 구성 요소)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [적응형 양식에 버전 관리, 댓글 및 주석 추가](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [적응형 양식 비교](/help/forms/compare-forms.md)
-            + [사용자 지정 제출 액션 만들기](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
+            + [사용자 정의 제출 액션 만들기](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [마이그레이션 유틸리티 도구를 사용하여 기초 구성 요소 기반 적응형 양식을 핵심 구성 요소 기반 Forms으로 변환](/help/forms/migration-utility-tool-for-af-core-components.md)
             + 핵심 구성 요소 기반 적응형 양식의 규칙 편집기 소개{#rule-editor-core-components}
                + [핵심 구성 요소 기반 적응형 양식의 규칙 편집기 소개](/help/forms/rule-editor-core-components.md)
@@ -769,7 +770,7 @@ ht-degree: 96%
             + 핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 소개{#create-and-use-custom-function-core-component}
                + [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 소개](/help/forms/create-and-use-custom-functions.md)
                + [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 만들기 및 사용](/help/forms/custom-function-core-component-create-function.md)
-               + [사용자 지정 함수의 범위 개체](/help/forms/custom-function-core-component-scope-function.md)
+               + [사용자 정의 함수의 범위 오브젝트](/help/forms/custom-function-core-component-scope-function.md)
                + [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수의 예](/help/forms/custom-function-core-components-use-cases.md)
             + Forms 포털 및 해당 구성 요소 소개{#introduction-to-forms-portal}
                + [Forms 포털 구성 요소 소개](/help/forms/configure-forms-portal.md)
@@ -957,7 +958,7 @@ ht-degree: 96%
       + [콘텐츠 모델링](/help/edge/wysiwyg-authoring/content-modeling.md)
       + [경로 매핑](/help/edge/wysiwyg-authoring/path-mapping.md)
       + [표 형식 데이터 및 스프레드시트](/help/edge/wysiwyg-authoring/tabular-data.md)
-      + [분류 체계 데이터 관리](/help/edge/wysiwyg-authoring/taxonomy.md)
+      + [분류법 데이터 관리](/help/edge/wysiwyg-authoring/taxonomy.md)
       + [WYSIWYG 및 문서 기반 블록](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
       + [DAM Assets이 있는 페이지](/help/edge/wysiwyg-authoring/dam-assets.md)
       + [WIP Sites 기능](/help/edge/wysiwyg-authoring/wip-features.md)
@@ -1043,7 +1044,7 @@ ht-degree: 96%
          + [Markdown 편집기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=ko)
       + [구조 트리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=ko)
       + [JSON 미리보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=ko)
-   + [구조화된 컨텐츠 전달 및 관리를 위한 AEM API](/help/headless/apis-headless-and-content-fragments.md)
+   + [구조화된 콘텐츠 게재 및 관리를 위한 AEM API](/help/headless/apis-headless-and-content-fragments.md)
    + GraphQL API {#graphql-api}
       + [콘텐츠 조각용 GraphQL API](/help/headless/graphql-api/content-fragments.md)
       + [GraphQL 엔드포인트 관리](/help/headless/graphql-api/graphql-endpoint.md)
@@ -1054,7 +1055,7 @@ ht-degree: 96%
       + [UUID 참조용 콘텐츠 조각 업그레이드](/help/headless/graphql-api/uuid-reference-upgrade.md)
       + [샘플 GraphQL 쿼리](/help/headless/graphql-api/sample-queries.md)
       + [GraphQL 쿼리 문제 해결](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [콘텐츠 조각 전달을 위한 AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
+   + [콘텐츠 조각 게재를 위한 AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
    + [콘텐츠 조각 및 모델 OpenAPI](/help/headless/content-fragment-openapis.md)
    + [Assets HTTP API의 콘텐츠 조각 지원](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=ko)
    + 보안 {#security}
@@ -1099,7 +1100,7 @@ ht-degree: 96%
          + [콘텐츠 조각의 참조 사용에 대해 알아보기](/help/journey-headless/author/references.md)
          + [콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기](/help/journey-headless/author/metadata-tagging.md)
 + 생성형 AI {#generative-ai}
-   + [변형 생성](/help/generative-ai/generate-variations.md)
+   + [베리에이션 생성](/help/generative-ai/generate-variations.md)
    + [어시스턴트(제한된 Beta)](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + 구현 {#implementing}
    + [AEM as a Cloud Service용 애플리케이션 구현](/help/implementing/home.md)
@@ -1160,7 +1161,7 @@ ht-degree: 96%
          + [Cloud Manager에서의 Edge Delivery Services 소개](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Cloud Manager에 Edge Delivery 사이트 추가](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
          + [Edge Delivery 사이트에 대한 푸시 유효성 검사 설정](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
-         + [Cloud Manager에서 Edge Delivery 사이트 관리](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
+         + [Cloud Manager에서 Edge Delivery Sites 관리](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + 도메인 설정 {#custom-domain-names}
          + [도메인 설정 소개](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [사용자 정의 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
