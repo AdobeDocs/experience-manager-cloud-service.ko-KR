@@ -5,7 +5,7 @@ keywords: 사용자 지정 함수를 추가하고, 사용자 지정 함수를 �
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
-source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
+source-git-commit: 249c60c6b4a888b8d32bbb6bebf159c972f82f94
 workflow-type: tm+mt
 source-wordcount: '1340'
 ht-degree: 5%
@@ -40,7 +40,7 @@ ht-degree: 5%
 * **Git:** 코드 변경 내용을 관리하려면 이 버전 제어 시스템이 필요합니다. 설치되지 않은 경우 https://git-scm.com에서 다운로드하십시오.
 
 
-## 사용자 정의 함수 만들기 {#create-custom-function}
+## 사용자 정의 함수 만들기
 
 규칙 편집기에서 사용자 지정 함수를 호출할 클라이언트 라이브러리를 만듭니다. 자세한 내용은 [클라이언트측 라이브러리 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing)을 참조하십시오.
 

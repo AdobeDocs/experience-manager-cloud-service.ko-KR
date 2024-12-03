@@ -7,10 +7,10 @@ content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: e1e122b730de07d9fff36828bb85ceec7c0b101b
 workflow-type: tm+mt
-source-wordcount: '2378'
-ht-degree: 90%
+source-wordcount: '2336'
+ht-degree: 86%
 
 ---
 
@@ -222,19 +222,24 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 [규칙 편집기의 호출 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) 작업을 통해 사용자 정의 오류 핸들러를 만들고 사용하는 방법을 이해하려면 두 필드, **펫 ID** 및 **펫 이름**&#x200B;을 사용하여 간단한 적응형 양식의 예를 살펴본 다음 **펫 ID** 필드의 사용자 정의 오류 핸들러를 사용하여 외부 서비스를 호출하도록 구성된 REST 엔드포인트에서 반환된 다양한 오류를 확인하십시오(예: `200 - OK`,`404 - Not Found`, `400 - Bad Request`).
 
 적응형 양식에서 사용자 정의 오류 핸들러를 추가하고 사용하려면 다음 단계를 수행합니다.
-1. [사용자 정의 오류 핸들러 만들기](#create-custom-error-message)
-1. [규칙 편집기를 사용하여 사용자 정의 오류 핸들러 구성](#use-custom-error-handler)
+1. [오류 처리기에 대한 사용자 지정 함수 추가](#1-add-custom-function-for-error-handler)
+2. [규칙 편집기를 사용하여 사용자 정의 오류 핸들러 구성](#use-custom-error-handler)
 
-#### 1. 사용자 정의 오류 핸들러 만들기 {#create-custom-error-message}
+#### 1. 오류 처리기에 대한 사용자 지정 함수 추가
 
-사용자 정의 오류 함수를 만들려면 다음 단계를 수행합니다.
+>[!NOTE]
+>
+> 사용자 지정 기능을 추가하는 방법에 대해 알아보려면 [핵심 구성 요소를 기반으로 하는 적응형 양식에서 사용자 지정 기능 만들기](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function)를 클릭하세요.
 
-1. [AEM Forms as a Cloud Service 저장소를 복제합니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ko-KR#accessing-git).
-1. `[AEM Forms as a Cloud Service repository folder]/apps/` 폴더 아래에 폴더를 만듭니다. 예: `experience-league`로 지정된 폴더 만들기
-1. `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/`로 이동하고 `clientlibs`로서 `ClientLibraryFolder`를 만듭니다.
-1. `js`라는 이름의 폴더를 만듭니다.
-1. `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` 폴더로 이동합니다.
-1. JavaScript 파일(예: `function.js`)을 추가합니다. 파일은 사용자 정의 오류 핸들러의 코드로 구성됩니다.
+<!-- To create a custom error function, perform the following steps:
+
+1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git). 
+2. Create a folder under the `[AEM Forms as a Cloud Service repository folder]/apps/` folder. For example, create a folder named as `experience-league`
+3. Navigate to `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` and create a `ClientLibraryFolder` as `clientlibs`.
+4. Create a folder named `js`.
+5. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder. -->
+
+1. JavaScript 파일에 사용자 지정 오류 처리기에 대한 아래 코드를 추가하십시오(예: `function.js`). 파일은 사용자 정의 오류 핸들러의 코드로 구성됩니다.
 다음 코드를 JavaScript 파일에 추가하여 REST 서비스 엔드포인트가 수신한 응답과 헤더를 브라우저 콘솔에 표시해 보겠습니다.
 
    ```javascript
@@ -253,43 +258,45 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
        }
    ```
 
-   사용자 정의 오류 핸들러에서 기본 오류 핸들러를 호출하려면 샘플 코드의 다음 라인을 사용합니다.
-   `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+<!--
+1. Save the `function.js` file.
+1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder.
+2. Add a text file as `js.txt`. The file contains:
 
-   >[!NOTE]
-   >
-   > `.content.xml` 파일에서 `allowProxy` 및 `categories` 속성을 추가합니다.
-   >
-   > * `allowProxy = [Boolean]true`
-   > * `categories= customfunctionsdemo`
-   >예: 이 경우에 [custom-errorhandler-name]이 `customfunctionsdemo`로 제공됩니다.
+    ```javascript
+        #base=js
+        functions.js
+    ```
 
-1. `function.js` 파일을 저장합니다.
-1. `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` 폴더로 이동합니다.
-1. `js.txt`로 텍스트 파일을 추가합니다. 파일에는 다음이 포함됩니다.
+3. Save the `js.txt` file.    
+The created folder structure looks like:
 
-   ```javascript
-       #base=js
-       functions.js
-   ```
+    ![Created Client Library Folder Structure](/help/forms/assets/customclientlibrary_folderstructure.png) -->
 
-1. `js.txt` 파일을 저장합니다.\
-   생성된 폴더 구조 형태는 다음과 같습니다.
 
-   ![클라이언트 라이브러리 폴더 구조가 생성됨](/help/forms/assets/customclientlibrary_folderstructure.png)
+    >[!NOTE]
+    >
+    > * 사용자 지정 오류 처리기에서 기본 오류 처리기를 호출하려면 샘플 코드의 다음 줄이 사용됩니다. &#39;guidelib.dataIntegrationUtils.defaultErrorHandler(응답, 헤더) &#39;
+    > * &#39;.content.xml&#39; 파일의 &#39;allowProxy&#39; 및 &#39;categories&#39; 속성을 추가하여 적응형 양식에서 사용자 지정 오류 처리기 클라이언트 라이브러리를 사용합니다.
+    >
+    >   * `allowProxy = [Boolean]true`
+    >   * &#39;categories= customfunctionsdemo&#39;
+    >       예를 들어 이 경우 [custom-errorhandler-name]은(는) &#39;customfunctionsdemo&#39;로 제공됩니다.
 
-   >[!NOTE]
-   >
-   > 사용자 정의 함수를 생성하는 방법에 대해 자세히 알아보려면 [규칙 편집기의 사용자 정의 함수](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=ko-KR#write-rules)를 클릭합니다.
 
-1. 아래 명령을 사용하여 저장소의 변경 내용을 추가하고, 커밋하고, 푸시합니다.
+1. 저장소에서 변경 사항을 추가, 커밋 및 푸시합니다.
 
-   ```javascript
-       git add .
-       git commit -a -m "Adding error handling files"
-       git push
-   ```
+<!--
+    using the below commands:
+         
+    ```javascript
 
+        git add .
+        git commit -a -m "Adding error handling files"
+        git push
+    ```
+
+-->
 1. [파이프라인 실행.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)
 
 파이프라인이 정상적으로 실행되면 사용자 정의 오류 핸들러를 적응형 양식 규칙 편집기에 사용할 수 있게 됩니다. 이제 AEM Forms에서 규칙 편집기의 호출 서비스를 통해 사용자 정의 오류 핸들러를 구성하고 사용하는 방법을 살펴보겠습니다.
