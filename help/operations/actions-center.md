@@ -4,10 +4,10 @@ description: 문제 및 기타 중요한 정보에 대해 편리하게 조치를
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 41e06c75229d78827e35164eca37a96d6feeb730
+source-git-commit: 1bfa9ff24d3515a450216f3569b1e8b0b1e31ecc
 workflow-type: tm+mt
-source-wordcount: '1098'
-ht-degree: 51%
+source-wordcount: '1118'
+ht-degree: 50%
 
 ---
 
@@ -86,4 +86,5 @@ AEM as a Cloud Service에는 여러 유형의 알림이 있지만 아래 그림�
 | 사용자 정의 그룹에 직접 추가된 사용자 | 사전 알림 | 사용자를 관련 IMS 그룹에 추가하고 이러한 IMS 그룹을 AEM 그룹의 멤버로 추가해야 합니다. [IMS 모범 사례](/help/security/ims-support.md)에 맞추기 | |
 | JCR 콘텐츠 누락 | 사전 알림 | 누락된 JCR 콘텐츠 노드를 추가합니다. [Assets Content Validator 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv)를 참조하세요. | |
 | 완료된 워크플로가 삭제되지 않음 | 사전 알림 | 90일 이상 된 워크플로 인스턴스를 삭제하여 워크플로 인스턴스 수를 최소화하고 성능을 향상시킵니다. [유지 관리 작업을 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/maintenance)하는 방법 알아보기 | |
-| 페이지에 Sling 리소스 유형 누락 | 사전 알림 | 누락된 Sling 리소스 유형 노드를 추가합니다. [Assets Content Validator 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv)를 참조하세요. |
+| 페이지에 Sling 리소스 유형 누락 | 사전 알림 | 누락된 Sling 리소스 유형 노드를 추가합니다. [Assets Content Validator 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv)를 참조하세요. | |
+| 느린 쿼리 | 사전 알림 | [JCQ 쿼리 치트 시트](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf)에서 제안하는 대로 올바른 인덱스 정의를 정의하여 느린 쿼리를 수정하십시오. |
