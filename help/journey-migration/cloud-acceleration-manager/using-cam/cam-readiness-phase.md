@@ -4,9 +4,9 @@ description: 이 페이지에서는 Cloud Acceleration Manager의 준비 단계�
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 feature: Migration
 role: Admin
-source-git-commit: f86d681c8f8cb6d602058ef30b648c53ff7bad69
+source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1096'
 ht-degree: 7%
 
 ---
@@ -60,7 +60,7 @@ CAM(Cloud Acceleration Manager)에서 프로젝트를 생성하면 이제 준비
    ![업로드 키 가져오기](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3b.png)
 
    >[!IMPORTANT]
-   >보고서를 여전히 수동으로 업로드할 수 있지만 업로드 키를 사용하면 작업이 간소화됩니다. 브라우저의 시크릿 모드에 있는 경우 보고서를 수동으로 업로드할 수 없습니다.
+   >보고서를 여전히 수동으로 업로드할 수 있지만 업로드 키를 사용하면 작업이 간소화됩니다. 크기가 약 200MB 이상인 경우 보고서를 수동으로 업로드할 수 없습니다. 브라우저의 시크릿 모드를 사용하여 보고서를 업로드할 수도 없습니다.
 
 1. 새 보고서가 업로드되면 CAM에서 모범 사례 분석 보고서를 볼 수 있습니다.
 

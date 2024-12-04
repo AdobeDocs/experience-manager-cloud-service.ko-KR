@@ -4,10 +4,10 @@ description: 모범 사례 분석기를 사용하여 업그레이드 준비 상�
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 9f5d7ee97da1c92d3a3d4573fa3ec737356f54a9
+source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
 workflow-type: tm+mt
-source-wordcount: '2701'
-ht-degree: 39%
+source-wordcount: '2724'
+ht-degree: 38%
 
 ---
 
@@ -85,6 +85,9 @@ Best Practices Analyzer(BPA) 실행을 위한 중요한 고려 사항을 이해�
 
 >[!NOTE]
 >**CAM으로 보고서 자동 업로드 건너뛰기**&#x200B;를 선택하여 CAM으로 자동 업로드를 건너뛸 수 있습니다. 건너뛰기를 선택하는 경우 BPA 보고서를 쉼표로 구분된 값 파일로 수동으로 다운로드한 다음 CAM에서 파일을 업로드해야 합니다. 업로드 키 옵션은 작업을 간소화하므로 사용하는 것이 좋습니다.
+
+>[!IMPORTANT]
+>CAM에 수동으로 업로드할 때 보고서 크기는 약 200MB로 제한됩니다. 더 큰 보고서의 경우 자동 업로드를 활용해야 합니다.
 
 1. 올바른 키를 제공하면 **생성** 단추가 활성화됩니다. 보고서 생성을 시작하려면 **생성**&#x200B;을 클릭하세요.
 
