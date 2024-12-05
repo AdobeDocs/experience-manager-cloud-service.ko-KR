@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  [!DNL Cloud Service]에서 더�
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 1ff3a9a0ff6b408794956323f12194f136d6b2ad
+source-git-commit: 9d58d9342a8c0337b1fa0c80b40f1cf6d07c2eee
 workflow-type: tm+mt
-source-wordcount: '2800'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -15,10 +15,10 @@ ht-degree: 96%
 
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
->title="AEM as a Cloud Service에서 더이상 사용되지 않고 제거된 기능"
->abstract="AEM as a Cloud Service에는 클라우드 기반 배포 모델이 있습니다. 일부 기능은 클라우드 기반 기능으로 대체되었으며 이 탭에서 이들 기능이 표시됩니다."
+>title="AEM as a Cloud Service에서 사용이 중단되거나 제거된 기능"
+>abstract="AEM as a Cloud Service에는 클라우드 기반 배포 모델이 있습니다. 이 탭에서는 클라우드 기반 기능으로 대체된 기능이 강조 표시됩니다."
 
-Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 전반적인 고객 가치를 향상하도록 오랜 시간에 걸쳐 오래된 기능을 새롭게 만들거나 더 현대적인 대안으로 대체하기 위해 제품 기능을 지속해서 평가합니다. 또한 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]에서 클라우드 기반 배포 모델을 제공함에 따라, 일부 기능이 클라우드 기반 기능으로 대체되었습니다.
+Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 전반적인 고객 가치를 향상하도록 오랜 시간에 걸쳐 오래된 기능을 새롭게 만들거나 더 현대적인 대안으로 대체하기 위해 제품 기능을 지속해서 평가합니다. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]이(가) 클라우드 기반 배포 모델을 사용함에 따라 특정 기능 및 기능이 클라우드 기반 기능으로 바뀝니다.
 
 [!DNL Experience Manager] 기능의 제거/대체가 임박했음을 알리기 위해 다음 규칙이 적용됩니다.
 
@@ -29,22 +29,22 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 
 ## 더이상 사용되지 않는 기능 {#deprecated-features}
 
-이 섹션에는 [!DNL Experience Manager] as a [!DNL Cloud Service]에서 더이상 사용되지 않는다고 표시된 기능이 나열됩니다. 일반적으로 향후 릴리스에서 제거되는 기능은 먼저 대체 기능이 제공되며 더이상 사용되지 않도록 설정됩니다.
+이 섹션에는 [!DNL Experience Manager] as a [!DNL Cloud Service]에서 더이상 사용되지 않는다고 표시된 기능이 나열됩니다. 일반적으로 향후 릴리스에서 제거될 기능은 먼저 사용 중지로 설정되고 대체 기능이 제공됩니다.
 
 현재 배포에서 해당 기능을 사용 중인지 검토하고 이들 구현을 변경하여 제공되는 대체 기능을 사용하도록 계획을 세우는 것이 좋습니다.
 
 | 기능 | 사용되지 않는 기능 | 대체 |
 | ------------ | ------------------ | ----------- |
 | [!DNL Sites] | [JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/ko/docs/experience-manager-htl/content/java-use-api) |
-| [!DNL Sites] | **소셜 미디어 상태**&#x200B;에 대한 경험 조각 속성. | 해당 기능은 곧 제거됩니다. |
+| [!DNL Sites] | **소셜 미디어 상태**&#x200B;에 대한 경험 조각 속성. | 이 기능은 곧 제거될 예정입니다. |
 | [!DNL Sites] | 템플릿 기반 간단 콘텐츠 조각. | 현재는 [모델 기반 구조 콘텐츠 조각](/help/assets/content-fragments/content-fragments-models.md)입니다. |
 | [!DNL Assets] | `DAM Asset Update` 수집된 이미지를 처리하는 워크플로입니다. | 이제 자산 수집은 [자산 마이크로서비스](/help/assets/asset-microservices-overview.md)를 사용합니다. |
 | [!DNL Assets] | 자산을 [!DNL Experience Manager]에 직접 업로드합니다. [지원 중단된 자산 업로드 API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api)를 참조하십시오. | [다이렉트 이진 업로드](/help/assets/add-assets.md)를 사용합니다. 기술적인 세부 정보는 [직접 업로드 API](/help/assets/developer-reference-material-apis.md#upload-binary)를 참조하십시오. |
 | [!DNL Assets] | [!DNL ImageMagick]과 같은 호출 명령줄 도구를 포함하여 `DAM Asset Update` 워크플로의 [일부 워크플로 단계](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)는 지원되지 않습니다. | [자산 마이크로서비스](/help/assets/asset-microservices-overview.md)는 많은 워크플로에 대한 대체 기능을 제공합니다. 사용자 정의 처리에는 [후 처리 워크플로](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)를 사용하십시오. |
 | [!DNL Assets] | 비디오의 FFmpeg 코드 변환. | FFmpeg 썸네일 생성의 경우 [자산 마이크로서비스](/help/assets/asset-microservices-overview.md)를 사용합니다. FFmpeg 코드 변환의 경우 [Dynamic Media](/help/assets/manage-video-assets.md)를 사용합니다. |
-| [!DNL Foundation] | 복제 에이전트의 “배포” 탭 아래에 있는 트리 복제 UI(2021년 9월 30일 이후 제거) | [게시 관리](/help/operations/replication.md#manage-publication) 또는 [트리 활성화 워크플로 단계](/help/operations/replication.md#tree-activation) 접근 방식. |
-| [!DNL Foundation] | 복제 에이전트 관리 화면의 배포 탭과 복제 API를 사용하여 10MB가 넘는 콘텐츠 패키지를 복제할 수 없습니다. | [게시 관리](/help/operations/replication.md#manage-publication) 또는 [트리 활성화 워크플로 단계](/help/operations/replication.md#tree-activation) |
-| [!DNL Foundation] | Adobe Developer Console 프로젝트에서 생성된 자격 증명을 사용하는 통합에서는 JWT(서비스 계정) 자격 증명에 대한 지원이 점차 중단됩니다. 2024년 5월 1일 이후에는 Adobe Developer Console에서 새 서비스 계정(JWT) 자격 증명을 생성할 수 없습니다. 단, 기존 서비스 계정(JWT) 자격 증명은 2025년 1월 1일까지 이미 구성된 통합에 계속 사용할 수 있습니다. 계정(JWT) 자격 증명은 더이상 작동하지 않으며 고객은 OAuth 서버 간 자격 증명으로 마이그레이션해야 합니다. [자세히 알아보기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | Adobe I/O OAuth 서버 간 자격 증명으로 [마이그레이션](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)합니다. |
+| [!DNL Foundation] | 복제 에이전트 &quot;배포&quot; 탭 아래의 트리 복제 UI(2021년 9월 30일 이후 제거) | [게시 관리](/help/operations/replication.md#manage-publication) 또는 [트리 활성화 워크플로 단계](/help/operations/replication.md#tree-activation) 접근 방식. |
+| [!DNL Foundation] | 복제 에이전트 관리 화면의 배포 탭과 복제 API는 10MB보다 큰 콘텐츠 패키지를 복제할 수 없습니다. | [게시 관리](/help/operations/replication.md#manage-publication) 또는 [트리 활성화 워크플로 단계](/help/operations/replication.md#tree-activation) |
+| [!DNL Foundation] | Adobe Developer Console 프로젝트에서 생성된 자격 증명을 사용한 통합으로 인해 서비스 계정(JWT) 자격 증명에 대한 지원이 점점 손실되고 있습니다. 2024년 5월 1일부터 Adobe Developer Console에서 새 서비스 계정(JWT) 자격 증명을 만들 수 없습니다. 기존 서비스 계정(JWT) 자격 증명은 2025년 1월 1일까지 구성된 통합에 사용할 수 있으며, 그 이후에는 작동이 중지되므로 고객은 OAuth 서버 간 자격 증명으로 마이그레이션해야 합니다. [자세히 알아보기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | Adobe I/O OAuth 서버 간 자격 증명으로 [마이그레이션](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)합니다. |
 | [!DNL Foundation] | 콘텐츠 계층 구조 복제에 사용된 콘텐츠 트리 게시 워크플로 및 관련 콘텐츠 트리 게시 워크플로 단계. | 성능이 더 뛰어난 [트리 활성화 워크플로 단계](/help/operations/replication.md#tree-activation)를 사용하십시오. |
 
 
@@ -55,10 +55,10 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 | 영역 | 기능 | 대체 | 목표 제거 날짜 |
 | ------------ | ------------------ | ----------- | ------------------- |
 | 사용자 인터페이스 | 클래식 UI는 제품 사용자 인터페이스에서 제거됩니다. 링크 검사기, 버전 제거 및 일부 클라우드 서비스 구성과 같은 일부 선택 기능에서 몇 가지 클래식 UI 대화 상자를 사용할 수 있습니다. 예정된 [제품 업데이트](/help/release-notes/home.md) 이후에는 클래식 UI를 사용할 수 없습니다. | 표준 UI | 제거됨 |
-| [!DNL Dynamic Media] | [!DNL Experience Manager] as a [!DNL Cloud Service]에서 [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html#integration)과 [Dynamic Media 하이브리드 모드](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html#dynamic)와의 이전 통합을 사용할 수 없습니다. | [!DNL Experience Manager] as a [!DNL Cloud Service]에 제공되는 [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)를 사용하십시오. | 제거됨 |
+| [!DNL Dynamic Media] | [!DNL Experience Manager] as a [!DNL Cloud Service]에서 [Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/integration/scene7#integration)과 [Dynamic Media 하이브리드 모드](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dynamic#dynamic)와의 이전 통합을 사용할 수 없습니다. | [!DNL Experience Manager] as a [!DNL Cloud Service]에 제공되는 [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)를 사용하십시오. | 제거됨 |
 | [!DNL Sites] | 포털 디렉터 및 포틀릿 구성 요소 | 이들 기능은 [!DNL Experience Manager] 6.4에서 더이상 사용되지 않으며 이제 [!DNL Experience Manager]에서 제거되었습니다. | 제거됨 |
 | [!DNL Sites] | 디자인 가져오기 | 런타임 시 [!DNL Experience Manager] 저장소의 변경 불가능한 섹션을 사용할 수 없으므로 이 기능은 제거되었습니다. | 제거됨 |
-| [!DNL Assets] | Marketing Cloud Assets 핵심 서비스 및 Creative Cloud 서비스와 공유 중인 [!DNL Assets]를 사용할 수 없습니다. | [!DNL Adobe Creative Cloud]와의 통합을 위해 [Adobe Asset Link](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)를 사용하십시오. | 제거됨 |
+| [!DNL Assets] | Assets 핵심 서비스 및 Creative Cloud 서비스와 [!DNL Assets] 공유를 사용할 수 없습니다. | [!DNL Adobe Creative Cloud]와의 통합을 위해 [Adobe Asset Link](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)를 사용하십시오. | 제거됨 |
 | [!DNL Foundation] | Apache Sling 데이터 소스 지원(OSGi 번들 org.apache.sling.datasource) | 해당 사항 없음 | 제거됨 |
 | [!DNL Foundation] | JST 스크립팅 템플릿 지원(OSGi 번들 org.apache.sling.scripting.jst) | 해당 사항 없음 | 제거됨 |
 | [!DNL Foundation] | Apache Felix Http Whiteboard 지원 | OSGi Http Whiteboard | 2022년 3월 |
@@ -68,7 +68,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 
 ## AEM API {#aem-apis}
 
-다음은 더이상 사용되지 않는 AEM API 및 해당 API의 예상되는 제거 날짜에 대한 광범위한 목록입니다. 고객은 목표 제거 날짜까지 코드에서 해당 API를 제거해야 합니다. 제거 날짜가 지난 API를 사용하면 로컬 SDK/개발 환경 및 Cloud Manager 빌드 프로세스에서 오류가 발생합니다.
+다음은 더이상 사용되지 않는 AEM API 및 해당 API의 예상되는 제거 날짜에 대한 광범위한 목록입니다. 고객은 목표 제거 날짜까지 코드에서 해당 API를 제거해야 합니다. 제거 날짜가 지난 API를 사용하면 로컬 SDK/개발 환경 및 Cloud Manager 빌드 프로세스에서 오류가 발생할 수 있습니다.
 
 <details>
   <summary>더이상 사용되지 않는 API 목록을 보려면 펼쳐보십시오.</summary>
@@ -200,54 +200,54 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
   </tr>
   <tr>
     <td>org.apache.jackrabbit.vault.util.xml<br>org.apache.jackrabbit.vault.util.xml.serialize</td>
-    <td>Apache Xerces와 관련된 Util 클래스는 주요 버전 변경이 발생하는 후속 릴리스에서 제거됩니다. 이들 Util은 Filevault에서 내부용으로 사용되므로 해당 API는 공개 API 영역에서 더이상 사용되지 않습니다.</td>
+    <td>Apache Xerces와 관련된 Util 클래스는 주요 버전 변경이 발생하는 후속 릴리스에서 제거됩니다. 이러한 Util은 File Vault에서 내부용으로 사용되므로 API는 공개 API 영역에서 더 이상 사용되지 않습니다.</td>
     <td>9/1/21</td>
     <td>제거됨</td>
   <tr>
     <td>org.apache.sling.atom.taglib<br>org.apache.sling.atom.taglib.media</td>
     <td>레거시 AEM 6.x API. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">아래의 제거 노트를 참조하십시오.</a></td>
     <td>4/8/19</td>
-    <td>09/29/21</td>
+    <td>9/29/21</td>
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
     <td>Apache Felix Http Whiteboard는 더이상 지원되지 않습니다. 코드를 OSGi Http Whiteboard로 마이그레이션합니다. <a href="#org.apache.felix.http.whiteboard">아래의 제거 노트를 참조하십시오.</a></td>
     <td>1/27/2022</td>
-    <td>03/24/2022</td>
+    <td>3/24/2022</td>
   </tr>
   <tr>
     <td>org.apache.cocoon.xml.dom<br>org.apache.cocoon.xml.sax</td>
-    <td>이 API는 더이상 사용되지 않습니다. JDK에서 제공하는 XML API로 코드를 마이그레이션하십시오.</td>
+    <td>이 API는 더이상 사용되지 않습니다. JDK에서 제공하는 XML API로 코드를 마이그레이션합니다.</td>
     <td>1/27/2022</td>
     <td>3/24/2022</td>
   </tr>
   <tr>
     <td>ch.qos.logback.classic<br>ch.qos.logback.classic.boolex<br>ch.qos.logback.classic.db.names<br>ch.qos.logback.classic.db.script<br>ch.qos.logback.classic.encoder<br>ch.qos.logback.classic.filter<br>ch.qos.logback.classic.helpers<br>ch.qos.logback.classic.html<br>ch.qos.logback.classic.jmx<br>ch.qos.logback.classic.joran<br>ch.qos.logback.classic.joran.action<br>ch.qos.logback.classic.jul<br>ch.qos.logback.classic.layout<br>ch.qos.logback.classic.log4j<br>ch.qos.logback.classic.net<br>ch.qos.logback.classic.net.server<br>ch.qos.logback.classic.pattern<br>ch.qos.logback.classic.pattern.color<br>ch.qos.logback.classic.selector<br>ch.qos.logback.classic.selector.servlet<br>ch.qos.logback.classic.servlet<br>ch.qos.logback.classic.sift<br>ch.qos.logback.classic.spi<br>ch.qos.logback.classic.turbo<br>ch.qos.logback.classic.util<br>ch.qos.logback.core<br>ch.qos.logback.core.boolex<br>ch.qos.logback.core.encoder<br>ch.qos.logback.core.filter<br>ch.qos.logback.core.helpers<br>ch.qos.logback.core.hook<br>ch.qos.logback.core.html<br>ch.qos.logback.core.joran<br>ch.qos.logback.core.joran.action<br>ch.qos.logback.core.joran.conditional<br>ch.qos.logback.core.joran.event<br>ch.qos.logback.core.joran.event.stax<br>ch.qos.logback.core.joran.node<br>ch.qos.logback.core.joran.spi<br>ch.qos.logback.core.joran.util<br>ch.qos.logback.core.joran.util.beans<br>ch.qos.logback.core.layout<br>ch.qos.logback.core.net<br>ch.qos.logback.core.net.server<br>ch.qos.logback.core.net.ssl<br>ch.qos.logback.core.pattern<br>ch.qos.logback.core.pattern.color<br>ch.qos.logback.core.pattern.parser<br>ch.qos.logback.core.pattern.util<br>ch.qos.logback.core.property<br>ch.qos.logback.core.read<br>ch.qos.logback.core.recovery<br>ch.qos.logback.core.rolling<br>ch.qos.logback.core.rolling.helper<br>ch.qos.logback.core.sift<br>ch.qos.logback.core.spi<br>ch.qos.logback.core.status<br>ch.qos.logback.core.subst<br>ch.qos.logback.core.util</td>
-    <td>이 내부 로그백 API는 AEM as a Cloud Service에서 지원되지 않습니다.</td>
+    <td>AEM as a Cloud Service은 이 내부 로그백 API를 지원하지 않습니다.</td>
     <td>1/27/2022</td>
     <td>3/24/2022</td>
   </tr>
   <tr>
     <td>org.slf4j.spi</td>
-    <td>이 내부 log4j API는 AEM as a Cloud Service에서 지원되지 않습니다.</td>
+    <td>AEM as a Cloud Service은 이 내부 log4j API를 지원하지 않습니다.</td>
     <td>1/27/2022</td>
     <td>3/24/2022</td>
   </tr>
   <tr>
     <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
-    <td>Apache Log4j 1은 2015년에 서비스가 종료되었으며 더이상 지원되지 않습니다.</td>
+    <td>Apache Log4j 1은 2015년에 서비스가 종료되었으며 더 이상 지원되지 않습니다.</td>
     <td>1/27/2022</td>
     <td>3/24/2022</td>
   </tr>
   <tr>
     <td>org.apache.sling.commons.log.logback<br>org.apache.sling.commons.log.logback.webconsole</td>
-    <td>이 내부 로그백 API는 AEM as a Cloud Service에서 지원되지 않습니다.</td>
+    <td>AEM as a Cloud Service은 이 내부 로그백 API를 지원하지 않습니다.</td>
     <td>1/27/2022</td>
     <td>제거됨</td>
   </tr>
   <tr>
     <td>com.github.jknack.handlebars.js</td>
-    <td>보안 취약성으로 인해 Handlebars를 4.0.5에서 4.3.0으로 업그레이드해야 합니다. 업그레이드된 Handlebars에는 이 패키지가 더이상 존재하지 않습니다.</td>
+    <td>보안 취약성으로 인해 Handlebars를 4.0.5에서 4.3.0으로 업그레이드해야 합니다. 업그레이드된 Handlebars에는 이 패키지가 더 이상 없습니다.</td>
     <td>5/5/2022</td>
     <td>8/5/2022</td>
   </tr>
@@ -261,10 +261,10 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
     <td>com.day.cq.contentsync.handler.util</td>
     <td>이 API는 더이상 사용되지 않습니다. 대신 Apache Sling의 빌더를 사용합니다.</td>
     <td>10/31/2022</td>
-    <td>01/01/2023</td>
+    <td>2023년 1월 1일</td>
   </tr>
   <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
-    <td>이 API는 AEM as a Cloud Service에서 지원되지 않습니다.</td>
+    <td>AEM as a Cloud Service은 이 API를 지원하지 않습니다.</td>
     <td>5/15/2023</td>
     <td>6/15/2023</td>
   </tr><td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
@@ -274,7 +274,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
   </tr>
   <tr>
     <td>org.slf4j.event    </td>
-    <td>이 내부 slf4j API는 AEM as a Cloud Service에서 지원되지 않습니다.</td>
+    <td>AEM as a Cloud Service은 이 내부 slf4j API를 지원하지 않습니다.</td>
     <td>4/11/2022</td>
     <td>8/30/2024</td>
   </tr>
@@ -314,18 +314,20 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 
 ### `org.apache.sling.commons.auth*` 제거 {#org.apache.sling.commons.auth}
 
-`org.apache.sling.commons.auth` 및/또는 `org.apache.sling.commons.auth.spi`를 사용하는 경우 코드를 `org.apache.sling.auth` 응답으로 마이그레이션하여 사용을 바꿀 수 있습니다. `org.apache.sling.auth.spi`. [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) 의 이전 버전을 사용하고 있다면 최신 버전으로 업데이트하십시오.
+`org.apache.sling.commons.auth`, `org.apache.sling.commons.auth.spi` 또는 두 가지 모두를 사용하는 경우 코드를 `org.apache.sling.auth` 다시 전송으로 마이그레이션하여 사용을 대체할 수 있습니다. `org.apache.sling.auth.spi`. [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)의 이전 버전을 사용하는 경우 최신 버전으로 업데이트하십시오.
 
 액션 목록:
+
 * ACS AEM Commons를 최신 버전으로 업데이트
 * `org.apache.sling.commons.auth` 및/또는 `org.apache.sling.commons.auth.spi`에서 `org.apache.sling.auth` 응답으로 마이그레이션합니다. `org.apache.sling.auth.spi`
 
 ### `org.eclipse.jetty*` 제거 {#org.eclipse.jetty}
 
-패키지 `org.eclipse.jetty` 또는 하위 패키지 중 하나를 사용하는 경우 비슷한 기능을 가진 다른 서드파티 라이브러리로 마이그레이션하는 것이 좋습니다. 마이그레이션이 불가능한 경우 아래 목록에서 필요한 번들을 프로젝트에 추가하십시오.
+패키지 `org.eclipse.jetty` 또는 하위 패키지 중 하나를 사용하는 경우 유사한 기능을 가진 다른 타사 라이브러리로 마이그레이션하는 것이 좋습니다. 마이그레이션이 불가능한 경우 아래 목록에서 필요한 번들을 프로젝트에 추가하십시오.
 
 액션 목록:
-* `org.eclipse.jetty` 패키지 사용을 다른 서드파티 라이브러리/자체 코드로 바꾸거나
+
+* `org.eclipse.jetty` 패키지 사용을 다른 타사 라이브러리/자체 코드로 바꾸거나
 * 이 목록에서 필요한 번들을 선택하여 프로젝트에 추가합니다.
    * `org.eclipse.jetty:jetty-client:9.4.54.v20240208`
    * `org.eclipse.jetty:jetty-http:9.4.54.v20240208`
@@ -341,37 +343,41 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 프로젝트에 Mongo 클라이언트 API를 추가합니다.
 
 액션 목록:
+
 * 프로젝트에 이 번들 추가
    * `org.mongodb:mongo-java-driver:3.12.7`
 
 ### `org.apache.abdera*` 및 `org.apache.sling.atom.taglib` 사용 {#org.apache.abdera_or_org.apache.sling.atom.taglib}
 
-`org.apache.abdera` 및 `org.apache.sling.atom.taglib` 의 모든 패키지 사용을 비슷한 기능을 제공하는 서드파티 라이브러리나 자체 코드로 바꿉니다.
+`org.apache.abdera` 및 `org.apache.sling.atom.taglib`의 패키지 사용을 유사한 기능 또는 자체 코드를 제공하는 타사 라이브러리로 바꾸십시오.
 
 액션 목록:
-* `org.apache.abdera` 및 `org.apache.sling.atom.taglib`의 패키지 사용을 다른 서드파티 라이브러리/자체 코드로 바꿉니다.
+
+* `org.apache.abdera` 및 `org.apache.sling.atom.taglib`의 패키지 사용을 다른 타사 라이브러리/자체 코드로 바꾸십시오.
 
 ### `org.apache.felix.http.whiteboard` 사용 {#org.apache.felix.http.whiteboard}
 
 `org.apache.felix.http.whiteboard` 사용을 [OSGi Http Whiteboard](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)로 바꿉니다. 공식 OSGi API는 비슷한 기능을 가지고 있으며, 대부분 교체 시 서비스 등록 속성만 변경하면 됩니다.
 
 액션 목록:
+
 * `org.apache.felix.http.whiteboard`의 사용을 [OSGi Http Whiteboard](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)로 바꾸기
 
 ## OSGI 구성 {#osgi-configuration}
 
 아래 두 목록은 AEM as a Cloud Service OSGi 구성 표면을 반영하여, 고객이 구성할 수 있는 항목을 설명합니다.
 
-1. 고객 코드로 구성하면 안 되는 OSGi 구성 목록
+1. 고객 코드는 나열된 OSGi 구성을 구성하지 않아야 합니다.
 1. 속성을 구성할 수 있지만 표시된 유효성 검사 규칙을 준수해야 하는 OSGi 구성 목록입니다. 이러한 규칙에는 속성 선언이 필요한지 여부, 해당 유형 및 경우에 따라 허용되는 값 범위가 포함됩니다.
 
-OSGI 구성이 나열되지 않은 경우, 고객 코드로 구성되었을 수 있습니다.
+고객 코드는 나열되지 않은 OSGi 구성을 구성할 수 있습니다.
 
-Cloud Manager 빌드 프로세스 중에 이러한 규칙의 유효성이 검사됩니다. 시간이 지남에 따라 다른 규칙이 추가될 수 있으며, 예상 시행 일자는 표에 명시되어 있습니다. 고객은 목표 시행 일자까지 이러한 규칙을 준수해야 합니다. 제거 날짜 이후에 규칙을 준수하지 않으면 Cloud Manager 빌드 프로세스에서 오류가 발생합니다. Maven 프로젝트에는 로컬 SDK 개발 중 OSGI 구성 오류에 플래그를 지정하도록 [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html)을 포함해야 합니다.
+Cloud Manager 빌드 프로세스 중에 이러한 규칙의 유효성이 검사됩니다. 시간이 지남에 따라 다른 규칙이 추가될 수 있으며, 예상 시행 일자는 표에 명시되어 있습니다. 고객은 목표 시행 일자까지 이러한 규칙을 준수해야 합니다. 제거 날짜 이후 규칙을 준수하지 않으면 Cloud Manager 빌드 프로세스에서 오류가 발생합니다. Maven 프로젝트에는 로컬 SDK 개발 중 OSGI 구성 오류에 플래그를 지정하도록 [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)을 포함해야 합니다.
 
 OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying/configuring-osgi.md)에서 확인할 수 있습니다.
 
 +++수정할 수 없는 OSGi 구성입니다.
+
 * **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
 * **`com.day.cq.auth.impl.cug.CugSupportImpl`** (공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
 * **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
@@ -380,6 +386,7 @@ OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying
 +++
 
 +++OSGi 구성에는 빌드 유효성 검사 규칙이 적용됩니다.
+
 * **`org.apache.felix.eventadmin.impl.EventAdmin`** (공지 일자: 2021년 4월 30일, 시행 일자: 2021년 7월 31일)
 * `org.apache.felix.eventadmin.ThreadPoolSize`
    * 유형: 정수
@@ -501,77 +508,6 @@ OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying
       * 유형: 부울
 +++
 
-## Java 버전 21 런타임 업데이트 {#java-runtime-update-21}
+## 버전 21로 Java 런타임 업데이트 {#java-runtime-update-21}
 
-AEM as a Cloud Service은 Java 21 런타임으로 이전됩니다. 호환성을 보장하기 위해 아래와 같은 조정이 필요합니다.
-
-### 런타임 요구 사항
-
-이러한 조정은 Java 21 런타임과의 호환성을 보장하기 위해 필요합니다. 라이브러리는 이전 버전의 Java와 호환되므로 언제든지 업데이트할 수 있습니다.
-
-#### org.objectweb.asm의 최소 버전 {#org.objectweb.asm}
-
-최신 JVM 런타임에 대한 지원을 보장하기 위해 org.objectweb.asm의 사용을 9.5 이상 버전으로 업데이트해야 합니다.
-
-#### org.apache.groovy의 최소 버전 {#org.apache.groovy}
-
-최신 JVM 런타임에 대한 지원을 보장하기 위해 org.apache.groovy의 사용을 4.0.22 이상 버전으로 업데이트해야 합니다.
-
-이 번들은 AEM Groovy Console과 같은 서드파티 종속성을 추가함으로써 간접적으로 포함될 수 있습니다.
-
-### 작성 시간 요구 사항
-
-최신 버전의 Java를 사용하여 프로젝트를 작성할 수 있으려면 이러한 조정이 필요하지만 런타임 호환성에는 필요하지 않습니다. Maven 플러그인은 이전 버전의 Java와 호환되므로 언제든지 업데이트할 수 있습니다.
-
-#### bnd-maven-plugin의 최소 버전 {#bnd-maven-plugin}
-
-bnd-maven-plugin 사용을 버전 6.4.0으로 업데이트하여 최신 JVM 실행 시간을 지원합니다. 버전 7 이상은 Java 11 이하와 호환되지 않으므로 현재 해당 버전으로 업그레이드하는 것은 권장되지 않습니다.
-
-#### aemanalyser-maven-plugin의 최소 버전 {#aemanalyser-maven-plugin}
-
-최신 JVM 런타임에 대한 지원을 보장하기 위해 aemanalyser-maven-plugin의 사용을 1.6.6 이상 버전으로 업데이트해야 합니다.
-
-#### maven-bundle-plugin의 최소 버전  {#maven-bundle-plugin}
-
-최신 JVM 런타임에 대한 지원을 보장하기 위해 bundle-maven-plugin의 사용을 5.1.5 이상 버전으로 업데이트해야 합니다.
-
-#### maven-scr-plugin의 종속성 업데이트  {#maven-scr-plugin}
-
-`maven-scr-plugin`은 Java 17 및 21과 직접 호환되지 않습니다. 단, 아래 스니펫과 유사하게 플러그인 구성 내에서 ASM 종속성 버전을 업데이트하여 설명자 파일을 생성할 수 있습니다.
-
-```
-[source,xml]
- <project>
-   ...
-   <build>
-     ...
-     <plugins>
-       ...
-       <plugin>
-         <groupId>org.apache.felix</groupId>
-         <artifactId>maven-scr-plugin</artifactId>
-         <version>1.26.4</version>
-         <executions>
-           <execution>
-             <id>generate-scr-scrdescriptor</id>
-             <goals>
-               <goal>scr</goal>
-             </goals>
-           </execution>
-         </executions>
-         <dependencies>
-           <dependency>
-             <groupId>org.ow2.asm</groupId>
-             <artifactId>asm-analysis</artifactId>
-             <version>9.7.1</version>
-             <scope>compile</scope>
-           </dependency>
-         </dependencies>
-       </plugin>
-       ...
-     </plugins>
-     ...
-   </build>
-   ...
- </project>
-```
+Adobe Experience Manager as a Cloud Service이 Java 21 런타임으로 전환합니다. 호환성을 보장하려면 [런타임 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)에 설명된 대로 라이브러리 버전을 업데이트해야 합니다.
