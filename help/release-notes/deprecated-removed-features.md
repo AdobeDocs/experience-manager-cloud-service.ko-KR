@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  [!DNL Cloud Service]에서 더�
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 9d58d9342a8c0337b1fa0c80b40f1cf6d07c2eee
+source-git-commit: 33dd48cc6484675ca54cfba19f741d23ee4f5ff1
 workflow-type: tm+mt
-source-wordcount: '2513'
-ht-degree: 79%
+source-wordcount: '2768'
+ht-degree: 78%
 
 ---
 
@@ -510,4 +510,77 @@ OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying
 
 ## 버전 21로 Java 런타임 업데이트 {#java-runtime-update-21}
 
-Adobe Experience Manager as a Cloud Service이 Java 21 런타임으로 전환합니다. 호환성을 보장하려면 [런타임 요구 사항](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)에 설명된 대로 라이브러리 버전을 업데이트해야 합니다.
+<!-- NEW but needed to be removed for now; removed 12/5/24 LEAVE HERE, DO NOT DELETE Adobe Experience Manager as a Cloud Service is transitioning to the Java 21 runtime. To ensure compatibility, updating library versions as outlined in [Runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) is essential. -->
+
+AEM as a Cloud Service은 Java 21 런타임으로 이전됩니다. 호환성을 보장하기 위해 아래와 같은 조정이 필요합니다.
+
+### 런타임 요구 사항
+
+이러한 조정은 Java 21 런타임과의 호환성을 보장하기 위해 필요합니다. 라이브러리는 이전 버전의 Java와 호환되므로 언제든지 업데이트할 수 있습니다.
+
+#### org.objectweb.asm의 최소 버전 {#org.objectweb.asm}
+
+최신 JVM 런타임에 대한 지원을 보장하기 위해 org.objectweb.asm의 사용을 9.5 이상 버전으로 업데이트해야 합니다.
+
+#### org.apache.groovy의 최소 버전 {#org.apache.groovy}
+
+최신 JVM 런타임에 대한 지원을 보장하기 위해 org.apache.groovy의 사용을 4.0.22 이상 버전으로 업데이트해야 합니다.
+
+이 번들은 AEM Groovy Console과 같은 서드파티 종속성을 추가함으로써 간접적으로 포함될 수 있습니다.
+
+### 작성 시간 요구 사항
+
+최신 버전의 Java를 사용하여 프로젝트를 작성할 수 있으려면 이러한 조정이 필요하지만 런타임 호환성에는 필요하지 않습니다. Maven 플러그인은 이전 버전의 Java와 호환되므로 언제든지 업데이트할 수 있습니다.
+
+#### bnd-maven-plugin의 최소 버전 {#bnd-maven-plugin}
+
+bnd-maven-plugin 사용을 버전 6.4.0으로 업데이트하여 최신 JVM 실행 시간을 지원합니다. 버전 7 이상은 Java 11 이하와 호환되지 않으므로 현재 해당 버전으로 업그레이드하는 것은 권장되지 않습니다.
+
+#### aemanalyser-maven-plugin의 최소 버전 {#aemanalyser-maven-plugin}
+
+최신 JVM 런타임에 대한 지원을 보장하기 위해 aemanalyser-maven-plugin의 사용을 1.6.6 이상 버전으로 업데이트해야 합니다.
+
+#### maven-bundle-plugin의 최소 버전  {#maven-bundle-plugin}
+
+최신 JVM 런타임에 대한 지원을 보장하기 위해 bundle-maven-plugin의 사용을 5.1.5 이상 버전으로 업데이트해야 합니다.
+
+#### maven-scr-plugin의 종속성 업데이트  {#maven-scr-plugin}
+
+`maven-scr-plugin`은 Java 17 및 21과 직접 호환되지 않습니다. 단, 아래 스니펫과 유사하게 플러그인 구성 내에서 ASM 종속성 버전을 업데이트하여 설명자 파일을 생성할 수 있습니다.
+
+```
+[source,xml]
+ <project>
+   ...
+   <build>
+     ...
+     <plugins>
+       ...
+       <plugin>
+         <groupId>org.apache.felix</groupId>
+         <artifactId>maven-scr-plugin</artifactId>
+         <version>1.26.4</version>
+         <executions>
+           <execution>
+             <id>generate-scr-scrdescriptor</id>
+             <goals>
+               <goal>scr</goal>
+             </goals>
+           </execution>
+         </executions>
+         <dependencies>
+           <dependency>
+             <groupId>org.ow2.asm</groupId>
+             <artifactId>asm-analysis</artifactId>
+             <version>9.7.1</version>
+             <scope>compile</scope>
+           </dependency>
+         </dependencies>
+       </plugin>
+       ...
+     </plugins>
+     ...
+   </build>
+   ...
+ </project>
+```

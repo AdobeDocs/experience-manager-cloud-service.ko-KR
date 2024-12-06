@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7b9b9f3b957b27812c4a7e8f2dbcf96d8786b73e
+source-git-commit: 3bc9ec12de604818f6be1c0717566a5f16c6a7b9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '777'
+ht-degree: 58%
 
 ---
 
@@ -24,8 +24,10 @@ Cloud Manager는 특수 빌드 환경을 사용하여 코드를 빌드하고 테
 * 빌드 환경은 Linux 기반이며 Ubuntu 22.04에서 파생되었습니다.
 * Apache Maven 3.9.4가 설치되어 있습니다.
    * Adobe는 사용자가 [HTTP 대신 HTTPS를 사용하도록 Maven 저장소를 업데이트할 것](#https-maven)을 권장합니다.
-* 설치된 Java 버전은 Oracle JDK 11.0.22, Oracle JDK 17.0.10 및 Oracle JDK 21.0.4입니다.
-* **중요:** 기본적으로 `JAVA_HOME` 환경 변수는 Oracle JDK 8u401을 포함하는 `/usr/lib/jvm/jdk1.8.0_401`(으)로 설정됩니다. ***AEM Cloud Projects에서 JDK 21(기본 설정), 17 또는 11***&#x200B;을 사용하려면 이 기본값을 재정의해야 합니다. 자세한 내용은 [Maven JDK 버전 설정](#alternate-maven-jdk-version) 섹션을 참조하십시오.
+* <!-- OLD --> 설치된 Java 버전은 Oracle JDK 11.0.22 및 Oracle JDK 8u401입니다.
+<!-- NEW but needed to be removed 12/5/24 * The Java versions installed are Oracle JDK 11.0.22, Oracle JDK 17.0.10, and Oracle JDK 21.0.4. -->
+<!-- OLD --> * **중요:** 기본적으로 JAVA_HOME 환경 변수는 Oracle JDK 8u401을 포함하는 `/usr/lib/jvm/jdk1.8.0_401`(으)로 설정됩니다. AEM Cloud Projects에서 JDK 11을 사용하려면 이 기본값을 재정의해야 합니다. 자세한 내용은 Maven JDK 버전 설정 섹션을 참조하십시오.
+<!-- NEW but needed to be removed 12/5/24 * **IMPORTANT:** By default, the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk1.8.0_401`, which contains Oracle JDK 8u401. ***This default should be overridden for AEM Cloud Projects to use JDK 21 (preferred), 17, or 11***. See the [Setting the Maven JDK Version](#alternate-maven-jdk-version) section for more details. -->
 * 필요한 몇 가지 추가 시스템 패키지가 설치되어 있습니다.
    * `bzip2`
    * `unzip`
@@ -52,72 +54,86 @@ Cloud Manager [릴리스 2023.10.0](/help/implementing/cloud-manager/release-not
 
 업데이트된 버전을 원활하게 사용하기 위해 Adobe는 사용자가 HTTP 대신 HTTPS를 사용하도록 Maven 저장소를 업데이트할 것을 권장합니다. 이러한 조정은 업계에서 점점 더 보안 통신 프로토콜로 전환하는 추세에 맞춰 안전하고 안정적인 빌드 프로세스를 유지하는 데 도움이 될 것으로 기대합니다.
 
-### 특정 Java 버전 사용 {#using-java-support}
+<!-- OLD below -->
 
-Cloud Manager 빌드 프로세스는 Oracle 8 JDK를 사용하여 기본적으로 프로젝트를 빌드하지만 AEM Cloud Service 고객은 Maven 실행 JDK 버전을 21(권장), 17 또는 11로 설정해야 합니다.
+### 특정 Java 버전 사용
 
-#### Maven JDK 버전 설정 {#alternate-maven-jdk-version}
+Cloud Manager 빌드 프로세스는 Oracle 8 JDK를 사용하여 기본적으로 프로젝트를 빌드하지만 AEM Cloud Service 고객은 Maven 실행 JDK 버전을 11로 설정해야 합니다.
 
-Adobe은 Maven 실행 JDK 버전을 `.cloudmanager/java-version` 파일에서 `21` 또는 `17`(으)로 설정할 것을 권장합니다.
+<!-- OLD below -->
 
-이렇게 하려면 파이프라인에서 사용하는 Git 저장소 분기에 `.cloudmanager/java-version`(이)라는 파일을 만듭니다. `21` 또는 `17` 텍스트만 포함되도록 파일을 편집합니다. Cloud Manager에서도 `8` 값을 허용하지만 이 버전은 더 이상 AEM Cloud Service 프로젝트에 지원되지 않습니다. 다른 모든 값은 무시됩니다. `21` 또는 `17`을(를) 지정하면 Oracle Java 21 또는 Oracle Java 17이 사용되고 `JAVA_HOME` 환경 변수가 `/usr/lib/jvm/jdk-21` 또는 `/usr/lib/jvm/jdk-17`(으)로 설정됩니다.
+#### Maven JDK 버전 설정
 
-#### Java 21 또는 Java 17을 사용하여 빌드로 마이그레이션하기 위한 사전 요구 사항 {#prereq-for-building}
+Adobe은 전체 Maven 실행에 대한 JDK 버전을 `.cloudmanager/java-version file`의 `11`(으)로 설정할 것을 권장합니다.
 
->[!NOTE]
->
->*응용 프로그램을 새 Java 빌드 버전 및 런타임 버전으로 마이그레이션할 때 프로덕션에 배포하기 전에 개발 및 스테이징 환경에서 철저하게 테스트하십시오.
->특히 [Forms](/help/forms/home.md), [워크플로](/help/sites-cloud/authoring/workflows/overview.md), [받은 편지함](/help/sites-cloud/authoring/inbox.md) 및 [프로젝트](/help/sites-cloud/authoring/projects/overview.md) 기능은 Java 21 런타임으로 아직 공식적으로 확인되지 않았습니다. 응용 프로그램이 이러한 기능을 사용하는 경우 기능을 확인하기 위해 포괄적인 테스트를 확인하십시오.*
+이렇게 하려면 파이프라인에서 사용하는 git 저장소 분기에 `.cloudmanager/java-version`(이)라는 파일을 만듭니다. `11` 텍스트만 포함되도록 파일을 편집합니다. Cloud Manager에서도 `8` 값을 허용하지만 이 버전은 더 이상 AEM Cloud Service 프로젝트에 지원되지 않습니다. 다른 모든 값은 무시됩니다. `11`을(를) 지정하면 Oracle 11이 사용되고 `JAVA_HOME` 환경 변수가 `/usr/lib/jvm/jdk-11.0.22`(으)로 설정됩니다.
 
-##### 일부 번역 기능 {#translation-features}
+<!-- NEW but needed to be removed 12/5/24 ### Use a specific Java version {#using-java-support}
 
-다음 기능은 Java 21 또는 Java 17을 사용하여 빌드할 때 올바르게 작동하지 않을 수 있으며 Adobe은 2025년 초까지 이러한 문제를 해결할 것으로 예상합니다.
+The Cloud Manager build process uses the Oracle 8 JDK to build projects by default, but AEM Cloud Service customers should set the Maven execution JDK version to 21 (preferred), 17, or 11.
 
-* 사람 번역을 사용할 때 `XLIFF`(XML 로컬라이제이션 교환 파일 형식)이(가) 실패합니다.
-* 최신 Java 버전의 Locale 생성자가 변경되어 `I18n`(국제화)에서 언어 로케일 히브리어(`he`), 인도네시아어(`in`) 및 이디시(`yi`)를 제대로 처리하지 못합니다.
+#### Set the Maven JDK version {#alternate-maven-jdk-version}
 
-#### 런타임 요구 사항 {#runtime-requirements}
+Adobe recommends setting the Maven execution JDK version to `21` or `17` in a `.cloudmanager/java-version` file.
 
-Java 21 런타임은 2025년 2월부터 Java 21, Java 17 및 Java 11의 빌드에 사용됩니다. 호환성을 보장하려면 다음 조정이 필요합니다.
+To do so, create a file named `.cloudmanager/java-version` in the Git repository branch used by the pipeline. Edit the file so that it contains only the text, `21` or `17`. While Cloud Manager also accepts a value of `8`, this version is no longer supported for AEM Cloud Service projects. Any other value is ignored. When `21` or `17` is specified, Oracle Java 21 or Oracle Java 17 is used and the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk-21` or `/usr/lib/jvm/jdk-17`.
 
-라이브러리 업데이트는 이전 Java 버전과 호환되는 상태로 유지되므로 언제든지 적용할 수 있습니다.
-
-* **최소 버전 `org.objectweb.asm`:**
-최신 JVM 실행 시간을 지원하려면 `org.objectweb.asm`의 사용을 버전 9.5 이상으로 업데이트하십시오.
-
-* **최소 버전 `org.apache.groovy`:**
-최신 JVM 실행 시간을 지원하려면 `org.apache.groovy`의 사용을 버전 4.0.22 이상으로 업데이트하십시오.
-
-  이 번들은 AEM Groovy Console과 같은 서드파티 종속성을 추가함으로써 간접적으로 포함될 수 있습니다.
-
-* **런타임 매개 변수 편집:**
-Java 21을 사용하여 로컬로 AEM을 실행하는 경우 `MaxPermSize` 매개 변수로 인해 시작 스크립트(`crx-quickstart/bin/start` 또는 `crx-quickstart/bin/start.bat`)가 실패합니다. 해결 방법으로 스크립트에서 `-XX:MaxPermSize=256M`을(를) 제거하거나 환경 변수 `CQ_JVM_OPTS`을(를) 정의하여 `-Xmx1024m -Djava.awt.headless=true`(으)로 설정합니다.
-
-  Adobe은 향후 릴리스에서 이 문제를 해결할 계획입니다.
+#### Prerequisites for migrating to building with Java 21 or Java 17 {#prereq-for-building}
 
 >[!NOTE]
 >
->`.cloudmanager/java-version`을(를) `21` 또는 `17`(으)로 설정하면 Java 21 런타임이 배포됩니다. 2025년 2월 또는 3월에 Java 21 런타임은 Java 11을 사용하여 코드를 빌드하는 경우에도 모든 고객에게 배포할 예정입니다.
+>*When migrating your application to a new Java build version and runtime version, thoroughly test in dev and stage environments before deploying to production.
+>Of special note, the following features have not yet been formally validated with Java 21 runtime: [Forms](/help/forms/home.md), [Workflows](/help/sites-cloud/authoring/workflows/overview.md), [Inbox](/help/sites-cloud/authoring/inbox.md), and [Projects](/help/sites-cloud/authoring/projects/overview.md). If your application relies on these features, ensure comprehensive testing to verify functionality.*
 
-#### 빌드 시간 요구 사항
+##### About some translation features {#translation-features}
 
-Java 21 및 Java 17을 사용하여 프로젝트를 작성할 수 있으려면 다음 조정이 필요합니다. 이전 버전의 Java와 호환되므로 언제든지 업데이트할 수 있습니다.
+The following features might not function correctly when building with Java 21 or Java 17, and Adobe expects to resolve them by early 2025:
 
-* **최소 버전 `bnd-maven-plugin`:**
-최신 JVM 실행 시간을 지원하려면 `bnd-maven-plugin`의 사용을 버전 6.4.0으로 업데이트하십시오.
+* `XLIFF` (XML Localization Interchange File Format) fails when using Human Translation.  
+* `I18n` (Internationalization) does not properly handle language locales Hebrew (`he`), Indonesian (`in`), and Yiddish (`yi`) due to changes in the Locale constructor in newer Java versions.
 
-  버전 7 이상은 Java 11 이하와 호환되지 않으므로 해당 버전으로 업그레이드하는 것은 권장되지 않습니다.
+#### Runtime requirements {#runtime-requirements}
 
-* **최소 버전 `aemanalyser-maven-plugin`:**
-최신 JVM 실행 시간을 지원하려면 `aemanalyser-maven-plugin`의 사용을 버전 1.6.6 이상으로 업데이트하십시오.
+The Java 21 runtime is used for builds on Java 21, Java 17, and Java 11 starting in February 2025. To ensure compatibility, the following adjustments are necessary. 
 
-* **최소 버전 `maven-bundle-plugin`:**
-최신 JVM 실행 시간을 지원하려면 `maven-bundle-plugin`의 사용을 버전 5.1.5 이상으로 업데이트하십시오.
+Library updates can be applied anytime, as they remain compatible with older Java versions.
 
-  버전 6 이상은 Java 11 이하와 호환되지 않으므로 해당 버전으로 업그레이드하는 것은 권장되지 않습니다.
+* **Minimum version of `org.objectweb.asm`:**
+Update the usage of `org.objectweb.asm` to version 9.5 or higher to ensure support for newer JVM runtimes.
 
-* **`maven-scr-plugin`의 종속성 업데이트:**
-`maven-scr-plugin`은(는) Java 21 또는 Java 17과 직접 호환되지 않습니다. 그러나 다음 예와 같이 플러그인 구성에서 ASM 종속성 버전을 업데이트하여 설명자 파일을 생성할 수 있습니다.
+* **Minimum version of `org.apache.groovy`:**
+Update the usage of `org.apache.groovy` to version 4.0.22 or higher to ensure support for newer JVM runtimes.
+
+  This bundle can be indirectly included by adding third party dependencies such as the AEM Groovy Console.
+
+* **Edit a runtime parameter:**
+When running AEM locally with Java 21, the start scripts (`crx-quickstart/bin/start` or `crx-quickstart/bin/start.bat`) fail due to the `MaxPermSize` parameter. As a remedy, either remove `-XX:MaxPermSize=256M` from the script or define the environment variable `CQ_JVM_OPTS`, setting it to `-Xmx1024m -Djava.awt.headless=true`.
+
+  Adobe plans to resolve this issue in a future release.
+
+>[!NOTE]
+>
+>When `.cloudmanager/java-version` is set to `21` or `17`, the Java 21 runtime is deployed. In February or March 2025, the Java 21 runtime is planned for deployment to all customers, even if Java 11 is used to build your code. 
+
+#### Build time requirements
+
+The following adjustments are required to allow building the project with Java 21 and Java 17. They can be updated at any time as they are compatible with older versions of Java.
+
+* **Minimum version of `bnd-maven-plugin`:**
+Update the usage of `bnd-maven-plugin` to version 6.4.0 to ensure support for newer JVM runtimes. 
+
+  Versions 7 or higher are not compatible with Java 11 or lower so an upgrade to that version is not recommended.
+
+* **Minimum version of `aemanalyser-maven-plugin`:**
+Update the usage of `aemanalyser-maven-plugin` to version 1.6.6 or higher to ensure support for newer JVM runtimes.
+
+* **Minimum version of `maven-bundle-plugin`:**
+Update the usage of `maven-bundle-plugin` to version 5.1.5 or higher to ensure support for newer JVM runtimes. 
+
+  Versions 6 or higher are not compatible with Java 11 or lower so an upgrade to that version is not recommended.
+
+* **Update dependencies in `maven-scr-plugin`:**
+The `maven-scr-plugin` is not directly compatible with Java 21 or Java 17. However, descriptor files can be generated by updating the ASM dependency version in the plugin configuration, as shown in the following example:
 
 ```XML
 <project>
@@ -154,6 +170,7 @@ Java 21 및 Java 17을 사용하여 프로젝트를 작성할 수 있으려면 �
   ...
 </project>
 ```
+-->
 
 
 ## 환경 변수 - 표준 {#environment-variables}
