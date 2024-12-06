@@ -4,10 +4,10 @@ description: AEM Assets 및 Dynamic Media이 정적 및 동적 이미지 렌디�
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: a3a6456dec178c36c9fe8acfb6f98915fc86e490
+source-git-commit: eb5886b5ed6a6f5b52303b4fccf5c266178b36f8
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,12 +25,22 @@ Dynamic Media 이미지 사전 설정 및 스마트 자르기 렌디션은 브�
 ## 정적 표현물 {#static-renditions}
 
 정적 렌디션은 디지털 에셋의 사전 생성된 버전으로, 일반적으로 에셋 수집 또는 수정 중에 만들어집니다. 이러한 렌디션은 웹 썸네일, 응답형 디자인을 위한 모바일 친화적 형식 또는 인쇄용 고해상도 버전과 같은 특정 목적 및 플랫폼에 최적화되어 효율적이고 일관된 경험을 보장합니다.
-[!DNL Experience Manager Assets]에서 [정적 표현물을 보고 다운로드하는 방법](#view-dynamic-renditions)을 알아보세요.
+Experience Manager Assets에서 [정적 표현물을 보고 다운로드](#view-and-download-static-renditions)하는 방법을 알아봅니다.
+
+### 정적 렌디션 보기 및 다운로드{#view-and-download-static-renditions}
+
+에셋 표현물을 보고 다운로드하려면 다음 단계를 따르십시오.
+
+1. Assets 보기에서 **Assets**&#x200B;을 클릭하고 폴더로 이동하여 자산을 선택하고 **세부 정보**&#x200B;를 클릭합니다.
+1. 오른쪽 창에서 사용할 수 있는 렌디션의 아이콘을 클릭합니다.
+1. 미리 볼 렌디션을 선택하고 ![다운로드 아이콘](/help/assets/assets/download-icon.svg)을 클릭하여 다운로드합니다.
+
+   ![동적 렌디션 보기 및 다운로드](/help/assets/assets/view-download-static-rendition.png)
 
 ## 동적 변환 {#dynamic-renditions}
 
 동적 변환은 장치 해상도에 따라 이미지 크기를 조정하거나 다양한 종횡비에 맞게 자르는 것과 같이 특정 요구 사항을 충족하도록 실시간으로 만들어진 자산의 사용자 지정 버전입니다.
-이러한 렌디션을 통해 조직은 다양한 대상 요구 사항에 개인화되고 최적화된 경험을 전달할 수 있습니다. [!DNL Experience Manager Assets]에서 동적 변환을 보고 다운로드할 수 있습니다.
+이러한 렌디션을 통해 조직은 다양한 대상 요구 사항에 개인화되고 최적화된 경험을 전달할 수 있습니다. Experience Manager Assets에서 동적 변환을 보고 다운로드할 수 있습니다.
 
 ## Dynamic Media 렌디션 {#dynamic-media-renditions}
 
@@ -57,7 +67,7 @@ Experience Manager Assets에서 이미지의 동적 변환을 보거나 다운�
 
 1. 오른쪽 메뉴에서 **[!UICONTROL Dynamic Media]** 아이콘을 클릭합니다. **[!UICONTROL Dynamic Media]** 패널에 Dynamic Media 및 스마트 자르기 렌디션이 표시됩니다.
 
-   ![동적 변환](/help/assets/assets/dm-scene7-renditions.png)
+   ![동적 렌디션](/help/assets/assets/dm-scene7-renditions.png)
    <!-- ![dynamic renditions](assets/preset_smart_crop_view.png) -->
 
 1. 미리 볼 렌디션을 선택하고 **URL 복사**&#x200B;를 클릭하여 선택한 렌디션의 URL을 복사합니다. 이미지 에셋 렌디션을 다운로드하려면 **렌디션 다운로드**&#x200B;를 클릭하십시오.

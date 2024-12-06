@@ -3,10 +3,10 @@ title: Content Hub에서 에셋 다운로드
 description: Content Hub 포털에서 에셋을 다운로드하는 방법을 알아봅니다
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 28424cb184d0378669498c78e571961227f6539a
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,52 +24,81 @@ ht-degree: 3%
 >
 >[!BADGE Content Hub 안내서 PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
-Content Hub을 사용하여 에셋을 다운로드하고 공유할 수 있습니다. 이러한 에셋에는 이미지, 비디오 또는 기타 디지털 콘텐츠가 포함될 수 있습니다. Content Hub은 효과적인 에셋 배포를 위해 접근성과 적응성을 향상합니다.
+Content Hub을 사용하여 에셋을 다운로드하고 공유할 수 있습니다. Content Hub 사용자 인터페이스에는 승인된 에셋만 표시됩니다. 이러한 에셋에는 이미지, 비디오 또는 기타 디지털 콘텐츠가 포함될 수 있습니다. Content Hub은 효과적인 에셋 배포를 위해 접근성과 적응성을 향상합니다.
 
-Content Hub을 사용하여 단일 에셋 또는 여러 에셋을 다운로드할 수 있습니다. 에셋의 원본 버전이 다운로드됩니다.
+Content Hub을 사용하여 하나 또는 여러 에셋과 사용 가능한 렌디션을 다운로드할 수 있습니다.
 
-## 라이센스가 부여된 단일 자산 다운로드 {#single-download-asset}
+## 에셋 및 해당 렌디션 다운로드 {#download-asset-renditions}
 
-자산을 선택하고 상단 레일에서 ![다운로드](/help/assets/assets/download-icon.svg)를 클릭합니다. 에셋 다운로드 대화 상자에 에셋의 라이센스가 표시됩니다. 라이선스 사용 약관에 동의하고 **다운로드**를 클릭합니다.
-또는 에셋 카드에서 ![다운로드](/help/assets/assets/download-icon.svg)를 클릭하여 에셋을 다운로드합니다.
+에셋 및 해당 렌디션을 다운로드하려면 다음 단계를 실행합니다.
 
-### 에셋에서 단일 라이선스 에셋 다운로드 대화 상자 {#single-download-from-asset-dialog-box}
+1. 속성을 보려면 자산을 클릭합니다.
 
-1. 에셋 썸네일을 클릭합니다. 에셋 대화 상자가 표시됩니다.
-1. 맨 오른쪽 도구 모음에서 ![다운로드](/help/assets/assets/download-icon.svg)를 클릭합니다. 다운로드 창에는 에셋 렌디션과 라이선스 사용 약관 수락 확인란이 표시됩니다.
-   ![단일 다운로드 대화 상자](/help/assets/assets/asset-dialog-box-for-single-download.png)
-   * 사용 약관 링크를 클릭하여 왼쪽 창에서 사용 약관을 확인합니다.
+1. 다운로드 프로세스를 시작하려면 ![다운로드](/help/assets/assets/download-icon.svg)를 클릭하십시오. 다운로드 패널에 사용 가능한 모든 에셋 렌디션(원본 렌디션 + 기타 렌디션)이 나열됩니다.
+
+   >[!NOTE]
+   >
+   변환은 [구성](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) 사용자 인터페이스를 사용하여 가시성을 사용할 수 있는 경우에만 표시됩니다.
+
+1. 렌디션을 선택하고 **[!UICONTROL 다운로드]**&#x200B;를 클릭합니다.
+
+   ![단일 에셋 렌디션 다운로드](/help/assets/assets/download-single-asset-renditions.png)
+
+
+사용 허가된 자산을 다운로드하는 경우 **[!UICONTROL 위에 언급된 약관을 읽고 동의함]**&#x200B;을 선택한 다음 **[!UICONTROL 다운로드]**&#x200B;를 클릭하세요. **[!UICONTROL 약관]**&#x200B;을 클릭하여 자산 라이선스를 볼 수도 있습니다. Assets as a Cloud Service 제작 환경을 사용하여 에셋이 승인된 경우에만 라이선스 미리보기가 표시됩니다. 자세한 내용은 [Content Hub의 사용 허가된 자산 관리](/help/assets/manage-licensed-assets-on-content-hub.md)를 참조하십시오.
+
+## 여러 에셋 및 해당 렌디션 다운로드 {#download-multiple-assets-renditions}
+
+여러 에셋 및 해당 표현물을 다운로드하려면 다음 단계를 수행하십시오.
+
+1. 자산을 선택하고 ![다운로드](/help/assets/assets/download-icon.svg) **[!UICONTROL 다운로드]**&#x200B;를 클릭합니다. [!UICONTROL 에셋 다운로드] 화면에 선택한 에셋을 모두 나열하는 화면이 표시됩니다.
+1. 다운로드를 시작하려면 **[!UICONTROL 다운로드]**&#x200B;를 클릭하여 다양한 다운로드 옵션 중에서 선택하십시오.
+
+   * **[!UICONTROL 원본 다운로드]**: 선택한 자산을 원본 양식으로 다운로드하려면 이 옵션을 선택하십시오.
+   * **[!UICONTROL 렌디션만 다운로드]**: 원본 에셋을 제외한 에셋의 사용 가능한 모든 렌디션을 다운로드하려면 이 옵션을 선택하십시오.
+   * **[!UICONTROL 원본 및 모든 렌디션 다운로드]**: 선택한 에셋의 원본 및 렌디션을 모두 다운로드하려면 이 옵션을 선택하십시오.
+
+     ![여러 렌디션 다운로드](/help/assets/assets/download-multiple-renditions.png)
 
      >[!NOTE]
      >
-     사용 약관 확인란은 사용 허가된 자산에 대해서만 표시됩니다. 또한 에셋 대화 상자에는 승인된 라이센스가 있는 에셋에 대해서만 라이센스 약관 미리보기가 표시됩니다. 자산 대화 상자에서 라이선스 조건을 미리 보려면 다운로드하기 전에 [자산 라이선스를 승인](/help/assets/approve-assets-content-hub.md)하십시오.
+     변환은 [구성](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) 사용자 인터페이스를 사용하여 가시성을 사용할 수 있는 경우에만 표시됩니다.
 
-   * 왼쪽 창에서 원본 에셋 렌디션으로 돌아가려면 **원본 렌디션 상자**&#x200B;를 클릭하십시오.
-1. 라이선스 사용 약관에 동의하고 **다운로드**&#x200B;를 클릭하여 자산을 다운로드합니다.
+   선택한 자산 중 라이센스가 부여된 자산이 있는 경우 왼쪽 창에서 자산의 라이센스를 클릭하여 미리 보기를 확인합니다. 그러면 **[!UICONTROL 위에서 언급한 약관을 읽고 수락했습니다]**. **[!UICONTROL 다운로드]**&#x200B;를 클릭할 수 있습니다. Assets as a Cloud Service 제작 환경을 사용하여 에셋이 승인된 경우에만 라이선스 미리보기가 표시됩니다. 자세한 내용은 [Content Hub의 사용 허가된 자산 관리](/help/assets/manage-licensed-assets-on-content-hub.md)를 참조하십시오.
 
-## 여러 라이선스가 있는 Assets 다운로드{#multi-download}
-
-1. 자산을 선택하고 상단 레일에서 ![다운로드](/help/assets/assets/download-icon.svg)를 클릭합니다. 표시되는 대화 상자는 다운로드 목록에 만료된 에셋이 포함되어 있는지 아니면 만료되지 않은 에셋만 포함되어 있는지에 따라 다릅니다. <br/>
-   **만료된 에셋 다운로드 대화 상자:** 이 대화 상자에는 만료된 에셋의 미리 보기가 왼쪽 창에 만료 날짜와 함께 표시됩니다. 선택한 전체 중 만료된 에셋의 카운트가 오른쪽 창에 표시됩니다. 다른 에셋과 함께 만료된 에셋을 다운로드하려면 **모든 에셋으로 진행**&#x200B;을 클릭합니다(있는 경우). 에셋 다운로드 대화 상자가 표시됩니다. 계속 진행하려면 [자산 다운로드 대화 상자](#Download-asset-dialog-box)를 참조하세요.
-
-   >[!NOTE]
-   >
-   [만료된 에셋에 대한 다운로드 옵션을 사용하도록 설정](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub)합니다. 다운로드를 활성화한 만료된 에셋만 다운로드할 수 있습니다.
-
-   <a id="Download-asset-dialog-box"></a> **에셋 다운로드 대화 상자:** 이 대화 상자는 왼쪽 창에 선택한 에셋과 관련된 라이선스 목록을 표시합니다. 라이선스를 선택하여 해당 약관(pdf 형식)을 가운데 창에서 미리 보고 관련 에셋의 미리 보기 및 개수를 오른쪽 창에서 미리 봅니다. 검토된 라이센스는 연한 파란색으로 강조 표시됩니다.
-
-   >[!NOTE]
-   >
-   **자산 다운로드 대화 상자**&#x200B;에서는 승인된 라이선스에 대한 라이선스 사용 약관만 미리 봅니다. [에셋의 라이선스를 승인](/help/assets/approve-assets-content-hub.md)한 후 다운로드하면 **에셋 다운로드 대화 상자**&#x200B;에서 라이선스 조건을 미리 볼 수 있습니다.
-
-1. 다운로드 대화 상자에서 라이선스를 제거하려면 ![remove-icon](/help/assets/assets/remove-icon.svg)을 클릭하세요.
-
-1. 사용 약관에 동의한 다음 **다운로드**를 클릭하여 왼쪽 창에서 사용 가능한 라이선스와 연결된 에셋을 다운로드합니다.
    ![다운로드-다중-라이선스](/help/assets/assets/download-multiple-license.png)
 
-### 라이선스가 없는 Assets 다운로드 {#download-non-licensed-assets}
+<!--1. On the Content Hub homepage, select the asset and click **Download**. The **Download assets** dialog box displays a license or list of licenses associated with the selected assets in the left pane. 
+1. Click a license in the left pane to see its PDF in the middle pane and the associated assets with it in the right pane. The license PDF preview is displayed only if the license is approved in your Assets as a Cloud Service environment. [Approve the license PDFs](/help/assets/approve-assets-content-hub.md) of the selected assets to see their previews.
+1. Optional: Click ![remove-icon](/help/assets/assets/remove-icon.svg) to remove a license from the dialog box.
+1. Select **I have read and accept all the terms and conditions mentioned above.** 
+1. Click **Download** to download the selected assets.-->
 
-라이선스가 없는 에셋을 다운로드하려면 에셋을 선택하고 상단 레일에서 ![다운로드](/help/assets/assets/download-icon.svg)를 클릭합니다.
+<!---This dialog box displays the list of licenses associated with the selected assets in the left pane. Select a license to preview its terms and conditions (in pdf format) in the middle pane and the preview of the associated assets to the license in the right. Reviewed licenses are highlighted in light blue.
+
+
+The dialog box that displays depends on whether the download list includes expired assets or only non-expired assets. <br/>
+**Download expired assets dialog box:** This dialog box displays the expired assets' preview along with their expiry date in the left pane. The expired assets' count out of total selected displays in the right pane. Click **Proceed with all assets** to download expired assets with other assets (if present). The Download assets dialog box displays. See the [Download assets dialog box](#Download-asset-dialog-box) to proceed further.
+    
+    >[!NOTE]
+    >
+    >[Enable the download option for expired assets](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub) to download them. Only expired assets that have enabled downloading are available for download.
+
+   <a id="Download-asset-dialog-box"></a> **Download assets dialog box:** This dialog box displays the list of licenses associated with the selected assets in the left pane. Select a license to preview its terms and conditions (in pdf format) in the middle pane and the associated assets' preview and their count in the right pane. Reviewed licenses are highlighted in light blue.
+
+    >[!NOTE]
+    >
+    > The **Download Asset dialog box** previews licensing terms and conditions only for approved licenses. [Approve the assets' licenses](/help/assets/approve-assets-content-hub.md) before downloading them to preview their licensing terms in the **Download Asset dialog box**.
+
+1. Click  ![remove-icon](/help/assets/assets/remove-icon.svg) to remove a license from the download dialog box. 
+
+1. Accept the terms and conditions and then click **Download** to download assets associated with the available licenses in the left pane.-->
+<!--![download-multiple-license](/help/assets/assets/download-multiple-license.png)-->
+
+<!---
+### Download non-licensed Assets {#download-non-licensed-assets}
+
+ To download non-licensed assets, select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail.-->
 
 
 
