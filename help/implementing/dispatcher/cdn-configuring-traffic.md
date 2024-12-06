@@ -4,9 +4,9 @@ description: 구성 파일에서 규칙 및 필터를 선언하고 Cloud Manager
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: e5e0606c83f144f92f9ae57e5380a30389e8df1b
+source-git-commit: 4e65a0fb32273548860731c09e27cb58fab93ab4
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1377'
 ht-degree: 1%
 
 ---
@@ -241,7 +241,7 @@ data:
 
 ## 응답 변환 {#response-transformations}
 
-응답 변환 규칙을 사용하면 CDN의 발신 응답에 대한 헤더를 설정하고 설정이 해제될 수 있습니다. 또한 요청 변환 규칙에 이전에 설정된 변수를 참조하려면 위의 예를 참조하십시오.
+응답 변환 규칙을 사용하면 CDN의 발신 응답에 대한 헤더를 설정하고 설정이 해제될 수 있습니다. 또한 요청 변환 규칙에 이전에 설정된 변수를 참조하려면 위의 예를 참조하십시오. 응답의 상태 코드를 설정할 수도 있습니다.
 
 구성 예:
 
@@ -282,6 +282,15 @@ data:
           - type: set
             respHeader: x-resp-header-2
             value: value-set-by-resp-rule-2
+      # Example: setting status code
+      - name: status-code-rule
+        when:
+          reqProperty: path
+          like: status-code
+        actions:
+          - type: set
+            respProperty: status
+            value: '410'        
 ```
 
 **작업**
@@ -291,6 +300,7 @@ data:
 | 이름 | 속성 | 의미 |
 |-----------|--------------------------|-------------|
 | **설정** | reqHeader, 값 | 지정된 헤더를 응답의 특정 값으로 설정합니다. |
+|          | respProperty, 값 | 응답 속성을 설정합니다. 상태 코드를 설정하기 위해 속성 &quot;status&quot;만 지원합니다. |
 | **설정 해제** | respHeader | 응답에서 지정된 헤더를 제거합니다. |
 
 ## 원본 선택기 {#origin-selectors}
