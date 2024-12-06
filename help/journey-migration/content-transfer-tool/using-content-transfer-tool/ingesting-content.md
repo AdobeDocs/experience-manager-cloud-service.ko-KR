@@ -4,9 +4,9 @@ description: Cloud Acceleration Manager을 사용하여 마이그레이션 세�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 114b7e795df6267d76d1bd923a7dff8826c67029
+source-git-commit: 550d84f43cba472d74c7be6323bd69ba808c96f8
 workflow-type: tm+mt
-source-wordcount: '3296'
+source-wordcount: '3322'
 ht-degree: 11%
 
 ---
@@ -64,8 +64,9 @@ Cloud Acceleration Manager을 사용하여 마이그레이션 세트를 수집�
    >[!IMPORTANT]
    > 대상 Cloud Service 작성자 서비스의 로컬 **AEM 관리자** 그룹에 속해 있는 경우에만 대상 환경에 대한 수집을 시작할 수 있습니다. 수집을 시작할 수 없는 경우 자세한 내용은 [수집을 시작할 수 없음](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion)을 참조하십시오.
 
-1. 수집 선택 사항을 선택하면 예상 기간이 표시됩니다. 이는 유사한 수집의 내역 데이터를 기반으로 한 최적 예상 작업입니다.
+1. 수집 선택 사항이 선택되면 예상 지속 시간이 표시될 수 있습니다. 이는 유사한 수집의 내역 데이터를 기반으로 한 최적 예상 작업입니다.
 
+   * 이 예상 값은 **지우지 않음** 수집에 대해 계산되거나 표시되지 않습니다. CAM은 이 경우 대상 시스템에 있는 콘텐츠의 양을 알 수 없기 때문입니다.
    * 이 추정치는 추출의 &#39;Check Size&#39; 값이 수집되고 사용 가능한 경우에만 계산되어 표시됩니다.
    * 이 값은 예상치이며, 지능적으로 계산되지만 정확하게 간주해서는 안 됩니다. 다양한 요인들이 실제 기간을 변화시킬 수 있다.
    * 수집이 실행되는 동안 이 값은 수집의 &quot;**기간 보기**&quot; 작업을 통해 액세스하는 기간 대화 상자에서도 사용할 수 있습니다.
