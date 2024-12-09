@@ -5,16 +5,16 @@ feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 2aae8c63358680758e4f5324f38dea1bc2c47155
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '300'
-ht-degree: 16%
+ht-degree: 100%
 
 ---
 
 
 # 범용 편집기 2024.12.02 릴리스 정보 {#release-notes}
 
-다음은 범용 편집기의 2024년 12월 2일 릴리스 정보입니다.
+다음은 범용 편집기 2024년 12월 2일 릴리스에 대한 릴리스 정보입니다.
 
 >[!TIP]
 >
@@ -22,18 +22,18 @@ ht-degree: 16%
 
 ## 새로운 기능 {#what-is-new}
 
-* **콘텐츠 트리의 키보드 탐색**: [측면 패널에서 사용할 수 있는 콘텐츠 트리,](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)는 이제 키보드를 통해 액세스할 수 있습니다.
-   * 작성자는 접근성을 위해 [WCAG 2.1 지침](/help/sites-cloud/authoring/page-editor/accessible-content.md)을 준수하여 표준 키보드 컨트롤을 사용하여 트리 보기 항목을 탐색하고 상호 작용할 수 있습니다.
-   * 이러한 향상된 기능은 트리 내의 모든 대화형 요소가 키보드에서 작동 가능하므로 키보드 탐색에 의존하는 사용자의 포괄성이 향상됩니다.
-* **편집 가능 요소 선택 해제**: 이제 작성자는 페이지에서 이전에 선택한 편집 가능 요소를 선택 해제할 수 있습니다.
-   * 따라서 작성자가 활성 선택 테두리 없이 페이지를 보려고 할 때 주의해야 할 사항이 없습니다.
-* **조각 선택기**: AEM as a Cloud Service 인스턴스에서 조각 참조는 이제 조각 선택기를 콘텐츠 선택기로 열어 허용된 콘텐츠 조각 모델 준수, 콘텐츠 조각 검색 및 개선된 전체 경험과 같은 향상된 기능을 제공합니다.
-   * 다른 Adobe UI와 일치하고 일관성을 향상시킵니다.
-   * [AEM 6.5 환경의 경우](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) 기존 콘텐츠 선택기가 사용 중입니다.
-* **컨테이너 설명**: [콘텐츠를 참조하기 위해 [속성 패널](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel-properties-rail)에서 사용되는 컨테이너 구성 요소](/help/implementing/universal-editor/field-types.md#container)에서 이제 컨테이너 필드 위에 표시되는 설명 특성을 지원합니다.
-   * 이렇게 하면 작성자가 편집하고 있는 그룹화된 필드에 대한 컨텍스트를 제공하여 명확성을 높일 수 있습니다.
+* **콘텐츠 트리의 키보드 탐색**: 이제 키보드를 통해 사이드 패널에서 제공되는 [콘텐츠 트리](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)에 완전히 접근할 수 있습니다.
+   * 작성자는 표준 키보드 컨트롤을 사용하여 트리 보기 항목을 탐색하고 상호 작용할 수 있으며, [WCAG 2.1 지침](/help/sites-cloud/authoring/page-editor/accessible-content.md)의 접근성 기준을 준수합니다.
+   * 이러한 개선을 통해 트리 내의 모든 대화형 요소를 키보드로 조작할 수 있게 되어 키보드 탐색에 의존하는 사용자에게 더 나은 포용성을 제공합니다.
+* **편집 가능한 요소 선택 해제**: 이제 작성자는 페이지에서 이전에 선택한 편집 가능한 요소의 선택을 해제할 수 있습니다.
+   * 이렇게 하면 작성자가 활성 선택 테두리 없이 페이지를 보고자 할 때 방해가 되는 요소를 제거할 수 있습니다.
+* **조각 선택기**: AEM as a Cloud Service 인스턴스에서 이제 조각 참조를 통해 콘텐츠 선택기로서 조각 선택기를 열 수 있습니다. 이를 통해 허용된 콘텐츠 조각 모델을 준수하고, 콘텐츠 조각을 검색할 수 있으며, 전반적으로 개선된 사용자 경험을 제공합니다.
+   * 이는 다른 Adobe UI와의 일관성을 강화합니다.
+   * [AEM 6.5 환경](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)에서는 기존 콘텐츠 선택기가 계속 사용됩니다.
+* **컨테이너 설명**: [속성 패널](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel-properties-rail)에서 콘텐츠를 참조하는 데 사용되는 [컨테이너 구성 요소](/help/implementing/universal-editor/field-types.md#container)는 이제 컨테이너 필드 위에 표시되는 설명 속성을 지원합니다.
+   * 이 추가 기능은 작성자가 편집 중인 그룹화된 필드에 대한 맥락을 제공하여 명확성을 높여줍니다.
 
 ## 기타 개선 사항 {#other-improvements}
 
-* **서식 있는 텍스트 필드 동기화**: 속성 패널의 서식 있는 텍스트 필드 내에서 원시 콘텐츠와 렌더링된 콘텐츠의 동기화를 개선하여 서식 있는 텍스트 콘텐츠와 렌더링된 표현이 다를 수 있는 Edge Delivery Services 프로젝트 내의 문제를 해결했습니다.
-* **편집 모드 이벤트**: 이제 유니버설 편집기에서 원격 앱을 다시 로드한 후를 포함하여 편집 모드 이벤트를 안정적으로 내보냅니다.
+* **리치 텍스트 필드 동기화**: 속성 패널 내 서식 있는 텍스트 필드에서 원시 콘텐츠와 렌더링된 콘텐츠의 동기화가 개선되었습니다. 이를 통해 Edge Delivery Services 프로젝트에서 서식 있는 텍스트 콘텐츠와 렌더링된 표현 간의 불일치 문제가 해결되었습니다.
+* **편집 모드 이벤트**: 범용 편집기는 이제 원격 앱을 다시 로드한 후에도 편집 모드 이벤트를 안정적으로 내보냅니다.
