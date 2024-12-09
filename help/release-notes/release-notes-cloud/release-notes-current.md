@@ -72,7 +72,7 @@ Dynamic Media 계정에서 AI 생성 캡션 지원에 얼리 액세스하려면 
 
 **Dynamic Media 게재 보고서**
 
-자산 수준 게재 카운트, 리퍼러 정보, AEM Assets의 자산 경로 및 고유 자산 ID와 함께 Dynamic Media를 통해 게재된 자산에 대한 게재 인사이트를 확인할 수 있습니다. Dynamic Media를 통해 게재된 AEM Assets 저장소의 모든 자산 또는 AEM Assets 내 특정 폴더 계층 구조의 모든 자산에 대한 보고서를 생성할 수 있습니다. 인사이트는 게재된 자산의 ROI를 측정하고, 채널 성과를 측정하고, 자산에 대해 정보에 입각한 자산 관리 작업을 수행하는 데 도움이 됩니다.
+자산 수준 게재 카운트, 레퍼러 정보, AEM Assets의 자산 경로 및 고유 자산 ID와 함께 Dynamic Media를 통해 게재된 자산에 대한 게재 인사이트를 확인할 수 있습니다. Dynamic Media를 통해 게재된 AEM Assets 저장소의 모든 자산 또는 AEM Assets 내 특정 폴더 계층 구조의 모든 자산에 대한 보고서를 생성할 수 있습니다. 인사이트는 게재된 자산의 ROI를 측정하고, 채널 성과를 측정하고, 자산에 대해 정보에 입각한 자산 관리 작업을 수행하는 데 도움이 됩니다.
 
 Dynamic Media 계정에서 Dynamic Media 게재 보고서에 얼리 액세스하려면 [Adobe 고객 지원 사례를 작성하고 제출](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)하십시오.
 
@@ -165,9 +165,9 @@ intuitive and improving the mobile form-filling experience.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### 트리 복제 성능 개선(게시 콘텐츠 트리 워크플로 사용 중단) {#tree-replication-performance}
+### 트리 복제 성능 개선 (게시 콘텐츠 트리 워크플로 사용 중단) {#tree-replication-performance}
 
-[트리 활성화 워크플로 단계](/help/operations/replication.md#tree-activation)는 심층적인 콘텐츠 계층 구조를 복제하는 데 권장되는 새로운 워크플로 모델 단계입니다. 주목할 점은 진행 중인 트리 복제 워크플로와 독립적인 복제(예: 빠른 게시 또는 게시 관리를 통한 복제)를 동시에 진행할 수 있다는 것입니다. 이는 대량 복제가 진행되는 도중 긴급한 콘텐츠를 게시해야 하는 경우에 특히 유용합니다. 트리 복제 단계는 이제 더이상 사용되지 않는 콘텐츠 트리 게시 워크플로 및 관련 워크플로 단계를 대체합니다.
+[트리 활성화 워크플로 단계](/help/operations/replication.md#tree-activation)는 심층적인 콘텐츠 계층 구조를 복제하는 데 권장되는 새로운 워크플로 모델 단계입니다. 주목할 점은 진행 중인 트리 복제 워크플로와 독립적인 복제(예: 빠른 게시 또는 게시 관리를 통한 복제)를 동시에 진행할 수 있다는 것입니다. 이는 대량 복제가 진행되는 도중 긴급한 콘텐츠를 게시해야 하는 경우에 특히 유용합니다. 트리 복제 단계는 이제 더 이상 사용되지 않는 콘텐츠 트리 게시 워크플로 및 관련 워크플로 단계를 대체합니다.
 
 ### OpenAPI 기반 API - 얼리 어답터 프로그램 {#open-apis-earlyadopter}
 
@@ -181,11 +181,11 @@ intuitive and improving the mobile form-filling experience.
 * [Sites 및 Assets 폴더 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
 * [Forms 커뮤니케이션 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
-### 엣지 컴퓨팅 - 피드백 요청 {#edge-computing-feedback}
+### 에지 컴퓨팅 - 피드백 요청 {#edge-computing-feedback}
 
-엣지 컴퓨팅은 데이터 처리를 브라우저에 더 가까운 위치에서 수행하여, 지연 시간 감소와 같은 이점을 제공합니다. 로드맵에 반영하기 위한 목적으로, 이 기술이 AEM 게시 게재 및 Edge Delivery Services 프로젝트에 유용할 것이라고 생각하는지, 이를 어떻게 활용할 계획인지에 대한 귀하의 의견을 듣고 싶습니다. 질문과 의견을 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)에 이메일로 보내 주십시오.
+에지 컴퓨팅은 데이터 처리를 브라우저에 더 가까운 위치에서 수행하여, 지연 시간 감소와 같은 이점을 제공합니다. 로드맵에 반영하기 위한 목적으로, 이 기술이 AEM 게시 게재 및 Edge Delivery Services 프로젝트에 유용할 것이라고 생각하는지, 이를 어떻게 활용할 계획인지에 대한 귀하의 의견을 듣고 싶습니다. 질문과 의견을 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)에 이메일로 보내 주십시오.
 
-### 새로운 AEM Developer Console(공개 Beta) {#aem-developer-console-beta}
+### 새로운 AEM Developer Console (공개 Beta) {#aem-developer-console-beta}
 
 클라우드 환경에서 코드 디버깅을 위한 보다 인터랙티브한 경험을 제공하는 개선된 [AEM Developer Console](/help/implementing/developing/introduction/aem-developer-console.md)을 사용해 보십시오.
 

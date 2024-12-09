@@ -1,17 +1,17 @@
 ---
-title: 더이상 사용되지 않고 제거된 기능
-description: ' [!DNL Adobe Experience Manager]  [!DNL Cloud Service]에서 더이상 사용되지 않고 제거된 기능에 관련된 릴리스 정보입니다.'
+title: 더 이상 사용되지 않고 제거된 기능
+description: ' [!DNL Adobe Experience Manager]  [!DNL Cloud Service]에서 더 이상 사용되지 않고 제거된 기능에 관련된 릴리스 정보입니다.'
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: 33dd48cc6484675ca54cfba19f741d23ee4f5ff1
 workflow-type: tm+mt
 source-wordcount: '2768'
-ht-degree: 78%
+ht-degree: 82%
 
 ---
 
-# 더이상 사용되지 않고 제거된 기능 및 API {#deprecated-and-removed-features-apis}
+# 더 이상 사용되지 않고 제거된 기능 및 API {#deprecated-and-removed-features-apis}
 
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
@@ -22,14 +22,14 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 
 [!DNL Experience Manager] 기능의 제거/대체가 임박했음을 알리기 위해 다음 규칙이 적용됩니다.
 
-1. 사용 중지 공지가 먼저 표시됩니다. 더이상 사용되지 않는 기능은 계속 사용할 수 있지만 추가로 개선되지 않습니다.
+1. 사용 중지 공지가 먼저 표시됩니다. 더 이상 사용되지 않는 기능은 계속 사용할 수 있지만 추가로 개선되지 않습니다.
 1. 이제 사용되지 않는다고 발표된 기능은 이른 시일 내에 후속 주 릴리스에서 제거됩니다. 제거할 실제 목표 날짜는 발표됩니다.
 
-이 프로세스에서 고객에게 하나 이상의 릴리스 주기를 제공하여, 실제 제거 전에 더이상 사용되지 않는 기능의 새 버전이나 후속 버전에 대한 구현을 채택할 수 있도록 합니다.
+이 프로세스에서 고객에게 하나 이상의 릴리스 주기를 제공하여, 실제 제거 전에 더 이상 사용되지 않는 기능의 새 버전이나 후속 버전에 대한 구현을 채택할 수 있도록 합니다.
 
-## 더이상 사용되지 않는 기능 {#deprecated-features}
+## 더 이상 사용되지 않는 기능 {#deprecated-features}
 
-이 섹션에는 [!DNL Experience Manager] as a [!DNL Cloud Service]에서 더이상 사용되지 않는다고 표시된 기능이 나열됩니다. 일반적으로 향후 릴리스에서 제거될 기능은 먼저 사용 중지로 설정되고 대체 기능이 제공됩니다.
+이 섹션에는 [!DNL Experience Manager] as a [!DNL Cloud Service]에서 더 이상 사용되지 않는다고 표시된 기능이 나열됩니다. 일반적으로 향후 릴리스에서 제거될 기능은 먼저 사용 중지로 설정되고 대체 기능이 제공됩니다.
 
 현재 배포에서 해당 기능을 사용 중인지 검토하고 이들 구현을 변경하여 제공되는 대체 기능을 사용하도록 계획을 세우는 것이 좋습니다.
 
@@ -56,11 +56,11 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 | ------------ | ------------------ | ----------- | ------------------- |
 | 사용자 인터페이스 | 클래식 UI는 제품 사용자 인터페이스에서 제거됩니다. 링크 검사기, 버전 제거 및 일부 클라우드 서비스 구성과 같은 일부 선택 기능에서 몇 가지 클래식 UI 대화 상자를 사용할 수 있습니다. 예정된 [제품 업데이트](/help/release-notes/home.md) 이후에는 클래식 UI를 사용할 수 없습니다. | 표준 UI | 제거됨 |
 | [!DNL Dynamic Media] | [!DNL Experience Manager] as a [!DNL Cloud Service]에서 [Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/integration/scene7#integration)과 [Dynamic Media 하이브리드 모드](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dynamic#dynamic)와의 이전 통합을 사용할 수 없습니다. | [!DNL Experience Manager] as a [!DNL Cloud Service]에 제공되는 [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)를 사용하십시오. | 제거됨 |
-| [!DNL Sites] | 포털 디렉터 및 포틀릿 구성 요소 | 이들 기능은 [!DNL Experience Manager] 6.4에서 더이상 사용되지 않으며 이제 [!DNL Experience Manager]에서 제거되었습니다. | 제거됨 |
+| [!DNL Sites] | 포털 디렉터 및 포틀릿 구성 요소 | 이들 기능은 [!DNL Experience Manager] 6.4에서 더 이상 사용되지 않으며 이제 [!DNL Experience Manager]에서 제거되었습니다. | 제거됨 |
 | [!DNL Sites] | 디자인 가져오기 | 런타임 시 [!DNL Experience Manager] 저장소의 변경 불가능한 섹션을 사용할 수 없으므로 이 기능은 제거되었습니다. | 제거됨 |
 | [!DNL Assets] | Assets 핵심 서비스 및 Creative Cloud 서비스와 [!DNL Assets] 공유를 사용할 수 없습니다. | [!DNL Adobe Creative Cloud]와의 통합을 위해 [Adobe Asset Link](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)를 사용하십시오. | 제거됨 |
-| [!DNL Foundation] | Apache Sling 데이터 소스 지원(OSGi 번들 org.apache.sling.datasource) | 해당 사항 없음 | 제거됨 |
-| [!DNL Foundation] | JST 스크립팅 템플릿 지원(OSGi 번들 org.apache.sling.scripting.jst) | 해당 사항 없음 | 제거됨 |
+| [!DNL Foundation] | Apache Sling 데이터 소스 지원 (OSGi 번들 org.apache.sling.datasource) | 해당 사항 없음 | 제거됨 |
+| [!DNL Foundation] | JST 스크립팅 템플릿 지원 (OSGi 번들 org.apache.sling.scripting.jst) | 해당 사항 없음 | 제거됨 |
 | [!DNL Foundation] | Apache Felix Http Whiteboard 지원 | OSGi Http Whiteboard | 2022년 3월 |
 | [!DNL Foundation] | com.adobe.granite.oauth.server 지원 | Adobe IMS 통합 | 2023년 3월 |
 | [!DNL Foundation] | [서비스 사용자 ID 가져오기](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-)를 위한 org.apache.sling.serviceusermapping 기능 지원 | 해당 사항 없음 | 8/30/24 |
@@ -68,10 +68,10 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 
 ## AEM API {#aem-apis}
 
-다음은 더이상 사용되지 않는 AEM API 및 해당 API의 예상되는 제거 날짜에 대한 광범위한 목록입니다. 고객은 목표 제거 날짜까지 코드에서 해당 API를 제거해야 합니다. 제거 날짜가 지난 API를 사용하면 로컬 SDK/개발 환경 및 Cloud Manager 빌드 프로세스에서 오류가 발생할 수 있습니다.
+다음은 더 이상 사용되지 않는 AEM API 및 해당 API의 예상되는 제거 날짜에 대한 광범위한 목록입니다. 고객은 목표 제거 날짜까지 코드에서 해당 API를 제거해야 합니다. 제거 날짜가 지난 API를 사용하면 로컬 SDK/개발 환경 및 Cloud Manager 빌드 프로세스에서 오류가 발생할 수 있습니다.
 
 <details>
-  <summary>더이상 사용되지 않는 API 목록을 보려면 펼쳐보십시오.</summary>
+  <summary>더 이상 사용되지 않는 API 목록을 보려면 펼쳐보십시오.</summary>
 <table style="table-layout:auto">
   <tr>
     <th>패키지/클래스</th>
@@ -147,13 +147,13 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
     <td>7/30/21</td>
   </tr>
   <tr> <td>org.apache.felix.http.jetty<br>org.eclipse.jetty.client.jmx<br>org.eclipse.jetty.jmx<br>org.eclipse.jetty.server.handler.jmx<br>org.eclipse.jetty.server.nio<br>org.eclipse.jetty.server.jmx<br>org.eclipse.jetty.servlet.jmx<br>org.eclipse.jetty.util.preventers<br>org.eclipse.jetty.util.thread.strategy<br>org.eclipse.jetty.webapp<br>org.eclipse.jetty.websocket.api<br>org.eclipse.jetty.websocket.api.annotations<br>org.eclipse.jetty.websocket.api.extensions<br>org.eclipse.jetty.websocket.api.util<br>org.eclipse.jetty.websocket.client<br>org.eclipse.jetty.websocket.client.io<br>org.eclipse.jetty.websocket.client.masks<br>org.eclipse.jetty.websocket.common<br>org.eclipse.jetty.websocket.common.events<br>org.eclipse.jetty.websocket.common.events.annotated<br>org.eclipse.jetty.websocket.common.extensions<br>org.eclipse.jetty.websocket.common.extensions.compress<br>org.eclipse.jetty.websocket.common.extensions.fragment<br>org.eclipse.jetty.websocket.common.extensions.identity<br>org.eclipse.jetty.websocket.common.frames<br>org.eclipse.jetty.websocket.common.io<br>org.eclipse.jetty.websocket.common.io.http<br>org.eclipse.jetty.websocket.common.io.payload<br>org.eclipse.jetty.websocket.common.message<br>org.eclipse.jetty.websocket.common.scopes<br>org.eclipse.jetty.websocket.common.util<br>org.eclipse.jetty.websocket.server<br>org.eclipse.jetty.websocket.server.pathmap<br>org.eclipse.jetty.websocket.servlet<br>org.eclipse.jetty.xml</td>
-    <td>Eclipse Jetty 및 Felix Http Jetty 패키지는 더이상 지원되지 않습니다. <a href="#org.eclipse.jetty">아래의 제거 노트를 참조하십시오.</a></td>
+    <td>Eclipse Jetty 및 Felix Http Jetty 패키지는 더 이상 지원되지 않습니다. <a href="#org.eclipse.jetty">아래의 제거 노트를 참조하십시오.</a></td>
     <td>5/27/21</td>
     <td>8/26/21</td>
   </tr>
   <tr> <td>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.util<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread
 </td>
-    <td>Eclipse Jetty 및 Felix Http Jetty 패키지는 더이상 지원되지 않습니다.</td>
+    <td>Eclipse Jetty 및 Felix Http Jetty 패키지는 더 이상 지원되지 않습니다.</td>
     <td>5/27/21</td>
     <td>8/26/21</td>
   </tr>  
@@ -164,7 +164,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
   </tr>
   <tr>
     <td>org.apache.felix.metatype<br>org.apache.felix.scr<br>org.apache.felix.scr.info<br>org.apache.felix.scr.component</td>
-    <td>Apache Felix 메타타입 및 SCR API는 더이상 사용되지 않습니다.  대신 OSGi 메타타입 및 선언 서비스 API를 사용합니다.</td>
+    <td>Apache Felix 메타타입 및 SCR API는 더 이상 사용되지 않습니다.  대신 OSGi 메타타입 및 선언 서비스 API를 사용합니다.</td>
     <td>5/27/21</td>
     <td>제거됨</td>
   </tr>
@@ -176,13 +176,13 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
   </tr>
   <tr>
     <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
-    <td>Apache Abdera가 2017년부터 중단됨에 따라 해당 API는 더이상 사용되지 않습니다. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">아래의 제거 노트를 참조하십시오.</a></td>
+    <td>Apache Abdera가 2017년부터 중단됨에 따라 해당 API는 더 이상 사용되지 않습니다. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">아래의 제거 노트를 참조하십시오.</a></td>
     <td>7/29/21</td>
     <td>09/29/21</td>
   </tr>
   <tr>
     <td>org.apache.abdera.ext.opensearch<br>org.apache.abdera.ext.opensearch.model<br>org.apache.abdera.ext.opensearch.server<br>org.apache.abdera.ext.opensearch.server.impl<br>org.apache.abdera.ext.opensearch.server.processors<br>org.apache.abdera.i18n.iri.data<br>org.apache.abdera.i18n.lang<br>org.apache.abdera.i18n.templates<br>org.apache.abdera.i18n.unicode.data<br>org.apache.abdera.parser.stax<br>org.apache.abdera.parser.stax.util<br>org.apache.abdera.protocol<br>org.apache.abdera.protocol.client<br>org.apache.abdera.protocol.client.cache<br>org.apache.abdera.protocol.client.util<br>org.apache.abdera.protocol.error<br>org.apache.abdera.protocol.server<br>org.apache.abdera.protocol.server.context<br>org.apache.abdera.protocol.server.filters<br>org.apache.abdera.protocol.server.impl<br>org.apache.abdera.protocol.server.multipart<br>org.apache.abdera.protocol.server.processors<br>org.apache.abdera.protocol.server.provider.basic<br>org.apache.abdera.protocol.server.provider.managed<br>org.apache.abdera.protocol.server.servlet<br>org.apache.abdera.protocol.util<br>org.apache.abdera.util.filter</td>
-    <td>Apache Abdera가 2017년부터 중단됨에 따라 해당 API는 더이상 사용되지 않습니다.</td>
+    <td>Apache Abdera가 2017년부터 중단됨에 따라 해당 API는 더 이상 사용되지 않습니다.</td>
     <td>4/8/19</td>
     <td>09/29/21</td>
   </tr>
@@ -211,13 +211,13 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
-    <td>Apache Felix Http Whiteboard는 더이상 지원되지 않습니다. 코드를 OSGi Http Whiteboard로 마이그레이션합니다. <a href="#org.apache.felix.http.whiteboard">아래의 제거 노트를 참조하십시오.</a></td>
+    <td>Apache Felix Http Whiteboard는 더 이상 지원되지 않습니다. 코드를 OSGi Http Whiteboard로 마이그레이션합니다. <a href="#org.apache.felix.http.whiteboard">아래의 제거 노트를 참조하십시오.</a></td>
     <td>1/27/2022</td>
     <td>3/24/2022</td>
   </tr>
   <tr>
     <td>org.apache.cocoon.xml.dom<br>org.apache.cocoon.xml.sax</td>
-    <td>이 API는 더이상 사용되지 않습니다. JDK에서 제공하는 XML API로 코드를 마이그레이션합니다.</td>
+    <td>이 API는 더 이상 사용되지 않습니다. JDK에서 제공하는 XML API로 코드를 마이그레이션합니다.</td>
     <td>1/27/2022</td>
     <td>3/24/2022</td>
   </tr>
@@ -253,13 +253,13 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
   </tr>
   <tr>
     <td>com.adobe.granite.resourceresolverhelper</td>
-    <td>이 API는 더이상 지원되지 않습니다. 대신 org.apache.sling.api.resource.ResourceResolverFactory를 사용하십시오.</td>
+    <td>이 API는 더 이상 지원되지 않습니다. 대신 org.apache.sling.api.resource.ResourceResolverFactory를 사용하십시오.</td>
     <td>9/29/2022</td>
     <td>11/24/2022</td>
   </tr>
   <tr>
     <td>com.day.cq.contentsync.handler.util</td>
-    <td>이 API는 더이상 사용되지 않습니다. 대신 Apache Sling의 빌더를 사용합니다.</td>
+    <td>이 API는 더 이상 사용되지 않습니다. 대신 Apache Sling의 빌더를 사용합니다.</td>
     <td>10/31/2022</td>
     <td>2023년 1월 1일</td>
   </tr>
@@ -268,7 +268,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
     <td>5/15/2023</td>
     <td>6/15/2023</td>
   </tr><td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
-    <td>Google Guava Core Libraries는 더이상 사용되지 않습니다.</td>
+    <td>Google Guava Core Libraries는 더 이상 사용되지 않습니다.</td>
     <td>5/15/2023</td>
     <td>6/15/2023</td>
   </tr>
@@ -516,7 +516,7 @@ AEM as a Cloud Service은 Java 21 런타임으로 이전됩니다. 호환성을 
 
 ### 런타임 요구 사항
 
-이러한 조정은 Java 21 런타임과의 호환성을 보장하기 위해 필요합니다. 라이브러리는 이전 버전의 Java와 호환되므로 언제든지 업데이트할 수 있습니다.
+이러한 조정은 Java 21 런타임과의 호환성을 보장하기 위해 필요합니다. 해당 라이브러리는 이전 버전의 Java와도 호환되므로 언제든지 업데이트할 수 있습니다.
 
 #### org.objectweb.asm의 최소 버전 {#org.objectweb.asm}
 
@@ -530,11 +530,11 @@ AEM as a Cloud Service은 Java 21 런타임으로 이전됩니다. 호환성을 
 
 ### 작성 시간 요구 사항
 
-최신 버전의 Java를 사용하여 프로젝트를 작성할 수 있으려면 이러한 조정이 필요하지만 런타임 호환성에는 필요하지 않습니다. Maven 플러그인은 이전 버전의 Java와 호환되므로 언제든지 업데이트할 수 있습니다.
+이 조정은 프로젝트를 최신 Java 버전으로 빌드할 수 있도록 하기 위한 것이며, 런타임 호환성을 위해 필수적인 것은 아닙니다. Maven 플러그인은 이전 버전의 Java와도 호환되므로 언제든지 업데이트할 수 있습니다.
 
 #### bnd-maven-plugin의 최소 버전 {#bnd-maven-plugin}
 
-bnd-maven-plugin 사용을 버전 6.4.0으로 업데이트하여 최신 JVM 실행 시간을 지원합니다. 버전 7 이상은 Java 11 이하와 호환되지 않으므로 현재 해당 버전으로 업그레이드하는 것은 권장되지 않습니다.
+최신 JVM 런타임에 대한 지원을 보장하기 위해 bnd-maven-plugin의 사용을 6.4.0 버전으로 업데이트해야 합니다. 버전 7 이상은 Java 11 이하 버전과 호환되지 않으므로, 현재로서는 해당 버전으로 업그레이드하는 것이 권장되지 않습니다.
 
 #### aemanalyser-maven-plugin의 최소 버전 {#aemanalyser-maven-plugin}
 
