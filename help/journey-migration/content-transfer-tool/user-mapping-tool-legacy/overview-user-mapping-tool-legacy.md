@@ -1,6 +1,6 @@
 ---
-title: 사용자 매핑 도구 개요(레거시)
-description: 사용자 매핑 도구 개요(레거시)
+title: 사용자 매핑 도구 개요 (레거시)
+description: 사용자 매핑 도구 개요 (레거시)
 exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
 hide: true
 hidefromtoc: true
@@ -8,13 +8,13 @@ feature: Migration
 role: Admin
 source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 21%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# 사용자 매핑 도구 개요(레거시) {#overview-user-mapping-tool}
+# 사용자 매핑 도구 개요 (레거시) {#overview-user-mapping-tool}
 
 >[!INFO]
 >

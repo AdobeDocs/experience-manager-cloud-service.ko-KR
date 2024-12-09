@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: 550d84f43cba472d74c7be6323bd69ba808c96f8
 workflow-type: tm+mt
-source-wordcount: '3322'
-ht-degree: 11%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -170,12 +170,12 @@ Cloud Acceleration Manager을 사용하여 마이그레이션 세트를 수집�
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### 클라우드 환경이 준비 상태가 아니어서 수집 실패 {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
+### 준비 상태가 아닌 클라우드 환경으로 인한 수집 실패 {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_cloud_environment_not_in_ready_state"
->title="클라우드 환경이 준비 상태가 아닙니다."
->abstract="드문 경우지만 타겟 클라우드 환경에 예기치 않은 문제가 발생하여 수집이 실패할 수 있습니다."
+>title="클라우드 환경이 준비 상태가 아님"
+>abstract="드문 경우에 대상 클라우드 환경에서 예기치 못한 문제가 발생하여 수집이 실패할 수 있습니다."
 
 드문 경우지만 수집의 대상 Cloud Service 환경에 예기치 않은 문제가 발생할 수 있습니다. 환경이 예상 준비 상태가 아니므로 수집이 실패합니다. 발생한 오류 상태에 대한 자세한 내용을 보려면 수집 로그를 확인하십시오.
 
