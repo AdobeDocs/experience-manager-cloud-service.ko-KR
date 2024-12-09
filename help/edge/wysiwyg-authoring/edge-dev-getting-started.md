@@ -1,28 +1,28 @@
 ---
-title: Edge Delivery Services을 사용한 WYSIWYG 작성용 개발자 시작 안내서
-description: 이 안내서를 통해 Edge Delivery Services 및 WYSIWYG 컨텐츠 작성용 범용 편집기를 사용하여 새 Adobe Experience Manager 사이트를 시작하고 실행할 수 있습니다.
+title: Edge Delivery Services를 사용한 WYSIWYG 작성을 위한 개발자 시작 안내서
+description: 이 안내서는 WYSIWYG 콘텐츠 작성을 위한 Edge Delivery Services 및 범용 편집기를 사용하여 새로운 Adobe Experience Manager 사이트를 시작하고 실행하는 데 도움이 됩니다.
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
-source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
+source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
 workflow-type: tm+mt
 source-wordcount: '1223'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 
-# Edge Delivery Services을 사용한 WYSIWYG 작성용 개발자 시작 안내서 {#edge-dev-getting-started}
+# Edge Delivery Services를 사용한 WYSIWYG 작성을 위한 개발자 시작 안내서 {#edge-dev-getting-started}
 
-이 안내서를 통해 Edge Delivery Services 및 WYSIWYG 컨텐츠 작성용 범용 편집기를 사용하여 새 Adobe Experience Manager 사이트를 시작하고 실행할 수 있습니다.
+이 안내서는 WYSIWYG 콘텐츠 작성을 위한 Edge Delivery Services 및 범용 편집기를 사용하여 새로운 Adobe Experience Manager 사이트를 시작하고 실행하는 데 도움이 됩니다.
 
-## 사전 요구 사항 {#prerequisites}
+## 전제 조건 {#prerequisites}
 
 이 안내서를 시작하기 전에 다음을 포함한 Edge Delivery Services의 기본 사항을 숙지하고 액세스할 수 있어야 합니다.
 
 * [Edge Delivery Service 튜토리얼](/help/edge/developer/tutorial.md)이 완료되었습니다.
 * [AEM Cloud Service 샌드박스](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)에 액세스할 수 있습니다.
-* [동일한 샌드박스 환경에서 Universal Editor를 활성화](/help/implementing/universal-editor/getting-started.md)했습니다.
+* [동일한 샌드박스 환경에서 범용 편집기를 활성화](/help/implementing/universal-editor/getting-started.md)했습니다.
 
 ## Edge Delivery Services 개발 시 핵심 개념 {#core-concepts}
 
@@ -42,7 +42,7 @@ AEM은 프로젝트 상용구 내에서 표준 블록을 제품의 일부로 제
 
 Edge Delivery는 GitHub를 활용하므로 GitHub 저장소에서 바로 코드를 관리 및 배포할 수 있습니다.
 
-작성자는 Universal Editor를 통해 문서 기반 작성 또는 AEM 콘텐츠를 사용하여 콘텐츠를 생성할 수 있습니다. 개발자는 작성자가 콘텐츠를 생성하는 방법에 관계없이 GitHub에서 CSS 및 JavaScript를 사용하여 사이트 기능을 사용자 정의할 수 있습니다.
+작성자는 범용 편집기를 통해 문서 기반 작성 또는 AEM 콘텐츠를 사용하여 콘텐츠를 생성할 수 있습니다. 개발자는 작성자가 콘텐츠를 생성하는 방법에 관계없이 GitHub에서 CSS 및 JavaScript를 사용하여 사이트 기능을 사용자 정의할 수 있습니다.
 
 콘텐츠 미리보기부터 프로덕션까지 각 분기별로 웹 사이트가 자동으로 생성됩니다. GitHub 저장소에 저장된 모든 리소스는 빌드 프로세스 없이 웹 사이트에서 제공됩니다.
 
@@ -52,7 +52,7 @@ Edge Delivery는 GitHub를 활용하므로 GitHub 저장소에서 바로 코드�
 
 ## WYSIWYG 작성 및 Edge Delivery Services 시작하기 {#getting-started}
 
-[사전 요구 사항](#prerequisites)을 충족하고 [Universal Editor를 사용](#editor-choice)하기로 했다면 이제 나만의 프로젝트를 시작할 수 있습니다.
+[전제 조건](#prerequisites)을 충족하고 [범용 편집기를 사용](#editor-choice)하기로 했다면 이제 나만의 프로젝트를 시작할 수 있습니다.
 
 ### GitHub 프로젝트 만들기 {#create-github-project}
 
@@ -116,7 +116,7 @@ Edge Delivery는 GitHub를 활용하므로 GitHub 저장소에서 바로 코드�
 
 >[!TIP]
 >
->경로 매핑에 대한 자세한 내용은 [Edge Delivery Services의 경로 매핑](/help/edge/wysiwyg-authoring/path-mapping.md) 문서를 참조하십시오.
+>경로 매핑에 대한 자세한 내용은 [Edge Delivery Services용 경로 매핑](/help/edge/wysiwyg-authoring/path-mapping.md) 문서를 참조하십시오.
 
 ### 새 AEM 사이트 만들기 및 편집 {#create-aem-site}
 
@@ -124,9 +124,9 @@ Edge Delivery는 GitHub를 활용하므로 GitHub 저장소에서 바로 코드�
 
 >[!NOTE]
 >
->Universal Editor를 사용하여 사이트를 편집하려면 Chromium 기반 브라우저를 사용해야 합니다.
+>범용 편집기를 사용하여 사이트를 편집하려면 Chromium 기반 브라우저를 사용해야 합니다.
 
-1. [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)의 GitHub에서 Edge Delivery Services 사이트 템플릿을 사용하여 최신 WYSIWYG 작성을 다운로드합니다.
+1. [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)에서 GitHub 최신 Edge Delivery Services로 WYSIWYG 작성 사이트 템플릿을 다운로드하십시오.
 
 1. AEM as a Cloud Service 작성 인스턴스에 로그인하고 사이트 콘솔로 이동하여 **만들기** -> **템플릿으로 사이트 생성**&#x200B;을 탭하거나 클릭합니다.
 
@@ -136,7 +136,7 @@ Edge Delivery는 GitHub를 활용하므로 GitHub 저장소에서 바로 코드�
 
    ![템플릿 가져오기](assets/edge-dev-getting-started/site-templates.png)
 
-1. GitHub에서 다운로드한 Edge Delivery Services 사이트 템플릿을 사용하여 WYSIWYG 작성 을 업로드합니다.
+1. GitHub에서 다운로드한 Edge Delivery Services로 WYSIWYG 작성 사이트 템플릿을 업로드하십시오.
 
    * 템플릿은 한 번만 업로드해야 합니다. 업로드한 후에는 추가 사이트를 만드는 데 다시 사용할 수 있습니다.
 
@@ -160,15 +160,15 @@ Edge Delivery는 GitHub를 활용하므로 GitHub 저장소에서 바로 코드�
 
    ![새 사이트 편집](assets/edge-dev-getting-started/new-site.png)
 
-1. Universal Editor가 새 탭에서 열립니다. 페이지를 편집하기 위해 **Adobe에 로그인**&#x200B;을 탭하거나 클릭하여 인증해야 할 수도 있습니다.
+1. 범용 편집기가 새 탭에서 열립니다. 페이지를 편집하기 위해 **Adobe에 로그인**&#x200B;을 탭하거나 클릭하여 인증해야 할 수도 있습니다.
 
-   ![Universal Editor](assets/edge-dev-getting-started/universal-editor.png)
+   ![범용 편집기](assets/edge-dev-getting-started/universal-editor.png)
 
-이제 Universal Editor를 사용하여 사이트를 편집할 수 있습니다. 자세한 내용은 [Universal Editor 설명서](/help/sites-cloud/authoring/universal-editor/authoring.md)를 참조하십시오.
+이제 범용 편집기를 사용하여 사이트를 편집할 수 있습니다. 자세한 내용은 [범용 편집기 설명서](/help/sites-cloud/authoring/universal-editor/authoring.md)를 참조하십시오.
 
 ### 새 사이트 게시 {#publishing}
 
-Universal Editor를 사용하여 새 사이트 편집을 마쳤다면 콘텐츠를 게시할 수 있습니다.
+범용 편집기를 사용하여 새 사이트 편집을 마쳤다면 콘텐츠를 게시할 수 있습니다.
 
 1. 사이트 콘솔에서 새 사이트에 대해 생성한 모든 페이지를 선택하고 도구 모음에서 **빠른 게시**&#x200B;를 탭하거나 클릭합니다.
 
@@ -180,7 +180,7 @@ Universal Editor를 사용하여 새 사이트 편집을 마쳤다면 콘텐츠�
 
 1. 동일한 브라우저에서 새 탭을 열고 새 사이트의 URL로 이동합니다.
 
-   * `https://main--<repository-name>--<owner>.hlx.page`
+   * `https://main--<repository-name>--<owner>.aem.page`
 
 1. 게시된 콘텐츠를 확인합니다.
 
@@ -188,10 +188,10 @@ Universal Editor를 사용하여 새 사이트 편집을 마쳤다면 콘텐츠�
 
 ## 다음 단계 {#next-steps}
 
-이제 Edge Delivery Services 프로젝트를 사용하여 WYSIWYG을 작성하고 작업했으므로 나만의 블록을 만들고 스타일을 지정할 수 있습니다.
+Edge Delivery Services 프로젝트와 함께 WYSIWYG이 작성되어 있으며, 자체 블록을 만들고 스타일을 지정할 수 있습니다.
 
-자세한 내용은 [Universal Editor에 사용하도록 구성된 블록 만들기](/help/edge/wysiwyg-authoring/create-block.md) 안내서를 참조하십시오.
+자세한 내용은 [범용 편집기에 사용하도록 구성된 블록 만들기](/help/edge/wysiwyg-authoring/create-block.md) 안내서를 참조하십시오.
 
 >[!TIP]
 >
->AEM as a Cloud Service을 콘텐츠 소스로 사용하여 WYSIWYG 작성에 사용할 수 있는 새 Edge Delivery Services 프로젝트를 만드는 방법에 대한 전체 연습은 [이 AEM GEM 웨비나를 참조하십시오.](https://experienceleague.adobe.com/ko/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>AEM as a Cloud Service를 콘텐츠 소스로 사용하여 WYSIWYG 작성에 활성화된 새로운 Edge Delivery Services 프로젝트를 만드는 방법에 대한 전체 연습을 보려면 [이 AEM GEM 웨비나](https://experienceleague.adobe.com/ko/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)를 시청하십시오.

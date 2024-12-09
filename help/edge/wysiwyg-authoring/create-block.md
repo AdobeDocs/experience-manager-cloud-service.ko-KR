@@ -4,7 +4,7 @@ description: Edge Delivery Services 프로젝트를 통해 WYSIWYG 작성 시 �
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 487d918059e85e3f5dd19d2248b3a8365da41dee
+source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 97%
@@ -182,7 +182,7 @@ Adobe는 3단계 방식으로 블록을 개발할 것을 권장합니다.
 
 1. 인용 콘텐츠가 만족스러우면 범용 편집기 도구 모음의 **게시** 버튼을 탭하거나 클릭하여 페이지를 게시할 수 있습니다.
 
-1. 게시된 페이지로 이동하여 콘텐츠가 게시되었는지 확인합니다. 링크는 `https://<branch>--<repo>--<owner>.hlx.page`와 유사합니다.
+1. 게시된 페이지로 이동하여 콘텐츠가 게시되었는지 확인합니다. 링크는 `https://<branch>--<repo>--<owner>.aem.page`와 유사합니다.
 
    ![게시된 인용](assets/create-block/quote-published.png)
 
@@ -273,7 +273,7 @@ export default function decorate(block) {
 
 ![범용 편집기의 스타일이 지정된 인용 블록](assets/create-block/quote-styled.png)
 
-8&amp;period; 게시된 페이지로 이동하여 변경 사항이 프로덕션에 푸시되었는지 확인합니다. 링크는 `https://<branch>--<repo>--<owner>.hlx.page`와 유사합니다.
+8&amp;period; 게시된 페이지로 이동하여 변경 사항이 프로덕션에 푸시되었는지 확인합니다. 링크는 `https://<branch>--<repo>--<owner>.aem.page`와 유사합니다.
 
 ![게시되고 스타일이 지정된 인용 블록](assets/create-block/quote-styled-published.png)
 
@@ -327,7 +327,7 @@ export default function decorate(block) {
 
 이 안내서에서는 단순성을 위해 `main` 분기에 바로 커밋하도록 하였습니다. 샘플 저장소에서 실험하는 경우 이는 일반적으로 문제가 되지 않습니다. 실제 작업에서는 `main`으로 병합하기 전 가져오기 요청을 통해 다른 분기에서 개발하고 모든 변경 사항을 검토하여 [개발 모범 사례를 따라야 합니다](https://www.aem.live/docs/dev-collab-and-good-practices).
 
-`main` 분기에서 개발하지 않으면 범용 편집기 위치 표시줄에서 `?ref=<branch>`를 추가하여 분기에서 페이지를 로드할 수 있습니다. 프로젝트 미리보기 또는 라이브 URL(예: `https://<branch>--<repo>--<owner>.hlx.page`)에 사용되는 것처럼 `<branch>`는 분기 이름입니다.
+`main` 분기에서 개발하지 않으면 범용 편집기 위치 표시줄에서 `?ref=<branch>`를 추가하여 분기에서 페이지를 로드할 수 있습니다. 프로젝트 미리보기 또는 라이브 URL(예: `https://<branch>--<repo>--<owner>.aem.page`)에 사용되는 것처럼 `<branch>`는 분기 이름입니다.
 
 ## 문서 기반 작성을 위한 블록 재사용 {#reusing-blocks}
 
