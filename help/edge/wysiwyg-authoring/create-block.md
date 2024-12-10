@@ -4,10 +4,10 @@ description: Edge Delivery Services 프로젝트를 통해 WYSIWYG 작성 시 �
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
+source-git-commit: fb7da1530f916ec63d5993446fd0c328af09ae7c
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 97%
+source-wordcount: '1415'
+ht-degree: 94%
 
 ---
 
@@ -45,13 +45,13 @@ Adobe는 3단계 방식으로 블록을 개발할 것을 권장합니다.
 
 ### 블록 정의 및 모델 만들기 {#create-block-model}
 
-1&amp;period; [Edge Delivery Services를 사용한 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)의 안내서에서 만든 GitHub 프로젝트를 로컬로 복제하고 원하는 편집기에서 엽니다.
+1\. [Edge Delivery Services을 사용하여 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 안내서에서 만든 GitHub 프로젝트를 로컬로 복제하고 선택한 편집기에서 엽니다.
 
 * 여기에서 Microsoft 코드는 설명 목적으로 사용되었습니다.
 
 ![프로젝트 복제](assets/create-block/clone.png)
 
-2&amp;period; 프로젝트 루트에 있는 `component-definition.json` 파일을 편집하고 새 인용 블록에 대해 다음 정의를 추가한 후 파일을 저장합니다.
+2\. 프로젝트 루트에 있는 `component-definition.json` 파일을 편집하고 새 인용 블록에 대해 다음 정의를 추가한 후 파일을 저장합니다.
 
 >[!BEGINTABS]
 
@@ -83,7 +83,7 @@ Adobe는 3단계 방식으로 블록을 개발할 것을 권장합니다.
 
 >[!ENDTABS]
 
-3&amp;period; 프로젝트 루트에 있는 `component-models.json` 파일을 편집하고 새 인용 블록에 대해 다음 [모델 정의](/help/implementing/universal-editor/field-types.md#model-structure)를 추가한 후 파일을 저장합니다.
+3\. 프로젝트 루트에 있는 `component-models.json` 파일을 편집하고 새 인용 블록에 대해 다음 [모델 정의](/help/implementing/universal-editor/field-types.md#model-structure)를 추가한 후 파일을 저장합니다.
 
 * 콘텐츠 모델을 만들 때 고려해야 할 중요 사항에 대한 자세한 내용은 [Edge Delivery Services 프로젝트를 사용한 WYSIWYG 작성을 위한 콘텐츠 모델링](/help/edge/wysiwyg-authoring/content-modeling.md) 문서를 참조하십시오.
 
@@ -119,7 +119,7 @@ Adobe는 3단계 방식으로 블록을 개발할 것을 권장합니다.
 
 >[!ENDTABS]
 
-4&amp;period; 프로젝트 루트에 있는 `component-filters.json` 파일을 편집하고 [필터 정의](/help/implementing/universal-editor/customizing.md#filtering-components)에 인용 블록을 추가하여 해당 블록이 모든 섹션에 추가되도록 허용하고 파일을 저장합니다.
+4\. 프로젝트 루트에 있는 `component-filters.json` 파일을 편집하고 [필터 정의](/help/implementing/universal-editor/customizing.md#filtering-components)에 인용 블록을 추가하여 해당 블록이 모든 섹션에 추가되도록 허용하고 파일을 저장합니다.
 
 >[!BEGINTABS]
 
@@ -147,7 +147,7 @@ Adobe는 3단계 방식으로 블록을 개발할 것을 권장합니다.
 
 >[!ENDTABS]
 
-5&amp;period; Git을 사용하여 이러한 변경 사항을 `main` 분기에 커밋합니다.
+5\. Git을 사용하여 이러한 변경 사항을 `main` 분기에 커밋합니다.
 
 * `main`에 대한 커밋은 설명 목적으로만 사용됩니다. [모범 사례를 따라](https://www.aem.live/docs/dev-collab-and-good-practices) 실제 프로젝트 작업에 가져오기 요청을 사용합니다.
 
@@ -190,13 +190,13 @@ Adobe는 3단계 방식으로 블록을 개발할 것을 권장합니다.
 
 작동하는 인용 블록이 있으므로 여기에 스타일을 적용할 수 있습니다.
 
-1&amp;period; 프로젝트 편집기로 돌아갑니다.
+1\. 프로젝트 편집기로 돌아갑니다.
 
-2&amp;period; `blocks` 폴더 아래에 `quote` 폴더를 만듭니다.
+2\. `blocks` 폴더 아래에 `quote` 폴더를 만듭니다.
 
 ![인용 폴더 만들기](assets/create-block/new-folder.png)
 
-3&amp;period; 새 `quote` 폴더에서 다음 JavaScript를 추가하여 `quote.js` 파일을 추가하고 블록 장식을 구현한 다음 파일을 저장합니다.
+3\. 새 `quote` 폴더에서 다음 JavaScript를 추가하여 `quote.js` 파일을 추가하고 블록 장식을 구현한 다음 파일을 저장합니다.
 
 >[!BEGINTABS]
 
@@ -218,7 +218,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-4&amp;period; `quote` 폴더에서 다음 CSS 코드를 추가하여 `quote.css` 파일을 추가하고 블록 스타일링을 정의한 다음 파일을 저장합니다.
+4\. `quote` 폴더에서 다음 CSS 코드를 추가하여 `quote.css` 파일을 추가고 블록 스타일링을 정의한 다음 파일을 저장합니다.
 
 >[!BEGINTABS]
 
@@ -263,17 +263,17 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-5&amp;period; Git을 사용하여 이러한 변경 사항을 `main` 분기에 커밋합니다.
+5\. Git을 사용하여 이러한 변경 사항을 `main` 분기에 커밋합니다.
 
 * `main`에 대한 커밋은 설명 목적으로만 사용됩니다. [모범 사례를 따라](https://www.aem.live/docs/dev-collab-and-good-practices) 실제 프로젝트 작업에 가져오기 요청을 사용합니다.
 
-6&amp;period; 프로젝트 페이지를 편집하던 범용 편집기의 브라우저 탭으로 돌아가 페이지를 다시 로드하여 스타일이 지정된 블록을 확인합니다.
+6\. 프로젝트 페이지를 편집하던 Universal Editor의 브라우저 탭으로 돌아가 페이지를 다시 로드하여 스타일이 지정된 블록을 확인합니다.
 
-7&amp;period; 페이지에서 현재 스타일이 지정된 인용 블록을 확인합니다.
+7\. 페이지에서 현재 스타일이 지정된 인용 블록을 확인합니다.
 
-![범용 편집기의 스타일이 지정된 인용 블록](assets/create-block/quote-styled.png)
+![Universal Editor의 스타일이 지정된 인용 블록](assets/create-block/quote-styled.png)
 
-8&amp;period; 게시된 페이지로 이동하여 변경 사항이 프로덕션에 푸시되었는지 확인합니다. 링크는 `https://<branch>--<repo>--<owner>.aem.page`와 유사합니다.
+8\. 게시된 페이지로 이동하여 변경 사항이 프로덕션에 푸시되었는지 확인합니다. 링크는 `https://<branch>--<repo>--<owner>.aem.page`와 유사합니다.
 
 ![게시되고 스타일이 지정된 인용 블록](assets/create-block/quote-styled-published.png)
 
@@ -344,4 +344,3 @@ Edge Delivery Services 프로젝트를 사용한 WYSIWYG 작성을 위한 콘텐
 >[!TIP]
 >
 >AEM as a Cloud Service를 콘텐츠 소스로 사용하여 WYSIWYG 작성에 활성화된 새로운 Edge Delivery Services 프로젝트를 만드는 방법에 대한 전체 연습을 보려면 [이 AEM GEM 웨비나](https://experienceleague.adobe.com/ko/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)를 시청하십시오.
-
