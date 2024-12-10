@@ -3,9 +3,10 @@ title: 파이프라인 없는 URL 리디렉션
 description: Git 또는 Cloud Manager 파이프라인에 액세스하지 않고 301 또는 302 리디렉션을 선언하는 방법을 알아봅니다.
 feature: Dispatcher
 role: Admin
-source-git-commit: 36b7d72f24bd60ad94762c9c9937105bea6e31b6
+exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
+source-git-commit: c80454204837529007c1fda7eef4486c213eb509
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -57,9 +58,9 @@ maps:
   path: /content/dam/redirectmaps/mysite-redirectmap.txt
 ```
 
-그런 다음 `rewrites/rewrite.rules` 또는 `<yourfile>.vhost`과(와) 같은 Apache 구성 파일에서 이름 속성(`my.map`(위의 샘플에서)이 참조하는 맵 파일을 구성해야 합니다.
+그런 다음 `rewrites/rewrite.rules` 또는 `<yourfile>.vhost`과(와) 같은 Apache 구성 파일에서 이름 속성(`my.map`(위의 샘플에서)이 참조하는 맵 파일을 구성해야 합니다. 로드되면 이 맵 파일은 **fixed** 위치 `/tmp/rewrites/`의 Dispatcher 로컬 저장소에 저장됩니다.
 
-`RewriteMap` 지시문은 `sdbm`(단순 DBM) 형식을 사용하여 DBM(데이터베이스 관리자) 파일 형식으로 데이터가 저장되었음을 나타내야 합니다.
+`RewriteMap` 지시문은 데이터가 `sdbm`(단순 DBM) 형식을 사용하여 데이터베이스 관리자(DBM) 파일 형식으로 저장되었고 전체 파일 경로가 저장소 위치 접두사 및 이름 속성에서 파생되었음을 나타내야 합니다.
 
 나머지 구성은 `redirectmap.txt`의 형식에 따라 다릅니다. 아래 샘플에 표시된 가장 간단한 형식은 원본 URL과 매핑된 URL 간의 일대일 매핑입니다.
 
