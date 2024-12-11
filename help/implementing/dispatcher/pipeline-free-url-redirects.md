@@ -4,10 +4,10 @@ description: Git 또는 Cloud Manager 파이프라인에 액세스하지 않고 
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: c80454204837529007c1fda7eef4486c213eb509
+source-git-commit: 639a8927fb232f7d4a18e0f49b1221c184066787
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '699'
+ht-degree: 1%
 
 ---
 
@@ -30,11 +30,14 @@ AEM as a Cloud Service은 클라이언트측 리디렉션을 구현하기 위해
 이 기능의 핵심은 AEM Apache/Dispatcher이 게시 저장소의 지정된 위치에 배치된 하나 이상의 재작성 맵 파일을 로드(또는 재로드)하는 기능입니다. 파일이 도착하는 방법은 이 기능의 범위를 벗어나지만 다음 방법 중 하나를 고려할 수 있습니다.
 
 * 작성자 사용자 인터페이스에서 재작성 맵을 에셋으로 수집하고 게시합니다.
-* URL 매핑을 관리하고 맵 다시 작성 파일을 게시할 수 있는 사용자 인터페이스가 포함된 [ACS Commons Rewrite Map 관리자](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html)를 설치하는 중입니다.
+* URL 매핑을 관리하고 맵 다시 작성 파일을 게시할 수 있는 사용자 인터페이스가 포함된 [ACS Commons Rewrite Map 관리자](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html)([최소 6.7.0 버전 이상](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases))를 설치합니다.
 * 사용자 정의 응용 프로그램을 작성함으로써 완벽한 유연성을 제공합니다. 예를 들어 URL 매핑을 관리하는 사용자 인터페이스 또는 명령줄 인터페이스 또는 재작성 맵을 업로드하는 양식 중 하나를 선택합니다. 그러면 AEM API를 사용하여 재작성 맵 파일을 게시할 수 있습니다.
 
 >[!NOTE]
 > 이 기능을 사용하려면 AEM 버전 **18311 이상이 필요합니다**.
+
+>[!NOTE]
+> 이 기능의 맵 다시 작성 관리자를 사용하려면 ACS Commons 버전 **6.7.0 이상**&#x200B;이 필요합니다.
 
 ## 맵 다시 작성 {#rewrite-map}
 
