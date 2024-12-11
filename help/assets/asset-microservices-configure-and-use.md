@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Architect, Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 979c4accca8b271ba2ff0ba176985c94b6d469c7
+source-git-commit: 55ee7f866bcfc4ecc2e203102872af9752240019
 workflow-type: tm+mt
-source-wordcount: '2926'
+source-wordcount: '2909'
 ht-degree: 3%
 
 ---
@@ -74,8 +74,6 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 ### 표준 프로필 만들기 {#create-standard-profile}
 
-표준 처리 프로필을 만들려면 다음 단계를 수행합니다.
-
 1. 관리자는 **[!UICONTROL 도구]** > **[!UICONTROL Assets]** > **[!UICONTROL 처리 프로필]**&#x200B;에 액세스합니다. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 1. 폴더에 적용할 때 프로필을 고유하게 식별하는 데 도움이 되는 이름을 제공합니다.
 1. FPO 렌디션을 생성하려면 **[!UICONTROL 이미지]** 탭에서 **[!UICONTROL FPO 렌디션 만들기]**&#x200B;를 사용하도록 설정하십시오. 1-100에서 **[!UICONTROL Quality]** 값을 입력하십시오.
@@ -124,8 +122,6 @@ The following video demonstrates the usefulness and usage of standard profile.
 >사용자 지정 응용 프로그램을 사용하여 표준 메타데이터를 편집할 수 없습니다. 사용자 지정 메타데이터만 수정할 수 있습니다.
 
 ### 사용자 지정 프로필 만들기 {#create-custom-profile}
-
-사용자 지정 프로필을 만들려면 다음 단계를 수행합니다.
 
 1. 관리자는 **[!UICONTROL 도구]** > **[!UICONTROL Assets]** > **[!UICONTROL 처리 프로필]** > **[!UICONTROL 만들기]**&#x200B;에 액세스합니다.
 1. 처리 프로필 페이지에서 **[!UICONTROL 사용자 지정]** 탭을 클릭한 다음 **[!UICONTROL 새로 추가]**&#x200B;를 클릭합니다.
