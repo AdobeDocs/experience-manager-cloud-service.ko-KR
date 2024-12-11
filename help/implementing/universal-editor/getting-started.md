@@ -4,10 +4,10 @@ description: Universal Editor에 액세스하는 방법과 이를 사용하기 �
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: edef86c67becf3b8094196d39baa9e69d6c81777
+source-git-commit: 8357caf2b0d396f6a1bd7b6160d6b48d8d6c026c
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 72%
+source-wordcount: '627'
+ht-degree: 62%
 
 ---
 
@@ -24,7 +24,17 @@ Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번
 
 ## 페이지 계측 {#instrument-page}
 
-Universal Editor 서비스에는 편집 중인 앱의 콘텐츠에 대한 올바른 백엔드 시스템을 식별하고 활용하기 위해 [균일 리소스 이름(URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name)이 필요합니다. 따라서 콘텐츠를 다시 콘텐츠 리소스에 매핑하려면 URN 스키마가 필요합니다.
+범용 편집기에서 페이지를 렌더링하고 편집하려면 JavaScript 라이브러리가 필요합니다.
+
+또한 범용 편집기 서비스에서는 편집 중인 앱의 콘텐츠에 대해 올바른 백엔드 시스템을 식별하고 활용하기 위해 [URN(Uniform Resource Name)](https://en.wikipedia.org/wiki/Uniform_Resource_Name)이(가) 필요합니다. 따라서 콘텐츠를 다시 콘텐츠 리소스에 매핑하려면 URN 스키마가 필요합니다.
+
+### 범용 편집기 CORS 라이브러리 포함 {#cors-library}
+
+유니버설 편집기가 앱에 연결되려면 앱에 유니버설 편집기 CORS 라이브러리가 포함되어야 합니다. 앱에 다음 스크립트를 추가합니다.
+
+```html
+ <script src="https://universal-editor-service.adobe.io/cors.js" async></script>
+```
 
 ### 연결 만들기 {#connections}
 

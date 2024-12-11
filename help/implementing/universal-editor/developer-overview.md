@@ -4,9 +4,9 @@ description: 범용 편집기의 작동 방식과 프로젝트에서 사용하�
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: d82a88e5b7337e9d81a91e812f6a90237e80b1ea
 workflow-type: tm+mt
-source-wordcount: '3139'
+source-wordcount: '3160'
 ht-degree: 1%
 
 ---
@@ -150,7 +150,7 @@ WKND 앱의 페이지 구성 요소에 필요한 JavaScript 라이브러리를 �
 1. 파일 끝에 JavaScript 라이브러리를 추가합니다.
 
    ```html
-   <script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>
+   <script src="https://universal-editor-service.adobe.io/cors.js" async></script>
    ```
 
 1. **모두 저장**&#x200B;을 클릭한 다음 유니버설 편집기를 다시 로드합니다.
@@ -160,7 +160,12 @@ WKND 앱의 페이지 구성 요소에 필요한 JavaScript 라이브러리를 �
 >[!TIP]
 >
 >* 라이브러리는 머리글 또는 바닥글에 로드할 수 있습니다.
->* `universal-editor-embedded.js` 라이브러리 [은(는) NPM](https://www.npmjs.com/package/@adobe/universal-editor-cors)에서 사용할 수 있으며 필요한 경우 직접 호스팅하거나 애플리케이션에 직접 배치할 수 있습니다.
+
+>[!NOTE]
+>
+>패키지가 더 이상 사용되지 않으므로 JavaScript 라이브러리 `<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>` 또는 npmjs.com을 통해 포함하는 이전에 권장된 방법은 더 이상 권장되지 않습니다.
+>
+>앱에서 더 이상 사용되지 않는 패키지를 사용하는 경우, 범용 편집기는 오래된 패키지가 감지된다는 경고를 UI에 표시합니다.
 
 ## 연결을 정의하여 변경 사항 유지 {#connection}
 
