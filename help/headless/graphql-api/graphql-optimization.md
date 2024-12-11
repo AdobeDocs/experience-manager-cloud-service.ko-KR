@@ -4,9 +4,9 @@ description: Headless 콘텐츠 게재를 위해 Adobe Experience Manager as a C
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: ht
-source-wordcount: '1874'
+source-git-commit: e8f992df5a270e7335af466a524daa013bff5f42
+workflow-type: tm+mt
+source-wordcount: '1824'
 ht-degree: 100%
 
 ---
@@ -82,16 +82,6 @@ CDN과 함께 지속 GraphQL 쿼리를 사용하는 경우 적절한 HTTP 캐시
 
 * [지속 쿼리 캐싱](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)
 * [지속 쿼리에 대한 캐시 관리](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
-
-#### AEM GraphQL 사전 캐싱 사용 {#use-aem-graphql-pre-caching}
-
-**권장 사항**
-
-이 기능을 통해 AEM은 GraphQL 쿼리 범위 내에서 콘텐츠를 추가로 캐시한 다음 한 줄씩이 아닌 JSON 출력 내 블록으로 어셈블할 수 있습니다.
-
-**추가 참조**
-
-AEM Cloud Service 프로그램 및 환경에서 이 기능을 활성화하려면 Adobe에 문의하십시오.
 
 ### GraphQL 쿼리 최적화 {#graphql-query-optimization}
 
