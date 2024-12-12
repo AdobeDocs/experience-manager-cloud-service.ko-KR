@@ -4,7 +4,7 @@ description: 구성 파일에서 규칙 및 필터를 선언하고 Cloud Manager
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 4e65a0fb32273548860731c09e27cb58fab93ab4
+source-git-commit: cb1581e96f1cfeadf6ee37cae4738d9d51177504
 workflow-type: tm+mt
 source-wordcount: '1377'
 ht-degree: 1%
@@ -431,7 +431,7 @@ data:
 리디렉션의 위치는 문자열 리터럴(예: https://www.example.com/page) 또는 다음 구문으로 선택적으로 변환되는 속성(예: path)의 결과일 수 있습니다.
 
 ```
-experimental_redirects:
+redirects:
   rules:
     - name: country-code-redirect
       when: { reqProperty: path, like: "/" }
