@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: eb3dbdc8107075cb5f6955f549bc9370f319588a
+source-git-commit: 5d0af9f7eaea4ad1aa6a979f46713d735f3a461a
 workflow-type: tm+mt
 source-wordcount: '5901'
 ht-degree: 97%
@@ -711,6 +711,11 @@ ht-degree: 97%
          + [AEM Sites 페이지에 적응형 양식 임베드](/help/forms/embed-adaptive-form-aem-sites.md)
          + [외부 웹 페이지에 핵심 구성 요소 기반 적응형 양식 임베드](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [외부 웹 페이지에 기초 구성 요소 기반 적응형 양식 임베드](/help/forms/embed-adaptive-form-external-web-page.md)
+         + Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}와 적응형 Forms 통합
+            + [Adobe Marketo Engage과 AEM Forms 통합](/help/forms/integrate-form-to-marketo-engage.md)
+            + [Marketo Engage과 통합할 새 양식 구성](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+            + [기존 적응형 Adobe Marketo Engage에 대한 Forms 데이터 소스 구성](/help/forms/use-marketo-engage-data-source-in-form.md)
+            + [Marketo Engage 기존 양식에 대한 제출 액션을 구성합니다.](/help/forms/submit-adaptive-form-to-marketo-engage.md)
       + Forms 데이터 모델 {#use-form-data-model}
          + [AEM Forms를 데이터베이스 또는 데이터 소스에 연결](/help/forms/data-integration.md)
          + [데이터 소스 구성](/help/forms/configure-data-sources.md)
@@ -722,11 +727,6 @@ ht-degree: 97%
          + [Forms 데이터 모델을 사용하여 작업](/help/forms/work-with-form-data-model.md)
          + [Forms 데이터 모델 사용](/help/forms/using-form-data-model.md)
          + [적응형 양식에 대한 XML 스키마 디자인](/help/forms/adaptive-form-xml-schema-form-model.md)
-         + Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}와 적응형 Forms 통합
-            + [Adobe Marketo Engage과 AEM Forms 통합](/help/forms/integrate-form-to-marketo-engage.md)
-            + [Marketo Engage과 통합할 새 양식 구성](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-            + [기존 적응형 Adobe Marketo Engage에 대한 Forms 데이터 소스 구성](/help/forms/use-marketo-engage-data-source-in-form.md)
-            + [Marketo Engage 기존 양식에 대한 제출 액션을 구성합니다.](/help/forms/submit-adaptive-form-to-marketo-engage.md)
    + 적응형 양식 {#adaptive-forms-authoring}
       + [적응형 양식 만들기](/help/forms/create-an-adaptive-form.md)
       + [적응형 양식 조각 만들기](/help/forms/adaptive-form-fragments.md)
