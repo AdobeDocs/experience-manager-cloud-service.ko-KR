@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5d0af9f7eaea4ad1aa6a979f46713d735f3a461a
+source-git-commit: 6895addee405a33f26b66a436ca7aff99e7ea0aa
 workflow-type: tm+mt
-source-wordcount: '5901'
+source-wordcount: '5914'
 ht-degree: 97%
 
 ---
@@ -963,6 +963,9 @@ ht-degree: 97%
       + [WYSIWYG 및 문서 기반 블록](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
       + [DAM Assets이 있는 페이지](/help/edge/wysiwyg-authoring/dam-assets.md)
       + [WIP Sites 기능](/help/edge/wysiwyg-authoring/wip-features.md)
+      + [사이트 간 코드 재사용](/help/edge/wysiwyg-authoring/repoless.md)
+      + [복수 사이트 관리 무시](/help/edge/wysiwyg-authoring/repoless-msm.md)
+      + [스테이징 및 프로덕션 환경 무시](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
    + 문서 기반 작성 {#document-authoring}
       + [작성](/help/edge/docs/authoring.md)
       + [대량 메타데이터](/help/edge/docs/bulk-metadata.md)
