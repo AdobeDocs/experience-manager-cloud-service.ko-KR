@@ -5,16 +5,16 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 1252814d99927cb8fff81b66f6e7caca92bb6e9a
 workflow-type: tm+mt
-source-wordcount: '1801'
-ht-degree: 86%
+source-wordcount: '1904'
+ht-degree: 82%
 
 ---
 
 # 자산 보기의 메타데이터 {#metadata}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 있는 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 메타데이터는 데이터 또는 데이터에 대한 설명을 의미합니다. 예를 들어 자산 이미지에는 클릭한 카메라에 대한 정보나 저작권 정보가 포함될 수 있습니다. 이 정보는 해당 이미지의 메타데이터입니다. 메타데이터는 효율적인 자산 관리에 있어 매우 중요합니다. 메타데이터는 자산에 대해 사용 가능한 모든 데이터의 집합이지만 해당 자산에 반드시 포함되지는 않을 수 있습니다.
@@ -170,6 +170,19 @@ Assets 보기 배포 내의 폴더에 메타데이터 양식을 할당할 수도
 1. 폴더를 선택하고 **[!UICONTROL 제거]**&#x200B;를 클릭합니다. 목록에서 여러 폴더를 선택할 수도 있습니다.
 
 폴더 세부 정보 페이지로 이동한 후 **[!UICONTROL 메타데이터 양식]** 필드에서 **[!UICONTROL 시스템 매핑된 메타데이터 양식]**&#x200B;을 선택하여 폴더에서 할당된 메타데이터 양식을 제거할 수도 있습니다.
+
+### 메타데이터 양식에서 링크 구성 요소 작업 {#link-component-metadata-form}
+
+링크 구성 요소는 스토리지 링크, 저작권 정보, 연락처 양식 등을 포함하는 외부 URL을 활성화하는 데 사용됩니다. 메타데이터 양식에서 링크 구성 요소를 사용하려면 [메타데이터 양식을 구성](#metadata-forms)해야 합니다.
+
+메타데이터 양식에서 링크 구성 요소를 사용하려면 아래 단계를 따르십시오.
+
+1. 자산 세부 정보 페이지로 이동하여 **[!UICONTROL 링크 URL]**&#x200B;로 이동합니다.
+1. 선택한 에셋에 대해 리디렉션하는 데 사용할 URL을 추가합니다.
+1. **[!UICONTROL 링크 추가]**&#x200B;를 클릭합니다. 다음 작업 중 하나를 수행합니다.
+   * URL을 복사하려면 ![복사 아이콘](assets/do-not-localize/copy.svg)을 클릭하세요.
+   * URL을 편집하려면 ![편집 아이콘](assets/do-not-localize/edit.svg)을 클릭하세요.
+1. 변경 내용을 저장하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 
 ## 다음 단계 {#next-steps}
 
