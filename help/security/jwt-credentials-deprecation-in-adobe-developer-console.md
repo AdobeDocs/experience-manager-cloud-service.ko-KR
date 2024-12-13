@@ -4,10 +4,10 @@ description: AEM의 Adobe Developer Console에서 JWT 자격 증명 사용 중�
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: ht
-source-wordcount: '483'
-ht-degree: 100%
+source-git-commit: d3c00c33925a23ad5b1080c1e864cfdb5a8d1c1b
+workflow-type: tm+mt
+source-wordcount: '769'
+ht-degree: 63%
 
 ---
 
@@ -59,3 +59,35 @@ AEM 고객은 AEM을 사용하여 다른 여러 Adobe 솔루션과의 통합을 
 Cloud Manager는 AEM as a Cloud Service 환경으로 프로비저닝할 때 JWT 자격 증명을 사용하여 Adobe Developer Console 프로젝트를 자동 생성합니다. 아래 스크린샷에 표시된 것처럼 이 프로젝트는 읽기 전용으로 표시되어 있습니다. 고객은 이러한 프로젝트를 OAuth 서버 간 자격 증명으로 마이그레이션할 수 없으며 마이그레이션을 시도해서도 안 됩니다. 대신 Adobe는 자격 증명이 더 이상 사용 불가능한 상태가 되기 전에 이러한 프로젝트를 자체적으로 마이그레이션합니다.
 
 ![자동 생성된 프로젝트](/help/security/assets/jwt-deprecation-autogen-projects.png)
+
+## 자동 생성된 프로젝트 FAQ {#autogen-projects-faqs}
+
+이 섹션에서는 AEM as a Cloud Service에서 자동 생성된 프로젝트의 JWT 자격 증명 사용 중단에 대해 가장 자주 묻는 질문에 대한 답변을 제공합니다.
+
+**자동 생성되는 프로젝트는 어떻게 해야 합니까?**
+Adobe Developer Console으로 이동 | 프로젝트 섹션.  AEM as a Cloud Service 자동 생성 프로젝트에는 &#39;자동 생성&#39; 식별자가 있는 잠금 아이콘이 있습니다.  자동 생성된 프로젝트는 AEM-p#####-e##### 형식을 따르며 기술 계정 사용자가 만듭니다.
+
+<img width="439" alt="이미지" src="https://git.corp.adobe.com/storage/user/16149/files/6b20a8a3-3711-4741-8f2c-ec5e36fe97cc">
+
+
+**자동 생성된 프로젝트에 문제가 발생하면 어떻게 해야 합니까?**
+
+[Adobe 고객 지원 센터](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)에 문의하십시오.
+
+**자동 생성된 프로젝트를 마이그레이션해야 합니까?**
+
+AEM 릴리스 17258(24년 8월) 이상이 있는 환경에 대해 Adobe이 귀하를 대신하여 자동 생성된 를 마이그레이션하므로 조치가 필요하지 않습니다.
+
+**자동 생성된 프로젝트의 마이그레이션 타임라인은 어떻게 됩니까?**
+
+Adobe은 개발 환경을 시작으로 2025년 1분기에 단계별 마이그레이션 접근 방식을 시작할 예정입니다.
+
+**AEM 릴리스 17258(24년 8월)보다 오래된 AEM 릴리스가 있는 경우 AEM as a Cloud Service 인스턴스는 어떤 영향을 받습니까?**
+
+자동 생성된 프로젝트 통합은 2025년 6월까지 OAuth로 마이그레이션되지 않으면 작동하지 않습니다.
+
+원활한 전환을 위해 고객은 즉시 [고객 지원 Adobe](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)에 연락하여 [최신 AEM 릴리스](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest)로 업데이트하는 프로세스를 시작해야 합니다. 이렇게 하면 회귀 테스트에 충분한 시간을 제공하고 Adobe이 프로젝트 마이그레이션을 효율적으로 관리할 수 있습니다.
+
+**AEM as a Cloud Service AEM 릴리스를 업그레이드하지 않고 지원되는 OAuth 버전으로 업그레이드할 수 있습니까?**
+
+아니요. 원활한 전환을 위해 고객은 즉시 [고객 지원 Adobe](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)에 연락하여 [최신 AEM 릴리스](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest)로 업데이트하는 프로세스를 시작해야 합니다. 이렇게 하면 회귀 테스트에 충분한 시간을 제공하고 Adobe이 프로젝트 마이그레이션을 효율적으로 관리할 수 있습니다.
