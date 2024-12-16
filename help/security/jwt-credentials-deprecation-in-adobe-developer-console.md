@@ -4,9 +4,9 @@ description: AEM의 Adobe Developer Console에서 JWT 자격 증명 사용 중�
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
-source-git-commit: d3c00c33925a23ad5b1080c1e864cfdb5a8d1c1b
+source-git-commit: 18e9daad8bec6749d493994264792c0cd3b55d15
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '770'
 ht-degree: 63%
 
 ---
@@ -64,11 +64,11 @@ Cloud Manager는 AEM as a Cloud Service 환경으로 프로비저닝할 때 JWT 
 
 이 섹션에서는 AEM as a Cloud Service에서 자동 생성된 프로젝트의 JWT 자격 증명 사용 중단에 대해 가장 자주 묻는 질문에 대한 답변을 제공합니다.
 
-**자동 생성되는 프로젝트는 어떻게 해야 합니까?**
+**자동 생성된 프로젝트를 어떻게 합니까?**
+
 Adobe Developer Console으로 이동 | 프로젝트 섹션.  AEM as a Cloud Service 자동 생성 프로젝트에는 &#39;자동 생성&#39; 식별자가 있는 잠금 아이콘이 있습니다.  자동 생성된 프로젝트는 AEM-p#####-e##### 형식을 따르며 기술 계정 사용자가 만듭니다.
 
-<img width="439" alt="이미지" src="https://git.corp.adobe.com/storage/user/16149/files/6b20a8a3-3711-4741-8f2c-ec5e36fe97cc">
-
+![자동 생성된 프로젝트](/help/security/assets/jwt-alert.png)
 
 **자동 생성된 프로젝트에 문제가 발생하면 어떻게 해야 합니까?**
 
