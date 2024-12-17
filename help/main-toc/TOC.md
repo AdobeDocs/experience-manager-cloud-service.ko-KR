@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bd502ff77faea5d6e7bbe6d39c0c22cb54e3c165
+source-git-commit: 4e9d49aef85f79e99894153237cc58a75458b1e5
 workflow-type: tm+mt
 source-wordcount: '5929'
 ht-degree: 97%
@@ -479,6 +479,7 @@ ht-degree: 97%
    + [Assets as a Cloud Service Ultimate 활성화](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
    + [Assets 공동 작업자 사용자](/help/assets/assets-collaborator-users.md)
+   + [Edge Delivery Services을 위한 콘텐츠를 작성하는 동안 AEM Assets 통합](/help/assets/integrate-aem-assets-edge-delivery-services.md)
    + 디지털 자산 관리 {#manage}
       + 마이크로 프론트엔드 자산 선택기 {#asset-selector}
          + [자산 선택기 개요](/help/assets/overview-asset-selector.md)
@@ -649,7 +650,6 @@ ht-degree: 97%
       + [Content Credentials](/help/assets/content-credentials.md)
       + [AEM 및 Dynamic Media에 자산 게시](/help/assets/publish-assets-to-aem-and-dm.md)
       + [AEM Assets 보기 UI 확장성](/help/assets/aem-assets-view-ui-extensibility.md)
-      + [Edge Delivery Services을 위한 콘텐츠를 작성하는 동안 AEM Assets 통합](/help/assets/integrate-aem-assets-edge-delivery-services.md)
    + Content Hub {#content-hub}
       + [개요](/help/assets/product-overview.md)
       + [Content Hub 배포](/help/assets/deploy-content-hub.md)
