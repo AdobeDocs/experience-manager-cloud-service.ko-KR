@@ -2,10 +2,10 @@
 title: Content Hub에 대한 자산 승인
 description: Assetsas a Cloud Service 에서 자산을 승인하여 Content Hub에서 사용할 수 있도록 하는 방법을 알아봅니다.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 95bf82ceead9d06bc0f5720f1a6af945afc27622
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 6%
+source-wordcount: '837'
+ht-degree: 17%
 
 ---
 
@@ -61,7 +61,7 @@ Assets 보기에서 폴더 내의 자산을 일괄 승인하려면 다음을 수
 
 1. 자산을 선택하고 **[!UICONTROL 일괄 메타데이터 편집]**&#x200B;을 클릭합니다.
 
-1. 오른쪽 창의 [!UICONTROL 속성] 섹션에 있는 **[!UICONTROL 상태]** 필드에서 **[!UICONTROL 승인됨]**&#x200B;을(를) 선택합니다.
+1. 오른쪽 창 **[!UICONTROL 속성]** 섹션의 사용 가능한 **[!UICONTROL 상태]** 필드에서 [!UICONTROL 승인됨]을 선택합니다.
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
@@ -85,6 +85,12 @@ Assets 보기에서 관리자 보기로 전환한 후 폴더에 추가된 모든
    1. **[!UICONTROL 속성에 매핑]**&#x200B;을(를) _(으)로 업데이트합니다./jcr:content/metadata/dam:status_.
    1. 기본값을 _승인됨_(으)로 변경합니다.
 
+1. 6단계와 마찬가지로 오른쪽의 **[!UICONTROL 양식 작성]** 섹션에서 **[!UICONTROL 한 줄 텍스트 필드]**&#x200B;를 양식의 메타데이터 섹션으로 끌어옵니다.
+1. 새로 추가한 필드를 클릭한 다음 **[!UICONTROL 설정]** 패널에서 다음 업데이트를 수행합니다.
+   1. **[!UICONTROL 필드 레이블]**&#x200B;을(를) _활성화 대상_(으)로 변경합니다.
+   1. **[!UICONTROL 속성에 매핑]**&#x200B;을(를) _(으)로 업데이트합니다./jcr:content/metadata/dam:activationTarget_.
+   1. 기본값을 _contenthub_(으)로 변경합니다.
+
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL 메타데이터 프로필]** 페이지에서 새로 만든 메타데이터 프로필을 선택합니다.
 1. 맨 위의 작업 표시줄에서 **[!UICONTROL 폴더에 메타데이터 프로필 적용]**&#x200B;을 클릭합니다.
@@ -103,8 +109,8 @@ Assets 보기에서 관리자 보기로 전환한 후 폴더에 추가된 모든
 
 Content Hub을 사용하여 업로드한 에셋의 표시 여부는 [자동 승인 토글](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub)을 활성화했는지 여부에 따라 다릅니다.
 
-* **[!UICONTROL 자동 승인]** 전환이 활성화된 경우 Content Hub을 사용하여 업로드하는 에셋을 자동으로 사용할 수 있습니다.
+* **[!UICONTROL 자동 승인]** 토글이 활성화되어 있으면 Content Hub를 사용하여 업로드한 자산을 자동으로 사용할 수 있습니다.
 
-* **[!UICONTROL 자동 승인]** 전환이 비활성화된 경우 Content Hub을 사용하여 업로드한 자산이 자동으로 표시되지 않습니다. 자산은 Assets as a Cloud Service 환경의 `hydrated-assets` 폴더에서 사용할 수 있습니다. 폴더로 이동한 다음 해당 에셋의 상태를 [일괄 편집](#bulk-approve-assets-content-hub)하여 해당 에셋을 Content Hub에 표시할 수 있도록 `Approved`합니다.
+* **[!UICONTROL 자동 승인]** 토글을 비활성화하면 Content Hub를 사용하여 업로드한 자산이 자동으로 표시되지 않습니다. 자산은 Assets as a Cloud Service 환경의 `hydrated-assets` 폴더에서 사용할 수 있습니다. 폴더로 이동하여 해당 자산의 상태를 `Approved`로 [일괄 편집](#bulk-approve-assets-content-hub)하여 Content Hub에 표시할 수 있습니다.
 
 ![Content Hub 승인 프로세스](/help/assets/assets/content-hub-approval.png)
