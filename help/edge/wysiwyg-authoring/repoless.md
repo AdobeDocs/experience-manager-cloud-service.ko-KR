@@ -3,13 +3,13 @@ title: 사이트 간 코드 재사용
 description: 대부분 동일하게 보이고 동작하지만 콘텐츠가 다른 유사한 사이트가 많은 경우, 무시 모델의 여러 사이트에서 코드를 공유하는 방법을 알아봅니다.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: e25e21984ebadde7076d95c6051b8bfca5b2ce03
+exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
+source-git-commit: 7b37f3d387f0200531fe12cde649b978f98d5d49
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1041'
 ht-degree: 0%
 
 ---
-
 
 # 사이트 간 코드 재사용 {#repoless}
 
@@ -45,7 +45,7 @@ AEM에서는 여러 GitHub 저장소를 만들고 동기화를 유지하면서 �
 
 1. [액세스 토큰 검색](#access-token)
 1. [구성 서비스 설정](#config-service)
-1. [액세스 제어 설정](#access-control)
+1. [사이트 구성 및 기술 계정 추가](#access-control)
 1. [AEM 구성 업데이트](#update-aem)
 1. [사이트 인증](#authenticate-site)
 
@@ -126,9 +126,9 @@ curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
 
 공개 구성이 만들어지면 `https://main--<your-aem-project>--<your-github-org>.aem.page/config.json`과(와) 유사한 URL을 통해 액세스하여 확인할 수 있습니다.
 
-### 액세스 제어 설정 {#access-control}
+### 사이트 구성에 대한 경로 매핑 추가 및 기술 계정 설정 {#access-control}
 
-액세스 제어를 설정하려면 기술 계정을 제공해야 합니다.
+사이트 구성을 만들고 경로 매핑에 추가해야 합니다.
 
 1. 사이트의 루트에 새 페이지를 만들고 [**구성** 템플릿을 선택합니다.](/help/edge/wysiwyg-authoring/tabular-data.md#other)
    * 미리 정의된 `key` 및 `value` 열만 있는 구성을 비워 둘 수 있습니다. 만들기만 하면 됩니다.
@@ -156,28 +156,31 @@ curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
    ```text
    curl 'https://main--<your-aem-project>--<your-github-org>.aem.live/config.json'
    ```
-1. 이제 브라우저에서 다음 링크의 응답으로 기술 계정을 검색할 수 있습니다.
+
+사이트 구성이 매핑되면 기술 계정을 정의하여 게시 권한을 갖도록 액세스 제어를 구성할 수 있습니다.
+
+1. 브라우저에서 다음 링크의 응답으로 기술 계정을 검색합니다.
 
    ```text
    https://author-p<programID>-e<envionmentID>.adobeaemcloud.com/bin/franklin.delivery/<your-github-org>/<your-aem-project>/main/.helix/config.json
    ```
 
-응답은 다음과 비슷합니다.
+1. 응답은 다음과 비슷합니다.
 
-```json
-{
-  "total": 1,
-  "offset": 0,
-  "limit": 1,
-  "data": [
-    {
-      "key": "admin.role.publish",
-      "value": "<tech-account-id>@techacct.adobe.com"
-    }
-  ],
-  ":type": "sheet"
-}
-```
+   ```json
+   {
+     "total": 1,
+     "offset": 0,
+     "limit": 1,
+     "data": [
+       {
+         "key": "admin.role.publish",
+         "value": "<tech-account-id>@techacct.adobe.com"
+       }
+     ],
+     ":type": "sheet"
+   }
+   ```
 
 1. 다음과 유사한 cURL 명령을 사용하여 구성에서 기술 계정을 설정합니다.
 
