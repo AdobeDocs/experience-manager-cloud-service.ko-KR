@@ -2,9 +2,9 @@
 title: Edge Delivery Services을 위한 콘텐츠를 작성하는 동안 AEM Assets 통합
 description: AEM Assets을 Edge Delivery Services과 통합하는 방법을 알아봅니다. 이 통합을 통해 AEM Assets을 Microsoft Word 및 Google 문서와 통합하고, AEM Assets을 범용 편집기와 통합하고, Dynamic Media을 OpenAPI 기능과 통합하고, Dynamic Media을 OpenAPI 기능과 통합하여 Microsoft Word 및 Google 문서를 통합할 수 있습니다.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: def807c2bb1b2fe337879b3abe2c0a5d1b5f1dea
+source-git-commit: 9e7701152e1da4afc73d3d5ba271b04df2054397
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ OpenAPI 기능과 함께 DM을 사용하여 제공되는 에셋을 사용할 수
 * Open API 기능이 있는 Assets이 활성화된 Dynamic Media Cloud Service 환경에 대한 권한.
 * Dynamic Media 라이선스.
 * AEM Assets 사이드 킥 플러그인이 활성화되었으며 이미지 에셋에 대한 복사 참조가 활성화되었습니다. 자세한 내용은 문서 기반 작성에 대해서는 [this](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode)을(를) 참조하고 유니버설 편집기 기반 작성에 대해서는 [this](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview)을(를) 참조하십시오.
-* Assets이 승인되었습니다. 승인된 Assets은 Assets Cloud Service 백엔드 또는 UI 작업을 통해 `dam:status=Approved`을(를) 가집니다.
+* Assets이 승인되었습니다. 승인된 자산에는 Assets Cloud Service 백엔드 또는 UI 작업을 통해 `dam:status=Approved`이(가) 있습니다.
 
 ### OpenAPI 기능과 함께 Dynamic Media을 사용하여 제공된 에셋 사용{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
 
