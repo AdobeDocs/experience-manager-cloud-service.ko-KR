@@ -1,10 +1,10 @@
 ---
 title: Edge Delivery Services을 위한 콘텐츠를 작성하는 동안 AEM Assets 통합
-description: AEM Assets을 Edge Delivery Services과 통합하는 방법을 알아봅니다. 이 통합을 통해 AEM Assets을 Microsoft Word 및 Google 문서와 통합하고, AEM Assets을 범용 편집기와 통합하고, Dynamic Media을 OpenAPI 기능과 통합하고, Dynamic Media을 OpenAPI 기능과 통합하여 Microsoft Word 및 Google 문서를 통합할 수 있습니다. 이 통합 후에는 Microsoft Word 및 Google 문서 내에서 AEM Assets을 사용하고, 유니버설 편집기 내에서 AEM Assets을 사용하고, 유니버설 편집기 내에서 OpenAPI 기능과 함께 Dynamic Media을 사용하여 자산을 전달하고, Microsoft Word 및 Google 문서 내에서 OpenAPI 기능과 함께 Dynamic Media을 사용하여 자산을 전달할 수 있습니다.
+description: AEM Assets을 Edge Delivery Services과 통합하는 방법을 알아봅니다. 이 통합을 통해 AEM Assets을 Microsoft Word 및 Google 문서와 통합하고, AEM Assets을 범용 편집기와 통합하고, Dynamic Media을 OpenAPI 기능과 통합하고, Dynamic Media을 OpenAPI 기능과 통합하여 Microsoft Word 및 Google 문서를 통합할 수 있습니다.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 87acadf3664a180df758ee40e5f5e35c68aef7b8
+source-git-commit: def807c2bb1b2fe337879b3abe2c0a5d1b5f1dea
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '696'
 ht-degree: 0%
 
 ---
