@@ -4,7 +4,8 @@ description: 턴스타일 서비스를 통해 손쉽게 양식 보안을 강화�
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 819c376671ee141e1bcf885a22f161b327ce2c15
+exl-id: e9c13228-0857-4936-9c39-12ed2bddf429
+source-git-commit: 709b3381eedefe7619cb961f345f202cadf512f3
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 15%
@@ -91,13 +92,13 @@ AEM Forms을 Turnstile 서비스와 통합하려면 다음 단계를 수행하�
    * **[!UICONTROL 구성 설정]:** Turnstile Captcha 서비스에 대해 구성된 클라우드 구성을 선택하십시오.
      >[!NOTE]
      >* 유사한 목적으로 환경에 여러 클라우드 구성을 가질 수 있습니다. 그러므로, 서비스를 신중하게 선택하십시오. 서비스가 목록에 없으면 [Turnstile 구성](#steps-to-configure-hcaptcha) 섹션을 참조하여 AEM Forms 환경을 Turnstile 서비스와 연결하는 구성 컨테이너를 만드는 방법에 대해 알아보십시오.
+
    * **[!UICONTROL 유효성 검사]:** 오류 메시지 형식으로 CAPTCHA 유효성 검사를 제공합니다.
+
       * **오류 메시지:** Captcha 제출이 실패할 때 사용자에게 표시할 오류 메시지를 제공합니다.
         >[!NOTE]
         >* 클라이언트측에서 CAPTCHA가 채워지는 경우에만 오류 메시지가 나타납니다.
-
-
-1. **[!UICONTROL 완료]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
 
 이제 양식 작성기가 성공적으로 턴스타일 서비스에 의해 제기된 문제를 지우는 합법적인 양식만 양식 제출이 허용됩니다.
