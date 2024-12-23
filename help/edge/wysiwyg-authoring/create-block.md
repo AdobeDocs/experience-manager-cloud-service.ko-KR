@@ -22,7 +22,7 @@ Edge Delivery Services 프로젝트를 통해 WYSIWYG 작성 시 범용 편집�
 
 이 안내서에는 Edge Delivery Services 프로젝트 및 범용 편집기를 사용한 WYSIWYG 작성에 대한 기존 지식이 필요합니다. 이 안내서를 시작하기 전에 Edge Delivery Services에 액세스하고 다음을 포함한 기본 사항을 숙지해야 합니다.
 
-* [Edge Delivery Service 튜토리얼](/help/edge/developer/tutorial.md)이 완료되었습니다.
+* [Edge Delivery Service 튜토리얼](/help/edge/developer/tutorial.md)을 완료했습니다.
 * [AEM Cloud Service 샌드박스](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)에 액세스할 수 있습니다.
 * [동일한 샌드박스 환경에서 범용 편집기를 활성화](/help/implementing/universal-editor/getting-started.md)했습니다.
 * [Edge Delivery Services를 사용한 WYSIWYG 작성을 위한 개발자 시작 안내서](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)의 안내서를 완료하셨습니다.

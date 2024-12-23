@@ -1,17 +1,17 @@
 ---
-title: Content Hub 자주 묻는 질문 (FAQ)
+title: Content Hub 자주 묻는 질문(FAQ)
 description: Content Hub에 대한 가장 자주 묻는 질문(FAQ)에 대한 답변을 받아 보십시오.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 source-git-commit: a509cb6b2d6fea0d8c53c570c46b1feef2a15191
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1113'
+ht-degree: 91%
 
 ---
 
 # Content Hub 자주 묻는 질문 {#content-hub-frequently-asked-questions}
 
-| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능 포함 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [모범 사례 검색](/help/assets/search-best-practices.md) | [메타데이터 모범 사례](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [OpenAPI 기능이 포함된 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 개발자 설명서](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Content Hub 자주 묻는 질문](assets/content-hub-faqs.png)
@@ -47,7 +47,7 @@ AEM as a Cloud Service Assets에서 관리되는 사용자/프로덕션 콘텐�
 * 프로덕션 환경(Cloud Manager 프로그램)에서 [Content Hub 활성화](/help/assets/deploy-content-hub.md#enable-content-hub)
 * 프로덕션 작성부터 Content Hub 제품 프로필까지 [AEM 관리자 사용자 추가](/help/assets/deploy-content-hub.md#onboard-content-hub-administrator).
 * AEM 관리자 [Content Hub 구성](/help/assets/configure-content-hub-ui-options.md)
-* AEM 프로덕션 작성자의 AEM 관리자 또는 AEM 사용자가 [Content Hub에 대한 여러 자산을 승인](/help/assets/approve-assets-content-hub.md)하는데, DAM에서 프로덕션 콘텐츠를 변경하지 않으려면 AEM 작성자 인스턴스에 별도의 평가 폴더를 만들고 DAM에서 일부 자산을 업로드/태그 또는 복사할 수 있습니다.
+* AEM 프로덕션 작성자의 AEM 관리자 또는 AEM 사용자가 [Content Hub에 대한 여러 자산을 승인](/help/assets/approve-assets-content-hub.md)합니다. DAM에서 프로덕션 콘텐츠를 변경하지 않으려면 AEM 작성자 인스턴스에 별도의 평가 폴더를 만들고 DAM에서 일부 자산을 해당 폴더로 업로드/태그 또는 복사할 수 있습니다.
 * Admin Console 관리자가 [일부 사용자를 선택해](/help/assets/deploy-content-hub.md#onboard-content-hub-users) Content Hub 제품 프로필에 추가하여 평가를 시작하도록 할 수 있습니다.
 * 평가가 완료되면 작성자 인스턴스의 AEM 사용자가 테스트 자산에서 승인을 제거하고, Content Hub의 프로덕션 자산을 승인하면 Admin Console 관리자가 Content Hub 및 승인된 콘텐츠에 액세스해야 하는 모든 사용자를 추가할 수 있습니다. 축하합니다. 이제 Content Hub가 활성화되었습니다.
 
@@ -65,7 +65,7 @@ Content Hub를 사용하여 업로드한 자산의 표시는 구성 사용자 �
 
 * **자동 승인** 토글이 활성화되어 있으면 Content Hub를 사용하여 업로드한 자산을 자동으로 사용할 수 있습니다.
 
-* **자동 승인** 토글을 비활성화하면 Content Hub를 사용하여 업로드한 자산이 자동으로 표시되지 않습니다. 자산은 Assets as a Cloud Service 환경의 `hydrated-assets` 폴더에서 사용할 수 있습니다. 폴더로 이동하여 해당 자산의 상태를 `Approved`로 [일괄 편집](/help/assets/approve-assets-content-hub.md)하여 Content Hub에 표시할 수 있습니다.
+* **자동 승인** 토글을 비활성화하면 Content Hub를 사용하여 업로드한 자산이 자동으로 표시되지 않습니다. 자산은 Assets as a Cloud Service 환경의 `hydrated-assets` 폴더에서 사용할 수 있습니다. 폴더로 이동하여 해당 자산을 `Approved` 상태로 [일괄 편집](/help/assets/approve-assets-content-hub.md)하여 Content Hub에 표시할 수 있습니다.
 
 ## AEM as a Cloud Service 환경에서 Content Hub를 사용하여 업로드한 자산을 빠르게 찾는 방법은 무엇입니까? {#find-uploaded-assets-on-aem-cloud}
 

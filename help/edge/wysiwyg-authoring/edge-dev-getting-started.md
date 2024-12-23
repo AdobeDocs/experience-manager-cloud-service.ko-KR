@@ -20,7 +20,7 @@ ht-degree: 100%
 
 이 안내서를 시작하기 전에 다음을 포함한 Edge Delivery Services의 기본 사항을 숙지하고 액세스할 수 있어야 합니다.
 
-* [Edge Delivery Service 튜토리얼](/help/edge/developer/tutorial.md)이 완료되었습니다.
+* [Edge Delivery Service 튜토리얼](/help/edge/developer/tutorial.md)을 완료했습니다.
 * [AEM Cloud Service 샌드박스](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)에 액세스할 수 있습니다.
 * [동일한 샌드박스 환경에서 범용 편집기를 활성화](/help/implementing/universal-editor/getting-started.md)했습니다.
 
@@ -58,25 +58,25 @@ Edge Delivery는 GitHub를 활용하므로 GitHub 저장소에서 바로 코드�
 
 먼저 Adobe 템플릿을 기반으로 GitHub에서 새 프로젝트를 만들어야 합니다.
 
-1. [`https://github.com/adobe-rnd/aem-boilerplate-xwalk`](https://github.com/adobe-rnd/aem-boilerplate-xwalk)로 이동하여 **이 템플릿 사용**&#x200B;을 클릭하고 **새 저장소 생성**&#x200B;을 선택합니다.
+1. [`https://github.com/adobe-rnd/aem-boilerplate-xwalk`](https://github.com/adobe-rnd/aem-boilerplate-xwalk)로 이동하여 **이 템플릿 사용**&#x200B;을 클릭하고 **새 저장소 만들기**&#x200B;를 선택합니다.
 
    * 이 옵션을 보려면 GitHub에 로그인해야 합니다.
 
    ![저장소 프로젝트 복사](assets/edge-dev-getting-started/use-template-project.png)
 
-1. 기본적으로 저장소는 사용자에게 할당됩니다. 필요에 따라 이를 변경하고 저장소 이름과 설명을 입력한 후 **저장소 생성**&#x200B;을 클릭합니다.
+1. 기본적으로 저장소는 사용자에게 할당됩니다. 필요에 따라 이를 변경하고 저장소 이름과 설명을 입력한 후 **저장소 만들기**&#x200B;를 클릭합니다.
 
-   ![저장소 생성](assets/edge-dev-getting-started/create-repo.png)
+   ![저장소 만들기](assets/edge-dev-getting-started/create-repo.png)
 
 1. 동일한 브라우저의 새 탭에서 [`https://github.com/apps/aem-code-sync`](https://github.com/apps/aem-code-sync)로 이동하여 **구성**&#x200B;을 클릭합니다.
 
    ![Code Sync](assets/edge-dev-getting-started/configure-code-sync.png)
 
-1. 이전 단계에서 새 저장소를 생성한 조직에 대해 **구성**&#x200B;을 클릭합니다.
+1. 이전 단계에서 새 저장소를 만든 조직에 대해 **구성**&#x200B;을 클릭합니다.
 
    ![코드 동기화를 위한 조직 선택](assets/edge-dev-getting-started/code-sync-org.png)
 
-1. AEM Code Sync GitHub 페이지의 **저장소 액세스** 아래에서 **저장소만 선택**&#x200B;을 선택하고, 이전 단계에서 생성한 저장소를 선택한 다음 **저장**&#x200B;을 클릭합니다.
+1. AEM Code Sync GitHub 페이지의 **저장소 액세스** 아래에서 **저장소만 선택**&#x200B;을 선택하고, 이전 단계에서 만든 저장소를 선택한 다음 **저장**&#x200B;을 클릭합니다.
 
    ![AEM Code Sync 액세스 권한 부여](assets/edge-dev-getting-started/grant-code-sync-acces.png)
 
@@ -126,7 +126,7 @@ Edge Delivery는 GitHub를 활용하므로 GitHub 저장소에서 바로 코드�
 >
 >범용 편집기를 사용하여 사이트를 편집하려면 Chromium 기반 브라우저를 사용해야 합니다.
 
-1. [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)에서 GitHub 최신 Edge Delivery Services로 WYSIWYG 작성 사이트 템플릿을 다운로드하십시오.
+1. [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)의 GitHub에서 Edge Delivery Services와 WYSIWYG 작성 기능을 지원하는 최신 사이트 템플릿을 다운로드하십시오.
 
 1. AEM as a Cloud Service 작성 인스턴스에 로그인하고 사이트 콘솔로 이동하여 **만들기** -> **템플릿으로 사이트 생성**&#x200B;을 탭하거나 클릭합니다.
 
@@ -188,7 +188,7 @@ Edge Delivery는 GitHub를 활용하므로 GitHub 저장소에서 바로 코드�
 
 ## 다음 단계 {#next-steps}
 
-Edge Delivery Services 프로젝트와 함께 WYSIWYG이 작성되어 있으며, 자체 블록을 만들고 스타일을 지정할 수 있습니다.
+이제 Edge Delivery Services 프로젝트에서 WYSIWYG가 작성 기능을 사용할 수 있으므로, 자체 블록을 만들고 스타일을 지정할 수 있습니다.
 
 자세한 내용은 [범용 편집기에 사용하도록 구성된 블록 만들기](/help/edge/wysiwyg-authoring/create-block.md) 안내서를 참조하십시오.
 

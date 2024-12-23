@@ -2,14 +2,14 @@
 source-git-commit: 60cf4c34f3b4d7c7a757f2274f1a02de8ae51e11
 workflow-type: tm+mt
 source-wordcount: '1323'
-ht-degree: 88%
+ht-degree: 95%
 
 ---
 # 스니펫 {#snippets}
 
 ## Headless 체험판 프로모션 {#headless-trials-promotion}
 
-[![30일 체험판을 사용하여 Headless CMS에 대해 알아보기](./assets/aem-headless-trial-promo.png){align="left"}](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en)
+[![Headless CMS를 30일 체험판으로 경험해 보세요](./assets/aem-headless-trial-promo.png){align="left"}](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en)
 
 ## Edge Delivery Services 작성 {#edge-delivery-authoring}
 
@@ -54,7 +54,7 @@ ht-degree: 88%
 * [Salesforce 애플리케이션에 적응형 양식 연결](/help/forms/aem-forms-salesforce-integration.md)
 * [Microsoft에 적응형 양식 연결](/help/forms/ms-dynamics-odata-configuration.md)
 * [Adobe Marketo Engage에 적응형 양식 연결](/help/forms/integrate-form-to-marketo-engage.md)
-* [사용자 지정 제출 액션 만들기](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
+* [사용자 정의 제출 액션 만들기](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
 ## 추가 참조 {#see-more-forms-eds}
 
@@ -115,8 +115,8 @@ ht-degree: 88%
    </tr>
    <tr>
    <td>패널 간 탐색</td>
-   <td> <b>다음 단추</b> 및 <b>이전 단추</b> 구성 요소가 제공되어 패널 사이를 탐색합니다. 컨테이너 내에 배치된 탐색 단추는 하위 요소에서 작동합니다</td>
-   <td> <b>패널의 탐색</b> 규칙은 규칙 편집기에서 사용할 수 있으며, 사용자가 패널의 자식 간 탐색을 위한 규칙을 만들 수 있습니다.
+   <td> 패널 간 탐색할 수 있도록 <b>다음 버튼</b> 및 <b>이전 버튼</b> 구성 요소가 제공됩니다. 컨테이너 내에 배치된 탐색 버튼은 하위 요소에서 작동합니다.</td>
+   <td> <b>패널의 탐색 규칙</b>은 규칙 편집기에서 사용할 수 있으므로 사용자는 패널 하위 그룹 간 탐색을 위한 규칙을 만들 수 있습니다.
    </td>
    </tr>
    </tr>
@@ -136,7 +136,7 @@ ht-degree: 88%
 * [핵심 구성 요소를 기반으로 하는 양식의 시각적 규칙 편집기에서 서비스 개선 사항 호출](/help/forms/invoke-service-enhancements-rule-editor.md)
 * [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 소개](/help/forms/create-and-use-custom-functions.md)
 * [핵심 구성 요소 기반 적응형 양식의 사용자 정의 함수 만들기](/help/forms/custom-function-core-component-create-function.md)
-* [사용자 지정 함수의 범위 개체](/help/forms/custom-function-core-component-scope-function.md)
+* [사용자 정의 함수의 범위 오브젝트](/help/forms/custom-function-core-component-scope-function.md)
 * [사용자 정의 함수 개발 및 사용의 예](/help/forms/custom-function-core-components-use-cases.md)
 
 
@@ -190,9 +190,9 @@ ht-degree: 88%
 >범용 편집기를 사용하려면 다음 중 하나를 수행해야 합니다.
 >
 >* IP 허용 목록을 활성화하지 않습니다.
->* [Universal Editor Service의 자체 인스턴스를 실행합니다.](/help/implementing/universal-editor/local-dev.md)
+>* [범용 편집기 서비스의 자체 인스턴스를 실행합니다.](/help/implementing/universal-editor/local-dev.md)
 
-## Dynamic Media를 사용하여 작업 {#work-with-dynamic-media}
+## Dynamic Media로 작업 {#work-with-dynamic-media}
 
 >[!TIP]
 >
@@ -202,7 +202,7 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->* Dynamic Media를 처음 사용하십니까? Dynamic Media에 대한 빠르고 간략한 개요를 보시려면 [Dynamic Media로 작업](/help/assets/dynamic-media/dynamic-media.md)을 참조하시기 바랍니다.
+>* Dynamic Media를 처음 사용하십니까? Dynamic Media에 대한 빠르고 간략한 개요를 보려면 [Dynamic Media로 작업](/help/assets/dynamic-media/dynamic-media.md)을 참조하십시오.
 >
 >* 기능을 최대로 활용하려면 [Dynamic Media 모범 사례](/help/assets/dynamic-media/dm-best-practices.md)를 참조하십시오.
 >
@@ -217,11 +217,11 @@ ht-degree: 88%
 >* [대화형 3D 기반 경험](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video)을 제공합니다.
 >* 기타 [Dynamic Media 리소스 뱅크](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use)
 
-## 지원 티켓 기록 {#support-ticket}
+## 지원 티켓 로그 {#support-ticket}
 
 제품 문제 해결에 추가 조사가 필요하고 응답 SLT를 충족해야 하는 경우 지원 티켓을 제출할 수 있습니다.
 
-지원 티켓을 기록하려면 먼저 Cloud Manager에서 Edge Delivery 사이트를 등록해야 합니다. 모든 AEM as a Cloud Service 사용자는 Cloud Manager에 웹 사이트를 등록하는 것이 좋으며, [이를 통해 여러 이점을 얻을 수 있습니다](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). 아직 사이트를 등록하지 않았다면 [Cloud Manager 설명서](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)를 통해 자세히 알아보십시오.
+지원 티켓을 로그하려면 먼저 Cloud Manager에서 Edge Delivery 사이트를 등록해야 합니다. 모든 AEM as a Cloud Service 사용자는 Cloud Manager에 웹 사이트를 등록하는 것이 좋으며, [이를 통해 여러 이점을 얻을 수 있습니다](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). 아직 사이트를 등록하지 않았다면 [Cloud Manager 설명서](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)를 통해 자세히 알아보십시오.
 
 **지원 티켓을 기록하려면:**
 
@@ -229,6 +229,6 @@ ht-degree: 88%
 1. 티켓 제목에서 **Edge Delivery**&#x200B;를 추가합니다.
 1. 설명에서 문제 설명 외에 다음 세부 정보를 제공합니다.
 
-   * 라이브 웹 사이트의 URL입니다. 예: `www.mydomain.com`.
-   * 원본 웹 사이트의 URL(`.hlx` URL)입니다.
+   * 라이브 웹 사이트의 URL. 예: `www.mydomain.com`.
+   * 원본 웹 사이트의 URL(`.hlx` URL).
 

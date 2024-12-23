@@ -49,17 +49,17 @@ AEM을 사용하여 WYSIWYG 콘텐츠를 작성하고 Edge Delivery Services에 
 1. 예제의 첫 번째 항목은 웹 사이트 페이지의 경로 매핑입니다.
 1. 두 번째 항목은 AEM 작성 저장소의 해당 스프레드시트 페이지에 대한 `.helix/config.json` 매핑을 제어합니다.
 
-이 예제에서는 `/content/aem-boilerplate/...`에 저장된 모든 페이지가 `https://main--my-site--org.aem.live/....`에 직접 Edge Delivery Services 사이트로 공개 액세스할 수 있습니다.
+이 예제에서는 `/content/aem-boilerplate/...`에 저장된 모든 페이지를 `https://main--my-site--org.aem.live/....`에 있는 Edge Delivery Services 사이트에서 직접 공개적으로 액세스할 수 있습니다.
 
 >[!TIP]
 >
->스프레드시트로 관리되는 모든 표 형식의 데이터(예: 메타데이터, 리디렉션 및 분류)는 일반적으로 Edge Delivery Services에서 `.json` API URL로 게시됩니다. 그렇게 하려면 매핑 구성에 개별적으로 나열되어야 합니다.
+>스프레드시트로 관리되는 모든 표 형식의 데이터(예: 메타데이터, 리디렉션 및 분류)는 일반적으로 Edge Delivery Services에서 `.json` API URL로 게시됩니다. 이를 위해서는 표 형식 데이터가 매핑 구성에 개별적으로 나열되어야 합니다.
 >
->자세한 내용은 [스프레드시트를 사용하여 표 형식 데이터 관리](/help/edge/wysiwyg-authoring/tabular-data.md) 문서를 참조하십시오.
+>자세한 내용은 [스프레드시트를 사용한 표 형식 데이터 관리](/help/edge/wysiwyg-authoring/tabular-data.md) 문서를 참조하십시오.
 
 ### 포함 {#includes}
 
-`includes` 구성은 실제로 Edge Delivery Services에 복제되는 콘텐츠 경로를 제어합니다. 모든 경로 배열을 고정할 수 있으며 일반적으로 사이트 최상위 루트 페이지를 포함합니다.
+`includes` 구성은 실제로 Edge Delivery Services에 복제되는 콘텐츠 경로를 제어합니다. 모든 경로 배열을 포함할 수 있으며 일반적으로 사이트 최상위 루트 페이지를 포함합니다.
 
 Edge Delivery Services 페이지에서 사용되는 자산은 일반적으로 웹 페이지와 함께 게시됩니다. AEM 작성 인스턴스에서 Edge Delivery Services로 자동으로 내보냅니다.
 
@@ -67,7 +67,7 @@ Edge Delivery Services 페이지에서 사용되는 자산은 일반적으로 �
 >
 >Edge Delivery Services에 직접 자산을 게시하려는 사용 사례가 있는 경우(예: 페이지 컨텍스트 외부의 URL에서 이미지 또는 PDF에 직접 액세스하는 것을 원하는 경우), 구성의 `includes` 섹션에도 DAM 경로를 추가해야 합니다.
 >
->예를 들어 PDF 세트가 포함된 `/content/dam/my-site/documents`와 같은 자산 루트 폴더에 `/assets/...`를 통해 공개적으로 액세스할 수 있어야 하는 경우, 구성의 `includes` 섹션에 항목을 추가해야 합니다.
+>예를 들어 PDF 세트가 포함된 `/content/dam/my-site/documents`와 같은 자산 루트 폴더를 `/assets/...`를 통해 공개적으로 액세스 가능하도록 설정하려면, 구성의 `includes` 섹션에 항목을 추가해야 합니다.
 
 ## 구성하는 방법 {#how-to-configure}
 
